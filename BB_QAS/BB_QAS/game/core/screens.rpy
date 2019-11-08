@@ -1,0 +1,447 @@
+
+screen menu_inventory():
+
+    tag menu
+
+    default tl = Tooltip("")
+    default tdesc = Tooltip(_("Ни один предмет не выбран"))
+
+    add "interface phon"
+    style_prefix "inventory"
+    frame area(150, 95, 350, 50) background None:
+        text _("ИНВЕНТАРЬ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+
+    imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+
+    $ cells = 0
+    for id in items:
+        if items[id].have:
+            $ cells += 1
+
+    vbox:
+        xalign 0.5
+        xsize 1620
+        ypos 170
+        spacing 15
+        frame xfill True ysize 650 background None:
+            vpgrid:
+                xalign 0.5
+                cols 5
+                spacing 2
+                yspacing 4
+                draggable True
+                mousewheel True
+                if cells > 10:
+                    scrollbars "vertical"
+
+                for id in items:
+                    if items[id].have:
+                        $ im_name = items[id].img.replace(" ", "/") + ".png"
+                        frame area(0, 0, 286, 226) background "interface items bg":
+                            imagebutton align (0.5, 0.5) idle im.MatrixColor(im_name, im.matrix.desaturate()) hover items[id].img:
+                                action NullAction()
+                                hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
+
+                if cells < 15:
+                    $ addcells = 15 - cells
+                elif len(items) % 5 != 0:
+                    $ addcells = 5 - cells % 5
+                else:
+                    $ addcells = 0
+
+                for sh in range(addcells):
+                    frame area(0, 0, 286, 226) background "interface items bg":
+                        button align (0.5, 0.5) action NullAction():
+                            hovered [tl.Action(""), tdesc.Action(_("Ни один предмет не выбран"))]
+
+        frame area(200, 0, 1220, 50) background None:
+            text tl.value xalign 0.5 size 28 font "hermes.ttf" color gui.choice_button_text_idle_color
+
+        frame area(300, 0, 1020, 180) background None:
+            text tdesc.value xalign 0.5 size gui.text_size font gui.text_font
+
+screen menu_userinfo():
+
+    tag menu
+    default CurChar = "max"
+    add "interface phon"
+    style_prefix "userinfo"
+
+    frame area(150, 95, 350, 50) background None:
+        text _("ПЕРСОНАЖИ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+
+    imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+
+    hbox pos (150, 150) xsize 180 spacing 30:
+        viewport ypos 25 mousewheel "change" draggable True:
+            vbox spacing 5:
+                button background None  action SetScreenVariable("CurChar", "max") xsize 180:
+                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                    textbutton _("Макс") action SetScreenVariable("CurChar", "max") selected CurChar == "max"
+                    foreground "interface marker"
+                for char in characters:
+                    button background None action SetScreenVariable("CurChar", char) xsize 180:
+                        xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                        textbutton characters[char].name action SetScreenVariable("CurChar", char) selected CurChar == char
+                        foreground "interface marker"
+        if CurChar == "max":
+            add max_profile.img size (550, 900) xpos -50 ypos 10
+        else:
+            add characters[CurChar].img size (550, 900) xpos -50 ypos 10
+
+        viewport area (0, 30, 880, 850):
+            vbox spacing 20:
+                frame xsize 850 background None:
+                    if CurChar == "max":
+                        text max_profile.desc size 24 #justify False
+                    else:
+                        text characters[CurChar].desc size 24 #justify False
+
+                # romantic interest
+
+                frame pos (50, 20) xsize 800 background None:
+                    if CurChar == "max":
+                        vbox spacing -1:
+                            for char in characters:
+                                # relmax
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        $ char_name = characters[char].name_4
+                                        text _("Отношения с [char_name!t]") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        if characters[char].mood == -200:
+                                            text _("Война") size 24
+                                        elif -200 < characters[char].mood <= -100 :
+                                            text _("Враждебные") size 24
+                                        elif -100 < characters[char].mood < 0 :
+                                            text _("Плохие") size 24
+                                        elif 0 <= characters[char].mood < 100 :
+                                            text _("Прохладные") size 24
+                                        elif 100 <= characters[char].mood < 250 :
+                                            text _("Неплохие") size 24
+                                        elif 250 <= characters[char].mood < 400 :
+                                            text _("Хорошие") size 24
+                                        elif 400 <= characters[char].mood < 700 :
+                                            text _("Тёплые") size 24
+                                        elif 700 <= characters[char].mood < 1000 :
+                                            text _("Дружеские") size 24
+                                        else:
+                                            text _("Близкие") size 24
+                            frame:
+                                area (0, 0, 350, 25)
+                                background None
+
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Запас сил") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    text str(int(max_profile.energy))+"%" size 24
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Тренированность") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    text str(max_profile.training)+"%" size 24
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Чистота") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    text str(max_profile.cleanness)+"%" size 24
+
+                            frame:
+                                area (0, 0, 350, 25)
+                                background None
+                            frame xsize 350 background None:
+                                text _("Навыки:") size 26 font "trebucbd.ttf"
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Навык убеждения") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    text str(max_profile.persuade) size 24
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Навык скрытности") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    text str(max_profile.stealth) size 24
+                            if max_profile.massage > 0:
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Навык массажа") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        text str(max_profile.massage) size 24
+                            if max_profile.ero_massage > 0:
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Навык эро.массажа") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        text str(max_profile.ero_massage) size 24
+                            if max_profile.kissing > 0:
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Навык поцелуев") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        text str(max_profile.kissing) size 24
+
+
+                    elif CurChar == "eric":
+                        pass
+                    else:
+                        vbox spacing -1:
+                            # mood
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Настроение") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    if characters[CurChar].mood == -100:
+                                        text _("Ужасное") size 24
+                                    elif -100 < characters[CurChar].mood <= -72 :
+                                        text _("Очень плохое") size 24
+                                    elif -72 < characters[CurChar].mood <= -44 :
+                                        text _("Плохое") size 24
+                                    elif -44 < characters[CurChar].mood <= -16 :
+                                        text _("Не очень") size 24
+                                    elif -16 < characters[CurChar].mood <= 16 :
+                                        text _("Нейтральное") size 24
+                                    elif 16 < characters[CurChar].mood <= 44 :
+                                        text _("Неплохое") size 24
+                                    elif 44 < characters[CurChar].mood <= 72 :
+                                        text _("Хорошее") size 24
+                                    elif 72 < characters[CurChar].mood < 100 :
+                                        text _("Очень хорошее") size 24
+                                    else:
+                                        text _("Прекрасное") size 24
+                            # relmax
+                            hbox xfill True:
+                                frame xsize 350 background None:
+                                    text _("Уровень отношений") size 24 color gui.choice_button_text_idle_color
+                                frame xfill True background None:
+                                    if characters[CurChar].relmax == -200:
+                                        text _("Война") size 24
+                                    elif -200 < characters[CurChar].relmax <= -100 :
+                                        text _("Враждебные") size 24
+                                    elif -100 < characters[CurChar].relmax < 0 :
+                                        text _("Плохие") size 24
+                                    elif 0 <= characters[CurChar].relmax < 100 :
+                                        text _("Прохладные") size 24
+                                    elif 100 <= characters[CurChar].relmax < 250 :
+                                        text _("Неплохие") size 24
+                                    elif 250 <= characters[CurChar].relmax < 400 :
+                                        text _("Хорошие") size 24
+                                    elif 400 <= characters[CurChar].relmax < 700 :
+                                        text _("Тёплые") size 24
+                                    elif 700 <= characters[CurChar].relmax < 1000 :
+                                        text _("Дружеские") size 24
+                                    else:
+                                        text _("Близкие") size 24
+
+                            # mindedness
+                            if not characters[CurChar].mindedness is None:
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Раскрепощенность") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        text str(characters[CurChar].mindedness) size 24
+                            if not characters[CurChar].releric is None:
+                                # releric
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Отношения с Эриком") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        if characters[CurChar].releric == -3:
+                                            text _("Война") size 24
+                                        elif characters[CurChar].releric == -2:
+                                            text _("Враждебные") size 24
+                                        elif characters[CurChar].releric == -1:
+                                            text _("Плохие") size 24
+                                        elif characters[CurChar].releric == 0:
+                                            text _("Прохладные") size 24
+                                        elif characters[CurChar].releric == 1:
+                                            text _("Неплохие") size 24
+                                        elif characters[CurChar].releric == 2:
+                                            text _("Хорошие") size 24
+                                        elif characters[CurChar].releric == 3:
+                                            text _("Тёплые") size 24
+                                        elif characters[CurChar].releric == 4:
+                                            text _("Дружеские") size 24
+                                        else:
+                                            text _("Близкие") size 24
+
+                                # influence
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Влияние Эрика") size 24 color gui.choice_button_text_idle_color
+                                    frame xfill True background None:
+                                        text str(characters[CurChar].mindedness)+"%" size 24
+
+style userinfo_button_text is default:
+    font "trebucbd.ttf"
+    xpos 30
+    yalign .0
+    size 30
+    idle_color gui.choice_button_text_idle_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+
+
+
+
+screen room_navigation():
+
+    tag menu
+    modal True
+
+    $  i = 0
+    hbox: # Кнопки комнат текущей локации
+        yalign 0.99
+        if current_room == current_location[0] and len(current_room.cur_char) > 2:
+            xpos 76
+        else:
+            xalign 0.01
+        #ysize 200
+        spacing 2
+        for room in current_location:
+            $ i += 1
+            $ char = ""
+            for ch in room.cur_char:
+                $ char += ch+", "
+            if len(char) !=0:
+                $ char = " ("+char[:-2]+")"
+
+            button xysize (126, 190) action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]:
+                vbox xsize 126 spacing 0:
+                    frame xysize (126, 140) background None:
+                        imagebutton align (0.5, 0.0) idle room.icon selected_idle room.icon + " a" selected_hover room.icon + " a":
+                                    selected room == current_room focus_mask True at middle_zoom
+                                    action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
+                        if room != current_room:
+                            # вывод миниатюр персонажей внизу миниатюры локации
+                            if len(room.cur_char) > 0:
+                                hbox ypos 73 xalign 0.5 spacing - 30:
+                                    for char in room.cur_char:
+                                        imagebutton idle characters[char].icon focus_mask True at small_face:
+                                            action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
+                        else:
+                            # если же это текущая локация - вывод над миниатюрой
+                            # более крупных значков персонажей. положение зависит от количества
+                            if len(current_room.cur_char) == 1:
+                                imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].icon focus_mask True:
+                                            action NullAction() at middle_face
+                            elif len(current_room.cur_char) == 2:
+                                # Если в локации два персонажа, дополнительно проверяется не является ли тек.локация крайней слева
+                                if current_room == current_location[0]:
+                                    # и если да, то первая миниатюра отображается не слева, а над локацией
+                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].icon:
+                                                focus_mask True action NullAction() at middle_face
+                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].icon:
+                                                focus_mask True action NullAction() at middle_face
+                                else:
+                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].icon:
+                                                focus_mask True action NullAction() at middle_face
+                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].icon:
+                                                focus_mask True action NullAction() at middle_face
+                            elif len(current_room.cur_char) == 3:
+                                imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].icon:
+                                            focus_mask True action NullAction() at middle_face
+                                imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].icon:
+                                            focus_mask True action NullAction() at middle_face
+                                imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].icon:
+                                            focus_mask True action NullAction() at middle_face
+                            elif len(current_room.cur_char) == 4:
+                                pass
+                    text room.name font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+            key str(i) action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
+
+    hbox:
+        align(.99, .99)  # правый нижний угол
+        # располагаем клавиши действий
+
+        for key in ListButton:  # добавим последовательно все доступные действия (ключи берем из списка кнопок)
+            $ act = AvailableActions[key] # а сами кнопки из словаря
+            if act.active and act.enabled:
+                button xysize (126, 190) action [Hide("wait_navigation"), Jump(act.label)]: # Поговорить
+                    vbox xsize 126 spacing 0:
+                        frame xysize (126, 140) background None:
+                            imagebutton idle act.icon align (0.5, 0.0) focus_mask True:
+                                        action [Hide("wait_navigation"), Jump(act.label)] at middle_zoom
+                        text act.sing font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+
+        button xysize (136, 190) action [Hide("wait_navigation"), Call("Waiting", 60), ]: # ждать час
+            vbox xsize 136 spacing 0:
+                frame xysize (136, 140) background None:
+                    imagebutton idle "interface wait 60" hover "interface wait 60 a" hovered Show("wait_navigation"):
+                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), Call("Waiting", 60), ] at middle_wait
+                text _("ЖДАТЬ") font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+
+    vbox:  # Время и день недели
+        align(0.5, 0.01)
+        text tm xalign(0.5)
+        text weekdays[(day+2) % 7][1] xalign(0.5)
+
+
+    hbox:  # верхнее меню
+        align(0.02, 0.01)
+        spacing 2
+        imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
+        imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
+        imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
+        imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
+        imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
+        imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
+
+
+
+
+screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
+    frame align(.99, .99) xysize(123, 395) background None:
+        vbox:
+            spacing 5
+            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 10), ] at small_zoom
+            imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 30), ] at small_zoom
+    timer 3.0 action Hide("wait_navigation")
+
+
+init: # трансформации для кнопок
+
+    transform close_zoom:
+        size (25, 25)
+
+    transform middle_wait:
+        size (136, 136)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform middle_zoom:
+        size (136, 136)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform small_zoom:
+        size (100, 100)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform middle_face:
+        size (120, 120)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform small_face:
+        size (60, 60)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.93
+
+    transform small_menu:
+        size (80, 80)
+        on idle, selected_idle:
+            yanchor 0 alpha 0.4
+        on hover, selected_hover:
+            yanchor 1 alpha 1.0

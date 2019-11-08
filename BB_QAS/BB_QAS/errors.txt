@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/core/screens.rpy", line 30: u'vspacing' is not a keyword argument or valid child for the vpgrid statement.
+    vspacing 4
+            ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Thu Nov 07 22:24:39 2019
