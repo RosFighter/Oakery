@@ -1,0 +1,21 @@
+emom-00 = emo-60
+emom-01 = emo-62
+emom-02
+emom-03
+emom-04 = emo-71
+emom-05 = emo-75
+emom-06 = emo-61
+emom-07 = emo-67
+emom-08
+emom-09
+emom-10
+emom-11
+emom-12 = emo-73
+emom-13 = emo-68
+emom-14 = emo-69
+emom-15 = emo-66
+emom-16
+emom-17 = emo-72
+emom-18 = emo-74
+emom-19 = emo-64
+emom-20 = emo-63

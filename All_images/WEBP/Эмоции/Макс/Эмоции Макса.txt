@@ -1,0 +1,20 @@
+emax-00 = emo-0 = emo-1
+emax-01 = emo-3
+emax-02 
+emax-03 
+emax-04 = emo-4
+emax-05
+emax-06
+emax-07
+emax-08 = emo-5
+emax-09 = emo-6
+emax-10 = emo-8
+emax-11
+emax-12
+emax-13 = emo-9
+emax-14 = emo-2
+emax-15
+emax-16
+emax-17 = emo-11
+emax-18
+emax-19 = emo-7

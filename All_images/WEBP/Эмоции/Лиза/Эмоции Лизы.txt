@@ -1,0 +1,15 @@
+elisa-00 = emo-40
+elisa-01 = emo-48
+elisa-02 = emo-41
+elisa-03 = emo-43
+elisa-04
+elisa-05
+elisa-06
+elisa-07
+elisa-08
+elisa-09 = emo-46
+elisa-10 = emo-49
+elisa-11 = emo-50
+elisa-12 = emo-42
+elisa-13 = emo-44
+elisa-14

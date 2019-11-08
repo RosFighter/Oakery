@@ -1,0 +1,19 @@
+ealice-00 = emo-20
+ealice-01 = emo-21
+ealice-02 = emo-22
+ealice-03
+ealice-04 = emo-33
+ealice-05 = emo-25
+ealice-06 = emp-26
+ealice-07 = emo-31
+ealice-08 = emo-29
+ealice-09 = emo-28
+ealice-10
+ealice-11
+ealice-12 = emo-32
+ealice-13 = emo-23
+ealice-14 = emo-24
+ealice-15 = emo-30
+ealice-16
+ealice-17 = emo-27
+ealice-18 = emo-34
