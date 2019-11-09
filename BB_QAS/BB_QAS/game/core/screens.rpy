@@ -3,10 +3,7 @@ screen menu_inventory():
 
     tag menu
 
-    default tl = Tooltip("")
-    default tdesc = Tooltip(_("Ни один предмет не выбран"))
-
-    add "interface phon"
+    add "interface phon2"
     style_prefix "inventory"
     frame area(150, 95, 350, 50) background None:
         text _("ИНВЕНТАРЬ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
@@ -14,51 +11,113 @@ screen menu_inventory():
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
     $ cells = 0
+    $ items_list = {
+        0 : [],
+        1 : [],
+        2 : [],
+        3 : [],
+        4 : []
+    }
+    $ listrows = [0, 0, 0, 0, 0]
+
+    $ cur_col = 0
     for id in items:
         if items[id].have:
-            $ cells += 1
+            $ cells += items[id].cells
+        if items[id].cells > 1:
+            $ listrows[cur_col] += items[id].cells
+            $ items_list[cur_col].append(id)
+            $ cur_col += 1
+            if cur_col > 4:
+                $ cur_col = 1
+
+
+    if cells % 5 > 0:
+        $ tabrows = cells // 5 + 1
+    else:
+        $ tabrows = cells // 5
+
+    $ cur_col = 5
+    for i in range(5):
+        if cur_col == 5 and listrows[i] == min(listrows):
+            $ cur_col = i
+
+    for id in items:
+        if items[id].have and items[id].cells == 1:
+            $ added = False
+            if listrows[cur_col] + items[id].cells <= tabrows:
+                $ added = True
+                $ listrows[cur_col] += items[id].cells
+                $ items_list[cur_col].append(id)
+                $ cur_col += 1
+                if cur_col > 4:
+                    $ cur_col = 0
+
+            if not added:
+                $ cur_col = 5
+                for i in range(5):
+                    if cur_col == 5 and listrows[i] == min(listrows):
+                        $ cur_col = i
+                $ listrows[cur_col] += items[id].cells
+                $ items_list[cur_col].append(id)
+                $ cur_col += 1
+                if cur_col > 4:
+                    $ cur_col = 0
+
+    if cells > 0:
+        $ desc = _("Ни один предмет не выбран")
+    else:
+        $ desc = _("В данный момент в инвентаре ничего нет")
+
+    default tl = Tooltip("")
+    default tdesc = Tooltip(desc)
 
     vbox:
         xalign 0.5
         xsize 1620
         ypos 170
         spacing 15
-        frame xfill True ysize 650 background None:
-            vpgrid:
+        frame xsize 1460 ysize 650 xalign 0.5 background None: #"#ffffff":
+            viewport:
                 xalign 0.5
-                cols 5
-                spacing 2
-                yspacing 4
                 draggable True
                 mousewheel True
-                if cells > 10:
+                if tabrows > 2:
                     scrollbars "vertical"
 
-                for id in items:
-                    if items[id].have:
-                        $ im_name = items[id].img.replace(" ", "/") + ".png"
-                        frame area(0, 0, 286, 226) background "interface items bg":
-                            imagebutton align (0.5, 0.5) idle im.MatrixColor(im_name, im.matrix.desaturate()) hover items[id].img:
-                                action NullAction()
-                                hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
+                if tabrows < 3:
+                    $ tabrows = 3
+                hbox:
+                    spacing 2
+                    for cur_col in range(5):
+                        vbox:
+                            spacing 4
+                            for id in items_list[cur_col]:
+                                $ im_name = items[id].img.replace(" ", "/") + ".webp"
+                                if items[id].cells == 2:
+                                    frame area(0, 0, 286, 456) background "interface items bg2":
+                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 224, 360) hover items[id].img:
+                                            action NullAction()
+                                            hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
+                                else:
+                                    frame area(0, 0, 286, 226) background "interface items bg":
+                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 252, 198) hover items[id].img:
+                                            action NullAction()
+                                            hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
 
-                if cells < 15:
-                    $ addcells = 15 - cells
-                elif len(items) % 5 != 0:
-                    $ addcells = 5 - cells % 5
-                else:
-                    $ addcells = 0
+                            $ addcells = tabrows - listrows[cur_col]
+                            if addcells > 0:
+                                for i in range(addcells):
+                                    frame area(0, 0, 286, 226) background "interface items bg":
+                                        button align (0.5, 0.5) action NullAction():
+                                            hovered [tl.Action(""), tdesc.Action(desc)]
 
-                for sh in range(addcells):
-                    frame area(0, 0, 286, 226) background "interface items bg":
-                        button align (0.5, 0.5) action NullAction():
-                            hovered [tl.Action(""), tdesc.Action(_("Ни один предмет не выбран"))]
 
         frame area(200, 0, 1220, 50) background None:
-            text tl.value xalign 0.5 size 28 font "hermes.ttf" color gui.choice_button_text_idle_color
+            text tl.value xalign 0.5 size 28 font "hermes.ttf"  color gui.text_color
 
         frame area(300, 0, 1020, 180) background None:
-            text tdesc.value xalign 0.5 size gui.text_size font gui.text_font
+            text tdesc.value xalign 0.5 size gui.text_size font gui.text_font color gui.accent_color
 
 screen menu_userinfo():
 
@@ -87,15 +146,20 @@ screen menu_userinfo():
         if CurChar == "max":
             add max_profile.img size (550, 900) xpos -50 ypos 10
         else:
-            add characters[CurChar].img size (550, 900) xpos -50 ypos 10
+            frame xysize(550, 900) background None:
+                if characters[CurChar].sufix == "":
+                    add characters[CurChar].pref+" info-00" size (550, 900) xpos -50 ypos 10
+                else:
+                    add characters[CurChar].pref+" info "+eval(CurChar+"_dress[\""+characters[CurChar].sufix+"\"]") size (550, 900) xpos -50 ypos 10
+
 
         viewport area (0, 30, 880, 850):
             vbox spacing 20:
                 frame xsize 850 background None:
                     if CurChar == "max":
-                        text max_profile.desc size 24 #justify False
+                        text max_profile.desc size 24
                     else:
-                        text characters[CurChar].desc size 24 #justify False
+                        text characters[CurChar].desc size 24
 
                 # romantic interest
 
@@ -281,9 +345,6 @@ style userinfo_button_text is default:
     hover_color gui.text_color
     selected_color gui.text_color
 
-
-
-
 screen room_navigation():
 
     tag menu
@@ -317,33 +378,33 @@ screen room_navigation():
                             if len(room.cur_char) > 0:
                                 hbox ypos 73 xalign 0.5 spacing - 30:
                                     for char in room.cur_char:
-                                        imagebutton idle characters[char].icon focus_mask True at small_face:
+                                        imagebutton idle characters[char].pref+" icon" focus_mask True at small_face:
                                             action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
                         else:
                             # если же это текущая локация - вывод над миниатюрой
                             # более крупных значков персонажей. положение зависит от количества
                             if len(current_room.cur_char) == 1:
-                                imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].icon focus_mask True:
+                                imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon" focus_mask True:
                                             action NullAction() at middle_face
                             elif len(current_room.cur_char) == 2:
                                 # Если в локации два персонажа, дополнительно проверяется не является ли тек.локация крайней слева
                                 if current_room == current_location[0]:
                                     # и если да, то первая миниатюра отображается не слева, а над локацией
-                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].icon:
+                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
-                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].icon:
+                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                                 else:
-                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].icon:
+                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
-                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].icon:
+                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                             elif len(current_room.cur_char) == 3:
-                                imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].icon:
+                                imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
                                             focus_mask True action NullAction() at middle_face
-                                imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].icon:
+                                imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon":
                                             focus_mask True action NullAction() at middle_face
-                                imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].icon:
+                                imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].pref+" icon":
                                             focus_mask True action NullAction() at middle_face
                             elif len(current_room.cur_char) == 4:
                                 pass
@@ -354,8 +415,8 @@ screen room_navigation():
         align(.99, .99)  # правый нижний угол
         # располагаем клавиши действий
 
-        for key in ListButton:  # добавим последовательно все доступные действия (ключи берем из списка кнопок)
-            $ act = AvailableActions[key] # а сами кнопки из словаря
+        for id in ListButton:  # добавим последовательно все доступные действия (ключи берем из списка кнопок)
+            $ act = AvailableActions[id] # а сами кнопки из словаря
             if act.active and act.enabled:
                 button xysize (126, 190) action [Hide("wait_navigation"), Jump(act.label)]: # Поговорить
                     vbox xsize 126 spacing 0:
@@ -387,9 +448,6 @@ screen room_navigation():
         imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
 
-
-
-
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
     frame align(.99, .99) xysize(123, 395) background None:
         vbox:
@@ -397,7 +455,6 @@ screen wait_navigation(): # дополнительные кнопки для о�
             imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 10), ] at small_zoom
             imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 30), ] at small_zoom
     timer 3.0 action Hide("wait_navigation")
-
 
 init: # трансформации для кнопок
 

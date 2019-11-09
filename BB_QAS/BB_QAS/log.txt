@@ -1,39 +1,39 @@
-Thu Nov 07 23:36:20 2019
+Sat Nov 09 23:03:35 2019
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.08s
+Bootstrap to the start of init.init took 0.09s
 Early init took 0.01s
 Loader init took 0.03s
-Loading error handling took 0.07s
-Loading script took 0.90s
-Loading save slot metadata. took 0.30s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.14s
-Loading analysis data took 0.17s
+Loading analysis data took 0.34s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\RosFighter\\AppData\\Roaming/RenPy/backups\\BB_QAS':
-Dump and make backups. took 0.39s
+Dump and make backups. took 0.13s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.05s
 DPI scale factor: 1.000000
-Creating interface object took 0.17s
+Creating interface object took 0.10s
 Cleaning stores took 0.00s
 Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.08s
-Analyze screens took 0.02s
-Save screen analysis took 0.12s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.11s
+Prepare screens took 0.12s
+Save pyanalysis. took 1.12s
+Save bytecode. took 0.10s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.04s
+Interface start took 0.06s
 
 primary display bounds: (0, 0, 1600, 900)
 swap interval: 1 frames
@@ -450,11 +450,31 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 3.85500001907s
+Total time until interface ready: 4.02600002289s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.016333 seconds.
-- Frame drawn at 0.018333 seconds.
+- Frame drawn at 0.017333 seconds.
 - Frame drawn at 0.019333 seconds.
-- Frame drawn at 0.031333 seconds.
-- 0.031333 seconds to render 5 frames.
+- Frame drawn at 0.032333 seconds.
+- 0.032333 seconds to render 5 frames.
+
+Full traceback:
+  File "D:\RenPy\renpy\bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "D:\RenPy\renpy\main.py", line 578, in main
+    run(restart)
+  File "D:\RenPy\renpy\main.py", line 143, in run
+    renpy.execution.run_context(True)
+  File "D:\RenPy\renpy\execution.py", line 908, in run_context
+    context.run()
+  File "game/core/core.rpy", line 113, in script
+    call screen room_navigation
+  File "D:\RenPy\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'DishesWashed'.
+
+While running game code:
+  File "game/core/core.rpy", line 113, in script
+    call screen room_navigation
+ScriptError: could not find label 'DishesWashed'.

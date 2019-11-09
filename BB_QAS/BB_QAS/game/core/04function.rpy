@@ -47,7 +47,7 @@ init python:
             if len(list_of_day):
                 new_schedule.append(
                     Schedule(list_of_day, ed.ts, ed.te, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift, ed.weekstart,
-                             ed.variable))
+                             ed.variable, ed.dress))
 
         new_schedule = set(new_schedule)
 
@@ -60,11 +60,11 @@ init python:
                 if ed.ts < nsh.ts < ed.te and len(list_of_day):
                     new_schedule.append(
                         Schedule(list_of_day, ed.ts, AddTime(nsh.ts, -1), ed.desc, ed.loc, ed.room, ed.label, ed.krat,
-                                 ed.shift, ed.weekstart, ed.variable))
+                                 ed.shift, ed.weekstart, ed.variable, ed.dress))
                 if ed.ts < nsh.te < ed.te and len(list_of_day):
                     new_schedule.append(
                         Schedule(list_of_day, AddTime(nsh.te), ed.te, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift,
-                                 ed.weekstart, ed.variable))
+                                 ed.weekstart, ed.variable, ed.dress))
 
             # удалим старые строки из начального списка
             schedule.remove(ed)
@@ -201,6 +201,8 @@ init python:
                  # все последующие игнорируем
                 if schedule_char[0].loc != "" and not schedule_char[0].loc is None:
                     eval(schedule_char[0].loc+"["+str(schedule_char[0].room)+"].cur_char.append(\""+char+"\")")
+
+                characters[char].sufix = schedule_char[0].dress
 
 
     def Wait(delta):

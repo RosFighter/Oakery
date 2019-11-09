@@ -7,13 +7,6 @@ label start:
 
     call intro from _call_intro
 
-    $ i = 0
-    while i < 27:
-        $ items.update({
-                    "test"+str(i+1): Item("Тестовый предмет №"+str(i+1), _("Предмет, созданный для тестирования интерфейса инвентаря"), "interface items item", _("Книги"), 100, True, True),
-                    })
-        $ i += 1
-
     jump breakfast
 
 

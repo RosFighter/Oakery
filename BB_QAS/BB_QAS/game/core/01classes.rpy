@@ -1,7 +1,7 @@
 init python:
 
     class Profile:  # Описание и характеристики персонажа (не ГГ)
-        def __init__(self, name, name_1, name_2, name_3, name_4, name_5, desc="", icon="", img="", mood=0, ri=0, ri_text="", mindedness=None, relmax=0, releric=None, influence=None):
+        def __init__(self, name, name_1, name_2, name_3, name_4, name_5, desc="", pref="", mood=0, ri=0, ri_text="", mindedness=None, relmax=0, releric=None, influence=None):
             self.name      = name      # имя
             self.name_1    = name_1    # имя в родительном падеже (от кого?)
             self.name_2    = name_2    # имя в дательном падеже (кому?)
@@ -9,8 +9,8 @@ init python:
             self.name_4    = name_4    # имя в творительном падеже (с кем?)
             self.name_5    = name_5    # имя в предложном падеже (о ком?)
             self.desc      = desc      # описание
-            self.icon      = icon      # миниатюра для окна навигации
-            self.img       = img       # изображение в окно описания
+            self.pref      = pref      # префикс (папка) изображений
+            self.sufix     = ""        # суфикс изображения в окно описания
 
             self.mood      = mood      # текущее настроение
             self.ri        = ri        # (romantic interest) заинтересованность
@@ -22,7 +22,7 @@ init python:
             self.talks     = []
 
         def __repr__(self):
-            return "имя: {self.name}, \nописание: {self.desc},\n миниатюра=\"{self.icon}\", изображение=\"{self.img}\","\
+            return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.img}\","\
                     " настроение: {self.mood}, раскрепощенность: {self.mindedness}, отношения с Максом: {self.relmax}, "\
                     "отношения с Эриком: {self.releric}, влияние Эрика: {self.influence}".format(self=self)
 
@@ -119,7 +119,7 @@ init python:
             weekstart – номер стартовой недели
             variable  – строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа """
 
-        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True"):
+        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", dress=""):
             self.lod       = lod
 
             h, m = ts.split(":") if str(ts).find(":") > 0 else str(float(ts)).replace(".", ":").split(":")
@@ -136,6 +136,7 @@ init python:
             self.shift     = shift
             self.weekstart = weekstart
             self.variable  = variable
+            self.dress     = dress
 
         def __repr__(self):
             return "дни: {self.lod}, с {self.ts}, до {self.te}, \"{self.desc}\", в {self.loc}[{self.room}], каждые {self.krat} "\
@@ -162,7 +163,7 @@ init python:
     class Item:
         """ класс-формат описания предметов как в инвентаре, так и доступных для заказа в ИМ """
 
-        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, have=False, buy=False, delivery=0, need_read=0):
+        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, have=False, buy=False, delivery=0, need_read=0, cells=1):
             self.name      = name      # наименование (в магазине и в сумке)
             self.desc      = desc      # описание
             self.img       = img       # изображение
@@ -173,6 +174,7 @@ init python:
             self.delivery  = delivery  # доставка через .. дней
             self.need_read = need_read # если больше нуля - признак книги. Сколько циклов чтения нужно
             self.read      = 0         # сколько раз уже прочитано
+            self.cells     = cells     # занимаемые по вериткали ячейки (1 или 2)
         def __repr__(self):
             return "наименование=\"{self.name}\", описание: {self.desc}, изображение: {self.img}"\
             "цена: {self.price}, в магазине {self.InShop}, имеется {self.have}, куплено {self.buy}"\

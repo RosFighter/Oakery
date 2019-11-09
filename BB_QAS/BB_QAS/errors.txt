@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/core/screens.rpy", line 30: u'vspacing' is not a keyword argument or valid child for the vpgrid statement.
-    vspacing 4
-            ^
+File "game/core/screens.rpy", line 46: u'cur_col' is not a keyword argument or valid child for the for statement.
+    cur_col = i
+           ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Nov 07 22:24:39 2019
+Sat Nov 09 20:28:01 2019

@@ -75,16 +75,9 @@ label MorningWood:
         "Ясно...":
             pass
 
-    if tm > "06:30":
-        $ t = TimeDifference("06:30", tm) # Надо убавить энергию, т.к. проспал меньше расчетного
-        $ max_profile.energy -=  t / 3.6 # t /360 * 100
-    elif tm < "06:30":
-        # Надо прибавить энергию, т.к. проспал больше расчетного
-        $ t = TimeDifference(tm, "06:30") # Надо убавить энергию, т.к. проспал меньше расчетного
-        $ max_profile.energy +=  t / 3.6 # t /360 * 100
-
-    $ tm = "07:00"
-    jump AfterWaiting
+    #$ tm = "07:00"
+    #jump AfterWaiting
+    call Waiting(30)
 
 
 label about_schoole:
