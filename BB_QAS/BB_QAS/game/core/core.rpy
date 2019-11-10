@@ -34,6 +34,8 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
     if day != __prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
         $ talk_var["ask_money"] = 0
+        $ lisa_dress["naked"] = "04a"
+        $ lisa_dress["dressed"] = "00b"
 
         python:
             # уменьшение счетчика событий, зависимых от прошедших дней
@@ -46,6 +48,10 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
             # сбросим подглядывания
             for key in peeping:
                 peeping[key] = 0
+    if __prevtime < "12:00" and tm >= "12:00":
+        # вернем на значения по-умолчанию после утренних подглядываний
+        $ lisa_dress["naked"] = "04a"
+        $ lisa_dress["dressed"] = "00b"
 
     $ delt = TimeDifference(__prevtime, tm) # вычислим действительно прошедшее время
 

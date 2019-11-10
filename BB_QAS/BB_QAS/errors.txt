@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/core/screens.rpy", line 46: u'cur_col' is not a keyword argument or valid child for the for statement.
-    cur_col = i
-           ^
+File "game/dialogues/lisatalk.rpy", line 83: expected statement.
+    current_room = house[6]
+                 ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Nov 09 20:28:01 2019
+Sun Nov 10 12:07:36 2019

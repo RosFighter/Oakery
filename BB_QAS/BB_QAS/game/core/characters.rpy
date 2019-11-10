@@ -303,3 +303,16 @@ image side eric_16 = "Eric emo-16"
 
 define Eric_17 = Character(kind=Eric, image="eric_17")
 image side eric_17 = "Eric emo-17"
+
+## Майя, адвокат
+
+define Maya = Character(_("Майя"))
+
+define Maya_01 = Character(kind=Maya, image="maya_01")
+image side maya_01 = "Maya emo-01"
+
+define Maya_02 = Character(kind=Maya, image="maya_02")
+image side maya_02 = "Maya emo-02"
+
+define Maya_03 = Character(kind=Maya, image="maya_03")
+image side maya_03 = "Maya emo-03"

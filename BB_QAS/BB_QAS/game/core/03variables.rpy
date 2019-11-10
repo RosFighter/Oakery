@@ -217,11 +217,12 @@ default dcv = {
 
 # события, запускаемые в конкретное время
 default EventsByTime = {
-    "breakfast"   : CutEvent("09:00", label="breakfast", desc="завтрак"),
-    "evening"     : CutEvent("19:00", label="evening", desc="ужин"),
-    "shoping"     : CutEvent("11:00", (6, ), False, "shoping", "семейный шопинг"),
-    "MorningWood" : CutEvent("06:30", label="MorningWood", variable="day == 2", sleep=True, desc="утренний стояк"),
-    "Wearied"     : CutEvent("03:30", label="Wearied", sleep=False, desc="поспать бы надо"),
+    "breakfast"        : CutEvent("09:00", label="breakfast", desc="завтрак"),
+    "evening"          : CutEvent("19:00", label="evening", desc="ужин"),
+    "shoping"          : CutEvent("11:00", (6, ), False, "shoping", "семейный шопинг"),
+    "MorningWood"      : CutEvent("06:30", label="MorningWood", variable="day == 2", sleep=True, desc="утренний стояк"),
+    "AfterSchoolFD"    : CutEvent("16:00", label="AfterSchoolFD", variable="day == 1", desc="Лиза первый раз приходит из школы"),
+    "Wearied"          : CutEvent("03:30", label="Wearied", sleep=False, desc="поспать бы надо"),
 }
 
 # ежедневное подсматривание

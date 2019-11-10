@@ -267,23 +267,22 @@ init python:
 
         # получим список событий, "всплывающих" в указанный период
         eventslist = []
+        timelist = []
         for cut in EventsByTime:
             if (EventsByTime[cut].enabled and
-                ((tm1 < tm2 and tm1 <= EventsByTime[cut].tm <= tm2) or
-                 (tm1 > tm2 and (tm1 <= EventsByTime[cut].tm <= "23:59" or "00:00" <= EventsByTime[cut].tm <= tm2)))
+                ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2) or
+                 (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= "23:59" or "00:00" <= EventsByTime[cut].tm <= tm2)))
                 and (day in EventsByTime[cut].lod) and eval(EventsByTime[cut].variable) and sleep == EventsByTime[cut].sleep):
-                eventslist.append(cut)
+                    eventslist.append(cut)
+                    timelist.append(EventsByTime[cut].tm)
 
-        # если кат-событий несколько - получаем самое раннее время
-        if len(eventslist) > 1:
-            mintime = EventsByTime[eventslist[0]].tm
-            for i in range(len(eventslist)-2):
-                if mintime > EventsByTime[eventslist[i]].tm:
-                    mintime = EventsByTime[eventslist[i]].tm
+        # получаем самое раннее время на случай если кат-событий несколько
+        if len(eventslist) > 0:
+            mintime = min(timelist)
 
         # удалим из списка ключи с другим временем
         i = 0
-        while i < len(eventslist)-1:
+        while i <= len(eventslist)-1:
             if EventsByTime[eventslist[i]].tm == mintime:
                 i += 1
             else:
@@ -327,3 +326,13 @@ init python:
             menu_items.append((talks[i].select, talks[i].label))
 
         return menu_items
+
+    def GetChance(Skil, Divisor=1):
+        """ Вычисляет и возвращает шанс успешного применения навыка """
+        cap = 100.0 / Divisor
+
+        return min(90.0, 100.0 * (Skil / cap))
+
+    def RandomChance(chance):
+        """ прошло илинет применение навыка с указанным шансом """
+        return renpy.random.random() < chance / 100.0

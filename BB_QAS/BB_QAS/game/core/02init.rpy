@@ -3,7 +3,10 @@ init 9999 python:
     renpy.config.hard_rollback_limit = 0
     renpy.config.rollback_length = 0
 
-define lime = "#00FF00"
+define lime   = "#00FF00"
+define red    = "#FF0000"
+define orange = "#E59400"
+
 define weekdays = (
                   (_("ВС"), _("ВОСКРЕСЕНЬЕ")),
                   (_("ПН"), _("ПОНЕДЕЛЬНИК")),

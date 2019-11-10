@@ -443,9 +443,9 @@ screen room_navigation():
         spacing 2
         imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
         imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
-        imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
-        imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
-        imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
+        #imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
+        #imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
+        #imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут

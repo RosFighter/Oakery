@@ -102,17 +102,20 @@ label ann_shower:
 
 label lisa_shower:
     scene location house bathroom door-morning
-    if peeping["lisa_shower"] == 2:
-        Max_00 "Мама уже поймала меня на подсматривании за Лизой. Не стоит злить ее еще больше."
-        jump .end_peeping
-    elif peeping["lisa_shower"] == 1:
-        Max_00 "Сегодня я уже подсматривал за Лизой. Повезло, что мама не заметила, не стоит рисковать еще раз."
-        jump .end_peeping
-    elif peeping["lisa_shower"] == 3:
+    if peeping["lisa_shower"] > 3:
         menu:
             Max_00 "Лиза сейчас принимает душ..."
             "Уйти":
-                jump .end_peeping
+                jump .end_peeping2
+    elif peeping["lisa_shower"] > 2:
+        Max_00 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить ее еще больше."
+        jump .end_peeping2
+    elif peeping["lisa_shower"] > 1:
+        Max_00 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать еще раз."
+        jump .end_peeping2
+    elif peeping["lisa_shower"] > 0:
+        Max_00 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать еще раз."
+        jump .end_peeping2
     else:
         menu:
             Max_00 "Кажется, Лиза что-то делает в ванной..."
@@ -126,32 +129,81 @@ label lisa_shower:
                                 menu:
                                     Lisa "{b}Лиза:{/b} Нет, Макс. Жди за дверью. Я скоро!"
                                     "Ладно, ладно...":
-                                        $ peeping["lisa_shower"] = 3
+                                        $ peeping["lisa_shower"] = 4
                                         jump .end_peeping
                             "Хорошо, я подожду":
-                                $ peeping["lisa_shower"] = 3
+                                $ peeping["lisa_shower"] = 4
                                 jump .end_peeping
                     "Уйти":
-                        $ peeping["lisa_shower"] = 3
+                        $ peeping["lisa_shower"] = 4
                         jump .end_peeping
             "Заглянуть с улицы":
                 jump .start_peeping
             "Уйти":
-                $ peeping["lisa_shower"] = 3
+                $ peeping["lisa_shower"] = 4
                 jump .end_peeping
 
     label .start_peeping:
-        $ __ran1 = renpy.random.randint(1, 4)
-        scene image ("Lisa shower 0"+str(__ran1))
+        $ peeping["lisa_shower"] = 1
+        $ max_profile.stealth += 0.01
+        $ _ran1 = renpy.random.randint(1, 4)
+
+        $ _chance = GetChance(max_profile.stealth, 3)
+        $ __chance_vis = int(round(_chance))
+        if __chance_vis < 33:
+            $ _chance_color = red
+        elif __chance_vis > 67:
+            $ _chance_color = lime
+        else:
+            $ _chance_color = orange
+        scene image ("Lisa shower 0"+str(_ran1))
         show water fg
         show shower fg
         menu:
-            Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nОх, повезло! Похоже, Лиза принимает душ. Хороша сестренка."
+            Max_04 "Лиза принимает душ"
+            "Присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [__chance_vis]\%){/color}":
+                jump .closer_peepeng
             "Уйти":
-                $ peeping["lisa_shower"] = 1
                 jump .end_peeping
+
+    label .closer_peepeng:
+        if RandomChance(_chance):
+            $ peeping["lisa_shower"] = 1
+            $ max_profile.stealth += 0.1
+            $ lisa_dress["naked"] = "00a"
+            $ _ran1 = renpy.random.randint(1, 6)
+            scene BG shower-closer
+            show image ("Lisa shower-closer 0"+str(_ran1))
+            show shower-closer_fg
+            Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nОх, повезло! Хороша сестренка."
+        elif RandomChance(_chance):
+            $ peeping["lisa_shower"] = 2
+            $ max_profile.stealth += 0.05
+            $ lisa_dress["naked"] = "00a"
+            $ _ran1 = renpy.random.randint(7, 8)
+            scene BG shower-closer
+            show image ("Lisa shower-closer 0"+str(_ran1))
+            show shower-closer_fg
+            Max_00 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nПора сматываться."
+            jump .end_peeping
+        else:
+            $ peeping["lisa_shower"] = 3
+            $ max_profile.stealth += 0.02
+            $ _ran1 = renpy.random.choice(["09", "10"])
+            scene BG shower-closer
+            show image ("Lisa shower-closer "+_ran1)
+            show shower-closer_fg
+            menu:
+                Lisa_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Я всё маме расскажу!!!"
+                "Уйти":
+                    jump .end_peeping
+
+
 
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_10
+    label .end_peeping2:
+        $ current_room, prev_room = prev_room, current_room
+        jump AfterWaiting
     return

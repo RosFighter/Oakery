@@ -1,28 +1,112 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/core/core.rpy", line 113, in script
+  File "game/core/core.rpy", line 113, in script call
     call screen room_navigation
-ScriptError: could not find label 'DishesWashed'.
+  File "game/dialogues/events.rpy", line 22, in script call
+    call Waiting(30) from _call_Waiting_2
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/dialogues/events.rpy", line 34, in script call
+    call Waiting(30, 2.0) from _call_Waiting_3
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/script.rpy", line 131, in script call
+    call Waiting(t, 1, True) from _call_Waiting_5
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/dialogues/lisatalk.rpy", line 91, in script call
+    call Waiting(10)
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/script.rpy", line 81, in script call
+    call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/script.rpy", line 107, in script call
+    call Waiting(270, 1, True, "08:00") from _call_Waiting_1
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/dialogues/lisatalk.rpy", line 91, in script call
+    call Waiting(10)
+  File "game/core/core.rpy", line 105, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 159, in script
+    menu:
+ValueError: unsupported format character ')' (0x29) at index 81
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\RenPy\renpy\bootstrap.py", line 316, in bootstrap
-    renpy.main.main()
-  File "D:\RenPy\renpy\main.py", line 578, in main
-    run(restart)
-  File "D:\RenPy\renpy\main.py", line 143, in run
-    renpy.execution.run_context(True)
-  File "D:\RenPy\renpy\execution.py", line 908, in run_context
-    context.run()
-  File "game/core/core.rpy", line 113, in script
+  File "game/core/core.rpy", line 113, in script call
     call screen room_navigation
-  File "D:\RenPy\renpy\script.py", line 898, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'DishesWashed'.
+  File "game/dialogues/events.rpy", line 22, in script call
+    call Waiting(30) from _call_Waiting_2
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/dialogues/events.rpy", line 34, in script call
+    call Waiting(30, 2.0) from _call_Waiting_3
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/script.rpy", line 131, in script call
+    call Waiting(t, 1, True) from _call_Waiting_5
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/dialogues/lisatalk.rpy", line 91, in script call
+    call Waiting(10)
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 113, in script call
+    call screen room_navigation
+  File "game/script.rpy", line 81, in script call
+    call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/script.rpy", line 107, in script call
+    call Waiting(270, 1, True, "08:00") from _call_Waiting_1
+  File "game/core/core.rpy", line 72, in script call
+    call expression __name_label from _call_expression
+  File "game/dialogues/lisatalk.rpy", line 91, in script call
+    call Waiting(10)
+  File "game/core/core.rpy", line 105, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 159, in script
+    menu:
+  File "D:\RenPy\renpy\ast.py", line 1628, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "D:\RenPy\renpy\exports.py", line 955, in menu
+    label = substitute(label)
+  File "D:\RenPy\renpy\exports.py", line 920, in substitute
+    return s % tag_quoting_dict
+ValueError: unsupported format character ')' (0x29) at index 81
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
-Big Brother: quite another story | Большой брат: совсем другая история 0.01.0.020
-Sat Nov 09 23:04:24 2019
+Big Brother: quite another story | Большой брат: совсем другая история 0.01.0.021
+Sun Nov 10 20:14:14 2019

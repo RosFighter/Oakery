@@ -62,8 +62,8 @@ label MorningWood:
             Ann_09 "Ну, да, Лиза. Так у мальчиков иногда бывает по утрам. Не нужно паниковать..."
     Max_11 "Я так сразу и сказал..."
     Lisa_12 "Это не правда! Так не может быть... само. Он что-то делал, наверняка..."
-    show Lisa morning-oops 05
     Max_10 "Да ничего я не делал!"
+    show Lisa morning-oops 05
     Ann_08 "Ты сама видела, чтобы Макс чем-то {i}таким{/i} занимался при тебе?"
     Lisa_09 "Нет, но мам... Я просто испугалась."
     scene Lisa morning-oops 06
@@ -79,6 +79,16 @@ label MorningWood:
     #jump AfterWaiting
     call Waiting(30)
 
+label AfterSchoolFD:
+    $ current_room = house[6]
+    scene BG char Lisa incoming-01
+    show Lisa incoming-01
+    Lisa_01 "Привет, Макс! Я вернулась."
+    Max_03 "Супер! Как первый день?"
+    Lisa_02 "Да ничего так. Но потом поболтаем. Сейчас переоденусь и прыгну в бассейн. Только об этом и мечтала целый день!"
+    Max_04 "Хорошо, здесь и поговорим"
+
+    call Waiting(10)
 
 label about_schoole:
     Max_00 "здесь поговорим о школе"
