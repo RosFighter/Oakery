@@ -21,7 +21,7 @@ default locations = {"house": house}
 default characters = {
      "lisa": Profile(_("Лиза"), _("Лизы"), _("Лизе"), _("Лизу"), _("Лизой"), _("Лизе"),
         _("Лиза, младшая сестрёнка. Милая и весёлая. Она ещё учится в школе. С Лизой мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."),
-        "Lisa"),
+        "Lisa", relmax=150),
      "alice": Profile(_("Алиса"), _("Алисы"), _("Алисе"), _("Алису"), _("Алисой"), _("Алисе"),
         _("Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."),
          "Alice"),
@@ -203,9 +203,19 @@ default prev_room = house[6]
 default InspectedRooms = []
 default selected_item = ""
 
-
 #######################################################################################################################
 ##  Ежедневно обновляемые переменные
+
+default random2   = renpy.random.choice(["01", "02"])
+default random3_1 = renpy.random.choice(["01", "02", "03"])
+default random4_1 = renpy.random.choice(["01", "02", "03", "04"])
+default random3_2 = renpy.random.choice(["01", "02", "03"])
+default random4_2 = renpy.random.choice(["01", "02", "03", "04"])
+default random3_3 = renpy.random.choice(["01", "02", "03"])
+default random4_3 = renpy.random.choice(["01", "02", "03", "04"])
+default random5   = renpy.random.choice(["01", "02", "03", "04", "05"])
+default random6   = renpy.random.choice(["01", "02", "03", "04", "05", "06"])
+default random_ab = renpy.random.choice(["a", "b"])
 
 # переменные со счетчиком дней
 default dcv = {

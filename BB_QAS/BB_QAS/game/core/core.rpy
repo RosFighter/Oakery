@@ -37,6 +37,17 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
 
+        $ random2   = renpy.random.choice(["01", "02"])
+        $ random3_1 = renpy.random.choice(["01", "02", "03"])
+        $ random4_1 = renpy.random.choice(["01", "02", "03", "04"])
+        $ random3_2 = renpy.random.choice(["01", "02", "03"])
+        $ random4_2 = renpy.random.choice(["01", "02", "03", "04"])
+        $ random3_3 = renpy.random.choice(["01", "02", "03"])
+        $ random4_3 = renpy.random.choice(["01", "02", "03", "04"])
+        $ random5   = renpy.random.choice(["01", "02", "03", "04", "05"])
+        $ random6   = renpy.random.choice(["01", "02", "03", "04", "05", "06"])
+        $ random_ab = renpy.random.choice(["a", "b"])
+
         python:
             # уменьшение счетчика событий, зависимых от прошедших дней
             for i in dcv:  #
@@ -127,7 +138,8 @@ label SetAvailableActions: # включает кнопки действий
             AvailableActions[key].active = False
 
     if current_room == house[0]:  # комната Макса и Лизы
-        $ AvailableActions["unbox"].active = True
+        if GetScheduleRecord(schedule_lisa, day, tm)[0].dress != "dressed":
+            $ AvailableActions["unbox"].active = True
 
         if "00:00" <= tm <= "04:00":
             $ AvailableActions["alarm"].active = True

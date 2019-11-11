@@ -1,16 +1,9 @@
-﻿
-
-
-
 
 label start:
 
     call intro from _call_intro
 
     jump breakfast
-
-
-
 
     return
 
@@ -71,80 +64,3 @@ label intro:
                     jump intro
         "пропустить":
             return
-
-
-label Sleep:
-    menu:
-        Max_19 "Как же я хочу спать..."
-
-        "Спать до утра":
-            call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
-
-    return
-
-
-label StartDialog:
-
-    if len(current_room.cur_char) == 1:
-        if current_room.cur_char[0] == "lisa":
-            jump LisaTalkStart
-        elif current_room.cur_char[0] == "alice":
-            jump AliceTalkStart
-        elif current_room.cur_char[0] == "ann":
-            jump AnnTalkStart
-
-    jump AfterWaiting
-
-
-
-label Wearied:
-    # прождали все доступное время - спим до восьми
-    menu:
-        Max_19 "Как же я хочу спать..."
-
-        "Спать до утра":
-            $ current_room = house[0]
-            call Waiting(270, 1, True, "08:00") from _call_Waiting_1
-
-    return
-
-label Nap:
-    if max_profile.energy > 40.0:
-        $ txt = _("Я сейчас не очень хочу спать, но если я хочу сохранить силы...")
-    else:
-        $ txt = _("Что-то я сегодня устал, надо бы вздремнуть...")
-
-    menu:
-        Max_19 "[txt!t]"
-
-        "Подремать пару часов":
-            $ t = 2 * 60
-        "Подремать 3 часа" if tm <= "16:00":
-            $ t = 3 * 60
-        "Подремать 4 часа" if tm <= "15:00":
-            $ t = 4 * 60
-        "Подремать 5 часов" if tm <= "14:00":
-            $ t = 5 * 60
-        "Не-а, может позже...":
-            jump AfterWaiting
-
-    call Waiting(t, 1, True) from _call_Waiting_5
-    return
-
-label Alarm:
-
-    menu:
-        Max_00 "В каком часу я должен встать?"
-
-        "В 5 утра":
-            $ t = TimeDifference(tm, "05:00")
-            call Waiting(t, 1, True, "05:00") from _call_Waiting_6
-        "В 6 утра":
-            $ t = TimeDifference(tm, "06:00")
-            call Waiting(t, 1, True, "06:00") from _call_Waiting_7
-        "В 7 утра":
-            $ t = TimeDifference(tm, "07:00")
-            call Waiting(t, 1, True, "07:00") from _call_Waiting_8
-        "Не-а, может позже...":
-            jump AfterWaiting
-    return

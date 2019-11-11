@@ -167,31 +167,17 @@ init python:
             и распределяет персонажей по локациям согласно расписанию """
         h, m = tm.split(":")
 
-        chet = (day+int(h)) % 2
-
         for loc in locations:
             for room in locations[loc]:
                 room.cur_char = []
                 if "06:00" <= tm < "11:00":
-                    if (chet == 0 and m < "30") or (chet == 1 and m >= "30"):
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" morning-a"
-                    else:
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" morning-b"
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" morning-"+random_ab
                 elif "11:00" <= tm < "18:00":
-                    if (chet == 0 and m < "30") or (chet == 1 and m >= "30"):
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" day-a"
-                    else:
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" day-b"
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" day-"+random_ab
                 elif "17:00" <= tm < "21:00":
-                    if (chet == 0 and m < "30") or (chet == 1 and m >= "30"):
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" evening-a"
-                    else:
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" evening-b"
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" evening-"+random_ab
                 else:
-                    if (chet == 0 and m < "30") or (chet == 1 and m >= "30"):
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" night-a"
-                    else:
-                        room.cur_bg = "location "+str(loc)+" "+room.id+" night-b"
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" night-"+random_ab
 
         for char in characters:
 

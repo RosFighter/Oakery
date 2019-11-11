@@ -16,7 +16,7 @@ init python:
             self.ri        = ri        # (romantic interest) заинтересованность
             self.ri_text   = ri_text   # текстовое описание текущего уровня заинтересованности
             self.mindedness= mindedness# текущая раскрепощенность (для Эрика – None)
-            self.relmax    = relmax    # уровень отношений в ГГ
+            self.relmax    = relmax    # уровень отношений с ГГ
             self.releric   = releric   # уровень отношений с Эриком (для Эрика – None)
             self.influence = influence # влияние Эрика (для Эрика – None)
             self.talks     = []

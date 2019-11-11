@@ -454,7 +454,7 @@ screen wait_navigation(): # дополнительные кнопки для о�
             spacing 5
             imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 10), ] at small_zoom
             imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 30), ] at small_zoom
-    timer 3.0 action Hide("wait_navigation")
+    timer 2.0 action Hide("wait_navigation")
 
 init: # трансформации для кнопок
 
