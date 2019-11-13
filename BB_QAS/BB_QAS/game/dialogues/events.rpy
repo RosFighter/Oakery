@@ -94,6 +94,8 @@ label Box:
         "узнать подробнее о \"Возможностях\"":
             pass
 
+    $ possibility["cams"].stage_number = 0
+    $ possibility["cams"].stages[0].used = True
     $ AvailableActions["unbox"].enabled = False
     $ AvailableActions["searchcam"].enabled = True
     $ InspectedRooms.clear()
@@ -159,7 +161,10 @@ label lisa_read:
 
     if tm < "11:00":
         scene BG char Lisa bed-morning
-        show image "Lisa reading-morning "+random3_2
+        if flags["Lisa_bathrobe"]:
+            show image "Lisa reading-morning "+random3_2+"a"
+        else:
+            show image "Lisa reading-morning "+random3_2
     else:
         pass
     return
@@ -262,9 +267,6 @@ label lisa_shower:
                 Lisa_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Я всё маме расскажу!!!"
                 "Уйти":
                     jump .end_peeping
-
-
-
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_10
@@ -280,6 +282,7 @@ label lisa_dressed_school:
     $ __mood = 0
     $ __rel = 0
     if peeping["lisa_dressed"] == 0:
+        $ peeping["lisa_dressed"] = 1
         menu:
             Max_09 "{i}Похоже, Лиза собирается в школу...{/i}"
             "постучаться" if characters["lisa"].mindedness < 200:
@@ -288,13 +291,17 @@ label lisa_dressed_school:
                     "Это я, Макс. Можно войти?":
                         scene BG char Lisa morning
                         if characters["lisa"].relmax < 0:
-                            show Lisa school-dressed 01a
+                            show Lisa school-dressed 00a
+                            $ lisa_dress["dressed"] = "01b"
                         elif characters["lisa"].relmax < 250:
-                            show Lisa school-dressed 01b
+                            show Lisa school-dressed 00b
+                            $ lisa_dress["dressed"] = "01b"
                         elif characters["lisa"].relmax < 700:
-                            show Lisa school-dressed 01c
+                            show Lisa school-dressed 00c
+                            $ lisa_dress["dressed"] = "02a"
                         else:
-                            show Lisa school-dressed 01d # пока отсутствует
+                            show Lisa school-dressed 00d # пока отсутствует
+                            $ lisa_dress["dressed"] = "00"
 
                         menu:
                             Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ СКМ ] - вкл/выкл интерфейс.{/i}{/color}"
@@ -335,15 +342,21 @@ label lisa_dressed_school:
                                 $ __rel += 5
 
                         call .rel_mood from _call_lisa_dressed_school_rel_mood
-                        $ peeping["lisa_dressed"] = 4
                         $ tm = "11:00"
                         jump AfterWaiting
 
                     "Хорошо, я подожду...":
-                        $ peeping["lisa_dressed"] = 4
                         call Waiting(10) from _call_Waiting_12
             "открыть дверь" if characters["lisa"].mindedness < 200:
                 $ __ran1 = renpy.random.randint(1, 4)
+                if __ran1 == 1:
+                    $ lisa_dress["dressed"] = "02a"
+                elif __ran1 == 2:
+                    $ lisa_dress["dressed"] = "02c"
+                elif __ran1 == 3:
+                    $ lisa_dress["dressed"] = "02b"
+                else:
+                    $ lisa_dress["dressed"] = "00"
                 scene BG char Lisa morning
                 if characters["lisa"].relmax < 0:
                     show image "Lisa school-dressed 0"+str(__ran1)+"a"
@@ -396,21 +409,26 @@ label lisa_dressed_school:
                                 $ __mood += 5
 
             "заглянуть в окно"  if characters["lisa"].mindedness < 200:
-                if 0 < (day+2) % 7 < 6:
-                    $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
+                $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
+
+                if __ran1 == "01":
+                    $ lisa_dress["dressed"] = "02d"
+                elif __ran1 == "02":
+                    $ lisa_dress["dressed"] = "02e"
+                elif __ran1 == "03":
+                    $ lisa_dress["dressed"] = "02b"
                 else:
-                    $ __ran1 = renpy.random.choice(["03", "04", "05", "06"])
+                    $ lisa_dress["dressed"] = "02c"
+
                 scene image "Lisa window "+__ran1
                 show FG lisa-window
                 menu:
                     Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
                     "уйти":
-                        $ peeping["lisa_dressed"] = 1
                         call Waiting(10) from _call_Waiting_13
             #"войти в комнату" if characters["lisa"].mindedness >= 200:
             #    pass
             "уйти":
-                $ peeping["lisa_dressed"] = 1
                 call Waiting(10) from _call_Waiting_14
 
         scene location house myroom door-morning
@@ -434,6 +452,28 @@ label lisa_dressed_school:
             $ characters["lisa"].relmax += __rel
             $ characters["lisa"].mood   += __mood
 
+        call Waiting(20)
+
+    return
+
+
+label lisa_swim:
+
+    scene image "BG char Lisa swim-"+random2
+    if possibility["Swimsuit"].stage_number < 4:
+        show image "Lisa swim "+random2
+    else:
+        show image "Lisa swim "+random2+"a"
+    return
+
+
+label lisa_sun:
+
+    scene image "BG char Lisa sun-"+random2
+    if possibility["Swimsuit"].stage_number < 4:
+        show image "Lisa sun "+random2
+    else:
+        show image "Lisa sun "+random2+"a"
     return
 
 

@@ -323,7 +323,10 @@ label breakfast:
     scene BG breakfast breakfast-00-e00-k00 # общий фон
     show image "Ann breakfast 00"+renpy.random.choice(["a", "b", "c"])
     show image "Alice breakfast 00"+renpy.random.choice(["a", "b", "c"])
-    show image "Lisa breakfast 00"+renpy.random.choice(["a", "b", "c"])
+    if flags["Lisa_bathrobe"]:
+        show image "Lisa breakfast 01"+renpy.random.choice(["a", "b", "c"])
+    else:
+        show image "Lisa breakfast 00"+renpy.random.choice(["a", "b", "c"])
     show image "FG breakfast 00"+renpy.random.choice(["a", "b", "c"]) # стол
     show image "Max breakfast 00"+renpy.random.choice(["a", "b", "c"])
 
