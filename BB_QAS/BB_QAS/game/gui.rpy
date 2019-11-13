@@ -256,7 +256,7 @@ define gui.navigation_xpos = 60
 define gui.skip_ypos = 15
 
 ## Вертикальная позиция экрана уведомлений.
-define gui.notify_ypos = 68
+define gui.notify_ypos = 120 #68
 
 ## Интервал между выборами в меню.
 define gui.choice_spacing = 0
@@ -474,6 +474,3 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
-
-
-

@@ -77,7 +77,7 @@ label MorningWood:
 
     #$ tm = "07:00"
     #jump AfterWaiting
-    call Waiting(30)
+    call Waiting(30) from _call_Waiting_15
 
 label AfterSchoolFD:
     $ current_room = house[6]
@@ -88,7 +88,7 @@ label AfterSchoolFD:
     Lisa_02 "Да ничего так. Но потом поболтаем. Сейчас переоденусь и прыгну в бассейн. Только об этом и мечтала целый день!"
     Max_04 "Хорошо, здесь и поговорим"
 
-    call Waiting(10)
+    call Waiting(10) from _call_Waiting_16
 
 label about_schoole:
     Max_00 "здесь поговорим о школе"

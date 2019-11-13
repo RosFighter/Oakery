@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/dialogues/events.rpy", line 137: expected statement.
-    Waiting(60, 2)
-                  ^
+File "game/dialogues/events.rpy", line 337: expected statement.
+    tm = "10:00"
+       ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Nov 11 19:28:48 2019
+Wed Nov 13 14:48:40 2019

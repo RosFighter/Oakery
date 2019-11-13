@@ -22,7 +22,7 @@ init python:
             self.talks     = []
 
         def __repr__(self):
-            return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.img}\","\
+            return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.sufix}\","\
                     " настроение: {self.mood}, раскрепощенность: {self.mindedness}, отношения с Максом: {self.relmax}, "\
                     "отношения с Эриком: {self.releric}, влияние Эрика: {self.influence}".format(self=self)
 
