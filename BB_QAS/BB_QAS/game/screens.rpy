@@ -74,15 +74,6 @@ style frame:
     padding gui.frame_borders.padding
     background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
-###############################################################################
-## Переменные для экранов
-###############################################################################
-
-default AutoScroll = None
-default ChoiceHeight = 240 #ожидаемая сумма высот для полоски. отличается от высоты возможно из за спейсинга. возможно надо будет подкрутить
-
-default SayAutoScroll = None
-
 ################################################################################
 ## Внутриигровые экраны
 ################################################################################
@@ -100,47 +91,22 @@ default SayAutoScroll = None
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
-init python:
-    def GetSayHeight():
-        widget = renpy.get_widget('say','what_frame')
-        output = widget.window_size[1]
-        return output
-
-    def ScrlSayAuto():
-        global SayAutoScroll
-        SayAutoScroll = 'vertical' if GetSayHeight()>230 else None
-        return
-
-screen say_clutch():
-    timer .01 action Function(ScrlSayAuto)
-
 screen say(who, what):
-    use say_clutch()
 
     style_prefix "say"
 
     window:
         id "window"
+        hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
+            spacing 10
+            viewport mousewheel "change" id "vp_say":
+                ysize gui.textbox_height - gui.dialogue_ypos - 10
 
-        viewport:
-            xsize gui.dialogue_xpos + gui.dialogue_width + 20
-            ysize gui.textbox_height - gui.dialogue_ypos - 10
-            spacing 15
-
-            mousewheel "change"
-            scrollbars SayAutoScroll
-
-            frame id "what_frame":
-                background None
-                text what id "what" justify False
-
+                frame background None:
+                    text what id "what" justify False
+            vbar value YScrollValue("vp_say") style "say_vscroll"
 
     add SideImage() xalign 0.0 yalign 1.0 zoom 0.85
-    #add SideImage() xalign 0.0 yalign 1.0 zoom renpy.game.preferences.physical_size[0]/float(config.screen_width)
-                ### float - преобразование в дробное число (и числитель и знаменатель, т.к. renpy при делении целых чисел отбрасывает дробную часть)
-                ### renpy.game.preferences.physical_size - (физические размеры окна)
-                ### config.screen_width - (ширина окна заданная в проекте)
-
 
 ## Делает namebox доступным для стилизации через объект Character.
 init python:
@@ -153,6 +119,9 @@ style say_thought is say_dialogue
 
 style namebox is default
 style namebox_label is say_label
+
+style say_vscroll is vscrollbar:
+    unscrollable "hide"
 
 
 style window:
@@ -183,8 +152,6 @@ style say_dialogue:
 
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
-    #ypos gui.dialogue_ypos
-
 
 ## Экран ввода #################################################################
 ##
@@ -229,70 +196,33 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
-init python:
-    def GetMenuHeight(items):
-        yy = 0
-        output = 0
-        for i in items:
-            yy+=1
-            widget = renpy.get_widget('choice','vbb'+str(yy))
-            output+= widget.window_size[1]
-        return output
-
-    def ScrlAuto(items):
-        global AutoScroll, ChoiceHeight
-        AutoScroll = 'vertical' if GetMenuHeight(items)>ChoiceHeight else None
-        return
-
-screen choice_clutch(items):
-    timer .01 action Function(ScrlAuto,items)
-
 screen choice(items):
-    use choice_clutch(items)
 
     style_prefix "choice"
 
-    viewport:
-        area(1380, 815, 525, 245)
-        spacing 0
-        scrollbars AutoScroll
+    frame area(1380, 815, 525, 245) background None:
+        hbox spacing 5:
+            viewport spacing 0 draggable True mousewheel True id "vp_choice":
 
-        draggable True
-        mousewheel True
-        arrowkeys True
+                vbox xfill True spacing -5:
+                    $yy = 0
+                    for i in items:
+                        $yy+=1
+                        button action i.action background None:
+                            xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                            textbutton i.caption action i.action xpos 30 yalign .0
+                            foreground "interface marker"
 
-        vbox id "vb1":
-            xfill True
-            spacing -5
-            $yy = 0
-            for i in items:
-                $yy+=1
-                button:
-                    id "vbb"+str(yy)
-                    action i.action
-                    background None
-                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                    textbutton i.caption action i.action xpos 30 yalign .0
-                    foreground "interface marker"
-
-                key str(yy) action i.action
+                        key str(yy) action i.action
+            vbar value YScrollValue("vp_choice") style "choice_vscroll"
 
 ## Когда этот параметр True, заголовки меню будут проговариваться рассказчиком.
 ## Когда False, заголовки меню будут показаны как пустые кнопки.
 define config.narrator_menu = True
 
-
-style choice_vbox is vb1
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text
-
-style choice_vbox:
-    xalign 0.5
-    ypos 405
-    #yanchor 0.5
-
-    spacing gui.choice_spacing
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
@@ -300,49 +230,52 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
 
+style choice_vscroll is vscrollbar:
+    unscrollable "hide"
+
 
 ## Экран быстрого меню #########################################################
 ##
 ## Быстрое меню показывается внутри игры, чтобы обеспечить лёгкий доступ к
 ## внеигровым меню.
 
-screen quick_menu():
-
-    ## Гарантирует, что оно появляется поверх других экранов.
-    zorder 100
-
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("История") action ShowMenu('history')
-            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Авто") action Preference("auto-forward", "toggle")
-            textbutton _("Сохранить") action ShowMenu('save')
-            textbutton _("Б.Сохр") action QuickSave()
-            textbutton _("Б.Загр") action QuickLoad()
-            textbutton _("Опции") action ShowMenu('preferences')
-
-
-## Данный код гарантирует, что экран быстрого меню будет показан в игре в любое
-## время, если только игрок не скроет интерфейс.
-init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
-
-style quick_button is default
-style quick_button_text is button_text
-
-style quick_button:
-    properties gui.button_properties("quick_button")
-
-style quick_button_text:
-    properties gui.button_text_properties("quick_button")
+# screen quick_menu():
+#
+#     ## Гарантирует, что оно появляется поверх других экранов.
+#     zorder 100
+#
+#     if quick_menu:
+#
+#         hbox:
+#             style_prefix "quick"
+#
+#             xalign 0.5
+#             yalign 1.0
+#
+#             textbutton _("История") action ShowMenu('history')
+#             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
+#             textbutton _("Авто") action Preference("auto-forward", "toggle")
+#             textbutton _("Сохранить") action ShowMenu('save')
+#             textbutton _("Б.Сохр") action QuickSave()
+#             textbutton _("Б.Загр") action QuickLoad()
+#             textbutton _("Опции") action ShowMenu('preferences')
+#
+#
+# ## Данный код гарантирует, что экран быстрого меню будет показан в игре в любое
+# ## время, если только игрок не скроет интерфейс.
+# init python:
+#     config.overlay_screens.append("quick_menu")
+#
+# default quick_menu = True
+#
+# style quick_button is default
+# style quick_button_text is button_text
+#
+# style quick_button:
+#     properties gui.button_properties("quick_button")
+#
+# style quick_button_text:
+#     properties gui.button_text_properties("quick_button")
 
 
 ################################################################################

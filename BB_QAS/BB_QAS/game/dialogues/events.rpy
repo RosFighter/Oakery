@@ -99,6 +99,9 @@ label Box:
     $ AvailableActions["unbox"].enabled = False
     $ AvailableActions["searchcam"].enabled = True
     $ InspectedRooms.clear()
+    if CurPoss == "":
+        $ CurPoss = "cams"
+    
     call Waiting(30) from _call_Waiting_2
 
 
@@ -112,6 +115,8 @@ label SearchCam:
         $ random_ab = "b"
         $ AvailableActions["searchcam"].enabled = False
         $ InspectedRooms.clear()
+        $ possibility["cams"].stage_number = 1
+        $ possibility["cams"].stages[1].used = True
         call Waiting(30, 2.0) from _call_Waiting_3
     else:
         Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
@@ -459,21 +464,21 @@ label lisa_dressed_school:
 
 label lisa_swim:
 
-    scene image "BG char Lisa swim-"+random2
+    scene image "BG char Lisa swim-"+random2_1
     if possibility["Swimsuit"].stage_number < 4:
-        show image "Lisa swim "+random2
+        show image "Lisa swim "+random2_1
     else:
-        show image "Lisa swim "+random2+"a"
+        show image "Lisa swim "+random2_1+"a"
     return
 
 
 label lisa_sun:
 
-    scene image "BG char Lisa sun-"+random2
+    scene image "BG char Lisa sun-"+random2_2
     if possibility["Swimsuit"].stage_number < 4:
-        show image "Lisa sun "+random2
+        show image "Lisa sun "+random2_2
     else:
-        show image "Lisa sun "+random2+"a"
+        show image "Lisa sun "+random2_2+"a"
     return
 
 

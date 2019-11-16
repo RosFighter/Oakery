@@ -1,4 +1,249 @@
 
+
+################################################################################
+screen room_navigation():
+
+    tag menu
+    modal True
+
+    $  i = 0
+    hbox: # Кнопки комнат текущей локации
+        yalign 0.99
+        if current_room == current_location[0] and len(current_room.cur_char) > 2:
+            xpos 76
+        else:
+            xalign 0.01
+        #ysize 200
+        spacing 2
+        for room in current_location:
+            $ i += 1
+            $ char = ""
+            for ch in room.cur_char:
+                $ char += ch+", "
+            if len(char) !=0:
+                $ char = " ("+char[:-2]+")"
+
+            button xysize (126, 190) action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]:
+                vbox xsize 126 spacing 0:
+                    frame xysize (126, 140) background None:
+                        imagebutton align (0.5, 0.0) idle room.icon selected_idle room.icon + " a" selected_hover room.icon + " a":
+                                    selected room == current_room focus_mask True at middle_zoom
+                                    action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
+                        if room != current_room:
+                            # вывод миниатюр персонажей внизу миниатюры локации
+                            if len(room.cur_char) > 0:
+                                hbox ypos 73 xalign 0.5 spacing - 30:
+                                    for char in room.cur_char:
+                                        imagebutton idle characters[char].pref+" icon" focus_mask True at small_face:
+                                            action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
+                        else:
+                            # если же это текущая локация - вывод над миниатюрой
+                            # более крупных значков персонажей. положение зависит от количества
+                            if len(current_room.cur_char) == 1:
+                                imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon" focus_mask True:
+                                            action NullAction() at middle_face
+                            elif len(current_room.cur_char) == 2:
+                                # Если в локации два персонажа, дополнительно проверяется не является ли тек.локация крайней слева
+                                if current_room == current_location[0]:
+                                    # и если да, то первая миниатюра отображается не слева, а над локацией
+                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon":
+                                                focus_mask True action NullAction() at middle_face
+                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
+                                                focus_mask True action NullAction() at middle_face
+                                else:
+                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
+                                                focus_mask True action NullAction() at middle_face
+                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
+                                                focus_mask True action NullAction() at middle_face
+                            elif len(current_room.cur_char) == 3:
+                                imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
+                                            focus_mask True action NullAction() at middle_face
+                                imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon":
+                                            focus_mask True action NullAction() at middle_face
+                                imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].pref+" icon":
+                                            focus_mask True action NullAction() at middle_face
+                            elif len(current_room.cur_char) == 4:
+                                pass
+                    text room.name font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+            key str(i) action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
+
+    hbox:
+        align(.99, .99)  # правый нижний угол
+        # располагаем клавиши действий
+
+        for id in ListButton:  # добавим последовательно все доступные действия (ключи берем из списка кнопок)
+            $ act = AvailableActions[id] # а сами кнопки из словаря
+            if act.active and act.enabled:
+                button xysize (126, 190) action [Hide("wait_navigation"), Jump(act.label)]: # Поговорить
+                    vbox xsize 126 spacing 0:
+                        frame xysize (126, 140) background None:
+                            imagebutton idle act.icon align (0.5, 0.0) focus_mask True:
+                                        action [Hide("wait_navigation"), Jump(act.label)] at middle_zoom
+                        text act.sing font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+
+        button xysize (136, 190) action [Hide("wait_navigation"), Call("Waiting", 60), ]: # ждать час
+            vbox xsize 136 spacing 0:
+                frame xysize (136, 140) background None:
+                    imagebutton idle "interface wait 60" hover "interface wait 60 a" hovered Show("wait_navigation"):
+                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), Call("Waiting", 60), ] at middle_wait
+                text _("ЖДАТЬ") font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+
+    vbox:  # Время и день недели
+        align(0.5, 0.01)
+        text tm xalign(0.5)
+        text weekdays[(day+2) % 7][1] xalign(0.5)
+
+
+    hbox:  # верхнее меню
+        align(0.02, 0.01)
+        spacing 2
+        imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
+        imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
+        imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"),  Function(SetCurStage), Show("menu_opportunity")] at small_menu
+        #imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
+        #imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
+        imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
+
+screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
+    frame align(.99, .99) xysize(123, 395) background None:
+        vbox:
+            spacing 5
+            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 10), ] at small_zoom
+            imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 30), ] at small_zoom
+    timer 2.0 action Hide("wait_navigation")
+
+init: # трансформации для кнопок
+
+    transform close_zoom:
+        size (25, 25)
+
+    transform middle_wait:
+        size (136, 136)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform middle_zoom:
+        size (136, 136)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform small_zoom:
+        size (100, 100)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform middle_face:
+        size (120, 120)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform small_face:
+        size (60, 60)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.93
+
+    transform small_menu:
+        size (80, 80)
+        on idle, selected_idle:
+            yanchor 0 alpha 0.4
+        on hover, selected_hover:
+            yanchor 1 alpha 1.0
+
+################################################################################
+screen menu_opportunity():
+
+    tag menu
+    style_prefix "opportunity"
+
+    $ kol = 0
+    $ all = len(possibility) # Общее количество введенных в игру "возможностей"
+    $ list_stage = []
+
+    for poss in possibility:
+        if possibility[poss].stage_number >= 0: # количество открытых возможностей
+            $ kol += 1
+            if CurPoss == "":
+                $ CurPoss = poss
+
+    if CurPoss != "":
+        default view_stage = possibility[CurPoss].stage_number
+        for i in range(len(possibility[CurPoss].stages)-1):
+            if possibility[CurPoss].stages[i].used:
+                $ list_stage.append(i)
+
+
+    add "interface phon"
+    frame area(150, 95, 350, 50) background None:
+        text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+    imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+
+
+    hbox pos (150, 150) spacing 30:
+        frame  ypos 25 xsize 400 ysize 850 background None:
+            hbox:
+                viewport mousewheel "change" draggable True id "vp1":
+                    vbox spacing 5:
+                        for poss in possibility:
+                            if possibility[poss].stage_number >= 0:
+                                if CurPoss == "":
+                                    $ CurPoss = poss
+                                    $ view_stage = possibility[poss].stage_number
+                                button background None action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stage_number)] xsize 390:
+                                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                                    textbutton possibility[poss].name action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stage_number)] selected CurPoss == poss
+                                    foreground "interface marker"
+                vbar value YScrollValue("vp1") style "poss_vscroll"
+        if CurPoss != "":
+            frame area (0, 30, 1190, 850) background None:
+                vbox spacing 20:
+                    frame xsize 800 ysize 400 pos (195, 0) background None:
+                        if possibility[CurPoss].stages[view_stage].image != "":
+                            add possibility[CurPoss].stages[view_stage].image
+                    frame xsize 1180 xalign 0.5 background None:
+                        text possibility[CurPoss].name size 30 font "hermes.ttf" xalign 0.5
+                    frame area (0, 0, 1190, 400) background None:
+                        hbox:
+                            viewport mousewheel "change" draggable True id "vp2":
+                                vbox spacing 30:
+                                    text possibility[CurPoss].stages[view_stage].desc size 24  color gui.choice_button_text_idle_color
+                                    text possibility[CurPoss].stages[view_stage].ps size 28
+                            vbar value YScrollValue("vp2") style "poss_vscroll"
+    if len(list_stage) > 1:
+        imagebutton pos (690, 360) auto "interface prev %s":
+            focus_mask True
+            action SetScreenVariable("view_stage", list_stage.index(view_stage)-1)
+            sensitive view_stage > min(list_stage)
+        imagebutton pos (1570, 360) auto "interface next %s":
+            focus_mask True
+            action SetScreenVariable("view_stage", list_stage.index(view_stage)+1)
+            sensitive view_stage < max(list_stage)
+
+    key "K_ESCAPE" action Jump("AfterWaiting")
+    key "mouseup_3" action Jump("AfterWaiting")
+
+style opportunity_button_text is default:
+    font "trebucbd.ttf"
+    xpos 30
+    yalign .0
+    size 28
+    idle_color gui.choice_button_text_idle_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+
+style poss_vscroll is vscrollbar:
+    unscrollable "hide"
+
+################################################################################
 screen menu_inventory():
 
     tag menu
@@ -37,32 +282,18 @@ screen menu_inventory():
     else:
         $ tabrows = cells // 5
 
-    $ cur_col = 5
-    for i in range(5):
-        if cur_col == 5 and listrows[i] == min(listrows):
-            $ cur_col = i
-
     for id in items:
         if items[id].have and items[id].cells == 1:
+            $ cur_col = 5
+            for i in range(5):
+                if cur_col == 5 and listrows[i] == min(listrows):
+                    $ cur_col = i
+
             $ added = False
             if listrows[cur_col] + items[id].cells <= tabrows:
                 $ added = True
                 $ listrows[cur_col] += items[id].cells
                 $ items_list[cur_col].append(id)
-                $ cur_col += 1
-                if cur_col > 4:
-                    $ cur_col = 0
-
-            if not added:
-                $ cur_col = 5
-                for i in range(5):
-                    if cur_col == 5 and listrows[i] == min(listrows):
-                        $ cur_col = i
-                $ listrows[cur_col] += items[id].cells
-                $ items_list[cur_col].append(id)
-                $ cur_col += 1
-                if cur_col > 4:
-                    $ cur_col = 0
 
     if cells > 0:
         $ desc = _("Ни один предмет не выбран")
@@ -119,10 +350,14 @@ screen menu_inventory():
         frame area(300, 0, 1020, 180) background None:
             text tdesc.value xalign 0.5 size gui.text_size font gui.text_font color gui.accent_color
 
+    key "K_ESCAPE" action Jump("AfterWaiting")
+    key "mouseup_3" action Jump("AfterWaiting")
+
+
+################################################################################
 screen menu_userinfo():
 
     tag menu
-    default CurChar = "max"
     add "interface phon"
     style_prefix "userinfo"
 
@@ -131,17 +366,17 @@ screen menu_userinfo():
 
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
-    hbox pos (150, 150) xsize 180 spacing 30:
-        viewport ypos 25 mousewheel "change" draggable True:
+    hbox pos (150, 150) spacing 30:
+        viewport ypos 25 xsize 180 mousewheel "change" draggable True:
             vbox spacing 5:
-                button background None  action SetScreenVariable("CurChar", "max") xsize 180:
+                button background None  action SetVariable("CurChar", "max") xsize 180:
                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                    textbutton _("Макс") action SetScreenVariable("CurChar", "max") selected CurChar == "max"
+                    textbutton _("Макс") action SetVariable("CurChar", "max") selected CurChar == "max"
                     foreground "interface marker"
                 for char in characters:
-                    button background None action SetScreenVariable("CurChar", char) xsize 180:
+                    button background None action SetVariable("CurChar", char) xsize 180:
                         xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                        textbutton characters[char].name action SetScreenVariable("CurChar", char) selected CurChar == char
+                        textbutton characters[char].name action SetVariable("CurChar", char) selected CurChar == char
                         foreground "interface marker"
         if CurChar == "max":
             add max_profile.img size (550, 900) xpos -50 ypos 10
@@ -335,6 +570,8 @@ screen menu_userinfo():
                                         text _("Влияние Эрика") size 24 color gui.choice_button_text_idle_color
                                     frame xfill True background None:
                                         text str(characters[CurChar].mindedness)+"%" size 24
+    key "K_ESCAPE" action Jump("AfterWaiting")
+    key "mouseup_3" action Jump("AfterWaiting")
 
 style userinfo_button_text is default:
     font "trebucbd.ttf"
@@ -344,161 +581,3 @@ style userinfo_button_text is default:
     idle_color gui.choice_button_text_idle_color
     hover_color gui.text_color
     selected_color gui.text_color
-
-screen room_navigation():
-
-    tag menu
-    modal True
-
-    $  i = 0
-    hbox: # Кнопки комнат текущей локации
-        yalign 0.99
-        if current_room == current_location[0] and len(current_room.cur_char) > 2:
-            xpos 76
-        else:
-            xalign 0.01
-        #ysize 200
-        spacing 2
-        for room in current_location:
-            $ i += 1
-            $ char = ""
-            for ch in room.cur_char:
-                $ char += ch+", "
-            if len(char) !=0:
-                $ char = " ("+char[:-2]+")"
-
-            button xysize (126, 190) action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]:
-                vbox xsize 126 spacing 0:
-                    frame xysize (126, 140) background None:
-                        imagebutton align (0.5, 0.0) idle room.icon selected_idle room.icon + " a" selected_hover room.icon + " a":
-                                    selected room == current_room focus_mask True at middle_zoom
-                                    action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
-                        if room != current_room:
-                            # вывод миниатюр персонажей внизу миниатюры локации
-                            if len(room.cur_char) > 0:
-                                hbox ypos 73 xalign 0.5 spacing - 30:
-                                    for char in room.cur_char:
-                                        imagebutton idle characters[char].pref+" icon" focus_mask True at small_face:
-                                            action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
-                        else:
-                            # если же это текущая локация - вывод над миниатюрой
-                            # более крупных значков персонажей. положение зависит от количества
-                            if len(current_room.cur_char) == 1:
-                                imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon" focus_mask True:
-                                            action NullAction() at middle_face
-                            elif len(current_room.cur_char) == 2:
-                                # Если в локации два персонажа, дополнительно проверяется не является ли тек.локация крайней слева
-                                if current_room == current_location[0]:
-                                    # и если да, то первая миниатюра отображается не слева, а над локацией
-                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon":
-                                                focus_mask True action NullAction() at middle_face
-                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
-                                                focus_mask True action NullAction() at middle_face
-                                else:
-                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
-                                                focus_mask True action NullAction() at middle_face
-                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
-                                                focus_mask True action NullAction() at middle_face
-                            elif len(current_room.cur_char) == 3:
-                                imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
-                                            focus_mask True action NullAction() at middle_face
-                                imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon":
-                                            focus_mask True action NullAction() at middle_face
-                                imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].pref+" icon":
-                                            focus_mask True action NullAction() at middle_face
-                            elif len(current_room.cur_char) == 4:
-                                pass
-                    text room.name font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
-            key str(i) action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
-
-    hbox:
-        align(.99, .99)  # правый нижний угол
-        # располагаем клавиши действий
-
-        for id in ListButton:  # добавим последовательно все доступные действия (ключи берем из списка кнопок)
-            $ act = AvailableActions[id] # а сами кнопки из словаря
-            if act.active and act.enabled:
-                button xysize (126, 190) action [Hide("wait_navigation"), Jump(act.label)]: # Поговорить
-                    vbox xsize 126 spacing 0:
-                        frame xysize (126, 140) background None:
-                            imagebutton idle act.icon align (0.5, 0.0) focus_mask True:
-                                        action [Hide("wait_navigation"), Jump(act.label)] at middle_zoom
-                        text act.sing font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
-
-        button xysize (136, 190) action [Hide("wait_navigation"), Call("Waiting", 60), ]: # ждать час
-            vbox xsize 136 spacing 0:
-                frame xysize (136, 140) background None:
-                    imagebutton idle "interface wait 60" hover "interface wait 60 a" hovered Show("wait_navigation"):
-                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), Call("Waiting", 60), ] at middle_wait
-                text _("ЖДАТЬ") font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
-
-    vbox:  # Время и день недели
-        align(0.5, 0.01)
-        text tm xalign(0.5)
-        text weekdays[(day+2) % 7][1] xalign(0.5)
-
-
-    hbox:  # верхнее меню
-        align(0.02, 0.01)
-        spacing 2
-        imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
-        imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
-        #imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
-        #imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
-        #imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
-        imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
-
-screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
-    frame align(.99, .99) xysize(123, 395) background None:
-        vbox:
-            spacing 5
-            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 10), ] at small_zoom
-            imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 30), ] at small_zoom
-    timer 2.0 action Hide("wait_navigation")
-
-init: # трансформации для кнопок
-
-    transform close_zoom:
-        size (25, 25)
-
-    transform middle_wait:
-        size (136, 136)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform middle_zoom:
-        size (136, 136)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform small_zoom:
-        size (100, 100)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform middle_face:
-        size (120, 120)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform small_face:
-        size (60, 60)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.93
-
-    transform small_menu:
-        size (80, 80)
-        on idle, selected_idle:
-            yanchor 0 alpha 0.4
-        on hover, selected_hover:
-            yanchor 1 alpha 1.0

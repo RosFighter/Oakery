@@ -220,8 +220,8 @@ init python:
         return t2 - t1
 
 
-    def NextLearnTime(time2):
-        """ возвращает время, когда будет доступно дальнейшее обучение в формате "день час:мин" """
+    def CooldownTime(time2):
+        """ возвращает время, когда откатится кулдаун в формате "день час:мин" """
         h1, m1 = tm.split(":")
         h2, m2 = time2.split(":")
         ti = int(h1)*60+int(m1) + int(h2)*60+int(m2)
@@ -229,22 +229,22 @@ init python:
         m = ti % 60
         d = day + h // 24
 
-        return "[d] " + ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
+        return str(d)+" " + ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
 
 
-    def ItsTime():
-        """ проверяет, наступило ли уже время обучения """
+    def ItsTime(next_learn):
+        """ проверяет, прошел ли кулдаун """
         d1, hm = next_learn.split(" ")
         h1, m1 = hm.split(":")
         h2, m2 = tm.split(":")
 
-        return (day*24 + h2)*60 + m2 >= (d1*24 + h1)*60 + m1
+        return (day*24 + int(h2))*60 + int(m2) >= (int(d1)*24 + int(h1))*60 + int(m1)
 
 
     def ReadBookCheck():
         """ устанавливает активность кнопки чтения, если есть недочитанные книги"""
         for key in items:
-            if items[key].need_read > items[key].read and ItsTime():
+            if items[key].need_read > items[key].read and ItsTime(cooldown["learn"]):
                 AvailableActions["readbook"].active = True
 
 
@@ -322,3 +322,8 @@ init python:
     def RandomChance(chance):
         """ прошло илинет применение навыка с указанным шансом """
         return renpy.random.random() < chance / 100.0
+
+    def SetCurStage():
+        global view_stage
+        if CurPoss != "":
+            view_stage = possibility[CurPoss].stage_number # текущая стадия возможности

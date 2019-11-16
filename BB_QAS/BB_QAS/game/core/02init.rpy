@@ -16,3 +16,6 @@ define weekdays = (
                   (_("ПТ"), _("ПЯТНИЦА")),
                   (_("СБ"), _("СУББОТА"))
                   )
+
+init:
+    $ config.keymap['hide_windows'].append('`')
