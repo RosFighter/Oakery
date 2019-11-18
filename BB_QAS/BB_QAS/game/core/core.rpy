@@ -2,6 +2,8 @@
 
 label Waiting(delta, ratio=1, sleep=False, alarm=""):
     # обработчик ожидания, запускает события по времени
+    $ renpy.block_rollback()
+
     $ __prevday = day
     $ __prevtime = tm
 
@@ -16,7 +18,7 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
 
     # здесь располагаем ссылку на функцию поиска стартующих по времени событий
     $ cut_id = GetCutEvents(__prevtime, tm, sleep)
-    if cut_id == "":
+    if cut_id == "" and not "00:00" <= __prevtime <= "06:00":
         $ cut_id = GetCutEvents(__prevtime, tm, False) # попробуем найти событие для неспящего
 
     if sleep and tm < "08:00" and cut_id == "":
@@ -32,6 +34,7 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         $ tm = EventsByTime[cut_id].tm
 
     if day != __prevday:
+
         # здесь будет блок обработки ежедневно обнуляемых значений
         $ talk_var["ask_money"] = 0
         $ lisa_dress["naked"] = "04a"
@@ -88,6 +91,7 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         # если есть кат-событие - запускаем его
         call expression __name_label from _call_expression
         # иначе запускаем блок "после ожидания"
+
     jump AfterWaiting
 
 

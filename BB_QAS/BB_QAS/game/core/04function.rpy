@@ -322,8 +322,3 @@ init python:
     def RandomChance(chance):
         """ прошло илинет применение навыка с указанным шансом """
         return renpy.random.random() < chance / 100.0
-
-    def SetCurStage():
-        global view_stage
-        if CurPoss != "":
-            view_stage = possibility[CurPoss].stage_number # текущая стадия возможности

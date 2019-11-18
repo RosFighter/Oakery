@@ -146,6 +146,14 @@ default preferences.afm_time = 15
 
 define config.save_directory = "BB_QAS"
 
+## Настройка автосохранений ####################################################
+##
+init python:
+    config.has_autosave = True
+    config.autosave_frequency = None
+    config.autosave_on_choice  = False
+
+
 
 ## Иконка ######################################################################
 ##
@@ -182,14 +190,18 @@ init python:
 
     build.classify('**~', None)
     build.classify('**.bak', None)
+    build.classify('**.rpy', None)
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
     ## Чтобы архивировать файлы, классифицируйте их, например, как 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'images')
+    build.classify('game/**.jpg', 'images')
+    build.classify('game/**.webp', 'images')
+    build.classify('game/**.rpyc', 'scrypts')
+
 
     ## Файлы, соответствующие образцам документации, дублируются в приложениях
     ## Mac, чтобы они появлялись и в приложении, и в zip архиве.

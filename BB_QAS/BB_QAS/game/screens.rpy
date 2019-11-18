@@ -95,6 +95,9 @@ screen say(who, what):
 
     style_prefix "say"
 
+    key "K_F5" action QuickSave()
+    key "K_F8" action QuickLoad()
+
     window:
         id "window"
         hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
@@ -215,6 +218,8 @@ screen choice(items):
 
                         key str(yy) action i.action
             vbar value YScrollValue("vp_choice") style "choice_vscroll"
+    if len(items) == 1:
+        key "K_SPACE" action items[0].action
 
 ## Когда этот параметр True, заголовки меню будут проговариваться рассказчиком.
 ## Когда False, заголовки меню будут показаны как пустые кнопки.
@@ -621,32 +626,37 @@ screen file_slots(title):
                     value page_name_value
 
             ## Таблица слотов.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
+            frame xsize 1280 ysize 635 background None xalign 0.5 yalign 0.5:
+                vpgrid cols gui.file_slot_cols: # gui.file_slot_rows:
+                    mousewheel "change"
+                    draggable True
+                    scrollbars "vertical"
 
-                xalign 0.5
-                yalign 0.5
+                    style_prefix "slot"
 
-                spacing gui.slot_spacing
+                    xalign 0.5
+                    yalign 0.5
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                    spacing gui.slot_spacing
 
-                    $ slot = i + 1
+                    for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                    button:
-                        action FileAction(slot)
+                        $ slot = i + 1
 
-                        has vbox
+                        button:
+                            action FileAction(slot)
 
-                        add FileScreenshot(slot) xalign 0.5
+                            has vbox
 
-                        text FileTime(slot, format=_("{#file_time}%A, %d %B %Y, %H:%M"), empty=_("Пустой слот")):
-                            style "slot_time_text"
+                            add FileScreenshot(slot) xalign 0.5
 
-                        text FileSaveName(slot):
-                            style "slot_name_text"
+                            text FileTime(slot, format=_("{#file_time}%A, %d %B %Y, %H:%M"), empty=_("Пустой слот")):
+                                style "slot_time_text"
 
-                        key "save_delete" action FileDelete(slot)
+                            text FileSaveName(slot):
+                                style "slot_name_text"
+
+                            key "save_delete" action FileDelete(slot)
 
             ## Кнопки для доступа к другим страницам.
             hbox:

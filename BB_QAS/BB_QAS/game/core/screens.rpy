@@ -5,6 +5,11 @@ screen room_navigation():
 
     tag menu
     modal True
+    key "K_F5" action QuickSave()
+    key "K_F8" action QuickLoad()
+
+    $ renpy.block_rollback()
+    # $ renpy.fix_rollback()
 
     $  i = 0
     hbox: # Кнопки комнат текущей локации
@@ -99,8 +104,8 @@ screen room_navigation():
         spacing 2
         imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
         imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
-        imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"),  Function(SetCurStage), Show("menu_opportunity")] at small_menu
-        #imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
+        imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
+        imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
         #imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
 
@@ -158,6 +163,56 @@ init: # трансформации для кнопок
             yanchor 0 alpha 0.4
         on hover, selected_hover:
             yanchor 1 alpha 1.0
+
+################################################################################
+screen menu_my_help():
+    tag menu
+    style_prefix "my_help"
+
+    add "interface phon"
+    frame area(150, 95, 350, 50) background None:
+        text _("ПОЛЕЗНОЕ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+    imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+
+    default CurHP = 0
+
+    hbox pos (300, 180) spacing 30:
+        frame xsize 250 ysize 850 background None:
+            hbox:
+                viewport mousewheel "change" draggable True id "vp1":
+                    vbox spacing 5:
+                        for i in range(len(helps)):
+                            button background None action SetScreenVariable("CurHP", i) xsize 240:
+                                xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                                textbutton helps[i].id action SetScreenVariable("CurHP", i) selected CurHP == i
+                                foreground "interface marker"
+                vbar value YScrollValue("vp1") style "hp_vscroll"
+        frame area (0, 0, 1040, 850) background None:
+            vbox spacing 20:
+                frame xsize 1030 xalign 0.5 background None:
+                    text helps[CurHP].name size 30 font "hermes.ttf" xalign 0.5
+                frame xsize 1040 xalign 0.5 background None:
+                    hbox:
+                        viewport mousewheel "change" draggable True id "vp2":
+                            vbox spacing 30:
+                                text helps[CurHP].desc size 24  color gui.choice_button_text_idle_color
+                        vbar value YScrollValue("vp2") style "hp_vscroll"
+
+    key "K_ESCAPE" action Jump("AfterWaiting")
+    key "mouseup_3" action Jump("AfterWaiting")
+
+style my_help_button_text is default:
+    font "trebucbd.ttf"
+    xpos 30
+    yalign .0
+    size 28
+    idle_color gui.choice_button_text_idle_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+
+style hp_vscroll is vscrollbar:
+    unscrollable "hide"
+
 
 ################################################################################
 screen menu_opportunity():
@@ -367,17 +422,20 @@ screen menu_userinfo():
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
     hbox pos (150, 150) spacing 30:
-        viewport ypos 25 xsize 180 mousewheel "change" draggable True:
-            vbox spacing 5:
-                button background None  action SetVariable("CurChar", "max") xsize 180:
-                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                    textbutton _("Макс") action SetVariable("CurChar", "max") selected CurChar == "max"
-                    foreground "interface marker"
-                for char in characters:
-                    button background None action SetVariable("CurChar", char) xsize 180:
+        hbox ypos 25 xsize 190 spacing 5:
+            viewport mousewheel "change" draggable True id "vp":
+                vbox spacing 5:
+                    button background None  action SetVariable("CurChar", "max") xsize 180:
                         xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                        textbutton characters[char].name action SetVariable("CurChar", char) selected CurChar == char
+                        textbutton _("Макс") action SetVariable("CurChar", "max") selected CurChar == "max"
                         foreground "interface marker"
+                    for char in characters:
+                        button background None action SetVariable("CurChar", char) xsize 180:
+                            xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                            textbutton characters[char].name action SetVariable("CurChar", char) selected CurChar == char
+                            foreground "interface marker"
+            vbar value YScrollValue("vp") style "info_vscroll"
+
         if CurChar == "max":
             add max_profile.img size (550, 900) xpos -50 ypos 10
         else:
@@ -581,3 +639,6 @@ style userinfo_button_text is default:
     idle_color gui.choice_button_text_idle_color
     hover_color gui.text_color
     selected_color gui.text_color
+
+style info_vscroll is vscrollbar:
+    unscrollable "hide"

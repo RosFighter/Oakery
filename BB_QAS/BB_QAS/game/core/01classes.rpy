@@ -248,3 +248,15 @@ init python:
 
         def __repr__(self):
             return "\"{self.desc}\" стартует в {self.tm} по дням: {self.lod}, только если Макс спит {self.sleep}".format(self=self)
+
+
+################################################################################
+    class Helper:
+        """ """
+        def __init__(self, id, name, desc):
+            self.id   = id
+            self.name = name
+            self.desc = desc
+
+        def __repr__(self):
+            return "\"{self.name}\" ({self.id}): {self.desc}".format(self=self)
