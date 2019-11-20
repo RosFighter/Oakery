@@ -71,16 +71,16 @@ define gui.text_size = 26
 define gui.name_text_size = 30
 
 ## Размер текста в пользовательском интерфейсе.
-define gui.interface_text_size = 36
+define gui.interface_text_size = 26
 
 ## Размер заголовков в пользовательском интерфейсе.
-define gui.label_text_size = 36
+define gui.label_text_size = 30
 
 ## Размер текста на экране уведомлений.
 define gui.notify_text_size = 20
 
 ## Размер заголовка игры.
-define gui.title_text_size = 60
+define gui.title_text_size = 28
 
 
 ## Главное и игровое меню. #####################################################
@@ -240,7 +240,7 @@ define config.thumbnail_height = 216
 
 ## Количество колонок и рядов в таблице слотов.
 define gui.file_slot_cols = 3
-define gui.file_slot_rows = 15
+define gui.file_slot_rows = 10
 
 
 ## Позиционирование и Интервалы ################################################
@@ -250,7 +250,7 @@ define gui.file_slot_rows = 15
 
 ## Местоположение левого края навигационных кнопок по отношению к левому краю
 ## экрана.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = 150
 
 ## Вертикальная позиция индикатора пропуска.
 define gui.skip_ypos = 15
@@ -311,7 +311,7 @@ define gui.frame_tile = False
 ## Высота горизонтальных панелей, полос прокрутки и ползунков. Ширина
 ## вертикальных панелей, полос прокрутки и ползунков.
 define gui.bar_size = 38
-define gui.scrollbar_size = 5
+define gui.scrollbar_size = 7
 define gui.slider_size = 38
 
 ## True, если изображения панелей должны моститься. False, если они должны быть
@@ -348,15 +348,15 @@ define gui.history_height = None
 
 ## Местоположение, ширина и выравнивание заголовка, показывающего имя говорящего
 ## персонажа.
-define gui.history_name_xpos = 233
+define gui.history_name_xpos = 150
 define gui.history_name_ypos = 0
-define gui.history_name_width = 233
+define gui.history_name_width = 180
 define gui.history_name_xalign = 1.0
 
 ## Местоположение, ширина и выравнивание диалогового текста.
-define gui.history_text_xpos = 255
-define gui.history_text_ypos = 3
-define gui.history_text_width = 1110
+define gui.history_text_xpos = 180
+define gui.history_text_ypos = 0
+define gui.history_text_width = 1000
 define gui.history_text_xalign = 0.0
 
 

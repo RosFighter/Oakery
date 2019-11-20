@@ -4,6 +4,8 @@ label Sleep:
         Max_19 "Как же я хочу спать..."
 
         "Спать до утра":
+            $ number_autosave += 1
+            $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
 
@@ -29,6 +31,8 @@ label Wearied:
         Max_19 "Я без сил и хочу спать..."
 
         "Спать до утра":
+            $ number_autosave += 1
+            $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
             call Waiting(270, 1, True, "08:00") from _call_Waiting_1
@@ -66,14 +70,20 @@ label Alarm:
         Max_00 "В каком часу я должен встать?"
 
         "В 5 утра":
+            $ number_autosave += 1
+            $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ t = TimeDifference(tm, "05:00")
             call Waiting(t, 1, True, "05:00") from _call_Waiting_6
         "В 6 утра":
+            $ number_autosave += 1
+            $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ t = TimeDifference(tm, "06:00")
             call Waiting(t, 1, True, "06:00") from _call_Waiting_7
         "В 7 утра":
+            $ number_autosave += 1
+            $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ t = TimeDifference(tm, "07:00")
             call Waiting(t, 1, True, "07:00") from _call_Waiting_8

@@ -7,6 +7,14 @@ define lime   = "#00FF00"
 define red    = "#FF0000"
 define orange = "#E59400"
 
+define config.has_autosave = False
+define config.has_quicksave = False
+
+define config.autosave_slots = 30
+define config.quicksave_slots = 30
+define config.autosave_on_quit = False
+define persistent.grid_vbox = "grid"
+
 define weekdays = (
                   (_("ВС"), _("ВОСКРЕСЕНЬЕ")),
                   (_("ПН"), _("ПОНЕДЕЛЬНИК")),

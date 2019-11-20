@@ -95,7 +95,7 @@ screen say(who, what):
 
     style_prefix "say"
 
-    key "K_F5" action QuickSave()
+    key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
     key "K_F8" action QuickLoad()
 
     window:
@@ -298,53 +298,50 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        ypos 180
 
         spacing gui.navigation_spacing
 
-        if main_menu:
+        # button action Start() style "nav_button":
+        #     textbutton _("Начать заново") action Start()
 
-            textbutton _("Начать") action Start()
-
-        else:
-
+        button action ShowMenu("history") style "nav_button":
             textbutton _("История") action ShowMenu("history")
 
-            textbutton _("Сохранить") action ShowMenu("save")
+        button action ShowMenu("load") style "nav_button":
+            textbutton _("Загрузить игру") action ShowMenu("load")
 
-        textbutton _("Загрузить") action ShowMenu("load")
+        button action ShowMenu("save") style "nav_button":
+            textbutton _("Сохранить игру") action ShowMenu("save")
 
-        textbutton _("Настройки") action ShowMenu("preferences")
+        button action FilePage("preferences") style "nav_button":
+            textbutton _("Настройки") action ShowMenu("preferences")
 
         if _in_replay:
 
-            textbutton _("Завершить повтор") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Главное меню") action MainMenu()
-
-        textbutton _("Об игре") action ShowMenu("about")
+            button action EndReplay(confirm=True) style "nav_button":
+                textbutton _("Завершить повтор") action EndReplay(confirm=True)
 
         if renpy.variant("pc"):
 
-            ## Помощь не необходима и не относится к мобильным устройствам.
-            textbutton _("Помощь") action ShowMenu("help")
-
             ## Кнопка выхода блокирована в iOS и не нужна на Android.
-            textbutton _("Выход") action Quit(confirm=not main_menu)
+            button action Quit(confirm=not main_menu) style "nav_button":
+                textbutton _("Выйти из игры") action Quit(confirm=not main_menu)
 
+style nav_button:
+    background None
+    xsize 300
+    padding (0, 0, 0, 0)
+    foreground "interface/marker.webp"
 
-style navigation_button is gui_button
-style navigation_button_text is gui_button_text
-
-style navigation_button:
-    size_group "navigation"
-    properties gui.button_properties("navigation_button")
-
-style navigation_button_text:
-    properties gui.button_text_properties("navigation_button")
-
+style navigation_button_text is gui_button_text:
+    font "trebucbd.ttf"
+    xpos 30
+    yalign .0
+    size 28
+    idle_color gui.choice_button_text_idle_color
+    hover_color gui.text_color
+    selected_color gui.text_color
 
 ## Экран главного меню #########################################################
 ##
@@ -354,6 +351,7 @@ style navigation_button_text:
 
 screen main_menu():
 
+    $ recent_save = renpy.newest_slot()#("[^_]")
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
     ## заменять этот.
     tag menu
@@ -362,52 +360,46 @@ screen main_menu():
 
     add gui.main_menu_background
 
+    vbox xalign 0.5 spacing -60:
+        frame xalign 0.5 xsize 1235 background None:
+            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 180 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
+        frame xalign 0.5 xsize 1235 background None:
+            text "QUITE ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+            $ __short_ver = config.version[0:4]
+            text "[__short_ver]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+
     ## Эта пустая рамка затеняет главное меню.
     frame:
-        pass
+        background "gui/overlay/main_menu.png"
 
-    ## Оператор use включает отображение другого экрана в данном. Актуальное
-    ## содержание главного меню находится на экране навигации.
-    use navigation
+    hbox align(0.5, 1.0) spacing 5:
+        textbutton _("НОВАЯ ИГРА") action Start()
 
-    if gui.show_name:
+        if (recent_save is not None):
+            $ recent_save_page, recent_save_name = recent_save.split("-")
+        else:
+            $ recent_save_page = recent_save_name = ""
+        textbutton _("ПРОДОЛЖИТЬ"):
+            action FileLoad(recent_save_name, confirm=True, page=recent_save_page)
+            sensitive (recent_save is not None)
+        textbutton _("ЗАГРУЗИТЬ"):
+            action ShowMenu("load")
+            sensitive (recent_save is not None)
 
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
+        textbutton _("НАСТРОЙКИ") action ShowMenu("preferences")
+        textbutton _("ВЫЙТИ") action Quit(confirm=not main_menu)
 
-            text "[config.version]":
-                style "main_menu_version"
-
-
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
-style main_menu_frame:
-    xsize 420
-    yfill True
+style main_menu_button:
+    xsize 360
 
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
-
+style main_menu_button_text:
+    font "hermes.ttf"
+    idle_color "#FFFFFF"
+    size 48
+    xalign 0.5
 
 ## Экран игрового меню #########################################################
 ##
@@ -423,9 +415,12 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
-    else:
         add gui.game_menu_background
+
+    add "interface phon"
+    label _("ГЛАВНОЕ МЕНЮ")
+
+    imagebutton pos (1740, 100) auto "interface close %s" action Return() focus_mask True at close_zoom
 
     frame:
         style "game_menu_outer_frame"
@@ -451,6 +446,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                         side_yfill True
 
                         vbox:
+                            spacing 15
                             transclude
 
                 elif scroll == "vpgrid":
@@ -474,16 +470,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Вернуться"):
-        style "return_button"
-
-        action Return()
-
-    label title
-
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
-
 
 style game_menu_outer_frame is empty
 style game_menu_navigation_frame is empty
@@ -495,87 +483,39 @@ style game_menu_scrollbar is gui_vscrollbar
 style game_menu_label is gui_label
 style game_menu_label_text is gui_label_text
 
-style return_button is navigation_button
-style return_button_text is navigation_button_text
-
 style game_menu_outer_frame:
     bottom_padding 45
-    top_padding 180
-
-    background "gui/overlay/game_menu.png"
+    top_padding 150
 
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 450
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
-    right_margin 30
-    top_margin 15
+    left_margin 10
+    right_margin 10
+    top_margin 5
 
 style game_menu_viewport:
-    xsize 1380
+    xsize 1300
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
+    xsize 5
 
 style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xpos 75
-    ysize 180
+    xpos 150
+    ypos 95
+    ysize 50
 
 style game_menu_label_text:
-    size gui.title_text_size
     color gui.accent_color
+    font "hermes.ttf"
+    size gui.title_text_size
     yalign 0.5
-
-style return_button:
-    xpos gui.navigation_xpos
-    yalign 1.0
-    yoffset -45
-
-
-## Экран Об игре ###############################################################
-##
-## Этот экран показывает авторскую информацию об игре и Ren'Py.
-##
-## В этом экране нет ничего особенного, и он служит только примером того, каким
-## можно сделать свой экран.
-
-screen about():
-
-    tag menu
-
-    ## Этот оператор включает игровое меню внутрь этого экрана. Дочерний vbox
-    ## включён в порт просмотра внутри экрана игрового меню.
-    use game_menu(_("Об игре"), scroll="viewport"):
-
-        style_prefix "about"
-
-        vbox:
-
-            label "[config.name!t]"
-            text _("Версия [config.version!t]\n")
-
-            ## gui.about обычно установлено в options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Сделано с помощью {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
-
-## Это переустанавливается в options.rpy для добавления текста на экран Об игре.
-define gui.about = ""
-
-
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
-
-style about_label_text:
-    size gui.label_text_size
 
 
 ## Экраны загрузки и сохранения ################################################
@@ -586,19 +526,61 @@ style about_label_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#save
 
+screen modal_input:
+    modal True
+    window style "input_window":
+        has vbox
+
+        text prompt style "input_prompt"
+        input id "input" style "input_text" length 50
+
+init -2 python:
+    class get_save_name(FileSave):
+        def __init__(self, name, confirm=True, newest=True, page=None, cycle=False):
+            super(get_save_name,self).__init__(name=name,confirm=confirm,newest=newest,page=page,cycle=cycle)
+        def __call__(self):
+            renpy.call_in_new_context("get_save_name")
+            return super(get_save_name,self).__call__()
+
+label get_save_name:
+    show screen save
+    $ NewSaveName()
+    if persistent._file_page != "quick":
+        $ save_name = renpy.call_screen("modal_input", prompt=_("Введите описание файла сохранения:"), default="(None)", length=50)
+        $ save_name = save_name + "$@" + str(weekdays[day+2][0]) + "$@" + str(tm) + "$@" + str(day) + "$@" + str(number_quicksave) + "$@" + str(number_autosave)
+    $ renpy.retain_after_load()
+    return
+
+init python:
+    def get_extra_stuff(data):
+        if '$@' in data:
+            s_desc, load_wd, load_tm, load_day, load_quick, load_auto = data.split('$@')
+            if persistent._file_page == "auto":
+                s_desc = "AUTO-"+load_auto
+            elif persistent._file_page == "quick":
+                s_desc = "QUICK-"+load_quick
+        else:
+            load_wd = ''
+            load_tm = ''
+            load_day = ''
+            s_desc =_('(Нет описания)')
+
+
+        return (s_desc, load_wd, load_tm, load_day)
+
+
 screen save():
 
     tag menu
 
-    use file_slots(_("Сохранить"))
+    use file_slots("save")
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Загрузить"))
-
+    use file_slots("load")
 
 screen file_slots(title):
 
@@ -607,79 +589,142 @@ screen file_slots(title):
     use game_menu(title):
 
         fixed:
+            if persistent.grid_vbox == "grid":
+                imagebutton pos (1200, 0) idle "gui/button/vbox_idle.png" hover "gui/button/vbox_hover.png" action SetVariable("persistent.grid_vbox", "vbox")
+            else:
+                imagebutton pos (1200, 0) idle "gui/button/grid_idle.png" hover "gui/button/grid_hover.png" action SetVariable("persistent.grid_vbox", "grid")
+
 
             ## Это гарантирует, что ввод будет принимать enter перед остальными
             ## кнопками.
             order_reverse True
 
-            ## Номер страницы, который может быть изменён посредством клика на
-            ## кнопку.
-            button:
-                style "page_label"
+            # Номер страницы, который может быть изменён посредством клика на
+            # кнопку.
+            frame xsize 1300 background None xalign 0.0:
+                button:
+                    style "page_label"
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+                    key_events True
+                    xalign .5
+                    action NullAction() #page_name_value.Toggle()
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+                    input:
+                        style "page_label_text"
+                        value page_name_value
 
             ## Таблица слотов.
-            frame xsize 1280 ysize 635 background None xalign 0.5 yalign 0.5:
-                vpgrid cols gui.file_slot_cols: # gui.file_slot_rows:
-                    mousewheel "change"
-                    draggable True
-                    scrollbars "vertical"
+            frame xsize 1300 ysize 735 background None xalign 0.0 yalign 0.5:
+                if persistent.grid_vbox == "grid":
+                    vpgrid cols gui.file_slot_cols: # gui.file_slot_rows:
+                        mousewheel "change"
+                        draggable True
+                        scrollbars "vertical"
 
-                    style_prefix "slot"
+                        style_prefix "slot"
 
-                    xalign 0.5
-                    yalign 0.5
+                        xalign 0.5
+                        yalign 0.5
 
-                    spacing gui.slot_spacing
+                        spacing gui.slot_spacing
 
-                    for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                        for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                        $ slot = i + 1
+                            $ slot = i + 1
+                            $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
 
-                        button:
-                            action FileAction(slot)
+                            button:
+                                if title == "save":
+                                    action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
+                                else:
+                                    action FileAction(slot)
 
-                            has vbox
+                                vbox:
 
-                            add FileScreenshot(slot) xalign 0.5
+                                    add FileScreenshot(slot)
 
-                            text FileTime(slot, format=_("{#file_time}%A, %d %B %Y, %H:%M"), empty=_("Пустой слот")):
-                                style "slot_time_text"
+                                    text FileTime(slot, format=_("{#file_time}%a, %d %b %Y, %H:%M"), empty=_("Пустой слот")):
+                                        style "slot_time_text"
 
-                            text FileSaveName(slot):
-                                style "slot_name_text"
+                                    text s_description:
+                                        style "slot_name_text"
 
-                            key "save_delete" action FileDelete(slot)
+                                if load_day != "":
+                                    vbox xalign 0.95:
+                                        text "[load_wd!t], [load_tm]" style "ext_text"
+                                        text _("ДЕНЬ [load_day]") style "ext_text"
+
+
+                                key "save_delete" action FileDelete(slot)
+                else: # здесь имитируем vbox
+                    vpgrid cols 1:
+                        mousewheel "change"
+                        draggable True
+                        scrollbars "vertical"
+
+                        xalign 0.5
+                        yalign 0.5
+
+                        spacing gui.slot_spacing
+
+                        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                            $ slot = i + 1
+                            $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
+
+                            button  xsize 1280 ysize 80:
+                                if title == "save":
+                                    action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
+                                else:
+                                    action FileAction(slot)
+                                idle_background "gui/button/idle_save_button.png"
+                                insensitive_background "gui/button/insensitive_save_button.png"
+                                hover_background "gui/button/hover_save_button.png"
+
+                                fixed:
+                                    text s_description:
+                                        color gui.hover_color
+                                        size 36
+                                        xalign .05
+                                        yalign .5
+                                    text FileTime(slot, format=_("{#file_time}%d %b %Y, %H:%M"), empty=_("Пустой слот")):
+                                        size 20
+                                        color gui.hover_color
+                                        xalign .95
+                                        yalign .99
+
+                                    if load_day != "":
+                                            text "[load_wd!t], [load_tm], ДЕНЬ [load_day]":
+                                                size 30
+                                                color gui.hover_color
+                                                xalign .95
+                                                yalign .01
+
+                                key "save_delete" action FileDelete(slot)
 
             ## Кнопки для доступа к другим страницам.
-            hbox:
-                style_prefix "page"
+            frame xsize 1300 background None xalign 0.0 yalign 1.0:
+                hbox:
+                    style_prefix "page"
 
-                xalign 0.5
-                yalign 1.0
+                    xalign 0.5
 
-                spacing gui.page_spacing
+                    spacing gui.page_spacing
 
-                textbutton _("<") action FilePagePrevious()
+                    textbutton _("<") action FilePagePrevious()
 
-                if config.has_autosave:
-                    textbutton _("{#auto_page}А") action FilePage("auto")
+                    # if config.has_autosave:
+                    textbutton _("{#auto_page}Автосохр.") action FilePage("auto")
 
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Б") action FilePage("quick")
+                    # if config.has_quicksave:
+                    textbutton _("{#quick_page}Быстрые сохр.") action FilePage("quick")
 
-                ## range(1, 10) задаёт диапазон значений от 1 до 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
+                    ## range(1, 10) задаёт диапазон значений от 1 до 9.
+                    for page in range(1, 10):
+                        textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
+                    textbutton _(">") action FilePageNext()
+
 
 
 style page_label is gui_label
@@ -690,7 +735,15 @@ style page_button_text is gui_button_text
 style slot_button is gui_button
 style slot_button_text is gui_button_text
 style slot_time_text is slot_button_text
-style slot_name_text is slot_button_text
+style slot_name_text is slot_button_text:
+    color gui.hover_color
+
+style ext_text:
+    font "seguisb.ttf"
+    size 28
+    xalign 1.
+    color "#ffffff"#gui.hover_color
+    outlines [( 1, "#000000", 0, 0)]
 
 style page_label:
     xpadding 75
@@ -713,6 +766,8 @@ style slot_button:
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
 
+style slot_vscrollbar:
+    xsize 5
 
 ## Экран настроек ##############################################################
 ##
@@ -924,7 +979,8 @@ screen history():
                         if "color" in h.who_args:
                             text_color h.who_args["color"]
 
-                $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                # $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                $ what = h.what
                 text what:
                     substitute False
 
@@ -961,6 +1017,7 @@ style history_name:
 style history_name_text:
     min_width gui.history_name_width
     text_align gui.history_name_xalign
+    size 30
 
 style history_text:
     xpos gui.history_text_xpos
@@ -970,6 +1027,7 @@ style history_text:
     min_width gui.history_text_width
     text_align gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
+    size 26
 
 style history_label:
     xfill True
@@ -1150,6 +1208,7 @@ style help_label_text:
 ## https://www.renpy.org/doc/html/screen_special.html#confirm
 
 screen confirm(message, yes_action, no_action):
+
 
     ## Гарантирует, что другие экраны будут недоступны, пока показан этот экран.
     modal True

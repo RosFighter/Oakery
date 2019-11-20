@@ -215,6 +215,9 @@ default current_room = house[5]
 default prev_room = house[6]
 default InspectedRooms = []
 
+default number_autosave = 0
+default number_quicksave = 0
+
 default flags = {
     "Lisa_bathrobe" : False,
     "morning_erect" : 0,

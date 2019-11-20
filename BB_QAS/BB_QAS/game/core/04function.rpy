@@ -322,3 +322,16 @@ init python:
     def RandomChance(chance):
         """ прошло илинет применение навыка с указанным шансом """
         return renpy.random.random() < chance / 100.0
+
+    def NewSaveName():
+        global save_name
+        save_name = ("" + "$@" + str(weekdays[day+2][0]) +
+                    "$@" + str(tm) + "$@" + str(day) +
+                    "$@" + str(number_quicksave) +
+                    "$@" + str(number_autosave))
+
+    def NewNumberAutosave():
+        global number_autosave
+        number_autosave += 1
+
+        NewSaveName()

@@ -87,6 +87,9 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         if max_profile.energy < 5:
             jump Wearied
 
+    # обновим extra-info для сохранений
+    $ NewSaveName()
+
     if __name_label != "" and renpy.has_label(__name_label):
         # если есть кат-событие - запускаем его
         call expression __name_label from _call_expression
@@ -112,6 +115,9 @@ label AfterWaiting:
             if __name_label == "alice_dishes":
                 if ((day+2) % 7 == 0 and tm >= "11:00") or tm >= "12:00":
                     $ dishes_washed = True
+
+    # обновим extra-info для сохранений
+    $ NewSaveName()
 
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
     $ __name_label = ""

@@ -5,7 +5,7 @@ screen room_navigation():
 
     tag menu
     modal True
-    key "K_F5" action QuickSave()
+    key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
     key "K_F8" action QuickLoad()
 
     $ renpy.block_rollback()
@@ -106,7 +106,7 @@ screen room_navigation():
         imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
         imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
         imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
-        #imagebutton idle "interface menu main" focus_mask True action [Hide("wait_navigation"), Show("menu_main")] at small_menu
+        imagebutton idle "interface menu main" focus_mask True action ShowMenu("save") at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
@@ -296,6 +296,7 @@ style opportunity_button_text is default:
     selected_color gui.text_color
 
 style poss_vscroll is vscrollbar:
+    xsize 7
     unscrollable "hide"
 
 ################################################################################
@@ -407,7 +408,6 @@ screen menu_inventory():
 
     key "K_ESCAPE" action Jump("AfterWaiting")
     key "mouseup_3" action Jump("AfterWaiting")
-
 
 ################################################################################
 screen menu_userinfo():
