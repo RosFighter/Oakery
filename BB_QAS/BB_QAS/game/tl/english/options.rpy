@@ -3,6 +3,5 @@
 translate english strings:
 
     # game/options.rpy:15
-    old "Big Brother: quite another story | Большой брат: совсем другая история"
-    new "Big Brother: quite another story"
-
+    old "Большой брат: другая история"
+    new "Big Brother: another story"
