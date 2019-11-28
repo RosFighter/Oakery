@@ -35,7 +35,7 @@ init 1900 python hide:
 init python:
     config.automatic_images_minimum_components = 1 # минимальное количество тегов
     config.automatic_images = [' ', '_', '/'] # список разделителей для создания тегов
-    config.automatic_images_strip = ["images"] # здесь через запятую можно указать и другие папки из директории game
+    config.automatic_images_strip = ["images", "gui"] # здесь через запятую можно указать и другие папки из директории game
 
 
 # image AnimAnnEric1:

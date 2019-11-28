@@ -81,6 +81,8 @@ label MorningWood:
             pass
 
     $ flags["morning_erect"] = 1
+    $ possibility["seduction"].stage_number = 0
+    $ possibility["seduction"].stages[0].used = True
     call Waiting(30) from _call_Waiting_15
 
 

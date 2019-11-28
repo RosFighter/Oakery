@@ -370,7 +370,7 @@ screen main_menu():
 
     ## Эта пустая рамка затеняет главное меню.
     frame:
-        background "gui/overlay/main_menu.png"
+        background "gui/overlay/main_menu.webp"
 
     hbox align(0.5, 1.0) spacing 5:
         textbutton _("НОВАЯ ИГРА") action Start()
