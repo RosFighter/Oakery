@@ -24,6 +24,7 @@ label Lisa_cooldown:
     Max_00 "Хорошо, Лиза..."
     return
 
+
 label MorningWood:
 
     scene Lisa morning-oops 01

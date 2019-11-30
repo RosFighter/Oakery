@@ -97,6 +97,12 @@ screen say(who, what):
 
     key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
     key "K_F8" action QuickLoad()
+    if _preferences.language is None:
+        key "l" action Language("english")
+        key "д" action Language("english")
+    else:
+        key "l" action Language(None)
+        key "д" action Language(None)
 
     window:
         id "window"
@@ -202,6 +208,14 @@ style input:
 screen choice(items):
 
     style_prefix "choice"
+    key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
+    key "K_F8" action QuickLoad()
+    if _preferences.language is None:
+        key "l" action Language("english")
+        key "д" action Language("english")
+    else:
+        key "l" action Language(None)
+        key "д" action Language(None)
 
     frame area(1380, 815, 525, 245) background None:
         hbox spacing 5:
@@ -364,7 +378,7 @@ screen main_menu():
         frame xalign 0.5 xsize 1235 background None:
             text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 180 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
         frame xalign 0.5 xsize 1235 background None:
-            text "QUITE ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+            text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
             $ __short_ver = config.version[0:4]
             text "[__short_ver]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 

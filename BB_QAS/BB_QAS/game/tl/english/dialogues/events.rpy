@@ -548,3 +548,235 @@ translate english strings:
     old "Лизе не нравится, когда ей мешают одеваться,\nно правильные слова спасают положение.\nЕе отношение к Максу улучшилось."
     new "Lisa does not like to be interrupted to dress,\n but the right words save the day.\nHer attitude toward max had deteriorated."
 
+# TODO: Translation updated at 2019-11-30 23:36
+
+# game/dialogues/events.rpy:312
+translate english lisa_dressed_school_lisa_dressed_7332887d:
+
+    # Max_09 "{i}Похоже, Лиза собирается в школу...{/i}" nointeract
+    Max_09 "" nointeract
+
+# game/dialogues/events.rpy:347
+translate english lisa_dressed_school_look_window_be364192:
+
+    # Max_01 "Ого, какой вид! Вот это я удачно заглянул!" nointeract
+    Max_01 "" nointeract
+
+# game/dialogues/events.rpy:368
+translate english lisa_dressed_school_come_in_e44012a5:
+
+    # Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
+    Lisa_00 "" nointeract
+
+# game/dialogues/events.rpy:373
+translate english lisa_dressed_school_come_in_d468ca42:
+
+    # Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
+    Lisa_12 ""
+
+# game/dialogues/events.rpy:374
+translate english lisa_dressed_school_come_in_5991dbe6:
+
+    # Max_00 "Удачи"
+    Max_00 ""
+
+# game/dialogues/events.rpy:378
+translate english lisa_dressed_school_come_in_4357c29a:
+
+    # Lisa_02 "В любом случае, я уже оделась, так что, входи. А я побежала в школу."
+    Lisa_02 ""
+
+# game/dialogues/events.rpy:379
+translate english lisa_dressed_school_come_in_5991dbe6_1:
+
+    # Max_00 "Удачи"
+    Max_00 ""
+
+# game/dialogues/events.rpy:382
+translate english lisa_dressed_school_come_in_cc005fe2:
+
+    # Lisa_12 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
+    Lisa_12 ""
+
+# game/dialogues/events.rpy:383
+translate english lisa_dressed_school_come_in_a9b3ede6:
+
+    # Max_00 "Пока, Лиза!"
+    Max_00 ""
+
+# game/dialogues/events.rpy:387
+translate english lisa_dressed_school_come_in_d12137de:
+
+    # Lisa_01 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
+    Lisa_01 ""
+
+# game/dialogues/events.rpy:388
+translate english lisa_dressed_school_come_in_a9b3ede6_1:
+
+    # Max_00 "Пока, Лиза!"
+    Max_00 ""
+
+# game/dialogues/events.rpy:390
+translate english lisa_dressed_school_come_in_74da160f:
+
+    # Lisa_02 "Откуда я знаю, что ты видел, а что ещё нет?"
+    Lisa_02 ""
+
+# game/dialogues/events.rpy:392
+translate english lisa_dressed_school_come_in_ff787e08:
+
+    # Lisa_01 "Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
+    Lisa_01 ""
+
+# game/dialogues/events.rpy:393
+translate english lisa_dressed_school_come_in_a9b3ede6_2:
+
+    # Max_00 "Пока, Лиза!"
+    Max_00 ""
+
+# game/dialogues/events.rpy:397
+translate english lisa_dressed_school_come_in_fac113ab:
+
+    # Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
+    Lisa_03 ""
+
+# game/dialogues/events.rpy:399
+translate english lisa_dressed_school_come_in_b153d389:
+
+    # Lisa_03 "Да ты у нас, оказывается, джентльмен!"
+    Lisa_03 ""
+
+# game/dialogues/events.rpy:401
+translate english lisa_dressed_school_come_in_1f075eff:
+
+    # Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
+    Lisa_01 ""
+
+# game/dialogues/events.rpy:402
+translate english lisa_dressed_school_come_in_a9b3ede6_3:
+
+    # Max_00 "Пока, Лиза!"
+    Max_00 ""
+
+# game/dialogues/events.rpy:431
+translate english lisa_dressed_school_open_door_a5a35250:
+
+    # Lisa_12 "Макс! Стучаться надо! А вдруг я была бы голая?! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/events.rpy:435
+translate english lisa_dressed_school_open_door_a013924b:
+
+    # Lisa_13 "Ну ты хам! Быстро закрой дверь с той стороны!"
+    Lisa_13 ""
+
+# game/dialogues/events.rpy:436
+translate english lisa_dressed_school_open_door_6e7aee99:
+
+    # Max_00 "Хорошо..."
+    Max_00 ""
+
+# game/dialogues/events.rpy:438
+translate english lisa_dressed_school_open_door_6f9027af:
+
+    # Lisa_01 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
+    Lisa_01 ""
+
+# game/dialogues/events.rpy:439
+translate english lisa_dressed_school_open_door_6e7aee99_1:
+
+    # Max_00 "Хорошо..."
+    Max_00 ""
+
+# game/dialogues/events.rpy:442
+translate english lisa_dressed_school_open_door_733f2342:
+
+    # Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/events.rpy:450
+translate english lisa_dressed_school_open_door_ea1d5c57:
+
+    # Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/events.rpy:454
+translate english lisa_dressed_school_open_door_8e7ae4a9:
+
+    # Lisa_11 "Что?! Я всё маме расскажу!" nointeract
+    Lisa_11 "" nointeract
+
+# game/dialogues/events.rpy:460
+translate english lisa_dressed_school_open_door_55653ef5:
+
+    # Lisa_12 "..." nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/events.rpy:465
+translate english lisa_dressed_school_open_door_2283f478:
+
+    # Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
+    Lisa_12 ""
+
+# game/dialogues/events.rpy:466
+translate english lisa_dressed_school_open_door_6e7aee99_2:
+
+    # Max_00 "Хорошо..."
+    Max_00 ""
+
+# game/dialogues/events.rpy:510
+translate english lisa_dressed_shop_lisa_dressed_a44136df:
+
+    # Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..." nointeract
+    Max_09 "" nointeract
+
+# game/dialogues/events.rpy:519
+translate english lisa_dressed_shop_knock_869e0bce:
+
+    # Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!" nointeract
+    Lisa "" nointeract
+
+# game/dialogues/events.rpy:522
+translate english lisa_dressed_shop_knock_056fd501:
+
+    # Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там." nointeract
+    Lisa "" nointeract
+
+# game/dialogues/events.rpy:559
+translate english lisa_dressed_shop_open_door_b0500b2e:
+
+    # Lisa_12 "Макс! [phrase!t] Быстрой закрой дверь с той стороны!" nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/events.rpy:565
+translate english lisa_dressed_shop_open_door_8e7ae4a9:
+
+    # Lisa_11 "Что?! Я всё маме расскажу!" nointeract
+    Lisa_11 "" nointeract
+
+# game/dialogues/events.rpy:572
+translate english lisa_dressed_shop_open_door_55653ef5:
+
+    # Lisa_12 "..." nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/events.rpy:597
+translate english lisa_dressed_shop_look_window_be364192:
+
+    # Max_01 "Ого, какой вид! Вот это я удачно заглянул!" nointeract
+    Max_01 "" nointeract
+
+translate english strings:
+
+    # game/dialogues/events.rpy:522
+    old "Хорошо..."
+    new ""
+
+    # game/dialogues/events.rpy:554
+    old "Я не одета!"
+    new ""
+
+    # game/dialogues/events.rpy:557
+    old "Я же сказала, что я не одета!"
+    new ""
+

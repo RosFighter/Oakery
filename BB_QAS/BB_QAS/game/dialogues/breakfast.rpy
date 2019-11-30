@@ -10,7 +10,15 @@ label after_breakfast:
 
 
 label typical_breakfast:
-    Max_00 "А здесь диалог самого обычного дня, когда больше ничего не происходит"
+    menu:
+        Ann_00 "Всех ещё раз с добрым утром, всем приятного аппетита! Давайте сегодня покушаем в тишине, если вы не возражаете..."
+        "Конечно, мам...":
+            Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
+            Max_00 "Приятного аппетита!"
+        "А что, что-то случилось?":
+            Ann_05 "Нет, просто ещё не проснулась, нужно собраться с мыслями..."
+            Max_00 "Понятно. Приятного аппетита!"
+
 
     jump after_breakfast
 
@@ -320,15 +328,12 @@ label breakfast_first:
 #######################################################################################################################
 # диалоги и события за завтраком
 label breakfast:
-    scene BG breakfast breakfast-00-e00-k00 # общий фон
-    show image "Ann breakfast 00"+renpy.random.choice(["a", "b", "c"])
-    show image "Alice breakfast 00"+renpy.random.choice(["a", "b", "c"])
-    if flags["Lisa_bathrobe"]:
-        show image "Lisa breakfast 01"+renpy.random.choice(["a", "b", "c"])
-    else:
-        show image "Lisa breakfast 00"+renpy.random.choice(["a", "b", "c"])
-    show image "FG breakfast 00"+renpy.random.choice(["a", "b", "c"]) # стол
-    show image "Max breakfast 00"+renpy.random.choice(["a", "b", "c"])
+    scene BG breakfast 00 # общий фон
+    show image "Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["ann"]
+    show image "Alice breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"]
+    show image "Lisa breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["lisa"]
+    show image "FG breakfast 0"+renpy.random.choice(["1", "2", "3"]) # стол
+    show image "Max breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["max"]
 
     if day == 1:
         jump breakfast_first

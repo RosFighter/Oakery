@@ -185,9 +185,9 @@ label SetAvailableActions: # включает кнопки действий
 
     if current_room == house[3]:  # ванная комната
         if "06:00" <= tm <= "18:00":
-            $ AvailableActions["shower"].active = True
+            $ AvailableActions["shower"].active = False #True - временно
         if "20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00":
-            $ AvailableActions["bath"].active = True
+            $ AvailableActions["bath"].active = False #True - временно
         if "08:00" <= tm <= "09:00" and day < 19:
             $ AvailableActions["throwspider3"].active = True
 

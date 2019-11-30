@@ -290,3 +290,45 @@ translate english strings:
     old "Хорошо, мам!"
     new "Okay, mom"
 
+# TODO: Translation updated at 2019-11-30 23:36
+
+# game/dialogues/dinner.rpy:13
+translate english typical_dinner_ba465243:
+
+    # Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract
+    Ann_00 "" nointeract
+
+# game/dialogues/dinner.rpy:16
+translate english typical_dinner_1211a2f4:
+
+    # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
+    Ann_05 ""
+
+# game/dialogues/dinner.rpy:17
+translate english typical_dinner_4a7da202:
+
+    # Max_00 "Приятного аппетита!"
+    Max_00 ""
+
+# game/dialogues/dinner.rpy:19
+translate english typical_dinner_e7b121b0:
+
+    # Ann_05 "Да, всё в порядке, Макс. Спасибо, что спросил. Просто за день столько всего, что пора бы уже и отдохнуть..."
+    Ann_05 ""
+
+# game/dialogues/dinner.rpy:20
+translate english typical_dinner_63f629c8:
+
+    # Max_00 "Понятно. Приятного аппетита!"
+    Max_00 ""
+
+translate english strings:
+
+    # game/dialogues/dinner.rpy:13
+    old "Как скажешь, мам..."
+    new ""
+
+    # game/dialogues/dinner.rpy:13
+    old "У тебя всё хорошо?"
+    new ""
+

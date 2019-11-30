@@ -7,11 +7,19 @@ screen room_navigation():
     modal True
     key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
     key "K_F8" action QuickLoad()
+    if _preferences.language is None:
+        key "l" action Language("english")
+        key "д" action Language("english")
+    else:
+        key "l" action Language(None)
+        key "д" action Language(None)
 
     $ renpy.block_rollback()
     # $ renpy.fix_rollback()
 
     $  i = 0
+
+    $ wait = 60 - int(tm.split(":")[1])
     hbox: # Кнопки комнат текущей локации
         yalign 0.99
         if current_room == current_location[0] and len(current_room.cur_char) > 2:
@@ -86,11 +94,11 @@ screen room_navigation():
                                         action [Hide("wait_navigation"), Jump(act.label)] at middle_zoom
                         text act.sing font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
-        button xysize (136, 190) action [Hide("wait_navigation"), Call("Waiting", 60), ]: # ждать час
+        button xysize (136, 190) action [Hide("wait_navigation"), Call("Waiting", wait), ]: # ждать час
             vbox xsize 136 spacing 0:
                 frame xysize (136, 140) background None:
-                    imagebutton idle "interface wait 60" hover "interface wait 60 a" hovered Show("wait_navigation"):
-                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), Call("Waiting", 60), ] at middle_wait
+                    imagebutton idle "interface wait 60" hover "interface wait 60 a":# hovered Show("wait_navigation"):
+                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), Call("Waiting", wait), ] at middle_wait
                 text _("ЖДАТЬ") font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
     vbox:  # Время и день недели
