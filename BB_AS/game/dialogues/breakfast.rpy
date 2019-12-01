@@ -24,7 +24,6 @@ label typical_breakfast:
 
 
 label breakfast_first:
-    show image "Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+"a"
     Ann_07 "Ну, дети, как вам живётся на новом месте? Как спалось в первую ночь?"
     menu:
         Alice_07 "Просто нет слов! После той нашей съёмной квартиры это какой-то рай! А кровать какая удобная..."
@@ -330,7 +329,9 @@ label breakfast_first:
 # диалоги и события за завтраком
 label breakfast:
     scene BG breakfast 00 # общий фон
-    if dress_suf["ann"] == "":
+    if day == 1:
+        show image "Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+"a"
+    elif dress_suf["ann"] == "":
         show image "Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+random_suf
     else:
         show image "Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["ann"]

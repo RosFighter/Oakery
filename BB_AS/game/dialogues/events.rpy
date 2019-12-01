@@ -156,10 +156,10 @@ label DishesWashed:
         if __name_label == "alice_dishes":
             $ characters["alice"].mood += 6
             if characters["alice"].relmax < 400:
-                $ renpy.notify(_("Вы помыли посуду вместо Алисы.\nЕе настроение улучшилось.\nЕе отношение к вам немного улучшилось"))
+                $ HintRelMood("alice", 10, 6)
                 $ characters["alice"].relmax += 10
             else:
-                $ renpy.notify(_("Вы помыли посуду вместо Алисы.\nЕе настроение улучшилось."))
+                $ HintRelMood("alice", 0, 6)
 
     $ dishes_washed = True
 
@@ -227,6 +227,7 @@ label lisa_shower:
 
     label .start_peeping:
         $ peeping["lisa_shower"] = 1
+        $ renpy.notify(_("Скрытность Макса капельку повысилась"))
         $ max_profile.stealth += 0.01
         $ _ran1 = renpy.random.randint(1, 4)
 
@@ -251,6 +252,7 @@ label lisa_shower:
         if RandomChance(_chance):
             $ peeping["lisa_shower"] = 1
             $ max_profile.stealth += 0.1
+            $ renpy.notify(_("Скрытность Макса повысилась"))
             $ lisa_dress["naked"] = "00a"
             $ _ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
@@ -260,6 +262,7 @@ label lisa_shower:
         elif RandomChance(_chance):
             $ peeping["lisa_shower"] = 2
             $ max_profile.stealth += 0.05
+            $ renpy.notify(_("Скрытность Макса немного повысилась"))
             $ lisa_dress["naked"] = "00a"
             $ _ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
@@ -270,6 +273,7 @@ label lisa_shower:
         else:
             $ peeping["lisa_shower"] = 3
             $ max_profile.stealth += 0.02
+            $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
             $ _ran1 = renpy.random.choice(["09", "10"])
             scene BG shower-closer
             show image ("Lisa shower-closer "+_ran1)
@@ -292,8 +296,9 @@ label lisa_read:
     if tm < "11:00":
         scene BG char Lisa bed-morning
         show image "Lisa reading-morning "+random3_2+dress_suf["lisa"]
-    else:
-        pass # для вечернего чтения нужны спрайты
+    else: ## временно. спрайты будут заменены по готовности
+        scene BG char Lisa bed-evening
+        show image "Lisa reading-morning "+random3_2+dress_suf["lisa"]
     return
 
 
@@ -408,6 +413,14 @@ label lisa_dressed_school:
     label .open_door:
         $ __wait = 20
         $ __ran1 = renpy.random.randint(2, 5)
+        if __ran1 == 2:
+            $ lisa_dress["dressed"] = "01b"
+        elif __ran1 == 3:
+            $ lisa_dress["dressed"] = "02c"
+        elif __ran1 == 4:
+            $ lisa_dress["dressed"] = "02b"
+        else:
+            $ lisa_dress["dressed"] = "00"
         scene BG char Lisa morning
         if characters["lisa"].relmax < 0:
             show image "Lisa school-dressed 0"+str(__ran1)
@@ -419,7 +432,7 @@ label lisa_dressed_school:
             show image "Lisa school-dressed 0"+str(__ran1)+"c" # пока отсутствует
 
         $ __mood -= 5 # настроение портится в любом случае
-        if __ran1 < 2: # Лиза практически одета
+        if __ran1 < 3: # Лиза практически одета
             menu:
                 Lisa_12 "Макс! Стучаться надо! А вдруг я была бы голая?! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "Ну, тогда мне бы повезло":
@@ -430,7 +443,7 @@ label lisa_dressed_school:
                     Lisa_01 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
                     Max_00 "Хорошо..."
                     $ __mood += 5
-        elif __ran1 < 4: # Лиза частично одета
+        elif __ran1 < 5: # Лиза частично одета
             menu:
                 Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "Извини... Кстати, отличный зад!" if __ran1 < 3:
@@ -591,28 +604,60 @@ label lisa_dressed_shop:
         return
 
 
-# label lisa_dressed_somewhere:
+label lisa_dressed_somewhere:
+    scene location house myroom door-morning
+
+    if peeping["lisa_dressed"] != 0:
+        jump .end
+
+    menu:
+        Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
+        "уйти":
+            $ peeping["lisa_dressed"] = 1
+
+    label .end:
+        return
+
 
 label lisa_swim:
 
-    scene image "BG char Lisa swim-"+random2_1
-    show image "Lisa swim "+random2_1+swim_suf["lisa"]
+    scene image "BG char Lisa swim-"+random3_1
+    show image "Lisa swim "+random3_1+swim_suf["lisa"]
     return
 
 
 label lisa_sun:
 
-    scene image "BG char Lisa sun-"+random2_2
-    show image "Lisa sun "+random2_2+swim_suf["lisa"]
+    scene image "BG char Lisa sun-"+random3_2
+    show image "Lisa sun "+random3_2+swim_suf["lisa"]
     return
 
-# label lisa_dishes:
 
-# label lisa_phone:
+label lisa_dishes:
 
-# label lisa_bath:
+    scene BG crockery-evening-00
+    show image "Lisa crockery-evening 01"+dress_suf["lisa"]
+    return
 
-# label lisa_homework:
+
+label lisa_phone:
+
+    scene BG char Lisa bed-evening
+    show image "Lisa phone-evening "+random3_3
+    return
+
+
+label lisa_bath:
+    scene location house bathroom door-evening
+    ## диалог
+
+    return
+
+
+label lisa_homework:
+    scene BG char Lisa lessons
+    show image "Lisa lessons "+random3_1+dress_suf["lisa-learn"]
+    return
 
 
 ################################################################################
@@ -641,6 +686,8 @@ label ann_shower:
                 jump .end_peeping
 
     label .start_peeping:
+        $ renpy.notify(_("Скрытность Макса капельку повысилась"))
+        $ max_profile.stealth += 0.01
         $ __ran1 = renpy.random.randint(1, 4)
         scene image ("Ann shower 0"+str(__ran1))
         show image "shower fg 00"+dress_suf["max"]

@@ -233,6 +233,7 @@ default dress_suf = {
     "alice-sleepwear":"",
     "lisa-sleepwear":"",
     "max-sleepwear":"",
+    "lisa-learn":"",
 }
 
 default swim_suf = {
