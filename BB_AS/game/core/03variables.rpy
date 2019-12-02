@@ -58,9 +58,7 @@ default schedule_lisa = [
     Schedule((1, 2, 3, 4, 5), "16:0", "16:59", _("в бассейне"), "house", 6, "lisa_swim", dress="swim"),
     Schedule((0, 6), "16:0", "16:59", _("загорает"), "house", 6, "lisa_sun", dress="swim"),
     Schedule((1, 2, 3, 4, 5), "17:0", "18:59", _("загорает"), "house", 6, "lisa_sun", dress="swim"),
-    Schedule((6, ), "17:0", "17:59", _("учит уроки"), "house", 0, "lisa_homework", dress="learn"),
-    Schedule((0, ), "17:0", "17:59", _("читает в нашей комнате"), "house", 0, "lisa_read", dress="casual2"),
-    Schedule((0, 6), "18:0", "18:59", _("читает в нашей комнате"), "house", 0, "lisa_read", dress="casual2"),
+    Schedule((0, 6), "17:0", "18:59", _("читает в нашей комнате"), "house", 0, "lisa_read", dress="casual2"),
     Schedule((0, 1, 2, 3, 4, 5, 6), "20:0", "20:59", _("моет посуду"), "house", 4, "lisa_dishes", dress="casual"),
     Schedule((0, 1, 2, 3, 4, 5, 6), "21:0", "21:59", _("лежит с телефоном в нашей комнате"), "house", 0, "lisa_phone", dress="casual"),
     Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "22:59", _("принимает ванну"), "house", 3, "lisa_bath", dress="naked"),
@@ -69,31 +67,25 @@ default schedule_lisa = [
 ]
 
 default schedule_ann  = [
-    Schedule((1, 4, 5, 6), "0:0", "5:59", _("спит"), "house", 2, "ann_sleep"),
-    Schedule((2, ), "0:0", "5:59", _("спит с Эриком"), "house", 2, "ann_eric_sleep"),
-    Schedule((0, 3), "0:0", "5:59", _("у Эрика")),
-    Schedule((0, 1, 3, 4, 5, 6), "6:0", "6:59", _("принимает душ"), "house", 3, "ann_shower"),
-    Schedule((2, ), "6:0", "6:59", _("в душе с Эриком"), "house", 3, "ann_eric_shower"),
-    Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", _("занимается йогой"), "house", 6, "ann_yoga"),
-    Schedule((0, 1, 2, 3, 4, 5, 6), "8:0", "8:59", _("готовит завтрак"), "house", 4, "ann_cooking_breakfast"),
-    Schedule((1, 2, 3, 4, 5), "10:0", "10:59", _("одевается на работу"), "house", 2, "ann_dressed_work"),
-    Schedule((6, ), "10:0", "10:59", _("одевается в магазин"), "house", 2, "ann_dressed_shop"),
-    Schedule((0, ), "10:0", "11:59", _("в своей комнате"), "house", 2, "ann_resting"),
-    Schedule((1, 2, 3, 4, 5), "11:0", "18:59", _("на работе")),
-    Schedule((6, ), "11:0", "13:59", _("в магазине")),
-    Schedule((0, ), "12:0", "13:59", _("читает на веранде"), "house", 5, "ann_read"),
-    Schedule((0, 6), "14:0", "14:59", _("в бассейне"), "house", 6, "ann_swim"),
-    Schedule((0, 6), "15:0", "15:59", _("в своей комнате"), "house", 2, "ann_resting"),
-    Schedule((0, 6), "16:0", "16:59", _("читает на веранде"), "house", 5, "ann_read"),
-    Schedule((6, ), "17:0", "17:59", _("загорает"), "house", 6, "ann_sun"),
-    Schedule((0, ), "17:0", "17:59", _("в бассейне"), "house", 6, "ann_swim"),
-    Schedule((0, 6), "18:0", "18:59", _("готовит ужин"), "house", 4, "ann_cooking_dinner"),
-    Schedule((0, 1, 3, 4, 5), "20:0", "20:59", _("принимает ванну"), "house", 3, "ann_bath"),
-    Schedule((2, 6), "20:0", "23:59", _("у Эрика")),
-    Schedule((0, 3, 4, 5), "21:0", "21:59", _("смотрит ТВ"), "house", 4, "ann_tv"),
-    Schedule((1, ), "21:0", "21:59", _("смотрит ТВ с Эриком"), "house", 4, "ann_eric_tv"),
-    Schedule((0, 3, 4, 5), "22:0", "23:59", _("в своей комнате"), "house", 2, "ann_resting"),
-    Schedule((1, ), "22:0", "23:59", _("в своей комнате трахается с Эриком"), "house", 2, "ann_eric_sex"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", _("спит"), "house", 2, "ann_sleep", dress="sleepwear"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", _("принимает душ"), "house", 3, "ann_shower", dress="naked"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", _("занимается йогой"), "house", 6, "ann_yoga", dress="yoga"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "8:0", "8:59", _("готовит завтрак"), "house", 4, "ann_cooking_breakfast", dress="casual2"),
+    Schedule((1, 2, 3, 4, 5), "10:0", "10:59", _("одевается на работу"), "house", 2, "ann_dressed_work", dress="dressed"),
+    Schedule((6, ), "10:0", "10:59", _("одевается в магазин"), "house", 2, "ann_dressed_shop", dress="dressed"),
+    Schedule((0, ), "10:0", "11:59", _("в своей комнате"), "house", 2, "ann_resting", dress="casual"),
+    Schedule((1, 2, 3, 4, 5), "11:0", "18:59", _("на работе"), dress="work"),
+    Schedule((6, ), "11:0", "13:59", _("в магазине"), dress="out"),
+    Schedule((0, ), "12:0", "13:59", _("читает на веранде"), "house", 5, "ann_read", dress="work"),
+    Schedule((0, 6), "14:0", "14:59", _("в бассейне"), "house", 6, "ann_swim", dress="swim"),
+    Schedule((0, 6), "15:0", "15:59", _("в своей комнате"), "house", 2, "ann_resting", dress="casual"),
+    Schedule((0, 6), "16:0", "16:59", _("читает на веранде"), "house", 5, "ann_read", dress="casual"),
+    Schedule((6, ), "17:0", "17:59", _("загорает"), "house", 6, "ann_sun", dress="swim"),
+    Schedule((0, ), "17:0", "17:59", _("в бассейне"), "house", 6, "ann_swim", dress="swim"),
+    Schedule((0, 6), "18:0", "18:59", _("готовит ужин"), "house", 4, "ann_cooking_dinner", dress="casual"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "20:0", "20:59", _("принимает ванну"), "house", 3, "ann_bath", dress="naked"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "21:0", "21:59", _("смотрит ТВ"), "house", 4, "ann_tv", dress="casual"),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "23:59", _("в своей комнате"), "house", 2, "ann_resting", dress="casual"),
 ]
 
 default schedule_alice = [
@@ -238,7 +230,7 @@ default dress_suf = {
 
 default swim_suf = {
     "ann":"",
-    "alice":"",
+    "alice":"a",
     "lisa":"a",
 }
 #######################################################################################################################
@@ -312,6 +304,17 @@ default lisa_dress = {
     "dressed"   : "00b",
 }
 
+default ann_dress = {
+    "casual"    : "01a",
+    "yoga"      : "05",
+    "casual2"   : "05a",
+    "sleepwear" : "02a",
+    "work"      : "01b",
+    "out"       : "01",
+    "swim"      : "03",
+    "naked"     : "00b",
+    "dressed"   : "00b",
+}
 
 
 # Возможности
@@ -363,9 +366,9 @@ default possibility = {
 
 # Диалоги
 default talks = {
-    "blog1"     : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1"),
-    "blog2"     : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3"),
-    "lisa_fd"   : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0"),
+    # "blog1"     : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1"),
+    # "blog2"     : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3"),
+    "lisa_fd"   : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var[\"boy\"]==0"),
     "lisa_swim" : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
                     "possibility[\"Swimsuit\"].stage_number < 0 and GetScheduleRecord(schedule_lisa, day, tm)[0].label == \"lisa_sun\""),
     "lisas_boy" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1"),

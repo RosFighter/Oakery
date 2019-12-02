@@ -621,8 +621,7 @@ label lisa_dressed_somewhere:
 
 label lisa_swim:
 
-    scene image "BG char Lisa swim-"+random3_1
-    show image "Lisa swim "+random3_1+swim_suf["lisa"]
+    scene image "Lisa swim "+random3_1+swim_suf["lisa"]
     return
 
 
@@ -677,12 +676,12 @@ label ann_shower:
             "Уйти":
                 jump .end_peeping
     else:
+        $ peeping["ann_shower"] = 1
         menu:
             Max_00 "Похоже, мама принимает душ..."
             "Заглянуть с улицы":
                 jump .start_peeping
             "Уйти":
-                $ peeping["ann_shower"] = 3
                 jump .end_peeping
 
     label .start_peeping:
@@ -694,13 +693,150 @@ label ann_shower:
         menu:
             Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nУх, аж завораживает! Хоть бы меня не заметила..."
             "Уйти":
-                $ peeping["ann_shower"] = 1
                 jump .end_peeping
 
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_9
+        call Waiting(10)
 
 
 ################################################################################
 ## события Алисы
+
+label alice_bath:
+    scene location house bathroom door-evening
+    ## диалог
+
+    return
+
+
+label alice_sleep:
+
+    if tm < "05:00":
+        scene location house aliceroom door-night
+    else:
+        scene location house aliceroom door-evening
+
+    ## диалог
+
+
+    return
+
+
+label alice_shower:
+    scene location house bathroom door-morning
+    if peeping["alice_shower"] == 2:
+        Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее еще больше, а то точно что-нибудь оторвет."
+        jump .end_peeping
+    elif peeping["alice_shower"] == 1:
+        Max_00 "Я уже подсматривал сегодня за Алисой. Не стоит искушать судьбу слишком часто."
+        jump .end_peeping
+    elif peeping["alice_shower"] == 3:
+        menu:
+            Max_00 "Алиса сейчас принимает душ..."
+            "Уйти":
+                jump .end_peeping
+    else:
+        $ peeping["alice_shower"] = 1
+        menu:
+            Max_00 "Похоже, Алиса принимает душ..."
+            "Заглянуть с улицы":
+                jump .start_peeping
+            "Уйти":
+                jump .end_peeping
+
+    label .start_peeping:
+        $ renpy.notify(_("Скрытность Макса капельку повысилась"))
+        $ max_profile.stealth += 0.01
+        $ __ran1 = renpy.random.randint(1, 4)
+        scene image ("Alice shower 0"+str(__ran1))
+        show image "shower fg 00"+dress_suf["max"]
+        menu:
+            Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nМожно целую вечность смотреть, как сестренка принимает душ. Лишь бы она меня не заметила..."
+            "Уйти":
+                jump .end_peeping
+
+    label .end_peeping:
+        $ current_room, prev_room = prev_room, current_room
+        call Waiting(10)
+
+
+label alice_resting:
+
+    # if tm < "19:00"
+    scene BG char Alice morning
+    show image "Alice morning 01"+dress_suf["alice"]
+
+    return
+
+
+label alice_dressed_shop:
+
+    scene location house aliceroom door-evening
+
+    return
+
+
+label alice_dishes:
+    scene BG crockery-morning-00
+    show image "Alice crockery-morning 01"+dress_suf["alice"]
+
+    return
+
+
+label alice_read:
+    scene BG char Alice reading
+    if tm[:2] == "10":
+        show image "Alice reading "+random3_2+dress_suf["alice"]
+    elif tm[:2] == "11":
+        show image "Alice reading "+random3_1+dress_suf["alice"]
+    elif tm[:2] == "16":
+        show image "Alice reading "+random3_3+dress_suf["alice"]
+    elif tm[:2] == "17":
+        show image "Alice reading "+random3_2+dress_suf["alice"]
+    else:
+        show image "Alice reading "+random3_1+dress_suf["alice"]
+
+    return
+
+
+label alice_dressed_somewhere:
+    scene location house aliceroom door-evening
+
+    return
+
+
+label alice_sun:
+    scene BG char Alice sun
+    if tm[:2] == "12":
+        show image "Alice sun "+random2_1+swim_suf["alice"]
+    elif tm[:2] == "15":
+        show image "Alice sun "+random2_2+swim_suf["alice"]
+    else:
+        show image "Alice sun "+random2_3+swim_suf["alice"]
+    return
+
+
+label alice_swim:
+    if tm[:2] == "13":
+        scene image "Alice swim "+random3_3+swim_suf["alice"]
+    elif tm[:2] == "14":
+        scene image "Alice swim "+random3_1+swim_suf["alice"]
+    else:
+        scene image "Alice swim "+random3_2+swim_suf["alice"]
+    return
+
+
+label alice_cooking_dinner:
+    scene BG cooking-00
+    show image "Alice cooking 01"+dress_suf["alice"]
+    return
+
+
+label alice_tv:
+    scene BG lounge-tv-00
+    if tm[:2] == "22":
+        show image "Alice tv "+random3_1
+    else:
+        show image "Alice tv "+random3_2
+    return

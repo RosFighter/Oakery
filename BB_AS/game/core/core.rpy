@@ -39,6 +39,8 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         $ talk_var["ask_money"] = 0
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
+        $ ann_dress["naked"] = "00b"
+        $ ann_dress["dressed"] = "00b"
 
         $ random2   = renpy.random.choice(["01", "02"])
         $ random3_1 = renpy.random.choice(["01", "02", "03"])
@@ -67,6 +69,8 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         # вернем на значения по-умолчанию после утренних подглядываний
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
+        $ ann_dress["naked"] = "00b"
+        $ ann_dress["dressed"] = "00b"
 
     $ delt = TimeDifference(__prevtime, tm) # вычислим действительно прошедшее время
 
