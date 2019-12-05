@@ -207,34 +207,34 @@ translate english about_poss_95f72849:
 translate english strings:
 
     # game/script.rpy:13
-    old "далее"
-    new "continue"
+    old "{i}далее{/i}"
+    new "{i}continue{/i}"
 
     # game/script.rpy:13
-    old "пропустить"
-    new "skip"
+    old "{i}пропустить{/i}"
+    new "{i}skip{/i}"
 
     # game/script.rpy:41
-    old "пару недель спустя..."
-    new "couple of weeks later..."
+    old "{i}пару недель спустя...{/i}"
+    new "{i}couple of weeks later...{/i}"
 
     # game/script.rpy:54
-    old "Спустя неделю..."
-    new "next week..."
+    old "{i}спустя неделю...{/i}"
+    new "{i}next week...{/i}"
 
     # game/script.rpy:60
-    old "начать игру"
-    new "Start the game"
+    old "{i}Начать игру{/i}"
+    new "{i}Start the game{/i}"
 
     # game/script.rpy:60
-    old "Повторить историю"
-    new "Repeat the intro"
+    old "{i}Повторить историю{/i}"
+    new "{i}Repeat the intro{/i}"
 
     # game/script.rpy:76
-    old "всё ясно"
-    new "everything is clear"
+    old "{i}всё ясно{/i}"
+    new "{i}everything is clear{/i}"
 
     # game/script.rpy:76
-    old "повторить"
-    new "repeat"
+    old "{i}повторить{/i}"
+    new "{i}repeat{/i}"
 

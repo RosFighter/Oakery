@@ -186,29 +186,33 @@ init python:
     ## **.ogg" берёт все файлы ogg из директории game и всех поддиректорий, а
     ## "**.psd" берёт все файлы psd из любого места проекта.
 
-    build.archive("scripts", "all")
-    build.archive("images", "all")
-    build.archive("font", "all")
-    build.archive("translate", "all")
     ## Классифицируйте файлы как None, чтобы исключить их из дистрибутивов.
 
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**.rpym', None)
-    # build.classify('**/.**', None)
+    build.classify('**/.**', None)
+    build.classify('game/tl/**.rpy', None)
+    build.classify('game/**.rpy', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
     ## Чтобы архивировать файлы, классифицируйте их, например, как 'archive'.
 
+    build.archive("images", "all")
     build.classify('game/**.png', 'images')
     build.classify('game/**.jpg', 'images')
     build.classify('game/**.webp', 'images')
-    build.classify('mame/tl/**.rpy', None)
-    build.classify('mame/tl/**.rpyc', "translate")
-    build.classify('mame/tl/**.rpymc', "translate")
-    build.classify('game/**.rpy', None)
-    build.classify('game/**.rpyc', "scripts")
+
+    build.archive("translate", "all")
+    build.classify('game/tl/**.**', 'translate')
+
+    build.archive("scripts", "all")
+    build.classify('game/*.rpyc', "scripts")
+    build.classify('game/core/**.rpyc', "scripts")
+    build.classify('game/dialogues/**.rpyc', "scripts")
+
+    build.archive("font", "all")
     build.classify('game/**.ttf', 'font')
 
 

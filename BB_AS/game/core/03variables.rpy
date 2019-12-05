@@ -92,7 +92,7 @@ default schedule_alice = [
      Schedule((1, 2, 3, 4, 5, 6, 0), "0:0", "0:59", _("принимает ванну"), "house", 3, "alice_bath"),
      Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "7:59", _("спит"), "house", 1, "alice_sleep"),
      Schedule((1, 2, 3, 4, 5, 6, 0), "8:0", "8:59", _("принимает душ"), "house", 3, "alice_shower"),
-     Schedule((1, 2, 3, 4, 5), "10:0", "10:59", _("в своей комнате"), "house", 1, "alice_resting"),
+     Schedule((1, 2, 3, 4, 5), "10:0", "10:59", _("в своей комнате"), "house", 1, "alice_rest_morning", talklabel="alice_morning_closer"),
      Schedule((6,), "10:0", "10:59", _("одевается в магазин"), "house", 1, "alice_dressed_shop"),
      Schedule((0,), "10:0", "10:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed"),
      Schedule((0,), "10:0", "10:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed"),
@@ -112,8 +112,8 @@ default schedule_alice = [
      Schedule((0,), "17:0", "17:59", _("в бассейне"), "house", 6, "alice_swim"),
      Schedule((1, 2, 3, 4, 5), "18:0", "18:59", _("готовит ужин"), "house", 4, "alice_cooking_dinner"),
      Schedule((6, 0), "18:0", "18:59", _("читает на веранде"), "house", 5, "alice_read"),
-     Schedule((1, 2, 3, 4, 5, 6, 0), "20:0", "21:59", _("в своей комнате"), "house", 1, "alice_resting"),
-     Schedule((1, 2, 3, 4, 5, 6, 0), "22:0", "23:59", _("смотрит ТВ"), "house", 4, "alice_tv"),
+     Schedule((1, 2, 3, 4, 5, 6, 0), "20:0", "21:59", _("в своей комнате"), "house", 1, "alice_rest_evening", talklabel="alice_evening_closer"),
+     Schedule((1, 2, 3, 4, 5, 6, 0), "22:0", "23:59", _("смотрит ТВ"), "house", 4, "alice_tv"), # , talklabel="alice_tv_closer"),
 ]
 
 #######################################################################################################################
@@ -217,19 +217,19 @@ default flags = {
 }
 
 default dress_suf = {
-    "ann":"",
-    "alice":"",
-    "lisa":"",
-    "max":"",
-    "ann-sleepwear":"",
-    "alice-sleepwear":"",
-    "lisa-sleepwear":"",
-    "max-sleepwear":"",
-    "lisa-learn":"",
+    "ann":"a",
+    "alice":"a",
+    "lisa":"a",
+    "max":"a",
+    "ann-sleepwear":"a",
+    "alice-sleepwear":"a",
+    "lisa-sleepwear":"a",
+    "max-sleepwear":"a",
+    "lisa-learn":"a",
 }
 
 default swim_suf = {
-    "ann":"",
+    "ann":"a",
     "alice":"a",
     "lisa":"a",
 }
@@ -255,7 +255,7 @@ default random4_3 = renpy.random.choice(["01", "02", "03", "04"])
 default random5   = renpy.random.choice(["01", "02", "03", "04", "05"])
 default random6   = renpy.random.choice(["01", "02", "03", "04", "05", "06"])
 default random_ab = renpy.random.choice(["a", "b"])
-default random_suf = renpy.random.choice(["", "a"])
+default random_suf = renpy.random.choice(["a", "b"])
 
 # переменные со счетчиком дней
 default dcv = {
@@ -268,7 +268,7 @@ default dcv = {
 # события, запускаемые в конкретное время
 default EventsByTime = {
     "breakfast"        : CutEvent("09:00", label="breakfast", desc="завтрак"),
-    "dinner"          : CutEvent("19:00", label="dinner", desc="ужин"),
+    "dinner"           : CutEvent("19:00", label="dinner", desc="ужин"),
     "shoping"          : CutEvent("11:00", (6, ), False, "shoping", "семейный шопинг"),
     "MorningWood"      : CutEvent("06:30", label="MorningWood", variable="day == 2", sleep=True, desc="утренний стояк"),
     "AfterSchoolFD"    : CutEvent("16:00", label="AfterSchoolFD", variable="day == 1", desc="Лиза первый раз приходит из школы"),
@@ -289,6 +289,8 @@ default peeping = {
     "ann_bath"     : 0,
     "lisa_bath"    : 0,
     "alice_bath"   : 0,
+    "alice_sleep"  : 0,
+    "ann_sleep"    : 0,
 }
 
 # Переменные отвечающие за изображение в экране информации
@@ -366,12 +368,14 @@ default possibility = {
 
 # Диалоги
 default talks = {
-    # "blog1"     : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1"),
-    # "blog2"     : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3"),
+    "blog1"     : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1"),
+    "blog2"     : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3"),
     "lisa_fd"   : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var[\"boy\"]==0"),
     "lisa_swim" : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
                     "possibility[\"Swimsuit\"].stage_number < 0 and GetScheduleRecord(schedule_lisa, day, tm)[0].label == \"lisa_sun\""),
     "lisas_boy" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1"),
+    "lisa_dw" : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm)[0].label == \"lisa_dishes\""),
+    "alice_dw" : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm)[0].label == \"alice_dishes\""),
     #"" : TalkTheme("", _(""), "", ""),
 }
 
@@ -381,6 +385,8 @@ default talk_var = {
     "boy" : 0,
     "lisa_fd": 0,
     "ask_money": 0,
+    "lisa_dw": 0,
+    "alice_dw": 0,
 }
 
 

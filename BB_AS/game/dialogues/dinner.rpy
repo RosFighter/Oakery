@@ -18,7 +18,6 @@ label typical_dinner:
         "У тебя всё хорошо?":
             Ann_05 "Да, всё в порядке, Макс. Спасибо, что спросил. Просто за день столько всего, что пора бы уже и отдохнуть..."
             Max_00 "Понятно. Приятного аппетита!"
-
     jump after_dinner
 
 label dinner_first:
@@ -124,11 +123,11 @@ label dinner_first:
 # диалоги и события за ужином
 label dinner:
     scene BG dinner 00 # общий фон
-    show image "Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["ann"]
-    show image "Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"]
-    show image "Lisa dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["lisa"]
-    show image "FG dinner 0"+renpy.random.choice(["1", "2", "3"]) # стол
-    show image "Max dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["max"]
+    $ renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["ann"])
+    $ renpy.show("Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"])
+    $ renpy.show("Lisa dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["lisa"])
+    $ renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])) # стол
+    $ renpy.show("Max dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["max"])
 
     if day == 1:
         jump dinner_first

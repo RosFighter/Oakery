@@ -105,38 +105,28 @@ init python:
     class Schedule:  # действие в расписании персонажа
         """ действие расписания персонажа для укладки в список
             блоки на один и тот же период с разным сдвигом в одном периоде или
-            на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним болоком
-            Описание полей:
-            lod       – кортеж дней недели для действия
-            ts        – время начала действия
-            te        – время окончания действия
-            desc      – описание действия
-            loc       – локация
-            room      – комната в локации
-            label     – имя блока обработки события
-            krat      – периодичность в неделях
-            shift     – для недель, имеющих периодичность - сдвиг относительно стартовой недели (начинается с 0)
-            weekstart – номер стартовой недели
-            variable  – строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа """
+            на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком """
 
-        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", dress=""):
-            self.lod       = lod
-
+        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", dress="", enabletalk=True, talklabel=None):
+            self.lod        = lod # lod - кортеж дней недели для действия
+            # ts – время начала действия
             h, m = ts.split(":") if str(ts).find(":") > 0 else str(float(ts)).replace(".", ":").split(":")
-            self.ts        = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
+            self.ts         = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
 
             h, m = te.split(":") if str(te).find(":") > 0 else str(float(te)).replace(".", ":").split(":")
-            self.te        = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
-
-            self.desc      = desc
-            self.loc       = loc
-            self.room      = room
-            self.label     = label
-            self.krat      = krat
-            self.shift     = shift
-            self.weekstart = weekstart
-            self.variable  = variable
-            self.dress     = dress
+            self.te         = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
+            # te – время окончания действия
+            self.desc       = desc # описание действия
+            self.loc        = loc # локация
+            self.room       = room # комната в локации
+            self.label      = label # имя блока обработки события (формирует сцену или запускает действие)
+            self.krat       = krat # периодичность в неделях
+            self.shift      = shift # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
+            self.weekstart  = weekstart # номер стартовой недели
+            self.variable   = variable # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
+            self.dress      = dress # тип варианта одежды (для окна информации о персонаже)
+            self.enabletalk = enabletalk # возможность разговора
+            self.talklabel  = talklabel # блок обработки начала диалога (формирует сцену старта диалога)
 
         def __repr__(self):
             return "дни: {self.lod}, с {self.ts}, до {self.te}, \"{self.desc}\", в {self.loc}[{self.room}], каждые {self.krat} "\

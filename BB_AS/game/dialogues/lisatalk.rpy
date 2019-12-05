@@ -5,7 +5,11 @@ label LisaTalkStart:
     if len(dial) == 0:
         jump AfterWaiting
 
-    $ dial.append((_("уйти"), "exit"))
+    $ __CurShedRec = GetScheduleRecord(schedule_lisa, day, tm)[0]
+    if __CurShedRec.talklabel is not None:
+        call expression __CurShedRec.talklabel
+
+    $ dial.append((_("{i}уйти{/i}"), "exit"))
 
     Lisa_00 "Макс, решил поболтать?" nointeract
 
@@ -497,7 +501,7 @@ label talk_swim:
                             Lisa_13 "Да, Макс, точно! Я точно уверена, что не хочу это ещё раз видеть. И, вообще, отвали!"
                             Max_00 "Ну, как скажешь..."
                             $ characters["lisa"].mood -= 5
-                            $ renpy.notify(_("Лизе не понравилась твоя шутка.\nЕе настроение ухудшилось."))
+                            $ HintRelMood("lisa", 0, -5)
                             jump .end
             menu:
                 Lisa_02 "Очень смешно, Макс!"
@@ -509,7 +513,7 @@ label talk_swim:
                             $ characters["lisa"].mood += 3
                             jump .want
                         "Конечно, одыхай...":
-                            $ renpy.notify(_("Лизе не понравилась твоя шутка.\nЕе настроение ухудшилось."))
+                            $ HintRelMood("lisa", 0, -3)
                             jump .end
                 "Ладно. А какой купальник ты хочешь?":
                     jump .want
@@ -604,5 +608,38 @@ label about_boy:
 
     label .end:
         call Waiting(10) from _call_Waiting_14
+
+    return
+
+
+label wash_dishes_lisa:
+    $ talk_var["lisa_dw"] = 1
+    menu:
+        Lisa_09 "А что насчёт посуды?"
+        "Хочешь, я помогу тебе домыть остальное?":
+            menu:
+                Lisa_01 "А вот знаешь... хочу! Да, спасибо, Макс!"
+                "{i}мыть посуду{/i}":
+                    # scene BG crockery-evening-00
+                    hide Lisa
+                    $ renpy.show("Max crockery-evening 01"+dress_suf["max"])
+                    $ characters["lisa"].mood += 6
+                    if characters["lisa"].relmax < 400:
+                        $ characters["lisa"].relmax += 10
+                        $ HintRelMood("lisa", 10, 6)
+                    else:
+                        $ HintRelMood("lisa", 0, 6)
+                    $ dishes_washed = True
+                    $ __ts = max((60 - int(tm[-2:])), 30)
+                    Max_00 "И чего я этим занимаюсь? Делать нечего, что ли..."
+                    menu:
+                        Max_00 "А с другой строны - неплохой способ улучшить отношения с Лизой..."
+                        "{i}закончить{/i}":
+                            call Waiting(__ts, 2)
+        "Нет, ничего...":
+            menu:
+                Lisa_12 "Ну раз ничего, то нечего меня отвлекать. Иди делом займись!"
+                "Хорошо, пойду займусь":
+                    call Waiting(10)
 
     return

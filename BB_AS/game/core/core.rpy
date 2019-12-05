@@ -37,6 +37,8 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
 
         # здесь будет блок обработки ежедневно обнуляемых значений
         $ talk_var["ask_money"] = 0
+        $ talk_var["lisa_dw"] = 0
+        $ talk_var["alice_dw"] = 0
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
         $ ann_dress["naked"] = "00b"
@@ -62,15 +64,16 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
                     if dcv[i].lost == 0:
                         dcv[i].done = True
                         dcv[i].enabled = False
-            # сбросим подглядывания
-            for key in peeping:
-                peeping[key] = 0
-    if __prevtime < "12:00" and tm >= "12:00":
-        # вернем на значения по-умолчанию после утренних подглядываний
+    if __prevtime[:2] != tm[:2]:
+        # вернем на значения по-умолчанию после подглядываний
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
         $ ann_dress["naked"] = "00b"
         $ ann_dress["dressed"] = "00b"
+        python:
+            # сбросим подглядывания
+            for key in peeping:
+                peeping[key] = 0
 
     $ delt = TimeDifference(__prevtime, tm) # вычислим действительно прошедшее время
 
@@ -127,8 +130,9 @@ label AfterWaiting:
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
     $ __name_label = ""
     if len(current_room.cur_char) > 0:
-        $ __name_label = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)[0].label
-        $ AvailableActions["talk"].enabled = (len(GetTalksTheme()) > 0)
+        $ __CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)[0]
+        $ __name_label = __CurShedRec.label
+        $ AvailableActions["talk"].enabled = (len(GetTalksTheme()) > 0 and __CurShedRec.enabletalk)
 
     call SetAvailableActions from _call_SetAvailableActions
 

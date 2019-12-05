@@ -1,16 +1,16 @@
 ﻿# TODO: Translation updated at 2019-12-01 14:16
 
-# game/dialogues/events.rpy:6
-translate english Sleep_0b305369:
+# game/dialogues/events.rpy:18
+translate english Sleep_72e0cf19:
 
-    # Max_19 "Как же я хочу спать..." nointeract
-    Max_19 "I really want to sleep..." nointeract
+    # Max_19 "{i}Как же я хочу спать...{/i}" nointeract
+    Max_19 "{i}I really want to sleep...{/i}" nointeract
 
-# game/dialogues/events.rpy:33
-translate english Wearied_6edeb0ea:
+# game/dialogues/events.rpy:30
+translate english Wearied_cdbf59a4:
 
-    # Max_19 "Я без сил и хочу спать..." nointeract
-    Max_19 "I'm exhausted and want to sleep..." nointeract
+    # Max_19 "{i}Я без сил и хочу спать...{/i}" nointeract
+    Max_19 "{i}I'm exhausted and want to sleep...{/i}" nointeract
 
 # game/dialogues/events.rpy:52
 translate english Nap_b758b7ac:
@@ -18,11 +18,11 @@ translate english Nap_b758b7ac:
     # Max_19 "[txt!t]" nointeract
     Max_19 "[txt!t]" nointeract
 
-# game/dialogues/events.rpy:72
-translate english Alarm_1bd5f0ba:
+# game/dialogues/events.rpy:65
+translate english Alarm_648dd10f:
 
-    # Max_00 "В каком часу я должен встать?" nointeract
-    Max_00 "What time should I get up?" nointeract
+    # Max_00 "{i}В каком часу я должен встать?{/i}" nointeract
+    Max_00 "{i}What time should I get up?{/i}" nointeract
 
 # game/dialogues/events.rpy:102
 translate english Box_2b7f754d:
@@ -220,151 +220,151 @@ translate english lisa_dressed_school_come_in_a9b3ede6_1:
 translate english lisa_dressed_school_come_in_74da160f:
 
     # Lisa_02 "Откуда я знаю, что ты видел, а что ещё нет?"
-    Lisa_02 ""
+    Lisa_02 "How would I know what you've seen?"
 
 # game/dialogues/events.rpy:392
 translate english lisa_dressed_school_come_in_ff787e08:
 
     # Lisa_01 "Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
-    Lisa_01 ""
+    Lisa_01 "Anyway, I'm dressed so I'm going to school. I'll be back around 4."
 
 # game/dialogues/events.rpy:393
 translate english lisa_dressed_school_come_in_a9b3ede6_2:
 
     # Max_00 "Пока, Лиза!"
-    Max_00 ""
+    Max_00 "Bye, Lisa!"
 
 # game/dialogues/events.rpy:397
 translate english lisa_dressed_school_come_in_fac113ab:
 
     # Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
-    Lisa_03 ""
+    Lisa_03 "Oh, a gentleman! Anyway, I'm dressed and going to school, bye!"
 
 # game/dialogues/events.rpy:399
 translate english lisa_dressed_school_come_in_b153d389:
 
     # Lisa_03 "Да ты у нас, оказывается, джентльмен!"
-    Lisa_03 ""
+    Lisa_03 "You're a gentleman!"
 
 # game/dialogues/events.rpy:401
 translate english lisa_dressed_school_come_in_1f075eff:
 
     # Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
-    Lisa_01 ""
+    Lisa_01 "Anyway, I'm dressed and going to school, bye!"
 
 # game/dialogues/events.rpy:402
 translate english lisa_dressed_school_come_in_a9b3ede6_3:
 
     # Max_00 "Пока, Лиза!"
-    Max_00 ""
+    Max_00 "Bye, Lisa!"
 
 # game/dialogues/events.rpy:423
 translate english lisa_dressed_school_open_door_a5a35250:
 
     # Lisa_12 "Макс! Стучаться надо! А вдруг я была бы голая?! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Max, knock next time! I could've been naked!\n\n{color=[orange]}{i}{b}Hint:{/b} Button [[ h ] or [[ ` ] hide/show the interface.{/i}{/color}" nointeract
 
 # game/dialogues/events.rpy:427
 translate english lisa_dressed_school_open_door_a013924b:
 
     # Lisa_13 "Ну ты хам! Быстро закрой дверь с той стороны!"
-    Lisa_13 ""
+    Lisa_13 "Close the door right now, twerp!"
 
 # game/dialogues/events.rpy:428
 translate english lisa_dressed_school_open_door_6e7aee99:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Fine..."
 
 # game/dialogues/events.rpy:430
 translate english lisa_dressed_school_open_door_6f9027af:
 
     # Lisa_01 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
-    Lisa_01 ""
+    Lisa_01 "You could install door locks and we wouldn't have this problems. Now go and wait outside, please."
 
 # game/dialogues/events.rpy:431
 translate english lisa_dressed_school_open_door_6e7aee99_1:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Fine..."
 
 # game/dialogues/events.rpy:434
 translate english lisa_dressed_school_open_door_733f2342:
 
     # Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Can't you see I'm getting ready for school, Max? Close the door right now! \n\n{color=[orange]}{i}{b}Hint:{/b} Button [[ h ] or [[ ` ] - hide/show the interface.{/i}{/color}" nointeract
 
 # game/dialogues/events.rpy:442
 translate english lisa_dressed_school_open_door_ea1d5c57:
 
     # Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Max! I'm not dressed! Close the door right now! \n\n{color=[orange]}{i}{b}Hint:{/b} Button [[ h ] or [[ ` ] - hide/show the interface.{/i}{/color}" nointeract
 
 # game/dialogues/events.rpy:446
 translate english lisa_dressed_school_open_door_8e7ae4a9:
 
     # Lisa_11 "Что?! Я всё маме расскажу!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "What?! I'll tell mom!" nointeract
 
 # game/dialogues/events.rpy:452
 translate english lisa_dressed_school_open_door_55653ef5:
 
     # Lisa_12 "..." nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "..." nointeract
 
 # game/dialogues/events.rpy:457
 translate english lisa_dressed_school_open_door_2283f478:
 
     # Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
-    Lisa_12 ""
+    Lisa_12 "You could install door locks and we wouldn't have this problems. Now go and wait outside, please."
 
 # game/dialogues/events.rpy:458
 translate english lisa_dressed_school_open_door_6e7aee99_2:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Fine..."
 
 # game/dialogues/events.rpy:503
 translate english lisa_dressed_shop_lisa_dressed_a44136df:
 
     # Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..." nointeract
-    Max_09 "" nointeract
+    Max_09 "I think everyone is going for shopping and Lisa is changing..." nointeract
 
 # game/dialogues/events.rpy:512
 translate english lisa_dressed_shop_knock_869e0bce:
 
     # Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!" nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} Who's there? I'm changing!" nointeract
 
 # game/dialogues/events.rpy:515
 translate english lisa_dressed_shop_knock_056fd501:
 
     # Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там." nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} No, Max, you can't! I'm changing, wait there." nointeract
 
 # game/dialogues/events.rpy:552
 translate english lisa_dressed_shop_open_door_b0500b2e:
 
     # Lisa_12 "Макс! [phrase!t] Быстрой закрой дверь с той стороны!" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Max! [phrase!t] Close the door right now!" nointeract
 
 # game/dialogues/events.rpy:558
 translate english lisa_dressed_shop_open_door_8e7ae4a9:
 
     # Lisa_11 "Что?! Я всё маме расскажу!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "What?! I'll tell mom!" nointeract
 
 # game/dialogues/events.rpy:565
 translate english lisa_dressed_shop_open_door_55653ef5:
 
     # Lisa_12 "..." nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "..." nointeract
 
 # game/dialogues/events.rpy:590
 translate english lisa_dressed_shop_look_window_be364192:
 
     # Max_01 "Ого, какой вид! Вот это я удачно заглянул!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Now that's a pretty sight! I picked a good time to look!" nointeract
 
 # game/dialogues/events.rpy:654
 translate english ann_shower_b99b712c:
@@ -396,79 +396,185 @@ translate english ann_shower_start_peeping_d50aeab0:
     # Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nУх, аж завораживает! Хоть бы меня не заметила..." nointeract
     Max_00 "{color=[lime]}{i}Sneak attempt succeeded!{/i}{/color} \nWow, she's mesmerizing! I really shouldn't get caught now..." nointeract
 
+# game/dialogues/events.rpy:610
+translate english lisa_dressed_somewhere_6d6b727b:
+
+    # Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..." nointeract
+    Max_09 "Lisa seems to be going somewhere, but the door is closed..." nointeract
+
+# game/dialogues/events.rpy:638
+translate english lisa_bath_0029fbb1:
+
+    # Max_00 "Лиза сейчас плещется в ванне..." nointeract
+    Max_00 "Lisa is now splashing in the tub..." nointeract
+
+# game/dialogues/events.rpy:657
+translate english lisa_bath_96660cea:
+
+    # Max_00 "В это время Лиза обычно плескается в ванне..." nointeract
+    Max_00 "At this time of day Lisa is usually taking a bath..." nointeract
+
+# game/dialogues/events.rpy:668
+translate english lisa_bath_knock_b1c84f9a:
+
+    # Lisa "{b}Лиза:{/b} Кто там? Я принимаю ванну..." nointeract
+    Lisa "{b}Lisa:{/b} Who's there? I'm taking a bath..." nointeract
+
+# game/dialogues/events.rpy:671
+translate english lisa_bath_knock_d71a1367:
+
+    # Lisa "{b}Лиза:{/b} Я же сказала, что в ванне. Закончу, тогда и войдёшь! А пока жди..." nointeract
+    Lisa "{b}Lisa:{/b} I said I'm taking a bath! You can come in after I finish! Wait outside..." nointeract
+
+# game/dialogues/events.rpy:687
+translate english lisa_bath_open_knock_397f3e74:
+
+    # Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
+    Lisa_11 "Max! I told you I'm taking a bath! I'll tell mom on you!"
+
+# game/dialogues/events.rpy:688
+translate english lisa_bath_open_knock_e5b17df4:
+
+    # Max_00 "Упс! Уже ушёл..."
+    Max_00 "I'm sorry, I'm leaving..."
+
+# game/dialogues/events.rpy:692
+translate english lisa_bath_open_knock_cf666e29:
+
+    # Max_00 "В следующих версиях..."
+    Max_00 "In future versions..."
+
+# game/dialogues/events.rpy:697
+translate english lisa_bath_open_44974c8f:
+
+    # Lisa_11 "Макс! А постучаться? Я же голая!" nointeract
+    Lisa_11 "Max, why didn't you knock? I'm naked!" nointeract
+
+# game/dialogues/events.rpy:705
+translate english lisa_bath_open_bb4cd26f:
+
+    # Lisa_12 "Макс, выйди немедленно!"
+    Lisa_12 "Max, get out this instant!"
+
+# game/dialogues/events.rpy:706
+translate english lisa_bath_open_3db87e42:
+
+    # Max_00 "Хорошо, уже ухожу..."
+    Max_00 "Okay, I'm leaving..."
+
+# game/dialogues/events.rpy:708
+translate english lisa_bath_open_cf666e29:
+
+    # Max_00 "В следующих версиях..."
+    Max_00 "In future versions..."
+
+# game/dialogues/events.rpy:796
+translate english alice_shower_228a4446:
+
+    # Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее еще больше, а то точно что-нибудь оторвет."
+    Max_00 "Alice already caught me today. Don't make her any angrier or she'll blow something off."
+
+# game/dialogues/events.rpy:799
+translate english alice_shower_e37f4a67:
+
+    # Max_00 "Я уже подсматривал сегодня за Алисой. Не стоит искушать судьбу слишком часто."
+    Max_00 "I already spied on Alice today. Don't tempt fate too often."
+
+# game/dialogues/events.rpy:802
+translate english alice_shower_97098a13:
+
+    # Max_00 "Алиса сейчас принимает душ..." nointeract
+    Max_00 "Alice is taking a shower now..." nointeract
+
+# game/dialogues/events.rpy:808
+translate english alice_shower_4e3fa88d:
+
+    # Max_00 "Похоже, Алиса принимает душ..." nointeract
+    Max_00 "Looks like Alice is taking a shower..." nointeract
+
+# game/dialogues/events.rpy:821
+translate english alice_shower_start_peeping_3502894b:
+
+    # Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nМожно целую вечность смотреть, как сестренка принимает душ. Лишь бы она меня не заметила..." nointeract
+    Max_00 "{color=[lime]}{i}Sneak attempt succeeded!{/i}{/color} \nСan watch your sister take a shower forever. If only she didn't notice me..." nointeract
+
+# game/dialogues/events.rpy:703
+translate english lisa_bath_voyeur_26dcc088:
+
+    # Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
+    Max_00 "I think Lisa is taking a bath. Too bad I can't see much behind the ground glass. Getting any closer is too risky, she can notice me..."
+
+# game/dialogues/events.rpy:704
+translate english lisa_bath_voyeur_f77c44a2:
+
+    # Max_09 "Нужно что-нибудь придумать..."
+    Max_09 "I have to think of something..."
+
 translate english strings:
 
     # game/dialogues/events.rpy:6
-    old "Спать до утра"
-    new "Sleep till morning"
+    old "{i}спать до утра{/i}"
+    new "{i}sleep till morning{/i}"
 
     # game/dialogues/events.rpy:48
-    old "Я сейчас не очень хочу спать, но если я хочу сохранить силы..."
-    new "I'm not really sleepy right now, but if I want to keep my strength up..."
+    old "{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}"
+    new "{i}I'm not really sleepy right now, but if I want to keep my strength up...{/i}"
 
     # game/dialogues/events.rpy:50
-    old "Что-то я сегодня устал, надо бы вздремнуть..."
-    new "I'm tired today, I need to take a NAP..."
+    old "{i}Что-то я сегодня устал, надо бы вздремнуть...{/i}"
+    new "{i}I'm tired today, I need to take a NAP...{/i}"
 
     # game/dialogues/events.rpy:52
-    old "Подремать пару часов"
-    new "Take a NAP for a couple of hours"
+    old "{i}подремать пару часов{/i}"
+    new "{i}take a NAP for a couple of hours{/i}"
 
     # game/dialogues/events.rpy:52
-    old "Подремать 3 часа"
-    new "Take a NAP 3 hours"
+    old "{i}подремать 3 часа{/i}"
+    new "{i}take a NAP 3 hours{/i}"
 
     # game/dialogues/events.rpy:52
-    old "Подремать 4 часа"
-    new "Take a NAP 4 hours"
+    old "{i}подремать 4 часа{/i}"
+    new "{i}take a NAP 4 hours{/i}"
 
     # game/dialogues/events.rpy:52
-    old "Подремать 5 часов"
-    new "Take a NAP 5 hours"
+    old "{i}подремать 5 часов{/i}"
+    new "{i}take a NAP 5 hours{/i}"
 
     # game/dialogues/events.rpy:52
-    old "Не-а, может позже..."
-    new "Nah, maybe later..."
+    old "{i}не-а, может позже...{/i}"
+    new "{i}nah, maybe later...{/i}"
 
     # game/dialogues/events.rpy:72
-    old "В 5 утра"
-    new "At 5 am"
+    old "{i}в 5 утра{/i}"
+    new "{i}at 5 am{/i}"
 
     # game/dialogues/events.rpy:72
-    old "В 6 утра"
-    new "At 6 am"
+    old "{i}в 6 утра{/i}"
+    new "{i}at 6 am{/i}"
 
     # game/dialogues/events.rpy:72
-    old "В 7 утра"
-    new "At 7 am"
+    old "{i}в 7 утра{/i}"
+    new "{i}at 7 am{/i}"
 
     # game/dialogues/events.rpy:108
-    old "закончить"
-    new "finish"
+    old "{i}закончить{/i}"
+    new "{i}finish{/i}"
 
     # game/dialogues/events.rpy:108
-    old "узнать подробнее о \"Возможностях\""
-    new "learn more about \"Opportunities\""
-
-    # game/dialogues/events.rpy:159
-    old "Вы помыли посуду вместо Алисы.\nЕе настроение улучшилось.\nЕе отношение к вам немного улучшилось"
-    new "You washed the dishes for Alice.\nHer mood improved.\nHer attitude toward you has improved a little."
-
-    # game/dialogues/events.rpy:162
-    old "Вы помыли посуду вместо Алисы.\nЕе настроение улучшилось."
-    new "You washed the dishes for Alice.\nHer mood improved."
+    old "{i}узнать подробнее о \"Возможностях\"{/i}"
+    new "{i}learn more about \"Opportunities\"{/i}"
 
     # game/dialogues/events.rpy:188
-    old "Уйти"
-    new "leave"
+    old "{i}уйти{/i}"
+    new "{i}leave{/i}"
 
     # game/dialogues/events.rpy:202
-    old "Постучаться"
-    new "knock"
+    old "{i}постучаться{/i}"
+    new "{i}knock{/i}"
 
     # game/dialogues/events.rpy:202
-    old "Заглянуть с улицы"
-    new "peep from outside"
+    old "{i}заглянуть с улицы{/i}"
+    new "{i}peep from outside{/i}"
 
     # game/dialogues/events.rpy:205
     old "Это я, Макс!"
@@ -487,24 +593,16 @@ translate english strings:
     new "Fine, fine..."
 
     # game/dialogues/events.rpy:243
-    old "Присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [_m1_events__chance_vis]%%){/color}"
-    new "Look closely\n{color=[_chance_color]}(Stealth. Chance: [_m1_events__chance_vis]%%){/color}"
+    old "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [_m1_events__chance_vis]%%){/color}{/i}"
+    new "{i}look closely\n{color=[_chance_color]}(Stealth. Chance: [_m1_events__chance_vis]%%){/color}{/i}"
 
     # game/dialogues/events.rpy:312
-    old "постучаться"
-    new "knock"
+    old "{i}открыть дверь{/i}"
+    new "{i}open the door{/i}"
 
     # game/dialogues/events.rpy:312
-    old "открыть дверь"
-    new "open the door"
-
-    # game/dialogues/events.rpy:312
-    old "заглянуть в окно"
-    new "peep into the window"
-
-    # game/dialogues/events.rpy:312
-    old "уйти"
-    new "leave"
+    old "{i}заглянуть в окно{/i}"
+    new "{i}peep into the window{/i}"
 
     # game/dialogues/events.rpy:315
     old "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
@@ -563,18 +661,54 @@ translate english strings:
     new "I'm leaving, but your tits are awesome!"
 
     # game/dialogues/events.rpy:452
-    old "Бежать"
-    new "Run away"
+    old "{i}Бежать{/i}"
+    new "{i}Run away{/i}"
 
     # game/dialogues/events.rpy:515
     old "Хорошо..."
-    new ""
+    new "Fine..."
 
     # game/dialogues/events.rpy:547
     old "Я не одета!"
-    new ""
+    new "I'm not dressed!"
 
     # game/dialogues/events.rpy:550
     old "Я же сказала, что я не одета!"
-    new ""
+    new "I said I'm not dressed!"
+
+    # game/dialogues/events.rpy:231
+    old "Скрытность Макса капельку повысилась"
+    new "Max's stealth increased a little"
+
+    # game/dialogues/events.rpy:256
+    old "Скрытность Макса повысилась"
+    new "Max's stealth increased"
+
+    # game/dialogues/events.rpy:266
+    old "Скрытность Макса немного повысилась"
+    new "Max's stealth increased a little"
+
+    # game/dialogues/events.rpy:277
+    old "Скрытность Макса чуть-чуть повысилась"
+    new "Max's stealth increased a little"
+
+    # game/dialogues/events.rpy:657
+    old "{i}подглядывать с улицы{/i}"
+    new "{i}peep from outside{/i}"
+
+    # game/dialogues/events.rpy:668
+    old "Это я, Макс! Можно войти?"
+    new "It's me, Max! Can I come in?"
+
+    # game/dialogues/events.rpy:697
+    old "Извини, дверь была открыта и я подумал..."
+    new "I'm sorry, door was open..."
+
+    # game/dialogues/events.rpy:697
+    old "А ты симпатичная..."
+    new "You're pretty..."
+
+    # game/dialogues/events.rpy:697
+    old "И что такого? Сестра стесняется брата?"
+    new "What's wrong? We're siblings"
 

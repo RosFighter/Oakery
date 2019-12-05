@@ -4,31 +4,31 @@
 translate english typical_dinner_ba465243:
 
     # Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract
-    Ann_00 "" nointeract
+    Ann_00 "Bon appetit, everyone. I'm tired today, let's eat quietly..." nointeract
 
 # game/dialogues/dinner.rpy:16
 translate english typical_dinner_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 ""
+    Ann_05 "Thanks for understanding, Max. Now dig in..."
 
 # game/dialogues/dinner.rpy:17
 translate english typical_dinner_4a7da202:
 
     # Max_00 "Приятного аппетита!"
-    Max_00 ""
+    Max_00 "Bon appetit!"
 
 # game/dialogues/dinner.rpy:19
 translate english typical_dinner_e7b121b0:
 
     # Ann_05 "Да, всё в порядке, Макс. Спасибо, что спросил. Просто за день столько всего, что пора бы уже и отдохнуть..."
-    Ann_05 ""
+    Ann_05 "Everything is fine, Max, thanks for asking. I had a busy day, that's all..."
 
 # game/dialogues/dinner.rpy:20
 translate english typical_dinner_63f629c8:
 
     # Max_00 "Понятно. Приятного аппетита!"
-    Max_00 ""
+    Max_00 "I see. Bon appetit then!"
 
 # game/dialogues/dinner.rpy:25
 translate english dinner_first_650c2c5d:
@@ -244,11 +244,11 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:13
     old "Как скажешь, мам..."
-    new ""
+    new "Okay, mom..."
 
     # game/dialogues/dinner.rpy:13
     old "У тебя всё хорошо?"
-    new ""
+    new "Is everything okay?"
 
     # game/dialogues/dinner.rpy:27
     old "Напомни, а кем ты работаешь?"

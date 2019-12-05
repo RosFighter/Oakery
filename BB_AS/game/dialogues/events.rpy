@@ -1,22 +1,6 @@
 
-################################################################################
-## события Макса
-
-label Sleep:
-    menu:
-        Max_19 "Как же я хочу спать..."
-
-        "Спать до утра":
-            $ number_autosave += 1
-            $ NewSaveName()
-            $ renpy.loadsave.force_autosave(True, True)
-            call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
-
-    return
-
 
 label StartDialog:
-
     if len(current_room.cur_char) == 1:
         if current_room.cur_char[0] == "lisa":
             jump LisaTalkStart
@@ -24,43 +8,53 @@ label StartDialog:
             jump AliceTalkStart
         elif current_room.cur_char[0] == "ann":
             jump AnnTalkStart
-
     jump AfterWaiting
+
+
+################################################################################
+## события Макса
+
+label Sleep:
+    menu:
+        Max_19 "{i}Как же я хочу спать...{/i}"
+        "{i}спать до утра{/i}":
+            $ number_autosave += 1
+            $ NewSaveName()
+            $ renpy.loadsave.force_autosave(True, True)
+            call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
+    return
 
 
 label Wearied:
     # прождали все доступное время - спим до восьми
     menu:
-        Max_19 "Я без сил и хочу спать..."
-
-        "Спать до утра":
+        Max_19 "{i}Я без сил и хочу спать...{/i}"
+        "{i}спать до утра{/i}":
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
             call Waiting(270, 1, True, "08:00") from _call_Waiting_1
-
     return
 
 
 label Nap:
     if max_profile.energy > 40.0:
-        $ txt = _("Я сейчас не очень хочу спать, но если я хочу сохранить силы...")
+        $ txt = _("{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}")
     else:
-        $ txt = _("Что-то я сегодня устал, надо бы вздремнуть...")
+        $ txt = _("{i}Что-то я сегодня устал, надо бы вздремнуть...{/i}")
 
     menu:
         Max_19 "[txt!t]"
-
-        "Подремать пару часов":
+        "{i}подремать пару часов{/i}":
             $ t = 2 * 60
-        "Подремать 3 часа" if tm <= "16:00":
+        "{i}подремать 3 часа{/i}" if tm <= "16:00":
             $ t = 3 * 60
-        "Подремать 4 часа" if tm <= "15:00":
+        "{i}подремать 4 часа{/i}" if tm <= "15:00":
             $ t = 4 * 60
-        "Подремать 5 часов" if tm <= "14:00":
+        "{i}подремать 5 часов{/i}" if tm <= "14:00":
             $ t = 5 * 60
-        "Не-а, может позже...":
+        "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
     call Waiting(t, 1, True) from _call_Waiting_5
@@ -68,37 +62,27 @@ label Nap:
 
 
 label Alarm:
-
     menu:
-        Max_00 "В каком часу я должен встать?"
-
-        "В 5 утра":
-            $ number_autosave += 1
-            $ NewSaveName()
-            $ renpy.loadsave.force_autosave(True, True)
-            $ t = TimeDifference(tm, "05:00")
-            call Waiting(t, 1, True, "05:00") from _call_Waiting_6
-        "В 6 утра":
-            $ number_autosave += 1
-            $ NewSaveName()
-            $ renpy.loadsave.force_autosave(True, True)
-            $ t = TimeDifference(tm, "06:00")
-            call Waiting(t, 1, True, "06:00") from _call_Waiting_7
-        "В 7 утра":
-            $ number_autosave += 1
-            $ NewSaveName()
-            $ renpy.loadsave.force_autosave(True, True)
-            $ t = TimeDifference(tm, "07:00")
-            call Waiting(t, 1, True, "07:00") from _call_Waiting_8
-        "Не-а, может позже...":
+        Max_00 "{i}В каком часу я должен встать?{/i}"
+        "{i}в 5 утра{/i}":
+            $ __st = "05:00"
+        "{i}в 6 утра{/i}":
+            $ __st = "06:00"
+        "{i}в 7 утра{/i}":
+            $ __st = "07:00"
+        "{i}не-а, может позже...{/i}":
             jump AfterWaiting
+    $ number_autosave += 1
+    $ NewSaveName()
+    $ renpy.loadsave.force_autosave(True, True)
+    $ t = TimeDifference(tm, __st)
+    call Waiting(t, 1, True, __st)
     return
 
 
 label Box:
     $ max_profile.energy -= 5.0
     scene Max unbox 01
-    # в оригинале 15, временно ставлю 8
     Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
     scene Max unbox 02
     Max_09 "Жаль, но все коробки пустые... Но что это такое? Какая-то камера?"
@@ -107,11 +91,10 @@ label Box:
     scene Max unbox 04
     menu:
         Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность!\"{/i}{/color}"
-        "закончить":
+        "{i}закончить{/i}":
             pass
-        "узнать подробнее о \"Возможностях\"" if flags["about_poss"]:
+        "{i}узнать подробнее о \"Возможностях\"{/i}" if flags["about_poss"]:
             call about_poss from _call_about_poss
-
     $ possibility["cams"].stage_number = 0
     $ possibility["cams"].stages[0].used = True
     $ AvailableActions["unbox"].enabled = False
@@ -119,12 +102,10 @@ label Box:
     $ InspectedRooms.clear()
     if CurPoss == "":
         $ CurPoss = "cams"
-
     call Waiting(30) from _call_Waiting_2
 
 
 label SearchCam:
-
     if current_room == house[4]:
         $ FoundCamera = True
         Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
@@ -143,10 +124,15 @@ label SearchCam:
 
 
 label DishesWashed:
-    scene Max crockery-01
+    if tm < "16:00":
+        scene BG crockery-morning-00
+        $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
+    else:
+        scene BG crockery-evening-00
+        $ renpy.show("Max crockery-evening 01"+dress_suf["max"])
     menu:
         Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?"
-        "закончить":
+        "{i}закончить{/i}":
             pass
     if (day+2) % 7 != 6:
         if (day+2) % 7 == 0:
@@ -160,25 +146,22 @@ label DishesWashed:
                 $ characters["alice"].relmax += 10
             else:
                 $ HintRelMood("alice", 0, 6)
-
     $ dishes_washed = True
-
-    call Waiting(60, 2) from _call_Waiting_11
+    $ __ts = max((60 - int(tm[-2:])), 30)
+    call Waiting(__ts, 2)
 
 
 ################################################################################
 ## события Лизы
 
 label lisa_sleep:
-    $ AvailableActions["talk"].enabled = False
-
     if tm < "06:00":
         scene BG char Lisa bed-night
         $ AvailableActions["touch"].active = True
-        show image "Lisa sleep-night "+random3_1+dress_suf["lisa-sleepwear"]
+        $ renpy.show("Lisa sleep-night "+random3_1+dress_suf["lisa-sleepwear"])
     else:
         scene BG char Lisa bed-morning
-        show image "Lisa sleep-morning "+random3_1+dress_suf["lisa-sleepwear"]
+        $ renpy.show("Lisa sleep-morning "+random3_1+dress_suf["lisa-sleepwear"])
     return
 
 
@@ -187,7 +170,7 @@ label lisa_shower:
     if peeping["lisa_shower"] > 3:
         menu:
             Max_00 "Лиза сейчас принимает душ..."
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping2
     elif peeping["lisa_shower"] > 2:
         Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить ее еще больше."
@@ -201,7 +184,7 @@ label lisa_shower:
     else:
         menu:
             Max_09 "Кажется, Лиза что-то делает в ванной..."
-            "Постучаться":
+            "{i}постучаться{/i}":
                 menu:
                     Lisa "{b}Лиза:{/b} Кто там? Я ещё не закончила. Подождите немного..."
                     "Это я, Макс!":
@@ -216,12 +199,12 @@ label lisa_shower:
                             "Хорошо, я подожду":
                                 $ peeping["lisa_shower"] = 4
                                 jump .end_peeping
-                    "Уйти":
+                    "{i}уйти{/i}":
                         $ peeping["lisa_shower"] = 4
                         jump .end_peeping
-            "Заглянуть с улицы":
+            "{i}заглянуть с улицы{/i}":
                 jump .start_peeping
-            "Уйти":
+            "{i}уйти{/i}":
                 $ peeping["lisa_shower"] = 4
                 jump .end_peeping
 
@@ -240,12 +223,12 @@ label lisa_shower:
         else:
             $ _chance_color = orange
         scene image ("Lisa shower 0"+str(_ran1))
-        show image "shower fg 00"+dress_suf["max"]
+        $ renpy.show("shower fg 00"+dress_suf["max"])
         menu:
             Max_04 "Лиза принимает душ"
-            "Присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [__chance_vis]\%){/color}":
+            "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [__chance_vis]\%){/color}{/i}":
                 jump .closer_peepeng
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
 
     label .closer_peepeng:
@@ -280,25 +263,21 @@ label lisa_shower:
             show shower-closer_fg
             menu:
                 Lisa_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Я всё маме расскажу!!!"
-                "Уйти":
+                "{i}уйти{/i}":
                     jump .end_peeping
-    label .end_peeping:
-        $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_10
     label .end_peeping2:
         $ current_room, prev_room = prev_room, current_room
         jump AfterWaiting
+    label .end_peeping:
+        $ current_room, prev_room = prev_room, current_room
+        call Waiting(10) from _call_Waiting_10
     return
 
 
 label lisa_read:
 
-    if tm < "11:00":
-        scene BG char Lisa bed-morning
-        show image "Lisa reading-morning "+random3_2+dress_suf["lisa"]
-    else: ## временно. спрайты будут заменены по готовности
-        scene BG char Lisa bed-evening
-        show image "Lisa reading-morning "+random3_2+dress_suf["lisa"]
+    scene BG char Lisa reading
+    $ renpy.show("Lisa reading "+random3_2+dress_suf["lisa"])
     return
 
 
@@ -316,7 +295,7 @@ label lisa_dressed_school:
 
     menu .lisa_dressed:
         Max_09 "{i}Похоже, Лиза собирается в школу...{/i}"
-        "постучаться" if characters["lisa"].mindedness < 200:
+        "{i}постучаться{/i}" if characters["lisa"].mindedness < 200:
             menu:
                 "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
                 "Это я, Макс. Можно войти?":
@@ -324,13 +303,13 @@ label lisa_dressed_school:
                 "Хорошо, я подожду...":
                     $ __wait = 10
                     jump .rel_mood
-        "открыть дверь" if characters["lisa"].mindedness < 200:
+        "{i}открыть дверь{/i}" if characters["lisa"].mindedness < 200:
             jump .open_door
-        "заглянуть в окно"  if characters["lisa"].mindedness < 200:
+        "{i}заглянуть в окно{/i}"  if characters["lisa"].mindedness < 200:
             jump .look_window
         #"войти в комнату" if characters["lisa"].mindedness >= 200:
         #    pass
-        "уйти":
+        "{i}уйти{/i}":
             $ __wait = 10
             jump .rel_mood
 
@@ -347,11 +326,11 @@ label lisa_dressed_school:
         else:
             $ lisa_dress["dressed"] = "02c"
 
-        scene image "Lisa window "+__ran1
-        show image "FG lisa-window-00"+dress_suf["max"]
+        scene image "Lisa voyeur "+__ran1
+        $ renpy.show("FG voyeur-lisa-00"+dress_suf["max"])
         menu:
             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
-            "уйти":
+            "{i}уйти{/i}":
                 jump .rel_mood
 
 
@@ -423,13 +402,13 @@ label lisa_dressed_school:
             $ lisa_dress["dressed"] = "00"
         scene BG char Lisa morning
         if characters["lisa"].relmax < 0:
-            show image "Lisa school-dressed 0"+str(__ran1)
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1))
         elif characters["lisa"].relmax < 250:
-            show image "Lisa school-dressed 0"+str(__ran1)+"a"
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
         elif characters["lisa"].relmax < 700:
-            show image "Lisa school-dressed 0"+str(__ran1)+"b"
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
         else:
-            show image "Lisa school-dressed 0"+str(__ran1)+"c" # пока отсутствует
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
 
         $ __mood -= 5 # настроение портится в любом случае
         if __ran1 < 3: # Лиза практически одета
@@ -464,7 +443,7 @@ label lisa_dressed_school:
                             $ __rel-= 5
                             menu:
                                 Lisa_12 "..."
-                                "Бежать":
+                                "{i}Бежать{/i}":
                                     pass
                 "Извини, я не хотел...":
                     Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
@@ -500,11 +479,11 @@ label lisa_dressed_shop:
 
     menu .lisa_dressed:
         Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
-        "постучаться":
+        "{i}постучаться{/i}":
             jump .knock
-        "открыть дверь":
+        "{i}открыть дверь{/i}":
             jump .open_door
-        "заглянуть в окно":
+        "{i}заглянуть в окно{/i}":
             jump .look_window
 
     menu .knock:
@@ -512,7 +491,7 @@ label lisa_dressed_shop:
         "Это я, Макс. Можно войти?":
             menu:
                 Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там."
-                "открыть дверь":
+                "{i}открыть дверь{/i}":
                     $ __warned = True
                     jump .open_door
                 "Хорошо...":
@@ -531,13 +510,13 @@ label lisa_dressed_shop:
             $ lisa_dress["dressed"] = "00"
         scene BG char Lisa morning
         if characters["lisa"].relmax < 0:
-            show image "Lisa school-dressed 0"+str(__ran1)
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1))
         elif characters["lisa"].relmax < 250:
-            show image "Lisa school-dressed 0"+str(__ran1)+"a"
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
         elif characters["lisa"].relmax < 700:
-            show image "Lisa school-dressed 0"+str(__ran1)+"b"
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
         else:
-            show image "Lisa school-dressed 0"+str(__ran1)+"c" # пока отсутствует
+            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
 
         if __warned:
             $ __mood -= 15
@@ -562,7 +541,7 @@ label lisa_dressed_shop:
                         $ __rel -= 5
                         menu:
                             Lisa_12 "..."
-                            "Бежать":
+                            "{i}Бежать{/i}":
                                 jump .rel_mood
             "Извини, я не хотел...":
                 $ __mood += 5
@@ -583,11 +562,11 @@ label lisa_dressed_shop:
         else:
             $ lisa_dress["dressed"] = "02g"
 
-        scene image "Lisa window "+__ran1
-        show image "FG lisa-window-00"+dress_suf["max"]
+        scene image "Lisa voyeur "+__ran1
+        $ renpy.show("FG voyeur-lisa-00"+dress_suf["max"])
         menu:
             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
-            "уйти":
+            "{i}уйти{/i}":
                 jump .rel_mood
 
 
@@ -612,7 +591,7 @@ label lisa_dressed_somewhere:
 
     menu:
         Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
-        "уйти":
+        "{i}уйти{/i}":
             $ peeping["lisa_dressed"] = 1
 
     label .end:
@@ -628,34 +607,127 @@ label lisa_swim:
 label lisa_sun:
 
     scene image "BG char Lisa sun-"+random3_2
-    show image "Lisa sun "+random3_2+swim_suf["lisa"]
+    $ renpy.show("Lisa sun "+random3_2+swim_suf["lisa"])
     return
 
 
 label lisa_dishes:
 
     scene BG crockery-evening-00
-    show image "Lisa crockery-evening 01"+dress_suf["lisa"]
+    $ renpy.show("Lisa crockery-evening 01"+dress_suf["lisa"])
     return
 
 
 label lisa_phone:
 
     scene BG char Lisa bed-evening
-    show image "Lisa phone-evening "+random3_3
+    $ renpy.show("Lisa phone-evening "+random3_3+dress_suf["lisa"])
     return
 
 
 label lisa_bath:
     scene location house bathroom door-evening
-    ## диалог
+    if peeping["lisa_bath"] > 0:
+        menu:
+            Max_00 "Лиза сейчас плещется в ванне..."
+            "{i}уйти{/i}":
+                jump .end_peeping2
+    else:
+        $ peeping["lisa_bath"] = 1
+        $ __mood = 0
+        $ __rel = 0
+        menu:
+            Max_00 "В это время Лиза обычно плескается в ванне..."
+            "{i}постучаться{/i}":
+                jump .knock
+            "{i}открыть дверь{/i}":
+                jump .open
+            "{i}подглядывать с улицы{/i}":
+                scene Lisa bath 01
+                $ renpy.show("FG voyeur-bath-00"+dress_suf["max"])
+                Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
+                Max_09 "Нужно что-нибудь придумать..."
+            "{i}уйти{/i}":
+                jump .end_peeping2
 
+    menu .knock:
+        Lisa "{b}Лиза:{/b} Кто там? Я принимаю ванну..."
+        "Это я, Макс! Можно войти?":
+            menu:
+                Lisa "{b}Лиза:{/b} Я же сказала, что в ванне. Закончу, тогда и войдёшь! А пока жди..."
+                "Хорошо, я подожду...":
+                    jump .end_peeping
+                "{i}открыть дверь{/i}":
+                    jump .open_knock
+                "{i}уйти{/i}":
+                    jump .end_peeping
+        "{i}открыть дверь{/i}":
+            jump .open_knock
+        "{i}уйти{/i}":
+            jump .end_peeping
+
+    label .open_knock:
+        if possibility["seduction"].stage_number < 31:
+            $ __mood -= 5
+            scene BG bath-open-00
+            if characters["lisa"].relmax < 0:
+                show Lisa bath-open 01
+                Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
+            elif characters["lisa"].relmax < 250:
+                $ lisa_dress["naked"] = "00a"
+                show Lisa bath-open 02
+                Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
+            else:
+                $ lisa_dress["naked"] = "00a"
+                show Lisa bath-open 03
+                Lisa_11 "Макс! Я же предупредила, что моюсь! Хочешь со мной поссориться?"
+            Max_00 "Упс! Уже ушёл..."
+
+            jump .end_peeping
+        else:
+            Max_00 "В следующих версиях..."
+            jump .end_peeping
+
+    label .open:
+        if possibility["seduction"].stage_number < 31:
+            scene BG bath-open-00
+            if characters["lisa"].relmax < 0:
+                show Lisa bath-open 01
+            elif characters["lisa"].relmax < 250:
+                $ lisa_dress["naked"] = "00a"
+                show Lisa bath-open 02
+            else:
+                $ lisa_dress["naked"] = "00a"
+                show Lisa bath-open 03
+            menu:
+                Lisa_11 "Макс! А постучаться? Я же голая!"
+                "Извини, дверь была открыта и я подумал...":
+                    pass
+                "А ты симпатичная...":
+                    pass
+                "И что такого? Сестра стесняется брата?":
+                    pass
+            Lisa_12 "Макс, выйди немедленно!"
+            Max_00 "Хорошо, уже ухожу..."
+        else:
+            Max_00 "В следующих версиях..."
+            jump .end_peeping
+
+    label .end_peeping2:
+        $ current_room, prev_room = prev_room, current_room
+        jump AfterWaiting
+    label .end_peeping:
+        $ HintRelMood("lisa", __rel, __mood)
+        $ characters["lisa"].relmax += __rel
+        $ characters["lisa"].mood   += __mood
+        $ current_room, prev_room = prev_room, current_room
+        call Waiting(10)
     return
 
 
 label lisa_homework:
     scene BG char Lisa lessons
-    show image "Lisa lessons "+random3_1+dress_suf["lisa-learn"]
+    $ renpy.show("Lisa lessons "+random3_1+dress_suf["lisa-learn"])
     return
 
 
@@ -673,15 +745,15 @@ label ann_shower:
     elif peeping["ann_shower"] == 3:
         menu:
             Max_00 "Мама сейчас принимает душ..."
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
     else:
         $ peeping["ann_shower"] = 1
         menu:
             Max_00 "Похоже, мама принимает душ..."
-            "Заглянуть с улицы":
+            "{i}заглянуть с улицы{/i}":
                 jump .start_peeping
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
 
     label .start_peeping:
@@ -689,15 +761,15 @@ label ann_shower:
         $ max_profile.stealth += 0.01
         $ __ran1 = renpy.random.randint(1, 4)
         scene image ("Ann shower 0"+str(__ran1))
-        show image "shower fg 00"+dress_suf["max"]
+        $ renpy.show("shower fg 00"+dress_suf["max"])
         menu:
             Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nУх, аж завораживает! Хоть бы меня не заметила..."
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
 
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_9
 
 
 ################################################################################
@@ -705,21 +777,53 @@ label ann_shower:
 
 label alice_bath:
     scene location house bathroom door-evening
-    ## диалог
+    if peeping["alice_bath"] > 0:
+        jump .end_peeping2
 
+    menu:
+        Max_00 "Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни."
+        "{i}постучаться{/i}":
+            menu:
+                Alice "{b}Алиса:{/b} Кому там не спится? Я ванну набираю..."
+                "Это я, Макс. Можно войти?":
+                    Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
+                    Max_00 "Ладно, ладно..."
+                "{i}уйти{/i}":
+                    jump .end_peeping
+        "{i}подглядывать с улицы{/i}":
+            scene Alice bath 01
+            $ renpy.show("FG voyeur-bath-00"+dress_suf["max"])
+            Max_00 "Кажется, Алиса и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но подходить ближе опасно - может заметить..."
+            Max_09 "Нужно что-нибудь придумать..."
+        "{i}уйти{/i}":
+            jump .end_peeping2
+
+    label .end_peeping2:
+        $ current_room, prev_room = prev_room, current_room
+        jump AfterWaiting
+    label .end_peeping:
+        $ current_room, prev_room = prev_room, current_room
+        call Waiting(10)
     return
 
 
 label alice_sleep:
-
     if tm < "05:00":
         scene location house aliceroom door-night
     else:
         scene location house aliceroom door-evening
-
-    ## диалог
-
-
+    if peeping["alice_sleep"] == 0:
+        $ peeping["alice_sleep"] = 1
+        menu:
+            Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
+            "{i}заглянуть в окно{/i}":
+                menu:
+                    Max_07 "Какая интересная поза... Кажется, она спит при свете включенного ноутбука. Да, хороша сестрёнка!"
+                    "{i}уйти{/i}":
+                        pass
+            "{i}уйти{/i}":
+                pass
+        call Waiting(10)
     return
 
 
@@ -734,15 +838,15 @@ label alice_shower:
     elif peeping["alice_shower"] == 3:
         menu:
             Max_00 "Алиса сейчас принимает душ..."
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
     else:
         $ peeping["alice_shower"] = 1
         menu:
             Max_00 "Похоже, Алиса принимает душ..."
-            "Заглянуть с улицы":
+            "{i}заглянуть с улицы{/i}":
                 jump .start_peeping
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
 
     label .start_peeping:
@@ -750,77 +854,123 @@ label alice_shower:
         $ max_profile.stealth += 0.01
         $ __ran1 = renpy.random.randint(1, 4)
         scene image ("Alice shower 0"+str(__ran1))
-        show image "shower fg 00"+dress_suf["max"]
+        $ renpy.show("shower fg 00"+dress_suf["max"])
         menu:
             Max_00 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nМожно целую вечность смотреть, как сестренка принимает душ. Лишь бы она меня не заметила..."
-            "Уйти":
+            "{i}уйти{/i}":
                 jump .end_peeping
 
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_19
 
 
-label alice_resting:
+label alice_rest_morning:
 
-    # if tm < "19:00"
     scene BG char Alice morning
-    show image "Alice morning 01"+dress_suf["alice"]
+    $ renpy.show("Alice morning 01"+dress_suf["alice"])
+    return
 
+
+label alice_rest_evening:
+    scene BG char Alice evening
+    $ renpy.show("Alice evening 01"+dress_suf["alice"])
     return
 
 
 label alice_dressed_shop:
 
     scene location house aliceroom door-evening
+    if peeping["alice_dressed"] > 0:
+        jump .end_peeping
+    menu:
+        Max_09 "Кажется, все собираются на шоппинг и Алиса сейчас переодевается..."
+        "{i}постучаться{/i}":
+            menu:
+                Alice "{b}Алиса:{/b} Кто там? Я переодеваюсь!"
+                "Это я, Макс. Можно войти?":
+                    Alice "{b}Алиса:{/b} Даже не вздумай! Прибью на месте! Жди там. А лучше свали подальше, чтобы под дверью не сопел тут."
+                    Max_00 "Хорошо..."
+                "Хорошо, я подожду...":
+                    pass
+            jump .end_peeping
+        "{i}заглянуть в окно{/i}":
+            ### пока спрайтов нет
+            pass
+        "{i}уйти{/i}":
+            jump .end_peeping2
 
+    label .end_peeping2:
+        $ current_room, prev_room = prev_room, current_room
+        jump AfterWaiting
+    label .end_peeping:
+        $ current_room, prev_room = prev_room, current_room
+        call Waiting(10)
     return
 
 
 label alice_dishes:
     scene BG crockery-morning-00
-    show image "Alice crockery-morning 01"+dress_suf["alice"]
-
+    $ renpy.show("Alice crockery-morning 01"+dress_suf["alice"])
     return
 
 
 label alice_read:
     scene BG char Alice reading
-    if tm[:2] == "10":
-        show image "Alice reading "+random3_2+dress_suf["alice"]
-    elif tm[:2] == "11":
-        show image "Alice reading "+random3_1+dress_suf["alice"]
-    elif tm[:2] == "16":
-        show image "Alice reading "+random3_3+dress_suf["alice"]
-    elif tm[:2] == "17":
-        show image "Alice reading "+random3_2+dress_suf["alice"]
+    if int(tm[:2])%3 == 0:
+        $ renpy.show("Alice reading "+random3_1+dress_suf["alice"])
+    elif int(tm[:2])%3 == 1:
+        $ renpy.show("Alice reading "+random3_2+dress_suf["alice"])
     else:
-        show image "Alice reading "+random3_1+dress_suf["alice"]
-
+        $ renpy.show("Alice reading "+random3_3+dress_suf["alice"])
     return
 
 
 label alice_dressed_somewhere:
     scene location house aliceroom door-evening
+    if peeping["alice_dressed"] > 0:
+        jump .end_peeping
+    menu:
+        Max_09 "Кажется, Алиса куда-то собирается..."
+        "{i}постучаться{/i}":
+            menu:
+                Alice "{b}Алиса:{/b} Кто там? Я переодеваюсь!"
+                "Это я, Макс. Можно войти?":
+                    Alice "{b}Алиса:{/b} Даже не вздумай! Прибью на месте! Жди там. А лучше свали подальше, чтобы под дверью не сопел тут."
+                    Max_00 "Хорошо..."
+                "Хорошо, я подожду...":
+                    pass
+            jump .end_peeping
+        "{i}заглянуть в окно{/i}":
+            ### пока спрайтов нет
+            pass
+        "{i}уйти{/i}":
+            jump .end_peeping2
 
+    label .end_peeping2:
+        $ current_room, prev_room = prev_room, current_room
+        jump AfterWaiting
+    label .end_peeping:
+        $ current_room, prev_room = prev_room, current_room
+        call Waiting(10)
     return
 
 
 label alice_sun:
     scene BG char Alice sun
-    if tm[:2] == "12":
-        show image "Alice sun "+random2_1+swim_suf["alice"]
-    elif tm[:2] == "15":
-        show image "Alice sun "+random2_2+swim_suf["alice"]
+    if int(tm[:2])%3 == 0:
+        $ renpy.show("Alice sun "+random3_1+swim_suf["alice"])
+    elif int(tm[:2])%3 == 1:
+        $ renpy.show("Alice sun "+random3_2+swim_suf["alice"])
     else:
-        show image "Alice sun "+random2_3+swim_suf["alice"]
+        $ renpy.show("Alice sun "+random3_3+swim_suf["alice"])
     return
 
 
 label alice_swim:
-    if tm[:2] == "13":
+    if int(tm[:2])%3 == 0:
         scene image "Alice swim "+random3_3+swim_suf["alice"]
-    elif tm[:2] == "14":
+    elif int(tm[:2])%3 == 1:
         scene image "Alice swim "+random3_1+swim_suf["alice"]
     else:
         scene image "Alice swim "+random3_2+swim_suf["alice"]
@@ -829,14 +979,37 @@ label alice_swim:
 
 label alice_cooking_dinner:
     scene BG cooking-00
-    show image "Alice cooking 01"+dress_suf["alice"]
+    $ renpy.show("Alice cooking 01"+dress_suf["alice"])
     return
 
 
 label alice_tv:
     scene BG lounge-tv-00
-    if tm[:2] == "22":
-        show image "Alice tv "+random3_1
+    if int(tm[:2])%2 == 0:
+        $ renpy.show("Alice tv "+random3_1+dress_suf["alice"])
     else:
-        show image "Alice tv "+random3_2
+        $ renpy.show("Alice tv "+random3_3+dress_suf["alice"])
+    return
+
+
+label alice_morning_closer:
+    scene BG char Alice morning-closer
+    if int(tm[:2])%3 == 0:
+        $ renpy.show("Alice morning-closer "+random3_1+dress_suf["alice"])
+    elif int(tm[:2])%3 == 1:
+        $ renpy.show("Alice morning-closer "+random3_2+dress_suf["alice"])
+    else:
+        $ renpy.show("Alice morning-closer "+random3_3+dress_suf["alice"])
+
+    return
+
+
+label alice_evening_closer:
+    scene BG char Alice evening-closer
+    if int(tm[:2])%3 == 0:
+        $ renpy.show("Alice evening-closer "+random3_2+dress_suf["alice"])
+    elif int(tm[:2])%3 == 1:
+        $ renpy.show("Alice evening-closer "+random3_1+dress_suf["alice"])
+    else:
+        $ renpy.show("Alice evening-closer "+random3_3+dress_suf["alice"])
     return

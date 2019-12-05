@@ -614,3 +614,11 @@ translate english strings:
     old "Насчёт твоего парня..."
     new "About your boyfriend..."
 
+# TODO: Translation updated at 2019-12-05 12:36
+
+translate english strings:
+
+    # game/core/03variables.rpy:368
+    old "Насчёт посуды..."
+    new ""
+

@@ -1440,3 +1440,53 @@ translate english strings:
     old "Ну, если что, я тут"
     new "I'm here if you need me"
 
+# TODO: Translation updated at 2019-12-05 12:36
+
+# game/dialogues/lisatalk.rpy:613
+translate english wash_dishes_lisa_825dd03a:
+
+    # Lisa_09 "А что насчёт посуды?" nointeract
+    Lisa_09 "What about it?" nointeract
+
+# game/dialogues/lisatalk.rpy:616
+translate english wash_dishes_lisa_9a2b70d3:
+
+    # Lisa_01 "А вот знаешь... хочу! Да, спасибо, Макс!" nointeract
+    Lisa_01 "You know what... I do! Yes, thanks, Max!" nointeract
+
+# game/dialogues/lisatalk.rpy:630
+translate english wash_dishes_lisa_acbb7452:
+
+    # Max_00 "И чего я этим занимаюсь? Делать нечего, что ли..."
+    Max_00 "Why am I wasting my time...?"
+
+# game/dialogues/lisatalk.rpy:631
+translate english wash_dishes_lisa_5c3452e3:
+
+    # Max_00 "А с другой строны - неплохой способ улучшить отношения с Лизой..." nointeract
+    Max_00 "But on the other hand, is a good way to improve relations with Lisa..." nointeract
+
+# game/dialogues/lisatalk.rpy:636
+translate english wash_dishes_lisa_1bfb44d5:
+
+    # Lisa_12 "Ну раз ничего, то нечего меня отвлекать. Иди делом займись!" nointeract
+    Lisa_12 "Don't interrupt me then! Go make yourself useful!" nointeract
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:613
+    old "Хочешь, я помогу тебе домыть остальное?"
+    new "Do you want my help with the rest?"
+
+    # game/dialogues/lisatalk.rpy:613
+    old "Нет, ничего..."
+    new "No, nothing..."
+
+    # game/dialogues/lisatalk.rpy:616
+    old "{i}мыть посуду{/i}"
+    new "{i}wash the dishes{/i}"
+
+    # game/dialogues/lisatalk.rpy:636
+    old "Хорошо, пойду займусь"
+    new "Okay"
+
