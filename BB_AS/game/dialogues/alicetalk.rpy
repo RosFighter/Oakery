@@ -49,7 +49,7 @@ label wash_dishes_alice:
                     $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
                     menu:
                         Max_11 "И почему здесь нет посудомоечной машины..."
-                        "закончить":
+                        "{i}закончить{/i}":
                             call Waiting(__ts, 2)
         "Нет, просто хотел поглазеть":
             menu:

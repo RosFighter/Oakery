@@ -24,6 +24,6 @@ label AnnTalkStart:
 
 
 label Ann_cooldown:
-    Ann_18 "Макс, не сейчас, хорошо?"
-    Max_00 "Ладно..."
+    Ann_18 "Макс, давай сменим тему..."
+    Max_00 "Ок, мам..."
     return

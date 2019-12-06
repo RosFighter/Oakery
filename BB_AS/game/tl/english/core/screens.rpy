@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2019-12-01 14:16
+﻿# TODO: Translation updated at 2019-12-06 14:46
 
 translate english strings:
 
@@ -80,7 +80,7 @@ translate english strings:
 
     # game/core/screens.rpy:511
     old "Чистота"
-    new "Cleanness"
+    new "Cleanliness"
 
     # game/core/screens.rpy:519
     old "Навыки:"
