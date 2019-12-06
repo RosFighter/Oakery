@@ -54,7 +54,7 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         $ random5   = renpy.random.choice(["01", "02", "03", "04", "05"])
         $ random6   = renpy.random.choice(["01", "02", "03", "04", "05", "06"])
         $ random_ab = renpy.random.choice(["a", "b"])
-        $ random_suf = renpy.random.choice(["", "a"])
+        $ random_suf = renpy.random.choice(["a", "b"])
 
         python:
             # уменьшение счетчика событий, зависимых от прошедших дней
