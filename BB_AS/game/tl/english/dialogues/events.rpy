@@ -568,7 +568,7 @@ translate english alice_shower_start_peeping_71f840ba:
 translate english alice_shower_closer_peepeng_67aac477:
 
     # Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nМожно целую вечность смотреть, как сестренка принимает душ. Лишь бы она меня не заметила..."
-    Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nI can watch sister take a shower forever. If only she didn't notice me..."
+    Max_01 "{color=[lime]}{i}Sneak attempt succeeded!{/i}{/color} \nI can watch sister take a shower forever. If only she didn't notice me..."
 
 # game/dialogues/events.rpy:875
 translate english alice_shower_closer_peepeng_aa11b305:
@@ -721,8 +721,8 @@ translate english strings:
     new "Max's stealth increased a little"
 
     # game/dialogues/events.rpy:227
-    old "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [_m1_events__chance_vis]%%){/color}{/i}"
-    new "{i}look closely\n{color=[_chance_color]}(Stealth. Chance: [_m1_events__chance_vis]%%){/color}{/i}"
+    old "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
+    new "{i}look closely\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
 
     # game/dialogues/events.rpy:238
     old "Скрытность Макса повысилась"
@@ -835,4 +835,3 @@ translate english strings:
     # game/dialogues/events.rpy:693
     old "И что такого? Сестра стесняется брата?"
     new "What's wrong? We're siblings"
-

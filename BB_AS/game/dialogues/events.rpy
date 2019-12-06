@@ -104,6 +104,9 @@ label Box:
         $ CurPoss = "cams"
     call Waiting(30) from _call_Waiting_2
 
+label Notebook:
+
+    return
 
 label SearchCam:
     if current_room == house[4]:
@@ -212,21 +215,22 @@ label lisa_shower:
         $ peeping["lisa_shower"] = 1
         $ renpy.notify(_("Скрытность Макса капельку повысилась"))
         $ max_profile.stealth += 0.01
-        $ _ran1 = renpy.random.randint(1, 4)
+        $ __ran1 = renpy.random.randint(1, 4)
 
         $ _chance = GetChance(max_profile.stealth, 3)
-        $ __chance_vis = int(round(_chance))
-        if __chance_vis < 33:
+        $ ch_vis = int(round(_chance))
+        if ch_vis < 33:
             $ _chance_color = red
-        elif __chance_vis > 67:
+        elif ch_vis > 67:
             $ _chance_color = lime
         else:
             $ _chance_color = orange
-        scene image ("Lisa shower 0"+str(_ran1))
+        $ ch_vis = str(ch_vis) + "%"
+        scene image ("Lisa shower 0"+str(__ran1))
         $ renpy.show("shower fg 00"+dress_suf["max"])
         menu:
             Max_04 "Лиза принимает душ"
-            "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [__chance_vis]\%){/color}{/i}":
+            "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -237,9 +241,9 @@ label lisa_shower:
             $ max_profile.stealth += 0.1
             $ renpy.notify(_("Скрытность Макса повысилась"))
             $ lisa_dress["naked"] = "00a"
-            $ _ran1 = renpy.random.randint(1, 6)
+            $ __ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
-            show image ("Lisa shower-closer 0"+str(_ran1))
+            show image ("Lisa shower-closer 0"+str(__ran1))
             show shower-closer_fg
             Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nОх, повезло! Хороша сестренка."
         elif RandomChance(_chance):
@@ -247,9 +251,9 @@ label lisa_shower:
             $ max_profile.stealth += 0.05
             $ renpy.notify(_("Скрытность Макса немного повысилась"))
             $ lisa_dress["naked"] = "00a"
-            $ _ran1 = renpy.random.randint(7, 8)
+            $ __ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
-            show image ("Lisa shower-closer 0"+str(_ran1))
+            show image ("Lisa shower-closer 0"+str(__ran1))
             show shower-closer_fg
             Max_09 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nПора сматываться."
             jump .end_peeping
@@ -257,9 +261,9 @@ label lisa_shower:
             $ peeping["lisa_shower"] = 3
             $ max_profile.stealth += 0.02
             $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
-            $ _ran1 = renpy.random.choice(["09", "10"])
+            $ __ran1 = renpy.random.choice(["09", "10"])
             scene BG shower-closer
-            show image ("Lisa shower-closer "+_ran1)
+            show image ("Lisa shower-closer "+__ran1)
             show shower-closer_fg
             menu:
                 Lisa_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Я всё маме расскажу!!!"
@@ -843,11 +847,21 @@ label alice_shower:
             $ renpy.notify(_("Скрытность Макса капельку повысилась"))
             $ max_profile.stealth += 0.01
             $ __ran1 = renpy.random.randint(1, 4)
+
+            $ _chance = GetChance(max_profile.stealth, 3)
+            $ ch_vis = int(round(_chance))
+            if ch_vis < 33:
+                $ _chance_color = red
+            elif ch_vis > 67:
+                $ _chance_color = lime
+            else:
+                $ _chance_color = orange
+            $ ch_vis = str(ch_vis) + "%"
             scene image ("Alice shower 0"+str(__ran1))
             $ renpy.show("shower fg 00"+dress_suf["max"])
             menu:
                 Max_00 "Ого... Голая Алиса всего в паре метров от меня!"
-                "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [__chance_vis]\%){/color}{/i}":
+                "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                     jump .closer_peepeng
                 "{i}уйти{/i}":
                     jump .end_peeping
@@ -858,9 +872,9 @@ label alice_shower:
                 $ max_profile.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса повысилась"))
                 $ alice_dress["naked"] = "00a"
-                $ _ran1 = renpy.random.randint(1, 6)
+                $ __ran1 = renpy.random.randint(1, 6)
                 scene BG shower-closer
-                show image ("Alice shower-closer 0"+str(_ran1))
+                show image ("Alice shower-closer 0"+str(__ran1))
                 show shower-closer_fg
                 Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nМожно целую вечность смотреть, как сестренка принимает душ. Лишь бы она меня не заметила..."
             elif RandomChance(_chance):
@@ -868,9 +882,9 @@ label alice_shower:
                 $ max_profile.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
                 $ alice_dress["naked"] = "00a"
-                $ _ran1 = renpy.random.randint(7, 8)
+                $ __ran1 = renpy.random.randint(7, 8)
                 scene BG shower-closer
-                show image ("Alice shower-closer 0"+str(_ran1))
+                show image ("Alice shower-closer 0"+str(__ran1))
                 show shower-closer_fg
                 Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nПора сматываться."
                 jump .end_peeping
@@ -878,9 +892,9 @@ label alice_shower:
                 $ peeping["Alice_shower"] = 3
                 $ max_profile.stealth += 0.02
                 $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
-                $ _ran1 = renpy.random.choice(["09", "10"])
+                $ __ran1 = renpy.random.choice(["09", "10"])
                 scene BG shower-closer
-                show image ("Alice shower-closer "+_ran1)
+                show image ("Alice shower-closer "+__ran1)
                 show shower-closer_fg
                 menu:
                     Alice_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая. Но ничего, я маме всё расскажу, она тебя накажет!"
@@ -992,11 +1006,11 @@ label alice_dressed_somewhere:
 label alice_sun:
     scene BG char Alice sun
     if int(tm[:2])%3 == 0:
-        $ renpy.show("Alice sun "+random3_1+swim_suf["alice"])
+        $ renpy.show("Alice sun "+random2_1+swim_suf["alice"])
     elif int(tm[:2])%3 == 1:
-        $ renpy.show("Alice sun "+random3_2+swim_suf["alice"])
+        $ renpy.show("Alice sun "+random2_2+swim_suf["alice"])
     else:
-        $ renpy.show("Alice sun "+random3_3+swim_suf["alice"])
+        $ renpy.show("Alice sun "+random2_3+swim_suf["alice"])
     return
 
 
