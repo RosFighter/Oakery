@@ -64,7 +64,7 @@ translate english dinner_first_ccf193ad:
 translate english dinner_first_great_f75fe005:
 
     # Ann_07 "Спасибо, Макс. Вы всё вопросы задаёте. Поели бы, хоть немного. Кстати, молодец Алиса, что приготовила ужин. Сама я бы ещё долго возилась."
-    Ann_07 "Thanks Max. You can take a break with the questions now, you should enjoy the food! And Alice, thank you so much for making dinner, I was so exhausted after today.
+    Ann_07 "Thanks Max. You can take a break with the questions now, you should enjoy the food! And Alice, thank you so much for making dinner, I was so exhausted after today."
 
 # game/dialogues/dinner.rpy:45
 translate english dinner_first_great_0ed07e47:
@@ -325,4 +325,3 @@ translate english strings:
     # game/dialogues/dinner.rpy:115
     old "Хорошо, мам!"
     new "Okay, mom"
-

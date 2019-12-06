@@ -356,7 +356,7 @@ translate english strings:
 
     # game/core/03variables.rpy:177
     old "Купальник для тех, кто не стесняется своего тела. Скрывает только самые интимные участки. Всё остальное открыто для солнца и глаз окружающих."
-    new "A sexy swimsuit for those who aren't shy about their bodies. Hides only the most intimate areas. Everything else is exposed to the sun and the eyes...
+    new "A sexy swimsuit for those who aren't shy about their bodies. Hides only the most intimate areas. Everything else is exposed to the sun and the eyes..."
 
     # game/core/03variables.rpy:177
     old "СИГАРЕТЫ"
@@ -597,4 +597,3 @@ translate english strings:
     # game/core/03variables.rpy:381
     old "Насчёт посуды..."
     new "About dishes..."
-
