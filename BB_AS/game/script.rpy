@@ -1,4 +1,20 @@
 
+label splashscreen:
+
+    if not persistent.choose_lang:
+        $ persistent.choose_lang = True
+        jump language_chooser
+
+    return
+
+label language_chooser:
+    scene image "gui/game_menu.png"
+
+    call screen choice_lang
+
+    $ renpy.utter_restart()
+
+
 label start:
 
     call intro from _call_intro

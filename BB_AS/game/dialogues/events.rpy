@@ -76,7 +76,7 @@ label Alarm:
     $ NewSaveName()
     $ renpy.loadsave.force_autosave(True, True)
     $ t = TimeDifference(tm, __st)
-    call Waiting(t, 1, True, __st)
+    call Waiting(t, 1, True, __st) from _call_Waiting_19
     return
 
 
@@ -152,7 +152,7 @@ label DishesWashed:
                 $ HintRelMood("alice", 0, 6)
     $ dishes_washed = True
     $ __ts = max((60 - int(tm[-2:])), 30)
-    call Waiting(__ts, 2)
+    call Waiting(__ts, 2) from _call_Waiting_20
 
 
 ################################################################################
@@ -257,7 +257,6 @@ label lisa_shower:
             show image ("Lisa shower-closer 0"+str(__ran1))
             show shower-closer_fg
             Max_09 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nПора сматываться."
-            jump .end_peeping
         else:
             $ peeping["lisa_shower"] = 3
             $ max_profile.stealth += 0.02
@@ -270,6 +269,8 @@ label lisa_shower:
                 Lisa_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Я всё маме расскажу!!!"
                 "{i}уйти{/i}":
                     jump .end_peeping
+        jump .end_peeping
+
     label .end_peeping2:
         $ current_room, prev_room = prev_room, current_room
         jump AfterWaiting
@@ -398,7 +399,7 @@ label lisa_dressed_school:
         $ __wait = 20
         $ __ran1 = renpy.random.randint(2, 5)
         if __ran1 == 2:
-            $ lisa_dress["dressed"] = "01b"
+            $ lisa_dress["dressed"] = "02a"
         elif __ran1 == 3:
             $ lisa_dress["dressed"] = "02c"
         elif __ran1 == 4:
@@ -600,7 +601,24 @@ label lisa_dressed_somewhere:
 
 label lisa_swim:
 
-    scene image "Lisa swim "+random3_1+swim_suf["lisa"]
+    if int(tm[:2])%3 == 0:
+        $ __scene = random3_1
+    elif int(tm[:2])%3 == 1:
+        $ __scene = random3_2
+    else:
+        $ __scene = random3_3
+
+    if __scene == "03":
+        if swim_suf["lisa"] == "a":
+            $ lisa_dress["swim"] = "03a"
+        else:
+            $ lisa_dress["swim"] = "03c"
+    else:
+        if swim_suf["lisa"] == "a":
+            $ lisa_dress["swim"] = "03"
+        else:
+            $ lisa_dress["swim"] = "03b"
+    scene image "Lisa swim "+__scene+swim_suf["lisa"]
     return
 
 
@@ -713,7 +731,7 @@ label lisa_bath:
             $ characters["lisa"].relmax += __rel
             $ characters["lisa"].mood   += __mood
             $ current_room, prev_room = prev_room, current_room
-            call Waiting(10)
+            call Waiting(10) from _call_Waiting_21
     return
 
 
@@ -750,7 +768,7 @@ label ann_sleep:
                         pass
             "{i}уйти{/i}":
                 pass
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_22
     return
 
 
@@ -836,7 +854,7 @@ label ann_shower:
 
         label .end_peeping:
             $ current_room, prev_room = prev_room, current_room
-            call Waiting(10)
+            call Waiting(10) from _call_Waiting_23
 
     return
 
@@ -870,13 +888,21 @@ label ann_dressed_work:
                 menu:
                     Ann "{b}Анна:{/b} Кто там?"
                     "Это я, Макс. Можно войти?":
-                        Alice "{b}Мама:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
+                        Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
                         Max_00 "Хорошо, мам"
                     "{i}уйти{/i}":
                         pass
             "{i}открыть дверь{/i}":
                 scene BG char Ann morning
                 $ renpy.show("Ann dressed-work "+__ran1)
+                if __ran1 == "01":
+                    $ ann_dress["dressed"] = "02"
+                elif __ran1 == "02":
+                    $ ann_dress["dressed"] = "02b"
+                elif __ran1 == "03":
+                    $ ann_dress["dressed"] = "02a"
+                else:
+                    $ ann_dress["dressed"] = "00"
                 menu:
                     Ann_13 "Макс! Я же учила тебя стучаться!"
                     "Хорошо выглядишь, мам!":
@@ -895,10 +921,14 @@ label ann_dressed_work:
                 # $ characters["ann"].relmax += __rel
                 $ characters["ann"].mood   += __mood
             "{i}заглянуть в окно{/i}":
-                # if __ran1 == "01":
-                #     $ lisa_dress["dressed"] = "02d"
-                # else:
-                #     $ lisa_dress["dressed"] = "02c"
+                if __ran1 == "01":
+                    $ ann_dress["dressed"] = "02c"
+                elif __ran1 == "02":
+                    $ ann_dress["dressed"] = "02d"
+                elif __ran1 == "03":
+                    $ ann_dress["dressed"] = "02a"
+                else:
+                    $ ann_dress["dressed"] = "02b"
 
                 scene image "Ann voyeur "+__ran1
                 $ renpy.show("FG voyeur-morning-00"+dress_suf["max"])
@@ -906,7 +936,7 @@ label ann_dressed_work:
             "{i}уйти{/i}":
                 pass
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_24
     return
 
 
@@ -922,7 +952,7 @@ label ann_dressed_shop:
                 menu:
                     Ann "{b}Анна:{/b} Кто там?"
                     "Это я, Макс. Можно войти?":
-                        Alice "{b}Мама:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
+                        Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
                         Max_00 "Хорошо, мам"
                     "{i}уйти{/i}":
                         pass
@@ -941,26 +971,29 @@ label ann_dressed_shop:
                 $ HintRelMood("ann", 0, __mood)
                 # $ characters["ann"].relmax += __rel
                 $ characters["ann"].mood   += __mood
-            "{i}заглянуть в окно{/i}":
-                # if __ran1 == "01":
-                #     $ lisa_dress["dressed"] = "02d"
-                # else:
-                #     $ lisa_dress["dressed"] = "02c"
-
-                scene image "Ann voyeur "+__ran1
-                $ renpy.show("FG voyeur-morning-00"+dress_suf["max"])
-                Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но если заметит меня в зеркало, мне конец."
+            # "{i}заглянуть в окно{/i}":
+            #     # if __ran1 == "01":
+            #     #     $ lisa_dress["dressed"] = "02d"
+            #     # else:
+            #     #     $ lisa_dress["dressed"] = "02c"
+            #
+            #     scene image "Ann voyeur "+__ran1
+            #     $ renpy.show("FG voyeur-morning-00"+dress_suf["max"])
+            #     Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но если заметит меня в зеркало, мне конец."
             "{i}уйти{/i}":
                 pass
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_25
     return
 
 
 label ann_resting:
-    if tm <= "19:00":
-        scene BG char Ann relax-evening-01
-        $ renpy.show("Ann relax-evening "+random3_3)#+dress_suf["ann"])
+    if tm <= "14:00":
+        scene BG char Ann relax-morning-01
+        $ renpy.show("Ann relax-morning "+random3_3+"a")
+    elif tm <= "19:00":
+        scene BG char Ann relax-morning-01
+        $ renpy.show("Ann relax-morning "+random3_3+"b")
     else:
         scene BG char Ann relax-evening-01
         $ renpy.show("Ann relax-evening "+random3_3+random_ab)
@@ -968,18 +1001,34 @@ label ann_resting:
 
 
 label ann_read:
-    scene BG char Alice reading # фон общий для Алисы и Анны
-    $ renpy.show("Ann reading "+random3_2)
+    scene BG reading
+    if tm < "14:00":
+        $ renpy.show("Ann reading "+random3_2+"a")
+    else:
+        $ renpy.show("Ann reading "+random3_3+"b")
     return
 
 
 label ann_swim:
-    ### нет спрайтов
+    if int(tm[:2])%3 == 0:
+        $ __scene = random3_1
+    elif int(tm[:2])%3 == 1:
+        $ __scene = random3_2
+    else:
+        $ __scene = random3_3
+
+    if __scene == "03":
+        $ ann_dress["swim"] = "03a"
+    else:
+        $ ann_dress["swim"] = "03"
+
+    scene image "Ann swim "+__scene+swim_suf["ann"]
     return
 
 
 label ann_sun:
-    ###
+    scene BG char Ann sun
+    show Ann sun 01
     return
 
 
@@ -991,14 +1040,14 @@ label ann_bath:
             Max_00 "Видимо, мама принимает ванну..."
             "{i}постучаться{/i}":
                 menu:
-                    Ann "{b}Мама:{/b} Кто там? Я принимаю ванну!"
+                    Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
                     "Это я, Макс.":
                         menu:
-                            Ann "{b}Мама:{/b} Дорогой, что ты хотел?"
+                            Ann "{b}Анна:{/b} Дорогой, что ты хотел?"
                             "Можно я войду?":
                                 $ config.menu_include_disabled = True
                                 menu:
-                                    Ann "{b}Мама:{/b} Ну... хорошо, входи. Только не смотри!"
+                                    Ann "{b}Анна:{/b} Ну... хорошо, входи. Только не смотри!"
                                     "{i}Войти{/i} \n(в следующей версии...)" if False: ## пока нет изображений
                                         menu:
                                             Ann_01 "Макс, так что там у тебя такое срочное, что ты не мог подождать пол часа?"
@@ -1021,7 +1070,7 @@ label ann_bath:
                                 pass
                             "Я подожду...":
                                 pass
-                        Ann "{b}Мама:{/b} Хорошо, я скоро закончу..."
+                        Ann "{b}Анна:{/b} Хорошо, я скоро закончу..."
                         Max_00 "Ага..."
                     "{i}уйти{/i}":
                         pass
@@ -1038,7 +1087,7 @@ label ann_bath:
         label .end:
             $ config.menu_include_disabled = False
             $ current_room, prev_room = prev_room, current_room
-            call Waiting(10)
+            call Waiting(10) from _call_Waiting_26
     return
 
 
@@ -1075,7 +1124,7 @@ label alice_bath:
             "{i}уйти{/i}":
                 pass
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_27
     return
 
 
@@ -1103,7 +1152,7 @@ label alice_sleep:
                         pass
             "{i}уйти{/i}":
                 pass
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_28
     return
 
 
@@ -1157,7 +1206,7 @@ label alice_shower:
                 $ peeping["alice_shower"] = 1
                 $ max_profile.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса повысилась"))
-                $ alice_dress["naked"] = "00a"
+                $ alice_dress["naked"] = "00aa"
                 $ __ran1 = renpy.random.randint(1, 6)
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
@@ -1167,7 +1216,7 @@ label alice_shower:
                 $ peeping["alice_shower"] = 2
                 $ max_profile.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
-                $ alice_dress["naked"] = "00a"
+                $ alice_dress["naked"] = "00aa"
                 $ __ran1 = renpy.random.randint(7, 8)
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
@@ -1189,7 +1238,7 @@ label alice_shower:
 
         label .end_peeping:
             $ current_room, prev_room = prev_room, current_room
-            call Waiting(10)
+            call Waiting(10) from _call_Waiting_29
     return
 
 
@@ -1224,10 +1273,10 @@ label alice_dressed_shop:
             "{i}заглянуть в окно{/i}":
                 $ __ran1 = renpy.random.choice(["01", "02"])
 
-                # if __ran1 == "01":
-                #     $ lisa_dress["dressed"] = "02d"
-                # else:
-                #     $ lisa_dress["dressed"] = "02c"
+                if __ran1 == "01":
+                    $ alice_dress["dressed"] = "02a"
+                else:
+                    $ alice_dress["dressed"] = "02b"
 
                 scene image "Alice voyeur "+__ran1
                 $ renpy.show("FG voyeur-morning-00"+dress_suf["max"])
@@ -1235,9 +1284,8 @@ label alice_dressed_shop:
             "{i}уйти{/i}":
                 pass
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_30
     return
-
 
 
 label alice_dishes:
@@ -1247,7 +1295,7 @@ label alice_dishes:
 
 
 label alice_read:
-    scene BG char Alice reading
+    scene BG reading
     if int(tm[:2])%3 == 0:
         $ renpy.show("Alice reading "+random3_1+dress_suf["alice"])
     elif int(tm[:2])%3 == 1:
@@ -1285,7 +1333,7 @@ label alice_dressed_somewhere:
             "{i}уйти{/i}":
                 pass
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10)
+        call Waiting(10) from _call_Waiting_31
     return
 
 
@@ -1302,11 +1350,18 @@ label alice_sun:
 
 label alice_swim:
     if int(tm[:2])%3 == 0:
-        scene image "Alice swim "+random3_1+swim_suf["alice"]
+        $ __scene = random3_1
     elif int(tm[:2])%3 == 1:
-        scene image "Alice swim "+random3_2+swim_suf["alice"]
+        $ __scene = random3_2
     else:
-        scene image "Alice swim "+random3_3+swim_suf["alice"]
+        $ __scene = random3_3
+
+    if __scene == "03":
+        $ alice_dress["swim"] = "03a"
+    else:
+        $ alice_dress["swim"] = "03"
+
+    scene image "Alice swim "+__scene+swim_suf["alice"]
     return
 
 

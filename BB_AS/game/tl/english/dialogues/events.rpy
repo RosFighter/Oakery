@@ -642,6 +642,258 @@ translate english alice_dressed_somewhere_3a1f2da3:
     # Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
     Max_01 "Alice is changing... Now that's a pretty sight! It's time for me to bolt. Someone can notice!"
 
+# game/dialogues/events.rpy:753
+translate english ann_sleep_240f8eab:
+
+    # Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..." nointeract
+    Max_00"Mom is usually asleep at this time.\nI shouldn't wake her..." nointeract
+
+# game/dialogues/events.rpy:764
+translate english ann_sleep_6bfffe81:
+
+    # Max_07 "Какая попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь..." nointeract
+    Max_07"What an ass! It's good we live in a warm climate..." nointeract
+
+# game/dialogues/events.rpy:781
+translate english ann_shower_71ff657f:
+
+    # Max_00 "Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто."
+    Max_00"My mother almost caught me today. Don't tempt fate too often."
+
+# game/dialogues/events.rpy:812
+translate english ann_shower_start_peeping_6a01a9ae:
+
+    # Max_00 "Как же она все-таки красива..." nointeract
+    Max_00"How beautiful she..." nointeract
+
+# game/dialogues/events.rpy:829
+translate english ann_shower_closer_peepeng_c35c25c2:
+
+    # Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nУх, аж завораживает! Хоть бы меня не заметила..."
+    Max_01"{color=[lime]}{i} Sneak attempt succeeded!{/i}{/color} \n Wow, she's mesmerizing! I really shouldn't get caught now"
+
+# game/dialogues/events.rpy:839
+translate english ann_shower_closer_peepeng_6ffc25ce:
+
+    # Max_09 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nПора сматываться."
+    Max_09"{color=[orange]}{i}I think my mother suspected something!{/i}{/color}\nI got to skedaddle."
+
+# game/dialogues/events.rpy:849
+translate english ann_shower_closer_peepeng_c5fc647e:
+
+    # Ann_19 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс! Подглядываешь за мной? Как тебе не стыдно?!" nointeract
+    Ann_19"{color=[orange]}{i} Sneak attempt failed!{/i}{/color}\n Max! Were you spying on me?!"nointeract
+
+# game/dialogues/events.rpy:884
+translate english ann_dressed_work_7b31f3ed:
+
+    # Max_09 "Сейчас 10 часов, а значит, мама собирается на работу..." nointeract
+    Max_09"It's 10 o'clock, so mom is getting ready for work" nointeract
+
+# game/dialogues/events.rpy:887
+translate english ann_dressed_work_b21abe2e:
+
+    # Ann "{b}Анна:{/b} Кто там?" nointeract
+    Ann"{b}Anna:{/b} Who's there?" nointeract
+
+# game/dialogues/events.rpy:890
+translate english ann_dressed_work_2e55a9e3:
+
+    # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
+    Ann"{b}Anna:{/b} Max, I'm not decent. Wait a while, please."
+
+# game/dialogues/events.rpy:891
+translate english ann_dressed_work_51f3e0fa:
+
+    # Max_00 "Хорошо, мам"
+    Max_00"Okay, mom"
+
+# game/dialogues/events.rpy:905
+translate english ann_dressed_work_79ab0f47:
+
+    # Ann_13 "Макс! Я же учила тебя стучаться!" nointeract
+    Ann_13"Max! Knock next time!" nointeract
+
+# game/dialogues/events.rpy:909
+translate english ann_dressed_work_66960e11:
+
+    # Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
+    Ann_12"Thanks, Max, but... Could you please wait behind the door?"
+
+# game/dialogues/events.rpy:910
+translate english ann_dressed_work_c8682e5b:
+
+    # Max_00 "Конечно, мам!"
+    Max_00"Sure, mom!"
+
+# game/dialogues/events.rpy:913
+translate english ann_dressed_work_6bbecd5d:
+
+    # Ann_19 "Что?! Макс! А ну-ка быстро выйди и закрой дверь!"
+    Ann_19"What? Max! Get out and close the door this instant!"
+
+# game/dialogues/events.rpy:914
+translate english ann_dressed_work_80f63239:
+
+    # Max_00 "Как скажешь, мам..."
+    Max_00"Okay, mom..."
+
+# game/dialogues/events.rpy:917
+translate english ann_dressed_work_a4ce807a:
+
+    # Ann_07 "Ну, бывает. Я сама ещё не привыкла к тому, что замков нигде нет. Ладно, дорогой. Подожди за дверью, пока мама одевается. хорошо?"
+    Ann_07"It's okay, I'm still getting used to the lack of locks on the doors too. Now please wait behind the door until I get dressed, okay?"
+
+# game/dialogues/events.rpy:918
+translate english ann_dressed_work_d66e2468:
+
+    # Max_00 "Хорошо, мам..."
+    Max_00"Okay, mom..."
+
+# game/dialogues/events.rpy:934
+translate english ann_dressed_work_a4d8ba92:
+
+    # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
+    Max_01"Wow, what a sight! I picked a lucky moment... But I should get out before she sees me in the mirror"
+
+# game/dialogues/events.rpy:948
+translate english ann_dressed_shop_d4cf236b:
+
+    # Max_09 "Сегодня суббота, день шоппинга. Видимо, мама собирается..." nointeract
+    Max_09"Looks like mom is getting ready for a day of shopping" nointeract
+
+# game/dialogues/events.rpy:951
+translate english ann_dressed_shop_b21abe2e:
+
+    # Ann "{b}Анна:{/b} Кто там?" nointeract
+    Ann"{b}Anna:{/b} Who's there?" nointeract
+
+# game/dialogues/events.rpy:954
+translate english ann_dressed_shop_bf2abaef:
+
+    # Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
+    Ann"{b}Anna:{/b} No, Max. I'm changing clothes. Wait a little, dear."
+
+# game/dialogues/events.rpy:955
+translate english ann_dressed_shop_51f3e0fa:
+
+    # Max_00 "Хорошо, мам"
+    Max_00"Okay, mom"
+
+# game/dialogues/events.rpy:961
+translate english ann_dressed_shop_79ab0f47:
+
+    # Ann_13 "Макс! Я же учила тебя стучаться!" nointeract
+    Ann_13"Max! Knock next time!" nointeract
+
+# game/dialogues/events.rpy:965
+translate english ann_dressed_shop_66960e11:
+
+    # Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
+    Ann_12"Thanks, Max, but... Could you please wait behind the door?"
+
+# game/dialogues/events.rpy:966
+translate english ann_dressed_shop_c8682e5b:
+
+    # Max_00 "Конечно, мам!"
+    Max_00"Sure, mom!"
+
+# game/dialogues/events.rpy:968
+translate english ann_dressed_shop_9f399a69:
+
+    # Ann_07 "И Макс... Постарайся больше не входить без стука, хорошо?"
+    Ann_07"And, Max... Try not to come in without knocking any more, ok?"
+
+# game/dialogues/events.rpy:969
+translate english ann_dressed_shop_d66e2468:
+
+    # Max_00 "Хорошо, мам..."
+    Max_00"Okay, mom..."
+
+# game/dialogues/events.rpy:1022
+translate english ann_bath_9132bdea:
+
+    # Max_00 "Видимо, мама принимает ванну..." nointeract
+    Max_00"Looks like mom is taking a bath" nointeract
+
+# game/dialogues/events.rpy:1038
+translate english ann_bath_cddc6bee:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!" nointeract
+    Ann"{b}Anna:{/b} Who's there? I'm taking a bath!" nointeract
+
+# game/dialogues/events.rpy:1041
+translate english ann_bath_29fc0d16:
+
+    # Ann "{b}Анна:{/b} Дорогой, что ты хотел?" nointeract
+    Ann"{b}Anna:{/b} Do you want something, dear?" nointeract
+
+# game/dialogues/events.rpy:1045
+translate english ann_bath_13e7202f:
+
+    # Ann "{b}Анна:{/b} Ну... хорошо, входи. Только не смотри!" nointeract
+    Ann"{b}Anna:{/b} Well... okay, but don't look!" nointeract
+
+# game/dialogues/events.rpy:1035
+translate english ann_bath_dcec8aa3:
+
+    # Ann_01 "Макс, так что там у тебя такое срочное, что ты не мог подождать пол часа?" nointeract
+    Ann_01"Max, what is so urgent you can't wait 30 minutes?" nointeract
+
+# game/dialogues/events.rpy:1038
+translate english ann_bath_28082fdd:
+
+    # Ann_07 "Макс! Я думала, что-то случилось, а ты просто балуешься. Подожди меня за дверью. Я скоро!"
+    Ann_07"I started to think something happened. Wait outside, I'll be soon"
+
+# game/dialogues/events.rpy:1039
+translate english ann_bath_6e7aee99:
+
+    # Max_00 "Хорошо..."
+    Max_00 " Fine..."
+
+# game/dialogues/events.rpy:1042
+translate english ann_bath_40b1e3d3:
+
+    # Ann_13 "Что?! А ну-ка быстро выметайся отсюда! Я скоро закончу."
+    Ann_13"What? Get out of here this instant!"
+
+# game/dialogues/events.rpy:1043
+translate english ann_bath_69285a70:
+
+    # Max_00 "Как скажешь!"
+    Max_00"Okay"
+
+# game/dialogues/events.rpy:1069
+translate english ann_bath_9b9b753a:
+
+    # Ann "{b}Анна:{/b} Хорошо, я скоро закончу..."
+    Ann"{b}Anna:{/b} Okay, I won't take long..."
+
+# game/dialogues/events.rpy:1057
+translate english ann_bath_7852d704:
+
+    # Max_00 "Ага..."
+    Max_00"Yeah..."
+
+# game/dialogues/events.rpy:1063
+translate english ann_bath_8d2fe639:
+
+    # Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
+    Max_00"Too bad the glass is partly ground, I can't see the best parts! And getting any closer is too risky"
+
+# game/dialogues/events.rpy:1064
+translate english ann_bath_617c9a2e:
+
+    # Max_09 "Нужно что-нибудь придумать..." nointeract
+    Max_09 "I have to think of something..." nointeract
+
+# game/dialogues/events.rpy:1149
+translate english alice_shower_9d7448c3:
+
+    # Max_00 "Алиса меня и так сегодня едва не поймала. Не стоит искушать судьбу слишком часто."
+    Max_00"Alice almost caught me today. Don't tempt fate too often."
+
 translate english strings:
 
     # game/dialogues/events.rpy:18
@@ -835,3 +1087,59 @@ translate english strings:
     # game/dialogues/events.rpy:693
     old "И что такого? Сестра стесняется брата?"
     new "What's wrong? We're siblings"
+
+    # game/dialogues/events.rpy:905
+    old "Хорошо выглядишь, мам!"
+    new"You look good, mom!"
+
+    # game/dialogues/events.rpy:905
+    old "Отличный зад!"
+    new"Nice ass!"
+
+    # game/dialogues/events.rpy:905
+    old "Ой, извини. Я забыл..."
+    new"I'm sorry, I forgot"
+
+    # game/dialogues/events.rpy:961
+    old "Ой, извини..."
+    new"Oh, sorry..."
+
+    # game/dialogues/events.rpy:1025
+    old "Это я, Макс."
+    new "It's me, Max."
+
+    # game/dialogues/events.rpy:1028
+    old "Можно я войду?"
+    new "Can I come in?"
+
+    # game/dialogues/events.rpy:1028
+    old "Нет, ничего"
+    new "No, nothing"
+
+    # game/dialogues/events.rpy:1028
+    old "Я подожду..."
+    new"I'll wait..."
+
+    # game/dialogues/events.rpy:1032
+    old "{i}Войти{/i} \n(в следующей версии...)"
+    new"{i}Enter{/i} \n(in future versions...)"
+
+    # game/dialogues/events.rpy:1032
+    old "Ой, нет, я передумал"
+    new"Oh, sorry, I changed my mind"
+
+    # game/dialogues/events.rpy:1035
+    old "Просто, я соскучился!"
+    new"I missed you!"
+
+    # game/dialogues/events.rpy:1035
+    old "Ну это, хотел поглазеть..."
+    new"I wanted to look at you"
+
+    # game/dialogues/events.rpy:1035
+    old "Я собирался спать и хотел принять душ перед сном"
+    new"I want to take a shower before going to sleep"
+
+    # game/dialogues/events.rpy:1035
+    old "Ой, не буду тебе мешать"
+    new"Sorry, I'll leave you alone"

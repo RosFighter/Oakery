@@ -34,15 +34,52 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         $ tm = EventsByTime[cut_id].tm
 
     if day != __prevday:
+        # временный блок случайного назначения одежды
+        $ dress_suf["alice"] = renpy.random.choice(["a", "b"])
+        $ dress_suf["lisa"] = renpy.random.choice(["a", "b"])
+        $ dress_suf["max"] = renpy.random.choice(["a", "b"])
+        $ dress_suf["ann"] = renpy.random.choice(["a", "b"])
+        $ dress_suf["lisa-learn"] = renpy.random.choice(["a", "b", "c"])
+        if possibility["Swimsuit"].stage_number >= 0 :
+            $ swim_suf["lisa"] = renpy.random.choice(["a", "b"])
+        if day > 2:
+            $ dress_suf["lisa-sleepwear"] = renpy.random.choice(["a", "b"])
+
+        if dress_suf["lisa"] == "a":
+            $ lisa_dress["casual"]  = "01a"
+            $ lisa_dress["casual2"] = "01a"
+        else:
+            $ lisa_dress["casual"]  = "04"
+            $ lisa_dress["casual2"] = "04"
+
+        if dress_suf["lisa-sleepwear"] == "a":
+            $ lisa_dress["sleepwear"] = "02"
+        else:
+            $ lisa_dress["sleepwear"] = "02a"
+
+        if dress_suf["lisa-learn"] == "a":
+            $ lisa_dress["learn"] = "01a"
+        elif dress_suf["lisa-learn"] == "b":
+            $ lisa_dress["learn"] = "04"
+        else:
+            $ lisa_dress["learn"] = "04b"
+
+        if swim_suf["lisa"] == "a":
+            $ lisa_dress["swim"] = "03"
+        else:
+            $ lisa_dress["swim"] = "03b"
+
+        if dress_suf["alice"] == "a":
+            $ alice_dress["casual"] = "01a"
+            $ alice_dress["casual2"] = "01aa"
+        else:
+            $ alice_dress["casual"] = "01c"
+            $ alice_dress["casual2"] = "01ca"
 
         # здесь будет блок обработки ежедневно обнуляемых значений
         $ talk_var["ask_money"] = 0
-        $ talk_var["lisa_dw"] = 0
+        $ talk_var["lisa_dw"] = 0 # разговор о помывке посуды
         $ talk_var["alice_dw"] = 0
-        $ lisa_dress["naked"] = "04a"
-        $ lisa_dress["dressed"] = "00b"
-        $ ann_dress["naked"] = "00b"
-        $ ann_dress["dressed"] = "00b"
 
         $ random2   = renpy.random.choice(["01", "02"])
         $ random3_1 = renpy.random.choice(["01", "02", "03"])
@@ -68,8 +105,44 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         # вернем на значения по-умолчанию после подглядываний
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
-        $ ann_dress["naked"] = "00b"
+        $ ann_dress["naked"] = "04b"
         $ ann_dress["dressed"] = "00b"
+        $ alice_dress["naked"] = "04aa"
+        $ alice_dress["dressed"] = "00b"
+        if swim_suf["alice"] == "a":
+            $ alice_dress["swim"] = "03"
+        if swim_suf["ann"] == "a":
+            $ ann_dress["swim"] = "03"
+        if swim_suf["lisa"] == "a":
+            $ lisa_dress["swim"] = "03"
+        else:
+            $ lisa_dress["swim"] = "03b"
+
+
+        if tm < "10:00":
+            if random_suf == "a":
+                $ ann_dress["cooking"] = "05b"
+            else:
+                $ ann_dress["cooking"] = "01c"
+        elif tm > "17:00":
+            $ ann_dress["cooking"] = "01b"
+            if dress_suf["alice"] == "a":
+                $ alice_dress["cooking"] = "01b"
+            else:
+                $ alice_dress["cooking"] = "01d"
+
+        if tm < "14:00":
+            $ ann_dress["casual"] = "01b"
+        else:
+            $ ann_dress["casual"] = "03"
+
+        if tm > "19:00":
+            if random_ab == "a":
+                $ ann_dress["casual2"] = "01b"
+            else:
+                $ ann_dress["casual2"] = "04b"
+
+
         python:
             # сбросим подглядывания
             for key in peeping:
@@ -214,7 +287,7 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
-    if current_ver < "0.01.0.020":
-        $ current_ver = "0.01.0.020" # ставим номер версии
+    if current_ver != "0.01.TechDemo":
+        $ current_ver = "0.01.TechDemo" # ставим номер версии
         # и выполняем необходимые действия с переменными или фиксы
         pass

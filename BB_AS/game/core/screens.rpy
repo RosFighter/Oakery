@@ -1,5 +1,31 @@
 
 
+screen choice_lang():
+    tag menu
+    modal True
+    style_prefix "lang"
+    frame xysize (300, 150):
+        align (0.5, 0.5)
+        vbox:
+            align (0.5, 0.5)
+            button background None action [Language("english"), Return()] xsize 180:
+                xpadding 0 ypadding -3 xmargin 0 ymargin 5
+                textbutton "English" action [Language("english"), Return()]
+                foreground "interface marker"
+            button background None action [Language(None), Return()] xsize 180:
+                xpadding 0 ypadding -3 xmargin 0 ymargin 5
+                textbutton "Русский" action [Language(None), Return()]
+                foreground "interface marker"
+
+style lang_button_text is default:
+    font "trebucbd.ttf"
+    xpos 30
+    yalign .0
+    size 36
+    idle_color gui.choice_button_text_idle_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+
 ################################################################################
 screen room_navigation():
 
@@ -107,12 +133,21 @@ screen room_navigation():
         text weekdays[(day+2) % 7][1] xalign(0.5)
 
 
+    $ kol = 0
+
+    for poss in possibility:
+        if possibility[poss].stage_number >= 0: # количество открытых возможностей
+            $ kol += 1
+
     hbox:  # верхнее меню
         align(0.02, 0.01)
         spacing 2
         imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
         imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
-        imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
+        if kol > 0:
+            imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at small_menu
+        else:
+            imagebutton idle "interface menu opportunity" focus_mask True action [Hide("wait_navigation"), Show("menu_opportunity")] at disable_menu
         imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
         imagebutton idle "interface menu main" focus_mask True action ShowMenu("save") at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
@@ -171,6 +206,10 @@ init: # трансформации для кнопок
             yanchor 0 alpha 0.4
         on hover, selected_hover:
             yanchor 1 alpha 1.0
+
+    transform disable_menu(enable=True):
+        size (80, 80)
+        yanchor 0 alpha 0.2
 
 ################################################################################
 screen menu_my_help():
@@ -444,8 +483,12 @@ screen menu_userinfo():
                             foreground "interface marker"
             vbar value YScrollValue("vp") style "info_vscroll"
 
-        if CurChar == "max":
-            add max_profile.img size (550, 900) xpos -50 ypos 10
+        if CurChar == "max": ## временное определение на стадии вывода изображения
+            if dress_suf["max"] == "a":
+                add "Max info 01" size (550, 900) xpos -50 ypos 10
+            else:
+                add "Max info 01b" size (550, 900) xpos -50 ypos 10
+
         else:
             frame xysize(550, 900) background None:
                 if characters[CurChar].sufix == "":

@@ -7,7 +7,7 @@ label LisaTalkStart:
 
     $ __CurShedRec = GetScheduleRecord(schedule_lisa, day, tm)[0]
     if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel
+        call expression __CurShedRec.talklabel from _call_expression_3
 
     $ dial.append((_("{i}уйти{/i}"), "exit"))
 
@@ -537,7 +537,7 @@ label talk_swim:
                 pass
     label .end:
         call Waiting(20) from _call_Waiting_13
-
+    return
 
 label about_boy:
 
@@ -635,11 +635,11 @@ label wash_dishes_lisa:
                     menu:
                         Max_00 "А с другой строны - неплохой способ улучшить отношения с Лизой..."
                         "{i}закончить{/i}":
-                            call Waiting(__ts, 2)
+                            call Waiting(__ts, 2) from _call_Waiting_6
         "Нет, ничего...":
             menu:
                 Lisa_12 "Ну раз ничего, то нечего меня отвлекать. Иди делом займись!"
                 "Хорошо, пойду займусь":
-                    call Waiting(10)
+                    call Waiting(10) from _call_Waiting_7
 
     return
