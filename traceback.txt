@@ -1,0 +1,166 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/dialogues/events.rpy", line 24, in script call
+    call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 857, in script call
+    call Waiting(10) from _call_Waiting_23
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1160, in script call
+    call Waiting(10) from _call_Waiting_28
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1160, in script call
+    call Waiting(10) from _call_Waiting_28
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 279, in script call
+    call Waiting(10) from _call_Waiting_10
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1246, in script call
+    call Waiting(10) from _call_Waiting_29
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 176, in script call
+    call expression __name_label from _call_expression
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/dialogues/events.rpy", line 155, in script call
+    call Waiting(__ts, 2) from _call_Waiting_20
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1341, in script call
+    call Waiting(10) from _call_Waiting_31
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 176, in script call
+    call expression __name_label from _call_expression
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1095, in script call
+    call Waiting(10) from _call_Waiting_26
+  File "game/dialogues/lisatalk.rpy", line 20, in script call
+    call expression rez from _call_expression_2
+  File "game/dialogues/lisatalk.rpy", line 638, in script call
+    call Waiting(__ts, 2) from _call_Waiting_6
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 172, in script
+    $ NewSaveName()
+  File "game/core/core.rpy", line 172, in <module>
+    $ NewSaveName()
+  File "game/core/04function.rpy", line 331, in NewSaveName
+    "$@" + str(number_autosave))
+IndexError: tuple index out of range
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/dialogues/events.rpy", line 24, in script call
+    call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 857, in script call
+    call Waiting(10) from _call_Waiting_23
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1160, in script call
+    call Waiting(10) from _call_Waiting_28
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1160, in script call
+    call Waiting(10) from _call_Waiting_28
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 279, in script call
+    call Waiting(10) from _call_Waiting_10
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1246, in script call
+    call Waiting(10) from _call_Waiting_29
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 176, in script call
+    call expression __name_label from _call_expression
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/dialogues/events.rpy", line 155, in script call
+    call Waiting(__ts, 2) from _call_Waiting_20
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1341, in script call
+    call Waiting(10) from _call_Waiting_31
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 176, in script call
+    call expression __name_label from _call_expression
+  File "game/core/core.rpy", line 217, in script call
+    call expression __name_label from _call_expression_1
+  File "game/dialogues/events.rpy", line 1095, in script call
+    call Waiting(10) from _call_Waiting_26
+  File "game/dialogues/lisatalk.rpy", line 20, in script call
+    call expression rez from _call_expression_2
+  File "game/dialogues/lisatalk.rpy", line 638, in script call
+    call Waiting(__ts, 2) from _call_Waiting_6
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 225, in script call
+    call screen room_navigation
+  File "game/core/core.rpy", line 172, in script
+    $ NewSaveName()
+  File "D:\Big Brother by Aleksey90\BB RenPy\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Big Brother by Aleksey90\BB RenPy\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/core/core.rpy", line 172, in <module>
+    $ NewSaveName()
+  File "game/core/04function.rpy", line 331, in NewSaveName
+    "$@" + str(number_autosave))
+IndexError: tuple index out of range
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Большой брат: другая история v0.01.TechDemo
+Tue Dec 10 16:47:28 2019
