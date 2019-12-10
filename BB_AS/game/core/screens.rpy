@@ -73,7 +73,7 @@ screen room_navigation():
                             if len(room.cur_char) > 0:
                                 hbox ypos 73 xalign 0.5 spacing - 30:
                                     for char in room.cur_char:
-                                        if char == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                        if char == "alice" and (tm < "09:00" or tm >= "20:00"):
                                             imagebutton idle characters[char].pref+" icon a" focus_mask True at small_face:
                                                 action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
                                         else:
@@ -83,7 +83,7 @@ screen room_navigation():
                             # если же это текущая локация - вывод над миниатюрой
                             # более крупных значков персонажей. положение зависит от количества
                             if len(current_room.cur_char) == 1:
-                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                     imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon a" focus_mask True:
                                                 action NullAction() at middle_face
                                 else:
@@ -93,45 +93,45 @@ screen room_navigation():
                                 # Если в локации два персонажа, дополнительно проверяется не является ли тек.локация крайней слева
                                 if current_room == current_location[0]:
                                     # и если да, то первая миниатюра отображается не слева, а над локацией
-                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                         imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
                                         imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
-                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                         imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
                                         imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
                                 else:
-                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                         imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
                                         imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
-                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                    if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                         imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
                                         imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
                             elif len(current_room.cur_char) == 3:
-                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                     imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon a":
                                                 focus_mask True action NullAction() at middle_face
                                 else:
                                     imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
-                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                     imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon a":
                                                 focus_mask True action NullAction() at middle_face
                                 else:
                                     imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
-                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "19:00"):
+                                if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
                                     imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                                 else:

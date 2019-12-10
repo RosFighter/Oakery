@@ -122,12 +122,12 @@ define Alice = Character(_("Алиса"))
 
 define Alice_00 = Character(kind=Alice, image="alice_00")
 image side alice_00 = ConditionSwitch(
-                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-00a",
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-00a",
                         "True", "Alice emo-00")
 
 define Alice_01 = Character(kind=Alice, image="alice_01")
 image side alice_01 = ConditionSwitch(
-                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-01a",
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-01a",
                         "True", "Alice emo-01")
 
 define Alice_02 = Character(kind=Alice, image="alice_02")
@@ -144,7 +144,7 @@ image side alice_05 = "Alice emo-05"
 
 define Alice_06 = Character(kind=Alice, image="alice_06")
 image side alice_06 = ConditionSwitch(
-                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-06a",
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-06a",
                         "True", "Alice emo-06")
 
 define Alice_07 = Character(kind=Alice, image="alice_07")
@@ -155,7 +155,7 @@ image side alice_08 = "Alice emo-08"
 
 define Alice_09 = Character(kind=Alice, image="alice_09")
 image side alice_09 = ConditionSwitch(
-                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-09a",
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-09a",
                         "True", "Alice emo-09")
 
 define Alice_10 = Character(kind=Alice, image="alice_10")
@@ -169,12 +169,12 @@ image side alice_12 = "Alice emo-12"
 
 define Alice_13 = Character(kind=Alice, image="alice_13")
 image side alice_13 = ConditionSwitch(
-                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-13a",
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-13a",
                         "True", "Alice emo-13")
 
 define Alice_14 = Character(kind=Alice, image="alice_14")
 image side alice_14 = ConditionSwitch(
-                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-14a",
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-14a",
                         "True", "Alice emo-14")
 
 define Alice_15 = Character(kind=Alice, image="alice_15")
