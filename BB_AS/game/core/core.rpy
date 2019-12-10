@@ -205,7 +205,10 @@ label AfterWaiting:
     if len(current_room.cur_char) > 0:
         $ __CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)[0]
         $ __name_label = __CurShedRec.label
-        $ AvailableActions["talk"].enabled = (len(GetTalksTheme()) > 0 and __CurShedRec.enabletalk)
+        if current_room.id == "alice_room":
+            $ AvailableActions["talk"].enabled = (True and __CurShedRec.enabletalk)
+        else:
+            $ AvailableActions["talk"].enabled = (len(GetTalksTheme()) > 0 and __CurShedRec.enabletalk)
 
     call SetAvailableActions from _call_SetAvailableActions
 

@@ -2,14 +2,16 @@
 label AliceTalkStart:
 
     $ dial = TalkMenuItems()
-    if len(dial) == 0:
-        jump AfterWaiting
 
     $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)[0]
     if __CurShedRec.talklabel is not None:
         call expression __CurShedRec.talklabel from _call_expression_4
 
-    $ dial.append((_("{i}уйти{/i}"), "exit"))
+    if len(dial) > 0:
+        $ dial.append((_("{i}уйти{/i}"), "exit"))
+    else:
+        $ dial.append((_("Да нет, так, ничего..."), "exit"))
+
 
     Alice_00 "Ну, Макс, чего надо?" nointeract
 

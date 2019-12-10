@@ -553,3 +553,11 @@ translate english talkblog1_findout_1317b916:
     # Alice_01 "Ну, давай. Сомневаюсь, конечно, что это не пустая болтовня, но вдруг... Удиви меня!" nointeract
     Alice_01 "Well, I guess. I'm not sure you'll actually be useful, but why not... Surprise me!" nointeract
 
+# TODO: Translation updated at 2019-12-10 11:43
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:13
+    old "Да нет, так, ничего..."
+    new "No. Nothing..."
+
