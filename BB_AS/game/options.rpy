@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.01.TechDemo"
+define config.version = "v0.01.TechDemo"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## постройке дистрибутивов. Оно должно содержать текст формата ASCII и не должно
 ## содержать пробелы, двоеточия и точки с запятой.
 
-define build.name = "BB_AS"
+define build.name = "BigBrother_AnotherStory"
 
 
 ## Звуки и музыка ##############################################################
