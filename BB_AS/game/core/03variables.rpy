@@ -197,7 +197,7 @@ default items = {
 
 default current_ver = config.version  # устанавливаем
 default day = 1
-default tm = "9:00"
+default tm = "09:00"
 
 default next_learn = "0 00:00"
 

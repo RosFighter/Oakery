@@ -509,3 +509,47 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:239
     old "Обещаю, что-нибудь придумаю"
     new "I'll come up with something, I promise!"
+# TODO: Translation updated at 2019-12-10 10:59
+
+# game/dialogues/alicetalk.rpy:73
+translate english talkblog1_d1686a92:
+
+    # Alice_01 "Что, даже не начнёшь подкалывать? И что ты хотел узнать?" nointeract
+    Alice_01 "Seriously, no gloating? Anyway, what do want to know?" nointeract
+
+# game/dialogues/alicetalk.rpy:79
+translate english talkblog1_e315e67b:
+
+    # Alice_01 "Да у других таких же блогеров подсмотрела, конечно. Все так делают! Ну и сама в интернете разное читаю, изучаю..." nointeract
+    Alice_01 "From another bloggers, of course. Everyone does that! And sometimes I try to find something new on the web..." nointeract
+
+# game/dialogues/alicetalk.rpy:157
+translate english talkblog1_help_9598919f:
+
+    # Alice_01 "Ты у нас внезапно стал миллионером? Или просто деньги появились? Самый простой способ - это купить недостающее. Ну, или найти то, что пропало" nointeract
+    Alice_01 "How can you help me, sniff out my missing stuff? I guess I'll have to buy everything I've lost." nointeract
+
+# game/dialogues/alicetalk.rpy:182
+translate english talkblog1_help_b7bbce16:
+
+    # Alice_01 "Много разных идей? Например?" nointeract
+    Alice_01 "For example?" nointeract
+
+# game/dialogues/alicetalk.rpy:219
+translate english talkblog1_together_770663dd:
+
+    # Alice_01 "Ну, если придумаешь. Если. Да и смотря что... Сильно удаляться от этой темы не хочется. Но попробовать что-то новое можно... В общем, когда что-то придумаешь, тогда и поговорим..."
+    Alice_01 "If you'll come up with something good, then yes, I'll think about it. I don't want to stray away from beauty blog format too far, but I'm open to new ideas. Talk to me when you have something to say..."
+
+# game/dialogues/alicetalk.rpy:222
+translate english talkblog1_together_d170a559:
+
+    # Alice_01 "Семейный бизнес? На моём блоге? Может ещё и сам вести будешь?" nointeract
+    Alice_01 "Family business out of my blog? Maybe you'll host it too?" nointeract
+
+# game/dialogues/alicetalk.rpy:239
+translate english talkblog1_findout_1317b916:
+
+    # Alice_01 "Ну, давай. Сомневаюсь, конечно, что это не пустая болтовня, но вдруг... Удиви меня!" nointeract
+    Alice_01 "Well, I guess. I'm not sure you'll actually be useful, but why not... Surprise me!" nointeract
+
