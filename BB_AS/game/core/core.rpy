@@ -241,7 +241,7 @@ label SetAvailableActions: # включает кнопки действий
 
         if max_profile.energy > 10:
             if GetScheduleRecord(schedule_lisa, day, tm)[0].dress != "dressed":
-                $ AvailableActions["notebook"].active = True
+                $ AvailableActions["notebook"].active = False # True
 
     if current_room == house[0] or (current_room == house[5] and len(current_room.cur_char) == 0):
         python:

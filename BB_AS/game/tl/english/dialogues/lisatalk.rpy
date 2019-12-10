@@ -106,7 +106,7 @@ translate english MorningWood_a48912dd:
 translate english MorningWood_21eb77e9:
 
     # Ann_08 "Ты сама видела, чтобы Макс чем-то {i}таким{/i} занимался при тебе?"
-    Ann_08 "did you see max doing Something {i}like that{/i} in front of you?"
+    Ann_08 "Did you see max doing Something {i}like that{/i} in front of you?"
 
 # game/dialogues/lisatalk.rpy:78
 translate english MorningWood_089c8445:
@@ -1477,4 +1477,3 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:640
     old "Хорошо, пойду займусь"
     new "Okay"
-

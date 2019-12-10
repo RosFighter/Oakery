@@ -730,7 +730,7 @@ label lisa_bath:
             $ HintRelMood("lisa", __rel, __mood)
             $ characters["lisa"].relmax += __rel
             $ characters["lisa"].mood   += __mood
-            $ current_room, prev_room = prev_room, current_room
+            # $ current_room, prev_room = prev_room, current_room
             call Waiting(10) from _call_Waiting_21
     return
 
@@ -935,7 +935,7 @@ label ann_dressed_work:
                 Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
             "{i}уйти{/i}":
                 pass
-        $ current_room, prev_room = prev_room, current_room
+        # $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_24
     return
 
@@ -982,7 +982,7 @@ label ann_dressed_shop:
             #     Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но если заметит меня в зеркало, мне конец."
             "{i}уйти{/i}":
                 pass
-        $ current_room, prev_room = prev_room, current_room
+        # $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_25
     return
 
@@ -1028,7 +1028,12 @@ label ann_swim:
 
 label ann_sun:
     scene BG char Ann sun
-    show Ann sun 01
+    if int(tm[:2])%3 == 0:
+        $ renpy.show("Ann sun "+random3_1)
+    elif int(tm[:2])%3 == 1:
+        $ renpy.show("Ann sun "+random3_2)
+    else:
+        $ renpy.show("Ann sun "+random3_3)
     return
 
 
@@ -1086,7 +1091,7 @@ label ann_bath:
                 pass
         label .end:
             $ config.menu_include_disabled = False
-            $ current_room, prev_room = prev_room, current_room
+            # $ current_room, prev_room = prev_room, current_room
             call Waiting(10) from _call_Waiting_26
     return
 
@@ -1123,7 +1128,7 @@ label alice_bath:
                         pass
             "{i}уйти{/i}":
                 pass
-        $ current_room, prev_room = prev_room, current_room
+        # $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_27
     return
 
@@ -1283,7 +1288,7 @@ label alice_dressed_shop:
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
                 pass
-        $ current_room, prev_room = prev_room, current_room
+        # $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_30
     return
 
@@ -1332,7 +1337,7 @@ label alice_dressed_somewhere:
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
                 pass
-        $ current_room, prev_room = prev_room, current_room
+        # $ current_room, prev_room = prev_room, current_room
         call Waiting(10) from _call_Waiting_31
     return
 

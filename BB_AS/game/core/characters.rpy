@@ -143,7 +143,9 @@ define Alice_05 = Character(kind=Alice, image="alice_05")
 image side alice_05 = "Alice emo-05"
 
 define Alice_06 = Character(kind=Alice, image="alice_06")
-image side alice_06 = "Alice emo-06"
+image side alice_06 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-06a",
+                        "True", "Alice emo-06")
 
 define Alice_07 = Character(kind=Alice, image="alice_07")
 image side alice_07 = "Alice emo-07"
@@ -152,7 +154,9 @@ define Alice_08 = Character(kind=Alice, image="alice_08")
 image side alice_08 = "Alice emo-08"
 
 define Alice_09 = Character(kind=Alice, image="alice_09")
-image side alice_09 = "Alice emo-09"
+image side alice_09 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"19:00\"", "Alice emo-09a",
+                        "True", "Alice emo-09")
 
 define Alice_10 = Character(kind=Alice, image="alice_10")
 image side alice_10 = "Alice emo-10"
