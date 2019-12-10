@@ -379,7 +379,7 @@ screen main_menu():
             text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 180 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
         frame xalign 0.5 xsize 1235 background None:
             text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
-            $ __short_ver = config.version[0:4]
+            $ __short_ver = config.version[0:5]
             text "[__short_ver]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
     ## Эта пустая рамка затеняет главное меню.
