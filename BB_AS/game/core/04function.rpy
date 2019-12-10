@@ -325,7 +325,7 @@ init python:
 
     def NewSaveName():
         global save_name
-        save_name = ("" + "$@" + str(weekdays[day+2][0]) +
+        save_name = ("" + "$@" + str(weekdays[(day+2) % 7][0]) +
                     "$@" + str(tm) + "$@" + str(day) +
                     "$@" + str(number_quicksave) +
                     "$@" + str(number_autosave))

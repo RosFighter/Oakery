@@ -165,8 +165,8 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
             $ max_profile.energy = 100
     else: # в противном случае - расходуется
         $ max_profile.energy -= delt * 5 * ratio / 60.0
-        if max_profile.energy < 5:
-            jump Wearied
+        # if max_profile.energy < 5:
+        #     jump Wearied
 
     # обновим extra-info для сохранений
     $ NewSaveName()
