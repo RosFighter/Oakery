@@ -4,27 +4,17 @@ screen choice_lang():
     tag menu
     modal True
     style_prefix "lang"
-    frame xysize (300, 150):
-        align (0.5, 0.5)
-        vbox:
-            align (0.5, 0.5)
-            button background None action [Language("english"), Return()] xsize 180:
-                xpadding 0 ypadding -3 xmargin 0 ymargin 5
-                textbutton "English" action [Language("english"), Return()]
-                foreground "interface marker"
-            button background None action [Language(None), Return()] xsize 180:
-                xpadding 0 ypadding -3 xmargin 0 ymargin 5
-                textbutton "Русский" action [Language(None), Return()]
-                foreground "interface marker"
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle "interface/ENG.png" action [Language("english"), Return()] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle "interface/RUS.png" action [Language(None), Return()] focus_mask True at lang
 
-style lang_button_text is default:
-    font "trebucbd.ttf"
-    xpos 30
-    yalign .0
-    size 36
-    idle_color gui.choice_button_text_idle_color
-    hover_color gui.text_color
-    selected_color gui.text_color
+init:
+    transform lang:
+        on idle:
+            size (230, 230) alpha 0.8
+        on selected_idle:
+            size (230, 230) alpha 1.0
+        on hover, selected_hover:
+            size (250, 250) alpha 1.0
 
 ################################################################################
 screen room_navigation():

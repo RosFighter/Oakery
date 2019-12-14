@@ -561,7 +561,7 @@ label get_save_name:
     $ NewSaveName()
     if persistent._file_page != "quick":
         $ save_name = renpy.call_screen("modal_input", prompt=_("Введите описание файла сохранения:"), default="(None)", length=50)
-        $ save_name = save_name + "$@" + str(weekdays[day+2][0]) + "$@" + str(tm) + "$@" + str(day) + "$@" + str(number_quicksave) + "$@" + str(number_autosave)
+        $ save_name = save_name + "$@" + str(weekdays[(day+2) % 7][0]) + "$@" + str(tm) + "$@" + str(day) + "$@" + str(number_quicksave) + "$@" + str(number_autosave)
     $ renpy.retain_after_load()
     return
 
@@ -604,9 +604,9 @@ screen file_slots(title):
 
         fixed:
             if persistent.grid_vbox == "grid":
-                imagebutton pos (1200, 0) idle "gui/button/vbox_idle.png" hover "gui/button/vbox_hover.png" action SetVariable("persistent.grid_vbox", "vbox")
+                imagebutton pos (1200, 0) idle "gui/button/vbox_idle.webp" hover "gui/button/vbox_hover.webp" action SetVariable("persistent.grid_vbox", "vbox")
             else:
-                imagebutton pos (1200, 0) idle "gui/button/grid_idle.png" hover "gui/button/grid_hover.png" action SetVariable("persistent.grid_vbox", "grid")
+                imagebutton pos (1200, 0) idle "gui/button/grid_idle.webp" hover "gui/button/grid_hover.webp" action SetVariable("persistent.grid_vbox", "grid")
 
 
             ## Это гарантирует, что ввод будет принимать enter перед остальными
@@ -691,9 +691,9 @@ screen file_slots(title):
                                     action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
                                 else:
                                     action FileAction(slot)
-                                idle_background "gui/button/idle_save_button.png"
-                                insensitive_background "gui/button/insensitive_save_button.png"
-                                hover_background "gui/button/hover_save_button.png"
+                                idle_background "gui/button/idle_save_button.webp"
+                                insensitive_background "gui/button/insensitive_save_button.webp"
+                                hover_background "gui/button/hover_save_button.webp"
 
                                 fixed:
                                     text s_description:

@@ -8,7 +8,7 @@ label splashscreen:
     return
 
 label language_chooser:
-    scene image "gui/game_menu.png"
+    scene BG villa-door
 
     call screen choice_lang
 

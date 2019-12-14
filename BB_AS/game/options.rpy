@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "v0.01.TechDemo"
+define config.version = "v0.02.0.001"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -144,7 +144,7 @@ default preferences.afm_time = 15
 ## Этот параметр обычно не должен изменяться, а если и изменился, должен быть
 ## текстовой строчкой, а не выражением.
 
-define config.save_directory = "BB_AS_techdemo"
+define config.save_directory = "BB_AS"
 
 ## Настройка автосохранений ####################################################
 ##
