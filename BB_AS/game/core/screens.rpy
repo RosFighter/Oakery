@@ -9,12 +9,10 @@ screen choice_lang():
 
 init:
     transform lang:
-        on idle:
-            size (230, 230) alpha 0.8
-        on selected_idle:
-            size (230, 230) alpha 1.0
+        on idle, selected_idle:
+            size (160, 160) alpha 0.85
         on hover, selected_hover:
-            size (250, 250) alpha 1.0
+            size (180, 180) alpha 1.0
 
 ################################################################################
 screen room_navigation():
