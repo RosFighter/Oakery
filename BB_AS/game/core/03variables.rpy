@@ -98,7 +98,7 @@ default schedule_alice = [
      Schedule((6,), "10:0", "10:59", _("одевается в магазин"), "house", 1, "alice_dressed_shop", dress="dressed", enabletalk=False),
      Schedule((0,), "10:0", "10:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual"),
      Schedule((0,), "10:0", "10:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed", dress="casual"),
-     Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual"),
+     Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual", talklabel="alice_dishes_closer"),
      Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed", dress="casual"),
      Schedule((0,), "11:0", "11:59", _("куда-то одевается"), "house", 1, "alice_dressed_somewhere", dress="dressed", enabletalk=False),
      Schedule((1, 2, 3, 4, 5), "12:0", "12:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
@@ -147,6 +147,17 @@ default AvailableActions = {
     "talk"        : ActionsButton(_("ПОГОВОРИТЬ"), "interface talk", "StartDialog"),
     "dishes"      : ActionsButton(_("МЫТЬ\nПОСУДУ"), "interface dishes", "DishesWashed"),
 }
+
+## ссылки-закладки для рабочего стола ноутбука
+## список кортежей вида: подпись, картинка, имя блока обработки
+default LaptopBookmarks = [
+    (_("ИНТЕРНЕТ-МАГАЗИН"), "shop", "shop_start"),
+    (_("ОНЛАЙН-КУРСЫ"), "courses", "courses_start"),
+    (_("ИНТЕРНЕТ-МАГАЗИН"), "shop", "shop_start"),
+    (_("ОНЛАЙН-КУРСЫ"), "courses", "courses_start"),
+    (_("ИНТЕРНЕТ-МАГАЗИН"), "shop", "shop_start"),
+]
+
 # список ключей словаря кнопок. создан заранее для сохраниения нужного порядка
 default ListButton = [
      "momovie",

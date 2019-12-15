@@ -328,6 +328,7 @@ label breakfast_first:
 # диалоги и события за завтраком
 label breakfast:
     scene BG breakfast 00 # общий фон
+    $ renpy.block_rollback()
 
     $ renpy.show("Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+random_suf)
     $ renpy.show("Alice breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"])

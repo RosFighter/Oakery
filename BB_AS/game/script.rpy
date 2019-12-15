@@ -17,15 +17,13 @@ label language_chooser:
 
 label start:
 
-    call intro from _call_intro
+    jump intro
 
-    jump breakfast
-
-    return
 
 label intro:
     $ NewSaveName()
     scene BG intro max
+    $ renpy.block_rollback()
     menu:
         Max_00 "Меня зовут Макс. Я обычный парень из обычной семьи. Ну как обычной... нормальной. Хотя, кого я обманываю. Нормального в моей семье мало. Но обо всём по порядку."
         "{i}далее{/i}":
@@ -76,12 +74,11 @@ label intro:
             menu:
                 Max_04 "Мама устроилась на новую работу. Лиза пошла в местную школу. Алиса так и сидит в своём ноуте, а я... На этом мой рассказ заканчивается и начинается что-то новое и интересное!"
                 "{i}Начать игру{/i}":
-                    return
+                    jump breakfast
                 "{i}Повторить историю{/i}":
                     jump intro
         "{i}пропустить{/i}":
-            return
-
+            jump breakfast
 
 label about_poss:
     $ flags["about_poss"] = False

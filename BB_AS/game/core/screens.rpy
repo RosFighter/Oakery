@@ -4,8 +4,8 @@ screen choice_lang():
     tag menu
     modal True
     style_prefix "lang"
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle "interface/ENG.png" action [Language("english"), Return()] focus_mask True at lang
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle "interface/RUS.png" action [Language(None), Return()] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle "interface/ENG.webp" action [Language("english"), Return()] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle "interface/RUS.webp" action [Language(None), Return()] focus_mask True at lang
 
 init:
     transform lang:
@@ -13,6 +13,36 @@ init:
             size (160, 160) alpha 0.85
         on hover, selected_hover:
             size (180, 180) alpha 1.0
+################################################################################
+
+screen LaptopScreen():
+
+    tag menu
+    modal True
+    imagebutton pos (1655, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+
+    # frame area(221, 93, 1475, 829) background None:
+    imagebutton pos (438, 170) idle "interface laptop search" action NullAction() focus_mask True
+
+    vpgrid cols 3:
+        pos (361, 300)
+        mousewheel "change"
+        draggable True
+        if len(LaptopBookmarks) > 6:
+            scrollbars "vertical"
+        else:
+            scrollbars None
+
+        xspacing 50
+        yspacing 40
+
+        for i in range(len(LaptopBookmarks)):
+            frame xysize(365, 270) background None:
+                vbox:
+                    imagebutton idle "interface laptop "+LaptopBookmarks[i][1] action Jump(LaptopBookmarks[i][2])
+                    text LaptopBookmarks[i][0] xalign 0.5 color "#000000"
+
+
 
 ################################################################################
 screen room_navigation():

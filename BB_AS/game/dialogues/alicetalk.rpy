@@ -47,7 +47,7 @@ label wash_dishes_alice:
                         $ HintRelMood("alice", 0, 6)
                     $ dishes_washed = True
                     $ __ts = max((60 - int(tm[-2:])), 30)
-                    hide Alice
+                    scene BG crockery-morning-00
                     $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
                     menu:
                         Max_11 "И почему здесь нет посудомоечной машины..."

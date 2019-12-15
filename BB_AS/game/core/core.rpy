@@ -244,7 +244,7 @@ label SetAvailableActions: # включает кнопки действий
 
         if max_profile.energy > 10:
             if GetScheduleRecord(schedule_lisa, day, tm)[0].dress != "dressed":
-                $ AvailableActions["notebook"].active = False # True
+                $ AvailableActions["notebook"].active = True
 
     if current_room == house[0] or (current_room == house[5] and len(current_room.cur_char) == 0):
         python:
@@ -269,9 +269,9 @@ label SetAvailableActions: # включает кнопки действий
         $ AvailableActions["searchciga"].active = True
 
     if current_room == house[3]:  # ванная комната
-        if "06:00" <= tm <= "18:00":
-            $ AvailableActions["shower"].active = False #True - временно
-        if "20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00":
+        if "06:00" <= tm <= "18:00" and max_profile.cleanness < 80:
+            $ AvailableActions["shower"].active = True
+        if ("20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00") and max_profile.cleanness < 80:
             $ AvailableActions["bath"].active = False #True - временно
         if "08:00" <= tm <= "09:00" and day < 19:
             $ AvailableActions["throwspider3"].active = True
@@ -293,7 +293,7 @@ label after_load:
     if current_ver == "v0.01.TechDemo":
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
-        call screen main_menu
+        $ renpy.full_restart()
     elif current_ver != "v0.02.0.001":
         $ current_ver = "v0.02.0.001" # ставим номер версии
         # и выполняем необходимые действия с переменными или фиксы

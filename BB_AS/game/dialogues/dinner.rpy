@@ -122,6 +122,7 @@ label dinner_first:
 
 # диалоги и события за ужином
 label dinner:
+    $ renpy.block_rollback()
     scene BG dinner 00 # общий фон
     $ renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["ann"])
     $ renpy.show("Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"])

@@ -131,7 +131,9 @@ image side alice_01 = ConditionSwitch(
                         "True", "Alice emo-01")
 
 define Alice_02 = Character(kind=Alice, image="alice_02")
-image side alice_02 = "Alice emo-02"
+image side alice_02 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-02a",
+                        "True", "Alice emo-02")
 
 define Alice_03 = Character(kind=Alice, image="alice_03")
 image side alice_03 = "Alice emo-03"
@@ -140,7 +142,9 @@ define Alice_04 = Character(kind=Alice, image="alice_04")
 image side alice_04 = "Alice emo-04"
 
 define Alice_05 = Character(kind=Alice, image="alice_05")
-image side alice_05 = "Alice emo-05"
+image side alice_05 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-05a",
+                        "True", "Alice emo-05")
 
 define Alice_06 = Character(kind=Alice, image="alice_06")
 image side alice_06 = ConditionSwitch(
@@ -148,10 +152,14 @@ image side alice_06 = ConditionSwitch(
                         "True", "Alice emo-06")
 
 define Alice_07 = Character(kind=Alice, image="alice_07")
-image side alice_07 = "Alice emo-07"
+image side alice_07 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-07a",
+                        "True", "Alice emo-07")
 
 define Alice_08 = Character(kind=Alice, image="alice_08")
-image side alice_08 = "Alice emo-08"
+image side alice_08 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-08a",
+                        "True", "Alice emo-08")
 
 define Alice_09 = Character(kind=Alice, image="alice_09")
 image side alice_09 = ConditionSwitch(
@@ -159,13 +167,19 @@ image side alice_09 = ConditionSwitch(
                         "True", "Alice emo-09")
 
 define Alice_10 = Character(kind=Alice, image="alice_10")
-image side alice_10 = "Alice emo-10"
+image side alice_10 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-10a",
+                        "True", "Alice emo-10")
 
 define Alice_11 = Character(kind=Alice, image="alice_11")
-image side alice_11 = "Alice emo-11"
+image side alice_11 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-11a",
+                        "True", "Alice emo-11")
 
 define Alice_12 = Character(kind=Alice, image="alice_12")
-image side alice_12 = "Alice emo-12"
+image side alice_12 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-12a",
+                        "True", "Alice emo-12")
 
 define Alice_13 = Character(kind=Alice, image="alice_13")
 image side alice_13 = ConditionSwitch(
@@ -178,16 +192,24 @@ image side alice_14 = ConditionSwitch(
                         "True", "Alice emo-14")
 
 define Alice_15 = Character(kind=Alice, image="alice_15")
-image side alice_15 = "Alice emo-15"
+image side alice_15 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-15a",
+                        "True", "Alice emo-15")
 
 define Alice_16 = Character(kind=Alice, image="alice_16")
-image side alice_16 = "Alice emo-16"
+image side alice_16 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-16a",
+                        "True", "Alice emo-16")
 
 define Alice_17 = Character(kind=Alice, image="alice_17")
-image side alice_17 = "Alice emo-17"
+image side alice_17 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-17a",
+                        "True", "Alice emo-17")
 
 define Alice_18 = Character(kind=Alice, image="alice_18")
-image side alice_18 = "Alice emo-18"
+image side alice_18 = ConditionSwitch(
+                        "tm < \"09:00\" or tm >= \"20:00\"", "Alice emo-18a",
+                        "True", "Alice emo-18")
 
 
 ## Анна, мать Макса

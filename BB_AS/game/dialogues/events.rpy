@@ -1,6 +1,7 @@
 
 
 label StartDialog:
+    $ renpy.block_rollback()
     if len(current_room.cur_char) == 1:
         if current_room.cur_char[0] == "lisa":
             jump LisaTalkStart
@@ -15,6 +16,7 @@ label StartDialog:
 ## события Макса
 
 label Sleep:
+    $ renpy.block_rollback()
     menu:
         Max_19 "{i}Как же я хочу спать...{/i}"
         "{i}спать до утра{/i}":
@@ -26,6 +28,7 @@ label Sleep:
 
 
 label Wearied:
+    $ renpy.block_rollback()
     # прождали все доступное время - спим до восьми
     menu:
         Max_19 "{i}Я без сил и хочу спать...{/i}"
@@ -39,6 +42,7 @@ label Wearied:
 
 
 label Nap:
+    $ renpy.block_rollback()
     if max_profile.energy > 40.0:
         $ txt = _("{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}")
     else:
@@ -62,6 +66,7 @@ label Nap:
 
 
 label Alarm:
+    $ renpy.block_rollback()
     menu:
         Max_00 "{i}В каком часу я должен встать?{/i}"
         "{i}в 5 утра{/i}":
@@ -80,7 +85,23 @@ label Alarm:
     return
 
 
+label Shower:
+    $ renpy.block_rollback()
+    scene BG shower-closer
+    $ renpy.show("Max shower "+renpy.random.choice(["01", "02", "03"]))
+    show FG shower-water
+
+    menu:
+        Max_19 "Хорошо быть чистым..."
+        "{i}закончить{/i}":
+            $ max_profile.cleanness = 100
+
+    call Waiting(30)
+    return
+
+
 label Box:
+    $ renpy.block_rollback()
     $ max_profile.energy -= 5.0
     scene Max unbox 01
     Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
@@ -103,13 +124,37 @@ label Box:
     if CurPoss == "":
         $ CurPoss = "cams"
     call Waiting(30) from _call_Waiting_2
+    return
 
 
 label Notebook:
+    $ renpy.block_rollback()
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-00
+        $ renpy.show("Max laptop-day 01"+dress_suf["max"])
+    else:
+        scene BG char Max laptop-night-00
+        $ renpy.show("Max laptop-night 01"+dress_suf["max"])
 
+
+    Max_00 "Итак, чем интересным я займусь?"
+
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+
+    show video1_movie:
+        xpos 221
+        ypos 93
+
+    call screen LaptopScreen()
     return
 
+
+
 label SearchCam:
+    $ renpy.block_rollback()
     if current_room == house[4]:
         $ FoundCamera = True
         Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
@@ -128,6 +173,7 @@ label SearchCam:
 
 
 label DishesWashed:
+    $ renpy.block_rollback()
     if tm < "16:00":
         scene BG crockery-morning-00
         $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
@@ -186,6 +232,7 @@ label lisa_shower:
         Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать еще раз."
         jump .end_peeping2
     else:
+        $ renpy.block_rollback()
         menu:
             Max_09 "Кажется, Лиза что-то делает в ванной..."
             "{i}постучаться{/i}":
@@ -1296,6 +1343,12 @@ label alice_dressed_shop:
 label alice_dishes:
     scene BG crockery-morning-00
     $ renpy.show("Alice crockery-morning 01"+dress_suf["alice"])
+    return
+
+
+label alice_dishes_closer:
+    scene BG crockery-sink-01
+    $ renpy.show("Alice crockery-closer "+random3_1+dress_suf["alice"])
     return
 
 
