@@ -5,9 +5,9 @@ label AnnTalkStart:
     if len(dial) == 0:
         jump AfterWaiting
 
-    $ __CurShedRec = GetScheduleRecord(schedule_ann, day, tm)[0]
+    $ __CurShedRec = GetScheduleRecord(schedule_ann, day, tm)
     if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel from _call_expression_6
+        call expression __CurShedRec.talklabel
 
     $ dial.append((_("{i}уйти{/i}"), "exit"))
 
@@ -17,7 +17,7 @@ label AnnTalkStart:
 
     if rez != "exit":
         if renpy.has_label(rez): # если такая метка сушествует, запускаем ее
-            call expression rez from _call_expression_7
+            call expression rez
         jump AnnTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания

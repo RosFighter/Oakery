@@ -1,29 +1,29 @@
 
 
-label Waiting(delta, ratio=1, sleep=False, alarm=""):
+label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
     # обработчик ожидания, запускает события по времени
     $ renpy.block_rollback()
 
     $ __prevday = day
     $ __prevtime = tm
 
-    if alarm != "":
-        $ d2 = TimeDifference(__prevtime, alarm)
-        if delta == 0 or d2 < delta:
-            $ delta = d2
+    if alarm_time != "":
+        $ d2 = TimeDifference(__prevtime, alarm_time)
+        if spent_time == 0 or d2 < spent_time:
+            $ spent_time = d2
 
-    $ Wait(delta)
+    $ Wait(spent_time)
 
     $ __name_label = ""
 
     # здесь располагаем ссылку на функцию поиска стартующих по времени событий
-    $ cut_id = GetCutEvents(__prevtime, tm, sleep)
-    if cut_id == "" and not "00:00" <= __prevtime <= "06:00":
-        $ cut_id = GetCutEvents(__prevtime, tm, False) # попробуем найти событие для неспящего
-
-    if sleep and tm < "08:00" and cut_id == "":
-        # проверим, нет ли событий стартующих во время ночного сна, но чуть позднее
-        $ cut_id = GetCutEvents(__prevtime, "08:00", True)
+    $ cut_id = GetCutEvents(__prevtime, tm, status_sleep)
+    # if cut_id == "" and not "00:00" <= __prevtime <= "06:00":
+    #     $ cut_id = GetCutEvents(__prevtime, tm, False) # попробуем найти событие для неспящего
+    #
+    # if sleep and tm < "08:00" and cut_id == "":
+    #     # проверим, нет ли событий стартующих во время ночного сна, но чуть позднее
+    #     $ cut_id = GetCutEvents(__prevtime, "08:00", True)
 
     # и устанавливаем время на начало кат-события, если оно есть
     if cut_id != "":
@@ -150,7 +150,7 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
 
     $ delt = TimeDifference(__prevtime, tm) # вычислим действительно прошедшее время
 
-    if sleep:
+    if status_sleep:
         # если это сон, тогда энергия восстанавливается
 
         if delt >= 360:
@@ -164,7 +164,7 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
         if max_profile.energy > 100:
             $ max_profile.energy = 100
     else: # в противном случае - расходуется
-        $ max_profile.energy -= delt * 5 * ratio / 60.0
+        $ max_profile.energy -= delt * 5 * cur_ratio / 60.0
         # if max_profile.energy < 5:
         #     jump Wearied
 
@@ -173,13 +173,18 @@ label Waiting(delta, ratio=1, sleep=False, alarm=""):
 
     if __name_label != "" and renpy.has_label(__name_label):
         # если есть кат-событие - запускаем его
-        call expression __name_label from _call_expression
-        # иначе запускаем блок "после ожидания"
+        jump expression __name_label
 
+    # иначе запускаем блок "после ожидания"
     jump AfterWaiting
 
 
 label AfterWaiting:
+
+    $ spent_time = 0
+    $ cur_ratio = 1
+    $ status_sleep = False
+    $ alarm_time = ""
 
     $ Distribution() # распределяем персонажей по комнатам и устанавливаем фоны для текущей локации
 
@@ -188,10 +193,15 @@ label AfterWaiting:
         if tm > "20:00":
             $ dishes_washed = True
         elif (day+2) % 7 != 6:
+            $ __name_label = ""
             if (day+2) % 7 == 0:
-                 $ __name_label = GetScheduleRecord(schedule_alice, day, "10:00")[0].label
+                $ __CurShedRec = GetScheduleRecord(schedule_alice, day, "10:00")
+                if __CurShedRec is not None:
+                    $ __name_label = __CurShedRec.label
             else:
-                 $ __name_label = GetScheduleRecord(schedule_alice, day, "11:00")[0].label
+                $ __CurShedRec = GetScheduleRecord(schedule_alice, day, "11:00")
+                if __CurShedRec is not None:
+                    $ __name_label = __CurShedRec.label
 
             if __name_label == "alice_dishes":
                 if ((day+2) % 7 == 0 and tm >= "11:00") or tm >= "12:00":
@@ -203,12 +213,9 @@ label AfterWaiting:
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
     $ __name_label = ""
     if len(current_room.cur_char) > 0:
-        $ __CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)[0]
-        $ __name_label = __CurShedRec.label
-        if current_room.id == "alice_room":
-            $ AvailableActions["talk"].enabled = (True and __CurShedRec.enabletalk)
-        else:
-            $ AvailableActions["talk"].enabled = (len(GetTalksTheme()) > 0 and __CurShedRec.enabletalk)
+        $ __CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)
+        if __CurShedRec is not None:
+            $ __name_label = __CurShedRec.label
 
     call SetAvailableActions from _call_SetAvailableActions
 
@@ -233,7 +240,10 @@ label SetAvailableActions: # включает кнопки действий
             AvailableActions[key].active = False
 
     if current_room == house[0]:  # комната Макса и Лизы
-        if GetScheduleRecord(schedule_lisa, day, tm)[0].dress != "dressed":
+        $ __CurShedRec = GetScheduleRecord(schedule_lisa, day, tm)
+
+        if (__CurShedRec is not None and __CurShedRec.dress != "dressed"
+            and "08:00" <= tm < "21:30"):
             $ AvailableActions["unbox"].active = True
 
         if "00:00" <= tm <= "04:00":
@@ -243,7 +253,7 @@ label SetAvailableActions: # включает кнопки действий
             $ AvailableActions["nap"].active = True
 
         if max_profile.energy > 10:
-            if GetScheduleRecord(schedule_lisa, day, tm)[0].dress != "dressed":
+            if __CurShedRec is not None and __CurShedRec.dress != "dressed":
                 $ AvailableActions["notebook"].active = True
 
     if current_room == house[0] or (current_room == house[5] and len(current_room.cur_char) == 0):
@@ -277,13 +287,21 @@ label SetAvailableActions: # включает кнопки действий
             $ AvailableActions["throwspider3"].active = True
 
     if current_room == house[4]:  # гостиная
-        if items["ann_movie"].have and GetScheduleRecord(schedule_ann, day, tm)[0].label == "ann_tv":
+        $ __CurShedRec = GetScheduleRecord(schedule_ann, day, tm)
+        if items["ann_movie"].have and __CurShedRec is not None and __CurShedRec.label == "ann_tv":
             $ AvailableActions["momovie"].active = True
         if not dishes_washed and len(current_room.cur_char) == 0:
             $ AvailableActions["dishes"].active = True
 
     if len(current_room.cur_char) > 0:  # в текущей локации кто-то есть, включаем диалог
         $ AvailableActions["talk"].active = True
+
+    if len(current_room.cur_char) == 1:
+        $ __CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)
+        $ AvailableActions["talk"].enabled = (__CurShedRec.enabletalk and
+                                              (len(GetTalksTheme()) > 0 or
+                                               __CurShedRec.talklabel is not None)
+                                             )
 
 
 label after_load:

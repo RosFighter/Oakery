@@ -5,9 +5,9 @@ label LisaTalkStart:
     if len(dial) == 0:
         jump AfterWaiting
 
-    $ __CurShedRec = GetScheduleRecord(schedule_lisa, day, tm)[0]
+    $ __CurShedRec = GetScheduleRecord(schedule_lisa, day, tm)
     if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel from _call_expression_3
+        call expression __CurShedRec.talklabel
 
     $ dial.append((_("{i}уйти{/i}"), "exit"))
 
@@ -17,7 +17,7 @@ label LisaTalkStart:
 
     if rez != "exit":
         if renpy.has_label(rez): # если такая метка сушествует, запускаем ее
-            call expression rez from _call_expression_2
+            call expression rez
         jump LisaTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания
@@ -88,7 +88,8 @@ label MorningWood:
     $ flags["morning_erect"] = 1
     $ possibility["seduction"].stage_number = 0
     $ possibility["seduction"].stages[0].used = True
-    call Waiting(30) from _call_Waiting_15
+    $ spent_time = 30
+    jump Waiting
 
 
 label AfterSchoolFD:
@@ -100,7 +101,8 @@ label AfterSchoolFD:
     Lisa_02 "Да ничего так. Но потом поболтаем. Сейчас переоденусь и прыгну в бассейн. Только об этом и мечтала целый день!"
     Max_04 "Хорошо, здесь и поговорим"
 
-    call Waiting(10) from _call_Waiting_16
+    $ spent_time = 10
+    jump Waiting
 
 
 label about_school:
@@ -451,7 +453,8 @@ label about_school:
         jump .end
 
     label .end:
-        call Waiting(20) from _call_Waiting_12
+        $ spent_time = 20
+        jump Waiting
 
     return
 
@@ -536,7 +539,8 @@ label talk_swim:
             "Договорились!":
                 pass
     label .end:
-        call Waiting(20) from _call_Waiting_13
+        $ spent_time = 30
+        jump Waiting
     return
 
 label about_boy:
@@ -607,7 +611,8 @@ label about_boy:
             jump .end
 
     label .end:
-        call Waiting(10) from _call_Waiting_14
+        $ spent_time = 30
+        jump Waiting
 
     return
 
@@ -620,8 +625,7 @@ label wash_dishes_lisa:
             menu:
                 Lisa_01 "А вот знаешь... хочу! Да, спасибо, Макс!"
                 "{i}мыть посуду{/i}":
-                    # scene BG crockery-evening-00
-                    hide Lisa
+                    scene BG crockery-morning-00
                     $ renpy.show("Max crockery-evening 01"+dress_suf["max"])
                     $ characters["lisa"].mood += 6
                     if characters["lisa"].relmax < 400:
@@ -630,16 +634,18 @@ label wash_dishes_lisa:
                     else:
                         $ HintRelMood("lisa", 0, 6)
                     $ dishes_washed = True
-                    $ __ts = max((60 - int(tm[-2:])), 30)
+                    $ spent_time = max((60 - int(tm[-2:])), 30)
+                    $ cur_ratio = 2
                     Max_00 "И чего я этим занимаюсь? Делать нечего, что ли..."
                     menu:
                         Max_00 "А с другой строны - неплохой способ улучшить отношения с Лизой..."
                         "{i}закончить{/i}":
-                            call Waiting(__ts, 2) from _call_Waiting_6
+                            jump Waiting
         "Нет, ничего...":
             menu:
                 Lisa_12 "Ну раз ничего, то нечего меня отвлекать. Иди делом займись!"
                 "Хорошо, пойду займусь":
-                    call Waiting(10) from _call_Waiting_7
+                    $ spent_time = 10
+                    jump Waiting
 
     return

@@ -2,6 +2,10 @@
 
 label StartDialog:
     $ renpy.block_rollback()
+    if max_profile.energy < 10:
+        Max_00 "Я слишком устал. Надо бы вздремнуть..."
+        jump AfterWaiting
+
     if len(current_room.cur_char) == 1:
         if current_room.cur_char[0] == "lisa":
             jump LisaTalkStart
@@ -23,8 +27,10 @@ label Sleep:
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
-            call Waiting(360, 1, True, "08:00") from _call_Waiting # спим 360 минут или до наступления 8 утра
-    return
+            $ spent_time = 360
+            $ status_sleep = True
+            $ alarm_time = "08:00"
+            jump Waiting # спим 360 минут или до наступления 8 утра
 
 
 label Wearied:
@@ -37,8 +43,9 @@ label Wearied:
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
-            call Waiting(270, 1, True, "08:00") from _call_Waiting_1
-    return
+            $ status_sleep = True
+            $ alarm_time = "08:00"
+            jump Waiting
 
 
 label Nap:
@@ -51,38 +58,38 @@ label Nap:
     menu:
         Max_19 "[txt!t]"
         "{i}подремать пару часов{/i}":
-            $ t = 2 * 60
+            $ spent_time = 2 * 60
         "{i}подремать 3 часа{/i}" if tm <= "16:00":
-            $ t = 3 * 60
+            $ spent_time = 3 * 60
         "{i}подремать 4 часа{/i}" if tm <= "15:00":
-            $ t = 4 * 60
+            $ spent_time = 4 * 60
         "{i}подремать 5 часов{/i}" if tm <= "14:00":
-            $ t = 5 * 60
+            $ spent_time = 5 * 60
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
-    call Waiting(t, 1, True) from _call_Waiting_5
-    return
+    $ status_sleep = True
+    jump Waiting
 
 
 label Alarm:
     $ renpy.block_rollback()
     menu:
         Max_00 "{i}В каком часу я должен встать?{/i}"
-        "{i}в 5 утра{/i}":
-            $ __st = "05:00"
+        # "{i}в 5 утра{/i}":
+        #     $ alarm_time = "05:00"
         "{i}в 6 утра{/i}":
-            $ __st = "06:00"
+            $ alarm_time = "06:00"
         "{i}в 7 утра{/i}":
-            $ __st = "07:00"
+            $ alarm_time = "07:00"
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
     $ number_autosave += 1
     $ NewSaveName()
     $ renpy.loadsave.force_autosave(True, True)
-    $ t = TimeDifference(tm, __st)
-    call Waiting(t, 1, True, __st) from _call_Waiting_19
-    return
+    $ spent_time = 420
+    $ status_sleep = True
+    jump Waiting
 
 
 label Shower:
@@ -96,8 +103,8 @@ label Shower:
         "{i}закончить{/i}":
             $ max_profile.cleanness = 100
 
-    call Waiting(30)
-    return
+    $ spent_time = 30
+    jump Waiting
 
 
 label Box:
@@ -123,8 +130,8 @@ label Box:
     $ InspectedRooms.clear()
     if CurPoss == "":
         $ CurPoss = "cams"
-    call Waiting(30) from _call_Waiting_2
-    return
+    $ spent_time = 30
+    jump Waiting
 
 
 label Notebook:
@@ -139,18 +146,44 @@ label Notebook:
 
     Max_00 "Итак, чем интересным я займусь?"
 
+
+label Laptop:
     if "06:00" <= tm < "21:00":
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
 
+    show interface laptop start page:
+        xpos 221 ypos 93
+        size (1475, 829)
+
     show video1_movie:
-        xpos 221
-        ypos 93
+        xpos 221 ypos 93
 
-    call screen LaptopScreen()
-    return
+    $ renpy.block_rollback()
 
+    $ search_theme.clear()
+
+    if possibility["cams"].stage_number == 1:
+        $ search_theme.append((_("{i}почитать о камерах{/i}"), "about_cam"))
+    if possibility["Blog"].stage_number == 0:
+        $ search_theme.append((_("{i}читать о блогах{/i}"), "about_blog"))
+    if possibility["secretbook"].stage_number == 1:
+        $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
+
+    call screen LaptopScreen
+
+
+label nothing_search:
+    Max_00 "Сейчас мне нечего искать..."
+    jump Laptop
+
+label about_cam:
+    Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
+    Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
+    Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
+    $ spent_time = 20
+    jump Laptop
 
 
 label SearchCam:
@@ -165,12 +198,12 @@ label SearchCam:
         $ InspectedRooms.clear()
         $ possibility["cams"].stage_number = 1
         $ possibility["cams"].stages[1].used = True
-        call Waiting(30, 2.0) from _call_Waiting_3
     else:
         Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
         $ InspectedRooms.append(current_room)
-        call Waiting(60, 2.0) from _call_Waiting_4
-
+    $ spent_time = 30
+    $ cur_ratio = 2
+    jump Waiting
 
 label DishesWashed:
     $ renpy.block_rollback()
@@ -186,9 +219,9 @@ label DishesWashed:
             pass
     if (day+2) % 7 != 6:
         if (day+2) % 7 == 0:
-            $ __name_label = GetScheduleRecord(schedule_alice, day, "10:30")[0].label
+            $ __name_label = GetScheduleRecord(schedule_alice, day, "10:30").label
         else:
-            $ __name_label = GetScheduleRecord(schedule_alice, day, "11:30")[0].label
+            $ __name_label = GetScheduleRecord(schedule_alice, day, "11:30").label
         if __name_label == "alice_dishes":
             $ characters["alice"].mood += 6
             if characters["alice"].relmax < 400:
@@ -197,8 +230,9 @@ label DishesWashed:
             else:
                 $ HintRelMood("alice", 0, 6)
     $ dishes_washed = True
-    $ __ts = max((60 - int(tm[-2:])), 30)
-    call Waiting(__ts, 2) from _call_Waiting_20
+    $ spent_time = max((60 - int(tm[-2:])), 30)
+    $ cur_ratio = 2
+    jump Waiting
 
 
 ################################################################################
@@ -323,7 +357,8 @@ label lisa_shower:
         jump AfterWaiting
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_10
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -341,10 +376,9 @@ label lisa_dressed_school:
     $ __rel = 0
     if peeping["lisa_dressed"] == 0:
         $ peeping["lisa_dressed"] = 1
-        $ __wait = 60 - int(tm.split(":")[1])
         jump .lisa_dressed
     else:
-        jump .end
+        return
 
     menu .lisa_dressed:
         Max_09 "{i}Похоже, Лиза собирается в школу...{/i}"
@@ -354,7 +388,7 @@ label lisa_dressed_school:
                 "Это я, Макс. Можно войти?":
                     jump .come_in
                 "Хорошо, я подожду...":
-                    $ __wait = 10
+                    $ spent_time = 10
                     jump .rel_mood
         "{i}открыть дверь{/i}" if characters["lisa"].mindedness < 200:
             jump .open_door
@@ -363,12 +397,12 @@ label lisa_dressed_school:
         #"войти в комнату" if characters["lisa"].mindedness >= 200:
         #    pass
         "{i}уйти{/i}":
-            $ __wait = 10
+            $ spent_time = 10
             jump .rel_mood
 
     label .look_window:
-        $ __wait = 10
-        $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
+        $ spent_time = 10
+        $ __ran1 = renpy.random.choice(["01", "02a", "03", "04"])
 
         if __ran1 == "01":
             $ lisa_dress["dressed"] = "02d"
@@ -379,13 +413,13 @@ label lisa_dressed_school:
         else:
             $ lisa_dress["dressed"] = "02c"
 
-        scene image "Lisa voyeur "+__ran1
+        scene image "BG char Lisa voyeur-00"
+        $ renpy.show("Lisa voyeur "+__ran1)
         $ renpy.show("FG voyeur-lisa-00"+dress_suf["max"])
         menu:
             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
             "{i}уйти{/i}":
-                jump .rel_mood
-
+                jump .end
 
     label .come_in:
         scene BG char Lisa morning
@@ -402,6 +436,7 @@ label lisa_dressed_school:
             show Lisa school-dressed 01c # пока отсутствует
             $ lisa_dress["dressed"] = "00"
 
+        $ spent_time = 60 - int(tm.split(":")[1])
         menu:
             Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
             "Это и моя комната!":
@@ -443,7 +478,7 @@ label lisa_dressed_school:
         jump .rel_mood
 
     label .open_door:
-        $ __wait = 20
+        $ spent_time = 20
         $ __ran1 = renpy.random.randint(2, 5)
         if __ran1 == 2:
             $ lisa_dress["dressed"] = "02a"
@@ -511,21 +546,21 @@ label lisa_dressed_school:
         $ characters["lisa"].relmax += __rel
         $ characters["lisa"].mood   += __mood
 
-    call Waiting(__wait) from _call_Waiting_17
-
     label .end:
-        return
+        jump Waiting
 
 
 label lisa_dressed_shop:
     scene location house myroom door-morning
 
-    $ __mood = 0
-    $ __rel = 0
-    $ __warned = False
-    if peeping["lisa_dressed"] == 0:
+    if peeping["lisa_dressed"] != 0:
+        return
+    else:
+        $ __mood = 0
+        $ __rel = 0
+        $ __warned = False
         $ peeping["lisa_dressed"] = 1
-        $ __wait = 60 - int(tm.split(":")[1])
+        $ spent_time = 60 - int(tm.split(":")[1])
         menu .lisa_dressed:
             Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
             "{i}постучаться{/i}":
@@ -549,7 +584,7 @@ label lisa_dressed_shop:
                 jump .rel_mood
 
         label .open_door:
-            $ __wait = 20
+            $ spent_time = 20
             $ __ran1 = renpy.random.randint(3, 5)
             if __ran1 == 3:
                 $ lisa_dress["dressed"] = "02c"
@@ -599,8 +634,8 @@ label lisa_dressed_shop:
 
         label .look_window:
             # Max_00 "Кажется, всё самое интересное я уже пропустил..."
-            $ __wait = 10
-            $ __ran1 = renpy.random.choice(["03", "04", "05", "06"])
+            $ spent_time = 10
+            $ __ran1 = renpy.random.choice(["03", "04", "05a", "06a"])
 
             if __ran1 == "03":
                 $ lisa_dress["dressed"] = "02b"
@@ -626,16 +661,14 @@ label lisa_dressed_shop:
             $ characters["lisa"].relmax += __rel
             $ characters["lisa"].mood   += __mood
 
-        call Waiting(__wait) from _call_Waiting_18
-
-    return
+    jump Waiting
 
 
 label lisa_dressed_somewhere:
     scene location house myroom door-morning
 
     if peeping["lisa_dressed"] != 0:
-        jump .end
+        return
 
     menu:
         Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
@@ -643,7 +676,7 @@ label lisa_dressed_somewhere:
             $ peeping["lisa_dressed"] = 1
 
     label .end:
-        return
+        jump Waiting
 
 
 label lisa_swim:
@@ -677,9 +710,14 @@ label lisa_sun:
 
 
 label lisa_dishes:
-
     scene BG crockery-evening-00
     $ renpy.show("Lisa crockery-evening 01"+dress_suf["lisa"])
+    return
+
+
+label lisa_dishes_closer:
+    scene BG crockery-sink-01
+    $ renpy.show("Lisa crockery-closer "+random3_1+dress_suf["lisa"])
     return
 
 
@@ -778,7 +816,8 @@ label lisa_bath:
             $ characters["lisa"].relmax += __rel
             $ characters["lisa"].mood   += __mood
             # $ current_room, prev_room = prev_room, current_room
-            call Waiting(10) from _call_Waiting_21
+            $ spent_time = 10
+            jump Waiting
     return
 
 
@@ -815,7 +854,8 @@ label ann_sleep:
                         pass
             "{i}уйти{/i}":
                 pass
-        call Waiting(10) from _call_Waiting_22
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -901,7 +941,8 @@ label ann_shower:
 
         label .end_peeping:
             $ current_room, prev_room = prev_room, current_room
-            call Waiting(10) from _call_Waiting_23
+            $ spent_time = 10
+            jump Waiting
 
     return
 
@@ -920,6 +961,12 @@ label ann_yoga:
 label ann_cooking:
     scene BG cooking-00
     $ renpy.show("Ann cooking 01"+random_suf)
+    return
+
+
+label ann_cooking_closer:
+    scene BG cooking-01
+    $ renpy.show("Ann cooking-closer "+random3_1+random_suf)
     return
 
 
@@ -983,7 +1030,8 @@ label ann_dressed_work:
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_24
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -1030,7 +1078,8 @@ label ann_dressed_shop:
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_25
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -1139,7 +1188,8 @@ label ann_bath:
         label .end:
             $ config.menu_include_disabled = False
             # $ current_room, prev_room = prev_room, current_room
-            call Waiting(10) from _call_Waiting_26
+            $ spent_time = 10
+            jump Waiting
     return
 
 
@@ -1147,6 +1197,12 @@ label ann_tv:
     scene BG lounge-tv-00
     $ renpy.show("Ann tv "+random3_3)
     return
+
+label ann_tv_closer:
+    scene BG lounge-tv-01
+    $ renpy.show("Ann tv-closer"+random3_3)
+    return
+
 
 ################################################################################
 ## события Алисы
@@ -1176,7 +1232,8 @@ label alice_bath:
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_27
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -1190,6 +1247,7 @@ label alice_sleep:
         menu:
             Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
             "{i}заглянуть в окно{/i}":
+                $ spent_time = 10
                 if tm < "06:00":
                     scene BG char Alice bed-night-01
                     $ renpy.show("Alice sleep-night "+random3_1)
@@ -1200,11 +1258,23 @@ label alice_sleep:
                     $ renpy.show("FG alice-voyeur-morning-00"+dress_suf["max"])
                 menu:
                     Max_07 "О, да! Моя старшая сестренка выглядит потрясающе... \nНа изгибы ее тела в этом полупрозрачном белье хочется смотреть вечно!"
+                    "{i}прокрасться в комнату{/i}":
+                        $ spent_time += 10
+                        if tm < "06:00":
+                            scene BG char Alice bed-night-02
+                            $ renpy.show("Alice sleep-night-closer "+random3_1)
+                        else:
+                            scene BG char Alice bed-morning-02
+                            $ renpy.show("Alice sleep-morning-closer "+random3_2)
+                        menu:
+                            Max_07 "Класс! Так бы и прилег рядышком, но пора уходить... Если она проснется, мне точно не поздоровится..."
+                            "{i}уйти{/i}":
+                                pass
                     "{i}уйти{/i}":
                         pass
             "{i}уйти{/i}":
                 pass
-        call Waiting(10) from _call_Waiting_28
+        jump Waiting
     return
 
 
@@ -1290,7 +1360,8 @@ label alice_shower:
 
         label .end_peeping:
             $ current_room, prev_room = prev_room, current_room
-            call Waiting(10) from _call_Waiting_29
+            $ spent_time = 10
+            jump Waiting
     return
 
 
@@ -1336,7 +1407,8 @@ label alice_dressed_shop:
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_30
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -1391,7 +1463,8 @@ label alice_dressed_somewhere:
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room
-        call Waiting(10) from _call_Waiting_31
+        $ spent_time = 10
+        jump Waiting
     return
 
 
@@ -1429,12 +1502,27 @@ label alice_cooking_dinner:
     return
 
 
+label alice_cooking_closer:
+    scene BG cooking-01
+    $ renpy.show("Alice cooking-closer "+random3_2+dress_suf["alice"])
+    return
+
+
 label alice_tv:
     scene BG lounge-tv-00
     if int(tm[:2])%2 == 0:
         $ renpy.show("Alice tv "+random3_1+dress_suf["alice"])
     else:
         $ renpy.show("Alice tv "+random3_3+dress_suf["alice"])
+    return
+
+
+label alice_tv_closer:
+    scene BG lounge-tv-01
+    if int(tm[:2])%2 == 0:
+        $ renpy.show("Alice tv-closer "+random3_1+dress_suf["alice"])
+    else:
+        $ renpy.show("Alice tv-closer "+random3_3+dress_suf["alice"])
     return
 
 

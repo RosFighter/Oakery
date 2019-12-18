@@ -78,6 +78,25 @@ init python:
         schedule.sort(key=SortByTime)
 
 
+    def GetScheduleRecordList(schedule, day, tm):
+        """ Возвращает запись, с текущим действием персонажа
+            Аргументы:
+            schedule - список записей с расписанием,
+            day      - день (целое),
+            tm     - время в формате 'hh:mm',
+            week     - номер недели (целое) """
+        h, m = tm.split(":")  # нормализуем время на всякий случай
+        tm = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
+        day += 2  # в игре отсчет начинается со среды и дня под номером 1
+        rez = []
+        for sh in schedule:
+            if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
+                (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
+                    rez.append(sh)
+
+        return rez
+
+
     def GetScheduleRecord(schedule, day, tm):
         """ Возвращает запись, с текущим действием персонажа
             Аргументы:
@@ -96,8 +115,10 @@ init python:
 
         if len(rez) > 1:
             print("ошибочка-с...", rez)
-
-        return rez
+        elif len(rez) == 0:
+            return None
+        else:
+            return rez[0]
 
 
     def VerifySchedule(schedule):
@@ -116,7 +137,7 @@ init python:
             for hour in range(24):
                 for minute in range(60):
                     tm = "{0}:{1}".format(("0" + str(hour))[-2:], ("0" + str(minute))[-2:])
-                    temp_list = GetScheduleRecord(schedule, day, tm)
+                    temp_list = GetScheduleRecordList(schedule, day, tm)
 
                     if len(temp_list) > 1:
                         for tl in temp_list:
@@ -182,13 +203,11 @@ init python:
         for char in characters:
 
             schedule_char = GetScheduleRecord(eval("schedule_"+char), day, tm)
-            if len(schedule_char) > 0:
-                 # т.к. функция возвращает список в идеале из одного пунта, мы берем первое действие из расписания
-                 # все последующие игнорируем
-                if schedule_char[0].loc != "" and not schedule_char[0].loc is None:
-                    eval(schedule_char[0].loc+"["+str(schedule_char[0].room)+"].cur_char.append(\""+char+"\")")
+            if schedule_char is not None:
+                if schedule_char.loc != "" and not schedule_char.loc is None:
+                    eval(schedule_char.loc+"["+str(schedule_char.room)+"].cur_char.append(\""+char+"\")")
 
-                characters[char].sufix = schedule_char[0].dress
+                characters[char].sufix = schedule_char.dress
 
 
     def Wait(delta):
@@ -257,8 +276,10 @@ init python:
         for cut in EventsByTime:
             if (EventsByTime[cut].enabled and
                 ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2) or
+                 ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= "08:00") and EventsByTime[cut].extend and EventsByTime[cut].sleep) or
                  (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= "23:59" or "00:00" <= EventsByTime[cut].tm <= tm2)))
-                and (day in EventsByTime[cut].lod) and eval(EventsByTime[cut].variable) and sleep == EventsByTime[cut].sleep):
+                and (day in EventsByTime[cut].lod) and eval(EventsByTime[cut].variable) and
+                (sleep == EventsByTime[cut].sleep or (sleep and EventsByTime[cut].cut and not EventsByTime[cut].sleep))):
                     eventslist.append(cut)
                     timelist.append(EventsByTime[cut].tm)
 

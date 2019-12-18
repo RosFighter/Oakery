@@ -153,7 +153,7 @@ init python:
     class Item:
         """ класс-формат описания предметов как в инвентаре, так и доступных для заказа в ИМ """
 
-        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, have=False, buy=False, delivery=0, need_read=0, cells=1):
+        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, have=False, buy=False, delivery=0, need_read=0, cells=1, shop_img=""):
             self.name      = name      # наименование (в магазине и в сумке)
             self.desc      = desc      # описание
             self.img       = img       # изображение
@@ -215,26 +215,20 @@ init python:
 
 ################################################################################
     class CutEvent:
-        """ События, запускаемые в конкретное время
-            Описание полей:
-            tm        – время начала события
-            lod       – кортеж дней недели для события
-            label     – имя блока обработки события
-            desc      – описание события
-            variable  – строка с логическим выражением, вычисляется при получиении события
-            stage     - этап события. Если None - повторяемое
-            sleep     - для запуска нужно, чтобы Макс спал"""
-        def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), enabled=True, label="", desc="", variable="True", stage=0, sleep=False):
+        """ События, запускаемые в конкретное время"""
+        def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), enabled=True, label="", desc="", variable="True", stage=0, sleep=False, extend=False, cut=False):
             h, m = tm.split(":") if str(tm).find(":") > 0 else str(float(tm)).replace(".", ":").split(":")
-            self.tm        = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
+            self.tm        = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:] # время начала события
 
-            self.lod      = lod
+            self.lod      = lod      # кортеж дней недели для события
             self.enabled  = enabled
-            self.label    = label
-            self.desc     = desc
-            self.variable = variable
-            self.stage    = stage
-            self.sleep    = sleep
+            self.label    = label    # имя блока обработки события
+            self.desc     = desc     # описание события
+            self.variable = variable # строка с логическим выражением, вычисляется при получиении события
+            self.stage    = stage    # этап события. Если None - повторяемое
+            self.sleep    = sleep    # для запуска нужно, чтобы Макс спал
+            self.extend   = extend   # при выполднении условия, если Макс встает раньше наступления события, то продлевать сон
+            self.cut      = cut      # прерывать сон при наступлении события
 
         def __repr__(self):
             return "\"{self.desc}\" стартует в {self.tm} по дням: {self.lod}, только если Макс спит {self.sleep}".format(self=self)

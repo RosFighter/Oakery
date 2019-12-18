@@ -3,9 +3,9 @@ label AliceTalkStart:
 
     $ dial = TalkMenuItems()
 
-    $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)[0]
+    $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
     if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel from _call_expression_4
+        call expression __CurShedRec.talklabel
 
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
@@ -19,7 +19,7 @@ label AliceTalkStart:
 
     if rez != "exit":
         if renpy.has_label(rez): # если такая метка сушествует, запускаем ее
-            call expression rez from _call_expression_5
+            call expression rez
         jump AliceTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания
@@ -46,20 +46,20 @@ label wash_dishes_alice:
                     else:
                         $ HintRelMood("alice", 0, 6)
                     $ dishes_washed = True
-                    $ __ts = max((60 - int(tm[-2:])), 30)
+                    $ spent_time = max((60 - int(tm[-2:])), 30)
                     scene BG crockery-morning-00
                     $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
                     menu:
                         Max_11 "И почему здесь нет посудомоечной машины..."
                         "{i}закончить{/i}":
-                            call Waiting(__ts, 2) from _call_Waiting_8
+                            $ cur_ratio = 2
+                            jump Waiting
         "Нет, просто хотел поглазеть":
             menu:
                 Alice_09 "Знаешь что, вали отсюда, пока мокрой тряпкой по голове не получил!"
                 "{i}уйти{/i}":
-                    call Waiting(10) from _call_Waiting_9
-
-    return
+                    $ spent_time = 10
+                    jump Waiting
 
 
 label talkblog1:
@@ -182,7 +182,7 @@ label talkblog1:
                 Alice_00 "А кто ты тогда? Чем же именно можешь помочь?"
                 "Ну, у меня много разных идей":
                     menu:
-                        Alice_01 "Много разных идей? Например?" #Alice_07
+                        Alice_07 "Много разных идей? Например?"
                         "Давай что-то придумаем вместе!":
                             jump .together
                         "Может быть, изменить твой блог?":
@@ -252,5 +252,5 @@ label talkblog1:
 
     label .end:
         if talk_var["blog"] == 2:
-            call Waiting(30) from _call_Waiting_11
-        return
+            $ spent_time = 10
+            jump Waiting

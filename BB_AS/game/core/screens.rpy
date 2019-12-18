@@ -1,5 +1,69 @@
 
 
+###############################################################################
+
+init: # трансформации для кнопок
+
+    transform power_zoom:
+        size (60, 60)
+
+    transform close_zoom:
+        size (25, 25)
+
+    transform middle_wait:
+        size (136, 136)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform middle_zoom:
+        size (136, 136)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform small_zoom:
+        size (100, 100)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform middle_face:
+        size (120, 120)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.9
+
+    transform small_face:
+        size (60, 60)
+        on idle, selected_idle:
+            yanchor 0 alpha 1.0
+        on hover, selected_hover:
+            yanchor 1 alpha 0.93
+
+    transform small_menu:
+        size (80, 80)
+        on idle, selected_idle:
+            yanchor 0 alpha 0.4
+        on hover, selected_hover:
+            yanchor 1 alpha 1.0
+
+    transform disable_menu(enable=True):
+        size (80, 80)
+        yanchor 0 alpha 0.2
+
+    transform lang:
+        on idle, selected_idle:
+            size (160, 160) alpha 0.85
+        on hover, selected_hover:
+            size (180, 180) alpha 1.0
+
+################################################################################
+
 screen choice_lang():
     tag menu
     modal True
@@ -7,40 +71,98 @@ screen choice_lang():
     imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle "interface/ENG.webp" action [Language("english"), Return()] focus_mask True at lang
     imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle "interface/RUS.webp" action [Language(None), Return()] focus_mask True at lang
 
-init:
-    transform lang:
-        on idle, selected_idle:
-            size (160, 160) alpha 0.85
-        on hover, selected_hover:
-            size (180, 180) alpha 1.0
 ################################################################################
 
 screen LaptopScreen():
 
-    tag menu
-    modal True
-    imagebutton pos (1655, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+    # tag menu
+    # modal True
 
-    # frame area(221, 93, 1475, 829) background None:
-    imagebutton pos (438, 170) idle "interface laptop search" action NullAction() focus_mask True
+    $ bookmarks = 2
+    use PowerButton
 
-    vpgrid cols 3:
-        pos (361, 300)
-        mousewheel "change"
-        draggable True
-        if len(LaptopBookmarks) > 6:
-            scrollbars "vertical"
-        else:
-            scrollbars None
+    frame area(321, 93, 1275, 829) background None:
+        viewport:
+            xfill True
+            ypos 30
+            ysize 770
+            mousewheel "change"
+            draggable True
 
-        xspacing 50
-        yspacing 40
+            vbox:
+                xfill True
+                spacing 30
+                if len(search_theme) > 0:
+                    imagebutton xalign .5 idle "interface laptop search" action Show("Search") focus_mask True
+                else:
+                    imagebutton xalign .5 idle "interface laptop search" action Call("nothing_search") focus_mask True
 
-        for i in range(len(LaptopBookmarks)):
-            frame xysize(365, 270) background None:
-                vbox:
-                    imagebutton idle "interface laptop "+LaptopBookmarks[i][1] action Jump(LaptopBookmarks[i][2])
-                    text LaptopBookmarks[i][0] xalign 0.5 color "#000000"
+
+                vpgrid cols 3 xalign .5:
+
+                    xspacing 50
+                    yspacing 40
+
+                    frame xysize(365, 270) background None:
+                        vbox:
+                            imagebutton idle "interface laptop shop" action Jump("shop_start")
+                            text _("ИНТЕРНЕТ-МАГАЗИН") xalign 0.5 color "#000000"
+
+                    frame xysize(365, 270) background None:
+                        vbox:
+                            imagebutton idle "interface laptop courses" action Jump("courses_start")
+                            text _("ОНЛАЙН-КУРСЫ") xalign 0.5 color "#000000"
+
+screen PowerButton():
+    imagebutton:
+        # pos (1670, 935) auto "interface laptop power %s"
+        pos (930, 985) auto "interface laptop power %s"
+        action [Hide("Search"), Jump("Waiting")] focus_mask True at power_zoom
+
+
+screen Search():
+    # modal True
+    use PowerButton
+    style_prefix "search"
+    frame area(634, 150, 696, 450) background "#FFFFFF":
+        vbox:
+            spacing 10
+            text _("Что будем искать?") color "#000000"
+            hbox spacing 5:
+                frame background None:
+                    ysize 340
+                    xfill True
+                    viewport spacing 0 draggable True mousewheel True id "vp_choice":
+                        ysize 330
+                        vbox xsize 675 spacing 0:
+                            $yy = 0
+                            for i in search_theme:
+                                $yy+=1
+                                button action [Hide("Search"), Jump(i[1])] style "search_but":
+                                    textbutton i[0] action [Hide("Search"), Jump(i[1])] yalign .0
+                                key str(yy) action [Hide("Search"), Jump(i[1])]
+                    vbar value YScrollValue("vp_choice") style "search_vscroll"
+            button action Hide("Search") style "search_but":
+                textbutton _("{i}назад{/i}") action Hide("Search") yalign .0
+    key "K_ESCAPE" action Hide("Search")
+
+style search_vscroll is vscrollbar:
+    unscrollable "hide"
+
+style search_but:
+    xpadding 0 ypadding 0 xmargin 0 ymargin 0
+    xsize 675
+    foreground "interface marker black"
+
+style search_button:
+    xsize 675
+    xpadding 30
+    hover_background "gui/button/search_hover_background.png"
+
+style search_button_text:
+    idle_color "#000000"
+    hover_color "#ffbe00"
+
 
 
 
@@ -174,11 +296,11 @@ screen room_navigation():
                                         action [Hide("wait_navigation"), Jump(act.label)] at middle_zoom
                         text act.sing font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
-        button xysize (136, 190) action [Hide("wait_navigation"), Call("Waiting", wait), ]: # ждать час
+        button xysize (136, 190) action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")]: # ждать час
             vbox xsize 136 spacing 0:
                 frame xysize (136, 140) background None:
                     imagebutton idle "interface wait 60" hover "interface wait 60 a":# hovered Show("wait_navigation"):
-                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), Call("Waiting", wait), ] at middle_wait
+                                align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")] at middle_wait
                 text _("ЖДАТЬ") font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
     vbox:  # Время и день недели
@@ -210,60 +332,9 @@ screen wait_navigation(): # дополнительные кнопки для о�
     frame align(.99, .99) xysize(123, 395) background None:
         vbox:
             spacing 5
-            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 10), ] at small_zoom
-            imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), Call("Waiting", 30), ] at small_zoom
+            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), SetWarilable("spent_time", 10), Jump("Waiting")] at small_zoom
+            imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), SetVariable("spent_time", 30), Jump("Waiting")] at small_zoom
     timer 2.0 action Hide("wait_navigation")
-
-init: # трансформации для кнопок
-
-    transform close_zoom:
-        size (25, 25)
-
-    transform middle_wait:
-        size (136, 136)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform middle_zoom:
-        size (136, 136)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform small_zoom:
-        size (100, 100)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform middle_face:
-        size (120, 120)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
-
-    transform small_face:
-        size (60, 60)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.93
-
-    transform small_menu:
-        size (80, 80)
-        on idle, selected_idle:
-            yanchor 0 alpha 0.4
-        on hover, selected_hover:
-            yanchor 1 alpha 1.0
-
-    transform disable_menu(enable=True):
-        size (80, 80)
-        yanchor 0 alpha 0.2
 
 ################################################################################
 screen menu_my_help():
