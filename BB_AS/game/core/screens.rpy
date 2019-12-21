@@ -5,7 +5,7 @@
 init: # трансформации для кнопок
 
     transform power_zoom:
-        size (60, 60)
+        size (50, 50)
 
     transform close_zoom:
         size (25, 25)
@@ -73,10 +73,16 @@ screen choice_lang():
 
 ################################################################################
 
+screen PowerButton():
+    imagebutton:
+        pos (935, 985) auto "interface laptop power %s"
+        action [Hide("Search"), Jump("Waiting")] focus_mask True at power_zoom
+
+################################################################################
 screen LaptopScreen():
 
-    # tag menu
-    # modal True
+    tag menu
+    modal True
 
     $ bookmarks = 2
     use PowerButton
@@ -105,7 +111,7 @@ screen LaptopScreen():
 
                     frame xysize(365, 270) background None:
                         vbox:
-                            imagebutton idle "interface laptop shop" action Jump("shop_start")
+                            imagebutton idle "interface laptop shop" action Jump("LaptopShop")
                             text _("ИНТЕРНЕТ-МАГАЗИН") xalign 0.5 color "#000000"
 
                     frame xysize(365, 270) background None:
@@ -113,15 +119,9 @@ screen LaptopScreen():
                             imagebutton idle "interface laptop courses" action Jump("courses_start")
                             text _("ОНЛАЙН-КУРСЫ") xalign 0.5 color "#000000"
 
-screen PowerButton():
-    imagebutton:
-        # pos (1670, 935) auto "interface laptop power %s"
-        pos (930, 985) auto "interface laptop power %s"
-        action [Hide("Search"), Jump("Waiting")] focus_mask True at power_zoom
-
-
+################################################################################
 screen Search():
-    # modal True
+    modal True
     use PowerButton
     style_prefix "search"
     frame area(634, 150, 696, 450) background "#FFFFFF":
@@ -163,8 +163,98 @@ style search_button_text:
     idle_color "#000000"
     hover_color "#ffbe00"
 
+################################################################################
+
+screen OnlineShop():
+    tag menu
+    modal True
+    use PowerButton
+    default CurCat = 0
+    frame area(221, 93, 1475, 829) background None:
+        hbox:
+            frame xsize 295 yfill True background None:
+                xpadding 15 ypadding 15
+                ## список категорий
+                style_prefix "cat"
+                vbox:
+                    for i in ShopCat:
+                        button background None action SetScreenVariable("CurCat", i) xsize 390 style "cat_but":
+                            textbutton ShopCat[i] action SetScreenVariable("CurCat", i) selected CurCat == i
+
+            frame xsize 1175 yfill True background None:
+                xpadding 10 ypadding 15 #xmargin 0 ymargin 15
+                ## список товаров категории
+                style_prefix "goods"
+                $ items_in_cat = 0
+
+                hbox xsize 1135 spacing 5:
+                    viewport mousewheel "change" draggable True id "vp1":
+                        vbox spacing 15:
+                            for i in items:
+                                if items[i].InShop and items[i].category == CurCat:
+                                    $ items_in_cat += 1
+                                    frame xfill True background Frame("interface items-shop bg2", 10, 10):
+                                        xpadding 10 ypadding 10 xmargin 5 ymargin 5
+                                        hbox xsize 1120 spacing 15:
+                                            add "interface items-shop "+items[i].img
+                                            # frame xfill True:
+                                            vbox spacing 5:
+                                                frame xpos 50 xsize 400 background None:
+                                                    text items[i].name style "item_header"
+                                                frame xsize 700 background None:
+                                                    text items[i].desc color gui.accent_color
+                                                textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
+                                                    action NullAction()
+
+                    vbar value YScrollValue("vp1") style "shop_vscroll"
 
 
+
+style shop_vscroll is vscrollbar:
+    unscrollable "hide"
+
+style cat_but:
+    xpadding 0 ypadding 0 xmargin 0 ymargin 0
+    xsize 270
+    foreground "interface marker"
+style cat_button:
+    xsize 270
+    xpadding 30
+style cat_button_text is default:
+    font "trebucbd.ttf"
+    # xpos 30
+    yalign .5
+    size 28
+    idle_color gui.choice_button_text_idle_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+
+style item_header:
+    font "trebucbd.ttf"
+    color "#FFFFFF"
+    size 28
+
+style price:
+    font "trebucbd.ttf"
+    color "#000000"
+    size 36
+
+style buy_button:
+    xalign 1.0
+    idle_background Frame("interface items-shop glossy idle", 12, 12)
+    hover_background Frame("interface items-shop glossy hover", 12, 12)
+    insensitive_background Frame("interface items-shop glossy insensitive", 12, 12)
+    xpadding 30
+    ypadding 10
+    ymargin 5
+
+style buy_button_text:
+    font "trebuc.ttf"
+    min_width 100
+    text_align 0.5
+    size 30
+    idle_color "#000000"
+    hover_color "#FFFFFF"
 
 ################################################################################
 screen room_navigation():
@@ -552,15 +642,15 @@ screen menu_inventory():
                         vbox:
                             spacing 4
                             for id in items_list[cur_col]:
-                                $ im_name = items[id].img.replace(" ", "/") + ".webp"
+                                $ im_name = "interface/items/" + items[id].img + ".webp"
                                 if items[id].cells == 2:
                                     frame area(0, 0, 286, 456) background "interface items bg2":
-                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 224, 360) hover items[id].img:
+                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 224, 360) hover "interface items "+items[id].img:
                                             action NullAction()
                                             hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
                                 else:
                                     frame area(0, 0, 286, 226) background "interface items bg":
-                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 252, 198) hover items[id].img:
+                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 252, 198) hover "interface items "+items[id].img:
                                             action NullAction()
                                             hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
 

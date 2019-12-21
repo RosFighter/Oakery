@@ -28,7 +28,7 @@ default characters = {
          "Alice"),
      "ann": Profile(_("Анна"), _("Анны"), _("Анне"), _("Анну"), _("Анной"), _("Анне"), _("Анна, моя мама. Сама воспитывает нас с двумя сёстрами уже несколько лет. Работает в офисе какой-то компании. Хотя, зарплата у неё вполне приличная, но почти всё уходит на оплату жилья, еду и одежду."),
         "Ann", 0, 0, 2),
-}
+    }
 
 default max_profile = MaxProfile(_("Макс"),  _("Макса"), _("Максу"), _("Макса"), _("Максом"), _("Максе"),
                         _("Всегда в поисках приключений на свою пятую точку"), "Max info-00")
@@ -37,7 +37,7 @@ default sex_stat = {
     "lisa" : SexStat(),
     "alice": SexStat(),
     "ann"  : SexStat(),
-}
+    }
 
 
 #######################################################################################################################
@@ -65,7 +65,7 @@ default schedule_lisa = [
     Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "22:59", _("принимает ванну"), "house", 3, "lisa_bath", dress="naked", enabletalk=False),
     Schedule((1, 2, 3, 4, 5), "23:0", "23:59", _("учит уроки"), "house", 0, "lisa_homework", dress="learn"),
     Schedule((0, 6), "23:0", "23:59", _("лежит с телефоном в нашей комнате"), "house", 0, "lisa_phone", dress="casual2"),
-]
+    ]
 
 default schedule_ann  = [
     Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", _("спит"), "house", 2, "ann_sleep", dress="sleepwear", enabletalk=False),
@@ -88,36 +88,36 @@ default schedule_ann  = [
     Schedule((0, 1, 2, 3, 4, 5, 6), "20:0", "20:59", _("принимает ванну"), "house", 3, "ann_bath", dress="naked", enabletalk=False),
     Schedule((0, 1, 2, 3, 4, 5, 6), "21:0", "21:59", _("смотрит ТВ"), "house", 4, "ann_tv", dress="casual3", talklabel="ann_tv_closer"),
     Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "23:59", _("в своей комнате"), "house", 2, "ann_resting", dress="casual2"),
-]
+    ]
 
 default schedule_alice = [
-     Schedule((1, 2, 3, 4, 5, 6, 0), "0:0", "0:59", _("принимает ванну"), "house", 3, "alice_bath", dress="naked", enabletalk=False),
-     Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "7:59", _("спит"), "house", 1, "alice_sleep", dress="sleepwear", enabletalk=False),
-     Schedule((1, 2, 3, 4, 5, 6, 0), "8:0", "8:59", _("принимает душ"), "house", 3, "alice_shower", dress="naked", enabletalk=False),
-     Schedule((1, 2, 3, 4, 5), "10:0", "10:59", _("в своей комнате"), "house", 1, "alice_rest_morning", dress="casual", talklabel="alice_morning_closer"),
-     Schedule((6,), "10:0", "10:59", _("одевается в магазин"), "house", 1, "alice_dressed_shop", dress="dressed", enabletalk=False),
-     Schedule((0,), "10:0", "10:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual", talklabel="alice_dishes_closer"),
-     Schedule((0,), "10:0", "10:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed", dress="casual"),
-     Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual", talklabel="alice_dishes_closer"),
-     Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed", dress="casual"),
-     Schedule((0,), "11:0", "11:59", _("куда-то одевается"), "house", 1, "alice_dressed_somewhere", dress="dressed", enabletalk=False),
-     Schedule((1, 2, 3, 4, 5), "12:0", "12:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
-     Schedule((1, 2, 3, 4, 5), "13:0", "13:59", _("в бассейне"), "house", 6, "alice_swim", dress="swim"),  # потом заменится на вариативное курит/плавает
-     Schedule((6,), "11:0", "13:59", _("в магазине"), dress="out"),
-     Schedule((1, 2, 3, 4, 5), "14:0", "14:59", _("в бассейне"), "house", 6, "alice_swim", dress="swim"),
-     Schedule((6,), "14:0", "14:59", _("куда-то одевается"), "house", 1, "alice_dressed_somewhere", dress="dressed", enabletalk=False),
-     Schedule((1, 2, 3, 4, 5), "15:0", "15:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
-     Schedule((1, 2, 3, 4, 5), "16:0", "17:59", _("читает на веранде"), "house", 5, "alice_read", dress="casual"),
-     Schedule((6,), "15:0", "16:59", dress="out"),
-     Schedule((0,), "12:0", "16:59", dress="out"),
-     Schedule((6,), "17:0", "17:59", _("читает на веранде"), "house", 5, "alice_read", dress="casual"),
-     Schedule((0,), "17:0", "17:59", _("в бассейне"), "house", 6, "alice_swim", dress="swim"),
-     Schedule((1, 2, 3, 4, 5), "18:0", "18:59", _("готовит ужин"), "house", 4, "alice_cooking_dinner", dress="cooking", talklabel="alice_cooking_closer"),
-     Schedule((0,), "18:0", "18:59", _("читает на веранде"), "house", 5, "alice_read", dress="casual"),
-     Schedule((6,), "18:0", "18:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
-     Schedule((1, 2, 3, 4, 5, 6, 0), "20:0", "21:59", _("в своей комнате"), "house", 1, "alice_rest_evening", dress="casual2", talklabel="alice_evening_closer"),
-     Schedule((1, 2, 3, 4, 5, 6, 0), "22:0", "23:59", _("смотрит ТВ"), "house", 4, "alice_tv", dress="casual2", talklabel="alice_tv_closer"),
-]
+    Schedule((1, 2, 3, 4, 5, 6, 0), "0:0", "0:59", _("принимает ванну"), "house", 3, "alice_bath", dress="naked", enabletalk=False),
+    Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "7:59", _("спит"), "house", 1, "alice_sleep", dress="sleepwear", enabletalk=False),
+    Schedule((1, 2, 3, 4, 5, 6, 0), "8:0", "8:59", _("принимает душ"), "house", 3, "alice_shower", dress="naked", enabletalk=False),
+    Schedule((1, 2, 3, 4, 5), "10:0", "10:59", _("в своей комнате"), "house", 1, "alice_rest_morning", dress="casual", talklabel="alice_morning_closer"),
+    Schedule((6,), "10:0", "10:59", _("одевается в магазин"), "house", 1, "alice_dressed_shop", dress="dressed", enabletalk=False),
+    Schedule((0,), "10:0", "10:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual", talklabel="alice_dishes_closer"),
+    Schedule((0,), "10:0", "10:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed", dress="casual"),
+    Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("моет посуду"), "house", 4, "alice_dishes", 1, 0, 0, "not dishes_washed", dress="casual", talklabel="alice_dishes_closer"),
+    Schedule((1, 2, 3, 4, 5), "11:0", "11:59", _("читает на веранде"), "house", 5, "alice_read", 1, 0, 0, "dishes_washed", dress="casual"),
+    Schedule((0,), "11:0", "11:59", _("куда-то одевается"), "house", 1, "alice_dressed_somewhere", dress="dressed", enabletalk=False),
+    Schedule((1, 2, 3, 4, 5), "12:0", "12:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
+    Schedule((1, 2, 3, 4, 5), "13:0", "13:59", _("в бассейне"), "house", 6, "alice_swim", dress="swim"),  # потом заменится на вариативное курит/плавает
+    Schedule((6,), "11:0", "13:59", _("в магазине"), dress="out"),
+    Schedule((1, 2, 3, 4, 5), "14:0", "14:59", _("в бассейне"), "house", 6, "alice_swim", dress="swim"),
+    Schedule((6,), "14:0", "14:59", _("куда-то одевается"), "house", 1, "alice_dressed_somewhere", dress="dressed", enabletalk=False),
+    Schedule((1, 2, 3, 4, 5), "15:0", "15:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
+    Schedule((1, 2, 3, 4, 5), "16:0", "17:59", _("читает на веранде"), "house", 5, "alice_read", dress="casual"),
+    Schedule((6,), "15:0", "16:59", dress="out"),
+    Schedule((0,), "12:0", "16:59", dress="out"),
+    Schedule((6,), "17:0", "17:59", _("читает на веранде"), "house", 5, "alice_read", dress="casual"),
+    Schedule((0,), "17:0", "17:59", _("в бассейне"), "house", 6, "alice_swim", dress="swim"),
+    Schedule((1, 2, 3, 4, 5), "18:0", "18:59", _("готовит ужин"), "house", 4, "alice_cooking_dinner", dress="cooking", talklabel="alice_cooking_closer"),
+    Schedule((0,), "18:0", "18:59", _("читает на веранде"), "house", 5, "alice_read", dress="casual"),
+    Schedule((6,), "18:0", "18:59", _("загорает"), "house", 6, "alice_sun", dress="swim"),
+    Schedule((1, 2, 3, 4, 5, 6, 0), "20:0", "21:59", _("в своей комнате"), "house", 1, "alice_rest_evening", dress="casual2", talklabel="alice_evening_closer"),
+    Schedule((1, 2, 3, 4, 5, 6, 0), "22:0", "23:59", _("смотрит ТВ"), "house", 4, "alice_tv", dress="casual2", talklabel="alice_tv_closer"),
+    ]
 
 #######################################################################################################################
 ## Кнопки действий
@@ -146,54 +146,65 @@ default AvailableActions = {
     "bath"        : ActionsButton(_("ПРИНЯТЬ\nВАННУ"), "interface bath", "Bath", True),
     "talk"        : ActionsButton(_("ПОГОВОРИТЬ"), "interface talk", "StartDialog"),
     "dishes"      : ActionsButton(_("МЫТЬ\nПОСУДУ"), "interface dishes", "DishesWashed"),
-}
+    }
 
 # список ключей словаря кнопок. создан заранее для сохраниения нужного порядка
 default ListButton = [
-     "momovie",
-     "city",
-     "touch",
-     "usb",
-     "install",
-     "hidespider",
-     "throwspider3",
-     "throwspider6",
-     "catchspider",
-     "searchciga",
-     "searchbook",
-     "clearpool",
-     "readbook",
-     "searchcam",
-     "unbox",
-     "nap",
-     "alarm",
-     "sleep",
-     "shower",
-     "notebook",
-     "bath",
-     "talk",
-     "dishes",
-]
+    "momovie",
+    "city",
+    "touch",
+    "usb",
+    "install",
+    "hidespider",
+    "throwspider3",
+    "throwspider6",
+    "catchspider",
+    "searchciga",
+    "searchbook",
+    "clearpool",
+    "readbook",
+    "searchcam",
+    "unbox",
+    "nap",
+    "alarm",
+    "sleep",
+    "shower",
+    "notebook",
+    "bath",
+    "talk",
+    "dishes",
+    ]
 
 #######################################################################################################################
 ## Предметы
 
+default ShopCat = {
+    0 : _("Одежда"),
+    1 : _("Книги"),
+    2 : _("Продукты"),
+    3 : _("Электроника"),
+    4 : _("Товары 18+"),
+    5 : _("Косметика"),
+    6 : _("Украшения"),
+    7 : _("Другое"),
+    }
+
 default items = {
-    "spider": Item(_("ПАУК"), _("Самое страшное существо на свете. С точки зрения Алисы, конечно. Нужно этим воспользоваться в подходящий момент!"), "interface items spider", None),
-    "hide_cam": Item(_("СКРЫТАЯ КАМЕРА"), _("Высокотехнологичная микро-камера, предназначенная для скрытного наблюдения. Имеет радиомодуль для беспроводной передачи зашифрованного цифрового видеосигнала."), "interface items cam", _("Электроника"), 990),
+    "spider": Item(_("ПАУК"), _("Самое страшное существо на свете. С точки зрения Алисы, конечно. Нужно этим воспользоваться в подходящий момент!"), "spider", None),
+    "hide_cam": Item(_("СКРЫТАЯ КАМЕРА"), _("Высокотехнологичная микро-камера, предназначенная для скрытного наблюдения. Имеет радиомодуль для беспроводной передачи зашифрованного цифрового видеосигнала."), "cam", 3, 990),
     "ann_movie": Item(_("ФИЛЬМ \"ШКОЛЬНИЦЫ\""), _("Строгая учительница пытается наказать непослушных школьниц..."), "", None),
-    "bathrobe": Item(_("ШЕЛКОВЫЙ ХАЛАТ"), _("Короткий, лёгкий, почти шёлковый халат высшего качества. Made in China."), "interface items bathrobe", _("Одежда"), 100, cells=2),
-    "bikini": Item(_("КУПАЛЬНИК КРАСНЫЙ"), _("Купальник для тех, кто не стесняется своего тела. Скрывает только самые интимные участки. Всё остальное открыто для солнца и глаз окружающих."), "interface items bikini", _("Одежда"), 200, cells=2),
-    "cigarettes": Item(_("СИГАРЕТЫ"), _("Пачка сигарет Lucky Strike. Для настоящих мужчин!"), "interface items cigarettes", _("Другое"), 10),
-    "dress": Item(_("МАЛЕНЬКОЕ ЧЕРНОЕ ПЛАТЬЕ"), _("Отличный подарок для девушки, желающей произвести фурор на вечеринке или дискотеке."), "interface items dress-1", _("Одежда"), 200, cells=2),
-    "erobook_1": Item(_("ЛЮБЯЩАЯ РУБИ"), _("Роман о запретной любви между секретаршей и её начальником, полный любви, страсти, эмоций и... мистики."), "interface items erobook-1", _("Книги")),
-    "erobook_2": Item(_("ПРЕМЬЕР-МИНИСТР"), _("Новый эротический роман, входящий в Топ-10 лучших романов и новелл США!"), "interface items erobook-2", _("Книги")),
-    "erobook_3": Item(_("БЫТЬ КУКЛОЙ"), _("В поместье Картера красивые девушки обучаются, чтобы стать идеальными жёнами для самых влиятельных людей этого мира."), "interface items erobook-3", _("Книги")),
-    "erobook_4": Item(_("КНИГА ОРГАЗМОВ"), _("Что получится, если собрать самые горячие истории об оргазмах от 69 различных авторов?"), "interface items erobook-4", _("Книги")),
-    "erobook_5": Item(_("ИСТОРИЯ О"), _("Это история о доминировании и подчинении. История об одной прекрасной девушке по имени О."), "interface items erobook-5", _("Книги")),
-    "ladder": Item(_("Стремянка"), _("Небольшая стремянка, позволяющая достать то, для чего не хватает роста"), "interface items ladder", _("Другое"), cells=2),
-    "manual": Item(_("WEB STANDARDS"), _("Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."), "interface items manual-1", _("Книги")),
-    #"": Item(_(""), _(""), "", _(""), ),
+    "bathrobe": Item(_("ШЕЛКОВЫЙ ХАЛАТ"), _("Короткий, лёгкий, почти шёлковый халат высшего качества. Made in China."), "bathrobe", 0, 100, True, cells=2),
+    "bikini": Item(_("КУПАЛЬНИК КРАСНЫЙ"), _("Купальник для тех, кто не стесняется своего тела. Скрывает только самые интимные участки. Всё остальное открыто для солнца и глаз окружающих."), "bikini", 0, 200, True, cells=2),
+    "cigarettes": Item(_("СИГАРЕТЫ"), _("Пачка сигарет Lucky Strike. Для настоящих мужчин!"), "cigarettes", 7, 10),
+    "dress": Item(_("МАЛЕНЬКОЕ ЧЕРНОЕ ПЛАТЬЕ"), _("Отличный подарок для девушки, желающей произвести фурор на вечеринке или дискотеке."), "dress-1", 0, 200, cells=2),
+    "erobook_1": Item(_("ЛЮБЯЩАЯ РУБИ"), _("Роман о запретной любви между секретаршей и её начальником, полный любви, страсти, эмоций и... мистики."), "erobook-1", 1, 20, True),
+    "erobook_2": Item(_("ПРЕМЬЕР-МИНИСТР"), _("Новый эротический роман, входящий в Топ-10 лучших романов и новелл США!"), "erobook-2", 1, 30, True),
+    "erobook_3": Item(_("БЫТЬ КУКЛОЙ"), _("В поместье Картера красивые девушки обучаются, чтобы стать идеальными жёнами для самых влиятельных людей этого мира."), "erobook-3", 1, 50, True),
+    "erobook_4": Item(_("КНИГА ОРГАЗМОВ"), _("Что получится, если собрать самые горячие истории об оргазмах от 69 различных авторов?"), "erobook-4", 1, 75, True),
+    "erobook_5": Item(_("ИСТОРИЯ О"), _("Это история о доминировании и подчинении. История об одной прекрасной девушке по имени О."), "erobook-5", 1, 100, True),
+    "ladder": Item(_("Стремянка"), _("Небольшая стремянка, позволяющая достать то, для чего не хватает роста"), "ladder", 7, cells=2),
+    "manual": Item(_("WEB STANDARDS"), _("Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."), "manual-1", 1, 100, True),
+    #"": Item(_(""), _(""), "", , ),
     }
 
 #######################################################################################################################
@@ -224,6 +235,7 @@ default flags = {
     "Lisa_bathrobe" : False,
     "morning_erect" : 0,
     "about_poss"    : True,
+    "little_energy" : False,
 }
 
 default dress_suf = {

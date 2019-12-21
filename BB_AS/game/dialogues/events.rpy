@@ -21,9 +21,12 @@ label StartDialog:
 
 label Sleep:
     $ renpy.block_rollback()
+    scene BG char Max bed-night-01
     menu:
-        Max_19 "{i}Как же я хочу спать...{/i}"
+        Max_00 "{i}Как же я хочу спать...{/i}"
         "{i}спать до утра{/i}":
+            $ renpy.show("Max sleep-night "+random3_3)
+            Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
@@ -36,15 +39,36 @@ label Sleep:
 label Wearied:
     $ renpy.block_rollback()
     # прождали все доступное время - спим до восьми
+    scene BG char Max bed-night-01
     menu:
-        Max_19 "{i}Я без сил и хочу спать...{/i}"
+        Max_00 "{i}Я без сил и хочу спать...{/i}"
         "{i}спать до утра{/i}":
+            $ renpy.show("Max sleep-night "+random3_1)
+            Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
             $ status_sleep = True
             $ alarm_time = "08:00"
+            jump Waiting
+
+
+label LittleEnergy:
+    $ renpy.block_rollback()
+    # прождали все доступное время - спим до восьми
+    scene BG char Max bed-night-01
+    menu:
+        Max_00 "{i}Я вымотан, надо вздремнуть...{/i}"
+        "{i}вздремнуть{/i}":
+            $ renpy.show("Max sleep-night "+random3_1)
+            Max_19 "Z-z-z"
+            $ number_autosave += 1
+            $ NewSaveName()
+            $ renpy.loadsave.force_autosave(True, True)
+            $ current_room = house[0]
+            $ spent_time = 360
+            $ status_sleep = True
             jump Waiting
 
 
@@ -74,6 +98,7 @@ label Nap:
 
 label Alarm:
     $ renpy.block_rollback()
+    scene BG char Max bed-night-01
     menu:
         Max_00 "{i}В каком часу я должен встать?{/i}"
         # "{i}в 5 утра{/i}":
@@ -84,6 +109,8 @@ label Alarm:
             $ alarm_time = "07:00"
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
+    $ renpy.show("Max sleep-night "+random3_2)
+    Max_19 "Z-z-z"
     $ number_autosave += 1
     $ NewSaveName()
     $ renpy.loadsave.force_autosave(True, True)
@@ -143,9 +170,7 @@ label Notebook:
         scene BG char Max laptop-night-00
         $ renpy.show("Max laptop-night 01"+dress_suf["max"])
 
-
     Max_00 "Итак, чем интересным я займусь?"
-
 
 label Laptop:
     if "06:00" <= tm < "21:00":
@@ -172,6 +197,19 @@ label Laptop:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
 
     call screen LaptopScreen
+
+
+label LaptopShop:
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+    show interface laptop start page:
+        xpos 221 ypos 93
+        size (1475, 829)
+
+    $ renpy.block_rollback()
+    call screen OnlineShop
 
 
 label nothing_search:
@@ -402,7 +440,7 @@ label lisa_dressed_school:
 
     label .look_window:
         $ spent_time = 10
-        $ __ran1 = renpy.random.choice(["01", "02a", "03", "04"])
+        $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
 
         if __ran1 == "01":
             $ lisa_dress["dressed"] = "02d"
@@ -635,7 +673,7 @@ label lisa_dressed_shop:
         label .look_window:
             # Max_00 "Кажется, всё самое интересное я уже пропустил..."
             $ spent_time = 10
-            $ __ran1 = renpy.random.choice(["03", "04", "05a", "06a"])
+            $ __ran1 = renpy.random.choice(["03", "04", "05", "06"])
 
             if __ran1 == "03":
                 $ lisa_dress["dressed"] = "02b"

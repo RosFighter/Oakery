@@ -14,16 +14,8 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
 
     $ Wait(spent_time)
 
-    $ __name_label = ""
-
-    # здесь располагаем ссылку на функцию поиска стартующих по времени событий
+    # ищем стартующее по времени событие
     $ cut_id = GetCutEvents(__prevtime, tm, status_sleep)
-    # if cut_id == "" and not "00:00" <= __prevtime <= "06:00":
-    #     $ cut_id = GetCutEvents(__prevtime, tm, False) # попробуем найти событие для неспящего
-    #
-    # if sleep and tm < "08:00" and cut_id == "":
-    #     # проверим, нет ли событий стартующих во время ночного сна, но чуть позднее
-    #     $ cut_id = GetCutEvents(__prevtime, "08:00", True)
 
     # и устанавливаем время на начало кат-события, если оно есть
     if cut_id != "":
@@ -32,6 +24,8 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
             if __prevtime <= EventsByTime[cut_id].tm < "23:59":
                 $ day = __prevday
         $ tm = EventsByTime[cut_id].tm
+    else:
+        $ __name_label = ""
 
     if day != __prevday:
         # временный блок случайного назначения одежды
@@ -102,6 +96,8 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
                         dcv[i].done = True
                         dcv[i].enabled = False
     if __prevtime[:2] != tm[:2]:
+        # почасовой сброс
+        $ flags["little_energy"] = False
         # вернем на значения по-умолчанию после подглядываний
         $ lisa_dress["naked"] = "04a"
         $ lisa_dress["dressed"] = "00b"
@@ -165,8 +161,6 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
             $ max_profile.energy = 100
     else: # в противном случае - расходуется
         $ max_profile.energy -= delt * 5 * cur_ratio / 60.0
-        # if max_profile.energy < 5:
-        #     jump Wearied
 
     # обновим extra-info для сохранений
     $ NewSaveName()
@@ -229,6 +223,12 @@ label AfterWaiting:
         else:
             scene image(current_room.cur_bg)
 
+    if max_profile.energy < 10 and not flags["little_energy"]:
+        Max_00 "Я слишком устал. Надо бы вздремнуть..."
+        $ flags["little_energy"] = True
+
+    if max_profile.energy < 5:
+        jump LittleEnergy
     call screen room_navigation
 
 
@@ -316,3 +316,6 @@ label after_load:
         $ current_ver = "v0.02.0.001" # ставим номер версии
         # и выполняем необходимые действия с переменными или фиксы
         pass
+
+    if "little_energy" not in flags:
+        $ flags["little_energy"] = False

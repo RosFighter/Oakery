@@ -153,10 +153,11 @@ init python:
     class Item:
         """ класс-формат описания предметов как в инвентаре, так и доступных для заказа в ИМ """
 
-        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, have=False, buy=False, delivery=0, need_read=0, cells=1, shop_img=""):
+        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, have=False, buy=False, delivery=0, need_read=0, cells=1):
             self.name      = name      # наименование (в магазине и в сумке)
             self.desc      = desc      # описание
             self.img       = img       # изображение
+            self.category  = category  # номер категории магазина
             self.price     = price     # цена в магазине
             self.InShop    = InShop    # доступно к приобретению
             self.have      = have      # есть в сумке
