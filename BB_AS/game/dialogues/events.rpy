@@ -172,6 +172,7 @@ label Notebook:
 
     Max_00 "Итак, чем интересным я займусь?"
 
+
 label Laptop:
     if "06:00" <= tm < "21:00":
         scene BG char Max laptop-day-01
@@ -216,6 +217,7 @@ label nothing_search:
     Max_00 "Сейчас мне нечего искать..."
     jump Laptop
 
+
 label about_cam:
     Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
     Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
@@ -242,6 +244,7 @@ label SearchCam:
     $ spent_time = 30
     $ cur_ratio = 2
     jump Waiting
+
 
 label DishesWashed:
     $ renpy.block_rollback()

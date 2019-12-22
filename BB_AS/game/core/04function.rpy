@@ -278,7 +278,7 @@ init python:
                 ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2) or
                  ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= "08:00") and EventsByTime[cut].extend and EventsByTime[cut].sleep) or
                  (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= "23:59" or "00:00" <= EventsByTime[cut].tm <= tm2)))
-                and (day in EventsByTime[cut].lod) and eval(EventsByTime[cut].variable) and
+                and (((day+2) % 7) in EventsByTime[cut].lod) and eval(EventsByTime[cut].variable) and
                 (sleep == EventsByTime[cut].sleep or (sleep and EventsByTime[cut].cut and not EventsByTime[cut].sleep))):
                     eventslist.append(cut)
                     timelist.append(EventsByTime[cut].tm)
@@ -387,3 +387,14 @@ init python:
             renpy.notify(__("Отношение %s к Максу %s") % (char_name, rel_suf))
         elif mood != 0:
             renpy.notify(__("Настроение %s %s") % (char_name, mood_suf))
+
+
+    def BuyItem(id):
+        """ выполняет покупку предмета из интернет-магазина """
+        global money, items
+        money -= items[id].price
+        items[id].buy = True
+        if (day+2) % 7 != 6:
+            items[id].delivery = 1
+        else:
+            items[id].delivery = 2

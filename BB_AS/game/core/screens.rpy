@@ -7,6 +7,12 @@ init: # трансформации для кнопок
     transform power_zoom:
         size (50, 50)
 
+    transform book_marks:
+        on idle:
+            zoom 1.0
+        on hover:
+            zoom 1.02
+
     transform close_zoom:
         size (25, 25)
 
@@ -73,6 +79,16 @@ screen choice_lang():
 
 ################################################################################
 
+screen PowerBack():
+    frame xalign 0.5 ypos 980 background None:
+        hbox spacing 10:
+            imagebutton:
+                auto "interface laptop back %s"
+                action [Hide("Search"), Jump("Laptop")] focus_mask True at power_zoom
+            imagebutton:
+                auto "interface laptop power %s"
+                action [Hide("Search"), Jump("Waiting")] focus_mask True at power_zoom
+
 screen PowerButton():
     imagebutton:
         pos (935, 985) auto "interface laptop power %s"
@@ -99,7 +115,7 @@ screen LaptopScreen():
                 xfill True
                 spacing 30
                 if len(search_theme) > 0:
-                    imagebutton xalign .5 idle "interface laptop search" action Show("Search") focus_mask True
+                    imagebutton xalign .5 idle "interface laptop search" action [Hide("PowerButton"), Show("Search")] focus_mask True
                 else:
                     imagebutton xalign .5 idle "interface laptop search" action Call("nothing_search") focus_mask True
 
@@ -109,20 +125,18 @@ screen LaptopScreen():
                     xspacing 50
                     yspacing 40
 
-                    frame xysize(365, 270) background None:
-                        vbox:
-                            imagebutton idle "interface laptop shop" action Jump("LaptopShop")
-                            text _("ИНТЕРНЕТ-МАГАЗИН") xalign 0.5 color "#000000"
+                    frame xysize(370, 235) background None:
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop shop" action Jump("LaptopShop") at book_marks
+                        text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 yalign 1.0 color "#FFFFFF"
 
-                    frame xysize(365, 270) background None:
-                        vbox:
-                            imagebutton idle "interface laptop courses" action Jump("courses_start")
-                            text _("ОНЛАЙН-КУРСЫ") xalign 0.5 color "#000000"
+                    frame xysize(370, 235) background None:
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
+                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 yalign 1.0 color "#FFFFFF"
 
 ################################################################################
 screen Search():
     modal True
-    use PowerButton
+    # use PowerBack
     style_prefix "search"
     frame area(634, 150, 696, 450) background "#FFFFFF":
         vbox:
@@ -168,7 +182,7 @@ style search_button_text:
 screen OnlineShop():
     tag menu
     modal True
-    use PowerButton
+    use PowerBack
     default CurCat = 0
     frame area(221, 93, 1475, 829) background None:
         hbox:
@@ -203,8 +217,27 @@ screen OnlineShop():
                                                     text items[i].name style "item_header"
                                                 frame xsize 700 background None:
                                                     text items[i].desc color gui.accent_color
-                                                textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
-                                                    action NullAction()
+                                                if items[i].buy:
+                                                    textbutton _("{i}{b}КУПЛЕНО{/b}{/i}") style "buy_button":
+                                                        idle_background Frame("interface button green", 12, 12)
+                                                        hover_background Frame("interface button green", 12, 12)
+                                                        action NullAction()
+                                                elif items[i].price > money:
+                                                    textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
+                                                        idle_background Frame("interface button red", 12, 12)
+                                                        hover_background Frame("interface button red", 12, 12)
+                                                        action NullAction()
+                                                elif items[i].have:
+                                                    textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
+                                                        idle_background Frame("interface button gray", 12, 12)
+                                                        hover_background Frame("interface button gray", 12, 12)
+                                                        action NullAction()
+                                                else:
+                                                    textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
+                                                        idle_background Frame("interface button orange", 12, 12)
+                                                        hover_background Frame("interface button green", 12, 12)
+                                                        text_hover_color gui.hover_color
+                                                        action Function(BuyItem, i)
 
                     vbar value YScrollValue("vp1") style "shop_vscroll"
 
@@ -241,9 +274,6 @@ style price:
 
 style buy_button:
     xalign 1.0
-    idle_background Frame("interface items-shop glossy idle", 12, 12)
-    hover_background Frame("interface items-shop glossy hover", 12, 12)
-    insensitive_background Frame("interface items-shop glossy insensitive", 12, 12)
     xpadding 30
     ypadding 10
     ymargin 5
@@ -254,7 +284,7 @@ style buy_button_text:
     text_align 0.5
     size 30
     idle_color "#000000"
-    hover_color "#FFFFFF"
+    hover_color "#000000"
 
 ################################################################################
 screen room_navigation():
