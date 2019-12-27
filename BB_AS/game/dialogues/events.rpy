@@ -74,6 +74,7 @@ label LittleEnergy:
 
 label Nap:
     $ renpy.block_rollback()
+    scene BG char Max bed-day-01
     if max_profile.energy > 40.0:
         $ txt = _("{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}")
     else:
@@ -92,6 +93,8 @@ label Nap:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
+    $ renpy.show("Max nap "+random3_1+dress_suf["max"])
+    Max_19 "Z-z-z"
     $ status_sleep = True
     jump Waiting
 
@@ -275,6 +278,18 @@ label DishesWashed:
     $ cur_ratio = 2
     jump Waiting
 
+
+label delivery:
+    $ renpy.block_rollback()
+
+    python:
+        for i in delivery_list:
+            items[i].buy = False
+            items[i].have = True
+        delivery_list.clear()
+
+    Max_00 "О, доставочка!!"
+    jump AfterWaiting
 
 ################################################################################
 ## события Лизы
@@ -1241,7 +1256,7 @@ label ann_tv:
 
 label ann_tv_closer:
     scene BG lounge-tv-01
-    $ renpy.show("Ann tv-closer"+random3_3)
+    $ renpy.show("Ann tv-closer "+random3_3)
     return
 
 

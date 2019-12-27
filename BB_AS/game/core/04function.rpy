@@ -1,10 +1,18 @@
 init python:
+    import math
+
     def AddTime(ts, delta=1):
         """Увеличивает время, заданное в формате 'hh:mm' на delta минут"""
         h, m = ts.split(":")
         ti = int(h)*60 + int(m) + delta ## переведем время в минуты и прибавим дельту
-        h = ti // 60
-        m = ti % 60
+        if ti > 0:
+            h = ti // 60
+            m = ti % 60
+        else:
+            ti = -1 * ti
+            h = (1440 - (ti % 1140)) // 60
+            m = (1440 - (ti % 1140)) % 60
+
         return ("0"+str(h))[-2:]+":"+("0"+str(m))[-2:]
 
 
@@ -20,7 +28,7 @@ init python:
     def AddSchedule(schedule, *added_sheds):
         """добавляет в список с расписанием персонажа новые действия
         блоки на один и тот же период с разным сдвигом в одном периоде или
-        на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним болоком"""
+        на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком"""
         edited = []
         # составим список расписаний, затронутых изменениями (в последствии будут удалены)
         for nsh in added_sheds:
@@ -78,8 +86,8 @@ init python:
         schedule.sort(key=SortByTime)
 
 
-    def GetScheduleRecordList(schedule, day, tm):
-        """ Возвращает запись, с текущим действием персонажа
+    def GetScheduleRecordList(schedule, day, tm): # только для тестирования расписания
+        """ Возвращает список записей с текущим действием персонажа
             Аргументы:
             schedule - список записей с расписанием,
             day      - день (целое),
@@ -98,7 +106,7 @@ init python:
 
 
     def GetScheduleRecord(schedule, day, tm):
-        """ Возвращает запись, с текущим действием персонажа
+        """ Возвращает запись с текущим действием персонажа
             Аргументы:
             schedule - список записей с расписанием,
             day      - день (целое),
@@ -341,7 +349,7 @@ init python:
         return min(90.0, 100.0 * (Skil / cap))
 
     def RandomChance(chance):
-        """ прошло илинет применение навыка с указанным шансом """
+        """ прошло или нет применение навыка с указанным шансом """
         return renpy.random.random() < chance / 100.0
 
     def NewSaveName():
@@ -398,3 +406,111 @@ init python:
             items[id].delivery = 1
         else:
             items[id].delivery = 2
+
+
+    def GetDeliveryList():
+        """ формирует список доставляемых товаров """
+        global delivery_list, items
+        for i in items:
+            if items[i].buy and items[i].delivery > 0:
+                items[i].delivery -= 1
+                if items[i].delivery == 0:
+                    delivery_list.append(i)
+
+
+    def BuyPromotion(): #Покупка пакета рекламы
+        global grow_list
+        for i in range(1, 155*6):
+            if i > len(grow_list):
+                grow_list.append(0)
+
+            if i < 42:
+                grow_list[i-1] = grow_list[i-1]*0.7+ (0.5*pow(i/6.0, 2)) / 6
+            elif i > 300:
+                grow_list[i-1] = grow_list[i-1]*0.7+ (6840.0/i - math.log(i/6.0, 2)) / 6
+            else:
+                grow_list[i-1] = grow_list[i-1]*0.7+ (pow(170*i/6.0, 0.5) - 0.25*i) / 6
+
+
+    def Average(lst):
+        if len(lst) > 0:
+            return float(sum(lst)) / len(lst)
+        else:
+            return 0.0
+
+
+    def GetCamQ(lst):
+        """ возвращает событийный коэффициент камеры """
+        if len(lst) == 0:
+            return 1.0
+        s = 0
+        for i in range(len(lst)):
+            s += lst[i] * (0.5 + math.sin(i / 10))
+
+        return s / len(lst)
+
+
+    def CamShow(): # расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
+        global grow_list, cams_earnings, cams
+
+        char_list = []
+        # вычислим начало отсчета событий
+        prevday = day
+        h, m = tm.split(":")
+        ti = int(h)*60 + int(m) - spent_time
+        if ti > 0:
+            h = ti // 60
+            m = ti % 60
+        else:
+            ti = -1 * ti
+            prevday = day - (ti // 1440)
+            h = (1440 - (ti % 1140)) // 60
+            m = (1440 - (ti % 1140)) % 60
+        prevtm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
+
+        cycles = spent_time / 10 # расчет выполняется каждые 10 минут
+        for cam in cams:
+            for i in range(len(cycles)):
+                # рассчитаем время события
+                h, m = prevtm.split(":")
+                ti = int(h)*60 + int(m) + 10*i
+                d = ti // 1440
+                h = (ti % 1140) // 60
+                m = ti % 60
+
+                cur_tm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
+
+                char_list.clear()
+                for char in characters:
+                    ## получим расписание персонажа на этот момент
+                    cur_shed = GetScheduleRecord(eval("schedule_"+char), prevday+d, cur_tm)
+                    if cur_shed.loc == cam.loc and cur_shed.room == cam.id:
+                        # есть персонаж в комнате
+                        char_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
+
+                if len(char_list) > 0:
+                    cam.events.insert(0, Average(char_list)/len(char_list))
+                else:
+                    cam.events.insert(0, 0.75) # если в комнате никого нет, 25% снижение интереса к камере
+
+                cam.events = cam.events[:24]
+
+                # прирост публики от рекламы
+                if grow_list[i] > 0:
+                    if cam.public > 0:
+                        cam.public += cam.public/100 * (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
+                    else:
+                        cam.public = (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
+
+                # итоговое значение количества зрителей в зависимости от происходивших фоновых и активных событий
+                cam.public = cam.public * GetCamQ(cam.events) + (renpy.random.randint(900,1100) / 1000.0) * cam.public/100 + cam.public*cam.gain/1000
+                cam.dain = 0 # обнуление прироста от активного события
+
+                # расчет полученной прибыли
+                profit = (renpy.random.randint(850,1150) / 1000.0) * 10 * cam.public / 1000 # $10 на каждую тысячу зрителей с поправкой на коэффициент неопределенности в 15%
+
+                cam.profit += profit
+                if cur_tm == "03:00":
+                    cam.day = 0
+                else:
+                    cam.day += profit

@@ -1,12 +1,12 @@
 
 label after_breakfast:
     $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
-    $ tm = "10:00"
+    $ spent_time = 60
     $ current_room = house[5]
     $ AvailableActions["dishes"].enabled = True
 
     $ Distribution()
-    jump AfterWaiting
+    jump Waiting
 
 
 label typical_breakfast:

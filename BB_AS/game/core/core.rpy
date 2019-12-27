@@ -1,6 +1,6 @@
 
 
-label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
+label Waiting:
     # обработчик ожидания, запускает события по времени
     $ renpy.block_rollback()
 
@@ -26,6 +26,8 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
         $ tm = EventsByTime[cut_id].tm
     else:
         $ __name_label = ""
+
+    $ spent_time = TimeDifference(__prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
     if day != __prevday:
         # временный блок случайного назначения одежды
@@ -95,6 +97,9 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
                     if dcv[i].lost == 0:
                         dcv[i].done = True
                         dcv[i].enabled = False
+
+        $ GetDeliveryList()
+
     if __prevtime[:2] != tm[:2]:
         # почасовой сброс
         $ flags["little_energy"] = False
@@ -175,6 +180,9 @@ label Waiting: ##(delta, ratio=1, sleep=False, alarm=""):
 
 label AfterWaiting:
 
+    ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
+    $ CamShow()
+    
     $ spent_time = 0
     $ cur_ratio = 1
     $ status_sleep = False

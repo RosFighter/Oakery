@@ -107,7 +107,7 @@ init python:
             блоки на один и тот же период с разным сдвигом в одном периоде или
             на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком """
 
-        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", dress="", enabletalk=True, talklabel=None):
+        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", dress="", enabletalk=True, talklabel=None, glow=1.0):
             self.lod        = lod # lod - кортеж дней недели для действия
             # ts – время начала действия
             h, m = ts.split(":") if str(ts).find(":") > 0 else str(float(ts)).replace(".", ":").split(":")
@@ -116,17 +116,18 @@ init python:
             h, m = te.split(":") if str(te).find(":") > 0 else str(float(te)).replace(".", ":").split(":")
             self.te         = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
             # te – время окончания действия
-            self.desc       = desc # описание действия
-            self.loc        = loc # локация
-            self.room       = room # комната в локации
-            self.label      = label # имя блока обработки события (формирует сцену или запускает действие)
-            self.krat       = krat # периодичность в неделях
-            self.shift      = shift # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
-            self.weekstart  = weekstart # номер стартовой недели
-            self.variable   = variable # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
-            self.dress      = dress # тип варианта одежды (для окна информации о персонаже)
+            self.desc       = desc       # описание действия
+            self.loc        = loc        # локация
+            self.room       = room       # комната в локации
+            self.label      = label      # имя блока обработки события (формирует сцену или запускает действие)
+            self.krat       = krat       # периодичность в неделях
+            self.shift      = shift      # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
+            self.weekstart  = weekstart  # номер стартовой недели
+            self.variable   = variable   # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
+            self.dress      = dress      # тип варианта одежды (для окна информации о персонаже)
             self.enabletalk = enabletalk # возможность разговора
-            self.talklabel  = talklabel # блок обработки начала диалога (формирует сцену старта диалога)
+            self.talklabel  = talklabel  # блок обработки начала диалога (формирует сцену старта диалога)
+            self.glow       = glow       # коэффициент эмоционального накала (интерес зрителей)
 
         def __repr__(self):
             return "дни: {self.lod}, с {self.ts}, до {self.te}, \"{self.desc}\", в {self.loc}[{self.room}], каждые {self.krat} "\
@@ -217,15 +218,15 @@ init python:
 ################################################################################
     class CutEvent:
         """ События, запускаемые в конкретное время"""
-        def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), enabled=True, label="", desc="", variable="True", stage=0, sleep=False, extend=False, cut=False):
+        def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), label="", desc="", variable="True", enabled=True, stage=0, sleep=False, extend=False, cut=False):
             h, m = tm.split(":") if str(tm).find(":") > 0 else str(float(tm)).replace(".", ":").split(":")
             self.tm        = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:] # время начала события
 
             self.lod      = lod      # кортеж дней недели для события
-            self.enabled  = enabled
             self.label    = label    # имя блока обработки события
             self.desc     = desc     # описание события
             self.variable = variable # строка с логическим выражением, вычисляется при получиении события
+            self.enabled  = enabled
             self.stage    = stage    # этап события. Если None - повторяемое
             self.sleep    = sleep    # для запуска нужно, чтобы Макс спал
             self.extend   = extend   # при выполднении условия, если Макс встает раньше наступления события, то продлевать сон
@@ -245,3 +246,16 @@ init python:
 
         def __repr__(self):
             return "\"{self.name}\" ({self.id}): {self.desc}".format(self=self)
+
+
+################################################################################
+    class HideCam:
+        def __init__(self, loc, id):
+            self.loc    = loc    # локация установки камеры (дом, кафе, школа и т.п.)
+            self.id     = id     # номер комнаты
+            self.cam    = 1      # номер камеры
+            self.profit = 0      # полная прибыль, полученная с камеры
+            self.public = 0      # текущее количество зрителей
+            self.gain   = 0      # прирост зрителей от события (на каждую тысячу зрителей), обнуляется после выполнения расчета
+            self.day    = 0      # прибыль за текущий день
+            self.events = []     # список множителей эвентов (за последние 4 часа)

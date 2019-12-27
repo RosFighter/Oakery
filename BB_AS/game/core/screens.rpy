@@ -81,7 +81,7 @@ screen choice_lang():
 
 screen PowerBack():
     frame xalign 0.5 ypos 980 background None:
-        hbox spacing 10:
+        hbox spacing 100:
             imagebutton:
                 auto "interface laptop back %s"
                 action [Hide("Search"), Jump("Laptop")] focus_mask True at power_zoom
@@ -100,16 +100,17 @@ screen LaptopScreen():
     tag menu
     modal True
 
-    $ bookmarks = 2
     use PowerButton
 
-    frame area(321, 93, 1275, 829) background None:
+    frame area(221, 93, 1475, 829) background None:
         viewport:
             xfill True
             ypos 30
             ysize 770
             mousewheel "change"
             draggable True
+            # if bookmarks > 6:
+            #     scrollbars "vertical"
 
             vbox:
                 xfill True
@@ -120,7 +121,7 @@ screen LaptopScreen():
                     imagebutton xalign .5 idle "interface laptop search" action Call("nothing_search") focus_mask True
 
 
-                vpgrid cols 3 xalign .5:
+                vpgrid cols 3 xalign .5 id "vpg1":
 
                     xspacing 50
                     yspacing 40
@@ -132,6 +133,7 @@ screen LaptopScreen():
                     frame xysize(370, 235) background None:
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 yalign 1.0 color "#FFFFFF"
+
 
 ################################################################################
 screen Search():
@@ -221,22 +223,25 @@ screen OnlineShop():
                                                     textbutton _("{i}{b}КУПЛЕНО{/b}{/i}") style "buy_button":
                                                         idle_background Frame("interface button green", 12, 12)
                                                         hover_background Frame("interface button green", 12, 12)
-                                                        action NullAction()
-                                                elif items[i].price > money:
-                                                    textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
-                                                        idle_background Frame("interface button red", 12, 12)
-                                                        hover_background Frame("interface button red", 12, 12)
+                                                        text_idle_color gui.hover_color
+                                                        text_hover_color gui.hover_color
                                                         action NullAction()
                                                 elif items[i].have:
                                                     textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
                                                         idle_background Frame("interface button gray", 12, 12)
                                                         hover_background Frame("interface button gray", 12, 12)
+                                                        text_hover_color "#000000"
+                                                        action NullAction()
+                                                elif items[i].price > money:
+                                                    textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
+                                                        idle_background Frame("interface button red", 12, 12)
+                                                        hover_background Frame("interface button red", 12, 12)
+                                                        text_hover_color "#000000"
                                                         action NullAction()
                                                 else:
                                                     textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style "buy_button":
                                                         idle_background Frame("interface button orange", 12, 12)
                                                         hover_background Frame("interface button green", 12, 12)
-                                                        text_hover_color gui.hover_color
                                                         action Function(BuyItem, i)
 
                     vbar value YScrollValue("vp1") style "shop_vscroll"
@@ -284,7 +289,7 @@ style buy_button_text:
     text_align 0.5
     size 30
     idle_color "#000000"
-    hover_color "#000000"
+    hover_color "#FFFFFF"
 
 ################################################################################
 screen room_navigation():
@@ -524,7 +529,7 @@ screen menu_opportunity():
 
     if CurPoss != "":
         default view_stage = possibility[CurPoss].stage_number
-        for i in range(len(possibility[CurPoss].stages)-1):
+        for i in range(len(possibility[CurPoss].stages)):
             if possibility[CurPoss].stages[i].used:
                 $ list_stage.append(i)
 
