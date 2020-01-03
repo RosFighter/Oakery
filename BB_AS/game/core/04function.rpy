@@ -252,9 +252,9 @@ init python:
         h1, m1 = tm.split(":")
         h2, m2 = time2.split(":")
         ti = int(h1)*60+int(m1) + int(h2)*60+int(m2)
-        h = ti // 60
+        h = (ti % 1440) // 60
         m = ti % 60
-        d = day + h // 24
+        d = day + ti // 1440
 
         return str(d)+" " + ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
 
@@ -342,15 +342,18 @@ init python:
 
         return menu_items
 
+
     def GetChance(Skil, Divisor=1):
         """ Вычисляет и возвращает шанс успешного применения навыка """
         cap = 100.0 / Divisor
 
         return min(90.0, 100.0 * (Skil / cap))
 
+
     def RandomChance(chance):
         """ прошло или нет применение навыка с указанным шансом """
         return renpy.random.random() < chance / 100.0
+
 
     def NewSaveName():
         global save_name
@@ -359,11 +362,13 @@ init python:
                     "$@" + str(number_quicksave) +
                     "$@" + str(number_autosave))
 
+
     def NewNumberAutosave():
         global number_autosave
         number_autosave += 1
 
         NewSaveName()
+
 
     def HintRelMood(char, rel, mood):
         if rel >= 50:
@@ -418,6 +423,26 @@ init python:
                     delivery_list.append(i)
 
 
+    def GetDeliveryString():
+        StrDev = "Так... В накладной написано следующее:"
+        n = 0
+        for i in delivery_list:
+            items[i].buy = False
+            items[i].have = True
+            n += 1
+            globals()["TmpName"+str(n)] = items[i].name
+            StrDev += "\n \"[TmpName" + str(n) +"!t]\""
+        return StrDev
+
+
+    def DeletingDeliveryTempVar():
+        n = 1
+        for i in delivery_list:
+            del globals()["TmpName"+str(n)]
+            n += 1
+        delivery_list.clear()
+
+
     def BuyPromotion(): #Покупка пакета рекламы
         global grow_list
         for i in range(1, 155*6):
@@ -425,11 +450,11 @@ init python:
                 grow_list.append(0)
 
             if i < 42:
-                grow_list[i-1] = grow_list[i-1]*0.7+ (0.5*pow(i/6.0, 2)) / 6
+                grow_list[i-1] = grow_list[i-1]*0.7+ (0.5*pow(i/6.0, 2)) #/ 6
             elif i > 300:
-                grow_list[i-1] = grow_list[i-1]*0.7+ (6840.0/i - math.log(i/6.0, 2)) / 6
+                grow_list[i-1] = grow_list[i-1]*0.7+ (6840.0/i - math.log(i/6.0, 2)) #/ 6
             else:
-                grow_list[i-1] = grow_list[i-1]*0.7+ (pow(170*i/6.0, 0.5) - 0.25*i) / 6
+                grow_list[i-1] = grow_list[i-1]*0.7+ (pow(170*i/6.0, 0.5) - 0.25*i) #/ 6
 
 
     def Average(lst):
@@ -470,12 +495,12 @@ init python:
 
         cycles = spent_time / 10 # расчет выполняется каждые 10 минут
         for cam in cams:
-            for i in range(len(cycles)):
+            for i in range(cycles):
                 # рассчитаем время события
                 h, m = prevtm.split(":")
                 ti = int(h)*60 + int(m) + 10*i
                 d = ti // 1440
-                h = (ti % 1140) // 60
+                h = (ti % 1440) // 60
                 m = ti % 60
 
                 cur_tm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
@@ -484,7 +509,7 @@ init python:
                 for char in characters:
                     ## получим расписание персонажа на этот момент
                     cur_shed = GetScheduleRecord(eval("schedule_"+char), prevday+d, cur_tm)
-                    if cur_shed.loc == cam.loc and cur_shed.room == cam.id:
+                    if cur_shed is not None and cur_shed.loc == cam.loc and cur_shed.room == cam.id:
                         # есть персонаж в комнате
                         char_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
 
@@ -496,21 +521,28 @@ init python:
                 cam.events = cam.events[:24]
 
                 # прирост публики от рекламы
-                if grow_list[i] > 0:
-                    if cam.public > 0:
-                        cam.public += cam.public/100 * (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
-                    else:
-                        cam.public = (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
+                if len(grow_list) >= i:
+                    if grow_list[i] > 0:
+                        if cam.public > 500:
+                            cam.public += cam.public/500 * (renpy.random.randint(800,1200) / 1000.0) * grow_list[i] # после 500 зрителей набор за счет рекламы замедляется
+                        elif cam.public > 50:
+                            cam.public += cam.public/100 * (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
+                        else:
+                            cam.public += (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
 
                 # итоговое значение количества зрителей в зависимости от происходивших фоновых и активных событий
                 cam.public = cam.public * GetCamQ(cam.events) + (renpy.random.randint(900,1100) / 1000.0) * cam.public/100 + cam.public*cam.gain/1000
                 cam.dain = 0 # обнуление прироста от активного события
 
                 # расчет полученной прибыли
-                profit = (renpy.random.randint(850,1150) / 1000.0) * 10 * cam.public / 1000 # $10 на каждую тысячу зрителей с поправкой на коэффициент неопределенности в 15%
+                # $10 на каждую тысячу зрителей в час с поправкой на коэффициент неопределенности в 15% (т.к. расчет каждые 10 минут, то делим не на 1000, а на 6000)
+                profit = (renpy.random.randint(850,1150) / 1000.0) * 10 * cam.public / 6000
 
                 cam.profit += profit
                 if cur_tm == "03:00":
                     cam.day = 0
                 else:
                     cam.day += profit
+        for i in range(cycles):
+            grow_list.append(0)
+        grow_list = grow_list[-(155*6):]

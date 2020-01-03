@@ -5,7 +5,7 @@ label after_breakfast:
     $ current_room = house[5]
     $ AvailableActions["dishes"].enabled = True
 
-    $ Distribution()
+    # $ Distribution()
     jump Waiting
 
 

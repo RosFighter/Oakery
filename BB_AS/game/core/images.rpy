@@ -40,7 +40,6 @@ init python:
 
 image video1_movie = Movie(play="video/Impulse.webm", image="images/interface/laptop/start_page.webp", size=(1475, 829))
 
-
 # image AnimAnnEric1:
 #     "Animation AnnEric1 01"
 #     0.06

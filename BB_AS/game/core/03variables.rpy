@@ -135,7 +135,7 @@ default AvailableActions = {
     "searchciga"  : ActionsButton(_("ИСКАТЬ\nСИГАРЕТЫ"), "interface search", "SearchCigarettes"),
     "searchbook"  : ActionsButton(_("ИСКАТЬ\nКНИГУ"), "interface search", "SearchSecretBook"),
     "clearpool"   : ActionsButton(_("ЧИСТИТЬ\nБАССЕЙН"), "interface clearpool", "ClearPool"),
-    "readbook"    : ActionsButton(_("ЧИТАТЬ"), "interface book", "BookRead"),
+    "readbook"    : ActionsButton(_("ЧИТАТЬ"), "interface book", "BookRead", True),
     "searchcam"   : ActionsButton(_("ИСКАТЬ\nКАМЕРУ"), "interface search", "SearchCam"),
     "unbox"       : ActionsButton(_("РАЗОБРАТЬ\nКОРОБКИ"), "interface box", "Box"),
     "notebook"    : ActionsButton(_("ВКЛЮЧИТЬ\nНОУТБУК"), "interface notebook", "Notebook", True),
@@ -203,7 +203,7 @@ default items = {
     "erobook_4": Item(_("КНИГА ОРГАЗМОВ"), _("Что получится, если собрать самые горячие истории об оргазмах от 69 различных авторов?"), "erobook-4", 1, 75, True),
     "erobook_5": Item(_("ИСТОРИЯ О"), _("Это история о доминировании и подчинении. История об одной прекрасной девушке по имени О."), "erobook-5", 1, 100, True),
     "ladder": Item(_("Стремянка"), _("Небольшая стремянка, позволяющая достать то, для чего не хватает роста"), "ladder", 7, cells=2),
-    "manual": Item(_("WEB STANDARDS"), _("Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."), "manual-1", 1, 100, True),
+    "manual": Item(_("WEB STANDARDS"), _("Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."), "manual-1", 1, 100, True, need_read=5),
     #"": Item(_(""), _(""), "", , ),
     }
 
@@ -281,16 +281,16 @@ default random_suf = renpy.random.choice(["a", "b"])
 
 # переменные со счетчиком дней
 default dcv = {
-    "pool_cleaned"    : Dayly(enabled=True),
-    "order_cosmetics" : Dayly(enabled=True),
-    "order_product"   : Dayly(enabled=True),
+    "clearpool" : Dayly(done=True, enabled=True),
+    "ordercosm" : Dayly(done=True, enabled=True),
+    "buyfood"   : Dayly(done=True, enabled=True),
     }
 
 # события, запускаемые в конкретное время
 default EventsByTime = {
     "breakfast"        : CutEvent("09:00", label="breakfast", desc="завтрак", cut=True),
     "dinner"           : CutEvent("19:00", label="dinner", desc="ужин", cut=True),
-    "shoping"          : CutEvent("11:00", (6, ), False, "shoping", "семейный шопинг"),
+    "shoping"          : CutEvent("11:00", (6, ), "shoping", "семейный шопинг"),
     "MorningWood"      : CutEvent("06:30", label="MorningWood", variable="day == 2", sleep=True, desc="утренний стояк", extend=True),
     "AfterSchoolFD"    : CutEvent("16:00", label="AfterSchoolFD", variable="day == 1", desc="Лиза первый раз приходит из школы", cut=True),
     "Wearied"          : CutEvent("03:30", label="Wearied", sleep=False, desc="поспать бы надо"),
@@ -356,11 +356,11 @@ default alice_dress = {
 # Возможности
 default possibility = {
     "cams" : Poss(_("Скрытые камеры"), [
-            PossStage("interface poss cams 00", _("Я нашёл пустую коробку из под скрытой камеры. Видимо, она установлена где-то в доме. Нужно поискать как следует - вдруг, кто-то за нами наблюдал всё это время?")),
-            PossStage("interface poss cams 01", _("Итак, я нашёл скрытую камеру в гостиной. Она вмонтирована в стену, видимо, во время ремонта. Поэтому, её нельзя вытащить, не повредив. Кроме того, оказалось, что камера сейчас ни к чему не подключена. Может быть, стоит целенаправленно изучить способы подключения камер, чтобы извлечь из неё какую-то пользу...")),
-            PossStage("interface poss cams 01", _("Ко мне пришла отличная идея - заработать на трансляции с веб-камеры в интернет, но я об этом знаю очень мало... Может быть, поможет какая-то литература?")),
-            PossStage("interface poss cams 01", _("так, я внимательно прочитал книгу Web Standards и разобрался как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100.")),
-            PossStage("interface poss cams 01", _("Наконец-то, у меня есть свой собственный сайт, где транслируется изображение с камеры из гостиной! Теперь нужно увеличить аудиторию, ведь чем больше людей, тем больше доход от рекламных баннеров. Сделать это можно с помощью вложений в рекламу своего сайта. Кроме того, если в кадре происходит что-то интересное, аудитория также растёт."),
+            PossStage("interface poss cams ep01", _("Я нашёл пустую коробку из под скрытой камеры. Видимо, она установлена где-то в доме. Нужно поискать как следует - вдруг, кто-то за нами наблюдал всё это время?")),
+            PossStage("interface poss cams ep02", _("Итак, я нашёл скрытую камеру в гостиной. Она вмонтирована в стену, видимо, во время ремонта. Поэтому, её нельзя вытащить, не повредив. Кроме того, оказалось, что камера сейчас ни к чему не подключена. Может быть, стоит целенаправленно изучить способы подключения камер, чтобы извлечь из неё какую-то пользу...")),
+            PossStage("interface poss cams ep02", _("Ко мне пришла отличная идея - заработать на трансляции с веб-камеры в интернет, но я об этом знаю очень мало... Может быть, поможет какая-то литература?")),
+            PossStage("interface poss cams ep02", _("так, я внимательно прочитал книгу Web Standards и разобрался как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100.")),
+            PossStage("interface poss cams ep02", _("Наконец-то, у меня есть свой собственный сайт, где транслируется изображение с камеры из гостиной! Теперь нужно увеличить аудиторию, ведь чем больше людей, тем больше доход от рекламных баннеров. Сделать это можно с помощью вложений в рекламу своего сайта. Кроме того, если в кадре происходит что-то интересное, аудитория также растёт."),
                       _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной «возможности» в текущей версии игры.{/i}")),
         ]),
     "seduction" : Poss(_("Наставник"), [
@@ -408,9 +408,11 @@ default talks = {
     "lisa_swim" : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
                     "possibility[\"Swimsuit\"].stage_number < 0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_sun\""),
     "lisas_boy" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1"),
-    "lisa_dw" : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_dishes\""),
-    "alice_dw" : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).label == \"alice_dishes\""),
-    "ask_money" : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var[\"ask_money\"]==0 and GetScheduleRecord(schedule_ann, day, tm).label == \"ann_dishes\""),
+    "lisa_dw"   : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_dishes\""),
+    "alice_dw"  : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).label == \"alice_dishes\""),
+    "ask_money" : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var[\"ask_money\"]==0"),
+    "aboutfood" : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv[\"buyfood\"].stage==2 and dcv[\"buyfood\"].lost==2"),
+    "aboutpool" : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv[\"clearpool\"].stage==2 and not dcv[\"clearpool\"].done"),
     }
 
 # Переменные влияющие на запуск диалогов

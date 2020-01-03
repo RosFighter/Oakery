@@ -1,0 +1,391 @@
+label StartDialog:
+    $ renpy.block_rollback()
+    if max_profile.energy < 10:
+        Max_00 "Я слишком устал. Надо бы вздремнуть..."
+        jump AfterWaiting
+
+    if len(current_room.cur_char) == 1:
+        if current_room.cur_char[0] == "lisa":
+            jump LisaTalkStart
+        elif current_room.cur_char[0] == "alice":
+            jump AliceTalkStart
+        elif current_room.cur_char[0] == "ann":
+            jump AnnTalkStart
+    jump AfterWaiting
+
+
+################################################################################
+## события Макса
+
+label Sleep:
+    $ renpy.block_rollback()
+    scene BG char Max bed-night-01
+    menu:
+        Max_00 "{i}Как же я хочу спать...{/i}"
+        "{i}спать до утра{/i}":
+            $ renpy.show("Max sleep-night "+random3_3)
+            Max_19 "Z-z-z"
+            $ number_autosave += 1
+            $ NewSaveName()
+            $ renpy.loadsave.force_autosave(True, True)
+            $ spent_time = 360
+            $ status_sleep = True
+            $ alarm_time = "08:00"
+            jump Waiting # спим 360 минут или до наступления 8 утра
+
+
+label Wearied:
+    $ renpy.block_rollback()
+    # прождали все доступное время - спим до восьми
+    scene BG char Max bed-night-01
+    menu:
+        Max_00 "{i}Я без сил и хочу спать...{/i}"
+        "{i}спать до утра{/i}":
+            $ renpy.show("Max sleep-night "+random3_1)
+            Max_19 "Z-z-z"
+            $ number_autosave += 1
+            $ NewSaveName()
+            $ renpy.loadsave.force_autosave(True, True)
+            $ current_room = house[0]
+            $ status_sleep = True
+            $ alarm_time = "08:00"
+            jump Waiting
+
+
+label LittleEnergy:
+    $ renpy.block_rollback()
+    # прождали все доступное время - спим до восьми
+    scene BG char Max bed-night-01
+    menu:
+        Max_00 "{i}Я вымотан, надо вздремнуть...{/i}"
+        "{i}вздремнуть{/i}":
+            $ renpy.show("Max sleep-night "+random3_1)
+            Max_19 "Z-z-z"
+            $ number_autosave += 1
+            $ NewSaveName()
+            $ renpy.loadsave.force_autosave(True, True)
+            $ current_room = house[0]
+            $ spent_time = 360
+            $ status_sleep = True
+            jump Waiting
+
+
+label Nap:
+    $ renpy.block_rollback()
+    scene BG char Max bed-day-01
+    if max_profile.energy > 40.0:
+        $ txt = _("{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}")
+    else:
+        $ txt = _("{i}Что-то я сегодня устал, надо бы вздремнуть...{/i}")
+
+    menu:
+        Max_19 "[txt!t]"
+        "{i}подремать пару часов{/i}":
+            $ spent_time = 2 * 60
+        "{i}подремать 3 часа{/i}" if tm <= "16:00":
+            $ spent_time = 3 * 60
+        "{i}подремать 4 часа{/i}" if tm <= "15:00":
+            $ spent_time = 4 * 60
+        "{i}подремать 5 часов{/i}" if tm <= "14:00":
+            $ spent_time = 5 * 60
+        "{i}не-а, может позже...{/i}":
+            jump AfterWaiting
+
+    $ renpy.show("Max nap "+random3_1+dress_suf["max"])
+    Max_19 "Z-z-z"
+    $ status_sleep = True
+    jump Waiting
+
+
+label Alarm:
+    $ renpy.block_rollback()
+    scene BG char Max bed-night-01
+    menu:
+        Max_00 "{i}В каком часу я должен встать?{/i}"
+        # "{i}в 5 утра{/i}":
+        #     $ alarm_time = "05:00"
+        "{i}в 6 утра{/i}":
+            $ alarm_time = "06:00"
+        "{i}в 7 утра{/i}":
+            $ alarm_time = "07:00"
+        "{i}не-а, может позже...{/i}":
+            jump AfterWaiting
+    $ renpy.show("Max sleep-night "+random3_2)
+    Max_19 "Z-z-z"
+    $ number_autosave += 1
+    $ NewSaveName()
+    $ renpy.loadsave.force_autosave(True, True)
+    $ spent_time = 420
+    $ status_sleep = True
+    jump Waiting
+
+
+label Shower:
+    $ renpy.block_rollback()
+    scene BG shower-closer
+    $ renpy.show("Max shower "+renpy.random.choice(["01", "02", "03"]))
+    show FG shower-water
+
+    menu:
+        Max_19 "Хорошо быть чистым..."
+        "{i}закончить{/i}":
+            $ max_profile.cleanness = 100
+
+    $ spent_time = 30
+    jump Waiting
+
+
+label Box:
+    $ renpy.block_rollback()
+    $ max_profile.energy -= 5.0
+    scene Max unbox 01
+    Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
+    scene Max unbox 02
+    Max_09 "Жаль, но все коробки пустые... Но что это такое? Какая-то камера?"
+    scene Max unbox 03
+    Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
+    scene Max unbox 04
+    menu:
+        Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность!\"{/i}{/color}"
+        "{i}закончить{/i}":
+            pass
+        "{i}узнать подробнее о \"Возможностях\"{/i}" if flags["about_poss"]:
+            call about_poss from _call_about_poss
+    $ possibility["cams"].stage_number = 0
+    $ possibility["cams"].stages[0].used = True
+    $ AvailableActions["unbox"].enabled = False
+    $ AvailableActions["searchcam"].enabled = True
+    $ InspectedRooms.clear()
+    if CurPoss == "":
+        $ CurPoss = "cams"
+    $ spent_time = 30
+    jump Waiting
+
+
+label Notebook:
+    $ renpy.block_rollback()
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-00
+        $ renpy.show("Max laptop-day 01"+dress_suf["max"])
+    else:
+        scene BG char Max laptop-night-00
+        $ renpy.show("Max laptop-night 01"+dress_suf["max"])
+
+    Max_00 "Итак, чем интересным я займусь?"
+
+
+label Laptop:
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+
+    show interface laptop start page:
+        xpos 221 ypos 93
+        size (1475, 829)
+
+    show video1_movie:
+        xpos 221 ypos 93
+
+    $ renpy.block_rollback()
+
+    $ search_theme.clear()
+
+    if possibility["cams"].stage_number == 1:
+        $ search_theme.append((_("{i}почитать о камерах{/i}"), "about_cam"))
+    if possibility["Blog"].stage_number == 0:
+        $ search_theme.append((_("{i}читать о блогах{/i}"), "about_blog"))
+    if possibility["secretbook"].stage_number == 1:
+        $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
+
+    call screen LaptopScreen
+
+
+label LaptopShop:
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+    show interface laptop start page:
+        xpos 221 ypos 93
+        size (1475, 829)
+
+    $ renpy.block_rollback()
+    call screen OnlineShop
+
+
+label nothing_search:
+    Max_00 "Сейчас мне нечего искать..."
+    jump Laptop
+
+
+label buyfood:
+    $ renpy.block_rollback()
+    Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
+    Max_04 "Готово. Да это же самая лёгкая задача!"
+    $ spent_time = 50
+    $ dcv["buyfood"].stage = 2
+    $ dcv["buyfood"].lost = 2
+    $ money -= 50
+    jump Laptop
+
+
+label courses_start:
+    ## временно отсутствует
+    jump Laptop
+
+
+label create_site:
+    $ renpy.block_rollback()
+    menu:
+        Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100"
+        "Оплатить всё ($100)":
+            pass
+        "В другой раз...":
+            jump Laptop
+    menu:
+        Max_04 "Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом..."
+        "Настроить работу сайта":
+            pass
+    Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
+    $ spent_time = 60
+    $ possibility["cams"].stage_number = 4
+    $ possibility["cams"].stages[4].used = True
+    $ money -= 100
+    $ cams.append(HideCam("house", 5))
+    python:
+        for i in range(1, 155*6):
+            grow_list.append(0)
+
+    jump Laptop
+
+
+label open_site:
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+    show interface laptop start page:
+        xpos 221 ypos 93
+        size (1475, 829)
+
+    $ renpy.block_rollback()
+    call screen MySite
+
+
+label about_cam:
+    Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
+    Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
+    Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
+    $ spent_time = 20
+    $ possibility["cams"].stage_number = 2
+    $ possibility["cams"].stages[2].used = True
+    jump Laptop
+
+
+label SearchCam:
+    $ renpy.block_rollback()
+    if current_room == house[4]:
+        $ FoundCamera = True
+        Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
+        Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
+        Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
+        $ random_ab = "b"
+        $ AvailableActions["searchcam"].enabled = False
+        $ InspectedRooms.clear()
+        $ possibility["cams"].stage_number = 1
+        $ possibility["cams"].stages[1].used = True
+    else:
+        Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
+        $ InspectedRooms.append(current_room)
+    $ spent_time = 30
+    $ cur_ratio = 2
+    jump Waiting
+
+
+label ClearPool:
+    $ renpy.block_rollback()
+    scene BG NoImage
+    Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
+    $ dcv["clearpool"].stage = 2
+    $ dcv["clearpool"].lost = 6
+    $ spent_time = 60
+    $ cur_ratio = 2.5
+    jump Waiting
+
+
+label DishesWashed:
+    $ renpy.block_rollback()
+    if tm < "16:00":
+        scene BG crockery-morning-00
+        $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
+    else:
+        scene BG crockery-evening-00
+        $ renpy.show("Max crockery-evening 01"+dress_suf["max"])
+    menu:
+        Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?"
+        "{i}закончить{/i}":
+            pass
+    if (day+2) % 7 != 6:
+        if (day+2) % 7 == 0:
+            $ __name_label = GetScheduleRecord(schedule_alice, day, "10:30").label
+        else:
+            $ __name_label = GetScheduleRecord(schedule_alice, day, "11:30").label
+        if __name_label == "alice_dishes":
+            $ characters["alice"].mood += 6
+            if characters["alice"].relmax < 400:
+                $ HintRelMood("alice", 10, 6)
+                $ characters["alice"].relmax += 10
+            else:
+                $ HintRelMood("alice", 0, 6)
+    $ dishes_washed = True
+    $ spent_time = max((60 - int(tm[-2:])), 30)
+    $ cur_ratio = 2
+    jump Waiting
+
+
+label delivery:
+    $ renpy.block_rollback()
+
+    $ __StrDev = GetDeliveryString() # сформируем строку накладной
+
+    scene BG NoImage
+    "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    Max_00 "Конечно! А что тут?"
+    $ renpy.say("", __StrDev)
+    Max_00 "Да, то что нужно. Спасибо!"
+    $ current_room = house[6]
+
+    $ DeletingDeliveryTempVar() # удалим временные переменные и очистим список доставки
+    jump AfterWaiting
+
+
+label BookRead:
+    scene BG char Max reading-00
+    $ renpy.show("Max reading 01"+dress_suf["max"])
+    menu:
+        Max_00 "Пришло время почитать что-то..."
+        "{i}читать \"WEB STANDARDS\"{/i}" if items["manual"].have and items["manual"].read < 5:
+            jump .manual
+
+    label .manual:
+        $ items["manual"].read += 1
+        if items["manual"].read < 2:
+            Max_00 "Хм... куча непонятных слов. Кажется, нужно будет заново перечитать первые главы...\n\n{color=[orange]}{i}(Книга изучена на 20%%){/i}{/color}"
+        elif items["manual"].read < 3:
+            Max_00 "Так, ну с этим я уже разобрался, хорошо... А это что такое? Не ясно. Нужно будет всё осмыслить...\n\n{color=[orange]}{i}(Книга изучена на 40%%){/i}{/color}"
+        elif items["manual"].read < 4:
+            Max_00 "Ого, вот это здорово! Уже можно делать сайт? А, нет... Ещё не всё понятно... Ну, разберусь в другой раз.\n\n{color=[orange]}{i}(Книга изучена на 60%%){/i}{/color}"
+        elif items["manual"].read < 5:
+            Max_00 "Так, ну теперь картина вырисовывается. Осталось разобраться только с мелочами... Или это не мелочи?\n\n{color=[orange]}{i}(Книга изучена на 80%%){/i}{/color}"
+        else:
+            Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
+            $ possibility["cams"].stage_number = 3
+            $ possibility["cams"].stages[3].used = True
+            jump .end
+
+    label .end:
+        $ cooldown["learn"] = CooldownTime("04:00") # час на этап чтения и 3 часа кулдаун
+        $ spent_time = 60
+        $ cur_ratio = 0.6
+        jump Waiting

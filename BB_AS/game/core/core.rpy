@@ -95,8 +95,7 @@ label Waiting:
                 if dcv[i].enabled:
                     dcv[i].lost -= 1
                     if dcv[i].lost == 0:
-                        dcv[i].done = True
-                        dcv[i].enabled = False
+                        dcv[i].done  = True
 
         $ GetDeliveryList()
 
@@ -166,6 +165,7 @@ label Waiting:
             $ max_profile.energy = 100
     else: # в противном случае - расходуется
         $ max_profile.energy -= delt * 5 * cur_ratio / 60.0
+        $ max_profile.cleanness -= delt * 5 * cur_ratio / 60.0
 
     # обновим extra-info для сохранений
     $ NewSaveName()
@@ -182,7 +182,7 @@ label AfterWaiting:
 
     ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
     $ CamShow()
-    
+
     $ spent_time = 0
     $ cur_ratio = 1
     $ status_sleep = False
@@ -264,10 +264,11 @@ label SetAvailableActions: # включает кнопки действий
             if __CurShedRec is not None and __CurShedRec.dress != "dressed":
                 $ AvailableActions["notebook"].active = True
 
-    if current_room == house[0] or (current_room == house[5] and len(current_room.cur_char) == 0):
+    if (current_room == house[0] and "06:00" <= tm <= "21:30" and
+        __CurShedRec is not None and __CurShedRec.dress != "dressed"): 
         python:
             for key in items:
-                if items[key].need_read > items[key].read and ItsTime():
+                if items[key].have and items[key].need_read > items[key].read and ItsTime(cooldown["learn"]):
                     AvailableActions["readbook"].active = True
 
     if (current_room.cam_installed < current_room.max_cam
@@ -291,7 +292,8 @@ label SetAvailableActions: # включает кнопки действий
             $ AvailableActions["shower"].active = True
         if ("20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00") and max_profile.cleanness < 80:
             $ AvailableActions["bath"].active = False #True - временно
-        if "08:00" <= tm <= "09:00" and day < 19:
+        $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
+        if __CurShedRec.label == "alice_shower" and len(current_room.cur_char) == 1: # Алиса принимает душ одна
             $ AvailableActions["throwspider3"].active = True
 
     if current_room == house[4]:  # гостиная
@@ -310,6 +312,9 @@ label SetAvailableActions: # включает кнопки действий
                                               (len(GetTalksTheme()) > 0 or
                                                __CurShedRec.talklabel is not None)
                                              )
+    if current_room == house[6]: # двор
+        $ AvailableActions["clearpool"].enabled = ("08:00" <= tm <= "16:00") and (len(current_room.cur_char) == 0)
+        $ AvailableActions["clearpool"].active = (dcv["clearpool"].stage == 1)
 
 
 label after_load:

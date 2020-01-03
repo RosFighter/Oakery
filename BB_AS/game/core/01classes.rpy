@@ -19,7 +19,6 @@ init python:
             self.relmax    = relmax    # уровень отношений с ГГ
             self.releric   = releric   # уровень отношений с Эриком (для Эрика – None)
             self.influence = influence # влияние Эрика (для Эрика – None)
-            self.talks     = []
 
         def __repr__(self):
             return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.sufix}\","\
@@ -207,10 +206,11 @@ init python:
 
 ################################################################################
     class Dayly:
-        def __init__(self, lost=0, done=False, enabled=False, stage=0):
+        def __init__(self, lost=0, done=False, enabled=False):
             self.lost    = lost     # осталось дней до срабатываения события
             self.enabled = enabled  # дейлик активен, нужно ежедневно убавлять счетчик до 0
             self.done    = done     # счетчик достиг 0, для проверки доступности диалога
+            self.stage   = 0
         def __repr__(self):
             return "Этап: {self.stage}, осталось дней: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
 
@@ -229,7 +229,7 @@ init python:
             self.enabled  = enabled
             self.stage    = stage    # этап события. Если None - повторяемое
             self.sleep    = sleep    # для запуска нужно, чтобы Макс спал
-            self.extend   = extend   # при выполднении условия, если Макс встает раньше наступления события, то продлевать сон
+            self.extend   = extend   # при выполнении условия, если Макс встает раньше наступления события, то продлевать сон
             self.cut      = cut      # прерывать сон при наступлении события
 
         def __repr__(self):
@@ -259,3 +259,6 @@ init python:
             self.gain   = 0      # прирост зрителей от события (на каждую тысячу зрителей), обнуляется после выполнения расчета
             self.day    = 0      # прибыль за текущий день
             self.events = []     # список множителей эвентов (за последние 4 часа)
+
+        def __repr__(self):
+            return "{self.loc}[{self.id}]({self.cam}): {self.profit}({self.day}), {self.public}\n{self.events}".format(self=self)

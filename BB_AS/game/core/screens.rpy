@@ -68,6 +68,21 @@ init: # трансформации для кнопок
         on hover, selected_hover:
             size (180, 180) alpha 1.0
 
+    transform mark:
+        "interface marker red"
+        0.5
+        "interface marker yellow"
+        0.5
+        "interface marker blue"
+        0.5
+        "interface marker green"
+        0.5
+        "interface marker red"
+        0.5
+        "interface marker blue"
+        0.5
+        repeat
+
 ################################################################################
 
 screen choice_lang():
@@ -126,13 +141,32 @@ screen LaptopScreen():
                     xspacing 50
                     yspacing 40
 
-                    frame xysize(370, 235) background None:
+                    frame xysize(370, 295) background None:
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop shop" action Jump("LaptopShop") at book_marks
-                        text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 yalign 1.0 color "#FFFFFF"
+                        text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    frame xysize(370, 235) background None:
+                    frame xysize(370, 295) background None:
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
-                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 yalign 1.0 color "#FFFFFF"
+                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+
+                    if dcv["buyfood"].stage == 1:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop buyfood" action Jump("buyfood") at book_marks
+                            text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+
+                    if possibility["cams"].stage_number == 3 and money >= 100:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop CreateSite" action Jump("create_site") at book_marks
+                            text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
+
+                    if possibility["cams"].stage_number >= 4:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop opensite" action Jump("open_site") at book_marks
+                            text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
+
+            if len(search_theme) > 0:
+                frame  xpos 1055 ypos 25 background None:
+                    add "interface marker blue" at mark
 
 
 ################################################################################
@@ -140,7 +174,7 @@ screen Search():
     modal True
     # use PowerBack
     style_prefix "search"
-    frame area(634, 150, 696, 450) background "#FFFFFF":
+    frame area(635, 150, 694, 450) background "#FFFFFF":
         vbox:
             spacing 10
             text _("Что будем искать?") color "#000000"
@@ -263,7 +297,7 @@ style cat_button_text is default:
     # xpos 30
     yalign .5
     size 28
-    idle_color gui.choice_button_text_idle_color
+    idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
 
@@ -311,6 +345,7 @@ screen room_navigation():
     $  i = 0
 
     $ wait = 60 - int(tm.split(":")[1])
+    key "K_SPACE" action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")]
     hbox: # Кнопки комнат текущей локации
         yalign 0.99
         if current_room == current_location[0] and len(current_room.cur_char) > 2:
@@ -430,9 +465,14 @@ screen room_navigation():
 
     vbox:  # Время и день недели
         align(0.5, 0.01)
-        text tm xalign(0.5)
-        text weekdays[(day+2) % 7][1] xalign(0.5)
+        text tm xalign(0.5) font "hermes.ttf" size 60 drop_shadow[(2, 2)]
+        text weekdays[(day+2) % 7][1] xalign(0.5) font "hermes.ttf" size 28 drop_shadow[(2, 2)] line_leading -20
 
+    vbox: # деньги и зрители
+        align(0.99, 0.01)
+        text "$[money]" xalign(0.5) font "hermes.ttf" size 60 drop_shadow[(2, 2)]
+
+        #text weekdays[(day+2) % 7][1] xalign(0.5) font "hermes.ttf" size 28 drop_shadow[(2, 2)] line_leading -20
 
     $ kol = 0
 
@@ -441,7 +481,7 @@ screen room_navigation():
             $ kol += 1
 
     hbox:  # верхнее меню
-        align(0.02, 0.01)
+        align(0.01, 0.01)
         spacing 2
         imagebutton idle "interface menu userinfo" focus_mask True action [Hide("wait_navigation"), Show("menu_userinfo")] at small_menu
         imagebutton idle "interface menu inventory" focus_mask True action [Hide("wait_navigation"), Show("menu_inventory")] at small_menu
@@ -468,7 +508,7 @@ screen menu_my_help():
 
     add "interface phon"
     frame area(150, 95, 350, 50) background None:
-        text _("ПОЛЕЗНОЕ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+        text _("ПОЛЕЗНОЕ") color gui.accent_color size 28 font "hermes.ttf"
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
     default CurHP = 0
@@ -492,7 +532,7 @@ screen menu_my_help():
                     hbox:
                         viewport mousewheel "change" draggable True id "vp2":
                             vbox spacing 30:
-                                text helps[CurHP].desc size 24  color gui.choice_button_text_idle_color
+                                text helps[CurHP].desc size 24  color gui.accent_color
                         vbar value YScrollValue("vp2") style "hp_vscroll"
 
     key "K_ESCAPE" action Jump("AfterWaiting")
@@ -503,7 +543,7 @@ style my_help_button_text is default:
     xpos 30
     yalign .0
     size 28
-    idle_color gui.choice_button_text_idle_color
+    idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
 
@@ -536,7 +576,7 @@ screen menu_opportunity():
 
     add "interface phon"
     frame area(150, 95, 350, 50) background None:
-        text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+        text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.accent_color size 28 font "hermes.ttf"
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
 
@@ -567,7 +607,7 @@ screen menu_opportunity():
                         hbox:
                             viewport mousewheel "change" draggable True id "vp2":
                                 vbox spacing 30:
-                                    text possibility[CurPoss].stages[view_stage].desc size 24  color gui.choice_button_text_idle_color
+                                    text possibility[CurPoss].stages[view_stage].desc size 24  color gui.accent_color
                                     text possibility[CurPoss].stages[view_stage].ps size 28
                             vbar value YScrollValue("vp2") style "poss_vscroll"
     if len(list_stage) > 1:
@@ -588,7 +628,7 @@ style opportunity_button_text is default:
     xpos 30
     yalign .0
     size 28
-    idle_color gui.choice_button_text_idle_color
+    idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
 
@@ -604,7 +644,7 @@ screen menu_inventory():
     add "interface phon2"
     style_prefix "inventory"
     frame area(150, 95, 350, 50) background None:
-        text _("ВЕЩИ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+        text _("ВЕЩИ") color gui.accent_color size 28 font "hermes.ttf"
 
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
@@ -714,7 +754,7 @@ screen menu_userinfo():
     style_prefix "userinfo"
 
     frame area(150, 95, 350, 50) background None:
-        text _("ПЕРСОНАЖИ") color gui.choice_button_text_idle_color size 28 font "hermes.ttf"
+        text _("ПЕРСОНАЖИ") color gui.accent_color size 28 font "hermes.ttf"
 
     imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
@@ -765,7 +805,7 @@ screen menu_userinfo():
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         $ char_name = characters[char].name_4
-                                        text _("Отношения с [char_name!t]") size 24 color gui.choice_button_text_idle_color
+                                        text _("Отношения с [char_name!t]") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         if characters[char].mood == -200:
                                             text _("Война") size 24
@@ -791,17 +831,17 @@ screen menu_userinfo():
 
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Запас сил") size 24 color gui.choice_button_text_idle_color
+                                    text _("Запас сил") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     text str(int(max_profile.energy))+"%" size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Тренированность") size 24 color gui.choice_button_text_idle_color
+                                    text _("Тренированность") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     text str(max_profile.training)+"%" size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Чистота") size 24 color gui.choice_button_text_idle_color
+                                    text _("Чистота") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     text str(max_profile.cleanness)+"%" size 24
 
@@ -812,30 +852,30 @@ screen menu_userinfo():
                                 text _("Навыки:") size 26 font "trebucbd.ttf"
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Навык убеждения") size 24 color gui.choice_button_text_idle_color
+                                    text _("Навык убеждения") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     text str(max_profile.persuade) size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Навык скрытности") size 24 color gui.choice_button_text_idle_color
+                                    text _("Навык скрытности") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     text str(max_profile.stealth) size 24
                             if max_profile.massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        text _("Навык массажа") size 24 color gui.choice_button_text_idle_color
+                                        text _("Навык массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(max_profile.massage) size 24
                             if max_profile.ero_massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        text _("Навык эро.массажа") size 24 color gui.choice_button_text_idle_color
+                                        text _("Навык эро.массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(max_profile.ero_massage) size 24
                             if max_profile.kissing > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        text _("Навык поцелуев") size 24 color gui.choice_button_text_idle_color
+                                        text _("Навык поцелуев") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(max_profile.kissing) size 24
 
@@ -847,7 +887,7 @@ screen menu_userinfo():
                             # mood
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Настроение") size 24 color gui.choice_button_text_idle_color
+                                    text _("Настроение") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     if characters[CurChar].mood == -100:
                                         text _("Ужасное") size 24
@@ -870,7 +910,7 @@ screen menu_userinfo():
                             # relmax
                             hbox xfill True:
                                 frame xsize 350 background None:
-                                    text _("Уровень отношений") size 24 color gui.choice_button_text_idle_color
+                                    text _("Уровень отношений") size 24 color gui.accent_color
                                 frame xfill True background None:
                                     if characters[CurChar].relmax == -200:
                                         text _("Война") size 24
@@ -895,14 +935,14 @@ screen menu_userinfo():
                             if not characters[CurChar].mindedness is None:
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        text _("Раскрепощенность") size 24 color gui.choice_button_text_idle_color
+                                        text _("Раскрепощенность") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(characters[CurChar].mindedness) size 24
                             if not characters[CurChar].releric is None:
                                 # releric
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        text _("Отношения с Эриком") size 24 color gui.choice_button_text_idle_color
+                                        text _("Отношения с Эриком") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         if characters[CurChar].releric == -3:
                                             text _("Война") size 24
@@ -926,7 +966,7 @@ screen menu_userinfo():
                                 # influence
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        text _("Влияние Эрика") size 24 color gui.choice_button_text_idle_color
+                                        text _("Влияние Эрика") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(characters[CurChar].mindedness)+"%" size 24
     key "K_ESCAPE" action Jump("AfterWaiting")
@@ -937,7 +977,7 @@ style userinfo_button_text is default:
     xpos 30
     yalign .0
     size 30
-    idle_color gui.choice_button_text_idle_color
+    idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
 

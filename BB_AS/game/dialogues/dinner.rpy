@@ -1,12 +1,12 @@
 
 label after_dinner:
     $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
-    $ tm = "20:00"
+    $ spent_time = 60
     $ current_room = house[5]
     $ current_room.cur_bg = "location house terrace dinner-b"
 
-    $ Distribution()
-    jump AfterWaiting
+    # $ Distribution()
+    jump Waiting
 
 
 label typical_dinner:
