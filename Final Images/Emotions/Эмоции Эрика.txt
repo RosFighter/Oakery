@@ -1,0 +1,18 @@
+eeric-00 = emo-80
+eeric-01 = emo-86
+eeric-02 = emo-83
+eeric-03 = emo-84
+eeric-04 = emo-93
+eeric-05 = emo-87
+eeric-06 = emo-90
+eeric-07
+eeric-08
+eeric-09 = emo-81
+eeric-10 = emo-91
+eeric-11
+eeric-12
+eeric-13 = emo-82
+eeric-14 = emo-88
+eeric-15 = emo-92
+eeric-16
+eeric-17 = emo-94
