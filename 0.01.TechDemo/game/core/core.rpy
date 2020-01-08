@@ -249,7 +249,7 @@ label SetAvailableActions: # включает кнопки действий
 
         if max_profile.energy > 10:
             if __CurShedRec is not None and __CurShedRec.dress != "dressed":
-                $ AvailableActions["notebook"].active = True
+                $ AvailableActions["notebook"].active = False
 
     if (current_room == house[0] and "06:00" <= tm <= "21:30" and
         __CurShedRec is not None and __CurShedRec.dress != "dressed"):
@@ -271,7 +271,7 @@ label SetAvailableActions: # включает кнопки действий
 
     if current_room == house[3]:  # ванная комната
         if "06:00" <= tm <= "18:00" and max_profile.cleanness < 80:
-            $ AvailableActions["shower"].active = True
+            $ AvailableActions["shower"].active = False #True - временно
         if ("20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00") and max_profile.cleanness < 80:
             $ AvailableActions["bath"].active = False #True - временно
         $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)

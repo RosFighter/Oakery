@@ -603,9 +603,9 @@ translate english strings:
 
     # game/core/03variables.rpy:46
     old "семейный завтрак"
-    new ""
+    new "family breakfast"
 
     # game/core/03variables.rpy:46
     old "семейный ужин"
-    new ""
+    new "family dinner"
 
