@@ -1,5 +1,4 @@
 init python:
-    import math
 
     def AddTime(ts, delta=1):
         """Увеличивает время, заданное в формате 'hh:mm' на delta минут"""
@@ -54,8 +53,8 @@ init python:
             # добавим в новый список добавляемых расписаний дни без изменений, если список дней не пустой
             if len(list_of_day):
                 new_schedule.append(
-                    Schedule(list_of_day, ed.ts, ed.te, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift, ed.weekstart,
-                             ed.variable, ed.dress))
+                    Schedule(list_of_day, ed.ts, ed.te, ed.name, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift, ed.weekstart,
+                             ed.variable, ed.enabletalk, ed.talklabel, ed.glow))
 
         new_schedule = set(new_schedule)
 
@@ -67,12 +66,12 @@ init python:
                 list_of_day = tuple(day for day in ed.lod if day in nsh.lod)
                 if ed.ts < nsh.ts < ed.te and len(list_of_day):
                     new_schedule.append(
-                        Schedule(list_of_day, ed.ts, AddTime(nsh.ts, -1), ed.desc, ed.loc, ed.room, ed.label, ed.krat,
-                                 ed.shift, ed.weekstart, ed.variable, ed.dress))
+                        Schedule(list_of_day, ed.ts, AddTime(nsh.ts, -1), ed.name, ed.desc, ed.loc, ed.room, ed.label, ed.krat,
+                                 ed.shift, ed.weekstart, ed.variable, ed.enabletalk, ed.talklabel, ed.glow))
                 if ed.ts < nsh.te < ed.te and len(list_of_day):
                     new_schedule.append(
-                        Schedule(list_of_day, AddTime(nsh.te), ed.te, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift,
-                                 ed.weekstart, ed.variable, ed.dress))
+                        Schedule(list_of_day, AddTime(nsh.te), ed.te, ed.name, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift,
+                                 ed.weekstart, ed.variable, ed.enabletalk, ed.talklabel, ed.glow))
 
             # удалим старые строки из начального списка
             schedule.remove(ed)
@@ -200,13 +199,13 @@ init python:
             for room in locations[loc]:
                 room.cur_char = []
                 if "06:00" <= tm < "11:00":
-                    room.cur_bg = "location "+str(loc)+" "+room.id+" morning-"+random_ab
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" morning-"+random_loc_ab
                 elif "11:00" <= tm < "18:00":
-                    room.cur_bg = "location "+str(loc)+" "+room.id+" day-"+random_ab
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" day-"+random_loc_ab
                 elif "18:00" <= tm < "21:00":
-                    room.cur_bg = "location "+str(loc)+" "+room.id+" evening-"+random_ab
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" evening-"+random_loc_ab
                 else:
-                    room.cur_bg = "location "+str(loc)+" "+room.id+" night-"+random_ab
+                    room.cur_bg = "location "+str(loc)+" "+room.id+" night-"+random_loc_ab
 
         for char in characters:
 
@@ -214,8 +213,6 @@ init python:
             if schedule_char is not None:
                 if schedule_char.loc != "" and not schedule_char.loc is None:
                     eval(schedule_char.loc+"["+str(schedule_char.room)+"].cur_char.append(\""+char+"\")")
-
-                characters[char].sufix = schedule_char.dress
 
 
     def Wait(delta):
@@ -444,105 +441,419 @@ init python:
 
 
     def BuyPromotion(): #Покупка пакета рекламы
-        global grow_list
-        for i in range(1, 155*6):
-            if i > len(grow_list):
-                grow_list.append(0)
+        global money
+        money -= 50
 
-            if i < 42:
-                grow_list[i-1] = grow_list[i-1]*0.7+ (0.5*pow(i/6.0, 2)) #/ 6
-            elif i > 300:
-                grow_list[i-1] = grow_list[i-1]*0.7+ (6840.0/i - math.log(i/6.0, 2)) #/ 6
-            else:
-                grow_list[i-1] = grow_list[i-1]*0.7+ (pow(170*i/6.0, 0.5) - 0.25*i) #/ 6
+        ef = 10 + renpy.random.randint(-100, 100)/100.0 # процент эффективности рекламы
+        k = 0
+        for loc in locations:
+            for room in locations[loc]:
+                for cam in room.cams:
+                    if cam.HD:
+                        ef += 10.0 / (1 + k) # каждая HD-камера немного повышает эффективность рекламы
 
-
-    def Average(lst):
-        if len(lst) > 0:
-            return float(sum(lst)) / len(lst)
-        else:
-            return 0.0
-
-
-    def GetCamQ(lst):
-        """ возвращает событийный коэффициент камеры """
-        if len(lst) == 0:
-            return 1.0
-        s = 0
-        for i in range(len(lst)):
-            s += lst[i] * (0.5 + math.sin(i / 10))
-
-        return s / len(lst)
+        site.invited += int(round(10000 * ef / 100.0, 0))
+        renpy.notify(_("Приобретен пакет рекламы"))
 
 
     def CamShow(): # расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
-        global grow_list, cams_earnings, cams
-
+        global earn
         char_list = []
-        # вычислим начало отсчета событий
-        prevday = day
-        h, m = tm.split(":")
-        ti = int(h)*60 + int(m) - spent_time
-        if ti > 0:
-            h = ti // 60
-            m = ti % 60
+
+        cameras = [] # список установленных камер
+        earned = 0 # вся полученная с камер прибыль
+        for loc in locations:
+            for room in locations[loc]:
+                for cam in room.cams:
+                    cameras.append(cam)
+                    earned += cam.total
+
+        if len(cameras) == 0:
+            return
+
+        if earned > 5000:
+            temp_k = 400
+        elif earned > 2500:
+            temp_k = 450
+        elif earned > 500:
+            temp_k = 500
         else:
-            ti = -1 * ti
-            prevday = day - (ti // 1440)
-            h = (1440 - (ti % 1140)) // 60
-            m = (1440 - (ti % 1140)) % 60
-        prevtm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
+            temp_k = 600
+
+        temp_k += renpy.random.randint(-25, 51)
+
+        if len(cameras) > 5:
+            kk = 16.0
+        elif len(cameras) > 4:
+            kk = 15.0
+        elif len(cameras) > 2:
+            kk = 14.0
+        elif len(cameras) > 1:
+            kk = 12.0
+        else:
+            kk = 10.0
+
+        cam2 = [] # список камер с повышенным зрительским интересом
 
         cycles = spent_time / 10 # расчет выполняется каждые 10 минут
-        for cam in cams:
-            for i in range(cycles):
-                # рассчитаем время события
-                h, m = prevtm.split(":")
-                ti = int(h)*60 + int(m) + 10*i
-                d = ti // 1440
-                h = (ti % 1440) // 60
-                m = ti % 60
-
-                cur_tm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
-
-                char_list.clear()
-                for char in characters:
-                    ## получим расписание персонажа на этот момент
-                    cur_shed = GetScheduleRecord(eval("schedule_"+char), prevday+d, cur_tm)
-                    if cur_shed is not None and cur_shed.loc == cam.loc and cur_shed.room == cam.id:
-                        # есть персонаж в комнате
-                        char_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
-
-                if len(char_list) > 0:
-                    cam.events.insert(0, Average(char_list)/len(char_list))
-                else:
-                    cam.events.insert(0, 0.75) # если в комнате никого нет, 25% снижение интереса к камере
-
-                cam.events = cam.events[:24]
-
-                # прирост публики от рекламы
-                if len(grow_list) >= i:
-                    if grow_list[i] > 0:
-                        if cam.public > 500:
-                            cam.public += cam.public/500 * (renpy.random.randint(800,1200) / 1000.0) * grow_list[i] # после 500 зрителей набор за счет рекламы замедляется
-                        elif cam.public > 50:
-                            cam.public += cam.public/100 * (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
-                        else:
-                            cam.public += (renpy.random.randint(800,1200) / 1000.0) * grow_list[i]
-
-                # итоговое значение количества зрителей в зависимости от происходивших фоновых и активных событий
-                cam.public = cam.public * GetCamQ(cam.events) + (renpy.random.randint(900,1100) / 1000.0) * cam.public/100 + cam.public*cam.gain/1000
-                cam.dain = 0 # обнуление прироста от активного события
-
-                # расчет полученной прибыли
-                # $10 на каждую тысячу зрителей в час с поправкой на коэффициент неопределенности в 15% (т.к. расчет каждые 10 минут, то делим не на 1000, а на 6000)
-                profit = (renpy.random.randint(850,1150) / 1000.0) * 10 * cam.public / 6000
-
-                cam.profit += profit
-                if cur_tm == "03:00":
-                    cam.day = 0
-                else:
-                    cam.day += profit
         for i in range(cycles):
-            grow_list.append(0)
-        grow_list = grow_list[-(155*6):]
+            if site.invited > 500:
+                watchers = round(float(site.invited) / renpy.random.randint(240, 342)) # количество привлеченных рекламмой зрителей
+            elif site.invited > 250:
+                watchers = round(float(site.invited) / renpy.random.randint(120, 171)) # количество привлеченных рекламмой зрителей
+            else:
+                watchers = round(float(site.invited) / renpy.random.randint(40, 57)) # количество привлеченных рекламмой зрителей
+
+            cam2.clear()
+            # рассчитаем время события
+            h, m = prevtime.split(":")
+            ti = int(h)*60 + int(m) + 10*i
+            h = (ti % 1440) // 60
+            m = ti % 60
+            cur_day = prevday + ti // 1440
+            cur_tm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
+
+            for loc in locations:
+                num_room = 0
+                for room in locations[loc]:
+                    for cam in room.cams:
+                        # определим наличее персонажей в комнате
+                        char_list.clear()
+                        for char in characters:
+                            ## получим расписание персонажа на этот момент
+                            cur_shed = GetScheduleRecord(eval("schedule_"+char), cur_day, cur_tm)
+                            if cur_shed is not None and cur_shed.loc == loc and cur_shed.room == num_room:
+                                # есть персонаж в комнате
+                                char_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
+
+                        if len(char_list) == 0:
+                            if cam.grow > 100:
+                                cam.grow = 100
+                            elif room == current_room:
+                                cam.grow = max(cam.grow, 90)
+                            else:
+                                if cam.grow - 5 < 10:
+                                    cam.grow = 10
+                                elif cam.grow - 5 > 200:
+                                    cam.grow = 200
+                                else:
+                                    cam.grow = cam.grow - 1
+                        elif len(char_list) == 1:
+                            cam.grow = max(cam.grow, 105, char_list[0])
+                        else: # персонажей больше одного
+                            cam.grow = max(cam.grow, 115, max(char_list))
+
+                        if cam.grow > 115:
+                            cam2.append(cam)
+
+                        if cam.public > temp_k + 200:
+                            cam.grow = min(cam.grow, 90)
+                        elif cam.public > temp_k + 150:
+                            cam.grow = min(cam.grow, 95)
+                        elif cam.public > temp_k + 100:
+                            cam.grow = min(cam.grow, 98)
+                        elif cam.public > temp_k:
+                            cam.grow = min(cam.grow, 105)
+                        elif cam.public > temp_k - 100:
+                            cam.grow = min(cam.grow, 110)
+                        elif cam.public > temp_k - 200:
+                            cam.grow = min(cam.grow, 120)
+
+                        cam.public = cam.public * cam.grow / 100.0
+                        earn = cam.public / cam.grow
+                        earn = earn / 5.0
+                        earn = round(earn, 4)
+                        cam.total += earn
+                        if cur_tm == "04:00":
+                            cam.today = 0
+                        else:
+                            cam.today += earn
+                        site.account += earn
+                    num_room += 1
+
+            if len(cam2) > 0:
+                pub = watchers / len(cam2)
+                for cam in cam2:
+                    cam.public += pub
+            else:
+                pub = watchers / len(cameras)
+                for cam in cameras:
+                    cam.public += pub
+
+            site.invited -= watchers
+            for loc in locations:
+                for room in locations[loc]:
+                    for cam in room.cams:
+                        cam.public = int(cam.public)
+
+
+    def Withdraw():
+        global money
+        money += int(site.account)
+        site.account -= int(site.account)
+
+
+    def SetAvailableActions(): # включает кнопки действий
+
+        # Обнулим кнопки
+        for key in AvailableActions:
+            AvailableActions[key].active = False
+
+        # активируем поиск камеры, если в комнате никого и комната не проверена
+        if current_room not in InspectedRooms and len(current_room.cur_char) == 0:
+            AvailableActions["searchcam"].active = True
+
+        # актувируем установку камеры, если она есть в сумке, в локации никого и есть место для установки
+        if (len(current_room.cams) < current_room.max_cam and items["hide_cam"].have
+                                                          and len(current_room.cur_char) == 0):
+            AvailableActions["install"].active = True
+
+        # в текущей локации кто-то есть, активируем диалог
+        if len(current_room.cur_char) > 0:
+            AvailableActions["talk"].active = True
+
+        # установка разрешения диалога
+        if len(current_room.cur_char) == 1:
+            CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)
+            # если при данном занятии разрешен диалог и
+            #   есть тема для разговора или приближение
+            AvailableActions["talk"].enabled = (CurShedRec.enabletalk and
+                                                  (len(GetTalksTheme()) > 0 or
+                                                   CurShedRec.talklabel is not None)
+                                                )
+
+        # комната Макса и Лизы
+        if current_room == house[0]:
+            CurShedRec = GetScheduleRecord(schedule_lisa, day, tm)
+
+            if (CurShedRec is not None and CurShedRec.name != "dressed" and "08:00" <= tm < "21:30"):
+                AvailableActions["unbox"].active = True
+
+            if "00:00" <= tm <= "04:00":
+                AvailableActions["alarm"].active = True
+                AvailableActions["sleep"].active = True
+            if "11:00" <= tm <= "17:00":
+                AvailableActions["nap"].active = True
+
+            if max_profile.energy > 5:
+                if CurShedRec is not None and CurShedRec.name != "dressed":
+                    AvailableActions["notebook"].active = True
+
+            if ("06:00" <= tm <= "21:30" and CurShedRec is not None
+                                         and CurShedRec.name != "dressed"):
+                for key in items:
+                    if items[key].have and items[key].need_read > items[key].read and ItsTime(cooldown["learn"]):
+                        AvailableActions["readbook"].active = True
+
+        # комната Алисы
+        if current_room == house[1] and len(current_room.cur_char) == 0:
+            AvailableActions["usb"].active = True
+            AvailableActions["searchbook"].active = True
+            AvailableActions["searchciga"].active = True
+            if items["spider"].have:
+                AvailableActions["hidespider"].active = True
+
+        # ванная комната
+        if current_room == house[3]:
+            CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
+            if CurShedRec.label == "alice_shower" and len(current_room.cur_char) == 1: # Алиса принимает душ одна
+                AvailableActions["throwspider3"].active = True
+            if "06:00" <= tm <= "18:00" and max_profile.cleanness < 80:
+                AvailableActions["shower"].active = True
+            if ("20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00") and max_profile.cleanness < 80:
+                AvailableActions["bath"].active = False #True - временно
+
+        # гостиная
+        if current_room == house[4]:
+            CurShedRec = GetScheduleRecord(schedule_ann, day, tm)
+            if items["ann_movie"].have and CurShedRec is not None and CurShedRec.label == "ann_tv":
+                AvailableActions["momovie"].active = True
+            if not dishes_washed and len(current_room.cur_char) == 0:
+                AvailableActions["dishes"].active = True
+
+        # двор
+        if current_room == house[6]:
+            AvailableActions["clearpool"].enabled = ("08:00" <= tm <= "16:00") and (len(current_room.cur_char) == 0)
+            AvailableActions["clearpool"].active = (dcv["clearpool"].stage == 1)
+
+
+    def ChoiceClothes():
+        for char in characters:
+            prev_shed = GetScheduleRecord(eval("schedule_"+char), prevday, prevtime)
+            cur_shed  = GetScheduleRecord(eval("schedule_"+char), day, tm)
+            if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
+                # ПРОВЕРИМ НЕОБХОДИМОСТЬ ОбНОВЛЕНИЯ РАНДОМНОЙ ОДЕЖДЫ (временный блок)
+                if prevtime < "04:00" <= tm:
+                    cloth_type["ann"]["cooking"]  = renpy.random.choice(["a", "b"])
+                    cloth_type["alice"]["casual"] = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["swim"]    = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["casual"]  = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["learn"]   = renpy.random.choice(["a", "b", "c"])
+                    max_profile.dress = renpy.random.choice(["a", "b"])
+                elif prevtime < "16:00" <= tm and day > 1:
+                    cloth_type["ann"]["cooking"] = "b"
+                    cloth_type["lisa"]["casual"] = renpy.random.choice(["a", "b"])
+
+                elif prevtime < "22:00" <= tm and day > 1:
+                    cloth_type["ann"]["rest"]   = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["sleep"] = renpy.random.choice(["a", "b"])
+
+                ClothingNps(char, cur_shed.name)
+
+
+    def ClothingNps(char, name):
+        if name == "dressed":
+            characters[char].dress_inf = "00b"
+        elif char == "lisa":
+            if name == "sleep":
+                characters["lisa"].dress = cloth_type["lisa"]["sleep"]
+                if cloth_type["lisa"]["sleep"] == "a":
+                    characters["lisa"].dress_inf = "02"
+                else:
+                    characters["lisa"].dress_inf = "02a"
+            elif name == "shower" or name == "bath":
+                characters["lisa"].dress_inf = "02"
+            elif (name == "breakfast" or name == "dishes" or name == "phone"
+                                                          or name == "dinner"):
+                characters["lisa"].dress = cloth_type["lisa"]["casual"]
+                if cloth_type["lisa"]["casual"] == "a":
+                    characters["lisa"].dress_inf = "01a"
+                else:
+                    characters["lisa"].dress_inf = "04"
+            elif name == "in_shcool":
+                characters["lisa"].dress_inf = "01b"
+            elif name == "in_shop" or "at_tutor":
+                characters["lisa"].dress_inf = "01"
+            elif name == "sun":
+                characters["lisa"].dress = cloth_type["lisa"]["swim"]
+                if cloth_type["lisa"]["swim"] == "a":
+                    characters["lisa"].dress_inf = "03"
+                else:
+                    characters["lisa"].dress_inf = "03b"
+            elif name == "swim":
+                characters["lisa"].dress = cloth_type["lisa"]["swim"]
+                if pose3_1 == "a":
+                    if cloth_type["lisa"]["swim"] == "a":
+                        characters["lisa"].dress_inf = "03a"
+                    else:
+                        characters["lisa"].dress_inf = "03c"
+                else:
+                    if cloth_type["lisa"]["swim"] == "a":
+                        characters["lisa"].dress_inf = "03"
+                    else:
+                        characters["lisa"].dress_inf = "03b"
+            elif name == "homework":
+                characters["lisa"].dress = cloth_type["lisa"]["learn"]
+                if cloth_type["lisa"]["learn"] == "a":
+                    characters["lisa"].dress_inf = "01a"
+                elif cloth_type["lisa"]["learn"] == "b":
+                    characters["lisa"].dress_inf = "04"
+                else:
+                    characters["lisa"].dress_inf = "04b"
+            else:
+                characters["lisa"].dress = "a"
+                characters["lisa"].dress_inf = "01a"
+
+        elif char == "alisa":
+            if name == "sleep":
+                characters["alisa"].dress_inf = "02"
+            elif name == "shower" or name == "bath":
+                characters["alisa"].dress_inf = "04aa"
+            elif name == "breakfast" or name == "read" or name == "dinner":
+                characters["alisa"].dress = cloth_type["alisa"]["casual"]
+                if cloth_type["alisa"]["casual"] == "a":
+                    characters["alisa"].dress_inf = "01a"
+                else:
+                    characters["alisa"].dress_inf = "01c"
+            elif name == "resting" or name == "blog" or name == "tv":
+                characters["alisa"].dress = cloth_type["alisa"]["casual"]
+                if cloth_type["alisa"]["casual"] == "a":
+                    if "09:00" <= tm < "20:00":
+                        characters["alisa"].dress_inf = "01a"
+                    else:
+                        characters["alisa"].dress_inf = "01aa"
+                else:
+                    if "09:00" <= tm < "20:00":
+                        characters["alisa"].dress_inf = "01c"
+                    else:
+                        characters["alisa"].dress_inf = "01ca"
+            elif name == "sun":
+                characters["alisa"].dress_inf = "03"
+            elif name == "swim":
+                if pose3_2 == "a":
+                    characters["alisa"].dress_inf = "03a"
+                else:
+                    characters["alisa"].dress_inf = "03"
+            elif name == "in_shop" or name == "at_friends":
+                characters["alisa"].dress_inf = "01"
+            elif name == "cooking":
+                characters["alisa"].dress = cloth_type["alisa"]["casual"]
+                if cloth_type["alisa"]["casual"] == "a":
+                    characters["alisa"].dress_inf = "01b"
+                else:
+                    characters["alisa"].dress_inf = "01d"
+            else:
+                characters["alisa"].dress = "a"
+                characters["alisa"].dress_inf = "01a"
+
+        elif char == "ann":
+            if name == "sleep":
+                characters["ann"].dress_inf = "02"
+            elif name == "shower" or name == "bath":
+                characters["ann"].dress_inf = "04a"
+            elif name == "yoga":
+                characters["ann"].dress_inf = "05"
+            elif name == "cooking":
+                characters["ann"].dress = cloth_type["ann"]["cooking"]
+                if cloth_type["ann"]["cooking"] == "a":
+                    characters["ann"].dress_inf = "05b"
+                else:
+                    characters["ann"].dress_inf = "01c"
+            elif name == "breakfast":
+                characters["ann"].dress = cloth_type["ann"]["cooking"]
+                if cloth_type["ann"]["cooking"] == "a":
+                    characters["ann"].dress_inf = "05a"
+                else:
+                    characters["ann"].dress_inf = "01b"
+            elif name == "resting":
+                if tm <= "14:00":
+                    characters["ann"].dress = "a"
+                    characters["ann"].dress_inf = "01b"
+                elif tm <= "19:00":
+                    characters["ann"].dress = "b"
+                    characters["ann"].dress_inf = "03"
+                else:
+                    characters["ann"].dress = cloth_type["ann"]["rest"]
+                    if cloth_type["ann"]["rest"] == "a":
+                        characters["ann"].dress_inf = "01b"
+                    else:
+                        characters["ann"].dress_inf = "04b"
+            elif name == "at_work":
+                characters["ann"].dress_inf = "01a"
+            elif name == "in_shop":
+                characters["ann"].dress_inf = "01"
+            elif name == "read":
+                if tm < "14:00":
+                    characters["ann"].dress = "a"
+                    characters["ann"].dress_inf = "01b"
+                else:
+                    characters["ann"].dress = "b"
+                    characters["ann"].dress_inf = "03"
+            elif name == "sun":
+                characters["ann"].dress_inf = "03"
+            elif name == "swim":
+                characters["ann"].dress_inf = "03a"
+            elif name == "dinner":
+                characters["ann"].dress = cloth_type["ann"]["casual"]
+                if cloth_type["ann"]["casual"] == "a":
+                    characters["ann"].dress_inf = "01d"
+                else:
+                    characters["ann"].dress_inf = "01b"
+            elif name == "tv":
+                characters["ann"].dress_inf = "04b"
+            else:
+                characters["ann"].dress = "a"
+                characters["ann"].dress_inf = "01a"
+
+        elif char == "eric":
+            pass

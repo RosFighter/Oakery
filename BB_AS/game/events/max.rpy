@@ -23,7 +23,7 @@ label Sleep:
     menu:
         Max_00 "{i}Как же я хочу спать...{/i}"
         "{i}спать до утра{/i}":
-            $ renpy.show("Max sleep-night "+random3_3)
+            $ renpy.show("Max sleep-night "+pose3_3)
             Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
@@ -41,7 +41,7 @@ label Wearied:
     menu:
         Max_00 "{i}Я без сил и хочу спать...{/i}"
         "{i}спать до утра{/i}":
-            $ renpy.show("Max sleep-night "+random3_1)
+            $ renpy.show("Max sleep-night "+pose3_1)
             Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
@@ -54,18 +54,28 @@ label Wearied:
 
 label LittleEnergy:
     $ renpy.block_rollback()
-    # прождали все доступное время - спим до восьми
-    scene BG char Max bed-night-01
+    if "11:00" < tm <= "19:00":
+        scene BG char Max bed-day-01
+    else:
+        scene BG char Max bed-night-01
     menu:
         Max_00 "{i}Я вымотан, надо вздремнуть...{/i}"
         "{i}вздремнуть{/i}":
-            $ renpy.show("Max sleep-night "+random3_1)
+            if "11:00" < tm <= "19:00":
+                $ renpy.show("Max nap "+pose3_1+max_profile.dress)
+            else:
+                $ renpy.show("Max sleep-night "+pose3_1)
             Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
-            $ spent_time = 360
+
+            if "11:00" < tm <= "19:00":
+                $ alarm_time = "19:00"
+            else:
+                $ alarm_time = "06:00"
+            $ spent_time = 600
             $ status_sleep = True
             jump Waiting
 
@@ -91,7 +101,7 @@ label Nap:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
-    $ renpy.show("Max nap "+random3_1+dress_suf["max"])
+    $ renpy.show("Max nap "+pose3_1+max_profile.dress)
     Max_19 "Z-z-z"
     $ status_sleep = True
     jump Waiting
@@ -110,7 +120,7 @@ label Alarm:
             $ alarm_time = "07:00"
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
-    $ renpy.show("Max sleep-night "+random3_2)
+    $ renpy.show("Max sleep-night "+pose3_2)
     Max_19 "Z-z-z"
     $ number_autosave += 1
     $ NewSaveName()
@@ -166,10 +176,10 @@ label Notebook:
     $ renpy.block_rollback()
     if "06:00" <= tm < "21:00":
         scene BG char Max laptop-day-00
-        $ renpy.show("Max laptop-day 01"+dress_suf["max"])
+        $ renpy.show("Max laptop-day 01"+max_profile.dress)
     else:
         scene BG char Max laptop-night-00
-        $ renpy.show("Max laptop-night 01"+dress_suf["max"])
+        $ renpy.show("Max laptop-night 01"+max_profile.dress)
 
     Max_00 "Итак, чем интересным я займусь?"
 
@@ -252,12 +262,10 @@ label create_site:
     $ possibility["cams"].stage_number = 4
     $ possibility["cams"].stages[4].used = True
     $ money -= 100
-    $ cams.append(HideCam("house", 5))
-    python:
-        for i in range(1, 155*6):
-            grow_list.append(0)
+    $ house[4].cams.append(HideCam())
+    $ house[4].cams[0].grow = 100
 
-    jump Laptop
+    jump Waiting
 
 
 label open_site:
@@ -265,7 +273,7 @@ label open_site:
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
-    show interface laptop start page:
+    show interface laptop CoverBBCams:
         xpos 221 ypos 93
         size (1475, 829)
 
@@ -286,11 +294,12 @@ label about_cam:
 label SearchCam:
     $ renpy.block_rollback()
     if current_room == house[4]:
+        scene Max cam
         $ FoundCamera = True
         Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
         Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
         Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
-        $ random_ab = "b"
+        $ random_loc_ab = "b"
         $ AvailableActions["searchcam"].enabled = False
         $ InspectedRooms.clear()
         $ possibility["cams"].stage_number = 1
@@ -305,7 +314,8 @@ label SearchCam:
 
 label ClearPool:
     $ renpy.block_rollback()
-    scene BG NoImage
+    scene BG char Max cleeningpool-00
+    $ renpy.show("Max cleaning-pool 01"+max_profile.dress)
     Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
     $ dcv["clearpool"].stage = 2
     $ dcv["clearpool"].lost = 6
@@ -318,10 +328,10 @@ label DishesWashed:
     $ renpy.block_rollback()
     if tm < "16:00":
         scene BG crockery-morning-00
-        $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
+        $ renpy.show("Max crockery-morning 01"+max_profile.dress)
     else:
         scene BG crockery-evening-00
-        $ renpy.show("Max crockery-evening 01"+dress_suf["max"])
+        $ renpy.show("Max crockery-evening 01"+max_profile.dress)
     menu:
         Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?"
         "{i}закончить{/i}":
@@ -362,7 +372,7 @@ label delivery:
 
 label BookRead:
     scene BG char Max reading-00
-    $ renpy.show("Max reading 01"+dress_suf["max"])
+    $ renpy.show("Max reading 01"+max_profile.dress)
     menu:
         Max_00 "Пришло время почитать что-то..."
         "{i}читать \"WEB STANDARDS\"{/i}" if items["manual"].have and items["manual"].read < 5:

@@ -626,7 +626,7 @@ label wash_dishes_lisa:
                 Lisa_01 "А вот знаешь... хочу! Да, спасибо, Макс!"
                 "{i}мыть посуду{/i}":
                     scene BG crockery-morning-00
-                    $ renpy.show("Max crockery-evening 01"+dress_suf["max"])
+                    $ renpy.show("Max crockery-evening 01"+max_profile.dress)
                     $ characters["lisa"].mood += 6
                     if characters["lisa"].relmax < 400:
                         $ characters["lisa"].relmax += 10

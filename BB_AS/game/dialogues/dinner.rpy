@@ -124,11 +124,11 @@ label dinner_first:
 label dinner:
     $ renpy.block_rollback()
     scene BG dinner 00 # общий фон
-    $ renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["ann"])
-    $ renpy.show("Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"])
-    $ renpy.show("Lisa dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["lisa"])
+    $ renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
+    $ renpy.show("Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["alice"].dress)
+    $ renpy.show("Lisa dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["lisa"].dress)
     $ renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])) # стол
-    $ renpy.show("Max dinner 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["max"])
+    $ renpy.show("Max dinner 0"+renpy.random.choice(["1", "2", "3"])+max_profile.dress)
 
     if day == 1:
         jump dinner_first

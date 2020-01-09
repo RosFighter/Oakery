@@ -10,7 +10,9 @@ init python:
             self.name_5    = name_5    # имя в предложном падеже (о ком?)
             self.desc      = desc      # описание
             self.pref      = pref      # префикс (папка) изображений
-            self.sufix     = ""        # суфикс изображения в окно описания
+
+            self.dress     = "a"
+            self.dress_inf = "01a"        # суфикс изображения в окно описания
 
             self.mood      = mood      # текущее настроение
             self.ri        = ri        # (romantic interest) заинтересованность
@@ -21,7 +23,7 @@ init python:
             self.influence = influence # влияние Эрика (для Эрика – None)
 
         def __repr__(self):
-            return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.sufix}\","\
+            return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.dress_inf}\","\
                     " настроение: {self.mood}, раскрепощенность: {self.mindedness}, отношения с Максом: {self.relmax}, "\
                     "отношения с Эриком: {self.releric}, влияние Эрика: {self.influence}".format(self=self)
 
@@ -50,6 +52,7 @@ init python:
             self.cunnilingus = 0           # опыт куни
             self.sex         = 0           # сексуальный опыт
             self.anal        = 0           # опыт анального секса
+            self.dress       = "a"         # суфикс файлов одежды ("a", "b", "c"...)
 
         def __repr__(self):
             return "имя: {self.name}, описание: {self.desc}, изображение=\"{self.img}\", "\
@@ -86,12 +89,13 @@ init python:
 
 ################################################################################
     class Room:  # описание комнат в каждой локации (дом, школа, кафе и т.п.)
-        def __init__(self, id, name, icon="", max_cam=1, cam_installed=0, cur_bg="", cur_char=[]):
+        def __init__(self, id, name, cam_name, icon="", max_cam=1, cur_bg="", cur_char=[]):
             self.id            = id        # идентификатор (идентификатор конкретной комнаты в локации {my_room, alice_room...})
             self.name          = name      # Наименование для окна навигации
+            self.cam_name      = cam_name  # Наименование для камер
             self.icon          = icon      # миниатюра для окна навигации
             self.max_cam       = max_cam   # максимально возможное количество установленных камер для данной комнаты
-            self.cam_installed = cam_installed  # установленно камер в комнате
+            self.cams          = []        # список камер, установленных в комнате
             self.cur_bg        = cur_bg    # текущий фон для комнаты
             self.cur_char      = cur_char  # список персонажей, находящихся в комнате в данный момент
 
@@ -106,7 +110,7 @@ init python:
             блоки на один и тот же период с разным сдвигом в одном периоде или
             на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком """
 
-        def __init__(self, lod, ts, te, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", dress="", enabletalk=True, talklabel=None, glow=1.0):
+        def __init__(self, lod, ts, te, name, desc="", loc="", room="", label="", krat=1, shift=0, weekstart=0, variable="True", enabletalk=True, talklabel=None, glow=0):
             self.lod        = lod # lod - кортеж дней недели для действия
             # ts – время начала действия
             h, m = ts.split(":") if str(ts).find(":") > 0 else str(float(ts)).replace(".", ":").split(":")
@@ -115,6 +119,7 @@ init python:
             h, m = te.split(":") if str(te).find(":") > 0 else str(float(te)).replace(".", ":").split(":")
             self.te         = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
             # te – время окончания действия
+            self.name       = name       # наименование действия
             self.desc       = desc       # описание действия
             self.loc        = loc        # локация
             self.room       = room       # комната в локации
@@ -123,13 +128,12 @@ init python:
             self.shift      = shift      # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
             self.weekstart  = weekstart  # номер стартовой недели
             self.variable   = variable   # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
-            self.dress      = dress      # тип варианта одежды (для окна информации о персонаже)
             self.enabletalk = enabletalk # возможность разговора
             self.talklabel  = talklabel  # блок обработки начала диалога (формирует сцену старта диалога)
             self.glow       = glow       # коэффициент эмоционального накала (интерес зрителей)
 
         def __repr__(self):
-            return "дни: {self.lod}, с {self.ts}, до {self.te}, \"{self.desc}\", в {self.loc}[{self.room}], каждые {self.krat} "\
+            return "{self.name}, по дням: {self.lod}, с {self.ts}, до {self.te}, \"{self.desc}\", в {self.loc}[{self.room}], каждые {self.krat} "\
                     "нед., со сдвигом {self.shift}, начиная с {self.weekstart} недели".format(self=self)
 
 
@@ -250,15 +254,19 @@ init python:
 
 ################################################################################
     class HideCam:
-        def __init__(self, loc, id):
-            self.loc    = loc    # локация установки камеры (дом, кафе, школа и т.п.)
-            self.id     = id     # номер комнаты
-            self.cam    = 1      # номер камеры
-            self.profit = 0      # полная прибыль, полученная с камеры
-            self.public = 0      # текущее количество зрителей
-            self.gain   = 0      # прирост зрителей от события (на каждую тысячу зрителей), обнуляется после выполнения расчета
-            self.day    = 0      # прибыль за текущий день
-            self.events = []     # список множителей эвентов (за последние 4 часа)
+        def __init__(self, HD = False):
+            self.today    = 0      # прибыль за текущий день
+            self.total    = 0      # полная прибыль, полученная с камеры
+            self.public   = 0      # текущее количество зрителей
+            self.grow     = 0      # прирост
+            self.HD       = HD
 
         def __repr__(self):
-            return "{self.loc}[{self.id}]({self.cam}): {self.profit}({self.day}), {self.public}\n{self.events}".format(self=self)
+            return "Прибыль: {self.total}({self.today}), зрителей: {self.public}, прирост: {self.grow}".format(self=self)
+
+
+################################################################################
+    class MaxSite:
+        def __init__(self):
+            self.account = 0 # состояние счета
+            self.invited = 0 # привлечено зрителей за счет рекламы

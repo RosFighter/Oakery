@@ -1,3 +1,5 @@
+# init -1:
+#     $ config.layers = ["master", "transient", "wmframe", "screens", "overlay"]
 
 label splashscreen:
 
@@ -16,7 +18,7 @@ label language_chooser:
 
 
 label start:
-
+    # show screen watermark(_layer="wmframe")
     jump intro
 
 
@@ -74,11 +76,15 @@ label intro:
             menu:
                 Max_04 "Мама устроилась на новую работу. Лиза пошла в местную школу. Алиса так и сидит в своём ноуте, а я... На этом мой рассказ заканчивается и начинается что-то новое и интересное!"
                 "{i}Начать игру{/i}":
-                    jump breakfast
+                    $ spent_time = 10
+                    jump Waiting
+                    # jump breakfast
                 "{i}Повторить историю{/i}":
                     jump intro
         "{i}пропустить{/i}":
-            jump breakfast
+            $ spent_time = 10
+            jump Waiting
+            # jump breakfast
 
 label about_poss:
     $ flags["about_poss"] = False

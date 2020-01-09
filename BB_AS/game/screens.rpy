@@ -362,6 +362,12 @@ style navigation_button_text is gui_button_text:
 ## Используется, чтобы показать главное меню после запуска игры.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+init:
+    transform main_logo:
+        on idle:
+            zoom 1.0
+        on hover:
+            zoom 1.02
 
 screen main_menu():
 
@@ -381,6 +387,12 @@ screen main_menu():
             text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
             $ __short_ver = config.version[0:5]
             text "[__short_ver]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+
+    imagebutton:
+        idle "interface patreon logo2"
+        action OpenURL("https://www.patreon.com/aleksey90artimages")
+        align (0.98, 0.63)
+        at main_logo
 
     ## Эта пустая рамка затеняет главное меню.
     frame:
@@ -800,33 +812,34 @@ screen preferences():
             hbox:
                 box_wrap True
 
-                if renpy.variant("pc"):
-
-                    vbox:
-                        style_prefix "radio"
-                        label _("Режим экрана")
-                        textbutton _("Оконный") action Preference("display", "window")
-                        textbutton _("Полный") action Preference("display", "fullscreen")
 
                 vbox:
+                    if renpy.variant("pc"):
+                        vbox:
+                            style_prefix "radio"
+                            label _("Режим экрана")
+                            textbutton _("Оконный") action Preference("display", "window")
+                            textbutton _("Полный") action Preference("display", "fullscreen")
                     vbox:
                         style_prefix "radio"
                         label _("Сторона отката")
                         textbutton _("Отключено") action Preference("rollback side", "disable")
                         textbutton _("Левая") action Preference("rollback side", "left")
                         textbutton _("Правая") action Preference("rollback side", "right")
+
+                vbox:
                     vbox:
                         style_prefix "radio"
                         label _("Язык | Language")
                         textbutton _("Русский") action Language(None)
                         textbutton _("English") action Language("english")
 
-                vbox:
-                    style_prefix "check"
-                    label _("Пропуск")
-                    textbutton _("Всего текста") action Preference("skip", "toggle")
-                    textbutton _("После выборов") action Preference("after choices", "toggle")
-                    textbutton _("Переходов") action InvertSelected(Preference("transitions", "toggle"))
+                    vbox:
+                        style_prefix "check"
+                        label _("Пропуск")
+                        textbutton _("Всего текста") action Preference("skip", "toggle")
+                        textbutton _("После выборов") action Preference("after choices", "toggle")
+                        textbutton _("Переходов") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.

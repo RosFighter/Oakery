@@ -95,19 +95,45 @@ screen choice_lang():
 ################################################################################
 
 screen PowerBack():
-    frame xalign 0.5 ypos 980 background None:
+    frame xalign 0.5 ypos 985 xsize 200:# background None:
+        if "06:00" <= tm < "21:00":
+            background "interface laptop keys-bg-day"
+        else:
+            background "interface laptop keys-bg-night"
+        xmargin 0 ymargin 0 xpadding 0 ypadding 0
         hbox spacing 100:
             imagebutton:
                 auto "interface laptop back %s"
-                action [Hide("Search"), Jump("Laptop")] focus_mask True at power_zoom
+                action [Hide("Search"), Jump("Laptop")] at power_zoom
             imagebutton:
                 auto "interface laptop power %s"
-                action [Hide("Search"), Jump("Waiting")] focus_mask True at power_zoom
+                action [Hide("Search"), Jump("Waiting")] at power_zoom
+    key "K_ESCAPE" action [Hide("Search"), Jump("Laptop")]
+    key "mouseup_3" action [Hide("Search"), Jump("Laptop")]
+
+screen PowerBack2():
+    frame xalign 0.5 ypos 985 xsize 200:# background None:
+        if "06:00" <= tm < "21:00":
+            background "interface laptop keys-bg-day"
+        else:
+            background "interface laptop keys-bg-night"
+        xmargin 0 ymargin 0 xpadding 0 ypadding 0
+        hbox spacing 100:
+            imagebutton:
+                auto "interface laptop back %s"
+                action [Hide("Withdraw"), Hide("SEO"), Jump("open_site")] at power_zoom
+            imagebutton:
+                auto "interface laptop power %s"
+                action [Hide("Withdraw"), Hide("SEO"), Jump("Waiting")] at power_zoom
+    key "K_ESCAPE" action [Hide("Withdraw"), Hide("SEO"), Jump("open_site")]
+    key "mouseup_3" action [Hide("Withdraw"), Hide("SEO"), Jump("open_site")]
 
 screen PowerButton():
     imagebutton:
         pos (935, 985) auto "interface laptop power %s"
-        action [Hide("Search"), Jump("Waiting")] focus_mask True at power_zoom
+        action [Hide("Search"), Jump("Waiting")] at power_zoom
+    key "K_ESCAPE" action [Hide("Search"), Jump("Waiting")]
+    key "mouseup_3" action [Hide("Search"), Jump("Waiting")]
 
 ################################################################################
 screen LaptopScreen():
@@ -117,6 +143,14 @@ screen LaptopScreen():
 
     use PowerButton
 
+    $ bookmarks = 2
+    if dcv["buyfood"].stage == 1:
+        $ bookmarks += 1
+    if possibility["cams"].stage_number == 3 and money >= 100:
+        $ bookmarks += 1
+    if possibility["cams"].stage_number >= 4:
+        $ bookmarks += 1
+
     frame area(221, 93, 1475, 829) background None:
         viewport:
             xfill True
@@ -124,8 +158,8 @@ screen LaptopScreen():
             ysize 770
             mousewheel "change"
             draggable True
-            # if bookmarks > 6:
-            #     scrollbars "vertical"
+            if bookmarks > 6:
+                scrollbars "vertical"
 
             vbox:
                 xfill True
@@ -135,9 +169,7 @@ screen LaptopScreen():
                 else:
                     imagebutton xalign .5 idle "interface laptop search" action Call("nothing_search") focus_mask True
 
-
-                vpgrid cols 3 xalign .5 id "vpg1":
-
+                vpgrid cols 3 xalign .5 xsize 1260:
                     xspacing 50
                     yspacing 40
 
@@ -161,7 +193,7 @@ screen LaptopScreen():
 
                     if possibility["cams"].stage_number >= 4:
                         frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop opensite" action Jump("open_site") at book_marks
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop bb cam" action Jump("open_site") at book_marks
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
 
             if len(search_theme) > 0:
@@ -172,7 +204,7 @@ screen LaptopScreen():
 ################################################################################
 screen Search():
     modal True
-    # use PowerBack
+    use PowerBack
     style_prefix "search"
     frame area(635, 150, 694, 450) background "#FFFFFF":
         vbox:
@@ -192,23 +224,19 @@ screen Search():
                                     textbutton i[0] action [Hide("Search"), Jump(i[1])] yalign .0
                                 key str(yy) action [Hide("Search"), Jump(i[1])]
                     vbar value YScrollValue("vp_choice") style "search_vscroll"
-            button action Hide("Search") style "search_but":
-                textbutton _("{i}назад{/i}") action Hide("Search") yalign .0
-    key "K_ESCAPE" action Hide("Search")
+            # button action Hide("Search") style "search_but":
+            #     textbutton _("{i}назад{/i}") action Hide("Search") yalign .0
 
 style search_vscroll is vscrollbar:
     unscrollable "hide"
-
 style search_but:
     xpadding 0 ypadding 0 xmargin 0 ymargin 0
     xsize 675
     foreground "interface marker black"
-
 style search_button:
     xsize 675
     xpadding 30
     hover_background "gui/button/search_hover_background.png"
-
 style search_button_text:
     idle_color "#000000"
     hover_color "#ffbe00"
@@ -280,11 +308,8 @@ screen OnlineShop():
 
                     vbar value YScrollValue("vp1") style "shop_vscroll"
 
-
-
 style shop_vscroll is vscrollbar:
     unscrollable "hide"
-
 style cat_but:
     xpadding 0 ypadding 0 xmargin 0 ymargin 0
     xsize 270
@@ -300,23 +325,19 @@ style cat_button_text is default:
     idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
-
 style item_header:
     font "trebucbd.ttf"
     color "#FFFFFF"
     size 28
-
 style price:
     font "trebucbd.ttf"
     color "#000000"
     size 36
-
 style buy_button:
     xalign 1.0
     xpadding 30
     ypadding 10
     ymargin 5
-
 style buy_button_text:
     font "trebuc.ttf"
     min_width 100
@@ -324,6 +345,191 @@ style buy_button_text:
     size 30
     idle_color "#000000"
     hover_color "#FFFFFF"
+
+################################################################################
+
+screen Withdraw:
+    tag menu2
+    modal True
+    use PowerBack2
+    $ paid = int(site.account)
+    frame align(0.5, 0.5) xsize 1000:
+        xmargin 0 ymargin 0 xpadding 50 ypadding 30
+        vbox spacing 10:
+            frame xysize(900, 300) background "interface laptop withdraw-header"
+            text _("ДОХОД ОТ ПРОСМОТРОВ") font "trebucbd.ttf" color "#FFFFFF" size 28 xalign 0.5
+            text _("Каждое посещение страниц вашего сайта приносит небольшой доход. Увеличивайте аудиторию и зарабатывайте на рекламе!\n\nМинимальная сумма единоразового снятия: $100.") color gui.accent_color
+            text _("На вашем счете $[paid]") color "#FFFFFF"
+            if paid >= 100:
+                textbutton _("Забрать $[paid]"):
+                    idle_background Frame("interface button green", 12, 12)
+                    hover_background Frame("interface button orange", 12, 12)
+                    xalign .5
+                    xpadding 30 ypadding 10 ymargin 5
+                    text_font "trebuc.ttf"
+                    text_align 0.5
+                    text_size 30
+                    text_idle_color "#000000"
+                    text_hover_color "#FFFFFF"
+
+                    action Function(Withdraw)
+            else:
+                textbutton _("НЕДОСТАТОЧНАЯ СУММА ДЛЯ СНЯТИЯ"):
+                    idle_background Frame("interface button orange", 12, 12)
+                    hover_background Frame("interface button red", 12, 12)
+                    xalign .5
+                    xpadding 30 ypadding 10 ymargin 5
+                    text_font "trebuc.ttf"
+                    text_align 0.5
+                    text_size 30
+                    text_idle_color "#000000"
+                    text_hover_color "#FFFFFF"
+                    action NullAction()
+
+screen SEO:
+    tag menu2
+    modal True
+    use PowerBack2
+    frame align(0.5, 0.5) xsize 1000:
+        xmargin 0 ymargin 0 xpadding 50 ypadding 30
+        vbox spacing 10:
+            frame xysize(900, 300) background "interface laptop seo-header"
+            text _("СЕТЬ БАННЕРНОЙ РЕКЛАМЫ") font "trebucbd.ttf" color "#FFFFFF" size 28 xalign 0.5
+            text _("Уникальное предложение только для вас! Наша баннерная сеть предназначена для клиентов с особыми запросами и готова донести вашу рекламу до целевой аудитории.\n\nЗа каждый пакет, который вы оплачиваете сейчас, мы гарантируем 10000 показов рекламы вашего сайта в ближайшем будущем!") color gui.accent_color
+            if money >= 50:
+                textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"):
+                    action Function(BuyPromotion)
+                    idle_background Frame("interface button green", 12, 12)
+                    hover_background Frame("interface button orange", 12, 12)
+                    xalign .5
+                    xpadding 30 ypadding 10 ymargin 5
+                    text_font "trebuc.ttf"
+                    text_align 0.5
+                    text_size 30
+                    text_idle_color "#000000"
+                    text_hover_color "#FFFFFF"
+            else:
+                textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"):
+                    action NullAction()
+                    idle_background Frame("interface button orange", 12, 12)
+                    hover_background Frame("interface button red", 12, 12)
+                    xalign .5
+                    xpadding 30 ypadding 10 ymargin 5
+                    text_font "trebuc.ttf"
+                    text_align 0.5
+                    text_size 30
+                    text_idle_color "#000000"
+                    text_hover_color "#FFFFFF"
+
+screen MySite:
+    tag menu
+    modal True
+    use PowerBack
+    $ col_cam = 0
+    for loc in locations:
+        for room in locations[loc]:
+            for cam in room.cams:
+                $ col_cam += 1
+    if (col_cam >= 6) and(col_cam % 3 != 0):
+        $ dobavka = 3 - (col_cam % 3)
+    elif col_cam % 6 != 0:
+        $ dobavka = 6 - (col_cam % 6)
+    else:
+        $ dobavka = 0
+
+    default t_loc    = Tooltip("")
+    default t_public = Tooltip("")
+    default t_total  = Tooltip("")
+    default t_today  = Tooltip("")
+
+    frame area(221, 93, 1475, 829) background None:
+        xmargin 0 ymargin 0 xpadding 0 ypadding 0
+        vbox: # деньги и зрители
+            align(0.98, 0.03)
+            text "$[money]" xalign(1.0) font "hermes.ttf" size 48 drop_shadow[(2, 2)]
+        frame pos(0, 100) xysize (1475, 585) background None:
+            xmargin 0 ymargin 0 ypadding 25
+            viewport:
+                xsize 1230
+                xalign .5
+                yfill True
+                if col_cam > 6:
+                    mousewheel "change"
+                    draggable True
+                    scrollbars "vertical"
+                frame xpadding 27 background None:
+                    vpgrid cols 3:
+                        xspacing 30
+                        yspacing 30
+                        mousewheel "change"
+                        draggable True
+
+                        for loc in locations:
+                            for room in locations[loc]:
+                                $ num = 0
+                                for cam in room.cams:
+                                    frame area(0, 0, 370, 240) background None:
+                                        xmargin 0 ymargin 0 xpadding 0 ypadding 0
+                                        button xysize(362, 235) align(0.5, 0.5) background None:
+                                            action NullAction()
+                                            xmargin 0 ymargin 0 xpadding 0 ypadding 0
+                                            if "06:00" <= tm < "11:00":
+                                                add "location "+str(loc)+" "+room.id+" cam-morning-"+str(num)
+                                            elif "11:00" <= tm < "18:00":
+                                                add "location "+str(loc)+" "+room.id+" cam-day-"+str(num)
+                                            elif "18:00" <= tm < "21:00":
+                                                add "location "+str(loc)+" "+room.id+" cam-evening-"+str(num)
+                                            else:
+                                                add "location "+str(loc)+" "+room.id+" cam-night-"+str(num)
+                                            if len(room.cur_char) > 0 :
+                                                add "interface laptop cam act"
+                                            else:
+                                                add "interface laptop cam noact"
+                                            hovered [
+                                                t_loc.Action(room.cam_name),
+                                                t_public.Action(str(int(cam.public))),
+                                                t_total.Action("$"+str(int(cam.total))),
+                                                t_today.Action("$"+str(int(cam.today)))
+                                                ]
+
+                                    $ num += 1
+
+
+                        # дополним пустыми местами
+                        for i in range(dobavka):
+                            frame area(0, 0, 370, 240) background None:
+                                xmargin 0 ymargin 0 xpadding 0 ypadding 0
+                                frame xysize(362, 235) align(0.5, 0.5) background Frame("interface items bg", 10, 10)
+        frame ysize 145 xfill True yalign 1.0 background None:
+            xmargin 0 ymargin 0 xpadding 0 ypadding 0
+            button xysize(380, 144) xalign 0.0 background None action Show("SEO"):
+                imagebutton anchor (0.5, 0.5) xalign 0.5 yalign 0.5 idle "interface laptop seo" action Show("SEO") at book_marks
+                text _("{b}РЕКЛАМА{/b}") xanchor 0.5 xalign 0.5 ypos 100 color "#FFFFFF" drop_shadow[(2, 2)]
+            button xysize(380, 144) xalign 1.0 background None action Show("Withdraw"):
+                imagebutton anchor (0.5, 0.5) xalign 0.5 yalign 0.5 idle "interface laptop withdraw" action Show("Withdraw") at book_marks
+                text _("{b}ВЫВОД СРЕДСТВ{/b}") xanchor 0.5 xalign 0.5 ypos 100 color "#FFFFFF" drop_shadow[(2, 2)]
+            if t_loc.value != "":
+                frame ysize 170 xpos 380 xsize 665 background None:
+                    hbox xalign 0.5 spacing 50:
+                        vbox:
+                            text _("Расположение:") style "text1"
+                            text _("Зрителей:") style "text1"
+                            text _("Общий доход:") style "text1"
+                            text _("Доход сегодня:") style "text1"
+                        vbox:
+                            text t_loc.value style "text2"
+                            text t_public.value style "text2"
+                            text t_total.value style "text2"
+                            text t_today.value style "text2"
+
+style text1:
+    size 24
+    color gui.accent_color
+
+style text2:
+    size 24
+    bold True
+
 
 ################################################################################
 screen room_navigation():
@@ -343,6 +549,10 @@ screen room_navigation():
     # $ renpy.fix_rollback()
 
     $  i = 0
+    $ public = 0
+    for cam in current_room.cams:
+        $ public += cam.public
+    $ public = int(public)
 
     $ wait = 60 - int(tm.split(":")[1])
     key "K_SPACE" action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")]
@@ -459,20 +669,20 @@ screen room_navigation():
         button xysize (136, 190) action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")]: # ждать час
             vbox xsize 136 spacing 0:
                 frame xysize (136, 140) background None:
-                    imagebutton idle "interface wait 60" hover "interface wait 60 a":# hovered Show("wait_navigation"):
+                    imagebutton idle "interface wait 60" hover "interface wait 60 a" hovered Show("wait_navigation"):
                                 align (0.5, 0.0) focus_mask True action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")] at middle_wait
                 text _("ЖДАТЬ") font "trebucbd.ttf" size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
     vbox:  # Время и день недели
         align(0.5, 0.01)
         text tm xalign(0.5) font "hermes.ttf" size 60 drop_shadow[(2, 2)]
-        text weekdays[(day+2) % 7][1] xalign(0.5) font "hermes.ttf" size 28 drop_shadow[(2, 2)] line_leading -20
+        text weekdays[(day+2) % 7][1] xalign(0.5) font "hermes.ttf" size 24 drop_shadow[(2, 2)] line_leading -16
 
     vbox: # деньги и зрители
         align(0.99, 0.01)
-        text "$[money]" xalign(0.5) font "hermes.ttf" size 60 drop_shadow[(2, 2)]
-
-        #text weekdays[(day+2) % 7][1] xalign(0.5) font "hermes.ttf" size 28 drop_shadow[(2, 2)] line_leading -20
+        text "$[money]" xalign(1.0) font "hermes.ttf" size 60 drop_shadow[(2, 2)]
+        if len(current_room.cams) > 0:
+            text _("Зрителей: [public]") xalign(1.0) font "hermes.ttf" size 24 drop_shadow[(2, 2)] line_leading -16
 
     $ kol = 0
 
@@ -497,7 +707,7 @@ screen wait_navigation(): # дополнительные кнопки для о�
     frame align(.99, .99) xysize(123, 395) background None:
         vbox:
             spacing 5
-            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), SetWarilable("spent_time", 10), Jump("Waiting")] at small_zoom
+            imagebutton idle "interface wait 10" focus_mask True action [Hide("wait_navigation"), SetVariable("spent_time", 10), Jump("Waiting")] at small_zoom
             imagebutton idle "interface wait 30" focus_mask True action [Hide("wait_navigation"), SetVariable("spent_time", 30), Jump("Waiting")] at small_zoom
     timer 2.0 action Hide("wait_navigation")
 
@@ -774,18 +984,17 @@ screen menu_userinfo():
             vbar value YScrollValue("vp") style "info_vscroll"
 
         if CurChar == "max": ## временное определение на стадии вывода изображения
-            if dress_suf["max"] == "a":
+            if max_profile.dress == "a":
                 add "Max info 01" size (550, 900) xpos -50 ypos 10
             else:
                 add "Max info 01b" size (550, 900) xpos -50 ypos 10
 
         else:
             frame xysize(550, 900) background None:
-                if characters[CurChar].sufix == "":
+                if characters[CurChar].dress_inf == "":
                     add characters[CurChar].pref+" info-00" size (550, 900) xpos -50 ypos 10
                 else:
-                    add characters[CurChar].pref+" info "+eval(CurChar+"_dress[\""+characters[CurChar].sufix+"\"]") size (550, 900) xpos -50 ypos 10
-
+                    add characters[CurChar].pref+" info "+characters[CurChar].dress_inf size (550, 900) xpos -50 ypos 10
 
         viewport area (0, 30, 880, 850):
             vbox spacing 20:
@@ -983,3 +1192,27 @@ style userinfo_button_text is default:
 
 style info_vscroll is vscrollbar:
     unscrollable "hide"
+
+################################################################################
+init:
+    transform main_logo2:
+        on idle:
+            zoom 0.17
+        on hover:
+            zoom 0.18
+
+screen watermark:
+    # выводится, если это игра, но не экран настроек
+    if not ("preferences" in renpy.current_screen().screen_name):
+        imagebutton:
+            pos (0, 0)
+            idle "interface patreon logo"
+            action OpenURL("https://www.patreon.com/aleksey90artimages")
+            at main_logo2
+            focus_mask True
+
+# screen watermark():
+#     key "mouseup_2" action HideInterface()
+#     key "h" action HideInterface()
+#     key "dismiss" action HideInterface()
+#     key "game_menu" action HideInterface()

@@ -5,7 +5,6 @@ label after_breakfast:
     $ current_room = house[5]
     $ AvailableActions["dishes"].enabled = True
 
-    # $ Distribution()
     jump Waiting
 
 
@@ -22,7 +21,6 @@ label typical_breakfast:
 
 
 label breakfast_first:
-    $ renpy.show("Ann breakfast "+random3_1+"b")
     Ann_07 "Ну, дети, как вам живётся на новом месте? Как спалось в первую ночь?"
     menu:
         Alice_07 "Просто нет слов! После той нашей съёмной квартиры это какой-то рай! А кровать какая удобная..."
@@ -295,7 +293,6 @@ label breakfast_first:
             "Ну вот возьму и заработаю":
                 jump .bf_earn
 
-
     label .bf_change2:
         menu:
             Ann_00 "Так, всем спасибо за завтрак. А мне уже пора убегать на работу. Алиса, как всегда, моет посуду после завтрака, а Лиза после ужина. Макс, если захочешь помочь сёстрам, они будут только рады."
@@ -318,11 +315,11 @@ label breakfast_first:
     label .end_bf:
         $ AvailableActions["unbox"].enabled = True
         $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
-        $ tm = "10:00"
+        $ spent_time = 60
         $ current_room = house[6]
         $ AvailableActions["dishes"].enabled = True
-        $ Distribution()
-        jump AfterWaiting
+
+        jump Waiting
 
 #######################################################################################################################
 # диалоги и события за завтраком
@@ -330,11 +327,11 @@ label breakfast:
     scene BG breakfast 00 # общий фон
     $ renpy.block_rollback()
 
-    $ renpy.show("Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+random_suf)
-    $ renpy.show("Alice breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["alice"])
-    $ renpy.show("Lisa breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["lisa"])
+    $ renpy.show("Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
+    $ renpy.show("Alice breakfast 0"+renpy.random.choice(["1", "2", "3"])+characters["alice"].dress)
+    $ renpy.show("Lisa breakfast 0"+renpy.random.choice(["1", "2", "3"])+characters["lisa"].dress)
     $ renpy.show("FG breakfast 0"+renpy.random.choice(["1", "2", "3"])) # стол
-    $ renpy.show("Max breakfast 0"+renpy.random.choice(["1", "2", "3"])+dress_suf["max"])
+    $ renpy.show("Max breakfast 0"+renpy.random.choice(["1", "2", "3"])+max_profile.dress)
 
     if day == 1:
         jump breakfast_first

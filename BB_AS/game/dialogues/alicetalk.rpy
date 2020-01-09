@@ -48,7 +48,7 @@ label wash_dishes_alice:
                     $ dishes_washed = True
                     $ spent_time = max((60 - int(tm[-2:])), 30)
                     scene BG crockery-morning-00
-                    $ renpy.show("Max crockery-morning 01"+dress_suf["max"])
+                    $ renpy.show("Max crockery-morning 01"+max_profile.dress)
                     menu:
                         Max_11 "И почему здесь нет посудомоечной машины..."
                         "{i}закончить{/i}":
