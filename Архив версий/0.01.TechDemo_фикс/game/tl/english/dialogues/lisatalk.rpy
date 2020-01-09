@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2019-12-06 14:46
+﻿# TODO: Translation updated at 2020-01-08 20:40
 
 # game/dialogues/lisatalk.rpy:14
 translate english LisaTalkStart_9200635d:
@@ -1477,3 +1477,4 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:640
     old "Хорошо, пойду займусь"
     new "Okay"
+

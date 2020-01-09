@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2019-12-06 14:46
+﻿# TODO: Translation updated at 2020-01-08 20:40
 
 # game/dialogues/dinner.rpy:13
 translate english typical_dinner_ba465243:
@@ -325,3 +325,4 @@ translate english strings:
     # game/dialogues/dinner.rpy:115
     old "Хорошо, мам!"
     new "Okay, mom"
+
