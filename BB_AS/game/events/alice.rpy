@@ -124,7 +124,7 @@ label alice_shower:
                 $ peeping["alice_shower"] = 1
                 $ max_profile.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса повысилась"))
-                $ characters["alisa"].dress_inf = "00aa"
+                $ characters["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(1, 6)
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
@@ -134,7 +134,7 @@ label alice_shower:
                 $ peeping["alice_shower"] = 2
                 $ max_profile.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
-                $ characters["alisa"].dress_inf = "00aa"
+                $ characters["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(7, 8)
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
@@ -193,11 +193,12 @@ label alice_dressed_shop:
                 $ __ran1 = renpy.random.choice(["01", "02"])
 
                 if __ran1 == "01":
-                    $ characters["alisa"].dress_inf = "02a"
+                    $ characters["alice"].dress_inf = "02a"
                 else:
-                    $ characters["alisa"].dress_inf = "02b"
+                    $ characters["alice"].dress_inf = "02b"
 
-                scene image "Alice voyeur "+__ran1
+                scene BG char Alice voyeur-00
+                $ renpy.show("Alice voyeur "+__ran1)
                 $ renpy.show("FG voyeur-morning-00"+max_profile.dress)
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
@@ -244,11 +245,12 @@ label alice_dressed_friend:
                 $ __ran1 = renpy.random.choice(["01", "02"])
 
                 # if __ran1 == "01":
-                #     $ lisa_dress["dressed"] = "02d"
+                #     $ characters["lisa"].dress_inf = "02d"
                 # else:
-                #     $ lisa_dress["dressed"] = "02c"
+                #     $ characters["lisa"].dress_inf = "02c"
 
-                scene image "Alice voyeur "+__ran1
+                scene BG char Alice voyeur-00
+                $ renpy.show("Alice voyeur "+__ran1)
                 $ renpy.show("FG voyeur-morning-00"+max_profile.dress)
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
@@ -261,13 +263,13 @@ label alice_dressed_friend:
 
 label alice_sun:
     scene BG char Alice sun
-    $ renpy.show("Alice sun "+pose2_2+characters["alisa"].dress)
+    $ renpy.show("Alice sun "+pose2_2+characters["alice"].dress)
     return
 
 
 label alice_swim:
 
-    scene image "Alice swim "+pose3_2+characters["alisa"].dress
+    scene image "Alice swim "+pose3_2+characters["alice"].dress
     return
 
 

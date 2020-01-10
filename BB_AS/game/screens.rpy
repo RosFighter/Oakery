@@ -389,7 +389,7 @@ screen main_menu():
             text "[__short_ver]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
     imagebutton:
-        idle "interface patreon logo2"
+        idle "interface patreon logo"
         action OpenURL("https://www.patreon.com/aleksey90artimages")
         align (0.98, 0.63)
         at main_logo

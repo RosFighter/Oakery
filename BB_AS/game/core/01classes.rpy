@@ -11,6 +11,12 @@ init python:
             self.desc      = desc      # описание
             self.pref      = pref      # префикс (папка) изображений
 
+            self.sleeptoples = False
+            self.sleepnaked  = False
+
+            self.nopants   = False
+            self.naked     = False
+
             self.dress     = "a"
             self.dress_inf = "01a"        # суфикс изображения в окно описания
 

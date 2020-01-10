@@ -131,13 +131,13 @@ label ann_yoga:
 
 label ann_cooking:
     scene BG cooking-00
-    $ renpy.show("Ann cooking 01"+random_suf)
+    $ renpy.show("Ann cooking 01"+characters["ann"].dress)
     return
 
 
 label ann_cooking_closer:
     scene BG cooking-01
-    $ renpy.show("Ann cooking-closer "+pose3_3+random_suf)
+    $ renpy.show("Ann cooking-closer "+pose3_3+characters["ann"].dress)
     return
 
 
@@ -240,9 +240,9 @@ label ann_dressed_shop:
                 $ characters["ann"].mood   += __mood
             # "{i}заглянуть в окно{/i}":
             #     # if __ran1 == "01":
-            #     #     $ lisa_dress["dressed"] = "02d"
+            #     #     $ characters["lisa"].dress_inf = "02d"
             #     # else:
-            #     #     $ lisa_dress["dressed"] = "02c"
+            #     #     $ characters["lisa"].dress_inf = "02c"
             #
             #     scene image "Ann voyeur "+__ran1
             #     $ renpy.show("FG voyeur-morning-00"+max_profile.dress)

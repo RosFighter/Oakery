@@ -168,7 +168,7 @@ label lisa_dressed_school:
         $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
 
         if __ran1 == "01":
-            $ characters["lisa"].dress_inf = "02d"
+            $ characters["lisa"].dress_inf = "02h"
         elif __ran1 == "02":
             $ characters["lisa"].dress_inf = "02e"
         elif __ran1 == "03":
@@ -405,7 +405,7 @@ label lisa_dressed_shop:
             elif __ran1 == "04":
                 $ characters["lisa"].dress_inf = "02c"
             elif __ran1 == "05":
-                $ characters["lisa"].dress_inf = "02f"
+                $ characters["lisa"].dress_inf = "02i"
             else:
                 $ characters["lisa"].dress_inf = "02g"
 

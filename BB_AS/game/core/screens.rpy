@@ -356,7 +356,7 @@ screen Withdraw:
     frame align(0.5, 0.5) xsize 1000:
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
         vbox spacing 10:
-            frame xysize(900, 300) background "interface laptop withdraw-header"
+            frame xysize(900, 300) background "interface laptop revenue views"
             text _("ДОХОД ОТ ПРОСМОТРОВ") font "trebucbd.ttf" color "#FFFFFF" size 28 xalign 0.5
             text _("Каждое посещение страниц вашего сайта приносит небольшой доход. Увеличивайте аудиторию и зарабатывайте на рекламе!\n\nМинимальная сумма единоразового снятия: $100.") color gui.accent_color
             text _("На вашем счете $[paid]") color "#FFFFFF"
@@ -393,7 +393,7 @@ screen SEO:
     frame align(0.5, 0.5) xsize 1000:
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
         vbox spacing 10:
-            frame xysize(900, 300) background "interface laptop seo-header"
+            frame xysize(900, 300) background "interface laptop banner adverticing"
             text _("СЕТЬ БАННЕРНОЙ РЕКЛАМЫ") font "trebucbd.ttf" color "#FFFFFF" size 28 xalign 0.5
             text _("Уникальное предложение только для вас! Наша баннерная сеть предназначена для клиентов с особыми запросами и готова донести вашу рекламу до целевой аудитории.\n\nЗа каждый пакет, который вы оплачиваете сейчас, мы гарантируем 10000 показов рекламы вашего сайта в ближайшем будущем!") color gui.accent_color
             if money >= 50:
