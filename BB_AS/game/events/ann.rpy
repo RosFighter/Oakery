@@ -256,8 +256,12 @@ label ann_dressed_shop:
 
 
 label ann_resting:
-    scene BG char Ann relax-morning-01
-    $ renpy.show("Ann relax-morning "+pose3_3+characters["ann"].dress)
+    if tm < "19:00":
+        scene BG char Ann relax-morning-01
+        $ renpy.show("Ann relax-morning "+pose3_3+characters["ann"].dress)
+    else:
+        scene BG char Ann relax-evening-01
+        $ renpy.show("Ann relax-evening "+pose3_3+characters["ann"].dress)
     return
 
 

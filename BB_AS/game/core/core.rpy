@@ -89,6 +89,7 @@ label Waiting:
 
     if __name_label != "" and renpy.has_label(__name_label):
         # если есть кат-событие - запускаем его
+        $ CamShow()
         jump expression __name_label
 
     # иначе запускаем блок "после ожидания"

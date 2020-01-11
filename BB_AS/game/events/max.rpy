@@ -20,10 +20,10 @@ label StartDialog:
 label Sleep:
     $ renpy.block_rollback()
     scene BG char Max bed-night-01
+    $ renpy.show("Max sleep-night "+pose3_3)
     menu:
         Max_00 "{i}Как же я хочу спать...{/i}"
         "{i}спать до утра{/i}":
-            $ renpy.show("Max sleep-night "+pose3_3)
             Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
@@ -38,10 +38,10 @@ label Wearied:
     $ renpy.block_rollback()
     # прождали все доступное время - спим до восьми
     scene BG char Max bed-night-01
+    $ renpy.show("Max sleep-night "+pose3_1)
     menu:
         Max_00 "{i}Я без сил и хочу спать...{/i}"
         "{i}спать до утра{/i}":
-            $ renpy.show("Max sleep-night "+pose3_1)
             Max_19 "Z-z-z"
             $ number_autosave += 1
             $ NewSaveName()
@@ -231,6 +231,9 @@ label nothing_search:
 
 label buyfood:
     $ renpy.block_rollback()
+    hide video1_movie
+    show interface laptop grocery-1:
+        xpos 221 ypos 93
     Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
     Max_04 "Готово. Да это же самая лёгкая задача!"
     $ spent_time = 50
@@ -247,16 +250,23 @@ label courses_start:
 
 label create_site:
     $ renpy.block_rollback()
+    hide video1_movie
+    show interface laptop cam-inf-2:
+        xpos 221 ypos 93
     menu:
         Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100"
         "Оплатить всё ($100)":
             pass
         "В другой раз...":
             jump Laptop
+    show interface laptop cam-inf-3:
+        xpos 221 ypos 93
     menu:
         Max_04 "Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом..."
         "Настроить работу сайта":
             pass
+    show interface laptop cam-inf-4:
+        xpos 221 ypos 93
     Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
     $ spent_time = 60
     $ possibility["cams"].stage_number = 4
@@ -275,7 +285,6 @@ label open_site:
         scene BG char Max laptop-night-01
     show interface laptop CoverBBCams:
         xpos 221 ypos 93
-        size (1475, 829)
 
     $ renpy.block_rollback()
     call screen MySite
@@ -283,7 +292,7 @@ label open_site:
 
 label about_cam:
     hide video1_movie
-    show interface laptop about cam-inf-1:
+    show interface laptop cam-inf-1:
         xpos 221 ypos 93
         size (1475, 829)
     Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
@@ -348,8 +357,8 @@ label DishesWashed:
         if __name_label == "alice_dishes":
             $ characters["alice"].mood += 6
             if characters["alice"].relmax < 400:
-                $ HintRelMood("alice", 10, 6)
                 $ characters["alice"].relmax += 10
+                $ HintRelMood("alice", 10, 6)
             else:
                 $ HintRelMood("alice", 0, 6)
     $ dishes_washed = True

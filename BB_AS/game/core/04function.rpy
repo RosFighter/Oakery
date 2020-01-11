@@ -449,6 +449,8 @@ init python:
         for loc in locations:
             for room in locations[loc]:
                 for cam in room.cams:
+                    if cam.grow < 100:
+                        cam.grow = 100
                     if cam.HD:
                         ef += 10.0 / (1 + k) # каждая HD-камера немного повышает эффективность рекламы
 
@@ -457,8 +459,7 @@ init python:
 
 
     def CamShow(): # расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
-        global earn
-        char_list = []
+        grow_list = []
 
         cameras = [] # список установленных камер
         earned = 0 # вся полученная с камер прибыль
@@ -471,38 +472,37 @@ init python:
         if len(cameras) == 0:
             return
 
-        if earned > 5000:
-            temp_k = 400
-        elif earned > 2500:
-            temp_k = 450
-        elif earned > 500:
-            temp_k = 500
+        # коэффициент заработанного на сайте
+        if earned > 10000:
+            k_earn = 400
+        elif earned > 5000:
+            k_earn = 450
+        elif earned > 1000:
+            k_earn = 500
         else:
-            temp_k = 600
+            k_earn = 600
+        # рандомизация коэффициента
+        k_earn += renpy.random.randint(-25, 51)
 
-        temp_k += renpy.random.randint(-25, 51)
-
+        # коэффициент количества камер
         if len(cameras) > 5:
-            kk = 16.0
+            k_cams = 16.0
         elif len(cameras) > 4:
-            kk = 15.0
+            k_cams = 15.0
         elif len(cameras) > 2:
-            kk = 14.0
+            k_cams = 14.0
         elif len(cameras) > 1:
-            kk = 12.0
+            k_cams = 12.0
         else:
-            kk = 10.0
+            k_cams = 10.0
 
         cam2 = [] # список камер с повышенным зрительским интересом
 
         cycles = spent_time / 10 # расчет выполняется каждые 10 минут
+
         for i in range(cycles):
-            if site.invited > 500:
-                watchers = round(float(site.invited) / renpy.random.randint(240, 342)) # количество привлеченных рекламмой зрителей
-            elif site.invited > 250:
-                watchers = round(float(site.invited) / renpy.random.randint(120, 171)) # количество привлеченных рекламмой зрителей
-            else:
-                watchers = round(float(site.invited) / renpy.random.randint(40, 57)) # количество привлеченных рекламмой зрителей
+            watchers = site.invited * renpy.random.randint(170, 250) / 60000.0 # количество привлеченных рекламмой зрителей
+            watchers = round(watchers, 2)
 
             cam2.clear()
             # рассчитаем время события
@@ -518,59 +518,62 @@ init python:
                 for room in locations[loc]:
                     for cam in room.cams:
                         # определим наличее персонажей в комнате
-                        char_list.clear()
+                        grow_list.clear()
                         for char in characters:
                             ## получим расписание персонажа на этот момент
                             cur_shed = GetScheduleRecord(eval("schedule_"+char), cur_day, cur_tm)
                             if cur_shed is not None and cur_shed.loc == loc and cur_shed.room == num_room:
                                 # есть персонаж в комнате
-                                char_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
+                                grow_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
 
-                        if len(char_list) == 0:
-                            if cam.grow > 100:
-                                cam.grow = 100
-                            elif room == current_room:
-                                cam.grow = max(cam.grow, 90)
+                        if len(grow_list) == 0:
+                            if room == current_room:
+                                k_grow = max(cam.grow, 95)
                             else:
-                                if cam.grow - 5 < 10:
-                                    cam.grow = 10
-                                elif cam.grow - 5 > 200:
-                                    cam.grow = 200
+                                if cam.grow - 0.9 < 10:
+                                    k_grow = 10
+                                elif cam.grow - 0.9 > 200:
+                                    k_grow = 200
+                                elif cam.grow > 100:
+                                    k_grow = 100
                                 else:
-                                    cam.grow = cam.grow - 1
-                        elif len(char_list) == 1:
-                            cam.grow = max(cam.grow, 105, char_list[0])
-                        elif max(char_list) > 0:
-                            cam.grow = max(cam.grow, char_list[0])
+                                    k_grow = cam.grow - 0.9 # отток зрителей 0.9%
+                        elif len(grow_list) == 1:
+                            k_grow = max(cam.grow, 105, grow_list[0])
+                        elif max(grow_list) > 0:
+                            k_grow = max(cam.grow, max(grow_list))
                         else: # персонажей больше одного
-                            cam.grow = max(cam.grow, 115)
+                            k_grow = max(cam.grow, 115)
 
-                        if cam.grow > 115:
+                        if k_grow > 115:
                             cam2.append(cam)
 
-                        if cam.public > temp_k + 200:
-                            cam.grow = min(cam.grow, 90)
-                        elif cam.public > temp_k + 150:
-                            cam.grow = min(cam.grow, 95)
-                        elif cam.public > temp_k + 100:
-                            cam.grow = min(cam.grow, 98)
-                        elif cam.public > temp_k:
-                            cam.grow = min(cam.grow, 105)
-                        elif cam.public > temp_k - 100:
-                            cam.grow = min(cam.grow, 110)
-                        elif cam.public > temp_k - 200:
-                            cam.grow = min(cam.grow, 120)
+                        if cam.public > k_earn + 200:
+                            k_grow = min(k_grow, 98.333)
+                        elif cam.public > k_earn + 150:
+                            k_grow = min(k_grow, 99.16)
+                        elif cam.public > k_earn + 100:
+                            k_grow = min(k_grow, 99.66)
+                        elif cam.public > k_earn:
+                            k_grow = min(k_grow, 106)
+                        elif cam.public > k_earn - 100:
+                            k_grow = min(k_grow, 112)
+                        elif cam.public > k_earn - 200:
+                            k_grow = min(k_grow, 124)
 
-                        cam.public = cam.public * cam.grow / 100.0
-                        earn = cam.public / cam.grow
-                        earn = earn / 5.0
-                        earn = round(earn, 4)
+                        k_glow = (k_grow-100) / 100. # коэффициент прироста зрителей
+                        pub = cam.public * k_glow # прирост/отток публики
+                        cam.public += round(pub / 6.0, 2) # прирост зрителей от интереса событий
+                        earn = (cam.public * k_grow) /45000.0 # расчет прибыли. Чем зрителям интересней, тем больше они донатят
+                        earn = round(earn, 2)
                         cam.total += earn
                         if cur_tm == "04:00":
                             cam.today = 0
                         else:
                             cam.today += earn
                         site.account += earn
+                        # print("время:{tm}, ads:{site.invited}(watchers:{watc}), k.cam:{cam.grow}, k.ev:{grow}, pub:{cam.public}({pub})(({glow})), earn:{earn}, total:{cam.total}".format(site=site, cam=cam, tm=cur_tm, grow=k_grow, watc=watchers, earn=earn, pub=pub, glow=k_glow))
+                        cam.grow = k_grow
                     num_room += 1
 
             if len(cam2) > 0:
@@ -583,10 +586,11 @@ init python:
                     cam.public += pub
 
             site.invited -= watchers
-            for loc in locations:
-                for room in locations[loc]:
-                    for cam in room.cams:
-                        cam.public = int(cam.public)
+        # в конце расчета округлим полученные значения
+        for loc in locations:
+            for room in locations[loc]:
+                for cam in room.cams:
+                    cam.public = int(cam.public)
 
 
     def Withdraw():
@@ -829,7 +833,7 @@ init python:
                 else:
                     characters["ann"].dress_inf = "01b"
             elif name == "resting":
-                if tm <= "14:00":
+                if tm <= "12:00":
                     characters["ann"].dress = "a"
                     characters["ann"].dress_inf = "01b"
                 elif tm <= "19:00":

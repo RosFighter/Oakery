@@ -363,7 +363,7 @@ screen Withdraw:
             if paid >= 100:
                 textbutton _("Забрать $[paid]"):
                     idle_background Frame("interface button green", 12, 12)
-                    hover_background Frame("interface button orange", 12, 12)
+                    hover_background Frame("interface button green", 12, 12)
                     xalign .5
                     xpadding 30 ypadding 10 ymargin 5
                     text_font "trebuc.ttf"
@@ -375,7 +375,7 @@ screen Withdraw:
                     action Function(Withdraw)
             else:
                 textbutton _("НЕДОСТАТОЧНАЯ СУММА ДЛЯ СНЯТИЯ"):
-                    idle_background Frame("interface button orange", 12, 12)
+                    idle_background Frame("interface button red", 12, 12)
                     hover_background Frame("interface button red", 12, 12)
                     xalign .5
                     xpadding 30 ypadding 10 ymargin 5
@@ -400,7 +400,7 @@ screen SEO:
                 textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"):
                     action Function(BuyPromotion)
                     idle_background Frame("interface button green", 12, 12)
-                    hover_background Frame("interface button orange", 12, 12)
+                    hover_background Frame("interface button green", 12, 12)
                     xalign .5
                     xpadding 30 ypadding 10 ymargin 5
                     text_font "trebuc.ttf"
@@ -411,7 +411,7 @@ screen SEO:
             else:
                 textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"):
                     action NullAction()
-                    idle_background Frame("interface button orange", 12, 12)
+                    idle_background Frame("interface button red", 12, 12)
                     hover_background Frame("interface button red", 12, 12)
                     xalign .5
                     xpadding 30 ypadding 10 ymargin 5
