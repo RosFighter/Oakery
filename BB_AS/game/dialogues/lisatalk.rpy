@@ -543,6 +543,7 @@ label talk_swim:
         jump Waiting
     return
 
+
 label about_boy:
 
     if ItsTime(cooldown["lisa_boy"]): # кулдаун прошел, можно поговорить

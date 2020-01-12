@@ -177,13 +177,13 @@ screen LaptopScreen():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop shop" action Jump("LaptopShop") at book_marks
                         text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    frame xysize(370, 295) background None:
-                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
-                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+                    # frame xysize(370, 295) background None:
+                    #     imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
+                    #     text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
                     if dcv["buyfood"].stage == 1:
                         frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop buyfood" action Jump("buyfood") at book_marks
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop grocery" action Jump("buyfood") at book_marks
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
                     if possibility["cams"].stage_number == 3 and money >= 100:

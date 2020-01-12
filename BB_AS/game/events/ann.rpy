@@ -2,27 +2,33 @@
 ## события Анны
 
 label ann_sleep:
-    if tm < "05:00":
-        scene location house annroom door-night
-    else:
-        scene location house annroom door-evening
+    scene location house annroom door-night
     if peeping["ann_sleep"] == 0:
         $ peeping["ann_sleep"] = 1
         menu:
             Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..."
             "{i}заглянуть в окно{/i}":
-                if tm < "06:00":
-                    scene BG char Ann bed-night-01
-                    $ renpy.show("Ann sleep-night "+pose3_3)
-                    $ renpy.show("FG ann-voyeur-night-00"+max_profile.dress)
+                scene BG char Ann bed-night-01
+                $ renpy.show("Ann sleep-night "+pose3_3)
+                $ renpy.show("FG ann-voyeur-night-00"+max_profile.dress)
+                if pose3_3 == "01":
+                    Max_01 "Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
+                elif pose3_3 == "02":
+                    Max_04 "О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
                 else:
-                    scene BG char Ann bed-morning-01
-                    $ renpy.show("Ann sleep-morning "+pose3_3)
-                    $ renpy.show("FG ann-voyeur-morning-00"+max_profile.dress)
-                menu:
-                    Max_07 "Какая попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь..."
-                    "{i}уйти{/i}":
-                        pass
+                    Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
+                $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), "sneak"), (_("{i}уйти{/i}"), "exit")])
+                if rez != "exit":
+                    $ spent_time += 10
+                    scene BG char Ann bed-night-02
+                    $ renpy.show("Ann sleep-night-closer "+pose3_3)
+                    if pose3_3 == "01":
+                        Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась." nointeract
+                    elif pose3_3 == "02":
+                        Max_02 "Ухх! Так и хочется прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
+                    else:
+                        Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась..." nointeract
+                    $ rez = renpy.display_menu([(_("{i}уйти{/i}"), "exit")])
             "{i}уйти{/i}":
                 pass
         $ spent_time = 10
@@ -120,7 +126,7 @@ label ann_shower:
 
 label ann_yoga:
     scene BG char Ann yoga-00
-    if int(tm[3:4])%3 == 0:
+    if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
         $ renpy.show("Ann yoga "+pose3_1)
     elif int(tm[3:4])%3 == 1:
         $ renpy.show("Ann yoga "+pose3_2)
@@ -280,6 +286,18 @@ label ann_swim:
 label ann_sun:
     scene BG char Ann sun
     $ renpy.show("Ann sun "+pose3_3)
+    return
+
+
+label ann_alice_sun:
+    scene BG char Ann Alice 2sun-00
+    $ renpy.show("Alice 2sun "+pose3_2)
+    $ renpy.show("Ann 2sun "+pose3_3)
+    return
+
+
+label ann_alice_swim:
+    $ renpy.scene("BG char Ann Alice swim-"+pose3_1)
     return
 
 

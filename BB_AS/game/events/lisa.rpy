@@ -1,14 +1,16 @@
 ################################################################################
 ## события Лизы
 
-label lisa_sleep:
-    if tm < "06:00":
-        scene BG char Lisa bed-night
-        $ AvailableActions["touch"].active = True
-        $ renpy.show("Lisa sleep-night "+pose3_1+characters["lisa"].dress)
-    else:
-        scene BG char Lisa bed-morning
-        $ renpy.show("Lisa sleep-morning "+pose3_1+characters["lisa"].dress)
+label lisa_sleep_night:
+    scene BG char Lisa bed-night
+    $ AvailableActions["touch"].active = True
+    $ renpy.show("Lisa sleep-night "+pose3_1+characters["lisa"].dress)
+    return
+
+
+label lisa_sleep_morning:
+    scene BG char Lisa bed-morning
+    $ renpy.show("Lisa sleep-morning "+pose3_1+characters["lisa"].dress)
     return
 
 
@@ -74,7 +76,7 @@ label lisa_shower:
         scene image ("Lisa shower 0"+str(__ran1))
         $ renpy.show("FG shower 00"+max_profile.dress)
         menu:
-            Max_04 "Лиза принимает душ"
+            Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
             "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
             "{i}уйти{/i}":
@@ -90,7 +92,10 @@ label lisa_shower:
             scene BG shower-closer
             show image ("Lisa shower-closer 0"+str(__ran1))
             show FG shower-closer
-            Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color}\nОх, повезло! Хороша сестренка."
+            if 1 < __ran1 < 5:
+                Max_02 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nЛиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+            else:
+                Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nО, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
         elif RandomChance(_chance):
             $ peeping["lisa_shower"] = 2
             $ max_profile.stealth += 0.05
@@ -100,7 +105,7 @@ label lisa_shower:
             scene BG shower-closer
             show image ("Lisa shower-closer 0"+str(__ran1))
             show FG shower-closer
-            Max_09 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nПора сматываться."
+            Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
         else:
             $ peeping["lisa_shower"] = 3
             $ max_profile.stealth += 0.02
@@ -110,7 +115,7 @@ label lisa_shower:
             show image ("Lisa shower-closer "+__ran1)
             show FG shower-closer
             menu:
-                Lisa_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Я всё маме расскажу!!!"
+                Lisa_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
                 "{i}уйти{/i}":
                     jump .end_peeping
         jump .end_peeping

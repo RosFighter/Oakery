@@ -1,12 +1,12 @@
-﻿# TODO: Translation updated at 2019-12-06 14:46
+﻿# TODO: Translation updated at 2020-01-12 21:49
 
 translate english strings:
 
-    # game/core/characters.rpy:183
+    # game/core/characters.rpy:221
     old "Мама"
     new "Mom"
 
-    # game/core/characters.rpy:309
+    # game/core/characters.rpy:347
     old "Майя"
     new "Maya"
 

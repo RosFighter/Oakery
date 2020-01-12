@@ -254,3 +254,22 @@ label talkblog1:
         if talk_var["blog"] == 2:
             $ spent_time = 10
             jump Waiting
+
+
+label alice_talk_tv:
+    Alice_00 "Нет, садись. Тут места много..."
+    $ talk_var["alice_tv"] = 1
+    $ renpy.show("Max tv "+pose3_1+max_profile.dress)
+    Max_00 "Хорошо. Что смотришь?"
+    menu:
+        Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."
+        "Ну, давай смотреть всё подряд...":
+            $ SetCamsGrow(house[4], 110)
+            $ __mood = 5
+            Max_11 "{i}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/i}"
+            Max_00 "Ладно, пойду я..."
+    $ spent_time = max((60 - int(tm[-2:])), 40)
+    $ HintRelMood("alice", 0, __mood)
+    $ characters["alice"].mood   += __mood
+    $ cur_ratio = 0.5
+    jump Waiting

@@ -1,22 +1,22 @@
-﻿# TODO: Translation updated at 2019-12-06 14:46
+﻿# TODO: Translation updated at 2020-01-12 21:49
 
 # game/dialogues/dinner.rpy:13
 translate english typical_dinner_ba465243:
 
     # Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract
-    Ann_00 "Bon appetit, everyone. I'm tired today, let's eat quietly..." nointeract
+    Ann_00 "Enjoy the food everyone. I'm tired today, let's eat quietly..." nointeract
 
 # game/dialogues/dinner.rpy:16
 translate english typical_dinner_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Thanks for understanding, Max. Now dig in..."
+    Ann_05 "Thanks for understanding, Max. Let's start..."
 
 # game/dialogues/dinner.rpy:17
 translate english typical_dinner_4a7da202:
 
     # Max_00 "Приятного аппетита!"
-    Max_00 "Bon appetit!"
+    Max_00 "Enjoy!"
 
 # game/dialogues/dinner.rpy:19
 translate english typical_dinner_e7b121b0:
@@ -28,7 +28,7 @@ translate english typical_dinner_e7b121b0:
 translate english typical_dinner_63f629c8:
 
     # Max_00 "Понятно. Приятного аппетита!"
-    Max_00 "I see. Bon appetit then!"
+    Max_00 "Oh, okay."
 
 # game/dialogues/dinner.rpy:24
 translate english dinner_first_650c2c5d:
@@ -148,37 +148,37 @@ translate english dinner_first_yeah_c3619227:
 translate english dinner_first_yeah_09a444ef:
 
     # Ann_07 "Ну а ученики какие? Повезло с классом? Уже завела себе друзей и подруг?"
-    Ann_07 "What's about your classmates? Are they good? Have you got any friends already?"
+    Ann_07 "What's about your classmates? Are they good? Have you made friends already?"
 
 # game/dialogues/dinner.rpy:85
 translate english dinner_first_yeah_21c00c7f:
 
     # Lisa_02 "Да, познакомилась... с одной подружкой. Класс супер, всё хорошо, мам!" nointeract
-    Lisa_02 "Yeah, meet one... nice girl. Class is awesome, all great, mom!" nointeract
+    Lisa_02 "Yeah, I met a nice... girl. The class is great, Mom!" nointeract
 
 # game/dialogues/dinner.rpy:89
 translate english dinner_first_yeah_4eb66e9d:
 
     # Lisa_12 "Макс! Я же тебе по секрету рассказала..." nointeract
-    Lisa_12 "Max! I told you a secret..." nointeract
+    Lisa_12 "Max! I thought I told you a secret..." nointeract
 
 # game/dialogues/dinner.rpy:95
 translate english dinner_first_yeah_6649cfb2:
 
     # Lisa_00 "Не удивляйся потом, если твои секреты тоже окажутся... не секретами."
-    Lisa_00 "Don't be surprised if your secrets will be... not a secrets too."
+    Lisa_00 "Don't be surprised if your secrets aren't so secretive anymore."
 
 # game/dialogues/dinner.rpy:96
 translate english dinner_first_yeah_555ab37a:
 
     # Ann_07 "Лиза, так что там за подружка по имени Алекс?"
-    Ann_07 "Lisa, so what's about a friend named Alex?"
+    Ann_07 "So how's this friend, Alex?"
 
 # game/dialogues/dinner.rpy:102
 translate english dinner_first_yeah_1cfd61ef:
 
     # Lisa_00 "Ой, да обычная подружка..."
-    Lisa_00 "Oh, a usual girl..."
+    Lisa_00 "Oh, just a friend..."
 
 # game/dialogues/dinner.rpy:103
 translate english dinner_first_yeah_fbe7c8e0:
@@ -190,43 +190,43 @@ translate english dinner_first_yeah_fbe7c8e0:
 translate english dinner_first_secret_b98451b5:
 
     # Lisa_09 "Ну что вы, в самом деле. Ну да, с парнем познакомилась. Зовут Алекс. Учимся вместе, сидим рядом!"
-    Lisa_09 "Oh god, come one. Well, yes, I met the guy. His name is Alex. We are learning together, sitting side by side!"
+    Lisa_09 "Oh gosh okay... I met this guy named Alex. We're in the same class and we sit next to each other!"
 
 # game/dialogues/dinner.rpy:108
 translate english dinner_first_secret_9535ad14:
 
     # Max_01 "Так бы сразу и сказала!"
-    Max_01 "You should have said this from the beginning!"
+    Max_01 "Could have said that from the start!"
 
 # game/dialogues/dinner.rpy:109
 translate english dinner_first_secret_4933527a:
 
     # Lisa_09 "А я так и сказала! Всё. Больше ничего не спрашивайте!"
-    Lisa_09 "And I said so! I said all. Do not ask more!"
+    Lisa_09 "Well that's all I have to say, so don't bug me about it anymore! "
 
 # game/dialogues/dinner.rpy:110
 translate english dinner_first_secret_2e5f62ef:
 
     # Ann_00 "Извини, Лиза, я же не знала. Я вот тоже познакомилась с Эриком в первый же день. Не мне тебя судить!"
-    Ann_00 "Sorry, Lisa, I do not know. I've also met with Eric in the first day. I cannot judge you!"
+    Ann_00 "It's alright Lisa. I met Eric today as well, so we're not judging you."
 
 # game/dialogues/dinner.rpy:111
 translate english dinner_first_secret_399f1d43:
 
     # Lisa_02 "Да всё в порядке, мам. Просто, мы только познакомились, поболтали и улыбнулись друг другу, а всё выглядит так, как будто у меня уже есть парень..."
-    Lisa_02 "Yes, all good, Mom. Simply, we just met, chatted and smiled at each other, and it looks like I already have a boyfriend..."
+    Lisa_02 "Thanks, Mom. We only just met and chatted a bit, and to some people it looks like I already have a boyfriend..."
 
 # game/dialogues/dinner.rpy:112
 translate english dinner_first_secret_c95cf852:
 
     # Ann_07 "Тоже верно... Так, ладно. Спасибо всем за ужин. Лиза, сейчас как раз твоя очередь мыть посуду?"
-    Ann_07 "Too true... So, okay. Thank you all for dinner. Lisa, is it your turn to wash the dishes?"
+    Ann_07 "It's alright, your allowed to have male friends! Anyway, Thank you all for dinner. Lisa, is it your turn to wash the dishes?"
 
 # game/dialogues/dinner.rpy:113
 translate english dinner_first_secret_31c152af:
 
     # Lisa_01 "Да, мам. Но если мне кто-то поможет... Например, Макс, то я не откажусь..."
-    Lisa_01 "Yes, mom. I'd like to get some help... From Max, for example..."
+    Lisa_01 "Yep. I wouldn't might some help though... From Max, for example..."
 
 # game/dialogues/dinner.rpy:114
 translate english dinner_first_secret_05ec93c4:
@@ -238,7 +238,7 @@ translate english dinner_first_secret_05ec93c4:
 translate english dinner_first_secret_6d6390f1:
 
     # Ann_04 "Ладно, разбирайтесь сами. А я собираюсь принять ванну. Так что, не беспокоить!" nointeract
-    Ann_04 "Well, sort it out yourself. And I'm going to take a bath. So, do not bother me!" nointeract
+    Ann_04 "Well, sort it out between yourselves,  I'm going to take a bath!" nointeract
 
 translate english strings:
 
@@ -252,15 +252,15 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:26
     old "Напомни, а кем ты работаешь?"
-    new "Remind me what is your title?"
+    new "What was your role again?"
 
     # game/dialogues/dinner.rpy:26
     old "А где находится твой офис?"
-    new "Where is your office located?"
+    new "Where's the office?"
 
     # game/dialogues/dinner.rpy:29
     old "Точно. Ну, поздравляю!"
-    new "Right. So, my congratulations!"
+    new "Right. Congratulations!"
 
     # game/dialogues/dinner.rpy:29
     old "А с начальником повезло?"
@@ -268,7 +268,7 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:36
     old "Поздравляю!"
-    new "Congratulation!"
+    new "Congratulations!"
 
     # game/dialogues/dinner.rpy:48
     old "А что с ним?"
@@ -276,7 +276,7 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:48
     old "Ещё толще и лысее?"
-    new "Even more fatter and balder?"
+    new "Even fatter and balder?"
 
     # game/dialogues/dinner.rpy:54
     old "Ого! Да он в тебя влюбился?"
@@ -296,7 +296,7 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:66
     old "А вред такой, что если поссорится, её уволят!"
-    new "The harm is such that if they quarrel, it will be fired!"
+    new "If they get into an argument she could lose her job!"
 
     # game/dialogues/dinner.rpy:66
     old "Может, ты и права..."
@@ -304,24 +304,25 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:85
     old "Ага, а подружку зовут Алекс..."
-    new "Yeah, girl's name is Alex"
+    new "Yeah, 'her' name is Alex"
 
     # game/dialogues/dinner.rpy:85
     old "Что за подружка?"
-    new "What girl?"
+    new "What kind of friend is she?"
 
     # game/dialogues/dinner.rpy:85
     old "Что за подружка? {i}(подмигнуть){/i}"
-    new "What kind of friend? {i}(wink){/i}"
+    new "What kind of friend is she? {i}(wink){/i}"
 
     # game/dialogues/dinner.rpy:89
     old "Ой, извини. Я думал, у нас нет секретов..."
-    new "Oh sorry. I thought we have no secrets..."
+    new "Oh sorry. I didn't think you'd mind..."
 
     # game/dialogues/dinner.rpy:89
     old "А ты не сказала, что это секрет..."
-    new "And you did not say that it's a secret..."
+    new "You didn't say it was a secret..."
 
     # game/dialogues/dinner.rpy:115
     old "Хорошо, мам!"
     new "Okay, mom"
+

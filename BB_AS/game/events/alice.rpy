@@ -33,41 +33,70 @@ label alice_bath:
     return
 
 
-label alice_sleep:
-    if tm < "06:00":
-        scene location house aliceroom door-night
-    else:
-        scene location house aliceroom door-evening
+label alice_sleep_night:
+    scene location house aliceroom door-night
     if peeping["alice_sleep"] == 0:
         $ peeping["alice_sleep"] = 1
         menu:
             Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
             "{i}заглянуть в окно{/i}":
                 $ spent_time = 10
-                if tm < "06:00":
-                    scene BG char Alice bed-night-01
-                    $ renpy.show("Alice sleep-night "+pose3_2)
-                    $ renpy.show("FG alice-voyeur-night-00"+max_profile.dress)
+                scene BG char Alice bed-night-01
+                $ renpy.show("Alice sleep-night "+pose3_2)
+                $ renpy.show("FG alice-voyeur-night-00"+max_profile.dress)
+                if pose3_2 == "01":
+                    Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно!" nointeract
+                elif pose3_2 == "02":
+                    Max_04 "Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою попку для меня во всей красе." nointeract
                 else:
-                    scene BG char Alice bed-morning-01
-                    $ renpy.show("Alice sleep-morning "+pose3_2)
-                    $ renpy.show("FG alice-voyeur-morning-00"+max_profile.dress)
-                menu:
-                    Max_07 "О, да! Моя старшая сестренка выглядит потрясающе... \nНа изгибы ее тела в этом полупрозрачном белье хочется смотреть вечно!"
-                    "{i}прокрасться в комнату{/i}":
-                        $ spent_time += 10
-                        if tm < "06:00":
-                            scene BG char Alice bed-night-02
-                            $ renpy.show("Alice sleep-night-closer "+pose3_2)
-                        else:
-                            scene BG char Alice bed-morning-02
-                            $ renpy.show("Alice sleep-morning-closer "+pose3_2)
-                        menu:
-                            Max_07 "Класс! Так бы и прилег рядышком, но пора уходить... Если она проснется, мне точно не поздоровится..."
-                            "{i}уйти{/i}":
-                                pass
-                    "{i}уйти{/i}":
-                        pass
+                    Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно..." nointeract
+                $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), "sneak"), (_("{i}уйти{/i}"), "exit")])
+                if rez != "exit":
+                    $ spent_time += 10
+                    scene BG char Alice bed-night-02
+                    $ renpy.show("Alice sleep-night-closer "+pose3_2)
+                    if pose3_2 == "01":
+                        Max_03 "Да уж... Её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить..." nointeract
+                    elif pose3_2 == "02":
+                        Max_02 "Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы пристроился с огромным удовольствием... Но пора уходить, а то ещё проснётся..." nointeract
+                    else:
+                        Max_01 "Чёрт, какая же она притягательная, когда лежит вот так... Так и хочется занырнуть между этих сисечек и её стройных ножек! Только бы она сейчас не проснулась..." nointeract
+                    $ rez = renpy.display_menu([(_("{i}уйти{/i}"), "exit")])
+            "{i}уйти{/i}":
+                pass
+        jump Waiting
+    return
+
+
+label alice_sleep_morning:
+    scene location house aliceroom door-morning
+    if peeping["alice_sleep"] == 0:
+        $ peeping["alice_sleep"] = 1
+        menu:
+            Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
+            "{i}заглянуть в окно{/i}":
+                $ spent_time = 10
+                scene BG char Alice bed-morning-01
+                $ renpy.show("Alice sleep-morning "+pose3_2)
+                $ renpy.show("FG alice-voyeur-morning-00"+max_profile.dress)
+                if pose3_2 == "01":
+                    Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть ее классную, почти голую фигурку как следует... " nointeract
+                elif pose3_2 == "02":
+                    Max_01 "Чёрт! Хоть она и спит, но прямо лицом ко мне... И тем не менее, насладится красотой её тела я могу, и ещё как..." nointeract
+                else:
+                    Max_02 "Вот это да! От таких соблазнительных изгибов можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
+                $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), "sneak"), (_("{i}уйти{/i}"), "exit")])
+                if rez != "exit":
+                    $ spent_time += 10
+                    scene BG char Alice bed-morning-02
+                    $ renpy.show("Alice sleep-morning-closer "+pose3_2)
+                    if pose3_2 == "01":
+                        Max_05 "/Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
+                    elif pose3_2 == "02":
+                        Max_03 "О, да! Не лечь и не приобнять эту нежную попку – настоящее преступление... Только вот Алиса посчитает иначе и оторвёт мне голову прямо здесь. Так что лучше потихоньку уходить..." nointeract
+                    else:
+                        Max_02 "Вот чёрт! С каким же огромным удовольствием я бы сел рядом с ней, запустил свои руки под её белье и ласкал эти упругие сисечки всё утро... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится." nointeract
+                    $ rez = renpy.display_menu([(_("{i}уйти{/i}"), "exit")])
             "{i}уйти{/i}":
                 pass
         jump Waiting
@@ -113,7 +142,7 @@ label alice_shower:
             scene image ("Alice shower 0"+str(__ran1))
             $ renpy.show("FG shower 00"+max_profile.dress)
             menu:
-                Max_00 "Ого... Голая Алиса всего в паре метров от меня!"
+                Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
                 "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                     jump .closer_peepeng
                 "{i}уйти{/i}":
@@ -129,7 +158,10 @@ label alice_shower:
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
                 show FG shower-closer
-                Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nМожно целую вечность смотреть, как сестренка принимает душ. Лишь бы она меня не заметила..."
+                if __ran1 % 2 > 0:
+                    Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nСупер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
+                else:
+                    Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
             elif RandomChance(_chance):
                 $ peeping["alice_shower"] = 2
                 $ max_profile.stealth += 0.05
@@ -139,7 +171,7 @@ label alice_shower:
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
                 show FG shower-closer
-                Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nПора сматываться."
+                Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
                 jump .end_peeping
             else:
                 $ peeping["Alice_shower"] = 3
@@ -150,7 +182,7 @@ label alice_shower:
                 show image ("Alice shower-closer "+__ran1)
                 show FG shower-closer
                 menu:
-                    Alice_12 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая. Но ничего, я маме всё расскажу, она тебя накажет!"
+                    Alice_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!"
                     "{i}Бежать{/i}":
                         jump .end_peeping
 

@@ -44,8 +44,8 @@ default sex_stat = {
 ## Расписание персонажей
 
 default schedule_lisa = [
-    Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", "sleep", _("спит в нашей комнате (ночь)"), "house", 0, "lisa_sleep", enabletalk=False, glow=102),
-    Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", "sleep", _("спит в нашей комнате (утро)"), "house", 0, "lisa_sleep", enabletalk=False, glow=102),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", "sleep", _("спит в нашей комнате (ночь)"), "house", 0, "lisa_sleep_night", enabletalk=False, glow=102),
+    Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", "sleep", _("спит в нашей комнате (утро)"), "house", 0, "lisa_sleep_morning", enabletalk=False, glow=102),
     Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", "shower", _("принимает душ"), "house", 3, "lisa_shower", enabletalk=False, glow=120),
     Schedule((0, 1, 2, 3, 4, 5, 6), "8:0", "8:59", "read", _("читает в нашей комнате"), "house", 0, "lisa_read", glow=105),
     Schedule((0, 1, 2, 3, 4, 5, 6), "9:0", "9:59", "breakfast", _("семейный завтрак"), "house", 5, "breakfast", enabletalk=False, glow=105),
@@ -96,8 +96,8 @@ default schedule_ann  = [
 
 default schedule_alice = [
     Schedule((1, 2, 3, 4, 5, 6, 0), "0:0", "0:59", "bath", _("принимает ванну"), "house", 3, "alice_bath", enabletalk=False, glow=120),
-    Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "5:59", "sleep", _("спит (ночь)"), "house", 1, "alice_sleep", enabletalk=False, glow=105),
-    Schedule((1, 2, 3, 4, 5, 6, 0), "6:0", "7:59", "sleep", _("спит (утро)"), "house", 1, "alice_sleep", enabletalk=False, glow=110),
+    Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "5:59", "sleep", _("спит (ночь)"), "house", 1, "alice_sleep_night", enabletalk=False, glow=105),
+    Schedule((1, 2, 3, 4, 5, 6, 0), "6:0", "7:59", "sleep", _("спит (утро)"), "house", 1, "alice_sleep_morning", enabletalk=False, glow=110),
     Schedule((1, 2, 3, 4, 5, 6, 0), "8:0", "8:59", "shower", _("принимает душ"), "house", 3, "alice_shower", enabletalk=False, glow=120),
     Schedule((0, 1, 2, 3, 4, 5, 6), "9:0", "9:59", "breakfast", _("семейный завтрак"), "house", 5, "breakfast", enabletalk=False, glow=105),
     Schedule((1, 2, 3, 4, 5), "10:0", "10:59", "resting", _("в своей комнате"), "house", 1, "alice_rest_morning", talklabel="alice_morning_closer", glow=110),
@@ -199,16 +199,16 @@ default items = {
     "hide_cam": Item(_("СКРЫТАЯ КАМЕРА"), _("Высокотехнологичная микро-камера, предназначенная для скрытного наблюдения. Имеет радиомодуль для беспроводной передачи зашифрованного цифрового видеосигнала."), "cam", 3, 990),
     "ann_movie": Item(_("ФИЛЬМ \"ШКОЛЬНИЦЫ\""), _("Строгая учительница пытается наказать непослушных школьниц..."), "", None),
     "bathrobe": Item(_("ШЕЛКОВЫЙ ХАЛАТ"), _("Короткий, лёгкий, почти шёлковый халат высшего качества. Made in China."), "bathrobe", 0, 100, True, cells=2),
-    "bikini": Item(_("КУПАЛЬНИК КРАСНЫЙ"), _("Купальник для тех, кто не стесняется своего тела. Скрывает только самые интимные участки. Всё остальное открыто для солнца и глаз окружающих."), "bikini", 0, 200, True, cells=2),
+    "bikini": Item(_("КУПАЛЬНИК КРАСНЫЙ"), _("Купальник для тех, кто не стесняется своего тела. Скрывает только самые интимные участки. Всё остальное открыто для солнца и глаз окружающих."), "bikini", 0, 200, False, cells=2),
     "cigarettes": Item(_("СИГАРЕТЫ"), _("Пачка сигарет Lucky Strike. Для настоящих мужчин!"), "cigarettes", 7, 10),
     "dress": Item(_("МАЛЕНЬКОЕ ЧЕРНОЕ ПЛАТЬЕ"), _("Отличный подарок для девушки, желающей произвести фурор на вечеринке или дискотеке."), "dress-1", 0, 200, cells=2),
-    "erobook_1": Item(_("ЛЮБЯЩАЯ РУБИ"), _("Роман о запретной любви между секретаршей и её начальником, полный любви, страсти, эмоций и... мистики."), "erobook-1", 1, 20, True),
-    "erobook_2": Item(_("ПРЕМЬЕР-МИНИСТР"), _("Новый эротический роман, входящий в Топ-10 лучших романов и новелл США!"), "erobook-2", 1, 30, True),
-    "erobook_3": Item(_("БЫТЬ КУКЛОЙ"), _("В поместье Картера красивые девушки обучаются, чтобы стать идеальными жёнами для самых влиятельных людей этого мира."), "erobook-3", 1, 50, True),
-    "erobook_4": Item(_("КНИГА ОРГАЗМОВ"), _("Что получится, если собрать самые горячие истории об оргазмах от 69 различных авторов?"), "erobook-4", 1, 75, True),
-    "erobook_5": Item(_("ИСТОРИЯ О"), _("Это история о доминировании и подчинении. История об одной прекрасной девушке по имени О."), "erobook-5", 1, 100, True),
+    "erobook_1": Item(_("ЛЮБЯЩАЯ РУБИ"), _("Роман о запретной любви между секретаршей и её начальником, полный любви, страсти, эмоций и... мистики."), "erobook-1", 1, 20, False),
+    "erobook_2": Item(_("ПРЕМЬЕР-МИНИСТР"), _("Новый эротический роман, входящий в Топ-10 лучших романов и новелл США!"), "erobook-2", 1, 30, False),
+    "erobook_3": Item(_("БЫТЬ КУКЛОЙ"), _("В поместье Картера красивые девушки обучаются, чтобы стать идеальными жёнами для самых влиятельных людей этого мира."), "erobook-3", 1, 50, False),
+    "erobook_4": Item(_("КНИГА ОРГАЗМОВ"), _("Что получится, если собрать самые горячие истории об оргазмах от 69 различных авторов?"), "erobook-4", 1, 75, False),
+    "erobook_5": Item(_("ИСТОРИЯ О"), _("Это история о доминировании и подчинении. История об одной прекрасной девушке по имени О."), "erobook-5", 1, 100, False),
     "ladder": Item(_("Стремянка"), _("Небольшая стремянка, позволяющая достать то, для чего не хватает роста"), "ladder", 7, cells=2),
-    "manual": Item(_("WEB STANDARDS"), _("Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."), "manual-1", 1, 100, True, need_read=5),
+    "manual": Item(_("WEB STANDARDS"), _("Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."), "manual-1", 1, 100, False, need_read=5),
     #"": Item(_(""), _(""), "", , ),
     }
 
@@ -375,21 +375,25 @@ default talks = {
     "lisa_swim" : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
                     "possibility[\"Swimsuit\"].stage_number < 0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_sun\""),
     "lisas_boy" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1"),
-    "lisa_dw"   : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_dishes\""),
-    "alice_dw"  : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).label == \"alice_dishes\""),
+    "lisa_dw"   : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).name == \"dishes\""),
+    "alice_dw"  : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"dishes\""),
     "ask_money" : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var[\"ask_money\"]==0"),
     "aboutfood" : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv[\"buyfood\"].stage==2 and dcv[\"buyfood\"].lost==2"),
     "aboutpool" : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv[\"clearpool\"].stage==2 and not dcv[\"clearpool\"].done"),
+    "ann_tv"    : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var[\"ann_tv\"]==0 and GetScheduleRecord(schedule_ann, day, tm).name == \"tv\""),
+    "alice_tv"  : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var[\"alice_tv\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"tv\""),
     }
 
 # Переменные влияющие на запуск диалогов
 default talk_var = {
-    "blog" : 0,
-    "boy" : 0,
-    "lisa_fd": 0,
+    "blog"     : 0,
+    "boy"      : 0,
+    "lisa_fd"  : 0,
     "ask_money": 0,
-    "lisa_dw": 0,
-    "alice_dw": 0,
+    "lisa_dw"  : 0,
+    "alice_dw" : 0,
+    "ann_tv"   : 0,
+    "alice_tv" : 0,
     }
 
 

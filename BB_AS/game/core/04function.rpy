@@ -1,7 +1,7 @@
 init python:
 
+    # Увеличивает время, заданное в формате 'hh:mm' на delta минут
     def AddTime(ts, delta=1):
-        """Увеличивает время, заданное в формате 'hh:mm' на delta минут"""
         h, m = ts.split(":")
         ti = int(h)*60 + int(m) + delta ## переведем время в минуты и прибавим дельту
         if ti > 0:
@@ -15,19 +15,20 @@ init python:
         return ("0"+str(h))[-2:]+":"+("0"+str(m))[-2:]
 
 
+    # ключ для сортировки списка с расписанием - время начала действия
     def SortByTime(inputStr):
-        """ключ для сортировки списка с расписанием - сремя начала действия"""
         return inputStr.ts
 
 
+    # ключ для сортировки списка с расписанием - дата и время начала действия
     def SortByDayTime(inputStr):
         return str(inputStr[0]) + "_" + inputStr[1]
 
 
+    # добавляет в список с расписанием персонажа новые действия
+    # блоки на один и тот же период с разным сдвигом в одном периоде или
+    # на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком
     def AddSchedule(schedule, *added_sheds):
-        """добавляет в список с расписанием персонажа новые действия
-        блоки на один и тот же период с разным сдвигом в одном периоде или
-        на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком"""
         edited = []
         # составим список расписаний, затронутых изменениями (в последствии будут удалены)
         for nsh in added_sheds:
@@ -85,13 +86,13 @@ init python:
         schedule.sort(key=SortByTime)
 
 
+    # Возвращает список записей с текущим действием персонажа
+    # Аргументы:
+    # schedule - список записей с расписанием,
+    # day      - день (целое),
+    # tm     - время в формате 'hh:mm',
+    # week     - номер недели (целое)
     def GetScheduleRecordList(schedule, day, tm): # только для тестирования расписания
-        """ Возвращает список записей с текущим действием персонажа
-            Аргументы:
-            schedule - список записей с расписанием,
-            day      - день (целое),
-            tm     - время в формате 'hh:mm',
-            week     - номер недели (целое) """
         h, m = tm.split(":")  # нормализуем время на всякий случай
         tm = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
         day += 2  # в игре отсчет начинается со среды и дня под номером 1
@@ -104,13 +105,13 @@ init python:
         return rez
 
 
+    # Возвращает запись с текущим действием персонажа
+    #     Аргументы:
+    #     schedule - список записей с расписанием,
+    #     day      - день (целое),
+    #     tm     - время в формате 'hh:mm',
+    #     week     - номер недели (целое)
     def GetScheduleRecord(schedule, day, tm):
-        """ Возвращает запись с текущим действием персонажа
-            Аргументы:
-            schedule - список записей с расписанием,
-            day      - день (целое),
-            tm     - время в формате 'hh:mm',
-            week     - номер недели (целое) """
         h, m = tm.split(":")  # нормализуем время на всякий случай
         tm = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
         day += 2  # в игре отсчет начинается со среды и дня под номером 1
@@ -128,8 +129,8 @@ init python:
             return rez[0]
 
 
+    # функция для разработчика, проверяет расписание на перехлесты
     def VerifySchedule(schedule):
-        """ функция для разработчика, проверяет расписание на перехлесты"""
         max_krat = 1
         max_week = 0
         for sh in schedule:  # определяем неделю старта теста и максимальную длительность в неделях (кратность)
@@ -190,9 +191,9 @@ init python:
             print("Ошибок не обнаружено")
 
 
+    # функция назначает фон локациям согласно текущего времени
+    # и распределяет персонажей по локациям согласно расписанию """
     def Distribution():
-        """ функция назначает фон локациям согласно текущего времени
-            и распределяет персонажей по локациям согласно расписанию """
         h, m = tm.split(":")
 
         for loc in locations:
@@ -215,8 +216,7 @@ init python:
                     eval(schedule_char.loc+"["+str(schedule_char.room)+"].cur_char.append(\""+char+"\")")
 
 
-    def Wait(delta):
-        """ функция реализует ожидание в минутах """
+    def Wait(delta): # функция реализует ожидание в минутах
         global day, tm
         h, m = tm.split(":")
         ti = int(h)*60 + int(m) + delta
@@ -230,9 +230,9 @@ init python:
         tm = ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
 
 
+    # функция вычисляет разницу в минутах между time2 и time1
+    # если time1 больше, считается, что оно принадлежит предыдущему дню """
     def TimeDifference(time1, time2):
-        """ функция вычисляет разницу в минутах между time2 и time1
-            если time1 больше, считается, что оно принадлежит предыдущему дню """
         h1, m1 = time1.split(":")
         h2, m2 = time2.split(":")
         t1 = int(h1)*60+int(m1)
@@ -244,8 +244,7 @@ init python:
         return t2 - t1
 
 
-    def CooldownTime(time2):
-        """ возвращает время, когда откатится кулдаун в формате "день час:мин" """
+    def CooldownTime(time2): # возвращает время, когда откатится кулдаун в формате "день час:мин"
         h1, m1 = tm.split(":")
         h2, m2 = time2.split(":")
         ti = int(h1)*60+int(m1) + int(h2)*60+int(m2)
@@ -256,8 +255,7 @@ init python:
         return str(d)+" " + ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
 
 
-    def ItsTime(next_learn):
-        """ проверяет, прошел ли кулдаун """
+    def ItsTime(next_learn): # проверяет, прошел ли кулдаун """
         d1, hm = next_learn.split(" ")
         h1, m1 = hm.split(":")
         h2, m2 = tm.split(":")
@@ -265,15 +263,15 @@ init python:
         return (day*24 + int(h2))*60 + int(m2) >= (int(d1)*24 + int(h1))*60 + int(m1)
 
 
+    # устанавливает активность кнопки чтения, если есть недочитанные книги
     def ReadBookCheck():
-        """ устанавливает активность кнопки чтения, если есть недочитанные книги"""
         for key in items:
             if items[key].need_read > items[key].read and ItsTime(cooldown["learn"]):
                 AvailableActions["readbook"].active = True
 
 
+    # находит самое раннее всплывающее событие в указанный промежуток времени и возвращает его ключ
     def GetCutEvents(tm1, tm2, sleep):
-        """ находит самое раннее всплывающее событие в указанный промежуток времени и возвращает его ключ"""
 
         # получим список событий, "всплывающих" в указанный период
         eventslist = []
@@ -309,10 +307,10 @@ init python:
             return ""
 
 
+    # ищет все доступные темы для разговора с персонажем в текущей комнате
+    # если персонажей несколько, то диалог должен быть для всех
+    # возвращает ключи словаря с вариантами фраз
     def GetTalksTheme():
-        """ ищет все доступные темы для разговора с персонажем в текущей комнате
-            если персонажей несколько, то диалог должен быть для всех
-            возвращает ключи словаря с вариантами фраз"""
         talkslist = []
 
         for i in talks:
@@ -328,8 +326,7 @@ init python:
         return talkslist
 
 
-    def TalkMenuItems():
-        """ возвращает список кортежей для создания меню """
+    def TalkMenuItems(): # возвращает список кортежей для создания меню
 
         menu_items = []
         talklist = GetTalksTheme()
@@ -340,19 +337,17 @@ init python:
         return menu_items
 
 
-    def GetChance(Skil, Divisor=1):
-        """ Вычисляет и возвращает шанс успешного применения навыка """
+    def GetChance(Skil, Divisor=1): # Вычисляет и возвращает шанс успешного применения навыка
         cap = 100.0 / Divisor
 
         return min(90.0, 100.0 * (Skil / cap))
 
 
-    def RandomChance(chance):
-        """ прошло или нет применение навыка с указанным шансом """
+    def RandomChance(chance): # прошло или нет применение навыка с указанным шансом
         return renpy.random.random() < chance / 100.0
 
 
-    def NewSaveName():
+    def NewSaveName(): # дополнение имени сохранения
         global save_name
         save_name = ("" + "$@" + str(weekdays[(day+2) % 7][0]) +
                     "$@" + str(tm) + "$@" + str(day) +
@@ -360,14 +355,14 @@ init python:
                     "$@" + str(number_autosave))
 
 
-    def NewNumberAutosave():
+    def NewNumberAutosave(): # новый номер автосохранения
         global number_autosave
         number_autosave += 1
 
         NewSaveName()
 
 
-    def HintRelMood(char, rel, mood):
+    def HintRelMood(char, rel, mood): # подсказка с изменением настроения и отношений
         if rel >= 50:
             rel_suf = __("значительно улучшилось")
         elif rel >= 10:
@@ -399,8 +394,7 @@ init python:
             renpy.notify(__("Настроение %s %s") % (char_name, mood_suf))
 
 
-    def BuyItem(id):
-        """ выполняет покупку предмета из интернет-магазина """
+    def BuyItem(id): # выполняет покупку предмета из интернет-магазина
         global money, items
         money -= items[id].price
         items[id].buy = True
@@ -410,8 +404,7 @@ init python:
             items[id].delivery = 2
 
 
-    def GetDeliveryList():
-        """ формирует список доставляемых товаров """
+    def GetDeliveryList(): # формирует список доставляемых товаров
         global delivery_list, items
         for i in items:
             if items[i].buy and items[i].delivery > 0:
@@ -420,7 +413,7 @@ init python:
                     delivery_list.append(i)
 
 
-    def GetDeliveryString():
+    def GetDeliveryString(): # формирует строку cо списком доставленных товаров
         StrDev = "Так... В накладной написано следующее:"
         n = 0
         for i in delivery_list:
@@ -432,7 +425,7 @@ init python:
         return StrDev
 
 
-    def DeletingDeliveryTempVar():
+    def DeletingDeliveryTempVar(): # удаляет временные переменные строки списа доставленных товаров
         n = 1
         for i in delivery_list:
             del globals()["TmpName"+str(n)]
@@ -593,7 +586,7 @@ init python:
                     cam.public = int(cam.public)
 
 
-    def Withdraw():
+    def Withdraw(): # выплата с сайта
         global money
         money += int(site.account)
         site.account -= int(site.account)
@@ -683,7 +676,7 @@ init python:
             AvailableActions["clearpool"].active = (dcv["clearpool"].stage == 1)
 
 
-    def ChoiceClothes():
+    def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
         for char in characters:
             prev_shed = GetScheduleRecord(eval("schedule_"+char), prevday, prevtime)
             cur_shed  = GetScheduleRecord(eval("schedule_"+char), day, tm)
@@ -704,11 +697,11 @@ init python:
                 elif prevtime < "22:00" <= tm and day > 1:
                     cloth_type["ann"]["rest"]   = renpy.random.choice(["a", "b"])
                     cloth_type["lisa"]["sleep"] = renpy.random.choice(["a", "b"])
-
+                # после "смены одежды" прописываем одежды по расписанию
                 ClothingNps(char, cur_shed.name)
 
 
-    def ClothingNps(char, name):
+    def ClothingNps(char, name): # устанавливает текущую одежду согласно расписанию (в том числе для инфо)
         if name == "dressed":
             characters[char].dress_inf = "00b"
         elif char == "lisa":
@@ -874,3 +867,9 @@ init python:
 
         elif char == "eric":
             pass
+
+
+    def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
+        for cam in room.cams:
+            cam.grow = grow
+            grow = int(grow * 0.9) # для каждой пследующей камеры интерес снижается на 10% 

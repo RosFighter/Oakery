@@ -32,8 +32,10 @@ label Waiting:
     if day != prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
         $ talk_var["ask_money"] = 0
-        $ talk_var["lisa_dw"] = 0 # разговор о помывке посуды
-        $ talk_var["alice_dw"] = 0
+        $ talk_var["lisa_dw"]   = 0 # разговор о помывке посуды
+        $ talk_var["alice_dw"]  = 0
+        $ talk_var["ann_tv"]    = 0
+        $ talk_var["alice_tv"]  = 0
 
         $ random_loc_ab = renpy.random.choice(["a", "b"])
 

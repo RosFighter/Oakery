@@ -216,9 +216,9 @@ label LaptopShop:
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
-    show interface laptop start page:
+    show interface laptop e-shop:
         xpos 221 ypos 93
-        size (1475, 829)
+        # size (1475, 829)
 
     $ renpy.block_rollback()
     call screen OnlineShop
@@ -298,6 +298,8 @@ label about_cam:
     Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
     Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
     Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
+    $ items["manual"].InShop = True
+    $ renpy.notify(_("В интернет-магазине доступен новый товар."))
     $ spent_time = 20
     $ possibility["cams"].stage_number = 2
     $ possibility["cams"].stages[2].used = True
@@ -362,7 +364,7 @@ label DishesWashed:
             else:
                 $ HintRelMood("alice", 0, 6)
     $ dishes_washed = True
-    $ spent_time = max((60 - int(tm[-2:])), 30)
+    $ spent_time = max((60 - int(tm[-2:])), 50)
     $ cur_ratio = 2
     jump Waiting
 
