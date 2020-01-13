@@ -4,19 +4,19 @@ translate english strings:
 
     # game/core/screens.rpy:178
     old "{b}ИНТЕРНЕТ-МАГАЗИН{/b}"
-    new "ONLINE STORE"
+    new "{b}ONLINE STORE{/b}"
 
     # game/core/screens.rpy:187
     old "{b}КУПИТЬ ПРОДУКТЫ{/b}"
-    new "GROCERY STORE"
+    new "{b}GROCERY STORE{/b}"
 
     # game/core/screens.rpy:192
     old "{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}"
-    new " GET STARTED ON YOUR SITE"
+    new "{b}GET STARTED ON YOUR SITE{/b}"
 
     # game/core/screens.rpy:197
     old "{b}СВОЙ САЙТ{/b}"
-    new "MY SITE"
+    new "{b}MY SITE{/b}"
 
     # game/core/screens.rpy:212
     old "Что будем искать?"
@@ -24,7 +24,7 @@ translate english strings:
 
     # game/core/screens.rpy:285
     old "{i}{b}КУПЛЕНО{/b}{/i}"
-    new "Completed"
+    new "{i}{b}COMPLETED{/b}{/i}"
 
     # game/core/screens.rpy:360
     old "ДОХОД ОТ ПРОСМОТРОВ"
@@ -60,11 +60,11 @@ translate english strings:
 
     # game/core/screens.rpy:507
     old "{b}РЕКЛАМА{/b}"
-    new "RECLAIM"
+    new "{b}RECLAIM{/b}"
 
     # game/core/screens.rpy:510
     old "{b}ВЫВОД СРЕДСТВ{/b}"
-    new "CONTRACTION OF MATERIALS "
+    new "{b}CONTRACTION OF MATERIALS{/b}"
 
     # game/core/screens.rpy:515
     old "Расположение:"
@@ -88,7 +88,7 @@ translate english strings:
 
     # game/core/screens.rpy:685
     old "Зрителей: [public]"
-    new "Spectators:"
+    new "Spectators: [public]"
 
     # game/core/screens.rpy:721
     old "ПОЛЕЗНОЕ"
