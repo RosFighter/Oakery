@@ -53,7 +53,7 @@ label ann_shower:
         $ peeping["ann_shower"] = 4
         menu:
             Max_00 "Похоже, мама принимает душ..."
-            "{i}заглянуть с улицы{/i}":
+            "{i}заглянуть со двора{/i}":
                 jump .start_peeping
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -75,8 +75,8 @@ label ann_shower:
             scene image ("Ann shower 0"+str(__ran1))
             $ renpy.show("FG shower 00"+max_profile.dress)
             menu:
-                Max_00 "Как же она все-таки красива..."
-                "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+                Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
+                "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                     jump .closer_peepeng
                 "{i}уйти{/i}":
                     jump .end_peeping
@@ -91,7 +91,10 @@ label ann_shower:
                 scene BG shower-closer
                 show image ("Ann shower-closer 0"+str(__ran1))
                 show FG shower-closer
-                Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nУх, аж завораживает! Хоть бы меня не заметила..."
+                if __ran1 % 2 > 0:
+                    Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+                else:
+                    Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
             elif RandomChance(_chance):
                 $ peeping["ann_shower"] = 2
                 $ max_profile.stealth += 0.05
@@ -101,7 +104,7 @@ label ann_shower:
                 scene BG shower-closer
                 show image ("Ann shower-closer 0"+str(__ran1))
                 show FG shower-closer
-                Max_09 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nПора сматываться."
+                Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
                 jump .end_peeping
             else:
                 $ peeping["ann_shower"] = 3
@@ -112,7 +115,7 @@ label ann_shower:
                 show image ("Ann shower-closer "+__ran1)
                 show FG shower-closer
                 menu:
-                    Ann_19 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс! Подглядываешь за мной? Как тебе не стыдно?!"
+                    Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..."
                     "{i}Бежать{/i}":
                         jump .end_peeping
 
@@ -343,7 +346,7 @@ label ann_bath:
                         Max_00 "Ага..."
                     "{i}уйти{/i}":
                         pass
-            "{i}подглядывать с улицы{/i}":
+            "{i}заглянуть со двора{/i}":
                 scene Ann bath 01
                 $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
                 Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
@@ -370,4 +373,5 @@ label ann_tv:
 label ann_tv_closer:
     scene BG lounge-tv-01
     $ renpy.show("Ann tv-closer "+pose3_3)
+    $ renpy.show("Max tv 00"+max_profile.dress)
     return

@@ -48,5 +48,5 @@ translate english strings:
 
     # game/core/04function.rpy:451
     old "Приобретен пакет рекламы"
-    new ""
+    new "Advertising package acquired"
 

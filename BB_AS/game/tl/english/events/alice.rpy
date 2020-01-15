@@ -271,7 +271,7 @@ translate english strings:
     new "Max's stealth increased a little"
 
     # game/events/alice.rpy:144
-    old "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
+    old "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
     new "{i}look closely\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
 
     # game/events/alice.rpy:155

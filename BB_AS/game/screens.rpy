@@ -316,8 +316,8 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        # button action Start() style "nav_button":
-        #     textbutton _("Начать заново") action Start()
+        button action Start() style "nav_button":
+            textbutton _("Начать новую\nигру") action Start()
 
         button action ShowMenu("history") style "nav_button":
             textbutton _("История") action ShowMenu("history")
@@ -807,7 +807,7 @@ screen preferences():
 
     use game_menu(_("Настройки"), scroll="viewport"):
 
-        vbox:
+        vbox xpos 100:
 
             hbox:
                 box_wrap True
@@ -828,11 +828,6 @@ screen preferences():
                         textbutton _("Правая") action Preference("rollback side", "right")
 
                 vbox:
-                    vbox:
-                        style_prefix "radio"
-                        label _("Язык | Language")
-                        textbutton _("Русский") action Language(None)
-                        textbutton _("English") action Language("english")
 
                     vbox:
                         style_prefix "check"
@@ -840,7 +835,18 @@ screen preferences():
                         textbutton _("Всего текста") action Preference("skip", "toggle")
                         textbutton _("После выборов") action Preference("after choices", "toggle")
                         textbutton _("Переходов") action InvertSelected(Preference("transitions", "toggle"))
+                vbox:
+                    vbox:
+                        style_prefix "radio"
+                        label _("Язык")#| Language")
+                        textbutton _("Русский") action Language(None)
+                        textbutton _("English") action Language("english")
 
+                    vbox:
+                        style_prefix "radio"
+                        label _("Дополнительно")
+                        textbutton _("Patreon-интро") action ToggleVariable("persistent.orint", False, True)
+                        textbutton _("Оригинальное интро") action ToggleVariable("persistent.orint", True, False)
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.
 
@@ -894,6 +900,14 @@ screen preferences():
                         textbutton _("Без звука"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
+    # imagebutton:
+    #     align(0.02, 0.98)
+    #     if persistent.orint:
+    #         idle "gui/button/on.png"
+    #         action SetVariable("persistent.orint", False)
+    #     else:
+    #         idle "gui/button/off.png"
+    #         action SetVariable("persistent.orint", True)
 
 
 style pref_label is gui_label

@@ -1016,21 +1016,21 @@ screen menu_userinfo():
                                         $ char_name = characters[char].name_4
                                         text _("Отношения с [char_name!t]") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        if characters[char].mood == -200:
+                                        if characters[char].relmax == -200:
                                             text _("Война") size 24
-                                        elif -200 < characters[char].mood <= -100 :
+                                        elif -200 < characters[char].relmax <= -100 :
                                             text _("Враждебные") size 24
-                                        elif -100 < characters[char].mood < 0 :
+                                        elif -100 < characters[char].relmax < 0 :
                                             text _("Плохие") size 24
-                                        elif 0 <= characters[char].mood < 100 :
+                                        elif 0 <= characters[char].relmax < 100 :
                                             text _("Прохладные") size 24
-                                        elif 100 <= characters[char].mood < 250 :
+                                        elif 100 <= characters[char].relmax < 250 :
                                             text _("Неплохие") size 24
-                                        elif 250 <= characters[char].mood < 400 :
+                                        elif 250 <= characters[char].relmax < 400 :
                                             text _("Хорошие") size 24
-                                        elif 400 <= characters[char].mood < 700 :
+                                        elif 400 <= characters[char].relmax < 700 :
                                             text _("Тёплые") size 24
-                                        elif 700 <= characters[char].mood < 1000 :
+                                        elif 700 <= characters[char].relmax < 1000 :
                                             text _("Дружеские") size 24
                                         else:
                                             text _("Близкие") size 24

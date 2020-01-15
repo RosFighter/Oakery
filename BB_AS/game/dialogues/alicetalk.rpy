@@ -259,7 +259,7 @@ label talkblog1:
 label alice_talk_tv:
     Alice_00 "Нет, садись. Тут места много..."
     $ talk_var["alice_tv"] = 1
-    $ renpy.show("Max tv "+pose3_1+max_profile.dress)
+    $ renpy.show("Max tv-closer "+pose3_1+max_profile.dress)
     Max_00 "Хорошо. Что смотришь?"
     menu:
         Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."

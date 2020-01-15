@@ -52,7 +52,7 @@ label lisa_shower:
                     "{i}уйти{/i}":
                         $ peeping["lisa_shower"] = 4
                         jump .end_peeping
-            "{i}заглянуть с улицы{/i}":
+            "{i}заглянуть со двора{/i}":
                 jump .start_peeping
             "{i}уйти{/i}":
                 $ peeping["lisa_shower"] = 4
@@ -77,7 +77,7 @@ label lisa_shower:
         $ renpy.show("FG shower 00"+max_profile.dress)
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
-            "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -492,7 +492,7 @@ label lisa_bath:
                 jump .knock
             "{i}открыть дверь{/i}":
                 jump .open
-            "{i}подглядывать с улицы{/i}":
+            "{i}заглянуть со двора{/i}":
                 scene Lisa bath 01
                 $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
                 Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."

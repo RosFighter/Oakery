@@ -13,7 +13,8 @@ define config.has_quicksave = False
 define config.autosave_slots = 30
 define config.quicksave_slots = 30
 define config.autosave_on_quit = False
-define persistent.grid_vbox = "grid"
+default persistent.grid_vbox = "grid"
+default persistent.orint = False
 
 define weekdays = (
                   (_("ВС"), _("ВОСКРЕСЕНЬЕ")),

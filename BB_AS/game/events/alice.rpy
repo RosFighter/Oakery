@@ -17,7 +17,7 @@ label alice_bath:
                         Max_00 "Ладно, ладно..."
                     "{i}уйти{/i}":
                         pass
-            "{i}подглядывать с улицы{/i}":
+            "{i}заглянуть со двора{/i}":
                 scene Alice bath 01
                 $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
                 Max_00 "Кажется, Алиса и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но подходить ближе опасно - может заметить..."
@@ -27,7 +27,6 @@ label alice_bath:
                         pass
             "{i}уйти{/i}":
                 pass
-        # $ current_room, prev_room = prev_room, current_room
         $ spent_time = 10
         jump Waiting
     return
@@ -120,7 +119,7 @@ label alice_shower:
         $ peeping["alice_shower"] = 4
         menu:
             Max_00 "Похоже, Алиса принимает душ..."
-            "{i}заглянуть с улицы{/i}":
+            "{i}заглянуть со двора{/i}":
                 jump .start_peeping
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -143,7 +142,7 @@ label alice_shower:
             $ renpy.show("FG shower 00"+max_profile.dress)
             menu:
                 Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
-                "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+                "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                     jump .closer_peepeng
                 "{i}уйти{/i}":
                     jump .end_peeping
@@ -326,6 +325,7 @@ label alice_tv:
 label alice_tv_closer:
     scene BG lounge-tv-01
     $ renpy.show("Alice tv-closer "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Max tv 00"+max_profile.dress)
     return
 
 
