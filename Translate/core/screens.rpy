@@ -60,7 +60,7 @@ translate english strings:
 
     # game/core/screens.rpy:507
     old "{b}РЕКЛАМА{/b}"
-    new "{b}RECLAIM{/b}"
+    new "{b}Promotion{/b}"
 
     # game/core/screens.rpy:510
     old "{b}ВЫВОД СРЕДСТВ{/b}"
