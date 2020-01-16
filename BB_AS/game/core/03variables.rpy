@@ -226,7 +226,7 @@ default cur_ratio = 1
 default status_sleep = False
 default alarm_time = ""
 
-default earn = 0
+default dishes_washed = False
 
 default next_learn = "0 00:00"
 

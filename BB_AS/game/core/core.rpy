@@ -79,12 +79,13 @@ label Waiting:
             $ max_profile.energy += delt * 0.2 # (12% в час)
         else:
             $ max_profile.energy += delt * 1 / 6 # (10% в час)
-        if max_profile.energy > 100:
-            $ max_profile.energy = 100
         $ max_profile.cleanness -= delt * 0.5 * cur_ratio / 60.0
     else: # в противном случае - расходуется
         $ max_profile.energy -= delt * 3.5 * cur_ratio / 60.0
         $ max_profile.cleanness -= delt * 2.5 * cur_ratio / 60.0
+
+    $ max_profile.energy = clip(max_profile.energy, 0.0, 100.0)
+    $ max_profile.cleanness = clip(max_profile.cleanness, 0.0, 100.0)
 
     # обновим extra-info для сохранений
     $ NewSaveName()
@@ -103,9 +104,11 @@ label AfterWaiting:
     ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
     $ CamShow()
 
+
+
     $ spent_time = 0
-    # $ prevday = day
-    # $ prevtime = tm
+    $ prevday = day
+    $ prevtime = tm
     $ cur_ratio = 1
     $ status_sleep = False
     $ alarm_time = ""

@@ -129,15 +129,14 @@ label alice_shower:
             $ max_profile.stealth += 0.01
             $ __ran1 = renpy.random.randint(1, 4)
 
-            $ _chance = GetChance(max_profile.stealth, 3)
-            $ ch_vis = int(round(_chance))
-            if ch_vis < 33:
+            $ _chance = GetChance(max_profile.stealth, 3, 900)
+            if _chance < 333:
                 $ _chance_color = red
-            elif ch_vis > 67:
+            elif _chance > 666:
                 $ _chance_color = lime
             else:
                 $ _chance_color = orange
-            $ ch_vis = str(ch_vis) + "%"
+            $ ch_vis = str(int(_chance/10)) + "%"
             scene image ("Alice shower 0"+str(__ran1))
             $ renpy.show("FG shower 00"+max_profile.dress)
             menu:

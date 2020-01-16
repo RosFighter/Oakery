@@ -1,7 +1,7 @@
 label StartDialog:
     $ renpy.block_rollback()
     if max_profile.energy < 10:
-        Max_00 "Я слишком устал. Надо бы вздремнуть..."
+        Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
         jump AfterWaiting
 
     if len(current_room.cur_char) == 1:
@@ -22,9 +22,9 @@ label Sleep:
     scene BG char Max bed-night-01
     $ renpy.show("Max sleep-night "+pose3_3)
     menu:
-        Max_00 "{i}Как же я хочу спать...{/i}"
+        Max_00 "{i}Пожалуй, пора ложиться спать...{/i}"
         "{i}спать до утра{/i}":
-            Max_19 "Z-z-z"
+            Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
@@ -40,9 +40,9 @@ label Wearied:
     scene BG char Max bed-night-01
     $ renpy.show("Max sleep-night "+pose3_1)
     menu:
-        Max_00 "{i}Я без сил и хочу спать...{/i}"
+        Max_10 "{i}Моя голова уже совсем не соображает, нужно ложиться спать...{/i}"
         "{i}спать до утра{/i}":
-            Max_19 "Z-z-z"
+            Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
@@ -59,13 +59,13 @@ label LittleEnergy:
     else:
         scene BG char Max bed-night-01
     menu:
-        Max_00 "{i}Я вымотан, надо вздремнуть...{/i}"
+        Max_10 "{i}Я слишком вымотался, нужно хоть немного вздремнуть...{/i}"
         "{i}вздремнуть{/i}":
             if "11:00" < tm <= "19:00":
                 $ renpy.show("Max nap "+pose3_1+max_profile.dress)
             else:
                 $ renpy.show("Max sleep-night "+pose3_1)
-            Max_19 "Z-z-z"
+            Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
@@ -84,9 +84,9 @@ label Nap:
     $ renpy.block_rollback()
     scene BG char Max bed-day-01
     if max_profile.energy > 40.0:
-        $ txt = _("{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}")
+        $ txt = _("{i}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/i}")
     else:
-        $ txt = _("{i}Что-то я сегодня устал, надо бы вздремнуть...{/i}")
+        $ txt = _("{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}")
 
     menu:
         Max_19 "[txt!t]"
@@ -102,7 +102,7 @@ label Nap:
             jump AfterWaiting
 
     $ renpy.show("Max nap "+pose3_1+max_profile.dress)
-    Max_19 "Z-z-z"
+    Max_19 "Как же в этом доме хорошо..."
     $ status_sleep = True
     jump Waiting
 
@@ -111,7 +111,7 @@ label Alarm:
     $ renpy.block_rollback()
     scene BG char Max bed-night-01
     menu:
-        Max_00 "{i}В каком часу я должен встать?{/i}"
+        Max_00 "{i}В каком часу мне будет лучше проснуться?{/i}"
         # "{i}в 5 утра{/i}":
         #     $ alarm_time = "05:00"
         "{i}в 6 утра{/i}":
@@ -121,7 +121,7 @@ label Alarm:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
     $ renpy.show("Max sleep-night "+pose3_2)
-    Max_19 "Z-z-z"
+    Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
     $ NewSaveName()
     $ renpy.loadsave.force_autosave(True, True)
@@ -137,7 +137,7 @@ label Shower:
     show FG shower-water
 
     menu:
-        Max_19 "Хорошо быть чистым..."
+        Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..."
         "{i}закончить{/i}":
             $ max_profile.cleanness = 100
 
@@ -357,12 +357,10 @@ label DishesWashed:
         else:
             $ __name_label = GetScheduleRecord(schedule_alice, day, "11:30").label
         if __name_label == "alice_dishes":
-            $ characters["alice"].mood += 6
-            if characters["alice"].relmax < 400:
-                $ characters["alice"].relmax += 10
-                $ HintRelMood("alice", 10, 6)
+            if Relation("alice")[0] < 3:
+                $ AddRelMood("alice", 10, 6)
             else:
-                $ HintRelMood("alice", 0, 6)
+                $ AddRelMood("alice", 0, 6)
     $ dishes_washed = True
     $ spent_time = max((60 - int(tm[-2:])), 50)
     $ cur_ratio = 2

@@ -503,20 +503,17 @@ label talk_swim:
                         "Точно? А то мне есть что тебе показать...":
                             Lisa_13 "Да, Макс, точно! Я точно уверена, что не хочу это ещё раз видеть. И, вообще, отвали!"
                             Max_00 "Ну, как скажешь..."
-                            $ characters["lisa"].mood -= 5
-                            $ HintRelMood("lisa", 0, -5)
+                            $ AddRelMood("lisa", 0, -50)
                             jump .end
             menu:
                 Lisa_02 "Очень смешно, Макс!"
                 "А я и не шучу...":
-                    $ characters["lisa"].mood -= 3
                     menu:
                         Lisa_00 "И это тоже не смешно. В общем, я тут поваляюсь, если ты не против..."
                         "Извини, шутки у меня дурацкие... А какой купальник ты хочешь?":
-                            $ characters["lisa"].mood += 3
                             jump .want
                         "Конечно, одыхай...":
-                            $ HintRelMood("lisa", 0, -3)
+                            $ AddRelMood("lisa", 0, -60)
                             jump .end
                 "Ладно. А какой купальник ты хочешь?":
                     jump .want
@@ -628,12 +625,10 @@ label wash_dishes_lisa:
                 "{i}мыть посуду{/i}":
                     scene BG crockery-evening-00
                     $ renpy.show("Max crockery-evening 01"+max_profile.dress)
-                    $ characters["lisa"].mood += 6
-                    if characters["lisa"].relmax < 400:
-                        $ characters["lisa"].relmax += 10
-                        $ HintRelMood("lisa", 10, 6)
+                    if Relation("lisa")[0] < 3:
+                        $ AddRelMood("lisa", 10, 60)
                     else:
-                        $ HintRelMood("lisa", 0, 6)
+                        $ AddRelMood("lisa", 0, 60)
                     $ dishes_washed = True
                     $ spent_time = max((60 - int(tm[-2:])), 30)
                     $ cur_ratio = 2

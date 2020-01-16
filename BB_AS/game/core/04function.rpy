@@ -337,14 +337,12 @@ init python:
         return menu_items
 
 
-    def GetChance(Skil, Divisor=1): # Вычисляет и возвращает шанс успешного применения навыка
-        cap = 100.0 / Divisor
-
-        return min(90.0, 100.0 * (Skil / cap))
+    def GetChance(Skil, multiplier=1, limit=1000): # Вычисляет и возвращает шанс успешного применения навыка
+        return clip(Skil * 10 * multiplier, 0, limit)
 
 
     def RandomChance(chance): # прошло или нет применение навыка с указанным шансом
-        return renpy.random.random() < chance / 100.0
+        return renpy.random.randint(0, 1000) < chance
 
 
     def NewSaveName(): # дополнение имени сохранения
@@ -362,30 +360,34 @@ init python:
         NewSaveName()
 
 
-    def HintRelMood(char, rel, mood): # подсказка с изменением настроения и отношений
-        if rel >= 50:
-            rel_suf = __("значительно улучшилось")
-        elif rel >= 10:
-            rel_suf = __("улучшилось")
-        elif rel > 0:
-            rel_suf = __("немного улучшилось")
-        elif rel <= -50:
-            rel_suf = __("значительно ухудшилось")
-        elif rel <= -10:
-            rel_suf = __("ухудшилось")
-        elif rel < 0:
-            rel_suf = __("немного ухудшилось")
+    def ChangeRel(rel): # возвращает текстовое описание изменения отношений
+        return {
+                  rel <= -50 : __("значительно ухудшилось"),
+            -50 < rel <= -10 : __("ухудшилось"),
+            -10 < rel <= 0   : __("немного ухудшилось"),
+            0   < rel <= 10  : __("немного улучшилось"),
+            10  < rel <= 50  : __("улучшилось"),
+            50  < rel        : __("значительно улучшилось")
+            }[True]
 
-        if mood > 0:
-            mood_suf = __("повысилось")
-        elif mood < 0:
-            mood_suf = __("снизилось")
+
+    def ChangeMood(mood): # возвращает текстовое описание изменения отношений
+        return{
+            mood <  0 : __("снизилось"),
+            mood >= 0 : __("повысилось")
+            }[True]
+
+    def AddRelMood(char, rel, mood): # добавить изменение настроения и отношений и показать подсказку
+        rel_suf = ChangeRel(rel)
+        mood_suf = ChangeMood(mood)
 
         if _preferences.language is None:
             char_name = characters[char].name_1
         else:
             char_name = char.capitalize()
 
+        characters[char].relmax = clip(characters[char].relmax + rel, -450, 1400)
+        characters[char].mood   = clip(characters[char].mood + mood,  -435, 435)
         if rel != 0 and mood != 0:
             renpy.notify(__("Настроение %s %s \nЕе отношение к Максу %s") % (char_name, mood_suf, rel_suf))
         elif rel != 0:
@@ -872,4 +874,62 @@ init python:
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
         for cam in room.cams:
             cam.grow = grow
-            grow = int(grow * 0.9) # для каждой пследующей камеры интерес снижается на 10% 
+            grow = int(grow * 0.9) # для каждой пследующей камеры интерес снижается на 10%
+
+
+    def clip(x, a, b): # вписывает число x в диапазон между a и b
+        return a if x < a else(b if x > b else x)
+
+
+    def GetMood(char): # возвращает кортеж с номером и описанием диапазона настроения персонажа
+        mood = characters[char].mood
+        return {
+                   mood <= -285 : (-4, _("Ужасное")),
+            -285 < mood <= -165 : (-3, _("Очень плохое")),
+            -165 < mood <= -75  : (-2, _("Плохое")),
+            -75  < mood <= -15  : (-1, _("Не очень")),
+            -15  < mood <=  15  : (0, _("Нейтральное")),
+             15  < mood <=  75  : (1, _("Неплохое")),
+             75  < mood <=  165 : (2, _("Хорошее")),
+            165  < mood <=  285 : (3, _("Очень хорошее")),
+            285  < mood         : (4, _("Прекрасное")),
+            }[True]
+
+
+    def Relation(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Максом
+        rel = characters[char].relmax
+        return {
+                   rel <= -250 : (-3, _("Война")),
+            -250 < rel <= -100 : (-2, _("Враждебные")),
+            -100 < rel <   0   : (-1, _("Плохие")),
+            0    <= rel < 100  : ( 0, _("Прохладные")),
+            100  <= rel < 250  : ( 1, _("Неплохие")),
+            250  <= rel < 450  : ( 2, _("Хорошие")),
+            450  <= rel < 700  : ( 3, _("Тёплые")),
+            700  <= rel < 1000 : ( 4, _("Дружеские")),
+            1000 <= rel        : ( 5, _("Близкие"))
+            }[True]
+
+
+    def RelEric(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Эриком
+        rel = characters[char].releric
+        return {
+            #        rel <= -250 : (-3, _("Война")),
+            # -250 < rel <= -100 : (-2, _("Враждебные")),
+            # -100 < rel <   0   : (-1, _("Плохие")),
+            # 0    <= rel < 100  : ( 0, _("Прохладные")),
+            # 100  <= rel < 250  : ( 1, _("Неплохие")),
+            # 250  <= rel < 450  : ( 2, _("Хорошие")),
+            # 450  <= rel < 700  : ( 3, _("Тёплые")),
+            # 700  <= rel < 1000 : ( 4, _("Дружеские")),
+            # 1000 <= rel        : ( 5, _("Близкие"))
+            -3 : _("Война"),
+            -2 : _("Враждебные"),
+            -1 : _("Плохие"),
+            0  : _("Прохладные"),
+            1  : _("Неплохие"),
+            2  : _("Хорошие"),
+            3  : _("Тёплые"),
+            4  : _("Дружеские"),
+            5  : _("Близкие")
+            }[True]

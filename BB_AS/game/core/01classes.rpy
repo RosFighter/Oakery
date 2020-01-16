@@ -51,13 +51,13 @@ init python:
             self.training    = 20.0        # тренированность
             self.cleanness   = 70.0        # чистота
             self.persuade    = 8.0         # навыки убеждения
-            self.massage     = 0           # навыки массажа
-            self.ero_massage = 0           # навыки эро.массажа
+            self.massage     = 0.0         # навыки массажа
+            self.ero_massage = 0.0         # навыки эро.массажа
             self.stealth     = 9.0         # навык скрытности
-            self.kissing     = 0           # навык поцелуев
-            self.cunnilingus = 0           # опыт куни
-            self.sex         = 0           # сексуальный опыт
-            self.anal        = 0           # опыт анального секса
+            self.kissing     = 0.0         # навык поцелуев
+            self.cunnilingus = 0.0         # опыт куни
+            self.sex         = 0.0         # сексуальный опыт
+            self.anal        = 0.0         # опыт анального секса
             self.dress       = "a"         # суфикс файлов одежды ("a", "b", "c"...)
 
         def __repr__(self):

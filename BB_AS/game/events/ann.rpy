@@ -64,14 +64,13 @@ label ann_shower:
             $ __ran1 = renpy.random.randint(1, 4)
 
             $ _chance = GetChance(max_profile.stealth, 3)
-            $ ch_vis = int(round(_chance))
-            if ch_vis < 33:
+            if _chance < 333:
                 $ _chance_color = red
-            elif ch_vis > 67:
+            elif _chance > 666:
                 $ _chance_color = lime
             else:
                 $ _chance_color = orange
-            $ ch_vis = str(ch_vis) + "%"
+            $ ch_vis = str(int(_chance/10)) + "%"
             scene image ("Ann shower 0"+str(__ran1))
             $ renpy.show("FG shower 00"+max_profile.dress)
             menu:
@@ -180,20 +179,18 @@ label ann_dressed_work:
                 menu:
                     Ann_13 "Макс! Я же учила тебя стучаться!"
                     "Хорошо выглядишь, мам!":
-                        $ __mood += 3
+                        $ __mood += 30
                         Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
                         Max_00 "Конечно, мам!"
                     "Отличный зад!":
-                        $ __mood -= 3
+                        $ __mood -= 30
                         Ann_19 "Что?! Макс! А ну-ка быстро выйди и закрой дверь!"
                         Max_00 "Как скажешь, мам..."
                     "Ой, извини. Я забыл...":
-                        $ __mood -= 1
+                        $ __mood -= 10
                         Ann_07 "Ну, бывает. Я сама ещё не привыкла к тому, что замков нигде нет. Ладно, дорогой. Подожди за дверью, пока мама одевается. хорошо?"
                         Max_00 "Хорошо, мам..."
-                $ HintRelMood("ann", 0, __mood)
-                # $ characters["ann"].relmax += __rel
-                $ characters["ann"].mood += __mood
+                $ AddRelMood("ann", 0, __mood)
             "{i}заглянуть в окно{/i}":
                 scene BG char Ann voyeur-00
                 if __ran1 == "01":
@@ -238,15 +235,13 @@ label ann_dressed_shop:
                 menu:
                     Ann_13 "Макс! Я же учила тебя стучаться!"
                     "Хорошо выглядишь, мам!":
-                        $ __mood += 3
+                        $ __mood += 30
                         Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
                         Max_00 "Конечно, мам!"
                     "Ой, извини...":
                         Ann_07 "И Макс... Постарайся больше не входить без стука, хорошо?"
                         Max_00 "Хорошо, мам..."
-                $ HintRelMood("ann", 0, __mood)
-                # $ characters["ann"].relmax += __rel
-                $ characters["ann"].mood   += __mood
+                $ AddRelMood("ann", 0, __mood)
             # "{i}заглянуть в окно{/i}":
             #     # if __ran1 == "01":
             #     #     $ characters["lisa"].dress_inf = "02d"

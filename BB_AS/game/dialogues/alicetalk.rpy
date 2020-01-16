@@ -39,12 +39,10 @@ label wash_dishes_alice:
             menu:
                 Alice_07 "Что это с тобой? Но я не откажусь. И... спасибо."
                 "{i}мыть посуду{/i}":
-                    $ characters["alice"].mood += 6
-                    if characters["alice"].relmax < 400:
-                        $ characters["alice"].relmax += 10
-                        $ HintRelMood("alice", 10, 6)
+                    if Relation("alice")[0] < 3:
+                        $ AddRelMood("alice", 10, 60)
                     else:
-                        $ HintRelMood("alice", 0, 6)
+                        $ AddRelMood("alice", 0, 60)
                     $ dishes_washed = True
                     $ spent_time = max((60 - int(tm[-2:])), 30)
                     scene BG crockery-morning-00
@@ -126,9 +124,7 @@ label talkblog1:
                     $ cooldown["blog"] = CooldownTime("03:00")
                     Alice_09 "Знаешь что, Макс, отвали!"
                     Max_00 "Ну и ладно..."
-                    $ characters["alice"].mood -=5
-                    $ characters["alice"].relmax -= 5
-                    $ HintRelMood("lisa", -5, -5)
+                    $ AddRelMood("alice", -5, -50)
                     jump .end
                 "В курсе, конечно":
                     menu:
@@ -265,11 +261,10 @@ label alice_talk_tv:
         Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."
         "Ну, давай смотреть всё подряд...":
             $ SetCamsGrow(house[4], 110)
-            $ __mood = 5
+            $ __mood = 50
             Max_11 "{i}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/i}"
             Max_00 "Ладно, пойду я..."
     $ spent_time = max((60 - int(tm[-2:])), 40)
-    $ HintRelMood("alice", 0, __mood)
-    $ characters["alice"].mood   += __mood
+    $ AddRelMood("alice", 0, __mood)
     $ cur_ratio = 0.5
     jump Waiting

@@ -1016,24 +1016,7 @@ screen menu_userinfo():
                                         $ char_name = characters[char].name_4
                                         text _("Отношения с [char_name!t]") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        if characters[char].relmax == -200:
-                                            text _("Война") size 24
-                                        elif -200 < characters[char].relmax <= -100 :
-                                            text _("Враждебные") size 24
-                                        elif -100 < characters[char].relmax < 0 :
-                                            text _("Плохие") size 24
-                                        elif 0 <= characters[char].relmax < 100 :
-                                            text _("Прохладные") size 24
-                                        elif 100 <= characters[char].relmax < 250 :
-                                            text _("Неплохие") size 24
-                                        elif 250 <= characters[char].relmax < 400 :
-                                            text _("Хорошие") size 24
-                                        elif 400 <= characters[char].relmax < 700 :
-                                            text _("Тёплые") size 24
-                                        elif 700 <= characters[char].relmax < 1000 :
-                                            text _("Дружеские") size 24
-                                        else:
-                                            text _("Близкие") size 24
+                                        text Relation(char)[1] size 24
                             frame:
                                 area (0, 0, 350, 25)
                                 background None
@@ -1042,17 +1025,17 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Запас сил") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(int(max_profile.energy))+"%" size 24
+                                    text str(round(max_profile.energy, 1))+"%" size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Тренированность") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(max_profile.training)+"%" size 24
+                                    text str(round(max_profile.training, 1))+"%" size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Чистота") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(max_profile.cleanness)+"%" size 24
+                                    text str(round(max_profile.cleanness, 1))+"%" size 24
 
                             frame:
                                 area (0, 0, 350, 25)
@@ -1063,30 +1046,30 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Навык убеждения") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(max_profile.persuade) size 24
+                                    text str(round(max_profile.persuade, 1)) size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Навык скрытности") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(max_profile.stealth) size 24
+                                    text str(round(max_profile.stealth, 1)) size 24
                             if max_profile.massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(max_profile.massage) size 24
+                                        text str(round(max_profile.massage, 1)) size 24
                             if max_profile.ero_massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык эро.массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(max_profile.ero_massage) size 24
+                                        text str(round(max_profile.ero_massage, 1)) size 24
                             if max_profile.kissing > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык поцелуев") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(max_profile.kissing) size 24
+                                        text str(round(max_profile.kissing, 1)) size 24
 
 
                     elif CurChar == "eric":
@@ -1098,47 +1081,13 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Настроение") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    if characters[CurChar].mood == -100:
-                                        text _("Ужасное") size 24
-                                    elif -100 < characters[CurChar].mood <= -72 :
-                                        text _("Очень плохое") size 24
-                                    elif -72 < characters[CurChar].mood <= -44 :
-                                        text _("Плохое") size 24
-                                    elif -44 < characters[CurChar].mood <= -16 :
-                                        text _("Не очень") size 24
-                                    elif -16 < characters[CurChar].mood <= 16 :
-                                        text _("Нейтральное") size 24
-                                    elif 16 < characters[CurChar].mood <= 44 :
-                                        text _("Неплохое") size 24
-                                    elif 44 < characters[CurChar].mood <= 72 :
-                                        text _("Хорошее") size 24
-                                    elif 72 < characters[CurChar].mood < 100 :
-                                        text _("Очень хорошее") size 24
-                                    else:
-                                        text _("Прекрасное") size 24
+                                    text GetMood(CurChar)[1] size 24
                             # relmax
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Уровень отношений") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    if characters[CurChar].relmax == -200:
-                                        text _("Война") size 24
-                                    elif -200 < characters[CurChar].relmax <= -100 :
-                                        text _("Враждебные") size 24
-                                    elif -100 < characters[CurChar].relmax < 0 :
-                                        text _("Плохие") size 24
-                                    elif 0 <= characters[CurChar].relmax < 100 :
-                                        text _("Прохладные") size 24
-                                    elif 100 <= characters[CurChar].relmax < 250 :
-                                        text _("Неплохие") size 24
-                                    elif 250 <= characters[CurChar].relmax < 400 :
-                                        text _("Хорошие") size 24
-                                    elif 400 <= characters[CurChar].relmax < 700 :
-                                        text _("Тёплые") size 24
-                                    elif 700 <= characters[CurChar].relmax < 1000 :
-                                        text _("Дружеские") size 24
-                                    else:
-                                        text _("Близкие") size 24
+                                    text Relation(CurChar)[1] size 24
 
                             # mindedness
                             if not characters[CurChar].mindedness is None:
@@ -1153,24 +1102,7 @@ screen menu_userinfo():
                                     frame xsize 350 background None:
                                         text _("Отношения с Эриком") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        if characters[CurChar].releric == -3:
-                                            text _("Война") size 24
-                                        elif characters[CurChar].releric == -2:
-                                            text _("Враждебные") size 24
-                                        elif characters[CurChar].releric == -1:
-                                            text _("Плохие") size 24
-                                        elif characters[CurChar].releric == 0:
-                                            text _("Прохладные") size 24
-                                        elif characters[CurChar].releric == 1:
-                                            text _("Неплохие") size 24
-                                        elif characters[CurChar].releric == 2:
-                                            text _("Хорошие") size 24
-                                        elif characters[CurChar].releric == 3:
-                                            text _("Тёплые") size 24
-                                        elif characters[CurChar].releric == 4:
-                                            text _("Дружеские") size 24
-                                        else:
-                                            text _("Близкие") size 24
+                                        text RelEric(CurChar)[1] size 24
 
                                 # influence
                                 hbox xfill True:
