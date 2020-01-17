@@ -904,7 +904,7 @@ translate english wash_dishes_lisa_acbb7452:
 translate english wash_dishes_lisa_5c3452e3:
 
     # Max_00 "А с другой строны - неплохой способ улучшить отношения с Лизой..." nointeract
-    Max_00 "But on the other hand, its a good way to my relationship with Lisa..." nointeract
+    Max_00 "But on the other hand, its a good way to improve my relationship with Lisa..." nointeract
 
 # game/dialogues/lisatalk.rpy:646
 translate english wash_dishes_lisa_1bfb44d5:
@@ -1240,7 +1240,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:373
     old "А не рано тебе с кем-то встречаться?"
-    new "Are sure you're old enough to date people?"
+    new "Are you sure you're old enough to date people?"
 
     # game/dialogues/lisatalk.rpy:380
     old "Это я её бросил"
@@ -1268,7 +1268,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:399
     old "Именно поэтому за советами обращайся ко мне"
-    new "Which is why you should ask me for advice when you need one"
+    new "Which is why you should ask me for advice when you need it"
 
     # game/dialogues/lisatalk.rpy:407
     old "У меня было много девушек"
@@ -1296,7 +1296,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:419
     old "Так или иначе, о парнях я знаю больше тебя..."
-    new "In any case, I know about guys more than you"
+    new "In any case, I know about more about guys than you"
 
     # game/dialogues/lisatalk.rpy:433
     old "Я знаю как мыслят парни. Так что, могу помочь советом..."
@@ -1304,7 +1304,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:433
     old "Если будет нужна помощь, обращайся"
-    new "If you need any help, you can ask me any time"
+    new "If you need help, you can ask me any time"
 
     # game/dialogues/lisatalk.rpy:465
     old "Ну, чего ты в закрытом купальнике лежишь?"
@@ -1428,7 +1428,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:578
     old "Ну и зря. Иногда большинство бывает право..."
-    new "Too bad, sometimes majority is right "
+    new "Too bad, sometimes the majority is right "
 
     # game/dialogues/lisatalk.rpy:588
     old "Да расслабься..."
