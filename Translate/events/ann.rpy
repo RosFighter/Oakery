@@ -4,115 +4,115 @@
 translate english ann_sleep_240f8eab:
 
     # Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..." nointeract
-    Max_00 "" nointeract
+    Max_00 "Mom usually sleeps at this time. \n it seems like you shouldn't wake her up..." nointeract
 
 # game/events/ann.rpy:15
 translate english ann_sleep_261d0248:
 
     # Max_01 "Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Yes! Mom's asleep... I can't believe this hot piece of ass has three kids... I wouldn't believe it in my life!" nointeract
 
 # game/events/ann.rpy:17
 translate english ann_sleep_3060fb81:
 
     # Max_04 "О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
-    Max_04 "" nointeract
+    Max_04 "Oh yeah! What an ass! It's good that it's so hot in here and everybody sleeps without a cover." nointeract
 
 # game/events/ann.rpy:19
 translate english ann_sleep_dfc27cd6:
 
     # Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Awesome! I'm so lucky to have such a hot mom... I don't want to take my eyes off!" nointeract
 
 # game/events/ann.rpy:26
 translate english ann_sleep_d5c35f70:
 
     # Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась." nointeract
-    Max_03 "" nointeract
+    Max_03 "Damn, I have the most seductive mom in the world! I wish I could take all her underwear off and slide ride in... But it's better to leave quietly before she wakes up." nointeract
 
 # game/events/ann.rpy:28
 translate english ann_sleep_c99b810c:
 
     # Max_02 "Ухх! Так и хочется прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
-    Max_02 "" nointeract
+    Max_02 "Uhh! I just want to hang on to that ass and stay all night... But it's time to go before she wakes up." nointeract
 
 # game/events/ann.rpy:30
 translate english ann_sleep_acd8f5fc:
 
     # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "" nointeract
+    Max_05 "Wow! The sight of those legs make me want to explore and see where they lead... Too tempting! As long as she doesn't wake up now..." nointeract
 
 # game/events/ann.rpy:42
 translate english ann_shower_b99b712c:
 
     # Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее еще больше."
-    Max_00 ""
+    Max_00 "I already got caught peeping at my mom today. Shoudn't make her more mad."
 
 # game/events/ann.rpy:44
 translate english ann_shower_cc932b06:
 
     # Max_00 "Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто."
-    Max_00 ""
+    Max_00 "I already looked at mom today. You shouldn't tempt fate too often."
 
 # game/events/ann.rpy:46
 translate english ann_shower_71ff657f:
 
     # Max_00 "Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто."
-    Max_00 ""
+    Max_00 "Mom almost caught me today. You shouldn't tempt fate too often."
 
 # game/events/ann.rpy:48
 translate english ann_shower_9c2211b3:
 
     # Max_00 "Мама сейчас принимает душ..." nointeract
-    Max_00 "" nointeract
+    Max_00 "Mom's taking a shower right now..." nointeract
 
 # game/events/ann.rpy:54
 translate english ann_shower_39468bae:
 
     # Max_00 "Похоже, мама принимает душ..." nointeract
-    Max_00 "" nointeract
+    Max_00 "Looks like Mom's taking a shower..." nointeract
 
 # game/events/ann.rpy:77
 translate english ann_shower_start_peeping_6a01a9ae:
 
     # Max_00 "Как же она все-таки красива..." nointeract
-    Max_00 "" nointeract
+    Max_00 "How beautiful is she..." nointeract
 
 # game/events/ann.rpy:94
 translate english ann_shower_closer_peepeng_c35c25c2:
 
     # Max_01 "{color=[lime]}{i}Удалось незаметно подкрасться!{/i}{/color} \nУх, аж завораживает! Хоть бы меня не заметила..."
-    Max_01 ""
+    Max_01 "{color=[lime]}{i}We managed to sneak up undetected!{/i}{/color}\n Wow, that's fascinating! I wish you hadn't noticed me..."
 
 # game/events/ann.rpy:104
 translate english ann_shower_closer_peepeng_6ffc25ce:
 
     # Max_09 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nПора сматываться."
-    Max_09 ""
+    Max_09 "{color=[orange]}{i}I think Mom suspected something!{/i}{/color}\nTime to get out of here."
 
 # game/events/ann.rpy:114
 translate english ann_shower_closer_peepeng_c5fc647e:
 
     # Ann_19 "{color=[orange]}{i}Неудалось незаметно подкрасться!{/i}{/color}\nМакс! Подглядываешь за мной? Как тебе не стыдно?!" nointeract
-    Ann_19 "" nointeract
+    Ann_19 "{color=[orange]}{i}You are detected!{/i}{/color}\nMax! You're peeping? Aren't you ashamed?!" nointeract
 
 # game/events/ann.rpy:156
 translate english ann_dressed_work_7b31f3ed:
 
     # Max_09 "Сейчас 10 часов, а значит, мама собирается на работу..." nointeract
-    Max_09 "" nointeract
+    Max_09 "It's 10:00, which means Mom's going to work..." nointeract
 
 # game/events/ann.rpy:159
 translate english ann_dressed_work_b21abe2e:
 
     # Ann "{b}Анна:{/b} Кто там?" nointeract
-    Ann "" nointeract
+    Ann "{b}Аnn:{/b} Who is it?" nointeract
 
 # game/events/ann.rpy:162
 translate english ann_dressed_work_2e55a9e3:
 
     # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
-    Ann ""
+    Ann "{b}Аnn:{/b}Max, I'm not dressed yet. Just wait a minute, honey."
 
 # game/events/ann.rpy:163
 translate english ann_dressed_work_51f3e0fa:
