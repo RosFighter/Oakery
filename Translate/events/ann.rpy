@@ -118,187 +118,187 @@ translate english ann_dressed_work_2e55a9e3:
 translate english ann_dressed_work_51f3e0fa:
 
     # Max_00 "Хорошо, мам"
-    Max_00 ""
+    Max_00 "Okay, mom"
 
 # game/events/ann.rpy:177
 translate english ann_dressed_work_79ab0f47:
 
     # Ann_13 "Макс! Я же учила тебя стучаться!" nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Max! Knock next time!" nointeract
 
 # game/events/ann.rpy:181
 translate english ann_dressed_work_66960e11:
 
     # Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
-    Ann_12 ""
+    Ann_12 "Thanks, Max, but... Could you please wait behind the door?"
 
 # game/events/ann.rpy:182
 translate english ann_dressed_work_c8682e5b:
 
     # Max_00 "Конечно, мам!"
-    Max_00 ""
+    Max_00 "Sure, mom!"
 
 # game/events/ann.rpy:185
 translate english ann_dressed_work_6bbecd5d:
 
     # Ann_19 "Что?! Макс! А ну-ка быстро выйди и закрой дверь!"
-    Ann_19 ""
+    Ann_19 "What? Max! Get out and close the door this instant!"
 
 # game/events/ann.rpy:186
 translate english ann_dressed_work_80f63239:
 
     # Max_00 "Как скажешь, мам..."
-    Max_00 ""
+    Max_00 "Okay, mom..."
 
 # game/events/ann.rpy:189
 translate english ann_dressed_work_a4ce807a:
 
     # Ann_07 "Ну, бывает. Я сама ещё не привыкла к тому, что замков нигде нет. Ладно, дорогой. Подожди за дверью, пока мама одевается. хорошо?"
-    Ann_07 ""
+    Ann_07 "It's okay, I'm still getting used to the lack of locks on the doors too. Now please wait behind the door until I get dressed, okay?"
 
 # game/events/ann.rpy:190
 translate english ann_dressed_work_d66e2468:
 
     # Max_00 "Хорошо, мам..."
-    Max_00 ""
+    Max_00 "Okay, mom..."
 
 # game/events/ann.rpy:207
 translate english ann_dressed_work_a4d8ba92:
 
     # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
-    Max_01 ""
+    Max_01 "Wow, what a sight! I picked a lucky moment... But I should get out before she sees me in the mirror"
 
 # game/events/ann.rpy:222
 translate english ann_dressed_shop_d4cf236b:
 
     # Max_09 "Сегодня суббота, день шоппинга. Видимо, мама собирается..." nointeract
-    Max_09 "" nointeract
+    Max_09 "Looks like mom is getting ready for a day of shopping" nointeract
 
 # game/events/ann.rpy:225
 translate english ann_dressed_shop_b21abe2e:
 
     # Ann "{b}Анна:{/b} Кто там?" nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Who's there?" nointeract
 
 # game/events/ann.rpy:228
 translate english ann_dressed_shop_bf2abaef:
 
     # Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
-    Ann ""
+    Ann "{b}Ann:{/b} No, Max. I'm changing clothes. Wait a little, dear."
 
 # game/events/ann.rpy:229
 translate english ann_dressed_shop_51f3e0fa:
 
     # Max_00 "Хорошо, мам"
-    Max_00 ""
+    Max_00 "Okay, mom"
 
 # game/events/ann.rpy:235
 translate english ann_dressed_shop_79ab0f47:
 
     # Ann_13 "Макс! Я же учила тебя стучаться!" nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Max! Knock next time!" nointeract
 
 # game/events/ann.rpy:239
 translate english ann_dressed_shop_66960e11:
 
     # Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
-    Ann_12 ""
+    Ann_12 "Thanks, Max, but... Could you please wait behind the door?"
 
 # game/events/ann.rpy:240
 translate english ann_dressed_shop_c8682e5b:
 
     # Max_00 "Конечно, мам!"
-    Max_00 ""
+    Max_00 "Sure, mom!"
 
 # game/events/ann.rpy:242
 translate english ann_dressed_shop_9f399a69:
 
     # Ann_07 "И Макс... Постарайся больше не входить без стука, хорошо?"
-    Ann_07 ""
+    Ann_07 "And, Max... Try not to come in without knocking any more, ok?"
 
 # game/events/ann.rpy:243
 translate english ann_dressed_shop_d66e2468:
 
     # Max_00 "Хорошо, мам..."
-    Max_00 ""
+    Max_00 "Okay, mom..."
 
 # game/events/ann.rpy:308
 translate english ann_bath_9132bdea:
 
     # Max_00 "Видимо, мама принимает ванну..." nointeract
-    Max_00 "" nointeract
+    Max_00 "Looks like mom is taking a bath" nointeract
 
 # game/events/ann.rpy:311
 translate english ann_bath_cddc6bee:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!" nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Who's there? I'm taking a bath!" nointeract
 
 # game/events/ann.rpy:314
 translate english ann_bath_29fc0d16:
 
     # Ann "{b}Анна:{/b} Дорогой, что ты хотел?" nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Do you want something, dear?" nointeract
 
 # game/events/ann.rpy:318
 translate english ann_bath_13e7202f:
 
     # Ann "{b}Анна:{/b} Ну... хорошо, входи. Только не смотри!" nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Well... okay, but don't look!" nointeract
 
 # game/events/ann.rpy:321
 translate english ann_bath_dcec8aa3:
 
     # Ann_01 "Макс, так что там у тебя такое срочное, что ты не мог подождать пол часа?" nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Max, what is so urgent you can't wait 30 minutes?" nointeract
 
 # game/events/ann.rpy:324
 translate english ann_bath_28082fdd:
 
     # Ann_07 "Макс! Я думала, что-то случилось, а ты просто балуешься. Подожди меня за дверью. Я скоро!"
-    Ann_07 ""
+    Ann_07 "I started to think something happened. Wait outside, I'll be done soon"
 
 # game/events/ann.rpy:325
 translate english ann_bath_6e7aee99:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Fine..."
 
 # game/events/ann.rpy:328
 translate english ann_bath_40b1e3d3:
 
     # Ann_13 "Что?! А ну-ка быстро выметайся отсюда! Я скоро закончу."
-    Ann_13 ""
+    Ann_13 "What? Get out of here this instant!"
 
 # game/events/ann.rpy:329
 translate english ann_bath_69285a70:
 
     # Max_00 "Как скажешь!"
-    Max_00 ""
+    Max_00 "Okay"
 
 # game/events/ann.rpy:342
 translate english ann_bath_9b9b753a:
 
     # Ann "{b}Анна:{/b} Хорошо, я скоро закончу..."
-    Ann ""
+    Ann "{b}Ann:{/b} Okay, I won't take long..."
 
 # game/events/ann.rpy:343
 translate english ann_bath_7852d704:
 
     # Max_00 "Ага..."
-    Max_00 ""
+    Max_00 "Yeah..."
 
 # game/events/ann.rpy:349
 translate english ann_bath_8d2fe639:
 
     # Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
-    Max_00 ""
+    Max_00 "Too bad the glass is opaque, I can't see the best parts! And getting any closer is too risky"
 
 # game/events/ann.rpy:350
 translate english ann_bath_617c9a2e:
 
     # Max_09 "Нужно что-нибудь придумать..." nointeract
-    Max_09 "" nointeract
+    Max_09 "I have to think of something..." nointeract
 
 translate english strings:
 
@@ -361,4 +361,36 @@ translate english strings:
     # game/events/ann.rpy:321
     old "Ой, не буду тебе мешать"
     new "Sorry, I'll leave you alone"
+
+# TODO: Translation updated at 2020-01-17 16:49
+
+# game/events/ann.rpy:76
+translate english ann_shower_start_peeping_f0132630:
+
+    # Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама... Надеюсь, она меня не заметит..." nointeract
+    Max_07 "" nointeract
+
+# game/events/ann.rpy:94
+translate english ann_shower_closer_peepeng_a38e0857:
+
+    # Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+    Max_03 ""
+
+# game/events/ann.rpy:96
+translate english ann_shower_closer_peepeng_f42aed74:
+
+    # Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+    Max_05 ""
+
+# game/events/ann.rpy:106
+translate english ann_shower_closer_peepeng_4a76a42b:
+
+    # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
+    Max_12 ""
+
+# game/events/ann.rpy:116
+translate english ann_shower_closer_peepeng_61241e3e:
+
+    # Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..." nointeract
+    Ann_16 "" nointeract
 

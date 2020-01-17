@@ -548,3 +548,43 @@ translate english strings:
     old "Ну, давай смотреть всё подряд..."
     new "Well, lets keep an eye on it..."
 
+# TODO: Translation updated at 2020-01-17 16:49
+
+# game/dialogues/alicetalk.rpy:39
+translate english Alice_badbadmood_86d8a37d:
+
+    # Alice_09 "Да пошёл ты! Не хочу тебя видеть даже!" nointeract
+    Alice_09 "Screw you! I don't want to see you right now!" nointeract
+
+# game/dialogues/alicetalk.rpy:48
+translate english Alice_badmood_de141364:
+
+    # Alice_09 "Макс, отвали! Я не хочу с тобой разговаривать." nointeract
+    Alice_09 "Get lost, Max! I don't want to talk to you." nointeract
+
+# game/dialogues/alicetalk.rpy:57
+translate english Alice_asksorry_2395f0d1:
+
+    # Alice_13 "Хотел извиниться? Каким образом?" nointeract
+    Alice_13 "How?" nointeract
+
+# game/dialogues/alicetalk.rpy:64
+translate english Alice_normalmood_1faefb22:
+
+    # Alice_09 "Макс, давай не сейчас..." nointeract
+    Alice_09 "Max, not now..." nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:39
+    old "Ок..."
+    new "Ok..."
+
+    # game/dialogues/alicetalk.rpy:39
+    old "Я хотел извиниться"
+    new "I would like to apologize"
+
+    # game/dialogues/alicetalk.rpy:57
+    old "Ты знаешь, я передумал..."
+    new "You know, I've changed my mind..."
+

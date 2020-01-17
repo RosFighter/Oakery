@@ -294,3 +294,15 @@ translate english strings:
     old "Хорошо, я подожду..."
     new "Okay, I'll wait..."
 
+# TODO: Translation updated at 2020-01-17 16:49
+
+translate english strings:
+
+    # game/events/alice.rpy:10
+    old "{i}заглянуть со двора{/i}"
+    new ""
+
+    # game/events/alice.rpy:142
+    old "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
+    new ""
+

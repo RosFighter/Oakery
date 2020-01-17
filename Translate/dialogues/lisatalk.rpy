@@ -1474,3 +1474,309 @@ translate english strings:
     old "Хорошо, пойду займусь"
     new "Okay"
 
+# TODO: Translation updated at 2020-01-17 16:49
+
+# game/dialogues/lisatalk.rpy:36
+translate english Lisa_badbadmood_da371c18:
+
+    # Lisa_09 "Макс, уйди. Не хочу тебя видеть!" nointeract
+    Lisa_09 "Max, go away. I do not want to see you!" nointeract
+
+# game/dialogues/lisatalk.rpy:45
+translate english Lisa_badmood_94440bf9:
+
+    # Lisa_09 "Макс, уйди пожалуйста. Не хочу сейчас общаться." nointeract
+    Lisa_09 "Max, please go away. I don't want to talk now." nointeract
+
+# game/dialogues/lisatalk.rpy:54
+translate english Lisa_asksorry_43688099:
+
+    # Lisa_09 "Извиниться? Как?" nointeract
+    Lisa_09 "Apologize? How?" nointeract
+
+# game/dialogues/lisatalk.rpy:61
+translate english Lisa_normalmood_be3ffbfe:
+
+    # Lisa_09 "Не сейчас, Макс..." nointeract
+    Lisa_09 "Not now, Max..." nointeract
+
+# game/dialogues/lisatalk.rpy:68
+translate english Lisa_cooldown_f6aab63f:
+
+    # Lisa_09 "Макс, давай поговорим об этом в другой раз."
+    Lisa_09 "Let's talk about this another time"
+
+# game/dialogues/lisatalk.rpy:690
+translate english about_boy2_f45a04f4:
+
+    # Lisa_00 "Макс, давай сменим тему..."
+    Lisa_00 "Max, let's change the topic"
+
+# game/dialogues/lisatalk.rpy:691
+translate english about_boy2_87bbb264:
+
+    # Max_11 "Ну Лиза..."
+    Max_11 "Come on, Lisa..."
+
+# game/dialogues/lisatalk.rpy:693
+translate english about_boy2_8248d2d7:
+
+    # Lisa_09 "Макс, я тебе рассказала по секрету, а ты меня спалил маме. Не хочу ничего рассказывать больше..." nointeract
+    Lisa_09 "Last time we talked about this you blabbed everything to mom. I don't want to talk to you anymore." nointeract
+
+# game/dialogues/lisatalk.rpy:696
+translate english about_boy2_09ecf6e1:
+
+    # Lisa_00 "Вот и как тебе что-то рассказывать по секрету, если ты можешь забыть, что это секрет? А?"
+    Lisa_00 "And how am I supposed to trust you with sensitive information if you can forget not to tell anyone?"
+
+# game/dialogues/lisatalk.rpy:698
+translate english about_boy2_faf6dc25:
+
+    # Lisa_00 "Нет, Макс, мне не было весело. Нарушать своё слово это совсем совсем не весело!"
+    Lisa_00 "It wasn't funny to me, Max. Breaking your word isn't fun!"
+
+# game/dialogues/lisatalk.rpy:700
+translate english about_boy2_bb295925:
+
+    # Lisa_00 "Не подумал. Я же просила, а ты... Как тебе рассказывать что-то, если ты не думаешь?"
+    Lisa_00 "Wasn't thinking. I asked you, and you... How could I tell you anything if you don't think before speaking?"
+
+# game/dialogues/lisatalk.rpy:701
+translate english about_boy2_afc22d30:
+
+    # Max_08 "Извини ещё раз, я не хотел"
+    Max_08 "I'm really sorry, I didn't mean to"
+
+# game/dialogues/lisatalk.rpy:703
+translate english about_boy2_1472f631:
+
+    # Lisa_02 "Ну ладно, ладно. Кстати, спасибо, что меня не выдал. Мне нравится, что я могу на тебя положиться."
+    Lisa_02 "Fine, fine. Thanks for not ratting me out, by the way. I'm glad I can trust you."
+
+# game/dialogues/lisatalk.rpy:704
+translate english about_boy2_269e92ba:
+
+    # Max_04 "Всегда пожалуйста!"
+    Max_04 "You're welcome!"
+
+# game/dialogues/lisatalk.rpy:706
+translate english about_boy2_524829a1:
+
+    # Lisa_01 "Макс, ты чего такой любопытный? Я же не выпытываю с кем ты встречаешься..." nointeract
+    Lisa_01 "Why so curious? Max? I'm asking you about your private life..." nointeract
+
+# game/dialogues/lisatalk.rpy:709
+translate english about_boy2_f920e3b6:
+
+    # Lisa_12 "Не подлизывайся, Макс! Сознавайся, чего задумал?"
+    Lisa_12 "Stop sucking up to me and tell me why do you even care anyway."
+
+# game/dialogues/lisatalk.rpy:710
+translate english about_boy2_2788fd95:
+
+    # Max_00 "Да ничего, просто любопытно..."
+    Max_00 "No reason, I'm just curious"
+
+# game/dialogues/lisatalk.rpy:712
+translate english about_boy2_9a967d00:
+
+    # Lisa_03 "Ха! Ты меня хорошо знаешь. Но ты как-то необычайно настойчиво интересуешься..."
+    Lisa_03 "Heh, you're right about that. But still, why do you ask?"
+
+# game/dialogues/lisatalk.rpy:713
+translate english about_boy2_6cf4347c:
+
+    # Max_00 "Ну, мне просто любопытно..."
+    Max_00 "I'm just curious"
+
+# game/dialogues/lisatalk.rpy:715
+translate english about_boy2_4fc1e11f:
+
+    # Lisa_02 "Ну ладно, Макс. Так чего ты хотел узнать?"
+    Lisa_02 "Fine, fine. Thanks for not ratting me out, by the way. I'm glad I can trust you."
+
+# game/dialogues/lisatalk.rpy:716
+translate english about_boy2_97a3b79e:
+
+    # Max_00 "Да всё! Что тебе удалось выяснить?"
+    Max_00 "Everything! Have you found out any useful information?"
+
+# game/dialogues/lisatalk.rpy:717
+translate english about_boy2_a42d3e89:
+
+    # Lisa_00 "Об Алексе? Ну, у него есть подружка, оказывается. Самая красивая девочка в школе, говорят..." nointeract
+    Lisa_00 "You mean about Alex? Yeah, turns out he already has a girlfriend. Everyone says she's the most beautiful girl in school..." nointeract
+
+# game/dialogues/lisatalk.rpy:720
+translate english about_boy2_42191ec0:
+
+    # Lisa_01 "Макс, ты такой сегодня... Спасибо за комплимент, но все мальчики без ума от подружки Алекса..."
+    Lisa_01 "Wow, Max... Thanks for a compliment, but all boys in school are chasing Alex's girlfriend."
+
+# game/dialogues/lisatalk.rpy:722
+translate english about_boy2_c4c8b523:
+
+    # Lisa_10 "Ну, так говорят все мальчики..."
+    Lisa_10 "Well, all boys say so..."
+
+# game/dialogues/lisatalk.rpy:723
+translate english about_boy2_b5806702:
+
+    # Max_00 "А ты её сама видела?"
+    Max_00 "Have you seen her?"
+
+# game/dialogues/lisatalk.rpy:724
+translate english about_boy2_aab572e6:
+
+    # Lisa_02 "Конечно! Мы же в одном классе учимся. Зовут Оливия." nointeract
+    Lisa_02 "Of course, she's in my class. Her name is Olivia." nointeract
+
+# game/dialogues/lisatalk.rpy:727
+translate english about_boy2_70433f6e:
+
+    # Lisa_00 "Нет, Макс. Наоборот, она такая хорошая, тихая, скромная, но почему-то всем нравится... Хотя, и правда симпатичная очень..." nointeract
+    Lisa_00 "No, Max. She's nice, quiet and shy, everyone likes her... And she's very pretty." nointeract
+
+# game/dialogues/lisatalk.rpy:730
+translate english about_boy2_4b907f20:
+
+    # Lisa_12 "В смысле? Мне мальчики нравятся, я же говорила уже. Но да, мне она кажется симпатичной..."
+    Lisa_12 "She's nice, quiet and shy. And she's very pretty."
+
+# game/dialogues/lisatalk.rpy:732
+translate english about_boy2_e6fd774e:
+
+    # Lisa_02 "Почему странно? Думаешь, мальчикам нравятся только всякие оторвы? Таких полный класс. Именно этим она и выделяется, что не похожа на других"
+    Lisa_02 "Why? Do you think boys only like wild chicks? We have a full class of those. Olivia is different."
+
+# game/dialogues/lisatalk.rpy:734
+translate english about_boy2_3b1edd54:
+
+    # Lisa_00 "Ну, она такая хорошая, тихая, скромная. И очень симпатичная..." nointeract
+    Lisa_00 "Well, we didn't really talked about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
+
+# game/dialogues/lisatalk.rpy:737
+translate english about_boy2_4b907f20_1:
+
+    # Lisa_12 "В смысле? Мне мальчики нравятся, я же говорила уже. Но да, мне она кажется симпатичной..."
+    Lisa_12 "What do you mean? I like boys, I've already told you that. But yes, I think she's very pretty."
+
+# game/dialogues/lisatalk.rpy:739
+translate english about_boy2_e6fd774e_1:
+
+    # Lisa_02 "Почему странно? Думаешь, мальчикам нравятся только всякие оторвы? Таких полный класс. Именно этим она и выделяется, что не похожа на других"
+    Lisa_02 "Why? Do you think boys only like wild chicks? We have a full class of those. Olivia is different."
+
+# game/dialogues/lisatalk.rpy:740
+translate english about_boy2_f47e0d84:
+
+    # Max_00 "Понятно..."
+    Max_00 "I see"
+
+# game/dialogues/lisatalk.rpy:741
+translate english about_boy2_7c6f37bc:
+
+    # Lisa_00 "А мне вот не понятно что теперь делать... Кажется, у меня нет никаких шансов..."
+    Lisa_00 "I don't know what to do now. I don't think I have any chances..."
+
+# game/dialogues/lisatalk.rpy:742
+translate english about_boy2_ab642acd:
+
+    # Max_08 "Подожди, а он сильно в неё влюблён?"
+    Max_08 "Wait, how strong are his feelings?"
+
+# game/dialogues/lisatalk.rpy:743
+translate english about_boy2_db09ffe0:
+
+    # Lisa_02 "Ну мы не очень много общались, но она ему нравится, это точно. Хотя, я ему тоже нравлюсь, похоже... Чуть-чуть..." nointeract
+    Lisa_02 "Well, we didn't really talked about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
+
+# game/dialogues/lisatalk.rpy:746
+translate english about_boy2_44a7f959:
+
+    # Lisa_00 "Ну да, не всё. Но около того. Я даже не представляю что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
+    Lisa_00 "I guess. I have no idea what to do. I like him so much...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
+
+# game/dialogues/lisatalk.rpy:748
+translate english about_boy2_d1bcd31a:
+
+    # Lisa_00 "Шанс? Один из миллиона, может быть... Я не знаю как и что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
+    Lisa_00 "My chances don't look too good. I have no idea what to do. I like him so much...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
+
+# game/dialogues/lisatalk.rpy:749
+translate english about_boy2_061a8fe3:
+
+    # Max_00 "Ты знаешь, я что-нибудь придумаю, хорошо?"
+    Max_00 "I'll think of something!"
+
+# game/dialogues/lisatalk.rpy:750
+translate english about_boy2_c70906c0:
+
+    # Lisa_01 "Хорошо. Спасибо, Макс, что поговорил. Мне это было нужно..."
+    Lisa_01 "Okay. Thanks for listening, Max. I appreciate it..."
+
+# game/dialogues/lisatalk.rpy:751
+translate english about_boy2_269e92ba_1:
+
+    # Max_04 "Всегда пожалуйста!"
+    Max_04 "You're welcome!"
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:54
+    old "Кажется, я передумал..."
+    new "I think I've changed my mind..."
+
+    # game/dialogues/lisatalk.rpy:693
+    old "Извини, я забыл, что обещал"
+    new "I'm sorry, I forgot I promised to keep it a secret"
+
+    # game/dialogues/lisatalk.rpy:693
+    old "Извини, но было же весело?"
+    new "I'm sorry. It was funny, though, wasn't it?"
+
+    # game/dialogues/lisatalk.rpy:693
+    old "Извини, я не подумал..."
+    new "I'm sorry, I wasn't thinking..."
+
+    # game/dialogues/lisatalk.rpy:706
+    old "Я ни с кем не встречаюсь. В моей жизни есть только ты!"
+    new "I don't have anyone, you're the only girl in my life!"
+
+    # game/dialogues/lisatalk.rpy:706
+    old "Если бы и был кто-то, ты бы точно свой нос совала!"
+    new "If I had someone you'd nag me about her all the time!"
+
+    # game/dialogues/lisatalk.rpy:717
+    old "Они всё врут. Ты - самая красивая!"
+    new "They're lying, you are the most beautiful one"
+
+    # game/dialogues/lisatalk.rpy:717
+    old "Ты уверена, что она самая красивая?"
+    new "Are you sure she's the most beautiful girl in school?"
+
+    # game/dialogues/lisatalk.rpy:724
+    old "Наверное, стерва?"
+    new "She's probably a bitch, isn't she?"
+
+    # game/dialogues/lisatalk.rpy:724
+    old "И какая она?"
+    new "And what's she like?"
+
+    # game/dialogues/lisatalk.rpy:727
+    old "В твоём вкусе?"
+    new "Do you like her?"
+
+    # game/dialogues/lisatalk.rpy:727
+    old "Странно..."
+    new "Strange..."
+
+    # game/dialogues/lisatalk.rpy:743
+    old "Ну вот видишь, не всё потеряно!"
+    new "You see, you can do this!"
+
+    # game/dialogues/lisatalk.rpy:743
+    old "Значит, у тебя есть шанс!"
+    new "That means you have a chance!"
+

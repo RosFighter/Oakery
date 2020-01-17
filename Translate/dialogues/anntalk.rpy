@@ -222,3 +222,29 @@ translate english strings:
     old "Не буду тебе мешать..."
     new "I'll leave you to it..."
 
+# TODO: Translation updated at 2020-01-17 16:49
+
+# game/dialogues/anntalk.rpy:39
+translate english Ann_badbadmood_321edff9:
+
+    # Ann_18 "Макс, я сейчас в очень плохом настроении и не хочу с тобой разговаривать!" nointeract
+    Ann_18 "Max, I'm in a very bad mood and don't want to talk to you!" nointeract
+
+# game/dialogues/anntalk.rpy:48
+translate english Ann_badmood_46817e38:
+
+    # Ann_18 "Макс, я сейчас не в настроении и не хочу разговаривать." nointeract
+    Ann_18 "Max, I'm not in the mood and don't want to talk." nointeract
+
+# game/dialogues/anntalk.rpy:57
+translate english Ann_asksorry_634d3dbe:
+
+    # Ann_01 "Да? Я тебя слушаю?" nointeract
+    Ann_01 "I'm listening" nointeract
+
+# game/dialogues/anntalk.rpy:64
+translate english Ann_normalmood_085fa1a6:
+
+    # Ann_18 "Макс, не сейчас, хорошо?" nointeract
+    Ann_18 "Max, not now, okay?" nointeract
+

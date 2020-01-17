@@ -376,7 +376,7 @@ translate english strings:
 
     # game/core/03variables.rpy:186
     old "Продукты"
-    new ""
+    new "Food"
 
     # game/core/03variables.rpy:186
     old "Электроника"
@@ -384,15 +384,15 @@ translate english strings:
 
     # game/core/03variables.rpy:186
     old "Товары 18+"
-    new ""
+    new "Adult 18+"
 
     # game/core/03variables.rpy:186
     old "Косметика"
-    new ""
+    new "Cosmetics"
 
     # game/core/03variables.rpy:186
     old "Украшения"
-    new ""
+    new "Jewelry"
 
     # game/core/03variables.rpy:186
     old "Другое"
@@ -564,7 +564,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Вот это да! Я был не так далёк от истины. Конечно, это не порно, но уж точно эротика, да ещё какая! Видимо, Алисе нравятся любовные романы с эротическими оттенками, так сказать. Может быть, стоит ей подарить подобную книгу и посмотреть на её реакцию?"
-    new ""
+    new "Wow, I was almost right! It's not porn, but it's definitely erotica, and it's not shy either! I guess Alice likes love stories with an erotic touch. Maybe I should gift her some and see her reaction."
 
     # game/core/03variables.rpy:324
     old "Судя по реакции Алисы, подарок ей понравился. Видимо, стоит периодически заходить в книжный интернет-магазин и смотреть новинки. Возможно, таким образом удастся чуть-чуть улучшить отношения с Алисой."
@@ -676,21 +676,21 @@ translate english strings:
 
     # game/core/03variables.rpy:371
     old "Мам, дай денег, пожалуйста..."
-    new ""
+    new "Could you give me some money, Mom?"
 
     # game/core/03variables.rpy:371
     old "Я продукты заказал!"
-    new ""
+    new "I've ordered the groceries, mom!"
 
     # game/core/03variables.rpy:371
     old "Мам, бассейн чист!"
-    new ""
+    new "I've cleaned the pool, mom!"
 
     # game/core/03variables.rpy:371
     old "Что смотришь?"
-    new ""
+    new "What are you watching?"
 
     # game/core/03variables.rpy:371
     old "Не возражаешь против компании?"
-    new ""
+    new "Do you mind some company?"
 

@@ -60,7 +60,7 @@ translate english strings:
 
     # game/core/screens.rpy:507
     old "{b}РЕКЛАМА{/b}"
-    new "{b}Promotion{/b}"
+    new "{b}PROMOTION{/b}"
 
     # game/core/screens.rpy:510
     old "{b}ВЫВОД СРЕДСТВ{/b}"
@@ -72,15 +72,15 @@ translate english strings:
 
     # game/core/screens.rpy:516
     old "Зрителей:"
-    new "Spectators"
+    new "Spectators:"
 
     # game/core/screens.rpy:517
     old "Общий доход:"
-    new "Total income"
+    new "Total income:"
 
     # game/core/screens.rpy:518
     old "Доход сегодня:"
-    new "Revenue today"
+    new "Revenue today:"
 
     # game/core/screens.rpy:674
     old "ЖДАТЬ"
