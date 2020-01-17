@@ -412,3 +412,81 @@ label BookRead:
         $ spent_time = 60
         $ cur_ratio = 0.6
         jump Waiting
+
+
+label SearchSecretBook:
+
+    menu:
+        Max_10 "Так... И с чего начать поиск? И нужно поспешить: если Алиса меня поймает, то сначала убьёт, а только потом поздоровается..."
+        "{i}искать под подушкой{/i}":
+            jump .pillow
+        "{i}искать под кроватью{/i}":
+            jump .bed
+        "{i}искать в шкафу{/i}":
+            jump .wardrobe
+        "{i}искать в столе{/i}":
+            jump .table
+        "{i}прекратить поиски{/i}":
+            jump Waiting
+
+    label .pillow:
+        $ spent_time += 10
+        menu:
+            Max_14 "Нет, здесь её нет... Ну где же эта чёртова книга? Шаги? Нет, показалось..."
+            "{i}искать под кроватью{/i}":
+                jump .bed
+            "{i}искать в шкафу{/i}":
+                jump .wardrobe
+            "{i}искать в столе{/i}":
+                jump .table
+            "{i}прекратить поиски{/i}":
+                jump Waiting
+
+    label .bed:
+        $ spent_time += 10
+        menu:
+            Max_14 "Нет, тут её точно нет. Ну где же она? Кажется, я слышу шум..."
+            "{i}искать под подушкой{/i}":
+                jump .pillow
+            "{i}искать в шкафу{/i}":
+                jump .wardrobe
+            "{i}искать в столе{/i}":
+                jump .table
+            "{i}прекратить поиски{/i}":
+                jump Waiting
+
+
+    label .table:
+        $ spent_time += 10
+        menu:
+            Max_14 "Может быть, её здесь нет? Или попытаться ещё поискать, на свой страх и риск?"
+            "{i}искать под подушкой{/i}":
+                jump .pillow
+            "{i}искать под кроватью{/i}":
+                jump .bed
+            "{i}искать в шкафу{/i}":
+                jump .wardrobe
+            "{i}искать в столе{/i}":
+                jump .table
+            "{i}прекратить поиски{/i}":
+                jump Waiting
+
+    label .wardrobe:
+        $ spent_time += 10
+        # show
+        Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
+        $ possibility["secretbook"].stage_number = 1
+        $ possibility["secretbook"].stages[1].used = True
+        $ AvailableActions["searchbook"].enabled = False
+        jump Waiting
+
+
+label about_secretbook:
+    menu:
+        Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
+        "{i}читать о книге{/i}":
+            Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
+    $ possibility["secretbook"].stage_number = 2
+    $ possibility["secretbook"].stages[2].used = True
+    $ spent_time += 30
+    jump Waiting

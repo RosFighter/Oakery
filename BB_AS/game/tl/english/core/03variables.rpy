@@ -694,3 +694,11 @@ translate english strings:
     old "Не возражаешь против компании?"
     new "Do you mind some company?"
 
+# TODO: Translation updated at 2020-01-17 23:03
+
+translate english strings:
+
+    # game/core/03variables.rpy:374
+    old "Что читаешь?"
+    new "What are you reading?"
+

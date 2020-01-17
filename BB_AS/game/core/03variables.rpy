@@ -282,12 +282,14 @@ default pose2_3 = renpy.random.choice(["01", "02"])
 default pose3_3 = renpy.random.choice(["01", "02", "03"])
 default random_loc_ab = renpy.random.choice(["a", "b"])
 
+
 # переменные со счетчиком дней
 default dcv = {
     "clearpool" : Dayly(done=True, enabled=True),
     "ordercosm" : Dayly(done=True, enabled=True),
     "buyfood"   : Dayly(done=True, enabled=True),
     }
+
 
 # события, запускаемые в конкретное время
 default EventsByTime = {
@@ -299,6 +301,7 @@ default EventsByTime = {
     "Wearied"          : CutEvent("03:30", label="Wearied", sleep=False, desc="поспать бы надо"),
     "delivery"         : CutEvent("15:00", (1, 2, 3, 4, 5, 6), "delivery", "доставка товаров", "len(delivery_list)>0", cut=True),
     }
+
 
 # ежедневное подсматривание
 default peeping = {
@@ -317,6 +320,7 @@ default peeping = {
     "alice_sleep"  : 0,
     "ann_sleep"    : 0,
     }
+
 
 # Возможности
 default possibility = {
@@ -365,6 +369,7 @@ default possibility = {
         ]),
     }
 
+
 # Диалоги
 default talks = {
     "blog1"      : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1", -1),
@@ -381,7 +386,9 @@ default talks = {
     "aboutpool"  : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv[\"clearpool\"].stage==2 and not dcv[\"clearpool\"].done"),
     "ann_tv"     : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var[\"ann_tv\"]==0 and GetScheduleRecord(schedule_ann, day, tm).name == \"tv\""),
     "alice_tv"   : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var[\"alice_tv\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"tv\""),
+    "aboutbooks" : TalkTheme("alice", _("Что читаешь?"), "alice_aboutbooks", "GetScheduleRecord(schedule_alice, day, tm).name == \"read\" and possibility[\"secretbook\"].stage_number < 0"),
     }
+
 
 # Переменные влияющие на запуск диалогов
 default talk_var = {
@@ -399,6 +406,7 @@ default talk_var = {
 default cooldown = {
     "learn" : "0 00:00",
     }
+
 
 # список товаров для доставки
 default delivery_list = []
