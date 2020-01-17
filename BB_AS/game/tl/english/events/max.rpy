@@ -1,76 +1,11 @@
 ﻿# TODO: Translation updated at 2020-01-12 21:49
 
-# game/events/max.rpy:4
-translate english StartDialog_c2510a45:
-
-    # Max_00 "Я слишком устал. Надо бы вздремнуть..."
-    Max_00 ""
-
-# game/events/max.rpy:24
-translate english Sleep_925deae5:
-
-    # Max_00 "{i}Как же я хочу спать...{/i}" nointeract
-    Max_00 "{i}I really need to sleep...{/i}" nointeract
-
-# game/events/max.rpy:27
-translate english Sleep_ff30bdd1:
-
-    # Max_19 "Z-z-z"
-    Max_19 "Z-z-z"
-
-# game/events/max.rpy:42
-translate english Wearied_4ed72841:
-
-    # Max_00 "{i}Я без сил и хочу спать...{/i}" nointeract
-    Max_00 "{i}I'm exhausted and need to sleep...{/i}" nointeract
-
-# game/events/max.rpy:45
-translate english Wearied_ff30bdd1:
-
-    # Max_19 "Z-z-z"
-    Max_19 "Z-z-z"
-
-# game/events/max.rpy:61
-translate english LittleEnergy_5377d169:
-
-    # Max_00 "{i}Я вымотан, надо вздремнуть...{/i}" nointeract
-    Max_00 "" nointeract
-
-# game/events/max.rpy:68
-translate english LittleEnergy_ff30bdd1:
-
-    # Max_19 "Z-z-z"
-    Max_19 "Z-z-z"
-
 # game/events/max.rpy:91
 translate english Nap_b758b7ac:
 
     # Max_19 "[txt!t]" nointeract
     Max_19 "[txt!t]" nointeract
 
-# game/events/max.rpy:105
-translate english Nap_ff30bdd1:
-
-    # Max_19 "Z-z-z"
-    Max_19 "Z-z-z"
-
-# game/events/max.rpy:113
-translate english Alarm_648dd10f:
-
-    # Max_00 "{i}В каком часу я должен встать?{/i}" nointeract
-    Max_00 "{i}What time should I get up?{/i}" nointeract
-
-# game/events/max.rpy:124
-translate english Alarm_ff30bdd1:
-
-    # Max_19 "Z-z-z"
-    Max_19 "Z-z-z"
-
-# game/events/max.rpy:139
-translate english Shower_507c525a:
-
-    # Max_19 "Хорошо быть чистым..." nointeract
-    Max_19 "" nointeract
 
 # game/events/max.rpy:152
 translate english Box_2b7f754d:
