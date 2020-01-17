@@ -104,7 +104,7 @@ label AfterWaiting:
     ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
     $ CamShow()
 
-
+    $ MoodNeutralize()
 
     $ spent_time = 0
     $ prevday = day

@@ -357,10 +357,10 @@ label DishesWashed:
         else:
             $ __name_label = GetScheduleRecord(schedule_alice, day, "11:30").label
         if __name_label == "alice_dishes":
-            if Relation("alice")[0] < 3:
-                $ AddRelMood("alice", 10, 6)
+            if GetRelMax("alice")[0] < 3:
+                $ AddRelMood("alice", 10, 60)
             else:
-                $ AddRelMood("alice", 0, 6)
+                $ AddRelMood("alice", 0, 60)
     $ dishes_washed = True
     $ spent_time = max((60 - int(tm[-2:])), 50)
     $ cur_ratio = 2

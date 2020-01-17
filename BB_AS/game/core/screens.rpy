@@ -1016,7 +1016,7 @@ screen menu_userinfo():
                                         $ char_name = characters[char].name_4
                                         text _("Отношения с [char_name!t]") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text Relation(char)[1] size 24
+                                        text GetRelMax(char)[1] size 24
                             frame:
                                 area (0, 0, 350, 25)
                                 background None
@@ -1087,7 +1087,7 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Уровень отношений") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text Relation(CurChar)[1] size 24
+                                    text GetRelMax(CurChar)[1] size 24
 
                             # mindedness
                             if not characters[CurChar].mindedness is None:
@@ -1102,7 +1102,7 @@ screen menu_userinfo():
                                     frame xsize 350 background None:
                                         text _("Отношения с Эриком") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text RelEric(CurChar)[1] size 24
+                                        text GetRelEric(CurChar)[1] size 24
 
                                 # influence
                                 hbox xfill True:

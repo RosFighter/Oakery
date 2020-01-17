@@ -34,13 +34,13 @@ translate english wash_dishes_alice_9cbbc5d1:
 translate english wash_dishes_alice_07966f8d:
 
     # Max_11 "И почему здесь нет посудомоечной машины..." nointeract
-    Max_11 "Why we don't have a dishwasher..." nointeract
+    Max_11 "Why don't we have a dishwasher..." nointeract
 
 # game/dialogues/alicetalk.rpy:58
 translate english wash_dishes_alice_e341ef54:
 
     # Alice_09 "Знаешь что, вали отсюда, пока мокрой тряпкой по голове не получил!" nointeract
-    Alice_09 "You know what, get out before I hit you with a wet rug!" nointeract
+    Alice_09 "You know what, get out before I hit you with a wet rag!" nointeract
 
 # game/dialogues/alicetalk.rpy:72
 translate english talkblog1_3a17a0f5:
@@ -52,7 +52,7 @@ translate english talkblog1_3a17a0f5:
 translate english talkblog1_d1686a92:
 
     # Alice_01 "Что, даже не начнёшь подкалывать? И что ты хотел узнать?" nointeract
-    Alice_01 "Seriously, no gloating? Anyway, what do you want to know?" nointeract
+    Alice_01 "Seriously? Anyway, what do you want to know?" nointeract
 
 # game/dialogues/alicetalk.rpy:78
 translate english talkblog1_972348e1:
@@ -88,7 +88,7 @@ translate english talkblog1_b5c0083a:
 translate english talkblog1_d69e84a6:
 
     # Alice_00 "Ага, потому что единственная, да? А ещё какая фишка? Нет материалов, нечего показывать?" nointeract
-    Alice_00 "I'm a beauty blogger, I can't be known for wearing the same shirt every time." nointeract
+    Alice_00 "I'm a beauty blogger, I can't be known for wearing the same outfit every time." nointeract
 
 # game/dialogues/alicetalk.rpy:108
 translate english talkblog1_7b2f88d3:
@@ -106,7 +106,7 @@ translate english talkblog1_bc534058:
 translate english talkblog1_no_f28dfb56:
 
     # Alice_00 "Типа ты не в курсе, что у нас пропала большая часть вещей во время переезда?" nointeract
-    Alice_00 "As if you don't know most of our stuff got lost when we moved." nointeract
+    Alice_00 "As if you don't remember most of our stuff got lost when we moved." nointeract
 
 # game/dialogues/alicetalk.rpy:127
 translate english talkblog1_no_e05a3f44:
@@ -154,7 +154,7 @@ translate english talkblog1_help_9598919f:
 translate english talkblog1_help_39dfe6d6:
 
     # Alice_13 "А без денег тут ничем не поможешь. Вообще, я в депрессии из-за всей этой истории. Вся жизнь перевернулась..." nointeract
-    Alice_13 "And you can't help without any money. Now I'm depressed, my whole life is upside down right now." nointeract
+    Alice_13 "And you can't help without any money. Now I'm depressed, my whole life is upside down." nointeract
 
 # game/dialogues/alicetalk.rpy:165
 translate english talkblog1_help_a1831006:
@@ -220,13 +220,13 @@ translate english talkblog1_together_22a16723:
 translate english talkblog1_together_d170a559:
 
     # Alice_01 "Семейный бизнес? На моём блоге? Может ещё и сам вести будешь?" nointeract
-    Alice_01 "Family business out of my blog? Maybe you'll host it too?" nointeract
+    Alice_01 "A family business out of my blog? Maybe you'll host it too?" nointeract
 
 # game/dialogues/alicetalk.rpy:232
 translate english talkblog1_together_becb28cf:
 
     # Alice_00 "Знаешь, мне кажется, что это всё пустые разговоры. Сначала что-то предложи, тогда и обсудим..."
-    Alice_00 "In any case, it's all empty talk for now. First you'll have to offer some ideas, then we'll talk..."
+    Alice_00 "In any case, it's all talk for now. First you'll have to offer some ideas, then we'll see..."
 
 # game/dialogues/alicetalk.rpy:233
 translate english talkblog1_together_8b9af65e:
@@ -292,31 +292,31 @@ translate english talkblog1_findout_3e01b911:
 translate english alice_talk_tv_01add315:
 
     # Alice_00 "Нет, садись. Тут места много..."
-    Alice_00 ""
+    Alice_00 "Sit down, there's plenty of room."
 
 # game/dialogues/alicetalk.rpy:263
 translate english alice_talk_tv_31159ca0:
 
     # Max_00 "Хорошо. Что смотришь?"
-    Max_00 ""
+    Max_00 "Okay. What are you watching?"
 
 # game/dialogues/alicetalk.rpy:264
 translate english alice_talk_tv_a38da904:
 
     # Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Absolutely nothing. I'm just resting and I wanted some background noise..." nointeract
 
 # game/dialogues/alicetalk.rpy:269
 translate english alice_talk_tv_d478e548:
 
     # Max_11 "{i}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/i}"
-    Max_11 ""
+    Max_11 "{i}There's nothing interesting on TV today. It would be exciting if there were some adult films to choose from. Could even be fun to watch it with your sister...{/i}"
 
 # game/dialogues/alicetalk.rpy:270
 translate english alice_talk_tv_55b37ec4:
 
     # Max_00 "Ладно, пойду я..."
-    Max_00 ""
+    Max_00 "Okay, I'll leave you to it..."
 
 translate english strings:
 
@@ -386,7 +386,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:84
     old "Может быть, изменить твой блог?"
-    new "Maybe you should change your blog?"
+    new "Maybe you should change something about your blog?"
 
     # game/dialogues/alicetalk.rpy:95
     old "Что, совсем всё пропало?"
@@ -442,7 +442,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:141
     old "Ты о тех вещах во время переезда?"
-    new "Are you talking about things we lost when we moved here?"
+    new "Are you talking about the things we lost when we moved here?"
 
     # game/dialogues/alicetalk.rpy:146
     old "Да, печально..."
@@ -466,11 +466,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:159
     old "Я не детектив, чтобы искать вещи..."
-    new "I can't help you find the lost stuff..."
+    new "I can't help you recover what we lost..."
 
     # game/dialogues/alicetalk.rpy:162
     old "Вся жизнь? Но это всё к лучшему же. Такой дом, бассейн, место отличное!"
-    new "Whole life? In the end it's for the best, look at our house, our pool!"
+    new "Whole life? In the end it's for the best, look at our house, and our pool!"
 
     # game/dialogues/alicetalk.rpy:162
     old "Не грусти. Могло быть и хуже"
@@ -546,5 +546,45 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:264
     old "Ну, давай смотреть всё подряд..."
-    new ""
+    new "Well, lets keep an eye on it..."
+
+# TODO: Translation updated at 2020-01-17 16:49
+
+# game/dialogues/alicetalk.rpy:39
+translate english Alice_badbadmood_86d8a37d:
+
+    # Alice_09 "Да пошёл ты! Не хочу тебя видеть даже!" nointeract
+    Alice_09 "Screw you! I don't want to see you right now!" nointeract
+
+# game/dialogues/alicetalk.rpy:48
+translate english Alice_badmood_de141364:
+
+    # Alice_09 "Макс, отвали! Я не хочу с тобой разговаривать." nointeract
+    Alice_09 "Get lost, Max! I don't want to talk to you." nointeract
+
+# game/dialogues/alicetalk.rpy:57
+translate english Alice_asksorry_2395f0d1:
+
+    # Alice_13 "Хотел извиниться? Каким образом?" nointeract
+    Alice_13 "How?" nointeract
+
+# game/dialogues/alicetalk.rpy:64
+translate english Alice_normalmood_1faefb22:
+
+    # Alice_09 "Макс, давай не сейчас..." nointeract
+    Alice_09 "Max, not now..." nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:39
+    old "Ок..."
+    new "Ok..."
+
+    # game/dialogues/alicetalk.rpy:39
+    old "Я хотел извиниться"
+    new "I would like to apologize"
+
+    # game/dialogues/alicetalk.rpy:57
+    old "Ты знаешь, я передумал..."
+    new "You know, I've changed my mind..."
 

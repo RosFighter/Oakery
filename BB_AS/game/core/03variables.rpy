@@ -228,8 +228,6 @@ default alarm_time = ""
 
 default dishes_washed = False
 
-default next_learn = "0 00:00"
-
 default money = 150
 default current_location = house
 default current_room = house[5]
@@ -369,19 +367,20 @@ default possibility = {
 
 # Диалоги
 default talks = {
-    "blog1"     : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1"),
-    "blog2"     : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3"),
-    "lisa_fd"   : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var[\"boy\"]==0"),
-    "lisa_swim" : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
+    "blog1"      : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1", -1),
+    "blog2"      : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3", 1),
+    "lisa_fd"    : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var[\"boy\"]==0"),
+    "lisa_swim"  : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
                     "possibility[\"Swimsuit\"].stage_number < 0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_sun\""),
-    "lisas_boy" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1"),
-    "lisa_dw"   : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).name == \"dishes\""),
-    "alice_dw"  : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"dishes\""),
-    "ask_money" : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var[\"ask_money\"]==0"),
-    "aboutfood" : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv[\"buyfood\"].stage==2 and dcv[\"buyfood\"].lost==2"),
-    "aboutpool" : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv[\"clearpool\"].stage==2 and not dcv[\"clearpool\"].done"),
-    "ann_tv"    : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var[\"ann_tv\"]==0 and GetScheduleRecord(schedule_ann, day, tm).name == \"tv\""),
-    "alice_tv"  : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var[\"alice_tv\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"tv\""),
+    "lisas_boy"  : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1", 0, "lisa_boy"),
+    "lisas_boy2" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy2", "2 < talk_var[\"boy\"] < 6", 1),
+    "lisa_dw"    : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).name == \"dishes\"", -1),
+    "alice_dw"   : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"dishes\"", -1),
+    "ask_money"  : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var[\"ask_money\"]==0"),
+    "aboutfood"  : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv[\"buyfood\"].stage==2 and dcv[\"buyfood\"].lost==2"),
+    "aboutpool"  : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv[\"clearpool\"].stage==2 and not dcv[\"clearpool\"].done"),
+    "ann_tv"     : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var[\"ann_tv\"]==0 and GetScheduleRecord(schedule_ann, day, tm).name == \"tv\""),
+    "alice_tv"   : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var[\"alice_tv\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"tv\""),
     }
 
 # Переменные влияющие на запуск диалогов

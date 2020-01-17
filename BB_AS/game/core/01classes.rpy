@@ -205,11 +205,13 @@ init python:
 
 ################################################################################
     class TalkTheme:  # описание темы для разговора
-        def __init__(self, char, select, label, req="False"):
+        def __init__(self, char, select, label, req="False", mood=0, kd_id=""):
             self.char   = char    # персонаж, (или список персонажей) с которым должен вестись диалог
             self.select = select  # Фраза, которая будет отображаться в меню выбора диалога с персонажем
             self.label  = label   # Метка перехода при выборе пункта меню
             self.req    = req     # Условие, выполнение которого делает фразу доступной для отображения
+            self.mood   = mood    # минимальное настроение для запуска разговора на эту тему
+            self.kd_id  = kd_id   # идентификатор кулдауна
         def __repr__(self):
             return "стартовая фраза=\"{self.select}\", метка: {self.label}, условие: {self.req}".format(self=self)
 

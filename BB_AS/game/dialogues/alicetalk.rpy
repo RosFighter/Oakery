@@ -18,11 +18,53 @@ label AliceTalkStart:
     $ rez =  renpy.display_menu(dial)
 
     if rez != "exit":
-        if renpy.has_label(rez): # если такая метка сушествует, запускаем ее
-            call expression rez
+        $ __mood = GetMood("alice")[0]
+        if __mood < talks[rez].mood:
+            if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
+                jump Alice_badbadmood
+            elif __mood < 0: # Настроение -2... -1, т.е. всё ещё всё очень плохо
+                jump Alice_badmood
+            else: # Настроение хорошее, но ещё недостаточное для разговора
+                jump Alice_normalmood
+        elif talks[rez].kd_id != "" and talks[rez].kd_id in cooldown and not ItsTime(cooldown[talks[rez].kd_id]):
+            jump Alice_cooldown
+        elif renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
+            call expression talks[rez].label
         jump AliceTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания
+
+
+label Alice_badbadmood:
+    menu:
+        Alice_09 "Да пошёл ты! Не хочу тебя видеть даже!"
+        "Ок...":
+            jump Waiting
+        "Я хотел извиниться":
+            jump Alice_asksorry
+
+
+label Alice_badmood:
+    menu:
+        Alice_09 "Макс, отвали! Я не хочу с тобой разговаривать."
+        "Ок...":
+            jump Waiting
+        "Я хотел извиниться":
+            jump Alice_asksorry
+
+
+label Alice_asksorry:
+    menu:
+        Alice_13 "Хотел извиниться? Каким образом?"
+        "Ты знаешь, я передумал...":
+            jump Waiting
+
+
+label Alice_normalmood:
+    menu:
+        Alice_09 "Макс, давай не сейчас..."
+        "Ок...":
+            jump Waiting
 
 
 label Alice_cooldown:
@@ -39,7 +81,7 @@ label wash_dishes_alice:
             menu:
                 Alice_07 "Что это с тобой? Но я не откажусь. И... спасибо."
                 "{i}мыть посуду{/i}":
-                    if Relation("alice")[0] < 3:
+                    if GetRelMax("alice")[0] < 3:
                         $ AddRelMood("alice", 10, 60)
                     else:
                         $ AddRelMood("alice", 0, 60)

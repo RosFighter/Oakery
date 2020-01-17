@@ -190,13 +190,13 @@ label lisa_dressed_school:
 
     label .come_in:
         scene BG char Lisa morning
-        if characters["lisa"].relmax < 0:
+        if GetRelMax("lisa")[0] < 0:
             show Lisa school-dressed 01
             $ characters["lisa"].dress_inf = "01b"
-        elif characters["lisa"].relmax < 250:
+        elif GetRelMax("lisa")[0] < 2:
             show Lisa school-dressed 01a
             $ characters["lisa"].dress_inf = "01b"
-        elif characters["lisa"].relmax < 700:
+        elif GetRelMax("lisa")[0] < 4:
             show Lisa school-dressed 01b
             $ characters["lisa"].dress_inf = "02a"
         else:
@@ -207,22 +207,22 @@ label lisa_dressed_school:
         menu:
             Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
             "Это и моя комната!":
-                if characters["lisa"].mood < -15: # настроение не очень и ниже
+                if GetMood("lisa")[0] < 0: # настроение не очень и ниже
                     show Lisa school-dressed 01
                     Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
                     Max_00 "Удачи"
                     $ __rel  -= 5 # при плохом настроении отношения и настроение снижаются
-                    $ __mood -= 50
+                    $ __mood -= 25
                 else: # нейтральное настроение
                     Lisa_02 "В любом случае, я уже оделась, так что, входи. А я побежала в школу."
                     Max_00 "Удачи"
             "Да чего я там не видел...":
-                if Relation("lisa")[0] < 1: # отношения прохладные и ниже
+                if GetRelMax("lisa")[0] < 1: # отношения прохладные и ниже
                     Lisa_12 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
                     Max_00 "Пока, Лиза!"
                     $ __rel  -= 5 # при низком отношении отношения и настроение снижаются
-                    $ __mood -= 50
-                elif Relation("lisa")[0] < 2: # Неплохие отношения
+                    $ __mood -= 30
+                elif GetRelMax("lisa")[0] < 2: # Неплохие отношения
                     Lisa_01 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
                     Max_00 "Пока, Лиза!"
                 else: # хорошие и выше отношения
@@ -230,16 +230,16 @@ label lisa_dressed_school:
                     show Lisa school-dressed 01a
                     Lisa_01 "Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
                     Max_00 "Пока, Лиза!"
-                    $ __mood += 50 # при хорошем отношении настроение повышается
+                    $ __mood += 30 # при хорошем отношении настроение повышается
             "Извини":
-                if Relation("lisa")[0] < 2: # Неплохие отношения
+                if GetRelMax("lisa")[0] < 2: # Неплохие отношения
                     Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
                 else:
                     Lisa_03 "Да ты у нас, оказывается, джентльмен!"
                     show Lisa school-dressed 01a
                     Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
                 Max_00 "Пока, Лиза!"
-                $ __mood += 50 # при извинении отношение и настроение повышаются
+                $ __mood += 30 # при извинении отношение и настроение повышаются
                 $ __rel += 5
 
         jump .rel_mood
@@ -256,11 +256,11 @@ label lisa_dressed_school:
         else:
             $ characters["lisa"].dress_inf = "00"
         scene BG char Lisa morning
-        if characters["lisa"].relmax < 0:
+        if GetRelMax("lisa")[0] < 0:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1))
-        elif characters["lisa"].relmax < 250:
+        elif GetRelMax("lisa")[0] < 2:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
-        elif characters["lisa"].relmax < 700:
+        elif GetRelMax("lisa")[0] < 4:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
         else:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
@@ -281,7 +281,7 @@ label lisa_dressed_school:
             menu:
                 Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "Извини... Кстати, отличный зад!" if __ran1 < 3:
-                    if characters["lisa"].relmax < 250:
+                    if GetRelMax("lisa")[0] < 2:
                         $ __rel -= 5
                 "Извини..." if __ran1 > 2:
                     $ __mood += 50
@@ -303,7 +303,7 @@ label lisa_dressed_school:
                 "Извини, я не хотел...":
                     Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
                     Max_00 "Хорошо..."
-                    if Relation("lisa")[0] > 1:
+                    if GetRelMax("lisa")[0] > 1:
                         $ __mood += 50
 
     scene location house myroom door-morning
@@ -358,11 +358,11 @@ label lisa_dressed_shop:
             else:
                 $ characters["lisa"].dress_inf = "00"
             scene BG char Lisa morning
-            if characters["lisa"].relmax < 0:
+            if GetRelMax("lisa")[0] < 0:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1))
-            elif characters["lisa"].relmax < 250:
+            elif GetRelMax("lisa")[0] < 2:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
-            elif characters["lisa"].relmax < 700:
+            elif GetRelMax("lisa")[0] < 4:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
             else:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
@@ -370,15 +370,15 @@ label lisa_dressed_shop:
             if __warned:
                 $ __mood -= 150
                 $ __rel -= 15
-                $ phrase = _("Я не одета!")
+                $ phrase = _("Я же сказала, что я не одета! ")
             else:
                 $ __mood -= 50 # настроение портится в любом случае
-                $ phrase = _("Я же сказала, что я не одета! ")
+                $ phrase = _("Я не одета! ")
 
             menu:
                 Lisa_12 "Макс! [phrase!t]Быстрой закрой дверь с той стороны!"
                 "Извини... Кстати, отличный зад!" if __ran1 == 2:
-                    if characters["lisa"].relmax < 250:
+                    if GetRelMax("lisa")[0] < 2:
                         $ __rel -= 5
                 "А у тебя сиськи подросли!":
                     menu:
@@ -516,10 +516,10 @@ label lisa_bath:
             if possibility["seduction"].stage_number < 31:
                 $ __mood -= 50
                 scene BG bath-open-00
-                if characters["lisa"].relmax < 0:
+                if GetRelMax("lisa")[0] < 0:
                     show Lisa bath-open 01
                     Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
-                elif characters["lisa"].relmax < 250:
+                elif GetRelMax("lisa")[0] < 2:
                     $ characters["lisa"].dress_inf = "00a"
                     show Lisa bath-open 02
                     Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
@@ -537,9 +537,9 @@ label lisa_bath:
         label .open:
             if possibility["seduction"].stage_number < 31:
                 scene BG bath-open-00
-                if characters["lisa"].relmax < 0:
+                if GetRelMax("lisa")[0] < 0:
                     show Lisa bath-open 01
-                elif characters["lisa"].relmax < 250:
+                elif GetRelMax("lisa")[0] < 2:
                     $ characters["lisa"].dress_inf = "00a"
                     show Lisa bath-open 02
                 else:

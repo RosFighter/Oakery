@@ -255,8 +255,8 @@ init python:
         return str(d)+" " + ("0"+str(h))[-2:] + ":" + ("0"+str(m))[-2:]
 
 
-    def ItsTime(next_learn): # проверяет, прошел ли кулдаун """
-        d1, hm = next_learn.split(" ")
+    def ItsTime(tm_kd): # проверяет, прошел ли кулдаун """
+        d1, hm = tm_kd.split(" ")
         h1, m1 = hm.split(":")
         h2, m2 = tm.split(":")
 
@@ -332,7 +332,7 @@ init python:
         talklist = GetTalksTheme()
 
         for i in talklist:
-            menu_items.append((talks[i].select, talks[i].label))
+            menu_items.append((talks[i].select, i))
 
         return menu_items
 
@@ -376,6 +376,7 @@ init python:
             mood <  0 : __("снизилось"),
             mood >= 0 : __("повысилось")
             }[True]
+
 
     def AddRelMood(char, rel, mood): # добавить изменение настроения и отношений и показать подсказку
         rel_suf = ChangeRel(rel)
@@ -874,7 +875,7 @@ init python:
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
         for cam in room.cams:
             cam.grow = grow
-            grow = int(grow * 0.9) # для каждой пследующей камеры интерес снижается на 10%
+            grow = int(grow * 0.9) # для каждой последующей камеры интерес снижается на 10%
 
 
     def clip(x, a, b): # вписывает число x в диапазон между a и b
@@ -896,7 +897,7 @@ init python:
             }[True]
 
 
-    def Relation(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Максом
+    def GetRelMax(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Максом
         rel = characters[char].relmax
         return {
                    rel <= -250 : (-3, _("Война")),
@@ -911,7 +912,7 @@ init python:
             }[True]
 
 
-    def RelEric(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Эриком
+    def GetRelEric(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Эриком
         rel = characters[char].releric
         return {
             #        rel <= -250 : (-3, _("Война")),
@@ -933,3 +934,13 @@ init python:
             4  : _("Дружеские"),
             5  : _("Близкие")
             }[True]
+
+
+    def MoodNeutralize(): # с течением времени настроение стрепится к нейтральному
+        cycles = spent_time / 10 # расчет выполняется каждые 10 минут
+        for char in characters:
+            for i in range(cycles):
+                if characters[char].mood > 0:
+                    characters[char].mood -= 1
+                elif characters[char].mood < 0:
+                    characters[char].mood += 3 # возвращается в норму настроение быстрее, чем падает

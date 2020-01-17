@@ -10,25 +10,25 @@ translate english StartDialog_c2510a45:
 translate english Sleep_925deae5:
 
     # Max_00 "{i}Как же я хочу спать...{/i}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{i}I really need to sleep...{/i}" nointeract
 
 # game/events/max.rpy:27
 translate english Sleep_ff30bdd1:
 
     # Max_19 "Z-z-z"
-    Max_19 ""
+    Max_19 "Z-z-z"
 
 # game/events/max.rpy:42
 translate english Wearied_4ed72841:
 
     # Max_00 "{i}Я без сил и хочу спать...{/i}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{i}I'm exhausted and need to sleep...{/i}" nointeract
 
 # game/events/max.rpy:45
 translate english Wearied_ff30bdd1:
 
     # Max_19 "Z-z-z"
-    Max_19 ""
+    Max_19 "Z-z-z"
 
 # game/events/max.rpy:61
 translate english LittleEnergy_5377d169:
@@ -40,31 +40,31 @@ translate english LittleEnergy_5377d169:
 translate english LittleEnergy_ff30bdd1:
 
     # Max_19 "Z-z-z"
-    Max_19 ""
+    Max_19 "Z-z-z"
 
 # game/events/max.rpy:91
 translate english Nap_b758b7ac:
 
     # Max_19 "[txt!t]" nointeract
-    Max_19 "" nointeract
+    Max_19 "[txt!t]" nointeract
 
 # game/events/max.rpy:105
 translate english Nap_ff30bdd1:
 
     # Max_19 "Z-z-z"
-    Max_19 ""
+    Max_19 "Z-z-z"
 
 # game/events/max.rpy:113
 translate english Alarm_648dd10f:
 
     # Max_00 "{i}В каком часу я должен встать?{/i}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{i}What time should I get up?{/i}" nointeract
 
 # game/events/max.rpy:124
 translate english Alarm_ff30bdd1:
 
     # Max_19 "Z-z-z"
-    Max_19 ""
+    Max_19 "Z-z-z"
 
 # game/events/max.rpy:139
 translate english Shower_507c525a:
@@ -76,31 +76,31 @@ translate english Shower_507c525a:
 translate english Box_2b7f754d:
 
     # Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
-    Max_08 ""
+    Max_08 "So, mom asked me to sort these boxes. Let's see what we have here..."
 
 # game/events/max.rpy:154
 translate english Box_7d70e813:
 
     # Max_09 "Жаль, но все коробки пустые... Но что это такое? Какая-то камера?"
-    Max_09 ""
+    Max_09 "Too bad they're empty... but what's this? Some kind of camera?"
 
 # game/events/max.rpy:156
 translate english Box_05229898:
 
     # Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
-    Max_01 ""
+    Max_01 "Some instructions, descriptions inside... this box was for a hidden camera! I wonder what it's doing here?"
 
 # game/events/max.rpy:158
 translate english Box_1aed80a0:
 
     # Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность!\"{/i}{/color}" nointeract
-    Max_10 "" nointeract
+    Max_10 "Maybe it's already installed somewhere in the house and! I should check the rooms...\n\n{color=[lime]}{i}{b}Warning:{/b} New \"opportunity\" is unlocked!{/i}{/color}" nointeract
 
 # game/events/max.rpy:184
 translate english Notebook_2dd57a79:
 
     # Max_00 "Итак, чем интересным я займусь?"
-    Max_00 ""
+    Max_00 "So, what shall I do?"
 
 # game/events/max.rpy:228
 translate english nothing_search_8ac67f83:
@@ -112,139 +112,139 @@ translate english nothing_search_8ac67f83:
 translate english buyfood_0de2cd95:
 
     # Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
-    Max_04 ""
+    Max_04 "So... Let's see the list of products... Yeah. Now will order everything..."
 
 # game/events/max.rpy:238
 translate english buyfood_e01f4c0c:
 
     # Max_04 "Готово. Да это же самая лёгкая задача!"
-    Max_04 ""
+    Max_04 "Done. Yes this is the easiest task!"
 
 # game/events/max.rpy:256
 translate english create_site_3744c5ee:
 
     # Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100" nointeract
-    Max_00 "" nointeract
+    Max_00 "So, it's time to do the website. First I need to buy a domain, hosting, design sample and pay for services of the streaming. It’s $100 at all." nointeract
 
 # game/events/max.rpy:264
 translate english create_site_e36c401d:
 
     # Max_04 "Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом..." nointeract
-    Max_04 "" nointeract
+    Max_04 "Excellent! Now I have my own website and domain! It remains only to connect the data flow from the camera with streaming service..." nointeract
 
 # game/events/max.rpy:270
 translate english create_site_4e1c08b2:
 
     # Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
-    Max_04 ""
+    Max_04 "Yes! Everything is working! Now people will be able to go to my website and watch the show. Of course, if they somehow find out my site... Well, I’ll think what I can do..."
 
 # game/events/max.rpy:298
 translate english about_cam_c0885969:
 
     # Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
-    Max_09 ""
+    Max_09 "So curious... These cameras can be configured so that they broadcast the image of the Internet!"
 
 # game/events/max.rpy:299
 translate english about_cam_3d3bce54:
 
     # Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
-    Max_07 ""
+    Max_07 "But what is even more interesting, some people are willing to pay for access to these cameras..."
 
 # game/events/max.rpy:300
 translate english about_cam_3fd48063:
 
     # Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
-    Max_09 ""
+    Max_09 "Maybe I should make my website and let people pay me for watching video? But I really do not know anything..."
 
 # game/events/max.rpy:314
 translate english SearchCam_67b6130b:
 
     # Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
-    Max_04 ""
+    Max_04 "This is it! Someone hid it in the wall. I don't think I would have had a chance of finding it unless I knew exactly what to look for..."
 
 # game/events/max.rpy:315
 translate english SearchCam_140db024:
 
     # Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
-    Max_09 ""
+    Max_09 "It's not connected to anything. Maybe dad used it to keep an eye on the construction of the house...?"
 
 # game/events/max.rpy:316
 translate english SearchCam_9487a2c0:
 
     # Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
-    Max_04 ""
+    Max_04 "If I can connect to this cam, I think I'll be able to keep and eye on this room. Now I just need to figure out how to link to it"
 
 # game/events/max.rpy:323
 translate english SearchCam_c5169ba0:
 
     # Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
-    Max_14 ""
+    Max_14 "I don't see any cameras... I should look in another room."
 
 # game/events/max.rpy:334
 translate english ClearPool_f0dc1508:
 
     # Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    Max_11 ""
+    Max_11 "It is not an easy work, but I need the money. Besides, mom already paid me for the job"
 
 # game/events/max.rpy:350
 translate english DishesWashed_cedc9161:
 
     # Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?" nointeract
-    Max_00 "" nointeract
+    Max_00 "Look at this mountain of dirty dishes! Why don't we have a dishwasher?" nointeract
 
 # game/events/max.rpy:378
 translate english delivery_601bbd32:
 
     # "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
-    ""
+    "Hi there! I have an order for this address. May I ask you to sign here?"
 
 # game/events/max.rpy:379
 translate english delivery_509c6af4:
 
     # Max_00 "Конечно! А что тут?"
-    Max_00 ""
+    Max_00 "Sure, what's in there?"
 
 # game/events/max.rpy:381
 translate english delivery_0ba1be34:
 
     # Max_00 "Да, то что нужно. Спасибо!"
-    Max_00 ""
+    Max_00 "Yep, that's what I ordered. Thanks!"
 
 # game/events/max.rpy:391
 translate english BookRead_9562ffab:
 
     # Max_00 "Пришло время почитать что-то..." nointeract
-    Max_00 "" nointeract
+    Max_00 "It's time to read something..." nointeract
 
 # game/events/max.rpy:399
 translate english BookRead_manual_41be558e:
 
     # Max_00 "Хм... куча непонятных слов. Кажется, нужно будет заново перечитать первые главы...\n\n{color=[orange]}{i}(Книга изучена на 20%%){/i}{/color}"
-    Max_00 ""
+    Max_00 "Hmm... bunch of gibberish. Looks like I need to reread first chapters again...\n\n{i}{color=[orange]}(The book is 20%% done){/color}{/i}"
 
 # game/events/max.rpy:401
 translate english BookRead_manual_0826f3fe:
 
     # Max_00 "Так, ну с этим я уже разобрался, хорошо... А это что такое? Не ясно. Нужно будет всё осмыслить...\n\n{color=[orange]}{i}(Книга изучена на 40%%){/i}{/color}"
-    Max_00 ""
+    Max_00 "Okay, I get this part... But how does this work? I don't get it. I need to figure it out...\n\n{i}{color=[orange]}(The book is 40% done){/color}{/i}"
 
 # game/events/max.rpy:403
 translate english BookRead_manual_3605e1d8:
 
     # Max_00 "Ого, вот это здорово! Уже можно делать сайт? А, нет... Ещё не всё понятно... Ну, разберусь в другой раз.\n\n{color=[orange]}{i}(Книга изучена на 60%%){/i}{/color}"
-    Max_00 ""
+    Max_00 "Wow, this is great! Should I try to make my website? No, wait... It's too early for that.\n\n{i}{color=[orange]}(The book is 60% done){/color}{/i}"
 
 # game/events/max.rpy:405
 translate english BookRead_manual_1c08c83d:
 
     # Max_00 "Так, ну теперь картина вырисовывается. Осталось разобраться только с мелочами... Или это не мелочи?\n\n{color=[orange]}{i}(Книга изучена на 80%%){/i}{/color}"
-    Max_00 ""
+    Max_00 "I'm starting to get the big picture. I'm almost done, only couple of little things left.\n\n{i}{color=[orange]}(The book is 80% done){/color}{/i}"
 
 # game/events/max.rpy:407
 translate english BookRead_manual_bd8ad388:
 
     # Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
-    Max_00 ""
+    Max_00 "Now everything is clear! I can make my website and broadcast the video! But how to get paid for it?"
 
 translate english strings:
 
@@ -298,23 +298,23 @@ translate english strings:
 
     # game/events/max.rpy:205
     old "{i}почитать о камерах{/i}"
-    new ""
+    new "{i}read about the cameras{/i}"
 
     # game/events/max.rpy:207
     old "{i}читать о блогах{/i}"
-    new ""
+    new "{i}read about blogs{/i}"
 
     # game/events/max.rpy:209
     old "{i}узнать о книге Алисы{/i}"
-    new ""
+    new "learn about the Alice's book"
 
     # game/events/max.rpy:256
     old "Оплатить всё ($100)"
-    new ""
+    new "Pay for everything ($100)"
 
     # game/events/max.rpy:264
     old "Настроить работу сайта"
-    new ""
+    new "Configure site's functionality"
 
     # game/events/max.rpy:302
     old "В интернет-магазине доступен новый товар."
@@ -322,5 +322,83 @@ translate english strings:
 
     # game/events/max.rpy:391
     old "{i}читать \"WEB STANDARDS\"{/i}"
+    new "{i}read \"WEB STANDARDS\"{/i}"
+
+# TODO: Translation updated at 2020-01-17 16:49
+
+# game/events/max.rpy:4
+translate english StartDialog_069fda26:
+
+    # Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
+    Max_10 ""
+
+# game/events/max.rpy:24
+translate english Sleep_679fe800:
+
+    # Max_00 "{i}Пожалуй, пора ложиться спать...{/i}" nointeract
+    Max_00 "" nointeract
+
+# game/events/max.rpy:27
+translate english Sleep_dca71115:
+
+    # Max_19 "Как же в этом доме хорошо..."
+    Max_19 ""
+
+# game/events/max.rpy:42
+translate english Wearied_524d41b7:
+
+    # Max_10 "{i}Моя голова уже совсем не соображает, нужно ложиться спать...{/i}" nointeract
+    Max_10 "" nointeract
+
+# game/events/max.rpy:45
+translate english Wearied_dca71115:
+
+    # Max_19 "Как же в этом доме хорошо..."
+    Max_19 ""
+
+# game/events/max.rpy:61
+translate english LittleEnergy_666a8086:
+
+    # Max_10 "{i}Я слишком вымотался, нужно хоть немного вздремнуть...{/i}" nointeract
+    Max_10 "" nointeract
+
+# game/events/max.rpy:68
+translate english LittleEnergy_dca71115:
+
+    # Max_19 "Как же в этом доме хорошо..."
+    Max_19 ""
+
+# game/events/max.rpy:105
+translate english Nap_dca71115:
+
+    # Max_19 "Как же в этом доме хорошо..."
+    Max_19 ""
+
+# game/events/max.rpy:113
+translate english Alarm_67a81b77:
+
+    # Max_00 "{i}В каком часу мне будет лучше проснуться?{/i}" nointeract
+    Max_00 "" nointeract
+
+# game/events/max.rpy:124
+translate english Alarm_dca71115:
+
+    # Max_19 "Как же в этом доме хорошо..."
+    Max_19 ""
+
+# game/events/max.rpy:139
+translate english Shower_2c708671:
+
+    # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
+    Max_19 "" nointeract
+
+translate english strings:
+
+    # game/events/max.rpy:87
+    old "{i}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/i}"
+    new ""
+
+    # game/events/max.rpy:89
+    old "{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}"
     new ""
 

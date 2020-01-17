@@ -18,17 +18,60 @@ label AnnTalkStart:
     $ rez =  renpy.display_menu(dial)
 
     if rez != "exit":
-        if renpy.has_label(rez): # если такая метка сушествует, запускаем ее
-            call expression rez
+        $ __mood = GetMood("ann")[0]
+        if __mood < talks[rez].mood:
+            if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
+                jump Ann_badbadmood
+            elif __mood < 0: # Настроение -2... -1, т.е. всё ещё всё очень плохо
+                jump Ann_badmood
+            else: # Настроение хорошее, но ещё недостаточное для разговора
+                jump Ann_normalmood
+        elif talks[rez].kd_id != "" and talks[rez].kd_id in cooldown and not ItsTime(cooldown[talks[rez].kd_id]):
+            jump Ann_cooldown
+        elif renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
+            call expression talks[rez].label
         jump AnnTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания
 
 
+label Ann_badbadmood:
+    menu:
+        Ann_18 "Макс, я сейчас в очень плохом настроении и не хочу с тобой разговаривать!"
+        "Ок...":
+            jump Waiting
+        "Я хотел извиниться":
+            jump Ann_asksorry
+
+
+label Ann_badmood:
+    menu:
+        Ann_18 "Макс, я сейчас не в настроении и не хочу разговаривать."
+        "Ок...":
+            jump Waiting
+        "Я хотел извиниться":
+            jump Ann_asksorry
+
+
+label Ann_asksorry:
+    menu:
+        Ann_01 "Да? Я тебя слушаю?"
+        "В другой раз...":
+            jump Waiting
+
+
+label Ann_normalmood:
+    menu:
+        Ann_18 "Макс, не сейчас, хорошо?"
+        "Ок...":
+            jump Waiting
+
+
+
 label Ann_cooldown:
     Ann_18 "Макс, давай сменим тему..."
     Max_00 "Ок, мам..."
-    return
+    jump AfterWaiting
 
 
 label ann_ask_money:

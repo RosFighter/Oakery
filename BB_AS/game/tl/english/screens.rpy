@@ -354,3 +354,23 @@ translate english strings:
     old "Меню"
     new "Menu"
 
+# TODO: Translation updated at 2020-01-17 16:49
+
+translate english strings:
+
+    # game/screens.rpy:841
+    old "Язык"
+    new "Language"
+
+    # game/screens.rpy:847
+    old "Дополнительно"
+    new "Additionally"
+
+    # game/screens.rpy:848
+    old "Patreon-интро"
+    new "Patreon-intro"
+
+    # game/screens.rpy:849
+    old "Оригинальное интро"
+    new "Original intro"
+
