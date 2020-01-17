@@ -124,7 +124,7 @@ translate english breakfast_first_bf_change_3b6c15c9:
 translate english breakfast_first_bf_time2_c49cfb24:
 
     # Lisa_02 "Ну, у нас в этой школе так. Меня всё устраивает. Мы ещё и учимся всего пять дней в неделю! Правда, про каникулы ничего не знаю..." nointeract
-    Lisa_02 "Yep that's how it is at this school. I'm pretty happy with it. I just wonder how holidays work..." nointeract
+    Lisa_02 "Yep, that's how it is at this school. I'm pretty happy with it. I just wonder how holidays will work..." nointeract
 
 # game/dialogues/breakfast.rpy:113
 translate english breakfast_first_bf_time3_dd21def3:
