@@ -337,3 +337,73 @@ translate english strings:
     old "{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}"
     new ""
 
+# TODO: Translation updated at 2020-01-17 23:03
+
+# game/events/max.rpy:419
+translate english SearchSecretBook_390d326c:
+
+    # Max_10 "Так... И с чего начать поиск? И нужно поспешить: если Алиса меня поймает, то сначала убьёт, а только потом поздоровается..." nointeract
+    Max_10 "Where to start...? I have to hurry, if Alice catches me, she'll kill me first and ask questions later..." nointeract
+
+# game/events/max.rpy:434
+translate english SearchSecretBook_pillow_fdc18f7e:
+
+    # Max_14 "Нет, здесь её нет... Ну где же эта чёртова книга? Шаги? Нет, показалось..." nointeract
+    Max_14 "Not here... Where is this damn book? Did I heard some steps? No, I think I imagined it..." nointeract
+
+# game/events/max.rpy:447
+translate english SearchSecretBook_bed_893f346c:
+
+    # Max_14 "Нет, тут её точно нет. Ну где же она? Кажется, я слышу шум..." nointeract
+    Max_14 "Definitely not here. Where is it? I think I heard something..." nointeract
+
+# game/events/max.rpy:461
+translate english SearchSecretBook_table_f75e7ca0:
+
+    # Max_14 "Может быть, её здесь нет? Или попытаться ещё поискать, на свой страх и риск?" nointeract
+    Max_14 "Maybe it's not here? Should I keep going despite the danger?" nointeract
+
+# game/events/max.rpy:477
+translate english SearchSecretBook_wardrobe_ef3ccc0f:
+
+    # Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
+    Max_04 "There it is! Why did she had to hide it? Interesting cover. I wonder what this book is about? I'll memorize the name and look it up on the web"
+
+# game/events/max.rpy:485
+translate english about_secretbook_605b0407:
+
+    # Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?" nointeract
+    Max_00 "So... Now let's google. How is it called? \"Sugar Daddies\"?... A Love Story? And what may it contain?" nointeract
+
+# game/events/max.rpy:488
+translate english about_secretbook_279d4103:
+
+    # Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
+    Max_06 "Wow, it's not a simple love story. It's erotica, I'll say! Now it's clear why Alice didn't want to tell what she was reading..."
+
+translate english strings:
+
+    # game/events/max.rpy:419
+    old "{i}искать под подушкой{/i}"
+    new "{i}look under the pillow{/i}"
+
+    # game/events/max.rpy:419
+    old "{i}искать под кроватью{/i}"
+    new "{i}look under the bed{/i}"
+
+    # game/events/max.rpy:419
+    old "{i}искать в шкафу{/i}"
+    new "{i}look in the wardrobe{/i}"
+
+    # game/events/max.rpy:419
+    old "{i}искать в столе{/i}"
+    new "{i}look in the table{/i}"
+
+    # game/events/max.rpy:419
+    old "{i}прекратить поиски{/i}"
+    new "{i}stop finding{/i}"
+
+    # game/events/max.rpy:485
+    old "{i}читать о книге{/i}"
+    new "{i}read about the book{/i}"
+

@@ -588,3 +588,105 @@ translate english strings:
     old "Ты знаешь, я передумал..."
     new "You know, I've changed my mind..."
 
+# TODO: Translation updated at 2020-01-17 23:03
+
+# game/dialogues/alicetalk.rpy:316
+translate english alice_aboutbooks_5cb6ebb3:
+
+    # Alice_13 "Книжку, очевидно..." nointeract
+    Alice_13 "A book, obviously..." nointeract
+
+# game/dialogues/alicetalk.rpy:319
+translate english alice_aboutbooks_17c8adf3:
+
+    # Alice_01 "Так чего хотел, Макс?"
+    Alice_01 "What do you want, Max?"
+
+# game/dialogues/alicetalk.rpy:320
+translate english alice_aboutbooks_d236f5ef:
+
+    # Max_00 "Хотел узнать что именно читаешь..."
+    Max_00 "I want to know what you're reading"
+
+# game/dialogues/alicetalk.rpy:322
+translate english alice_aboutbooks_17c8adf3_1:
+
+    # Alice_01 "Так чего хотел, Макс?"
+    Alice_01 "What do you want, Max?"
+
+# game/dialogues/alicetalk.rpy:323
+translate english alice_aboutbooks_d236f5ef_1:
+
+    # Max_00 "Хотел узнать что именно читаешь..."
+    Max_00 "I want to know what you're reading"
+
+# game/dialogues/alicetalk.rpy:325
+translate english alice_aboutbooks_656d98ae:
+
+    # Alice_01 "Ну вот... Хотела пошутить, и ты так меня обломал... А если серьёзно, то чего хотел?"
+    Alice_01 "Aw, I was just going to say that... But seriously, what do you want?"
+
+# game/dialogues/alicetalk.rpy:326
+translate english alice_aboutbooks_de0f6bd9:
+
+    # Max_00 "Да вот и хотел узнать, что именно читаешь..."
+    Max_00 "Just want to know what you're reading"
+
+# game/dialogues/alicetalk.rpy:327
+translate english alice_aboutbooks_6405d1b7:
+
+    # Alice_02 "Забавно. А тебе не всё равно? Или делать нечего?" nointeract
+    Alice_02 "Why do you care? Don't you have something better to do?" nointeract
+
+# game/dialogues/alicetalk.rpy:333
+translate english alice_aboutbooks_af00f0d1:
+
+    # Alice_00 "Не скажу. Сиди теперь и гадай! \n\n{i}Алиса прикрыла обложку рукой{/i}" nointeract
+    Alice_00 "I won't tell. I guess you'll have to live with uncertainty! \n\n{i}Alice has covered the book title{/i}" nointeract
+
+# game/dialogues/alicetalk.rpy:341
+translate english alice_aboutbooks_fc80ccce:
+
+    # Alice_01 "Думай, что хочешь, а я всё равно не скажу. \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
+    Alice_01 "Think what you want, I won't tell.  \n\n{color=[lime]}{i}{b}Attention:{/b} A new "opportunity" was found!{/i}{/color}"
+
+# game/dialogues/alicetalk.rpy:342
+translate english alice_aboutbooks_2df2b69d:
+
+    # Max_00 "Ну и ладно!"
+    Max_00 "Fine!"
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:316
+    old "Спасибо, кэп!"
+    new "Thanks, Cap!"
+
+    # game/dialogues/alicetalk.rpy:316
+    old "Очень смешно..."
+    new "Very funny..."
+
+    # game/dialogues/alicetalk.rpy:316
+    old "Это понятно, а какую? Только не говори, что бумажную..."
+    new "I can see that, but what kind? And don't tell me a paper one..."
+
+    # game/dialogues/alicetalk.rpy:327
+    old "Не всё равно, раз спрашиваю"
+    new "Well since I'm asking, of course I care"
+
+    # game/dialogues/alicetalk.rpy:327
+    old "Так ты скажешь или нет?"
+    new "Will you tell me or not?"
+
+    # game/dialogues/alicetalk.rpy:333
+    old "Какой-то дамский роман?"
+    new "Some ladies' novel?"
+
+    # game/dialogues/alicetalk.rpy:333
+    old "Какие-то сопли с сахаром?"
+    new "Some stupid romance novel?"
+
+    # game/dialogues/alicetalk.rpy:333
+    old "Неужели справочник по квантовой механике?"
+    new "A book about Quantum mechanics?"
+
