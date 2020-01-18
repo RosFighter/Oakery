@@ -294,7 +294,7 @@ translate english Wearied_dca71115:
 translate english LittleEnergy_666a8086:
 
     # Max_10 "{i}Я слишком вымотался, нужно хоть немного вздремнуть...{/i}" nointeract
-    Max_10 "" nointeract
+    Max_10 "{i}I really need to take a nap...{/i}" nointeract
 
 # game/events/max.rpy:68
 translate english LittleEnergy_dca71115:
@@ -324,13 +324,13 @@ translate english Alarm_dca71115:
 translate english Shower_2c708671:
 
     # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
-    Max_19 "Being clean is much better." nointeract
+    Max_19 "It's better to be clean." nointeract
 
 translate english strings:
 
     # game/events/max.rpy:87
     old "{i}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/i}"
-    new ""
+    new "{i}I'm not really tired right now, but I'll take a nap so save my energy...{/i}"
 
     # game/events/max.rpy:89
     old "{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}"
