@@ -1296,7 +1296,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:419
     old "Так или иначе, о парнях я знаю больше тебя..."
-    new "In any case, I know about more about guys than you"
+    new "In any case, I know more about guys than you"
 
     # game/dialogues/lisatalk.rpy:433
     old "Я знаю как мыслят парни. Так что, могу помочь советом..."
