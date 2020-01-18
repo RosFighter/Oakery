@@ -241,7 +241,7 @@ translate english strings:
 
     # game/events/max.rpy:209
     old "{i}узнать о книге Алисы{/i}"
-    new "learn about Alice's book"
+    new "{i}learn about Alice's book{/i}"
 
     # game/events/max.rpy:256
     old "Оплатить всё ($100)"
@@ -282,7 +282,7 @@ translate english Sleep_dca71115:
 translate english Wearied_524d41b7:
 
     # Max_10 "{i}Моя голова уже совсем не соображает, нужно ложиться спать...{/i}" nointeract
-    Max_10 "My head isn't even thinking straight anymore, I have to go to bed..." nointeract
+    Max_10 "{i}My head isn't even thinking straight anymore, I have to go to bed...{/i}" nointeract
 
 # game/events/max.rpy:45
 translate english Wearied_dca71115:
@@ -334,7 +334,7 @@ translate english strings:
 
     # game/events/max.rpy:89
     old "{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}"
-    new "I'm exhausted today, I need a little nap..."
+    new "{i}I'm exhausted today, I need a little nap...{/i}"
 
 # TODO: Translation updated at 2020-01-17 23:03
 
