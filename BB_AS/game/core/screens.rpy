@@ -504,10 +504,10 @@ screen MySite:
             xmargin 0 ymargin 0 xpadding 0 ypadding 0
             button xysize(380, 144) xalign 0.0 background None action Show("SEO"):
                 imagebutton anchor (0.5, 0.5) xalign 0.5 yalign 0.5 idle "interface laptop seo" action Show("SEO") at book_marks
-                text _("{b}РЕКЛАМА{/b}") xanchor 0.5 xalign 0.5 ypos 100 color "#FFFFFF" drop_shadow[(2, 2)]
+                text _("{b}РЕКЛАМА{/b}") xanchor 0.5 xalign 0.5 yalign 0.98 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
             button xysize(380, 144) xalign 1.0 background None action Show("Withdraw"):
                 imagebutton anchor (0.5, 0.5) xalign 0.5 yalign 0.5 idle "interface laptop withdraw" action Show("Withdraw") at book_marks
-                text _("{b}ВЫВОД СРЕДСТВ{/b}") xanchor 0.5 xalign 0.5 ypos 100 color "#FFFFFF" drop_shadow[(2, 2)]
+                text _("{b}ВЫВОД СРЕДСТВ{/b}") xanchor 0.5 xalign 0.5 yalign 0.98 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
             if t_loc.value != "":
                 frame ysize 170 xpos 380 xsize 665 background None:
                     hbox xalign 0.5 spacing 50:

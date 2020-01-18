@@ -527,7 +527,7 @@ translate english strings:
     new "Here's an idea: I could earn some money by streaming the live feed from the hidden cam. Too bad I don't really know how to set everything up. Maybe I should look it up on the web?"
 
     # game/core/03variables.rpy:324
-    old "так, я внимательно прочитал книгу Web Standards и разобрался как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100."
+    old "Итак, я внимательно прочитал книгу Web Standards и разобрался как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100."
     new "Well, I've read WebStandards and figured out how to set up my website. I guess that should be my starting point. I'll need some money to acquire a domain, hosting and design template. $100 should do."
 
     # game/core/03variables.rpy:324
@@ -713,4 +713,3 @@ translate english strings:
     # game/core/03variables.rpy:374
     old "Насчёт этого случая утром..."
     new "About that time in the morning..."
-
