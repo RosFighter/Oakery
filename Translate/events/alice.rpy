@@ -300,9 +300,9 @@ translate english strings:
 
     # game/events/alice.rpy:10
     old "{i}заглянуть со двора{/i}"
-    new ""
+    new "{i}Peek from the yard{/i}"
 
     # game/events/alice.rpy:142
     old "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
-    new ""
+    new "{i}Continue watching\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
 

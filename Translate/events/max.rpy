@@ -29,7 +29,7 @@ translate english Box_05229898:
 translate english Box_1aed80a0:
 
     # Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность!\"{/i}{/color}" nointeract
-    Max_10 "Maybe it's already installed somewhere in the house and! I should check the rooms...\n\n{color=[lime]}{i}{b}Warning:{/b} New \"opportunity\" is unlocked!{/i}{/color}" nointeract
+    Max_10 "Maybe it's already installed somewhere in the house! I should check the rooms...\n\n{color=[lime]}{i}{b}Warning:{/b} New \"opportunity\" is unlocked!{/i}{/color}" nointeract
 
 # game/events/max.rpy:184
 translate english Notebook_2dd57a79:
@@ -41,43 +41,43 @@ translate english Notebook_2dd57a79:
 translate english nothing_search_8ac67f83:
 
     # Max_00 "Сейчас мне нечего искать..."
-    Max_00 ""
+    Max_00 "Nothing to find..."
 
 # game/events/max.rpy:237
 translate english buyfood_0de2cd95:
 
     # Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
-    Max_04 "So... Let's see the list of products... Yeah. Now will order everything..."
+    Max_04 "So... Let's see the list of products... Yeah. Let's order everything..."
 
 # game/events/max.rpy:238
 translate english buyfood_e01f4c0c:
 
     # Max_04 "Готово. Да это же самая лёгкая задача!"
-    Max_04 "Done. Yes this is the easiest task!"
+    Max_04 "Done. This is the easiest task!"
 
 # game/events/max.rpy:256
 translate english create_site_3744c5ee:
 
     # Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100" nointeract
-    Max_00 "So, it's time to do the website. First I need to buy a domain, hosting, design sample and pay for services of the streaming. It’s $100 at all." nointeract
+    Max_00 "So, it's time to do the website. First I need to buy a domain, hosting, design sample and pay for services of the streaming. It’s $100." nointeract
 
 # game/events/max.rpy:264
 translate english create_site_e36c401d:
 
     # Max_04 "Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом..." nointeract
-    Max_04 "Excellent! Now I have my own website and domain! It remains only to connect the data flow from the camera with streaming service..." nointeract
+    Max_04 "Excellent! Now I have my own website and domain! Just need to connect the data flow from the camera with the streaming service..." nointeract
 
 # game/events/max.rpy:270
 translate english create_site_4e1c08b2:
 
     # Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
-    Max_04 "Yes! Everything is working! Now people will be able to go to my website and watch the show. Of course, if they somehow find out my site... Well, I’ll think what I can do..."
+    Max_04 "Yes! Everything's working! Now people will be able to go to my website and watch the show. Of course, if they somehow find the site... Well, I’ll think about what I can do..."
 
 # game/events/max.rpy:298
 translate english about_cam_c0885969:
 
     # Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
-    Max_09 "So curious... These cameras can be configured so that they broadcast the image of the Internet!"
+    Max_09 "So curious... These cameras can be configured so that they broadcast the to the Internet!"
 
 # game/events/max.rpy:299
 translate english about_cam_3d3bce54:
@@ -89,7 +89,7 @@ translate english about_cam_3d3bce54:
 translate english about_cam_3fd48063:
 
     # Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
-    Max_09 "Maybe I should make my website and let people pay me for watching video? But I really do not know anything..."
+    Max_09 "Maybe I should make my website and let people pay me for live streaming?"
 
 # game/events/max.rpy:314
 translate english SearchCam_67b6130b:
@@ -101,13 +101,13 @@ translate english SearchCam_67b6130b:
 translate english SearchCam_140db024:
 
     # Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
-    Max_09 "It's not connected to anything. Maybe dad used it to keep an eye on the construction of the house...?"
+    Max_09 "It's not connected to anything. Maybe dad used it to keep an eye on the house during construction?"
 
 # game/events/max.rpy:316
 translate english SearchCam_9487a2c0:
 
     # Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
-    Max_04 "If I can connect to this cam, I think I'll be able to keep and eye on this room. Now I just need to figure out how to link to it"
+    Max_04 "If I can connect to this cam, I think I'll be able to keep and eye on this room. Now I just need to figure out how to link it"
 
 # game/events/max.rpy:323
 translate english SearchCam_c5169ba0:
@@ -119,7 +119,7 @@ translate english SearchCam_c5169ba0:
 translate english ClearPool_f0dc1508:
 
     # Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    Max_11 "It is not an easy work, but I need the money. Besides, mom already paid me for the job"
+    Max_11 "It's not easy work, but I need the money. Besides, mom already paid me to do it"
 
 # game/events/max.rpy:350
 translate english DishesWashed_cedc9161:
@@ -131,7 +131,7 @@ translate english DishesWashed_cedc9161:
 translate english delivery_601bbd32:
 
     # "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
-    "Hi there! I have an order for this address. May I ask you to sign here?"
+    "Hi there! I have a delivery for this address. May I ask you to sign here?"
 
 # game/events/max.rpy:379
 translate english delivery_509c6af4:
@@ -155,7 +155,7 @@ translate english BookRead_9562ffab:
 translate english BookRead_manual_41be558e:
 
     # Max_00 "Хм... куча непонятных слов. Кажется, нужно будет заново перечитать первые главы...\n\n{color=[orange]}{i}(Книга изучена на 20%%){/i}{/color}"
-    Max_00 "Hmm... bunch of gibberish. Looks like I need to reread first chapters again...\n\n{i}{color=[orange]}(The book is 20%% done){/color}{/i}"
+    Max_00 "Hmm... bunch of gibberish. Looks like I need to reread the first chapters again...\n\n{i}{color=[orange]}(The book is 20%% done){/color}{/i}"
 
 # game/events/max.rpy:401
 translate english BookRead_manual_0826f3fe:
@@ -179,7 +179,7 @@ translate english BookRead_manual_1c08c83d:
 translate english BookRead_manual_bd8ad388:
 
     # Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
-    Max_00 "Now everything is clear! I can make my website and broadcast the video! But how to get paid for it?"
+    Max_00 "Now everything is clear! I can make my website and broadcast the video! But how do I get paid for it?"
 
 translate english strings:
 
@@ -189,7 +189,7 @@ translate english strings:
 
     # game/events/max.rpy:61
     old "{i}вздремнуть{/i}"
-    new ""
+    new "{i}take a nap{/i}"
 
     # game/events/max.rpy:87
     old "{i}Я сейчас не очень хочу спать, но если я хочу сохранить силы...{/i}"
@@ -241,7 +241,7 @@ translate english strings:
 
     # game/events/max.rpy:209
     old "{i}узнать о книге Алисы{/i}"
-    new "learn about the Alice's book"
+    new "learn about Alice's book"
 
     # game/events/max.rpy:256
     old "Оплатить всё ($100)"
@@ -253,7 +253,7 @@ translate english strings:
 
     # game/events/max.rpy:302
     old "В интернет-магазине доступен новый товар."
-    new ""
+    new "A new product is available at the online store."
 
     # game/events/max.rpy:391
     old "{i}читать \"WEB STANDARDS\"{/i}"
@@ -265,31 +265,30 @@ translate english strings:
 translate english StartDialog_069fda26:
 
     # Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
-    Max_10 ""
-
+    Max_10 "I feel too tired to concentrate. It'd be nice to take a nap first..."
 # game/events/max.rpy:24
 translate english Sleep_679fe800:
 
     # Max_00 "{i}Пожалуй, пора ложиться спать...{/i}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{i}I think it's time for bed...{/i}" nointeract
 
 # game/events/max.rpy:27
 translate english Sleep_dca71115:
 
     # Max_19 "Как же в этом доме хорошо..."
-    Max_19 ""
+    Max_19 "It's so nice in this house..."
 
 # game/events/max.rpy:42
 translate english Wearied_524d41b7:
 
     # Max_10 "{i}Моя голова уже совсем не соображает, нужно ложиться спать...{/i}" nointeract
-    Max_10 "" nointeract
+    Max_10 "My head isn't even thinking straight anymore, I have to go to bed..." nointeract
 
 # game/events/max.rpy:45
 translate english Wearied_dca71115:
 
     # Max_19 "Как же в этом доме хорошо..."
-    Max_19 ""
+    Max_19 "It's so nice in this house..."
 
 # game/events/max.rpy:61
 translate english LittleEnergy_666a8086:
@@ -301,31 +300,31 @@ translate english LittleEnergy_666a8086:
 translate english LittleEnergy_dca71115:
 
     # Max_19 "Как же в этом доме хорошо..."
-    Max_19 ""
+    Max_19 "It's so nice in this house..."
 
 # game/events/max.rpy:105
 translate english Nap_dca71115:
 
     # Max_19 "Как же в этом доме хорошо..."
-    Max_19 ""
+    Max_19 "It's so nice in this house..."
 
 # game/events/max.rpy:113
 translate english Alarm_67a81b77:
 
     # Max_00 "{i}В каком часу мне будет лучше проснуться?{/i}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{i}What time should I wake up?{/i}" nointeract
 
 # game/events/max.rpy:124
 translate english Alarm_dca71115:
 
     # Max_19 "Как же в этом доме хорошо..."
-    Max_19 ""
+    Max_19 "It's so nice in this house..."
 
 # game/events/max.rpy:139
 translate english Shower_2c708671:
 
     # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
-    Max_19 "" nointeract
+    Max_19 "Being clean is much better." nointeract
 
 translate english strings:
 
@@ -335,7 +334,7 @@ translate english strings:
 
     # game/events/max.rpy:89
     old "{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}"
-    new ""
+    new "I'm exhausted today, I need a little nap..."
 
 # TODO: Translation updated at 2020-01-17 23:03
 
@@ -349,7 +348,7 @@ translate english SearchSecretBook_390d326c:
 translate english SearchSecretBook_pillow_fdc18f7e:
 
     # Max_14 "Нет, здесь её нет... Ну где же эта чёртова книга? Шаги? Нет, показалось..." nointeract
-    Max_14 "Not here... Where is this damn book? Did I heard some steps? No, I think I imagined it..." nointeract
+    Max_14 "Not here... Where is this damn book? Am I hearing footsteps? No, I think I imagined it..." nointeract
 
 # game/events/max.rpy:447
 translate english SearchSecretBook_bed_893f346c:
@@ -367,19 +366,19 @@ translate english SearchSecretBook_table_f75e7ca0:
 translate english SearchSecretBook_wardrobe_ef3ccc0f:
 
     # Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
-    Max_04 "There it is! Why did she had to hide it? Interesting cover. I wonder what this book is about? I'll memorize the name and look it up on the web"
+    Max_04 "There it is! Why did she have to hide it? Interesting cover. I wonder what this book is about? I'll memorize the name and look it up on the web"
 
 # game/events/max.rpy:485
 translate english about_secretbook_605b0407:
 
     # Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?" nointeract
-    Max_00 "So... Now let's google. How is it called? \"Sugar Daddies\"?... A Love Story? And what may it contain?" nointeract
+    Max_00 "So... Now let's google. What is it called? \"Sugar Daddies\"?... A Love Story? And what may it contain?" nointeract
 
 # game/events/max.rpy:488
 translate english about_secretbook_279d4103:
 
     # Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
-    Max_06 "Wow, it's not a simple love story. It's erotica, I'll say! Now it's clear why Alice didn't want to tell what she was reading..."
+    Max_06 "Wow, it's not a simple love story. It's erotica! Now it's clear why Alice didn't want to share what she was reading..."
 
 translate english strings:
 
@@ -401,7 +400,7 @@ translate english strings:
 
     # game/events/max.rpy:419
     old "{i}прекратить поиски{/i}"
-    new "{i}stop finding{/i}"
+    new "{i}stop searching{/i}"
 
     # game/events/max.rpy:485
     old "{i}читать о книге{/i}"
