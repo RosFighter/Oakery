@@ -1,10 +1,10 @@
 ﻿# TODO: Translation updated at 2020-01-12 21:49
 
 # game/events/max.rpy:91
-translate english Nap_b758b7ac:
+translate english Nap_89de1ee6:
 
-    # Max_19 "[txt!t]" nointeract
-    Max_19 "[txt!t]" nointeract
+    # Max_00 "[txt!t]" nointeract
+    Max_00 "[txt!t]" nointeract
 
 
 # game/events/max.rpy:152
@@ -405,4 +405,3 @@ translate english strings:
     # game/events/max.rpy:485
     old "{i}читать о книге{/i}"
     new "{i}read about the book{/i}"
-

@@ -248,3 +248,123 @@ translate english Ann_normalmood_085fa1a6:
     # Ann_18 "Макс, не сейчас, хорошо?" nointeract
     Ann_18 "Max, not now, okay?" nointeract
 
+# TODO: Translation updated at 2020-01-18 20:42
+
+# game/dialogues/anntalk.rpy:199
+translate english Ann_MorningWood_bb881ec2:
+
+    # Ann_01 "Макс, не переживай ты так. Я всё прекрасно понимаю, у мальчиков это бывает..."
+    Ann_01 "Don't worry, Max, I understand. It's normal for guys..."
+
+# game/dialogues/anntalk.rpy:200
+translate english Ann_MorningWood_ab75b971:
+
+    # Max_04 "Я рад, что ты понимаешь"
+    Max_04 "I'm glad you understand"
+
+# game/dialogues/anntalk.rpy:201
+translate english Ann_MorningWood_75ea92a8:
+
+    # Ann_14 "Но Макс. Лиза ещё маленькая и постарайся, чтобы она не видела твой... тебя. В общем, ты меня понял, да?" nointeract
+    Ann_14 "But still, Max, try not to show your... yourself to Lisa." nointeract
+
+# game/dialogues/anntalk.rpy:204
+translate english Ann_MorningWood_4d3a269f:
+
+    # Ann_04 "Что такого? Да то, что девочка не должна видеть здоровенный член своего брата, когда просыпается утром!" nointeract
+    Ann_04 "Because she's not supposed to see her brother's huge cock every morning!" nointeract
+
+# game/dialogues/anntalk.rpy:207
+translate english Ann_MorningWood_31985b42:
+
+    # Ann_07 "Извини, что-то меня занесло. Просто, даже я в шоке была, когда увидела, а что уж говорить про Лизу..." nointeract
+    Ann_07 "I'm sorry, I said too much. Even I was shocked when I saw you, I can't imagine what Lisa was thinking about..." nointeract
+
+# game/dialogues/anntalk.rpy:210
+translate english Ann_MorningWood_20707248:
+
+    # Ann_12 "Макс! Я конечно рада, что ты у меня уже такой... большой... Но вообще, я всё сказала. Постарайся ей не показываться в таком виде, ладно?"
+    Ann_12 "Max! Of course, I'm glad you're so... big, but... But that's enough of that. Try not to show yourself to your sister like that in the future, okay?"
+
+# game/dialogues/anntalk.rpy:211
+translate english Ann_MorningWood_f3fba9dc:
+
+    # Max_00 "Ладно, мам..."
+    Max_00 "Okay, mom..."
+
+# game/dialogues/anntalk.rpy:215
+translate english Ann_MorningWood_0bac3ba4:
+
+    # Ann_12 "Ну, взрослую женщину это даже притягивает, но девочке явно рано на такое смотреть, ты меня понял?" nointeract
+    Ann_12 "Well, women actually like it, but your sister shouldn't see stuff like this, do you understand?" nointeract
+
+# game/dialogues/anntalk.rpy:218
+translate english Ann_MorningWood_845bcbb0:
+
+    # Ann_05 "Ну, Макс! Я же не это имела в виду... В общем, этот разговор окончен. Постарайся не травмировать психику Лизы, хорошо?"
+    Ann_05 "That's not what I meant, Max... Okay, that's enough of this conversation. Try not to traumatize Lisa, okay?"
+
+# game/dialogues/anntalk.rpy:219
+translate english Ann_MorningWood_26bf3db9:
+
+    # Max_01 "Хорошо, мам..."
+    Max_01 "Okay, mom..."
+
+# game/dialogues/anntalk.rpy:223
+translate english Ann_MorningWood_fe9ff73d:
+
+    # Ann_05 "Вот и молодец. А если такое повторится, просто прикройся, как будто ничего нет..."
+    Ann_05 "Good. Next time try to cover yourself..."
+
+# game/dialogues/anntalk.rpy:224
+translate english Ann_MorningWood_9fbd015d:
+
+    # Max_03 "Ну, ты же знаешь, что мне с моим размером это трудно сделать..."
+    Max_03 "You know, it's not that easy with my size..."
+
+# game/dialogues/anntalk.rpy:225
+translate english Ann_MorningWood_6ea36867:
+
+    # Ann_12 "Да, понимаю, конечно... Но беседа ушла куда-то не туда. В общем, постарайся не травмировать её психику, хорошо?"
+    Ann_12 "Yeah, I guess... This conversation is going in some weird direction. Anyway, just try not to traumatize your sister, okay?"
+
+# game/dialogues/anntalk.rpy:226
+translate english Ann_MorningWood_d66e2468:
+
+    # Max_00 "Хорошо, мам..."
+    Max_00 "Okay, mom..."
+
+translate english strings:
+
+    # game/dialogues/anntalk.rpy:201
+    old "А что такого?"
+    new "Why?"
+
+    # game/dialogues/anntalk.rpy:201
+    old "Хорошо, постараюсь..."
+    new "I'll try..."
+
+    # game/dialogues/anntalk.rpy:204
+    old "Ого, мам..."
+    new "Wow, mom..."
+
+    # game/dialogues/anntalk.rpy:204
+    old "Разве это должно пугать?"
+    new "Why, do you think it will scare her?"
+
+    # game/dialogues/anntalk.rpy:207
+    old "Значит, тебе понравилось?"
+    new "So, you liked what you saw?"
+
+    # game/dialogues/anntalk.rpy:207
+    old "Ладно, я всё понял..."
+    new "Okay, I understand..."
+
+    # game/dialogues/anntalk.rpy:215
+    old "Взрослую женщину притягивает?"
+    new "Does this means you like it too?"
+
+    # game/dialogues/anntalk.rpy:215
+    old "Да, я всё понял!"
+    new "Yes, I understand!"
+
