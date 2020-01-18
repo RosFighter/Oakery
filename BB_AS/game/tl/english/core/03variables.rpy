@@ -702,3 +702,15 @@ translate english strings:
     old "Что читаешь?"
     new "What are you reading?"
 
+# TODO: Translation updated at 2020-01-18 18:54
+
+translate english strings:
+
+    # game/core/03variables.rpy:374
+    old "Насчёт случая с Лизой..."
+    new "About that time with Lisa..."
+
+    # game/core/03variables.rpy:374
+    old "Насчёт этого случая утром..."
+    new "About that time in the morning..."
+

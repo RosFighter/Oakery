@@ -338,7 +338,7 @@ label alice_aboutbooks:
             pass
         "Неужели справочник по квантовой механике?":
             pass
-    Alice_01 "Думай, что хочешь, а я всё равно не скажу. \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
+    Alice_01 "Думай, что хочешь, а я всё равно не скажу. \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
     Max_00 "Ну и ладно!"
     $ spent_time += 10
     $ possibility["secretbook"].stage_number = 0
