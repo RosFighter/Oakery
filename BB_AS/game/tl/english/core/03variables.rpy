@@ -535,7 +535,7 @@ translate english strings:
     new "Finally, I have my own streaming website! Now I need to increase my audience to earn more money. And for that I need to advertise my website somewhere. My audience should grow when something exciting happens on stream."
 
     # game/core/03variables.rpy:324
-    old "{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной «возможности» в текущей версии игры.{/i}"
+    old "{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
     new "{i}{b}Attention:{/b} You've reached the end of this opportunity in the current version of the game.{/i}"
 
     # game/core/03variables.rpy:324
@@ -643,7 +643,7 @@ translate english strings:
     new "I got enough money to buy Lisa the swimsuit she wanted. I think she really appreciates it. And Eric can shove it."
 
     # game/core/03variables.rpy:324
-    old "{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной «возможности» в текущей версии игры. Продолжение следует...{/i}"
+    old "{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры. Продолжение следует...{/i}"
     new "{i}{b}Attention:{/b} You've reached the end of this opportunity in the current version of the game. {/i}"
 
     # game/core/03variables.rpy:324

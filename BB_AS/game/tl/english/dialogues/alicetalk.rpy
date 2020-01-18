@@ -645,10 +645,10 @@ translate english alice_aboutbooks_af00f0d1:
     Alice_00 "I won't tell. I guess you'll have to live with uncertainty! \n\n{i}Alice has covered the book title{/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:341
-translate english alice_aboutbooks_fc80ccce:
+translate english alice_aboutbooks_7695d351:
 
-    # Alice_01 "Думай, что хочешь, а я всё равно не скажу. \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
-    Alice_01 "Think what you want, I won't tell.  \n\n{color=[lime]}{i}{b}Attention:{/b} A new "opportunity" was found!{/i}{/color}"
+    # Alice_01 "Думай, что хочешь, а я всё равно не скажу. \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
+    Alice_01 "Think what you want, I won't tell.  \n\n{color=[lime]}{i}{b}Attention:{/b} A new \"opportunity\" was found!{/i}{/color}"
 
 # game/dialogues/alicetalk.rpy:342
 translate english alice_aboutbooks_2df2b69d:

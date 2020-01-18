@@ -368,29 +368,29 @@ translate english strings:
 translate english ann_shower_start_peeping_f0132630:
 
     # Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама... Надеюсь, она меня не заметит..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Wow! I'm lucky to have such a hot mom... I hope she doesn't notice me..." nointeract
 
 # game/events/ann.rpy:94
 translate english ann_shower_closer_peepeng_a38e0857:
 
     # Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-    Max_03 ""
+    Max_03 "color=[lime]}{i}You went unnoticed!{/i}{/color} \nAmazing! It's not every day you get a chance to admire this beauty! Her big soft breasts and her slender figure are just a glimpse..."
 
 # game/events/ann.rpy:96
 translate english ann_shower_closer_peepeng_f42aed74:
 
     # Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
-    Max_05 ""
+    Max_05 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWhat a show! Such a plump ass anyone could admire..."
 
 # game/events/ann.rpy:106
 translate english ann_shower_closer_peepeng_4a76a42b:
 
     # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
-    Max_12 ""
+    Max_12 "{color=[orange]}{i}I think Mom's suspicious!{/i}{/color}\nOops...gotta run before she sees me!"
 
 # game/events/ann.rpy:116
 translate english ann_shower_closer_peepeng_61241e3e:
 
     # Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..." nointeract
-    Ann_16 "" nointeract
+    Ann_16 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax!!! Are you peeping? You should be ashamed of yourself! Turn around now!!! We're going to have a serious conversation..." nointeract
 

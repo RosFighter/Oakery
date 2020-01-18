@@ -52,31 +52,31 @@ translate english lisa_shower_d84f6a90:
 translate english lisa_shower_start_peeping_f30ef1eb:
 
     # Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Perfect! My little sister's taking a shower... it's a nice view, as long as she doesn't see me..." nointeract
 
 # game/events/lisa.rpy:96
 translate english lisa_shower_closer_peepeng_f78f567c:
 
     # Max_02 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nЛиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 ""
+    Max_02 "{color=[lime]}{i}You went unnoticed!{/i}{/color}\nLisa's so wet! Her figure and tight body are so hot... I'd love to run my hands all over it..."
 
 # game/events/lisa.rpy:98
 translate english lisa_shower_closer_peepeng_2b0a31f5:
 
     # Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nО, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-    Max_03 ""
+    Max_03 "{color=[lime]}{i}You went unnoticed!{/i}{/color}\nOh, yeah! The water is rinsing her cute ass, I have to keep my eyes on it..."
 
 # game/events/lisa.rpy:108
 translate english lisa_shower_closer_peepeng_e8e13c34:
 
     # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
-    Max_12 ""
+    Max_12 "{color=[orange]}{i}I think Lisa got suspicious!{/i}{/color}\nOh, no! Looks like she noticed me... time to run!"
 
 # game/events/lisa.rpy:117
 translate english lisa_shower_closer_peepeng_164e38fb:
 
     # Lisa_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax! I can't believe you're peeping! I'm telling mom about this!" nointeract
 
 # game/events/lisa.rpy:151
 translate english lisa_dressed_school_lisa_dressed_7332887d:
@@ -100,7 +100,7 @@ translate english lisa_dressed_school_come_in_e44012a5:
 translate english lisa_dressed_school_come_in_d468ca42:
 
     # Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
-    Lisa_12 "I knew you should've taken a couch in the living room... Okay, I'm dressed, come in... I'm going to school"
+    Lisa_12 "I knew you should've taken the couch in the living room... Okay, I'm dressed, come in... I'm going to school"
 
 # game/events/lisa.rpy:214
 translate english lisa_dressed_school_come_in_5991dbe6:

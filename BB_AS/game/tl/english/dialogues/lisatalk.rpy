@@ -126,10 +126,10 @@ translate english MorningWood_a468566c:
     # Lisa_10 "А что с другой? Я хочу всё знать!"
     Lisa_10 "What do you mean? I want to know this stuff!"
 
-# game/dialogues/lisatalk.rpy:82
-translate english MorningWood_2479165e:
+# game/dialogues/lisatalk.rpy:124
+translate english MorningWood_8d820151:
 
-    # Ann_09 "Нет, Лиза, тебе ещё рано таким интересоваться. Вот подрастёшь, тогда и поговорим. На этом всё. Сделаем вид, что ничего не было. Ясно? \n\n {color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}" nointeract
+    # Ann_09 "Нет, Лиза, тебе ещё рано таким интересоваться. Вот подрастёшь, тогда и поговорим. На этом всё. Сделаем вид, что ничего не было. Ясно? \n\n {color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}" nointeract
     Ann_09 "No, Lisa, you're too young to know this stuff. We'll talk about it when you're more mature. We're going to forget about this for now, but just know that Max didn't mean you any harm.\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}" nointeract
 
 # game/dialogues/lisatalk.rpy:99
@@ -702,11 +702,11 @@ translate english talk_swim_f9fb2825:
     # Lisa_10 "Как... так?" nointeract
     Lisa_10 "Like what?" nointeract
 
-# game/dialogues/lisatalk.rpy:471
-translate english talk_swim_ea915467:
+# game/dialogues/lisatalk.rpy:513
+translate english talk_swim_8fbbeb0c:
 
-    # Lisa_09 "Ну, у меня другого и нет. Ты же знаешь, что наши вещи пропали. Вот там и все мои купальники были...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}" nointeract
-    Lisa_09 "I don't have another one. You know all our stuff got lost when we moved. I'm stuck with this one...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}" nointeract
+    # Lisa_09 "Ну, у меня другого и нет. Ты же знаешь, что наши вещи пропали. Вот там и все мои купальники были...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}" nointeract
+    Lisa_09 "I don't have another one. You know all our stuff got lost when we moved. I'm stuck with this one...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new \"opportunity\"!{/i}{/color}" nointeract
 
 # game/dialogues/lisatalk.rpy:474
 translate english talk_swim_9fb489a2:
@@ -1296,7 +1296,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:419
     old "Так или иначе, о парнях я знаю больше тебя..."
-    new "In any case, I know about more about guys than you"
+    new "In any case, I know more about guys than you"
 
     # game/dialogues/lisatalk.rpy:433
     old "Я знаю как мыслят парни. Так что, могу помочь советом..."
@@ -1612,7 +1612,7 @@ translate english about_boy2_a42d3e89:
 translate english about_boy2_42191ec0:
 
     # Lisa_01 "Макс, ты такой сегодня... Спасибо за комплимент, но все мальчики без ума от подружки Алекса..."
-    Lisa_01 "Wow, Max... Thanks for a compliment, but all boys in school are chasing Alex's girlfriend."
+    Lisa_01 "Wow, Max... Thanks for a compliment, but all the boys in school are chasing Alex's girlfriend."
 
 # game/dialogues/lisatalk.rpy:722
 translate english about_boy2_c4c8b523:
@@ -1648,13 +1648,13 @@ translate english about_boy2_4b907f20:
 translate english about_boy2_e6fd774e:
 
     # Lisa_02 "Почему странно? Думаешь, мальчикам нравятся только всякие оторвы? Таких полный класс. Именно этим она и выделяется, что не похожа на других"
-    Lisa_02 "Why? Do you think boys only like wild chicks? We have a full class of those. Olivia is different."
+    Lisa_02 "Why? Do you think boys only like wild girls? We have a full class of those. Olivia is different."
 
 # game/dialogues/lisatalk.rpy:734
 translate english about_boy2_3b1edd54:
 
     # Lisa_00 "Ну, она такая хорошая, тихая, скромная. И очень симпатичная..." nointeract
-    Lisa_00 "Well, we didn't really talked about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
+    Lisa_00 "Well, we didn't really talk about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
 
 # game/dialogues/lisatalk.rpy:737
 translate english about_boy2_4b907f20_1:
@@ -1666,7 +1666,7 @@ translate english about_boy2_4b907f20_1:
 translate english about_boy2_e6fd774e_1:
 
     # Lisa_02 "Почему странно? Думаешь, мальчикам нравятся только всякие оторвы? Таких полный класс. Именно этим она и выделяется, что не похожа на других"
-    Lisa_02 "Why? Do you think boys only like wild chicks? We have a full class of those. Olivia is different."
+    Lisa_02 "Why? Do you think boys only like wild girls? We have a full class of those. Olivia is different."
 
 # game/dialogues/lisatalk.rpy:740
 translate english about_boy2_f47e0d84:
@@ -1678,7 +1678,7 @@ translate english about_boy2_f47e0d84:
 translate english about_boy2_7c6f37bc:
 
     # Lisa_00 "А мне вот не понятно что теперь делать... Кажется, у меня нет никаких шансов..."
-    Lisa_00 "I don't know what to do now. I don't think I have any chances..."
+    Lisa_00 "I don't know what to do now. I don't think I have any chance..."
 
 # game/dialogues/lisatalk.rpy:742
 translate english about_boy2_ab642acd:
@@ -1690,18 +1690,18 @@ translate english about_boy2_ab642acd:
 translate english about_boy2_db09ffe0:
 
     # Lisa_02 "Ну мы не очень много общались, но она ему нравится, это точно. Хотя, я ему тоже нравлюсь, похоже... Чуть-чуть..." nointeract
-    Lisa_02 "Well, we didn't really talked about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
+    Lisa_02 "Well, we didn't really talk about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
 
-# game/dialogues/lisatalk.rpy:746
-translate english about_boy2_44a7f959:
+# game/dialogues/lisatalk.rpy:747
+translate english about_boy2_6487164f:
 
-    # Lisa_00 "Ну да, не всё. Но около того. Я даже не представляю что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
+    # Lisa_00 "Ну да, не всё. Но около того. Я даже не представляю что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
     Lisa_00 "I guess. I have no idea what to do. I like him so much...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
 
-# game/dialogues/lisatalk.rpy:748
-translate english about_boy2_d1bcd31a:
+# game/dialogues/lisatalk.rpy:749
+translate english about_boy2_ebee2ae0:
 
-    # Lisa_00 "Шанс? Один из миллиона, может быть... Я не знаю как и что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая «возможность»!{/i}{/color}"
+    # Lisa_00 "Шанс? Один из миллиона, может быть... Я не знаю как и что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
     Lisa_00 "My chances don't look too good. I have no idea what to do. I like him so much...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
 
 # game/dialogues/lisatalk.rpy:749
