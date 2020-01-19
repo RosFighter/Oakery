@@ -277,13 +277,13 @@ label ann_read:
 
 label ann_swim:
 
-    scene image "Ann swim "+pose3_3+characters["ann"].dress
+    scene image "Ann swim "+pose3_3+"a"
     return
 
 
 label ann_sun:
     scene BG char Ann sun
-    $ renpy.show("Ann sun "+pose3_3)
+    $ renpy.show("Ann sun "+pose3_3+"a")
     return
 
 

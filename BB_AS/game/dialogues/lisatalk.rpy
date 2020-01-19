@@ -136,7 +136,7 @@ label MorningWood:
 
 label AfterSchoolFD:
     $ current_room = house[6]
-    scene BG char Lisa incoming-00
+    scene BG incoming-00
     show Lisa incoming-01
     Lisa_01 "Привет, Макс! Я вернулась."
     Max_03 "Супер! Как первый день?"

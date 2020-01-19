@@ -272,6 +272,7 @@ label create_site:
     $ possibility["cams"].stage_number = 4
     $ possibility["cams"].stages[4].used = True
     $ money -= 100
+    $ items["hide_cam"].InShop = True
     $ house[4].cams.append(HideCam())
     $ house[4].cams[0].grow = 100
 
@@ -405,6 +406,7 @@ label BookRead:
             Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
             $ possibility["cams"].stage_number = 3
             $ possibility["cams"].stages[3].used = True
+            $ items["manual"].InShop = False
             jump .end
 
     label .end:

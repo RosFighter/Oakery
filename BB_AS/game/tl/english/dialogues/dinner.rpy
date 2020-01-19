@@ -604,3 +604,171 @@ translate english strings:
     old "Да они же безобидные, наверное..."
     new "They are probably harmless..."
 
+# TODO: Translation updated at 2020-01-19 15:20
+
+# game/dialogues/dinner.rpy:236
+translate english dinner_3_161450c7:
+
+    # Ann_00 "Всем приятного аппетита. Предлагаю поужинать. Есть у кого-то какие-то новости?"
+    Ann_00 "Bon appetit, everyone. Let's eat. Does anyone has any news?"
+
+# game/dialogues/dinner.rpy:237
+translate english dinner_3_889c8278:
+
+    # Max_04 "У нас всё как всегда. У тебя какие новости?"
+    Max_04 "No, I don't think we do. How about you?"
+
+# game/dialogues/dinner.rpy:238
+translate english dinner_3_1f4a6464:
+
+    # Ann_05 "Ой, у меня всё замечательно. Сегодня Эрик намекнул, что хочет меня перевести из моего отдела в свои личные ассистенты, представляете?" nointeract
+    Ann_05 "Everything is great! Today Eric has hinted he may give me a new job and I'll be his personal assistant, can you imagine?" nointeract
+
+# game/dialogues/dinner.rpy:241
+translate english dinner_3_42737a5d:
+
+    # Alice_13 "Макс, ну вот опять ты в своём репертуаре! Порадуйся за маму. Кроме того, наверняка, это ещё и прибавка к зарплате! Да, мам?"
+    Alice_13 "Are you starting again, Max? Be happy for mom. By the way, mom, you'll probably get some salary bump, right?"
+
+# game/dialogues/dinner.rpy:244
+translate english dinner_3_c6838fa0:
+
+    # Alice_07 "Ух-ты! Это же здорово! Наверняка, тебе и зарплату повысят и теперь не придётся беспокоиться о доме. Да, мам?"
+    Alice_07 "Wow, this is great news! They'll but your salary and we won't have to worry about losing the house anymore, right?"
+
+# game/dialogues/dinner.rpy:245
+translate english dinner_3_7dfd9a93:
+
+    # Ann_05 "Всё правильно, Алиса! У меня зарплата теперь будет даже больше, чем у текущего начальника. Того, лысого, о котором говорила..."
+    Ann_05 "That's right, Alice! My salary will be even bigger than the salary of my current boss. You know, the bald one I was talking about..."
+
+# game/dialogues/dinner.rpy:246
+translate english dinner_3_e0f5fba8:
+
+    # Max_00 "И что будет входить в твои обязанности?"
+    Max_00 "And what you'll have to do on your new job?"
+
+# game/dialogues/dinner.rpy:247
+translate english dinner_3_e6123907:
+
+    # Ann_14 "Ну, я пока точно не знаю. Видимо, помогать с бумагами, может быть что-то ещё. Как дело дойдёт до повышения, я ознакомлюсь с должностными обязанностями, конечно..." nointeract
+    Ann_14 "I'm not sure yet. I guess I'll be helping with the paperwork or something. I'll get to know everything once I'll actually get a promotion." nointeract
+
+# game/dialogues/dinner.rpy:253
+translate english dinner_3_f1444a70:
+
+    # Ann_01 "Макс. Все подчинённые зависят от своего руководства, так или иначе. Это вполне нормально. Но на этой должности я буду ближе к самой верхушке и смогу многому научиться..."
+    Ann_01 "I'll always depend on my bosses, that's just how jobs work, Max. But on this new one I'll be closer to the top and I'll be able to learn a lot."
+
+# game/dialogues/dinner.rpy:254
+translate english dinner_3_b99d3250:
+
+    # Max_09 "Ну да, в этом что-то есть..."
+    Max_09 "Yeah, I guess you're right..."
+
+# game/dialogues/dinner.rpy:255
+translate english dinner_3_20792312:
+
+    # Ann_00 "Спасибо, Макс, что ты меня понимаешь. Давайте сменим тему. Лиза, как у тебя в школе дела, как там твой Алекс поживает?"
+    Ann_00 "Thanks for understanding, Max. But let's change the subject. How is your school, Lisa? How is your Alex?"
+
+# game/dialogues/dinner.rpy:258
+translate english dinner_3_f3630b15:
+
+    # Lisa_00 "Он не мой. А вообще, всё хорошо. Спасибо, что спросили, но рассказывать нечего..." nointeract
+    Lisa_00 "He's not mine. Everything's great. Thanks for asking, but I don't have anything to tell, really." nointeract
+
+# game/dialogues/dinner.rpy:262
+translate english dinner_3_099d7225:
+
+    # Lisa_12 "Макс! Завязывай. Давайте сменим тему. Значит, завтра шоппинг... Мам! Я вспомнила. Мне нужен купальник. В этом просто невозможно загорать, а других у меня нет!"
+    Lisa_12 "Stop it, Max! Let's change the subject. Tomorrow is shopping... I just remembered, mom! I need a swimsuit. I can't tan in my current one, and I only have one!"
+
+# game/dialogues/dinner.rpy:265
+translate english dinner_3_c1829598:
+
+    # Lisa_02 "Спасибо, Макс. Давайте сменим тему. Значит, завтра шоппинг... Мам! Я вспомнила. Мне нужен купальник. В этом просто невозможно загорать, а других у меня нет!"
+    Lisa_02 "Thanks, Max. Let's change the subject. Tomorrow is shopping... I just remembered, mom! I need a swimsuit. I can't tan in my current one, and I only have one!"
+
+# game/dialogues/dinner.rpy:266
+translate english dinner_3_9f799f74:
+
+    # Ann_01 "Ну вот, и тебе что-то нужно. Да, это повышение точно будет полезно для всех нас. Ну раз нужен купальник, то посмотрим. Обещать ничего не буду, но..."
+    Ann_01 "Oh, so you need something too. Yeah, this promotion is definitely help us. We'll see. I can't promise anything, but..."
+
+# game/dialogues/dinner.rpy:267
+translate english dinner_3_d9390707:
+
+    # Alice_13 "Ага, Лизе купальник посмотрим, а мне платье для клуба, значит, нет? Я бы сегодня уже пошла, а так придётся ждать следующей пятницы... И то если купим..."
+    Alice_13 "So, we'll see about Lisa's swimsuit but not about a dress for me? I could go to the club today, but now I'll have to wait for next Friday, and that's if we'll buy one..."
+
+# game/dialogues/dinner.rpy:268
+translate english dinner_3_80ab1f2a:
+
+    # Ann_00 "Алиса, я тебе уже говорила, что идея с коротким платьем для клубов мне не нравится. Но если будут деньги и попадётся приличное, то, возможно, купим..."
+    Ann_00 "I told you already, Alice, I don't like the idea of you partying in a short dress. But if we'll have the money and we'll find a decent dress, then maybe we'll buy you one..."
+
+# game/dialogues/dinner.rpy:269
+translate english dinner_3_04366ce1:
+
+    # Alice_00 "Хорошо, мам. Но я на тебя надеюсь. Я просто сойду с ума, если никуда не буду выбираться, даже из такого... дома. Мне нужны друзья и подруги, а они любят клубы..." nointeract
+    Alice_00 "Okay, mom, I'm relying on you. I'll lose my mind if I don't get to let some steam off..." nointeract
+
+# game/dialogues/dinner.rpy:275
+translate english dinner_3_0088d1fd:
+
+    # Alice_02 "Очень смешно, Макс! Во-первых, тебя не пустят. Ростом не вышел. А во-вторых, с тобой я не пойду. Просто потому, что в клубы с братьями не ходят!"
+    Alice_02 "Very funny, Max! First of all, no one will even let you in, you're too short. And second, I'm not going anywhere with you. No one goes clubbing with their brothers!"
+
+# game/dialogues/dinner.rpy:276
+translate english dinner_3_fd25125a:
+
+    # Max_11 "Ну и ладно!"
+    Max_11 "Fine then!"
+
+# game/dialogues/dinner.rpy:277
+translate english dinner_3_72b85541:
+
+    # Ann_01 "Вижу, вы уже нашли общий язык? Ладно. Думаю, ужин закончен. Всем спасибо. Лиза, как всегда, моет посуду, а я пойду поваляюсь в ванне."
+    Ann_01 "Fine, I think that's the end of the dinner. Thanks, everyone. Lisa, as always, you're washing dishes and I'm going to soak in the bath..."
+
+# game/dialogues/dinner.rpy:278
+translate english dinner_3_bb8c7720:
+
+    # Max_01 "Ага, спасибо за ужин."
+    Max_01 "Yeah, thanks for the dinner."
+
+translate english strings:
+
+    # game/dialogues/dinner.rpy:238
+    old "А это точно хорошо?"
+    new "Are you sure it's good?"
+
+    # game/dialogues/dinner.rpy:238
+    old "Поздравляю, мам!"
+    new "Congratulation, mom!"
+
+    # game/dialogues/dinner.rpy:247
+    old "И теперь ты будешь ещё больше от него зависеть..."
+    new "And now you'll depend on Eric even more..."
+
+    # game/dialogues/dinner.rpy:247
+    old "А если поссоришься с этим Эриком, то всё..."
+    new "And if you'll get in a fight with Eric, you can lose your job..."
+
+    # game/dialogues/dinner.rpy:258
+    old "Давай, рассказывай подробности!"
+    new "Come on, give us some details!"
+
+    # game/dialogues/dinner.rpy:258
+    old "Ладно, не будем мучать Лизу вопросами..."
+    new "Fine, let's not bother Lisa with questions..."
+
+    # game/dialogues/dinner.rpy:269
+    old "Бери меня с собой!"
+    new "Take me with you!"
+
+    # game/dialogues/dinner.rpy:269
+    old "Я тоже люблю клубы!"
+    new "I love clubs too!"
+
