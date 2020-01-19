@@ -244,41 +244,42 @@ translate english strings:
 translate english intro_20141f46:
 
     # Max_00 "Когда мне было 3 года эта семья усыновила меня и сейчас никто уже и не вспоминает, что я приёмный. Мои же настоящие родители таинственно исчезли и их так и не нашли. Надеюсь, что когда-нибудь об этом хоть что-то станет известно..."
-    Max_00 "When I was 3 years old this family adopted me and now no one even remembers that I am foster. My real parents mysteriously disappeared and were never found. I hope that someday I will find out at least something..."
+    Max_00 "1.	My family adopted me when I was just 3 years old. My real parents disappeared, and there’s been no trace of them since. I hope that one day, I’ll find out what happened to them."
 
 # game/script.rpy:36
 translate english intro_95eb5e47:
 
     # Max_01 "На кануне девятнадцатилетия, когда я уже вот-вот должен был закончить школу, меня из неё выперли. Официально - за низкую успеваемость. Хотя оценки были так себе, но настоящая причина в математичке. Говорят, я приставал... Да она сама глазки строила! Директору, её мужу, это почему-то не понравилось..."
-    Max_01 "When I almost turned nineteenth and was about to finish school, I got kicked out of the school. The official reason was low academic performance. Although my grades were so-so, the real reason was our math teacher. They said I’d molested her... Come on, she kept making eyes at me herself! For some reason, the director, her husband, did not like it..."
+    Max_01 "When I was about to turn 19, I was expelled from school. While I wasn't exactly a straight A student, the real reason I was kicked out is thanks to my math teacher. She accused me of sexually harassing her... Even though she flirted with me first! The principal—who also happened to be her husband—wasn't interested in hearing my side of the story......"
 
 # game/script.rpy:42
 translate english intro_e288a47f:
 
     # Max_04 "Это Анна, моя приёмная мама. У неё есть две родные дочери и она воспитывает нас троих уже много лет одна. Работает в офисе какой-то компании. Хотя, зарплата у неё вполне приличная, но почти всё уходит на оплату съёмного жилья, еду и одежду."
-    Max_04 "This is Anna, my stepmother. She has two daughters and she has been raising the three of us for many years alone. She works in the office of some company. Although her salary is quite decent, we spend most of it to pay the rent, food, and clothing."
+    Max_04 "This is Ann, my adoptive Mom. She has 2 daughters and has been raising the 3 of us by herself for years.. She works in the office of some company. Although her salary is quite decent, we spend most of it to pay the rent, food, and clothing."
 
 # game/script.rpy:49
 translate english intro_ff38ed12:
 
     # Max_08 "Алиса, моя старшая сестра. Хоть она мне и не родная, но тем не менее, мы росли под одной крышей с самых малых лет, так что косички я ей подёргал за это время на славу. Уже несколько лет, как закончила школу, но до сих пор ищет свой путь, так же, как и я теперь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."
-    Max_08 "Alice, my older sister. Although she’s my stepsister, we grew up under the same roof since we were kids, and I pulled her pigtails a lot. It’s already been several years since she graduated from high school, but she’s still seeking to find her own way, just like I do now. She sits with her laptop all day long, she’s some kind of a blogger. As is often the case with brothers and older sisters, we do not get along very well.."
+    Max_08 "Alice, my older sister. We’re not related by blood, but we’ve grown up under the same roof for as long as I can remember. I’ve been pulling her pigtails for fun the whole time. She just graduated from high school and, just like me, is looking for a job. She spends all day on her laptop blogging. She thinks I'm an idiot, I think she has a stick up her ass, and we don't get along."
 
 # game/script.rpy:54
 translate english intro_6274a5c1:
 
     # Max_00 "Лиза, младшая сестрёнка, ещё учится в школе, но последний год. Не знаю как учится, но, если не выгнали как меня, значит всё в порядке. С Лизой мы практически ровесники, ей уже восемнадцать лет. Мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."
-    Max_00 "Lisa, the youngest sister, still goes to school, but it’s her last year. I don’t know anything about her grades, but if she didn’t get kicked out like me, then everything is fine. Lisa is almost as old as I, she is already eighteen. We are on the same page, although we quarrel occasionally. But if something happens, she looks for my protection."
+    Max_00 "Lisa, my littler sister. She’s 18, and in her last year of school.. I don't think she has good grades, but she hasn't been expelled like me, so I guess she's doing good enough. Despite the occasional argument we are quite close. If something happens, Lisa always runs to me for support."
 
 # game/script.rpy:59
 translate english intro_c94c5394:
 
     # Max_14 "Приёмного отца я плохо помню. Он ушёл, когда мне было лет восемь. Мама не хочет рассказывать, что тогда случилось... Ходили слухи, что дела у него пошли в гору. С тех пор мы о нём ничего не слышали. До прошлого месяца, когда пришла та девушка..."
-    Max_14 "I don’t remember my stepfather. He left when I was eight. Mom does not want to tell what happened... There were rumors that he’s doing very well. Since then, we have not heard anything about him. Until last month, when that girl came..."
+    Max_14 "I can’t remember my adoptive father very well. He left when I was 8 years old. Mom won't tell us what happened... There were rumors that things had gone very well for him. And we never hadn't heard from him until last month..."
+
 
 # game/script.rpy:86
 translate english intro_d6949af8:
 
     # Ann_01 "Что-то мне не нравится эта твоя идея, Макс. Вы уже совсем взрослые, чтобы спать в одной комнате. Давай этот офис выделим тебе, а вторую спальню - Лизе. Ну а я буду спать в гостиной. Там отличные диванчики..."
-    Ann_01 "For some reason, I don't like this idea of yours, Max. You are already too old to sleep in the same room. Let’s give this office to you, and Liza will have the second bedroom. Well, I will sleep in the living room. There are great sofas..."
+    Ann_01 "For some reason, I don't like this idea of yours, Max. You are already too old to sleep in the same room. Let’s give this office to you, and Lisa will have the second bedroom. I guess I'll take the living room. The sofa looks comfortable enough..."
 
