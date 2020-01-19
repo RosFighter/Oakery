@@ -1277,3 +1277,213 @@ translate english breakfast_3_driver_42f8bb2c:
     # Ann_01 "Макс, ну мы ещё недостаточно друг друга знаем, вдруг окажется, что у него есть какие-то секреты. Поэтому, я и говорю \"почти\". Но думаю, что это тот самый мужчина..."
     Ann_01 "We don't know each other close enough, I can't say with confidence that he's perfect. He may have some secrets. But it kind of feels like he's the one..."
 
+# TODO: Translation updated at 2020-01-19 17:42
+
+# game/dialogues/breakfast.rpy:536
+translate english breakfast_4_a0ebdb73:
+
+    # Ann_01 "Всем приятного аппетита. Это наш первый выходной в новом доме и сегодня у нас в планах кое-что приятное, правда?"
+    Ann_01 "Bon appetit, everyone. Today is our first weekend in our new house, so we have some good plans, right?"
+
+# game/dialogues/breakfast.rpy:537
+translate english breakfast_4_39806b21:
+
+    # Max_11 "Если ты о шоппинге, то меня вы всё равно не берёте..."
+    Max_11 "If you're talking about the shopping, then you're not taking me with you anyway"
+
+# game/dialogues/breakfast.rpy:538
+translate english breakfast_4_23b38825:
+
+    # Ann_01 "Макс, ну мы же это уже обсуждали. Тебе с нами будет не интересно. А с Эриком ты и так познакомишься, просто чуть позже, вечером"
+    Ann_01 "We discussed this already, Max. You wouldn't want to go with us anyway, and you'll be able to meet Eric later, in the evening."
+
+# game/dialogues/breakfast.rpy:539
+translate english breakfast_4_80f63239:
+
+    # Max_00 "Как скажешь, мам..."
+    Max_00 "Okay, mom..."
+
+# game/dialogues/breakfast.rpy:540
+translate english breakfast_4_c34f4557:
+
+    # Alice_01 "Макс, мне показалось или ты как-то предвзято относишься к Эрику? Как будто уже его ненавидишь..." nointeract
+    Alice_01 "Max, it looks like you dislike Eric for some reason. It's like you hate him already..." nointeract
+
+# game/dialogues/breakfast.rpy:543
+translate english breakfast_4_111a77d9:
+
+    # Ann_01 "Макс, я тебя прекрасно понимаю и тоже сомневалась бы на твоём месте, но поверь, у тебя будет возможность с ним познакомиться и узнать лучше..."
+    Ann_01 "I understand your position, Max, and I'd worry in your place too, but you'll have your opportunity to meet him and get to know him."
+
+# game/dialogues/breakfast.rpy:544
+translate english breakfast_4_d65d04da:
+
+    # Max_00 "Ну, хорошо..."
+    Max_00 "I guess..."
+
+# game/dialogues/breakfast.rpy:547
+translate english breakfast_4_3320b1d4:
+
+    # Lisa_03 "И за кого он себя выдаёт? За человека, которому нравится мама, а на само деле он... кто?" nointeract
+    Lisa_03 "Seems to me he just likes mom. Who do you think he really is?" nointeract
+
+# game/dialogues/breakfast.rpy:550
+translate english breakfast_4_a7ed0c3d:
+
+    # Ann_01 "Макс, ты слишком много сериалов смотришь. Стоит допустить на миг, что не все кругом маньяки, убийцы и насильники."
+    Ann_01 "You watch too much TV, Max. Not everyone around you is a maniac."
+
+# game/dialogues/breakfast.rpy:551
+translate english breakfast_4_55d3a406:
+
+    # Max_00 "Хорошо. Извини, мам..."
+    Max_00 "Okay. Sorry, mom..."
+
+# game/dialogues/breakfast.rpy:553
+translate english breakfast_4_af900431:
+
+    # Ann_01 "Вот и не стоит раньше времени предполагать худшее. Познакомишься уже сегодня и выяснишь для себя всё, что нужно..."
+    Ann_01 "Then you shouldn't assume the worst. You'll meet him today so you'll be able to form your opinion about him soon enough..."
+
+# game/dialogues/breakfast.rpy:554
+translate english breakfast_4_d65d04da_1:
+
+    # Max_00 "Ну, хорошо..."
+    Max_00 "I guess..."
+
+# game/dialogues/breakfast.rpy:556
+translate english breakfast_4_6e76d4ab:
+
+    # Alice_06 "Ой, кто бы говорил! Очередной... Маму повысили в первую неделю, дали личного водителя, на шоппинг вот везут, а ты всё ворчишь. Не веди себя сам как придурок и люди к тебе потянутся!"
+    Alice_06 "Look who's talking! Mom got promoted in the first week on the job, a personal driver, she'll be taken to the shopping soon, and you still complain. Don't act like a jerk yourself and people will appreciate it!"
+
+# game/dialogues/breakfast.rpy:557
+translate english breakfast_4_38b7f8b4:
+
+    # Max_09 "Ладно, посмотрим на вашего Эрика..."
+    Max_09 "Fine, let's look at this Eric first..."
+
+# game/dialogues/breakfast.rpy:559
+translate english breakfast_4_05cc408b:
+
+    # Alice_02 "Да ты не переживать должен, а радоваться, что у мамы налаживается её личная жизнь! К тому же, ещё и с работой так повезло и даже повышение в первую неделю светит..." nointeract
+    Alice_02 "Instead of worrying, you should be happy for mom instead! Not only she got herself a boyfriend, but she also got lucky with the new job and she may even be promoted in her first week..." nointeract
+
+# game/dialogues/breakfast.rpy:565
+translate english breakfast_4_71328ac0:
+
+    # Ann_05 "Вот и отлично! Хватит уже про Эрика, давайте обсудим что планируем купить.."
+    Ann_05 "Great! And enough about Eric, let's talk about our shopping plans..."
+
+# game/dialogues/breakfast.rpy:567
+translate english breakfast_4_15ff8852:
+
+    # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да? \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
+    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean. \n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
+
+# game/dialogues/breakfast.rpy:569
+translate english breakfast_4_b30b05ba:
+
+    # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
+    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean."
+
+# game/dialogues/breakfast.rpy:572
+translate english breakfast_4_aed9c202:
+
+    # Max_03 "Конечно, как тут не понять..."
+    Max_03 "Yeah, we get it"
+
+# game/dialogues/breakfast.rpy:573
+translate english breakfast_4_e4ed6353:
+
+    # Alice_01 "Лиза! Хватит тараторить. Купальник у тебя уже есть, а вот клубного платья у меня нет ни одного вообще. Так что, сначала мне!"
+    Alice_01 "You already have a swimsuit, Lisa, but I don't have a single dress to go out. So I'm first!"
+
+# game/dialogues/breakfast.rpy:574
+translate english breakfast_4_68b06732:
+
+    # Max_05 "Не подеритесь!"
+    Max_05 "You're not going to fight, are you?"
+
+# game/dialogues/breakfast.rpy:575
+translate english breakfast_4_ba073505:
+
+    # Lisa_12 "У меня купальник закрытый и в нём не позагорать. А клубы твои ничем хорошим не заканчиваются... Особенно, когда..."
+    Lisa_12 "I can't tan in my one piece swimsuit. And your clubbing never end well anyway, especially when you..."
+
+# game/dialogues/breakfast.rpy:576
+translate english breakfast_4_eb10555f:
+
+    # Max_07 "Что особенно? Подробнее, пожалуйста..."
+    Max_07 "{i}continue{/i}"
+
+# game/dialogues/breakfast.rpy:577
+translate english breakfast_4_f28b7a83:
+
+    # Alice_09 "Лиза! Заткнись, пожалуйста. Хватит об этом. Ладно, сначала тебе купальник, потом мне платье..."
+    Alice_09 "Lisa! Could you please shut the hell up!? Fine, swimsuit first, dress second..."
+
+# game/dialogues/breakfast.rpy:578
+translate english breakfast_4_0c7faf0a:
+
+    # Max_08 "Я не понял. Что это было? О чём Лиза ты хотела рассказать?"
+    Max_08 "What just happened? What were you talking about, Lisa?"
+
+# game/dialogues/breakfast.rpy:579
+translate english breakfast_4_d7175ecb:
+
+    # Lisa_10 "Мне кажется, Алиса не хочет, чтобы я что-то рассказывала... Так что сам с ней разбирайся..."
+    Lisa_10 "I don't think Alice wants me to say anything... You'll have to ask her..."
+
+# game/dialogues/breakfast.rpy:580
+translate english breakfast_4_2afa1e0c:
+
+    # Max_02 "Обязательно разберёмся. Мне же интересно!"
+    Max_02 "Okay, will do"
+
+# game/dialogues/breakfast.rpy:581
+translate english breakfast_4_fabe9f19:
+
+    # Ann_00 "Не знаю о чём речь, но думаю, вы и правда между собой всё выясните. А сейчас пора собираться на шоппинг. Всем спасибо за завтрак!"
+    Ann_00 "I don't know what you're talking about, but you can figure it out later, we're going shopping soon, so go get ready. Thanks for the breakfast, everyone!"
+
+# game/dialogues/breakfast.rpy:582
+translate english breakfast_4_81d2ad52:
+
+    # Max_01 "Да, спасибо..."
+    Max_01 "Yeah, thanks..."
+
+translate english strings:
+
+    # game/dialogues/breakfast.rpy:540
+    old "Ну, я его не знаю..."
+    new "I don't know him..."
+
+    # game/dialogues/breakfast.rpy:540
+    old "А вдруг он не тот, за кого себя выдаёт"
+    new "What if he's not who he seems to be?"
+
+    # game/dialogues/breakfast.rpy:540
+    old "Я переживаю о маме"
+    new "I worry about mom!"
+
+    # game/dialogues/breakfast.rpy:547
+    old "Ну не знаю. Может, он маньяк..."
+    new "What if he's some kind of maniac?"
+
+    # game/dialogues/breakfast.rpy:547
+    old "Дело не в этом, я не знаю его мотивов..."
+    new "I don't know his motives"
+
+    # game/dialogues/breakfast.rpy:547
+    old "Может он очередной придурок!"
+    new "Maybe he's another jerk!"
+
+    # game/dialogues/breakfast.rpy:559
+    old "Ладно, ладно. Посмотрим..."
+    new "Fine, fine. We'll see..."
+
+    # game/dialogues/breakfast.rpy:559
+    old "Да я рад..."
+    new "Yeah, I'm happy..."
+
