@@ -244,7 +244,7 @@ translate english strings:
 translate english intro_20141f46:
 
     # Max_00 "Когда мне было 3 года эта семья усыновила меня и сейчас никто уже и не вспоминает, что я приёмный. Мои же настоящие родители таинственно исчезли и их так и не нашли. Надеюсь, что когда-нибудь об этом хоть что-то станет известно..."
-    Max_00 "1.	My family adopted me when I was just 3 years old. My real parents disappeared, and there’s been no trace of them since. I hope that one day, I’ll find out what happened to them."
+    Max_00 "My family adopted me when I was just 3 years old. My real parents disappeared, and there’s been no trace of them since. I hope that one day, I’ll find out what happened to them."
 
 # game/script.rpy:36
 translate english intro_95eb5e47:
