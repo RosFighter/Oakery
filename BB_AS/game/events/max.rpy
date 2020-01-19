@@ -300,7 +300,7 @@ label about_cam:
     Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
     $ items["manual"].InShop = True
     $ renpy.notify(_("В интернет-магазине доступен новый товар."))
-    $ spent_time = 20
+    $ spent_time += 20
     $ possibility["cams"].stage_number = 2
     $ possibility["cams"].stages[2].used = True
     jump Laptop
@@ -473,7 +473,7 @@ label SearchSecretBook:
 
     label .wardrobe:
         $ spent_time += 10
-        # show
+        scene BG NoImage
         Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
         $ possibility["secretbook"].stage_number = 1
         $ possibility["secretbook"].stages[1].used = True
@@ -482,11 +482,21 @@ label SearchSecretBook:
 
 
 label about_secretbook:
+    $ renpy.block_rollback()
+    hide video1_movie
+    show interface laptop secretbook-inf-1:
+        xpos 221 ypos 93
     menu:
         Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
         "{i}читать о книге{/i}":
             Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
+    $ items["erobook_1"].InShop = True
+    $ items["erobook_2"].InShop = True
+    $ items["erobook_3"].InShop = True
+    $ items["erobook_4"].InShop = True
+    $ items["erobook_5"].InShop = True
+    $ renpy.notify(_("В интернет-магазине доступен новый товар."))
     $ possibility["secretbook"].stage_number = 2
     $ possibility["secretbook"].stages[2].used = True
     $ spent_time += 30
-    jump Waiting
+    jump Laptop

@@ -70,7 +70,7 @@ translate english alice_sleep_night_9ed99f0c:
 translate english alice_sleep_night_1374d4d4:
 
     # Max_02 "Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы пристроился с огромным удовольствием... Но пора уходить, а то ещё проснётся..." nointeract
-    Max_02 "" nointeract
+    Max_02 "Nice! Alice may be my sister, but I'd love to see more of her body... But it's time to go, before she wakes up..." nointeract
 
 # game/events/alice.rpy:63
 translate english alice_sleep_night_ef329553:

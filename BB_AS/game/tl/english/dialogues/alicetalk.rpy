@@ -48,11 +48,11 @@ translate english talkblog1_3a17a0f5:
     # Alice_00 "А типа ты не знаешь? Позлорадствовать пришёл?" nointeract
     Alice_00 "Like you don't know. Did you come here to gloat?" nointeract
 
-# game/dialogues/alicetalk.rpy:75
-translate english talkblog1_d1686a92:
+# game/dialogues/alicetalk.rpy:115
+translate english talkblog1_7eb6bffd:
 
-    # Alice_01 "Что, даже не начнёшь подкалывать? И что ты хотел узнать?" nointeract
-    Alice_01 "Seriously? Anyway, what do you want to know?" nointeract
+    # Alice_02 "Что, даже не начнёшь подкалывать? И что ты хотел узнать?" nointeract
+    Alice_02 "Seriously? Anyway, what do you want to know?" nointeract
 
 # game/dialogues/alicetalk.rpy:78
 translate english talkblog1_972348e1:
@@ -216,11 +216,11 @@ translate english talkblog1_together_22a16723:
     # Max_00 "Хорошо!"
     Max_00 "Okay!"
 
-# game/dialogues/alicetalk.rpy:224
-translate english talkblog1_together_d170a559:
+# game/dialogues/alicetalk.rpy:262
+translate english talkblog1_together_486c60cb:
 
-    # Alice_01 "Семейный бизнес? На моём блоге? Может ещё и сам вести будешь?" nointeract
-    Alice_01 "A family business out of my blog? Maybe you'll host it too?" nointeract
+    # Alice_07 "Семейный бизнес? На моём блоге? Может ещё и сам вести будешь?" nointeract
+    Alice_07 "A family business out of my blog? Maybe you'll host it too?" nointeract
 
 # game/dialogues/alicetalk.rpy:232
 translate english talkblog1_together_becb28cf:
@@ -246,11 +246,11 @@ translate english talkblog1_together_0c9332b5:
     # Max_00 "Ладно, когда будут идеи, обсудим..."
     Max_00 "Okay, we'll talk later..."
 
-# game/dialogues/alicetalk.rpy:241
-translate english talkblog1_findout_1317b916:
+# game/dialogues/alicetalk.rpy:279
+translate english talkblog1_findout_e3b65ac0:
 
-    # Alice_01 "Ну, давай. Сомневаюсь, конечно, что это не пустая болтовня, но вдруг... Удиви меня!" nointeract
-    Alice_01 "Well, I guess. I'm not sure you'll actually be useful, but why not... Surprise me!" nointeract
+    # Alice_07 "Ну, давай. Сомневаюсь, конечно, что это не пустая болтовня, но вдруг... Удиви меня!" nointeract
+    Alice_07 "Well, I guess. I'm not sure you'll actually be useful, but why not... Surprise me!" nointeract
 
 # game/dialogues/alicetalk.rpy:244
 translate english talkblog1_findout_68795405:
@@ -689,4 +689,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:333
     old "Неужели справочник по квантовой механике?"
     new "A book about Quantum mechanics?"
-

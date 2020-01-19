@@ -756,6 +756,7 @@ label about_boy2: # разговор с Лизой после того, как �
     $ cooldown["lisa_boy"] = CooldownTime("05:00")
     $ possibility["Schoolmate"].stage_number = 0
     $ possibility["Schoolmate"].stages[0].used = True
+    jump Waiting
 
 
 label Lisa_MorningWood: # Разговор с Лизой после утреннего инцидента

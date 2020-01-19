@@ -254,7 +254,7 @@ translate english Ann_normalmood_085fa1a6:
 translate english Ann_MorningWood_bb881ec2:
 
     # Ann_01 "Макс, не переживай ты так. Я всё прекрасно понимаю, у мальчиков это бывает..."
-    Ann_01 "Don't worry, Max, I understand. It's normal for guys..."
+    Ann_01 "Don't worry, Max, I understand. It's normal for boys..."
 
 # game/dialogues/anntalk.rpy:200
 translate english Ann_MorningWood_ab75b971:

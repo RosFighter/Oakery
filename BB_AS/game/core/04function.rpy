@@ -944,3 +944,23 @@ init python:
                     characters[char].mood -= 1
                 elif characters[char].mood < 0:
                     characters[char].mood += 3 # возвращается в норму настроение быстрее, чем падает
+
+
+    def seat_Breakfast(): # рассаживает семью за завтраком
+        renpy.scene()
+        renpy.show("BG breakfast 00") # общий фон
+        renpy.show("Ann breakfast 0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
+        renpy.show("Alice breakfast 0"+renpy.random.choice(["1", "2", "3"])+characters["alice"].dress)
+        renpy.show("Lisa breakfast 0"+renpy.random.choice(["1", "2", "3"])+characters["lisa"].dress)
+        renpy.show("FG breakfast 0"+renpy.random.choice(["1", "2", "3"])) # стол
+        renpy.show("Max breakfast 0"+renpy.random.choice(["1", "2", "3"])+max_profile.dress)
+
+
+    def seat_Dinner(): # рассаживает семью за ужином
+        renpy.scene()
+        renpy.show("BG dinner 00") # общий фон
+        renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
+        renpy.show("Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["alice"].dress)
+        renpy.show("Lisa dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["lisa"].dress)
+        renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])) # стол
+        renpy.show("Max dinner 0"+renpy.random.choice(["1", "2", "3"])+max_profile.dress)

@@ -608,7 +608,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Я пообщался с Алисой насчёт своих выводов о популярности блога и намекнул, что можно рекламировать не только крема и лаки, но и нижнее бельё, например. Удивительно, но Алиса согласилась. Правда, теперь мне нужно найти нижнее бельё для того, чтобы она заинтересовала свою аудиторию и привлекла внимание рекламодателей..."
-    new "I talked with Alice about her blog and tried to tell her she could advertise lingerie. Amazingly, she agreed. Now I just have to buy her some lingerie, so she'll be able to build a new audience and attract some advertisers..."
+    new "I spoke with Alice about her blog and tried to tell her she could advertise lingerie. Amazingly, she agreed. Now I just have to buy her some lingerie, so she'll be able to build a new audience and attract some advertisers..."
 
     # game/core/03variables.rpy:324
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Правда, я почти ничего не увидел, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
@@ -628,7 +628,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Я заметил, что Лиза всё время в одном и том же закрытом купальнике. Так же невозможно толком загореть? Она тоже так считает, но другого нет. Остальные пропали с другими вещами во время переезда. Может быть, удастся как-то ей помочь?"
-    new "I noticed Lisa always wearing the  same one-piece swimsuit. How is she supposed to tan in that? She agrees, but she doesn't have anything else to wear, everything got lost when we moved.  Maybe I can help her out somehow?"
+    new "I noticed Lisa is always wearing the same one-piece swimsuit. How is she supposed to tan in that? She agrees, but she doesn't have anything else to wear, everything got lost when we moved.  Maybe I can help her out somehow?"
 
     # game/core/03variables.rpy:324
     old "Во время завтрака Лиза намекнула маме, что нужно бы купить во время шоппинга купальник, который не скрывает половину тела и в котором можно загорать..."
@@ -636,7 +636,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Выяснилось, что во время последнего шоппинга забыли купить Лизе купальник, о котором она просила. Теперь придётся ждать до следующих выходных, когда Эрик снова повезёт всех за покупками. Но в этот раз сам Эрик пообещал ей подарить этот купальник. Может быть, его опередить?"
-    new "Mom forgot to buy a new swimsuit for Lisa. Now she has to wait for the next weekend when Eric will take everyone shopping. This time Eric promised to buy one himself. Maybe I should beat him to it?"
+    new "Mom forgot to buy a new swimsuit for Lisa. Now she has to wait until next weekend when Eric will take everyone shopping. This time Eric promised to buy one himself. I should beat him to it!"
 
     # game/core/03variables.rpy:324
     old "Мне удалось накопить немного денег и купить тот самый купальник, который так хотела Лиза. Кажется, она меня любит! А Эрик теперь обломается со своими подарками, ведь я уже подарил то, что так хочет младшая сестрёнка!"

@@ -89,7 +89,7 @@ translate english about_cam_3d3bce54:
 translate english about_cam_3fd48063:
 
     # Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
-    Max_09 "Maybe I should make my website and let people pay me for live streaming?"
+    Max_09 "Maybe I should make a website and let people pay me for live streaming? But I'm not sure how to do it..."
 
 # game/events/max.rpy:314
 translate english SearchCam_67b6130b:

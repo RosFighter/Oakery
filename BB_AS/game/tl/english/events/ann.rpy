@@ -166,7 +166,7 @@ translate english ann_dressed_work_d66e2468:
 translate english ann_dressed_work_a4d8ba92:
 
     # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
-    Max_01 "Wow, what a sight! I picked a lucky moment... But I should get out before she sees me in the mirror"
+    Max_01 "Wow, what a sight! I picked a good moment... But I should get out before she sees me in the mirror"
 
 # game/events/ann.rpy:222
 translate english ann_dressed_shop_d4cf236b:
