@@ -1924,7 +1924,7 @@ translate english Lisa_MorningWood_fef33fff:
 translate english Lisa_MorningWood_4e003c5c:
 
     # Lisa_00 "Ну, я подумаю. Ты как-то слишком настойчиво помощь предлагаешь. Как будто у тебя свой интерес какой-то..."
-    Lisa_00 "Okay, I'll think about it. But you're pushing too hard, it makes me think you have some selfish motive behind this..."
+    Lisa_00 "Okay, I'll think about it. But you're pushing too hard, it makes me think you have some ulterior motive behind this..."
 
 # game/dialogues/lisatalk.rpy:792
 translate english Lisa_MorningWood_cac97bcc:
