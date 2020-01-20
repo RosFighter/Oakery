@@ -713,3 +713,47 @@ translate english strings:
     # game/core/03variables.rpy:374
     old "Насчёт этого случая утром..."
     new "About that time in the morning..."
+# TODO: Translation updated at 2020-01-20 09:14
+
+translate english strings:
+
+    # game/core/03variables.rpy:327
+    old "Тусовщица"
+    new "Party girl"
+
+    # game/core/03variables.rpy:327
+    old "Алиса настойчиво просит маму купить ей вечернее платье для посещения ночных клубов. Та ей регулярно отказывала, пока Эрик не предложил подарить ей платье во время следующего шоппинга. Нужно поспешить, если я хочу сделать это первым!"
+    new "Alice asked mom for a new evening dress. Usually mom would say no, but this time Eric said he'd buy her one on the next shopping trip. I should hurry if I want to beat him to it and give her a present myself."
+
+    # game/core/03variables.rpy:327
+    old "Мне удалось скопить приличную сумму и купить платье для Алисы. Теперь, нужно успеть его подарить ей, пока это не сделал кто-то другой..."
+    new "I managed to earn some money and buy a dress for Alice. Now I have to give it to her before Eric."
+
+    # game/core/03variables.rpy:327
+    old "Вот что значит не везёт. Я долго копил на красивое короткое платье для Алисы и даже купил его, но меня опередил Эрик... И что самое обидное, он купил точно такое же, но подарил его первым. Теперь у меня есть бесполезное платье..."
+    new "Now this is bad luck. I've spent so much money on a beautiful short dress for Alice, but Eric has beaten me to the punch. And of course he got her same kind of dress, so I can't just give mine to her."
+
+    # game/core/03variables.rpy:327
+    old "Вот что значит не везёт. Я долго копил на красивое короткое платье для Алисы, но меня опередил Эрик... Не удивительно. У него же куча денег. Он может себе позволить такие подарки... Кажется, теперь Алиса к нему относится гораздо лучше..."
+    new "Now this is bad luck. I tried so hard to buy that dress, but in the end I didn't even matter. Not surprising, Eric's loaded, he certainly can afford it. Now his relationship with Alice has improved."
+
+    # game/core/03variables.rpy:327
+    old "Да, я сделал это! Мне удалось не только накопить на платье, но и подарить его до того, как нечто подобное сделал Эрик. А он собирался. С его то деньгами это не сложно... Теперь Алиса ко мне относится намного лучше. Ещё бы! Теперь она может ходить по ночным клубам..."
+    new "Yes! I did it! I've managed to give the dress before Eric! Alice is grateful, now she can go to nightclubs."
+
+    # game/core/03variables.rpy:327
+    old "Лиза рассказала мне по секрету кое-что интересное. Оказывается, Алиса не умеет пить. А точнее, капля алкоголя её меняет!"
+    new "Lisa told me some juicy secret. Turns out Alice can't hold a drink. Or, more accurately, drinking drastically changes her behavior."
+
+    # game/core/03variables.rpy:327
+    old "Именно поэтому она и не соглашается ни на какие алкогольные напитки. Но, может быть, можно придумать что-то другое?"
+    new "Which is why she never drinks. Maybe I can come up with some idea?"
+
+    # game/core/03variables.rpy:327
+    old "Итак, у меня есть коробка конфет с ликёром. Судя по надписи на коробке, аромат утончённый. Это значит, есть шанс, что Алиса не заметит алкоголь. Интересно, этого хватит, чтобы её как-то подтолкнуть к этим... безбашенным поступкам?"
+    new "Well, I got myself a box of chocolate liqueurs. They should be subtle enough for sis to miss alcohol. I wonder if that would be enough for her to... change."
+
+    # game/core/03variables.rpy:327
+    old "Всё получилось. И прошло как-то... слишком неожиданно. О таком даже не принято никому рассказывать. Видимо, лишняя капля алкоголя сорвала Алисе крышу и она напилась в ночном клубе. Ну что же, будем надеяться, что она сама ничего не помнит об этом, а иначе мне не жить..."
+    new "Everything worked out fine. And quite... unexpectedly. Can't tell anyone about this. I guess Alice lost her inhibitors and got herself drunk in a nightclub. Let's hope she won't remember anything, or I'm a goner..."
+
