@@ -475,7 +475,7 @@ label SearchSecretBook:
 
     label .wardrobe:
         $ spent_time += 10
-        scene BG NoImage
+        scene BG char Max secretbook-00
         Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
         $ possibility["secretbook"].stage_number = 1
         $ possibility["secretbook"].stages[1].used = True
