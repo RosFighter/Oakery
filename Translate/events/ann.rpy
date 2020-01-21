@@ -4,7 +4,7 @@
 translate english ann_sleep_240f8eab:
 
     # Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..." nointeract
-    Max_00 "Mom usually sleeps at this time. \n it seems like you shouldn't wake her up..." nointeract
+    Max_00 "Mom's usually asleep at this time. \n it seems like you shouldn't wake her up..." nointeract
 
 # game/events/ann.rpy:15
 translate english ann_sleep_261d0248:

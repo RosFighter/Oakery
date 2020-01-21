@@ -636,13 +636,13 @@ translate english alice_aboutbooks_de0f6bd9:
 translate english alice_aboutbooks_6405d1b7:
 
     # Alice_02 "Забавно. А тебе не всё равно? Или делать нечего?" nointeract
-    Alice_02 "Why do you care? Don't you have something better to do?" nointeract
+    Alice_02 "Why do you care? Don't you have anything better to do?" nointeract
 
 # game/dialogues/alicetalk.rpy:333
 translate english alice_aboutbooks_af00f0d1:
 
     # Alice_00 "Не скажу. Сиди теперь и гадай! \n\n{i}Алиса прикрыла обложку рукой{/i}" nointeract
-    Alice_00 "I won't tell. I guess you'll have to live with uncertainty! \n\n{i}Alice has covered the book title{/i}" nointeract
+    Alice_00 "I won't tell. I guess you'll have to live with the uncertainty! \n\n{i}Alice has covered the book title{/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:341
 translate english alice_aboutbooks_7695d351:
@@ -660,7 +660,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:316
     old "Спасибо, кэп!"
-    new "Thanks, Cap!"
+    new "Thanks!"
 
     # game/dialogues/alicetalk.rpy:316
     old "Очень смешно..."
@@ -668,7 +668,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:316
     old "Это понятно, а какую? Только не говори, что бумажную..."
-    new "I can see that, but what kind? And don't tell me a paper one..."
+    new "I can see that, but what kind? And don't say a paperback..."
 
     # game/dialogues/alicetalk.rpy:327
     old "Не всё равно, раз спрашиваю"

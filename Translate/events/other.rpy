@@ -4,7 +4,7 @@
 translate english shoping_034007bc:
 
     # Ann_05 "Макс! Мы ушли на шоппинг. Не скучай тут без нас, хорошо? Вернёмся часа через 3..." nointeract
-    Ann_05 "Max! We're going shopping. Do not be bored without us, okay? We’ll come back in 3 hours..." nointeract
+    Ann_05 "Max! We're going shopping. Don't get too bored without us, okay? We’ll be back in 3 hours..." nointeract
 
 # game/events/other.rpy:26
 translate english back_shoping_bd2b389d:
@@ -16,13 +16,13 @@ translate english back_shoping_bd2b389d:
 translate english back_shoping_cd0b2b2b:
 
     # Max_04 "Ну как, удачно сходили?"
-    Max_04 "How was your shopping session?"
+    Max_04 "How was it?"
 
 # game/events/other.rpy:28
 translate english back_shoping_3945eada:
 
     # Alice_13 "Ну, так... Платье мне, конечно, не купили. Даже то очень длинное, которое чуть выше колен..."
-    Alice_13 "Not that great. We didn't bought the dress I wanted. Even the long one..."
+    Alice_13 "Not that great. We didn't buy the dress I wanted. Not even the long one..."
 
 # game/events/other.rpy:29
 translate english back_shoping_d40343f5:
@@ -46,19 +46,19 @@ translate english back_shoping_838f5698:
 translate english back_shoping_ff699a77:
 
     # Ann_01 "Алиса, мы это уже обсуждали. Я против платьев, где у тебя всё видно. То, что оно длинное, не значит, что твою задницу не видно через разрез до ушей..." nointeract
-    Ann_01 "Alice, we already discussed it. That dress was too open, people could almost see your ass crack." nointeract
+    Ann_01 "Alice, we already discussed it. That dress was too open, people could almost see your ass." nointeract
 
 # game/events/other.rpy:38
 translate english back_shoping_ec104f51:
 
     # Alice_02 "Ну, теперь остаётся только мечтать. Спасибо тебе мама за чудесный шоппинг... Лизе тоже понравилось, видимо..."
-    Alice_02 "Well, now we can only dream. Thank you mom for a wonderful shopping... I think Lisa also liked it..."
+    Alice_02 "Well, now we can only dream. Thank you mom for a wonderful shop... I think Lisa also liked it..."
 
 # game/events/other.rpy:39
 translate english back_shoping_e23a2e06:
 
     # Max_01 "А что с Лизой? Купальник купили?"
-    Max_01 "And what about Lisa? Have you bought a swimsuit?"
+    Max_01 "And what about Lisa? Did you get a swimsuit?"
 
 # game/events/other.rpy:40
 translate english back_shoping_dbb7dd3e:
@@ -70,19 +70,19 @@ translate english back_shoping_dbb7dd3e:
 translate english back_shoping_4ac118f9:
 
     # Ann_01 "Купальник не может стоить таких денег, а она выбрала дизайнерский какой-то. Как будто мы тут миллионеры все..."
-    Ann_01 "Bathing suit shouldn't cost that kind of money, she chose a designer model. We're not millionaires..."
+    Ann_01 "Bathing suits shouldn't cost that kind of money, she chose a designer brand. We're not millionaires..."
 
 # game/events/other.rpy:44
 translate english back_shoping_0901fee4:
 
     # Max_05 "Ясно. А насколько открытыми были остальные?"
-    Max_05 "Got it. And how open were others?"
+    Max_05 "Got it. How open were they"
 
 # game/events/other.rpy:47
 translate english back_shoping_b5471cb2:
 
     # Ann_05 "Ну тебе бы точно понравилось, как и всем мужикам, кто её бы увидел, но Лиза ещё маленькая, чтобы в таком виде появляться на публике. Так что..."
-    Ann_05 "Well, you would've liked it, like all men would, but Lisa is too young to wear something like that in public"
+    Ann_05 "Well, you would've liked it, like all men would, but Lisa is too young to wear something like that outside"
 
 # game/events/other.rpy:48
 translate english back_shoping_542cfe6c:
@@ -94,7 +94,7 @@ translate english back_shoping_542cfe6c:
 translate english back_shoping_88944574:
 
     # Alice_13 "В общем, бесполезно потратили время. Но Эрик обещал, что на следующий шоппинг купит нам всё, что мы захотим, да, мам?"
-    Alice_13 "So, basically, we wasted our time. But Erik promised he would buy us whatever we want at the next shopping, right, mom?"
+    Alice_13 "So, basically, we wasted our time. But Eric promised he would buy us whatever we want next time, right, mom?"
 
 # game/events/other.rpy:50
 translate english back_shoping_3081eefb:
@@ -106,7 +106,7 @@ translate english back_shoping_3081eefb:
 translate english back_shoping_87e46818:
 
     # Ann_01 "Алиса, хватит мечтать. Это всё выглядит так, как будто вы хотите из него выкачать как можно больше денег. Успокойтесь и будьте скромнее..." nointeract
-    Ann_01 "Stop it, Alice. It looks like you just want to get as much money as possible from him. Calm down and be modest" nointeract
+    Ann_01 "Stop it, Alice. It looks like you just want to get as much money as possible out of him. Calm down and be respectful" nointeract
 
 # game/events/other.rpy:54
 translate english back_shoping_b5a1abfc:
@@ -154,13 +154,13 @@ translate english back_shoping_1deadd07:
 translate english back_shoping_a28c1031:
 
     # Max_04 "Рассказывайте, что купили?"
-    Max_04 "Tell me what you bought?"
+    Max_04 "What did you get?"
 
 # game/events/other.rpy:74
 translate english back_shoping_dc000c03:
 
     # Lisa_03 "А мне Эрик подарил купальник! Именно такой, как я и хотела! Красный, представляешь?!"
-    Lisa_03 "Eric gave me a swimsuit! Just like the one I wanted!"
+    Lisa_03 "Eric got me a swimsuit! Just like the one I wanted!"
 
 # game/events/other.rpy:75
 translate english back_shoping_f936ff3c:
@@ -172,19 +172,19 @@ translate english back_shoping_f936ff3c:
 translate english back_shoping_45a6e528:
 
     # Lisa_02 "Что? Ты за меня не рад? Я же теперь смогу загорать в нормальном виде!"
-    Lisa_02 "What? Are you not happy for me? Now I'll be able to sunbathe like normal people!"
+    Lisa_02 "What? You're not happy for me? Now I'll be able to sunbathe like a normal person!"
 
 # game/events/other.rpy:77
 translate english back_shoping_c856577b:
 
     # Max_09 "Конечно, рад... Что-то ещё хорошее купили?"
-    Max_09 "Of course, I'm happy. Have you bought anything else?"
+    Max_09 "Of course I'm happy. Did you get anything else?"
 
 # game/events/other.rpy:79
 translate english back_shoping_920128b5:
 
     # Lisa_02 "Да так, вскую ерунду... Для нас, девочек. Тебе это не интересно..."
-    Lisa_02 "Some stuff for us, girls. It won't be interesting for you..."
+    Lisa_02 "Some stuff for us girls. You woudn't be interested..."
 
 # game/events/other.rpy:80
 translate english back_shoping_f47e0d84:
@@ -208,7 +208,7 @@ translate english back_shoping_31015994:
 translate english back_shoping_295e6d4e:
 
     # Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
-    Alice_04 "Exactly! Now I can go clubbing instead of sitting at home all the time! Eric is so great!. I'm happy!"
+    Alice_04 "Exactly! Now I can go clubbing instead of sitting at home all the time! Eric is so great!. I'm really happy!"
 
 # game/events/other.rpy:85
 translate english back_shoping_52ba99cd:
@@ -276,13 +276,13 @@ translate english strings:
 translate english MeetingEric_ff8aa8d1:
 
     # Ann_00 "Макс, подойди пожалуйста. К нам приехал Эрик. Знакомься..."
-    Ann_00 "Max, come here please. Eric is here. Go introduce yourself to him..."
+    Ann_00 "Max, come here please. Eric is here. Go and introduce yourself..."
 
 # game/events/other.rpy:107
 translate english MeetingEric_56e6606a:
 
     # Ann_05 "Знакомься, это - Эрик. Эрик, это Макс, мой сын..." nointeract
-    Ann_05 "Max, meet Eric. Eric, this is Max, my son..." nointeract
+    Ann_05 "Max, meet Eric. Eric, this is my son, Max." nointeract
 
 # game/events/other.rpy:112
 translate english MeetingEric_deda115c:
@@ -294,7 +294,7 @@ translate english MeetingEric_deda115c:
 translate english MeetingEric_fae75ac4:
 
     # Eric_06 "Отличные слова, Макс. Ну, надеюсь, найдёшь то, что ищешь..."
-    Eric_06 "Excellent words, Alex. I hope you'll find what you're looking for..."
+    Eric_06 "Excellent words, Max. I hope you'll find what you're looking for..."
 
 # game/events/other.rpy:116
 translate english MeetingEric_ec11cf76:
@@ -306,7 +306,7 @@ translate english MeetingEric_ec11cf76:
 translate english MeetingEric_aa815859:
 
     # Eric_00 "Понятно. Воздух пинаешь... Ну ничего, в своё время всё изменится..."
-    Eric_00 "So, nothing important then. Don't worry, things will change soon..."
+    Eric_00 "So, nothing important then. Don't worry, things will change in due time..."
 
 # game/events/other.rpy:123
 translate english MeetingEric_62426c0e:
@@ -318,7 +318,7 @@ translate english MeetingEric_62426c0e:
 translate english MeetingEric_6deddf9e:
 
     # Eric_09 "Ого, какие мы дружелюбные, ну что же, не буду тебя утомлять своими вопросами..."
-    Eric_09 "Well, you overly friendly... Fine, I won't bother you with my questions..."
+    Eric_09 "Well, you're quite friendly... Fine, I won't bother you with my questions..."
 
 # game/events/other.rpy:130
 translate english MeetingEric_2db9f65a:
@@ -330,7 +330,7 @@ translate english MeetingEric_2db9f65a:
 translate english MeetingEric_cf7f1be0:
 
     # Eric_09 "Очень приятно, Макс. А ты у нас не очень разговорчивый, да?" nointeract
-    Eric_09 "Nice to meet you, Max. You're a quite one, aren't you?" nointeract
+    Eric_09 "Nice to meet you, Max. You're a quiet one, aren't you?" nointeract
 
 # game/events/other.rpy:136
 translate english MeetingEric_fda4595b:
@@ -360,7 +360,7 @@ translate english MeetingEric_18637ae8:
 translate english MeetingEric_e5d94a12:
 
     # Eric_02 "Ань, а ты не говорила, что у тебя сын такой агрессивный..."
-    Eric_02 "You didn't say he's so aggressive, Ann..."
+    Eric_02 "You didn't say he was so aggressive, Ann..."
 
 # game/events/other.rpy:148
 translate english MeetingEric_58916f16:
@@ -372,13 +372,13 @@ translate english MeetingEric_58916f16:
 translate english MeetingEric_e662491e:
 
     # Eric_02 "Извини, Макс, что не оправдал твои ожидания. В любом случае, приятно с тобой познакомиться..." nointeract
-    Eric_02 "Sorry I haven't met your expectations, Max. Anyway, nice to meet you..." nointeract
+    Eric_02 "Sorry I haven't met your expectations, Max. But it is nice to meet you..." nointeract
 
 # game/events/other.rpy:160
 translate english MeetingEric_5febc517:
 
     # Eric_05 "Макс, давай сразу на ты. Никаких формальностей. Это же семейный ужин. Так что, давайте будем проще..."
-    Eric_05 "Let's go with first-name basis, Max. No need for formalities. It's a family dinner, let's take it easy..."
+    Eric_05 "Let's go on a first-name basis, Max. No need to be formal. It's a family dinner, let's take it easy..."
 
 # game/events/other.rpy:161
 translate english MeetingEric_696b9e70:
@@ -390,37 +390,37 @@ translate english MeetingEric_696b9e70:
 translate english MeetingEric_44fb47c0:
 
     # Eric_01 "Понятно. Видимо, Макс слишком скромный. Ну ничего страшного, я в его возрасте тоже смущался..."
-    Eric_01 "Looks like Max is modest. Well, nothing wrong with that, I was modest at his age too..."
+    Eric_01 "Looks like Max is shy. Well, nothing wrong with that, I was shy at his age too..."
 
 # game/events/other.rpy:168
 translate english MeetingEric_c0dc2202:
 
     # Max_08 "И ничего я не смущаюсь..."
-    Max_08 "I'm not modest..."
+    Max_08 "I'm not shy..."
 
 # game/events/other.rpy:171
 translate english MeetingEric_68dfdf17:
 
     # Eric_09 "И что со мной не так? Вот так с первого взгляда делаешь выводы о человеке? Не очень умно... Но для твоего возраста это нормально..." nointeract
-    Eric_09 "And what's wrong with me? We've just met, you don't know the first thing about me. You shouldn't judge people so quickly. But I guess it's normal for your age..." nointeract
+    Eric_09 "And what's wrong with me? It's not wise to jump right to conclusions about someone you've only just met. But you are young, so I understand your feelings. " nointeract
 
 # game/events/other.rpy:182
 translate english MeetingEric_good_53d048fe:
 
     # Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу." nointeract
-    Ann_07 "I'm glad you met and get along well. Now let's to the table. We have breakfast and dinner in the open air on the veranda, come take a look." nointeract
+    Ann_07 "I'm glad you've met and are getting along. Now let's to the table. We have breakfast and dinner in the open air on the veranda, come take a look." nointeract
 
 # game/events/other.rpy:192
 translate english MeetingEric_middle_6e04cd04:
 
     # Ann_17 "Макс, мы с тобой потом поговорим. Ну, Эрик, проходи к столу. Мы обычно ужинаем, да и завтракаем на открытом воздухе, тут у нас веранда..." nointeract
-    Ann_17 "Max! We'll talk later. Now let's to the table, Eric. We have breakfast and dinner in the open air on the veranda, come take a look." nointeract
+    Ann_17 "Max! We'll talk later. Now let's go to the table, Eric. We have breakfast and dinner in the open air on the veranda, come take a look." nointeract
 
 # game/events/other.rpy:202
 translate english MeetingEric_bad_2c10cf49:
 
     # Ann_20 "Макс! Ты почему себя так ведёшь? Это не только тебя не красит, но и меня позорит, что я тебя так воспитала!" nointeract
-    Ann_20 "Max! Why do you behave like this? Not only you cast yourself in a bad light, but you also disgrace me, I raised you better than this!" nointeract
+    Ann_20 "Max! Why do you behave like this? Not only do you make yourself look bad but you embarrass me as well! I raised you better than that!" nointeract
 
 # game/events/other.rpy:208
 translate english MeetingEric_bad_341bbd07:
@@ -432,7 +432,7 @@ translate english MeetingEric_bad_341bbd07:
 translate english MeetingEric_bad_9101ec96:
 
     # Ann_01 "Нет, Макс, это точно не нормально. Спишем на то, что ты голодный... Пойдём, Эрик, покажу где мы ужинаем, да и завтракаем. Макс, ты тоже иди ужинать."
-    Ann_01 "No, Max, it's not fine. Let us say that you're hungry... Come on, Eric, I'll show you where we have dinner and breakfast."
+    Ann_01 "No, Max, it's not okay. Let's just say you're in a bad mood because you're starving... Come on, Eric, I'll show you where we eat."
 
 # game/events/other.rpy:214
 translate english MeetingEric_bad_c246e424:
