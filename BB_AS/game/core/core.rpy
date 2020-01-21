@@ -61,10 +61,18 @@ label Waiting:
         $ pose3_1 = renpy.random.choice(["01", "02", "03"])
         $ pose3_2 = renpy.random.choice(["01", "02", "03"])
         $ pose3_3 = renpy.random.choice(["01", "02", "03"])
+        $ pose2_1 = renpy.random.choice(["01", "02"])
+        $ pose2_2 = renpy.random.choice(["01", "02"])
+        $ pose2_3 = renpy.random.choice(["01", "02"])
+        $ tv_scene = renpy.random.choice(["", "bj", "hj"])
         python:
             # сбросим подглядывания
             for key in peeping:
-                peeping[key] = 0
+                if key != "ann_eric_sex1":
+                    peeping[key] = 0
+
+    if prevday != day:
+        $ peeping["ann_eric_sex1"] = 0
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -148,7 +156,7 @@ label AfterWaiting:
 
     if __name_label != "" and renpy.has_label(__name_label):
         # управляющий блок найден и существует
-        call expression __name_label from _call_expression_1
+        call expression __name_label
     else:
         # устанавливаем фон комнаты без персонажей
         if current_room.cur_bg.find("_") >= 0:

@@ -54,10 +54,24 @@ init python:
             # добавим в новый список добавляемых расписаний дни без изменений, если список дней не пустой
             if len(list_of_day):
                 new_schedule.append(
-                    Schedule(list_of_day, ed.ts, ed.te, ed.name, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift, ed.weekstart,
-                             ed.variable, ed.enabletalk, ed.talklabel, ed.glow))
+                    Schedule(list_of_day,   # lod - кортеж дней недели для действия
+                            ed.ts,          # ts – время начала действия
+                            ed.te,          # te – время окончания действия
+                            ed.name,        # наименование действия
+                            ed.desc,        # описание действия
+                            ed.loc,         # локация
+                            ed.room,        # комната в локации
+                            ed.label,       # имя блока обработки события (формирует сцену или запускает действие)
+                            ed.krat,        # периодичность в неделях
+                            ed.shift,       # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
+                            ed.weekstart,   # номер стартовой недели
+                            ed.variable,    # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
+                            ed.enabletalk,  # возможность разговора
+                            ed.talklabel,   # блок обработки начала диалога (формирует сцену старта диалога)
+                            ed.glow))       # коэффициент эмоционального накала (интерес зрителей)
 
         new_schedule = set(new_schedule)
+        # new_schedule = list(new_schedule)
 
         # теперь определим границы времени днях, затронутых изменениями
         # и если остается время частично незатронутое изменениями,
@@ -66,13 +80,41 @@ init python:
             for nsh in added_sheds:
                 list_of_day = tuple(day for day in ed.lod if day in nsh.lod)
                 if ed.ts < nsh.ts < ed.te and len(list_of_day):
-                    new_schedule.append(
-                        Schedule(list_of_day, ed.ts, AddTime(nsh.ts, -1), ed.name, ed.desc, ed.loc, ed.room, ed.label, ed.krat,
-                                 ed.shift, ed.weekstart, ed.variable, ed.enabletalk, ed.talklabel, ed.glow))
+                    # new_schedule.append(
+                    new_schedule.add(
+                        Schedule(list_of_day,        # lod - кортеж дней недели для действия
+                                ed.ts,               # ts – время начала действия
+                                AddTime(nsh.ts, -1), # te – время окончания действия
+                                ed.name,             # наименование действия
+                                ed.desc,             # описание действия
+                                ed.loc,              # локация
+                                ed.room,             # комната в локации
+                                ed.label,            # имя блока обработки события (формирует сцену или запускает действие)
+                                ed.krat,             # периодичность в неделях
+                                ed.shift,            # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
+                                ed.weekstart,        # номер стартовой недели
+                                ed.variable,         # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
+                                ed.enabletalk,       # возможность разговора
+                                ed.talklabel,        # блок обработки начала диалога (формирует сцену старта диалога)
+                                ed.glow))            # коэффициент эмоционального накала (интерес зрителей)
                 if ed.ts < nsh.te < ed.te and len(list_of_day):
-                    new_schedule.append(
-                        Schedule(list_of_day, AddTime(nsh.te), ed.te, ed.name, ed.desc, ed.loc, ed.room, ed.label, ed.krat, ed.shift,
-                                 ed.weekstart, ed.variable, ed.enabletalk, ed.talklabel, ed.glow))
+                    # new_schedule.append(
+                    new_schedule.add(
+                        Schedule(list_of_day,        # lod - кортеж дней недели для действия
+                                AddTime(nsh.te),     # ts – время начала действия
+                                ed.te,               # te – время окончания действия
+                                ed.name,             # наименование действия
+                                ed.desc,             # описание действия
+                                ed.loc,              # локация
+                                ed.room,             # комната в локации
+                                ed.label,            # имя блока обработки события (формирует сцену или запускает действие)
+                                ed.krat,             # периодичность в неделях
+                                ed.shift,            # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
+                                ed.weekstart,        # номер стартовой недели
+                                ed.variable,         # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
+                                ed.enabletalk,       # возможность разговора
+                                ed.talklabel,        # блок обработки начала диалога (формирует сцену старта диалога)
+                                ed.glow))            # коэффициент эмоционального накала (интерес зрителей)
 
             # удалим старые строки из начального списка
             schedule.remove(ed)
@@ -140,7 +182,9 @@ init python:
         errors = set()
         skipped = set()
 
-        for day in range(max_week*7, (max_week + max_krat) * 7 * 2):  # удваиваем диаппазон на всякий случай
+        kolve = (max_week + max_krat) * 7 * 2
+
+        for day in range(max_week*7, kolve):  # удваиваем диаппазон на всякий случай
             start_skip = end_skip = ""
             for hour in range(24):
                 for minute in range(60):
@@ -623,6 +667,8 @@ init python:
                                                   (len(GetTalksTheme()) > 0 or
                                                    CurShedRec.talklabel is not None)
                                                 )
+        else:
+            AvailableActions["talk"].enabled = False
 
         # комната Макса и Лизы
         if current_room == house[0]:
@@ -660,10 +706,13 @@ init python:
             CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
             if CurShedRec.label == "alice_shower" and len(current_room.cur_char) == 1: # Алиса принимает душ одна
                 AvailableActions["throwspider3"].active = True
+
             if "06:00" <= tm <= "18:00" and max_profile.cleanness < 80:
                 AvailableActions["shower"].active = True
             if ("20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00") and max_profile.cleanness < 80:
                 AvailableActions["bath"].active = False #True - временно
+            AvailableActions["shower"].enable = len(current_room.cur_char) == 0
+            AvailableActions["bath"].enable = len(current_room.cur_char) == 0
 
         # гостиная
         if current_room == house[4]:
@@ -812,7 +861,7 @@ init python:
         elif char == "ann":
             if name == "sleep":
                 characters["ann"].dress_inf = "02"
-            elif name == "shower" or name == "bath":
+            elif name == "shower" or name == "bath" or name == "shower2":
                 characters["ann"].dress_inf = "04a"
             elif name == "yoga":
                 characters["ann"].dress_inf = "05"
@@ -864,12 +913,28 @@ init python:
                     characters["ann"].dress_inf = "01b"
             elif name == "tv":
                 characters["ann"].dress_inf = "04b"
+            elif name == "tv2":
+                pass
             else:
                 characters["ann"].dress = "a"
                 characters["ann"].dress_inf = "01a"
 
         elif char == "eric":
-            pass
+            if name == "dinner" or name == "rest" or name == "tv2":
+                characters["eric"].dress = cloth_type["ann"]["casual"]
+                if characters["eric"].dress == "a":
+                    characters["eric"].dress_inf = "01a"
+                else:
+                    characters["eric"].dress_inf = "01b"
+            elif name == "fuck" or name == "sleep":
+                characters["eric"].dress_inf = "00a"
+            elif name == "shower2":
+                characters["eric"].dress_inf = "00b"
+            else:
+                characters["eric"].dress_inf = "01"
+
+
+
 
 
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
@@ -959,8 +1024,14 @@ init python:
     def seat_Dinner(): # рассаживает семью за ужином
         renpy.scene()
         renpy.show("BG dinner 00") # общий фон
-        renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
+        if day == 4 or day == 11 or GetScheduleRecord(schedule_eric, day, tm).name == "dinner":
+            renpy.show("Ann dinner eric-0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
+        else:
+            renpy.show("Ann dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["ann"].dress)
         renpy.show("Alice dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["alice"].dress)
         renpy.show("Lisa dinner 0"+renpy.random.choice(["1", "2", "3"])+characters["lisa"].dress)
-        renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])) # стол
+        if day == 4 or day == 11 or GetScheduleRecord(schedule_eric, day, tm).name == "dinner":
+            renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])+"a") # стол
+        else:
+            renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])) # стол
         renpy.show("Max dinner 0"+renpy.random.choice(["1", "2", "3"])+max_profile.dress)

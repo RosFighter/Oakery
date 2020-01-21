@@ -295,7 +295,8 @@ label ann_alice_sun:
 
 
 label ann_alice_swim:
-    $ renpy.scene("BG char Ann Alice swim-"+pose3_1)
+    $ renpy.scene()
+    $ renpy.show("BG char Ann Alice 2swim-"+pose3_1)
     return
 
 

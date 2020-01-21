@@ -256,19 +256,19 @@ translate english lisa_dressed_school_open_door_6e7aee99_2:
 translate english lisa_dressed_shop_lisa_dressed_a44136df:
 
     # Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..." nointeract
-    Max_09 "I think everyone is going shopping and Lisa is getting changed..." nointeract
+    Max_09 "I think everyone is getting ready to go shopping and Lisa is getting changed..." nointeract
 
 # game/events/lisa.rpy:341
 translate english lisa_dressed_shop_knock_869e0bce:
 
     # Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!" nointeract
-    Lisa "{b}Lisa:{/b} Who's in there? I'm getting dressed!" nointeract
+    Lisa "{b}Lisa:{/b} Who's there? I'm getting dressed!" nointeract
 
 # game/events/lisa.rpy:344
 translate english lisa_dressed_shop_knock_056fd501:
 
     # Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там." nointeract
-    Lisa "{b}Lisa:{/b} No, Max, you can't! I'm changing, wait there." nointeract
+    Lisa "{b}Lisa:{/b} No, you can't! I'm changing, wait there." nointeract
 
 # game/events/lisa.rpy:381
 translate english lisa_dressed_shop_open_door_92474c24:
@@ -304,7 +304,7 @@ translate english lisa_dressed_repetitor_6d6b727b:
 translate english lisa_bath_96660cea:
 
     # Max_00 "В это время Лиза обычно плескается в ванне..." nointeract
-    Max_00 "At this time of day Lisa is usually taking a bath..." nointeract
+    Max_00 "At this time of day Lisa is usually in the bath..." nointeract
 
 # game/events/lisa.rpy:498
 translate english lisa_bath_26dcc088:
