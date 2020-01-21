@@ -1415,7 +1415,7 @@ translate english breakfast_4_ba073505:
 translate english breakfast_4_eb10555f:
 
     # Max_07 "Что особенно? Подробнее, пожалуйста..."
-    Max_07 "When she...? More details, please!{i}continue{/i}"
+    Max_07 "When she...? More details, please!"
 
 # game/dialogues/breakfast.rpy:577
 translate english breakfast_4_f28b7a83:
@@ -1486,4 +1486,226 @@ translate english strings:
     # game/dialogues/breakfast.rpy:559
     old "Да я рад..."
     new "Yeah, I'm happy..."
+
+# TODO: Translation updated at 2020-01-22 01:13
+
+# game/dialogues/breakfast.rpy:587
+translate english breakfast_5_c534ecf6:
+
+    # Ann_01 "Всем доброе утро, приятного аппетита..."
+    Ann_01 "Good morning, everyone, bon appetit..."
+
+# game/dialogues/breakfast.rpy:588
+translate english breakfast_5_8cd1cf54:
+
+    # Max_07 "Ну что, как всё прошло?"
+    Max_07 "So, how everything went?"
+
+# game/dialogues/breakfast.rpy:589
+translate english breakfast_5_717457d5:
+
+    # Ann_14 "Ты о чём, Макс? Я не понимаю..." nointeract
+    Ann_14 "What are you talking about, Max?" nointeract
+
+# game/dialogues/breakfast.rpy:595
+translate english breakfast_5_c980ce82:
+
+    # Ann_01 "Всё в порядке, спасибо. Не думаю, что стоит это сейчас обсуждать..."
+    Ann_01 "It was fine, thank you. I don't think we should discuss it..."
+
+# game/dialogues/breakfast.rpy:596
+translate english breakfast_5_80f63239:
+
+    # Max_00 "Как скажешь, мам..."
+    Max_00 ""
+
+# game/dialogues/breakfast.rpy:597
+translate english breakfast_5_750a3c2d:
+
+    # Lisa_02 "А ты часто теперь будешь к нему ездить так... на ночь?"
+    Lisa_02 "Okay, mom..."
+
+# game/dialogues/breakfast.rpy:598
+translate english breakfast_5_38fbc66e:
+
+    # Max_09 "Хороший вопрос..."
+    Max_09 "Good question..."
+
+# game/dialogues/breakfast.rpy:599
+translate english breakfast_5_def57d9e:
+
+    # Ann_12 "Лиза, я даже не знаю что тебе сказать... Я и Эрик... нравимся друг другу. И иногда он будет приходить к нам. Иногда я к нему. Это нормально для взрослых. Ты же меня понимаешь?"
+    Ann_12 "I don't know what to tell you, Lisa... Eric and I like each other. Sometimes he'll stay here, sometimes I'll stay at his home. It's normal for adults. You understand me, right?"
+
+# game/dialogues/breakfast.rpy:600
+translate english breakfast_5_97033bef:
+
+    # Alice_04 "Да всё мы понимаем, мам. Не переживай. Просто, ты так долго была одна и тут такой... Эрик... Мы очень рады, что у тебя налаживается твоя личная жизнь. И мы не будем тебе мешать, да, Макс?" nointeract
+    Alice_04 "We understand it, mom, don't worry. It's just, you were alone for so long and now you have someone so great. We're very happy for you and we won't stand in your way. Right, Max?" nointeract
+
+# game/dialogues/breakfast.rpy:606
+translate english breakfast_5_fb058679:
+
+    # Ann_05 "Я очень рада, что вы у меня такие... сообразительные."
+    Ann_05 "I'm very happy you understand."
+
+# game/dialogues/breakfast.rpy:607
+translate english breakfast_5_5c0dc787:
+
+    # Max_07 "Значит, Эрик будет и к нам приходить на ночь?"
+    Max_07 "So, does this means Eric will stay over sometimes?"
+
+# game/dialogues/breakfast.rpy:608
+translate english breakfast_5_6cc34a64:
+
+    # Alice_01 "Макс! Ну вот опять. Мы же сказали, что не будем вмешиваться и лезть с вопросами..."
+    Alice_01 "Max! We just said we're not going to meddle in her private life with all those questions."
+
+# game/dialogues/breakfast.rpy:609
+translate english breakfast_5_2db47011:
+
+    # Max_08 "Да я просто спросил..."
+    Max_08 "What, I just asked..."
+
+# game/dialogues/breakfast.rpy:610
+translate english breakfast_5_2e9a76d0:
+
+    # Ann_01 "Да всё в порядке, Алиса. Я понимаю, Максу любопытно. Это же и нарушение вашего личного пространства, когда кто-то посторонний начинает посещать наш общий дом." nointeract
+    Ann_01 "It's fine, Alice. It's a perfectly normal question, there will me a new person in our home, it's an invasion of your personal space." nointeract
+
+# game/dialogues/breakfast.rpy:616
+translate english breakfast_5_d75ec0ba:
+
+    # Ann_12 "Ещё рано об этом говорить, но... может быть... будем с ним встречаться через день-два, то у него, то у нас... Может быть..." nointeract
+    Ann_12 "It may be too early to say, but... maybe... I think we'll switch it up every other day. One day here, one day at his place." nointeract
+
+# game/dialogues/breakfast.rpy:619
+translate english breakfast_5_6aaaaa8a:
+
+    # Alice_09 "Макс! Это уже не смешно. Завязывай с допросом. Мама сама разберётся когда ей и с кем встречаться! Да, мам?"
+    Alice_09 "This isn't funny anymore, Max! Enough with the questions. Mom can decide it no her own. Right, mom?"
+
+# game/dialogues/breakfast.rpy:620
+translate english breakfast_5_e1ca2730:
+
+    # Ann_00 "Да, Алиса. Если вы все подружитесь с Эриком, я буду очень рада. Для меня это очень важно. Ну а пока, хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
+    Ann_00 "Yes. And if you'll get along with Eric, you'll make me very happy. It's very important for me. But that's enough of that. Looks like the breakfast is over. Thank you, everyone."
+
+# game/dialogues/breakfast.rpy:621
+translate english breakfast_5_37c01b98:
+
+    # Max_00 "Спасибо..."
+    Max_00 "Thanks..."
+
+# game/dialogues/breakfast.rpy:624
+translate english breakfast_5_654c0ab6:
+
+    # Ann_14 "Ну пока рано об этом говорить. Мы только познакомились. Посмотрим, может быть, однажды..."
+    Ann_14 "It's too early to talk about it, we've just met. But we'll see, maybe one day..."
+
+# game/dialogues/breakfast.rpy:625
+translate english breakfast_5_5d531f6c:
+
+    # Max_08 "Ого!"
+    Max_08 "Wow!"
+
+# game/dialogues/breakfast.rpy:626
+translate english breakfast_5_0c66c488:
+
+    # Ann_01 "Макс, я уже сказала, что это возможно, но будет ли и когда - неизвестно. Так что, не будем гадать. Кстати, завтрак затянулся... Всем большое спасибо!"
+    Ann_01 "I just said it's possible, Max. But it's too early to guess whether it will actually ever happen. By the way, looks like the breakfast is over. Thank you, everyone."
+
+# game/dialogues/breakfast.rpy:627
+translate english breakfast_5_37c01b98_1:
+
+    # Max_00 "Спасибо..."
+    Max_00 "Thanks..."
+
+# game/dialogues/breakfast.rpy:630
+translate english breakfast_5_7b8f5a70:
+
+    # Ann_01 "Макс! Не говори глупостей. Я ваша мать и буду рядом с вами, конечно. Никуда я не уеду. Не переживай."
+    Ann_01 "Of course not, Max! I'm your mother and I'll live with you. Don't worry, I won't leave you."
+
+# game/dialogues/breakfast.rpy:631
+translate english breakfast_5_2c426155:
+
+    # Max_04 "Это хорошо..."
+    Max_04 "This is good..."
+
+# game/dialogues/breakfast.rpy:633
+translate english breakfast_5_b0c67912:
+
+    # Ann_05 "В любом случае, для вас ничего не изменится. А если вы подружитесь с Эриком, я буду очень рада!" nointeract
+    Ann_05 "Anyway, it won't change anything for you. And if you'll get along with Eric, you'll make me very happy." nointeract
+
+# game/dialogues/breakfast.rpy:638
+translate english breakfast_5_3ebe962a:
+
+    # Ann_00 "Очень жаль, Макс, что ты так настроен. Эрик очень хороший человек и мне кажется, ты просто в нём не разглядел то, что вижу я. Но хватит об Эрике. Завтрак затянулся. Всем большое спасибо!"
+    Ann_00 "Too bad you think that, Max. Eric is a very nice person and I think you just haven't seen it yet. But enough about Eric. Breakfast is over, thanks, everyone."
+
+# game/dialogues/breakfast.rpy:639
+translate english breakfast_5_37c01b98_2:
+
+    # Max_00 "Спасибо..."
+    Max_00 "Thanks..."
+
+# game/dialogues/breakfast.rpy:641
+translate english breakfast_5_ecb96749:
+
+    # Ann_05 "Конечно, я буду очень рада, если вы все найдёте общий язык с Эриком и подружитесь. Но хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
+    Ann_05 "If you'll get along with Eric, you'll make me very happy. But enough about him. Looks like the breakfast is over. Thanks you, everyone."
+
+# game/dialogues/breakfast.rpy:642
+translate english breakfast_5_37c01b98_3:
+
+    # Max_00 "Спасибо..."
+    Max_00 "Thanks..."
+
+translate english strings:
+
+    # game/dialogues/breakfast.rpy:589
+    old "Как о чём? Про ночь с Эриком!"
+    new "I'm talking about your night with Eric!"
+
+    # game/dialogues/breakfast.rpy:589
+    old "Я про визит к Эрику..."
+    new "How was your evening?"
+
+    # game/dialogues/breakfast.rpy:600
+    old "А что сразу я? Но да, я согласен с Алисой..."
+    new "Why do you ask me? But yes, I agree with Alice"
+
+    # game/dialogues/breakfast.rpy:610
+    old "Да, вот интересно, как часто он будет нарушать это пространство..."
+    new ""Yes, I want to know how often he'll invade our personal space...
+
+    # game/dialogues/breakfast.rpy:610
+    old "Ага, мне просто любопытно..."
+    new "Yeah, I'm just curious..."
+
+    # game/dialogues/breakfast.rpy:616
+    old "Ого, так часто?"
+    new "Wow, so often?"
+
+    # game/dialogues/breakfast.rpy:616
+    old "Может, ему переехать сюда тогда?"
+    new "Maybe he'll just move in here?"
+
+    # game/dialogues/breakfast.rpy:616
+    old "Может, тебе к нему переехать?"
+    new "Maybe you'll just move in to his house?"
+
+    # game/dialogues/breakfast.rpy:616
+    old "Понятно..."
+    new "I see..."
+
+    # game/dialogues/breakfast.rpy:633
+    old "Может быть..."
+    new "Maybe..."
+
+    # game/dialogues/breakfast.rpy:633
+    old "Никогда!"
+    new "Never!"
 

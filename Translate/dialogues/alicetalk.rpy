@@ -660,7 +660,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:316
     old "Спасибо, кэп!"
-    new "Thanks!"
+    new "Thanks, Cap!"
 
     # game/dialogues/alicetalk.rpy:316
     old "Очень смешно..."

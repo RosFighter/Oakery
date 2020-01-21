@@ -772,3 +772,217 @@ translate english strings:
     old "Я тоже люблю клубы!"
     new "I love clubs too!"
 
+# TODO: Translation updated at 2020-01-21 17:18
+
+# game/dialogues/dinner.rpy:287
+translate english dinner_4_19ed47e5:
+
+    # Ann_05 "Я рада, что все мы вместе сегодня смогли собраться. Наконец-то, все познакомились с Эриком!"
+    Ann_05 "I'm glad we're all here together, finally everyone got to meet Eric!"
+
+# game/dialogues/dinner.rpy:288
+translate english dinner_4_f786a14a:
+
+    # Lisa_03 "Да, Эрик классный! Кстати, это он мне и посоветовал тот купальник... Вот только мама не дала его купить..."
+    Lisa_03 "Yeah, Eric is great! By the way, he's the one who recommended a swimsuit for me. Too bad mom decided not to buy it."
+
+# game/dialogues/dinner.rpy:289
+translate english dinner_4_6d0031c1:
+
+    # Max_07 "Какой купальник?"
+    Max_07 "What swimsuit?"
+
+# game/dialogues/dinner.rpy:290
+translate english dinner_4_70506d70:
+
+    # Lisa_02 "Ну тот, дизайнерский какой-то. Он так хорошо на мне сидел. Эрик сказал, что идеально!"
+    Lisa_02 "There was this designer one, I think. It looked really good on me, Eric said is was perfect!"
+
+# game/dialogues/dinner.rpy:291
+translate english dinner_4_f7058ec9:
+
+    # Eric_01 "Да, купальник был отличный, но я уважаю решение Ани и понимаю, почему не стали покупать. Ну, нет, так нет..."
+    Eric_01 "Yes, it was a great swimsuit, but I understand Ann's decision."
+
+# game/dialogues/dinner.rpy:292
+translate english dinner_4_f390e9d0:
+
+    # Ann_05 "Спасибо, Эрик. Ты такой заботливый и внимательный..." nointeract
+    Ann_05 "Thanks, Eric. You're so kind and attentive..." nointeract
+
+# game/dialogues/dinner.rpy:297
+translate english dinner_4_ba2cf0bd:
+
+    # Ann_13 "Что такое, Макс? Что-то не свежее попалось?"
+    Ann_13 "What? Is your food got bad?"
+
+# game/dialogues/dinner.rpy:298
+translate english dinner_4_af37ddf8:
+
+    # Max_14 "Да нет, всё в порядке..."
+    Max_14 "No, everything's fine..."
+
+# game/dialogues/dinner.rpy:299
+translate english dinner_4_2572e6bf:
+
+    # Lisa_09 "Тем не менее, купальник мне всё ещё нужен. В закрытом я не могу загорать, а очень хочется..." nointeract
+    Lisa_09 "Anyway, I still need the swimsuit. I can't tan in the closed one." nointeract
+
+# game/dialogues/dinner.rpy:304
+translate english dinner_4_d0a6b048:
+
+    # Lisa_13 "Очень смешно, Макс. Загорай сам как хочешь, а мне нужен купальник!"
+    Lisa_13 "Very funny, Max. You can tan however you like yourself, but I need a swimsuit!"
+
+# game/dialogues/dinner.rpy:305
+translate english dinner_4_ff02b2d1:
+
+    # Max_09 "Ну, как хочешь. Моё дело предложить решение..."
+    Max_09 "I was just trying to help..."
+
+# game/dialogues/dinner.rpy:306
+translate english dinner_4_f6e8b059:
+
+    # Eric_05 "Лиза, я тебе обещаю, что если вместе поедем на шоппинг через неделю, я тебе куплю отличный купальник. Конечно, не дизайнерский, но красивый и такой, в котором сможешь загорать! Это будет мой подарок тебе." nointeract
+    Eric_05 "I promise you, Lisa, if we'll go shopping next week I'll buy you a new swimsuit. Not designer one, but it will be cute and open, so you'll be able to tan in it. It will be my present to you." nointeract
+
+# game/dialogues/dinner.rpy:312
+translate english dinner_4_74949cf6:
+
+    # Ann_14 "Эрик, ну не стоит же её так баловать..."
+    Ann_14 "You shouldn't spoil her, Eric..."
+
+# game/dialogues/dinner.rpy:313
+translate english dinner_4_c6597fba:
+
+    # Alice_02 "Если что, то мне тоже ничего не купили..." nointeract
+    Alice_02 "We haven't bought anything for me either..." nointeract
+
+# game/dialogues/dinner.rpy:319
+translate english dinner_4_dab367c7:
+
+    # Eric_00 "Точно, Алиса. Ты хотела какое-то платье, вроде бы... Верно?"
+    Eric_00 "Oh, yeah, you wanted to buy something too, right?"
+
+# game/dialogues/dinner.rpy:320
+translate english dinner_4_4ac6b15c:
+
+    # Ann_01 "По заднице она хотела! Платье ей нужно, чтобы по ночным клубам шастать, задом вилять. Я её хорошо знаю. Поэтому, я и была против..." nointeract
+    Ann_01 "She wanted to get her ass spanked! She wants a dress to go to the clubs and do who knows what. I know her and that's why I didn't want to buy her anything..." nointeract
+
+# game/dialogues/dinner.rpy:327
+translate english dinner_4_129d1f43:
+
+    # Eric_05 "Ань, а ты бываешь строгая, как я погляжу... Мне кажется, тебе стоит Алисе разрешить ходить в клубы. К тому же, она почти взрослая..."
+    Eric_05 "You're quite strict sometimes, Ann... I think you should let Alice go to clubs, she's an adult..."
+
+# game/dialogues/dinner.rpy:328
+translate english dinner_4_ceb18512:
+
+    # Ann_12 "Ну, Эрик, раз ты так считаешь, то конечно. Я и сама в её возрасте немного шалила..." nointeract
+    Ann_12 "Okay, Eric, if you think so... I liked to party in her age too..." nointeract
+
+# game/dialogues/dinner.rpy:334
+translate english dinner_4_259ec354:
+
+    # Alice_07 "Эрик! Я тебя обожаю! Тебе удалось переубедить маму! Это невероятно. Спасибо, тебе!!!"
+    Alice_07 "I love you, Eric! You've managed to change mom's opinion! It's impossible, thank you!!!"
+
+# game/dialogues/dinner.rpy:335
+translate english dinner_4_805d016f:
+
+    # Eric_05 "Да не стоит, пустяки. А чтобы ваш семейный бюджет не просел, я сам подарю тебе платье для клуба, какое скажешь. Через неделю." nointeract
+    Eric_05 "Don't worry about it. I'll buy you a dress next week so your mom won't have to spent too much money on it." nointeract
+
+# game/dialogues/dinner.rpy:339
+translate english dinner_4_10f0359a:
+
+    # Ann_05 "Эрик, ну не стоит, я и сама могу купить ей платье. Просто, переживаю..." nointeract
+    Ann_05 "You don't have to, Eric, I can buy her a dress myself. I just worry about her." nointeract
+
+# game/dialogues/dinner.rpy:349
+translate english dinner_4_dfd14d5b:
+
+    # Alice_02 "Спасибо, Эрик! Ты и правда лучший! Буду ждать следующей субботы!"
+    Alice_02 "Thank you Eric, you're the best! I can't wait!"
+
+# game/dialogues/dinner.rpy:350
+translate english dinner_4_440f8c26:
+
+    # Ann_00 "Так, ладно. Спасибо всем за ужин. Мы сейчас с Эриком уедем и вернусь завтра утром. Надеюсь, вопросов не возникнет, да? Алиса за старшую, а остальным - не шалите, хорошо?" nointeract
+    Ann_00 "Okay, thanks for the dinner, everyone. Eric and I are leaving, I'll return tomorrow morning. Alice's in charge, behave, everyone." nointeract
+
+# game/dialogues/dinner.rpy:353
+translate english dinner_4_8efb9883:
+
+    # Ann_02 "Спасибо, Макс за пожелание, конечно. В общем, ведите себя хорошо тут."
+    Ann_02 "Thanks, Max. Be good."
+
+# game/dialogues/dinner.rpy:354
+translate english dinner_4_25aa812b:
+
+    # Max_01 "Конечно!"
+    Max_01 "Of course!"
+
+# game/dialogues/dinner.rpy:356
+translate english dinner_4_1a653e5d:
+
+    # Ann_05 "Вот и молодцы. Давайте не ругайтесь, не ссорьтесь. Если что - звоните, я сразу приеду..."
+    Ann_05 "Great. Don't fight, if something happens, call me and I'll be here..."
+
+# game/dialogues/dinner.rpy:357
+translate english dinner_4_9b836c58:
+
+    # Max_04 "Конечно!"
+    Max_04 "Of course!"
+
+# game/dialogues/dinner.rpy:359
+translate english dinner_4_2a409626:
+
+    # Ann_14 "Макс, твои глупые вопросы меня смущают. В общем, не теряйте, утром вернусь..."
+    Ann_14 "Come on, Max, what kind of question is that? Anyway, I'll be home in the morning."
+
+# game/dialogues/dinner.rpy:360
+translate english dinner_4_f3fba9dc:
+
+    # Max_00 "Ладно, мам..."
+    Max_00 "Okay, mom..."
+
+translate english strings:
+
+    # game/dialogues/dinner.rpy:292
+    old "А меня сейчас стошнит..."
+    new "I'm going to puke..."
+
+    # game/dialogues/dinner.rpy:299
+    old "Да загорай голая!"
+    new "You can tan naked, is you want to"
+
+    # game/dialogues/dinner.rpy:313
+    old "Попрошайка!"
+    new "Beggar!"
+
+    # game/dialogues/dinner.rpy:320
+    old "И правильно!"
+    new "That's right!"
+
+    # game/dialogues/dinner.rpy:328
+    old "Подробнее, пожалуйста..."
+    new "Tell us more..."
+
+    # game/dialogues/dinner.rpy:335
+    old "{i}О нет...{/i}"
+    new "{i}Oh no...{/i}"
+
+    # game/dialogues/dinner.rpy:339
+    old "И правильно делаешь!"
+    new "As you should!"
+
+    # game/dialogues/dinner.rpy:350
+    old "Повеселитесь там, как следует!"
+    new "Have a good time!"
+
+    # game/dialogues/dinner.rpy:350
+    old "А что вы будете делать?"
+    new "What are you going to do?"
+

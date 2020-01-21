@@ -139,7 +139,7 @@ translate english strings:
     new "Max"
 
     # game/core/03variables.rpy:33
-    old "Всегда в поисках приключений на свою пятую точку"
+    old "Всегда в поисках приключений на свою пятую точку."
     new "Always looking for new thrills and adventures."
 
     # game/core/03variables.rpy:46
@@ -756,4 +756,31 @@ translate english strings:
     # game/core/03variables.rpy:327
     old "Всё получилось. И прошло как-то... слишком неожиданно. О таком даже не принято никому рассказывать. Видимо, лишняя капля алкоголя сорвала Алисе крышу и она напилась в ночном клубе. Ну что же, будем надеяться, что она сама ничего не помнит об этом, а иначе мне не жить..."
     new "Everything worked out fine. And quite... unexpectedly. Can't tell anyone about this. I guess Alice lost her inhibitions and got herself drunk at the club. Let's hope she won't remember anything, or I'm a goner..."
+# TODO: Translation updated at 2020-01-22 01:13
+
+translate english strings:
+
+    # game/core/03variables.rpy:436
+    old "Эрик"
+    new ""
+
+    # game/core/03variables.rpy:436
+    old "Эрика"
+    new ""
+
+    # game/core/03variables.rpy:436
+    old "Эрику"
+    new ""
+
+    # game/core/03variables.rpy:436
+    old "Эриком"
+    new ""
+
+    # game/core/03variables.rpy:436
+    old "Эрике"
+    new ""
+
+    # game/core/03variables.rpy:436
+    old "Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."
+    new ""
 
