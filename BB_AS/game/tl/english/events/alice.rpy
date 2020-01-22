@@ -306,3 +306,51 @@ translate english strings:
     old "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
     new "{i}Continue watching\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
 
+# TODO: Translation updated at 2020-01-22 13:53
+
+# game/events/alice.rpy:31
+translate english alice_bath_6a58c36d:
+
+    # Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+    Max_01 ""
+
+# game/events/alice.rpy:35
+translate english alice_bath_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/alice.rpy:43
+translate english alice_bath_40583688:
+
+    # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
+    Max_03 "" nointeract
+
+# game/events/alice.rpy:48
+translate english alice_bath_5529b0b9:
+
+    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
+    Max_05 "" nointeract
+
+# game/events/alice.rpy:57
+translate english alice_bath_5529b0b9_1:
+
+    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
+    Max_05 "" nointeract
+
+# game/events/alice.rpy:62
+translate english alice_bath_98712b50:
+
+    # Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!" nointeract
+    Max_07 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:10
+    old "{i}установить стремянку{/i}"
+    new ""
+
+    # game/events/alice.rpy:43
+    old "{i}смотреть ещё{/i}"
+    new ""
+

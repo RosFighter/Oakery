@@ -17,17 +17,60 @@ label alice_bath:
                         Max_00 "Ладно, ладно..."
                     "{i}уйти{/i}":
                         pass
-            "{i}заглянуть со двора{/i}":
+            "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
                 scene Alice bath 01
                 $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
                 Max_00 "Кажется, Алиса и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но подходить ближе опасно - может заметить..."
                 menu:
                     Max_09 "Нужно что-нибудь придумать..."
                     "{i}уйти{/i}":
-                        pass
+                        $ flags["ladder"] = 1
+            "{i}установить стремянку{/i}" if items["ladder"].have:
+                scene BG char Max bathroom-window-00
+                $ renpy.show("Max bathroom-window 01"+max_profile.dress)
+                Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+
+                $ renpy.scene()
+                $ renpy.show("Max bathroom-window 02"+max_profile.dress)
+                Max_04 "Посмотрим, что у нас тут..."
+
+                $ __r1 = renpy.random.randint(1, 4)
+
+                scene BG bath-00
+                $ renpy.show("Alice bath-window 0"+str(__r1))
+                show FG bath-00
+                if __r1 == 1:
+                    menu:
+                        Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..."
+                        "{i}смотреть ещё{/i}":
+                            $ spent_time += 10
+                            $ renpy.show("Alice bath-window "+renpy.random.choice(["02", "03", "04"]))
+                            menu:
+                                Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
+                                "{i}уйти{/i}":
+                                    $ spent_time += 10
+                                    $ characters["alice"].dress_inf = "00aa"
+                                    jump .end
+                        "{i}уйти{/i}":
+                            pass
+                else:
+                    menu:
+                        Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
+                        "{i}смотреть ещё{/i}":
+                            $ spent_time += 10
+                            show Alice bath-window 05
+                            menu:
+                                Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
+                                "{i}уйти{/i}":
+                                    $ spent_time += 10
+                                    $ characters["alice"].dress_inf = "04aa"
+                                    pass
+                        "{i}уйти{/i}":
+                            pass
+
             "{i}уйти{/i}":
                 pass
-        $ spent_time = 10
+        $ spent_time += 10
         jump Waiting
     return
 

@@ -342,21 +342,67 @@ label ann_bath:
                         Max_00 "Ага..."
                     "{i}уйти{/i}":
                         pass
-            "{i}заглянуть со двора{/i}":
+            "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
                 scene Ann bath 01
                 $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
                 Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
                 menu:
                     Max_09 "Нужно что-нибудь придумать..."
                     "{i}уйти{/i}":
-                        pass
+                        $ flags["ladder"] = 1
+            "{i}установить стремянку{/i}" if items["ladder"].have:
+                scene BG char Max bathroom-window-00
+                $ renpy.show("Max bathroom-window 01"+max_profile.dress)
+                Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+
+                $ renpy.scene()
+                $ renpy.show("Max bathroom-window 02"+max_profile.dress)
+                Max_04 "Посмотрим, что у нас тут..."
+
+                $ __r1 = renpy.random.randint(1, 4)
+
+                scene BG bath-00
+                $ renpy.show("Ann bath-window 0"+str(__r1))
+                show FG bath-00
+                if __r1 == 1:
+                    menu:
+                        Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..."
+                        "{i}смотреть ещё{/i}":
+                            $ spent_time += 10
+                            $ renpy.show("Ann bath-window "+renpy.random.choice(["02", "03", "04"]))
+                            menu:
+                                Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
+                                "{i}уйти{/i}":
+                                    $ spent_time += 10
+                                    $ characters["ann"].dress_inf = "00a"
+                                    jump .end
+                        "{i}уйти{/i}":
+                            jump .end
+                else:
+                    menu:
+                        Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
+                        "{i}смотреть ещё{/i}":
+                            $ spent_time += 10
+                            show Ann bath-window 05
+                            menu:
+                                Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
+                                "{i}уйти{/i}":
+                                    $ spent_time += 10
+                                    $ characters["ann"].dress_inf = "04a"
+                                    jump .end
+                        "{i}уйти{/i}":
+                            jump .end
+
             "{i}уйти{/i}":
                 pass
         label .end:
             $ config.menu_include_disabled = False
             # $ current_room, prev_room = prev_room, current_room
-            $ spent_time = 10
+            $ spent_time += 10
             jump Waiting
+
+        label .phrase:
+
     return
 
 

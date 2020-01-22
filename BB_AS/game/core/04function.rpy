@@ -711,9 +711,9 @@ init python:
             if "06:00" <= tm <= "18:00" and max_profile.cleanness < 80:
                 AvailableActions["shower"].active = True
             if ("20:00" <= tm <= "23:59" or "00:00" <= tm <= "04:00") and max_profile.cleanness < 80:
-                AvailableActions["bath"].active = False #True - временно
-            AvailableActions["shower"].enable = len(current_room.cur_char) == 0
-            AvailableActions["bath"].enable = len(current_room.cur_char) == 0
+                AvailableActions["bath"].active = True #True - временно
+            AvailableActions["shower"].enabled = len(current_room.cur_char) == 0
+            AvailableActions["bath"].enabled = len(current_room.cur_char) == 0
 
         # гостиная
         if current_room == house[4]:

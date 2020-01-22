@@ -487,12 +487,56 @@ label lisa_bath:
                 jump .knock
             "{i}открыть дверь{/i}":
                 jump .open
-            "{i}заглянуть со двора{/i}":
+            "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
                 scene Lisa bath 01
                 $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
                 Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
                 Max_09 "Нужно что-нибудь придумать..."
+                $ flags["ladder"] = 1
                 jump .end_peeping
+            "{i}установить стремянку{/i}" if items["ladder"].have:
+                scene BG char Max bathroom-window-00
+                $ renpy.show("Max bathroom-window 01"+max_profile.dress)
+                Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+
+                $ renpy.scene()
+                $ renpy.show("Max bathroom-window 02"+max_profile.dress)
+                Max_04 "Посмотрим, что у нас тут..."
+
+                $ __r1 = renpy.random.randint(1, 4)
+
+                scene BG bath-00
+                $ renpy.show("Lisa bath-window 0"+str(__r1))
+                show FG bath-00
+                if __r1 == 1:
+                    menu:
+                        Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
+                        "{i}смотреть ещё{/i}":
+                            $ spent_time += 10
+                            $ renpy.show("Lisa bath-window "+renpy.random.choice(["02", "03", "04"]))
+                            menu:
+                                Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
+                                "{i}уйти{/i}":
+                                    $ spent_time += 10
+                                    $ characters["lisa"].dress_inf = "00a"
+                                    jump .end_peeping
+                        "{i}уйти{/i}":
+                            jump .end_peeping
+                else:
+                    menu:
+                        Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
+                        "{i}смотреть ещё{/i}":
+                            $ spent_time += 10
+                            show Lisa bath-window 05
+                            menu:
+                                Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
+                                "{i}уйти{/i}":
+                                    $ spent_time += 10
+                                    $ characters["lisa"].dress_inf = "04a"
+                                    jump .end_peeping
+                        "{i}уйти{/i}":
+                            jump .end_peeping
+
             "{i}уйти{/i}":
                 jump .end_peeping
 
