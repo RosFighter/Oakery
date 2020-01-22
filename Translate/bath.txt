@@ -1,45 +1,64 @@
 
 "{i}установить стремянку{/i}"
+"{i}Set up the stepladder{/i}."
 
 "{i}смотреть ещё{/i}"
+"{i}Keep watching{/i}
 
 ### Max looks in the bathroom window from the stepladder
 
 Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+Max_01 "I hope no one questions why there's a stepladder here...it's purely for investigative purposes...now let's see what we're dealing with."
+
 
 
 
 Max_04 "Посмотрим, что у нас тут..."
+Max_04 "Let's see what we got here..."
 
 
 ### In the bathroom mom
 
 Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..."
+Max_03 "Oh, how hot! And I don't mean the water. Uhh... Mom looks amazing..."
+
 
 
 Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
+Max_05 "Wow, amazing! Here firm tits and those long, slender legs will drive anyone crazy..."
 
 
 Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
+Max_07 "Eh! Looks like the fun part's over... Although, watching Mom wipe her wet and seductive body is just as enjoyable! Oh, what an ass she's got..."
 
 
 ### Alice in the bathroom
 
 
 Max_03 "Вот это повезло! Алиса как раз собирается принять ванну… Её шикарная попка меня просто завораживает! Так бы любовался и любовался…"
+Max_03 "What luck! Alice's just about to take a bath... Her gorgeous ass begging to be spanked! That's how I'd like it to be admired..."
+
 
 
 Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью… Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна…"
+Max_05 "Hell, is she teasing me on purpose with her soapy breasts? Big sis might be a bitch, but she's hot! Very sexy..."
+
 
 Max_07 "Эх! Самое интересное продолжалось недолго… Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
+Max_07 "Eh! My favourite part didn't last long... The only thing left to do is enjoy her ass!"
+
 
 
 ### В ванной Лиза
 
 
 Max_03 "Кажется, Лиза как раз собирается принять ванну… О да, моя младшая сестрёнка хороша… а голенькая, так особенно!"
+Max_03 "I think Lisa is just about to take a bath... Oh yeah, my little sister's innocent body is so tempting!"
 
 
 Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было…"
+Max_05 "I'm in luck! Lisa's shwowing of her bare tits like it's on purpose! Of course, she doesn't know I'm here..."
 
 Max_07 "Эх! Вот и закончились водные процедуры… Ухх… И с этой обворожительной киской я живу в одной комнате! Красота…"
+Max_07 "Eh! I get to sleep in the same room as that honeypot! Beautiful..."
+
