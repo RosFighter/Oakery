@@ -206,31 +206,31 @@ translate english eric_ann_fucking_d45f853e:
 translate english eric_ann_fucking_4ac6ccab:
 
     # Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nБоже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
-    Max_10 "{color=[lime]}{i}You went unnoticed!{/i} \nMy God, what's mom doing?! Does she really like sucking that jerk off?!" nointeract
+    Max_10 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nMy God, what's mom doing?! Does she really like sucking that jerk off?!" nointeract
 
 # game/events/eric.rpy:181
 translate english eric_ann_fucking_ad41b067:
 
     # Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nВот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
-    Max_07 "{color=[lime]}{i}You went unnoticed!{/i} \nWow! It's like a porn movie! I couldn't even imagine that mom could do that. And Eric's keeping up with her... I think she really likes it!" nointeract
+    Max_07 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWow! It's like a porn movie! I couldn't even imagine that mom could do that. And Eric's keeping up with her... I think she really likes it!" nointeract
 
 # game/events/eric.rpy:183
 translate english eric_ann_fucking_730d1153:
 
     # Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nЧто?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
-    Max_10 "{color=[lime]}{i}You went unnoticed!{/i} \nWhat?! My mom sucks off this freak? Eric, the bastard, he... fucks her in the mouth like some street whore! Why does she let him do that?!" nointeract
+    Max_10 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWhat?! My mom sucks off this freak? Eric, the bastard, he... fucks her in the mouth like some street whore! Why does she let him do that?!" nointeract
 
 # game/events/eric.rpy:185
 translate english eric_ann_fucking_9b720173:
 
     # Max_08 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНу вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
-    Max_08 "{color=[lime]}{i}You went unnoticed!{/i} \nWell, Eric's fucking Mom from behind so powerfully... She just doesn't seem to have the strength to resist it, maybe she even likes it!" nointeract
+    Max_08 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWell, Eric's fucking Mom from behind so powerfully... She just doesn't seem to have the strength to resist it, maybe she even likes it!" nointeract
 
 # game/events/eric.rpy:187
 translate english eric_ann_fucking_a0124bbd:
 
     # Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНичего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
-    Max_07 "{color=[lime]}{i}You went unnoticed!{/i} \nWow! What passion! My mom's riding Eric like crazy! I had no idea she was capable of that! They seem so passionate about each other, they won't notice if I come out from around the corner..." nointeract
+    Max_07 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWow! What passion! My mom's riding Eric like crazy! I had no idea she was capable of that! They seem so passionate about each other, they won't notice if I come out from around the corner..." nointeract
 
 # game/events/eric.rpy:198
 translate english eric_ann_fucking_7613d8b5:
@@ -326,7 +326,7 @@ translate english eric_ann_shower_8f665b71:
 translate english eric_ann_shower_a1d37cf2:
 
     # Max_06 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
-    Max_06 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \ncrap! That's amazing! They seem so passionate about each other, they don't seem to care if someone sees them or not... And Mom seems to really like it!" nointeract
+    Max_06 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nCrap! That's amazing! They seem so passionate about each other, they don't seem to care if someone sees them or not... And Mom seems to really like it!" nointeract
 
 # game/events/eric.rpy:300
 translate english eric_ann_shower_334004c9:

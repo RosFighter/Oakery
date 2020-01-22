@@ -455,3 +455,47 @@ translate english InstallCam_29989486:
     # Max_04 "{i}Бассейн... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
     Max_04 "{i}The pool. As long as sun is up, someone is probably here. I think viewers will be here all the time, hoping to see some tits...{/i}" nointeract
 
+# TODO: Translation updated at 2020-01-22 13:53
+
+# game/events/max.rpy:146
+translate english Shower_58b0fd27:
+
+    # Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
+    Max_03 "Aha! I just noticed that there's another back window! And I think there's a fantastic view of the tub through it... Of course, it's not the bath itself, it's who's going to be in it."
+
+# game/events/max.rpy:147
+translate english Shower_b6233ffc:
+
+    # Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
+    Max_09 "Except the location is a little high... We need to get something that's high enough to peeo with and that won't cause suspicion..."
+
+# game/events/max.rpy:148
+translate english Shower_b3c37b42:
+
+    # Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
+    Max_01 "Maybe a ladder will do, or better yet, a stepladder. Oh, yeah, I guess that'll be it!"
+
+# game/events/max.rpy:161
+translate english Bath_2c708671:
+
+    # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
+    Max_19 "It's better to be clean." nointeract
+
+# game/events/max.rpy:168
+translate english Bath_58b0fd27:
+
+    # Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
+    Max_03 "Aha! I just noticed that there's another back window! And I think there's a fantastic view of the tub through it... Of course, it's not the bath itself, it's who's going to be in it."
+
+# game/events/max.rpy:169
+translate english Bath_b6233ffc:
+
+    # Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
+    Max_09 "Except the location is a little high... We need to get something that's high enough to peeo with and that won't cause suspicion..."
+
+# game/events/max.rpy:170
+translate english Bath_b3c37b42:
+
+    # Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
+    Max_01 "Maybe a ladder will do, or better yet, a stepladder. Oh, yeah, I guess that'll be it!"
+

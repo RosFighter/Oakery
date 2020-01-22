@@ -478,3 +478,41 @@ translate english strings:
     old "И что такого? Сестра стесняется брата?"
     new "What's wrong? We're siblings"
 
+# TODO: Translation updated at 2020-01-22 13:53
+
+# game/events/lisa.rpy:500
+translate english lisa_bath_6a58c36d:
+
+    # Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+    Max_01 "I hope no one questions why there's a stepladder here...it's purely for investigative purposes...now let's see what we're dealing with."
+
+# game/events/lisa.rpy:504
+translate english lisa_bath_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 "Let's see what we got here..."
+
+# game/events/lisa.rpy:512
+translate english lisa_bath_e4d05fa2:
+
+    # Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!" nointeract
+    Max_03 "I think Lisa is just about to take a bath... Oh yeah, my little sister's innocent body is so tempting!" nointeract
+
+# game/events/lisa.rpy:517
+translate english lisa_bath_7e0784ba:
+
+    # Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..." nointeract
+    Max_05 "I'm in luck! Lisa's shwowing of her bare tits like it's on purpose! Of course, she doesn't know I'm here..." nointeract
+
+# game/events/lisa.rpy:526
+translate english lisa_bath_7e0784ba_1:
+
+    # Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..." nointeract
+    Max_05 "I'm in luck! Lisa's shwowing of her bare tits like it's on purpose! Of course, she doesn't know I'm here..." nointeract
+
+# game/events/lisa.rpy:531
+translate english lisa_bath_af2181e8:
+
+    # Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..." nointeract
+    Max_07 "Eh! I get to sleep in the same room as that honeypot! Beautiful..." nointeract
+
