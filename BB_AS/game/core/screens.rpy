@@ -474,13 +474,13 @@ screen MySite:
                                             action NullAction()
                                             xmargin 0 ymargin 0 xpadding 0 ypadding 0
                                             if "06:00" <= tm < "11:00":
-                                                add "location "+str(loc)+" "+room.id+" cam-morning-"+str(num)
+                                                add "location "+str(loc)+" "+room.id.replace("_", "")+" cam-morning-"+str(num)
                                             elif "11:00" <= tm < "18:00":
-                                                add "location "+str(loc)+" "+room.id+" cam-day-"+str(num)
+                                                add "location "+str(loc)+" "+room.id.replace("_", "")+" cam-day-"+str(num)
                                             elif "18:00" <= tm < "21:00":
-                                                add "location "+str(loc)+" "+room.id+" cam-evening-"+str(num)
+                                                add "location "+str(loc)+" "+room.id.replace("_", "")+" cam-evening-"+str(num)
                                             else:
-                                                add "location "+str(loc)+" "+room.id+" cam-night-"+str(num)
+                                                add "location "+str(loc)+" "+room.id.replace("_", "")+" cam-night-"+str(num)
                                             if len(room.cur_char) > 0 :
                                                 add "interface laptop cam act"
                                             else:

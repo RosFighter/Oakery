@@ -653,6 +653,7 @@ init python:
         if (len(current_room.cams) < current_room.max_cam and items["hide_cam"].have
                                                           and len(current_room.cur_char) == 0):
             AvailableActions["install"].active = True
+            AvailableActions["install"].enabled = True
 
         # в текущей локации кто-то есть, активируем диалог
         if len(current_room.cur_char) > 0:
@@ -934,7 +935,12 @@ init python:
                 characters["eric"].dress_inf = "01"
 
 
-
+    def GetKolCams(location): # возвращает количество камер в локации
+        kolcam = 0
+        for room in location:
+            for cam in room.cams:
+                kolcam += 1
+        return kolcam
 
 
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате

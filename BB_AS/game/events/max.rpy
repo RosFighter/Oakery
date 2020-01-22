@@ -502,3 +502,63 @@ label about_secretbook:
     $ possibility["secretbook"].stages[2].used = True
     $ spent_time += 30
     jump Laptop
+
+
+label InstallCam:
+    if current_location != house:
+        jump AfterWaiting
+
+    if GetKolCams(house) < 7 and len(current_room.cams) > 0:
+        Max_00 "Здесь уже есть камера. Пожалуй, стоит установить ее в другом месте."
+        jump AfterWaiting
+    if len(current_room.cams) > 0:
+        "{i}В следующих версиях...{/i}"
+        jump AfterWaiting
+
+    if current_room == house[0]:
+        menu:
+            Max_04 "{i}В этой комнате столько всего может происходить... Думаю, зрителям понравится! Главное - спрятать все провода, чтобы Лиза не заметила новую микро-камеру...{/i}"
+            "{i}закончить{/i}":
+                $ house[0].cams.append(HideCam())
+                $ house[0].cams[0].grow = 100
+    elif current_room == house[1]:
+        menu:
+            Max_04 "{i}Пусть зрители посмотрят, чем Алиса занимается в своей комнате, когда её не видят... Я бы и сам был бы рад посмотреть, но пока такой функции у меня нет...{/i}"
+            "{i}закончить{/i}":
+                $ house[1].cams.append(HideCam())
+                $ house[1].cams[0].grow = 100
+    elif current_room == house[2]:
+        menu:
+            Max_04 "{i}Конечно, здесь редко происходят события. Зато, когда они происходят, то здесь такое... Думаю, зрители будут рады таким моментам...{/i}"
+            "{i}закончить{/i}":
+                $ house[2].cams.append(HideCam())
+                $ house[2].cams[0].grow = 100
+    elif current_room == house[3]:
+        menu:
+            Max_04 "{i}Конечно, с точки зрения морали ставить камеру в ванной сомнительно. Однако, тут и так окно во всю стену. Так что, формально я лишь приоткрыл это окно...{/i}"
+            "{i}закончить{/i}":
+                $ house[3].cams.append(HideCam())
+                $ house[3].cams[0].grow = 100
+    # elif current_room == house[4]:
+    #     menu:
+    #         Max_04 "{i}{/i}"
+    #         "{i}закончить{/i}":
+    #             $ house[0].cams.append(HideCam())
+    #             $ house[0].cams[0].grow = 100
+    elif current_room == house[5]:
+        menu:
+            Max_04 "{i}Уж не знаю, будет ли какой-то толк от этой камеры... Тут так редко что-то происходит... Ну пусть будет. Раз уж взялся всё подключать...{/i}"
+            "{i}закончить{/i}":
+                $ house[5].cams.append(HideCam())
+                $ house[5].cams[0].grow = 100
+    elif current_room == house[6]:
+        menu:
+            Max_04 "{i}Бассейн... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}"
+            "{i}закончить{/i}":
+                $ house[6].cams.append(HideCam())
+                $ house[6].cams[0].grow = 100
+
+    $ items["hide_cam"].have = False
+    $ cur_ratio = 1.5
+    $ spent_time = 30
+    jump Waiting
