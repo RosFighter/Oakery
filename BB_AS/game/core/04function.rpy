@@ -696,8 +696,9 @@ init python:
 
         # комната Алисы
         if current_room == house[1] and len(current_room.cur_char) == 0:
+            CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
             AvailableActions["usb"].active = True
-            AvailableActions["searchbook"].active = True
+            AvailableActions["searchbook"].active = CurShedRec.name != "read"
             AvailableActions["searchciga"].active = True
             if items["spider"].have:
                 AvailableActions["hidespider"].active = True

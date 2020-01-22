@@ -762,25 +762,25 @@ translate english strings:
 
     # game/core/03variables.rpy:436
     old "Эрик"
-    new ""
+    new "Eric"
 
     # game/core/03variables.rpy:436
     old "Эрика"
-    new ""
+    new "Eric"
 
     # game/core/03variables.rpy:436
     old "Эрику"
-    new ""
+    new "Eric"
 
     # game/core/03variables.rpy:436
     old "Эриком"
-    new ""
+    new "Eric"
 
     # game/core/03variables.rpy:436
     old "Эрике"
-    new ""
+    new "Eric"
 
     # game/core/03variables.rpy:436
     old "Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."
-    new ""
+    new "Even before mom introduced me to her new boyfriend Eric, I had the feeling he would be bad news. Something just doesn't feel right about him."
 
