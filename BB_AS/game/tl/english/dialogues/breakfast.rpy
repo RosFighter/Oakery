@@ -1517,13 +1517,13 @@ translate english breakfast_5_c980ce82:
 translate english breakfast_5_80f63239:
 
     # Max_00 "Как скажешь, мам..."
-    Max_00 ""
+    Max_00 "Okay, mom..."
 
 # game/dialogues/breakfast.rpy:597
 translate english breakfast_5_750a3c2d:
 
     # Lisa_02 "А ты часто теперь будешь к нему ездить так... на ночь?"
-    Lisa_02 "Okay, mom..."
+    Lisa_02 "How often are you planning to stay overnight at his place?"
 
 # game/dialogues/breakfast.rpy:598
 translate english breakfast_5_38fbc66e:
@@ -1679,7 +1679,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:610
     old "Да, вот интересно, как часто он будет нарушать это пространство..."
-    new ""Yes, I want to know how often he'll invade our personal space...
+    new "Yes, I want to know how often he'll invade our personal space..."
 
     # game/dialogues/breakfast.rpy:610
     old "Ага, мне просто любопытно..."
