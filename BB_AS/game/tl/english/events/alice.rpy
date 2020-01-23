@@ -166,7 +166,7 @@ translate english alice_shower_closer_peepeng_bbeee85c:
 translate english alice_shower_closer_peepeng_0c3556f1:
 
     # Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-    Max_01 "{i}You are undetected!{/i}{/color} \nOh yes... It's hard to resist a wet Alice, especially when she's twirling her ass so temptingly... "
+    Max_01 "{color=[lime]}{i}You are undetected!{/i}{/color} \nOh yes... It's hard to resist a wet Alice, especially when she's twirling her ass so temptingly... "
 
 # game/events/alice.rpy:174
 translate english alice_shower_closer_peepeng_051a23bb:
@@ -324,7 +324,7 @@ translate english alice_bath_2b325faf:
 translate english alice_bath_40583688:
 
     # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
-    Max_03 "What luck! Alice's just about to take a bath... Her gorgeous ass begging to be spanked! That's how I'd like it to be admired..." nointeract
+    Max_03 "What luck! Alice is just about to take a bath... Her gorgeous ass begging to be spanked! That's how I'd like it to be admired..." nointeract
 
 # game/events/alice.rpy:48
 translate english alice_bath_5529b0b9:

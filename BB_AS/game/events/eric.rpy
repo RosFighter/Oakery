@@ -189,7 +189,7 @@ label eric_ann_fucking:
     $ max_profile.stealth += 0.1
     $ renpy.notify(_("Скрытность Макса повысилась"))
 
-    $ rez = renpy.display_menu([("{i}продолжить смотреть{/i}", 0), ("{i}уйти{/i}", 1)])
+    $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
     if rez > 0:
         $ current_room = house[1]
         jump Waiting

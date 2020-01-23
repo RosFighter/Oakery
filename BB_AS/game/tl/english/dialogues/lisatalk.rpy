@@ -100,7 +100,7 @@ translate english MorningWood_a848ff4c:
 translate english MorningWood_a48912dd:
 
     # Max_10 "Да ничего я не делал!"
-    Max_10 "I literally just woke ip"
+    Max_10 "I literally just woke up."
 
 # game/dialogues/lisatalk.rpy:77
 translate english MorningWood_21eb77e9:
@@ -1642,7 +1642,7 @@ translate english about_boy2_70433f6e:
 translate english about_boy2_4b907f20:
 
     # Lisa_12 "В смысле? Мне мальчики нравятся, я же говорила уже. Но да, мне она кажется симпатичной..."
-    Lisa_12 "She's nice, quiet and shy. And she's very pretty."
+    Lisa_12 "What do you mean? I like boys, I told you already. But yes, I think she's cute...."
 
 # game/dialogues/lisatalk.rpy:732
 translate english about_boy2_e6fd774e:
@@ -1882,7 +1882,7 @@ translate english Lisa_MorningWood_fcd11fc4:
 translate english Lisa_MorningWood_0078c3df:
 
     # Max_05 "Я могу помочь тебе стать взрослой"
-    Max_05 "I want to teach you this stuff"
+    Max_05 "I want to teach you this stuff."
 
 # game/dialogues/lisatalk.rpy:785
 translate english Lisa_MorningWood_888aacca:

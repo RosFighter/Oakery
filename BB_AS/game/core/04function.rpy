@@ -461,7 +461,11 @@ init python:
 
 
     def GetDeliveryString(): # формирует строку cо списком доставленных товаров
-        StrDev = _("Так... В накладной написано следующее:")
+        if _preferences.language is None:
+            StrDev = "Так... В накладной написано следующее:"
+        elif _preferences.language == "english":
+            StrDev = "So... In the consignment note says the following:"
+
         n = 0
         for i in delivery_list:
             items[i].buy = False

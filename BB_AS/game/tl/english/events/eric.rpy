@@ -358,3 +358,11 @@ translate english strings:
     old "{i}смотреть до конца{/i}"
     new "{i}Look{/i}"
 
+# TODO: Translation updated at 2020-01-23 10:31
+
+translate english strings:
+
+    # game/events/eric.rpy:192
+    old "{i}продолжить смотреть{/i}"
+    new "{i}continue watching{/i}"
+

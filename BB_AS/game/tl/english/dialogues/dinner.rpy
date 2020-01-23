@@ -338,7 +338,7 @@ translate english dinner_2_289e7bc7:
 translate english dinner_2_4fe6c45d:
 
     # Max_04 "У меня всё как всегда"
-    Max_04 "No news from me"
+    Max_04 "No news from me."
 
 # game/dialogues/dinner.rpy:126
 translate english dinner_2_a1846146:
@@ -814,7 +814,7 @@ translate english dinner_4_f390e9d0:
 translate english dinner_4_ba2cf0bd:
 
     # Ann_13 "Что такое, Макс? Что-то не свежее попалось?"
-    Ann_13 "What? Is your food got bad?"
+    Ann_13 "What? Is the food bad?"
 
 # game/dialogues/dinner.rpy:298
 translate english dinner_4_af37ddf8:
@@ -826,7 +826,7 @@ translate english dinner_4_af37ddf8:
 translate english dinner_4_2572e6bf:
 
     # Lisa_09 "Тем не менее, купальник мне всё ещё нужен. В закрытом я не могу загорать, а очень хочется..." nointeract
-    Lisa_09 "Anyway, I still need the swimsuit. I can't tan in the closed one." nointeract
+    Lisa_09 "Anyway, I still need a swimsuit. I can't tan with the one I have now." nointeract
 
 # game/dialogues/dinner.rpy:304
 translate english dinner_4_d0a6b048:
@@ -844,7 +844,7 @@ translate english dinner_4_ff02b2d1:
 translate english dinner_4_f6e8b059:
 
     # Eric_05 "Лиза, я тебе обещаю, что если вместе поедем на шоппинг через неделю, я тебе куплю отличный купальник. Конечно, не дизайнерский, но красивый и такой, в котором сможешь загорать! Это будет мой подарок тебе." nointeract
-    Eric_05 "I promise you, Lisa, if we'll go shopping next week I'll buy you a new swimsuit. Not designer one, but it will be cute and open, so you'll be able to tan in it. It will be my present to you." nointeract
+    Eric_05 "I promise you, Lisa, if we go shopping next week I'll buy you a new swimsuit. Not designer one, but it will be cute and open, so you'll be able to tan in it. We can think of it as a present." nointeract
 
 # game/dialogues/dinner.rpy:312
 translate english dinner_4_74949cf6:
@@ -874,25 +874,25 @@ translate english dinner_4_4ac6b15c:
 translate english dinner_4_129d1f43:
 
     # Eric_05 "Ань, а ты бываешь строгая, как я погляжу... Мне кажется, тебе стоит Алисе разрешить ходить в клубы. К тому же, она почти взрослая..."
-    Eric_05 "You're quite strict sometimes, Ann... I think you should let Alice go to clubs, she's an adult..."
+    Eric_05 "You're quite strict sometimes, Ann... I think you should let Alice go and enjoy herself, she's an adult..."
 
 # game/dialogues/dinner.rpy:328
 translate english dinner_4_ceb18512:
 
     # Ann_12 "Ну, Эрик, раз ты так считаешь, то конечно. Я и сама в её возрасте немного шалила..." nointeract
-    Ann_12 "Okay, Eric, if you think so... I liked to party in her age too..." nointeract
+    Ann_12 "Okay, Eric, if you think so... I liked to party when I was her age too..." nointeract
 
 # game/dialogues/dinner.rpy:334
 translate english dinner_4_259ec354:
 
     # Alice_07 "Эрик! Я тебя обожаю! Тебе удалось переубедить маму! Это невероятно. Спасибо, тебе!!!"
-    Alice_07 "I love you, Eric! You've managed to change mom's opinion! It's impossible, thank you!!!"
+    Alice_07 "I love you, Eric! You've managed to change her opinion! I thought it was impossible, thank you!!!"
 
 # game/dialogues/dinner.rpy:335
 translate english dinner_4_805d016f:
 
     # Eric_05 "Да не стоит, пустяки. А чтобы ваш семейный бюджет не просел, я сам подарю тебе платье для клуба, какое скажешь. Через неделю." nointeract
-    Eric_05 "Don't worry about it. I'll buy you a dress next week so your mom won't have to spent too much money on it." nointeract
+    Eric_05 "Don't worry about it. I'll buy you a dress next week so your mom won't have to spend too much money on it." nointeract
 
 # game/dialogues/dinner.rpy:339
 translate english dinner_4_10f0359a:
@@ -910,7 +910,7 @@ translate english dinner_4_dfd14d5b:
 translate english dinner_4_440f8c26:
 
     # Ann_00 "Так, ладно. Спасибо всем за ужин. Мы сейчас с Эриком уедем и вернусь завтра утром. Надеюсь, вопросов не возникнет, да? Алиса за старшую, а остальным - не шалите, хорошо?" nointeract
-    Ann_00 "Okay, thanks for the dinner, everyone. Eric and I are leaving, I'll return tomorrow morning. Alice's in charge, behave, everyone." nointeract
+    Ann_00 "Okay, tthanks everyone. Eric and I will get going, I'll be back tomorrow morning. Alice is in charge. And make sure you behave." nointeract
 
 # game/dialogues/dinner.rpy:353
 translate english dinner_4_8efb9883:
@@ -940,7 +940,7 @@ translate english dinner_4_9b836c58:
 translate english dinner_4_2a409626:
 
     # Ann_14 "Макс, твои глупые вопросы меня смущают. В общем, не теряйте, утром вернусь..."
-    Ann_14 "Come on, Max, what kind of question is that? Anyway, I'll be home in the morning."
+    Ann_14 "Come on, Max, what kind of question is that? Anyway, I'll be home by morning."
 
 # game/dialogues/dinner.rpy:360
 translate english dinner_4_f3fba9dc:
@@ -956,7 +956,7 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:299
     old "Да загорай голая!"
-    new "You can tan naked, is you want to"
+    new "You can tan naked, if you want"
 
     # game/dialogues/dinner.rpy:313
     old "Попрошайка!"

@@ -260,7 +260,7 @@ translate english Ann_MorningWood_bb881ec2:
 translate english Ann_MorningWood_ab75b971:
 
     # Max_04 "Я рад, что ты понимаешь"
-    Max_04 "I'm glad you understand"
+    Max_04 "I'm glad you understand."
 
 # game/dialogues/anntalk.rpy:201
 translate english Ann_MorningWood_75ea92a8:
