@@ -161,19 +161,19 @@ translate english BookRead_manual_41be558e:
 translate english BookRead_manual_0826f3fe:
 
     # Max_00 "Так, ну с этим я уже разобрался, хорошо... А это что такое? Не ясно. Нужно будет всё осмыслить...\n\n{color=[orange]}{i}(Книга изучена на 40%%){/i}{/color}"
-    Max_00 "Okay, I get this part... But how does this work? I don't get it. I need to figure it out...\n\n{i}{color=[orange]}(The book is 40% done){/color}{/i}"
+    Max_00 "Okay, I get this part... But how does this work? I don't get it. I need to figure it out...\n\n{i}{color=[orange]}(The book is 40%% done){/color}{/i}"
 
 # game/events/max.rpy:403
 translate english BookRead_manual_3605e1d8:
 
     # Max_00 "Ого, вот это здорово! Уже можно делать сайт? А, нет... Ещё не всё понятно... Ну, разберусь в другой раз.\n\n{color=[orange]}{i}(Книга изучена на 60%%){/i}{/color}"
-    Max_00 "Wow, this is great! Should I try to make my website? No, wait... It's too early for that.\n\n{i}{color=[orange]}(The book is 60% done){/color}{/i}"
+    Max_00 "Wow, this is great! Should I try to make my website? No, wait... It's too early for that.\n\n{i}{color=[orange]}(The book is 60%% done){/color}{/i}"
 
 # game/events/max.rpy:405
 translate english BookRead_manual_1c08c83d:
 
     # Max_00 "Так, ну теперь картина вырисовывается. Осталось разобраться только с мелочами... Или это не мелочи?\n\n{color=[orange]}{i}(Книга изучена на 80%%){/i}{/color}"
-    Max_00 "I'm starting to get the big picture. I'm almost done, only couple of little things left.\n\n{i}{color=[orange]}(The book is 80% done){/color}{/i}"
+    Max_00 "I'm starting to get the big picture. I'm almost done, only couple of little things left.\n\n{i}{color=[orange]}(The book is 80%% done){/color}{/i}"
 
 # game/events/max.rpy:407
 translate english BookRead_manual_bd8ad388:

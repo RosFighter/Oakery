@@ -166,7 +166,7 @@ translate english alice_shower_closer_peepeng_bbeee85c:
 translate english alice_shower_closer_peepeng_0c3556f1:
 
     # Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-    Max_01 "{i}You are undetected!{/i}{/color} \nOh yes... It's hard to resist a wet Alice, especially when she's twirling her ass so temptingly... "
+    Max_01 "{color=[lime]}{i}You are undetected!{/i}{/color} \nOh yes... It's hard to resist a wet Alice, especially when she's twirling her ass so temptingly... "
 
 # game/events/alice.rpy:174
 translate english alice_shower_closer_peepeng_051a23bb:
