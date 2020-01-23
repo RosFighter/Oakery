@@ -119,7 +119,7 @@ translate english SearchCam_c5169ba0:
 translate english ClearPool_f0dc1508:
 
     # Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    Max_11 "It's not easy work, but I need the money. Besides, mom already paid me to do it"
+    Max_11 "It's not easy work, but I need the money. Besides, mom already paid me to do it."
 
 # game/events/max.rpy:350
 translate english DishesWashed_cedc9161:

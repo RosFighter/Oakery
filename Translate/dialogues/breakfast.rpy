@@ -16,7 +16,7 @@ translate english typical_breakfast_1211a2f4:
 translate english typical_breakfast_4a7da202:
 
     # Max_00 "Приятного аппетита!"
-    Max_00 "Enjoy!"
+    Max_00 "Alright then...!"
 
 # game/dialogues/breakfast.rpy:18
 translate english typical_breakfast_19bf574f:

@@ -338,7 +338,7 @@ translate english dinner_2_289e7bc7:
 translate english dinner_2_4fe6c45d:
 
     # Max_04 "У меня всё как всегда"
-    Max_04 "No news from me"
+    Max_04 "No news from me."
 
 # game/dialogues/dinner.rpy:126
 translate english dinner_2_a1846146:
