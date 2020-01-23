@@ -412,7 +412,7 @@ translate english strings:
 
     # game/core/03variables.rpy:197
     old "Высокотехнологичная микро-камера, предназначенная для скрытного наблюдения. Имеет радиомодуль для беспроводной передачи зашифрованного цифрового видеосигнала."
-    new "Advanced micro camera for a concealed surveillance. It has a radio-module so it can transfer encrypted digital video stream."
+    new "Advanced micro camera for concealed surveillance. It has a radio-module so it can transfer encrypted digital video streams."
 
     # game/core/03variables.rpy:197
     old "ФИЛЬМ \"ШКОЛЬНИЦЫ\""
@@ -727,7 +727,7 @@ translate english strings:
 
     # game/core/03variables.rpy:327
     old "Мне удалось скопить приличную сумму и купить платье для Алисы. Теперь, нужно успеть его подарить ей, пока это не сделал кто-то другой..."
-    new "I managed to earn some money and buy a dress for Alice. Now I have to give it to her before Eric."
+    new "I managed to earn some money and buy a dress for Alice. Now I have to give it to her before Eric gets her one."
 
     # game/core/03variables.rpy:327
     old "Вот что значит не везёт. Я долго копил на красивое короткое платье для Алисы и даже купил его, но меня опередил Эрик... И что самое обидное, он купил точно такое же, но подарил его первым. Теперь у меня есть бесполезное платье..."
