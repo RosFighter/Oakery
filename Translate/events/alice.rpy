@@ -324,7 +324,7 @@ translate english alice_bath_2b325faf:
 translate english alice_bath_40583688:
 
     # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
-    Max_03 "What luck! Alice's just about to take a bath... Her gorgeous ass begging to be spanked! That's how I'd like it to be admired..." nointeract
+    Max_03 "What luck! Alice is just about to take a bath... Her gorgeous ass begging to be spanked! That's how I'd like it to be admired..." nointeract
 
 # game/events/alice.rpy:48
 translate english alice_bath_5529b0b9:

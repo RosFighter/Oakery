@@ -411,7 +411,7 @@ translate english strings:
 translate english InstallCam_a98c4309:
 
     # Max_00 "Здесь уже есть камера. Пожалуй, стоит установить ее в другом месте."
-    Max_00 "There's already a camera here. Perhaps should install it somewhere else."
+    Max_00 "There's already a camera here. Perhaps I should install one somewhere else."
 
 # game/events/max.rpy:515
 translate english InstallCam_d3b30600:
@@ -423,37 +423,37 @@ translate english InstallCam_d3b30600:
 translate english InstallCam_8bd385d9:
 
     # Max_04 "{i}В этой комнате столько всего может происходить... Думаю, зрителям понравится! Главное - спрятать все провода, чтобы Лиза не заметила новую микро-камеру...{/i}" nointeract
-    Max_04 "{i}A lot of stuff can happen in this room... I think viewers will like it! I have to hide all wires, though, I can't have Lisa finding my new camera.{/i}" nointeract
+    Max_04 "{i}A lot of stuff could happen in this room... I think the viewers will like it! I have to conceal all the wires, I can't have Lisa finding the new camera.{/i}" nointeract
 
 # game/events/max.rpy:525
 translate english InstallCam_d606b7b5:
 
     # Max_04 "{i}Пусть зрители посмотрят, чем Алиса занимается в своей комнате, когда её не видят... Я бы и сам был бы рад посмотреть, но пока такой функции у меня нет...{/i}" nointeract
-    Max_04 "{i}Now viewers will be able to see what Alice is doing in her room when no one's around. I'd love to see for myself, too bad I don't have this functionality yet.{/i}" nointeract
+    Max_04 "{i}Now viewers will be able to see what Alice is doing in her room when no one's around. I'd love to see for myself, too bad I don't have the functionality yet.{/i}" nointeract
 
 # game/events/max.rpy:531
 translate english InstallCam_1f539018:
 
     # Max_04 "{i}Конечно, здесь редко происходят события. Зато, когда они происходят, то здесь такое... Думаю, зрители будут рады таким моментам...{/i}" nointeract
-    Max_04 "{i}This room doesn't have much action. But when something happens, it's really interesting. I think viewers will enjoy them.{/i}" nointeract
+    Max_04 "{i}This room doesn't see much action. But when something does happen, it's good. I think the viewers will enjoy it.{/i}" nointeract
 
 # game/events/max.rpy:537
 translate english InstallCam_9d2c076e:
 
     # Max_04 "{i}Конечно, с точки зрения морали ставить камеру в ванной сомнительно. Однако, тут и так окно во всю стену. Так что, формально я лишь приоткрыл это окно...{/i}" nointeract
-    Max_04 "{i}Of course, from the moral point of view, putting a camera in the bathroom is kind of dubious. But it already has a huge window anyway. I'm just making this window even bigger, so to say.{/i}" nointeract
+    Max_04 "{i}Might be a bit amoral to put a camera in the bathroom, but it already has a huge window anyway. I'm just making this window even bigger.{/i}" nointeract
 
 # game/events/max.rpy:549
 translate english InstallCam_2547a49f:
 
     # Max_04 "{i}Уж не знаю, будет ли какой-то толк от этой камеры... Тут так редко что-то происходит... Ну пусть будет. Раз уж взялся всё подключать...{/i}" nointeract
-    Max_04 "{i}I'm not sure if there's a point to put a camera in this room, not much action happens here. But since I decided to put cameras everywhere, I'll install one here too.{/i}" nointeract
+    Max_04 "{i}I'm not sure if there's a point to put a camera in this room, not much action happens here. But if i'm putting cameras everywhere, I may as well install one here too.{/i}" nointeract
 
 # game/events/max.rpy:555
 translate english InstallCam_29989486:
 
     # Max_04 "{i}Бассейн... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
-    Max_04 "{i}The pool. As long as sun is up, someone is probably here. I think viewers will be here all the time, hoping to see some tits...{/i}" nointeract
+    Max_04 "{i}The pool. As long as sun is up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
 
 # TODO: Translation updated at 2020-01-22 13:53
 

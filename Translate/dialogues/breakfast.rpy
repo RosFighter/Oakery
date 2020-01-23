@@ -1493,25 +1493,25 @@ translate english strings:
 translate english breakfast_5_c534ecf6:
 
     # Ann_01 "Всем доброе утро, приятного аппетита..."
-    Ann_01 "Good morning, everyone, bon appetit..."
+    Ann_01 "Good morning, everyone, enjoy the food..."
 
 # game/dialogues/breakfast.rpy:588
 translate english breakfast_5_8cd1cf54:
 
     # Max_07 "Ну что, как всё прошло?"
-    Max_07 "So, how everything went?"
+    Max_07 "So, how'd everyrhing go?"
 
 # game/dialogues/breakfast.rpy:589
 translate english breakfast_5_717457d5:
 
     # Ann_14 "Ты о чём, Макс? Я не понимаю..." nointeract
-    Ann_14 "What are you talking about, Max?" nointeract
+    Ann_14 "What do you mean?" nointeract
 
 # game/dialogues/breakfast.rpy:595
 translate english breakfast_5_c980ce82:
 
     # Ann_01 "Всё в порядке, спасибо. Не думаю, что стоит это сейчас обсуждать..."
-    Ann_01 "It was fine, thank you. I don't think we should discuss it..."
+    Ann_01 "It was fine, thank you. There's not much else to say..."
 
 # game/dialogues/breakfast.rpy:596
 translate english breakfast_5_80f63239:
@@ -1523,7 +1523,7 @@ translate english breakfast_5_80f63239:
 translate english breakfast_5_750a3c2d:
 
     # Lisa_02 "А ты часто теперь будешь к нему ездить так... на ночь?"
-    Lisa_02 "How often are you planning to stay overnight at his place?"
+    Lisa_02 "How often are you planning to stay overnight at his house?"
 
 # game/dialogues/breakfast.rpy:598
 translate english breakfast_5_38fbc66e:
@@ -1541,7 +1541,7 @@ translate english breakfast_5_def57d9e:
 translate english breakfast_5_97033bef:
 
     # Alice_04 "Да всё мы понимаем, мам. Не переживай. Просто, ты так долго была одна и тут такой... Эрик... Мы очень рады, что у тебя налаживается твоя личная жизнь. И мы не будем тебе мешать, да, Макс?" nointeract
-    Alice_04 "We understand it, mom, don't worry. It's just, you were alone for so long and now you have someone so great. We're very happy for you and we won't stand in your way. Right, Max?" nointeract
+    Alice_04 "We understand, mom, don't worry. You were alone for so long and now you finally met someone amazing. We're very happy for you and we won't stand in your way. Right, Max?" nointeract
 
 # game/dialogues/breakfast.rpy:606
 translate english breakfast_5_fb058679:
@@ -1553,7 +1553,7 @@ translate english breakfast_5_fb058679:
 translate english breakfast_5_5c0dc787:
 
     # Max_07 "Значит, Эрик будет и к нам приходить на ночь?"
-    Max_07 "So, does this means Eric will stay over sometimes?"
+    Max_07 "So, does this mean Eric will sometimes stay here overnight?"
 
 # game/dialogues/breakfast.rpy:608
 translate english breakfast_5_6cc34a64:
@@ -1577,19 +1577,19 @@ translate english breakfast_5_2e9a76d0:
 translate english breakfast_5_d75ec0ba:
 
     # Ann_12 "Ещё рано об этом говорить, но... может быть... будем с ним встречаться через день-два, то у него, то у нас... Может быть..." nointeract
-    Ann_12 "It may be too early to say, but... maybe... I think we'll switch it up every other day. One day here, one day at his place." nointeract
+    Ann_12 "It may be too early to say, but... maybe... I think we'll switch it up every other day. One day here, one day there." nointeract
 
 # game/dialogues/breakfast.rpy:619
 translate english breakfast_5_6aaaaa8a:
 
     # Alice_09 "Макс! Это уже не смешно. Завязывай с допросом. Мама сама разберётся когда ей и с кем встречаться! Да, мам?"
-    Alice_09 "This isn't funny anymore, Max! Enough with the questions. Mom can decide it no her own. Right, mom?"
+    Alice_09 "This isn't funny anymore, Max! Enough with the questions. Mom can decide on her own. Right, mom?"
 
 # game/dialogues/breakfast.rpy:620
 translate english breakfast_5_e1ca2730:
 
     # Ann_00 "Да, Алиса. Если вы все подружитесь с Эриком, я буду очень рада. Для меня это очень важно. Ну а пока, хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
-    Ann_00 "Yes. And if you'll get along with Eric, you'll make me very happy. It's very important for me. But that's enough of that. Looks like the breakfast is over. Thank you, everyone."
+    Ann_00 "Yes. And if you make an effort to get along with Eric, you'll make me very happy. It's very important to me. But that's enough of that. Looks like everyone's finished breakfast. Thank you, everyone."
 
 # game/dialogues/breakfast.rpy:621
 translate english breakfast_5_37c01b98:
@@ -1613,7 +1613,7 @@ translate english breakfast_5_5d531f6c:
 translate english breakfast_5_0c66c488:
 
     # Ann_01 "Макс, я уже сказала, что это возможно, но будет ли и когда - неизвестно. Так что, не будем гадать. Кстати, завтрак затянулся... Всем большое спасибо!"
-    Ann_01 "I just said it's possible, Max. But it's too early to guess whether it will actually ever happen. By the way, looks like the breakfast is over. Thank you, everyone."
+    Ann_01 "I just said it's possible, Max. But it's too early to guess whether it will actually ever happen. By the way, looks we're finished eating. Thank you, everyone."
 
 # game/dialogues/breakfast.rpy:627
 translate english breakfast_5_37c01b98_1:
@@ -1637,7 +1637,7 @@ translate english breakfast_5_2c426155:
 translate english breakfast_5_b0c67912:
 
     # Ann_05 "В любом случае, для вас ничего не изменится. А если вы подружитесь с Эриком, я буду очень рада!" nointeract
-    Ann_05 "Anyway, it won't change anything for you. And if you'll get along with Eric, you'll make me very happy." nointeract
+    Ann_05 "Anyway, it won't change anything for you. And if you make an effort to get along with Eric, you'll make me very happy." nointeract
 
 # game/dialogues/breakfast.rpy:638
 translate english breakfast_5_3ebe962a:
@@ -1655,7 +1655,7 @@ translate english breakfast_5_37c01b98_2:
 translate english breakfast_5_ecb96749:
 
     # Ann_05 "Конечно, я буду очень рада, если вы все найдёте общий язык с Эриком и подружитесь. Но хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
-    Ann_05 "If you'll get along with Eric, you'll make me very happy. But enough about him. Looks like the breakfast is over. Thanks you, everyone."
+    Ann_05 "If you make an effort to get along with Eric, you'll make me very happy. But enough about him. Looks like everyone's done eating. Thank you, everyone."
 
 # game/dialogues/breakfast.rpy:642
 translate english breakfast_5_37c01b98_3:
@@ -1675,7 +1675,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:600
     old "А что сразу я? Но да, я согласен с Алисой..."
-    new "Why do you ask me? But yes, I agree with Alice"
+    new "Why ask me? But yes, I agree with Alice"
 
     # game/dialogues/breakfast.rpy:610
     old "Да, вот интересно, как часто он будет нарушать это пространство..."
@@ -1695,7 +1695,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:616
     old "Может, тебе к нему переехать?"
-    new "Maybe you'll just move in to his house?"
+    new "Maybe you'll just move in with him?"
 
     # game/dialogues/breakfast.rpy:616
     old "Понятно..."
