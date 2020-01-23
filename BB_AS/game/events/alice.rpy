@@ -50,7 +50,7 @@ label alice_bath:
                                 "{i}уйти{/i}":
                                     $ spent_time += 10
                                     $ characters["alice"].dress_inf = "00aa"
-                                    jump .end
+                                    pass
                         "{i}уйти{/i}":
                             pass
                 else:
