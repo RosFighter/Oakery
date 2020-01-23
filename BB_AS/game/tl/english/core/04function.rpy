@@ -50,3 +50,11 @@ translate english strings:
     old "Приобретен пакет рекламы"
     new "Advertising package acquired"
 
+# TODO: Translation updated at 2020-01-23 08:07
+
+translate english strings:
+
+    # game/core/04function.rpy:464
+    old "Так... В накладной написано следующее:"
+    new "So... The invoice says the following:"
+

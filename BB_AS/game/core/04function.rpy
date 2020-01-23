@@ -461,7 +461,7 @@ init python:
 
 
     def GetDeliveryString(): # формирует строку cо списком доставленных товаров
-        StrDev = "Так... В накладной написано следующее:"
+        StrDev = _("Так... В накладной написано следующее:")
         n = 0
         for i in delivery_list:
             items[i].buy = False
