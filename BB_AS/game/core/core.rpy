@@ -156,7 +156,7 @@ label AfterWaiting:
 
     if __name_label != "" and renpy.has_label(__name_label):
         # управляющий блок найден и существует
-        call expression __name_label
+        call expression __name_label from _call_expression_2
     else:
         # устанавливаем фон комнаты без персонажей
         if current_room.cur_bg.find("_") >= 0:
@@ -181,8 +181,8 @@ label after_load:
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
-    elif current_ver != "v0.02.0.001":
-        $ current_ver = "v0.02.0.001" # ставим номер версии
+    elif current_ver != "v0.02.0.002":
+        $ current_ver = "v0.02.0.002" # ставим номер версии
         # и выполняем необходимые действия с переменными или фиксы
         pass
 

@@ -5,7 +5,7 @@ label AliceTalkStart:
 
     $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
     if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel
+        call expression __CurShedRec.talklabel from _call_expression
 
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
@@ -29,7 +29,7 @@ label AliceTalkStart:
         elif talks[rez].kd_id != "" and talks[rez].kd_id in cooldown and not ItsTime(cooldown[talks[rez].kd_id]):
             jump Alice_cooldown
         elif renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_1
         jump AliceTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания
