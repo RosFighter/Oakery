@@ -434,19 +434,19 @@ default delivery_list = []
 init python:
     def AddEric():
         characters["eric"] = Profile(_("Эрик"), _("Эрика"), _("Эрику"), _("Эрика"), _("Эриком"), _("Эрике"), _("Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."), "Eric")
-        AddSchedule(schedule_eric, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Анной", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110))
-        AddSchedule(schedule_eric, Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Анной", "house", 3, "eric_ann_shower", enabletalk=False, glow=130))
-        AddSchedule(schedule_eric, Schedule((1, 3, 4), "19:0", "19:59", "dinner", "семейный ужин", "house", 5, "dinner", enabletalk=False, glow=105))
-        AddSchedule(schedule_eric, Schedule((1, 3, 4), "20:0", "20:59", "rest", "в Аниной комнате", "house", 2, "eric_resting"))
-        AddSchedule(schedule_eric, Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Анной", "house", 4, "eric_ann_tv", enabletalk=False, glow=150))
-        AddSchedule(schedule_eric, Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахает Анну в ее комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150))
-        # AddSchedule(schedule_eric,
-        #     Schedule((6, ), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105, variable="day < 12"),
-        #     Schedule((6, ), "19:0", "19:59", "None", variable="day > 12"),
-        #     )
-        AddSchedule(schedule_ann, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Эриком", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110))
-        AddSchedule(schedule_ann, Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Эриком", "house", 3, "eric_ann_shower", enabletalk=False, glow=130))
-        AddSchedule(schedule_ann, Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Эриком", "house", 4, "eric_ann_tv", enabletalk=False, glow=150))
-        AddSchedule(schedule_ann, Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахается с Эриком в своей комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150))
-        AddSchedule(schedule_ann, Schedule((2, 5, 6), "20:0", "23:59", "None", "у Эрика дома"))
-        AddSchedule(schedule_ann, Schedule((3, 6, 0), "0:0", "5:59", None, "у Эрика дома"))
+        AddSchedule(schedule_eric, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Анной", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
+                    Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Анной", "house", 3, "eric_ann_shower", enabletalk=False, glow=130),
+                    Schedule((1, 3, 4), "19:0", "19:59", "dinner", "семейный ужин", "house", 5, "dinner", enabletalk=False, glow=105),
+                    Schedule((1, 3, 4), "20:0", "20:59", "rest", "в Аниной комнате", "house", 2, "eric_resting"),
+                    Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Анной", "house", 4, "eric_ann_tv", enabletalk=False, glow=150),
+                    Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахает Анну в ее комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150),
+                    Schedule((6, ), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105, variable="day < 12"),
+                    Schedule((6, ), "19:0", "19:59", "None", variable="day > 12"),
+                    )
+        AddSchedule(schedule_ann, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Эриком", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
+                    Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Эриком", "house", 3, "eric_ann_shower", enabletalk=False, glow=130),
+                    Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Эриком", "house", 4, "eric_ann_tv", enabletalk=False, glow=150),
+                    Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахается с Эриком в своей комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150),
+                    Schedule((2, 5, 6), "20:0", "23:59", "None", "у Эрика дома"),
+                    Schedule((3, 6, 0), "0:0", "5:59", None, "у Эрика дома"),
+                    )

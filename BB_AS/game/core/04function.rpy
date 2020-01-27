@@ -25,107 +25,74 @@ init python:
         return str(inputStr[0]) + "_" + inputStr[1]
 
 
-    # добавляет в список с расписанием персонажа новые действия
-    # блоки на один и тот же период с разным сдвигом в одном периоде или
-    # на разные значения в вычисляемом variable ВСЕГДА дожны добавляться одним блоком
-    def AddSchedule(schedule, *added_sheds):
-        edited = []
-        # составим список расписаний, затронутых изменениями (в последствии будут удалены)
-        for nsh in added_sheds:
-            for osh in schedule:
-                if (osh.ts <= nsh.ts < osh.te) or (nsh.ts <= osh.ts < nsh.te):
-                    for day in nsh.lod:
-                        if day in osh.lod:
-                            edited.append(osh)
-                            break
-        edited = set(edited)
-        # теперь из этого списка отберем части, незатронутые изменениями
-        # и внесем их в список для добавления.
-        # сначала отберем дни, незатронутые изменениями
-        new_schedule = []
-        for ed in edited:
-            list_of_day = list(ed.lod)  # берем все дни
-            for nsh in added_sheds:
-                if (ed.ts <= nsh.ts < ed.te) or (nsh.ts <= ed.ts < nsh.te):
-                    for day in nsh.lod:
-                        if day in list_of_day:  # если день задействован хоть в одной новой записи - удаляем его
-                            list_of_day.remove(day)
+    def AddSchedRec(plan, *add_rec):
+        new_plan = []
+        if type(add_rec[0]) == list:
+            zap = add_rec[0][0]
+        else:
+            zap = add_rec[0]
+        for rec in plan:
+            edited = False
+            if (rec.ts <= zap.ts < rec.te) or (zap.ts <= rec.ts < zap.te): # время записей пересекается
+                for d in zap.lod:  # перебираем кортеж дней
+                    if d in rec.lod:      # если день входит в кортеж записей, запись нужно изменять
+                        edited = True
+                        break
+            if edited:  # в новый план запись вставляется в измененном виде
+                # сначала отберем дни, незатронутые изменениями
+                list_of_day = tuple(d for d in rec.lod if d not in zap.lod)
+                if len(list_of_day):  # есть дни, не затронутые изменениями
+                    new_plan.append(Schedule(list_of_day, rec.ts, rec.te, rec.name, rec.desc, rec.loc, rec.room, rec.label,
+                                             rec.krat, rec.shift, rec.weekstart, rec.variable, rec.enabletalk, rec.talklabel,
+                                             rec.glow))
+                list_of_day = tuple(d for d in rec.lod if d in zap.lod)
+                if rec.ts < zap.ts < rec.te and len(list_of_day):  # часть перед новой записью
+                    new_plan.append(Schedule(list_of_day, rec.ts, AddTime(zap.ts, -1), rec.name, rec.desc, rec.loc,
+                                             rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
+                                             rec.enabletalk, rec.talklabel, rec.glow))
+                if rec.ts < zap.te < rec.te and len(list_of_day):  # часть после новой записи
+                    new_plan.append(Schedule(list_of_day, AddTime(zap.te), rec.te, rec.name, rec.desc, rec.loc,
+                                             rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
+                                             rec.enabletalk, rec.talklabel, rec.glow))
+            else:  # копируем запись в новый план как есть
+                new_plan.append(rec)
 
-            # добавим в новый список добавляемых расписаний дни без изменений, если список дней не пустой
-            if len(list_of_day):
-                new_schedule.append(
-                    Schedule(list_of_day,   # lod - кортеж дней недели для действия
-                            ed.ts,          # ts – время начала действия
-                            ed.te,          # te – время окончания действия
-                            ed.name,        # наименование действия
-                            ed.desc,        # описание действия
-                            ed.loc,         # локация
-                            ed.room,        # комната в локации
-                            ed.label,       # имя блока обработки события (формирует сцену или запускает действие)
-                            ed.krat,        # периодичность в неделях
-                            ed.shift,       # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
-                            ed.weekstart,   # номер стартовой недели
-                            ed.variable,    # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
-                            ed.enabletalk,  # возможность разговора
-                            ed.talklabel,   # блок обработки начала диалога (формирует сцену старта диалога)
-                            ed.glow))       # коэффициент эмоционального накала (интерес зрителей)
+        for rec in add_rec:
+            if type(rec) == list:
+                new_plan.extend(rec)
+            else:
+                new_plan.append(rec)
+        new_plan.sort(key=SortByTime)
+        plan.clear()
+        plan.extend(new_plan)
 
-        new_schedule = set(new_schedule)
-        # new_schedule = list(new_schedule)
 
-        # теперь определим границы времени днях, затронутых изменениями
-        # и если остается время частично незатронутое изменениями,
-        # то его тоже добавляем в список...
-        for ed in edited:
-            for nsh in added_sheds:
-                list_of_day = tuple(day for day in ed.lod if day in nsh.lod)
-                if ed.ts < nsh.ts < ed.te and len(list_of_day):
-                    # new_schedule.append(
-                    new_schedule.add(
-                        Schedule(list_of_day,        # lod - кортеж дней недели для действия
-                                ed.ts,               # ts – время начала действия
-                                AddTime(nsh.ts, -1), # te – время окончания действия
-                                ed.name,             # наименование действия
-                                ed.desc,             # описание действия
-                                ed.loc,              # локация
-                                ed.room,             # комната в локации
-                                ed.label,            # имя блока обработки события (формирует сцену или запускает действие)
-                                ed.krat,             # периодичность в неделях
-                                ed.shift,            # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
-                                ed.weekstart,        # номер стартовой недели
-                                ed.variable,         # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
-                                ed.enabletalk,       # возможность разговора
-                                ed.talklabel,        # блок обработки начала диалога (формирует сцену старта диалога)
-                                ed.glow))            # коэффициент эмоционального накала (интерес зрителей)
-                if ed.ts < nsh.te < ed.te and len(list_of_day):
-                    # new_schedule.append(
-                    new_schedule.add(
-                        Schedule(list_of_day,        # lod - кортеж дней недели для действия
-                                AddTime(nsh.te),     # ts – время начала действия
-                                ed.te,               # te – время окончания действия
-                                ed.name,             # наименование действия
-                                ed.desc,             # описание действия
-                                ed.loc,              # локация
-                                ed.room,             # комната в локации
-                                ed.label,            # имя блока обработки события (формирует сцену или запускает действие)
-                                ed.krat,             # периодичность в неделях
-                                ed.shift,            # для недель, имеющих периодичность; сдвиг относительно стартовой недели (начинается с 0)
-                                ed.weekstart,        # номер стартовой недели
-                                ed.variable,         # строка с логическим выражением, вычисляется при получиении текущего мемстоположения персонажа
-                                ed.enabletalk,       # возможность разговора
-                                ed.talklabel,        # блок обработки начала диалога (формирует сцену старта диалога)
-                                ed.glow))            # коэффициент эмоционального накала (интерес зрителей)
+    def AddSchedule(plan, *added_plan):
+        #переберем новый список в поиске записей совпадающих по дням недели и времени, но различающихся условием или сдвигом недели
+        new_list = []
+        block = []
+        for pl in added_plan:
+            nayden = False
+            for nl in new_list:
+                if pl.lod == nl.lod and pl.ts == nl.ts and pl.te == nl.te:
+                    nayden = True
+                    block.append([nl, pl])
+                    new_list.remove(nl)
+            if not nayden:
+                for bl in block:
+                    if bl[0].lod == pl.lod and bl[0].ts == pl.ts and bl[0].te == pl.te:
+                        nayden = True
+                        bl.append(pl)
+            if not nayden:
+                new_list.append(pl)
 
-            # удалим старые строки из начального списка
-            schedule.remove(ed)
+        # добавим отдельные записи
+        for nl in new_list:
+            AddSchedRec(plan, nl)
 
-        # добавим в список расписания список действий незатронутых изменениями
-        schedule.extend(new_schedule)
-        # добавим в список новые действия
-        for nsh in added_sheds:
-            schedule.append(nsh)
-
-        schedule.sort(key=SortByTime)
+        # добавим блок связанных записей
+        for bl in block:
+            AddSchedRec(plan, bl)
 
 
     # Возвращает список записей с текущим действием персонажа

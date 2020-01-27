@@ -181,10 +181,7 @@ label after_load:
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
-    elif current_ver != "v0.02.0.004":
-        $ current_ver = "v0.02.0.004" # ставим номер версии
+    elif current_ver < "v0.03.0.000":
+        $ current_ver = "v0.02.0.000" # ставим номер версии
         # и выполняем необходимые действия с переменными или фиксы
         pass
-
-    if "little_energy" not in flags:
-        $ flags["little_energy"] = False
