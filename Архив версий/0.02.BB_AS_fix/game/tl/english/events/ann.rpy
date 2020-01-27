@@ -374,7 +374,7 @@ translate english ann_shower_start_peeping_f0132630:
 translate english ann_shower_closer_peepeng_a38e0857:
 
     # Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-    Max_03 "color=[lime]}{i}You went unnoticed!{/i}{/color} \nAmazing! It's not every day you get a chance to admire this beauty! Her big soft breasts and her slender figure are just a glimpse..."
+    Max_03 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nAmazing! It's not every day you get a chance to admire this beauty! Her big soft breasts and her slender figure are just a glimpse..."
 
 # game/events/ann.rpy:96
 translate english ann_shower_closer_peepeng_f42aed74:
