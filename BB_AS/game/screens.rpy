@@ -316,8 +316,8 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        # button action Start() style "nav_button":
-        #     textbutton _("Начать новую\nигру") action Start()
+        button action Start() style "nav_button":
+            textbutton _("Начать новую игру") action Start()
 
         button action ShowMenu("history") style "nav_button":
             textbutton _("История") action ShowMenu("history")

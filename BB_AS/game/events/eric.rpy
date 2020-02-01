@@ -85,6 +85,7 @@ label Eric_talk_afterdinner:
                     jump .bullshit
                 "Она так сказала?":
                     jump .shesaid
+
     label .bullshit:
         menu:
             Eric_09 "Ну не знаю... Даже если что-то ещё и не так, то с моей помощью всё так и будет, поверь... Но повторюсь, я не хочу с тобой воевать и лучше бы ты был на моей стороне..."
@@ -140,6 +141,7 @@ label eric_resting:
     $ renpy.show("Eric relax "+pose3_1+characters["eric"].dress)
     return
 
+
 label eric_ann_tv:
     scene BG lounge-tv-00
     if tv_scene == "":
@@ -147,6 +149,7 @@ label eric_ann_tv:
     else:
         $ renpy.show("Eric tv "+tv_scene+pose2_3+characters["eric"].dress)
     return
+
 
 label eric_ann_fucking:
     scene location house annroom door-night

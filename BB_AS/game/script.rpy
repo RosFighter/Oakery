@@ -1,6 +1,3 @@
-# init -1:
-#     $ config.layers = ["master", "transient", "wmframe", "screens", "overlay"]
-
 label splashscreen:
 
     if not persistent.choose_lang:
@@ -18,7 +15,15 @@ label language_chooser:
 
 
 label start:
-    # show screen watermark(_layer="wmframe")
+    call InitHouse
+    call InitCharacters
+    call InitActions
+    call InitStuff
+    call InitPoss
+    call InitTalksEvents
+    call InitVariable
+    call InitTempVar
+
     jump intro
 
 

@@ -99,7 +99,7 @@ label back_shoping:
 
 label MeetingEric:
     # устанавливаем новое расписание для Анны и Эрика
-    $ AddEric()
+    call AddEric
 
     $ renpy.block_rollback()
     $ spent_time = 10
