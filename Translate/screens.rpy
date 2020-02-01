@@ -374,3 +374,11 @@ translate english strings:
     old "Оригинальное интро"
     new "Original intro"
 
+# TODO: Translation updated at 2020-02-01 12:23
+
+translate english strings:
+
+    # game/screens.rpy:320
+    old "Начать новую игру"
+    new "Start new game"
+

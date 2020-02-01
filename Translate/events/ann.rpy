@@ -431,4 +431,3 @@ translate english ann_bath_36138fd2:
 
     # Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..." nointeract
     Max_07 "Eh! Looks like the fun part's over... Although, watching Mom wipe her wet and seductive body is just as enjoyable! Oh, what an ass she's got..." nointeract
-

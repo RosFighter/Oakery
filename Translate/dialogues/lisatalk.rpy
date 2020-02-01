@@ -1878,10 +1878,10 @@ translate english Lisa_MorningWood_fcd11fc4:
     # Lisa_09 "Тоже верно... Ну ладно. И к чему весь этот разговор?"
     Lisa_09 "I guess you're right about that... Anyway, where are you going with all this?"
 
-# game/dialogues/lisatalk.rpy:784
-translate english Lisa_MorningWood_0078c3df:
+# game/dialogues/lisatalk.rpy:785
+translate english Lisa_MorningWood_47c53b1e:
 
-    # Max_05 "Я могу помочь тебе стать взрослой"
+    # Max_05 "Я могу помочь тебе стать взрослой."
     Max_05 "I want to teach you this stuff."
 
 # game/dialogues/lisatalk.rpy:785
@@ -1890,16 +1890,16 @@ translate english Lisa_MorningWood_888aacca:
     # Lisa_02 "Ты же понимаешь, как это звучит? Лучше уточни, что ты имеешь в виду..."
     Lisa_02 "Do you understand how that sounds? What do you mean?"
 
-# game/dialogues/lisatalk.rpy:786
-translate english Lisa_MorningWood_18ca430c:
-
-    # Max_03 "Я поделюсь с тобой знаниями, которые тебе помогут"
-    Max_03 "I'll tell you how it all works. You know, give you the talk"
-
 # game/dialogues/lisatalk.rpy:787
-translate english Lisa_MorningWood_b8b1035a:
+translate english Lisa_MorningWood_0862a8fa:
 
-    # Lisa_01 "Помогут с чем? Мне мама говорит, что ещё рано о таком думать"
+    # Max_03 "Я поделюсь с тобой знаниями, которые тебе помогут..."
+    Max_03 "I'll tell you how it all works. You know, give you the talk..."
+
+# game/dialogues/lisatalk.rpy:788
+translate english Lisa_MorningWood_9b43c9fd:
+
+    # Lisa_01 "Помогут с чем? Мне мама говорит, что ещё рано о таком думать."
     Lisa_01 "Mom says I'm not supposed to know all this stuff."
 
 # game/dialogues/lisatalk.rpy:788
@@ -1926,10 +1926,10 @@ translate english Lisa_MorningWood_4e003c5c:
     # Lisa_00 "Ну, я подумаю. Ты как-то слишком настойчиво помощь предлагаешь. Как будто у тебя свой интерес какой-то..."
     Lisa_00 "Okay, I'll think about it. But you're pushing too hard, it makes me think you have some secret motive behind this..."
 
-# game/dialogues/lisatalk.rpy:792
-translate english Lisa_MorningWood_cac97bcc:
+# game/dialogues/lisatalk.rpy:793
+translate english Lisa_MorningWood_d246544c:
 
-    # Max_04 "Хочу только помочь младшей сестрёнке"
+    # Max_04 "Хочу только помочь младшей сестрёнке."
     Max_04 "I just want to help my little sister!"
 
 # game/dialogues/lisatalk.rpy:793
@@ -1967,4 +1967,12 @@ translate english Lisa_MorningWood_626efed0:
 
     # Max_01 "Посмотрим..."
     Max_01 "We'll see..."
+
+# TODO: Translation updated at 2020-02-01 12:11
+
+# game/dialogues/lisatalk.rpy:97
+translate english MorningWood_981dc250:
+
+    # Lisa_12 "Так я тебе и поверила! Ма-ам!" nointeract
+    Lisa_12 "So I believed you! Mo-om!" nointeract
 
