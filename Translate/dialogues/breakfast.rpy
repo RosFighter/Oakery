@@ -1375,11 +1375,11 @@ translate english breakfast_4_71328ac0:
     # Ann_05 "Вот и отлично! Хватит уже про Эрика, давайте обсудим что планируем купить.."
     Ann_05 "Great! And enough about Eric, let's discuss our shopping plans..."
 
-# game/dialogues/breakfast.rpy:567
-translate english breakfast_4_15ff8852:
+# game/dialogues/breakfast.rpy:571
+translate english breakfast_4_b30b05ba_1:
 
-    # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да? \n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
-    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean. \n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
+    # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
+    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean."
 
 # game/dialogues/breakfast.rpy:569
 translate english breakfast_4_b30b05ba:
