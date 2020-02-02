@@ -1373,7 +1373,8 @@ screen notify(message):
     style_prefix "notify"
 
     frame at notify_appear:
-        text "[message!tq]"
+        text message
+        # text "[message!tq]"
 
     timer 4.25 action Hide('notify')
 

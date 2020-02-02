@@ -60,7 +60,7 @@ label ann_shower:
 
         label .start_peeping:
             $ renpy.notify(_("Скрытность Макса капельку повысилась"))
-            $ max_profile.stealth += 0.01
+            $ max_profile.stealth += 0.03
             $ __ran1 = renpy.random.randint(1, 4)
 
             $ _chance = GetChance(max_profile.stealth, 3)
@@ -83,7 +83,7 @@ label ann_shower:
         label .closer_peepeng:
             if RandomChance(_chance):
                 $ peeping["ann_shower"] = 1
-                $ max_profile.stealth += 0.1
+                $ max_profile.stealth += 0.2
                 $ renpy.notify(_("Скрытность Макса повысилась"))
                 $ characters["ann"].dress_inf = "00a"
                 $ __ran1 = renpy.random.randint(1, 6)
@@ -96,7 +96,7 @@ label ann_shower:
                     Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
             elif RandomChance(_chance):
                 $ peeping["ann_shower"] = 2
-                $ max_profile.stealth += 0.05
+                $ max_profile.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
                 $ characters["ann"].dress_inf = "00a"
                 $ __ran1 = renpy.random.randint(7, 8)
@@ -107,7 +107,7 @@ label ann_shower:
                 jump .end_peeping
             else:
                 $ peeping["ann_shower"] = 3
-                $ max_profile.stealth += 0.02
+                $ max_profile.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
                 $ __ran1 = renpy.random.choice(["09", "10"])
                 scene BG shower-closer

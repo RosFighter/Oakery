@@ -25,6 +25,7 @@ init python:
         return str(inputStr[0]) + "_" + inputStr[1]
 
 
+    # добавляет в расписание запись или блок связанных записей
     def AddSchedRec(plan, *add_rec):
         new_plan = []
         if type(add_rec[0]) == list:
@@ -67,6 +68,7 @@ init python:
         plan.extend(new_plan)
 
 
+    # добавляет в расписание список записей
     def AddSchedule(plan, *added_plan):
         #переберем новый список в поиске записей совпадающих по дням недели и времени, но различающихся условием или сдвигом недели
         new_list = []
@@ -95,25 +97,6 @@ init python:
             AddSchedRec(plan, bl)
 
 
-    # Возвращает список записей с текущим действием персонажа
-    # Аргументы:
-    # schedule - список записей с расписанием,
-    # day      - день (целое),
-    # tm     - время в формате 'hh:mm',
-    # week     - номер недели (целое)
-    def GetScheduleRecordList(schedule, day, tm): # только для тестирования расписания
-        h, m = tm.split(":")  # нормализуем время на всякий случай
-        tm = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
-        day += 2  # в игре отсчет начинается со среды и дня под номером 1
-        rez = []
-        for sh in schedule:
-            if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
-                (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
-                    rez.append(sh)
-
-        return rez
-
-
     # Возвращает запись с текущим действием персонажа
     #     Аргументы:
     #     schedule - список записей с расписанием,
@@ -136,6 +119,25 @@ init python:
             return None
         else:
             return rez[0]
+
+
+    # Возвращает список записей с текущим действием персонажа
+    # Аргументы:
+    # schedule - список записей с расписанием,
+    # day      - день (целое),
+    # tm     - время в формате 'hh:mm',
+    # week     - номер недели (целое)
+    def GetScheduleRecordList(schedule, day, tm): # только для тестирования расписания
+        h, m = tm.split(":")  # нормализуем время на всякий случай
+        tm = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:]
+        day += 2  # в игре отсчет начинается со среды и дня под номером 1
+        rez = []
+        for sh in schedule:
+            if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
+                (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
+                    rez.append(sh)
+
+        return rez
 
 
     # функция для разработчика, проверяет расписание на перехлесты
@@ -373,19 +375,19 @@ init python:
 
     def ChangeRel(rel): # возвращает текстовое описание изменения отношений
         return {
-                  rel <= -50 : __("значительно ухудшилось"),
-            -50 < rel <= -10 : __("ухудшилось"),
-            -10 < rel <= 0   : __("немного ухудшилось"),
-            0   < rel <= 10  : __("немного улучшилось"),
-            10  < rel <= 50  : __("улучшилось"),
-            50  < rel        : __("значительно улучшилось")
+                  rel <= -50 : __("{color=[red]}значительно ухудшилось{/color}"),
+            -50 < rel <= -10 : __("{color=[red]}ухудшилось{/color}"),
+            -10 < rel <= 0   : __("{color=[red]}немного ухудшилось{/color}"),
+            0   < rel <= 10  : __("{color=[lime]}немного улучшилось{/color}"),
+            10  < rel <= 50  : __("{color=[lime]}улучшилось{/color}"),
+            50  < rel        : __("{color=[lime]}значительно улучшилось{/color}")
             }[True]
 
 
     def ChangeMood(mood): # возвращает текстовое описание изменения отношений
         return{
-            mood <  0 : __("снизилось"),
-            mood >= 0 : __("повысилось")
+            mood <  0 : __("{color=[red]}снизилось{/color}"),
+            mood >= 0 : __("{color=[lime]}повысилось{/color}")
             }[True]
 
 
@@ -1013,3 +1015,14 @@ init python:
         else:
             renpy.show("FG dinner 0"+renpy.random.choice(["1", "2", "3"])) # стол
         renpy.show("Max dinner 0"+renpy.random.choice(["1", "2", "3"])+max_profile.dress)
+
+
+    def SetPossStage(poss, stage): # устанавливает этап "возможности"
+        a = []
+        a = [1 for st in possibility[poss].stages if st.used]
+
+        possibility[poss].stage_number = stage
+        possibility[poss].stages[stage].used = True
+
+        if sum(a) == 0:
+            renpy.notify(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))

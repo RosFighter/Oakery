@@ -169,7 +169,7 @@ label alice_shower:
 
         label .start_peeping:
             $ renpy.notify(_("Скрытность Макса капельку повысилась"))
-            $ max_profile.stealth += 0.01
+            $ max_profile.stealth += 0.03
             $ __ran1 = renpy.random.randint(1, 4)
 
             $ _chance = GetChance(max_profile.stealth, 3, 900)
@@ -192,7 +192,7 @@ label alice_shower:
         label .closer_peepeng:
             if RandomChance(_chance):
                 $ peeping["alice_shower"] = 1
-                $ max_profile.stealth += 0.1
+                $ max_profile.stealth += 0.2
                 $ renpy.notify(_("Скрытность Макса повысилась"))
                 $ characters["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(1, 6)
@@ -205,7 +205,7 @@ label alice_shower:
                     Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
             elif RandomChance(_chance):
                 $ peeping["alice_shower"] = 2
-                $ max_profile.stealth += 0.05
+                $ max_profile.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
                 $ characters["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(7, 8)
@@ -216,7 +216,7 @@ label alice_shower:
                 jump .end_peeping
             else:
                 $ peeping["Alice_shower"] = 3
-                $ max_profile.stealth += 0.02
+                $ max_profile.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
                 $ __ran1 = renpy.random.choice(["09", "10"])
                 scene BG shower-closer

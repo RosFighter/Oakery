@@ -59,9 +59,7 @@ label back_shoping:
         Max_08 "Да я и не переживаю..."
         Ann_05 "Вот и отлично. Ладно, поболтаем позже..."
         Max_00 "Ага..."
-        $ possibility["Swimsuit"].stage_number = 2
-        $ possibility["Swimsuit"].stages[2].used = True
-
+        $ SetPossStage("Swimsuit", 2)
 
     elif EventsByTime["back_shoping"].stage == 2:
         ## --- Девчонки возвращаются со второго шоппинга
@@ -69,8 +67,7 @@ label back_shoping:
         Ann_05 "Привет, Макс! Мы вернулись..."
         Max_04 "Рассказывайте, что купили?"
         if possibility["Swimsuit"].stage_number == 2:
-            $ possibility["Swimsuit"].stage_number = 4
-            $ possibility["Swimsuit"].stages[4].used = True
+            $ SetPossStage("Swimsuit", 4)
             Lisa_03 "А мне Эрик подарил купальник! Именно такой, как я и хотела! Красный, представляешь?!"
             Max_11 "Ясно..."
             Lisa_02 "Что? Ты за меня не рад? Я же теперь смогу загорать в нормальном виде!"
@@ -84,11 +81,9 @@ label back_shoping:
             Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
             Max_11 "Поздравляю..."
             if possibility["nightclub"].stage_number == 1:
-                $ possibility["nightclub"].stage_number = 2
-                $ possibility["nightclub"].stages[2].used = True
+                $ SetPossStage("nightclub", 2)
             else:
-                $ possibility["nightclub"].stage_number = 3
-                $ possibility["nightclub"].stages[3].used = True
+                $ SetPossStage("nightclub", 3)
             Ann_07 "Макс, ты какой-то грустный. Что-то случилось? Или мне показалось?"
             Max_00 "Показалось, мам..."
         Alice_02 "Не переживай. Ты всегда можешь заработать и купить себе сам всё, что хочешь..."

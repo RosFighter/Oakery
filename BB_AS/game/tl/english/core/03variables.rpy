@@ -784,3 +784,103 @@ translate english strings:
     old "Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."
     new "Even before mom introduced me to her new boyfriend Eric, I had the feeling he would be bad news. Something just doesn't feel right about him."
 
+# TODO: Translation updated at 2020-02-02 11:37
+
+translate english strings:
+
+    # game/core/03variables.rpy:291
+    old "Дым сигарет"
+    new "Cigarette smoke"
+
+    # game/core/03variables.rpy:291
+    old "Оказалось, что Алиса курит. Причём, она старается это делать, когда дома никого нет. Это можно использовать... Рассказать маме самому или подставить Алису, чтобы мама сама догадалась... А может быть, всё это позволит наладить с Алисой отношения? Столько вариантов. Какой же выбрать?"
+    new "Turns out Alice is a smoker. And she tries to smoke when no one is around. I could use this... Tell mom the truth or frame Alice so mom will figure out everything herself? Or maybe it could improve our relationship? So many options, what should I choose?"
+
+    # game/core/03variables.rpy:291
+    old "Мама всё узнала про сигареты и Алиса была наказана. Причём, серьёзно так, у всех на глазах, да по голой заднице. Что самое печальное - Алиса знает, что это я её сдал. Так что, она меня теперь ненавидит, наверное... Неизвестно, получится ли теперь завоевать её доверие..."
+    new "Mom learned about smoking and Alice got a harsh punishment. Mom slapped her naked ass in front of everyone. Unfortunately Alice knows I ratted her out so she probably hates me. I'm not sure if I'll ever earn her trust again."
+
+    # game/core/03variables.rpy:291
+    old "Мама почувствовала сигаретный дым, но я не сдал Алису. Кажется, сестрёнка это оценила. Вот только что мешает её подставить, чтобы мама узнала об этом не от меня, а как бы сама что-то нашла? И я не при делах!\n\nА может быть, эта вредная привычка Алисы поможет мне улучшить с ней отношения?"
+    new "Mom noticed smoke but I didn't rat Alice out. I could still frame Alice in a way that wouldn't implicate me.\n\n\nOr maybe I could improve my relationship with Alice"
+
+    # game/core/03variables.rpy:296
+    old "Школьница"
+    new "Schoolgirl"
+
+    # game/core/03variables.rpy:296
+    old "Итак, в новой школе Лиза оказалась не такой отличницей, как раньше. Видимо, в новой школе уровень знаний требуется намного более высокий. Ну что же, это хорошая возможность проявить свои школьные знания и помочь младшей сестрёнке разобраться в материале... Или же наоборот, помешать получить хорошую оценку и понаблюдать, как мама её накажет? А может быть, попросить у неё что-то за помощь? Но сначала надо поговорить с Лизой и спросить, что она обо всём этом думает?"
+    new "Lisa's grades took a dive. Looks like the new school requires higher level of education. This is a good opportunity to show my knowledge and help out my little sister... Or sabotage her grades and see how mom will punish her. Or maybe ask for something in return for my help? But first I have to talk to Lisa and see her thoughts on the situation."
+
+    # game/core/03variables.rpy:296
+    old "Я поговорил с Лизой и пообещал ей, что помогу с уроками. Причём, абсолютно безвозмездно. То есть - даром. Конечно, это не очень свойственно для меня, но зато есть все шансы наладить отношения с сестрёнкой и завоевать её доверие..."
+    new "I talked with Lisa and promised to help with her studies. For free. Just cause. Of course, it's not very typical of me, but I may improve relationship with my sis and earn her trust."
+
+    # game/core/03variables.rpy:296
+    old "Я поговорил с Лизой насчёт уроков и намекнул, что моя помощь будет стоить... некоторых услуг. Конечно, она отказалась. Но это пока. До первого наказания. Как только её отшлёпают у меня на глазах, всё изменится! Но для этого надо сделать так, чтобы она снова получила двойку..."
+    new "I talked with Lisa and hinted that my help will cost her some... services. She refused me, though. Until her first punishment, that is. She'll have a change of heart after mom spanks her in front of me. Now I just have to fail her homework."
+
+    # game/core/03variables.rpy:296
+    old "Кажется, я убедил Лизу меня слушаться под страхом наказания. Теперь она будет спать только в футболке и трусах. Ну ничего, я только начал.\n\nТеперь я могу под видом помощи с уроками, подправлять вычисления так, чтобы ей поставили двойку и можно было бы снова наблюдать за её наказанием... Кто знает, может быть, удастся развести её на нечто большее?"
+    new "I think I convinced Lisa to listen to me under fear of punishment. Now she's sleeping in t-shirt and panties only. And that's only the beginning!\n\nNow, under pretense of helping I can fail her homework so I can see her get punished... Who knows, maybe I'll even be able to go further?"
+
+    # game/core/03variables.rpy:302
+    old "Арахнофобия"
+    new "Arachnophobia"
+
+    # game/core/03variables.rpy:302
+    old "Любопытно. Похоже, Алиса до смерти боится пауков. А надо заметить, что климат тут очень подходит для такого рода насекомых... Нужно будет поймать одного и подкинуть Алисе, вот забавно будет! Вот только как и где их искать?"
+    new "Looks like Alice is terrified of spiders. And the climate here is very good for that kind of insect... Catching one and dropping it off to Alice should be hilarious! Now how would I get one?"
+
+    # game/core/03variables.rpy:302
+    old "Я порылся в интернете и выяснил, что в нашей местности очень легко встретить один вид пауков. К счастью, он совершенно безвредный, но размеры бывают весьма солидные. Ночью их не найти, а вот когда солнце только начинает прогревать землю, они выползают на свет и проверяют свою добычу."
+    new "I looked it up on the web, and there's a local type of spider that would be perfect for my goal! It's completely harmless and pretty big. Looks like I can try and catch one in the morning when spiders check their nets for prey."
+
+    # game/core/03variables.rpy:302
+    old "Итак, я поймал огромного паука. Это не так сложно, если знать в какое время и где их ловить. Теперь нужно испытать этого монстра на сестрёнке. Вот только бы выбрать подходящий момент..."
+    new "I've got myself a huge spider, turns out it's quite easy if you know what you're doing. Now I just have to test this monster on my sister. Where would be the best place for my experiment..."
+
+    # game/core/03variables.rpy:302
+    old "Алиса определённо боится пауков! Визг слышали все соседи со всей округи, это точно! Вот только если Алиса узнает, что я это всё специально подстроил, меня ждёт смерть. Надеюсь, быстрая..."
+    new "Yep, Alice is a huge arachnophobe. Her shrieks were heard by the whole block. If Alice ever finds out I'm the culprit she'll definitely kill me. I hope I die quickly."
+
+    # game/core/03variables.rpy:302
+    old "Алиса так боится пауков, что согласилась раздеться ради того, чтобы я убил одного, который залез в её постель. Ага, сам он залез, как же... Тем не менее, этой её фобией можно пользоваться в своих интересах. Посмотрим, к чему это всё приведёт..."
+    new "Alice is so afraid of spiders she agreed to get naked just so I will kill one in her bed. I'm so lucky spiders keep climbing into Alice's bedroom for no reason... Anyway, I wonder what else I can get from Alice for killing a spider..."
+
+    # game/core/03variables.rpy:302
+    old "После очередного избавления от паука я намекнул Алисе, что было бы не плохо, если бы я спал рядом и охранял её. Она отказалась. Видимо, слишком мало пауков попадает к ней в постель..."
+    new "I've killed another spider for Alice and asked her about staying in her room to guard her. She turned me down. I guess she needs more spiders in her bed to change her mind..."
+
+    # game/core/03variables.rpy:302
+    old "Похоже, я способствую развитию арахнофобии у Алисы. Во всяком случае, прогресс очевиден. Теперь Алиса задумывается о том, что было бы неплохо иногда впускать меня в постель для защиты от пауков. Но пока только задумывается... Значит, стоит продолжать..."
+    new "I think I may worsening Alice's arachnophobia. Alice is starting to think about letting me into her bed. She still didn't let me sleep in her room, so I think I should keep trying."
+
+    # game/core/03variables.rpy:302
+    old "Да! Алиса разрешила мне спать рядом. Конечно, потребовалось столько паучьих жертв, но оно того стоило! Первый шаг сделан, разрешение получено, а дальше уже всё пойдёт как по маслу!"
+    new "Alice has finally let me sleep in her bed! Moment of silence for all the spiders who sacrificed their lives so this tremendous achievement. Step one is over, now I just have to keep trying..."
+
+    # game/core/03variables.rpy:302
+    old "Наши забавы с Алисой в постели, как и ожидалось, дошли до самого интересного... Да она сама на меня прыгает! Слава паукам!"
+    new ""
+
+    # game/core/03variables.rpy:313
+    old "Альфа"
+    new "Alpha"
+
+    # game/core/03variables.rpy:313
+    old "Итак, я познакомился с этим самым Эриком, бойфрендом мамы. Не могу сказать о нём ничего хорошего или плохого, но он мне не очень понравился. Практически сразу он предложил мне выбрать дружить с ним или воевать. Вот только зачем мне с ним дружить? Что это даст? Да и воевать... Что он может мне сделать? Так или иначе, но он дал на размышления одну неделю. Ну, подумаю как следует и решу что попало..."
+    new "I've meat this Eric, mom's boyfriend. Can't tell anything good or bad about him, but I don't like him. He asked me to choose between friendship and war. Now why would I want to be friends with him, what would that achieve? Same goes for war... What could he do to me? Anyway, he gave me a week to think. I guess I'll have to think this through and decide."
+
+    # game/core/03variables.rpy:313
+    old "С появлением Эрика мои дела стали неожиданно плохи... Во-первых, он предложил отправить меня в какой-то военный лагерь. Вроде бы для того, чтобы сделать из меня мужика... Да я уже Мужик! Сдались мне эти лагеря...\n\nВо-вторых, он убедил маму, что наказывать нас надо как-то иначе. Нет бы что хорошее подсказал, но это... В общем, со следующей недели нас будут наказывать на глазах друг у друга... голыми! Это такой позор! Это же каким надо быть извращенцем, чтобы такое выдумать.\n\nПонятно, что будет прикольно лишний раз увидеть сиськи сестёр, но и меня могут выпороть на глазах у всех. Это же как подорвёт авторитет!\n\nСначала эта дурацкая идея с военным лагерем, теперь ещё и это... Нужно что-то срочно делать!"
+    new "Eric is definitely a change for the worse. First, he suggested to send me to some military camp. \"To build some character\". I have a huge character!\n\nThen he convinced mom we should have a new punishment system. Why couldn't he suggest something good... Anyway, from next week we're going to be spanked in front of each other! Naked! It's humiliating. What kind of pervert would come up with this idea? It will ruin my authority!\n\nI have to do something immediately!"
+
+    # game/core/03variables.rpy:313
+    old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращаться свою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
+    new "I feel like I've made a deal with the devil. Eric promised to pay me some money and gave me permission to peek after him and mom having sex. On my part, I have to let him corrupt my family. Who knows, maybe he'll let me participate in some action..."
+
+    # game/core/03variables.rpy:313
+    old "Да пошёл он, этот Эрик! Я отказался от его сомнительного предложения и не собираюсь иметь с ним ничего общего. Пусть попробует только полезть, я ему покажу! Глаза мои его бы не видели... Конечно, я отказался от всего что он там мог предложить, но зато моя совесть чиста и моя семья в моих руках!"
+    new "Screw him! I declined his dubious offer and not going to work with him. I won't get anything he offered but my conscience is clear and my family is in my hands!"
+

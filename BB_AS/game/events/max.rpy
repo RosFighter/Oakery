@@ -185,14 +185,13 @@ label Box:
     scene Max unbox 03
     Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
     scene Max unbox 04
+    $ SetPossStage("cams", 0)
     menu:
-        Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность!\"{/i}{/color}"
+        Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..."
         "{i}закончить{/i}":
             pass
         "{i}узнать подробнее о \"Возможностях\"{/i}" if flags["about_poss"]:
             call about_poss from _call_about_poss
-    $ possibility["cams"].stage_number = 0
-    $ possibility["cams"].stages[0].used = True
     $ AvailableActions["unbox"].enabled = False
     $ AvailableActions["searchcam"].enabled = True
     $ InspectedRooms.clear()
@@ -299,8 +298,7 @@ label create_site:
         xpos 221 ypos 93
     Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
     $ spent_time = 60
-    $ possibility["cams"].stage_number = 4
-    $ possibility["cams"].stages[4].used = True
+    $ SetPossStage("cams", 4)
     $ money -= 100
     $ items["hide_cam"].InShop = True
     $ house[4].cams.append(HideCam())
@@ -332,8 +330,7 @@ label about_cam:
     $ items["manual"].InShop = True
     $ renpy.notify(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 20
-    $ possibility["cams"].stage_number = 2
-    $ possibility["cams"].stages[2].used = True
+    $ SetPossStage("cams", 2)
     jump Laptop
 
 
@@ -348,8 +345,7 @@ label SearchCam:
         $ random_loc_ab = "b"
         $ AvailableActions["searchcam"].enabled = False
         $ InspectedRooms.clear()
-        $ possibility["cams"].stage_number = 1
-        $ possibility["cams"].stages[1].used = True
+        $ SetPossStage("cams", 1)
     else:
         Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
         $ InspectedRooms.append(current_room)
@@ -434,8 +430,7 @@ label BookRead:
             Max_00 "Так, ну теперь картина вырисовывается. Осталось разобраться только с мелочами... Или это не мелочи?\n\n{color=[orange]}{i}(Книга изучена на 80%%){/i}{/color}"
         else:
             Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
-            $ possibility["cams"].stage_number = 3
-            $ possibility["cams"].stages[3].used = True
+            $ SetPossStage("cams", 3)
             $ items["manual"].InShop = False
             jump .end
 
@@ -507,8 +502,7 @@ label SearchSecretBook:
         $ spent_time += 10
         scene BG char Max secretbook-00
         Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
-        $ possibility["secretbook"].stage_number = 1
-        $ possibility["secretbook"].stages[1].used = True
+        $ SetPossStage("secretbook", 1)
         $ AvailableActions["searchbook"].enabled = False
         jump Waiting
 
@@ -528,8 +522,7 @@ label about_secretbook:
     $ items["erobook_4"].InShop = True
     $ items["erobook_5"].InShop = True
     $ renpy.notify(_("В интернет-магазине доступен новый товар."))
-    $ possibility["secretbook"].stage_number = 2
-    $ possibility["secretbook"].stages[2].used = True
+    $ SetPossStage("secretbook", 2)
     $ spent_time += 30
     jump Laptop
 

@@ -127,10 +127,10 @@ translate english MorningWood_a468566c:
     Lisa_10 "What do you mean? I want to know this stuff!"
 
 # game/dialogues/lisatalk.rpy:124
-translate english MorningWood_8d820151:
+translate english MorningWood_21fcc87f:
 
-    # Ann_09 "Нет, Лиза, тебе ещё рано таким интересоваться. Вот подрастёшь, тогда и поговорим. На этом всё. Сделаем вид, что ничего не было. Ясно? \n\n {color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}" nointeract
-    Ann_09 "No, Lisa, you're too young to know this stuff. We'll talk about it when you're more mature. We're going to forget about this for now, but just know that Max didn't mean you any harm.\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}" nointeract
+    # Ann_09 "Нет, Лиза, тебе ещё рано таким интересоваться. Вот подрастёшь, тогда и поговорим. На этом всё. Сделаем вид, что ничего не было. Ясно?" nointeract
+    Ann_09 "No, Lisa, you're too young to know this stuff. We'll talk about it when you're more mature. We're going to forget about this for now, but just know that Max didn't mean you any harm." nointeract
 
 # game/dialogues/lisatalk.rpy:99
 translate english AfterSchoolFD_6de0d615:
@@ -702,11 +702,11 @@ translate english talk_swim_f9fb2825:
     # Lisa_10 "Как... так?" nointeract
     Lisa_10 "Like what?" nointeract
 
-# game/dialogues/lisatalk.rpy:513
-translate english talk_swim_8fbbeb0c:
+# game/dialogues/lisatalk.rpy:511
+translate english talk_swim_aabb926c:
 
-    # Lisa_09 "Ну, у меня другого и нет. Ты же знаешь, что наши вещи пропали. Вот там и все мои купальники были...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}" nointeract
-    Lisa_09 "I don't have another one. You know all our stuff got lost when we moved. I'm stuck with this one...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new \"opportunity\"!{/i}{/color}" nointeract
+    # Lisa_09 "Ну, у меня другого и нет. Ты же знаешь, что наши вещи пропали. Вот там и все мои купальники были..." nointeract
+    Lisa_09 "I don't have another one. You know all our stuff got lost when we moved. I'm stuck with this one..." nointeract
 
 # game/dialogues/lisatalk.rpy:474
 translate english talk_swim_9fb489a2:
@@ -1692,17 +1692,17 @@ translate english about_boy2_db09ffe0:
     # Lisa_02 "Ну мы не очень много общались, но она ему нравится, это точно. Хотя, я ему тоже нравлюсь, похоже... Чуть-чуть..." nointeract
     Lisa_02 "Well, we didn't really talk about it, but he definitely likes her. Although I think he likes me too... a little bit..." nointeract
 
+# game/dialogues/lisatalk.rpy:745
+translate english about_boy2_f0995d1c:
+
+    # Lisa_00 "Ну да, не всё. Но около того. Я даже не представляю что мне делать. Он мне так нравится..."
+    Lisa_00 "I guess. I have no idea what to do. I like him so much..."
+
 # game/dialogues/lisatalk.rpy:747
-translate english about_boy2_6487164f:
+translate english about_boy2_976fe18a:
 
-    # Lisa_00 "Ну да, не всё. Но около того. Я даже не представляю что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
-    Lisa_00 "I guess. I have no idea what to do. I like him so much...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
-
-# game/dialogues/lisatalk.rpy:749
-translate english about_boy2_ebee2ae0:
-
-    # Lisa_00 "Шанс? Один из миллиона, может быть... Я не знаю как и что мне делать. Он мне так нравится...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
-    Lisa_00 "My chances don't look too good. I have no idea what to do. I like him so much...\n\n{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
+    # Lisa_00 "Шанс? Один из миллиона, может быть... Я не знаю как и что мне делать. Он мне так нравится..."
+    Lisa_00 "My chances don't look too good. I have no idea what to do. I like him so much..."
 
 # game/dialogues/lisatalk.rpy:749
 translate english about_boy2_061a8fe3:

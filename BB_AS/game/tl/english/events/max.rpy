@@ -25,11 +25,11 @@ translate english Box_05229898:
     # Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
     Max_01 "Some instructions, descriptions inside... this box was for a hidden camera! I wonder what it's doing here?"
 
-# game/events/max.rpy:158
-translate english Box_1aed80a0:
+# game/events/max.rpy:189
+translate english Box_b28a0ea4:
 
-    # Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...\n\n{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность!\"{/i}{/color}" nointeract
-    Max_10 "Maybe it's already installed somewhere in the house! I should check the rooms...\n\n{color=[lime]}{i}{b}Warning:{/b} New \"opportunity\" is unlocked!{/i}{/color}" nointeract
+    # Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..." nointeract
+    Max_10 "Maybe it's already installed somewhere in the house! I should check the rooms..." nointeract
 
 # game/events/max.rpy:184
 translate english Notebook_2dd57a79:
@@ -498,4 +498,5 @@ translate english Bath_b3c37b42:
 
     # Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
     Max_01 "Maybe a ladder will do, or better yet, a stepladder. Oh, yeah, I guess that'll be it!"
+# TODO: Translation updated at 2020-02-02 11:37
 

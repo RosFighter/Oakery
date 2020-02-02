@@ -2,37 +2,37 @@
 
 translate english strings:
 
-    # game/core/04function.rpy:367
-    old "значительно улучшилось"
-    new "improved significantly"
-
-    # game/core/04function.rpy:369
-    old "улучшилось"
-    new "improved"
-
-    # game/core/04function.rpy:371
-    old "немного улучшилось"
-    new "improved a little"
-
-    # game/core/04function.rpy:373
-    old "значительно ухудшилось"
-    new "deteriorated significantly"
-
-    # game/core/04function.rpy:375
-    old "ухудшилось"
-    new "deteriorated"
+    # game/core/04function.rpy:377
+    old "{color=[red]}значительно ухудшилось{/color}"
+    new "{color=[red]}deteriorated significantly{/color}"
 
     # game/core/04function.rpy:377
-    old "немного ухудшилось"
-    new "gotten a little worse"
+    old "{color=[red]}ухудшилось{/color}"
+    new "{color=[red]}deteriorated{/color}"
 
-    # game/core/04function.rpy:380
-    old "повысилось"
-    new "rose"
+    # game/core/04function.rpy:377
+    old "{color=[red]}немного ухудшилось{/color}"
+    new "{color=[red]}gotten a little worse{/color}"
 
-    # game/core/04function.rpy:382
-    old "снизилось"
-    new "sank"
+    # game/core/04function.rpy:377
+    old "{color=[lime]}немного улучшилось{/color}"
+    new "{color=[lime]}improved a little{/color}"
+
+    # game/core/04function.rpy:377
+    old "{color=[lime]}улучшилось{/color}"
+    new "{color=[lime]}improved{/color}"
+
+    # game/core/04function.rpy:377
+    old "{color=[lime]}значительно улучшилось{/color}"
+    new "{color=[lime]}improved significantly{/color}"
+
+    # game/core/04function.rpy:388
+    old "{color=[red]}снизилось{/color}"
+    new "{color=[red]}sank{/color}"
+
+    # game/core/04function.rpy:388
+    old "{color=[lime]}повысилось{/color}"
+    new "{color=[lime]}rose{/color}"
 
     # game/core/04function.rpy:390
     old "Настроение %s %s \nЕе отношение к Максу %s"
@@ -49,4 +49,8 @@ translate english strings:
     # game/core/04function.rpy:451
     old "Приобретен пакет рекламы"
     new "Advertising package acquired"
+
+    # game/core/04function.rpy:1028
+    old "{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
+    new "{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
 
