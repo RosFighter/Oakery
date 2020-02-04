@@ -156,7 +156,7 @@ label Shower:
 label Bath:
     $ renpy.block_rollback()
     scene BG char Max bath-00
-    show Max bath 01
+    $ renpy.show("Max bath "+pose3_2)
 
     menu:
         Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..."
@@ -534,9 +534,6 @@ label InstallCam:
     if GetKolCams(house) < 7 and len(current_room.cams) > 0:
         Max_00 "Здесь уже есть камера. Пожалуй, стоит установить ее в другом месте."
         jump AfterWaiting
-    if len(current_room.cams) > 0:
-        "{i}В следующих версиях...{/i}"
-        jump AfterWaiting
 
     if current_room == house[0]:
         menu:
@@ -562,12 +559,6 @@ label InstallCam:
             "{i}закончить{/i}":
                 $ house[3].cams.append(HideCam())
                 $ house[3].cams[0].grow = 100
-    # elif current_room == house[4]:
-    #     menu:
-    #         Max_04 "{i}{/i}"
-    #         "{i}закончить{/i}":
-    #             $ house[0].cams.append(HideCam())
-    #             $ house[0].cams[0].grow = 100
     elif current_room == house[5]:
         menu:
             Max_04 "{i}Уж не знаю, будет ли какой-то толк от этой камеры... Тут так редко что-то происходит... Ну пусть будет. Раз уж взялся всё подключать...{/i}"
@@ -575,11 +566,19 @@ label InstallCam:
                 $ house[5].cams.append(HideCam())
                 $ house[5].cams[0].grow = 100
     elif current_room == house[6]:
-        menu:
-            Max_04 "{i}Бассейн... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}"
-            "{i}закончить{/i}":
-                $ house[6].cams.append(HideCam())
-                $ house[6].cams[0].grow = 100
+        if len(current_room.cams) > 0:
+            menu:
+                Max_04 "{i}Вот теперь зрители смогут насладится всеми мокрыми и блестящими красотами, происходящими во дворе...{/i}"
+                "{i}закончить{/i}":
+                    $ house[6].cams.append(HideCam())
+                    $ house[6].cams[1].grow = 100
+        else:
+            menu:
+                Max_04 "{i}Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}"
+                "{i}закончить{/i}":
+                    Max_09 "{i}Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает...{/i}"
+                    $ house[6].cams.append(HideCam())
+                    $ house[6].cams[0].grow = 100
 
     $ items["hide_cam"].have = False
     $ cur_ratio = 1.5

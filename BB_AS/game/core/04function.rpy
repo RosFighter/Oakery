@@ -529,6 +529,8 @@ init python:
             for loc in locations:
                 num_room = 0
                 for room in locations[loc]:
+                    r1 = renpy.random.randint(0, 1)
+                    r2 = renpy.random.randint(600, 900)
                     for cam in room.cams:
                         # определим наличее персонажей в комнате
                         grow_list.clear()
@@ -575,6 +577,9 @@ init python:
                             k_grow = min(k_grow, 124)
 
                         k_glow = (k_grow-100) / 100. # коэффициент прироста зрителей
+                        if len(room.cams) > 1 and room.cams.index(cam) == r1:
+                            k_glow = k_glow * r2 / 1000. # если в локации две камеры, то для одной из них коэфициент прироста зрителей будет меньше
+
                         pub = cam.public * k_glow # прирост/отток публики
                         cam.public += round(pub / 6.0, 2) # прирост зрителей от интереса событий
                         earn = (cam.public * k_grow) /45000.0 # расчет прибыли. Чем зрителям интересней, тем больше они донатят
@@ -920,7 +925,7 @@ init python:
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
         for cam in room.cams:
             cam.grow = grow
-            grow = int(grow * 0.9) # для каждой последующей камеры интерес снижается на 10%
+            # grow = int(grow * 0.8) # для каждой последующей камеры интерес снижается на 20%
 
 
     def clip(x, a, b): # вписывает число x в диапазон между a и b

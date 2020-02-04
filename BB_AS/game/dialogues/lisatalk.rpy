@@ -73,7 +73,8 @@ label Lisa_cooldown:
 
 label MorningWood:
 
-    scene Lisa morning-oops 01
+    scene BG char Lisa morning-oops-01
+    show Lisa morning-oops 01
     menu:
         Lisa_11 "Макс! Это что такое?! Я сейчас маму позову!"
         "Что? Ты о чём?":
@@ -83,7 +84,8 @@ label MorningWood:
 
     Lisa_12 "Ты чем таким занимался при мне?!"
     Max_12 "Да ты о чём, вообще?"
-    scene Lisa morning-oops 02
+    scene BG char Lisa morning-oops-02
+    show Lisa morning-oops 02
     menu:
         Lisa_13 "Ма-ам! Иди сюда, скорее!"
         "Да это не то, о чём ты думаешь...":
@@ -102,7 +104,7 @@ label MorningWood:
                     pass
     scene Lisa morning-oops 03
     Ann_15 "Лиза? Что случилось?!"
-    scene BG morning-oops-04-05
+    scene BG char Lisa morning-oops-04-05
     show Lisa morning-oops 04
     Lisa_12 "Мам! Смотри, что у него!"
     menu:
