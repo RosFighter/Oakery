@@ -3,7 +3,7 @@ label AliceTalkStart:
 
     $ dial = TalkMenuItems()
 
-    $ __CurShedRec = GetScheduleRecord(schedule_alice, day, tm)
+    $ __CurShedRec = GetPlan(plan_alice, day, tm)
     if __CurShedRec.talklabel is not None:
         call expression __CurShedRec.talklabel from _call_expression
 
@@ -88,7 +88,7 @@ label wash_dishes_alice:
                     $ dishes_washed = True
                     $ spent_time = max((60 - int(tm[-2:])), 30)
                     scene BG crockery-morning-00
-                    $ renpy.show("Max crockery-morning 01"+max_profile.dress)
+                    $ renpy.show("Max crockery-morning 01"+mgg.dress)
                     menu:
                         Max_11 "И почему здесь нет посудомоечной машины..."
                         "{i}закончить{/i}":
@@ -297,7 +297,7 @@ label talkblog1:
 label alice_talk_tv:
     Alice_00 "Нет, садись. Тут места много..."
     $ talk_var["alice_tv"] = 1
-    $ renpy.show("Max tv-closer "+pose3_1+max_profile.dress)
+    $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
     Max_00 "Хорошо. Что смотришь?"
     menu:
         Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."

@@ -138,16 +138,16 @@ label Eric_talk_afterdinner:
 
 label eric_resting:
     scene BG char Ann relax-evening-01
-    $ renpy.show("Eric relax "+pose3_1+characters["eric"].dress)
+    $ renpy.show("Eric relax "+pose3_1+chars["eric"].dress)
     return
 
 
 label eric_ann_tv:
     scene BG lounge-tv-00
     if tv_scene == "":
-        $ renpy.show("Eric tv "+pose3_3+characters["eric"].dress)
+        $ renpy.show("Eric tv "+pose3_3+chars["eric"].dress)
     else:
-        $ renpy.show("Eric tv "+tv_scene+pose2_3+characters["eric"].dress)
+        $ renpy.show("Eric tv "+tv_scene+pose2_3+chars["eric"].dress)
     return
 
 
@@ -189,7 +189,7 @@ label eric_ann_fucking:
     elif fuck_scene == 5:
         Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНичего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
 
-    $ max_profile.stealth += 0.05
+    $ mgg.stealth += 0.05
     $ renpy.notify(_("Скрытность Макса повысилась"))
 
     $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
@@ -210,7 +210,7 @@ label eric_ann_fucking:
         Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
 
     $ spent_time += 20
-    $ max_profile.stealth += 0.05
+    $ mgg.stealth += 0.05
     $ renpy.notify(_("Скрытность Макса повысилась"))
     $ current_room = house[1]
     jump Waiting
@@ -225,7 +225,7 @@ label eric_ann_sleep:
             "{i}заглянуть в окно{/i}":
                 scene BG char Ann bed-night-01
                 $ renpy.show("Eric sleep-night "+pose3_1)
-                $ renpy.show("FG ann-voyeur-night-00"+max_profile.dress)
+                $ renpy.show("FG ann-voyeur-night-00"+mgg.dress)
                 if pose3_1 == "01":
                     Max_01 "Похоже, они крепко спят... Совершенно голые! Чёрт, жаль только мама лежит за Эриком и её почти не видно... Почему он такой здоровый?" nointeract
                 elif pose3_1 == "02":
@@ -264,28 +264,23 @@ label eric_ann_shower:
                 return
 
         $ renpy.notify(_("Скрытность Макса капельку повысилась"))
-        $ max_profile.stealth += 0.03
+        $ mgg.stealth += 0.03
         $ __r1 = renpy.random.choice(["01", "02", "03"])
-        $ _chance = GetChance(max_profile.stealth, 3)
-        if _chance < 333:
-            $ _chance_color = red
-        elif _chance > 666:
-            $ _chance_color = lime
-        else:
-            $ _chance_color = orange
+        $ _chance = GetChance(mgg.stealth, 3)
+        $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
         $ renpy.scene()
         $ renpy.show("Eric shower "+ __r1)
-        $ renpy.show("FG shower 00"+max_profile.dress)
+        $ renpy.show("FG shower 00"+mgg.dress)
         menu:
             Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 pass
             "{i}уйти{/i}":
                 jump Waiting
-        $ max_profile.stealth += 0.1
+        $ mgg.stealth += 0.1
         $ renpy.notify(_("Скрытность Макса повысилась"))
-        $ characters["ann"].dress_inf = "00a"
+        $ chars["ann"].dress_inf = "00a"
         $ spent_time += 10
         if __r1 == "01":
             $ __r2 = renpy.random.choice(["01", "02", "03"])

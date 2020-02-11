@@ -1,6 +1,6 @@
 label StartDialog:
     $ renpy.block_rollback()
-    if max_profile.energy < 10:
+    if mgg.energy < 10:
         Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
         jump AfterWaiting
 
@@ -62,7 +62,7 @@ label LittleEnergy:
         Max_10 "{i}Я слишком вымотался, нужно хоть немного вздремнуть...{/i}"
         "{i}вздремнуть{/i}":
             if "11:00" < tm <= "19:00":
-                $ renpy.show("Max nap "+pose3_1+max_profile.dress)
+                $ renpy.show("Max nap "+pose3_1+mgg.dress)
             else:
                 $ renpy.show("Max sleep-night "+pose3_1)
             Max_19 "Как же в этом доме хорошо..."
@@ -83,7 +83,7 @@ label LittleEnergy:
 label Nap:
     $ renpy.block_rollback()
     scene BG char Max bed-day-01
-    if max_profile.energy > 40.0:
+    if mgg.energy > 40.0:
         $ txt = _("{i}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/i}")
     else:
         $ txt = _("{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}")
@@ -101,7 +101,7 @@ label Nap:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
-    $ renpy.show("Max nap "+pose3_1+max_profile.dress)
+    $ renpy.show("Max nap "+pose3_1+mgg.dress)
     Max_19 "Как же в этом доме хорошо..."
     $ status_sleep = True
     jump Waiting
@@ -139,7 +139,7 @@ label Shower:
     menu:
         Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..."
         "{i}закончить{/i}":
-            $ max_profile.cleanness = 100
+            $ mgg.cleanness = 100
 
     if "ladder" in flags and flags["ladder"] == 1:
         scene BG char Max shower-window-01
@@ -161,7 +161,7 @@ label Bath:
     menu:
         Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..."
         "{i}закончить{/i}":
-            $ max_profile.cleanness = 100
+            $ mgg.cleanness = 100
 
     if "ladder" in flags and flags["ladder"] == 1:
         scene BG char Max bath-window-01
@@ -177,7 +177,7 @@ label Bath:
 
 label Box:
     $ renpy.block_rollback()
-    $ max_profile.energy -= 5.0
+    $ mgg.energy -= 5.0
     scene Max unbox 01
     Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
     scene Max unbox 02
@@ -205,10 +205,10 @@ label Notebook:
     $ renpy.block_rollback()
     if "06:00" <= tm < "21:00":
         scene BG char Max laptop-day-00
-        $ renpy.show("Max laptop-day 01"+max_profile.dress)
+        $ renpy.show("Max laptop-day 01"+mgg.dress)
     else:
         scene BG char Max laptop-night-00
-        $ renpy.show("Max laptop-night 01"+max_profile.dress)
+        $ renpy.show("Max laptop-night 01"+mgg.dress)
 
     Max_00 "Итак, чем интересным я займусь?"
 
@@ -230,11 +230,11 @@ label Laptop:
 
     $ search_theme.clear()
 
-    if possibility["cams"].stage_number == 1:
+    if possibility["cams"].stn == 1:
         $ search_theme.append((_("{i}почитать о камерах{/i}"), "about_cam"))
-    if possibility["Blog"].stage_number == 0:
+    if possibility["blog"].stn == 0:
         $ search_theme.append((_("{i}читать о блогах{/i}"), "about_blog"))
-    if possibility["secretbook"].stage_number == 1:
+    if possibility["secretbook"].stn == 1:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
 
     call screen LaptopScreen
@@ -357,7 +357,7 @@ label SearchCam:
 label ClearPool:
     $ renpy.block_rollback()
     scene BG char Max cleeningpool-00
-    $ renpy.show("Max cleaning-pool 01"+max_profile.dress)
+    $ renpy.show("Max cleaning-pool 01"+mgg.dress)
     Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
     $ dcv["clearpool"].stage = 2
     $ dcv["clearpool"].lost = 6
@@ -370,19 +370,19 @@ label DishesWashed:
     $ renpy.block_rollback()
     if tm < "16:00":
         scene BG crockery-morning-00
-        $ renpy.show("Max crockery-morning 01"+max_profile.dress)
+        $ renpy.show("Max crockery-morning 01"+mgg.dress)
     else:
         scene BG crockery-evening-00
-        $ renpy.show("Max crockery-evening 01"+max_profile.dress)
+        $ renpy.show("Max crockery-evening 01"+mgg.dress)
     menu:
         Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?"
         "{i}закончить{/i}":
             pass
     if (day+2) % 7 != 6:
         if (day+2) % 7 == 0:
-            $ __name_label = GetScheduleRecord(schedule_alice, day, "10:30").label
+            $ __name_label = GetPlan(plan_alice, day, "10:30").label
         else:
-            $ __name_label = GetScheduleRecord(schedule_alice, day, "11:30").label
+            $ __name_label = GetPlan(plan_alice, day, "11:30").label
         if __name_label == "alice_dishes":
             if GetRelMax("alice")[0] < 3:
                 $ AddRelMood("alice", 10, 60)
@@ -412,7 +412,7 @@ label delivery:
 
 label BookRead:
     scene BG char Max reading-00
-    $ renpy.show("Max reading 01"+max_profile.dress)
+    $ renpy.show("Max reading 01"+mgg.dress)
     menu:
         Max_00 "Пришло время почитать что-то..."
         "{i}читать \"WEB STANDARDS\"{/i}" if items["manual"].have and items["manual"].read < 5:

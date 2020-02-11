@@ -329,7 +329,7 @@ label breakfast_2:
     Ann_01 "Лиза, что спрашивали и что ты ответила?"
     Lisa_00 "Ну мам... У нас в прошлой школе не было анатомии, а тут химико-биологический класс с углублённым изучением. Конечно, я не смогла ответить!"
     scene BG punish-morning 00
-    $ renpy.show("Ann punish-morning 00"+characters["ann"].dress)
+    $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
     menu:
         Ann_01 "Что значит конечно не смогла? Хочешь, чтобы и тебя выперли из школы, как этого балбеса?"
         "Я не балбес! Я всё знаю!":
@@ -339,7 +339,7 @@ label breakfast_2:
     Ann_00 "Ну раз ты такой умный, Макс, то вот и помогай своей младшей сестре. А ты, Лиза, иди сюда. Сейчас я тебя накажу, чтобы ты взялась за ум!"
     scene BG punish-morning 01
     show Lisa punish-morning 01
-    $ renpy.show("Ann punish-morning 01"+characters["ann"].dress)
+    $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
     $ SetPossStage("sg", 0)
     menu:
         Lisa_09 "Ну мам... Я же не специально. Я обещаю, что всё выучу!"
@@ -347,19 +347,19 @@ label breakfast_2:
             Ann_01 "Быстро! На этот раз можешь джинсы не снимать. Но в следующий раз получишь по голой заднице у всех на глазах. Иди сюда!"
             ## наказание Лизы
             scene BG punish-morning 02
-            $ renpy.show("Ann punish-morning lisa-01"+characters["ann"].dress)
+            $ renpy.show("Ann punish-morning lisa-01"+chars["ann"].dress)
             $ __mood -= 50 # если Лизу наказывают, ее настроение портится
-            ## count.liza.spanked
+            $ talk_var['lisa.pun'] += 1
             Lisa_10 "Ой... Мам! Больно!"
-            $ renpy.show("Ann punish-morning lisa-02"+characters["ann"].dress)
+            $ renpy.show("Ann punish-morning lisa-02"+chars["ann"].dress)
             Ann_01 "Давай терпи. За двойки я всегда наказываю. В этот раз не сильно, чтобы ты понимала, что никакие отговорки или причины меня интересовать не будут. Получила двойку, получила по заднице у всех на глазах. Ясно?"
             Lisa_09 "Ой. Да. Ясно, мам. Я всё поняла!"
             scene BG punish-morning 01
             show Lisa punish-morning 02
-            $ renpy.show("Ann punish-morning 01"+characters["ann"].dress)
+            $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
             Ann_00 "Вот и хорошо, что поняла. Теперь иди садись. Прошу прощения, что пришлось прервать завтрак, но иначе нельзя."
             scene BG punish-morning 00
-            $ renpy.show("Ann punish-morning 00"+characters["ann"].dress)
+            $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
             menu:
                 Ann_00 "И да, если узнаю, что кто-то мне врёт, тот получит гораздо сильнее. Больше всего ненавижу ложь. Всё ясно?"
                 "Ясно...":
@@ -573,7 +573,7 @@ label breakfast_4:
                 "Да я рад...":
                     pass
     Ann_05 "Вот и отлично! Хватит уже про Эрика, давайте обсудим что планируем купить.."
-    if possibility["Swimsuit"].stage_number < 0:
+    if possibility["Swimsuit"].stn < 0:
         Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
         $ SetPossStage("Swimsuit", 1)
     else:
@@ -654,6 +654,8 @@ label breakfast_5:
 
 
 label breakfast:
+    call StartPunishment()
+
     $ renpy.block_rollback()
 
     $ seat_Breakfast()

@@ -34,7 +34,7 @@ label InitHouse: # стартовая инициация виллы
 
 label InitCharacters: # стартовая инициация персонажей
     python:
-        characters = {
+        chars = {
              "lisa": Profile(_("Лиза"), _("Лизы"), _("Лизе"), _("Лизу"), _("Лизой"), _("Лизе"),
                 _("Лиза, младшая сестрёнка. Милая и весёлая. Она ещё учится в школе. С Лизой мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."),
                 "Lisa", relmax=150),
@@ -42,10 +42,10 @@ label InitCharacters: # стартовая инициация персонаже
                 _("Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."),
                  "Alice"),
              "ann": Profile(_("Анна"), _("Анны"), _("Анне"), _("Анну"), _("Анной"), _("Анне"), _("Анна, моя мама. Сама воспитывает нас с двумя сёстрами уже несколько лет. Работает в офисе какой-то компании. Хотя, зарплата у неё вполне приличная, но почти всё уходит на оплату жилья, еду и одежду."),
-                "Ann", 0, 0, 2),
+                "Ann", relmax=250),
             }
 
-        max_profile = MaxProfile(_("Макс"),  _("Макса"), _("Максу"), _("Макса"), _("Максом"), _("Максе"),
+        mgg = MaxProfile(_("Макс"),  _("Макса"), _("Максу"), _("Макса"), _("Максом"), _("Максе"),
                                 _("Всегда в поисках приключений на свою пятую точку."), "Max info-00")
 
         sex_stat = {
@@ -54,11 +54,11 @@ label InitCharacters: # стартовая инициация персонаже
             "ann"  : SexStat(),
             }
 
-        schedule_lisa  = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        schedule_ann   = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        schedule_alice = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        schedule_eric  = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        AddSchedule(schedule_lisa,
+        plan_lisa  = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
+        plan_ann   = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
+        plan_alice = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
+        plan_eric  = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
+        AddSchedule(plan_lisa,
                     Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", "sleep", _("спит в нашей комнате (ночь)"), "house", 0, "lisa_sleep_night", enabletalk=False, glow=102),
                     Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", "sleep", _("спит в нашей комнате (утро)"), "house", 0, "lisa_sleep_morning", enabletalk=False, glow=102),
                     Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", "shower", _("принимает душ"), "house", 3, "lisa_shower", enabletalk=False, glow=120),
@@ -84,7 +84,7 @@ label InitCharacters: # стартовая инициация персонаже
                     Schedule((0, 6), "23:0", "23:59", "phone", _("лежит с телефоном в нашей комнате"), "house", 0, "lisa_phone", glow=105),
                     )
 
-        AddSchedule(schedule_ann,
+        AddSchedule(plan_ann,
                     Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", "sleep", _("спит"), "house", 2, "ann_sleep", enabletalk=False, glow=105),
                     Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", "shower", _("принимает душ"), "house", 3, "ann_shower", enabletalk=False, glow=120),
                     Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", "yoga", _("занимается йогой"), "house", 6, "ann_yoga", glow=115),
@@ -108,7 +108,7 @@ label InitCharacters: # стартовая инициация персонаже
                     Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "23:59", "resting", _("в своей комнате"), "house", 2, "ann_resting", glow=110),
                     )
 
-        AddSchedule(schedule_alice,
+        AddSchedule(plan_alice,
                     Schedule((1, 2, 3, 4, 5, 6, 0), "0:0", "0:59", "bath", _("принимает ванну"), "house", 3, "alice_bath", enabletalk=False, glow=120),
                     Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "5:59", "sleep", _("спит (ночь)"), "house", 1, "alice_sleep_night", enabletalk=False, glow=105),
                     Schedule((1, 2, 3, 4, 5, 6, 0), "6:0", "7:59", "sleep", _("спит (утро)"), "house", 1, "alice_sleep_morning", enabletalk=False, glow=110),
@@ -263,7 +263,7 @@ label InitPoss: # Возможности
                 PossStage("interface poss schoolmate ep01", _("Я убедил Лизу, что нужно бороться за своё счастье. Осталось только разработать план и достичь поставленной цели!")),
                 PossStage("interface poss schoolmate ep01", _("Я разработал хитрый план, который сделает всех счастливыми: Лиза должна подужиться с Оливией, стать её лучшей подругой, познакомить её со мной, а я её соблазню... Ну, попытаюсь. Но если получится, то у меня будет девушка, а у Лизы её Алекс. Отличный план! Вот только как соблазняют самых красивых девочек школы?")),
             ])
-    $ possibility["Blog"] = Poss(_("Блог"), [
+    $ possibility["blog"] = Poss(_("Блог"), [
                 PossStage("", _("Алиса рассказала о своём блоге и о своей проблеме, связанной с потерей вещей во время переезда. Теперь ей нечего показывать, не в чем вести блог и, вообще, она в печали. Кажется, она согласна на любую помощь и идеи, даже от меня! Может быть, посидеть в интернете, поискать какое-то решение?")),
                 PossStage("", _("В результате поисков информации в интернете о том, чем могла бы заняться Алиса, удалось кое-что выяснить. Самыми популярными оказались блоги, где где ведущие - девушки. Причём, чем более откровенные наряды и чем больше грудь, тем более популярны шоу. С грудью, конечно, ничего не поделать, а вот наряды... Может быть, поговорить с ней об этом?")),
                 PossStage("", _("Я пообщался с Алисой насчёт своих выводов о популярности блога и намекнул, что можно рекламировать не только крема и лаки, но и нижнее бельё, например. Удивительно, но Алиса согласилась. Правда, теперь мне нужно найти нижнее бельё для того, чтобы она заинтересовала свою аудиторию и привлекла внимание рекламодателей...")),
@@ -295,8 +295,8 @@ label InitPoss: # Возможности
             ])
     $ possibility["sg"] = Poss(_("Школьница"), [
                 PossStage("", _("Итак, в новой школе Лиза оказалась не такой отличницей, как раньше. Видимо, в новой школе уровень знаний требуется намного более высокий. Ну что же, это хорошая возможность проявить свои школьные знания и помочь младшей сестрёнке разобраться в материале... Или же наоборот, помешать получить хорошую оценку и понаблюдать, как мама её накажет? А может быть, попросить у неё что-то за помощь? Но сначала надо поговорить с Лизой и спросить, что она обо всём этом думает?")),
-                PossStage("", _("Я поговорил с Лизой и пообещал ей, что помогу с уроками. Причём, абсолютно безвозмездно. То есть - даром. Конечно, это не очень свойственно для меня, но зато есть все шансы наладить отношения с сестрёнкой и завоевать её доверие...")),
                 PossStage("", _("Я поговорил с Лизой насчёт уроков и намекнул, что моя помощь будет стоить... некоторых услуг. Конечно, она отказалась. Но это пока. До первого наказания. Как только её отшлёпают у меня на глазах, всё изменится! Но для этого надо сделать так, чтобы она снова получила двойку...")),
+                PossStage("", _("Я поговорил с Лизой и пообещал ей, что помогу с уроками. Причём, абсолютно безвозмездно. То есть - даром. Конечно, это не очень свойственно для меня, но зато есть все шансы наладить отношения с сестрёнкой и завоевать её доверие...")),
                 PossStage("", _("Кажется, я убедил Лизу меня слушаться под страхом наказания. Теперь она будет спать только в футболке и трусах. Ну ничего, я только начал.\n\nТеперь я могу под видом помощи с уроками, подправлять вычисления так, чтобы ей поставили двойку и можно было бы снова наблюдать за её наказанием... Кто знает, может быть, удастся развести её на нечто большее?")),
             ])
     $ possibility["spider"] = Poss(_("Арахнофобия"), [
@@ -323,23 +323,26 @@ label InitPoss: # Возможности
 label InitTalksEvents: # стартовая инициация диалогов и событий
     # Диалоги
     $ talks = {
-        "blog1"      : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var[\"blog\"]==1", -1),
-        "blog2"      : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var[\"blog\"]==3", 1),
-        "lisa_fd"    : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var[\"boy\"]==0"),
+        "blog1"      : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var['blog']==1", -1),
+        "blog2"      : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var['blog']==3", 1),
+        "lisa_fd"    : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var['boy']==0"),
         "lisa_swim"  : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
-                        "possibility[\"Swimsuit\"].stage_number < 0 and GetScheduleRecord(schedule_lisa, day, tm).label == \"lisa_sun\""),
-        "lisas_boy"  : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var[\"boy\"]==1", 0, "lisa_boy"),
-        "lisas_boy2" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy2", "2 < talk_var[\"boy\"] < 6", 1),
-        "lisa_dw"    : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var[\"lisa_dw\"]==0 and GetScheduleRecord(schedule_lisa, day, tm).name == \"dishes\"", -1),
-        "alice_dw"   : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var[\"alice_dw\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"dishes\"", -1),
-        "ask_money"  : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var[\"ask_money\"]==0"),
-        "aboutfood"  : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv[\"buyfood\"].stage==2 and dcv[\"buyfood\"].lost==2"),
-        "aboutpool"  : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv[\"clearpool\"].stage==2 and not dcv[\"clearpool\"].done"),
-        "ann_tv"     : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var[\"ann_tv\"]==0 and GetScheduleRecord(schedule_ann, day, tm).name == \"tv\""),
-        "alice_tv"   : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var[\"alice_tv\"]==0 and GetScheduleRecord(schedule_alice, day, tm).name == \"tv\""),
-        "aboutbooks" : TalkTheme("alice", _("Что читаешь?"), "alice_aboutbooks", "GetScheduleRecord(schedule_alice, day, tm).name == \"read\" and possibility[\"secretbook\"].stage_number < 0"),
-        "ann_mw"     : TalkTheme("ann", _("Насчёт случая с Лизой..."), "Ann_MorningWood", "flags[\"morning_erect\"] == 1"),
-        "lisa_mw"    : TalkTheme("lisa", _("Насчёт этого случая утром..."), "Lisa_MorningWood", "possibility[\"seduction\"].stage_number == 0", 0, "talkcooldown"),
+                        "possibility['Swimsuit'].stn < 0 and GetPlan(plan_lisa, day, tm).label == 'lisa_sun'"),
+        "lisas_boy"  : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var['boy']==1", 0, "lisa_boy"),
+        "lisas_boy2" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy2", "2 < talk_var['boy'] < 6", 1),
+        "lisa_dw"    : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var['lisa_dw']==0 and GetPlan(plan_lisa, day, tm).name == 'dishes'", -1),
+        "alice_dw"   : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var['alice_dw']==0 and GetPlan(plan_alice, day, tm).name == 'dishes'", -1),
+        "ask_money"  : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var['ask_money']==0"),
+        "aboutfood"  : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv['buyfood'].stage==2 and dcv['buyfood'].lost==2"),
+        "aboutpool"  : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv['clearpool'].stage==2 and not dcv['clearpool'].done"),
+        "ann_tv"     : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var['ann_tv']==0 and GetPlan(plan_ann, day, tm).name == 'tv'"),
+        "alice_tv"   : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var['alice_tv']==0 and GetPlan(plan_alice, day, tm).name == 'tv'"),
+        "aboutbooks" : TalkTheme("alice", _("Что читаешь?"), "alice_aboutbooks", "GetPlan(plan_alice, day, tm).name == \"read\" and possibility['secretbook'].stn < 0"),
+        "ann_mw"     : TalkTheme("ann", _("Насчёт случая с Лизой..."), "Ann_MorningWood", "flags['morning_erect'] == 1"),
+        "lisa_mw"    : TalkTheme("lisa", _("Насчёт этого случая утром..."), "Lisa_MorningWood", "possibility['seduction'].stn == 0", 0, "talkcooldown"),
+        "lisa_sg1"   : TalkTheme("lisa", _("Насчёт успеваемости..."), "Lisa_sg1", "possibility['sg'].stn == 0"),
+        "lisa_sg2"   : TalkTheme("lisa", _("Ну как, ты подумала о моих условиях?"), "Lisa_sg2", "possibility['sg'].stn == 1 and talk_var['lisa.pun'] > 0"),
+        "lisa_hw"    : TalkTheme("lisa", _("Помочь с уроками?"), "Lisa_HomeWork", "possibility['sg'].stn > 1 and not flags['lisa_hw'] and GetPlan(plan_lisa, day, tm).name == 'homework'"),
         }
 
     # Переменные влияющие на запуск диалогов
@@ -352,6 +355,8 @@ label InitTalksEvents: # стартовая инициация диалогов 
         "alice_dw" : 0,
         "ann_tv"   : 0,
         "alice_tv" : 0,
+        "lisa.pun" : 0,
+        "truehelp" : 0,
         }
 
     $ cooldown = {
@@ -398,6 +403,23 @@ label InitTalksEvents: # стартовая инициация диалогов 
         }
 
 
+label InitPunish:
+    $ warning = 0
+    $ punreason = [
+        0,  # подглядывал за Лизой и она рассказала об этом Анне
+        0,  # подглядывал за Алисой и она рассказала об этом Анне
+        0,  # подглядывал за Анной
+        0,  # подглядывал за Анной с Эриком  в спальне
+        0,  # грубо говорил об Эрике в разговоре с Анной
+        0,  # подкинул паука Алисе в душ
+        # 0,  # подглядывал за Анной с Эриком  в душе
+        # 0,  # подглядывал за Лизой и засекла Анна
+        ]
+    $ punlisa = []
+    $ punalice = []
+    $ newpunishment = 0
+
+
 label InitVariable: # стартовая инициация переменных
     python:
         current_ver = config.version
@@ -419,6 +441,7 @@ label InitVariable: # стартовая инициация переменных
             "morning_erect" : 0,
             "about_poss"    : True,
             "little_energy" : False,
+            "lisa_hw"       : False,
             }
         site = MaxSite()
         CurChar = "max"
@@ -448,8 +471,8 @@ label InitTempVar: # стартиовая установка временных 
 
 
 label AddEric:
-    $ characters["eric"] = Profile(_("Эрик"), _("Эрика"), _("Эрику"), _("Эрика"), _("Эриком"), _("Эрике"), _("Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."), "Eric")
-    $ AddSchedule(schedule_eric, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Анной", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
+    $ chars["eric"] = Profile(_("Эрик"), _("Эрика"), _("Эрику"), _("Эрика"), _("Эриком"), _("Эрике"), _("Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."), "Eric")
+    $ AddSchedule(plan_eric, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Анной", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
                 Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Анной", "house", 3, "eric_ann_shower", enabletalk=False, glow=130),
                 Schedule((1, 3, 4), "19:0", "19:59", "dinner", "семейный ужин", "house", 5, "dinner", enabletalk=False, glow=105),
                 Schedule((1, 3, 4), "20:0", "20:59", "rest", "в Аниной комнате", "house", 2, "eric_resting"),
@@ -458,7 +481,7 @@ label AddEric:
                 Schedule((6, ), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105, variable="day < 12"),
                 Schedule((6, ), "19:0", "19:59", "None", variable="day > 12"),
                 )
-    $ AddSchedule(schedule_ann, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Эриком", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
+    $ AddSchedule(plan_ann, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Эриком", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
                 Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Эриком", "house", 3, "eric_ann_shower", enabletalk=False, glow=130),
                 Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Эриком", "house", 4, "eric_ann_tv", enabletalk=False, glow=150),
                 Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахается с Эриком в своей комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150),

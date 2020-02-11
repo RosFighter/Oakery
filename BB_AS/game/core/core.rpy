@@ -31,25 +31,7 @@ label Waiting:
 
     if day != prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
-        $ talk_var["ask_money"] = 0
-        $ talk_var["lisa_dw"]   = 0 # разговор о помывке посуды
-        $ talk_var["alice_dw"]  = 0
-        $ talk_var["ann_tv"]    = 0
-        $ talk_var["alice_tv"]  = 0
-
-        $ random_loc_ab = renpy.random.choice(["a", "b"])
-
-        python:
-            # уменьшение счетчика событий, зависимых от прошедших дней
-            for i in dcv:  #
-                if dcv[i].enabled:
-                    dcv[i].lost -= 1
-                    if dcv[i].lost == 0:
-                        dcv[i].done  = True
-
-        $ GetDeliveryList()
-
-    # if prevday != day or prevtime != tm:
+        call NewDay
 
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
@@ -57,6 +39,8 @@ label Waiting:
     if prevtime[:2] != tm[:2]:
         # почасовой сброс
         $ flags["little_energy"] = False
+        $ peeping["alice_sleep"] = False
+        $ peeping["ann_sleep"] = False
         # позы обновляются каждый час
         $ pose3_1 = renpy.random.choice(["01", "02", "03"])
         $ pose3_2 = renpy.random.choice(["01", "02", "03"])
@@ -65,14 +49,6 @@ label Waiting:
         $ pose2_2 = renpy.random.choice(["01", "02"])
         $ pose2_3 = renpy.random.choice(["01", "02"])
         $ tv_scene = renpy.random.choice(["", "bj", "hj"])
-        python:
-            # сбросим подглядывания
-            for key in peeping:
-                if key != "ann_eric_sex1":
-                    peeping[key] = 0
-
-    if prevday != day:
-        $ peeping["ann_eric_sex1"] = 0
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -80,31 +56,83 @@ label Waiting:
         # если это сон, тогда энергия восстанавливается
 
         if delt >= 360:
-            $ max_profile.energy = 100 # за 6 часов сна Макс полностью восстанавливает свои силы
+            $ mgg.energy = 100 # за 6 часов сна Макс полностью восстанавливает свои силы
         elif delt >= 300:
-            $ max_profile.energy += delt * 0.25 # (15% в час)
+            $ mgg.energy += delt * 0.25 # (15% в час)
         elif delt >= 240:
-            $ max_profile.energy += delt * 0.2 # (12% в час)
+            $ mgg.energy += delt * 0.2 # (12% в час)
         else:
-            $ max_profile.energy += delt * 1 / 6 # (10% в час)
-        $ max_profile.cleanness -= delt * 0.5 * cur_ratio / 60.0
+            $ mgg.energy += delt * 1 / 6 # (10% в час)
+        $ mgg.cleanness -= delt * 0.5 * cur_ratio / 60.0
     else: # в противном случае - расходуется
-        $ max_profile.energy -= delt * 3.5 * cur_ratio / 60.0
-        $ max_profile.cleanness -= delt * 2.5 * cur_ratio / 60.0
+        $ mgg.energy -= delt * 3.5 * cur_ratio / 60.0
+        $ mgg.cleanness -= delt * 2.5 * cur_ratio / 60.0
 
-    $ max_profile.energy = clip(max_profile.energy, 0.0, 100.0)
-    $ max_profile.cleanness = clip(max_profile.cleanness, 0.0, 100.0)
+    $ mgg.energy = clip(mgg.energy, 0.0, 100.0)
+    $ mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
 
     # обновим extra-info для сохранений
     $ NewSaveName()
 
     if __name_label != "" and renpy.has_label(__name_label):
         # если есть кат-событие - запускаем его
+        $ spent_time = 0
+        $ prevday = day
+        $ prevtime = tm
         $ CamShow()
+        $ cur_ratio = 1
+        $ status_sleep = False
+        $ alarm_time = ""
         jump expression __name_label
 
     # иначе запускаем блок "после ожидания"
     jump AfterWaiting
+
+
+label NewDay:
+    $ talk_var["ask_money"] = 0
+    $ talk_var["lisa_dw"]   = 0 # разговор о помывке посуды
+    $ talk_var["alice_dw"]  = 0
+    $ talk_var["ann_tv"]    = 0
+    $ talk_var["alice_tv"]  = 0
+
+    $ random_loc_ab = renpy.random.choice(["a", "b"])
+
+    python:
+        # уменьшение счетчика событий, зависимых от прошедших дней
+        for i in dcv:  #
+            if dcv[i].enabled:
+                dcv[i].lost -= 1
+                if dcv[i].lost == 0:
+                    dcv[i].done  = True
+
+        # сбросим подглядывания
+        for key in peeping:
+            peeping[key] = 0
+
+    $ GetDeliveryList()
+
+    if 0 < GetWeekday(prevday) < 6:
+        if possibility['sg'].stn > 0 and not flags["lisa_hw"]:  # был разговор с Лизой по поводу наказаний и не помогали
+            $ punlisa.insert(0, [  # вставляем в начало
+                0,  # помощь Макса с д/з (0, 1, 2, 3, 4) (не помогал / допустил ошибку / неудачно попросил услугу / помог безвозмездно / помог за услугу)
+                0,  # получена двойка в школе (0, 1)
+                0,  # Макс заступился за Лизу перед наказанием (0, 1, 2)
+                0,  # Лиза понесла наказание (0, 1)
+                0,  # подозрительность
+                ])
+            $ del punlisa[10:]
+        if possibility['smoke'].stn > 0:  # Макс видел курящую Алису
+            $ punalice.insert(0, [  # вставляем в начало
+                0,  # Макс шантажировал Алису
+                0,  # Макс подставлял Алису
+                0,  # Макс заступился за Алису перед наказанием
+                0,  # Ализа понесла наказание
+                0,  # подозрительность
+                ])
+            $ del punalice[10:]
+    $ flags["lisa_hw"] = False
+    return
 
 
 label AfterWaiting:
@@ -130,11 +158,11 @@ label AfterWaiting:
         elif (day+2) % 7 != 6:
             $ __name_label = ""
             if (day+2) % 7 == 0:
-                $ __CurShedRec = GetScheduleRecord(schedule_alice, day, "10:00")
+                $ __CurShedRec = GetPlan(plan_alice, day, "10:00")
                 if __CurShedRec is not None:
                     $ __name_label = __CurShedRec.label
             else:
-                $ __CurShedRec = GetScheduleRecord(schedule_alice, day, "11:00")
+                $ __CurShedRec = GetPlan(plan_alice, day, "11:00")
                 if __CurShedRec is not None:
                     $ __name_label = __CurShedRec.label
 
@@ -148,7 +176,7 @@ label AfterWaiting:
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
     $ __name_label = ""
     if len(current_room.cur_char) > 0:
-        $ __CurShedRec = GetScheduleRecord(eval("schedule_"+current_room.cur_char[0]), day, tm)
+        $ __CurShedRec = GetPlan(eval("plan_"+current_room.cur_char[0]), day, tm)
         if __CurShedRec is not None:
             $ __name_label = __CurShedRec.label
 
@@ -164,11 +192,11 @@ label AfterWaiting:
         else:
             scene image(current_room.cur_bg)
 
-    if max_profile.energy < 10 and not flags["little_energy"]:
+    if mgg.energy < 10 and not flags["little_energy"]:
         Max_00 "Я слишком устал. Надо бы вздремнуть..."
         $ flags["little_energy"] = True
 
-    if max_profile.energy < 5:
+    if mgg.energy < 5:
         jump LittleEnergy
     call screen room_navigation
 

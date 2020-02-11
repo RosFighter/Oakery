@@ -1,7 +1,7 @@
 init python:
 
     class Profile:  # Описание и характеристики персонажа (не ГГ)
-        def __init__(self, name, name_1, name_2, name_3, name_4, name_5, desc="", pref="", mood=0, ri=0, ri_text="", mindedness=None, relmax=0, releric=None, influence=None):
+        def __init__(self, name, name_1, name_2, name_3, name_4, name_5, desc="", pref="", mood=0, relmax=0):
             self.name      = name      # имя
             self.name_1    = name_1    # имя в родительном падеже (от кого?)
             self.name_2    = name_2    # имя в дательном падеже (кому?)
@@ -18,23 +18,23 @@ init python:
             self.naked     = False
 
             self.dress     = "a"
-            self.dress_inf = "01a"        # суфикс изображения в окно описания
+            self.dress_inf = "01a"     # суфикс изображения в окно описания
 
             self.mood      = mood      # текущее настроение
-            self.ri        = ri        # (romantic interest) заинтересованность
-            self.ri_text   = ri_text   # текстовое описание текущего уровня заинтересованности
-            self.mindedness= mindedness# текущая раскрепощенность (для Эрика – None)
             self.relmax    = relmax    # уровень отношений с ГГ
-            self.releric   = releric   # уровень отношений с Эриком (для Эрика – None)
-            self.influence = influence # влияние Эрика (для Эрика – None)
+            self.ri        = 0         # (romantic interest) заинтересованность
+            self.free      = 0         # текущая раскрепощенность (для Эрика – None)
+            self.releric   = None      # уровень отношений с Эриком (для Эрика – None)
+            self.infmax    = None      # влияние Макса (для Эрика – None)
+            self.inferic   = None      # влияние Эрика (для Эрика – None)
 
         def __repr__(self):
             return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.dress_inf}\","\
-                    " настроение: {self.mood}, раскрепощенность: {self.mindedness}, отношения с Максом: {self.relmax}, "\
-                    "отношения с Эриком: {self.releric}, влияние Эрика: {self.influence}".format(self=self)
+                    " настроение: {self.mood}, раскрепощенность: {self.free}, отношения с Максом: {self.relmax}, "\
+                    "отношения с Эриком: {self.releric}, влияние Эрика: {self.inferic}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class MaxProfile:
         """ Здесь будут описание и характеристики Макса"""
 
@@ -50,12 +50,12 @@ init python:
             self.energy      = 100.0       # запас сил, энергия
             self.training    = 20.0        # тренированность
             self.cleanness   = 70.0        # чистота
-            self.persuade    = 8.0         # навыки убеждения
+            self.social      = 8.0         # навыки убеждения
             self.massage     = 0.0         # навыки массажа
             self.ero_massage = 0.0         # навыки эро.массажа
             self.stealth     = 9.0         # навык скрытности
             self.kissing     = 0.0         # навык поцелуев
-            self.cunnilingus = 0.0         # опыт куни
+            self.cuni        = 0.0         # опыт куни
             self.sex         = 0.0         # сексуальный опыт
             self.anal        = 0.0         # опыт анального секса
             self.dress       = "a"         # суфикс файлов одежды ("a", "b", "c"...)
@@ -63,12 +63,12 @@ init python:
         def __repr__(self):
             return "имя: {self.name}, описание: {self.desc}, изображение=\"{self.img}\", "\
             "\nзапас сил: {self.energy}, тренированность: {self.training}, чистота: {self.cleanness}, "\
-            "\nубежд: {self.persuade}, массаж: {self.massage}, эро.массаж: {self.ero_massage}"\
-            "\nскрыт: {self.stealth}, опыт поцелуев: {self.kissing}, куни: {self.cunnilingus}"\
+            "\nубежд: {self.social}, массаж: {self.massage}, эро.массаж: {self.ero_massage}"\
+            "\nскрыт: {self.stealth}, опыт поцелуев: {self.kissing}, куни: {self.cuni}"\
             "секс: {self.sex}, анал: {self.anal}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class SexStat:  # статистика сексуальных отношений
         def __init__(self, hand=0, foot=0, blow=0, boob=0, vm=0, mast=0, anal=0, vaginal=0, exhibit=0, lesbian=0, trio=0, orgy=0, sm=0, dm=0):
             self.hand    = hand      # hand_job "ручная работа"
@@ -93,7 +93,7 @@ init python:
                     "доминирование: {self.dm}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class Room:  # описание комнат в каждой локации (дом, школа, кафе и т.п.)
         def __init__(self, id, name, cam_name, icon="", max_cam=1, cur_bg="", cur_char=[]):
             self.id            = id        # идентификатор (идентификатор конкретной комнаты в локации {my_room, alice_room...})
@@ -110,7 +110,7 @@ init python:
             "персонажи в комнате: {self.cur_char}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class Schedule:  # действие в расписании персонажа
         """ действие расписания персонажа для укладки в список
             блоки на один и тот же период с разным сдвигом в одном периоде или
@@ -143,7 +143,7 @@ init python:
                     "нед., со сдвигом {self.shift}, начиная с {self.weekstart} недели".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class ActionsButton:
         """ класс-формат для объявления списка доступных действий """
 
@@ -159,7 +159,7 @@ init python:
             return "Кнопка: {self.sing} с иконкой \"{self.icon}\" запускает метку {self.label}. {self.enabled}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class Item:
         """ класс-формат описания предметов как в инвентаре, так и доступных для заказа в ИМ """
 
@@ -182,7 +182,7 @@ init python:
             "доставка через {self.delivery}, прочитано {self.read}/{self.need_read}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class PossStage:  # Описание этапа возможности
         def __init__(self, image="", desc="", ps=""):
             self.image  = image # изображение в экран описания возможностей
@@ -193,17 +193,17 @@ init python:
             return "изображение=\"{self.image}\", описание: {self.desc}, послесловие: {self.ps}\n".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class Poss:  # описание возможности
-        def __init__(self, name, stages=[], stage_number=-1):
+        def __init__(self, name, stages=[], stn=-1):
             self.name         = name          # Наименование (в экран описания возможностей)
             self.stages       = stages        # список этапов возможности
-            self.stage_number = stage_number  # текущий этап
+            self.stn = stn  # текущий этап
         def __repr__(self):
-            return "Наименование=\"{self.name}\", текущий этап: {self.stage_number}, список этапов:\n {self.stages}".format(self=self)
+            return "Наименование=\"{self.name}\", текущий этап: {self.stn}, список этапов:\n {self.stages}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class TalkTheme:  # описание темы для разговора
         def __init__(self, char, select, label, req="False", mood=0, kd_id=""):
             self.char   = char    # персонаж, (или список персонажей) с которым должен вестись диалог
@@ -216,7 +216,7 @@ init python:
             return "стартовая фраза=\"{self.select}\", метка: {self.label}, условие: {self.req}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class Dayly:
         def __init__(self, lost=0, done=False, enabled=False):
             self.lost    = lost     # осталось дней до срабатываения события
@@ -227,7 +227,7 @@ init python:
             return "Этап: {self.stage}, осталось дней: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class CutEvent:
         """ События, запускаемые в конкретное время"""
         def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), label="", desc="", variable="True", enabled=True, stage=0, sleep=False, extend=False, cut=False):
@@ -248,7 +248,7 @@ init python:
             return "\"{self.desc}\" стартует в {self.tm} по дням: {self.lod}, только если Макс спит {self.sleep}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class Helper:
         """ """
         def __init__(self, id, name, desc):
@@ -260,7 +260,7 @@ init python:
             return "\"{self.name}\" ({self.id}): {self.desc}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class HideCam:
         def __init__(self, HD = False):
             self.today    = 0      # прибыль за текущий день
@@ -273,7 +273,7 @@ init python:
             return "Прибыль: {self.total}({self.today}), зрителей: {self.public}, прирост: {self.grow}".format(self=self)
 
 
-################################################################################
+    ############################################################################
     class MaxSite:
         def __init__(self):
             self.account = 0 # состояние счета

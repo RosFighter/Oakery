@@ -19,19 +19,19 @@ label alice_bath:
                         pass
             "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
                 scene Alice bath 01
-                $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
+                $ renpy.show("FG voyeur-bath-00"+mgg.dress)
                 Max_00 "Кажется, Алиса и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но подходить ближе опасно - может заметить..."
                 menu:
                     Max_09 "Нужно что-нибудь придумать..."
                     "{i}уйти{/i}":
                         $ flags["ladder"] = 1
             "{i}установить стремянку{/i}" if items["ladder"].have:
-                scene BG char Max bathroom-window-00
-                $ renpy.show("Max bathroom-window 01"+max_profile.dress)
+                scene BG char Max bathroom-window-evening-00
+                $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
                 Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
 
                 $ renpy.scene()
-                $ renpy.show("Max bathroom-window 02"+max_profile.dress)
+                $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
                 Max_04 "Посмотрим, что у нас тут..."
 
                 $ __r1 = renpy.random.randint(1, 4)
@@ -49,7 +49,7 @@ label alice_bath:
                                 Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
                                 "{i}уйти{/i}":
                                     $ spent_time += 10
-                                    $ characters["alice"].dress_inf = "00aa"
+                                    $ chars["alice"].dress_inf = "00aa"
                                     pass
                         "{i}уйти{/i}":
                             pass
@@ -63,7 +63,7 @@ label alice_bath:
                                 Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
                                 "{i}уйти{/i}":
                                     $ spent_time += 10
-                                    $ characters["alice"].dress_inf = "04aa"
+                                    $ chars["alice"].dress_inf = "04aa"
                                     pass
                         "{i}уйти{/i}":
                             pass
@@ -85,7 +85,7 @@ label alice_sleep_night:
                 $ spent_time = 10
                 scene BG char Alice bed-night-01
                 $ renpy.show("Alice sleep-night "+pose3_2)
-                $ renpy.show("FG alice-voyeur-night-00"+max_profile.dress)
+                $ renpy.show("FG alice-voyeur-night-00"+mgg.dress)
                 if pose3_2 == "01":
                     Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно!" nointeract
                 elif pose3_2 == "02":
@@ -120,7 +120,7 @@ label alice_sleep_morning:
                 $ spent_time = 10
                 scene BG char Alice bed-morning-01
                 $ renpy.show("Alice sleep-morning "+pose3_2)
-                $ renpy.show("FG alice-voyeur-morning-00"+max_profile.dress)
+                $ renpy.show("FG alice-voyeur-morning-00"+mgg.dress)
                 if pose3_2 == "01":
                     Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть ее классную, почти голую фигурку как следует... " nointeract
                 elif pose3_2 == "02":
@@ -169,19 +169,14 @@ label alice_shower:
 
         label .start_peeping:
             $ renpy.notify(_("Скрытность Макса капельку повысилась"))
-            $ max_profile.stealth += 0.03
+            $ mgg.stealth += 0.03
             $ __ran1 = renpy.random.randint(1, 4)
 
-            $ _chance = GetChance(max_profile.stealth, 3, 900)
-            if _chance < 333:
-                $ _chance_color = red
-            elif _chance > 666:
-                $ _chance_color = lime
-            else:
-                $ _chance_color = orange
+            $ _chance = GetChance(mgg.stealth, 3, 900)
+            $ _chance_color = GetChanceColor(_chance)
             $ ch_vis = str(int(_chance/10)) + "%"
             scene image ("Alice shower 0"+str(__ran1))
-            $ renpy.show("FG shower 00"+max_profile.dress)
+            $ renpy.show("FG shower 00"+mgg.dress)
             menu:
                 Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
                 "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
@@ -192,9 +187,9 @@ label alice_shower:
         label .closer_peepeng:
             if RandomChance(_chance):
                 $ peeping["alice_shower"] = 1
-                $ max_profile.stealth += 0.2
+                $ mgg.stealth += 0.2
                 $ renpy.notify(_("Скрытность Макса повысилась"))
-                $ characters["alice"].dress_inf = "00aa"
+                $ chars["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(1, 6)
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
@@ -205,9 +200,9 @@ label alice_shower:
                     Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
             elif RandomChance(_chance):
                 $ peeping["alice_shower"] = 2
-                $ max_profile.stealth += 0.1
+                $ mgg.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
-                $ characters["alice"].dress_inf = "00aa"
+                $ chars["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(7, 8)
                 scene BG shower-closer
                 show image ("Alice shower-closer 0"+str(__ran1))
@@ -216,7 +211,7 @@ label alice_shower:
                 jump .end_peeping
             else:
                 $ peeping["Alice_shower"] = 3
-                $ max_profile.stealth += 0.05
+                $ mgg.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
                 $ __ran1 = renpy.random.choice(["09", "10"])
                 scene BG shower-closer
@@ -237,13 +232,13 @@ label alice_shower:
 label alice_rest_morning:
 
     scene BG char Alice morning
-    $ renpy.show("Alice morning 01"+characters["alice"].dress)
+    $ renpy.show("Alice morning 01"+chars["alice"].dress)
     return
 
 
 label alice_rest_evening:
     scene BG char Alice evening
-    $ renpy.show("Alice evening 01"+characters["alice"].dress)
+    $ renpy.show("Alice evening 01"+chars["alice"].dress)
     return
 
 
@@ -266,13 +261,13 @@ label alice_dressed_shop:
                 $ __ran1 = renpy.random.choice(["01", "02"])
 
                 if __ran1 == "01":
-                    $ characters["alice"].dress_inf = "02a"
+                    $ chars["alice"].dress_inf = "02a"
                 else:
-                    $ characters["alice"].dress_inf = "02b"
+                    $ chars["alice"].dress_inf = "02b"
 
                 scene BG char Alice voyeur-00
                 $ renpy.show("Alice voyeur "+__ran1)
-                $ renpy.show("FG voyeur-morning-00"+max_profile.dress)
+                $ renpy.show("FG voyeur-morning-00"+mgg.dress)
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
                 pass
@@ -284,19 +279,19 @@ label alice_dressed_shop:
 
 label alice_dishes:
     scene BG crockery-morning-00
-    $ renpy.show("Alice crockery-morning 01"+characters["alice"].dress)
+    $ renpy.show("Alice crockery-morning 01"+chars["alice"].dress)
     return
 
 
 label alice_dishes_closer:
     scene BG crockery-sink-01
-    $ renpy.show("Alice crockery-closer "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Alice crockery-closer "+pose3_2+chars["alice"].dress)
     return
 
 
 label alice_read:
     scene BG reading
-    $ renpy.show("Alice reading "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Alice reading "+pose3_2+chars["alice"].dress)
     return
 
 
@@ -318,13 +313,13 @@ label alice_dressed_friend:
                 $ __ran1 = renpy.random.choice(["01", "02"])
 
                 # if __ran1 == "01":
-                #     $ characters["lisa"].dress_inf = "02d"
+                #     $ chars["lisa"].dress_inf = "02d"
                 # else:
-                #     $ characters["lisa"].dress_inf = "02c"
+                #     $ chars["lisa"].dress_inf = "02c"
 
                 scene BG char Alice voyeur-00
                 $ renpy.show("Alice voyeur "+__ran1)
-                $ renpy.show("FG voyeur-morning-00"+max_profile.dress)
+                $ renpy.show("FG voyeur-morning-00"+mgg.dress)
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
                 pass
@@ -336,49 +331,49 @@ label alice_dressed_friend:
 
 label alice_sun:
     scene BG char Alice sun
-    $ renpy.show("Alice sun "+pose2_2+characters["alice"].dress)
+    $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
     return
 
 
 label alice_swim:
 
-    scene image "Alice swim "+pose3_2+characters["alice"].dress
+    scene image "Alice swim "+pose3_2+chars["alice"].dress
     return
 
 
 label alice_cooking_dinner:
     scene BG cooking-00
-    $ renpy.show("Alice cooking 01"+characters["alice"].dress)
+    $ renpy.show("Alice cooking 01"+chars["alice"].dress)
     return
 
 
 label alice_cooking_closer:
     scene BG cooking-01
-    $ renpy.show("Alice cooking-closer "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Alice cooking-closer "+pose3_2+chars["alice"].dress)
     return
 
 
 label alice_tv:
     scene BG lounge-tv-00
-    $ renpy.show("Alice tv "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Alice tv "+pose3_2+chars["alice"].dress)
     return
 
 
 label alice_tv_closer:
     scene BG lounge-tv-01
-    $ renpy.show("Alice tv-closer "+pose3_2+characters["alice"].dress)
-    $ renpy.show("Max tv 00"+max_profile.dress)
+    $ renpy.show("Alice tv-closer "+pose3_2+chars["alice"].dress)
+    $ renpy.show("Max tv 00"+mgg.dress)
     return
 
 
 label alice_morning_closer:
     scene BG char Alice morning-closer
-    $ renpy.show("Alice morning-closer "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Alice morning-closer "+pose3_2+chars["alice"].dress)
 
     return
 
 
 label alice_evening_closer:
     scene BG char Alice evening-closer
-    $ renpy.show("Alice evening-closer "+pose3_2+characters["alice"].dress)
+    $ renpy.show("Alice evening-closer "+pose3_2+chars["alice"].dress)
     return

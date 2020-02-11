@@ -985,4 +985,3 @@ translate english strings:
     # game/dialogues/dinner.rpy:350
     old "А что вы будете делать?"
     new "What are you going to do?"
-

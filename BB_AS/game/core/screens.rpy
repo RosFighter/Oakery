@@ -83,6 +83,12 @@ init: # трансформации для кнопок
         0.5
         repeat
 
+    transform main_logo2:
+        on idle:
+            zoom 0.95
+        on hover:
+            zoom 1.0
+
 ################################################################################
 
 screen choice_lang():
@@ -146,9 +152,9 @@ screen LaptopScreen():
     $ bookmarks = 2
     if dcv["buyfood"].stage == 1:
         $ bookmarks += 1
-    if possibility["cams"].stage_number == 3 and money >= 100:
+    if possibility["cams"].stn == 3 and money >= 100:
         $ bookmarks += 1
-    if possibility["cams"].stage_number >= 4:
+    if possibility["cams"].stn >= 4:
         $ bookmarks += 1
 
     frame area(221, 93, 1475, 829) background None:
@@ -186,12 +192,12 @@ screen LaptopScreen():
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop grocery" action Jump("buyfood") at book_marks
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    if possibility["cams"].stage_number == 3 and money >= 100:
+                    if possibility["cams"].stn == 3 and money >= 100:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop CreateSite" action Jump("create_site") at book_marks
                             text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
 
-                    if possibility["cams"].stage_number >= 4:
+                    if possibility["cams"].stn >= 4:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop bb cam" action Jump("open_site") at book_marks
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
@@ -584,68 +590,68 @@ screen room_navigation():
                                 hbox ypos 73 xalign 0.5 spacing - 30:
                                     for char in room.cur_char:
                                         if char == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                            imagebutton idle characters[char].pref+" icon a" focus_mask True at small_face:
+                                            imagebutton idle chars[char].pref+" icon a" focus_mask True at small_face:
                                                 action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
                                         else:
-                                            imagebutton idle characters[char].pref+" icon" focus_mask True at small_face:
+                                            imagebutton idle chars[char].pref+" icon" focus_mask True at small_face:
                                                 action [Hide("wait_navigation"), SetVariable("prev_room", current_room), SetVariable("current_room", room), Jump("AfterWaiting")]
                         else:
                             # если же это текущая локация - вывод над миниатюрой
                             # более крупных значков персонажей. положение зависит от количества
                             if len(current_room.cur_char) == 1:
                                 if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon a" focus_mask True:
+                                    imagebutton ypos -120 xalign 0.5 idle chars[current_room.cur_char[0]].pref+" icon a" focus_mask True:
                                                 action NullAction() at middle_face
                                 else:
-                                    imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon" focus_mask True:
+                                    imagebutton ypos -120 xalign 0.5 idle chars[current_room.cur_char[0]].pref+" icon" focus_mask True:
                                                 action NullAction() at middle_face
                             elif len(current_room.cur_char) == 2:
                                 # Если в локации два персонажа, дополнительно проверяется не является ли тек.локация крайней слева
                                 if current_room == current_location[0]:
                                     # и если да, то первая миниатюра отображается не слева, а над локацией
                                     if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                        imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon a":
+                                        imagebutton ypos -120 xalign 0.5 idle chars[current_room.cur_char[0]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
-                                        imagebutton ypos -120 xalign 0.5 idle characters[current_room.cur_char[0]].pref+" icon":
+                                        imagebutton ypos -120 xalign 0.5 idle chars[current_room.cur_char[0]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
                                     if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                        imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon a":
+                                        imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[1]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
-                                        imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
+                                        imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[1]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
                                 else:
                                     if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                        imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon a":
+                                        imagebutton ypos -100 xpos -63 idle chars[current_room.cur_char[0]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
-                                        imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
+                                        imagebutton ypos -100 xpos -63 idle chars[current_room.cur_char[0]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
                                     if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                        imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon a":
+                                        imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[1]].pref+" icon a":
                                                     focus_mask True action NullAction() at middle_face
                                     else:
-                                        imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[1]].pref+" icon":
+                                        imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[1]].pref+" icon":
                                                     focus_mask True action NullAction() at middle_face
                             elif len(current_room.cur_char) == 3:
                                 if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon a":
+                                    imagebutton ypos -100 xpos -63 idle chars[current_room.cur_char[0]].pref+" icon a":
                                                 focus_mask True action NullAction() at middle_face
                                 else:
-                                    imagebutton ypos -100 xpos -63 idle characters[current_room.cur_char[0]].pref+" icon":
+                                    imagebutton ypos -100 xpos -63 idle chars[current_room.cur_char[0]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                                 if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                    imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon a":
+                                    imagebutton ypos -120 align (0.5, 0.0) idle chars[current_room.cur_char[1]].pref+" icon a":
                                                 focus_mask True action NullAction() at middle_face
                                 else:
-                                    imagebutton ypos -120 align (0.5, 0.0) idle characters[current_room.cur_char[1]].pref+" icon":
+                                    imagebutton ypos -120 align (0.5, 0.0) idle chars[current_room.cur_char[1]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                                 if current_room.cur_char[0] == "alice" and (tm < "09:00" or tm >= "20:00"):
-                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].pref+" icon":
+                                    imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[2]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                                 else:
-                                    imagebutton ypos -100 xpos 63 idle characters[current_room.cur_char[2]].pref+" icon":
+                                    imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[2]].pref+" icon":
                                                 focus_mask True action NullAction() at middle_face
                             elif len(current_room.cur_char) == 4:
                                 pass
@@ -687,7 +693,7 @@ screen room_navigation():
     $ kol = 0
 
     for poss in possibility:
-        if possibility[poss].stage_number >= 0: # количество открытых возможностей
+        if possibility[poss].stn >= 0: # количество открытых возможностей
             $ kol += 1
 
     hbox:  # верхнее меню
@@ -772,13 +778,13 @@ screen menu_opportunity():
     $ list_stage = []
 
     for poss in possibility:
-        if possibility[poss].stage_number >= 0: # количество открытых возможностей
+        if possibility[poss].stn >= 0: # количество открытых возможностей
             $ kol += 1
             if CurPoss == "":
                 $ CurPoss = poss
 
     if CurPoss != "":
-        default view_stage = possibility[CurPoss].stage_number
+        default view_stage = possibility[CurPoss].stn
         for i in range(len(possibility[CurPoss].stages)):
             if possibility[CurPoss].stages[i].used:
                 $ list_stage.append(i)
@@ -796,13 +802,13 @@ screen menu_opportunity():
                 viewport mousewheel "change" draggable True id "vp1":
                     vbox spacing 5:
                         for poss in possibility:
-                            if possibility[poss].stage_number >= 0:
+                            if possibility[poss].stn >= 0:
                                 if CurPoss == "":
                                     $ CurPoss = poss
-                                    $ view_stage = possibility[poss].stage_number
-                                button background None action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stage_number)] xsize 390:
+                                    $ view_stage = possibility[poss].stn
+                                button background None action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stn)] xsize 390:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                                    textbutton possibility[poss].name action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stage_number)] selected CurPoss == poss
+                                    textbutton possibility[poss].name action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stn)] selected CurPoss == poss
                                     foreground "interface marker"
                 vbar value YScrollValue("vp1") style "poss_vscroll"
         if CurPoss != "":
@@ -976,44 +982,42 @@ screen menu_userinfo():
                         xpadding 0 ypadding 0 xmargin 0 ymargin 0
                         textbutton _("Макс") action SetVariable("CurChar", "max") selected CurChar == "max"
                         foreground "interface marker"
-                    for char in characters:
+                    for char in chars:
                         button background None action SetVariable("CurChar", char) xsize 180:
                             xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                            textbutton characters[char].name action SetVariable("CurChar", char) selected CurChar == char
+                            textbutton chars[char].name action SetVariable("CurChar", char) selected CurChar == char
                             foreground "interface marker"
             vbar value YScrollValue("vp") style "info_vscroll"
 
         if CurChar == "max": ## временное определение на стадии вывода изображения
-            if max_profile.dress == "a":
+            if mgg.dress == "a":
                 add "Max info 01" size (550, 900) xpos -50 ypos 10
             else:
                 add "Max info 01b" size (550, 900) xpos -50 ypos 10
 
         else:
             frame xysize(550, 900) background None:
-                if characters[CurChar].dress_inf == "":
-                    add characters[CurChar].pref+" info-00" size (550, 900) xpos -50 ypos 10
+                if chars[CurChar].dress_inf == "":
+                    add chars[CurChar].pref+" info-00" size (550, 900) xpos -50 ypos 10
                 else:
-                    add characters[CurChar].pref+" info "+characters[CurChar].dress_inf size (550, 900) xpos -50 ypos 10
+                    add chars[CurChar].pref+" info "+chars[CurChar].dress_inf size (550, 900) xpos -50 ypos 10
 
         viewport area (0, 30, 880, 850):
             vbox spacing 20:
                 frame xsize 850 background None:
                     if CurChar == "max":
-                        text max_profile.desc size 24
+                        text mgg.desc size 24
                     else:
-                        text characters[CurChar].desc size 24
-
-                # romantic interest
+                        text chars[CurChar].desc size 24
 
                 frame pos (50, 20) xsize 800 background None:
                     if CurChar == "max":
                         vbox spacing -1:
-                            for char in characters:
+                            for char in chars:
                                 # relmax
                                 hbox xfill True:
                                     frame xsize 350 background None:
-                                        $ char_name = characters[char].name_4
+                                        $ char_name = chars[char].name_4
                                         text _("Отношения с [char_name!t]") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text GetRelMax(char)[1] size 24
@@ -1025,17 +1029,17 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Запас сил") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(max_profile.energy, 1))+"%" size 24
+                                    text str(round(mgg.energy, 1))+"%" size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Тренированность") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(max_profile.training, 1))+"%" size 24
+                                    text str(round(mgg.training, 1))+"%" size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Чистота") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(max_profile.cleanness, 1))+"%" size 24
+                                    text str(round(mgg.cleanness, 1))+"%" size 24
 
                             frame:
                                 area (0, 0, 350, 25)
@@ -1046,30 +1050,30 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Навык убеждения") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(max_profile.persuade, 1)) size 24
+                                    text str(round(mgg.social, 1)) size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Навык скрытности") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(max_profile.stealth, 1)) size 24
-                            if max_profile.massage > 0:
+                                    text str(round(mgg.stealth, 1)) size 24
+                            if mgg.massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(round(max_profile.massage, 1)) size 24
-                            if max_profile.ero_massage > 0:
+                                        text str(round(mgg.massage, 1)) size 24
+                            if mgg.ero_massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык эро.массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(round(max_profile.ero_massage, 1)) size 24
-                            if max_profile.kissing > 0:
+                                        text str(round(mgg.ero_massage, 1)) size 24
+                            if mgg.kissing > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык поцелуев") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(round(max_profile.kissing, 1)) size 24
+                                        text str(round(mgg.kissing, 1)) size 24
 
 
                     elif CurChar == "eric":
@@ -1089,14 +1093,14 @@ screen menu_userinfo():
                                 frame xfill True background None:
                                     text GetRelMax(CurChar)[1] size 24
 
-                            # mindedness
-                            if not characters[CurChar].mindedness is None:
+                            # free
+                            if not chars[CurChar].free is None:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Раскрепощенность") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(characters[CurChar].mindedness) size 24
-                            if not characters[CurChar].releric is None:
+                                        text str(chars[CurChar].free) size 24
+                            if not chars[CurChar].releric is None:
                                 # releric
                                 hbox xfill True:
                                     frame xsize 350 background None:
@@ -1104,12 +1108,12 @@ screen menu_userinfo():
                                     frame xfill True background None:
                                         text GetRelEric(CurChar)[1] size 24
 
-                                # influence
+                                # inf_eric
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Влияние Эрика") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(characters[CurChar].mindedness)+"%" size 24
+                                        text str(chars[CurChar].free)+"%" size 24
     key "K_ESCAPE" action Jump("AfterWaiting")
     key "mouseup_3" action Jump("AfterWaiting")
 
@@ -1126,25 +1130,16 @@ style info_vscroll is vscrollbar:
     unscrollable "hide"
 
 ################################################################################
-init:
-    transform main_logo2:
-        on idle:
-            zoom 0.17
-        on hover:
-            zoom 0.18
 
 screen watermark:
-    # выводится, если это игра, но не экран настроек
-    if not ("preferences" in renpy.current_screen().screen_name):
-        imagebutton:
-            pos (0, 0)
-            idle "interface patreon logo"
-            action OpenURL("https://www.patreon.com/aleksey90artimages")
-            at main_logo2
-            focus_mask True
-
-# screen watermark():
-#     key "mouseup_2" action HideInterface()
-#     key "h" action HideInterface()
-#     key "dismiss" action HideInterface()
-#     key "game_menu" action HideInterface()
+    layer 'wm'
+    if (str(renpy.get_mode())=='start' and not (
+        renpy.get_screen("main_menu") or renpy.get_screen("game_menu") or renpy.get_screen("about")
+        or renpy.get_screen("help") or renpy.get_screen("save") or renpy.get_screen("load")
+        or renpy.get_screen("preferences"))):
+            imagebutton:
+                anchor (0.5, 0.5)
+                pos (0.9, 0.95)
+                idle "interface BBAS"
+                action OpenURL("https://www.patreon.com/aleksey90artimages")
+                at main_logo2

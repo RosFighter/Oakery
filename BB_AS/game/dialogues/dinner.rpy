@@ -182,23 +182,26 @@ label dinner_2:
         "Помощь нужна?":
             if talk_var["blog"] < 2:
                 jump .help
+            else:
+                jump .blog2
     menu .plan:
         Alice_13 "Когда придумаю, тогда и поделюсь. Пока я только строю план."
         "Ну как построишь, позови!":
             pass
         "Помощь нужна?":
             if talk_var["blog"] < 2:
-                $ SetPossStage("Blog", 0)
+                $ SetPossStage("blog", 0)
                 jump .help
+    label .blog2:
     if talk_var["blog"] == 2:
         Alice_00 "Кстати, ты уже предлагал свою помощь, если я не ошибаюсь... Или это было так, не серьёзно всё?"
         Max_09 "А ты и правда прислушаешься к моим советам?"
         Alice_13 "Макс, я готова на любую помощь. У самой уже нет идей, если честно. Так что, да. Прислушаюсь..."
-        $ SetPossStage("Blog", 0)
+        $ SetPossStage("blog", 0)
         Max_03 "Отлично. Тогда и правда помогу!"
         jump .next
     else:
-        $ SetPossStage("Blog", 0)
+        $ SetPossStage("blog", 0)
         menu:
             Alice_07 "Зачем? Чтобы ты в очередной раз посмеялся? И, вообще, если ты такой умный, то вот ты и придумай что-нибудь. Я даже спасибо скажу. Честно говоря, я в депрессии..."
             "Даже спасибо? Ну, хорошо...":
@@ -367,6 +370,8 @@ label dinner_4:
 
 
 label dinner:
+    call StartPunishment()
+
     $ renpy.block_rollback()
 
     $ seat_Dinner()

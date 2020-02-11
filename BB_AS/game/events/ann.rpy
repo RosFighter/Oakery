@@ -10,7 +10,7 @@ label ann_sleep:
             "{i}заглянуть в окно{/i}":
                 scene BG char Ann bed-night-01
                 $ renpy.show("Ann sleep-night "+pose3_3)
-                $ renpy.show("FG ann-voyeur-night-00"+max_profile.dress)
+                $ renpy.show("FG ann-voyeur-night-00"+mgg.dress)
                 if pose3_3 == "01":
                     Max_01 "Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
                 elif pose3_3 == "02":
@@ -60,19 +60,14 @@ label ann_shower:
 
         label .start_peeping:
             $ renpy.notify(_("Скрытность Макса капельку повысилась"))
-            $ max_profile.stealth += 0.03
+            $ mgg.stealth += 0.03
             $ __ran1 = renpy.random.randint(1, 4)
 
-            $ _chance = GetChance(max_profile.stealth, 3)
-            if _chance < 333:
-                $ _chance_color = red
-            elif _chance > 666:
-                $ _chance_color = lime
-            else:
-                $ _chance_color = orange
+            $ _chance = GetChance(mgg.stealth, 3)
+            $ _chance_color = GetChanceColor(_chance)
             $ ch_vis = str(int(_chance/10)) + "%"
             scene image ("Ann shower 0"+str(__ran1))
-            $ renpy.show("FG shower 00"+max_profile.dress)
+            $ renpy.show("FG shower 00"+mgg.dress)
             menu:
                 Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
                 "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
@@ -83,9 +78,9 @@ label ann_shower:
         label .closer_peepeng:
             if RandomChance(_chance):
                 $ peeping["ann_shower"] = 1
-                $ max_profile.stealth += 0.2
+                $ mgg.stealth += 0.2
                 $ renpy.notify(_("Скрытность Макса повысилась"))
-                $ characters["ann"].dress_inf = "00a"
+                $ chars["ann"].dress_inf = "00a"
                 $ __ran1 = renpy.random.randint(1, 6)
                 scene BG shower-closer
                 show image ("Ann shower-closer 0"+str(__ran1))
@@ -96,9 +91,9 @@ label ann_shower:
                     Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
             elif RandomChance(_chance):
                 $ peeping["ann_shower"] = 2
-                $ max_profile.stealth += 0.1
+                $ mgg.stealth += 0.1
                 $ renpy.notify(_("Скрытность Макса немного повысилась"))
-                $ characters["ann"].dress_inf = "00a"
+                $ chars["ann"].dress_inf = "00a"
                 $ __ran1 = renpy.random.randint(7, 8)
                 scene BG shower-closer
                 show image ("Ann shower-closer 0"+str(__ran1))
@@ -107,7 +102,7 @@ label ann_shower:
                 jump .end_peeping
             else:
                 $ peeping["ann_shower"] = 3
-                $ max_profile.stealth += 0.05
+                $ mgg.stealth += 0.05
                 $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
                 $ __ran1 = renpy.random.choice(["09", "10"])
                 scene BG shower-closer
@@ -139,13 +134,13 @@ label ann_yoga:
 
 label ann_cooking:
     scene BG cooking-00
-    $ renpy.show("Ann cooking 01"+characters["ann"].dress)
+    $ renpy.show("Ann cooking 01"+chars["ann"].dress)
     return
 
 
 label ann_cooking_closer:
     scene BG cooking-01
-    $ renpy.show("Ann cooking-closer "+pose3_3+characters["ann"].dress)
+    $ renpy.show("Ann cooking-closer "+pose3_3+chars["ann"].dress)
     return
 
 
@@ -169,13 +164,13 @@ label ann_dressed_work:
                 scene BG char Ann morning
                 $ renpy.show("Ann dressed-work "+__ran1)
                 if __ran1 == "01":
-                    $ characters["ann"].dress_inf = "02"
+                    $ chars["ann"].dress_inf = "02"
                 elif __ran1 == "02":
-                    $ characters["ann"].dress_inf = "02b"
+                    $ chars["ann"].dress_inf = "02b"
                 elif __ran1 == "03":
-                    $ characters["ann"].dress_inf = "02a"
+                    $ chars["ann"].dress_inf = "02a"
                 else:
-                    $ characters["ann"].dress_inf = "00"
+                    $ chars["ann"].dress_inf = "00"
                 menu:
                     Ann_13 "Макс! Я же учила тебя стучаться!"
                     "Хорошо выглядишь, мам!":
@@ -194,16 +189,16 @@ label ann_dressed_work:
             "{i}заглянуть в окно{/i}":
                 scene BG char Ann voyeur-00
                 if __ran1 == "01":
-                    $ characters["ann"].dress_inf = "02c"
+                    $ chars["ann"].dress_inf = "02c"
                 elif __ran1 == "02":
-                    $ characters["ann"].dress_inf = "02d"
+                    $ chars["ann"].dress_inf = "02d"
                 elif __ran1 == "03":
-                    $ characters["ann"].dress_inf = "02a"
+                    $ chars["ann"].dress_inf = "02a"
                 else:
-                    $ characters["ann"].dress_inf = "02b"
+                    $ chars["ann"].dress_inf = "02b"
 
                 $ renpy.show("Ann voyeur "+__ran1)
-                $ renpy.show("FG voyeur-morning-00"+max_profile.dress)
+                $ renpy.show("FG voyeur-morning-00"+mgg.dress)
                 Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
             "{i}уйти{/i}":
                 pass
@@ -244,12 +239,12 @@ label ann_dressed_shop:
                 $ AddRelMood("ann", 0, __mood)
             # "{i}заглянуть в окно{/i}":
             #     # if __ran1 == "01":
-            #     #     $ characters["lisa"].dress_inf = "02d"
+            #     #     $ chars["lisa"].dress_inf = "02d"
             #     # else:
-            #     #     $ characters["lisa"].dress_inf = "02c"
+            #     #     $ chars["lisa"].dress_inf = "02c"
             #
             #     scene image "Ann voyeur "+__ran1
-            #     $ renpy.show("FG voyeur-morning-00"+max_profile.dress)
+            #     $ renpy.show("FG voyeur-morning-00"+mgg.dress)
             #     Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но если заметит меня в зеркало, мне конец."
             "{i}уйти{/i}":
                 pass
@@ -262,16 +257,16 @@ label ann_dressed_shop:
 label ann_resting:
     if tm < "19:00":
         scene BG char Ann relax-morning-01
-        $ renpy.show("Ann relax-morning "+pose3_3+characters["ann"].dress)
+        $ renpy.show("Ann relax-morning "+pose3_3+chars["ann"].dress)
     else:
         scene BG char Ann relax-evening-01
-        $ renpy.show("Ann relax-evening "+pose3_3+characters["ann"].dress)
+        $ renpy.show("Ann relax-evening "+pose3_3+chars["ann"].dress)
     return
 
 
 label ann_read:
     scene BG reading
-    $ renpy.show("Ann reading "+pose3_3+characters["ann"].dress)
+    $ renpy.show("Ann reading "+pose3_3+chars["ann"].dress)
     return
 
 
@@ -344,19 +339,19 @@ label ann_bath:
                         pass
             "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
                 scene Ann bath 01
-                $ renpy.show("FG voyeur-bath-00"+max_profile.dress)
+                $ renpy.show("FG voyeur-bath-00"+mgg.dress)
                 Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
                 menu:
                     Max_09 "Нужно что-нибудь придумать..."
                     "{i}уйти{/i}":
                         $ flags["ladder"] = 1
             "{i}установить стремянку{/i}" if items["ladder"].have:
-                scene BG char Max bathroom-window-00
-                $ renpy.show("Max bathroom-window 01"+max_profile.dress)
+                scene BG char Max bathroom-window-evening-00
+                $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
                 Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
 
                 $ renpy.scene()
-                $ renpy.show("Max bathroom-window 02"+max_profile.dress)
+                $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
                 Max_04 "Посмотрим, что у нас тут..."
 
                 $ __r1 = renpy.random.randint(1, 4)
@@ -374,7 +369,7 @@ label ann_bath:
                                 Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
                                 "{i}уйти{/i}":
                                     $ spent_time += 10
-                                    $ characters["ann"].dress_inf = "00a"
+                                    $ chars["ann"].dress_inf = "00a"
                                     jump .end
                         "{i}уйти{/i}":
                             jump .end
@@ -388,7 +383,7 @@ label ann_bath:
                                 Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
                                 "{i}уйти{/i}":
                                     $ spent_time += 10
-                                    $ characters["ann"].dress_inf = "04a"
+                                    $ chars["ann"].dress_inf = "04a"
                                     jump .end
                         "{i}уйти{/i}":
                             jump .end
@@ -415,5 +410,5 @@ label ann_tv:
 label ann_tv_closer:
     scene BG lounge-tv-01
     $ renpy.show("Ann tv-closer "+pose3_3)
-    $ renpy.show("Max tv 00"+max_profile.dress)
+    $ renpy.show("Max tv 00"+mgg.dress)
     return

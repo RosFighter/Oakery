@@ -66,7 +66,7 @@ label back_shoping:
 
         Ann_05 "Привет, Макс! Мы вернулись..."
         Max_04 "Рассказывайте, что купили?"
-        if possibility["Swimsuit"].stage_number == 2:
+        if possibility["Swimsuit"].stn == 2:
             $ SetPossStage("Swimsuit", 4)
             Lisa_03 "А мне Эрик подарил купальник! Именно такой, как я и хотела! Красный, представляешь?!"
             Max_11 "Ясно..."
@@ -75,12 +75,12 @@ label back_shoping:
         else:
             Lisa_02 "Да так, вскую ерунду... Для нас, девочек. Тебе это не интересно..."
             Max_00 "Понятно..."
-        if possibility["nightclub"].stage_number < 4:
+        if possibility["nightclub"].stn < 4:
             Alice_07 "Ты забыла про самое главное, Лиза. Мне Эрик купил платье! Представляешь?!"
             Max_10 "Да, это чудесно..."
             Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
             Max_11 "Поздравляю..."
-            if possibility["nightclub"].stage_number == 1:
+            if possibility["nightclub"].stn == 1:
                 $ SetPossStage("nightclub", 2)
             else:
                 $ SetPossStage("nightclub", 3)

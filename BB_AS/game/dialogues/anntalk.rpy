@@ -3,7 +3,7 @@ label AnnTalkStart:
 
     $ dial = TalkMenuItems()
 
-    $ __CurShedRec = GetScheduleRecord(schedule_ann, day, tm)
+    $ __CurShedRec = GetPlan(plan_ann, day, tm)
     if __CurShedRec.talklabel is not None:
         call expression __CurShedRec.talklabel from _call_expression_3
 
@@ -76,7 +76,7 @@ label Ann_cooldown:
 
 label ann_ask_money:
 
-    $ __CurShedRec = GetScheduleRecord(schedule_ann, day, tm)
+    $ __CurShedRec = GetPlan(plan_ann, day, tm)
     if __CurShedRec is None:
         "При нормальном развитии событий эта строка не должна была появится. Сообщите разработчику."
         return
@@ -169,7 +169,7 @@ label ann_talk_tv:
         Ann_00 "Да так, всё подряд. Садись рядом, если хочешь..."
         "Конечно! Что смотреть будем?":
             $ SetCamsGrow(house[4], 140)
-            $ renpy.show("Max tv-closer "+pose3_1+max_profile.dress)
+            $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
             Ann_05 "Да вот, по кабельному какой-то фильм сейчас начнётся..."
             Max_02 "{i}Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу...{/i}"
             menu:
