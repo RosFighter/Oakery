@@ -370,8 +370,9 @@ label dinner_4:
 
 
 label dinner:
-    call StartPunishment()
+    jump StartPunishment
 
+label dinner_after_punishment:
     $ renpy.block_rollback()
 
     $ seat_Dinner()

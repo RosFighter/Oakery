@@ -418,7 +418,7 @@ label InitPunish:
     $ punlisa = []
     $ punalice = []
     $ newpunishment = 0
-
+    $ pun_list = []
 
 label InitVariable: # стартовая инициация переменных
     python:

@@ -654,8 +654,9 @@ label breakfast_5:
 
 
 label breakfast:
-    call StartPunishment()
+    jump StartPunishment
 
+label breakfast_after_punishment:
     $ renpy.block_rollback()
 
     $ seat_Breakfast()

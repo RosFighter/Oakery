@@ -1,22 +1,30 @@
 
 label StartPunishment:
-    $ renpy.block_rollback()
-    $ _pun = []
-    $ _first = True
-    $ _defend = False
+    $ pun_list.clear()
+    $ first = True
+    $ defend = False
     # Макс теоретически может получить наказание как утром, так и вечером
     if max(punreason):  # есть причины наказания Макса
-        $ _pun.append("mgg")
+        $ pun_list.append("mgg")
 
     if tm > "18:00":
         # сестры получают наказание толлько вечером
         $ chance = GetLisaPunChance()  # шанс получения Лизой двойки
         if RandomChance(chance):  # получит ли Лиза двойку
             $ punlisa[0][1] = 1
-            $ _pun.append("lisa")
+            $ pun_list.append("lisa")
 
-    $ renpy.random.shuffle(_pun) # перемешаем список последовательности наказания
+    $ renpy.random.shuffle(pun_list) # перемешаем список последовательности наказания
 
+    if len(pun_list):
+        jump punishment
+    elif tm > "14:00":
+        jump dinner_after_punishment
+    else:
+        jump breakfast_after_punishment
+
+label punishment:
+    $ renpy.block_rollback()
     if tm < "14:00":
         scene BG punish-morning 00
         $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
@@ -24,31 +32,41 @@ label StartPunishment:
         scene BG punish-evening 00
         $ renpy.show("Ann punish-evening 00"+chars["ann"].dress)
 
-    if len(_pun):
-        Ann_20 "Прежде, чем мы начнём, кое-кто заслужил наказание и сейчас все на это посмотрят..."
-
-    $ i = 0
-    while len(_pun) > i:
-        if _pun[i] == "mgg":
+    Ann_20 "Прежде, чем мы начнём, кое-кто заслужил наказание и сейчас все на это посмотрят..."
+    $ _i = 0
+    while len(pun_list) > _i:
+        if pun_list[_i] == "mgg":
+            if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
+                if first: # Макс наказывается первым
+                    $ first = False
+                    Ann_20 "Итак, Макс, ты первый..."
+                else: # Макса наказывают не первым
+                    Ann_00 "Макс, теперь ты..."
+            else:  # Макс единственный наказуемый
+                Ann_00 "Макс, иди сюда..."
             call punishment_max
-        elif _pun[i] == "lisa":
+        elif pun_list[_i] == "lisa":
+            if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
+                if first: # Лиза наказывается первой
+                    $ first = False
+                    Ann_20 "Так, Лиза, начнем с тебя..."
+                else: # Лизу наказывают не первой
+                    Ann_00 "Теперь Лиза..."
+            else:  # наказывают только Лизу
+                Ann_00 "Лиза, подойди-ка ко мне."
             call punishment_lisa
-        # elif _pun[i] == "alice":
+        # elif pun_list[i] == "alice":
         #     call punishment_alice
-        $ i += 1
+        $ _i += 1
 
-    return
+    if tm > "14:00":
+        jump dinner_after_punishment
+    else:
+        jump breakfast_after_punishment
 
 
 label punishment_max:
-    if len(_pun) > 1:  # за эвент будут наказаны больше одного персонажа
-        if _first: # Макс наказывается первым
-            $ _first = False
-            Ann_20 "Итак, Макс, ты первый..."
-        else: # Макса наказывают не первым
-            Ann_00 "Макс, теперь ты..."
-    else:  # Макс единственный наказуемый
-        Ann_00 "Макс, иди сюда..."
+    $ renpy.block_rollback()
 
     if tm < "14:00":
         scene BG punish-morning 01
@@ -152,14 +170,7 @@ label punishment_max:
     return
 
 label punishment_lisa:
-    if len(_pun) > 1:  # за эвент будут наказаны больше одного персонажа
-        if _first: # Лиза наказывается первой
-            $ _first = False
-            Ann_20 "Так, Лиза, начнем с тебя..."
-        else: # Лизу наказывают не первой
-            Ann_00 "Теперь Лиза..."
-    else:  # наказывают только Лизу
-        Ann_00 "Лиза, подойди-ка ко мне."
+    $ renpy.block_rollback()
 
     scene BG punish-evening 01
     $ renpy.show("Lisa punish-evening 01"+chars["lisa"].dress)
@@ -172,7 +183,7 @@ label punishment_lisa:
         $ _text = _("Ближе подходи, Лиза. И да, штаны снимай, ты заслужила!")
     else: # Лиза в халате
         $ _text = _("Ближе подходи, Лиза. И да, халат свой снимай, ты заслужила!")
-    if _defend:  # Макс уже не может заступиться
+    if defend:  # Макс уже не может заступиться
         Ann_20 "[_text!tq]"
     else:
         $ _chance = GetChance(mgg.social, 2, 900)
@@ -181,9 +192,9 @@ label punishment_lisa:
         menu:
             Ann_20 "[_text!tq]"
             "{i}Заступиться за Лизу {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}":
-                $ _defend = True
+                $ defend = True
                 Max_00 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
-                if "mgg" in _pun:
+                if "mgg" in pun_list:
                     Ann_14 "Нет, Макс, и даже не пытайся меня уговаривыть. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
                 elif RandomChance(_chance):  # Удалось уговорить Анну
                     $ mgg.social += 0.2
@@ -209,15 +220,15 @@ label punishment_lisa:
     $ renpy.show("Lisa punish-evening 02"+chars["lisa"].dress)
     $ _text = _("Теперь ложись, и побыстрее, все есть хотят...")
 
-    if _defend:  # Макс уже заступался
+    if defend:  # Макс уже заступался
         Ann_14 "[_text!tq]"
     else:
         menu:  # У Макса есть шанс заступиться за Лизу
             Ann_14 "[_text!tq]"
             "{i}Заступиться за Лизу {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}":
-                $ _defend = True
+                $ defend = True
                 Max_00 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
-                if "mgg" in _pun:
+                if "mgg" in pun_list:
                     Ann_14 "Нет, Макс, и даже не пытайся меня уговаривыть. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
                 elif RandomChance(_chance):  # Удалось уговорить Анну
                     $ mgg.social += 0.2
