@@ -705,8 +705,9 @@ init python:
 
         # двор
         if current_room == house[6]:
-            AvailableActions["clearpool"].enabled = ("08:00" <= tm <= "16:00") and (len(current_room.cur_char) == 0)
+            AvailableActions["clearpool"].enabled = ("10:00" <= tm <= "16:00") and (len(current_room.cur_char) == 0)
             AvailableActions["clearpool"].active = (dcv["clearpool"].stage == 1)
+            AvailableActions["catchspider"].active = ("10:00" <= tm < "12:00") and not items["spider"].have
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды

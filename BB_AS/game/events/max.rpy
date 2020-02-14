@@ -236,6 +236,8 @@ label Laptop:
         $ search_theme.append((_("{i}читать о блогах{/i}"), "about_blog"))
     if possibility["secretbook"].stn == 1:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
+    if possibility["spider"].stn == 0:
+        $ search_theme.append((_("{i}читать о пауках{/i}"), "about_spider"))
 
     call screen LaptopScreen
 
@@ -331,6 +333,105 @@ label about_cam:
     $ renpy.notify(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 20
     $ SetPossStage("cams", 2)
+    jump Laptop
+
+
+label about_blog:
+    $ renpy.block_rollback()
+    hide video1_movie
+    # show interface laptop spider-inf-1:
+    #     xpos 221 ypos 93
+    menu:
+        Max_00 "Итак, попробуем что-то найти о блогах. С чего начать?"
+        "Собрать статистику":
+            menu:
+                Max_10 "Ох... Сколько цифр. Неужели, во всём этом можно разобраться?"
+                "Проанализировать результаты":
+                    $ _text = _("Хм... Так... Ага. Это сюда запишем, это сюда...")
+                "Построить таблицу":
+                    $ _text = _("Так. Из этой таблицы мы делаем вывод. Ага. Вот это значит, что... Нет, не так. Вот. Вроде получилось...")
+                "Нарисовать график":
+                    $ _text = _("Рисователь графиков из меня ещё тот. Но попробуем. Так, это шкала популярности, это... Ага. Кажется, всё сходится...")
+        "Просмотреть популярные блоги":
+            menu:
+                Max_04 "Прикольно... Ага. Котики. Не, устарели. Киски. Ну, смотря какие..."
+                "Составить список":
+                    $ _text = _("Так, вычёркиваем из списка этих, вот этих и тех. Что тут у нас остаётся?")
+                "Отсортировать...":
+                    $ _text = _("Так, сравниваем аудиторию. Время публикации... Исключаем сомнительный контент...")
+                "Сравнить количество лайков...":
+                    $ _text = _("Сортируем по количеству лайков. Убираем тех, кто с дизлайками больше этого процента...")
+        "Почитать комменты на блогах":
+            menu:
+                Max_14 "Ух. Сколько гадости в комментах... Ладно, попробуем найти в этом крупицу смысла..."
+                "Воспользоваться поиском":
+                    $ _text = _("Так, в поиске мы видим любопытные результаты. Так, выберем то что нам подходит...")
+                "Читать всё подряд":
+                    $ _text = _("Ох. Всё оказалось ещё хуже. Кажется, тут нет ничего полезного... Хотя. Думаю, можно сделать даже какой-то вывод...")
+                "Выбрать лучшие комменты":
+                    $ _text = _("Так, топовые комменты все сводятся к одному. Не может быть?")
+
+    menu:
+        Max_09 "[_text!tq]"
+        "Сделать вывод...":
+            Max_01 "Это что же получается. Неужели, всё так просто? Главное - сиськи! Не важно о чём блог, важно что на экране. И если там сиськи, всё в порядке с популярностью! Но я и так об этом догадывался..."
+            Max_00 "И зачем я только что-то изучал..."
+
+
+    $ SetPossStage("blog", 1)
+    $ spent_time += 30
+    jump Laptop
+
+
+label about_secretbook:
+    $ renpy.block_rollback()
+    hide video1_movie
+    show interface laptop secretbook-inf-1:
+        xpos 221 ypos 93
+    menu:
+        Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
+        "{i}читать о книге{/i}":
+            Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
+    $ items["erobook_1"].InShop = True
+    $ items["erobook_2"].InShop = True
+    $ items["erobook_3"].InShop = True
+    $ items["erobook_4"].InShop = True
+    $ items["erobook_5"].InShop = True
+    $ renpy.notify(_("В интернет-магазине доступен новый товар."))
+    $ SetPossStage("secretbook", 2)
+    $ spent_time += 30
+    jump Laptop
+
+
+label about_spider:
+    $ renpy.block_rollback()
+    hide video1_movie
+    show interface laptop spider-inf-1:
+        xpos 221 ypos 93
+
+    menu:
+        Max_00 "Так... Пауки. Ох, сколько видов... Какие же тут водятся..."
+        "Искать виды насекомых по регионам":
+            Max_00 "Ага, отлично. Выбираем наш регион, сортируем по видам пауков..."
+        "Читать где водятся какие пауки":
+            Max_00 "Так, пауки. Смотрим какие водятся в этом климате..."
+    Max_00 "Так, и что у нас получается?"
+    menu:
+        Max_01 "Ну вот, подходит. Самый популярный паук в наших краях. Ага! Теперь узнаем как его поймать..."
+        "Выяснить, чем питается...":
+            menu:
+                Max_09 "Так, питается комарами и мошками. Как это обычно... нет, это ничего не даёт..."
+                "Почитать о повадках...":
+                    pass
+        "Почитать о повадках...":
+            pass
+    Max_04 "Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?"
+    Max_01 "Будем искать!"
+
+    $ SetPossStage("spider", 1)
+    $ AvailableActions["catchspider"].enabled = True
+    $ cooldown["spider"] = "0 00:00"
+    $ spent_time += 30
     jump Laptop
 
 
@@ -507,26 +608,6 @@ label SearchSecretBook:
         jump Waiting
 
 
-label about_secretbook:
-    $ renpy.block_rollback()
-    hide video1_movie
-    show interface laptop secretbook-inf-1:
-        xpos 221 ypos 93
-    menu:
-        Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
-        "{i}читать о книге{/i}":
-            Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
-    $ items["erobook_1"].InShop = True
-    $ items["erobook_2"].InShop = True
-    $ items["erobook_3"].InShop = True
-    $ items["erobook_4"].InShop = True
-    $ items["erobook_5"].InShop = True
-    $ renpy.notify(_("В интернет-магазине доступен новый товар."))
-    $ SetPossStage("secretbook", 2)
-    $ spent_time += 30
-    jump Laptop
-
-
 label InstallCam:
     if current_location != house:
         jump AfterWaiting
@@ -583,4 +664,25 @@ label InstallCam:
     $ items["hide_cam"].have = False
     $ cur_ratio = 1.5
     $ spent_time = 30
+    jump Waiting
+
+
+label SearchSpider:
+    scene BG char Max spider-search-00
+    $ renpy.show("Max spider search-00"+mgg.dress)
+    menu:
+        Max_00 "Так, нужно хорошенько рассмотреть траву..."
+        "{i}искать...{/i}":
+            if ItsTime(cooldown["spider"]):
+                $ renpy.scene()
+                $ renpy.show("BG char Max spider-search-01"+mgg.dress)
+                Max_04 "Ага! Попался! Отлично..."
+                $ items["spider"].have = True
+            else:
+                Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"
+            $ spent_time = 30
+            $ cur_ratio = 1.5
+        "{i}уйти{/i}":
+            pass
+
     jump Waiting

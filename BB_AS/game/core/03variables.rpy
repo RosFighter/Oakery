@@ -403,7 +403,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         }
 
 
-label InitPunish:
+label InitPunish:  # стартовая инициация наказаний
     $ warning = 0
     $ punreason = [
         0,  # подглядывал за Лизой и она рассказала об этом Анне
@@ -419,6 +419,7 @@ label InitPunish:
     $ punalice = []
     $ newpunishment = 0
     $ pun_list = []
+
 
 label InitVariable: # стартовая инициация переменных
     python:

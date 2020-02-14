@@ -366,3 +366,11 @@ translate english strings:
     old "{i}продолжить смотреть{/i}"
     new "{i}continue watching{/i}"
 
+# TODO: Translation updated at 2020-02-14 11:29
+
+# game/events/eric.rpy:245
+translate english eric_ann_sleep_9771290e:
+
+    # Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
+    Max_05 "Mom is so beautiful... ...and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her...As long as they don't wake up now..." nointeract
+

@@ -884,3 +884,19 @@ translate english strings:
     old "Да пошёл он, этот Эрик! Я отказался от его сомнительного предложения и не собираюсь иметь с ним ничего общего. Пусть попробует только полезть, я ему покажу! Глаза мои его бы не видели... Конечно, я отказался от всего что он там мог предложить, но зато моя совесть чиста и моя семья в моих руках!"
     new "Screw him! I declined his dubious offer and not going to work with him. I won't get anything he offered but my conscience is clear and my family is in my hands!"
 
+# TODO: Translation updated at 2020-02-14 11:29
+
+translate english strings:
+
+    # game/core/03variables.rpy:325
+    old "Насчёт успеваемости..."
+    new "About your grades..."
+
+    # game/core/03variables.rpy:325
+    old "Ну как, ты подумала о моих условиях?"
+    new "Have you thought about my terms?"
+
+    # game/core/03variables.rpy:325
+    old "Помочь с уроками?"
+    new "Do you want some help with your homework?"
+
