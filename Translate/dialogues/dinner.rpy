@@ -985,4 +985,35 @@ translate english strings:
     # game/dialogues/dinner.rpy:350
     old "А что вы будете делать?"
     new "What are you going to do?"
+# TODO: Translation updated at 2020-02-14 11:29
+
+# game/dialogues/dinner.rpy:197
+translate english dinner_2_blog2_3f0ae547:
+
+    # Alice_00 "Кстати, ты уже предлагал свою помощь, если я не ошибаюсь... Или это было так, не серьёзно всё?"
+    Alice_00 "Haven't you offered your help already? Or you didn't mean that?"
+
+# game/dialogues/dinner.rpy:198
+translate english dinner_2_blog2_a87ae875:
+
+    # Max_09 "А ты и правда прислушаешься к моим советам?"
+    Max_09 "Are you going to actually listen to what I have to say?"
+
+# game/dialogues/dinner.rpy:199
+translate english dinner_2_blog2_b4bc6482:
+
+    # Alice_13 "Макс, я готова на любую помощь. У самой уже нет идей, если честно. Так что, да. Прислушаюсь..."
+    Alice_13 "I'm ready for any kind of help, Max. I don't know what to do, to be honest. So yeah, I'll listen..."
+
+# game/dialogues/dinner.rpy:201
+translate english dinner_2_blog2_4a32ec09:
+
+    # Max_03 "Отлично. Тогда и правда помогу!"
+    Max_03 "Great! Then I'll definitely help you!"
+
+# game/dialogues/dinner.rpy:205
+translate english dinner_2_blog2_f3ceaf63:
+
+    # Alice_07 "Зачем? Чтобы ты в очередной раз посмеялся? И, вообще, если ты такой умный, то вот ты и придумай что-нибудь. Я даже спасибо скажу. Честно говоря, я в депрессии..." nointeract
+    Alice_07 "Why? So you can laugh at me again? If you're so smart, why don't you come up with something? I'd be grateful, I'm kind of at the end of my rope here..." nointeract
 

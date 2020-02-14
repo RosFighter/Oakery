@@ -500,3 +500,249 @@ translate english Bath_b3c37b42:
     Max_01 "Maybe a ladder will do, or better yet, a stepladder. Oh, yeah, I guess that'll be it!"
 # TODO: Translation updated at 2020-02-02 11:37
 
+# TODO: Translation updated at 2020-02-14 11:29
+
+# game/events/max.rpy:344
+translate english about_blog_d88e779b:
+
+    # Max_00 "Итак, попробуем что-то найти о блогах. С чего начать?" nointeract
+    Max_00 "So, try to find something about blogs. How to begin?" nointeract
+
+# game/events/max.rpy:347
+translate english about_blog_3a839884:
+
+    # Max_10 "Ох... Сколько цифр. Неужели, во всём этом можно разобраться?" nointeract
+    Max_10 "Oh... How many digits. Is it really to sort out here?" nointeract
+
+# game/events/max.rpy:356
+translate english about_blog_814aee55:
+
+    # Max_04 "Прикольно... Ага. Котики. Не, устарели. Киски. Ну, смотря какие..." nointeract
+    Max_04 "Cool... Yeah. Cats. They are not out of date. Pussies. Well, despite what exactly..." nointeract
+
+# game/events/max.rpy:365
+translate english about_blog_bb8942c7:
+
+    # Max_14 "Ух. Сколько гадости в комментах... Ладно, попробуем найти в этом крупицу смысла..." nointeract
+    Max_14 "Wow. How many bad things in the comments... Okay, let's try to find a grain of sense in this..." nointeract
+
+# game/events/max.rpy:374
+translate english about_blog_8e4c93e4:
+
+    # Max_09 "[_text!tq]" nointeract
+    Max_09 "[_text!tq]" nointeract
+
+# game/events/max.rpy:377
+translate english about_blog_c1ce2606:
+
+    # Max_01 "Это что же получается. Неужели, всё так просто? Главное - сиськи! Не важно о чём блог, важно что на экране. И если там сиськи, всё в порядке с популярностью! Но я и так об этом догадывался..."
+    Max_01 "So what happens. Really, everything is so simple? The main thing is boobs! No matter what the blog, it is important what is on the screen. And if there are boobs, everything is ok with the popularity! But I've already known about this..."
+
+# game/events/max.rpy:378
+translate english about_blog_4571eb7f:
+
+    # Max_00 "И зачем я только что-то изучал..."
+    Max_00 "Why I was checking all of this..."
+
+# game/events/max.rpy:412
+translate english about_spider_45c2646e:
+
+    # Max_00 "Так... Пауки. Ох, сколько видов... Какие же тут водятся..." nointeract
+    Max_00 "So... Spiders. Oh, how many species... What are here..." nointeract
+
+# game/events/max.rpy:415
+translate english about_spider_624fb07e:
+
+    # Max_00 "Ага, отлично. Выбираем наш регион, сортируем по видам пауков..."
+    Max_00 "Yeah, well... Choose our region, sort by species of spiders..."
+
+# game/events/max.rpy:417
+translate english about_spider_3be5aefa:
+
+    # Max_00 "Так, пауки. Смотрим какие водятся в этом климате..."
+    Max_00 "So, spiders. Looking what are found in this climate..."
+
+# game/events/max.rpy:418
+translate english about_spider_e3aa40bf:
+
+    # Max_00 "Так, и что у нас получается?"
+    Max_00 "So, and what we'll do?"
+
+# game/events/max.rpy:419
+translate english about_spider_49e33bd9:
+
+    # Max_01 "Ну вот, подходит. Самый популярный паук в наших краях. Ага! Теперь узнаем как его поймать..." nointeract
+    Max_01 "Well it suites. It's the most popular spider in our areas. Aha! Now we'll learn how to catch him..." nointeract
+
+# game/events/max.rpy:422
+translate english about_spider_5170efbe:
+
+    # Max_09 "Так, питается комарами и мошками. Как это обычно... нет, это ничего не даёт..." nointeract
+    Max_09 "So, it eats mosquitoes and gnats. As usual... no, it gives nothing..." nointeract
+
+# game/events/max.rpy:428
+translate english about_spider_883f72be:
+
+    # Max_04 "Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?"
+    Max_04 "That's great! At night they perfectly mask, so it is not suitable, but as soon as the sun begins to warm the ground, they crawl out of grass to check production. And is it 10-11 hours?"
+
+# game/events/max.rpy:429
+translate english about_spider_0e3e8b40:
+
+    # Max_01 "Будем искать!"
+    Max_01 "Will find!"
+
+# game/events/max.rpy:651
+translate english InstallCam_8200bc5d:
+
+    # Max_04 "{i}Вот теперь зрители смогут насладится всеми мокрыми и блестящими красотами, происходящими во дворе...{/i}" nointeract
+    Max_04 "" nointeract
+
+# game/events/max.rpy:657
+translate english InstallCam_fc408e3e:
+
+    # Max_04 "{i}Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
+    Max_04 "" nointeract
+
+# game/events/max.rpy:660
+translate english InstallCam_d9a1c7d0:
+
+    # Max_09 "{i}Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает...{/i}"
+    Max_09 ""
+
+# game/events/max.rpy:673
+translate english SearchSpider_19279e48:
+
+    # Max_00 "Так, нужно хорошенько рассмотреть траву..." nointeract
+    Max_00 "I should check the grass" nointeract
+
+# game/events/max.rpy:679
+translate english SearchSpider_1b27d19f:
+
+    # Max_04 "Ага! Попался! Отлично..."
+    Max_04 "Gotcha! Excellent..."
+
+# game/events/max.rpy:682
+translate english SearchSpider_88937e9a:
+
+    # Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"
+    Max_00 "Doesn't look like I'll find one... Maybe I scared them all off and should wait a day or two"
+
+translate english strings:
+
+    # game/events/max.rpy:240
+    old "{i}читать о пауках{/i}"
+    new "{i}read about spiders{/i}"
+
+    # game/events/max.rpy:344
+    old "Собрать статистику"
+    new "Gather statistics"
+
+    # game/events/max.rpy:344
+    old "Просмотреть популярные блоги"
+    new "Check popular blogs"
+
+    # game/events/max.rpy:344
+    old "Почитать комменты на блогах"
+    new "Read the comments on blogs"
+
+    # game/events/max.rpy:347
+    old "Проанализировать результаты"
+    new "Analyze results"
+
+    # game/events/max.rpy:347
+    old "Построить таблицу"
+    new "Make a table"
+
+    # game/events/max.rpy:347
+    old "Нарисовать график"
+    new "Draw a graph"
+
+    # game/events/max.rpy:356
+    old "Составить список"
+    new "Make a list"
+
+    # game/events/max.rpy:356
+    old "Отсортировать..."
+    new "Sort..."
+
+    # game/events/max.rpy:356
+    old "Сравнить количество лайков..."
+    new "Compare amount of likes..."
+
+    # game/events/max.rpy:365
+    old "Воспользоваться поиском"
+    new "Search"
+
+    # game/events/max.rpy:365
+    old "Читать всё подряд"
+    new "Read everything"
+
+    # game/events/max.rpy:365
+    old "Выбрать лучшие комменты"
+    new "Choose the best comments"
+
+    # game/events/max.rpy:374
+    old "Сделать вывод..."
+    new "make a conclude..."
+
+    # game/events/max.rpy:412
+    old "Искать виды насекомых по регионам"
+    new "Search insect species by region"
+
+    # game/events/max.rpy:412
+    old "Читать где водятся какие пауки"
+    new "Read where some spiders can be found"
+
+    # game/events/max.rpy:419
+    old "Выяснить, чем питается..."
+    new "Find out what to eat..."
+
+    # game/events/max.rpy:419
+    old "Почитать о повадках..."
+    new "Read about habits..."
+
+    # game/events/max.rpy:673
+    old "{i}искать...{/i}"
+    new "{i}look...{/i}"
+
+# TODO: Translation updated at 2020-02-14 13:13
+
+translate english strings:
+
+    # game/events/max.rpy:350
+    old "Хм... Так... Ага. Это сюда запишем, это сюда..."
+    new "Hmm... So... Yeah. We write it here..."
+
+    # game/events/max.rpy:352
+    old "Так. Из этой таблицы мы делаем вывод. Ага. Вот это значит, что... Нет, не так. Вот. Вроде получилось..."
+    new "So. From this table, we conclude. Yeah. That means that... No, it's not. Here. It seems to work..."
+
+    # game/events/max.rpy:354
+    old "Рисователь графиков из меня ещё тот. Но попробуем. Так, это шкала популярности, это... Ага. Кажется, всё сходится..."
+    new "I'm not good at drawing the graphs. But let us try. So, this is the scale of popularity, this is... Yeah. It seems that everything converges..."
+
+    # game/events/max.rpy:359
+    old "Так, вычёркиваем из списка этих, вот этих и тех. Что тут у нас остаётся?"
+    new "Thus, let's delete from the list those, these and those. What do we have left?"
+
+    # game/events/max.rpy:361
+    old "Так, сравниваем аудиторию. Время публикации... Исключаем сомнительный контент..."
+    new "So, we compare the audience. Publication time... Eliminate questionable content..."
+
+    # game/events/max.rpy:363
+    old "Сортируем по количеству лайков. Убираем тех, кто с дизлайками больше этого процента..."
+    new "We sort by the number of likes. Remove those who are with dislikes more than this percent..."
+
+    # game/events/max.rpy:368
+    old "Так, в поиске мы видим любопытные результаты. Так, выберем то что нам подходит..."
+    new "So, we see interesting results in the search. Well, choose what suits us..."
+
+    # game/events/max.rpy:370
+    old "Ох. Всё оказалось ещё хуже. Кажется, тут нет ничего полезного... Хотя. Думаю, можно сделать даже какой-то вывод..."
+    new "Oh. Everything turned out even worse. It seems there is nothing useful... Although. I think we can do even some conclusion..."
+
+    # game/events/max.rpy:372
+    old "Так, топовые комменты все сводятся к одному. Не может быть?"
+    new "Thus, the top comments come down to one thing. Impossible?"
+

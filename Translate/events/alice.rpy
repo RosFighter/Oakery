@@ -354,3 +354,11 @@ translate english strings:
     old "{i}смотреть ещё{/i}"
     new "{i}Keep watching{/i}"
 
+# TODO: Translation updated at 2020-02-14 11:29
+
+# game/events/alice.rpy:136
+translate english alice_sleep_morning_807b976b:
+
+    # Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
+    Max_05 "Oh, it's the kind of thing that puts the dirtiest thoughts in my head... the way I would pound that ass...! I think i'll get out of here before she wakes up." nointeract
+

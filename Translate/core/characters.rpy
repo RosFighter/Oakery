@@ -2,11 +2,11 @@
 
 translate english strings:
 
-    # game/core/characters.rpy:221
+    # game/core/chars.rpy:221
     old "Мама"
     new "Mom"
 
-    # game/core/characters.rpy:347
+    # game/core/chars.rpy:347
     old "Майя"
     new "Maya"
 

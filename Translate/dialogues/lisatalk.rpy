@@ -1976,3 +1976,515 @@ translate english MorningWood_981dc250:
     # Lisa_12 "Так я тебе и поверила! Ма-ам!" nointeract
     Lisa_12 "So I believed you! Mo-om!" nointeract
 
+# TODO: Translation updated at 2020-02-14 11:29
+
+# game/dialogues/lisatalk.rpy:807
+translate english Lisa_sg1_eb6c0fa7:
+
+    # Lisa_00 "Да, что насчёт успеваемости? Позлорадствовать пришёл или помочь хочешь?" nointeract
+    Lisa_00 "What about them? Did you come here to gloat or do you want to help?" nointeract
+
+# game/dialogues/lisatalk.rpy:810
+translate english Lisa_sg1_29fca26f:
+
+    # Lisa_02 "Ну, я рада, если так. У меня не очень хороши дела с математикой и анатомией. У нас её просто не было. Должна была быть, но учитель всё время болел и я так толком и не разобралась в теме..." nointeract
+    Lisa_02 "I'm glad to hear that. I am having problems with math and anatomy. I pretty much never had these classes in my previous school. I should have had them, but the teacher was always sick, so I never really learned anything..." nointeract
+
+# game/dialogues/lisatalk.rpy:817
+translate english Lisa_sg1_a685c7da:
+
+    # Lisa_02 "Дела у меня отлично. Если ты об уроках, то всё хорошо кроме математики и анатомии. В прошлой школе не очень повезло с учителем, он всё время болел и я мало чего поняла..." nointeract
+    Lisa_02 "I'm great. If you're asking about my grades, then I am having problems with math and anatomy. The teacher from the last school was sick all the time, so I missed out a lot of information..." nointeract
+
+# game/dialogues/lisatalk.rpy:824
+translate english Lisa_sg1_help_44f0ef71:
+
+    # Lisa_02 "Это же здорово! Точно... Ты уже неоднократно говорил, что тебя выгнали не за знания. Значит, ты мне поможешь, правда?" nointeract
+    Lisa_02 "That's great! You said you weren't expelled for the lack of knowledge. So, will you help me?" nointeract
+
+# game/dialogues/lisatalk.rpy:827
+translate english Lisa_sg1_help_e816701b:
+
+    # Lisa_01 "Что? Вот просто так решил помогать и ничего не просить взамен? Правда?" nointeract
+    Lisa_01 "What? You just decided to help me without even asking for anything in return?" nointeract
+
+# game/dialogues/lisatalk.rpy:837
+translate english Lisa_sg1_nothing_4abf0225:
+
+    # Lisa_03 "Макс, я тебя обожаю! Спасибо! Сегодня мне помощь не нужна, а вот в следующий раз походи, когда делаю уроки, я найду тебе занятие!"
+    Lisa_03 "Thank you so much, Max! I don't need any help today, but you can ask me next time I'm doing my homework!"
+
+# game/dialogues/lisatalk.rpy:838
+translate english Lisa_sg1_nothing_bf34badd:
+
+    # Max_01 "Хорошо, Лиза!"
+    Max_01 "Okay, Lisa!"
+
+# game/dialogues/lisatalk.rpy:845
+translate english Lisa_sg1_maybe_2a33fdf4:
+
+    # Lisa_09 "Может быть? В смысле? Ты что-то хочешь за помощь?" nointeract
+    Lisa_09 "What do you mean? Do you want something in return?" nointeract
+
+# game/dialogues/lisatalk.rpy:853
+translate english Lisa_sg1_maybe_1cc7fa1a:
+
+    # Lisa_09 "А я думала, что поможешь своей младшей сестрёнке избежать сурового наказания строгой мамы... А ты..." nointeract
+    Lisa_09 "I was hoping you'd help your younger sister so she won't be severely punished, and you..." nointeract
+
+# game/dialogues/lisatalk.rpy:860
+translate english Lisa_sg1_maybe_fa7c0c4b:
+
+    # Lisa_00 "Ну ладно. И чего тебе нужно? Денег? У меня их нет. Я не зарабатываю... Да у меня ничего нет..."
+    Lisa_00 "Fine, what do you want, money? I don't have any. I don't have anything, really..."
+
+# game/dialogues/lisatalk.rpy:861
+translate english Lisa_sg1_maybe_f8d7c12f:
+
+    # Max_02 "Ты не права. У тебя есть кое-что, что мне нравится..."
+    Max_02 "No, you have something I like..."
+
+# game/dialogues/lisatalk.rpy:862
+translate english Lisa_sg1_maybe_8f214f47:
+
+    # Lisa_12 "Ты на что-то намекаешь, Макс? Я не понимаю..."
+    Lisa_12 "What are you talking about, Max? I don't understand..."
+
+# game/dialogues/lisatalk.rpy:863
+translate english Lisa_sg1_maybe_cd615196:
+
+    # Max_01 "Я буду тебе помогать, если ты будешь выполнять мои определённые требования..."
+    Max_01 "I'm going to help you if you'll do something in return..."
+
+# game/dialogues/lisatalk.rpy:864
+translate english Lisa_sg1_maybe_70f080ac:
+
+    # Lisa_09 "Макс, говори конкретнее. О чём ты? Например?"
+    Lisa_09 "Be specific, Max, what do you want me to do?"
+
+# game/dialogues/lisatalk.rpy:866
+translate english Lisa_sg1_maybe_04033ec9:
+
+    # Max_07 "Например, я попрошу тебя о чём-то, что ты должна будешь сделать..."
+    Max_07 "I could ask you to do something for me in return..."
+
+# game/dialogues/lisatalk.rpy:867
+translate english Lisa_sg1_maybe_a98adf50:
+
+    # Lisa_02 "Нет, Макс. Кота в мешке мне не надо. Либо ты помогаешь просто так, либо я сама во всём разберусь и справлюсь без тебя..."
+    Lisa_02 "No, Max, that's still too vague. Either you help me because you're a good brother or I'll figure it out myself..."
+
+# game/dialogues/lisatalk.rpy:868
+translate english Lisa_sg1_maybe_abe46492:
+
+    # Max_00 "Ну если вопрос так стоит, то конечно буду помогать просто так!"
+    Max_00 "Well, if you say it like this, I'll help you free of charge!"
+
+# game/dialogues/lisatalk.rpy:871
+translate english Lisa_sg1_maybe_b79dc385:
+
+    # Max_03 "Например, я попрошу тебя спать без твоих штанов, в трусиках..."
+    Max_03 "I want you to sleep without your pants, just in your underwear..."
+
+# game/dialogues/lisatalk.rpy:872
+translate english Lisa_sg1_maybe_4ba344a8:
+
+    # Lisa_13 "Фу, Макс! Ты извращенец! Зачем тебе это? Я же твоя сестра, забыл?"
+    Lisa_13 "Ew, Max! I'm your sister, why would you ever want that?"
+
+# game/dialogues/lisatalk.rpy:874
+translate english Lisa_sg1_maybe_967077a2:
+
+    # Max_09 "Ну, решай сама. Тебя мама по джинсам отшлёпала, а представь как будет по голой заднице?"
+    Max_09 "Well, it's your choice. Did you liked how mom spanked you in jeans? Now imagine how it's going to feel without them"
+
+# game/dialogues/lisatalk.rpy:875
+translate english Lisa_sg1_maybe_811bdec1:
+
+    # Lisa_10 "Было больно... Ладно. Всё равно мне жарко в штанах спать. А ты, Макс, гад. Я думала, что мы друзья, а ты... ещё и извращенец..."
+    Lisa_10 "Yeah... Fine. My pajama pants are too hot anyway. You're a jerk, Max. I though we were friends, and you... Are on top it all you're also a pervert..."
+
+# game/dialogues/lisatalk.rpy:876
+translate english Lisa_sg1_maybe_170e1299:
+
+    # Max_01 "Но я буду тебе помогать с уроками!"
+    Max_01 "But I'll help you with your homework, though!"
+
+# game/dialogues/lisatalk.rpy:877
+translate english Lisa_sg1_maybe_d7f48f29:
+
+    # Lisa_00 "Если не будешь помогать, то я маме всё расскажу и посмотрим, кого накажут. Всё, мы закончили."
+    Lisa_00 "If you won't help me, I'll tell mom and we'll see who's going to get punished."
+
+# game/dialogues/lisatalk.rpy:878
+translate english Lisa_sg1_maybe_c3b2994a:
+
+    # Max_00 "Как скажешь..."
+    Max_00 "Okay..."
+
+# game/dialogues/lisatalk.rpy:884
+translate english Lisa_sg1_maybe_9cce480b:
+
+    # Max_07 "Ну, решай сама. Мама если отшлёпает, будет очень очень больно. А так ты ничего не теряешь..."
+    Max_07 "Well, it's your choice. You'll regret your decision when mom will spank you next time. But if you'll agree you don't lose anything..."
+
+# game/dialogues/lisatalk.rpy:885
+translate english Lisa_sg1_maybe_f4df23a2:
+
+    # Lisa_12 "Нет, Макс, забудь. Мне не нужна твоя помощь!"
+    Lisa_12 "No, Max, forget it. I don't need your help."
+
+# game/dialogues/lisatalk.rpy:886
+translate english Lisa_sg1_maybe_c5444bae:
+
+    # Max_01 "Ну, посмотрим..."
+    Max_01 "We'll see..."
+
+# game/dialogues/lisatalk.rpy:896
+translate english Lisa_sg2_596f126a:
+
+    # Lisa_09 "Ты о чём, Макс? Каких условиях?"
+    Lisa_09 "About what?"
+
+# game/dialogues/lisatalk.rpy:897
+translate english Lisa_sg2_9315363a:
+
+    # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Ну или мама будет тебя и дальше наказывать..."
+    Max_01 "I'm talking about our quid pro quo conversation. Do you still prefer to be punished or have you changed your mind?"
+
+# game/dialogues/lisatalk.rpy:898
+translate english Lisa_sg2_d20cc8fb:
+
+    # Lisa_10 "Ладно, я согласна. Очень больно было. Так чего ты хочешь?"
+    Lisa_10 "Fine, I agree. Mom's punishments are too painful. What did you asked for again?"
+
+# game/dialogues/lisatalk.rpy:899
+translate english Lisa_sg2_7ab6791f:
+
+    # Max_01 "Ну для начала я бы хотел, чтобы ты спала в трусиках, без штанов..."
+    Max_01 "I want to sleep without your pajama pants..."
+
+# game/dialogues/lisatalk.rpy:900
+translate english Lisa_sg2_3bb41a82:
+
+    # Lisa_09 "Макс, я говорила, что ты извращенец?" nointeract
+    Lisa_09 "Have I told you you're a pervert, Max?" nointeract
+
+# game/dialogues/lisatalk.rpy:905
+translate english Lisa_sg2_9b6d30b2:
+
+    # Lisa_12 "Ну так вот, скажу. Ты - извращенец. Я твоя сестра и требовать от меня такого... стыдно должно быть!"
+    Lisa_12 "Well then I will. You are a grade A pervert, Max. I'm your sister, aren't you ashamed asking this kind of thing from me?"
+
+# game/dialogues/lisatalk.rpy:906
+translate english Lisa_sg2_c90b454f:
+
+    # Max_07 "Допустим, мне стыдно. Так ты согласна?"
+    Max_07 "Yeah, sure I am. So, do we have a deal?"
+
+# game/dialogues/lisatalk.rpy:907
+translate english Lisa_sg2_157c3cd3:
+
+    # Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
+    Lisa_10 "I don't have much of a choice... And sleeping in pants is too hot anyway... Yeah, I agree. But from now on you're going to help me with homework!"
+
+# game/dialogues/lisatalk.rpy:908
+translate english Lisa_sg2_4de7c9e3:
+
+    # Max_05 "Как скажешь..."
+    Max_05 "Okay..."
+
+# game/dialogues/lisatalk.rpy:919
+translate english Lisa_HomeWork_6342fdfe:
+
+    # Lisa_00 "Ну, если ты не занят и правда знаешь что-то по этой теме..." nointeract
+    Lisa_00 "If you're not too busy and actually know the subject..." nointeract
+
+# game/dialogues/lisatalk.rpy:930
+translate english Lisa_HomeWork_2e4b11ca:
+
+    # Lisa_02 "Отлично. В общем, мне нужно сделать вот это, это и вот то. Поможешь?" nointeract
+    Lisa_02 "Sure. I have to do this, this, and that. Can you help me out?" nointeract
+
+# game/dialogues/lisatalk.rpy:933
+translate english Lisa_HomeWork_641cf30e:
+
+    # "{i}Спустя какое-то время...{/i}"
+    "{i}Some time later...{/i}"
+
+# game/dialogues/lisatalk.rpy:934
+translate english Lisa_HomeWork_c91852c6:
+
+    # Max_04 "Ну, вот мы и закончили!"
+    Max_04 "That's it, we're done!"
+
+# game/dialogues/lisatalk.rpy:935
+translate english Lisa_HomeWork_0a878272:
+
+    # Lisa_03 "Спасибо, Макс! Ты так меня выручил! Теперь я точно получу пятёрку!"
+    Lisa_03 "Thanks, Max, you really helped me out! Now I'll definitely get an A!"
+
+# game/dialogues/lisatalk.rpy:936
+translate english Lisa_HomeWork_3dd007fd:
+
+    # Max_01 "Обращайся!"
+    Max_01 "Any time, sis!"
+
+# game/dialogues/lisatalk.rpy:953
+translate english Lisa_HomeWork_ecb8da1b:
+
+    # Lisa_09 "Чего ты хочешь, Макс?" nointeract
+    Lisa_09 "What do you want, Max?" nointeract
+
+# game/dialogues/lisatalk.rpy:967
+translate english Lisa_HomeWork_show_breast_9405b190:
+
+    # Lisa_10 "Ну Макс. Ты же мой брат..." nointeract
+    Lisa_10 "Come on, Max. You're my brother..." nointeract
+
+# game/dialogues/lisatalk.rpy:975
+translate english Lisa_HomeWork_show_breast_cc99f52e:
+
+    # Lisa_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
+    Lisa_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nFine. It's not like a have a choice. Have a look, pervert... "
+
+# game/dialogues/lisatalk.rpy:976
+translate english Lisa_HomeWork_show_breast_d12691cd:
+
+    # Lisa_00 "Ну всё, а теперь сделай работу на отлично!"
+    Lisa_00 "Now do everything perfectly!"
+
+# game/dialogues/lisatalk.rpy:979
+translate english Lisa_HomeWork_show_breast_c693cd50:
+
+    # Lisa_05 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
+    Lisa_05 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nFine. "
+
+# game/dialogues/lisatalk.rpy:980
+translate english Lisa_HomeWork_show_breast_5bbf7fe6:
+
+    # Lisa_01 "Ну все, полюбовался и хватит, а теперь сделай работу на отлично!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:981
+translate english Lisa_HomeWork_show_breast_eb1cb0cd:
+
+    # Max_05 "Вот теперь убедила!"
+    Max_05 "Now that was a proper motivator!"
+
+# game/dialogues/lisatalk.rpy:984
+translate english Lisa_HomeWork_show_breast_0910a185:
+
+    # Max_00 "{i}Ну, раз Лиза выполнила мою просьбу, придётся всё сделать как положено. Да и если ей поставят двойку за это снова, она больше ничего уже не покажет мне...{/i}"
+    Max_00 "{i}Well, since Lisa actually did what I asked for, I have to do everything right. If she'll get an F for this homework, she'll never show me anything again...{/i}"
+
+# game/dialogues/lisatalk.rpy:985
+translate english Lisa_HomeWork_show_breast_4a5d69ef:
+
+    # Max_04 "Ну всё, Лиза, я закончил!"
+    Max_04 "That's it, Lisa, I'm done!"
+
+# game/dialogues/lisatalk.rpy:986
+translate english Lisa_HomeWork_show_breast_cfc7fabd:
+
+    # Lisa_02 "Хорошо, Макс. Теперь мы в рассчёте, да? И надеюсь, что получу только пять, не меньше, верно?"
+    Lisa_02 "Good. I hope I'll get an A for this, right?"
+
+# game/dialogues/lisatalk.rpy:987
+translate english Lisa_HomeWork_show_breast_1e78def9:
+
+    # Max_01 "Я старался. В этот раз всё будет хорошо."
+    Max_01 "I did my best. This time everything will be fine."
+
+# game/dialogues/lisatalk.rpy:991
+translate english Lisa_HomeWork_show_breast_a9761a89:
+
+    # Lisa_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЗнаешь что, Макс? Отвали! Я сама всё сделаю. Пусть и на двойку, но зато без тебя с твоими... извращёнными мыслями!"
+    Lisa_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nYou know what, Max? Get lost! I'll do everything myself. I'd rather have an F, but I won't have to deal with you, perv."
+
+# game/dialogues/lisatalk.rpy:992
+translate english Lisa_HomeWork_show_breast_2443b693:
+
+    # Max_07 "Как скажешь..."
+    Max_07 "Okay..."
+
+# game/dialogues/lisatalk.rpy:1003
+translate english Lisa_HomeWork_make_bag_16d92097:
+
+    # Lisa_13 "Макс, мне кажется, что здесь должен быть другой ответ. Это же не так решается..." nointeract
+    Lisa_13 "I think this should have another answer, Max..." nointeract
+
+# game/dialogues/lisatalk.rpy:1006
+translate english Lisa_HomeWork_make_bag_841fcf53:
+
+    # Lisa_03 "Ну, вот видишь! Эх, какой же ты невнимательный, Макс. Но всё равно, спасибо, что помог. Сама я бы долго возилась..."
+    Lisa_03 "Good thing I caught it! You should pay more attention, Max. But thanks for your help anyway. It would take me so much time..."
+
+# game/dialogues/lisatalk.rpy:1007
+translate english Lisa_HomeWork_make_bag_71e49abd:
+
+    # Max_01 "Не за что!"
+    Max_01 "You're welcome!"
+
+# game/dialogues/lisatalk.rpy:1011
+translate english Lisa_HomeWork_make_bag_5c1fa6c5:
+
+    # Lisa_02 "Да? Ну ладно. Тебе виднее... Не буду проверять даже. Спасибо за помощь, Макс!"
+    Lisa_02 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nOkay, if you say so... I don't want to double-check. Thanks for your help, Max!"
+
+# game/dialogues/lisatalk.rpy:1014
+translate english Lisa_HomeWork_make_bag_71e49abd_1:
+
+    # Max_01 "Не за что!"
+    Max_01 "You're welcome!"
+
+# game/dialogues/lisatalk.rpy:1017
+translate english Lisa_HomeWork_make_bag_da238d5c:
+
+    # Lisa_13 "Нет, Макс, ты не прав. Тут надо всё совсем не так решать. Спасибо за помощь, но я уже разобралась..."
+    Lisa_13 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, you're wrong. This isn't how you solve this. Thanks for your help, but I think I've figured it out."
+
+# game/dialogues/lisatalk.rpy:1018
+translate english Lisa_HomeWork_make_bag_920afc01:
+
+    # Max_07 "Как знаешь..."
+    Max_07 "Okay, if you think so..."
+
+# game/dialogues/lisatalk.rpy:1029
+translate english Lisa_HomeWork_self_c3bc02ad:
+
+    # Max_10 "Так, что тут у нас... Ох, вроде недавно школу закончил... ну, учился недавно ещё, а уже ничего не помню... Хотя... Вот. Да, всё верно!"
+    Max_10 "Okay, what do we have here... Seems like I just studied all this myself, but I forgot everything already... Although... Yeah, now I remember!"
+
+# game/dialogues/lisatalk.rpy:1030
+translate english Lisa_HomeWork_self_4a5d69ef:
+
+    # Max_04 "Ну всё, Лиза, я закончил!"
+    Max_04 "Here, Lisa, I've finished your homework!"
+
+# game/dialogues/lisatalk.rpy:1036
+translate english Lisa_HomeWork_self_7cd07f88:
+
+    # Lisa_03 "О, супер! Макс! Ты такой молодец! Всё время меня выручаешь... Я бы сама долго возилась и, наверняка, ошибок бы наделала... Спасибо тебе!"
+    Lisa_03 "Great! You help me so much, Max... It would take me forever to do this and I'd probably make some mistakes too... Thank you!"
+
+# game/dialogues/lisatalk.rpy:1039
+translate english Lisa_HomeWork_self_b48863b4:
+
+    # Lisa_02 "О, супер! Я сама ещё всё проверю потом, чтобы ошибок не было, но тебе огромнейшее спасибо! Ты меня выручил."
+    Lisa_02 "Great! I'll check everything later, but thank you so much!"
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:807
+    old "Помочь, конечно!"
+    new "Of course I want to help!"
+
+    # game/dialogues/lisatalk.rpy:807
+    old "Для начала хотел узнать, как у тебя дела?"
+    new "First I want to know how are you doing"
+
+    # game/dialogues/lisatalk.rpy:810
+    old "Тебе повезло, у меня всё хорошо с этими предметами!"
+    new "You're in luck, I'm pretty good with both of them!"
+
+    # game/dialogues/lisatalk.rpy:810
+    old "Может быть, я тебе и смогу помочь..."
+    new "I guess I could help you, but..."
+
+    # game/dialogues/lisatalk.rpy:824
+    old "Конечно, сестрёнка!"
+    new "Of course, sis!"
+
+    # game/dialogues/lisatalk.rpy:827
+    old "Ну может быть..."
+    new "Maybe..."
+
+    # game/dialogues/lisatalk.rpy:827
+    old "Обещаю! Хочу только помогать и ничего взамен!"
+    new "I promise! I'll help you without asking for anything in return!"
+
+    # game/dialogues/lisatalk.rpy:845
+    old "Ну сама подумай, зачем мне тратить время просто так?"
+    new "Think about it, why would I want to spend my time on you for no reason?"
+
+    # game/dialogues/lisatalk.rpy:845
+    old "Может быть, попрошу что-то..."
+    new "Yes, I could ask you for something in return..."
+
+    # game/dialogues/lisatalk.rpy:845
+    old "Да нет, конечно. Обещаю, что ничего не попрошу взамен!"
+    new "No, of course no. I'm not going to ask for anything in return!"
+
+    # game/dialogues/lisatalk.rpy:853
+    old "Нет, Лиза. Ты мне - я тебе."
+    new "No, Lisa, {i}quid pro quo{/i}."
+
+    # game/dialogues/lisatalk.rpy:853
+    old "А я пошутил. Обещаю, что ничего не попрошу взамен!"
+    new "I'm kidding. I promise, I won't ask for anything in return!"
+
+    # game/dialogues/lisatalk.rpy:900
+    old "Ага. Ну так как, ты согласна?"
+    new "Yeah, I think so. So, do we have a deal?"
+
+    # game/dialogues/lisatalk.rpy:900
+    old "Нет, не говорила..."
+    new "No, you haven't..."
+
+    # game/dialogues/lisatalk.rpy:919
+    old "Ну, давай посмотрим..."
+    new "Let's take a look..."
+
+    # game/dialogues/lisatalk.rpy:919
+    old "Хотя, в другой раз..."
+    new "Sorry, another time..."
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Без проблем!"
+    new "No problem!"
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Конечно! {i}(сделать ошибки){/i}"
+    new "Sure! {i}(make mistakes){/i}"
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Ты пока отдохни, я сам всё сделаю!"
+    new "You can take a break, I'll do everything myself!"
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Ага... {i}(сделать ошибки){/i}"
+    new "Yeah... {i}(make mistakes){/i}"
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Давай я всё сделаю сам! {i}(без ошибок){/i}"
+    new "I'll just do everything myself! {i}(without mistakes){/i}"
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..."
+    new "I'll do everything perfectly if you'll do something for me..."
+
+    # game/dialogues/lisatalk.rpy:930
+    old "Ой, тут много... Давай в другой раз."
+    new "Oh, there's so much... Another time."
+
+    # game/dialogues/lisatalk.rpy:953
+    old "Покажи грудь! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
+    new "Show me your tits! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+
+    # game/dialogues/lisatalk.rpy:967
+    old "Тебе напомнить как мама больно наказывает?"
+    new "Do I have to remind you what will happen if you fail your homework?"
+
+    # game/dialogues/lisatalk.rpy:967
+    old "Как хочешь. Но мама тебя накажет!"
+    new "As you wish. But mom with punish you!"
+
+    # game/dialogues/lisatalk.rpy:1003
+    old "Да, Лиза, ты права..."
+    new "Oh, you're right, Lisa... {i}(fix your mistake){/i}"
+
+    # game/dialogues/lisatalk.rpy:1003
+    old "Лиза, я знаю о чём говорю! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
+    new "I know what I'm doing, Lisa! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+
