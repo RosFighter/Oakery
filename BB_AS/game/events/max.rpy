@@ -672,7 +672,7 @@ label InstallCam:
 label SearchSpider:
     scene BG char Max spider-search-00
     $ renpy.show("Max spider search-00"+mgg.dress)
-    $ _chance = {0 : {0 : 1000, 1 : 400}[SpiderResp], 1 : {0 : 1000, 1 : 500, 2 : 50}[SpiderResp], 2 : {0 : 1000, 1 : 700, 2 : 400, 3 : 10}[SpiderResp]}[SpiderKill]
+    $ _chance = {0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp]
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
     menu:
@@ -698,7 +698,7 @@ label HideSpider:
     if "00:40" < tm < "01:00":
         Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
 
-    $ _chance = {"00:00" <= tm <= "00:40" : 800, "23:00" <= tm <= "23:59" : 700, "20:00" <= tm <= "22:59" : 500, "01:00" <= tm <= "19:59" : 0,}[tm]
+    $ _chance = {"00:00" <= tm <= "00:40" : 800, "23:00" <= tm <= "23:59" : 700, "20:00" <= tm <= "22:59" : 500, "01:00" <= tm <= "19:59" : 0,}[True]
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
     menu:
@@ -708,6 +708,11 @@ label HideSpider:
             Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
             $ SpiderKill = 0
             $ SpiderResp = 1
-            $ NightOfFun.append("spider")
+            if RandomChance(_chance):
+                $ NightOfFun.append("spider")
+            $ items["spider"].have = False
+            $ spent_time = 10
+
         "В другой раз...":
             pass
+    jump Waiting

@@ -149,9 +149,9 @@ label InitActions: # кнопки действий
             "usb"         : ActionsButton(_("УСТАНОВИТЬ\nКЕЙЛОГГЕР"), "interface usb", "InstallKeylogger"),
             "install"     : ActionsButton(_("УСТАНОВИТЬ\nКАМЕРУ"), "interface install", "InstallCam"),
             "hidespider"  : ActionsButton(_("СПРЯТАТЬ\nПАУКА"), "interface spider", "HideSpider"),
-            "throwspider3": ActionsButton(_("БРОСИТЬ\nПАУКА>"), "interface spider", "BathroomSpider"),
-            "throwspider6": ActionsButton(_("БРОСИТЬ\nПАУКА>"), "interface spider", "CourtyardSpider"),
-            "catchspider" : ActionsButton(_("ИСКАТЬ\nПАУКОВ>"), "interface spider", "SearchSpider"),
+            "throwspider3": ActionsButton(_("БРОСИТЬ\nПАУКА"), "interface spider", "BathroomSpider"),
+            "throwspider6": ActionsButton(_("БРОСИТЬ\nПАУКА"), "interface spider", "CourtyardSpider"),
+            "catchspider" : ActionsButton(_("ИСКАТЬ\nПАУКОВ"), "interface spider", "SearchSpider"),
             "searchciga"  : ActionsButton(_("ИСКАТЬ\nСИГАРЕТЫ"), "interface search", "SearchCigarettes"),
             "searchbook"  : ActionsButton(_("ИСКАТЬ\nКНИГУ"), "interface search", "SearchSecretBook"),
             "clearpool"   : ActionsButton(_("ЧИСТИТЬ\nБАССЕЙН"), "interface clearpool", "ClearPool"),
@@ -451,7 +451,7 @@ label InitVariable: # стартовая инициация переменных
         search_theme = []
 
         SpiderKill = 0  # вариант избавления от паука: выкинуть 0, использовать в душе 1, убить 2
-        SpiderResp = 0  # дней до гарантированного респа паука
+        SpiderResp = 0  # дней до гарантированного респа паука: 1 - выкинули с балкона, 2 - запустили в душ, 3 - убили
         NightOfFun = [] # список "ночных забав". Рандомно срабатывает одна из списка
 
     return

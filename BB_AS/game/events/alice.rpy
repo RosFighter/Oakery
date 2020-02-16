@@ -387,8 +387,8 @@ label spider_in_bed:
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
-    show Alice spider-night 02-01
     $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"]))
+    show Alice spider-night 02-01
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
         "Что случилось?":
@@ -428,7 +428,7 @@ label spider_in_bed:
         $ ch2_vis = str(int(_ch2/10)) + "%"
         $ _ch3 = GetChance(mgg.social, 2)
         $ _ch3_color = GetChanceColor(_ch3)
-        $ ch3_vis = str(int(_ch2/10)) + "%"
+        $ ch3_vis = str(int(_ch3/10)) + "%"
         menu:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
             "А что мне за это будет?":
@@ -498,9 +498,9 @@ label spider_in_bed:
         scene BG char Alice spider-night-04
         show Max spider-night 04-01
         if __toples:
-            $ renpy.show("Alice spider-night 04-"+renpy.random.choice(["01", "02", "03"]))
-        else:
             $ renpy.show("Alice spider-night 04-"+renpy.random.choice(["04", "05", "06"]))
+        else:
+            $ renpy.show("Alice spider-night 04-"+renpy.random.choice(["01", "02", "03"]))
         $ _ch1 = GetChance(mgg.social, 3)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
@@ -516,6 +516,9 @@ label spider_in_bed:
                                 $ __mood -= 100
                                 $ spent_time = 30
                                 $ AddRelMood("alice", 0, __mood)
+                                $ SpiderKill = 0
+                                $ SpiderResp = 0
+                                $ items["spider"].have = True
                                 return
                     "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         show Max spider-night 04-02
@@ -527,6 +530,9 @@ label spider_in_bed:
                                     $ __mood += 50
                                     $ spent_time = 30
                                     $ AddRelMood("alice", 0, __mood)
+                                    $ SpiderKill = 0
+                                    $ SpiderResp = 0
+                                    $ items["spider"].have = True
                                     return
                         else:
                             $ __mood -50
@@ -549,6 +555,8 @@ label spider_in_bed:
                 $ spent_time = 30
                 $ __mood -= 50
                 $ AddRelMood("alice", 0, __mood)
+                $ SpiderKill = 0
+                $ SpiderResp = 1
                 return
 
     label .kill:
@@ -559,4 +567,6 @@ label spider_in_bed:
                 $ __mood += 100
                 $ AddRelMood("alice", 0, __mood)
                 $ spent_time = 30
+                $ SpiderKill = 2
+                $ SpiderResp = 3
                 return

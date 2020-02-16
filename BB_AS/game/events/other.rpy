@@ -238,8 +238,12 @@ label night_of_fun:
     $ Wait(spent_time)
 
     ## теперь отправим Макса досыпать
+    $ prevtime = tm
     $ status_sleep = True
     $ cur_ratio = 1
-    $ spent_time = (100. - mgg.energy) * 6
+    $ spent_time = int(round((100. - mgg.energy)/10, 0)) * 60
     $ alarm_time = "08:00"
+    scene BG char Max bed-night-01
+    $ renpy.show("Max sleep-night "+pose3_3)
+    Max_19 "Как же спать-то охота..."
     jump Waiting
