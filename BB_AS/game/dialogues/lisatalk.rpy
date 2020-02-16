@@ -504,7 +504,7 @@ label about_school:
     label .end:
         $ spent_time += 20
 
-    return
+    jump Waiting
 
 
 label talk_swim:
@@ -1028,6 +1028,7 @@ label Lisa_HomeWork:
         $ talk_var["truehelp"] += 1
         Max_10 "Так, что тут у нас... Ох, вроде недавно школу закончил... ну, учился недавно ещё, а уже ничего не помню... Хотя... Вот. Да, всё верно!"
         Max_04 "Ну всё, Лиза, я закончил!"
+        hide Max
         $ renpy.show("Lisa lessons-help "+pose3_1+chars["lisa"].dress)
         $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
         $ punlisa[0][0] = 3

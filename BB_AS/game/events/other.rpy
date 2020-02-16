@@ -214,3 +214,32 @@ label MeetingEric:
 
         $ talk_var["empathic"] = 0
         jump Waiting
+
+
+label night_of_fun:
+
+    $ renpy.random.shuffle(NightOfFun)
+
+    $ _fun = NightOfFun.pop() # последний из перемешанного списка - событие на сегодня
+
+    if _fun != "spider" and "spider" in NightOfFun:
+        $ NightOfFun.remove("spider") # если выпала забава, отличная от паука в постели Алисы, паука из списка удаляем - он сбежал
+
+    ## Запуск выпавшей забавы
+    if _fun == "spider":
+        call spider_in_bed
+
+    $ mgg.energy -= spent_time * 3.5 * cur_ratio / 60.0
+    $ mgg.cleanness -= spent_time * 2.5 * cur_ratio / 60.0
+
+    $ mgg.energy = clip(mgg.energy, 0.0, 100.0)
+    $ mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
+
+    $ Wait(spent_time)
+
+    ## теперь отправим Макса досыпать
+    $ status_sleep = True
+    $ cur_ratio = 1
+    $ spent_time = (100. - mgg.energy) * 6
+    $ alarm_time = "08:00"
+    jump Waiting

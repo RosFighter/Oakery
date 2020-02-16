@@ -101,7 +101,7 @@ label NewDay:
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
         for i in dcv:  #
-            if dcv[i].enabled:
+            if dcv[i].enabled and not dcv[i].done:
                 dcv[i].lost -= 1
                 if dcv[i].lost == 0:
                     dcv[i].done  = True
@@ -109,6 +109,9 @@ label NewDay:
         # сбросим подглядывания
         for key in peeping:
             peeping[key] = 0
+
+        if SpiderResp > 0:
+            SpiderResp -= 1
 
     $ GetDeliveryList()
 

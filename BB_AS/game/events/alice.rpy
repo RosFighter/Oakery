@@ -377,3 +377,186 @@ label alice_evening_closer:
     scene BG char Alice evening-closer
     $ renpy.show("Alice evening-closer "+pose3_2+chars["alice"].dress)
     return
+
+
+label spider_in_bed:
+    $ __mood = 0
+    $ __toples = False
+    scene BG char Alice spider-night-01
+    $ renpy.show("Alice spider-night 01-"+renpy.random.choice(["01", "02", "03"]))
+    Alice_13 "Макс!"
+
+    scene BG char Alice spider-night-02
+    show Alice spider-night 02-01
+    $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"]))
+    menu:
+        Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
+        "Что случилось?":
+            pass
+        "Разбирайся сама...":
+            jump .goaway
+
+    show Max spider-night 02-04
+    menu:
+        Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!"
+        "Ну, пойдём посмотрим...":
+            jump .help
+        "Паук? Ерунда какая. Сама разбирайся с ним...":
+            jump .goaway
+
+    label .goaway:
+        scene BG char Max bed-night-01
+        $ renpy.show("Max sleep-night "+pose3_3)
+        menu:
+            Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..."
+            "{i}спать до утра{/i}":
+                $ __mood -= 20
+                $ spent_time = 10
+                $ AddRelMood("alice", 0, __mood)
+                return
+
+    label .help:
+        scene BG char Alice spider-night-03
+        $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["01", "02", "03"]))
+        show Max spider-night 03-01
+
+        $ _ch1 = GetChance(mgg.social, 5)
+        $ _ch1_color = GetChanceColor(_ch1)
+        $ ch1_vis = str(int(_ch1/10)) + "%"
+        $ _ch2 = GetChance(mgg.social, 3)
+        $ _ch2_color = GetChanceColor(_ch2)
+        $ ch2_vis = str(int(_ch2/10)) + "%"
+        $ _ch3 = GetChance(mgg.social, 2)
+        $ _ch3_color = GetChanceColor(_ch3)
+        $ ch3_vis = str(int(_ch2/10)) + "%"
+        menu:
+            Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
+            "А что мне за это будет?":
+                show Max spider-night 03-02
+                show Alice spider-night 03-04
+                menu:
+                    Alice_12 "Что ты хочешь за смерть этого паука?"
+                    "Давай $10! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                        if RandomChance(_ch1):
+                            jump .money
+                        else:
+                            jump .fail
+                    "Покажи сиськи! {color=[_ch2_color]}(Убеждение. Шанс: [ch2_vis]){/color}":
+                        if RandomChance(_ch2):
+                            jump .tits
+                        else:
+                            jump .fail
+                    "Сними верх! {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}":
+                        if RandomChance(_ch3):
+                            jump .toples
+                        else:
+                            jump .fail
+                    "А, ничего. Так поймаю...":
+                        $ __mood += 100
+                        jump .spider
+            "Хорошо, где он там...":
+                $ __mood += 100
+                jump .spider
+    label .fail:
+        show Alice spider-night 03-05
+        Alice_17 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЧто?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
+        Max_08 "Ух, какая ты кровожадная. Ну ладно..."
+        $ __mood -= 100
+        jump .spider
+
+    label .money:
+        show Alice spider-night 03-06
+        Alice_16 "Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
+        Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
+        $ __mood -= 20
+        $ money += 10
+        jump .spider
+
+    label .tits:
+        show Max spider-night 03-03
+        if GetMood("alice")[0] < 3:
+            $ __mood -= 50
+            $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["07", "08"]))
+            Alice_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
+        else:
+            show Alice spider-night 03-09
+            Alice_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
+        Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
+        jump .spider
+
+    label .toples:
+        $ __toples = True
+        show Max spider-night 03-03
+        $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["10", "11", "12"]))
+        if GetMood("alice")[0] < 3:
+            $ __mood -= 50
+        Alice_15 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
+        Max_05 "Отличные сиськи! Ладно, где этот твой паук..."
+        jump .spider
+
+    label .spider:
+        scene BG char Alice spider-night-04
+        show Max spider-night 04-01
+        if __toples:
+            $ renpy.show("Alice spider-night 04-"+renpy.random.choice(["01", "02", "03"]))
+        else:
+            $ renpy.show("Alice spider-night 04-"+renpy.random.choice(["04", "05", "06"]))
+        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1_color = GetChanceColor(_ch1)
+        $ ch1_vis = str(int(_ch1/10)) + "%"
+        menu:
+            Max_07 "Ну, где ты там. Ага. Попался! И что мне с тобой делать?"
+            "{i}забрать его себе{/i}":
+                menu:
+                    Alice_16 "Макс! Ты должен его убить! А не то я подумаю, что это твоих рук дело... Докажи, что это был не ты!"
+                    "Я не буду его убивать!":
+                        menu:
+                            Alice_17 "Ах так... Ну, тогда я обижусь на тебя! Всё, вали отсюда!"
+                            "{i}вернуться в кровать{/i}":
+                                $ __mood -= 100
+                                $ spent_time = 30
+                                $ AddRelMood("alice", 0, __mood)
+                                return
+                    "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                        show Max spider-night 04-02
+                        if RandomChance(_ch1):
+                            Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
+                            menu:
+                                Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!"
+                                "{i}вернуться в кровать{/i}":
+                                    $ __mood += 50
+                                    $ spent_time = 30
+                                    $ AddRelMood("alice", 0, __mood)
+                                    return
+                        else:
+                            $ __mood -50
+                            Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
+                            Max_09 "Ладно, будет тебе! Раз ты такая кровожадная..."
+                            jump .kill
+                    "{i}выбросить с балкона{/i}":
+                        jump .let_go
+                    "{i}убить паука{/i}":
+                        jump .kill
+            "{i}выбросить с балкона{/i}":
+                jump .let_go
+            "{i}убить паука{/i}":
+                jump .kill
+    label .let_go:
+        scene BG char Alice spider-balcony
+        menu:
+            Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!"
+            "{i}вернуться в кровать{/i}":
+                $ spent_time = 30
+                $ __mood -= 50
+                $ AddRelMood("alice", 0, __mood)
+                return
+
+    label .kill:
+        show Max spider-night 04-03
+        menu:
+            Alice_01 "Так ему! Спасибо, Макс! Ты мой спаситель. А теперь иди отсюда, я спать хочу!"
+            "{i}вернуться в кровать{/i}":
+                $ __mood += 100
+                $ AddRelMood("alice", 0, __mood)
+                $ spent_time = 30
+                return

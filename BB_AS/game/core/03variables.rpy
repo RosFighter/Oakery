@@ -375,6 +375,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         "back_shoping"     : CutEvent("14:00", (6, ), "back_shoping", "возвращение с семейного шопинга", "EventsByTime[\"back_shoping\"].stage < 2", cut=True),
         "MeetingEric"      : CutEvent("18:50", (6, ), "MeetingEric", "знакомство с Эриком", "day == 4", cut=True),
         "Eric_afterdinner" : CutEvent("20:00", (6, ), "Eric_talk_afterdinner", "разговор с Эриком после субботнего ужина", "day < 12", cut=True),
+        "night_of_fun"     : CutEvent("04:00", label="night_of_fun", sleep=True, variable="len(NightOfFun)>0", desc="ночные забавы"),
         }
 
     # переменные со счетчиком дней
@@ -448,6 +449,11 @@ label InitVariable: # стартовая инициация переменных
         CurChar = "max"
         CurPoss = ""
         search_theme = []
+
+        SpiderKill = 0  # вариант избавления от паука: выкинуть 0, использовать в душе 1, убить 2
+        SpiderResp = 0  # дней до гарантированного респа паука
+        NightOfFun = [] # список "ночных забав". Рандомно срабатывает одна из списка
+
     return
 
 

@@ -1081,5 +1081,6 @@ init python:
             mind = mind * 0.80 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
         return chance
 
+
     def GetWeekday(day):
         return (day+2) % 7

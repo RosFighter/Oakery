@@ -339,8 +339,8 @@ label about_cam:
 label about_blog:
     $ renpy.block_rollback()
     hide video1_movie
-    # show interface laptop spider-inf-1:
-    #     xpos 221 ypos 93
+    show interface laptop blog-inf-1:
+        xpos 221 ypos 93
     menu:
         Max_00 "Итак, попробуем что-то найти о блогах. С чего начать?"
         "Собрать статистику":
@@ -430,7 +430,9 @@ label about_spider:
 
     $ SetPossStage("spider", 1)
     $ AvailableActions["catchspider"].enabled = True
-    $ cooldown["spider"] = "0 00:00"
+    $ AvailableActions["hidespider"].enabled = True
+    $ SpiderKill = 0
+    $ SpiderResp = 0
     $ spent_time += 30
     jump Laptop
 
@@ -670,10 +672,13 @@ label InstallCam:
 label SearchSpider:
     scene BG char Max spider-search-00
     $ renpy.show("Max spider search-00"+mgg.dress)
+    $ _chance = {0 : {0 : 1000, 1 : 400}[SpiderResp], 1 : {0 : 1000, 1 : 500, 2 : 50}[SpiderResp], 2 : {0 : 1000, 1 : 700, 2 : 400, 3 : 10}[SpiderResp]}[SpiderKill]
+    $ _chance_color = GetChanceColor(_chance)
+    $ ch_vis = str(int(_chance/10)) + "%"
     menu:
         Max_00 "Так, нужно хорошенько рассмотреть траву..."
-        "{i}искать...{/i}":
-            if ItsTime(cooldown["spider"]):
+        "{i}искать... {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}":
+            if RandomChance(_chance):
                 $ renpy.scene()
                 $ renpy.show("BG char Max spider-search-01"+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
@@ -686,3 +691,23 @@ label SearchSpider:
             pass
 
     jump Waiting
+
+
+label HideSpider:
+
+    if "00:40" < tm < "01:00":
+        Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
+
+    $ _chance = {"00:00" <= tm <= "00:40" : 800, "23:00" <= tm <= "23:59" : 700, "20:00" <= tm <= "22:59" : 500, "01:00" <= tm <= "19:59" : 0,}[tm]
+    $ _chance_color = GetChanceColor(_chance)
+    $ ch_vis = str(int(_chance/10)) + "%"
+    menu:
+        Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже его спрячу под одеялом, тем больше шансов на успех..."
+        "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}":
+            scene BG char Alice spider
+            Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
+            $ SpiderKill = 0
+            $ SpiderResp = 1
+            $ NightOfFun.append("spider")
+        "В другой раз...":
+            pass
