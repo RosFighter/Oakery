@@ -190,7 +190,7 @@ label eric_ann_fucking:
         Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНичего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
 
     $ mgg.stealth += 0.05
-    $ renpy.notify(_("Скрытность Макса повысилась"))
+    $ notify_list.append(_("Скрытность Макса повысилась"))
 
     $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
     if rez > 0:
@@ -211,7 +211,7 @@ label eric_ann_fucking:
 
     $ spent_time += 20
     $ mgg.stealth += 0.05
-    $ renpy.notify(_("Скрытность Макса повысилась"))
+    $ notify_list.append(_("Скрытность Макса повысилась"))
     $ current_room = house[1]
     jump Waiting
 
@@ -263,7 +263,7 @@ label eric_ann_shower:
             "{i}уйти{/i}":
                 return
 
-        $ renpy.notify(_("Скрытность Макса капельку повысилась"))
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
         $ __r1 = renpy.random.choice(["01", "02", "03"])
         $ _chance = GetChance(mgg.stealth, 3)
@@ -279,7 +279,7 @@ label eric_ann_shower:
             "{i}уйти{/i}":
                 jump Waiting
         $ mgg.stealth += 0.1
-        $ renpy.notify(_("Скрытность Макса повысилась"))
+        $ notify_list.append(_("Скрытность Макса повысилась"))
         $ chars["ann"].dress_inf = "00a"
         $ spent_time += 10
         if __r1 == "01":

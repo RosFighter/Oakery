@@ -168,7 +168,7 @@ label alice_shower:
                 jump .end_peeping
 
         label .start_peeping:
-            $ renpy.notify(_("Скрытность Макса капельку повысилась"))
+            $ notify_list.append(_("Скрытность Макса капельку повысилась"))
             $ mgg.stealth += 0.03
             $ __ran1 = renpy.random.randint(1, 4)
 
@@ -188,7 +188,7 @@ label alice_shower:
             if RandomChance(_chance):
                 $ peeping["alice_shower"] = 1
                 $ mgg.stealth += 0.2
-                $ renpy.notify(_("Скрытность Макса повысилась"))
+                $ notify_list.append(_("Скрытность Макса повысилась"))
                 $ chars["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(1, 6)
                 scene BG shower-closer
@@ -201,7 +201,7 @@ label alice_shower:
             elif RandomChance(_chance):
                 $ peeping["alice_shower"] = 2
                 $ mgg.stealth += 0.1
-                $ renpy.notify(_("Скрытность Макса немного повысилась"))
+                $ notify_list.append(_("Скрытность Макса немного повысилась"))
                 $ chars["alice"].dress_inf = "00aa"
                 $ __ran1 = renpy.random.randint(7, 8)
                 scene BG shower-closer
@@ -212,7 +212,7 @@ label alice_shower:
             else:
                 $ peeping["Alice_shower"] = 3
                 $ mgg.stealth += 0.05
-                $ renpy.notify(_("Скрытность Макса чуть-чуть повысилась"))
+                $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
                 $ __ran1 = renpy.random.choice(["09", "10"])
                 scene BG shower-closer
                 show image ("Alice shower-closer "+__ran1)

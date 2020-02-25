@@ -40,7 +40,7 @@ translate english alice_bath_617c9a2e:
 translate english alice_sleep_night_7ff48024:
 
     # Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..." nointeract
-    Max_00 "I think Alice is asleep. There's no way I'm knocking on the door.\nДа and it's dangerous to walk in..." nointeract
+    Max_00 "I think Alice is asleep. There's no way I'm knocking on the door.\nAnd it's dangerous to walk in..." nointeract
 
 # game/events/alice.rpy:48
 translate english alice_sleep_night_dc2760cf:
@@ -361,4 +361,3 @@ translate english alice_sleep_morning_807b976b:
 
     # Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
     Max_05 "Oh, it's the kind of thing that puts the dirtiest thoughts in my head... the way I would pound that ass...! I think i'll get out of here before she wakes up." nointeract
-

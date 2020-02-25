@@ -245,5 +245,5 @@ label night_of_fun:
     $ alarm_time = "08:00"
     scene BG char Max bed-night-01
     $ renpy.show("Max sleep-night "+pose3_3)
-    Max_19 "Как же спать-то охота..."
+    Max_19 "Теперь можно спокойно спать и ничего больше..."
     jump Waiting

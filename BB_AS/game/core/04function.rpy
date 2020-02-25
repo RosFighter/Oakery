@@ -404,11 +404,11 @@ init python:
         chars[char].relmax = clip(chars[char].relmax + rel, -450, 1400)
         chars[char].mood   = clip(chars[char].mood + mood,  -435, 435)
         if rel != 0 and mood != 0:
-            renpy.notify(__("Настроение %s %s \nЕе отношение к Максу %s") % (char_name, mood_suf, rel_suf))
+            notify_list.append(__("Настроение %s %s \nЕе отношение к Максу %s") % (char_name, mood_suf, rel_suf))
         elif rel != 0:
-            renpy.notify(__("Отношение %s к Максу %s") % (char_name, rel_suf))
+            notify_list.append(__("Отношение %s к Максу %s") % (char_name, rel_suf))
         elif mood != 0:
-            renpy.notify(__("Настроение %s %s") % (char_name, mood_suf))
+            notify_list.append(__("Настроение %s %s") % (char_name, mood_suf))
 
 
     def BuyItem(id): # выполняет покупку предмета из интернет-магазина
@@ -469,7 +469,7 @@ init python:
                         ef += 10.0 / (1 + k) # каждая HD-камера немного повышает эффективность рекламы
 
         site.invited += int(round(10000 * ef / 100.0, 0))
-        renpy.notify(_("Приобретен пакет рекламы"))
+        notify_list.append(_("Приобретен пакет рекламы"))
 
 
     def CamShow(): # расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
@@ -1022,7 +1022,7 @@ init python:
         possibility[poss].stages[stage].used = True
 
         if sum(a) == 0:
-            renpy.notify(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
+            notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
 
 
     def GetChanceColor(chance):  # цвет шанса
@@ -1084,3 +1084,15 @@ init python:
 
     def GetWeekday(day):
         return (day+2) % 7
+
+
+    def BuyCource():
+        global money, CurCource
+        money -= CurCource.cources[CurCource.current].price
+        CurCource.cources[CurCource.current].buy = True
+
+
+    def notify_queue():
+        global notify_list
+        if all((not renpy.get_screen('notify'), notify_list)):
+            renpy.notify(notify_list.pop(0));

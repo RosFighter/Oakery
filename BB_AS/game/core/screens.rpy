@@ -183,9 +183,9 @@ screen LaptopScreen():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop shop" action Jump("LaptopShop") at book_marks
                         text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    # frame xysize(370, 295) background None:
-                    #     imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
-                    #     text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+                    frame xysize(370, 295) background None:
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
+                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
                     if dcv["buyfood"].stage == 1:
                         frame xysize(370, 295) background None:
@@ -353,6 +353,96 @@ style buy_button_text:
     hover_color "#FFFFFF"
 
 ################################################################################
+screen OnlineCources():
+    tag menu
+    modal True
+    use PowerBack
+    # default CurCource = online_cources[0]
+    frame area(221, 93, 1475, 829) background Frame("interface items bg", 10, 10):
+        vbox:
+            hbox:
+                xfill True
+                label _("ОНЛАЙН-КУРСЫ") xalign 0.02 text_color gui.accent_color text_size 36 text_font "hermes.ttf"
+                label "$[money]" xalign 0.98 text_size 36 text_font "hermes.ttf" text_drop_shadow[(2, 2)] text_color gui.text_color
+            hbox:
+                frame xsize 395 yfill True background None:
+                    xpadding 35 ypadding 15
+                    ## список курсов
+                    style_prefix "cat"
+                    vbox:
+                        for i in online_cources:
+                            button background None action SetVariable("CurCource", i) xsize 390 style "cat_but":
+                                textbutton i.name action SetVariable("CurCource", i) selected CurCource == i
+
+                frame xsize 1075 yfill True background None:
+                    xpadding 10 ypadding 0 #xmargin 0 ymargin 15
+                    vbox spacing 10:
+                        frame xfill True background None:
+                            add "interface laptop "+CurCource.img+"-header-"+str(CurCource.current) xalign 0.5 size(900,450)
+                        if CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total:
+                            label _("Вы прошли все доступные курсы и занятия из этой категории. Возможно, новые уроки появятся в следующей версии игры."):
+                                xsize 900 xalign 0.5 text_size 24
+                                text_color gui.accent_color
+                        else:
+                            $ text2 = CurCource.cources[CurCource.current].total
+                            label CurCource.cources[CurCource.current].header:
+                                xalign 0.5 text_xalign 0.5 text_size 36
+                                text_font "hermes.ttf" text_color gui.text_color
+                            if CurCource.cources[CurCource.current].buy:
+                                label _("Вы уже оплатили этот курс и можете в любой момент включить следующий доступный видеоурок."):
+                                    xsize 900 xalign 0.5 text_size 26
+                                    text_color gui.accent_color
+                                $ text1 = CurCource.cources[CurCource.current].less + 1
+                                label _("Занятие [text1] из [text2]"):
+                                    xsize 900 xalign 0.5 text_size 28
+                                    text_color gui.text_color
+                                if ItsTime(cooldown["learn"]):  # таймаут прошел, можно учится дальше
+                                    textbutton _("{i}{b}НАЧАТЬ ПРОСМОТР ВИДЕОУРОКА{/b}{/i}") style "buy_button2":
+                                        idle_background Frame("interface button green", 12, 12)
+                                        hover_background Frame("interface button green", 12, 12)
+                                        action Jump("ViewLesson")
+                                else:  # таймаут еще не кончился
+                                    textbutton "{i}{b}ВЫ УЧИЛИСЬ СОВСЕМ НЕДАВНО. СДЕЛАЙТЕ ПЕРЕРЫВ!{/b}{/i}" style "buy_button2":
+                                        idle_background Frame("interface button orange", 12, 12)
+                                        hover_background Frame("interface button orange", 12, 12)
+                                        text_hover_color "#000000"
+                                        action NullAction()
+                            else:
+                                label CurCource.cources[CurCource.current].desc:
+                                    xsize 900 xalign 0.5 text_size 26
+                                    text_color gui.accent_color
+
+                                label _("Количество занятий: [text2]"):
+                                    xsize 900 xalign 0.5 text_size 28
+                                    text_color gui.text_color
+
+                                $ price = CurCource.cources[CurCource.current].price
+                                if price > money:
+                                    textbutton "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}" style "buy_button2":
+                                        idle_background Frame("interface button red", 12, 12)
+                                        hover_background Frame("interface button red", 12, 12)
+                                        text_hover_color "#000000"
+                                        action NullAction()
+                                else:
+                                    textbutton "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}" style "buy_button2":
+                                        idle_background Frame("interface button green", 12, 12)
+                                        hover_background Frame("interface button green", 12, 12)
+                                        action Function(BuyCource)
+
+style buy_button2:
+    xalign 0.5
+    xpadding 30
+    ypadding 10
+    ymargin 5
+style buy_button2_text:
+    font "trebuc.ttf"
+    min_width 600
+    text_align 0.5
+    size 30
+    idle_color "#000000"
+    hover_color "#FFFFFF"
+
+################################################################################
 
 screen Withdraw:
     tag menu2
@@ -450,7 +540,7 @@ screen MySite:
 
     frame area(221, 93, 1475, 829) background None:
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
-        vbox: # деньги и зрители
+        vbox: # деньги
             align(0.98, 0.03)
             text "$[money]" xalign(1.0) font "hermes.ttf" size 48 drop_shadow[(2, 2)]
         frame pos(0, 100) xysize (1475, 585) background None:
@@ -1143,3 +1233,7 @@ screen watermark:
                 idle "interface BBAS"
                 action OpenURL("https://www.patreon.com/aleksey90artimages")
                 at main_logo2
+
+
+screen notify_check:
+    timer .3 repeat True action Function(notify_queue)

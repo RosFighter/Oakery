@@ -175,7 +175,7 @@ init python:
             self.delivery  = delivery  # доставка через .. дней
             self.need_read = need_read # если больше нуля - признак книги. Сколько циклов чтения нужно
             self.read      = 0         # сколько раз уже прочитано
-            self.cells     = cells     # занимаемые по вериткали ячейки (1 или 2)
+            self.cells     = cells     # занимаемые по вертикали ячейки (1 или 2)
         def __repr__(self):
             return "наименование=\"{self.name}\", описание: {self.desc}, изображение: {self.img}"\
             "цена: {self.price}, в магазине {self.InShop}, имеется {self.have}, куплено {self.buy}"\
@@ -278,3 +278,24 @@ init python:
         def __init__(self):
             self.account = 0 # состояние счета
             self.invited = 0 # привлечено зрителей за счет рекламы
+
+
+    ############################################################################
+    class OnLineCource:
+        def __init__(self, header, desc, total, price, grow):
+            self.header = header  # Заголовок курса
+            self.desc   = desc    # описание курса
+            self.less   = 0       # пройдено лекций
+            self.total  = total   # всего лекций
+            self.price  = price   # цена
+            self.grow   = grow    # максимальная эффективность занятия
+            self.buy    = False   # курс приобретен
+
+
+    class OnLineCources:
+        def __init__(self, name, skill, img, cources):
+            self.name    = name     # Наименование курса (общение, массаж)
+            self.skill   = skill    # повышаемый параметр
+            self.img     = img      # префикс изображений ("soc"+"-"+индекс курса+"-"+индекс части: soc-0-0, soc-0-1...)
+            self.cources = cources  # список частей курса
+            self.current = 0        # текущая часть курса

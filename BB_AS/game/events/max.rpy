@@ -1,3 +1,9 @@
+init:
+    transform laptop_screen:
+        xpos 221, ypos 93
+        size (1475, 829)
+
+
 label StartDialog:
     $ renpy.block_rollback()
     if mgg.energy < 10:
@@ -219,9 +225,7 @@ label Laptop:
     else:
         scene BG char Max laptop-night-01
 
-    show interface laptop start page:
-        xpos 221 ypos 93
-        size (1475, 829)
+    show interface laptop start page at laptop_screen
 
     show video1_movie:
         xpos 221 ypos 93
@@ -247,9 +251,7 @@ label LaptopShop:
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
-    show interface laptop e-shop:
-        xpos 221 ypos 93
-        # size (1475, 829)
+    show interface laptop e-shop at laptop_screen
 
     $ renpy.block_rollback()
     call screen OnlineShop
@@ -263,8 +265,7 @@ label nothing_search:
 label buyfood:
     $ renpy.block_rollback()
     hide video1_movie
-    show interface laptop grocery-1:
-        xpos 221 ypos 93
+    show interface laptop grocery-1 at laptop_screen
     Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
     Max_04 "Готово. Да это же самая лёгкая задача!"
     $ spent_time = 50
@@ -275,29 +276,34 @@ label buyfood:
 
 
 label courses_start:
-    ## временно отсутствует
-    jump Laptop
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+    show interface laptop e-shop at laptop_screen
+
+    $ renpy.block_rollback()
+    call screen OnlineCources
+
+    # jump Laptop
 
 
 label create_site:
     $ renpy.block_rollback()
     hide video1_movie
-    show interface laptop cam-inf-2:
-        xpos 221 ypos 93
+    show interface laptop cam-inf-2 at laptop_screen
     menu:
         Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100"
         "Оплатить всё ($100)":
             pass
         "В другой раз...":
             jump Laptop
-    show interface laptop cam-inf-3:
-        xpos 221 ypos 93
+    show interface laptop cam-inf-3 at laptop_screen
     menu:
         Max_04 "Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом..."
         "Настроить работу сайта":
             pass
-    show interface laptop cam-inf-4:
-        xpos 221 ypos 93
+    show interface laptop cam-inf-4 at laptop_screen
     Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
     $ spent_time = 60
     $ SetPossStage("cams", 4)
@@ -314,8 +320,7 @@ label open_site:
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
-    show interface laptop CoverBBCams:
-        xpos 221 ypos 93
+    show interface laptop CoverBBCams at laptop_screen
 
     $ renpy.block_rollback()
     call screen MySite
@@ -323,14 +328,12 @@ label open_site:
 
 label about_cam:
     hide video1_movie
-    show interface laptop cam-inf-1:
-        xpos 221 ypos 93
-        size (1475, 829)
+    show interface laptop cam-inf-1 at laptop_screen
     Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
     Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
     Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
     $ items["manual"].InShop = True
-    $ renpy.notify(_("В интернет-магазине доступен новый товар."))
+    $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 20
     $ SetPossStage("cams", 2)
     jump Laptop
@@ -339,8 +342,7 @@ label about_cam:
 label about_blog:
     $ renpy.block_rollback()
     hide video1_movie
-    show interface laptop blog-inf-1:
-        xpos 221 ypos 93
+    show interface laptop blog-inf-1 at laptop_screen
     menu:
         Max_00 "Итак, попробуем что-то найти о блогах. С чего начать?"
         "Собрать статистику":
@@ -386,8 +388,7 @@ label about_blog:
 label about_secretbook:
     $ renpy.block_rollback()
     hide video1_movie
-    show interface laptop secretbook-inf-1:
-        xpos 221 ypos 93
+    show interface laptop secretbook-inf-1 at laptop_screen
     menu:
         Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
         "{i}читать о книге{/i}":
@@ -397,7 +398,7 @@ label about_secretbook:
     $ items["erobook_3"].InShop = True
     $ items["erobook_4"].InShop = True
     $ items["erobook_5"].InShop = True
-    $ renpy.notify(_("В интернет-магазине доступен новый товар."))
+    $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ SetPossStage("secretbook", 2)
     $ spent_time += 30
     jump Laptop
@@ -406,8 +407,7 @@ label about_secretbook:
 label about_spider:
     $ renpy.block_rollback()
     hide video1_movie
-    show interface laptop spider-inf-1:
-        xpos 221 ypos 93
+    show interface laptop spider-inf-1 at laptop_screen
 
     menu:
         Max_00 "Так... Пауки. Ох, сколько видов... Какие же тут водятся..."
@@ -702,7 +702,7 @@ label HideSpider:
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
     menu:
-        Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже его спрячу под одеялом, тем больше шансов на успех..."
+        Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..."
         "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}":
             scene BG char Alice spider
             Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
@@ -715,4 +715,30 @@ label HideSpider:
 
         "В другой раз...":
             pass
+    jump Waiting
+
+
+label ViewLesson:
+
+    if "06:00" <= tm < "21:00":
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+
+    $ renpy.show("interface laptop "+CurCource.img+"-"+str(CurCource.current)+"-"+str(CurCource.cources[CurCource.current].less), [laptop_screen])
+
+    if CurCource.skill == "social":
+        $ mgg.social += round(renpy.random.randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
+    elif CurCource.skill == "massage":
+        $ mgg.massage += round(renpy.random.randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
+    $ CurCource.cources[CurCource.current].less += 1
+    if CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total: # Последний урок текущейго курса
+        if CurCource.current < len(CurCource.cources):
+            $ CurCource.current += 1
+
+    $ cooldown["learn"] = CooldownTime("04:00") # час на этап чтения и 3 часа кулдаун
+    $ spent_time = 60
+    $ cur_ratio = 0.6
+    $ notify_list.append("Вы просматриваете видеоурок и повышаете свои навыки.")
+    Max_00 "{i}Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало...{/i}"
     jump Waiting

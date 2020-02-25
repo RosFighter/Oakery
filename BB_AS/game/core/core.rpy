@@ -216,3 +216,6 @@ label after_load:
         $ current_ver = "v0.02.0.000" # ставим номер версии
         # и выполняем необходимые действия с переменными или фиксы
         pass
+
+    if 'online_cources' not in globals():
+        call InitCources

@@ -16,6 +16,7 @@ label language_chooser:
 
 label start:
     show screen watermark
+    show screen notify_check
     call InitHouse
     call InitCharacters
     call InitActions
@@ -25,6 +26,7 @@ label start:
     call InitVariable
     call InitTempVar
     call InitPunish
+    call InitCources
 
     jump intro
 
