@@ -894,7 +894,7 @@ translate english strings:
 
     # game/core/03variables.rpy:325
     old "Ну как, ты подумала о моих условиях?"
-    new "Have you thought about my terms?"
+    new "So, have you thought about my terms?"
 
     # game/core/03variables.rpy:325
     old "Помочь с уроками?"
