@@ -324,6 +324,7 @@ label breakfast_first:
 
 label breakfast_2:
     $ __mood = 0
+
     Ann_07 "Всем приятного аппетита... Хотя, постойте. Вчера Лиза сходила в школу и я забыла спросить про оценки. Что-нибудь проверяли, спрашивали?"
     Lisa_09 "Ну... Так... Немного..."
     Ann_01 "Лиза, что спрашивали и что ты ответила?"
@@ -654,6 +655,18 @@ label breakfast_5:
 
 
 label breakfast:
+
+    if day > 1 and 'smoke' not in dcv:
+        ## Добавляем возможность курения Алисы
+        $ dcv['smoke'] = Daily(done=True, enabled=True)
+        $ AddSchedule(plan_alice,
+            Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "smoke", _("курит"), "house", 6, "alice_smoke", glow=105, variable="dcv['smoke'].done"),
+            Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105, variable="not dcv['smoke'].done"),
+            )
+        $ flags['smoke.request'] = None # требование при курении
+        $ flags['smoke'] = None
+        $ talk_var['smoke'] = False
+
     jump StartPunishment
 
 

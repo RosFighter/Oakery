@@ -380,9 +380,9 @@ label InitTalksEvents: # стартовая инициация диалогов 
 
     # переменные со счетчиком дней
     $ dcv = {
-        "clearpool" : Dayly(done=True, enabled=True),
-        "ordercosm" : Dayly(done=True, enabled=True),
-        "buyfood"   : Dayly(done=True, enabled=True),
+        "clearpool" : Daily(done=True, enabled=True),
+        "ordercosm" : Daily(done=True, enabled=True),
+        "buyfood"   : Daily(done=True, enabled=True),
         }
 
     # ежедневное подсматривание

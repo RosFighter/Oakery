@@ -4,61 +4,61 @@
 translate english punishment_42b2fac4:
 
     # Ann_16 "Прежде, чем мы начнём, кое-кто заслуживает наказания и сейчас все на это посмотрят..."
-    Ann_16 "Before we start, someone has earned a public punishment..."
+    Ann_16 "Before we start, I think that someone has earned a public punishment..."
 
 # game/dialogues/punishment.rpy:43
 translate english punishment_5cebd4e9:
 
     # Ann_18 "Итак, Макс, ты первый..."
-    Ann_18 ""
+    Ann_18 "So, Max, you're first..."
 
 # game/dialogues/punishment.rpy:45
 translate english punishment_f7581ae0:
 
     # Ann_18 "Макс, теперь твоя очередь..."
-    Ann_18 ""
+    Ann_18 "Max, it's your turn..."
 
 # game/dialogues/punishment.rpy:47
 translate english punishment_8ee31be2:
 
     # Ann_18 "Макс, иди сюда..."
-    Ann_18 ""
+    Ann_18 "Max, come here..."
 
 # game/dialogues/punishment.rpy:53
 translate english punishment_4d81c6a0:
 
     # Ann_18 "Так, Лиза, начнём с тебя..."
-    Ann_18 ""
+    Ann_18 "All right, Lisa, let's start with you..."
 
 # game/dialogues/punishment.rpy:55
 translate english punishment_353120e8:
 
     # Ann_18 "Теперь Лиза..."
-    Ann_18 ""
+    Ann_18 "Now Lisa..."
 
 # game/dialogues/punishment.rpy:57
 translate english punishment_6d4a5e81:
 
     # Ann_18 "Лиза, подойди-ка ко мне."
-    Ann_18 ""
+    Ann_18 "Lisa, come here."
 
 # game/dialogues/punishment.rpy:82
 translate english punishment_max_9f9d4b10:
 
     # Ann_19 "Макс! Я вынуждена отчитать тебя перед всеми, так как у нас в семье не должно быть никаких секретов."
-    Ann_19 "Max. I'm going to school you in front of everyone because we're not supposed to have secrets."
+    Ann_19 "Max. I'm going to expose you to everyone because we're not supposed to have secrets in this family."
 
 # game/dialogues/punishment.rpy:84
 translate english punishment_max_e667ce8e:
 
     # Max_10 "Я снова не виноват!"
-    Max_10 "It wasn't my fault again!"
+    Max_10 "It wasn't my fault!"
 
 # game/dialogues/punishment.rpy:85
 translate english punishment_max_88413e4c:
 
     # Ann_17 "Не виноват, значит? Снова? Кажется, ты не осознаёшь, что это последнее предупреждение и в следующий раз я тебя выпорю на глазах у сестёр. Ты меня понял? А теперь рассказывай, что натворил, чтобы все были в курсе!"
-    Ann_17 "It wasn't your fault? Again? This is your last warning, next time I'm going to spank you in front of your sisters, do you understand? Now tell everyone what you did, so everyone will know!"
+    Ann_17 "It wasn't your fault? Again? This is your last warning, next time I'm going to spank you in front of your sisters, do you understand? Now tell everyone what you did!"
 
 # game/dialogues/punishment.rpy:87
 translate english punishment_max_81902265:
@@ -70,19 +70,19 @@ translate english punishment_max_81902265:
 translate english punishment_max_21f734db:
 
     # Ann_17 "Не виноват, значит? А я думаю, что ещё как виноват. В этот раз тебе повезло, это всего лишь первое предупреждение. Надеюсь, второго не потребуется... Кстати, можешь всем рассказать, что ты натворил..."
-    Ann_17 "Not your fault? I don't think so. You're lucky it's your first warning. I hope there won't be another one. Now tell everyone what you did..."
+    Ann_17 "Not your fault? I don't think so. You're lucky this is your first warning. I hope there won't be another one. Now tell everyone what you did..."
 
 # game/dialogues/punishment.rpy:91
 translate english punishment_max_pun_reson_2be684f3:
 
     # Lisa_12 "Он видел меня голой, мам! Накажи его! Почему он отделывается только предупреждением? Пусть получит, что заслужил!"
-    Lisa_12 "He saw me naked, mom! Punish him! Why does he gets a warning? Give him what he deserves!"
+    Lisa_12 "He saw me naked, mom! Punish him! Why does he only get a warning? Give him what he deserves!"
 
 # game/dialogues/punishment.rpy:93
 translate english punishment_max_pun_reson_bd61ea84:
 
     # Max_11 "Да ничего я не заслужил!"
-    Max_11 "I don't deserve any punishment!"
+    Max_11 "I don't deserve this punishment!"
 
 # game/dialogues/punishment.rpy:95
 translate english punishment_max_pun_reson_f80ba00d:
@@ -100,7 +100,7 @@ translate english punishment_max_pun_reson_638d9e56:
 translate english punishment_max_pun_reson_42d1fc27:
 
     # Ann_14 "Очень хочу надеяться, что это было случайно. Тем не менее, ты пойман и как я уже сказала, получаешь предупреждение."
-    Ann_14 "I hope it was an accident, but you were caught so you get a warning."
+    Ann_14 "I hope it was an accident, you'll only get a warning for now."
 
 # game/dialogues/punishment.rpy:101
 translate english punishment_max_pun_reson_cc5c3e8d:
@@ -124,7 +124,7 @@ translate english punishment_max_pun_reson_0bb98aec:
 translate english punishment_max_pun_reson_021885f4:
 
     # Alice_16 "Случайно? Мам! Он всё врёт! Он подглядывал и, может быть, даже паука подбросил! А ты знаешь, как я боюсь пауков..."
-    Alice_16 "He's lying, mom! He was peeping on me and maybe he even threw a spider at me! You know how I'm afraid of spiders..."
+    Alice_16 "He's lying, mom! He was peeping on me and maybe even threw a spider at me! You know how I'm scared of spiders..."
 
 # game/dialogues/punishment.rpy:109
 translate english punishment_max_pun_reson_a3ff079a:
@@ -136,19 +136,19 @@ translate english punishment_max_pun_reson_a3ff079a:
 translate english punishment_max_pun_reson_30245a80:
 
     # Ann_18 "Ты не закончил, Макс. Продолжай..."
-    Ann_18 ""
+    Ann_18 "You're not finished, Max. Go on..."
 
 # game/dialogues/punishment.rpy:115
 translate english punishment_max_pun_reson_87470955:
 
     # Ann_18 "Дальше, Макс, мы тебя внимательно слушаем..."
-    Ann_18 ""
+    Ann_18 "Next, Max, we're listening to you carefully..."
 
 # game/dialogues/punishment.rpy:117
 translate english punishment_max_pun_reson_46046423:
 
     # Ann_18 "А ты про кое-что ещё не забыл?"
-    Ann_18 ""
+    Ann_18 "You haven't forgotten anything else?"
 
 # game/dialogues/punishment.rpy:119
 translate english punishment_max_pun_reson_33837bf7:
@@ -172,13 +172,13 @@ translate english punishment_max_pun_reson_c9c8162f:
 translate english punishment_max_pun_reson_bf38fe93:
 
     # Ann_16 "Макс! Сейчас ты будешь наказан, сам знаешь за что!" nointeract
-    Ann_16 "Max! You're going to be punished, you know for what." nointeract
+    Ann_16 "Max! You're going to be punished, you know what for." nointeract
 
 # game/dialogues/punishment.rpy:132
 translate english punishment_max_pun_reson_7d4fc589:
 
     # Ann_14 "Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
-    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nCircumstances are against you, Max, but I'm willing to believe you. I hope I won't regret this decision."
+    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nThe circumstances are against you, but I'm willing to believe you. I hope I don't regret this decision."
 
 # game/dialogues/punishment.rpy:133
 translate english punishment_max_pun_reson_dbaef78e:
@@ -190,13 +190,13 @@ translate english punishment_max_pun_reson_dbaef78e:
 translate english punishment_max_pun_reson_4adc0b27:
 
     # Ann_19 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nВот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!tq] и ложись на мои колени. Надеюсь, ты сегодня в трусах..." nointeract
-    Ann_19 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nJust like that? We're supposed to just forget everything? No, Max, not this time. Take down your [_text!tq] and get on my knees. I hove you're wearing underwear today..." nointeract
+    Ann_19 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nJust like that? We're supposed to just forget everything? No, Max, not this time. Take down your [_text!tq] and get on my knees. I hope you're wearing underwear today..." nointeract
 
 # game/dialogues/punishment.rpy:147
 translate english punishment_max_pun_reson_831f2da1:
 
     # Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
-    Ann_16 ""
+    Ann_16 "Max has several weak spots... He knows them very well, but I'm not going to list them. Now he's gonna get it all at once!"
 
 # game/dialogues/punishment.rpy:157
 translate english punishment_max_pun_reson_36433c39:
@@ -208,7 +208,7 @@ translate english punishment_max_pun_reson_36433c39:
 translate english punishment_max_pun_reson_219ecbe7:
 
     # Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Mom is punishing me in front of everyone... This is so humiliating...{/i}\n\n{color=[orange]}{b}Warning:{/b} Your influence on the audience present decreased.{/color}"
+    Max_14 "{i}Mom is punishing me in front of everyone... This is so humiliating...{/i}\n\n{color=[orange]}{b}Warning:{/b} Your influence on your family has decreased.{/color}"
 
 # game/dialogues/punishment.rpy:172
 translate english punishment_max_pun_reson_700a2ea3:
@@ -232,43 +232,43 @@ translate english punishment_lisa_621d0e98:
 translate english punishment_lisa_f1ea86d0:
 
     # Max_08 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
-    Max_08 ""
+    Max_08 "Mom, you don't have to punish Lisa. She really tried, I saw it. I'm gonna help her get her grades up."
 
 # game/dialogues/punishment.rpy:204
 translate english punishment_lisa_0fa8acfd:
 
     # Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 ""
+    Ann_12 "No, Max, don't even try to talk me out of it. Lisa, don't just stand there, come here..."
 
 # game/dialogues/punishment.rpy:207
 translate english punishment_lisa_a37388ce:
 
     # Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
-    Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n"
+    Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, I won't punish her this time. I hope I don't regret my decision... And Lisa, you should thank your brother. You'd best learn from your mistakes, because I won't be so forgiving next time..."
 
 # game/dialogues/punishment.rpy:208
 translate english punishment_lisa_6d672e8d:
 
     # Lisa_02 "Спасибо тебе, Макс!"
-    Lisa_02 ""
+    Lisa_02 "Oh, thank you, Max!"
 
 # game/dialogues/punishment.rpy:213
 translate english punishment_lisa_c8c76e1b:
 
     # Ann_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\n"
+    Ann_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, your persuasion won't help her. She will get what she deserves. Lisa, don't just stand there, come on..."
 
 # game/dialogues/punishment.rpy:218
 translate english punishment_lisa_8b6bc93a:
 
     # Lisa_10 "Мам... Я не специально... Просто, задание было сложное..."
-    Lisa_10 "I didn't do it on purpose, mom... The homework was too complicated..."
+    Lisa_10 "I didn't do it on purpose, mom... The homework was too hard..."
 
 # game/dialogues/punishment.rpy:223
 translate english punishment_lisa_40e57089:
 
     # Ann_14 "Сложное? У тебя была куча времени, чтобы подготовиться! Сидишь в своём телефоне вечно вместо того, чтобы учиться. [_text!tq]"
-    Ann_14 "You had plenty of time to do everything properly! You just sit if your phone instead of doing your homework all the time. [_text!tq]"
+    Ann_14 "You had plenty of time to do everything properly! You just sit on your phone all the time instead of doing your homework!. [_text!tq]"
 
 # game/dialogues/punishment.rpy:230
 translate english punishment_lisa_f6c5de6b:
@@ -286,37 +286,37 @@ translate english punishment_lisa_7adf83e9:
 translate english punishment_lisa_f1ea86d0_1:
 
     # Max_08 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
-    Max_08 ""
+    Max_08 "Mom, you don't have to punish Lisa. She really tried, I saw it. I'm gonna help her get her grades up."
 
 # game/dialogues/punishment.rpy:238
 translate english punishment_lisa_0fa8acfd_1:
 
     # Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 ""
+    Ann_12 "No, Max, don't even try to talk me out of it. Lisa, don't just stand there, come here..."
 
 # game/dialogues/punishment.rpy:241
 translate english punishment_lisa_25ca4b5c:
 
     # Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, можешь одеваться. Скажи спасибо Максу, что сегодня осталась безнаказанной. Но не думай, что я всегда буду такой доброй..."
-    Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n"
+    Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, I'm not gonna punish her this time. I hope I don't regret my decision... And you, Lisa, can get dressed. Say thank you to Max for saving you today. But don't think I'll always be so kind..."
 
 # game/dialogues/punishment.rpy:242
 translate english punishment_lisa_6d672e8d_1:
 
     # Lisa_02 "Спасибо тебе, Макс!"
-    Lisa_02 ""
+    Lisa_02 "Oh, thank you, Max!"
 
 # game/dialogues/punishment.rpy:247
 translate english punishment_lisa_c8c76e1b_1:
 
     # Ann_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\n"
+    Ann_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, your persuasion won't help her. She will get what she deserves. Lisa, don't just stand there, come on..."
 
 # game/dialogues/punishment.rpy:261
 translate english punishment_lisa_81192a03:
 
     # Lisa_09 "Ма-ам, я больше не буду... Ай... В смысле, буду лучше учиться. Извини..."
-    Lisa_09 ""
+    Lisa_09 "Mo-om, I won't be... Ouch... I mean, I'll try harder. I'm sorry..."
 
 # game/dialogues/punishment.rpy:276
 translate english punishment_lisa_484409fe:
@@ -328,7 +328,7 @@ translate english punishment_lisa_484409fe:
 translate english punishment_lisa_d5d2561c:
 
     # Ann_12 "Лиза, надеюсь, ты извлекла урок из этого наказания и больше это не повторится. А теперь одевайся!"
-    Ann_12 ""
+    Ann_12 "Lisa, I hope you learned a lesson from this punishment and it won't happen again. Now get dressed!"
 
 translate english strings:
 
@@ -354,39 +354,39 @@ translate english strings:
 
     # game/dialogues/punishment.rpy:141
     old "{i}снять штаны{/i}"
-    new "{i}take down pants{/i}"
+    new "{i}Take off pants{/i}"
 
     # game/dialogues/punishment.rpy:149
     old "Если вы не в курсе, Макс будет наказан за то, что подглядывал за Лизой. Я уже предупреждала, что не люблю, когда кто-то нарушает личное пространство..."
-    new "In case someone doesn't know, Max is going to be punished for peeping on Lisa. I warned you to respect people's privacy..."
+    new "In case anyone wasn't aware, Max is going to be punished for peeping on Lisa. I warned you to respect people's privacy..."
 
     # game/dialogues/punishment.rpy:149
     old "Если вы не в курсе, Макс будет наказан за то, что подглядывал за Алисой. Я уже предупреждала, что не люблю, когда кто-то нарушает личное пространство..."
-    new "In case someone doesn't know, Max is going to be punished for peeping on Alice. I warned you to respect people's privacy..."
+    new "In case anyone wasn't aware, Max is going to be punished for peeping on Alice. I warned you to respect people's privacy..."
 
     # game/dialogues/punishment.rpy:149
     old "Если вы не в курсе, Макс будет наказан за то, что подглядывал за мной. Я уже предупреждала, что не люблю, когда кто-то нарушает личное пространство..."
-    new "In case someone doesn't know, Max is going to be punished for peeping on me. I warned you to respect people's privacy..."
+    new "In case anyone wasn't aware, Max is going to be punished for peeping on me. I warned you to respect people's privacy..."
 
     # game/dialogues/punishment.rpy:149
     old "Если вы не в курсе, Макс будет наказан за то, что подглядывал за мной... с Эриком. Я уже предупреждала, что такое недопустимо!"
-    new "In case someone doesn't know, Max is going to be punished for peeping on Eric and me. I warned you to respect people's privacy."
+    new "In case anyone wasn't aware, Max is going to be punished for peeping on Eric and I. I warned you to respect people's privacy."
 
     # game/dialogues/punishment.rpy:149
     old "Если вы не в курсе, Макс будет наказан за своё отвратительное поведение. Надеюсь, теперь ты будешь хорошенько думать о том, что делаешь и что говоришь!"
-    new "In case someone doesn't know, Max is going to be punished for a horrible behavior. I hope you're going to think about what you do and say."
+    new "In case anyone wasn't aware, Max is going to be punished for horrible behavior. I hope you're going to think about what you say after this."
 
     # game/dialogues/punishment.rpy:149
     old "Если вы не в курсе, Макс будет наказан за то, что подглядывал за Алисой в душе и, возможно, даже подбросил туда паука. Ты знаешь, что такое я не потерплю!"
-    new "In case someone doesn't know, Max is going to be punished for peeping on Alice in the shower and possibly throwing a spider on her. I warned you, this is unacceptable behavior."
+    new "In case anyone wasn't aware, Max is going to be punished for peeping on Alice in the shower and possibly throwing a spider on her. I warned you, this is unacceptable behavior."
 
     # game/dialogues/punishment.rpy:189
     old "Ближе подходи, Лиза. И да, снимай штаны, ты заслужила!"
-    new ""
+    new "Come closer, Lisa. And yes, take off your pants, you deserve it!"
 
     # game/dialogues/punishment.rpy:191
     old "Ближе подходи, Лиза. И да, снимай свой халат, ты заслужила!"
-    new ""
+    new "Come closer, Lisa. And yes, take off your robe, you deserve it!"
 
     # game/dialogues/punishment.rpy:198
     old "{i}Заступиться за Лизу {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}"
@@ -394,23 +394,23 @@ translate english strings:
 
     # game/dialogues/punishment.rpy:220
     old "Быстро снимай штаны!"
-    new ""
+    new "Take your pants off now!"
 
     # game/dialogues/punishment.rpy:222
     old "Быстро снимай халат!"
-    new ""
+    new "Take off your robe now!"
 
     # game/dialogues/punishment.rpy:227
     old "Теперь ложись, и побыстрее, все есть хотят..."
-    new ""
+    new "Now lie down, and hurry up, everyone's hungry..."
 
     # game/dialogues/punishment.rpy:267
     old "Говоришь тебе, говоришь, все как об стенку горох..."
-    new ""
+    new "Telling you, it's like a wall of peas..."
 
     # game/dialogues/punishment.rpy:273
     old "Поразительно! Тебе даже Макс помогает, а ты двойки хватаешь!"
-    new "You even getting help from Max and you still failing!"
+    new "You're even getting help from Max and you still find a way to fail!"
 
 # TODO: Translation updated at 2020-02-14 13:13
 
@@ -418,9 +418,9 @@ translate english strings:
 
     # game/dialogues/punishment.rpy:138
     old "штаны"
-    new ""
+    new "pants"
 
     # game/dialogues/punishment.rpy:140
     old "шорты"
-    new ""
+    new "shorts"
 

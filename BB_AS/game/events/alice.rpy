@@ -570,3 +570,31 @@ label spider_in_bed:
                 $ SpiderKill = 2
                 $ SpiderResp = 3
                 return
+
+
+label alice_smoke:
+
+    scene BG char Alice smoke
+    $ renpy.show("Alice smoke "+pose3_3+chars["alice"].dress)
+
+    if talk_var['smoke']:
+        return
+
+    $ talk_var['smoke'] = True
+
+    if dcv['smoke'].done:
+        if dcv['smoke'].stage == 0:
+            # первый разговор про курение
+            jump first_talk_smoke
+        elif dcv['smoke'].stage == 1:
+            # второй разговор про курение
+            jump second_talk_smoke
+        else:
+            if flags['smoke'] is None:
+                pass
+            elif flags['smoke'] == "toples":
+                pass
+            elif flags['smoke'] == "nopants":
+                pass
+
+    return

@@ -148,6 +148,7 @@ screen LaptopScreen():
     modal True
 
     use PowerButton
+    use notify_check
 
     $ bookmarks = 2
     if dcv["buyfood"].stage == 1:
@@ -632,6 +633,9 @@ screen room_navigation():
 
     tag menu
     modal True
+
+    use notify_check
+
     key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
     key "K_F8" action QuickLoad()
     if _preferences.language is None:

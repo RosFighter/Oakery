@@ -67,7 +67,6 @@ label Ann_normalmood:
             jump Waiting
 
 
-
 label Ann_cooldown:
     Ann_18 "Макс, давай сменим тему..."
     Max_00 "Ок, мам..."
@@ -227,3 +226,151 @@ label Ann_MorningWood:
     $ flags["morning_erect"] = 2
     $ spent_time = 20
     jump Waiting
+
+
+label talk_about_smoking:
+    $ renpy.block_rollback()
+    $ __mood = 0
+
+    scene BG char Max talk-terrace-00
+    show Max talk-terrace 01a
+    $ renpy.show("Ann talk-terrace 01"+chars["ann"].dress)
+    menu:
+        Ann_12 "Макс. Я не уверена, но мне кажется, что чувствую запах сигаретного дыма. К нам кто-то приходил?"
+        "Нет, никого не было...":
+            pass
+        "Может быть, показалось?":
+            pass
+        "Да это просто Алиса курила!":
+            show Max talk-terrace 02a
+            $ renpy.show("Ann talk-terrace 02"+chars["ann"].dress)
+            jump .smoke
+    menu:
+        Ann_00 "Точно? Макс, ты ничего не хочешь рассказать?"
+        "Нет, мам, нечего рассказывать":
+            Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
+            $ SetPossStage('smoke', 2)
+            hide Ann
+            show Alice talk-terrace 02a
+            menu:
+                Alice_03 "Спасибо, Макс, что не сдал меня... Я это ценю."
+                "Всегда пожалуйста, сестрёнка!":
+                    show Max talk-terrace 03a
+                    Alice_05 "Вот можешь же быть не полным придурком... иногда..."
+                    Max_01 "Ага. Ладно, давай ужинать"
+                    $ AddRelMood('alice', 20, 100)
+                    jump StartPunishment
+                "Может, ещё сдам...":
+                    show Max talk-terrace 02a
+                    show Alice talk-terrace 03a
+                    menu:
+                        Alice_16 "Макс! Ты невыносим. Я уже подумала, что ты нормальный брат, а ты..."
+                        "Да я пошутил...":
+                            jump .joke
+                        "Извини...":
+                            jump .sorry
+                        "Всё в твоих руках...":
+                            jump .sorry
+                "Если сделаешь кое-что, то и не сдам...":
+                    show Max talk-terrace 02a
+                    show Alice talk-terrace 03a
+                    menu:
+                        Alice_13 "Макс! Опять ты за своё? Не будь придурком!"
+                        "Да я пошутил...":
+                            jump .joke
+                        "Извини...":
+                            jump .sorry
+                        "Всё в твоих руках...":
+                            jump .sorry
+
+        "Вообще-то, Алиса курила...":
+            show Max talk-terrace 02a
+            $ renpy.show("Ann talk-terrace 02"+chars["ann"].dress)
+            jump .smoke
+
+    label .joke:
+        show Max talk-terrace 03a
+        show Alice talk-terrace 02a
+        Alice_12 "Шутник... В общем, я надеюсь, что с этим вопросом разобрались. Уже пора ужинать"
+        Max_01 "Ага, пора."
+        jump StartPunishment
+
+    label .sorry:
+        show Max talk-terrace 03a
+        show Alice talk-terrace 02a
+        Alice_13 "Макс... А, ничего не буду говорить, бесполезно. Давай ужинать..."
+        Max_01 "Ага, давай."
+        jump StartPunishment
+
+    menu .smoke:
+        Ann_13 "Что?! Ты уверен?"
+        "Да, но ей не говори, что это я её сдал!":
+            show Max talk-terrace 01a
+        "Абсолютно. Сам видел. Днём курила у бассейна!":
+            show Max talk-terrace 03a
+        "Может быть, мне показалось...":
+            pass
+    $ SetPossStage('smoke', 1)
+    menu:
+        Ann_20 "Алиса! Иди сюда, бегом!"
+        "Мам, ну не так же...":
+            pass
+        "Мам, меня не сдавай...":
+            pass
+    show Alice talk-terrace 01a
+    Alice_13 "Что случилось, мам?"
+    Ann_19 "Что случилось?! Не притворяйся тут невинной овечкой! Макс говорит, что видел, как ты курила!"
+    show Max talk-terrace 02a
+    Max_14 "Ну..."
+
+    if flags['smoke.request'] == "money":
+        $ __mood -= 300
+        Alice_17 "Ну и придурок же ты, Макс! Мы же договорились, а ты..."
+        Max_09 "Я передумал..."
+    else:
+        $ __mood -= 200
+        Alice_17 "Ну и придурок же ты, Макс! Стукач!"
+        Max_09 "Сама виновата..."
+
+    Ann_12 "Так, всё, Алиса, сейчас я тебя накажу! Снимай свои джинсы!"
+    scene BG punish-evening 01
+    show Alice punish-evening 01a
+    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+    Max_07 "Ого..."
+    Alice_12 "Что?! Я уже взрослая! Могу делать что хочу, даже курить!"
+    Max_08 "Ой, плохой ответ..."
+    Ann_19 "Взрослая? С каких пор? Пока ты живёшь со мной под одной крышей, ты моя дочь! Без разговоров, быстро снимай и ложись на мои колени!"
+    show Alice punish-evening 02a
+    Alice_13 "Мам, но тут же Макс... Что, прямо при нём будешь? Пусть он уйдёт!"
+    Ann_18 "Нет, Алиса, пусть смотрит. Это ждёт любого, кто меня разозлит. Быстро ложись на мои колени, кому сказала!"
+    scene BG punish-evening 02
+    $ renpy.show("Ann punish-evening alice-01"+chars["ann"].dress)
+    Alice_13 "Ладно... Только не больно, чтобы, ладно? Ай! Ма-ам!"
+    Ann_16 "Давай не мамкай тут! Ты знаешь, что я ненавижу сигареты и мои дети точно курить не будут. Особенно, в моём доме, ясно?!"
+    $ renpy.show("Ann punish-evening alice-02"+chars["ann"].dress)
+    Alice_13 "Да, ясно, мам... Ай! Я всё поняла! Я больше не буду!"
+    scene BG punish-evening 01
+    show Alice punish-evening 03a
+    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+    Ann_12 "Очень на это надеюсь. Так, теперь надевай штаны и садимся ужинать."
+    scene BG char Max talk-terrace-00
+    show Max talk-terrace 01a
+    show Alice talk-terrace 03a
+    menu:
+        Alice_17 "Ну ты и гад, Макс. Доволен? Ну теперь держись..."
+        "Извини, я не хотел, чтобы так...":
+            show Max talk-terrace 03a
+            $ __mood += 50
+            menu:
+                Alice_16 "Не хочу тебя больше видеть. Жаль, что придётся..."
+                "{i}начать ужин{/i}":
+                    pass
+        "И что ты сделаешь? Я тебя не боюсь!":
+            show Max talk-terrace 04a
+            menu:
+                Alice_16 "Я не буду тебе ничего говорить, сам всё поймёшь в своё время. Карма штука жестокая, но справедливая..."
+                "{i}начать ужин{/i}":
+                    pass
+    $ AddSchedule(plan_alice, Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
+    $ AddRelMood('alice', -10, __mood)
+    jump StartPunishment

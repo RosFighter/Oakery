@@ -894,9 +894,49 @@ translate english strings:
 
     # game/core/03variables.rpy:325
     old "Ну как, ты подумала о моих условиях?"
-    new "Have you thought about my terms?"
+    new "So, have you thought about my terms?"
 
     # game/core/03variables.rpy:325
     old "Помочь с уроками?"
     new "Do you want some help with your homework?"
+
+# TODO: Translation updated at 2020-03-02 23:40
+
+translate english strings:
+
+    # game/core/03variables.rpy:145
+    old "БРОСИТЬ\nПАУКА"
+    new "THROW\nSPIDER"
+
+    # game/core/03variables.rpy:145
+    old "ИСКАТЬ\nПАУКОВ"
+    new "LOOK FOR\nSPIDERS"
+
+    # game/core/03variables.rpy:409
+    old "Общение"
+    new "Communication"
+
+    # game/core/03variables.rpy:409
+    old "Навыки общения: Чувства человека"
+    new "Communication skills: Human's senses"
+
+    # game/core/03variables.rpy:409
+    old "Это базовый курс обучения навыкам общения и содержит в себе основную информацию об органах чувств, о реакции человека на ваши слова, а также основы языка тела."
+    new "This course will teach you basic communication skill and contains info about senses, humans reactions to your words, and basic body language."
+
+    # game/core/03variables.rpy:409
+    old "Навыки общения: Основы коммуникации"
+    new "Communication skills: Communication basics"
+
+    # game/core/03variables.rpy:409
+    old "Это второй курс обучения навыкам общения. Из него вы узнаете как повлиять на решение человека без слов, как подобрать правильный слова в нужной ситуации для достижения своей цели."
+    new "This is the second course that will teach you communication skills. You’ll find out how you can affect people’s decisions without words and how to properly phrase questions and statements in important situations for reaching your goal."
+
+    # game/core/03variables.rpy:409
+    old "Навыки общения: Без границ"
+    new "Communication skills: No limits"
+
+    # game/core/03variables.rpy:409
+    old "Это продвинутый длительный курс, предназначенный для тех, кто хочет постоянно обучаться и совершенствоваться. На данный момент это последний доступный курс."
+    new "This is an advanced long-term course for those who want to learn and self-improve. Currently it’s the last available course."
 

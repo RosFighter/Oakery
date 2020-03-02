@@ -746,3 +746,39 @@ translate english strings:
     old "Так, топовые комменты все сводятся к одному. Не может быть?"
     new "Thus, the top comments come down to one thing. Impossible?"
 
+# TODO: Translation updated at 2020-03-02 23:40
+
+# game/events/max.rpy:694
+translate english HideSpider_59b81ead:
+
+    # Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
+    Max_00 ""
+
+# game/events/max.rpy:699
+translate english HideSpider_14a01e28:
+
+    # Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..." nointeract
+    Max_00 "" nointeract
+
+# game/events/max.rpy:703
+translate english HideSpider_dbcd96db:
+
+    # Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
+    Max_00 ""
+
+# game/events/max.rpy:738
+translate english ViewLesson_4bfad0d0:
+
+    # Max_00 "{i}Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало...{/i}"
+    Max_00 ""
+
+translate english strings:
+
+    # game/events/max.rpy:673
+    old "{i}искать... {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
+    new ""
+
+    # game/events/max.rpy:699
+    old "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
+    new ""
+

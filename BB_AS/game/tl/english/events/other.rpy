@@ -502,3 +502,11 @@ translate english strings:
     old "Нормально себя веду..."
     new "I behave fine..."
 
+# TODO: Translation updated at 2020-03-02 23:40
+
+# game/events/other.rpy:248
+translate english night_of_fun_cae91685:
+
+    # Max_19 "Теперь можно спокойно спать и ничего больше..."
+    Max_19 ""
+

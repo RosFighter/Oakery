@@ -217,7 +217,7 @@ init python:
 
 
     ############################################################################
-    class Dayly:
+    class Daily:
         def __init__(self, lost=0, done=False, enabled=False):
             self.lost    = lost     # осталось дней до срабатываения события
             self.enabled = enabled  # дейлик активен, нужно ежедневно убавлять счетчик до 0

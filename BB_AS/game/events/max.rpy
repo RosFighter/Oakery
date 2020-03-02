@@ -393,12 +393,7 @@ label about_secretbook:
         Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
         "{i}читать о книге{/i}":
             Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
-    $ items["erobook_1"].InShop = True
-    $ items["erobook_2"].InShop = True
-    $ items["erobook_3"].InShop = True
-    $ items["erobook_4"].InShop = True
-    $ items["erobook_5"].InShop = True
-    $ notify_list.append(_("В интернет-магазине доступен новый товар."))
+    $ dcv['secretbook'] = Daily(4, False, True) # Покупка первой книги возможна через четыре дня.
     $ SetPossStage("secretbook", 2)
     $ spent_time += 30
     jump Laptop

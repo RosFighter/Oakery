@@ -1982,25 +1982,25 @@ translate english MorningWood_981dc250:
 translate english Lisa_sg1_eb6c0fa7:
 
     # Lisa_00 "Да, что насчёт успеваемости? Позлорадствовать пришёл или помочь хочешь?" nointeract
-    Lisa_00 "What about them? Did you come here to gloat or do you want to help?" nointeract
+    Lisa_00 "Yeah what about them? Did you come here to make fun of me or do you want to help?" nointeract
 
 # game/dialogues/lisatalk.rpy:810
 translate english Lisa_sg1_29fca26f:
 
     # Lisa_02 "Ну, я рада, если так. У меня не очень хороши дела с математикой и анатомией. У нас её просто не было. Должна была быть, но учитель всё время болел и я так толком и не разобралась в теме..." nointeract
-    Lisa_02 "I'm glad to hear that. I am having problems with math and anatomy. I pretty much never had these classes in my previous school. I should have had them, but the teacher was always sick, so I never really learned anything..." nointeract
+    Lisa_02 "Well, I'm glad if you are. I'm really struggling with math and anatomy. I just didn't really pay attention at my old school, and my teacher was always sick!" nointeract
 
 # game/dialogues/lisatalk.rpy:817
 translate english Lisa_sg1_a685c7da:
 
     # Lisa_02 "Дела у меня отлично. Если ты об уроках, то всё хорошо кроме математики и анатомии. В прошлой школе не очень повезло с учителем, он всё время болел и я мало чего поняла..." nointeract
-    Lisa_02 "I'm great. If you're asking about my grades, then I am having problems with math and anatomy. The teacher from the last school was sick all the time, so I missed out a lot of information..." nointeract
+    Lisa_02 "I'm doing great. About my classes, everything's fine except math and anatomy. The teachers at my old school were sick all the time so I never really paid attention..." nointeract
 
 # game/dialogues/lisatalk.rpy:824
 translate english Lisa_sg1_help_44f0ef71:
 
     # Lisa_02 "Это же здорово! Точно... Ты уже неоднократно говорил, что тебя выгнали не за знания. Значит, ты мне поможешь, правда?" nointeract
-    Lisa_02 "That's great! You said you weren't expelled for the lack of knowledge. So, will you help me?" nointeract
+    Lisa_02 "That's great! Oh, yeah... You've said before that you weren't kicked out for bad grades. So you'll help me, right?" nointeract
 
 # game/dialogues/lisatalk.rpy:827
 translate english Lisa_sg1_help_e816701b:
@@ -2012,7 +2012,7 @@ translate english Lisa_sg1_help_e816701b:
 translate english Lisa_sg1_nothing_4abf0225:
 
     # Lisa_03 "Макс, я тебя обожаю! Спасибо! Сегодня мне помощь не нужна, а вот в следующий раз походи, когда делаю уроки, я найду тебе занятие!"
-    Lisa_03 "Thank you so much, Max! I don't need any help today, but you can ask me next time I'm doing my homework!"
+    Lisa_03 "Thank you so much, Max! I don't need any help today, but you can come by next time I'm doing homework!"
 
 # game/dialogues/lisatalk.rpy:838
 translate english Lisa_sg1_nothing_bf34badd:
@@ -2030,7 +2030,7 @@ translate english Lisa_sg1_maybe_2a33fdf4:
 translate english Lisa_sg1_maybe_1cc7fa1a:
 
     # Lisa_09 "А я думала, что поможешь своей младшей сестрёнке избежать сурового наказания строгой мамы... А ты..." nointeract
-    Lisa_09 "I was hoping you'd help your younger sister so she won't be severely punished, and you..." nointeract
+    Lisa_09 "I thought you were gonna help your little sister avoid the harsh punishment of her strict mom...and you..." nointeract
 
 # game/dialogues/lisatalk.rpy:860
 translate english Lisa_sg1_maybe_fa7c0c4b:
@@ -2048,7 +2048,7 @@ translate english Lisa_sg1_maybe_f8d7c12f:
 translate english Lisa_sg1_maybe_8f214f47:
 
     # Lisa_12 "Ты на что-то намекаешь, Макс? Я не понимаю..."
-    Lisa_12 "What are you talking about, Max? I don't understand..."
+    Lisa_12 "What are you talking about? I don't understand..."
 
 # game/dialogues/lisatalk.rpy:863
 translate english Lisa_sg1_maybe_cd615196:
@@ -2078,13 +2078,13 @@ translate english Lisa_sg1_maybe_a98adf50:
 translate english Lisa_sg1_maybe_abe46492:
 
     # Max_00 "Ну если вопрос так стоит, то конечно буду помогать просто так!"
-    Max_00 "Well, if you say it like this, I'll help you free of charge!"
+    Max_00 "Well, if you say it like that, I'll help you free of charge!"
 
 # game/dialogues/lisatalk.rpy:871
 translate english Lisa_sg1_maybe_b79dc385:
 
     # Max_03 "Например, я попрошу тебя спать без твоих штанов, в трусиках..."
-    Max_03 "I want you to sleep without your pants, just in your underwear..."
+    Max_03 "For example, I want you to sleep without your pants, just in your panties..."
 
 # game/dialogues/lisatalk.rpy:872
 translate english Lisa_sg1_maybe_4ba344a8:
@@ -2096,13 +2096,13 @@ translate english Lisa_sg1_maybe_4ba344a8:
 translate english Lisa_sg1_maybe_967077a2:
 
     # Max_09 "Ну, решай сама. Тебя мама по джинсам отшлёпала, а представь как будет по голой заднице?"
-    Max_09 "Well, it's your choice. Did you liked how mom spanked you in jeans? Now imagine how it's going to feel without them"
+    Max_09 "Well, it's your choice. Did you like how mom spanked you while you had your jeans on? Now imagine how it's going to feel without them"
 
 # game/dialogues/lisatalk.rpy:875
 translate english Lisa_sg1_maybe_811bdec1:
 
     # Lisa_10 "Было больно... Ладно. Всё равно мне жарко в штанах спать. А ты, Макс, гад. Я думала, что мы друзья, а ты... ещё и извращенец..."
-    Lisa_10 "Yeah... Fine. My pajama pants are too hot anyway. You're a jerk, Max. I though we were friends, and you... Are on top it all you're also a pervert..."
+    Lisa_10 "Oh... Fine. My pajama pants are too hot anyway. You're a jerk, Max. I though we were friends, and you... on top it all are also a pervert..."
 
 # game/dialogues/lisatalk.rpy:876
 translate english Lisa_sg1_maybe_170e1299:
@@ -2114,7 +2114,7 @@ translate english Lisa_sg1_maybe_170e1299:
 translate english Lisa_sg1_maybe_d7f48f29:
 
     # Lisa_00 "Если не будешь помогать, то я маме всё расскажу и посмотрим, кого накажут. Всё, мы закончили."
-    Lisa_00 "If you won't help me, I'll tell mom and we'll see who's going to get punished."
+    Lisa_00 "If you won't help me, I'll tell Mom and we'll see who's going to get punished."
 
 # game/dialogues/lisatalk.rpy:878
 translate english Lisa_sg1_maybe_c3b2994a:
@@ -2126,7 +2126,7 @@ translate english Lisa_sg1_maybe_c3b2994a:
 translate english Lisa_sg1_maybe_9cce480b:
 
     # Max_07 "Ну, решай сама. Мама если отшлёпает, будет очень очень больно. А так ты ничего не теряешь..."
-    Max_07 "Well, it's your choice. You'll regret your decision when mom will spank you next time. But if you'll agree you don't lose anything..."
+    Max_07 "Well, it's your choice. You'll regret your decision when Mom spanks you next time. But if you agree, you don't lose anything..."
 
 # game/dialogues/lisatalk.rpy:885
 translate english Lisa_sg1_maybe_f4df23a2:
@@ -2156,13 +2156,13 @@ translate english Lisa_sg2_9315363a:
 translate english Lisa_sg2_d20cc8fb:
 
     # Lisa_10 "Ладно, я согласна. Очень больно было. Так чего ты хочешь?"
-    Lisa_10 "Fine, I agree. Mom's punishments are too painful. What did you asked for again?"
+    Lisa_10 "Fine, I agree. Mom's punishments are too painful. What did you ask for again?"
 
 # game/dialogues/lisatalk.rpy:899
 translate english Lisa_sg2_7ab6791f:
 
     # Max_01 "Ну для начала я бы хотел, чтобы ты спала в трусиках, без штанов..."
-    Max_01 "I want to sleep without your pajama pants..."
+    Max_01 "I want to start sleeping without your pants..."
 
 # game/dialogues/lisatalk.rpy:900
 translate english Lisa_sg2_3bb41a82:
@@ -2186,7 +2186,7 @@ translate english Lisa_sg2_c90b454f:
 translate english Lisa_sg2_157c3cd3:
 
     # Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
-    Lisa_10 "I don't have much of a choice... And sleeping in pants is too hot anyway... Yeah, I agree. But from now on you're going to help me with homework!"
+    Lisa_10 "I don't have much of a choice... And sleeping in my pants is too hot anyway... Yeah, I agree. But from now on you're going to help me with homework!"
 
 # game/dialogues/lisatalk.rpy:908
 translate english Lisa_sg2_4de7c9e3:
@@ -2264,7 +2264,7 @@ translate english Lisa_HomeWork_show_breast_c693cd50:
 translate english Lisa_HomeWork_show_breast_5bbf7fe6:
 
     # Lisa_01 "Ну все, полюбовался и хватит, а теперь сделай работу на отлично!"
-    Lisa_01 ""
+    Lisa_01 "That's enough, now you better do a good job!"
 
 # game/dialogues/lisatalk.rpy:981
 translate english Lisa_HomeWork_show_breast_eb1cb0cd:
@@ -2276,7 +2276,7 @@ translate english Lisa_HomeWork_show_breast_eb1cb0cd:
 translate english Lisa_HomeWork_show_breast_0910a185:
 
     # Max_00 "{i}Ну, раз Лиза выполнила мою просьбу, придётся всё сделать как положено. Да и если ей поставят двойку за это снова, она больше ничего уже не покажет мне...{/i}"
-    Max_00 "{i}Well, since Lisa actually did what I asked for, I have to do everything right. If she'll get an F for this homework, she'll never show me anything again...{/i}"
+    Max_00 "{i}Well, since Lisa actually did what I asked for, I have to do everything right. If she gets an F for this, she'll never show me anything again...{/i}"
 
 # game/dialogues/lisatalk.rpy:985
 translate english Lisa_HomeWork_show_breast_4a5d69ef:
@@ -2288,7 +2288,7 @@ translate english Lisa_HomeWork_show_breast_4a5d69ef:
 translate english Lisa_HomeWork_show_breast_cfc7fabd:
 
     # Lisa_02 "Хорошо, Макс. Теперь мы в рассчёте, да? И надеюсь, что получу только пять, не меньше, верно?"
-    Lisa_02 "Good. I hope I'll get an A for this, right?"
+    Lisa_02 "Good. I'll get an A for this, right?"
 
 # game/dialogues/lisatalk.rpy:987
 translate english Lisa_HomeWork_show_breast_1e78def9:
@@ -2300,7 +2300,7 @@ translate english Lisa_HomeWork_show_breast_1e78def9:
 translate english Lisa_HomeWork_show_breast_a9761a89:
 
     # Lisa_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЗнаешь что, Макс? Отвали! Я сама всё сделаю. Пусть и на двойку, но зато без тебя с твоими... извращёнными мыслями!"
-    Lisa_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nYou know what, Max? Get lost! I'll do everything myself. I'd rather have an F, but I won't have to deal with you, perv."
+    Lisa_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nYou know what, Max? Get lost! I'll do everything myself. I'd rather get an F than deal with you, perv."
 
 # game/dialogues/lisatalk.rpy:992
 translate english Lisa_HomeWork_show_breast_2443b693:
@@ -2312,13 +2312,13 @@ translate english Lisa_HomeWork_show_breast_2443b693:
 translate english Lisa_HomeWork_make_bag_16d92097:
 
     # Lisa_13 "Макс, мне кажется, что здесь должен быть другой ответ. Это же не так решается..." nointeract
-    Lisa_13 "I think this should have another answer, Max..." nointeract
+    Lisa_13 "This doesn't look right, Max..." nointeract
 
 # game/dialogues/lisatalk.rpy:1006
 translate english Lisa_HomeWork_make_bag_841fcf53:
 
     # Lisa_03 "Ну, вот видишь! Эх, какой же ты невнимательный, Макс. Но всё равно, спасибо, что помог. Сама я бы долго возилась..."
-    Lisa_03 "Good thing I caught it! You should pay more attention, Max. But thanks for your help anyway. It would take me so much time..."
+    Lisa_03 "Good thing I caught it! You should pay more attention. But thanks for your help anyway. It would take me so much time..."
 
 # game/dialogues/lisatalk.rpy:1007
 translate english Lisa_HomeWork_make_bag_71e49abd:
@@ -2342,7 +2342,7 @@ translate english Lisa_HomeWork_make_bag_71e49abd_1:
 translate english Lisa_HomeWork_make_bag_da238d5c:
 
     # Lisa_13 "Нет, Макс, ты не прав. Тут надо всё совсем не так решать. Спасибо за помощь, но я уже разобралась..."
-    Lisa_13 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, you're wrong. This isn't how you solve this. Thanks for your help, but I think I've figured it out."
+    Lisa_13 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, you're wrong. This isn't how you solve it. Thanks for your help, but I think I've figured it out."
 
 # game/dialogues/lisatalk.rpy:1018
 translate english Lisa_HomeWork_make_bag_920afc01:
@@ -2366,7 +2366,7 @@ translate english Lisa_HomeWork_self_4a5d69ef:
 translate english Lisa_HomeWork_self_7cd07f88:
 
     # Lisa_03 "О, супер! Макс! Ты такой молодец! Всё время меня выручаешь... Я бы сама долго возилась и, наверняка, ошибок бы наделала... Спасибо тебе!"
-    Lisa_03 "Great! You help me so much, Max... It would take me forever to do this and I'd probably make some mistakes too... Thank you!"
+    Lisa_03 "Great! You're so helpful, Max... It would take me forever to do this and I'd probably make some mistakes too... Thank you!"
 
 # game/dialogues/lisatalk.rpy:1039
 translate english Lisa_HomeWork_self_b48863b4:
@@ -2382,7 +2382,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:807
     old "Для начала хотел узнать, как у тебя дела?"
-    new "First I want to know how are you doing"
+    new "First I want to know how you're doing"
 
     # game/dialogues/lisatalk.rpy:810
     old "Тебе повезло, у меня всё хорошо с этими предметами!"
@@ -2406,7 +2406,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:845
     old "Ну сама подумай, зачем мне тратить время просто так?"
-    new "Think about it, why would I want to spend my time on you for no reason?"
+    new "Think about it, would I want to spend my time on you for no reason?"
 
     # game/dialogues/lisatalk.rpy:845
     old "Может быть, попрошу что-то..."
@@ -2414,7 +2414,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:845
     old "Да нет, конечно. Обещаю, что ничего не попрошу взамен!"
-    new "No, of course no. I'm not going to ask for anything in return!"
+    new "No, of course not. I'm not going to ask for anything in return!"
 
     # game/dialogues/lisatalk.rpy:853
     old "Нет, Лиза. Ты мне - я тебе."

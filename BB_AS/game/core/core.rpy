@@ -95,6 +95,10 @@ label NewDay:
     $ talk_var["alice_dw"]  = 0
     $ talk_var["ann_tv"]    = 0
     $ talk_var["alice_tv"]  = 0
+    if 'smoke' in talk_var:
+        $ talk_var["smoke"]  = 0
+        if flags['smoke'] == 'money':
+            $ flags['smoke'] = None
 
     $ random_loc_ab = renpy.random.choice(["a", "b"])
 
@@ -106,6 +110,10 @@ label NewDay:
                 if dcv[i].lost == 0:
                     dcv[i].done  = True
 
+        if 'secretbook' in dcv and dcv['secretbook'].done: # прошел откат после дарения книги, можно купить следующую
+            dcv['secretbook'].stage += 1
+            items["erobook_"+str(dcv['secretbook'].stage)].InShop = True
+
         # сбросим подглядывания
         for key in peeping:
             peeping[key] = 0
@@ -116,7 +124,7 @@ label NewDay:
     $ GetDeliveryList()
 
     if 0 < GetWeekday(prevday) < 6:
-        if possibility['sg'].stn > 0 and not flags["lisa_hw"]:  # был разговор с Лизой по поводу наказаний и не помогали
+        if possibility['sg'].stn > 0 and not flags["lisa_hw"]:  # был разговор с Лизой по поводу наказаний и не помогал
             $ punlisa.insert(0, [  # вставляем в начало
                 0,  # помощь Макса с д/з (0, 1, 2, 3, 4) (не помогал / допустил ошибку / неудачно попросил услугу / помог безвозмездно / помог за услугу)
                 0,  # получена двойка в школе (0, 1)

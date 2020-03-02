@@ -361,3 +361,211 @@ translate english alice_sleep_morning_807b976b:
 
     # Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
     Max_05 "Oh, it's the kind of thing that puts the dirtiest thoughts in my head... the way I would pound that ass...! I think i'll get out of here before she wakes up." nointeract
+# TODO: Translation updated at 2020-03-02 23:40
+
+# game/events/alice.rpy:387
+translate english spider_in_bed_a3f16ae5:
+
+    # Alice_13 "Макс!"
+    Alice_13 ""
+
+# game/events/alice.rpy:392
+translate english spider_in_bed_12221b33:
+
+    # Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!" nointeract
+    Alice_12 "" nointeract
+
+# game/events/alice.rpy:400
+translate english spider_in_bed_4e92be20:
+
+    # Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!" nointeract
+    Alice_06 "" nointeract
+
+# game/events/alice.rpy:410
+translate english spider_in_bed_goaway_9bf961dd:
+
+    # Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..." nointeract
+    Max_09 "" nointeract
+
+# game/events/alice.rpy:432
+translate english spider_in_bed_help_979e99f5:
+
+    # Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!" nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:437
+translate english spider_in_bed_help_934b274d:
+
+    # Alice_12 "Что ты хочешь за смерть этого паука?" nointeract
+    Alice_12 "" nointeract
+
+# game/events/alice.rpy:462
+translate english spider_in_bed_fail_27bc02af:
+
+    # Alice_17 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЧто?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
+    Alice_17 ""
+
+# game/events/alice.rpy:463
+translate english spider_in_bed_fail_11231cfc:
+
+    # Max_08 "Ух, какая ты кровожадная. Ну ладно..."
+    Max_08 ""
+
+# game/events/alice.rpy:469
+translate english spider_in_bed_money_cbd8c632:
+
+    # Alice_16 "Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
+    Alice_16 ""
+
+# game/events/alice.rpy:470
+translate english spider_in_bed_money_5f8bef51:
+
+    # Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
+    Max_04 ""
+
+# game/events/alice.rpy:480
+translate english spider_in_bed_tits_86f1ac33:
+
+    # Alice_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
+    Alice_14 ""
+
+# game/events/alice.rpy:483
+translate english spider_in_bed_tits_ca1a85ce:
+
+    # Alice_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
+    Alice_09 ""
+
+# game/events/alice.rpy:484
+translate english spider_in_bed_tits_eccbb760:
+
+    # Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
+    Max_04 ""
+
+# game/events/alice.rpy:493
+translate english spider_in_bed_toples_47692925:
+
+    # Alice_15 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
+    Alice_15 ""
+
+# game/events/alice.rpy:494
+translate english spider_in_bed_toples_19d75d09:
+
+    # Max_05 "Отличные сиськи! Ладно, где этот твой паук..."
+    Max_05 ""
+
+# game/events/alice.rpy:507
+translate english spider_in_bed_spider_f85d7471:
+
+    # Max_07 "Ну, где ты там. Ага. Попался! И что мне с тобой делать?" nointeract
+    Max_07 "" nointeract
+
+# game/events/alice.rpy:510
+translate english spider_in_bed_spider_a3432394:
+
+    # Alice_16 "Макс! Ты должен его убить! А не то я подумаю, что это твоих рук дело... Докажи, что это был не ты!" nointeract
+    Alice_16 "" nointeract
+
+# game/events/alice.rpy:513
+translate english spider_in_bed_spider_be1cbc22:
+
+    # Alice_17 "Ах так... Ну, тогда я обижусь на тебя! Всё, вали отсюда!" nointeract
+    Alice_17 "" nointeract
+
+# game/events/alice.rpy:526
+translate english spider_in_bed_spider_2f934b3c:
+
+    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
+    Alice_12 ""
+
+# game/events/alice.rpy:527
+translate english spider_in_bed_spider_9db27ecc:
+
+    # Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!" nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:539
+translate english spider_in_bed_spider_961cf0ed:
+
+    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
+    Alice_16 ""
+
+# game/events/alice.rpy:540
+translate english spider_in_bed_spider_d5b490ac:
+
+    # Max_09 "Ладно, будет тебе! Раз ты такая кровожадная..."
+    Max_09 ""
+
+# game/events/alice.rpy:552
+translate english spider_in_bed_let_go_e79006af:
+
+    # Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!" nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:564
+translate english spider_in_bed_kill_7019a935:
+
+    # Alice_01 "Так ему! Спасибо, Макс! Ты мой спаситель. А теперь иди отсюда, я спать хочу!" nointeract
+    Alice_01 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:392
+    old "Разбирайся сама..."
+    new ""
+
+    # game/events/alice.rpy:400
+    old "Ну, пойдём посмотрим..."
+    new ""
+
+    # game/events/alice.rpy:400
+    old "Паук? Ерунда какая. Сама разбирайся с ним..."
+    new ""
+
+    # game/events/alice.rpy:432
+    old "А что мне за это будет?"
+    new ""
+
+    # game/events/alice.rpy:432
+    old "Хорошо, где он там..."
+    new ""
+
+    # game/events/alice.rpy:437
+    old "Давай $10! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:437
+    old "Покажи сиськи! {color=[_ch2_color]}(Убеждение. Шанс: [ch2_vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:437
+    old "Сними верх! {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:437
+    old "А, ничего. Так поймаю..."
+    new ""
+
+    # game/events/alice.rpy:507
+    old "{i}забрать его себе{/i}"
+    new ""
+
+    # game/events/alice.rpy:507
+    old "{i}выбросить с балкона{/i}"
+    new ""
+
+    # game/events/alice.rpy:507
+    old "{i}убить паука{/i}"
+    new ""
+
+    # game/events/alice.rpy:510
+    old "Я не буду его убивать!"
+    new ""
+
+    # game/events/alice.rpy:510
+    old "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:513
+    old "{i}вернуться в кровать{/i}"
+    new ""
+

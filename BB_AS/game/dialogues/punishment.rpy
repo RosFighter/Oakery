@@ -275,6 +275,10 @@ label punishment_lisa:
 
     Ann_00 "Конечно, будешь. [_text!tq] Совсем расслабилась."
 
+    $ punlisa[0][3] = 1  # Лиза понесла наказание
+    if punlisa[0][0] == 1:  # Макс умышленно сделал ошибку и Лизу наказали
+        $ punlisa[0][4] = renpy.random.randint(50, 300)  # подозрительность Лизы растет случайно от 5 до 30%
+
     # сцена с наказанной Лизой
     scene BG punish-evening 01
     $ renpy.show("Lisa punish-evening 03"+chars["lisa"].dress)

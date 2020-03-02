@@ -4,7 +4,7 @@ label Eric_talk_afterdinner:
     $ spent_time = 20
     $ current_room = house[6]
 
-    scene BG char Max meet-eric-terrace-00
+    scene BG char Max talk-terrace-00
     show Eric meet 01a
     show Max meet-Eric 01a
     Eric_00 "Макс, пока твоя мама переодевается, я бы хотел с тобой поговорить. С глазу на глаз, так сказать..."

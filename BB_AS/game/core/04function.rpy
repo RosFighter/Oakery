@@ -836,6 +836,13 @@ init python:
                     chars["alice"].dress_inf = "01b"
                 else:
                     chars["alice"].dress_inf = "01d"
+            elif name == "smoke":
+                if flags['smoke'] == "toples":
+                    chars["alice"].dress = "b"
+                    chars["alice"].dress_inf = "03b"
+                else:
+                    chars["alice"].dress = "a"
+                    chars["alice"].dress_inf = "03"
             else:
                 chars["alice"].dress = "a"
                 chars["alice"].dress_inf = "01a"
@@ -1082,17 +1089,17 @@ init python:
         return chance
 
 
-    def GetWeekday(day):
+    def GetWeekday(day):  # возвращает номер дня недели
         return (day+2) % 7
 
 
-    def BuyCource():
+    def BuyCource():  # покупка онлайн-курса
         global money, CurCource
         money -= CurCource.cources[CurCource.current].price
         CurCource.cources[CurCource.current].buy = True
 
 
-    def notify_queue():
+    def notify_queue():  # функция показа всплывающего сообщения из очереди
         global notify_list
         if all((not renpy.get_screen('notify'), notify_list)):
             renpy.notify(notify_list.pop(0));

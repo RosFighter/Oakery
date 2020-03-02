@@ -42,43 +42,43 @@ image video1_movie = Movie(play="video/Impulse.webm", image="images/interface/la
 
 # image AnimAnnEric1:
 #     "Animation AnnEric1 01"
-#     0.06
+#     0.033
 #     "Animation AnnEric1 02"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 03"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 04"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 05"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 06"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 07"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 08"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 09"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 10"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 11"
-#     0.06
+#     0.033
 #     "Animation AnnEric1 12"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 13"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 14"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 15"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 16"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 17"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 18"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 19"
-#     0.03
+#     0.033
 #     "Animation AnnEric1 20"
-#     0.03
+#     0.033
 #     repeat

@@ -1715,11 +1715,19 @@ translate english strings:
 translate english breakfast_2_933c373f:
 
     # Ann_00 "Вот и хорошо, что поняла. Теперь иди садись. Прошу прощения, что пришлось прервать завтрак, но иначе нельзя."
-    Ann_00 "Good. Now get to your seat. I'm sorry I had to interrupt our breakfast, but that's just what we need to do from now on."
+    Ann_00 "Good. Now go sit down. I'm sorry I had to interrupt breakfast, but that's just what we need to do from now on."
 
 # game/dialogues/breakfast.rpy:363
 translate english breakfast_2_1d9581e2:
 
     # Ann_00 "И да, если узнаю, что кто-то мне врёт, тот получит гораздо сильнее. Больше всего ненавижу ложь. Всё ясно?" nointeract
-    Ann_00 "And if I found out someone is lying to me then your punishment will be even worse. I hate lying. Is that clear?" nointeract
+    Ann_00 "And if I find out someone is lying to me, your punishment will be even worse. There's nothing I hate more than lying. Is that clear?" nointeract
+
+# TODO: Translation updated at 2020-03-02 23:40
+
+translate english strings:
+
+    # game/dialogues/breakfast.rpy:662
+    old "курит"
+    new ""
 
