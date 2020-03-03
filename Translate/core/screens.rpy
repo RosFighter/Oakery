@@ -242,3 +242,35 @@ translate english strings:
     old "Влияние Эрика"
     new "Eric's Influence"
 
+# TODO: Translation updated at 2020-03-02 23:40
+
+translate english strings:
+
+    # game/core/screens.rpy:189
+    old "{b}ОНЛАЙН-КУРСЫ{/b}"
+    new "{b}ONLINE-COURSES{/b}"
+
+    # game/core/screens.rpy:366
+    old "ОНЛАЙН-КУРСЫ"
+    new "ONLINE-COURSES"
+
+    # game/core/screens.rpy:384
+    old "Вы прошли все доступные курсы и занятия из этой категории. Возможно, новые уроки появятся в следующей версии игры."
+    new "You've finished all possible courses and lessons from this category. New lessons will be added in coming updates."
+
+    # game/core/screens.rpy:393
+    old "Вы уже оплатили этот курс и можете в любой момент включить следующий доступный видеоурок."
+    new "You've paid for this course and can watch the next lesson at any time."
+
+    # game/core/screens.rpy:397
+    old "Занятие [text1] из [text2]"
+    new "Lesson [text1] from [text2]"
+
+    # game/core/screens.rpy:401
+    old "{i}{b}НАЧАТЬ ПРОСМОТР ВИДЕОУРОКА{/b}{/i}"
+    new "{i}{b}START VIDEO LESSON{/b}{/i}"
+
+    # game/core/screens.rpy:416
+    old "Количество занятий: [text2]"
+    new "Amount of lessons: [text2]"
+

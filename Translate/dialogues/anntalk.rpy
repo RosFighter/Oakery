@@ -368,3 +368,289 @@ translate english strings:
     old "Да, я всё понял!"
     new "Yes, I understand!"
 
+# TODO: Translation updated at 2020-03-02 23:40
+
+# game/dialogues/anntalk.rpy:238
+translate english talk_about_smoking_becba3c8:
+
+    # Ann_12 "Макс. Я не уверена, но мне кажется, что чувствую запах сигаретного дыма. К нам кто-то приходил?" nointeract
+    Ann_12 "Max, I'm not sure but I think I smell some cigarette smoke. Did we had some guests?" nointeract
+
+# game/dialogues/anntalk.rpy:248
+translate english talk_about_smoking_812b7a4b:
+
+    # Ann_00 "Точно? Макс, ты ничего не хочешь рассказать?" nointeract
+    Ann_00 "Are you sure you don't want to tell me anything?" nointeract
+
+# game/dialogues/anntalk.rpy:251
+translate english talk_about_smoking_b75bee26:
+
+    # Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
+    Ann_01 "uh, maybe you're right. Or maybe it just came from the neighbors or something... Anyway, let's go have a dinner."
+
+# game/dialogues/anntalk.rpy:255
+translate english talk_about_smoking_bc384657:
+
+    # Alice_03 "Спасибо, Макс, что не сдал меня... Я это ценю." nointeract
+    Alice_03 "Thanks for not ratting me out, Max. I appreciate it." nointeract
+
+# game/dialogues/anntalk.rpy:259
+translate english talk_about_smoking_582d9cb8:
+
+    # Alice_05 "Вот можешь же быть не полным придурком... иногда..."
+    Alice_05 "Hey, you can be a decent brother every once in a while."
+
+# game/dialogues/anntalk.rpy:260
+translate english talk_about_smoking_d217c75e:
+
+    # Max_01 "Ага. Ладно, давай ужинать"
+    Max_01 "Yeah. Okay, let's eat"
+
+# game/dialogues/anntalk.rpy:266
+translate english talk_about_smoking_ae9788a4:
+
+    # Alice_16 "Макс! Ты невыносим. Я уже подумала, что ты нормальный брат, а ты..." nointeract
+    Alice_16 "Ugh, Max! Just when I though you may be a decent brother, you had to immediately prove me wrong..." nointeract
+
+# game/dialogues/anntalk.rpy:277
+translate english talk_about_smoking_82373ff8:
+
+    # Alice_13 "Макс! Опять ты за своё? Не будь придурком!" nointeract
+    Alice_13 "Are you starting this again? Don't be a jerk, Max!" nointeract
+
+# game/dialogues/anntalk.rpy:294
+translate english talk_about_smoking_joke_eaa2da91:
+
+    # Alice_12 "Шутник... В общем, я надеюсь, что с этим вопросом разобрались. Уже пора ужинать"
+    Alice_12 "Fucking comedian... Anyway, I hope we agree on this, let's eat."
+
+# game/dialogues/anntalk.rpy:295
+translate english talk_about_smoking_joke_e1be1cb3:
+
+    # Max_01 "Ага, пора."
+    Max_01 "Sure, let's go"
+
+# game/dialogues/anntalk.rpy:301
+translate english talk_about_smoking_sorry_2ed806ce:
+
+    # Alice_13 "Макс... А, ничего не буду говорить, бесполезно. Давай ужинать..."
+    Alice_13 "Max... I don't want to talk about it, let's just eat..."
+
+# game/dialogues/anntalk.rpy:302
+translate english talk_about_smoking_sorry_99fabaec:
+
+    # Max_01 "Ага, давай."
+    Max_01 "Sure, let's go"
+
+# game/dialogues/anntalk.rpy:305
+translate english talk_about_smoking_smoke_9e22726c:
+
+    # Ann_13 "Что?! Ты уверен?" nointeract
+    Ann_13 "What!? Are you sure?" nointeract
+
+# game/dialogues/anntalk.rpy:314
+translate english talk_about_smoking_smoke_07ac8586:
+
+    # Ann_20 "Алиса! Иди сюда, бегом!" nointeract
+    Ann_20 "Come over here, Alice!" nointeract
+
+# game/dialogues/anntalk.rpy:321
+translate english talk_about_smoking_smoke_36a4946b:
+
+    # Alice_13 "Что случилось, мам?"
+    Alice_13 "What happened, mom?"
+
+# game/dialogues/anntalk.rpy:322
+translate english talk_about_smoking_smoke_7c83b5a1:
+
+    # Ann_19 "Что случилось?! Не притворяйся тут невинной овечкой! Макс говорит, что видел, как ты курила!"
+    Ann_19 "What happened? Don't play innocent with me! Max tells me you were smoking!"
+
+# game/dialogues/anntalk.rpy:324
+translate english talk_about_smoking_smoke_ed7bfc86:
+
+    # Max_14 "Ну..."
+    Max_14 "Well..."
+
+# game/dialogues/anntalk.rpy:328
+translate english talk_about_smoking_smoke_d155e002:
+
+    # Alice_17 "Ну и придурок же ты, Макс! Мы же договорились, а ты..."
+    Alice_17 "What the hell, Max!? Didn't we had a deal?"
+
+# game/dialogues/anntalk.rpy:329
+translate english talk_about_smoking_smoke_92957f51:
+
+    # Max_09 "Я передумал..."
+    Max_09 "I've changed my mind..."
+
+# game/dialogues/anntalk.rpy:332
+translate english talk_about_smoking_smoke_7c6f34cb:
+
+    # Alice_17 "Ну и придурок же ты, Макс! Стукач!"
+    Alice_17 "You're an asshole, Max!"
+
+# game/dialogues/anntalk.rpy:333
+translate english talk_about_smoking_smoke_f4dc11b0:
+
+    # Max_09 "Сама виновата..."
+    Max_09 "It's your own fault"
+
+# game/dialogues/anntalk.rpy:335
+translate english talk_about_smoking_smoke_657fcc61:
+
+    # Ann_12 "Так, всё, Алиса, сейчас я тебя накажу! Снимай свои джинсы!"
+    Ann_12 "That's enough, Alice. Take off your pants, I'm going to punish you now."
+
+# game/dialogues/anntalk.rpy:339
+translate english talk_about_smoking_smoke_0830c325:
+
+    # Max_07 "Ого..."
+    Max_07 "Wow"
+
+# game/dialogues/anntalk.rpy:340
+translate english talk_about_smoking_smoke_35136fb1:
+
+    # Alice_12 "Что?! Я уже взрослая! Могу делать что хочу, даже курить!"
+    Alice_12 "What!? I'm an adult and I can do whatever I want, even smoke!"
+
+# game/dialogues/anntalk.rpy:341
+translate english talk_about_smoking_smoke_7278fe09:
+
+    # Max_08 "Ой, плохой ответ..."
+    Max_08 "Wrong answer..."
+
+# game/dialogues/anntalk.rpy:342
+translate english talk_about_smoking_smoke_a7a0a14e:
+
+    # Ann_19 "Взрослая? С каких пор? Пока ты живёшь со мной под одной крышей, ты моя дочь! Без разговоров, быстро снимай и ложись на мои колени!"
+    Ann_19 "As long as you live in my house you're going to follow my rules! Now stop talking back and drop your pants!"
+
+# game/dialogues/anntalk.rpy:344
+translate english talk_about_smoking_smoke_771e9b23:
+
+    # Alice_13 "Мам, но тут же Макс... Что, прямо при нём будешь? Пусть он уйдёт!"
+    Alice_13 "But mom, Max is right here... Are you going to punish me right in front of him? Tell him to leave!"
+
+# game/dialogues/anntalk.rpy:345
+translate english talk_about_smoking_smoke_dec85e71:
+
+    # Ann_18 "Нет, Алиса, пусть смотрит. Это ждёт любого, кто меня разозлит. Быстро ложись на мои колени, кому сказала!"
+    Ann_18 "No, he'll stay. This will happen to everyone who won't obey my rules. Drop your pants and lie down on my knees right now!"
+
+# game/dialogues/anntalk.rpy:348
+translate english talk_about_smoking_smoke_1cdb0e42:
+
+    # Alice_13 "Ладно... Только не больно, чтобы, ладно? Ай! Ма-ам!"
+    Alice_13 "Okay... But don't hit me too much, okay? Ow! Mooom!"
+
+# game/dialogues/anntalk.rpy:349
+translate english talk_about_smoking_smoke_6bcbcfc3:
+
+    # Ann_16 "Давай не мамкай тут! Ты знаешь, что я ненавижу сигареты и мои дети точно курить не будут. Особенно, в моём доме, ясно?!"
+    Ann_16 "Don't \"mom\" me! You know I hate smoking, I won't let my children to smoke, especially not in my house!"
+
+# game/dialogues/anntalk.rpy:351
+translate english talk_about_smoking_smoke_7df16910:
+
+    # Alice_13 "Да, ясно, мам... Ай! Я всё поняла! Я больше не буду!"
+    Alice_13 "Okay, mom... Ow! I understand! I won't do it again!"
+
+# game/dialogues/anntalk.rpy:355
+translate english talk_about_smoking_smoke_ff080174:
+
+    # Ann_12 "Очень на это надеюсь. Так, теперь надевай штаны и садимся ужинать."
+    Ann_12 "I hope so. Now put on your pants and let's start dinner."
+
+# game/dialogues/anntalk.rpy:359
+translate english talk_about_smoking_smoke_eefff3e3:
+
+    # Alice_17 "Ну ты и гад, Макс. Доволен? Ну теперь держись..." nointeract
+    Alice_17 "You're an asshole, Max. Are you happy now? You'll get what's coming for you..." nointeract
+
+# game/dialogues/anntalk.rpy:364
+translate english talk_about_smoking_smoke_1e8d832d:
+
+    # Alice_16 "Не хочу тебя больше видеть. Жаль, что придётся..." nointeract
+    Alice_16 "I don't want to see you anymore. Too bad I can't get rid of you..." nointeract
+
+# game/dialogues/anntalk.rpy:370
+translate english talk_about_smoking_smoke_e611adf1:
+
+    # Alice_16 "Я не буду тебе ничего говорить, сам всё поймёшь в своё время. Карма штука жестокая, но справедливая..." nointeract
+    Alice_16 "What goes around, comes around. I'm not going to tell you anything, you'll see the consequences of your actions soon enough." nointeract
+
+translate english strings:
+
+    # game/dialogues/anntalk.rpy:238
+    old "Нет, никого не было..."
+    new "No"
+
+    # game/dialogues/anntalk.rpy:238
+    old "Может быть, показалось?"
+    new "I think you imagined it"
+
+    # game/dialogues/anntalk.rpy:238
+    old "Да это просто Алиса курила!"
+    new "No, it was Alice"
+
+    # game/dialogues/anntalk.rpy:248
+    old "Нет, мам, нечего рассказывать"
+    new "No, mom, there's nothing to tell"
+
+    # game/dialogues/anntalk.rpy:248
+    old "Вообще-то, Алиса курила..."
+    new "Okay, it was Alice. She was smoking"
+
+    # game/dialogues/anntalk.rpy:255
+    old "Всегда пожалуйста, сестрёнка!"
+    new "You're welcome, sis"
+
+    # game/dialogues/anntalk.rpy:255
+    old "Может, ещё сдам..."
+    new "Maybe I will"
+
+    # game/dialogues/anntalk.rpy:255
+    old "Если сделаешь кое-что, то и не сдам..."
+    new "And I won't if you'll do something for me..."
+
+    # game/dialogues/anntalk.rpy:266
+    old "Да я пошутил..."
+    new "I'm kidding"
+
+    # game/dialogues/anntalk.rpy:266
+    old "Всё в твоих руках..."
+    new "It's all in your hands..."
+
+    # game/dialogues/anntalk.rpy:305
+    old "Да, но ей не говори, что это я её сдал!"
+    new "Yes, but don't tell her I ratted her out!"
+
+    # game/dialogues/anntalk.rpy:305
+    old "Абсолютно. Сам видел. Днём курила у бассейна!"
+    new "I've seen her myself, she was smoking by the pool"
+
+    # game/dialogues/anntalk.rpy:305
+    old "Может быть, мне показалось..."
+    new "Maybe I imagined it..."
+
+    # game/dialogues/anntalk.rpy:314
+    old "Мам, ну не так же..."
+    new "Not like this, mom..."
+
+    # game/dialogues/anntalk.rpy:314
+    old "Мам, меня не сдавай..."
+    new "Don't rat me out, mom..."
+
+    # game/dialogues/anntalk.rpy:359
+    old "Извини, я не хотел, чтобы так..."
+    new "I'm sorry, that's not what I wanted"
+
+    # game/dialogues/anntalk.rpy:359
+    old "И что ты сделаешь? Я тебя не боюсь!"
+    new "And what are you going to do? I'm not afraid of you"
+
+    # game/dialogues/anntalk.rpy:364
+    old "{i}начать ужин{/i}"
+    new "{i}start dinner{/i}"
+

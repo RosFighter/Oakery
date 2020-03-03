@@ -602,7 +602,7 @@ translate english InstallCam_8200bc5d:
 translate english InstallCam_fc408e3e:
 
     # Max_04 "{i}Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{i}Yard... As long as sun is up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
 
 # game/events/max.rpy:660
 translate english InstallCam_d9a1c7d0:
@@ -745,4 +745,40 @@ translate english strings:
     # game/events/max.rpy:372
     old "Так, топовые комменты все сводятся к одному. Не может быть?"
     new "Thus, the top comments come down to one thing. Impossible?"
+
+# TODO: Translation updated at 2020-03-02 23:40
+
+# game/events/max.rpy:694
+translate english HideSpider_59b81ead:
+
+    # Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
+    Max_00 ""
+
+# game/events/max.rpy:699
+translate english HideSpider_14a01e28:
+
+    # Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..." nointeract
+    Max_00 "I wonder what would happen if Alice noticed a spider at night? Will she come for help? But the monster can escape... So, later I'll hide it, the greater the chance of a success..." nointeract
+
+# game/events/max.rpy:703
+translate english HideSpider_dbcd96db:
+
+    # Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
+    Max_00 "Well, let's hope the spider won't run away before Alice goes to sleep"
+
+# game/events/max.rpy:738
+translate english ViewLesson_4bfad0d0:
+
+    # Max_00 "{i}Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало...{/i}"
+    Max_00 "{i}These online courses are a good thing - you can learn everything without getting out of the house! It’s expensive, though{/i}"
+
+translate english strings:
+
+    # game/events/max.rpy:673
+    old "{i}искать... {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
+    new "{i}look... {color=[_chance_color]}(Luck. Chance: [ch_vis]){/color}{/i}"
+
+    # game/events/max.rpy:699
+    old "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
+    new "{i}Put now {color=[_chance_color]}(Luck. Chance: [ch_vis]){/color}{/i}"
 

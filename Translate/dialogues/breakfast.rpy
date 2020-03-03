@@ -1723,3 +1723,11 @@ translate english breakfast_2_1d9581e2:
     # Ann_00 "И да, если узнаю, что кто-то мне врёт, тот получит гораздо сильнее. Больше всего ненавижу ложь. Всё ясно?" nointeract
     Ann_00 "And if I find out someone is lying to me, your punishment will be even worse. There's nothing I hate more than lying. Is that clear?" nointeract
 
+# TODO: Translation updated at 2020-03-02 23:40
+
+translate english strings:
+
+    # game/dialogues/breakfast.rpy:662
+    old "курит"
+    new "smokes"
+

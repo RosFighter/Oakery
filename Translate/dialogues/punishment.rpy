@@ -177,7 +177,7 @@ translate english punishment_max_pun_reson_bf38fe93:
 # game/dialogues/punishment.rpy:132
 translate english punishment_max_pun_reson_7d4fc589:
 
-    # Ann_14 "Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
+    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
     Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nThe circumstances are against you, but I'm willing to believe you. I hope I don't regret this decision."
 
 # game/dialogues/punishment.rpy:133
@@ -246,7 +246,7 @@ translate english punishment_lisa_a37388ce:
     # Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
     Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, I won't punish her this time. I hope I don't regret my decision... And Lisa, you should thank your brother. You'd best learn from your mistakes, because I won't be so forgiving next time..."
 
-# game/dialogues/punishment.rpy:20
+# game/dialogues/punishment.rpy:208
 translate english punishment_lisa_6d672e8d:
 
     # Lisa_02 "Спасибо тебе, Макс!"
