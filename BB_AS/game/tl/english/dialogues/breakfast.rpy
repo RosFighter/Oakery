@@ -1729,5 +1729,5 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:662
     old "курит"
-    new ""
+    new "smokes"
 

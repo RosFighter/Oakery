@@ -696,241 +696,241 @@ translate english strings:
 translate english first_talk_smoke_449f9302:
 
     # Alice_13 "Упс. Макс, ты ничего не видел!"
-    Alice_13 ""
+    Alice_13 "Oops. Max, you didn't see anything!"
 
 # game/dialogues/alicetalk.rpy:353
 translate english first_talk_smoke_ffbb93d4:
 
     # Max_08 "Алиса, ты куришь?!"
-    Max_08 ""
+    Max_08 "Alice, are you smoking?!"
 
 # game/dialogues/alicetalk.rpy:355
 translate english first_talk_smoke_7d89b8d0:
 
     # Alice_12 "Нет, блин, просто зажгла сигарету, посмотреть как горит... Давай так, ты уйдёшь и сделаешь вид, что ничего не было, хорошо?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "No, I just lit this cigarette just to look at it. How about you leave immediately and pretend you didn't see anything?" nointeract
 
 # game/dialogues/alicetalk.rpy:358
 translate english first_talk_smoke_30d0bafe:
 
     # Alice_16 "Вот если не уйдёшь, то узнаешь, что тебе за это будет! Бегом отсюда!"
-    Alice_16 ""
+    Alice_16 "Do you want to know what you'll get if you <i>don't</i> leave? Get the hell out here!"
 
 # game/dialogues/alicetalk.rpy:359
 translate english first_talk_smoke_dd214c35:
 
     # Max_09 "Может быть я и уйду, но..."
-    Max_09 ""
+    Max_09 "Maybe I'll go, but..."
 
 # game/dialogues/alicetalk.rpy:362
 translate english first_talk_smoke_050967cd:
 
     # Alice_14 "Что это значит? Шантажировать меня вздумал?!" nointeract
-    Alice_14 "" nointeract
+    Alice_14 "Are you trying to blackmail me?!" nointeract
 
 # game/dialogues/alicetalk.rpy:365
 translate english first_talk_smoke_987db23a:
 
     # Alice_13 "Макс, я тебя по-человечески прошу. Сделай вид, что ничего не было. Я не хочу расстраивать маму..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Come on, Max. Can't you pretend nothing happened? I don't want to upset mom." nointeract
 
 # game/dialogues/alicetalk.rpy:368
 translate english first_talk_smoke_8dadcf74:
 
     # Alice_12 "Может быть, и то и другое. Ну так как, Макс?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Maybe both. Well, Max?" nointeract
 
 # game/dialogues/alicetalk.rpy:392
 translate english first_talk_smoke_talk_ab49cd6e:
 
     # Alice_13 "Договориться? Ну ладно. Чего ты хочешь?" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Okay, what do you want?" nointeract
 
 # game/dialogues/alicetalk.rpy:395
 translate english first_talk_smoke_talk_b5a5e27d:
 
     # Alice_12 "Макс, ты же знаешь, что я на мели. У меня нет денег. Ну, точнее есть, но баксов 10. Тебя устроит?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Max, you know I'm broke. I don't have any money. All I have is ten bucks. Is this enough?" nointeract
 
 # game/dialogues/alicetalk.rpy:402
 translate english first_talk_smoke_talk_ee9ba89b:
 
     # Alice_13 "Сейчас сбегаю за деньгами...\nВот, держи $10, и теперь-то уж точно ты ничего не видел. Так?" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "I'll go get the money...\nTake $10 and now you didn't see anything, got it?" nointeract
 
 # game/dialogues/alicetalk.rpy:407
 translate english first_talk_smoke_talk_86687067:
 
     # Alice_16 "И как это понимать, Макс? Мы же договорились! Ну ты и гад... Всё, вали отсюда!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "What's that supposed to mean? Didn't we just had an agreement? Asshole... Get out of here!" nointeract
 
 # game/dialogues/alicetalk.rpy:414
 translate english first_talk_smoke_talk_18eb3a17:
 
     # Alice_12 "Ну... больше у меня нет. Может, просто забудем обо всём?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "But that's all I have. Couldn't you forget you saw anything?" nointeract
 
 # game/dialogues/alicetalk.rpy:433
 translate english first_talk_smoke_bad_96a0f9a4:
 
     # Alice_15 "Что?! Ну ты хам! Всё, быстро свалил!" nointeract
-    Alice_15 "" nointeract
+    Alice_15 "What!? Have you completely lost your mind, you little twerp!? Get the hell out of here!" nointeract
 
 # game/dialogues/alicetalk.rpy:439
 translate english first_talk_smoke_suck_d529d118:
 
     # Alice_14 "Что?! Отсоси себе сам! Пошёл вон отсюда!" nointeract
-    Alice_14 "" nointeract
+    Alice_14 "What?! Go fuck yourself! Get the hell out of here!" nointeract
 
 # game/dialogues/alicetalk.rpy:445
 translate english first_talk_smoke_owe_bbfe892c:
 
     # Alice_06 "И какую услугу я тебе буду должна? Например?" nointeract
-    Alice_06 "" nointeract
+    Alice_06 "What kind of favor do you have in mind? Give me an example." nointeract
 
 # game/dialogues/alicetalk.rpy:454
 translate english first_talk_smoke_owe_911030ca:
 
     # Alice_03 "Ну, вот когда решишь, тогда и поговорим. А теперь иди отсюда, пока ещё можешь!" nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Then we can have this conversation after you'll make up your mind. Now get out of here while you can." nointeract
 
 # game/dialogues/alicetalk.rpy:459
 translate english first_talk_smoke_owe_c066f246:
 
     # Alice_15 "Да ты что?! А не охренел ли ты, мальчик? Это всего лишь сигарета, а запросы у тебя... Всё, свалил отсюда!" nointeract
-    Alice_15 "" nointeract
+    Alice_15 "What!? Have you completely lost your mind? It's just a cigarette, why would I even consider this? Get the hell out of here!" nointeract
 
 # game/dialogues/alicetalk.rpy:465
 translate english first_talk_smoke_maybe_6ae64208:
 
     # Alice_12 "Сам смотри... Воевать со мной - себе дороже. И, вообще, иди отсюда. Я уже взрослая и могу делать что хочу..." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Try me. We'll see who's going to be with their ass kicked. Leave me alone." nointeract
 
 # game/dialogues/alicetalk.rpy:470
 translate english first_talk_smoke_goodend_b2ffd2e3:
 
     # Alice_05 "Вот это другое дело. Ладно, разговор окончен..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "That's better. Now leave." nointeract
 
 # game/dialogues/alicetalk.rpy:483
 translate english second_talk_smoke_a3681e1c:
 
     # Alice_12 "А, Макс... Чего хотел?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Oh, it's you, Max. What do you want?" nointeract
 
 # game/dialogues/alicetalk.rpy:486
 translate english second_talk_smoke_141b46f2:
 
     # Alice_03 "Это так важно для тебя? Почему спрашиваешь?" nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Why do you care?" nointeract
 
 # game/dialogues/alicetalk.rpy:489
 translate english second_talk_smoke_abf337b5:
 
     # Alice_00 "Любопытный он... Это сигареты Lucky Strike..."
-    Alice_00 ""
+    Alice_00 "Curious, you say... Fine, it's Lucky Strike."
 
 # game/dialogues/alicetalk.rpy:491
 translate english second_talk_smoke_20468d0b:
 
     # Alice_00 "Да уж, поддержание разговора... А курю я сигареты Lucky Strike..."
-    Alice_00 ""
+    Alice_00 "I see. I smoke Lucky Strike."
 
 # game/dialogues/alicetalk.rpy:493
 translate english second_talk_smoke_5220375a:
 
     # Alice_00 "Ну, раз не важно, то и не скажу..."
-    Alice_00 ""
+    Alice_00 "Why did you asked the question then?"
 
 # game/dialogues/alicetalk.rpy:494
 translate english second_talk_smoke_8de8a159:
 
     # Max_01 "Конечно, если это секрет..."
-    Max_01 ""
+    Max_01 "Just tell me"
 
 # game/dialogues/alicetalk.rpy:495
 translate english second_talk_smoke_f7274e9f:
 
     # Alice_01 "Вот ты зануда, Макс! Обычные сигареты Lucky Strike..."
-    Alice_01 ""
+    Alice_01 "Fine, it's Lucky Strike."
 
 # game/dialogues/alicetalk.rpy:498
 translate english second_talk_smoke_ced29bff:
 
     # Max_07 "Они же не женские?!"
-    Max_07 ""
+    Max_07 "Aren't those for guys?"
 
 # game/dialogues/alicetalk.rpy:499
 translate english second_talk_smoke_80e5e0fb:
 
     # Alice_13 "Ну да... Просто нравится именно эти. Их наш отец курил, сначала запах нравился. Когда выросла, попробовала и теперь вот втянулась..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Well, yes. But I like them because our dad smoked them. First I liked how they smelled and when I grew up I decided to try them, so now I'm hooked." nointeract
 
 # game/dialogues/alicetalk.rpy:502
 translate english second_talk_smoke_182af78a:
 
     # Alice_00 "Ну так, не очень, если честно. Уже слишком много времени прошло... А сигареты - это так, привычка..."
-    Alice_00 ""
+    Alice_00 "Not really, to be honest. Too much time has passed. Cigarettes are just a habit now."
 
 # game/dialogues/alicetalk.rpy:503
 translate english second_talk_smoke_16c39f20:
 
     # Max_00 "Может, и мне попробовать?"
-    Max_00 ""
+    Max_00 "Should I try them too?"
 
 # game/dialogues/alicetalk.rpy:506
 translate english second_talk_smoke_6f9e3ea7:
 
     # Alice_06 "Нет уж, самой мало. Знаешь, как сложно их достать? Особенно, чтобы мама не узнала..." nointeract
-    Alice_06 "" nointeract
+    Alice_06 "No, I don't have much left. It's hard to get them. Especially without mom learning about them." nointeract
 
 # game/dialogues/alicetalk.rpy:510
 translate english second_talk_smoke_4c9e50aa:
 
     # Alice_02 "С чем? Можешь доставать такие сигареты?" nointeract
-    Alice_02 "" nointeract
+    Alice_02 "With what? Can you get these cigarettes?" nointeract
 
 # game/dialogues/alicetalk.rpy:516
 translate english second_talk_smoke_7541a141:
 
     # Alice_03 "Давай! Было бы чудненько. Только маме не пали меня, а то я на тебя обижусь и больше никогда разговаривать не буду..."
-    Alice_03 ""
+    Alice_03 "Please try, you'd help me out a lot. Just don't tell mom or I'll never treat you like a human being ever again."
 
 # game/dialogues/alicetalk.rpy:517
 translate english second_talk_smoke_67b5c25f:
 
     # Max_05 "Договорились!"
-    Max_05 ""
+    Max_05 "Deal!"
 
 # game/dialogues/alicetalk.rpy:521
 translate english second_talk_smoke_36adb5ae:
 
     # Alice_12 "Я закончила. Если мама спросит, скажешь, от соседей надуло, хорошо?"
-    Alice_12 ""
+    Alice_12 "I'm done. If mom asks, tell her it's from the neighbors, okay?"
 
 # game/dialogues/alicetalk.rpy:522
 translate english second_talk_smoke_25aa812b:
 
     # Max_01 "Конечно!"
-    Max_01 ""
+    Max_01 "Sure!"
 
 # game/dialogues/alicetalk.rpy:537
 translate english gift_cigarettes_274717c2:
 
     # Alice_03 "Это то, что я думаю? Давай сюда!" nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Is this what I think it is?" nointeract
 
 # game/dialogues/alicetalk.rpy:540
 translate english gift_cigarettes_88c94b68:
 
     # Alice_13 "Макс! Не будь придурком. Давай сюда!"
-    Alice_13 ""
+    Alice_13 "Don't me a jerk, Max! Give me the cigarettes!"
 
 # game/dialogues/alicetalk.rpy:541
 translate english gift_cigarettes_d9ca71cf:
 
     # Max_01 "Ну, держи..."
-    Max_01 ""
+    Max_01 "Fine, here"
 
 # game/dialogues/alicetalk.rpy:543
 translate english gift_cigarettes_5740d8bc:
@@ -954,175 +954,175 @@ translate english gift_cigarettes_275f5fb3:
 translate english gift_cigarettes_6e623a2c:
 
     # Alice_05 "Хотя ты и полный придурок, но, похоже, начинаешь исправляться!"
-    Alice_05 ""
+    Alice_05 "Hey, it looks like your case of being a complete jerk is getting better!"
 
 # game/dialogues/alicetalk.rpy:549
 translate english gift_cigarettes_2c86ee2f:
 
     # Max_08 "Я не полный придурок!"
-    Max_08 ""
+    Max_08 "I'm not a complete jerk!"
 
 # game/dialogues/alicetalk.rpy:552
 translate english gift_cigarettes_51e15727:
 
     # Alice_07 "Спасибо, Макс. Вот теперь я понимаю, ты настоящий брат!"
-    Alice_07 ""
+    Alice_07 "Thanks, Max! Now I can see you're a good brother!"
 
 # game/dialogues/alicetalk.rpy:553
 translate english gift_cigarettes_40b0f8a9:
 
     # Max_05 "Да не за что..."
-    Max_05 ""
+    Max_05 "You're welcome..."
 
 # game/dialogues/alicetalk.rpy:554
 translate english gift_cigarettes_90e1686e:
 
     # Alice_03 "Спасибо. И маме ни слова! У неё рука очень тяжёлая, особенно когда речь о сигаретах..."
-    Alice_03 ""
+    Alice_03 "Thanks! And not a word to mom!"
 
 # game/dialogues/alicetalk.rpy:555
 translate english gift_cigarettes_25aa812b:
 
     # Max_01 "Конечно!"
-    Max_01 ""
+    Max_01 "Sure!"
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:355
     old "А если уйду, что мне за это будет?"
-    new ""
+    new "And what do I get for leaving?"
 
     # game/dialogues/alicetalk.rpy:355
     old "Ну ок, только я ничего не обещаю..."
-    new ""
+    new "Well, okay, but I can't promise anything..."
 
     # game/dialogues/alicetalk.rpy:362
     old "Ну да. Мама что с тобой сделает, если узнает?"
-    new ""
+    new "Well, yes. Do you know what mom will do to you if she'll find out?"
 
     # game/dialogues/alicetalk.rpy:362
     old "Ну, мы можем договориться"
-    new ""
+    new "We can work something out"
 
     # game/dialogues/alicetalk.rpy:362
     old "Как знать, может быть..."
-    new ""
+    new "Who knows, maybe..."
 
     # game/dialogues/alicetalk.rpy:362
     old "Нет, конечно. Мне жизнь дорога!"
-    new ""
+    new "Of course not. I value my life!"
 
     # game/dialogues/alicetalk.rpy:365
     old "Не хочешь расстраивать маму или получить по заднице?"
-    new ""
+    new "Don't want to upset mom or don't want to get your ass spanked?"
 
     # game/dialogues/alicetalk.rpy:365
     old "Мы всё ещё можем договориться..."
-    new ""
+    new "We can reach some agreement..."
 
     # game/dialogues/alicetalk.rpy:365
     old "Ну ладно, ладно..."
-    new ""
+    new "Fine, fine..."
 
     # game/dialogues/alicetalk.rpy:392
     old "Если заплатишь, буду молчать"
-    new ""
+    new "You can pay me for my silence"
 
     # game/dialogues/alicetalk.rpy:392
     old "Покажи сиськи!"
-    new ""
+    new "Show me your tits!"
 
     # game/dialogues/alicetalk.rpy:392
     old "Сними трусы!"
-    new ""
+    new "Take off your panties!"
 
     # game/dialogues/alicetalk.rpy:392
     old "Отсоси мне!"
-    new ""
+    new "Suck my cock!"
 
     # game/dialogues/alicetalk.rpy:392
     old "Ты будешь мне должна услугу"
-    new ""
+    new "You're going to owe me a favor"
 
     # game/dialogues/alicetalk.rpy:395
     old "Ну, давай"
-    new ""
+    new "Sure"
 
     # game/dialogues/alicetalk.rpy:395
     old "Нет, этого мало..."
-    new ""
+    new "No, this is not enough..."
 
     # game/dialogues/alicetalk.rpy:402
     old "Так!"
-    new ""
+    new "Deal"
 
     # game/dialogues/alicetalk.rpy:402
     old "Как знать..."
-    new ""
+    new "Who knows..."
 
     # game/dialogues/alicetalk.rpy:407
     old "Ну, как скажешь..."
-    new ""
+    new "Well, if that's what you want"
 
     # game/dialogues/alicetalk.rpy:445
     old "Покажешь сиськи, когда попрошу..."
-    new ""
+    new "You'll show me your boobs when I ask"
 
     # game/dialogues/alicetalk.rpy:445
     old "Разденешься, когда скажу..."
-    new ""
+    new "You'll undress when I say"
 
     # game/dialogues/alicetalk.rpy:445
     old "Отсосёшь, когда нужно будет..."
-    new ""
+    new "You'll blow me when I say"
 
     # game/dialogues/alicetalk.rpy:445
     old "Я ещё не решил..."
-    new ""
+    new "I haven't decided yet"
 
     # game/dialogues/alicetalk.rpy:483
     old "Да хотел узнать, что ты куришь?"
-    new ""
+    new "I want to know what kind of cigarettes do you smoke"
 
     # game/dialogues/alicetalk.rpy:486
     old "Просто любопытно"
-    new ""
+    new "I'm curious"
 
     # game/dialogues/alicetalk.rpy:486
     old "Для поддержания разговора"
-    new ""
+    new "I don't really care, it was more of a conversation starter"
 
     # game/dialogues/alicetalk.rpy:486
     old "А, не важно..."
-    new ""
+    new "Nevermind"
 
     # game/dialogues/alicetalk.rpy:499
     old "Скучаешь о нём?"
-    new ""
+    new "Do you miss him?"
 
     # game/dialogues/alicetalk.rpy:499
     old "Может, и мне попробовать?"
-    new ""
+    new "Should I try them too?"
 
     # game/dialogues/alicetalk.rpy:506
     old "Может быть, тебе помочь?"
-    new ""
+    new "Can I help you?"
 
     # game/dialogues/alicetalk.rpy:506
     old "Ну и ладно..."
-    new ""
+    new "Okay, fine..."
 
     # game/dialogues/alicetalk.rpy:510
     old "Ну, я попробую через интернет"
-    new ""
+    new "I will try to order them online"
 
     # game/dialogues/alicetalk.rpy:527
     old "У меня есть кое-что запрещённое..."
-    new ""
+    new "I have something forbidden for you..."
 
     # game/dialogues/alicetalk.rpy:537
     old "А что взамен?"
-    new ""
+    new "And what would I get for it?"
 
     # game/dialogues/alicetalk.rpy:537
     old "Только давай условимся, что ты не скажешь маме о том, как я за тобой подглядывал в душе..."
@@ -1130,5 +1130,5 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:537
     old "Держи!"
-    new ""
+    new "Here!"
 

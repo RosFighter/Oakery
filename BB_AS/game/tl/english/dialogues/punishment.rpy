@@ -177,7 +177,7 @@ translate english punishment_max_pun_reson_bf38fe93:
 # game/dialogues/punishment.rpy:132
 translate english punishment_max_pun_reson_7d4fc589:
 
-    # Ann_14 "Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
+    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
     Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nThe circumstances are against you, but I'm willing to believe you. I hope I don't regret this decision."
 
 # game/dialogues/punishment.rpy:133
