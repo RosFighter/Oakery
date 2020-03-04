@@ -584,17 +584,32 @@ label alice_smoke:
 
     if dcv['smoke'].done:
         if dcv['smoke'].stage == 0:
-            # первый разговор про курение
-            jump first_talk_smoke
+            jump first_talk_smoke  # первый разговор про курение
         elif dcv['smoke'].stage == 1:
-            # второй разговор про курение
-            jump second_talk_smoke
+            jump second_talk_smoke  # второй разговор про курение
+        elif talk_var['alice.pun'] == 0:
+            jump smoke_nofear  # разговор во время курения до наказаний
         else:
             if flags['smoke'] is None:
+                # нет текущих требований
                 pass
             elif flags['smoke'] == "toples":
+                # текущее требование курить топлес. Выполняется
                 pass
-            elif flags['smoke'] == "nopants":
+            elif flags['smoke'] == "not_toples":
+                #  текущее требование курить топлес. Не выполняется
+                pass
+            elif flags['smoke'] == "sleep" or (flags['smoke'] == "not_sleep" and not flags['noted']):
+                # текущее требование спать топлес. Выполняется или Макс не знает о нарушении
+                pass
+            elif flags['smoke'] == "not_sleep" and flags['noted']:
+                # текущее требование спать топлес. Не выполняется
+                pass
+            elif flags['smoke'] == "nopants" or (flags['smoke'] == "not_nopants" and not flags['noted']):
+                # текущее требование ходить днем без трусов. Выполняется или Макс не знает о нарушении
+                pass
+            elif flags['smoke'] == "not_nopants" and flags['noted']:
+                # текущее требование ходить днем без трусов. Не выполняется
                 pass
 
     return

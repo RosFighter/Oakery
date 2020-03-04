@@ -533,8 +533,8 @@ label BookRead:
             jump .end
 
     label .end:
-        $ cooldown["learn"] = CooldownTime("04:00") # час на этап чтения и 3 часа кулдаун
-        $ spent_time = 60
+        $ cooldown["learn"] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
+        $ spent_time = max((60 - int(tm[-2:])), 40)
         $ cur_ratio = 0.6
         jump Waiting
 
@@ -667,7 +667,7 @@ label InstallCam:
 label SearchSpider:
     scene BG char Max spider-search-00
     $ renpy.show("Max spider search-00"+mgg.dress)
-    $ _chance = {0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp]
+    $ _chance = {0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {0 : 0, 1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp]
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
     menu:
@@ -731,9 +731,54 @@ label ViewLesson:
         if CurCource.current < len(CurCource.cources):
             $ CurCource.current += 1
 
-    $ cooldown["learn"] = CooldownTime("04:00") # час на этап чтения и 3 часа кулдаун
-    $ spent_time = 60
+    $ cooldown["learn"] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
+    $ spent_time = max((60 - int(tm[-2:])), 40)
     $ cur_ratio = 0.6
     $ notify_list.append("Вы просматриваете видеоурок и повышаете свои навыки.")
     Max_00 "{i}Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало...{/i}"
+    jump Waiting
+
+
+label SearchCigarettes:
+    scene BG char Max cigarettes-00
+    menu:
+        Max_10 "Так... Где же Алиса спрятала сигареты сегодня?"
+        "{i}искать в тумбочке{/i}":
+            if (random_sigloc == "n" and dcv['smoke'].done
+                    and GetPlan(plan_alice, day, tm).label != "at_friends"
+                    and GetPlan(plan_alice, day, tm).label != "smoke"):
+                jump .yes
+            else:
+                jump .no
+        "{i}искать под кроватью{/i}":
+            jump .no
+        "{i}искать в столе{/i}":
+            if (random_sigloc == "t" and dcv['smoke'].done
+                    and GetPlan(plan_alice, day, tm).name != "at_friends"
+                    and GetPlan(plan_alice, day, tm).name != "smoke"):
+                jump .yes
+            else:
+                jump .no
+
+    menu .no:
+        Max_00 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..."
+        "{i}уйти{/i}":
+            $ spent_time += 30
+            jump Waiting
+
+    label .yes:
+        $ renpy.show("Max cigarettes 01"+mgg.dress)
+        menu:
+            Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..."
+            "{i}подставить Алису{/i}":
+                if ((tm < "13:00" and GetPlan(plan_alice, day, "13:00").name == 'smoke')
+                    or (tm < "17:00") and GetPlan(plan_alice, day, "16:00").name == "at_friends"):
+                        pass  # если сегодня Алиса еще не курила или будет у подружки, подставлять бесполезно, она переложит сигареты
+                else:
+                    $ punalice[0][1] = 1
+            "{i}не подставлять Алису{/i}":
+                pass
+    $ dcv['betray_smoke'].done = False
+    $ dcv['betray_smoke'].lost = 1
+    $ spent_time += 30
     jump Waiting

@@ -97,10 +97,20 @@ label NewDay:
     $ talk_var["alice_tv"]  = 0
     if 'smoke' in talk_var:
         $ talk_var["smoke"]  = 0
-        if flags['smoke'] == 'money':
+        if flags['smoke.request'] == 'money':
             $ flags['smoke'] = None
+            $ flags['smoke.request'] = None
+        elif flags['smoke.request'] is not None and (flags['smoke'] is None or flags['smoke'][:3] != 'not'):
+            # Если требование Макса было и это не деньги
+            $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
+            if RandomChance(__chance):
+                $ flags['smoke'] = 'not_' + flags['smoke']
+                $ flags['noted'] = False  # нарушение еще не замечено Максом
+            else:
+                $ flags['smoke'] = flags['smoke.request']
 
     $ random_loc_ab = renpy.random.choice(["a", "b"])
+    $ random_sigloc = renpy.random.choice(["n", "t"])
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -133,15 +143,15 @@ label NewDay:
                 0,  # подозрительность
                 ])
             $ del punlisa[10:]
-        if possibility['smoke'].stn > 0:  # Макс видел курящую Алису
-            $ punalice.insert(0, [  # вставляем в начало
-                0,  # Макс шантажировал Алису
-                0,  # Макс подставлял Алису
-                0,  # Макс заступился за Алису перед наказанием
-                0,  # Ализа понесла наказание
-                0,  # подозрительность
-                ])
-            $ del punalice[10:]
+    if possibility['smoke'].stn > 1:  # Макс видел курящую Алису
+        $ punalice.insert(0, [  # вставляем в начало
+            0,  # Макс шантажировал Алису
+            0,  # Макс подставлял Алису
+            0,  # Макс заступился за Алису перед наказанием
+            0,  # Ализа понесла наказание
+            0,  # подозрительность
+            ])
+        $ del punalice[14:]
     $ flags["lisa_hw"] = False
     return
 
@@ -227,3 +237,5 @@ label after_load:
 
     if 'online_cources' not in globals():
         call InitCources
+    if 'alice.pun' not in talk_var:
+        $ talk_var['alice.pun'] = 0

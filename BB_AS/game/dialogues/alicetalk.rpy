@@ -525,9 +525,12 @@ label second_talk_smoke:
     $ items['cigarettes'].InShop = True
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ talks['cigarettes'] = TalkTheme("alice", _("У меня есть кое-что запрещённое..."), "gift_cigarettes", "items['cigarettes'].have", -4)
+    $ talk_var['alice.pun'] = 0
     $ dcv['smoke'].stage = 2
     $ dcv['smoke'].lost = 1
     $ dcv['smoke'].done = False
+    $ dcv['betray_smoke'] = Daily(1, False, True)
+    $ AvailableActions['searchciga'].enabled = True
     $ spent_time = 30 - int(tm[-2:])
     jump Waiting
 
@@ -556,5 +559,172 @@ label gift_cigarettes:
     $ items['cigarettes'].have = False
     $ __mood += 100
     $ spent_time += 10
+    $ dcv['smoke'].lost = 0
+    $ dcv['smoke'].done = True
     $ AddRelMood("alice", 10, __mood)
     return
+
+
+label smoke_nofear:
+    Alice_00 "Макс, поглазеть пришёл?"
+    Max_00 "Не боишься, что мама накажет, если узнает?"
+    menu:
+        Alice_04 "И как она узнает? Ты расскажешь?"
+        "Может быть...":
+            Alice_09 "Ты хорошо подумал, Макс? Жизнь-то у тебя одна... И что ты хочешь за... молчание?"
+            Max_00 "Вот это разговор!"
+            menu:
+                Alice_00 "Сначала скажи, что у тебя на уме..."
+                "Дай $20, и я буду молчать":
+                    pass
+                "Если не будешь надевать трусы утром, буду молчать":
+                    pass
+                "Если будешь курить без верха, буду молчать":
+                    pass
+                "Если разрешишь тебя отшлёпать, ничего не скажу":
+                    pass
+                "Ничего. Не переживай!":
+                    jump .no
+            Alice_00 "А больше ты ничего не хочешь? Свали отсюда, пока не наваляла!!"
+            $ AddRelMood('alice', 0, -100)
+            $ spent_time = 10
+            jump Waiting
+        "Нет, конечно!":
+            jump .no
+    menu .no:
+        Alice_01 "Ну вот и пугать не надо. Не узнает. А если ты проболтаешься, я тебя во сне придушу, понял? Теперь иди, не мешай мне..."
+        "Угу...":
+            $ AddRelMood('alice', 0, 30)
+            $ spent_time = 10
+            jump Waiting
+
+
+label smoke_fear:
+    Alice_00 "Макс, поглазеть пришёл?"
+    Max_00 "Не боишься, что мама накажет если узнает?"
+    Alice_13 "Ты же ей не скажешь? Она так больно меня отшлёпала в прошлый раз, что до сих пор сидеть неприятно..."
+    Max_00 "Ну, это зависит от тебя..."
+    $ _ch8 = GetChanceConvince(punalice, 8)
+    $ _ch8_col = GetChanceColor(_ch8)
+    $ ch8_vis = str(int(_ch8/10)) + "%"
+    $ _ch4 = GetChanceConvince(punalice, 4)
+    $ _ch4_col = GetChanceColor(_ch4)
+    $ ch4_vis = str(int(_ch4/10)) + "%"
+    $ _ch3 = GetChanceConvince(punalice, 3)
+    $ _ch3_col = GetChanceColor(_ch3)
+    $ ch3_vis = str(int(_ch3/10)) + "%"
+    $ _ch1 = GetChanceConvince(punalice)
+    $ _ch1_col = GetChanceColor(_ch1)
+    $ ch1_vis = str(int(_ch1/10)) + "%"
+    menu:
+        Alice_13 "Говори, что ты хочешь за молчание?"
+        "Дай $20, и я ничего не скажу {color=[_ch8_col]}(Убеждение. Шанс: [ch8_vis]){/color}":
+            if RandomChance(_ch8):
+                $ punalice[0][0] = 3
+                $ spent_time += 10
+                $ mgg.social += 0.2
+                $ _ch2 = GetChanceConvince(punalice, 2)
+                $ _ch2_col = GetChanceColor(_ch2)
+                $ ch2_vis = str(int(_ch2/10)) + "%"
+                $ flags['smoke.request'] = "money"
+                menu:
+                    Alice_01 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, я дам тебе денег, но только $10, ок?"
+                    "Нет, давай $20 {color=[_ch2_col]}(Убеждение. Шанс: [ch2_vis]){/color}":
+                        if RandomChance(_ch2):
+                            Alice_13 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЧёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
+                            Max_00 "Я жду..."
+                            $ money += 20
+                            $ mgg.social += 0.2
+                            $ AddRelMood('alice', 0, -50)
+                        else:
+                            Alice_14 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nМакс, не наглей! Сейчас принесу $10. Жди..."
+                            Max_00 "Ну ладно, я жду..."
+                            $ money += 10
+                            $ mgg.social += 0.1
+                            $ AddRelMood('alice', 0, -75)
+                    "Хорошо, устроит и $10":
+                        $ money += 10
+                        $ AddRelMood('alice', 0, -25)
+                menu:
+                    Alice_00 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!"
+                    "Удачи!":
+                        jump .end
+            else:
+                jump .fail
+        "Если не будешь носить трусы, буду молчать {color=[_ch4_col]}(Убеждение. Шанс: [ch4_vis]){/color}":
+            # когда будет подарена пижамка, этот пункт будет недоступен, т.к. пижаму Алиса носит без трусиков
+            if RandomChance(_ch4):
+                Alice_13 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
+                Max_00 "Конечно!"
+                $ mgg.social += 0.2
+                $ punalice[0][0] = 3
+                $ flags['smoke.request'] = "nopants"
+                menu:
+                    Alice_09 "А теперь вали отсюда. Дай спокойно покурить!"
+                    "{i}уйти{/i}":
+                        jump .end
+            else:
+                jump .fail
+        "Если не будешь носить лифчик, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}":
+            if RandomChance(_ch3):
+                Alice_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nДа я вроде и так без лифчика все время хожу, только спать одеваю..."
+                Max_00 "Ну вот и спи теперь без него..."
+                Alice_00 "Не знаю, зачем тебе, извращенцу, это нужно, но так и быть, договорились..."
+                Max_00 "Отлично!"
+                $ mgg.social += 0.2
+                $ punalice[0][0] = 3
+                $ flags['smoke.request'] = "sleep"
+                menu:
+                    Alice_09 "А теперь вали отсюда. Дай спокойно покурить!"
+                    "{i}уйти{/i}":
+                        jump .end
+            else:
+                jump .fail
+        "Если будешь курить без верха купальника, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}":
+            if RandomChance(_ch3):
+                Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nМаленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только в следующий раз. Договорились?"
+                Max_00 "Само собой!"
+                $ mgg.social += 0.2
+                $ punalice[0][0] = 3
+                $ flags['smoke.request'] = "toples"
+                menu:
+                    Alice_09 "А теперь вали отсюда. Дай спокойно покурить!"
+                    "{i}уйти{/i}":
+                        jump .end
+            else:
+                jump .fail
+        # "Если разрешишь тебя отшлёпать, то я ничего не скажу {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
+        #     # будет доступно в следующих версиях
+        #     if RandomChance(_ch1):
+        #         $ punalice[0][0] = 3
+        #     else:
+        #         $ mgg.social += 0.1
+        #         jump .fail
+        "Ты знаешь, я сегодня добрый...":
+            $ punalice[0][0] = 1
+            menu:
+                Alice_06 "Сегодня? Значит, попросишь в следующий раз?"
+                "Как знать, может быть...":
+                    pass
+                "Что ты! Нет, конечно...":
+                    pass
+            menu:
+                Alice_00 "Ну вот тогда иди чем-нибудь займись, а меня не отвлекай..."
+                "{i}уйти{/i}":
+                    $ flags['smoke'] = None
+                    $ flags['smoke.request'] = None
+                    jump .end
+
+    menu .fail:
+        Alice_06 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nАга, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..."
+        "{i}уйти{/i}":
+            $ mgg.social += 0.1
+            $ flags['smoke'] = None
+            $ flags['smoke.request'] = None
+            $ punalice[0][0] = 2
+            $ AddRelMood('alice', 0, -50)
+            jump .end
+
+    label .end:
+        $ spent_time += 10
+        jump Waiting

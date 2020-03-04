@@ -7,12 +7,16 @@ label StartPunishment:
     if max(punreason):  # есть причины наказания Макса
         $ pun_list.append("mgg")
 
-    if tm > "18:00":
-        # сестры получают наказание только вечером
+    if tm > "18:00" and 0 < GetWeekday(day) < 6:
+        # Лиза получает наказание только вечером по будним дням
         $ chance = GetLisaPunChance()  # шанс получения Лизой двойки
         if RandomChance(chance):  # получит ли Лиза двойку
             $ punlisa[0][1] = 1
             $ pun_list.append("lisa")
+    $ chance = GetAlicePunChance()  # шанс нахождения Анной сигарет Алисы
+    if RandomChance(chance):  # найдет ли Анна сигареты Алисы
+        $ punalice[0][1] = 1
+        $ pun_list.append("alice")
 
     $ renpy.random.shuffle(pun_list) # перемешаем список последовательности наказания
 
@@ -56,8 +60,16 @@ label punishment:
             else:  # наказывают только Лизу
                 Ann_18 "Лиза, подойди-ка ко мне."
             call punishment_lisa
-        # elif pun_list[i] == "alice":
-        #     call punishment_alice
+        elif pun_list[_i] == "alice":
+            if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
+                if first: # Алиса наказывается первой
+                    $ first = False
+                    Ann_18 "Алиса, начнём с тебя..."
+                else: # Алису наказывают не первой
+                    Ann_18 "Теперь ты, Алиса..."
+            else:  # наказывают только Алису
+                Ann_18 "Алиса, подойди-ка сюда."
+            call punishment_alice
         $ _i += 1
 
     if tm > "14:00":
@@ -257,6 +269,7 @@ label punishment_lisa:
         $ renpy.show("Ann punish-evening lisa-03"+chars["ann"].dress)
 
     $ __mood -= 50 # если Лизу наказывают, ее настроение портится
+    $ talk_var['lisa.pun'] += 1
 
     Lisa_09 "Ма-ам, я больше не буду... Ай... В смысле, буду лучше учиться. Извини..."
     if chars["lisa"].dress == "a":
@@ -289,5 +302,129 @@ label punishment_lisa:
 
 
 label punishment_alice:
+    $ renpy.block_rollback()
+
+    scene BG punish-evening 01
+    $ renpy.show("Alice punish-evening 01"+chars["alice"].dress)
+    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+
+    $ __mood = 0
+
+    # Алиса стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
+    if chars["alice"].dress == "a":  # Алиса в обычной одежде
+        Ann_20 "Подходи, подходи, Алиса, чего ты там мнешься. Штаны снимай, есть разговор!"
+    else: # Алиса в пижамке
+        Ann_20 "Подходи, подходи, Алиса, чего ты там мнешься. Снимай шорты, есть разговор!"
+    Alice_13 "Мам, за что? Что я такого сделала?"
+    if chars["alice"].dress == "a":  # Алиса в обычной одежде
+        $ _text = _("Алиса, ты издеваешься? Я нашла сигареты у тебя в комнате! Ты опять куришь! Быстро сняла штаны и легла на мои колени, кому сказала!")
+    else:
+        $ _text = _("Алиса, ты издеваешься? Я нашла сигареты у тебя в комнате! Ты опять куришь! Быстро сняла шорты и легла на мои колени, кому сказала!")
+    if defend:  # Макс уже не может заступиться
+        Ann_01 "[_text!tq]"
+    else:
+        $ _chance = GetChance(mgg.social, 2, 900)
+        $ _chance_color = GetChanceColor(_chance)
+        $ ch_vis = str(int(_chance/10)) + "%"
+        menu:
+            Ann_01 "[_text!tq]"
+            "{i}Заступиться за Алису {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}":
+                $ defend = True
+                Max_08 "Мам, не нужно наказывать Алису. Это не ее сигареты, к ней сегодня подружка приходила, наверное, она забыла."
+                if "mgg" in pun_list:
+                    Ann_12 "Нет, Макс, даже не пытайся ее оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
+                elif RandomChance(_chance):  # Удалось уговорить Анну
+                    $ mgg.social += 0.2
+                    Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не привечай больше таких подружек, хорошему они не научат..."
+                    Alice_00 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
+                    $ punalice[0][2] = 2
+                    return
+                else:
+                    $ mgg.social += 0.1
+                    Ann_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
+                    $ punalice[0][2] = 1
+            "{i}далее{/i}":
+                pass
+
+    Alice_00 "Мам... Это не мои сигареты... Я не курю, честно..."
+    if chars["alice"].dress == "a":  # Алиса в обычной одежде
+        Ann_14 "Не твои? А чьи они тогда? Быстро снимай штаны!"
+        if flags['smoke'] == "nopants":
+            Alice_00 "Мам, но я сегодня без трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
+            Ann_20 "Ты ещё и без трусов?! Сейчас ещё и за это получишь! Макс пусть смотрит, а тебе будет стыдно. Может тогда за ум возьмёшься!"
+            show Alice punish-evening 02aa
+        else:
+            show Alice punish-evening 02a
+    else: # Алиса в халате
+        Ann_14 "Не твои? А чьи они тогда? Быстро шорты снимай!"
+        Alice_00 "Мам, но под ними нет трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
+        Ann_00 "А вот нечего целый день в пижаме по дому шарахаться. Макс пусть смотрит, а тебе будет стыдно. Может тогда за ум возьмёшься!"
+        show Alice punish-evening 02ba
+
+    $ _text = _("Теперь ложись побыстрее, ужин стынет...")
+
+    if defend:  # Макс уже заступался
+        Ann_18 "[_text!tq]"
+    else:
+        menu:  # У Макса есть шанс заступиться за Алису
+            Ann_18 "[_text!tq]"
+            "{i}Заступиться за Алису {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}":
+                $ defend = True
+                Max_08 "Мам, не нужно наказывать Алису. Это не ее сигареты, к ней сегодня подружка приходила, наверное, она забыла."
+                if "mgg" in pun_list:
+                    Ann_12 "Нет, Макс, даже не пытайся ее оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
+                elif RandomChance(_chance):  # Удалось уговорить Анну
+                    $ mgg.social += 0.2
+                    Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, да не привечай таких подружек, хорошему они не научат..."
+                    Alice_00 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
+                    $ punalice[0][2] = 2
+                    return
+                else:
+                    $ mgg.social += 0.1
+                    Ann_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
+                    $ punalice[0][2] = 1
+            "{i}далее{/i}":
+                pass
+
+    # сцена наказания Алисы
+    scene BG punish-evening 02
+    if chars["alice"].dress == "a":
+        if flags['smoke'] == "nopants":
+            $ renpy.show("Ann punish-evening alice-03"+chars["ann"].dress)
+        else:
+            $ renpy.show("Ann punish-evening alice-01"+chars["ann"].dress)
+    else:
+        $ renpy.show("Ann punish-evening alice-05"+chars["ann"].dress)
+
+    $ __mood -= 50 # если Алису наказывают, ее настроение портится
+    $ talk_var['alice.pun'] += 1
+
+    Alice_13 "Ай, больно же! Мам, я больше не буду!!!"
+    if chars["alice"].dress == "a":
+        if flags['smoke'] == "nopants":
+            $ renpy.show("Ann punish-evening alice-04"+chars["ann"].dress)
+        else:
+            $ renpy.show("Ann punish-evening alice-02"+chars["ann"].dress)
+    else:
+        $ renpy.show("Ann punish-evening alice-06"+chars["ann"].dress)
+
+    Ann_00 "Я знаю, что не будешь. Заслужила наказание, терпи!"
+
+    $ punalice[0][3] = 1  # Алиса понесла наказание
+    if  punalice[0][0] > 0 and punalice[0][1] == 1:  # Макс шантажировал Алису и подставил ее в этот же день
+        $ punalice[0][4] = renpy.random.randint(50, 300)  # подозрительность Алисы растет случайно от 5 до 30%
+
+    # сцена с наказанной Алисой
+    scene BG punish-evening 01
+    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+    if chars["alice"].dress == "a":
+        if flags['smoke'] == "nopants":
+            show Alice punish-evening 03aa
+        else:
+            show Alice punish-evening 03a
+        Ann_01 "Так, всё, надевай свои джинсы. Надеюсь, ты осознала свои поступки и следующего раза не будет..."
+    else:
+        show Alice punish-evening 03ba
+        Ann_01 "Так, всё, надевай свои шорты. Надеюсь, ты осознала свои поступки и следующего раза не будет..."
 
     return

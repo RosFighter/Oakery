@@ -677,10 +677,10 @@ init python:
         if current_room == house[1] and len(current_room.cur_char) == 0:
             CurShedRec = GetPlan(plan_alice, day, tm)
             AvailableActions["usb"].active = True
-            AvailableActions["searchbook"].active = CurShedRec.name != "read"
-            AvailableActions["searchciga"].active = True
+            AvailableActions["searchbook"].active = (CurShedRec.name != "read" and "08:00" <= tm < "22:00")
             if items["spider"].have:
                 AvailableActions["hidespider"].active = True
+            AvailableActions['searchciga'].active = (CurShedRec.name != "smoke" and 'betray_smoke' in dcv and dcv['betray_smoke'].done and "08:00" <= tm < "19:00")
 
         # ванная комната
         if current_room == house[3]:
@@ -1072,6 +1072,56 @@ init python:
         return clip(pun_chance, 0, 1000)
 
 
+    def GetAlicePunChance():  # вероятность наказания Алисы
+        if len(punalice) == 0 or not dcv['smoke'].done:
+            pun_chance = 0  # Алиса не курила
+        elif punalice[0][1]:
+            pun_chance = 1000  # Макс подставил Алису
+        else:
+            help_count = 0
+            grow = 50
+            mind = 250
+            if punalice[0][0] == 2:  # если Макс просил об услуге неудачно, базовый шанс плохо спрятать сигареты 30% (сердитая Алиса менее внимательна, чем обычно)
+                pun_chance = 300.0
+            else:
+                pun_chance = 50.0
+
+            for d in range(1, len(punalice)):
+                if punalice[d][3]:
+                    pun_chance -= mind
+                    mind = 250 # сбрасываем здравомыслие на исходную
+                if punalice[d][0] > 2:
+                    pun_chance -= 150  # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
+                    grow = 50
+                    if d < 7:
+                        help_count += 1
+                        if help_count > 1:  # если за неделю Макс дважды успешно шантажировал, шанс наказания мизерный
+                            break           # прерываем цикл расчета
+                elif not punalice[d][0]:
+                    pun_chance += grow
+                grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
+                mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
+        return clip(pun_chance, 0, 900)
+
+
+    def GetDisobedience():  # вероятность ослушания Алисы
+        chance = 0
+        pun = 0
+        grow = 50
+        for d in range(1, len(punalice)-1):
+            if punalice[d][3]:
+                pun +=1
+                chance -= 200
+                grow = 50
+            else:
+                chance += grow
+                grow *= 1.1
+            if d < 8 and pun == 2:
+                chance = 50
+                break  # если за неделю Алису наказали дважды, шанс нарушения соглашения минимальный
+        clip(chance, 0, 900)
+
+
     def GetDistract(punchar):  # возвращает подозрение персонажа о том, что его наказания не случайны
         dist = 0
         for d in punchar:
@@ -1079,14 +1129,14 @@ init python:
         return dist
 
 
-    def GetChanceConvince(punchar, multiplier):  # возвращает шанс убедить персонажа после наказаний
+    def GetChanceConvince(punchar, multiplier = 1):  # возвращает шанс убедить персонажа после наказаний
         chance = mgg.social * 10 * multiplier
         mind = 250
         for d in punchar:
             if d[3]:  # если сестра была наказана, убедить ее проще
                 chance += mind
             mind = mind * 0.80 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
-        return chance
+        return clip(chance, 0, 900)
 
 
     def GetWeekday(day):  # возвращает номер дня недели

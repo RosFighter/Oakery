@@ -8,6 +8,7 @@ default pose2_3 = renpy.random.choice(["01", "02"])
 default pose3_3 = renpy.random.choice(["01", "02", "03"])
 default random_loc_ab = renpy.random.choice(["a", "b"])
 default tv_scene = renpy.random.choice(["", "bj", "hj"])
+default random_sigloc = renpy.random.choice(["n", "t"])
 
 ################################################################################
 
@@ -327,7 +328,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         "blog2"      : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var['blog']==3", 1),
         "lisa_fd"    : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var['boy']==0"),
         "lisa_swim"  : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim",
-                        "possibility['Swimsuit'].stn < 0 and GetPlan(plan_lisa, day, tm).label == 'lisa_sun'"),
+                        "possibility['Swimsuit'].stn < 0 and GetPlan(plan_lisa, day, tm).name == 'sun'"),
         "lisas_boy"  : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var['boy']==1", 0, "lisa_boy"),
         "lisas_boy2" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy2", "2 < talk_var['boy'] < 6", 1),
         "lisa_dw"    : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var['lisa_dw']==0 and GetPlan(plan_lisa, day, tm).name == 'dishes'", -1),
@@ -356,6 +357,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         "ann_tv"   : 0,
         "alice_tv" : 0,
         "lisa.pun" : 0,
+        'alice.pun': 0,
         "truehelp" : 0,
         }
 
