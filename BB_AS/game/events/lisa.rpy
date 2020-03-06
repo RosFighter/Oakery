@@ -54,9 +54,39 @@ label lisa_shower:
                         jump .end_peeping
             "{i}заглянуть со двора{/i}":
                 jump .start_peeping
+            "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+                jump .ladder
             "{i}уйти{/i}":
                 $ peeping["lisa_shower"] = 4
                 jump .end_peeping
+
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
+        $ __list = ['c', ]
+        if chars['lisa'].nopants:
+            $ __list.append('d')
+        if 'bathrobe' in chars['lisa'].gifts:
+            $ __list.append('a')
+            if chars['lisa'].nopants:
+                $ __list.append('b')
+        $ __r1 = renpy.random.choice(__list)
+
+        scene BG bathroom-morning-00
+        $ renpy.show("Lisa bath-window-morning "+renpy.random.choice(['01', '02', '03'])+__r1)
+        show FG bathroom-morning-00
+        if __r1 == 'a':
+            Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
+        elif __r1 == 'b':
+            Max_05 "Охх... Хорошо, что я уговорил её не носить трусики! Похоже, Лизе и самой приятно, что под халатиком больше ничего нет... а уж мне-то как приятно."
+        elif __r1 == 'c':
+            Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
+        else:
+            Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
+
+        Max_00 "Ладно, пора уходить, а то еще заметит кто-нибудь..."
+        jump .end_peeping
 
     label .start_peeping:
         $ peeping["lisa_shower"] = 1
@@ -472,136 +502,143 @@ label lisa_phone:
 
 label lisa_bath:
     scene location house bathroom door-evening
-    if peeping["lisa_bath"] == 0:
-        $ peeping["lisa_bath"] = 1
-        $ __mood = 0
-        $ __rel = 0
-        menu:
-            Max_00 "В это время Лиза обычно плескается в ванне..."
-            "{i}постучаться{/i}":
-                jump .knock
-            "{i}открыть дверь{/i}":
-                jump .open
-            "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
-                scene Lisa bath 01
-                $ renpy.show("FG voyeur-bath-00"+mgg.dress)
-                Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
-                Max_09 "Нужно что-нибудь придумать..."
-                $ flags["ladder"] = 1
-                jump .end_peeping
-            "{i}установить стремянку{/i}" if items["ladder"].have:
-                scene BG char Max bathroom-window-evening-00
-                $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
-                Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+    if peeping["lisa_bath"] != 0:
+        return
 
-                $ renpy.scene()
-                $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
-                Max_04 "Посмотрим, что у нас тут..."
+    $ peeping["lisa_bath"] = 1
+    $ __mood = 0
+    $ __rel = 0
+    menu:
+        Max_00 "В это время Лиза обычно плескается в ванне..."
+        "{i}постучаться{/i}":
+            jump .knock
+        "{i}открыть дверь{/i}":
+            jump .open
+        "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
+            scene Lisa bath 01
+            $ renpy.show("FG voyeur-bath-00"+mgg.dress)
+            Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
+            Max_09 "Нужно что-нибудь придумать..."
+            $ flags["ladder"] = 1
+            jump .end
+        "{i}установить стремянку{/i}" if items["ladder"].have:
+            scene BG char Max bathroom-window-evening-00
+            $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
+            Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+            $ flags["ladder"] = 3
+            $ items["ladder"].have = False
+            $ items["ladder"].InShop = False
+            jump .ladder
+        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+            jump .ladder
+        "{i}уйти{/i}":
+            jump .end
 
-                $ __r1 = renpy.random.randint(1, 4)
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
 
-                scene BG bath-00
-                $ renpy.show("Lisa bath-window 0"+str(__r1))
-                show FG bath-00
-                if __r1 == 1:
-                    menu:
-                        Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
-                        "{i}смотреть ещё{/i}":
-                            $ spent_time += 10
-                            $ renpy.show("Lisa bath-window "+renpy.random.choice(["02", "03", "04"]))
-                            menu:
-                                Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
-                                "{i}уйти{/i}":
-                                    $ spent_time += 10
-                                    $ chars["lisa"].dress_inf = "00a"
-                                    jump .end_peeping
-                        "{i}уйти{/i}":
-                            jump .end_peeping
-                else:
+        $ __r1 = renpy.random.randint(1, 4)
+
+        scene BG bath-00
+        $ renpy.show("Lisa bath-window 0"+str(__r1))
+        show FG bath-00
+        if __r1 == 1:
+            menu:
+                Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
+                "{i}смотреть ещё{/i}":
+                    $ spent_time += 10
+                    $ renpy.show("Lisa bath-window "+renpy.random.choice(["02", "03", "04"]))
                     menu:
                         Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
-                        "{i}смотреть ещё{/i}":
-                            $ spent_time += 10
-                            show Lisa bath-window 05
-                            menu:
-                                Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
-                                "{i}уйти{/i}":
-                                    $ spent_time += 10
-                                    $ chars["lisa"].dress_inf = "04a"
-                                    jump .end_peeping
                         "{i}уйти{/i}":
-                            jump .end_peeping
+                            $ spent_time += 10
+                            $ chars["lisa"].dress_inf = "00a"
+                            jump .end
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            menu:
+                Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
+                "{i}смотреть ещё{/i}":
+                    $ spent_time += 10
+                    show Lisa bath-window 05
+                    menu:
+                        Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
+                        "{i}уйти{/i}":
+                            $ spent_time += 10
+                            $ chars["lisa"].dress_inf = "04a"
+                            jump .end
+                "{i}уйти{/i}":
+                    jump .end
 
-            "{i}уйти{/i}":
-                jump .end_peeping
+    menu .knock:
+        Lisa "{b}Лиза:{/b} Кто там? Я принимаю ванну..."
+        "Это я, Макс! Можно войти?":
+            menu:
+                Lisa "{b}Лиза:{/b} Я же сказала, что в ванне. Закончу, тогда и войдёшь! А пока жди..."
+                "Хорошо, я подожду...":
+                    jump .end
+                "{i}открыть дверь{/i}":
+                    jump .open_knock
+                "{i}уйти{/i}":
+                    jump .end
+        "{i}открыть дверь{/i}":
+            jump .open_knock
+        "{i}уйти{/i}":
+            jump .end
 
-        menu .knock:
-            Lisa "{b}Лиза:{/b} Кто там? Я принимаю ванну..."
-            "Это я, Макс! Можно войти?":
-                menu:
-                    Lisa "{b}Лиза:{/b} Я же сказала, что в ванне. Закончу, тогда и войдёшь! А пока жди..."
-                    "Хорошо, я подожду...":
-                        jump .end_peeping
-                    "{i}открыть дверь{/i}":
-                        jump .open_knock
-                    "{i}уйти{/i}":
-                        jump .end_peeping
-            "{i}открыть дверь{/i}":
-                jump .open_knock
-            "{i}уйти{/i}":
-                jump .end_peeping
-
-        label .open_knock:
-            if possibility["seduction"].stn < 31:
-                $ __mood -= 50
-                scene BG bath-open-00
-                if GetRelMax("lisa")[0] < 0:
-                    show Lisa bath-open 01
-                    Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
-                elif GetRelMax("lisa")[0] < 2:
-                    $ chars["lisa"].dress_inf = "00a"
-                    show Lisa bath-open 02
-                    Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
-                else:
-                    $ chars["lisa"].dress_inf = "00a"
-                    show Lisa bath-open 03
-                    Lisa_11 "Макс! Я же предупредила, что моюсь! Хочешь со мной поссориться?"
-                Max_00 "Упс! Уже ушёл..."
-
-                jump .end_peeping
+    label .open_knock:
+        if possibility["seduction"].stn < 31:
+            $ __mood -= 50
+            scene BG bath-open-00
+            if GetRelMax("lisa")[0] < 0:
+                show Lisa bath-open 01
+                Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
+            elif GetRelMax("lisa")[0] < 2:
+                $ chars["lisa"].dress_inf = "00a"
+                show Lisa bath-open 02
+                Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
             else:
-                Max_00 "В следующих версиях..."
-                jump .end_peeping
+                $ chars["lisa"].dress_inf = "00a"
+                show Lisa bath-open 03
+                Lisa_11 "Макс! Я же предупредила, что моюсь! Хочешь со мной поссориться?"
+            Max_00 "Упс! Уже ушёл..."
 
-        label .open:
-            if possibility["seduction"].stn < 31:
-                scene BG bath-open-00
-                if GetRelMax("lisa")[0] < 0:
-                    show Lisa bath-open 01
-                elif GetRelMax("lisa")[0] < 2:
-                    $ chars["lisa"].dress_inf = "00a"
-                    show Lisa bath-open 02
-                else:
-                    $ chars["lisa"].dress_inf = "00a"
-                    show Lisa bath-open 03
-                menu:
-                    Lisa_11 "Макс! А постучаться? Я же голая!"
-                    "Извини, дверь была открыта и я подумал...":
-                        pass
-                    "А ты симпатичная...":
-                        pass
-                    "И что такого? Сестра стесняется брата?":
-                        pass
-                Lisa_12 "Макс, выйди немедленно!"
-                Max_00 "Хорошо, уже ухожу..."
+            jump .end
+        else:
+            Max_00 "В следующих версиях..."
+            jump .end
+
+    label .open:
+        if possibility["seduction"].stn < 31:
+            scene BG bath-open-00
+            if GetRelMax("lisa")[0] < 0:
+                show Lisa bath-open 01
+            elif GetRelMax("lisa")[0] < 2:
+                $ chars["lisa"].dress_inf = "00a"
+                show Lisa bath-open 02
             else:
-                Max_00 "В следующих версиях..."
+                $ chars["lisa"].dress_inf = "00a"
+                show Lisa bath-open 03
+            menu:
+                Lisa_11 "Макс! А постучаться? Я же голая!"
+                "Извини, дверь была открыта и я подумал...":
+                    pass
+                "А ты симпатичная...":
+                    pass
+                "И что такого? Сестра стесняется брата?":
+                    pass
+            Lisa_12 "Макс, выйди немедленно!"
+            Max_00 "Хорошо, уже ухожу..."
+        else:
+            Max_00 "В следующих версиях..."
 
-        label .end_peeping:
-            $ AddRelMood("lisa", __rel, __mood)
-            $ spent_time = 10
-            jump Waiting
-    return
+    label .end:
+        $ AddRelMood("lisa", __rel, __mood)
+        $ spent_time = 10
+        jump Waiting
 
 
 label lisa_homework:

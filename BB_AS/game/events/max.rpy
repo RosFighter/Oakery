@@ -742,7 +742,7 @@ label ViewLesson:
 label SearchCigarettes:
     scene BG char Max cigarettes-00
     menu:
-        Max_10 "Так... Где же Алиса спрятала сигареты сегодня?"
+        Max_09 "Так... Где же Алиса спрятала сигареты сегодня?"
         "{i}искать в тумбочке{/i}":
             if (random_sigloc == "n" and dcv['smoke'].done
                     and GetPlan(plan_alice, day, tm).label != "at_friends"
@@ -761,7 +761,7 @@ label SearchCigarettes:
                 jump .no
 
     menu .no:
-        Max_00 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..."
+        Max_10 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..."
         "{i}уйти{/i}":
             $ spent_time += 30
             jump Waiting

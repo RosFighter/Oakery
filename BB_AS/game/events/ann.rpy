@@ -40,85 +40,109 @@ label ann_shower:
     scene location house bathroom door-morning
     if peeping["ann_shower"] == 3:
         Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее еще больше."
+        return
     elif peeping["ann_shower"] == 1:
         Max_00 "Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто."
+        return
     elif  peeping["ann_shower"] == 2:
         Max_00 "Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто."
+        return
     elif peeping["ann_shower"] > 3:
         menu:
             Max_00 "Мама сейчас принимает душ..."
             "{i}уйти{/i}":
-                pass
+                return
     else:
         $ peeping["ann_shower"] = 4
         menu:
             Max_00 "Похоже, мама принимает душ..."
             "{i}заглянуть со двора{/i}":
                 jump .start_peeping
+            "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+                jump .ladder
             "{i}уйти{/i}":
                 jump .end_peeping
 
-        label .start_peeping:
-            $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-            $ mgg.stealth += 0.03
-            $ __ran1 = renpy.random.randint(1, 4)
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
+        $ __r1 = renpy.random.choice(['a','b','c','d'])
 
-            $ _chance = GetChance(mgg.stealth, 3)
-            $ _chance_color = GetChanceColor(_chance)
-            $ ch_vis = str(int(_chance/10)) + "%"
-            scene image ("Ann shower 0"+str(__ran1))
-            $ renpy.show("FG shower 00"+mgg.dress)
+        scene BG bathroom-morning-00
+        $ renpy.show("Ann bath-window-morning "+renpy.random.choice(['01', '02', '03'])+__r1)
+        show FG bathroom-morning-00
+        if __r1 == 'a':
+            Max_07 "Да-а... Распахнутый халатик на маме - это просто изумительное шоу! Такие соблазнительные сосочки... да ещё и так близко... Ммм..."
+        elif __r1 == 'b':
+            Max_05 "О, да! Мама решила не надевать трусики и правильно сделала, потому что увидеть эту киску с утра пораньше - просто сказка!"
+        elif __r1 == 'c':
+            Max_03 "Вот это повезло... Мама в одних лишь трусиках, а её упругая грудь предстаёт передо мной во всей своей красе! Так бы любовался и любовался ей..."
+        else:
+            Max_06 "Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все ёё округлости!"
+
+        Max_00 "Ладно, пора уходить, а то еще заметит неровён час..."
+        jump .end_peeping
+
+    label .start_peeping:
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
+        $ __ran1 = renpy.random.randint(1, 4)
+
+        $ _chance = GetChance(mgg.stealth, 3)
+        $ _chance_color = GetChanceColor(_chance)
+        $ ch_vis = str(int(_chance/10)) + "%"
+        scene image ("Ann shower 0"+str(__ran1))
+        $ renpy.show("FG shower 00"+mgg.dress)
+        menu:
+            Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
+            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+                jump .closer_peepeng
+            "{i}уйти{/i}":
+                jump .end_peeping
+
+    label .closer_peepeng:
+        if RandomChance(_chance):
+            $ peeping["ann_shower"] = 1
+            $ mgg.stealth += 0.2
+            $ notify_list.append(_("Скрытность Макса повысилась"))
+            $ chars["ann"].dress_inf = "00a"
+            $ __ran1 = renpy.random.randint(1, 6)
+            scene BG shower-closer
+            show image ("Ann shower-closer 0"+str(__ran1))
+            show FG shower-closer
+            if __ran1 % 2 > 0:
+                Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+            else:
+                Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+        elif RandomChance(_chance):
+            $ peeping["ann_shower"] = 2
+            $ mgg.stealth += 0.1
+            $ notify_list.append(_("Скрытность Макса немного повысилась"))
+            $ chars["ann"].dress_inf = "00a"
+            $ __ran1 = renpy.random.randint(7, 8)
+            scene BG shower-closer
+            show image ("Ann shower-closer 0"+str(__ran1))
+            show FG shower-closer
+            Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
+            jump .end_peeping
+        else:
+            $ peeping["ann_shower"] = 3
+            $ mgg.stealth += 0.05
+            $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
+            $ __ran1 = renpy.random.choice(["09", "10"])
+            scene BG shower-closer
+            show image ("Ann shower-closer "+__ran1)
+            show FG shower-closer
             menu:
-                Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
-                "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
-                    jump .closer_peepeng
-                "{i}уйти{/i}":
+                Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..."
+                "{i}Бежать{/i}":
                     jump .end_peeping
 
-        label .closer_peepeng:
-            if RandomChance(_chance):
-                $ peeping["ann_shower"] = 1
-                $ mgg.stealth += 0.2
-                $ notify_list.append(_("Скрытность Макса повысилась"))
-                $ chars["ann"].dress_inf = "00a"
-                $ __ran1 = renpy.random.randint(1, 6)
-                scene BG shower-closer
-                show image ("Ann shower-closer 0"+str(__ran1))
-                show FG shower-closer
-                if __ran1 % 2 > 0:
-                    Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-                else:
-                    Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
-            elif RandomChance(_chance):
-                $ peeping["ann_shower"] = 2
-                $ mgg.stealth += 0.1
-                $ notify_list.append(_("Скрытность Макса немного повысилась"))
-                $ chars["ann"].dress_inf = "00a"
-                $ __ran1 = renpy.random.randint(7, 8)
-                scene BG shower-closer
-                show image ("Ann shower-closer 0"+str(__ran1))
-                show FG shower-closer
-                Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
-                jump .end_peeping
-            else:
-                $ peeping["ann_shower"] = 3
-                $ mgg.stealth += 0.05
-                $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
-                $ __ran1 = renpy.random.choice(["09", "10"])
-                scene BG shower-closer
-                show image ("Ann shower-closer "+__ran1)
-                show FG shower-closer
-                menu:
-                    Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..."
-                    "{i}Бежать{/i}":
-                        jump .end_peeping
-
-        label .end_peeping:
-            $ current_room, prev_room = prev_room, current_room
-            $ spent_time = 10
-            jump Waiting
-
-    return
+    label .end_peeping:
+        $ current_room, prev_room = prev_room, current_room
+        $ spent_time = 10
+        jump Waiting
 
 
 label ann_yoga:
@@ -297,108 +321,114 @@ label ann_alice_swim:
 
 label ann_bath:
     scene location house bathroom door-evening
-    if peeping["ann_bath"] == 0:
-        $ peeping["ann_bath"] = 1
-        menu:
-            Max_00 "Видимо, мама принимает ванну..."
-            "{i}постучаться{/i}":
-                menu:
-                    Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-                    "Это я, Макс.":
-                        menu:
-                            Ann "{b}Анна:{/b} Дорогой, что ты хотел?"
-                            "Можно я войду?":
-                                $ config.menu_include_disabled = True
-                                menu:
-                                    Ann "{b}Анна:{/b} Ну... хорошо, входи. Только не смотри!"
-                                    "{i}Войти{/i} \n(в следующей версии...)" if False: ## пока нет изображений
-                                        menu:
-                                            Ann_01 "Макс, так что там у тебя такое срочное, что ты не мог подождать пол часа?"
-                                            "Просто, я соскучился!":
-                                                Ann_07 "Макс! Я думала, что-то случилось, а ты просто балуешься. Подожди меня за дверью. Я скоро!"
-                                                Max_00 "Хорошо..."
-                                                jump .end
-                                            "Ну это, хотел поглазеть...":
-                                                Ann_13 "Что?! А ну-ка быстро выметайся отсюда! Я скоро закончу."
-                                                Max_00 "Как скажешь!"
-                                                jump .end
-                                            "Я собирался спать и хотел принять душ перед сном":
-                                                ###############################
-                                                pass
-                                            "Ой, не буду тебе мешать":
-                                                jump .end
-                                    "Ой, нет, я передумал":
-                                        jump .end
-                            "Нет, ничего":
-                                pass
-                            "Я подожду...":
-                                pass
-                        Ann "{b}Анна:{/b} Хорошо, я скоро закончу..."
-                        Max_00 "Ага..."
-                    "{i}уйти{/i}":
-                        pass
-            "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
-                scene Ann bath 01
-                $ renpy.show("FG voyeur-bath-00"+mgg.dress)
-                Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
-                menu:
-                    Max_09 "Нужно что-нибудь придумать..."
-                    "{i}уйти{/i}":
-                        $ flags["ladder"] = 1
-            "{i}установить стремянку{/i}" if items["ladder"].have:
-                scene BG char Max bathroom-window-evening-00
-                $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
-                Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+    if peeping["ann_bath"] != 0:
+        return
 
-                $ renpy.scene()
-                $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
-                Max_04 "Посмотрим, что у нас тут..."
-
-                $ __r1 = renpy.random.randint(1, 4)
-
-                scene BG bath-00
-                $ renpy.show("Ann bath-window 0"+str(__r1))
-                show FG bath-00
-                if __r1 == 1:
+    $ peeping["ann_bath"] = 1
+    menu:
+        Max_00 "Видимо, мама принимает ванну..."
+        "{i}постучаться{/i}":
+            menu:
+                Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+                "Это я, Макс.":
                     menu:
-                        Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..."
-                        "{i}смотреть ещё{/i}":
-                            $ spent_time += 10
-                            $ renpy.show("Ann bath-window "+renpy.random.choice(["02", "03", "04"]))
+                        Ann "{b}Анна:{/b} Дорогой, что ты хотел?"
+                        "Можно я войду?":
+                            $ config.menu_include_disabled = True
                             menu:
-                                Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
-                                "{i}уйти{/i}":
-                                    $ spent_time += 10
-                                    $ chars["ann"].dress_inf = "00a"
+                                Ann "{b}Анна:{/b} Ну... хорошо, входи. Только не смотри!"
+                                "{i}Войти{/i} \n(в следующей версии...)" if False: ## пока нет изображений
+                                    menu:
+                                        Ann_01 "Макс, так что там у тебя такое срочное, что ты не мог подождать пол часа?"
+                                        "Просто, я соскучился!":
+                                            Ann_07 "Макс! Я думала, что-то случилось, а ты просто балуешься. Подожди меня за дверью. Я скоро!"
+                                            Max_00 "Хорошо..."
+                                            jump .end
+                                        "Ну это, хотел поглазеть...":
+                                            Ann_13 "Что?! А ну-ка быстро выметайся отсюда! Я скоро закончу."
+                                            Max_00 "Как скажешь!"
+                                            jump .end
+                                        "Я собирался спать и хотел принять душ перед сном":
+                                            ###############################
+                                            pass
+                                        "Ой, не буду тебе мешать":
+                                            jump .end
+                                "Ой, нет, я передумал":
                                     jump .end
-                        "{i}уйти{/i}":
-                            jump .end
-                else:
+                        "Нет, ничего":
+                            pass
+                        "Я подожду...":
+                            pass
+                    Ann "{b}Анна:{/b} Хорошо, я скоро закончу..."
+                    Max_00 "Ага..."
+                    jump .end
+                "{i}уйти{/i}":
+                    jump .end
+        "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
+            scene Ann bath 01
+            $ renpy.show("FG voyeur-bath-00"+mgg.dress)
+            Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
+            menu:
+                Max_09 "Нужно что-нибудь придумать..."
+                "{i}уйти{/i}":
+                    $ flags["ladder"] = 1
+                    jump .end
+        "{i}установить стремянку{/i}" if items["ladder"].have:
+            scene BG char Max bathroom-window-evening-00
+            $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
+            Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+            $ flags["ladder"] = 3
+            $ items["ladder"].have = False
+            $ items["ladder"].InShop = False
+            jump .ladder
+        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+            jump .ladder
+        "{i}уйти{/i}":
+            jump .end
+
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
+
+        $ __r1 = renpy.random.randint(1, 4)
+
+        scene BG bath-00
+        $ renpy.show("Ann bath-window 0"+str(__r1))
+        show FG bath-00
+        if __r1 == 1:
+            menu:
+                Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..."
+                "{i}смотреть ещё{/i}":
+                    $ spent_time += 10
+                    $ renpy.show("Ann bath-window "+renpy.random.choice(["02", "03", "04"]))
                     menu:
                         Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
-                        "{i}смотреть ещё{/i}":
-                            $ spent_time += 10
-                            show Ann bath-window 05
-                            menu:
-                                Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
-                                "{i}уйти{/i}":
-                                    $ spent_time += 10
-                                    $ chars["ann"].dress_inf = "04a"
-                                    jump .end
                         "{i}уйти{/i}":
+                            $ spent_time += 10
+                            $ chars["ann"].dress_inf = "00a"
                             jump .end
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            menu:
+                Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
+                "{i}смотреть ещё{/i}":
+                    $ spent_time += 10
+                    show Ann bath-window 05
+                    menu:
+                        Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
+                        "{i}уйти{/i}":
+                            $ spent_time += 10
+                            $ chars["ann"].dress_inf = "04a"
+                            jump .end
+                "{i}уйти{/i}":
+                    jump .end
 
-            "{i}уйти{/i}":
-                pass
-        label .end:
-            $ config.menu_include_disabled = False
-            # $ current_room, prev_room = prev_room, current_room
-            $ spent_time += 10
-            jump Waiting
-
-        label .phrase:
-
-    return
+    label .end:
+        $ config.menu_include_disabled = False
+        $ spent_time += 10
+        jump Waiting
 
 
 label ann_tv:

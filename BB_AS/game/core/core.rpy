@@ -96,7 +96,7 @@ label NewDay:
     $ talk_var["ann_tv"]    = 0
     $ talk_var["alice_tv"]  = 0
     if 'smoke' in talk_var:
-        $ talk_var["smoke"]  = 0
+        $ talk_var["smoke"] = 0
         if flags['smoke.request'] == 'money':
             $ flags['smoke'] = None
             $ flags['smoke.request'] = None
@@ -106,8 +106,16 @@ label NewDay:
             if RandomChance(__chance):
                 $ flags['smoke'] = 'not_' + flags['smoke']
                 $ flags['noted'] = False  # нарушение еще не замечено Максом
+                if flags['smoke.request'] == 'nopants':
+                    $ chars['alice'].nopants = False
+                elif flags['smoke.request'] == 'sleep':
+                    $ chars['alice'].sleeptoples = False
             else:
                 $ flags['smoke'] = flags['smoke.request']
+                if flags['smoke.request'] == 'nopants':
+                    $ chars['alice'].nopants = True
+                elif flags['smoke.request'] == 'sleep':
+                    $ chars['alice'].sleeptoples = True
 
     $ random_loc_ab = renpy.random.choice(["a", "b"])
     $ random_sigloc = renpy.random.choice(["n", "t"])
@@ -230,12 +238,12 @@ label after_load:
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
-    elif current_ver < "v0.03.0.000":
-        $ current_ver = "v0.02.0.000" # ставим номер версии
-        # и выполняем необходимые действия с переменными или фиксы
-        pass
-
     if 'online_cources' not in globals():
         call InitCources
     if 'alice.pun' not in talk_var:
         $ talk_var['alice.pun'] = 0
+    if current_ver != "0.03.0.002":
+        $ current_ver = "0.03.0.002"
+        $ chars['lisa'].gifts = []
+        $ chars['ann'].gifts = []
+        $ chars['alice'].gifts = []

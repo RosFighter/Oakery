@@ -5,74 +5,84 @@
 
 label alice_bath:
     scene location house bathroom door-evening
-    if peeping["alice_bath"] == 0:
-        $ peeping["alice_bath"] = 1
-        menu:
-            Max_00 "Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни."
-            "{i}постучаться{/i}":
-                menu:
-                    Alice "{b}Алиса:{/b} Кому там не спится? Я ванну набираю..."
-                    "Это я, Макс. Можно войти?":
-                        Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
-                        Max_00 "Ладно, ладно..."
-                    "{i}уйти{/i}":
-                        pass
-            "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
-                scene Alice bath 01
-                $ renpy.show("FG voyeur-bath-00"+mgg.dress)
-                Max_00 "Кажется, Алиса и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но подходить ближе опасно - может заметить..."
-                menu:
-                    Max_09 "Нужно что-нибудь придумать..."
-                    "{i}уйти{/i}":
-                        $ flags["ladder"] = 1
-            "{i}установить стремянку{/i}" if items["ladder"].have:
-                scene BG char Max bathroom-window-evening-00
-                $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
-                Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+    if peeping["alice_bath"] != 0:
+        return
 
-                $ renpy.scene()
-                $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
-                Max_04 "Посмотрим, что у нас тут..."
+    $ peeping["alice_bath"] = 1
+    menu:
+        Max_00 "Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни."
+        "{i}постучаться{/i}":
+            menu:
+                Alice "{b}Алиса:{/b} Кому там не спится? Я ванну набираю..."
+                "Это я, Макс. Можно войти?":
+                    Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
+                    Max_00 "Ладно, ладно..."
+                "{i}уйти{/i}":
+                    pass
+            jump .end
+        "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
+            scene Alice bath 01
+            $ renpy.show("FG voyeur-bath-00"+mgg.dress)
+            Max_00 "Кажется, Алиса и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но подходить ближе опасно - может заметить..."
+            menu:
+                Max_09 "Нужно что-нибудь придумать..."
+                "{i}уйти{/i}":
+                    $ flags["ladder"] = 1
+                    jump .end
+        "{i}установить стремянку{/i}" if items["ladder"].have:
+            scene BG char Max bathroom-window-evening-00
+            $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
+            Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+            $ flags["ladder"] = 3
+            $ items["ladder"].have = False
+            $ items["ladder"].InShop = False
+            jump .ladder
+        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+            jump .ladder
+        "{i}уйти{/i}":
+            jump .end
 
-                $ __r1 = renpy.random.randint(1, 4)
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
 
-                scene BG bath-00
-                $ renpy.show("Alice bath-window 0"+str(__r1))
-                show FG bath-00
-                if __r1 == 1:
-                    menu:
-                        Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..."
-                        "{i}смотреть ещё{/i}":
-                            $ spent_time += 10
-                            $ renpy.show("Alice bath-window "+renpy.random.choice(["02", "03", "04"]))
-                            menu:
-                                Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
-                                "{i}уйти{/i}":
-                                    $ spent_time += 10
-                                    $ chars["alice"].dress_inf = "00aa"
-                                    pass
-                        "{i}уйти{/i}":
-                            pass
-                else:
+        $ __r1 = renpy.random.randint(1, 4)
+
+        scene BG bath-00
+        $ renpy.show("Alice bath-window 0"+str(__r1))
+        show FG bath-00
+        if __r1 == 1:
+            menu:
+                Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..."
+                "{i}смотреть ещё{/i}":
+                    $ spent_time += 10
+                    $ renpy.show("Alice bath-window "+renpy.random.choice(["02", "03", "04"]))
                     menu:
                         Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
-                        "{i}смотреть ещё{/i}":
-                            $ spent_time += 10
-                            show Alice bath-window 05
-                            menu:
-                                Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
-                                "{i}уйти{/i}":
-                                    $ spent_time += 10
-                                    $ chars["alice"].dress_inf = "04aa"
-                                    pass
                         "{i}уйти{/i}":
+                            $ spent_time += 10
+                            $ chars["alice"].dress_inf = "00aa"
                             pass
-
-            "{i}уйти{/i}":
-                pass
+                "{i}уйти{/i}":
+                    pass
+        else:
+            menu:
+                Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
+                "{i}смотреть ещё{/i}":
+                    $ spent_time += 10
+                    show Alice bath-window 05
+                    menu:
+                        Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
+                        "{i}уйти{/i}":
+                            $ spent_time += 10
+                            $ chars["alice"].dress_inf = "04aa"
+                            pass
+                "{i}уйти{/i}":
+                    pass
+    label .end:
         $ spent_time += 10
         jump Waiting
-    return
 
 
 label alice_sleep_night:
@@ -149,84 +159,124 @@ label alice_shower:
     scene location house bathroom door-morning
     if peeping["alice_shower"] == 3:
         Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее еще больше, а то точно что-нибудь оторвет."
+        return
     elif peeping["alice_shower"] == 1:
         Max_00 "Я уже подсматривал сегодня за Алисой. Не стоит искушать судьбу слишком часто."
+        return
     elif  peeping["alice_shower"] == 2:
         Max_00 "Алиса меня и так сегодня едва не поймала. Не стоит искушать судьбу слишком часто."
+        return
     elif peeping["alice_shower"] > 3:
         menu:
             Max_00 "Алиса сейчас принимает душ..."
             "{i}уйти{/i}":
-                pass
+                return
     else:
         $ peeping["alice_shower"] = 4
         menu:
             Max_00 "Похоже, Алиса принимает душ..."
             "{i}заглянуть со двора{/i}":
                 jump .start_peeping
+            "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+                jump .ladder
             "{i}уйти{/i}":
-                jump .end_peeping
+                return
 
-        label .start_peeping:
-            $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-            $ mgg.stealth += 0.03
-            $ __ran1 = renpy.random.randint(1, 4)
+    label .start_peeping:
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
+        $ __ran1 = renpy.random.randint(1, 4)
 
-            $ _chance = GetChance(mgg.stealth, 3, 900)
-            $ _chance_color = GetChanceColor(_chance)
-            $ ch_vis = str(int(_chance/10)) + "%"
-            scene image ("Alice shower 0"+str(__ran1))
-            $ renpy.show("FG shower 00"+mgg.dress)
-            menu:
-                Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
-                "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
-                    jump .closer_peepeng
-                "{i}уйти{/i}":
-                    jump .end_peeping
+        $ _chance = GetChance(mgg.stealth, 3, 900)
+        $ _chance_color = GetChanceColor(_chance)
+        $ ch_vis = str(int(_chance/10)) + "%"
+        scene image ("Alice shower 0"+str(__ran1))
+        $ renpy.show("FG shower 00"+mgg.dress)
+        menu:
+            Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
+            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+                jump .closer_peepeng
+            "{i}уйти{/i}":
+                jump .end
 
-        label .closer_peepeng:
-            if RandomChance(_chance):
-                $ peeping["alice_shower"] = 1
-                $ mgg.stealth += 0.2
-                $ notify_list.append(_("Скрытность Макса повысилась"))
-                $ chars["alice"].dress_inf = "00aa"
-                $ __ran1 = renpy.random.randint(1, 6)
-                scene BG shower-closer
-                show image ("Alice shower-closer 0"+str(__ran1))
-                show FG shower-closer
-                if __ran1 % 2 > 0:
-                    Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nСупер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
-                else:
-                    Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-            elif RandomChance(_chance):
-                $ peeping["alice_shower"] = 2
-                $ mgg.stealth += 0.1
-                $ notify_list.append(_("Скрытность Макса немного повысилась"))
-                $ chars["alice"].dress_inf = "00aa"
-                $ __ran1 = renpy.random.randint(7, 8)
-                scene BG shower-closer
-                show image ("Alice shower-closer 0"+str(__ran1))
-                show FG shower-closer
-                Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
-                jump .end_peeping
+    label .closer_peepeng:
+        if RandomChance(_chance):
+            $ peeping["alice_shower"] = 1
+            $ mgg.stealth += 0.2
+            $ notify_list.append(_("Скрытность Макса повысилась"))
+            $ chars["alice"].dress_inf = "00aa"
+            $ __ran1 = renpy.random.randint(1, 6)
+            scene BG shower-closer
+            show image ("Alice shower-closer 0"+str(__ran1))
+            show FG shower-closer
+            if __ran1 % 2 > 0:
+                Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nСупер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
             else:
-                $ peeping["Alice_shower"] = 3
-                $ mgg.stealth += 0.05
-                $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
-                $ __ran1 = renpy.random.choice(["09", "10"])
-                scene BG shower-closer
-                show image ("Alice shower-closer "+__ran1)
-                show FG shower-closer
-                menu:
-                    Alice_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!"
-                    "{i}Бежать{/i}":
-                        jump .end_peeping
+                Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
+        elif RandomChance(_chance):
+            $ peeping["alice_shower"] = 2
+            $ mgg.stealth += 0.1
+            $ notify_list.append(_("Скрытность Макса немного повысилась"))
+            $ chars["alice"].dress_inf = "00aa"
+            $ __ran1 = renpy.random.randint(7, 8)
+            scene BG shower-closer
+            show image ("Alice shower-closer 0"+str(__ran1))
+            show FG shower-closer
+            Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
+            jump .end
+        else:
+            $ peeping["Alice_shower"] = 3
+            $ mgg.stealth += 0.05
+            $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
+            $ __ran1 = renpy.random.choice(["09", "10"])
+            scene BG shower-closer
+            show image ("Alice shower-closer "+__ran1)
+            show FG shower-closer
+            menu:
+                Alice_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!"
+                "{i}Бежать{/i}":
+                    jump .end
 
-        label .end_peeping:
-            $ current_room, prev_room = prev_room, current_room
-            $ spent_time = 10
-            jump Waiting
-    return
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
+        if chars['alice'].nopants:
+            $ __r1 = renpy.random.choice(['b', 'd'])
+        else:
+            $ __r1 = renpy.random.choice(['a', 'c'])
+
+        scene BG bathroom-morning-00
+        $ renpy.show("Alice bath-window-morning "+renpy.random.choice(['01', '02', '03'])+__r1)
+        show FG bathroom-morning-00
+        if flags['smoke'] == 'not_nopants' and not flags['noted']:
+            # Алиса в трусиках, хотя должна быть без них и Макс еще об этом не знает
+            Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
+            Max_00 "Непорядок. Нужно с этим что-то делать..."
+            if __r1 == 'a':
+                $ chars["alice"].dress_inf = "04ca"
+            else:
+                $ chars["alice"].dress_inf = "02fa"
+            $ flags['noted'] = True
+        elif __r1 == 'a':
+            Max_02 "Да-а... Может Алиса и в халатике, но сиськи её видны просто замечательно! А они у неё - что надо..."
+            $ chars["alice"].dress_inf = "04ca"
+        elif __r1 == 'b':
+            Max_05 "Ого! Кто бы мог подумать, что курение может принести пользу в виде моей сестрёнки, не носящей трусики. Как же она хороша..."
+            $ chars["alice"].dress_inf = "04da"
+        elif __r1 == 'c':
+            Max_04 "Прекрасно! Алиса сегодня без халатика... в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
+            $ chars["alice"].dress_inf = "02fa"
+        else:
+            Max_06 "Вау! Алиса сегодня совершенно голая! Как мы и договорились, трусики она не носит и даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями..."
+            $ chars["alice"].dress_inf = "00a"
+
+        Max_00 "Ладно, хорошего понемногу, а то еще заметит меня здесь кто-нибудь..."
+
+    label .end:
+        $ current_room, prev_room = prev_room, current_room
+        $ spent_time = 10
+        jump Waiting
 
 
 label alice_rest_morning:
@@ -382,12 +432,19 @@ label alice_evening_closer:
 label spider_in_bed:
     $ __mood = 0
     $ __toples = False
+    if 'smoke' in talk_var and flags['smoke'] == 'sleep':
+        $ suf = 'a'
+    else:
+        $ suf = ''
+    if flags['smoke'] == 'not_sleep':
+        $ flags['noted'] = True
+
     scene BG char Alice spider-night-01
-    $ renpy.show("Alice spider-night 01-"+renpy.random.choice(["01", "02", "03"]))
+    $ renpy.show("Alice spider-night 01-"+renpy.random.choice(["01", "02", "03"])+suf)
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
-    $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"]))
+    $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"])+suf)
     show Alice spider-night 02-01
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
@@ -417,7 +474,7 @@ label spider_in_bed:
 
     label .help:
         scene BG char Alice spider-night-03
-        $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["01", "02", "03"]))
+        $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["01", "02", "03"])+suf)
         show Max spider-night 03-01
 
         $ _ch1 = GetChance(mgg.social, 5)
@@ -429,9 +486,10 @@ label spider_in_bed:
         $ _ch3 = GetChance(mgg.social, 2)
         $ _ch3_color = GetChanceColor(_ch3)
         $ ch3_vis = str(int(_ch3/10)) + "%"
+
         menu:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
-            "А что мне за это будет?":
+            "А что мне за это будет?" if suf == '' and not flags['noted']:  # Вариант недоступен, если Алиса без лифчика или нарушает договоренность и Макс об этом знает
                 show Max spider-night 03-02
                 show Alice spider-night 03-04
                 menu:
@@ -454,9 +512,32 @@ label spider_in_bed:
                     "А, ничего. Так поймаю...":
                         $ __mood += 100
                         jump .spider
-            "Хорошо, где он там...":
+            "А что мне за это будет?" if suf != '':  # Алиса без лифчика
+                show Max spider-night 03-02
+                show Alice spider-night 03-04a
+                Alice_00 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
+                Max_00 "Хорошо, хорошо, успокойся, сейчас поймаю я твоего паука..."
+                jump .spider
+            "Хорошо, где он там..." if not flags['noted']:  # Вариант недоступен, если Алиса нарушает договоренность и Макс об этом знает
                 $ __mood += 100
                 jump .spider
+            "Паука-то я поймаю, но, кажется, кое-кто нарушает уговор" if flags['noted']:
+                if flags['smoke'] == 'not_sleep':
+                    # Алиса должна спать без лифчика
+                    Alice_00 "Макс, ну не удобно мне без лифчика спать. Как встану воды ночью попить - одеваться надо..."
+                else:
+                    # Алиса должна днем ходить без трусов
+                    Alice_00 "О чем это ты, Макс?"
+                    Max_00 "Я видел, кок ты одевала днем трусы, хотя договаривались мы иначе."
+                    Alice_00 "Тут ты прав, я их одела, без них мне все натирает..."
+                Max_00 "Ну хорошо, я тебя освобождаю от договоренности, но в компенсацию покажи мне попку!"
+                $ renpy.show('Alice spider-night 05-'+renpy.random.choice(['01', '02', '03']))
+                Alice_00 "Ну ты и извращенец, Макс, смотри!"
+                Max_00 "Классная у тебя попка, сестрёнка!"
+                Alice_00 "Посмотрел и хватит, иди уже лови этого паука!"
+                Max_00 "Ладно, ладно, сейчасм поймаю..."
+                jump .spider
+
     label .fail:
         show Alice spider-night 03-05
         Alice_17 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЧто?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
@@ -592,24 +673,22 @@ label alice_smoke:
         else:
             if flags['smoke'] is None:
                 # нет текущих требований
-                pass
+                jump smoke_fear
             elif flags['smoke'] == "toples":
                 # текущее требование курить топлес. Выполняется
-                pass
+                jump smoke_toples
             elif flags['smoke'] == "not_toples":
                 #  текущее требование курить топлес. Не выполняется
-                pass
-            elif flags['smoke'] == "sleep" or (flags['smoke'] == "not_sleep" and not flags['noted']):
-                # текущее требование спать топлес. Выполняется или Макс не знает о нарушении
-                pass
-            elif flags['smoke'] == "not_sleep" and flags['noted']:
-                # текущее требование спать топлес. Не выполняется
-                pass
+                jump smoke_not_toples
+            elif flags['smoke'] == "sleep" or flags['smoke'] == "not_sleep":
+                # текущее требование спать топлес.
+                # если макс знает о нарушениях, решает все через паука.
+                jump smoke_sleep
             elif flags['smoke'] == "nopants" or (flags['smoke'] == "not_nopants" and not flags['noted']):
                 # текущее требование ходить днем без трусов. Выполняется или Макс не знает о нарушении
-                pass
+                jump smoke_nopants
             elif flags['smoke'] == "not_nopants" and flags['noted']:
                 # текущее требование ходить днем без трусов. Не выполняется
-                pass
+                jump smoke_not_nopants
 
     return

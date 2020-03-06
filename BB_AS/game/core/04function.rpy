@@ -1101,7 +1101,7 @@ init python:
                     pun_chance += grow
                 grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
-        return clip(pun_chance, 0, 900)
+        return clip(pun_chance, 0, 1000)
 
 
     def GetDisobedience():  # вероятность ослушания Алисы
