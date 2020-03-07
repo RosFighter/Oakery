@@ -518,7 +518,7 @@ translate english about_blog_3a839884:
 translate english about_blog_814aee55:
 
     # Max_04 "Прикольно... Ага. Котики. Не, устарели. Киски. Ну, смотря какие..." nointeract
-    Max_04 "It's funny... Uh-huh. SEALs. Nah, out of date. Pussy. Well, that depends..." nointeract
+    Max_04 "It's funny... Uh-huh. Cats. Nah, out of date. Pussy. Well, that depends..." nointeract
 
 # game/events/max.rpy:365
 translate english about_blog_bb8942c7:
