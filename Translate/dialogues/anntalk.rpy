@@ -374,19 +374,19 @@ translate english strings:
 translate english talk_about_smoking_becba3c8:
 
     # Ann_12 "Макс. Я не уверена, но мне кажется, что чувствую запах сигаретного дыма. К нам кто-то приходил?" nointeract
-    Ann_12 "Max, I'm not sure but I think I smell some cigarette smoke. Did we had some guests?" nointeract
+    Ann_12 "Max. I'm not sure, but I think I smell cigarette smoke. Did somebody come to see us?" nointeract
 
 # game/dialogues/anntalk.rpy:248
 translate english talk_about_smoking_812b7a4b:
 
     # Ann_00 "Точно? Макс, ты ничего не хочешь рассказать?" nointeract
-    Ann_00 "Are you sure you don't want to tell me anything?" nointeract
+    Ann_00 "Are you sure? Is there anything you want to tell me?" nointeract
 
 # game/dialogues/anntalk.rpy:251
 translate english talk_about_smoking_b75bee26:
 
     # Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
-    Ann_01 "uh, maybe you're right. Or maybe it just came from the neighbors or something... Anyway, let's go have a dinner."
+    Ann_01 "Yeah? Well, maybe it really did. Or maybe it came from the neighbours...Anyway, let's go have a dinner."
 
 # game/dialogues/anntalk.rpy:255
 translate english talk_about_smoking_bc384657:
@@ -410,7 +410,7 @@ translate english talk_about_smoking_d217c75e:
 translate english talk_about_smoking_ae9788a4:
 
     # Alice_16 "Макс! Ты невыносим. Я уже подумала, что ты нормальный брат, а ты..." nointeract
-    Alice_16 "Ugh, Max! Just when I though you may be a decent brother, you had to immediately prove me wrong..." nointeract
+    Alice_16 "Ugh, Max! Just when I though you could be a decent brother, you had to immediately prove me wrong..." nointeract
 
 # game/dialogues/anntalk.rpy:277
 translate english talk_about_smoking_82373ff8:
@@ -464,7 +464,7 @@ translate english talk_about_smoking_smoke_36a4946b:
 translate english talk_about_smoking_smoke_7c83b5a1:
 
     # Ann_19 "Что случилось?! Не притворяйся тут невинной овечкой! Макс говорит, что видел, как ты курила!"
-    Ann_19 "What happened? Don't play innocent with me! Max tells me you were smoking!"
+    Ann_19 "What happened? Don't play innocent with me! Max says you were smoking!"
 
 # game/dialogues/anntalk.rpy:324
 translate english talk_about_smoking_smoke_ed7bfc86:
@@ -476,7 +476,7 @@ translate english talk_about_smoking_smoke_ed7bfc86:
 translate english talk_about_smoking_smoke_d155e002:
 
     # Alice_17 "Ну и придурок же ты, Макс! Мы же договорились, а ты..."
-    Alice_17 "What the hell, Max!? Didn't we had a deal?"
+    Alice_17 "What the hell, Max!? Didn't we have a deal?"
 
 # game/dialogues/anntalk.rpy:329
 translate english talk_about_smoking_smoke_92957f51:
@@ -548,7 +548,7 @@ translate english talk_about_smoking_smoke_1cdb0e42:
 translate english talk_about_smoking_smoke_6bcbcfc3:
 
     # Ann_16 "Давай не мамкай тут! Ты знаешь, что я ненавижу сигареты и мои дети точно курить не будут. Особенно, в моём доме, ясно?!"
-    Ann_16 "Don't \"mom\" me! You know I hate smoking, I won't let my children to smoke, especially not in my house!"
+    Ann_16 "Don't \"mom\" me! You know I hate smoking, I won't let my children smoke, especially not in my house!"
 
 # game/dialogues/anntalk.rpy:351
 translate english talk_about_smoking_smoke_7df16910:
@@ -560,7 +560,7 @@ translate english talk_about_smoking_smoke_7df16910:
 translate english talk_about_smoking_smoke_ff080174:
 
     # Ann_12 "Очень на это надеюсь. Так, теперь надевай штаны и садимся ужинать."
-    Ann_12 "I hope so. Now put on your pants and let's start dinner."
+    Ann_12 "I hope so. Now put on your pants and let's have dinner."
 
 # game/dialogues/anntalk.rpy:359
 translate english talk_about_smoking_smoke_eefff3e3:
@@ -578,7 +578,7 @@ translate english talk_about_smoking_smoke_1e8d832d:
 translate english talk_about_smoking_smoke_e611adf1:
 
     # Alice_16 "Я не буду тебе ничего говорить, сам всё поймёшь в своё время. Карма штука жестокая, но справедливая..." nointeract
-    Alice_16 "What goes around, comes around. I'm not going to tell you anything, you'll see the consequences of your actions soon enough." nointeract
+    Alice_16 "What goes around, comes around. I'm not going to say anything, you'll see the consequences of your actions soon enough." nointeract
 
 translate english strings:
 
