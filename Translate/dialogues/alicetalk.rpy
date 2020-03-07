@@ -714,7 +714,7 @@ translate english first_talk_smoke_7d89b8d0:
 translate english first_talk_smoke_30d0bafe:
 
     # Alice_16 "Вот если не уйдёшь, то узнаешь, что тебе за это будет! Бегом отсюда!"
-    Alice_16 "Do you want to know what you'll get if you <i>don't</i> leave? Get the hell out here!"
+    Alice_16 "Do you want to know what you'll get if you {i}don't{/i} leave? Get the hell out here!"
 
 # game/dialogues/alicetalk.rpy:359
 translate english first_talk_smoke_dd214c35:

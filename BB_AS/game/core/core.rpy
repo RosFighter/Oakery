@@ -41,6 +41,9 @@ label Waiting:
         $ flags["little_energy"] = False
         $ peeping["alice_sleep"] = False
         $ peeping["ann_sleep"] = False
+        $ peeping["ann_dressed"] = False
+        $ peeping["lisa_dressed"] = False
+        $ peeping["alice_dressed"] = False
         # позы обновляются каждый час
         $ pose3_1 = renpy.random.choice(["01", "02", "03"])
         $ pose3_2 = renpy.random.choice(["01", "02", "03"])
@@ -128,8 +131,8 @@ label NewDay:
                 if dcv[i].lost == 0:
                     dcv[i].done  = True
 
-        if 'secretbook' in dcv and dcv['secretbook'].done: # прошел откат после дарения книги, можно купить следующую
-            dcv['secretbook'].stage += 1
+        if 'secretbook' in dcv and dcv['secretbook'].done and not items["erobook_"+str(dcv['secretbook'].stage)].InShop: # прошел откат после дарения книги, можно купить следующую
+            # dcv['secretbook'].stage += 1
             items["erobook_"+str(dcv['secretbook'].stage)].InShop = True
 
         # сбросим подглядывания

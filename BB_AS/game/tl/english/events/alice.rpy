@@ -379,13 +379,13 @@ translate english spider_in_bed_12221b33:
 translate english spider_in_bed_4e92be20:
 
     # Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!" nointeract
-    Alice_06 "Help me, Max. There's a huge spider in my room! Kill him, please!" nointeract
+    Alice_06 "Help me, Max. There's a huge spider in my room! Kill it, please!" nointeract
 
 # game/events/alice.rpy:410
 translate english spider_in_bed_goaway_9bf961dd:
 
     # Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..." nointeract
-    Max_09 "People are supposed to sleep at night, not run around and scream at their brothers..." nointeract
+    Max_09 "Running around, screaming... she's completely crazy......" nointeract
 
 # game/events/alice.rpy:432
 translate english spider_in_bed_help_979e99f5:
@@ -433,13 +433,13 @@ translate english spider_in_bed_tits_86f1ac33:
 translate english spider_in_bed_tits_ca1a85ce:
 
     # Alice_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
-    Alice_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+    Alice_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAh! What a pig you are, Max... Okay, look, I'm kind today. And kill him already, finally! ..."
 
 # game/events/alice.rpy:484
 translate english spider_in_bed_tits_eccbb760:
 
     # Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
-    Max_04 "Great tits! Fine, let's go deal with your spider..."
+    Max_04 "Nice tits! Let's go deal with your spider..."
 
 # game/events/alice.rpy:493
 translate english spider_in_bed_toples_47692925:
@@ -463,7 +463,7 @@ translate english spider_in_bed_spider_f85d7471:
 translate english spider_in_bed_spider_a3432394:
 
     # Alice_16 "Макс! Ты должен его убить! А не то я подумаю, что это твоих рук дело... Докажи, что это был не ты!" nointeract
-    Alice_16 "Max! You have to kill it or I'll think you're the one who placed it into my bedroom! Prove me it wasn't you!" nointeract
+    Alice_16 "Max! You have to kill it or I'll think you planted it in my room! Prove to me it wasn't you!" nointeract
 
 # game/events/alice.rpy:513
 translate english spider_in_bed_spider_be1cbc22:
@@ -475,31 +475,31 @@ translate english spider_in_bed_spider_be1cbc22:
 translate english spider_in_bed_spider_2f934b3c:
 
     # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, you got me. Just make sure he's nowhere near the house. ..."
 
 # game/events/alice.rpy:527
 translate english spider_in_bed_spider_9db27ecc:
 
     # Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "That's it, stop sitting on my bed, get out of here. I want to sleep!" nointeract
 
 # game/events/alice.rpy:539
 translate english spider_in_bed_spider_961cf0ed:
 
     # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
-    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\n ..."
+    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max! You're killing him right here and now or I won't forgive you! Choose..."
 
 # game/events/alice.rpy:540
 translate english spider_in_bed_spider_d5b490ac:
 
     # Max_09 "Ладно, будет тебе! Раз ты такая кровожадная..."
-    Max_09 ""
+    Max_09 "Okay, you got it! Since you're so bloodthirsty..."
 
 # game/events/alice.rpy:552
 translate english spider_in_bed_let_go_e79006af:
 
     # Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!" nointeract
-    Alice_13 "Max! I asked you to kill it, not to release it! Thank you, but what if it will crawl back...? Now get out, I want to sleep!" nointeract
+    Alice_13 "Max! I asked you to kill it, not release it! Thank you, but what if it crawls back...? Please get out now, I want to sleep!" nointeract
 
 # game/events/alice.rpy:564
 translate english spider_in_bed_kill_7019a935:

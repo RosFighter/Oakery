@@ -492,10 +492,26 @@ label DishesWashed:
     jump Waiting
 
 
-label delivery:
+label delivery1:
     $ renpy.block_rollback()
 
-    $ __StrDev = GetDeliveryString() # сформируем строку накладной
+    $ __StrDev = GetDeliveryString(0) # сформируем строку накладной
+
+    scene BG NoImage
+    Sam_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    Max_00 "Конечно! А что тут?"
+    $ renpy.say(Sam_00, __StrDev)
+    Max_00 "Да, то что нужно. Спасибо!"
+    $ current_room = house[6]
+
+    $ DeletingDeliveryTempVar(0) # удалим временные переменные и очистим список доставки
+    jump AfterWaiting
+
+
+label delivery2:
+    $ renpy.block_rollback()
+
+    $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 
     scene BG NoImage
     "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
@@ -504,7 +520,7 @@ label delivery:
     Max_00 "Да, то что нужно. Спасибо!"
     $ current_room = house[6]
 
-    $ DeletingDeliveryTempVar() # удалим временные переменные и очистим список доставки
+    $ DeletingDeliveryTempVar(1) # удалим временные переменные и очистим список доставки
     jump AfterWaiting
 
 

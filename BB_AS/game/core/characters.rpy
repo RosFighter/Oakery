@@ -354,3 +354,41 @@ image side maya_02 = "Maya emo-02"
 
 define Maya_03 = Character(kind=Maya, image="maya_03")
 image side maya_03 = "Maya emo-03"
+
+## Сэм, курьер
+
+define Sam = Character(_("Сэм"))
+
+define Sam_00 = Character(kind=Sam, image="sam_00")
+image side sam_00 = "Sam emo-00"
+
+define Sam_01 = Character(kind=Sam, image="sam_01")
+image side sam_01 = "Sam emo-01"
+
+define Sam_02 = Character(kind=Sam, image="sam_02")
+image side sam_02 = "Sam emo-02"
+
+define Sam_03 = Character(kind=Sam, image="sam_03")
+image side sam_03 = "Sam emo-03"
+
+define Sam_04 = Character(kind=Sam, image="sam_04")
+image side sam_04 = "Sam emo-04"
+
+## Кристина, курьер (доставляет одежду, косметику, украшения и товары 18+)
+
+define Krs = Character(_("Кристина"))
+
+define Krs_00 = Character(kind=Krs, image="krs_00")
+image side krs_00 = "Christina emo-00"
+
+define Krs_01 = Character(kind=Krs, image="krs_01")
+image side krs_01 = "Christina emo-01"
+
+define Krs_02 = Character(kind=Krs, image="krs_02")
+image side krs_02 = "Christina emo-02"
+
+define Krs_03 = Character(kind=Krs, image="krs_03")
+image side krs_03 = "Christina emo-03"
+
+define Krs_04 = Character(kind=Krs, image="krs_04")
+image side krs_04 = "Christina emo-04"

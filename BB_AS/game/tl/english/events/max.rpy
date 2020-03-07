@@ -518,7 +518,7 @@ translate english about_blog_3a839884:
 translate english about_blog_814aee55:
 
     # Max_04 "Прикольно... Ага. Котики. Не, устарели. Киски. Ну, смотря какие..." nointeract
-    Max_04 "Cool... Yeah. Cats. They are not out of date. Pussies. Well, despite what exactly..." nointeract
+    Max_04 "It's funny... Uh-huh. Cats. Nah, out of date. Pussy. Well, that depends..." nointeract
 
 # game/events/max.rpy:365
 translate english about_blog_bb8942c7:
@@ -536,7 +536,7 @@ translate english about_blog_8e4c93e4:
 translate english about_blog_c1ce2606:
 
     # Max_01 "Это что же получается. Неужели, всё так просто? Главное - сиськи! Не важно о чём блог, важно что на экране. И если там сиськи, всё в порядке с популярностью! Но я и так об этом догадывался..."
-    Max_01 "So what happens. Really, everything is so simple? The main thing is boobs! No matter what the blog, it is important what is on the screen. And if there are boobs, everything is ok with the popularity! But I've already known about this..."
+    Max_01 "Well, that's how it works. Is it really that simple? It's all about tits! It doesn't matter what the blog is about, it matters what's on the screen. And if it's tits, it's popular! But I already new that..."
 
 # game/events/max.rpy:378
 translate english about_blog_4571eb7f:
@@ -548,7 +548,7 @@ translate english about_blog_4571eb7f:
 translate english about_spider_45c2646e:
 
     # Max_00 "Так... Пауки. Ох, сколько видов... Какие же тут водятся..." nointeract
-    Max_00 "So... Spiders. Oh, how many species... What are here..." nointeract
+    Max_00 "So... Spiders. Oh, how many species... What do we have here..." nointeract
 
 # game/events/max.rpy:415
 translate english about_spider_624fb07e:
@@ -566,13 +566,13 @@ translate english about_spider_3be5aefa:
 translate english about_spider_e3aa40bf:
 
     # Max_00 "Так, и что у нас получается?"
-    Max_00 "So, and what we'll do?"
+    Max_00 "So, what are we doing?"
 
 # game/events/max.rpy:419
 translate english about_spider_49e33bd9:
 
     # Max_01 "Ну вот, подходит. Самый популярный паук в наших краях. Ага! Теперь узнаем как его поймать..." nointeract
-    Max_01 "Well it suites. It's the most popular spider in our areas. Aha! Now we'll learn how to catch him..." nointeract
+    Max_01 "Okay, here we go. It's the most popular spider in our area. Aha! Now let's find out how to catch it..." nointeract
 
 # game/events/max.rpy:422
 translate english about_spider_5170efbe:
@@ -584,19 +584,19 @@ translate english about_spider_5170efbe:
 translate english about_spider_883f72be:
 
     # Max_04 "Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?"
-    Max_04 "That's great! At night they perfectly mask, so it is not suitable, but as soon as the sun begins to warm the ground, they crawl out of grass to check production. And is it 10-11 hours?"
+    Max_04 "There, great! At night perfectly they're disguised, but as soon as the sun begins to warm, they crawl out of the grass to check their prey. And this is 10-11am?"
 
 # game/events/max.rpy:429
 translate english about_spider_0e3e8b40:
 
     # Max_01 "Будем искать!"
-    Max_01 "Will find!"
+    Max_01 "Let's look!"
 
 # game/events/max.rpy:651
 translate english InstallCam_8200bc5d:
 
     # Max_04 "{i}Вот теперь зрители смогут насладится всеми мокрыми и блестящими красотами, происходящими во дворе...{/i}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{i}The audience will now be able to enjoy all the wet and shiny beauties in the yard...{/i}" nointeract
 
 # game/events/max.rpy:657
 translate english InstallCam_fc408e3e:
@@ -608,7 +608,7 @@ translate english InstallCam_fc408e3e:
 translate english InstallCam_d9a1c7d0:
 
     # Max_09 "{i}Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает...{/i}"
-    Max_09 ""
+    Max_09 "{i1}I guess because of the large area, I should install some cameras so the viewers can see every ass that comes in here...{/i}"
 
 # game/events/max.rpy:673
 translate english SearchSpider_19279e48:
@@ -712,19 +712,19 @@ translate english strings:
 
     # game/events/max.rpy:350
     old "Хм... Так... Ага. Это сюда запишем, это сюда..."
-    new "Hmm... So... Yeah. We write it here..."
+    new "Um... So, um... Yeah. Let's write this down here, ..."
 
     # game/events/max.rpy:352
     old "Так. Из этой таблицы мы делаем вывод. Ага. Вот это значит, что... Нет, не так. Вот. Вроде получилось..."
-    new "So. From this table, we conclude. Yeah. That means that... No, it's not. Here. It seems to work..."
+    new "All right. From this table, we draw a conclusion. Yeah. Which means that... No, it's not. Okay, here. It looks like it's..."
 
     # game/events/max.rpy:354
     old "Рисователь графиков из меня ещё тот. Но попробуем. Так, это шкала популярности, это... Ага. Кажется, всё сходится..."
-    new "I'm not good at drawing the graphs. But let us try. So, this is the scale of popularity, this is... Yeah. It seems that everything converges..."
+    new "I'm hardly a graphics artist. But let's try it. Okay, it's a popularity scale, it's... Yeah, it is. I think it's coming together..."
 
     # game/events/max.rpy:359
     old "Так, вычёркиваем из списка этих, вот этих и тех. Что тут у нас остаётся?"
-    new "Thus, let's delete from the list those, these and those. What do we have left?"
+    new "Okay, let's cross these off the list, this and that. What do we have left here?"
 
     # game/events/max.rpy:361
     old "Так, сравниваем аудиторию. Время публикации... Исключаем сомнительный контент..."
@@ -732,7 +732,7 @@ translate english strings:
 
     # game/events/max.rpy:363
     old "Сортируем по количеству лайков. Убираем тех, кто с дизлайками больше этого процента..."
-    new "We sort by the number of likes. Remove those who are with dislikes more than this percent..."
+    new "We sort by the number of likes. Remove those who are with dislikes greater than this percentage..."
 
     # game/events/max.rpy:368
     old "Так, в поиске мы видим любопытные результаты. Так, выберем то что нам подходит..."
@@ -740,11 +740,11 @@ translate english strings:
 
     # game/events/max.rpy:370
     old "Ох. Всё оказалось ещё хуже. Кажется, тут нет ничего полезного... Хотя. Думаю, можно сделать даже какой-то вывод..."
-    new "Oh. Everything turned out even worse. It seems there is nothing useful... Although. I think we can do even some conclusion..."
+    new "Oh. It was worse than that. There doesn't seem to be anything useful here... Although. I think it's possible to draw some kind of conclusion..."
 
     # game/events/max.rpy:372
     old "Так, топовые комменты все сводятся к одному. Не может быть?"
-    new "Thus, the top comments come down to one thing. Impossible?"
+    new "Okay, top comments all come down to one thing. It can't be?"
 
 # TODO: Translation updated at 2020-03-02 23:40
 
@@ -752,13 +752,13 @@ translate english strings:
 translate english HideSpider_59b81ead:
 
     # Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
-    Max_00 ""
+    Max_00 "I may not have time to hide the spider properly before Alice gets back from the bathroom."
 
 # game/events/max.rpy:699
 translate english HideSpider_14a01e28:
 
     # Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..." nointeract
-    Max_00 "I wonder what would happen if Alice noticed a spider at night? Will she come for help? But the monster can escape... So, later I'll hide it, the greater the chance of a success..." nointeract
+    Max_00 "I wonder what will happen if Alice sees a spider at night? Will she come running for help? Except this monster might crawl away... So the later I hide it, the better the chances of success..." nointeract
 
 # game/events/max.rpy:703
 translate english HideSpider_dbcd96db:

@@ -427,17 +427,20 @@ init python:
             if items[i].buy and items[i].delivery > 0:
                 items[i].delivery -= 1
                 if items[i].delivery == 0:
-                    delivery_list.append(i)
+                    if items[i].category in [0, 4, 5, 6]:
+                        delivery_list[1].append(i)
+                    else:
+                        delivery_list[0].append(i)
 
 
-    def GetDeliveryString(): # формирует строку cо списком доставленных товаров
+    def GetDeliveryString(courier): # формирует строку cо списком доставленных товаров
         if _preferences.language is None:
             StrDev = "Так... В накладной написано следующее:"
         elif _preferences.language == "english":
             StrDev = "So... In the consignment note says the following:"
 
         n = 0
-        for i in delivery_list:
+        for i in delivery_list[courier]:
             items[i].buy = False
             items[i].have = True
             n += 1
@@ -446,12 +449,12 @@ init python:
         return StrDev
 
 
-    def DeletingDeliveryTempVar(): # удаляет временные переменные строки списа доставленных товаров
+    def DeletingDeliveryTempVar(courier): # удаляет временные переменные строки списа доставленных товаров
         n = 1
-        for i in delivery_list:
+        for i in delivery_list[courier]:
             del globals()["TmpName"+str(n)]
             n += 1
-        delivery_list.clear()
+        delivery_list[courier].clear()
 
 
     def BuyPromotion(): #Покупка пакета рекламы

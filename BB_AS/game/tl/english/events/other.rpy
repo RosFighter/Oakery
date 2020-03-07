@@ -508,5 +508,5 @@ translate english strings:
 translate english night_of_fun_cae91685:
 
     # Max_19 "Теперь можно спокойно спать и ничего больше..."
-    Max_19 ""
+    Max_19 "Now you can sleep in peace..."
 

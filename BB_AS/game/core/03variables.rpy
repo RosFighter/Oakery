@@ -232,7 +232,7 @@ label InitStuff: # стартовая инициация предметов
             }
 
         # список товаров для доставки
-        delivery_list = []
+        delivery_list = [[], []]
     return
 
 
@@ -373,7 +373,8 @@ label InitTalksEvents: # стартовая инициация диалогов 
         "MorningWood"      : CutEvent("06:30", label="MorningWood", variable="day == 2", sleep=True, desc="утренний стояк", extend=True),
         "AfterSchoolFD"    : CutEvent("16:00", label="AfterSchoolFD", variable="day == 1", desc="Лиза первый раз приходит из школы", cut=True),
         "Wearied"          : CutEvent("03:30", label="Wearied", sleep=False, desc="поспать бы надо"),
-        "delivery"         : CutEvent("15:00", (1, 2, 3, 4, 5, 6), "delivery", "доставка товаров", "len(delivery_list)>0", cut=True),
+        "delivery1"         : CutEvent("13:30", (1, 2, 3, 4, 5, 6), "delivery1", "доставка товаров Сэмом", "len(delivery_list[0])>0", cut=True),
+        "delivery2"         : CutEvent("15:30", (1, 2, 3, 4, 5, 6), "delivery2", "доставка товаров Кристиной", "len(delivery_list[1])>0", cut=True),
         "back_shoping"     : CutEvent("14:00", (6, ), "back_shoping", "возвращение с семейного шопинга", "EventsByTime[\"back_shoping\"].stage < 2", cut=True),
         "MeetingEric"      : CutEvent("18:50", (6, ), "MeetingEric", "знакомство с Эриком", "day == 4", cut=True),
         "Eric_afterdinner" : CutEvent("20:00", (6, ), "Eric_talk_afterdinner", "разговор с Эриком после субботнего ужина", "day < 12", cut=True),
@@ -464,6 +465,7 @@ label InitVariable: # стартовая инициация переменных
             "about_poss"    : True,
             "little_energy" : False,
             "lisa_hw"       : False,
+            "ladder" : 0, 
             }
         site = MaxSite()
         CurChar = "max"

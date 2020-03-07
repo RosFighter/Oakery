@@ -386,7 +386,7 @@ translate english talk_about_smoking_812b7a4b:
 translate english talk_about_smoking_b75bee26:
 
     # Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
-    Ann_01 "Yeah? Well, maybe it really did. Or maybe it came from the neighbours...Anyway, let's go have a dinner."
+    Ann_01 "Yeah? Well, maybe it really did. Or maybe it came from the neighbours... Anyway, let's go have a dinner."
 
 # game/dialogues/anntalk.rpy:255
 translate english talk_about_smoking_bc384657:
