@@ -516,3 +516,71 @@ translate english lisa_bath_af2181e8:
     # Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..." nointeract
     Max_07 "Eh! I get to sleep in the same room as that honeypot! Beautiful..." nointeract
 
+# TODO: Translation updated at 2020-03-09 09:01
+
+# game/events/lisa.rpy:66
+translate english lisa_shower_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/lisa.rpy:80
+translate english lisa_shower_ladder_76d51683:
+
+    # Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
+    Max_03 ""
+
+# game/events/lisa.rpy:82
+translate english lisa_shower_ladder_bffbe5e8:
+
+    # Max_05 "Охх... Хорошо, что я уговорил её не носить трусики! Похоже, Лизе и самой приятно, что под халатиком больше ничего нет... а уж мне-то как приятно."
+    Max_05 ""
+
+# game/events/lisa.rpy:84
+translate english lisa_shower_ladder_86046798:
+
+    # Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
+    Max_07 ""
+
+# game/events/lisa.rpy:86
+translate english lisa_shower_ladder_595bd709:
+
+    # Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
+    Max_06 ""
+
+# game/events/lisa.rpy:88
+translate english lisa_shower_ladder_d5dbdd33:
+
+    # Max_00 "Не хочется, но пока меня не заметили, лучше будет уйти..."
+    Max_00 ""
+
+# game/events/lisa.rpy:540
+translate english lisa_bath_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/lisa.rpy:548
+translate english lisa_bath_ladder_e4d05fa2:
+
+    # Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!" nointeract
+    Max_03 "" nointeract
+
+# game/events/lisa.rpy:553
+translate english lisa_bath_ladder_7e0784ba:
+
+    # Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..." nointeract
+    Max_05 "" nointeract
+
+# game/events/lisa.rpy:562
+translate english lisa_bath_ladder_7e0784ba_1:
+
+    # Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..." nointeract
+    Max_05 "" nointeract
+
+# game/events/lisa.rpy:567
+translate english lisa_bath_ladder_af2181e8:
+
+    # Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..." nointeract
+    Max_07 "" nointeract
+

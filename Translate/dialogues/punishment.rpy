@@ -424,3 +424,209 @@ translate english strings:
     old "шорты"
     new "shorts"
 
+# TODO: Translation updated at 2020-03-09 09:01
+
+# game/dialogues/punishment.rpy:68
+translate english punishment_0a6a61be:
+
+    # Ann_18 "Алиса, начнём с тебя..."
+    Ann_18 ""
+
+# game/dialogues/punishment.rpy:70
+translate english punishment_390d46c1:
+
+    # Ann_18 "Теперь ты, Алиса..."
+    Ann_18 ""
+
+# game/dialogues/punishment.rpy:72
+translate english punishment_dd38597c:
+
+    # Ann_18 "Алиса, подойди-ка сюда."
+    Ann_18 ""
+
+# game/dialogues/punishment.rpy:316
+translate english punishment_alice_d88fc265:
+
+    # Ann_16 "Подходи, подходи, Алиса, чего ты там мнешься. Штаны снимай, есть разговор!"
+    Ann_16 ""
+
+# game/dialogues/punishment.rpy:318
+translate english punishment_alice_d608324e:
+
+    # Ann_16 "Подходи, подходи, Алиса, чего ты там мнешься. Снимай шорты, есть разговор!"
+    Ann_16 ""
+
+# game/dialogues/punishment.rpy:319
+translate english punishment_alice_8e33c890:
+
+    # Alice_12 "Мам, за что? Что я такого сделала?"
+    Alice_12 "For what, mom? what did I do?"
+
+# game/dialogues/punishment.rpy:325
+translate english punishment_alice_f6c5de6b:
+
+    # Ann_18 "[_text!tq]"
+    Ann_18 "[_text!tq]"
+
+# game/dialogues/punishment.rpy:330
+translate english punishment_alice_7adf83e9:
+
+    # Ann_18 "[_text!tq]" nointeract
+    Ann_18 "[_text!tq]" nointeract
+
+# game/dialogues/punishment.rpy:334
+translate english punishment_alice_cb34e360:
+
+    # Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
+    Max_08 ""
+
+# game/dialogues/punishment.rpy:336
+translate english punishment_alice_e5b82d3f:
+
+    # Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
+    Ann_12 ""
+
+# game/dialogues/punishment.rpy:339
+translate english punishment_alice_1f549674:
+
+    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, и не приглашай больше сюда таких подружек, хорошему они не научат..."
+    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+
+# game/dialogues/punishment.rpy:340
+translate english punishment_alice_2a128a29:
+
+    # Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
+    Alice_13 ""
+
+# game/dialogues/punishment.rpy:345
+translate english punishment_alice_f064e992:
+
+    # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
+    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\n ..."
+
+# game/dialogues/punishment.rpy:350
+translate english punishment_alice_055a6121:
+
+    # Alice_13 "Мам... Это не мои сигареты... Я не курю, честно..."
+    Alice_13 ""
+
+# game/dialogues/punishment.rpy:352
+translate english punishment_alice_3761a8bd:
+
+    # Ann_14 "Не твои? А чьи они тогда? Быстро снимай штаны!"
+    Ann_14 ""
+
+# game/dialogues/punishment.rpy:354
+translate english punishment_alice_194e9daf:
+
+    # Alice_06 "Мам, но я сегодня без трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
+    Alice_06 "But mom, I'm not wearing panties now... Tell Max to leave or at least turn away, please..."
+
+# game/dialogues/punishment.rpy:355
+translate english punishment_alice_8ad85845:
+
+    # Ann_20 "Ты ещё и без трусов?! Сейчас ещё и за это получишь! Макс пусть смотрит, а тебе будет стыдно. Может тогда за ум возьмёшься!"
+    Ann_20 "You're going to be punished for not wearing panties too! And Max will watch, it will make the punishment more effective."
+
+# game/dialogues/punishment.rpy:360
+translate english punishment_alice_90ee680b:
+
+    # Ann_14 "Не твои? А чьи они тогда? Быстро шорты снимай!"
+    Ann_14 ""
+
+# game/dialogues/punishment.rpy:361
+translate english punishment_alice_cd360a25:
+
+    # Alice_06 "Мам, но под ними нет трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
+    Alice_06 ""
+
+# game/dialogues/punishment.rpy:362
+translate english punishment_alice_011ed976:
+
+    # Ann_00 "А вот нечего целый день в пижаме по дому шарахаться... Совсем разленилась! Макс пусть смотрит, а тебе будет стыдно. Может тогда за ум возьмёшься!"
+    Ann_00 ""
+
+# game/dialogues/punishment.rpy:368
+translate english punishment_alice_f6c5de6b_1:
+
+    # Ann_18 "[_text!tq]"
+    Ann_18 "[_text!tq]"
+
+# game/dialogues/punishment.rpy:370
+translate english punishment_alice_7adf83e9_1:
+
+    # Ann_18 "[_text!tq]" nointeract
+    Ann_18 "[_text!tq]" nointeract
+
+# game/dialogues/punishment.rpy:374
+translate english punishment_alice_cb34e360_1:
+
+    # Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
+    Max_08 ""
+
+# game/dialogues/punishment.rpy:376
+translate english punishment_alice_e5b82d3f_1:
+
+    # Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
+    Ann_12 ""
+
+# game/dialogues/punishment.rpy:379
+translate english punishment_alice_28b1c8e9:
+
+    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
+    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+
+# game/dialogues/punishment.rpy:380
+translate english punishment_alice_2a128a29_1:
+
+    # Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
+    Alice_13 ""
+
+# game/dialogues/punishment.rpy:385
+translate english punishment_alice_f064e992_1:
+
+    # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
+    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\n ..."
+
+# game/dialogues/punishment.rpy:403
+translate english punishment_alice_6bf98fd4:
+
+    # Alice_15 "Ай, больно же! Мам, я больше не буду!!!"
+    Alice_15 "Ow, it hurts! I won't do it again, mom!"
+
+# game/dialogues/punishment.rpy:412
+translate english punishment_alice_9e2ea44b:
+
+    # Ann_17 "Я знаю, что не будешь. Заслужила наказание, терпи!"
+    Ann_17 "I know you won't. Take the punishment you deserve."
+
+# game/dialogues/punishment.rpy:426
+translate english punishment_alice_7f307a07:
+
+    # Ann_12 "Так, всё, надевай свои джинсы. Надеюсь, ты осознала свои поступки и следующего раза не будет..."
+    Ann_12 "Okay, your can put on your pants. I hope you learned your lesson and it won't happen again."
+
+# game/dialogues/punishment.rpy:429
+translate english punishment_alice_06c1e8de:
+
+    # Ann_12 "Так, всё, надевай свои шорты. Надеюсь, ты осознала свои поступки и следующего раза не будет..."
+    Ann_12 "Okay, your can put on your shorts. I hope you learned your lesson and it won't happen again."
+
+translate english strings:
+
+    # game/dialogues/punishment.rpy:321
+    old "Алиса, ты издеваешься? Я нашла сигареты у тебя в комнате! Ты опять куришь! Быстро сняла штаны и легла на мои колени, кому сказала!"
+    new "I've found cigarettes in your room! You're smoking again! Take off your pants and lie on my knees right now!"
+
+    # game/dialogues/punishment.rpy:323
+    old "Алиса, ты издеваешься? Я нашла сигареты у тебя в комнате! Ты опять куришь! Быстро сняла шорты и легла на мои колени, кому сказала!"
+    new "I've found cigarettes in your room! You're smoking again! Take off your shorts and lie on my knees right now!"
+
+    # game/dialogues/punishment.rpy:330
+    old "{i}Заступиться за Алису {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}"
+    new "{i}... {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}{/i}"
+
+    # game/dialogues/punishment.rpy:365
+    old "Теперь ложись побыстрее, ужин стынет..."
+    new ""
+
