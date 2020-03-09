@@ -936,19 +936,19 @@ translate english gift_cigarettes_d9ca71cf:
 translate english gift_cigarettes_5740d8bc:
 
     # Alice_12 "Хоть ты и тот ещё извращенец, Макс, но мне было сложно достать эти сигареты самой... Так и быть, мама ничего не узнает, по крайней мере в этот раз."
-    Alice_12 ""
+    Alice_12 "Even though you're a pervert, Max, I had trouble getting those cigarettes myself... Anyway, Mom won't know anything, at least not this time."
 
 # game/dialogues/alicetalk.rpy:544
 translate english gift_cigarettes_7db97995:
 
     # Max_05 "Спасибо, Алиса! И я не извращенец. Просто проходил мимо, а там такая красотища..."
-    Max_05 ""
+    Max_05 "Thank you, Alice! And I'm not a pervert. I was just passing by..."
 
 # game/dialogues/alicetalk.rpy:545
 translate english gift_cigarettes_275f5fb3:
 
     # Alice_05 "Ну да, ну да... Мимо он проходил..."
-    Alice_05 ""
+    Alice_05 "Sure...passing by..."
 
 # game/dialogues/alicetalk.rpy:548
 translate english gift_cigarettes_6e623a2c:
@@ -1126,7 +1126,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:537
     old "Только давай условимся, что ты не скажешь маме о том, как я за тобой подглядывал в душе..."
-    new ""
+    new "Let's just agree that you won't tell Mom about me peeping on you in the shower..."
 
     # game/dialogues/alicetalk.rpy:537
     old "Держи!"
