@@ -575,261 +575,261 @@ translate english strings:
 translate english alice_bath_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 ""
+    Max_04 "Let's see what we got here..."
 
 # game/events/alice.rpy:56
 translate english alice_bath_ladder_40583688:
 
     # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
-    Max_03 "" nointeract
+    Max_03 "That's lucky! Alice is just about to take a bath... Her gorgeous ass just enchants me!" nointeract
 
 # game/events/alice.rpy:61
 translate english alice_bath_ladder_5529b0b9:
 
     # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
-    Max_05 "" nointeract
+    Max_05 "Hell, is she teasing me on purpose with her wet breasts... My big sister may be a bitch, but she's hot! She's very sexy..." nointeract
 
 # game/events/alice.rpy:70
 translate english alice_bath_ladder_5529b0b9_1:
 
     # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
-    Max_05 "" nointeract
+    Max_05 "Hell, is she teasing me on purpose with her wet breasts... My big sister may be a bitch, but she's hot! She's very sexy..." nointeract
 
 # game/events/alice.rpy:75
 translate english alice_bath_ladder_98712b50:
 
     # Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Ah! That didn't last long... The only thing left to do is enjoy her ass!" nointeract
 
 # game/events/alice.rpy:108
 translate english alice_sleep_night_3e18ecfd:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела, в одних лищь трусиках, хочется смотреть вечно!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Oh, yes! My big sister looks amazing... The curves of her body, in her panties alone, you want to look forever!" nointeract
 
 # game/events/alice.rpy:110
 translate english alice_sleep_night_5d061581:
 
     # Max_04 "Эх! Не повезло, что Алиса спит спиной к окну и её грудь не видно... Правда, в таком случае, всегда можно насладиться красотой Алисиной попки." nointeract
-    Max_04 "" nointeract
+    Max_04 "Ah! It's bad luck that Alice sleeps with her back to the window and her breasts aren't visible...in that case, you can always enjoy the beauty of Alice's ass." nointeract
 
 # game/events/alice.rpy:112
 translate english alice_sleep_night_9133399c:
 
     # Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище..." nointeract
-    Max_01 "" nointeract
+    Max_01 "Awesome! Sis sleeps with her back bent out, so her naked breasts stick out like two hills... A tempting spectacle..." nointeract
 
 # game/events/alice.rpy:116
 translate english alice_sleep_night_ba4ef710:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно! Только вот не всё из этого должно быть на ней одето!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Oh, yes! My big sister looks amazing... The curves of her body in this translucent underwear make you want to look forever! Except she doesn't have to be wearing all that stuff!" nointeract
 
 # game/events/alice.rpy:118
 translate english alice_sleep_night_70d12f64:
 
     # Max_04 "Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою попку для меня во всей красе. И есть на ней что-то явно лишнее!" nointeract
-    Max_04 "" nointeract
+    Max_04 "Wow! I'm lucky Alice sleeps with her back to the window... And doesn't suspect that she's showing her ass to me in all its glory. And there's something obviously unnecessary about it!" nointeract
 
 # game/events/alice.rpy:120
 translate english alice_sleep_night_108775b5:
 
     # Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно... Но, похоже, она кое-что забыла с себя снять перед сном!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Awesome! Sis sleeps with her back bent out, which makes her chest stick out like two hills... Seductive... But it looks like she forgot to take something off before she went to bed!" nointeract
 
 # game/events/alice.rpy:135
 translate english alice_sleep_night_43e235c5:
 
     # Max_03 "Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Yeah, well... It's a pity you can't see your breasts the way you want to, but you can admire her enchanting ass forever... I just want to slap it... Really, then it'll be the last thing I do in my life. So it's better to leave quietly..." nointeract
 
 # game/events/alice.rpy:137
 translate english alice_sleep_night_eab46551:
 
     # Max_02 "Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы пристроился с огромным удовольствием... Можно было бы пройти ещё дальше и хоть одним глазком увидеть сиськи, но лучше уйти, а то ещё проснётся..." nointeract
-    Max_02 "" nointeract
+    Max_02 "Cool! Alice may be my sister, but I'd love to get attached to this fantastic ass... I could go further and get a glance at her tits, but it's best to leave quietly now. " nointeract
 
 # game/events/alice.rpy:139
 translate english alice_sleep_night_e0bac404:
 
     # Max_05 "Чёрт, какая же она притягательная, когда лежит вот так, с совершенно голой грудью... Так и хочется занырнуть между этих сисечек и её стройных ножек! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "" nointeract
+    Max_05 "Damn, how attractive she is when she's lying there like this, with her breasts completely bare... I just want to sneak in between those boobs and her slender legs! As long as she doesn't wake up now..." nointeract
 
 # game/events/alice.rpy:171
 translate english alice_sleep_morning_7c1f0327:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную фигурку, на которой лишь одни трусики..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Uhh! Alice's still asleep, which makes me very happy... Because it means I can see her slender figure with only panties on..." nointeract
 
 # game/events/alice.rpy:173
 translate english alice_sleep_morning_c26f2753:
 
     # Max_01 "Чёрт! Как же хорошо, что теперь она спит без лифчика и я могу насладится почти всей красотой её тела, и ещё как... Обалденные у неё сиськи!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Damn! It's so good that now she's sleeping without a bra I can enjoy almost all the beauty of her body. Her tits are awesome!" nointeract
 
 # game/events/alice.rpy:175
 translate english alice_sleep_morning_c6cf727e:
 
     # Max_02 Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
-    Max_02 Max_04 "" nointeract
+    Max_02 Max_04 "Wow! Such tempting curves and boobs can make you lose consciousness early in the morning... What a big sister I have!" nointeract
 
 # game/events/alice.rpy:178
 translate english alice_sleep_morning_1657f52d:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть ее классную, почти голую фигурку как следует... Только вот одето на ней больше, чем должно быть!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Uhh! Alice's still asleep, which makes me very happy... Because it means I can see her cool, almost naked figure properly... Except she's wearing more than she should be!" nointeract
 
 # game/events/alice.rpy:180
 translate english alice_sleep_morning_4aa7f0be:
 
     # Max_01 "Чёрт! Хоть она и спит, но прямо лицом ко мне... И тем не менее, насладится красотой её тела я могу, и ещё как... Хотя, если бы она не забыла кое-что с себя снять, было бы куда интереснее!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Shit! Even though she's asleep, right in front of me... And yet I can still enjoy the beauty of her body. Although, if she hadn't forgotten to take something off, it would have been much more interesting!" nointeract
 
 # game/events/alice.rpy:182
 translate english alice_sleep_morning_db889428:
 
     # Max_02 "Вот это да! От таких соблазнительных изгибов можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка! А была бы ещё лучше, если бы снимала с себя то, что должна!" nointeract
-    Max_02 "" nointeract
+    Max_02 "Wow! Such tempting curves can make you lose consciousness early in the morning... Nice big sister I have! And it would be even better if she took off what she had to take off!" nointeract
 
 # game/events/alice.rpy:197
 translate english alice_sleep_morning_bbfe755e:
 
     # Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эти сиськи! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
-    Max_05 "" nointeract
+    Max_05 "Oh, it's the kind of thing that leaves only the dirtiest thoughts in my head... How I want to grope those tits! And pull those panties down... I think I should get outta here before she wakes up." nointeract
 
 # game/events/alice.rpy:199
 translate english alice_sleep_morning_dc8fde31:
 
     # Max_03 "О, да! Не лечь и не приобнять эту нежную попку – настоящее преступление... Как и поласкать эти аппетитные сосочки! Только вот Алиса посчитает иначе и оторвёт мне голову прямо здесь. Так что лучше потихоньку уходить..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Oh, yeah! It's a real crime not to lie down and grope that delicate ass... Just like caressing those delicious nipples! Except Alice will think otherwise and rip my head off right here. So it's better to leave quietly..." nointeract
 
 # game/events/alice.rpy:201
 translate english alice_sleep_morning_abc53cfb:
 
     # Max_02 "Вот чёрт! С каким же огромным удовольствием я бы сел рядом с ней, запустил свои руки в её трусики и мял эти упругие сисечки всё утро... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится." nointeract
-    Max_02 "" nointeract
+    Max_02 "Hell! What a great pleasure it would be to sit next to her, put my hands in her panties and play with those soft boobs all morning... Ah, nice sis, but it's time to go... If she wakes up, I'm definitely not gonna be around to say hello." nointeract
 
 # game/events/alice.rpy:300
 translate english alice_shower_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 ""
+    Max_04 "Let's see what we got here..."
 
 # game/events/alice.rpy:311
 translate english alice_shower_ladder_57cde36a:
 
     # Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
-    Max_00 ""
+    Max_00 "It's always nice to look at Alice, but why is she in her panties? I mean, we had an agreement..."
 
 # game/events/alice.rpy:312
 translate english alice_shower_ladder_847a824b:
 
     # Max_00 "Непорядок. Нужно с этим что-то делать..."
-    Max_00 ""
+    Max_00 "It's not okay. We need to do something about this..."
 
 # game/events/alice.rpy:319
 translate english alice_shower_ladder_41ab7e32:
 
     # Max_02 "Да-а... Может Алиса и в халатике, но сиськи её видны просто замечательно! А они у неё - что надо..."
-    Max_02 ""
+    Max_02 "Yeah, uh... Alice may be wearing a bathrobe, but her tits can be seen just fine! And she's got them, so..."
 
 # game/events/alice.rpy:322
 translate english alice_shower_ladder_040d728e:
 
     # Max_05 "Ого! Кто бы мог подумать, что курение может принести пользу в виде моей сестрёнки, не носящей трусики. Как же она хороша..."
-    Max_05 ""
+    Max_05 "Wow! Who'd have thought smoking would be good for my sister, not wearing panties. How good is she..."
 
 # game/events/alice.rpy:325
 translate english alice_shower_ladder_0704adcb:
 
     # Max_04 "Прекрасно! Алиса сегодня без халатика... в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
-    Max_04 ""
+    Max_04 "Beautiful! Alice without her robe today... wearing the same panties... Looking at this beauty, you can only dream of one thing!"
 
 # game/events/alice.rpy:328
 translate english alice_shower_ladder_d56d02cd:
 
     # Max_06 "Вау! Алиса сегодня совершенно голая! Как мы и договорились, трусики она не носит и даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями..."
-    Max_06 ""
+    Max_06 "Wow! Alice is totally naked today! As we agreed, she's not wearing panties, and she doesn't even know that gives me the chance to admire all her delights..."
 
 # game/events/alice.rpy:331
 translate english alice_shower_ladder_00211017:
 
     # Max_00 "Ладно, хорошего понемногу, а то еще заметит меня здесь кто-нибудь..."
-    Max_00 ""
+    Max_00 "Okay, time to go, or someone will notice me here..."
 
 # game/events/alice.rpy:575
 translate english spider_in_bed_help_34f29649:
 
     # Alice_00 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
-    Alice_00 ""
+    Alice_00 "Max, don't be cheeky! What more do you want?!"
 
 # game/events/alice.rpy:576
 translate english spider_in_bed_help_accb31b7:
 
     # Max_00 "Хорошо, хорошо, успокойся, сейчас поймаю я твоего паука..."
-    Max_00 ""
+    Max_00 "Okay, okay, calm down, I'm gonna catch your spider..."
 
 # game/events/alice.rpy:584
 translate english spider_in_bed_help_98cf8bea:
 
     # Alice_00 "Макс, ну не удобно мне без лифчика спать. Как встану воды ночью попить - одеваться надо..."
-    Alice_00 ""
+    Alice_00 "Max, I'm not comfortable sleeping without a bra. When I get up to drink water at night, I have to get dressed..."
 
 # game/events/alice.rpy:587
 translate english spider_in_bed_help_287356c1:
 
     # Alice_00 "О чем это ты, Макс?"
-    Alice_00 ""
+    Alice_00 "What are you talking about, Max?"
 
 # game/events/alice.rpy:588
 translate english spider_in_bed_help_2b71f0be:
 
     # Max_00 "Я видел, кок ты одевала днем трусы, хотя договаривались мы иначе."
-    Max_00 ""
+    Max_00 "I saw how you wore underwear during the day, though we agreed otherwise."
 
 # game/events/alice.rpy:589
 translate english spider_in_bed_help_73c11215:
 
     # Alice_00 "Тут ты прав, я их одела, без них мне все натирает..."
-    Alice_00 ""
+    Alice_00 "You're right, I'm wearing them, I'm rubbing them all together..."
 
 # game/events/alice.rpy:590
 translate english spider_in_bed_help_3ef0b732:
 
     # Max_00 "Ну хорошо, я тебя освобождаю от договоренности, но в компенсацию покажи мне попку!"
-    Max_00 ""
+    Max_00 "All right, I'm releasing you from the arrangement, but in compensation, show me your ass!"
 
 # game/events/alice.rpy:592
 translate english spider_in_bed_help_c753d161:
 
     # Alice_00 "Ну ты и извращенец, Макс, смотри!"
-    Alice_00 ""
+    Alice_00 "You're a pervert, Max, look!"
 
 # game/events/alice.rpy:593
 translate english spider_in_bed_help_57605268:
 
     # Max_00 "Классная у тебя попка, сестрёнка!"
-    Max_00 ""
+    Max_00 "Nice ass you got there, sis!"
 
 # game/events/alice.rpy:594
 translate english spider_in_bed_help_6901e584:
 
     # Alice_00 "Посмотрел и хватит, иди уже лови этого паука!"
-    Alice_00 ""
+    Alice_00 "You had a look, go get that spider!"
 
 # game/events/alice.rpy:595
 translate english spider_in_bed_help_7be4efd3:
 
     # Max_00 "Ладно, ладно, сейчасм поймаю..."
-    Max_00 ""
+    Max_00 "Okay, okay, I'll catch you..."
 
 translate english strings:
 
     # game/events/alice.rpy:12
     old "{i}воспользоваться стремянкой{/i}"
-    new ""
+    new "{i}take the step ladder{/i}"
 
     # game/events/alice.rpy:547
     old "Паука-то я поймаю, но, кажется, кое-кто нарушает уговор"
-    new ""
+    new "I'll catch the spider, but I think someone's breaking the deal."
 

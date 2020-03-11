@@ -602,7 +602,7 @@ translate english InstallCam_8200bc5d:
 translate english InstallCam_fc408e3e:
 
     # Max_04 "{i}Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
-    Max_04 "{i}Yard... As long as sun is up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
+    Max_04 "{i}Yard... As long as the suns up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
 
 # game/events/max.rpy:660
 translate english InstallCam_d9a1c7d0:
@@ -807,19 +807,19 @@ translate english delivery1_0ba1be34:
 translate english SearchCigarettes_39e347cb:
 
     # Max_09 "Так... Где же Алиса спрятала сигареты сегодня?" nointeract
-    Max_09 "So... Where did Alice hid her cigarettes today?" nointeract
+    Max_09 "So... Where did Alice hide her cigarettes today?" nointeract
 
 # game/events/max.rpy:779
 translate english SearchCigarettes_no_34602f75:
 
     # Max_10 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..." nointeract
-    Max_10 "Looks like they're not here... It's time to go, if she'll catch me..." nointeract
+    Max_10 "Looks like they're not here... It's time to go, she might catch me..." nointeract
 
 # game/events/max.rpy:787
 translate english SearchCigarettes_yes_b172b515:
 
     # Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..." nointeract
-    Max_04 "Found them! Now I need to place them somewhere mom will see them when" nointeract
+    Max_04 "Found them! Now I need to place them somewhere for Mom to find." nointeract
 
 translate english strings:
 
