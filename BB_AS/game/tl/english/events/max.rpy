@@ -602,7 +602,7 @@ translate english InstallCam_8200bc5d:
 translate english InstallCam_fc408e3e:
 
     # Max_04 "{i}Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
-    Max_04 "{i}Yard... As long as sun is up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
+    Max_04 "{i}Yard... As long as the suns up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
 
 # game/events/max.rpy:660
 translate english InstallCam_d9a1c7d0:
@@ -781,4 +781,77 @@ translate english strings:
     # game/events/max.rpy:699
     old "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
     new "{i}Put now {color=[_chance_color]}(Luck. Chance: [ch_vis]){/color}{/i}"
+
+# TODO: Translation updated at 2020-03-09 09:01
+
+# game/events/max.rpy:501
+translate english delivery1_80685efe:
+
+    # Sam_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    Sam_00 "Hi there! I have a delivery for this address. May I ask you to sign here?"
+
+# game/events/max.rpy:502
+translate english delivery1_509c6af4:
+
+    # Max_00 "Конечно! А что тут?"
+    Max_00 "Sure, what's in there?"
+
+# game/events/max.rpy:504
+translate english delivery1_0ba1be34:
+
+    # Max_00 "Да, то что нужно. Спасибо!"
+    Max_00 "Yep, that's what I ordered. Thanks!"
+
+
+# game/events/max.rpy:760
+translate english SearchCigarettes_39e347cb:
+
+    # Max_09 "Так... Где же Алиса спрятала сигареты сегодня?" nointeract
+    Max_09 "So... Where did Alice hide her cigarettes today?" nointeract
+
+# game/events/max.rpy:779
+translate english SearchCigarettes_no_34602f75:
+
+    # Max_10 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..." nointeract
+    Max_10 "Looks like they're not here... It's time to go, she might catch me..." nointeract
+
+# game/events/max.rpy:787
+translate english SearchCigarettes_yes_b172b515:
+
+    # Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..." nointeract
+    Max_04 "Found them! Now I need to place them somewhere for Mom to find." nointeract
+
+translate english strings:
+
+    # game/events/max.rpy:760
+    old "{i}искать в тумбочке{/i}"
+    new "{i}look in the nightstand{/i}"
+
+    # game/events/max.rpy:787
+    old "{i}подставить Алису{/i}"
+    new "{i}set up Alice{/i}"
+
+    # game/events/max.rpy:787
+    old "{i}не подставлять Алису{/i}"
+    new "{i}do not set up Alice{/i}"
+
+# TODO: Translation updated at 2020-03-09 09:49
+
+# game/events/max.rpy:517
+translate english delivery2_e7863a82:
+
+    # Krs_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    Krs_00 "Hi there! I have a delivery for this address. May I ask you to sign here?"
+
+# game/events/max.rpy:518
+translate english delivery2_509c6af4:
+
+    # Max_00 "Конечно! А что тут?"
+    Max_00 "Sure, what's in there?"
+
+# game/events/max.rpy:520
+translate english delivery2_0ba1be34:
+
+    # Max_00 "Да, то что нужно. Спасибо!"
+    Max_00 "Yep, that's what I ordered. Thanks!"
 

@@ -81,7 +81,7 @@ label ann_shower:
         else:
             Max_06 "Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все ёё округлости!"
 
-        Max_00 "Ладно, пора уходить, а то еще заметит неровён час..."
+        Max_00 "Лучше бы мне уже уйти, пока никто не увидел..."
         jump .end_peeping
 
     label .start_peeping:
@@ -128,6 +128,7 @@ label ann_shower:
             jump .end_peeping
         else:
             $ peeping["ann_shower"] = 3
+            $ punreason[2] = 1
             $ mgg.stealth += 0.05
             $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
             $ __ran1 = renpy.random.choice(["09", "10"])

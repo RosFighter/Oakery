@@ -936,19 +936,19 @@ translate english gift_cigarettes_d9ca71cf:
 translate english gift_cigarettes_5740d8bc:
 
     # Alice_12 "Хоть ты и тот ещё извращенец, Макс, но мне было сложно достать эти сигареты самой... Так и быть, мама ничего не узнает, по крайней мере в этот раз."
-    Alice_12 ""
+    Alice_12 "Even though you're a pervert, Max, I had trouble getting those cigarettes myself... Anyway, Mom won't know anything, at least not this time."
 
 # game/dialogues/alicetalk.rpy:544
 translate english gift_cigarettes_7db97995:
 
     # Max_05 "Спасибо, Алиса! И я не извращенец. Просто проходил мимо, а там такая красотища..."
-    Max_05 ""
+    Max_05 "Thank you, Alice! And I'm not a pervert. I was just passing by..."
 
 # game/dialogues/alicetalk.rpy:545
 translate english gift_cigarettes_275f5fb3:
 
     # Alice_05 "Ну да, ну да... Мимо он проходил..."
-    Alice_05 ""
+    Alice_05 "Sure...passing by..."
 
 # game/dialogues/alicetalk.rpy:548
 translate english gift_cigarettes_6e623a2c:
@@ -1126,9 +1126,645 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:537
     old "Только давай условимся, что ты не скажешь маме о том, как я за тобой подглядывал в душе..."
-    new ""
+    new "Let's just agree that you won't tell Mom about me peeping on you in the shower..."
 
     # game/dialogues/alicetalk.rpy:537
     old "Держи!"
     new "Here!"
+
+# TODO: Translation updated at 2020-03-09 09:01
+
+# game/dialogues/alicetalk.rpy:569
+translate english smoke_nofear_e2e452f2:
+
+    # Alice_00 "Макс, поглазеть пришёл?"
+    Alice_00 "Max, did you came here to stare?"
+
+# game/dialogues/alicetalk.rpy:570
+translate english smoke_nofear_caee999b:
+
+    # Max_09 "Не боишься, что мама накажет, если узнает?"
+    Max_09 "Aren't you afriad of getting punished if Mom finds out?"
+
+# game/dialogues/alicetalk.rpy:571
+translate english smoke_nofear_e44b17a7:
+
+    # Alice_03 "И как она узнает? Ты расскажешь?" nointeract
+    Alice_03 "And how would she know? Will you tell her?" nointeract
+
+# game/dialogues/alicetalk.rpy:574
+translate english smoke_nofear_f223d1fa:
+
+    # Alice_12 "Ты хорошо подумал, Макс? Жизнь-то у тебя одна... И что ты хочешь за... молчание?"
+    Alice_12 "Did you think this through? You only get one life. What do you want in exchange for...silence? "
+
+# game/dialogues/alicetalk.rpy:575
+translate english smoke_nofear_042d05e4:
+
+    # Max_01 "Вот это разговор!"
+    Max_01 "I like where this is going!"
+
+# game/dialogues/alicetalk.rpy:576
+translate english smoke_nofear_fdcf7e97:
+
+    # Alice_13 "Сначала скажи, что у тебя на уме..." nointeract
+    Alice_13 "Tell me what you want first." nointeract
+
+# game/dialogues/alicetalk.rpy:588
+translate english smoke_nofear_68ee7cea:
+
+    # Alice_16 "А больше ты ничего не хочешь? Свали отсюда, пока не наваляла!!"
+    Alice_16 "Is there nothing else you want? Then get lost!!"
+
+# game/dialogues/alicetalk.rpy:594
+translate english smoke_nofear_no_a95196c6:
+
+    # Alice_03 "Ну вот и пугать не надо. Не узнает. А если ты проболтаешься, я тебя во сне придушу, понял? Теперь иди, не мешай мне..." nointeract
+    Alice_03 "Then I have no reason to be afraid. And if you tell, I'll strangle you in your sleep. Now leave me alone." nointeract
+
+# game/dialogues/alicetalk.rpy:603
+translate english smoke_fear_e2e452f2:
+
+    # Alice_00 "Макс, поглазеть пришёл?"
+    Alice_00 "Max, did you came here to stare?"
+
+# game/dialogues/alicetalk.rpy:604
+translate english smoke_fear_876b91d4:
+
+    # Max_09 "Не боишься, что мама накажет если узнает?"
+    Max_09 "Aren't you afriad of getting punished if Mom finds out?"
+
+# game/dialogues/alicetalk.rpy:605
+translate english smoke_fear_a6cf7c4a:
+
+    # Alice_12 "Ты же ей не скажешь? Она так больно меня отшлёпала в прошлый раз, что до сих пор сидеть неприятно..."
+    Alice_12 "You're not going to tell, are you? Last time she spanked me so hard I still can't sit straight."
+
+# game/dialogues/alicetalk.rpy:606
+translate english smoke_fear_af2c2b24:
+
+    # Max_01 "Ну, это зависит от тебя..."
+    Max_01 "Well, it depends on you..."
+
+# game/dialogues/alicetalk.rpy:619
+translate english smoke_fear_3a15370b:
+
+    # Alice_13 "Говори, что ты хочешь за молчание?" nointeract
+    Alice_13 "What do you want for your silence?" nointeract
+
+# game/dialogues/alicetalk.rpy:630
+translate english smoke_fear_90578142:
+
+    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, я дам тебе денег, но только $10, ок?" nointeract
+    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nFine, loser. I'll give you money, but only $10, ok?" nointeract
+
+# game/dialogues/alicetalk.rpy:634
+translate english smoke_fear_658c7cc0:
+
+    # Alice_13 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЧёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
+    Alice_13 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAsshole. Do you want to leave me completely broke? I'll go get it..."
+
+# game/dialogues/alicetalk.rpy:635
+translate english smoke_fear_d677a38c:
+
+    # Max_03 "Я жду..."
+    Max_03 "I am waiting..."
+
+# game/dialogues/alicetalk.rpy:640
+translate english smoke_fear_59337c0d:
+
+    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nМакс, не наглей! Сейчас принесу $10. Жди..."
+    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNope, $10 is good enough for you. Wait a sec, I'll go get it..."
+
+# game/dialogues/alicetalk.rpy:641
+translate english smoke_fear_21c2303f:
+
+    # Max_04 "Ну ладно, я жду..."
+    Max_04 "Okay, I'm waiting..."
+
+# game/dialogues/alicetalk.rpy:648
+translate english smoke_fear_69538574:
+
+    # Alice_12 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!" nointeract
+    Alice_12 "Keep the money... And don't blackmail me again. I really don't like this... Now get out of here!" nointeract
+
+# game/dialogues/alicetalk.rpy:657
+translate english smoke_fear_a9edbf1e:
+
+    # Alice_13 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
+    Alice_13 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nWhy do you care? Well, I'm wearing jeans all the time, so it's not like you'll see anything anyway, so fine. Deal?"
+
+# game/dialogues/alicetalk.rpy:658
+translate english smoke_fear_f8ab5d9a:
+
+    # Max_02 "Конечно!"
+    Max_02 "Sure!"
+
+# game/dialogues/alicetalk.rpy:662
+translate english smoke_fear_a86ec81d:
+
+    # Alice_01 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
+    Alice_01 "Okay, now get lost and leave me alone!" nointeract
+
+# game/dialogues/alicetalk.rpy:670
+translate english smoke_fear_9ccd57cc:
+
+    # Alice_03 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nДа я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
+    Alice_03 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nI don't actually walk around braless all the time, except when I'm asleep... ..."
+
+# game/dialogues/alicetalk.rpy:671
+translate english smoke_fear_0f7a641d:
+
+    # Max_01 "Значит, тогда просто спи без него."
+    Max_01 "Then just sleep without them."
+
+# game/dialogues/alicetalk.rpy:672
+translate english smoke_fear_e7fe59d8:
+
+    # Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
+    Alice_05 "I don't know why you'd want that, pervert. But I'd rather agree to that... before you ask for anything else."
+
+# game/dialogues/alicetalk.rpy:673
+translate english smoke_fear_201d6989:
+
+    # Max_04 "Вот и отлично!"
+    Max_04 "That's great!"
+
+# game/dialogues/alicetalk.rpy:677
+translate english smoke_fear_a86ec81d_1:
+
+    # Alice_01 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
+    Alice_01 "Okay, now get lost and leave me alone!" nointeract
+
+# game/dialogues/alicetalk.rpy:685
+translate english smoke_fear_c9cce892:
+
+    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nМаленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
+    Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\Disgusting pervert... Okay, but you can't say anything to Mom. I'll start next time I need a smoke."
+
+# game/dialogues/alicetalk.rpy:686
+translate english smoke_fear_9d8a31b7:
+
+    # Max_03 "Само собой!"
+    Max_03 "Of course!"
+
+# game/dialogues/alicetalk.rpy:690
+translate english smoke_fear_a86ec81d_2:
+
+    # Alice_01 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
+    Alice_01 "Okay, now get lost and leave me alone!" nointeract
+
+# game/dialogues/alicetalk.rpy:705
+translate english smoke_fear_e8a1317a:
+
+    # Alice_06 "Сегодня? Значит, попросишь в следующий раз?" nointeract
+    Alice_06 "Today? So, you'll ask for something next time?" nointeract
+
+# game/dialogues/alicetalk.rpy:711
+translate english smoke_fear_b841f701:
+
+    # Alice_13 "Ну вот тогда иди чем-нибудь займись, а меня не отвлекай..." nointeract
+    Alice_13 "Then go make yourself useful somewhere else and stop bothering me." nointeract
+
+# game/dialogues/alicetalk.rpy:718
+translate english smoke_fear_fail_d70710d0:
+
+    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nАга, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..." nointeract
+    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nYeah, right! Get out of here, you little shit. Leave me alone." nointeract
+
+# game/dialogues/alicetalk.rpy:734
+translate english smoke_toples_6c5b6af2:
+
+    # Alice_02 "Ну что, извращенец, доволен видом?" nointeract
+    Alice_02 "Well, creep, do you like the view?" nointeract
+
+# game/dialogues/alicetalk.rpy:737
+translate english smoke_toples_feec497a:
+
+    # Alice_05 "Надеюсь, маме ничего не расскажешь? А то это опасно для твоей жизни..." nointeract
+    Alice_05 "I hope that you won't tell Mom anything? It would endanger your life..." nointeract
+
+# game/dialogues/alicetalk.rpy:740
+translate english smoke_toples_ea9774a5:
+
+    # Alice_04 "Вот и молодец. А теперь иди, займись чем-нибудь..."
+    Alice_04 "Good. Now go and make yourself useful somewhere else."
+
+# game/dialogues/alicetalk.rpy:741
+translate english smoke_toples_82324783:
+
+    # Max_01 "Хорошо..."
+    Max_01 "Okay..."
+
+# game/dialogues/alicetalk.rpy:743
+translate english smoke_toples_b751840f:
+
+    # Alice_09 "Макс, не играй с огнём! Мы договоривались. А теперь сгинь с глаз моих!"
+    Alice_09 "Don't play with fire, Max! We have an agreement. Now get lost!"
+
+# game/dialogues/alicetalk.rpy:744
+translate english smoke_toples_814e7b6f:
+
+    # Max_07 "Уже ухожу..."
+    Max_07 "Okay, I'm leaving..."
+
+# game/dialogues/alicetalk.rpy:747
+translate english smoke_toples_794078b3:
+
+    # Alice_04 "А про руки мы не договаривались. Хочу - прикрываюсь. Хочу - нет. А тебя так радовать я точно не хочу... Так что вали уже..."
+    Alice_04 "We didn't say anything about hands, I'm free to cover myself as much as I want. And I definitely wouldn't want to give you anything to look at. So get lost."
+
+# game/dialogues/alicetalk.rpy:748
+translate english smoke_toples_2db9f65a:
+
+    # Max_09 "Ну и ладно..."
+    Max_09 "Okay, fine..."
+
+# game/dialogues/alicetalk.rpy:750
+translate english smoke_toples_2de5469e:
+
+    # Alice_12 "Спасибо, ваше величество! А чего это ты так расщедрился? Я больше не в твоём вкусе?" nointeract
+    Alice_12 "Thank you, your majesty! Why are you so generous? I am no longer your type?" nointeract
+
+# game/dialogues/alicetalk.rpy:753
+translate english smoke_toples_2c09da11:
+
+    # Alice_04 "Спасибо, Макс! Это мудрый поступок... Но ты можешь в последний раз поглазеть..." nointeract
+    Alice_04 "Thank you, Max! That's a wise thing to do... But you can take one last look..." nointeract
+
+# game/dialogues/alicetalk.rpy:758
+translate english smoke_toples_1a839867:
+
+    # Alice_03 "Даже так?! Ну, дружбу я не обещаю, но могу пытаться с тобой как-то уживаться. А если серьёзно, то спасибо, Макс. Я это оценила..." nointeract
+    Alice_03 "Well, I can't promise friendship, but I can try to get along with you better. But seriously, thank you, Max. I appreciate it..." nointeract
+
+# game/dialogues/alicetalk.rpy:763
+translate english smoke_toples_07c4559b:
+
+    # Alice_15 "Что?! А ну-ка вали отсюда, пока цел! И оденусь теперь, будь уверен!" nointeract
+    Alice_15 "What?! Get out of here while you can! You'll never see me dressed like this again!" nointeract
+
+# game/dialogues/alicetalk.rpy:768
+translate english smoke_toples_1bf07d5b:
+
+    # Alice_12 "Ах вот как? Опять передумал? Всё, ты мне надоел, свали отсюда!" nointeract
+    Alice_12 "Oh yeah? You've changed your mind again? I don't want to see you anymore, get lost!" nointeract
+
+# game/dialogues/alicetalk.rpy:784
+translate english smoke_not_toples_8c8fad13:
+
+    # Alice_02 "Ты чего-то хотел, Макс?"
+    Alice_02 "What do you want?"
+
+# game/dialogues/alicetalk.rpy:785
+translate english smoke_not_toples_37c0a1b9:
+
+    # Max_07 "Да, хотел... Мы ведь договорились, что ты будешь курить без верха купальника!"
+    Max_07 "Yes, I did... We agreed that you would smoke without the top of your swimsuit!"
+
+# game/dialogues/alicetalk.rpy:786
+translate english smoke_not_toples_d811599c:
+
+    # Alice_13 "Знаешь, Макс, мне это надоело... Сколько можно? Я хочу спокойно курить и не волноваться, что ты за мной подглядываешь!"
+    Alice_13 "You know, Max, I'm sick of this... How much can I do? I want to smoke in peace and not worry about you peeping at me!"
+
+# game/dialogues/alicetalk.rpy:787
+translate english smoke_not_toples_815a473e:
+
+    # Max_09 "Ну хорошо, Алиса, как скажешь, можешь курить одетой. Только вот, если ты решила нарушить условия нашей договорённости, то почему бы тогда и мне не поступить так же?"
+    Max_09 "All right, Alice, whatever you say, you can smoke with your clothes on. Except if you're in breach of our agreement, then why don't I do the same?"
+
+# game/dialogues/alicetalk.rpy:788
+translate english smoke_not_toples_3e8c9a19:
+
+    # Alice_06 "Только не надо маме рассказывать о об этом..."
+    Alice_06 "Just don't tell Mom about this..."
+
+# game/dialogues/alicetalk.rpy:789
+translate english smoke_not_toples_21ec5b7a:
+
+    # Max_00 "Всё зависит от тебя, сестрёнка... Если сейчас снимешь верх и в качестве извинения покажешь грудь, то я представлю, будто ты ничего не нарушала."
+    Max_00 "It's up to you, sis... If you take your top off now and show me your tits as an apology, I'll pretend like you didn't violate anything."
+
+# game/dialogues/alicetalk.rpy:790
+translate english smoke_not_toples_66332c89:
+
+    # Alice_15 "Ах ещё и грудь показать! Может сразу и полапать её дать?!"
+    Alice_15 "Oh, and show me your chest! Why don't you just grab it right away?!"
+
+# game/dialogues/alicetalk.rpy:791
+translate english smoke_not_toples_d4cfa9a6:
+
+    # Max_03 "Очень заманчивое предложение... Но просто показать - я считаю справедливо! Сама накосячила..."
+    Max_03 "It's a very tempting offer... But just a look - I think it's fair!"
+
+# game/dialogues/alicetalk.rpy:795
+translate english smoke_not_toples_fe9993a5:
+
+    # Alice_06 "Ладно, один разок и быстро... Но не вздумай маме рассказывать! Ни про это, ни про сигареты."
+    Alice_06 "Okay, once, and quickly... But don't you dare tell Mom! Not about this, not about the cigarettes."
+
+# game/dialogues/alicetalk.rpy:796
+translate english smoke_not_toples_e135b876:
+
+    # Max_05 "Конечно, я ведь своё слово держу. Симпатичные сосочки!"
+    Max_05 "Of course, I keep my word. Cute nipples!"
+
+# game/dialogues/alicetalk.rpy:797
+translate english smoke_not_toples_4ee2407f:
+
+    # Alice_13 "Ну всё, полюбовался и хватит. Вали отсюда, дай спокойно покурить..." nointeract
+    Alice_13 "Okay, I'm done. Get out of here, let me have a quiet smoke..." nointeract
+
+# game/dialogues/alicetalk.rpy:810
+translate english smoke_nopants_7be74dfc:
+
+    # Alice_02 "Макс, чего хотел?" nointeract
+    Alice_02 "What do you want?" nointeract
+
+# game/dialogues/alicetalk.rpy:813
+translate english smoke_nopants_c40ddcc1:
+
+    # Alice_13 "Налюбовался? А вот теперь постой в сторонке, пока я покурю! Давай, вали уже..."
+    Alice_13 "Had an eyeful? Now go somewhere else and leave me alone."
+
+# game/dialogues/alicetalk.rpy:814
+translate english smoke_nopants_d8b756b2:
+
+    # Max_01 "Хорошо, хорошо..."
+    Max_01 "Fine, fine"
+
+# game/dialogues/alicetalk.rpy:816
+translate english smoke_nopants_b38d8562:
+
+    # Alice_12 "В каком смысле?!" nointeract
+    Alice_12 "What are you talking about?" nointeract
+
+# game/dialogues/alicetalk.rpy:819
+translate english smoke_nopants_d219c498:
+
+    # Alice_01 "Ты совсем идиот, Макс? Я в купальнике. Это не трусы. А трусы я и так не ношу под джинсами. Можешь себе фантазировать теперь сколько хочешь... Всё, уйди с глаз моих долой!"
+    Alice_01 "Are you retarded, Max? I'm in a swimsuit, it doesn't count as panties. I'm not wearing any panties under my jeans, and you can fantasize about it as much as you want. Now get lost!"
+
+# game/dialogues/alicetalk.rpy:820
+translate english smoke_nopants_2485171a:
+
+    # Max_01 "Ухожу, ухожу..."
+    Max_01 "Fine, I'm leaving"
+
+# game/dialogues/alicetalk.rpy:822
+translate english smoke_nopants_6e4f674f:
+
+    # Alice_02 "Ты наверное думаешь, что у тебя забавные шутки, да? Так вот нет. Абсолютно несмешные, дебильные шутки, как и ты сам. Всё, свалил отсюда. Я занята..."
+    Alice_02 "Do you think you have a good sense of humor, Max? Because you don't. At all. Your jokes are completely humorless and dull, just like you are. Now get lost, I'm busy."
+
+# game/dialogues/alicetalk.rpy:823
+translate english smoke_nopants_696b9e70:
+
+    # Max_01 "Как скажешь..."
+    Max_01 "Whatever you say..."
+
+# game/dialogues/alicetalk.rpy:825
+translate english smoke_nopants_48649dbe:
+
+    # Alice_03 "А чего передумал? А, хотя не важно. Я рада, а то мне всё натирает в джинсах... Хотя, тебе такие подробности знать не нужно. Спасибо за разрешение, ваше величество. Теперь дай покурю..." nointeract
+    Alice_03 "Why'd you change your mind? Wait, I don't care. I'm glad, jeans were chafing me... Not that you need to know about that. Thanks for your royal pardon, your highness. Now leave me alone." nointeract
+
+# game/dialogues/alicetalk.rpy:838
+translate english smoke_not_nopants_8c8fad13:
+
+    # Alice_02 "Ты чего-то хотел, Макс?"
+    Alice_02 "What do you want?"
+
+# game/dialogues/alicetalk.rpy:839
+translate english smoke_not_nopants_462a034b:
+
+    # Max_09 "Алиса, ну что за дела?! Я думал у нас уговор!"
+    Max_09 "Alice, what the hell is going on?! I thought we had a deal!"
+
+# game/dialogues/alicetalk.rpy:840
+translate english smoke_not_nopants_26b75c5e:
+
+    # Alice_06 "Это ты сейчас о чём, Макс?"
+    Alice_06 "What do you mean now, Max?"
+
+# game/dialogues/alicetalk.rpy:841
+translate english smoke_not_nopants_b0ae32f7:
+
+    # Max_08 "Мы ведь договорились, что ты не будешь одевать трусы днём. А я их на тебе видел!"
+    Max_08 "We agreed that you wouldn't wear underwear during the day. And you were wearing them!"
+
+# game/dialogues/alicetalk.rpy:842
+translate english smoke_not_nopants_dccc7eb9:
+
+    # Alice_14 "А мне вот интересно, когда это ты их мог увидеть?! Подглядывал, как я одеваюсь?"
+    Alice_14 "I was wondering when you would have seen them. Peeking at me dressing?"
+
+# game/dialogues/alicetalk.rpy:843
+translate english smoke_not_nopants_f96e47b5:
+
+    # Max_07 "Да здесь и подглядывать не нужно, они у тебя иногда прямо из-под джинс слегка торчат... Так что важно не то, как и где я это увидел, а то, что они на тебе были!"
+    Max_07 "You don't even need to peek, they sometimes just stick out from under your jeans a little bit... So it's not how I saw it or where I saw it that matters, it's that you were wearing it!"
+
+# game/dialogues/alicetalk.rpy:844
+translate english smoke_not_nopants_9f8071f9:
+
+    # Alice_00 "Ладно, ладно, признаю, я их снова ношу, потому что без них мне все натирает. Да и мама, если видит, что я без трусов во время наказания, шлепает гораздо сильней."
+    Alice_00 "Okay, okay, I'll admit, I'm wearing them again because without them, I'm...rubbing everything.... And Mom, if she sees me without my underwear during punishment, she slaps me a lot harder."
+
+# game/dialogues/alicetalk.rpy:845
+translate english smoke_not_nopants_f83a939d:
+
+    # Max_00 "Ну хорошо, я тебя освобождаю от уговора. Но только, если в качестве компенсации ты прямо сейчас покажешь мне сиськи!"
+    Max_00 "All right, I'm freeing you from the deal. But only if, as compensation, you show me your tits right now!"
+
+# game/dialogues/alicetalk.rpy:846
+translate english smoke_not_nopants_466d2992:
+
+    # Alice_16 "А не многого ли ты, мелкий извращенец, хочешь?!"
+    Alice_16 "Isn't there a lot you want, you little pervert?!"
+
+# game/dialogues/alicetalk.rpy:847
+translate english smoke_not_nopants_452a42de:
+
+    # Max_01 "Посмотреть на красивые сиськи - не извращение! И мне кажется, проще один раз показать, чем всё натирать будет..."
+    Max_01 "Looking at beautiful tits is not perversion! And I think it's easier to just show them once then have me ask for even more..."
+
+# game/dialogues/alicetalk.rpy:851
+translate english smoke_not_nopants_465d4378:
+
+    # Alice_06 "Ну на, любуйся, раз уж и дня не можешь прожить без извращений."
+    Alice_06 "Well, look, since you can't live a day without it."
+
+# game/dialogues/alicetalk.rpy:852
+translate english smoke_not_nopants_b29a919f:
+
+    # Max_03 "Классные сиськи!"
+    Max_03 "Nice tits!"
+
+# game/dialogues/alicetalk.rpy:853
+translate english smoke_not_nopants_9f211f88:
+
+    # Alice_13 "Спасибо. А теперь иди уже, погуляй где-нибудь. Дай докурить спокойно."
+    Alice_13 "Thank you. Now go for a walk somewhere. Let me have a quiet smoke."
+
+# game/dialogues/alicetalk.rpy:854
+translate english smoke_not_nopants_91edba57:
+
+    # Max_01 "Хорошо. Я ушёл..."
+    Max_01 "Okay. I'll go..."
+
+# game/dialogues/alicetalk.rpy:865
+translate english smoke_sleep_7be74dfc:
+
+    # Alice_02 "Макс, чего хотел?" nointeract
+    Alice_02 "What do you want?" nointeract
+
+# game/dialogues/alicetalk.rpy:868
+translate english smoke_sleep_c40ddcc1:
+
+    # Alice_13 "Налюбовался? А вот теперь постой в сторонке, пока я покурю! Давай, вали уже..."
+    Alice_13 "Had an eyeful? Now go somewhere else and leave me alone."
+
+# game/dialogues/alicetalk.rpy:869
+translate english smoke_sleep_d8b756b2:
+
+    # Max_01 "Хорошо, хорошо..."
+    Max_01 "Fine, fine"
+
+# game/dialogues/alicetalk.rpy:871
+translate english smoke_sleep_ba2dfd7b:
+
+    # Alice_04 "А чего это ты передумал? А, хотя не важно. Я рада, а то мне неудобно ночью, если выйти куда-то нужно, да и мама заметить может. Спасибо за разрешение, ваше величество. Теперь дай покурю..." nointeract
+    Alice_04 "Why did you change your mind? Oh, never mind, I'm glad, because I'm uncomfortable at night if I have to go out and Mom might notice. Thank you for your permission, Your Majesty. Now let me have a smoke..." nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:571
+    old "Нет, конечно!"
+    new "Of course not!"
+
+    # game/dialogues/alicetalk.rpy:576
+    old "Дай $20, и я буду молчать"
+    new "You can buy my silence for $20"
+
+    # game/dialogues/alicetalk.rpy:576
+    old "Если днем ты будешь ходить без трусов, буду молчать"
+    new "If you walk around without your underwear during the day, I'll keep quiet."
+
+    # game/dialogues/alicetalk.rpy:576
+    old "Если будешь курить без верха, буду молчать"
+    new "I won't say anything if from now on, you smoke topless."
+
+    # game/dialogues/alicetalk.rpy:576
+    old "Если разрешишь тебя отшлёпать, ничего не скажу"
+    new "I won't say anything if you will allow me to spank you"
+
+    # game/dialogues/alicetalk.rpy:576
+    old "Ничего. Не переживай!"
+    new "Don't worry, I don't need anything"
+
+    # game/dialogues/alicetalk.rpy:594
+    old "Угу..."
+    new "aha..."
+
+    # game/dialogues/alicetalk.rpy:619
+    old "Дай $20, и я ничего не скажу {color=[_ch8_col]}(Убеждение. Шанс: [ch8_vis]){/color}"
+    new "Give me $20 and I won't say anything {color=[_ch8_col]}(Persuasion. Chance: [ch8_vis]){/color}"
+
+    # game/dialogues/alicetalk.rpy:619
+    old "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4_col]}(Убеждение. Шанс: [ch4_vis]){/color}"
+    new "If you walk around without your underwear during the day, I'll keep quiet.... {color=[_ch4_col]}(Persuasion. Chance: [ch4_vis]){/color}"
+
+    # game/dialogues/alicetalk.rpy:619
+    old "Если больше не будешь носить лифчик, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}"
+    new "If you stop wearing your bra, I'll be quiet.... {color=[_ch3_col]}(Persuasion. Chance: [ch3_vis]){/color}"
+
+    # game/dialogues/alicetalk.rpy:619
+    old "Если будешь курить без верха купальника, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}"
+    new "I won't say anything if you continue to smoke topless {color=[_ch3_col]}(Persuasion. Chance: [ch3_vis]){/color}"
+
+    # game/dialogues/alicetalk.rpy:619
+    old "Ты знаешь, я сегодня добрый..."
+    new "You know I'm in a good mood today..."
+
+    # game/dialogues/alicetalk.rpy:630
+    old "Нет, давай $20 {color=[_ch2_col]}(Убеждение. Шанс: [ch2_vis]){/color}"
+    new "No, give me $20 {color=[_ch2_col]}(Persuasion. Chance: [ch2_vis]){/color}"
+
+    # game/dialogues/alicetalk.rpy:630
+    old "Хорошо, устроит и $10"
+    new "Fine, $10 will do"
+
+    # game/dialogues/alicetalk.rpy:648
+    old "Удачи!"
+    new "Good luck!"
+
+    # game/dialogues/alicetalk.rpy:705
+    old "Что ты! Нет, конечно..."
+    new "What are you talking about! Of course not..."
+
+    # game/dialogues/alicetalk.rpy:734
+    old "Доволен, конечно!"
+    new "Of course I am!"
+
+    # game/dialogues/alicetalk.rpy:734
+    old "А чего ты прикрываешься?"
+    new "Why are you covering yourself?"
+
+    # game/dialogues/alicetalk.rpy:734
+    old "Я передумал. Можешь одеться."
+    new "I've changed my mind. You can get dressed"
+
+    # game/dialogues/alicetalk.rpy:737
+    old "Не переживай, не скажу"
+    new "Don't worry, I won't"
+
+    # game/dialogues/alicetalk.rpy:737
+    old "Ну... это зависит от тебя!"
+    new "Well... it depends on you"
+
+    # game/dialogues/alicetalk.rpy:750
+    old "Ну, я перегнул палку..."
+    new "Well, I went too far..."
+
+    # game/dialogues/alicetalk.rpy:750
+    old "Это мой шаг к дружбе"
+    new "This is my step to friendship"
+
+    # game/dialogues/alicetalk.rpy:750
+    old "Да надоела!"
+    new "Yes, I got bored of you"
+
+    # game/dialogues/alicetalk.rpy:750
+    old "Ты знаешь, пусть всё остаётся как есть..."
+    new "You know, let's keep everything as it is..."
+
+    # game/dialogues/alicetalk.rpy:763
+    old "{i}свалить{/i}"
+    new "{i}leave{/i}"
+
+    # game/dialogues/alicetalk.rpy:810
+    old "Ничего, просто любуюсь..."
+    new "Nothing, just enjoying the view"
+
+    # game/dialogues/alicetalk.rpy:810
+    old "А ты чего в трусах?"
+    new "Why are you in panties?"
+
+    # game/dialogues/alicetalk.rpy:810
+    old "Я передумал. Можешь носить трусы..."
+    new "I've changed my mind, you can wear panties again"
+
+    # game/dialogues/alicetalk.rpy:816
+    old "Мы же договорились - без трусов!"
+    new "We had a deal, no panties!"
+
+    # game/dialogues/alicetalk.rpy:816
+    old "Да шучу я..."
+    new "I'm kidding"
+
+    # game/dialogues/alicetalk.rpy:865
+    old "Я передумал. Ты можешь спать в лифчике, если хочешь."
+    new "I changed my mind. You can sleep in your bra if you want."
 

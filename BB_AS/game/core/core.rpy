@@ -131,7 +131,9 @@ label NewDay:
                 if dcv[i].lost == 0:
                     dcv[i].done  = True
 
-        if 'secretbook' in dcv and dcv['secretbook'].done and not items["erobook_"+str(dcv['secretbook'].stage)].InShop: # прошел откат после дарения книги, можно купить следующую
+        if ('secretbook' in dcv and dcv['secretbook'].done
+            and "erobook_"+str(dcv['secretbook'].stage) in items
+            and not items["erobook_"+str(dcv['secretbook'].stage)].InShop): # прошел откат после дарения книги, можно купить следующую
             # dcv['secretbook'].stage += 1
             items["erobook_"+str(dcv['secretbook'].stage)].InShop = True
 
@@ -164,6 +166,12 @@ label NewDay:
             ])
         $ del punalice[14:]
     $ flags["lisa_hw"] = False
+
+    if credit.debt > 0:        # если кредит не погашен
+        $ credit.left -= 1       # уменьшим счетчик дней
+        if credit.left == 0:   # если счетчик дней кончился
+            $ credit.charge()    # начислим штраф
+
     return
 
 
@@ -241,12 +249,3 @@ label after_load:
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
-    if 'online_cources' not in globals():
-        call InitCources
-    if 'alice.pun' not in talk_var:
-        $ talk_var['alice.pun'] = 0
-    if current_ver != "0.03.0.002":
-        $ current_ver = "0.03.0.002"
-        $ chars['lisa'].gifts = []
-        $ chars['ann'].gifts = []
-        $ chars['alice'].gifts = []

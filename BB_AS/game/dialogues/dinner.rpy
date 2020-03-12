@@ -2,7 +2,6 @@
 label after_dinner:
     $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
     $ spent_time = 60
-    $ current_room = house[5]
     # $ current_room.cur_bg = "location house terrace dinner-b"
 
     jump Waiting
@@ -373,6 +372,8 @@ label dinner_4:
 
 
 label dinner:
+    $ current_room = house[5]
+    $ Distribution()
     if possibility["smoke"].stn == 0:
         jump talk_about_smoking
 

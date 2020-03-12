@@ -40,45 +40,41 @@ init python:
 
 image video1_movie = Movie(play="video/Impulse.webm", image="images/interface/laptop/start_page.webp", size=(1475, 829))
 
-# image AnimAnnEric1:
-#     "Animation AnnEric1 01"
-#     0.033
-#     "Animation AnnEric1 02"
-#     0.033
-#     "Animation AnnEric1 03"
-#     0.033
-#     "Animation AnnEric1 04"
-#     0.033
-#     "Animation AnnEric1 05"
-#     0.033
-#     "Animation AnnEric1 06"
-#     0.033
-#     "Animation AnnEric1 07"
-#     0.033
-#     "Animation AnnEric1 08"
-#     0.033
-#     "Animation AnnEric1 09"
-#     0.033
-#     "Animation AnnEric1 10"
-#     0.033
-#     "Animation AnnEric1 11"
-#     0.033
-#     "Animation AnnEric1 12"
-#     0.033
-#     "Animation AnnEric1 13"
-#     0.033
-#     "Animation AnnEric1 14"
-#     0.033
-#     "Animation AnnEric1 15"
-#     0.033
-#     "Animation AnnEric1 16"
-#     0.033
-#     "Animation AnnEric1 17"
-#     0.033
-#     "Animation AnnEric1 18"
-#     0.033
-#     "Animation AnnEric1 19"
-#     0.033
-#     "Animation AnnEric1 20"
-#     0.033
-#     repeat
+image AnimAnnEric1:
+    "Eric fuck 06 00"
+    0.033
+    "Eric fuck 06 01"
+    0.033
+    "Eric fuck 06 02"
+    0.033
+    "Eric fuck 06 03"
+    0.033
+    "Eric fuck 06 04"
+    0.033
+    "Eric fuck 06 05"
+    0.033
+    "Eric fuck 06 06"
+    0.033
+    "Eric fuck 06 07"
+    0.033
+    "Eric fuck 06 08"
+    0.033
+    "Eric fuck 06 09"
+    0.033
+    "Eric fuck 06 10"
+    0.033
+    "Eric fuck 06 11"
+    0.033
+    "Eric fuck 06 12"
+    0.033
+    "Eric fuck 06 13"
+    0.033
+    "Eric fuck 06 14"
+    0.033
+    "Eric fuck 06 15"
+    0.033
+    "Eric fuck 06 16"
+    0.033
+    "Eric fuck 06 17"
+    0.033
+    repeat

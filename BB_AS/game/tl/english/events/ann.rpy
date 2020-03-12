@@ -418,16 +418,84 @@ translate english ann_bath_55a4f81a:
 translate english ann_bath_e2ffea21:
 
     # Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..." nointeract
-    Max_05 "Wow, amazing! Here firm tits and those long, slender legs will drive anyone crazy..." nointeract
+    Max_05 "Wow, amazing! Her firm tits and those long, slender legs will drive anyone crazy..." nointeract
 
 # game/events/ann.rpy:382
 translate english ann_bath_e2ffea21_1:
 
     # Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..." nointeract
-    Max_05 "Wow, amazing! Here firm tits and those long, slender legs will drive anyone crazy..." nointeract
+    Max_05 "Wow, amazing! Her firm tits and those long, slender legs will drive anyone crazy..." nointeract
 
 # game/events/ann.rpy:387
 translate english ann_bath_36138fd2:
 
     # Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..." nointeract
     Max_07 "Eh! Looks like the fun part's over... Although, watching Mom wipe her wet and seductive body is just as enjoyable! Oh, what an ass she's got..." nointeract
+# TODO: Translation updated at 2020-03-09 09:01
+
+# game/events/ann.rpy:69
+translate english ann_shower_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 "Let's see what we got here..."
+
+# game/events/ann.rpy:76
+translate english ann_shower_ladder_e3f2416f:
+
+    # Max_07 "Да-а... Распахнутый халатик на маме - это просто изумительное шоу! Такие соблазнительные сосочки... да ещё и так близко... Ммм..."
+    Max_07 "Yeah, uh... The open robe on Mom is just an amazing show! Such tempting nipples... and also so close... "
+
+# game/events/ann.rpy:78
+translate english ann_shower_ladder_5a8c4673:
+
+    # Max_05 "О, да! Мама решила не надевать трусики и правильно сделала, потому что увидеть эту киску с утра пораньше - просто сказка!"
+    Max_05 "Oh, yeah! Mom decided not to wear panties and did the right thing, because seeing that pussy early in the morning is a fairy tale!"
+
+# game/events/ann.rpy:80
+translate english ann_shower_ladder_96a69e90:
+
+    # Max_03 "Вот это повезло... Мама в одних лишь трусиках, а её упругая грудь предстаёт передо мной во всей своей красе! Так бы любовался и любовался ей..."
+    Max_03 "Well, that's lucky... Mom is wearing only panties, and her soft breasts appear to me in all their glory! That's why I admire her..."
+
+# game/events/ann.rpy:82
+translate english ann_shower_ladder_098ca85a:
+
+    # Max_06 "Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все ёё округлости!"
+    Max_06 "Wow! You don't see it every time, she's completely naked! As long as you don't fall off a ladder like that... It'd be so cool to squeeze her plump body!"
+
+# game/events/ann.rpy:84
+translate english ann_shower_ladder_8e5f0b17:
+
+    # Max_00 "Лучше бы мне уже уйти, пока никто не увидел..."
+    Max_00 "I'd better get out of here before anyone sees... "
+
+# game/events/ann.rpy:392
+translate english ann_bath_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 "Let's see what we got here..."
+
+# game/events/ann.rpy:400
+translate english ann_bath_ladder_55a4f81a:
+
+    # Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..." nointeract
+    Max_03 "Oh, it's hot! Of course, I don't mean the water, I mean the way it looks. Uhh... Mom looks amazing..." nointeract
+
+# game/events/ann.rpy:405
+translate english ann_bath_ladder_e2ffea21:
+
+    # Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..." nointeract
+    Max_05 "Wow, that's fascinating! Those perky tits and long, slender legs will drive anyone crazy..." nointeract
+
+# game/events/ann.rpy:414
+translate english ann_bath_ladder_e2ffea21_1:
+
+    # Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..." nointeract
+    Max_05 "Wow, that's fascinating! Those perky tits and long, slender legs will drive anyone crazy..." nointeract
+
+# game/events/ann.rpy:419
+translate english ann_bath_ladder_36138fd2:
+
+    # Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..." nointeract
+    Max_07 "Ah! Looks like the fun part is over... Although, watching Mom wipe her wet and seductive body is just as enjoyable! Oh, what an ass she's got..." nointeract
+

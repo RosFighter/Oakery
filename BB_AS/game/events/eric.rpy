@@ -155,56 +155,80 @@ label eric_ann_fucking:
     scene location house annroom door-night
     if peeping["ann_eric_sex1"] > 0:
         return
-    else:
-        $ peeping["ann_eric_sex1"] = 1
 
+    $ peeping["ann_eric_sex1"] = 1
+
+    $ _chance = GetChance(mgg.stealth, 3)
+    $ _chance_color = GetChanceColor(_chance)
+    $ ch_vis = str(int(_chance/10)) + "%"
     menu:
         Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно{/i}":
+        "{i}заглянуть в окно\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
             pass
         "{i}уйти{/i}":
             $ current_room = house[1]
             jump AfterWaiting
 
     $ spent_time += 10
-    $ fuck_scene = renpy.random.randint(1, 5)
-    if fuck_scene == 3:
+    $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
+    if fuck_scene in [3, 6]:
         scene BG char Eric bed-02
     else:
         scene BG char Eric bed-01
-    $ renpy.show("Eric fuck 0"+str(fuck_scene))
-    if fuck_scene == 3:
+    if fuck_scene == 6:
+        show AnimAnnEric1
+    else:
+        $ renpy.show("Eric fuck 0"+str(fuck_scene))
+    if fuck_scene in [3, 6]:
         $ renpy.show("FG ann&eric-voyeur-02")
     else:
         $ renpy.show("FG ann&eric-voyeur-01")
 
-    if fuck_scene == 1:
-        Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nБоже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
-    elif fuck_scene == 2:
-        Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nВот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
-    elif fuck_scene == 3:
-        Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nЧто?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
-    elif fuck_scene == 4:
-        Max_08 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНу вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
-    elif fuck_scene == 5:
-        Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНичего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
+    if RandomChance(_chance):
+        if fuck_scene == 1:
+            Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nБоже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
+        elif fuck_scene == 2:
+            Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nВот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
+        elif fuck_scene == 3:
+            Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nЧто?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
+        elif fuck_scene == 4 or fuck_scene == 6:
+            Max_08 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНу вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
+        elif fuck_scene == 5:
+            Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНичего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
+    else:
+        if fuck_scene == 6:
+            scene BG char Eric bed-02
+            $ renpy.show("Eric fuck 06b")
+            $ renpy.show("FG ann&eric-voyeur-02")
+        else:
+            $ renpy.show("Eric fuck 0"+str(fuck_scene)+"b")
+        Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
+        $ mgg.stealth += 0.01
+        $ punreason[3] = 1
+        $ current_room = house[0]
+        jump Waiting
 
     $ mgg.stealth += 0.05
     $ notify_list.append(_("Скрытность Макса повысилась"))
 
     $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
     if rez > 0:
-        $ current_room = house[1]
+        $ current_room = house[0]
         jump Waiting
 
-    $ renpy.show("Eric fuck 0"+str(fuck_scene)+"a")
+    if fuck_scene == 6:
+        scene BG char Eric bed-02
+        $ renpy.show("Eric fuck 06a")
+        $ renpy.show("FG ann&eric-voyeur-02")
+    else:
+        $ renpy.show("Eric fuck 0"+str(fuck_scene)+"a")
     if fuck_scene == 1:
         Max_09 "Чёрт, этот удачливый ублюдок кончил ей прямо в рот, причём, судя по довольному лицу мамы, ей это понравилось! Ну почему таким уродам всегда везёт?! Ладно, надо уходить, а то они сейчас меня заметят..."
     elif fuck_scene == 2:
         Max_08 "Ого! Похоже, мама кончила и... Эрик тоже... Хорошо, что хоть не маме в рот... А она у нас та ещё проказница! Пора сматываться, пока меня не заметили!"
     elif fuck_scene == 3:
         Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватал ещё чтобы меня увидели..."
-    elif fuck_scene == 4:
+    elif fuck_scene == 4 or fuck_scene == 6:
         Max_10 "Ох, чёрт... наконец-то Эрик кончил и... хорошо, что не в маму... Вот же счастливый сукин сын... залил ей своей спермой всю спину... Пожалуй, не стоит здесь задерживаться, они могут меня увидеть."
     elif fuck_scene == 5:
         Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"

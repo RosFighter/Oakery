@@ -4,7 +4,7 @@ label StartPunishment:
     $ first = True
     $ defend = False
     # Макс теоретически может получить наказание как утром, так и вечером
-    if max(punreason):  # есть причины наказания Макса
+    if max(punreason) and tm > "18:00":  # есть причины наказания Макса, временнно наказываем только по вечерам
         $ pun_list.append("mgg")
 
     if tm > "18:00" and 0 < GetWeekday(day) < 6:
@@ -13,7 +13,7 @@ label StartPunishment:
         if RandomChance(chance):  # получит ли Лиза двойку
             $ punlisa[0][1] = 1
             $ pun_list.append("lisa")
-    if tm > "18:00":
+    if tm > "18:00" and dcv['smoke'].stage > 1:
         $ chance = GetAlicePunChance()  # шанс нахождения Анной сигарет Алисы
         if RandomChance(chance):  # найдет ли Анна сигареты Алисы
             $ punalice[0][1] = 1
@@ -85,50 +85,67 @@ label punishment_max:
     if tm < "14:00":
         scene BG punish-morning 01
         $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
-        # показать Макса
+        $ renpy.show("Max punish-morning 01"+mgg.dress)
     else:
         scene BG punish-evening 01
         $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
-        # показать Макса
+        $ renpy.show("Max punish-evening 01"+mgg.dress)
 
     if warning < 2 and newpunishment == 0:
         Ann_19 "Макс! Я вынуждена отчитать тебя перед всеми, так как у нас в семье не должно быть никаких секретов."
         if warning > 0:
             Max_10 "Я снова не виноват!"
-            Ann_17 "Не виноват, значит? Снова? Кажется, ты не осознаёшь, что это последнее предупреждение и в следующий раз я тебя выпорю на глазах у сестёр. Ты меня понял? А теперь рассказывай, что натворил, чтобы все были в курсе!"
+            Ann_17 "Не виноват, значит? Снова? Кажется, ты не осознаёшь, что это последнее предупреждение и в следующий раз я тебя выпорю на глазах у сестёр. Ты меня понял? А теперь рассказывай, что натворил, чтобы все были в курсе!" nointeract
         else:
             Max_10 "Я не виноват!"
-            Ann_17 "Не виноват, значит? А я думаю, что ещё как виноват. В этот раз тебе повезло, это всего лишь первое предупреждение. Надеюсь, второго не потребуется... Кстати, можешь всем рассказать, что ты натворил..."
-        menu .pun_reson:
-            "Ну, я случайно оказался рядом с душем, когда там была Лиза..." if punreason[0]:
+            Ann_17 "Не виноват, значит? А я думаю, что ещё как виноват. В этот раз тебе повезло, это всего лишь первое предупреждение. Надеюсь, второго не потребуется... Кстати, можешь всем рассказать, что ты натворил..." nointeract
+        $ __list = []
+        label .pun_reson:
+            $ __list.clear()
+            if punreason[0]:
+                $ __list.append((_("Ну, я случайно оказался рядом с душем, когда там была Лиза..."), 0))
+            if punreason[1]:
+                $ __list.append((_("Ну, я оказался случайно рядом с душем, где мылась Алиса..."), 1))
+            if punreason[2]:
+                $ __list.append((_("Ну, я подглядывал за тобой, мам..."), 2))
+            if punreason[3]:
+                $ __list.append((_("Ну, я подглядывал за вами с Эриком..."), 3))
+            if punreason[4]:
+                $ __list.append((_("Ну, я оказался случайно рядом с душем, где мылась Алиса..."), 4))
+            $ rez = renpy.display_menu(__list)
+            if rez == 0:
                 Lisa_12 "Он видел меня голой, мам! Накажи его! Почему он отделывается только предупреждением? Пусть получит, что заслужил!"
                 $ punreason[0] = 0
+                $ peeping['lisa_shower'] = 0
                 Max_11 "Да ничего я не заслужил!"
-            "Ну, я оказался случайно рядом с душем, где мылась Алиса..." if punreason[1]:
+            if rez == 1:
                 Alice_16 "Случайно? Врёт он всё, мам! Он стоял и пялился на меня!"
                 $ punreason[1] = 0
+                $ peeping['alice_shower'] = 0
                 Max_11 "Да, я мимо проходил!"
-            "Ну, я подглядывал за тобой, мам..." if punreason[2]:
+            if rez == 2:
                 Ann_14 "Очень хочу надеяться, что это было случайно. Тем не менее, ты пойман и как я уже сказала, получаешь предупреждение."
+                $ peeping['ann_shower'] = 0
                 $ punreason[2] = 0
                 Max_10 "Больше это не повторится!"
-            "Ну, я подглядывал за вами с Эриком..." if punreason[3]:
+            if rez == 3:
                 Ann_14 "Очень хочу надеяться, что ты это сделал не специально и просто проходил мимо. Тем не менее, ты пойман и как я уже сказала, получаешь предупреждение."
                 $ punreason[3] = 0
                 Max_10 "Да, я мимо проходил!"
-            "Ну, я оказался случайно рядом с душем, где мылась Алиса..." if punreason[4]:
+            if rez == 4:
                 Alice_16 "Случайно? Мам! Он всё врёт! Он подглядывал и, может быть, даже паука подбросил! А ты знаешь, как я боюсь пауков..."
+                $ peeping['alice_shower'] = 0
                 $ punreason[4] = 0
                 Max_09 "Трусиха!"
-        if max(punreason):
-            $ _r1 = renpy.random.randint(1, 3)
-            if _r1 == 1:
-                Ann_18 "Ты не закончил, Макс. Продолжай..."
-            elif _r1 == 2:
-                Ann_18 "Дальше, Макс, мы тебя внимательно слушаем..."
-            else:
-                Ann_18 "А ты про кое-что ещё не забыл?"
-            jump .pun_reson
+            if max(punreason):
+                $ _r1 = renpy.random.randint(1, 3)
+                if _r1 == 1:
+                    Ann_18 "Ты не закончил, Макс. Продолжай..." nointeract
+                elif _r1 == 2:
+                    Ann_18 "Дальше, Макс, мы тебя внимательно слушаем..." nointeract
+                else:
+                    Ann_18 "А ты про кое-что ещё не забыл?" nointeract
+                jump .pun_reson
         Ann_16 "У тебя есть ещё время подумать над своим поведением. Надеюсь, следующего раза не будет!"
         Max_14 "Да, мам..."
         Ann_12 "В общем, на этот раз вопрос уладили. Все сделали выводы, а кое-кто и серьёзно задумается. Да, Макс? Можешь не отвечать."
@@ -147,7 +164,7 @@ label punishment_max:
             return
         else:
             $ mgg.social += 0.1
-            if ngg.dress == "a":
+            if mgg.dress == "a":
                 $ _text = _("штаны")
             else:
                 $ _text = _("шорты")
@@ -155,6 +172,16 @@ label punishment_max:
                 Ann_19 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nВот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!tq] и ложись на мои колени. Надеюсь, ты сегодня в трусах..."
                 "{i}снять штаны{/i}":
                     pass
+        $ renpy.show("Max punish-evening 02"+mgg.dress)
+
+        Ann_18 "Ну и долго я буду ждать?! Давай ложись..."
+
+        scene BG punish-evening 02
+        if mgg.dress == "a":
+            $ renpy.show("Ann punish-evening max-01"+chars["ann"].dress)
+        else:
+            $ renpy.show("Ann punish-evening max-03"+chars["ann"].dress)
+
         # Макс без штанов у Анны на коленях
         if punreason.count(1) > 1:  # несколько причин для наказания, общая фраза
             Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
@@ -169,18 +196,25 @@ label punishment_max:
                 }[punreason.index(1)]
             Ann_16 "[_text!tq]"
         ### сцена наказания
+        if mgg.dress == "a":
+            $ renpy.show("Ann punish-evening max-02"+chars["ann"].dress)
+        else:
+            $ renpy.show("Ann punish-evening max-04"+chars["ann"].dress)
         Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
         ## здесь снижение влияния Макса для присутствующих персонажей
         python:
             for cr in current_room.cur_char:
-                cr.infmax = clip(cr.infmax - 5, 0, 100)
+                if chars[cr].infmax is not None:
+                    chars[cr].infmax = clip(chars[cr].infmax - 5, 0, 100)
 
         if tm < "14:00":
-            scene BG punish-morning 00
-            $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
+            scene BG punish-morning 01
+            $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
+            $ renpy.show("Max punish-morning 03"+mgg.dress)
         else:
-            scene BG punish-evening 00
-            $ renpy.show("Ann punish-evening 00"+chars["ann"].dress)
+            scene BG punish-evening 01
+            $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+            $ renpy.show("Max punish-evening 03"+mgg.dress)
 
         Ann_12 "Ну вот. Теперь все всё поняли? Ведите себя хорошо и вас не ждёт эта участь..."
     # elif newpunishment == 1:  # второй вариант наказания

@@ -242,6 +242,8 @@ label Laptop:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
     if possibility["spider"].stn == 0:
         $ search_theme.append((_("{i}читать о пауках{/i}"), "about_spider"))
+    if flags['credit'] == 1:
+        $ search_theme.append((_("{i}искать информацию по кридитам{/i}"), "about_credit"))
 
     call screen LaptopScreen
 
@@ -393,7 +395,9 @@ label about_secretbook:
         Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?"
         "{i}читать о книге{/i}":
             Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
+
     $ dcv['secretbook'] = Daily(4, False, True) # Покупка первой книги возможна через четыре дня.
+    $ dcv['secretbook'].stage = 1
     $ SetPossStage("secretbook", 2)
     $ spent_time += 30
     jump Laptop
@@ -458,7 +462,10 @@ label ClearPool:
     $ renpy.show("Max cleaning-pool 01"+mgg.dress)
     Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
     $ dcv["clearpool"].stage = 2
-    $ dcv["clearpool"].lost = 6
+    if day > 10:
+        $ dcv["clearpool"].lost = 6
+    else:
+        $ dcv["clearpool"].lost = 9
     $ spent_time = 60
     $ cur_ratio = 2.5
     jump Waiting
@@ -497,13 +504,16 @@ label delivery1:
 
     $ __StrDev = GetDeliveryString(0) # сформируем строку накладной
 
-    scene BG NoImage
+    scene BG delivery-00
+    Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
+    scene BG delivery-01
+    show Sam delivery 01
     Sam_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
     Max_00 "Конечно! А что тут?"
     $ renpy.say(Sam_00, __StrDev)
     Max_00 "Да, то что нужно. Спасибо!"
     $ current_room = house[6]
-
+    $ talk_var['courier1'] += 1
     $ DeletingDeliveryTempVar(0) # удалим временные переменные и очистим список доставки
     jump AfterWaiting
 
@@ -513,13 +523,16 @@ label delivery2:
 
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 
-    scene BG NoImage
-    "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    scene BG delivery-00
+    Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
+    scene BG delivery-01
+    $ renpy.show("Christina delivery 01"+renpy.random.choice(["a", "b"]))
+    Krs_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
     Max_00 "Конечно! А что тут?"
-    $ renpy.say("", __StrDev)
+    $ renpy.say(Krs_00, __StrDev)
     Max_00 "Да, то что нужно. Спасибо!"
     $ current_room = house[6]
-
+    $ talk_var['courier2'] += 1
     $ DeletingDeliveryTempVar(1) # удалим временные переменные и очистим список доставки
     jump AfterWaiting
 
@@ -798,3 +811,119 @@ label SearchCigarettes:
     $ dcv['betray_smoke'].lost = 1
     $ spent_time += 30
     jump Waiting
+
+
+label need_money:
+    $ current_room = house[0]
+    $ renpy.block_rollback()
+    scene Max unbox 04
+    Max_00 "Сегодня уже четверг. Последний день когда я могу заказать подарки девчонкам, чтобы опередить Эрика."
+    if ((items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy)) and
+                (items['dress'].InShop and not (items['dress'].have or items['dress'].buy))):
+        if money >= 500:
+            jump cheat_money
+        elif 300 <= money < 500:
+            Max_00 "Алисе нужно платье, Лизе купальник, а денег у меня хватает лишь на что-то одно..."
+        else:
+            Max_00 "Алисе нужно платье, Лизе купальник, а денег мне не хватит даже на что-то одно..."
+    elif not (items['dress'].InShop and not (items['dress'].have or items['dress'].buy)):
+        if money >= 220:
+            jump cheat_money
+        else:
+            Max_00 "Я уже купил платье Алисе, но на купальник для Лизы мне не хватает..."
+    elif not (items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy)):
+        if money >= 280:
+            jump cheat_money
+        else:
+            Max_00 "Я купил купальник для Лизы, но на платье Алисе мне уже не хватает..."
+    else:
+        jump cheat_money
+    if len(house[4].cams) > 0 and house[4].cams[0].total > 0:
+        Max_00 "Сайт у меня есть и уже приносит какую-то прибыл, нужно только время, чтобы раскрутить его."
+    else:
+        Max_00 "К сожалению у меня нет источника доходов, все мои деньги я получаю только от мамы."
+    Max_00 "Надо порыть в интернете, может есть возможность получить кредит?"
+    $ flags['credit'] = 1
+    $ spent_time += 10
+    jump Waiting
+
+
+label cheat_money:
+    if possibility["cams"].stn < 4:
+        if ((items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy))
+            and (items['dress'].InShop and not (items['dress'].have or items['dress'].buy))
+            and money <= 600):
+                jump .strateg
+        elif money < 320 and not (items['dress'].InShop and not (items['dress'].have or items['dress'].buy)):
+            jump .strateg
+        elif money < 380 not (items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy)):
+            jump .strateg
+        else:
+            pass
+    "На данном этапе игры у Макса не может быть такой суммы. Читерство облегчает игру, но ведет к непредсказуемым последствиям, в частности, к невозможности нормального продолжения игры."
+    "Рекомендуем начать заново и играть честно. На том этапе игры, когда это не будет иметь негативных последствий, возможность управления деньгами и характеристиками персонажей будет добавлено к функциям ноутбука."
+    jump AfterWaiting
+
+    label .strateg:
+        "Вы либо аккуратный читер, либо хороший стратег. В любом случае вы не нуждаетесь в дополнительных методах получения денег."
+        "В случае использования читов будьте осторожны - они могут привести к непредсказуемым последствиям, в частности, к невозможности нормального продолжения игры."
+
+
+label about_credit:
+    $ renpy.block_rollback()
+    hide video1_movie
+    show interface laptop bank-inf-1 at laptop_screen
+
+    Max_00 "Так, поищем, где можно простому парню разжиться денежкой..."
+    Max_00 "Это не подходит... Здесь нужно иметь официальную работу..."
+    Max_00 "О, а вот это может и подойти: краткосрочные займы начинающим интернет-предпринимателям."
+    Max_00 "Бла, бла, бла... ...если у Вас есть работающий проект в интернете, мы предоставляем займы на раскрутку Вашего бизнеса..."
+    if len(house[4].cams) > 0 and house[4].cams[0].total > 0:
+        Max_00 "Подытожим условия: \nВ течение месяца нужно вернуть всю сумму займа + 10% \nВ случа не погашения в срок сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять еще раз уже не получится... \nХм, лучше до такого не доводить."
+        $ credit.level = 1
+        Max_00 "Регистрируюсь... Указываю свои реквизиты... Свой сайт в качестве источника дохода... Готово."
+        Max_00 "Теперь мне доступен кредит, если срочно понадобятся деньги. Главное вовремя гасить, чтобы проблем не было."
+    else:
+        Max_00 "Блииин, а у меня нет никакого проекта. Получается, что денег мне никто не даст."
+
+    $ flags["credit"] = 2
+    $ spent_time += 30
+    jump Laptop
+
+
+label getting_load:
+    show screen Bank
+    menu:
+        Max_00 "Сколько мне сейчас нужно занять?"
+        "$500":
+            $ credit.getting(500)
+        "$1000" if credit.level > 1:
+            $ credit.getting(1000)
+        "$2000" if credit.level > 2:
+            $ credit.getting(2000)
+        "$5000" if credit.level > 3:
+            $ credit.getting(5000)
+        "{i}не сейчас{/i}":
+            pass
+    call screen Bank
+
+
+label return_part_loan:
+    show screen Bank
+    menu:
+        Max_00 "Сколько я верну сейчас?"
+        "$50":
+            $ credit.part(50)
+        "$100" if money >= 100 and credit.debt >= 100:
+            $ credit.part(100)
+        "$200" if money >= 200 and credit.debt >= 200:
+            $ credit.part(200)
+        "$500" if money >= 500 and credit.debt >= 500:
+            $ credit.part(500)
+        "$1000" if money >= 1000 and credit.debt >= 1000:
+            $ credit.part(1000)
+        "$2000" if money >= 2000 and credit.debt >= 2000:
+            $ credit.part(2000)
+        "{i}не сейчас{/i}":
+            pass
+    call screen Bank

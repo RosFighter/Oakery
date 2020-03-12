@@ -655,6 +655,8 @@ label breakfast_5:
 
 
 label breakfast:
+    $ current_room = house[5]
+    $ Distribution()
 
     if day > 1 and 'smoke' not in dcv:
         ## Добавляем возможность курения Алисы

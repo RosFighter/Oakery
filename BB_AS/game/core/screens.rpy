@@ -134,6 +134,23 @@ screen PowerBack2():
     key "K_ESCAPE" action [Hide("Withdraw"), Hide("SEO"), Jump("open_site")]
     key "mouseup_3" action [Hide("Withdraw"), Hide("SEO"), Jump("open_site")]
 
+screen PowerBack3():
+    frame xalign 0.5 ypos 985 xsize 200:# background None:
+        if "06:00" <= tm < "21:00":
+            background "interface laptop keys-bg-day"
+        else:
+            background "interface laptop keys-bg-night"
+        xmargin 0 ymargin 0 xpadding 0 ypadding 0
+        hbox spacing 100:
+            imagebutton:
+                auto "interface laptop back %s"
+                action [Hide("Withdraw"), Hide("Bank"), Jump("Laptop")] at power_zoom
+            imagebutton:
+                auto "interface laptop power %s"
+                action [Hide("Withdraw"), Hide("Bank"), Jump("Waiting")] at power_zoom
+    key "K_ESCAPE" action [Hide("Withdraw"), Hide("Bank"), Jump("Laptop")]
+    key "mouseup_3" action [Hide("Withdraw"), Hide("Bank"), Jump("Laptop")]
+
 screen PowerButton():
     imagebutton:
         pos (935, 985) auto "interface laptop power %s"
@@ -156,6 +173,8 @@ screen LaptopScreen():
     if possibility["cams"].stn == 3 and money >= 100:
         $ bookmarks += 1
     if possibility["cams"].stn >= 4:
+        $ bookmarks += 1
+    if credit.level > 0:
         $ bookmarks += 1
 
     frame area(221, 93, 1475, 829) background None:
@@ -203,10 +222,146 @@ screen LaptopScreen():
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop bb cam" action Jump("open_site") at book_marks
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
 
+                    if credit.level > 0:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop online bank" action Show("Bank") at book_marks
+                            text _("{b}CYBER-БАНК{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
+
+
             if len(search_theme) > 0:
                 frame  xpos 1055 ypos 25 background None:
                     add "interface marker blue" at mark
 
+
+screen LaptopDouble():
+    tag menu
+    modal True
+
+    use PowerButton
+    use notify_check
+
+    $ bookmarks = 2
+    if dcv["buyfood"].stage == 1:
+        $ bookmarks += 1
+    if possibility["cams"].stn == 3 and money >= 100:
+        $ bookmarks += 1
+    if possibility["cams"].stn >= 4:
+        $ bookmarks += 1
+    if credit.level > 0:
+        $ bookmarks += 1
+
+    frame area(221, 93, 1475, 829) background None:
+        vbox: # деньги
+            align(0.985, 0.015)
+            text "$[money]" xalign(1.0) font "hermes.ttf" size 48 drop_shadow[(2, 2)]
+        viewport:
+            xfill True
+            ypos 30
+            ysize 770
+            mousewheel "change"
+            draggable True
+            if bookmarks > 6:
+                scrollbars "vertical"
+
+            vbox:
+                xfill True
+                spacing 30
+                if len(search_theme) > 0:
+                    imagebutton xalign .5 idle "interface laptop search" action NullAction() focus_mask True
+                else:
+                    imagebutton xalign .5 idle "interface laptop search" action NullAction() focus_mask True
+
+                vpgrid cols 3 xalign .5 xsize 1260:
+                    xspacing 50
+                    yspacing 40
+
+                    frame xysize(370, 295) background None:
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop shop" action NullAction()
+                        text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+
+                    frame xysize(370, 295) background None:
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action NullAction()
+                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+
+                    if dcv["buyfood"].stage == 1:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop grocery" action NullAction()
+                            text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
+
+                    if possibility["cams"].stn == 3 and money >= 100:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop CreateSite" action NullAction()
+                            text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
+
+                    if possibility["cams"].stn >= 4:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop bb cam" action NullAction()
+                            text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
+
+                    if credit.level > 0:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop online bank" action NullAction()
+                            text _("{b}CYBER-БАНК{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
+
+
+################################################################################
+screen Bank():
+    tag menu2
+    modal True
+    use LaptopDouble
+    use PowerBack3
+    frame align(0.5, 0.42) xsize 1000:
+        xmargin 0 ymargin 0 xpadding 50 ypadding 30
+        vbox spacing 10:
+            frame xysize(900, 300) background "interface laptop banner bank"
+            text _("ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ") font "trebucbd.ttf" color "#FFFFFF" size 28 xalign 0.5
+            if credit.debt > 0:
+                hbox xfill True:
+                    if credit.fines:
+                        $ _col = red
+                    else:
+                        $ _col = orange
+                    text "Задолженность: {color=[_col]}$[credit.debt]{/color}"
+                    text "[credit.left] дней на погашение" xalign 1.0
+                if money >= credit.debt:
+                    textbutton _("ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"):
+                        action Function(credit.repay)
+                        style "green_button"
+                if money > 50:
+                    textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
+                        action Jump("return_part_loan")
+                        style "green_button"
+                else:
+                    textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
+                        action NullAction()
+                        style "red_button"
+            else:
+                textbutton _("ВЗЯТЬ КРЕДИТ"):
+                    action Jump("getting_load")
+                    style "green_button"
+
+style green_button:
+    idle_background Frame("interface button green", 12, 12)
+    hover_background Frame("interface button green", 12, 12)
+    xalign .5
+    xpadding 30 ypadding 10 ymargin 5
+style green_button_text:
+    font "trebuc.ttf"
+    text_align 0.5
+    size 30
+    idle_color "#000000"
+    hover_color "#FFFFFF"
+style red_button:
+    idle_background Frame("interface button red", 12, 12)
+    hover_background Frame("interface button red", 12, 12)
+    xalign .5
+    xpadding 30 ypadding 10 ymargin 5
+style red_button_text:
+    font "trebuc.ttf"
+    text_align 0.5
+    size 30
+    idle_color "#000000"
+    hover_color "#FFFFFF"
 
 ################################################################################
 screen Search():

@@ -300,3 +300,50 @@ init python:
             self.img     = img      # префикс изображений ("soc"+"-"+индекс курса+"-"+индекс части: soc-0-0, soc-0-1...)
             self.cources = cources  # список частей курса
             self.current = 0        # текущая часть курса
+
+    ############################################################################
+    class Loan:
+        def __init__(self):
+            self.level    = 0      # уровень доступного кредита
+            self.amount   = 0      # выдан займ на сумму
+            self.returned = 0      # возвращенная сумма
+            self.debt     = 0      # непогашенный остаток
+            self.fines    = False  # начислен штраф
+            self.left     = 0      # дней до начисления штрафа
+
+        def getting(self, sum):  # получить займ на сумму
+            global money
+            self.amount = sum
+            self.debt   = int(sum * 1.1)
+            self.left   = 30
+            money += sum
+
+        def repay(self):  # полностью погасить займ
+            global money
+            if self.fines:
+                self.level = 0
+            elif self.amount == 500 and self.level == 1:
+                self.level = 2
+            elif self.amount == 1000 and self.level == 2:
+                self.level = 3
+            elif self.amount == 2000 and self.level == 3:
+                self.level = 4
+            money -= self.debt
+            self.amount = 0
+            self.returned = 0
+            self.debt = 0
+            self.left = 0
+
+        def part(self, sum):  # погасить часть займа на сумму
+            global money
+            if sum < self.debt:
+                money -= sum
+                self.debt -= sum
+                self.returned += sum
+            else:
+                self.repay()
+
+        def charge(self):   # начислим штраф в размере тройной суммы оставшегося долга
+            self.debt = self.debt * 3
+            self.fines = True
+            self.left = 30

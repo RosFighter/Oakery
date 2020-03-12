@@ -270,6 +270,7 @@ label alice_shower:
                 Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nСупер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
             else:
                 Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
+            jump .end
         elif RandomChance(_chance):
             $ peeping["alice_shower"] = 2
             $ mgg.stealth += 0.1
@@ -282,7 +283,8 @@ label alice_shower:
             Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
             jump .end
         else:
-            $ peeping["Alice_shower"] = 3
+            $ peeping["alice_shower"] = 3
+            $ punreason[1] = 1
             $ mgg.stealth += 0.05
             $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
             $ __ran1 = renpy.random.choice(["09", "10"])

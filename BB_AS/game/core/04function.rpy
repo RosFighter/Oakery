@@ -476,6 +476,7 @@ init python:
 
 
     def CamShow(): # расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
+        global credit
         grow_list = []
 
         cameras = [] # список установленных камер
@@ -590,6 +591,9 @@ init python:
                         earn = round(earn, 2)
                         cam.total += earn
                         if cur_tm == "04:00":
+                            cam.today += earn
+                            if credit.fines and credit.debt > 0:  # если есть непогашенный кредит со штрафом
+                                credit.part(min(int(cam.today/2), credit.debt))  # половина ежедневного дохода идет в счет погашения долга
                             cam.today = 0
                         else:
                             cam.today += earn

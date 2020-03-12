@@ -373,4 +373,6 @@ label talk_about_smoking:
                     pass
     $ AddSchedule(plan_alice, Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
     $ AddRelMood('alice', -10, __mood)
+    $ current_room = house[5]
+    $ Distribution()
     jump StartPunishment
