@@ -1768,3 +1768,71 @@ translate english strings:
     old "Я передумал. Ты можешь спать в лифчике, если хочешь."
     new "I changed my mind. You can sleep in your bra if you want."
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+# game/dialogues/alicetalk.rpy:883
+translate english Alice_sorry_30bc32f9:
+
+    # Alice_15 "Ух ты, у тебя, извращенца мелкого, совесть проснулась?! Неожиданно..."
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:884
+translate english Alice_sorry_a26b98ac:
+
+    # Max_10 "Нет, я думаю, ты вряд ли правильно поняла то, что случилось. Я за тобой не подглядывал..."
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:885
+translate english Alice_sorry_03a531c0:
+
+    # Alice_16 "Макс, я по-твоему полная дура что ли?! Ты стоял за стеной, и нагло смотрел, как я принимала душ!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:886
+translate english Alice_sorry_363553de:
+
+    # Max_14 "Но на деле же, так получилось не специально... Я просто шёл мимо..."
+    Max_14 ""
+
+# game/dialogues/alicetalk.rpy:887
+translate english Alice_sorry_fb165afa:
+
+    # Alice_05 "Да, да, конечно... Я очень хочу посмотреть, что с тобой сделает мама, когда об этом узнает..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:888
+translate english Alice_sorry_ee958c85:
+
+    # Max_10 "Да, знаю, в такое очень трудно поверить, но я просто шёл мимо, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:889
+translate english Alice_sorry_c7c9da47:
+
+    # Alice_03 "Ну вот никак мне в это не верится, Макс! Никаких твоих оправданий не хватит, чтобы я в это поверила."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:890
+translate english Alice_sorry_7b2bd462:
+
+    # Max_07 "В таком случае, предлагаю представить, что ничего такого утром не было. Ты ничего не говоришь маме, а я в свою очередь куплю тебе чего-нибудь вкусненького?"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:891
+translate english Alice_sorry_f8604e25:
+
+    # Alice_08 "Ах ты... паршивец... Это подлый ход, потому что от вкусняшки я бы не отказалась... Хорошо, но обещать ничего не буду, сперва посмотрю, что это будет за вкусность... Если ты конечно успеешь до завтрашего вечера!"
+    Alice_08 ""
+
+# game/dialogues/alicetalk.rpy:892
+translate english Alice_sorry_01f9d180:
+
+    # Max_01 "Обязательно успею! Завтра всё будет..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:895
+translate english Alice_sorry_97553d34:
+
+    # Alice_07 "И смотри, чтобы мне понравилось..."
+    Alice_07 ""
+

@@ -940,3 +940,11 @@ translate english strings:
     old "Это продвинутый длительный курс, предназначенный для тех, кто хочет постоянно обучаться и совершенствоваться. На данный момент это последний доступный курс."
     new "This is an advanced long-term course for those who want to learn and self-improve. Currently it’s the last available course."
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+translate english strings:
+
+    # game/core/03variables.rpy:326
+    old "Хотел извиниться за утренний инцидент..."
+    new ""
+

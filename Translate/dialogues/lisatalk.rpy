@@ -2488,3 +2488,83 @@ translate english strings:
     old "Лиза, я знаю о чём говорю! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
     new "I know what I'm doing, Lisa! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+# game/dialogues/lisatalk.rpy:1052
+translate english Lisa_sorry_e096100b:
+
+    # Lisa_12 "Значит решил признаться, что бессовестно глазел на меня в душе?!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:1053
+translate english Lisa_sorry_b0a77928:
+
+    # Max_10 "Ты же понимаешь, что я не специально..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:1054
+translate english Lisa_sorry_76bef495:
+
+    # Lisa_11 "Макс, ты серьёзно думаешь, что я в это поверю? Я же видела, как ты за мной подглядывал!"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:1055
+translate english Lisa_sorry_391a38ea:
+
+    # Max_14 "Да я не хотел смотреть, просто мимо шёл..."
+    Max_14 ""
+
+# game/dialogues/lisatalk.rpy:1056
+translate english Lisa_sorry_88ece42c:
+
+    # Lisa_13 "Ага, конечно, мимо он шёл... Вот вечером маме расскажу - посмотрим, что она с тобой сделает!"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:1057
+translate english Lisa_sorry_cf9250b3:
+
+    # Max_10 "Не виноват я! Просто шёл, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:1058
+translate english Lisa_sorry_7e2e1148:
+
+    # Lisa_09 "Ну не знаю, Макс... Как-то это всё выглядит..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1059
+translate english Lisa_sorry_5937ca33:
+
+    # Max_11 "Неоднозначно?! Согласен..."
+    Max_11 ""
+
+# game/dialogues/lisatalk.rpy:1060
+translate english Lisa_sorry_23f53394:
+
+    # Lisa_10 "Это ещё слабо сказано..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:1061
+translate english Lisa_sorry_1523ac3a:
+
+    # Max_07 "Да, тебе не удобно, мне не удобно... Давай мы просто об этом забудем... и ты ничего не будешь говорить маме об этом, а я в свою очередь куплю тебе какую-нибудь вкусняшку?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1062
+translate english Lisa_sorry_a79e8934:
+
+    # Lisa_00 "Ну, Макс... Я хочу вкусняшку... Но времени у тебя до завтрашнего вечера, понял?! Иначе перед ужином мама всё узнает..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:1063
+translate english Lisa_sorry_0132e90e:
+
+    # Max_01 "Хорошо. Завтра всё будет..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:1066
+translate english Lisa_sorry_449604df:
+
+    # Lisa_01 "Ну посмотрим."
+    Lisa_01 ""
+

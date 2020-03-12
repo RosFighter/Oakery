@@ -855,3 +855,175 @@ translate english delivery2_0ba1be34:
     # Max_00 "Да, то что нужно. Спасибо!"
     Max_00 "Yep, that's what I ordered. Thanks!"
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+# game/events/max.rpy:508
+translate english delivery1_919500cd:
+
+    # Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
+    Max_07 ""
+
+# game/events/max.rpy:527
+translate english delivery2_919500cd:
+
+    # Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
+    Max_07 ""
+
+# game/events/max.rpy:820
+translate english need_money_abb42405:
+
+    # Max_10 "Сегодня уже четверг. Последний день когда я могу заказать подарки девчонкам, чтобы опередить Эрика."
+    Max_10 ""
+
+# game/events/max.rpy:826
+translate english need_money_ac403840:
+
+    # Max_11 "Нужно скорее купить платье Алисе и купальник для Лизы, а денег у меня хватает лишь на что-то одно..."
+    Max_11 ""
+
+# game/events/max.rpy:828
+translate english need_money_3eda5efb:
+
+    # Max_11 "Нужно скорее купить платье Алисе и купальник для Лизы, а денег мне не хватит даже на что-то одно..."
+    Max_11 ""
+
+# game/events/max.rpy:833
+translate english need_money_d141bd06:
+
+    # Max_11 "Я уже купил платье Алисе, но на купальник для Лизы мне не хватит денег..."
+    Max_11 ""
+
+# game/events/max.rpy:838
+translate english need_money_82767ab2:
+
+    # Max_11 "Я уже купил купальник для Лизы, но на платье Алисе мне не хватит денег..."
+    Max_11 ""
+
+# game/events/max.rpy:842
+translate english need_money_e2c6bbaf:
+
+    # Max_08 "Сайт у меня есть и уже приносит какую-то прибыль, но нужно время, чтобы раскрутить его."
+    Max_08 ""
+
+# game/events/max.rpy:844
+translate english need_money_4caca393:
+
+    # Max_08 "К сожалению, у меня нет источника доходов, все мои деньги я получаю только от мамы. Ну и от Алисы ещё могу..."
+    Max_08 ""
+
+# game/events/max.rpy:845
+translate english need_money_e2987b4e:
+
+    # Max_09 "Нужно поискать какую-нибудь информацию в интернете, может есть возможность получить кредит."
+    Max_09 ""
+
+# game/events/max.rpy:863
+translate english cheat_money_46383d7e:
+
+    # "На данном этапе игры у Макса не может быть такой суммы. Взлом игры может привести к непредсказуемым последствиям, в частности, к потере некоторых возможностей и функционала игры, а так же к возникновению критических ошибок, которые не позволят вам продолжить игру."
+    ""
+
+# game/events/max.rpy:867
+translate english cheat_money_strateg_16b9bde6:
+
+    # "Вы либо аккуратный взломщик, либо хороший стратег. В любом случае вы не нуждаетесь в дополнительных методах получения денег. Учтите, взлом игры может привести к непредсказуемым последствиям, в частности, к потере некоторых возможностей и функционала игры, а так же к возникновению критических ошибок, которые не позволят вам продолжить игру."
+    ""
+
+# game/events/max.rpy:875
+translate english about_credit_235ff689:
+
+    # Max_00 "И так, поищем, где можно простому парню разжиться деньгами..."
+    Max_00 ""
+
+# game/events/max.rpy:876
+translate english about_credit_3db8ce1c:
+
+    # Max_09 "Это не подходит... Здесь нужно иметь официальное трудоустройство на работе..."
+    Max_09 ""
+
+# game/events/max.rpy:877
+translate english about_credit_ed51b8a7:
+
+    # Max_07 "Ага, а вот это может и подойти - краткосрочные займы начинающим интернет-предпринимателям. О, да, это про меня..."
+    Max_07 ""
+
+# game/events/max.rpy:878
+translate english about_credit_189e301b:
+
+    # Max_01 "Бла, бла, бла... ...если у Вас есть работающий проект в интернете, мы предоставляем займы на раскрутку Вашего бизнеса..."
+    Max_01 ""
+
+# game/events/max.rpy:880
+translate english about_credit_018fe8cf:
+
+    # Max_04 "Подытожим условия: \nВ течение месяца нужно вернуть всю сумму займа + 10% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится... \nЛучше, конечно же, до такого не доводить."
+    Max_04 ""
+
+# game/events/max.rpy:881
+translate english about_credit_6a66dabb:
+
+    # Max_05 "Регистрируюсь... Указываю свои реквизиты... Свой сайт в качестве источника дохода... Готово!"
+    Max_05 ""
+
+# game/events/max.rpy:882
+translate english about_credit_aae7fcb4:
+
+    # Max_02 "Теперь я могу взять кредит, если срочно понадобятся деньги. Главное вовремя его погасить, чтобы проблем не было..."
+    Max_02 ""
+
+# game/events/max.rpy:885
+translate english about_credit_a7187d9d:
+
+    # Max_16 "Вот чёрт, а у меня нет никакого проекта! Получается, что денег мне никто не даст."
+    Max_16 ""
+
+# game/events/max.rpy:894
+translate english getting_load_f9d89f7f:
+
+    # Max_00 "Сколько мне сейчас нужно занять?" nointeract
+    Max_00 "" nointeract
+
+# game/events/max.rpy:911
+translate english return_part_loan_4564f05f:
+
+    # Max_00 "Сколько я верну сейчас?" nointeract
+    Max_00 "" nointeract
+
+translate english strings:
+
+    # game/events/max.rpy:246
+    old "{i}искать информацию по кридитам{/i}"
+    new ""
+
+    # game/events/max.rpy:894
+    old "$500"
+    new "$500"
+
+    # game/events/max.rpy:894
+    old "$1000"
+    new "$1000"
+
+    # game/events/max.rpy:894
+    old "$2000"
+    new "$2000"
+
+    # game/events/max.rpy:894
+    old "$5000"
+    new "$5000"
+
+    # game/events/max.rpy:894
+    old "{i}не сейчас{/i}"
+    new ""
+
+    # game/events/max.rpy:911
+    old "$50"
+    new "$50"
+
+    # game/events/max.rpy:911
+    old "$100"
+    new "$100"
+
+    # game/events/max.rpy:911
+    old "$200"
+    new "$200"
+
