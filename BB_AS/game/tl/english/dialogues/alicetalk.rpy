@@ -1270,7 +1270,7 @@ translate english smoke_fear_a86ec81d:
 translate english smoke_fear_9ccd57cc:
 
     # Alice_03 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nДа я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
-    Alice_03 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nI don't actually walk around braless all the time, except when I'm asleep... ..."
+    Alice_03 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nI don't actually walk around braless all the time, except when I'm asleep..."
 
 # game/dialogues/alicetalk.rpy:671
 translate english smoke_fear_0f7a641d:

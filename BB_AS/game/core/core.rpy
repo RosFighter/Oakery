@@ -31,7 +31,7 @@ label Waiting:
 
     if day != prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
-        call NewDay
+        call NewDay from _call_NewDay
 
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()

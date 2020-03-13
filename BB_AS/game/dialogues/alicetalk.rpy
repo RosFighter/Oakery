@@ -21,7 +21,7 @@ label AliceTalkStart:
         $ __mood = GetMood("alice")[0]
         if rez in gifts['alice']:
             if renpy.has_label(rez.label):
-                call expression rez.label
+                call expression rez.label from _call_expression_8
         elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Alice_badbadmood

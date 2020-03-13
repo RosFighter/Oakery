@@ -574,7 +574,7 @@ translate english punishment_alice_e5b82d3f_1:
 translate english punishment_alice_28b1c8e9:
 
     # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
-    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, I'm not punishing her today. I hope I don't regret it... Thank your brother, Alice. And don't invite any more friends like that here, they won't do you any good... ..."
+    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, I'm not punishing her today. I hope I don't regret it... Thank your brother, Alice. And don't invite any more friends like that here, they won't do you any good..."
 
 # game/dialogues/punishment.rpy:380
 translate english punishment_alice_2a128a29_1:
@@ -586,7 +586,7 @@ translate english punishment_alice_2a128a29_1:
 translate english punishment_alice_f064e992_1:
 
     # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good. ..."
+    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good..."
 
 # game/dialogues/punishment.rpy:403
 translate english punishment_alice_6bf98fd4:

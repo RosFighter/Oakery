@@ -712,7 +712,7 @@ translate english strings:
 
     # game/events/max.rpy:350
     old "Хм... Так... Ага. Это сюда запишем, это сюда..."
-    new "Um... So, um... Yeah. Let's write this down here, ..."
+    new "Um... So, um... Yeah. Let's write this down here..."
 
     # game/events/max.rpy:352
     old "Так. Из этой таблицы мы делаем вывод. Ага. Вот это значит, что... Нет, не так. Вот. Вроде получилось..."

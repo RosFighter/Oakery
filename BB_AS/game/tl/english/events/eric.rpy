@@ -372,7 +372,7 @@ translate english strings:
 translate english eric_ann_sleep_9771290e:
 
     # Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
-    Max_05 "Mom is so beautiful... ...and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her...As long as they don't wake up now..." nointeract
+    Max_05 "Mom is so beautiful... and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her... As long as they don't wake up now..." nointeract
 
 # TODO: Translation updated at 2020-03-12 12:28
 
@@ -380,13 +380,13 @@ translate english eric_ann_sleep_9771290e:
 translate english eric_ann_fucking_5cbdae7c:
 
     # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now! ..."
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now!"
 
 # game/events/eric.rpy:319
 translate english eric_ann_shower_172a174a:
 
     # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now! ..."
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now!"
 
 translate english strings:
 
