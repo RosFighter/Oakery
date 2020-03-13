@@ -957,7 +957,7 @@ translate english about_credit_189e301b:
 translate english about_credit_018fe8cf:
 
     # Max_04 "Подытожим условия: \nВ течение месяца нужно вернуть всю сумму займа + 10% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится... \nЛучше, конечно же, до такого не доводить."
-    Max_04 "Let's summarize the conditions: \nВ within a month you need to repay the entire amount of the loan + 10% \nВ if not repaid on time, the amount of the debt is tripled every 30 days, and my site will withdraw half of the profits daily. And you will not be able to borrow again... \n,of course, do not bring it to this."
+    Max_04 "Let's summarize the conditions: \nWithin a month you need to repay the entire amount of the loan + 10% \nIf not repaid on time, the amount of the debt is tripled every 30 days, and my site will withdraw half of the profits daily. And you will not be able to borrow again... \nOf course, do not bring it to this."
 
 # game/events/max.rpy:881
 translate english about_credit_6a66dabb:
@@ -1013,7 +1013,7 @@ translate english strings:
 
     # game/events/max.rpy:894
     old "{i}не сейчас{/i}"
-    new "{i1}not now-{/i}"
+    new "{i}not now{/i}"
 
     # game/events/max.rpy:911
     old "$50"

@@ -1816,7 +1816,7 @@ translate english Alice_sorry_c7c9da47:
 translate english Alice_sorry_7b2bd462:
 
     # Max_07 "В таком случае, предлагаю представить, что ничего такого утром не было. Ты ничего не говоришь маме, а я в свою очередь куплю тебе чего-нибудь вкусненького?"
-    Max_07 ""Ok fine. Lets just imagine that nothing happened this morning. You don't say anything to Mom, and I'll buy you something sweet in return?"
+    Max_07 "Ok fine. Lets just imagine that nothing happened this morning. You don't say anything to Mom, and I'll buy you something sweet in return?"
 
 # game/dialogues/alicetalk.rpy:891
 translate english Alice_sorry_f8604e25:

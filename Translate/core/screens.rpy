@@ -296,5 +296,5 @@ translate english strings:
 
     # game/core/screens.rpy:339
     old "ВЗЯТЬ КРЕДИТ"
-    new "TOTAL CREDIT"
+    new "TAKE THE CREDIT"
 
