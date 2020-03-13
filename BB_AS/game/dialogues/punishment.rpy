@@ -205,7 +205,7 @@ label punishment_max:
         python:
             for cr in current_room.cur_char:
                 if chars[cr].infmax is not None:
-                    chars[cr].infmax = clip(chars[cr].infmax - 5, 0, 100)
+                    chars[cr].infmax = clip(chars[cr].infmax - 5.0, 0.0, 100.0)
 
         if tm < "14:00":
             scene BG punish-morning 01

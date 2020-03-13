@@ -1768,3 +1768,365 @@ translate english strings:
     old "Я передумал. Ты можешь спать в лифчике, если хочешь."
     new "I changed my mind. You can sleep in your bra if you want."
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+# game/dialogues/alicetalk.rpy:883
+translate english Alice_sorry_30bc32f9:
+
+    # Alice_15 "Ух ты, у тебя, извращенца мелкого, совесть проснулась?! Неожиданно..."
+    Alice_15 "Wow, you little pervert, you suddenly have a conscience?!"
+
+# game/dialogues/alicetalk.rpy:884
+translate english Alice_sorry_a26b98ac:
+
+    # Max_10 "Нет, я думаю, ты вряд ли правильно поняла то, что случилось. Я за тобой не подглядывал..."
+    Max_10 "No, I don't think you got it right. I wasn't spying on you..."
+
+# game/dialogues/alicetalk.rpy:885
+translate english Alice_sorry_03a531c0:
+
+    # Alice_16 "Макс, я по-твоему полная дура что ли?! Ты стоял за стеной, и нагло смотрел, как я принимала душ!"
+    Alice_16 "Max, do you think I'm stupid or something?! You stood behind the wall, and you watched me shower like a fucking creep!"
+
+# game/dialogues/alicetalk.rpy:886
+translate english Alice_sorry_363553de:
+
+    # Max_14 "Но на деле же, так получилось не специально... Я просто шёл мимо..."
+    Max_14 "But in reality, it didn't happen on purpose... I was just walking past..."
+
+# game/dialogues/alicetalk.rpy:887
+translate english Alice_sorry_fb165afa:
+
+    # Alice_05 "Да, да, конечно... Я очень хочу посмотреть, что с тобой сделает мама, когда об этом узнает..."
+    Alice_05 "Yeah, sure... I really want to see what Mom will do to you when she finds out about this..."
+
+# game/dialogues/alicetalk.rpy:888
+translate english Alice_sorry_ee958c85:
+
+    # Max_10 "Да, знаю, в такое очень трудно поверить, но я просто шёл мимо, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
+    Max_10 "Yeah, I know it's really hard to believe, but I was just walking by when you were taking a shower... I turned the corner when you noticed me... That's it, I didn't even see anything private!"
+
+# game/dialogues/alicetalk.rpy:889
+translate english Alice_sorry_c7c9da47:
+
+    # Alice_03 "Ну вот никак мне в это не верится, Макс! Никаких твоих оправданий не хватит, чтобы я в это поверила."
+    Alice_03 "Well, I can't believe it, Max! No matter how many excuses you make."
+
+# game/dialogues/alicetalk.rpy:890
+translate english Alice_sorry_7b2bd462:
+
+    # Max_07 "В таком случае, предлагаю представить, что ничего такого утром не было. Ты ничего не говоришь маме, а я в свою очередь куплю тебе чего-нибудь вкусненького?"
+    Max_07 "Ok fine. Lets just imagine that nothing happened this morning. You don't say anything to Mom, and I'll buy you something sweet in return?"
+
+# game/dialogues/alicetalk.rpy:891
+translate english Alice_sorry_f8604e25:
+
+    # Alice_08 "Ах ты... паршивец... Это подлый ход, потому что от вкусняшки я бы не отказалась... Хорошо, но обещать ничего не буду, сперва посмотрю, что это будет за вкусность... Если ты конечно успеешь до завтрашего вечера!"
+    Alice_08 "Oh, you... you lousy... that's sneaky, because I could use a yummy... Okay, but I won't promise anything, first I'll see what you're offering.. If you can get it before tomorrow night!"
+
+# game/dialogues/alicetalk.rpy:892
+translate english Alice_sorry_01f9d180:
+
+    # Max_01 "Обязательно успею! Завтра всё будет..."
+    Max_01 "I'll be there in time! Everything will be ready tomorrow..."
+
+# game/dialogues/alicetalk.rpy:895
+translate english Alice_sorry_97553d34:
+
+    # Alice_07 "И смотри, чтобы мне понравилось..."
+    Alice_07 "And make sure it's something I like..."
+
+# TODO: Translation updated at 2020-03-13 12:07
+
+# game/dialogues/alicetalk.rpy:903
+translate english gift_dress_7509a3ee:
+
+    # Alice_15 "Макс? Это платье для клуба? Правда?!"
+    Alice_15 "Max! Have you bought me a dress?"
+
+# game/dialogues/alicetalk.rpy:904
+translate english gift_dress_6374794e:
+
+    # Max_01 "Ага..."
+    Max_01 "Yeah..."
+
+# game/dialogues/alicetalk.rpy:905
+translate english gift_dress_a8e27231:
+
+    # Alice_07 "Спасибо, Макс! Ты такой... Не знаю даже, я просто в шоке!" nointeract
+    Alice_07 "Thanks, Max! You're so... I don't even know what to say!" nointeract
+
+# game/dialogues/alicetalk.rpy:910
+translate english gift_dress_35ab4b16:
+
+    # Alice_02 "Так и знала, что есть какой-то подвох... И что ты хочешь за него?" nointeract
+    Alice_02 "I knew there was a catch... What do you want?" nointeract
+
+# game/dialogues/alicetalk.rpy:915
+translate english gift_dress_7b2bcf43:
+
+    # Alice_05 "Ты хочешь, чтобы я его примерила прямо при тебе?"
+    Alice_05 "You want me to try it on right in front of you?"
+
+# game/dialogues/alicetalk.rpy:916
+translate english gift_dress_d7db6238:
+
+    # Max_03 "Конечно! Я это и хочу!"
+    Max_03 "Of course! That exactly what I want!"
+
+# game/dialogues/alicetalk.rpy:917
+translate english gift_dress_2e058c06:
+
+    # Alice_03 "Макс... А жить... хочешь?"
+    Alice_03 "How about I won't kill you for asking instead?"
+
+# game/dialogues/alicetalk.rpy:918
+translate english gift_dress_126ef8d6:
+
+    # Max_07 "Эй, что за угрозы?"
+    Max_07 "Fine, no need to be so aggressive"
+
+# game/dialogues/alicetalk.rpy:922
+translate english gift_dress_gift_39f67b33:
+
+    # Alice_02 "Вот так вот сразу и без подвоха? Обалдеть... Не ожидала от тебя, Макс... Спасибо!"
+    Alice_02 "What, you won't even ask anything in return? I wasn't expecting this from you, Max... Thank you so much!"
+
+# game/dialogues/alicetalk.rpy:923
+translate english gift_dress_gift_b548e83c:
+
+    # Max_04 "Не за что!"
+    Max_04 "You're welcome!"
+
+# game/dialogues/alicetalk.rpy:942
+translate english gift_dress_newdress_show_44aafd4e:
+
+    # Alice_03 "Жди за дверью. Я сейчас надену платье и тебе покажу, так уж и быть..." nointeract
+    Alice_03 "Wait behind the door. I'll change and show myself in a new dress, if you want to." nointeract
+
+# game/dialogues/alicetalk.rpy:948
+translate english gift_dress_newdress_show_c73d3c3a:
+
+    # Alice_05 "Ну как, Макс? Мне идёт?"
+    Alice_05 "How do I look, Max?"
+
+# game/dialogues/alicetalk.rpy:949
+translate english gift_dress_newdress_show_4109c7f9:
+
+    # Max_05 "Выглядишь... шикарно!"
+    Max_05 "You look great!"
+
+# game/dialogues/alicetalk.rpy:951
+translate english gift_dress_newdress_show_1de0592f:
+
+    # Alice_07 "Спасибо, Макс! Честно говоря, я не ожидала от тебя такого подарка. Спасибо! И..."
+    Alice_07 "Thank you, Max. I wasn't expecting a present like this from you. And..."
+
+# game/dialogues/alicetalk.rpy:952
+translate english gift_dress_newdress_show_2179945a:
+
+    # Max_07 "И?"
+    Max_07 "And...?"
+
+# game/dialogues/alicetalk.rpy:954
+translate english gift_dress_newdress_show_01ae3853:
+
+    # Alice_05 "...И небольшой бонус. Я знаю, что ты ждал чего-то подобного..." nointeract
+    Alice_05 "Here, a small bonus for you. I know you wanted something like this..." nointeract
+
+# game/dialogues/alicetalk.rpy:961
+translate english gift_dress_newdress_show_9dc835d6:
+
+    # Alice_02 "Хорошего в меру... Правда, ты меня очень сильно выручил. Спасибо ещё раз!"
+    Alice_02 "Well, that's enough of that. You really helped me out with the dress. Thank you so much!"
+
+# game/dialogues/alicetalk.rpy:962
+translate english gift_dress_newdress_show_71e49abd:
+
+    # Max_01 "Не за что!"
+    Max_01 "You're welcome!"
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:905
+    old "Держи..."
+    new "Here..."
+
+    # game/dialogues/alicetalk.rpy:905
+    old "Не так быстро..."
+    new "Not so fast..."
+
+    # game/dialogues/alicetalk.rpy:910
+    old "Да ничего, просто держи..."
+    new "Nothing, you can have it..."
+
+    # game/dialogues/alicetalk.rpy:910
+    old "Устрой мне показ в нём..."
+    new "Give me a show in it..."
+
+    # game/dialogues/alicetalk.rpy:942
+    old "Э... Хорошо..."
+    new "Okay..."
+
+    # game/dialogues/alicetalk.rpy:954
+    old "Очень... очень хорошо..."
+    new "Very... very nice..."
+
+    # game/dialogues/alicetalk.rpy:954
+    old "А можешь наклониться?"
+    new "Can you bend over?"
+
+# TODO: Translation updated at 2020-03-13 16:10
+
+# game/dialogues/alicetalk.rpy:986
+translate english gift_book_7f96d0fa:
+
+    # Alice_02 "У тебя для меня подарок? У ТЕБЯ... для МЕНЯ? Какая прелесть. Давай, показывай, что за книжка?"
+    Alice_02 "You have a present for me? How nice. Come on, show me the book!"
+
+# game/dialogues/alicetalk.rpy:987
+translate english gift_book_9652c3b9:
+
+    # Max_01 "Держи..."
+    Max_01 "Here..."
+
+# game/dialogues/alicetalk.rpy:988
+translate english gift_book_d836268a:
+
+    # Alice_01 "Прикольно... Давно хотела её почитать. А ты как узнал, что мне такие нравятся?" nointeract
+    Alice_01 "Cool... I wanted to read it for a long time. How did you know I like these?" nointeract
+
+# game/dialogues/alicetalk.rpy:991
+translate english gift_book_979f3c17:
+
+    # Alice_14 "Что?! Да как ты посмел?!"
+    Alice_14 "What?! How dare you!?"
+
+# game/dialogues/alicetalk.rpy:992
+translate english gift_book_e3601278:
+
+    # Max_02 "Да я пошутил. Просто угадал!"
+    Max_02 "I was joking. I just assumed you might like it!"
+
+# game/dialogues/alicetalk.rpy:993
+translate english gift_book_38e7c1e0:
+
+    # Alice_13 "Шуточки у тебя, как и прежде, дурацкие! А книжку я возьму. Молодец, что угадал... Спасибо."
+    Alice_13 "Your jokes are creepy. I'll take a book, though. Good job on guessing what I like. Thank you."
+
+# game/dialogues/alicetalk.rpy:994
+translate english gift_book_64ab516e:
+
+    # Max_04 "Не за что"
+    Max_04 "It's my pleasure"
+
+# game/dialogues/alicetalk.rpy:996
+translate english gift_book_03d13f43:
+
+    # Alice_07 "Умный он... Ну, молодец, что догадался. Спасибо, Макс! Если ещё попадутся из этой серии, буду рада принять их от тебя. Безвозмездно!"
+    Alice_07 "Einstein... Well, good job on the book guessing. Thank you, Max! If you'll find something like this again, I'll be glad to take them. Without compensation!"
+
+# game/dialogues/alicetalk.rpy:997
+translate english gift_book_e6768cdc:
+
+    # Max_04 "Хорошо..."
+    Max_04 "Okay..."
+
+# game/dialogues/alicetalk.rpy:999
+translate english gift_book_cd40cdaa:
+
+    # Alice_05 "Поздравляю, попал в десятку! Если найдёшь ещё что-то подобное, буду рада такому подарку. Даже от тебя..."
+    Alice_05 "Congratulations, you hit the mark! If you find something like that I'll be happy to get them as a present. Even from you..."
+
+# game/dialogues/alicetalk.rpy:1000
+translate english gift_book_20e24e02:
+
+    # Max_04 "Ну, если даже от меня, то ладно..."
+    Max_04 "Even from me? Wow, you must really crave this stuff..."
+
+# game/dialogues/alicetalk.rpy:1009
+translate english gift_book_05e32c72:
+
+    # Alice_04 "Да? И какая на этот раз? Давай сюда..."
+    Alice_04 "Great, what is it this time?"
+
+# game/dialogues/alicetalk.rpy:1010
+translate english gift_book_9652c3b9_1:
+
+    # Max_01 "Держи..."
+    Max_01 "Here..."
+
+# game/dialogues/alicetalk.rpy:1011
+translate english gift_book_dadbaec2:
+
+    # Alice_07 "Супер! Ты меня удивляешь, Макс! Если ещё что будет почитать, приноси. Я люблю подобную... литературу."
+    Alice_07 "Super! You surprise me, Max! If you'll stumble into something like this again, I would love to have it. I love such... literature."
+
+# game/dialogues/alicetalk.rpy:1012
+translate english gift_book_9b836c58:
+
+    # Max_04 "Конечно!"
+    Max_04 "Sure!"
+
+# game/dialogues/alicetalk.rpy:1020
+translate english gift_book_e823379d:
+
+    # Alice_04 "Супер! Давай, показывай, что тут у нас..."
+    Alice_04 "Super! Come on, show me, what we have here..."
+
+# game/dialogues/alicetalk.rpy:1021
+translate english gift_book_9652c3b9_2:
+
+    # Max_01 "Держи..."
+    Max_01 "Here..."
+
+# game/dialogues/alicetalk.rpy:1022
+translate english gift_book_38c1adff:
+
+    # Alice_05 "То, что нужно! Если ещё что будет почитать, приноси. Ты же знаешь, как я люблю такие книги..."
+    Alice_05 "It's great! You can always bring more, if you'll find some. You know how much I love these books..."
+
+# game/dialogues/alicetalk.rpy:1023
+translate english gift_book_9b836c58_1:
+
+    # Max_04 "Конечно!"
+    Max_04 "Sure!"
+
+# game/dialogues/alicetalk.rpy:1038
+translate english gift_book_05e32c72_1:
+
+    # Alice_04 "Да? И какая на этот раз? Давай сюда..."
+    Alice_04 "Great, what is it this time?"
+
+# game/dialogues/alicetalk.rpy:1039
+translate english gift_book_9652c3b9_3:
+
+    # Max_01 "Держи..."
+    Max_01 "Here..."
+
+# game/dialogues/alicetalk.rpy:1040
+translate english gift_book_a057e2a0:
+
+    # Alice_07 "Забавная книжка. Давно хотела почитать... Спасибо, Макс. Ты меня балуешь!"
+    Alice_07 "This should be fun. I wanted to read it for a long time... Thank you, Max. You're spoiling me!"
+
+# game/dialogues/alicetalk.rpy:1041
+translate english gift_book_9b836c58_2:
+
+    # Max_04 "Конечно!"
+    Max_04 "Sure!"
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:988
+    old "Порылся в твоих вещах и нашёл, что читаешь!"
+    new "I rummaged through your things and found what you are reading!"
+
+    # game/dialogues/alicetalk.rpy:988
+    old "Ну, я догадался! Я же умный!"
+    new "I guessed. Don't you know how wicked smart I am?"
+
+    # game/dialogues/alicetalk.rpy:988
+    old "Я и не знал. Просто угадал видимо..."
+    new "I didn't know, just guessed..."
+

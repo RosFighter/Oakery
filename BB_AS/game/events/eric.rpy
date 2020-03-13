@@ -302,9 +302,6 @@ label eric_ann_shower:
                 pass
             "{i}уйти{/i}":
                 jump Waiting
-        $ mgg.stealth += 0.1
-        $ notify_list.append(_("Скрытность Макса повысилась"))
-        $ chars["ann"].dress_inf = "00a"
         $ spent_time += 10
         if __r1 == "01":
             $ __r2 = renpy.random.choice(["01", "02", "03"])
@@ -312,6 +309,22 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(["04", "05"])
         else:
             $ __r2 = renpy.random.choice(["06", "07"])
+        if not RandomChance(_chance):
+            scene BG shower-closer
+            if __r1 == "01":
+                show Eric shower-closer seen01
+            else:
+                show Eric shower-closer seen02
+            show FG shower-closer
+            Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
+            $ mgg.stealth += 0.01
+            $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
+            $ current_room = house[6]
+            jump Waiting
+
+        $ mgg.stealth += 0.2
+        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ chars["ann"].dress_inf = "00a"
         scene BG shower-closer
         $ renpy.show("Eric shower-closer "+__r2)
         show FG shower-closer

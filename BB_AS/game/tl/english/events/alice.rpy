@@ -833,3 +833,25 @@ translate english strings:
     old "Паука-то я поймаю, но, кажется, кое-кто нарушает уговор"
     new "I'll catch the spider, but I think someone's breaking the deal."
 
+# TODO: Translation updated at 2020-03-13 11:06
+
+# game/events/alice.rpy:577
+translate english spider_in_bed_help_5c9d5c24:
+
+    # Alice_06 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
+    Alice_06 "Max, don't be cheeky! What more do you want?!"
+
+# game/events/alice.rpy:590
+translate english spider_in_bed_help_3d1772c8:
+
+    # Max_00 "Я видел, как ты одевала днем трусы, хотя договаривались мы иначе."
+    Max_00 "I saw how you wore underwear during the day, though we agreed otherwise."
+
+# TODO: Translation updated at 2020-03-13 11:23
+
+# game/events/alice.rpy:597
+translate english spider_in_bed_help_c44a026d:
+
+    # Max_00 "Ладно, ладно, сейчас поймаю..."
+    Max_00 "Okay, okay, I'll catch you..."
+

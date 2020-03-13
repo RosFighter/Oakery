@@ -68,6 +68,14 @@ label back_shoping:
         Max_04 "Рассказывайте, что купили?"
         if possibility["Swimsuit"].stn == 2:
             $ SetPossStage("Swimsuit", 4)
+            $ chars['lisa'].gifts.append('bikini')
+            $ items['bathrobe'].InShop = True
+            if chars['lisa'].inferic is not None:
+                $ chars['lisa'].inferic = clip(chars['lisa'].inferic+20.0, 0.0, 100.0)
+            else:
+                $ chars['lisa'].infmax = 20.0
+            if chars['lisa'].infmax is not None:
+                $ chars['lisa'].infmax = clip(chars['lisa'].infmax-10.0, 0.0, 100.0)
             Lisa_03 "А мне Эрик подарил купальник! Именно такой, как я и хотела! Красный, представляешь?!"
             Max_11 "Ясно..."
             Lisa_02 "Что? Ты за меня не рад? Я же теперь смогу загорать в нормальном виде!"
@@ -84,6 +92,13 @@ label back_shoping:
                 $ SetPossStage("nightclub", 2)
             else:
                 $ SetPossStage("nightclub", 3)
+            if chars['alice'].inferic is not None:
+                $ chars['alice'].inferic = clip(chars['alice'].inferic+20.0, 0.0, 100.0)
+            else:
+                $ chars['alice'].infmax = 20.0
+            if chars['alice'].infmax is not None:
+                $ chars['alice'].infmax = clip(chars['alice'].infmax-10.0, 0.0, 100.0)
+            $ chars['alice'].gifts.append('dress')
             Ann_07 "Макс, ты какой-то грустный. Что-то случилось? Или мне показалось?"
             Max_00 "Показалось, мам..."
         Alice_02 "Не переживай. Ты всегда можешь заработать и купить себе сам всё, что хочешь..."
@@ -241,8 +256,7 @@ label night_of_fun:
     $ prevtime = tm
     $ status_sleep = True
     $ cur_ratio = 1
-    $ spent_time = int(round((100. - mgg.energy)/10, 0)) * 60
-    $ alarm_time = "08:00"
+    $ spent_time = clip_time(int(round((100. - mgg.energy)/10, 0)) * 60, "06:00", "08:00")
     scene BG char Max bed-night-01
     $ renpy.show("Max sleep-night "+pose3_3)
     Max_19 "Теперь можно спокойно спать и ничего больше..."

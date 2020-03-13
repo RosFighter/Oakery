@@ -630,3 +630,41 @@ translate english strings:
     old "Теперь ложись побыстрее, ужин стынет..."
     new "Now lie down quickly, before dinner gets cold..."
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+# game/dialogues/punishment.rpy:98
+translate english punishment_max_aa40f9a0:
+
+    # Ann_17 "Не виноват, значит? Снова? Кажется, ты не осознаёшь, что это последнее предупреждение и в следующий раз я тебя выпорю на глазах у сестёр. Ты меня понял? А теперь рассказывай, что натворил, чтобы все были в курсе!" nointeract
+    Ann_17 "It wasn't your fault? Again? This is your last warning, next time I'm going to spank you in front of your sisters, do you understand? Now tell everyone what you did!" nointeract
+
+# game/dialogues/punishment.rpy:101
+translate english punishment_max_3cc1d6e0:
+
+    # Ann_17 "Не виноват, значит? А я думаю, что ещё как виноват. В этот раз тебе повезло, это всего лишь первое предупреждение. Надеюсь, второго не потребуется... Кстати, можешь всем рассказать, что ты натворил..." nointeract
+    Ann_17 "Not your fault? I don't think so. You're lucky this is your first warning. I hope there won't need to be another one. Now tell everyone what you did..." nointeract
+
+# game/dialogues/punishment.rpy:143
+translate english punishment_max_pun_reson_b1c59edb:
+
+    # Ann_18 "Ты не закончил, Макс. Продолжай..." nointeract
+    Ann_18 "You're not finished, Max. Go on..." nointeract
+
+# game/dialogues/punishment.rpy:145
+translate english punishment_max_pun_reson_bcdffc42:
+
+    # Ann_18 "Дальше, Макс, мы тебя внимательно слушаем..." nointeract
+    Ann_18 "Next, Max, we're listening to you carefully..." nointeract
+
+# game/dialogues/punishment.rpy:147
+translate english punishment_max_pun_reson_a9365548:
+
+    # Ann_18 "А ты про кое-что ещё не забыл?" nointeract
+    Ann_18 "You haven't forgotten anything else?" nointeract
+
+# game/dialogues/punishment.rpy:177
+translate english punishment_max_pun_reson_8b8f1722:
+
+    # Ann_18 "Ну и долго я буду ждать?! Давай ложись..."
+    Ann_18 "Well, how long am I going to wait?! Come on, lie down..."
+

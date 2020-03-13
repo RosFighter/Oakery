@@ -347,3 +347,10 @@ init python:
             self.debt = self.debt * 3
             self.fines = True
             self.left = 30
+
+    class Gift:
+        def __init__(self, item, select, label, mood = -1):
+            self.item   = item    # id предмета-подарка
+            self.select = select  # фраза в окне диалогов
+            self.label  = label   # метка запуска диалога дарения
+            self.mood   = mood

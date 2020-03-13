@@ -10,7 +10,7 @@ label AnnTalkStart:
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
     else:
-        $ dial.append((_("Нет, ничего..."), "exit"))
+        jump Waiting
 
 
     Ann_00 "Что-то случилось, дорогой?" nointeract
@@ -19,7 +19,10 @@ label AnnTalkStart:
 
     if rez != "exit":
         $ __mood = GetMood("ann")[0]
-        if __mood < talks[rez].mood:
+        if rez in gifts['ann']:
+            if renpy.has_label(rez.label):
+                call expression rez.label
+        elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Ann_badbadmood
             elif __mood < 0: # Настроение -2... -1, т.е. всё ещё всё очень плохо

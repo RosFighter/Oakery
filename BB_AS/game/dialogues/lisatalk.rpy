@@ -18,7 +18,10 @@ label LisaTalkStart:
     if rez != "exit":
         $ renpy.block_rollback()
         $ __mood = GetMood("lisa")[0]
-        if __mood < talks[rez].mood:
+        if rez in gifts['lisa']:
+            if renpy.has_label(rez.label):
+                call expression rez.label
+        elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Lisa_badbadmood
             elif __mood < 0: # Настроение -2... -1, т.е. всё ещё всё очень плохо
@@ -1064,3 +1067,100 @@ label Lisa_sorry:
     $ punreason[0] = 0
     $ peeping['lisa_shower'] = 0
     Lisa_01 "Ну посмотрим."
+    $ spent_time += 10
+    jump Waiting
+
+
+label gift_swimsuit:
+    Lisa_03 "Да ладно?! Ты купил для меня купальник?"
+    Max_01 "Ага. Красный, маленький, красивый..."
+    menu:
+        Lisa_02 "И ты мне его просто так подаришь?"
+        "Конечно. Держи!":
+            jump .give
+        "Ну, не совсем...":
+            menu:
+                Lisa_00 "И чего ты хочешь? Говори!"
+                "Я тебе его подарю, если разрешишь посмотреть, как ты его примеряешь...":
+                    Lisa_09 "Макс! Ну почему ты такой, а? Ты же знаешь, как мне нужен был этот купальник и теперь требуешь от меня что-то..."
+                    Max_07 "Знаю, поэтому и могу требовать..."
+                    Lisa_00 "Хорошо, Макс. Но когда я совсем разденусь, не смотреть! Хорошо?"
+                    Max_04 "Ага..."
+                    jump .swimsuit_show
+                "Я передумал. Ничего не хочу!":
+                    jump .give
+    label .give:
+        Lisa_03 "Спасибо, Макс! Ты лучший! Я это не забуду!"
+        Max_03 "Да, пустяки..."
+        $ AddRelMood("lisa", 100, 300)
+        jump .end
+
+    label .swimsuit_show:
+        scene BG char Lisa newsuit
+        show Lisa newsuit 01
+        Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
+        Max_02 "Ладно, ладно... Раздевайся уже!"
+        show Lisa newsuit 02
+        menu:
+            Lisa_02 "Макс! Ты подглядываешь. Ты же обещал... Отвернись, быстро!"
+            "Угу, уже... {i}(Демонстративно отвернуться){/i}":
+                pass
+        show Lisa newsuit 03
+        Max_04 "{i}Да, закрою глаза, когда тут такое... как же!\nУх! А, сестрёнка хороша... Местами даже очень...{/i}"
+        show Lisa newsuit 04
+        Max_08 "{i}Вот это вид, я понимаю! Главное, чтобы штаны меня не выдали...{/i}"
+        show Lisa newsuit 05
+        Lisa_03 "Ну, как тебе? Макс, чего молчишь? Скажи, тебе нравится?"
+        Max_07 "О... Очень!"
+        show Lisa newsuit 06
+        Lisa_02 "Ты чего, заикаешься? Правда всё хорошо?"
+        Max_03 "Всё просто отлично! А повернись-ка..."
+        show Lisa newsuit 07
+        Lisa_03 "Сзади тоже всё хорошо?"
+        Max_05 "Сзади всё особенно... хорошо..."
+        show Lisa newsuit 08
+        Lisa_02 "Я рада, Макс. Спасибо тебе большое! Как ты только нашёл этот купальник? Я именно о таком и мечтала!"
+        Max_04 "Да, пустяки..."
+        $ AddRelMood("lisa", 100, 200)
+        $ spent_time += max((50 - int(tm[-2:])), 30)
+        $ current_room = house[0]
+
+    label .end:
+        $ items['bikini'].have = False
+        $ items['bikini'].InShop = False
+        $ items['bathrobe'].InShop = True
+        $ chars['lisa'].gifts.append('bikini')
+        if chars['lisa'].inferic is not None:
+            $ chars['lisa'].inferic = clip(chars['lisa'].inferic-50.0, 0.0, 100.0)
+        if chars['lisa'].infmax is not None:
+            $ chars['lisa'].infmax = clip(chars['lisa'].infmax+20.0, 0.0, 100.0)
+        else:
+            $ chars['lisa'].infmax = 20.0
+
+        $ spent_time += 10
+        jump Waiting
+
+
+label gift_bathrobe:
+    Lisa_01 "Я люблю подарки. Давай, показывай, что там у тебя?"
+    Max_01 "Держи..."
+    menu:
+        Lisa_03 "Что тут? Халатик?! Прямо как у Алисы, только красный? Какая прелесть! Я тебя обожаю! Спасибо!"
+        "Может быть, примеришь его при мне?":
+            Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
+        "Да не за что, сестрёнка!":
+            Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+    Max_00 "Супер! Будет любопытно посмотреть..."
+    $ AddRelMood("lisa", 100, 200)
+    $ items['bathrobe'].have = False
+    $ items['bathrobe'].InShop = False
+    $ chars['lisa'].gifts.append('bathrobe')
+    if chars['lisa'].inferic is not None:
+        $ chars['lisa'].inferic = clip(chars['lisa'].inferic-50.0, 0.0, 100.0)
+    if chars['lisa'].infmax is not None:
+        $ chars['lisa'].infmax = clip(chars['lisa'].infmax+20.0, 0.0, 100.0)
+    else:
+        $ chars['lisa'].infmax = 20.0
+
+    $ spent_time += 10
+    jump Waiting

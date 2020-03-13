@@ -10,7 +10,7 @@ label AliceTalkStart:
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
     else:
-        $ dial.append((_("Да нет, так, ничего..."), "exit"))
+        jump Waiting
 
 
     Alice_00 "Ну, Макс, чего надо?" nointeract
@@ -19,7 +19,10 @@ label AliceTalkStart:
 
     if rez != "exit":
         $ __mood = GetMood("alice")[0]
-        if __mood < talks[rez].mood:
+        if rez in gifts['alice']:
+            if renpy.has_label(rez.label):
+                call expression rez.label
+        elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Alice_badbadmood
             elif __mood < 0: # Настроение -2... -1, т.е. всё ещё всё очень плохо
@@ -32,7 +35,7 @@ label AliceTalkStart:
             call expression talks[rez].label from _call_expression_1
         jump AliceTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
-    jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания
+    jump Waiting            # если же выбрано "уйти", уходим в после ожидания
 
 
 label Alice_badbadmood:
@@ -524,7 +527,6 @@ label second_talk_smoke:
     $ AddRelMood('alice', 5, __mood)
     $ items['cigarettes'].InShop = True
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
-    $ talks['cigarettes'] = TalkTheme("alice", _("У меня есть кое-что запрещённое..."), "gift_cigarettes", "items['cigarettes'].have", -4)
     $ talk_var['alice.pun'] = 0
     $ dcv['smoke'].stage = 2
     $ dcv['smoke'].lost = 1
@@ -893,3 +895,154 @@ label Alice_sorry:
     $ punreason[1] = 0
     $ peeping['alice_shower'] = 0
     Alice_07 "И смотри, чтобы мне понравилось..."
+    $ spent_time += 10
+    jump Waiting
+
+
+label gift_dress:
+    Alice_15 "Макс? Это платье для клуба? Правда?!"
+    Max_01 "Ага..."
+    menu:
+        Alice_07 "Спасибо, Макс! Ты такой... Не знаю даже, я просто в шоке!"
+        "Держи...":
+            jump .gift
+        "Не так быстро...":
+            menu:
+                Alice_02 "Так и знала, что есть какой-то подвох... И что ты хочешь за него?"
+                "Да ничего, просто держи...":
+                    jump .gift
+                "Устрой мне показ в нём...":
+                    Alice_05 "Ты хочешь, чтобы я его примерила прямо при тебе?"
+                    Max_03 "Конечно! Я это и хочу!"
+                    Alice_03 "Макс... А жить... хочешь?"
+                    Max_07 "Эй, что за угрозы?"
+                    jump .newdress_show
+
+    label .gift:
+        Alice_02 "Вот так вот сразу и без подвоха? Обалдеть... Не ожидала от тебя, Макс... Спасибо!"
+        Max_04 "Не за что!"
+        $ AddRelMood("alice", 100, 300)
+        jump .end
+
+    label .newdress_show:
+        if '09:00' <= tm < '20:00':
+            $ __suf = ""
+        else:
+            $ __suf = "a"
+
+        if "06:00" <= tm < "11:00":
+            scene location house aliceroom door-morning
+        elif "11:00" <= tm < "18:00":
+            scene location house aliceroom door-day
+        elif "18:00" <= tm < "21:00":
+            scene location house aliceroom door-evening
+        else:
+            scene location house aliceroom door-night
+
+        menu:
+            Alice_03 "Жди за дверью. Я сейчас надену платье и тебе покажу, так уж и быть..."
+            "Э... Хорошо...":
+                pass
+        if __suf == "":
+            scene BG char Alice newdress
+        else:
+            scene BG char Alice spider-night-05
+        $ renpy.show("Alice newdress 01"+__suf)
+        Alice_05 "Ну как, Макс? Мне идёт?"
+        Max_05 "Выглядишь... шикарно!"
+        $ renpy.show("Alice newdress 02"+__suf)
+        Alice_07 "Спасибо, Макс! Честно говоря, я не ожидала от тебя такого подарка. Спасибо! И..."
+        Max_07 "И?"
+        $ renpy.show("Alice newdress 03"+__suf)
+        menu:
+            Alice_05 "...И небольшой бонус. Я знаю, что ты ждал чего-то подобного..."
+            "Очень... очень хорошо...":
+                pass
+            "А можешь наклониться?":
+                pass
+        $ renpy.show("Alice newdress 04"+__suf)
+        Alice_02 "Хорошего в меру... Правда, ты меня очень сильно выручил. Спасибо ещё раз!"
+        Max_01 "Не за что!"
+        $ AddRelMood("alice", 100, 200)
+        $ spent_time += max((50 - int(tm[-2:])), 30)
+        $ current_room = house[5]
+
+    label .end:
+        $ items['dress'].have = False
+        $ items['dress'].InShop = False
+        $ chars['alice'].gifts.append('dress')
+        if chars['alice'].inferic is not None:
+            $ chars['alice'].inferic = clip(chars['alice'].inferic-50.0, 0.0, 100.0)
+        if chars['alice'].infmax is not None:
+            $ chars['alice'].infmax = clip(chars['alice'].infmax+20.0, 0.0, 100.0)
+        else:
+            $ chars['alice'].infmax = 20.0
+        $ spent_time += 10
+        jump Waiting
+
+
+label gift_book:
+    if items['erobook_1'].have:
+        Alice_02 "У тебя для меня подарок? У ТЕБЯ... для МЕНЯ? Какая прелесть. Давай, показывай, что за книжка?"
+        Max_01 "Держи..."
+        menu:
+            Alice_01 "Прикольно... Давно хотела её почитать. А ты как узнал, что мне такие нравятся?"
+            "Порылся в твоих вещах и нашёл, что читаешь!":
+                Alice_14 "Что?! Да как ты посмел?!"
+                Max_02 "Да я пошутил. Просто угадал!"
+                Alice_13 "Шуточки у тебя, как и прежде, дурацкие! А книжку я возьму. Молодец, что угадал... Спасибо."
+                Max_04 "Не за что"
+            "Ну, я догадался! Я же умный!":
+                Alice_07 "Умный он... Ну, молодец, что догадался. Спасибо, Макс! Если ещё попадутся из этой серии, буду рада принять их от тебя. Безвозмездно!"
+                Max_04 "Хорошо..."
+            "Я и не знал. Просто угадал видимо...":
+                Alice_05 "Поздравляю, попал в десятку! Если найдёшь ещё что-то подобное, буду рада такому подарку. Даже от тебя..."
+                Max_04 "Ну, если даже от меня, то ладно..."
+        $ SetPossStage('secretbook', 3)
+        $ AddRelMood('alice', 50, 100)
+        $ items['erobook_1'].have = False
+        $ items['erobook_1'].InShop = False
+        $ chars['alice'].gifts.append('erobook_1')
+        $ dcv['secretbook'] = Daily(7, False, True) # Покупка второй книги возможна через неделю.
+        $ dcv['secretbook'].stage = 2
+    elif items['erobook_2'].have:
+        Alice_04 "Да? И какая на этот раз? Давай сюда..."
+        Max_01 "Держи..."
+        Alice_07 "Супер! Ты меня удивляешь, Макс! Если ещё что будет почитать, приноси. Я люблю подобную... литературу."
+        Max_04 "Конечно!"
+        $ AddRelMood('alice', 60, 120)
+        $ items['erobook_2'].have = False
+        $ items['erobook_2'].InShop = False
+        $ chars['alice'].gifts.append('erobook_2')
+        $ dcv['secretbook'] = Daily(9, False, True) # Покупка третьей книги возможна через девять дней.
+        $ dcv['secretbook'].stage = 3
+    elif items['erobook_3'].have or items['erobook_4'].have:
+        Alice_04 "Супер! Давай, показывай, что тут у нас..."
+        Max_01 "Держи..."
+        Alice_05 "То, что нужно! Если ещё что будет почитать, приноси. Ты же знаешь, как я люблю такие книги..."
+        Max_04 "Конечно!"
+        $ AddRelMood('alice', 50, 100)
+        if items['erobook_4'].have:
+            $ items['erobook_4'].have = False
+            $ items['erobook_4'].InShop = False
+            $ chars['alice'].gifts.append('erobook_4')
+            $ dcv['secretbook'] = Daily(13, False, True) # Покупка пятой книги возможна через тринадцать дней.
+            $ dcv['secretbook'].stage = 5
+        else:
+            $ items['erobook_3'].have = False
+            $ items['erobook_3'].InShop = False
+            $ chars['alice'].gifts.append('erobook_3')
+            $ dcv['secretbook'] = Daily(11, False, True) # Покупка четвертой книги возможна через одинадцать дней.
+            $ dcv['secretbook'].stage = 4
+    elif items['erobook_5'].have:
+        Alice_04 "Да? И какая на этот раз? Давай сюда..."
+        Max_01 "Держи..."
+        Alice_07 "Забавная книжка. Давно хотела почитать... Спасибо, Макс. Ты меня балуешь!"
+        Max_04 "Конечно!"
+        $ AddRelMood('alice', 80, 160)
+        $ items['erobook_5'].have = False
+        $ items['erobook_5'].InShop = False
+        $ chars['alice'].gifts.append('erobook_5')
+
+    $ spent_time += 10
+    return

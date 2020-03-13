@@ -348,6 +348,11 @@ init python:
         for i in talklist:
             menu_items.append((talks[i].select, i))
 
+        if len(current_room.cur_char) == 1:
+            for gift in gifts[current_room.cur_char[0]]:
+                if items[gift.item].have:
+                    menu_items.append((gift.select, gift))
+
         return menu_items
 
 
@@ -650,10 +655,11 @@ init python:
             CurShedRec = GetPlan(eval("plan_"+current_room.cur_char[0]), day, tm)
             # если при данном занятии разрешен диалог и
             #   есть тема для разговора или приближение
-            AvailableActions["talk"].enabled = (CurShedRec.enabletalk and
-                                                  (len(GetTalksTheme()) > 0 or
-                                                   CurShedRec.talklabel is not None)
-                                                )
+            # AvailableActions["talk"].enabled = (CurShedRec.enabletalk and
+            #                                       (len(GetTalksTheme()) > 0 or
+            #                                        CurShedRec.talklabel is not None)
+            #                                     )
+            AvailableActions["talk"].enabled = (CurShedRec.enabletalk and len(TalkMenuItems()) > 0)
         else:
             AvailableActions["talk"].enabled = False
 
@@ -725,19 +731,31 @@ init python:
                 # ПРОВЕРИМ НЕОБХОДИМОСТЬ ОбНОВЛЕНИЯ РАНДОМНОЙ ОДЕЖДЫ (временный блок)
                 if prevtime < "04:00" <= tm:
                     cloth_type["ann"]["cooking"]  = renpy.random.choice(["a", "b"])
-                    cloth_type["alice"]["casual"] = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["swim"]    = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["casual"]  = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["learn"]   = renpy.random.choice(["a", "b", "c"])
-                    mgg.dress = renpy.random.choice(["a", "b"])
+                    # cloth_type["alice"]["casual"] = renpy.random.choice(["a", "b"])
+                    cloth_type["alice"]["casual"] = 'b' if 'pajamas' in chars['alice'].gifts else 'a'
+                    # cloth_type["lisa"]["swim"]    = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["swim"] = 'b' if 'bikini' in chars['lisa'].gifts else 'a'
+                    # cloth_type["lisa"]["casual"]  = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["casual"] = 'b' if 'bathrobe' in chars['lisa'].gifts and GetMood('lisa')[0] > 1 else 'a'
+                    # cloth_type["lisa"]["learn"]   = renpy.random.choice(["a", "b", "c"])
+                    if GetRelMax('lisa')[0] > 2 and GetMood('lisa')[0] > 2:
+                        cloth_type["lisa"]["learn"]  = 'c'
+                    elif 'bathrobe' in chars['lisa'].gifts:
+                        cloth_type["lisa"]["learn"]  = 'b'
+                    else:
+                        cloth_type["lisa"]["learn"]  = 'a'
+                    # mgg.dress = renpy.random.choice(["a", "b"])
+                    mgg.dress = 'a'
 
                 elif prevtime < "16:00" <= tm and day > 1:
                     cloth_type["ann"]["cooking"] = "b"
-                    cloth_type["lisa"]["casual"] = renpy.random.choice(["a", "b"])
+                    # cloth_type["lisa"]["casual"] = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["casual"] = 'b' if 'bathrobe' in chars['lisa'].gifts and GetMood('lisa')[0] > 1 else 'a'
 
                 elif prevtime < "22:00" <= tm and day > 1:
                     cloth_type["ann"]["rest"]   = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["sleep"] = renpy.random.choice(["a", "b"])
+                    # cloth_type["lisa"]["sleep"] = renpy.random.choice(["a", "b"])
+                    cloth_type["lisa"]["sleep"] = 'b' if possibility["sg"].stn > 2 else 'a'
                 # после "смены одежды" прописываем одежды по расписанию
                 ClothingNps(char, cur_shed.name)
 
@@ -946,6 +964,15 @@ init python:
 
     def clip(x, a, b): # вписывает число x в диапазон между a и b
         return a if x < a else(b if x > b else x)
+
+
+    def clip_time(x, a="06:00", b="08:00"):
+        ti = int(tm[:2])*60 + int(tm[-2:])
+        h1, m1 = a.split(":")
+        t_a = int(h1)*60 + int(m1) - ti
+        h2, m2 = b.split(":")
+        t_b = int(h2)*60 + int(m2) - ti
+        return t_a if x < t_a else (t_b if x > t_b else x)
 
 
     def GetMood(char): # возвращает кортеж с номером и описанием диапазона настроения персонажа

@@ -90,3 +90,31 @@ translate english strings:
     old "Скрытые камеры могут быть основным источником дохода. Чем больше аудитория, тем больше людей, готовых платить за просмотр.\n\n\nУвеличить аудиторию можно с помощью рекламы. Если на камерах не происходит ничего интересного - аудитория падает. Если в кадр попадают пикантные моменты, аудитория растёт.\n\n\nЕсли у вас есть сайт, вы можете зарабатывать на рекламных баннерах. Поэтому, чем больше аудитория, тем больше у вас денег.\n\n\n{i}{b}Внимание:{/b} В следующих версиях игры появятся VIP-пользователи с особыми просьбами. Если вы будете их выполнять, получите солидную прибавку к доходу.{/i}"
     new "Hidden cameras can be a major source of income. A larger audience means you'll find more people willing to pay you.\n\n\nYou can attract more viewers using advertising. If your cameras fail to capture anything interesting, the number of viewers will decrease. So, you'll need to figure out how to keep the audience watching.\n\nIf you have a website, you can make some money from banners.\n\n\n{i}{b}Attention:{/b} VIP-users with special demands will be introduced in later versions. If you do what they want, you’ll be significantly rewarded.{/i}"
 
+# TODO: Translation updated at 2020-03-13 11:06
+
+translate english strings:
+
+    # game/core/02init.rpy:81
+    old "А у меня есть то, о чём ты мечтала..."
+    new "I have something you wanted..."
+
+    # game/core/02init.rpy:81
+    old "Угадай: маленькое, чёрненькое..."
+    new "Guess: small, black..."
+
+# TODO: Translation updated at 2020-03-13 16:10
+
+translate english strings:
+
+    # game/core/02init.rpy:81
+    old "У меня для тебя одна книжка..."
+    new "I have a book for you..."
+
+    # game/core/02init.rpy:81
+    old "У меня снова для тебя книжка..."
+    new "I have a book for you again..."
+
+    # game/core/02init.rpy:81
+    old "И снова у меня для тебя книжка..."
+    new "I have a book for you again..."
+

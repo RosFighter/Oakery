@@ -274,3 +274,27 @@ translate english strings:
     old "Количество занятий: [text2]"
     new "Amount of lessons: [text2]"
 
+# TODO: Translation updated at 2020-03-12 12:28
+
+translate english strings:
+
+    # game/core/screens.rpy:228
+    old "{b}CYBER-БАНК{/b}"
+    new "{b}CYBER-BANK{/b}"
+
+    # game/core/screens.rpy:317
+    old "ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ"
+    new "LUCRATIVE LOANS TO INTERNET ENTREPRENEURS"
+
+    # game/core/screens.rpy:327
+    old "ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"
+    new "PAY OFF"
+
+    # game/core/screens.rpy:331
+    old "ПОГАСИТЬ ЧАСТЬ ДОЛГА"
+    new "SETTLE PART OF THE DEBT"
+
+    # game/core/screens.rpy:339
+    old "ВЗЯТЬ КРЕДИТ"
+    new "TAKE THE CREDIT"
+
