@@ -380,13 +380,13 @@ translate english eric_ann_sleep_9771290e:
 translate english eric_ann_fucking_5cbdae7c:
 
     # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\n ..."
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now! ..."
 
 # game/events/eric.rpy:319
 translate english eric_ann_shower_172a174a:
 
     # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\n ..."
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now! ..."
 
 translate english strings:
 

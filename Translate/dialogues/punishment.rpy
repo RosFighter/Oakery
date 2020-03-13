@@ -642,7 +642,7 @@ translate english punishment_max_aa40f9a0:
 translate english punishment_max_3cc1d6e0:
 
     # Ann_17 "Не виноват, значит? А я думаю, что ещё как виноват. В этот раз тебе повезло, это всего лишь первое предупреждение. Надеюсь, второго не потребуется... Кстати, можешь всем рассказать, что ты натворил..." nointeract
-    Ann_17 "Not your fault? I don't think so. You're lucky this is your first warning. I hope there won't be another one. Now tell everyone what you did..." nointeract
+    Ann_17 "Not your fault? I don't think so. You're lucky this is your first warning. I hope there won't need to be another one. Now tell everyone what you did..." nointeract
 
 # game/dialogues/punishment.rpy:143
 translate english punishment_max_pun_reson_b1c59edb:
@@ -666,5 +666,5 @@ translate english punishment_max_pun_reson_a9365548:
 translate english punishment_max_pun_reson_8b8f1722:
 
     # Ann_18 "Ну и долго я буду ждать?! Давай ложись..."
-    Ann_18 ""
+    Ann_18 "Well, how long am I going to wait?! Come on, lie down..."
 

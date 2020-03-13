@@ -946,5 +946,5 @@ translate english strings:
 
     # game/core/03variables.rpy:326
     old "Хотел извиниться за утренний инцидент..."
-    new ""
+    new "I wanted to apologize for this morning."
 

@@ -1774,65 +1774,65 @@ translate english strings:
 translate english Alice_sorry_30bc32f9:
 
     # Alice_15 "Ух ты, у тебя, извращенца мелкого, совесть проснулась?! Неожиданно..."
-    Alice_15 ""
+    Alice_15 "Wow, you little pervert, you suddenly have a conscience?!"
 
 # game/dialogues/alicetalk.rpy:884
 translate english Alice_sorry_a26b98ac:
 
     # Max_10 "Нет, я думаю, ты вряд ли правильно поняла то, что случилось. Я за тобой не подглядывал..."
-    Max_10 ""
+    Max_10 "No, I don't think you got it right. I wasn't spying on you..."
 
 # game/dialogues/alicetalk.rpy:885
 translate english Alice_sorry_03a531c0:
 
     # Alice_16 "Макс, я по-твоему полная дура что ли?! Ты стоял за стеной, и нагло смотрел, как я принимала душ!"
-    Alice_16 ""
+    Alice_16 "Max, do you think I'm stupid or something?! You stood behind the wall, and you watched me shower like a fucking creep!"
 
 # game/dialogues/alicetalk.rpy:886
 translate english Alice_sorry_363553de:
 
     # Max_14 "Но на деле же, так получилось не специально... Я просто шёл мимо..."
-    Max_14 ""
+    Max_14 "But in reality, it didn't happen on purpose... I was just walking past..."
 
 # game/dialogues/alicetalk.rpy:887
 translate english Alice_sorry_fb165afa:
 
     # Alice_05 "Да, да, конечно... Я очень хочу посмотреть, что с тобой сделает мама, когда об этом узнает..."
-    Alice_05 ""
+    Alice_05 "Yeah, sure... I really want to see what Mom will do to you when she finds out about this..."
 
 # game/dialogues/alicetalk.rpy:888
 translate english Alice_sorry_ee958c85:
 
     # Max_10 "Да, знаю, в такое очень трудно поверить, но я просто шёл мимо, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
-    Max_10 ""
+    Max_10 "Yeah, I know it's really hard to believe, but I was just walking by when you were taking a shower... I turned the corner when you noticed me... That's it, I didn't even see anything private!"
 
 # game/dialogues/alicetalk.rpy:889
 translate english Alice_sorry_c7c9da47:
 
     # Alice_03 "Ну вот никак мне в это не верится, Макс! Никаких твоих оправданий не хватит, чтобы я в это поверила."
-    Alice_03 ""
+    Alice_03 "Well, I can't believe it, Max! No matter how many excuses you make."
 
 # game/dialogues/alicetalk.rpy:890
 translate english Alice_sorry_7b2bd462:
 
     # Max_07 "В таком случае, предлагаю представить, что ничего такого утром не было. Ты ничего не говоришь маме, а я в свою очередь куплю тебе чего-нибудь вкусненького?"
-    Max_07 ""
+    Max_07 ""Ok fine. Lets just imagine that nothing happened this morning. You don't say anything to Mom, and I'll buy you something sweet in return?"
 
 # game/dialogues/alicetalk.rpy:891
 translate english Alice_sorry_f8604e25:
 
     # Alice_08 "Ах ты... паршивец... Это подлый ход, потому что от вкусняшки я бы не отказалась... Хорошо, но обещать ничего не буду, сперва посмотрю, что это будет за вкусность... Если ты конечно успеешь до завтрашего вечера!"
-    Alice_08 ""
+    Alice_08 "Oh, you... you lousy... that's sneaky, because I could use a yummy... Okay, but I won't promise anything, first I'll see what you're offering.. If you can get it before tomorrow night!"
 
 # game/dialogues/alicetalk.rpy:892
 translate english Alice_sorry_01f9d180:
 
     # Max_01 "Обязательно успею! Завтра всё будет..."
-    Max_01 ""
+    Max_01 "I'll be there in time! Everything will be ready tomorrow..."
 
 # game/dialogues/alicetalk.rpy:895
 translate english Alice_sorry_97553d34:
 
     # Alice_07 "И смотри, чтобы мне понравилось..."
-    Alice_07 ""
+    Alice_07 "And make sure it's something I like..."
 

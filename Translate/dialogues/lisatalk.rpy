@@ -2494,77 +2494,77 @@ translate english strings:
 translate english Lisa_sorry_e096100b:
 
     # Lisa_12 "Значит решил признаться, что бессовестно глазел на меня в душе?!"
-    Lisa_12 ""
+    Lisa_12 "So you decided to confess that you shamelessly stared at me in the shower?!"
 
 # game/dialogues/lisatalk.rpy:1053
 translate english Lisa_sorry_b0a77928:
 
     # Max_10 "Ты же понимаешь, что я не специально..."
-    Max_10 ""
+    Max_10 "You know I didn't mean to..."
 
 # game/dialogues/lisatalk.rpy:1054
 translate english Lisa_sorry_76bef495:
 
     # Lisa_11 "Макс, ты серьёзно думаешь, что я в это поверю? Я же видела, как ты за мной подглядывал!"
-    Lisa_11 ""
+    Lisa_11 "Max, you seriously expect me to believe that? I saw you peeking at me!"
 
 # game/dialogues/lisatalk.rpy:1055
 translate english Lisa_sorry_391a38ea:
 
     # Max_14 "Да я не хотел смотреть, просто мимо шёл..."
-    Max_14 ""
+    Max_14 "I didn't mean to look, I was just walking by..."
 
 # game/dialogues/lisatalk.rpy:1056
 translate english Lisa_sorry_88ece42c:
 
     # Lisa_13 "Ага, конечно, мимо он шёл... Вот вечером маме расскажу - посмотрим, что она с тобой сделает!"
-    Lisa_13 ""
+    Lisa_13 "Yeah, sure, just passing by... I'll tell Mom tonight, see what she thinks!"
 
 # game/dialogues/lisatalk.rpy:1057
 translate english Lisa_sorry_cf9250b3:
 
     # Max_10 "Не виноват я! Просто шёл, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
-    Max_10 ""
+    Max_10 "It's not my fault! I was just walking, and you were just taking a shower... So I took a look without thinking... ...when you noticed me... That's it, I didn't even see anything!"
 
 # game/dialogues/lisatalk.rpy:1058
 translate english Lisa_sorry_7e2e1148:
 
     # Lisa_09 "Ну не знаю, Макс... Как-то это всё выглядит..."
-    Lisa_09 ""
+    Lisa_09 "I don't know, Max... Somehow it all looks like..."
 
 # game/dialogues/lisatalk.rpy:1059
 translate english Lisa_sorry_5937ca33:
 
     # Max_11 "Неоднозначно?! Согласен..."
-    Max_11 ""
+    Max_11 "A coincidence?! I agree..."
 
 # game/dialogues/lisatalk.rpy:1060
 translate english Lisa_sorry_23f53394:
 
     # Lisa_10 "Это ещё слабо сказано..."
-    Lisa_10 ""
+    Lisa_10 "It's still a little strange..."
 
 # game/dialogues/lisatalk.rpy:1061
 translate english Lisa_sorry_1523ac3a:
 
     # Max_07 "Да, тебе не удобно, мне не удобно... Давай мы просто об этом забудем... и ты ничего не будешь говорить маме об этом, а я в свою очередь куплю тебе какую-нибудь вкусняшку?"
-    Max_07 ""
+    Max_07 "Yeah, you're not comfortable, I'm not comfortable... Let's just forget about it... and you won't say anything to Mom about it and I'll buy you some goodies as a thank you?"
 
 # game/dialogues/lisatalk.rpy:1062
 translate english Lisa_sorry_a79e8934:
 
     # Lisa_00 "Ну, Макс... Я хочу вкусняшку... Но времени у тебя до завтрашнего вечера, понял?! Иначе перед ужином мама всё узнает..."
-    Lisa_00 ""
+    Lisa_00 "In that case... I want something nice... But you have until tomorrow night, okay?! Otherwise, Mom will know before dinner..."
 
 # game/dialogues/lisatalk.rpy:1063
 translate english Lisa_sorry_0132e90e:
 
     # Max_01 "Хорошо. Завтра всё будет..."
-    Max_01 ""
+    Max_01 "Okay. Tomorrow everything will be ready..."
 
 # game/dialogues/lisatalk.rpy:1066
 translate english Lisa_sorry_449604df:
 
     # Lisa_01 "Ну посмотрим."
-    Lisa_01 ""
+    Lisa_01 "Well, let's see about that."
 

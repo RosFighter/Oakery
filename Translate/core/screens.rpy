@@ -284,17 +284,17 @@ translate english strings:
 
     # game/core/screens.rpy:317
     old "ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ"
-    new ""
+    new "LUCRATIVE LOANS TO INTERNET ENTREPRENEURS"
 
     # game/core/screens.rpy:327
     old "ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"
-    new ""
+    new "PAY OFF"
 
     # game/core/screens.rpy:331
     old "ПОГАСИТЬ ЧАСТЬ ДОЛГА"
-    new ""
+    new "SETTLE PART OF THE DEBT"
 
     # game/core/screens.rpy:339
     old "ВЗЯТЬ КРЕДИТ"
-    new ""
+    new "TOTAL CREDIT"
 
