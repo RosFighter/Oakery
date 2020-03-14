@@ -2568,3 +2568,213 @@ translate english Lisa_sorry_449604df:
     # Lisa_01 "Ну посмотрим."
     Lisa_01 "Well, let's see about that."
 
+# TODO: Translation updated at 2020-03-13 11:06
+
+# game/dialogues/lisatalk.rpy:1075
+translate english gift_swimsuit_1940d545:
+
+    # Lisa_03 "Да ладно?! Ты купил для меня купальник?"
+    Lisa_03 "Have you bought me a swimsuit!?"
+
+# game/dialogues/lisatalk.rpy:1076
+translate english gift_swimsuit_d7873ead:
+
+    # Max_01 "Ага. Красный, маленький, красивый..."
+    Max_01 "Yes. Red, small, cute..."
+
+# game/dialogues/lisatalk.rpy:1077
+translate english gift_swimsuit_af29f12a:
+
+    # Lisa_02 "И ты мне его просто так подаришь?" nointeract
+    Lisa_02 "And you're going to give it to me just like that?" nointeract
+
+# game/dialogues/lisatalk.rpy:1082
+translate english gift_swimsuit_97d8b274:
+
+    # Lisa_00 "И чего ты хочешь? Говори!" nointeract
+    Lisa_00 "Okay, what do you want for it?" nointeract
+
+# game/dialogues/lisatalk.rpy:1085
+translate english gift_swimsuit_e1403baa:
+
+    # Lisa_09 "Макс! Ну почему ты такой, а? Ты же знаешь, как мне нужен был этот купальник и теперь требуешь от меня что-то..."
+    Lisa_09 "Max! Why are you like this? You know how much I need it and now you demand something like this..."
+
+# game/dialogues/lisatalk.rpy:1086
+translate english gift_swimsuit_bef04428:
+
+    # Max_07 "Знаю, поэтому и могу требовать..."
+    Max_07 "Well, yeah, this is why I can make those demands in the first place..."
+
+# game/dialogues/lisatalk.rpy:1087
+translate english gift_swimsuit_54864965:
+
+    # Lisa_00 "Хорошо, Макс. Но когда я совсем разденусь, не смотреть! Хорошо?"
+    Lisa_00 "Fine. But don't look when I'm naked, okay?"
+
+# game/dialogues/lisatalk.rpy:1088
+translate english gift_swimsuit_516308d2:
+
+    # Max_04 "Ага..."
+    Max_04 "Yeah..."
+
+# game/dialogues/lisatalk.rpy:1093
+translate english gift_swimsuit_give_1b6ace04:
+
+    # Lisa_03 "Спасибо, Макс! Ты лучший! Я это не забуду!"
+    Lisa_03 "Thank you, Max! You're the best! I won't forget it!"
+
+# game/dialogues/lisatalk.rpy:1094
+translate english gift_swimsuit_give_aca6ecea:
+
+    # Max_03 "Да, пустяки..."
+    Max_03 "Forget about it..."
+
+# game/dialogues/lisatalk.rpy:1101
+translate english gift_swimsuit_swimsuit_show_28e64538:
+
+    # Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
+    Lisa_12 "I'm going to undress, so don't look! If I'll catch you peeping I'll tell mom!"
+
+# game/dialogues/lisatalk.rpy:1102
+translate english gift_swimsuit_swimsuit_show_17d12966:
+
+    # Max_02 "Ладно, ладно... Раздевайся уже!"
+    Max_02 "Okay, okay... start undressing already!"
+
+# game/dialogues/lisatalk.rpy:1104
+translate english gift_swimsuit_swimsuit_show_c6805f5f:
+
+    # Lisa_02 "Макс! Ты подглядываешь. Ты же обещал... Отвернись, быстро!" nointeract
+    Lisa_02 "You're peeping, Max! You promised... Turn around right now!" nointeract
+
+# game/dialogues/lisatalk.rpy:1109
+translate english gift_swimsuit_swimsuit_show_03596275:
+
+    # Max_04 "{i}Да, закрою глаза, когда тут такое... как же!\nУх! А, сестрёнка хороша... Местами даже очень...{/i}"
+    Max_04 "{i}Yeah, like I'm going to close my eyes in this situation...\nWow! My sister is all grown up... everywhere...{/i}"
+
+# game/dialogues/lisatalk.rpy:1111
+translate english gift_swimsuit_swimsuit_show_b1cd9ad3:
+
+    # Max_08 "{i}Вот это вид, я понимаю! Главное, чтобы штаны меня не выдали...{/i}"
+    Max_08 "{i}Now this is a nice sight! I hope she won't notice a bulge in my pants...{/i}"
+
+# game/dialogues/lisatalk.rpy:1113
+translate english gift_swimsuit_swimsuit_show_2a88dea8:
+
+    # Lisa_03 "Ну, как тебе? Макс, чего молчишь? Скажи, тебе нравится?"
+    Lisa_03 "So, do you like the swimsuit, Max? Why aren't you saying anything?"
+
+# game/dialogues/lisatalk.rpy:1114
+translate english gift_swimsuit_swimsuit_show_c03d0838:
+
+    # Max_07 "О... Очень!"
+    Max_07 "I, I love it!"
+
+# game/dialogues/lisatalk.rpy:1116
+translate english gift_swimsuit_swimsuit_show_9dfed175:
+
+    # Lisa_02 "Ты чего, заикаешься? Правда всё хорошо?"
+    Lisa_02 "Well, if you're stuttering, it must be really good."
+
+# game/dialogues/lisatalk.rpy:1117
+translate english gift_swimsuit_swimsuit_show_20a4856a:
+
+    # Max_03 "Всё просто отлично! А повернись-ка..."
+    Max_03 "It's great! Turn around"
+
+# game/dialogues/lisatalk.rpy:1119
+translate english gift_swimsuit_swimsuit_show_178b2b6f:
+
+    # Lisa_03 "Сзади тоже всё хорошо?"
+    Lisa_03 "So, how is it from the back?"
+
+# game/dialogues/lisatalk.rpy:1120
+translate english gift_swimsuit_swimsuit_show_d917ecad:
+
+    # Max_05 "Сзади всё особенно... хорошо..."
+    Max_05 "From the back it's especially good..."
+
+# game/dialogues/lisatalk.rpy:1122
+translate english gift_swimsuit_swimsuit_show_429289dd:
+
+    # Lisa_02 "Я рада, Макс. Спасибо тебе большое! Как ты только нашёл этот купальник? Я именно о таком и мечтала!"
+    Lisa_02 "Okay. Thank you very much, Max! How did you even found this swimsuit? This is exactly what I wanted!"
+
+# game/dialogues/lisatalk.rpy:1123
+translate english gift_swimsuit_swimsuit_show_8541ecba:
+
+    # Max_04 "Да, пустяки..."
+    Max_04 "Forget about it..."
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:1077
+    old "Конечно. Держи!"
+    new "Sure. Here!"
+
+    # game/dialogues/lisatalk.rpy:1077
+    old "Ну, не совсем..."
+    new "Well..."
+
+    # game/dialogues/lisatalk.rpy:1082
+    old "Я тебе его подарю, если разрешишь посмотреть, как ты его примеряешь..."
+    new "I'll give it to you if you'll let me see how you're trying it..."
+
+    # game/dialogues/lisatalk.rpy:1082
+    old "Я передумал. Ничего не хочу!"
+    new "I've changed my mind, you can have it!"
+
+    # game/dialogues/lisatalk.rpy:1104
+    old "Угу, уже... {i}(Демонстративно отвернуться){/i}"
+    new "Fine, fine... {i}(turn around dramatically){/i}"
+
+# TODO: Translation updated at 2020-03-13 16:50
+
+# game/dialogues/lisatalk.rpy:1145
+translate english gift_bathrobe_f9e58c80:
+
+    # Lisa_01 "Я люблю подарки. Давай, показывай, что там у тебя?"
+    Lisa_01 "I love presents. What do you have for me?"
+
+# game/dialogues/lisatalk.rpy:1146
+translate english gift_bathrobe_9652c3b9:
+
+    # Max_01 "Держи..."
+    Max_01 "Here..."
+
+# game/dialogues/lisatalk.rpy:1147
+translate english gift_bathrobe_8298d5fa:
+
+    # Lisa_03 "Что тут? Халатик?! Прямо как у Алисы, только красный? Какая прелесть! Я тебя обожаю! Спасибо!" nointeract
+    Lisa_03 "A bathrobe!? Just like Alice's, but red! It's great! I love it! Thank you!" nointeract
+
+# game/dialogues/lisatalk.rpy:1150
+translate english gift_bathrobe_ea518f6e:
+
+    # Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
+    Lisa_02 "Yeah, right. I'm not going to undress in front of you. You'll have to wait until I take a shower, I'll be doing my homework in it... Or maybe I'll wear it all the time... He's so cool!"
+
+# game/dialogues/lisatalk.rpy:1152
+translate english gift_bathrobe_2586fb1b:
+
+    # Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+    Lisa_03 "I'm going to wear after shower, before starting my homework. Or even live in it, if the mood is as cool as the bathrobe itself!"
+
+# game/dialogues/lisatalk.rpy:1153
+translate english gift_bathrobe_31a34165:
+
+    # Max_00 "Супер! Будет любопытно посмотреть..."
+    Max_00 "Great! Can't wait!"
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:1147
+    old "Может быть, примеришь его при мне?"
+    new "Maybe you'll try it on in front of me?"
+
+    # game/dialogues/lisatalk.rpy:1147
+    old "Да не за что, сестрёнка!"
+    new "You're welcome, sis!"
+

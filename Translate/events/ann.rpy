@@ -499,3 +499,11 @@ translate english ann_bath_ladder_36138fd2:
     # Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..." nointeract
     Max_07 "Ah! Looks like the fun part is over... Although, watching Mom wipe her wet and seductive body is just as enjoyable! Oh, what an ass she's got..." nointeract
 
+# TODO: Translation updated at 2020-03-14 20:45
+
+# game/events/ann.rpy:84
+translate english ann_shower_ladder_0c9341b6:
+
+    # Max_06 "Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все её округлости!"
+    Max_06 "Wow! You don't see it every time, she's completely naked! As long as you don't fall off a ladder like that... It'd be so cool to squeeze her plump body!"
+

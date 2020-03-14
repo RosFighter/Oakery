@@ -160,7 +160,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:53
     old "Я могу сделать какую-то работу, чтобы не просто так выпрашивать деньги..."
-    new "I can do some work around the house ..."
+    new "I can do some work around the house..."
 
     # game/dialogues/anntalk.rpy:53
     old "Ты права, стыдно. В другой раз..."

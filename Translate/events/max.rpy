@@ -608,7 +608,7 @@ translate english InstallCam_fc408e3e:
 translate english InstallCam_d9a1c7d0:
 
     # Max_09 "{i}Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает...{/i}"
-    Max_09 "{i1}I guess because of the large area, I should install some cameras so the viewers can see every ass that comes in here...{/i}"
+    Max_09 "{i}I guess because of the large area, I should install some cameras so the viewers can see every ass that comes in here...{/i}"
 
 # game/events/max.rpy:673
 translate english SearchSpider_19279e48:
@@ -712,7 +712,7 @@ translate english strings:
 
     # game/events/max.rpy:350
     old "Хм... Так... Ага. Это сюда запишем, это сюда..."
-    new "Um... So, um... Yeah. Let's write this down here, ..."
+    new "Um... So, um... Yeah. Let's write this down here..."
 
     # game/events/max.rpy:352
     old "Так. Из этой таблицы мы делаем вывод. Ага. Вот это значит, что... Нет, не так. Вот. Вроде получилось..."
@@ -1027,3 +1027,10 @@ translate english strings:
     old "$200"
     new "$200"
 
+# TODO: Translation updated at 2020-03-13 11:06
+
+# game/events/max.rpy:880
+translate english about_credit_0f0e102c:
+
+    # Max_04 "Подытожим условия: \n{i}В течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится...{/i} \n\nЛучше, конечно же, до такого не доводить."
+    Max_04 "Let's summarize the conditions: \n{i}Within a month you need to repay the entire amount of the loan + 10%% \nIf not repaid on time, the amount of the debt is tripled every 30 days, and my site will withdraw half of the profits daily. And you will not be able to borrow again...{/i} \n\nOf course, do not bring it to this."

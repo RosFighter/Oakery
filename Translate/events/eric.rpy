@@ -248,7 +248,7 @@ translate english eric_ann_fucking_2d5a32c4:
 translate english eric_ann_fucking_013f46e9:
 
     # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватал ещё чтобы меня увидели..."
-    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon,..."
+    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon..."
 
 # game/events/eric.rpy:204
 translate english eric_ann_fucking_8f598321:
@@ -372,7 +372,7 @@ translate english strings:
 translate english eric_ann_sleep_9771290e:
 
     # Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
-    Max_05 "Mom is so beautiful... ...and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her...As long as they don't wake up now..." nointeract
+    Max_05 "Mom is so beautiful... and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her... As long as they don't wake up now..." nointeract
 
 # TODO: Translation updated at 2020-03-12 12:28
 
@@ -380,17 +380,25 @@ translate english eric_ann_sleep_9771290e:
 translate english eric_ann_fucking_5cbdae7c:
 
     # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now! ..."
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now!"
 
 # game/events/eric.rpy:319
 translate english eric_ann_shower_172a174a:
 
     # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now! ..."
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now!"
 
 translate english strings:
 
     # game/events/eric.rpy:164
     old "{i}заглянуть в окно\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
     new "{i}peep into the window\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
+
+# TODO: Translation updated at 2020-03-14 08:54
+
+# game/events/eric.rpy:230
+translate english eric_ann_fucking_05040526:
+
+    # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватало ещё, чтобы меня увидели..."
+    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon..."
 
