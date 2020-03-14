@@ -503,7 +503,7 @@ label spider_in_bed:
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
-    $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"])+suf)
+    $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"]))
     show Alice spider-night 02-01
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"

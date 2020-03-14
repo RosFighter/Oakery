@@ -348,7 +348,7 @@ init python:
         for i in talklist:
             menu_items.append((talks[i].select, i))
 
-        if len(current_room.cur_char) == 1:
+        if len(current_room.cur_char) == 1 and current_room.cur_char[0] in gifts:
             for gift in gifts[current_room.cur_char[0]]:
                 if items[gift.item].have:
                     menu_items.append((gift.select, gift))

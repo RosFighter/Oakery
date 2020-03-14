@@ -248,7 +248,7 @@ translate english eric_ann_fucking_2d5a32c4:
 translate english eric_ann_fucking_013f46e9:
 
     # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватал ещё чтобы меня увидели..."
-    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon,..."
+    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon..."
 
 # game/events/eric.rpy:204
 translate english eric_ann_fucking_8f598321:
@@ -393,4 +393,12 @@ translate english strings:
     # game/events/eric.rpy:164
     old "{i}заглянуть в окно\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
     new "{i}peep into the window\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
+
+# TODO: Translation updated at 2020-03-14 08:54
+
+# game/events/eric.rpy:230
+translate english eric_ann_fucking_05040526:
+
+    # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватало ещё, чтобы меня увидели..."
+    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon..."
 
