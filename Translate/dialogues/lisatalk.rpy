@@ -1594,7 +1594,7 @@ translate english about_boy2_6cf4347c:
 translate english about_boy2_4fc1e11f:
 
     # Lisa_02 "Ну ладно, Макс. Так чего ты хотел узнать?"
-    Lisa_02 "Fine, fine. Thanks for not ratting me out, by the way. I'm glad I can trust you."
+    Lisa_02 "All right. So what did you want to know?"
 
 # game/dialogues/lisatalk.rpy:716
 translate english about_boy2_97a3b79e:
