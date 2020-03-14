@@ -433,7 +433,7 @@ translate english spider_in_bed_tits_86f1ac33:
 translate english spider_in_bed_tits_ca1a85ce:
 
     # Alice_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
-    Alice_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAh! What a pig you are, Max... Okay, look, I'm kind today. And kill him already, finally! ..."
+    Alice_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAh! What a pig you are, Max... Okay, look, I'm kind today. And kill him already, finally!"
 
 # game/events/alice.rpy:484
 translate english spider_in_bed_tits_eccbb760:
@@ -475,7 +475,7 @@ translate english spider_in_bed_spider_be1cbc22:
 translate english spider_in_bed_spider_2f934b3c:
 
     # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, you got me. Just make sure he's nowhere near the house. ..."
+    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, you got me. Just make sure he's nowhere near the house..."
 
 # game/events/alice.rpy:527
 translate english spider_in_bed_spider_9db27ecc:
@@ -563,7 +563,7 @@ translate english strings:
 
     # game/events/alice.rpy:510
     old "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    new "Let him live. I'll go and throw him off the balcony and over the fence so he won't come crawling back.\n{color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/events/alice.rpy:513
     old "{i}вернуться в кровать{/i}"
@@ -832,4 +832,26 @@ translate english strings:
     # game/events/alice.rpy:547
     old "Паука-то я поймаю, но, кажется, кое-кто нарушает уговор"
     new "I'll catch the spider, but I think someone's breaking the deal."
+
+# TODO: Translation updated at 2020-03-13 11:06
+
+# game/events/alice.rpy:577
+translate english spider_in_bed_help_5c9d5c24:
+
+    # Alice_06 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
+    Alice_06 "Max, don't be cheeky! What more do you want?!"
+
+# game/events/alice.rpy:590
+translate english spider_in_bed_help_3d1772c8:
+
+    # Max_00 "Я видел, как ты одевала днем трусы, хотя договаривались мы иначе."
+    Max_00 "I saw how you wore underwear during the day, though we agreed otherwise."
+
+# TODO: Translation updated at 2020-03-13 11:23
+
+# game/events/alice.rpy:597
+translate english spider_in_bed_help_c44a026d:
+
+    # Max_00 "Ладно, ладно, сейчас поймаю..."
+    Max_00 "Okay, okay, I'll catch you..."
 

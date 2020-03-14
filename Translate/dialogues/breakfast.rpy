@@ -304,7 +304,7 @@ translate english breakfast_first_bf_change2_d76935c0:
 translate english breakfast_first_bf_change2_c2fa27a6:
 
     # Ann_00 "Да, Макс. Я когда прибиралась, нашла какие-то коробки. Видимо, остались с ремонта. Посмотри, если ничего ценного нет, потом выбросим. Сейчас они у тебя в комнате." nointeract
-    Ann_00 "Oh, by the way, Max ... I found some boxes in your room while I was cleaning.  I think they were left behind by the construction crew. I didn't have a chance to look through them, so just throw them out if theres nothing valuable in them, okay?" nointeract
+    Ann_00 "Oh, by the way, Max... I found some boxes in your room while I was cleaning.  I think they were left behind by the construction crew. I didn't have a chance to look through them, so just throw them out if theres nothing valuable in them, okay?" nointeract
 
 # game/dialogues/breakfast.rpy:310
 translate english breakfast_first_bf_change2_decd1aa4:

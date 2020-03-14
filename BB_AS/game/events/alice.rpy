@@ -52,12 +52,16 @@ label alice_bath:
         scene BG bath-00
         $ renpy.show("Alice bath-window 0"+str(__r1))
         show FG bath-00
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
         if __r1 == 1:
             menu:
                 Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..."
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show("Alice bath-window "+renpy.random.choice(["02", "03", "04"]))
+                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+                    $ mgg.stealth += 0.03
                     menu:
                         Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
                         "{i}уйти{/i}":
@@ -72,6 +76,8 @@ label alice_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Alice bath-window 05
+                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+                    $ mgg.stealth += 0.03
                     menu:
                         Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
                         "{i}уйти{/i}":
@@ -308,6 +314,8 @@ label alice_shower:
         scene BG bathroom-morning-00
         $ renpy.show("Alice bath-window-morning "+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.05
         if flags['smoke'] == 'not_nopants' and not flags['noted']:
             # Алиса в трусиках, хотя должна быть без них и Макс еще об этом не знает
             Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
@@ -377,6 +385,8 @@ label alice_dressed_shop:
                 scene BG char Alice voyeur-00
                 $ renpy.show("Alice voyeur "+__ran1)
                 $ renpy.show("FG voyeur-morning-00"+mgg.dress)
+                $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+                $ mgg.stealth += 0.03
                 Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
                 pass

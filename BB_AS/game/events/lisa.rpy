@@ -76,6 +76,8 @@ label lisa_shower:
         scene BG bathroom-morning-00
         $ renpy.show("Lisa bath-window-morning "+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.05
         if __r1 == 'a':
             Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
         elif __r1 == 'b':
@@ -209,6 +211,8 @@ label lisa_dressed_school:
         scene BG char Lisa voyeur-00
         $ renpy.show("Lisa voyeur "+__ran1)
         $ renpy.show("FG voyeur-lisa-00"+mgg.dress)
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
         menu:
             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
             "{i}уйти{/i}":
@@ -222,7 +226,7 @@ label lisa_dressed_school:
         elif GetRelMax("lisa")[0] < 2:
             show Lisa school-dressed 01a
             $ chars["lisa"].dress_inf = "01b"
-        elif GetRelMax("lisa")[0] < 4:
+        elif chars['lisa'].free < 200:
             show Lisa school-dressed 01b
             $ chars["lisa"].dress_inf = "02a"
         else:
@@ -286,7 +290,7 @@ label lisa_dressed_school:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1))
         elif GetRelMax("lisa")[0] < 2:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
-        elif GetRelMax("lisa")[0] < 4:
+        elif chars['lisa'].free < 200:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
         else:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
@@ -388,7 +392,7 @@ label lisa_dressed_shop:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1))
             elif GetRelMax("lisa")[0] < 2:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
-            elif GetRelMax("lisa")[0] < 4:
+            elif chars['lisa'].free < 200:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
             else:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
@@ -440,6 +444,8 @@ label lisa_dressed_shop:
             scene BG char Lisa voyeur-00
             $ renpy.show("Lisa voyeur "+__ran1)
             $ renpy.show("FG voyeur-lisa-00"+mgg.dress)
+            $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+            $ mgg.stealth += 0.03
             menu:
                 Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
                 "{i}уйти{/i}":
@@ -545,12 +551,16 @@ label lisa_bath:
         scene BG bath-00
         $ renpy.show("Lisa bath-window 0"+str(__r1))
         show FG bath-00
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
         if __r1 == 1:
             menu:
                 Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show("Lisa bath-window "+renpy.random.choice(["02", "03", "04"]))
+                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+                    $ mgg.stealth += 0.03
                     menu:
                         Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
                         "{i}уйти{/i}":
@@ -565,6 +575,8 @@ label lisa_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Lisa bath-window 05
+                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+                    $ mgg.stealth += 0.03
                     menu:
                         Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
                         "{i}уйти{/i}":

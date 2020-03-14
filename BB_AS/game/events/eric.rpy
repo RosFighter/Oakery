@@ -203,12 +203,12 @@ label eric_ann_fucking:
         else:
             $ renpy.show("Eric fuck 0"+str(fuck_scene)+"b")
         Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-        $ mgg.stealth += 0.01
+        $ mgg.stealth += 0.05
         $ punreason[3] = 1
         $ current_room = house[0]
         jump Waiting
 
-    $ mgg.stealth += 0.05
+    $ mgg.stealth += 0.1
     $ notify_list.append(_("Скрытность Макса повысилась"))
 
     $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
@@ -234,7 +234,7 @@ label eric_ann_fucking:
         Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
 
     $ spent_time += 20
-    $ mgg.stealth += 0.05
+    $ mgg.stealth += 0.1
     $ notify_list.append(_("Скрытность Макса повысилась"))
     $ current_room = house[1]
     jump Waiting
