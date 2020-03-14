@@ -118,3 +118,11 @@ translate english strings:
     old "И снова у меня для тебя книжка..."
     new "I have a book for you again..."
 
+# TODO: Translation updated at 2020-03-14 20:45
+
+translate english strings:
+
+    # game/core/02init.rpy:81
+    old "У меня для тебя подарок {i}(Халат){/i}"
+    new "I have a gift for you {i}(Bathrobe){/i}"
+
