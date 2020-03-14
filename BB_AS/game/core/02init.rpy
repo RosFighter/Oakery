@@ -81,7 +81,7 @@ define ShopCat = {
 define gifts = {
     "lisa"  : [
         Gift("bikini", _("А у меня есть то, о чём ты мечтала..."), "gift_swimsuit"),
-        # Gift("bathrobe", _("У меня для тебя подарок {i}(Халат){/i}"), "gift_bathrobe"),
+        Gift("bathrobe", _("У меня для тебя подарок {i}(Халат){/i}"), "gift_bathrobe"),
         ],
     "alice" : [
         Gift("cigarettes", _("У меня есть кое-что запрещённое..."), "gift_cigarettes", -1),
