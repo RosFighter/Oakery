@@ -298,3 +298,23 @@ translate english strings:
     old "ВЗЯТЬ КРЕДИТ"
     new "TAKE THE CREDIT"
 
+# TODO: Translation updated at 2020-03-15 12:13
+
+translate english strings:
+
+    # game/core/screens.rpy:324
+    old "Задолженность: {color=[_col]}$[credit.debt]{/color}"
+    new "Debt: {color=[_col]}$[credit.debt]{/color}"
+
+    # game/core/screens.rpy:325
+    old "[credit.left] дней на погашение"
+    new "[credit.left] days for repayment"
+
+    # game/core/screens.rpy:561
+    old "{i}{b}ВЫ УЧИЛИСЬ СОВСЕМ НЕДАВНО. СДЕЛАЙТЕ ПЕРЕРЫВ!{/b}{/i}"
+    new "{i}{b}YOU'VE SEEN A LESSON RECENTLY. TAKE A BREAK!{/b}{/i}"
+
+    # game/core/screens.rpy:577
+    old "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}"
+    new "{i}{b}BUY THIS COURSE FOR: $[price]{/b}{/i}"
+

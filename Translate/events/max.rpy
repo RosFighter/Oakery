@@ -993,7 +993,7 @@ translate english strings:
 
     # game/events/max.rpy:246
     old "{i}искать информацию по кридитам{/i}"
-    new "{i}find information on the critics{/i}"
+    new "{i}find information on the credits{/i}"
 
     # game/events/max.rpy:894
     old "$500"
@@ -1034,3 +1034,11 @@ translate english about_credit_0f0e102c:
 
     # Max_04 "Подытожим условия: \n{i}В течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится...{/i} \n\nЛучше, конечно же, до такого не доводить."
     Max_04 "Let's summarize the conditions: \n{i}Within a month you need to repay the entire amount of the loan + 10%% \nIf not repaid on time, the amount of the debt is tripled every 30 days, and my site will withdraw half of the profits daily. And you will not be able to borrow again...{/i} \n\nOf course, do not bring it to this."
+# TODO: Translation updated at 2020-03-15 12:13
+
+translate english strings:
+
+    # game/events/max.rpy:766
+    old "Вы просматриваете видеоурок и повышаете свои навыки."
+    new "You are watching a tutorial video and improving your skill."
+
