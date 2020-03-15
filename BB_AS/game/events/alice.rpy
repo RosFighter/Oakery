@@ -500,11 +500,12 @@ label alice_evening_closer:
 
 label spider_in_bed:
     $ __mood = 0
-    $ __toples = False
     if 'smoke' in talk_var and flags['smoke'] == 'sleep':
         $ suf = 'a'
+        $ __toples = True
     else:
         $ suf = ''
+        $ __toples = False
     if flags['smoke'] == 'not_sleep':
         $ flags['noted'] = True
 
@@ -514,7 +515,7 @@ label spider_in_bed:
 
     scene BG char Alice spider-night-02
     $ renpy.show("Max spider-night 02-"+renpy.random.choice(["01", "02", "03"]))
-    show Alice spider-night 02-01
+    $ renpy.show("Alice spider-night 02-01"+suf)
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
         "Что случилось?":
@@ -560,7 +561,7 @@ label spider_in_bed:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
             "А что мне за это будет?" if suf == '' and not flags['noted']:  # Вариант недоступен, если Алиса без лифчика или нарушает договоренность и Макс об этом знает
                 show Max spider-night 03-02
-                show Alice spider-night 03-04
+                $ renpy.show("Alice spider-night 03-04"+suf)
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
                     "Давай $10! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
@@ -583,7 +584,7 @@ label spider_in_bed:
                         jump .spider
             "А что мне за это будет?" if suf != '':  # Алиса без лифчика
                 show Max spider-night 03-02
-                show Alice spider-night 03-04a
+                $ renpy.show("Alice spider-night 03-04"+suf)
                 Alice_06 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
                 Max_00 "Хорошо, хорошо, успокойся, сейчас поймаю я твоего паука..."
                 jump .spider
@@ -609,7 +610,7 @@ label spider_in_bed:
                 jump .spider
 
     label .fail:
-        show Alice spider-night 03-05
+        $ renpy.show("Alice spider-night 03-05"+suf)
         Alice_17 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЧто?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
         $ __mood -= 100

@@ -321,8 +321,8 @@ screen Bank():
                         $ _col = red
                     else:
                         $ _col = orange
-                    text "Задолженность: {color=[_col]}$[credit.debt]{/color}"
-                    text "[credit.left] дней на погашение" xalign 1.0
+                    text _("Задолженность: {color=[_col]}$[credit.debt]{/color}")
+                    text _("[credit.left] дней на погашение") xalign 1.0
                 if money >= credit.debt:
                     textbutton _("ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"):
                         action Function(credit.repay)
@@ -533,13 +533,15 @@ screen OnlineCources():
                 frame xsize 1075 yfill True background None:
                     xpadding 10 ypadding 0 #xmargin 0 ymargin 15
                     vbox spacing 10:
-                        frame xfill True background None:
-                            add "interface laptop "+CurCource.img+"-header-"+str(CurCource.current) xalign 0.5 size(900,450)
-                        if CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total:
+                        if CurCource.current == len(CurCource.cources): # CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total:
+                            frame xfill True background None:
+                                add "interface laptop "+CurCource.img+"-header-"+str(CurCource.current-1) xalign 0.5 size(900,450)
                             label _("Вы прошли все доступные курсы и занятия из этой категории. Возможно, новые уроки появятся в следующей версии игры."):
                                 xsize 900 xalign 0.5 text_size 24
                                 text_color gui.accent_color
                         else:
+                            frame xfill True background None:
+                                add "interface laptop "+CurCource.img+"-header-"+str(CurCource.current) xalign 0.5 size(900,450)
                             $ text2 = CurCource.cources[CurCource.current].total
                             label CurCource.cources[CurCource.current].header:
                                 xalign 0.5 text_xalign 0.5 text_size 36
@@ -558,7 +560,7 @@ screen OnlineCources():
                                         hover_background Frame("interface button green", 12, 12)
                                         action Jump("ViewLesson")
                                 else:  # таймаут еще не кончился
-                                    textbutton "{i}{b}ВЫ УЧИЛИСЬ СОВСЕМ НЕДАВНО. СДЕЛАЙТЕ ПЕРЕРЫВ!{/b}{/i}" style "buy_button2":
+                                    textbutton _("{i}{b}ВЫ УЧИЛИСЬ СОВСЕМ НЕДАВНО. СДЕЛАЙТЕ ПЕРЕРЫВ!{/b}{/i}") style "buy_button2":
                                         idle_background Frame("interface button orange", 12, 12)
                                         hover_background Frame("interface button orange", 12, 12)
                                         text_hover_color "#000000"
@@ -574,13 +576,13 @@ screen OnlineCources():
 
                                 $ price = CurCource.cources[CurCource.current].price
                                 if price > money:
-                                    textbutton "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}" style "buy_button2":
+                                    textbutton _("{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}") style "buy_button2":
                                         idle_background Frame("interface button red", 12, 12)
                                         hover_background Frame("interface button red", 12, 12)
                                         text_hover_color "#000000"
                                         action NullAction()
                                 else:
-                                    textbutton "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}" style "buy_button2":
+                                    textbutton _("{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}") style "buy_button2":
                                         idle_background Frame("interface button green", 12, 12)
                                         hover_background Frame("interface button green", 12, 12)
                                         action Function(BuyCource)

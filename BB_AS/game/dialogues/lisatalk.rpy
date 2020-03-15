@@ -969,7 +969,7 @@ label Lisa_HomeWork:
             jump Waiting
 
     label .show_breast:
-        $ renpy.show("Max lessons-breast "+pose3_1+mgg.dress)
+        $ renpy.show("Max lessons-breast 01"+mgg.dress)
         if RandomChance(_chance):  # убеждение успешно
             $ punlisa[0][0] = 4
             $ mgg.social += 0.2
@@ -1129,6 +1129,7 @@ label gift_swimsuit:
         $ items['bikini'].have = False
         $ items['bikini'].InShop = False
         $ items['bathrobe'].InShop = True
+        $ SetPossStage('Swimsuit', 3)
         $ chars['lisa'].gifts.append('bikini')
         if chars['lisa'].inferic is not None:
             $ chars['lisa'].inferic = clip(chars['lisa'].inferic-50.0, 0.0, 100.0)
@@ -1162,5 +1163,6 @@ label gift_bathrobe:
     else:
         $ chars['lisa'].infmax = 20.0
 
+    $ cloth_type["lisa"]["learn"]  = 'b'
     $ spent_time += 10
     jump Waiting

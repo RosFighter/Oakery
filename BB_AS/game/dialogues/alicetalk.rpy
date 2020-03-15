@@ -548,6 +548,8 @@ label gift_cigarettes:
             Alice_12 "Хоть ты и тот ещё извращенец, Макс, но мне было сложно достать эти сигареты самой... Так и быть, мама ничего не узнает, по крайней мере в этот раз."
             Max_05 "Спасибо, Алиса! И я не извращенец. Просто проходил мимо, а там такая красотища..."
             Alice_05 "Ну да, ну да... Мимо он проходил..."
+            $ punreason[1] = 0
+            $ peeping['alice_shower'] = 0
         "Держи!":
             if GetMood("alice")[0] < -1:
                 Alice_05 "Хотя ты и полный придурок, но, похоже, начинаешь исправляться!"
@@ -830,6 +832,7 @@ label smoke_nopants:
                     $ flags['smoke'] = None
                     $ flags['smoke.request'] = None
                     $ flags['noted'] = False
+                    $ chars['alice'].nopants = False
                     $ AddRelMood('alice', 0, 100)
 
     $ spent_time += 10
@@ -970,6 +973,7 @@ label gift_dress:
     label .end:
         $ items['dress'].have = False
         $ items['dress'].InShop = False
+        $ SetPossStage('nightclub', 4)
         $ chars['alice'].gifts.append('dress')
         if chars['alice'].inferic is not None:
             $ chars['alice'].inferic = clip(chars['alice'].inferic-50.0, 0.0, 100.0)

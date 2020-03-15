@@ -1,6 +1,9 @@
 
 label Eric_talk_afterdinner:
     $ renpy.block_rollback()
+    if day > 4:
+        $ spent_time = 10
+        jump Waiting
     $ spent_time = 20
     $ current_room = house[6]
 
