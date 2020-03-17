@@ -594,13 +594,11 @@ init python:
 
         return (s_desc, load_wd, load_tm, load_day)
 
-
 screen save():
 
     tag menu
 
     use file_slots("save")
-
 
 screen load():
 
@@ -750,8 +748,6 @@ screen file_slots(title):
                         textbutton "[page]" action FilePage(page)
 
                     textbutton _(">") action FilePageNext()
-
-
 
 style page_label is gui_label
 style page_label_text is gui_label_text

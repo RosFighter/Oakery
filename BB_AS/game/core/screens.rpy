@@ -801,6 +801,9 @@ screen room_navigation():
     else:
         key "l" action Language(None)
         key "д" action Language(None)
+    key 'mouseup_3' action [Cursor(None), ShowMenu('save')]
+    key 'K_ESCAPE' action [Cursor(None), ShowMenu('save')]
+    key 'K_MENU' action [Cursor(None), ShowMenu('save')]
 
     $ renpy.block_rollback()
     # $ renpy.fix_rollback()

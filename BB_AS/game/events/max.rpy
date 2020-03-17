@@ -770,24 +770,38 @@ label ViewLesson:
 
 label SearchCigarettes:
     scene BG char Max cigarettes-00
-    menu:
-        Max_09 "Так... Где же Алиса спрятала сигареты сегодня?"
-        "{i}искать в тумбочке{/i}":
-            if (random_sigloc == "n" and dcv['smoke'].done
-                    and GetPlan(plan_alice, day, tm).label != "at_friends"
-                    and GetPlan(plan_alice, day, tm).label != "smoke"):
-                jump .yes
-            else:
-                jump .no
-        "{i}искать под кроватью{/i}":
+
+    Max_09 "Так... Где же Алиса спрятала сигареты сегодня?" # nointeract
+
+    call screen search_cigarettes 
+    # $ rez = renpy.imagemap(,,[
+    #     (0, 684, 600, 1080, 'bed'),
+    #     (0, 280, 615, 665, 'bedside'),
+    #     (1370, 360, 1920, 1080, 'table')
+    #     ])
+    # menu:
+    #     "{i}искать в тумбочке{/i}":
+    #         jump .bedside
+    #     "{i}искать под кроватью{/i}":
+    #         jump .no
+    #     "{i}искать в столе{/i}":
+    #         jump .table
+
+    label .bedside:
+        if (random_sigloc == "n" and dcv['smoke'].done
+                and GetPlan(plan_alice, day, tm).label != "at_friends"
+                and GetPlan(plan_alice, day, tm).label != "smoke"):
+            jump .yes
+        else:
             jump .no
-        "{i}искать в столе{/i}":
-            if (random_sigloc == "t" and dcv['smoke'].done
-                    and GetPlan(plan_alice, day, tm).name != "at_friends"
-                    and GetPlan(plan_alice, day, tm).name != "smoke"):
-                jump .yes
-            else:
-                jump .no
+
+    label .table:
+        if (random_sigloc == "t" and dcv['smoke'].done
+                and GetPlan(plan_alice, day, tm).name != "at_friends"
+                and GetPlan(plan_alice, day, tm).name != "smoke"):
+            jump .yes
+        else:
+            jump .no
 
     menu .no:
         Max_10 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..."

@@ -349,8 +349,8 @@ label alice_shower:
 label alice_rest_morning:
 
     scene BG char Alice morning
-    # $ renpy.show("Alice morning 01"+chars["alice"].dress)
-    $ persone_button1 = "Alice morning 01"+chars["alice"].dress
+    $ renpy.show("Alice morning 01"+chars["alice"].dress)
+    $ persone_button1 = "Alice morning 02"+chars["alice"].dress
     return
 
 

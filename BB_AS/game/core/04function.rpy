@@ -1194,7 +1194,7 @@ init python:
     # 'images/interface/cursors/ИмяКурсора.png'
     def cursor(name = None):
         if name:
-            config.mouse = {'default' : [('images/interface/cursors/' + name + '.png', 0, 0)]}
+            config.mouse = {'default' : [('images/interface/cursors/' + name + '.png', 30, 30)]}
         else:
             config.mouse = None
     # превращаем функцию в action,
