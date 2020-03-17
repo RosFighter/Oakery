@@ -189,6 +189,10 @@ label AfterWaiting:
     $ status_sleep = False
     $ alarm_time = ""
 
+    $ persone_button1 = None
+    $ persone_button2 = None
+    $ persone_button3 = None
+
     $ Distribution() # распределяем персонажей по комнатам и устанавливаем фоны для текущей локации
 
     # отключение возможности помыть посуду, если ее вымыли Лиза или Алиса

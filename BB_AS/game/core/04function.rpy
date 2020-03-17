@@ -1187,3 +1187,21 @@ init python:
         global notify_list
         if all((not renpy.get_screen('notify'), notify_list)):
             renpy.notify(notify_list.pop(0));
+
+    # функция для смены курсора
+    # курсоры должны лежать в папке images/interface/cursors
+    # формат имен фалов для курсоров:
+    # 'images/interface/cursors/ИмяКурсора.png'
+    def cursor(name = None):
+        if name:
+            config.mouse = {'default' : [('images/interface/cursors/' + name + '.png', 0, 0)]}
+        else:
+            config.mouse = None
+    # превращаем функцию в action,
+    # чтобы можно было привязать, например, к нажатию кнопок:
+    # action Cursor("talk")
+    Cursor = renpy.curry(cursor)
+
+    def have_dialog():
+        CurShedRec = GetPlan(eval("plan_"+current_room.cur_char[0]), day, tm)
+        return CurShedRec.enabletalk and len(TalkMenuItems()) > 0

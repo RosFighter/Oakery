@@ -9,6 +9,9 @@ default pose3_3 = renpy.random.choice(["01", "02", "03"])
 default random_loc_ab = renpy.random.choice(["a", "b"])
 default tv_scene = renpy.random.choice(["", "bj", "hj"])
 default random_sigloc = renpy.random.choice(["n", "t"])
+default persone_button1 = None
+default persone_button2 = None
+default persone_button3 = None 
 
 ################################################################################
 

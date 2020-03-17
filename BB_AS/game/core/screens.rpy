@@ -960,6 +960,18 @@ screen room_navigation():
         imagebutton idle "interface menu main" focus_mask True action ShowMenu("save") at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
 
+    if persone_button1:
+        imagebutton idle persone_button1:
+            focus_mask True
+            if have_dialog():
+                hovered Cursor("talk")
+                unhovered Cursor(None)
+                action [Cursor(None), Jump("StartDialog")]
+            else:
+                action NullAction()
+
+
+
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
     frame align(.99, .99) xysize(123, 395) background None:
         vbox:
