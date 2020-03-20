@@ -106,13 +106,13 @@ translate english ann_dressed_work_7b31f3ed:
 translate english ann_dressed_work_b21abe2e:
 
     # Ann "{b}Анна:{/b} Кто там?" nointeract
-    Ann "{b}Аnn:{/b} Who is it?" nointeract
+    Ann "{b}Ann:{/b} Who is it?" nointeract
 
 # game/events/ann.rpy:162
 translate english ann_dressed_work_2e55a9e3:
 
     # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
-    Ann "{b}Аnn:{/b}Max, I'm not dressed yet. Just wait a minute, honey."
+    Ann "{b}Ann:{/b}Max, I'm not dressed yet. Just wait a minute, honey."
 
 # game/events/ann.rpy:163
 translate english ann_dressed_work_51f3e0fa:

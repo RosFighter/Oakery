@@ -82,7 +82,7 @@ translate english alice_sleep_night_ef329553:
 translate english alice_sleep_morning_7ff48024:
 
     # Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..." nointeract
-    Max_00 "I think Alice is asleep. Probably shouldn't knock. \nДа and it's way too dangerous to just walk in..." nointeract
+    Max_00 "I think Alice is asleep. Probably shouldn't knock. \nAnd it's way too dangerous to just walk in..." nointeract
 
 # game/events/alice.rpy:83
 translate english alice_sleep_morning_46390368:

@@ -52,7 +52,7 @@ translate english strings:
 
     # game/core/screens.rpy:398
     old "Уникальное предложение только для вас! Наша баннерная сеть предназначена для клиентов с особыми запросами и готова донести вашу рекламу до целевой аудитории.\n\nЗа каждый пакет, который вы оплачиваете сейчас, мы гарантируем 10000 показов рекламы вашего сайта в ближайшем будущем!"
-    new "Unique offer just for you! Our banner network is designed for customers with special requests and is ready to bring your advertising to the target audience. \n\nЗа every package that you pay now, we guarantee 10000 displays of your site advertising in the near future!"
+    new "Unique offer just for you! Our banner network is designed for customers with special requests and is ready to bring your advertising to the target audience. \n\nFor each package that you pay now, we guarantee 10000 displays of your site advertising in the near future!"
 
     # game/core/screens.rpy:400
     old "КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"
