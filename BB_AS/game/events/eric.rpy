@@ -280,16 +280,83 @@ label eric_ann_sleep:
 
 label eric_ann_shower:
     scene location house bathroom door-morning
-    if peeping["ann_shower"] == 0:
-        $ peeping["ann_shower"] = 1
-        $ spent_time = 10
-        menu:
-            Max_00 "Похоже, мама вместе с Эриком принимают душ... Или что они там ещё могут делать?"
-            "{i}заглянуть со двора{/i}":
-                pass
-            "{i}уйти{/i}":
-                return
+    if peeping["ann_shower"] != 0:
+        return
 
+    $ peeping["ann_shower"] = 1
+    $ spent_time = 10
+    menu:
+        Max_00 "Похоже, мама вместе с Эриком принимают душ... Или что они там ещё могут делать?"
+        "{i}заглянуть со двора{/i}":
+            jump .start_peeping
+        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+            jump .ladder
+        "{i}уйти{/i}":
+            return
+    label .ladder:
+        $ renpy.scene()
+        $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
+        $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
+
+        scene BG bathroom-morning-00
+        if fuck_scene == 4:
+            show Eric bath-window-morning 02a
+        else:
+            $ renpy.show("Eric bath-window-morning 0"+str(fuck_scene)+"a")
+        show FG bathroom-morning-00
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.05
+        $ spent_time += 30
+        Max_07 "Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся..."
+
+        if fuck_scene == 1:
+            show Eric bath-window-morning 01b
+            Max_10 "Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..."
+            show Eric bath-window-morning 01c
+            Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!"
+        elif fuck_scene == 2:
+            show Eric bath-window-morning 02b
+            Max_09 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!"
+            show Eric bath-window-morning 02c
+            jump .fin2
+        elif fuck_scene == 3:
+            show Eric bath-window-morning 03b
+            Max_09 "Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?"
+            show Eric bath-window-morning 03c
+            jump .fin1
+        elif fuck_scene == 4:
+            show Eric bath-window-morning 04b
+            Max_08 "О Боже! Как бы я мечтал оказаться на месте это счастливого ублюдка! И всё равно, что она - моя мама... Когда её мокрая попка так красиво скачет на члене, голова начинает идти кругом!"
+            show Eric bath-window-morning 02c
+            jump .fin2
+        elif fuck_scene == 5:
+            show Eric bath-window-morning 05b
+            Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!"
+            show Eric bath-window-morning 03c
+            jump .fin1
+        else:
+            scene BG bathroom-morning-00
+            show AnimAnnEric2
+            show FG bathroom-morning-00
+            Max_10 "Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко..."
+            hide AnimAnnEric2
+            show Eric bath-window-morning 03c
+            jump .fin1
+        $ current_room = house[6]
+        jump Waiting
+
+    label .fin1:
+        Max_08 "Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена... Охх... мама, а ведь ты та ещё развратница!"
+        $ current_room = house[6]
+        jump Waiting
+
+    label .fin2:
+        Max_10 "А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!"
+        $ current_room = house[6]
+        jump Waiting
+
+    label .start_peeping:
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
         $ __r1 = renpy.random.choice(["01", "02", "03"])
@@ -352,5 +419,3 @@ label eric_ann_shower:
         $ rez = renpy.display_menu([(_("{i}уйти{/i}"), "exit")])
         $ current_room = house[6]
         jump Waiting
-
-    return

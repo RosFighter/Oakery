@@ -35,7 +35,7 @@ translate english strings:
     new "{color=[lime]}rose{/color}"
 
     # game/core/04function.rpy:390
-    old "Настроение %s %s \nЕе отношение к Максу %s"
+    old "Настроение %s %s \nЕё отношение к Максу %s"
     new "%s's spirits %s \nHer attitude toward Max had %s"
 
     # game/core/04function.rpy:392
@@ -53,4 +53,3 @@ translate english strings:
     # game/core/04function.rpy:1028
     old "{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
     new "{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
-

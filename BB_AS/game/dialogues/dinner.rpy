@@ -2,7 +2,23 @@
 label after_dinner:
     $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
     $ spent_time = 60
-    # $ current_room.cur_bg = "location house terrace dinner-b"
+
+    if punlisa[0][3] == 1:
+        # Лизу наказали
+        if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000):
+            # если Макс подставил Лизу и её подозрение достигло 100% (1000)
+            call conversation_after_dinner(4)
+        elif ColumnSum(punlisa, 0) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):
+            # если Макс не помогал Лизе две недели и разговора после ужина не было больше недели
+            if talk_var['help.hw'] == 0 and possibility['sg'].stn <= 2:
+                # совсем не помогал
+                call conversation_after_dinner(1)
+            elif possibility['sg'].stn == 2:
+                # безвозмездно помогал, но перестал
+                call conversation_after_dinner(2)
+            elif possibility['sg'].stn > 2:
+                # обещал помогать за услуги, но не стал или перестал
+                call conversation_after_dinner(3)
 
     jump Waiting
 

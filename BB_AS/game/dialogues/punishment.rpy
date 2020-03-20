@@ -4,7 +4,9 @@ label StartPunishment:
     $ first = True
     $ defend = False
     # Макс теоретически может получить наказание как утром, так и вечером
-    if max(punreason) and tm > "18:00":  # есть причины наказания Макса, временнно наказываем только по вечерам
+    if punreason[2] or punreason[3] and tm < "18:00":  # утром наказание за подглядывание за Анной или Анной с Эриком
+        $ pun_list.append("mgg")
+    elif max(punreason) and tm > "18:00":
         $ pun_list.append("mgg")
 
     if tm > "18:00" and 0 < GetWeekday(day) < 6:
@@ -92,6 +94,7 @@ label punishment_max:
         $ renpy.show("Max punish-evening 01"+mgg.dress)
 
     if warning < 2 and newpunishment == 0:
+        $ warning += 1
         Ann_19 "Макс! Я вынуждена отчитать тебя перед всеми, так как у нас в семье не должно быть никаких секретов."
         if warning > 0:
             Max_10 "Я снова не виноват!"
@@ -176,11 +179,18 @@ label punishment_max:
 
         Ann_18 "Ну и долго я буду ждать?! Давай ложись..."
 
-        scene BG punish-evening 02
-        if mgg.dress == "a":
-            $ renpy.show("Ann punish-evening max-01"+chars["ann"].dress)
+        if tm < "14:00":
+            scene BG punish-morning 02
+            if mgg.dress == "a":
+                $ renpy.show("Ann punish-morning max-01"+chars["ann"].dress)
+            else:
+                $ renpy.show("Ann punish-morning max-03"+chars["ann"].dress)
         else:
-            $ renpy.show("Ann punish-evening max-03"+chars["ann"].dress)
+            scene BG punish-evening 02
+            if mgg.dress == "a":
+                $ renpy.show("Ann punish-evening max-01"+chars["ann"].dress)
+            else:
+                $ renpy.show("Ann punish-evening max-03"+chars["ann"].dress)
 
         # Макс без штанов у Анны на коленях
         if punreason.count(1) > 1:  # несколько причин для наказания, общая фраза
@@ -196,10 +206,16 @@ label punishment_max:
                 }[punreason.index(1)]
             Ann_16 "[_text!tq]"
         ### сцена наказания
-        if mgg.dress == "a":
-            $ renpy.show("Ann punish-evening max-02"+chars["ann"].dress)
+        if tm < "14:00":
+            if mgg.dress == "a":
+                $ renpy.show("Ann punish-morning max-02"+chars["ann"].dress)
+            else:
+                $ renpy.show("Ann punish-morning max-04"+chars["ann"].dress)
         else:
-            $ renpy.show("Ann punish-evening max-04"+chars["ann"].dress)
+            if mgg.dress == "a":
+                $ renpy.show("Ann punish-evening max-02"+chars["ann"].dress)
+            else:
+                $ renpy.show("Ann punish-evening max-04"+chars["ann"].dress)
         Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
         ## здесь снижение влияния Макса для присутствующих персонажей
         python:
@@ -303,7 +319,7 @@ label punishment_lisa:
     else:
         $ renpy.show("Ann punish-evening lisa-03"+chars["ann"].dress)
 
-    $ __mood -= 50 # если Лизу наказывают, ее настроение портится
+    $ __mood -= 100 # если Лизу наказывают, ее настроение портится
     $ talk_var['lisa.pun'] += 1
 
     Lisa_09 "Ма-ам, я больше не буду... Ай... В смысле, буду лучше учиться. Извини..."
@@ -333,6 +349,7 @@ label punishment_lisa:
     $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
     Ann_12 "Лиза, надеюсь, ты извлекла урок из этого наказания и больше это не повторится. А теперь одевайся!"
 
+    $ AddRelMood('lisa', 0, __mood)
     return
 
 
@@ -431,7 +448,7 @@ label punishment_alice:
     else:
         $ renpy.show("Ann punish-evening alice-05"+chars["ann"].dress)
 
-    $ __mood -= 50 # если Алису наказывают, ее настроение портится
+    $ __mood -= 100 # если Алису наказывают, ее настроение портится
     $ talk_var['alice.pun'] += 1
 
     Alice_15 "Ай, больно же! Мам, я больше не буду!!!"
@@ -462,4 +479,5 @@ label punishment_alice:
         show Alice punish-evening 03ba
         Ann_12 "Так, всё, надевай свои шорты. Надеюсь, ты осознала свои поступки и следующего раза не будет..."
 
+    $ AddRelMood('alice', 0, __mood)
     return

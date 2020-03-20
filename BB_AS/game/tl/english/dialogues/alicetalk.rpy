@@ -1144,7 +1144,7 @@ translate english smoke_nofear_e2e452f2:
 translate english smoke_nofear_caee999b:
 
     # Max_09 "Не боишься, что мама накажет, если узнает?"
-    Max_09 "Aren't you afriad of getting punished if Mom finds out?"
+    Max_09 "Aren't you afraid of getting punished if Mom finds out?"
 
 # game/dialogues/alicetalk.rpy:571
 translate english smoke_nofear_e44b17a7:
@@ -1192,7 +1192,7 @@ translate english smoke_fear_e2e452f2:
 translate english smoke_fear_876b91d4:
 
     # Max_09 "Не боишься, что мама накажет если узнает?"
-    Max_09 "Aren't you afriad of getting punished if Mom finds out?"
+    Max_09 "Aren't you afraid of getting punished if Mom finds out?"
 
 # game/dialogues/alicetalk.rpy:605
 translate english smoke_fear_a6cf7c4a:
@@ -1300,7 +1300,7 @@ translate english smoke_fear_a86ec81d_1:
 translate english smoke_fear_c9cce892:
 
     # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nМаленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
-    Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\Disgusting pervert... Okay, but you can't say anything to Mom. I'll start next time I need a smoke."
+    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\Disgusting pervert... Okay, but you can't say anything to Mom. I'll start next time I need a smoke."
 
 # game/dialogues/alicetalk.rpy:686
 translate english smoke_fear_9d8a31b7:
@@ -2129,4 +2129,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:988
     old "Я и не знал. Просто угадал видимо..."
     new "I didn't know, just guessed..."
-

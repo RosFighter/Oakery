@@ -409,7 +409,7 @@ init python:
         chars[char].relmax = clip(chars[char].relmax + rel, -450, 1400)
         chars[char].mood   = clip(chars[char].mood + mood,  -435, 435)
         if rel != 0 and mood != 0:
-            notify_list.append(__("Настроение %s %s \nЕе отношение к Максу %s") % (char_name, mood_suf, rel_suf))
+            notify_list.append(__("Настроение %s %s \nЕё отношение к Максу %s") % (char_name, mood_suf, rel_suf))
         elif rel != 0:
             notify_list.append(__("Отношение %s к Максу %s") % (char_name, rel_suf))
         elif mood != 0:
@@ -1004,6 +1004,18 @@ init python:
             1000 <= rel        : ( 5, _("Близкие"))
             }[True]
 
+    def AttitudeChange(char, level):
+        lvl = abs(level)
+        mn = 1 if level > 0 else -1
+        while lvl > 1:
+            rel = {-3 : 200*mn, -2 : 150*mn, -1 : 100*mn, 0 : 100*mn, 1 : 150*mn, 2 : 200*mn, 3 : 250*mn, 4 : 300*mn, 5 : 400*mn}[GetRelMax(char)[0]]
+            chars[char].relmax = clip(chars[char].relmax + rel , -450, 1400)
+            lvl -= 1
+        if lvl > 0:
+            rel = {-3 : 200*mn*lvl, -2 : 150*mn*lvl, -1 : 100*mn*lvl, 0 : 100*mn*lvl, 1 : 150*mn*lvl, 2 : 200*mn*lvl, 3 : 250*mn*lvl, 4 : 300*mn*lvl, 5 : 400*mn*lvl}[GetRelMax(char)[0]]
+            chars[char].relmax = clip(chars[char].relmax + rel, -450, 1400)
+
+
 
     def GetRelEric(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Эриком
         return {
@@ -1156,11 +1168,11 @@ init python:
         clip(chance, 0, 900)
 
 
-    def GetDistract(punchar):  # возвращает подозрение персонажа о том, что его наказания не случайны
-        dist = 0
+    def ColumnSum(punchar, i):  # сумму i-тых элементов списка списков
+        sm = 0
         for d in punchar:
-            dist += d[4]
-        return dist
+            sm += d[i]
+        return sm
 
 
     def GetChanceConvince(punchar, multiplier = 1):  # возвращает шанс убедить персонажа после наказаний

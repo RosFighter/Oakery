@@ -40,7 +40,7 @@ init python:
 
 image video1_movie = Movie(play="video/Impulse.webm", image="images/interface/laptop/start_page.webp", size=(1475, 829))
 
-image AnimAnnEric1:
+image AnimAnnEric1:  # Анимация в спальне
     "Eric fuck 06 00"
     0.033
     "Eric fuck 06 01"
@@ -76,5 +76,44 @@ image AnimAnnEric1:
     "Eric fuck 06 16"
     0.033
     "Eric fuck 06 17"
+    0.033
+    repeat
+
+image AnimAnnEric2:  # Анимация в душе (утром со стремянки)
+    "Eric bath-window-morning 06b 00"
+    0.033
+    "Eric bath-window-morning 06b 01"
+    0.033
+    "Eric bath-window-morning 06b 02"
+    0.033
+    "Eric bath-window-morning 06b 03"
+    0.033
+    "Eric bath-window-morning 06b 04"
+    0.033
+    "Eric bath-window-morning 06b 05"
+    0.033
+    "Eric bath-window-morning 06b 06"
+    0.033
+    "Eric bath-window-morning 06b 07"
+    0.033
+    "Eric bath-window-morning 06b 08"
+    0.033
+    "Eric bath-window-morning 06b 09"
+    0.033
+    "Eric bath-window-morning 06b 10"
+    0.033
+    "Eric bath-window-morning 06b 11"
+    0.033
+    "Eric bath-window-morning 06b 12"
+    0.033
+    "Eric bath-window-morning 06b 13"
+    0.033
+    "Eric bath-window-morning 06b 14"
+    0.033
+    "Eric bath-window-morning 06b 15"
+    0.033
+    "Eric bath-window-morning 06b 16"
+    0.033
+    "Eric bath-window-morning 06b 17"
     0.033
     repeat

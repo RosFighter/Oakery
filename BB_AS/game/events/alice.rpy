@@ -357,6 +357,7 @@ label alice_rest_morning:
 label alice_rest_evening:
     scene BG char Alice evening
     $ renpy.show("Alice evening 01"+chars["alice"].dress)
+    $ persone_button1 = "Alice evening 02"+chars["alice"].dress
     return
 
 
@@ -458,6 +459,7 @@ label alice_sun:
 label alice_swim:
 
     scene image "Alice swim "+pose3_2+chars["alice"].dress
+    $ persone_button1 = "Alice swim "+pose3_2+chars["alice"].dress+"b"
     return
 
 
@@ -586,8 +588,19 @@ label spider_in_bed:
             "А что мне за это будет?" if suf != '':  # Алиса без лифчика
                 show Max spider-night 03-02
                 $ renpy.show("Alice spider-night 03-04"+suf)
-                Alice_06 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
-                Max_00 "Хорошо, хорошо, успокойся, сейчас поймаю я твоего паука..."
+                Alice_06 "Макс, не наглей! Я и так перед тобой тут в одних трусиках... Тебе этого мало что ли?!"
+                Max_07 "Ну, я вижу, что условия нашей договорённости ты соблюдаешь, только вот к поимке паука это никак не относится."
+                Alice_12 "И чего тебе, в таком случае, ещё от меня надо?"
+                Max_01 "Видишь ли, глаза совсем заспанные, никак не могу разглядеть паука... Но думаю твои прекрасные сосочки мне с этим помогут!"
+                menu:
+                    Alice_15 "Ах, так! Значит то, что договорённость я соблюдаю, ты видишь, а вот здоровенного паука на моей кровати нет?!"
+                    "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}":
+                        if RandomChance(_ch3):
+                            jump .toples
+                        else:
+                            jump .fail
+                    "Давай уже показывай сиськи!":
+                        jump .fail
                 jump .spider
             "Хорошо, где он там..." if not flags['noted']:  # Вариант недоступен, если Алиса нарушает договоренность и Макс об этом знает
                 $ __mood += 100
@@ -658,8 +671,8 @@ label spider_in_bed:
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
         menu:
-            Max_07 "Ну, где ты там. Ага. Попался! И что мне с тобой делать?"
-            "{i}забрать его себе{/i}":
+            Max_07 "Ага, попался! Пожалуй, вот что я сделаю..."
+            "{i}оставлю этого паука себе{/i}":
                 menu:
                     Alice_16 "Макс! Ты должен его убить! А не то я подумаю, что это твоих рук дело... Докажи, что это был не ты!"
                     "Я не буду его убивать!":
@@ -696,9 +709,9 @@ label spider_in_bed:
                         jump .let_go
                     "{i}убить паука{/i}":
                         jump .kill
-            "{i}выбросить с балкона{/i}":
+            "{i}выброшу этого паука с балкона{/i}":
                 jump .let_go
-            "{i}убить паука{/i}":
+            "{i}убью этого паука{/i}":
                 jump .kill
     label .let_go:
         scene BG char Alice spider-balcony

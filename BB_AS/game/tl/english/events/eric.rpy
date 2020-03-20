@@ -118,7 +118,7 @@ translate english Eric_talk_afterdinner_friend_9b6bd24d:
 translate english Eric_talk_afterdinner_friend_516308d2:
 
     # Max_04 "Ага..."
-    Max_04 "Ага..."
+    Max_04 "Yeah..."
 
 translate english strings:
 
