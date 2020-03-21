@@ -402,3 +402,125 @@ translate english eric_ann_fucking_05040526:
     # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватало ещё, чтобы меня увидели..."
     Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon..."
 
+# TODO: Translation updated at 2020-03-21 21:54
+
+# game/events/eric.rpy:299
+translate english eric_ann_shower_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/eric.rpy:311
+translate english eric_ann_shower_ladder_6725d9af:
+
+    # Max_07 "Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся..."
+    Max_07 ""
+
+# game/events/eric.rpy:315
+translate english eric_ann_shower_ladder_20e247fe:
+
+    # Max_10 "Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..."
+    Max_10 ""
+
+# game/events/eric.rpy:317
+translate english eric_ann_shower_ladder_90b0887e:
+
+    # Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!"
+    Max_09 ""
+
+# game/events/eric.rpy:320
+translate english eric_ann_shower_ladder_4ce9d959:
+
+    # Max_09 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!"
+    Max_09 ""
+
+# game/events/eric.rpy:325
+translate english eric_ann_shower_ladder_993c77ee:
+
+    # Max_09 "Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?"
+    Max_09 ""
+
+# game/events/eric.rpy:330
+translate english eric_ann_shower_ladder_c6081091:
+
+    # Max_08 "О Боже! Как бы я мечтал оказаться на месте это счастливого ублюдка! И всё равно, что она - моя мама... Когда её мокрая попка так красиво скачет на члене, голова начинает идти кругом!"
+    Max_08 ""
+
+# game/events/eric.rpy:335
+translate english eric_ann_shower_ladder_fa236e0e:
+
+    # Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!"
+    Max_10 ""
+
+# game/events/eric.rpy:342
+translate english eric_ann_shower_ladder_6bc8173a:
+
+    # Max_10 "Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко..."
+    Max_10 ""
+
+# game/events/eric.rpy:349
+translate english eric_ann_shower_fin1_547d305b:
+
+    # Max_08 "Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена... Охх... мама, а ведь ты та ещё развратница!"
+    Max_08 ""
+
+# game/events/eric.rpy:353
+translate english eric_ann_shower_fin2_7b69081a:
+
+    # Max_10 "А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!"
+    Max_10 ""
+
+# game/events/eric.rpy:357
+translate english eric_ann_shower_end_90ff417e:
+
+    # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
+    Max_00 ""
+
+# game/events/eric.rpy:371
+translate english eric_ann_shower_start_peeping_1cdffa73:
+
+    # Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..." nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:391
+translate english eric_ann_shower_start_peeping_172a174a:
+
+    # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
+    Ann_15 ""
+
+# game/events/eric.rpy:404
+translate english eric_ann_shower_start_peeping_8f665b71:
+
+    # Max_04 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
+    Max_04 "" nointeract
+
+# game/events/eric.rpy:406
+translate english eric_ann_shower_start_peeping_a1d37cf2:
+
+    # Max_06 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
+    Max_06 "" nointeract
+
+# game/events/eric.rpy:408
+translate english eric_ann_shower_start_peeping_334004c9:
+
+    # Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОго! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
+    Max_05 "" nointeract
+
+# game/events/eric.rpy:416
+translate english eric_ann_shower_start_peeping_925cd30e:
+
+    # Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
+    Max_01 "" nointeract
+
+# game/events/eric.rpy:418
+translate english eric_ann_shower_start_peeping_b85f5146:
+
+    # Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:420
+translate english eric_ann_shower_start_peeping_cc0c1868:
+
+    # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
+    Max_08 "" nointeract
+

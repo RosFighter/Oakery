@@ -584,3 +584,11 @@ translate english lisa_bath_ladder_af2181e8:
     # Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..." nointeract
     Max_07 "Ah! That's the end of it...I get to share room with that beautiful pussy! " nointeract
 
+# TODO: Translation updated at 2020-03-21 21:54
+
+# game/events/lisa.rpy:90
+translate english lisa_shower_ladder_90ff417e:
+
+    # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
+    Max_00 ""
+

@@ -1042,3 +1042,11 @@ translate english strings:
     old "Вы просматриваете видеоурок и повышаете свои навыки."
     new "You are watching a tutorial video and improving your skill."
 
+# TODO: Translation updated at 2020-03-21 21:54
+
+# game/events/max.rpy:774
+translate english SearchCigarettes_b89e2d47:
+
+    # Max_09 "Так... Где же Алиса спрятала сигареты сегодня?"
+    Max_09 ""
+

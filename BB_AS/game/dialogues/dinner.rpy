@@ -8,8 +8,8 @@ label after_dinner:
         if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4)
-        elif ColumnSum(punlisa, 0) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):
-            # если Макс не помогал Лизе две недели и разговора после ужина не было больше недели
+        elif len(punlisa) >= 7 and ColumnSum(punlisa, 0, 7) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):
+            # если Макс не помогал Лизе семь раз и разговора после ужина не было больше недели
             if talk_var['help.hw'] == 0 and possibility['sg'].stn <= 2:
                 # совсем не помогал
                 call conversation_after_dinner(1)

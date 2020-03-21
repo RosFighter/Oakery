@@ -855,3 +855,193 @@ translate english spider_in_bed_help_c44a026d:
     # Max_00 "Ладно, ладно, сейчас поймаю..."
     Max_00 "Okay, okay, I'll catch you..."
 
+# TODO: Translation updated at 2020-03-21 21:54
+
+# game/events/alice.rpy:591
+translate english spider_in_bed_help_6e299c17:
+
+    # Alice_06 "Макс, не наглей! Я и так перед тобой тут в одних трусиках... Тебе этого мало что ли?!"
+    Alice_06 ""
+
+# game/events/alice.rpy:592
+translate english spider_in_bed_help_280fc180:
+
+    # Max_07 "Ну, я вижу, что условия нашей договорённости ты соблюдаешь, только вот к поимке паука это никак не относится."
+    Max_07 ""
+
+# game/events/alice.rpy:593
+translate english spider_in_bed_help_207bbb6c:
+
+    # Alice_12 "И чего тебе, в таком случае, ещё от меня надо?"
+    Alice_12 ""
+
+# game/events/alice.rpy:594
+translate english spider_in_bed_help_1550b509:
+
+    # Max_01 "Видишь ли, глаза совсем заспанные, никак не могу разглядеть паука... Но думаю твои прекрасные сосочки мне с этим помогут!"
+    Max_01 ""
+
+# game/events/alice.rpy:595
+translate english spider_in_bed_help_d7fe9c1f:
+
+    # Alice_15 "Ах, так! Значит то, что договорённость я соблюдаю, ты видишь, а вот здоровенного паука на моей кровати нет?!" nointeract
+    Alice_15 "" nointeract
+
+# game/events/alice.rpy:611
+translate english spider_in_bed_help_a5c16c8c:
+
+    # Alice_12 "Ну забыла я снять лифчик перед сном, просто по привычке... Подумаешь, какое большое преступление!"
+    Alice_12 ""
+
+# game/events/alice.rpy:612
+translate english spider_in_bed_help_bb674fdf:
+
+    # Max_09 "Конечно большое! Ты просто наплевала на наш уговор, а я ведь твою задницу спас от маминой хлёсткой руки... Я его тоже тогда соблюдать не стану, так что завтра получишь! Приятных снов..."
+    Max_09 ""
+
+# game/events/alice.rpy:613
+translate english spider_in_bed_help_60173e5f:
+
+    # Alice_14 "Нет, нет, нет! Ты куда собрался?! У меня же паук на кровати!"
+    Alice_14 ""
+
+# game/events/alice.rpy:614
+translate english spider_in_bed_help_c57400a7:
+
+    # Max_07 "Что тут скажешь... Успехов тебе!"
+    Max_07 ""
+
+# game/events/alice.rpy:615
+translate english spider_in_bed_help_93127800:
+
+    # Alice_06 "Ну не надо так, Макс! Я не буду больше нарушать наш уговор, только избавься от паука... Пожалуйста!"
+    Alice_06 ""
+
+# game/events/alice.rpy:618
+translate english spider_in_bed_help_f9cd0de1:
+
+    # Alice_06 "О чём это ты говоришь, Макс?"
+    Alice_06 ""
+
+# game/events/alice.rpy:619
+translate english spider_in_bed_help_b0ae32f7:
+
+    # Max_08 "Мы ведь договорились, что ты не будешь одевать трусы днём. А я их на тебе видел!"
+    Max_08 ""
+
+# game/events/alice.rpy:620
+translate english spider_in_bed_help_dccc7eb9:
+
+    # Alice_14 "А мне вот интересно, когда это ты их мог увидеть?! Подглядывал, как я одеваюсь?"
+    Alice_14 ""
+
+# game/events/alice.rpy:621
+translate english spider_in_bed_help_16cd97c2:
+
+    # Max_07 "Как будто это нужно?! Они у тебя иногда прямо из-под джинс слегка торчат... Так что важно не то, как и где я это увидел, а то, что они на тебе были!"
+    Max_07 ""
+
+# game/events/alice.rpy:622
+translate english spider_in_bed_help_9e5a84ed:
+
+    # Alice_00 "Ладно, ладно, признаю, они были сегодня на мне, потому что без них мне всё натирает."
+    Alice_00 ""
+
+# game/events/alice.rpy:623
+translate english spider_in_bed_help_d646b3d5:
+
+    # Max_09 "То есть ты просто наплевала на наш уговор?! А я ведь твою задницу спас от маминой хлёсткой руки... Я его тоже тогда соблюдать не стану, так что завтра получишь! Приятных снов..."
+    Max_09 ""
+
+# game/events/alice.rpy:624
+translate english spider_in_bed_help_328d8e77:
+
+    # Alice_14 "Эй, ты куда это собрался?! У меня же паук здоровенный на кровати!"
+    Alice_14 ""
+
+# game/events/alice.rpy:625
+translate english spider_in_bed_help_ed6645e4:
+
+    # Max_07 "Что тут скажешь... Развлекайся!"
+    Max_07 ""
+
+# game/events/alice.rpy:626
+translate english spider_in_bed_help_9a044a9a:
+
+    # Alice_06 "Ну не уходи, Макс! Я не буду больше нарушать наш уговор, только избавься от этого паука... Ну пожалуйста!"
+    Alice_06 ""
+
+# game/events/alice.rpy:627
+translate english spider_in_bed_help_aa7a7a05:
+
+    # Max_09 "Вот и хорошо, что не будешь! А за сегодняшнее нарушение ты покажешь мне свою попку, если хочешь, чтобы я убрал паука... Не зря же я её спас от наказания?!"
+    Max_09 ""
+
+# game/events/alice.rpy:628
+translate english spider_in_bed_help_165abb28:
+
+    # Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
+    Alice_13 ""
+
+# game/events/alice.rpy:629
+translate english spider_in_bed_help_adbdf35e:
+
+    # Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
+    Max_01 ""
+
+# game/events/alice.rpy:632
+translate english spider_in_bed_help_ab9c3416:
+
+    # Alice_06 "Ну вот... смотри... И не говори, что этого мало... большего не покажу! Доволен?"
+    Alice_06 ""
+
+# game/events/alice.rpy:633
+translate english spider_in_bed_help_407fb08c:
+
+    # Max_05 "О да, я очень доволен! Попка у тебя просто супер, сестрёнка!"
+    Max_05 ""
+
+# game/events/alice.rpy:634
+translate english spider_in_bed_help_feed0696:
+
+    # Alice_12 "Всё! Посмотрел и хватит, давай уже, лови этого паука!"
+    Alice_12 ""
+
+# game/events/alice.rpy:635
+translate english spider_in_bed_help_35d72be5:
+
+    # Max_04 "Ладно, теперь можно и поймать..."
+    Max_04 ""
+
+# game/events/alice.rpy:685
+translate english spider_in_bed_spider_952bda97:
+
+    # Max_07 "Ага, попался! Пожалуй, вот что я сделаю..." nointeract
+    Max_07 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:563
+    old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Я прав или я прав?!"
+    new ""
+
+    # game/events/alice.rpy:595
+    old "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:595
+    old "Давай уже показывай сиськи!"
+    new ""
+
+    # game/events/alice.rpy:685
+    old "{i}оставлю этого паука себе{/i}"
+    new ""
+
+    # game/events/alice.rpy:685
+    old "{i}выброшу этого паука с балкона{/i}"
+    new ""
+
+    # game/events/alice.rpy:685
+    old "{i}убью этого паука{/i}"
+    new ""
+

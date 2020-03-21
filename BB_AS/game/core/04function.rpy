@@ -1004,6 +1004,7 @@ init python:
             1000 <= rel        : ( 5, _("Близкие"))
             }[True]
 
+
     def AttitudeChange(char, level):
         lvl = abs(level)
         mn = 1 if level > 0 else -1
@@ -1014,7 +1015,6 @@ init python:
         if lvl > 0:
             rel = {-3 : 200*mn*lvl, -2 : 150*mn*lvl, -1 : 100*mn*lvl, 0 : 100*mn*lvl, 1 : 150*mn*lvl, 2 : 200*mn*lvl, 3 : 250*mn*lvl, 4 : 300*mn*lvl, 5 : 400*mn*lvl}[GetRelMax(char)[0]]
             chars[char].relmax = clip(chars[char].relmax + rel, -450, 1400)
-
 
 
     def GetRelEric(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Эриком
@@ -1168,10 +1168,11 @@ init python:
         clip(chance, 0, 900)
 
 
-    def ColumnSum(punchar, i):  # сумму i-тых элементов списка списков
+    def ColumnSum(punchar, i, limit=50):  # сумму i-тых элементов списка списков
         sm = 0
-        for d in punchar:
-            sm += d[i]
+        for d in range(len(punchar)):
+            if d < limit:
+                sm += punchar[d][i]
         return sm
 
 

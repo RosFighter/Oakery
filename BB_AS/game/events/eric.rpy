@@ -343,16 +343,18 @@ label eric_ann_shower:
             hide AnimAnnEric2
             show Eric bath-window-morning 03c
             jump .fin1
-        $ current_room = house[6]
-        jump Waiting
+        jump .end
 
     label .fin1:
         Max_08 "Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена... Охх... мама, а ведь ты та ещё развратница!"
-        $ current_room = house[6]
-        jump Waiting
+        jump .end
 
     label .fin2:
         Max_10 "А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!"
+        jump .end
+
+    label .end:
+        Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
         $ current_room = house[6]
         jump Waiting
 
