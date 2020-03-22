@@ -507,3 +507,83 @@ translate english ann_shower_ladder_0c9341b6:
     # Max_06 "Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все её округлости!"
     Max_06 "Wow! You don't see it every time, she's completely naked! As long as you don't fall off a ladder like that... It'd be so cool to squeeze her plump body!"
 
+# TODO: Translation updated at 2020-03-22 17:29
+
+# game/events/ann.rpy:140
+translate english ann_shower_closer_peepeng_648c973b:
+
+    # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
+    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\n ..." nointeract
+
+# game/events/ann.rpy:153
+translate english ann_shower_serious_talk_9d79db42:
+
+    # Ann_19 "Ты что, подглядываешь за мной? Тебе должно быть стыдно! Нас ждёт серьёзный разговор..." nointeract
+    Ann_19 "" nointeract
+
+# game/events/ann.rpy:158
+translate english ann_shower_serious_talk_d7df2c96:
+
+    # Ann_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nСлучайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
+    Ann_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nJust a coincidence? Fine, I believe you. Now get out of here!"
+
+# game/events/ann.rpy:159
+translate english ann_shower_serious_talk_b81f7229:
+
+    # Max_04 "Ага, хорошо, мам!"
+    Max_04 "Okay, mom!"
+
+# game/events/ann.rpy:163
+translate english ann_shower_serious_talk_deeb33b5:
+
+    # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nСлучайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
+    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nSo you say you \"accidentally\" sneaked in, hid yourself, and stared at me? Go to your room! We'll talk before breakfast!"
+
+# game/events/ann.rpy:164
+translate english ann_shower_serious_talk_e071f814:
+
+    # Max_10 "Хорошо..."
+    Max_10 "Fine..."
+
+# game/events/ann.rpy:166
+translate english ann_shower_serious_talk_1f891e5d:
+
+    # Ann_12 "Что, думаешь извинился и всё, можно снова подглядывать? Нет, Макс. В этот раз всё так просто не пройдёт. Сейчас иди отсюда, а перед завтраком поговорим!"
+    Ann_12 "You think if you apologized, you can spy all you want? No, Max. I won't go easy on you this time. Now go away, we'll talk before breakfast!"
+
+# game/events/ann.rpy:167
+translate english ann_shower_serious_talk_1c3cc022:
+
+    # Max_11 "Хорошо..."
+    Max_11 "Fine..."
+
+# game/events/ann.rpy:169
+translate english ann_shower_serious_talk_f1aa69a0:
+
+    # Ann_13 "Что?! Ну всё, Макс, ты попал! Быстро вернулся в дом, а перед завтарком поговорим ещё на эту тему!"
+    Ann_13 "What?! You are in trouble, Max! Go to your room immediately, we'll have a talk before breakfast!"
+
+# game/events/ann.rpy:170
+translate english ann_shower_serious_talk_471df3d0:
+
+    # Max_14 "Хорошо..."
+    Max_14 "Fine..."
+
+translate english strings:
+
+    # game/events/ann.rpy:140
+    old "{i}Отвернуться{/i}"
+    new "{i}Turn away{/i}"
+
+    # game/events/ann.rpy:153
+    old "Я не подглядывал. Это случайность! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "I wasn't spying, it was an accident! {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+
+    # game/events/ann.rpy:153
+    old "Мам, извини..."
+    new "I'm sorry, mom..."
+
+    # game/events/ann.rpy:153
+    old "Попка у тебя - что надо!"
+    new "Your ass is perfect!"
+

@@ -1027,7 +1027,7 @@ translate english strings:
 
     # game/events/alice.rpy:595
     old "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new ""
+    new "... {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
 
     # game/events/alice.rpy:595
     old "Давай уже показывай сиськи!"
@@ -1043,5 +1043,237 @@ translate english strings:
 
     # game/events/alice.rpy:685
     old "{i}убью этого паука{/i}"
+    new ""
+
+# TODO: Translation updated at 2020-03-22 17:29
+
+# game/events/alice.rpy:270
+translate english alice_shower_spider_09c9d753:
+
+    # Max_03 "Давай, паучок, вперёд! Я хочу, чтобы ты познакомился с моей очаровательной сестрёнкой. Характер у неё правда так себе, но думаю, вы оба поладите..." nointeract
+    Max_03 "" nointeract
+
+# game/events/alice.rpy:276
+translate english alice_shower_spider_7e56af7c:
+
+    # Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
+    Max_01 ""
+
+# game/events/alice.rpy:277
+translate english alice_shower_spider_2b0b0322:
+
+    # Alice_15 "А-а-а-а-а!!! Вот чёрт... Охренеть!"
+    Alice_15 ""
+
+# game/events/alice.rpy:278
+translate english alice_shower_spider_08cd39c6:
+
+    # Max_02 "...подождать."
+    Max_02 ""
+
+# game/events/alice.rpy:281
+translate english alice_shower_spider_ae2ec1f2:
+
+    # Alice_06 "Боже мой, какой кошмар... И что мне теперь с этим пауком делать... Ну почему эти твари лезут именно ко мне? Может быть, он уползёт..."
+    Alice_06 ""
+
+# game/events/alice.rpy:283
+translate english alice_shower_spider_98871d44:
+
+    # Max_07 "Алиса, ты кричала... Что случилось?"
+    Max_07 ""
+
+# game/events/alice.rpy:286
+translate english alice_shower_spider_f67dc5ed:
+
+    # Alice_16 "Макс! Ты какого хрена так тихо подходишь, я же тут голая стою! Мало того, что паук ко мне в душ заполз, так ещё ты тут на меня пялишься... А ну вали отсюда, бегом!"
+    Alice_16 ""
+
+# game/events/alice.rpy:287
+translate english alice_shower_spider_e7be3887:
+
+    # Max_00 "Ладно, ладно... Как скажешь. Ухожу."
+    Max_00 ""
+
+# game/events/alice.rpy:290
+translate english alice_shower_spider_b7dcdd39:
+
+    # Alice_14 "Макс! Ты почему так тихо подходишь, а ну не смотри, я же голая... Иди куда-нибудь в другое место, пожалуйста. И не вздумай подглядывать!"
+    Alice_14 ""
+
+# game/events/alice.rpy:291
+translate english alice_shower_spider_202b415d:
+
+    # Max_08 "Ну хорошо, как скажешь... А случилось-то что?"
+    Max_08 ""
+
+# game/events/alice.rpy:292
+translate english alice_shower_spider_03782b03:
+
+    # Alice_12 "Ко мне в душ паук заполз, вот что! Не смотри на меня... Отвернись и уходи."
+    Alice_12 ""
+
+# game/events/alice.rpy:293
+translate english alice_shower_spider_376ed1c8:
+
+    # Max_01 "Хочешь, я уберу паука и..."
+    Max_01 ""
+
+# game/events/alice.rpy:294
+translate english alice_shower_spider_b0f28e71:
+
+    # Alice_18 "Макс!!!"
+    Alice_18 ""
+
+# game/events/alice.rpy:295
+translate english alice_shower_spider_30bc1452:
+
+    # Max_00 "Ладно, ладно... Уже ухожу."
+    Max_00 ""
+
+# game/events/alice.rpy:298
+translate english alice_shower_spider_690b168c:
+
+    # Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз..."
+    Alice_06 ""
+
+# game/events/alice.rpy:299
+translate english alice_shower_spider_7a7b4f76:
+
+    # Max_04 "Не переживай! Сейчас я его поймаю и выброшу... И ты спокойно домоешься."
+    Max_04 ""
+
+# game/events/alice.rpy:300
+translate english alice_shower_spider_b9997f6d:
+
+    # Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!"
+    Alice_13 ""
+
+# game/events/alice.rpy:301
+translate english alice_shower_spider_83415578:
+
+    # Max_01 "Хорошо, сейчас принесу. Никуда не уходи..." nointeract
+    Max_01 "" nointeract
+
+# game/events/alice.rpy:307
+translate english alice_shower_spider_5ced9acf:
+
+    # Alice_12 "Макс, ну ты где там?! Только смотри, чтобы этого монстра не было на моём полотенце! Иначе тебе будет очень-очень больно..."
+    Alice_12 ""
+
+# game/events/alice.rpy:309
+translate english alice_shower_spider_21174459:
+
+    # Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи." nointeract
+    Max_03 "" nointeract
+
+# game/events/alice.rpy:314
+translate english alice_shower_spider_eea51717:
+
+    # Alice_07 "Ох, Макс, спасибо тебе огромное! Думала, ты будешь прикалываться, но ты можешь временами вести себя, не как озабоченный... Это приятно."
+    Alice_07 ""
+
+# game/events/alice.rpy:315
+translate english alice_shower_spider_79d6a848:
+
+    # Max_04 "Да ладно, это ерунда, обращайся."
+    Max_04 ""
+
+# game/events/alice.rpy:316
+translate english alice_shower_spider_23328126:
+
+    # Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
+    Alice_03 ""
+
+# game/events/alice.rpy:317
+translate english alice_shower_spider_428606a5:
+
+    # Max_01 "Да. Не забуду..."
+    Max_01 ""
+
+# game/events/alice.rpy:323
+translate english alice_shower_spider_666dd0d3:
+
+    # Alice_14 "Макс!!! Ах ты... Ну-ка дай сюда полотенце!!!"
+    Alice_14 ""
+
+# game/events/alice.rpy:326
+translate english alice_shower_spider_35513e76:
+
+    # Max_08 "Ой! Извини, я..."
+    Max_08 ""
+
+# game/events/alice.rpy:330
+translate english alice_shower_spider_1136dd42:
+
+    # Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!" nointeract
+    Alice_17 "" nointeract
+
+# game/events/alice.rpy:336
+translate english alice_shower_spider_a47de6ed:
+
+    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
+    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+
+# game/events/alice.rpy:337
+translate english alice_shower_spider_c67ec167:
+
+    # Max_00 "Да это случайно вышло!"
+    Max_00 ""
+
+# game/events/alice.rpy:338
+translate english alice_shower_spider_8ce7828a:
+
+    # Alice_05 "Ну да, конечно..."
+    Alice_05 ""
+
+# game/events/alice.rpy:341
+translate english alice_shower_spider_f993e482:
+
+    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЯ тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
+    Alice_16 ""
+
+# game/events/alice.rpy:342
+translate english alice_shower_spider_86ecd118:
+
+    # Max_10 "Так получилось! Я не хотел..."
+    Max_10 ""
+
+# game/events/alice.rpy:343
+translate english alice_shower_spider_f635b9a8:
+
+    # Alice_17 "Да иди ты, Макс!"
+    Alice_17 ""
+
+# game/events/alice.rpy:736
+translate english spider_in_bed_money_b3df496f:
+
+    # Alice_16 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
+    Alice_16 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nHow could you even... Fine, here's $10, just kill it already!"
+
+translate english strings:
+
+    # game/events/alice.rpy:258
+    old "{i}запустить паука к Алисе{/i}"
+    new ""
+
+    # game/events/alice.rpy:270
+    old "{i}спрятаться{/i}"
+    new ""
+
+    # game/events/alice.rpy:301
+    old "{i}принести Алисе полотенце{/i}"
+    new ""
+
+    # game/events/alice.rpy:309
+    old "{i}отдать Алисе полотенце{/i}"
+    new ""
+
+    # game/events/alice.rpy:309
+    old "{i}отдать Алисе полотенце (выронив его из одной руки){/i}"
+    new ""
+
+    # game/events/alice.rpy:330
+    old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
     new ""
 

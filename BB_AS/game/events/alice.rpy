@@ -306,8 +306,8 @@ label alice_shower:
         $ renpy.show("Alice spider-shower 03"+renpy.random.choice(['a','b','c']))
         Alice_12 "Макс, ну ты где там?! Только смотри, чтобы этого монстра не было на моём полотенце! Иначе тебе будет очень-очень больно..."
         $ renpy.show("Max spider-bathroom 04"+mgg.dress)
-        Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи." nointeract
         menu:
+            Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи."
             "{i}отдать Алисе полотенце{/i}":
                 $ renpy.show("Alice spider-shower 04"+renpy.random.choice(['a','b']))
                 $ renpy.show("Max spider-bathroom 06"+mgg.dress)
@@ -315,12 +315,13 @@ label alice_shower:
                 Max_04 "Да ладно, это ерунда, обращайся."
                 Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
                 Max_01 "Да. Не забуду..."
+                $ AddRelMood('alice', 10, 50)
 
             "{i}отдать Алисе полотенце (выронив его из одной руки){/i}":
                 $ renpy.show("Alice spider-shower 05"+renpy.random.choice(['a','b','c','d']))
                 $ renpy.show("Max spider-bathroom 05"+mgg.dress)
                 Alice_14 "Макс!!! Ах ты... Ну-ка дай сюда полотенце!!!"
-                show Alice spider-shower 04a
+                show Alice spider-shower 04b
                 $ renpy.show("Max spider-bathroom 03"+mgg.dress)
                 Max_08 "Ой! Извини, я..."
                 $ _ch1 = GetChance(mgg.social, 3)
@@ -334,11 +335,13 @@ label alice_shower:
                     $ mgg.social += 0.2
                     Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
                     Max_00 "Да это случайно вышло!"
+                    Alice_05 "Ну да, конечно..."
                 else:
                     $ mgg.social += 0.1
                     Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЯ тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
                     Max_10 "Так получилось! Я не хотел..."
                     Alice_17 "Да иди ты, Макс!"
+                    $ AddRelMood('alice', -15, -75)
         jump .end
 
     label .closer_peepeng:
