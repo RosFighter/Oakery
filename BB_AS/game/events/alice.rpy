@@ -259,8 +259,87 @@ label alice_shower:
             Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
+            "{i}запустить паука к Алисе{/i}" if items['spider'].have:
+                jump .spider
             "{i}уйти{/i}":
                 jump .end
+
+    label .spider:
+        $ renpy.scene()
+        $ renpy.show("Max spider-bathroom 01"+mgg.dress)
+        menu:
+            Max_03 "Давай, паучок, вперёд! Я хочу, чтобы ты познакомился с моей очаровательной сестрёнкой. Характер у неё правда так себе, но думаю, вы оба поладите..."
+            "{i}спрятаться{/i}":
+                pass
+        scene BG char Max spider-bathroom-00
+        $ renpy.show("Max spider-bathroom 02"+mgg.dress)
+        Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
+        Alice_15 "А-а-а-а-а!!! Вот чёрт... Охренеть!"
+        Max_02 "...подождать."
+        scene BG char Alice spider-bathroom-00
+        $ renpy.show("Alice spider-shower 01"+renpy.random.choice(['a','b','c']))
+        Alice_06 "Боже мой, какой кошмар... И что мне теперь с этим пауком делать... Ну почему эти твари лезут именно ко мне? Может быть, он уползёт..."
+        $ renpy.show("Max spider-bathroom 03"+mgg.dress)
+        Max_07 "Алиса, ты кричала... Что случилось?"
+        $ renpy.show("Alice spider-shower 02"+renpy.random.choice(['a','b','c']))
+        if GetRelMax('alice')[0] < 1:
+            Alice_16 "Макс! Ты какого хрена так тихо подходишь, я же тут голая стою! Мало того, что паук ко мне в душ заполз, так ещё ты тут на меня пялишься... А ну вали отсюда, бегом!"
+            Max_00 "Ладно, ладно... Как скажешь. Ухожу."
+            jump .end
+        elif GetRelMax('alice')[0] == 1:
+            Alice_14 "Макс! Ты почему так тихо подходишь, а ну не смотри, я же голая... Иди куда-нибудь в другое место, пожалуйста. И не вздумай подглядывать!"
+            Max_08 "Ну хорошо, как скажешь... А случилось-то что?"
+            Alice_12 "Ко мне в душ паук заполз, вот что! Не смотри на меня... Отвернись и уходи."
+            Max_01 "Хочешь, я уберу паука и..."
+            Alice_18 "Макс!!!"
+            Max_00 "Ладно, ладно... Уже ухожу."
+            jump .end
+        else:
+            Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз..."
+            Max_04 "Не переживай! Сейчас я его поймаю и выброшу... И ты спокойно домоешься."
+            Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!"
+            menu:
+                Max_01 "Хорошо, сейчас принесу. Никуда не уходи..."
+                "{i}принести Алисе полотенце{/i}":
+                    pass
+        scene BG char Alice spider-bathroom-01
+        $ renpy.show("Alice spider-shower 03"+renpy.random.choice(['a','b','c']))
+        Alice_12 "Макс, ну ты где там?! Только смотри, чтобы этого монстра не было на моём полотенце! Иначе тебе будет очень-очень больно..."
+        $ renpy.show("Max spider-bathroom 04"+mgg.dress)
+        Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи." nointeract
+        menu:
+            "{i}отдать Алисе полотенце{/i}":
+                $ renpy.show("Alice spider-shower 04"+renpy.random.choice(['a','b']))
+                $ renpy.show("Max spider-bathroom 06"+mgg.dress)
+                Alice_07 "Ох, Макс, спасибо тебе огромное! Думала, ты будешь прикалываться, но ты можешь временами вести себя, не как озабоченный... Это приятно."
+                Max_04 "Да ладно, это ерунда, обращайся."
+                Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
+                Max_01 "Да. Не забуду..."
+
+            "{i}отдать Алисе полотенце (выронив его из одной руки){/i}":
+                $ renpy.show("Alice spider-shower 05"+renpy.random.choice(['a','b','c','d']))
+                $ renpy.show("Max spider-bathroom 05"+mgg.dress)
+                Alice_14 "Макс!!! Ах ты... Ну-ка дай сюда полотенце!!!"
+                show Alice spider-shower 04a
+                $ renpy.show("Max spider-bathroom 03"+mgg.dress)
+                Max_08 "Ой! Извини, я..."
+                $ _ch1 = GetChance(mgg.social, 3)
+                $ _ch1_color = GetChanceColor(_ch1)
+                $ ch1_vis = str(int(_ch1/10)) + "%"
+                menu:
+                    Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!"
+                    "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                        pass
+                if RandomChance(_ch1):
+                    $ mgg.social += 0.2
+                    Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
+                    Max_00 "Да это случайно вышло!"
+                else:
+                    $ mgg.social += 0.1
+                    Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЯ тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
+                    Max_10 "Так получилось! Я не хотел..."
+                    Alice_17 "Да иди ты, Макс!"
+        jump .end
 
     label .closer_peepeng:
         if RandomChance(_chance):
@@ -400,7 +479,8 @@ label alice_dressed_shop:
 
 label alice_dishes:
     scene BG crockery-morning-00
-    $ renpy.show("Alice crockery-morning 01"+chars["alice"].dress)
+    # $ renpy.show("Alice crockery-morning 01"+chars["alice"].dress)
+    $ persone_button1 = "Alice crockery-morning 01"+chars["alice"].dress
     return
 
 
@@ -412,7 +492,8 @@ label alice_dishes_closer:
 
 label alice_read:
     scene BG reading
-    $ renpy.show("Alice reading "+pose3_2+chars["alice"].dress)
+    # $ renpy.show("Alice reading "+pose3_2+chars["alice"].dress)
+    $ persone_button1 = "Alice reading "+pose3_2+chars["alice"].dress
     return
 
 
@@ -452,7 +533,8 @@ label alice_dressed_friend:
 
 label alice_sun:
     scene BG char Alice sun
-    $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
+    # $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
+    $ persone_button1 = "Alice sun "+pose2_2+chars["alice"].dress
     return
 
 
@@ -465,7 +547,8 @@ label alice_swim:
 
 label alice_cooking_dinner:
     scene BG cooking-00
-    $ renpy.show("Alice cooking 01"+chars["alice"].dress)
+    # $ renpy.show("Alice cooking 01"+chars["alice"].dress)
+    $ persone_button1 = "Alice cooking 01"+chars["alice"].dress
     return
 
 
@@ -477,7 +560,8 @@ label alice_cooking_closer:
 
 label alice_tv:
     scene BG lounge-tv-00
-    $ renpy.show("Alice tv "+pose3_2+chars["alice"].dress)
+    # $ renpy.show("Alice tv "+pose3_2+chars["alice"].dress)
+    $ persone_button1 = "Alice tv "+pose3_2+chars["alice"].dress
     return
 
 
@@ -636,6 +720,7 @@ label spider_in_bed:
                 jump .spider
 
     label .fail:
+        $ mgg.social += 0.1
         $ renpy.show("Alice spider-night 03-05"+suf)
         Alice_17 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЧто?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
@@ -644,7 +729,8 @@ label spider_in_bed:
 
     label .money:
         show Alice spider-night 03-06
-        Alice_16 "Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
+        $ mgg.social += 0.2
+        Alice_16 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
         Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
         $ __mood -= 20
         $ money += 10
@@ -652,6 +738,7 @@ label spider_in_bed:
 
     label .tits:
         show Max spider-night 03-03
+        $ mgg.social += 0.2
         if GetMood("alice")[0] < 3:
             $ __mood -= 50
             $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["07", "08"]))
@@ -664,6 +751,7 @@ label spider_in_bed:
 
     label .toples:
         $ __toples = True
+        $ mgg.social += 0.2
         show Max spider-night 03-03
         $ renpy.show("Alice spider-night 03-"+renpy.random.choice(["10", "11", "12"]))
         if GetMood("alice")[0] < 3:
@@ -701,6 +789,7 @@ label spider_in_bed:
                     "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         show Max spider-night 04-02
                         if RandomChance(_ch1):
+                            $ mgg.social += 0.2
                             Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
                             menu:
                                 Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!"
@@ -713,6 +802,7 @@ label spider_in_bed:
                                     $ items["spider"].have = True
                                     return
                         else:
+                            $ mgg.social += 0.1
                             $ __mood -50
                             Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
                             Max_09 "Ладно, будет тебе! Раз ты такая кровожадная..."
@@ -753,10 +843,12 @@ label spider_in_bed:
 label alice_smoke:
 
     scene BG char Alice smoke
-    $ renpy.show("Alice smoke "+pose3_3+chars["alice"].dress)
 
     if talk_var['smoke']:
+        $ persone_button1 = "Alice smoke "+pose3_3+chars["alice"].dress
         return
+    else:
+        $ renpy.show("Alice smoke "+pose3_3+chars["alice"].dress)
 
     $ talk_var['smoke'] = True
 

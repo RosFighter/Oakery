@@ -117,6 +117,7 @@ label ann_shower:
                 Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
             else:
                 Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+            jump .end_peeping
         elif RandomChance(_chance):
             $ peeping["ann_shower"] = 2
             $ mgg.stealth += 0.1
@@ -130,7 +131,6 @@ label ann_shower:
             jump .end_peeping
         else:
             $ peeping["ann_shower"] = 3
-            $ punreason[2] = 1
             $ mgg.stealth += 0.05
             $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
             $ __ran1 = renpy.random.choice(["09", "10"])
@@ -138,9 +138,37 @@ label ann_shower:
             show image ("Ann shower-closer "+__ran1)
             show FG shower-closer
             menu:
-                Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..."
-                "{i}Бежать{/i}":
-                    jump .end_peeping
+                Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Что ты здесь делаешь? А ну быстро отвернись!!!"
+                "{i}Отвернуться{/i}":
+                    jump .serious_talk
+
+    label .serious_talk:
+        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1_color = GetChanceColor(_ch1)
+        $ ch1_vis = str(int(_ch1/10)) + "%"
+        $ punreason[2] = 1
+        scene BG char Alice spider-bathroom-00
+        $ renpy.show("Max spider-bathroom 03"+mgg.dress)
+        show Ann shower 05
+        menu:
+            Ann_19 "Ты что, подглядываешь за мной? Тебе должно быть стыдно! Нас ждёт серьёзный разговор..."
+            "Я не подглядывал. Это случайность! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                if RandomChance(_ch1):
+                    $ mgg.social += 0.2
+                    Ann_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nСлучайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
+                    Max_04 "Ага, хорошо, мам!"
+                    $ punreason[2] = 0
+                else:
+                    $ mgg.social += 0.1
+                    Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nСлучайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
+                    Max_10 "Хорошо..."
+            "Мам, извини...":
+                Ann_12 "Что, думаешь извинился и всё, можно снова подглядывать? Нет, Макс. В этот раз всё так просто не пройдёт. Сейчас иди отсюда, а перед завтраком поговорим!"
+                Max_11 "Хорошо..."
+            "Попка у тебя - что надо!":
+                Ann_13 "Что?! Ну всё, Макс, ты попал! Быстро вернулся в дом, а перед завтарком поговорим ещё на эту тему!"
+                Max_14 "Хорошо..."
+        jump .end_peeping
 
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
@@ -151,17 +179,21 @@ label ann_shower:
 label ann_yoga:
     scene BG char Ann yoga-00
     if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
-        $ renpy.show("Ann yoga "+pose3_1)
+        # $ renpy.show("Ann yoga "+pose3_1)
+        $ persone_button1 = "Ann yoga "+pose3_1
     elif int(tm[3:4])%3 == 1:
-        $ renpy.show("Ann yoga "+pose3_2)
+        # $ renpy.show("Ann yoga "+pose3_2)
+        $ persone_button1 = "Ann yoga "+pose3_2
     else:
-        $ renpy.show("Ann yoga "+pose3_3)
+        # $ renpy.show("Ann yoga "+pose3_3)
+        $ persone_button1 = "Ann yoga "+pose3_3
     return
 
 
 label ann_cooking:
     scene BG cooking-00
     $ renpy.show("Ann cooking 01"+chars["ann"].dress)
+    $ persone_button1 = "Ann cooking 01"+chars["ann"].dress
     return
 
 
@@ -288,35 +320,42 @@ label ann_dressed_shop:
 label ann_resting:
     if tm < "19:00":
         scene BG char Ann relax-morning-01
-        $ renpy.show("Ann relax-morning "+pose3_3+chars["ann"].dress)
+        # $ renpy.show("Ann relax-morning "+pose3_3+chars["ann"].dress)
+        $ persone_button1 = "Ann relax-morning "+pose3_3+chars["ann"].dress
     else:
         scene BG char Ann relax-evening-01
-        $ renpy.show("Ann relax-evening "+pose3_3+chars["ann"].dress)
+        # $ renpy.show("Ann relax-evening "+pose3_3+chars["ann"].dress)
+        $ persone_button1 = "Ann relax-evening "+pose3_3+chars["ann"].dress
     return
 
 
 label ann_read:
     scene BG reading
-    $ renpy.show("Ann reading "+pose3_3+chars["ann"].dress)
+    # $ renpy.show("Ann reading "+pose3_3+chars["ann"].dress)
+    $ persone_button1 = "Ann reading "+pose3_3+chars["ann"].dress
     return
 
 
 label ann_swim:
 
     scene image "Ann swim "+pose3_3+"a"
+    # $ persone_button1 = "Ann swim "+pose3_3+"ab"
     return
 
 
 label ann_sun:
     scene BG char Ann sun
-    $ renpy.show("Ann sun "+pose3_3+"a")
+    # $ renpy.show("Ann sun "+pose3_3+"a")
+    $ persone_button1 = "Ann sun "+pose3_3+"a"
     return
 
 
 label ann_alice_sun:
     scene BG char Ann Alice 2sun-00
     $ renpy.show("Alice 2sun "+pose3_2)
+    # $ persone_button1 = "Alice 2sun "+pose3_2
     $ renpy.show("Ann 2sun "+pose3_3)
+    # $ persone_button2 = "Ann 2sun "+pose3_3
     return
 
 
@@ -446,7 +485,8 @@ label ann_bath:
 
 label ann_tv:
     scene BG lounge-tv-00
-    $ renpy.show("Ann tv "+pose3_3)
+    # $ renpy.show("Ann tv "+pose3_3)
+    $ persone_button1 = "Ann tv "+pose3_3
     return
 
 

@@ -32,6 +32,7 @@ label lisa_shower:
         jump .end_peeping2
     else:
         $ renpy.block_rollback()
+        $ peeping["lisa_shower"] = 4
         menu:
             Max_09 "Кажется, Лиза что-то делает в ванной..."
             "{i}постучаться{/i}":
@@ -161,6 +162,7 @@ label lisa_read:
 
     scene BG char Lisa reading
     $ renpy.show("Lisa reading "+pose3_1+chars["lisa"].dress)
+    $ persone_button1 = "Lisa reading "+pose3_1+chars["lisa"].dress
     return
 
 
@@ -478,19 +480,22 @@ label lisa_dressed_repetitor:
 label lisa_swim:
 
     scene image "Lisa swim "+pose3_1+chars["lisa"].dress
+    # $ persone_button1 = "Lisa swim "+pose3_1+chars["lisa"].dress+"b"
     return
 
 
 label lisa_sun:
 
     scene image "BG char Lisa sun-"+pose3_1
-    $ renpy.show("Lisa sun "+pose3_1+chars["lisa"].dress)
+    # $ renpy.show("Lisa sun "+pose3_1+chars["lisa"].dress)
+    $ persone_button1 = "Lisa sun "+pose3_1+chars["lisa"].dress
     return
 
 
 label lisa_dishes:
     scene BG crockery-evening-00
-    $ renpy.show("Lisa crockery-evening 01"+chars["lisa"].dress)
+    # $ renpy.show("Lisa crockery-evening 01"+chars["lisa"].dress)
+    $ persone_button1 = "Lisa crockery-evening 01"+chars["lisa"].dress
     return
 
 
@@ -503,7 +508,8 @@ label lisa_dishes_closer:
 label lisa_phone:
 
     scene BG char Lisa bed-evening
-    $ renpy.show("Lisa phone-evening "+pose3_1+chars["lisa"].dress)
+    # $ renpy.show("Lisa phone-evening "+pose3_1+chars["lisa"].dress)
+    $ persone_button1 = "Lisa phone-evening "+pose3_1+chars["lisa"].dress
     return
 
 
@@ -656,5 +662,6 @@ label lisa_bath:
 
 label lisa_homework:
     scene BG char Lisa lessons
-    $ renpy.show("Lisa lessons "+pose3_1+chars["lisa"].dress)
+    # $ renpy.show("Lisa lessons "+pose3_1+chars["lisa"].dress)
+    $ persone_button1 = "Lisa lessons "+pose3_1+chars["lisa"].dress
     return

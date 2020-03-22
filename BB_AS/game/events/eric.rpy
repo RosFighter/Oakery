@@ -142,6 +142,7 @@ label Eric_talk_afterdinner:
 label eric_resting:
     scene BG char Ann relax-evening-01
     $ renpy.show("Eric relax "+pose3_1+chars["eric"].dress)
+    $ persone_button1 = "Eric relax "+pose3_1+chars["eric"].dress
     return
 
 

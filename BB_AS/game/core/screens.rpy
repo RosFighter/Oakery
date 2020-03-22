@@ -814,6 +814,16 @@ screen room_navigation():
         $ public += cam.public
     $ public = int(public)
 
+    if persone_button1:
+        imagebutton idle persone_button1:
+            focus_mask True
+            if have_dialog():
+                hovered Cursor("talk")
+                unhovered Cursor(None)
+                action [Cursor(None), Jump("StartDialog")]
+            else:
+                action NullAction()
+
     $ wait = 60 - int(tm.split(":")[1])
     key "K_SPACE" action [Hide("wait_navigation"), SetVariable("spent_time", wait), Jump("Waiting")]
     hbox: # Кнопки комнат текущей локации
@@ -962,17 +972,6 @@ screen room_navigation():
         imagebutton idle "interface menu help" focus_mask True action [Hide("wait_navigation"), Show("menu_my_help")] at small_menu
         imagebutton idle "interface menu main" focus_mask True action ShowMenu("save") at small_menu
         imagebutton idle "interface menu patreon" focus_mask True action [Hide("wait_navigation"), OpenURL("https://www.patreon.com/aleksey90artimages")] at small_menu
-
-    if persone_button1:
-        imagebutton idle persone_button1:
-            focus_mask True
-            if have_dialog():
-                hovered Cursor("talk")
-                unhovered Cursor(None)
-                action [Cursor(None), Jump("StartDialog")]
-            else:
-                action NullAction()
-
 
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
