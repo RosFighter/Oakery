@@ -69,7 +69,7 @@ label back_shoping:
         if possibility["Swimsuit"].stn == 2:
             $ SetPossStage("Swimsuit", 4)
             $ chars['lisa'].gifts.append('bikini')
-            $ items['bathrobe'].InShop = True
+            # $ items['bathrobe'].InShop = True
             if chars['lisa'].inferic is not None:
                 $ chars['lisa'].inferic = clip(chars['lisa'].inferic+20.0, 0.0, 100.0)
             else:

@@ -274,7 +274,7 @@ label alice_shower:
         scene BG char Max spider-bathroom-00
         $ renpy.show("Max spider-bathroom 02"+mgg.dress)
         Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
-        Alice_15 "А-а-а-а-а!!! Вот чёрт... Охренеть!"
+        Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
         Max_02 "...подождать."
         scene BG char Alice spider-bathroom-00
         $ renpy.show("Alice spider-shower 01"+renpy.random.choice(['a','b','c']))
@@ -322,7 +322,7 @@ label alice_shower:
                 $ renpy.show("Max spider-bathroom 05"+mgg.dress)
                 Alice_14 "Макс!!! Ах ты... Ну-ка дай сюда полотенце!!!"
                 show Alice spider-shower 04b
-                $ renpy.show("Max spider-bathroom 03"+mgg.dress)
+                $ renpy.show("Max spider-bathroom 06"+mgg.dress)
                 Max_08 "Ой! Извини, я..."
                 $ _ch1 = GetChance(mgg.social, 3)
                 $ _ch1_color = GetChanceColor(_ch1)
@@ -459,19 +459,48 @@ label alice_dressed_shop:
                     "Хорошо, я подожду...":
                         pass
             "{i}заглянуть в окно{/i}":
-                $ __ran1 = renpy.random.choice(["01", "02"])
+                $ __ran1 = renpy.random.choice(["01", "02", "03"])
+
+                if __ran1 != "01" and 'smoke' in talk_var and flags['smoke'] == 'nopants':
+                    $ suf = 'a'
+                    $ __toples = True
+                else:
+                    $ suf = ''
+                    $ __toples = False
+                if flags['smoke'] == 'not_nopants':
+                    $ flags['noted'] = True
 
                 if __ran1 == "01":
-                    $ chars["alice"].dress_inf = "02a"
-                else:
                     $ chars["alice"].dress_inf = "02b"
+                elif __ran1 == "02":
+                    if suf:
+                        $ chars["alice"].dress_inf = "02a"
+                    else:
+                        $ chars["alice"].dress_inf = "02d"
+                else:
+                    if suf:
+                        $ chars["alice"].dress_inf = "02c"
+                    else:
+                        $ chars["alice"].dress_inf = "02e"
+
 
                 scene BG char Alice voyeur-00
-                $ renpy.show("Alice voyeur "+__ran1)
+                $ renpy.show("Alice voyeur "+__ran1+suf)
                 $ renpy.show("FG voyeur-morning-00"+mgg.dress)
                 $ notify_list.append(_("Скрытность Макса капельку повысилась"))
                 $ mgg.stealth += 0.03
-                Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
+                if flags['smoke'] == 'not_nopants' and __ran1 != "01":
+                    # Макс видит, что на Алисе трусики, когда их быть не должно
+                    Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+                elif flags['smoke'] == 'nopants' and __ran1 != "01":
+                    # Макс видит, что Алиса соблюдает договоренность
+                    Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит? Но лучше буду гадать об этом в другом месте, а то меня заметят..."
+                elif __ran1 != "01":
+                    # Если нет договоренности по поводу трусов
+                    Max_04 "Алиса переодевается... Какая соблазнительная попка у неё... Ммм! Так. Пора бы сваливать. Вдруг, кто-то заметит!"
+                else:
+                    # Сиськи , однако
+                    Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room
@@ -515,17 +544,49 @@ label alice_dressed_friend:
                     "Хорошо, я подожду...":
                         pass
             "{i}заглянуть в окно{/i}":
-                $ __ran1 = renpy.random.choice(["01", "02"])
+                $ __ran1 = renpy.random.choice(["01", "02", "03"])
 
-                # if __ran1 == "01":
-                #     $ chars["lisa"].dress_inf = "02d"
-                # else:
-                #     $ chars["lisa"].dress_inf = "02c"
+                if __ran1 != "01" and 'smoke' in talk_var and flags['smoke'] == 'nopants':
+                    $ suf = 'a'
+                    $ __toples = True
+                else:
+                    $ suf = ''
+                    $ __toples = False
+                if flags['smoke'] == 'not_nopants':
+                    $ flags['noted'] = True
 
                 scene BG char Alice voyeur-00
                 $ renpy.show("Alice voyeur "+__ran1)
                 $ renpy.show("FG voyeur-morning-00"+mgg.dress)
-                Max_01 "Алиса переодевается... Какой вид! Так. Пора сваливать. Вдруг, кто-то заметит!"
+
+                if __ran1 == "01":
+                    $ chars["alice"].dress_inf = "02b"
+                elif __ran1 == "02":
+                    if suf:
+                        $ chars["alice"].dress_inf = "02a"
+                    else:
+                        $ chars["alice"].dress_inf = "02d"
+                else:
+                    if suf:
+                        $ chars["alice"].dress_inf = "02c"
+                    else:
+                        $ chars["alice"].dress_inf = "02e"
+
+                $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+                $ mgg.stealth += 0.03
+                if flags['smoke'] == 'not_nopants' and __ran1 != "01":
+                    # Макс видит, что на Алисе трусики, когда их быть не должно
+                    Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+                elif flags['smoke'] == 'nopants' and __ran1 != "01":
+                    # Макс видит, что Алиса соблюдает договоренность
+                    Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт... А чтобы меня никто не заметил, лучше уходить!"
+                elif __ran1 != "01":
+                    # Если нет договоренности по поводу трусов
+                    Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них было бы лучше... Так. Пора бы сваливать. Вдруг, кто-то заметит!"
+                else:
+                    # Сиськи , однако
+                    Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
+
             "{i}уйти{/i}":
                 pass
         # $ current_room, prev_room = prev_room, current_room

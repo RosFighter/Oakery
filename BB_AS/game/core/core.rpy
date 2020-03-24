@@ -52,6 +52,8 @@ label Waiting:
         $ pose2_2 = renpy.random.choice(["01", "02"])
         $ pose2_3 = renpy.random.choice(["01", "02"])
         $ tv_scene = renpy.random.choice(["", "bj", "hj"])
+    if prevtime < "12:00" <= tm:
+        call Noon
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -131,12 +133,6 @@ label NewDay:
                 if dcv[i].lost == 0:
                     dcv[i].done  = True
 
-        if ('secretbook' in dcv and dcv['secretbook'].done
-            and "erobook_"+str(dcv['secretbook'].stage) in items
-            and not items["erobook_"+str(dcv['secretbook'].stage)].InShop): # прошел откат после дарения книги, можно купить следующую
-            # dcv['secretbook'].stage += 1
-            items["erobook_"+str(dcv['secretbook'].stage)].InShop = True
-
         # сбросим подглядывания
         for key in peeping:
             peeping[key] = 0
@@ -172,6 +168,23 @@ label NewDay:
         if credit.left == 0:   # если счетчик дней кончился
             $ credit.charge()    # начислим штраф
 
+    return
+
+
+label Noon:
+    $ __new_items = False
+    if day > 12 and not ('nightie' in chars['ann'].gifts or items['nightie'].have or items['nightie'].InShop):
+        $ items['nightie'].InShop = True
+        $ __new_items = True
+    if ('secretbook' in dcv and dcv['secretbook'].done
+        and "erobook_"+str(dcv['secretbook'].stage) in items
+        and not items["erobook_"+str(dcv['secretbook'].stage)].InShop): # прошел откат после дарения книги, можно купить следующую
+        # dcv['secretbook'].stage += 1
+        $ items["erobook_"+str(dcv['secretbook'].stage)].InShop = True
+        $ __new_items = True
+
+    if __new_items:
+        $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     return
 
 
@@ -280,3 +293,28 @@ label after_load:
                 PossStage("interface poss lessons ep01", _("Пообещав помогать Лизе с уроками по принципу \"ты мне - я тебе\", я через некоторое время совсем про неё забыл. И вот, после очередной двойки и наказания от мамы, Лиза напомнила о том, что я ей обещал. Пожалуй, мне стоит уделять её урокам больше внимания...")),
                 PossStage("interface poss lessons ep01", _("Под видом помощи с уроками Лизы, я намеренно делал ошибки так, чтобы ей ставили двойки и наказывали... В чём теперь она меня и подозревает. Не удивительно, что Лиза сильно обиделась на меня, но вместе с тем, от моей помощи не отказалась..."), _("Сомневаюсь, что теперь получится её подставить, уж слишком большое недоверие она ко мне испытывает.")),
                 ])
+        if current_ver < "0.03.1.002":
+            $ current_ver = "0.03.1.002"
+            $ items.update({
+                "pajamas"   : Item(_("ЛЁГКАЯ ПИЖАМА"), _("Удобнейшие маечка и шортики. В них не жарко душными летними ночами, и так же уютно в течение всего года."), "pajamas", 0, 100),
+                "nightie"   : Item(_("НОЧНУШКА"), _("Полупрозрачные сорочка и трусики. Облегающий фасон подчёркивает все достоинства и изгибы фигуры, а лёгкое кружево придаст ещё больше сексуальности."), "nightie", 0, 100),
+                })
+        if current_ver < "0.03.1.003":
+            $ current_ver = "0.03.1.003"
+            python:
+                for char in chars:
+                    chars[char].attention = day
+            $ items['bathrobe'].InShop = False
+            if 'bathrobe' in chars['lisa'].gifts:
+                $ chars['lisa'].gifts.remove('bathrobe')
+                $ chars['lisa'].relmax -= 100
+                $ money += 100
+                $ cloth_type["lisa"]["casual"] = 'a'
+                if GetRelMax('lisa')[0] > 2 and GetMood('lisa')[0] > 2:
+                    $ cloth_type["lisa"]["learn"]  = 'c'
+                else:
+                    $ cloth_type["lisa"]["learn"]  = 'a'
+                $ ClothingNps('lisa', GetPlan(plan_lisa, day, tm).name)
+            elif items['bathrobe'].have:
+                $ items['bathrobe'].have = False
+                $ money += 100

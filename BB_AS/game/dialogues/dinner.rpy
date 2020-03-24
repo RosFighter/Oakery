@@ -3,7 +3,7 @@ label after_dinner:
     $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
     $ spent_time = 60
 
-    if punlisa[0][3] == 1:
+    if len(punlisa)> 0 and punlisa[0][3] == 1:
         # Лизу наказали
         if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)

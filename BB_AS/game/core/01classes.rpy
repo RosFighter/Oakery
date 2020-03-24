@@ -28,6 +28,7 @@ init python:
             self.infmax    = None      # влияние Макса (для Эрика – None)
             self.inferic   = None      # влияние Эрика (для Эрика – None)
             self.gifts     = []        # полученные подарки
+            self.attention = 0         # день, когда последний раз было уделено внимание персонажу
 
         def __repr__(self):
             return "имя: {self.name}, \nописание: {self.desc},\n папка изображений=\"{self.pref}\", тек.изобр.=\"{self.dress_inf}\","\

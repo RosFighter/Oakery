@@ -117,7 +117,7 @@ translate english ann_dressed_work_2e55a9e3:
 # game/events/ann.rpy:163
 translate english ann_dressed_work_51f3e0fa:
 
-    # Max_00 "Хорошо, мам"
+    # Max_00 "Хорошо, мам."
     Max_00 "Okay, mom"
 
 # game/events/ann.rpy:177
@@ -189,7 +189,7 @@ translate english ann_dressed_shop_bf2abaef:
 # game/events/ann.rpy:229
 translate english ann_dressed_shop_51f3e0fa:
 
-    # Max_00 "Хорошо, мам"
+    # Max_00 "Хорошо, мам."
     Max_00 "Okay, mom"
 
 # game/events/ann.rpy:235

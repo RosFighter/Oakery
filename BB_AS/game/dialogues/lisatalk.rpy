@@ -1135,7 +1135,7 @@ label gift_swimsuit:
     label .end:
         $ items['bikini'].have = False
         $ items['bikini'].InShop = False
-        $ items['bathrobe'].InShop = True
+        # $ items['bathrobe'].InShop = True
         $ SetPossStage('Swimsuit', 3)
         $ chars['lisa'].gifts.append('bikini')
         if chars['lisa'].inferic is not None:

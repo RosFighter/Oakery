@@ -946,6 +946,7 @@ init python:
                 chars["eric"].dress_inf = "00b"
             else:
                 chars["eric"].dress_inf = "01"
+        return
 
 
     def GetKolCams(location): # возвращает количество камер в локации
