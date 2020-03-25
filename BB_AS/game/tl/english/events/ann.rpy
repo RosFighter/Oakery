@@ -587,3 +587,241 @@ translate english strings:
     old "Попка у тебя - что надо!"
     new "Your ass is perfect!"
 
+# TODO: Translation updated at 2020-03-25 16:16
+
+# game/events/ann.rpy:25
+translate english ann_sleep_697ba3b2:
+
+    # Max_01 "Класс! Мама спит в ночнушке... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
+    Max_01 "" nointeract
+
+# game/events/ann.rpy:27
+translate english ann_sleep_21484aea:
+
+    # Max_04 "О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Её попку даже немного видно через ночнушку!" nointeract
+    Max_04 "" nointeract
+
+# game/events/ann.rpy:29
+translate english ann_sleep_8a07d51f:
+
+    # Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... В этой ночнушке она выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
+    Max_07 "" nointeract
+
+# game/events/ann.rpy:45
+translate english ann_sleep_72364154:
+
+    # Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы пристроиться сзади и запустить руки под эту сорочку... Но лучше потихоньку уходить, пока она не проснулась." nointeract
+    Max_03 "" nointeract
+
+# game/events/ann.rpy:47
+translate english ann_sleep_fd1a61fb:
+
+    # Max_02 "Ухх! Так и хочется задрать её сорочку, прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
+    Max_02 "" nointeract
+
+# game/events/ann.rpy:49
+translate english ann_sleep_0107c89f:
+
+    # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком уж соблазнительно она выглядит в этой сорочке! Только бы она сейчас не проснулась..." nointeract
+    Max_05 "" nointeract
+
+# game/events/ann.rpy:238
+translate english ann_dressed_work_f3117b6b:
+
+    # Max_00 "Хорошо, мам."
+    Max_00 ""
+
+# game/events/ann.rpy:241
+translate english ann_dressed_work_2e55a9e3_1:
+
+    # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
+    Ann ""
+
+# game/events/ann.rpy:242
+translate english ann_dressed_work_f3117b6b_1:
+
+    # Max_00 "Хорошо, мам."
+    Max_00 ""
+
+# game/events/ann.rpy:266
+translate english ann_dressed_work_3e8f5598:
+
+    # Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
+    Ann_12 ""
+
+# game/events/ann.rpy:268
+translate english ann_dressed_work_c8682e5b_1:
+
+    # Max_00 "Конечно, мам!"
+    Max_00 ""
+
+# game/events/ann.rpy:303
+translate english ann_dressed_work_gift_a14e771b:
+
+    # Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
+    Ann_01 ""
+
+# game/events/ann.rpy:304
+translate english ann_dressed_work_gift_efc9083b:
+
+    # Max_04 "У меня для тебя подарок! Ночнушка!"
+    Max_04 ""
+
+# game/events/ann.rpy:305
+translate english ann_dressed_work_gift_e131ac39:
+
+    # Ann_06 "Ты это серьёзно? Но в честь чего?"
+    Ann_06 ""
+
+# game/events/ann.rpy:306
+translate english ann_dressed_work_gift_860498c1:
+
+    # Max_05 "Просто ты - самая лучшая мама на свете!"
+    Max_05 ""
+
+# game/events/ann.rpy:307
+translate english ann_dressed_work_gift_56ae1652:
+
+    # Ann_08 "Ох, Макс, ты мне льстишь! Это так... неожиданно! Спасибо тебе мой милый, я очень тронута!"
+    Ann_08 ""
+
+# game/events/ann.rpy:308
+translate english ann_dressed_work_gift_60f1c9d7:
+
+    # Max_03 "Может, примеришь?"
+    Max_03 ""
+
+# game/events/ann.rpy:309
+translate english ann_dressed_work_gift_f5c9d21b:
+
+    # Ann_06 "Примерить? Для тебя? Ну... ладно... Думаю, ты это заслужил. Подожди, пожалуйста, за дверью..."
+    Ann_06 ""
+
+# game/events/ann.rpy:310
+translate english ann_dressed_work_gift_cc0857da:
+
+    # Max_01 "Хорошо, мам."
+    Max_01 ""
+
+# game/events/ann.rpy:312
+translate english ann_dressed_work_gift_dec66268:
+
+    # Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
+    Ann ""
+
+# game/events/ann.rpy:313
+translate english ann_dressed_work_gift_461f061a:
+
+    # Max_10 "Тебе не понравился подарок?!"
+    Max_10 ""
+
+# game/events/ann.rpy:314
+translate english ann_dressed_work_gift_0f666c00:
+
+    # Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
+    Ann ""
+
+# game/events/ann.rpy:315
+translate english ann_dressed_work_gift_00ed580c:
+
+    # Max_09 "Я уже большой, мам! Я же от души!"
+    Max_09 ""
+
+# game/events/ann.rpy:316
+translate english ann_dressed_work_gift_f9e66542:
+
+    # Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
+    Ann ""
+
+# game/events/ann.rpy:317
+translate english ann_dressed_work_gift_75fcb6dd:
+
+    # Max_02 "Думаю, смотрится она на тебе просто фантастически!"
+    Max_02 ""
+
+# game/events/ann.rpy:320
+translate english ann_dressed_work_gift_d954a734:
+
+    # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
+    Ann_08 ""
+
+# game/events/ann.rpy:323
+translate english ann_dressed_work_gift_7a4eaba8:
+
+    # Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
+    Max_05 ""
+
+# game/events/ann.rpy:328
+translate english ann_dressed_work_gift_b6991faf:
+
+    # Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..." nointeract
+    Ann_04 "" nointeract
+
+# game/events/ann.rpy:333
+translate english ann_dressed_work_gift_a98a292d:
+
+    # Ann_05 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
+    Ann_05 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+
+# game/events/ann.rpy:335
+translate english ann_dressed_work_gift_84cd6647:
+
+    # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лицее! Блаженно...{/i}"
+    Max_06 ""
+
+# game/events/ann.rpy:337
+translate english ann_dressed_work_gift_c0df5b86:
+
+    # Ann_04 "А теперь иди, сынок... Пора заниматься делами." nointeract
+    Ann_04 "" nointeract
+
+# game/events/ann.rpy:351
+translate english ann_dressed_work_fail_e6a4bd93:
+
+    # Ann_01 "Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
+    Ann_01 "" nointeract
+
+# game/events/ann.rpy:359
+translate english ann_dressed_work_loveyou_e41c68c6:
+
+    # Ann_07 "И я тебя, Макс..."
+    Ann_07 ""
+
+# game/events/ann.rpy:363
+translate english ann_dressed_work_goodday_1a01074c:
+
+    # Ann_02 "Спасибо, сынок! И тебе тоже..."
+    Ann_02 ""
+
+# game/events/ann.rpy:397
+translate english ann_dressed_shop_f3117b6b:
+
+    # Max_00 "Хорошо, мам."
+    Max_00 ""
+
+translate english strings:
+
+    # game/events/ann.rpy:234
+    old "Это я, Макс. Можно войти? У меня для тебя кое-что есть."
+    new ""
+
+    # game/events/ann.rpy:259
+    old "У меня для тебя кое-что есть."
+    new ""
+
+    # game/events/ann.rpy:328
+    old "Ну мам! Этого было так мало, давай ещё... {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+
+    # game/events/ann.rpy:328
+    old "Ну мам! Этого было так мало, давай ещё..."
+    new ""
+
+    # game/events/ann.rpy:328
+    old "Конечно, мам! Хорошего тебе дня..."
+    new ""
+
+    # game/events/ann.rpy:337
+    old "Хорошо... Я тебя люблю, мам!"
+    new ""
+

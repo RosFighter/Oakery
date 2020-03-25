@@ -668,3 +668,11 @@ translate english punishment_max_pun_reson_8b8f1722:
     # Ann_18 "Ну и долго я буду ждать?! Давай ложись..."
     Ann_18 "Well, how long am I going to wait?! Come on, lie down..."
 
+# TODO: Translation updated at 2020-03-25 16:16
+
+# game/dialogues/punishment.rpy:418
+translate english punishment_alice_5c85cc9f:
+
+    # Max_09 "{i}Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас!{/i}"
+    Max_09 ""
+

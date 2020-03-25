@@ -5,7 +5,7 @@ label after_dinner:
 
     if len(punlisa)> 0 and punlisa[0][3] == 1:
         # Лизу наказали
-        if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000):
+        if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000:
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4)
         elif len(punlisa) >= 7 and ColumnSum(punlisa, 0, 7) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):

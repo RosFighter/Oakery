@@ -511,7 +511,7 @@ label alice_dressed_shop:
 
 label alice_dishes:
     scene BG crockery-morning-00
-    # $ renpy.show("Alice crockery-morning 01"+chars["alice"].dress)
+    $ renpy.show("Alice crockery-morning 01"+chars["alice"].dress)
     $ persone_button1 = "Alice crockery-morning 01"+chars["alice"].dress
     return
 
@@ -524,7 +524,7 @@ label alice_dishes_closer:
 
 label alice_read:
     scene BG reading
-    # $ renpy.show("Alice reading "+pose3_2+chars["alice"].dress)
+    $ renpy.show("Alice reading "+pose3_2+chars["alice"].dress)
     $ persone_button1 = "Alice reading "+pose3_2+chars["alice"].dress
     return
 
@@ -597,7 +597,7 @@ label alice_dressed_friend:
 
 label alice_sun:
     scene BG char Alice sun
-    # $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
+    $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
     $ persone_button1 = "Alice sun "+pose2_2+chars["alice"].dress
     return
 
@@ -611,7 +611,7 @@ label alice_swim:
 
 label alice_cooking_dinner:
     scene BG cooking-00
-    # $ renpy.show("Alice cooking 01"+chars["alice"].dress)
+    $ renpy.show("Alice cooking 01"+chars["alice"].dress)
     $ persone_button1 = "Alice cooking 01"+chars["alice"].dress
     return
 
@@ -624,7 +624,7 @@ label alice_cooking_closer:
 
 label alice_tv:
     scene BG lounge-tv-00
-    # $ renpy.show("Alice tv "+pose3_2+chars["alice"].dress)
+    $ renpy.show("Alice tv "+pose3_2+chars["alice"].dress)
     $ persone_button1 = "Alice tv "+pose3_2+chars["alice"].dress
     return
 

@@ -1275,5 +1275,61 @@ translate english strings:
 
     # game/events/alice.rpy:330
     old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new ""
+    new "... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+
+# TODO: Translation updated at 2020-03-25 16:16
+
+# game/events/alice.rpy:277
+translate english alice_shower_spider_3f8fc33f:
+
+    # Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
+    Alice ""
+
+# game/events/alice.rpy:494
+translate english alice_dressed_shop_1aff9253:
+
+    # Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+    Max_01 ""
+
+# game/events/alice.rpy:497
+translate english alice_dressed_shop_f2968b10:
+
+    # Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит? Но лучше буду гадать об этом в другом месте, а то меня заметят..."
+    Max_05 ""
+
+# game/events/alice.rpy:500
+translate english alice_dressed_shop_c50c3ab4:
+
+    # Max_04 "Алиса переодевается... Какая соблазнительная попка у неё... Ммм! Так. Пора бы сваливать. Вдруг, кто-то заметит!"
+    Max_04 ""
+
+# game/events/alice.rpy:503
+translate english alice_dressed_shop_3b812933:
+
+    # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
+    Max_03 ""
+
+# game/events/alice.rpy:579
+translate english alice_dressed_friend_caea4adc:
+
+    # Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+    Max_01 ""
+
+# game/events/alice.rpy:582
+translate english alice_dressed_friend_4670d0d6:
+
+    # Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт... А чтобы меня никто не заметил, лучше уходить!"
+    Max_05 ""
+
+# game/events/alice.rpy:585
+translate english alice_dressed_friend_474499f6:
+
+    # Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них было бы лучше... Так. Пора бы сваливать. Вдруг, кто-то заметит!"
+    Max_04 ""
+
+# game/events/alice.rpy:588
+translate english alice_dressed_friend_3b812933:
+
+    # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
+    Max_03 ""
 

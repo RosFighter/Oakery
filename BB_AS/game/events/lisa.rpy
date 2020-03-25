@@ -487,14 +487,14 @@ label lisa_swim:
 label lisa_sun:
 
     scene image "BG char Lisa sun-"+pose3_1
-    # $ renpy.show("Lisa sun "+pose3_1+chars["lisa"].dress)
+    $ renpy.show("Lisa sun "+pose3_1+chars["lisa"].dress)
     $ persone_button1 = "Lisa sun "+pose3_1+chars["lisa"].dress
     return
 
 
 label lisa_dishes:
     scene BG crockery-evening-00
-    # $ renpy.show("Lisa crockery-evening 01"+chars["lisa"].dress)
+    $ renpy.show("Lisa crockery-evening 01"+chars["lisa"].dress)
     $ persone_button1 = "Lisa crockery-evening 01"+chars["lisa"].dress
     return
 
@@ -508,7 +508,7 @@ label lisa_dishes_closer:
 label lisa_phone:
 
     scene BG char Lisa bed-evening
-    # $ renpy.show("Lisa phone-evening "+pose3_1+chars["lisa"].dress)
+    $ renpy.show("Lisa phone-evening "+pose3_1+chars["lisa"].dress)
     $ persone_button1 = "Lisa phone-evening "+pose3_1+chars["lisa"].dress
     return
 
@@ -662,6 +662,6 @@ label lisa_bath:
 
 label lisa_homework:
     scene BG char Lisa lessons
-    # $ renpy.show("Lisa lessons "+pose3_1+chars["lisa"].dress)
+    $ renpy.show("Lisa lessons "+pose3_1+chars["lisa"].dress)
     $ persone_button1 = "Lisa lessons "+pose3_1+chars["lisa"].dress
     return

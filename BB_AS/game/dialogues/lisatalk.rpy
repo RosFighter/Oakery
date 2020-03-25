@@ -1145,6 +1145,9 @@ label gift_swimsuit:
         else:
             $ chars['lisa'].infmax = 20.0
 
+        $ cloth_type["lisa"]["swim"] = 'b'
+        $ ClothingNps('lisa', GetPlan(plan_lisa, day, tm))
+
         $ spent_time += 10
         jump Waiting
 

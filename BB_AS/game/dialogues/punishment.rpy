@@ -164,6 +164,9 @@ label punishment_max:
             $ mgg.social += 0.2
             Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
             Max_08 "Спасибо, мам!"
+            python:
+                for d in range(len(punreason)):
+                    punreason[d] = 0
             return
         else:
             $ mgg.social += 0.1
@@ -222,6 +225,9 @@ label punishment_max:
             for cr in current_room.cur_char:
                 if chars[cr].infmax is not None:
                     chars[cr].infmax = clip(chars[cr].infmax - 5.0, 0.0, 100.0)
+            # обнуление провинностей
+            for d in range(len(punreason)):
+                punreason[d] = 0
 
         if tm < "14:00":
             scene BG punish-morning 01

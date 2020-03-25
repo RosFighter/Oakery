@@ -756,6 +756,8 @@ init python:
                     cloth_type["ann"]["rest"]   = renpy.random.choice(["a", "b"])
                     # cloth_type["lisa"]["sleep"] = renpy.random.choice(["a", "b"])
                     cloth_type["lisa"]["sleep"] = 'b' if possibility["sg"].stn > 2 else 'a'
+                elif prevtime > tm:  # полночь
+                    cloth_type["ann"]["sleep"] = renpy.random.choice(['a', 'b']) if 'nightie' in chars['ann'].gifts else 'a'
                 # после "смены одежды" прописываем одежды по расписанию
                 ClothingNps(char, cur_shed.name)
 
@@ -874,7 +876,11 @@ init python:
 
         elif char == "ann":
             if name == "sleep":
-                chars["ann"].dress_inf = "02"
+                chars["ann"].dress = cloth_type["ann"]["sleep"]
+                if cloth_type["ann"]["sleep"] == "a":
+                    chars["ann"].dress_inf = "02"
+                else:
+                    chars["ann"].dress_inf = "02" # нужно изображение
             elif name == "shower" or name == "bath" or name == "shower2":
                 chars["ann"].dress_inf = "04a"
             elif name == "yoga":
@@ -1006,7 +1012,7 @@ init python:
             }[True]
 
 
-    def AttitudeChange(char, level):
+    def AttitudeChange(char, level):  # изменение отношения персонажа в уровнях
         lvl = abs(level)
         mn = 1 if level > 0 else -1
         while lvl > 1:
