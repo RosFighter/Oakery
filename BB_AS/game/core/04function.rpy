@@ -731,26 +731,11 @@ init python:
                 # ПРОВЕРИМ НЕОБХОДИМОСТЬ ОбНОВЛЕНИЯ РАНДОМНОЙ ОДЕЖДЫ (временный блок)
                 if prevtime < "04:00" <= tm:
                     cloth_type["ann"]["cooking"]  = renpy.random.choice(["a", "b"])
-                    # cloth_type["alice"]["casual"] = renpy.random.choice(["a", "b"])
-                    cloth_type["alice"]["casual"] = 'b' if 'pajamas' in chars['alice'].gifts else 'a'
-                    # cloth_type["lisa"]["swim"]    = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["swim"] = 'b' if 'bikini' in chars['lisa'].gifts else 'a'
-                    # cloth_type["lisa"]["casual"]  = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["casual"] = 'b' if 'bathrobe' in chars['lisa'].gifts and GetMood('lisa')[0] > 1 else 'a'
-                    # cloth_type["lisa"]["learn"]   = renpy.random.choice(["a", "b", "c"])
-                    if GetRelMax('lisa')[0] > 2 and GetMood('lisa')[0] > 2:
-                        cloth_type["lisa"]["learn"]  = 'c'
-                    elif 'bathrobe' in chars['lisa'].gifts:
-                        cloth_type["lisa"]["learn"]  = 'b'
-                    else:
-                        cloth_type["lisa"]["learn"]  = 'a'
                     # mgg.dress = renpy.random.choice(["a", "b"])
                     mgg.dress = 'a'
 
                 elif prevtime < "16:00" <= tm and day > 1:
                     cloth_type["ann"]["cooking"] = "b"
-                    # cloth_type["lisa"]["casual"] = renpy.random.choice(["a", "b"])
-                    cloth_type["lisa"]["casual"] = 'b' if 'bathrobe' in chars['lisa'].gifts and GetMood('lisa')[0] > 1 else 'a'
 
                 elif prevtime < "22:00" <= tm and day > 1:
                     cloth_type["ann"]["rest"]   = renpy.random.choice(["a", "b"])
@@ -767,54 +752,40 @@ init python:
             chars[char].dress_inf = "00b"
         elif char == "lisa":
             if name == "sleep":
-                chars["lisa"].dress = cloth_type["lisa"]["sleep"]
-                if cloth_type["lisa"]["sleep"] == "a":
-                    chars["lisa"].dress_inf = "02"
-                else:
-                    chars["lisa"].dress_inf = "02a"
+                chars["lisa"].dress = 'b' if possibility["sg"].stn > 2 else 'a'
+                chars["lisa"].dress_inf = "02a" if possibility["sg"].stn > 2 else "02"
 
             elif name == "shower" or name == "bath":
                 chars["lisa"].dress_inf = "04a"
 
-            elif (name == "breakfast" or name == "dishes" or name == "read"
-                                      or name == "phone"  or name == "dinner" ):
-                chars["lisa"].dress = cloth_type["lisa"]["casual"]
-                if cloth_type["lisa"]["casual"] == "a":
-                    chars["lisa"].dress_inf = "01a"
-                else:
-                    chars["lisa"].dress_inf = "04"
+            elif (name == "breakfast" or name == "dishes" or name == "read" or name == "phone"  or name == "dinner" ):
+                chars["lisa"].dress = 'b' if 'bathrobe' in chars['lisa'].gifts and GetMood('lisa')[0] > 1 else 'a'
+                chars["lisa"].dress_inf = "04" if 'bathrobe' in chars['lisa'].gifts and GetMood('lisa')[0] > 1 else "01a"
 
             elif name == "in_shcool":
                 chars["lisa"].dress_inf = "01b"
 
             elif name == "sun":
-                chars["lisa"].dress = cloth_type["lisa"]["swim"]
-                if cloth_type["lisa"]["swim"] == "a":
-                    chars["lisa"].dress_inf = "03"
-                else:
-                    chars["lisa"].dress_inf = "03b"
+                chars["lisa"].dress = 'b' if 'bikini' in chars['lisa'].gifts else 'a'
+                chars["lisa"].dress_inf = "03b" if 'bikini' in chars['lisa'].gifts else "03"
 
             elif name == "swim":
-                chars["lisa"].dress = cloth_type["lisa"]["swim"]
+                chars["lisa"].dress = 'b' if 'bikini' in chars['lisa'].gifts else 'a'
                 if pose3_1 == "03":
-                    if cloth_type["lisa"]["swim"] == "a":
-                        chars["lisa"].dress_inf = "03a"
-                    else:
-                        chars["lisa"].dress_inf = "03c"
+                    chars["lisa"].dress_inf = "03c" if 'bikini' in chars['lisa'].gifts else "03a"
                 else:
-                    if cloth_type["lisa"]["swim"] == "a":
-                        chars["lisa"].dress_inf = "03"
-                    else:
-                        chars["lisa"].dress_inf = "03b"
+                    chars["lisa"].dress_inf = "03b" if 'bikini' in chars['lisa'].gifts else "03"
 
             elif name == "homework":
-                chars["lisa"].dress = cloth_type["lisa"]["learn"]
-                if cloth_type["lisa"]["learn"] == "a":
-                    chars["lisa"].dress_inf = "01a"
-                elif cloth_type["lisa"]["learn"] == "b":
+                if GetRelMax('lisa')[0] > 2 and GetMood('lisa')[0] > 2:
+                    chars["lisa"].dress  = 'c'
+                    chars["lisa"].dress_inf = "04b"
+                elif 'bathrobe' in chars['lisa'].gifts:
+                    chars["lisa"].dress  = 'b'
                     chars["lisa"].dress_inf = "04"
                 else:
-                    chars["lisa"].dress_inf = "04b"
+                    chars["lisa"].dress  = 'a'
+                    chars["lisa"].dress_inf = "01a"
 
             elif name == "in_shop" or name == "at_tutor":
                 chars["lisa"].dress_inf = "01"
@@ -829,47 +800,28 @@ init python:
             elif name == "shower" or name == "bath":
                 chars["alice"].dress_inf = "04aa"
             elif name == "breakfast" or name == "read" or name == "dinner":
-                chars["alice"].dress = cloth_type["alice"]["casual"]
-                if cloth_type["alice"]["casual"] == "a":
-                    chars["alice"].dress_inf = "01a"
-                else:
-                    chars["alice"].dress_inf = "01c"
+                chars["alice"].dress = 'b' if 'pajamas' in chars['alice'].gifts else 'a'
+                chars["alice"].dress_inf = "01c" if 'pajamas' in chars['alice'].gifts else  "01a"
             elif name == "resting" or name == "blog" or name == "tv":
-                chars["alice"].dress = cloth_type["alice"]["casual"]
-                if cloth_type["alice"]["casual"] == "a":
-                    if "09:00" <= tm < "20:00":
-                        chars["alice"].dress_inf = "01a"
-                    else:
-                        chars["alice"].dress_inf = "01aa"
+                chars["alice"].dress = 'b' if 'pajamas' in chars['alice'].gifts else 'a'
+                if 'pajamas' in chars['alice'].gifts:
+                    chars["alice"].dress_inf = "01c" if "09:00" <= tm < "20:00" else "01ca"
                 else:
-                    if "09:00" <= tm < "20:00":
-                        chars["alice"].dress_inf = "01c"
-                    else:
-                        chars["alice"].dress_inf = "01ca"
+                    chars["alice"].dress_inf = "01a" if "09:00" <= tm < "20:00" else "01aa"
             elif name == "sun":
                 chars["alice"].dress = "a"
                 chars["alice"].dress_inf = "03"
             elif name == "swim":
                 chars["alice"].dress = "a"
-                if pose3_2 == "03":
-                    chars["alice"].dress_inf = "03a"
-                else:
-                    chars["alice"].dress_inf = "03"
+                chars["alice"].dress_inf = "03a" if pose3_2 == "03" else "03"
             elif name == "in_shop" or name == "at_friends":
                 chars["alice"].dress_inf = "01"
             elif name == "cooking":
-                chars["alice"].dress = cloth_type["alice"]["casual"]
-                if cloth_type["alice"]["casual"] == "a":
-                    chars["alice"].dress_inf = "01b"
-                else:
-                    chars["alice"].dress_inf = "01d"
+                chars["alice"].dress = 'b' if 'pajamas' in chars['alice'].gifts else 'a'
+                chars["alice"].dress_inf = "01d" if 'pajamas' in chars['alice'].gifts else "01b"
             elif name == "smoke":
-                if flags['smoke'] == "toples":
-                    chars["alice"].dress = "b"
-                    chars["alice"].dress_inf = "03b"
-                else:
-                    chars["alice"].dress = "a"
-                    chars["alice"].dress_inf = "03"
+                chars["alice"].dress = 'b' if flags['smoke'] == "toples" else 'a'
+                chars["alice"].dress_inf = "03b" if flags['smoke'] == "toples" else '03'
             else:
                 chars["alice"].dress = "a"
                 chars["alice"].dress_inf = "01a"
@@ -877,26 +829,17 @@ init python:
         elif char == "ann":
             if name == "sleep":
                 chars["ann"].dress = cloth_type["ann"]["sleep"]
-                if cloth_type["ann"]["sleep"] == "a":
-                    chars["ann"].dress_inf = "02"
-                else:
-                    chars["ann"].dress_inf = "02" # нужно изображение
+                chars["ann"].dress_inf = "02" if cloth_type["ann"]["sleep"] == "a" else '02f'
             elif name == "shower" or name == "bath" or name == "shower2":
                 chars["ann"].dress_inf = "04a"
             elif name == "yoga":
                 chars["ann"].dress_inf = "05"
             elif name == "cooking":
                 chars["ann"].dress = cloth_type["ann"]["cooking"]
-                if cloth_type["ann"]["cooking"] == "a":
-                    chars["ann"].dress_inf = "05b"
-                else:
-                    chars["ann"].dress_inf = "01c"
+                chars["ann"].dress_inf = "05b" if cloth_type["ann"]["cooking"] == "a" else "01c"
             elif name == "breakfast":
                 chars["ann"].dress = cloth_type["ann"]["cooking"]
-                if cloth_type["ann"]["cooking"] == "a":
-                    chars["ann"].dress_inf = "05a"
-                else:
-                    chars["ann"].dress_inf = "01b"
+                chars["ann"].dress_inf = "05a" if cloth_type["ann"]["cooking"] == "a" else "01b"
             elif name == "resting":
                 if tm <= "12:00":
                     chars["ann"].dress = "a"
@@ -906,31 +849,21 @@ init python:
                     chars["ann"].dress_inf = "03"
                 else:
                     chars["ann"].dress = cloth_type["ann"]["rest"]
-                    if cloth_type["ann"]["rest"] == "a":
-                        chars["ann"].dress_inf = "01b"
-                    else:
-                        chars["ann"].dress_inf = "04b"
+                    chars["ann"].dress_inf = "01b" if cloth_type["ann"]["rest"] == "a" else "04b"
             elif name == "at_work":
                 chars["ann"].dress_inf = "01a"
             elif name == "in_shop":
                 chars["ann"].dress_inf = "01"
             elif name == "read":
-                if tm < "14:00":
-                    chars["ann"].dress = "a"
-                    chars["ann"].dress_inf = "01b"
-                else:
-                    chars["ann"].dress = "b"
-                    chars["ann"].dress_inf = "03"
+                chars["ann"].dress = 'a' if tm < "14:00" else 'b'
+                chars["ann"].dress_inf = "01b" if tm < "14:00" else '03'
             elif name == "sun":
                 chars["ann"].dress_inf = "03"
             elif name == "swim":
                 chars["ann"].dress_inf = "03a"
             elif name == "dinner":
                 chars["ann"].dress = cloth_type["ann"]["casual"]
-                if cloth_type["ann"]["casual"] == "a":
-                    chars["ann"].dress_inf = "01d"
-                else:
-                    chars["ann"].dress_inf = "01b"
+                chars["ann"].dress_inf = "01d" if cloth_type["ann"]["casual"] == "a" else "01b"
             elif name == "tv":
                 chars["ann"].dress_inf = "04b"
             elif name == "tv2":
@@ -942,10 +875,7 @@ init python:
         elif char == "eric":
             if name == "dinner" or name == "rest" or name == "tv2":
                 chars["eric"].dress = cloth_type["ann"]["casual"]
-                if chars["eric"].dress == "a":
-                    chars["eric"].dress_inf = "01a"
-                else:
-                    chars["eric"].dress_inf = "01b"
+                chars["eric"].dress_inf = "01a" if chars["eric"].dress == "a" else "01b"
             elif name == "fuck" or name == "sleep":
                 chars["eric"].dress_inf = "00a"
             elif name == "shower2":
@@ -1222,6 +1152,6 @@ init python:
     # action Cursor("talk")
     Cursor = renpy.curry(cursor)
 
-    def have_dialog():
+    def have_dialog():  # возвращает признак наличия диалога для первого персонажа в комнате
         CurShedRec = GetPlan(eval("plan_"+current_room.cur_char[0]), day, tm)
         return CurShedRec.enabletalk and len(TalkMenuItems()) > 0

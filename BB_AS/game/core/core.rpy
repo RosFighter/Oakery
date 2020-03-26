@@ -322,3 +322,6 @@ label after_load:
             elif items['bathrobe'].have:
                 $ items['bathrobe'].have = False
                 $ money += 100
+
+        if current_ver < config.version:
+            $ current_ver = config.version

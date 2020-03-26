@@ -54,17 +54,17 @@ translate english lisa_shower_start_peeping_f30ef1eb:
     # Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..." nointeract
     Max_07 "Perfect! My little sister's taking a shower... it's a nice view, as long as she doesn't see me..." nointeract
 
-# game/events/lisa.rpy:96
-translate english lisa_shower_closer_peepeng_f78f567c:
+# game/events/lisa.rpy:123
+translate english lisa_shower_closer_peepeng_022529c8:
 
-    # Max_02 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nЛиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 "{color=[lime]}{i}You went unnoticed!{/i}{/color}\nLisa's so wet! Her figure and tight body are so hot... I'd love to run my hands all over it..."
+    # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+    Max_02 "[undetect!t]Lisa's so wet! Her figure and tight body are so hot... I'd love to run my hands all over it..."
 
-# game/events/lisa.rpy:98
-translate english lisa_shower_closer_peepeng_2b0a31f5:
+# game/events/lisa.rpy:125
+translate english lisa_shower_closer_peepeng_42f03b58:
 
-    # Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nО, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-    Max_03 "{color=[lime]}{i}You went unnoticed!{/i}{/color}\nOh, yeah! The water is rinsing her cute ass, I have to keep my eyes on it..."
+    # Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
+    Max_03 "[undetect!t]Oh, yeah! The water is rinsing her cute ass, I have to keep my eyes on it..."
 
 # game/events/lisa.rpy:108
 translate english lisa_shower_closer_peepeng_e8e13c34:
@@ -72,11 +72,11 @@ translate english lisa_shower_closer_peepeng_e8e13c34:
     # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
     Max_12 "{color=[orange]}{i}I think Lisa got suspicious!{/i}{/color}\nOh, no! Looks like she noticed me... time to run!"
 
-# game/events/lisa.rpy:117
-translate english lisa_shower_closer_peepeng_164e38fb:
+# game/events/lisa.rpy:145
+translate english lisa_shower_closer_peepeng_05cff630:
 
-    # Lisa_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!" nointeract
-    Lisa_12 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax! I can't believe you're peeping! I'm telling mom about this!" nointeract
+    # Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!" nointeract
+    Lisa_12 "[spotted!t]Max! I can't believe you're peeping! I'm telling mom about this!" nointeract
 
 # game/events/lisa.rpy:151
 translate english lisa_dressed_school_lisa_dressed_7332887d:

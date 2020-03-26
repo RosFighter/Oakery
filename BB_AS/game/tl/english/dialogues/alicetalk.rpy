@@ -1212,17 +1212,17 @@ translate english smoke_fear_3a15370b:
     # Alice_13 "Говори, что ты хочешь за молчание?" nointeract
     Alice_13 "What do you want for your silence?" nointeract
 
-# game/dialogues/alicetalk.rpy:630
-translate english smoke_fear_90578142:
-
-    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, я дам тебе денег, но только $10, ок?" nointeract
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nFine, loser. I'll give you money, but only $10, ok?" nointeract
-
 # game/dialogues/alicetalk.rpy:634
-translate english smoke_fear_658c7cc0:
+translate english smoke_fear_d12c5d6b:
 
-    # Alice_13 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЧёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
-    Alice_13 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAsshole. Do you want to leave me completely broke? I'll go get it..."
+    # Alice_12 "[succes!t]Ладно, Макс, я дам тебе денег, но только $10, ок?" nointeract
+    Alice_12 "[succes!t]Fine, loser. I'll give you money, but only $10, ok?" nointeract
+
+# game/dialogues/alicetalk.rpy:638
+translate english smoke_fear_b321ae83:
+
+    # Alice_13 "[succes!t]Чёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
+    Alice_13 "[succes!t]Asshole. Do you want to leave me completely broke? I'll go get it..."
 
 # game/dialogues/alicetalk.rpy:635
 translate english smoke_fear_d677a38c:
@@ -1230,11 +1230,11 @@ translate english smoke_fear_d677a38c:
     # Max_03 "Я жду..."
     Max_03 "I am waiting..."
 
-# game/dialogues/alicetalk.rpy:640
-translate english smoke_fear_59337c0d:
+# game/dialogues/alicetalk.rpy:644
+translate english smoke_fear_cb48f066:
 
-    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nМакс, не наглей! Сейчас принесу $10. Жди..."
-    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNope, $10 is good enough for you. Wait a sec, I'll go get it..."
+    # Alice_16 "[failed!t]Макс, не наглей! Сейчас принесу $10. Жди..."
+    Alice_16 "[failed!t]Nope, $10 is good enough for you. Wait a sec, I'll go get it..."
 
 # game/dialogues/alicetalk.rpy:641
 translate english smoke_fear_21c2303f:
@@ -1248,11 +1248,11 @@ translate english smoke_fear_69538574:
     # Alice_12 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!" nointeract
     Alice_12 "Keep the money... And don't blackmail me again. I really don't like this... Now get out of here!" nointeract
 
-# game/dialogues/alicetalk.rpy:657
-translate english smoke_fear_a9edbf1e:
+# game/dialogues/alicetalk.rpy:661
+translate english smoke_fear_2d241144:
 
-    # Alice_13 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
-    Alice_13 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nWhy do you care? Well, I'm wearing jeans all the time, so it's not like you'll see anything anyway, so fine. Deal?"
+    # Alice_13 "[succes!t]Тебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
+    Alice_13 "[succes!t]Why do you care? Well, I'm wearing jeans all the time, so it's not like you'll see anything anyway, so fine. Deal?"
 
 # game/dialogues/alicetalk.rpy:658
 translate english smoke_fear_f8ab5d9a:
@@ -1266,11 +1266,11 @@ translate english smoke_fear_a86ec81d:
     # Alice_01 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
     Alice_01 "Okay, now get lost and leave me alone!" nointeract
 
-# game/dialogues/alicetalk.rpy:670
-translate english smoke_fear_9ccd57cc:
+# game/dialogues/alicetalk.rpy:674
+translate english smoke_fear_e57727b7:
 
-    # Alice_03 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nДа я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
-    Alice_03 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nI don't actually walk around braless all the time, except when I'm asleep..."
+    # Alice_03 "[succes!t]Да я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
+    Alice_03 "[succes!t]I don't actually walk around braless all the time, except when I'm asleep..."
 
 # game/dialogues/alicetalk.rpy:671
 translate english smoke_fear_0f7a641d:
@@ -1296,10 +1296,10 @@ translate english smoke_fear_a86ec81d_1:
     # Alice_01 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
     Alice_01 "Okay, now get lost and leave me alone!" nointeract
 
-# game/dialogues/alicetalk.rpy:685
-translate english smoke_fear_c9cce892:
+# game/dialogues/alicetalk.rpy:689
+translate english smoke_fear_92e34996:
 
-    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nМаленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
+    # Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
     Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\Disgusting pervert... Okay, but you can't say anything to Mom. I'll start next time I need a smoke."
 
 # game/dialogues/alicetalk.rpy:686
@@ -1326,11 +1326,11 @@ translate english smoke_fear_b841f701:
     # Alice_13 "Ну вот тогда иди чем-нибудь займись, а меня не отвлекай..." nointeract
     Alice_13 "Then go make yourself useful somewhere else and stop bothering me." nointeract
 
-# game/dialogues/alicetalk.rpy:718
-translate english smoke_fear_fail_d70710d0:
+# game/dialogues/alicetalk.rpy:722
+translate english smoke_fear_fail_1bbfb6e5:
 
-    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nАга, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..." nointeract
-    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nYeah, right! Get out of here, you little shit. Leave me alone." nointeract
+    # Alice_16 "[failed!t]Ага, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..." nointeract
+    Alice_16 "[failed!t]Yeah, right! Get out of here, you little shit. Leave me alone." nointeract
 
 # game/dialogues/alicetalk.rpy:734
 translate english smoke_toples_6c5b6af2:
@@ -2129,3 +2129,4 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:988
     old "Я и не знал. Просто угадал видимо..."
     new "I didn't know, just guessed..."
+

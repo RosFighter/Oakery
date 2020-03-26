@@ -122,6 +122,7 @@ label ann_shower:
                 jump .end_peeping
 
     label .closer_peepeng:
+        $ spent_time += 10
         if RandomChance(_chance):
             $ peeping["ann_shower"] = 1
             $ mgg.stealth += 0.2
@@ -132,9 +133,9 @@ label ann_shower:
             show image ("Ann shower-closer 0"+str(__ran1))
             show FG shower-closer
             if __ran1 % 2 > 0:
-                Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+                Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
             else:
-                Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+                Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
             jump .end_peeping
         elif RandomChance(_chance):
             $ peeping["ann_shower"] = 2
@@ -156,11 +157,12 @@ label ann_shower:
             show image ("Ann shower-closer "+__ran1)
             show FG shower-closer
             menu:
-                Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Что ты здесь делаешь? А ну быстро отвернись!!!"
+                Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!"
                 "{i}Отвернуться{/i}":
                     jump .serious_talk
 
     label .serious_talk:
+        $ spent_time += 10
         $ _ch1 = GetChance(mgg.social, 3)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
@@ -173,12 +175,12 @@ label ann_shower:
             "Я не подглядывал. Это случайность! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
                 if RandomChance(_ch1):
                     $ mgg.social += 0.2
-                    Ann_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nСлучайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
+                    Ann_12 "[succes!t]Случайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
                     Max_04 "Ага, хорошо, мам!"
                     $ punreason[2] = 0
                 else:
                     $ mgg.social += 0.1
-                    Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nСлучайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
+                    Ann_16 "[failed!t]Случайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
                     Max_10 "Хорошо..."
             "Мам, извини...":
                 Ann_12 "Что, думаешь извинился и всё, можно снова подглядывать? Нет, Макс. В этот раз всё так просто не пройдёт. Сейчас иди отсюда, а перед завтраком поговорим!"
@@ -190,7 +192,7 @@ label ann_shower:
 
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
-        $ spent_time = 10
+        $ spent_time += 10
         jump Waiting
 
 
@@ -264,8 +266,9 @@ label ann_dressed_work:
                     Max_00 "Конечно, мам!"
                 "У меня для тебя кое-что есть." if items['nightie'].have:
                     Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
-                    scene location house annroom door-morning
                     Max_00 "Конечно, мам!"
+                    scene location house annroom door-morning
+                    Max_00 "Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит."
                     jump .gift
                 "Отличный зад!":
                     $ __mood -= 30
@@ -325,15 +328,18 @@ label ann_dressed_work:
         $ _ch1 = GetChance(mgg.social, 3)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
+        $ spent_time += 10
         menu:
             Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..."
             "Ну мам! Этого было так мало, давай ещё... {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}" if not __open:
                 if RandomChance(_ch1):
+                    $ spent_time += 10
                     $ mgg.social += 0.2
-                    Ann_05 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
+                    Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
                     $ renpy.show("Ann hugging-morning-annroom "+__r1+"-01a-03"+mgg.dress)
-                    Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лицее! Блаженно...{/i}"
+                    Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
                     $ renpy.show("Ann hugging-morning-annroom "+__r1+"-01a-02"+mgg.dress)
+                    $ AddRelMood("ann", 100, 200)
                     menu:
                         Ann_04 "А теперь иди, сынок... Пора заниматься делами."
                         "Хорошо... Я тебя люблю, мам!":
@@ -342,18 +348,22 @@ label ann_dressed_work:
                             jump .goodday
                 else:
                     $ mgg.social += 0.1
+                    $ AddRelMood("ann", 85, 170)
                     jump .fail
 
             "Ну мам! Этого было так мало, давай ещё..." if __open:
+                $ AddRelMood("ann", 75, 150)
                 jump .fail
             "Конечно, мам! Хорошего тебе дня...":
                 jump .goodday
-    menu .fail:
-        Ann_01 "Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами."
-        "Хорошо... Я тебя люблю, мам!":
-            jump .loveyou
-        "Конечно, мам! Хорошего тебе дня...":
-            jump .goodday
+    label .fail:
+        $ _text = failed if __open else ""
+        menu:
+            Ann_01 "[_text!tq]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами."
+            "Хорошо... Я тебя люблю, мам!":
+                jump .loveyou
+            "Конечно, мам! Хорошего тебе дня...":
+                jump .goodday
 
     label .loveyou:
         Ann_07 "И я тебя, Макс..."
@@ -364,7 +374,6 @@ label ann_dressed_work:
         jump .endgift
 
     label .endgift:
-        $ AddRelMood("ann", 100, 200)
         $ items['nightie'].have = False
         $ items['nightie'].InShop = False
         $ chars['ann'].gifts.append('nightie')
@@ -377,7 +386,7 @@ label ann_dressed_work:
         jump .end
 
     label .end:
-        $ spent_time = 10
+        $ spent_time += 10
         jump Waiting
 
 

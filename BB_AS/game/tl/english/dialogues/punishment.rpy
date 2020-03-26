@@ -174,11 +174,11 @@ translate english punishment_max_pun_reson_bf38fe93:
     # Ann_16 "Макс! Сейчас ты будешь наказан, сам знаешь за что!" nointeract
     Ann_16 "Max! You're going to be punished, you know what for." nointeract
 
-# game/dialogues/punishment.rpy:132
-translate english punishment_max_pun_reson_7d4fc589:
+# game/dialogues/punishment.rpy:165
+translate english punishment_max_pun_reson_db52f1d4:
 
-    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
-    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nThe circumstances are against you, but I'm willing to believe you. I hope I don't regret this decision."
+    # Ann_14 "[succes!t]Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
+    Ann_14 "[succes!t]The circumstances are against you, but I'm willing to believe you. I hope I don't regret this decision."
 
 # game/dialogues/punishment.rpy:133
 translate english punishment_max_pun_reson_dbaef78e:
@@ -186,11 +186,11 @@ translate english punishment_max_pun_reson_dbaef78e:
     # Max_08 "Спасибо, мам!"
     Max_08 "Thanks, mom!"
 
-# game/dialogues/punishment.rpy:141
-translate english punishment_max_pun_reson_4adc0b27:
+# game/dialogues/punishment.rpy:177
+translate english punishment_max_pun_reson_16271c3b:
 
-    # Ann_19 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nВот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!tq] и ложись на мои колени. Надеюсь, ты сегодня в трусах..." nointeract
-    Ann_19 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nJust like that? We're supposed to just forget everything? No, Max, not this time. Take down your [_text!tq] and get on my knees. I hope you're wearing underwear today..." nointeract
+    # Ann_19 "[failed!t]Вот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!tq] и ложись на мои колени. Надеюсь, ты сегодня в трусах..." nointeract
+    Ann_19 "[failed!t]Just like that? We're supposed to just forget everything? No, Max, not this time. Take down your [_text!tq] and get on my knees. I hope you're wearing underwear today..." nointeract
 
 # game/dialogues/punishment.rpy:147
 translate english punishment_max_pun_reson_831f2da1:
@@ -240,11 +240,11 @@ translate english punishment_lisa_0fa8acfd:
     # Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
     Ann_12 "No, Max, don't even try to talk me out of it. Lisa, don't just stand there, come here..."
 
-# game/dialogues/punishment.rpy:207
-translate english punishment_lisa_a37388ce:
+# game/dialogues/punishment.rpy:276
+translate english punishment_lisa_9739ac77:
 
-    # Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
-    Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, I won't punish her this time. I hope I don't regret my decision... And Lisa, you should thank your brother. You'd best learn from your mistakes, because I won't be so forgiving next time..."
+    # Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
+    Ann_00 "[succes!t]All right, I won't punish her this time. I hope I don't regret my decision... And Lisa, you should thank your brother. You'd best learn from your mistakes, because I won't be so forgiving next time..."
 
 # game/dialogues/punishment.rpy:208
 translate english punishment_lisa_6d672e8d:
@@ -252,11 +252,11 @@ translate english punishment_lisa_6d672e8d:
     # Lisa_02 "Спасибо тебе, Макс!"
     Lisa_02 "Oh, thank you, Max!"
 
-# game/dialogues/punishment.rpy:213
-translate english punishment_lisa_c8c76e1b:
+# game/dialogues/punishment.rpy:282
+translate english punishment_lisa_929c11ac:
 
-    # Ann_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, your persuasion won't help her. She will get what she deserves. Lisa, don't just stand there, come on..."
+    # Ann_12 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
+    Ann_12 "[failed!t]No, your persuasion won't help her. She will get what she deserves. Lisa, don't just stand there, come on..."
 
 # game/dialogues/punishment.rpy:218
 translate english punishment_lisa_8b6bc93a:
@@ -294,11 +294,11 @@ translate english punishment_lisa_0fa8acfd_1:
     # Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
     Ann_12 "No, Max, don't even try to talk me out of it. Lisa, don't just stand there, come here..."
 
-# game/dialogues/punishment.rpy:241
-translate english punishment_lisa_25ca4b5c:
+# game/dialogues/punishment.rpy:310
+translate english punishment_lisa_85987843:
 
-    # Ann_00 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, можешь одеваться. Скажи спасибо Максу, что сегодня осталась безнаказанной. Но не думай, что я всегда буду такой доброй..."
-    Ann_00 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, I'm not gonna punish her this time. I hope I don't regret my decision... And you, Lisa, can get dressed. Say thank you to Max for saving you today. But don't think I'll always be so kind..."
+    # Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, можешь одеваться. Скажи спасибо Максу, что сегодня осталась безнаказанной. Но не думай, что я всегда буду такой доброй..."
+    Ann_00 "[succes!t]All right, Max, I'm not gonna punish her this time. I hope I don't regret my decision... And you, Lisa, can get dressed. Say thank you to Max for saving you today. But don't think I'll always be so kind..."
 
 # game/dialogues/punishment.rpy:242
 translate english punishment_lisa_6d672e8d_1:
@@ -306,11 +306,11 @@ translate english punishment_lisa_6d672e8d_1:
     # Lisa_02 "Спасибо тебе, Макс!"
     Lisa_02 "Oh, thank you, Max!"
 
-# game/dialogues/punishment.rpy:247
-translate english punishment_lisa_c8c76e1b_1:
+# game/dialogues/punishment.rpy:316
+translate english punishment_lisa_929c11ac_1:
 
-    # Ann_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, your persuasion won't help her. She will get what she deserves. Lisa, don't just stand there, come on..."
+    # Ann_12 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
+    Ann_12 "[failed!t]No, your persuasion won't help her. She will get what she deserves. Lisa, don't just stand there, come on..."
 
 # game/dialogues/punishment.rpy:261
 translate english punishment_lisa_81192a03:
@@ -486,11 +486,11 @@ translate english punishment_alice_e5b82d3f:
     # Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
     Ann_12 "No, Max, don't even try to justify it. Alice, move it..."
 
-# game/dialogues/punishment.rpy:339
-translate english punishment_alice_1f549674:
+# game/dialogues/punishment.rpy:396
+translate english punishment_alice_48884e9e:
 
-    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, и не приглашай больше сюда таких подружек, хорошему они не научат..."
-    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, I'm not punishing her today. I hope I don't regret it... Thank your brother, Alice. And don't invite any more friends like that here, they won't do you any good..."
+    # Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, и не приглашай больше сюда таких подружек, хорошему они не научат..."
+    Ann_14 "[succes!t]All right, Max, I'm not punishing her today. I hope I don't regret it... Thank your brother, Alice. And don't invite any more friends like that here, they won't do you any good..."
 
 # game/dialogues/punishment.rpy:340
 translate english punishment_alice_2a128a29:
@@ -498,11 +498,11 @@ translate english punishment_alice_2a128a29:
     # Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
     Alice_13 "Okay, Mom. Thank you, Max, I won't forget this."
 
-# game/dialogues/punishment.rpy:345
-translate english punishment_alice_f064e992:
+# game/dialogues/punishment.rpy:402
+translate english punishment_alice_c8f8e3ea:
 
-    # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good."
+    # Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
+    Ann_16 "[failed!t]No, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good."
 
 # game/dialogues/punishment.rpy:350
 translate english punishment_alice_055a6121:
@@ -570,11 +570,11 @@ translate english punishment_alice_e5b82d3f_1:
     # Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
     Ann_12 "No, Max, don't even try to defend her.  Alice, move it..."
 
-# game/dialogues/punishment.rpy:379
-translate english punishment_alice_28b1c8e9:
+# game/dialogues/punishment.rpy:439
+translate english punishment_alice_a3fb885d:
 
-    # Ann_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nХорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
-    Ann_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, I'm not punishing her today. I hope I don't regret it... Thank your brother, Alice. And don't invite any more friends like that here, they won't do you any good..."
+    # Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
+    Ann_14 "[succes!t]All right, Max, I'm not punishing her today. I hope I don't regret it... Thank your brother, Alice. And don't invite any more friends like that here, they won't do you any good..."
 
 # game/dialogues/punishment.rpy:380
 translate english punishment_alice_2a128a29_1:
@@ -582,11 +582,11 @@ translate english punishment_alice_2a128a29_1:
     # Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
     Alice_13 "Okay, Mom. Thank you, Max, I won't forget this."
 
-# game/dialogues/punishment.rpy:385
-translate english punishment_alice_f064e992_1:
+# game/dialogues/punishment.rpy:445
+translate english punishment_alice_c8f8e3ea_1:
 
-    # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good..."
+    # Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
+    Ann_16 "[failed!t]No, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good..."
 
 # game/dialogues/punishment.rpy:403
 translate english punishment_alice_6bf98fd4:

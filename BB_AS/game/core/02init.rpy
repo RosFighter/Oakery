@@ -7,6 +7,12 @@ define lime   = "#00FF00"
 define red    = "#FF0000"
 define orange = "#E59400"
 
+default failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
+default succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
+
+default undetect = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
+default spotted  = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
+
 define config.has_autosave = False
 define config.has_quicksave = False
 

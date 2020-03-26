@@ -370,17 +370,17 @@ translate english ann_shower_start_peeping_f0132630:
     # Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама... Надеюсь, она меня не заметит..." nointeract
     Max_07 "Wow! I'm lucky to have such a hot mom... I hope she doesn't notice me..." nointeract
 
-# game/events/ann.rpy:94
-translate english ann_shower_closer_peepeng_a38e0857:
+# game/events/ann.rpy:135
+translate english ann_shower_closer_peepeng_e486fb14:
 
-    # Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОбалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-    Max_03 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nAmazing! It's not every day you get a chance to admire this beauty! Her big soft breasts and her slender figure are just a glimpse..."
+    # Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+    Max_03 "[undetect!t]Amazing! It's not every day you get a chance to admire this beauty! Her big soft breasts and her slender figure are just a glimpse..."
 
-# game/events/ann.rpy:96
-translate english ann_shower_closer_peepeng_f42aed74:
+# game/events/ann.rpy:137
+translate english ann_shower_closer_peepeng_3c3328bd:
 
-    # Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
-    Max_05 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWhat a show! Such a plump ass anyone could admire..."
+    # Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+    Max_05 "[undetect!t]What a show! Such a plump ass anyone could admire..."
 
 # game/events/ann.rpy:106
 translate english ann_shower_closer_peepeng_4a76a42b:
@@ -391,8 +391,8 @@ translate english ann_shower_closer_peepeng_4a76a42b:
 # game/events/ann.rpy:116
 translate english ann_shower_closer_peepeng_61241e3e:
 
-    # Ann_16 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..." nointeract
-    Ann_16 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax!!! Are you peeping? You should be ashamed of yourself! Turn around now!!! We're going to have a serious conversation..." nointeract
+    # Ann_16 "[spotted!t]Макс!!! Ты что, подглядываешь за мной? Тебе должно быть стыдно! Быстро отвернись!!! Нас ждёт серьёзный разговор..." nointeract
+    Ann_16 "[spotted!t]Max!!! Are you peeping? You should be ashamed of yourself! Turn around now!!! We're going to have a serious conversation..." nointeract
 
 # TODO: Translation updated at 2020-01-22 13:53
 
@@ -509,11 +509,11 @@ translate english ann_shower_ladder_0c9341b6:
 
 # TODO: Translation updated at 2020-03-22 17:29
 
-# game/events/ann.rpy:140
-translate english ann_shower_closer_peepeng_648c973b:
+# game/events/ann.rpy:158
+translate english ann_shower_closer_peepeng_9b36810d:
 
-    # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\n ..." nointeract
+    # Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
+    Ann_15 "[spotted!t] ..." nointeract
 
 # game/events/ann.rpy:153
 translate english ann_shower_serious_talk_9d79db42:
@@ -521,11 +521,11 @@ translate english ann_shower_serious_talk_9d79db42:
     # Ann_19 "Ты что, подглядываешь за мной? Тебе должно быть стыдно! Нас ждёт серьёзный разговор..." nointeract
     Ann_19 "" nointeract
 
-# game/events/ann.rpy:158
-translate english ann_shower_serious_talk_d7df2c96:
+# game/events/ann.rpy:176
+translate english ann_shower_serious_talk_5cc0688c:
 
-    # Ann_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nСлучайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
-    Ann_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nJust a coincidence? Fine, I believe you. Now get out of here!"
+    # Ann_12 "[succes!t]Случайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
+    Ann_12 "[succes!t]Just a coincidence? Fine, I believe you. Now get out of here!"
 
 # game/events/ann.rpy:159
 translate english ann_shower_serious_talk_b81f7229:
@@ -533,11 +533,11 @@ translate english ann_shower_serious_talk_b81f7229:
     # Max_04 "Ага, хорошо, мам!"
     Max_04 "Okay, mom!"
 
-# game/events/ann.rpy:163
-translate english ann_shower_serious_talk_deeb33b5:
+# game/events/ann.rpy:181
+translate english ann_shower_serious_talk_65550d20:
 
-    # Ann_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nСлучайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
-    Ann_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nSo you say you \"accidentally\" sneaked in, hid yourself, and stared at me? Go to your room! We'll talk before breakfast!"
+    # Ann_16 "[failed!t]Случайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
+    Ann_16 "[failed!t]So you say you \"accidentally\" sneaked in, hid yourself, and stared at me? Go to your room! We'll talk before breakfast!"
 
 # game/events/ann.rpy:164
 translate english ann_shower_serious_talk_e071f814:
@@ -757,11 +757,11 @@ translate english ann_dressed_work_gift_b6991faf:
     # Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..." nointeract
     Ann_04 "" nointeract
 
-# game/events/ann.rpy:333
-translate english ann_dressed_work_gift_a98a292d:
+# game/events/ann.rpy:334
+translate english ann_dressed_work_gift_e66adddb:
 
-    # Ann_05 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nТы сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-    Ann_05 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+    # Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
+    Ann_05 "[succes!t] ..."
 
 # game/events/ann.rpy:335
 translate english ann_dressed_work_gift_84cd6647:
@@ -824,4 +824,31 @@ translate english strings:
     # game/events/ann.rpy:337
     old "Хорошо... Я тебя люблю, мам!"
     new ""
+
+# TODO: Translation updated at 2020-03-25 23:50
+
+
+# game/events/ann.rpy:269
+translate english ann_dressed_work_acf27c66:
+
+    # Max_00 "Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит."
+    Max_00 ""
+
+# game/events/ann.rpy:336
+translate english ann_dressed_work_gift_d97afa36:
+
+    # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
+    Max_06 ""
+
+# game/events/ann.rpy:357
+translate english ann_dressed_work_fail_7b959adc:
+
+    # Ann_01 "[_text!tq]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
+    Ann_01 "" nointeract
+
+translate english strings:
+
+    # game/events/ann.rpy:356
+    old "[failed!t]"
+    new "[failed!t]"
 

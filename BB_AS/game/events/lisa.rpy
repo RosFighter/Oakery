@@ -30,36 +30,36 @@ label lisa_shower:
     elif peeping["lisa_shower"] > 0:
         Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать еще раз."
         jump .end_peeping2
-    else:
-        $ renpy.block_rollback()
-        $ peeping["lisa_shower"] = 4
-        menu:
-            Max_09 "Кажется, Лиза что-то делает в ванной..."
-            "{i}постучаться{/i}":
-                menu:
-                    Lisa "{b}Лиза:{/b} Кто там? Я ещё не закончила. Подождите немного..."
-                    "Это я, Макс!":
-                        menu:
-                            Lisa "{b}Лиза:{/b} Макс, чего хотел? Я же говорю, скоро выйду!"
-                            "Можно я войду? Мне очень нужно...":
-                                menu:
-                                    Lisa "{b}Лиза:{/b} Нет, Макс. Жди за дверью. Я скоро!"
-                                    "Ладно, ладно...":
-                                        $ peeping["lisa_shower"] = 4
-                                        jump .end_peeping
-                            "Хорошо, я подожду":
-                                $ peeping["lisa_shower"] = 4
-                                jump .end_peeping
-                    "{i}уйти{/i}":
-                        $ peeping["lisa_shower"] = 4
-                        jump .end_peeping
-            "{i}заглянуть со двора{/i}":
-                jump .start_peeping
-            "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
-                jump .ladder
-            "{i}уйти{/i}":
-                $ peeping["lisa_shower"] = 4
-                jump .end_peeping
+
+    $ renpy.block_rollback()
+    $ peeping["lisa_shower"] = 4
+    menu:
+        Max_09 "Кажется, Лиза что-то делает в ванной..."
+        "{i}постучаться{/i}":
+            menu:
+                Lisa "{b}Лиза:{/b} Кто там? Я ещё не закончила. Подождите немного..."
+                "Это я, Макс!":
+                    menu:
+                        Lisa "{b}Лиза:{/b} Макс, чего хотел? Я же говорю, скоро выйду!"
+                        "Можно я войду? Мне очень нужно...":
+                            menu:
+                                Lisa "{b}Лиза:{/b} Нет, Макс. Жди за дверью. Я скоро!"
+                                "Ладно, ладно...":
+                                    $ peeping["lisa_shower"] = 4
+                                    jump .end_peeping
+                        "Хорошо, я подожду":
+                            $ peeping["lisa_shower"] = 4
+                            jump .end_peeping
+                "{i}уйти{/i}":
+                    $ peeping["lisa_shower"] = 4
+                    jump .end_peeping
+        "{i}заглянуть со двора{/i}":
+            jump .start_peeping
+        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+            jump .ladder
+        "{i}уйти{/i}":
+            $ peeping["lisa_shower"] = 4
+            jump .end_peeping
 
     label .ladder:
         $ renpy.scene()
@@ -88,6 +88,7 @@ label lisa_shower:
         else:
             Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
 
+        $ spent_time += 10
         Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
         jump .end_peeping
 
@@ -110,6 +111,7 @@ label lisa_shower:
                 jump .end_peeping
 
     label .closer_peepeng:
+        $ spent_time += 10
         if RandomChance(_chance):
             $ peeping["lisa_shower"] = 1
             $ mgg.stealth += 0.2
@@ -120,9 +122,9 @@ label lisa_shower:
             show image ("Lisa shower-closer 0"+str(__ran1))
             show FG shower-closer
             if 1 < __ran1 < 5:
-                Max_02 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nЛиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+                Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
-                Max_03 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color}\nО, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
+                Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
         elif RandomChance(_chance):
             $ peeping["lisa_shower"] = 2
             $ mgg.stealth += 0.1
@@ -143,7 +145,7 @@ label lisa_shower:
             show image ("Lisa shower-closer "+__ran1)
             show FG shower-closer
             menu:
-                Lisa_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
+                Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
                 "{i}уйти{/i}":
                     jump .end_peeping
         jump .end_peeping
@@ -153,7 +155,7 @@ label lisa_shower:
         jump AfterWaiting
     label .end_peeping:
         $ current_room, prev_room = prev_room, current_room
-        $ spent_time = 10
+        $ spent_time += 10
         jump Waiting
     return
 
