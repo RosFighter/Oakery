@@ -156,17 +156,17 @@ translate english alice_shower_start_peeping_24696a80:
     # Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте." nointeract
     Max_07 "Wow, she's completely naked, and just a few metres away from me! She's so beautiful...but also very dangerous. Better make sure she doesn't see me." nointeract
 
-# game/events/alice.rpy:162
-translate english alice_shower_closer_peepeng_bbeee85c:
+# game/events/alice.rpy:358
+translate english alice_shower_closer_peepeng_c8b2c2b6:
 
-    # Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nСупер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
-    Max_01 "{color=[lime]}{i}You are undetected!{/i}{/color}\nNice! With wet hair, she's even sexier. Uhh... I hope she washes those tits thoroughly...."
+    # Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
+    Max_01 "[undetect!t]Nice! With wet hair, she's even sexier. Uhh... I hope she washes those tits thoroughly...."
 
-# game/events/alice.rpy:164
-translate english alice_shower_closer_peepeng_0c3556f1:
+# game/events/alice.rpy:360
+translate english alice_shower_closer_peepeng_09abbe09:
 
-    # Max_01 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nО, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-    Max_01 "{color=[lime]}{i}You are undetected!{/i}{/color} \nOh yes... It's hard to resist a wet Alice, especially when she's twirling her ass so temptingly... "
+    # Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
+    Max_01 "[undetect!t]Oh yes... It's hard to resist a wet Alice, especially when she's twirling her ass so temptingly... "
 
 # game/events/alice.rpy:174
 translate english alice_shower_closer_peepeng_051a23bb:
@@ -174,11 +174,11 @@ translate english alice_shower_closer_peepeng_051a23bb:
     # Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
     Max_09 "{color=[orange]}{i}I think Alice got suspicious!{/i}{/color}\nOh, shit! We've got to get out of here while we still can..."
 
-# game/events/alice.rpy:184
-translate english alice_shower_closer_peepeng_c91c8871:
+# game/events/alice.rpy:382
+translate english alice_shower_closer_peepeng_e19147dd:
 
-    # Alice_12 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!" nointeract
-    Alice_12 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax!!! Are you peeping?! You're so dead! You're lucky I'm naked now... But I'm going to I'll tell my mom everything, she'll punish you!" nointeract
+    # Alice_12 "[spotted!t]Макс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!" nointeract
+    Alice_12 "[spotted!t]Max!!! Are you peeping?! You're so dead! You're lucky I'm naked now... But I'm going to I'll tell my mom everything, she'll punish you!" nointeract
 
 # game/events/alice.rpy:214
 translate english alice_dressed_shop_61771170:
@@ -399,11 +399,11 @@ translate english spider_in_bed_help_934b274d:
     # Alice_12 "Что ты хочешь за смерть этого паука?" nointeract
     Alice_12 "What do you want?" nointeract
 
-# game/events/alice.rpy:462
-translate english spider_in_bed_fail_27bc02af:
+# game/events/alice.rpy:789
+translate english spider_in_bed_fail_afe9b556:
 
-    # Alice_17 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЧто?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
-    Alice_17 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nOne of you will die today, you or the spider. Which one do you choose?"
+    # Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
+    Alice_17 "[failed!t]One of you will die today, you or the spider. Which one do you choose?"
 
 # game/events/alice.rpy:463
 translate english spider_in_bed_fail_11231cfc:
@@ -423,17 +423,17 @@ translate english spider_in_bed_money_5f8bef51:
     # Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
     Max_04 "There can never be too much money! Fine, where's your spider..."
 
-# game/events/alice.rpy:480
-translate english spider_in_bed_tits_86f1ac33:
+# game/events/alice.rpy:809
+translate english spider_in_bed_tits_556ab3f7:
 
-    # Alice_14 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
-    Alice_14 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nYou little twerp... Fine, look. Now go and kill this spider already!"
+    # Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
+    Alice_14 "[succes!t]You little twerp... Fine, look. Now go and kill this spider already!"
 
-# game/events/alice.rpy:483
-translate english spider_in_bed_tits_ca1a85ce:
+# game/events/alice.rpy:812
+translate english spider_in_bed_tits_455bb217:
 
-    # Alice_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
-    Alice_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAh! What a pig you are, Max... Okay, look, I'm kind today. And kill him already, finally!"
+    # Alice_09 "[succes!t]Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
+    Alice_09 "[succes!t]Ah! What a pig you are, Max... Okay, look, I'm kind today. And kill him already, finally!"
 
 # game/events/alice.rpy:484
 translate english spider_in_bed_tits_eccbb760:
@@ -441,11 +441,11 @@ translate english spider_in_bed_tits_eccbb760:
     # Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
     Max_04 "Nice tits! Let's go deal with your spider..."
 
-# game/events/alice.rpy:493
-translate english spider_in_bed_toples_47692925:
+# game/events/alice.rpy:823
+translate english spider_in_bed_toples_199ed983:
 
-    # Alice_15 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nАх! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
-    Alice_15 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nYou little twerp... Fine... Are you happy now, you perv? Now go and kill this spider already!"
+    # Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
+    Alice_15 "[succes!t]You little twerp... Fine... Are you happy now, you perv? Now go and kill this spider already!"
 
 # game/events/alice.rpy:494
 translate english spider_in_bed_toples_19d75d09:
@@ -471,11 +471,11 @@ translate english spider_in_bed_spider_be1cbc22:
     # Alice_17 "Ах так... Ну, тогда я обижусь на тебя! Всё, вали отсюда!" nointeract
     Alice_17 "Then get out of here, you prick!" nointeract
 
-# game/events/alice.rpy:526
-translate english spider_in_bed_spider_2f934b3c:
+# game/events/alice.rpy:857
+translate english spider_in_bed_spider_d47987f1:
 
-    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nAll right, Max, you got me. Just make sure he's nowhere near the house..."
+    # Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
+    Alice_12 "[succes!t]All right, Max, you got me. Just make sure he's nowhere near the house..."
 
 # game/events/alice.rpy:527
 translate english spider_in_bed_spider_9db27ecc:
@@ -483,11 +483,11 @@ translate english spider_in_bed_spider_9db27ecc:
     # Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!" nointeract
     Alice_13 "That's it, stop sitting on my bed, get out of here. I want to sleep!" nointeract
 
-# game/events/alice.rpy:539
-translate english spider_in_bed_spider_961cf0ed:
+# game/events/alice.rpy:871
+translate english spider_in_bed_spider_3533aec8:
 
-    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nНет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
-    Alice_16 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max! You're killing him right here and now or I won't forgive you! Choose..."
+    # Alice_16 "[failed!t]Нет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
+    Alice_16 "[failed!t]No, Max! You're killing him right here and now or I won't forgive you! Choose..."
 
 # game/events/alice.rpy:540
 translate english spider_in_bed_spider_d5b490ac:
@@ -1210,10 +1210,10 @@ translate english alice_shower_spider_1136dd42:
     Alice_17 "" nointeract
 
 # game/events/alice.rpy:336
-translate english alice_shower_spider_a47de6ed:
+translate english alice_shower_spider_f8205929:
 
-    # Alice_12 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\n ..."
+    # Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
+    Alice_12 "[succes!t] ..."
 
 # game/events/alice.rpy:337
 translate english alice_shower_spider_c67ec167:
@@ -1228,10 +1228,10 @@ translate english alice_shower_spider_8ce7828a:
     Alice_05 ""
 
 # game/events/alice.rpy:341
-translate english alice_shower_spider_f993e482:
+translate english alice_shower_spider_3c76bf47:
 
-    # Alice_16 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЯ тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
-    Alice_16 ""
+    # Alice_16 "[failed!t]Я тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
+    Alice_16 "[failed!t] ..."
 
 # game/events/alice.rpy:342
 translate english alice_shower_spider_86ecd118:
@@ -1245,11 +1245,11 @@ translate english alice_shower_spider_f635b9a8:
     # Alice_17 "Да иди ты, Макс!"
     Alice_17 ""
 
-# game/events/alice.rpy:736
-translate english spider_in_bed_money_b3df496f:
+# game/events/alice.rpy:797
+translate english spider_in_bed_money_e7afa5bd:
 
-    # Alice_16 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nНу ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
-    Alice_16 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nHow could you even... Fine, here's $10, just kill it already!"
+    # Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
+    Alice_16 "[succes!t]How could you even... Fine, here's $10, just kill it already!"
 
 translate english strings:
 
@@ -1275,5 +1275,61 @@ translate english strings:
 
     # game/events/alice.rpy:330
     old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new ""
+    new "... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+
+# TODO: Translation updated at 2020-03-25 16:16
+
+# game/events/alice.rpy:277
+translate english alice_shower_spider_3f8fc33f:
+
+    # Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
+    Alice ""
+
+# game/events/alice.rpy:494
+translate english alice_dressed_shop_1aff9253:
+
+    # Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+    Max_01 ""
+
+# game/events/alice.rpy:497
+translate english alice_dressed_shop_f2968b10:
+
+    # Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит? Но лучше буду гадать об этом в другом месте, а то меня заметят..."
+    Max_05 ""
+
+# game/events/alice.rpy:500
+translate english alice_dressed_shop_c50c3ab4:
+
+    # Max_04 "Алиса переодевается... Какая соблазнительная попка у неё... Ммм! Так. Пора бы сваливать. Вдруг, кто-то заметит!"
+    Max_04 ""
+
+# game/events/alice.rpy:503
+translate english alice_dressed_shop_3b812933:
+
+    # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
+    Max_03 ""
+
+# game/events/alice.rpy:579
+translate english alice_dressed_friend_caea4adc:
+
+    # Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+    Max_01 ""
+
+# game/events/alice.rpy:582
+translate english alice_dressed_friend_4670d0d6:
+
+    # Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт... А чтобы меня никто не заметил, лучше уходить!"
+    Max_05 ""
+
+# game/events/alice.rpy:585
+translate english alice_dressed_friend_474499f6:
+
+    # Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них было бы лучше... Так. Пора бы сваливать. Вдруг, кто-то заметит!"
+    Max_04 ""
+
+# game/events/alice.rpy:588
+translate english alice_dressed_friend_3b812933:
+
+    # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
+    Max_03 ""
 

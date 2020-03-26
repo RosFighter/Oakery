@@ -1048,5 +1048,5 @@ translate english strings:
 translate english SearchCigarettes_b89e2d47:
 
     # Max_09 "Так... Где же Алиса спрятала сигареты сегодня?"
-    Max_09 ""
+    Max_09 "So... Where did Alice hide her cigarettes today?"
 

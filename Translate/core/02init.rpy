@@ -126,3 +126,23 @@ translate english strings:
     old "У меня для тебя подарок {i}(Халат){/i}"
     new "I have a gift for you {i}(Bathrobe){/i}"
 
+# TODO: Translation updated at 2020-03-25 23:50
+
+translate english strings:
+
+    # game/core/02init.rpy:10
+    old "{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n"
+    new "{color=#E59400}{i}Persuasion Failed!{/i}{/color}\n"
+
+    # game/core/02init.rpy:11
+    old "{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Persuasion Successful!{/i}{/color}\n"
+
+    # game/core/02init.rpy:13
+    old "{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n"
+    new "{color=#00FF00}{i}You are undetected!{/i}{/color}\n"
+
+    # game/core/02init.rpy:14
+    old "{color=#E59400}{i}Вас заметили!{/i}{/color}\n"
+    new "{color=#E59400}{i}You've been spotted!{/i}{/color}\n"
+

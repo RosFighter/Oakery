@@ -976,3 +976,27 @@ translate english strings:
     old "Сомневаюсь, что теперь получится её подставить, уж слишком большое недоверие она ко мне испытывает."
     new ""
 
+# TODO: Translation updated at 2020-03-25 16:16
+
+translate english strings:
+
+    # game/core/03variables.rpy:207
+    old "СТРЕМЯНКА"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "ЛЁГКАЯ ПИЖАМА"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Удобнейшие маечка и шортики. В них не жарко душными летними ночами, и так же уютно в течение всего года."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "НОЧНУШКА"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Полупрозрачные сорочка и трусики. Облегающий фасон подчёркивает все достоинства и изгибы фигуры, а лёгкое кружево придаст ещё больше сексуальности."
+    new ""
+

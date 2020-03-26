@@ -202,35 +202,35 @@ translate english eric_ann_fucking_d45f853e:
     # Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..." nointeract
     Max_00 "Judging by the sounds, Mom and Eric are doing something. There's no need to open the door..." nointeract
 
-# game/events/eric.rpy:179
-translate english eric_ann_fucking_4ac6ccab:
+# game/events/eric.rpy:193
+translate english eric_ann_fucking_02303e2f:
 
-    # Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nБоже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
-    Max_10 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nMy God, what's mom doing?! Does she really like sucking that jerk off?!" nointeract
+    # Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
+    Max_10 "[undetect!t]My God, what's mom doing?! Does she really like sucking that jerk off?!" nointeract
 
-# game/events/eric.rpy:181
-translate english eric_ann_fucking_ad41b067:
+# game/events/eric.rpy:195
+translate english eric_ann_fucking_6f277737:
 
-    # Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nВот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
-    Max_07 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWow! It's like a porn movie! I couldn't even imagine that mom could do that. And Eric's keeping up with her... I think she really likes it!" nointeract
+    # Max_07 "[undetect!t]Вот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
+    Max_07 "[undetect!t]Wow! It's like a porn movie! I couldn't even imagine that mom could do that. And Eric's keeping up with her... I think she really likes it!" nointeract
 
-# game/events/eric.rpy:183
-translate english eric_ann_fucking_730d1153:
+# game/events/eric.rpy:197
+translate english eric_ann_fucking_fd07b201:
 
-    # Max_10 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nЧто?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
-    Max_10 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWhat?! My mom sucks off this freak? Eric, the bastard, he... fucks her in the mouth like some street whore! Why does she let him do that?!" nointeract
+    # Max_10 "[undetect!t]Что?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
+    Max_10 "[undetect!t]What?! My mom sucks off this freak? Eric, the bastard, he... fucks her in the mouth like some street whore! Why does she let him do that?!" nointeract
 
-# game/events/eric.rpy:185
-translate english eric_ann_fucking_9b720173:
+# game/events/eric.rpy:199
+translate english eric_ann_fucking_2223829f:
 
-    # Max_08 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНу вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
-    Max_08 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWell, Eric's fucking Mom from behind so powerfully... She just doesn't seem to have the strength to resist it, maybe she even likes it!" nointeract
+    # Max_08 "[undetect!t]Ну вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
+    Max_08 "[undetect!t]Well, Eric's fucking Mom from behind so powerfully... She just doesn't seem to have the strength to resist it, maybe she even likes it!" nointeract
 
-# game/events/eric.rpy:187
-translate english eric_ann_fucking_a0124bbd:
+# game/events/eric.rpy:201
+translate english eric_ann_fucking_769f0bc5:
 
-    # Max_07 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nНичего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
-    Max_07 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWow! What passion! My mom's riding Eric like crazy! I had no idea she was capable of that! They seem so passionate about each other, they won't notice if I come out from around the corner..." nointeract
+    # Max_07 "[undetect!t]Ничего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
+    Max_07 "[undetect!t]Wow! What passion! My mom's riding Eric like crazy! I had no idea she was capable of that! They seem so passionate about each other, they won't notice if I come out from around the corner..." nointeract
 
 # game/events/eric.rpy:198
 translate english eric_ann_fucking_7613d8b5:
@@ -316,23 +316,23 @@ translate english eric_ann_shower_1cdffa73:
     # Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..." nointeract
     Max_07 "Wow... Looks like there's more to it than just showering! I'm afraid to imagine what would happen if I got caught peeking... at this..." nointeract
 
-# game/events/eric.rpy:296
-translate english eric_ann_shower_8f665b71:
+# game/events/eric.rpy:405
+translate english eric_ann_shower_start_peeping_5b560f45:
 
-    # Max_04 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
-    Max_04 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nOhh... Eric's lucky... Mom's hands are so gentle and tender! Cant believe that's the only thing that makes her completely naked and wet body come..." nointeract
+    # Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
+    Max_04 "[undetect!t]Ohh... Eric's lucky... Mom's hands are so gentle and tender! Cant believe that's the only thing that makes her completely naked and wet body come..." nointeract
 
-# game/events/eric.rpy:298
-translate english eric_ann_shower_a1d37cf2:
+# game/events/eric.rpy:407
+translate english eric_ann_shower_start_peeping_065723ba:
 
-    # Max_06 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
-    Max_06 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nCrap! That's amazing! They seem so passionate about each other, they don't seem to care if someone sees them or not... And Mom seems to really like it!" nointeract
+    # Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
+    Max_06 "[undetect!t]Crap! That's amazing! They seem so passionate about each other, they don't seem to care if someone sees them or not... And Mom seems to really like it!" nointeract
 
-# game/events/eric.rpy:300
-translate english eric_ann_shower_334004c9:
+# game/events/eric.rpy:409
+translate english eric_ann_shower_start_peeping_cedd144b:
 
-    # Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОго! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
-    Max_05 "{color=[lime]}{i}You went unnoticed!{/i}{/color} \nWow! Eric's fucking Mom from behind like an animal...she seems to really like it, she's even grinding her ass against him!!" nointeract
+    # Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
+    Max_05 "[undetect!t]Wow! Eric's fucking Mom from behind like an animal...she seems to really like it, she's even grinding her ass against him!!" nointeract
 
 # game/events/eric.rpy:308
 translate english eric_ann_shower_925cd30e:
@@ -376,17 +376,17 @@ translate english eric_ann_sleep_9771290e:
 
 # TODO: Translation updated at 2020-03-12 12:28
 
-# game/events/eric.rpy:205
-translate english eric_ann_fucking_5cbdae7c:
+# game/events/eric.rpy:209
+translate english eric_ann_fucking_c6b7e289:
 
-    # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now!"
+    # Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
+    Ann_15 "[spotted!t]Max?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now!"
 
-# game/events/eric.rpy:319
-translate english eric_ann_shower_172a174a:
+# game/events/eric.rpy:392
+translate english eric_ann_shower_start_peeping_cdfa03c1:
 
-    # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-    Ann_15 "{color=[orange]}{i}You've been spotted!{/i}{/color}\nMax?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now!"
+    # Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
+    Ann_15 "[spotted!t]Max?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now!"
 
 translate english strings:
 
@@ -482,29 +482,6 @@ translate english eric_ann_shower_start_peeping_1cdffa73:
     # Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..." nointeract
     Max_07 "" nointeract
 
-# game/events/eric.rpy:391
-translate english eric_ann_shower_start_peeping_172a174a:
-
-    # Ann_15 "{color=[orange]}{i}Вас заметили!{/i}{/color}\nМакс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-    Ann_15 ""
-
-# game/events/eric.rpy:404
-translate english eric_ann_shower_start_peeping_8f665b71:
-
-    # Max_04 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
-    Max_04 "" nointeract
-
-# game/events/eric.rpy:406
-translate english eric_ann_shower_start_peeping_a1d37cf2:
-
-    # Max_06 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОхренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
-    Max_06 "" nointeract
-
-# game/events/eric.rpy:408
-translate english eric_ann_shower_start_peeping_334004c9:
-
-    # Max_05 "{color=[lime]}{i}Вы остались незамеченным!{/i}{/color} \nОго! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
-    Max_05 "" nointeract
 
 # game/events/eric.rpy:416
 translate english eric_ann_shower_start_peeping_925cd30e:

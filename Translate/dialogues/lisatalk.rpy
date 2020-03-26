@@ -2242,11 +2242,11 @@ translate english Lisa_HomeWork_show_breast_9405b190:
     # Lisa_10 "Ну Макс. Ты же мой брат..." nointeract
     Lisa_10 "Come on, Max. You're my brother..." nointeract
 
-# game/dialogues/lisatalk.rpy:975
-translate english Lisa_HomeWork_show_breast_cc99f52e:
+# game/dialogues/lisatalk.rpy:989
+translate english Lisa_HomeWork_show_breast_ad2bf7be:
 
-    # Lisa_09 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
-    Lisa_09 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nFine. It's not like a have a choice. Have a look, pervert... "
+    # Lisa_09 "[succes!t]Ладно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
+    Lisa_09 "[succes!t]Fine. It's not like a have a choice. Have a look, pervert..."
 
 # game/dialogues/lisatalk.rpy:976
 translate english Lisa_HomeWork_show_breast_d12691cd:
@@ -2254,11 +2254,11 @@ translate english Lisa_HomeWork_show_breast_d12691cd:
     # Lisa_00 "Ну всё, а теперь сделай работу на отлично!"
     Lisa_00 "Now do everything perfectly!"
 
-# game/dialogues/lisatalk.rpy:979
-translate english Lisa_HomeWork_show_breast_c693cd50:
+# game/dialogues/lisatalk.rpy:993
+translate english Lisa_HomeWork_show_breast_8569196e:
 
-    # Lisa_05 "{color=[lime]}{i}Убеждение удалось!{/i}{/color}\nЛадно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
-    Lisa_05 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nFine. "
+    # Lisa_05 "[succes!t]Ладно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
+    Lisa_05 "[succes!t] ..."
 
 # game/dialogues/lisatalk.rpy:980
 translate english Lisa_HomeWork_show_breast_5bbf7fe6:
@@ -2296,11 +2296,11 @@ translate english Lisa_HomeWork_show_breast_1e78def9:
     # Max_01 "Я старался. В этот раз всё будет хорошо."
     Max_01 "I did my best. This time everything will be fine."
 
-# game/dialogues/lisatalk.rpy:991
-translate english Lisa_HomeWork_show_breast_a9761a89:
+# game/dialogues/lisatalk.rpy:1005
+translate english Lisa_HomeWork_show_breast_d57733c8:
 
-    # Lisa_12 "{color=[orange]}{i}Убеждение не удалось!{/i}{/color}\nЗнаешь что, Макс? Отвали! Я сама всё сделаю. Пусть и на двойку, но зато без тебя с твоими... извращёнными мыслями!"
-    Lisa_12 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nYou know what, Max? Get lost! I'll do everything myself. I'd rather get an F than deal with you, perv."
+    # Lisa_12 "[failed!t]Знаешь что, Макс? Отвали! Я сама всё сделаю. Пусть и на двойку, но зато без тебя с твоими... извращёнными мыслями!"
+    Lisa_12 "[failed!t]You know what, Max? Get lost! I'll do everything myself. I'd rather get an F than deal with you, perv."
 
 # game/dialogues/lisatalk.rpy:992
 translate english Lisa_HomeWork_show_breast_2443b693:
@@ -2326,11 +2326,11 @@ translate english Lisa_HomeWork_make_bag_71e49abd:
     # Max_01 "Не за что!"
     Max_01 "You're welcome!"
 
-# game/dialogues/lisatalk.rpy:1011
-translate english Lisa_HomeWork_make_bag_5c1fa6c5:
+# game/dialogues/lisatalk.rpy:1025
+translate english Lisa_HomeWork_make_bag_3cf4b2ea:
 
-    # Lisa_02 "Да? Ну ладно. Тебе виднее... Не буду проверять даже. Спасибо за помощь, Макс!"
-    Lisa_02 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\nOkay, if you say so... I don't want to double-check. Thanks for your help, Max!"
+    # Lisa_02 "[succes!t]Да? Ну ладно. Тебе виднее... Не буду проверять даже. Спасибо за помощь, Макс!"
+    Lisa_02 "[succes!t]Okay, if you say so... I don't want to double-check. Thanks for your help, Max!"
 
 # game/dialogues/lisatalk.rpy:1014
 translate english Lisa_HomeWork_make_bag_71e49abd_1:
@@ -2338,11 +2338,11 @@ translate english Lisa_HomeWork_make_bag_71e49abd_1:
     # Max_01 "Не за что!"
     Max_01 "You're welcome!"
 
-# game/dialogues/lisatalk.rpy:1017
-translate english Lisa_HomeWork_make_bag_da238d5c:
+# game/dialogues/lisatalk.rpy:1031
+translate english Lisa_HomeWork_make_bag_bbf49f04:
 
-    # Lisa_13 "Нет, Макс, ты не прав. Тут надо всё совсем не так решать. Спасибо за помощь, но я уже разобралась..."
-    Lisa_13 "{color=[orange]}{i}Persuasion Failed!{/i}{/color}\nNo, Max, you're wrong. This isn't how you solve it. Thanks for your help, but I think I've figured it out."
+    # Lisa_13 "[failed!t]Нет, Макс, ты не прав. Тут надо всё совсем не так решать. Спасибо за помощь, но я уже разобралась..."
+    Lisa_13 "[failed!t]No, Max, you're wrong. This isn't how you solve it. Thanks for your help, but I think I've figured it out."
 
 # game/dialogues/lisatalk.rpy:1018
 translate english Lisa_HomeWork_make_bag_920afc01:
