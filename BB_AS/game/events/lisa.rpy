@@ -202,16 +202,7 @@ label lisa_dressed_school:
     label .look_window:
         $ spent_time = 10
         $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
-
-        if __ran1 == "01":
-            $ chars["lisa"].dress_inf = "02h"
-        elif __ran1 == "02":
-            $ chars["lisa"].dress_inf = "02e"
-        elif __ran1 == "03":
-            $ chars["lisa"].dress_inf = "02b"
-        else:
-            $ chars["lisa"].dress_inf = "02c"
-
+        $ chars["lisa"].dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[__ran1]
         scene BG char Lisa voyeur-00
         $ renpy.show("Lisa voyeur "+__ran1)
         $ renpy.show("FG voyeur-lisa-00"+mgg.dress)
@@ -273,22 +264,14 @@ label lisa_dressed_school:
                     show Lisa school-dressed 01a
                     Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
                 Max_00 "Пока, Лиза!"
-                $ __mood += 30 # при извинении отношение и настроение повышаются
-                $ __rel += 5
+                $ __mood += 30 # при извинении настроение повышается
 
         jump .rel_mood
 
     label .open_door:
         $ spent_time = 20
         $ __ran1 = renpy.random.randint(2, 5)
-        if __ran1 == 2:
-            $ chars["lisa"].dress_inf = "02a"
-        elif __ran1 == 3:
-            $ chars["lisa"].dress_inf = "02c"
-        elif __ran1 == 4:
-            $ chars["lisa"].dress_inf = "02b"
-        else:
-            $ chars["lisa"].dress_inf = "00"
+        $ chars["lisa"].dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[__ran1]
         scene BG char Lisa morning
         if GetRelMax("lisa")[0] < 0:
             $ renpy.show("Lisa school-dressed 0"+str(__ran1))
@@ -385,12 +368,7 @@ label lisa_dressed_shop:
         label .open_door:
             $ spent_time = 20
             $ __ran1 = renpy.random.randint(3, 5)
-            if __ran1 == 3:
-                $ chars["lisa"].dress_inf = "02c"
-            elif __ran1 == 4:
-                $ chars["lisa"].dress_inf = "02b"
-            else:
-                $ chars["lisa"].dress_inf = "00"
+            $ chars["lisa"].dress_inf = {3:'02c',4:'02b',5:'00'}[__ran1]
             scene BG char Lisa morning
             if GetRelMax("lisa")[0] < 0:
                 $ renpy.show("Lisa school-dressed 0"+str(__ran1))
@@ -432,19 +410,9 @@ label lisa_dressed_shop:
                     jump .rel_mood
 
         label .look_window:
-            # Max_00 "Кажется, всё самое интересное я уже пропустил..."
             $ spent_time = 10
             $ __ran1 = renpy.random.choice(["03", "04", "05", "06"])
-
-            if __ran1 == "03":
-                $ chars["lisa"].dress_inf = "02b"
-            elif __ran1 == "04":
-                $ chars["lisa"].dress_inf = "02c"
-            elif __ran1 == "05":
-                $ chars["lisa"].dress_inf = "02i"
-            else:
-                $ chars["lisa"].dress_inf = "02g"
-
+            $ chars["lisa"].dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[__ran1]
             scene BG char Lisa voyeur-00
             $ renpy.show("Lisa voyeur "+__ran1)
             $ renpy.show("FG voyeur-lisa-00"+mgg.dress)
@@ -480,14 +448,12 @@ label lisa_dressed_repetitor:
 
 
 label lisa_swim:
-
     scene image "Lisa swim "+pose3_1+chars["lisa"].dress
     # $ persone_button1 = "Lisa swim "+pose3_1+chars["lisa"].dress+"b"
     return
 
 
 label lisa_sun:
-
     scene image "BG char Lisa sun-"+pose3_1
     $ renpy.show("Lisa sun "+pose3_1+chars["lisa"].dress)
     $ persone_button1 = "Lisa sun "+pose3_1+chars["lisa"].dress
@@ -508,7 +474,6 @@ label lisa_dishes_closer:
 
 
 label lisa_phone:
-
     scene BG char Lisa bed-evening
     $ renpy.show("Lisa phone-evening "+pose3_1+chars["lisa"].dress)
     $ persone_button1 = "Lisa phone-evening "+pose3_1+chars["lisa"].dress

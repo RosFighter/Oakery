@@ -1138,7 +1138,7 @@ translate english strings:
 translate english smoke_nofear_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 "Max, did you came here to stare?"
+    Alice_00 "Max, did you come here to stare?"
 
 # game/dialogues/alicetalk.rpy:570
 translate english smoke_nofear_caee999b:
@@ -2012,7 +2012,7 @@ translate english gift_book_e3601278:
 translate english gift_book_38e7c1e0:
 
     # Alice_13 "Шуточки у тебя, как и прежде, дурацкие! А книжку я возьму. Молодец, что угадал... Спасибо."
-    Alice_13 "Your jokes are creepy. I'll take a book, though. Good job on guessing what I like. Thank you."
+    Alice_13 "Your jokes are creepy. I'll take the book, though. Good job on guessing what I like. Thank you."
 
 # game/dialogues/alicetalk.rpy:994
 translate english gift_book_64ab516e:
@@ -2024,7 +2024,7 @@ translate english gift_book_64ab516e:
 translate english gift_book_03d13f43:
 
     # Alice_07 "Умный он... Ну, молодец, что догадался. Спасибо, Макс! Если ещё попадутся из этой серии, буду рада принять их от тебя. Безвозмездно!"
-    Alice_07 "Einstein... Well, good job on the book guessing. Thank you, Max! If you'll find something like this again, I'll be glad to take them. Without compensation!"
+    Alice_07 "Einstein... Well, good job on the book guessing. Thank you, Max! If you find something like this again, I'll be glad to take them. Without compensation!"
 
 # game/dialogues/alicetalk.rpy:997
 translate english gift_book_e6768cdc:
@@ -2060,7 +2060,7 @@ translate english gift_book_9652c3b9_1:
 translate english gift_book_dadbaec2:
 
     # Alice_07 "Супер! Ты меня удивляешь, Макс! Если ещё что будет почитать, приноси. Я люблю подобную... литературу."
-    Alice_07 "Super! You surprise me, Max! If you'll stumble into something like this again, I would love to have it. I love such... literature."
+    Alice_07 "Great! You surprise me, Max! If you stumble into something like this again, I would love to have it. I love such... literature."
 
 # game/dialogues/alicetalk.rpy:1012
 translate english gift_book_9b836c58:

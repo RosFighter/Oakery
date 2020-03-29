@@ -377,6 +377,12 @@ screen main_menu():
     tag menu
 
     style_prefix "main_menu"
+    if _preferences.language is None:
+        key "l" action Language("english")
+        key "д" action Language("english")
+    else:
+        key "l" action Language(None)
+        key "д" action Language(None)
 
     add gui.main_menu_background
 
