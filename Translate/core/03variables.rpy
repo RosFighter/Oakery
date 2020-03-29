@@ -862,7 +862,7 @@ translate english strings:
 
     # game/core/03variables.rpy:302
     old "Наши забавы с Алисой в постели, как и ожидалось, дошли до самого интересного... Да она сама на меня прыгает! Слава паукам!"
-    new ""
+    new "Our fun in bed with Alice, as expected, has gotten  interesting... She's jumping on me! Hail to the spiders!"
 
     # game/core/03variables.rpy:313
     old "Альфа"
@@ -986,7 +986,7 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "ЛЁГКАЯ ПИЖАМА"
-    new "EASY BEACH"
+    new "BLUE PYJAMAS"
 
     # game/core/03variables.rpy:207
     old "Удобнейшие маечка и шортики. В них не жарко душными летними ночами, и так же уютно в течение всего года."
