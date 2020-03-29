@@ -674,5 +674,5 @@ translate english punishment_max_pun_reson_8b8f1722:
 translate english punishment_alice_5c85cc9f:
 
     # Max_09 "{i}Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас!{/i}"
-    Max_09 ""
+    Max_09 "{i}Wow! What are panties doing on Alice?! I thought we agreed with her... That's it, sis, you're in trouble. ...and much more than you are now.{/i}"
 

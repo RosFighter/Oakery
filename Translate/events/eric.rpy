@@ -408,96 +408,96 @@ translate english eric_ann_fucking_05040526:
 translate english eric_ann_shower_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 ""
+    Max_04 "Let's see what we have here..."
 
 # game/events/eric.rpy:311
 translate english eric_ann_shower_ladder_6725d9af:
 
     # Max_07 "Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся..."
-    Max_07 ""
+    Max_07 "Ohh... Oh, my God, what tenderness. Looks like something's about to start..."
 
 # game/events/eric.rpy:315
 translate english eric_ann_shower_ladder_20e247fe:
 
     # Max_10 "Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..."
-    Max_10 ""
+    Max_10 "My Mom's sucking it again... ! With such passion! Does she really like it that much, or does she love it? Although I don't even want to think about the possibility..."
 
 # game/events/eric.rpy:317
 translate english eric_ann_shower_ladder_90b0887e:
 
     # Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!"
-    Max_09 ""
+    Max_09 "Oh, shit! Eric came right on Mom's face, like in some porno! And she likes it so much, she smiles and catches his cum with her mouth! Is she really that depraved?!"
 
 # game/events/eric.rpy:320
 translate english eric_ann_shower_ladder_4ce9d959:
 
     # Max_09 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!"
-    Max_09 ""
+    Max_09 "Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!"
 
 # game/events/eric.rpy:325
 translate english eric_ann_shower_ladder_993c77ee:
 
     # Max_09 "Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?"
-    Max_09 ""
+    Max_09 "Wow! What a passion Mom has for sucking Eric... And he doesn't seem to have enough and he's trying to put his dick deep in her mouth... Why does she let him do it, does she like to obey?"
 
 # game/events/eric.rpy:330
 translate english eric_ann_shower_ladder_c6081091:
 
     # Max_08 "О Боже! Как бы я мечтал оказаться на месте это счастливого ублюдка! И всё равно, что она - моя мама... Когда её мокрая попка так красиво скачет на члене, голова начинает идти кругом!"
-    Max_08 ""
+    Max_08 "Oh, my God! I wish I could have been that lucky bastard!  When her wet ass jumps so nicely on her dick, her head starts to bounce!"
 
 # game/events/eric.rpy:335
 translate english eric_ann_shower_ladder_fa236e0e:
 
     # Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!"
-    Max_10 ""
+    Max_10 "Wow! That's what they do! Eric fucks Mom like some slut in the mirror, and she also caresses her already wet pussy... Yeah, as long as you don't fall off a ladder like that!"
 
 # game/events/eric.rpy:342
 translate english eric_ann_shower_ladder_6bc8173a:
 
     # Max_10 "Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко..."
-    Max_10 ""
+    Max_10 "Wow! Eric punches Mom in the back with such force that you can even hear a slap on her ass through the glass! Looks like she can barely hold herself back from screaming too loud..."
 
 # game/events/eric.rpy:349
 translate english eric_ann_shower_fin1_547d305b:
 
     # Max_08 "Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена... Охх... мама, а ведь ты та ещё развратница!"
-    Max_08 ""
+    Max_08 "Crap! She took all his sperm in her mouth and in her face, and now she licks it off his dick with such greed and pleasure... Ohh... Mom, you are such a pervert!"
 
 # game/events/eric.rpy:353
 translate english eric_ann_shower_fin2_7b69081a:
 
     # Max_10 "А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!"
-    Max_10 ""
+    Max_10 "And here comes the finale! Eric finished on Mom's whole face and chest, and she seems very happy... smiling... Ohh... how hot and dirty she is!"
 
 # game/events/eric.rpy:357
 translate english eric_ann_shower_end_90ff417e:
 
     # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-    Max_00 ""
+    Max_00 "I don't want to, but before I get noticed, I'd better..."
 
 # game/events/eric.rpy:371
 translate english eric_ann_shower_start_peeping_1cdffa73:
 
     # Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Wow... Looks like there's more to it than just showering! I'm afraid to imagine what would happen if I got caught peeking... at this..." nointeract
 
 
 # game/events/eric.rpy:416
 translate english eric_ann_shower_start_peeping_925cd30e:
 
     # Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Yeah! Who'd doubt that Eric wouldn't last too long. Mom knows what she's doing! Okay, we gotta get out of here before they see me!" nointeract
 
 # game/events/eric.rpy:418
 translate english eric_ann_shower_start_peeping_b85f5146:
 
     # Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Oh, shit... Eric's already finished... It's a good thing it's not on Mom... Lucky son of a bitch... And she's still smiling?! It's time for me to leave or they'll notice..." nointeract
 
 # game/events/eric.rpy:420
 translate english eric_ann_shower_start_peeping_cc0c1868:
 
     # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
-    Max_08 "" nointeract
+    Max_08 "Bloody hell... he's already finished... Lucky bastard... splattered all over Mom's back with his cum! We've got to go, before they notice me..." nointeract
 
