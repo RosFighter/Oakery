@@ -295,6 +295,7 @@ label eric_ann_shower:
         "{i}уйти{/i}":
             return
     label .ladder:
+        $ talk_var['ae.ladd'] += 1
         $ spent_time += 20
         $ renpy.scene()
         $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
@@ -357,6 +358,11 @@ label eric_ann_shower:
 
     label .end:
         Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
+        if talk_var['ae.ladd'] > 1 and house[3].cams and not flags['cam2bath']:
+            $ flags['cam2bath'] = True
+            $ house[3].max_cam = 2
+            Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
+
         $ current_room = house[6]
         jump Waiting
 

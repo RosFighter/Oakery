@@ -862,7 +862,7 @@ translate english strings:
 
     # game/core/03variables.rpy:302
     old "Наши забавы с Алисой в постели, как и ожидалось, дошли до самого интересного... Да она сама на меня прыгает! Слава паукам!"
-    new ""
+    new "Our fun in bed with Alice, as expected, has gotten  interesting... She's jumping on me! Hail to the spiders!"
 
     # game/core/03variables.rpy:313
     old "Альфа"
@@ -954,27 +954,27 @@ translate english strings:
 
     # game/core/03variables.rpy:294
     old "Хоть я и пообещал помогать Лизе с уроками, но делать этого я не стал. И без того было много дел. После очередной двойки и наказания от мамы, она подошла ко мне и упрашивала о помощи. Я согласился, но с условием, что она будет спать только в футболке и трусиках. И думаю, что мне удастся её ещё на что-нибудь раскрутить..."
-    new ""
+    new "Even though I promised to help Lisa with her lessons, I didn't do it. And there was already a lot to do. After another F and Mom's punishment, she came to me and asked for help. I agreed, but with the condition that she would only sleep in her T-shirt and panties. And I think I can get her to do something else..."
 
     # game/core/03variables.rpy:294
     old "Правда, Лиза слегка на меня обиделась, но это я переживу. Подарю ей что-нибудь вкусненькое и она оттает..."
-    new ""
+    new "It's true Lisa's a little offended with me, but I'll get over it. I'll give her something delicious and she'll thaw..."
 
     # game/core/03variables.rpy:294
     old "Я помогал Лизе с уроками какое-то время, причём безвозмездно, но это стало довольно скучным делом и я перестал уделять ей внимание с этим. И вот, после очередной двойки и наказания от мамы, она обратилась ко мне за помощью. Я согласился, но с условием, что она будет спать только в футболке и трусиках. И думаю, что мне удастся её ещё на что-нибудь раскрутить..."
-    new ""
+    new "I helped Lisa with her homework for a while, and for free, but it got pretty boring and I stopped paying attention to it. And so, after another F and a punishment from Mom, she came to me for help. I agreed, but on the condition that she would only sleep in her T-shirt and panties. And I think I can get her to do something else..."
 
     # game/core/03variables.rpy:294
     old "Пообещав помогать Лизе с уроками по принципу \"ты мне - я тебе\", я через некоторое время совсем про неё забыл. И вот, после очередной двойки и наказания от мамы, Лиза напомнила о том, что я ей обещал. Пожалуй, мне стоит уделять её урокам больше внимания..."
-    new ""
+    new "Having promised to help Lisa with her lessons, I forgot all about her after a while. And so, after another round of punishments from Mom, Lisa reminded me of what I promised her. Maybe I should pay more attention to her lessons..."
 
     # game/core/03variables.rpy:294
     old "Под видом помощи с уроками Лизы, я намеренно делал ошибки так, чтобы ей ставили двойки и наказывали... В чём теперь она меня и подозревает. Не удивительно, что Лиза сильно обиделась на меня, но вместе с тем, от моей помощи не отказалась..."
-    new ""
+    new "Under the guise of helping with Lisa's lessons, I deliberately made mistakes so that she would get a D and get punished... Which is what she now suspects me of. No wonder Lisa was very angry with me, but at the same time, my help was not refused..."
 
     # game/core/03variables.rpy:294
     old "Сомневаюсь, что теперь получится её подставить, уж слишком большое недоверие она ко мне испытывает."
-    new ""
+    new "I doubt it'll be possible to intentionally make mistakes now, she's too distrustful of me."
 
 # TODO: Translation updated at 2020-03-25 16:16
 
@@ -982,21 +982,21 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "СТРЕМЯНКА"
-    new ""
+    new "STEPLADDER"
 
     # game/core/03variables.rpy:207
     old "ЛЁГКАЯ ПИЖАМА"
-    new ""
+    new "EASY PYJAMAS"
 
     # game/core/03variables.rpy:207
     old "Удобнейшие маечка и шортики. В них не жарко душными летними ночами, и так же уютно в течение всего года."
-    new ""
+    new "The most comfortable shirts and shorts. They are not hot on stuffy summer nights, and just as cozy throughout the year."
 
     # game/core/03variables.rpy:207
     old "НОЧНУШКА"
-    new ""
+    new "NIGHTIE"
 
     # game/core/03variables.rpy:207
     old "Полупрозрачные сорочка и трусики. Облегающий фасон подчёркивает все достоинства и изгибы фигуры, а лёгкое кружево придаст ещё больше сексуальности."
-    new ""
+    new "Translucent shirt and panties. Fitting styles emphasize all the advantages and curves of the figure, and a light lace will add even more sexuality."
 
