@@ -966,7 +966,7 @@ translate english strings:
 
     # game/core/03variables.rpy:294
     old "Пообещав помогать Лизе с уроками по принципу \"ты мне - я тебе\", я через некоторое время совсем про неё забыл. И вот, после очередной двойки и наказания от мамы, Лиза напомнила о том, что я ей обещал. Пожалуй, мне стоит уделять её урокам больше внимания..."
-    new "Having promised to help Lisa with her lessons, I forgot all about her after a while. And so, after another round of punishments from Mom, Lisa reminded me of what I promised her. Maybe I should pay more attention to her lessons..."
+    new "Having promised to help Lisa with her lessons, I forgot all about our quid pro quo. And so, after another round of punishments from Mom, Lisa reminded me of what I promised her. Maybe I should pay more attention to her lessons..."
 
     # game/core/03variables.rpy:294
     old "Под видом помощи с уроками Лизы, я намеренно делал ошибки так, чтобы ей ставили двойки и наказывали... В чём теперь она меня и подозревает. Не удивительно, что Лиза сильно обиделась на меня, но вместе с тем, от моей помощи не отказалась..."
