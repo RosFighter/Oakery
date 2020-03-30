@@ -1050,3 +1050,11 @@ translate english SearchCigarettes_b89e2d47:
     # Max_09 "Так... Где же Алиса спрятала сигареты сегодня?"
     Max_09 "So... Where did Alice hide her cigarettes today?"
 
+# TODO: Translation updated at 2020-03-30 11:37
+
+# game/events/max.rpy:668
+translate english InstallCam_e958aece:
+
+    # Max_03 "{i}Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится!{/i}" nointeract
+    Max_03 "" nointeract
+

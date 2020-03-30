@@ -1000,3 +1000,47 @@ translate english strings:
     old "Полупрозрачные сорочка и трусики. Облегающий фасон подчёркивает все достоинства и изгибы фигуры, а лёгкое кружево придаст ещё больше сексуальности."
     new "Translucent shirt and panties. Fitting styles emphasize all the advantages and curves of the figure, and a light lace will add even more sexuality."
 
+# TODO: Translation updated at 2020-03-30 11:37
+
+translate english strings:
+
+    # game/core/03variables.rpy:207
+    old "Набор косметики"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Небольшой набор косметики для повседневного использования. Для женщин - только лучшее..."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Шоколад \"Ritter Sport\" mini (9 штук)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Шоколадное наслаждение для каждого случая... Множество лакомых сортов с лучшими ингредиентами со всего мира."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Шоколад \"Ritter Sport\" (4 штуки)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Raffaello\" (16 штук)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Хрустящие кокосовые конфеты с цельным миндальным орехом. Вместо тысячи слов..."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Raffaello\" (24 штуки)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Ferrero Rocher\""
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."
+    new ""
+

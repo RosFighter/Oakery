@@ -945,7 +945,7 @@ translate english spider_in_bed_help_16cd97c2:
 translate english spider_in_bed_help_9e5a84ed:
 
     # Alice_00 "Ладно, ладно, признаю, они были сегодня на мне, потому что без них мне всё натирает."
-    Alice_00 "Okay, okay, I'll admit, I was wearing them today. But do you know how uncomfortable it is to wear jeans without panties? "
+    Alice_00 "Okay, okay, I'll admit, I was wearing them today. But do you know how uncomfortable it is to wear jeans without panties?"
 
 # game/events/alice.rpy:623
 translate english spider_in_bed_help_d646b3d5:
@@ -1022,12 +1022,12 @@ translate english spider_in_bed_spider_952bda97:
 translate english strings:
 
     # game/events/alice.rpy:563
-    old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Я прав или я прав?!"
-    new "I'm gonna catch a spider, except someone's breaking the deal! Am I right or am I right?!"
+    old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Или может я не прав?!"
+    new "I'm gonna catch a spider, except someone's breaking the deal! Or maybe I'm wrong?!"
 
     # game/events/alice.rpy:595
     old "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new "Beautiful eyes are easier to open...... {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
+    new "Beautiful eyes are easier to open... {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
 
     # game/events/alice.rpy:595
     old "Давай уже показывай сиськи!"
@@ -1057,7 +1057,7 @@ translate english alice_shower_spider_09c9d753:
 translate english alice_shower_spider_7e56af7c:
 
     # Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
-    Max_01 "Looks like I was able to clear out the bathroom before Alice noticed ... That's good. She's about to spot a spider! Just need to wait a little longer..."
+    Max_01 "Looks like I was able to clear out the bathroom before Alice noticed... That's good. She's about to spot a spider! Just need to wait a little longer..."
 
 # game/events/alice.rpy:277
 translate english alice_shower_spider_2b0b0322:

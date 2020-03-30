@@ -2946,7 +2946,7 @@ translate english conversation_after_dinner_acc8a38c_1:
 translate english conversation_after_dinner_b98495a9:
 
     # Lisa_09 "Почему ты перестал помогать мне с уроками? Мы же договорились, ты мне – я тебе!"
-    Lisa_09 "Why did you stop helping me with my homework? We agreed!"
+    Lisa_09 "Why did you stop helping me with my homework? I've been keeping my end of the agreement but I can't say the same for you!"
 
 # game/dialogues/lisatalk.rpy:1258
 translate english conversation_after_dinner_789f6df2:

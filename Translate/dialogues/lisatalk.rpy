@@ -3042,3 +3042,65 @@ translate english strings:
     old "Лиза обижена. Её отношение к Максу значительно ухудшилось."
     new "Lisa is offended. Her attitude towards Max has deteriorated considerably."
 
+# TODO: Translation updated at 2020-03-30 11:37
+
+# game/dialogues/lisatalk.rpy:1131
+translate english gift_swimsuit_swimsuit_show_f3bcd218:
+
+    # Lisa_02 "Я рада, Макс. А теперь тебя ждут обнимашки! Иди ко мне..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1132
+translate english gift_swimsuit_swimsuit_show_e182d0e4:
+
+    # Max_07 "Оу... Это мне нравится!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1134
+translate english gift_swimsuit_swimsuit_show_b784dabf:
+
+    # Lisa_05 "Спасибо тебе большое! Как ты только нашёл этот купальник? Я именно о таком и мечтала!"
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:1137
+translate english gift_swimsuit_swimsuit_show_e163e982:
+
+    # Lisa_01 "Даже не представляю, где ты взял на него деньги! Он ведь дорогой..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1139
+translate english gift_swimsuit_swimsuit_show_d6eb93d6:
+
+    # Max_05 "Мне дороже улыбка моей любимой младшей сестрёнки! И кстати, ты помнишь, что хотела поцеловать меня в щёчку, если я достану для тебя этот купальник?"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:1140
+translate english gift_swimsuit_swimsuit_show_62e397b6:
+
+    # Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:1142
+translate english gift_swimsuit_swimsuit_show_dda42a93:
+
+    # Max_06 "{i}Просто супер! Полуголая сестрёнка целует меня в щёку! Она слегка прижалась ко мне своей грудью и даже через одежду я чувствую, какая она у неё упругая...{/i}"
+    Max_06 ""
+
+# game/dialogues/lisatalk.rpy:1144
+translate english gift_swimsuit_swimsuit_show_9b1cd788:
+
+    # Lisa_03 "Ну вот, теперь всем хорошо! А мне уже не терпится поплавать и позагорать в своём новом купальнике..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1146
+translate english gift_swimsuit_swimsuit_show_27e81dff:
+
+    # Lisa_03 "Это очень мило, Макс! Мне уже не терпится поплавать и позагорать в нём..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1147
+translate english gift_swimsuit_swimsuit_show_7002ae6a:
+
+    # Max_03 "Наслаждайся."
+    Max_03 ""
+

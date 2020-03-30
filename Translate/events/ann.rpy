@@ -761,7 +761,7 @@ translate english ann_dressed_work_gift_b6991faf:
 translate english ann_dressed_work_gift_e66adddb:
 
     # Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-    Ann_05 "[succes!t]You're very nice today, Max! For that, I'll even kiss you on the cheek as motivation to please me more often... ..."
+    Ann_05 "[succes!t]You're very nice today, Max! For that, I'll even kiss you on the cheek as motivation to please me more often..."
 
 # game/events/ann.rpy:335
 translate english ann_dressed_work_gift_84cd6647:
@@ -851,4 +851,180 @@ translate english strings:
     # game/events/ann.rpy:356
     old "[failed!t]"
     new "[failed!t]"
+
+# TODO: Translation updated at 2020-03-30 11:37
+
+# game/events/ann.rpy:396
+translate english ann_dressed_shop_2f691176:
+
+    # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на шопинг. Подожди немного, дорогой."
+    Ann ""
+
+# game/events/ann.rpy:397
+translate english ann_dressed_shop_f3117b6b_1:
+
+    # Max_00 "Хорошо, мам."
+    Max_00 ""
+
+# game/events/ann.rpy:415
+translate english ann_dressed_shop_3e8f5598:
+
+    # Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
+    Ann_12 ""
+
+# game/events/ann.rpy:416
+translate english ann_dressed_shop_c8682e5b_1:
+
+    # Max_00 "Конечно, мам!"
+    Max_00 ""
+
+# game/events/ann.rpy:418
+translate english ann_dressed_shop_acf27c66:
+
+    # Max_00 "Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит."
+    Max_00 ""
+
+# game/events/ann.rpy:434
+translate english ann_dressed_shop_a4d8ba92:
+
+    # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
+    Max_01 ""
+
+# game/events/ann.rpy:442
+translate english ann_dressed_shop_gift_a14e771b:
+
+    # Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
+    Ann_01 ""
+
+# game/events/ann.rpy:443
+translate english ann_dressed_shop_gift_efc9083b:
+
+    # Max_04 "У меня для тебя подарок! Ночнушка!"
+    Max_04 ""
+
+# game/events/ann.rpy:444
+translate english ann_dressed_shop_gift_e131ac39:
+
+    # Ann_06 "Ты это серьёзно? Но в честь чего?"
+    Ann_06 ""
+
+# game/events/ann.rpy:445
+translate english ann_dressed_shop_gift_860498c1:
+
+    # Max_05 "Просто ты - самая лучшая мама на свете!"
+    Max_05 ""
+
+# game/events/ann.rpy:446
+translate english ann_dressed_shop_gift_56ae1652:
+
+    # Ann_08 "Ох, Макс, ты мне льстишь! Это так... неожиданно! Спасибо тебе мой милый, я очень тронута!"
+    Ann_08 ""
+
+# game/events/ann.rpy:447
+translate english ann_dressed_shop_gift_60f1c9d7:
+
+    # Max_03 "Может, примеришь?"
+    Max_03 ""
+
+# game/events/ann.rpy:448
+translate english ann_dressed_shop_gift_f5c9d21b:
+
+    # Ann_06 "Примерить? Для тебя? Ну... ладно... Думаю, ты это заслужил. Подожди, пожалуйста, за дверью..."
+    Ann_06 ""
+
+# game/events/ann.rpy:449
+translate english ann_dressed_shop_gift_cc0857da:
+
+    # Max_01 "Хорошо, мам."
+    Max_01 ""
+
+# game/events/ann.rpy:451
+translate english ann_dressed_shop_gift_dec66268:
+
+    # Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
+    Ann ""
+
+# game/events/ann.rpy:452
+translate english ann_dressed_shop_gift_461f061a:
+
+    # Max_10 "Тебе не понравился подарок?!"
+    Max_10 ""
+
+# game/events/ann.rpy:453
+translate english ann_dressed_shop_gift_0f666c00:
+
+    # Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
+    Ann ""
+
+# game/events/ann.rpy:454
+translate english ann_dressed_shop_gift_00ed580c:
+
+    # Max_09 "Я уже большой, мам! Я же от души!"
+    Max_09 ""
+
+# game/events/ann.rpy:455
+translate english ann_dressed_shop_gift_f9e66542:
+
+    # Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
+    Ann ""
+
+# game/events/ann.rpy:456
+translate english ann_dressed_shop_gift_75fcb6dd:
+
+    # Max_02 "Думаю, смотрится она на тебе просто фантастически!"
+    Max_02 ""
+
+# game/events/ann.rpy:459
+translate english ann_dressed_shop_gift_d954a734:
+
+    # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
+    Ann_08 ""
+
+# game/events/ann.rpy:462
+translate english ann_dressed_shop_gift_7a4eaba8:
+
+    # Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
+    Max_05 ""
+
+# game/events/ann.rpy:468
+translate english ann_dressed_shop_gift_cda3b4f9:
+
+    # Ann_04 "Ну всё, мой дорогой, нам с девочками ещё нужно успеть пробежаться по магазинам сегодня..." nointeract
+    Ann_04 "" nointeract
+
+# game/events/ann.rpy:474
+translate english ann_dressed_shop_gift_e66adddb:
+
+    # Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
+    Ann_05 ""
+
+# game/events/ann.rpy:476
+translate english ann_dressed_shop_gift_d97afa36:
+
+    # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
+    Max_06 ""
+
+# game/events/ann.rpy:479
+translate english ann_dressed_shop_gift_c0df5b86:
+
+    # Ann_04 "А теперь иди, сынок... Пора заниматься делами." nointeract
+    Ann_04 "" nointeract
+
+# game/events/ann.rpy:497
+translate english ann_dressed_shop_fail_38501c1b:
+
+    # Ann_01 "[_text!tq]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
+    Ann_01 "" nointeract
+
+# game/events/ann.rpy:505
+translate english ann_dressed_shop_loveyou_e41c68c6:
+
+    # Ann_07 "И я тебя, Макс..."
+    Ann_07 ""
+
+# game/events/ann.rpy:509
+translate english ann_dressed_shop_goodday_1a01074c:
+
+    # Ann_02 "Спасибо, сынок! И тебе тоже..."
+    Ann_02 ""
 

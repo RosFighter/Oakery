@@ -761,7 +761,7 @@ translate english ann_dressed_work_gift_b6991faf:
 translate english ann_dressed_work_gift_e66adddb:
 
     # Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-    Ann_05 "[succes!t] You're very nice today, Max! For that, I'll even kiss you on the cheek as motivation to please me more often..."
+    Ann_05 "[succes!t]You're very nice today, Max! For that, I'll even kiss you on the cheek as motivation to please me more often..."
 
 # game/events/ann.rpy:335
 translate english ann_dressed_work_gift_84cd6647:

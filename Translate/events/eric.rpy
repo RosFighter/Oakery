@@ -501,3 +501,11 @@ translate english eric_ann_shower_start_peeping_cc0c1868:
     # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
     Max_08 "Bloody hell... he's already finished... Lucky bastard... splattered all over Mom's back with his cum! We've got to go, before they notice me..." nointeract
 
+# TODO: Translation updated at 2020-03-30 11:37
+
+# game/events/eric.rpy:364
+translate english eric_ann_shower_end_f00d8bbc:
+
+    # Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
+    Max_09 ""
+
