@@ -37,7 +37,6 @@ init python:
     config.automatic_images = [' ', '_', '/'] # список разделителей для создания тегов
     config.automatic_images_strip = ["images", "gui"] # здесь через запятую можно указать и другие папки из директории game
 
-
 image video1_movie = Movie(play="video/Impulse.webm", image="images/interface/laptop/start_page.webp", size=(1475, 829))
 
 image AnimAnnEric1:  # Анимация в спальне

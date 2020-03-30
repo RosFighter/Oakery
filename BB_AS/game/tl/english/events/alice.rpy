@@ -861,189 +861,189 @@ translate english spider_in_bed_help_c44a026d:
 translate english spider_in_bed_help_6e299c17:
 
     # Alice_06 "Макс, не наглей! Я и так перед тобой тут в одних трусиках... Тебе этого мало что ли?!"
-    Alice_06 ""
+    Alice_06 "Max, don't be cheeky! I'm already in front of you in my panties... Isn't that enough for you?!"
 
 # game/events/alice.rpy:592
 translate english spider_in_bed_help_280fc180:
 
     # Max_07 "Ну, я вижу, что условия нашей договорённости ты соблюдаешь, только вот к поимке паука это никак не относится."
-    Max_07 ""
+    Max_07 "Well, I can see that you're complying with the terms of our agreement, except it has nothing to do with catching the spider."
 
 # game/events/alice.rpy:593
 translate english spider_in_bed_help_207bbb6c:
 
     # Alice_12 "И чего тебе, в таком случае, ещё от меня надо?"
-    Alice_12 ""
+    Alice_12 "And what more do you want from me, then?"
 
 # game/events/alice.rpy:594
 translate english spider_in_bed_help_1550b509:
 
     # Max_01 "Видишь ли, глаза совсем заспанные, никак не могу разглядеть паука... Но думаю твои прекрасные сосочки мне с этим помогут!"
-    Max_01 ""
+    Max_01 "You see, my eyes are completely shut, I can't see the spider... But I think your beautiful nipples will help me with that!"
 
 # game/events/alice.rpy:595
 translate english spider_in_bed_help_d7fe9c1f:
 
     # Alice_15 "Ах, так! Значит то, что договорённость я соблюдаю, ты видишь, а вот здоровенного паука на моей кровати нет?!" nointeract
-    Alice_15 "" nointeract
+    Alice_15 "Ah, right! So what I'm doing is keeping the deal, but there's no big spider on my bed?!" nointeract
 
 # game/events/alice.rpy:611
 translate english spider_in_bed_help_a5c16c8c:
 
     # Alice_12 "Ну забыла я снять лифчик перед сном, просто по привычке... Подумаешь, какое большое преступление!"
-    Alice_12 ""
+    Alice_12 "Well, I forgot to take my bra off before bed, just out of habit... What a crime!"
 
 # game/events/alice.rpy:612
 translate english spider_in_bed_help_bb674fdf:
 
     # Max_09 "Конечно большое! Ты просто наплевала на наш уговор, а я ведь твою задницу спас от маминой хлёсткой руки... Я его тоже тогда соблюдать не стану, так что завтра получишь! Приятных снов..."
-    Max_09 ""
+    Max_09 "Of course it's big! You just didn't give a damn about our deal, and I saved your ass from Mom... I'm not gonna follow it either, so you'll get it tomorrow! Sleep well..."
 
 # game/events/alice.rpy:613
 translate english spider_in_bed_help_60173e5f:
 
     # Alice_14 "Нет, нет, нет! Ты куда собрался?! У меня же паук на кровати!"
-    Alice_14 ""
+    Alice_14 "No, no, no! Where are you going?! I have a spider on my bed!"
 
 # game/events/alice.rpy:614
 translate english spider_in_bed_help_c57400a7:
 
     # Max_07 "Что тут скажешь... Успехов тебе!"
-    Max_07 ""
+    Max_07 "Good luck Sis!"
 
 # game/events/alice.rpy:615
 translate english spider_in_bed_help_93127800:
 
     # Alice_06 "Ну не надо так, Макс! Я не буду больше нарушать наш уговор, только избавься от паука... Пожалуйста!"
-    Alice_06 ""
+    Alice_06 "Don't be like that, Max! I won't break our deal anymore, just get rid of the spider... Please!"
 
 # game/events/alice.rpy:618
 translate english spider_in_bed_help_f9cd0de1:
 
     # Alice_06 "О чём это ты говоришь, Макс?"
-    Alice_06 ""
+    Alice_06 "What are you saying, Max?"
 
 # game/events/alice.rpy:619
 translate english spider_in_bed_help_b0ae32f7:
 
     # Max_08 "Мы ведь договорились, что ты не будешь одевать трусы днём. А я их на тебе видел!"
-    Max_08 ""
+    Max_08 "We agreed that you wouldn't wear underwear during the day. But I saw you wearing them!"
 
 # game/events/alice.rpy:620
 translate english spider_in_bed_help_dccc7eb9:
 
     # Alice_14 "А мне вот интересно, когда это ты их мог увидеть?! Подглядывал, как я одеваюсь?"
-    Alice_14 ""
+    Alice_14 "And when would that have been? While you were peeking at me getting dressed?"
 
 # game/events/alice.rpy:621
 translate english spider_in_bed_help_16cd97c2:
 
     # Max_07 "Как будто это нужно?! Они у тебя иногда прямо из-под джинс слегка торчат... Так что важно не то, как и где я это увидел, а то, что они на тебе были!"
-    Max_07 ""
+    Max_07 "You wish. Sometimes they stick out a little bit from under your jeans... So it's not how or where I saw it that matters, it's that you wore it!"
 
 # game/events/alice.rpy:622
 translate english spider_in_bed_help_9e5a84ed:
 
     # Alice_00 "Ладно, ладно, признаю, они были сегодня на мне, потому что без них мне всё натирает."
-    Alice_00 ""
+    Alice_00 "Okay, okay, I'll admit, I was wearing them today. But do you know how uncomfortable it is to wear jeans without panties?"
 
 # game/events/alice.rpy:623
 translate english spider_in_bed_help_d646b3d5:
 
     # Max_09 "То есть ты просто наплевала на наш уговор?! А я ведь твою задницу спас от маминой хлёсткой руки... Я его тоже тогда соблюдать не стану, так что завтра получишь! Приятных снов..."
-    Max_09 ""
+    Max_09 "So you just didn't give a damn about our deal?! And I saved your ass with my mom's whip... I'm not gonna follow it either, so you'll get it tomorrow. Sleep well..."
 
 # game/events/alice.rpy:624
 translate english spider_in_bed_help_328d8e77:
 
     # Alice_14 "Эй, ты куда это собрался?! У меня же паук здоровенный на кровати!"
-    Alice_14 ""
+    Alice_14 "Hey, where are you going?! There's a giant spider on my bed!"
 
 # game/events/alice.rpy:625
 translate english spider_in_bed_help_ed6645e4:
 
     # Max_07 "Что тут скажешь... Развлекайся!"
-    Max_07 ""
+    Max_07 "Have fun!"
 
 # game/events/alice.rpy:626
 translate english spider_in_bed_help_9a044a9a:
 
     # Alice_06 "Ну не уходи, Макс! Я не буду больше нарушать наш уговор, только избавься от этого паука... Ну пожалуйста!"
-    Alice_06 ""
+    Alice_06 "Don't go, Max! I won't break our agreement anymore, just get rid of that spider... Come on, please!"
 
 # game/events/alice.rpy:627
 translate english spider_in_bed_help_aa7a7a05:
 
     # Max_09 "Вот и хорошо, что не будешь! А за сегодняшнее нарушение ты покажешь мне свою попку, если хочешь, чтобы я убрал паука... Не зря же я её спас от наказания?!"
-    Max_09 ""
+    Max_09 "It's a good thing you won't! And for today's violation, you'll show me your ass if you want me to take out the spider... There's a reason I saved it from punishment, isn't there?!"
 
 # game/events/alice.rpy:628
 translate english spider_in_bed_help_165abb28:
 
     # Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
-    Alice_13 ""
+    Alice_13 "You're such a pervert, Max! Aren't you ashamed to ask that?!"
 
 # game/events/alice.rpy:629
 translate english spider_in_bed_help_adbdf35e:
 
     # Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
-    Max_01 ""
+    Max_01 "It's your fault! I wanted to be with you for a good reason... You can't get away with this now, can you?!"
 
 # game/events/alice.rpy:632
 translate english spider_in_bed_help_ab9c3416:
 
     # Alice_06 "Ну вот... смотри... И не говори, что этого мало... большего не покажу! Доволен?"
-    Alice_06 ""
+    Alice_06 "Well, there you go. Look... And don't say it's not enough... I won't show you any more! Happy?"
 
 # game/events/alice.rpy:633
 translate english spider_in_bed_help_407fb08c:
 
     # Max_05 "О да, я очень доволен! Попка у тебя просто супер, сестрёнка!"
-    Max_05 ""
+    Max_05 "Oh yes, I'm very pleased! Your ass is awesome, sis!"
 
 # game/events/alice.rpy:634
 translate english spider_in_bed_help_feed0696:
 
     # Alice_12 "Всё! Посмотрел и хватит, давай уже, лови этого паука!"
-    Alice_12 ""
+    Alice_12 "Now catch that fucking spider! come on!"
 
 # game/events/alice.rpy:635
 translate english spider_in_bed_help_35d72be5:
 
     # Max_04 "Ладно, теперь можно и поймать..."
-    Max_04 ""
+    Max_04 "All right, now we can get to it..."
 
 # game/events/alice.rpy:685
 translate english spider_in_bed_spider_952bda97:
 
     # Max_07 "Ага, попался! Пожалуй, вот что я сделаю..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Yeah, I got you! Here's what I'll do..." nointeract
 
 translate english strings:
 
     # game/events/alice.rpy:563
-    old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Я прав или я прав?!"
-    new ""
+    old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Или может я не прав?!"
+    new "I'm gonna catch a spider, except someone's breaking the deal! Or maybe I'm wrong?!"
 
     # game/events/alice.rpy:595
     old "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new "... {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
+    new "Beautiful eyes are easier to open... {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
 
     # game/events/alice.rpy:595
     old "Давай уже показывай сиськи!"
-    new ""
+    new "Let's see your tits!"
 
     # game/events/alice.rpy:685
     old "{i}оставлю этого паука себе{/i}"
-    new ""
+    new "{i}I'll keep this spider.{/i}"
 
     # game/events/alice.rpy:685
     old "{i}выброшу этого паука с балкона{/i}"
-    new ""
+    new "{i}throw the spider off the balcony.{/i}"
 
     # game/events/alice.rpy:685
     old "{i}убью этого паука{/i}"
-    new ""
+    new "{i}I'll kill this spider.{/i}"
 
 # TODO: Translation updated at 2020-03-22 17:29
 
@@ -1051,199 +1051,199 @@ translate english strings:
 translate english alice_shower_spider_09c9d753:
 
     # Max_03 "Давай, паучок, вперёд! Я хочу, чтобы ты познакомился с моей очаровательной сестрёнкой. Характер у неё правда так себе, но думаю, вы оба поладите..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Come on, spider, let's go! I want you to meet my charming sister. She's a real character, but I think you two will get along..." nointeract
 
 # game/events/alice.rpy:276
 translate english alice_shower_spider_7e56af7c:
 
     # Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
-    Max_01 ""
+    Max_01 "Looks like I was able to clear out the bathroom before Alice noticed... That's good. She's about to spot a spider! Just need to wait a little longer..."
 
 # game/events/alice.rpy:277
 translate english alice_shower_spider_2b0b0322:
 
     # Alice_15 "А-а-а-а-а!!! Вот чёрт... Охренеть!"
-    Alice_15 ""
+    Alice_15 "А-а-а-а-а!!! Oh, shit...No!"
 
 # game/events/alice.rpy:278
 translate english alice_shower_spider_08cd39c6:
 
     # Max_02 "...подождать."
-    Max_02 ""
+    Max_02 "...now we wait a moment"
 
 # game/events/alice.rpy:281
 translate english alice_shower_spider_ae2ec1f2:
 
     # Alice_06 "Боже мой, какой кошмар... И что мне теперь с этим пауком делать... Ну почему эти твари лезут именно ко мне? Может быть, он уползёт..."
-    Alice_06 ""
+    Alice_06 "My God, what a nightmare... what am I supposed to do with this spider now... Why are these things so common here? Maybe it'll crawl away..."
 
 # game/events/alice.rpy:283
 translate english alice_shower_spider_98871d44:
 
     # Max_07 "Алиса, ты кричала... Что случилось?"
-    Max_07 ""
+    Max_07 "Alice, you were screaming... What's wrong?"
 
 # game/events/alice.rpy:286
 translate english alice_shower_spider_f67dc5ed:
 
     # Alice_16 "Макс! Ты какого хрена так тихо подходишь, я же тут голая стою! Мало того, что паук ко мне в душ заполз, так ещё ты тут на меня пялишься... А ну вали отсюда, бегом!"
-    Alice_16 ""
+    Alice_16 "Max! Why the fuck are you so quiet, I'm standing here naked! Not only did a spider crawl into the  shower, but you're also staring at me... Get the fuck out of here!"
 
 # game/events/alice.rpy:287
 translate english alice_shower_spider_e7be3887:
 
     # Max_00 "Ладно, ладно... Как скажешь. Ухожу."
-    Max_00 ""
+    Max_00 "Okay, okay... If you say so. I'm out of here."
 
 # game/events/alice.rpy:290
 translate english alice_shower_spider_b7dcdd39:
 
     # Alice_14 "Макс! Ты почему так тихо подходишь, а ну не смотри, я же голая... Иди куда-нибудь в другое место, пожалуйста. И не вздумай подглядывать!"
-    Alice_14 ""
+    Alice_14 "Max! Why are you being so quiet? Don't stare, could you go somewhere else, without peeking?"
 
 # game/events/alice.rpy:291
 translate english alice_shower_spider_202b415d:
 
     # Max_08 "Ну хорошо, как скажешь... А случилось-то что?"
-    Max_08 ""
+    Max_08 "All right, well, whatever you say... But what's the matter?"
 
 # game/events/alice.rpy:292
 translate english alice_shower_spider_03782b03:
 
     # Alice_12 "Ко мне в душ паук заполз, вот что! Не смотри на меня... Отвернись и уходи."
-    Alice_12 ""
+    Alice_12 "A spider crawled into the shower, that's what! I don't like where your eyes are wandering... Turn around and go away."
 
 # game/events/alice.rpy:293
 translate english alice_shower_spider_376ed1c8:
 
     # Max_01 "Хочешь, я уберу паука и..."
-    Max_01 ""
+    Max_01 "Do you want me to maybe get rid of the spider and..."
 
 # game/events/alice.rpy:294
 translate english alice_shower_spider_b0f28e71:
 
     # Alice_18 "Макс!!!"
-    Alice_18 ""
+    Alice_18 "Max!!!"
 
 # game/events/alice.rpy:295
 translate english alice_shower_spider_30bc1452:
 
     # Max_00 "Ладно, ладно... Уже ухожу."
-    Max_00 ""
+    Max_00 "Okay, okay... I'm leaving now."
 
 # game/events/alice.rpy:298
 translate english alice_shower_spider_690b168c:
 
     # Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз..."
-    Alice_06 ""
+    Alice_06 "Oh, shit, you scared me too! There's a giant spider crawling around my shower..."
 
 # game/events/alice.rpy:299
 translate english alice_shower_spider_7a7b4f76:
 
     # Max_04 "Не переживай! Сейчас я его поймаю и выброшу... И ты спокойно домоешься."
-    Max_04 ""
+    Max_04 "Don't worry! Now I'm gonna get rid of it... you'll be able to shower in peace soon."
 
 # game/events/alice.rpy:300
 translate english alice_shower_spider_b9997f6d:
 
     # Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!"
-    Alice_13 ""
+    Alice_13 "No, I can't go back in there yet... I need some time to stop thinking about this whole nightmare. Better get me a towel, it's in the bathroom... You're too lucky to be looking at me naked!"
 
 # game/events/alice.rpy:301
 translate english alice_shower_spider_83415578:
 
     # Max_01 "Хорошо, сейчас принесу. Никуда не уходи..." nointeract
-    Max_01 "" nointeract
+    Max_01 "Okay, I'll get it. Don't go anywhere..." nointeract
 
 # game/events/alice.rpy:307
 translate english alice_shower_spider_5ced9acf:
 
     # Alice_12 "Макс, ну ты где там?! Только смотри, чтобы этого монстра не было на моём полотенце! Иначе тебе будет очень-очень больно..."
-    Alice_12 ""
+    Alice_12 "Max, where are you?! Just make sure that monster isn't on my towel! Otherwise you're gonna get really, really hurt..."
 
 # game/events/alice.rpy:309
 translate english alice_shower_spider_21174459:
 
     # Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи." nointeract
-    Max_03 "" nointeract
+    Max_03 "I'm back! There's nothing wrong with the towel. Here you go." nointeract
 
 # game/events/alice.rpy:314
 translate english alice_shower_spider_eea51717:
 
     # Alice_07 "Ох, Макс, спасибо тебе огромное! Думала, ты будешь прикалываться, но ты можешь временами вести себя, не как озабоченный... Это приятно."
-    Alice_07 ""
+    Alice_07 "Oh, Max, thank you so much! I thought you were gonna pull a prank, but you can sometimes act nice when your mind isn't in the gutter. It feels... pleasant. "
 
 # game/events/alice.rpy:315
 translate english alice_shower_spider_79d6a848:
 
     # Max_04 "Да ладно, это ерунда, обращайся."
-    Max_04 ""
+    Max_04 "Come on, it's nothing."
 
 # game/events/alice.rpy:316
 translate english alice_shower_spider_23328126:
 
     # Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
-    Alice_03 ""
+    Alice_03 "Okay, I'm off... Just don't forget to throw the spider out of the bathroom, okay?"
 
 # game/events/alice.rpy:317
 translate english alice_shower_spider_428606a5:
 
     # Max_01 "Да. Не забуду..."
-    Max_01 ""
+    Max_01 "Yeah. Well, I won't forget..."
 
 # game/events/alice.rpy:323
 translate english alice_shower_spider_666dd0d3:
 
     # Alice_14 "Макс!!! Ах ты... Ну-ка дай сюда полотенце!!!"
-    Alice_14 ""
+    Alice_14 "Max!!! Oh, you... Give me the towel!!!"
 
 # game/events/alice.rpy:326
 translate english alice_shower_spider_35513e76:
 
     # Max_08 "Ой! Извини, я..."
-    Max_08 ""
+    Max_08 "Oh! Sorry, I..."
 
 # game/events/alice.rpy:330
 translate english alice_shower_spider_1136dd42:
 
     # Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!" nointeract
-    Alice_17 "" nointeract
+    Alice_17 "What the hell, Max?! What a joke! Or are you handicapped? Admit it now, you did it on purpose!" nointeract
 
 # game/events/alice.rpy:336
 translate english alice_shower_spider_f8205929:
 
     # Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
-    Alice_12 "[succes!t] ..."
+    Alice_12 "[succes!t]You're so mean, Max! You can't even do a simple thing like that... Okay, I'm out of here! And throw the spider out of the bathroom!..."
 
 # game/events/alice.rpy:337
 translate english alice_shower_spider_c67ec167:
 
     # Max_00 "Да это случайно вышло!"
-    Max_00 ""
+    Max_00 "It was an accident!"
 
 # game/events/alice.rpy:338
 translate english alice_shower_spider_8ce7828a:
 
     # Alice_05 "Ну да, конечно..."
-    Alice_05 ""
+    Alice_05 "Well, yeah, sure..."
 
 # game/events/alice.rpy:341
 translate english alice_shower_spider_3c76bf47:
 
     # Alice_16 "[failed!t]Я тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
-    Alice_16 "[failed!t] ..."
+    Alice_16 "[failed!t]I don't believe you! I bet you did it on purpose to look at me! You're lucky I can't know that for sure... I'd punch you between your legs!..."
 
 # game/events/alice.rpy:342
 translate english alice_shower_spider_86ecd118:
 
     # Max_10 "Так получилось! Я не хотел..."
-    Max_10 ""
+    Max_10 "It just happened! I didn't mean to..."
 
 # game/events/alice.rpy:343
 translate english alice_shower_spider_f635b9a8:
 
     # Alice_17 "Да иди ты, Макс!"
-    Alice_17 ""
+    Alice_17 "Oh, fuck you, Max!"
 
 # game/events/alice.rpy:797
 translate english spider_in_bed_money_e7afa5bd:
@@ -1255,27 +1255,27 @@ translate english strings:
 
     # game/events/alice.rpy:258
     old "{i}запустить паука к Алисе{/i}"
-    new ""
+    new "{i}Spider to Alice{/i}"
 
     # game/events/alice.rpy:270
     old "{i}спрятаться{/i}"
-    new ""
+    new "{i}Hide{/i}"
 
     # game/events/alice.rpy:301
     old "{i}принести Алисе полотенце{/i}"
-    new ""
+    new "{i}grab a towel for Alice{/i}"
 
     # game/events/alice.rpy:309
     old "{i}отдать Алисе полотенце{/i}"
-    new ""
+    new "{i}towel down Alice{/i}"
 
     # game/events/alice.rpy:309
     old "{i}отдать Алисе полотенце (выронив его из одной руки){/i}"
-    new ""
+    new "{i}Give Alice a towel (by dropping it from one hand){/i}"
 
     # game/events/alice.rpy:330
     old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    new "Of course not! It accidentally slipped out of my hand! {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
 
 # TODO: Translation updated at 2020-03-25 16:16
 
@@ -1283,53 +1283,53 @@ translate english strings:
 translate english alice_shower_spider_3f8fc33f:
 
     # Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
-    Alice ""
+    Alice "{b}Аlice:{/b} А-а-а-а-а!!! Oh, shit... Fucking hell!"
 
 # game/events/alice.rpy:494
 translate english alice_dressed_shop_1aff9253:
 
     # Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
-    Max_01 ""
+    Max_01 "Aha! Alice is dressing up to go shopping. And it looks like she's going in her panties, not supposed to... sis, you're in trouble! But not now... I'd better go before anyone notices."
 
 # game/events/alice.rpy:497
 translate english alice_dressed_shop_f2968b10:
 
     # Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит? Но лучше буду гадать об этом в другом месте, а то меня заметят..."
-    Max_05 ""
+    Max_05 "Wow! Alice will even go shopping without her panties! I wonder what she'd say to Mom if she noticed in the dressing room? But I'd rather imagine somewhere else, or I'll be noticed..."
 
 # game/events/alice.rpy:500
 translate english alice_dressed_shop_c50c3ab4:
 
     # Max_04 "Алиса переодевается... Какая соблазнительная попка у неё... Ммм! Так. Пора бы сваливать. Вдруг, кто-то заметит!"
-    Max_04 ""
+    Max_04 "Alice is changing... What a seductive ass she's got... Mmm! Okay, um... It's time to get out of here. In case anyone notices!"
 
 # game/events/alice.rpy:503
 translate english alice_dressed_shop_3b812933:
 
     # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
-    Max_03 ""
+    Max_03 "Oh, what a view! Yeah, sis, it's a sin not to show off in front of a mirror with those tits... But it's time to get out of here. Someone might notice!"
 
 # game/events/alice.rpy:579
 translate english alice_dressed_friend_caea4adc:
 
     # Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
-    Max_01 ""
+    Max_01 "Alice is changing... Those panties look good on her ass, except she shouldn't be wearing them... Count on it, sis, you're in trouble! But not now... I'd better go now before anyone notices."
 
 # game/events/alice.rpy:582
 translate english alice_dressed_friend_4670d0d6:
 
     # Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт... А чтобы меня никто не заметил, лучше уходить!"
-    Max_05 ""
+    Max_05 "Cool! Alice isn't wearing panties... And she's doing it right! I hope somebody sees it where she's going... And to avoid anyone noticing me, it's better to go!"
 
 # game/events/alice.rpy:585
 translate english alice_dressed_friend_474499f6:
 
     # Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них было бы лучше... Так. Пора бы сваливать. Вдруг, кто-то заметит!"
-    Max_04 ""
+    Max_04 "Alice is changing... Those panties look good on her ass. But it would look a lot better without them... Okay, It's time to get out of here. Someone might notice!"
 
 # game/events/alice.rpy:588
 translate english alice_dressed_friend_3b812933:
 
     # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
-    Max_03 ""
+    Max_03 "Oh, what a view! Yeah, sis, it's a sin not to show off in front of a mirror with those tits... But it's time to get out of here. Someone might notice!"
 

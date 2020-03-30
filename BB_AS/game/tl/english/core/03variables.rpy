@@ -966,7 +966,7 @@ translate english strings:
 
     # game/core/03variables.rpy:294
     old "Пообещав помогать Лизе с уроками по принципу \"ты мне - я тебе\", я через некоторое время совсем про неё забыл. И вот, после очередной двойки и наказания от мамы, Лиза напомнила о том, что я ей обещал. Пожалуй, мне стоит уделять её урокам больше внимания..."
-    new "Having promised to help Lisa with her lessons, I forgot all about her after a while. And so, after another round of punishments from Mom, Lisa reminded me of what I promised her. Maybe I should pay more attention to her lessons..."
+    new "Having promised to help Lisa with her lessons, I forgot all about our quid pro quo. And so, after another round of punishments from Mom, Lisa reminded me of what I promised her. Maybe I should pay more attention to her lessons..."
 
     # game/core/03variables.rpy:294
     old "Под видом помощи с уроками Лизы, я намеренно делал ошибки так, чтобы ей ставили двойки и наказывали... В чём теперь она меня и подозревает. Не удивительно, что Лиза сильно обиделась на меня, но вместе с тем, от моей помощи не отказалась..."
@@ -986,7 +986,7 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "ЛЁГКАЯ ПИЖАМА"
-    new "EASY PYJAMAS"
+    new "BLUE PYJAMAS"
 
     # game/core/03variables.rpy:207
     old "Удобнейшие маечка и шортики. В них не жарко душными летними ночами, и так же уютно в течение всего года."
@@ -999,4 +999,48 @@ translate english strings:
     # game/core/03variables.rpy:207
     old "Полупрозрачные сорочка и трусики. Облегающий фасон подчёркивает все достоинства и изгибы фигуры, а лёгкое кружево придаст ещё больше сексуальности."
     new "Translucent shirt and panties. Fitting styles emphasize all the advantages and curves of the figure, and a light lace will add even more sexuality."
+
+# TODO: Translation updated at 2020-03-30 11:37
+
+translate english strings:
+
+    # game/core/03variables.rpy:207
+    old "Набор косметики"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Небольшой набор косметики для повседневного использования. Для женщин - только лучшее..."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Шоколад \"Ritter Sport\" mini (9 штук)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Шоколадное наслаждение для каждого случая... Множество лакомых сортов с лучшими ингредиентами со всего мира."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Шоколад \"Ritter Sport\" (4 штуки)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Raffaello\" (16 штук)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Хрустящие кокосовые конфеты с цельным миндальным орехом. Вместо тысячи слов..."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Raffaello\" (24 штуки)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Ferrero Rocher\""
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."
+    new ""
 

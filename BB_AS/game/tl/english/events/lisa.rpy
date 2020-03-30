@@ -590,5 +590,5 @@ translate english lisa_bath_ladder_af2181e8:
 translate english lisa_shower_ladder_90ff417e:
 
     # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-    Max_00 ""
+    Max_00 "I don't want to, but before I get noticed, I'd better..."
 
