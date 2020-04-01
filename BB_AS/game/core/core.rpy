@@ -352,6 +352,9 @@ label after_load:
             $ current_ver = '0.03.1.007'
             $ flags['tv_peep'] = 0
 
+        if current_ver < '0.03.1.009':
+            $ current_ver = '0.03.1.009'
+            $ talk_var['ann_movie'] = 0
 
         if current_ver < config.version:
             $ current_ver = config.version
