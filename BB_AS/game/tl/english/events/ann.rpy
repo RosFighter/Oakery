@@ -840,11 +840,11 @@ translate english ann_dressed_work_gift_d97afa36:
     # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
     Max_06 "{i}Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips.{/i}"
 
-# game/events/ann.rpy:357
-translate english ann_dressed_work_fail_7b959adc:
+# game/events/ann.rpy:348
+translate english ann_dressed_work_fail_a9cf1e2d:
 
-    # Ann_01 "[_text!tq]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
-    Ann_01 "[_text!tq]Max, I'm not gonna make it to work like this... Come on, son, go..." nointeract
+    # Ann_01 "[_text!t]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
+    Ann_01 "[_text!t]Max, I'm not gonna make it to work like this... Come on, son, go..." nointeract
 
 translate english strings:
 
@@ -1011,9 +1011,9 @@ translate english ann_dressed_shop_gift_c0df5b86:
     Ann_04 "" nointeract
 
 # game/events/ann.rpy:497
-translate english ann_dressed_shop_fail_38501c1b:
+translate english ann_dressed_shop_fail_f49b0b30:
 
-    # Ann_01 "[_text!tq]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
+    # Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
     Ann_01 "" nointeract
 
 # game/events/ann.rpy:505

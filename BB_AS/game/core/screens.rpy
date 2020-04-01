@@ -545,6 +545,7 @@ screen OnlineCources():
                             $ text2 = CurCource.cources[CurCource.current].total
                             label CurCource.cources[CurCource.current].header:
                                 xalign 0.5 text_xalign 0.5 text_size 36
+                                text_text_align 0.5
                                 text_font "hermes.ttf" text_color gui.text_color
                             if CurCource.cources[CurCource.current].buy:
                                 label _("Вы уже оплатили этот курс и можете в любой момент включить следующий доступный видеоурок."):
@@ -1398,10 +1399,7 @@ style info_vscroll is vscrollbar:
 
 screen watermark:
     layer 'wm'
-    if (str(renpy.get_mode())=='start' and not (
-        renpy.get_screen("main_menu") or renpy.get_screen("game_menu") or renpy.get_screen("about")
-        or renpy.get_screen("help") or renpy.get_screen("save") or renpy.get_screen("load")
-        or renpy.get_screen("preferences"))):
+    if str(renpy.get_mode())=='start' and not renpy.get_screen(["main_menu","game_menu","about","help","save","load","preferences"]):
             imagebutton:
                 anchor (0.5, 0.5)
                 pos (0.9, 0.95)
@@ -1409,6 +1407,8 @@ screen watermark:
                 action OpenURL("https://www.patreon.com/aleksey90artimages")
                 at main_logo2
 
-
 screen notify_check:
     timer .3 repeat True action Function(notify_queue)
+    # $ tt = GetTooltip()
+    # if tt:
+    #     text "[tt!t]" pos renpy.get_mouse_pos()

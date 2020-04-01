@@ -1006,41 +1006,40 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "Набор косметики"
-    new ""
+    new "Makeup Kit"
 
     # game/core/03variables.rpy:207
     old "Небольшой набор косметики для повседневного использования. Для женщин - только лучшее..."
-    new ""
+    new "A small set of cosmetics for everyday use. For women, only the best..."
 
     # game/core/03variables.rpy:207
     old "Шоколад \"Ritter Sport\" mini (9 штук)"
-    new ""
+    new "Chocolate \"Ritter Sport\" mini (9 pieces)"
 
     # game/core/03variables.rpy:207
     old "Шоколадное наслаждение для каждого случая... Множество лакомых сортов с лучшими ингредиентами со всего мира."
-    new ""
+    new "A chocolate delight for every occasion... Plenty of delicious varieties with the best ingredients from all over the world."
 
     # game/core/03variables.rpy:207
     old "Шоколад \"Ritter Sport\" (4 штуки)"
-    new ""
+    new "Chocolate \"Ritter Sport\" mini (4 pieces)"
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Raffaello\" (16 штук)"
-    new ""
+    new "Chocolate \"Raffaello\" (16 штук)"
 
     # game/core/03variables.rpy:207
     old "Хрустящие кокосовые конфеты с цельным миндальным орехом. Вместо тысячи слов..."
-    new ""
+    new "Crispy coconuts with whole almond nuts. Says more than a thousand words..."
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Raffaello\" (24 штуки)"
-    new ""
+    new "Chocolate \"Raffaello\" (24 штук)"
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Ferrero Rocher\""
-    new ""
+    new "Chocolate \"Ferrero Rocher\""
 
     # game/core/03variables.rpy:207
     old "Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."
-    new ""
-
+    new "The combination of whole hazelnuts and a delicious creamy nut in a crispy waffle shell will give you a unique taste experience."

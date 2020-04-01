@@ -346,7 +346,7 @@ label ann_dressed_work:
     label .fail:
         $ _text = failed if __open else ""
         menu:
-            Ann_01 "[_text!tq]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами."
+            Ann_01 "[_text!t]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами."
             "Хорошо... Я тебя люблю, мам!":
                 jump .loveyou
             "Конечно, мам! Хорошего тебе дня...":
@@ -495,7 +495,7 @@ label ann_dressed_shop:
     label .fail:
         $ _text = failed if __open else ""
         menu:
-            Ann_01 "[_text!tq]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь."
+            Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь."
             "Хорошо... Я тебя люблю, мам!":
                 jump .loveyou
             "Конечно, мам! Хорошего тебе дня...":
@@ -700,6 +700,6 @@ label ann_tv:
 
 label ann_tv_closer:
     scene BG lounge-tv-01
-    $ renpy.show("Ann tv-closer "+pose3_3)
+    $ renpy.show("Ann tv-closer "+pose3_3+'a')
     $ renpy.show("Max tv 00"+mgg.dress)
     return

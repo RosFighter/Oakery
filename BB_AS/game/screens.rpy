@@ -1376,7 +1376,7 @@ screen notify(message):
 
     frame at notify_appear:
         text message
-        # text "[message!tq]"
+        # text "[message!t]"
 
     timer 4.25 action Hide('notify')
 

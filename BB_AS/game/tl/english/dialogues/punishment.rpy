@@ -187,10 +187,10 @@ translate english punishment_max_pun_reson_dbaef78e:
     Max_08 "Thanks, mom!"
 
 # game/dialogues/punishment.rpy:177
-translate english punishment_max_pun_reson_16271c3b:
+translate english punishment_max_pun_reson_291cc499:
 
-    # Ann_19 "[failed!t]Вот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!tq] и ложись на мои колени. Надеюсь, ты сегодня в трусах..." nointeract
-    Ann_19 "[failed!t]Just like that? We're supposed to just forget everything? No, Max, not this time. Take down your [_text!tq] and get on my knees. I hope you're wearing underwear today..." nointeract
+    # Ann_19 "[failed!t]Вот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!t] и ложись на мои колени. Надеюсь, ты сегодня в трусах..." nointeract
+    Ann_19 "[failed!t]Just like that? We're supposed to just forget everything? No, Max, not this time. Take down your [_text!t] and get on my knees. I hope you're wearing underwear today..." nointeract
 
 # game/dialogues/punishment.rpy:147
 translate english punishment_max_pun_reson_831f2da1:
@@ -198,11 +198,11 @@ translate english punishment_max_pun_reson_831f2da1:
     # Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
     Ann_16 "Max has several weak spots... He knows them very well, but I'm not going to list them. Now he's gonna get it all at once!"
 
-# game/dialogues/punishment.rpy:157
-translate english punishment_max_pun_reson_36433c39:
+# game/dialogues/punishment.rpy:210
+translate english punishment_max_pun_reson_678436cc:
 
-    # Ann_16 "[_text!tq]"
-    Ann_16 "[_text!tq]"
+    # Ann_16 "[_text!t]"
+    Ann_16 "[_text!t]"
 
 # game/dialogues/punishment.rpy:159
 translate english punishment_max_pun_reson_219ecbe7:
@@ -216,17 +216,17 @@ translate english punishment_max_pun_reson_700a2ea3:
     # Ann_12 "Ну вот. Теперь все всё поняли? Ведите себя хорошо и вас не ждёт эта участь..."
     Ann_12 "I hope this will teach you to behave so you won't be in this spot in the future..."
 
-# game/dialogues/punishment.rpy:193
-translate english punishment_lisa_36433c39:
+# game/dialogues/punishment.rpy:262
+translate english punishment_lisa_678436cc:
 
-    # Ann_16 "[_text!tq]"
-    Ann_16 "[_text!tq]"
+    # Ann_16 "[_text!t]"
+    Ann_16 "[_text!t]"
 
-# game/dialogues/punishment.rpy:198
-translate english punishment_lisa_621d0e98:
+# game/dialogues/punishment.rpy:267
+translate english punishment_lisa_0b6806cc:
 
-    # Ann_16 "[_text!tq]" nointeract
-    Ann_16 "[_text!tq]" nointeract
+    # Ann_16 "[_text!t]" nointeract
+    Ann_16 "[_text!t]" nointeract
 
 # game/dialogues/punishment.rpy:202
 translate english punishment_lisa_f1ea86d0:
@@ -264,23 +264,23 @@ translate english punishment_lisa_8b6bc93a:
     # Lisa_10 "Мам... Я не специально... Просто, задание было сложное..."
     Lisa_10 "I didn't do it on purpose, mom... The homework was too hard..."
 
-# game/dialogues/punishment.rpy:223
-translate english punishment_lisa_40e57089:
+# game/dialogues/punishment.rpy:292
+translate english punishment_lisa_68fc5c88:
 
-    # Ann_14 "Сложное? У тебя была куча времени, чтобы подготовиться! Сидишь в своём телефоне вечно вместо того, чтобы учиться. [_text!tq]"
-    Ann_14 "You had plenty of time to do everything properly! You just sit on your phone all the time instead of doing your homework!. [_text!tq]"
+    # Ann_14 "Сложное? У тебя была куча времени, чтобы подготовиться! Сидишь в своём телефоне вечно вместо того, чтобы учиться. [_text!t]"
+    Ann_14 "You had plenty of time to do everything properly! You just sit on your phone all the time instead of doing your homework!. [_text!t]"
 
-# game/dialogues/punishment.rpy:230
-translate english punishment_lisa_f6c5de6b:
+# game/dialogues/punishment.rpy:299
+translate english punishment_lisa_a4b257c5:
 
-    # Ann_18 "[_text!tq]"
-    Ann_18 "[_text!tq]"
+    # Ann_18 "[_text!t]"
+    Ann_18 "[_text!t]"
 
-# game/dialogues/punishment.rpy:232
-translate english punishment_lisa_7adf83e9:
+# game/dialogues/punishment.rpy:301
+translate english punishment_lisa_67c8b436:
 
-    # Ann_18 "[_text!tq]" nointeract
-    Ann_18 "[_text!tq]" nointeract
+    # Ann_18 "[_text!t]" nointeract
+    Ann_18 "[_text!t]" nointeract
 
 # game/dialogues/punishment.rpy:236
 translate english punishment_lisa_f1ea86d0_1:
@@ -318,11 +318,11 @@ translate english punishment_lisa_81192a03:
     # Lisa_09 "Ма-ам, я больше не буду... Ай... В смысле, буду лучше учиться. Извини..."
     Lisa_09 "Mo-om, I won't be... Ouch... I mean, I'll try harder. I'm sorry..."
 
-# game/dialogues/punishment.rpy:276
-translate english punishment_lisa_484409fe:
+# game/dialogues/punishment.rpy:346
+translate english punishment_lisa_3b824b98:
 
-    # Ann_00 "Конечно, будешь. [_text!tq] Совсем расслабилась."
-    Ann_00 "Of course you will. [_text!tq] Try harder!"
+    # Ann_00 "Конечно, будешь. [_text!t] Совсем расслабилась."
+    Ann_00 "Of course you will. [_text!t] Try harder!"
 
 # game/dialogues/punishment.rpy:282
 translate english punishment_lisa_d5d2561c:
@@ -462,17 +462,17 @@ translate english punishment_alice_8e33c890:
     # Alice_12 "Мам, за что? Что я такого сделала?"
     Alice_12 "For what, mom? what did I do?"
 
-# game/dialogues/punishment.rpy:325
-translate english punishment_alice_f6c5de6b:
+# game/dialogues/punishment.rpy:382
+translate english punishment_alice_a4b257c5:
 
-    # Ann_18 "[_text!tq]"
-    Ann_18 "[_text!tq]"
+    # Ann_18 "[_text!t]"
+    Ann_18 "[_text!t]"
 
-# game/dialogues/punishment.rpy:330
-translate english punishment_alice_7adf83e9:
+# game/dialogues/punishment.rpy:387
+translate english punishment_alice_67c8b436:
 
-    # Ann_18 "[_text!tq]" nointeract
-    Ann_18 "[_text!tq]" nointeract
+    # Ann_18 "[_text!t]" nointeract
+    Ann_18 "[_text!t]" nointeract
 
 # game/dialogues/punishment.rpy:334
 translate english punishment_alice_cb34e360:
@@ -546,17 +546,17 @@ translate english punishment_alice_011ed976:
     # Ann_00 "А вот нечего целый день в пижаме по дому шарахаться... Совсем разленилась! Макс пусть смотрит, а тебе будет стыдно. Может тогда за ум возьмёшься!"
     Ann_00 "But you don't have to wear your pajamas around the house all day... It's completely lazy! Let Max watch, and you'll be ashamed. Then maybe you'll think about it!"
 
-# game/dialogues/punishment.rpy:368
-translate english punishment_alice_f6c5de6b_1:
+# game/dialogues/punishment.rpy:428
+translate english punishment_alice_a4b257c5_1:
 
-    # Ann_18 "[_text!tq]"
-    Ann_18 "[_text!tq]"
+    # Ann_18 "[_text!t]"
+    Ann_18 "[_text!t]"
 
-# game/dialogues/punishment.rpy:370
-translate english punishment_alice_7adf83e9_1:
+# game/dialogues/punishment.rpy:430
+translate english punishment_alice_67c8b436_1:
 
-    # Ann_18 "[_text!tq]" nointeract
-    Ann_18 "[_text!tq]" nointeract
+    # Ann_18 "[_text!t]" nointeract
+    Ann_18 "[_text!t]" nointeract
 
 # game/dialogues/punishment.rpy:374
 translate english punishment_alice_cb34e360_1:

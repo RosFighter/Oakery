@@ -397,6 +397,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         "alice_bath"   : 0,
         "alice_sleep"  : 0,
         "ann_sleep"    : 0,
+        '_tv_peep'     : 0,
         }
     return
 

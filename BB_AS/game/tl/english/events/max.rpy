@@ -526,11 +526,11 @@ translate english about_blog_bb8942c7:
     # Max_14 "Ух. Сколько гадости в комментах... Ладно, попробуем найти в этом крупицу смысла..." nointeract
     Max_14 "Wow. How many bad things in the comments... Okay, let's try to find a grain of sense in this..." nointeract
 
-# game/events/max.rpy:374
-translate english about_blog_8e4c93e4:
+# game/events/max.rpy:378
+translate english about_blog_5af97f32:
 
-    # Max_09 "[_text!tq]" nointeract
-    Max_09 "[_text!tq]" nointeract
+    # Max_09 "[_text!t]" nointeract
+    Max_09 "[_text!t]" nointeract
 
 # game/events/max.rpy:377
 translate english about_blog_c1ce2606:
@@ -1056,5 +1056,5 @@ translate english SearchCigarettes_b89e2d47:
 translate english InstallCam_e958aece:
 
     # Max_03 "{i}Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится!{/i}" nointeract
-    Max_03 "" nointeract
+    Max_03 "Now there's no missing any of the action! The girls like to watch themselves front of the mirror, and Mom and Eric, as I noticed, try not to miss the chance to fuck in front of it... My audience is going to love this!" nointeract
 

@@ -39,11 +39,11 @@ label Waiting:
     if prevtime[:2] != tm[:2]:
         # почасовой сброс
         $ flags["little_energy"] = False
-        $ peeping["alice_sleep"] = False
-        $ peeping["ann_sleep"] = False
-        $ peeping["ann_dressed"] = False
-        $ peeping["lisa_dressed"] = False
-        $ peeping["alice_dressed"] = False
+        $ peeping["alice_sleep"] = 0
+        $ peeping["ann_sleep"] = 0
+        $ peeping["ann_dressed"] = 0
+        $ peeping["lisa_dressed"] = 0
+        $ peeping["alice_dressed"] = 0
         # позы обновляются каждый час
         $ pose3_1 = renpy.random.choice(["01", "02", "03"])
         $ pose3_2 = renpy.random.choice(["01", "02", "03"])
@@ -51,7 +51,7 @@ label Waiting:
         $ pose2_1 = renpy.random.choice(["01", "02"])
         $ pose2_2 = renpy.random.choice(["01", "02"])
         $ pose2_3 = renpy.random.choice(["01", "02"])
-        $ tv_scene = renpy.random.choice(["", "bj", "hj"])
+        # $ tv_scene = renpy.random.choice(["", "bj", "hj"])
     if prevtime < "12:00" <= tm:
         call Noon
 
@@ -348,6 +348,10 @@ label after_load:
                 "ferrero-b": Item(_("Конфеты \"Ferrero Rocher\""), _("Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."), "ferrero-2", 2, 60),
                 })
             $ flags['promise_kiss'] = False
+        if current_ver < '0.03.1.007':
+            $ current_ver = '0.03.1.007'
+            $ flags['tv_peep'] = 0
+
 
         if current_ver < config.version:
             $ current_ver = config.version
