@@ -151,9 +151,14 @@ label eric_ann_tv:
     scene BG tv-watch-01
     if tv_scene == "" or not peeping['ann_eric_tv']:
         ### Дальний план, нейтральная поза
+        $ renpy.show('tv porn-01 0'+str(renpy.random.randint(1, 5)), at_list=[tv_screen,])
         $ renpy.show("Eric tv-watch 01"+chars["eric"].dress)
     else:
         ### Дальний план, поза, на которой остановилось подглядывание
+        if pose2_3 == '01':
+            $ renpy.show('tv porn-01 0'+str(renpy.random.randint(6, 7)), at_list=[tv_screen,])
+        else:
+            $ renpy.show('tv porn-01 '+('0'+str(renpy.random.randint(8, 10)))[-2:], at_list=[tv_screen,])
         $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
 
     if peeping['ann_eric_tv']:
@@ -181,6 +186,7 @@ label eric_ann_tv:
 
     $ spent_time += 10
     $ pose2_3 = '01'
+    $ renpy.show('tv porn-01 0'+str(renpy.random.randint(6, 7)), at_list=[tv_screen,])
     $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
 
     if tv_scene == 'bj':
@@ -189,14 +195,16 @@ label eric_ann_tv:
             Max_08 "Ого! На экране стало интереснее! А куда это мама так наклонилась?"
             "{i}продолжать смотреть{/i}":
                 ### Дальний план, минет без полотенца
+                $ spent_time += 10
                 $ pose2_3 = '02'
+                $ renpy.show('tv porn-01 08', at_list=[tv_screen,])
                 $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
                 menu:
                     Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
                     "{i}продолжать смотреть{/i}":
-                        pass
+                        $ spent_time += 10
             "{i}подойти ближе{/i}":
                 ### Ближний план, минет в полотенце
                 jump .closer1
@@ -208,14 +216,16 @@ label eric_ann_tv:
             Max_08 "Ого! На экране стало интереснее! А что это мама там делает?"
             "{i}продолжать смотреть{/i}":
                 ### Дальний план, дрочка без полотенца
+                $ spent_time += 10
                 $ pose2_3 = '02'
+                $ renpy.show('tv porn-01 08', at_list=[tv_screen,])
                 $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
                 menu:
                     Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
                     "{i}продолжать смотреть{/i}":
-                        pass
+                        $ spent_time += 10
             "{i}подойти ближе{/i}":
                 ### Ближний план, дрочка в полотенце
                 jump .closer1
@@ -223,6 +233,7 @@ label eric_ann_tv:
                 jump .end
 
     ## откровенная порнуха на экране
+    $ renpy.show('tv porn-01 '+('0'+str(renpy.random.randint(9, 10)))[-2:], at_list=[tv_screen,])
     menu:
         Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!"
         "{i}подойти ближе{/i}":
@@ -285,7 +296,7 @@ label eric_ann_tv:
     scene lounge-tv-talk-00
     $ renpy.show('Ann tv-talk '+pose2_3+'a')
     menu:
-        Ann_12 "Послушай, сынок... Понимаешь, взрослым иногда нужно уединяться. Мы думали, что все наверху и что мы тут всем и так понятно... В общем..."
+        Ann_12 "Послушай, сынок... Понимаешь, взрослым иногда нужно уединяться. Мы думали, что все наверху и что мы тут, всем и так понятно... В общем..."
         "Хотите потрахаться - идите в свою комнату. Нечего этим на виду у всех заниматься!":
             Ann_15 "Макс! Что за слова? И как ты со мной разговариваешь? А ну-ка марш в свою комнату. Чтобы не видела тебя тут, пока мы смотрим фильмы!"
             Max_11 "Ладно, ладно. Так бы сразу и сказала..."
