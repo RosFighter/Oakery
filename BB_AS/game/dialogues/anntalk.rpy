@@ -13,6 +13,7 @@ label AnnTalkStart:
         jump Waiting
 
 
+    $ renpy.block_rollback()
     Ann_00 "Что-то случилось, дорогой?" nointeract
 
     $ rez =  renpy.display_menu(dial)

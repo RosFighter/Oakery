@@ -13,6 +13,7 @@ label AliceTalkStart:
         jump Waiting
 
 
+    $ renpy.block_rollback()
     Alice_00 "Ну, Макс, чего надо?" nointeract
 
     $ rez =  renpy.display_menu(dial)

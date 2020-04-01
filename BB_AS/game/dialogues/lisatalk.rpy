@@ -11,6 +11,7 @@ label LisaTalkStart:
 
     $ dial.append((_("{i}уйти{/i}"), "exit"))
 
+    $ renpy.block_rollback()
     Lisa_00 "Макс, решил поболтать?" nointeract
 
     $ rez =  renpy.display_menu(dial)

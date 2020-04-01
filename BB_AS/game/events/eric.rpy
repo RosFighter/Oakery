@@ -147,6 +147,7 @@ label eric_resting:
 
 
 label eric_ann_tv:
+    $ renpy.block_rollback()
     scene BG tv-watch-01
     if tv_scene == "" or not peeping['ann_eric_tv']:
         ### Дальний план, нейтральная поза
@@ -235,16 +236,16 @@ label eric_ann_tv:
         scene BG lounge-tv-00
         $ renpy.show("Eric tv "+tv_scene+pose2_3+chars["eric"].dress)
         if tv_scene == 'hj':
-            if pose2_3 == 01:
+            if pose2_3 == '01':
                 $ txt = _("Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
             else:
                 $ txt = _("Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
         else:
-            if pose2_3 == 01:
+            if pose2_3 == '01':
                 $ txt = _("Она что, отсасывает ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
             else:
                 $ txt = _("Она что, совершенно голая отсасывает ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
-        if pose2_3 == 01:
+        if pose2_3 == '01':
             Max_15 "[txt!t]" nointeract
         else:
             Max_16 "[txt!t]" nointeract
