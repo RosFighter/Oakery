@@ -507,5 +507,5 @@ translate english eric_ann_shower_start_peeping_cc0c1868:
 translate english eric_ann_shower_end_f00d8bbc:
 
     # Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
-    Max_09 ""
+    Max_09 "They're all having fun in here but my lone bathroom camera can't capture all the action! It seems that I should install another camera so that my audience can see the whole picture..."
 

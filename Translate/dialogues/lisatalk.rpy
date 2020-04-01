@@ -3048,59 +3048,59 @@ translate english strings:
 translate english gift_swimsuit_swimsuit_show_f3bcd218:
 
     # Lisa_02 "Я рада, Макс. А теперь тебя ждут обнимашки! Иди ко мне..."
-    Lisa_02 ""
+    Lisa_02 "I'm glad, Max. And now they're waiting for you to hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:1132
 translate english gift_swimsuit_swimsuit_show_e182d0e4:
 
     # Max_07 "Оу... Это мне нравится!"
-    Max_07 ""
+    Max_07 "Oh... I like that!"
 
 # game/dialogues/lisatalk.rpy:1134
 translate english gift_swimsuit_swimsuit_show_b784dabf:
 
     # Lisa_05 "Спасибо тебе большое! Как ты только нашёл этот купальник? Я именно о таком и мечтала!"
-    Lisa_05 ""
+    Lisa_05 "Thank you so much! How did you find that swimsuit? It's exactly what I dreamed for!"
 
 # game/dialogues/lisatalk.rpy:1137
 translate english gift_swimsuit_swimsuit_show_e163e982:
 
     # Lisa_01 "Даже не представляю, где ты взял на него деньги! Он ведь дорогой..."
-    Lisa_01 ""
+    Lisa_01 "I don't know where you got the money! It's expensive..."
 
 # game/dialogues/lisatalk.rpy:1139
 translate english gift_swimsuit_swimsuit_show_d6eb93d6:
 
     # Max_05 "Мне дороже улыбка моей любимой младшей сестрёнки! И кстати, ты помнишь, что хотела поцеловать меня в щёчку, если я достану для тебя этот купальник?"
-    Max_05 ""
+    Max_05 "I love to see my little sister smile! And by the way, do you remember saying that you'd give me a kiss if I got you that swimsuit?"
 
 # game/dialogues/lisatalk.rpy:1140
 translate english gift_swimsuit_swimsuit_show_62e397b6:
 
     # Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
-    Lisa_05 ""
+    Lisa_05 "It's not like I wanted to...Honestly, I didn't think you could buy it, but... But I think you deserve it..."
 
 # game/dialogues/lisatalk.rpy:1142
 translate english gift_swimsuit_swimsuit_show_dda42a93:
 
     # Max_06 "{i}Просто супер! Полуголая сестрёнка целует меня в щёку! Она слегка прижалась ко мне своей грудью и даже через одежду я чувствую, какая она у неё упругая...{/i}"
-    Max_06 ""
+    Max_06 "That's just great! My half-naked sister kissing me on the cheek! I can feel her breasts pressing up against me even through what little covering she has. I can feel how warm she is..."
 
 # game/dialogues/lisatalk.rpy:1144
 translate english gift_swimsuit_swimsuit_show_9b1cd788:
 
     # Lisa_03 "Ну вот, теперь всем хорошо! А мне уже не терпится поплавать и позагорать в своём новом купальнике..."
-    Lisa_03 ""
+    Lisa_03 "Okay, now everyone's happy! And I can't wait to swim and sunbathe in this..."
 
 # game/dialogues/lisatalk.rpy:1146
 translate english gift_swimsuit_swimsuit_show_27e81dff:
 
     # Lisa_03 "Это очень мило, Макс! Мне уже не терпится поплавать и позагорать в нём..."
-    Lisa_03 ""
+    Lisa_03 "That's very nice, Max! I can't wait to swim and tan in it..."
 
 # game/dialogues/lisatalk.rpy:1147
 translate english gift_swimsuit_swimsuit_show_7002ae6a:
 
     # Max_03 "Наслаждайся."
-    Max_03 ""
+    Max_03 "Enjoy yourself."
 

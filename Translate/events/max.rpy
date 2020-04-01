@@ -1056,5 +1056,5 @@ translate english SearchCigarettes_b89e2d47:
 translate english InstallCam_e958aece:
 
     # Max_03 "{i}Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится!{/i}" nointeract
-    Max_03 "" nointeract
+    Max_03 "Now theres no missing any of the action! The girls like to watch themselves front of the mirror, and Mom and Eric, as I noticed, try not to miss the chance to fuck in front of it... My audience is going to love this!" nointeract
 
