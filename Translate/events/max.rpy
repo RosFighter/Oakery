@@ -526,11 +526,11 @@ translate english about_blog_bb8942c7:
     # Max_14 "Ух. Сколько гадости в комментах... Ладно, попробуем найти в этом крупицу смысла..." nointeract
     Max_14 "Wow. How many bad things in the comments... Okay, let's try to find a grain of sense in this..." nointeract
 
-# game/events/max.rpy:374
-translate english about_blog_8e4c93e4:
+# game/events/max.rpy:378
+translate english about_blog_5af97f32:
 
-    # Max_09 "[_text!tq]" nointeract
-    Max_09 "[_text!tq]" nointeract
+    # Max_09 "[_text!t]" nointeract
+    Max_09 "[_text!t]" nointeract
 
 # game/events/max.rpy:377
 translate english about_blog_c1ce2606:
