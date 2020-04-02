@@ -654,3 +654,203 @@ translate english strings:
     old "{i}начать ужин{/i}"
     new "{i}start dinner{/i}"
 
+# TODO: Translation updated at 2020-04-02 08:49
+
+# game/dialogues/anntalk.rpy:212
+translate english ann_talk_tv_first_movie_f195305d:
+
+    # Ann_01 "Да так, всякую ерунду. Хотела какой-нибудь фильм посмотреть. Садись рядом, если тоже делать нечего..." nointeract
+    Ann_01 "Nothing yet, I was going to watch some movie. You can join me, if you want." nointeract
+
+# game/dialogues/anntalk.rpy:218
+translate english ann_talk_tv_first_movie_45629b2c:
+
+    # Ann_05 "Ну, как хочешь!"
+    Ann_05 "Okay, it's your choice."
+
+# game/dialogues/anntalk.rpy:219
+translate english ann_talk_tv_first_movie_4fe2a7ed:
+
+    # Max_01 "Не буду тебе мешать..."
+    Max_01 "Okay, I'll leave you to it"
+
+# game/dialogues/anntalk.rpy:221
+translate english ann_talk_tv_first_movie_3a5a46d3:
+
+    # Ann_04 "Я не знаю. Мне вот подруга посоветовала фильм с Томом Крузом и Николь Кидман, называется \"С широко закрытыми глазами\". Смотрел?" nointeract
+    Ann_04 "I don't know, really. My friend recommended some movie with Tom Cruise and Nicole Kidman, it's called \"Eyes wide shut\". Have you seen it?" nointeract
+
+# game/dialogues/anntalk.rpy:224
+translate english ann_talk_tv_first_movie_01e23211:
+
+    # Ann_05 "Отлично! Вот сейчас и посмотрим, что там подруга насоветовала..." nointeract
+    Ann_05 "Great, let's see what she recommended..." nointeract
+
+# game/dialogues/anntalk.rpy:231
+translate english ann_talk_tv_first_movie_f174135b:
+
+    # Ann_02 "Да? И что ты о нём слышал? Хороший фильм? Стоит смотреть?" nointeract
+    Ann_02 "And what did you hear? Is it a good movie? Is worth watching?" nointeract
+
+# game/dialogues/anntalk.rpy:234
+translate english ann_talk_tv_first_movie_12158efe:
+
+    # Ann_05 "Ну, раз отзывы хорошие, тогда, давай смотреть!" nointeract
+    Ann_05 "Then let's watch!" nointeract
+
+# game/dialogues/anntalk.rpy:240
+translate english ann_talk_tv_ero_ea9d350a:
+
+    # Ann_13 "Правда?! Ой, Макс, извини, я не знала. Тогда, нам с тобой его точно смотреть вместе не следует. А подруге я всё скажу, за то, что не предупредила..." nointeract
+    Ann_13 "It is!? I'm sorry, Max, I didn't know. Then we're definitely not going to watch it now. I'll give my friend a piece of my mind for not warning me..." nointeract
+
+# game/dialogues/anntalk.rpy:243
+translate english ann_talk_tv_ero_e5c312c1:
+
+    # Ann_01 "Нет, Макс. Не в этот раз. Я лучше посмотрю новости или какой-нибудь сериал... Извини, что тебя обнадёжила..."
+    Ann_01 "No, Max, not this time. I'll just watch some random show or news... I'm sorry for disappointing you."
+
+# game/dialogues/anntalk.rpy:244
+translate english ann_talk_tv_ero_43270e27:
+
+    # Max_01 "Ладно, не буду мешать..."
+    Max_01 "Okay, I'll leave you alone then"
+
+# game/dialogues/anntalk.rpy:254
+translate english ann_talk_tv_start_975b2e0f:
+
+    # Max_01 "{i}Интересно, мама хотя бы подозревает, что это эротика?... Посмотрим...{/i}"
+    Max_01 "{i}I wonder if she knows it's erotica...?{/i}"
+
+# game/dialogues/anntalk.rpy:256
+translate english ann_talk_tv_start_2fbf09a3:
+
+    # Ann_13 "Ой, кажется, я не посмотрела какой возрастной рейтинг у фильма..."
+    Ann_13 "I should've looked up the rating of the movie..."
+
+# game/dialogues/anntalk.rpy:257
+translate english ann_talk_tv_start_2b8dcae5:
+
+    # Max_04 "Да всё в порядке!"
+    Max_04 "It's fine"
+
+# game/dialogues/anntalk.rpy:259
+translate english ann_talk_tv_start_08523ad3:
+
+    # Ann_14 "Да уж... В порядке. Ну, если ты стесняешься, можешь закрыть глаза..."
+    Ann_14 "Yeah, right... You can close your eyes if you want."
+
+# game/dialogues/anntalk.rpy:260
+translate english ann_talk_tv_start_3b14cabb:
+
+    # Max_02 "Я уже взрослый! И не такое видел!"
+    Max_02 "I'm an adult, it's not the most vulgar thing I've seen in my life"
+
+# game/dialogues/anntalk.rpy:262
+translate english ann_talk_tv_start_0d56f914:
+
+    # Ann_04 "Да ты что? И где, интересно мне знать? Я когда подключала интернет, выбрала самый безопасный вариант, чтобы оградить вас от такого... Так где ты что там видел?"
+    Ann_04 "And where would you do that? I chose the most restricted Internet provider specifically so you won't be able to see anything like this... Where would you see anything like this?"
+
+# game/dialogues/anntalk.rpy:263
+translate english ann_talk_tv_start_d40a96e0:
+
+    # Max_03 "Да это не важно. В любом случае, это же популярный фильм с известными актёрами, что тут такого может быть..."
+    Max_03 "It doesn't matter. And in any way, this is a popular movie with famous actors, how bad could it possibly be?"
+
+# game/dialogues/anntalk.rpy:265
+translate english ann_talk_tv_start_a52089f5:
+
+    # Ann_13 "Да, ты прав. Действительно, что... Макс! Чем дальше, тем больше я уверена, что этот фильм не для тебя..."
+    Ann_13 "I guess you're right... Max! I don't think you're supposed to watch this kinds of movies!"
+
+# game/dialogues/anntalk.rpy:266
+translate english ann_talk_tv_start_6bcfcf09:
+
+    # Max_02 "Ну сама подумай, стали бы Том Круз и Николь Кидман сниматься в эротике?"
+    Max_02 "Just think about it, do you think Tom Cruise and Nicole Kidman would star in something too dirty?"
+
+# game/dialogues/anntalk.rpy:268
+translate english ann_talk_tv_start_6382bd94:
+
+    # Ann_15 "Надеюсь, ты закрыл глаза, потому-что это уже слишком!" nointeract
+    Ann_15 "I hope you've closed your eyes, because this is too much!" nointeract
+
+# game/dialogues/anntalk.rpy:275
+translate english ann_talk_tv_start_166013e6:
+
+    # Ann_14 "Я уже десять раз пожалела, что выбрала этот фильм. Подруге ещё нужно будет сказать \"спасибо\" за то, что не предупредила..."
+    Ann_14 "I shouldn't have watch this movie. I'm going to give my friend a piece of my mind for recommending something like this..."
+
+# game/dialogues/anntalk.rpy:276
+translate english ann_talk_tv_start_ba88c73d:
+
+    # Max_07 "Ты до 30 лет будешь меня оберегать от такого?"
+    Max_07 "Are you going to hide this kind of stuff from me even when I'm 30?"
+
+# game/dialogues/anntalk.rpy:278
+translate english ann_talk_tv_start_e9c2c485:
+
+    # Ann_02 "Ты знаешь, может быть... Но да, ты прав. Фильм и правда хороший оказался. Хотя и не для детей, однозначно..."
+    Ann_02 "I don't know... I guess you're right. And it was a good movie. Definitely not for children, though."
+
+# game/dialogues/anntalk.rpy:279
+translate english ann_talk_tv_start_594c1ae6:
+
+    # Max_04 "Мне тоже понравилось!"
+    Max_04 "I liked it too!"
+
+# game/dialogues/anntalk.rpy:283
+translate english ann_talk_tv_start_1ea84186:
+
+    # Ann_05 "Жаль, что мы редко с тобой вместе вот так сидим, что-то смотрим. Ну, надеюсь, начало традиции положено. И пусть в следующий раз будет нечто менее... волнующее..."
+    Ann_05 "Too bad we don't do this very often. Well, hopefully we've just started a new tradition. Let's hope the next movie won't be so... exciting."
+
+# game/dialogues/anntalk.rpy:284
+translate english ann_talk_tv_start_acd22c78:
+
+    # Max_01 "Конечно, мам!"
+    Max_01 "Of course, mom!"
+
+translate english strings:
+
+    # game/dialogues/anntalk.rpy:221
+    old "Нет, не слышал о таком. Давай смотреть!"
+    new "No, never heard about it. Let's watch!"
+
+    # game/dialogues/anntalk.rpy:221
+    old "Да это же эротика!"
+    new "It's erotica!"
+
+    # game/dialogues/anntalk.rpy:221
+    old "Да, слышал кое-что о нём..."
+    new "Yeah, I've heard something..."
+
+    # game/dialogues/anntalk.rpy:224
+    old "{i}начать просмотр{/i}"
+    new "{i}watch the movie{/i}"
+
+    # game/dialogues/anntalk.rpy:231
+    old "Да, отзывы отличные"
+    new "Yeah, it has great reviews!"
+
+    # game/dialogues/anntalk.rpy:231
+    old "Ну, это эротика..."
+    new "It's erotica"
+
+    # game/dialogues/anntalk.rpy:240
+    old "Да всё в порядке, я уже взрослый!"
+    new "It's okay, mom, I don't mind!"
+
+    # game/dialogues/anntalk.rpy:240
+    old "Ну, как скажешь. Я тогда пойду..."
+    new "If you say so. I'll go"
+
+    # game/dialogues/anntalk.rpy:268
+    old "Я не смотрю, а что там?"
+    new "I'm not watching"
+
+    # game/dialogues/anntalk.rpy:268
+    old "Я уже взрослый!"
+    new "I'm not a little kid anymore!"
+

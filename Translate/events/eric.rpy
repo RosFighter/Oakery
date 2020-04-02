@@ -607,10 +607,10 @@ translate english eric_ann_tv_closer1_4a3cf6f9:
     # Max_08 "Ну ладно."
     Max_08 ""
 
-# game/events/eric.rpy:286
-translate english eric_ann_tv_closer1_ffd87d70:
+# game/events/eric.rpy:298
+translate english eric_ann_tv_closer1_74c87652:
 
-    # Ann_12 "Послушай, сынок... Понимаешь, взрослым иногда нужно уединяться. Мы думали, что все наверху и что мы тут всем и так понятно... В общем..." nointeract
+    # Ann_12 "Послушай, сынок... Понимаешь, взрослым иногда нужно уединяться. Мы думали, что все наверху и что мы тут, всем и так понятно... В общем..." nointeract
     Ann_12 "" nointeract
 
 # game/events/eric.rpy:289
@@ -722,4 +722,3 @@ translate english strings:
     # game/events/eric.rpy:286
     old "А вы не против, если я посмотрю?"
     new ""
-
