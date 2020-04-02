@@ -1,0 +1,19 @@
+ekira-00 = emo-100
+ekira-01 = emo-101
+ekira-02 = emo-112
+ekira-03 = emo-108
+ekira-04 = emo-113
+ekira-05 = emo-109
+ekira-06 = emo-102
+ekira-07 = emo-103
+ekira-08 = emo-114
+ekira-09
+ekira-10
+ekira-11
+ekira-12
+ekira-13 = emo-104
+ekira-14 = emo-107
+ekira-15 = emo-111
+ekira-16 = emo-105
+ekira-17 = emo-110
+ekira-18 = emo-106
