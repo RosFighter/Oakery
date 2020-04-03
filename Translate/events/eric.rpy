@@ -515,43 +515,43 @@ translate english eric_ann_shower_end_f00d8bbc:
 translate english eric_ann_tv_ca5bec8a:
 
     # Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой..." nointeract
-    Max_07 "" nointeract
+    Max_07 "I think Mom and Eric are watching some kind of movie. I wonder what it is..." nointeract
 
 # game/events/eric.rpy:170
 translate english eric_ann_tv_0d84ad96:
 
     # Ann_12 "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?" nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Oh, Max... Eric and I are watching a movie. I would invite you, but it's not suitable for kids. Could you give us some privacy please?" nointeract
 
 # game/events/eric.rpy:187
 translate english eric_ann_tv_dd49566e:
 
     # Max_08 "Ого! На экране стало интереснее! А куда это мама так наклонилась?" nointeract
-    Max_08 "" nointeract
+    Max_08 "Wow! The screen got more interesting! What's Mom doing leaning like that?" nointeract
 
 # game/events/eric.rpy:193
 translate english eric_ann_tv_e2d170ee:
 
     # Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?" nointeract
-    Max_07 "" nointeract
+    Max_07 "Wow! Eric pulled Mom's towel off and I see her naked ass! Maybe we should get closer." nointeract
 
 # game/events/eric.rpy:206
 translate english eric_ann_tv_3fda5669:
 
     # Max_08 "Ого! На экране стало интереснее! А что это мама там делает?" nointeract
-    Max_08 "" nointeract
+    Max_08 "Wow! The screen got more interesting! What's Mom doing there?" nointeract
 
 # game/events/eric.rpy:212
 translate english eric_ann_tv_59d45b77:
 
     # Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?" nointeract
-    Max_07 "" nointeract
+    Max_07 "Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer." nointeract
 
 # game/events/eric.rpy:225
 translate english eric_ann_tv_f9ebeced:
 
     # Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!" nointeract
-    Max_10 "" nointeract
+    Max_10 "Wow! If I get noticed while I'm peeking, I'm definitely gonna get punished. We gotta get out of here now!" nointeract
 
 # game/events/eric.rpy:248
 translate english eric_ann_tv_closer1_9426e1bf:
@@ -569,156 +569,156 @@ translate english eric_ann_tv_closer1_f38956b5:
 translate english eric_ann_tv_closer1_849abea4:
 
     # Eric_09 "Макс! Чего хотел? Не видишь, мы заняты? Если хочешь смотреть, делай это тихо и нам не мешай. А ты, Ань, не останавливайся, продолжай..."
-    Eric_09 ""
+    Eric_09 "Max! What did you want? Can't you see we're busy? If you want to watch, do it quietly and don't disturb us. And Ann, don't stop, keep going..."
 
 # game/events/eric.rpy:260
 translate english eric_ann_tv_closer1_03d660f3:
 
     # Max_12 "Охренеть!"
-    Max_12 ""
+    Max_12 "Fucking hell!"
 
 # game/events/eric.rpy:270
 translate english eric_ann_tv_closer1_1cc34756:
 
     # Ann_13 "Что? Кто здесь? Макс?! Выйди немедленно, не видишь..." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "What? Who's here? Max?! Get out now, can't you see we're busy..." nointeract
 
 # game/events/eric.rpy:277
 translate english eric_ann_tv_closer1_282eb1bf:
 
     # Ann_04 "Я рада, Макс, что ты всё понимаешь. Сделаем вид, что ничего не было и ты ничего не видел, хорошо?"
-    Ann_04 ""
+    Ann_04 "I'm glad that you understand. Let's just pretend nothing happened and you didn't see anything, okay?"
 
 # game/events/eric.rpy:278
 translate english eric_ann_tv_closer1_acd22c78:
 
     # Max_01 "Конечно, мам!"
-    Max_01 ""
+    Max_01 "Sure, Mom!"
 
 # game/events/eric.rpy:281
 translate english eric_ann_tv_closer1_6019c9f2:
 
     # Ann_14 "Так, Макс, нам надо поговорить! Отойдем на кухню..."
-    Ann_14 ""
+    Ann_14 "All right, Max, we need to talk! Let's go to the kitchen..."
 
 # game/events/eric.rpy:282
 translate english eric_ann_tv_closer1_4a3cf6f9:
 
     # Max_08 "Ну ладно."
-    Max_08 ""
+    Max_08 "Okay, then."
 
 # game/events/eric.rpy:298
 translate english eric_ann_tv_closer1_74c87652:
 
     # Ann_12 "Послушай, сынок... Понимаешь, взрослым иногда нужно уединяться. Мы думали, что все наверху и что мы тут, всем и так понятно... В общем..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Look, son... You know, sometimes adults need some privacy. We thought everybody was upstairs and that we we had downstairs to ourselves..." nointeract
 
 # game/events/eric.rpy:289
 translate english eric_ann_tv_closer1_e22f3a8c:
 
     # Ann_15 "Макс! Что за слова? И как ты со мной разговариваешь? А ну-ка марш в свою комнату. Чтобы не видела тебя тут, пока мы смотрим фильмы!"
-    Ann_15 ""
+    Ann_15 "Max! How dare you speak to me that way!? Go to your room. I don't want to see you while we're here!"
 
 # game/events/eric.rpy:290
 translate english eric_ann_tv_closer1_712e0b38:
 
     # Max_11 "Ладно, ладно. Так бы сразу и сказала..."
-    Max_11 ""
+    Max_11 "Okay, okay. That's what I'd say right away..."
 
 # game/events/eric.rpy:292
 translate english eric_ann_tv_closer1_8bdd97e7:
 
     # Ann_04 "Макс! Ты у меня такой умница. Хорошо, что ты всё понимаешь. Ладно, иди в свою комнату, мы больше не будем... Тебя смущать..."
-    Ann_04 ""
+    Ann_04 "Max! You're smart. It's a good thing you understand. Go to your room so we can enjoy the movie in peace. "
 
 # game/events/eric.rpy:293
 translate english eric_ann_tv_closer1_26bf3db9:
 
     # Max_01 "Хорошо, мам..."
-    Max_01 ""
+    Max_01 "All right, Mom..."
 
 # game/events/eric.rpy:295
 translate english eric_ann_tv_closer1_640330f1:
 
     # Ann_13 "Посмотришь? На что? На нас? Или фильм? В любом случае нет! Ты ещё маленький. И, вообще, почему я перед тобой отчитываюсь. Дай взрослым отдохнуть. А ты иди в свою комнату!"
-    Ann_13 ""
+    Ann_13 "You'd like to watch? What? Us? Or the movie? Either way, no! You're still little. Why am I even answering to you? Give the adults a rest and you go to your room!"
 
 # game/events/eric.rpy:296
 translate english eric_ann_tv_closer1_cd0fd095:
 
     # Max_10 "Ладно, уже ухожу..."
-    Max_10 ""
+    Max_10 "Okay, I'm going now..."
 
 translate english strings:
 
     # game/events/eric.rpy:163
     old "{i}наблюдать за ними{/i}"
-    new ""
+    new "{i}watch them{/i}"
 
     # game/events/eric.rpy:163
     old "{i}подойти к ним{/i}"
-    new ""
+    new "{i}head over{/i}"
 
     # game/events/eric.rpy:170
     old "Конечно, мам! {i}(уйти){/i}"
-    new ""
+    new "Sure, Mom! {i}leave{/i}"
 
     # game/events/eric.rpy:170
     old "Конечно, мам! {i}(спрятаться){/i}"
-    new ""
+    new "Of course, Mom! {i}(Hide){/i}"
 
     # game/events/eric.rpy:187
     old "{i}продолжать смотреть{/i}"
-    new ""
+    new "{i}keep watching{/i}"
 
     # game/events/eric.rpy:187
     old "{i}подойти ближе{/i}"
-    new ""
+    new "{i}get closer{/i}"
 
     # game/events/eric.rpy:187
     old "{i}тихо уйти{/i}"
-    new ""
+    new "{i}leave quietly{/i}"
 
     # game/events/eric.rpy:193
     old "{i}Что за вопрос? Конечно!{/i}"
-    new ""
+    new "{i}What kind of question is that? Absolutely!{/i}"
 
     # game/events/eric.rpy:239
     old "Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?"
-    new ""
+    new "Wait, is she jerking him off?! Right here... We have to stop this right now! What's the best way to do it?"
 
     # game/events/eric.rpy:241
     old "Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?"
-    new ""
+    new "Wait, is she jerking him off completely naked?! Right here... We have to stop this right now! How can I do it?"
 
     # game/events/eric.rpy:244
     old "Она что, отсасывает ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?"
-    new ""
+    new "Is she sucking him off?! Right here... We have to stop this right now! How can I do it?"
 
     # game/events/eric.rpy:246
     old "Она что, совершенно голая отсасывает ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?"
-    new ""
+    new "Is she sucking him off completely naked?! Right here... We have to stop this right now! What can I do?"
 
     # game/events/eric.rpy:270
     old "Как раз всё вижу. Не стыдно?"
-    new ""
+    new "I can see everything. No shame?"
 
     # game/events/eric.rpy:270
     old "Хорошо. А вы тут продолжайте... Не стесняйтесь."
-    new ""
+    new "Okay. And you guys go ahead... Don't be shy."
 
     # game/events/eric.rpy:270
     old "Извини, мам. Я просто не ожидал ТАКОЕ увидеть..."
-    new ""
+    new "I'm sorry, Mom. I just didn't expect to see a certain SOMEONE..."
 
     # game/events/eric.rpy:286
     old "Хотите потрахаться - идите в свою комнату. Нечего этим на виду у всех заниматься!"
-    new ""
+    new "If you want to fuck, go to your room. Why do you have to do it in front of everyone!"
 
     # game/events/eric.rpy:286
     old "Да всё в порядке. Это ты извини... Я просто от неожиданности крикнул."
-    new ""
+    new "It's okay. I'm sorry about that... I just shouted out of surprise."
 
     # game/events/eric.rpy:286
     old "А вы не против, если я посмотрю?"
-    new ""
+    new "Do you mind if I take a look?"

@@ -660,7 +660,7 @@ translate english strings:
 translate english ann_talk_tv_first_movie_f195305d:
 
     # Ann_01 "Да так, всякую ерунду. Хотела какой-нибудь фильм посмотреть. Садись рядом, если тоже делать нечего..." nointeract
-    Ann_01 "Nothing yet, I was going to watch some movie. You can join me, if you want." nointeract
+    Ann_01 "Nothing yet, I was going to watch a movie. You can join me, if you want." nointeract
 
 # game/dialogues/anntalk.rpy:218
 translate english ann_talk_tv_first_movie_45629b2c:
@@ -678,19 +678,19 @@ translate english ann_talk_tv_first_movie_4fe2a7ed:
 translate english ann_talk_tv_first_movie_3a5a46d3:
 
     # Ann_04 "Я не знаю. Мне вот подруга посоветовала фильм с Томом Крузом и Николь Кидман, называется \"С широко закрытыми глазами\". Смотрел?" nointeract
-    Ann_04 "I don't know, really. My friend recommended some movie with Tom Cruise and Nicole Kidman, it's called \"Eyes wide shut\". Have you seen it?" nointeract
+    Ann_04 "I don't know, really. My friend highly recommended this movie with Tom Cruise and Nicole Kidman called \"Eyes wide shut\". Have you seen it?" nointeract
 
 # game/dialogues/anntalk.rpy:224
 translate english ann_talk_tv_first_movie_01e23211:
 
     # Ann_05 "Отлично! Вот сейчас и посмотрим, что там подруга насоветовала..." nointeract
-    Ann_05 "Great, let's see what she recommended..." nointeract
+    Ann_05 "Great, let's see what the fuss was about..." nointeract
 
 # game/dialogues/anntalk.rpy:231
 translate english ann_talk_tv_first_movie_f174135b:
 
     # Ann_02 "Да? И что ты о нём слышал? Хороший фильм? Стоит смотреть?" nointeract
-    Ann_02 "And what did you hear? Is it a good movie? Is worth watching?" nointeract
+    Ann_02 "And what did you hear? Is it any good?" nointeract
 
 # game/dialogues/anntalk.rpy:234
 translate english ann_talk_tv_first_movie_12158efe:
@@ -708,7 +708,7 @@ translate english ann_talk_tv_ero_ea9d350a:
 translate english ann_talk_tv_ero_e5c312c1:
 
     # Ann_01 "Нет, Макс. Не в этот раз. Я лучше посмотрю новости или какой-нибудь сериал... Извини, что тебя обнадёжила..."
-    Ann_01 "No, Max, not this time. I'll just watch some random show or news... I'm sorry for disappointing you."
+    Ann_01 "No, Max, not this time. I might just try the evening news...sorry for disappointing you."
 
 # game/dialogues/anntalk.rpy:244
 translate english ann_talk_tv_ero_43270e27:
@@ -726,7 +726,7 @@ translate english ann_talk_tv_start_975b2e0f:
 translate english ann_talk_tv_start_2fbf09a3:
 
     # Ann_13 "Ой, кажется, я не посмотрела какой возрастной рейтинг у фильма..."
-    Ann_13 "I should've looked up the rating of the movie..."
+    Ann_13 "I should've checked the rating for this..."
 
 # game/dialogues/anntalk.rpy:257
 translate english ann_talk_tv_start_2b8dcae5:
@@ -744,31 +744,31 @@ translate english ann_talk_tv_start_08523ad3:
 translate english ann_talk_tv_start_3b14cabb:
 
     # Max_02 "Я уже взрослый! И не такое видел!"
-    Max_02 "I'm an adult, it's not the most vulgar thing I've seen in my life"
+    Max_02 "I'm an adult, it's far from the most vulgar thing I've seen in my life"
 
 # game/dialogues/anntalk.rpy:262
 translate english ann_talk_tv_start_0d56f914:
 
     # Ann_04 "Да ты что? И где, интересно мне знать? Я когда подключала интернет, выбрала самый безопасный вариант, чтобы оградить вас от такого... Так где ты что там видел?"
-    Ann_04 "And where would you do that? I chose the most restricted Internet provider specifically so you won't be able to see anything like this... Where would you see anything like this?"
+    Ann_04 "Oh really? I chose the most restricted Internet provider specifically so we wouldn't be able to see anything like this... where exactly are you finding such innapropriate content?"
 
 # game/dialogues/anntalk.rpy:263
 translate english ann_talk_tv_start_d40a96e0:
 
     # Max_03 "Да это не важно. В любом случае, это же популярный фильм с известными актёрами, что тут такого может быть..."
-    Max_03 "It doesn't matter. And in any way, this is a popular movie with famous actors, how bad could it possibly be?"
+    Max_03 "I was just kidding. But anyway, this is a popular movie with famous actors, how bad could it possibly be?"
 
 # game/dialogues/anntalk.rpy:265
 translate english ann_talk_tv_start_a52089f5:
 
     # Ann_13 "Да, ты прав. Действительно, что... Макс! Чем дальше, тем больше я уверена, что этот фильм не для тебя..."
-    Ann_13 "I guess you're right... Max! I don't think you're supposed to watch this kinds of movies!"
+    Ann_13 "I guess you're right... Max! The more we watch this the less suitable I think this is for you!"
 
 # game/dialogues/anntalk.rpy:266
 translate english ann_talk_tv_start_6bcfcf09:
 
     # Max_02 "Ну сама подумай, стали бы Том Круз и Николь Кидман сниматься в эротике?"
-    Max_02 "Just think about it, do you think Tom Cruise and Nicole Kidman would star in something too dirty?"
+    Max_02 "JWell, think about it, would Tom Cruise and Nicole Kidman really be filming something this explicit?"
 
 # game/dialogues/anntalk.rpy:268
 translate english ann_talk_tv_start_6382bd94:
@@ -780,7 +780,7 @@ translate english ann_talk_tv_start_6382bd94:
 translate english ann_talk_tv_start_166013e6:
 
     # Ann_14 "Я уже десять раз пожалела, что выбрала этот фильм. Подруге ещё нужно будет сказать \"спасибо\" за то, что не предупредила..."
-    Ann_14 "I shouldn't have watch this movie. I'm going to give my friend a piece of my mind for recommending something like this..."
+    Ann_14 "I shouldn't have watched this movie. I'm going to give my friend a piece of my mind for recommending something like this..."
 
 # game/dialogues/anntalk.rpy:276
 translate english ann_talk_tv_start_ba88c73d:
@@ -792,7 +792,7 @@ translate english ann_talk_tv_start_ba88c73d:
 translate english ann_talk_tv_start_e9c2c485:
 
     # Ann_02 "Ты знаешь, может быть... Но да, ты прав. Фильм и правда хороший оказался. Хотя и не для детей, однозначно..."
-    Ann_02 "I don't know... I guess you're right. And it was a good movie. Definitely not for children, though."
+    Ann_02 "I don't know... but I guess you were right about it being good, except for the explicit parts. Definitely not for children, though."
 
 # game/dialogues/anntalk.rpy:279
 translate english ann_talk_tv_start_594c1ae6:
@@ -840,7 +840,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:240
     old "Да всё в порядке, я уже взрослый!"
-    new "It's okay, mom, I don't mind!"
+    new "It's okay, Mom, I don't mind!"
 
     # game/dialogues/anntalk.rpy:240
     old "Ну, как скажешь. Я тогда пойду..."
