@@ -521,6 +521,9 @@ label delivery1:
 label delivery2:
     $ renpy.block_rollback()
 
+    if 'solar' in delivery_list[1]:
+        $ kol_cream += 30
+        $ items['solar'].InShop = False
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 
     scene BG delivery-00

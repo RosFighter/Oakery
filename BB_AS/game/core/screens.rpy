@@ -1319,30 +1319,30 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Навык убеждения") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(mgg.social, 1)) size 24
+                                    text str(round(mgg.social*10, 1)) size 24
                             hbox xfill True:
                                 frame xsize 350 background None:
                                     text _("Навык скрытности") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text str(round(mgg.stealth, 1)) size 24
+                                    text str(round(mgg.stealth*10, 1)) size 24
                             if mgg.massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(round(mgg.massage, 1)) size 24
+                                        text str(round(mgg.massage*10, 1)) size 24
                             if mgg.ero_massage > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык эро.массажа") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(round(mgg.ero_massage, 1)) size 24
+                                        text str(round(mgg.ero_massage*10, 1)) size 24
                             if mgg.kissing > 0:
                                 hbox xfill True:
                                     frame xsize 350 background None:
                                         text _("Навык поцелуев") size 24 color gui.accent_color
                                     frame xfill True background None:
-                                        text str(round(mgg.kissing, 1)) size 24
+                                        text str(round(mgg.kissing*10, 1)) size 24
 
 
                     elif CurChar == "eric":

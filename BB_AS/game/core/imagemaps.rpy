@@ -42,3 +42,62 @@ screen search_cigarettes:
     key 'mouseup_3' action NullAction()
     key 'K_ESCAPE' action NullAction()
     key 'K_MENU' action NullAction()
+
+
+screen choice_zone_sunscreen:
+    tag menu
+
+    use show_dynamic_tooltip
+    imagemap:
+        if talk_var['sun_oiled'] == 2:
+            ground 'BG char Alice sun-alone 01-01a'
+        else:
+            ground 'BG char Alice sun-alone 01-01'
+        add 'Alice sun-alone 01-01'+mgg.dress
+        hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.left_foot')]:
+            hovered Cursor("palms")
+            unhovered Cursor(None)
+            tooltip _("{i}массировать ступни{/i}")
+
+        hotspot (0, 576, 158, 132) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.right_foot')]:
+            hovered Cursor("palms")
+            unhovered Cursor(None)
+            tooltip _("{i}массировать ступни{/i}")
+
+        hotspot (224, 349, 348, 118) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.shin')]:
+            hovered Cursor("palms")
+            unhovered Cursor(None)
+            tooltip _("{i}массировать голени{/i}")
+
+        hotspot (181, 552, 391, 122) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.shin')]:
+            hovered Cursor("palms")
+            unhovered Cursor(None)
+            tooltip _("{i}массировать голени{/i}")
+
+
+        if False: # if len(online_cources) > 1 and online_cources[1].current > 0:
+            hotspot (594, 358, 316, 316) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.hips')]:
+                hovered Cursor("palms")
+                unhovered Cursor(None)
+                tooltip _("{i}массировать бёдра{/i}")
+
+        hotspot (1536, 358, 116, 255) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.shoulders')]:
+            hovered Cursor("palms")
+            unhovered Cursor(None)
+            tooltip _("{i}массировать плечи{/i}")
+
+        hotspot (1146, 363, 374, 250) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.spine')]:
+            hovered Cursor("palms")
+            unhovered Cursor(None)
+            tooltip _("{i}массировать спину{/i}")
+
+        if False:
+            hotspot (924, 348, 206, 326) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.ass')]:
+                hovered Cursor("palms")
+                unhovered Cursor(None)
+                tooltip _("{i}массировать попку{/i}")
+
+
+    key 'mouseup_3' action NullAction()
+    key 'K_ESCAPE' action NullAction()
+    key 'K_MENU' action NullAction()

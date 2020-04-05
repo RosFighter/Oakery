@@ -593,9 +593,16 @@ label alice_dressed_friend:
 
 
 label alice_sun:
-    scene BG char Alice sun
-    $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
-    $ persone_button1 = "Alice sun "+pose2_2+chars["alice"].dress
+    if talk_var['sun_oiled']:
+        scene BG char Alice sun-alone 01
+        if talk_var['sun_oiled'] == 2:
+            show Alice sun-alone 01a
+        else:
+            show Alice sun-alone 01
+    else:
+        scene BG char Alice sun
+        $ renpy.show("Alice sun "+pose2_2+chars["alice"].dress)
+        $ persone_button1 = "Alice sun "+pose2_2+chars["alice"].dress
     return
 
 

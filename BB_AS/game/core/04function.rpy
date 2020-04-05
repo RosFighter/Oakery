@@ -233,7 +233,7 @@ init python:
     def Wait(delta): # функция реализует ожидание в минутах
         global day, tm
         h, m = tm.split(":")
-        ti = int(h)*60 + int(m) + delta
+        ti = int(h)*60 + int(m) + int(delta)
         h = ti // 60
         m = ti % 60
 
@@ -724,15 +724,22 @@ init python:
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
+        if items['max-a'].have and any([day > 9, day==9 and tm > "12:30"]):
+            items['max-a'].InShop = False
+            mgg.dress = 'b'
+        else:
+            mgg.dress = 'a'
         for char in chars:
             prev_shed = GetPlan(eval("plan_"+char), prevday, prevtime)
             cur_shed  = GetPlan(eval("plan_"+char), day, tm)
             if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
+
+                if char == 'alice' and talk_var['sun_oiled']:  # Если Алису уже намазали кремом, повторное намазываение невозможно
+                    talk_var['sun_oiled'] = 3
                 # ПРОВЕРИМ НЕОБХОДИМОСТЬ ОбНОВЛЕНИЯ РАНДОМНОЙ ОДЕЖДЫ (временный блок)
                 if prevtime < "04:00" <= tm:
                     cloth_type["ann"]["cooking"]  = renpy.random.choice(["a", "b"])
                     # mgg.dress = renpy.random.choice(["a", "b"])
-                    mgg.dress = 'a'
 
                 elif prevtime < "16:00" <= tm and day > 1:
                     cloth_type["ann"]["cooking"] = "b"
@@ -1143,13 +1150,25 @@ init python:
     # формат имен фалов для курсоров:
     # 'images/interface/cursors/ИмяКурсора.png'
     def cursor(name = None):
-        if name:
-            if renpy.game.preferences.physical_size[1] < 900:
-                config.mouse = {'default' : [('images/interface/cursors/' + name + '-64.webp', 30, 30)]}
-            else:
-                config.mouse = {'default' : [('images/interface/cursors/' + name + '-80.webp', 30, 30)]}
+        config.mouse = None
+        if renpy.game.preferences.physical_size[1] < 900:
+            if name == 'find':
+                config.mouse = {'default' : [('images/interface/cursors/find-64.webp', 27, 27)]}
+            elif name == 'talk':
+                config.mouse = {'default' : [('images/interface/cursors/talk-64.webp', 11, 50)]}
+            elif name == 'palms':
+                config.mouse = {'default' : [('images/interface/cursors/palms-64.webp', 37, 32)]}
+            elif name:
+                config.mouse = {'default' : [('images/interface/cursors/' + name + '-64.webp', 0, 0)]}
         else:
-            config.mouse = None
+            if name == 'find':
+                config.mouse = {'default' : [('images/interface/cursors/find-80.webp', 33, 33)]}
+            elif name == 'talk':
+                config.mouse = {'default' : [('images/interface/cursors/talk-80.webp', 14, 61)]}
+            elif name == 'palms':
+                config.mouse = {'default' : [('images/interface/cursors/palms-80.webp', 46, 40)]}
+            elif name:
+                config.mouse = {'default' : [('images/interface/cursors/' + name + '-80.webp', 0, 0)]}
     # превращаем функцию в action,
     # чтобы можно было привязать, например, к нажатию кнопок:
     # action Cursor("talk")

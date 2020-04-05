@@ -52,6 +52,7 @@ label Waiting:
         $ pose2_2 = renpy.random.choice(["01", "02"])
         $ pose2_3 = renpy.random.choice(["01", "02"])
         # $ tv_scene = renpy.random.choice(["", "bj", "hj"])
+        $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
     if prevtime < "12:00" <= tm:
         call Noon
 
@@ -167,7 +168,7 @@ label NewDay:
         $ credit.left -= 1       # уменьшим счетчик дней
         if credit.left == 0:   # если счетчик дней кончился
             $ credit.charge()    # начислим штраф
-
+    $ talk_var['sun_oiled'] = 0  # Алиce можно намазать кремом
     return
 
 
@@ -355,6 +356,18 @@ label after_load:
         if current_ver < '0.03.1.009':
             $ current_ver = '0.03.1.009'
             $ talk_var['ann_movie'] = 0
+
+        if current_ver < '0.03.1.010':
+            $ current_ver = '0.03.1.010'
+            $ talk_var.update({
+                "alice_sun": 0,
+                'sun_oiled': 0,
+                })
+            $ items.update({
+                "solar"      : Item(_("КРЕМ ДЛЯ ЗАГАРА"), _("Легкий, хорошо впитывающийся препарат для ускорения загара обладает увлажняющими и защитными свойствами. Рекомендуется для применения на пляже и в солярии."), "solar", 5, 50),
+                "max-a"      : Item(_("МУЖСКИЕ МАЙКА И ШОРТЫ"), _("Одежда для Макса"), "max-a", 0, 100, cells=2),
+                })
+            $ kol_cream = 0
 
         if current_ver < config.version:
             $ current_ver = config.version

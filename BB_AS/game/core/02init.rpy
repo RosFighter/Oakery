@@ -6,12 +6,16 @@ init 9999 python:
 define lime   = "#00FF00"
 define red    = "#FF0000"
 define orange = "#E59400"
+define gray   = "#808080"
 
 default failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
 default succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
 
 default undetect = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
 default spotted  = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
+
+default alice_good_mass = _("{color=[lime]}{i}Алисе понравился массаж!{/i}{/color}\n")
+default alice_bad_mass = _("{color=[orange]}{i}Алисе не понравился массаж!{/i}{/color}\n")
 
 define config.has_autosave = False
 define config.has_quicksave = False
@@ -70,6 +74,7 @@ define talks = {
     "lisa_hw"    : TalkTheme("lisa", _("Помочь с уроками?"), "Lisa_HomeWork", "possibility['sg'].stn > 1 and not flags['lisa_hw'] and GetPlan(plan_lisa, day, tm).name == 'homework'"),
     "lisa_peep"  : TalkTheme("lisa", _("Хотел извиниться за утренний инцидент..."), "Lisa_sorry", "peeping['lisa_shower']==3"),
     "alice_peep" : TalkTheme("alice", _("Хотел извиниться за утренний инцидент..."), "Alice_sorry", "peeping['alice_shower']==3"),
+    "alice_sol"  : TalkTheme("alice", _("Загораешь?"), "Alice_solar", "talk_var['alice_sun']==0 and (talk_var['sun_oiled']==0 or talk_var['sun_oiled']==3)and GetPlan(plan_alice, day, tm).name == 'sun'"),
     }
 
 # Категории магазина
