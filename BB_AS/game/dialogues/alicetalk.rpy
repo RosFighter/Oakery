@@ -1058,37 +1058,34 @@ label Alice_solar:
     ## Загораешь?
     menu:
         Alice_02 "Как ты догадался, Шерлок?"
-        "{i}предложить намазать кремом{/i}":
-            if not items['solar'].have:  # нет крема
+        "Может быть, тебя намазать кремом для загара?" if talk_var['sun_oiled'] == 3:
+            Alice_00 "Достаточно на сегодня, Макс..."
+            Max_00 "Ясно. Ну, тогда, может, завтра..."
+            $ talk_var['sun_oiled'] = 4
+            jump AfterWaiting
+        "Может быть, тебя намазать кремом для загара?" if not items['solar'].have:  # нет крема
                 Max_00 "Может быть, тебя намазать кремом для загара?"
                 Alice_13 "Может быть. Вот только у меня его нет..."
                 Max_00 "Ясно. Ну, в другой раз значит..."
                 $ items['solar'].InShop = True
-                jump Waiting
-
+                jump AfterWaiting
+        "{i}Предложить Алисе намазать ее кремом{/i}" if any([mgg.dress == 'a', kol_cream < 2]):
             if mgg.dress == 'a':  # Максу нужна одежда
                 Max_00 "{i}Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одёжкой полегче.{/i}"
                 $ items['max-a'].InShop = True
-                jump Waiting
-
-            if talk_var['sun_oiled'] == 3:  # сегодня Алусу уже намазывали кремом
-                Max_00 "Может быть, тебя намазать кремом для загара?"
-                Alice_00 "Достаточно на сегодня, Макс..."
-                Max_00 "Ясно. Ну, тогда, может, завтра..."
-                $ talk_var['sun_oiled'] = 4
-                jump Waiting
+                jump AfterWaiting
 
             if kol_cream < 2:  # крема не хватит даже просто нанести
                 Max_00 "{i}Крем почти закончился. Нужно купить еще.{/i}"
                 $ items['solar'].InShop = True
-                jump Waiting
+                jump AfterWaiting
 
-            Max_00 "Может быть, тебя намазать кремом для загара?"
+        "Может быть, тебя намазать кремом для загара?" if all([talk_var['sun_oiled']!=3, kol_cream>=2]):
             Alice_00 "Если у тебя есть крем, то давай, раз тебе делать нечего."
             Max_00 "Ложись на живот тогда..."
             $ talk_var['sun_oiled'] = 1
         "Ладно, загорай...":
-            jump Waiting
+            jump AfterWaiting
 
     scene BG char Alice sun-alone 01-01
     $ renpy.show('Alice sun-alone 01-01'+mgg.dress)
@@ -1096,13 +1093,32 @@ label Alice_solar:
         Alice_07 "Эти шезлонги всем хороши, но на животе загорать не получается. Приходится коврик для йоги использовать..."
         "{i}нанести крем{/i}" if kol_cream >= 2:  # просто наносим крем. близко к оригиналу
             $ SetCamsGrow(house[6], 140)
-            pass
+            $ _suf = 'a'
+            $ spent_time += 20
+            $ kol_cream -= 2
+            scene BG char Alice sun-alone 05
+            $ renpy.show('Alice sun-alone 05-01'+_suf+'-01'+mgg.dress)
+            Max_00 "{i}Намажем ножки...{/i}"
+            scene BG char Alice sun-alone 04
+            $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
+            Max_00 "{i}Теперь плечи...{/i}" nointeract
+            $ __res = renpy.display_menu([("{i}нет, массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            if __res > 0:
+                $ _talk_top = True
+                call talk_topless()
+            $ __r1 = renpy.random.choice(['02','03'])
+            $ renpy.scene()
+            $ renpy.show('BG char Alice sun-alone '+__r1)
+            $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
+            Max_00 "{i}И закончим, хорошенько намазав спину...{/i}"
+            Alice_02 "Спасибо, Макс. Так намного лучше..."
+            Max_00 "Обращайся, если что..."
         "{i}сделать массаж с кремом{/i}" if kol_cream >= 7:  # попытка сделать массаж с кремом
             $ _massaged = []
             $ _talk_top = False
             $ SetCamsGrow(house[6], 160)
             jump massage_sunscreen
-        "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}недостаточно крема{/color}{/i}" if kol_cream < 7:
+        "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}" if kol_cream < 7:
             jump .type_choice
     jump Waiting
 
@@ -1110,19 +1126,29 @@ label Alice_solar:
 label massage_sunscreen:
     if talk_var['sun_oiled'] == 2:
         scene BG char Alice sun-alone 01-01a
-        $ __suf = 'b'
+        $ _suf = 'b'
     else:
         scene BG char Alice sun-alone 01-01
-        $ __suf = 'a'
+        $ _suf = 'a'
     $ renpy.show('Alice sun-alone 01-01'+mgg.dress)
     if len(online_cources) > 1 and online_cources[1].current > 0:
         if len(_massaged) == 4: # 5: # временно доступны только 4 зоны
+            scene BG char Alice sun-alone 01
+            if talk_var['sun_oiled'] == 2:
+                show Alice sun-alone 01a
+            else:
+                show Alice sun-alone 01
             Alice_00 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
             Alice_00 "Ладно, хватит на сегодня, Макс. И... спасибо!"
             Max_00 "Не за что!"
             $ AddRelMood('alice', 15, 150)
             jump .end  # если Макс прошел курсы массажа ног, ему доступны 5 зон
     elif len(_massaged) == 4:
+        scene BG char Alice sun-alone 01
+        if talk_var['sun_oiled'] == 2:
+            show Alice sun-alone 01a
+        else:
+            show Alice sun-alone 01
         Alice_00 "Спасибо, Макс. На сегодня достаточно. У тебя неплохо получается, а если поучишься, может стать еще лучше."
         Max_00 "Да не за что, обращайся!"
         if len(online_cources) == 1:  # Курс массажа еще не был доступен
@@ -1137,6 +1163,11 @@ label massage_sunscreen:
         jump .end  # если курсы не пройдены и первыми массировались ступни, доступно 4 зоны
     elif len(_massaged) == 2 and _massaged[0] != 'foot':
         # в противном случае доступны только 2 зоны
+        scene BG char Alice sun-alone 01
+        if talk_var['sun_oiled'] == 2:
+            show Alice sun-alone 01a
+        else:
+            show Alice sun-alone 01
         Alice_00 "Спасибо, Макс. На сегодня достаточно."
         Max_00 "Да не за что, обращайся!"
         $ AddRelMood('alice', 5, 50)
@@ -1148,25 +1179,25 @@ label massage_sunscreen:
 
     label .left_foot:
         scene BG char Alice sun-alone 06
-        $ renpy.show('Alice sun-alone 06-01'+__suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 06-01'+_suf+'-01'+mgg.dress)
         Max_00 "{i}Разомнём левую пяточку...{/i}"
         scene BG char Alice sun-alone 07
-        $ renpy.show('Alice sun-alone 07-01'+__suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 07-01'+_suf+'-01'+mgg.dress)
         Max_00 "{i}Теперь правую...{/i}"
         jump .foot
 
     label .right_foot:
         scene BG char Alice sun-alone 07
-        $ renpy.show('Alice sun-alone 07-01'+__suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 07-01'+_suf+'-01'+mgg.dress)
         Max_00 "{i}Разомнём правую ступню...{/i}"
         scene BG char Alice sun-alone 06
-        $ renpy.show('Alice sun-alone 06-01'+__suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 06-01'+_suf+'-01'+mgg.dress)
         Max_00 "{i}Теперь левую...{/i}"
         jump .foot
 
     label .shin:
         scene BG char Alice sun-alone 05
-        $ renpy.show('Alice sun-alone 05-01'+__suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 05-01'+_suf+'-01'+mgg.dress)
         Max_00 "{i}Помассируем ножки вот здесь...{/i}"
         if 'shin' in _massaged:
             # голени уже массировались
@@ -1203,7 +1234,7 @@ label massage_sunscreen:
 
     label .hips:
         # scene BG char Alice sun-alone 05
-        # $ renpy.show('Alice sun-alone 05-01'+__suf+'01'+mgg.dress)
+        # $ renpy.show('Alice sun-alone 05-01'+_suf+'01'+mgg.dress)
         Max_00 "{i}Помассируем бёдра...{/i}"
         if 'hips' in _massaged:
             # бёдра уже массировались
@@ -1226,15 +1257,17 @@ label massage_sunscreen:
 
     label .shoulders:
         scene BG char Alice sun-alone 04
-        $ renpy.show('Alice sun-alone 04-01'+__suf+'-01'+mgg.dress)
-        Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
+        $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
+        Max_00 "{i}Хорошенько разомнём плечи...{/i}" nointeract
+        # Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([("{i}нет, массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                call .talk_topless('.shoulders')
-                $ renpy.show('Alice sun-alone '+__r1+'-01'+__suf+'-01'+mgg.dress)
-        Max_00 "{i}Хорошенько разомнём плечи...{/i}"
+                # call .talk_topless('.shoulders')
+                call talk_topless()
+                $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
+                Max_00 "И ещё немного..."
 
         if 'shoulders' in _massaged:
             # плечи уже массировались
@@ -1273,15 +1306,18 @@ label massage_sunscreen:
         $ __r1 = renpy.random.choice(['02','03'])
         $ renpy.scene()
         $ renpy.show('BG char Alice sun-alone '+__r1)
-        $ renpy.show('Alice sun-alone '+__r1+'-01'+__suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
+        Max_00 "{i}Тщательно помнём спинку...{/i}"
         Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([("{i}нет, массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                call .talk_topless('.spine')
-                $ renpy.show('Alice sun-alone '+__r1+'-01'+__suf+'-01'+mgg.dress)
-        Max_00 "{i}Тщательно помнём спинку...{/i}"
+                # call .talk_topless('.spine')
+                call talk_topless()
+                $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
+                Max_00 "Ещё немного крема..."
+
 
         if 'spine' in _massaged:
             # спина уже массировалась
@@ -1362,7 +1398,7 @@ label massage_sunscreen:
                     Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
                     Max_00 "Так держать, сестрёнка!"
                     $ talk_var['sun_oiled'] = 2
-                    $ __suf = 'b'
+                    $ _suf = 'b'
                     $ SetCamsGrow(house[6], 200)
                 else:
                     Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
@@ -1385,11 +1421,39 @@ label massage_sunscreen:
         jump .end
 
     label .end:
+        scene BG char Alice sun-alone 01
+        if talk_var['sun_oiled'] == 2:
+            show Alice sun-alone 01a
+        else:
+            show Alice sun-alone 01
         $ spent_time += 10 + clip(int(round(5*len(_massaged), -1)), 0, 30)
         if kol_cream < 2:
             Max_00 "{i}Ну вот, крем закончился. Надо еще купить.{/i}"
+            if kol_cream == 0:
+                $ items['solar'].have = False
         elif kol_cream < 7:
             Max_00 "{i}Крема мало осталось, в следующий раз может не хватить, лучше купить заранее.{/i}"
 
         # "помассированны [_massaged] "
         jump Waiting
+
+
+label talk_topless():
+    $ _ch1 = GetChance(mgg.social, 3)
+    $ _ch1_color = GetChanceColor(_ch1)
+    $ ch1_vis = str(int(_ch1/10)) + "%"
+    menu:
+        Alice_06 "Нет, конечно. Но тебя я так радовать не собираюсь!"
+        "Что, стесняешься? {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+            if RandomChance(_ch1):
+                Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
+                Max_00 "Так держать, сестрёнка!"
+                $ talk_var['sun_oiled'] = 2
+                $ _suf = 'b'
+                $ SetCamsGrow(house[6], 200)
+            else:
+                Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
+                Max_00 "Ладно, как скажешь..."
+        "Ну, как хочешь...":
+            pass
+    return
