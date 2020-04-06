@@ -1102,7 +1102,7 @@ label Alice_solar:
             scene BG char Alice sun-alone 04
             $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
             Max_00 "{i}Теперь плечи...{/i}" nointeract
-            $ __res = renpy.display_menu([("{i}нет, массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            $ __res = renpy.display_menu([("{i}наносить крем молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
                 call talk_topless()
@@ -1261,7 +1261,7 @@ label massage_sunscreen:
         Max_00 "{i}Хорошенько разомнём плечи...{/i}" nointeract
         # Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
         if not _talk_top:
-            $ __res = renpy.display_menu([("{i}нет, массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
                 # call .talk_topless('.shoulders')
@@ -1307,10 +1307,10 @@ label massage_sunscreen:
         $ renpy.scene()
         $ renpy.show('BG char Alice sun-alone '+__r1)
         $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Тщательно помнём спинку...{/i}"
-        Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
+        Max_00 "{i}Тщательно помнём спинку...{/i}" nointeract
+        # Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
         if not _talk_top:
-            $ __res = renpy.display_menu([("{i}нет, массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
                 # call .talk_topless('.spine')
@@ -1386,26 +1386,6 @@ label massage_sunscreen:
                 jump .fail
         $ _massaged.append('foot')
         jump massage_sunscreen
-
-    label .talk_topless(lab):
-        $ _ch1 = GetChance(mgg.social, 3)
-        $ _ch1_color = GetChanceColor(_ch1)
-        $ ch1_vis = str(int(_ch1/10)) + "%"
-        menu:
-            Alice_06 "Нет, конечно. Но тебя я так радовать не собираюсь!"
-            "Что, стесняешься? {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                if RandomChance(_ch1):
-                    Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
-                    Max_00 "Так держать, сестрёнка!"
-                    $ talk_var['sun_oiled'] = 2
-                    $ _suf = 'b'
-                    $ SetCamsGrow(house[6], 200)
-                else:
-                    Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
-                    Max_00 "Ладно, как скажешь..."
-            "Ну, как хочешь...":
-                pass
-        jump expression 'massage_sunscreen'+lab
 
     label .double:
         Alice_00 "Взялся делать массаж, а сам не знаешь что делать. Хватит, иди отсюда, дай позагорать спокойно."
