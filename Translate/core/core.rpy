@@ -20,3 +20,11 @@ translate english after_load_93331e6b:
     # "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
     "Unfortunately, saving this version is not supported due to a large number of internal changes. Start a new game or select another save."
 
+# TODO: Translation updated at 2020-04-08 14:21
+
+translate english strings:
+
+    # game/core/core.rpy:370
+    old "Свободный и лёгкий летний комплект одежды на каждый день."
+    new ""
+

@@ -1043,3 +1043,31 @@ translate english strings:
     # game/core/03variables.rpy:207
     old "Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."
     new "The combination of whole hazelnuts and a delicious creamy nut in a crispy waffle shell will give you a unique taste experience."
+# TODO: Translation updated at 2020-04-08 14:21
+
+translate english strings:
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Ferrero Rocher\" (16 штук)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Конфеты \"Ferrero Rocher\" (24 штуки)"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "КРЕМ ДЛЯ ЗАГАРА"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Легкий, хорошо впитывающийся препарат для ускорения загара обладает увлажняющими и защитными свойствами. Рекомендуется для применения на пляже и в солярии."
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "МУЖСКИЕ МАЙКА И ШОРТЫ"
+    new ""
+
+    # game/core/03variables.rpy:207
+    old "Одежда для Макса"
+    new ""
+
