@@ -670,8 +670,8 @@ translate english alice_sleep_morning_c26f2753:
 # game/events/alice.rpy:175
 translate english alice_sleep_morning_c6cf727e:
 
-    # Max_02 Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
-    Max_02 Max_04 "Wow! Such tempting curves and boobs can make you lose consciousness early in the morning... What a big sister I have!" nointeract
+    # Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
+    Max_04 "Wow! Such tempting curves and boobs can make you lose consciousness early in the morning... What a big sister I have!" nointeract
 
 # game/events/alice.rpy:178
 translate english alice_sleep_morning_1657f52d:
@@ -1332,4 +1332,11 @@ translate english alice_dressed_friend_3b812933:
 
     # Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Однако, пора сваливать. Вдруг, кто-то заметит!"
     Max_03 "Oh, what a view! Yeah, sis, it's a sin not to show off in front of a mirror with those tits... But it's time to get out of here. Someone might notice!"
+# TODO: Translation updated at 2020-04-08 14:21
+
+# game/events/alice.rpy:184
+translate english alice_sleep_morning_478c8465:
+
+    # Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
+    Max_04 "" nointeract
 

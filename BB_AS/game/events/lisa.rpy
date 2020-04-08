@@ -54,6 +54,9 @@ label lisa_shower:
                     $ peeping["lisa_shower"] = 4
                     jump .end_peeping
         "{i}заглянуть со двора{/i}":
+            if sorry_gifts['lisa'].owe:
+                Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
+                jump .end_peeping2
             jump .start_peeping
         "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
             jump .ladder

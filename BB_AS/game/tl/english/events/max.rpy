@@ -956,8 +956,8 @@ translate english about_credit_189e301b:
 # game/events/max.rpy:880
 translate english about_credit_018fe8cf:
 
-    # Max_04 "Подытожим условия: \nВ течение месяца нужно вернуть всю сумму займа + 10% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится... \nЛучше, конечно же, до такого не доводить."
-    Max_04 "Let's summarize the conditions: \nWithin a month you need to repay the entire amount of the loan + 10% \nIf not repaid on time, the amount of the debt is tripled every 30 days, and my site will withdraw half of the profits daily. And you will not be able to borrow again... \nOf course, do not bring it to this."
+    # Max_04 "Подытожим условия: \nВ течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится... \nЛучше, конечно же, до такого не доводить."
+    Max_04 "Let's summarize the conditions: \nWithin a month you need to repay the entire amount of the loan + 10%% \nIf not repaid on time, the amount of the debt is tripled every 30 days, and my site will withdraw half of the profits daily. And you will not be able to borrow again... \nOf course, do not bring it to this."
 
 # game/events/max.rpy:881
 translate english about_credit_6a66dabb:
@@ -1057,4 +1057,3 @@ translate english InstallCam_e958aece:
 
     # Max_03 "{i}Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится!{/i}" nointeract
     Max_03 "Now there's no missing any of the action! The girls like to watch themselves front of the mirror, and Mom and Eric, as I noticed, try not to miss the chance to fuck in front of it... My audience is going to love this!" nointeract
-

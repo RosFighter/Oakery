@@ -349,9 +349,19 @@ init python:
             self.fines = True
             self.left = 30
 
-    class Gift:
+
+    class Gift:  # предметы-подарки
         def __init__(self, item, select, label, mood = -1):
             self.item   = item    # id предмета-подарка
             self.select = select  # фраза в окне диалогов
             self.label  = label   # метка запуска диалога дарения
             self.mood   = mood
+
+
+    class SorryGift:  # извинительные подарки
+        def __init__(self):
+            self.owe   = False  # Макс должен подарить извинительный подарок
+            self.left  = 0      # осталось дней до наказания, если не вручит подарок
+            self.give  = []     # ранее врученные извинительные подарки
+            self.valid = set()  # множество ID товаров, допустимых в качестве извинений
+            self.days  = []     # список дней, когда Макс оправдывался после подглядывания

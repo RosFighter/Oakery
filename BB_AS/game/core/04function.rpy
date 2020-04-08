@@ -420,10 +420,7 @@ init python:
         global money, items
         money -= items[id].price
         items[id].buy = True
-        if (day+2) % 7 != 6:
-            items[id].delivery = 1
-        else:
-            items[id].delivery = 2
+        items[id].delivery = 1 if (day+2) % 7 != 6 else 2
 
 
     def GetDeliveryList(): # формирует список доставляемых товаров
@@ -1177,3 +1174,10 @@ init python:
     def have_dialog():  # возвращает признак наличия диалога для первого персонажа в комнате
         CurShedRec = GetPlan(eval("plan_"+current_room.cur_char[0]), day, tm)
         return CurShedRec.enabletalk and len(TalkMenuItems()) > 0
+
+
+    def there_in_stock(char):  # проверяет, есть ли у Макса подарок персонажу в качестве извинения 
+        for id in sorry_gifts[char].valid:
+            if items[id].have:
+                return True
+        return False

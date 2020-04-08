@@ -877,13 +877,15 @@ label need_money:
 
 label cheat_money:
     if possibility["cams"].stn < 4:
-        if ((items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy))
-            and (items['dress'].InShop and not (items['dress'].have or items['dress'].buy))
-            and money <= 600):
+        if all([
+                items['bikini'].InShop and not any([items['bikini'].have, items['bikini'].buy]),
+                items['dress'].InShop and not any([items['dress'].have, items['dress'].buy]),
+                money <= 600
+            ]):
                 jump .strateg
-        elif money < 320 and not (items['dress'].InShop and not (items['dress'].have or items['dress'].buy)):
+        elif money < 320 and not all([items['dress'].InShop, not any([items['dress'].have, items['dress'].buy])]):
             jump .strateg
-        elif money < 380 not (items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy)):
+        elif money < 380 and not all([items['bikini'].InShop, not any([items['bikini'].have, items['bikini'].buy])]):
             jump .strateg
         else:
             pass

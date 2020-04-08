@@ -20,7 +20,7 @@ screen dynamic_tooltip():
             text_font "segoeprb.ttf"
 
 
-screen search_cigarettes:
+screen search_cigarettes():
     tag menu
 
     use show_dynamic_tooltip
@@ -44,7 +44,7 @@ screen search_cigarettes:
     key 'K_MENU' action NullAction()
 
 
-screen choice_zone_sunscreen:
+screen choice_zone_sunscreen():
     tag menu
 
     use show_dynamic_tooltip

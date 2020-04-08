@@ -146,3 +146,23 @@ translate english strings:
     old "{color=#E59400}{i}Вас заметили!{/i}{/color}\n"
     new "{color=#E59400}{i}You've been spotted!{/i}{/color}\n"
 
+# TODO: Translation updated at 2020-04-08 14:21
+
+translate english strings:
+
+    # game/core/02init.rpy:17
+    old "{color=[lime]}{i}Алисе понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:18
+    old "{color=[orange]}{i}Алисе не понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:55
+    old "Загораешь?"
+    new ""
+
+    # game/core/02init.rpy:55
+    old "У меня для тебя обещанная вкусняшка!"
+    new ""
+

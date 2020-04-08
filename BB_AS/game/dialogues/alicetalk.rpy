@@ -1059,30 +1059,30 @@ label Alice_solar:
     menu:
         Alice_02 "Как ты догадался, Шерлок?"
         "Может быть, тебя намазать кремом для загара?" if talk_var['sun_oiled'] == 3:
-            Alice_00 "Достаточно на сегодня, Макс..."
+            Alice_04 "Достаточно на сегодня, Макс..."
             Max_00 "Ясно. Ну, тогда, может, завтра..."
             $ talk_var['sun_oiled'] = 4
             jump AfterWaiting
         "Может быть, тебя намазать кремом для загара?" if not items['solar'].have:  # нет крема
-                Max_00 "Может быть, тебя намазать кремом для загара?"
+                Max_04 "Может быть, тебя намазать кремом для загара?"
                 Alice_13 "Может быть. Вот только у меня его нет..."
                 Max_00 "Ясно. Ну, в другой раз значит..."
                 $ items['solar'].InShop = True
                 jump AfterWaiting
-        "{i}Предложить Алисе намазать ее кремом{/i}" if any([mgg.dress == 'a', kol_cream < 2]):
+        "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and any([mgg.dress == 'a', kol_cream < 2]):
             if mgg.dress == 'a':  # Максу нужна одежда
-                Max_00 "{i}Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одёжкой полегче.{/i}"
+                Max_07 "{i}Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/i}"
                 $ items['max-a'].InShop = True
                 jump AfterWaiting
 
             if kol_cream < 2:  # крема не хватит даже просто нанести
-                Max_00 "{i}Крем почти закончился. Нужно купить еще.{/i}"
+                Max_07 "{i}Крем почти закончился. Нужно купить ещё.{/i}"
                 $ items['solar'].InShop = True
                 jump AfterWaiting
 
         "Может быть, тебя намазать кремом для загара?" if all([talk_var['sun_oiled']!=3, kol_cream>=2]):
-            Alice_00 "Если у тебя есть крем, то давай, раз тебе делать нечего."
-            Max_00 "Ложись на живот тогда..."
+            Alice_03 "Если у тебя есть крем, то давай, раз тебе делать нечего."
+            Max_01 "Ложись на живот тогда..."
             $ talk_var['sun_oiled'] = 1
         "Ладно, загорай...":
             jump AfterWaiting
@@ -1098,21 +1098,21 @@ label Alice_solar:
             $ kol_cream -= 2
             scene BG char Alice sun-alone 05
             $ renpy.show('Alice sun-alone 05-01'+_suf+'-01'+mgg.dress)
-            Max_00 "{i}Намажем ножки...{/i}"
+            Max_01 "{i}Так, хорошенько намажем эти стройные ножки...{/i}"
             scene BG char Alice sun-alone 04
             $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
-            Max_00 "{i}Теперь плечи...{/i}" nointeract
+            Max_01 "{i}Теперь плечи и совсем немного шею...{/i}" nointeract
             $ __res = renpy.display_menu([("{i}наносить крем молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                call talk_topless()
+                call massage_sunscreen.talk_topless
             $ __r1 = renpy.random.choice(['02','03'])
             $ renpy.scene()
             $ renpy.show('BG char Alice sun-alone '+__r1)
             $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
-            Max_00 "{i}И закончим, хорошенько намазав спину...{/i}"
-            Alice_02 "Спасибо, Макс. Так намного лучше..."
-            Max_00 "Обращайся, если что..."
+            Max_03 "{i}И закончим, хорошенько намазав всю её спину...{/i}"
+            Alice_03 "Спасибо, Макс. Так намного лучше..."
+            Max_04 "Обращайся, если что..."
         "{i}сделать массаж с кремом{/i}" if kol_cream >= 7:  # попытка сделать массаж с кремом
             $ _massaged = []
             $ _talk_top = False
@@ -1138,21 +1138,23 @@ label massage_sunscreen:
                 show Alice sun-alone 01a
             else:
                 show Alice sun-alone 01
-            Alice_00 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
-            Alice_00 "Ладно, хватит на сегодня, Макс. И... спасибо!"
-            Max_00 "Не за что!"
+            Alice_07 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
+            Max_03 "Да пустяки, обращайся!"
+            Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
+            Max_05 "Не за что! Всегда рад..."
             $ AddRelMood('alice', 15, 150)
             jump .end  # если Макс прошел курсы массажа ног, ему доступны 5 зон
+
     elif len(_massaged) == 4:
         scene BG char Alice sun-alone 01
         if talk_var['sun_oiled'] == 2:
             show Alice sun-alone 01a
         else:
             show Alice sun-alone 01
-        Alice_00 "Спасибо, Макс. На сегодня достаточно. У тебя неплохо получается, а если поучишься, может стать еще лучше."
-        Max_00 "Да не за что, обращайся!"
+        Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
+        Max_04 "Да не за что, обращайся!"
         if len(online_cources) == 1:  # Курс массажа еще не был доступен
-            Max_00 "{i}В чём-то Алиса права, поучиться, пожалуй, стоит.{/i}"
+            Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
             $ online_cources.append(
                 OnLineCources(_("Массаж"), "massage", "bm", [
                     OnLineCource(_("Массаж ступней"), _("Это уникальная методика массажа с целью оказания оздоравливающего воздействия на организм. Она эффективна и в тоже время несложна в исполнении."), 3, 100, 2),
@@ -1161,6 +1163,7 @@ label massage_sunscreen:
                 )
         $ AddRelMood('alice', 10, 100)
         jump .end  # если курсы не пройдены и первыми массировались ступни, доступно 4 зоны
+
     elif len(_massaged) == 2 and _massaged[0] != 'foot':
         # в противном случае доступны только 2 зоны
         scene BG char Alice sun-alone 01
@@ -1168,8 +1171,8 @@ label massage_sunscreen:
             show Alice sun-alone 01a
         else:
             show Alice sun-alone 01
-        Alice_00 "Спасибо, Макс. На сегодня достаточно."
-        Max_00 "Да не за что, обращайся!"
+        Alice_03 "Спасибо, Макс! На сегодня достаточно."
+        Max_01 "Да не за что, обращайся!"
         $ AddRelMood('alice', 5, 50)
         jump .end
 
@@ -1180,25 +1183,25 @@ label massage_sunscreen:
     label .left_foot:
         scene BG char Alice sun-alone 06
         $ renpy.show('Alice sun-alone 06-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Разомнём левую пяточку...{/i}"
+        Max_01 "{i}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
         scene BG char Alice sun-alone 07
         $ renpy.show('Alice sun-alone 07-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Теперь правую...{/i}"
+        Max_03 "{i}А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
         jump .foot
 
     label .right_foot:
         scene BG char Alice sun-alone 07
         $ renpy.show('Alice sun-alone 07-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Разомнём правую ступню...{/i}"
+        Max_01 "{i}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
         scene BG char Alice sun-alone 06
         $ renpy.show('Alice sun-alone 06-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Теперь левую...{/i}"
+        Max_03 "{i}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
         jump .foot
 
     label .shin:
         scene BG char Alice sun-alone 05
         $ renpy.show('Alice sun-alone 05-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Помассируем ножки вот здесь...{/i}"
+        Max_02 "{i}Помассируем эти стройные ножки, вот так...{/i}"
         if 'shin' in _massaged:
             # голени уже массировались
             jump .double
@@ -1210,7 +1213,7 @@ label massage_sunscreen:
 
             if RandomChance(GetChance(mgg.massage, _multipler, 950)):
                 # Алисе понравилось
-                Alice_00 "Ух, как приятно..."
+                Alice_07 "Ух, как приятно... Ты молодец, Макс! Моим ножкам это понравилось... Не останавливайся, продолжай..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 10.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 10.0)
@@ -1220,14 +1223,14 @@ label massage_sunscreen:
             # при этом навык у Макса меньше 1 ( меньше 10 в оригинале), поэтому идет расчет от фиксированного значения
             if RandomChance(650-50*len(_massaged)+mgg.massage*10):  # шанс падает на 10% с каждой следующей зоной. Для ступней 65-75%%, для второй зоны 55-65, 3й - 45-55, 4й - 35-45
                 # Алисе понравилось
-                Alice_00 "Ах, моим ножкам так хорошо..."
+                Alice_04 "Ах, моим ножкам так хорошо... Не останавливайся..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 1.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
                 jump .fail
         else:
             # ступни массировались не первыми
-            Alice_00 "Неплохо, Макс..."
+            Alice_03 "Неплохо, Макс... Мне нравится, продолжай..."
             $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
         $ _massaged.append('shin')
         jump massage_sunscreen
@@ -1258,16 +1261,14 @@ label massage_sunscreen:
     label .shoulders:
         scene BG char Alice sun-alone 04
         $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Хорошенько разомнём плечи...{/i}" nointeract
-        # Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
+        Max_04 "{i}Хорошенько разомнём плечи и немного шею...{/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                # call .talk_topless('.shoulders')
-                call talk_topless()
+                call massage_sunscreen.talk_topless
                 $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
-                Max_00 "И ещё немного..."
+                Max_01 "И ещё немного..."
 
         if 'shoulders' in _massaged:
             # плечи уже массировались
@@ -1280,7 +1281,7 @@ label massage_sunscreen:
 
             if RandomChance(GetChance(mgg.massage, _multipler, 950)):
                 # Алисе понравилось
-                Alice_00 "Ка-а-йф..."
+                Alice_07 "Это так классно расслабляет... У тебя очень хорошо получается, Макс!"
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 10.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 10.0)
@@ -1290,14 +1291,14 @@ label massage_sunscreen:
             # при этом навык у Макса меньше 1 ( меньше 10 в оригинале), поэтому идет расчет от фиксированного значения
             if RandomChance(650-50*len(_massaged)+mgg.massage*10):  # шанс падает на 10% с каждой следующей зоной. Для ступней 65-75%%, для второй зоны 55-65, 3й - 45-55, 4й - 35-45
                 # Алисе понравилось
-                Alice_00 "Мои плечи в восторге..."
+                Alice_04 "Мои плечи в восторге... Так хорошо! Только не останавливайся..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 1.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
                 jump .fail
         else:
             # ступни массировались не первыми
-            Alice_00 "Весьма неплохо, Макс..."
+            Alice_03 "Весьма неплохо, Макс... Продолжай..."
             $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
         $ _massaged.append('shoulders')
         jump massage_sunscreen
@@ -1307,16 +1308,14 @@ label massage_sunscreen:
         $ renpy.scene()
         $ renpy.show('BG char Alice sun-alone '+__r1)
         $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
-        Max_00 "{i}Тщательно помнём спинку...{/i}" nointeract
-        # Max_00 "{i}Попробовать что ли уговорить Алису снять топ?{/i}" nointeract
+        Max_05 "{i}Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно.{/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                # call .talk_topless('.spine')
-                call talk_topless()
+                call massage_sunscreen.talk_topless
                 $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
-                Max_00 "Ещё немного крема..."
+                Max_01 "Ещё немного крема..."
 
 
         if 'spine' in _massaged:
@@ -1330,7 +1329,7 @@ label massage_sunscreen:
 
             if RandomChance(GetChance(mgg.massage, _multipler, 950)):
                 # Алисе понравилось
-                Alice_00 "Как приятно... Макс, ты делаешь успехи!"
+                Alice_07 "Как приятно... Макс, ты делаешь успехи! Мне это нравится..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 10.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 10.0)
@@ -1340,14 +1339,14 @@ label massage_sunscreen:
             # при этом навык у Макса меньше 1 ( меньше 10 в оригинале), поэтому идет расчет от фиксированного значения
             if RandomChance(650-50*len(_massaged)+mgg.massage*10):  # шанс падает на 10% с каждой следующей зоной. Для ступней 65-75%%, для второй зоны 55-65, 3й - 45-55, 4й - 35-45
                 # Алисе понравилось
-                Alice_00 "Руки у тебя нежные. Приятно очень..."
+                Alice_04 "Дааа... У тебя нежные руки, Макс. Очень приятно..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 1.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
                 jump .fail
         else:
             # ступни массировались не первыми
-            Alice_00 "Весьма неплохо, Макс..."
+            Alice_03 "Весьма неплохо, Макс... Продолжай..."
             $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
         $ _massaged.append('spine')
         jump massage_sunscreen
@@ -1365,21 +1364,21 @@ label massage_sunscreen:
             $ _multipler = 6 - len(_massaged) if len(_massaged) else 10  # множитель навыка. Если ступни первые, шанс удваивается
             if RandomChance(GetChance(mgg.massage, _multipler, 950)):
                 # Алисе понравилось
-                Alice_00 "Ух, как приятно..."
+                Alice_07 "Ух, как же моим пяточкам приятно... Не останавливайся, продолжай..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 10.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 10.0)
                 jump .fail
         elif len(_massaged) > 0:
             # ступни массировались не первыми
-            Alice_00 "А ничего так, мне приятно..."
+            Alice_03 "А ничего так, мне приятно... У тебя нежные руки..."
             $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
         else:
             # ступни массировались первыми, реакция Алисы расчитывается через шансы
             # при этом навык у Макса меньше 1 ( меньше 10 в оригинале), поэтому идет расчет от фиксированного значения
             if RandomChance(650+mgg.massage*10):  # шанс 65-75%
                 # Алисе понравилось
-                Alice_00 "А ты неплох сегодня в этом деле... Моим пяточкам приятны твои руки..."
+                Alice_04 "Охх... А ты неплох сегодня в этом деле... Моим пяточкам приятны твои руки! Продолжай..."
                 $ mgg.massage = clip(mgg.massage+0.02, 0.0, 1.0)
             else:
                 $ mgg.massage = clip(mgg.massage+0.005, 0.0, 1.0)
@@ -1388,17 +1387,37 @@ label massage_sunscreen:
         jump massage_sunscreen
 
     label .double:
-        Alice_00 "Взялся делать массаж, а сам не знаешь что делать. Хватит, иди отсюда, дай позагорать спокойно."
-        Max_00 "Эх... Ладно..."
+        Alice_13 "Взялся делать массаж, а сам не знаешь что делать! Хватит, иди отсюда, дай позагорать спокойно."
+        Max_11 "Эх... Ладно..."
         jump .end
 
     label .fail:
         if len(_massaged) > 0:  # есть успешно помассированные участки
-            Alice_00 "Хватит, Макс... Что-то у тебя не так пошло... А ведь так хорошо начал..."
+            Alice_06 "Хватит, Макс... Что-то у тебя не так пошло... А ведь так хорошо начал..."
         else:  # первый же массаж
-            Alice_00 "Макс, хватит... Что-то не похоже, что ты знаешь, что делаешь... Давай на этом закончим..."
-        Max_00 "Хорошо, извини..."
+            Alice_13 "Макс, хватит... Что-то не похоже, что ты знаешь, что делаешь... Давай на этом закончим..."
+        Max_10 "Хорошо, извини..."
         jump .end
+
+    label .talk_topless:
+        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1_color = GetChanceColor(_ch1)
+        $ ch1_vis = str(int(_ch1/10)) + "%"
+        menu:
+            Alice_06 "Нет, конечно. Но тебя я так радовать не собираюсь!"
+            "Что, стесняешься? {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                if RandomChance(_ch1):
+                    Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
+                    Max_02 "Так держать, сестрёнка!"
+                    $ talk_var['sun_oiled'] = 2
+                    $ _suf = 'b'
+                    $ SetCamsGrow(house[6], 200)
+                else:
+                    Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
+                    Max_01 "Ладно, как скажешь..."
+            "Ну, как хочешь...":
+                pass
+        return
 
     label .end:
         scene BG char Alice sun-alone 01
@@ -1408,32 +1427,10 @@ label massage_sunscreen:
             show Alice sun-alone 01
         $ spent_time += 10 + clip(int(round(5*len(_massaged), -1)), 0, 30)
         if kol_cream < 2:
-            Max_00 "{i}Ну вот, крем закончился. Надо еще купить.{/i}"
+            Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
             if kol_cream == 0:
                 $ items['solar'].have = False
         elif kol_cream < 7:
-            Max_00 "{i}Крема мало осталось, в следующий раз может не хватить, лучше купить заранее.{/i}"
+            Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
 
-        # "помассированны [_massaged] "
         jump Waiting
-
-
-label talk_topless():
-    $ _ch1 = GetChance(mgg.social, 3)
-    $ _ch1_color = GetChanceColor(_ch1)
-    $ ch1_vis = str(int(_ch1/10)) + "%"
-    menu:
-        Alice_06 "Нет, конечно. Но тебя я так радовать не собираюсь!"
-        "Что, стесняешься? {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
-            if RandomChance(_ch1):
-                Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
-                Max_00 "Так держать, сестрёнка!"
-                $ talk_var['sun_oiled'] = 2
-                $ _suf = 'b'
-                $ SetCamsGrow(house[6], 200)
-            else:
-                Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
-                Max_00 "Ладно, как скажешь..."
-        "Ну, как хочешь...":
-            pass
-    return

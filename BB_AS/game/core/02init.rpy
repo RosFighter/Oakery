@@ -75,6 +75,7 @@ define talks = {
     "lisa_peep"  : TalkTheme("lisa", _("Хотел извиниться за утренний инцидент..."), "Lisa_sorry", "peeping['lisa_shower']==3"),
     "alice_peep" : TalkTheme("alice", _("Хотел извиниться за утренний инцидент..."), "Alice_sorry", "peeping['alice_shower']==3"),
     "alice_sol"  : TalkTheme("alice", _("Загораешь?"), "Alice_solar", "talk_var['alice_sun']==0 and (talk_var['sun_oiled']==0 or talk_var['sun_oiled']==3)and GetPlan(plan_alice, day, tm).name == 'sun'"),
+    "lisa_gift"  : TalkTheme("lisa", _("У меня для тебя обещанная вкусняшка!"), "lisa_sorry_gifts", "sorry_gifts['lisa'].owe and there_in_stock('lisa') and GetPlan(plan_lisa, day, tm).name in ['sun', 'read', 'phone']"),
     }
 
 # Категории магазина

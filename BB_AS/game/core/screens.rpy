@@ -606,7 +606,7 @@ style buy_button2_text:
 
 ################################################################################
 
-screen Withdraw:
+screen Withdraw():
     tag menu2
     modal True
     use PowerBack2
@@ -644,7 +644,7 @@ screen Withdraw:
                     text_hover_color "#FFFFFF"
                     action NullAction()
 
-screen SEO:
+screen SEO():
     tag menu2
     modal True
     use PowerBack2
@@ -679,7 +679,7 @@ screen SEO:
                     text_idle_color "#000000"
                     text_hover_color "#FFFFFF"
 
-screen MySite:
+screen MySite():
     tag menu
     modal True
     use PowerBack
@@ -1400,7 +1400,7 @@ style info_vscroll is vscrollbar:
 
 ################################################################################
 
-screen watermark:
+screen watermark():
     layer 'wm'
     if str(renpy.get_mode())=='start' and not renpy.get_screen(["main_menu","game_menu","about","help","save","load","preferences"]):
             imagebutton:
@@ -1410,7 +1410,7 @@ screen watermark:
                 action OpenURL("https://www.patreon.com/aleksey90artimages")
                 at main_logo2
 
-screen notify_check:
+screen notify_check():
     timer .3 repeat True action Function(notify_queue)
     # $ tt = GetTooltip()
     # if tt:

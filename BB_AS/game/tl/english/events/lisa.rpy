@@ -592,3 +592,11 @@ translate english lisa_shower_ladder_90ff417e:
     # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
     Max_00 "I don't want to, but before I get noticed, I'd better..."
 
+# TODO: Translation updated at 2020-04-08 14:21
+
+# game/events/lisa.rpy:58
+translate english lisa_shower_8d94a43d:
+
+    # Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
+    Max_10 ""
+
