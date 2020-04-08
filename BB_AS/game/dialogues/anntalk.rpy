@@ -183,7 +183,7 @@ label ann_talk_tv:
             $ renpy.show('Max tv-watch 01'+mgg.dress)
             Max_02 "{i}Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу...{/i}"
             scene BG lounge-tv-01
-            $ renpy.show("Ann tv "+pose3_3+'a')
+            $ renpy.show("Ann tv-closer "+pose3_3+'a')
             $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
             menu:
                 Ann_05 "Ну что, отличный фильм, как мне кажется! А тебе понравилось, Макс?"
