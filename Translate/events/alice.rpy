@@ -1338,5 +1338,5 @@ translate english alice_dressed_friend_3b812933:
 translate english alice_sleep_morning_478c8465:
 
     # Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
-    Max_04 "" nointeract
+    Max_04 "Wow! Such tempting curves and boobs can make you lose consciousness early in the morning... Nice big sis!" nointeract
 

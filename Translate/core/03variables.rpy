@@ -1049,25 +1049,25 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Ferrero Rocher\" (16 штук)"
-    new ""
+    new "Sweets \"Ferrero Rocher\" (16 pieces)"
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Ferrero Rocher\" (24 штуки)"
-    new ""
+    new "Sweets \"Ferrero Rocher\" (24 pieces)"
 
     # game/core/03variables.rpy:207
     old "КРЕМ ДЛЯ ЗАГАРА"
-    new ""
+    new "SUNSCREEN"
 
     # game/core/03variables.rpy:207
     old "Легкий, хорошо впитывающийся препарат для ускорения загара обладает увлажняющими и защитными свойствами. Рекомендуется для применения на пляже и в солярии."
-    new ""
+    new "Light, well-absorbed product for accelerating tanning with moisturizing and protective properties. Recommended for use on the beach and in the Solarium."
 
     # game/core/03variables.rpy:207
     old "МУЖСКИЕ МАЙКА И ШОРТЫ"
-    new ""
+    new "MEN'S T-SHIRT AND SHORTS"
 
     # game/core/03variables.rpy:207
     old "Одежда для Макса"
-    new ""
+    new "Clothing for max"
 
