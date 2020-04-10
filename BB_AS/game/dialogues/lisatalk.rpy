@@ -1113,6 +1113,26 @@ label Lisa_sorry:
         Max_03 "Ну всё, значит жди в скором времени вкусняшку!"
         Lisa_01 "И только попробуй меня расстроить, Макс! Сроки у тебя те же."
         Max_01 "Ага..."
+    elif len(sorry_gifts['lisa'].give == 3):
+        Lisa_09 "Нет уж, Макс... Думаю, я просто сдам тебя маме и пусть она с тобой разбирается! Хватит уже за мной подглядывать..."
+        Max_07 "А может мы снова с тобой договоримся?! Как раньше..."
+        Lisa_01 "Чтобы ты снова кормил меня сладостями?! Нет, это как-то слишком уж просто для тебя... Теперь, если не хочешь попасть под мамино наказание, ты купишь то, что я попрошу!"
+        Max_09 "Ну, это смотря ЧТО ты попросишь, потому что в деньгах я не купаюсь..."
+        Lisa_03 "Я уже давно хочу шёлковый халат! Очень-очень хочу... Как у Алисы! Ты видел её халат?! Правда же он классный!"
+        Max_02 "Такой синий, шёлковый и классный? Нет, не видел!"
+        Lisa_02 "Хи-хи... Шутник! Так вот, если достанешь мне шёлкоый халат, то я ничего не расскажу маме о том, какой мой старший брат извращенец!"
+        Max_08 "Может тогда дашь мне на это больше времени? А то я могу не успеть к следующему ужину!"
+        Lisa_00 "Пожалуй... Времени у тебя - два дня. И чтобы успел до ужина!"
+        Max_00 "Хорошо, я постараюсь успеть..."
+        $ sorry_gifts['lisa'].valid.clear()
+        $ punreason[0] = 0
+        $ peeping['lisa_shower'] = 0
+        $ items['bathrobe'].InShop = True
+        $ sorry_gifts['lisa'].owe = True
+        $ sorry_gifts['lisa'].left = 4 if GetWeekday(day) == 6 else 3
+        $ sorry_gifts['lisa'].days.insert(0, day)
+        $ spent_time += 10
+        jump Waiting
     $ punreason[0] = 0
     $ peeping['lisa_shower'] = 0
     $ sorry_gifts['lisa'].owe = True
@@ -1213,15 +1233,78 @@ label gift_swimsuit:
 
 
 label gift_bathrobe:
-    Lisa_01 "Я люблю подарки. Давай, показывай, что там у тебя?"
-    Max_01 "Держи..."
-    menu:
-        Lisa_03 "Что тут? Халатик?! Прямо как у Алисы, только красный? Какая прелесть! Я тебя обожаю! Спасибо!"
-        "Может быть, примеришь его при мне?":
-            Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
-        "Да не за что, сестрёнка!":
-            Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
-    Max_00 "Супер! Будет любопытно посмотреть..."
+    Lisa_11 "Постой, неужели это то, что я думаю?!"
+    Max_02 "Если ты думаешь, что это шёлковый халатик, то вот, держи..."
+    Lisa_03 "Ничего себе! Он такой же, как у Алисы, только красный! Какая прелесть! Я тебя обожаю! Спасибо!"
+    Max_04 "Да не за что, сестрёнка!"
+
+    if not sorry_gifts['lisa'].owe:  # Макс не подарил вовремя и получил наказание
+        Lisa_02 "А я думала, раз срок уже прошёл, то и надеяться, что ты его подаришь не стоит."
+        Max_04 "И когда я на тебе его увижу?"
+        Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+    elif flags['lisa_superhug'] > 3:  ## За третий извинительный подарок Макс получил поцелуй
+        if current_room == house[0]:
+            scene BG char Lisa hugging myroom-00
+            $ renpy.show("Lisa hugging-myroom 04"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            scene BG char Lisa hugging yard-00
+            $ renpy.show("Lisa hugging-yard 04"+chars['lisa'].dress+mgg.dress)
+        Lisa_02 "Макс, давай обниматься! Лови меня..."   #спрайт с суперобнимашками
+        Max_05 "{i}Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается.{/i}"
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging-myroom 03"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging-yard 03"+chars['lisa'].dress+mgg.dress)
+        Lisa_05 "И в щёчку ещё чмокну! Ммм..."   #спрайт с поцелуем
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+        Max_03 "Ого, сколько нежности... Может быть, примеришь его при мне?"
+        Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"   #спрайт вместе
+    elif flags['lisa_superhug'] > 2:  ## За третий извинительный подарок Макс получил объятья
+        if current_room == house[0]:
+            scene BG char Lisa hugging myroom-00
+            $ renpy.show("Lisa hugging-myroom 01"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            scene BG char Lisa hugging yard-00
+            $ renpy.show("Lisa hugging-yard 01"+chars['lisa'].dress+mgg.dress)
+        Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
+        Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging-myroom 03"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging-yard 03"+chars['lisa'].dress+mgg.dress)
+        Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"   #спрайт с поцелуем
+        Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+        Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
+        Max_04 "Может быть, примеришь его при мне?"
+        Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
+    elif flags['lisa_superhug'] > 3:  ## За третий извинительный подарок Макс получил только прощение
+        if current_room == house[0]:
+            scene BG char Lisa hugging myroom-00
+            $ renpy.show("Lisa hugging-myroom 01"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            scene BG char Lisa hugging yard-00
+            $ renpy.show("Lisa hugging-yard 01"+chars['lisa'].dress+mgg.dress)
+        Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
+        Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+        Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
+        Max_04 "И когда я на тебе его увижу?"
+        Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+    else:  ## За третий извинительный подарок Макс не получил прощение
+        Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+
+    Max_01 "Супер! Будет любопытно посмотреть..."
+
     $ AddRelMood("lisa", 100, 200)
     $ items['bathrobe'].have = False
     $ items['bathrobe'].InShop = False
@@ -1235,6 +1318,7 @@ label gift_bathrobe:
 
     $ cloth_type["lisa"]["learn"]  = 'b'
     $ spent_time += 10
+    $ sorry_gifts['lisa'].owe = False
     jump Waiting
 
 
@@ -1397,7 +1481,8 @@ label lisa_sorry_gifts:
         Max_10 "Понял."
         $ AddRelMood('lisa', -5, -100)
         $ punreason[0] = 1
-        jump .end
+        $ flags['lisa_superhug'] = 1
+        return
 
     label .middle_again:
         Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Хотя то, что я не очень люблю крем, ты видимо пропустил мимо ушей!"
@@ -1408,6 +1493,7 @@ label lisa_sorry_gifts:
         Max_01 "Да я же случайно оказался около душа..."
         Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
         Max_02 "Вот и правильно."
+        return
 
     label .persuasion_failed:
         Lisa_01 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
@@ -1453,31 +1539,36 @@ label lisa_sorry_gifts:
                 Lisa_12 "Макс, тебе просто наплевать на всё, что я говорю! Всё, Макс, я не хочу тебя слушать! Так что жди наказания от мамы..."
                 Max_10 "Понял."
                 $ AddRelMood('lisa', -15, -200)
+                $ flags['lisa_superhug'] = 1
                 $ punreason[0] = 1
 
             elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
-                jump .bad_again
+                call lisa_sorry_gifts.bad_again
 
             elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, ненавистное
-                jump .bad_again
+                call lisa_sorry_gifts.bad_again
 
             elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
-                jump .bad_again
+                call lisa_sorry_gifts.bad_again
 
             elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
                 call lisa_sorry_gifts.bad_st
+                $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, ненавистное
                 call lisa_sorry_gifts.bad_st
+                $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, ненавистное
-                jump .bad_again
+                call lisa_sorry_gifts.bad_again
 
             elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, ненавистное
                 call lisa_sorry_gifts.bad_st
+                $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [3, 3]:  ### любимое, любимое, ненавистное
                 call lisa_sorry_gifts.bad_st
+                $ flags['lisa_superhug'] = 2
 
         $ sorry_gifts['lisa'].give.append(1)
         jump .end
@@ -1584,16 +1675,19 @@ label lisa_sorry_gifts:
                             Lisa_09 "Всё, Макс, я хочу побыть одна."
                             Max_10 "Понял."
                             $ mgg.social += 0.2
+                            $ flags['lisa_superhug'] = 2
                         else:
                             Lisa_12 "[failed!t]Знаешь, а вот не пройдёт это, Макс! Так что жди наказания от мамы..."
                             Max_08 "Но, Лиза, я же..."
                             Lisa_13 "Всё, Макс, я не хочу тебя слушать!"
                             Max_10 "Понял."
                             $ punreason[0] = 1
+                            $ flags['lisa_superhug'] = 1
                             $ mgg.social += 0.1
 
             elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
-                jump .middle_again
+                call lisa_sorry_gifts.middle_again
+                $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
@@ -1622,12 +1716,15 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 0, 150)
+                            $ flags['lisa_superhug'] = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 0, 50)
+                            $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
-                jump .middle_again
+                call lisa_sorry_gifts.middle_again
+                $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое третий раз
                 Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Похоже, ты совершенно пропустил мимо ушей то, что я не очень люблю крем!"
@@ -1656,8 +1753,10 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 0, 150)
+                            $ flags['lisa_superhug'] = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed
+                            $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
@@ -1686,9 +1785,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 0, 150)
+                            $ flags['lisa_superhug'] = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 0, 50)
+                            $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
@@ -1717,9 +1818,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 0, 150)
+                            $ flags['lisa_superhug'] = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 0, 50)
+                            $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
@@ -1748,9 +1851,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 0, 150)
+                            $ flags['lisa_superhug'] = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 0, 50)
+                            $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [3, 3]:  ### любимое, любимое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
@@ -1773,6 +1878,7 @@ label lisa_sorry_gifts:
                 Max_01 "Да я же случайно оказался около душа..."
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                 Max_02 "Вот и правильно."
+                $ flags['lisa_superhug'] = 3
 
 
         $ sorry_gifts['lisa'].give.append(2)
@@ -1978,8 +2084,10 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 150)
+                            $ flags['lisa_superhug'] = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed
+                            $ flags['lisa_superhug'] = 2
                             $ AddRelMood("lisa", 0, 50)
 
             elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, любимое
@@ -2004,6 +2112,7 @@ label lisa_sorry_gifts:
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                 Max_02 "Вот и правильно."
                 $ AddRelMood("lisa", 5, 150)
+                $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
@@ -2042,9 +2151,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 200)
+                            $ flags['lisa_superhug'] = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 5, 100)
+                            $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
@@ -2068,6 +2179,7 @@ label lisa_sorry_gifts:
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                 Max_02 "Вот и правильно."
                 $ AddRelMood("lisa", 5, 200)
+                $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое, преемлемое, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
@@ -2106,9 +2218,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 200)
+                            $ flags['lisa_superhug'] = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 5, 100)
+                            $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
@@ -2147,9 +2261,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 200)
+                            $ flags['lisa_superhug'] = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 5, 100)
+                            $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
@@ -2188,9 +2304,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 200)
+                            $ flags['lisa_superhug'] = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 5, 100)
+                            $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
@@ -2229,9 +2347,11 @@ label lisa_sorry_gifts:
                             Max_02 "Вот и правильно."
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 200)
+                            $ flags['lisa_superhug'] = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed
                             $ AddRelMood("lisa", 5, 100)
+                            $ flags['lisa_superhug'] = 3
 
             elif sorry_gifts['lisa'].give == [3, 3]:  ### любимое три раза
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
@@ -2274,9 +2394,11 @@ label lisa_sorry_gifts:
                                 Max_02 "Вот и правильно."
                                 $ mgg.social += 0.2
                                 $ AddRelMood("lisa", 5, 200)
+                                $ flags['lisa_superhug'] = 4
                             else:
                                 call lisa_sorry_gifts.persuasion_failed
                                 $ AddRelMood("lisa", 5, 100)
+                                $ flags['lisa_superhug'] = 3
                 else:
                     if current_room == house[0]:
                         $ renpy.show("Lisa hugging-myroom 03"+chars['lisa'].dress+mgg.dress)
@@ -2293,6 +2415,7 @@ label lisa_sorry_gifts:
                     Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                     Max_02 "Вот и правильно."
                     $ AddRelMood("lisa", 20, 200)
+                    $ flags['lisa_superhug'] = 4
 
         $ sorry_gifts['lisa'].give.append(3)
         jump .end

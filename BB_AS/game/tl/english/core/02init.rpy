@@ -152,17 +152,17 @@ translate english strings:
 
     # game/core/02init.rpy:17
     old "{color=[lime]}{i}Алисе понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=[lime]}{i}Alice liked the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:18
     old "{color=[orange]}{i}Алисе не понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=[orange]}{i}Alice didn't like the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:55
     old "Загораешь?"
-    new ""
+    new "Tanning?"
 
     # game/core/02init.rpy:55
     old "У меня для тебя обещанная вкусняшка!"
-    new ""
+    new "I having something tasty that I promised you!"
 

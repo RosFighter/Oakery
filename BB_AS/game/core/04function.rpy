@@ -721,8 +721,9 @@ init python:
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
-        if items['max-a'].have and any([day > 9, day==9 and tm > "12:30"]):
-            items['max-a'].InShop = False
+        if items['max-a'].have and '12:00' <= tm < '19:00':
+            if items['max-a'].InShop:
+                items['max-a'].InShop = False
             mgg.dress = 'b'
         else:
             mgg.dress = 'a'
@@ -1176,7 +1177,7 @@ init python:
         return CurShedRec.enabletalk and len(TalkMenuItems()) > 0
 
 
-    def there_in_stock(char):  # проверяет, есть ли у Макса подарок персонажу в качестве извинения 
+    def there_in_stock(char):  # проверяет, есть ли у Макса подарок персонажу в качестве извинения
         for id in sorry_gifts[char].valid:
             if items[id].have:
                 return True

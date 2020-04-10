@@ -598,5 +598,5 @@ translate english lisa_shower_ladder_90ff417e:
 translate english lisa_shower_8d94a43d:
 
     # Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
-    Max_10 ""
+    Max_10 "I want to take another look at my naked sister, but I haven't given her what I promised yet..."
 

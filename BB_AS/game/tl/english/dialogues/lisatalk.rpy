@@ -3110,2227 +3110,2433 @@ translate english gift_swimsuit_swimsuit_show_7002ae6a:
 translate english Lisa_sorry_c8fbb65e:
 
     # Lisa_00 "Ну, Макс... Я хочу вкусняшку... Но времени у тебя до вечера понедельника, понял?! Иначе перед ужином мама всё узнает..."
-    Lisa_00 ""
+    Lisa_00 "Well, Max... I want something delicious... But you have until Monday night, okay?! Otherwise, Mom will find out before dinner..."
 
 # game/dialogues/lisatalk.rpy:1088
 translate english Lisa_sorry_269a2ea0:
 
     # Lisa_10 "Прошлого раза, видимо, тебе было мало... Захотел ещё поглазеть на меня голую?"
-    Lisa_10 ""
+    Lisa_10 "I guess it wasn't enough for you last time... You want to see me naked again?"
 
 # game/dialogues/lisatalk.rpy:1089
 translate english Lisa_sorry_a0680be5:
 
     # Max_09 "В этом доме такие большие окна, что куда не пойди, что-то да случайно увидишь..."
-    Max_09 ""
+    Max_09 "The windows in this house are so big, you can't go anywhere without seeing something by accident..."
 
 # game/dialogues/lisatalk.rpy:1090
 translate english Lisa_sorry_0bac243d:
 
     # Lisa_09 "И я должна поверить в это оправдание, да?! Во всём окна виноваты!"
-    Lisa_09 ""
+    Lisa_09 "And I'm supposed to believe that excuse? it's all the windows fault?!"
 
 # game/dialogues/lisatalk.rpy:1091
 translate english Lisa_sorry_142cdece:
 
     # Max_07 "Ну да, потому что так оно и есть!"
-    Max_07 ""
+    Max_07 "Well, yes, because that's what it is!"
 
 # game/dialogues/lisatalk.rpy:1092
 translate english Lisa_sorry_915d92f1:
 
     # Lisa_01 "Интересно, что скажет на это мама, когда я ей всё расскажу..."
-    Lisa_01 ""
+    Lisa_01 "I wonder what Mom will say to that when I tell her everything..."
 
 # game/dialogues/lisatalk.rpy:1093
 translate english Lisa_sorry_60491eab:
 
     # Max_08 "Да ничего хорошего! Я же не специально, Лиза!"
-    Max_08 ""
+    Max_08 "Nothing good! I didn't do it on purpose, Lisa!"
 
 # game/dialogues/lisatalk.rpy:1094
 translate english Lisa_sorry_65c5a1ea:
 
     # Lisa_02 "Может быть тебе повезёт и она в это поверит..."
-    Lisa_02 ""
+    Lisa_02 "Maybe you'll get lucky and she'll believe that..."
 
 # game/dialogues/lisatalk.rpy:1095
 translate english Lisa_sorry_f7f86d28:
 
     # Max_10 "А может мы это как-нибудь без неё решим?"
-    Max_10 ""
+    Max_10 "Maybe we can solve this without getting her involved?"
 
 # game/dialogues/lisatalk.rpy:1096
 translate english Lisa_sorry_acd6f09a:
 
     # Lisa_03 "А-а-а... Должно быть хочешь снова чем-нибудь вкусненьким от этого откупиться?! Ммм..."
-    Lisa_03 ""
+    Lisa_03 "A-a-a... You must want to me off with something tasty again. Mmm...?"
 
 # game/dialogues/lisatalk.rpy:1097
 translate english Lisa_sorry_efae3463:
 
     # Max_01 "Ага. Зачем тревожить маму нашими с тобой... недоразумениями..."
-    Max_01 ""
+    Max_01 "Yeah, why bother Mom with these misunderstandings?"
 
 # game/dialogues/lisatalk.rpy:1099
 translate english Lisa_sorry_3954f39a:
 
     # Lisa_01 "Ладно. Посмотрим, успеешь ли ты до ужина понедельника!"
-    Lisa_01 ""
+    Lisa_01 "Okay. Let's see if you can make it before dinner on Monday!"
 
 # game/dialogues/lisatalk.rpy:1101
 translate english Lisa_sorry_7405add9:
 
     # Lisa_01 "Ладно. Посмотрим, успеешь ли ты до следующего ужина!"
-    Lisa_01 ""
+    Lisa_01 "Okay. Let's see if you can make it to the next dinner!"
 
 # game/dialogues/lisatalk.rpy:1102
 translate english Lisa_sorry_dd34b97a:
 
     # Max_03 "Конечно успею!"
-    Max_03 ""
+    Max_03 "Of course I will!"
 
 # game/dialogues/lisatalk.rpy:1103
 translate english Lisa_sorry_c1e41e59:
 
     # Lisa_02 "И смотри не расстрой меня, Макс!"
-    Lisa_02 ""
+    Lisa_02 "And don't dissapoint me, Max!"
 
 # game/dialogues/lisatalk.rpy:1104
 translate english Lisa_sorry_9bfe44c3:
 
     # Max_04 "Постараюсь."
-    Max_04 ""
+    Max_04 "I'll try not to."
 
 # game/dialogues/lisatalk.rpy:1106
 translate english Lisa_sorry_437cd4e3:
 
     # Lisa_01 "Дай угадаю, это вышло случайно, да?! И никто не виноват, так получилось!"
-    Lisa_01 ""
+    Lisa_01 "Let me guess, it was an accident, right?! And no one is to blame, it just happened!"
 
 # game/dialogues/lisatalk.rpy:1107
 translate english Lisa_sorry_6310bc4e:
 
     # Max_01 "Естественно..."
-    Max_01 ""
+    Max_01 "Well, obviously..."
 
 # game/dialogues/lisatalk.rpy:1108
 translate english Lisa_sorry_52b41ffd:
 
     # Lisa_02 "Сильно в этом сомневаюсь, Макс!"
-    Lisa_02 ""
+    Lisa_02 "I doubt it very much, Max!"
 
 # game/dialogues/lisatalk.rpy:1109
 translate english Lisa_sorry_f154d4e4:
 
     # Max_04 "Уверен, если бы ты сидела дома, а я ходил в школу, то ты бы сейчас была на моём месте и оправдывалась..."
-    Max_04 ""
+    Max_04 "I'm sure if you sat at home and I went to school, you'd see what it's like being in my shoes..."
 
 # game/dialogues/lisatalk.rpy:1110
 translate english Lisa_sorry_0f1bd400:
 
     # Lisa_03 "А я бы и не стала оправдываться, и если бы ты даже рассказал об этом маме, уверена, она бы не стала меня за это наказывать! И даже ругать..."
-    Lisa_03 ""
+    Lisa_03 "I wouldn't make excuses, and even if you told Mom, I'm sure she wouldn't punish me for it! I wouldn't even get scolded-"
 
 # game/dialogues/lisatalk.rpy:1111
 translate english Lisa_sorry_b64d1d9a:
 
     # Max_07 "Вот видишь теперь, в каком я из-за этой случайности положении!"
-    Max_07 ""
+    Max_07 "But can you see how it's different for me in this situation!?"
 
 # game/dialogues/lisatalk.rpy:1112
 translate english Lisa_sorry_11a36883:
 
     # Lisa_02 "Да уж, вижу... Не повезло тебе, придётся снова меня задабривать, чтобы мама ничего не узнала."
-    Lisa_02 ""
+    Lisa_02 "Yeah, I can see that... You're out of luck, you're gonna have to shut me up again so Mom doesn't find out."
 
 # game/dialogues/lisatalk.rpy:1113
 translate english Lisa_sorry_3428616e:
 
     # Max_03 "Ну всё, значит жди в скором времени вкусняшку!"
-    Max_03 ""
+    Max_03 "Well, i'll get it to you soon!"
 
 # game/dialogues/lisatalk.rpy:1114
 translate english Lisa_sorry_fc0aafa4:
 
     # Lisa_01 "И только попробуй меня расстроить, Макс! Сроки у тебя те же."
-    Lisa_01 ""
+    Lisa_01 "And don't upset me, Max! You still have the same deadline."
 
 # game/dialogues/lisatalk.rpy:1115
 translate english Lisa_sorry_6374794e:
 
     # Max_01 "Ага..."
-    Max_01 ""
+    Max_01 "Alright..."
 
 # game/dialogues/lisatalk.rpy:1361
 translate english lisa_sorry_gifts_0d977679:
 
     # Lisa_02 "[txt!t]" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "[txt!t]" nointeract
 
 # game/dialogues/lisatalk.rpy:1383
 translate english lisa_sorry_gifts_bad_st_6f8a0f02:
 
     # Lisa_13 "Фу-у-у... Макс, я не люблю эти конфеты! Почему ты купил именно их?!"
-    Lisa_13 ""
+    Lisa_13 "Fu-at... Max, these are disgusting! Why did you buy them?!"
 
 # game/dialogues/lisatalk.rpy:1384
 translate english lisa_sorry_gifts_bad_st_83e72c6d:
 
     # Max_10 "Я же не знал! Если ты так их не любишь, то можно было и сказать сразу..."
-    Max_10 ""
+    Max_10 "I didn't know! If you don't like them that much, you could have said something..."
 
 # game/dialogues/lisatalk.rpy:1385
 translate english lisa_sorry_gifts_bad_st_d8a10b91:
 
     # Lisa_09 "Да, пожалуй, надо было... Но теперь ты знаешь!"
-    Lisa_09 ""
+    Lisa_09 "Yes, I should have... But now you know!"
 
 # game/dialogues/lisatalk.rpy:1386
 translate english lisa_sorry_gifts_bad_st_1bef8448:
 
     # Max_08 "Знаю. Но это же засчитается, да? Хотя бы по незнанию..."
-    Max_08 ""
+    Max_08 "I know. But that counts, right? At least its's the thought..."
 
 # game/dialogues/lisatalk.rpy:1387
 translate english lisa_sorry_gifts_bad_st_185abc61:
 
     # Lisa_01 "Ладно! Я отдам их кое-кому... кому они нравятся... А маме я тебя не сдам, не волнуйся. Вдруг ты и правда оказался около душа случайно..."
-    Lisa_01 ""
+    Lisa_01 "Okay! I'll give them to someone who likes them... And I won't give you up to Mom, don't worry. Maybe you really happened to be near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1388
 translate english lisa_sorry_gifts_bad_st_aa05432d:
 
     # Max_04 "Конечно случайно!"
-    Max_04 ""
+    Max_04 "Of course I was!"
 
 # game/dialogues/lisatalk.rpy:1392
 translate english lisa_sorry_gifts_bad_again_2f45dd3d:
 
     # Lisa_13 "Фу-у-у... Макс, опять ты купил эти конфеты! Ты что, специально меня решил расстроить?!"
-    Lisa_13 ""
+    Lisa_13 "Fu-at... Max, you bought that candy again! Are you trying to upset me on purpose?!"
 
 # game/dialogues/lisatalk.rpy:1393
 translate english lisa_sorry_gifts_bad_again_5c19f89e:
 
     # Max_10 "Конечно нет! Просто только их я и смог достать..."
-    Max_10 ""
+    Max_10 "Of course not! It's just that they were the only ones I could get..."
 
 # game/dialogues/lisatalk.rpy:1394
 translate english lisa_sorry_gifts_bad_again_d41ffa1a:
 
     # Lisa_12 "А я вот думаю, раз тебе наплевать на то, что я прошу, то и я молчать не собираюсь!"
-    Lisa_12 ""
+    Lisa_12 "Seeing how you don't seem to care about what I ask, don't expect me to be silent about what you did!"
 
 # game/dialogues/lisatalk.rpy:1395
 translate english lisa_sorry_gifts_bad_again_76b0d594:
 
     # Max_14 "Прости Лиза, я..."
-    Max_14 ""
+    Max_14 "I'm sorry, Lisa..."
 
 # game/dialogues/lisatalk.rpy:1396
 translate english lisa_sorry_gifts_bad_again_f3e7284f:
 
     # Lisa_13 "Всё, Макс, я не хочу тебя слушать! Жди наказания от мамы, думаю она тебе сразу вправит мозги в нужную сторону!"
-    Lisa_13 ""
+    Lisa_13 "I gave you a chance to make up for you did and I regret it. You can look forward to getting punished by Mom. She might set your head straight!"
 
 # game/dialogues/lisatalk.rpy:1397
 translate english lisa_sorry_gifts_bad_again_05076bc1:
 
     # Max_10 "Понял."
-    Max_10 ""
+    Max_10 "Understood."
 
 # game/dialogues/lisatalk.rpy:1403
 translate english lisa_sorry_gifts_middle_again_96958711:
 
     # Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Хотя то, что я не очень люблю крем, ты видимо пропустил мимо ушей!"
-    Lisa_01 ""
+    Lisa_01 "Hm... Them again... Okay, they'll do, they're okay. Although you probably missed the fact that I don't like cream!"
 
 # game/dialogues/lisatalk.rpy:1404
 translate english lisa_sorry_gifts_middle_again_95ba149c:
 
     # Max_07 "Да, видимо... Извини. Но ты же не станешь рассказывать маме про тот инцидент в душе?!"
-    Max_07 ""
+    Max_07 "Yeah... Sorry. But you're not going to tell Mom about the shower anymore, right?"
 
 # game/dialogues/lisatalk.rpy:1405
 translate english lisa_sorry_gifts_middle_again_358c0293:
 
     # Lisa_02 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, мама ничего не узнает..."
-    Lisa_02 ""
+    Lisa_02 "It's hard to believe that it was an accident. But you've shown that you're sorry, so I won't tell her anything."
 
 # game/dialogues/lisatalk.rpy:1406
 translate english lisa_sorry_gifts_middle_again_d8a1eb18:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:1407
 translate english lisa_sorry_gifts_middle_again_3e0191f1:
 
     # Lisa_01 "И не подглядывай за мной больше!"
-    Lisa_01 ""
+    Lisa_01 "And don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1408
 translate english lisa_sorry_gifts_middle_again_7a981228:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1409
 translate english lisa_sorry_gifts_middle_again_5e16fb60:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1410
 translate english lisa_sorry_gifts_middle_again_f5f8687c:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1413
 translate english lisa_sorry_gifts_persuasion_failed_cf880015:
 
     # Lisa_01 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
-    Lisa_01 ""
+    Lisa_01 "[failed!t]You know, I changed my mind! Maybe you really were spying on me..."
 
 # game/dialogues/lisatalk.rpy:1414
 translate english lisa_sorry_gifts_persuasion_failed_da577192:
 
     # Max_11 "Ну вот..."
-    Max_11 ""
+    Max_11 "Well..."
 
 # game/dialogues/lisatalk.rpy:1415
 translate english lisa_sorry_gifts_persuasion_failed_db8e56d4:
 
     # Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю."
-    Lisa_02 ""
+    Lisa_02 "Don't worry, Max, you might get lucky next time if you HAPPEN to be near the shower again when I'm using it."
 
 # game/dialogues/lisatalk.rpy:1416
 translate english lisa_sorry_gifts_persuasion_failed_7a981228:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1417
 translate english lisa_sorry_gifts_persuasion_failed_5e16fb60:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1418
 translate english lisa_sorry_gifts_persuasion_failed_f5f8687c:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1426
 translate english lisa_sorry_gifts_bad_1dc98000:
 
     # Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то так легко ты уже не отделаешься! Ясно?!"
-    Lisa_02 ""
+    Lisa_02 "Yes, and in the future, Max, if you HAPPEN to be near the shower again when I'm taking it, you won't get off so easily! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1427
 translate english lisa_sorry_gifts_bad_18df1bcf:
 
     # Max_07 "Ясно... А какую сладость ты больше всего любишь?"
-    Max_07 ""
+    Max_07 "Of course... What are your favourite sweets?"
 
 # game/dialogues/lisatalk.rpy:1428
 translate english lisa_sorry_gifts_bad_4dac6f60:
 
     # Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
-    Lisa_01 ""
+    Lisa_01 "Not telling! I'll give you a hint though: It's something square..."
 
 # game/dialogues/lisatalk.rpy:1429
 translate english lisa_sorry_gifts_bad_9eb46fa9:
 
     # Max_01 "Ну, хоть так. Это лучше, чем ничего."
-    Max_01 ""
+    Max_01 "Well that's better than nothing"
 
 # game/dialogues/lisatalk.rpy:1433
 translate english lisa_sorry_gifts_bad_2f45dd3d:
 
     # Lisa_13 "Фу-у-у... Макс, опять ты купил эти конфеты! Ты что, специально меня решил расстроить?!"
-    Lisa_13 ""
+    Lisa_13 "Fu-at... Max, you bought that candy again! Are you trying to upset me on purpose?!"
 
 # game/dialogues/lisatalk.rpy:1434
 translate english lisa_sorry_gifts_bad_5c19f89e:
 
     # Max_10 "Конечно нет! Просто только их я и смог достать..."
-    Max_10 ""
+    Max_10 "Of course not! It's just that they were the only ones I could get..."
 
 # game/dialogues/lisatalk.rpy:1435
 translate english lisa_sorry_gifts_bad_239a3918:
 
     # Lisa_12 "Макс, я знаю, что это очень дорогие конфеты! А это значит, что ты меня не слушал или у тебя памяти нет!"
-    Lisa_12 ""
+    Lisa_12 "Max, I know these are very expensive candies! Which means you didn't either didn't listen, or you have the memory of a goldfish!"
 
 # game/dialogues/lisatalk.rpy:1436
 translate english lisa_sorry_gifts_bad_6f4d9520:
 
     # Max_11 "Прости, Лиза. Возможно, я просто забыл..."
-    Max_11 ""
+    Max_11 "I'm Sorry, Lisa. Maybe I just forgot..."
 
 # game/dialogues/lisatalk.rpy:1437
 translate english lisa_sorry_gifts_bad_acfb01f4:
 
     # Lisa_14 "Ничего ты не забыл, Макс, тебе просто наплевать на всё то, что я говорю!"
-    Lisa_14 ""
+    Lisa_14 "I don't think you forgot. You just don't care to listen!"
 
 # game/dialogues/lisatalk.rpy:1438
 translate english lisa_sorry_gifts_bad_1114b13b:
 
     # Max_14 "Лиза, я..."
-    Max_14 ""
+    Max_14 "Lisa, I..."
 
 # game/dialogues/lisatalk.rpy:1439
 translate english lisa_sorry_gifts_bad_2bb2f2b9:
 
     # Lisa_12 "Всё, Макс, я не хочу тебя слушать! Жди наказания от мамы, думаю она тебе сразу вправит мозги в нужную сторону!"
-    Lisa_12 ""
+    Lisa_12 "I gave you a chance to make up for you did and I regret it. You can look forward to getting punished by Mom. She might set your head straight!"
 
 # game/dialogues/lisatalk.rpy:1440
 translate english lisa_sorry_gifts_bad_05076bc1:
 
     # Max_10 "Понял."
-    Max_10 ""
+    Max_10 "Hmm."
 
 # game/dialogues/lisatalk.rpy:1445
 translate english lisa_sorry_gifts_bad_df035b43:
 
     # Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
-    Lisa_02 ""
+    Lisa_02 "Yeah. and in the future, if you HAPPEN to be near the shower again when I take it, only my favorite sweet can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1446
 translate english lisa_sorry_gifts_bad_a2dbe53b:
 
     # Max_07 "Ясно... Я обязательно это учту!"
-    Max_07 ""
+    Max_07 "Yeah. I'll remember."
 
 # game/dialogues/lisatalk.rpy:1451
 translate english lisa_sorry_gifts_bad_00d1f41c:
 
     # Lisa_13 "Фу-у-у... Макс, ты что, тупой, я тебе уже дважды говорила, что не люблю эти конфеты?! Ты меня, что, совсем не слушаешь, или у тебя мозгов нет?!"
-    Lisa_13 ""
+    Lisa_13 "Fu-at... Max, are you stupid, I've already told you twice that I don't like these candies?! How are you still not listening to me? Do you have a brain?!"
 
 # game/dialogues/lisatalk.rpy:1452
 translate english lisa_sorry_gifts_bad_3cde1ddc:
 
     # Max_11 "Прости, Лиза, я смог достать только их."
-    Max_11 ""
+    Max_11 "Sorry, Lisa, It's all I could get."
 
 # game/dialogues/lisatalk.rpy:1453
 translate english lisa_sorry_gifts_bad_218e72a5:
 
     # Lisa_12 "Макс, тебе просто наплевать на всё, что я говорю! Всё, Макс, я не хочу тебя слушать! Так что жди наказания от мамы..."
-    Lisa_12 ""
+    Lisa_12 "You just don't care about me at all! I don't want to listen to you! I look forward to seeing you get punished by Mom."
 
 # game/dialogues/lisatalk.rpy:1454
 translate english lisa_sorry_gifts_bad_05076bc1_1:
 
     # Max_10 "Понял."
-    Max_10 ""
+    Max_10 "Shit."
 
 # game/dialogues/lisatalk.rpy:1488
 translate english lisa_sorry_gifts_middle_a4afb32f:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Um ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1489
 translate english lisa_sorry_gifts_middle_a663e899:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1490
 translate english lisa_sorry_gifts_middle_f1ba237e:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1491
 translate english lisa_sorry_gifts_middle_362f2538:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Definitely accidental!"
 
 # game/dialogues/lisatalk.rpy:1492
 translate english lisa_sorry_gifts_middle_38ed7eaf:
 
     # Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?" nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "I'm thinking, if that's the case, maybe I should even give you a hug." nointeract
 
 # game/dialogues/lisatalk.rpy:1502
 translate english lisa_sorry_gifts_middle_ef6e48ab:
 
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]I think you earned my forgiveness. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1503
 translate english lisa_sorry_gifts_middle_ab33ec2a:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1508
 translate english lisa_sorry_gifts_middle_1dc98000:
 
     # Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то так легко ты уже не отделаешься! Ясно?!"
-    Lisa_02 ""
+    Lisa_02 "Yes, and in the future, max, if you HAPPEN to be near the shower again when I'm using it, you won't get off so easily! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1509
 translate english lisa_sorry_gifts_middle_18df1bcf:
 
     # Max_07 "Ясно... А какую сладость ты больше всего любишь?"
-    Max_07 ""
+    Max_07 "Crystal...What's your favourite sweet?"
 
 # game/dialogues/lisatalk.rpy:1510
 translate english lisa_sorry_gifts_middle_4dac6f60:
 
     # Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
-    Lisa_01 ""
+    Lisa_01 "Not telling! But I'll give you a hint: It's something square..."
 
 # game/dialogues/lisatalk.rpy:1511
 translate english lisa_sorry_gifts_middle_9eb46fa9:
 
     # Max_01 "Ну, хоть так. Это лучше, чем ничего."
-    Max_01 ""
+    Max_01 "Well it's better than nothing."
 
 # game/dialogues/lisatalk.rpy:1515
 translate english lisa_sorry_gifts_middle_e386c2b3:
 
     # Lisa_09 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
-    Lisa_09 ""
+    Lisa_09 "[failed!t]You know, I changed my mind! Maybe you really were spying on me..."
 
 # game/dialogues/lisatalk.rpy:1516
 translate english lisa_sorry_gifts_middle_da577192:
 
     # Max_11 "Ну вот..."
-    Max_11 ""
+    Max_11 "Well..."
 
 # game/dialogues/lisatalk.rpy:1517
 translate english lisa_sorry_gifts_middle_db8e56d4:
 
     # Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю."
-    Lisa_02 ""
+    Lisa_02 "Don't worry, Max, you might get lucky next time if you HAPPEN to be near the shower again when I'm taking it."
 
 # game/dialogues/lisatalk.rpy:1518
 translate english lisa_sorry_gifts_middle_18df1bcf_1:
 
     # Max_07 "Ясно... А какую сладость ты больше всего любишь?"
-    Max_07 ""
+    Max_07 "Of course... What's your favourite sweet?"
 
 # game/dialogues/lisatalk.rpy:1519
 translate english lisa_sorry_gifts_middle_4dac6f60_1:
 
     # Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
-    Lisa_01 ""
+    Lisa_01 "Not telling! But I'll give you a hint: It's something square."
 
 # game/dialogues/lisatalk.rpy:1520
 translate english lisa_sorry_gifts_middle_9eb46fa9_1:
 
     # Max_01 "Ну, хоть так. Это лучше, чем ничего."
-    Max_01 ""
+    Max_01 "Well, it's better than nothing"
 
 # game/dialogues/lisatalk.rpy:1525
 translate english lisa_sorry_gifts_middle_a4afb32f_1:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1526
 translate english lisa_sorry_gifts_middle_a663e899_1:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1527
 translate english lisa_sorry_gifts_middle_f1ba237e_1:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1528
 translate english lisa_sorry_gifts_middle_362f2538_1:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Of course I was!"
 
 # game/dialogues/lisatalk.rpy:1529
 translate english lisa_sorry_gifts_middle_df035b43:
 
     # Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
-    Lisa_02 ""
+    Lisa_02 "Yes, and in the future, Max, if you HAPPEN to be near the shower again when I use it, only my favorite sweet can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1530
 translate english lisa_sorry_gifts_middle_a2dbe53b:
 
     # Max_07 "Ясно... Я обязательно это учту!"
-    Max_07 ""
+    Max_07 "Crystal...I'll remember."
 
 # game/dialogues/lisatalk.rpy:1533
 translate english lisa_sorry_gifts_middle_96958711:
 
     # Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Хотя то, что я не очень люблю крем, ты видимо пропустил мимо ушей!"
-    Lisa_01 ""
+    Lisa_01 "Hm... Them again... Okay, they'll do, they're delicious. Although you probably missed the fact that I don't like cream!"
 
 # game/dialogues/lisatalk.rpy:1534
 translate english lisa_sorry_gifts_middle_9e152c23:
 
     # Max_07 "Да, видимо... Извини. Но ты же не расскажешь маме про тот инцидент в душе?!"
-    Max_07 ""
+    Max_07 "Yes, apparently... Sorry. But you're not going to tell Mom about the shower, are you?"
 
 # game/dialogues/lisatalk.rpy:1535
 translate english lisa_sorry_gifts_middle_cd6df4b9:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, мама ничего не узнает..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe that you accidentally saw me in the shower! But oh well. Mom won't know about it..."
 
 # game/dialogues/lisatalk.rpy:1536
 translate english lisa_sorry_gifts_middle_d8a1eb18:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:1537
 translate english lisa_sorry_gifts_middle_df035b43_1:
 
     # Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
-    Lisa_02 ""
+    Lisa_02 "Yes, and in the future, Max, if you Happen to be near the shower again when I use it, only my favorite sweet can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1538
 translate english lisa_sorry_gifts_middle_18df1bcf_2:
 
     # Max_07 "Ясно... А какую сладость ты больше всего любишь?"
-    Max_07 ""
+    Max_07 "Crystal...what's your favourite sweet?"
 
 # game/dialogues/lisatalk.rpy:1539
 translate english lisa_sorry_gifts_middle_ad7ac895:
 
     # Lisa_01 "Макс, ты что, забыл? Я же давала тебе подсказку... Эта сладость - квадратная!"
-    Lisa_01 ""
+    Lisa_01 "Max, did you forget? I gave you a hint... it's square!"
 
 # game/dialogues/lisatalk.rpy:1540
 translate english lisa_sorry_gifts_middle_88607894:
 
     # Max_01 "Ах да, точно! Буду иметь ввиду..."
-    Max_01 ""
+    Max_01 "Oh yeah, for sure! I'll keep that in mind..."
 
 # game/dialogues/lisatalk.rpy:1543
 translate english lisa_sorry_gifts_middle_a4afb32f_2:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Um ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1544
 translate english lisa_sorry_gifts_middle_a663e899_2:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1545
 translate english lisa_sorry_gifts_middle_f1ba237e_2:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1546
 translate english lisa_sorry_gifts_middle_362f2538_2:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Of course I was!"
 
 # game/dialogues/lisatalk.rpy:1547
 translate english lisa_sorry_gifts_middle_38ed7eaf_1:
 
     # Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?" nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "I'm thinking, if that's the case, maybe I should even give you a hug." nointeract
 
 # game/dialogues/lisatalk.rpy:1557
 translate english lisa_sorry_gifts_middle_ef6e48ab_1:
 
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]I think I can believe that. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1558
 translate english lisa_sorry_gifts_middle_ab33ec2a_1:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1563
 translate english lisa_sorry_gifts_middle_df035b43_2:
 
     # Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
-    Lisa_02 ""
+    Lisa_02 "Yes, and in the future, Max, if you Happen to be near the shower again when I use it, only my favorite sweet can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1564
 translate english lisa_sorry_gifts_middle_a2dbe53b_1:
 
     # Max_07 "Ясно... Я обязательно это учту!"
-    Max_07 ""
+    Max_07 "Crystal... I will definitely take this into account!"
 
 # game/dialogues/lisatalk.rpy:1568
 translate english lisa_sorry_gifts_middle_e386c2b3_1:
 
     # Lisa_09 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
-    Lisa_09 ""
+    Lisa_09 "[failed!t]You know, I changed my mind! Maybe you really were spying on me..."
 
 # game/dialogues/lisatalk.rpy:1569
 translate english lisa_sorry_gifts_middle_da577192_1:
 
     # Max_11 "Ну вот..."
-    Max_11 ""
+    Max_11 "Well..."
 
 # game/dialogues/lisatalk.rpy:1570
 translate english lisa_sorry_gifts_middle_7fc39d56:
 
     # Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю. И спасти тебя сможет только моя любимая сладость!"
-    Lisa_02 ""
+    Lisa_02 "Don't worry, Max, you might get lucky next time if you HAPPEN to be near the shower again when I'm using it."
 
 # game/dialogues/lisatalk.rpy:1571
 translate english lisa_sorry_gifts_middle_a2dbe53b_2:
 
     # Max_07 "Ясно... Я обязательно это учту!"
-    Max_07 ""
+    Max_07 "Clearly... I'll remember!"
 
 # game/dialogues/lisatalk.rpy:1576
 translate english lisa_sorry_gifts_middle_a4afb32f_3:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1577
 translate english lisa_sorry_gifts_middle_a663e899_3:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1578
 translate english lisa_sorry_gifts_middle_8e15cf11:
 
     # Lisa_09 "Даже не знаю, Макс... Не очень-то ты и пытался порадовать меня. Подглядывал ещё за мной..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "I don't know, Max... you didn't really try to make me happy. You were also spying on me..." nointeract
 
 # game/dialogues/lisatalk.rpy:1582
 translate english lisa_sorry_gifts_middle_7c9165e7:
 
     # Lisa_10 "[succes!t]Ладно, считай ты прощён, мама ничего не узнает... Но лишь потому, что у меня нет никакого настроения с этим разбираться."
-    Lisa_10 ""
+    Lisa_10 "[succes!t]Okay, consider yourself forgiven, Mom won't know anything... But only because I'm not in the mood to deal with it."
 
 # game/dialogues/lisatalk.rpy:1583
 translate english lisa_sorry_gifts_middle_294ea62b:
 
     # Max_00 "Спасибо, Лиза..."
-    Max_00 ""
+    Max_00 "Thank You, Lisa..."
 
 # game/dialogues/lisatalk.rpy:1584
 translate english lisa_sorry_gifts_middle_f9706697:
 
     # Lisa_09 "Всё, Макс, я хочу побыть одна."
-    Lisa_09 ""
+    Lisa_09 "That's all, Max, I want to be alone."
 
 # game/dialogues/lisatalk.rpy:1585
 translate english lisa_sorry_gifts_middle_05076bc1:
 
     # Max_10 "Понял."
-    Max_10 ""
+    Max_10 "Sure."
 
 # game/dialogues/lisatalk.rpy:1588
 translate english lisa_sorry_gifts_middle_7b7e69c5:
 
     # Lisa_12 "[failed!t]Знаешь, а вот не пройдёт это, Макс! Так что жди наказания от мамы..."
-    Lisa_12 ""
+    Lisa_12 "[failed!t]You know, it doesn't get a pass, Max! So expect punishment from Mom..."
 
 # game/dialogues/lisatalk.rpy:1589
 translate english lisa_sorry_gifts_middle_2d20dcdf:
 
     # Max_08 "Но, Лиза, я же..."
-    Max_08 ""
+    Max_08 "But, Lisa I..."
 
 # game/dialogues/lisatalk.rpy:1590
 translate english lisa_sorry_gifts_middle_f78168ae:
 
     # Lisa_13 "Всё, Макс, я не хочу тебя слушать!"
-    Lisa_13 ""
+    Lisa_13 "That's it, max, I don't want to listen to you!"
 
 # game/dialogues/lisatalk.rpy:1591
 translate english lisa_sorry_gifts_middle_05076bc1_1:
 
     # Max_10 "Понял."
-    Max_10 ""
+    Max_10 "Shit."
 
 # game/dialogues/lisatalk.rpy:1599
 translate english lisa_sorry_gifts_middle_a4afb32f_4:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1600
 translate english lisa_sorry_gifts_middle_a663e899_4:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1601
 translate english lisa_sorry_gifts_middle_f1ba237e_3:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1602
 translate english lisa_sorry_gifts_middle_362f2538_3:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Definitely accidental!"
 
 # game/dialogues/lisatalk.rpy:1603
 translate english lisa_sorry_gifts_middle_38ed7eaf_2:
 
     # Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?" nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "I'm thinking, if that's the case, maybe I should even give you a hug." nointeract
 
 # game/dialogues/lisatalk.rpy:1613
 translate english lisa_sorry_gifts_middle_ef6e48ab_2:
 
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]I think I can believe that. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1614
 translate english lisa_sorry_gifts_middle_ab33ec2a_2:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1619
 translate english lisa_sorry_gifts_middle_0559f620:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...but don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1620
 translate english lisa_sorry_gifts_middle_7a981228:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1621
 translate english lisa_sorry_gifts_middle_5e16fb60:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1622
 translate english lisa_sorry_gifts_middle_f5f8687c:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1633
 translate english lisa_sorry_gifts_middle_9ff0b5ee:
 
     # Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Похоже, ты совершенно пропустил мимо ушей то, что я не очень люблю крем!"
-    Lisa_01 ""
+    Lisa_01 "Hm... Them again... Okay, they'll do, they're delicious. You seem to have completely missed the fact that I don't like cream very much!"
 
 # game/dialogues/lisatalk.rpy:1634
 translate english lisa_sorry_gifts_middle_95ba149c:
 
     # Max_07 "Да, видимо... Извини. Но ты же не станешь рассказывать маме про тот инцидент в душе?!"
-    Max_07 ""
+    Max_07 "Yes, apparently... Sorry. But you're not going to tell Mom about that shower incident, are you?"
 
 # game/dialogues/lisatalk.rpy:1635
 translate english lisa_sorry_gifts_middle_358c0293:
 
     # Lisa_02 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, мама ничего не узнает..."
-    Lisa_02 ""
+    Lisa_02 "It's hard to believe, of course, that you accidentally saw me in the shower! But so be it, Mom won't find out..."
 
 # game/dialogues/lisatalk.rpy:1636
 translate english lisa_sorry_gifts_middle_d8a1eb18_1:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:1637
 translate english lisa_sorry_gifts_middle_f7c7ac85:
 
     # Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..." nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "No, it's not! You don't get it! I was thinking maybe I should even give you a hug. But I'm not sure..." nointeract
 
 # game/dialogues/lisatalk.rpy:1647
 translate english lisa_sorry_gifts_middle_38f4c1c1:
 
     # Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t] Okay, I think you deserve it. Come here, let me give you a hug!"
 
 # game/dialogues/lisatalk.rpy:1648
 translate english lisa_sorry_gifts_middle_ab33ec2a_3:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1653
 translate english lisa_sorry_gifts_middle_0559f620_1:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1654
 translate english lisa_sorry_gifts_middle_7a981228_1:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1655
 translate english lisa_sorry_gifts_middle_5e16fb60_1:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1656
 translate english lisa_sorry_gifts_middle_f5f8687c_1:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "Good."
 
 # game/dialogues/lisatalk.rpy:1663
 translate english lisa_sorry_gifts_middle_a4afb32f_5:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Um ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1664
 translate english lisa_sorry_gifts_middle_a663e899_5:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1665
 translate english lisa_sorry_gifts_middle_f1ba237e_4:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1666
 translate english lisa_sorry_gifts_middle_362f2538_4:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Of course I was!"
 
 # game/dialogues/lisatalk.rpy:1667
 translate english lisa_sorry_gifts_middle_38ed7eaf_3:
 
     # Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?" nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "I'm thinking, if that's the case, maybe I should even give you a hug." nointeract
 
 # game/dialogues/lisatalk.rpy:1677
 translate english lisa_sorry_gifts_middle_ef6e48ab_3:
 
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]I think I believe it. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1678
 translate english lisa_sorry_gifts_middle_ab33ec2a_4:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1683
 translate english lisa_sorry_gifts_middle_0559f620_2:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1684
 translate english lisa_sorry_gifts_middle_7a981228_2:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1685
 translate english lisa_sorry_gifts_middle_5e16fb60_2:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1686
 translate english lisa_sorry_gifts_middle_f5f8687c_2:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1694
 translate english lisa_sorry_gifts_middle_a4afb32f_6:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1695
 translate english lisa_sorry_gifts_middle_a663e899_6:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1696
 translate english lisa_sorry_gifts_middle_f1ba237e_5:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1697
 translate english lisa_sorry_gifts_middle_362f2538_5:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Definitely accidental!"
 
 # game/dialogues/lisatalk.rpy:1698
 translate english lisa_sorry_gifts_middle_38ed7eaf_4:
 
     # Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?" nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "I'm thinking, if that's the case, maybe I should even give you a hug?" nointeract
 
 # game/dialogues/lisatalk.rpy:1708
 translate english lisa_sorry_gifts_middle_ef6e48ab_4:
 
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]I think I believe it. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1709
 translate english lisa_sorry_gifts_middle_ab33ec2a_5:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1714
 translate english lisa_sorry_gifts_middle_0559f620_3:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1715
 translate english lisa_sorry_gifts_middle_7a981228_3:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1716
 translate english lisa_sorry_gifts_middle_5e16fb60_3:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1717
 translate english lisa_sorry_gifts_middle_f5f8687c_3:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1725
 translate english lisa_sorry_gifts_middle_a4afb32f_7:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1726
 translate english lisa_sorry_gifts_middle_a663e899_7:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1727
 translate english lisa_sorry_gifts_middle_f1ba237e_6:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1728
 translate english lisa_sorry_gifts_middle_362f2538_6:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Definitely accidental!"
 
 # game/dialogues/lisatalk.rpy:1729
 translate english lisa_sorry_gifts_middle_38ed7eaf_5:
 
     # Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?" nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "I'm thinking, if that's the case, maybe I should even give you a hug?" nointeract
 
 # game/dialogues/lisatalk.rpy:1739
 translate english lisa_sorry_gifts_middle_ef6e48ab_5:
 
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]I Think this can be believed. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1740
 translate english lisa_sorry_gifts_middle_ab33ec2a_6:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Nice! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1745
 translate english lisa_sorry_gifts_middle_0559f620_4:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right... now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1746
 translate english lisa_sorry_gifts_middle_7a981228_4:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1747
 translate english lisa_sorry_gifts_middle_5e16fb60_4:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1748
 translate english lisa_sorry_gifts_middle_f5f8687c_4:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1756
 translate english lisa_sorry_gifts_middle_a4afb32f_8:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 ""
+    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1757
 translate english lisa_sorry_gifts_middle_a663e899_8:
 
     # Max_07 "Значит - это засчитывается?"
-    Max_07 ""
+    Max_07 "Does this count?"
 
 # game/dialogues/lisatalk.rpy:1758
 translate english lisa_sorry_gifts_middle_f1ba237e_7:
 
     # Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
-    Lisa_02 ""
+    Lisa_02 "Yes, Max, I forgive you! Maybe you really were near the shower by accident..."
 
 # game/dialogues/lisatalk.rpy:1759
 translate english lisa_sorry_gifts_middle_362f2538_7:
 
     # Max_01 "Однозначно случайно!"
-    Max_01 ""
+    Max_01 "Definitely accidental!"
 
 # game/dialogues/lisatalk.rpy:1766
 translate english lisa_sorry_gifts_middle_93a99615:
 
     # Lisa_05 "В таком случае, иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "In that case, come here and let me give you a hug!"
 
 # game/dialogues/lisatalk.rpy:1767
 translate english lisa_sorry_gifts_middle_ab33ec2a_7:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1772
 translate english lisa_sorry_gifts_middle_0559f620_5:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1773
 translate english lisa_sorry_gifts_middle_7a981228_5:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1774
 translate english lisa_sorry_gifts_middle_5e16fb60_5:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1775
 translate english lisa_sorry_gifts_middle_f5f8687c_5:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1786
 translate english lisa_sorry_gifts_good_6ee0891a:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Спасибо тебе большое! А откуда ты узнал, что это мой любимый шоколад?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! Thank you very much! How did you know it was my favourite chocolate?"
 
 # game/dialogues/lisatalk.rpy:1787
 translate english lisa_sorry_gifts_good_ef411c4a:
 
     # Max_03 "Я не знал... Получается - повезло! Или это профессиональное чутьё!"
-    Max_03 ""
+    Max_03 "I didn't know....I got lucky! Or maybe it's some special intuition!"
 
 # game/dialogues/lisatalk.rpy:1788
 translate english lisa_sorry_gifts_good_03b8ab75:
 
     # Lisa_02 "Хи-хи... Болтун! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
-    Lisa_02 ""
+    Lisa_02 "Hee-hee... Chatterbox! Anyway, you've definitely earned forgiveness with these chocolates."
 
 # game/dialogues/lisatalk.rpy:1789
 translate english lisa_sorry_gifts_good_210a86c0:
 
     # Max_07 "Да я же случайно оказался около душа..."
-    Max_07 ""
+    Max_07 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1796
 translate english lisa_sorry_gifts_good_cbcbb24a:
 
     # Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1797
 translate english lisa_sorry_gifts_good_ab33ec2a:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1802
 translate english lisa_sorry_gifts_good_938d39d5:
 
     # Lisa_01 "Ну всё, хорошего понемногу... Я рада, что ты выбрал именно такие извинения."
-    Lisa_01 ""
+    Lisa_01 "All right, that was good... I'm glad you chose that kind of apology."
 
 # game/dialogues/lisatalk.rpy:1803
 translate english lisa_sorry_gifts_good_b56f155b:
 
     # Max_01 "А уж я-то как рад, сестрёнка!"
-    Max_01 ""
+    Max_01 "I'm so glad, sis!"
 
 # game/dialogues/lisatalk.rpy:1808
 translate english lisa_sorry_gifts_good_13f5bda9:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! This is my favorite sweet... Thank you very much! How did you know?!"
 
 # game/dialogues/lisatalk.rpy:1809
 translate english lisa_sorry_gifts_good_36899f99:
 
     # Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
-    Max_03 ""
+    Max_03 "I didn't know... It's a professional instinct! Well, your tip helped a bit."
 
 # game/dialogues/lisatalk.rpy:1810
 translate english lisa_sorry_gifts_good_bfa94525:
 
     # Lisa_02 "Хи-хи... Везунчик! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
-    Lisa_02 ""
+    Lisa_02 "Hee-hee... Lucky boy! Anyway, you've definitely earned forgiveness with these chocolates."
 
 # game/dialogues/lisatalk.rpy:1811
 translate english lisa_sorry_gifts_good_210a86c0_1:
 
     # Max_07 "Да я же случайно оказался около душа..."
-    Max_07 ""
+    Max_07 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1818
 translate english lisa_sorry_gifts_good_cbcbb24a_1:
 
     # Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1819
 translate english lisa_sorry_gifts_good_ab33ec2a_1:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1824
 translate english lisa_sorry_gifts_good_f39a352c:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:1832
 translate english lisa_sorry_gifts_good_aae92047:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:1833
 translate english lisa_sorry_gifts_good_a77510fc:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:1838
 translate english lisa_sorry_gifts_good_0559f620:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1839
 translate english lisa_sorry_gifts_good_7a981228:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1840
 translate english lisa_sorry_gifts_good_8d45b734:
 
     # Lisa_01 "Но если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя смогут только большие шоколадки! Ясно?!"
-    Lisa_01 ""
+    Lisa_01 "But if you HAPPEN to be near the shower again when I'm taking it, only big chocolate bars can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1841
 translate english lisa_sorry_gifts_good_377f610d:
 
     # Max_04 "Ясно... Я обязательно это учту!"
-    Max_04 ""
+    Max_04 "Crystal...I'll remember!"
 
 # game/dialogues/lisatalk.rpy:1848
 translate english lisa_sorry_gifts_good_13f5bda9_1:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! This is my favorite sweet... Thank you very much! How did you know?!"
 
 # game/dialogues/lisatalk.rpy:1849
 translate english lisa_sorry_gifts_good_36899f99_1:
 
     # Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
-    Max_03 ""
+    Max_03 "I didn't know... It's a professional instinct! Well, your tip helped a bit."
 
 # game/dialogues/lisatalk.rpy:1850
 translate english lisa_sorry_gifts_good_bfa94525_1:
 
     # Lisa_02 "Хи-хи... Везунчик! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
-    Lisa_02 ""
+    Lisa_02 "Hee-hee... Lucky boy! Anyway, you've definitely earned forgiveness with these chocolates."
 
 # game/dialogues/lisatalk.rpy:1851
 translate english lisa_sorry_gifts_good_210a86c0_2:
 
     # Max_07 "Да я же случайно оказался около душа..."
-    Max_07 ""
+    Max_07 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1858
 translate english lisa_sorry_gifts_good_cbcbb24a_2:
 
     # Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1859
 translate english lisa_sorry_gifts_good_ab33ec2a_2:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1864
 translate english lisa_sorry_gifts_good_f39a352c_1:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:1872
 translate english lisa_sorry_gifts_good_aae92047_1:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:1873
 translate english lisa_sorry_gifts_good_a77510fc_1:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:1878
 translate english lisa_sorry_gifts_good_0559f620_1:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1879
 translate english lisa_sorry_gifts_good_7a981228_1:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1880
 translate english lisa_sorry_gifts_good_5e16fb60:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1881
 translate english lisa_sorry_gifts_good_f5f8687c:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1889
 translate english lisa_sorry_gifts_good_610255c7:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 ""
+    Lisa_03 "Wow! You chose my favourite chocolates again! Thank you so much!"
 
 # game/dialogues/lisatalk.rpy:1890
 translate english lisa_sorry_gifts_good_ae854677:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 ""
+    Max_04 "Don't worry about it... I like to please my little sister!"
 
 # game/dialogues/lisatalk.rpy:1892
 translate english lisa_sorry_gifts_good_ea3d9a2d:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:1897
 translate english lisa_sorry_gifts_good_9ee6b2ae:
 
     # Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"
-    Lisa_02 ""
+    Lisa_02 "Well this is way more than I expected...looks like I can't recall anything about you peeping on me!"
 
 # game/dialogues/lisatalk.rpy:1898
 translate english lisa_sorry_gifts_good_d8a1eb18:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:1899
 translate english lisa_sorry_gifts_good_0cb0c2d4:
 
     # Lisa_12 "А вот и нет! Не разобрались!"
-    Lisa_12 ""
+    Lisa_12 "No, it's not! You don't get it!"
 
 # game/dialogues/lisatalk.rpy:1900
 translate english lisa_sorry_gifts_good_c8d189b9:
 
     # Max_08 "Эй, в смысле!"
-    Max_08 ""
+    Max_08 "Hey, I mean it!"
 
 # game/dialogues/lisatalk.rpy:1907
 translate english lisa_sorry_gifts_good_eeff752d:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Вот такие..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Like this..."
 
 # game/dialogues/lisatalk.rpy:1908
 translate english lisa_sorry_gifts_good_c5bcc6f6:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:1913
 translate english lisa_sorry_gifts_good_f39a352c_2:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:1921
 translate english lisa_sorry_gifts_good_aae92047_2:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:1922
 translate english lisa_sorry_gifts_good_a77510fc_2:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:1927
 translate english lisa_sorry_gifts_good_0559f620_2:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1928
 translate english lisa_sorry_gifts_good_7a981228_2:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1930
 translate english lisa_sorry_gifts_good_8d45b734_1:
 
     # Lisa_01 "Но если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя смогут только большие шоколадки! Ясно?!"
-    Lisa_01 ""
+    Lisa_01 "But if you HAPPEN to be near the shower again when I'm taking it, only big chocolate bars can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1931
 translate english lisa_sorry_gifts_good_377f610d_1:
 
     # Max_04 "Ясно... Я обязательно это учту!"
-    Max_04 ""
+    Max_04 "Crystal...I'll remember!"
 
 # game/dialogues/lisatalk.rpy:1934
 translate english lisa_sorry_gifts_good_5e16fb60_1:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1935
 translate english lisa_sorry_gifts_good_f5f8687c_1:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1939
 translate english lisa_sorry_gifts_good_cf880015:
 
     # Lisa_01 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
-    Lisa_01 ""
+    Lisa_01 "[failed!t]You know, I changed my mind! Maybe you really were spying on me..."
 
 # game/dialogues/lisatalk.rpy:1940
 translate english lisa_sorry_gifts_good_da577192:
 
     # Max_11 "Ну вот..."
-    Max_11 ""
+    Max_11 "Well..."
 
 # game/dialogues/lisatalk.rpy:1941
 translate english lisa_sorry_gifts_good_db8e56d4:
 
     # Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю."
-    Lisa_02 ""
+    Lisa_02 "Don't worry, Max, you might get lucky next time if you HAPPEN to be near the shower again when I'm using it."
 
 # game/dialogues/lisatalk.rpy:1942
 translate english lisa_sorry_gifts_good_7a981228_3:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1944
 translate english lisa_sorry_gifts_good_0c59c326:
 
     # Lisa_01 "И спасти тебя смогут только большие шоколадки! Ясно?!"
-    Lisa_01 ""
+    Lisa_01 "And only big chocolate bars can save you! Clear?!"
 
 # game/dialogues/lisatalk.rpy:1945
 translate english lisa_sorry_gifts_good_377f610d_2:
 
     # Max_04 "Ясно... Я обязательно это учту!"
-    Max_04 ""
+    Max_04 "Crystal...I'll remember!"
 
 # game/dialogues/lisatalk.rpy:1948
 translate english lisa_sorry_gifts_good_5e16fb60_2:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1949
 translate english lisa_sorry_gifts_good_f5f8687c_2:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1955
 translate english lisa_sorry_gifts_good_13f5bda9_2:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! This is my favorite sweet... Thank you very much! How did you know?!"
 
 # game/dialogues/lisatalk.rpy:1956
 translate english lisa_sorry_gifts_good_36899f99_2:
 
     # Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
-    Max_03 ""
+    Max_03 "I didn't know... It's a professional instinct! Well, your tip helped a bit."
 
 # game/dialogues/lisatalk.rpy:1957
 translate english lisa_sorry_gifts_good_ea3d9a2d_1:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:1958
 translate english lisa_sorry_gifts_good_d8a1eb18_1:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:1959
 translate english lisa_sorry_gifts_good_f7c7ac85:
 
     # Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..." nointeract
-    Lisa_01 "" nointeract
+    Lisa_01 "But no! Not sorted out! I wonder if I should even give you a hug. I'm not sure..." nointeract
 
 # game/dialogues/lisatalk.rpy:1969
 translate english lisa_sorry_gifts_good_38f4c1c1:
 
     # Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t] Okay, you probably deserve it. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:1970
 translate english lisa_sorry_gifts_good_ab33ec2a_3:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1975
 translate english lisa_sorry_gifts_good_0559f620_3:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1976
 translate english lisa_sorry_gifts_good_7a981228_4:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:1977
 translate english lisa_sorry_gifts_good_5e16fb60_3:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:1978
 translate english lisa_sorry_gifts_good_f5f8687c_3:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:1986
 translate english lisa_sorry_gifts_good_13f5bda9_3:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! This is my favorite sweet... Thank you very much! How did you know?!"
 
 # game/dialogues/lisatalk.rpy:1987
 translate english lisa_sorry_gifts_good_36899f99_3:
 
     # Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
-    Max_03 ""
+    Max_03 "I didn't know... It's a professional instinct! Well, your tip helped a bit."
 
 # game/dialogues/lisatalk.rpy:1988
 translate english lisa_sorry_gifts_good_ea3d9a2d_2:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:1989
 translate english lisa_sorry_gifts_good_d8a1eb18_2:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:1996
 translate english lisa_sorry_gifts_good_4b7ec1a8:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:1997
 translate english lisa_sorry_gifts_good_c5bcc6f6_1:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2002
 translate english lisa_sorry_gifts_good_0559f620_4:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2003
 translate english lisa_sorry_gifts_good_7a981228_5:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2004
 translate english lisa_sorry_gifts_good_5e16fb60_4:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2005
 translate english lisa_sorry_gifts_good_f5f8687c_4:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2009
 translate english lisa_sorry_gifts_good_610255c7_1:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 ""
+    Lisa_03 "Wow! You chose my favourite chocolates again! Thank you so much!"
 
 # game/dialogues/lisatalk.rpy:2010
 translate english lisa_sorry_gifts_good_ae854677_1:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 ""
+    Max_04 "Don't worry about it... I like to please my little sister!"
 
 # game/dialogues/lisatalk.rpy:2011
 translate english lisa_sorry_gifts_good_ea3d9a2d_3:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2012
 translate english lisa_sorry_gifts_good_d8a1eb18_3:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2019
 translate english lisa_sorry_gifts_good_4b7ec1a8_1:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2020
 translate english lisa_sorry_gifts_good_c5bcc6f6_2:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2025
 translate english lisa_sorry_gifts_good_f39a352c_3:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:2033
 translate english lisa_sorry_gifts_good_aae92047_3:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:2034
 translate english lisa_sorry_gifts_good_a77510fc_3:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:2039
 translate english lisa_sorry_gifts_good_0559f620_5:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2040
 translate english lisa_sorry_gifts_good_7a981228_6:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2041
 translate english lisa_sorry_gifts_good_5e16fb60_5:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2042
 translate english lisa_sorry_gifts_good_f5f8687c_5:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2050
 translate english lisa_sorry_gifts_good_13f5bda9_4:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! This is my favorite sweet... Thank you very much! How did you know?!"
 
 # game/dialogues/lisatalk.rpy:2051
 translate english lisa_sorry_gifts_good_36899f99_4:
 
     # Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
-    Max_03 ""
+    Max_03 "I didn't know... It's a professional instinct! Well, your tip helped a bit."
 
 # game/dialogues/lisatalk.rpy:2052
 translate english lisa_sorry_gifts_good_ea3d9a2d_4:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2053
 translate english lisa_sorry_gifts_good_d8a1eb18_4:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2060
 translate english lisa_sorry_gifts_good_4b7ec1a8_2:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2061
 translate english lisa_sorry_gifts_good_c5bcc6f6_3:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2066
 translate english lisa_sorry_gifts_good_0559f620_6:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2067
 translate english lisa_sorry_gifts_good_7a981228_7:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2068
 translate english lisa_sorry_gifts_good_5e16fb60_6:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2069
 translate english lisa_sorry_gifts_good_f5f8687c_6:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2073
 translate english lisa_sorry_gifts_good_13f5bda9_5:
 
     # Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
-    Lisa_03 ""
+    Lisa_03 "Wow! That's great, Max! This is my favorite sweet... Thank you very much! How did you know?!"
 
 # game/dialogues/lisatalk.rpy:2074
 translate english lisa_sorry_gifts_good_36899f99_5:
 
     # Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
-    Max_03 ""
+    Max_03 "I didn't know... It's a professional instinct! Well, your tip helped a bit."
 
 # game/dialogues/lisatalk.rpy:2075
 translate english lisa_sorry_gifts_good_ea3d9a2d_5:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2076
 translate english lisa_sorry_gifts_good_d8a1eb18_5:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2083
 translate english lisa_sorry_gifts_good_4b7ec1a8_3:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2084
 translate english lisa_sorry_gifts_good_c5bcc6f6_4:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2089
 translate english lisa_sorry_gifts_good_f39a352c_4:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:2097
 translate english lisa_sorry_gifts_good_aae92047_4:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:2098
 translate english lisa_sorry_gifts_good_a77510fc_4:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:2103
 translate english lisa_sorry_gifts_good_0559f620_7:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2104
 translate english lisa_sorry_gifts_good_7a981228_8:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2105
 translate english lisa_sorry_gifts_good_5e16fb60_7:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2106
 translate english lisa_sorry_gifts_good_f5f8687c_7:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2114
 translate english lisa_sorry_gifts_good_610255c7_2:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 ""
+    Lisa_03 "Wow! You chose my favourite chocolates again! Thank you so much!"
 
 # game/dialogues/lisatalk.rpy:2115
 translate english lisa_sorry_gifts_good_ae854677_2:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 ""
+    Max_04 "Don't worry about it... I like to please my little sister!"
 
 # game/dialogues/lisatalk.rpy:2116
 translate english lisa_sorry_gifts_good_ea3d9a2d_6:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2117
 translate english lisa_sorry_gifts_good_d8a1eb18_6:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2124
 translate english lisa_sorry_gifts_good_4b7ec1a8_4:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2125
 translate english lisa_sorry_gifts_good_c5bcc6f6_5:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2130
 translate english lisa_sorry_gifts_good_f39a352c_5:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:2138
 translate english lisa_sorry_gifts_good_aae92047_5:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:2139
 translate english lisa_sorry_gifts_good_a77510fc_5:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:2144
 translate english lisa_sorry_gifts_good_0559f620_8:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2145
 translate english lisa_sorry_gifts_good_7a981228_9:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2146
 translate english lisa_sorry_gifts_good_5e16fb60_8:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2147
 translate english lisa_sorry_gifts_good_f5f8687c_8:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2155
 translate english lisa_sorry_gifts_good_610255c7_3:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 ""
+    Lisa_03 "Wow! You chose my favourite chocolates again! Thank you so much!"
 
 # game/dialogues/lisatalk.rpy:2156
 translate english lisa_sorry_gifts_good_ae854677_3:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 ""
+    Max_04 "Don't worry about it... I like to please my little sister!"
 
 # game/dialogues/lisatalk.rpy:2157
 translate english lisa_sorry_gifts_good_ea3d9a2d_7:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2158
 translate english lisa_sorry_gifts_good_d8a1eb18_7:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2165
 translate english lisa_sorry_gifts_good_4b7ec1a8_5:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2166
 translate english lisa_sorry_gifts_good_c5bcc6f6_6:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2171
 translate english lisa_sorry_gifts_good_f39a352c_6:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:2179
 translate english lisa_sorry_gifts_good_aae92047_6:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:2180
 translate english lisa_sorry_gifts_good_a77510fc_6:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:2185
 translate english lisa_sorry_gifts_good_0559f620_9:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2186
 translate english lisa_sorry_gifts_good_7a981228_10:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2187
 translate english lisa_sorry_gifts_good_5e16fb60_9:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2188
 translate english lisa_sorry_gifts_good_f5f8687c_9:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2196
 translate english lisa_sorry_gifts_good_610255c7_4:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 ""
+    Lisa_03 "Wow! You chose my favourite chocolates again! Thank you so much!"
 
 # game/dialogues/lisatalk.rpy:2197
 translate english lisa_sorry_gifts_good_ae854677_4:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 ""
+    Max_04 "Don't worry about it... I like to please my little sister!"
 
 # game/dialogues/lisatalk.rpy:2198
 translate english lisa_sorry_gifts_good_ea3d9a2d_8:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2199
 translate english lisa_sorry_gifts_good_d8a1eb18_8:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2206
 translate english lisa_sorry_gifts_good_4b7ec1a8_6:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2207
 translate english lisa_sorry_gifts_good_c5bcc6f6_7:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2212
 translate english lisa_sorry_gifts_good_f39a352c_7:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:2220
 translate english lisa_sorry_gifts_good_aae92047_7:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:2221
 translate english lisa_sorry_gifts_good_a77510fc_7:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:2226
 translate english lisa_sorry_gifts_good_0559f620_10:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2227
 translate english lisa_sorry_gifts_good_7a981228_11:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2228
 translate english lisa_sorry_gifts_good_5e16fb60_10:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2229
 translate english lisa_sorry_gifts_good_f5f8687c_10:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 # game/dialogues/lisatalk.rpy:2237
 translate english lisa_sorry_gifts_good_610255c7_5:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 ""
+    Lisa_03 "Wow! You chose my favourite chocolates again! Thank you so much!"
 
 # game/dialogues/lisatalk.rpy:2238
 translate english lisa_sorry_gifts_good_ae854677_5:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 ""
+    Max_04 "Don't worry about it... I like to please my little sister!"
 
 # game/dialogues/lisatalk.rpy:2240
 translate english lisa_sorry_gifts_good_ea3d9a2d_9:
 
     # Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
-    Lisa_01 ""
+    Lisa_01 "It's hard to believe, of course, that you accidentally saw me in the shower! But I won't tell Mom..."
 
 # game/dialogues/lisatalk.rpy:2242
 translate english lisa_sorry_gifts_good_9ee6b2ae_1:
 
     # Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"
-    Lisa_02 ""
+    Lisa_02 "Well this is way more than I expected...looks like I can't recall anything about you peeping on me!"
 
 # game/dialogues/lisatalk.rpy:2243
 translate english lisa_sorry_gifts_good_d8a1eb18_9:
 
     # Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-    Max_02 ""
+    Max_02 "That's great! I'm glad we got this sorted out..."
 
 # game/dialogues/lisatalk.rpy:2250
 translate english lisa_sorry_gifts_good_4b7ec1a8_7:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come here..."
 
 # game/dialogues/lisatalk.rpy:2251
 translate english lisa_sorry_gifts_good_c5bcc6f6_8:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:2257
 translate english lisa_sorry_gifts_good_f39a352c_8:
 
     # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "I love that you're so nice to indulge my sweet tooth... Maybe you should get a kiss on the cheek for this?" nointeract
 
 # game/dialogues/lisatalk.rpy:2265
 translate english lisa_sorry_gifts_good_aae92047_8:
 
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
-    Lisa_05 ""
+    Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
 # game/dialogues/lisatalk.rpy:2266
 translate english lisa_sorry_gifts_good_a77510fc_8:
 
     # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
 
 # game/dialogues/lisatalk.rpy:2271
 translate english lisa_sorry_gifts_good_0559f620_11:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2272
 translate english lisa_sorry_gifts_good_7a981228_12:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2273
 translate english lisa_sorry_gifts_good_5e16fb60_11:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2274
 translate english lisa_sorry_gifts_good_f5f8687c_11:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right"
 
 # game/dialogues/lisatalk.rpy:2285
 translate english lisa_sorry_gifts_good_5dd722ed:
 
     # Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"
-    Lisa_05 ""
+    Lisa_05 "And I think you deserve a lot more than just a hug! Here's a kiss!"
 
 # game/dialogues/lisatalk.rpy:2286
 translate english lisa_sorry_gifts_good_3bf1b2fc:
 
     # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-    Max_05 ""
+    Max_05 "{i}Oh... Kisses from my little sister - a dream come true! It feels so good when she snuggles up to me ... {/i}"
 
 # game/dialogues/lisatalk.rpy:2291
 translate english lisa_sorry_gifts_good_0559f620_12:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right...now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:2292
 translate english lisa_sorry_gifts_good_7a981228_13:
 
     # Max_01 "Да я же случайно оказался около душа..."
-    Max_01 ""
+    Max_01 "I only happened to be near the shower..."
 
 # game/dialogues/lisatalk.rpy:2293
 translate english lisa_sorry_gifts_good_5e16fb60_12:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 ""
+    Lisa_03 "All right, all right, you don't have to go on, I believe you."
 
 # game/dialogues/lisatalk.rpy:2294
 translate english lisa_sorry_gifts_good_f5f8687c_12:
 
     # Max_02 "Вот и правильно."
-    Max_02 ""
+    Max_02 "That's right."
 
 translate english strings:
 
     # game/dialogues/lisatalk.rpy:1355
     old "Правда? Ты всё-таки достал её для меня?! А какую?"
-    new ""
+    new "Really? Did you get it for me?! Which one?"
 
     # game/dialogues/lisatalk.rpy:1355
     old "Правда? Ну ты даёшь! А какую на этот раз?!"
-    new ""
+    new "Really? Oh, my! What's the next one?!"
 
     # game/dialogues/lisatalk.rpy:1355
     old "Правда? Ну давай, показывай, что у тебя на этот раз?!"
-    new ""
+    new "Really? Come on, show me what you got this time!"
 
     # game/dialogues/lisatalk.rpy:1492
     old "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new ""
+    new "Definitely need a hug! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1578
     old "Это было случайно... Просто так получается всё время! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new ""
+    new "It was an accident... It just happens all the time! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1824
     old "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new ""
+    new "Of course you should! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+
+# TODO: Translation updated at 2020-04-11 01:32
+
+# game/dialogues/lisatalk.rpy:1117
+translate english Lisa_sorry_944bbc72:
+
+    # Lisa_09 "Нет уж, Макс... Думаю, я просто сдам тебя маме и пусть она с тобой разбирается! Хватит уже за мной подглядывать..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1118
+translate english Lisa_sorry_ca44c260:
+
+    # Max_07 "А может мы снова с тобой договоримся?! Как раньше..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1119
+translate english Lisa_sorry_60cecc21:
+
+    # Lisa_01 "Чтобы ты снова кормил меня сладостями?! Нет, это как-то слишком уж просто для тебя... Теперь, если не хочешь попасть под мамино наказание, ты купишь то, что я попрошу!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1120
+translate english Lisa_sorry_6ddd4b08:
+
+    # Max_09 "Ну, это смотря ЧТО ты попросишь, потому что в деньгах я не купаюсь..."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:1121
+translate english Lisa_sorry_228c38a1:
+
+    # Lisa_03 "Я уже давно хочу шёлковый халат! Очень-очень хочу... Как у Алисы! Ты видел её халат?! Правда же он классный!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1122
+translate english Lisa_sorry_e14a17a4:
+
+    # Max_02 "Такой синий, шёлковый и классный? Нет, не видел!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:1123
+translate english Lisa_sorry_a5058491:
+
+    # Lisa_02 "Хи-хи... Шутник! Так вот, если достанешь мне шёлкоый халат, то я ничего не расскажу маме о том, какой мой старший брат извращенец!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1124
+translate english Lisa_sorry_9fa76c6a:
+
+    # Max_08 "Может тогда дашь мне на это больше времени? А то я могу не успеть к следующему ужину!"
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:1125
+translate english Lisa_sorry_dfc7ed15:
+
+    # Lisa_00 "Пожалуй... Времени у тебя - два дня. И чтобы успел до ужина!"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:1126
+translate english Lisa_sorry_585cc998:
+
+    # Max_00 "Хорошо, я постараюсь успеть..."
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:1236
+translate english gift_bathrobe_8df2eb62:
+
+    # Lisa_11 "Постой, неужели это то, что я думаю?!"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:1237
+translate english gift_bathrobe_b9ba8eaa:
+
+    # Max_02 "Если ты думаешь, что это шёлковый халатик, то вот, держи..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:1238
+translate english gift_bathrobe_5c98f331:
+
+    # Lisa_03 "Ничего себе! Он такой же, как у Алисы, только красный! Какая прелесть! Я тебя обожаю! Спасибо!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1239
+translate english gift_bathrobe_216fb05f:
+
+    # Max_04 "Да не за что, сестрёнка!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:1242
+translate english gift_bathrobe_d32eea46:
+
+    # Lisa_02 "А я думала, раз срок уже прошёл, то и надеяться, что ты его подаришь не стоит."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1243
+translate english gift_bathrobe_72853a43:
+
+    # Max_04 "И когда я на тебе его увижу?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:1252
+translate english gift_bathrobe_ee480478:
+
+    # Lisa_02 "Макс, давай обниматься! Лови меня..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1253
+translate english gift_bathrobe_b7706200:
+
+    # Max_05 "{i}Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается.{/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:1258
+translate english gift_bathrobe_22c11adb:
+
+    # Lisa_05 "И в щёчку ещё чмокну! Ммм..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:1263
+translate english gift_bathrobe_84c6ceb6:
+
+    # Max_03 "Ого, сколько нежности... Может быть, примеришь его при мне?"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:1272
+translate english gift_bathrobe_4b7ec1a8:
+
+    # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1273
+translate english gift_bathrobe_c5bcc6f6:
+
+    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:1278
+translate english gift_bathrobe_5dd722ed:
+
+    # Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:1279
+translate english gift_bathrobe_3bf1b2fc:
+
+    # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:1284
+translate english gift_bathrobe_0559f620:
+
+    # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1285
+translate english gift_bathrobe_21381888:
+
+    # Max_04 "Может быть, примеришь его при мне?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:1286
+translate english gift_bathrobe_5863dd28:
+
+    # Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1294
+translate english gift_bathrobe_4b7ec1a8_1:
+
+    # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1295
+translate english gift_bathrobe_ab33ec2a:
+
+    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:1300
+translate english gift_bathrobe_0559f620_1:
+
+    # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1301
+translate english gift_bathrobe_72853a43_1:
+
+    # Max_04 "И когда я на тебе его увижу?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:1302
+translate english gift_bathrobe_2586fb1b_1:
+
+    # Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1304
+translate english gift_bathrobe_2586fb1b_2:
+
+    # Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1306
+translate english gift_bathrobe_3255b6b3:
+
+    # Max_01 "Супер! Будет любопытно посмотреть..."
+    Max_01 ""
 

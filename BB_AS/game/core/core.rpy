@@ -380,5 +380,16 @@ label after_load:
                 'alice' : SorryGift(),
                 }
 
+        if current_ver < '0.03.1.012':
+            $ current_ver = '0.03.1.012'
+            $ items['ferrero-m'].name = _("Конфеты \"Ferrero Rocher\" (16 штук)")
+            $ items['ferrero-b'].name = _("Конфеты \"Ferrero Rocher\" (24 штуки)")
+            $ items['bathrobe'].price = 200
+            $ items['pajamas'].price = 200
+            $ items['nightie'].price = 200
+            $ items['max-a'].price = 150
+            $ flags['lisa_superhug'] = 0
+
+
         if current_ver < config.version:
             $ current_ver = config.version
