@@ -1069,5 +1069,5 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "Одежда для Макса"
-    new "Clothing for max"
+    new "Clothing for Max"
 

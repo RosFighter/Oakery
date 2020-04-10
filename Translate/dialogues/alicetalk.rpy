@@ -2268,7 +2268,7 @@ translate english massage_sunscreen_acc696ab:
 translate english massage_sunscreen_d45b0d2a:
 
     # Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
-    Max_07 "{i}Sometimes Alice can be right. It probably is worth studying. {/i}"
+    Max_07 "{i}Sometimes Alice can be right. It probably is worth studying.{/i}"
 
 # game/dialogues/alicetalk.rpy:1174
 translate english massage_sunscreen_07ed7b58:
@@ -2304,7 +2304,7 @@ translate english massage_sunscreen_right_foot_c55e1f46:
 translate english massage_sunscreen_right_foot_facf4587:
 
     # Max_03 "{i}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
-    Max_03 "and now the left one... Like this. Yes, I can't take my eyes off you, that ass is perfect!{/i}"
+    Max_03 "{i}And now the left one... Like this. Yes, I can't take my eyes off you, that ass is perfect!{/i}"
 
 # game/dialogues/alicetalk.rpy:1204
 translate english massage_sunscreen_shin_a07f50ac:
@@ -2490,13 +2490,13 @@ translate english massage_sunscreen_talk_topless_57148625:
 translate english massage_sunscreen_end_1a15b8da:
 
     # Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
-    Max_10 "{i}well, i'm out of sunscreen. Need to buy more.{/i}"
+    Max_10 "{i}Well, i'm out of sunscreen. Need to buy more.{/i}"
 
 # game/dialogues/alicetalk.rpy:1434
 translate english massage_sunscreen_end_2c4d5f44:
 
     # Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
-    Max_08 "{i}there's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance.{/i}"
+    Max_08 "{i}There's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance.{/i}"
 
 translate english strings:
 
@@ -2547,4 +2547,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1406
     old "Ну, как хочешь..."
     new "Well, as you wish..."
-
