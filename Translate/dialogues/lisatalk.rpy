@@ -3482,7 +3482,7 @@ translate english lisa_sorry_gifts_bad_acfb01f4:
 translate english lisa_sorry_gifts_bad_1114b13b:
 
     # Max_14 "Лиза, я..."
-    Max_14 "Lisa, I..."
+    Max_14 "Lisa, I-"
 
 # game/dialogues/lisatalk.rpy:1439
 translate english lisa_sorry_gifts_bad_2bb2f2b9:
@@ -3848,7 +3848,7 @@ translate english lisa_sorry_gifts_middle_7b7e69c5:
 translate english lisa_sorry_gifts_middle_2d20dcdf:
 
     # Max_08 "Но, Лиза, я же..."
-    Max_08 "But, Lisa I..."
+    Max_08 "But, Lisa I-"
 
 # game/dialogues/lisatalk.rpy:1590
 translate english lisa_sorry_gifts_middle_f78168ae:
