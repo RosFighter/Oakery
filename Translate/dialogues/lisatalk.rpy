@@ -3164,7 +3164,7 @@ translate english Lisa_sorry_f7f86d28:
 translate english Lisa_sorry_acd6f09a:
 
     # Lisa_03 "А-а-а... Должно быть хочешь снова чем-нибудь вкусненьким от этого откупиться?! Ммм..."
-    Lisa_03 "A-a-a... You must want to me off with something tasty again. Mmm...?"
+    Lisa_03 "A-a-a... You must want to buy me off with something tasty again. Mmm...?"
 
 # game/dialogues/lisatalk.rpy:1097
 translate english Lisa_sorry_efae3463:
@@ -5340,203 +5340,203 @@ translate english strings:
 translate english Lisa_sorry_944bbc72:
 
     # Lisa_09 "Нет уж, Макс... Думаю, я просто сдам тебя маме и пусть она с тобой разбирается! Хватит уже за мной подглядывать..."
-    Lisa_09 ""
+    Lisa_09 "No, Max. I think I'll just tell Mom and let her deal with you! Stop spying on me..."
 
 # game/dialogues/lisatalk.rpy:1118
 translate english Lisa_sorry_ca44c260:
 
     # Max_07 "А может мы снова с тобой договоримся?! Как раньше..."
-    Max_07 ""
+    Max_07 "Can we make a deal again? Like before..."
 
 # game/dialogues/lisatalk.rpy:1119
 translate english Lisa_sorry_60cecc21:
 
     # Lisa_01 "Чтобы ты снова кормил меня сладостями?! Нет, это как-то слишком уж просто для тебя... Теперь, если не хочешь попасть под мамино наказание, ты купишь то, что я попрошу!"
-    Lisa_01 ""
+    Lisa_01 "So you can just feed me sweets again? No, you'll get out of it too easily... if you don't want to be punished by Mom, you're going to buy me exactly what I ask for!"
 
 # game/dialogues/lisatalk.rpy:1120
 translate english Lisa_sorry_6ddd4b08:
 
     # Max_09 "Ну, это смотря ЧТО ты попросишь, потому что в деньгах я не купаюсь..."
-    Max_09 ""
+    Max_09 "Well, it's going to depend on what you want, I'm not swimming in money..."
 
 # game/dialogues/lisatalk.rpy:1121
 translate english Lisa_sorry_228c38a1:
 
     # Lisa_03 "Я уже давно хочу шёлковый халат! Очень-очень хочу... Как у Алисы! Ты видел её халат?! Правда же он классный!"
-    Lisa_03 ""
+    Lisa_03 "I've been wanting a silk robe for a long time! I really, really want one... Like Alice! Did you see hers? It's so pretty!"
 
 # game/dialogues/lisatalk.rpy:1122
 translate english Lisa_sorry_e14a17a4:
 
     # Max_02 "Такой синий, шёлковый и классный? Нет, не видел!"
-    Max_02 ""
+    Max_02 "So something blue, silky, and pretty? Never seen it!"
 
 # game/dialogues/lisatalk.rpy:1123
 translate english Lisa_sorry_a5058491:
 
     # Lisa_02 "Хи-хи... Шутник! Так вот, если достанешь мне шёлкоый халат, то я ничего не расскажу маме о том, какой мой старший брат извращенец!"
-    Lisa_02 ""
+    Lisa_02 "Hee-hee... Ok joker! If you get me a silk robe, I won't tell Mom about what a pervert my big brother is!"
 
 # game/dialogues/lisatalk.rpy:1124
 translate english Lisa_sorry_9fa76c6a:
 
     # Max_08 "Может тогда дашь мне на это больше времени? А то я могу не успеть к следующему ужину!"
-    Max_08 ""
+    Max_08 "How about you give me more time? I might not make it to the next dinner!"
 
 # game/dialogues/lisatalk.rpy:1125
 translate english Lisa_sorry_dfc7ed15:
 
     # Lisa_00 "Пожалуй... Времени у тебя - два дня. И чтобы успел до ужина!"
-    Lisa_00 ""
+    Lisa_00 "Perhaps... I'll give you two days. And make sure I get it before dinner!"
 
 # game/dialogues/lisatalk.rpy:1126
 translate english Lisa_sorry_585cc998:
 
     # Max_00 "Хорошо, я постараюсь успеть..."
-    Max_00 ""
+    Max_00 "Okay, I'll try to make it in time..."
 
 # game/dialogues/lisatalk.rpy:1236
 translate english gift_bathrobe_8df2eb62:
 
     # Lisa_11 "Постой, неужели это то, что я думаю?!"
-    Lisa_11 ""
+    Lisa_11 "Wait, is that what I think it is?!"
 
 # game/dialogues/lisatalk.rpy:1237
 translate english gift_bathrobe_b9ba8eaa:
 
     # Max_02 "Если ты думаешь, что это шёлковый халатик, то вот, держи..."
-    Max_02 ""
+    Max_02 "If you think it's a silk robe, then..."
 
 # game/dialogues/lisatalk.rpy:1238
 translate english gift_bathrobe_5c98f331:
 
     # Lisa_03 "Ничего себе! Он такой же, как у Алисы, только красный! Какая прелесть! Я тебя обожаю! Спасибо!"
-    Lisa_03 ""
+    Lisa_03 "Wow! It's just like Alice's, only red! It's so pretty! I love you Max! Thank you!"
 
 # game/dialogues/lisatalk.rpy:1239
 translate english gift_bathrobe_216fb05f:
 
     # Max_04 "Да не за что, сестрёнка!"
-    Max_04 ""
+    Max_04 "You're welcome, sis!"
 
 # game/dialogues/lisatalk.rpy:1242
 translate english gift_bathrobe_d32eea46:
 
     # Lisa_02 "А я думала, раз срок уже прошёл, то и надеяться, что ты его подаришь не стоит."
-    Lisa_02 ""
+    Lisa_02 "And I thought, since it's passed the deadline, there was no way you'd give it to me."
 
 # game/dialogues/lisatalk.rpy:1243
 translate english gift_bathrobe_72853a43:
 
     # Max_04 "И когда я на тебе его увижу?"
-    Max_04 ""
+    Max_04 "So when will I see you wearing it?"
 
 # game/dialogues/lisatalk.rpy:1252
 translate english gift_bathrobe_ee480478:
 
     # Lisa_02 "Макс, давай обниматься! Лови меня..."
-    Lisa_02 ""
+    Lisa_02 "Max, let's hug! Catch me..."
 
 # game/dialogues/lisatalk.rpy:1253
 translate english gift_bathrobe_b7706200:
 
     # Max_05 "{i}Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается.{/i}"
-    Max_05 ""
+    Max_05 "{i}Wow! Lisa jumped on me! That's a pleasant surprise. She's more acrobatic than I thought, and holding on very tightly...{/i}"
 
 # game/dialogues/lisatalk.rpy:1258
 translate english gift_bathrobe_22c11adb:
 
     # Lisa_05 "И в щёчку ещё чмокну! Ммм..."
-    Lisa_05 ""
+    Lisa_05 "And I'll give you another peck on the cheek!"
 
 # game/dialogues/lisatalk.rpy:1263
 translate english gift_bathrobe_84c6ceb6:
 
     # Max_03 "Ого, сколько нежности... Может быть, примеришь его при мне?"
-    Max_03 ""
+    Max_03 "Wow, so much affection... Why don't you try it on in front of me?"
 
 # game/dialogues/lisatalk.rpy:1272
 translate english gift_bathrobe_4b7ec1a8:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come to me..."
 
 # game/dialogues/lisatalk.rpy:1273
 translate english gift_bathrobe_c5bcc6f6:
 
     # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 ""
+    Max_03 "{i}Wow! Lisa practically threw her arms around me... It's so nice to feel her breasts pressing against me!{/i}"
 
 # game/dialogues/lisatalk.rpy:1278
 translate english gift_bathrobe_5dd722ed:
 
     # Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"
-    Lisa_05 ""
+    Lisa_05 "And I think you deserve a lot more than just a hug! A kiss awaits you!"
 
 # game/dialogues/lisatalk.rpy:1279
 translate english gift_bathrobe_3bf1b2fc:
 
     # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-    Max_05 ""
+    Max_05 "{i}Oh... Kisses from my little sister - it's a fairy tale! And how nice it is when she snuggles up to me ... {/i}"
 
 # game/dialogues/lisatalk.rpy:1284
 translate english gift_bathrobe_0559f620:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right... now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1285
 translate english gift_bathrobe_21381888:
 
     # Max_04 "Может быть, примеришь его при мне?"
-    Max_04 ""
+    Max_04 "Why don't you try it on in front of me?"
 
 # game/dialogues/lisatalk.rpy:1286
 translate english gift_bathrobe_5863dd28:
 
     # Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
-    Lisa_01 ""
+    Lisa_01 "Yeah, right in front of you, I'm going to strip down and try it on, right? No way. I'll put it on to do my homework - after I shower... Or maybe I'll wear it all the time... It's so cute!"
 
 # game/dialogues/lisatalk.rpy:1294
 translate english gift_bathrobe_4b7ec1a8_1:
 
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
-    Lisa_03 ""
+    Lisa_03 "I want a big hug! Come to me..."
 
 # game/dialogues/lisatalk.rpy:1295
 translate english gift_bathrobe_ab33ec2a:
 
     # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 ""
+    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
 
 # game/dialogues/lisatalk.rpy:1300
 translate english gift_bathrobe_0559f620_1:
 
     # Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"
-    Lisa_02 ""
+    Lisa_02 "All right... now don't peek at me again!"
 
 # game/dialogues/lisatalk.rpy:1301
 translate english gift_bathrobe_72853a43_1:
 
     # Max_04 "И когда я на тебе его увижу?"
-    Max_04 ""
+    Max_04 "When will I see it on you?"
 
 # game/dialogues/lisatalk.rpy:1302
 translate english gift_bathrobe_2586fb1b_1:
 
     # Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
-    Lisa_03 ""
+    Lisa_03 "I'm going to put it on after I shower...before I do my homework.  Or I might even live in it now. It's so cute!"
 
 # game/dialogues/lisatalk.rpy:1304
 translate english gift_bathrobe_2586fb1b_2:
 
     # Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
-    Lisa_03 ""
+    Lisa_03 "I'm going to put it on after I shower...before I do my homework.  Or I might even live in it now. It's so cute!"
 
 # game/dialogues/lisatalk.rpy:1306
 translate english gift_bathrobe_3255b6b3:
 
     # Max_01 "Супер! Будет любопытно посмотреть..."
-    Max_01 ""
+    Max_01 "Cool! I look forward to it..."
 
