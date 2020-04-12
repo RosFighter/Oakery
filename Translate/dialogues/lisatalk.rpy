@@ -5540,3 +5540,11 @@ translate english gift_bathrobe_3255b6b3:
     # Max_01 "Супер! Будет любопытно посмотреть..."
     Max_01 "Cool! I look forward to it..."
 
+# TODO: Translation updated at 2020-04-12 21:24
+
+# game/dialogues/lisatalk.rpy:1432
+translate english lisa_sorry_gifts_21b81128:
+
+    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
+    Max_09 ""
+
