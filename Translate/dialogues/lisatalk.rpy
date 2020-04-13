@@ -5546,5 +5546,5 @@ translate english gift_bathrobe_3255b6b3:
 translate english lisa_sorry_gifts_21b81128:
 
     # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
-    Max_09 ""
+    Max_09 "I don't think I should give her any presents today. This may raise unnecessary suspicions... It's better to do it tomorrow."
 
