@@ -5548,3 +5548,11 @@ translate english lisa_sorry_gifts_21b81128:
     # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
     Max_09 "I don't think I should give her any presents today. This may raise unnecessary suspicions... It's better to do it tomorrow."
 
+# TODO: Translation updated at 2020-04-15 00:38
+
+# game/dialogues/lisatalk.rpy:1125
+translate english Lisa_sorry_0573955a:
+
+    # Lisa_00 "Пожалуй... Времени у тебя - три дня. И чтобы успел до ужина!"
+    Lisa_00 ""
+
