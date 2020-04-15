@@ -3949,7 +3949,7 @@ translate english Alice_sorry_546a02fc:
 translate english Alice_sorry_f844ff32:
 
     # Alice_07 "Хочу себе новую одежду, а то надоело в одном и том же дома сидеть. А именно - пижаму!"
-    Alice_07 "I want new clothes, I'm sick of wearing the same old boring stuff. Namely-pajamas!"
+    Alice_07 "I want new clothes, I'm sick of wearing the same old boring stuff. Namely - pajamas!"
 
 # game/dialogues/alicetalk.rpy:939
 translate english Alice_sorry_2b73917e:
@@ -3985,7 +3985,7 @@ translate english Alice_sorry_2f7ecb1c:
 translate english Alice_sorry_15766354:
 
     # Alice_01 "Согласна подождать три дня. А ты не тормози..."
-    Alice_01 "I'll agree to give you three days. Better hurry...
+    Alice_01 "I'll agree to give you three days. Better hurry..."
 
 # game/dialogues/alicetalk.rpy:945
 translate english Alice_sorry_2e277d51:
@@ -5384,4 +5384,459 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1502
     old "Наконец-то! Ну давай, показывай, что у тебя на этот раз?!"
     new "Finally! Come on, show me what you got this time!"
+# TODO: Translation updated at 2020-04-16 01:21
+
+# game/dialogues/alicetalk.rpy:1118
+translate english gift_pajamas_26d80a4b:
+
+    # Alice_06 "Только скажи, что это пижамка, а не сладости! Ты же купил то, что я просила?!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:1119
+translate english gift_pajamas_3971db4e:
+
+    # Max_04 "Конечно! Топик и шортики, как ты хотела. Вот, держи..."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1120
+translate english gift_pajamas_ece76dbb:
+
+    # Alice_07 "О да! Какие симпатичные! Ты такой молодец, Макс! Спасибо тебе большое..."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1121
+translate english gift_pajamas_cb80cd22:
+
+    # Max_03 "Ну что, примеришь при мне?"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1123
+translate english gift_pajamas_148c66d7:
+
+    # Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:1124
+translate english gift_pajamas_917ba633:
+
+    # Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1125
+translate english gift_pajamas_840ebe2a:
+
+    # Alice_05 "Ладно, поверю... Ого, а что это у тебя здесь..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1127
+translate english gift_pajamas_324b4e00:
+
+    # Max_12 "А-а-ай! Мне же больно, Алиса!"
+    Max_12 ""
+
+# game/dialogues/alicetalk.rpy:1128
+translate english gift_pajamas_27fd05a2:
+
+    # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:1129
+translate english gift_pajamas_b4a32aa4:
+
+    # Max_10 "Да я же случайно оказался около душа..."
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:1130
+translate english gift_pajamas_14c24df1:
+
+    # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1131
+translate english gift_pajamas_e2b944cc:
+
+    # Max_14 "Ой! Я понял... Больше не буду!"
+    Max_14 ""
+
+# game/dialogues/alicetalk.rpy:1132
+translate english gift_pajamas_a174e7cf:
+
+    # Alice_02 "Вот и молодец! Гуляй..."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1135
+translate english gift_pajamas_c4c218bc:
+
+    # Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:1136
+translate english gift_pajamas_41b77fdd:
+
+    # Max_02 "Как страшно... Давай уже, примеряй."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1144
+translate english gift_pajamas_6321062f:
+
+    # Alice_05 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!" nointeract
+    Alice_05 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1154
+translate english gift_pajamas_35b4664a:
+
+    # Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
+    Alice_01 ""
+
+# game/dialogues/alicetalk.rpy:1155
+translate english gift_pajamas_d0a89701:
+
+    # Max_03 "Я не пялюсь..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1162
+translate english gift_pajamas_d2afc4ae:
+
+    # Alice_02 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе?"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1163
+translate english gift_pajamas_b78414ac:
+
+    # Max_04 "Тебе идёт! Мне нравится..."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1165
+translate english gift_pajamas_3f594150:
+
+    # Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё шортики примерить."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:1167
+translate english gift_pajamas_dec14de0:
+
+    # Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё шортики примерить."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1179
+translate english gift_pajamas_be8312c9:
+
+    # Max_02 "Конечно, я не смотрю..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1181
+translate english gift_pajamas_16b73ea9:
+
+    # Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:1182
+translate english gift_pajamas_c14c7755:
+
+    # Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:1183
+translate english gift_pajamas_25da30bf:
+
+    # Max_01 "Ладно, считай, я ничего не видел."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1184
+translate english gift_pajamas_dc813c9d:
+
+    # Alice_07 "Размер в самый раз... Удобненько и легко. Как тебе, Макс? Хорошо сидит?"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1189
+translate english gift_pajamas_74d1c40a:
+
+    # Max_05 "Не то слово, всё выглядит шикарно!"
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:1204
+translate english gift_pajamas_dbebfc6a:
+
+    # Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:1206
+translate english gift_pajamas_2d17227f:
+
+    # Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1208
+translate english gift_pajamas_14440938:
+
+    # Max_02 "Я не пялюсь..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1210
+translate english gift_pajamas_2e964202:
+
+    # Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:1211
+translate english gift_pajamas_c14c7755_1:
+
+    # Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:1212
+translate english gift_pajamas_25da30bf_1:
+
+    # Max_01 "Ладно, считай, я ничего не видел."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1219
+translate english gift_pajamas_acf7e963:
+
+    # Alice_02 "Размер в самый раз... Удобненько и легко. Как тебе, Макс? Хорошо сидят?"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1220
+translate english gift_pajamas_cd1842d4:
+
+    # Max_04 "Не то слово, сидят прекрасно!"
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1221
+translate english gift_pajamas_d23b4f12:
+
+    # Alice_01 "Здорово! А теперь отвернись, не подглядывай! Нужно ещё топик примерить."
+    Alice_01 ""
+
+# game/dialogues/alicetalk.rpy:1226
+translate english gift_pajamas_2c4a92b7:
+
+    # Max_03 "Конечно, я не смотрю..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1227
+translate english gift_pajamas_d60af571:
+
+    # Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1232
+translate english gift_pajamas_910b5259:
+
+    # Max_05 "Тебе идёт, всё выглядит шикарно!"
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:1233
+translate english gift_pajamas_e470c240:
+
+    # Alice_03 "Спасибо тебе ещё раз! Иди ко мне, я тебя приобниму... немного."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:1234
+translate english gift_pajamas_7f1920a4:
+
+    # Max_04 "О, это я с радостью!"
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1240
+translate english gift_pajamas_4c79d4df:
+
+    # Alice_05 "Но ты не зазнавайся, Макс. В следующий раз тебе может так не повезти, как сегодня."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1241
+translate english gift_pajamas_056ade88:
+
+    # Max_02 "Буду иметь ввиду, сестрёнка."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1242
+translate english gift_pajamas_603a59ac:
+
+    # Alice_02 "Всё, давай шуруй по своим делам, не надоедай мне."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1243
+translate english gift_pajamas_6374794e:
+
+    # Max_01 "Ага..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1246
+translate english gift_pajamas_f1206b18:
+
+    # Alice_04 "А жирно тебе не будет?! В душе на меня глазел, а теперь и здесь хочешь подглядеть... Нет уж! Но за пижамку я тебя всё же обниму! Ну так... совсем немного..."
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:1248
+translate english gift_pajamas_f070e574:
+
+    # Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1249
+translate english gift_pajamas_34b36de3:
+
+    # Alice_07 "Не смотря на твои замашки, ты всё-таки купил мне пижамку, которую я просила. Вот я и не вредничаю..."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1250
+translate english gift_pajamas_c9c4f595:
+
+    # Max_05 "Да, надо бы почаще так делать."
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:1251
+translate english gift_pajamas_8cf3cf3f:
+
+    # Alice_02 "Подглядывать или что-нибудь мне дарить?!"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1252
+translate english gift_pajamas_201ce590:
+
+    # Max_02 "Второе, конечно!"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1253
+translate english gift_pajamas_1405c200:
+
+    # Alice_05 "Ну да, конечно... Иди давай."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1255
+translate english gift_pajamas_bce01a7a:
+
+    # Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?" nointeract
+    Alice_04 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1259
+translate english gift_pajamas_0e74bdaf:
+
+    # Alice_03 "[succes!t]Ладно, поверю, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:1260
+translate english gift_pajamas_3e4a4815:
+
+    # Max_07 "Что, вот так вот просто?!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:1261
+translate english gift_pajamas_be4d74fe:
+
+    # Alice_05 "Ну, ты обещал купить мне пижаму и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1262
+translate english gift_pajamas_db82d6f5:
+
+    # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1264
+translate english gift_pajamas_bf71de6e:
+
+    # Alice_05 "[failed!t]Ладно, поверю, считай твои извинения приняты... Ого, а что это у тебя здесь..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1266
+translate english gift_pajamas_324b4e00_1:
+
+    # Max_12 "А-а-ай! Мне же больно, Алиса!"
+    Max_12 ""
+
+# game/dialogues/alicetalk.rpy:1267
+translate english gift_pajamas_27fd05a2_1:
+
+    # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:1268
+translate english gift_pajamas_b4a32aa4_1:
+
+    # Max_10 "Да я же случайно оказался около душа..."
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:1269
+translate english gift_pajamas_14c24df1_1:
+
+    # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1270
+translate english gift_pajamas_e2b944cc_1:
+
+    # Max_14 "Ой! Я понял... Больше не буду!"
+    Max_14 ""
+
+# game/dialogues/alicetalk.rpy:1271
+translate english gift_pajamas_a174e7cf_1:
+
+    # Alice_02 "Вот и молодец! Гуляй..."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1273
+translate english gift_pajamas_148c66d7_1:
+
+    # Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:1274
+translate english gift_pajamas_917ba633_1:
+
+    # Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1275
+translate english gift_pajamas_f9ed34d4:
+
+    # Alice_05 "Ладно, поверю, считай твои извинения приняты... Ого, а что это у тебя здесь..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1277
+translate english gift_pajamas_324b4e00_2:
+
+    # Max_12 "А-а-ай! Мне же больно, Алиса!"
+    Max_12 ""
+
+# game/dialogues/alicetalk.rpy:1278
+translate english gift_pajamas_27fd05a2_2:
+
+    # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:1279
+translate english gift_pajamas_b4a32aa4_2:
+
+    # Max_10 "Да я же случайно оказался около душа..."
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:1280
+translate english gift_pajamas_14c24df1_2:
+
+    # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1281
+translate english gift_pajamas_e2b944cc_2:
+
+    # Max_14 "Ой! Я понял... Больше не буду!"
+    Max_14 ""
+
+# game/dialogues/alicetalk.rpy:1282
+translate english gift_pajamas_a174e7cf_2:
+
+    # Alice_02 "Вот и молодец! Гуляй..."
+    Alice_02 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:1144
+    old "Ага, я и не подглядываю..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:1255
+    old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new ""
 

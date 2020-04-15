@@ -722,3 +722,11 @@ translate english strings:
     # game/events/eric.rpy:286
     old "А вы не против, если я посмотрю?"
     new "Do you mind if I take a look?"
+# TODO: Translation updated at 2020-04-16 01:21
+
+# game/events/eric.rpy:172
+translate english eric_ann_tv_62e2801a:
+
+    # Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
+    Max_07 ""
+
