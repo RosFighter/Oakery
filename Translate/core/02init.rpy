@@ -172,5 +172,5 @@ translate english strings:
 
     # game/core/02init.rpy:94
     old "У меня для тебя подарок {i}(Пижама){/i}"
-    new ""
+    new "I have a gift for you {i} (Pajamas){/i}"
 

@@ -1121,41 +1121,41 @@ translate english strings:
 
     # game/core/03variables.rpy:338
     old "Кто не рискует..."
-    new ""
+    new "Who doesn't take risks..."
 
     # game/core/03variables.rpy:338
     old "Я подглядывал, как Алиса принимает душ и она меня заметила. Пытаясь извиниться я пообещал купить ей какую-нибудь сладость, в обмен на то, чтобы она не рассказывала обо всём маме. На удивление, я ещё жив, но времени у меня немного..."
-    new ""
+    new "I was watching Alice take a shower and she noticed me. Trying to apologize, I promised to buy her some sweets, in exchange for her not telling Mom about everything. Surprisingly, I'm still alive, but I don't have much time..."
 
     # game/core/03variables.rpy:338
     old "Увы, я не успел подарить Алисе сладость в срок и поэтому она рассказала маме, как я за ней подглядывал. Возможно, в следующий раз, если Алиса меня заметит, я успею..."
-    new ""
+    new "Unfortunately, I did not  give Alice a sweet in time and so she told Mom how I spied on her. Maybe next time, if Alice sees me, I'll make it..."
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы конфеты \"Ferrero Rocher\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большую коробку с этими конфетами?"
-    new ""
+    new "I bought Alice sweets \ "Ferrero Rocher\" and she was very happy! Of course, it turned out to be her favorite sweet! Maybe next time, you should give her a big box of these sweets."
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы шоколад \"Ritter Sport\" и она приняла его, но без особого восторга! Возможно, в следующий раз, следует подарить ей что-то другое?"
-    new ""
+    new "I bought a chocolate \"Ritter Sport \" for Alice and she accepted it, but without much enthusiasm! Maybe next time, I should give her something different?"
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы конфеты \"Raffaello\" и как оказалось, они ей не нравятся! В следующий раз, лучше подарить что-то другое..."
-    new ""
+    new "I bought sweets for Alice \"Raffaello\" and as it turned out, she does not like them! Next time, it's better to give something else..."
 
     # game/core/03variables.rpy:338
     old "Эх... Если бы я знал, что Алиса станет выкручивать мне уши, то подумал бы, стоит ли ей дарить сладости! Хотя, тогда я рискую быть наказанным при всех, а это хуже... Так что лучше и в следующий раз рискнуть, вдруг повезёт и Алиса ничего мне не сделает."
-    new ""
+    new "Eh... If I had known that Alice would twist my ears, I would have thought about giving her sweets! Although, then I risk being punished in front of everyone, which is worse... So it's better to take a chance next time, in case I get lucky and Alice doesn't do anything to me."
 
     # game/core/03variables.rpy:338
     old "Как оказалось, за нравящиеся Алисе сладости можно не только сохранить уши в целости, но и ощутить её скромные объятия! И это не смотря на то, что я за ней подглядывал. Посмотрим, что ещё мне удастся получить от сестрёнки..."
-    new ""
+    new "As it turned out, for the sweets Alice likes, you can not only keep your ears intact, but also feel her modest embrace! And this is despite the fact that I was spying on her. Let's see what else I can get from my sister..."
 
     # game/core/03variables.rpy:338
     old "Похоже, сладостей Алисе уже мало и теперь ОНА будет ставить условия! Она хочет, чтобы я купил ей пижаму и это уже покупка посерьёзнее! На этот раз времени у меня больше, но всё равно лучше поторопиться с подарком. Интересно, что меня будет за это ждать..."
-    new ""
+    new "It seems that Alice's sweets are not enough and now she will set conditions! She wants me to buy her pajamas and this is a bigger purchase! I have more time this time, but it's still better to hurry up with the gift. I wonder what I'll get for it..."
 
     # game/core/03variables.rpy:338
     old "Алиса согласилась пустить меня к себе в комнату, пока примеряла пижаму! Конечно, она просила, чтобы я не подглядывал, хотя прекрасно знала, что я буду... И угрозы её стали какими-то шуточными. Интересно, к чему это приведёт? Так что подглядывать полезно, если правильно извиниться."
-    new ""
+    new "Alice agreed to let me into her room while she tried on her pajamas! Of course, she asked me not to peek, even though she knew I would... And her threats became something of a joke. I wonder what this will lead to? So peeking is useful if you apologize correctly."
 

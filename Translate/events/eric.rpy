@@ -728,5 +728,5 @@ translate english strings:
 translate english eric_ann_tv_62e2801a:
 
     # Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
-    Max_07 ""
+    Max_07 "I think Mom and Eric are watching a movie. Probably porn again..."
 
