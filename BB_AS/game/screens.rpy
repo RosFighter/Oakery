@@ -1020,7 +1020,7 @@ screen history():
                         ## Берёт цвет из who параметра персонажа, если он
                         ## установлен.
                         if "color" in h.who_args:
-                            text_color h.who_args["color"]
+                            text_color h.who_args['color']
 
                 # $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
                 $ what = h.what

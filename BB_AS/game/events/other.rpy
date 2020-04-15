@@ -16,12 +16,12 @@ label shoping:
 label back_shoping:
     $ renpy.block_rollback()
 
-    $ EventsByTime["back_shoping"].stage += 1
+    $ EventsByTime['back_shoping'].stage += 1
     $ current_room = house[6]
     scene BG incoming-00
     show other shopping-go-02
 
-    if EventsByTime["back_shoping"].stage == 1:
+    if EventsByTime['back_shoping'].stage == 1:
         ## --- Девчонки возвращаются с первого шоппинга
         Lisa_02 "Привет, Макс! Мы вернулись..."
         Max_04 "Ну как, удачно сходили?"
@@ -59,15 +59,15 @@ label back_shoping:
         Max_08 "Да я и не переживаю..."
         Ann_05 "Вот и отлично. Ладно, поболтаем позже..."
         Max_00 "Ага..."
-        $ SetPossStage("Swimsuit", 2)
+        $ poss['Swimsuit'].OpenStage(2)
 
-    elif EventsByTime["back_shoping"].stage == 2:
+    elif EventsByTime['back_shoping'].stage == 2:
         ## --- Девчонки возвращаются со второго шоппинга
 
         Ann_05 "Привет, Макс! Мы вернулись..."
         Max_04 "Рассказывайте, что купили?"
-        if possibility["Swimsuit"].stn == 2:
-            $ SetPossStage("Swimsuit", 4)
+        if poss['Swimsuit'].stn == 2:
+            $ poss['Swimsuit'].OpenStage(4)
             $ chars['lisa'].gifts.append('bikini')
             # $ items['bathrobe'].InShop = True
             if chars['lisa'].inferic is not None:
@@ -83,15 +83,15 @@ label back_shoping:
         else:
             Lisa_02 "Да так, вскую ерунду... Для нас, девочек. Тебе это не интересно..."
             Max_00 "Понятно..."
-        if possibility["nightclub"].stn < 4:
+        if poss['nightclub'].stn < 4:
             Alice_07 "Ты забыла про самое главное, Лиза. Мне Эрик купил платье! Представляешь?!"
             Max_10 "Да, это чудесно..."
             Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
             Max_11 "Поздравляю..."
-            if possibility["nightclub"].stn == 1:
-                $ SetPossStage("nightclub", 2)
+            if poss['nightclub'].stn == 1:
+                $ poss['nightclub'].OpenStage(2)
             else:
-                $ SetPossStage("nightclub", 3)
+                $ poss['nightclub'].OpenStage(3)
             if chars['alice'].inferic is not None:
                 $ chars['alice'].inferic = clip(chars['alice'].inferic+20.0, 0.0, 100.0)
             else:
@@ -109,7 +109,7 @@ label back_shoping:
 
 label MeetingEric:
     # устанавливаем новое расписание для Анны и Эрика
-    call AddEric from _call_AddEric
+    call AddEric
 
     $ renpy.block_rollback()
     $ spent_time = 10
@@ -196,7 +196,7 @@ label MeetingEric:
         menu:
             Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу."
             "{i}идти к столу{/i}":
-                $ talk_var["empathic"] = 2
+                $ talk_var['empathic'] = 2
                 jump Waiting
 
     label .middle:
@@ -206,7 +206,7 @@ label MeetingEric:
         menu:
             Ann_17 "Макс, мы с тобой потом поговорим. Ну, Эрик, проходи к столу. Мы обычно ужинаем, да и завтракаем на открытом воздухе, тут у нас веранда..."
             "{i}идти к столу{/i}":
-                $ talk_var["empathic"] = 1
+                $ talk_var['empathic'] = 1
                 jump Waiting
 
     label .bad:
@@ -227,7 +227,7 @@ label MeetingEric:
             "{i}промолчать{/i}":
                 Ann_01 "Молчишь? Нечего сказать или стыдно? Будем считать, что ты просто голодный, а не специально хотел нахамить Эрику. Ладно, пойдёмте ужинать..."
 
-        $ talk_var["empathic"] = 0
+        $ talk_var['empathic'] = 0
         jump Waiting
 
 
@@ -242,7 +242,7 @@ label night_of_fun:
 
     ## Запуск выпавшей забавы
     if _fun == "spider":
-        call spider_in_bed from _call_spider_in_bed
+        call spider_in_bed
 
     $ mgg.energy -= spent_time * 3.5 * cur_ratio / 60.0
     $ mgg.cleanness -= spent_time * 2.5 * cur_ratio / 60.0

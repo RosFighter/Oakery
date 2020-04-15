@@ -171,11 +171,11 @@ screen LaptopScreen():
     use notify_check
 
     $ bookmarks = 2
-    if dcv["buyfood"].stage == 1:
+    if dcv['buyfood'].stage == 1:
         $ bookmarks += 1
-    if possibility["cams"].stn == 3 and money >= 100:
+    if poss['cams'].stn == 3 and money >= 100:
         $ bookmarks += 1
-    if possibility["cams"].stn >= 4:
+    if poss['cams'].stn >= 4:
         $ bookmarks += 1
     if credit.level > 0:
         $ bookmarks += 1
@@ -210,17 +210,17 @@ screen LaptopScreen():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action Jump("courses_start") at book_marks
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    if dcv["buyfood"].stage == 1:
+                    if dcv['buyfood'].stage == 1:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop grocery" action Jump("buyfood") at book_marks
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    if possibility["cams"].stn == 3 and money >= 100:
+                    if poss['cams'].stn == 3 and money >= 100:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop CreateSite" action Jump("create_site") at book_marks
                             text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
 
-                    if possibility["cams"].stn >= 4:
+                    if poss['cams'].stn >= 4:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop bb cam" action Jump("open_site") at book_marks
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
@@ -244,11 +244,11 @@ screen LaptopDouble():
     use notify_check
 
     $ bookmarks = 2
-    if dcv["buyfood"].stage == 1:
+    if dcv['buyfood'].stage == 1:
         $ bookmarks += 1
-    if possibility["cams"].stn == 3 and money >= 100:
+    if poss['cams'].stn == 3 and money >= 100:
         $ bookmarks += 1
-    if possibility["cams"].stn >= 4:
+    if poss['cams'].stn >= 4:
         $ bookmarks += 1
     if credit.level > 0:
         $ bookmarks += 1
@@ -286,17 +286,17 @@ screen LaptopDouble():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop courses" action NullAction()
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    if dcv["buyfood"].stage == 1:
+                    if dcv['buyfood'].stage == 1:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop grocery" action NullAction()
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)]
 
-                    if possibility["cams"].stn == 3 and money >= 100:
+                    if poss['cams'].stn == 3 and money >= 100:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop CreateSite" action NullAction()
                             text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
 
-                    if possibility["cams"].stn >= 4:
+                    if poss['cams'].stn >= 4:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle "interface laptop bb cam" action NullAction()
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color "#FFFFFF" drop_shadow[(2, 2)] text_align 0.5
@@ -558,7 +558,7 @@ screen OnlineCources():
                                 label _("Занятие [text1] из [text2]"):
                                     xsize 900 xalign 0.5 text_size 28
                                     text_color gui.text_color
-                                if ItsTime(cooldown["learn"]):  # таймаут прошел, можно учится дальше
+                                if ItsTime(cooldown['learn']):  # таймаут прошел, можно учится дальше
                                     textbutton _("{i}{b}НАЧАТЬ ПРОСМОТР ВИДЕОУРОКА{/b}{/i}") style "buy_button2":
                                         idle_background Frame("interface button green", 12, 12)
                                         hover_background Frame("interface button green", 12, 12)
@@ -960,8 +960,8 @@ screen room_navigation():
 
     $ kol = 0
 
-    for poss in possibility:
-        if possibility[poss].stn >= 0: # количество открытых возможностей
+    for ps in poss:
+        if poss[ps].stn >= 0: # количество открытых возможностей
             $ kol += 1
 
     hbox:  # верхнее меню
@@ -1043,26 +1043,26 @@ screen menu_opportunity():
     style_prefix "opportunity"
 
     $ kol = 0
-    $ all = len(possibility) # Общее количество введенных в игру "возможностей"
-    $ list_stage = []
+    $ all = len(poss) # Общее количество введенных в игру "возможностей"
+    $ lst_stage = []
 
-    for poss in possibility:
-        if possibility[poss].stn >= 0: # количество открытых возможностей
+    for ps in poss:
+        if poss[ps].stn >= 0: # количество открытых возможностей
             $ kol += 1
             if CurPoss == "":
-                $ CurPoss = poss
+                $ CurPoss = ps
 
     if CurPoss != "":
-        default view_stage = possibility[CurPoss].stn
-        for i in range(len(possibility[CurPoss].stages)):
-            if possibility[CurPoss].stages[i].used:
-                $ list_stage.append(i)
+        default view_stage = poss[CurPoss].stn
+        for i, st in enumerate(poss[CurPoss].stages):
+            if st.used:
+                $ lst_stage.append(i)
 
 
     add "interface phon"
     frame area(150, 95, 350, 50) background None:
         text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.accent_color size 28 font "hermes.ttf"
-    imagebutton pos (1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
+    imagebutton pos(1740, 100) auto "interface close %s" action Jump("AfterWaiting") focus_mask True at close_zoom
 
 
     hbox pos (150, 150) spacing 30:
@@ -1070,40 +1070,40 @@ screen menu_opportunity():
             hbox:
                 viewport mousewheel "change" draggable True id "vp1":
                     vbox spacing 5:
-                        for poss in possibility:
-                            if possibility[poss].stn >= 0:
+                        for ps in poss:
+                            if poss[ps].stn >= 0:
                                 if CurPoss == "":
-                                    $ CurPoss = poss
-                                    $ view_stage = possibility[poss].stn
-                                button background None action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stn)] xsize 390:
+                                    $ CurPoss = ps
+                                    $ view_stage = poss[ps].stn
+                                button background None action [SetVariable("CurPoss", ps), SetScreenVariable("view_stage", poss[ps].stn)] xsize 390:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                                    textbutton possibility[poss].name action [SetVariable("CurPoss", poss), SetScreenVariable("view_stage", possibility[poss].stn)] selected CurPoss == poss
+                                    textbutton poss[ps].name action [SetVariable("CurPoss", ps), SetScreenVariable("view_stage", poss[ps].stn)] selected CurPoss == ps
                                     foreground "interface marker"
                 vbar value YScrollValue("vp1") style "poss_vscroll"
         if CurPoss != "":
             frame area (0, 30, 1190, 850) background None:
                 vbox spacing 20:
                     frame xsize 800 ysize 400 pos (195, 0) background None:
-                        if possibility[CurPoss].stages[view_stage].image != "":
-                            add possibility[CurPoss].stages[view_stage].image
+                        if poss[CurPoss].stages[view_stage].image != "":
+                            add poss[CurPoss].stages[view_stage].image
                     frame xsize 1180 xalign 0.5 background None:
-                        text possibility[CurPoss].name size 30 font "hermes.ttf" xalign 0.5
+                        text poss[CurPoss].name size 30 font "hermes.ttf" xalign 0.5
                     frame area (0, 0, 1190, 400) background None:
                         hbox:
                             viewport mousewheel "change" draggable True id "vp2":
                                 vbox spacing 30:
-                                    text possibility[CurPoss].stages[view_stage].desc size 24  color gui.accent_color
-                                    text possibility[CurPoss].stages[view_stage].ps size 28
+                                    text poss[CurPoss].stages[view_stage].desc size 24  color gui.accent_color
+                                    text poss[CurPoss].stages[view_stage].ps size 28
                             vbar value YScrollValue("vp2") style "poss_vscroll"
-    if len(list_stage) > 1:
+    if len(lst_stage) > 1:
         imagebutton pos (690, 360) auto "interface prev %s":
             focus_mask True
-            action SetScreenVariable("view_stage", list_stage.index(view_stage)-1)
-            sensitive view_stage > min(list_stage)
+            sensitive view_stage > min(lst_stage)
+            action SetScreenVariable("view_stage", lst_stage[lst_stage.index(view_stage)-1] if lst_stage.index(view_stage) >= 0 else lst_stage[0])
         imagebutton pos (1570, 360) auto "interface next %s":
             focus_mask True
-            action SetScreenVariable("view_stage", list_stage.index(view_stage)+1)
-            sensitive view_stage < max(list_stage)
+            sensitive view_stage < max(lst_stage)
+            action SetScreenVariable("view_stage", lst_stage[lst_stage.index(view_stage)+1] if lst_stage.index(view_stage)<len(lst_stage)-1 else lst_stage[len(lst_stage)-1])
 
     key "K_ESCAPE" action Jump("AfterWaiting")
     key "mouseup_3" action Jump("AfterWaiting")
@@ -1354,7 +1354,7 @@ screen menu_userinfo():
                                 frame xsize 350 background None:
                                     text _("Настроение") size 24 color gui.accent_color
                                 frame xfill True background None:
-                                    text GetMood(CurChar)[1] size 24
+                                    text chars[CurChar].GetMood()[1] size 24
                             # relmax
                             hbox xfill True:
                                 frame xsize 350 background None:
@@ -1396,17 +1396,17 @@ style userinfo_button_text is default:
     selected_color gui.text_color
 
 style info_vscroll is vscrollbar:
-    unscrollable "hide"
+    unscrollable 'hide'
 
 ################################################################################
 
 screen watermark():
     layer 'wm'
-    if str(renpy.get_mode())=='start' and not renpy.get_screen(["main_menu","game_menu","about","help","save","load","preferences"]):
+    if str(renpy.get_mode())=='start' and not renpy.get_screen(['main_menu','game_menu','about','help','save','load','preferences']):
             imagebutton:
                 anchor (0.5, 0.5)
                 pos (0.9, 0.95)
-                idle "interface BBAS"
+                idle 'interface BBAS'
                 action OpenURL("https://www.patreon.com/aleksey90artimages")
                 at main_logo2
 

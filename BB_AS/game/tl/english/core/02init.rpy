@@ -166,3 +166,11 @@ translate english strings:
     old "У меня для тебя обещанная вкусняшка!"
     new "I having something tasty that I promised you!"
 
+# TODO: Translation updated at 2020-04-16 01:21
+
+translate english strings:
+
+    # game/core/02init.rpy:94
+    old "У меня для тебя подарок {i}(Пижама){/i}"
+    new ""
+

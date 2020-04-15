@@ -3,7 +3,7 @@ label after_breakfast:
     $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
     $ spent_time = 60
     $ current_room = house[5]
-    $ AvailableActions["dishes"].enabled = True
+    $ AvailableActions['dishes'].enabled = True
 
     jump Waiting
 
@@ -117,7 +117,7 @@ label breakfast_first:
         menu:
             Alice_06 "Ага, и как же ты заработаешь? Образования нет, ничего толком не умеешь. Только дома сидишь всё время в своём ноуте..."
             "Ой. Кого же мне это всё напоминает?":
-                $ talk_var["blog"] = 1
+                $ talk_var['blog'] = 1
                 menu:
                     Alice_14 "Может быть, себя? У меня то хоть свой блог есть, а вот у тебя ни-че-го!"
                     "И что твой блог тебе даёт?":
@@ -156,7 +156,7 @@ label breakfast_first:
                 jump .bf_earn3
 
     label .bf_earn3:
-        $ talk_var["blog"] = 1
+        $ talk_var['blog'] = 1
         menu:
             Alice_13 "Я делом занимаюсь. Раскручиваю свой блог, набираю аудиторию. А потом, когда придёт время, начну крутить рекламу и всё!"
             "Ага, всё же так просто...":
@@ -195,7 +195,7 @@ label breakfast_first:
                 menu:
                     Ann_00 "Звонила. Говорят, отправили в другой город по ошибке, а потом и вовсе потеряли. Обещают компенсировать, но когда - пока неизвестно..."
                     "Ну и обойдёмся без неё":
-                        $ talk_var["blog"] = 1
+                        $ talk_var['blog'] = 1
                         menu:
                             Alice_00 "Ты и рад, наверное, голым ходить, а у меня там были хорошие вещички, в которых я блог веду обычно..."
                             "Может и рад. Мне стесняться нечего!":
@@ -313,11 +313,11 @@ label breakfast_first:
                         jump .end_bf
 
     label .end_bf:
-        $ AvailableActions["unbox"].enabled = True
+        $ AvailableActions['unbox'].enabled = True
         $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
         $ spent_time = 60
         $ current_room = house[6]
-        $ AvailableActions["dishes"].enabled = True
+        $ AvailableActions['dishes'].enabled = True
 
         jump Waiting
 
@@ -330,7 +330,7 @@ label breakfast_2:
     Ann_01 "Лиза, что спрашивали и что ты ответила?"
     Lisa_00 "Ну мам... У нас в прошлой школе не было анатомии, а тут химико-биологический класс с углублённым изучением. Конечно, я не смогла ответить!"
     scene BG punish-morning 00
-    $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
+    $ renpy.show("Ann punish-morning 00"+chars['ann'].dress)
     menu:
         Ann_01 "Что значит конечно не смогла? Хочешь, чтобы и тебя выперли из школы, как этого балбеса?"
         "Я не балбес! Я всё знаю!":
@@ -340,27 +340,27 @@ label breakfast_2:
     Ann_00 "Ну раз ты такой умный, Макс, то вот и помогай своей младшей сестре. А ты, Лиза, иди сюда. Сейчас я тебя накажу, чтобы ты взялась за ум!"
     scene BG punish-morning 01
     show Lisa punish-morning 01
-    $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
-    $ SetPossStage("sg", 0)
+    $ renpy.show("Ann punish-morning 01"+chars['ann'].dress)
+    $ poss['sg'].OpenStage(0)
     menu:
         Lisa_09 "Ну мам... Я же не специально. Я обещаю, что всё выучу!"
         "{i}Наблюдать{/i}":
             Ann_01 "Быстро! На этот раз можешь джинсы не снимать. Но в следующий раз получишь по голой заднице у всех на глазах. Иди сюда!"
             ## наказание Лизы
             scene BG punish-morning 02
-            $ renpy.show("Ann punish-morning lisa-01"+chars["ann"].dress)
+            $ renpy.show("Ann punish-morning lisa-01"+chars['ann'].dress)
             $ __mood -= 50 # если Лизу наказывают, ее настроение портится
             $ talk_var['lisa.pun'] += 1
             Lisa_10 "Ой... Мам! Больно!"
-            $ renpy.show("Ann punish-morning lisa-02"+chars["ann"].dress)
+            $ renpy.show("Ann punish-morning lisa-02"+chars['ann'].dress)
             Ann_01 "Давай терпи. За двойки я всегда наказываю. В этот раз не сильно, чтобы ты понимала, что никакие отговорки или причины меня интересовать не будут. Получила двойку, получила по заднице у всех на глазах. Ясно?"
             Lisa_09 "Ой. Да. Ясно, мам. Я всё поняла!"
             scene BG punish-morning 01
             show Lisa punish-morning 02
-            $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
+            $ renpy.show("Ann punish-morning 01"+chars['ann'].dress)
             Ann_00 "Вот и хорошо, что поняла. Теперь иди садись. Прошу прощения, что пришлось прервать завтрак, но иначе нельзя."
             scene BG punish-morning 00
-            $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
+            $ renpy.show("Ann punish-morning 00"+chars['ann'].dress)
             menu:
                 Ann_00 "И да, если узнаю, что кто-то мне врёт, тот получит гораздо сильнее. Больше всего ненавижу ложь. Всё ясно?"
                 "Ясно...":
@@ -574,9 +574,9 @@ label breakfast_4:
                 "Да я рад...":
                     pass
     Ann_05 "Вот и отлично! Хватит уже про Эрика, давайте обсудим что планируем купить.."
-    if possibility["Swimsuit"].stn < 0:
+    if poss['Swimsuit'].stn < 0:
         Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
-        $ SetPossStage("Swimsuit", 1)
+        $ poss['Swimsuit'].OpenStage(1)
     else:
         Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
     Max_03 "Конечно, как тут не понять..."

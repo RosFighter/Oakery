@@ -1071,3 +1071,91 @@ translate english strings:
     old "Одежда для Макса"
     new "Clothing for Max"
 
+# TODO: Translation updated at 2020-04-12 21:24
+
+translate english strings:
+
+    # game/core/03variables.rpy:327
+    old "Кнут или пряник?"
+    new "Stick or carrot?"
+
+    # game/core/03variables.rpy:327
+    old "Лиза заметила, что я подглядывал, как она принимает душ. Я попробовал извиниться и пообещал купить ей какую-нибудь сладость. В обмен на это Лиза не станет рассказывать обо всём маме, но времени у меня немного..."
+    new "Lisa noticed that I was watching her take a shower. I tried to apologize and promised to buy her some sweets. In exchange, Lisa won't tell Mom, but I don't have much time..."
+
+    # game/core/03variables.rpy:327
+    old "К сожалению, я не успел подарить Лизе сладость в срок и поэтому она рассказала маме, как я за ней подглядывал. Возможно, в следующий раз, если Лиза меня заметит, я успею..."
+    new "I didn't get a chance to get Lisa her sweets on time, so she told Mom about my spying. If Lisa catches me again, I might have another chance..."
+
+    # game/core/03variables.rpy:327
+    old "Я купил для Лизы шоколад \"Ritter Sport\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большые шоколадки?"
+    new "I bought a chocolate \"Ritter Sport\" for Lisa and she was very happy! Of course, it turned out to be her favorite sweet! Maybe next time, I should give her a big chocolate bar."
+
+    # game/core/03variables.rpy:327
+    old "Я купил для Лизы конфеты \"Raffaello\" и она приняла их, но без особого восторга! Возможно, в следующий раз, следует подарить ей что-то другое?"
+    new "I bought Lisa  \"Raffaello\" sweets and she accepted them, but not very enthusiastically. Maybe next time, you should give her something different?"
+
+    # game/core/03variables.rpy:327
+    old "Я купил для Лизы конфеты \"Ferrero Rocher\" и как оказалось, они ей не нравятся! В следующий раз, лучше подарить что-то другое..."
+    new "I bought Lisa \"Ferrero Rocher\" sweets, and as it turned out, she doesn't like them! Next time, it would be better to give her something else..."
+
+    # game/core/03variables.rpy:327
+    old "Как оказалось, за нравящиеся Лизе сладости можно получить крепкие объятия! И это не смотря на то, что я за ней подглядывал. Посмотрим, что ещё мне удастся получить от сестрёнки..."
+    new "Looks like, you can get a big hug for getting sweets that Lisa likes! And this is despite the fact that I was spying on her. Let's see what else I can get from my sister..."
+
+    # game/core/03variables.rpy:327
+    old "Обнимашки - не единственное, что я получил от Лизы за сладости. Она была в таком восторге, что даже чмокнула меня в щёку! Вот уж не думал, что подглядывания за сестрёнкой могут обернуться такими приятными неожиданностями! Интересно, что будет дальше..."
+    new "Hugs aren't the only thing I can get in exchange for giving Lisa sweets. She was so happy that she even kissed me on the cheek! I didn't think that spying on my sister could turn out to be such a pleasant surprise! I wonder what will happen next..."
+
+    # game/core/03variables.rpy:327
+    old "Похоже, сладостей Лизе уже мало и она хочет халатик, как у Алисы. Это уже серьёзная покупка! На этот раз времени у меня больше, но всё равно лучше поторопиться с подарком. Интересно, что меня будет за это ждать..."
+    new "It seems that sweets aren't enough for Lisa. Now, she wants a robe like Alice's. This is a serious purchase! I have more time this to get it, but it's still better to hurry up with the gift. I wonder what I'll get for it..."
+
+    # game/core/03variables.rpy:327
+    old "От моих подарков Лиза уже не просто целует меня в щёку, а запрыгивает на меня с крепкими объятиями! Может быть и мне уже пора в такие моменты проявлять какую-то активность? Так что подглядывать полезно, если правильно извиниться."
+    new "Lisa isn't just giving me kisses anymore, she's leaping onto me to give me hugs! Maybe I should take the initiative? Peeking could be worth it now, as long as I follow up with the right apology."
+
+# TODO: Translation updated at 2020-04-16 01:21
+
+translate english strings:
+
+    # game/core/03variables.rpy:338
+    old "Кто не рискует..."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Я подглядывал, как Алиса принимает душ и она меня заметила. Пытаясь извиниться я пообещал купить ей какую-нибудь сладость, в обмен на то, чтобы она не рассказывала обо всём маме. На удивление, я ещё жив, но времени у меня немного..."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Увы, я не успел подарить Алисе сладость в срок и поэтому она рассказала маме, как я за ней подглядывал. Возможно, в следующий раз, если Алиса меня заметит, я успею..."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Я купил для Алисы конфеты \"Ferrero Rocher\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большую коробку с этими конфетами?"
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Я купил для Алисы шоколад \"Ritter Sport\" и она приняла его, но без особого восторга! Возможно, в следующий раз, следует подарить ей что-то другое?"
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Я купил для Алисы конфеты \"Raffaello\" и как оказалось, они ей не нравятся! В следующий раз, лучше подарить что-то другое..."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Эх... Если бы я знал, что Алиса станет выкручивать мне уши, то подумал бы, стоит ли ей дарить сладости! Хотя, тогда я рискую быть наказанным при всех, а это хуже... Так что лучше и в следующий раз рискнуть, вдруг повезёт и Алиса ничего мне не сделает."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Как оказалось, за нравящиеся Алисе сладости можно не только сохранить уши в целости, но и ощутить её скромные объятия! И это не смотря на то, что я за ней подглядывал. Посмотрим, что ещё мне удастся получить от сестрёнки..."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Похоже, сладостей Алисе уже мало и теперь ОНА будет ставить условия! Она хочет, чтобы я купил ей пижаму и это уже покупка посерьёзнее! На этот раз времени у меня больше, но всё равно лучше поторопиться с подарком. Интересно, что меня будет за это ждать..."
+    new ""
+
+    # game/core/03variables.rpy:338
+    old "Алиса согласилась пустить меня к себе в комнату, пока примеряла пижаму! Конечно, она просила, чтобы я не подглядывал, хотя прекрасно знала, что я буду... И угрозы её стали какими-то шуточными. Интересно, к чему это приведёт? Так что подглядывать полезно, если правильно извиниться."
+    new ""
+

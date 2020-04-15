@@ -10,13 +10,13 @@ label after_dinner:
             call conversation_after_dinner(4)
         elif len(punlisa) >= 7 and ColumnSum(punlisa, 0, 7) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):
             # если Макс не помогал Лизе семь раз и разговора после ужина не было больше недели
-            if talk_var['help.hw'] == 0 and possibility['sg'].stn <= 2:
+            if talk_var['help.hw'] == 0 and poss['sg'].stn <= 2:
                 # совсем не помогал
                 call conversation_after_dinner(1)
-            elif possibility['sg'].stn == 2:
+            elif poss['sg'].stn == 2:
                 # безвозмездно помогал, но перестал
                 call conversation_after_dinner(2)
-            elif possibility['sg'].stn > 2:
+            elif poss['sg'].stn > 2:
                 # обещал помогать за услуги, но не стал или перестал
                 call conversation_after_dinner(3)
 
@@ -99,8 +99,8 @@ label dinner_first:
         Ann_07 "Ну а ученики какие? Повезло с классом? Уже завела себе друзей и подруг?"
         menu:
             Lisa_02 "Да, познакомилась... с одной подружкой. Класс супер, всё хорошо, мам!"
-            "Ага, а подружку зовут Алекс..." if talk_var["boy"] > 0:
-                $ talk_var["boy"] = 3
+            "Ага, а подружку зовут Алекс..." if talk_var['boy'] > 0:
+                $ talk_var['boy'] = 3
                 menu:
                     Lisa_12 "Макс! Я же тебе по секрету рассказала..."
                     "Ой, извини. Я думал, у нас нет секретов...":
@@ -110,10 +110,10 @@ label dinner_first:
                 Lisa_00 "Не удивляйся потом, если твои секреты тоже окажутся... не секретами."
                 Ann_07 "Лиза, так что там за подружка по имени Алекс?"
                 jump .secret
-            "Что за подружка?" if talk_var["boy"] == 0:
-                $ talk_var["boy"] = 4
-            "Что за подружка? {i}(подмигнуть){/i}" if talk_var["boy"] > 0:
-                $ talk_var["boy"] = 5
+            "Что за подружка?" if talk_var['boy'] == 0:
+                $ talk_var['boy'] = 4
+            "Что за подружка? {i}(подмигнуть){/i}" if talk_var['boy'] > 0:
+                $ talk_var['boy'] = 5
         Lisa_00 "Ой, да обычная подружка..."
         Alice_06 "Кажется, у кого-то секреты..."
         jump .secret
@@ -196,7 +196,7 @@ label dinner_2:
             pass
         "Помощь нужна?":
             pass
-    if talk_var["blog"] < 2:
+    if talk_var['blog'] < 2:
         jump .help
     else:
         jump .blog2
@@ -206,20 +206,20 @@ label dinner_2:
         "Ну как построишь, позови!":
             pass
         "Помощь нужна?":
-            if talk_var["blog"] < 2:
-                $ SetPossStage("blog", 0)
+            if talk_var['blog'] < 2:
+                $ poss['blog'].OpenStage(0)
                 jump .help
 
     label .blog2:
-        if talk_var["blog"] == 2:
+        if talk_var['blog'] == 2:
             Alice_00 "Кстати, ты уже предлагал свою помощь, если я не ошибаюсь... Или это было так, не серьёзно всё?"
             Max_09 "А ты и правда прислушаешься к моим советам?"
             Alice_13 "Макс, я готова на любую помощь. У самой уже нет идей, если честно. Так что, да. Прислушаюсь..."
-            $ SetPossStage("blog", 0)
+            $ poss['blog'].OpenStage(0)
             Max_03 "Отлично. Тогда и правда помогу!"
             jump .next
         else:
-            $ SetPossStage("blog", 0)
+            $ poss['blog'].OpenStage(0)
             menu:
                 Alice_07 "Зачем? Чтобы ты в очередной раз посмеялся? И, вообще, если ты такой умный, то вот ты и придумай что-нибудь. Я даже спасибо скажу. Честно говоря, я в депрессии..."
                 "Даже спасибо? Ну, хорошо...":
@@ -247,7 +247,7 @@ label dinner_2:
         Lisa_02 "Макс, ты что, забыл? В прошлом году маленький паучок летом на Алису заполз, так она орала два часа! Бегала и кричала..."
         Max_02 "Что-то такое было, вроде бы..."
         Alice_02 "Ага, маленький... Да он был с тебя размером! Ненавижу пауков. Кто их, вообще, выдумал. Хоть на северный полюс уезжай. Надеюсь, хоть там их нет..."
-        $ SetPossStage("spider", 0)
+        $ poss['spider'].OpenStage(0)
         Max_03 "Нам тебя будет нехватать..."
         Alice_01 "А вот знаешь что, Макс, не дождёшься! Я не видела ещё ни одного паука и, может быть, это маме только показалось. Буду думать так. Так спокойнее..."
         Max_01 "Ну, думай..."
@@ -331,8 +331,8 @@ label dinner_4:
     menu:
         Eric_05 "Лиза, я тебе обещаю, что если вместе поедем на шоппинг через неделю, я тебе куплю отличный купальник. Конечно, не дизайнерский, но красивый и такой, в котором сможешь загорать! Это будет мой подарок тебе."
         "{i}промолчать{/i}":
-            $ SetPossStage("Swimsuit", 2)
-            $ items["bikini"].InShop = True
+            $ poss['Swimsuit'].OpenStage(2)
+            $ items['bikini'].InShop = True
     Ann_14 "Эрик, ну не стоит же её так баловать..."
     menu:
         Alice_02 "Если что, то мне тоже ничего не купили..."
@@ -367,8 +367,8 @@ label dinner_4:
             $ __ann += 50
         "{i}промолчать{/i}":
             pass
-    $ SetPossStage("nightclub" ,0)
-    $ items["dress"].InShop = True
+    $ poss['nightclub'].SetStage(0)
+    $ items['dress'].InShop = True
     Alice_02 "Спасибо, Эрик! Ты и правда лучший! Буду ждать следующей субботы!"
     menu:
         Ann_00 "Так, ладно. Спасибо всем за ужин. Мы сейчас с Эриком уедем и вернусь завтра утром. Надеюсь, вопросов не возникнет, да? Алиса за старшую, а остальным - не шалите, хорошо?"
@@ -390,7 +390,7 @@ label dinner_4:
 label dinner:
     $ current_room = house[5]
     $ Distribution()
-    if possibility["smoke"].stn == 0:
+    if poss['smoke'].stn == 0:
         jump talk_about_smoking
 
     jump StartPunishment

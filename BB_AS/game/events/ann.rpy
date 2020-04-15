@@ -3,17 +3,17 @@
 
 label ann_sleep:
     scene location house annroom door-night
-    if peeping["ann_sleep"] != 0:
+    if peeping['ann_sleep'] != 0:
         return
-    $ peeping["ann_sleep"] = 1
+    $ peeping['ann_sleep'] = 1
 
     menu:
         Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..."
         "{i}заглянуть в окно{/i}":
             scene BG char Ann bed-night-01
-            $ renpy.show("Ann sleep-night "+pose3_3+chars["ann"].dress)
+            $ renpy.show("Ann sleep-night "+pose3_3+chars['ann'].dress)
             $ renpy.show("FG ann-voyeur-night-00"+mgg.dress)
-            if chars["ann"].dress == 'a':
+            if chars['ann'].dress == 'a':
                 if pose3_3 == "01":
                     Max_01 "Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
                 elif pose3_3 == "02":
@@ -32,8 +32,8 @@ label ann_sleep:
             if rez != "exit":
                 $ spent_time += 10
                 scene BG char Ann bed-night-02
-                $ renpy.show("Ann sleep-night-closer "+pose3_3+chars["ann"].dress)
-                if chars["ann"].dress == 'a':
+                $ renpy.show("Ann sleep-night-closer "+pose3_3+chars['ann'].dress)
+                if chars['ann'].dress == 'a':
                     if pose3_3 == "01":
                         Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась." nointeract
                     elif pose3_3 == "02":
@@ -56,27 +56,27 @@ label ann_sleep:
 
 label ann_shower:
     scene location house bathroom door-morning
-    if peeping["ann_shower"] == 3:
+    if peeping['ann_shower'] == 3:
         Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее еще больше."
         return
-    elif peeping["ann_shower"] == 1:
+    elif peeping['ann_shower'] == 1:
         Max_00 "Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто."
         return
-    elif  peeping["ann_shower"] == 2:
+    elif  peeping['ann_shower'] == 2:
         Max_00 "Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто."
         return
-    elif peeping["ann_shower"] > 3:
+    elif peeping['ann_shower'] > 3:
         menu:
             Max_00 "Мама сейчас принимает душ..."
             "{i}уйти{/i}":
                 return
     else:
-        $ peeping["ann_shower"] = 4
+        $ peeping['ann_shower'] = 4
         menu:
             Max_00 "Похоже, мама принимает душ..."
             "{i}заглянуть со двора{/i}":
                 jump .start_peeping
-            "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+            "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
                 jump .ladder
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -124,10 +124,10 @@ label ann_shower:
     label .closer_peepeng:
         $ spent_time += 10
         if RandomChance(_chance):
-            $ peeping["ann_shower"] = 1
+            $ peeping['ann_shower'] = 1
             $ mgg.stealth += 0.2
             $ notify_list.append(_("Скрытность Макса повысилась"))
-            $ chars["ann"].dress_inf = "00a"
+            $ chars['ann'].dress_inf = "00a"
             $ __ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
             show image ("Ann shower-closer 0"+str(__ran1))
@@ -138,10 +138,10 @@ label ann_shower:
                 Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
             jump .end_peeping
         elif RandomChance(_chance):
-            $ peeping["ann_shower"] = 2
+            $ peeping['ann_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
-            $ chars["ann"].dress_inf = "00a"
+            $ chars['ann'].dress_inf = "00a"
             $ __ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
             show image ("Ann shower-closer 0"+str(__ran1))
@@ -149,7 +149,7 @@ label ann_shower:
             Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
             jump .end_peeping
         else:
-            $ peeping["ann_shower"] = 3
+            $ peeping['ann_shower'] = 3
             $ mgg.stealth += 0.05
             $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
             $ __ran1 = renpy.random.choice(["09", "10"])
@@ -212,22 +212,22 @@ label ann_yoga:
 
 label ann_cooking:
     scene BG cooking-00
-    $ renpy.show("Ann cooking 01"+chars["ann"].dress)
-    $ persone_button1 = "Ann cooking 01"+chars["ann"].dress
+    $ renpy.show("Ann cooking 01"+chars['ann'].dress)
+    $ persone_button1 = "Ann cooking 01"+chars['ann'].dress
     return
 
 
 label ann_cooking_closer:
     scene BG cooking-01
-    $ renpy.show("Ann cooking-closer "+pose3_3+chars["ann"].dress)
+    $ renpy.show("Ann cooking-closer "+pose3_3+chars['ann'].dress)
     return
 
 
 label ann_dressed_work:
     scene location house annroom door-morning
-    if peeping["ann_dressed"] != 0:
+    if peeping['ann_dressed'] != 0:
         return
-    $ peeping["ann_dressed"] = 1
+    $ peeping['ann_dressed'] = 1
     $ __mood = 0
     menu:
         Max_09 "Сейчас 10 часов, а значит, мама собирается на работу..."
@@ -250,7 +250,7 @@ label ann_dressed_work:
             $ __ran1 = renpy.random.choice(['01', '01a', '02', '02a', '03', '03a', '01', '01a', '02', '02a', '03', '03a', '04'])
             $ __open = True
             $ renpy.show("Ann dressed-work "+__ran1)
-            $ chars["ann"].dress_inf = {'01':'02',  '01a':'02e', '02':'02b', '02a':'02d', '03':'02a', '03a':'02c', '04':'00'}[__ran1]
+            $ chars['ann'].dress_inf = {'01':'02',  '01a':'02e', '02':'02b', '02a':'02d', '03':'02a', '03a':'02c', '04':'00'}[__ran1]
             menu:
                 Ann_13 "Макс! Я же учила тебя стучаться!"
                 "Хорошо выглядишь, мам!":
@@ -276,7 +276,7 @@ label ann_dressed_work:
         "{i}заглянуть в окно{/i}":
             scene BG char Ann voyeur-00
             $ __ran1 = renpy.random.choice(['01', '01a', '02', '03', '03a', '04'])
-            $ chars["ann"].dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b'}[__ran1]
+            $ chars['ann'].dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b'}[__ran1]
 
             $ renpy.show("Ann voyeur "+__ran1)
             $ renpy.show("FG voyeur-morning-00"+mgg.dress)
@@ -379,10 +379,10 @@ label ann_dressed_work:
 
 label ann_dressed_shop:
     scene location house aliceroom door-evening
-    if peeping["ann_dressed"] != 0:
+    if peeping['ann_dressed'] != 0:
         return
 
-    $ peeping["ann_dressed"] = 1
+    $ peeping['ann_dressed'] = 1
     $ __mood = 0
     menu:
         Max_09 "Сегодня суббота, день шоппинга. Видимо, мама собирается..."
@@ -404,7 +404,7 @@ label ann_dressed_shop:
             $ __ran1 = renpy.random.choice(['01', '02', '03', '04'])
             $ __open = True
             $ renpy.show("Ann dressed-work "+__ran1)
-            $ chars["ann"].dress_inf = {'01':'02', '02':'02b', '03':'02a', '04':'00'}[__ran1]
+            $ chars['ann'].dress_inf = {'01':'02', '02':'02b', '03':'02a', '04':'00'}[__ran1]
             menu:
                 Ann_13 "Макс! Я же учила тебя стучаться!"
                 "Хорошо выглядишь, мам!":
@@ -425,7 +425,7 @@ label ann_dressed_shop:
         "{i}заглянуть в окно{/i}":
             scene BG char Ann voyeur-00
             $ __ran1 = renpy.random.choice(['03', '03a', '04'])
-            $ chars["ann"].dress_inf = {'03':'02', '03a':'02a', '04':'02b'}[__ran1]
+            $ chars['ann'].dress_inf = {'03':'02', '03a':'02a', '04':'02b'}[__ran1]
 
             $ renpy.show("Ann voyeur "+__ran1)
             $ renpy.show("FG voyeur-morning-00"+mgg.dress)
@@ -529,19 +529,19 @@ label ann_dressed_shop:
 label ann_resting:
     if tm < "19:00":
         scene BG char Ann relax-morning-01
-        $ renpy.show("Ann relax-morning "+pose3_3+chars["ann"].dress)
-        $ persone_button1 = "Ann relax-morning "+pose3_3+chars["ann"].dress
+        $ renpy.show("Ann relax-morning "+pose3_3+chars['ann'].dress)
+        $ persone_button1 = "Ann relax-morning "+pose3_3+chars['ann'].dress
     else:
         scene BG char Ann relax-evening-01
-        $ renpy.show("Ann relax-evening "+pose3_3+chars["ann"].dress)
-        $ persone_button1 = "Ann relax-evening "+pose3_3+chars["ann"].dress
+        $ renpy.show("Ann relax-evening "+pose3_3+chars['ann'].dress)
+        $ persone_button1 = "Ann relax-evening "+pose3_3+chars['ann'].dress
     return
 
 
 label ann_read:
     scene BG reading
-    $ renpy.show("Ann reading "+pose3_3+chars["ann"].dress)
-    $ persone_button1 = "Ann reading "+pose3_3+chars["ann"].dress
+    $ renpy.show("Ann reading "+pose3_3+chars['ann'].dress)
+    $ persone_button1 = "Ann reading "+pose3_3+chars['ann'].dress
     return
 
 
@@ -575,10 +575,10 @@ label ann_alice_swim:
 
 label ann_bath:
     scene location house bathroom door-evening
-    if peeping["ann_bath"] != 0:
+    if peeping['ann_bath'] != 0:
         return
 
-    $ peeping["ann_bath"] = 1
+    $ peeping['ann_bath'] = 1
     menu:
         Max_00 "Видимо, мама принимает ванну..."
         "{i}постучаться{/i}":
@@ -618,24 +618,24 @@ label ann_bath:
                     jump .end
                 "{i}уйти{/i}":
                     jump .end
-        "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags["ladder"] < 2:
+        "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags['ladder'] < 2:
             scene Ann bath 01
             $ renpy.show("FG voyeur-bath-00"+mgg.dress)
             Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
             menu:
                 Max_09 "Нужно что-нибудь придумать..."
                 "{i}уйти{/i}":
-                    $ flags["ladder"] = 1
+                    $ flags['ladder'] = 1
                     jump .end
-        "{i}установить стремянку{/i}" if items["ladder"].have:
+        "{i}установить стремянку{/i}" if items['ladder'].have:
             scene BG char Max bathroom-window-evening-00
             $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
             Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-            $ flags["ladder"] = 3
-            $ items["ladder"].have = False
-            $ items["ladder"].InShop = False
+            $ flags['ladder'] = 3
+            $ items['ladder'].have = False
+            $ items['ladder'].InShop = False
             jump .ladder
-        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
             jump .ladder
         "{i}уйти{/i}":
             jump .end
@@ -664,7 +664,7 @@ label ann_bath:
                         Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
                         "{i}уйти{/i}":
                             $ spent_time += 10
-                            $ chars["ann"].dress_inf = "00a"
+                            $ chars['ann'].dress_inf = "00a"
                             jump .end
                 "{i}уйти{/i}":
                     jump .end
@@ -680,7 +680,7 @@ label ann_bath:
                         Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
                         "{i}уйти{/i}":
                             $ spent_time += 10
-                            $ chars["ann"].dress_inf = "04a"
+                            $ chars['ann'].dress_inf = "04a"
                             jump .end
                 "{i}уйти{/i}":
                     jump .end

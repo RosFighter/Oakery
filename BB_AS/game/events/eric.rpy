@@ -11,18 +11,18 @@ label Eric_talk_afterdinner:
     show Eric meet 01a
     show Max meet-Eric 01a
     Eric_00 "Макс, пока твоя мама переодевается, я бы хотел с тобой поговорить. С глазу на глаз, так сказать..."
-    if talk_var["empathic"] > 1:
+    if talk_var['empathic'] > 1:
         Max_01 "Конечно..."
-        $ talk_var["empathic"] = 7
+        $ talk_var['empathic'] = 7
         menu:
             Eric_05 "Я заметил, что ты настроен вполне дружелюбно. Для меня важно подружиться с твоей семьёй, чтобы твоя мама не испытывала дискомфорт на этой почве, если ты меня понимаешь..."
             "Понимаю, хорошо...":
                 jump .good
             "И зачем мне это?":
                 jump .bad
-    elif talk_var["empathic"] > 0:
+    elif talk_var['empathic'] > 0:
         Max_00 "Ну, давай..."
-        $ talk_var["empathic"] = 5
+        $ talk_var['empathic'] = 5
         menu:
             Eric_09 "Я знаю, что мы начали знакомство не идеально, но мне показалось, что мы можем найти общий язык. Для меня важно, чтобы твоя мама не испытывала какой-либо дискомфорт из-за этого..."
             "Понимаю, хорошо...":
@@ -31,7 +31,7 @@ label Eric_talk_afterdinner:
                 jump .bad
     else:
         Max_09 "У меня есть выбор?"
-        $ talk_var["empathic"] = 3
+        $ talk_var['empathic'] = 3
         menu:
             Eric_13 "Ты знаешь, мы начали знакомство как-то совсем неудачно. Предлагаю как-то уладить этот конфликт. Я бы очень не хотел, чтобы твоя мама испытывала дискомфорт по этому поводу..."
             "Понимаю, хорошо...":
@@ -40,7 +40,7 @@ label Eric_talk_afterdinner:
                 jump .bad
 
     label .good:
-        $ talk_var["empathic"] += 1
+        $ talk_var['empathic'] += 1
         show Eric meet 01a
         show Max meet-Eric 01a
         menu:
@@ -48,28 +48,28 @@ label Eric_talk_afterdinner:
             "А если нет, то что?":
                 jump .what
             "Думаю, подружимся...":
-                $ talk_var["empathic"] += 2
+                $ talk_var['empathic'] += 2
                 jump .friend
 
     label .bad:
         show Max meet-Eric 01b
         show Eric meet 01b
-        $ talk_var["empathic"] -= 1
+        $ talk_var['empathic'] -= 1
         menu:
             Eric_01 "Я бы на твоём месте не искал врага там, где его нет. Предлагаю вернуться к этому разговору через неделю. Если мы подружимся, ты не пожалеешь. А вот если решишь со мной воевать, то ты точно проиграешь..."
             "Это ещё почему?":
                 jump.what
             "Да я не собираюсь воевать...":
-                $ talk_var["empathic"] += 1
+                $ talk_var['empathic'] += 1
                 jump .friend
 
     menu .what:
         Eric_05 "Если решишь испытать судьбу, то сам всё скоро узнаешь. У меня есть влияние, деньги, харизма. А главное - я умею убеждать и подчинять других людей. А что есть у тебя?"
         "Да верю, верю. Я просто спросил и не хочу ссориться...":
-            $ talk_var["empathic"] += 1
+            $ talk_var['empathic'] += 1
             jump .friend
         "Меня все любят и мне поверят, что ты мне угрожал!":
-            $ talk_var["empathic"] -= 2
+            $ talk_var['empathic'] -= 2
             show Max meet-Eric 01b
             show Eric meet 01b
             menu:
@@ -79,7 +79,7 @@ label Eric_talk_afterdinner:
                 "Она так сказала?":
                     jump .shesaid
         "У меня есть мозги и я что-нибудь придумаю!":
-            $ talk_var["empathic"] -= 2
+            $ talk_var['empathic'] -= 2
             show Max meet-Eric 01b
             show Eric meet 01b
             menu:
@@ -128,7 +128,7 @@ label Eric_talk_afterdinner:
         menu:
             Eric_00 "Ну, как хочешь. Надеюсь, в тебе сейчас говорят эмоции, а не здравый смысл. У тебя есть неделя, чтобы передумать. Тогда и поговорим снова и будет ясно, как быть."
             "{i}промолчать{/i}":
-                $ talk_var["empathic"] = 0
+                $ talk_var['empathic'] = 0
                 jump Waiting
 
     label .friend:
@@ -141,38 +141,42 @@ label Eric_talk_afterdinner:
 
 label eric_resting:
     scene BG char Ann relax-evening-01
-    $ renpy.show("Eric relax "+pose3_1+chars["eric"].dress)
-    $ persone_button1 = "Eric relax "+pose3_1+chars["eric"].dress
+    $ renpy.show("Eric relax "+pose3_1+chars['eric'].dress)
+    $ persone_button1 = "Eric relax "+pose3_1+chars['eric'].dress
     return
 
 
 label eric_ann_tv:
     $ renpy.block_rollback()
     scene BG tv-watch-01
+    $ film = ae_tv_order[0]
+
     if tv_scene == "" or not peeping['ann_eric_tv']:
         ### Дальний план, нейтральная поза
-        $ renpy.show('tv porn-01 0'+str(renpy.random.randint(1, 5)), at_list=[tv_screen,])
-        $ renpy.show("Eric tv-watch 01"+chars["eric"].dress)
+        $ renpy.show('porn_'+film+'_01_02', at_list=[tv_screen,])
+        $ renpy.show("Eric tv-watch 01"+chars['eric'].dress)
     else:
         ### Дальний план, поза, на которой остановилось подглядывание
         if pose2_3 == '01':
             $ renpy.show('tv porn-01 0'+str(renpy.random.randint(6, 7)), at_list=[tv_screen,])
         else:
             $ renpy.show('tv porn-01 '+('0'+str(renpy.random.randint(8, 10)))[-2:], at_list=[tv_screen,])
-        $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
+        $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
 
     if peeping['ann_eric_tv']:
         return
     ### Дальний план, нейтральная поза
 
     $ peeping['ann_eric_tv'] = 1
+    if flags['tv_peep'] > 0:
+        Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
     menu:
         Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой..."
         "{i}наблюдать за ними{/i}":
             pass
         "{i}подойти к ним{/i}":
             scene BG lounge-tv-00
-            $ renpy.show("Eric tv "+renpy.random.choice(['01', '02', '03'])+chars["eric"].dress)
+            $ renpy.show("Eric tv "+renpy.random.choice(['01', '02', '03'])+chars['eric'].dress)
             menu:
                 Ann_12 "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?"
                 "Конечно, мам! {i}(уйти){/i}":
@@ -187,7 +191,7 @@ label eric_ann_tv:
     $ spent_time += 10
     $ pose2_3 = '01'
     $ renpy.show('tv porn-01 0'+str(renpy.random.randint(6, 7)), at_list=[tv_screen,])
-    $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
+    $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
 
     if tv_scene == 'bj':
         ### Дальний план, минет
@@ -198,7 +202,7 @@ label eric_ann_tv:
                 $ spent_time += 10
                 $ pose2_3 = '02'
                 $ renpy.show('tv porn-01 08', at_list=[tv_screen,])
-                $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
+                $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
                 menu:
                     Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
                     "{i}Что за вопрос? Конечно!{/i}":
@@ -219,7 +223,7 @@ label eric_ann_tv:
                 $ spent_time += 10
                 $ pose2_3 = '02'
                 $ renpy.show('tv porn-01 08', at_list=[tv_screen,])
-                $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars["eric"].dress)
+                $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
                 menu:
                     Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?"
                     "{i}Что за вопрос? Конечно!{/i}":
@@ -245,7 +249,7 @@ label eric_ann_tv:
         ### ближний план отрисовываем согласно установленным переменным bj/hj + поза в полотенце/без полотенца
         $ spent_time += 10
         scene BG lounge-tv-00
-        $ renpy.show("Eric tv "+tv_scene+pose2_3+chars["eric"].dress)
+        $ renpy.show("Eric tv "+tv_scene+pose2_3+chars['eric'].dress)
         if tv_scene == 'hj':
             if pose2_3 == '01':
                 $ txt = _("Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
@@ -267,7 +271,6 @@ label eric_ann_tv:
         $ __r1 = renpy.display_menu(__dial)
 
         if __r1 == 1:
-            ##"Ма-а-ам?" if False: #### пока вариант невиден и недоступен для выбора
             Eric_09 "Макс! Чего хотел? Не видишь, мы заняты? Если хочешь смотреть, делай это тихо и нам не мешай. А ты, Ань, не останавливайся, продолжай..."
             Max_12 "Охренеть!"
             jump .end
@@ -278,7 +281,7 @@ label eric_ann_tv:
             jump .end
 
     ### Макс выдал себя
-    $ renpy.show("Eric tv hjbj"+pose2_3+chars["eric"].dress)
+    $ renpy.show("Eric tv hjbj"+pose2_3+chars['eric'].dress)
     menu:
         Ann_13 "Что? Кто здесь? Макс?! Выйди немедленно, не видишь..."
         "Как раз всё вижу. Не стыдно?":
@@ -315,10 +318,10 @@ label eric_ann_tv:
 
 label eric_ann_fucking:
     scene location house annroom door-night
-    if peeping["ann_eric_sex1"] > 0:
+    if peeping['ann_eric_sex1'] > 0:
         return
 
-    $ peeping["ann_eric_sex1"] = 1
+    $ peeping['ann_eric_sex1'] = 1
 
     $ _chance = GetChance(mgg.stealth, 3)
     $ _chance_color = GetChanceColor(_chance)
@@ -404,8 +407,8 @@ label eric_ann_fucking:
 
 label eric_ann_sleep:
     scene location house annroom door-night
-    if peeping["ann_sleep"] == 0:
-        $ peeping["ann_sleep"] = 1
+    if peeping['ann_sleep'] == 0:
+        $ peeping['ann_sleep'] = 1
         menu:
             Max_00 "Кажется, все спят..."
             "{i}заглянуть в окно{/i}":
@@ -439,16 +442,16 @@ label eric_ann_sleep:
 
 label eric_ann_shower:
     scene location house bathroom door-morning
-    if peeping["ann_shower"] != 0:
+    if peeping['ann_shower'] != 0:
         return
 
-    $ peeping["ann_shower"] = 1
+    $ peeping['ann_shower'] = 1
     $ spent_time += 10
     menu:
         Max_00 "Похоже, мама вместе с Эриком принимают душ... Или что они там ещё могут делать?"
         "{i}заглянуть со двора{/i}":
             jump .start_peeping
-        "{i}воспользоваться стремянкой{/i}" if flags["ladder"] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
             jump .ladder
         "{i}уйти{/i}":
             return
@@ -562,7 +565,7 @@ label eric_ann_shower:
 
         $ mgg.stealth += 0.2
         $ notify_list.append(_("Скрытность Макса повысилась"))
-        $ chars["ann"].dress_inf = "00a"
+        $ chars['ann'].dress_inf = "00a"
         scene BG shower-closer
         $ renpy.show("Eric shower-closer "+__r2)
         show FG shower-closer

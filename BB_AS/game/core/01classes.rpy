@@ -35,6 +35,20 @@ init python:
                     " настроение: {self.mood}, раскрепощенность: {self.free}, отношения с Максом: {self.relmax}, "\
                     "отношения с Эриком: {self.releric}, влияние Эрика: {self.inferic}".format(self=self)
 
+        def GetMood(self): # возвращает кортеж с номером и описанием диапазона настроения персонажа
+            mood = self.mood
+            return {
+                       mood <= -285 : (-4, _("Ужасное")),
+                -285 < mood <= -165 : (-3, _("Очень плохое")),
+                -165 < mood <= -75  : (-2, _("Плохое")),
+                -75  < mood <= -15  : (-1, _("Не очень")),
+                -15  < mood <=  15  : (0, _("Нейтральное")),
+                 15  < mood <=  75  : (1, _("Неплохое")),
+                 75  < mood <=  165 : (2, _("Хорошее")),
+                165  < mood <=  285 : (3, _("Очень хорошее")),
+                285  < mood         : (4, _("Прекрасное")),
+                }[True]
+
 
     ############################################################################
     class MaxProfile:
@@ -198,12 +212,28 @@ init python:
     ############################################################################
     class Poss:  # описание возможности
         def __init__(self, name, stages=[], stn=-1):
-            self.name         = name          # Наименование (в экран описания возможностей)
-            self.stages       = stages        # список этапов возможности
-            self.stn = stn  # текущий этап
+            self.name   = name    # Наименование (в экран описания возможностей)
+            self.stages = stages  # список этапов возможности
+            self.stn    = stn     # текущий этап
         def __repr__(self):
             return "Наименование=\"{self.name}\", текущий этап: {self.stn}, список этапов:\n {self.stages}".format(self=self)
 
+        def SetStage(self, stage): # устанавливает этап "возможности"
+            a = [1 for st in self.stages if st.used]
+
+            self.stn = stage
+            self.stages[stage].used = True
+
+            if sum(a) == 0:
+                notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
+
+        def OpenStage(self, stage): # открывает этап "возможности", если номер этапа больше текущего, устанавливает текущим новый этап
+            a = [1 for st in self.stages if st.used]
+            self.stages[stage].used = True
+            if self.stn < stage:
+                self.stn = stage
+            if sum(a) == 0:
+                notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
 
     ############################################################################
     class TalkTheme:  # описание темы для разговора
@@ -225,6 +255,11 @@ init python:
             self.enabled = enabled  # дейлик активен, нужно ежедневно убавлять счетчик до 0
             self.done    = done     # счетчик достиг 0, для проверки доступности диалога
             self.stage   = 0
+
+        def set_lost(self, lost):
+            self.lost = lost
+            self.done = lost == 0
+
         def __repr__(self):
             return "Этап: {self.stage}, осталось дней: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
 
@@ -351,10 +386,11 @@ init python:
 
 
     class Gift:  # предметы-подарки
-        def __init__(self, item, select, label, mood = -1):
+        def __init__(self, item, select, label, mood = -1, req='True'):
             self.item   = item    # id предмета-подарка
             self.select = select  # фраза в окне диалогов
             self.label  = label   # метка запуска диалога дарения
+            self.req    = req
             self.mood   = mood
 
 
@@ -365,3 +401,8 @@ init python:
             self.give  = []     # ранее врученные извинительные подарки
             self.valid = set()  # множество ID товаров, допустимых в качестве извинений
             self.days  = []     # список дней, когда Макс оправдывался после подглядывания
+
+        def start(self, d=1):
+            self.owe = True
+            self.left = d+1 if (day+d+2) % 7 == 0 else d
+            self.days.insert(0, day)

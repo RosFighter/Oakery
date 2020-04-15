@@ -6,9 +6,11 @@ label StartPunishment:
     if sorry_gifts['lisa'].owe and sorry_gifts['lisa'].owe == 0: # если Макс обещал Лизе подарок, но не вручил его вовремя
         $ sorry_gifts['lisa'].owe = False
         $ punreason[0] = 1
+        $ poss['SoC'].OpenStage(1)
     if sorry_gifts['alice'].owe and sorry_gifts['alice'].owe == 0: # если Макс обещал Алисе подарок, но не вручил его вовремя
         $ sorry_gifts['alice'].owe = False
         $ punreason[1] = 1
+        $ poss['risk'].OpenStage(1)
     # Макс теоретически может получить наказание как утром, так и вечером
     if punreason[2] or punreason[3] and tm < "18:00":  # утром наказание за подглядывание за Анной или Анной с Эриком
         $ pun_list.append("mgg")
@@ -41,10 +43,10 @@ label punishment:
     $ renpy.block_rollback()
     if tm < "14:00":
         scene BG punish-morning 00
-        $ renpy.show("Ann punish-morning 00"+chars["ann"].dress)
+        $ renpy.show("Ann punish-morning 00"+chars['ann'].dress)
     else:
         scene BG punish-evening 00
-        $ renpy.show("Ann punish-evening 00"+chars["ann"].dress)
+        $ renpy.show("Ann punish-evening 00"+chars['ann'].dress)
 
     Ann_16 "Прежде, чем мы начнём, кое-кто заслуживает наказания и сейчас все на это посмотрят..."
     $ _i = 0
@@ -58,7 +60,7 @@ label punishment:
                     Ann_18 "Макс, теперь твоя очередь..."
             else:  # Макс единственный наказуемый
                 Ann_18 "Макс, иди сюда..."
-            call punishment_max from _call_punishment_max
+            call punishment_max
         elif pun_list[_i] == "lisa":
             if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
                 if first: # Лиза наказывается первой
@@ -68,7 +70,7 @@ label punishment:
                     Ann_18 "Теперь Лиза..."
             else:  # наказывают только Лизу
                 Ann_18 "Лиза, подойди-ка ко мне."
-            call punishment_lisa from _call_punishment_lisa
+            call punishment_lisa
         elif pun_list[_i] == "alice":
             if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
                 if first: # Алиса наказывается первой
@@ -78,7 +80,7 @@ label punishment:
                     Ann_18 "Теперь ты, Алиса..."
             else:  # наказывают только Алису
                 Ann_18 "Алиса, подойди-ка сюда."
-            call punishment_alice from _call_punishment_alice
+            call punishment_alice
         $ _i += 1
 
     if tm > "14:00":
@@ -92,11 +94,11 @@ label punishment_max:
 
     if tm < "14:00":
         scene BG punish-morning 01
-        $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
+        $ renpy.show("Ann punish-morning 01"+chars['ann'].dress)
         $ renpy.show("Max punish-morning 01"+mgg.dress)
     else:
         scene BG punish-evening 01
-        $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+        $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
         $ renpy.show("Max punish-evening 01"+mgg.dress)
 
     if warning < 2 and newpunishment == 0:
@@ -191,15 +193,15 @@ label punishment_max:
         if tm < "14:00":
             scene BG punish-morning 02
             if mgg.dress == "a":
-                $ renpy.show("Ann punish-morning max-01"+chars["ann"].dress)
+                $ renpy.show("Ann punish-morning max-01"+chars['ann'].dress)
             else:
-                $ renpy.show("Ann punish-morning max-03"+chars["ann"].dress)
+                $ renpy.show("Ann punish-morning max-03"+chars['ann'].dress)
         else:
             scene BG punish-evening 02
             if mgg.dress == "a":
-                $ renpy.show("Ann punish-evening max-01"+chars["ann"].dress)
+                $ renpy.show("Ann punish-evening max-01"+chars['ann'].dress)
             else:
-                $ renpy.show("Ann punish-evening max-03"+chars["ann"].dress)
+                $ renpy.show("Ann punish-evening max-03"+chars['ann'].dress)
 
         # Макс без штанов у Анны на коленях
         if punreason.count(1) > 1:  # несколько причин для наказания, общая фраза
@@ -217,14 +219,14 @@ label punishment_max:
         ### сцена наказания
         if tm < "14:00":
             if mgg.dress == "a":
-                $ renpy.show("Ann punish-morning max-02"+chars["ann"].dress)
+                $ renpy.show("Ann punish-morning max-02"+chars['ann'].dress)
             else:
-                $ renpy.show("Ann punish-morning max-04"+chars["ann"].dress)
+                $ renpy.show("Ann punish-morning max-04"+chars['ann'].dress)
         else:
             if mgg.dress == "a":
-                $ renpy.show("Ann punish-evening max-02"+chars["ann"].dress)
+                $ renpy.show("Ann punish-evening max-02"+chars['ann'].dress)
             else:
-                $ renpy.show("Ann punish-evening max-04"+chars["ann"].dress)
+                $ renpy.show("Ann punish-evening max-04"+chars['ann'].dress)
         Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
         ## здесь снижение влияния Макса для присутствующих персонажей
         python:
@@ -237,11 +239,11 @@ label punishment_max:
 
         if tm < "14:00":
             scene BG punish-morning 01
-            $ renpy.show("Ann punish-morning 01"+chars["ann"].dress)
+            $ renpy.show("Ann punish-morning 01"+chars['ann'].dress)
             $ renpy.show("Max punish-morning 03"+mgg.dress)
         else:
             scene BG punish-evening 01
-            $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+            $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
             $ renpy.show("Max punish-evening 03"+mgg.dress)
 
         Ann_12 "Ну вот. Теперь все всё поняли? Ведите себя хорошо и вас не ждёт эта участь..."
@@ -254,13 +256,13 @@ label punishment_lisa:
     $ renpy.block_rollback()
 
     scene BG punish-evening 01
-    $ renpy.show("Lisa punish-evening 01"+chars["lisa"].dress)
-    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+    $ renpy.show("Lisa punish-evening 01"+chars['lisa'].dress)
+    $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
 
     $ __mood = 0
 
     # Лиза стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
-    if chars["lisa"].dress == "a":  # Лиза в обычной одежде
+    if chars['lisa'].dress == "a":  # Лиза в обычной одежде
         $ _text = _("Ближе подходи, Лиза. И да, снимай штаны, ты заслужила!")
     else: # Лиза в халате
         $ _text = _("Ближе подходи, Лиза. И да, снимай свой халат, ты заслужила!")
@@ -291,14 +293,14 @@ label punishment_lisa:
                 pass
 
     Lisa_10 "Мам... Я не специально... Просто, задание было сложное..."
-    if chars["lisa"].dress == "a":  # Лиза в обычной одежде
+    if chars['lisa'].dress == "a":  # Лиза в обычной одежде
         $ _text = _("Быстро снимай штаны!")
     else: # Лиза в халате
         $ _text = _("Быстро снимай халат!")
     Ann_14 "Сложное? У тебя была куча времени, чтобы подготовиться! Сидишь в своём телефоне вечно вместо того, чтобы учиться. [_text!t]"
 
     # Лиза стоит частично/полностью раздетая, если Макс не вмешивался, то может попробовать прервать наказание
-    $ renpy.show("Lisa punish-evening 02"+chars["lisa"].dress)
+    $ renpy.show("Lisa punish-evening 02"+chars['lisa'].dress)
     $ _text = _("Теперь ложись, и побыстрее, все есть хотят...")
 
     if defend:  # Макс уже заступался
@@ -326,19 +328,19 @@ label punishment_lisa:
 
     # сцена наказания Лизы
     scene BG punish-evening 02
-    if chars["lisa"].dress == "a":
-        $ renpy.show("Ann punish-evening lisa-01"+chars["ann"].dress)
+    if chars['lisa'].dress == "a":
+        $ renpy.show("Ann punish-evening lisa-01"+chars['ann'].dress)
     else:
-        $ renpy.show("Ann punish-evening lisa-03"+chars["ann"].dress)
+        $ renpy.show("Ann punish-evening lisa-03"+chars['ann'].dress)
 
     $ __mood -= 100 # если Лизу наказывают, ее настроение портится
     $ talk_var['lisa.pun'] += 1
 
     Lisa_09 "Ма-ам, я больше не буду... Ай... В смысле, буду лучше учиться. Извини..."
-    if chars["lisa"].dress == "a":
-        $ renpy.show("Ann punish-evening lisa-02"+chars["ann"].dress)
+    if chars['lisa'].dress == "a":
+        $ renpy.show("Ann punish-evening lisa-02"+chars['ann'].dress)
     else:
-        $ renpy.show("Ann punish-evening lisa-04"+chars["ann"].dress)
+        $ renpy.show("Ann punish-evening lisa-04"+chars['ann'].dress)
 
     $ _text = _("Говоришь тебе, говоришь, все как об стенку горох...") # вставка, если Макс не помогал за последнюю неделю
 
@@ -357,8 +359,8 @@ label punishment_lisa:
 
     # сцена с наказанной Лизой
     scene BG punish-evening 01
-    $ renpy.show("Lisa punish-evening 03"+chars["lisa"].dress)
-    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+    $ renpy.show("Lisa punish-evening 03"+chars['lisa'].dress)
+    $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
     Ann_12 "Лиза, надеюсь, ты извлекла урок из этого наказания и больше это не повторится. А теперь одевайся!"
 
     $ AddRelMood('lisa', 0, __mood)
@@ -369,18 +371,18 @@ label punishment_alice:
     $ renpy.block_rollback()
 
     scene BG punish-evening 01
-    $ renpy.show("Alice punish-evening 01"+chars["alice"].dress)
-    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
+    $ renpy.show("Alice punish-evening 01"+chars['alice'].dress)
+    $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
 
     $ __mood = 0
 
     # Алиса стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
-    if chars["alice"].dress == "a":  # Алиса в обычной одежде
+    if chars['alice'].dress == "a":  # Алиса в обычной одежде
         Ann_16 "Подходи, подходи, Алиса, чего ты там мнешься. Штаны снимай, есть разговор!"
     else: # Алиса в пижамке
         Ann_16 "Подходи, подходи, Алиса, чего ты там мнешься. Снимай шорты, есть разговор!"
     Alice_12 "Мам, за что? Что я такого сделала?"
-    if chars["alice"].dress == "a":  # Алиса в обычной одежде
+    if chars['alice'].dress == "a":  # Алиса в обычной одежде
         $ _text = _("Алиса, ты издеваешься? Я нашла сигареты у тебя в комнате! Ты опять куришь! Быстро сняла штаны и легла на мои колени, кому сказала!")
     else:
         $ _text = _("Алиса, ты издеваешься? Я нашла сигареты у тебя в комнате! Ты опять куришь! Быстро сняла шорты и легла на мои колени, кому сказала!")
@@ -411,7 +413,7 @@ label punishment_alice:
                 pass
 
     Alice_13 "Мам... Это не мои сигареты... Я не курю, честно..."
-    if chars["alice"].dress == "a":  # Алиса в обычной одежде
+    if chars['alice'].dress == "a":  # Алиса в обычной одежде
         Ann_14 "Не твои? А чьи они тогда? Быстро снимай штаны!"
         if chars['alice'].nopants:
             Alice_06 "Мам, но я сегодня без трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
@@ -455,25 +457,25 @@ label punishment_alice:
 
     # сцена наказания Алисы
     scene BG punish-evening 02
-    if chars["alice"].dress == "a":
+    if chars['alice'].dress == "a":
         if flags['smoke'] == "nopants":
-            $ renpy.show("Ann punish-evening alice-03"+chars["ann"].dress)
+            $ renpy.show("Ann punish-evening alice-03"+chars['ann'].dress)
         else:
-            $ renpy.show("Ann punish-evening alice-01"+chars["ann"].dress)
+            $ renpy.show("Ann punish-evening alice-01"+chars['ann'].dress)
     else:
-        $ renpy.show("Ann punish-evening alice-05"+chars["ann"].dress)
+        $ renpy.show("Ann punish-evening alice-05"+chars['ann'].dress)
 
     $ __mood -= 100 # если Алису наказывают, ее настроение портится
     $ talk_var['alice.pun'] += 1
 
     Alice_15 "Ай, больно же! Мам, я больше не буду!!!"
-    if chars["alice"].dress == "a":
+    if chars['alice'].dress == "a":
         if flags['smoke'] == "nopants":
-            $ renpy.show("Ann punish-evening alice-04"+chars["ann"].dress)
+            $ renpy.show("Ann punish-evening alice-04"+chars['ann'].dress)
         else:
-            $ renpy.show("Ann punish-evening alice-02"+chars["ann"].dress)
+            $ renpy.show("Ann punish-evening alice-02"+chars['ann'].dress)
     else:
-        $ renpy.show("Ann punish-evening alice-06"+chars["ann"].dress)
+        $ renpy.show("Ann punish-evening alice-06"+chars['ann'].dress)
 
     Ann_17 "Я знаю, что не будешь. Заслужила наказание, терпи!"
 
@@ -483,8 +485,8 @@ label punishment_alice:
 
     # сцена с наказанной Алисой
     scene BG punish-evening 01
-    $ renpy.show("Ann punish-evening 01"+chars["ann"].dress)
-    if chars["alice"].dress == "a":
+    $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
+    if chars['alice'].dress == "a":
         if flags['smoke'] == "nopants":
             show Alice punish-evening 03aa
         else:

@@ -147,13 +147,13 @@ label Shower:
         "{i}закончить{/i}":
             $ mgg.cleanness = 100
 
-    if "ladder" in flags and flags["ladder"] == 1:
+    if "ladder" in flags and flags['ladder'] == 1:
         scene BG char Max shower-window-01
         Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
         Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
         Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
-        $ items["ladder"].InShop = True
-        $ flags["ladder"] = 2
+        $ items['ladder'].InShop = True
+        $ flags['ladder'] = 2
 
     $ spent_time = 30
     jump Waiting
@@ -169,13 +169,13 @@ label Bath:
         "{i}закончить{/i}":
             $ mgg.cleanness = 100
 
-    if "ladder" in flags and flags["ladder"] == 1:
+    if "ladder" in flags and flags['ladder'] == 1:
         scene BG char Max bath-window-01
         Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
         Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
         Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
-        $ items["ladder"].InShop = True
-        $ flags["ladder"] = 2
+        $ items['ladder'].InShop = True
+        $ flags['ladder'] = 2
 
     $ spent_time = 30
     jump Waiting
@@ -191,15 +191,15 @@ label Box:
     scene Max unbox 03
     Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
     scene Max unbox 04
-    $ SetPossStage("cams", 0)
+    $ poss['cams'].OpenStage(0)
     menu:
         Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..."
         "{i}закончить{/i}":
             pass
-        "{i}узнать подробнее о \"Возможностях\"{/i}" if flags["about_poss"]:
-            call about_poss from _call_about_poss
-    $ AvailableActions["unbox"].enabled = False
-    $ AvailableActions["searchcam"].enabled = True
+        "{i}узнать подробнее о \"Возможностях\"{/i}" if flags['about_poss']:
+            call about_poss
+    $ AvailableActions['unbox'].enabled = False
+    $ AvailableActions['searchcam'].enabled = True
     $ InspectedRooms.clear()
     if CurPoss == "":
         $ CurPoss = "cams"
@@ -234,13 +234,13 @@ label Laptop:
 
     $ search_theme.clear()
 
-    if possibility["cams"].stn == 1:
+    if poss['cams'].stn == 1:
         $ search_theme.append((_("{i}почитать о камерах{/i}"), "about_cam"))
-    if possibility["blog"].stn == 0:
+    if poss['blog'].stn == 0:
         $ search_theme.append((_("{i}читать о блогах{/i}"), "about_blog"))
-    if possibility["secretbook"].stn == 1:
+    if poss['secretbook'].stn == 1:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
-    if possibility["spider"].stn == 0:
+    if poss['spider'].stn == 0:
         $ search_theme.append((_("{i}читать о пауках{/i}"), "about_spider"))
     if flags['credit'] == 1:
         $ search_theme.append((_("{i}искать информацию по кридитам{/i}"), "about_credit"))
@@ -271,8 +271,8 @@ label buyfood:
     Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
     Max_04 "Готово. Да это же самая лёгкая задача!"
     $ spent_time = 50
-    $ dcv["buyfood"].stage = 2
-    $ dcv["buyfood"].lost = 2
+    $ dcv['buyfood'].stage = 2
+    $ dcv['buyfood'].set_lost(2)
     $ money -= 50
     jump Laptop
 
@@ -308,9 +308,9 @@ label create_site:
     show interface laptop cam-inf-4 at laptop_screen
     Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
     $ spent_time = 60
-    $ SetPossStage("cams", 4)
+    $ poss['cams'].OpenStage(4)
     $ money -= 100
-    $ items["hide_cam"].InShop = True
+    $ items['hide_cam'].InShop = True
     $ house[4].cams.append(HideCam())
     $ house[4].cams[0].grow = 100
 
@@ -334,10 +334,10 @@ label about_cam:
     Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
     Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
     Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
-    $ items["manual"].InShop = True
+    $ items['manual'].InShop = True
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 20
-    $ SetPossStage("cams", 2)
+    $ poss['cams'].OpenStage(2)
     jump Laptop
 
 
@@ -382,7 +382,7 @@ label about_blog:
             Max_00 "И зачем я только что-то изучал..."
 
 
-    $ SetPossStage("blog", 1)
+    $ poss['blog'].OpenStage(1)
     $ spent_time += 30
     jump Laptop
 
@@ -398,7 +398,7 @@ label about_secretbook:
 
     $ dcv['secretbook'] = Daily(4, False, True) # Покупка первой книги возможна через четыре дня.
     $ dcv['secretbook'].stage = 1
-    $ SetPossStage("secretbook", 2)
+    $ poss['secretbook'].OpenStage(2)
     $ spent_time += 30
     jump Laptop
 
@@ -427,9 +427,9 @@ label about_spider:
     Max_04 "Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?"
     Max_01 "Будем искать!"
 
-    $ SetPossStage("spider", 1)
-    $ AvailableActions["catchspider"].enabled = True
-    $ AvailableActions["hidespider"].enabled = True
+    $ poss['spider'].OpenStage(1)
+    $ AvailableActions['catchspider'].enabled = True
+    $ AvailableActions['hidespider'].enabled = True
     $ SpiderKill = 0
     $ SpiderResp = 0
     $ spent_time += 30
@@ -445,9 +445,9 @@ label SearchCam:
         Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
         Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
         $ random_loc_ab = "b"
-        $ AvailableActions["searchcam"].enabled = False
+        $ AvailableActions['searchcam'].enabled = False
         $ InspectedRooms.clear()
-        $ SetPossStage("cams", 1)
+        $ poss['cams'].OpenStage(1)
     else:
         Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
         $ InspectedRooms.append(current_room)
@@ -461,11 +461,11 @@ label ClearPool:
     scene BG char Max cleeningpool-00
     $ renpy.show("Max cleaning-pool 01"+mgg.dress)
     Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    $ dcv["clearpool"].stage = 2
+    $ dcv['clearpool'].stage = 2
     if day > 10:
-        $ dcv["clearpool"].lost = 6
+        $ dcv['clearpool'].set_lost(6)
     else:
-        $ dcv["clearpool"].lost = 9
+        $ dcv['clearpool'].set_lost(9)
     $ spent_time = 60
     $ cur_ratio = 2.5
     jump Waiting
@@ -545,27 +545,27 @@ label BookRead:
     $ renpy.show("Max reading 01"+mgg.dress)
     menu:
         Max_00 "Пришло время почитать что-то..."
-        "{i}читать \"WEB STANDARDS\"{/i}" if items["manual"].have and items["manual"].read < 5:
+        "{i}читать \"WEB STANDARDS\"{/i}" if items['manual'].have and items['manual'].read < 5:
             jump .manual
 
     label .manual:
-        $ items["manual"].read += 1
-        if items["manual"].read < 2:
+        $ items['manual'].read += 1
+        if items['manual'].read < 2:
             Max_00 "Хм... куча непонятных слов. Кажется, нужно будет заново перечитать первые главы...\n\n{color=[orange]}{i}(Книга изучена на 20%%){/i}{/color}"
-        elif items["manual"].read < 3:
+        elif items['manual'].read < 3:
             Max_00 "Так, ну с этим я уже разобрался, хорошо... А это что такое? Не ясно. Нужно будет всё осмыслить...\n\n{color=[orange]}{i}(Книга изучена на 40%%){/i}{/color}"
-        elif items["manual"].read < 4:
+        elif items['manual'].read < 4:
             Max_00 "Ого, вот это здорово! Уже можно делать сайт? А, нет... Ещё не всё понятно... Ну, разберусь в другой раз.\n\n{color=[orange]}{i}(Книга изучена на 60%%){/i}{/color}"
-        elif items["manual"].read < 5:
+        elif items['manual'].read < 5:
             Max_00 "Так, ну теперь картина вырисовывается. Осталось разобраться только с мелочами... Или это не мелочи?\n\n{color=[orange]}{i}(Книга изучена на 80%%){/i}{/color}"
         else:
             Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
-            $ SetPossStage("cams", 3)
-            $ items["manual"].InShop = False
+            $ poss['cams'].OpenStage(3)
+            $ items['manual'].InShop = False
             jump .end
 
     label .end:
-        $ cooldown["learn"] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
+        $ cooldown['learn'] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
         $ spent_time = max((60 - int(tm[-2:])), 40)
         $ cur_ratio = 0.6
         jump Waiting
@@ -632,8 +632,8 @@ label SearchSecretBook:
         $ spent_time += 10
         scene BG char Max secretbook-00
         Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
-        $ SetPossStage("secretbook", 1)
-        $ AvailableActions["searchbook"].enabled = False
+        $ poss['secretbook'].OpenStage(1)
+        $ AvailableActions['searchbook'].enabled = False
         jump Waiting
 
 
@@ -700,7 +700,7 @@ label InstallCam:
                     $ house[6].cams.append(HideCam())
                     $ house[6].cams[0].grow = 100
 
-    $ items["hide_cam"].have = False
+    $ items['hide_cam'].have = False
     $ cur_ratio = 1.5
     $ spent_time = 30
     jump Waiting
@@ -719,7 +719,7 @@ label SearchSpider:
                 $ renpy.scene()
                 $ renpy.show("BG char Max spider-search-01"+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
-                $ items["spider"].have = True
+                $ items['spider'].have = True
             else:
                 Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"
             $ spent_time = 30
@@ -747,7 +747,7 @@ label HideSpider:
             $ SpiderResp = 1
             if RandomChance(_chance):
                 $ NightOfFun.append("spider")
-            $ items["spider"].have = False
+            $ items['spider'].have = False
             $ spent_time = 10
 
         "В другой раз...":
@@ -773,7 +773,7 @@ label ViewLesson:
         if CurCource.current < len(CurCource.cources):
             $ CurCource.current += 1
 
-    $ cooldown["learn"] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
+    $ cooldown['learn'] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ cur_ratio = 0.6
     $ notify_list.append(_("Вы просматриваете видеоурок и повышаете свои навыки."))
@@ -834,8 +834,7 @@ label SearchCigarettes:
                     $ punalice[0][1] = 1
             "{i}не подставлять Алису{/i}":
                 pass
-    $ dcv['betray_smoke'].done = False
-    $ dcv['betray_smoke'].lost = 1
+    $ dcv['betray_smoke'].set_lost(1)
     $ spent_time += 30
     jump Waiting
 
@@ -876,7 +875,7 @@ label need_money:
 
 
 label cheat_money:
-    if possibility["cams"].stn < 4:
+    if poss['cams'].stn < 4:
         if all([
                 items['bikini'].InShop and not any([items['bikini'].have, items['bikini'].buy]),
                 items['dress'].InShop and not any([items['dress'].have, items['dress'].buy]),
@@ -913,7 +912,7 @@ label about_credit:
     else:
         Max_16 "Вот чёрт, а у меня нет никакого проекта! Получается, что денег мне никто не даст."
 
-    $ flags["credit"] = 2
+    $ flags['credit'] = 2
     $ spent_time += 30
     jump Laptop
 
