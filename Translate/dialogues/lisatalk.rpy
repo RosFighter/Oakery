@@ -5554,5 +5554,5 @@ translate english lisa_sorry_gifts_21b81128:
 translate english Lisa_sorry_0573955a:
 
     # Lisa_00 "Пожалуй... Времени у тебя - три дня. И чтобы успел до ужина!"
-    Lisa_00 ""
+    Lisa_00 "I guess... You've got three days. And make sure you have it before dinner!"
 
