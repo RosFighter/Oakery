@@ -1346,5 +1346,5 @@ translate english alice_sleep_morning_478c8465:
 translate english alice_shower_edba9d24:
 
     # Max_10 "С радостью бы подсмотрел за голенькой сестрёнкой, но это слишком опасно! Сперва нужно подарить то, что обещал..."
-    Max_10 ""
+    Max_10 "I would love to spy on my naked sister, but it's too dangerous! First I need to give what I promised..."
 
