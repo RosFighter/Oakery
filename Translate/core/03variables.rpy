@@ -1133,11 +1133,11 @@ translate english strings:
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы конфеты \"Ferrero Rocher\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большую коробку с этими конфетами?"
-    new "I bought Alice sweets \ "Ferrero Rocher\" and she was very happy! Of course, it turned out to be her favorite sweet! Maybe next time, you should give her a big box of these sweets."
+    new "I bought Alice sweets \"Ferrero Rocher\" and she was very happy! Of course, it turned out to be her favorite sweet! Maybe next time, you should give her a big box of these sweets."
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы шоколад \"Ritter Sport\" и она приняла его, но без особого восторга! Возможно, в следующий раз, следует подарить ей что-то другое?"
-    new "I bought a chocolate \"Ritter Sport \" for Alice and she accepted it, but without much enthusiasm! Maybe next time, I should give her something different?"
+    new "I bought a chocolate \"Ritter Sport\" for Alice and she accepted it, but without much enthusiasm! Maybe next time, I should give her something different?"
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы конфеты \"Raffaello\" и как оказалось, они ей не нравятся! В следующий раз, лучше подарить что-то другое..."
@@ -1158,4 +1158,3 @@ translate english strings:
     # game/core/03variables.rpy:338
     old "Алиса согласилась пустить меня к себе в комнату, пока примеряла пижаму! Конечно, она просила, чтобы я не подглядывал, хотя прекрасно знала, что я буду... И угрозы её стали какими-то шуточными. Интересно, к чему это приведёт? Так что подглядывать полезно, если правильно извиниться."
     new "Alice agreed to let me into her room while she tried on her pajamas! Of course, she asked me not to peek, even though she knew I would... And her threats became something of a joke. I wonder what this will lead to? So peeking is useful if you apologize correctly."
-

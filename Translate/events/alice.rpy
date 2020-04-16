@@ -1340,3 +1340,11 @@ translate english alice_sleep_morning_478c8465:
     # Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
     Max_04 "Wow! Such tempting curves and boobs can make you lose consciousness early in the morning... Nice big sis!" nointeract
 
+# TODO: Translation updated at 2020-04-16 23:34
+
+# game/events/alice.rpy:247
+translate english alice_shower_edba9d24:
+
+    # Max_10 "С радостью бы подсмотрел за голенькой сестрёнкой, но это слишком опасно! Сперва нужно подарить то, что обещал..."
+    Max_10 ""
+

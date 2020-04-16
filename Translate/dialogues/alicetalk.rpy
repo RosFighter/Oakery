@@ -5838,5 +5838,5 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1255
     old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "No, I just wanted to see how your pajamas would look..."
+    new "No, I just wanted to see how your pajamas would look...  {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 

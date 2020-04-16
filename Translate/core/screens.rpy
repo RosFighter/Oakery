@@ -318,3 +318,11 @@ translate english strings:
     old "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}"
     new "{i}{b}BUY THIS COURSE FOR: $[price]{/b}{/i}"
 
+# TODO: Translation updated at 2020-04-16 23:34
+
+translate english strings:
+
+    # game/core/screens.rpy:327
+    old "Задолженность: {color=[_col]}$[mgg.credit.debt]{/color}"
+    new "Debt: {color=[_col]}$[mgg.credit.debt]{/color}"
+
