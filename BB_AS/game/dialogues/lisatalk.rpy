@@ -5,9 +5,10 @@ label LisaTalkStart:
     if len(dial) == 0:
         jump AfterWaiting
 
-    $ __CurShedRec = GetPlan(plan_lisa, day, tm)
-    if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel
+    # $ __cur_plan = GetPlan(plan_lisa, day, tm)
+    $ __cur_plan = lisa.get_plan()
+    if __cur_plan.talklabel is not None:
+        call expression __cur_plan.talklabel
 
     $ dial.append((_("{i}уйти{/i}"), "exit"))
 
@@ -18,7 +19,7 @@ label LisaTalkStart:
 
     if rez != "exit":
         $ renpy.block_rollback()
-        $ __mood = chars['lisa'].GetMood()[0]
+        $ __mood = lisa.GetMood()[0]
         if rez in gifts['lisa']:
             if renpy.has_label(rez.label):
                 call expression rez.label
@@ -867,7 +868,7 @@ label Lisa_sg1:
     Lisa_12 "Ты на что-то намекаешь, Макс? Я не понимаю..."
     Max_01 "Я буду тебе помогать, если ты будешь выполнять мои определённые требования..."
     Lisa_09 "Макс, говори конкретнее. О чём ты? Например?"
-    if chars['lisa'].sleeptoples: # если по цепочке "Наставник" продвинулись раньше помощи с уроками
+    if lisa.sleeptoples: # если по цепочке "Наставник" продвинулись раньше помощи с уроками
         Max_07 "Например, я попрошу тебя о чём-то, что ты должна будешь сделать..."
         Lisa_02 "Нет, Макс. Кота в мешке мне не надо. Либо ты помогаешь просто так, либо я сама во всём разберусь и справлюсь без тебя..."
         Max_00 "Ну если вопрос так стоит, то конечно буду помогать просто так!"
@@ -929,7 +930,7 @@ label Lisa_HomeWork:
             jump Waiting
     scene BG char Lisa lessons-help-00
     $ renpy.show("FG lessons-help-"+pose3_1)
-    $ renpy.show("Lisa lessons-help "+pose3_1+chars['lisa'].dress)
+    $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
     $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
 
     menu:
@@ -961,7 +962,7 @@ label Lisa_HomeWork:
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].stn > 2:
             $ talk_var['help.hw'] += 1
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if poss['sg'].stn > 2  and chars['lisa'].dress > 'a' and talk_var['lisa.pun'] > 2: # допилить условие на полотенце
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if poss['sg'].stn > 2  and lisa.dress > 'a' and talk_var['lisa.pun'] > 2: # допилить условие на полотенце
             $ talk_var['help.hw'] += 1
             $ _chance = GetChanceConvince(punlisa, 2)
             $ _chance_color = GetChanceColor(_chance)
@@ -986,16 +987,16 @@ label Lisa_HomeWork:
                     pass
                 "Как хочешь. Но мама тебя накажет!":
                     pass
-            if chars['lisa'].GetMood()[0] < 3:
-                $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+chars['lisa'].dress)
+            if lisa.GetMood()[0] < 3:
+                $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
                 Lisa_09 "[succes!t]Ладно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
                 Lisa_00 "Ну всё, а теперь сделай работу на отлично!"
             else:
-                $ renpy.show("Lisa lessons-breast 03"+chars['lisa'].dress)
+                $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
                 Lisa_05 "[succes!t]Ладно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
                 Lisa_01 "Ну все, полюбовался и хватит, а теперь сделай работу на отлично!"
             Max_05 "Вот теперь убедила!"
-            $ renpy.show("Lisa lessons-help "+pose3_1+chars['lisa'].dress)
+            $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
             $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
             Max_00 "{i}Ну, раз Лиза выполнила мою просьбу, придётся всё сделать как положено. Да и если ей поставят двойку за это снова, она больше ничего уже не покажет мне...{/i}"
             Max_04 "Ну всё, Лиза, я закончил!"
@@ -1045,7 +1046,7 @@ label Lisa_HomeWork:
         Max_10 "Так, что тут у нас... Ох, вроде недавно школу закончил... ну, учился недавно ещё, а уже ничего не помню... Хотя... Вот. Да, всё верно!"
         Max_04 "Ну всё, Лиза, я закончил!"
         hide Max
-        $ renpy.show("Lisa lessons-help "+pose3_1+chars['lisa'].dress)
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
         $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
         $ punlisa[0][0] = 3
         if talk_var['truehelp'] == 6:
@@ -1114,7 +1115,7 @@ label Lisa_sorry:
         Max_03 "Ну всё, значит жди в скором времени вкусняшку!"
         Lisa_01 "И только попробуй меня расстроить, Макс! Сроки у тебя те же."
         Max_01 "Ага..."
-    elif len(sorry_gifts['lisa'].give == 3) and 'bathrobe' not in chars['lisa'].gifts:
+    elif len(sorry_gifts['lisa'].give == 3) and 'bathrobe' not in lisa.gifts:
         Lisa_09 "Нет уж, Макс... Думаю, я просто сдам тебя маме и пусть она с тобой разбирается! Хватит уже за мной подглядывать..."
         Max_07 "А может мы снова с тобой договоримся?! Как раньше..."
         Lisa_01 "Чтобы ты снова кормил меня сладостями?! Нет, это как-то слишком уж просто для тебя... Теперь, если не хочешь попасть под мамино наказание, ты купишь то, что я попрошу!"
@@ -1166,7 +1167,8 @@ label gift_swimsuit:
 
     label .swimsuit_show:
         scene BG char Lisa newsuit
-        $ __suf = 'a' if GetPlan(plan_lisa, day, tm).name in ['swim', 'sun'] else ''
+        # $ __suf = 'a' if GetPlan(plan_lisa, day, tm).name in ['swim', 'sun'] else ''
+        $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
         $ renpy.show("Lisa newsuit 01"+__suf)
         Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
         Max_02 "Ладно, ладно... Раздевайся уже!"
@@ -1215,16 +1217,16 @@ label gift_swimsuit:
         $ items['bikini'].InShop = False
         # $ items['bathrobe'].InShop = True
         $ poss['Swimsuit'].OpenStage(3)
-        $ chars['lisa'].gifts.append('bikini')
-        if chars['lisa'].inferic is not None:
-            $ chars['lisa'].inferic = clip(chars['lisa'].inferic-50.0, 0.0, 100.0)
-        if chars['lisa'].infmax is not None:
-            $ chars['lisa'].infmax = clip(chars['lisa'].infmax+20.0, 0.0, 100.0)
+        $ lisa.gifts.append('bikini')
+        if lisa.inferic is not None:
+            $ lisa.inferic = clip(lisa.inferic-50.0, 0.0, 100.0)
+        if lisa.infmax is not None:
+            $ lisa.infmax = clip(lisa.infmax+20.0, 0.0, 100.0)
         else:
-            $ chars['lisa'].infmax = 20.0
+            $ lisa.infmax = 20.0
 
         $ cloth_type['lisa']['swim'] = 'b'
-        $ ClothingNps('lisa', GetPlan(plan_lisa, day, tm))
+        $ ClothingNps('lisa', lisa.plan_name)
 
         $ spent_time += 10
         jump Waiting
@@ -1243,43 +1245,43 @@ label gift_bathrobe:
     elif flags['lisa_superhug'] > 3:  ## За третий извинительный подарок Макс получил поцелуй
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
-            $ renpy.show("Lisa hugging-myroom 04"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 04"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging yard-00
-            $ renpy.show("Lisa hugging-yard 04"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 04"+lisa.dress+mgg.dress)
         Lisa_02 "Макс, давай обниматься! Лови меня..."   #спрайт с суперобнимашками
         Max_05 "{i}Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается.{/i}"
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 03"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 03"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 03"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 03"+lisa.dress+mgg.dress)
         Lisa_05 "И в щёчку ещё чмокну! Ммм..."   #спрайт с поцелуем
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 02"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 02"+lisa.dress+mgg.dress)
         Max_03 "Ого, сколько нежности... Может быть, примеришь его при мне?"
         Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"   #спрайт вместе
         $ poss['SoC'].OpenStage(8)
     elif flags['lisa_superhug'] > 2:  ## За третий извинительный подарок Макс получил объятья
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
-            $ renpy.show("Lisa hugging-myroom 01"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging yard-00
-            $ renpy.show("Lisa hugging-yard 01"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 01"+lisa.dress+mgg.dress)
         Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
         Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 03"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 03"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 03"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 03"+lisa.dress+mgg.dress)
         Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"   #спрайт с поцелуем
         Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 02"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 02"+lisa.dress+mgg.dress)
         Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
         Max_04 "Может быть, примеришь его при мне?"
         Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
@@ -1287,16 +1289,16 @@ label gift_bathrobe:
     elif flags['lisa_superhug'] > 1:  ## За третий извинительный подарок Макс получил только прощение
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
-            $ renpy.show("Lisa hugging-myroom 01"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging yard-00
-            $ renpy.show("Lisa hugging-yard 01"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 01"+lisa.dress+mgg.dress)
         Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
         Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 02"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 02"+lisa.dress+mgg.dress)
         Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
         Max_04 "И когда я на тебе его увижу?"
         Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
@@ -1309,13 +1311,13 @@ label gift_bathrobe:
     $ AddRelMood("lisa", 100, 200)
     $ items['bathrobe'].have = False
     $ items['bathrobe'].InShop = False
-    $ chars['lisa'].gifts.append('bathrobe')
-    if chars['lisa'].inferic is not None:
-        $ chars['lisa'].inferic = clip(chars['lisa'].inferic-50.0, 0.0, 100.0)
-    if chars['lisa'].infmax is not None:
-        $ chars['lisa'].infmax = clip(chars['lisa'].infmax+20.0, 0.0, 100.0)
+    $ lisa.gifts.append('bathrobe')
+    if lisa.inferic is not None:
+        $ lisa.inferic = clip(lisa.inferic-50.0, 0.0, 100.0)
+    if lisa.infmax is not None:
+        $ lisa.infmax = clip(lisa.infmax+20.0, 0.0, 100.0)
     else:
-        $ chars['lisa'].infmax = 20.0
+        $ lisa.infmax = 20.0
 
     $ sorry_gifts['lisa'].give.append(4)
     $ cloth_type['lisa']['learn']  = 'b'
@@ -1327,14 +1329,14 @@ label gift_bathrobe:
 label conversation_after_dinner(var=0):
 
     scene BG char Max talk-terrace-00
-    $ renpy.show("Lisa talk-terrace 01"+chars['lisa'].dress)
+    $ renpy.show("Lisa talk-terrace 01"+lisa.dress)
     $ renpy.show("Max talk-terrace 01"+mgg.dress)
     Lisa_00 "Макс, подожди минутку..."
     Max_00 "Да, Лиза, что такое?"
 
     if var == 1:
         # Макс совсем не помогал Лизе делать уроки
-        $ renpy.show("Lisa talk-terrace 02"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         menu:
             Lisa_09 "Помнишь, ты говорил, что будешь помогать мне делать уроки?"
             "Да, конечно помню...":
@@ -1342,18 +1344,18 @@ label conversation_after_dinner(var=0):
             "Возможно... А что?":
                 pass
         $ renpy.show("Max talk-terrace 02"+mgg.dress)
-        $ renpy.show("Lisa talk-terrace 03"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         Lisa_10 "Тогда почему ты не помогал?"
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_08 "Я думал, что у тебя получилось самой во всём разобраться... Хотя, раз тебя снова наказали за двойку, значит не всё так уж здорово у тебя с уроками."
-        $ renpy.show("Lisa talk-terrace 01"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 01"+lisa.dress)
         Lisa_09 "Да... Мне нужна твоя помощь, Макс. Будешь делать уроки вместе со мной?"
         $ renpy.show("Max talk-terrace 04"+mgg.dress)
         Max_07 "Ну... Я, конечно, мог бы, но зачем мне просто так тратить своё время. Мне нужен какой-то интерес в этом..."
         Lisa_13 "Ну Макс! Я не знаю, чем тебя заинтересовать... Денег у меня нет, я не зарабатываю. У меня вообще ничего нет..."
         $ renpy.show("Max talk-terrace 02"+mgg.dress)
         Max_04 "Я бы так не сказал, Лиза. Если бы ты спала, например, без своих штанов, в трусиках, то мне было бы приятно это видеть... Как мне кажется – это хорошая награда за хорошие оценки."
-        $ renpy.show("Lisa talk-terrace 03"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
@@ -1361,7 +1363,7 @@ label conversation_after_dinner(var=0):
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
-        $ renpy.show("Lisa talk-terrace 02"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         Lisa_03 "[__tmp!t]"
         Max_03 "Ну для начала точно придаст, а там посмотрим..."
         Lisa_02 "Это мы сперва посмотрим, какие у меня будут оценки!"
@@ -1371,18 +1373,18 @@ label conversation_after_dinner(var=0):
         $ poss['sg'].OpenStage(4)
     elif var == 2:
         # Макс безвозмездно помогал Лизе делать уроки, но перестал
-        $ renpy.show("Lisa talk-terrace 02"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         Lisa_09 "Почему ты перестал помогать мне с уроками?"
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Помог немного и хватит, дальше тебе надо самой разбираться. Не до окончания же школы мне с тобой сидеть..."
-        $ renpy.show("Lisa talk-terrace 01"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 01"+lisa.dress)
         Lisa_10 "Но мне это нужно! Ты же видишь, что я без тебя не справляюсь..."
         $ renpy.show("Max talk-terrace 04"+mgg.dress)
         Max_07 "Ну... Я, конечно, мог бы, но зачем мне просто так тратить своё время. Мне нужен какой-то интерес в этом..."
         Lisa_13 "Ну Макс! Я не знаю, чем тебя заинтересовать... Денег у меня нет, я не зарабатываю. У меня вообще ничего нет..."
         $ renpy.show("Max talk-terrace 02"+mgg.dress)
         Max_04 "Я бы так не сказал, Лиза. Если бы ты спала, например, без своих штанов, в трусиках, то мне было бы приятно это видеть... Как мне кажется – это хорошая награда за хорошие оценки."
-        $ renpy.show("Lisa talk-terrace 03"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
@@ -1390,7 +1392,7 @@ label conversation_after_dinner(var=0):
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
-        $ renpy.show("Lisa talk-terrace 02"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         Lisa_03 "[__tmp!t]"
         Max_03 "Ну для начала точно придаст, а там посмотрим..."
         Lisa_02 "Это мы сперва посмотрим, какие у меня будут оценки!"
@@ -1401,11 +1403,11 @@ label conversation_after_dinner(var=0):
 
     elif var == 3:
         # Макс помогал Лизе делать уроки за услуги, но перестал
-        $ renpy.show("Lisa talk-terrace 02"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         Lisa_09 "Почему ты перестал помогать мне с уроками? Мы же договорились, ты мне – я тебе!"
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_08 "Мне показалось, что у тебя и без моей помощи всё получится. Видимо, ошибся."
-        $ renpy.show("Lisa talk-terrace 03"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         Lisa_10 "Вот именно! Раз уж обещал помогать, так помогай. А то это не честно! Я ведь, как дура, свою часть уговора выполняю, а меня все равно наказывают..."
         $ renpy.show("Max talk-terrace 01"+mgg.dress)
         Max_07 "Согласен... Может я не всегда смогу найти на это время, но постараюсь помогать тебе почаще."
@@ -1416,14 +1418,14 @@ label conversation_after_dinner(var=0):
 
     elif var == 4:
         # Макс специально делал ошибки
-        $ renpy.show("Lisa talk-terrace 03"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         Lisa_13 "Мне вот начинает казаться, что толку от твоей помощи с уроками никакой! Или ты специально делал ошибки, чтобы меня наказывали?!"
         $ renpy.show("Max talk-terrace 04"+mgg.dress)
         Max_08 "Конечно нет, Лиза! Наверно, я просто был не внимателен или уже всё позабыл по учёбе..."
         Lisa_10 "В таком случае, пора бы тебе уже поднапрячься и всё вспомнить! А то я могу и маме рассказать, что ты мне совсем не помогаешь... Или вообще с тобой разговаривать перестану!"
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Ну чего ты сразу обижаешься, Лиза? Я учту свои ошибки и мы вместе всё исправим. Как ты на это смотришь?"
-        $ renpy.show("Lisa talk-terrace 02"+chars['lisa'].dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         Lisa_01 "Хорошо, я дам тебе шанс... Но ты должен мне шоколадку. Большую!"
         Max_01 "Договорились."
         $ AttitudeChange('lisa', -2)
@@ -1514,25 +1516,25 @@ label lisa_sorry_gifts:
         $ poss['SoC'].OpenStage(5)
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
-            $ renpy.show("Lisa hugging-myroom 01"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging yard-00
-            $ renpy.show("Lisa hugging-yard 01"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 01"+lisa.dress+mgg.dress)
         return
 
     label .nearby:
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 02"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 02"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 02"+lisa.dress+mgg.dress)
         return
 
     label .kiss:
         $ poss['SoC'].OpenStage(6)
         if current_room == house[0]:
-            $ renpy.show("Lisa hugging-myroom 03"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-myroom 03"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show("Lisa hugging-yard 03"+chars['lisa'].dress+mgg.dress)
+            $ renpy.show("Lisa hugging-yard 03"+lisa.dress+mgg.dress)
         return
 
     label .bad: ## ненавистное

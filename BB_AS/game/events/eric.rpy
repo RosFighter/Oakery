@@ -141,8 +141,8 @@ label Eric_talk_afterdinner:
 
 label eric_resting:
     scene BG char Ann relax-evening-01
-    $ renpy.show("Eric relax "+pose3_1+chars['eric'].dress)
-    $ persone_button1 = "Eric relax "+pose3_1+chars['eric'].dress
+    $ renpy.show('Eric relax '+pose3_1+eric.dress)
+    $ persone_button1 = 'Eric relax '+pose3_1+eric.dress+'b'
     return
 
 
@@ -151,34 +151,41 @@ label eric_ann_tv:
     scene BG tv-watch-01
     $ film = ae_tv_order[0]
 
-    if tv_scene == "" or not peeping['ann_eric_tv']:
+    if tv_scene == '' or not peeping['ann_eric_tv']:
         ### Дальний план, нейтральная поза
-        $ renpy.show('porn_'+film+'_01_02', at_list=[tv_screen,])
-        $ renpy.show("Eric tv-watch 01"+chars['eric'].dress)
+        $ renpy.show('porn_'+film+' 01_02', at_list=[tv_screen,])
+        $ renpy.show('Eric tv-watch 01'+eric.dress)
+    elif peeping['ann_eric_tv'] > 1:
+        $ renpy.show('tv serial '+renpy.random.choice(['01','02','03','04','05','06','07']), at_list=[tv_screen,])
+        $ renpy.show('Eric tv-watch 01'+eric.dress)
     else:
         ### Дальний план, поза, на которой остановилось подглядывание
         if pose2_3 == '01':
-            $ renpy.show('tv porn-01 0'+str(renpy.random.randint(6, 7)), at_list=[tv_screen,])
+            $ renpy.show('porn_'+film+' 05_06', at_list=[tv_screen,])
         else:
-            $ renpy.show('tv porn-01 '+('0'+str(renpy.random.randint(8, 10)))[-2:], at_list=[tv_screen,])
-        $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
+            $ renpy.show('porn_'+film+' 07_08', at_list=[tv_screen,])
+        $ renpy.show('Eric tv-watch '+tv_scene+pose2_3+eric.dress)
 
     if peeping['ann_eric_tv']:
         return
     ### Дальний план, нейтральная поза
 
     $ peeping['ann_eric_tv'] = 1
-    if flags['tv_peep'] > 0:
-        Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
+    if flags['ae.tv.hj'] > 0:
+        $ txt = _("Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно...")
+        $ txt2 = _("Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?")
+    else:
+        $ txt = _("Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой...")
+        $ txt2 = _("Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?")
     menu:
-        Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой..."
+        Max_07 "[txt!t]"
         "{i}наблюдать за ними{/i}":
             pass
         "{i}подойти к ним{/i}":
             scene BG lounge-tv-00
-            $ renpy.show("Eric tv "+renpy.random.choice(['01', '02', '03'])+chars['eric'].dress)
+            $ renpy.show('Eric tv '+renpy.random.choice(['01', '02', '03'])+eric.dress)
             menu:
-                Ann_12 "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?"
+                Ann_12 "[txt2!t]"
                 "Конечно, мам! {i}(уйти){/i}":
                     jump .end
                 "Конечно, мам! {i}(спрятаться){/i}":
@@ -186,25 +193,32 @@ label eric_ann_tv:
         "{i}уйти{/i}":
             jump .end
 
-    $ tv_scene = renpy.random.choice(["bj", "hj"]) if flags['tv_peep'] > 0 else 'hj'
+    $ tv_scene = renpy.random.choice(['bj', 'hj']) if flags['ae.tv.hj'] > 0 else 'hj'
 
     $ spent_time += 10
     $ pose2_3 = '01'
-    $ renpy.show('tv porn-01 0'+str(renpy.random.randint(6, 7)), at_list=[tv_screen,])
-    $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
+    $ renpy.show('porn_'+film+' 03_04', at_list=[tv_screen,])
+    $ renpy.show('Eric tv-watch '+tv_scene+pose2_3+eric.dress)
 
     if tv_scene == 'bj':
         ### Дальний план, минет
+        if flags['ae.tv.bj'] > 0:
+            $ txt = _("Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику...")
+            $ txt2 = _("На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?")
+        else:
+            $ txt = _("Ого! На экране стало интереснее! А куда это мама так наклонилась?")
+            $ txt2 = _("Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?")
         menu:
-            Max_08 "Ого! На экране стало интереснее! А куда это мама так наклонилась?"
+            Max_08 "[txt!t]"
             "{i}продолжать смотреть{/i}":
                 ### Дальний план, минет без полотенца
                 $ spent_time += 10
                 $ pose2_3 = '02'
-                $ renpy.show('tv porn-01 08', at_list=[tv_screen,])
-                $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
+                $ ann.dress_inf = '00'
+                $ renpy.show('porn_'+film+' 05_06', at_list=[tv_screen,])
+                $ renpy.show('Eric tv-watch '+tv_scene+pose2_3+eric.dress)
                 menu:
-                    Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
+                    Max_07 "[txt2!t]"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
                     "{i}продолжать смотреть{/i}":
@@ -216,16 +230,23 @@ label eric_ann_tv:
                 jump .end
     else:
         ### Дальний план, дрочка
+        if flags['ae.tv.bj'] > 0:
+            $ txt = _("Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику...")
+            $ txt2 = _("На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?")
+        else:
+            $ txt = _("Ого! На экране стало интереснее! А что это мама там делает?")
+            $ txt2 = _("Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?")
         menu:
-            Max_08 "Ого! На экране стало интереснее! А что это мама там делает?"
+            Max_08 "[txt!t]"
             "{i}продолжать смотреть{/i}":
                 ### Дальний план, дрочка без полотенца
                 $ spent_time += 10
                 $ pose2_3 = '02'
-                $ renpy.show('tv porn-01 08', at_list=[tv_screen,])
-                $ renpy.show("Eric tv-watch "+tv_scene+pose2_3+chars['eric'].dress)
+                $ ann.dress_inf = '00'
+                $ renpy.show('porn_'+film+' 05_06', at_list=[tv_screen,])
+                $ renpy.show('Eric tv-watch '+tv_scene+pose2_3+eric.dress)
                 menu:
-                    Max_07 "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?"
+                    Max_07 "[txt2!t]"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
                     "{i}продолжать смотреть{/i}":
@@ -237,51 +258,72 @@ label eric_ann_tv:
                 jump .end
 
     ## откровенная порнуха на экране
-    $ renpy.show('tv porn-01 '+('0'+str(renpy.random.randint(9, 10)))[-2:], at_list=[tv_screen,])
-    menu:
-        Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!"
-        "{i}подойти ближе{/i}":
-            jump .closer1
-        "{i}тихо уйти{/i}":
-            jump .end
+    $ renpy.show('porn_'+film+' 07_08', at_list=[tv_screen,])
+    if flags['ae.tv.hj'] > 0:
+        menu:
+            Max_10 "Если меня заметят, пока я смотрю порно на большом экране и подглядываю за тем, что происходит здесь же, наяву, меня точно накажут"
+            "{i}продолжать смотреть{/i}":
+                $ renpy.show('porn_'+film+' 09_10', at_list=[tv_screen,])
+                Max_09 "Похоже, порно подходит к концу, а вот Эрик не кончает! Наверно, они просто решили {i}разогреться{/i} перед тем, что будет в маминой спальне... А это значит, мне пора уходить."
+                $ spent_time = 50 - int(tm[-2:])  # еще 10 минут добави концовка
+                jump .end
+            "{i}тихо сматываться{/i}":
+                jump .end
+    else:
+        menu:
+            Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!"
+            "{i}подойти ближе{/i}":
+                jump .closer1
+            "{i}тихо уйти{/i}":
+                jump .end
 
     label .closer1:
         ### ближний план отрисовываем согласно установленным переменным bj/hj + поза в полотенце/без полотенца
         $ spent_time += 10
         scene BG lounge-tv-00
-        $ renpy.show("Eric tv "+tv_scene+pose2_3+chars['eric'].dress)
-        if tv_scene == 'hj':
-            if pose2_3 == '01':
-                $ txt = _("Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
-            else:
-                $ txt = _("Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
-        else:
-            if pose2_3 == '01':
-                $ txt = _("Она что, отсасывает ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
-            else:
-                $ txt = _("Она что, совершенно голая отсасывает ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?")
-        if pose2_3 == '01':
-            Max_15 "[txt!t]" nointeract
-        else:
-            Max_16 "[txt!t]" nointeract
+        $ renpy.show('Eric tv '+tv_scene+pose2_3+eric.dress)
 
-        $ __dial = [("Вы охренели!", 2), ("{i}тихо уйти{/i}", 3)]
-        if False:
-            $ __dial.insert(0, ("Ма-а-ам?", 1))
-        $ __r1 = renpy.display_menu(__dial)
+        if flags['ae.tv.hj'] == 0:
+            if pose2_3 == '01':
+                Max_15 "Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
+            else:
+                Max_16 "Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
 
-        if __r1 == 1:
-            Eric_09 "Макс! Чего хотел? Не видишь, мы заняты? Если хочешь смотреть, делай это тихо и нам не мешай. А ты, Ань, не останавливайся, продолжай..."
-            Max_12 "Охренеть!"
-            jump .end
-        elif __r1 == 2:
-            pass
+            $ __dial = [("Вы охренели!", 2), ("{i}тихо уйти{/i}", 3)]
+            if False:
+                $ __dial.insert(0, ("Ма-а-ам?", 1))
+            $ __r1 = renpy.display_menu(__dial)
+
+            if __r1 == 1:
+                Eric_09 "Макс! Чего хотел? Не видишь, мы заняты? Если хочешь смотреть, делай это тихо и нам не мешай. А ты, Ань, не останавливайся, продолжай..."
+                Max_12 "Охренеть!"
+                jump .end
+            elif __r1 == 2:
+                pass
+            else:
+                ##"{i}тихо уйти{/i}":
+                jump .end
         else:
-            ##"{i}тихо уйти{/i}":
-            jump .end
+            if tv_scene == 'hj':   # дрочка
+                if pose2_3 == '01':  # Анна в полотенце
+                    Max_11 "Да, она ему дрочит! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+                else:
+                    Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+            elif flags['ae.tv.bj']:  # не первый минет
+                if pose2_3 == '01':  # Анна в полотенце
+                    Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+                else:
+                    Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+            else:  # первый минет
+                Max_15 "Она что, отсасывает ему?! Прямо здесь... Вот же развратница, а если кто-то зайдёт и увидит!" nointeract
+
+            $ __r1 = renpy.display_menu([("{i}тихо уйти{/i}", 3),])
+            if __r1:
+                jump .end
 
     ### Макс выдал себя
-    $ renpy.show("Eric tv hjbj"+pose2_3+chars['eric'].dress)
+    $ renpy.show('Eric tv hjbj'+pose2_3+eric.dress)
+    $ peeping['ann_eric_tv'] = 2
     menu:
         Ann_13 "Что? Кто здесь? Макс?! Выйди немедленно, не видишь..."
         "Как раз всё вижу. Не стыдно?":
@@ -311,8 +353,9 @@ label eric_ann_tv:
             Max_10 "Ладно, уже ухожу..."
 
     label .end:
-        $ flags['tv_peep'] += 1
+        $ flags['ae.tv.'+tv_scene] += 1
         $ spent_time += 10
+        $ current_room = house[0]
         jump Waiting
 
 
@@ -343,11 +386,11 @@ label eric_ann_fucking:
     if fuck_scene == 6:
         show AnimAnnEric1
     else:
-        $ renpy.show("Eric fuck 0"+str(fuck_scene))
+        $ renpy.show('Eric fuck 0'+str(fuck_scene))
     if fuck_scene in [3, 6]:
-        $ renpy.show("FG ann&eric-voyeur-02")
+        $ renpy.show('FG ann&eric-voyeur-02')
     else:
-        $ renpy.show("FG ann&eric-voyeur-01")
+        $ renpy.show('FG ann&eric-voyeur-01')
 
     if RandomChance(_chance):
         if fuck_scene == 1:
@@ -363,10 +406,10 @@ label eric_ann_fucking:
     else:
         if fuck_scene == 6:
             scene BG char Eric bed-02
-            $ renpy.show("Eric fuck 06b")
-            $ renpy.show("FG ann&eric-voyeur-02")
+            $ renpy.show('Eric fuck 06b')
+            $ renpy.show('FG ann&eric-voyeur-02')
         else:
-            $ renpy.show("Eric fuck 0"+str(fuck_scene)+"b")
+            $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
         Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
         $ mgg.stealth += 0.05
         $ punreason[3] = 1
@@ -383,10 +426,10 @@ label eric_ann_fucking:
 
     if fuck_scene == 6:
         scene BG char Eric bed-02
-        $ renpy.show("Eric fuck 06a")
-        $ renpy.show("FG ann&eric-voyeur-02")
+        $ renpy.show('Eric fuck 06a')
+        $ renpy.show('FG ann&eric-voyeur-02')
     else:
-        $ renpy.show("Eric fuck 0"+str(fuck_scene)+"a")
+        $ renpy.show('Eric fuck 0'+str(fuck_scene)+'a')
     if fuck_scene == 1:
         Max_09 "Чёрт, этот удачливый ублюдок кончил ей прямо в рот, причём, судя по довольному лицу мамы, ей это понравилось! Ну почему таким уродам всегда везёт?! Ладно, надо уходить, а то они сейчас меня заметят..."
     elif fuck_scene == 2:
@@ -413,26 +456,26 @@ label eric_ann_sleep:
             Max_00 "Кажется, все спят..."
             "{i}заглянуть в окно{/i}":
                 scene BG char Ann bed-night-01
-                $ renpy.show("Eric sleep-night "+pose3_1)
-                $ renpy.show("FG ann-voyeur-night-00"+mgg.dress)
-                if pose3_1 == "01":
+                $ renpy.show('Eric sleep-night '+pose3_1)
+                $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                if pose3_1 == '01':
                     Max_01 "Похоже, они крепко спят... Совершенно голые! Чёрт, жаль только мама лежит за Эриком и её почти не видно... Почему он такой здоровый?" nointeract
-                elif pose3_1 == "02":
+                elif pose3_1 == '02':
                     Max_07 "О, да! Этой ночью мама предстала во всей красе... Полностью голенькая... такая соблазнительная. Только вот обезьяна здесь лишняя повисла!" nointeract
                 else:
                     Max_04 "Класс! У моей мамы лучшая попка в мире... а голая она просто сводит с ума! Ещё бы эта гора мышц около неё не лежала..." nointeract
-                $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), "sneak"), (_("{i}уйти{/i}"), "exit")])
-                if rez != "exit":
+                $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
+                if rez != 'exit':
                     $ spent_time += 10
                     scene BG char Ann bed-night-02
-                    $ renpy.show("Eric sleep-night-closer "+pose3_1)
-                    if pose3_1 == "01":
+                    $ renpy.show('Eric sleep-night-closer '+pose3_1)
+                    if pose3_1 == '01':
                         Max_03 "Они действительно крепко спят... Может самого интересного и не видно, но мама так элегантно, по-женски, закинула на него свою ножку... Хорошо, что такая жара и дома нет кондиционеров... Так, пора уходить." nointeract
-                    elif pose3_1 == "02":
+                    elif pose3_1 == '02':
                         Max_02 "Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся." nointeract
                     else:
                         Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
-                    $ rez = renpy.display_menu([(_("{i}уйти{/i}"), "exit")])
+                    $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
             "{i}уйти{/i}":
                 pass
         $ spent_time = 10
@@ -459,7 +502,7 @@ label eric_ann_shower:
         $ talk_var['ae.ladd'] += 1
         $ spent_time += 20
         $ renpy.scene()
-        $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
+        $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
         $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
 
@@ -467,7 +510,7 @@ label eric_ann_shower:
         if fuck_scene == 4:
             show Eric bath-window-morning 02a
         else:
-            $ renpy.show("Eric bath-window-morning 0"+str(fuck_scene)+"a")
+            $ renpy.show('Eric bath-window-morning 0'+str(fuck_scene)+'a')
         show FG bathroom-morning-00
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.05
@@ -530,13 +573,13 @@ label eric_ann_shower:
     label .start_peeping:
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
-        $ __r1 = renpy.random.choice(["01", "02", "03"])
+        $ __r1 = renpy.random.choice(['01', '02', '03'])
         $ _chance = GetChance(mgg.stealth, 3)
         $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
         $ renpy.scene()
-        $ renpy.show("Eric shower "+ __r1)
-        $ renpy.show("FG shower 00"+mgg.dress)
+        $ renpy.show('Eric shower '+ __r1)
+        $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
@@ -544,15 +587,15 @@ label eric_ann_shower:
             "{i}уйти{/i}":
                 jump Waiting
         $ spent_time += 10
-        if __r1 == "01":
-            $ __r2 = renpy.random.choice(["01", "02", "03"])
-        elif __r1 == "02":
-            $ __r2 = renpy.random.choice(["04", "05"])
+        if __r1 == '01':
+            $ __r2 = renpy.random.choice(['01', '02', '03'])
+        elif __r1 == '02':
+            $ __r2 = renpy.random.choice(['04', '05'])
         else:
-            $ __r2 = renpy.random.choice(["06", "07"])
+            $ __r2 = renpy.random.choice(['06', '07'])
         if not RandomChance(_chance):
             scene BG shower-closer
-            if __r1 == "01":
+            if __r1 == '01':
                 show Eric shower-closer seen01
             else:
                 show Eric shower-closer seen02
@@ -565,29 +608,29 @@ label eric_ann_shower:
 
         $ mgg.stealth += 0.2
         $ notify_list.append(_("Скрытность Макса повысилась"))
-        $ chars['ann'].dress_inf = "00a"
+        $ ann.dress_inf = '00a'
         scene BG shower-closer
-        $ renpy.show("Eric shower-closer "+__r2)
+        $ renpy.show('Eric shower-closer '+__r2)
         show FG shower-closer
-        if __r1 == "01":
+        if __r1 == '01':
             Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
-        elif __r1 == "02":
+        elif __r1 == '02':
             Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
         else:
             Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
-        $ rez = renpy.display_menu([(_("{i}смотреть до конца{/i}"), "sneak"), (_("{i}уйти{/i}"), "exit")])
-        if rez == "exit":
+        $ rez = renpy.display_menu([(_("{i}смотреть до конца{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
+        if rez == 'exit':
             $ current_room = house[6]
             jump Waiting
 
         $ spent_time += 10
-        $ renpy.show("Eric shower-closer "+__r2+"a")
-        if __r1 == "01":
+        $ renpy.show('Eric shower-closer '+__r2+'a')
+        if __r1 == '01':
             Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
-        elif __r1 == "02":
+        elif __r1 == '02':
             Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
         else:
             Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
-        $ rez = renpy.display_menu([(_("{i}уйти{/i}"), "exit")])
+        $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
         $ current_room = house[6]
         jump Waiting

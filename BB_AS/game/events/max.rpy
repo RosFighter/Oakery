@@ -11,11 +11,11 @@ label StartDialog:
         jump AfterWaiting
 
     if len(current_room.cur_char) == 1:
-        if current_room.cur_char[0] == "lisa":
+        if current_room.cur_char[0] == 'lisa':
             jump LisaTalkStart
-        elif current_room.cur_char[0] == "alice":
+        elif current_room.cur_char[0] == 'alice':
             jump AliceTalkStart
-        elif current_room.cur_char[0] == "ann":
+        elif current_room.cur_char[0] == 'ann':
             jump AnnTalkStart
     jump AfterWaiting
 
@@ -26,7 +26,7 @@ label StartDialog:
 label Sleep:
     $ renpy.block_rollback()
     scene BG char Max bed-night-01
-    $ renpy.show("Max sleep-night "+pose3_3)
+    $ renpy.show('Max sleep-night '+pose3_3)
     menu:
         Max_00 "{i}Пожалуй, пора ложиться спать...{/i}"
         "{i}спать до утра{/i}":
@@ -36,7 +36,7 @@ label Sleep:
             $ renpy.loadsave.force_autosave(True, True)
             $ spent_time = 360
             $ status_sleep = True
-            $ alarm_time = "08:00"
+            $ alarm_time = '08:00'
             jump Waiting # спим 360 минут или до наступления 8 утра
 
 
@@ -44,7 +44,7 @@ label Wearied:
     $ renpy.block_rollback()
     # прождали все доступное время - спим до восьми
     scene BG char Max bed-night-01
-    $ renpy.show("Max sleep-night "+pose3_1)
+    $ renpy.show('Max sleep-night '+pose3_1)
     menu:
         Max_10 "{i}Моя голова уже совсем не соображает, нужно ложиться спать...{/i}"
         "{i}спать до утра{/i}":
@@ -54,33 +54,33 @@ label Wearied:
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
             $ status_sleep = True
-            $ alarm_time = "08:00"
+            $ alarm_time = '08:00'
             jump Waiting
 
 
 label LittleEnergy:
     $ renpy.block_rollback()
-    if "11:00" < tm <= "19:00":
+    if '11:00' < tm <= '19:00':
         scene BG char Max bed-day-01
     else:
         scene BG char Max bed-night-01
     menu:
         Max_10 "{i}Я слишком вымотался, нужно хоть немного вздремнуть...{/i}"
         "{i}вздремнуть{/i}":
-            if "11:00" < tm <= "19:00":
-                $ renpy.show("Max nap "+pose3_1+mgg.dress)
+            if '11:00' < tm <= '19:00':
+                $ renpy.show('Max nap '+pose3_1+mgg.dress)
             else:
-                $ renpy.show("Max sleep-night "+pose3_1)
+                $ renpy.show('Max sleep-night '+pose3_1)
             Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
 
-            if "11:00" < tm <= "19:00":
-                $ alarm_time = "19:00"
+            if '11:00' < tm <= '19:00':
+                $ alarm_time = '19:00'
             else:
-                $ alarm_time = "06:00"
+                $ alarm_time = '06:00'
             $ spent_time = 600
             $ status_sleep = True
             jump Waiting
@@ -98,16 +98,16 @@ label Nap:
         Max_00 "[txt!t]"
         "{i}подремать пару часов{/i}":
             $ spent_time = 2 * 60
-        "{i}подремать 3 часа{/i}" if tm <= "16:00":
+        "{i}подремать 3 часа{/i}" if tm <= '16:00':
             $ spent_time = 3 * 60
-        "{i}подремать 4 часа{/i}" if tm <= "15:00":
+        "{i}подремать 4 часа{/i}" if tm <= '15:00':
             $ spent_time = 4 * 60
-        "{i}подремать 5 часов{/i}" if tm <= "14:00":
+        "{i}подремать 5 часов{/i}" if tm <= '14:00':
             $ spent_time = 5 * 60
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
-    $ renpy.show("Max nap "+pose3_1+mgg.dress)
+    $ renpy.show('Max nap '+pose3_1+mgg.dress)
     Max_19 "Как же в этом доме хорошо..."
     $ status_sleep = True
     jump Waiting
@@ -119,14 +119,14 @@ label Alarm:
     menu:
         Max_00 "{i}В каком часу мне будет лучше проснуться?{/i}"
         # "{i}в 5 утра{/i}":
-        #     $ alarm_time = "05:00"
+        #     $ alarm_time = '05:00'
         "{i}в 6 утра{/i}":
-            $ alarm_time = "06:00"
+            $ alarm_time = '06:00'
         "{i}в 7 утра{/i}":
-            $ alarm_time = "07:00"
+            $ alarm_time = '07:00'
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
-    $ renpy.show("Max sleep-night "+pose3_2)
+    $ renpy.show('Max sleep-night '+pose3_2)
     Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
     $ NewSaveName()
@@ -139,7 +139,7 @@ label Alarm:
 label Shower:
     $ renpy.block_rollback()
     scene BG shower-closer
-    $ renpy.show("Max shower "+renpy.random.choice(["01", "02", "03"]))
+    $ renpy.show('Max shower '+renpy.random.choice(['01', '02', '03']))
     show FG shower-water
 
     menu:
@@ -147,7 +147,7 @@ label Shower:
         "{i}закончить{/i}":
             $ mgg.cleanness = 100
 
-    if "ladder" in flags and flags['ladder'] == 1:
+    if 'ladder' in flags and flags['ladder'] == 1:
         scene BG char Max shower-window-01
         Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
         Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
@@ -162,14 +162,14 @@ label Shower:
 label Bath:
     $ renpy.block_rollback()
     scene BG char Max bath-00
-    $ renpy.show("Max bath "+pose3_2)
+    $ renpy.show('Max bath '+pose3_2)
 
     menu:
         Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..."
         "{i}закончить{/i}":
             $ mgg.cleanness = 100
 
-    if "ladder" in flags and flags['ladder'] == 1:
+    if 'ladder' in flags and flags['ladder'] == 1:
         scene BG char Max bath-window-01
         Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
         Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
@@ -201,26 +201,26 @@ label Box:
     $ AvailableActions['unbox'].enabled = False
     $ AvailableActions['searchcam'].enabled = True
     $ InspectedRooms.clear()
-    if CurPoss == "":
-        $ CurPoss = "cams"
+    if CurPoss == '':
+        $ CurPoss = 'cams'
     $ spent_time = 30
     jump Waiting
 
 
 label Notebook:
     $ renpy.block_rollback()
-    if "06:00" <= tm < "21:00":
+    if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-00
-        $ renpy.show("Max laptop-day 01"+mgg.dress)
+        $ renpy.show('Max laptop-day 01'+mgg.dress)
     else:
         scene BG char Max laptop-night-00
-        $ renpy.show("Max laptop-night 01"+mgg.dress)
+        $ renpy.show('Max laptop-night 01'+mgg.dress)
 
     Max_00 "Итак, чем интересным я займусь?"
 
 
 label Laptop:
-    if "06:00" <= tm < "21:00":
+    if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
@@ -235,21 +235,21 @@ label Laptop:
     $ search_theme.clear()
 
     if poss['cams'].stn == 1:
-        $ search_theme.append((_("{i}почитать о камерах{/i}"), "about_cam"))
+        $ search_theme.append((_("{i}почитать о камерах{/i}"), 'about_cam'))
     if poss['blog'].stn == 0:
-        $ search_theme.append((_("{i}читать о блогах{/i}"), "about_blog"))
+        $ search_theme.append((_("{i}читать о блогах{/i}"), 'about_blog'))
     if poss['secretbook'].stn == 1:
-        $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), "about_secretbook"))
+        $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), 'about_secretbook'))
     if poss['spider'].stn == 0:
-        $ search_theme.append((_("{i}читать о пауках{/i}"), "about_spider"))
+        $ search_theme.append((_("{i}читать о пауках{/i}"), 'about_spider'))
     if flags['credit'] == 1:
-        $ search_theme.append((_("{i}искать информацию по кридитам{/i}"), "about_credit"))
+        $ search_theme.append((_("{i}искать информацию по кридитам{/i}"), 'about_credit'))
 
     call screen LaptopScreen
 
 
 label LaptopShop:
-    if "06:00" <= tm < "21:00":
+    if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
@@ -273,12 +273,12 @@ label buyfood:
     $ spent_time = 50
     $ dcv['buyfood'].stage = 2
     $ dcv['buyfood'].set_lost(2)
-    $ money -= 50
+    $ mgg.pay(50)
     jump Laptop
 
 
 label courses_start:
-    if "06:00" <= tm < "21:00":
+    if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
@@ -309,7 +309,7 @@ label create_site:
     Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
     $ spent_time = 60
     $ poss['cams'].OpenStage(4)
-    $ money -= 100
+    $ mgg.pay(100)
     $ items['hide_cam'].InShop = True
     $ house[4].cams.append(HideCam())
     $ house[4].cams[0].grow = 100
@@ -318,7 +318,7 @@ label create_site:
 
 
 label open_site:
-    if "06:00" <= tm < "21:00":
+    if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
@@ -444,7 +444,7 @@ label SearchCam:
         Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
         Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
         Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
-        $ random_loc_ab = "b"
+        $ random_loc_ab = 'b'
         $ AvailableActions['searchcam'].enabled = False
         $ InspectedRooms.clear()
         $ poss['cams'].OpenStage(1)
@@ -459,7 +459,7 @@ label SearchCam:
 label ClearPool:
     $ renpy.block_rollback()
     scene BG char Max cleeningpool-00
-    $ renpy.show("Max cleaning-pool 01"+mgg.dress)
+    $ renpy.show('Max cleaning-pool 01'+mgg.dress)
     Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
     $ dcv['clearpool'].stage = 2
     if day > 10:
@@ -473,26 +473,28 @@ label ClearPool:
 
 label DishesWashed:
     $ renpy.block_rollback()
-    if tm < "16:00":
+    if tm < '16:00':
         scene BG crockery-morning-00
-        $ renpy.show("Max crockery-morning 01"+mgg.dress)
+        $ renpy.show('Max crockery-morning 01'+mgg.dress)
     else:
         scene BG crockery-evening-00
-        $ renpy.show("Max crockery-evening 01"+mgg.dress)
+        $ renpy.show('Max crockery-evening 01'+mgg.dress)
     menu:
         Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?"
         "{i}закончить{/i}":
             pass
-    if (day+2) % 7 != 6:
-        if (day+2) % 7 == 0:
-            $ __name_label = GetPlan(plan_alice, day, "10:30").label
+    if GetWeekday(day) != 6:
+        if GetWeekday(day) == 0:
+            # $ __name_label = GetPlan(plan_alice, day, '10:30').label
+            $ __name_label = alice.get_plan(day, '10:30').label
         else:
-            $ __name_label = GetPlan(plan_alice, day, "11:30").label
-        if __name_label == "alice_dishes":
-            if GetRelMax("alice")[0] < 3:
-                $ AddRelMood("alice", 10, 60)
+            # $ __name_label = GetPlan(plan_alice, day, '11:30').label
+            $ __name_label = alice.get_plan(day, '11:30').label
+        if __name_label == 'alice_dishes':
+            if GetRelMax('alice')[0] < 3:
+                $ AddRelMood('alice', 10, 60)
             else:
-                $ AddRelMood("alice", 0, 60)
+                $ AddRelMood('alice', 0, 60)
     $ dishes_washed = True
     $ spent_time = max((60 - int(tm[-2:])), 50)
     $ cur_ratio = 2
@@ -529,7 +531,7 @@ label delivery2:
     scene BG delivery-00
     Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
     scene BG delivery-01
-    $ renpy.show("Christina delivery 01"+renpy.random.choice(["a", "b"]))
+    $ renpy.show('Christina delivery 01'+renpy.random.choice(['a', 'b']))
     Krs_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
     Max_00 "Конечно! А что тут?"
     $ renpy.say(Krs_00, __StrDev)
@@ -542,7 +544,7 @@ label delivery2:
 
 label BookRead:
     scene BG char Max reading-00
-    $ renpy.show("Max reading 01"+mgg.dress)
+    $ renpy.show('Max reading 01'+mgg.dress)
     menu:
         Max_00 "Пришло время почитать что-то..."
         "{i}читать \"WEB STANDARDS\"{/i}" if items['manual'].have and items['manual'].read < 5:
@@ -565,7 +567,7 @@ label BookRead:
             jump .end
 
     label .end:
-        $ cooldown['learn'] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
+        $ cooldown['learn'] = CooldownTime('03:40') # 40 мин на этап чтения и 3 часа кулдаун
         $ spent_time = max((60 - int(tm[-2:])), 40)
         $ cur_ratio = 0.6
         jump Waiting
@@ -708,7 +710,7 @@ label InstallCam:
 
 label SearchSpider:
     scene BG char Max spider-search-00
-    $ renpy.show("Max spider search-00"+mgg.dress)
+    $ renpy.show('Max spider search-00'+mgg.dress)
     $ _chance = {0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {0 : 0, 1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp]
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
@@ -717,7 +719,7 @@ label SearchSpider:
         "{i}искать... {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}":
             if RandomChance(_chance):
                 $ renpy.scene()
-                $ renpy.show("BG char Max spider-search-01"+mgg.dress)
+                $ renpy.show('BG char Max spider-search-01'+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
                 $ items['spider'].have = True
             else:
@@ -732,10 +734,10 @@ label SearchSpider:
 
 label HideSpider:
 
-    if "00:40" < tm < "01:00":
+    if '00:40' < tm < '01:00':
         Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
 
-    $ _chance = {"00:00" <= tm <= "00:40" : 800, "23:00" <= tm <= "23:59" : 700, "20:00" <= tm <= "22:59" : 500, "01:00" <= tm <= "19:59" : 0,}[True]
+    $ _chance = {'00:00' <= tm <= '00:40' : 800, '23:00' <= tm <= '23:59' : 700, '20:00' <= tm <= '22:59' : 500, '01:00' <= tm <= '19:59' : 0,}[True]
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
     menu:
@@ -746,7 +748,7 @@ label HideSpider:
             $ SpiderKill = 0
             $ SpiderResp = 1
             if RandomChance(_chance):
-                $ NightOfFun.append("spider")
+                $ NightOfFun.append('spider')
             $ items['spider'].have = False
             $ spent_time = 10
 
@@ -757,23 +759,23 @@ label HideSpider:
 
 label ViewLesson:
 
-    if "06:00" <= tm < "21:00":
+    if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-01
     else:
         scene BG char Max laptop-night-01
 
-    $ renpy.show("interface laptop "+CurCource.img+"-"+str(CurCource.current)+"-"+str(CurCource.cources[CurCource.current].less), [laptop_screen])
+    $ renpy.show('interface laptop '+CurCource.img+'-'+str(CurCource.current)+'-'+str(CurCource.cources[CurCource.current].less), [laptop_screen])
 
-    if CurCource.skill == "social":
+    if CurCource.skill == 'social':
         $ mgg.social += round(renpy.random.randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
-    elif CurCource.skill == "massage":
+    elif CurCource.skill == 'massage':
         $ mgg.massage += round(renpy.random.randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
     $ CurCource.cources[CurCource.current].less += 1
     if CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total: # Последний урок текущейго курса
         if CurCource.current < len(CurCource.cources):
             $ CurCource.current += 1
 
-    $ cooldown['learn'] = CooldownTime("03:40") # 40 мин на этап чтения и 3 часа кулдаун
+    $ cooldown['learn'] = CooldownTime('03:40') # 40 мин на этап чтения и 3 часа кулдаун
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ cur_ratio = 0.6
     $ notify_list.append(_("Вы просматриваете видеоурок и повышаете свои навыки."))
@@ -787,6 +789,7 @@ label SearchCigarettes:
     Max_09 "Так... Где же Алиса спрятала сигареты сегодня?" # nointeract
 
     call screen search_cigarettes
+    # $ __planname = GetPlan(plan_alice, day, tm).name
     # $ rez = renpy.imagemap(,,[
     #     (0, 684, 600, 1080, 'bed'),
     #     (0, 280, 615, 665, 'bedside'),
@@ -801,17 +804,19 @@ label SearchCigarettes:
     #         jump .table
 
     label .bedside:
-        if (random_sigloc == "n" and dcv['smoke'].done
-                and GetPlan(plan_alice, day, tm).label != "at_friends"
-                and GetPlan(plan_alice, day, tm).label != "smoke"):
+        if (random_sigloc == 'n' and dcv['smoke'].done
+                # and __planname != 'at_friends'
+                # and __planname != 'smoke'):
+                and alice.plan_name not in['at_friends','smoke']):
             jump .yes
         else:
             jump .no
 
     label .table:
-        if (random_sigloc == "t" and dcv['smoke'].done
-                and GetPlan(plan_alice, day, tm).name != "at_friends"
-                and GetPlan(plan_alice, day, tm).name != "smoke"):
+        if (random_sigloc == 't' and dcv['smoke'].done
+                # and __planname != 'at_friends'
+                # and __planname != 'smoke'):
+                and alice.plan_name not in['at_friends','smoke']):
             jump .yes
         else:
             jump .no
@@ -823,12 +828,12 @@ label SearchCigarettes:
             jump Waiting
 
     label .yes:
-        $ renpy.show("Max cigarettes 01"+mgg.dress)
+        $ renpy.show('Max cigarettes 01'+mgg.dress)
         menu:
             Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..."
             "{i}подставить Алису{/i}":
-                if ((tm < "13:00" and GetPlan(plan_alice, day, "13:00").name == 'smoke')
-                    or (tm < "17:00") and GetPlan(plan_alice, day, "16:00").name == "at_friends"):
+                if ((tm < '13:00' and __planname == 'smoke')
+                    or (tm < '17:00') and __planname == 'at_friends'):
                         pass  # если сегодня Алиса еще не курила или будет у подружки, подставлять бесполезно, она переложит сигареты
                 else:
                     $ punalice[0][1] = 1
@@ -844,21 +849,21 @@ label need_money:
     $ renpy.block_rollback()
     scene Max unbox 04
     Max_10 "Сегодня уже четверг. Последний день когда я могу заказать подарки девчонкам, чтобы опередить Эрика."
-    if ((items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy)) and
-                (items['dress'].InShop and not (items['dress'].have or items['dress'].buy))):
-        if money >= 500:
+    if ((items['bikini'].InShop and not (items['bikini'].have or items['bikini'].bought)) and
+                (items['dress'].InShop and not (items['dress'].have or items['dress'].bought))):
+        if mgg.money >= 500:
             jump cheat_money
-        elif 300 <= money < 500:
+        elif 300 <= mgg.money < 500:
             Max_11 "Нужно скорее купить платье Алисе и купальник для Лизы, а денег у меня хватает лишь на что-то одно..."
         else:
             Max_11 "Нужно скорее купить платье Алисе и купальник для Лизы, а денег мне не хватит даже на что-то одно..."
-    elif not (items['dress'].InShop and not (items['dress'].have or items['dress'].buy)):
-        if money >= 220:
+    elif not (items['dress'].InShop and not (items['dress'].have or items['dress'].bought)):
+        if mgg.money >= 220:
             jump cheat_money
         else:
             Max_11 "Я уже купил платье Алисе, но на купальник для Лизы мне не хватит денег..."
-    elif not (items['bikini'].InShop and not (items['bikini'].have or items['bikini'].buy)):
-        if money >= 280:
+    elif not (items['bikini'].InShop and not (items['bikini'].have or items['bikini'].bought)):
+        if mgg.money >= 280:
             jump cheat_money
         else:
             Max_11 "Я уже купил купальник для Лизы, но на платье Алисе мне не хватит денег..."
@@ -877,14 +882,14 @@ label need_money:
 label cheat_money:
     if poss['cams'].stn < 4:
         if all([
-                items['bikini'].InShop and not any([items['bikini'].have, items['bikini'].buy]),
-                items['dress'].InShop and not any([items['dress'].have, items['dress'].buy]),
-                money <= 600
+                items['bikini'].InShop and not any([items['bikini'].have, items['bikini'].bought]),
+                items['dress'].InShop and not any([items['dress'].have, items['dress'].bought]),
+                mgg.money <= 600
             ]):
                 jump .strateg
-        elif money < 320 and not all([items['dress'].InShop, not any([items['dress'].have, items['dress'].buy])]):
+        elif mgg.money < 320 and not all([items['dress'].InShop, not any([items['dress'].have, items['dress'].bought])]):
             jump .strateg
-        elif money < 380 and not all([items['bikini'].InShop, not any([items['bikini'].have, items['bikini'].buy])]):
+        elif mgg.money < 380 and not all([items['bikini'].InShop, not any([items['bikini'].have, items['bikini'].bought])]):
             jump .strateg
         else:
             pass
@@ -908,7 +913,7 @@ label about_credit:
         Max_04 "Подытожим условия: \n{i}В течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится...{/i} \n\nЛучше, конечно же, до такого не доводить."
         Max_05 "Регистрируюсь... Указываю свои реквизиты... Свой сайт в качестве источника дохода... Готово!"
         Max_02 "Теперь я могу взять кредит, если срочно понадобятся деньги. Главное вовремя его погасить, чтобы проблем не было..."
-        $ credit.level = 1
+        $ mgg.credit.level = 1
     else:
         Max_16 "Вот чёрт, а у меня нет никакого проекта! Получается, что денег мне никто не даст."
 
@@ -922,13 +927,13 @@ label getting_load:
     menu:
         Max_00 "Сколько мне сейчас нужно занять?"
         "$500":
-            $ credit.getting(500)
-        "$1000" if credit.level > 1:
-            $ credit.getting(1000)
-        "$2000" if credit.level > 2:
-            $ credit.getting(2000)
-        "$5000" if credit.level > 3:
-            $ credit.getting(5000)
+            $ mgg.credit_getting(500)
+        "$1000" if mgg.credit.level > 1:
+            $ mgg.credit_getting(1000)
+        "$2000" if mgg.credit.level > 2:
+            $ mgg.credit_getting(2000)
+        "$5000" if mgg.credit.level > 3:
+            $ mgg.credit_getting(5000)
         "{i}не сейчас{/i}":
             pass
     call screen Bank
@@ -939,17 +944,17 @@ label return_part_loan:
     menu:
         Max_00 "Сколько я верну сейчас?"
         "$50":
-            $ credit.part(50)
-        "$100" if money >= 100 and credit.debt >= 100:
-            $ credit.part(100)
-        "$200" if money >= 200 and credit.debt >= 200:
-            $ credit.part(200)
-        "$500" if money >= 500 and credit.debt >= 500:
-            $ credit.part(500)
-        "$1000" if money >= 1000 and credit.debt >= 1000:
-            $ credit.part(1000)
-        "$2000" if money >= 2000 and credit.debt >= 2000:
-            $ credit.part(2000)
+            $ mgg.credit.part(50)
+        "$100" if mgg.money >= 100 and mgg.credit.debt >= 100:
+            $ mgg.credit_part(100)
+        "$200" if mgg.money >= 200 and mgg.credit.debt >= 200:
+            $ mgg.credit_part(200)
+        "$500" if mgg.money >= 500 and mgg.credit.debt >= 500:
+            $ mgg.credit_part(500)
+        "$1000" if mgg.money >= 1000 and mgg.credit.debt >= 1000:
+            $ mgg.credit_part(1000)
+        "$2000" if mgg.money >= 2000 and mgg.credit.debt >= 2000:
+            $ mgg.credit_part(2000)
         "{i}не сейчас{/i}":
             pass
     call screen Bank

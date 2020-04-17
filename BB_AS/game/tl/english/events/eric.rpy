@@ -728,5 +728,151 @@ translate english strings:
 translate english eric_ann_tv_62e2801a:
 
     # Max_07 "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
-    Max_07 ""
+    Max_07 "I think Mom and Eric are watching a movie. Probably porn again..."
+
+# TODO: Translation updated at 2020-04-16 23:34
+
+# game/events/eric.rpy:180
+translate english eric_ann_tv_b2e859ec:
+
+    # Max_07 "[txt!t]" nointeract
+    Max_07 "[txt!t]" nointeract
+
+# game/events/eric.rpy:187
+translate english eric_ann_tv_45b2fa85:
+
+    # Ann_12 "[txt2!t]" nointeract
+    Ann_12 "[txt2!t]" nointeract
+
+# game/events/eric.rpy:211
+translate english eric_ann_tv_819bbc20:
+
+    # Max_08 "[txt!t]" nointeract
+    Max_08 "[txt!t]" nointeract
+
+# game/events/eric.rpy:220
+translate english eric_ann_tv_9b0d1773:
+
+    # Max_07 "[txt2!t]" nointeract
+    Max_07 "[txt2!t]" nointeract
+
+# game/events/eric.rpy:239
+translate english eric_ann_tv_819bbc20_1:
+
+    # Max_08 "[txt!t]" nointeract
+    Max_08 "[txt!t]" nointeract
+
+# game/events/eric.rpy:248
+translate english eric_ann_tv_9b0d1773_1:
+
+    # Max_07 "[txt2!t]" nointeract
+    Max_07 "[txt2!t]" nointeract
+
+# game/events/eric.rpy:263
+translate english eric_ann_tv_42ac5694:
+
+    # Max_10 "Если меня заметят, пока я смотрю порно на большом экране и подглядываю за тем, что происходит здесь же, наяву, меня точно накажут" nointeract
+    Max_10 "If I get noticed while I'm watching porn on the big screen and peeking at what's going on here, I'll definitely get punished." nointeract
+
+# game/events/eric.rpy:267
+translate english eric_ann_tv_c1692c11:
+
+    # Max_09 "Похоже, порно подходит к концу, а вот Эрик не кончает! Наверно, они просто решили {i}разогреться{/i} перед тем, что будет в маминой спальне... А это значит, мне пора уходить."
+    Max_09 "It looks like porn is nearly over, but Eric isn't coming! They probably just decided to {i}warm up{/i} before continuing in Mom's room... Which means it's time for me to leave."
+
+# game/events/eric.rpy:288
+translate english eric_ann_tv_closer1_39475977:
+
+    # Max_15 "Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
+    Max_15 "Wait, is she jerking him off?! Right here... We have to stop this right now! What's the best way to do it?" nointeract
+
+# game/events/eric.rpy:290
+translate english eric_ann_tv_closer1_717fa033:
+
+    # Max_16 "Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
+    Max_16 "Wait, is she jerking him off completely naked?! Right here... We have to stop this right now! How can I do it?" nointeract
+
+# game/events/eric.rpy:309
+translate english eric_ann_tv_closer1_d646f6b6:
+
+    # Max_11 "Да, она ему дрочит! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+    Max_11 "She's jerking him off! Right here... They're so passionate about each other, they don't notice anything around them! Well, besides what's happening on the screen..." nointeract
+
+# game/events/eric.rpy:311
+translate english eric_ann_tv_closer1_224a6ad6:
+
+    # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+    Max_07 "Oh ... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+
+# game/events/eric.rpy:314
+translate english eric_ann_tv_closer1_bdf10685:
+
+    # Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+    Max_11 "She's giving him a blow job! Right here... They are so involved with each other that they do not notice anything around them! Well, except for what's happening on the screen..." nointeract
+
+# game/events/eric.rpy:316
+translate english eric_ann_tv_closer1_224a6ad6_1:
+
+    # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
+    Max_07 "Oh ... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+
+# game/events/eric.rpy:318
+translate english eric_ann_tv_closer1_dd256959:
+
+    # Max_15 "Она что, отсасывает ему?! Прямо здесь... Вот же развратница, а если кто-то зайдёт и увидит!" nointeract
+    Max_15 "Is she giving him a blow job?! Right here... what if someone comes in and sees!" nointeract
+
+translate english strings:
+
+    # game/events/eric.rpy:175
+    old "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
+    new "I think Mom and Eric are watching a movie. Probably porn again..."
+
+    # game/events/eric.rpy:176
+    old "Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?"
+    new "Max, Eric and I are watching a movie. I would invite you, but it's not for children. Could you take a walk somewhere? And please don't peek. All right?"
+
+    # game/events/eric.rpy:178
+    old "Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой..."
+    new "I think Mom and Eric are watching some kind of movie. I wonder what it is..."
+
+    # game/events/eric.rpy:179
+    old "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?"
+    new "Oh, Max... Eric and I are watching a movie. I would invite you, but it's not suitable for kids. Could you give us some privacy please?"
+
+    # game/events/eric.rpy:206
+    old "Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику..."
+    new "Wow! That's interesting! And Mom, apparently, is going to suck off Eric..."
+
+    # game/events/eric.rpy:207
+    old "На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?"
+    new "The screen is already full of the most interesting things and Mom took off her towel! I would like to see this naked ass from a different angle... Should I come closer?"
+
+    # game/events/eric.rpy:209
+    old "Ого! На экране стало интереснее! А куда это мама так наклонилась?"
+    new "Wow! The screen got more interesting! What's Mom doing leaning like that?"
+
+    # game/events/eric.rpy:210
+    old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
+    new "Wow! Eric pulled Mom's towel off and I see her naked ass! Maybe we should get closer."
+
+    # game/events/eric.rpy:234
+    old "Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику..."
+    new "Wow! That's interesting! And Mom starting jerking off Eric again..."
+
+    # game/events/eric.rpy:235
+    old "На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?"
+    new "There's a lot going on right now now!  A Mom's thrown off her towel. It's a pity I can't see her breasts... Should I come closer?"
+
+    # game/events/eric.rpy:237
+    old "Ого! На экране стало интереснее! А что это мама там делает?"
+    new "Wow! The screen got more interesting! What's Mom doing there?"
+
+    # game/events/eric.rpy:238
+    old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?"
+    new "Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer?"
+
+    # game/events/eric.rpy:263
+    old "{i}тихо сматываться{/i}"
+    new "{i}Leave quietly{/i}"
 

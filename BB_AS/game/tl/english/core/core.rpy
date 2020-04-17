@@ -28,3 +28,11 @@ translate english strings:
     old "Свободный и лёгкий летний комплект одежды на каждый день."
     new "A free and light set of summer clothes for every-day wear."
 
+# TODO: Translation updated at 2020-04-17 14:34
+
+# game/core/core.rpy:292
+translate english after_load_93331e6b_1:
+
+    # "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
+    "Unfortunately, saving in this version is not supported due to a large number of internal changes. Start a new game or select another save."
+

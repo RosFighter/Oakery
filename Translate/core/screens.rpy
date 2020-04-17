@@ -303,12 +303,12 @@ translate english strings:
 translate english strings:
 
     # game/core/screens.rpy:324
-    old "Задолженность: {color=[_col]}$[credit.debt]{/color}"
-    new "Debt: {color=[_col]}$[credit.debt]{/color}"
+    old "Задолженность: {color=[_col]}$[mgg.credit.debt]{/color}"
+    new "Debt: {color=[_col]}$[mgg.credit.debt]{/color}"
 
     # game/core/screens.rpy:325
-    old "[credit.left] дней на погашение"
-    new "[credit.left] days for repayment"
+    old "[mgg.credit.left] дней на погашение"
+    new "[mgg.credit.left] days for repayment"
 
     # game/core/screens.rpy:561
     old "{i}{b}ВЫ УЧИЛИСЬ СОВСЕМ НЕДАВНО. СДЕЛАЙТЕ ПЕРЕРЫВ!{/b}{/i}"
@@ -317,12 +317,3 @@ translate english strings:
     # game/core/screens.rpy:577
     old "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}"
     new "{i}{b}BUY THIS COURSE FOR: $[price]{/b}{/i}"
-
-# TODO: Translation updated at 2020-04-16 23:34
-
-translate english strings:
-
-    # game/core/screens.rpy:327
-    old "Задолженность: {color=[_col]}$[mgg.credit.debt]{/color}"
-    new "Debt: {color=[_col]}$[mgg.credit.debt]{/color}"
-

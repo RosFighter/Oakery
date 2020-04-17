@@ -3,9 +3,10 @@ label AnnTalkStart:
 
     $ dial = TalkMenuItems()
 
-    $ __CurShedRec = GetPlan(plan_ann, day, tm)
-    if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel
+    # $ __cur_plan = GetPlan(plan_ann, day, tm)
+    $ __cur_plan = ann.get_plan()
+    if __cur_plan.talklabel is not None:
+        call expression __cur_plan.talklabel
 
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
@@ -19,7 +20,7 @@ label AnnTalkStart:
     $ rez =  renpy.display_menu(dial)
 
     if rez != "exit":
-        $ __mood = chars['ann'].GetMood()[0]
+        $ __mood = ann.GetMood()[0]
         if rez in gifts['ann']:
             if renpy.has_label(rez.label):
                 call expression rez.label
@@ -79,16 +80,17 @@ label Ann_cooldown:
 
 label ann_ask_money:
 
-    $ __CurShedRec = GetPlan(plan_ann, day, tm)
-    if __CurShedRec is None:
+    # $ __cur_plan = GetPlan(plan_ann, day, tm)
+    $ __cur_plan = ann.get_plan()
+    if __cur_plan is None:
         "При нормальном развитии событий эта строка не должна была появится. Сообщите разработчику."
         return
-    if __CurShedRec.name == "yoga": ## Анна занимается йогой
+    if __cur_plan.name == "yoga": ## Анна занимается йогой
          menu:
             Ann_05 "Макс, ты же видишь, я сейчас занята... Выбери более подходящий момент, пожалуйста..."
             "Точно, извини...":
                 jump AfterWaiting
-    elif __CurShedRec.name == "swim" or __CurShedRec.name == "tv": ## Анна загорает, плавает или смотрит ТВ
+    elif __cur_plan.name == "swim" or __cur_plan.name == "tv": ## Анна загорает, плавает или смотрит ТВ
          menu:
             Ann_05 "Очень смешно, Макс. Ты видишь у меня карманы? Нет? Выбери более подходящий момент, пожалуйста..."
             "Точно, извини...":
@@ -99,7 +101,7 @@ label ann_ask_money:
     menu:
         Ann_00 "Макс, тебе не стыдно просить деньги у мамы, хотя сам целыми днями дома сидишь и ничего не делаешь?"
         "Мне стыдно, но очень нужны деньги...":
-            $ money += 20
+            $ mgg.ask(1)
             menu:
                 Ann_04 "Ладно, держи. И найди себе уже работу, хотя бы через интернет. Нам лишние деньги не помешают..."
                 "Ага! Спасибо, мам!":
@@ -116,7 +118,7 @@ label ann_ask_money:
         "Может быть, почистить бассейн?" if dcv['clearpool'].done:
             $ dcv['clearpool'].done = False
             $ dcv['clearpool'].stage = 1
-            $ money += 40
+            $ mgg.ask(2)
             menu:
                 Ann_04 "Отличная идея, Макс! Лучше уж я заплачу тебе $40, чем нанимать какого-то человека. Держи. Да, лучше это делать пока светло и никого нет."
                 "Конечно!":
@@ -126,7 +128,7 @@ label ann_ask_money:
         "Ну, могу заказать продукты" if dcv['buyfood'].done:
             $ dcv['buyfood'].done = False
             $ dcv['buyfood'].stage = 1
-            $ money += 60
+            $ mgg.ask(3)
             menu:
                 Ann_04 "Хорошая мысль, Макс. Я дам тебе $50 на продукты и авансом $10 за твои услуги, так сказать. Устроит?"
                 "Конечно!":
@@ -328,7 +330,7 @@ label talk_about_smoking:
 
     scene BG char Max talk-terrace-00
     show Max talk-terrace 01a
-    $ renpy.show("Ann talk-terrace 01"+chars['ann'].dress)
+    $ renpy.show("Ann talk-terrace 01"+ann.dress)
     menu:
         Ann_12 "Макс. Я не уверена, но мне кажется, что чувствую запах сигаретного дыма. К нам кто-то приходил?"
         "Нет, никого не было...":
@@ -337,7 +339,7 @@ label talk_about_smoking:
             pass
         "Да это просто Алиса курила!":
             show Max talk-terrace 02a
-            $ renpy.show("Ann talk-terrace 02"+chars['ann'].dress)
+            $ renpy.show("Ann talk-terrace 02"+ann.dress)
             jump .smoke
     menu:
         Ann_00 "Точно? Макс, ты ничего не хочешь рассказать?"
@@ -379,7 +381,7 @@ label talk_about_smoking:
 
         "Вообще-то, Алиса курила...":
             show Max talk-terrace 02a
-            $ renpy.show("Ann talk-terrace 02"+chars['ann'].dress)
+            $ renpy.show("Ann talk-terrace 02"+ann.dress)
             jump .smoke
 
     label .joke:
@@ -417,7 +419,7 @@ label talk_about_smoking:
     show Max talk-terrace 02a
     Max_14 "Ну..."
 
-    if flags['smoke.request'] == "money":
+    if flags['smoke.request'] == 'money':
         $ __mood -= 300
         Alice_17 "Ну и придурок же ты, Макс! Мы же договорились, а ты..."
         Max_09 "Я передумал..."
@@ -429,7 +431,7 @@ label talk_about_smoking:
     Ann_12 "Так, всё, Алиса, сейчас я тебя накажу! Снимай свои джинсы!"
     scene BG punish-evening 01
     show Alice punish-evening 01a
-    $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
+    $ renpy.show("Ann punish-evening 01"+ann.dress)
     Max_07 "Ого..."
     Alice_12 "Что?! Я уже взрослая! Могу делать что хочу, даже курить!"
     Max_08 "Ой, плохой ответ..."
@@ -438,14 +440,14 @@ label talk_about_smoking:
     Alice_13 "Мам, но тут же Макс... Что, прямо при нём будешь? Пусть он уйдёт!"
     Ann_18 "Нет, Алиса, пусть смотрит. Это ждёт любого, кто меня разозлит. Быстро ложись на мои колени, кому сказала!"
     scene BG punish-evening 02
-    $ renpy.show("Ann punish-evening alice-01"+chars['ann'].dress)
+    $ renpy.show("Ann punish-evening alice-01"+ann.dress)
     Alice_13 "Ладно... Только не больно, чтобы, ладно? Ай! Ма-ам!"
     Ann_16 "Давай не мамкай тут! Ты знаешь, что я ненавижу сигареты и мои дети точно курить не будут. Особенно, в моём доме, ясно?!"
-    $ renpy.show("Ann punish-evening alice-02"+chars['ann'].dress)
+    $ renpy.show("Ann punish-evening alice-02"+ann.dress)
     Alice_13 "Да, ясно, мам... Ай! Я всё поняла! Я больше не буду!"
     scene BG punish-evening 01
     show Alice punish-evening 03a
-    $ renpy.show("Ann punish-evening 01"+chars['ann'].dress)
+    $ renpy.show("Ann punish-evening 01"+ann.dress)
     Ann_12 "Очень на это надеюсь. Так, теперь надевай штаны и садимся ужинать."
     scene BG char Max talk-terrace-00
     show Max talk-terrace 01a
@@ -465,7 +467,8 @@ label talk_about_smoking:
                 Alice_16 "Я не буду тебе ничего говорить, сам всё поймёшь в своё время. Карма штука жестокая, но справедливая..."
                 "{i}начать ужин{/i}":
                     pass
-    $ AddSchedule(plan_alice, Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
+    # $ AddSchedule(plan_alice, Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
+    $ alice.add_schedule(Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
     $ AddRelMood('alice', -10, __mood)
     $ current_room = house[5]
     $ Distribution()

@@ -1,14 +1,14 @@
 
 ##  Ежедневно обновляемые переменные
-default pose2_1 = renpy.random.choice(["01", "02"])
-default pose3_1 = renpy.random.choice(["01", "02", "03"])
-default pose2_2 = renpy.random.choice(["01", "02"])
-default pose3_2 = renpy.random.choice(["01", "02", "03"])
-default pose2_3 = renpy.random.choice(["01", "02"])
-default pose3_3 = renpy.random.choice(["01", "02", "03"])
-default random_loc_ab = renpy.random.choice(["a", "b"])
-default tv_scene = renpy.random.choice(["", "bj", "hj"])
-default random_sigloc = renpy.random.choice(["n", "t"])
+default pose2_1 = renpy.random.choice(['01', '02'])
+default pose3_1 = renpy.random.choice(['01', '02', '03'])
+default pose2_2 = renpy.random.choice(['01', '02'])
+default pose3_2 = renpy.random.choice(['01', '02', '03'])
+default pose2_3 = renpy.random.choice(['01', '02'])
+default pose3_3 = renpy.random.choice(['01', '02', '03'])
+default random_loc_ab = renpy.random.choice(['a', 'b'])
+default tv_scene = renpy.random.choice(['', 'bj', 'hj'])
+default random_sigloc = renpy.random.choice(['n', 't'])
 default persone_button1 = None
 default persone_button2 = None
 default persone_button3 = None
@@ -19,16 +19,16 @@ default persone_button3 = None
 label InitHouse: # стартовая инициация виллы
     python:
         house = [
-            Room("my_room", _("МОЯ\nКОМНАТА"), _("МОЯ КОМНАТА"), "location house myroom icon", 1), #0
-            Room("alice_room", _("КОМНАТА\nАЛИСЫ"), _("КОМНАТА АЛИСЫ"), "location house aliceroom icon", 1), #1
-            Room("ann_room", _("КОМНАТА\nАННЫ"), _("КОМНАТА АННЫ"), "location house annroom icon", 1), #2
-            Room("bathroom", _("ВАННАЯ\nКОМНАТА"), _("ВАННАЯ КОМНАТА"), "location house bathroom icon", 1), #3
-            Room("lounge", _("ГОСТИНАЯ"), _("ГОСТИНАЯ"), "location house lounge icon", 1), #4
-            Room("terrace", _("ВЕРАНДА"), _("ВЕРАНДА"), "location house terrace icon", 1), #5
-            Room("courtyard", _("ДВОР"), _("ДВОР"), "location house courtyard icon", 2), #6
+            Room('my_room', _("МОЯ\nКОМНАТА"), _("МОЯ КОМНАТА"), 'location house myroom icon', 1), #0
+            Room('alice_room', _("КОМНАТА\nАЛИСЫ"), _("КОМНАТА АЛИСЫ"), 'location house aliceroom icon', 1), #1
+            Room('ann_room', _("КОМНАТА\nАННЫ"), _("КОМНАТА АННЫ"), 'location house annroom icon', 1), #2
+            Room('bathroom', _("ВАННАЯ\nКОМНАТА"), _("ВАННАЯ КОМНАТА"), 'location house bathroom icon', 1), #3
+            Room('lounge', _("ГОСТИНАЯ"), _("ГОСТИНАЯ"), 'location house lounge icon', 1), #4
+            Room('terrace', _("ВЕРАНДА"), _("ВЕРАНДА"), 'location house terrace icon', 1), #5
+            Room('courtyard', _("ДВОР"), _("ДВОР"), 'location house courtyard icon', 2), #6
             ]
 
-        locations = {"house": house}
+        locations = {'house': house}
 
         current_location = house
         current_room = house[5]
@@ -39,107 +39,114 @@ label InitHouse: # стартовая инициация виллы
 label InitCharacters: # стартовая инициация персонажей
     python:
         chars = {
-             "lisa": Profile(_("Лиза"), _("Лизы"), _("Лизе"), _("Лизу"), _("Лизой"), _("Лизе"),
+             'lisa': Profile(_("Лиза"), _("Лизы"), _("Лизе"), _("Лизу"), _("Лизой"), _("Лизе"),
                 _("Лиза, младшая сестрёнка. Милая и весёлая. Она ещё учится в школе. С Лизой мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."),
-                "Lisa", relmax=150),
-             "alice": Profile(_("Алиса"), _("Алисы"), _("Алисе"), _("Алису"), _("Алисой"), _("Алисе"),
+                'Lisa', relmax=150),
+             'alice': Profile(_("Алиса"), _("Алисы"), _("Алисе"), _("Алису"), _("Алисой"), _("Алисе"),
                 _("Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."),
-                 "Alice"),
-             "ann": Profile(_("Анна"), _("Анны"), _("Анне"), _("Анну"), _("Анной"), _("Анне"), _("Анна, моя мама. Сама воспитывает нас с двумя сёстрами уже несколько лет. Работает в офисе какой-то компании. Хотя, зарплата у неё вполне приличная, но почти всё уходит на оплату жилья, еду и одежду."),
-                "Ann", relmax=250),
+                 'Alice'),
+             'ann': Profile(_("Анна"), _("Анны"), _("Анне"), _("Анну"), _("Анной"), _("Анне"), _("Анна, моя мама. Сама воспитывает нас с двумя сёстрами уже несколько лет. Работает в офисе какой-то компании. Хотя, зарплата у неё вполне приличная, но почти всё уходит на оплату жилья, еду и одежду."),
+                'Ann', relmax=250),
             }
 
         mgg = MaxProfile(_("Макс"),  _("Макса"), _("Максу"), _("Макса"), _("Максом"), _("Максе"),
-                                _("Всегда в поисках приключений на свою пятую точку."), "Max info-00")
+                                _("Всегда в поисках приключений на свою пятую точку."), 'Max info-00')
 
-        sex_stat = {
-            "lisa" : SexStat(),
-            "alice": SexStat(),
-            "ann"  : SexStat(),
-            }
+        lisa  = chars['lisa']
+        alice = chars['alice']
+        ann   = chars['ann']
 
-        plan_lisa  = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        plan_ann   = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        plan_alice = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        plan_eric  = [Schedule((0, 1, 2, 3, 4, 5, 6), "0:00", "23:59", "None")]
-        AddSchedule(plan_lisa,
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", "sleep", _("спит в нашей комнате (ночь)"), "house", 0, "lisa_sleep_night", enabletalk=False, glow=102),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", "sleep", _("спит в нашей комнате (утро)"), "house", 0, "lisa_sleep_morning", enabletalk=False, glow=102),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", "shower", _("принимает душ"), "house", 3, "lisa_shower", enabletalk=False, glow=120),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "8:0", "8:59", "read", _("читает в нашей комнате"), "house", 0, "lisa_read", glow=105),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "9:0", "9:59", "breakfast", _("семейный завтрак"), "house", 5, "breakfast", enabletalk=False, glow=105),
-                    Schedule((1, 2, 3, 4, 5), "10:0", "10:59", "dressed", _("одевается в школу"), "house", 0, "lisa_dressed_school", enabletalk=False, glow=110),
-                    Schedule((6, ), "10:0", "10:59", "dressed", _("одевается в магазин"), "house", 0, "lisa_dressed_shop", enabletalk=False, glow=110),
-                    Schedule((0, ), "10:0", "10:59", "dressed", _("одевается к репетитору"), "house", 0, "lisa_dressed_repetitor", enabletalk=False, glow=110),
-                    Schedule((1, 2, 3, 4, 5), "11:0", "15:59", "in_shcool", _("в школе")),
-                    Schedule((6, ), "11:0", "13:59", "in_shop", _("в магазине")),
-                    Schedule((0, ), "11:0", "14:59", "at_tutor", _("у репетитора")),
-                    Schedule((6, ), "14:0", "14:59", "read", _("читает в нашей комнате"), "house", 0, "lisa_read", glow=105),
-                    Schedule((0, 6), "15:0", "15:59", "swim", _("в бассейне"), "house", 6, "lisa_swim", glow=105),
-                    Schedule((1, 2, 3, 4, 5), "16:0", "16:59", "swim", _("в бассейне"), "house", 6, "lisa_swim", glow=105),
-                    Schedule((6, 0), "16:0", "16:59", "sun", _("загорает"), "house", 6, "lisa_sun", glow=110),
-                    Schedule((1, 2, 3, 4, 5), "17:0", "18:59", "sun", _("загорает"), "house", 6, "lisa_sun", glow=110),
-                    Schedule((0, 6), "17:0", "18:59", "read", _("читает в нашей комнате"), "house", 0, "lisa_read", glow=105),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "20:0", "20:59", "dishes", _("моет посуду"), "house", 4, "lisa_dishes", talklabel="lisa_dishes_closer"),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "21:0", "21:59", "phone", _("лежит с телефоном в нашей комнате"), "house", 0, "lisa_phone", glow=105),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "22:59", "bath", _("принимает ванну"), "house", 3, "lisa_bath", enabletalk=False, glow=120),
-                    Schedule((1, 2, 3, 4, 5), "23:0", "23:59", "homework", _("учит уроки"), "house", 0, "lisa_homework", glow=105),
-                    Schedule((0, 6), "23:0", "23:59", "phone", _("лежит с телефоном в нашей комнате"), "house", 0, "lisa_phone", glow=105),
+        # sex_stat = {
+        #     'lisa' : SexStat(),
+        #     'alice': SexStat(),
+        #     'ann'  : SexStat(),
+        #     }
+
+        # plan_lisa  = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
+        # plan_ann   = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
+        # plan_alice = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
+        # plan_eric  = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
+        # AddSchedule(plan_lisa,
+        lisa.add_schedule(
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '0:0', '5:59', 'sleep', _("спит в нашей комнате (ночь)"), 'house', 0, 'lisa_sleep_night', enabletalk=False, glow=102),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '6:0', '6:59', 'sleep', _("спит в нашей комнате (утро)"), 'house', 0, 'lisa_sleep_morning', enabletalk=False, glow=102),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '7:0', '7:59', 'shower', _("принимает душ"), 'house', 3, 'lisa_shower', enabletalk=False, glow=120),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '8:0', '8:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', glow=105),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '9:0', '9:59', 'breakfast', _("семейный завтрак"), 'house', 5, 'breakfast', enabletalk=False, glow=105),
+                    Schedule((1, 2, 3, 4, 5), '10:0', '10:59', 'dressed', _("одевается в школу"), 'house', 0, 'lisa_dressed_school', enabletalk=False, glow=110),
+                    Schedule((6, ), '10:0', '10:59', 'dressed', _("одевается в магазин"), 'house', 0, 'lisa_dressed_shop', enabletalk=False, glow=110),
+                    Schedule((0, ), '10:0', '10:59', 'dressed', _("одевается к репетитору"), 'house', 0, 'lisa_dressed_repetitor', enabletalk=False, glow=110),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '15:59', 'in_shcool', _("в школе")),
+                    Schedule((6, ), '11:0', '13:59', 'in_shop', _("в магазине")),
+                    Schedule((0, ), '11:0', '14:59', 'at_tutor', _("у репетитора")),
+                    Schedule((6, ), '14:0', '14:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', glow=105),
+                    Schedule((0, 6), '15:0', '15:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', glow=105),
+                    Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', glow=105),
+                    Schedule((6, 0), '16:0', '16:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '17:0', '18:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', glow=110),
+                    Schedule((0, 6), '17:0', '18:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', glow=105),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', _("семейный ужин"), 'house', 5, 'dinner', enabletalk=False, glow=105),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '20:0', '20:59', 'dishes', _("моет посуду"), 'house', 4, 'lisa_dishes', talklabel='lisa_dishes_closer'),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '21:0', '21:59', 'phone', _("лежит с телефоном в нашей комнате"), 'house', 0, 'lisa_phone', glow=105),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '22:0', '22:59', 'bath', _("принимает ванну"), 'house', 3, 'lisa_bath', enabletalk=False, glow=120),
+                    Schedule((1, 2, 3, 4, 5), '23:0', '23:59', 'homework', _("учит уроки"), 'house', 0, 'lisa_homework', glow=105),
+                    Schedule((0, 6), '23:0', '23:59', 'phone', _("лежит с телефоном в нашей комнате"), 'house', 0, 'lisa_phone', glow=105),
                     )
 
-        AddSchedule(plan_ann,
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "0:0", "5:59", "sleep", _("спит"), "house", 2, "ann_sleep", enabletalk=False, glow=105),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "6:0", "6:59", "shower", _("принимает душ"), "house", 3, "ann_shower", enabletalk=False, glow=120),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "7:0", "7:59", "yoga", _("занимается йогой"), "house", 6, "ann_yoga", glow=115),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "8:0", "8:59", "cooking", _("готовит завтрак"), "house", 4, "ann_cooking", talklabel="ann_cooking_closer"),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "9:0", "9:59", "breakfast", _("семейный завтрак"), "house", 5, "breakfast", enabletalk=False, glow=105),
-                    Schedule((1, 2, 3, 4, 5), "10:0", "10:59", "dressed", _("одевается на работу"), "house", 2, "ann_dressed_work", enabletalk=False, glow=115),
-                    Schedule((6, ), "10:0", "10:59", "dressed", _("одевается в магазин"), "house", 2, "ann_dressed_shop", enabletalk=False, glow=115),
-                    Schedule((0, ), "10:0", "11:59", "resting", _("в своей комнате"), "house", 2, "ann_resting"),
-                    Schedule((1, 2, 3, 4, 5), "11:0", "18:59", "at_work", _("на работе")),
-                    Schedule((6, ), "11:0", "13:59", "in_shop", _("в магазине")),
-                    Schedule((0, ), "12:0", "13:59", "read", _("читает на веранде"), "house", 5, "ann_read", glow=110),
-                    Schedule((0, 6), "14:0", "14:59", "swim", _("в бассейне"), "house", 6, "ann_swim", glow=105),
-                    Schedule((0, 6), "15:0", "15:59", "resting", _("в своей комнате"), "house", 2, "ann_resting", glow=110),
-                    Schedule((0, 6), "16:0", "16:59", "read", _("читает на веранде"), "house", 5, "ann_read", glow=110),
-                    Schedule((6, ), "17:0", "17:59", "sun", _("загорает с Алисой"), "house", 6, "ann_alice_sun", glow=115),
-                    Schedule((0, ), "17:0", "17:59", "swim", _("в бассейне с Алисой"), "house", 6, "ann_alice_swim", glow=110),
-                    Schedule((0, 6), "18:0", "18:59", "cooking", _("готовит ужин"), "house", 4, "ann_cooking", talklabel="ann_cooking_closer"),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "20:0", "20:59", "bath", _("принимает ванну"), "house", 3, "ann_bath", enabletalk=False, glow=120),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "21:0", "21:59", "tv", _("смотрит ТВ"), "house", 4, "ann_tv", talklabel="ann_tv_closer"),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "22:0", "23:59", "resting", _("в своей комнате"), "house", 2, "ann_resting", glow=110),
+        # AddSchedule(plan_ann,
+        ann.add_schedule(
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '0:0', '5:59', 'sleep', _("спит"), 'house', 2, 'ann_sleep', enabletalk=False, glow=105),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '6:0', '6:59', 'shower', _("принимает душ"), 'house', 3, 'ann_shower', enabletalk=False, glow=120),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '7:0', '7:59', 'yoga', _("занимается йогой"), 'house', 6, 'ann_yoga', glow=115),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '8:0', '8:59', 'cooking', _("готовит завтрак"), 'house', 4, 'ann_cooking', talklabel='ann_cooking_closer'),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '9:0', '9:59', 'breakfast', _("семейный завтрак"), 'house', 5, 'breakfast', enabletalk=False, glow=105),
+                    Schedule((1, 2, 3, 4, 5), '10:0', '10:59', 'dressed', _("одевается на работу"), 'house', 2, 'ann_dressed_work', enabletalk=False, glow=115),
+                    Schedule((6, ), '10:0', '10:59', 'dressed', _("одевается в магазин"), 'house', 2, 'ann_dressed_shop', enabletalk=False, glow=115),
+                    Schedule((0, ), '10:0', '11:59', 'resting', _("в своей комнате"), 'house', 2, 'ann_resting'),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '18:59', 'at_work', _("на работе")),
+                    Schedule((6, ), '11:0', '13:59', 'in_shop', _("в магазине")),
+                    Schedule((0, ), '12:0', '13:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', glow=110),
+                    Schedule((0, 6), '14:0', '14:59', 'swim', _("в бассейне"), 'house', 6, 'ann_swim', glow=105),
+                    Schedule((0, 6), '15:0', '15:59', 'resting', _("в своей комнате"), 'house', 2, 'ann_resting', glow=110),
+                    Schedule((0, 6), '16:0', '16:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', glow=110),
+                    Schedule((6, ), '17:0', '17:59', 'sun', _("загорает с Алисой"), 'house', 6, 'ann_alice_sun', glow=115),
+                    Schedule((0, ), '17:0', '17:59', 'swim', _("в бассейне с Алисой"), 'house', 6, 'ann_alice_swim', glow=110),
+                    Schedule((0, 6), '18:0', '18:59', 'cooking', _("готовит ужин"), 'house', 4, 'ann_cooking', talklabel='ann_cooking_closer'),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', _("семейный ужин"), 'house', 5, 'dinner', enabletalk=False, glow=105),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '20:0', '20:59', 'bath', _("принимает ванну"), 'house', 3, 'ann_bath', enabletalk=False, glow=120),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '21:0', '21:59', 'tv', _("смотрит ТВ"), 'house', 4, 'ann_tv', talklabel='ann_tv_closer'),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '22:0', '23:59', 'resting', _("в своей комнате"), 'house', 2, 'ann_resting', glow=110),
                     )
 
-        AddSchedule(plan_alice,
-                    Schedule((1, 2, 3, 4, 5, 6, 0), "0:0", "0:59", "bath", _("принимает ванну"), "house", 3, "alice_bath", enabletalk=False, glow=120),
-                    Schedule((1, 2, 3, 4, 5, 6, 0), "1:0", "5:59", "sleep", _("спит (ночь)"), "house", 1, "alice_sleep_night", enabletalk=False, glow=105),
-                    Schedule((1, 2, 3, 4, 5, 6, 0), "6:0", "7:59", "sleep", _("спит (утро)"), "house", 1, "alice_sleep_morning", enabletalk=False, glow=110),
-                    Schedule((1, 2, 3, 4, 5, 6, 0), "8:0", "8:59", "shower", _("принимает душ"), "house", 3, "alice_shower", enabletalk=False, glow=120),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "9:0", "9:59", "breakfast", _("семейный завтрак"), "house", 5, "breakfast", enabletalk=False, glow=105),
-                    Schedule((1, 2, 3, 4, 5), "10:0", "10:59", "resting", _("в своей комнате"), "house", 1, "alice_rest_morning", talklabel="alice_morning_closer", glow=110),
-                    Schedule((6,), "10:0", "10:59", "dressed", _("одевается в магазин"), "house", 1, "alice_dressed_shop", enabletalk=False, glow=110),
-                    Schedule((0,), "10:0", "10:59", "dishes", _("моет посуду"), "house", 4, "alice_dishes", variable="not dishes_washed", talklabel="alice_dishes_closer"),
-                    Schedule((0,), "10:0", "10:59", "read", _("читает на веранде"), "house", 5, "alice_read", variable="dishes_washed", glow=110),
-                    Schedule((1, 2, 3, 4, 5), "11:0", "11:59", "dishes", _("моет посуду"), "house", 4, "alice_dishes", variable="not dishes_washed", talklabel="alice_dishes_closer"),
-                    Schedule((1, 2, 3, 4, 5), "11:0", "11:59", "read", _("читает на веранде"), "house", 5, "alice_read", variable="dishes_washed", glow=110),
-                    Schedule((0,), "11:0", "11:59", "dressed", _("одевается к подруге"), "house", 1, "alice_dressed_friend", enabletalk=False, glow=110),
-                    Schedule((1, 2, 3, 4, 5), "12:0", "12:59", "sun", _("загорает"), "house", 6, "alice_sun", glow=110),
-                    Schedule((1, 2, 3, 4, 5), "13:0", "14:59", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105),
-                    Schedule((6,), "11:0", "13:59", "in_shop", _("в магазине")),
-                    Schedule((6,), "14:0", "14:59", "dressed", _("одевается к подруге"), "house", 1, "alice_dressed_friend", enabletalk=False, glow=110),
-                    Schedule((1, 2, 3, 4, 5), "15:0", "15:59", "sun", _("загорает"), "house", 6, "alice_sun", glow=110),
-                    Schedule((1, 2, 3, 4, 5), "16:0", "17:59", "read", _("читает на веранде"), "house", 5, "alice_read", glow=110),
-                    Schedule((6,), "15:0", "16:59", "at_friends"),
-                    Schedule((0,), "12:0", "16:59", "at_friends"),
-                    Schedule((6,), "17:0", "17:59", "sun", _("загорает с Анной"), "house", 6, "ann_alice_sun", glow=115),
-                    Schedule((0,), "17:0", "17:59", "swim", _("в бассейне с Анной"), "house", 6, "ann_alice_swim", glow=110),
-                    Schedule((1, 2, 3, 4, 5), "18:0", "18:59", "cooking", _("готовит ужин"), "house", 4, "alice_cooking_dinner", talklabel="alice_cooking_closer"),
-                    Schedule((0, 6), "18:0", "18:59", "read", _("читает на веранде"), "house", 5, "alice_read", glow=110),
-                    Schedule((0, 1, 2, 3, 4, 5, 6), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105),
-                    Schedule((1, 2, 3, 4, 5, 6, 0), "20:0", "21:59", "blog", _("в своей комнате"), "house", 1, "alice_rest_evening", talklabel="alice_evening_closer", glow=110),
-                    Schedule((1, 2, 3, 4, 5, 6, 0), "22:0", "23:59", "tv", _("смотрит ТВ"), "house", 4, "alice_tv", talklabel="alice_tv_closer"),
+        # AddSchedule(plan_alice,
+        alice.add_schedule(
+                    Schedule((1, 2, 3, 4, 5, 6, 0), '0:0', '0:59', 'bath', _("принимает ванну"), 'house', 3, 'alice_bath', enabletalk=False, glow=120),
+                    Schedule((1, 2, 3, 4, 5, 6, 0), '1:0', '5:59', 'sleep', _("спит (ночь)"), 'house', 1, 'alice_sleep_night', enabletalk=False, glow=105),
+                    Schedule((1, 2, 3, 4, 5, 6, 0), '6:0', '7:59', 'sleep', _("спит (утро)"), 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
+                    Schedule((1, 2, 3, 4, 5, 6, 0), '8:0', '8:59', 'shower', _("принимает душ"), 'house', 3, 'alice_shower', enabletalk=False, glow=120),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '9:0', '9:59', 'breakfast', _("семейный завтрак"), 'house', 5, 'breakfast', enabletalk=False, glow=105),
+                    Schedule((1, 2, 3, 4, 5), '10:0', '10:59', 'resting', _("в своей комнате"), 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
+                    Schedule((6,), '10:0', '10:59', 'dressed', _("одевается в магазин"), 'house', 1, 'alice_dressed_shop', enabletalk=False, glow=110),
+                    Schedule((0,), '10:0', '10:59', 'dishes', _("моет посуду"), 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
+                    Schedule((0,), '10:0', '10:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', variable='dishes_washed', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'dishes', _("моет посуду"), 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', variable='dishes_washed', glow=110),
+                    Schedule((0,), '11:0', '11:59', 'dressed', _("одевается к подруге"), 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
+                    Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'sun', _("загорает"), 'house', 6, 'alice_sun', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '13:0', '14:59', 'swim', _("в бассейне"), 'house', 6, 'alice_swim', glow=105),
+                    Schedule((6,), '11:0', '13:59', 'in_shop', _("в магазине")),
+                    Schedule((6,), '14:0', '14:59', 'dressed', _("одевается к подруге"), 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
+                    Schedule((1, 2, 3, 4, 5), '15:0', '15:59', 'sun', _("загорает"), 'house', 6, 'alice_sun', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '16:0', '17:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', glow=110),
+                    Schedule((6,), '15:0', '16:59', 'at_friends'),
+                    Schedule((0,), '12:0', '16:59', 'at_friends'),
+                    Schedule((6,), '17:0', '17:59', 'sun', _("загорает с Анной"), 'house', 6, 'ann_alice_sun', glow=115),
+                    Schedule((0,), '17:0', '17:59', 'swim', _("в бассейне с Анной"), 'house', 6, 'ann_alice_swim', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'cooking', _("готовит ужин"), 'house', 4, 'alice_cooking_dinner', talklabel='alice_cooking_closer'),
+                    Schedule((0, 6), '18:0', '18:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', glow=110),
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', _("семейный ужин"), 'house', 5, 'dinner', enabletalk=False, glow=105),
+                    Schedule((1, 2, 3, 4, 5, 6, 0), '20:0', '21:59', 'blog', _("в своей комнате"), 'house', 1, 'alice_rest_evening', talklabel='alice_evening_closer', glow=110),
+                    Schedule((1, 2, 3, 4, 5, 6, 0), '22:0', '23:59', 'tv', _("смотрит ТВ"), 'house', 4, 'alice_tv', talklabel='alice_tv_closer'),
                     )
     return
 
@@ -147,56 +154,56 @@ label InitCharacters: # стартовая инициация персонаже
 label InitActions: # кнопки действий
     python:
         AvailableActions = {
-            "momovie"     : ActionsButton(_("ПОСМОТРЕТЬ\nФИЛЬМ"), "interface disc", "WatchMovie"),
-            "city"        : ActionsButton(_("ВЫЙТИ\nИЗ ДОМА"), "interface city", "GoCity"),
-            "touch"       : ActionsButton(_("ПОИГРАТЬ\nС ЛИЗОЙ"), "interface touch", "TouchLisa"),
-            "usb"         : ActionsButton(_("УСТАНОВИТЬ\nКЕЙЛОГГЕР"), "interface usb", "InstallKeylogger"),
-            "install"     : ActionsButton(_("УСТАНОВИТЬ\nКАМЕРУ"), "interface install", "InstallCam"),
-            "hidespider"  : ActionsButton(_("СПРЯТАТЬ\nПАУКА"), "interface spider", "HideSpider"),
-            "throwspider3": ActionsButton(_("БРОСИТЬ\nПАУКА"), "interface spider", "BathroomSpider"),
-            "throwspider6": ActionsButton(_("БРОСИТЬ\nПАУКА"), "interface spider", "CourtyardSpider"),
-            "catchspider" : ActionsButton(_("ИСКАТЬ\nПАУКОВ"), "interface spider", "SearchSpider"),
-            "searchciga"  : ActionsButton(_("ИСКАТЬ\nСИГАРЕТЫ"), "interface search", "SearchCigarettes"),
-            "searchbook"  : ActionsButton(_("ИСКАТЬ\nКНИГУ"), "interface search", "SearchSecretBook"),
-            "clearpool"   : ActionsButton(_("ЧИСТИТЬ\nБАССЕЙН"), "interface clearpool", "ClearPool"),
-            "readbook"    : ActionsButton(_("ЧИТАТЬ"), "interface book", "BookRead", True),
-            "searchcam"   : ActionsButton(_("ИСКАТЬ\nКАМЕРУ"), "interface search", "SearchCam"),
-            "unbox"       : ActionsButton(_("РАЗОБРАТЬ\nКОРОБКИ"), "interface box", "Box"),
-            "notebook"    : ActionsButton(_("ВКЛЮЧИТЬ\nНОУТБУК"), "interface notebook", "Notebook", True),
-            "sleep"       : ActionsButton(_("СПАТЬ"), "interface sleep", "Sleep", True),
-            "alarm"       : ActionsButton(_("УСТАНОВИТЬ\nБУДИЛЬНИК"), "interface alarm", "Alarm", True),
-            "nap"         : ActionsButton(_("ВЗДРЕМНУТЬ"), "interface alarm", "Nap", True),
-            "shower"      : ActionsButton(_("ПРИНЯТЬ\nДУШ"), "interface shower", "Shower", True),
-            "bath"        : ActionsButton(_("ПРИНЯТЬ\nВАННУ"), "interface bath", "Bath", True),
-            "talk"        : ActionsButton(_("ПОГОВОРИТЬ"), "interface talk", "StartDialog"),
-            "dishes"      : ActionsButton(_("МЫТЬ\nПОСУДУ"), "interface dishes", "DishesWashed"),
+            'momovie'     : ActionsButton(_("ПОСМОТРЕТЬ\nФИЛЬМ"), 'interface disc', 'WatchMovie'),
+            'city'        : ActionsButton(_("ВЫЙТИ\nИЗ ДОМА"), 'interface city', 'GoCity'),
+            'touch'       : ActionsButton(_("ПОИГРАТЬ\nС ЛИЗОЙ"), 'interface touch', 'TouchLisa'),
+            'usb'         : ActionsButton(_("УСТАНОВИТЬ\nКЕЙЛОГГЕР"), 'interface usb', 'InstallKeylogger'),
+            'install'     : ActionsButton(_("УСТАНОВИТЬ\nКАМЕРУ"), 'interface install', 'InstallCam'),
+            'hidespider'  : ActionsButton(_("СПРЯТАТЬ\nПАУКА"), 'interface spider', 'HideSpider'),
+            'throwspider3': ActionsButton(_("БРОСИТЬ\nПАУКА"), 'interface spider', 'BathroomSpider'),
+            'throwspider6': ActionsButton(_("БРОСИТЬ\nПАУКА"), 'interface spider', 'CourtyardSpider'),
+            'catchspider' : ActionsButton(_("ИСКАТЬ\nПАУКОВ"), 'interface spider', 'SearchSpider'),
+            'searchciga'  : ActionsButton(_("ИСКАТЬ\nСИГАРЕТЫ"), 'interface search', 'SearchCigarettes'),
+            'searchbook'  : ActionsButton(_("ИСКАТЬ\nКНИГУ"), 'interface search', 'SearchSecretBook'),
+            'clearpool'   : ActionsButton(_("ЧИСТИТЬ\nБАССЕЙН"), 'interface clearpool', 'ClearPool'),
+            'readbook'    : ActionsButton(_("ЧИТАТЬ"), 'interface book', 'BookRead', True),
+            'searchcam'   : ActionsButton(_("ИСКАТЬ\nКАМЕРУ"), 'interface search', 'SearchCam'),
+            'unbox'       : ActionsButton(_("РАЗОБРАТЬ\nКОРОБКИ"), 'interface box', 'Box'),
+            'notebook'    : ActionsButton(_("ВКЛЮЧИТЬ\nНОУТБУК"), 'interface notebook', 'Notebook', True),
+            'sleep'       : ActionsButton(_("СПАТЬ"), 'interface sleep', 'Sleep', True),
+            'alarm'       : ActionsButton(_("УСТАНОВИТЬ\nБУДИЛЬНИК"), 'interface alarm', 'Alarm', True),
+            'nap'         : ActionsButton(_("ВЗДРЕМНУТЬ"), 'interface alarm', 'Nap', True),
+            'shower'      : ActionsButton(_("ПРИНЯТЬ\nДУШ"), 'interface shower', 'Shower', True),
+            'bath'        : ActionsButton(_("ПРИНЯТЬ\nВАННУ"), 'interface bath', 'Bath', True),
+            'talk'        : ActionsButton(_("ПОГОВОРИТЬ"), 'interface talk', 'StartDialog'),
+            'dishes'      : ActionsButton(_("МЫТЬ\nПОСУДУ"), 'interface dishes', 'DishesWashed'),
             }
 
         # список ключей словаря кнопок. создан заранее для сохраниения нужного порядка
         ListButton = [
-            "momovie",
-            "city",
-            "touch",
-            "usb",
-            "install",
-            "hidespider",
-            "throwspider3",
-            "throwspider6",
-            "catchspider",
-            "searchciga",
-            "searchbook",
-            "clearpool",
-            "readbook",
-            "searchcam",
-            "unbox",
-            "nap",
-            "alarm",
-            "sleep",
-            "shower",
-            "notebook",
-            "bath",
-            "talk",
-            "dishes",
+            'momovie',
+            'city',
+            'touch',
+            'usb',
+            'install',
+            'hidespider',
+            'throwspider3',
+            'throwspider6',
+            'catchspider',
+            'searchciga',
+            'searchbook',
+            'clearpool',
+            'readbook',
+            'searchcam',
+            'unbox',
+            'nap',
+            'alarm',
+            'sleep',
+            'shower',
+            'notebook',
+            'bath',
+            'talk',
+            'dishes',
             ]
     return
 
@@ -353,81 +360,81 @@ label InitTalksEvents: # стартовая инициация диалогов 
 
     # Переменные влияющие на запуск диалогов
     $ talk_var = {
-        "blog"     : 0,
-        "boy"      : 0,
-        "lisa_fd"  : 0,
-        "ask_money": 0,
-        "lisa_dw"  : 0,
-        "alice_dw" : 0,
-        "ann_tv"   : 0,
-        "alice_tv" : 0,
-        "lisa.pun" : 0,
+        'blog'     : 0,
+        'boy'      : 0,
+        'lisa_fd'  : 0,
+        'ask_money': 0,
+        'lisa_dw'  : 0,
+        'alice_dw' : 0,
+        'ann_tv'   : 0,
+        'alice_tv' : 0,
+        'lisa.pun' : 0,
         'alice.pun': 0,
-        "truehelp" : 0,
-        "help.hw"  : 0,
-        "courier1" : 0,
-        "courier2" : 0,
-        "ae.ladd"  : 0,
-        "dinner"   : 0,
-        "breakfast": 0,
-        "ann_movie": 0,
-        "alice_sun": 0,
+        'truehelp' : 0,
+        'help.hw'  : 0,
+        'courier1' : 0,
+        'courier2' : 0,
+        'ae.ladd'  : 0,
+        'dinner'   : 0,
+        'breakfast': 0,
+        'ann_movie': 0,
+        'alice_sun': 0,
         'sun_oiled': 0,
         }
 
     $ cooldown = {
-        "learn" : "0 00:00",
+        'learn' : '0 00:00',
         }
 
     # события, запускаемые в конкретное время
     $ EventsByTime = {
-        "breakfast"        : CutEvent("09:00", label="breakfast", desc="завтрак", cut=True),
-        "dinner"           : CutEvent("19:00", label="dinner", desc="ужин", cut=True),
-        "shoping"          : CutEvent("11:00", (6, ), "shoping", "семейный шопинг"),
-        "MorningWood"      : CutEvent("06:30", label="MorningWood", variable="day == 2", sleep=True, desc="утренний стояк", extend=True),
-        "AfterSchoolFD"    : CutEvent("16:00", label="AfterSchoolFD", variable="day == 1", desc="Лиза первый раз приходит из школы", cut=True),
-        "Wearied"          : CutEvent("03:30", label="Wearied", sleep=False, desc="поспать бы надо"),
-        "delivery1"         : CutEvent("13:30", (1, 2, 3, 4, 5, 6), "delivery1", "доставка товаров Сэмом", "len(delivery_list[0])>0", cut=True),
-        "delivery2"         : CutEvent("15:30", (1, 2, 3, 4, 5, 6), "delivery2", "доставка товаров Кристиной", "len(delivery_list[1])>0", cut=True),
-        "back_shoping"     : CutEvent("14:00", (6, ), "back_shoping", "возвращение с семейного шопинга", "EventsByTime[\"back_shoping\"].stage < 2", cut=True),
-        "MeetingEric"      : CutEvent("18:50", (6, ), "MeetingEric", "знакомство с Эриком", "day == 4", cut=True),
-        "Eric_afterdinner" : CutEvent("20:00", (6, ), "Eric_talk_afterdinner", "разговор с Эриком после субботнего ужина", "day < 12", cut=True),
-        "night_of_fun"     : CutEvent("04:00", label="night_of_fun", sleep=True, variable="len(NightOfFun)>0", desc="ночные забавы"),
-        "need_money"       : CutEvent("12:00", label="need_money", desc="срочно нужны деньги", variable="day==9", cut=True),
+        'breakfast'        : CutEvent('09:00', label='breakfast', desc='завтрак', cut=True),
+        'dinner'           : CutEvent('19:00', label='dinner', desc='ужин', cut=True),
+        'shoping'          : CutEvent('11:00', (6, ), 'shoping', 'семейный шопинг'),
+        'MorningWood'      : CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True),
+        'AfterSchoolFD'    : CutEvent('16:00', label='AfterSchoolFD', variable='day == 1', desc='Лиза первый раз приходит из школы', cut=True),
+        'Wearied'          : CutEvent('03:30', label='Wearied', sleep=False, desc='поспать бы надо'),
+        'delivery1'         : CutEvent('13:30', (1, 2, 3, 4, 5, 6), 'delivery1', 'доставка товаров Сэмом', 'len(delivery_list[0])>0', cut=True),
+        'delivery2'         : CutEvent('15:30', (1, 2, 3, 4, 5, 6), 'delivery2', 'доставка товаров Кристиной', 'len(delivery_list[1])>0', cut=True),
+        'back_shoping'     : CutEvent('14:00', (6, ), 'back_shoping', 'возвращение с семейного шопинга', "EventsByTime['back_shoping'].stage < 2", cut=True),
+        'MeetingEric'      : CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True),
+        'Eric_afterdinner' : CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day < 12', cut=True),
+        'night_of_fun'     : CutEvent('04:00', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
+        'need_money'       : CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True),
         }
 
     # переменные со счетчиком дней
     $ dcv = {
-        "clearpool"   : Daily(done=True, enabled=True),
-        "ordercosm"   : Daily(done=True, enabled=True),
-        "buyfood"     : Daily(done=True, enabled=True),
-        "credit"      : Daily(done=True, enabled=True),
-        "lisa.ad"     : Daily(done=True, enabled=True),
+        'clearpool'   : Daily(done=True, enabled=True),
+        'ordercosm'   : Daily(done=True, enabled=True),
+        'buyfood'     : Daily(done=True, enabled=True),
+        'credit'      : Daily(done=True, enabled=True),
+        'lisa.ad'     : Daily(done=True, enabled=True),
         }
 
     # ежедневное подсматривание
     $ peeping = {
-        "ann_shower"   : 0,
-        "lisa_shower"  : 0,
-        "alice_shower" : 0,
-        "ann_dressed"  : 0,
-        "lisa_dressed" : 0,
-        "alice_dressed": 0,
-        "ann_eric_tv"  : 0,
-        "ann_eric_sex1": 0,
-        "ann_eric_sex2": 0,
-        "ann_bath"     : 0,
-        "lisa_bath"    : 0,
-        "alice_bath"   : 0,
-        "alice_sleep"  : 0,
-        "ann_sleep"    : 0,
+        'ann_shower'   : 0,
+        'lisa_shower'  : 0,
+        'alice_shower' : 0,
+        'ann_dressed'  : 0,
+        'lisa_dressed' : 0,
+        'alice_dressed': 0,
+        'ann_eric_tv'  : 0,
+        'ann_eric_sex1': 0,
+        'ann_eric_sex2': 0,
+        'ann_bath'     : 0,
+        'lisa_bath'    : 0,
+        'alice_bath'   : 0,
+        'alice_sleep'  : 0,
+        'ann_sleep'    : 0,
         }
     return
 
 
 label InitCources:  # онлайн курсы
     $ online_cources = [
-        OnLineCources(_("Общение"), "social", "com", [
+        OnLineCources(_("Общение"), 'social', 'com', [
             OnLineCource(_("Навыки общения: Чувства человека"), _("Это базовый курс обучения навыкам общения и содержит в себе основную информацию об органах чувств, о реакции человека на ваши слова, а также основы языка тела."), 3, 200, 2),
             OnLineCource(_("Навыки общения: Основы коммуникации"), _("Это второй курс обучения навыкам общения. Из него вы узнаете как повлиять на решение человека без слов, как подобрать правильный слова в нужной ситуации для достижения своей цели."), 3, 400, 2),
             OnLineCource(_("Навыки общения: Без границ"), _("Это продвинутый длительный курс, предназначенный для тех, кто хочет постоянно обучаться и совершенствоваться. На данный момент это последний доступный курс."), 3, 800, 2),
@@ -460,35 +467,34 @@ label InitVariable: # стартовая инициация переменных
     python:
         current_ver = config.version
         day = 1
-        tm = "08:50"
+        tm = '08:50'
         prevday = 1
-        prevtime = "08:50"
+        prevtime = '08:50'
 
         spent_time = 0
         cur_ratio = 1
         status_sleep = False
-        alarm_time = ""
+        alarm_time = ''
 
-        money = 150
         InspectedRooms = []
         dishes_washed = False
         flags = {
-            "Lisa_bathrobe" : False,
-            "morning_erect" : 0,
-            "about_poss"    : True,
-            "little_energy" : False,
-            "lisa_hw"       : False,
-            "ladder"        : 0,
-            "noted"         : False,
-            "credit"        : 0,
-            "cam2bath"      : False,
-            "promise_kiss"  : False,
+            'Lisa_bathrobe' : False,
+            'morning_erect' : 0,
+            'about_poss'    : True,
+            'little_energy' : False,
+            'lisa_hw'       : False,
+            'ladder'        : 0,
+            'noted'         : False,
+            'credit'        : 0,
+            'cam2bath'      : False,
+            'promise_kiss'  : False,
             'lisa_superhug' : 0,
             'alice_hugs'    : 0,
-            'tv_peep'       : 0,
+            'ae.tv.hj'      : 0,
+            'ae.tv.bj'      : 0,
             }
-        site = MaxSite()
-        CurChar = "max"
+        CurChar = 'max'
         CurPoss = ""
         search_theme = []
 
@@ -496,7 +502,6 @@ label InitVariable: # стартовая инициация переменных
         SpiderResp = 0  # дней до гарантированного респа паука: 1 - выкинули с балкона, 2 - запустили в душ, 3 - убили
         NightOfFun = [] # список "ночных забав". Рандомно срабатывает одна из списка
 
-        credit = Loan()
         kol_cream = 0
 
         sorry_gifts = {
@@ -507,21 +512,21 @@ label InitVariable: # стартовая инициация переменных
         ae_tv_order = ['01', '02', '03', '04', '05', '06']  # последовательность фильмов, просматриваемых Анной и Эриком
 
     $ cloth_type = {         # переменная для хранения варианта одежды в течении дня
-        "ann"   : {
-            "casual"  : "a",
-            "cooking" : "b",
-            "rest"    : "a",
+        'ann'   : {
+            'casual'  : 'a',
+            'cooking' : 'b',
+            'rest'    : 'a',
             'day.left': 0,
             },
-        "alice" : {
-            "casual"  : "a",
+        'alice' : {
+            'casual'  : 'a',
             'day.left': 2,
             },
-        "lisa"  : {
-            "casual"  : "a",
-            "swim"    : "a",
-            "sleep"   : "a",
-            "learn"   : "a",
+        'lisa'  : {
+            'casual'  : 'a',
+            'swim'    : 'a',
+            'sleep'   : 'a',
+            'learn'   : 'a',
             'day.left': 0,
             },
         }
@@ -530,20 +535,25 @@ label InitVariable: # стартовая инициация переменных
 
 label AddEric:
     $ chars['eric'] = Profile(_("Эрик"), _("Эрика"), _("Эрику"), _("Эрика"), _("Эриком"), _("Эрике"), _("Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."), "Eric")
-    $ AddSchedule(plan_eric, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Анной", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
-                Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Анной", "house", 3, "eric_ann_shower", enabletalk=False, glow=130),
-                Schedule((1, 3, 4), "19:0", "19:59", "dinner", "семейный ужин", "house", 5, "dinner", enabletalk=False, glow=105),
-                Schedule((1, 3, 4), "20:0", "20:59", "rest", "в Аниной комнате", "house", 2, "eric_resting"),
-                Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Анной", "house", 4, "eric_ann_tv", enabletalk=False, glow=150),
-                Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахает Анну в ее комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150),
-                Schedule((6, ), "19:0", "19:59", "dinner", _("семейный ужин"), "house", 5, "dinner", enabletalk=False, glow=105, variable="day < 12"),
-                Schedule((6, ), "19:0", "19:59", "None", variable="day > 12"),
+    $ eric = chars['eric']
+    # $ AddSchedule(plan_eric,
+    $ eric.add_schedule(
+                Schedule((2, 4, 5), '0:0', '5:59', 'sleep2', 'спит с Анной', 'house', 2, 'eric_ann_sleep', enabletalk=False, glow=110),
+                Schedule((2, 4, 5), '6:0', '6:59', 'shower2', 'в душе с Анной', 'house', 3, 'eric_ann_shower', enabletalk=False, glow=130),
+                Schedule((1, 3, 4), '19:0', '19:59', 'dinner', 'семейный ужин', 'house', 5, 'dinner', enabletalk=False, glow=105),
+                Schedule((1, 3, 4), '20:0', '20:59', 'rest', 'в Аниной комнате', 'house', 2, 'eric_resting'),
+                Schedule((1, 3, 4), '21:0', '21:59', 'tv2', 'смотрит ТВ с Анной', 'house', 4, 'eric_ann_tv', enabletalk=False, glow=150),
+                Schedule((1, 3, 4), '22:0', '23:59', 'fuck', 'трахает Анну в ее комнате', 'house', '2', 'eric_ann_fucking', enabletalk=False, glow=150),
+                Schedule((6, ), '19:0', '19:59', 'dinner', _('семейный ужин'), 'house', 5, 'dinner', enabletalk=False, glow=105, variable='day < 12'),
+                Schedule((6, ), '19:0', '19:59', 'None', variable='day > 12'),
                 )
-    $ AddSchedule(plan_ann, Schedule((2, 4, 5), "0:0", "5:59", "sleep2", "спит с Эриком", "house", 2, "eric_ann_sleep", enabletalk=False, glow=110),
-                Schedule((2, 4, 5), "6:0", "6:59", "shower2", "в душе с Эриком", "house", 3, "eric_ann_shower", enabletalk=False, glow=130),
-                Schedule((1, 3, 4), "21:0", "21:59", "tv2", "смотрит ТВ с Эриком", "house", 4, "eric_ann_tv", enabletalk=False, glow=150),
-                Schedule((1, 3, 4), "22:0", "23:59", "fuck", "трахается с Эриком в своей комнате", "house", "2", "eric_ann_fucking", enabletalk=False, glow=150),
-                Schedule((2, 5, 6), "20:0", "23:59", "None", "у Эрика дома"),
-                Schedule((3, 6, 0), "0:0", "5:59", None, "у Эрика дома"),
+    # $ AddSchedule(plan_ann,
+    $ ann.add_schedule(
+                Schedule((2, 4, 5), '0:0', '5:59', 'sleep2', 'спит с Эриком', 'house', 2, 'eric_ann_sleep', enabletalk=False, glow=110),
+                Schedule((2, 4, 5), '6:0', '6:59', 'shower2', 'в душе с Эриком', 'house', 3, 'eric_ann_shower', enabletalk=False, glow=130),
+                Schedule((1, 3, 4), '21:0', '21:59', 'tv2', 'смотрит ТВ с Эриком', 'house', 4, 'eric_ann_tv', enabletalk=False, glow=150),
+                Schedule((1, 3, 4), '22:0', '23:59', 'fuck', 'трахается с Эриком в своей комнате', 'house', '2', 'eric_ann_fucking', enabletalk=False, glow=150),
+                Schedule((2, 5, 6), '20:0', '23:59', 'None', 'у Эрика дома'),
+                Schedule((3, 6, 0), '0:0', '5:59', None, 'у Эрика дома'),
                 )
     return

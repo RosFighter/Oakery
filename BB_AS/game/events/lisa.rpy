@@ -4,13 +4,13 @@
 label lisa_sleep_night:
     scene BG char Lisa bed-night
     $ AvailableActions['touch'].active = True
-    $ renpy.show("Lisa sleep-night "+pose3_1+chars['lisa'].dress)
+    $ renpy.show('Lisa sleep-night '+pose3_1+lisa.dress)
     return
 
 
 label lisa_sleep_morning:
     scene BG char Lisa bed-morning
-    $ renpy.show("Lisa sleep-morning "+pose3_1+chars['lisa'].dress)
+    $ renpy.show('Lisa sleep-morning '+pose3_1+lisa.dress)
     return
 
 
@@ -66,19 +66,19 @@ label lisa_shower:
 
     label .ladder:
         $ renpy.scene()
-        $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
+        $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
         $ __list = ['c', ]
-        if chars['lisa'].nopants:
+        if lisa.nopants:
             $ __list.append('d')
-        if 'bathrobe' in chars['lisa'].gifts:
+        if 'bathrobe' in lisa.gifts:
             $ __list.append('a')
-            if chars['lisa'].nopants:
+            if lisa.nopants:
                 $ __list.append('b')
         $ __r1 = renpy.random.choice(__list)
 
         scene BG bathroom-morning-00
-        $ renpy.show("Lisa bath-window-morning "+renpy.random.choice(['01', '02', '03'])+__r1)
+        $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.05
@@ -104,8 +104,9 @@ label lisa_shower:
         $ _chance = GetChance(mgg.stealth, 3)
         $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
-        scene image ("Lisa shower 0"+str(__ran1))
-        $ renpy.show("FG shower 00"+mgg.dress)
+        $ renpy.scene()
+        $ renpy.show('Lisa shower 0'+str(__ran1))
+        $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
@@ -119,10 +120,10 @@ label lisa_shower:
             $ peeping['lisa_shower'] = 1
             $ mgg.stealth += 0.2
             $ notify_list.append(_("Скрытность Макса повысилась"))
-            $ chars['lisa'].dress_inf = "00a"
+            $ lisa.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
-            show image ("Lisa shower-closer 0"+str(__ran1))
+            $ renpy.show('Lisa shower-closer 0'+str(__ran1))
             show FG shower-closer
             if 1 < __ran1 < 5:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
@@ -132,10 +133,10 @@ label lisa_shower:
             $ peeping['lisa_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
-            $ chars['lisa'].dress_inf = "00a"
+            $ lisa.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
-            show image ("Lisa shower-closer 0"+str(__ran1))
+            $ renpy.show('Lisa shower-closer 0'+str(__ran1))
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
         else:
@@ -143,9 +144,9 @@ label lisa_shower:
             $ punreason[0] = 1
             $ mgg.stealth += 0.05
             $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
-            $ __ran1 = renpy.random.choice(["09", "10"])
+            $ __ran1 = renpy.random.choice(['09', '10'])
             scene BG shower-closer
-            show image ("Lisa shower-closer "+__ran1)
+            $ renpy.show('Lisa shower-closer '+__ran1)
             show FG shower-closer
             menu:
                 Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
@@ -166,8 +167,8 @@ label lisa_shower:
 label lisa_read:
 
     scene BG char Lisa reading
-    $ renpy.show("Lisa reading "+pose3_1+chars['lisa'].dress)
-    $ persone_button1 = "Lisa reading "+pose3_1+chars['lisa'].dress
+    $ renpy.show('Lisa reading '+pose3_1+lisa.dress)
+    $ persone_button1 = 'Lisa reading '+pose3_1+lisa.dress+'b'
     return
 
 
@@ -184,7 +185,7 @@ label lisa_dressed_school:
 
     menu .lisa_dressed:
         Max_09 "{i}Похоже, Лиза собирается в школу...{/i}"
-        "{i}постучаться{/i}" if chars['lisa'].free < 200:
+        "{i}постучаться{/i}" if lisa.free < 200:
             menu:
                 "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
                 "Это я, Макс. Можно войти?":
@@ -192,11 +193,11 @@ label lisa_dressed_school:
                 "Хорошо, я подожду...":
                     $ spent_time = 10
                     jump .rel_mood
-        "{i}открыть дверь{/i}" if chars['lisa'].free < 200:
+        "{i}открыть дверь{/i}" if lisa.free < 200:
             jump .open_door
-        "{i}заглянуть в окно{/i}"  if chars['lisa'].free < 200:
+        "{i}заглянуть в окно{/i}"  if lisa.free < 200:
             jump .look_window
-        #"войти в комнату" if chars['lisa'].free >= 200:
+        #"войти в комнату" if lisa.free >= 200:
         #    pass
         "{i}уйти{/i}":
             $ spent_time = 10
@@ -204,11 +205,11 @@ label lisa_dressed_school:
 
     label .look_window:
         $ spent_time = 10
-        $ __ran1 = renpy.random.choice(["01", "02", "03", "04"])
-        $ chars['lisa'].dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[__ran1]
+        $ __ran1 = renpy.random.choice(['01', '02', '03', '04'])
+        $ lisa.dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[__ran1]
         scene BG char Lisa voyeur-00
-        $ renpy.show("Lisa voyeur "+__ran1)
-        $ renpy.show("FG voyeur-lisa-00"+mgg.dress)
+        $ renpy.show('Lisa voyeur '+__ran1)
+        $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
         menu:
@@ -218,24 +219,24 @@ label lisa_dressed_school:
 
     label .come_in:
         scene BG char Lisa morning
-        if GetRelMax("lisa")[0] < 0:
+        if GetRelMax('lisa')[0] < 0:
             show Lisa school-dressed 01
-            $ chars['lisa'].dress_inf = "01b"
-        elif GetRelMax("lisa")[0] < 2:
+            $ lisa.dress_inf = '01b'
+        elif GetRelMax('lisa')[0] < 2:
             show Lisa school-dressed 01a
-            $ chars['lisa'].dress_inf = "01b"
-        elif chars['lisa'].free < 200:
+            $ lisa.dress_inf = '01b'
+        elif lisa.free < 200:
             show Lisa school-dressed 01b
-            $ chars['lisa'].dress_inf = "02a"
+            $ lisa.dress_inf = '02a'
         else:
             show Lisa school-dressed 01c # пока отсутствует
-            $ chars['lisa'].dress_inf = "00"
+            $ lisa.dress_inf = '00'
 
         $ spent_time = 60 - int(tm.split(":")[1])
         menu:
             Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
             "Это и моя комната!":
-                if chars['lisa'].GetMood()[0] < 0: # настроение не очень и ниже
+                if lisa.GetMood()[0] < 0: # настроение не очень и ниже
                     show Lisa school-dressed 01
                     Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
                     Max_00 "Удачи"
@@ -245,12 +246,12 @@ label lisa_dressed_school:
                     Lisa_02 "В любом случае, я уже оделась, так что, входи. А я побежала в школу."
                     Max_00 "Удачи"
             "Да чего я там не видел...":
-                if GetRelMax("lisa")[0] < 1: # отношения прохладные и ниже
+                if GetRelMax('lisa')[0] < 1: # отношения прохладные и ниже
                     Lisa_12 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
                     Max_00 "Пока, Лиза!"
                     $ __rel  -= 5 # при низком отношении отношения и настроение снижаются
                     $ __mood -= 30
-                elif GetRelMax("lisa")[0] < 2: # Неплохие отношения
+                elif GetRelMax('lisa')[0] < 2: # Неплохие отношения
                     Lisa_01 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
                     Max_00 "Пока, Лиза!"
                 else: # хорошие и выше отношения
@@ -260,7 +261,7 @@ label lisa_dressed_school:
                     Max_00 "Пока, Лиза!"
                     $ __mood += 30 # при хорошем отношении настроение повышается
             "Извини":
-                if GetRelMax("lisa")[0] < 2: # Неплохие отношения
+                if GetRelMax('lisa')[0] < 2: # Неплохие отношения
                     Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
                 else:
                     Lisa_03 "Да ты у нас, оказывается, джентльмен!"
@@ -274,16 +275,16 @@ label lisa_dressed_school:
     label .open_door:
         $ spent_time = 20
         $ __ran1 = renpy.random.randint(2, 5)
-        $ chars['lisa'].dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[__ran1]
+        $ lisa.dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[__ran1]
         scene BG char Lisa morning
-        if GetRelMax("lisa")[0] < 0:
-            $ renpy.show("Lisa school-dressed 0"+str(__ran1))
-        elif GetRelMax("lisa")[0] < 2:
-            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
-        elif chars['lisa'].free < 200:
-            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
+        if GetRelMax('lisa')[0] < 0:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1))
+        elif GetRelMax('lisa')[0] < 2:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'a')
+        elif lisa.free < 200:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'b')
         else:
-            $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'c') # пока отсутствует
 
         $ __mood -= 50 # настроение портится в любом случае
         if __ran1 < 3: # Лиза практически одета
@@ -301,7 +302,7 @@ label lisa_dressed_school:
             menu:
                 Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "Извини... Кстати, отличный зад!" if __ran1 < 3:
-                    if GetRelMax("lisa")[0] < 2:
+                    if GetRelMax('lisa')[0] < 2:
                         $ __rel -= 5
                 "Извини..." if __ran1 > 2:
                     $ __mood += 50
@@ -323,13 +324,13 @@ label lisa_dressed_school:
                 "Извини, я не хотел...":
                     Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
                     Max_00 "Хорошо..."
-                    if GetRelMax("lisa")[0] > 1:
+                    if GetRelMax('lisa')[0] > 1:
                         $ __mood += 50
 
     scene location house myroom door-morning
 
     label .rel_mood:
-        $ AddRelMood("lisa", __rel, __mood)
+        $ AddRelMood('lisa', __rel, __mood)
 
     label .end:
         jump Waiting
@@ -345,7 +346,7 @@ label lisa_dressed_shop:
         $ __rel = 0
         $ __warned = False
         $ peeping['lisa_dressed'] = 1
-        $ spent_time = 60 - int(tm.split(":")[1])
+        $ spent_time = 60 - int(tm[-2:])
         menu .lisa_dressed:
             Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
             "{i}постучаться{/i}":
@@ -371,16 +372,16 @@ label lisa_dressed_shop:
         label .open_door:
             $ spent_time = 20
             $ __ran1 = renpy.random.randint(3, 5)
-            $ chars['lisa'].dress_inf = {3:'02c',4:'02b',5:'00'}[__ran1]
+            $ lisa.dress_inf = {3:'02c',4:'02b',5:'00'}[__ran1]
             scene BG char Lisa morning
-            if GetRelMax("lisa")[0] < 0:
-                $ renpy.show("Lisa school-dressed 0"+str(__ran1))
-            elif GetRelMax("lisa")[0] < 2:
-                $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"a")
-            elif chars['lisa'].free < 200:
-                $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"b")
+            if GetRelMax('lisa')[0] < 0:
+                $ renpy.show('Lisa school-dressed 0'+str(__ran1))
+            elif GetRelMax('lisa')[0] < 2:
+                $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'a')
+            elif lisa.free < 200:
+                $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'b')
             else:
-                $ renpy.show("Lisa school-dressed 0"+str(__ran1)+"c") # пока отсутствует
+                $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'c') # пока отсутствует
 
             if __warned:
                 $ __mood -= 150
@@ -393,7 +394,7 @@ label lisa_dressed_shop:
             menu:
                 Lisa_12 "Макс! [phrase!t]Быстрой закрой дверь с той стороны!"
                 "Извини... Кстати, отличный зад!" if __ran1 == 2:
-                    if GetRelMax("lisa")[0] < 2:
+                    if GetRelMax('lisa')[0] < 2:
                         $ __rel -= 5
                 "А у тебя сиськи подросли!":
                     menu:
@@ -414,11 +415,11 @@ label lisa_dressed_shop:
 
         label .look_window:
             $ spent_time = 10
-            $ __ran1 = renpy.random.choice(["03", "04", "05", "06"])
-            $ chars['lisa'].dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[__ran1]
+            $ __ran1 = renpy.random.choice(['03', '04', '05', '06'])
+            $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[__ran1]
             scene BG char Lisa voyeur-00
-            $ renpy.show("Lisa voyeur "+__ran1)
-            $ renpy.show("FG voyeur-lisa-00"+mgg.dress)
+            $ renpy.show('Lisa voyeur '+__ran1)
+            $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
             $ notify_list.append(_("Скрытность Макса капельку повысилась"))
             $ mgg.stealth += 0.03
             menu:
@@ -430,7 +431,7 @@ label lisa_dressed_shop:
         scene location house myroom door-morning
 
         label .rel_mood:
-            $ AddRelMood("lisa", __rel, __mood)
+            $ AddRelMood('lisa', __rel, __mood)
 
     jump Waiting
 
@@ -451,35 +452,35 @@ label lisa_dressed_repetitor:
 
 
 label lisa_swim:
-    scene image "Lisa swim "+pose3_1+chars['lisa'].dress
-    # $ persone_button1 = "Lisa swim "+pose3_1+chars['lisa'].dress+"b"
+    scene image 'Lisa swim '+pose3_1+lisa.dress
+    $ persone_button1 = 'Lisa swim '+pose3_1+lisa.dress+'b'
     return
 
 
 label lisa_sun:
-    scene image "BG char Lisa sun-"+pose3_1
-    $ renpy.show("Lisa sun "+pose3_1+chars['lisa'].dress)
-    $ persone_button1 = "Lisa sun "+pose3_1+chars['lisa'].dress
+    scene image 'BG char Lisa sun-'+pose3_1
+    $ renpy.show('Lisa sun '+pose3_1+lisa.dress)
+    $ persone_button1 = 'Lisa sun '+pose3_1+lisa.dress+'b'
     return
 
 
 label lisa_dishes:
     scene BG crockery-evening-00
-    $ renpy.show("Lisa crockery-evening 01"+chars['lisa'].dress)
-    $ persone_button1 = "Lisa crockery-evening 01"+chars['lisa'].dress
+    $ renpy.show('Lisa crockery-evening 01'+lisa.dress)
+    $ persone_button1 = 'Lisa crockery-evening 01'+lisa.dress
     return
 
 
 label lisa_dishes_closer:
     scene BG crockery-sink-01
-    $ renpy.show("Lisa crockery-closer "+pose3_1+chars['lisa'].dress)
+    $ renpy.show('Lisa crockery-closer '+pose3_1+lisa.dress)
     return
 
 
 label lisa_phone:
     scene BG char Lisa bed-evening
-    $ renpy.show("Lisa phone-evening "+pose3_1+chars['lisa'].dress)
-    $ persone_button1 = "Lisa phone-evening "+pose3_1+chars['lisa'].dress
+    $ renpy.show('Lisa phone-evening '+pose3_1+lisa.dress)
+    $ persone_button1 = 'Lisa phone-evening '+pose3_1+lisa.dress+'b'
     return
 
 
@@ -497,16 +498,16 @@ label lisa_bath:
             jump .knock
         "{i}открыть дверь{/i}":
             jump .open
-        "{i}заглянуть со двора{/i}" if "ladder" not in flags or flags['ladder'] < 2:
+        "{i}заглянуть со двора{/i}" if 'ladder' not in flags or flags['ladder'] < 2:
             scene Lisa bath 01
-            $ renpy.show("FG voyeur-bath-00"+mgg.dress)
+            $ renpy.show('FG voyeur-bath-00'+mgg.dress)
             Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
             Max_09 "Нужно что-нибудь придумать..."
             $ flags['ladder'] = 1
             jump .end
         "{i}установить стремянку{/i}" if items['ladder'].have:
             scene BG char Max bathroom-window-evening-00
-            $ renpy.show("Max bathroom-window-evening 01"+mgg.dress)
+            $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
             Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
             $ flags['ladder'] = 3
             $ items['ladder'].have = False
@@ -519,13 +520,13 @@ label lisa_bath:
 
     label .ladder:
         $ renpy.scene()
-        $ renpy.show("Max bathroom-window-evening 02"+mgg.dress)
+        $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
 
         $ __r1 = renpy.random.randint(1, 4)
 
         scene BG bath-00
-        $ renpy.show("Lisa bath-window 0"+str(__r1))
+        $ renpy.show('Lisa bath-window 0'+str(__r1))
         show FG bath-00
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
@@ -534,14 +535,14 @@ label lisa_bath:
                 Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
-                    $ renpy.show("Lisa bath-window "+renpy.random.choice(["02", "03", "04"]))
+                    $ renpy.show('Lisa bath-window '+renpy.random.choice(['02', '03', '04']))
                     $ notify_list.append(_("Скрытность Макса капельку повысилась"))
                     $ mgg.stealth += 0.03
                     menu:
                         Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
                         "{i}уйти{/i}":
                             $ spent_time += 10
-                            $ chars['lisa'].dress_inf = "00a"
+                            $ lisa.dress_inf = '00a'
                             jump .end
                 "{i}уйти{/i}":
                     jump .end
@@ -557,7 +558,7 @@ label lisa_bath:
                         Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
                         "{i}уйти{/i}":
                             $ spent_time += 10
-                            $ chars['lisa'].dress_inf = "04a"
+                            $ lisa.dress_inf = '04a'
                             jump .end
                 "{i}уйти{/i}":
                     jump .end
@@ -582,15 +583,15 @@ label lisa_bath:
         if poss['seduction'].stn < 31:
             $ __mood -= 50
             scene BG bath-open-00
-            if GetRelMax("lisa")[0] < 0:
+            if GetRelMax('lisa')[0] < 0:
                 show Lisa bath-open 01
                 Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
-            elif GetRelMax("lisa")[0] < 2:
-                $ chars['lisa'].dress_inf = "00a"
+            elif GetRelMax('lisa')[0] < 2:
+                $ lisa.dress_inf = '00a'
                 show Lisa bath-open 02
                 Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
             else:
-                $ chars['lisa'].dress_inf = "00a"
+                $ lisa.dress_inf = '00a'
                 show Lisa bath-open 03
                 Lisa_11 "Макс! Я же предупредила, что моюсь! Хочешь со мной поссориться?"
             Max_00 "Упс! Уже ушёл..."
@@ -603,13 +604,13 @@ label lisa_bath:
     label .open:
         if poss['seduction'].stn < 31:
             scene BG bath-open-00
-            if GetRelMax("lisa")[0] < 0:
+            if GetRelMax('lisa')[0] < 0:
                 show Lisa bath-open 01
-            elif GetRelMax("lisa")[0] < 2:
-                $ chars['lisa'].dress_inf = "00a"
+            elif GetRelMax('lisa')[0] < 2:
+                $ lisa.dress_inf = '00a'
                 show Lisa bath-open 02
             else:
-                $ chars['lisa'].dress_inf = "00a"
+                $ lisa.dress_inf = '00a'
                 show Lisa bath-open 03
             menu:
                 Lisa_11 "Макс! А постучаться? Я же голая!"
@@ -625,13 +626,13 @@ label lisa_bath:
             Max_00 "В следующих версиях..."
 
     label .end:
-        $ AddRelMood("lisa", __rel, __mood)
+        $ AddRelMood('lisa', __rel, __mood)
         $ spent_time = 10
         jump Waiting
 
 
 label lisa_homework:
     scene BG char Lisa lessons
-    $ renpy.show("Lisa lessons "+pose3_1+chars['lisa'].dress)
-    $ persone_button1 = "Lisa lessons "+pose3_1+chars['lisa'].dress
+    $ renpy.show('Lisa lessons '+pose3_1+lisa.dress)
+    $ persone_button1 = 'Lisa lessons '+pose3_1+lisa.dress+'b'
     return

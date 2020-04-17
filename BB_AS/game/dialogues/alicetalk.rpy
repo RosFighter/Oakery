@@ -3,9 +3,10 @@ label AliceTalkStart:
 
     $ dial = TalkMenuItems()
 
-    $ __CurShedRec = GetPlan(plan_alice, day, tm)
-    if __CurShedRec.talklabel is not None:
-        call expression __CurShedRec.talklabel
+    # $ __cur_plan = GetPlan(plan_alice, day, tm)
+    $ __cur_plan = alice.get_plan()
+    if __cur_plan.talklabel is not None:
+        call expression __cur_plan.talklabel
 
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
@@ -19,7 +20,7 @@ label AliceTalkStart:
     $ rez =  renpy.display_menu(dial)
 
     if rez != "exit":
-        $ __mood = chars['alice'].GetMood()[0]
+        $ __mood = alice.GetMood()[0]
         if rez in gifts['alice']:
             if renpy.has_label(rez.label):
                 call expression rez.label
@@ -401,8 +402,8 @@ label first_talk_smoke:
                 "Ну, давай":
                     $ __mood -= 50
                     $ spent_time += 10
-                    $ money += 10
-                    $ flags['smoke.request'] = "money"
+                    $ mgg.ask(0)
+                    $ flags['smoke.request'] = 'money'
                     menu:
                         Alice_13 "Сейчас сбегаю за деньгами...\nВот, держи $10, и теперь-то уж точно ты ничего не видел. Так?"
                         "Так!":
@@ -551,7 +552,7 @@ label gift_cigarettes:
             $ punreason[1] = 0
             $ peeping['alice_shower'] = 0
         "Держи!":
-            if chars['alice'].GetMood()[0] < -1:
+            if alice.GetMood()[0] < -1:
                 Alice_05 "Хотя ты и полный придурок, но, похоже, начинаешь исправляться!"
                 Max_08 "Я не полный придурок!"
                 $ __mood += 50
@@ -629,24 +630,24 @@ label smoke_fear:
                 $ _ch2 = GetChanceConvince(punalice, 2)
                 $ _ch2_col = GetChanceColor(_ch2)
                 $ ch2_vis = str(int(_ch2/10)) + "%"
-                $ flags['smoke.request'] = "money"
+                $ flags['smoke.request'] = 'money'
                 menu:
                     Alice_12 "[succes!t]Ладно, Макс, я дам тебе денег, но только $10, ок?"
                     "Нет, давай $20 {color=[_ch2_col]}(Убеждение. Шанс: [ch2_vis]){/color}":
                         if RandomChance(_ch2):
                             Alice_13 "[succes!t]Чёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
                             Max_03 "Я жду..."
-                            $ money += 20
+                            $ mgg.ask(1)
                             $ mgg.social += 0.2
                             $ AddRelMood('alice', 0, -50)
                         else:
                             Alice_16 "[failed!t]Макс, не наглей! Сейчас принесу $10. Жди..."
                             Max_04 "Ну ладно, я жду..."
-                            $ money += 10
+                            $ mgg.ask(0)
                             $ mgg.social += 0.1
                             $ AddRelMood('alice', 0, -75)
                     "Хорошо, устроит и $10":
-                        $ money += 10
+                        $ mgg.ask(0)
                         $ AddRelMood('alice', 0, -25)
                 menu:
                     Alice_12 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!"
@@ -801,7 +802,7 @@ label smoke_not_toples:
         Alice_13 "Ну всё, полюбовался и хватит. Вали отсюда, дай спокойно покурить..."
         "Ага...":
             pass
-    $ renpy.show("Alice smoke "+pose3_3+chars['alice'].dress)
+    $ renpy.show("Alice smoke "+pose3_3+alice.dress)
     $ flags['smoke'] = None
     $ flags['smoke.request'] = None
     $ flags['noted'] = False
@@ -831,7 +832,7 @@ label smoke_nopants:
                     $ flags['smoke'] = None
                     $ flags['smoke.request'] = None
                     $ flags['noted'] = False
-                    $ chars['alice'].nopants = False
+                    $ alice.nopants = False
                     $ AddRelMood('alice', 0, 100)
 
     $ spent_time += 10
@@ -857,7 +858,7 @@ label smoke_not_nopants:
     Alice_13 "Спасибо. А теперь иди уже, погуляй где-нибудь. Дай докурить спокойно."
     Max_01 "Хорошо. Я ушёл..."
 
-    $ renpy.show("Alice smoke "+pose3_3+chars['alice'].dress)
+    $ renpy.show("Alice smoke "+pose3_3+alice.dress)
     $ flags['smoke'] = None
     $ flags['smoke.request'] = None
     $ flags['noted'] = False
@@ -931,7 +932,7 @@ label Alice_sorry:
         Max_07 "Тогда я пойду, да?"
         Alice_01 "Бегом! Извращенец тормозной..."
         Max_01 "Ага..."
-    elif len(sorry_gifts['alice'].give == 3) and 'pajamas' not in chars['alice'].gifts:
+    elif len(sorry_gifts['alice'].give == 3) and 'pajamas' not in alice.gifts:
         Alice_05 "Но ведь не только это! Ясно же, что снова пообещаешь вкусняшку за моё молчание."
         Max_07 "Ну а что мне ещё остаётся?"
         Alice_03 "Только вот на этот раз Я буду ставить условия! Сладости - это хорошо, но я хочу большего..."
@@ -1032,13 +1033,13 @@ label gift_dress:
         $ items['dress'].have = False
         $ items['dress'].InShop = False
         $ poss['nightclub'].OpenStage(4)
-        $ chars['alice'].gifts.append('dress')
-        if chars['alice'].inferic is not None:
-            $ chars['alice'].inferic = clip(chars['alice'].inferic-50.0, 0.0, 100.0)
-        if chars['alice'].infmax is not None:
-            $ chars['alice'].infmax = clip(chars['alice'].infmax+20.0, 0.0, 100.0)
+        $ alice.gifts.append('dress')
+        if alice.inferic is not None:
+            $ alice.inferic = clip(alice.inferic-50.0, 0.0, 100.0)
+        if alice.infmax is not None:
+            $ alice.infmax = clip(alice.infmax+20.0, 0.0, 100.0)
         else:
-            $ chars['alice'].infmax = 20.0
+            $ alice.infmax = 20.0
         $ spent_time += 10
         jump Waiting
 
@@ -1064,7 +1065,7 @@ label gift_book:
         $ AddRelMood('alice', 50, 100)
         $ items['erobook_1'].have = False
         $ items['erobook_1'].InShop = False
-        $ chars['alice'].gifts.append('erobook_1')
+        $ alice.gifts.append('erobook_1')
         $ dcv['secretbook'] = Daily(7, False, True) # Покупка второй книги возможна через неделю.
         $ dcv['secretbook'].stage = 2
     elif items['erobook_2'].have:
@@ -1075,7 +1076,7 @@ label gift_book:
         $ AddRelMood('alice', 60, 120)
         $ items['erobook_2'].have = False
         $ items['erobook_2'].InShop = False
-        $ chars['alice'].gifts.append('erobook_2')
+        $ alice.gifts.append('erobook_2')
         $ dcv['secretbook'] = Daily(9, False, True) # Покупка третьей книги возможна через девять дней.
         $ dcv['secretbook'].stage = 3
     elif items['erobook_3'].have or items['erobook_4'].have:
@@ -1087,13 +1088,13 @@ label gift_book:
         if items['erobook_4'].have:
             $ items['erobook_4'].have = False
             $ items['erobook_4'].InShop = False
-            $ chars['alice'].gifts.append('erobook_4')
+            $ alice.gifts.append('erobook_4')
             $ dcv['secretbook'] = Daily(13, False, True) # Покупка пятой книги возможна через тринадцать дней.
             $ dcv['secretbook'].stage = 5
         else:
             $ items['erobook_3'].have = False
             $ items['erobook_3'].InShop = False
-            $ chars['alice'].gifts.append('erobook_3')
+            $ alice.gifts.append('erobook_3')
             $ dcv['secretbook'] = Daily(11, False, True) # Покупка четвертой книги возможна через одинадцать дней.
             $ dcv['secretbook'].stage = 4
     elif items['erobook_5'].have:
@@ -1104,7 +1105,7 @@ label gift_book:
         $ AddRelMood('alice', 80, 160)
         $ items['erobook_5'].have = False
         $ items['erobook_5'].InShop = False
-        $ chars['alice'].gifts.append('erobook_5')
+        $ alice.gifts.append('erobook_5')
 
     $ spent_time += 10
     return
@@ -1114,7 +1115,7 @@ label gift_pajamas:
     $ _ch1 = GetChance(mgg.social, 3)
     $ _ch1_col = GetChanceColor(_ch1)
     $ ch1_vis = str(int(_ch1/10)) + "%"
-    $ __plan_name = GetPlan(plan_alice, day, tm).name
+    # $ __plan_name = GetPlan(plan_alice, day, tm).name
     Alice_06 "Только скажи, что это пижамка, а не сладости! Ты же купил то, что я просила?!"
     Max_04 "Конечно! Топик и шортики, как ты хотела. Вот, держи..."
     Alice_07 "О да! Какие симпатичные! Ты такой молодец, Макс! Спасибо тебе большое..."
@@ -1135,7 +1136,7 @@ label gift_pajamas:
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
         Max_02 "Как страшно... Давай уже, примеряй."
         scene BG char Alice newpajamas
-        if __plan_name in ['sun', 'swim']:
+        if alice.plan_name in ['sun', 'swim']:
             show Alice newpajamas 01a
         elif '09:00' <= tm < '20:00':
             show Alice newpajamas 01
@@ -1145,7 +1146,7 @@ label gift_pajamas:
             Alice_05 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"   #примерка в комнате/спрайт в одежде (01)
             "Ага, я и не подглядываю...":
                 if renpy.random.randint(0, 1) > 0:   #если линейка началась без верха
-                    if __plan_name in ['sun', 'swim']:
+                    if alice.plan_name in ['sun', 'swim']:
                         show Alice newpajamas 02a
                     elif '09:00' <= tm < '20:00':
                         show Alice newpajamas 02
@@ -1153,7 +1154,7 @@ label gift_pajamas:
                         show Alice newpajamas 02b
                     Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #спрайт без верха (02)
                     Max_03 "Я не пялюсь..."
-                    if __plan_name in ['sun', 'swim']:
+                    if alice.plan_name in ['sun', 'swim']:
                         show Alice newpajamas 04a
                     elif '09:00' <= tm < '20:00':
                         show Alice newpajamas 04
@@ -1165,7 +1166,7 @@ label gift_pajamas:
                         Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё шортики примерить."   #спрайт в топике без низа, но в трусиках (если бикини, то без трусиков) (06)
                     else:
                         Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё шортики примерить."   #спрайт в топике без низа, трусиков по уговору нет
-                    if __plan_name in ['sun', 'swim'] or flags['smoke'] == 'nopants':  # если Алиса в бикини или без трусиков
+                    if alice.plan_name in ['sun', 'swim'] or flags['smoke'] == 'nopants':  # если Алиса в бикини или без трусиков
                         if '09:00' <= tm < '20:00':
                             show Alice newpajamas 06a
                         else:
@@ -1175,7 +1176,7 @@ label gift_pajamas:
                             show Alice newpajamas 06
                         else:
                             show Alice newpajamas 06b
-                    if flags['smoke'] != 'not_nopants' or __plan_name in ['sun', 'swim']:
+                    if flags['smoke'] != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
                         Max_02 "Конечно, я не смотрю..."
                     else:
                         Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"   #если на Алисе трусики, но их не должно быть
@@ -1188,7 +1189,7 @@ label gift_pajamas:
                         show Alice newpajamas 08a
                     Max_05 "Не то слово, всё выглядит шикарно!"
                 else:   #если линейка началась без низа
-                    if __plan_name in ['sun', 'swim']: # Алиса в бикини
+                    if alice.plan_name in ['sun', 'swim']: # Алиса в бикини
                         show Alice newpajamas 03b
                     elif flags['smoke'] == 'nopants':  # если Алиса без трусиков
                         if '09:00' <= tm < '20:00':
@@ -1204,13 +1205,13 @@ label gift_pajamas:
                         Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #линейка началась без низа, но в трусиках (03)
                     else:
                         Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"   #линейка началась без низа, трусиков по уговору нет
-                    if flags['smoke'] != 'not_nopants' or __plan_name in ['sun', 'swim']:
+                    if flags['smoke'] != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
                         Max_02 "Я не пялюсь..."
                     else:
                         Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"   #если на Алисе трусики, но их не должно быть
                         Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
                         Max_01 "Ладно, считай, я ничего не видел."
-                    if __plan_name in ['sun', 'swim']:
+                    if alice.plan_name in ['sun', 'swim']:
                         show Alice newpajamas 05a
                     elif '09:00' <= tm < '20:00':
                         show Alice newpajamas 05
@@ -1284,13 +1285,13 @@ label gift_pajamas:
     $ AddRelMood("alice", 100, 200)
     $ items['pajamas'].have = False
     $ items['pajamas'].InShop = False
-    $ chars['alice'].gifts.append('pajamas')
-    if chars['alice'].inferic is not None:
-        $ chars['alice'].inferic = clip(chars['alice'].inferic-50.0, 0.0, 100.0)
-    if chars['alice'].infmax is not None:
-        $ chars['alice'].infmax = clip(chars['alice'].infmax+20.0, 0.0, 100.0)
+    $ alice.gifts.append('pajamas')
+    if alice.inferic is not None:
+        $ alice.inferic = clip(alice.inferic-50.0, 0.0, 100.0)
+    if alice.infmax is not None:
+        $ alice.infmax = clip(alice.infmax+20.0, 0.0, 100.0)
     else:
-        $ chars['alice'].infmax = 20.0
+        $ alice.infmax = 20.0
 
     $ cloth_type['alice']['casual'] = 'b'
     $ cloth_type['alice']['day.left'] = 3
@@ -1723,15 +1724,15 @@ label alice_sorry_gifts:
         if current_room == house[1]:
             scene BG char Alice newdress
             if '09:00' <= tm < '20:00':
-                $ renpy.show("Alice hugging aliceroom 01"+chars['alice'].dress+mgg.dress)
+                $ renpy.show("Alice hugging aliceroom 01"+alice.dress+mgg.dress)
             else:
-                $ renpy.show("Alice hugging aliceroom 01a"+chars['alice'].dress+mgg.dress)
+                $ renpy.show("Alice hugging aliceroom 01a"+alice.dress+mgg.dress)
         elif current_room == house[4]:
             scene BG char Alice hugging terrace-01
-            $ renpy.show("Alice hugging terrace 01"+chars['alice'].dress+mgg.dress)
+            $ renpy.show("Alice hugging terrace 01"+alice.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Alice hugging yard-01
-            $ renpy.show("Alice hugging yard 01"+chars['alice'].dress+mgg.dress)
+            $ renpy.show("Alice hugging yard 01"+alice.dress+mgg.dress)
         return
 
     label .kindred_hugs:
@@ -1739,15 +1740,15 @@ label alice_sorry_gifts:
         if current_room == house[1]:
             scene BG char Alice newdress
             if '09:00' <= tm < '20:00':
-                $ renpy.show("Alice hugging aliceroom 02"+chars['alice'].dress+mgg.dress)
+                $ renpy.show("Alice hugging aliceroom 02"+alice.dress+mgg.dress)
             else:
-                $ renpy.show("Alice hugging aliceroom 02a"+chars['alice'].dress+mgg.dress)
+                $ renpy.show("Alice hugging aliceroom 02a"+alice.dress+mgg.dress)
         elif current_room == house[4]:
             scene BG char Alice hugging terrace-01
-            $ renpy.show("Alice hugging terrace 02"+chars['alice'].dress+mgg.dress)
+            $ renpy.show("Alice hugging terrace 02"+alice.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Alice hugging yard-01
-            $ renpy.show("Alice hugging yard 02"+chars['alice'].dress+mgg.dress)
+            $ renpy.show("Alice hugging yard 02"+alice.dress+mgg.dress)
         return
 
     label .middle_again:

@@ -7,7 +7,7 @@ label Waiting:
     $ prevday = day
     $ prevtime = tm
 
-    if alarm_time != "":
+    if alarm_time != '':
         $ d2 = TimeDifference(prevtime, alarm_time)
         if spent_time == 0 or d2 < spent_time:
             $ spent_time = d2
@@ -18,14 +18,14 @@ label Waiting:
     $ cut_id = GetCutEvents(prevtime, tm, status_sleep)
 
     # и устанавливаем время на начало кат-события, если оно есть
-    if cut_id != "":
+    if cut_id != '':
         $ __name_label = EventsByTime[cut_id].label
         if prevtime > tm:
-            if prevtime <= EventsByTime[cut_id].tm < "23:59":
+            if prevtime <= EventsByTime[cut_id].tm < '23:59':
                 $ day = prevday
         $ tm = EventsByTime[cut_id].tm
     else:
-        $ __name_label = ""
+        $ __name_label = ''
 
     $ spent_time = TimeDifference(prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
@@ -45,15 +45,15 @@ label Waiting:
         $ peeping['lisa_dressed'] = 0
         $ peeping['alice_dressed'] = 0
         # позы обновляются каждый час
-        $ pose3_1 = renpy.random.choice(["01", "02", "03"])
-        $ pose3_2 = renpy.random.choice(["01", "02", "03"])
-        $ pose3_3 = renpy.random.choice(["01", "02", "03"])
-        $ pose2_1 = renpy.random.choice(["01", "02"])
-        $ pose2_2 = renpy.random.choice(["01", "02"])
-        $ pose2_3 = renpy.random.choice(["01", "02"])
-        # $ tv_scene = renpy.random.choice(["", "bj", "hj"])
+        $ pose3_1 = renpy.random.choice(['01', '02', '03'])
+        $ pose3_2 = renpy.random.choice(['01', '02', '03'])
+        $ pose3_3 = renpy.random.choice(['01', '02', '03'])
+        $ pose2_1 = renpy.random.choice(['01', '02'])
+        $ pose2_2 = renpy.random.choice(['01', '02'])
+        $ pose2_3 = renpy.random.choice(['01', '02'])
+        # $ tv_scene = renpy.random.choice(['', 'bj', 'hj'])
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
-    if prevtime < "12:00" <= tm:
+    if prevtime < '12:00' <= tm:
         call Noon
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
@@ -80,7 +80,7 @@ label Waiting:
     # обновим extra-info для сохранений
     $ NewSaveName()
 
-    if __name_label != "" and renpy.has_label(__name_label):
+    if __name_label != '' and renpy.has_label(__name_label):
         # если есть кат-событие - запускаем его
         $ spent_time = 0
         $ prevday = day
@@ -88,10 +88,10 @@ label Waiting:
         $ CamShow()
         $ cur_ratio = 1
         $ status_sleep = False
-        $ alarm_time = ""
+        $ alarm_time = ''
         jump expression __name_label
 
-    # иначе запускаем блок "после ожидания"
+    # иначе запускаем блок 'после ожидания'
     jump AfterWaiting
 
 
@@ -113,18 +113,24 @@ label NewDay:
                 $ flags['smoke'] = 'not_' + flags['smoke']
                 $ flags['noted'] = False  # нарушение еще не замечено Максом
                 if flags['smoke.request'] == 'nopants':
-                    $ chars['alice'].nopants = False
+                    $ alice.nopants = False
                 elif flags['smoke.request'] == 'sleep':
-                    $ chars['alice'].sleeptoples = False
+                    $ alice.sleeptoples = False
             else:
                 $ flags['smoke'] = flags['smoke.request']
                 if flags['smoke.request'] == 'nopants':
-                    $ chars['alice'].nopants = True
+                    $ alice.nopants = True
                 elif flags['smoke.request'] == 'sleep':
-                    $ chars['alice'].sleeptoples = True
+                    $ alice.sleeptoples = True
 
-    $ random_loc_ab = renpy.random.choice(["a", "b"])
-    $ random_sigloc = renpy.random.choice(["n", "t"])
+    $ random_loc_ab = renpy.random.choice(['a', 'b'])
+    $ random_sigloc = renpy.random.choice(['n', 't'])
+
+    if peeping['ann_eric_tv']:
+        $ ae_tv_order.pop(0)
+        if not ae_tv_order:
+            $ ae_tv_order = ['01', '02', '03', '04', '05', '06']
+            $ renpy.random.shuffle(ae_tv_order)  # перемешаем список случайным образом
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -166,12 +172,12 @@ label NewDay:
         $ del punalice[14:]
     $ flags['lisa_hw'] = False
 
-    if credit.debt > 0:        # если кредит не погашен
-        $ credit.left -= 1       # уменьшим счетчик дней
-        if credit.left == 0:   # если счетчик дней кончился
-            $ credit.charge()    # начислим штраф
+    if mgg.credit.debt > 0:        # если кредит не погашен
+        $ mgg.credit.left -= 1       # уменьшим счетчик дней
+        if mgg.credit.left == 0:   # если счетчик дней кончился
+            $ mgg.credit.charge()    # начислим штраф
     $ talk_var['sun_oiled'] = 0  # Алиce можно намазать кремом
-    if 'pajamas' in chars['alice'].gifts:  # Если у Алисы есть пижама, то каждые 3 дня она меняет тип одежды
+    if 'pajamas' in alice.gifts:  # Если у Алисы есть пижама, то каждые 3 дня она меняет тип одежды
         $ cloth_type['alice']['day.left'] -= 1
         if cloth_type['alice']['day.left'] == 0:
             $ cloth_type['alice']['casual'] = 'b' if cloth_type['alice']['casual'] == 'a' else 'a'
@@ -181,14 +187,14 @@ label NewDay:
 
 label Noon:
     $ __new_items = False
-    if day > 12 and not ('nightie' in chars['ann'].gifts or items['nightie'].have or items['nightie'].InShop):
+    if day > 12 and not ('nightie' in ann.gifts or items['nightie'].have or items['nightie'].InShop):
         $ items['nightie'].InShop = True
         $ __new_items = True
     if ('secretbook' in dcv and dcv['secretbook'].done
-        and "erobook_"+str(dcv['secretbook'].stage) in items
-        and not items["erobook_"+str(dcv['secretbook'].stage)].InShop): # прошел откат после дарения книги, можно купить следующую
+        and 'erobook_'+str(dcv['secretbook'].stage) in items
+        and not items['erobook_'+str(dcv['secretbook'].stage)].InShop): # прошел откат после дарения книги, можно купить следующую
         # dcv['secretbook'].stage += 1
-        $ items["erobook_"+str(dcv['secretbook'].stage)].InShop = True
+        $ items['erobook_'+str(dcv['secretbook'].stage)].InShop = True
         $ __new_items = True
 
     if __new_items:
@@ -218,42 +224,45 @@ label AfterWaiting:
 
     # отключение возможности помыть посуду, если ее вымыли Лиза или Алиса
     if not dishes_washed:
-        if tm > "20:00":
+        if tm > '20:00':
             $ dishes_washed = True
         elif (day+2) % 7 != 6:
-            $ __name_label = ""
+            $ __name_label = ''
             if (day+2) % 7 == 0:
-                $ __CurShedRec = GetPlan(plan_alice, day, "10:00")
-                if __CurShedRec is not None:
-                    $ __name_label = __CurShedRec.label
+                # $ __cur_plan = GetPlan(plan_alice, day, '10:00')
+                $ __cur_plan = alice.get_plan(day, '10:00')
+                if __cur_plan is not None:
+                    $ __name_label = __cur_plan.label
             else:
-                $ __CurShedRec = GetPlan(plan_alice, day, "11:00")
-                if __CurShedRec is not None:
-                    $ __name_label = __CurShedRec.label
+                # $ __cur_plan = GetPlan(plan_alice, day, '11:00')
+                $ __cur_plan = alice.get_plan(day, '11:00')
+                if __cur_plan is not None:
+                    $ __name_label = __cur_plan.label
 
-            if __name_label == "alice_dishes":
-                if ((day+2) % 7 == 0 and tm >= "11:00") or tm >= "12:00":
+            if __name_label == 'alice_dishes':
+                if (GetWeekday(day) == 0 and tm >= '11:00') or tm >= '12:00':
                     $ dishes_washed = True
 
     # обновим extra-info для сохранений
     $ NewSaveName()
 
+    $ __name_label = ''
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
-    $ __name_label = ""
     if len(current_room.cur_char) > 0:
-        $ __CurShedRec = GetPlan(eval("plan_"+current_room.cur_char[0]), day, tm)
-        if __CurShedRec is not None:
-            $ __name_label = __CurShedRec.label
+        # $ __cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
+        $ __cur_plan = chars[current_room.cur_char[0]].get_plan()
+        if __cur_plan is not None:
+            $ __name_label = __cur_plan.label
 
     $ SetAvailableActions()
 
-    if __name_label != "" and renpy.has_label(__name_label):
+    if __name_label != '' and renpy.has_label(__name_label):
         # управляющий блок найден и существует
         call expression __name_label
     else:
         # устанавливаем фон комнаты без персонажей
-        if current_room.cur_bg.find("_") >= 0:
-            scene image(current_room.cur_bg.replace("_", ""))
+        if current_room.cur_bg.find('_') >= 0:
+            scene image(current_room.cur_bg.replace('_', ''))
         else:
             scene image(current_room.cur_bg)
 
@@ -270,15 +279,15 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
-    if current_ver == "v0.01.TechDemo":
+    if current_ver == 'v0.01.TechDemo':
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
-    elif current_ver[:5] == "v0.02":
+    elif current_ver[:5] == 'v0.02':
         scene BG villa-door
         "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
-    elif current_ver < '0.03.1.020':
+    elif current_ver < '0.03.5.000':
         scene BG villa-door
         "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()

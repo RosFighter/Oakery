@@ -23,7 +23,7 @@ define config.has_quicksave = False
 define config.autosave_slots = 30
 define config.quicksave_slots = 30
 define config.autosave_on_quit = False
-default persistent.grid_vbox = "grid"
+default persistent.grid_vbox = 'grid'
 default persistent.orint = False
 default number_autosave = 0
 default number_quicksave = 0
@@ -53,30 +53,30 @@ define helps = [
 
 # Диалоги
 define talks = {
-    "blog1"      : TalkTheme("alice", _("Значит, у тебя есть блог?"), "talkblog1", "talk_var['blog']==1", -1),
-    "blog2"      : TalkTheme("alice", _("Насчёт блога..."), "talkblog2", "talk_var['blog']==3", 1),
-    "lisa_fd"    : TalkTheme("lisa", _("О школе..."), "about_school", "day==1 and tm>=\"16:00\" and talk_var[\"lisa_fd\"]==0 and talk_var['boy']==0"),
-    "lisa_swim"  : TalkTheme("lisa", _("А ты чего так загораешь?"), "talk_swim", "poss['Swimsuit'].stn < 0 and GetPlan(plan_lisa, day, tm).name == 'sun'"),
-    "lisas_boy"  : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy", "talk_var['boy']==1", 0, "lisa_boy"),
-    "lisas_boy2" : TalkTheme("lisa", _("Насчёт твоего парня..."), "about_boy2", "2 < talk_var['boy'] < 6", 1),
-    "lisa_dw"    : TalkTheme("lisa", _("Насчёт посуды..."), "wash_dishes_lisa", "talk_var['lisa_dw']==0 and GetPlan(plan_lisa, day, tm).name == 'dishes'", -1),
-    "alice_dw"   : TalkTheme("alice", _("Насчёт посуды..."), "wash_dishes_alice", "talk_var['alice_dw']==0 and GetPlan(plan_alice, day, tm).name == 'dishes'", -1),
-    "ask_money"  : TalkTheme("ann", _("Мам, дай денег, пожалуйста..."), "ann_ask_money", "talk_var['ask_money']==0"),
-    "aboutfood"  : TalkTheme("ann", _("Я продукты заказал!"), "ann_aboutfood", "dcv['buyfood'].stage==2 and dcv['buyfood'].lost==2"),
-    "aboutpool"  : TalkTheme("ann", _("Мам, бассейн чист!"), "ann_aboutpool", "dcv['clearpool'].stage==2 and not dcv['clearpool'].done"),
-    "ann_tv"     : TalkTheme("ann", _("Что смотришь?"), "ann_talk_tv", "talk_var['ann_tv']==0 and GetPlan(plan_ann, day, tm).name == 'tv'"),
-    "alice_tv"   : TalkTheme("alice", _("Не возражаешь против компании?"), "alice_talk_tv", "talk_var['alice_tv']==0 and GetPlan(plan_alice, day, tm).name == 'tv'"),
-    "aboutbooks" : TalkTheme("alice", _("Что читаешь?"), "alice_aboutbooks", "GetPlan(plan_alice, day, tm).name == \"read\" and poss['secretbook'].stn < 0"),
-    "ann_mw"     : TalkTheme("ann", _("Насчёт случая с Лизой..."), "Ann_MorningWood", "flags['morning_erect'] == 1"),
-    "lisa_mw"    : TalkTheme("lisa", _("Насчёт этого случая утром..."), "Lisa_MorningWood", "poss['seduction'].stn == 0", 0, "talkcooldown"),
-    "lisa_sg1"   : TalkTheme("lisa", _("Насчёт успеваемости..."), "Lisa_sg1", "poss['sg'].stn == 0"),
-    "lisa_sg2"   : TalkTheme("lisa", _("Ну как, ты подумала о моих условиях?"), "Lisa_sg2", "poss['sg'].stn == 1 and talk_var['lisa.pun'] > 0"),
-    "lisa_hw"    : TalkTheme("lisa", _("Помочь с уроками?"), "Lisa_HomeWork", "poss['sg'].stn > 1 and not flags['lisa_hw'] and GetPlan(plan_lisa, day, tm).name == 'homework'"),
-    "lisa_peep"  : TalkTheme("lisa", _("Хотел извиниться за утренний инцидент..."), "Lisa_sorry", "peeping['lisa_shower']==3"),
-    "alice_peep" : TalkTheme("alice", _("Хотел извиниться за утренний инцидент..."), "Alice_sorry", "peeping['alice_shower']==3"),
-    "alice_sol"  : TalkTheme("alice", _("Загораешь?"), "Alice_solar", "talk_var['alice_sun']==0 and (talk_var['sun_oiled']==0 or talk_var['sun_oiled']==3)and GetPlan(plan_alice, day, tm).name == 'sun'"),
-    "lisa_gift"  : TalkTheme("lisa", _("У меня для тебя обещанная вкусняшка!"), "lisa_sorry_gifts", "sorry_gifts['lisa'].owe and there_in_stock('lisa') and GetPlan(plan_lisa, day, tm).name in ['sun', 'read', 'phone']"),
-    "alice_gift" : TalkTheme("alice", _("У меня для тебя обещанная вкусняшка!"), "alice_sorry_gifts", "sorry_gifts['alice'].owe and there_in_stock('alice') and GetPlan(plan_alice, day, tm).name in ['sun', 'read', 'resting', 'blog']"),
+    'blog1'      : TalkTheme('alice', _("Значит, у тебя есть блог?"), 'talkblog1', "talk_var['blog']==1", -1),
+    'blog2'      : TalkTheme('alice', _("Насчёт блога..."), 'talkblog2', "talk_var['blog']==3", 1),
+    'lisa_fd'    : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and talk_var['lisa_fd']==0 and talk_var['boy']==0"),
+    'lisa_swim'  : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].stn < 0 and lisa.plan_name == 'sun'"),
+    'lisas_boy'  : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy', "talk_var['boy']==1", 0, "lisa_boy"),
+    'lisas_boy2' : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy2', "2 < talk_var['boy'] < 6", 1),
+    'lisa_dw'    : TalkTheme('lisa', _("Насчёт посуды..."), 'wash_dishes_lisa', "talk_var['lisa_dw']==0 and lisa.plan_name == 'dishes'", -1),
+    'alice_dw'   : TalkTheme('alice', _("Насчёт посуды..."), 'wash_dishes_alice', "talk_var['alice_dw']==0 and alice.plan_name == 'dishes'", -1),
+    'ask_money'  : TalkTheme('ann', _("Мам, дай денег, пожалуйста..."), 'ann_ask_money', "talk_var['ask_money']==0"),
+    'aboutfood'  : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv['buyfood'].stage==2 and dcv['buyfood'].lost==2"),
+    'aboutpool'  : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv['clearpool'].stage==2 and not dcv['clearpool'].done"),
+    'ann_tv'     : TalkTheme('ann', _("Что смотришь?"), 'ann_talk_tv', "talk_var['ann_tv']==0 and ann.plan_name == 'tv'"),
+    'alice_tv'   : TalkTheme('alice', _("Не возражаешь против компании?"), 'alice_talk_tv', "talk_var['alice_tv']==0 and alice.plan_name == 'tv'"),
+    'aboutbooks' : TalkTheme('alice', _("Что читаешь?"), 'alice_aboutbooks', "alice.plan_name == 'read' and poss['secretbook'].stn < 0"),
+    'ann_mw'     : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "flags['morning_erect'] == 1"),
+    'lisa_mw'    : TalkTheme('lisa', _("Насчёт этого случая утром..."), 'Lisa_MorningWood', "poss['seduction'].stn == 0", 0, "talkcooldown"),
+    'lisa_sg1'   : TalkTheme('lisa', _("Насчёт успеваемости..."), 'Lisa_sg1', "poss['sg'].stn == 0"),
+    'lisa_sg2'   : TalkTheme('lisa', _("Ну как, ты подумала о моих условиях?"), 'Lisa_sg2', "poss['sg'].stn == 1 and talk_var['lisa.pun'] > 0"),
+    'lisa_hw'    : TalkTheme('lisa', _("Помочь с уроками?"), 'Lisa_HomeWork', "poss['sg'].stn > 1 and not flags['lisa_hw'] and lisa.plan_name == 'homework'"),
+    'lisa_peep'  : TalkTheme('lisa', _("Хотел извиниться за утренний инцидент..."), 'Lisa_sorry', "peeping['lisa_shower']==3"),
+    'alice_peep' : TalkTheme('alice', _("Хотел извиниться за утренний инцидент..."), 'Alice_sorry', "peeping['alice_shower']==3"),
+    'alice_sol'  : TalkTheme('alice', _("Загораешь?"), 'Alice_solar', "talk_var['alice_sun']==0 and (talk_var['sun_oiled']==0 or talk_var['sun_oiled']==3)and alice.plan_name == 'sun'"),
+    'lisa_gift'  : TalkTheme('lisa', _("У меня для тебя обещанная вкусняшка!"), 'lisa_sorry_gifts', "sorry_gifts['lisa'].owe and there_in_stock('lisa') and lisa.plan_name in ['sun', 'read', 'phone']"),
+    'alice_gift' : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_sorry_gifts', "sorry_gifts['alice'].owe and there_in_stock('alice') and alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
     }
 
 # Категории магазина
@@ -92,25 +92,24 @@ define ShopCat = {
     }
 
 define gifts = {
-    "lisa"  : [
-        Gift("bikini", _("А у меня есть то, о чём ты мечтала..."), "gift_swimsuit"),
-        Gift("bathrobe", _("У меня для тебя подарок {i}(Халат){/i}"), "gift_bathrobe", -1, "GetPlan(plan_lisa, day, tm).name in ['sun', 'read', 'phone']"),
+    'lisa'  : [
+        Gift('bikini', _("А у меня есть то, о чём ты мечтала..."), 'gift_swimsuit'),
+        Gift('bathrobe', _("У меня для тебя подарок {i}(Халат){/i}"), 'gift_bathrobe', -1, "lisa.plan_name in ['sun', 'read', 'phone']"),
         ],
-    "alice" : [
-        Gift("cigarettes", _("У меня есть кое-что запрещённое..."), "gift_cigarettes", -1),
-        Gift("dress", _("Угадай: маленькое, чёрненькое..."), "gift_dress", -2),
-        Gift("erobook_1", _("У меня для тебя одна книжка..."), "gift_book", -1),
-        Gift("erobook_2", _("У меня снова для тебя книжка..."), "gift_book", -1),
-        Gift("erobook_3", _("И снова у меня для тебя книжка..."), "gift_book", -1),
-        Gift("erobook_4", _("И снова у меня для тебя книжка..."), "gift_book", -1),
-        Gift("erobook_5", _("У меня снова для тебя книжка..."), "gift_book", -1),
-        Gift("pajamas", _("У меня для тебя подарок {i}(Пижама){/i}"), "gift_pajamas", -1, "GetPlan(plan_alice, day, tm).name in ['sun', 'read', 'resting', 'blog']"),
+    'alice' : [
+        Gift('cigarettes', _("У меня есть кое-что запрещённое..."), 'gift_cigarettes', -1),
+        Gift('dress', _("Угадай: маленькое, чёрненькое..."), 'gift_dress', -2),
+        Gift('erobook_1', _("У меня для тебя одна книжка..."), 'gift_book', -1),
+        Gift('erobook_2', _("У меня снова для тебя книжка..."), 'gift_book', -1),
+        Gift('erobook_3', _("И снова у меня для тебя книжка..."), 'gift_book', -1),
+        Gift('erobook_4', _("И снова у меня для тебя книжка..."), 'gift_book', -1),
+        Gift('erobook_5', _("У меня снова для тебя книжка..."), 'gift_book', -1),
+        Gift('pajamas', _("У меня для тебя подарок {i}(Пижама){/i}"), 'gift_pajamas', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
         # Gift("", _(""), ""),
         ],
-    "ann"   : [
-        # Gift("cosmatic1", _("У меня для тебя подарок {i}(Косметика){/i}"), "gift_cosmatics"),
-        # Gift("cosmatic2", _("У меня для тебя подарок {i}(Косметика){/i}"), "gift_cosmatics"),
-        # Gift("cosmatic3", _("У меня для тебя подарок {i}(Косметика){/i}"), "gift_cosmatics"),
-        # Gift("nightie", _("У меня для тебя подарок {i}(Ночнушка){/i}"), "gift_nightie"),
+    'ann'   : [
+        # Gift('cosmatic1', _("У меня для тебя подарок {i}(Косметика){/i}"), 'gift_cosmatics'),
+        # Gift('cosmatic2', _("У меня для тебя подарок {i}(Косметика){/i}"), 'gift_cosmatics'),
+        # Gift('cosmatic3', _("У меня для тебя подарок {i}(Косметика){/i}"), 'gift_cosmatics'),
         ],
     }

@@ -6,7 +6,7 @@ init python:
 
 
     # Увеличивает время, заданное в формате 'hh:mm' на delta минут
-    def AddTime(ts, delta=1):
+    def add_time(ts, delta=1):
         h, m = ts.split(':')
         ti = int(h)*60 + int(m) + delta ## переведем время в минуты и прибавим дельту
         if ti > 0:
@@ -67,193 +67,183 @@ init python:
         return (day*24 + int(h2))*60 + int(m2) >= (int(d1)*24 + int(h1))*60 + int(m1)
 
 
-    # ключ для сортировки списка с расписанием - время начала действия
-    def SortByTime(inputStr):
-        return inputStr.ts
+    # # добавляет в расписание запись или блок связанных записей
+    # def AddSchedRec(plan, *add_rec):
+    #     new_plan = []
+    #     if type(add_rec[0]) == list:
+    #         zap = add_rec[0][0]
+    #     else:
+    #         zap = add_rec[0]
+    #     for rec in plan:
+    #         edited = False
+    #         if (rec.ts <= zap.ts < rec.te) or (zap.ts <= rec.ts < zap.te): # время записей пересекается
+    #             for d in zap.lod:  # перебираем кортеж дней
+    #                 if d in rec.lod:      # если день входит в кортеж записей, запись нужно изменять
+    #                     edited = True
+    #                     break
+    #         if edited:  # в новый план запись вставляется в измененном виде
+    #             # сначала отберем дни, незатронутые изменениями
+    #             list_of_day = tuple(d for d in rec.lod if d not in zap.lod)
+    #             if len(list_of_day):  # есть дни, не затронутые изменениями
+    #                 new_plan.append(Schedule(list_of_day, rec.ts, rec.te, rec.name, rec.desc, rec.loc, rec.room, rec.label,
+    #                                          rec.krat, rec.shift, rec.weekstart, rec.variable, rec.enabletalk, rec.talklabel,
+    #                                          rec.glow))
+    #             list_of_day = tuple(d for d in rec.lod if d in zap.lod)
+    #             if rec.ts < zap.ts < rec.te and len(list_of_day):  # часть перед новой записью
+    #                 new_plan.append(Schedule(list_of_day, rec.ts, add_time(zap.ts, -1), rec.name, rec.desc, rec.loc,
+    #                                          rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
+    #                                          rec.enabletalk, rec.talklabel, rec.glow))
+    #             if rec.ts < zap.te < rec.te and len(list_of_day):  # часть после новой записи
+    #                 new_plan.append(Schedule(list_of_day, add_time(zap.te), rec.te, rec.name, rec.desc, rec.loc,
+    #                                          rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
+    #                                          rec.enabletalk, rec.talklabel, rec.glow))
+    #         else:  # копируем запись в новый план как есть
+    #             new_plan.append(rec)
+    #
+    #     for rec in add_rec:
+    #         if type(rec) == list:
+    #             new_plan.extend(rec)
+    #         else:
+    #             new_plan.append(rec)
+    #     new_plan.sort(key=SortByTime)
+    #     plan.clear()
+    #     plan.extend(new_plan)
 
 
-    # ключ для сортировки списка с расписанием - дата и время начала действия
-    def SortByDayTime(inputStr):
-        return str(inputStr[0]) + '_' + inputStr[1]
+    # # добавляет в расписание список записей
+    # def AddSchedule(plan, *added_plan):
+    #     #переберем новый список в поиске записей совпадающих по дням недели и времени, но различающихся условием или сдвигом недели
+    #     new_list = []
+    #     block = []
+    #     for pl in added_plan:
+    #         nayden = False
+    #         for nl in new_list:
+    #             if pl.lod == nl.lod and pl.ts == nl.ts and pl.te == nl.te:
+    #                 nayden = True
+    #                 block.append([nl, pl])
+    #                 new_list.remove(nl)
+    #         if not nayden:
+    #             for bl in block:
+    #                 if bl[0].lod == pl.lod and bl[0].ts == pl.ts and bl[0].te == pl.te:
+    #                     nayden = True
+    #                     bl.append(pl)
+    #         if not nayden:
+    #             new_list.append(pl)
+    #
+    #     # добавим отдельные записи
+    #     for nl in new_list:
+    #         AddSchedRec(plan, nl)
+    #
+    #     # добавим блок связанных записей
+    #     for bl in block:
+    #         AddSchedRec(plan, bl)
 
 
-    # добавляет в расписание запись или блок связанных записей
-    def AddSchedRec(plan, *add_rec):
-        new_plan = []
-        if type(add_rec[0]) == list:
-            zap = add_rec[0][0]
-        else:
-            zap = add_rec[0]
-        for rec in plan:
-            edited = False
-            if (rec.ts <= zap.ts < rec.te) or (zap.ts <= rec.ts < zap.te): # время записей пересекается
-                for d in zap.lod:  # перебираем кортеж дней
-                    if d in rec.lod:      # если день входит в кортеж записей, запись нужно изменять
-                        edited = True
-                        break
-            if edited:  # в новый план запись вставляется в измененном виде
-                # сначала отберем дни, незатронутые изменениями
-                list_of_day = tuple(d for d in rec.lod if d not in zap.lod)
-                if len(list_of_day):  # есть дни, не затронутые изменениями
-                    new_plan.append(Schedule(list_of_day, rec.ts, rec.te, rec.name, rec.desc, rec.loc, rec.room, rec.label,
-                                             rec.krat, rec.shift, rec.weekstart, rec.variable, rec.enabletalk, rec.talklabel,
-                                             rec.glow))
-                list_of_day = tuple(d for d in rec.lod if d in zap.lod)
-                if rec.ts < zap.ts < rec.te and len(list_of_day):  # часть перед новой записью
-                    new_plan.append(Schedule(list_of_day, rec.ts, AddTime(zap.ts, -1), rec.name, rec.desc, rec.loc,
-                                             rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
-                                             rec.enabletalk, rec.talklabel, rec.glow))
-                if rec.ts < zap.te < rec.te and len(list_of_day):  # часть после новой записи
-                    new_plan.append(Schedule(list_of_day, AddTime(zap.te), rec.te, rec.name, rec.desc, rec.loc,
-                                             rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
-                                             rec.enabletalk, rec.talklabel, rec.glow))
-            else:  # копируем запись в новый план как есть
-                new_plan.append(rec)
-
-        for rec in add_rec:
-            if type(rec) == list:
-                new_plan.extend(rec)
-            else:
-                new_plan.append(rec)
-        new_plan.sort(key=SortByTime)
-        plan.clear()
-        plan.extend(new_plan)
+    # # Возвращает запись с текущим действием персонажа
+    # #     Аргументы:
+    # #     schedule - список записей с расписанием,
+    # #     day      - день (целое),
+    # #     tm     - время в формате 'hh:mm',
+    # #     week     - номер недели (целое)
+    # def GetPlan(schedule, day, tm):
+    #     h, m = tm.split(':')  # нормализуем время на всякий случай
+    #     tm = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
+    #     day += 2  # в игре отсчет начинается со среды и дня под номером 1
+    #     rez = []
+    #     for sh in schedule:
+    #         if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
+    #             (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
+    #                 rez.append(sh)
+    #
+    #     if len(rez) > 1:
+    #         print("ошибочка-с...", rez)
+    #     elif len(rez) == 0:
+    #         return None
+    #     else:
+    #         return rez[0]
 
 
-    # добавляет в расписание список записей
-    def AddSchedule(plan, *added_plan):
-        #переберем новый список в поиске записей совпадающих по дням недели и времени, но различающихся условием или сдвигом недели
-        new_list = []
-        block = []
-        for pl in added_plan:
-            nayden = False
-            for nl in new_list:
-                if pl.lod == nl.lod and pl.ts == nl.ts and pl.te == nl.te:
-                    nayden = True
-                    block.append([nl, pl])
-                    new_list.remove(nl)
-            if not nayden:
-                for bl in block:
-                    if bl[0].lod == pl.lod and bl[0].ts == pl.ts and bl[0].te == pl.te:
-                        nayden = True
-                        bl.append(pl)
-            if not nayden:
-                new_list.append(pl)
-
-        # добавим отдельные записи
-        for nl in new_list:
-            AddSchedRec(plan, nl)
-
-        # добавим блок связанных записей
-        for bl in block:
-            AddSchedRec(plan, bl)
-
-
-    # Возвращает запись с текущим действием персонажа
-    #     Аргументы:
-    #     schedule - список записей с расписанием,
-    #     day      - день (целое),
-    #     tm     - время в формате 'hh:mm',
-    #     week     - номер недели (целое)
-    def GetPlan(schedule, day, tm):
-        h, m = tm.split(':')  # нормализуем время на всякий случай
-        tm = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
-        day += 2  # в игре отсчет начинается со среды и дня под номером 1
-        rez = []
-        for sh in schedule:
-            if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
-                (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
-                    rez.append(sh)
-
-        if len(rez) > 1:
-            print("ошибочка-с...", rez)
-        elif len(rez) == 0:
-            return None
-        else:
-            return rez[0]
-
-
-    # Возвращает список записей с текущим действием персонажа
-    # Аргументы:
-    # schedule - список записей с расписанием,
-    # day      - день (целое),
-    # tm     - время в формате 'hh:mm',
-    # week     - номер недели (целое)
-    def GetPlanList(schedule, day, tm): # только для тестирования расписания
-        h, m = tm.split(':')  # нормализуем время на всякий случай
-        tm = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
-        day += 2  # в игре отсчет начинается со среды и дня под номером 1
-        rez = []
-        for sh in schedule:
-            if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
-                (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
-                    rez.append(sh)
-
-        return rez
-
-
-    # функция для разработчика, проверяет расписание на перехлесты
-    def VerifySchedule(schedule):
-        max_krat = 1
-        max_week = 0
-        for sh in schedule:  # определяем неделю старта теста и максимальную длительность в неделях (кратность)
-            max_krat = max(max_krat, sh.krat)
-            max_week = max(max_week, sh.weekstart)
-
-        errors = set()
-        skipped = set()
-
-        kolve = (max_week + max_krat) * 7 * 2
-
-        for day in range(max_week*7, kolve):  # удваиваем диаппазон на всякий случай
-            start_skip = end_skip = ''
-            for hour in range(24):
-                for minute in range(60):
-                    tm = '{0}:{1}'.format(('0' + str(hour))[-2:], ('0' + str(minute))[-2:])
-                    temp_list = GetPlanList(schedule, day, tm)
-
-                    if len(temp_list) > 1:
-                        for tl in temp_list:
-                            errors.add(tl)
-                    elif len(temp_list) == 0:
-                        if start_skip == '':
-                            start_skip = tm
-                        elif end_skip == '' or AddTime(end_skip) == tm:
-                            end_skip = tm
-                    elif end_skip != '':
-                        skipped.add(((day % 7,), start_skip, end_skip))
-                        start_skip = end_skip = ''
-
-        skip_list = []
-        skipped = list(skipped)
-        while len(skipped):
-            start_skip = end_skip = ''
-            lod = []
-            for skip in skipped:
-                if not start_skip:
-                    start_skip = skip[1]
-                    end_skip = skip[2]
-                    lod.extend(skip[0])
-                elif start_skip == skip[1] and end_skip == skip[2]:
-                    lod.extend(skip[0])
-
-            lod.sort()
-            skip_list.append((lod[:], start_skip, end_skip))
-            i = 0
-            while i < len(skipped):
-                if start_skip == skipped[i][1] and end_skip == skipped[i][2]:
-                    skipped.pop(i)
-                else:
-                    i += 1
-
-        if len(skip_list):
-            print("Пропущено в расписании", skip_list)
-        else:
-            print("Пропусков не обнаружено")
-        if len(errors):
-            print(errors)
-        else:
-            print("Ошибок не обнаружено")
+    # # Возвращает список записей с текущим действием персонажа
+    # # Аргументы:
+    # # schedule - список записей с расписанием,
+    # # day      - день (целое),
+    # # tm     - время в формате 'hh:mm',
+    # # week     - номер недели (целое)
+    # def GetPlanList(schedule, day, tm): # только для тестирования расписания
+    #     h, m = tm.split(':')  # нормализуем время на всякий случай
+    #     tm = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
+    #     day += 2  # в игре отсчет начинается со среды и дня под номером 1
+    #     rez = []
+    #     for sh in schedule:
+    #         if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
+    #             (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
+    #                 rez.append(sh)
+    #
+    #     return rez
+    #
+    #
+    # # функция для разработчика, проверяет расписание на перехлесты
+    # def VerifySchedule(schedule):
+    #     max_krat = 1
+    #     max_week = 0
+    #     for sh in schedule:  # определяем неделю старта теста и максимальную длительность в неделях (кратность)
+    #         max_krat = max(max_krat, sh.krat)
+    #         max_week = max(max_week, sh.weekstart)
+    #
+    #     errors = set()
+    #     skipped = set()
+    #
+    #     kolve = (max_week + max_krat) * 7 * 2
+    #
+    #     for day in range(max_week*7, kolve):  # удваиваем диаппазон на всякий случай
+    #         start_skip = end_skip = ''
+    #         for hour in range(24):
+    #             for minute in range(60):
+    #                 tm = '{0}:{1}'.format(('0' + str(hour))[-2:], ('0' + str(minute))[-2:])
+    #                 temp_list = GetPlanList(schedule, day, tm)
+    #
+    #                 if len(temp_list) > 1:
+    #                     for tl in temp_list:
+    #                         errors.add(tl)
+    #                 elif len(temp_list) == 0:
+    #                     if start_skip == '':
+    #                         start_skip = tm
+    #                     elif end_skip == '' or add_time(end_skip) == tm:
+    #                         end_skip = tm
+    #                 elif end_skip != '':
+    #                     skipped.add(((day % 7,), start_skip, end_skip))
+    #                     start_skip = end_skip = ''
+    #
+    #     skip_list = []
+    #     skipped = list(skipped)
+    #     while len(skipped):
+    #         start_skip = end_skip = ''
+    #         lod = []
+    #         for skip in skipped:
+    #             if not start_skip:
+    #                 start_skip = skip[1]
+    #                 end_skip = skip[2]
+    #                 lod.extend(skip[0])
+    #             elif start_skip == skip[1] and end_skip == skip[2]:
+    #                 lod.extend(skip[0])
+    #
+    #         lod.sort()
+    #         skip_list.append((lod[:], start_skip, end_skip))
+    #         i = 0
+    #         while i < len(skipped):
+    #             if start_skip == skipped[i][1] and end_skip == skipped[i][2]:
+    #                 skipped.pop(i)
+    #             else:
+    #                 i += 1
+    #
+    #     if len(skip_list):
+    #         print("Пропущено в расписании", skip_list)
+    #     else:
+    #         print("Пропусков не обнаружено")
+    #     if len(errors):
+    #         print(errors)
+    #     else:
+    #         print("Ошибок не обнаружено")
 
 
     # функция назначает фон локациям согласно текущего времени
@@ -275,10 +265,11 @@ init python:
 
         for char in chars:
 
-            plan_char = GetPlan(eval('plan_'+char), day, tm)
+            # plan_char = GetPlan(eval('plan_'+char), day, tm)
+            plan_char = chars[char].get_plan()
             if plan_char is not None:
                 if plan_char.loc != '' and not plan_char.loc is None:
-                    eval(plan_char.loc+'['+str(plan_char.room)+'].cur_char.append(\''+char+'\')')
+                    eval(plan_char.loc+"["+str(plan_char.room)+"].cur_char.append('"+char+"')")
 
 
     # устанавливает активность кнопки чтения, если есть недочитанные книги
@@ -361,7 +352,14 @@ init python:
 
 
     def GetChance(Skil, multiplier=1, limit=1000): # Вычисляет и возвращает шанс успешного применения навыка
-        return clip(Skil * 10 * multiplier, 0, limit)
+        ch = clip(Skil * 10 * multiplier, 0, limit)
+        # col = {
+        #     ch < 333 : red,
+        #     ch > 666 : lime,
+        #     333 <= ch <= 666 : orange
+        #     }[True]
+        # vis = str(int(_ch1/10)) + "%"
+        return ch #(ch, col, vis)
 
 
     def RandomChance(chance): # прошло или нет применение навыка с указанным шансом
@@ -420,17 +418,10 @@ init python:
             notify_list.append(__("Настроение %s %s") % (char_name, mood_suf))
 
 
-    def BuyItem(id): # выполняет покупку предмета из интернет-магазина
-        global money, items
-        money -= items[id].price
-        items[id].buy = True
-        items[id].delivery = 1 if (day+2) % 7 != 6 else 2
-
-
     def GetDeliveryList(): # формирует список доставляемых товаров
         global delivery_list, items
         for i in items:
-            if items[i].buy and items[i].delivery > 0:
+            if items[i].bought and items[i].delivery > 0:
                 items[i].delivery -= 1
                 if items[i].delivery == 0:
                     if items[i].category in [0, 4, 5, 6]:
@@ -447,7 +438,7 @@ init python:
 
         n = 0
         for i in delivery_list[courier]:
-            items[i].buy = False
+            items[i].bought = False
             items[i].have = True
             n += 1
             globals()['TmpName'+str(n)] = items[i].name
@@ -463,26 +454,7 @@ init python:
         delivery_list[courier].clear()
 
 
-    def BuyPromotion(): #Покупка пакета рекламы
-        global money
-        money -= 50
-
-        ef = 10 + renpy.random.randint(-100, 100)/100.0 # процент эффективности рекламы
-        k = 0
-        for loc in locations:
-            for room in locations[loc]:
-                for cam in room.cams:
-                    if cam.grow < 100:
-                        cam.grow = 100
-                    if cam.HD:
-                        ef += 10.0 / (1 + k) # каждая HD-камера немного повышает эффективность рекламы
-
-        site.invited += int(round(10000 * ef / 100.0, 0))
-        notify_list.append(_("Приобретен пакет рекламы"))
-
-
     def CamShow(): # расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
-        global credit
         grow_list = []
 
         cameras = [] # список установленных камер
@@ -525,7 +497,7 @@ init python:
         cycles = spent_time / 10 # расчет выполняется каждые 10 минут
 
         for i in range(cycles):
-            watchers = site.invited * renpy.random.randint(170, 250) / 60000.0 # количество привлеченных рекламмой зрителей
+            watchers = mgg.invited * renpy.random.randint(170, 250) / 60000.0 # количество привлеченных рекламмой зрителей
             watchers = round(watchers, 2)
 
             cam2.clear()
@@ -547,7 +519,8 @@ init python:
                         grow_list.clear()
                         for char in chars:
                             ## получим расписание персонажа на этот момент
-                            cur_shed = GetPlan(eval('plan_'+char), cur_day, cur_tm)
+                            # cur_shed = GetPlan(eval('plan_'+char), cur_day, cur_tm)
+                            cur_shed = chars[char].get_plan(cur_day, cur_tm)
                             if cur_shed is not None and cur_shed.loc == loc and cur_shed.room == num_room:
                                 # есть персонаж в комнате
                                 grow_list.append(cur_shed.glow) # значит добавим в список коэф. зрительского интереса к фоновому событию
@@ -598,12 +571,12 @@ init python:
                         cam.total += earn
                         if cur_tm == '04:00':
                             cam.today += earn
-                            if credit.fines and credit.debt > 0:  # если есть непогашенный кредит со штрафом
-                                credit.part(min(int(cam.today/2), credit.debt))  # половина ежедневного дохода идет в счет погашения долга
+                            if mgg.credit.fines and mgg.credit.debt > 0:  # если есть непогашенный кредит со штрафом
+                                mgg.credit.part(min(int(cam.today/2), mgg.credit.debt))  # половина ежедневного дохода идет в счет погашения долга
                             cam.today = 0
                         else:
                             cam.today += earn
-                        site.account += earn
+                        mgg.income(earn)
                         # print('время:{tm}, ads:{site.invited}(watchers:{watc}), k.cam:{cam.grow}, k.ev:{grow}, pub:{cam.public}({pub})(({glow})), earn:{earn}, total:{cam.total}'.format(site=site, cam=cam, tm=cur_tm, grow=k_grow, watc=watchers, earn=earn, pub=pub, glow=k_glow))
                         cam.grow = k_grow
                     num_room += 1
@@ -617,18 +590,12 @@ init python:
                 for cam in cameras:
                     cam.public += pub
 
-            site.invited -= watchers
+            mgg.invited -= watchers
         # в конце расчета округлим полученные значения
         for loc in locations:
             for room in locations[loc]:
                 for cam in room.cams:
                     cam.public = int(cam.public)
-
-
-    def Withdraw(): # выплата с сайта
-        global money
-        money += int(site.account)
-        site.account -= int(site.account)
 
 
     def SetAvailableActions(): # включает кнопки действий
@@ -653,22 +620,19 @@ init python:
 
         # установка разрешения диалога
         if len(current_room.cur_char) == 1:
-            CurShedRec = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
-            # если при данном занятии разрешен диалог и
-            #   есть тема для разговора или приближение
-            # AvailableActions['talk'].enabled = (CurShedRec.enabletalk and
-            #                                       (len(GetTalksTheme()) > 0 or
-            #                                        CurShedRec.talklabel is not None)
-            #                                     )
-            AvailableActions['talk'].enabled = (CurShedRec.enabletalk and len(TalkMenuItems()) > 0)
+            # cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
+            cur_plan = chars[current_room.cur_char[0]].get_plan()
+            # если при данном занятии разрешен диалог и есть тема для разговора
+            AvailableActions['talk'].enabled = (cur_plan.enabletalk and len(TalkMenuItems()) > 0)
         else:
             AvailableActions['talk'].enabled = False
 
         # комната Макса и Лизы
         if current_room == house[0]:
-            CurShedRec = GetPlan(plan_lisa, day, tm)
+            # cur_plan = GetPlan(plan_lisa, day, tm)
+            cur_plan = lisa.get_plan()
 
-            if (CurShedRec is not None and CurShedRec.name != 'dressed' and '08:00' <= tm < '21:30'):
+            if (cur_plan is not None and cur_plan.name != 'dressed' and '08:00' <= tm < '21:30'):
                 AvailableActions['unbox'].active = True
 
             if '00:00' <= tm <= '04:00':
@@ -678,28 +642,30 @@ init python:
                 AvailableActions['nap'].active = True
 
             if mgg.energy > 5:
-                if CurShedRec is not None and CurShedRec.name != 'dressed':
+                if cur_plan is not None and cur_plan.name != 'dressed':
                     AvailableActions['notebook'].active = True
 
-            if ('06:00' <= tm <= '21:30' and CurShedRec is not None
-                                         and CurShedRec.name != 'dressed'):
+            if ('06:00' <= tm <= '21:30' and cur_plan is not None
+                                         and cur_plan.name != 'dressed'):
                 for key in items:
                     if items[key].have and items[key].need_read > items[key].read and ItsTime(cooldown['learn']):
                         AvailableActions['readbook'].active = True
 
         # комната Алисы
         if current_room == house[1] and len(current_room.cur_char) == 0:
-            CurShedRec = GetPlan(plan_alice, day, tm)
+            # cur_plan = GetPlan(plan_alice, day, tm)
+            cur_plan = alice.get_plan()
             AvailableActions['usb'].active = True
-            AvailableActions['searchbook'].active = (CurShedRec.name != 'read' and '08:00' <= tm < '22:00')
+            AvailableActions['searchbook'].active = (cur_plan.name != 'read' and '08:00' <= tm < '22:00')
             if items['spider'].have:
                 AvailableActions['hidespider'].active = True
-            AvailableActions['searchciga'].active = (CurShedRec.name != 'smoke' and 'betray_smoke' in dcv and dcv['betray_smoke'].done and '08:00' <= tm < '19:00')
+            AvailableActions['searchciga'].active = (cur_plan.name != 'smoke' and 'betray_smoke' in dcv and dcv['betray_smoke'].done and '08:00' <= tm < '19:00')
 
         # ванная комната
         if current_room == house[3]:
-            CurShedRec = GetPlan(plan_alice, day, tm)
-            if CurShedRec.label == 'alice_shower' and len(current_room.cur_char) == 1: # Алиса принимает душ одна
+            # cur_plan = GetPlan(plan_alice, day, tm)
+            cur_plan = alice.get_plan()
+            if cur_plan.label == 'alice_shower' and len(current_room.cur_char) == 1: # Алиса принимает душ одна
                 AvailableActions['throwspider3'].active = True
 
             if '06:00' <= tm <= '18:00' and mgg.cleanness < 80:
@@ -711,8 +677,9 @@ init python:
 
         # гостиная
         if current_room == house[4]:
-            CurShedRec = GetPlan(plan_ann, day, tm)
-            if items['ann_movie'].have and CurShedRec is not None and CurShedRec.label == 'ann_tv':
+            # cur_plan = GetPlan(plan_ann, day, tm)
+            cur_plan = alice.get_plan()
+            if items['ann_movie'].have and cur_plan is not None and cur_plan.label == 'ann_tv':
                 AvailableActions['momovie'].active = True
             if not dishes_washed and len(current_room.cur_char) == 0:
                 AvailableActions['dishes'].active = True
@@ -732,8 +699,10 @@ init python:
         else:
             mgg.dress = 'a'
         for char in chars:
-            prev_shed = GetPlan(eval('plan_'+char), prevday, prevtime)
-            cur_shed  = GetPlan(eval('plan_'+char), day, tm)
+            # prev_shed = GetPlan(eval('plan_'+char), prevday, prevtime)
+            # cur_shed  = GetPlan(eval('plan_'+char), day, tm)
+            prev_shed = chars[char].get_plan(prevday, prevtime)
+            cur_shed  = chars[char].get_plan()
             if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
 
                 if char == 'alice' and talk_var['sun_oiled']:  # Если Алису уже намазали кремом, повторное намазываение невозможно
@@ -751,7 +720,7 @@ init python:
                     # cloth_type['lisa']['sleep'] = renpy.random.choice(['a', 'b'])
                     cloth_type['lisa']['sleep'] = 'b' if poss['sg'].stn > 2 else 'a'
                 elif prevtime > tm:  # полночь
-                    cloth_type['ann']['sleep'] = renpy.random.choice(['a', 'b']) if 'nightie' in chars['ann'].gifts else 'a'
+                    cloth_type['ann']['sleep'] = renpy.random.choice(['a', 'b']) if 'nightie' in ann.gifts else 'a'
                 # после 'смены одежды' прописываем одежды по расписанию
                 ClothingNps(char, cur_shed.name)
 
@@ -761,136 +730,136 @@ init python:
             chars[char].dress_inf = '00b'
         elif char == 'lisa':
             if name == 'sleep':
-                chars['lisa'].dress = 'b' if poss['sg'].stn > 2 else 'a'
-                chars['lisa'].dress_inf = '02a' if poss['sg'].stn > 2 else '02'
+                lisa.dress = 'b' if poss['sg'].stn > 2 else 'a'
+                lisa.dress_inf = '02a' if poss['sg'].stn > 2 else '02'
 
             elif name in ['shower', 'bath']:
-                chars['lisa'].dress_inf = '04a'
+                lisa.dress_inf = '04a'
 
             elif name in ['breakfast', 'dishes', 'read', 'phone', 'dinner']:
-                chars['lisa'].dress = 'b' if 'bathrobe' in chars['lisa'].gifts and chars['lisa'].GetMood()[0] > 1 else 'a'
-                chars['lisa'].dress_inf = '04' if 'bathrobe' in chars['lisa'].gifts and chars['lisa'].GetMood()[0] > 1 else '01a'
+                lisa.dress = 'b' if 'bathrobe' in lisa.gifts and lisa.GetMood()[0] > 1 else 'a'
+                lisa.dress_inf = '04' if 'bathrobe' in lisa.gifts and lisa.GetMood()[0] > 1 else '01a'
 
             elif name == 'in_shcool':
-                chars['lisa'].dress_inf = '01b'
+                lisa.dress_inf = '01b'
 
             elif name == 'sun':
-                chars['lisa'].dress = 'b' if 'bikini' in chars['lisa'].gifts else 'a'
-                chars['lisa'].dress_inf = '03b' if 'bikini' in chars['lisa'].gifts else '03'
+                lisa.dress = 'b' if 'bikini' in lisa.gifts else 'a'
+                lisa.dress_inf = '03b' if 'bikini' in lisa.gifts else '03'
 
             elif name == 'swim':
-                chars['lisa'].dress = 'b' if 'bikini' in chars['lisa'].gifts else 'a'
+                lisa.dress = 'b' if 'bikini' in lisa.gifts else 'a'
                 if pose3_1 == '03':
-                    chars['lisa'].dress_inf = '03c' if 'bikini' in chars['lisa'].gifts else '03a'
+                    lisa.dress_inf = '03c' if 'bikini' in lisa.gifts else '03a'
                 else:
-                    chars['lisa'].dress_inf = '03b' if 'bikini' in chars['lisa'].gifts else '03'
+                    lisa.dress_inf = '03b' if 'bikini' in lisa.gifts else '03'
 
             elif name == 'homework':
-                if GetRelMax('lisa')[0] > 2 and chars['lisa'].GetMood()[0] > 2:
-                    chars['lisa'].dress  = 'c'
-                    chars['lisa'].dress_inf = '04b'
-                elif 'bathrobe' in chars['lisa'].gifts:
-                    chars['lisa'].dress  = 'b'
-                    chars['lisa'].dress_inf = '04'
+                if GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2:
+                    lisa.dress  = 'c'
+                    lisa.dress_inf = '04b'
+                elif 'bathrobe' in lisa.gifts:
+                    lisa.dress  = 'b'
+                    lisa.dress_inf = '04'
                 else:
-                    chars['lisa'].dress  = 'a'
-                    chars['lisa'].dress_inf = '01a'
+                    lisa.dress  = 'a'
+                    lisa.dress_inf = '01a'
 
             elif name in ['in_shop', 'at_tutor']:
-                chars['lisa'].dress_inf = '01'
+                lisa.dress_inf = '01'
 
             else:
-                chars['lisa'].dress = 'a'
-                chars['lisa'].dress_inf = '01a'
+                lisa.dress = 'a'
+                lisa.dress_inf = '01a'
 
         elif char == 'alice':
             if name == 'sleep':
-                chars['alice'].dress_inf = '02'
+                alice.dress_inf = '02'
             elif name in ['shower', 'bath']:
-                chars['alice'].dress_inf = '04aa'
+                alice.dress_inf = '04aa'
             elif name in ['breakfast', 'read', 'dinner']:
-                chars['alice'].dress = cloth_type['alice']['casual']
-                chars['alice'].dress_inf = '01c' if cloth_type['alice']['casual'] == 'b' else '01a'
+                alice.dress = cloth_type['alice']['casual']
+                alice.dress_inf = '01c' if cloth_type['alice']['casual'] == 'b' else '01a'
             elif name in ['resting', 'blog', 'tv']:
-                chars['alice'].dress = cloth_type['alice']['casual']
+                alice.dress = cloth_type['alice']['casual']
                 if cloth_type['alice']['casual'] == 'b':
-                    chars['alice'].dress_inf = '01c' if '09:00' <= tm < '20:00' else '01ca'
+                    alice.dress_inf = '01c' if '09:00' <= tm < '20:00' else '01ca'
                 else:
-                    chars['alice'].dress_inf = '01a' if '09:00' <= tm < '20:00' else '01aa'
+                    alice.dress_inf = '01a' if '09:00' <= tm < '20:00' else '01aa'
             elif name == 'sun':
-                chars['alice'].dress = 'a'
-                chars['alice'].dress_inf = '03'
+                alice.dress = 'a'
+                alice.dress_inf = '03'
             elif name == 'swim':
-                chars['alice'].dress = 'a'
-                chars['alice'].dress_inf = '03a' if pose3_2 == '03' else '03'
+                alice.dress = 'a'
+                alice.dress_inf = '03a' if pose3_2 == '03' else '03'
             elif name in ['in_shop', 'at_friends']:
-                chars['alice'].dress_inf = '01'
+                alice.dress_inf = '01'
             elif name == 'cooking':
-                chars['alice'].dress = cloth_type['alice']['casual']
-                chars['alice'].dress_inf = '01d' if cloth_type['alice']['casual'] == 'b' else '01b'
+                alice.dress = cloth_type['alice']['casual']
+                alice.dress_inf = '01d' if cloth_type['alice']['casual'] == 'b' else '01b'
             elif name == 'smoke':
-                chars['alice'].dress = 'b' if flags['smoke'] == 'toples' else 'a'
-                chars['alice'].dress_inf = '03b' if flags['smoke'] == 'toples' else '03'
+                alice.dress = 'b' if flags['smoke'] == 'toples' else 'a'
+                alice.dress_inf = '03b' if flags['smoke'] == 'toples' else '03'
             else:
-                chars['alice'].dress = 'a'
-                chars['alice'].dress_inf = '01a'
+                alice.dress = 'a'
+                alice.dress_inf = '01a'
 
         elif char == 'ann':
             if name == 'sleep':
-                chars['ann'].dress = cloth_type['ann']['sleep']
-                chars['ann'].dress_inf = '02' if cloth_type['ann']['sleep'] == 'a' else '02f'
+                ann.dress = cloth_type['ann']['sleep']
+                ann.dress_inf = '02' if cloth_type['ann']['sleep'] == 'a' else '02f'
             elif name in ['shower', 'bath', 'shower2']:
-                chars['ann'].dress_inf = '04a'
+                ann.dress_inf = '04a'
             elif name == 'yoga':
-                chars['ann'].dress_inf = '05'
+                ann.dress_inf = '05'
             elif name == 'cooking':
-                chars['ann'].dress = cloth_type['ann']['cooking']
-                chars['ann'].dress_inf = '05b' if cloth_type['ann']['cooking'] == 'a' else '01c'
+                ann.dress = cloth_type['ann']['cooking']
+                ann.dress_inf = '05b' if cloth_type['ann']['cooking'] == 'a' else '01c'
             elif name == 'breakfast':
-                chars['ann'].dress = cloth_type['ann']['cooking']
-                chars['ann'].dress_inf = '05a' if cloth_type['ann']['cooking'] == 'a' else '01b'
+                ann.dress = cloth_type['ann']['cooking']
+                ann.dress_inf = '05a' if cloth_type['ann']['cooking'] == 'a' else '01b'
             elif name == 'resting':
                 if tm <= '12:00':
-                    chars['ann'].dress = 'a'
-                    chars['ann'].dress_inf = '01b'
+                    ann.dress = 'a'
+                    ann.dress_inf = '01b'
                 elif tm <= '19:00':
-                    chars['ann'].dress = 'b'
-                    chars['ann'].dress_inf = '03'
+                    ann.dress = 'b'
+                    ann.dress_inf = '03'
                 else:
-                    chars['ann'].dress = cloth_type['ann']['rest']
-                    chars['ann'].dress_inf = '01b' if cloth_type['ann']['rest'] == 'a' else '04b'
+                    ann.dress = cloth_type['ann']['rest']
+                    ann.dress_inf = '01b' if cloth_type['ann']['rest'] == 'a' else '04b'
             elif name == 'at_work':
-                chars['ann'].dress_inf = '01a'
+                ann.dress_inf = '01a'
             elif name == 'in_shop':
-                chars['ann'].dress_inf = '01'
+                ann.dress_inf = '01'
             elif name == 'read':
-                chars['ann'].dress = 'a' if tm < '14:00' else 'b'
-                chars['ann'].dress_inf = '01b' if tm < '14:00' else '03'
+                ann.dress = 'a' if tm < '14:00' else 'b'
+                ann.dress_inf = '01b' if tm < '14:00' else '03'
             elif name == 'sun':
-                chars['ann'].dress_inf = '03'
+                ann.dress_inf = '03'
             elif name == 'swim':
-                chars['ann'].dress_inf = '03a'
+                ann.dress_inf = '03a'
             elif name == 'dinner':
-                chars['ann'].dress = cloth_type['ann']['casual']
-                chars['ann'].dress_inf = '01d' if cloth_type['ann']['casual'] == 'a' else '01b'
+                ann.dress = cloth_type['ann']['casual']
+                ann.dress_inf = '01d' if cloth_type['ann']['casual'] == 'a' else '01b'
             elif name == 'tv':
-                chars['ann'].dress_inf = '04b'
+                ann.dress_inf = '04b'
             elif name == 'tv2':
-                chars['ann'].dress_inf = '04b'
+                ann.dress_inf = '04b'
             else:
-                chars['ann'].dress = 'a'
-                chars['ann'].dress_inf = '01a'
+                ann.dress = 'a'
+                ann.dress_inf = '01a'
 
         elif char == 'eric':
             if name in ['dinner', 'rest', 'tv2']:
-                chars['eric'].dress = cloth_type['ann']['casual']
-                chars['eric'].dress_inf = '01a' if chars['eric'].dress == 'a' else '01b'
+                eric.dress = cloth_type['ann']['casual']
+                eric.dress_inf = '01a' if eric.dress == 'a' else '01b'
             elif name in ['fuck', 'sleep']:
-                chars['eric'].dress_inf = '00a'
+                eric.dress_inf = '00a'
             elif name == 'shower2':
-                chars['eric'].dress_inf = '00b'
+                eric.dress_inf = '00b'
             else:
-                chars['eric'].dress_inf = '01'
+                eric.dress_inf = '01'
         return
 
 
@@ -919,21 +888,6 @@ init python:
         h2, m2 = b.split(':')
         t_b = int(h2)*60 + int(m2) - ti
         return t_a if x < t_a else (t_b if x > t_b else x)
-
-
-    # def GetMood(char): # возвращает кортеж с номером и описанием диапазона настроения персонажа
-    #     mood = chars[char].mood
-    #     return {
-    #                mood <= -285 : (-4, _("Ужасное")),
-    #         -285 < mood <= -165 : (-3, _("Очень плохое")),
-    #         -165 < mood <= -75  : (-2, _("Плохое")),
-    #         -75  < mood <= -15  : (-1, _("Не очень")),
-    #         -15  < mood <=  15  : (0, _("Нейтральное")),
-    #          15  < mood <=  75  : (1, _("Неплохое")),
-    #          75  < mood <=  165 : (2, _("Хорошее")),
-    #         165  < mood <=  285 : (3, _("Очень хорошее")),
-    #         285  < mood         : (4, _("Прекрасное")),
-    #         }[True]
 
 
     def GetRelMax(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Максом
@@ -990,9 +944,9 @@ init python:
     def seat_Breakfast(): # рассаживает семью за завтраком
         renpy.scene()
         renpy.show('BG breakfast 00') # общий фон
-        renpy.show('Ann breakfast 0'+renpy.random.choice(['1', '2', '3'])+chars['ann'].dress)
-        renpy.show('Alice breakfast 0'+renpy.random.choice(['1', '2', '3'])+chars['alice'].dress)
-        renpy.show('Lisa breakfast 0'+renpy.random.choice(['1', '2', '3'])+chars['lisa'].dress)
+        renpy.show('Ann breakfast 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+        renpy.show('Alice breakfast 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
+        renpy.show('Lisa breakfast 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
         renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])) # стол
         renpy.show('Max breakfast 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
 
@@ -1000,28 +954,17 @@ init python:
     def seat_Dinner(): # рассаживает семью за ужином
         renpy.scene()
         renpy.show('BG dinner 00') # общий фон
-        if day == 4 or day == 11 or GetPlan(plan_eric, day, tm).name == 'dinner':
-            renpy.show('Ann dinner eric-0'+renpy.random.choice(['1', '2', '3'])+chars['ann'].dress)
+        if day == 4 or day == 11 or ('eric' in chars and eric.plan_name == 'dinner'):
+            renpy.show('Ann dinner eric-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         else:
-            renpy.show('Ann dinner 0'+renpy.random.choice(['1', '2', '3'])+chars['ann'].dress)
-        renpy.show('Alice dinner 0'+renpy.random.choice(['1', '2', '3'])+chars['alice'].dress)
-        renpy.show('Lisa dinner 0'+renpy.random.choice(['1', '2', '3'])+chars['lisa'].dress)
-        if day == 4 or day == 11 or GetPlan(plan_eric, day, tm).name == 'dinner':
+            renpy.show('Ann dinner 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+        renpy.show('Alice dinner 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
+        renpy.show('Lisa dinner 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
+        if day == 4 or day == 11 or ('eric' in chars and eric.plan_name == 'dinner'):
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
         else:
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])) # стол
         renpy.show('Max dinner 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
-
-
-    # def SetPossStage(ps, stage): # устанавливает этап "возможности"
-    #     a = []
-    #     a = [1 for st in poss[ps].stages if st.used]
-    #
-    #     poss[ps].stn = stage
-    #     poss[ps].stages[stage].used = True
-    #
-    #     if sum(a) == 0:
-    #         notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
 
 
     def GetChanceColor(chance):  # цвет шанса
@@ -1132,12 +1075,6 @@ init python:
         return clip(chance, 0, 900)
 
 
-    def BuyCource():  # покупка онлайн-курса
-        global money, CurCource
-        money -= CurCource.cources[CurCource.current].price
-        CurCource.cources[CurCource.current].buy = True
-
-
     def notify_queue():  # функция показа всплывающего сообщения из очереди
         global notify_list
         if all((not renpy.get_screen('notify'), notify_list)):
@@ -1169,12 +1106,16 @@ init python:
                 config.mouse = {'default' : [('images/interface/cursors/' + name + '-80.webp', 0, 0)]}
     # превращаем функцию в action,
     # чтобы можно было привязать, например, к нажатию кнопок:
-    # action Cursor("talk")
+    # action Cursor('talk')
     Cursor = renpy.curry(cursor)
 
     def have_dialog():  # возвращает признак наличия диалога для первого персонажа в комнате
-        CurShedRec = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
-        return CurShedRec.enabletalk and len(TalkMenuItems()) > 0
+        # cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
+        if current_room.cur_char:
+            cur_plan = chars[current_room.cur_char[0]].get_plan()
+            return cur_plan.enabletalk and len(TalkMenuItems()) > 0
+        else:
+            return False
 
 
     def there_in_stock(char):  # проверяет, есть ли у Макса подарок персонажу в качестве извинения
