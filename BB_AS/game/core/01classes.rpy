@@ -330,7 +330,6 @@ init python:
         def part(self, sum):  # погасить часть займа на сумму
             if sum < self.debt:
                 self.debt -= sum
-                self.returned += sum
             else:
                 self.repay()
 

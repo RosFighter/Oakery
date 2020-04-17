@@ -328,7 +328,7 @@ screen Bank():
                     text _("[mgg.credit.left] дней на погашение") xalign 1.0
                 if mgg.money >= mgg.credit.debt:
                     textbutton _("ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"):
-                        action Function(mgg.repay)
+                        action Function(mgg.credit_repay)
                         style 'green_button'
                 if mgg.money > 50:
                     textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
