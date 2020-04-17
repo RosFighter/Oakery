@@ -8,7 +8,7 @@ label LisaTalkStart:
     # $ __cur_plan = GetPlan(plan_lisa, day, tm)
     $ __cur_plan = lisa.get_plan()
     if __cur_plan.talklabel is not None:
-        call expression __cur_plan.talklabel
+        call expression __cur_plan.talklabel from _call_expression_4
 
     $ dial.append((_("{i}уйти{/i}"), "exit"))
 
@@ -22,7 +22,7 @@ label LisaTalkStart:
         $ __mood = lisa.GetMood()[0]
         if rez in gifts['lisa']:
             if renpy.has_label(rez.label):
-                call expression rez.label
+                call expression rez.label from _call_expression_5
         elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Lisa_badbadmood
@@ -33,7 +33,7 @@ label LisaTalkStart:
         elif talks[rez].kd_id != "" and talks[rez].kd_id in cooldown and not ItsTime(cooldown[talks[rez].kd_id]):
             jump Lisa_cooldown
         elif renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_6
         $ dial = TalkMenuItems()
         if len(dial) > 0:
             jump LisaTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
@@ -1541,7 +1541,7 @@ label lisa_sorry_gifts:
         $ items[__give].have = False
         $ poss['SoC'].OpenStage(4)
         if len(sorry_gifts['lisa'].give) == 0:  # ненавистное в первый раз
-            call lisa_sorry_gifts.bad_st
+            call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st
             Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то так легко ты уже не отделаешься! Ясно?!"
             Max_07 "Ясно... А какую сладость ты больше всего любишь?"
             Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
@@ -1560,7 +1560,7 @@ label lisa_sorry_gifts:
                 $ punreason[0] = 1
 
             elif sorry_gifts['lisa'].give[0] > 1: ## преемлемое, ненавистное и ## любимое, ненавистное
-                call lisa_sorry_gifts.bad_st
+                call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_1
                 Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
                 Max_07 "Ясно... Я обязательно это учту!"
 
@@ -1576,31 +1576,31 @@ label lisa_sorry_gifts:
                 $ punreason[0] = 1
 
             elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
-                call lisa_sorry_gifts.bad_again
+                call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again
 
             elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, ненавистное
-                call lisa_sorry_gifts.bad_again
+                call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again_1
 
             elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
-                call lisa_sorry_gifts.bad_again
+                call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again_2
 
             elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
-                call lisa_sorry_gifts.bad_st
+                call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_2
                 $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, ненавистное
-                call lisa_sorry_gifts.bad_st
+                call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_3
                 $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, ненавистное
-                call lisa_sorry_gifts.bad_again
+                call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again_3
 
             elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, ненавистное
-                call lisa_sorry_gifts.bad_st
+                call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_4
                 $ flags['lisa_superhug'] = 2
 
             else:  ### любимое, любимое, ненавистное
-                call lisa_sorry_gifts.bad_st
+                call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_5
                 $ flags['lisa_superhug'] = 2
 
         $ sorry_gifts['lisa'].give.append(1)
@@ -1618,10 +1618,10 @@ label lisa_sorry_gifts:
                 Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
                 "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                     if RandomChance(_ch1):
-                        call lisa_sorry_gifts.embraces
+                        call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces
                         Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                         Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                        call lisa_sorry_gifts.nearby
+                        call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby
                         Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то так легко ты уже не отделаешься! Ясно?!"   #спрайт вместе
                         Max_07 "Ясно... А какую сладость ты больше всего любишь?"
                         Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
@@ -1665,10 +1665,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_1
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_1
                             Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"   #спрайт вместе
                             Max_07 "Ясно... Я обязательно это учту!"
                             $ mgg.social += 0.2
@@ -1704,7 +1704,7 @@ label lisa_sorry_gifts:
                             $ mgg.social += 0.1
 
             elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
-                call lisa_sorry_gifts.middle_again
+                call lisa_sorry_gifts.middle_again from _call_lisa_sorry_gifts_middle_again
                 $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, преемлемое
@@ -1716,10 +1716,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_2
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_2
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1728,12 +1728,12 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 0, 150)
                             $ flags['lisa_superhug'] = 3
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed
                             $ AddRelMood("lisa", 0, 50)
                             $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
-                call lisa_sorry_gifts.middle_again
+                call lisa_sorry_gifts.middle_again from _call_lisa_sorry_gifts_middle_again_1
                 $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое третий раз
@@ -1745,10 +1745,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..."
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_3
                             Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_3
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1757,7 +1757,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 0, 150)
                             $ flags['lisa_superhug'] = 3
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_1
                             $ flags['lisa_superhug'] = 2
 
             elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, преемлемое
@@ -1769,10 +1769,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_4
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_4
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1781,7 +1781,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 0, 150)
                             $ flags['lisa_superhug'] = 3
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_2
                             $ AddRelMood("lisa", 0, 50)
                             $ flags['lisa_superhug'] = 2
 
@@ -1794,10 +1794,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_5
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_5
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1806,7 +1806,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 0, 150)
                             $ flags['lisa_superhug'] = 3
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_3
                             $ AddRelMood("lisa", 0, 50)
                             $ flags['lisa_superhug'] = 2
 
@@ -1819,10 +1819,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_6
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_6
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1831,7 +1831,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 0, 150)
                             $ flags['lisa_superhug'] = 3
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_4
                             $ AddRelMood("lisa", 0, 50)
                             $ flags['lisa_superhug'] = 2
 
@@ -1840,10 +1840,10 @@ label lisa_sorry_gifts:
                 Max_07 "Значит - это засчитывается?"
                 Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
                 Max_01 "Однозначно случайно!"
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_7
                 Lisa_05 "В таком случае, иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                 Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_7
                 Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                 Max_01 "Да я же случайно оказался около душа..."
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1863,10 +1863,10 @@ label lisa_sorry_gifts:
             Max_03 "Я не знал... Получается - повезло! Или это профессиональное чутьё!"
             Lisa_02 "Хи-хи... Болтун! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
             Max_07 "Да я же случайно оказался около душа..."
-            call lisa_sorry_gifts.embraces
+            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_8
             Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-            call lisa_sorry_gifts.nearby
+            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_8
             Lisa_01 "Ну всё, хорошего понемногу... Я рада, что ты выбрал именно такие извинения."   #спрайт вместе
             Max_01 "А уж я-то как рад, сестрёнка!"
             $ AddRelMood("lisa", 5, 150)
@@ -1877,18 +1877,18 @@ label lisa_sorry_gifts:
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_02 "Хи-хи... Везунчик! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
                 Max_07 "Да я же случайно оказался около душа..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_9
                 Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                 Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_9
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_10
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_01 "Но если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя смогут только большие шоколадки! Ясно?!"
@@ -1896,25 +1896,25 @@ label lisa_sorry_gifts:
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 0, 50)
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_5
 
             elif sorry_gifts['lisa'].give[0] == 2:  ## преемлемое, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_02 "Хи-хи... Везунчик! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
                 Max_07 "Да я же случайно оказался около душа..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_10
                 Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                 Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_11
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_1
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_12
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1922,7 +1922,7 @@ label lisa_sorry_gifts:
                             $ mgg.social += 0.2
                             $ AddRelMood("lisa", 5, 150)
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_6
                             $ AddRelMood("lisa", 0, 100)
 
             else:  ## любимое, любимое
@@ -1938,18 +1938,18 @@ label lisa_sorry_gifts:
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 Lisa_12 "А вот и нет! Не разобрались!"
                 Max_08 "Эй, в смысле!"
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_11
                 Lisa_03 "Я хочу крепкие обнимашки! Вот такие..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_13
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_2
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_14
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             if __give[-1:] == 'm':
@@ -1986,10 +1986,10 @@ label lisa_sorry_gifts:
                     Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..."
                     "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.embraces
+                            call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_12
                             Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_15
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -1998,7 +1998,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 5, 150)
                             $ flags['lisa_superhug'] = 3
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_7
                             $ flags['lisa_superhug'] = 2
                             $ AddRelMood("lisa", 0, 50)
 
@@ -2007,10 +2007,10 @@ label lisa_sorry_gifts:
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_13
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_16
                 Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                 Max_01 "Да я же случайно оказался около душа..."
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2023,18 +2023,18 @@ label lisa_sorry_gifts:
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_14
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_17
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_3
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_18
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2043,7 +2043,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 5, 200)
                             $ flags['lisa_superhug'] = 4
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_8
                             $ AddRelMood("lisa", 5, 100)
                             $ flags['lisa_superhug'] = 3
 
@@ -2052,10 +2052,10 @@ label lisa_sorry_gifts:
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_15
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_19
                 Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                 Max_01 "Да я же случайно оказался около душа..."
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2068,18 +2068,18 @@ label lisa_sorry_gifts:
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_16
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_20
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_4
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_21
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2088,7 +2088,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 5, 200)
                             $ flags['lisa_superhug'] = 4
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_9
                             $ AddRelMood("lisa", 5, 100)
                             $ flags['lisa_superhug'] = 3
 
@@ -2097,18 +2097,18 @@ label lisa_sorry_gifts:
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_17
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_22
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_5
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_23
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2117,7 +2117,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 5, 200)
                             $ flags['lisa_superhug'] = 4
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_10
                             $ AddRelMood("lisa", 5, 100)
                             $ flags['lisa_superhug'] = 3
 
@@ -2126,18 +2126,18 @@ label lisa_sorry_gifts:
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_18
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_24
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_6
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_25
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2146,7 +2146,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 5, 200)
                             $ flags['lisa_superhug'] = 4
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_11
                             $ AddRelMood("lisa", 5, 100)
                             $ flags['lisa_superhug'] = 3
 
@@ -2155,18 +2155,18 @@ label lisa_sorry_gifts:
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_19
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-                call lisa_sorry_gifts.nearby
+                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_26
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
                     "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call lisa_sorry_gifts.kiss
+                            call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_7
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                            call lisa_sorry_gifts.nearby
+                            call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_27
                             Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                             Max_01 "Да я же случайно оказался около душа..."
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2175,7 +2175,7 @@ label lisa_sorry_gifts:
                             $ AddRelMood("lisa", 5, 200)
                             $ flags['lisa_superhug'] = 4
                         else:
-                            call lisa_sorry_gifts.persuasion_failed
+                            call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_12
                             $ AddRelMood("lisa", 5, 100)
                             $ flags['lisa_superhug'] = 3
 
@@ -2187,19 +2187,19 @@ label lisa_sorry_gifts:
                 else:
                     Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"   #если сладость большая
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
-                call lisa_sorry_gifts.embraces
+                call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_20
                 Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."   #спрайт с обнимашками
                 Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
                 if __give[-1:] == 'm':
-                    call lisa_sorry_gifts.nearby
+                    call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_28
                     menu:
                         Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #если сладость маленькая   #спрайт вместе
                         "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                             if RandomChance(_ch1):
-                                call lisa_sorry_gifts.kiss
+                                call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_8
                                 Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                                 Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-                                call lisa_sorry_gifts.nearby
+                                call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_29
                                 Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                                 Max_01 "Да я же случайно оказался около душа..."
                                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
@@ -2208,14 +2208,14 @@ label lisa_sorry_gifts:
                                 $ AddRelMood("lisa", 5, 200)
                                 $ flags['lisa_superhug'] = 4
                             else:
-                                call lisa_sorry_gifts.persuasion_failed
+                                call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_13
                                 $ AddRelMood("lisa", 5, 100)
                                 $ flags['lisa_superhug'] = 3
                 else:
-                    call lisa_sorry_gifts.kiss
+                    call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_9
                     Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"   #если сладость большая   #спрайт с поцелуем
                     Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-                    call lisa_sorry_gifts.nearby
+                    call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_30
                     Lisa_02 "Ну всё, хорошего понемногу... И не подглядывай за мной больше!"   #спрайт вместе
                     Max_01 "Да я же случайно оказался около душа..."
                     Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."

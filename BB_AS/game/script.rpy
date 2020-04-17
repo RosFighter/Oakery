@@ -17,15 +17,15 @@ label language_chooser:
 label start:
     show screen watermark
     show screen notify_check
-    call InitHouse
-    call InitCharacters
-    call InitActions
-    call InitStuff
-    call InitPoss
-    call InitTalksEvents
-    call InitVariable
-    call InitPunish
-    call InitCources
+    call InitHouse from _call_InitHouse
+    call InitCharacters from _call_InitCharacters
+    call InitActions from _call_InitActions
+    call InitStuff from _call_InitStuff
+    call InitPoss from _call_InitPoss
+    call InitTalksEvents from _call_InitTalksEvents
+    call InitVariable from _call_InitVariable
+    call InitPunish from _call_InitPunish
+    call InitCources from _call_InitCources
 
     jump intro
 

@@ -109,7 +109,7 @@ label back_shoping:
 
 label MeetingEric:
     # устанавливаем новое расписание для Анны и Эрика
-    call AddEric
+    call AddEric from _call_AddEric
 
     $ renpy.block_rollback()
     $ spent_time = 10
@@ -242,7 +242,7 @@ label night_of_fun:
 
     ## Запуск выпавшей забавы
     if _fun == 'spider':
-        call spider_in_bed
+        call spider_in_bed from _call_spider_in_bed
 
     $ mgg.energy -= spent_time * 3.5 * cur_ratio / 60.0
     $ mgg.cleanness -= spent_time * 2.5 * cur_ratio / 60.0

@@ -6,7 +6,7 @@ label AliceTalkStart:
     # $ __cur_plan = GetPlan(plan_alice, day, tm)
     $ __cur_plan = alice.get_plan()
     if __cur_plan.talklabel is not None:
-        call expression __cur_plan.talklabel
+        call expression __cur_plan.talklabel from _call_expression_1
 
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
@@ -23,7 +23,7 @@ label AliceTalkStart:
         $ __mood = alice.GetMood()[0]
         if rez in gifts['alice']:
             if renpy.has_label(rez.label):
-                call expression rez.label
+                call expression rez.label from _call_expression_2
         elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Alice_badbadmood
@@ -34,7 +34,7 @@ label AliceTalkStart:
         elif talks[rez].kd_id != "" and talks[rez].kd_id in cooldown and not ItsTime(cooldown[talks[rez].kd_id]):
             jump Alice_cooldown
         elif renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_3
         jump AliceTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump Waiting            # если же выбрано "уйти", уходим в после ожидания
@@ -1124,7 +1124,7 @@ label gift_pajamas:
         Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
         Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
         Alice_05 "Ладно, поверю... Ого, а что это у тебя здесь..."   #спрайт с ушами
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
@@ -1245,7 +1245,7 @@ label gift_pajamas:
         $ spent_time += 20
     elif flags['alice_hugs'] > 2: # после 3-ей сладости было прощение без выкручивания ушей
         Alice_04 "А жирно тебе не будет?! В душе на меня глазел, а теперь и здесь хочешь подглядеть... Нет уж! Но за пижамку я тебя всё же обниму! Ну так... совсем немного..."   #спрайт с обнимашками"
-        call alice_sorry_gifts.kindred_hugs
+        call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs
         Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
         Alice_07 "Не смотря на твои замашки, ты всё-таки купил мне пижамку, которую я просила. Вот я и не вредничаю..."
         Max_05 "Да, надо бы почаще так делать."
@@ -1263,7 +1263,7 @@ label gift_pajamas:
                     Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                 else:
                     Alice_05 "[failed!t]Ладно, поверю, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-                    call alice_sorry_gifts.kick_ears
+                    call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_1
                     Max_12 "А-а-ай! Мне же больно, Алиса!"
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     Max_10 "Да я же случайно оказался около душа..."
@@ -1274,7 +1274,7 @@ label gift_pajamas:
         Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
         Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
         Alice_05 "Ладно, поверю, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_2
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
@@ -1312,7 +1312,6 @@ label Alice_solar:
             $ talk_var['sun_oiled'] = 4
             jump AfterWaiting
         "Может быть, тебя намазать кремом для загара?" if not items['solar'].have:  # нет крема
-                Max_04 "Может быть, тебя намазать кремом для загара?"
                 Alice_13 "Может быть. Вот только у меня его нет..."
                 Max_00 "Ясно. Ну, в другой раз значит..."
                 $ items['solar'].InShop = True
@@ -1353,7 +1352,7 @@ label Alice_solar:
             $ __res = renpy.display_menu([("{i}наносить крем молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                call massage_sunscreen.talk_topless
+                call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless
             $ __r1 = renpy.random.choice(['02','03'])
             $ renpy.scene()
             $ renpy.show('BG char Alice sun-alone '+__r1)
@@ -1514,7 +1513,7 @@ label massage_sunscreen:
             $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                call massage_sunscreen.talk_topless
+                call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless_1
                 $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
                 Max_01 "И ещё немного..."
 
@@ -1561,7 +1560,7 @@ label massage_sunscreen:
             $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
             if __res > 0:
                 $ _talk_top = True
-                call massage_sunscreen.talk_topless
+                call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless_2
                 $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
                 Max_01 "Ещё немного крема..."
 
@@ -1727,7 +1726,7 @@ label alice_sorry_gifts:
                 $ renpy.show("Alice hugging aliceroom 01"+alice.dress+mgg.dress)
             else:
                 $ renpy.show("Alice hugging aliceroom 01a"+alice.dress+mgg.dress)
-        elif current_room == house[4]:
+        elif current_room == house[5]:
             scene BG char Alice hugging terrace-01
             $ renpy.show("Alice hugging terrace 01"+alice.dress+mgg.dress)
         elif current_room == house[6]:
@@ -1743,7 +1742,7 @@ label alice_sorry_gifts:
                 $ renpy.show("Alice hugging aliceroom 02"+alice.dress+mgg.dress)
             else:
                 $ renpy.show("Alice hugging aliceroom 02a"+alice.dress+mgg.dress)
-        elif current_room == house[4]:
+        elif current_room == house[5]:
             scene BG char Alice hugging terrace-01
             $ renpy.show("Alice hugging terrace 02"+alice.dress+mgg.dress)
         elif current_room == house[6]:
@@ -1755,7 +1754,7 @@ label alice_sorry_gifts:
         Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
         Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
         Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_3
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         menu:
             Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -1781,7 +1780,7 @@ label alice_sorry_gifts:
         Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
         Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
         Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_4
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
@@ -1796,7 +1795,7 @@ label alice_sorry_gifts:
 
     label .apology_accepted:
         Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_5
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
@@ -1808,7 +1807,7 @@ label alice_sorry_gifts:
 
     label .you_deserve:
         Alice_04 "[succes!t]Ладно, Макс, пожалуй ты заслужил это своими подарками..."   #спрайт с обнимашками
-        call alice_sorry_gifts.kindred_hugs
+        call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs_1
         Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
         Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
         Max_05 "Да, надо бы почаще так делать."
@@ -1831,7 +1830,7 @@ label alice_sorry_gifts:
 
     label .im_in_pain:
         Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_6
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
@@ -1844,7 +1843,7 @@ label alice_sorry_gifts:
         Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
         Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
         Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
-        call alice_sorry_gifts.kick_ears
+        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_7
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
@@ -1858,7 +1857,7 @@ label alice_sorry_gifts:
             Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
             Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
             Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
-            call alice_sorry_gifts.kick_ears
+            call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_8
             Max_12 "А-а-ай! Алиса! Больно ведь!"
             menu:
                 Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?"
@@ -1888,7 +1887,7 @@ label alice_sorry_gifts:
                 Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
                 Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
                 Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_9
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                 Max_10 "Да я же случайно оказался около душа..."
@@ -1902,7 +1901,7 @@ label alice_sorry_gifts:
                 $ punreason[1] = 1
 
             elif sorry_gifts['alice'].give[0] == 2: ## преемлемое, ненавистное
-                call alice_sorry_gifts.what_disgusting
+                call alice_sorry_gifts.what_disgusting from _call_alice_sorry_gifts_what_disgusting
                 Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                 Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                 Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
@@ -1916,7 +1915,7 @@ label alice_sorry_gifts:
                 Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
                 Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
                 Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_10
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -1942,7 +1941,7 @@ label alice_sorry_gifts:
                 Alice_17 "Макс, ты что, тупой, я тебе, уже дважды говорила, что не люблю эти конфеты?! Ты меня, что, совсем не слушаешь, или у тебя мозгов нет?!"
                 Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
                 Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_11
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                 Max_10 "Да я же случайно оказался около душа..."
@@ -1955,13 +1954,13 @@ label alice_sorry_gifts:
                 $ punreason[1] = 1
 
             elif sorry_gifts['alice'].give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
-                call alice_sorry_gifts.bad_again
+                call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again
 
             elif sorry_gifts['alice'].give == [1, 3]:  ### ненавистное, любимое, ненавистное
                 Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
                 Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
                 Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_12
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -1983,13 +1982,13 @@ label alice_sorry_gifts:
                             $ mgg.social += 0.1
 
             elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
-                call alice_sorry_gifts.bad_again
+                call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again_1
 
             elif sorry_gifts['alice'].give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
                 Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
                 Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
                 Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_13
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -2011,19 +2010,19 @@ label alice_sorry_gifts:
                             $ punreason[1] = 1
 
             elif sorry_gifts['alice'].give == [2, 3]:  ### преемлемое, любимое, ненавистное
-                call alice_sorry_gifts.what_disgusting
+                call alice_sorry_gifts.what_disgusting from _call_alice_sorry_gifts_what_disgusting_1
                 Alice_05 "Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                 Max_14 "Ой! Я понял... Больше не буду!"
                 Alice_02 "Вот и молодец! Гуляй..."
 
             elif sorry_gifts['alice'].give == [3, 1]:  ### любимое, ненавистное, ненавистное
-                call alice_sorry_gifts.bad_again
+                call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again_2
 
             elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, ненавистное
                 Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
                 Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
                 Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_14
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -2045,7 +2044,7 @@ label alice_sorry_gifts:
                             $ mgg.social += 0.1
 
             else:  ### любимое, любимое, ненавистное
-                call alice_sorry_gifts.what_disgusting
+                call alice_sorry_gifts.what_disgusting from _call_alice_sorry_gifts_what_disgusting_2
                 Alice_05 "Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                 Max_14 "Ой! Я понял... Больше не буду!"
                 Alice_02 "Вот и молодец! Гуляй..."
@@ -2060,7 +2059,7 @@ label alice_sorry_gifts:
             Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
             Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
             Alice_05 "Конечно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."   #спрайт с ушами
-            call alice_sorry_gifts.kick_ears
+            call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_15
             Max_12 "А-а-ай! Алиса! Больно ведь!"
             Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?"
             Max_10 "Да я же случайно оказался около душа..."
@@ -2077,7 +2076,7 @@ label alice_sorry_gifts:
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_16
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -2106,7 +2105,7 @@ label alice_sorry_gifts:
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
                 Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_17
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -2135,7 +2134,7 @@ label alice_sorry_gifts:
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_18
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                 Max_10 "Да я же случайно оказался около душа..."
@@ -2150,7 +2149,7 @@ label alice_sorry_gifts:
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_12 "Я тебе сейчас дам, ничего не расскажу... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_19
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                 Max_10 "Да я же случайно оказался около душа..."
@@ -2163,20 +2162,20 @@ label alice_sorry_gifts:
                 $ punreason[1] = 1
 
             elif sorry_gifts['alice'].give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
-                call alice_sorry_gifts.middle_again
+                call alice_sorry_gifts.middle_again from _call_alice_sorry_gifts_middle_again
 
             elif sorry_gifts['alice'].give == [1, 3]:  ### ненавистное, любимое, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
-                call alice_sorry_gifts.apology_accepted
+                call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted
 
             elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
-                call alice_sorry_gifts.middle_again
+                call alice_sorry_gifts.middle_again from _call_alice_sorry_gifts_middle_again_1
 
             elif sorry_gifts['alice'].give == [2, 2]:  ### преемлемое третий раз
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... А ты рисковый! Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
-                call alice_sorry_gifts.apology_accepted
+                call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_1
 
             elif sorry_gifts['alice'].give == [2, 3]:  ### преемлемое, любимое, преемлемое
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
@@ -2193,7 +2192,7 @@ label alice_sorry_gifts:
                             $ mgg.social += 0.2
                         else:
                             Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-                            call alice_sorry_gifts.kick_ears
+                            call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_20
                             Max_12 "А-а-ай! Мне же больно, Алиса!"
                             Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                             Max_10 "Да я же случайно оказался около душа..."
@@ -2207,7 +2206,7 @@ label alice_sorry_gifts:
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_21
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -2231,7 +2230,7 @@ label alice_sorry_gifts:
             elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, преемлемое
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
-                call alice_sorry_gifts.apology_accepted
+                call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_2
 
             else:  ### любимое, любимое, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
@@ -2248,7 +2247,7 @@ label alice_sorry_gifts:
                             $ mgg.social += 0.2
                         else:
                             Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-                            call alice_sorry_gifts.kick_ears
+                            call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_22
                             Max_12 "А-а-ай! Мне же больно, Алиса!"
                             Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                             Max_10 "Да я же случайно оказался около душа..."
@@ -2282,7 +2281,7 @@ label alice_sorry_gifts:
                         $ mgg.social += 0.2
                     else:
                         Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."   #спрайт с ушами
-                        call alice_sorry_gifts.kick_ears
+                        call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_23
                         Max_12 "А-а-ай! Алиса! Больно ведь!"
                         Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?"
                         Max_10 "Да я же случайно оказался около душа..."
@@ -2301,7 +2300,7 @@ label alice_sorry_gifts:
                 Alice_04 "В таком случае, видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?"
                 Max_01 "Хочется надеяться, что так и будет..."
                 Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_24
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                 Max_10 "Да я же случайно оказался около душа..."
@@ -2328,7 +2327,7 @@ label alice_sorry_gifts:
                             $ mgg.social += 0.2
                         else:
                             Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
-                            call alice_sorry_gifts.kick_ears
+                            call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_25
                             Max_12 "А-а-ай! Мне же больно, Алиса!"
                             Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                             Max_10 "Да я же случайно оказался около душа..."
@@ -2352,7 +2351,7 @@ label alice_sorry_gifts:
                                 Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                                 $ mgg.social += 0.2
                             else:
-                                call alice_sorry_gifts.im_in_pain
+                                call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain
                                 Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
                                 Max_11 "Взято на заметку, Алиса! Отпусти уже..."
                                 Alice_02 "Вот и молодец! Гуляй..."
@@ -2365,9 +2364,9 @@ label alice_sorry_gifts:
                         Alice_03 "Я даже подумываю, а не обнять ли тебя, Макс? Ну так... по семейному..."
                         "Только если без последующего насилия... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                             if RandomChance(_ch1):
-                                call alice_sorry_gifts.you_deserve
+                                call alice_sorry_gifts.you_deserve from _call_alice_sorry_gifts_you_deserve
                             else:
-                                call alice_sorry_gifts.what_bummer
+                                call alice_sorry_gifts.what_bummer from _call_alice_sorry_gifts_what_bummer
                     $ AddRelMood('alice', 5, 150)
 
         elif len(sorry_gifts['alice'].give) == 2:  ### дарим в третий раз
@@ -2375,7 +2374,7 @@ label alice_sorry_gifts:
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_05 "Лучше поздно, чем никогда! А ну-ка иди сюда..."   #спрайт с ушами
-                call alice_sorry_gifts.kick_ears
+                call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_26
                 Max_12 "А-а-ай! Мне же больно, Алиса!"
                 menu:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
@@ -2401,7 +2400,7 @@ label alice_sorry_gifts:
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                 Max_01 "Хочется надеяться, что так и будет..."
-                call alice_sorry_gifts.apology_accepted
+                call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_3
                 $ AddRelMood('alice', 0, 100)
 
             elif sorry_gifts['alice'].give == [1, 3]:  ### ненавистное, любимое, любимое
@@ -2418,7 +2417,7 @@ label alice_sorry_gifts:
                                 "Только если без последующего насилия... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                                     if RandomChance(_ch1):
                                         Alice_04 "[succes!t]Пожалуй ты заслужил это своими подарками..."   #спрайт с обнимашками
-                                        call alice_sorry_gifts.kindred_hugs
+                                        call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs_2
                                         Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
                                         Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
                                         Max_05 "Да, надо бы почаще так делать."
@@ -2437,7 +2436,7 @@ label alice_sorry_gifts:
                                         $ mgg.social += 0.1
                             $ mgg.social += 0.2
                         else:
-                            call alice_sorry_gifts.im_in_pain
+                            call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_1
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 100)
@@ -2447,7 +2446,7 @@ label alice_sorry_gifts:
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                 Max_01 "Хочется надеяться, что так и будет..."
-                call alice_sorry_gifts.apology_accepted
+                call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_4
                 $ AddRelMood('alice', 0, 50)
 
             elif sorry_gifts['alice'].give == [2, 2]:  ### преемлемое, преемлемое, любимое
@@ -2464,7 +2463,7 @@ label alice_sorry_gifts:
                             $ flags['alice_hugs'] = 3
                             $ mgg.social += 0.2
                         else:
-                            call alice_sorry_gifts.im_in_pain
+                            call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_2
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 50)
@@ -2478,9 +2477,9 @@ label alice_sorry_gifts:
                     Alice_03 "Я даже подумываю, а не обнять ли тебя, Макс? Ну так... совсем немного..."
                     "Только если без последующего насилия... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                         if RandomChance(_ch1):
-                            call alice_sorry_gifts.you_deserve
+                            call alice_sorry_gifts.you_deserve from _call_alice_sorry_gifts_you_deserve_1
                         else:
-                            call alice_sorry_gifts.what_bummer
+                            call alice_sorry_gifts.what_bummer from _call_alice_sorry_gifts_what_bummer_1
                 $ AddRelMood('alice', 0, 100)
 
             elif sorry_gifts['alice'].give == [3, 1]:  ### любимое, ненавистное, любимое
@@ -2488,7 +2487,7 @@ label alice_sorry_gifts:
                 Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                 Max_01 "Хочется надеяться, что так и будет..."
-                call alice_sorry_gifts.apology_accepted
+                call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_5
                 $ AddRelMood('alice', 0, 100)
 
             elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, любимое
@@ -2505,7 +2504,7 @@ label alice_sorry_gifts:
                             $ flags['alice_hugs'] = 3
                             $ mgg.social += 0.2
                         else:
-                            call alice_sorry_gifts.im_in_pain
+                            call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_3
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 100)
@@ -2520,15 +2519,15 @@ label alice_sorry_gifts:
                         Alice_03 "Я даже подумываю, а не обнять ли тебя, Макс? Ну так... совсем немного..."
                         "Только если без последующего насилия... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
                             if RandomChance(_ch1):
-                                call alice_sorry_gifts.you_deserve
+                                call alice_sorry_gifts.you_deserve from _call_alice_sorry_gifts_you_deserve_2
                             else:
-                                call alice_sorry_gifts.what_bummer
+                                call alice_sorry_gifts.what_bummer from _call_alice_sorry_gifts_what_bummer_2
                     $ AddRelMood('alice', 0, 100)
                 else:    #если сладость большая
                     Alice_05 "Конфет так много, что я не припоминаю, чтобы утром за мной кто-то подглядывал! Всё было в порядке..."
                     Max_01 "Ну да, меня и рядом тогда не было!"
                     Alice_04 "Я даже обниму тебя за это! Ну так... совсем немного... Иди ко мне."   #спрайт с обнимашками
-                    call alice_sorry_gifts.kindred_hugs
+                    call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs_3
                     Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
                     Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
                     Max_05 "Да, надо бы почаще так делать."

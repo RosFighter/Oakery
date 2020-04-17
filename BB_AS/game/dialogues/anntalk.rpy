@@ -6,7 +6,7 @@ label AnnTalkStart:
     # $ __cur_plan = GetPlan(plan_ann, day, tm)
     $ __cur_plan = ann.get_plan()
     if __cur_plan.talklabel is not None:
-        call expression __cur_plan.talklabel
+        call expression __cur_plan.talklabel from _call_expression_7
 
     if len(dial) > 0:
         $ dial.append((_("{i}уйти{/i}"), "exit"))
@@ -23,7 +23,7 @@ label AnnTalkStart:
         $ __mood = ann.GetMood()[0]
         if rez in gifts['ann']:
             if renpy.has_label(rez.label):
-                call expression rez.label
+                call expression rez.label from _call_expression_8
         elif __mood < talks[rez].mood:
             if __mood < -2: # Настроение -4... -3, т.е. всё ну совсем плохо
                 jump Ann_badbadmood
@@ -34,7 +34,7 @@ label AnnTalkStart:
         elif talks[rez].kd_id != "" and talks[rez].kd_id in cooldown and not ItsTime(cooldown[talks[rez].kd_id]):
             jump Ann_cooldown
         elif renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_9
         jump AnnTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания

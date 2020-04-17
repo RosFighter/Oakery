@@ -150,7 +150,7 @@ label lisa_shower:
             show FG shower-closer
             menu:
                 Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
-                "{i}уйти{/i}":
+                "{i}Бежать{/i}":
                     jump .end_peeping
         jump .end_peeping
 

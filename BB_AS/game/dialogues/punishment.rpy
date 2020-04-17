@@ -60,7 +60,7 @@ label punishment:
                     Ann_18 "Макс, теперь твоя очередь..."
             else:  # Макс единственный наказуемый
                 Ann_18 "Макс, иди сюда..."
-            call punishment_max
+            call punishment_max from _call_punishment_max
         elif pun_list[_i] == "lisa":
             if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
                 if first: # Лиза наказывается первой
@@ -70,7 +70,7 @@ label punishment:
                     Ann_18 "Теперь Лиза..."
             else:  # наказывают только Лизу
                 Ann_18 "Лиза, подойди-ка ко мне."
-            call punishment_lisa
+            call punishment_lisa from _call_punishment_lisa
         elif pun_list[_i] == "alice":
             if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
                 if first: # Алиса наказывается первой
@@ -80,7 +80,7 @@ label punishment:
                     Ann_18 "Теперь ты, Алиса..."
             else:  # наказывают только Алису
                 Ann_18 "Алиса, подойди-ка сюда."
-            call punishment_alice
+            call punishment_alice from _call_punishment_alice
         $ _i += 1
 
     if tm > "14:00":

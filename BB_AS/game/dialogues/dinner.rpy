@@ -7,18 +7,18 @@ label after_dinner:
         # Лизу наказали
         if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000:
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
-            call conversation_after_dinner(4)
+            call conversation_after_dinner(4) from _call_conversation_after_dinner
         elif len(punlisa) >= 7 and ColumnSum(punlisa, 0, 7) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):
             # если Макс не помогал Лизе семь раз и разговора после ужина не было больше недели
             if talk_var['help.hw'] == 0 and poss['sg'].stn <= 2:
                 # совсем не помогал
-                call conversation_after_dinner(1)
+                call conversation_after_dinner(1) from _call_conversation_after_dinner_1
             elif poss['sg'].stn == 2:
                 # безвозмездно помогал, но перестал
-                call conversation_after_dinner(2)
+                call conversation_after_dinner(2) from _call_conversation_after_dinner_2
             elif poss['sg'].stn > 2:
                 # обещал помогать за услуги, но не стал или перестал
-                call conversation_after_dinner(3)
+                call conversation_after_dinner(3) from _call_conversation_after_dinner_3
 
     jump Waiting
 

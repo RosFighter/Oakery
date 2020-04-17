@@ -197,7 +197,7 @@ label Box:
         "{i}закончить{/i}":
             pass
         "{i}узнать подробнее о \"Возможностях\"{/i}" if flags['about_poss']:
-            call about_poss
+            call about_poss from _call_about_poss
     $ AvailableActions['unbox'].enabled = False
     $ AvailableActions['searchcam'].enabled = True
     $ InspectedRooms.clear()

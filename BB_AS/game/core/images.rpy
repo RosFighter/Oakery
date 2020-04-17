@@ -119,150 +119,150 @@ image AnimAnnEric2:  # Анимация в душе (утром со стрем�
 
 image porn_01 01_02:
     'tv porn-01 01'
-    3.0
+    6.0
     'tv porn-01 02'
 
 image porn_01 03_04:
     'tv porn-01 03'
-    3.0
+    6.0
     'tv porn-01 04'
 
 image porn_01 05_06:
     'tv porn-01 05'
-    3.0
+    6.0
     'tv porn-01 06'
 
 image porn_01 07_08:
     'tv porn-01 07'
-    3.0
+    6.0
     'tv porn-01 08'
 
 image porn_01 09_10:
     'tv porn-01 09'
-    3.0
+    6.0
     'tv porn-01 10'
 
 image porn_02 01_02:
     'tv porn-02 01'
-    3.0
+    6.0
     'tv porn-02 02'
 
 image porn_02 03_04:
     'tv porn-02 03'
-    3.0
+    6.0
     'tv porn-02 04'
 
 image porn_02 05_06:
     'tv porn-02 05'
-    3.0
+    6.0
     'tv porn-02 06'
 
 image porn_02 07_08:
     'tv porn-02 07'
-    3.0
+    6.0
     'tv porn-02 08'
 
 image porn_02 09_10:
     'tv porn-02 09'
-    3.0
+    6.0
     'tv porn-02 10'
 
 image porn_03 01_02:
     'tv porn-03 01'
-    3.0
+    6.0
     'tv porn-03 02'
 
 image porn_03 03_04:
     'tv porn-03 03'
-    3.0
+    6.0
     'tv porn-03 04'
 
 image porn_03 05_06:
     'tv porn-03 05'
-    3.0
+    6.0
     'tv porn-03 06'
 
 image porn_03 07_08:
     'tv porn-03 07'
-    3.0
+    6.0
     'tv porn-03 08'
 
 image porn_03 09_10:
     'tv porn-03 09'
-    3.0
+    6.0
     'tv porn-03 10'
 
 image porn_04 01_02:
     'tv porn-04 01'
-    3.0
+    6.0
     'tv porn-04 02'
 
 image porn_04 03_04:
     'tv porn-04 03'
-    3.0
+    6.0
     'tv porn-04 04'
 
 image porn_04 05_06:
     'tv porn-04 05'
-    3.0
+    6.0
     'tv porn-04 06'
 
 image porn_04 07_08:
     'tv porn-04 07'
-    3.0
+    6.0
     'tv porn-04 08'
 
 image porn_04 09_10:
     'tv porn-04 09'
-    3.0
+    6.0
     'tv porn-04 10'
 
 image porn_05 01_02:
     'tv porn-05 01'
-    3.0
+    6.0
     'tv porn-05 02'
 
 image porn_05 03_04:
     'tv porn-05 03'
-    3.0
+    6.0
     'tv porn-05 04'
 
 image porn_05 05_06:
     'tv porn-05 05'
-    3.0
+    6.0
     'tv porn-05 06'
 
 image porn_05 07_08:
     'tv porn-05 07'
-    3.0
+    6.0
     'tv porn-05 08'
 
 image porn_05 09_10:
     'tv porn-05 09'
-    3.0
+    6.0
     'tv porn-05 10'
 
 image porn_06 01_02:
     'tv porn-06 01'
-    3.0
+    6.0
     'tv porn-06 02'
 
 image porn_06 03_04:
     'tv porn-06 03'
-    3.0
+    6.0
     'tv porn-06 04'
 
 image porn_06 05_06:
     'tv porn-06 05'
-    3.0
+    6.0
     'tv porn-06 06'
 
 image porn_06 07_08:
     'tv porn-06 07'
-    3.0
+    6.0
     'tv porn-06 08'
 
 image porn_06 09_10:
     'tv porn-06 09'
-    3.0
+    6.0
     'tv porn-06 10'

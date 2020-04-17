@@ -31,7 +31,7 @@ label Waiting:
 
     if day != prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
-        call NewDay
+        call NewDay from _call_NewDay
 
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
@@ -54,7 +54,7 @@ label Waiting:
         # $ tv_scene = renpy.random.choice(['', 'bj', 'hj'])
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
     if prevtime < '12:00' <= tm:
-        call Noon
+        call Noon from _call_Noon
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -258,7 +258,7 @@ label AfterWaiting:
 
     if __name_label != '' and renpy.has_label(__name_label):
         # управляющий блок найден и существует
-        call expression __name_label
+        call expression __name_label from _call_expression
     else:
         # устанавливаем фон комнаты без персонажей
         if current_room.cur_bg.find('_') >= 0:

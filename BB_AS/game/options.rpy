@@ -144,7 +144,7 @@ default preferences.afm_time = 15
 ## Этот параметр обычно не должен изменяться, а если и изменился, должен быть
 ## текстовой строчкой, а не выражением.
 
-define config.save_directory = "BB_AS"
+define config.save_directory = 'BB_AS'
 
 ## Настройка автосохранений ####################################################
 ##
@@ -159,7 +159,7 @@ init python:
 ##
 ## Иконка, показываемая на панели задач или на dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = 'gui/window_icon.png'
 
 
 ## Настройка Дистрибутива ######################################################
@@ -205,21 +205,20 @@ init python:
     build.classify('game/**.jpg', 'images')
     build.classify('game/**.webp', 'images')
 
-    build.archive("video", "all")
+    build.archive('video', 'all')
     build.classify('game/**.webm', 'video')
 
-    build.archive("translate", "all")
+    build.archive('translate', 'all')
     build.classify('game/tl/**.**', 'translate')
 
-    build.archive("scripts", "all")
-    build.classify('game/*.rpyc', "scripts")
-    build.classify('game/core/**.rpyc', "scripts")
-    build.classify('game/dialogues/**.rpyc', "scripts")
-    build.classify('game/events/**.rpyc', "scripts")
+    build.archive('scripts', 'all')
+    build.classify('game/*.rpyc', 'scripts')
+    build.classify('game/core/**.rpyc', 'scripts')
+    build.classify('game/dialogues/**.rpyc', 'scripts')
+    build.classify('game/events/**.rpyc', 'scripts')
 
-    build.archive("font", "all")
+    build.archive('font', 'all')
     build.classify('game/**.ttf', 'font')
-
 
     ## Файлы, соответствующие образцам документации, дублируются в приложениях
     ## Mac, чтобы они появлялись и в приложении, и в zip архиве.
