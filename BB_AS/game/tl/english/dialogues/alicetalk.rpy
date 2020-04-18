@@ -5846,7 +5846,7 @@ translate english strings:
 translate english Alice_solar_6edc5f35:
 
     # Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
-    Max_09 ""
+    Max_09 "Sunscreen can probably be found at the online store. I should also get some lighter clothes before I try and massage Alice."
 
 # game/dialogues/alicetalk.rpy:1379
 translate english Alice_solar_type_choice_1a15b8da:
@@ -5864,7 +5864,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1362
     old "{i}наносить крем молча{/i}"
-    new "{i}{/i}"
+    new "{i}Apply sunscreen{/i}"
 
     # game/dialogues/alicetalk.rpy:1362
     old "А тебе нравится, что следы от лямок остаются?"
@@ -5872,5 +5872,5 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1536
     old "{i}массировать молча{/i}"
-    new ""
+    new "{i}Massage{/i}"
 
