@@ -174,8 +174,8 @@ translate english alice_shower_closer_peepeng_051a23bb:
     # Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
     Max_09 "{color=[orange]}{i}I think Alice got suspicious!{/i}{/color}\nOh, shit! We've got to get out of here while we still can..."
 
-# game/events/alice.rpy:382
-translate english alice_shower_closer_peepeng_e19147dd:
+# game/events/alice.rpy:398
+translate english alice_shower_pinded_e19147dd:
 
     # Alice_12 "[spotted!t]Макс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!" nointeract
     Alice_12 "[spotted!t]Max!!! Are you peeping?! You're so dead! You're lucky I'm naked now... But I'm going to I'll tell my mom everything, she'll punish you!" nointeract
@@ -1347,4 +1347,12 @@ translate english alice_shower_edba9d24:
 
     # Max_10 "С радостью бы подсмотрел за голенькой сестрёнкой, но это слишком опасно! Сперва нужно подарить то, что обещал..."
     Max_10 "I would love to spy on my naked sister, but it's too dangerous! First I need to give what I promised..."
+
+# TODO: Translation updated at 2020-04-18 12:35
+
+translate english strings:
+
+    # game/events/alice.rpy:266
+    old "{i}немного пошуметь{/i}"
+    new "{i}make some noise{/i}"
 

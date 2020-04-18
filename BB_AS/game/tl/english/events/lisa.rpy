@@ -72,8 +72,8 @@ translate english lisa_shower_closer_peepeng_e8e13c34:
     # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
     Max_12 "{color=[orange]}{i}I think Lisa got suspicious!{/i}{/color}\nOh, no! Looks like she noticed me... time to run!"
 
-# game/events/lisa.rpy:145
-translate english lisa_shower_closer_peepeng_05cff630:
+# game/events/lisa.rpy:157
+translate english lisa_shower_pinded_05cff630:
 
     # Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!" nointeract
     Lisa_12 "[spotted!t]Max! I can't believe you're peeping! I'm telling mom about this!" nointeract
@@ -599,4 +599,5 @@ translate english lisa_shower_8d94a43d:
 
     # Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
     Max_10 "I want to take another look at my naked sister, but I haven't given her what I promised yet..."
+
 

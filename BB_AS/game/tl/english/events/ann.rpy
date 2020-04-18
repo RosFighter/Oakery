@@ -978,7 +978,7 @@ translate english ann_dressed_shop_gift_75fcb6dd:
 translate english ann_dressed_shop_gift_d954a734:
 
     # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
-    Ann_08 ""
+    Ann_08 "Oh... Thank you for the compliment, my dear. You can tell that my son is a real man! Come here, I'll give you a hug..."
 
 # game/events/ann.rpy:462
 translate english ann_dressed_shop_gift_7a4eaba8:

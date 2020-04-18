@@ -1026,7 +1026,7 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Raffaello\" (16 штук)"
-    new "Chocolate \"Raffaello\" (16 штук)"
+    new "Chocolate \"Raffaello\" (16 pieces)"
 
     # game/core/03variables.rpy:207
     old "Хрустящие кокосовые конфеты с цельным миндальным орехом. Вместо тысячи слов..."
@@ -1034,11 +1034,7 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Raffaello\" (24 штуки)"
-    new "Chocolate \"Raffaello\" (24 штук)"
-
-    # game/core/03variables.rpy:207
-    old "Конфеты \"Ferrero Rocher\""
-    new "Chocolate \"Ferrero Rocher\""
+    new "Chocolate \"Raffaello\" (24 pieces)"
 
     # game/core/03variables.rpy:207
     old "Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."

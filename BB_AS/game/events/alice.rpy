@@ -267,6 +267,8 @@ label alice_shower:
             Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
+            "{i}немного пошуметь{/i}" if 1 < sorry_gifts['alice'].give <= 4:
+                jump .pinded
             "{i}запустить паука к Алисе{/i}" if items['spider'].have:
                 jump .spider
             "{i}уйти{/i}":
@@ -370,7 +372,7 @@ label alice_shower:
             else:
                 Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
             jump .end
-        elif RandomChance(_chance):
+        elif RandomChance(_chance) or sorry_gifts['alice'].give > 3:
             $ peeping['alice_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
@@ -382,18 +384,21 @@ label alice_shower:
             Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
             jump .end
         else:
-            $ peeping['alice_shower'] = 3
-            $ punreason[1] = 1
-            $ mgg.stealth += 0.05
-            $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
-            $ __ran1 = renpy.random.choice(['09', '10'])
-            scene BG shower-closer
-            $ renpy.show('Alice shower-closer '+__ran1)
-            show FG shower-closer
-            menu:
-                Alice_12 "[spotted!t]Макс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!"
-                "{i}Бежать{/i}":
-                    jump .end
+            jump .pinded
+
+    label .pinded:
+        $ peeping['alice_shower'] = 3
+        $ punreason[1] = 1
+        $ mgg.stealth += 0.05
+        $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
+        $ __ran1 = renpy.random.choice(['09', '10'])
+        scene BG shower-closer
+        $ renpy.show('Alice shower-closer '+__ran1)
+        show FG shower-closer
+        menu:
+            Alice_12 "[spotted!t]Макс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!"
+            "{i}Бежать{/i}":
+                jump .end
 
     label .ladder:
         $ renpy.scene()
@@ -557,7 +562,7 @@ label alice_dressed_friend:
                     $ flags['noted'] = True
 
                 scene BG char Alice voyeur-00
-                $ renpy.show('Alice voyeur '+__ran1)
+                $ renpy.show('Alice voyeur '+__ran1+__suf)
                 $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
                 if __ran1 == '01':
@@ -915,6 +920,7 @@ label alice_smoke:
     scene BG char Alice smoke
 
     if talk_var['smoke']:
+        $ renpy.show('Alice smoke '+pose3_3+alice.dress)
         $ persone_button1 = 'Alice smoke '+pose3_3+alice.dress
         return
     else:

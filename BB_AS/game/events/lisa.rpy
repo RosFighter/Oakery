@@ -111,6 +111,8 @@ label lisa_shower:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
+            "{i}немного пошуметь{/i}" if 1 < sorry_gifts['lisa'].give <= 4:
+                jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping
 
@@ -129,7 +131,7 @@ label lisa_shower:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
                 Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-        elif RandomChance(_chance):
+        elif RandomChance(_chance) or sorry_gifts['lisa'].give > 3:
             $ peeping['lisa_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
@@ -140,19 +142,22 @@ label lisa_shower:
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
         else:
-            $ peeping['lisa_shower'] = 3
-            $ punreason[0] = 1
-            $ mgg.stealth += 0.05
-            $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
-            $ __ran1 = renpy.random.choice(['09', '10'])
-            scene BG shower-closer
-            $ renpy.show('Lisa shower-closer '+__ran1)
-            show FG shower-closer
-            menu:
-                Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
-                "{i}Бежать{/i}":
-                    jump .end_peeping
+            jump .pinded
         jump .end_peeping
+
+    label .pinded:
+        $ peeping['lisa_shower'] = 3
+        $ punreason[0] = 1
+        $ mgg.stealth += 0.05
+        $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
+        $ __ran1 = renpy.random.choice(['09', '10'])
+        scene BG shower-closer
+        $ renpy.show('Lisa shower-closer '+__ran1)
+        show FG shower-closer
+        menu:
+            Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
+            "{i}Бежать{/i}":
+                jump .end_peeping
 
     label .end_peeping2:
         $ current_room, prev_room = prev_room, current_room

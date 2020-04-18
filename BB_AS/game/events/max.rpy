@@ -154,6 +154,7 @@ label Shower:
         Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
         $ items['ladder'].InShop = True
         $ flags['ladder'] = 2
+        $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 
     $ spent_time = 30
     jump Waiting
@@ -176,6 +177,7 @@ label Bath:
         Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
         $ items['ladder'].InShop = True
         $ flags['ladder'] = 2
+        $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 
     $ spent_time = 30
     jump Waiting
@@ -789,24 +791,9 @@ label SearchCigarettes:
     Max_09 "Так... Где же Алиса спрятала сигареты сегодня?" # nointeract
 
     call screen search_cigarettes
-    # $ __planname = GetPlan(plan_alice, day, tm).name
-    # $ rez = renpy.imagemap(,,[
-    #     (0, 684, 600, 1080, 'bed'),
-    #     (0, 280, 615, 665, 'bedside'),
-    #     (1370, 360, 1920, 1080, 'table')
-    #     ])
-    # menu:
-    #     "{i}искать в тумбочке{/i}":
-    #         jump .bedside
-    #     "{i}искать под кроватью{/i}":
-    #         jump .no
-    #     "{i}искать в столе{/i}":
-    #         jump .table
 
     label .bedside:
         if (random_sigloc == 'n' and dcv['smoke'].done
-                # and __planname != 'at_friends'
-                # and __planname != 'smoke'):
                 and alice.plan_name not in['at_friends','smoke']):
             jump .yes
         else:
@@ -814,8 +801,6 @@ label SearchCigarettes:
 
     label .table:
         if (random_sigloc == 't' and dcv['smoke'].done
-                # and __planname != 'at_friends'
-                # and __planname != 'smoke'):
                 and alice.plan_name not in['at_friends','smoke']):
             jump .yes
         else:
@@ -832,8 +817,8 @@ label SearchCigarettes:
         menu:
             Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..."
             "{i}подставить Алису{/i}":
-                if ((tm < '13:00' and __planname == 'smoke')
-                    or (tm < '17:00') and __planname == 'at_friends'):
+                if ((tm < '13:00' and alice.plan_name == 'smoke')
+                    or (tm < '17:00') and alice.plan_name == 'at_friends'):
                         pass  # если сегодня Алиса еще не курила или будет у подружки, подставлять бесполезно, она переложит сигареты
                 else:
                     $ punalice[0][1] = 1

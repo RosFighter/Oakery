@@ -1115,7 +1115,7 @@ label Lisa_sorry:
         Max_03 "Ну всё, значит жди в скором времени вкусняшку!"
         Lisa_01 "И только попробуй меня расстроить, Макс! Сроки у тебя те же."
         Max_01 "Ага..."
-    elif len(sorry_gifts['lisa'].give == 3) and 'bathrobe' not in lisa.gifts:
+    elif len(sorry_gifts['lisa'].give) == 3 and 'bathrobe' not in lisa.gifts:
         Lisa_09 "Нет уж, Макс... Думаю, я просто сдам тебя маме и пусть она с тобой разбирается! Хватит уже за мной подглядывать..."
         Max_07 "А может мы снова с тобой договоримся?! Как раньше..."
         Lisa_01 "Чтобы ты снова кормил меня сладостями?! Нет, это как-то слишком уж просто для тебя... Теперь, если не хочешь попасть под мамино наказание, ты купишь то, что я попрошу!"
@@ -1319,6 +1319,7 @@ label gift_bathrobe:
     else:
         $ lisa.infmax = 20.0
 
+    $ sorry_gifts['lisa'].valid = {'ritter-m', 'raffaello-m'}
     $ sorry_gifts['lisa'].give.append(4)
     $ cloth_type['lisa']['learn']  = 'b'
     $ spent_time += 10
@@ -1443,12 +1444,12 @@ label lisa_sorry_gifts:
     $ _ch1 = GetChance(mgg.social, 3)
     $ _ch1_col = GetChanceColor(_ch1)
     $ ch1_vis = str(int(_ch1/10)) + "%"
+    $ sorry_gifts['lisa'].owe = False
     $ txt = {
         0 : _("Правда? Ты всё-таки достал её для меня?! А какую?"),
         1 : _("Правда? Ну ты даёшь! А какую на этот раз?!"),
         2 : _("Правда? Ну давай, показывай, что у тебя на этот раз?!"),
         }[len(sorry_gifts['lisa'].give)]
-    $ sorry_gifts['lisa'].owe = False
     menu:
         Lisa_02 "[txt!t]"
         "Конфеты \"Raffaello\" (16 штук)" if items['raffaello-m'].have:
