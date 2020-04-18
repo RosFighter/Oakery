@@ -635,7 +635,7 @@ translate english ann_dressed_work_f3117b6b:
 translate english ann_dressed_work_2e55a9e3_1:
 
     # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
-    Ann "{b}Аnn:{/b} Max, I'm not dressed. Wait a minute, honey."
+    Ann "{b}Ann:{/b} Max, I'm not dressed. Wait a minute, honey."
 
 # game/events/ann.rpy:242
 translate english ann_dressed_work_f3117b6b_1:
@@ -707,7 +707,7 @@ translate english ann_dressed_work_gift_cc0857da:
 translate english ann_dressed_work_gift_dec66268:
 
     # Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
-    Ann "{b}Аnn:{/b} Wow, it's translucent! Honey, you do realize that your Mom shouldn't wear this in front of her son..."
+    Ann "{b}Ann:{/b} Wow, it's translucent! Honey, you do realize that your Mom shouldn't wear this in front of her son..."
 
 # game/events/ann.rpy:313
 translate english ann_dressed_work_gift_461f061a:
@@ -719,7 +719,7 @@ translate english ann_dressed_work_gift_461f061a:
 translate english ann_dressed_work_gift_0f666c00:
 
     # Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
-    Ann "{b}Аnn:{/b} No, I really like it! It's a wonderful gift! Except, don't you think you're too young to give presents like this?"
+    Ann "{b}Ann:{/b} No, I really like it! It's a wonderful gift! Except, don't you think you're too young to give presents like this?"
 
 # game/events/ann.rpy:315
 translate english ann_dressed_work_gift_00ed580c:
@@ -731,7 +731,7 @@ translate english ann_dressed_work_gift_00ed580c:
 translate english ann_dressed_work_gift_f9e66542:
 
     # Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
-    Ann "{b}Аnn:{/b}Oh, Max, you're embarrassing me, such a revealing gift, to your own mother... But still, I really appreciate it... and once again, thank you so much."
+    Ann "{b}Ann:{/b}Oh, Max, you're embarrassing me, such a revealing gift, to your own mother... But still, I really appreciate it... and once again, thank you so much."
 
 # game/events/ann.rpy:317
 translate english ann_dressed_work_gift_75fcb6dd:
@@ -942,7 +942,7 @@ translate english ann_dressed_shop_gift_cc0857da:
 translate english ann_dressed_shop_gift_dec66268:
 
     # Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
-    Ann "{b}Аnn:{/b} Wow, it's translucent! Honey, you do realize that your Mom shouldn't wear this in front of her son..."
+    Ann "{b}Ann:{/b} Wow, it's translucent! Honey, you do realize that your Mom shouldn't wear this in front of her son..."
 
 # game/events/ann.rpy:452
 translate english ann_dressed_shop_gift_461f061a:
@@ -954,7 +954,7 @@ translate english ann_dressed_shop_gift_461f061a:
 translate english ann_dressed_shop_gift_0f666c00:
 
     # Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
-    Ann "{b}Аnn:{/b} No, I really like it! It's a wonderful gift! Except, don't you think you're too young to give presents like this?"
+    Ann "{b}Ann:{/b} No, I really like it! It's a wonderful gift! Except, don't you think you're too young to give presents like this?"
 
 # game/events/ann.rpy:454
 translate english ann_dressed_shop_gift_00ed580c:
@@ -966,7 +966,7 @@ translate english ann_dressed_shop_gift_00ed580c:
 translate english ann_dressed_shop_gift_f9e66542:
 
     # Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
-    Ann "{b}Аnn:{/b}Oh, Max, you're embarrassing me, such a revealing gift, to your own mother... But still, I really appreciate it... and once again, thank you so much."
+    Ann "{b}Ann:{/b}Oh, Max, you're embarrassing me, such a revealing gift, to your own mother... But still, I really appreciate it... and once again, thank you so much."
 
 # game/events/ann.rpy:456
 translate english ann_dressed_shop_gift_75fcb6dd:

@@ -129,6 +129,7 @@ label Eric_talk_afterdinner:
             Eric_00 "Ну, как хочешь. Надеюсь, в тебе сейчас говорят эмоции, а не здравый смысл. У тебя есть неделя, чтобы передумать. Тогда и поговорим снова и будет ясно, как быть."
             "{i}промолчать{/i}":
                 $ talk_var['empathic'] = 0
+                $ poss['alpha'].OpenStage(0)
                 jump Waiting
 
     label .friend:
@@ -136,6 +137,7 @@ label Eric_talk_afterdinner:
         show Eric meet 01a
         Eric_05 "Я рад, правда. Ты не пожалеешь. Ладно, твоя мама уже идёт, мы поехали. Вернёмся к этому разговору через неделю..."
         Max_04 "Ага..."
+        $ poss['alpha'].OpenStage(0)
         jump Waiting
 
 

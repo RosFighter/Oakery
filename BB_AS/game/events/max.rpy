@@ -541,6 +541,7 @@ label delivery2:
     $ current_room = house[6]
     $ talk_var['courier2'] += 1
     $ DeletingDeliveryTempVar(1) # удалим временные переменные и очистим список доставки
+    $ ChoiceClothes()
     jump AfterWaiting
 
 
@@ -723,6 +724,7 @@ label SearchSpider:
                 $ renpy.scene()
                 $ renpy.show('BG char Max spider-search-01'+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
+                $ poss['spider'].OpenStage(2)
                 $ items['spider'].have = True
             else:
                 Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"
@@ -929,7 +931,7 @@ label return_part_loan:
     menu:
         Max_00 "Сколько я верну сейчас?"
         "$50":
-            $ mgg.credit.part(50)
+            $ mgg.credit_part(50)
         "$100" if mgg.money >= 100 and mgg.credit.debt >= 100:
             $ mgg.credit_part(100)
         "$200" if mgg.money >= 200 and mgg.credit.debt >= 200:

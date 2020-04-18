@@ -453,7 +453,7 @@ screen OnlineShop():
                                                         text_idle_color gui.hover_color
                                                         text_hover_color gui.hover_color
                                                         action NullAction()
-                                                elif items[i].have:
+                                                elif items[i].have and not all([kol_cream < 7, i == 'solar']):
                                                     textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style 'buy_button':
                                                         idle_background Frame('interface button gray', 12, 12)
                                                         hover_background Frame('interface button gray', 12, 12)

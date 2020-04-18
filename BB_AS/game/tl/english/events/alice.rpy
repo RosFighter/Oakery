@@ -1063,7 +1063,7 @@ translate english alice_shower_spider_7e56af7c:
 translate english alice_shower_spider_2b0b0322:
 
     # Alice_15 "А-а-а-а-а!!! Вот чёрт... Охренеть!"
-    Alice_15 "А-а-а-а-а!!! Oh, shit...No!"
+    Alice_15 "A-a-a-a-a!!! Oh, shit...No!"
 
 # game/events/alice.rpy:278
 translate english alice_shower_spider_08cd39c6:
@@ -1283,7 +1283,7 @@ translate english strings:
 translate english alice_shower_spider_3f8fc33f:
 
     # Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
-    Alice "{b}Аlice:{/b} А-а-а-а-а!!! Oh, shit... Fucking hell!"
+    Alice "{b}Alice:{/b} A-a-a-a-a!!! Oh, shit... Fucking hell!"
 
 # game/events/alice.rpy:494
 translate english alice_dressed_shop_1aff9253:

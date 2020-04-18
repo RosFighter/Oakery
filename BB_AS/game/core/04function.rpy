@@ -67,185 +67,6 @@ init python:
         return (day*24 + int(h2))*60 + int(m2) >= (int(d1)*24 + int(h1))*60 + int(m1)
 
 
-    # # добавляет в расписание запись или блок связанных записей
-    # def AddSchedRec(plan, *add_rec):
-    #     new_plan = []
-    #     if type(add_rec[0]) == list:
-    #         zap = add_rec[0][0]
-    #     else:
-    #         zap = add_rec[0]
-    #     for rec in plan:
-    #         edited = False
-    #         if (rec.ts <= zap.ts < rec.te) or (zap.ts <= rec.ts < zap.te): # время записей пересекается
-    #             for d in zap.lod:  # перебираем кортеж дней
-    #                 if d in rec.lod:      # если день входит в кортеж записей, запись нужно изменять
-    #                     edited = True
-    #                     break
-    #         if edited:  # в новый план запись вставляется в измененном виде
-    #             # сначала отберем дни, незатронутые изменениями
-    #             list_of_day = tuple(d for d in rec.lod if d not in zap.lod)
-    #             if len(list_of_day):  # есть дни, не затронутые изменениями
-    #                 new_plan.append(Schedule(list_of_day, rec.ts, rec.te, rec.name, rec.desc, rec.loc, rec.room, rec.label,
-    #                                          rec.krat, rec.shift, rec.weekstart, rec.variable, rec.enabletalk, rec.talklabel,
-    #                                          rec.glow))
-    #             list_of_day = tuple(d for d in rec.lod if d in zap.lod)
-    #             if rec.ts < zap.ts < rec.te and len(list_of_day):  # часть перед новой записью
-    #                 new_plan.append(Schedule(list_of_day, rec.ts, add_time(zap.ts, -1), rec.name, rec.desc, rec.loc,
-    #                                          rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
-    #                                          rec.enabletalk, rec.talklabel, rec.glow))
-    #             if rec.ts < zap.te < rec.te and len(list_of_day):  # часть после новой записи
-    #                 new_plan.append(Schedule(list_of_day, add_time(zap.te), rec.te, rec.name, rec.desc, rec.loc,
-    #                                          rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
-    #                                          rec.enabletalk, rec.talklabel, rec.glow))
-    #         else:  # копируем запись в новый план как есть
-    #             new_plan.append(rec)
-    #
-    #     for rec in add_rec:
-    #         if type(rec) == list:
-    #             new_plan.extend(rec)
-    #         else:
-    #             new_plan.append(rec)
-    #     new_plan.sort(key=SortByTime)
-    #     plan.clear()
-    #     plan.extend(new_plan)
-
-
-    # # добавляет в расписание список записей
-    # def AddSchedule(plan, *added_plan):
-    #     #переберем новый список в поиске записей совпадающих по дням недели и времени, но различающихся условием или сдвигом недели
-    #     new_list = []
-    #     block = []
-    #     for pl in added_plan:
-    #         nayden = False
-    #         for nl in new_list:
-    #             if pl.lod == nl.lod and pl.ts == nl.ts and pl.te == nl.te:
-    #                 nayden = True
-    #                 block.append([nl, pl])
-    #                 new_list.remove(nl)
-    #         if not nayden:
-    #             for bl in block:
-    #                 if bl[0].lod == pl.lod and bl[0].ts == pl.ts and bl[0].te == pl.te:
-    #                     nayden = True
-    #                     bl.append(pl)
-    #         if not nayden:
-    #             new_list.append(pl)
-    #
-    #     # добавим отдельные записи
-    #     for nl in new_list:
-    #         AddSchedRec(plan, nl)
-    #
-    #     # добавим блок связанных записей
-    #     for bl in block:
-    #         AddSchedRec(plan, bl)
-
-
-    # # Возвращает запись с текущим действием персонажа
-    # #     Аргументы:
-    # #     schedule - список записей с расписанием,
-    # #     day      - день (целое),
-    # #     tm     - время в формате 'hh:mm',
-    # #     week     - номер недели (целое)
-    # def GetPlan(schedule, day, tm):
-    #     h, m = tm.split(':')  # нормализуем время на всякий случай
-    #     tm = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
-    #     day += 2  # в игре отсчет начинается со среды и дня под номером 1
-    #     rez = []
-    #     for sh in schedule:
-    #         if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
-    #             (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
-    #                 rez.append(sh)
-    #
-    #     if len(rez) > 1:
-    #         print("ошибочка-с...", rez)
-    #     elif len(rez) == 0:
-    #         return None
-    #     else:
-    #         return rez[0]
-
-
-    # # Возвращает список записей с текущим действием персонажа
-    # # Аргументы:
-    # # schedule - список записей с расписанием,
-    # # day      - день (целое),
-    # # tm     - время в формате 'hh:mm',
-    # # week     - номер недели (целое)
-    # def GetPlanList(schedule, day, tm): # только для тестирования расписания
-    #     h, m = tm.split(':')  # нормализуем время на всякий случай
-    #     tm = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
-    #     day += 2  # в игре отсчет начинается со среды и дня под номером 1
-    #     rez = []
-    #     for sh in schedule:
-    #         if ((sh.ts <= tm <= sh.te) and (day % 7 in sh.lod) and (day / 7 >= sh.weekstart) and
-    #             (((day // 7) - sh.weekstart) % sh.krat == sh.shift) and (eval(sh.variable))):
-    #                 rez.append(sh)
-    #
-    #     return rez
-    #
-    #
-    # # функция для разработчика, проверяет расписание на перехлесты
-    # def VerifySchedule(schedule):
-    #     max_krat = 1
-    #     max_week = 0
-    #     for sh in schedule:  # определяем неделю старта теста и максимальную длительность в неделях (кратность)
-    #         max_krat = max(max_krat, sh.krat)
-    #         max_week = max(max_week, sh.weekstart)
-    #
-    #     errors = set()
-    #     skipped = set()
-    #
-    #     kolve = (max_week + max_krat) * 7 * 2
-    #
-    #     for day in range(max_week*7, kolve):  # удваиваем диаппазон на всякий случай
-    #         start_skip = end_skip = ''
-    #         for hour in range(24):
-    #             for minute in range(60):
-    #                 tm = '{0}:{1}'.format(('0' + str(hour))[-2:], ('0' + str(minute))[-2:])
-    #                 temp_list = GetPlanList(schedule, day, tm)
-    #
-    #                 if len(temp_list) > 1:
-    #                     for tl in temp_list:
-    #                         errors.add(tl)
-    #                 elif len(temp_list) == 0:
-    #                     if start_skip == '':
-    #                         start_skip = tm
-    #                     elif end_skip == '' or add_time(end_skip) == tm:
-    #                         end_skip = tm
-    #                 elif end_skip != '':
-    #                     skipped.add(((day % 7,), start_skip, end_skip))
-    #                     start_skip = end_skip = ''
-    #
-    #     skip_list = []
-    #     skipped = list(skipped)
-    #     while len(skipped):
-    #         start_skip = end_skip = ''
-    #         lod = []
-    #         for skip in skipped:
-    #             if not start_skip:
-    #                 start_skip = skip[1]
-    #                 end_skip = skip[2]
-    #                 lod.extend(skip[0])
-    #             elif start_skip == skip[1] and end_skip == skip[2]:
-    #                 lod.extend(skip[0])
-    #
-    #         lod.sort()
-    #         skip_list.append((lod[:], start_skip, end_skip))
-    #         i = 0
-    #         while i < len(skipped):
-    #             if start_skip == skipped[i][1] and end_skip == skipped[i][2]:
-    #                 skipped.pop(i)
-    #             else:
-    #                 i += 1
-    #
-    #     if len(skip_list):
-    #         print("Пропущено в расписании", skip_list)
-    #     else:
-    #         print("Пропусков не обнаружено")
-    #     if len(errors):
-    #         print(errors)
-    #     else:
-    #         print("Ошибок не обнаружено")
-
-
     # функция назначает фон локациям согласно текущего времени
     # и распределяет персонажей по локациям согласно расписанию """
     def Distribution():
@@ -699,8 +520,6 @@ init python:
         else:
             mgg.dress = 'a'
         for char in chars:
-            # prev_shed = GetPlan(eval('plan_'+char), prevday, prevtime)
-            # cur_shed  = GetPlan(eval('plan_'+char), day, tm)
             prev_shed = chars[char].get_plan(prevday, prevtime)
             cur_shed  = chars[char].get_plan()
             if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
@@ -710,14 +529,12 @@ init python:
                 # ПРОВЕРИМ НЕОБХОДИМОСТЬ ОбНОВЛЕНИЯ РАНДОМНОЙ ОДЕЖДЫ (временный блок)
                 if prevtime < '04:00' <= tm:
                     cloth_type['ann']['cooking']  = renpy.random.choice(['a', 'b'])
-                    # mgg.dress = renpy.random.choice(['a', 'b'])
 
                 elif prevtime < '16:00' <= tm and day > 1:
                     cloth_type['ann']['cooking'] = 'b'
 
                 elif prevtime < '22:00' <= tm and day > 1:
                     cloth_type['ann']['rest']   = renpy.random.choice(['a', 'b'])
-                    # cloth_type['lisa']['sleep'] = renpy.random.choice(['a', 'b'])
                     cloth_type['lisa']['sleep'] = 'b' if poss['sg'].stn > 2 else 'a'
                 elif prevtime > tm:  # полночь
                     cloth_type['ann']['sleep'] = renpy.random.choice(['a', 'b']) if 'nightie' in ann.gifts else 'a'

@@ -1131,6 +1131,7 @@ label gift_pajamas:
         Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
         Max_14 "Ой! Я понял... Больше не буду!"
         Alice_02 "Вот и молодец! Гуляй..."
+        $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif flags['alice_hugs'] > 3: # после 3-ей сладости были родственные обнимашки
         $ poss['risk'].OpenStage(8)
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
@@ -1252,6 +1253,7 @@ label gift_pajamas:
         Alice_02 "Подглядывать или что-нибудь мне дарить?!"
         Max_02 "Второе, конечно!"
         Alice_05 "Ну да, конечно... Иди давай."
+        $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif flags['alice_hugs'] > 1: # после 3-ей сладости было выкручивание ушей
         menu:
             Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
@@ -1270,6 +1272,7 @@ label gift_pajamas:
                     Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
                     Max_14 "Ой! Я понял... Больше не буду!"
                     Alice_02 "Вот и молодец! Гуляй..."
+        $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     else:  # после 3-ей сладости было наказание
         Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
         Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
@@ -1281,6 +1284,7 @@ label gift_pajamas:
         Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
         Max_14 "Ой! Я понял... Больше не буду!"
         Alice_02 "Вот и молодец! Гуляй..."
+        $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
 
     $ AddRelMood("alice", 100, 200)
     $ items['pajamas'].have = False
@@ -1316,7 +1320,11 @@ label Alice_solar:
         "Может быть, тебя намазать кремом для загара?" if not items['solar'].have:  # нет крема
                 Alice_13 "Может быть. Вот только у меня его нет..."
                 Max_00 "Ясно. Ну, в другой раз значит..."
-                $ items['solar'].InShop = True
+                if not any([items['max-a'].InShop, items['max-a'].have]):
+                    Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
+                    $ items['solar'].InShop = True
+                    $ items['max-a'].InShop = True
+                    $ notify_list.append(_("В интернет-магазине доступен новый товар."))
                 jump AfterWaiting
         "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and any([mgg.dress == 'a', kol_cream < 2]):
             if mgg.dress == 'a':  # Максу нужна одежда
@@ -1351,7 +1359,7 @@ label Alice_solar:
             scene BG char Alice sun-alone 04
             $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
             Max_01 "{i}Теперь плечи и совсем немного шею...{/i}" nointeract
-            $ __res = renpy.display_menu([("{i}наносить крем молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            $ __res = renpy.display_menu([(_("{i}наносить крем молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
                 $ _talk_top = True
                 call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless
@@ -1360,8 +1368,21 @@ label Alice_solar:
             $ renpy.show('BG char Alice sun-alone '+__r1)
             $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
             Max_03 "{i}И закончим, хорошенько намазав всю её спину...{/i}"
+            scene BG char Alice sun-alone 01
+            if talk_var['sun_oiled'] == 2:
+                show Alice sun-alone 01a
+            else:
+                show Alice sun-alone 01
             Alice_03 "Спасибо, Макс. Так намного лучше..."
             Max_04 "Обращайся, если что..."
+            if kol_cream < 2:
+                Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
+                if kol_cream == 0:
+                    $ items['solar'].have = False
+                    $ items['solar'].InShop = True
+            elif kol_cream < 7:
+                Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
+                $ items['solar'].InShop = True
         "{i}сделать массаж с кремом{/i}" if kol_cream >= 7:  # попытка сделать массаж с кремом
             $ _massaged = []
             $ _talk_top = False
@@ -1512,7 +1533,7 @@ label massage_sunscreen:
         $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
         Max_04 "{i}Хорошенько разомнём плечи и немного шею...{/i}" nointeract
         if not _talk_top:
-            $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            $ __res = renpy.display_menu([(_("{i}массировать молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
                 $ _talk_top = True
                 call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless_1
@@ -1559,7 +1580,7 @@ label massage_sunscreen:
         $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
         Max_05 "{i}Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно.{/i}" nointeract
         if not _talk_top:
-            $ __res = renpy.display_menu([("{i}массировать молча{/i}", 0), ("А тебе нравится, что следы от лямок остаются?", 1)])
+            $ __res = renpy.display_menu([(_("{i}массировать молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
                 $ _talk_top = True
                 call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless_2
@@ -1679,8 +1700,10 @@ label massage_sunscreen:
             Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
             if kol_cream == 0:
                 $ items['solar'].have = False
+                $ items['solar'].InShop = True
         elif kol_cream < 7:
             Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
+            $ items['solar'].InShop = True
 
         jump Waiting
 

@@ -1154,3 +1154,19 @@ translate english strings:
     # game/core/03variables.rpy:338
     old "Алиса согласилась пустить меня к себе в комнату, пока примеряла пижаму! Конечно, она просила, чтобы я не подглядывал, хотя прекрасно знала, что я буду... И угрозы её стали какими-то шуточными. Интересно, к чему это приведёт? Так что подглядывать полезно, если правильно извиниться."
     new "Alice agreed to let me into her room while she tried on her pajamas! Of course, she asked me not to peek, even though she knew I would... And her threats became something of a joke. I wonder what this will lead to? So peeking is useful if you apologize correctly."
+# TODO: Translation updated at 2020-04-18 22:48
+
+translate english strings:
+
+    # game/core/03variables.rpy:258
+    old "Да, и похоже о своём мальчике Лиза разговаривает только, когда у неё хорошее настроение... \n\n{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
+    new "Oh, and it looks like Lisa only talks about him when she's in a good mood... \n\n{i}{b}Attention:{/b} You've reached the end of this opportunity in the current version of the game.{/i}"
+
+    # game/core/03variables.rpy:303
+    old "Правда, Лиза слегка на меня обиделась, но это я переживу. Подарю ей что-нибудь вкусненькое и она оттает... \n\n{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
+    new "It's true Lisa's a little offended with me, but I'll get over it. I'll give her something delicious and she'll thaw... \n\n{i}{b}Attention:{/b} You've reached the end of this opportunity in the current version of the game.{/i}"
+
+    # game/core/03variables.rpy:303
+    old "Сомневаюсь, что теперь получится её подставить, уж слишком большое недоверие она ко мне испытывает. \n\n{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
+    new "I doubt it'll be possible to intentionally make mistakes now, she's too distrustful of me. \n\n{i}{b}Attention:{/b} You've reached the end of this opportunity in the current version of the game.{/i}"
+

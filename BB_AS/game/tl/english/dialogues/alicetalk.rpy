@@ -5840,3 +5840,37 @@ translate english strings:
     old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
     new "No, I just wanted to see how your pajamas would look...  {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
+# TODO: Translation updated at 2020-04-18 22:48
+
+# game/dialogues/alicetalk.rpy:1324
+translate english Alice_solar_6edc5f35:
+
+    # Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:1379
+translate english Alice_solar_type_choice_1a15b8da:
+
+    # Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
+    Max_10 "{i}Well, i'm out of sunscreen. Need to buy more.{/i}"
+
+# game/dialogues/alicetalk.rpy:1384
+translate english Alice_solar_type_choice_2c4d5f44:
+
+    # Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
+    Max_08 "{i}There's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance.{/i}"
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:1362
+    old "{i}наносить крем молча{/i}"
+    new "{i}{/i}"
+
+    # game/dialogues/alicetalk.rpy:1362
+    old "А тебе нравится, что следы от лямок остаются?"
+    new "Do you want to have tan lines from the straps?"
+
+    # game/dialogues/alicetalk.rpy:1536
+    old "{i}массировать молча{/i}"
+    new ""
+
