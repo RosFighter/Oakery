@@ -5556,3 +5556,65 @@ translate english Lisa_sorry_0573955a:
     # Lisa_00 "Пожалуй... Времени у тебя - три дня. И чтобы успел до ужина!"
     Lisa_00 "I guess... You've got three days. And make sure you have it before dinner!"
 
+# game/dialogues/lisatalk.rpy:1450
+translate english conversation_after_dinner_eca125fd_2:
+
+    # Lisa_13 "Ну Макс! Я не знаю, чем тебя заинтересовать... Денег у меня нет, я не зарабатываю. У меня вообще ничего нет..."
+    Lisa_13 "Come on, Max! I don't know what you're interested in... I don't have any money, I don't make money. I don't have anything at all..."
+
+# game/dialogues/lisatalk.rpy:1452
+translate english conversation_after_dinner_9dbd68dc_2:
+
+    # Max_04 "Я бы так не сказал, Лиза. Если бы ты спала, например, без своих штанов, в трусиках, то мне было бы приятно это видеть... Как мне кажется – это хорошая награда за хорошие оценки."
+    Max_04 "I wouldn't say that, Lisa. If you slept, for example, without your pants, just your panties... I think that'd be a small price to pay for good grades."
+
+# game/dialogues/lisatalk.rpy:1454
+translate english conversation_after_dinner_24fefec4_2:
+
+    # Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
+    Lisa_09 "What do you mean? I'm your sister, Max. It doesn't feel right..."
+
+# game/dialogues/lisatalk.rpy:1456
+translate english conversation_after_dinner_e6f0ed50_2:
+
+    # Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
+    Max_07 "Isn't it hot for you to sleep in your pants? I'm sleeping in my underwear and I'm fine."
+
+# game/dialogues/lisatalk.rpy:1462
+translate english conversation_after_dinner_fe28c238_2:
+
+    # Lisa_03 "[_m1_lisatalk__tmp!t]"
+    Lisa_03 "[_m1_lisatalk__tmp!t]"
+
+# game/dialogues/lisatalk.rpy:1463
+translate english conversation_after_dinner_02fdf5bb_2:
+
+    # Max_03 "Ну для начала точно придаст, а там посмотрим..."
+    Max_03 "Well, he'll give it to you first, and then we'll see..."
+
+# game/dialogues/lisatalk.rpy:1464
+translate english conversation_after_dinner_62a423d2_2:
+
+    # Lisa_02 "Это мы сперва посмотрим, какие у меня будут оценки!"
+    Lisa_02 "We'll see what my grades are first!"
+
+# game/dialogues/lisatalk.rpy:1465
+translate english conversation_after_dinner_acc8a38c_3:
+
+    # Max_01 "Договорились."
+    Max_01 "It's a deal."
+
+# TODO: Translation updated at 2020-04-20 10:43
+
+# game/dialogues/lisatalk.rpy:1446
+translate english conversation_after_dinner_a35ec1e4:
+
+    # Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получаю уже вторую двойку..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1448
+translate english conversation_after_dinner_e88291ac:
+
+    # Max_08 "Наверно, я просто был не внимателен… Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
+    Max_08 ""
+
