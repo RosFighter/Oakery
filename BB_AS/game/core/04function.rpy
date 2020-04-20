@@ -797,6 +797,26 @@ init python:
             pun_chance = 0  # Макс помогал правильно
         elif punlisa[0][0] == 1:
             pun_chance = 1000  # Макс сделал ошибку
+        elif poss['sg'].stn == 2 and talk_var['truehelp']>=6:  # Макс на "хорошей" ветке и помог 6 и более раз
+            grow = 100
+            mind = 250
+            if punlisa[0][0] == 2:  # если Макс просил об услуге неудачно, базовый шанс двойки 30% (сердитая Лиза менее внимательна, чем обычно)
+                pun_chance = 300.0
+            else:
+                pun_chance = 100.0
+            for d in range(1, len(punlisa)):
+                if punlisa[d][3]:
+                    pun_chance -= mind
+                    mind = 250 # сбрасываем здравомыслие на исходную
+                if punlisa[d][0] > 2:
+                    pun_chance -= 300  # Макс помог Лизе, шанс наказания уменьшается на 15%
+                    grow = 100
+                    if d < 7:
+                        break
+                elif not punlisa[d][0]:
+                    pun_chance += grow
+                grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
+                mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше усердие Лизы
         else:  # Макс не помогал с домашкой накануне
             help_count = 0
             grow = 50

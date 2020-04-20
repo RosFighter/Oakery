@@ -1170,3 +1170,11 @@ translate english strings:
     old "Сомневаюсь, что теперь получится её подставить, уж слишком большое недоверие она ко мне испытывает. \n\n{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
     new "I doubt it'll be possible to intentionally make mistakes now, she's too distrustful of me. \n\n{i}{b}Attention:{/b} You've reached the end of this opportunity in the current version of the game.{/i}"
 
+# TODO: Translation updated at 2020-04-20 10:37
+
+translate english strings:
+
+    # game/core/03variables.rpy:303
+    old "Я помогал Лизе с уроками какое-то время, причём безвозмездно, но это стало довольно скучным делом и я намеренно стал делать ошибки так, чтобы ей ставили двойки и наказывали... И вот, после очередной двойки и наказания от мамы, она обратилась ко мне за помощью. Я согласился, но с условием, что она будет спать только в футболке и трусиках. И думаю, что мне удастся её ещё на что-нибудь раскрутить..."
+    new ""
+

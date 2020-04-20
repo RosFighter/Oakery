@@ -5,10 +5,13 @@ label after_dinner:
 
     if len(punlisa)> 0 and punlisa[0][3] == 1:
         # Лизу наказали
-        if punlisa[0][0] == 1 and ColumnSum(punlisa, 4) >= 1000:
+        if all([punlisa[0][0] == 1, len(punlisa) >= 7, poss['sg'].stn == 2, ColumnSum(punlisa, 1, 7) == 2], talk_var['truehelp']>=6):
+            # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
+            call conversation_after_dinner(5) from _call_conversation_after_dinner_4
+        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4) >= 1000, poss['sg'].stn] > 2):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4) from _call_conversation_after_dinner
-        elif len(punlisa) >= 7 and ColumnSum(punlisa, 0, 7) == 0 and ('lisa.ad' not in dcv or dcv['lisa.ad'].done):
+        elif all([len(punlisa) >= 7, ColumnSum(punlisa, 0, 7) == 0, ('lisa.ad' not in dcv or dcv['lisa.ad'].done)]):
             # если Макс не помогал Лизе семь раз и разговора после ужина не было больше недели
             if talk_var['help.hw'] == 0 and poss['sg'].stn <= 2:
                 # совсем не помогал
