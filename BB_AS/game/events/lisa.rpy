@@ -111,7 +111,7 @@ label lisa_shower:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
-            "{i}немного пошуметь{/i}" if 1 < len(sorry_gifts['lisa'].give) <= 4:
+            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['lisa'].give) < 4:
                 jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping

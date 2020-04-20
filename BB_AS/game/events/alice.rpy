@@ -267,7 +267,7 @@ label alice_shower:
             Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
             "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
                 jump .closer_peepeng
-            "{i}немного пошуметь{/i}" if 1 < len(sorry_gifts['alice'].give) <= 4:
+            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['alice'].give) < 4:
                 jump .pinded
             "{i}запустить паука к Алисе{/i}" if items['spider'].have:
                 jump .spider
