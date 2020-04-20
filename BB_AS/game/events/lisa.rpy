@@ -131,7 +131,7 @@ label lisa_shower:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
                 Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-        elif RandomChance(_chance) or sorry_gifts['lisa'].give > 3:
+        elif RandomChance(_chance) or len(sorry_gifts['lisa'].give) > 3:
             $ peeping['lisa_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))

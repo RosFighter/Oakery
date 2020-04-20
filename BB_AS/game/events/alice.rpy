@@ -373,7 +373,7 @@ label alice_shower:
             else:
                 Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
             jump .end
-        elif RandomChance(_chance) or sorry_gifts['alice'].give > 3:
+        elif RandomChance(_chance) or len(sorry_gifts['alice'].give) > 3:
             $ peeping['alice_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
