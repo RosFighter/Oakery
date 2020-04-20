@@ -1176,5 +1176,5 @@ translate english strings:
 
     # game/core/03variables.rpy:303
     old "Я помогал Лизе с уроками какое-то время, причём безвозмездно, но это стало довольно скучным делом и я намеренно стал делать ошибки так, чтобы ей ставили двойки и наказывали... И вот, после очередной двойки и наказания от мамы, она обратилась ко мне за помощью. Я согласился, но с условием, что она будет спать только в футболке и трусиках. И думаю, что мне удастся её ещё на что-нибудь раскрутить..."
-    new ""
+    new "I helped Lisa with her homework for a while, and for free, but it got pretty boring and I deliberately made mistakes so that she would get a D and get punished... And so, after another F and a punishment from Mom, she came to me for help. I agreed, but on the condition that she would only sleep in her T-shirt and panties. And I think I can get her to do something else..."
 

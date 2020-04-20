@@ -5610,11 +5610,11 @@ translate english conversation_after_dinner_acc8a38c_3:
 translate english conversation_after_dinner_a35ec1e4:
 
     # Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получаю уже вторую двойку..."
-    Lisa_09 ""
+    Lisa_09 "Max, what's wrong with you? You were so good at helping me with my lessons... Now I'm getting my second D..."
 
 # game/dialogues/lisatalk.rpy:1448
 translate english conversation_after_dinner_e88291ac:
 
     # Max_08 "Наверно, я просто был не внимателен… Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
-    Max_08 ""
+    Max_08 "I guess I just wasn't paying attention... I need to have some incentive to do this! Can you help me out?"
 
