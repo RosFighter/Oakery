@@ -193,7 +193,9 @@ label eric_ann_tv:
                 "Конечно, мам! {i}(спрятаться){/i}":
                     scene BG tv-watch-01
         "{i}уйти{/i}":
-            jump .end
+            $ spent_time += 10
+            $ current_room = house[0]
+            jump Waiting
 
     $ tv_scene = renpy.random.choice(['bj', 'hj']) if flags['ae.tv.hj'] > 0 else 'hj'
 

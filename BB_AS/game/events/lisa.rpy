@@ -101,7 +101,7 @@ label lisa_shower:
         $ mgg.stealth += 0.03
         $ __ran1 = renpy.random.randint(1, 4)
 
-        $ _chance = GetChance(mgg.stealth, 3)
+        $ _chance = GetChance(mgg.stealth, 3, 900)
         $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
         $ renpy.scene()

@@ -126,7 +126,7 @@ label NewDay:
     $ random_loc_ab = renpy.random.choice(['a', 'b'])
     $ random_sigloc = renpy.random.choice(['n', 't'])
 
-    if peeping['ann_eric_tv']:
+    if peeping['ann_eric_tv'] and flags['ae.tv.hj'] > 0:
         $ ae_tv_order.pop(0)
         if not ae_tv_order:
             $ ae_tv_order = ['01', '02', '03', '04', '05', '06']
@@ -161,6 +161,7 @@ label NewDay:
                 0,  # подозрительность
                 ])
             $ del punlisa[10:]
+
     if poss['smoke'].stn > 1:  # Макс видел курящую Алису
         $ punalice.insert(0, [  # вставляем в начало
             0,  # Макс шантажировал Алису
@@ -170,13 +171,16 @@ label NewDay:
             0,  # подозрительность
             ])
         $ del punalice[14:]
+
     $ flags['lisa_hw'] = False
 
     if mgg.credit.debt > 0:        # если кредит не погашен
         $ mgg.credit.left -= 1       # уменьшим счетчик дней
         if mgg.credit.left == 0:   # если счетчик дней кончился
             $ mgg.credit.charge()    # начислим штраф
+
     $ talk_var['sun_oiled'] = 0  # Алиce можно намазать кремом
+
     if 'pajamas' in alice.gifts:  # Если у Алисы есть пижама, то каждые 3 дня она меняет тип одежды
         $ cloth_type['alice']['day.left'] -= 1
         if cloth_type['alice']['day.left'] == 0:
