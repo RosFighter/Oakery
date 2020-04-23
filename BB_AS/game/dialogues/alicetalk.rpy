@@ -1112,7 +1112,7 @@ label gift_book:
 
 
 label gift_pajamas:
-    $ _ch1 = GetChance(mgg.social, 3)
+    $ _ch1 = GetChance(mgg.social, 3, 900)
     $ _ch1_col = GetChanceColor(_ch1)
     $ ch1_vis = str(int(_ch1/10)) + "%"
     # $ __plan_name = GetPlan(plan_alice, day, tm).name
@@ -1670,7 +1670,7 @@ label massage_sunscreen:
         jump .end
 
     label .talk_topless:
-        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
         menu:
@@ -1713,7 +1713,7 @@ label alice_sorry_gifts:
         Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
         return
 
-    $ _ch1 = GetChance(mgg.social, 3)
+    $ _ch1 = GetChance(mgg.social, 3, 900)
     $ _ch1_col = GetChanceColor(_ch1)
     $ ch1_vis = str(int(_ch1/10)) + "%"
     $ txt = {

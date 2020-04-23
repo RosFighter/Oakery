@@ -1015,7 +1015,7 @@ label Lisa_HomeWork:
             jump Waiting
 
     label .make_bag:
-        $ _chance = GetChance(mgg.social, 4)
+        $ _chance = GetChance(mgg.social, 4, 900)
         $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
         menu:
@@ -1476,7 +1476,7 @@ label lisa_sorry_gifts:
         Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
         return
 
-    $ _ch1 = GetChance(mgg.social, 3)
+    $ _ch1 = GetChance(mgg.social, 3, 900)
     $ _ch1_col = GetChanceColor(_ch1)
     $ ch1_vis = str(int(_ch1/10)) + "%"
     $ sorry_gifts['lisa'].owe = False
@@ -1967,7 +1967,7 @@ label lisa_sorry_gifts:
                 if __give[-1:] == 'm':
                     Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."   #если сладость маленькая
                 else:
-                    $ _ch1 = GetChance(mgg.social, 6)
+                    $ _ch1 = GetChance(mgg.social, 6, 900)
                     $ _ch1_col = GetChanceColor(_ch1)
                     $ ch1_vis = str(int(_ch1/10)) + "%"
                     Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"   #если сладость большая

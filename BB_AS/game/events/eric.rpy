@@ -370,7 +370,7 @@ label eric_ann_fucking:
 
     $ peeping['ann_eric_sex1'] = 1
 
-    $ _chance = GetChance(mgg.stealth, 3)
+    $ _chance = GetChance(mgg.stealth, 3, 900)
     $ _chance_color = GetChanceColor(_chance)
     $ ch_vis = str(int(_chance/10)) + "%"
     menu:
@@ -578,7 +578,7 @@ label eric_ann_shower:
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
         $ __r1 = renpy.random.choice(['01', '02', '03'])
-        $ _chance = GetChance(mgg.stealth, 3)
+        $ _chance = GetChance(mgg.stealth, 3, 900)
         $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
         $ renpy.scene()

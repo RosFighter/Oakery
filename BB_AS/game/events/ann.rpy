@@ -109,7 +109,7 @@ label ann_shower:
         $ mgg.stealth += 0.03
         $ __ran1 = renpy.random.randint(1, 4)
 
-        $ _chance = GetChance(mgg.stealth, 3)
+        $ _chance = GetChance(mgg.stealth, 3, 900)
         $ _chance_color = GetChanceColor(_chance)
         $ ch_vis = str(int(_chance/10)) + "%"
         scene image ('Ann shower 0'+str(__ran1))
@@ -163,7 +163,7 @@ label ann_shower:
 
     label .serious_talk:
         $ spent_time += 10
-        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
         $ punreason[2] = 1
@@ -312,7 +312,7 @@ label ann_dressed_work:
         $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-01'+mgg.dress)
         Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
         $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-02'+mgg.dress)
-        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
         $ spent_time += 10
@@ -461,7 +461,7 @@ label ann_dressed_shop:
         $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-01'+mgg.dress)
         Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
         $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-02'+mgg.dress)
-        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
         $ spent_time += 10

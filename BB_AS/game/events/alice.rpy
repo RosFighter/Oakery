@@ -337,7 +337,7 @@ label alice_shower:
                 show Alice spider-shower 04b
                 $ renpy.show('Max spider-bathroom 06'+mgg.dress)
                 Max_08 "Ой! Извини, я..."
-                $ _ch1 = GetChance(mgg.social, 3)
+                $ _ch1 = GetChance(mgg.social, 3, 900)
                 $ _ch1_color = GetChanceColor(_ch1)
                 $ ch1_vis = str(int(_ch1/10)) + "%"
                 menu:
@@ -710,13 +710,13 @@ label spider_in_bed:
         $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['01', '02', '03'])+__suf)
         show Max spider-night 03-01
 
-        $ _ch1 = GetChance(mgg.social, 5)
+        $ _ch1 = GetChance(mgg.social, 5, 900)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
-        $ _ch2 = GetChance(mgg.social, 3)
+        $ _ch2 = GetChance(mgg.social, 3, 900)
         $ _ch2_color = GetChanceColor(_ch2)
         $ ch2_vis = str(int(_ch2/10)) + "%"
-        $ _ch3 = GetChance(mgg.social, 2)
+        $ _ch3 = GetChance(mgg.social, 2, 900)
         $ _ch3_color = GetChanceColor(_ch3)
         $ ch3_vis = str(int(_ch3/10)) + "%"
 
@@ -843,7 +843,7 @@ label spider_in_bed:
             $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06']))
         else:
             $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03']))
-        $ _ch1 = GetChance(mgg.social, 3)
+        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ _ch1_color = GetChanceColor(_ch1)
         $ ch1_vis = str(int(_ch1/10)) + "%"
         menu:
