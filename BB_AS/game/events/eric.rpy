@@ -370,12 +370,10 @@ label eric_ann_fucking:
 
     $ peeping['ann_eric_sex1'] = 1
 
-    $ _chance = GetChance(mgg.stealth, 3, 900)
-    $ _chance_color = GetChanceColor(_chance)
-    $ ch_vis = str(int(_chance/10)) + "%"
+    $ _ch1 = GetChance(mgg.stealth, 3, 900)
     menu:
         Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
             pass
         "{i}уйти{/i}":
             $ current_room = house[1]
@@ -396,7 +394,7 @@ label eric_ann_fucking:
     else:
         $ renpy.show('FG ann&eric-voyeur-01')
 
-    if RandomChance(_chance):
+    if RandomChance(_ch1.ch):
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
         elif fuck_scene == 2:
@@ -502,6 +500,7 @@ label eric_ann_shower:
             jump .ladder
         "{i}уйти{/i}":
             return
+
     label .ladder:
         $ talk_var['ae.ladd'] += 1
         $ spent_time += 20
@@ -578,18 +577,69 @@ label eric_ann_shower:
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
         $ __r1 = renpy.random.choice(['01', '02', '03'])
-        $ _chance = GetChance(mgg.stealth, 3, 900)
-        $ _chance_color = GetChanceColor(_chance)
-        $ ch_vis = str(int(_chance/10)) + "%"
+        $ _ch1 = GetChance(mgg.stealth, 3, 900)
+        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         $ renpy.scene()
         $ renpy.show('Eric shower '+ __r1)
         $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..."
-            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
-                pass
+            "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
+                jump .closer_peeping
+            "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
+                jump .alt_peepeng
             "{i}уйти{/i}":
                 jump Waiting
+    label .alt_peepeng:
+        if not RandomChance(_ch2.ch):
+            jump .not_luck
+        $ spent_time += 10
+        if __r1 == '01':
+            $ __r2 = renpy.random.choice(['01', '02', '03'])
+        elif __r1 == '02':
+            $ __r2 = renpy.random.choice(['05', '06'])
+        else:
+            $ __r2 = renpy.random.choice(['04', '07'])
+        if not RandomChance(_ch1.ch):
+            jump .not_luck
+        $ mgg.stealth += 0.2
+        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ ann.dress_inf = '00a'
+        scene BG shower-alt
+        $ renpy.show('Max shower-alt 01'+mgg.dress)
+        $ renpy.show('Eric shower-alt '+str(__r2))
+        show FG shower-water
+        if __r2 == '01':   # минет 1
+            Max_10 "[undetect!t]Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..." nointeract
+        elif __r2 == '02':   # минет 2
+            Max_09 "[undetect!t]Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!" nointeract
+        elif __r2 in ['03', '04']:   # дрочка
+            Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
+        elif __r2 == '05':   # секс лицом к лицу
+            Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
+        else:    # секс сзади
+            Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
+        $ rez = renpy.display_menu([(_("{i}смотреть до конца{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
+        if rez == 'exit':
+            $ current_room = house[6]
+            jump Waiting
+
+        $ spent_time += 10
+        $ renpy.show('Eric shower-alt '+str(__r2)+'a')
+        if __r2 in ['01', '02']:   # минет
+            Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!" nointeract
+        elif __r2 in ['03', '04']:   # дрочка
+            Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
+        elif __r2 == '05':   # секс лицом к лицу
+            Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
+        else:    # секс сзади
+            Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
+        $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
+        $ current_room = house[6]
+        jump Waiting
+
+
+    label .closer_peepeng:
         $ spent_time += 10
         if __r1 == '01':
             $ __r2 = renpy.random.choice(['01', '02', '03'])
@@ -597,18 +647,8 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['04', '05'])
         else:
             $ __r2 = renpy.random.choice(['06', '07'])
-        if not RandomChance(_chance):
-            scene BG shower-closer
-            if __r1 == '01':
-                show Eric shower-closer seen01
-            else:
-                show Eric shower-closer seen02
-            show FG shower-closer
-            Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-            $ mgg.stealth += 0.01
-            $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
-            $ current_room = house[6]
-            jump Waiting
+        if not RandomChance(_ch1.ch):
+            jump .not_luck
 
         $ mgg.stealth += 0.2
         $ notify_list.append(_("Скрытность Макса повысилась"))
@@ -636,5 +676,18 @@ label eric_ann_shower:
         else:
             Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
         $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
+        $ current_room = house[6]
+        jump Waiting
+
+    label .not_luck:
+        scene BG shower-closer
+        if __r1 == '01':
+            show Eric shower-closer seen01
+        else:
+            show Eric shower-closer seen02
+        show FG shower-closer
+        Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
+        $ mgg.stealth += 0.01
+        $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
         $ current_room = house[6]
         jump Waiting

@@ -258,15 +258,16 @@ label alice_shower:
         $ mgg.stealth += 0.03
         $ __ran1 = renpy.random.randint(1, 4)
 
-        $ _chance = GetChance(mgg.stealth, 3, 900)
-        $ _chance_color = GetChanceColor(_chance)
-        $ ch_vis = str(int(_chance/10)) + "%"
+        $ _ch1 = GetChance(mgg.stealth, 3, 900)
+        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         scene image ('Alice shower 0'+str(__ran1))
         $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
-            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+            "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
                 jump .closer_peepeng
+            "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
+                jump .alt_peepeng
             "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['alice'].give) < 4:
                 jump .pinded
             "{i}запустить паука к Алисе{/i}" if items['spider'].have:
@@ -338,13 +339,11 @@ label alice_shower:
                 $ renpy.show('Max spider-bathroom 06'+mgg.dress)
                 Max_08 "Ой! Извини, я..."
                 $ _ch1 = GetChance(mgg.social, 3, 900)
-                $ _ch1_color = GetChanceColor(_ch1)
-                $ ch1_vis = str(int(_ch1/10)) + "%"
                 menu:
                     Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!"
-                    "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                    "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         pass
-                if RandomChance(_ch1):
+                if RandomChance(_ch1.ch):
                     $ mgg.social += 0.2
                     Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
                     Max_00 "Да это случайно вышло!"
@@ -357,9 +356,28 @@ label alice_shower:
                     $ AddRelMood('alice', -15, -75)
         jump .end
 
+    label .alt_peepeng:
+        if not RandomChance(_ch2.ch):
+            jump .not_luck
+        $ spent_time += 10
+        $ peeping['alice_shower'] = 1
+        $ mgg.stealth += 0.2
+        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ alice.dress_inf = '00aa'
+        $ __ran1 = renpy.random.randint(1, 6)
+        scene BG shower-alt
+        $ renpy.show('Max shower-alt 01'+mgg.dress)
+        $ renpy.show('Alice shower-alt 0'+str(__ran1))
+        show FG shower-water
+        if __ran1 % 2 > 0:
+            Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
+        else:
+            Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
+        jump .end
+
     label .closer_peepeng:
         $ spent_time += 10
-        if RandomChance(_chance):
+        if RandomChance(_ch1.ch):
             $ peeping['alice_shower'] = 1
             $ mgg.stealth += 0.2
             $ notify_list.append(_("Скрытность Макса повысилась"))
@@ -373,7 +391,11 @@ label alice_shower:
             else:
                 Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
             jump .end
-        elif RandomChance(_chance) or len(sorry_gifts['alice'].give) > 3:
+        else:
+            jump .not_luck
+
+    label .not_luck:
+        if RandomChance(_ch1.ch) or len(sorry_gifts['alice'].give) > 3:
             $ peeping['alice_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
@@ -492,9 +514,15 @@ label alice_dressed_shop:
                 else:
                     $ alice.dress_inf = '02c' if __suf else '02e'
 
-                scene BG char Alice voyeur-00
-                $ renpy.show('Alice voyeur '+__ran1+__suf)
-                $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+                if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+                    scene BG char Alice voyeur-01
+                    $ renpy.show('Alice voyeur alt-'+__ran1+__suf)
+                    $ renpy.show('FG voyeur-morning-01'+mgg.dress)
+                else:
+                    scene BG char Alice voyeur-00
+                    $ renpy.show('Alice voyeur '+__ran1+__suf)
+                    $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+
                 $ notify_list.append(_("Скрытность Макса капельку повысилась"))
                 $ mgg.stealth += 0.03
                 if flags['smoke'] == 'not_nopants' and __ran1 != '01':
@@ -711,14 +739,8 @@ label spider_in_bed:
         show Max spider-night 03-01
 
         $ _ch1 = GetChance(mgg.social, 5, 900)
-        $ _ch1_color = GetChanceColor(_ch1)
-        $ ch1_vis = str(int(_ch1/10)) + "%"
         $ _ch2 = GetChance(mgg.social, 3, 900)
-        $ _ch2_color = GetChanceColor(_ch2)
-        $ ch2_vis = str(int(_ch2/10)) + "%"
         $ _ch3 = GetChance(mgg.social, 2, 900)
-        $ _ch3_color = GetChanceColor(_ch3)
-        $ ch3_vis = str(int(_ch3/10)) + "%"
 
         menu:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
@@ -727,18 +749,18 @@ label spider_in_bed:
                 $ renpy.show('Alice spider-night 03-04'+__suf)
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
-                    "Давай $10! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Давай $10! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             jump .money
                         else:
                             jump .fail
-                    "Покажи сиськи! {color=[_ch2_color]}(Убеждение. Шанс: [ch2_vis]){/color}":
-                        if RandomChance(_ch2):
+                    "Покажи сиськи! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
+                        if RandomChance(_ch2.ch):
                             jump .tits
                         else:
                             jump .fail
-                    "Сними верх! {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}":
-                        if RandomChance(_ch3):
+                    "Сними верх! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
+                        if RandomChance(_ch3.ch):
                             jump .toples
                         else:
                             jump .fail
@@ -754,8 +776,8 @@ label spider_in_bed:
                 Max_01 "Видишь ли, глаза совсем заспанные, никак не могу разглядеть паука... Но думаю твои прекрасные сосочки мне с этим помогут!"
                 menu:
                     Alice_15 "Ах, так! Значит то, что договорённость я соблюдаю, ты видишь, а вот здоровенного паука на моей кровати нет?!"
-                    "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}":
-                        if RandomChance(_ch3):
+                    "На красивое глаза легче открываются... {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
+                        if RandomChance(_ch3.ch):
                             jump .toples
                         else:
                             jump .fail
@@ -844,8 +866,6 @@ label spider_in_bed:
         else:
             $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03']))
         $ _ch1 = GetChance(mgg.social, 3, 900)
-        $ _ch1_color = GetChanceColor(_ch1)
-        $ ch1_vis = str(int(_ch1/10)) + "%"
         menu:
             Max_07 "Ага, попался! Пожалуй, вот что я сделаю..."
             "{i}оставлю этого паука себе{/i}":
@@ -862,9 +882,9 @@ label spider_in_bed:
                                 $ SpiderResp = 0
                                 $ items['spider'].have = True
                                 return
-                    "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
+                    "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         show Max spider-night 04-02
-                        if RandomChance(_ch1):
+                        if RandomChance(_ch1.ch):
                             $ mgg.social += 0.2
                             Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
                             menu:

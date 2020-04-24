@@ -576,8 +576,8 @@ translate english strings:
     new "{i}Turn away{/i}"
 
     # game/events/ann.rpy:153
-    old "Я не подглядывал. Это случайность! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "I wasn't spying, it was an accident! {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Я не подглядывал. Это случайность! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "I wasn't spying, it was an accident! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/events/ann.rpy:153
     old "Мам, извини..."
@@ -810,8 +810,8 @@ translate english strings:
     new "I have something for you."
 
     # game/events/ann.rpy:328
-    old "Ну мам! Этого было так мало, давай ещё... {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Come on, Mom! It was so little, let's do it again... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Ну мам! Этого было так мало, давай ещё... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Come on, Mom! It was so little, let's do it again... {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/events/ann.rpy:328
     old "Ну мам! Этого было так мало, давай ещё..."

@@ -714,13 +714,11 @@ label InstallCam:
 label SearchSpider:
     scene BG char Max spider-search-00
     $ renpy.show('Max spider search-00'+mgg.dress)
-    $ _chance = {0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {0 : 0, 1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp]
-    $ _chance_color = GetChanceColor(_chance)
-    $ ch_vis = str(int(_chance/10)) + "%"
+    $ _ch1 = Chance({0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {0 : 0, 1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp])
     menu:
         Max_00 "Так, нужно хорошенько рассмотреть траву..."
-        "{i}искать... {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}":
-            if RandomChance(_chance):
+        "{i}искать... {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}":
+            if RandomChance(_ch1.ch):
                 $ renpy.scene()
                 $ renpy.show('BG char Max spider-search-01'+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
@@ -741,17 +739,15 @@ label HideSpider:
     if '00:40' < tm < '01:00':
         Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
 
-    $ _chance = {'00:00' <= tm <= '00:40' : 800, '23:00' <= tm <= '23:59' : 700, '20:00' <= tm <= '22:59' : 500, '01:00' <= tm <= '19:59' : 0,}[True]
-    $ _chance_color = GetChanceColor(_chance)
-    $ ch_vis = str(int(_chance/10)) + "%"
+    $ _ch1 = Chance({'00:00' <= tm <= '00:40' : 800, '23:00' <= tm <= '23:59' : 700, '20:00' <= tm <= '22:59' : 500, '01:00' <= tm <= '19:59' : 0,}[True])
     menu:
         Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..."
-        "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}":
+        "{i}Подложить сейчас {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}":
             scene BG char Alice spider
             Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
             $ SpiderKill = 0
             $ SpiderResp = 1
-            if RandomChance(_chance):
+            if RandomChance(_ch1.ch):
                 $ NightOfFun.append('spider')
             $ items['spider'].have = False
             $ spent_time = 10

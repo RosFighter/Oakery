@@ -101,24 +101,44 @@ label lisa_shower:
         $ mgg.stealth += 0.03
         $ __ran1 = renpy.random.randint(1, 4)
 
-        $ _chance = GetChance(mgg.stealth, 3, 900)
-        $ _chance_color = GetChanceColor(_chance)
-        $ ch_vis = str(int(_chance/10)) + "%"
+        $ _ch1 = GetChance(mgg.stealth, 3, 900)
+        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         $ renpy.scene()
         $ renpy.show('Lisa shower 0'+str(__ran1))
         $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
-            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+            "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
                 jump .closer_peepeng
+            "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
+                jump .alt_peepeng
             "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['lisa'].give) < 4:
                 jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping
 
+    label .alt_peepeng:
+        if not RandomChance(_ch2.ch):
+            jump .not_luck
+        $ spent_time += 10
+        $ peeping['lisa_shower'] = 1
+        $ mgg.stealth += 0.2
+        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ lisa.dress_inf = '00a'
+        $ __ran1 = renpy.random.randint(1, 6)
+        scene BG shower-alt
+        $ renpy.show('Max shower-alt 01'+mgg.dress)
+        $ renpy.show('Lisa shower-alt 0'+str(__ran1))
+        show FG shower-water
+        if 1 < __ran1 < 5:
+            Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+        else:
+            Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
+        jump .end_peeping
+
     label .closer_peepeng:
         $ spent_time += 10
-        if RandomChance(_chance):
+        if RandomChance(_ch1.ch):
             $ peeping['lisa_shower'] = 1
             $ mgg.stealth += 0.2
             $ notify_list.append(_("Скрытность Макса повысилась"))
@@ -131,7 +151,12 @@ label lisa_shower:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
                 Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-        elif RandomChance(_chance) or len(sorry_gifts['lisa'].give) > 3:
+            jump .end_peeping
+        else:
+            jump .not_luck
+
+    label .not_luck:
+        if RandomChance(_ch1.ch) or len(sorry_gifts['lisa'].give) > 3:
             $ peeping['lisa_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
@@ -212,9 +237,16 @@ label lisa_dressed_school:
         $ spent_time = 10
         $ __ran1 = renpy.random.choice(['01', '02', '03', '04'])
         $ lisa.dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[__ran1]
-        scene BG char Lisa voyeur-00
-        $ renpy.show('Lisa voyeur '+__ran1)
-        $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
+
+        if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+            scene BG char Lisa voyeur-01
+            $ renpy.show('Lisa voyeur alt-'+__ran1)
+            $ renpy.show('FG voyeur-lisa-01'+mgg.dress)
+        else:
+            scene BG char Lisa voyeur-00
+            $ renpy.show('Lisa voyeur '+__ran1)
+            $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
+
         $ notify_list.append(_("Скрытность Макса капельку повысилась"))
         $ mgg.stealth += 0.03
         menu:

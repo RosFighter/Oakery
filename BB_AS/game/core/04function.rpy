@@ -173,14 +173,8 @@ init python:
 
 
     def GetChance(Skil, multiplier=1, limit=1000): # Вычисляет и возвращает шанс успешного применения навыка
-        ch = clip(Skil * 10 * multiplier, 0, limit)
-        # col = {
-        #     ch < 333 : red,
-        #     ch > 666 : lime,
-        #     333 <= ch <= 666 : orange
-        #     }[True]
-        # vis = str(int(_ch1/10)) + "%"
-        return ch #(ch, col, vis)
+        ch = clip(int(Skil * 10 * multiplier), 0, limit)
+        return Chance(ch)
 
 
     def RandomChance(chance): # прошло или нет применение навыка с указанным шансом
@@ -784,12 +778,12 @@ init python:
         renpy.show('Max dinner 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
 
 
-    def GetChanceColor(chance):  # цвет шанса
-        return {
-            chance < 333 : red,
-            chance > 666 : lime,
-            333 <= chance <= 666 : orange
-            }[True]
+    # def GetChanceColor(chance):  # цвет шанса
+    #     return {
+    #         chance < 333 : red,
+    #         chance > 666 : lime,
+    #         333 <= chance <= 666 : orange
+    #         }[True]
 
 
     def GetLisaPunChance():  # вероятность наказания Лизы
@@ -903,13 +897,13 @@ init python:
 
 
     def GetChanceConvince(punchar, multiplier = 1):  # возвращает шанс убедить персонажа после наказаний
-        chance = mgg.social * 10 * multiplier
+        ch = clip(int(mgg.social * 10 * multiplier), 0, 900)
         mind = 250
         for d in punchar:
             if d[3]:  # если сестра была наказана, убедить ее проще
-                chance += mind
+                ch += mind
             mind = mind * 0.80 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
-        return clip(chance, 0, 900)
+        return Chance(ch)
 
 
     def notify_queue():  # функция показа всплывающего сообщения из очереди

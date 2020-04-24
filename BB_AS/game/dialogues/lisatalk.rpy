@@ -965,12 +965,10 @@ label Lisa_HomeWork:
             jump .self
         "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if poss['sg'].stn > 2  and lisa.dress > 'a' and talk_var['lisa.pun'] > 2: # допилить условие на полотенце
             $ talk_var['help.hw'] += 1
-            $ _chance = GetChanceConvince(punlisa, 2)
-            $ _chance_color = GetChanceColor(_chance)
-            $ ch_vis = str(int(_chance/10)) + "%"
+            $ _ch1 = GetChanceConvince(punlisa, 2, 900)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
-                "Покажи грудь! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}":
+                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                     jump .show_breast
         "Ой, тут много... Давай в другой раз.":
             $ AddRelMood("lisa", -5, -50)
@@ -979,7 +977,7 @@ label Lisa_HomeWork:
 
     label .show_breast:
         $ renpy.show("Max lessons-breast 01"+mgg.dress)
-        if RandomChance(_chance):  # убеждение успешно
+        if RandomChance(_ch.ch):  # убеждение успешно
             $ punlisa[0][0] = 4
             $ mgg.social += 0.2
             menu:
@@ -1015,17 +1013,15 @@ label Lisa_HomeWork:
             jump Waiting
 
     label .make_bag:
-        $ _chance = GetChance(mgg.social, 4, 900)
-        $ _chance_color = GetChanceColor(_chance)
-        $ ch_vis = str(int(_chance/10)) + "%"
+        $ _ch1 = GetChance(mgg.social, 4, 900)
         menu:
             Lisa_13 "Макс, мне кажется, что здесь должен быть другой ответ. Это же не так решается..."
             "Да, Лиза, ты права...":
                 Lisa_03 "Ну, вот видишь! Эх, какой же ты невнимательный, Макс. Но всё равно, спасибо, что помог. Сама я бы долго возилась..."
                 Max_01 "Не за что!"
                 $ AddRelMood("lisa", 5, 100)
-            "Лиза, я знаю о чём говорю! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}":
-                if RandomChance(_chance):
+            "Лиза, я знаю о чём говорю! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                if RandomChance(_ch1.ch):
                     Lisa_02 "[succes!t]Да? Ну ладно. Тебе виднее... Не буду проверять даже. Спасибо за помощь, Макс!"
                     $ punlisa[0][0] = 1
                     $ mgg.social += 0.2
@@ -1477,8 +1473,6 @@ label lisa_sorry_gifts:
         return
 
     $ _ch1 = GetChance(mgg.social, 3, 900)
-    $ _ch1_col = GetChanceColor(_ch1)
-    $ ch1_vis = str(int(_ch1/10)) + "%"
     $ sorry_gifts['lisa'].owe = False
     $ txt = {
         0 : _("Правда? Ты всё-таки достал её для меня?! А какую?"),
@@ -1652,8 +1646,8 @@ label lisa_sorry_gifts:
             Max_01 "Однозначно случайно!"
             menu:
                 Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                    if RandomChance(_ch1):
+                "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                    if RandomChance(_ch1.ch):
                         call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces
                         Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                         Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1699,8 +1693,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_1
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1722,8 +1716,8 @@ label lisa_sorry_gifts:
                 Max_07 "Значит - это засчитывается?"
                 menu:
                     Lisa_09 "Даже не знаю, Макс... Не очень-то ты и пытался порадовать меня. Подглядывал ещё за мной..."
-                    "Это было случайно... Просто так получается всё время!  {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Это было случайно... Просто так получается всё время!  {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             Lisa_10 "[succes!t]Ладно, считай ты прощён, мама ничего не узнает... Но лишь потому, что у меня нет никакого настроения с этим разбираться."
                             Max_00 "Спасибо, Лиза..."
                             Lisa_09 "Всё, Макс, я хочу побыть одна."
@@ -1750,8 +1744,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_2
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1779,8 +1773,8 @@ label lisa_sorry_gifts:
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 menu:
                     Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..."
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_3
                             Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1803,8 +1797,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_4
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1828,8 +1822,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_5
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1853,8 +1847,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_6
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -1919,8 +1913,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_9
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -1945,8 +1939,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_11
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_1
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -1968,8 +1962,6 @@ label lisa_sorry_gifts:
                     Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."   #если сладость маленькая
                 else:
                     $ _ch1 = GetChance(mgg.social, 6, 900)
-                    $ _ch1_col = GetChanceColor(_ch1)
-                    $ ch1_vis = str(int(_ch1/10)) + "%"
                     Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"   #если сладость большая
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 Lisa_12 "А вот и нет! Не разобрались!"
@@ -1980,8 +1972,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_13
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_2
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -2020,8 +2012,8 @@ label lisa_sorry_gifts:
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 menu:
                     Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..."
-                    "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_12
                             Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
@@ -2065,8 +2057,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_17
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_3
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -2110,8 +2102,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_20
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_4
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -2139,8 +2131,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_22
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_5
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -2168,8 +2160,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_24
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_6
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -2197,8 +2189,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_26
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                        if RandomChance(_ch1):
+                    "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_7
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
@@ -2230,8 +2222,8 @@ label lisa_sorry_gifts:
                     call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_28
                     menu:
                         Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #если сладость маленькая   #спрайт вместе
-                        "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                            if RandomChance(_ch1):
+                        "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                            if RandomChance(_ch1.ch):
                                 call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_8
                                 Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                                 Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"

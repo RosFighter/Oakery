@@ -349,8 +349,8 @@ translate english strings:
     new "I was peeping on Eric and you..."
 
     # game/dialogues/punishment.rpy:126
-    old "Я же не виноват! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
-    new "It wasn't my fault! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+    old "Я же не виноват! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "It wasn't my fault! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/punishment.rpy:141
     old "{i}снять штаны{/i}"
@@ -389,8 +389,8 @@ translate english strings:
     new "Come closer, Lisa. And yes, take off your robe, you deserve it!"
 
     # game/dialogues/punishment.rpy:198
-    old "{i}Заступиться за Лизу {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}Stand up for Lisa {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}{/i}"
+    old "{i}Заступиться за Лизу {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}Stand up for Lisa {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/dialogues/punishment.rpy:220
     old "Быстро снимай штаны!"
@@ -623,8 +623,8 @@ translate english strings:
     new "I've found cigarettes in your room! You're smoking again! Take off your shorts and lie on my knees right now!"
 
     # game/dialogues/punishment.rpy:330
-    old "{i}Заступиться за Алису {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}Stand up for Alice.{color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}{/i}"
+    old "{i}Заступиться за Алису {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}Stand up for Alice.{color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/dialogues/punishment.rpy:365
     old "Теперь ложись побыстрее, ужин стынет..."

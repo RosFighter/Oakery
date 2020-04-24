@@ -2469,8 +2469,8 @@ translate english strings:
     new "Oh, there's so much... Another time."
 
     # game/dialogues/lisatalk.rpy:953
-    old "Покажи грудь! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
-    new "Show me your tits! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+    old "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Show me your tits! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:967
     old "Тебе напомнить как мама больно наказывает?"
@@ -2485,8 +2485,8 @@ translate english strings:
     new "Oh, you're right, Lisa... {i}(fix your mistake){/i}"
 
     # game/dialogues/lisatalk.rpy:1003
-    old "Лиза, я знаю о чём говорю! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
-    new "I know what I'm doing, Lisa! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+    old "Лиза, я знаю о чём говорю! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "I know what I'm doing, Lisa! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
 # TODO: Translation updated at 2020-03-12 12:28
 
@@ -5323,16 +5323,16 @@ translate english strings:
     new "Really? Come on, show me what you got this time!"
 
     # game/dialogues/lisatalk.rpy:1492
-    old "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Definitely need a hug! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Definitely need a hug! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1578
-    old "Это было случайно... Просто так получается всё время! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "It was an accident... It just happens all the time! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Это было случайно... Просто так получается всё время! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "It was an accident... It just happens all the time! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1824
-    old "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Of course you should! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Of course you should! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
 # TODO: Translation updated at 2020-04-11 01:32
 
@@ -5617,4 +5617,3 @@ translate english conversation_after_dinner_e88291ac:
 
     # Max_08 "Наверно, я просто был не внимателен… Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
     Max_08 "I guess I just wasn't paying attention... I need to have some incentive to do this! Can you help me out?"
-

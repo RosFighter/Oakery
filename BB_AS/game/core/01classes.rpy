@@ -668,3 +668,10 @@ init python:
             self.owe = True
             self.left = d+1 if (day+d+2) % 7 == 0 else d
             self.days.insert(0, day)
+
+
+    class Chance:
+        def __init__(self, ch):
+            self.ch  = {ch < 0 : 0, ch > 1000 : 1000, 0 <= ch <= 1000: ch}[True]
+            self.col = {ch < 333 : red, ch > 666 : lime, 333 <= ch <= 666 : orange}[True]
+            self.vis = str(int(ch/10)) + "%"

@@ -109,21 +109,41 @@ label ann_shower:
         $ mgg.stealth += 0.03
         $ __ran1 = renpy.random.randint(1, 4)
 
-        $ _chance = GetChance(mgg.stealth, 3, 900)
-        $ _chance_color = GetChanceColor(_chance)
-        $ ch_vis = str(int(_chance/10)) + "%"
+        $ _ch1 = GetChance(mgg.stealth, 3, 900)
+        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         scene image ('Ann shower 0'+str(__ran1))
         $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
-            "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}":
+            "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
                 jump .closer_peepeng
+            "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
+                jump .alt_peepeng
             "{i}уйти{/i}":
                 jump .end_peeping
 
+    label .alt_peepeng:
+        if not RandomChance(_ch2.ch):
+            jump .not_luck
+        $ spent_time += 10
+        $ peeping['ann_shower'] = 1
+        $ mgg.stealth += 0.2
+        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ ann.dress_inf = '00a'
+        $ __ran1 = renpy.random.randint(1, 6)
+        scene BG shower-alt
+        $ renpy.show('Max shower-alt 01'+mgg.dress)
+        $ renpy.show('Ann shower-alt 0'+str(__ran1))
+        show FG shower-water
+        if __ran1 % 2 > 0:
+            Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+        else:
+            Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+        jump .end_peeping
+
     label .closer_peepeng:
         $ spent_time += 10
-        if RandomChance(_chance):
+        if RandomChance(_ch1.ch):
             $ peeping['ann_shower'] = 1
             $ mgg.stealth += 0.2
             $ notify_list.append(_("Скрытность Макса повысилась"))
@@ -137,7 +157,11 @@ label ann_shower:
             else:
                 Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
             jump .end_peeping
-        elif RandomChance(_chance):
+        else:
+            jump .not_luck
+
+    label .not_luck:
+        if RandomChance(_ch1.ch):
             $ peeping['ann_shower'] = 2
             $ mgg.stealth += 0.1
             $ notify_list.append(_("Скрытность Макса немного повысилась"))
@@ -164,16 +188,14 @@ label ann_shower:
     label .serious_talk:
         $ spent_time += 10
         $ _ch1 = GetChance(mgg.social, 3, 900)
-        $ _ch1_color = GetChanceColor(_ch1)
-        $ ch1_vis = str(int(_ch1/10)) + "%"
         $ punreason[2] = 1
         scene BG char Alice spider-bathroom-00
         $ renpy.show('Max spider-bathroom 03'+mgg.dress)
         show Ann shower 05
         menu:
             Ann_19 "Ты что, подглядываешь за мной? Тебе должно быть стыдно! Нас ждёт серьёзный разговор..."
-            "Я не подглядывал. Это случайность! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}":
-                if RandomChance(_ch1):
+            "Я не подглядывал. Это случайность! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                if RandomChance(_ch1.ch):
                     $ mgg.social += 0.2
                     Ann_12 "[succes!t]Случайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
                     Max_04 "Ага, хорошо, мам!"
@@ -274,12 +296,18 @@ label ann_dressed_work:
             $ AddRelMood("ann", 0, __mood)
             jump .end
         "{i}заглянуть в окно{/i}":
-            scene BG char Ann voyeur-00
             $ __ran1 = renpy.random.choice(['01', '01a', '02', '03', '03a', '04'])
             $ ann.dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b'}[__ran1]
 
-            $ renpy.show('Ann voyeur '+__ran1)
-            $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+            if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+                scene BG char Ann voyeur-01
+                $ renpy.show('Ann voyeur alt-'+__ran1)
+                $ renpy.show('FG voyeur-morning-01'+mgg.dress)
+            else:
+                scene BG char Ann voyeur-00
+                $ renpy.show('Ann voyeur '+__ran1)
+                $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+
             $ notify_list.append(_("Скрытность Макса капельку повысилась"))
             $ mgg.stealth += 0.03
             Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
@@ -313,13 +341,11 @@ label ann_dressed_work:
         Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
         $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-02'+mgg.dress)
         $ _ch1 = GetChance(mgg.social, 3, 900)
-        $ _ch1_color = GetChanceColor(_ch1)
-        $ ch1_vis = str(int(_ch1/10)) + "%"
         $ spent_time += 10
         menu:
             Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..."
-            "Ну мам! Этого было так мало, давай ещё... {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}" if not __open:
-                if RandomChance(_ch1):
+            "Ну мам! Этого было так мало, давай ещё... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if not __open:
+                if RandomChance(_ch1.ch):
                     $ spent_time += 10
                     $ mgg.social += 0.2
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
@@ -423,12 +449,18 @@ label ann_dressed_shop:
             $ AddRelMood("ann", 0, __mood)
             jump .end
         "{i}заглянуть в окно{/i}":
-            scene BG char Ann voyeur-00
             $ __ran1 = renpy.random.choice(['03', '03a', '04'])
             $ ann.dress_inf = {'03':'02', '03a':'02a', '04':'02b'}[__ran1]
 
-            $ renpy.show('Ann voyeur '+__ran1)
-            $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+            if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+                scene BG char Ann voyeur-01
+                $ renpy.show('Ann voyeur alt-'+__ran1)
+                $ renpy.show('FG voyeur-morning-01'+mgg.dress)
+            else:
+                scene BG char Ann voyeur-00
+                $ renpy.show('Ann voyeur '+__ran1)
+                $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+
             $ notify_list.append(_("Скрытность Макса капельку повысилась"))
             $ mgg.stealth += 0.03
             Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
@@ -462,13 +494,11 @@ label ann_dressed_shop:
         Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
         $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-02'+mgg.dress)
         $ _ch1 = GetChance(mgg.social, 3, 900)
-        $ _ch1_color = GetChanceColor(_ch1)
-        $ ch1_vis = str(int(_ch1/10)) + "%"
         $ spent_time += 10
         menu:
             Ann_04 "Ну всё, мой дорогой, нам с девочками ещё нужно успеть пробежаться по магазинам сегодня..."
-            "Ну мам! Этого было так мало, давай ещё... {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}" if not __open:
-                if RandomChance(_ch1):
+            "Ну мам! Этого было так мало, давай ещё... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if not __open:
+                if RandomChance(_ch1.ch):
                     $ spent_time += 10
                     $ mgg.social += 0.2
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."

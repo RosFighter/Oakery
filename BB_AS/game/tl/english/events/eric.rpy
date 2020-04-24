@@ -391,8 +391,8 @@ translate english eric_ann_shower_start_peeping_cdfa03c1:
 translate english strings:
 
     # game/events/eric.rpy:164
-    old "{i}заглянуть в окно\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}peep into the window\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
+    old "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}peep into the window\n{color=[_ch1.col]}(Stealth. Chance: [_ch1.vis]){/color}{/i}"
 
 # TODO: Translation updated at 2020-03-14 08:54
 
