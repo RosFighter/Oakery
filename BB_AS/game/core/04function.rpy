@@ -778,14 +778,6 @@ init python:
         renpy.show('Max dinner 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
 
 
-    # def GetChanceColor(chance):  # цвет шанса
-    #     return {
-    #         chance < 333 : red,
-    #         chance > 666 : lime,
-    #         333 <= chance <= 666 : orange
-    #         }[True]
-
-
     def GetLisaPunChance():  # вероятность наказания Лизы
         if len(punlisa) == 0 or punlisa[0][0] > 2:
             pun_chance = 0  # Макс помогал правильно
@@ -835,14 +827,14 @@ init python:
                     pun_chance += grow
                 grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше усердие Лизы
-        return clip(pun_chance, 0, 1000)
+        return clip(pun_chance, 0, 900)
 
 
     def GetAlicePunChance():  # вероятность наказания Алисы
-        if len(punalice) == 0 or not dcv['smoke'].done:
-            pun_chance = 0  # Алиса не курила
-        elif punalice[0][1]:
-            pun_chance = 1000  # Макс подставил Алису
+        if len(punalice) == 0 or not dcv['smoke'].done:  # Алиса не курила
+            pun_chance = 0
+        elif punalice[0][1]:   # Макс подставил Алису
+            pun_chance = 1000
         else:
             help_count = 0
             grow = 50
@@ -853,27 +845,30 @@ init python:
                 pun_chance = 50.0
 
             for d in range(1, len(punalice)):
-                if punalice[d][3]:
-                    pun_chance -= mind
-                    mind = 250 # сбрасываем здравомыслие на исходную
-                if punalice[d][0] > 2:
-                    pun_chance -= 150  # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
+                if punalice[d][3]:   # Ализа понесла наказание
+                    pun_chance -= mind  # шанс наказания снижается на уровень здравомыслия
+                    mind = 250          # сбрасываем здравомыслие на исходную
+                elif punalice[d][2]:  # Макс пытался заступиться за Алису перед наказанием
+                    pun_chance += grow // 2       # шанс невнимательности меньше
+                    mind = clip(mind+100, 0, 250) # плюс прирост здравомыслия
+                if punalice[d][0] > 2: # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
+                    pun_chance -= 150
                     grow = 50
                     if d < 7:
                         help_count += 1
                         if help_count > 1:  # если за неделю Макс дважды успешно шантажировал, шанс наказания мизерный
                             break           # прерываем цикл расчета
-                elif not punalice[d][0]:
+                else:   # Макс не шантажировал Алису или шантажировал неудачно
                     pun_chance += grow
-                grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
+                grow = grow * 1.1   # чем больше дней прошло со дня, когда Макс чего-то требовал, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
-        return clip(pun_chance, 0, 1000)
+        return clip(pun_chance, 0, 900)
 
 
     def GetDisobedience():  # вероятность ослушания Алисы
-        chance = 0
+        chance = 60
         pun = 0
-        grow = 50
+        grow = 100
         for d in range(1, len(punalice)-1):
             if punalice[d][3]:
                 pun +=1
@@ -883,9 +878,9 @@ init python:
                 chance += grow
                 grow *= 1.1
             if d < 8 and pun == 2:
-                chance = 50
+                chance = 60
                 break  # если за неделю Алису наказали дважды, шанс нарушения соглашения минимальный
-        clip(chance, 0, 900)
+        clip(chance, 0, 1000)
 
 
     def ColumnSum(punchar, i, limit=50):  # сумму i-тых элементов списка списков

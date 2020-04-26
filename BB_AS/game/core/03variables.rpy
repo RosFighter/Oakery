@@ -245,8 +245,10 @@ label InitPoss: # Возможности
             ])
     $ poss['seduction'] = Poss(_("Наставник"), [
                 PossStage("interface poss mentor ep01", _("Кажется, Лиза совсем ничего не знает о мальчиках. Возможно, она даже порно ни разу не видела, раз так удивилась обычному утреннему стояку. Может быть, стоит заняться просветительской деятельностью среди своей младшей сестрёнки? Но с чего начать? Поговорить?")),
-                PossStage("interface poss mentor ep01", _("Я поговорил с Лизой и стало ясно, что для того, чтобы чему-то учить, нужно сначала завоевать авторитет."),
-                            _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")),
+                PossStage("interface poss mentor ep01", _("Я поговорил с Лизой и стало ясно, что для того, чтобы чему-то учить, нужно сначала завоевать авторитет.")),
+                PossStage("interface poss mentor ep02", _("Лиза снова увидела мой утренний стояк. На этот раз маму она не позвала, что уже хорошо. Хотя, смотрела она на мой член не только с подозрением, но ещё и с интересом. По крайней мере, мне так показалось. Думаю, нужно с ней об этом поговорить...")),
+                PossStage("interface poss mentor ep03", _("Это, конечно, не точно, но Лиза хотела потрогать мой член, думая, что я спал. И судя по её реакции на то, что я это увидел, даже она сама с себя удивилась. Посмотрим, что она потом об этом скажет..."),
+                        _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")),
             ])
     $ poss['secretbook'] = Poss(_("Особые книги"), [
                 PossStage("interface poss secretbook ep01", _("Алиса читает какие-то книги, но не хочет говорить о них. На порно журналы не похоже... Что же ещё там может быть? Нужно попытаться выяснить это как можно скорее... Любопытно же!")),
@@ -364,6 +366,23 @@ label InitPoss: # Возможности
 
 label InitTalksEvents: # стартовая инициация диалогов и событий
 
+    # события, запускаемые в конкретное время
+    $ EventsByTime = {
+        'breakfast'        : CutEvent('09:00', label='breakfast', desc='завтрак', cut=True),
+        'dinner'           : CutEvent('19:00', label='dinner', desc='ужин', cut=True),
+        'shoping'          : CutEvent('11:00', (6, ), 'shoping', 'семейный шопинг'),
+        'MorningWood'      : CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True),
+        'AfterSchoolFD'    : CutEvent('16:00', label='AfterSchoolFD', variable='day == 1', desc='Лиза первый раз приходит из школы', cut=True),
+        'Wearied'          : CutEvent('03:30', label='Wearied', sleep=False, desc='поспать бы надо'),
+        'delivery1'        : CutEvent('13:30', (1, 2, 3, 4, 5, 6), 'delivery1', 'доставка товаров Сэмом', 'len(delivery_list[0])>0', cut=True),
+        'delivery2'        : CutEvent('15:30', (1, 2, 3, 4, 5, 6), 'delivery2', 'доставка товаров Кристиной', 'len(delivery_list[1])>0', cut=True),
+        'back_shoping'     : CutEvent('14:00', (6, ), 'back_shoping', 'возвращение с семейного шопинга', "EventsByTime['back_shoping'].stage < 2", cut=True),
+        'MeetingEric'      : CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True),
+        'Eric_afterdinner' : CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day < 12', cut=True),
+        'night_of_fun'     : CutEvent('04:00', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
+        'need_money'       : CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True),
+        'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, poss['seduction'].stn > 0])", sleep=True, cut=True)
+        }
     # Переменные влияющие на запуск диалогов
     $ talk_var = {
         'blog'     : 0,
@@ -392,30 +411,14 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'learn' : '0 00:00',
         }
 
-    # события, запускаемые в конкретное время
-    $ EventsByTime = {
-        'breakfast'        : CutEvent('09:00', label='breakfast', desc='завтрак', cut=True),
-        'dinner'           : CutEvent('19:00', label='dinner', desc='ужин', cut=True),
-        'shoping'          : CutEvent('11:00', (6, ), 'shoping', 'семейный шопинг'),
-        'MorningWood'      : CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True),
-        'AfterSchoolFD'    : CutEvent('16:00', label='AfterSchoolFD', variable='day == 1', desc='Лиза первый раз приходит из школы', cut=True),
-        'Wearied'          : CutEvent('03:30', label='Wearied', sleep=False, desc='поспать бы надо'),
-        'delivery1'         : CutEvent('13:30', (1, 2, 3, 4, 5, 6), 'delivery1', 'доставка товаров Сэмом', 'len(delivery_list[0])>0', cut=True),
-        'delivery2'         : CutEvent('15:30', (1, 2, 3, 4, 5, 6), 'delivery2', 'доставка товаров Кристиной', 'len(delivery_list[1])>0', cut=True),
-        'back_shoping'     : CutEvent('14:00', (6, ), 'back_shoping', 'возвращение с семейного шопинга', "EventsByTime['back_shoping'].stage < 2", cut=True),
-        'MeetingEric'      : CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True),
-        'Eric_afterdinner' : CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day < 12', cut=True),
-        'night_of_fun'     : CutEvent('04:00', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
-        'need_money'       : CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True),
-        }
-
     # переменные со счетчиком дней
     $ dcv = {
-        'clearpool'   : Daily(done=True, enabled=True),
-        'ordercosm'   : Daily(done=True, enabled=True),
-        'buyfood'     : Daily(done=True, enabled=True),
-        'credit'      : Daily(done=True, enabled=True),
-        'lisa.ad'     : Daily(done=True, enabled=True),
+        'clearpool'   : Daily(done=True, enabled=True), # очистка бассейна
+        'ordercosm'   : Daily(done=True, enabled=True), # заказ косметики
+        'buyfood'     : Daily(done=True, enabled=True), # заказ продуктов
+        'credit'      : Daily(done=True, enabled=True), # кредит
+        'lisa.ad'     : Daily(done=True, enabled=True), # разговор с Лизой после ужина
+        'mw'          : Daily(done=True, enabled=True), # утренний стояк
         }
 
     # ежедневное подсматривание

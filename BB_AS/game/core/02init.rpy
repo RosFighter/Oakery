@@ -69,6 +69,7 @@ define talks = {
     'aboutbooks' : TalkTheme('alice', _("Что читаешь?"), 'alice_aboutbooks', "alice.plan_name == 'read' and poss['secretbook'].stn < 0"),
     'ann_mw'     : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "flags['morning_erect'] == 1"),
     'lisa_mw'    : TalkTheme('lisa', _("Насчёт этого случая утром..."), 'Lisa_MorningWood', "poss['seduction'].stn == 0", 0, "talkcooldown"),
+    'lisa_mwcont': TalkTheme('lisa', _("Хотел поговорить о Большом Максе..."), 'Lisa_MorningWoodCont', "flags['morning_erect']==3"),
     'lisa_sg1'   : TalkTheme('lisa', _("Насчёт успеваемости..."), 'Lisa_sg1', "poss['sg'].stn == 0"),
     'lisa_sg2'   : TalkTheme('lisa', _("Ну как, ты подумала о моих условиях?"), 'Lisa_sg2', "poss['sg'].stn == 1 and talk_var['lisa.pun'] > 0"),
     'lisa_hw'    : TalkTheme('lisa', _("Помочь с уроками?"), 'Lisa_HomeWork', "poss['sg'].stn > 1 and not flags['lisa_hw'] and lisa.plan_name == 'homework'"),
@@ -78,6 +79,7 @@ define talks = {
     'lisa_gift'  : TalkTheme('lisa', _("У меня для тебя обещанная вкусняшка!"), 'lisa_sorry_gifts', "sorry_gifts['lisa'].owe and there_in_stock('lisa') and lisa.plan_name in ['sun', 'read', 'phone']"),
     'alice_gift' : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_sorry_gifts', "sorry_gifts['alice'].owe and there_in_stock('alice') and alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
     }
+
 
 # Категории магазина
 define ShopCat = {

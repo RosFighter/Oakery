@@ -26,7 +26,7 @@ label StartPunishment:
     if tm > "18:00" and 'smoke' in dcv and dcv['smoke'].stage > 1:
         $ chance = GetAlicePunChance()  # шанс нахождения Анной сигарет Алисы
         if RandomChance(chance):  # найдет ли Анна сигареты Алисы
-            $ punalice[0][1] = 1
+            # $ punalice[0][1] = 1
             $ pun_list.append("alice")
 
     $ renpy.random.shuffle(pun_list) # перемешаем список последовательности наказания
