@@ -153,7 +153,7 @@ label ann_aboutfood:
         Ann_05 "Спасибо, Макс. Продукты я или Алиса заберём, когда привезут. Об этом не беспокойся."
         "Супер!":
             pass
-    $ AddRelMood("ann", 0, 50)
+    $ AddRelMood('ann', 0, 50)
     $ dcv['buyfood'].stage = 0
     return
 
@@ -163,7 +163,7 @@ label ann_aboutpool:
         Ann_05 "Спасибо, Макс, на недельку этого должно хватить."
         "Ага...":
             pass
-    $ AddRelMood("ann", 0, 50)
+    $ AddRelMood('ann', 0, 50)
     $ dcv['clearpool'].stage = 0
     return
 
@@ -200,7 +200,7 @@ label ann_talk_tv:
                     Ann_05 "Ясно. Ну, спасибо за компанию. Пойду в свою комнату, хватит с меня фильмов на сегодня..."
                     Max_03 "Ага, хорошо посидели..."
             $ spent_time = max((60 - int(tm[-2:])), 40)
-            $ AddRelMood("ann", 0, __mood)
+            $ AddRelMood('ann', 0, __mood)
             $ cur_ratio = 0.5
         "В другой раз...":
             menu:
@@ -285,7 +285,7 @@ label ann_talk_tv:
     Ann_05 "Жаль, что мы редко с тобой вместе вот так сидим, что-то смотрим. Ну, надеюсь, начало традиции положено. И пусть в следующий раз будет нечто менее... волнующее..."
     Max_01 "Конечно, мам!"
     $ spent_time = max((60 - int(tm[-2:])), 40)
-    $ AddRelMood("ann", 10, 100)
+    $ AddRelMood('ann', 10, 100)
     $ SetCamsGrow(house[4], 180)
     jump Waiting
 

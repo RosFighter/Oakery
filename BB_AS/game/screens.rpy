@@ -95,8 +95,9 @@ screen say(who, what):
 
     style_prefix "say"
 
-    key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
-    key "K_F8" action QuickLoad()
+    if not _in_replay:
+        key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
+        key "K_F8" action QuickLoad()
     if _preferences.language is None:
         key "l" action Language("english")
         key "д" action Language("english")
@@ -208,8 +209,9 @@ style input:
 screen choice(items):
 
     style_prefix "choice"
-    key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
-    key "K_F8" action QuickLoad()
+    if not _in_replay:
+        key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
+        key "K_F8" action QuickLoad()
     if _preferences.language is None:
         key "l" action Language("english")
         key "д" action Language("english")

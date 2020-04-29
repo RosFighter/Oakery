@@ -195,10 +195,15 @@ label lisa_shower:
 
 
 label lisa_read:
-
     scene BG char Lisa reading
     $ renpy.show('Lisa reading '+pose3_1+lisa.dress)
     $ persone_button1 = 'Lisa reading '+pose3_1+lisa.dress+'b'
+    return
+
+
+label lisa_read_closer:
+    scene BG char Lisa reading
+    $ renpy.show('Lisa reading-closer 01'+lisa.dress)
     return
 
 

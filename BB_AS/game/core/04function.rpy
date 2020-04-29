@@ -223,7 +223,7 @@ init python:
         else:
             char_name = char.capitalize()
 
-        chars[char].relmax = clip(chars[char].relmax + rel, -450, 1400)
+        chars[char].relmax = clip(chars[char].relmax + rel, -450, 2000)
         chars[char].mood   = clip(chars[char].mood + mood,  -435, 435)
         if rel != 0 and mood != 0:
             notify_list.append(__("Настроение %s %s \nЕё отношение к Максу %s") % (char_name, mood_suf, rel_suf))
@@ -684,7 +684,7 @@ init python:
 
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
         for cam in room.cams:
-            cam.grow = grow
+            cam.grow = max(cam.grow, grow)
             # grow = int(grow * 0.8) # для каждой последующей камеры интерес снижается на 20%
 
 
@@ -704,15 +704,15 @@ init python:
     def GetRelMax(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Максом
         rel = chars[char].relmax
         return {
-                   rel <= -250 : (-3, _("Война")),
-            -250 < rel <= -100 : (-2, _("Враждебные")),
+                   rel <= -300 : (-3, _("Война")),
+            -300 < rel <= -100 : (-2, _("Враждебные")),
             -100 < rel <   0   : (-1, _("Плохие")),
             0    <= rel < 100  : ( 0, _("Прохладные")),
-            100  <= rel < 250  : ( 1, _("Неплохие")),
-            250  <= rel < 450  : ( 2, _("Хорошие")),
-            450  <= rel < 700  : ( 3, _("Тёплые")),
-            700  <= rel < 1000 : ( 4, _("Дружеские")),
-            1000 <= rel        : ( 5, _("Близкие"))
+            100  <= rel < 300  : ( 1, _("Неплохие")),
+            300  <= rel < 600  : ( 2, _("Хорошие")),
+            600  <= rel < 1000 : ( 3, _("Тёплые")),
+            1000 <= rel < 1500 : ( 4, _("Дружеские")),
+            1500 <= rel        : ( 5, _("Близкие"))
             }[True]
 
 
@@ -720,12 +720,30 @@ init python:
         lvl = abs(level)
         mn = 1 if level > 0 else -1
         while lvl > 1:
-            rel = {-3 : 200*mn, -2 : 150*mn, -1 : 100*mn, 0 : 100*mn, 1 : 150*mn, 2 : 200*mn, 3 : 250*mn, 4 : 300*mn, 5 : 400*mn}[GetRelMax(char)[0]]
-            chars[char].relmax = clip(chars[char].relmax + rel , -450, 1400)
+            rel = {
+                -3 : 200*mn,
+                -2 : 150*mn,
+                -1 : 100*mn,
+                 0 : 100*mn,
+                 1 : 150*mn,
+                 2 : 200*mn,
+                 3 : 250*mn,
+                 4 : 300*mn,
+                 5 : 400*mn}[GetRelMax(char)[0]]
+            chars[char].relmax = clip(chars[char].relmax + rel , -450, 2000)
             lvl -= 1
         if lvl > 0:
-            rel = {-3 : 200*mn*lvl, -2 : 150*mn*lvl, -1 : 100*mn*lvl, 0 : 100*mn*lvl, 1 : 150*mn*lvl, 2 : 200*mn*lvl, 3 : 250*mn*lvl, 4 : 300*mn*lvl, 5 : 400*mn*lvl}[GetRelMax(char)[0]]
-            chars[char].relmax = clip(chars[char].relmax + rel, -450, 1400)
+            rel = {
+                -3 : 200*mn*lvl,
+                -2 : 150*mn*lvl,
+                -1 : 100*mn*lvl,
+                 0 : 100*mn*lvl,
+                 1 : 150*mn*lvl,
+                 2 : 200*mn*lvl,
+                 3 : 250*mn*lvl,
+                 4 : 300*mn*lvl,
+                 5 : 400*mn*lvl}[GetRelMax(char)[0]]
+            chars[char].relmax = clip(chars[char].relmax + rel, -450, 2000)
 
 
     def GetRelEric(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Эриком
@@ -892,13 +910,13 @@ init python:
 
 
     def GetChanceConvince(punchar, multiplier = 1):  # возвращает шанс убедить персонажа после наказаний
-        ch = clip(int(mgg.social * 10 * multiplier), 0, 900)
-        mind = 250
+        ch = mgg.social * 10 * multiplier
+        mind = 200
         for d in punchar:
             if d[3]:  # если сестра была наказана, убедить ее проще
                 ch += mind
             mind = mind * 0.80 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
-        return Chance(ch)
+        return Chance(clip(int(ch), 0, 900))
 
 
     def notify_queue():  # функция показа всплывающего сообщения из очереди

@@ -96,11 +96,12 @@ label Waiting:
 
 
 label NewDay:
-    $ talk_var['ask_money'] = 0
+    $ talk_var['ask_money'] = 0 # просили денег у Анны
     $ talk_var['lisa_dw']   = 0 # разговор о помывке посуды
-    $ talk_var['alice_dw']  = 0
-    $ talk_var['ann_tv']    = 0
-    $ talk_var['alice_tv']  = 0
+    $ talk_var['alice_dw']  = 0 # разговор о помывке посуды
+    $ talk_var['ann_tv']    = 0 # смотрели тв с Анной
+    $ talk_var['alice_tv']  = 0 # смотрели тв с Алисой
+    $ talk_var['al.tv.mas'] = 0 # предлагали Алисе массаж у тв
     if 'smoke' in talk_var:
         $ talk_var['smoke'] = 0
         if flags['smoke.request'] == 'money':
@@ -346,6 +347,23 @@ label after_load:
 
             $ EventsByTime['MorningWoodCont'] = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, poss['seduction'].stn > 0])", sleep=True, cut=True)
             $ dcv['mw'] = Daily(done=True, enabled=True)
+
+        if current_ver < "0.03.9.002":
+            $ current_ver = "0.03.9.002"
+
+            $lisa.add_schedule(Schedule((0, 1, 2, 3, 4, 5, 6), '8:0', '8:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105))
+            $ flags['alice.tv.mass'] = 0
+            $ talk_var['al.tv.mas'] = 0
+            $ poss['seduction'].stages[3].ps = ""
+            $ poss['seduction'].stages.append(PossStage("interface poss mentor ep04", _("Похоже, интерес Лизы к противоположному полу и всему, что связано со взрослой жизнью, растёт не по дням, а по часам. Не знаю уж, мой стоящий по утрам член так её раззодорил или ещё что-то, но она согласилась меня слушаться по вопросам о мальчиках и всем этим взрослым штучкам... Вот только прежде, чем учить, может быть стоит самому чему-то научиться? А самое главное - при этом ничего не испортить, а то она снова откажется..."), _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")))
+
+            $ kol_choco = 0
+            $ items['choco'] = Item(_("КОНФЕТЫ С ЛИКЁРОМ"), _("Шоколадные конфеты с ликёром. Уникальные ароматизаторы скрывают вкус алкоголя. Отлично поднимают настроение. Очень крепкие."), "choco", 2, 20)
+            $ dcv['tvchoco'] = Daily(done=True, enabled=True)
+            $ tier = 0
+
+            $ alice_good_mass = _("{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n")
+            $ alice_bad_mass  = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
 
         if current_ver < config.version:
             $ current_ver = config.version

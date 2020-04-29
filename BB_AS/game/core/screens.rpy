@@ -947,10 +947,18 @@ screen room_navigation():
                                 align (0.5, 0.0) focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')] at middle_wait
                 text _("ЖДАТЬ") font 'trebucbd.ttf' size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
+    # $ tl = lisa
+    # $ tl.plan_name = 'sun'
     vbox:  # Время и день недели
         align(0.5, 0.01)
         text tm xalign(0.5) font 'hermes.ttf' size 60 drop_shadow[(2, 2)]
         text weekdays[(day+2) % 7][1] xalign(0.5) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
+        # textbutton 'text MorningWood' action Replay('MorningWood')
+        # textbutton 'text gift_swimsuit':
+        #     action Replay('gift_swimsuit.swimsuit_show', scope = {
+        #             'lisa' : tl,
+        #             'flags': {'promise_kiss':True},
+        #             })
 
     vbox: # деньги и зрители
         align(0.99, 0.01)

@@ -8,14 +8,14 @@ define red    = "#FF0000"
 define orange = "#E59400"
 define gray   = "#808080"
 
-default failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
-default succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
+define failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
+define succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
 
-default undetect = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
-default spotted  = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
+define undetect = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
+define spotted  = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
 
-default alice_good_mass = _("{color=[lime]}{i}Алисе понравился массаж!{/i}{/color}\n")
-default alice_bad_mass = _("{color=[orange]}{i}Алисе не понравился массаж!{/i}{/color}\n")
+define alice_good_mass = _("{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n")
+define alice_bad_mass  = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
 
 define config.has_autosave = False
 define config.has_quicksave = False
@@ -68,8 +68,9 @@ define talks = {
     'alice_tv'   : TalkTheme('alice', _("Не возражаешь против компании?"), 'alice_talk_tv', "talk_var['alice_tv']==0 and alice.plan_name == 'tv'"),
     'aboutbooks' : TalkTheme('alice', _("Что читаешь?"), 'alice_aboutbooks', "alice.plan_name == 'read' and poss['secretbook'].stn < 0"),
     'ann_mw'     : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "flags['morning_erect'] == 1"),
-    'lisa_mw'    : TalkTheme('lisa', _("Насчёт этого случая утром..."), 'Lisa_MorningWood', "poss['seduction'].stn == 0", 0, "talkcooldown"),
-    'lisa_mwcont': TalkTheme('lisa', _("Хотел поговорить о Большом Максе..."), 'Lisa_MorningWoodCont', "flags['morning_erect']==3"),
+    'lisa_mw'    : TalkTheme('lisa', _("Насчёт этого случая утром..."), 'Lisa_MorningWood', "poss['seduction'].stn == 0 and current_room==house[0]", 0, "talkcooldown"),
+    'lisa_mw2'   : TalkTheme('lisa', _("Хотел поговорить о Большом Максе..."), 'Lisa_MorningWoodCont', "flags['morning_erect']==3 and current_room==house[0]"),
+    'lisa_mw3'   : TalkTheme('lisa', _("А ты у нас шалунья, оказывается..."), 'Lisa_MorningWoodCont', "flags['morning_erect']==5 and current_room==house[0]"),
     'lisa_sg1'   : TalkTheme('lisa', _("Насчёт успеваемости..."), 'Lisa_sg1', "poss['sg'].stn == 0"),
     'lisa_sg2'   : TalkTheme('lisa', _("Ну как, ты подумала о моих условиях?"), 'Lisa_sg2', "poss['sg'].stn == 1 and talk_var['lisa.pun'] > 0"),
     'lisa_hw'    : TalkTheme('lisa', _("Помочь с уроками?"), 'Lisa_HomeWork', "poss['sg'].stn > 1 and not flags['lisa_hw'] and lisa.plan_name == 'homework'"),

@@ -317,8 +317,8 @@ label dinner_3:
     Max_11 "Ну и ладно!"
     Ann_01 "Вижу, вы уже нашли общий язык? Ладно. Думаю, ужин закончен. Всем спасибо. Лиза, как всегда, моет посуду, а я пойду поваляюсь в ванне."
     Max_01 "Ага, спасибо за ужин."
-    $ AddRelMood("ann", 0, __mmood)
-    $ AddRelMood("lisa", 0, __lmood)
+    $ AddRelMood('ann', 0, __mmood)
+    $ AddRelMood('lisa', 0, __lmood)
     jump after_dinner
 
 
@@ -397,8 +397,8 @@ label dinner_4:
         "А что вы будете делать?":
             Ann_14 "Макс, твои глупые вопросы меня смущают. В общем, не теряйте, утром вернусь..."
             Max_00 "Ладно, мам..."
-    $ AddRelMood("alice", 0, __alice)
-    $ AddRelMood("ann", 0, __ann)
+    $ AddRelMood('alice', 0, __alice)
+    $ AddRelMood('ann', 0, __ann)
 
     jump after_dinner
 

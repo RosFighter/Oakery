@@ -423,13 +423,13 @@ label breakfast_2:
 
     Ann_00 "Кто знает. Посмотрим, к чему это всё приведёт. В любом случае, я рада, что не придётся трястись в общественном транспорте и теперь точно успею. Ну всё, я побежала!"
     Max_00 "Давай, удачи..."
-    $ AddRelMood("lisa", 0, __mood)
+    $ AddRelMood('lisa', 0, __mood)
     jump after_breakfast
 
     label .ok:
         Ann_07 "Ну всё, ещё раз всем спасибо. А тебе, Лиза, удачи в школе. Не подведи меня!"
         Max_01 "Пока, мам..."
-        $ AddRelMood("lisa", 0, __mood)
+        $ AddRelMood('lisa', 0, __mood)
         jump after_breakfast
 
 
@@ -539,7 +539,7 @@ label breakfast_3:
         "{i}закончить завтрак{/i}":
             pass
 
-    $ AddRelMood("alice", 0, __mood)
+    $ AddRelMood('alice', 0, __mood)
     jump after_breakfast
 
 
@@ -650,7 +650,7 @@ label breakfast_5:
 
     Ann_05 "Конечно, я буду очень рада, если вы все найдёте общий язык с Эриком и подружитесь. Но хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
     Max_00 "Спасибо..."
-    $ AddRelMood("ann", 0, __ann)
+    $ AddRelMood('ann', 0, __ann)
     jump after_breakfast
 
 

@@ -293,7 +293,7 @@ label ann_dressed_work:
                     $ __mood -= 10
                     Ann_07 "Ну, бывает. Я сама ещё не привыкла к тому, что замков нигде нет. Ладно, дорогой. Подожди за дверью, пока мама одевается. хорошо?"
                     Max_00 "Хорошо, мам..."
-            $ AddRelMood("ann", 0, __mood)
+            $ AddRelMood('ann', 0, __mood)
             jump .end
         "{i}заглянуть в окно{/i}":
             $ __ran1 = renpy.random.choice(['01', '01a', '02', '03', '03a', '04'])
@@ -352,7 +352,8 @@ label ann_dressed_work:
                     $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-03'+mgg.dress)
                     Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
                     $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-02'+mgg.dress)
-                    $ AddRelMood('ann', 100, 200)
+                    $ AddRelMood('ann', 0, 200)
+                    $ AttitudeChange('ann', 0.9)
                     menu:
                         Ann_04 "А теперь иди, сынок... Пора заниматься делами."
                         "Хорошо... Я тебя люблю, мам!":
@@ -361,11 +362,13 @@ label ann_dressed_work:
                             jump .goodday
                 else:
                     $ mgg.social += 0.1
-                    $ AddRelMood('ann', 85, 170)
+                    $ AddRelMood('ann', 0, 170)
+                    $ AttitudeChange('ann', 0.8)
                     jump .fail
 
             "Ну мам! Этого было так мало, давай ещё..." if __open:
-                $ AddRelMood('ann', 75, 150)
+                $ AddRelMood('ann', 0, 150)
+                $ AttitudeChange('ann', 0.7)
                 jump .fail
             "Конечно, мам! Хорошего тебе дня...":
                 jump .goodday
@@ -446,7 +449,7 @@ label ann_dressed_shop:
                 "Ой, извини...":
                     Ann_07 "И Макс... Постарайся больше не входить без стука, хорошо?"
                     Max_00 "Хорошо, мам..."
-            $ AddRelMood("ann", 0, __mood)
+            $ AddRelMood('ann', 0, __mood)
             jump .end
         "{i}заглянуть в окно{/i}":
             $ __ran1 = renpy.random.choice(['03', '03a', '04'])
@@ -505,7 +508,8 @@ label ann_dressed_shop:
                     $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-03'+mgg.dress)
                     Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
                     $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-02'+mgg.dress)
-                    $ AddRelMood("ann", 100, 200)
+                    $ AddRelMood('ann', 0, 200)
+                    $ AttitudeChange('ann', 0.9)
                     menu:
                         Ann_04 "А теперь иди, сынок... Пора заниматься делами."
                         "Хорошо... Я тебя люблю, мам!":
@@ -514,11 +518,13 @@ label ann_dressed_shop:
                             jump .goodday
                 else:
                     $ mgg.social += 0.1
-                    $ AddRelMood('ann', 85, 170)
+                    $ AddRelMood('ann', 0, 170)
+                    $ AttitudeChange('ann', 0.8)
                     jump .fail
 
             "Ну мам! Этого было так мало, давай ещё..." if __open:
-                $ AddRelMood('ann', 75, 150)
+                $ AddRelMood('ann', 0, 150)
+                $ AttitudeChange('ann', 0.7)
                 jump .fail
             "Конечно, мам! Хорошего тебе дня...":
                 jump .goodday
