@@ -362,8 +362,16 @@ label after_load:
             $ dcv['tvchoco'] = Daily(done=True, enabled=True)
             $ tier = 0
 
+        if current_ver < "0.03.9.003":
+            $ current_ver = "0.03.9.003"
+
             $ alice_good_mass = _("{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n")
             $ alice_bad_mass  = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
+            $ poss['nightclub'].stages[2].ps = ""
+            $ poss['nightclub'].stages[3].ps = ""
+            $ poss['nightclub'].stages[4].ps = ""
+            $ poss['nightclub'].stages[6].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
+            $ dcv['alice.secret'] = Daily(done=True, enabled=True)
 
         if current_ver < config.version:
             $ current_ver = config.version

@@ -472,7 +472,7 @@ label alice_talk_tv:
                     jump .end
         else:
             Alice_04 "[succes!t]Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
-            Max_07 "{i}ого...{/i}"
+            Max_07 "{i}Ого...{/i}"
             ### Алиса без джинсов
             $ _dress = mgg.dress+'c'
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -480,7 +480,7 @@ label alice_talk_tv:
                 Alice_05 "Да, так гораздо лучше. Только ты не пялься, куда не надо. Вижу, краем глаза пытаешься что-то разглядеть. Вот не надо. Лучше, продолжай массаж..."
                 "{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}" if not _drink:
                     jump .massage_next
-                "{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}" if and _drink:
+                "{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}" if _drink:
                     jump .massage_next
 
     label .massage_next:
