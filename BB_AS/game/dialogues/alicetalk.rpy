@@ -338,7 +338,7 @@ label alice_talk_tv:
                 pass
     else:
         menu:
-            Alice_04 "Дай-ка подумаю... Да! Я готова..."
+            Alice_07 "Дай-ка подумаю... Да! Я готова..."
             "Хорошо {i}(начать массаж){/i}":
                 jump .massage
             "Может конфетку перед массажем?" if kol_choco:  ### если Макс знает о слабости Алисы
@@ -390,7 +390,7 @@ label alice_talk_tv:
                     $ notify_list.append(_("Конфеты закончились"))
                 $ mgg.social += 0.1
                 menu:   ### Убеждение удалось
-                    Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... А ладно, две... Вкусно... Теперь я готова, начинай массаж!"
+                    Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... Вкусно... Теперь я готова, начинай массаж!"
                     "Ну, хорошо {i}(начать массаж){/i}":
                         jump .massage
             else:
@@ -484,7 +484,7 @@ label alice_talk_tv:
                     jump .massage_next
 
     label .massage_next:
-        if RandomChance(ch15.ch) and _drink: ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
+        if RandomChance(_ch15.ch) and _drink: ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
             $ mgg.massage += 0.1
             $ _pose = {'03':'05', '04':'06'}[_pose]
             scene BG char Alice tv-mass-05
@@ -511,7 +511,7 @@ label alice_talk_tv:
                         "{i}продолжать массаж{/i}":
                             pass
 
-        elif RandomChance(ch20.ch) and not _drink: ### {i}Алисе понравился массаж!{/i} конфету Алиса не ела
+        elif RandomChance(_ch20.ch) and not _drink: ### {i}Алисе понравился массаж!{/i} конфету Алиса не ела
             $ mgg.massage += 0.1
             Alice_03 "Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
             Max_04 "Не за что..."
@@ -1521,8 +1521,11 @@ label gift_pajamas:
 
     $ sorry_gifts['alice'].valid = {'ritter-m', 'ferrero-m'}
 
-    $ cloth_type['alice']['casual'] = 'b'
-    $ cloth_type['alice']['day.left'] = 3
+    $ clothes[alice].casual.sel.append(Garb('b', '01c', 'Пижама', True))
+    $ clothes[alice].casual.cur = 1
+    $ clothes[alice].casual.rand = True
+    # $ cloth_type['alice']['casual'] = 'b'
+    # $ cloth_type['alice']['day.left'] = 3
     $ sorry_gifts['alice'].give.append(4)
     $ spent_time += 10
     $ sorry_gifts['alice'].owe = False

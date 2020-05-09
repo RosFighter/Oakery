@@ -150,6 +150,14 @@ label NewDay:
             if sorry_gifts[char].owe and sorry_gifts[char].left > 0:
                 sorry_gifts[char].left -= 1
 
+        # для каждого типа одежды каждого персонажа запустим рандомную смену
+        for char in clothes:
+            l = clothes[char].GetList()
+            for cl_t in l:
+                if eval('clothes[char].'+cl_t+'.rand'):
+                    eval('clothes[char].'+cl_t+'.SetRand()')
+
+
     $ GetDeliveryList()
 
     if 0 < GetWeekday(prevday) < 6:
@@ -182,11 +190,11 @@ label NewDay:
 
     $ talk_var['sun_oiled'] = 0  # Алиce можно намазать кремом
 
-    if 'pajamas' in alice.gifts:  # Если у Алисы есть пижама, то каждые 3 дня она меняет тип одежды
-        $ cloth_type['alice']['day.left'] -= 1
-        if cloth_type['alice']['day.left'] == 0:
-            $ cloth_type['alice']['casual'] = 'b' if cloth_type['alice']['casual'] == 'a' else 'a'
-            $ cloth_type['alice']['day.left'] = 2
+    # if 'pajamas' in alice.gifts:  # Если у Алисы есть пижама, то каждые 3 дня она меняет тип одежды
+    #     $ cloth_type['alice']['day.left'] -= 1
+    #     if cloth_type['alice']['day.left'] == 0:
+    #         $ cloth_type['alice']['casual'] = 'b' if cloth_type['alice']['casual'] == 'a' else 'a'
+    #         $ cloth_type['alice']['day.left'] = 2
     return
 
 
@@ -372,6 +380,81 @@ label after_load:
             $ poss['nightclub'].stages[4].ps = ""
             $ poss['nightclub'].stages[6].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
             $ dcv['alice.secret'] = Daily(done=True, enabled=True)
+
+        if current_ver < "0.03.9.004":
+            $ current_ver = "0.03.9.004"
+
+            python:
+                clothes = {
+                    lisa  : Clothing(),
+                    alice : Clothing(),
+                    ann   : Clothing(),
+                    mgg   : Clothing(),
+                    }
+
+                clothes[lisa].casual = Clothes(_("Повседневная"), [
+                        Garb('a', '01a', 'Обычная одежда'),
+                    ])
+                clothes[lisa].learn = Clothes(_("Для домашней работы"), [
+                        Garb('a', '01a', 'Обычная одежда'),
+                        Garb('c', '04b', 'Полотенце', True),
+                    ])
+                if 'bathrobe' in lisa.gifts:
+                    clothes[lisa].casual.sel.append(Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
+                    clothes[lisa].learn.sel.insert(1, Garb('b', '04', 'Халатик', True))
+
+                clothes[lisa].swimsuit = Clothes(_("КУПАЛЬНИК"), [
+                        Garb('a', '03', 'Закрытый купальник'),
+                    ])
+                if 'bikini' in lisa.gifts:
+                    clothes[lisa].swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
+
+                clothes[lisa].sleep = Clothes(_("Для сна"), [
+                        Garb('a', '02', 'Обычная одежда'),
+                        Garb('b', '02a', 'Маечка и трусики'),
+                    ])
+                if poss['sg'].stn > 2:
+                    clothes[lisa].sleep.cur = 1
+
+                clothes[alice].casual = Clothes(_("Повседневная"), [
+                        Garb('a', '01a', 'Обычная одежда', True),
+                    ])
+                if 'pajamas' in alice.gifts:
+                    clothes[alice].casual.sel.append(Garb('b', '01c', 'Пижама', True))
+
+                clothes[ann].casual = Clothes(_("Повседневная"), [
+                        Garb('a', '01a', 'Обычная одежда', True),
+                        Garb('b', '01b', 'Футболка', True),
+                    ])
+                clothes[ann].casual.rand = True
+                clothes[ann].cook_morn = Clothes(_("Для приготовления завтрака"), [
+                        Garb('a', '05b', 'Спортивная форма + фартук', True),
+                        Garb('b', '01c', 'Футболка + фартук', True),
+                    ])
+                clothes[ann].cook_morn.rand = True
+                clothes[ann].cook_eve = Clothes(_("Для приготовления ужина"), [
+                        Garb('b', '01c', 'Футболка + фартук', False, True),
+                    ])
+                clothes[ann].rest_eve = Clothes(_("Для вечернего отдыха"), [
+                        Garb('a', '01b', 'Футболка', True),
+                        Garb('b', '04b', 'Полотенце', True),
+                    ])
+                clothes[ann].rest_eve.rand = True
+                clothes[ann].sleep = Clothes(_("Для сна"), [
+                        Garb('a', '02', 'Обычная одежда для сна', True),
+                    ])
+                if 'nightie' in ann.gifts:
+                    clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
+                    clothes[ann].sleep.rand = True
+
+                clothes[mgg].casual = Clothes(_("Повседневная"), [
+                        Garb('a', '01a', 'Обычная одежда', True),
+                    ])
+                if items['max-a'].have:
+                    clothes[mgg].casual.sel.append(Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
+                    clothes[mgg].casual.cur = 1
+
+                del globals()['cloth_type']
 
         if current_ver < config.version:
             $ current_ver = config.version

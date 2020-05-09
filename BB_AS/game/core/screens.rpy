@@ -1257,20 +1257,17 @@ screen menu_userinfo():
                 vbox spacing 5:
                     button background None  action SetVariable('CurChar', 'max') xsize 180:
                         xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                        textbutton _("Макс") action SetVariable('CurChar', 'max') selected CurChar == 'max'
+                        textbutton _("Макс") action SetVariable('CurChar', 'max') selected CurChar == 'max' text_selected_color gui.text_color
                         foreground 'interface marker'
                     for char in chars:
                         button background None action SetVariable('CurChar', char) xsize 180:
                             xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                            textbutton chars[char].name action SetVariable('CurChar', char) selected CurChar == char
+                            textbutton chars[char].name action SetVariable('CurChar', char) selected CurChar == char text_selected_color gui.text_color
                             foreground 'interface marker'
             vbar value YScrollValue('vp') style 'info_vscroll'
 
         if CurChar == 'max': ## временное определение на стадии вывода изображения
-            if mgg.dress == 'a':
-                add 'Max info 01' size (550, 900) xpos -50 ypos 10
-            else:
-                add 'Max info 01b' size (550, 900) xpos -50 ypos 10
+            add 'Max info '+clothes[mgg].casual.GetCur().info size (550, 900) xpos -50 ypos 10
 
         else:
             frame xysize(550, 900) background None:
@@ -1279,7 +1276,7 @@ screen menu_userinfo():
                 else:
                     add chars[CurChar].pref+' info '+chars[CurChar].dress_inf size (550, 900) xpos -50 ypos 10
 
-        viewport area (0, 30, 880, 850):
+        viewport area (0, 30, 880, 800):
             vbox spacing 20:
                 frame xsize 850 background None:
                     if CurChar == 'max':
@@ -1298,8 +1295,7 @@ screen menu_userinfo():
                                         text _("Отношения с [char_name!t]") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text GetRelMax(char)[1] size 24
-                            frame:
-                                area (0, 0, 350, 25)
+                            frame area (0, 0, 350, 25):
                                 background None
 
                             hbox xfill True:
@@ -1318,8 +1314,7 @@ screen menu_userinfo():
                                 frame xfill True background None:
                                     text str(round(mgg.cleanness, 1))+"%" size 24
 
-                            frame:
-                                area (0, 0, 350, 25)
+                            frame area (0, 0, 350, 25):
                                 background None
                             frame xsize 350 background None:
                                 text _("Навыки:") size 26 font 'trebucbd.ttf'
@@ -1391,20 +1386,120 @@ screen menu_userinfo():
                                         text _("Влияние Эрика") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(chars[CurChar].free)+"%" size 24
+
+    frame area(1350, 1000, 450, 50) background None:
+        textbutton _("Задать одежду персонажа") xalign 1.0:
+            text_size 24
+            if CurChar == 'max':
+                action [SetVariable('cloth', clothes[mgg]), Hide('menu_userinfo'), Show('ClothesSelect')]
+                sensitive clothes[mgg].Opens()
+            elif chars[CurChar] in clothes:
+                action [SetVariable('cloth', clothes[chars[CurChar]]), Hide('menu_userinfo'), Show('ClothesSelect')]
+                sensitive clothes[chars[CurChar]].Opens()
+            else:
+                action NullAction()
+                sensitive False
+
     key 'K_ESCAPE' action Jump('AfterWaiting')
     key 'mouseup_3' action Jump('AfterWaiting')
 
+style userinfo_button is default:
+    left_padding 30
+
 style userinfo_button_text is default:
     font 'trebucbd.ttf'
-    xpos 30
+    # xpos 30
     yalign .0
     size 30
     idle_color gui.accent_color
     hover_color gui.text_color
-    selected_color gui.text_color
+    insensitive_color gui.insensitive_color
 
 style info_vscroll is vscrollbar:
     unscrollable 'hide'
+
+screen ClothesSelect():
+    tag menu
+    add 'interface phon'
+    style_prefix 'clothesselect'
+    frame area(150, 95, 750, 50) background None:
+        text _("ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА") color gui.accent_color size 28 font 'hermes.ttf'
+
+    imagebutton pos (1740, 100) auto 'interface close %s' action [Hide('ClothesSelect'), Show('menu_userinfo')] focus_mask True at close_zoom
+
+    $ list = cloth.GetList()
+    for l in list:
+        if not eval('cloth.'+l).Opens():
+            $ list.remove(l)
+    default cur_cl = list[0]
+    $ list_var = eval('cloth.'+cur_cl).GetOpen()
+    default cur_var = 0
+    hbox pos (150, 150) spacing 30:
+        hbox ypos 25 xsize 400 spacing 5:
+            viewport mousewheel 'change' draggable True id 'vp':
+                vbox spacing 5:
+                    for l in list:
+                        button background None action [SetScreenVariable('cur_cl', l), SetScreenVariable('cur_var', 0)] xsize 380:
+                            xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                            textbutton eval('cloth.'+l).name action [SetScreenVariable('cur_cl', l), SetScreenVariable('cur_var', 0)] selected cur_cl == l
+                            foreground 'interface marker'
+            vbar value YScrollValue('vp') style 'info_vscroll'
+
+        imagebutton pos (0, 360) auto 'interface prev %s':
+            focus_mask True
+            sensitive cur_var > 0
+            action SetScreenVariable('cur_var', cur_var-1)
+
+        if CurChar == 'max':
+            add 'Max clot '+eval('cloth.'+cur_cl).sel[cur_var].info
+        else:
+            add chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[cur_var].info
+
+        imagebutton pos (0, 360) auto 'interface next %s':
+            focus_mask True
+            sensitive cur_var < len(list_var)-1
+            action SetScreenVariable('cur_var', cur_var+1)
+
+    vbox pos (1420, 900) spacing 15:
+        textbutton _("Автосмена каждые 2 дня"):
+            xsize 400
+            action ToggleVariable('cloth.'+cur_cl+'.rand', True, False)
+            text_idle_color gui.idle_color
+            text_hover_color gui.hover_color
+            text_selected_color gui.selected_color
+            text_insensitive_color gui.insensitive_color
+            if eval('cloth.'+cur_cl).rand:
+                foreground 'gui/button/check_selected_foreground.png'
+
+
+        textbutton _("Сделать текущей"):
+            xsize 400
+            text_size 30
+            action SetVariable('cloth.'+cur_cl+'.cur', cur_var)
+            sensitive eval('cloth.'+cur_cl).cur != cur_var
+            text_selected_color gui.selected_color
+            text_insensitive_color gui.insensitive_color
+            text_idle_color gui.accent_color
+            text_hover_color gui.text_color
+
+    key 'K_ESCAPE' action [Hide('ClothesSelect'), Show('menu_userinfo')]
+    key 'mouseup_3' action [Hide('ClothesSelect'), Show('menu_userinfo')]
+
+style clothesselect_button is default:
+    padding (30, 7, 6, 7)
+
+style clothesselect_button_text is default:
+    font 'trebucbd.ttf'
+    yalign .0
+    size 24
+    idle_color gui.accent_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+    insensitive_color gui.insensitive_color
+
+style clothesselect_vscroll is vscrollbar:
+    unscrollable 'hide'
+
 
 ################################################################################
 

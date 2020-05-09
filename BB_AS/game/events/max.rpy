@@ -531,6 +531,10 @@ label delivery2:
     if 'solar' in delivery_list[1]:
         $ kol_cream += 30
         $ items['solar'].InShop = False
+    if 'max-a' in delivery_list[1]:
+        $ clothes[mgg].casual.sel.append(Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
+        $ clothes[mgg].casual.cur = 1
+
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 
     scene BG delivery-00

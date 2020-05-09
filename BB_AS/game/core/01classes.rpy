@@ -11,6 +11,130 @@ init python:
 
 
     ############################################################################
+    class Garb:
+        def __init__(self, suf, info, name="", change=False, rand=False):
+            self.suf    = suf    # суфикс для выбора спрайта
+            self.info   = info   # имя изображения для инфо-окна
+            self.name   = name   # наименование для окна выбора варианта одежды
+            self.change = change # доступен выбор этого варианта для ручной установки
+            if change:
+                self.rand = True  # если вариант доступен для выбора, то и для случайного выбора он тоже доступен
+            else:
+                self.rand = rand  # этот вариант доступен для случайного выбора
+
+    class Clothes:
+        def __init__(self, name="", sel=[]):
+            self.name = name   # Наименование типа одежды для окна выбора
+            self.sel  = sel    # список доступных вариантов выбора (тип Garb)
+            self.cur  = 0      # номер выбранного варианта из списка
+            self.rand = False  # выбирать случайно из доступных вариантов раз в days дней
+            self.left = 0      # осталось дней до случайного выбора
+            self.days = 1      # количество дней по умолчанию до смены одежды
+
+        def Opens(self):  # определяем, есть ли достаточно вариантов для ручной установки
+            l = [i for i in range(len(self.sel)) if self.sel[i].change]
+            return True if len(l)>1 else False
+
+        def RandOpens(self):
+            l = [i for i in range(len(self.sel)) if self.sel[i].rand]
+            return True if len(l)>1 else False
+
+        def SetRand(self):
+            if self.left > 0:
+                self.left -= 1
+                return
+            l = [i for i in range(len(self.sel)) if self.sel[i].rand and i!=self.cur for j in range(5)]
+            if len(l):
+                renpy.random.shuffle(l)
+                self.cur = renpy.random.choice(l)
+                self.left = self.days
+
+        def GetOpen(self):
+            return [i for i in range(len(self.sel)) if self.sel[i].change]
+
+        def GetCur(self):
+            return self.sel[self.cur]
+
+    class Clothing:
+        def __init__(self):
+            self.casual    = None # повседневная одежда
+            self.sleep     = None # одежда для сна
+            self.swimsuit  = None # купальник
+            self.sports    = None # спортивная форма
+            self.work      = None # школьная форма или рабочая одежда
+            self.club      = None # одежда для клуба
+            self.out       = None # одежда для прогулок
+            self.cook_morn = None # для утренней готовки
+            self.cook_eve  = None # для вечерней готовки
+            self.rest_morn = None # для утреннего отдыха
+            self.rest_day  = None # для отдыха днем
+            self.rest_eve  = None # для вечернего отдыха
+            self.learn     = None # для выполнения домашних заданий
+
+        def GetList(self):
+            l = []
+            if self.casual is not None:
+                l.append('casual')
+            if self.sleep is not None:
+                l.append('sleep')
+            if self.swimsuit is not None:
+                l.append('swimsuit')
+            if self.sports is not None:
+                l.append('sports')
+            if self.work is not None:
+                l.append('work')
+            if self.club is not None:
+                l.append('club')
+            if self.out is not None:
+                l.append('out')
+            if self.cook_morn is not None:
+                l.append('cook_morn')
+            if self.cook_eve is not None:
+                l.append('cook_eve')
+            if self.rest_morn is not None:
+                l.append('rest_morn')
+            if self.rest_day is not None:
+                l.append('rest_day')
+            if self.rest_eve is not None:
+                l.append('rest_eve')
+            if self.learn is not None:
+                l.append('learn')
+            return l
+
+        def Opens(self):
+            l = []
+            if self.casual is not None and self.casual.Opens():
+                l.append('casual')
+            if self.sleep is not None and self.sleep.Opens():
+                l.append('sleep')
+            if self.swimsuit is not None and self.swimsuit.Opens():
+                l.append('swimsuit')
+            if self.sports is not None and self.sports.Opens():
+                l.append('sports')
+            if self.work is not None and self.work.Opens():
+                l.append('work')
+            if self.club is not None and self.club.Opens():
+                l.append('club')
+            if self.out is not None and self.out.Opens():
+                l.append('out')
+            if self.cook_morn is not None and self.cook_morn.Opens():
+                l.append('cook_morn')
+            if self.cook_eve is not None and self.cook_eve.Opens():
+                l.append('cook_eve')
+            if self.rest_morn is not None and self.rest_morn.Opens():
+                l.append('rest_morn')
+            if self.rest_day is not None and self.rest_day.Opens():
+                l.append('rest_day')
+            if self.rest_eve is not None and self.rest_eve.Opens():
+                l.append('rest_eve')
+            if self.learn is not None and self.learn.Opens():
+                l.append('learn')
+            return True if len(l) else False
+
+
+    ############################################################################
+
+
     class Schedule:  # действие в расписании персонажа
         """ действие расписания персонажа для укладки в список
             блоки на один и тот же период с разным сдвигом в одном периоде или
@@ -615,9 +739,6 @@ init python:
 
         def __repr__(self):
             return "Прибыль: {self.total}({self.today}), зрителей: {self.public}, прирост: {self.grow}".format(self=self)
-
-
-    ############################################################################
 
 
     ############################################################################

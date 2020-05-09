@@ -395,6 +395,7 @@ label eric_ann_fucking:
         $ renpy.show('FG ann&eric-voyeur-01')
 
     if RandomChance(_ch1.ch):
+        $ ann.dress_inf = '00'
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
         elif fuck_scene == 2:

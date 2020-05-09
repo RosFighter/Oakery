@@ -393,6 +393,9 @@ label ann_dressed_work:
         $ items['nightie'].have = False
         $ items['nightie'].InShop = False
         $ ann.gifts.append('nightie')
+        $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА, True'))
+        $ clothes[ann].sleep.cur = 1
+        $ clothes[ann].sleep.rand = True
         if ann.inferic is not None:
             $ ann.inferic = clip(ann.inferic-50.0, 0.0, 100.0)
         if ann.infmax is not None:

@@ -849,8 +849,8 @@ screen preferences():
                     vbox:
                         style_prefix "radio"
                         label _("Дополнительно")
-                        textbutton _("Patreon-интро") action ToggleVariable("persistent.orint", False, True)
-                        textbutton _("Оригинальное интро") action ToggleVariable("persistent.orint", True, False)
+                        textbutton _("Patreon-интро") action SetVariable("persistent.orint", False)
+                        textbutton _("Оригинальное интро") action SetVariable("persistent.orint", True)
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.
 

@@ -135,6 +135,68 @@ label InitCharacters: # стартовая инициация персонаже
                     Schedule((1, 2, 3, 4, 5, 6, 0), '20:0', '21:59', 'blog', _("в своей комнате"), 'house', 1, 'alice_rest_evening', talklabel='alice_evening_closer', glow=110),
                     Schedule((1, 2, 3, 4, 5, 6, 0), '22:0', '23:59', 'tv', _("смотрит ТВ"), 'house', 4, 'alice_tv', talklabel='alice_tv_closer'),
                     )
+
+        clothes = {
+            lisa  : Clothing(),
+            alice : Clothing(),
+            ann   : Clothing(),
+            mgg   : Clothing(),
+            }
+
+        clothes[lisa].casual = Clothes(_("Повседневная"), [
+                Garb('a', '01a', 'Обычная одежда'),
+            ])
+        clothes[lisa].sleep = Clothes(_("Для сна"), [
+                Garb('a', '02', 'Обычная одежда'),
+                Garb('b', '02a', 'Маечка и трусики'),
+            ])
+        clothes[lisa].swimsuit = Clothes(_("КУПАЛЬНИК"), [
+                Garb('a', '03', 'Закрытый купальник'),
+            ])
+        # clothes[lisa].work = Clothes(_("Школьная форма"), [
+        #         Garb('', '01b', 'Обычная форма'),
+        #     ])
+        # clothes[lisa].out = Clothes(_("Одежда для прогулок"), [
+        #         Garb('', '01', 'Обычная одежда для прогулок'),
+        #     ])
+        clothes[lisa].learn = Clothes(_("Для домашней работы"), [
+                Garb('a', '01a', 'Обычная одежда'),
+                Garb('c', '04b', 'Полотенце'),
+            ])
+
+        clothes[alice].casual = Clothes(_("Повседневная ОДЕЖДА"), [
+                Garb('a', '01a', 'Обычная одежда', True),
+            ])
+
+        clothes[ann].casual = Clothes(_("Повседневная"), [
+                Garb('a', '01a', 'Обычная одежда', False, True),
+                Garb('b', '01b', 'Футболка', False, True),
+            ])
+        clothes[ann].casual.rand = True
+
+        clothes[ann].cook_morn = Clothes(_("Для приготовления завтрака"), [
+                Garb('a', '05b', 'Спортивная форма + фартук', False, True),
+                Garb('b', '01c', 'Футболка + фартук', False, True),
+            ])
+        clothes[ann].cook_morn.rand = True
+        clothes[ann].cook_eve = Clothes(_("Для приготовления ужина"), [
+                Garb('b', '01c', 'Футболка + фартук', False, True),
+            ])
+
+        clothes[ann].rest_eve = Clothes(_("Для вечернего отдыха"), [
+                Garb('a', '01b', 'Футболка', False, True),
+                Garb('b', '04b', 'Полотенце', False, True),
+            ])
+        clothes[ann].rest_eve.rand = True
+
+        clothes[ann].sleep = Clothes(_("Для сна"), [
+                Garb('a', '02', 'Обычная одежда для сна'),
+            ])
+
+        clothes[mgg].casual = Clothes(_("Повседневная"), [
+                Garb('a', '01a', 'Обычная одежда', True),
+            ])
+
     return
 
 
@@ -226,7 +288,7 @@ label InitStuff: # стартовая инициация предметов
             "ferrero-b"  : Item(_("Конфеты \"Ferrero Rocher\" (24 штуки)"), _("Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."), "ferrero-2", 2, 60),
             "solar"      : Item(_("КРЕМ ДЛЯ ЗАГАРА"), _("Легкий, хорошо впитывающийся препарат для ускорения загара обладает увлажняющими и защитными свойствами. Рекомендуется для применения на пляже и в солярии."), "solar", 5, 50),
             "max-a"      : Item(_("МУЖСКИЕ МАЙКА И ШОРТЫ"), _("Свободный и лёгкий летний комплект одежды на каждый день."), "max-a", 0, 150, cells=2),
-            "choco"      : Items(_("КОНФЕТЫ С ЛИКЁРОМ"), _("Шоколадные конфеты с ликёром. Уникальные ароматизаторы скрывают вкус алкоголя. Отлично поднимают настроение. Очень крепкие."), "choco", 2, 20),
+            "choco"      : Item(_("КОНФЕТЫ С ЛИКЁРОМ"), _("Шоколадные конфеты с ликёром. Уникальные ароматизаторы скрывают вкус алкоголя. Отлично поднимают настроение. Очень крепкие."), "choco", 2, 20),
             }
 
         # список товаров для доставки
@@ -420,7 +482,8 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'credit'      : Daily(done=True, enabled=True), # кредит
         'lisa.ad'     : Daily(done=True, enabled=True), # разговор с Лизой после ужина
         'mw'          : Daily(done=True, enabled=True), # утренний стояк
-        'tvchoco'     : Daily(done=True, enabled=True),
+        'tvchoco'     : Daily(done=True, enabled=True), # предложение конфеты во время просмотра ТВ
+        'alice.secret': Daily(done=True, enabled=True), # спросить Лизу о секрете Алисы
         }
 
     # ежедневное подсматривание
@@ -526,25 +589,25 @@ label InitVariable: # стартовая инициация переменных
 
         ae_tv_order = ['01', '02', '03', '04', '05', '06']  # последовательность фильмов, просматриваемых Анной и Эриком
 
-    $ cloth_type = {         # переменная для хранения варианта одежды в течении дня
-        'ann'   : {
-            'casual'  : 'a',
-            'cooking' : 'b',
-            'rest'    : 'a',
-            'day.left': 0,
-            },
-        'alice' : {
-            'casual'  : 'a',
-            'day.left': 2,
-            },
-        'lisa'  : {
-            'casual'  : 'a',
-            'swim'    : 'a',
-            'sleep'   : 'a',
-            'learn'   : 'a',
-            'day.left': 0,
-            },
-        }
+    # $ cloth_type = {         # переменная для хранения варианта одежды в течении дня
+    #     'ann'   : {
+    #         'casual'  : 'a',
+    #         'cooking' : 'b',
+    #         'rest'    : 'a',
+    #         'day.left': 0,
+    #         },
+    #     'alice' : {
+    #         'casual'  : 'a',
+    #         'day.left': 2,
+    #         },
+    #     'lisa'  : {
+    #         'casual'  : 'a',
+    #         'swim'    : 'a',
+    #         'sleep'   : 'a',
+    #         'learn'   : 'a',
+    #         'day.left': 0,
+    #         },
+    #     }
     return
 
 
