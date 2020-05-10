@@ -1450,10 +1450,18 @@ screen ClothesSelect():
             sensitive cur_var > 0
             action SetScreenVariable('cur_var', cur_var-1)
 
-        if CurChar == 'max':
-            add 'Max clot '+eval('cloth.'+cur_cl).sel[cur_var].info
-        else:
-            add chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[cur_var].info
+        imagebutton:
+            action NullAction()
+            focus_mask True
+            xysize (550, 900)
+            if CurChar == 'max':
+                idle 'Max clot '+eval('cloth.'+cur_cl).sel[cur_var].info
+                hover 'Max clot '+eval('cloth.'+cur_cl).sel[cur_var].info+'a'
+            else:
+                idle chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[cur_var].info
+                hover chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[cur_var].info+'a'
+
+
 
         imagebutton pos (0, 360) auto 'interface next %s':
             focus_mask True

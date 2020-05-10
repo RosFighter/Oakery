@@ -507,12 +507,14 @@ init python:
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
-        if items['max-a'].have and '12:00' <= tm < '19:00':
-            if items['max-a'].InShop:
-                items['max-a'].InShop = False
-            mgg.dress = 'b'
-        else:
-            mgg.dress = 'a'
+        # if items['max-a'].have and '12:00' <= tm < '19:00':
+        #     if items['max-a'].InShop:
+        #         items['max-a'].InShop = False
+        #     mgg.dress = 'b'
+        # else:
+        #     mgg.dress = 'a'
+        mgg.dress = clothes[mgg].casual.GetCur().suf
+
         for char in chars:
             prev_shed = chars[char].get_plan(prevday, prevtime)
             cur_shed  = chars[char].get_plan()
@@ -609,7 +611,7 @@ init python:
                 alice.dress_inf = '01'
             elif name == 'cooking':
                 alice.dress = clothes[alice].casual.GetCur().suf  #cloth_type['alice']['casual']
-                alice.dress_inf = clothes[alice].casual.GetCur().info  #'01d' if cloth_type['alice']['casual'] == 'b' else '01b'
+                alice.dress_inf = '01d' if alice.dress == 'b' else '01b'
             elif name == 'smoke':
                 alice.dress = 'b' if flags['smoke'] == 'toples' else 'a'
                 alice.dress_inf = '03b' if flags['smoke'] == 'toples' else '03'
