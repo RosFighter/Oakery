@@ -28,7 +28,7 @@ translate english wash_dishes_alice_6dd3a0ed:
 translate english wash_dishes_alice_9cbbc5d1:
 
     # Alice_07 "Что это с тобой? Но я не откажусь. И... спасибо." nointeract
-    Alice_07 "Really? Doesn't sound like you. I'm not declining the offer, though. Thank you." nointeract
+    Alice_07 "Really? That doesn't sound like you. I'm not declining the offer, though. Thank you." nointeract
 
 # game/dialogues/alicetalk.rpy:52
 translate english wash_dishes_alice_07966f8d:
@@ -40,7 +40,7 @@ translate english wash_dishes_alice_07966f8d:
 translate english wash_dishes_alice_e341ef54:
 
     # Alice_09 "Знаешь что, вали отсюда, пока мокрой тряпкой по голове не получил!" nointeract
-    Alice_09 "You know what, get out before I hit you with a wet rag!" nointeract
+    Alice_09 "You know what? Get out of here before I hit you with a wet rag!" nointeract
 
 # game/dialogues/alicetalk.rpy:72
 translate english talkblog1_3a17a0f5:
@@ -124,13 +124,13 @@ translate english talkblog1_no_4a96e107:
 translate english talkblog1_no_c2e53ff4:
 
     # Alice_13 "Ну, вот среди тех вещей было всё, что я использовала для ведения своего блога. Одежда, различные лаки, кремы... вообще всё!" nointeract
-    Alice_13 "Well, among what we lost there was a whole bunch clothes and makeup I need for my blog." nointeract
+    Alice_13 "Well, among what we lost there was a whole bunch of clothes and makeup I needed for my blog." nointeract
 
 # game/dialogues/alicetalk.rpy:141
 translate english talkblog1_no_a26f49f6:
 
     # Alice_13 "Макс, тебе заняться нечем, кроме как меня доставать? Ты же знаешь, что у меня всё пропало!" nointeract
-    Alice_13 "Max, why are you bothering me, don't you have anything better to do? You know I lost everything." nointeract
+    Alice_13 "Max, why are you bothering me? Don't you have anything better to do? You know I lost everything." nointeract
 
 # game/dialogues/alicetalk.rpy:146
 translate english talkblog1_no_3c44b91d:
@@ -148,19 +148,19 @@ translate english talkblog1_sad_4c5abd35:
 translate english talkblog1_help_9598919f:
 
     # Alice_01 "Ты у нас внезапно стал миллионером? Или просто деньги появились? Самый простой способ - это купить недостающее. Ну, или найти то, что пропало" nointeract
-    Alice_01 "How can you help me, sniff out my missing stuff? I guess I'll have to buy everything I've lost." nointeract
+    Alice_01 "How can you help me? Sniff out my missing stuff? I guess I'll have to buy everything I've lost." nointeract
 
 # game/dialogues/alicetalk.rpy:162
 translate english talkblog1_help_39dfe6d6:
 
     # Alice_13 "А без денег тут ничем не поможешь. Вообще, я в депрессии из-за всей этой истории. Вся жизнь перевернулась..." nointeract
-    Alice_13 "And you can't help without any money. Now I'm depressed, my whole life is upside down." nointeract
+    Alice_13 "And you can't help without any money. Now I'm depressed... my whole life is upside down." nointeract
 
 # game/dialogues/alicetalk.rpy:165
 translate english talkblog1_help_a1831006:
 
     # Alice_00 "Да, в этом плане ты прав, Макс. Но я хотела чего-то добиться. Стать известным блогером и заработать кучу денег. А теперь..." nointeract
-    Alice_00 "I guess you're right about that. But still, I wanted to achieve something. to become a famous blogger and earn a bunch of money. And now..." nointeract
+    Alice_00 "I guess you're right about that. But still, I wanted to achieve something. To become a famous blogger and earn a bunch of money. And now..." nointeract
 
 # game/dialogues/alicetalk.rpy:172
 translate english talkblog1_help_675f913d:
@@ -208,7 +208,7 @@ translate english talkblog1_together_78d4a1fa:
 translate english talkblog1_together_770663dd:
 
     # Alice_01 "Ну, если придумаешь. Если. Да и смотря что... Сильно удаляться от этой темы не хочется. Но попробовать что-то новое можно... В общем, когда что-то придумаешь, тогда и поговорим..."
-    Alice_01 "If you'll come up with something good, then yes, I'll think about it. I don't want to stray away from the beauty blog format too far, but I'm open to new ideas. Talk to me when you have something to say..."
+    Alice_01 "If you'll come up with something good, then yes, I'll think about it. I don't want to stray too far away from the beauty blog format, but I'm open to new ideas. Talk to me when you have something to say..."
 
 # game/dialogues/alicetalk.rpy:222
 translate english talkblog1_together_22a16723:
@@ -238,7 +238,7 @@ translate english talkblog1_together_8b9af65e:
 translate english talkblog1_together_70bd54b8:
 
     # Alice_00 "Попробовать можно, но сначала надо понять что. Ты пока ничего конкретного не предложил. Когда будут идеи, тогда и подходи..."
-    Alice_00 "There's nothing to try now. First you need to propose some ideas..."
+    Alice_00 "There's nothing to try now. First you'll need to propose some ideas..."
 
 # game/dialogues/alicetalk.rpy:236
 translate english talkblog1_together_0c9332b5:
@@ -256,7 +256,7 @@ translate english talkblog1_findout_e3b65ac0:
 translate english talkblog1_findout_68795405:
 
     # Alice_00 "Постарайся. Я тоже буду думать. Но бросать блог не хочу. Может быть и правда стоит сменить формат, но на какой?"
-    Alice_00 "Try. I'll try to think of something too. I don't want to change my format, but maybe it's what I have to do..."
+    Alice_00 "Try. I'll try to think of something too. I don't want to change my format, but maybe it's what I'll have to do..."
 
 # game/dialogues/alicetalk.rpy:245
 translate english talkblog1_findout_7fcd8d45:
@@ -304,7 +304,7 @@ translate english alice_talk_tv_31159ca0:
 translate english alice_talk_tv_a38da904:
 
     # Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..." nointeract
-    Alice_13 "Absolutely nothing. I'm just resting and I wanted some background noise..." nointeract
+    Alice_13 "Absolutely nothing. I'm just relaxing and I wanted some background noise..." nointeract
 
 # game/dialogues/alicetalk.rpy:269
 translate english alice_talk_tv_d478e548:
@@ -330,7 +330,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:36
     old "Давай, я домою остальное"
-    new "Let me clean the rest"
+    new "Let me take care of the rest"
 
     # game/dialogues/alicetalk.rpy:36
     old "Нет, просто хотел поглазеть"
@@ -346,7 +346,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:72
     old "Нет, хотел просто больше узнать"
-    new "No, I wanted to learn more"
+    new "No, I wanted to learn more."
 
     # game/dialogues/alicetalk.rpy:72
     old "Много подписчиков уже?"
@@ -358,7 +358,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:75
     old "Расскажи, что ты там делаешь"
-    new "Tell me more about your blog"
+    new "Tell me more about your blog."
 
     # game/dialogues/alicetalk.rpy:75
     old "Как планируешь развиваться?"
@@ -374,7 +374,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:81
     old "Тема бьюти разве единственная?"
-    new "Well, you don't have to be a beauty blogger, you can blog about something else"
+    new "Well, you don't have to be a beauty blogger. You can blog about something else."
 
     # game/dialogues/alicetalk.rpy:81
     old "Понятно. Ну, и что теперь?"
@@ -382,7 +382,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:84
     old "Давай что-то придумаем вместе!"
-    new "We'll come up with something together"
+    new "We'll come up with something together."
 
     # game/dialogues/alicetalk.rpy:84
     old "Может быть, изменить твой блог?"
@@ -414,7 +414,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:117
     old "Нет. С чего ты взяла?"
-    new "Of course not, why would you even think that?"
+    new "Of course not. Why would you even think that?"
 
     # game/dialogues/alicetalk.rpy:117
     old "Ты о чём, вообще?"
@@ -426,7 +426,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:123
     old "В курсе, конечно"
-    new "Of course I know"
+    new "Of course I know."
 
     # game/dialogues/alicetalk.rpy:134
     old "Мне очень жаль..."
@@ -466,7 +466,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:159
     old "Я не детектив, чтобы искать вещи..."
-    new "I can't help you recover what we lost..."
+    new "I can't help you recover what you lost..."
 
     # game/dialogues/alicetalk.rpy:162
     old "Вся жизнь? Но это всё к лучшему же. Такой дом, бассейн, место отличное!"
@@ -474,7 +474,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:162
     old "Не грусти. Могло быть и хуже"
-    new "Don't be sad, it could've been worse"
+    new "Don't be sad, it could've been worse."
 
     # game/dialogues/alicetalk.rpy:162
     old "Может быть, зарабатывать на чём-то другом?"
@@ -482,15 +482,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:165
     old "Ты всё ещё можешь. Может быть, просто смени формат блога"
-    new "Maybe you should change the format of your blog"
+    new "Maybe you should change the format of your blog."
 
     # game/dialogues/alicetalk.rpy:181
     old "Ну, у меня много разных идей"
-    new "I have some ideas for your blog"
+    new "I have some ideas for your blog."
 
     # game/dialogues/alicetalk.rpy:181
     old "Советами!"
-    new "Maybe I could give you some advice"
+    new "Maybe I could give you some advice."
 
     # game/dialogues/alicetalk.rpy:198
     old "Может быть, заняться чем-то другим?"
@@ -498,7 +498,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:207
     old "Мы можем с тобой вместе что-то придумать"
-    new "We'll come up with something together"
+    new "We'll come up with something together."
 
     # game/dialogues/alicetalk.rpy:207
     old "Давай, я подумаю и, когда будут мысли, продолжим разговор"
@@ -506,7 +506,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:207
     old "Пока нет, но я подумаю что можно сделать"
-    new "Not now, but I'll think of something"
+    new "Not now, but I'll think of something."
 
     # game/dialogues/alicetalk.rpy:218
     old "Ну если придумаю что-то, то почему нет?"
@@ -518,7 +518,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:218
     old "Ну, можно попробовать же?"
-    new "There's no harm in trying"
+    new "There's no harm in trying."
 
     # game/dialogues/alicetalk.rpy:224
     old "Ну да, многие так делают!"
@@ -526,11 +526,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:224
     old "Нет, из меня ведущий так себе..."
-    new "No, I wouldn't be a good host"
+    new "No, I wouldn't be a good host."
 
     # game/dialogues/alicetalk.rpy:224
     old "Попробовать то можем?"
-    new "We can try"
+    new "We can try."
 
     # game/dialogues/alicetalk.rpy:241
     old "Постараюсь..."
@@ -538,7 +538,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:241
     old "Но ничего не обещаю"
-    new "No promises"
+    new "No promises."
 
     # game/dialogues/alicetalk.rpy:241
     old "Обещаю, что-нибудь придумаю"
@@ -582,7 +582,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:39
     old "Я хотел извиниться"
-    new "I would like to apologize"
+    new "I would like to apologize."
 
     # game/dialogues/alicetalk.rpy:57
     old "Ты знаешь, я передумал..."
@@ -606,7 +606,7 @@ translate english alice_aboutbooks_17c8adf3:
 translate english alice_aboutbooks_d236f5ef:
 
     # Max_00 "Хотел узнать что именно читаешь..."
-    Max_00 "I want to know what you're reading"
+    Max_00 "I want to know what you're reading."
 
 # game/dialogues/alicetalk.rpy:322
 translate english alice_aboutbooks_17c8adf3_1:
@@ -618,7 +618,7 @@ translate english alice_aboutbooks_17c8adf3_1:
 translate english alice_aboutbooks_d236f5ef_1:
 
     # Max_00 "Хотел узнать что именно читаешь..."
-    Max_00 "I want to know what you're reading"
+    Max_00 "I want to know what you're reading."
 
 # game/dialogues/alicetalk.rpy:325
 translate english alice_aboutbooks_656d98ae:
@@ -630,7 +630,7 @@ translate english alice_aboutbooks_656d98ae:
 translate english alice_aboutbooks_de0f6bd9:
 
     # Max_00 "Да вот и хотел узнать, что именно читаешь..."
-    Max_00 "Just want to know what you're reading"
+    Max_00 "I just want to know what you're reading."
 
 # game/dialogues/alicetalk.rpy:327
 translate english alice_aboutbooks_6405d1b7:
@@ -642,7 +642,7 @@ translate english alice_aboutbooks_6405d1b7:
 translate english alice_aboutbooks_af00f0d1:
 
     # Alice_00 "Не скажу. Сиди теперь и гадай! \n\n{i}Алиса прикрыла обложку рукой{/i}" nointeract
-    Alice_00 "I won't tell. I guess you'll have to live with the uncertainty! \n\n{i}Alice has covered the book title{/i}" nointeract
+    Alice_00 "I won't tell. I guess you'll have to live with the uncertainty! \n\n{i}Alice has covered the book title.{/I}" nointeract
 
 # game/dialogues/alicetalk.rpy:341
 translate english alice_aboutbooks_15cbb85a:
@@ -672,7 +672,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:327
     old "Не всё равно, раз спрашиваю"
-    new "Well since I'm asking, of course I care"
+    new "Well since I'm asking, of course I care."
 
     # game/dialogues/alicetalk.rpy:327
     old "Так ты скажешь или нет?"
@@ -688,7 +688,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:333
     old "Неужели справочник по квантовой механике?"
-    new "A book about Quantum mechanics?"
+    new "A book about quantum mechanics?"
 
 # TODO: Translation updated at 2020-03-02 23:40
 
@@ -696,7 +696,7 @@ translate english strings:
 translate english first_talk_smoke_449f9302:
 
     # Alice_13 "Упс. Макс, ты ничего не видел!"
-    Alice_13 "Oops. Max, you didn't see anything!"
+    Alice_13 "Oops! Max, you didn't see anything!"
 
 # game/dialogues/alicetalk.rpy:353
 translate english first_talk_smoke_ffbb93d4:
@@ -708,13 +708,13 @@ translate english first_talk_smoke_ffbb93d4:
 translate english first_talk_smoke_7d89b8d0:
 
     # Alice_12 "Нет, блин, просто зажгла сигарету, посмотреть как горит... Давай так, ты уйдёшь и сделаешь вид, что ничего не было, хорошо?" nointeract
-    Alice_12 "No, I just lit this cigarette just to look at it. How about you leave immediately and pretend you didn't see anything?" nointeract
+    Alice_12 "No, I lit this cigarette just to look at it. How about you take a hike and pretend you didn't see anything?" nointeract
 
 # game/dialogues/alicetalk.rpy:358
 translate english first_talk_smoke_30d0bafe:
 
     # Alice_16 "Вот если не уйдёшь, то узнаешь, что тебе за это будет! Бегом отсюда!"
-    Alice_16 "Do you want to know what you'll get if you {i}don't{/i} leave? Get the hell out here!"
+    Alice_16 "Wanna know what'll happen if you {i}don't{/i} leave? Get the hell out here!"
 
 # game/dialogues/alicetalk.rpy:359
 translate english first_talk_smoke_dd214c35:
@@ -750,19 +750,19 @@ translate english first_talk_smoke_talk_ab49cd6e:
 translate english first_talk_smoke_talk_b5a5e27d:
 
     # Alice_12 "Макс, ты же знаешь, что я на мели. У меня нет денег. Ну, точнее есть, но баксов 10. Тебя устроит?" nointeract
-    Alice_12 "Max, you know I'm broke. I don't have any money. All I have is ten bucks. Is this enough?" nointeract
+    Alice_12 "Max, you know I'm broke. I don't have any money. All I have is ten bucks. Is that enough?" nointeract
 
 # game/dialogues/alicetalk.rpy:402
 translate english first_talk_smoke_talk_ee9ba89b:
 
     # Alice_13 "Сейчас сбегаю за деньгами...\nВот, держи $10, и теперь-то уж точно ты ничего не видел. Так?" nointeract
-    Alice_13 "I'll go get the money...\nTake $10 and now you didn't see anything, got it?" nointeract
+    Alice_13 "I'll go get the money...\nHere. Now, you didn't see anything, got it?" nointeract
 
 # game/dialogues/alicetalk.rpy:407
 translate english first_talk_smoke_talk_86687067:
 
     # Alice_16 "И как это понимать, Макс? Мы же договорились! Ну ты и гад... Всё, вали отсюда!" nointeract
-    Alice_16 "What's that supposed to mean? Didn't we just had an agreement? Asshole... Get out of here!" nointeract
+    Alice_16 "What's that supposed to mean? Didn't we just have an agreement? Asshole... Get out of here!" nointeract
 
 # game/dialogues/alicetalk.rpy:414
 translate english first_talk_smoke_talk_18eb3a17:
@@ -792,7 +792,7 @@ translate english first_talk_smoke_owe_bbfe892c:
 translate english first_talk_smoke_owe_911030ca:
 
     # Alice_03 "Ну, вот когда решишь, тогда и поговорим. А теперь иди отсюда, пока ещё можешь!" nointeract
-    Alice_03 "Then we can have this conversation after you'll make up your mind. Now get out of here while you can." nointeract
+    Alice_03 "Then we can have this conversation after you make up your mind. Now get out of here before you piss me off more than you already have." nointeract
 
 # game/dialogues/alicetalk.rpy:459
 translate english first_talk_smoke_owe_c066f246:
@@ -804,7 +804,7 @@ translate english first_talk_smoke_owe_c066f246:
 translate english first_talk_smoke_maybe_6ae64208:
 
     # Alice_12 "Сам смотри... Воевать со мной - себе дороже. И, вообще, иди отсюда. Я уже взрослая и могу делать что хочу..." nointeract
-    Alice_12 "Try me. We'll see who's going to be with their ass kicked. Leave me alone." nointeract
+    Alice_12 "Try me. We'll see who's going to get their ass kicked. Leave me alone." nointeract
 
 # game/dialogues/alicetalk.rpy:470
 translate english first_talk_smoke_goodend_b2ffd2e3:
@@ -816,7 +816,7 @@ translate english first_talk_smoke_goodend_b2ffd2e3:
 translate english second_talk_smoke_a3681e1c:
 
     # Alice_12 "А, Макс... Чего хотел?" nointeract
-    Alice_12 "Oh, it's you, Max. What do you want?" nointeract
+    Alice_12 "Oh, it's you Max. What do you want?" nointeract
 
 # game/dialogues/alicetalk.rpy:486
 translate english second_talk_smoke_141b46f2:
@@ -840,13 +840,13 @@ translate english second_talk_smoke_20468d0b:
 translate english second_talk_smoke_5220375a:
 
     # Alice_00 "Ну, раз не важно, то и не скажу..."
-    Alice_00 "Why did you asked the question then?"
+    Alice_00 "Why did you ask me then?"
 
 # game/dialogues/alicetalk.rpy:494
 translate english second_talk_smoke_8de8a159:
 
     # Max_01 "Конечно, если это секрет..."
-    Max_01 "Just tell me"
+    Max_01 "Just tell me."
 
 # game/dialogues/alicetalk.rpy:495
 translate english second_talk_smoke_f7274e9f:
@@ -864,7 +864,7 @@ translate english second_talk_smoke_ced29bff:
 translate english second_talk_smoke_80e5e0fb:
 
     # Alice_13 "Ну да... Просто нравится именно эти. Их наш отец курил, сначала запах нравился. Когда выросла, попробовала и теперь вот втянулась..." nointeract
-    Alice_13 "Well, yes. But I like them because our dad smoked them. First I liked how they smelled and when I grew up I decided to try them, so now I'm hooked." nointeract
+    Alice_13 "Well, yes. But I like them because our dad smoked them. First, I liked how they smelled and when I grew up I decided to try them, so now I'm hooked." nointeract
 
 # game/dialogues/alicetalk.rpy:502
 translate english second_talk_smoke_182af78a:
@@ -882,13 +882,13 @@ translate english second_talk_smoke_16c39f20:
 translate english second_talk_smoke_6f9e3ea7:
 
     # Alice_06 "Нет уж, самой мало. Знаешь, как сложно их достать? Особенно, чтобы мама не узнала..." nointeract
-    Alice_06 "No, I don't have much left. It's hard to get them. Especially without mom learning about them." nointeract
+    Alice_06 "No, I don't have that many left. It's hard to get them, especially without mom catching me with them." nointeract
 
 # game/dialogues/alicetalk.rpy:510
 translate english second_talk_smoke_4c9e50aa:
 
     # Alice_02 "С чем? Можешь доставать такие сигареты?" nointeract
-    Alice_02 "With what? Can you get these cigarettes?" nointeract
+    Alice_02 "With what? Can you get more of these cigarettes?" nointeract
 
 # game/dialogues/alicetalk.rpy:516
 translate english second_talk_smoke_7541a141:
@@ -906,7 +906,7 @@ translate english second_talk_smoke_67b5c25f:
 translate english second_talk_smoke_36adb5ae:
 
     # Alice_12 "Я закончила. Если мама спросит, скажешь, от соседей надуло, хорошо?"
-    Alice_12 "I'm done. If mom asks, tell her it's from the neighbors, okay?"
+    Alice_12 "I'm done. If mom asks, tell her the smell is from the neighbors, okay?"
 
 # game/dialogues/alicetalk.rpy:522
 translate english second_talk_smoke_25aa812b:
@@ -924,19 +924,19 @@ translate english gift_cigarettes_274717c2:
 translate english gift_cigarettes_88c94b68:
 
     # Alice_13 "Макс! Не будь придурком. Давай сюда!"
-    Alice_13 "Don't me a jerk, Max! Give me the cigarettes!"
+    Alice_13 "Don't be a jerk, Max! Give me the cigarettes!"
 
 # game/dialogues/alicetalk.rpy:541
 translate english gift_cigarettes_d9ca71cf:
 
     # Max_01 "Ну, держи..."
-    Max_01 "Fine, here"
+    Max_01 "Fine, here."
 
 # game/dialogues/alicetalk.rpy:543
 translate english gift_cigarettes_5740d8bc:
 
     # Alice_12 "Хоть ты и тот ещё извращенец, Макс, но мне было сложно достать эти сигареты самой... Так и быть, мама ничего не узнает, по крайней мере в этот раз."
-    Alice_12 "Even though you're a pervert, Max, I had trouble getting those cigarettes myself... Anyway, Mom won't know anything, at least not this time."
+    Alice_12 "Even though you're a pervert, I had trouble getting those cigarettes myself... Anyway, Mom won't know anything, at least not this time."
 
 # game/dialogues/alicetalk.rpy:544
 translate english gift_cigarettes_7db97995:
@@ -954,7 +954,7 @@ translate english gift_cigarettes_275f5fb3:
 translate english gift_cigarettes_6e623a2c:
 
     # Alice_05 "Хотя ты и полный придурок, но, похоже, начинаешь исправляться!"
-    Alice_05 "Hey, it looks like your case of being a complete jerk is getting better!"
+    Alice_05 "Hey, it looks like you're being less of a complete jerk!"
 
 # game/dialogues/alicetalk.rpy:549
 translate english gift_cigarettes_2c86ee2f:
@@ -966,7 +966,7 @@ translate english gift_cigarettes_2c86ee2f:
 translate english gift_cigarettes_51e15727:
 
     # Alice_07 "Спасибо, Макс. Вот теперь я понимаю, ты настоящий брат!"
-    Alice_07 "Thanks, Max! Now I can see you're a good brother!"
+    Alice_07 "Thanks, Max! I guess you {i}are{/i} a good brother!"
 
 # game/dialogues/alicetalk.rpy:553
 translate english gift_cigarettes_40b0f8a9:
@@ -998,11 +998,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:362
     old "Ну да. Мама что с тобой сделает, если узнает?"
-    new "Well, yes. Do you know what mom will do to you if she'll find out?"
+    new "Well, yes. Do you know what mom will do to you if she finds out?"
 
     # game/dialogues/alicetalk.rpy:362
     old "Ну, мы можем договориться"
-    new "We can work something out"
+    new "We can work something out."
 
     # game/dialogues/alicetalk.rpy:362
     old "Как знать, может быть..."
@@ -1026,7 +1026,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:392
     old "Если заплатишь, буду молчать"
-    new "You can pay me for my silence"
+    new "You can pay me for my silence."
 
     # game/dialogues/alicetalk.rpy:392
     old "Покажи сиськи!"
@@ -1042,11 +1042,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:392
     old "Ты будешь мне должна услугу"
-    new "You're going to owe me a favor"
+    new "You're going to owe me a favor."
 
     # game/dialogues/alicetalk.rpy:395
     old "Ну, давай"
-    new "Sure"
+    new "Sure."
 
     # game/dialogues/alicetalk.rpy:395
     old "Нет, этого мало..."
@@ -1054,7 +1054,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:402
     old "Так!"
-    new "Deal"
+    new "Deal."
 
     # game/dialogues/alicetalk.rpy:402
     old "Как знать..."
@@ -1062,39 +1062,39 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:407
     old "Ну, как скажешь..."
-    new "Well, if that's what you want"
+    new "Well, if that's what you want."
 
     # game/dialogues/alicetalk.rpy:445
     old "Покажешь сиськи, когда попрошу..."
-    new "You'll show me your boobs when I ask"
+    new "You'll show me your boobs when I ask."
 
     # game/dialogues/alicetalk.rpy:445
     old "Разденешься, когда скажу..."
-    new "You'll undress when I say"
+    new "You'll undress when I say."
 
     # game/dialogues/alicetalk.rpy:445
     old "Отсосёшь, когда нужно будет..."
-    new "You'll blow me when I say"
+    new "You'll blow me when I say."
 
     # game/dialogues/alicetalk.rpy:445
     old "Я ещё не решил..."
-    new "I haven't decided yet"
+    new "I haven't decided yet."
 
     # game/dialogues/alicetalk.rpy:483
     old "Да хотел узнать, что ты куришь?"
-    new "I want to know what kind of cigarettes do you smoke"
+    new "I want to know what kind of cigarettes you smoke."
 
     # game/dialogues/alicetalk.rpy:486
     old "Просто любопытно"
-    new "I'm curious"
+    new "I'm curious."
 
     # game/dialogues/alicetalk.rpy:486
     old "Для поддержания разговора"
-    new "I don't really care, it was more of a conversation starter"
+    new "I don't really care. It was more of a conversation starter."
 
     # game/dialogues/alicetalk.rpy:486
     old "А, не важно..."
-    new "Nevermind"
+    new "Nevermind."
 
     # game/dialogues/alicetalk.rpy:499
     old "Скучаешь о нём?"
@@ -1114,7 +1114,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:510
     old "Ну, я попробую через интернет"
-    new "I will try to order them online"
+    new "I will try to order them online."
 
     # game/dialogues/alicetalk.rpy:527
     old "У меня есть кое-что запрещённое..."
@@ -1122,7 +1122,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:537
     old "А что взамен?"
-    new "And what would I get for it?"
+    new "And what would I get for them?"
 
     # game/dialogues/alicetalk.rpy:537
     old "Только давай условимся, что ты не скажешь маме о том, как я за тобой подглядывал в душе..."
@@ -1138,7 +1138,7 @@ translate english strings:
 translate english smoke_nofear_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 "Max, did you come here to stare?"
+    Alice_00 "Max, did you just come here to stare?"
 
 # game/dialogues/alicetalk.rpy:570
 translate english smoke_nofear_caee999b:
@@ -1150,13 +1150,13 @@ translate english smoke_nofear_caee999b:
 translate english smoke_nofear_e44b17a7:
 
     # Alice_03 "И как она узнает? Ты расскажешь?" nointeract
-    Alice_03 "And how would she know? Will you tell her?" nointeract
+    Alice_03 "And how would she know? You gonna tell her?" nointeract
 
 # game/dialogues/alicetalk.rpy:574
 translate english smoke_nofear_f223d1fa:
 
     # Alice_12 "Ты хорошо подумал, Макс? Жизнь-то у тебя одна... И что ты хочешь за... молчание?"
-    Alice_12 "Did you think this through? You only get one life. What do you want in exchange for...silence? "
+    Alice_12 "Did you think this through? You only get one life. What do you want in exchange for...your silence? "
 
 # game/dialogues/alicetalk.rpy:575
 translate english smoke_nofear_042d05e4:
@@ -1180,7 +1180,7 @@ translate english smoke_nofear_68ee7cea:
 translate english smoke_nofear_no_a95196c6:
 
     # Alice_03 "Ну вот и пугать не надо. Не узнает. А если ты проболтаешься, я тебя во сне придушу, понял? Теперь иди, не мешай мне..." nointeract
-    Alice_03 "Then I have no reason to be afraid. And if you tell, I'll strangle you in your sleep. Now leave me alone." nointeract
+    Alice_03 "Then I have no reason to be afraid. And if you tell someone, I'll strangle you in your sleep. Now leave me alone." nointeract
 
 # game/dialogues/alicetalk.rpy:603
 translate english smoke_fear_e2e452f2:
@@ -1222,13 +1222,13 @@ translate english smoke_fear_d12c5d6b:
 translate english smoke_fear_b321ae83:
 
     # Alice_13 "[succes!t]Чёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
-    Alice_13 "[succes!t]Asshole. Do you want to leave me completely broke? I'll go get it..."
+    Alice_13 "[succes!t]Asshole. Do you want to leave me completely broke? Fine, I'll go get it..."
 
 # game/dialogues/alicetalk.rpy:635
 translate english smoke_fear_d677a38c:
 
     # Max_03 "Я жду..."
-    Max_03 "I am waiting..."
+    Max_03 "I'm waiting..."
 
 # game/dialogues/alicetalk.rpy:644
 translate english smoke_fear_cb48f066:
@@ -1252,7 +1252,7 @@ translate english smoke_fear_69538574:
 translate english smoke_fear_2d241144:
 
     # Alice_13 "[succes!t]Тебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
-    Alice_13 "[succes!t]Why do you care? Well, I'm wearing jeans all the time, so it's not like you'll see anything anyway, so fine. Deal?"
+    Alice_13 "[succes!t]Why do you care? Well, I'm wearing jeans all the time, so it's not like you'll see anything anyway, so fine. Do we have a deal?"
 
 # game/dialogues/alicetalk.rpy:658
 translate english smoke_fear_f8ab5d9a:
@@ -1300,7 +1300,7 @@ translate english smoke_fear_a86ec81d_1:
 translate english smoke_fear_92e34996:
 
     # Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\Disgusting pervert... Okay, but you can't say anything to Mom. I'll start next time I need a smoke."
+    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\You're a disgusting pervert... Okay, but as long as you won't say anything to Mom. I'll start next time I need a smoke."
 
 # game/dialogues/alicetalk.rpy:686
 translate english smoke_fear_9d8a31b7:
@@ -1318,7 +1318,7 @@ translate english smoke_fear_a86ec81d_2:
 translate english smoke_fear_e8a1317a:
 
     # Alice_06 "Сегодня? Значит, попросишь в следующий раз?" nointeract
-    Alice_06 "Today? So, you'll ask for something next time?" nointeract
+    Alice_06 "Today? So, you'll ask for something else next time?" nointeract
 
 # game/dialogues/alicetalk.rpy:711
 translate english smoke_fear_b841f701:
@@ -1342,7 +1342,7 @@ translate english smoke_toples_6c5b6af2:
 translate english smoke_toples_feec497a:
 
     # Alice_05 "Надеюсь, маме ничего не расскажешь? А то это опасно для твоей жизни..." nointeract
-    Alice_05 "I hope that you won't tell Mom anything? It would endanger your life..." nointeract
+    Alice_05 "I hope you're not planning to tell Mom anything. It would endanger your life..." nointeract
 
 # game/dialogues/alicetalk.rpy:740
 translate english smoke_toples_ea9774a5:
@@ -1372,7 +1372,7 @@ translate english smoke_toples_814e7b6f:
 translate english smoke_toples_794078b3:
 
     # Alice_04 "А про руки мы не договаривались. Хочу - прикрываюсь. Хочу - нет. А тебя так радовать я точно не хочу... Так что вали уже..."
-    Alice_04 "We didn't say anything about hands, I'm free to cover myself as much as I want. And I definitely wouldn't want to give you anything to look at. So get lost."
+    Alice_04 "You didn't say anything about hands, I'm free to cover myself as much as I want. And I definitely wouldn't want to give you anything to look at. So get lost."
 
 # game/dialogues/alicetalk.rpy:748
 translate english smoke_toples_2db9f65a:
@@ -1384,7 +1384,7 @@ translate english smoke_toples_2db9f65a:
 translate english smoke_toples_2de5469e:
 
     # Alice_12 "Спасибо, ваше величество! А чего это ты так расщедрился? Я больше не в твоём вкусе?" nointeract
-    Alice_12 "Thank you, your majesty! Why are you so generous? I am no longer your type?" nointeract
+    Alice_12 "Thank you, your majesty! Why are you so generous? Am I no longer your type?" nointeract
 
 # game/dialogues/alicetalk.rpy:753
 translate english smoke_toples_2c09da11:
@@ -1402,7 +1402,7 @@ translate english smoke_toples_1a839867:
 translate english smoke_toples_07c4559b:
 
     # Alice_15 "Что?! А ну-ка вали отсюда, пока цел! И оденусь теперь, будь уверен!" nointeract
-    Alice_15 "What?! Get out of here while you can! You'll never see me dressed like this again!" nointeract
+    Alice_15 "What?! Get out of here before I kick your ass! You'll never see me dressed like this again!" nointeract
 
 # game/dialogues/alicetalk.rpy:768
 translate english smoke_toples_1bf07d5b:
@@ -1426,7 +1426,7 @@ translate english smoke_not_toples_37c0a1b9:
 translate english smoke_not_toples_d811599c:
 
     # Alice_13 "Знаешь, Макс, мне это надоело... Сколько можно? Я хочу спокойно курить и не волноваться, что ты за мной подглядываешь!"
-    Alice_13 "You know, Max, I'm sick of this... How much can I do? I want to smoke in peace and not worry about you peeping at me!"
+    Alice_13 "You know what, Max, I'm sick of this... I just want to smoke in peace and not worry about you peeping at me!"
 
 # game/dialogues/alicetalk.rpy:787
 translate english smoke_not_toples_815a473e:
@@ -1450,25 +1450,25 @@ translate english smoke_not_toples_21ec5b7a:
 translate english smoke_not_toples_66332c89:
 
     # Alice_15 "Ах ещё и грудь показать! Может сразу и полапать её дать?!"
-    Alice_15 "Oh, and show me your chest! Why don't you just grab it right away?!"
+    Alice_15 "Oh, and show me your chest! Why don't you just grab it while you're at it?!"
 
 # game/dialogues/alicetalk.rpy:791
 translate english smoke_not_toples_d4cfa9a6:
 
     # Max_03 "Очень заманчивое предложение... Но просто показать - я считаю справедливо! Сама накосячила..."
-    Max_03 "It's a very tempting offer... But just a look - I think it's fair!"
+    Max_03 "It's a very tempting offer... But just a look - I think that's fair!"
 
 # game/dialogues/alicetalk.rpy:795
 translate english smoke_not_toples_fe9993a5:
 
     # Alice_06 "Ладно, один разок и быстро... Но не вздумай маме рассказывать! Ни про это, ни про сигареты."
-    Alice_06 "Okay, once, and quickly... But don't you dare tell Mom! Not about this, not about the cigarettes."
+    Alice_06 "Okay, just once, and quickly... But don't you dare tell Mom! Not about this, and not about the cigarettes."
 
 # game/dialogues/alicetalk.rpy:796
 translate english smoke_not_toples_e135b876:
 
     # Max_05 "Конечно, я ведь своё слово держу. Симпатичные сосочки!"
-    Max_05 "Of course, I keep my word. Cute nipples!"
+    Max_05 "Of course, I'm a man of my word. Cute nipples!"
 
 # game/dialogues/alicetalk.rpy:797
 translate english smoke_not_toples_4ee2407f:
@@ -1492,7 +1492,7 @@ translate english smoke_nopants_c40ddcc1:
 translate english smoke_nopants_d8b756b2:
 
     # Max_01 "Хорошо, хорошо..."
-    Max_01 "Fine, fine"
+    Max_01 "Fine, fine."
 
 # game/dialogues/alicetalk.rpy:816
 translate english smoke_nopants_b38d8562:
@@ -1504,13 +1504,13 @@ translate english smoke_nopants_b38d8562:
 translate english smoke_nopants_d219c498:
 
     # Alice_01 "Ты совсем идиот, Макс? Я в купальнике. Это не трусы. А трусы я и так не ношу под джинсами. Можешь себе фантазировать теперь сколько хочешь... Всё, уйди с глаз моих долой!"
-    Alice_01 "Are you retarded, Max? I'm in a swimsuit, it doesn't count as panties. I'm not wearing any panties under my jeans, and you can fantasize about it as much as you want. Now get lost!"
+    Alice_01 "Are you retarded, Max? I'm in a swimsuit. It doesn't count as panties. I'm not wearing any panties under my jeans, and you can fantasize about that as much as you want. Now get lost!"
 
 # game/dialogues/alicetalk.rpy:820
 translate english smoke_nopants_2485171a:
 
     # Max_01 "Ухожу, ухожу..."
-    Max_01 "Fine, I'm leaving"
+    Max_01 "Fine, I'm leaving."
 
 # game/dialogues/alicetalk.rpy:822
 translate english smoke_nopants_6e4f674f:
@@ -1528,7 +1528,7 @@ translate english smoke_nopants_696b9e70:
 translate english smoke_nopants_48649dbe:
 
     # Alice_03 "А чего передумал? А, хотя не важно. Я рада, а то мне всё натирает в джинсах... Хотя, тебе такие подробности знать не нужно. Спасибо за разрешение, ваше величество. Теперь дай покурю..." nointeract
-    Alice_03 "Why'd you change your mind? Wait, I don't care. I'm glad, jeans were chafing me... Not that you need to know about that. Thanks for your royal pardon, your highness. Now leave me alone." nointeract
+    Alice_03 "Why'd you change your mind? Wait, I don't care. I'm glad, my jeans were chafing me... Not that you need to know about that. Thanks for the royal pardon, your highness. Now leave me alone." nointeract
 
 # game/dialogues/alicetalk.rpy:838
 translate english smoke_not_nopants_8c8fad13:
@@ -1546,7 +1546,7 @@ translate english smoke_not_nopants_462a034b:
 translate english smoke_not_nopants_26b75c5e:
 
     # Alice_06 "Это ты сейчас о чём, Макс?"
-    Alice_06 "What do you mean now, Max?"
+    Alice_06 "What do you want now, Max?"
 
 # game/dialogues/alicetalk.rpy:841
 translate english smoke_not_nopants_b0ae32f7:
@@ -1582,13 +1582,13 @@ translate english smoke_not_nopants_f83a939d:
 translate english smoke_not_nopants_466d2992:
 
     # Alice_16 "А не многого ли ты, мелкий извращенец, хочешь?!"
-    Alice_16 "Isn't there a lot you want, you little pervert?!"
+    Alice_16 "Isn't there something else you want, you little pervert?!"
 
 # game/dialogues/alicetalk.rpy:847
 translate english smoke_not_nopants_452a42de:
 
     # Max_01 "Посмотреть на красивые сиськи - не извращение! И мне кажется, проще один раз показать, чем всё натирать будет..."
-    Max_01 "Looking at beautiful tits is not perversion! And I think it's easier to just show them once then have me ask for even more..."
+    Max_01 "Looking at beautiful tits is not perversion! And I think it's easier to just show them once then to have me ask for even more..."
 
 # game/dialogues/alicetalk.rpy:851
 translate english smoke_not_nopants_465d4378:
@@ -1606,7 +1606,7 @@ translate english smoke_not_nopants_b29a919f:
 translate english smoke_not_nopants_9f211f88:
 
     # Alice_13 "Спасибо. А теперь иди уже, погуляй где-нибудь. Дай докурить спокойно."
-    Alice_13 "Thank you. Now go for a walk somewhere. Let me have a quiet smoke."
+    Alice_13 "Thank you. Now go somewhere else and let me have a quiet smoke."
 
 # game/dialogues/alicetalk.rpy:854
 translate english smoke_not_nopants_91edba57:
@@ -1630,13 +1630,13 @@ translate english smoke_sleep_c40ddcc1:
 translate english smoke_sleep_d8b756b2:
 
     # Max_01 "Хорошо, хорошо..."
-    Max_01 "Fine, fine"
+    Max_01 "Fine, fine."
 
 # game/dialogues/alicetalk.rpy:871
 translate english smoke_sleep_ba2dfd7b:
 
     # Alice_04 "А чего это ты передумал? А, хотя не важно. Я рада, а то мне неудобно ночью, если выйти куда-то нужно, да и мама заметить может. Спасибо за разрешение, ваше величество. Теперь дай покурю..." nointeract
-    Alice_04 "Why did you change your mind? Oh, never mind, I'm glad, because I'm uncomfortable at night if I have to go out and Mom might notice. Thank you for your permission, Your Majesty. Now let me have a smoke..." nointeract
+    Alice_04 "Why did you change your mind? Oh, never mind, I'm glad, because I'm uncomfortable at night if I have to go out hoping Mom won't notice. Thank you for your permission, Your Majesty. Now let me have a smoke..." nointeract
 
 translate english strings:
 
@@ -1646,7 +1646,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:576
     old "Дай $20, и я буду молчать"
-    new "You can buy my silence for $20"
+    new "You can buy my silence for $20."
 
     # game/dialogues/alicetalk.rpy:576
     old "Если днем ты будешь ходить без трусов, буду молчать"
@@ -1658,43 +1658,43 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:576
     old "Если разрешишь тебя отшлёпать, ничего не скажу"
-    new "I won't say anything if you will allow me to spank you"
+    new "I won't say anything if you let me to spank you."
 
     # game/dialogues/alicetalk.rpy:576
     old "Ничего. Не переживай!"
-    new "Don't worry, I don't need anything"
+    new "Don't worry, I don't need anything."
 
     # game/dialogues/alicetalk.rpy:594
     old "Угу..."
-    new "aha..."
+    new "Aha..."
 
     # game/dialogues/alicetalk.rpy:619
-    old "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}"
-    new "Give me $20 and I won't say anything {color=[_ch8.col]}(Persuasion. Chance: [_ch8.vis]){/color}"
+    old "Дай $20, и я ничего не скажу {color=[_ch8_col]}(Убеждение. Шанс: [ch8_vis]){/color}"
+    new "Give me $20 and I won't say anything {color=[_ch8_col]}(Persuasion. Chance: [ch8_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:619
-    old "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
-    new "If you walk around without your underwear during the day, I'll keep quiet.... {color=[_ch4.col]}(Persuasion. Chance: [_ch4.vis]){/color}"
+    old "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4_col]}(Убеждение. Шанс: [ch4_vis]){/color}"
+    new "If you walk around without your underwear during the day, I'll keep quiet.... {color=[_ch4_col]}(Persuasion. Chance: [ch4_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:619
-    old "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
-    new "If you stop wearing your bra, I'll be quiet.... {color=[_ch3.col]}(Persuasion. Chance: [_ch3.vis]){/color}"
+    old "Если больше не будешь носить лифчик, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}"
+    new "If you stop wearing your bra, I'll be quiet.... {color=[_ch3_col]}(Persuasion. Chance: [ch3_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:619
-    old "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
-    new "I won't say anything if you continue to smoke topless {color=[_ch3.col]}(Persuasion. Chance: [_ch3.vis]){/color}"
+    old "Если будешь курить без верха купальника, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}"
+    new "I won't say anything if you continue to smoke topless. {color=[_ch3_col]}(Persuasion. Chance: [ch3_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:619
     old "Ты знаешь, я сегодня добрый..."
-    new "You know I'm in a good mood today..."
+    new "You know what? I'm in a good mood today..."
 
     # game/dialogues/alicetalk.rpy:630
-    old "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new "No, give me $20 {color=[_ch2.col]}(Persuasion. Chance: [_ch2.vis]){/color}"
+    old "Нет, давай $20 {color=[_ch2_col]}(Убеждение. Шанс: [ch2_vis]){/color}"
+    new "No, give me $20. {color=[_ch2_col]}(Persuasion. Chance: [ch2_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:630
     old "Хорошо, устроит и $10"
-    new "Fine, $10 will do"
+    new "Fine, $10 will do."
 
     # game/dialogues/alicetalk.rpy:648
     old "Удачи!"
@@ -1714,15 +1714,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:734
     old "Я передумал. Можешь одеться."
-    new "I've changed my mind. You can get dressed"
+    new "I've changed my mind. You can get dressed."
 
     # game/dialogues/alicetalk.rpy:737
     old "Не переживай, не скажу"
-    new "Don't worry, I won't"
+    new "Don't worry, I won't."
 
     # game/dialogues/alicetalk.rpy:737
     old "Ну... это зависит от тебя!"
-    new "Well... it depends on you"
+    new "Well... That depends on you."
 
     # game/dialogues/alicetalk.rpy:750
     old "Ну, я перегнул палку..."
@@ -1730,11 +1730,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:750
     old "Это мой шаг к дружбе"
-    new "This is my step to friendship"
+    new "This is my step to friendship."
 
     # game/dialogues/alicetalk.rpy:750
     old "Да надоела!"
-    new "Yes, I got bored of you"
+    new "Yes, I got bored of you."
 
     # game/dialogues/alicetalk.rpy:750
     old "Ты знаешь, пусть всё остаётся как есть..."
@@ -1742,11 +1742,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:763
     old "{i}свалить{/i}"
-    new "{i}leave{/i}"
+    new "{I}Leave{/i}"
 
     # game/dialogues/alicetalk.rpy:810
     old "Ничего, просто любуюсь..."
-    new "Nothing, just enjoying the view"
+    new "Nothing, just enjoying the view."
 
     # game/dialogues/alicetalk.rpy:810
     old "А ты чего в трусах?"
@@ -1754,7 +1754,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:810
     old "Я передумал. Можешь носить трусы..."
-    new "I've changed my mind, you can wear panties again"
+    new "I've changed my mind, you can wear panties again."
 
     # game/dialogues/alicetalk.rpy:816
     old "Мы же договорились - без трусов!"
@@ -1762,7 +1762,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:816
     old "Да шучу я..."
-    new "I'm kidding"
+    new "I'm kidding."
 
     # game/dialogues/alicetalk.rpy:865
     old "Я передумал. Ты можешь спать в лифчике, если хочешь."
@@ -1786,19 +1786,19 @@ translate english Alice_sorry_a26b98ac:
 translate english Alice_sorry_03a531c0:
 
     # Alice_16 "Макс, я по-твоему полная дура что ли?! Ты стоял за стеной, и нагло смотрел, как я принимала душ!"
-    Alice_16 "Max, do you think I'm stupid or something?! You stood behind the wall, and you watched me shower like a fucking creep!"
+    Alice_16 "Max, do you think I'm stupid or something?! You stood behind the wall and watched me shower like a fucking creep!"
 
 # game/dialogues/alicetalk.rpy:886
 translate english Alice_sorry_363553de:
 
     # Max_14 "Но на деле же, так получилось не специально... Я просто шёл мимо..."
-    Max_14 "But in reality, it didn't happen on purpose... I was just walking past..."
+    Max_14 "I swear it didn't happen on purpose... I was just walking past..."
 
 # game/dialogues/alicetalk.rpy:887
 translate english Alice_sorry_fb165afa:
 
     # Alice_05 "Да, да, конечно... Я очень хочу посмотреть, что с тобой сделает мама, когда об этом узнает..."
-    Alice_05 "Yeah, sure... I really want to see what Mom will do to you when she finds out about this..."
+    Alice_05 "Yeah, sure... I can't wait to see what Mom will do to you when she finds out about this..."
 
 # game/dialogues/alicetalk.rpy:888
 translate english Alice_sorry_ee958c85:
@@ -1816,7 +1816,7 @@ translate english Alice_sorry_c7c9da47:
 translate english Alice_sorry_7b2bd462:
 
     # Max_07 "В таком случае, предлагаю представить, что ничего такого утром не было. Ты ничего не говоришь маме, а я в свою очередь куплю тебе чего-нибудь вкусненького?"
-    Max_07 "Ok fine. Lets just imagine that nothing happened this morning. You don't say anything to Mom, and I'll buy you something sweet in return?"
+    Max_07 "Ok fine. Let's just act like nothing happened this morning. You don't say anything to Mom, and I'll buy you something sweet in return?"
 
 # game/dialogues/alicetalk.rpy:891
 translate english Alice_sorry_f8604e25:
@@ -1842,7 +1842,7 @@ translate english Alice_sorry_97553d34:
 translate english gift_dress_7509a3ee:
 
     # Alice_15 "Макс? Это платье для клуба? Правда?!"
-    Alice_15 "Max! Have you bought me a dress?"
+    Alice_15 "Max! You bought me a dress?"
 
 # game/dialogues/alicetalk.rpy:904
 translate english gift_dress_6374794e:
@@ -1854,7 +1854,7 @@ translate english gift_dress_6374794e:
 translate english gift_dress_a8e27231:
 
     # Alice_07 "Спасибо, Макс! Ты такой... Не знаю даже, я просто в шоке!" nointeract
-    Alice_07 "Thanks, Max! You're so... I don't even know what to say!" nointeract
+    Alice_07 "Thank you, Max! You're so... I don't even know what to say!" nointeract
 
 # game/dialogues/alicetalk.rpy:910
 translate english gift_dress_35ab4b16:
@@ -1872,7 +1872,7 @@ translate english gift_dress_7b2bcf43:
 translate english gift_dress_d7db6238:
 
     # Max_03 "Конечно! Я это и хочу!"
-    Max_03 "Of course! That exactly what I want!"
+    Max_03 "Of course! That's exactly what I want!"
 
 # game/dialogues/alicetalk.rpy:917
 translate english gift_dress_2e058c06:
@@ -1884,7 +1884,7 @@ translate english gift_dress_2e058c06:
 translate english gift_dress_126ef8d6:
 
     # Max_07 "Эй, что за угрозы?"
-    Max_07 "Fine, no need to be so aggressive"
+    Max_07 "Fine, no need to be so aggressive."
 
 # game/dialogues/alicetalk.rpy:922
 translate english gift_dress_gift_39f67b33:
@@ -1902,7 +1902,7 @@ translate english gift_dress_gift_b548e83c:
 translate english gift_dress_newdress_show_44aafd4e:
 
     # Alice_03 "Жди за дверью. Я сейчас надену платье и тебе покажу, так уж и быть..." nointeract
-    Alice_03 "Wait behind the door. I'll change and show myself in a new dress, if you want to." nointeract
+    Alice_03 "Wait behind the door. I'll change and show you the new dress, if you want to." nointeract
 
 # game/dialogues/alicetalk.rpy:948
 translate english gift_dress_newdress_show_c73d3c3a:
@@ -1994,7 +1994,7 @@ translate english gift_book_9652c3b9:
 translate english gift_book_d836268a:
 
     # Alice_01 "Прикольно... Давно хотела её почитать. А ты как узнал, что мне такие нравятся?" nointeract
-    Alice_01 "Cool... I wanted to read it for a long time. How did you know I like these?" nointeract
+    Alice_01 "Cool... I wanted to read this one for a long time. How did you know I like these?" nointeract
 
 # game/dialogues/alicetalk.rpy:991
 translate english gift_book_979f3c17:
@@ -2024,7 +2024,7 @@ translate english gift_book_64ab516e:
 translate english gift_book_03d13f43:
 
     # Alice_07 "Умный он... Ну, молодец, что догадался. Спасибо, Макс! Если ещё попадутся из этой серии, буду рада принять их от тебя. Безвозмездно!"
-    Alice_07 "Einstein... Well, good job on the book guessing. Thank you, Max! If you find something like this again, I'll be glad to take them. Without compensation!"
+    Alice_07 "Einstein... Well, good job on the book guessing. Thank you, Max! If you find something like this again, I'll be glad to take it. Without compensation!"
 
 # game/dialogues/alicetalk.rpy:997
 translate english gift_book_e6768cdc:
@@ -2036,7 +2036,7 @@ translate english gift_book_e6768cdc:
 translate english gift_book_cd40cdaa:
 
     # Alice_05 "Поздравляю, попал в десятку! Если найдёшь ещё что-то подобное, буду рада такому подарку. Даже от тебя..."
-    Alice_05 "Congratulations, you hit the mark! If you find something like that I'll be happy to get them as a present. Even from you..."
+    Alice_05 "Congratulations, you hit the mark! If you find something else like that I'll be happy to get it as a present. Even from you..."
 
 # game/dialogues/alicetalk.rpy:1000
 translate english gift_book_20e24e02:
@@ -2060,7 +2060,7 @@ translate english gift_book_9652c3b9_1:
 translate english gift_book_dadbaec2:
 
     # Alice_07 "Супер! Ты меня удивляешь, Макс! Если ещё что будет почитать, приноси. Я люблю подобную... литературу."
-    Alice_07 "Great! You surprise me, Max! If you stumble into something like this again, I would love to have it. I love such... literature."
+    Alice_07 "Great! You really surprised me, Max! If you stumble into something like this again, I would love to have it. I love this sort of... literature."
 
 # game/dialogues/alicetalk.rpy:1012
 translate english gift_book_9b836c58:
@@ -2072,7 +2072,7 @@ translate english gift_book_9b836c58:
 translate english gift_book_e823379d:
 
     # Alice_04 "Супер! Давай, показывай, что тут у нас..."
-    Alice_04 "Super! Come on, show me, what we have here..."
+    Alice_04 "Super! Come on, show me what you've got there..."
 
 # game/dialogues/alicetalk.rpy:1021
 translate english gift_book_9652c3b9_2:
@@ -2084,7 +2084,7 @@ translate english gift_book_9652c3b9_2:
 translate english gift_book_38c1adff:
 
     # Alice_05 "То, что нужно! Если ещё что будет почитать, приноси. Ты же знаешь, как я люблю такие книги..."
-    Alice_05 "It's great! You can always bring more, if you'll find some. You know how much I love these books..."
+    Alice_05 "This is great! You can always bring me more, if you find some. You know how much I love these books..."
 
 # game/dialogues/alicetalk.rpy:1023
 translate english gift_book_9b836c58_1:
@@ -2108,7 +2108,7 @@ translate english gift_book_9652c3b9_3:
 translate english gift_book_a057e2a0:
 
     # Alice_07 "Забавная книжка. Давно хотела почитать... Спасибо, Макс. Ты меня балуешь!"
-    Alice_07 "This should be fun. I wanted to read it for a long time... Thank you, Max. You're spoiling me!"
+    Alice_07 "This should be fun. I wanted to read this one for a long time... Thank you, Max. You're really spoiling me!"
 
 # game/dialogues/alicetalk.rpy:1041
 translate english gift_book_9b836c58_2:
@@ -2120,7 +2120,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:988
     old "Порылся в твоих вещах и нашёл, что читаешь!"
-    new "I rummaged through your things and found what you are reading!"
+    new "I rummaged through your things and found what you were reading!"
 
     # game/dialogues/alicetalk.rpy:988
     old "Ну, я догадался! Я же умный!"
@@ -2184,7 +2184,7 @@ translate english Alice_solar_77d5a5bb:
 translate english Alice_solar_22c9ef31:
 
     # Alice_03 "Если у тебя есть крем, то давай, раз тебе делать нечего."
-    Alice_03 "Well if you've got some suncreen, go ahead and put it on for me. It's not like you've got anything else to do."
+    Alice_03 "Well if you've got some suncreen, go ahead and put it on for me. It's not like you've got anything better to do."
 
 # game/dialogues/alicetalk.rpy:1085
 translate english Alice_solar_93baf4d9:
@@ -2196,7 +2196,7 @@ translate english Alice_solar_93baf4d9:
 translate english Alice_solar_type_choice_327b0489:
 
     # Alice_07 "Эти шезлонги всем хороши, но на животе загорать не получается. Приходится коврик для йоги использовать..." nointeract
-    Alice_07 "These sunbeds are good for everyone, but you can't get a tan on your stomach. You have to use a yoga mat..." nointeract
+    Alice_07 "These sunbeds are fine and all, but you can't get a tan on your stomach. You have to use a yoga mat..." nointeract
 
 # game/dialogues/alicetalk.rpy:1101
 translate english Alice_solar_type_choice_daa53147:
@@ -2286,25 +2286,25 @@ translate english massage_sunscreen_3f529b58:
 translate english massage_sunscreen_left_foot_fbfbb9cf:
 
     # Max_01 "{i}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
-    Max_01 "{i}let's Start today with the left heel... Like this. And while I'm massaging it, you can take a look at Alice's peachy ass!{/i}"
+    Max_01 "{I}Let's Start today with the left heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
 
 # game/dialogues/alicetalk.rpy:1189
 translate english massage_sunscreen_left_foot_6df29202:
 
     # Max_03 "{i}А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
-    Max_03 "{i}and now the right one... Like this. Yes, I can't take my eyes off you, that ass is perfect!{/i}"
+    Max_03 "{I}And now the right one... Like this. Yes, I can't take my eyes off you! That ass is perfect!{/i}"
 
 # game/dialogues/alicetalk.rpy:1195
 translate english massage_sunscreen_right_foot_c55e1f46:
 
     # Max_01 "{i}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
-    Max_01 "{i}let's Start today with the right heel... Like this. And while I'm massaging it, you can take a look at Alice's peachy ass!{/i}"
+    Max_01 "{I}Let's start today with the right heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
 
 # game/dialogues/alicetalk.rpy:1198
 translate english massage_sunscreen_right_foot_facf4587:
 
     # Max_03 "{i}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
-    Max_03 "{i}And now the left one... Like this. Yes, I can't take my eyes off you, that ass is perfect!{/i}"
+    Max_03 "{i}And now the left one... Like this. Yes, I can't take my eyes off you! That ass is perfect!{/i}"
 
 # game/dialogues/alicetalk.rpy:1204
 translate english massage_sunscreen_shin_a07f50ac:
@@ -2316,7 +2316,7 @@ translate english massage_sunscreen_shin_a07f50ac:
 translate english massage_sunscreen_shin_35e52f27:
 
     # Alice_07 "Ух, как приятно... Ты молодец, Макс! Моим ножкам это понравилось... Не останавливайся, продолжай..."
-    Alice_07 "Oh, how nice... You're doing great, Max! My legs are loving it... Don't stop, keep going..."
+    Alice_07 "Oh, that's nice... You're doing great, Max! My legs are loving it... Don't stop, keep going..."
 
 # game/dialogues/alicetalk.rpy:1226
 translate english massage_sunscreen_shin_012ea9eb:
@@ -2328,7 +2328,7 @@ translate english massage_sunscreen_shin_012ea9eb:
 translate english massage_sunscreen_shin_8a65b49d:
 
     # Alice_03 "Неплохо, Макс... Мне нравится, продолжай..."
-    Alice_03 "Not Bad, Max... I like it, go on..."
+    Alice_03 "Not bad, Max... I like it, go on..."
 
 # game/dialogues/alicetalk.rpy:1241
 translate english massage_sunscreen_hips_f9d8b1b4:
@@ -2406,7 +2406,7 @@ translate english massage_sunscreen_spine_78ef9d96:
 translate english massage_sunscreen_ass_e47a4169:
 
     # "попка"
-    "ass"
+    "Ass"
 
 # game/dialogues/alicetalk.rpy:1367
 translate english massage_sunscreen_foot_ab2015ff:
@@ -2418,19 +2418,19 @@ translate english massage_sunscreen_foot_ab2015ff:
 translate english massage_sunscreen_foot_645611c7:
 
     # Alice_03 "А ничего так, мне приятно... У тебя нежные руки..."
-    Alice_03 "That's quite nice actually...you have some soft hands..."
+    Alice_03 "That's quite nice actually...You have some soft hands..."
 
 # game/dialogues/alicetalk.rpy:1381
 translate english massage_sunscreen_foot_9c65000e:
 
     # Alice_04 "Охх... А ты неплох сегодня в этом деле... Моим пяточкам приятны твои руки! Продолжай..."
-    Alice_04 "Ohh... And you're not that bad at this today... My heels really like your hands right now! Go on..."
+    Alice_04 "Ohh... You're not that bad at this today... My heels really like your hands right now! Go on..."
 
 # game/dialogues/alicetalk.rpy:1390
 translate english massage_sunscreen_double_b0f3e1ef:
 
     # Alice_13 "Взялся делать массаж, а сам не знаешь что делать! Хватит, иди отсюда, дай позагорать спокойно."
-    Alice_13 "You want to give a massage but you don't know what you're doing! That's enough, get out of here, at least you haven't ruined my tan."
+    Alice_13 "How can you give a massage if you don't know what you're doing!? That's enough, get out of here. At least you haven't ruined my tan."
 
 # game/dialogues/alicetalk.rpy:1391
 translate english massage_sunscreen_double_fedfcd78:
@@ -2442,7 +2442,7 @@ translate english massage_sunscreen_double_fedfcd78:
 translate english massage_sunscreen_fail_fb2ca6f2:
 
     # Alice_06 "Хватит, Макс... Что-то у тебя не так пошло... А ведь так хорошо начал..."
-    Alice_06 "That's enough, Max... you got off to a good start, but now it's like you just lost focus."
+    Alice_06 "That's enough, Max... You were off to a good start, but now it's like you just lost focus."
 
 # game/dialogues/alicetalk.rpy:1398
 translate english massage_sunscreen_fail_3a89736f:
@@ -2478,7 +2478,7 @@ translate english massage_sunscreen_talk_topless_3f9e6cf2:
 translate english massage_sunscreen_talk_topless_8007ab35:
 
     # Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
-    Alice_04 "[failed!t]That's just \"mild\" something I don't need to take off!"
+    Alice_04 "[failed!t]That's just \"mild\" something I don't want to take off!"
 
 # game/dialogues/alicetalk.rpy:1417
 translate english massage_sunscreen_talk_topless_57148625:
@@ -2490,7 +2490,7 @@ translate english massage_sunscreen_talk_topless_57148625:
 translate english massage_sunscreen_end_1a15b8da:
 
     # Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
-    Max_10 "{i}Well, i'm out of sunscreen. Need to buy more.{/i}"
+    Max_10 "{i}Well, I'm out of sunscreen. I need to buy more.{/i}"
 
 # game/dialogues/alicetalk.rpy:1434
 translate english massage_sunscreen_end_2c4d5f44:
@@ -2506,7 +2506,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1059
     old "{i}Предложить Алисе намазать её кремом{/i}"
-    new "{i}Ask Alice to to apply some sunscreen{/i}"
+    new "{i}Ask Alice to to apply some sunscreen.{/I}"
 
     # game/dialogues/alicetalk.rpy:1059
     old "Ладно, загорай..."
@@ -2514,15 +2514,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}нанести крем{/i}"
-    new "{i}apply cream{/i}"
+    new "{I}Apply cream{/I}"
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}сделать массаж с кремом{/i}"
-    new "{i}massage it in{/i}"
+    new "{I}Massage it in{/I}"
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}"
-    new "{i}{color=[gray]}massage with cream{/color}{color=[red]}\not enough cream{/color}{/i}"
+    new "{i}{color=[gray]}Massage with cream{/color}{color=[red]}\nNot enough cream{/color}{/i}"
 
     # game/dialogues/alicetalk.rpy:1158
     old "Массаж"
@@ -2534,15 +2534,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1158
     old "Это уникальная методика массажа с целью оказания оздоравливающего воздействия на организм. Она эффективна и в тоже время несложна в исполнении."
-    new "This is a unique method of massage to provide a healing effect on the body. It is effective and at the same time, easy to perform."
+    new "This is a unique method of massage used to provide a healing effect on the body. It is effective and at the same time, easy to perform."
 
     # game/dialogues/alicetalk.rpy:1158
     old "Массаж кистей рук"
     new "Massage hands"
 
     # game/dialogues/alicetalk.rpy:1406
-    old "Что, стесняешься? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "Are you shy? {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
+    old "Что, стесняешься? {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "Are you shy? {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1406
     old "Ну, как хочешь..."
@@ -2553,13 +2553,13 @@ translate english strings:
 translate english Alice_sorry_16af519e:
 
     # Alice_08 "Ах ты... паршивец... Это подлый ход, потому что от вкусняшки я бы не отказалась... Хорошо, но обещать ничего не буду, сперва посмотрю, что это будет за вкусность... Если ты конечно успеешь до вечера понедельника!"
-    Alice_08 "You... bastard... that's a dirty move, because I could really go for something delicious... Alright. But i'm not promising anything yet. first I'll see what you can come up with... If you can make it by Monday night!"
+    Alice_08 "You... bastard... that's a dirty move, because I could really go for something delicious... Alright. But i'm not promising anything yet. First, I'll see what you can come up with... If you can have it by Monday night!"
 
 # game/dialogues/alicetalk.rpy:898
 translate english Alice_sorry_757230ae:
 
     # Max_01 "Обязательно успею! В понедельник всё будет..."
-    Max_01 "I will definitely make it! Everything will be ready on Monday..."
+    Max_01 "I will definitely have it! Everything will be ready on Monday..."
 
 # game/dialogues/alicetalk.rpy:903
 translate english Alice_sorry_0b2ed5fa:
@@ -2577,7 +2577,7 @@ translate english Alice_sorry_72400ce8:
 translate english Alice_sorry_89af1794:
 
     # Max_09 "Э-э-э... Правда?!"
-    Max_09 "Uh-huh... Really?!"
+    Max_09 "Uhh... Really?!"
 
 # game/dialogues/alicetalk.rpy:913
 translate english Alice_sorry_88325cef:
@@ -2619,7 +2619,7 @@ translate english Alice_sorry_f61b9d40:
 translate english Alice_sorry_7981d206:
 
     # Alice_02 "Ты, конечно, можешь попробовать, от чего-нибудь сладенького я не откажусь, но ты же понимаешь, что мне должно это очень понравиться."
-    Alice_02 "You can try it, if you want. I'm not going to say no to it, but if you expect forgiveness, it has to be a sweet that I really like."
+    Alice_02 "You can try it, if you want. I'm not going to say no to it, but if you expect forgiveness, it has to be something that I really like."
 
 # game/dialogues/alicetalk.rpy:921
 translate english Alice_sorry_bb87973c:
@@ -2673,7 +2673,7 @@ translate english alice_sorry_gifts_good_2b814165:
 translate english alice_sorry_gifts_good_a5776075:
 
     # Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
-    Alice_05 "Hm... It looks like you have luck on your side. Stared at me naked in the shower, and even guessed my favourite candy... Isn't it too much?"
+    Alice_05 "Hm... It looks like you have luck on your side. Stared at me naked in the shower, and even guessed my favourite candy... Isn't that too lucky?"
 
 # game/dialogues/alicetalk.rpy:1534
 translate english alice_sorry_gifts_good_bd79a6d3:
@@ -2703,7 +2703,7 @@ translate english alice_sorry_gifts_good_f3cde9b4:
 translate english alice_sorry_gifts_good_93ee8451:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
-    Alice_05 "Well, you promised me a sweet and you kept your word. And I'm kind if I'm in a good mood. More or less... So don't tempt fate!"
+    Alice_05 "Well, you promised me some sweets and you kept your word. And I'm kind of in a good mood... More or less. So don't tempt fate!"
 
 # game/dialogues/alicetalk.rpy:1542
 translate english alice_sorry_gifts_good_423a1ca0:
@@ -2769,7 +2769,7 @@ translate english alice_sorry_gifts_good_4eabb1cd:
 translate english alice_sorry_gifts_good_a5776075_1:
 
     # Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
-    Alice_05 "Hm... It looks like you have luck on your side. Stared at me naked in the shower, and even guessed my favourite candy... Isn't it too much?"
+    Alice_05 "Hm... It looks like you have luck on your side. Stared at me naked in the shower, and even guessed my favourite candy... Isn't that too lucky?"
 
 # game/dialogues/alicetalk.rpy:1561
 translate english alice_sorry_gifts_good_bd79a6d3_1:
@@ -2805,7 +2805,7 @@ translate english alice_sorry_gifts_good_324b4e00:
 translate english alice_sorry_gifts_good_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1568
 translate english alice_sorry_gifts_good_b4a32aa4_1:
@@ -2835,7 +2835,7 @@ translate english alice_sorry_gifts_good_dc8918e7:
 translate english alice_sorry_gifts_good_c6a269e0:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
-    Max_11 "Note taken, Alice! Let it go already..."
+    Max_11 "Note taken, Alice! Let me go already..."
 
 # game/dialogues/alicetalk.rpy:1573
 translate english alice_sorry_gifts_good_a174e7cf:
@@ -2859,7 +2859,7 @@ translate english alice_sorry_gifts_good_4eabb1cd_1:
 translate english alice_sorry_gifts_good_a5776075_2:
 
     # Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
-    Alice_05 "Hm... It looks like you have luck on your side. Stared at me naked in the shower, and even guessed my favourite candy... Isn't it too much?"
+    Alice_05 "Hm... It looks like you have luck on your side. Stared at me naked in the shower, and even guessed my favourite candy... Isn't that too lucky?"
 
 # game/dialogues/alicetalk.rpy:1580
 translate english alice_sorry_gifts_good_bd79a6d3_2:
@@ -2889,7 +2889,7 @@ translate english alice_sorry_gifts_good_3e4a4815:
 translate english alice_sorry_gifts_good_93ee8451_1:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
-    Alice_05 "Well, you promised me a sweet and you kept your word. And I'm kind if I'm in a good mood. More or less... So don't tempt fate!"
+    Alice_05 "Well, you promised me some sweets and kept your word. And I'm kind of in a good mood... More or less. So don't tempt fate!"
 
 # game/dialogues/alicetalk.rpy:1588
 translate english alice_sorry_gifts_good_db82d6f5:
@@ -2901,7 +2901,7 @@ translate english alice_sorry_gifts_good_db82d6f5:
 translate english alice_sorry_gifts_good_29abb604_1:
 
     # Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
-    Alice_05 "Okay, Max, consider your apology accepted... Wow, what have you got here?.."
+    Alice_05 "Okay, Max, consider your apology accepted... Wow, what have you got there?.."
 
 # game/dialogues/alicetalk.rpy:1593
 translate english alice_sorry_gifts_good_324b4e00_1:
@@ -2913,7 +2913,7 @@ translate english alice_sorry_gifts_good_324b4e00_1:
 translate english alice_sorry_gifts_good_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1595
 translate english alice_sorry_gifts_good_b4a32aa4_2:
@@ -2973,7 +2973,7 @@ translate english alice_sorry_gifts_good_3e4a4815_1:
 translate english alice_sorry_gifts_good_8ca1ca6c:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Но, Макс, просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
-    Alice_05 "Well, you promised me sweets and you kept your word. And I'm kind if I'm in a good mood. But, Max, just for future reference, you won't get off so easily! Unless it's a big box of my favorite candy..."
+    Alice_05 "Well, you promised me sweets and you kept your word. And I'm kind of in a good mood. But, Max, just for future reference, you won't get off so easily! Unless it's a big box of my favorite candy..."
 
 # game/dialogues/alicetalk.rpy:1613
 translate english alice_sorry_gifts_good_db82d6f5_1:
@@ -2985,7 +2985,7 @@ translate english alice_sorry_gifts_good_db82d6f5_1:
 translate english alice_sorry_gifts_good_6b2c5b58:
 
     # Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
-    Alice_05 "[failed!t]Okay, Max, consider your apology accepted... Wow, what have you got here?.."
+    Alice_05 "[failed!t]Okay, Max, consider your apology accepted... Wow, what have you got there?.."
 
 # game/dialogues/alicetalk.rpy:1618
 translate english alice_sorry_gifts_good_324b4e00_2:
@@ -2997,7 +2997,7 @@ translate english alice_sorry_gifts_good_324b4e00_2:
 translate english alice_sorry_gifts_good_27fd05a2_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1620
 translate english alice_sorry_gifts_good_b4a32aa4_3:
@@ -3069,7 +3069,7 @@ translate english alice_sorry_gifts_good_f070e574:
 translate english alice_sorry_gifts_good_71f05ee4:
 
     # Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
-    Alice_07 "I can see that you're not doing this just to avoid getting punished, but your'e actually making an effort to be nice...so I will too."
+    Alice_07 "I can see that you're not doing this just to avoid getting punished. You're actually making an effort to be nice...so I will too."
 
 # game/dialogues/alicetalk.rpy:1639
 translate english alice_sorry_gifts_good_c9c4f595:
@@ -3117,7 +3117,7 @@ translate english alice_sorry_gifts_good_39aea913:
 translate english alice_sorry_gifts_good_39cc7463:
 
     # Max_01 "Я тогда лучше пойду... погуляю."
-    Max_01 "I'd better go then... take a walk."
+    Max_01 "I'd better go then and... take a walk."
 
 # game/dialogues/alicetalk.rpy:1649
 translate english alice_sorry_gifts_good_4d4f6eae:
@@ -3177,13 +3177,13 @@ translate english alice_sorry_gifts_middle_5289bcf8:
 translate english alice_sorry_gifts_middle_0c9451cf:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
-    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweet..."
+    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweets..."
 
 # game/dialogues/alicetalk.rpy:1688
 translate english alice_sorry_gifts_middle_a2071177:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1689
 translate english alice_sorry_gifts_middle_e61c4517:
@@ -3231,13 +3231,13 @@ translate english alice_sorry_gifts_middle_324b4e00:
 translate english alice_sorry_gifts_middle_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1704
 translate english alice_sorry_gifts_middle_55e0432c:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
-    Alice_05 "[succes!t]Perhaps this time I'll believe you and not tell Mom. But, just in case, I'll need to pull harder..."
+    Alice_05 "[succes!t]Perhaps this time I'll believe you and not tell Mom. But, just in case, I might need to pull harder..."
 
 # game/dialogues/alicetalk.rpy:1705
 translate english alice_sorry_gifts_middle_e2b944cc:
@@ -3249,13 +3249,13 @@ translate english alice_sorry_gifts_middle_e2b944cc:
 translate english alice_sorry_gifts_middle_0c9451cf_1:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
-    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweet..."
+    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweets..."
 
 # game/dialogues/alicetalk.rpy:1707
 translate english alice_sorry_gifts_middle_a2071177_1:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1708
 translate english alice_sorry_gifts_middle_e61c4517_1:
@@ -3267,7 +3267,7 @@ translate english alice_sorry_gifts_middle_e61c4517_1:
 translate english alice_sorry_gifts_middle_c6a269e0:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
-    Max_11 "Note taken, Alice! Let it go already..."
+    Max_11 "Note taken, Alice! Let me go already..."
 
 # game/dialogues/alicetalk.rpy:1710
 translate english alice_sorry_gifts_middle_a174e7cf:
@@ -3297,7 +3297,7 @@ translate english alice_sorry_gifts_middle_054e253f:
 translate english alice_sorry_gifts_middle_a2071177_2:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1717
 translate english alice_sorry_gifts_middle_e61c4517_2:
@@ -3327,7 +3327,7 @@ translate english alice_sorry_gifts_middle_ebaef405:
 translate english alice_sorry_gifts_middle_744dc556:
 
     # Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
-    Max_08 "It was accidental... Maybe you won't tell your Mom about this morning, after all."
+    Max_08 "It was an accident... Maybe you won't tell your Mom about this morning, after all."
 
 # game/dialogues/alicetalk.rpy:1726
 translate english alice_sorry_gifts_middle_9a919278_1:
@@ -3345,7 +3345,7 @@ translate english alice_sorry_gifts_middle_324b4e00_1:
 translate english alice_sorry_gifts_middle_ce051c95_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1733
 translate english alice_sorry_gifts_middle_55e0432c_1:
@@ -3363,13 +3363,13 @@ translate english alice_sorry_gifts_middle_e2b944cc_1:
 translate english alice_sorry_gifts_middle_0c9451cf_2:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
-    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweet..."
+    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweets..."
 
 # game/dialogues/alicetalk.rpy:1736
 translate english alice_sorry_gifts_middle_a2071177_3:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1737
 translate english alice_sorry_gifts_middle_e61c4517_3:
@@ -3405,13 +3405,13 @@ translate english alice_sorry_gifts_middle_088d0b2a_1:
 translate english alice_sorry_gifts_middle_054e253f_1:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I'm not interested in it! So-no luck for you..."
+    Alice_05 "It doesn't count if I'm not interested in it! So no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1745
 translate english alice_sorry_gifts_middle_a2071177_4:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "Well what's your favorite?"
 
 # game/dialogues/alicetalk.rpy:1746
 translate english alice_sorry_gifts_middle_e61c4517_4:
@@ -3459,7 +3459,7 @@ translate english alice_sorry_gifts_middle_324b4e00_2:
 translate english alice_sorry_gifts_middle_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1759
 translate english alice_sorry_gifts_middle_b4a32aa4_1:
@@ -3501,7 +3501,7 @@ translate english alice_sorry_gifts_middle_a174e7cf_4:
 translate english alice_sorry_gifts_bad_b27213f4:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
-    Alice_12 "Oh! What a disgusting coconut, I don't love it, eww! This is a big mistake, Max!"
+    Alice_12 "Oh! Coconut is disgusting, I don't like it, eww! You made a terrible choice, Max!"
 
 # game/dialogues/alicetalk.rpy:1793
 translate english alice_sorry_gifts_bad_581eaf16:
@@ -3543,13 +3543,13 @@ translate english alice_sorry_gifts_bad_5289bcf8:
 translate english alice_sorry_gifts_bad_0c9451cf:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
-    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweet..."
+    Alice_04 "Well, next time you won't get off so easily! Not unless it's my favourite sweets..."
 
 # game/dialogues/alicetalk.rpy:1804
 translate english alice_sorry_gifts_bad_a2071177:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1805
 translate english alice_sorry_gifts_bad_e61c4517:
@@ -3579,19 +3579,19 @@ translate english alice_sorry_gifts_bad_bc52a6b0:
 translate english alice_sorry_gifts_bad_088d0b2a:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
-    Max_14 "But, Alice, I bought a... Oh, let go!"
+    Max_14 "But, Alice, I bought a... Oww, let go!"
 
 # game/dialogues/alicetalk.rpy:1812
 translate english alice_sorry_gifts_bad_aacea659:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1813
 translate english alice_sorry_gifts_bad_a2071177_1:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1814
 translate english alice_sorry_gifts_bad_e61c4517_1:
@@ -3615,7 +3615,7 @@ translate english alice_sorry_gifts_bad_ef1d31f0_1:
 translate english alice_sorry_gifts_bad_564b1248:
 
     # Alice_00 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
-    Alice_00 "Max, are you stupid?! I already told you I don't like these! Are you not listening to me at all, or are you slow?!"
+    Alice_00 "Max, are you stupid?! I already told you I don't like these! Are you not listening to me at all, or are you just slow?!"
 
 # game/dialogues/alicetalk.rpy:1823
 translate english alice_sorry_gifts_bad_8f328335:
@@ -3639,7 +3639,7 @@ translate english alice_sorry_gifts_bad_324b4e00:
 translate english alice_sorry_gifts_bad_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1828
 translate english alice_sorry_gifts_bad_b4a32aa4:
@@ -3651,7 +3651,7 @@ translate english alice_sorry_gifts_bad_b4a32aa4:
 translate english alice_sorry_gifts_bad_f7fd9769:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
-    Alice_12 "Did you really think I could be convinced like that?! No, I really want to see Mom spank you!"
+    Alice_12 "Did you really think I would be convinced like that?! No, I really want to see Mom spank you!"
 
 # game/dialogues/alicetalk.rpy:1830
 translate english alice_sorry_gifts_bad_088d0b2a_1:
@@ -3663,13 +3663,13 @@ translate english alice_sorry_gifts_bad_088d0b2a_1:
 translate english alice_sorry_gifts_bad_aacea659_1:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1832
 translate english alice_sorry_gifts_bad_a2071177_2:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1833
 translate english alice_sorry_gifts_bad_e61c4517_2:
@@ -3693,7 +3693,7 @@ translate english alice_sorry_gifts_bad_a174e7cf:
 translate english alice_sorry_gifts_bad_b27213f4_1:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
-    Alice_12 "Oh! What a disgusting coconut, I don't love it, eww! This is a big mistake, Max!"
+    Alice_12 "Oh! Coconut is disgusting, I hate it, eww! These are definitely the wrong ones, Max!"
 
 # game/dialogues/alicetalk.rpy:1840
 translate english alice_sorry_gifts_bad_581eaf16_1:
@@ -3717,7 +3717,7 @@ translate english alice_sorry_gifts_bad_324b4e00_1:
 translate english alice_sorry_gifts_bad_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1845
 translate english alice_sorry_gifts_bad_b4a32aa4_1:
@@ -3729,7 +3729,7 @@ translate english alice_sorry_gifts_bad_b4a32aa4_1:
 translate english alice_sorry_gifts_bad_f7fd9769_1:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
-    Alice_12 "Did you really think I could be convinced like that?! No, I really want to see Mom spank you!"
+    Alice_12 "Did you really think I would be convinced like that?! No, I really want to see Mom spank you!"
 
 # game/dialogues/alicetalk.rpy:1847
 translate english alice_sorry_gifts_bad_088d0b2a_2:
@@ -3741,13 +3741,13 @@ translate english alice_sorry_gifts_bad_088d0b2a_2:
 translate english alice_sorry_gifts_bad_aacea659_2:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1849
 translate english alice_sorry_gifts_bad_a2071177_3:
 
     # Max_08 "И какая у тебя любимая?"
-    Max_08 "And what's your favorite?"
+    Max_08 "And what's your favourite?"
 
 # game/dialogues/alicetalk.rpy:1850
 translate english alice_sorry_gifts_bad_e61c4517_3:
@@ -3771,7 +3771,7 @@ translate english alice_sorry_gifts_bad_a174e7cf_1:
 translate english alice_sorry_gifts_bad_b27213f4_2:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
-    Alice_12 "Oh! What a disgusting coconut, I don't love it, eww! This is a big mistake, Max!"
+    Alice_12 "Oh! Coconut is disgusting, I hate it, eww! You made a big mistake, Max!"
 
 # game/dialogues/alicetalk.rpy:1857
 translate english alice_sorry_gifts_bad_581eaf16_2:
@@ -3795,7 +3795,7 @@ translate english alice_sorry_gifts_bad_324b4e00_2:
 translate english alice_sorry_gifts_bad_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1865
 translate english alice_sorry_gifts_bad_55e0432c_1:
@@ -3868,20 +3868,20 @@ translate english strings:
     new "Wow! You really want to take that chance... So what have you got this time?"
 
     # game/dialogues/alicetalk.rpy:1535
-    old "Именно на это я и надеюсь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "That's what I'm hoping for... {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
+    old "Именно на это я и надеюсь... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "That's what I'm hoping for... {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1581
-    old "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "I would hope so...{color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
+    old "Хочется надеяться, что так и будет... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "I would hope so...{color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1631
-    old "Только если без последующего насилия... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "Only if there is no subsequent violence... {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
+    old "Только если без последующего насилия... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "Only if there is no subsequent violence... {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1700
-    old "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "I happened to be near the shower... {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
+    old "Да я же случайно оказался около душа... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "I happened to be near the shower... {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
 # TODO: Translation updated at 2020-04-15 00:38
 
@@ -3889,7 +3889,7 @@ translate english strings:
 translate english Alice_sorry_f0f56187:
 
     # Alice_05 "Макс, а давай всё упростим до того, что ты сейчас уходишь покупать мне конфеты, а я их жду до следующего ужина? Как тебе, а?!"
-    Alice_05 "Max, lets just make it easier and agree that you'll get me some candy before dinner? What do you think?"
+    Alice_05 "Max, lets just make it easier and agree that you'll get me some candy before dinner. What do you think?"
 
 # game/dialogues/alicetalk.rpy:928
 translate english Alice_sorry_1c23eb75:
@@ -4021,7 +4021,7 @@ translate english alice_sorry_gifts_middle_again_324b4e00:
 translate english alice_sorry_gifts_middle_again_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1569
 translate english alice_sorry_gifts_middle_again_55e0432c:
@@ -4057,7 +4057,7 @@ translate english alice_sorry_gifts_middle_again_088d0b2a:
 translate english alice_sorry_gifts_middle_again_054e253f:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I'm not interested in it! So-no luck for you..."
+    Alice_05 "It doesn't count if I'm not interested in it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1577
 translate english alice_sorry_gifts_middle_again_e2b944cc_1:
@@ -4099,7 +4099,7 @@ translate english alice_sorry_gifts_bad_again_324b4e00:
 translate english alice_sorry_gifts_bad_again_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1590
 translate english alice_sorry_gifts_bad_again_b4a32aa4:
@@ -4123,7 +4123,7 @@ translate english alice_sorry_gifts_bad_again_088d0b2a:
 translate english alice_sorry_gifts_bad_again_aacea659:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1594
 translate english alice_sorry_gifts_bad_again_e2b944cc:
@@ -4153,7 +4153,7 @@ translate english alice_sorry_gifts_apology_accepted_324b4e00:
 translate english alice_sorry_gifts_apology_accepted_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1604
 translate english alice_sorry_gifts_apology_accepted_b4a32aa4:
@@ -4171,7 +4171,7 @@ translate english alice_sorry_gifts_apology_accepted_14c24df1:
 translate english alice_sorry_gifts_apology_accepted_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
-    Max_14 "Okay! I got it... No more!"
+    Max_14 "Okay! I get it... No more!"
 
 # game/dialogues/alicetalk.rpy:1607
 translate english alice_sorry_gifts_apology_accepted_a174e7cf:
@@ -4195,7 +4195,7 @@ translate english alice_sorry_gifts_you_deserve_f070e574:
 translate english alice_sorry_gifts_you_deserve_71f05ee4:
 
     # Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
-    Alice_07 "I can see that you're not doing this just to avoid getting punished, but your'e actually making an effort to be nice...so I will too."
+    Alice_07 "I can see that you're not doing this just to avoid getting punished, but you're actually making an effort to be nice...so I will too."
 
 # game/dialogues/alicetalk.rpy:1615
 translate english alice_sorry_gifts_you_deserve_c9c4f595:
@@ -4243,7 +4243,7 @@ translate english alice_sorry_gifts_what_bummer_39aea913:
 translate english alice_sorry_gifts_what_bummer_39cc7463:
 
     # Max_01 "Я тогда лучше пойду... погуляю."
-    Max_01 "I'd better go then... take a walk."
+    Max_01 "I'd better go then... and take a walk."
 
 # game/dialogues/alicetalk.rpy:1627
 translate english alice_sorry_gifts_what_bummer_4d4f6eae:
@@ -4267,7 +4267,7 @@ translate english alice_sorry_gifts_im_in_pain_324b4e00:
 translate english alice_sorry_gifts_im_in_pain_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1636
 translate english alice_sorry_gifts_im_in_pain_b4a32aa4:
@@ -4291,7 +4291,7 @@ translate english alice_sorry_gifts_im_in_pain_e2b944cc:
 translate english alice_sorry_gifts_what_disgusting_b27213f4:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
-    Alice_12 "Oh! What a disgusting coconut, I don't love it, eww! This is a big mistake, Max!"
+    Alice_12 "Oh! Coconut is disgusting, I hate it, eww! This is a big mistake, Max!"
 
 # game/dialogues/alicetalk.rpy:1643
 translate english alice_sorry_gifts_what_disgusting_581eaf16:
@@ -4315,7 +4315,7 @@ translate english alice_sorry_gifts_what_disgusting_324b4e00:
 translate english alice_sorry_gifts_what_disgusting_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1648
 translate english alice_sorry_gifts_what_disgusting_b4a32aa4:
@@ -4411,7 +4411,7 @@ translate english alice_sorry_gifts_bad_324b4e00_3:
 translate english alice_sorry_gifts_bad_ce051c95_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1765
 translate english alice_sorry_gifts_bad_55e0432c_2:
@@ -4471,7 +4471,7 @@ translate english alice_sorry_gifts_bad_324b4e00_4:
 translate english alice_sorry_gifts_bad_ce051c95_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1790
 translate english alice_sorry_gifts_bad_55e0432c_3:
@@ -4507,7 +4507,7 @@ translate english alice_sorry_gifts_bad_088d0b2a_6:
 translate english alice_sorry_gifts_bad_aacea659_5:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1798
 translate english alice_sorry_gifts_bad_e2b944cc_5:
@@ -4543,7 +4543,7 @@ translate english alice_sorry_gifts_bad_a174e7cf_8:
 translate english alice_sorry_gifts_bad_b27213f4_3:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
-    Alice_12 "Oh! What a disgusting coconut, I don't love it, eww! This is a big mistake, Max!"
+    Alice_12 "Oh! Coconut is disgusting, I hate it, eww! This is a big mistake, Max!"
 
 # game/dialogues/alicetalk.rpy:1814
 translate english alice_sorry_gifts_bad_581eaf16_3:
@@ -4567,7 +4567,7 @@ translate english alice_sorry_gifts_bad_324b4e00_5:
 translate english alice_sorry_gifts_bad_ce051c95_3:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1822
 translate english alice_sorry_gifts_bad_55e0432c_4:
@@ -4603,7 +4603,7 @@ translate english alice_sorry_gifts_bad_088d0b2a_7:
 translate english alice_sorry_gifts_bad_aacea659_6:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1830
 translate english alice_sorry_gifts_bad_e2b944cc_8:
@@ -4663,7 +4663,7 @@ translate english alice_sorry_gifts_middle_324b4e00_3:
 translate english alice_sorry_gifts_middle_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1942
 translate english alice_sorry_gifts_middle_b4a32aa4_2:
@@ -4687,7 +4687,7 @@ translate english alice_sorry_gifts_middle_088d0b2a_2:
 translate english alice_sorry_gifts_middle_8599f1f0:
 
     # Alice_05 "Не считается, если она мне неинтересна! Ты так и не подарил самую мою любимую сладость! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I don't like it! You never gave me my favourite sweet! So-no luck for you..."
+    Alice_05 "It doesn't count if I don't like it! You never gave me my favourite sweet! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:1946
 translate english alice_sorry_gifts_middle_e2b944cc_3:
@@ -4783,7 +4783,7 @@ translate english alice_sorry_gifts_middle_324b4e00_4:
 translate english alice_sorry_gifts_middle_27fd05a2_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1983
 translate english alice_sorry_gifts_middle_b4a32aa4_3:
@@ -4837,7 +4837,7 @@ translate english alice_sorry_gifts_middle_324b4e00_5:
 translate english alice_sorry_gifts_middle_ce051c95_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:1999
 translate english alice_sorry_gifts_middle_55e0432c_2:
@@ -4873,7 +4873,7 @@ translate english alice_sorry_gifts_middle_088d0b2a_3:
 translate english alice_sorry_gifts_middle_054e253f_2:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
-    Alice_05 "It doesn't count if I'm not interested in it! So-no luck for you..."
+    Alice_05 "It doesn't count if I'm not interested in it! So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:2007
 translate english alice_sorry_gifts_middle_e2b944cc_6:
@@ -4957,7 +4957,7 @@ translate english alice_sorry_gifts_middle_324b4e00_6:
 translate english alice_sorry_gifts_middle_27fd05a2_3:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:2034
 translate english alice_sorry_gifts_middle_b4a32aa4_4:
@@ -5005,7 +5005,7 @@ translate english alice_sorry_gifts_good_e5d166a4:
 translate english alice_sorry_gifts_good_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
-    Alice_16 "Still plan on spying on me, you sycophant?" nointeract
+    Alice_16 "Still plan on spying on me, you creep?" nointeract
 
 # game/dialogues/alicetalk.rpy:2162
 translate english alice_sorry_gifts_good_55e0432c:
@@ -5035,7 +5035,7 @@ translate english alice_sorry_gifts_good_088d0b2a:
 translate english alice_sorry_gifts_good_8c11f335:
 
     # Alice_05 "Слишком уж долго до тебя доходило, что я больше всего люблю... Так что - не повезло тебе..."
-    Alice_05 "It's taken you too long to figure out what I love most... So-no luck for you..."
+    Alice_05 "It's taken you too long to figure out my favourite candy... So, no luck for you..."
 
 # game/dialogues/alicetalk.rpy:2170
 translate english alice_sorry_gifts_good_e2b944cc_3:
@@ -5329,7 +5329,7 @@ translate english alice_sorry_gifts_good_45eaf315_1:
 translate english alice_sorry_gifts_good_f2a5ad6d:
 
     # Alice_05 "Конфет так много, что я не припоминаю, чтобы утром за мной кто-то подглядывал! Всё было в порядке..."
-    Alice_05 "There are so many sweets that I can't recall if anyone was spying on me in the morning! "
+    Alice_05 "This is so much candy! I guess I was just seeing things this morning after all!"
 
 # game/dialogues/alicetalk.rpy:2301
 translate english alice_sorry_gifts_good_ddda64bf_1:
@@ -5341,7 +5341,7 @@ translate english alice_sorry_gifts_good_ddda64bf_1:
 translate english alice_sorry_gifts_good_957ffb88:
 
     # Alice_04 "Я даже обниму тебя за это! Ну так... совсем немного... Иди ко мне."
-    Alice_04 "I'll even hug you for it! Well... just a little... Come to me."
+    Alice_04 "I'll even hug you for it! Well... just a little... Come over here."
 
 # game/dialogues/alicetalk.rpy:2304
 translate english alice_sorry_gifts_good_f070e574_1:
@@ -5402,7 +5402,7 @@ translate english gift_pajamas_3971db4e:
 translate english gift_pajamas_ece76dbb:
 
     # Alice_07 "О да! Какие симпатичные! Ты такой молодец, Макс! Спасибо тебе большое..."
-    Alice_07 "Oh Yes! How cute! You're so good, Max! Thank you very much..."
+    Alice_07 "Oh Yes! These are so cute! Thank you very much..."
 
 # game/dialogues/alicetalk.rpy:1121
 translate english gift_pajamas_cb80cd22:
@@ -5438,7 +5438,7 @@ translate english gift_pajamas_324b4e00:
 translate english gift_pajamas_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still going to spy on me, you sycophant?"
+    Alice_16 "Still going to spy on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1129
 translate english gift_pajamas_b4a32aa4:
@@ -5468,7 +5468,7 @@ translate english gift_pajamas_a174e7cf:
 translate english gift_pajamas_c4c218bc:
 
     # Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
-    Alice_03 "Try it on in front of you? We didn't agree on this. I'll wear it, but... Okay. I'll try it on in front of you, but don't peek! I see what you're looking at, you get it, and you go for a swim. Upside down."
+    Alice_03 "Try it on in front of you? We didn't agree on this. I'll wear it, but... Okay. I'll try it on in front of you, but don't peek! If I catch you peeking, they'll find your body at the bottom of the pool."
 
 # game/dialogues/alicetalk.rpy:1136
 translate english gift_pajamas_41b77fdd:
@@ -5486,19 +5486,19 @@ translate english gift_pajamas_6321062f:
 translate english gift_pajamas_35b4664a:
 
     # Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
-    Alice_01 "Max! Are you staring at my Breasts? There are mirrors all around and I can see everything! Turn away!"
+    Alice_01 "Max! Are you staring at my breasts? There are mirrors all around and I can see everything! Turn away!"
 
 # game/dialogues/alicetalk.rpy:1155
 translate english gift_pajamas_d0a89701:
 
     # Max_03 "Я не пялюсь..."
-    Max_03 "I don't stare..."
+    Max_03 "I didn't stare..."
 
 # game/dialogues/alicetalk.rpy:1162
 translate english gift_pajamas_d2afc4ae:
 
     # Alice_02 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе?"
-    Alice_02 "Looks like the size fits me... and is comfortable. Very light. What do you think?"
+    Alice_02 "Looks like the size fits me... and it's comfortable. Very light too. What do you think?"
 
 # game/dialogues/alicetalk.rpy:1163
 translate english gift_pajamas_b78414ac:
@@ -5516,7 +5516,7 @@ translate english gift_pajamas_3f594150:
 translate english gift_pajamas_dec14de0:
 
     # Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё шортики примерить."
-    Alice_05 "Wow! Now look away quickly, because I'm not wearing any panties, thanks to your persuasion! I still need to try on my shorts."
+    Alice_05 "Wow! Now look away quickly, because I'm not wearing any panties, thanks to you! I still need to try on my shorts."
 
 # game/dialogues/alicetalk.rpy:1179
 translate english gift_pajamas_be8312c9:
@@ -5528,7 +5528,7 @@ translate english gift_pajamas_be8312c9:
 translate english gift_pajamas_16b73ea9:
 
     # Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
-    Max_08 "Of course I'm not looking ... Hey! And you're not supposed to wear panties! We have an agreement!"
+    Max_08 "Of course I'm not looking ... Hey! And you're not supposed to wear panties! We had an agreement!"
 
 # game/dialogues/alicetalk.rpy:1182
 translate english gift_pajamas_c14c7755:
@@ -5570,13 +5570,13 @@ translate english gift_pajamas_2d17227f:
 translate english gift_pajamas_14440938:
 
     # Max_02 "Я не пялюсь..."
-    Max_02 "I don't stare..."
+    Max_02 "I didn't stare..."
 
 # game/dialogues/alicetalk.rpy:1210
 translate english gift_pajamas_2e964202:
 
     # Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
-    Max_08 "I'm not staring ... Hey! And you're not supposed to wear panties! We have an agreement!"
+    Max_08 "I'm not staring ... Hey! And you're not supposed to wear panties! We had an agreement!"
 
 # game/dialogues/alicetalk.rpy:1211
 translate english gift_pajamas_c14c7755_1:
@@ -5618,7 +5618,7 @@ translate english gift_pajamas_2c4a92b7:
 translate english gift_pajamas_d60af571:
 
     # Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
-    Alice_07 "Looks like the size fits me... and is comfortable. Very light. Well, how do you like the whole thing?"
+    Alice_07 "Looks like the size fits me... and it's comfortable. Very light too. Well, how do you like the whole thing?"
 
 # game/dialogues/alicetalk.rpy:1232
 translate english gift_pajamas_910b5259:
@@ -5678,13 +5678,13 @@ translate english gift_pajamas_f070e574:
 translate english gift_pajamas_34b36de3:
 
     # Alice_07 "Не смотря на твои замашки, ты всё-таки купил мне пижамку, которую я просила. Вот я и не вредничаю..."
-    Alice_07 "In spite of your attitude, you still bought me the pajamas I asked for. So I'm not being mean..."
+    Alice_07 "In spite of your attitude, you still bought me the pajamas I asked for. So I'm not going to be mean..."
 
 # game/dialogues/alicetalk.rpy:1250
 translate english gift_pajamas_c9c4f595:
 
     # Max_05 "Да, надо бы почаще так делать."
-    Max_05 "Yes, I should do this more often."
+    Max_05 "I should do this more often, then."
 
 # game/dialogues/alicetalk.rpy:1251
 translate english gift_pajamas_8cf3cf3f:
@@ -5726,7 +5726,7 @@ translate english gift_pajamas_3e4a4815:
 translate english gift_pajamas_be4d74fe:
 
     # Alice_05 "Ну, ты обещал купить мне пижаму и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
-    Alice_05 "Well, you promised to buy me pajamas and you kept your word. I'm more or less kind now... So don't tempt fate!"
+    Alice_05 "Well, you promised to buy me pajamas and you kept your word. I'm more or less feeling kind right now... So don't tempt fate!"
 
 # game/dialogues/alicetalk.rpy:1262
 translate english gift_pajamas_db82d6f5:
@@ -5750,7 +5750,7 @@ translate english gift_pajamas_324b4e00_1:
 translate english gift_pajamas_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1268
 translate english gift_pajamas_b4a32aa4_1:
@@ -5804,7 +5804,7 @@ translate english gift_pajamas_324b4e00_2:
 translate english gift_pajamas_27fd05a2_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
-    Alice_16 "Still plan on spying on me, you sycophant?"
+    Alice_16 "Still plan on spying on me, you creep?"
 
 # game/dialogues/alicetalk.rpy:1279
 translate english gift_pajamas_b4a32aa4_2:
@@ -5837,8 +5837,8 @@ translate english strings:
     new "Yeah, I'm not a peeping Tom..."
 
     # game/dialogues/alicetalk.rpy:1255
-    old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "No, I just wanted to see how your pajamas would look...  {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
+    old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
+    new "No, I just wanted to see how your pajamas would look...  {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
 
 # TODO: Translation updated at 2020-04-18 22:48
 
@@ -5846,19 +5846,19 @@ translate english strings:
 translate english Alice_solar_6edc5f35:
 
     # Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
-    Max_09 "Sunscreen can probably be found at the online store. I should also get some lighter clothes before I try and massage Alice."
+    Max_09 "Sunscreen can probably be found at the online store. I should also get some more casual clothes before I try and massage Alice."
 
 # game/dialogues/alicetalk.rpy:1379
 translate english Alice_solar_type_choice_1a15b8da:
 
     # Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
-    Max_10 "{i}Well, i'm out of sunscreen. Need to buy more.{/i}"
+    Max_10 "{i}Well, I'm out of sunscreen. Need to buy more.{/i}"
 
 # game/dialogues/alicetalk.rpy:1384
 translate english Alice_solar_type_choice_2c4d5f44:
 
     # Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
-    Max_08 "{i}There's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance.{/i}"
+    Max_08 "{i}There's not enough sunscreen left, next time there may not be enough. It's better to buy more in advance.{/i}"
 
 translate english strings:
 

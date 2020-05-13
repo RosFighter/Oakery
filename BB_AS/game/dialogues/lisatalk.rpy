@@ -1079,7 +1079,7 @@ label Lisa_HomeWork:
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].stn > 2:
             $ talk_var['help.hw'] += 1
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if poss['sg'].stn > 2  and lisa.dress > 'a' and talk_var['lisa.pun'] > 2: # допилить условие на полотенце
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if poss['sg'].stn > 2  and lisa.dress > 'a' and talk_var['lisa.pun'] > 1: # допилить условие на полотенце
             $ talk_var['help.hw'] += 1
             $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
@@ -1093,7 +1093,7 @@ label Lisa_HomeWork:
 
     label .show_breast:
         $ renpy.show("Max lessons-breast 01"+mgg.dress)
-        if RandomChance(_ch.ch):  # убеждение успешно
+        if RandomChance(_ch1.ch):  # убеждение успешно
             $ punlisa[0][0] = 4
             $ mgg.social += 0.2
             menu:
@@ -1498,6 +1498,7 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -0.5)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(4)
+        $ clothes[lisa].sleep.cur = 1
 
     elif var == 2:  # Макс безвозмездно помогал Лизе делать уроки, но перестал
         $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
@@ -1527,6 +1528,7 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -0.5)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(5)
+        $ clothes[lisa].sleep.cur = 1
 
     elif var == 3:  # Макс помогал Лизе делать уроки за услуги, но перестал
         $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
@@ -1541,6 +1543,7 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -1)
         $ notify_list.append(_("Лиза недовольна отношением Макса к обещаниям. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(6)
+
 
     elif var == 4:  # Макс специально делал ошибки
         $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
@@ -1582,6 +1585,7 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -0.75)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(8)
+        $ clothes[lisa].sleep.cur = 1
 
     $ dcv['lisa.ad'].set_lost(7) # неделя до следующего разговора, если Макс не будет помогать...
     return

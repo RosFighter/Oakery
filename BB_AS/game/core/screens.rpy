@@ -647,6 +647,7 @@ screen Withdraw():
 screen SEO():
     tag menu2
     modal True
+    use notify_check
     use PowerBack2
     frame align(0.5, 0.5) xsize 1000:
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
@@ -682,6 +683,7 @@ screen SEO():
 screen MySite():
     tag menu
     modal True
+    use notify_check
     use PowerBack
     $ col_cam = 0
     for loc in locations:
@@ -1427,10 +1429,11 @@ screen ClothesSelect():
 
     imagebutton pos (1740, 100) auto 'interface close %s' action [Hide('ClothesSelect'), Show('menu_userinfo')] focus_mask True at close_zoom
 
-    $ list = cloth.GetList()
-    for l in list:
-        if not eval('cloth.'+l).Opens():
-            $ list.remove(l)
+    $ lst1 = cloth.GetList()
+    $ list = []
+    for l in lst1:
+        if eval('cloth.'+l).Opens():
+            $ list.append(l)
     default cur_cl = list[0]
     $ list_var = eval('cloth.'+cur_cl).GetOpen()
     default cur_var = 0
@@ -1452,14 +1455,15 @@ screen ClothesSelect():
 
         imagebutton:
             action NullAction()
-            focus_mask True
+            # focus_mask True
             xysize (550, 900)
+            ypos 30
             if CurChar == 'max':
-                idle 'Max clot '+eval('cloth.'+cur_cl).sel[cur_var].info
-                hover 'Max clot '+eval('cloth.'+cur_cl).sel[cur_var].info+'a'
+                idle 'Max clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info
+                hover 'Max clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info+'a'
             else:
-                idle chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[cur_var].info
-                hover chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[cur_var].info+'a'
+                idle chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info
+                hover chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info+'a'
 
 
 
@@ -1483,8 +1487,11 @@ screen ClothesSelect():
         textbutton _("Сделать текущей"):
             xsize 400
             text_size 30
-            action SetVariable('cloth.'+cur_cl+'.cur', cur_var)
-            sensitive eval('cloth.'+cur_cl).cur != cur_var
+            if eval('cloth.'+cur_cl).rand:
+                action [SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var]), SetVariable('cloth.'+cur_cl+'.left', 1)]
+            else:
+                action SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var])
+            sensitive eval('cloth.'+cur_cl).cur != list_var[cur_var]
             text_selected_color gui.selected_color
             text_insensitive_color gui.insensitive_color
             text_idle_color gui.accent_color

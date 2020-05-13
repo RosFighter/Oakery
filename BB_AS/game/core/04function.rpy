@@ -507,12 +507,6 @@ init python:
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
-        # if items['max-a'].have and '12:00' <= tm < '19:00':
-        #     if items['max-a'].InShop:
-        #         items['max-a'].InShop = False
-        #     mgg.dress = 'b'
-        # else:
-        #     mgg.dress = 'a'
         mgg.dress = clothes[mgg].casual.GetCur().suf
 
         for char in chars:
@@ -522,19 +516,6 @@ init python:
 
                 if char == 'alice' and talk_var['sun_oiled']:  # Если Алису уже намазали кремом, повторное намазываение невозможно
                     talk_var['sun_oiled'] = 3
-                # ПРОВЕРИМ НЕОБХОДИМОСТЬ ОбНОВЛЕНИЯ РАНДОМНОЙ ОДЕЖДЫ (временный блок)
-                # if prevtime < '04:00' <= tm:
-                #     cloth_type['ann']['cooking']  = renpy.random.choice(['a', 'b'])
-
-                # elif prevtime < '16:00' <= tm and day > 1:
-                #     cloth_type['ann']['cooking'] = 'b'
-
-                # elif prevtime < '22:00' <= tm and day > 1:
-                    # cloth_type['ann']['rest']   = renpy.random.choice(['a', 'b'])
-                    # cloth_type['lisa']['sleep'] = 'b' if poss['sg'].stn > 2 else 'a'
-                # elif prevtime > tm:  # полночь
-                #     cloth_type['ann']['sleep'] = renpy.random.choice(['a', 'b']) if 'nightie' in ann.gifts else 'a'
-                # после 'смены одежды' прописываем одежды по расписанию
                 ClothingNps(char, cur_shed.name)
 
 
@@ -567,7 +548,10 @@ init python:
                     lisa.dress_inf += 'w'
 
             elif name == 'homework':
-                if GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2:
+                if all([clothes[lisa].learn.cur > 0, GetRelMax('lisa')[0] > 2, lisa.GetMood()[0] > 2, 'bathrobe' in lisa.gifts]):
+                    lisa.dress = clothes[lisa].learn.GetCur().suf
+                    lisa.dress_inf = clothes[lisa].learn.GetCur().info
+                elif GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2:
                     lisa.dress  = 'c'
                     lisa.dress_inf = '04b'
                 elif 'bathrobe' in lisa.gifts:
@@ -860,6 +844,7 @@ init python:
         elif punalice[0][1]:   # Макс подставил Алису
             pun_chance = 1000
         else:
+            finded = 0
             help_count = 0
             grow = 50
             mind = 250
@@ -870,9 +855,11 @@ init python:
 
             for d in range(1, len(punalice)):
                 if punalice[d][3]:   # Ализа понесла наказание
+                    finded += 1
                     pun_chance -= mind  # шанс наказания снижается на уровень здравомыслия
                     mind = 250          # сбрасываем здравомыслие на исходную
                 elif punalice[d][2]:  # Макс пытался заступиться за Алису перед наказанием
+                    finded += 1
                     pun_chance += grow // 2       # шанс невнимательности меньше
                     mind = clip(mind+100, 0, 250) # плюс прирост здравомыслия
                 if punalice[d][0] > 2: # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
@@ -884,6 +871,9 @@ init python:
                             break           # прерываем цикл расчета
                 else:   # Макс не шантажировал Алису или шантажировал неудачно
                     pun_chance += grow
+
+                if d < 7 and finded > 1:
+                    break
                 grow = grow * 1.1   # чем больше дней прошло со дня, когда Макс чего-то требовал, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
         return clip(pun_chance, 0, 900)
@@ -904,7 +894,7 @@ init python:
             if d < 8 and pun == 2:
                 chance = 60
                 break  # если за неделю Алису наказали дважды, шанс нарушения соглашения минимальный
-        clip(chance, 0, 1000)
+        return clip(chance, 0, 1000)
 
 
     def ColumnSum(punchar, i, limit=50):  # сумму i-тых элементов списка списков

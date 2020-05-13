@@ -393,7 +393,7 @@ label ann_dressed_work:
         $ items['nightie'].have = False
         $ items['nightie'].InShop = False
         $ ann.gifts.append('nightie')
-        $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА, True'))
+        $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
         $ clothes[ann].sleep.cur = 1
         $ clothes[ann].sleep.rand = True
         if ann.inferic is not None:
@@ -552,6 +552,9 @@ label ann_dressed_shop:
         $ items['nightie'].have = False
         $ items['nightie'].InShop = False
         $ ann.gifts.append('nightie')
+        $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
+        $ clothes[ann].sleep.cur = 1
+        $ clothes[ann].sleep.rand = True
         if ann.inferic is not None:
             $ ann.inferic = clip(ann.inferic-50.0, 0.0, 100.0)
         if ann.infmax is not None:
@@ -581,6 +584,12 @@ label ann_read:
     scene BG reading
     $ renpy.show('Ann reading '+pose3_3+ann.dress)
     $ persone_button1 = 'Ann reading '+pose3_3+ann.dress+'b'
+    return
+
+
+label ann_read_closer:
+    scene BG reading
+    $ renpy.show('Ann reading-closer 01'+ann.dress)
     return
 
 

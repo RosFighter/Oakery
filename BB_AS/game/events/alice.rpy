@@ -567,6 +567,13 @@ label alice_read:
     return
 
 
+label alice_read_closer:
+    scene BG reading
+    $ renpy.show('Alice reading-closer 01'+alice.dress)
+    return
+
+
+
 label alice_dressed_friend:
     scene location house aliceroom door-evening
     if peeping['alice_dressed'] == 0:

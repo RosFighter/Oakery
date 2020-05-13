@@ -159,7 +159,7 @@ label InitCharacters: # стартовая инициация персонаже
         # clothes[lisa].out = Clothes(_("Одежда для прогулок"), [
         #         Garb('', '01', 'Обычная одежда для прогулок'),
         #     ])
-        clothes[lisa].learn = Clothes(_("Для домашней работы"), [
+        clothes[lisa].learn = Clothes(_("За уроками"), [
                 Garb('a', '01a', 'Обычная одежда'),
                 Garb('c', '04b', 'Полотенце'),
             ])

@@ -506,7 +506,7 @@ label DishesWashed:
 label delivery1:
     $ renpy.block_rollback()
 
-    if 'choco' in delivery_list[1]:
+    if 'choco' in delivery_list[0]:
         $ kol_choco += 20
         $ items['choco'].InShop = False
     $ __StrDev = GetDeliveryString(0) # сформируем строку накладной

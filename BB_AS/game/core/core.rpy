@@ -76,6 +76,9 @@ label Waiting:
 
     $ mgg.energy = clip(mgg.energy, 0.0, 100.0)
     $ mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
+    $ mgg.massage = clip(mgg.massage, 0.0, 100.0)
+    $ mgg.social = clip(mgg.social, 0.0, 100.0)
+    $ mgg.stealth = clip(mgg.stealth, 0.0, 100.0)
 
     # обновим extra-info для сохранений
     $ NewSaveName()
@@ -359,7 +362,7 @@ label after_load:
         if current_ver < "0.03.9.002":
             $ current_ver = "0.03.9.002"
 
-            $lisa.add_schedule(Schedule((0, 1, 2, 3, 4, 5, 6), '8:0', '8:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105))
+            $ lisa.add_schedule(Schedule((0, 1, 2, 3, 4, 5, 6), '8:0', '8:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105))
             $ flags['alice.tv.mass'] = 0
             $ talk_var['al.tv.mas'] = 0
             $ poss['seduction'].stages[3].ps = ""
@@ -395,7 +398,7 @@ label after_load:
                 clothes[lisa].casual = Clothes(_("Повседневная"), [
                         Garb('a', '01a', 'Обычная одежда'),
                     ])
-                clothes[lisa].learn = Clothes(_("Для домашней работы"), [
+                clothes[lisa].learn = Clothes(_("За уроками"), [
                         Garb('a', '01a', 'Обычная одежда'),
                         Garb('c', '04b', 'Полотенце', True),
                     ])
@@ -408,6 +411,7 @@ label after_load:
                     ])
                 if 'bikini' in lisa.gifts:
                     clothes[lisa].swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
+                    clothes[lisa].swimsuit.cur = 1
 
                 clothes[lisa].sleep = Clothes(_("Для сна"), [
                         Garb('a', '02', 'Обычная одежда'),
@@ -423,21 +427,21 @@ label after_load:
                     clothes[alice].casual.sel.append(Garb('b', '01c', 'Пижама', True))
 
                 clothes[ann].casual = Clothes(_("Повседневная"), [
-                        Garb('a', '01a', 'Обычная одежда', True),
-                        Garb('b', '01b', 'Футболка', True),
+                        Garb('a', '01a', 'Обычная одежда', False, True),
+                        Garb('b', '01b', 'Футболка', False, True),
                     ])
                 clothes[ann].casual.rand = True
                 clothes[ann].cook_morn = Clothes(_("Для приготовления завтрака"), [
-                        Garb('a', '05b', 'Спортивная форма + фартук', True),
-                        Garb('b', '01c', 'Футболка + фартук', True),
+                        Garb('a', '05b', 'Спортивная форма + фартук', False, True),
+                        Garb('b', '01c', 'Футболка + фартук', False, True),
                     ])
                 clothes[ann].cook_morn.rand = True
                 clothes[ann].cook_eve = Clothes(_("Для приготовления ужина"), [
                         Garb('b', '01c', 'Футболка + фартук', False, True),
                     ])
                 clothes[ann].rest_eve = Clothes(_("Для вечернего отдыха"), [
-                        Garb('a', '01b', 'Футболка', True),
-                        Garb('b', '04b', 'Полотенце', True),
+                        Garb('a', '01b', 'Футболка', False, True),
+                        Garb('b', '04b', 'Полотенце', False, True),
                     ])
                 clothes[ann].rest_eve.rand = True
                 clothes[ann].sleep = Clothes(_("Для сна"), [
@@ -455,6 +459,36 @@ label after_load:
                     clothes[mgg].casual.cur = 1
 
                 del globals()['cloth_type']
+
+        if current_ver < "0.03.9.005":
+            $ current_ver = "0.03.9.005"
+
+            $ clothes[lisa].learn.name = _("За уроками")
+            $ clothes[ann].casual.sel[0].change = False
+            $ clothes[ann].casual.sel[1].change = False
+            $ clothes[ann].cook_morn.sel[0].change = False
+            $ clothes[ann].cook_morn.sel[1].change = False
+            $ clothes[ann].cook_eve.sel[0].change = False
+            $ clothes[ann].rest_eve.sel[0].change = False
+            $ clothes[ann].rest_eve.sel[1].change = False
+            if 'bikini' in lisa.gifts:
+                $ clothes[lisa].swimsuit.cur = 1
+
+        if current_ver < "0.03.9.007":
+            $ current_ver = "0.03.9.007"
+
+            if 'nightie' in ann.gifts:
+                $ clothes[ann].sleep.sel[1] = Garb('b', '02f', 'НОЧНУШКА', True)
+
+            $ ann.add_schedule(Schedule((0, ), '12:0', '13:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', talklabel='ann_read_closer', glow=110))
+            $ alice.add_schedule(
+                    Schedule((0,), '10:0', '10:59', 'dishes', _("моет посуду"), 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
+                    Schedule((0,), '10:0', '10:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', variable='dishes_washed', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'dishes', _("моет посуду"), 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', variable='dishes_washed', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '16:0', '17:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
+                    Schedule((0, 6), '18:0', '18:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
+                )
 
         if current_ver < config.version:
             $ current_ver = config.version
