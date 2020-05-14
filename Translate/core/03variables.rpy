@@ -1176,5 +1176,61 @@ translate english strings:
 
     # game/core/03variables.rpy:303
     old "Я помогал Лизе с уроками какое-то время, причём безвозмездно, но это стало довольно скучным делом и я намеренно стал делать ошибки так, чтобы ей ставили двойки и наказывали... И вот, после очередной двойки и наказания от мамы, она обратилась ко мне за помощью. Я согласился, но с условием, что она будет спать только в футболке и трусиках. И думаю, что мне удастся её ещё на что-нибудь раскрутить..."
+    new "I helped Lisa with her homework for a while, and for free, but it got pretty boring and I deliberately made mistakes so that she would get a D and get punished... And so, after another F and a punishment from Mom, she came to me for help. I agreed, but on the condition that she would only sleep in her T-shirt and panties. And I think I can get her to do something else..."
+
+# TODO: Translation updated at 2020-05-14 09:48
+
+translate english strings:
+
+    # game/core/03variables.rpy:146
+    old "Повседневная"
+    new ""
+
+    # game/core/03variables.rpy:149
+    old "Для сна"
+    new ""
+
+    # game/core/03variables.rpy:153
+    old "КУПАЛЬНИК"
+    new ""
+
+    # game/core/03variables.rpy:162
+    old "За уроками"
+    new ""
+
+    # game/core/03variables.rpy:167
+    old "Повседневная ОДЕЖДА"
+    new ""
+
+    # game/core/03variables.rpy:177
+    old "Для приготовления завтрака"
+    new ""
+
+    # game/core/03variables.rpy:182
+    old "Для приготовления ужина"
+    new ""
+
+    # game/core/03variables.rpy:186
+    old "Для вечернего отдыха"
+    new ""
+
+    # game/core/03variables.rpy:263
+    old "КОНФЕТЫ С ЛИКЁРОМ"
+    new ""
+
+    # game/core/03variables.rpy:263
+    old "Шоколадные конфеты с ликёром. Уникальные ароматизаторы скрывают вкус алкоголя. Отлично поднимают настроение. Очень крепкие."
+    new ""
+
+    # game/core/03variables.rpy:309
+    old "Лиза снова увидела мой утренний стояк. На этот раз маму она не позвала, что уже хорошо. Хотя, смотрела она на мой член не только с подозрением, но ещё и с интересом. По крайней мере, мне так показалось. Думаю, нужно с ней об этом поговорить..."
+    new ""
+
+    # game/core/03variables.rpy:309
+    old "Это, конечно, не точно, но Лиза хотела потрогать мой член, думая, что я спал. И судя по её реакции на то, что я это увидел, даже она сама с себя удивилась. Посмотрим, что она потом об этом скажет..."
+    new ""
+
+    # game/core/03variables.rpy:309
+    old "Похоже, интерес Лизы к противоположному полу и всему, что связано со взрослой жизнью, растёт не по дням, а по часам. Не знаю уж, мой стоящий по утрам член так её раззодорил или ещё что-то, но она согласилась меня слушаться по вопросам о мальчиках и всем этим взрослым штучкам... Вот только прежде, чем учить, может быть стоит самому чему-то научиться? А самое главное - при этом ничего не испортить, а то она снова откажется..."
     new ""
 

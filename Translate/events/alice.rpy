@@ -271,8 +271,8 @@ translate english strings:
     new "Max's stealth increased a little"
 
     # game/events/alice.rpy:144
-    old "{i}присмотреться\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}look closely\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
+    old "{i}присмотреться\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}look closely\n{color=[_ch1.col]}(Stealth. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/events/alice.rpy:155
     old "Скрытность Макса повысилась"
@@ -303,8 +303,8 @@ translate english strings:
     new "{i}Peek from the yard{/i}"
 
     # game/events/alice.rpy:142
-    old "{i}продолжить смотреть\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}Continue watching\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
+    old "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}Continue watching\n{color=[_ch1.col]}(Stealth. Chance: [_ch1.vis]){/color}{/i}"
 
 # TODO: Translation updated at 2020-01-22 13:53
 
@@ -530,16 +530,16 @@ translate english strings:
     new "Fine, where is it..."
 
     # game/events/alice.rpy:437
-    old "Давай $10! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Give me $10 {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Давай $10! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Give me $10 {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/events/alice.rpy:437
-    old "Покажи сиськи! {color=[_ch2_color]}(Убеждение. Шанс: [ch2_vis]){/color}"
-    new "Show me your tits! {color=[_ch2_color]}(Persuasion. Chance: [ch2_vis]){/color}"
+    old "Покажи сиськи! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
+    new "Show me your tits! {color=[_ch2.col]}(Persuasion. Chance: [_ch2.vis]){/color}"
 
     # game/events/alice.rpy:437
-    old "Сними верх! {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new "Take your top off! {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
+    old "Сними верх! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
+    new "Take your top off! {color=[_ch3.col]}(Persuasion. Chance: [_ch3.vis]){/color}"
 
     # game/events/alice.rpy:437
     old "А, ничего. Так поймаю..."
@@ -562,8 +562,8 @@ translate english strings:
     new "I'm not going to kill it!"
 
     # game/events/alice.rpy:510
-    old "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Let him live. I'll go and throw him off the balcony and over the fence so he won't come crawling back.\n{color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Let him live. I'll go and throw him off the balcony and over the fence so he won't come crawling back.\n{color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/events/alice.rpy:513
     old "{i}вернуться в кровать{/i}"
@@ -1026,8 +1026,8 @@ translate english strings:
     new "I'm gonna catch a spider, except someone's breaking the deal! Or maybe I'm wrong?!"
 
     # game/events/alice.rpy:595
-    old "На красивое глаза легче открываются... {color=[_ch3_color]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new "Beautiful eyes are easier to open... {color=[_ch3_color]}(Persuasion. Chance: [ch3_vis]){/color}"
+    old "На красивое глаза легче открываются... {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
+    new "Beautiful eyes are easier to open... {color=[_ch3.col]}(Persuasion. Chance: [_ch3.vis]){/color}"
 
     # game/events/alice.rpy:595
     old "Давай уже показывай сиськи!"
@@ -1274,8 +1274,8 @@ translate english strings:
     new "{i}Give Alice a towel (by dropping it from one hand){/i}"
 
     # game/events/alice.rpy:330
-    old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Of course not! It accidentally slipped out of my hand! {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Of course not! It accidentally slipped out of my hand! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
 # TODO: Translation updated at 2020-03-25 16:16
 
@@ -1355,4 +1355,29 @@ translate english strings:
     # game/events/alice.rpy:266
     old "{i}немного пошуметь{/i}"
     new "{i}make some noise{/i}"
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/events/alice.rpy:376
+translate english alice_shower_alt_peepeng_c8b2c2b6:
+
+    # Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
+    Max_01 ""
+
+# game/events/alice.rpy:378
+translate english alice_shower_alt_peepeng_09abbe09:
+
+    # Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
+    Max_01 ""
+
+# game/events/alice.rpy:410
+translate english alice_shower_not_luck_051a23bb:
+
+    # Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
+    Max_09 ""
+
+translate english strings:
+
+    # game/events/alice.rpy:265
+    old "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}"
+    new ""
 

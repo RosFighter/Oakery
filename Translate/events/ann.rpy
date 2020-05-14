@@ -576,8 +576,8 @@ translate english strings:
     new "{i}Turn away{/i}"
 
     # game/events/ann.rpy:153
-    old "Я не подглядывал. Это случайность! {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "I wasn't spying, it was an accident! {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Я не подглядывал. Это случайность! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "I wasn't spying, it was an accident! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/events/ann.rpy:153
     old "Мам, извини..."
@@ -810,8 +810,8 @@ translate english strings:
     new "I have something for you."
 
     # game/events/ann.rpy:328
-    old "Ну мам! Этого было так мало, давай ещё... {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Come on, Mom! It was so little, let's do it again... {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Ну мам! Этого было так мало, давай ещё... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Come on, Mom! It was so little, let's do it again... {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/events/ann.rpy:328
     old "Ну мам! Этого было так мало, давай ещё..."
@@ -1027,3 +1027,29 @@ translate english ann_dressed_shop_goodday_1a01074c:
 
     # Ann_02 "Спасибо, сынок! И тебе тоже..."
     Ann_02 "Thank you, son! And you, too..."
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/events/ann.rpy:139
+translate english ann_shower_alt_peepeng_e486fb14:
+
+    # Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
+    Max_03 ""
+
+# game/events/ann.rpy:141
+translate english ann_shower_alt_peepeng_3c3328bd:
+
+    # Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
+    Max_05 ""
+
+# game/events/ann.rpy:173
+translate english ann_shower_not_luck_4a76a42b:
+
+    # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
+    Max_12 ""
+
+# game/events/ann.rpy:183
+translate english ann_shower_not_luck_9b36810d:
+
+    # Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
+    Ann_15 "" nointeract
+

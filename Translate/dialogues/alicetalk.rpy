@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2020-01-12 21:49
+﻿# TODO: Translation updated at 2020-01-12 21:49
 
 # game/dialogues/alicetalk.rpy:16
 translate english AliceTalkStart_50ef2ada:
@@ -2522,7 +2522,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}"
-    new "{i}{color=[gray]}Massage with cream{/color}{color=[red]}\Not enough cream{/color}{/i}"
+    new "{i}{color=[gray]}Massage with cream{/color}{color=[red]}\nNot enough cream{/color}{/i}"
 
     # game/dialogues/alicetalk.rpy:1158
     old "Массаж"
@@ -5873,4 +5873,589 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1536
     old "{i}массировать молча{/i}"
     new "{i}Massage{/i}"
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/dialogues/alicetalk.rpy:321
+translate english alice_talk_tv_8b5ba6bc:
+
+    # Alice_02 "Что-то новенькое... А ты умеешь?"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:322
+translate english alice_talk_tv_afb02258:
+
+    # Max_01 "Само собой!"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:323
+translate english alice_talk_tv_818807e7:
+
+    # Alice_01 "Могу я спросить откуда? Раньше ты, вроде бы, не умел. Да и не представляю, где бы ты мог этому научиться..."
+    Alice_01 ""
+
+# game/dialogues/alicetalk.rpy:324
+translate english alice_talk_tv_b7d6b725:
+
+    # Max_02 "Онлайн-курсы!"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:325
+translate english alice_talk_tv_eefdc983:
+
+    # Alice_02 "Очень смешно, Макс. Разве можно научиться массажу через ютуб?" nointeract
+    Alice_02 "" nointeract
+
+# game/dialogues/alicetalk.rpy:328
+translate english alice_talk_tv_35e3c14c:
+
+    # Alice_01 "А, ну если ты им ещё и заплатил, то это всё меняет!" nointeract
+    Alice_01 "" nointeract
+
+# game/dialogues/alicetalk.rpy:330
+translate english alice_talk_tv_fa2a2aee:
+
+    # Alice_01 "Что-то я очень сомневаюсь, Макс..." nointeract
+    Alice_01 "" nointeract
+
+# game/dialogues/alicetalk.rpy:335
+translate english alice_talk_tv_3fb71a40:
+
+    # Alice_02 "Ну, не знаю, не знаю..." nointeract
+    Alice_02 "" nointeract
+
+# game/dialogues/alicetalk.rpy:340
+translate english alice_talk_tv_4cd36d8c:
+
+    # Alice_07 "Дай-ка подумаю... Да! Я готова..." nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:348
+translate english alice_talk_tv_f3e20bd8:
+
+    # Alice_02 "[failed!t]Нет, Макс, в другой раз. Что-то я сомневаюсь. Вдруг, ты мне что-то сломаешь... Нет, спасибо."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:349
+translate english alice_talk_tv_ea0eef90:
+
+    # Max_08 "Ну, как хочешь... Не буду тебе мешать..."
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:356
+translate english alice_talk_tv_2905e621:
+
+    # Alice_03 "[succes!t]Ну, давай. Только я очень привередлива в вопросах массажа. Если сделаешь что-то не так, сразу закончим." nointeract
+    Alice_03 "" nointeract
+
+# game/dialogues/alicetalk.rpy:365
+translate english alice_talk_tv_choco_52e75f8d:
+
+    # Alice_02 "У меня такое чувство, что ты чего-то от меня хочешь... Но не сознаешься ведь?" nointeract
+    Alice_02 "" nointeract
+
+# game/dialogues/alicetalk.rpy:368
+translate english alice_talk_tv_choco_5535c64e:
+
+    # Alice_15 "Макс! Вали нахрен отсюда со своими шуточками. Дай спокойно телевизор посмотреть!" nointeract
+    Alice_15 "" nointeract
+
+# game/dialogues/alicetalk.rpy:373
+translate english alice_talk_tv_choco_0eeba23a:
+
+    # Alice_05 "Угу... Точно! Извини, а где мой брат Макс?"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:374
+translate english alice_talk_tv_choco_02bbd6a7:
+
+    # Max_01 "Очень смешно. Так ты хочешь конфеты?"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:376
+translate english alice_talk_tv_choco_10fe49ec:
+
+    # Alice_02 "Звучит очень зловеще... И что же я узнаю, интересно? Ах да. Это же секрет... Самому не смешно?"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:377
+translate english alice_talk_tv_choco_f5db5d17:
+
+    # Max_01 "Да, да, очень! Так ты хочешь конфеты?"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:380
+translate english alice_talk_tv_choco_dd214a08:
+
+    # Alice_13 "Честно говоря, не знаю. Конфеты я люблю, но не хочу портить фигуру..." nointeract
+    Alice_13 "" nointeract
+
+# game/dialogues/alicetalk.rpy:392
+translate english alice_talk_tv_choco_df78af2c:
+
+    # Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:399
+translate english alice_talk_tv_choco_0383591b:
+
+    # Alice_01 "[failed!t]Нет, Макс. Спасибо, конечно, но рисковать я не буду. Ну так что, массаж делать будешь или забыл, что собирался?" nointeract
+    Alice_01 "" nointeract
+
+# game/dialogues/alicetalk.rpy:413
+translate english alice_talk_tv_massage_4a771e7a:
+
+    # Max_03 "{i}Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает?{/i}" nointeract
+    Max_03 "" nointeract
+
+# game/dialogues/alicetalk.rpy:425
+translate english alice_talk_tv_massage_953afbb3:
+
+    # Alice_04 "[alice_good_mass!t]А ты неплох сегодня в этом деле... Хорошо, что ты никакой не работяга. Руки у тебя нежные. Приятно очень..." nointeract
+    Alice_04 "" nointeract
+
+# game/dialogues/alicetalk.rpy:429
+translate english alice_talk_tv_massage_67ad610f:
+
+    # Alice_12 "[alice_bad_mass!t]Ой, Макс, больно! Не надо так. Ты чуть лодыжку не вывихнул мне... Иди ещё потренируйся там на кошках или в ютубе поучись!" nointeract
+    Alice_12 "" nointeract
+
+# game/dialogues/alicetalk.rpy:453
+translate english alice_talk_tv_choice_mass_264b44e4:
+
+    # Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:454
+translate english alice_talk_tv_choice_mass_6b3e8ab2:
+
+    # Max_01 "Может, тогда тебе стоит снять джинсы? Не будет так жарко..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:455
+translate english alice_talk_tv_choice_mass_68d09736:
+
+    # Alice_04 "Только давай ты снимешь их с меня сам, а то я уже так расслабилась, что двигаться не хочется."
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:456
+translate english alice_talk_tv_choice_mass_dc834006:
+
+    # Max_03 "О, это я с радостью сделаю!"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:457
+translate english alice_talk_tv_choice_mass_0540eb12:
+
+    # Alice_07 "Я немного приподнимусь, чтобы тебе было проще их стянуть..."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:460
+translate english alice_talk_tv_choice_mass_f91fe3a0:
+
+    # Max_06 "О да, это ты классно придумала!"
+    Max_06 ""
+
+# game/dialogues/alicetalk.rpy:463
+translate english alice_talk_tv_choice_mass_a8206508:
+
+    # Max_05 "О да, так гораздо лучше..."
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:464
+translate english alice_talk_tv_choice_mass_2d2c8558:
+
+    # Alice_05 "Ты только там сильно не заглядывайся, куда не нужно! Лучше скорее продолжай массаж, пока я не расхотела..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:466
+translate english alice_talk_tv_choice_mass_a6d60220:
+
+    # Max_07 "Ну да... точно... я же... это... массаж делал."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:467
+translate english alice_talk_tv_choice_mass_9371590a:
+
+    # Alice_03 "Ты чего там так тормозишь? Как будто в трусиках меня никогда не видел..."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:470
+translate english alice_talk_tv_choice_mass_6b6d69b9:
+
+    # Alice_15 "Ой, Макс, я же сегодня без них! Вот чёрт! Чего глазеешь, иди отсюда, ты и так увидел больше положенного..."
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:471
+translate english alice_talk_tv_choice_mass_6daf979b:
+
+    # Max_05 "Ладно, но это было так сногсшибательно, что я аж забыл, как ходить!"
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:472
+translate english alice_talk_tv_choice_mass_b0f28e71:
+
+    # Alice_18 "Макс!!!"
+    Alice_18 ""
+
+# game/dialogues/alicetalk.rpy:473
+translate english alice_talk_tv_choice_mass_dab4f6cb:
+
+    # Max_04 "Всё, ушёл."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:477
+translate english alice_talk_tv_choice_mass_f74debfa:
+
+    # Max_02 "Ага, сейчас продолжим..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:483
+translate english alice_talk_tv_choice_mass_c7c13cf5:
+
+    # Alice_03 "[failed!t]Нет, мне хватит одной... А то я мигом фигуру испорчу. Лучше продолжай массировать мои ножки..." nointeract
+    Alice_03 "" nointeract
+
+# game/dialogues/alicetalk.rpy:491
+translate english alice_talk_tv_choice_mass_06eaca6d:
+
+    # Alice_05 "[failed!t]Это так ты к девушкам подкатываешь, сразу предлагаешь снять штаны?" nointeract
+    Alice_05 "" nointeract
+
+# game/dialogues/alicetalk.rpy:497
+translate english alice_talk_tv_choice_mass_cd8988f9:
+
+    # Alice_01 "Да шучу я. Но джинсы снимать не стану. Даже не надейся. Кстати, ты закончил с массажем? Спасибо большое, можешь идти..."
+    Alice_01 ""
+
+# game/dialogues/alicetalk.rpy:498
+translate english alice_talk_tv_choice_mass_a7722350:
+
+    # Max_00 "Вот так вот..."
+    Max_00 ""
+
+# game/dialogues/alicetalk.rpy:505
+translate english alice_talk_tv_choice_mass_3fee11c3:
+
+    # Alice_07 "Как, всё? А мне понравилось... Спасибо, Макс. Вот ты и сделал девушке приятно!"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:506
+translate english alice_talk_tv_choice_mass_dfbaa235:
+
+    # Max_07 "Я и не так могу..."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:507
+translate english alice_talk_tv_choice_mass_0a3d3de4:
+
+    # Alice_05 "Ах ты и не так можешь? Боюсь даже представить, как... Но не буду. И тебе не советую. Так что давай, дуй отсюда!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:508
+translate english alice_talk_tv_choice_mass_29f8b378:
+
+    # Max_00 "Угу..."
+    Max_00 ""
+
+# game/dialogues/alicetalk.rpy:516
+translate english alice_talk_tv_jeans_208248b5:
+
+    # Alice_02 "[succes!t]Да, что-то тесновато в них и так жарко... Хотя...Не-е-ет, нет, нет! Не буду снимать я сейчас джинсы. Не дождёшься!" nointeract
+    Alice_02 "" nointeract
+
+# game/dialogues/alicetalk.rpy:519
+translate english alice_talk_tv_jeans_c64ca38f:
+
+    # Alice_01 "Сам догадайся, глупый. Но я намекну: возможно, под джинсами ничего нет. Понял? Всё, а теперь иди отсюда, фантазируй..."
+    Alice_01 ""
+
+# game/dialogues/alicetalk.rpy:520
+translate english alice_talk_tv_jeans_848c8c8f:
+
+    # Max_01 "Ух, пойду тогда... Пофантазирую где-нибудь..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:523
+translate english alice_talk_tv_jeans_b3bba188:
+
+    # Alice_03 "Сам догадался, или кто подсказал? Ну всё, теперь ты всё обо мне знаешь, иди и фантазируй о чём хочешь..."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:524
+translate english alice_talk_tv_jeans_61204728:
+
+    # Max_01 "Ладно, пойду пофантазирую где-нибудь..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:527
+translate english alice_talk_tv_jeans_9563ece2:
+
+    # Alice_04 "[succes!t]Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:528
+translate english alice_talk_tv_jeans_a8150747:
+
+    # Max_07 "{i}Ого...{/i}"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:532
+translate english alice_talk_tv_not_jeans_769ebcfd:
+
+    # Alice_05 "Да, так гораздо лучше. Только ты не пялься, куда не надо. Вижу, краем глаза пытаешься что-то разглядеть. Вот не надо. Лучше, продолжай массаж..." nointeract
+    Alice_05 "" nointeract
+
+# game/dialogues/alicetalk.rpy:547
+translate english alice_talk_tv_massage_next_e8bcd9ee:
+
+    # Alice_07 "Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?" nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:550
+translate english alice_talk_tv_massage_next_3837de84:
+
+    # Alice_08 "Ты так в себе уверен, Макс... Забыл, что я твоя сестра? Не говори глупости... Просто продолжай массировать мои ножки. Если ты ещё не в курсе, они у меня целиком - эрогенная зона..." nointeract
+    Alice_08 "" nointeract
+
+# game/dialogues/alicetalk.rpy:557
+translate english alice_talk_tv_massage_next_6a3e6bc9:
+
+    # Alice_04 "Эх, Макс... А я бы захотела продолжения, если бы ты был моим парнем... Жаль, что ты только мой брат..." nointeract
+    Alice_04 "" nointeract
+
+# game/dialogues/alicetalk.rpy:560
+translate english alice_talk_tv_massage_next_116b5205:
+
+    # Alice_05 "На сколько захочу? На секунду! Ой. Она прошла... Всё, Макс, твоё время вышло... Ладно, засовывай свою штуку обратно. Что-то голова кружится... Макс, уйди по хорошему, а..." nointeract
+    Alice_05 "" nointeract
+
+# game/dialogues/alicetalk.rpy:571
+translate english alice_talk_tv_massage_next_89249cd5:
+
+    # Alice_03 "Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:572
+translate english alice_talk_tv_massage_next_e263d7d3:
+
+    # Max_04 "Не за что..."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:577
+translate english alice_talk_tv_massage_next_18caf83c:
+
+    # Alice_13 "[alice_bad_mass!t]Ой, нет, что-то не то. Ты же так хорошо начал, и что-то неприятно стало... Иди, ещё поучись этому своему массажу на ютубе. Так не пойдёт..."
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:578
+translate english alice_talk_tv_massage_next_689c772b:
+
+    # Max_00 "Ладно..."
+    Max_00 ""
+
+# game/dialogues/alicetalk.rpy:584
+translate english alice_talk_tv_massage_next_a14e48fe:
+
+    # Alice_04 "Ну всё, кажется хватит. Во всяком случае, тебе. А то мне ногу испачкаешь... Но ручки у тебя - что надо. Даже не ожидала такого от тебя..."
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:585
+translate english alice_talk_tv_massage_next_864ca86f:
+
+    # Max_05 "Я тоже не ожидал... такого..."
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:586
+translate english alice_talk_tv_massage_next_de75a971:
+
+    # Alice_08 "Значит, мы оба полны сюрпризов. Ну всё, хорошего помаленьку. Давай, засовывай свой член обратно, а то до добра это всё дело не дойдёт... Да, и спасибо за массаж..."
+    Alice_08 ""
+
+# game/dialogues/alicetalk.rpy:587
+translate english alice_talk_tv_massage_next_ef15cedf:
+
+    # Max_03 "Тебе спасибо..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:590
+translate english alice_talk_tv_fail_6daec4f2:
+
+    # Alice_12 "Макс! Ещё одно лишнее движение, и я дам тебе по шарам вот это самой ногой. Ты меня понял? Всё, массаж окончен, вали отсюда!" nointeract
+    Alice_12 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1657
+translate english Alice_solar_type_choice_f13e59c6:
+
+    # Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:1658
+translate english Alice_solar_type_choice_acc696ab:
+
+    # Max_04 "Да не за что, обращайся!"
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1659
+translate english Alice_solar_type_choice_d45b0d2a:
+
+    # Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
+    Max_07 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:309
+    old "Тебе сделать массаж ног?"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:325
+    old "Почему ютуб? Это платные курсы..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:325
+    old "Конечно! Я же научился..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:331
+    old "Так тебе продемонстрировать или как? \n{color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:335
+    old "Тебе понравится! \n{color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:340
+    old "Хорошо {i}(начать массаж){/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:340
+    old "Может конфетку перед массажем?"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:365
+    old "Хочу тебя!"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:365
+    old "Просто я такой хороший парень!"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:365
+    old "Ты узнаешь... В своё время..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:380
+    old "От конфетки не поправишься! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:390
+    old "Конфеты закончились"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:392
+    old "Ну, хорошо {i}(начать массаж){/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:413
+    old "{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:437
+    old "Может, ещё конфетку? \n{color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:439
+    old "Тебе джинсы не мешают? \n{color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:444
+    old "{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:445
+    old "{i}закончить массаж{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:491
+    old "Э... Я к тебе не подкатываю. Просто, жарко же..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:491
+    old "Ну у тебя и фантазии, Алиса... Я не подкатываю!"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:516
+    old "Почему?"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:516
+    old "Потому-что ты без трусиков?"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:532
+    old "{i}продолжить{/i} \n{color=[_ch25.col]}(Массаж. Шанс: [_ch25.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:547
+    old "Да, это будет на десерт..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:547
+    old "{i}продолжать молча{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:550
+    old "{i}попытаться приставать{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:550
+    old "{i}продолжать массаж{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:557
+    old "Ну я могу стать твоим парнем... Хотя бы на час... или насколько захочешь..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:897
+    old "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:897
+    old "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:897
+    old "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:897
+    old "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:906
+    old "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:1533
+    old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:1902
+    old "Что, стесняешься? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2008
+    old "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2432
+    old "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2522
+    old "Именно на это я и надеюсь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2612
+    old "Только если без последующего насилия... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
 

@@ -2469,8 +2469,8 @@ translate english strings:
     new "Oh, there's so much... Another time."
 
     # game/dialogues/lisatalk.rpy:953
-    old "Покажи грудь! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
-    new "Show me your tits! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+    old "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Show me your tits! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:967
     old "Тебе напомнить как мама больно наказывает?"
@@ -2485,8 +2485,8 @@ translate english strings:
     new "Oh, you're right, Lisa... {i}(fix your mistake){/i}"
 
     # game/dialogues/lisatalk.rpy:1003
-    old "Лиза, я знаю о чём говорю! {color=[_chance_color]}(Убеждение. Шанс: [ch_vis]){/color}"
-    new "I know what I'm doing, Lisa! {color=[_chance_color]}(Persuasion. Chance: [ch_vis]){/color}"
+    old "Лиза, я знаю о чём говорю! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "I know what I'm doing, Lisa! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
 # TODO: Translation updated at 2020-03-12 12:28
 
@@ -5323,16 +5323,16 @@ translate english strings:
     new "Really? Come on, show me what you got this time!"
 
     # game/dialogues/lisatalk.rpy:1492
-    old "Однозначно надо обнять! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Definitely need a hug! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Однозначно надо обнять! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Definitely need a hug! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1578
-    old "Это было случайно... Просто так получается всё время! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "It was an accident... It just happens all the time! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Это было случайно... Просто так получается всё время! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "It was an accident... It just happens all the time! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1824
-    old "Конечно стоит! {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Of course you should! {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
+    old "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new "Of course you should! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
 # TODO: Translation updated at 2020-04-11 01:32
 
@@ -5610,11 +5610,510 @@ translate english conversation_after_dinner_acc8a38c_3:
 translate english conversation_after_dinner_a35ec1e4:
 
     # Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получаю уже вторую двойку..."
-    Lisa_09 ""
+    Lisa_09 "Max, what's wrong with you? You were so good at helping me with my lessons... Now I'm getting my second D..."
 
 # game/dialogues/lisatalk.rpy:1448
 translate english conversation_after_dinner_e88291ac:
 
     # Max_08 "Наверно, я просто был не внимателен… Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
-    Max_08 ""
+    Max_08 "I guess I just wasn't paying attention... I need to have some incentive to do this! Can you help me out?"
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/dialogues/lisatalk.rpy:155
+translate english MorningWoodCont_2a9ba99c:
+
+    # Lisa_12 "Ну и как тебе это, Макс? Не стыдно, вот так валяться передо мной?"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:156
+translate english MorningWoodCont_80da94d9:
+
+    # Max_07 "Что случилось опять?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:159
+translate english MorningWoodCont_b16aed06:
+
+    # Lisa_09 "Не знаю, может у кого-то кое-что не помещается в трусах!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:160
+translate english MorningWoodCont_cd0dcccf:
+
+    # Max_09 "Вот ты про что... Странно, что ты ещё маму не позвала..."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:164
+translate english MorningWoodCont_d9073d40:
+
+    # Lisa_00 "Сомневаюсь, что она знает, что тебе такое снится... от чего эта твоя штука, становится такой большой."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:165
+translate english MorningWoodCont_4c6514d8:
+
+    # Max_00 "Да ничего мне такого не снится! Это от моих снов вообще не зависит..."
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:166
+translate english MorningWoodCont_0ba198fe:
+
+    # Lisa_01 "Ага, рассказывай! Может он у тебя своей собственной жизнью живёт?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:167
+translate english MorningWoodCont_752c5aea:
+
+    # Max_02 "Знаешь, если бы тебе это всё не нравилось, ты бы так на него не глазела!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:168
+translate english MorningWoodCont_cd02e3ce:
+
+    # Lisa_11 "Что?! Думаешь, мне нравится на него смотреть?!"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:169
+translate english MorningWoodCont_64a9a6b6:
+
+    # Max_03 "Конечно! Иначе, ты бы просто закрыла глаза или отвернулась..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:171
+translate english MorningWoodCont_efa3176e:
+
+    # Lisa_12 "Вот и отвернусь!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:173
+translate english MorningWoodCont_75849bb5:
+
+    # Max_04 "Да я не против, можешь смотреть..."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:174
+translate english MorningWoodCont_e3c0bf2a:
+
+    # Lisa_09 "Да ну тебя, Макс!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:180
+translate english MorningWoodCont_4fbd8958:
+
+    # Max "Это что?! Лиза хочет прикоснуться к моему члену?! Да нет, это я, наверно, всё ещё сплю... Или нет?" nointeract
+    Max "" nointeract
+
+# game/dialogues/lisatalk.rpy:187
+translate english MorningWoodCont_b3cadc1a:
+
+    # Lisa_11 "Ой, Макс, ты не спишь! Это... не то, что ты подумал..."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:188
+translate english MorningWoodCont_bfeb18df:
+
+    # Max_07 "А похоже именно на то, что я подумал!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:189
+translate english MorningWoodCont_25e0d430:
+
+    # Lisa_13 "Вот ещё! Это не так!"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:193
+translate english MorningWoodCont_61e76916:
+
+    # Max_04 "Если всё ещё хочешь, то можешь потрогать его..."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:194
+translate english MorningWoodCont_1f6eac9a:
+
+    # Lisa_10 "Не собиралась я его трогать! Я просто... хотела его прикрыть... Вот!"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:195
+translate english MorningWoodCont_4a409afb:
+
+    # Max_02 "Ну да, это рукой, видимо?"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:196
+translate english MorningWoodCont_f5cbe6f0:
+
+    # Lisa_11 "Э-э-э... Ой, всё! Я... вообще в ванную шла..."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:197
+translate english MorningWoodCont_e65dd32b:
+
+    # Max_01 "Конечно, я так и подумал."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:203
+translate english MorningWoodCont_60559c82:
+
+    # Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:204
+translate english MorningWoodCont_8a88a159:
+
+    # Max_19 "Я сплю, Лиза... Какая штука?"
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:205
+translate english MorningWoodCont_23c96df8:
+
+    # Lisa_05 "Ну эта ваша штука..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:207
+translate english MorningWoodCont_dd31c739:
+
+    # Max_07 "Член! Не штука, а член."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:208
+translate english MorningWoodCont_268c104a:
+
+    # Lisa_02 "Ладно... у всех мальчиков... член... такой большой?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:209
+translate english MorningWoodCont_3f17b637:
+
+    # Max_01 "Судя по тому, что даже мама была удивлена его размерами, то не у всех."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:210
+translate english MorningWoodCont_695852b6:
+
+    # Lisa_01 "А это хорошо или плохо, что он большой?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:211
+translate english MorningWoodCont_8cc238f3:
+
+    # Max_04 "Ну... это от тебя зависит... Он тебе нравится?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:212
+translate english MorningWoodCont_c81b8489:
+
+    # Lisa_10 "Макс, что за вопрос?! Как мне на такое ответить, ты же мой брат..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:213
+translate english MorningWoodCont_78383bc2:
+
+    # Max_00 "А если не брать это во внимание, то он тебе нравится?"
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:214
+translate english MorningWoodCont_78590044:
+
+    # Lisa_05 "Ну... да... он как-то притягивает... Ой, что я такое говорю..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:215
+translate english MorningWoodCont_20baebc9:
+
+    # Max_05 "Да всё хорошо, Лиза, это всё останется только между нами."
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:216
+translate english MorningWoodCont_e75560ea:
+
+    # Lisa_01 "Знаешь, пожалуй, я согласна слушать твои советы... Так с чего мы начнём?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:217
+translate english MorningWoodCont_1eb346d3:
+
+    # Max_03 "Для меня было важно получить согласие, а учебный план я подготовлю."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:218
+translate english MorningWoodCont_f2e78508:
+
+    # Lisa_02 "И когда ждать этот твой... учебный план?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:219
+translate english MorningWoodCont_821133d2:
+
+    # Max_04 "Скоро. Очень."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:220
+translate english MorningWoodCont_435acdee:
+
+    # Lisa_01 "Хорошо, Макс. Будет любопытно понаблюдать за тем, как ты... обучаешь..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:221
+translate english MorningWoodCont_413bcdc4:
+
+    # Max_01 "Договорились!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:897
+translate english Lisa_MorningWoodCont_7c8db7ba:
+
+    # Lisa_00 "О ком?!"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:898
+translate english Lisa_MorningWoodCont_98701acf:
+
+    # Max_01 "О Большом Максе, на которого ты, с таким интересом, смотрела утром."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:899
+translate english Lisa_MorningWoodCont_56152c0c:
+
+    # Lisa_02 "Ага! Так значит я была права! Раз у него есть имя, значит он и правда живёт своей жизнью..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:900
+translate english Lisa_MorningWoodCont_93c24ad5:
+
+    # Max_04 "Нет, не живёт... Просто \"Большой Макс\" звучит как-то получше, чем \"эта штука\"."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:901
+translate english Lisa_MorningWoodCont_746dce08:
+
+    # Lisa_01 "Как ни называй, а у вас, мальчиков, там очень странная штука."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:902
+translate english Lisa_MorningWoodCont_e06656d9:
+
+    # Max_03 "Ты поэтому с таким интересом смотрела?"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:903
+translate english Lisa_MorningWoodCont_5b6f1cdb:
+
+    # Lisa_09 "Ну, Макс, нисколько не сомневаюсь, что если бы я спала практически голая, то ты бы тоже смотрел с интересом..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:904
+translate english Lisa_MorningWoodCont_2931ed71:
+
+    # Max_05 "А что, по-моему очень честно, если бы ты спала только в трусиках, без верха!"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:905
+translate english Lisa_MorningWoodCont_c83ed0ea:
+
+    # Lisa_11 "В смысле, честно?!"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:906
+translate english Lisa_MorningWoodCont_955ee47f:
+
+    # Max_07 "В том смысле, что я сплю в трусах и ты теперь иногда видишь моего \"Большого Макса\", а вот я вижу тебя слишком одетой... Это не честно!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:907
+translate english Lisa_MorningWoodCont_81db866f:
+
+    # Lisa_00 "Для такого извращенца, как ты, Макс, это очень честно! Можешь только мечтать..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:908
+translate english Lisa_MorningWoodCont_8dbc1caf:
+
+    # Max_01 "Ну ладно, как хочешь."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:910
+translate english Lisa_MorningWoodCont_54722f97:
+
+    # Lisa_09 "Нет, Макс, давай не будем говорить о том, что было утром..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:911
+translate english Lisa_MorningWoodCont_1c1547f7:
+
+    # Max_01 "Почему?"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:912
+translate english Lisa_MorningWoodCont_b6d5f73b:
+
+    # Lisa_10 "Мне стыдно! Вот, почему..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:913
+translate english Lisa_MorningWoodCont_5b3bb931:
+
+    # Max_04 "Не надо тут ничего стыдиться! Хотя, я удивлён, насколько тебе интересно всё то, о чём тебе не хочет рассказывать мама."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:914
+translate english Lisa_MorningWoodCont_5eb936fc:
+
+    # Lisa_13 "Вот именно! Она мне ничего не хочет рассказывать о взрослых вещах... А Алиса станет надо мной прикалываться и смеяться..."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:915
+translate english Lisa_MorningWoodCont_065481c8:
+
+    # Max_07 "Ну а я тут для чего?!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:916
+translate english Lisa_MorningWoodCont_ad4f434e:
+
+    # Lisa_02 "Ах да, ты же у нас великий учитель!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:917
+translate english Lisa_MorningWoodCont_87b4fd1d:
+
+    # Max_01 "Великий - это вряд ли, но подготовить тебя к взрослой жизни могу..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:918
+translate english Lisa_MorningWoodCont_cce6e527:
+
+    # Lisa_00 "Думаешь, меня надо готовить и сама я не справлюсь?"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:919
+translate english Lisa_MorningWoodCont_58b1f1e5:
+
+    # Max_00 "Ты многого не знаешь..."
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:920
+translate english Lisa_MorningWoodCont_591f2ada:
+
+    # Lisa_01 "Да ты тоже на эксперта не тянешь, Макс."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:921
+translate english Lisa_MorningWoodCont_a67e561a:
+
+    # Max_04 "Хотя бы подумай над этим."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:922
+translate english Lisa_MorningWoodCont_a1cf24b5:
+
+    # Lisa_00 "Ладно, подумаю..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:2389
+translate english liza_secret_alisa_8969254c:
+
+    # Lisa_02 "Странный? Скорее, беспокойный. Переживаю насчёт Алисы..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2390
+translate english liza_secret_alisa_130b65fe:
+
+    # Max_09 "А что такое?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:2391
+translate english liza_secret_alisa_c2c06334:
+
+    # Lisa_00 "Ну, у неё теперь есть платье для ночных клубов. Думаю, что может во что-то вляпаться, если ты меня понимаешь..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:2392
+translate english liza_secret_alisa_b85e6c78:
+
+    # Max_09 "Не совсем... Ты просто переживаешь или имеешь в виду что-то конкретное?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:2396
+translate english liza_secret_alisa_b629dab1:
+
+    # Lisa_10 "Алиса просила меня об этом не рассказывать... Так что..." nointeract
+    Lisa_10 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2405
+translate english liza_secret_alisa_56fa1346:
+
+    # Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2406
+translate english liza_secret_alisa_1e8b77df:
+
+    # Max_00 "Верно..."
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:2414
+translate english liza_secret_alisa_9297cda4:
+
+    # Lisa_00 "[succes!t]Ну ладно, расскажу... В общем, год назад Алиса тоже как-то пошла в ночной клуб..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:2415
+translate english liza_secret_alisa_52ee407e:
+
+    # Max_01 "Ого, любопытно..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2416
+translate english liza_secret_alisa_e332fb06:
+
+    # Lisa_01 "Видимо, там она первый раз и попробовала алкоголь. Как рассказывала её лучшая подружка, Алиса выпила буквально один глоток шампанского, но её как подменили!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2417
+translate english liza_secret_alisa_460dca20:
+
+    # Max_07 "И что случилось?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2418
+translate english liza_secret_alisa_7927017b:
+
+    # Lisa_02 "Похоже, когда она выпивает любое количество алкоголя, даже каплю, у неё отключаются какие-то внутренние ограничители и Алиса начинает делать что попало. Причём, она не выглядит пьяной, но ведёт себя... странно. И на утро ничего не помнит, представляешь!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2419
+translate english liza_secret_alisa_f0a72923:
+
+    # Max_07 "Спасибо, Лиза, это и правда интересно..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2420
+translate english liza_secret_alisa_bdd0db49:
+
+    # Lisa_01 "Но это всё ещё секрет. Ты же меня понимаешь?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2421
+translate english liza_secret_alisa_ff8b5804:
+
+    # Max_01 "Конечно! Я тебя не выдам..."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:180
+    old "{i}подождать{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:180
+    old "Да трогай уже, он не кусается!"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2396
+    old "Лиза, мне можно рассказать! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2396
+    old "Лиза, мне можно рассказать! {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
+    new ""
 

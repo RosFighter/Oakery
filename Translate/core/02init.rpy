@@ -173,3 +173,31 @@ translate english strings:
     # game/core/02init.rpy:94
     old "У меня для тебя подарок {i}(Пижама){/i}"
     new "I have a gift for you {i}(Pajamas){/i}"
+# TODO: Translation updated at 2020-05-14 09:48
+
+translate english strings:
+
+    # game/core/02init.rpy:17
+    old "{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:18
+    old "{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:56
+    old "Хотел поговорить о Большом Максе..."
+    new ""
+
+    # game/core/02init.rpy:56
+    old "А ты у нас шалунья, оказывается..."
+    new ""
+
+    # game/core/02init.rpy:56
+    old "У тебя странный вид..."
+    new ""
+
+    # game/core/02init.rpy:56
+    old "Может всё-таки поделишься своими переживаниями по поводу Алисы?"
+    new ""
+

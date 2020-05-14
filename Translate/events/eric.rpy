@@ -391,8 +391,8 @@ translate english eric_ann_shower_start_peeping_cdfa03c1:
 translate english strings:
 
     # game/events/eric.rpy:164
-    old "{i}заглянуть в окно\n{color=[_chance_color]}(Скрытность. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}peep into the window\n{color=[_chance_color]}(Stealth. Chance: [ch_vis]){/color}{/i}"
+    old "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}peep into the window\n{color=[_ch1.col]}(Stealth. Chance: [_ch1.vis]){/color}{/i}"
 
 # TODO: Translation updated at 2020-03-14 08:54
 
@@ -875,4 +875,102 @@ translate english strings:
     # game/events/eric.rpy:263
     old "{i}тихо сматываться{/i}"
     new "{i}Leave quietly{/i}"
+
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/events/eric.rpy:614
+translate english eric_ann_shower_alt_peepeng_d769a708:
+
+    # Max_10 "[undetect!t]Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..." nointeract
+    Max_10 "" nointeract
+
+# game/events/eric.rpy:616
+translate english eric_ann_shower_alt_peepeng_42177608:
+
+    # Max_09 "[undetect!t]Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:618
+translate english eric_ann_shower_alt_peepeng_5b560f45:
+
+    # Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
+    Max_04 "" nointeract
+
+# game/events/eric.rpy:620
+translate english eric_ann_shower_alt_peepeng_065723ba:
+
+    # Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
+    Max_06 "" nointeract
+
+# game/events/eric.rpy:622
+translate english eric_ann_shower_alt_peepeng_cedd144b:
+
+    # Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
+    Max_05 "" nointeract
+
+# game/events/eric.rpy:631
+translate english eric_ann_shower_alt_peepeng_c849c0ca:
+
+    # Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:633
+translate english eric_ann_shower_alt_peepeng_925cd30e:
+
+    # Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
+    Max_01 "" nointeract
+
+# game/events/eric.rpy:635
+translate english eric_ann_shower_alt_peepeng_b85f5146:
+
+    # Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:637
+translate english eric_ann_shower_alt_peepeng_cc0c1868:
+
+    # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
+    Max_08 "" nointeract
+
+# game/events/eric.rpy:661
+translate english eric_ann_shower_closer_peepeng_5b560f45:
+
+    # Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
+    Max_04 "" nointeract
+
+# game/events/eric.rpy:663
+translate english eric_ann_shower_closer_peepeng_065723ba:
+
+    # Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
+    Max_06 "" nointeract
+
+# game/events/eric.rpy:665
+translate english eric_ann_shower_closer_peepeng_cedd144b:
+
+    # Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
+    Max_05 "" nointeract
+
+# game/events/eric.rpy:674
+translate english eric_ann_shower_closer_peepeng_925cd30e:
+
+    # Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
+    Max_01 "" nointeract
+
+# game/events/eric.rpy:676
+translate english eric_ann_shower_closer_peepeng_b85f5146:
+
+    # Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:678
+translate english eric_ann_shower_closer_peepeng_cc0c1868:
+
+    # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
+    Max_08 "" nointeract
+
+# game/events/eric.rpy:690
+translate english eric_ann_shower_not_luck_cdfa03c1:
+
+    # Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
+    Ann_15 ""
 

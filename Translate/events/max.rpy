@@ -775,12 +775,12 @@ translate english ViewLesson_4bfad0d0:
 translate english strings:
 
     # game/events/max.rpy:673
-    old "{i}искать... {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}look... {color=[_chance_color]}(Luck. Chance: [ch_vis]){/color}{/i}"
+    old "{i}искать... {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}look... {color=[_ch1.col]}(Luck. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/events/max.rpy:699
-    old "{i}Подложить сейчас {color=[_chance_color]}(Удача. Шанс: [ch_vis]){/color}{/i}"
-    new "{i}Put now {color=[_chance_color]}(Luck. Chance: [ch_vis]){/color}{/i}"
+    old "{i}Подложить сейчас {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
+    new "{i}Put now {color=[_ch1.col]}(Luck. Chance: [_ch1.vis]){/color}{/i}"
 
 # TODO: Translation updated at 2020-03-09 09:01
 

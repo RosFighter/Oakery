@@ -601,3 +601,23 @@ translate english lisa_shower_8d94a43d:
     Max_10 "I want to take another look at my naked sister, but I haven't given her what I promised yet..."
 
 
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/events/lisa.rpy:134
+translate english lisa_shower_alt_peepeng_022529c8:
+
+    # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+    Max_02 ""
+
+# game/events/lisa.rpy:136
+translate english lisa_shower_alt_peepeng_42f03b58:
+
+    # Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
+    Max_03 ""
+
+# game/events/lisa.rpy:168
+translate english lisa_shower_not_luck_e8e13c34:
+
+    # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
+    Max_12 ""
+
