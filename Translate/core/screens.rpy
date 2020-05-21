@@ -323,17 +323,17 @@ translate english strings:
 
     # game/core/screens.rpy:1393
     old "Задать одежду персонажа"
-    new ""
+    new "Set character's clothing"
 
     # game/core/screens.rpy:1428
     old "ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА"
-    new ""
+    new "SET THE CHARACTER'S CLOTHING"
 
     # game/core/screens.rpy:1476
     old "Автосмена каждые 2 дня"
-    new ""
+    new "Auto change every 2 days"
 
     # game/core/screens.rpy:1487
     old "Сделать текущей"
-    new ""
+    new "Select as current"
 

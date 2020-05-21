@@ -179,25 +179,25 @@ translate english strings:
 
     # game/core/02init.rpy:17
     old "{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Alice liked the massage!{/i}{/color}\n""
 
     # game/core/02init.rpy:18
     old "{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Alice did not like the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:56
     old "Хотел поговорить о Большом Максе..."
-    new ""
+    new "I wanted to talk about Big Max..."
 
     # game/core/02init.rpy:56
     old "А ты у нас шалунья, оказывается..."
-    new ""
+    new "I didn't think you were actually such a naughty girl..."
 
     # game/core/02init.rpy:56
     old "У тебя странный вид..."
-    new ""
+    new "You look a little strange..."
 
     # game/core/02init.rpy:56
     old "Может всё-таки поделишься своими переживаниями по поводу Алисы?"
-    new ""
+    new "Can you tell me how you feel about Alice?"
 

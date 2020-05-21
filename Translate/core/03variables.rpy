@@ -1184,53 +1184,53 @@ translate english strings:
 
     # game/core/03variables.rpy:146
     old "Повседневная"
-    new ""
+    new "Everyday"
 
     # game/core/03variables.rpy:149
     old "Для сна"
-    new ""
+    new "Sleepwear"
 
     # game/core/03variables.rpy:153
     old "КУПАЛЬНИК"
-    new ""
+    new "SWIMSUIT"
 
     # game/core/03variables.rpy:162
     old "За уроками"
-    new ""
+    new "During lessons"
 
     # game/core/03variables.rpy:167
     old "Повседневная ОДЕЖДА"
-    new ""
+    new "Casual wear"
 
     # game/core/03variables.rpy:177
     old "Для приготовления завтрака"
-    new ""
+    new "For making breakfast"
 
     # game/core/03variables.rpy:182
     old "Для приготовления ужина"
-    new ""
+    new "For cooking dinner"
 
     # game/core/03variables.rpy:186
     old "Для вечернего отдыха"
-    new ""
+    new "Evening-wear"
 
     # game/core/03variables.rpy:263
     old "КОНФЕТЫ С ЛИКЁРОМ"
-    new ""
+    new "LIQUEUR SWEETS"
 
     # game/core/03variables.rpy:263
     old "Шоколадные конфеты с ликёром. Уникальные ароматизаторы скрывают вкус алкоголя. Отлично поднимают настроение. Очень крепкие."
-    new ""
+    new "Chocolate candy and liqueur. Unique flavors hide the taste of alcohol. They're very strong."
 
     # game/core/03variables.rpy:309
     old "Лиза снова увидела мой утренний стояк. На этот раз маму она не позвала, что уже хорошо. Хотя, смотрела она на мой член не только с подозрением, но ещё и с интересом. По крайней мере, мне так показалось. Думаю, нужно с ней об этом поговорить..."
-    new ""
+    new "Lisa saw my morning wood again. This time she didn't call Mom, which is good. I feel like she was staring at my cock with something other than suspicion this time... I think we should talk to her about it..."
 
     # game/core/03variables.rpy:309
     old "Это, конечно, не точно, но Лиза хотела потрогать мой член, думая, что я спал. И судя по её реакции на то, что я это увидел, даже она сама с себя удивилась. Посмотрим, что она потом об этом скажет..."
-    new ""
+    new "Curiosity got the better of her. I caught Lisa trying to touch me thinking I was asleep. Judging from her reaction, she was just as surprised as I was. Let's see what she has to say about it later..."
 
     # game/core/03variables.rpy:309
     old "Похоже, интерес Лизы к противоположному полу и всему, что связано со взрослой жизнью, растёт не по дням, а по часам. Не знаю уж, мой стоящий по утрам член так её раззодорил или ещё что-то, но она согласилась меня слушаться по вопросам о мальчиках и всем этим взрослым штучкам... Вот только прежде, чем учить, может быть стоит самому чему-то научиться? А самое главное - при этом ничего не испортить, а то она снова откажется..."
-    new ""
+    new "It seems that Lisa's interest in the opposite sex and everything related to adult life is growing by leaps and bounds. I'm not sure how much my morning wood stirred all this excitement, but she agreed to listen to me on questions about boys and all that adult stuff... But before you teach, maybe you should learn something yourself? The most important thing is not to push too far..."
 

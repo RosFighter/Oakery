@@ -1033,23 +1033,23 @@ translate english ann_dressed_shop_goodday_1a01074c:
 translate english ann_shower_alt_peepeng_e486fb14:
 
     # Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-    Max_03 ""
+    Max_03 "[undetect!t]it's Awesome! Not every day that you get a chance to admire this beauty! Her big firm Breasts and slender figure are just a sight to behold..."
 
 # game/events/ann.rpy:141
 translate english ann_shower_alt_peepeng_3c3328bd:
 
     # Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
-    Max_05 ""
+    Max_05 "[undetect!t]Oh, Yes! The sight is simply amazing... Such a juicy ass can be the envy of any woman! How wet..."
 
 # game/events/ann.rpy:173
 translate english ann_shower_not_luck_4a76a42b:
 
     # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
-    Max_12 ""
+    Max_12 "{color=[orange]}{i}I think Mom suspected something!{/i} {/color}\damn... I should run before she sees me!"
 
 # game/events/ann.rpy:183
 translate english ann_shower_not_luck_9b36810d:
 
     # Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
-    Ann_15 "" nointeract
+    Ann_15 "[spotted!t]Max!!!! What are you doing here? Turn around now!!!" nointeract
 

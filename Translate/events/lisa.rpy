@@ -607,17 +607,17 @@ translate english lisa_shower_8d94a43d:
 translate english lisa_shower_alt_peepeng_022529c8:
 
     # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 ""
+    Max_02 "[undetect!t]Lisa's so wet! Her figure and tight body are so hot... I'd love to run my hands all over it..."
 
 # game/events/lisa.rpy:136
 translate english lisa_shower_alt_peepeng_42f03b58:
 
     # Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-    Max_03 ""
+    Max_03 "[undetect!t]Oh, yeah! The water is rinsing her cute ass, I have to keep my eyes on it..."
 
 # game/events/lisa.rpy:168
 translate english lisa_shower_not_luck_e8e13c34:
 
     # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
-    Max_12 ""
+    Max_12 "{color=[orange]}{i}I think Lisa got suspicious!{/i}{/color}\nOh, no! Looks like she noticed me... time to run!"
 
