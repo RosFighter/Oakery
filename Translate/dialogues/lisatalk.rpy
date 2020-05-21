@@ -5881,7 +5881,7 @@ translate english Lisa_MorningWoodCont_56152c0c:
 translate english Lisa_MorningWoodCont_93c24ad5:
 
     # Max_04 "Нет, не живёт... Просто \"Большой Макс\" звучит как-то получше, чем \"эта штука\"."
-    Max_04 "No, he doesn't... It's just that \ "Big Max\" sounds better than \"this thing\"."
+    Max_04 "No, he doesn't... It's just that \"Big Max\" sounds better than \"this thing\"."
 
 # game/dialogues/lisatalk.rpy:901
 translate english Lisa_MorningWoodCont_746dce08:
@@ -5917,7 +5917,7 @@ translate english Lisa_MorningWoodCont_c83ed0ea:
 translate english Lisa_MorningWoodCont_955ee47f:
 
     # Max_07 "В том смысле, что я сплю в трусах и ты теперь иногда видишь моего \"Большого Макса\", а вот я вижу тебя слишком одетой... Это не честно!"
-    Max_07 "I mean, I sleep in my underwear and let you see my \ "Big Маx\" sometimes, but you're still always dressed... That's not fair!"
+    Max_07 "I mean, I sleep in my underwear and let you see my \"Big Маx\" sometimes, but you're still always dressed... That's not fair!"
 
 # game/dialogues/lisatalk.rpy:907
 translate english Lisa_MorningWoodCont_81db866f:
@@ -6111,9 +6111,9 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:2396
     old "Лиза, мне можно рассказать! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "Lisa, you can tell me! {color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
+    new "Lisa, you can tell me! {color=[_ch1.col]}(Conviction. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:2396
     old "Лиза, мне можно рассказать! {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
-    new "Lisa, you can tell me! {color=[_ch4.col]}(Conviction. Chance: [_ch4. vis]){/color}"
+    new "Lisa, you can tell me! {color=[_ch4.col]}(Conviction. Chance: [_ch4.vis]){/color}"
 

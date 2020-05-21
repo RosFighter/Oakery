@@ -974,3 +974,11 @@ translate english eric_ann_shower_not_luck_cdfa03c1:
     # Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
     Ann_15 "[spotted!t]Max?! What the hell are you doing here? Peeking at us?! You'll be punished today! Get out of here now!"
 
+# TODO: Translation updated at 2020-05-22 00:12
+
+translate english strings:
+
+    # game/events/eric.rpy:216
+    old "{i}взглянуть со стороны{/i}"
+    new "{i}look from the side{/i}"
+

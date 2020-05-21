@@ -179,7 +179,7 @@ translate english strings:
 
     # game/core/02init.rpy:17
     old "{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Alice liked the massage!{/i}{/color}\n""
+    new "{color=#E59400}{i}Alice liked the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:18
     old "{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n"

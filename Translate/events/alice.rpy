@@ -1373,11 +1373,11 @@ translate english alice_shower_alt_peepeng_09abbe09:
 translate english alice_shower_not_luck_051a23bb:
 
     # Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
-    Max_09 "{color=[orange]}{i}Alice seemed to suspect something!{/i} {/color}\ Damn! We need to get out of here while we still have time..."
+    Max_09 "{color=[orange]}{i}Alice seemed to suspect something!{/i} {/color}\n Damn! We need to get out of here while we still have time..."
 
 translate english strings:
 
     # game/events/alice.rpy:265
     old "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}"
-    new "{i}look from the side\n{color=[_ch2.col]}(Stealth. Chance: [_ch2. vis]){/color}{/i}"
+    new "{i}look from the side\n{color=[_ch2.col]}(Stealth. Chance: [_ch2.vis]){/color}{/i}"
 

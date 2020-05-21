@@ -676,3 +676,23 @@ translate english punishment_alice_5c85cc9f:
     # Max_09 "{i}Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас!{/i}"
     Max_09 "{i}Wow! What are panties doing on Alice?! I thought we agreed with her... That's it, sis, you're in trouble. ...and much more than you are now.{/i}"
 
+# TODO: Translation updated at 2020-05-22 00:12
+
+# game/dialogues/punishment.rpy:149
+translate english punishment_max_pun_reson_2719fc6f:
+
+    # Ann_14 "У тебя есть ещё время подумать над своим поведением. Надеюсь, следующего раза не будет!"
+    Ann_14 "Think about your behavior, I hope this won't happen again!"
+
+# game/dialogues/punishment.rpy:151
+translate english punishment_max_pun_reson_2f8845d8:
+
+    # Max_10 "Да, мам..."
+    Max_10 "Yes, mom"
+
+translate english strings:
+
+    # game/dialogues/punishment.rpy:125
+    old "Ну, я плохо себя вёл..."
+    new "I was misbehaving"
+

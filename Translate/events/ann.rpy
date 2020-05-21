@@ -1045,7 +1045,7 @@ translate english ann_shower_alt_peepeng_3c3328bd:
 translate english ann_shower_not_luck_4a76a42b:
 
     # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
-    Max_12 "{color=[orange]}{i}I think Mom suspected something!{/i} {/color}\damn... I should run before she sees me!"
+    Max_12 "{color=[orange]}{i}I think Mom suspected something!{/i} {/color}\ndamn... I should run before she sees me!"
 
 # game/events/ann.rpy:183
 translate english ann_shower_not_luck_9b36810d:

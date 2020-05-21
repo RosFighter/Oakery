@@ -642,7 +642,7 @@ translate english alice_aboutbooks_6405d1b7:
 translate english alice_aboutbooks_af00f0d1:
 
     # Alice_00 "Не скажу. Сиди теперь и гадай! \n\n{i}Алиса прикрыла обложку рукой{/i}" nointeract
-    Alice_00 "I won't tell. I guess you'll have to live with the uncertainty! \n\n{i}Alice has covered the book title.{/I}" nointeract
+    Alice_00 "I won't tell. I guess you'll have to live with the uncertainty! \n\n{i}Alice has covered the book title.{/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:341
 translate english alice_aboutbooks_15cbb85a:
@@ -2286,19 +2286,19 @@ translate english massage_sunscreen_3f529b58:
 translate english massage_sunscreen_left_foot_fbfbb9cf:
 
     # Max_01 "{i}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
-    Max_01 "{I}Let's Start today with the left heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
+    Max_01 "{i}Let's Start today with the left heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
 
 # game/dialogues/alicetalk.rpy:1189
 translate english massage_sunscreen_left_foot_6df29202:
 
     # Max_03 "{i}А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
-    Max_03 "{I}And now the right one... Like this. Yes, I can't take my eyes off you! That ass is perfect!{/i}"
+    Max_03 "{i}And now the right one... Like this. Yes, I can't take my eyes off you! That ass is perfect!{/i}"
 
 # game/dialogues/alicetalk.rpy:1195
 translate english massage_sunscreen_right_foot_c55e1f46:
 
     # Max_01 "{i}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
-    Max_01 "{I}Let's start today with the right heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
+    Max_01 "{i}Let's start today with the right heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
 
 # game/dialogues/alicetalk.rpy:1198
 translate english massage_sunscreen_right_foot_facf4587:
@@ -6197,7 +6197,7 @@ translate english alice_talk_tv_jeans_9563ece2:
 translate english alice_talk_tv_jeans_a8150747:
 
     # Max_07 "{i}Ого...{/i}"
-    Max_07 "{i1}Wow.{i0}"
+    Max_07 "{i}Wow.{/i}"
 
 # game/dialogues/alicetalk.rpy:532
 translate english alice_talk_tv_not_jeans_769ebcfd:
@@ -6299,7 +6299,7 @@ translate english Alice_solar_type_choice_acc696ab:
 translate english Alice_solar_type_choice_d45b0d2a:
 
     # Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
-    Max_07 "{i}In some ways Alice is right, it's probably worth learning. {/i}"
+    Max_07 "{i}In some ways Alice is right, it's probably worth learning.{/i}"
 
 translate english strings:
 
@@ -6317,15 +6317,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:331
     old "Так тебе продемонстрировать или как? \n{color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
-    new "Do you need a demonstration or something? \n{color=[_ch4.col]}(Conviction. Chance: [_ch4. vis]){/color}"
+    new "Do you need a demonstration or something? \n{color=[_ch4.col]}(Conviction. Chance: [_ch4.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:335
     old "Тебе понравится! \n{color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
-    new "You'll love it! \n{color=[_ch4.col]}(Conviction. Chance: [_ch4. vis]){/color}"
+    new "You'll love it! \n{color=[_ch4.col]}(Conviction. Chance: [_ch4.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:340
     old "Хорошо {i}(начать массаж){/i}"
-    new "OK {i} (start massage){/i}"
+    new "OK {i}(start massage){/i}"
 
     # game/dialogues/alicetalk.rpy:340
     old "Может конфетку перед массажем?"
@@ -6345,7 +6345,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:380
     old "От конфетки не поправишься! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
-    new "You can't get better from candy! {color=[_ch3.col]}(Conviction. Chance: [_ch3. vis]){/color}"
+    new "You can't get better from candy! {color=[_ch3.col]}(Conviction. Chance: [_ch3.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:390
     old "Конфеты закончились"
@@ -6357,19 +6357,19 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:413
     old "{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}"
-    new "{i}continue{/i} \n{color=[_ch20.col]} (Massage. Chance: [_ch20. vis]){/color}"
+    new "{i}continue{/i} \n{color=[_ch20.col]}(Massage. Chance: [_ch20.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:437
     old "Может, ещё конфетку? \n{color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
-    new "Maybe some more candy? \n{color=[_ch3.col]}(Conviction. Chance: [_ch3. vis]){/color}"
+    new "Maybe some more candy? \n{color=[_ch3.col]}(Conviction. Chance: [_ch3.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:439
     old "Тебе джинсы не мешают? \n{color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new "Are your jeans bothering you? \n{color=[_ch2.col]}(Conviction. Chance: [_ch2. vis]){/color}"
+    new "Are your jeans bothering you? \n{color=[_ch2.col]}(Conviction. Chance: [_ch2.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:444
     old "{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}"
-    new "{i}continue{/i} \n{color=[_ch15.col]} (Massage. Chance: [_ch15. vis]){/color}"
+    new "{i}continue{/i} \n{color=[_ch15.col]}(Massage. Chance: [_ch15.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:445
     old "{i}закончить массаж{/i}"
@@ -6393,7 +6393,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:532
     old "{i}продолжить{/i} \n{color=[_ch25.col]}(Массаж. Шанс: [_ch25.vis]){/color}"
-    new "{i}continue{/i} \n{color=[_ch25.col]} (Massage. Chance: [_ch25. vis]){/color}"
+    new "{i}continue{/i} \n{color=[_ch25.col]}(Massage. Chance: [_ch25.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:547
     old "Да, это будет на десерт..."
@@ -6417,35 +6417,35 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:897
     old "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}"
-    new "Give me $20 and I won't say anything {color=[_ch8.col]}(Conviction. Chance: [_ch8. vis]){/color}"
+    new "Give me $20 and I won't say anything {color=[_ch8.col]}(Conviction. Chance: [_ch8.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:897
     old "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"
-    new "If you don't wear panties during the day, I will be silent {color=[_ch4.col]}(Conviction. Chance: [_ch4. vis]){/color}"
+    new "If you don't wear panties during the day, I will be silent {color=[_ch4.col]}(Conviction. Chance: [_ch4.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:897
     old "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
-    new "If you stop wearing a bra, I will be silent {color=[_ch3.col]}(Conviction. Chance: [_ch3. vis]){/color}"
+    new "If you stop wearing a bra, I will be silent {color=[_ch3.col]}(Conviction. Chance: [_ch3.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:897
     old "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
-    new "If you smoke without a swimsuit top, I will be silent {color=[_ch3.col]}(Conviction. Chance: [_ch3. vis]){/color}"
+    new "If you smoke without a swimsuit top, I will be silent {color=[_ch3.col]}(Conviction. Chance: [_ch3.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:906
     old "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new "No, $20 {color=[_ch2.col]}(Conviction. Chance: [_ch2. vis]){/color}"
+    new "No, $20 {color=[_ch2.col]}(Conviction. Chance: [_ch2.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1533
     old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "No, I just wanted to see how your pajamas would look... {color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
+    new "No, I just wanted to see how your pajamas would look... {color=[_ch1.col]}(Conviction. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1902
     old "Что, стесняешься? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "Are you shy? {color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
+    new "Are you shy? {color=[_ch1.col]}(Conviction. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:2008
     old "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "I happened to be near the shower... {color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
+    new "I happened to be near the shower... {color=[_ch1.col]}(Conviction. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:2432
     old "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
@@ -6457,5 +6457,66 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:2612
     old "Только если без последующего насилия... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "Only if there is no subsequent violence... {color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
+    new "Only if there is no subsequent violence... {color=[_ch1.col]}(Conviction. Chance: [_ch1.vis]){/color}"
+# TODO: Translation updated at 2020-05-22 00:12
+
+# game/dialogues/alicetalk.rpy:535
+translate english alice_talk_tv_not_jeans_6d488f64:
+
+    # Alice_07 "А с чего бы мне быть без них!"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:536
+translate english alice_talk_tv_not_jeans_78fcfcfe:
+
+    # Alice_14 "Ой..."
+    Alice_14 ""
+
+# game/dialogues/alicetalk.rpy:537
+translate english alice_talk_tv_not_jeans_f7f309ef:
+
+    # Max_09 "Вот ты и попалась! Я значит тут со всей любезностью массаж сестрёнке делаю, конфетами угощаю, а она..."
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:538
+translate english alice_talk_tv_not_jeans_6c18c11f:
+
+    # Alice_12 "Просто забыла..."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:539
+translate english alice_talk_tv_not_jeans_9418e786:
+
+    # Max_07 "Тогда, если хочешь продолжения массажа, то снимай их!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:540
+translate english alice_talk_tv_not_jeans_adb6b9f6:
+
+    # Alice_06 "Макс! Какой же ты... Ладно, только не смотри. И когда продолжишь массаж, не пялься на меня!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:541
+translate english alice_talk_tv_not_jeans_aa8b7b20:
+
+    # Max_03 "Да, да, конечно."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:543
+translate english alice_talk_tv_not_jeans_59e057ce:
+
+    # Alice_13 "Хотя, нет, не пойдёт! У меня так всё видно будет... И хватит уже пялиться! Лучше иди уже по своим делам."
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:544
+translate english alice_talk_tv_not_jeans_a8b634a1:
+
+    # Max_05 "Как скажешь. Трусы не потеряй."
+    Max_05 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:532
+    old "А почему на тебе трусики?"
+    new ""
 

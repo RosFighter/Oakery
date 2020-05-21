@@ -1231,6 +1231,34 @@ translate english strings:
     new "Curiosity got the better of her. I caught Lisa trying to touch me thinking I was asleep. Judging from her reaction, she was just as surprised as I was. Let's see what she has to say about it later..."
 
     # game/core/03variables.rpy:309
-    old "Похоже, интерес Лизы к противоположному полу и всему, что связано со взрослой жизнью, растёт не по дням, а по часам. Не знаю уж, мой стоящий по утрам член так её раззодорил или ещё что-то, но она согласилась меня слушаться по вопросам о мальчиках и всем этим взрослым штучкам... Вот только прежде, чем учить, может быть стоит самому чему-то научиться? А самое главное - при этом ничего не испортить, а то она снова откажется..."
+    old "Похоже, интерес Лизы к противоположному полу и всему, что связано со взрослой жизнью, растёт не по дням, а по часам. Не знаю уж, мой стоящий по утрам член так её раззадорил или ещё что-то, но она согласилась меня слушаться по вопросам о мальчиках и всем этим взрослым штучкам... Вот только прежде, чем учить, может быть стоит самому чему-то научиться? А самое главное - при этом ничего не испортить, а то она снова откажется..."
     new "It seems that Lisa's interest in the opposite sex and everything related to adult life is growing by leaps and bounds. I'm not sure how much my morning wood stirred all this excitement, but she agreed to listen to me on questions about boys and all that adult stuff... But before you teach, maybe you should learn something yourself? The most important thing is not to push too far..."
+
+# TODO: Translation updated at 2020-05-22 00:12
+
+translate english strings:
+
+    # game/core/03variables.rpy:623
+    old "Кира"
+    new "Kira"
+
+    # game/core/03variables.rpy:623
+    old "Киры"
+    new "Kira"
+
+    # game/core/03variables.rpy:623
+    old "Кире"
+    new "Kira"
+
+    # game/core/03variables.rpy:623
+    old "Киру"
+    new "Kira"
+
+    # game/core/03variables.rpy:623
+    old "Кирой"
+    new "Kira"
+
+    # game/core/03variables.rpy:623
+    old "Тётя Кира, мамина младшая сестра. Конечно, у неё и раньше не были замечены какие-либо комплексы, но сейчас она стала такой... такой..."
+    new "Aunt Kira, mom's younger sister. She wasn't exactly shy before, but now she's so... so..."
 

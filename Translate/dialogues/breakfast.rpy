@@ -1731,3 +1731,281 @@ translate english strings:
     old "курит"
     new "smokes"
 
+# TODO: Translation updated at 2020-05-22 00:12
+
+# game/dialogues/breakfast.rpy:663
+translate english breakfast_7_ca36c610:
+
+    # Ann_04 "Всем доброе утро, приятного аппетита..."
+    Ann_04 "Good morning, everyone, bon appetit."
+
+# game/dialogues/breakfast.rpy:664
+translate english breakfast_7_b6e4f095:
+
+    # Max_01 "Приятного аппетита..."
+    Max_01 "Bon appetit..."
+
+# game/dialogues/breakfast.rpy:665
+translate english breakfast_7_43c4fcc1:
+
+    # Lisa_01 "А где Эрик? Подождём его, прежде, чем начать?"
+    Lisa_01 "Where is Eric? Aren't we going to wait for him?"
+
+# game/dialogues/breakfast.rpy:666
+translate english breakfast_7_10956b89:
+
+    # Max_00 "Никогда не ждали и вот опять..."
+    Max_00 "Now we have to wait for him..."
+
+# game/dialogues/breakfast.rpy:667
+translate english breakfast_7_3c8ac77b:
+
+    # Ann_05 "Нет, Лиза. Эрик уже убежал. Он начинает работу раньше меня. Всё-таки, ответственная должность, много работы... А за мной позже машина подъедет. Так что, завтракаем без него..."
+    Ann_05 "No, Lisa. Eric has already left. He's starting his work before me. He has an important job, there's a lot of work to do... The car will pick me up later. So we'll have the breakfast without him."
+
+# game/dialogues/breakfast.rpy:668
+translate english breakfast_7_c6610d95:
+
+    # Max_04 "Отлично..."
+    Max_04 "Great..."
+
+# game/dialogues/breakfast.rpy:669
+translate english breakfast_7_cfbd90f2:
+
+    # Alice_02 "Мам, а что там про эти... наказания вы с Эриком обсуждали? Это же всё не серьёзно, да?"
+    Alice_02 "Mom, what did you meant when you were talking about those punishments? You weren't serious, right?"
+
+# game/dialogues/breakfast.rpy:670
+translate english breakfast_7_c014efc6:
+
+    # Max_08 "Зачем напомнила..."
+    Max_08 "Ugh, why do you have to remind us about them..."
+
+# game/dialogues/breakfast.rpy:671
+translate english breakfast_7_1ae19837:
+
+    # Ann_12 "Почему же, вполне серьёзно. Он меня убедил, что я вас не так наказывала всё это время, как полагается. Конечно, я ещё сомневаюсь, но он точно знает о чём говорит. Так что..."
+    Ann_12 "Of course I was serious. He convinced me I should change your punishments so they'll be more effective. I'm still not sure about this, though..."
+
+# game/dialogues/breakfast.rpy:672
+translate english breakfast_7_9b97c9c4:
+
+    # Max_00 "Мам, ты о чём, вообще?"
+    Max_00 "What are you talking about, mom?"
+
+# game/dialogues/breakfast.rpy:673
+translate english breakfast_7_df7add7c:
+
+    # Ann_12 "Эрик считает, что наказание в том случае эффективно, если оно затрагивает не только тело, но и... кое-что внутри. Я имею в виду чувство стыда, когда стыд от поступка переплетается со стыдом от наказания..."
+    Ann_12 "Eric thinks the punishments are more effective if they are not only physical, but also psychological. I'm talking about the sense of shame, when your sense of shame of what you did combines with your sense of shame from the punishment..."
+
+# game/dialogues/breakfast.rpy:674
+translate english breakfast_7_93e5d926:
+
+    # Max_09 "Мам, ну что за бред?!"
+    Max_09 "Sounds stupid"
+
+# game/dialogues/breakfast.rpy:675
+translate english breakfast_7_2d52c1dc:
+
+    # Ann_01 "Бред, говоришь? А вот проверим. Эрик предложил отложить новую методику до следующей недели, чтобы у вас было время морально подготовиться и обдумать все свои поступки. Может быть, вы сами не захотите косячить, чтобы и не получать наказание..."
+    Ann_01 "We'll see. Eric has offered to give you some time to ready yourself and think about your actions. We'll have a new punishment system starting from the next week. Maybe you'll behave better so you won't get any punishments."
+
+# game/dialogues/breakfast.rpy:676
+translate english breakfast_7_677739a3:
+
+    # Max_07 "Новую методику?"
+    Max_07 "New punishment system?"
+
+# game/dialogues/breakfast.rpy:677
+translate english breakfast_7_161dce96:
+
+    # Lisa_09 "Мам, ты меня пугаешь. Что за новая методика? Это ремнём, что ли? Ты и ладошкой очень больно шлёпаешь, а ремнём я не выдержу, умру сразу!"
+    Lisa_09 "You're scaring me, mom. What new system? Are you talking about flogging us with the belt? Your palm is painful enough already, I won't be able to survive the belt!"
+
+# game/dialogues/breakfast.rpy:678
+translate english breakfast_7_a34321c8:
+
+    # Ann_01 "Нет, Лиза, дело не в этом. Эрик считает, что если вас наказывать без одежды, то вам будет жутко стыдно друг перед другом и вы не захотите повторения наказания. К счастью или нет, вы разных полов и это обычно очень действует..."
+    Ann_01 "No, Lisa, that's not what I'm talking about. Eric thinks if you'll be punished without your clothes, then you'll be very ashamed in front of each other and you'll try very hard not to get punished again. Fortunately or not, you have different genders, so this should be very effective..."
+
+# game/dialogues/breakfast.rpy:679
+translate english breakfast_7_9d10ae8c:
+
+    # Max_01 "Я бы сказал, на что именно это действует..."
+    Max_01 "I can tell you what effect it will have..."
+
+# game/dialogues/breakfast.rpy:680
+translate english breakfast_7_29ce6767:
+
+    # Ann_00 "Что, Макс? Я не поняла, о чём ты? Хотя, это не важно. В любом случае, до следующей недели это вам не грозит. У Лизы будет время подтянуть уроки, чтобы не получать больше двоек, ну а вы старайтесь не косячить и не будете наказаны... К тому же, если уже от этих разговоров вы станете лучше себя вести, то и раздеваться вам не придётся в дальнейшем."
+    Ann_00 "I don't know what you're talking about, Max. Anyway, you have time until next week to think about it. Lisa will have some time to study and improve her grades, and you two try behave and you won't be punished."
+
+# game/dialogues/breakfast.rpy:681
+translate english breakfast_7_b66fc958:
+
+    # Max_07 "Что, Алиса, всё ещё в восторге от своего Эрика?"
+    Max_07 "So, Alice, do you still love Eric?"
+
+# game/dialogues/breakfast.rpy:682
+translate english breakfast_7_9cdee9c9:
+
+    # Alice_05 "Ты знаешь, а я не буду делать ничего плохого и меня не накажут. Это ты подумай, прежде чем через балконы лезть за нами подглядывать... Так что, мне всё равно. Я хорошо себя веду..."
+    Alice_05 "I just won't be doing anything bad so I won't be punished. You'll just have to think before climbing on our balconies and peeping on us... So I don't care."
+
+# game/dialogues/breakfast.rpy:683
+translate english breakfast_7_bff4d1fa:
+
+    # Max_00 "Посмотрим..."
+    Max_00 "We'll see..."
+
+# game/dialogues/breakfast.rpy:684
+translate english breakfast_7_f574e6e4:
+
+    # Ann_05 "В общем, я вам рассказала, а дальше вы думайте. Время ещё есть. Просто ведите себя прилично и вас это не коснётся... Думаю, завтрак закончен. Всем больше спасибо."
+    Ann_05 "Anyway, that's all I have to say, now think about your behavior.\nI think the breakfast is over. Thanks, everyone."
+
+# game/dialogues/breakfast.rpy:685
+translate english breakfast_7_315443a7:
+
+    # Max_00 "Ага, спасибо за завтрак..."
+    Max_00 "Yeah, thanks for the breakfast"
+
+# game/dialogues/breakfast.rpy:693
+translate english breakfast_12_9aa18fca:
+
+    # Ann_04 "Всем доброе утро, приятного аппетита... Я хочу рассказать вам кое-что по секрету..."
+    Ann_04 "Good morning, everyone, bon appetit. I want to tell you a secret..."
+
+# game/dialogues/breakfast.rpy:694
+translate english breakfast_12_2aeac290:
+
+    # Max_01 "По секрету от кого?"
+    Max_01 "Secret from who?"
+
+# game/dialogues/breakfast.rpy:695
+translate english breakfast_12_e27f5c8d:
+
+    # Ann_07 "Ты прав, Макс. Здесь же все свои. В общем, мы с Эриком решили пожениться!" nointeract
+    Ann_07 "You're right, Max, I guess it's not really a secret. Anyway, Eric and I are going to get married!" nointeract
+
+# game/dialogues/breakfast.rpy:698
+translate english breakfast_12_f740488d:
+
+    # Ann_13 "Макс! Сейчас выпорю перед всеми за такие слова. Я думала, ты порадуешься за свою маму, но такой реакции точно не ожидала..." nointeract
+    Ann_13 "Max! I'm going in to punish you for this! I was hoping you'd be happy for me, I wasn't expecting this..." nointeract
+
+# game/dialogues/breakfast.rpy:701
+translate english breakfast_12_88a4a734:
+
+    # Ann_19 "Ну всё, Макс. Ты договорился. Вечером, перед ужином, тебя ждёт наказание. У тебя есть время всё обдумать. Ты сказал достаточно и теперь сиди и молчи. Я хочу выслушать твоих сестёр."
+    Ann_19 "That's enough, Max. You'll be punished before the evening. Think about your behavior. I've heard your opinion and now I want to know what your sisters think, so be quiet."
+
+# game/dialogues/breakfast.rpy:706
+translate english breakfast_12_f02c331b:
+
+    # Ann_00 "Ну вот, так уже лучше. Вообще, не понимаю почему ты не можешь найти с ним общий язык... Ладно, твою точку зрения я уже поняла. Давай выслушаем твоих сестёр."
+    Ann_00 "That's better. I don't understand why can't you get along with him... Anyway, I've heard your opinion and now I want to know what your sisters think."
+
+# game/dialogues/breakfast.rpy:708
+translate english breakfast_12_25ab2a90:
+
+    # Ann_05 "Спасибо, Макс! Не думала, что ты поддержишь эту идею... Ну а что думают остальные?"
+    Ann_05 "Thank you, Max! I wasn't expecting you'd be so glad to hear about it. But what about you, girls?"
+
+# game/dialogues/breakfast.rpy:709
+translate english breakfast_12_c9d118fe:
+
+    # Lisa_02 "Ну мне кажется, это прикольная идея. Правда, как-то неожиданно и слишком быстро... Нет?"
+    Lisa_02 "I like this idea. It's a bit early though, no?"
+
+# game/dialogues/breakfast.rpy:710
+translate english breakfast_12_36335c6e:
+
+    # Alice_01 "Да, мам, даже я немного в шоке от такой поспешности. Ты не хочешь его узнать чуть-чуть получше? Хотя, лично мне Эрик нравится, но обычно люди встречаются несколько месяцев перед свадьбой, уж как минимум, ведь так?"
+    Alice_01 "Yeah, mom, I'm shocked to hear about it. Don't you want to know him better? I like Eric, but usually people date couple of months before marriage so they can get to know each other, no?"
+
+# game/dialogues/breakfast.rpy:711
+translate english breakfast_12_bce741aa:
+
+    # Ann_07 "Так, но... Ты знаешь, это любовь с первого взгляда. Когда я рядом с ним, я счастлива и не могу думать ни о чём. И когда он сделал мне предложение, я сразу согласилась!"
+    Ann_07 "You're right, but... This is a love from the first sight. I'm happy with him. When he proposed I accepted right away!"
+
+# game/dialogues/breakfast.rpy:712
+translate english breakfast_12_0cb9f76f:
+
+    # Max_12 "Так он уже и предложение сделал?!"
+    Max_12 "He proposed already?"
+
+# game/dialogues/breakfast.rpy:713
+translate english breakfast_12_9fd03531:
+
+    # Alice_07 "Ну, если так, мам, то я очень счастлива за тебя. Да, какого чёрта, конечно я поддерживаю тебя. Эрик классный. Рада за вас очень!"
+    Alice_07 "Well, then, I guess I'm happy for you, mom. Ah, what the hell, of course I'm happy for you. Eric's great."
+
+# game/dialogues/breakfast.rpy:714
+translate english breakfast_12_4caf4771:
+
+    # Max_10 "Э..."
+    Max_10 "Eh..."
+
+# game/dialogues/breakfast.rpy:715
+translate english breakfast_12_31b83b44:
+
+    # Lisa_03 "Да, мам, поздравляю. Я тоже очень рада!"
+    Lisa_03 "Yes, mom, congratulation. I'm very happy too!"
+
+# game/dialogues/breakfast.rpy:716
+translate english breakfast_12_1ea858b3:
+
+    # Ann_08 "Спасибо, мои любимые. Ваша поддержка очень важна для меня!"
+    Ann_08 "Thank you so much, I love you. Your support is very important for me!"
+
+# game/dialogues/breakfast.rpy:717
+translate english breakfast_12_a23921e9:
+
+    # Max_08 "И когда свадьба?"
+    Max_08 "When is the wedding?"
+
+# game/dialogues/breakfast.rpy:718
+translate english breakfast_12_29325d9b:
+
+    # Ann_06 "Ну, мы ещё не решили как это будет и где. Главное, что решили, что это будет! Но думаю, что скоро..."
+    Ann_06 "We haven't decided on any details yet. We just agreed to marry! But I think soon..."
+
+# game/dialogues/breakfast.rpy:719
+translate english breakfast_12_f47e0d84:
+
+    # Max_00 "Понятно..."
+    Max_00 "I see"
+
+# game/dialogues/breakfast.rpy:720
+translate english breakfast_12_8d255351:
+
+    # Ann_05 "Ладно, ещё раз всем спасибо за вашу поддержку и за завтрак. Побегу на работу, а то уже соскучилась по Эрику!"
+    Ann_05 "Okay, thanks again for your support and for the breakfast. I'm going to work, I already miss Eric!"
+
+# game/dialogues/breakfast.rpy:721
+translate english breakfast_12_d956a42b:
+
+    # Max_00 "Ага, спасибо..."
+    Max_00 "Yeah, thanks"
+
+translate english strings:
+
+    # game/dialogues/breakfast.rpy:695
+    old "Какого хрена, мам?"
+    new "What the hell, mom?"
+
+    # game/dialogues/breakfast.rpy:695
+    old "Отличная идея, мам!"
+    new "Great idea, mom!"
+
+    # game/dialogues/breakfast.rpy:698
+    old "Да он козёл!"
+    new "He's a jerk!"
+
+    # game/dialogues/breakfast.rpy:698
+    old "Извини, мам..."
+    new "I'm sorry, mom"
+
