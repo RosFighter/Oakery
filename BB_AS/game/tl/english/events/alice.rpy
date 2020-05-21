@@ -1355,3 +1355,29 @@ translate english strings:
     # game/events/alice.rpy:266
     old "{i}немного пошуметь{/i}"
     new "{i}make some noise{/i}"
+# TODO: Translation updated at 2020-05-14 09:48
+
+# game/events/alice.rpy:376
+translate english alice_shower_alt_peepeng_c8b2c2b6:
+
+    # Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
+    Max_01 "[undetect!t]Nice! My big sister looks so sexy with her hair down... Uhh, I wish I could make sure her breasts get a good clean..."
+
+# game/events/alice.rpy:378
+translate english alice_shower_alt_peepeng_09abbe09:
+
+    # Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
+    Max_01 "[undetect!t] Oh, Yes... It's hard to resist wet Alice! Especially when she twists her ass so seductively..."
+
+# game/events/alice.rpy:410
+translate english alice_shower_not_luck_051a23bb:
+
+    # Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
+    Max_09 "{color=[orange]}{i}Alice seemed to suspect something!{/i} {/color}\n Damn! We need to get out of here while we still have time..."
+
+translate english strings:
+
+    # game/events/alice.rpy:265
+    old "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}"
+    new "{i}look from the side\n{color=[_ch2.col]}(Stealth. Chance: [_ch2.vis]){/color}{/i}"
+

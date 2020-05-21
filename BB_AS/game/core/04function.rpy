@@ -860,7 +860,7 @@ init python:
                     mind = 250          # сбрасываем здравомыслие на исходную
                 elif punalice[d][2]:  # Макс пытался заступиться за Алису перед наказанием
                     finded += 1
-                    pun_chance += grow // 2       # шанс невнимательности меньше
+                    pun_chance += grow // 3       # шанс невнимательности меньше
                     mind = clip(mind+100, 0, 250) # плюс прирост здравомыслия
                 if punalice[d][0] > 2: # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
                     pun_chance -= 150
@@ -872,7 +872,8 @@ init python:
                 else:   # Макс не шантажировал Алису или шантажировал неудачно
                     pun_chance += grow
 
-                if d < 7 and finded > 1:
+                if d < 7 and finded > 1:  # если за последнюю неделю сигареты были найдены уже дважды
+                    pun_chance -= 250
                     break
                 grow = grow * 1.1   # чем больше дней прошло со дня, когда Макс чего-то требовал, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
@@ -880,20 +881,14 @@ init python:
 
 
     def GetDisobedience():  # вероятность ослушания Алисы
-        chance = 60
-        pun = 0
-        grow = 100
+        chance = 90
+        rise = 90
         for d in range(1, len(punalice)-1):
-            if punalice[d][3]:
-                pun +=1
-                chance -= 200
-                grow = 50
+            if punalice[d][0] in [4,5,6]:
+                break # посчет идет только до ближайшего требования Макса
             else:
                 chance += grow
                 grow *= 1.1
-            if d < 8 and pun == 2:
-                chance = 60
-                break  # если за неделю Алису наказали дважды, шанс нарушения соглашения минимальный
         return clip(chance, 0, 1000)
 
 
@@ -911,7 +906,7 @@ init python:
         for d in punchar:
             if d[3]:  # если сестра была наказана, убедить ее проще
                 ch += mind
-            mind = mind * 0.80 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
+            mind = mind * 0.70 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
         return Chance(clip(int(ch), 0, 900))
 
 
@@ -963,3 +958,17 @@ init python:
             if items[id].have:
                 return True
         return False
+
+
+    def check_is_home(char, loc='house'):  # определяет (по расписанию) находится ли персонаж дома в данный момент
+        return chars[char].get_plan().loc == loc
+
+
+    def check_only_home(char, loc='house'):  # проверяет, что кроме этого персонажа и Макса дома больше никого нет
+        rez = True
+        for ch in chars:
+            char_loc = chars[char].get_plan().loc
+            if ch != char and loc == char_loc:
+                rez = False
+                break
+        return rez

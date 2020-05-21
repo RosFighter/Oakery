@@ -317,3 +317,23 @@ translate english strings:
     # game/core/screens.rpy:577
     old "{i}{b}ПРИОБРЕСТИ ЭТОТ КУРС ЗА: $[price]{/b}{/i}"
     new "{i}{b}BUY THIS COURSE FOR: $[price]{/b}{/i}"
+# TODO: Translation updated at 2020-05-14 09:48
+
+translate english strings:
+
+    # game/core/screens.rpy:1393
+    old "Задать одежду персонажа"
+    new "Set character's clothing"
+
+    # game/core/screens.rpy:1428
+    old "ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА"
+    new "SET THE CHARACTER'S CLOTHING"
+
+    # game/core/screens.rpy:1476
+    old "Автосмена каждые 2 дня"
+    new "Auto change every 2 days"
+
+    # game/core/screens.rpy:1487
+    old "Сделать текущей"
+    new "Select as current"
+

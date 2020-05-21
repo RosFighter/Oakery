@@ -203,6 +203,7 @@ label eric_ann_tv:
     $ pose2_3 = '01'
     $ renpy.show('porn_'+film+' 03_04', at_list=[tv_screen,])
     $ renpy.show('Eric tv-watch '+tv_scene+pose2_3+eric.dress)
+    $ _alt = False
 
     if tv_scene == 'bj':
         ### Дальний план, минет
@@ -225,10 +226,16 @@ label eric_ann_tv:
                     Max_07 "[txt2!t]"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
+                    "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+                        $ _alt = True
+                        jump .closer1
                     "{i}продолжать смотреть{/i}":
                         $ spent_time += 10
             "{i}подойти ближе{/i}":
                 ### Ближний план, минет в полотенце
+                jump .closer1
+            "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+                $ _alt = True
                 jump .closer1
             "{i}тихо уйти{/i}":
                 jump .end
@@ -253,10 +260,16 @@ label eric_ann_tv:
                     Max_07 "[txt2!t]"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
+                    "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+                        $ _alt = True
+                        jump .closer1
                     "{i}продолжать смотреть{/i}":
                         $ spent_time += 10
             "{i}подойти ближе{/i}":
                 ### Ближний план, дрочка в полотенце
+                jump .closer1
+            "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0:
+                $ _alt = True
                 jump .closer1
             "{i}тихо уйти{/i}":
                 jump .end
@@ -278,14 +291,22 @@ label eric_ann_tv:
             Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!"
             "{i}подойти ближе{/i}":
                 jump .closer1
+            "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+                $ _alt = True
+                jump .closer1
             "{i}тихо уйти{/i}":
                 jump .end
 
     label .closer1:
         ### ближний план отрисовываем согласно установленным переменным bj/hj + поза в полотенце/без полотенца
         $ spent_time += 10
-        scene BG lounge-tv-00
-        $ renpy.show('Eric tv '+tv_scene+pose2_3+eric.dress)
+        if _alt:
+            scene BG char Alice tv-mass-05
+            $ renpy.show('Max tv 02'+mgg.dress)
+            $ renpy.show('Eric tv '+tv_scene+pose2_3+eric.dress+'-alt')
+        else:
+            scene BG lounge-tv-00
+            $ renpy.show('Eric tv '+tv_scene+pose2_3+eric.dress)
 
         if flags['ae.tv.hj'] == 0:
             if pose2_3 == '01':
