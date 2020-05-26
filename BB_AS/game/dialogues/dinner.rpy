@@ -543,7 +543,15 @@ label dinner_11:
     Ann_19 "Макс! Что за тон? Уважительно разговаривай с Эриком! А не то накажу. В общем, мы сейчас поехали, а вы приберитесь тут. Завтра я вернусь. Всем спасибо за ужин!"
     Max_00 "Да, спасибо..."
     ## теперь Алиса посещает ночной клуб по пятницам
+    $ alice.add_schedule(
+            Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', enabletalk=False, glow=110),
+            Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе'),
+            Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе'),
+            Schedule((5,), '20:0', '20:59', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
+        )
+
     ## после ужина должен состоятся разговор Макса с Эриком на счет решения Макса
+    $ EventsByTime['Eric_afterdinner'].variable = "talk_var['dinner']==11"
     $ talk_var['dinner'] = 11
     jump after_dinner
 

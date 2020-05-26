@@ -1039,6 +1039,7 @@ label Lisa_HomeWork:
     $ flags['lisa_hw'] = True
     $ punlisa.insert(0, [0, 0, 0, 0, 0])
     $ del punlisa[10:]
+    $ _ch2 = GetChance(mgg.social, 4, 900)
     menu:
         Lisa_00 "Ну, если ты не занят и правда знаешь что-то по этой теме..."
         "Ну, давай посмотрим...":
@@ -1079,13 +1080,28 @@ label Lisa_HomeWork:
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].stn > 2:
             $ talk_var['help.hw'] += 1
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if poss['sg'].stn > 2  and lisa.dress > 'a' and talk_var['lisa.pun'] > 1: # допилить условие на полотенце
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].stn > 2, lisa.dress > 'a', talk_var['lisa.pun'] > 1, talk_var['lisa.footmass']<5]):
             $ talk_var['help.hw'] += 1
             $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
-                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['lisa.footmass']<5:
                     jump .show_breast
+        "А ножки тебе помассировать?":
+            $ talk_var['help.hw'] += 1
+            Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
+            Max_02 "А я что-нибудь интересное перед этим увижу?"
+            Lisa_01 "А что ты хочешь?"
+            Max_01 "Чтобы ты показала свою грудь!"
+            if lisa.GetMood()[0] < 3:
+                $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
+            else:
+                $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
+            Lisa_05 "Ладно, вот, любуйся... И моим ножкам после этого, должно быть так же хорошо, как тебе сейчас!"
+            Max_05 "Будет. Обещаю!"
+            $ add_lim('lisa.free', 0.1, 10)
+            $ punlisa[0][0] = 5
+            jump .next_foot_mass
         "Ой, тут много... Давай в другой раз.":
             $ AddRelMood('lisa', -5, -50)
             $ spent_time += 10
@@ -1102,13 +1118,20 @@ label Lisa_HomeWork:
                     pass
                 "Как хочешь. Но мама тебя накажет!":
                     pass
+            $ talk_var['lisa.sh_br'] += 1
             if lisa.GetMood()[0] < 3:
                 $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
                 Lisa_09 "[succes!t]Ладно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
+                if talk_var['lisa.footmass']>0:
+                    jump .next_foot_mass
                 Lisa_00 "Ну всё, а теперь сделай работу на отлично!"
             else:
                 $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
                 Lisa_05 "[succes!t]Ладно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
+                if all([talk_var['lisa.sh_br']>2, talk_var['al.tvgood']>=2, talk_var['lisa.footmass']<0]):
+                    jump .first_foot_mass
+                if talk_var['lisa.footmass']>0:
+                    jump .next_foot_mass
                 Lisa_01 "Ну все, полюбовался и хватит, а теперь сделай работу на отлично!"
             Max_05 "Вот теперь убедила!"
             $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
@@ -1173,6 +1196,232 @@ label Lisa_HomeWork:
             Lisa_02 "О, супер! Я сама ещё всё проверю потом, чтобы ошибок не было, но тебе огромнейшее спасибо! Ты меня выручил."
         $ spent_time += max((60 - int(tm[-2:])), 40)
         jump Waiting
+
+    label .first_foot_mass:
+        Lisa_01 "Вот, ты увидел, что хотел, теперь делай мои уроки! И смотри, чтобы всё было сделано на пятёрку... Хотя, нет. Давай, я лучше сама, а ты в это время сделаешь мне массаж ног?"
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
+        Max_09 "А с чего ты взяла, что я умею?"
+        Lisa_02 "Да так, слухи ходят..."
+        Max_08 "Вот Алиса болтунья!"
+        Lisa_03 "Ага, она хвасталась, что ты классно массируешь ей ноги, когда вы смотрите ТВ... Она правда почти этого не помнит, настолько это классно, видимо."
+        Max_03 "Ладно - виновен... Уговорила!"
+        menu:
+            Lisa_01 "Тогда делай то, от чего у Алисы был такой блаженный вид! А я пока уроками займусь..."
+            "{i}начать массаж{/i}":
+                pass
+        $ __foot = renpy.random.choice(['03', '04'])
+        scene BG char Lisa lessons-mass-03
+        $ renpy.show("FG lessons-mass-03-"+pose3_1)
+        $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        menu:
+            Max_04 "{i}Какие у Лизы красивые ножки. А как классно к ним прикасаться...{/i}"   #спрайт где не видно трусиков (или левая, или правая нога)
+            "{i}продолжить{/i}":
+                pass
+        menu:
+            Lisa_02 "У тебя хорошо получается. Мне приятно..."
+            "{i}продолжить{/i}":
+                pass
+        $ __foot = {'03':'01', '04':'02'}[__foot]
+        scene BG char Lisa lessons-mass-01
+        $ renpy.show("FG lessons-mass-01-"+pose3_1)
+        $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        Lisa_01 "Макс, тебе же ничего не видно?"   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
+        Max_01 "Ты про уроки?"
+        Lisa_02 "Нет, я про себя..."
+        menu:
+            Max_02 "А, ты про свои трусики! Нет, совсем ничего не видно."
+            "{i}закончить массаж{/i}":
+                pass
+        Lisa_01 "А хорошо было... Как Алиса, я в поднебесье не улетела, но ножкам стало очень легко. Спасибо, Макс!"   #Обычные спрайты с посиделками за уроками
+        scene BG char Lisa lessons-help-00
+        $ renpy.show("FG lessons-help-"+pose3_1)
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
+        Max_05 "Рад, что тебе понравилось. Могу делать тебе массаж всякий раз, когда занимаемся уроками? Мне не сложно."
+        Lisa_02 "Можно. И проверь, пожалуйста, всё ли я сделала правильно..."
+        Max_04 "Сейчас посмотрю... Да, всё сделано правильно. Ты хорошо справилась, Лиза!"
+        Lisa_03 "Классно! Спасибо, что помогаешь."
+        Max_01 "Да не за что."
+        $ mgg.massage += 0.05
+        $ talk_var['lisa.footmass'] = 1
+        $ spent_time = max((60 - int(tm[-2:])), 30)
+        jump Waiting
+
+    label .next_foot_mass:
+        Lisa_01 "Вот, ты увидел, что хотел, теперь я попробую сама сделать уроки, а ты поможешь мне расслабиться..."
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
+        Max_01 "Хочешь массаж?"
+        menu:
+            Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
+            "{i}начать массаж{/i}":
+                pass
+        $ __foot = renpy.random.choice(['03', '04'])
+        scene BG char Lisa lessons-mass-03
+        $ renpy.show("FG lessons-mass-03-"+pose3_1)
+        $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        menu:
+            Max_04 "{i}А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки...{/i}"   #спрайт где не видно трусиков (или левая, или правая нога)
+            "{i}продолжить{/i}":
+                pass
+        menu:
+            Lisa_05 "Твой массаж так хорошо расслабляет, даже уроки нескучно делать. Очень приятно..."
+            "{i}продолжить{/i}":
+                pass
+        $ __foot = {'03':'01', '04':'02'}[__foot]
+        scene BG char Lisa lessons-mass-01
+        $ renpy.show("FG lessons-mass-01-"+pose3_1)
+        $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        Lisa_01 "Только не заглядывайся туда так сильно..."   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
+        Max_01 "Как же мне не заглядываться в учебник, мне же надо контролировать процесс."
+        Lisa_02 "Да не в учебник ты смотришь... Я же вижу краем глаза, куда ты залипаешь."
+        menu:
+            Max_02 "Так я же многозадачный!"
+            "{i}закончить массаж{/i}":
+                pass
+            "Я и плечи помассировать могу, если хочешь? {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}" if talk_var['lisa.handmass']>1:
+                jump .shoulders
+        scene BG char Lisa lessons-help-00
+        $ renpy.show("FG lessons-help-"+pose3_1)
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
+        Lisa_01 "Давай, многозадачный, проверяй мои уроки... А массаж классный! Мне понравилось. Спасибо, Макс!"
+        jump .random_answer
+
+    label .shoulders:
+        $ _ch10 = GetChance(mgg.massage, 10)
+        $ _ch7 = GetChance(mgg.massage, 7)
+        if not RandomChance(_ch2.ch):
+            # убеждение не удалось
+            Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну..."
+            Max_04 "Тогда давай доделывай уроки. Тебе ещё много?"
+            jump .end_shoulders1
+        # убеждение удалось
+        menu:
+            Lisa_02 "[succes!t]Ну, можно. Мне бы это тоже не помешало."
+            "{i}начать массаж \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}{/i}":
+                pass
+        #спрайт с массажем шеи и плеч
+        scene BG char Lisa lessons-mass-05
+        $ renpy.show("FG lessons-mass-05-"+pose3_1)
+        $ renpy.show("Lisa lessons-mass 05"+mgg.dress+lisa.dress)
+        if not RandomChance(_ch10.ch):
+            # Лизе не понравился массаж!
+            $ mgg.massage += 0.05
+            Lisa_09 "[lisa_bad_mass!t]Нет, Макс... Это больно. Давай не будем продолжать!"
+            Max_08 "Извини. Видимо устал уже."
+            jump .end_shoulders2
+        # Лизе понравился массаж!
+        $ mgg.massage += 0.1
+        Lisa_05 "[lisa_good_mass!t]Да... То, что мне и нужно! Как хорошо..."
+        Max_03 "Сейчас я помассирую тебе шею... Теперь плечи... Чувствую, они уже так не напряжены."
+        menu:
+            Lisa_06 "Ага... У меня даже глаза начинают закрываться от удовольствия."
+            "{i}закончить массаж{/i}":
+                Max_04 "Ну вот и всё. А то ты ещё заснёшь и уроки придётся мне доделывать."
+                Lisa_03 "Это было так приятно... Спасибо, Макс! И проверь, пожалуйста, всё ли я сделала правильно."
+                jump .random_answer
+            "{i}продолжить ниже \n{color=[_ch7.col]}(Массаж. Шанс: [_ch7.vis]){/color}{/i}":
+                pass
+        $ renpy.show("Lisa lessons-mass 06"+mgg.dress+lisa.dress)
+        if not RandomChance(_ch7.ch):
+            # Лизе не понравился массаж!
+            $ mgg.massage += 0.05
+            Lisa_10 "[lisa_bad_mass!t]Ой, Макс! Это уже как-то... грубовато. Ты, видимо, уже устал. Давай на этом закончим."   #всё ещё спрайт с массажем шеи и плеч
+            Max_10 "Хорошо. Пожалуй, ты права."
+            jump .end_shoulders2
+        # Лизе понравился массаж!
+        $ mgg.massage += 0.1
+        Lisa_04 "[lisa_good_mass!t]Ммм... Макс... Не очень хочется это говорить, но по-моему это уже не плечи..."   #спрайт с массажем ниже
+        Max_02 "Уверена?"
+        Lisa_06 "Да-а-а... От этого массажа мне становится слишком горячо... А здесь и так жарко!"
+        $ add_lim('lisa.ri', 0.1, 5)
+        jump .end_shoulders2
+
+    label .end_shoulders2:
+        Max_04 "Тогда заканчиваем. И доделываем уроки. Тебе ещё много?"
+    label .end_shoulders1:
+        Lisa_02 "Нет, осталось совсем немного... Вот и всё! Можешь проверять..."
+        jump .random_answer
+
+    label .random_answer:
+        ###3 рандомных ответа###
+        $ _r1 = renpy.random.randint(0, 3)
+        if _r1 == 1:
+            Max_05 "Всё правильно, Лиза. Сегодня ошибок нет. Ты умница!"
+        elif _r1 == 2:
+            Max_04 "Всё лучше и лучше, никаких ошибок. Молодец, Лиза!"
+        else:
+            Max_03 "Всё сделано отлично, только вот тут есть небольшая ошибка. Вот так будет правильней."
+        Lisa_03 "Классно! Спасибо, что помогаешь."
+        Max_01 "Да не за что."
+        $ talk_var['lisa.footmass'] += 1
+        $ mgg.massage += 0.05
+        if talk_var['lisa.footmass'] == 3:
+            Lisa_09 "Макс, а массаж рук ты сможешь сделать?"
+            Max_04 "Да, смогу. Устала писать?"
+            Lisa_01 "Немного. Во втрник и пятницу мне приходится много писать, а твой массаж бы это смог облегчить."
+            Max_03 "Тогда давай попробуем перед уроками, когда ты сидишь в телефоне?"
+            Lisa_02 "Давай."
+            Max_01 "Хорошо. Договорились."
+            $ talk_var['lisa.handmass'] = 0
+        $ spent_time = max((60 - int(tm[-2:])), 30)
+        jump Waiting
+
+label liza_hand_mass:
+    $ talk_var['lisa.handmass'] = 1
+    $ spent_time += 10
+    $ _ch10 = GetChance(mgg.massage, 10)
+    Lisa_01 "Да. Спасибо, что не забыл..."
+    menu:
+        Max_01 "Тогда давай устраиваемся поудобнее и начинаем."
+        "{i}начать массаж \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}":
+            pass
+    #спрайт с правой рукой
+    scene BG char Lisa phone-mass-01
+    $ renpy.show("Lisa phone-mass 01"+mgg.dress+lisa.dress)
+    if RandomChance(_ch10.ch):
+        # Лизе понравился массаж!
+        $ mgg.massage += 0.1
+        Lisa_02 "[lisa_good_mass!t]Ммм, хорошо... Это мне нравится. Ты классный массажист."
+    else:
+        # Лизе не понравился массаж!
+        $ mgg.massage += 0.05
+        Lisa_09 "[lisa_bad_mass!t]Ой, Макс, нет! Как-то это неприятно... Давай лучше не будем. Может быть в другой раз?"
+        Max_08 "Ладно, извини..."
+        jump Waiting
+
+    $ spent_time += 10
+    menu:
+        Max_04 "Сейчас разомнём все пальчики и тебе будет легче писать."
+        "{i}продолжить \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}":
+            pass
+    scene BG char Lisa phone-mass-01
+    $ renpy.show("Lisa phone-mass 01"+mgg.dress+lisa.dress)
+    #спрайт с левой рукой
+    if RandomChance(_ch10.ch):
+        # Лизе понравился массаж!
+        $ mgg.massage += 0.1
+        Lisa_05 "[lisa_good_mass!t]Макс, ты так здорово это делаешь. Даже не хочется, чтобы это закончилось..."
+    else:
+        # Лизе не понравился массаж!
+        $ mgg.massage += 0.05
+        Lisa_10 "[lisa_bad_mass!t]Ой, а вот это уже не очень. Ты так хорошо начал, но дальше лучше не продолжать. Как-то больновато."
+        Max_10 "Извини. В следующий раз я сделаю лучше."
+        jump Waiting
+
+    $ spent_time += 10
+    menu:
+        Max_03 "Хорошего понемногу, Лиза. Вот почти и всё."
+        "{i}закончить массаж{/i}":
+            pass
+    scene BG char Lisa bed-evening
+    $ renpy.show('Lisa phone-closer 01'+lisa.dress)
+    $ talk_var['lisa.handmass'] = 2
+    Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал пои ручки. Я довольна!"
+    Max_01 "Мне только в радость, сестрёнка. Обращайся."
+    jump Waiting
 
 
 label Lisa_sorry:

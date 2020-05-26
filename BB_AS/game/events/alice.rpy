@@ -573,7 +573,6 @@ label alice_read_closer:
     return
 
 
-
 label alice_dressed_friend:
     scene location house aliceroom door-evening
     if peeping['alice_dressed'] == 0:
@@ -600,9 +599,14 @@ label alice_dressed_friend:
                 if flags['smoke'] == 'not_nopants':
                     $ flags['noted'] = True
 
-                scene BG char Alice voyeur-00
-                $ renpy.show('Alice voyeur '+__ran1+__suf)
-                $ renpy.show('FG voyeur-morning-00'+mgg.dress)
+                if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+                    scene BG char Alice voyeur-01
+                    $ renpy.show('Alice voyeur alt-'+__ran1+__suf)
+                    $ renpy.show('FG voyeur-morning-01'+mgg.dress)
+                else:
+                    scene BG char Alice voyeur-00
+                    $ renpy.show('Alice voyeur '+__ran1+__suf)
+                    $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
                 if __ran1 == '01':
                     $ alice.dress_inf = '02b'
@@ -638,6 +642,57 @@ label alice_dressed_friend:
         $ spent_time = 10
         jump Waiting
     return
+
+
+label alice_dressed_club:
+    scene location house aliceroom door-evening
+    if peeping['alice_dressed'] != 0:
+        return
+
+    $ peeping['alice_dressed'] = 1
+    menu:
+        Max_00 "{i}Кажется, Алиса собирается в ночной клуб...{/i}"
+        "{i}постучаться{/i}":
+            jump .knock
+        "{i}заглянуть в окно{/i}":
+            ## показываем фон и спрайт в зависимости от ношения трусиков
+            Max_00 "Вау! Интересно, она трусики надевает под это платье или нет? Как бы я хотел это узнать..."  ## Оригинальная фраза, нам не подходит
+            ## у нас 3 варианта:
+            ## Алиса в трусиках, как и должна
+            ## Алиса без трусиков, как и должна
+            ## Алиса в трусиках, но их быть не должно
+            $ spent_time += 10
+            jump Waiting
+        "{i}уйти{/i}":
+            jump Waiting
+
+    label .knock:
+        Alice "{b}Алиса:{/b} Кто там? Я собираюсь, подождите..."
+        Max_00 "Это я, Макс. У меня к тебе дело..."
+        scene BG char Alice newdress
+        show Alice newdress 02a
+        menu:
+            Alice_13 "Ну, Макс, чего хотел? Что за дело такое срочное?"
+            "Выглядишь... шикарно!":
+                $ AddRelMood('alice', 0, 50)
+                show Alice newdress 04a
+                Alice_04 "Спасибо... Так чего хотел, рассказывай!"
+                Max_00 "Ты знаешь, я забыл..."
+                Alice_02 "Эх, Макс. Память у тебя дырявая. Тебе бы рыбки поесть. Там, говорят, фосфор. Помогает для мозгов... Ладно, вали отсюда, я ещё не закончила..."
+            "У меня для тебя презент..." if kol_choco > 5:   ## нужно решить, сколько дарим алкоконфет
+                Alice_02 "Макс, ты меня удивляешь всё больше. Какой? Дай угадаю... книжка!"
+                Max_00 "Не угадала. Ты же любишь шоколад?"
+                $ flags['alice.drink'] = 1
+                menu:
+                    Alice_05 "Люблю... И что, никакого подвоха? Просто взял и подарил коробку конфет?"  ## коробку???
+                    "Ну, можешь трусы показать...":
+                        Alice_02 "Может быть, мне их ещё и снять для тебя? Давай, вали уже, извращенец. А за конфеты спасибо..."
+                    "Да, никакого подвоха!":
+                        Alice_07 "Вот это да! Ну, спасибо тогда... А теперь вали. Я ещё не закончила..."
+        Max_00 "Ага..."
+        $ spent_time += 10
+        jump Waiting
+
 
 
 label alice_sun:

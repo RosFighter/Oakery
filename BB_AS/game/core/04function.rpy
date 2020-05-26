@@ -509,6 +509,9 @@ init python:
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
         mgg.dress = clothes[mgg].casual.GetCur().suf
 
+        if all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]):
+            clothes[ann].casual.GetCur().suf = 'a'
+
         for char in chars:
             prev_shed = chars[char].get_plan(prevday, prevtime)
             cur_shed  = chars[char].get_plan()
@@ -711,28 +714,28 @@ init python:
         mn = 1 if level > 0 else -1
         while lvl > 1:
             rel = {
-                -3 : 200*mn,
-                -2 : 150*mn,
+                -3 : 300*mn,
+                -2 : 200*mn,
                 -1 : 100*mn,
                  0 : 100*mn,
-                 1 : 150*mn,
-                 2 : 200*mn,
-                 3 : 250*mn,
-                 4 : 300*mn,
-                 5 : 400*mn}[GetRelMax(char)[0]]
+                 1 : 200*mn,
+                 2 : 300*mn,
+                 3 : 400*mn,
+                 4 : 500*mn,
+                 5 : 600*mn}[GetRelMax(char)[0]]
             chars[char].relmax = clip(chars[char].relmax + rel , -450, 2000)
             lvl -= 1
         if lvl > 0:
             rel = {
-                -3 : 200*mn*lvl,
-                -2 : 150*mn*lvl,
+                -3 : 300*mn*lvl,
+                -2 : 200*mn*lvl,
                 -1 : 100*mn*lvl,
                  0 : 100*mn*lvl,
-                 1 : 150*mn*lvl,
-                 2 : 200*mn*lvl,
-                 3 : 250*mn*lvl,
-                 4 : 300*mn*lvl,
-                 5 : 400*mn*lvl}[GetRelMax(char)[0]]
+                 1 : 200*mn*lvl,
+                 2 : 300*mn*lvl,
+                 3 : 400*mn*lvl,
+                 4 : 500*mn*lvl,
+                 5 : 600*mn*lvl}[GetRelMax(char)[0]]
             chars[char].relmax = clip(chars[char].relmax + rel, -450, 2000)
 
 
@@ -972,3 +975,17 @@ init python:
                 rez = False
                 break
         return rez
+
+
+    def add_lim(var, a, limit):
+        if var.find('.')>0:
+            v1, arg = var.split('.')
+            if eval(var) < limit:
+                setattr(eval(v1), arg, a)
+                if eval(var) > limit:
+                    setattr(eval(v1), arg, limit)
+        else:
+            if eval(var) < limit:
+                globals()[var] += a
+                if eval(var) > limit:
+                    globals()[var] = limit

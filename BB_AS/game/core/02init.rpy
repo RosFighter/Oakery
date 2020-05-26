@@ -17,6 +17,9 @@ define spotted  = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
 define alice_good_mass = _("{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n")
 define alice_bad_mass  = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
 
+define lisa_good_mass = _("{color=#E59400}{i}Лизе понравился массаж!{/i}{/color}\n")
+define lisa_bad_mass  = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
+
 define config.has_autosave = False
 define config.has_quicksave = False
 
@@ -82,6 +85,7 @@ define talks = {
     'alice_gift' : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_sorry_gifts', "sorry_gifts['alice'].owe and there_in_stock('alice') and alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
     'l.ab.sec1'  : TalkTheme('lisa', _("У тебя странный вид..."), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, dcv['alice.secret'].stage<1, dcv['alice.secret'].done])"),
     'l.ab.sec2'  : TalkTheme('lisa', _("Может всё-таки поделишься своими переживаниями по поводу Алисы?"), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, dcv['alice.secret'].stage>0, dcv['alice.secret'].done])"),
+    'lisa.hand'  : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "all([talk_var['lisa.handmass']==0, lisa.plan_name == 'phone', GetWeekday(day) in [2, 5]])"),
     }
 
 

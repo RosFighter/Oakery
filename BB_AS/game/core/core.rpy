@@ -31,7 +31,10 @@ label Waiting:
 
     if day != prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
-        call NewDay from _call_NewDay
+        call Midnight
+
+    if prevtime < "4:00" < tm:
+        call NewDay
 
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
@@ -98,34 +101,7 @@ label Waiting:
     jump AfterWaiting
 
 
-label NewDay:
-    $ talk_var['ask_money'] = 0 # просили денег у Анны
-    $ talk_var['lisa_dw']   = 0 # разговор о помывке посуды
-    $ talk_var['alice_dw']  = 0 # разговор о помывке посуды
-    $ talk_var['ann_tv']    = 0 # смотрели тв с Анной
-    $ talk_var['alice_tv']  = 0 # смотрели тв с Алисой
-    $ talk_var['al.tv.mas'] = 0 # предлагали Алисе массаж у тв
-    if 'smoke' in talk_var:
-        $ talk_var['smoke'] = 0
-        if flags['smoke.request'] == 'money':
-            $ flags['smoke'] = None
-            $ flags['smoke.request'] = None
-        elif flags['smoke.request'] is not None and (flags['smoke'] is None or flags['smoke'][:3] != 'not'):
-            # Если требование Макса было и это не деньги
-            $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
-            if RandomChance(__chance):
-                $ flags['smoke'] = 'not_' + flags['smoke']
-                $ flags['noted'] = False  # нарушение еще не замечено Максом
-                if flags['smoke.request'] == 'nopants':
-                    $ alice.nopants = False
-                elif flags['smoke.request'] == 'sleep':
-                    $ alice.sleeptoples = False
-            else:
-                $ flags['smoke'] = flags['smoke.request']
-                if flags['smoke.request'] == 'nopants':
-                    $ alice.nopants = True
-                elif flags['smoke.request'] == 'sleep':
-                    $ alice.sleeptoples = True
+label Midnight:
 
     $ random_loc_ab = renpy.random.choice(['a', 'b'])
     $ random_sigloc = renpy.random.choice(['n', 't'])
@@ -135,7 +111,6 @@ label NewDay:
         if not ae_tv_order:
             $ ae_tv_order = ['01', '02', '03', '04', '05', '06']
             $ renpy.random.shuffle(ae_tv_order)  # перемешаем список случайным образом
-
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
         for i in dcv:  #
@@ -159,8 +134,39 @@ label NewDay:
             for cl_t in l:
                 if eval('clothes[char].'+cl_t+'.rand'):
                     eval('clothes[char].'+cl_t+'.SetRand()')
+    return
 
 
+label NewDay:
+    $ talk_var['ask_money'] = 0 # просили денег у Анны
+    $ talk_var['lisa_dw']   = 0 # разговор о помывке посуды
+    $ talk_var['alice_dw']  = 0 # разговор о помывке посуды
+    $ talk_var['ann_tv']    = 0 # смотрели тв с Анной
+    $ talk_var['alice_tv']  = 0 # смотрели тв с Алисой
+    $ talk_var['al.tv.mas'] = 0 # предлагали Алисе массаж у тв
+    if talk_var['lisa.handmass']>0:
+        $ talk_var['lisa.handmass']=0
+    if 'smoke' in talk_var:
+        $ talk_var['smoke'] = 0
+        if flags['smoke.request'] == 'money':
+            $ flags['smoke'] = None
+            $ flags['smoke.request'] = None
+        elif flags['smoke.request'] is not None and (flags['smoke'] is None or flags['smoke'][:3] != 'not'):
+            # Если требование Макса было и это не деньги
+            $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
+            if RandomChance(__chance):
+                $ flags['smoke'] = 'not_' + flags['smoke']
+                $ flags['noted'] = False  # нарушение еще не замечено Максом
+                if flags['smoke.request'] == 'nopants':
+                    $ alice.nopants = False
+                elif flags['smoke.request'] == 'sleep':
+                    $ alice.sleeptoples = False
+            else:
+                $ flags['smoke'] = flags['smoke.request']
+                if flags['smoke.request'] == 'nopants':
+                    $ alice.nopants = True
+                elif flags['smoke.request'] == 'sleep':
+                    $ alice.sleeptoples = True
     $ GetDeliveryList()
 
     if 0 < GetWeekday(prevday) < 6:
@@ -192,7 +198,7 @@ label NewDay:
             $ mgg.credit.charge()    # начислим штраф
 
     $ talk_var['sun_oiled'] = 0  # Алиce можно намазать кремом
-
+    $ flags['alice.drink'] = 0   # Алиса протрезвела
     return
 
 
@@ -496,7 +502,20 @@ label after_load:
                 $ talk_var['dinner'] = 4
 
             $ poss['alpha'].stages[0].ps = ""
-            $ poss['alpha'].stages[1].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
+            $ poss['alpha'].stages[2].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
+            $ poss['alpha'].stages[3].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
+
+            $ flags['alice.drink'] = 0
+            $ talk_var['lisa.sh_br'] = 0
+            $ talk_var['lisa.footmass'] = -1
+            $ talk_var['lisa.handmass'] = -1
+
+            $ lisa.add_schedule(
+                    Schedule((0, 1, 2, 3, 4, 5, 6), '21:0', '21:59', 'phone', _("лежит с телефоном в нашей комнате"), 'house', 0, 'lisa_phone', talklabel='lisa_phone_closer', glow=105),
+                    Schedule((0, 6), '23:0', '23:59', 'phone', _("лежит с телефоном в нашей комнате"), 'house', 0, 'lisa_phone', talklabel='lisa_phone_closer', glow=105),
+                    Schedule((6, ), '14:0', '14:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
+                    Schedule((0, 6), '17:0', '18:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
+                )
 
         if current_ver < config.version:
             $ current_ver = config.version
