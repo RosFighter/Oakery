@@ -2,6 +2,7 @@
 
 label Waiting:
     # обработчик ожидания, запускает события по времени
+    # "ждем [spent_time]"
     $ renpy.block_rollback()
 
     $ prevday = day
@@ -31,10 +32,10 @@ label Waiting:
 
     if day != prevday:
         # здесь будет блок обработки ежедневно обнуляемых значений
-        call Midnight
+        call Midnight from _call_Midnight
 
-    if prevtime < "4:00" < tm:
-        call NewDay
+    if prevtime < "05:00" < tm:
+        call NewDay from _call_NewDay
 
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
@@ -87,6 +88,7 @@ label Waiting:
     $ NewSaveName()
 
     if __name_label != '' and renpy.has_label(__name_label):
+        # "запуск [__name_label]"
         # если есть кат-событие - запускаем его
         $ spent_time = 0
         $ prevday = day
@@ -102,7 +104,7 @@ label Waiting:
 
 
 label Midnight:
-
+    # "Полночь"
     $ random_loc_ab = renpy.random.choice(['a', 'b'])
     $ random_sigloc = renpy.random.choice(['n', 't'])
 
@@ -138,6 +140,7 @@ label Midnight:
 
 
 label NewDay:
+    # "Новый день"
     $ talk_var['ask_money'] = 0 # просили денег у Анны
     $ talk_var['lisa_dw']   = 0 # разговор о помывке посуды
     $ talk_var['alice_dw']  = 0 # разговор о помывке посуды
@@ -155,7 +158,7 @@ label NewDay:
             # Если требование Макса было и это не деньги
             $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
             if RandomChance(__chance):
-                $ flags['smoke'] = 'not_' + flags['smoke']
+                $ flags['smoke'] = 'not_' + flags['smoke.request']
                 $ flags['noted'] = False  # нарушение еще не замечено Максом
                 if flags['smoke.request'] == 'nopants':
                     $ alice.nopants = False

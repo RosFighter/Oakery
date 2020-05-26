@@ -1053,7 +1053,7 @@ translate english dinner_5_a372e80e:
 translate english dinner_5_e8efdc4f:
 
     # Ann_14 "Макс, ну что за вопросы. Ты же не маленький, вроде бы. Должен всё понимать..."
-    Ann_14 ""What kind of question is that, Max? Besides, you should understand yourself...
+    Ann_14 "What kind of question is that, Max? Besides, you should understand yourself..."
 
 # game/dialogues/dinner.rpy:419
 translate english dinner_5_204cb890:
@@ -1197,7 +1197,7 @@ translate english dinner_6_80f63239:
 translate english dinner_6_99a07aeb:
 
     # Eric_02 "Макс, мне показалось, или я тебе не очень нравлюсь?" nointeract
-    Eric_02 ""Max, it seems like you don't like me much? nointeract
+    Eric_02 "Max, it seems like you don't like me much?" nointeract
 
 # game/dialogues/dinner.rpy:469
 translate english dinner_6_aa905118:

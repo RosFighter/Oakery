@@ -890,8 +890,8 @@ init python:
             if punalice[d][0] in [4,5,6]:
                 break # посчет идет только до ближайшего требования Макса
             else:
-                chance += grow
-                grow *= 1.1
+                chance += rise
+                rise *= 1.1
         return clip(chance, 0, 1000)
 
 

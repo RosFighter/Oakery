@@ -1080,14 +1080,14 @@ label Lisa_HomeWork:
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].stn > 2:
             $ talk_var['help.hw'] += 1
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].stn > 2, lisa.dress > 'a', talk_var['lisa.pun'] > 1, talk_var['lisa.footmass']<5]):
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].stn > 2, lisa.dress > 'a', talk_var['lisa.pun'] > 1, talk_var['lisa.footmass']<3]):
             $ talk_var['help.hw'] += 1
             $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
-                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['lisa.footmass']<5:
+                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['lisa.footmass']<3:
                     jump .show_breast
-        "А ножки тебе помассировать?":
+        "А ножки тебе помассировать?" if talk_var['lisa.footmass']>=3 and talk_var['lisa.sh_br']>5:
             $ talk_var['help.hw'] += 1
             Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
             Max_02 "А я что-нибудь интересное перед этим увижу?"

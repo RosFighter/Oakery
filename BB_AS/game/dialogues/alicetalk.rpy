@@ -552,7 +552,7 @@ label alice_talk_tv:
                     jump .massage_next
 
     label .massage_next:
-        if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==1): ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
+        if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==2): ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
             $ mgg.massage += 0.1
             $ _pose = {'03':'05', '04':'06'}[_pose]
             scene BG char Alice tv-mass-05
@@ -1698,6 +1698,11 @@ label Alice_solar:
             jump massage_sunscreen
         "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}" if kol_cream < 7:
             jump .type_choice
+        "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}" if kol_cream < 7:
+            Alice_00 "Ну что же ты, Макс... Эх, только настроилась..."
+            $ talk_var['sun_oiled'] = 4
+            jump AfterWaiting
+            
     jump Waiting
 
 
