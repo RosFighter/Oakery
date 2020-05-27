@@ -982,3 +982,353 @@ translate english strings:
     old "{i}взглянуть со стороны{/i}"
     new "{i}look from the side{/i}"
 
+# TODO: Translation updated at 2020-05-28 00:22
+
+# game/events/eric.rpy:151
+translate english Eric_talk_afterdinner_second_talk_913ec3c6:
+
+    # Eric_00 "Ну что, Макс, готов пообщаться снова, пока твоя мама собирается?"
+    Eric_00 ""
+
+# game/events/eric.rpy:153
+translate english Eric_talk_afterdinner_second_talk_25aa812b:
+
+    # Max_01 "Конечно!"
+    Max_01 ""
+
+# game/events/eric.rpy:154
+translate english Eric_talk_afterdinner_second_talk_5a895ebf:
+
+    # Eric_05 "Отлично! Ну что, вроде бы ты и правда настроен на дружбу. Я прав?" nointeract
+    Eric_05 "" nointeract
+
+# game/events/eric.rpy:161
+translate english Eric_talk_afterdinner_second_talk_6f10b98c:
+
+    # Max_00 "Ну, можно..."
+    Max_00 ""
+
+# game/events/eric.rpy:162
+translate english Eric_talk_afterdinner_second_talk_7a3e3f7a:
+
+    # Eric_01 "Правда, я не до конца понял твою позицию. Ты настроен на дружбу или хочешь попытаться повоевать?" nointeract
+    Eric_01 "" nointeract
+
+# game/events/eric.rpy:169
+translate english Eric_talk_afterdinner_second_talk_becdd118:
+
+    # Max_09 "Ты ещё здесь?"
+    Max_09 ""
+
+# game/events/eric.rpy:170
+translate english Eric_talk_afterdinner_second_talk_9f170499:
+
+    # Eric_09 "Значит, дружить ты не намерен. Я правильно понимаю?" nointeract
+    Eric_09 "" nointeract
+
+# game/events/eric.rpy:180
+translate english Eric_talk_afterdinner_badbad_ee988680:
+
+    # Eric_02 "Всё ясно с тобой. Ну, это твой выбор. У тебя была неделя, чтобы всё обдумать. Ты решил начать войну, ну что же, не вини меня за то, как я её закончу..."
+    Eric_02 ""
+
+# game/events/eric.rpy:189
+translate english Eric_talk_afterdinner_goodgood_2ba39b19:
+
+    # Eric_01 "Очень хорошо. Я рад. Ну, ты не пожалеешь, это правильный выбор..."
+    Eric_01 ""
+
+# game/events/eric.rpy:190
+translate english Eric_talk_afterdinner_goodgood_910ad55d:
+
+    # Max_09 "Но ты так и не сказал, почему не пожалею..."
+    Max_09 ""
+
+# game/events/eric.rpy:191
+translate english Eric_talk_afterdinner_goodgood_d956ee71:
+
+    # Eric_03 "Ну давай начнём с самого простого. Чего ты хочешь?"
+    Eric_03 ""
+
+# game/events/eric.rpy:192
+translate english Eric_talk_afterdinner_goodgood_a3b08112:
+
+    # Max_07 "В каком смысле?"
+    Max_07 ""
+
+# game/events/eric.rpy:193
+translate english Eric_talk_afterdinner_goodgood_6b61a60f:
+
+    # Eric_05 "Я не слепой и вижу как ты смотришь на своих сестёр и даже маму. Не отрицай, иногда даже твои штаны тебя выдают. Но я тебя не виню, ещё бы, такие цыпочки кругом!" nointeract
+    Eric_05 "" nointeract
+
+# game/events/eric.rpy:201
+translate english Eric_talk_afterdinner_goodgood_3e31f80b:
+
+    # Eric_01 "Да ладно, здесь все свои! Любой мужик бы думал только о том, как поиметь их всех по очереди или даже разом. Это нормально! Я тебя понимаю!" nointeract
+    Eric_01 "" nointeract
+
+# game/events/eric.rpy:204
+translate english Eric_talk_afterdinner_goodgood_25bd7ebc:
+
+    # Eric_05 "Уверен в этом. И если честно, надеюсь, у меня всё получится. А ты мне в этом поможешь!" nointeract
+    Eric_05 "" nointeract
+
+# game/events/eric.rpy:213
+translate english Eric_talk_afterdinner_goodgood_6f764d15:
+
+    # Eric_05 "Конечно! Я же нормальный мужик... Кстати, ты же никому не расскажешь, верно? Мы же типа друзья?" nointeract
+    Eric_05 "" nointeract
+
+# game/events/eric.rpy:221
+translate english Eric_talk_afterdinner_tell_539dcb1f:
+
+    # Eric_03 "Всем? Это кому же? Сёстрам? Ну да, поверят они тебе... Расскажешь матери? Попытайся. Заодно, узнаешь на что способны мои, так сказать, \"чары\"..." nointeract
+    Eric_03 "" nointeract
+
+# game/events/eric.rpy:226
+translate english Eric_talk_afterdinner_tell_e73b4f64:
+
+    # Eric_09 "Не ожидал я от тебя такого... Ну ладно, дело твоё... Но учти, на этой войне у тебя нет ни единого шанса!" nointeract
+    Eric_09 "" nointeract
+
+# game/events/eric.rpy:234
+translate english Eric_talk_afterdinner_tell_6653b55b:
+
+    # Eric_01 "Так ты меня разводишь? А я тебе почти поверил! Молодец..."
+    Eric_01 ""
+
+# game/events/eric.rpy:235
+translate english Eric_talk_afterdinner_tell_b000e44b:
+
+    # Max_09 "Ладно, а что я с этого получу?"
+    Max_09 ""
+
+# game/events/eric.rpy:238
+translate english Eric_talk_afterdinner_get_a5be5209:
+
+    # Eric_03 "Отличный вопрос, Макс! Пришло время выяснить, чего же именно ты хочешь?"
+    Eric_03 ""
+
+# game/events/eric.rpy:239
+translate english Eric_talk_afterdinner_get_cbb3238c:
+
+    # Max_07 "Я хочу деньги, подглядывать и кое-что ещё..."
+    Max_07 ""
+
+# game/events/eric.rpy:240
+translate english Eric_talk_afterdinner_get_8cc4ced7:
+
+    # Eric_05 "Ого. Вот это запросы! Ну, мы договоримся, Макс. Деньги для меня не проблема, но в разумных пределах, конечно..."
+    Eric_05 ""
+
+# game/events/eric.rpy:241
+translate english Eric_talk_afterdinner_get_a7de4879:
+
+    # Max_01 "Сколько?"
+    Max_01 ""
+
+# game/events/eric.rpy:242
+translate english Eric_talk_afterdinner_get_159a1b33:
+
+    # Eric_04 "Посмотрим на твоё поведение. Ещё рано торговаться. Если будешь в своё время закрывать глаза, то денег будет больше. Ну а если будешь мешать, то..."
+    Eric_04 ""
+
+# game/events/eric.rpy:243
+translate english Eric_talk_afterdinner_get_872bbc39:
+
+    # Max_07 "Ладно. А что насчёт подглядывать? Это можно?"
+    Max_07 ""
+
+# game/events/eric.rpy:244
+translate english Eric_talk_afterdinner_get_eec94b44:
+
+    # Eric_01 "Ну лично я не возражаю. Думаю, даже твою маму подготовлю, чтобы если заметила, то не наказывала. Если ты помнишь, со следующей недели шлёпать вас будут голыми, а это очень унизительно... Что ещё ты там просил?"
+    Eric_01 ""
+
+# game/events/eric.rpy:245
+translate english Eric_talk_afterdinner_get_d2c545b7:
+
+    # Max_08 "Я бы тоже хотел кое-кого..."
+    Max_08 ""
+
+# game/events/eric.rpy:246
+translate english Eric_talk_afterdinner_get_9720f70e:
+
+    # Eric_02 "Если ты про свою семью, то хотя я тебя и понимаю, но торговаться на этот счёт не намерен. Я тебе буду платить за твоё невмешательство. Более того, даже разрешу подглядывать без последствий, а вот все женщины в семье - мои." nointeract
+    Eric_02 "" nointeract
+
+# game/events/eric.rpy:251
+translate english Eric_talk_afterdinner_get_9af01c97:
+
+    # Eric_09 "Ну, тогда мы с тобой перед диллемой. Ты знаешь слишком много о моих планах, я знаю, что ты тот ещё извращенец... Как быть?" nointeract
+    Eric_09 "" nointeract
+
+# game/events/eric.rpy:254
+translate english Eric_talk_afterdinner_get_5024cd98:
+
+    # Eric_03 "Ну, это как посмотреть. Ты хотел потребовать \"доступа\" к женщинам в своей семье... Если бы твоя мать узнала, сомневаюсь, что это бы хорошо для тебя закончилось, правда?" nointeract
+    Eric_03 "" nointeract
+
+# game/events/eric.rpy:264
+translate english Eric_talk_afterdinner_get_91cf9d80:
+
+    # Eric_02 "Боюсь, что да. Либо ты со мной, либо против меня. Напомню - я тебе буду платить, ты сможешь смотреть, но нельзя трогать... Ну или война и ты точно проиграешь. Очень быстро..." nointeract
+    Eric_02 "" nointeract
+
+# game/events/eric.rpy:270
+translate english Eric_talk_afterdinner_get_b74ade66:
+
+    # Eric_05 "Вот это разговор! Ну, тогда мы точно поладим. Если я увижу, что ты держишь свои обещания, то даже дам тебе кое-что, от чего ни один мужик не откажется, поверь!"
+    Eric_05 ""
+
+# game/events/eric.rpy:271
+translate english Eric_talk_afterdinner_get_d9312f73:
+
+    # Max_03 "О чём речь?"
+    Max_03 ""
+
+# game/events/eric.rpy:272
+translate english Eric_talk_afterdinner_get_773ff7d1:
+
+    # Eric_06 "Любопытно? Ну я намекну... Сможешь не только подглядывать, но и принимать участие..."
+    Eric_06 ""
+
+# game/events/eric.rpy:273
+translate english Eric_talk_afterdinner_get_15087e37:
+
+    # Max_06 "Да ладно?"
+    Max_06 ""
+
+# game/events/eric.rpy:274
+translate english Eric_talk_afterdinner_get_97426be0:
+
+    # Eric_03 "Ага. Так что, в твоих интересах мне не только не мешать, но и помогать, если возникнет такая необходимость. Ну там, слово замолвить или сделать что-то..."
+    Eric_03 ""
+
+# game/events/eric.rpy:275
+translate english Eric_talk_afterdinner_get_67b5c25f:
+
+    # Max_05 "Договорились!"
+    Max_05 ""
+
+# game/events/eric.rpy:276
+translate english Eric_talk_afterdinner_get_3d7ac95b:
+
+    # Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
+    Eric_01 ""
+
+translate english strings:
+
+    # game/events/eric.rpy:154
+    old "Да, я только за."
+    new ""
+
+    # game/events/eric.rpy:154
+    old "Тебе показалось. Я тебя ненавижу!"
+    new ""
+
+    # game/events/eric.rpy:162
+    old "Думаю, воевать смысла нет..."
+    new ""
+
+    # game/events/eric.rpy:162
+    old "Я тебя ненавижу!"
+    new ""
+
+    # game/events/eric.rpy:170
+    old "Почему? Я подумал как следует. Воевать точно не хочу..."
+    new ""
+
+    # game/events/eric.rpy:170
+    old "Правильно. Я тебя ненавижу!"
+    new ""
+
+    # game/events/eric.rpy:181
+    old "{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"
+    new ""
+
+    # game/events/eric.rpy:193
+    old "Что? Ты ошибаешься!"
+    new ""
+
+    # game/events/eric.rpy:193
+    old "Они никакие не цыпочки!"
+    new ""
+
+    # game/events/eric.rpy:193
+    old "Я вдруг понял... Да пошёл ты!"
+    new ""
+
+    # game/events/eric.rpy:201
+    old "Думаешь?"
+    new ""
+
+    # game/events/eric.rpy:201
+    old "Постой, и ты этого хочешь?"
+    new ""
+
+    # game/events/eric.rpy:204
+    old "А если я расскажу про это всем?"
+    new ""
+
+    # game/events/eric.rpy:204
+    old "Только, если я что-то получу за это..."
+    new ""
+
+    # game/events/eric.rpy:204
+    old "Ты подонок! Я передумал. Убирайся!"
+    new ""
+
+    # game/events/eric.rpy:221
+    old "Да я не собираюсь рассказывать, просто спросил..."
+    new ""
+
+    # game/events/eric.rpy:221
+    old "Вот и проверим..."
+    new ""
+
+    # game/events/eric.rpy:221
+    old "Ты - псих ненормальный. Убирайся!"
+    new ""
+
+    # game/events/eric.rpy:226
+    old "Да я пошутил! Конечно, не расскажу никому..."
+    new ""
+
+    # game/events/eric.rpy:226
+    old "Вот и посмотрим..."
+    new ""
+
+    # game/events/eric.rpy:246
+    old "Нет, на это я не согласен."
+    new ""
+
+    # game/events/eric.rpy:251
+    old "Я не извращенец!"
+    new ""
+
+    # game/events/eric.rpy:251
+    old "А есть только два варианта?"
+    new ""
+
+    # game/events/eric.rpy:251
+    old "Ты знаешь... Я тут подумал. Да пошёл ты! Не надо мне ничего от тебя. Я от тебя избавлюсь!"
+    new ""
+
+    # game/events/eric.rpy:254
+    old "Тогда... Остаётся только послать тебя куда подальше. Такая дружба мне не нужна!"
+    new ""
+
+    # game/events/eric.rpy:264
+    old "Если так, то я согласен на твои условия, конечно!"
+    new ""
+
+    # game/events/eric.rpy:264
+    old "Знаешь, что... Эрик? А иди-ка ты в жопу! Без тебя справимся!"
+    new ""
+
+    # game/events/eric.rpy:277
+    old "{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"
+    new ""
+

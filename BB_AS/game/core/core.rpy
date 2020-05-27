@@ -30,13 +30,6 @@ label Waiting:
 
     $ spent_time = TimeDifference(prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
-    if day != prevday:
-        # здесь будет блок обработки ежедневно обнуляемых значений
-        call Midnight from _call_Midnight
-
-    if prevtime < "05:00" < tm:
-        call NewDay from _call_NewDay
-
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
 
@@ -59,6 +52,11 @@ label Waiting:
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
     if prevtime < '12:00' <= tm:
         call Noon from _call_Noon
+    if day != prevday:
+        call Midnight from _call_Midnight
+    if prevtime < "04:00" < tm:
+        call NewDay from _call_NewDay
+
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -295,6 +293,38 @@ label AfterWaiting:
     call screen room_navigation
 
 
+label night_of_fun:
+
+    $ renpy.random.shuffle(NightOfFun)
+
+    $ _fun = NightOfFun.pop() # последний из перемешанного списка - событие на сегодня
+
+    if _fun != 'spider' and 'spider' in NightOfFun:
+        $ NightOfFun.remove('spider') # если выпала забава, отличная от паука в постели Алисы, паука из списка удаляем - он сбежал
+
+    ## Запуск выпавшей забавы
+    if _fun == 'spider':
+        call spider_in_bed from _call_spider_in_bed
+
+    $ mgg.energy -= spent_time * 3.5 * cur_ratio / 60.0
+    $ mgg.cleanness -= spent_time * 2.5 * cur_ratio / 60.0
+
+    $ mgg.energy = clip(mgg.energy, 0.0, 100.0)
+    $ mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
+
+    $ Wait(spent_time)
+
+    ## теперь отправим Макса досыпать
+    $ prevtime = tm
+    $ status_sleep = True
+    $ cur_ratio = 1
+    $ spent_time = clip_time(int(round((100. - mgg.energy)/10, 0)) * 60, '06:00', '08:00')
+    scene BG char Max bed-night-01
+    $ renpy.show('Max sleep-night '+pose3_3)
+    Max_19 "Теперь можно спокойно спать и ничего больше..."
+    jump Waiting
+
+
 label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
@@ -519,6 +549,8 @@ label after_load:
                     Schedule((6, ), '14:0', '14:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
                     Schedule((0, 6), '17:0', '18:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
                 )
+
+            $ EventsByTime['night_of_fun'].tm = '02:30'
 
         if current_ver < config.version:
             $ current_ver = config.version

@@ -1212,8 +1212,8 @@ label Lisa_HomeWork:
                 pass
         $ __foot = renpy.random.choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
-        $ renpy.show("FG lessons-mass-03-"+pose3_1)
         $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        $ renpy.show("FG lessons-mass-03-"+pose3_1)
         menu:
             Max_04 "{i}Какие у Лизы красивые ножки. А как классно к ним прикасаться...{/i}"   #спрайт где не видно трусиков (или левая, или правая нога)
             "{i}продолжить{/i}":
@@ -1222,10 +1222,10 @@ label Lisa_HomeWork:
             Lisa_02 "У тебя хорошо получается. Мне приятно..."
             "{i}продолжить{/i}":
                 pass
-        $ __foot = {'03':'01', '04':'02'}[__foot]
+        $ __foot = {'03':'02', '04':'01'}[__foot]
         scene BG char Lisa lessons-mass-01
-        $ renpy.show("FG lessons-mass-01-"+pose3_1)
         $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        $ renpy.show("FG lessons-mass-01-"+pose3_1)
         Lisa_01 "Макс, тебе же ничего не видно?"   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
         Max_01 "Ты про уроки?"
         Lisa_02 "Нет, я про себя..."
@@ -1259,8 +1259,8 @@ label Lisa_HomeWork:
                 pass
         $ __foot = renpy.random.choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
-        $ renpy.show("FG lessons-mass-03-"+pose3_1)
         $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        $ renpy.show("FG lessons-mass-03-"+pose3_1)
         menu:
             Max_04 "{i}А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки...{/i}"   #спрайт где не видно трусиков (или левая, или правая нога)
             "{i}продолжить{/i}":
@@ -1269,10 +1269,10 @@ label Lisa_HomeWork:
             Lisa_05 "Твой массаж так хорошо расслабляет, даже уроки нескучно делать. Очень приятно..."
             "{i}продолжить{/i}":
                 pass
-        $ __foot = {'03':'01', '04':'02'}[__foot]
+        $ __foot = {'03':'02', '04':'01'}[__foot]
         scene BG char Lisa lessons-mass-01
-        $ renpy.show("FG lessons-mass-01-"+pose3_1)
         $ renpy.show("Lisa lessons-mass "+__foot+mgg.dress+lisa.dress)
+        $ renpy.show("FG lessons-mass-01-"+pose3_1)
         Lisa_01 "Только не заглядывайся туда так сильно..."   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
         Max_01 "Как же мне не заглядываться в учебник, мне же надо контролировать процесс."
         Lisa_02 "Да не в учебник ты смотришь... Я же вижу краем глаза, куда ты залипаешь."
@@ -1304,8 +1304,8 @@ label Lisa_HomeWork:
                 pass
         #спрайт с массажем шеи и плеч
         scene BG char Lisa lessons-mass-05
-        $ renpy.show("FG lessons-mass-05-"+pose3_1)
         $ renpy.show("Lisa lessons-mass 05"+mgg.dress+lisa.dress)
+        $ renpy.show("FG lessons-mass-05-"+pose3_1)
         if not RandomChance(_ch10.ch):
             # Лизе не понравился массаж!
             $ mgg.massage += 0.05
@@ -1368,6 +1368,7 @@ label Lisa_HomeWork:
             $ talk_var['lisa.handmass'] = 0
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
+
 
 label liza_hand_mass:
     $ talk_var['lisa.handmass'] = 1
