@@ -201,3 +201,19 @@ translate english strings:
     old "Может всё-таки поделишься своими переживаниями по поводу Алисы?"
     new "Can you tell me how you feel about Alice?"
 
+# TODO: Translation updated at 2020-05-28 00:22
+
+translate english strings:
+
+    # game/core/02init.rpy:20
+    old "{color=#E59400}{i}Лизе понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:21
+    old "{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:59
+    old "Массаж рук заказывала?"
+    new ""
+

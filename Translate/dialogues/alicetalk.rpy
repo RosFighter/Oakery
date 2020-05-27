@@ -6520,3 +6520,243 @@ translate english strings:
     old "А почему на тебе трусики?"
     new ""
 
+# TODO: Translation updated at 2020-05-28 00:22
+
+# game/dialogues/alicetalk.rpy:1858
+translate english massage_sunscreen_shoulders_ce187fe2:
+
+    # Alice_07 "Это так классно расслабляет... У тебя очень хорошо получается, Макс!" nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1897
+translate english massage_sunscreen_spine_3c450833:
+
+    # Alice_07 "Как приятно... Макс, ты делаешь успехи! Мне это нравится..." nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1965
+translate english massage_sunscreen_spider_8eae9d17:
+
+    # Max_07 "Э-э-э... Алиса, ты только не пугайся, просто лежи, как лежала..."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:1966
+translate english massage_sunscreen_spider_17d5705b:
+
+    # Alice_13 "А чего мне пугаться, Макс? Сейчас что, будешь больно массировать?"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:1967
+translate english massage_sunscreen_spider_e9f5ecc0:
+
+    # Max_00 "Нет, просто у нас тут одна проблемка подкралась..."
+    Max_00 ""
+
+# game/dialogues/alicetalk.rpy:1971
+translate english massage_sunscreen_spider_1738f9d1:
+
+    # Alice_12 "Что?! Подкралась?! Ты же говоришь не о том, о чём я подумала?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:1972
+translate english massage_sunscreen_spider_c6caa3b2:
+
+    # Max_08 "Ну... Ты только не дёргайся!"
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:1976
+translate english massage_sunscreen_spider_33f04bc2:
+
+    # Alice_15 "А-а-а! Макс! Вот чёрт! Какой он здоровенный!"
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:1977
+translate english massage_sunscreen_spider_4c0bd052:
+
+    # Max_02 "И не говори!"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1978
+translate english massage_sunscreen_spider_cf1f48d4:
+
+    # Alice_14 "Макс, чего сидишь?! Убери его отсюда! А ещё лучше убей!"
+    Alice_14 ""
+
+# game/dialogues/alicetalk.rpy:1979
+translate english massage_sunscreen_spider_f4c08b0b:
+
+    # Max_04 "Да мне как-то не хочется."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1982
+translate english massage_sunscreen_spider_ad065a63:
+
+    # Alice_06 "В смысле, не хочется?! Охренеть, он страшный!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:1983
+translate english massage_sunscreen_spider_1f9d3af6:
+
+    # Max_05 "Так хорошо же сидим. Да и он в нашу сторону не ползёт. По-моему, он в сторону травы сменил курс..."
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:1984
+translate english massage_sunscreen_spider_f60fe948:
+
+    # Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:1987
+translate english massage_sunscreen_spider_f8904d2b:
+
+    # Max_01 "Ладно, тогда слезай, я с ним разберусь."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:1988
+translate english massage_sunscreen_spider_33e9fd90:
+
+    # Alice_06 "Не-е-ет, он тогда сразу ко мне поползёт! Что я их, не знаю что ли..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:1989
+translate english massage_sunscreen_spider_fc1a7118:
+
+    # Max_03 "Ты определись уже, Алиса, чего хочешь. Я бы просто немного подождал, вон он, уползает..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1990
+translate english massage_sunscreen_spider_fcf0a690:
+
+    # Alice_12 "Точно?!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:1991
+translate english massage_sunscreen_spider_9da1a297:
+
+    # Max_04 "Ага. В траву убежал."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1994
+translate english massage_sunscreen_spider_45030154:
+
+    # Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1995
+translate english massage_sunscreen_spider_63bd396f:
+
+    # Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1996
+translate english massage_sunscreen_spider_54c7faac:
+
+    # Alice_05 "Тебе хватит. Не обольщайся..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1997
+translate english massage_sunscreen_spider_de3d2863:
+
+    # Max_01 "Ага."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2001
+translate english massage_sunscreen_spider_22e8563b:
+
+    # Max_03 "Давай лучше ещё так посидим, подождём. Вон он, уползает..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2002
+translate english massage_sunscreen_spider_293d0088:
+
+    # Alice_12 "Макс, а что это в меня такое упёрлось там внизу?!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2003
+translate english massage_sunscreen_spider_ec701e44:
+
+    # Max_02 "Ну... это я, так сказать."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2004
+translate english massage_sunscreen_spider_33a334d2:
+
+    # Alice_14 "Ой, блин, это член твой что ли?!"
+    Alice_14 ""
+
+# game/dialogues/alicetalk.rpy:2005
+translate english massage_sunscreen_spider_36e61f16:
+
+    # Max_01 "Ага. Он самый."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2010
+translate english massage_sunscreen_spider_88d0ea09:
+
+    # Alice_15 "Ты совсем что ли извращенец? На родную сестру у него стоит!"
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:2011
+translate english massage_sunscreen_spider_ff5172bb:
+
+    # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:2012
+translate english massage_sunscreen_spider_a71b7a30:
+
+    # Alice_16 "Всё, не хочу об этом говорить... Давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:2013
+translate english massage_sunscreen_spider_64bbd7a2:
+
+    # Max_09 "Да ухожу я, уши только мои в покое оставь!"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:2018
+translate english massage_sunscreen_spider_3b66c1cd:
+
+    # Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2019
+translate english massage_sunscreen_spider_0aa348ea:
+
+    # Max_01 "Да не так-то это просто, прикрыть его."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2020
+translate english massage_sunscreen_spider_6b77c813:
+
+    # Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2021
+translate english massage_sunscreen_spider_5c995a4f:
+
+    # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2022
+translate english massage_sunscreen_spider_e0dd7b8f:
+
+    # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2023
+translate english massage_sunscreen_spider_4970a131:
+
+    # Max_02 "Хорошо. Не скучай."
+    Max_02 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:1858
+    old "{i}продолжить{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:1858
+    old "{i}выпустить рядом паука{/i}"
+    new ""
+
