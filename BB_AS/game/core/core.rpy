@@ -106,6 +106,29 @@ label Midnight:
     $ random_loc_ab = renpy.random.choice(['a', 'b'])
     $ random_sigloc = renpy.random.choice(['n', 't'])
 
+    if 'smoke' in talk_var:
+        $ talk_var['smoke'] = 0
+        if flags['smoke.request'] == 'money':
+            $ flags['smoke'] = None
+            $ flags['smoke.request'] = None
+        elif flags['smoke.request'] is not None and (flags['smoke'] is None or flags['smoke'][:3] != 'not'):
+            # Если требование Макса было и это не деньги
+            $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
+            if RandomChance(__chance):
+                $ flags['smoke'] = 'not_' + flags['smoke.request']
+                $ flags['noted'] = False  # нарушение еще не замечено Максом
+                if flags['smoke.request'] == 'nopants':
+                    $ alice.nopants = False
+                elif flags['smoke.request'] == 'sleep':
+                    $ alice.sleeptoples = False
+            else:
+                $ flags['smoke'] = flags['smoke.request']
+                if flags['smoke.request'] == 'nopants':
+                    $ alice.nopants = True
+                elif flags['smoke.request'] == 'sleep':
+                    $ alice.sleeptoples = True
+    $ GetDeliveryList()
+
     if peeping['ann_eric_tv'] and flags['ae.tv.hj'] > 0:
         $ ae_tv_order.pop(0)
         if not ae_tv_order:
@@ -147,28 +170,11 @@ label NewDay:
     $ talk_var['al.tv.mas'] = 0 # предлагали Алисе массаж у тв
     if talk_var['lisa.handmass']>0:
         $ talk_var['lisa.handmass']=0
-    if 'smoke' in talk_var:
-        $ talk_var['smoke'] = 0
-        if flags['smoke.request'] == 'money':
-            $ flags['smoke'] = None
-            $ flags['smoke.request'] = None
-        elif flags['smoke.request'] is not None and (flags['smoke'] is None or flags['smoke'][:3] != 'not'):
-            # Если требование Макса было и это не деньги
-            $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
-            if RandomChance(__chance):
-                $ flags['smoke'] = 'not_' + flags['smoke.request']
-                $ flags['noted'] = False  # нарушение еще не замечено Максом
-                if flags['smoke.request'] == 'nopants':
-                    $ alice.nopants = False
-                elif flags['smoke.request'] == 'sleep':
-                    $ alice.sleeptoples = False
-            else:
-                $ flags['smoke'] = flags['smoke.request']
-                if flags['smoke.request'] == 'nopants':
-                    $ alice.nopants = True
-                elif flags['smoke.request'] == 'sleep':
-                    $ alice.sleeptoples = True
-    $ GetDeliveryList()
+
+    python:
+        # сбросим подглядывания
+        for key in peeping:
+            peeping[key] = 0
 
     if 0 < GetWeekday(prevday) < 6:
         if poss['sg'].stn > 0 and not flags['lisa_hw']:  # был разговор с Лизой по поводу наказаний и не помогал

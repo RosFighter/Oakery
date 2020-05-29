@@ -547,7 +547,7 @@ label dinner_11:
             Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', enabletalk=False, glow=110),
             Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе'),
             Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе'),
-            Schedule((5,), '20:0', '20:59', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
+            Schedule((5,), '3:0', '3:39', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
         )
 
     ## после ужина должен состоятся разговор Макса с Эриком на счет решения Макса

@@ -886,7 +886,7 @@ init python:
     def GetDisobedience():  # вероятность ослушания Алисы
         chance = 90
         rise = 90
-        for d in range(1, len(punalice)-1):
+        for d in range(0, len(punalice)-1):
             if punalice[d][0] in [4,5,6]:
                 break # посчет идет только до ближайшего требования Макса
             else:

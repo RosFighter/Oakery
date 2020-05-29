@@ -1977,7 +1977,7 @@ label massage_sunscreen:
         Max_02 "И не говори!"
         Alice_14 "Макс, чего сидишь?! Убери его отсюда! А ещё лучше убей!"
         Max_04 "Да мне как-то не хочется."
-        scene BG char Alice spider-sun-01
+        scene BG char Alice spider-sun-02
         $ renpy.show('Alice spider-sun 02'+mgg.dress+_suf)
         Alice_06 "В смысле, не хочется?! Охренеть, он страшный!"   #spider-sun-02
         Max_05 "Так хорошо же сидим. Да и он в нашу сторону не ползёт. По-моему, он в сторону травы сменил курс..."

@@ -1380,3 +1380,108 @@ translate english strings:
     # game/events/alice.rpy:265
     old "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}"
     new "{i}look from the side\n{color=[_ch2.col]}(Stealth. Chance: [_ch2.vis]){/color}{/i}"
+
+# TODO: Translation updated at 2020-05-28 00:22
+
+# game/events/alice.rpy:653
+translate english alice_dressed_club_f4235378:
+
+    # Max_00 "{i}Кажется, Алиса собирается в ночной клуб...{/i}" nointeract
+    Max_00 "" nointeract
+
+# game/events/alice.rpy:659
+translate english alice_dressed_club_ca8b176b:
+
+    # Max_00 "Вау! Интересно, она трусики надевает под это платье или нет? Как бы я хотел это узнать..."
+    Max_00 ""
+
+# game/events/alice.rpy:670
+translate english alice_dressed_club_knock_7b60fad6:
+
+    # Alice "{b}Алиса:{/b} Кто там? Я собираюсь, подождите..."
+    Alice ""
+
+# game/events/alice.rpy:671
+translate english alice_dressed_club_knock_a5d16085:
+
+    # Max_00 "Это я, Макс. У меня к тебе дело..."
+    Max_00 ""
+
+# game/events/alice.rpy:674
+translate english alice_dressed_club_knock_7d4cb094:
+
+    # Alice_13 "Ну, Макс, чего хотел? Что за дело такое срочное?" nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:679
+translate english alice_dressed_club_knock_774df1ed:
+
+    # Alice_04 "Спасибо... Так чего хотел, рассказывай!"
+    Alice_04 ""
+
+# game/events/alice.rpy:680
+translate english alice_dressed_club_knock_86d2441d:
+
+    # Max_00 "Ты знаешь, я забыл..."
+    Max_00 ""
+
+# game/events/alice.rpy:681
+translate english alice_dressed_club_knock_b8d43251:
+
+    # Alice_02 "Эх, Макс. Память у тебя дырявая. Тебе бы рыбки поесть. Там, говорят, фосфор. Помогает для мозгов... Ладно, вали отсюда, я ещё не закончила..."
+    Alice_02 ""
+
+# game/events/alice.rpy:683
+translate english alice_dressed_club_knock_34ae4580:
+
+    # Alice_02 "Макс, ты меня удивляешь всё больше. Какой? Дай угадаю... книжка!"
+    Alice_02 ""
+
+# game/events/alice.rpy:684
+translate english alice_dressed_club_knock_cf54e38d:
+
+    # Max_00 "Не угадала. Ты же любишь шоколад?"
+    Max_00 ""
+
+# game/events/alice.rpy:686
+translate english alice_dressed_club_knock_ee9257c6:
+
+    # Alice_05 "Люблю... И что, никакого подвоха? Просто взял и подарил коробку конфет?" nointeract
+    Alice_05 "" nointeract
+
+# game/events/alice.rpy:689
+translate english alice_dressed_club_knock_48dabb7b:
+
+    # Alice_02 "Может быть, мне их ещё и снять для тебя? Давай, вали уже, извращенец. А за конфеты спасибо..."
+    Alice_02 ""
+
+# game/events/alice.rpy:691
+translate english alice_dressed_club_knock_9346b73f:
+
+    # Alice_07 "Вот это да! Ну, спасибо тогда... А теперь вали. Я ещё не закончила..."
+    Alice_07 ""
+
+# game/events/alice.rpy:692
+translate english alice_dressed_club_knock_7852d704:
+
+    # Max_00 "Ага..."
+    Max_00 ""
+
+translate english strings:
+
+    # game/events/alice.rpy:674
+    old "Выглядишь... шикарно!"
+    new ""
+
+    # game/events/alice.rpy:674
+    old "У меня для тебя презент..."
+    new ""
+
+    # game/events/alice.rpy:686
+    old "Ну, можешь трусы показать..."
+    new ""
+
+    # game/events/alice.rpy:686
+    old "Да, никакого подвоха!"
+    new ""
+
