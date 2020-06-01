@@ -558,5 +558,10 @@ label after_load:
 
             $ EventsByTime['night_of_fun'].tm = '02:30'
 
+            $ poss['nightclub'].stages[6].ps = ""
+            $ poss['nightclub'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
+
+            $ flags['talkaboutbath'] = 0
+
         if current_ver < config.version:
             $ current_ver = config.version

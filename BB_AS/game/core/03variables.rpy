@@ -573,6 +573,7 @@ label InitVariable: # стартовая инициация переменных
             'ae.tv.bj'      : 0,
             'alice.tv.mass' : 0,
             'alice.drink'   : 0,
+            'talkaboutbath' : 0,
             }
         CurChar = 'max'
         CurPoss = ""
@@ -646,3 +647,15 @@ label AddKira:
             Schedule((0, 1, 2, 3, 4, 5, 6), '11:00', '12:59', 'sun', 'загорает', 'house', 6, 'kira_sun', glow=120),
             Schedule((0, 1, 2, 3, 4, 5, 6), '13:00', '23:59', 'studio', 'в студии'),
         )
+
+    return
+
+
+label alice_init_nightclub:
+    $ alice.add_schedule(
+            Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', enabletalk=False, glow=110),
+            Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе'),
+            Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе'),
+            Schedule((5,), '3:0', '3:39', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
+        )
+    return

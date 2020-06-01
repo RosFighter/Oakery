@@ -602,6 +602,9 @@ init python:
             elif name == 'smoke':
                 alice.dress = 'b' if flags['smoke'] == 'toples' else 'a'
                 alice.dress_inf = '03b' if flags['smoke'] == 'toples' else '03'
+            elif name == 'club':
+                alice.dress = 'a'
+                alice.dress_inf = '06'
             else:
                 alice.dress = 'a'
                 alice.dress_inf = '01a'
