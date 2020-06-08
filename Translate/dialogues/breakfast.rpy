@@ -2009,3 +2009,367 @@ translate english strings:
     old "Извини, мам..."
     new "I'm sorry, mom"
 
+# TODO: Translation updated at 2020-06-08 10:23
+
+# game/dialogues/breakfast.rpy:728
+translate english breakfast_18_21172a5c:
+
+    # Ann_04 "Смотрю, даже Макс шорты натянул. Ну как, легче стало?"
+    Ann_04 ""
+
+# game/dialogues/breakfast.rpy:729
+translate english breakfast_18_6d7508e2:
+
+    # Max_01 "Ага. Давно надо было..."
+    Max_01 ""
+
+# game/dialogues/breakfast.rpy:730
+translate english breakfast_18_9fb4f2cb:
+
+    # Lisa_02 "Ага, согласна с Максом. Так намного комфортнее и легче. Эта жара просто убивает..."
+    Lisa_02 ""
+
+# game/dialogues/breakfast.rpy:731
+translate english breakfast_18_ca7093e6:
+
+    # Max_07 "Кстати, мне показалось или стало ещё более жарко?"
+    Max_07 ""
+
+# game/dialogues/breakfast.rpy:732
+translate english breakfast_18_fe79a7f5:
+
+    # Kira_01 "Само собой. Начинается самый жаркий сезон, а у вас ещё и кондиционеров нет. Кстати, дом у вас шикарный. А если были бы кондиционеры - был бы идеальным!"
+    Kira_01 ""
+
+# game/dialogues/breakfast.rpy:733
+translate english breakfast_18_33a7119d:
+
+    # Max_02 "Ну, тут есть бассейн..."
+    Max_02 ""
+
+# game/dialogues/breakfast.rpy:734
+translate english breakfast_18_c1792d62:
+
+    # Kira_07 "А вот это я обожаю. После пары лет жизни в тех холодных краях, я бы целыми днями под солнцем валялась..."
+    Kira_07 ""
+
+# game/dialogues/breakfast.rpy:735
+translate english breakfast_18_59e2e29b:
+
+    # Ann_05 "Кстати, об этом. Ты бы рассказала, где была, что делала, что планируешь..."
+    Ann_05 ""
+
+# game/dialogues/breakfast.rpy:736
+translate english breakfast_18_e2cfae36:
+
+    # Max_04 "Ага, нам всем интересно..."
+    Max_04 ""
+
+# game/dialogues/breakfast.rpy:737
+translate english breakfast_18_9aadeb5e:
+
+    # Kira_02 "Да не о чем рассказывать. Работала то тут, то там... Скукота. А сюда я приехала по работе, точнее, хочу устроиться кое-куда. И так здорово, что моя семья уже тут!"
+    Kira_02 ""
+
+# game/dialogues/breakfast.rpy:738
+translate english breakfast_18_6935bae9:
+
+    # Max_03 "А кем ты хочешь утроиться?"
+    Max_03 ""
+
+# game/dialogues/breakfast.rpy:739
+translate english breakfast_18_86c53803:
+
+    # Kira_14 "Ну... Я не знаю как об этом рассказать..."
+    Kira_14 ""
+
+# game/dialogues/breakfast.rpy:740
+translate english breakfast_18_3bbc12a6:
+
+    # Max_07 "О чём?"
+    Max_07 ""
+
+# game/dialogues/breakfast.rpy:741
+translate english breakfast_18_112c970e:
+
+    # Ann_02 "Да ладно, Кир, можешь рассказать. Я видела в твоих вещах форму горничной. Наверняка, решила устроиться в какой-то богатый дом, чтобы платили много, а тебе только пыль сдувать. Угадала?"
+    Ann_02 ""
+
+# game/dialogues/breakfast.rpy:742
+translate english breakfast_18_81016e2b:
+
+    # Max_04 "Горничной?"
+    Max_04 ""
+
+# game/dialogues/breakfast.rpy:743
+translate english breakfast_18_c316b223:
+
+    # Kira_03 "Ну... Да. Просто подумала, что это не то, чем стоит гордиться. Ты вот работаешь в такой компании крупной, да ещё... Кстати, кем ты работаешь сейчас?" nointeract
+    Kira_03 "" nointeract
+
+# game/dialogues/breakfast.rpy:746
+translate english breakfast_18_4898e38f:
+
+    # Ann_04 "Макс! Как тебе не стыдно. Я личный ассистент руководителя регионального отделения компании..." nointeract
+    Ann_04 "" nointeract
+
+# game/dialogues/breakfast.rpy:753
+translate english breakfast_18_e1fcda17:
+
+    # Ann_02 "Макс! Я не секретарша, а личный ассистент руководителя регионального отделения компании..." nointeract
+    Ann_02 "" nointeract
+
+# game/dialogues/breakfast.rpy:760
+translate english breakfast_18_2ffeff05:
+
+    # Ann_06 "Я же тебе рассказывала, что я сейчас личный ассистент руководителя регионального отделения компании..." nointeract
+    Ann_06 "" nointeract
+
+# game/dialogues/breakfast.rpy:766
+translate english breakfast_18_7701c024:
+
+    # Ann_17 "Макс! Сейчас выпорю у всех на глазах, если будешь продолжать в подобном духе!"
+    Ann_17 ""
+
+# game/dialogues/breakfast.rpy:767
+translate english breakfast_18_84309eb3:
+
+    # Max_00 "Ладно, ладно..."
+    Max_00 ""
+
+# game/dialogues/breakfast.rpy:768
+translate english breakfast_18_next_f5423a85:
+
+    # Kira_05 "Ну, то есть, сфера обслуги, верно? Да шучу я, Ань, шучу. Ладно, а что там с этим вашим Эриком? Какой он?" nointeract
+    Kira_05 "" nointeract
+
+# game/dialogues/breakfast.rpy:771
+translate english breakfast_18_next_9ffa848f:
+
+    # Ann_16 "Макс! Да как ты разговариваешь! Снимай штаны!" nointeract
+    Ann_16 "" nointeract
+
+# game/dialogues/breakfast.rpy:774
+translate english breakfast_18_next_b4169c04:
+
+    # Ann_12 "Так то лучше. И следи за своим языком. В этот раз прощаю, но чтобы такого больше не было!"
+    Ann_12 ""
+
+# game/dialogues/breakfast.rpy:776
+translate english breakfast_18_next_dc28dbf2:
+
+    # Ann_18 "Макс! Если бы не твоя тётя, я бы тебя точно выпорола бы прямо здесь и сейчас. Но отложим это на другой раз. Считай, что сегодня тебе повезло."
+    Ann_18 ""
+
+# game/dialogues/breakfast.rpy:777
+translate english breakfast_18_next_6e7aee99:
+
+    # Max_00 "Хорошо..."
+    Max_00 ""
+
+# game/dialogues/breakfast.rpy:778
+translate english breakfast_18_next_38a95e47:
+
+    # Kira_13 "Ого! У вас снова в моде физические наказания? Прямо как у нас в детстве, да Ань? Неужели, дети перестали слушаться обычных голосовых команд?" nointeract
+    Kira_13 "" nointeract
+
+# game/dialogues/breakfast.rpy:781
+translate english breakfast_18_next_7b275243:
+
+    # Kira_04 "Да ладно, расслабься Макс, я же шучу. Ты разве забыл, что я умная, весёлая и красивая?"
+    Kira_04 ""
+
+# game/dialogues/breakfast.rpy:782
+translate english breakfast_18_next_455cade9:
+
+    # Max_01 "Да помню, помню..."
+    Max_01 ""
+
+# game/dialogues/breakfast.rpy:784
+translate english breakfast_18_next_7fc3d25b:
+
+    # Kira_14 "Да. Бывает, получишь двойку и думаешь. Идти домой или нет. Кушать хочется, а дома сначала накормят десертом - ремнём по голой заднице... Ух, вот это были времена..."
+    Kira_14 ""
+
+# game/dialogues/breakfast.rpy:785
+translate english breakfast_18_next_57c98dc0:
+
+    # Max_08 "Хорошего мало..."
+    Max_08 ""
+
+# game/dialogues/breakfast.rpy:787
+translate english breakfast_18_next_df2f93f7:
+
+    # Kira_07 "А ты, Макс, я вижу, нашёл с ним общий язык? Значит, Эрик и правда хороший парень. Нужно будет с ним познакомиться..." nointeract
+    Kira_07 "" nointeract
+
+# game/dialogues/breakfast.rpy:790
+translate english breakfast_18_next_cc699149:
+
+    # Kira_06 "Так это же здорово! Поздравляю, сестрёнка! Когда свадьба?"
+    Kira_06 ""
+
+# game/dialogues/breakfast.rpy:791
+translate english breakfast_18_next_1758a9af:
+
+    # Ann_02 "Да рано ещё о свадьбе говорить. Мы недавно только познакомились. Да, сделал предложение, да, я приняла, но ничего конкретного ещё не решили..."
+    Ann_02 ""
+
+# game/dialogues/breakfast.rpy:797
+translate english breakfast_18_next_fd109b60:
+
+    # Ann_07 "Ну, он сильный, мужественный, внимательный, ответственный... В общем, мужчина моей мечты... Я же тебе рассказывала уже о нём?"
+    Ann_07 ""
+
+# game/dialogues/breakfast.rpy:799
+translate english breakfast_18_next_57a8ba37:
+
+    # Kira_01 "Ну, так или иначе, нужно будет познакомиться с этим вашим Эриком. Столько разговоров, историй. Хочу всё знать!"
+    Kira_01 ""
+
+# game/dialogues/breakfast.rpy:800
+translate english breakfast_18_next_856aad49:
+
+    # Ann_04 "Да успеешь ещё. Кстати, мы сегодня едем на шоппинг, за нами Эрик пришлёт машину, там и познакомитесь. Если хочешь, поехали с нами!"
+    Ann_04 ""
+
+# game/dialogues/breakfast.rpy:801
+translate english breakfast_18_next_c706d294:
+
+    # Max_08 "А может быть, я хочу с тётей пообщаться..."
+    Max_08 ""
+
+# game/dialogues/breakfast.rpy:802
+translate english breakfast_18_next_266789ea:
+
+    # Kira_05 "Ну если племянник настаивает, его нельзя обижать. А если серьёзно, то я бы на солнышке повалялась. К тому же, у меня новый купальник..."
+    Kira_05 ""
+
+# game/dialogues/breakfast.rpy:803
+translate english breakfast_18_next_7f1e65f0:
+
+    # Ann_02 "С каких пор ты носишь купальники? Ты меня удивляешь всё больше, Кира. Но я рада, что ты за ум взялась. К тому же, тут дети..."
+    Ann_02 ""
+
+# game/dialogues/breakfast.rpy:804
+translate english breakfast_18_next_6bc24e91:
+
+    # Max_09 "Я уже взрослый!"
+    Max_09 ""
+
+# game/dialogues/breakfast.rpy:805
+translate english breakfast_18_next_d00b8c9b:
+
+    # Kira_07 "Только из-за твоих детей и купила этот самый купальник. А так я не очень люблю все эти верёвочки..."
+    Kira_07 ""
+
+# game/dialogues/breakfast.rpy:806
+translate english breakfast_18_next_ac565b62:
+
+    # Max_07 "Какие верёвочки?"
+    Max_07 ""
+
+# game/dialogues/breakfast.rpy:807
+translate english breakfast_18_next_accdd7e1:
+
+    # Ann_04 "Верёвочки? Наверняка, опять супермини-бикини? Ох, Кира... Я уж думала ты и правда повзрослела... Ладно, спасибо всем за завтрак. Пора собираеться на шоппинг."
+    Ann_04 ""
+
+# game/dialogues/breakfast.rpy:808
+translate english breakfast_18_next_81d2ad52:
+
+    # Max_01 "Да, спасибо..."
+    Max_01 ""
+
+# game/dialogues/breakfast.rpy:809
+translate english breakfast_18_next_782a5fef:
+
+    # Kira_04 "Совсем забыла сказать, что сегодня я вернусь домой поздно. Где мне лечь спать?"
+    Kira_04 ""
+
+# game/dialogues/breakfast.rpy:810
+translate english breakfast_18_next_098c64a8:
+
+    # Max_03 "Вернёшься? Откуда?"
+    Max_03 ""
+
+# game/dialogues/breakfast.rpy:811
+translate english breakfast_18_next_0e8e13c0:
+
+    # Ann_06 "Ну, либо с Лизой в комнате на кровати Макса, а он в гостиной поспит, либо..."
+    Ann_06 ""
+
+# game/dialogues/breakfast.rpy:812
+translate english breakfast_18_next_0a2cd2b6:
+
+    # Max_04 "Мне без разницы, если что..."
+    Max_04 ""
+
+# game/dialogues/breakfast.rpy:813
+translate english breakfast_18_next_0f7bf573:
+
+    # Kira_02 "Ой, а давай я в гостиной буду спать, чтобы никого не тревожить, а?"
+    Kira_02 ""
+
+# game/dialogues/breakfast.rpy:814
+translate english breakfast_18_next_e1c445f6:
+
+    # Ann_05 "Как хочешь, Кир. Где тебе будет удобнее. Постельное под диваном. Его можно раздвинуть, ну, сама разберёшься тогда. Всё, мы побежали..."
+    Ann_05 ""
+
+# game/dialogues/breakfast.rpy:815
+translate english breakfast_18_next_bec83eb5:
+
+    # Max_01 "Давайте, удачи..."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/breakfast.rpy:743
+    old "Горничной Эрика!"
+    new ""
+
+    # game/dialogues/breakfast.rpy:743
+    old "Секретаршей"
+    new ""
+
+    # game/dialogues/breakfast.rpy:746
+    old "В общем, секретарша..."
+    new ""
+
+    # game/dialogues/breakfast.rpy:753
+    old "Ну я так и сказал - секретарша..."
+    new ""
+
+    # game/dialogues/breakfast.rpy:768
+    old "Подонок, каких мало..."
+    new ""
+
+    # game/dialogues/breakfast.rpy:768
+    old "Нормальный мужик"
+    new ""
+
+    # game/dialogues/breakfast.rpy:771
+    old "Извини, мам, я пошутил..."
+    new ""
+
+    # game/dialogues/breakfast.rpy:771
+    old "Ну и сниму. От своих слов я не отказываюсь!"
+    new ""
+
+    # game/dialogues/breakfast.rpy:778
+    old "Очень смешно, тётя Кира..."
+    new ""
+
+    # game/dialogues/breakfast.rpy:778
+    old "Вас тоже пороли?"
+    new ""
+
+    # game/dialogues/breakfast.rpy:787
+    old "А ещё он маме предложение сделал..."
+    new ""
+
+    # game/dialogues/breakfast.rpy:787
+    old "Ну, не настолько хороший..."
+    new ""
+

@@ -217,3 +217,11 @@ translate english strings:
     old "Массаж рук заказывала?"
     new ""
 
+# TODO: Translation updated at 2020-06-08 10:23
+
+translate english strings:
+
+    # game/core/02init.rpy:59
+    old "Насчёт ванны ночью..."
+    new ""
+
