@@ -510,3 +510,379 @@ translate english night_of_fun_cae91685:
     # Max_19 "Теперь можно спокойно спать и ничего больше..."
     Max_19 "Now you can sleep in peace..."
 
+# TODO: Translation updated at 2020-06-08 10:23
+
+# game/events/other.rpy:241
+translate english Kira_arrival_ce3f4211:
+
+    # Ann_05 "Ну что, дети, дождались? Встречайте, к нам приехала тётя Кира!"
+    Ann_05 ""
+
+# game/events/other.rpy:242
+translate english Kira_arrival_9816e105:
+
+    # Max_05 "Супер!"
+    Max_05 ""
+
+# game/events/other.rpy:243
+translate english Kira_arrival_437eebba:
+
+    # Kira_01 "Это кто тут у нас? Макс? Я тебя не узнала! Почти настоящий мужчина!" nointeract
+    Kira_01 "" nointeract
+
+# game/events/other.rpy:248
+translate english Kira_arrival_761ba430:
+
+    # Kira_06 "Да я шучу, Макс. Конечно, ты уже мужчина. Вижу, всё у тебя в порядке. И как ты только держишься среди таких девчонок? Кстати, где Лиза и Алиса?"
+    Kira_06 ""
+
+# game/events/other.rpy:249
+translate english Kira_arrival_f2f8c543:
+
+    # Max_04 "Уже бегут..."
+    Max_04 ""
+
+# game/events/other.rpy:253
+translate english Kira_arrival_4c447413:
+
+    # Kira_07 "Лиза? Алиса? Неужели, это вы? Все такие большие, с меня ростом!"
+    Kira_07 ""
+
+# game/events/other.rpy:254
+translate english Kira_arrival_41dea78a:
+
+    # Lisa_03 "Тётя Кира! Ура! Я так соскучилась!"
+    Lisa_03 ""
+
+# game/events/other.rpy:255
+translate english Kira_arrival_34dba009:
+
+    # Max_02 "Хорошую подушку ты нашла..."
+    Max_02 ""
+
+# game/events/other.rpy:256
+translate english Kira_arrival_c8bed868:
+
+    # Alice_07 "Я так рада, что ты приехала! Ты же надолго, да?"
+    Alice_07 ""
+
+# game/events/other.rpy:257
+translate english Kira_arrival_94209dce:
+
+    # Kira_04 "Что, уже выгоняете?!"
+    Kira_04 ""
+
+# game/events/other.rpy:258
+translate english Kira_arrival_9a868553:
+
+    # Ann_04 "Что ты, Кира, оставайся хоть навсегда! Я тоже очень рада тебя видеть, сестрёнка!" nointeract
+    Ann_04 "" nointeract
+
+# game/events/other.rpy:261
+translate english Kira_arrival_837dc5ce:
+
+    # Lisa_05 "Нет! Она моя! Никому не отдам!"
+    Lisa_05 ""
+
+# game/events/other.rpy:262
+translate english Kira_arrival_7dd083c1:
+
+    # Max_00 "Ну и ладно. Я тогда... потом."
+    Max_00 ""
+
+# game/events/other.rpy:265
+translate english Kira_arrival_f8793ac7:
+
+    # Ann_01 "Кира, ты меня удивляешь! Не в мини-юбке... да ещё и такая нарядная! Неужели, прямо в таком виде летела в самолёте?"
+    Ann_01 ""
+
+# game/events/other.rpy:266
+translate english Kira_arrival_239a2d0b:
+
+    # Max_07 "Да, кстати..."
+    Max_07 ""
+
+# game/events/other.rpy:267
+translate english Kira_arrival_4bf7c736:
+
+    # Kira_05 "Нет, что ты. Я прилетела пару дней назад и остановилась в гостинице. Просто... нужно было разобраться кое с чем. Но с делами покончено и специально ради вас я наряжалась всё утро!" nointeract
+    Kira_05 "" nointeract
+
+# game/events/other.rpy:272
+translate english Kira_arrival_2171ddd4:
+
+    # Kira_02 "Ага. Не буду утомлять вас подробностями, это никому не интересно. Скажу лишь, что всё улажено и теперь я свободна для своей семьи!"
+    Kira_02 ""
+
+# game/events/other.rpy:276
+translate english Kira_arrival_3a81a6f4:
+
+    # Kira_03 "Да, я прошу прощения, что не предупредила, но не могла завалиться к вам, чтобы тут же убежать. Но я со всем разобралась, всё в порядке, теперь я тут!"
+    Kira_03 ""
+
+# game/events/other.rpy:280
+translate english Kira_arrival_end_yard_5810a3fd:
+
+    # Max_07 "А мне любопытно, что за дела?"
+    Max_07 ""
+
+# game/events/other.rpy:281
+translate english Kira_arrival_end_yard_b57b009f:
+
+    # Ann_02 "Макс, ну хватит пытать свою тётю. Она сама расскажет, если захочет, верно? А теперь пойдёмте все в дом, скоро будем завтракать."
+    Ann_02 ""
+
+# game/events/other.rpy:290
+translate english Kira_arrival_end_yard_61f344a0:
+
+    # Kira_01 "Так как у меня было время подготовиться к встрече с вами, я приехала не с пустыми руками и привезла вам кое-что..."
+    Kira_01 ""
+
+# game/events/other.rpy:291
+translate english Kira_arrival_end_yard_27b5d9a4:
+
+    # Max_03 "Ух-ты!"
+    Max_03 ""
+
+# game/events/other.rpy:292
+translate english Kira_arrival_end_yard_5c3c88a7:
+
+    # Kira_07 "Я уже в курсе вашей истории с потерянным вещами. Поэтому, я уточнила у вашей мамы ваши размеры и купила лёгкую домашнюю одежду. И, кажется, правильно сделала. В такую жару, дома, лучше носить что-нибудь лёгкое!"
+    Kira_07 ""
+
+# game/events/other.rpy:293
+translate english Kira_arrival_end_yard_37f87db2:
+
+    # Lisa_02 "Ой! Я обожаю новые вещички. А что ты мне привезла, тётя Кира, а?"
+    Lisa_02 ""
+
+# game/events/other.rpy:294
+translate english Kira_arrival_end_yard_b3e5b52d:
+
+    # Max_01 "Я думал у нас Алиса шмотки любит..."
+    Max_01 ""
+
+# game/events/other.rpy:295
+translate english Kira_arrival_end_yard_e217d4e7:
+
+    # Lisa_01 "Макс, какой ты глупый, кошмар! Шмотки любят все девушки! Ну так что там?"
+    Lisa_01 ""
+
+# game/events/other.rpy:296
+translate english Kira_arrival_end_yard_d90987d8:
+
+    # Kira_05 "Так, вы все давайте держите новую одежду, переодевайтесь и встречаемся за столом, где вы завтракаете. Посмотрим, всем ли всё подошло. А тебе, Макс, я ничего не купила. Подумала, что ты можешь и в шортах ходить. Но подарок тебе сделаю, позже решим какой..." nointeract
+    Kira_05 "" nointeract
+
+# game/events/other.rpy:306
+translate english Kira_arrival_end_yard_e9e6d4fa:
+
+    # Lisa_02 "Ну как вам? Такой классный топ и юбочка и мой любимый цвет, представляете!" nointeract
+    Lisa_02 "" nointeract
+
+# game/events/other.rpy:309
+translate english Kira_arrival_end_yard_f609e252:
+
+    # Ann_01 "Да, вот только меня немного смущает длина юбки. Видимо, Кира, ты на свой вкус выбирала. Лиза, покрутись, пожалуйста..."
+    Ann_01 ""
+
+# game/events/other.rpy:313
+translate english Kira_arrival_end_yard_cd5b2e68:
+
+    # Lisa_03 "Мне кажется, что не слишком коротко. В самый раз! И теперь так свободно и легко... Спасибо тебе, тётя Кира!"
+    Lisa_03 ""
+
+# game/events/other.rpy:314
+translate english Kira_arrival_end_yard_21c31287:
+
+    # Max_03 "Да, длина в самый раз..."
+    Max_03 ""
+
+# game/events/other.rpy:317
+translate english Kira_arrival_end_yard_a5573412:
+
+    # Alice_02 "Ну всё, теперь моя очередь! Как вам? Лично мне очень нравится! Давно надо было раздеться."
+    Alice_02 ""
+
+# game/events/other.rpy:318
+translate english Kira_arrival_end_yard_f057f5be:
+
+    # Max_04 "Именно!"
+    Max_04 ""
+
+# game/events/other.rpy:319
+translate english Kira_arrival_end_yard_d2a8a875:
+
+    # Ann_02 "Я не поняла. А трусы то на тебе хоть есть? Ты же не планируешь в таком виде ходить дома, Алиса?" nointeract
+    Ann_02 "" nointeract
+
+# game/events/other.rpy:322
+translate english Kira_arrival_end_yard_c8223c08:
+
+    # Alice_03 "Спасибо, Макс! Мам, а что такого? Ты не представляешь как жарко было в джинсах, а теперь хоть тело дышит. Да и жара такая на улице и дома..."
+    Alice_03 ""
+
+# game/events/other.rpy:323
+translate english Kira_arrival_end_yard_12a4e2fa:
+
+    # Ann_01 "Ладно, а что там сзади? Ну-ка покрутись..."
+    Ann_01 ""
+
+# game/events/other.rpy:325
+translate english Kira_arrival_end_yard_4357e252:
+
+    # Alice_05 "Мам, да всё в порядке. На мне шорты, ничего не видно. Вот, смотри..."
+    Alice_05 ""
+
+# game/events/other.rpy:327
+translate english Kira_arrival_end_yard_4fd7558f:
+
+    # Ann_12 "Алиса, у тебя же всё видно, аж грудь вываливается! Смотри, как Макс таращится. Кажется, он даже завис..."
+    Ann_12 ""
+
+# game/events/other.rpy:328
+translate english Kira_arrival_end_yard_f70abaf0:
+
+    # Max_07 "Э... Ну... да..."
+    Max_07 ""
+
+# game/events/other.rpy:329
+translate english Kira_arrival_end_yard_761bc9e3:
+
+    # Alice_02 "Мам, я дома могу одеваться так, как мне нравится. Ну и что, что Макс. Я из-за него не буду целыми днями ходить в парандже! Мне удобно, выглядит отлично! Ну а если и увидит что-то, пусть радуется, мне всё равно..."
+    Alice_02 ""
+
+# game/events/other.rpy:330
+translate english Kira_arrival_end_yard_82a7c555:
+
+    # Max_02 "Отличная речь, сестрёнка!"
+    Max_02 ""
+
+# game/events/other.rpy:333
+translate english Kira_arrival_end_yard_11f0d126:
+
+    # Ann_04 "Ну, теперь и моя очередь. Как вам? Не слишком откровенно?" nointeract
+    Ann_04 "" nointeract
+
+# game/events/other.rpy:340
+translate english Kira_arrival_end_yard_27e62e75:
+
+    # Ann_07 "Мне кажется, шортики слишком короткие... Я в них еле влезла, если честно. Надо худеть..." nointeract
+    Ann_07 "" nointeract
+
+# game/events/other.rpy:347
+translate english Kira_arrival_end_yard_a4137f9f:
+
+    # Kira_03 "Ань, всё сидит на тебе просто отлично. И очень идёт этот цвет, кстати... Ну а теперь моя очередь. Сейчас покажу, что себе прикупила..."
+    Kira_03 ""
+
+# game/events/other.rpy:348
+translate english Kira_arrival_end_yard_bfefabb8:
+
+    # Max_01 "Интересно..."
+    Max_01 ""
+
+# game/events/other.rpy:351
+translate english Kira_arrival_end_yard_95b07e68:
+
+    # Kira_05 "Ну, как я вам? Хороша? И Ань, ни слова больше. Тебе всё кажется слишком открытое или откровенное." nointeract
+    Kira_05 "" nointeract
+
+# game/events/other.rpy:359
+translate english Kira_arrival_end_yard_2417a0cf:
+
+    # Kira_07 "Вот, слышала, Ань, детям нравится. Естественно, если в семье есть мужчина, это накладывает свои ограничения, но нельзя же быть настолько зажатыми..."
+    Kira_07 ""
+
+# game/events/other.rpy:360
+translate english Kira_arrival_end_yard_5d16cce1:
+
+    # Max_04 "Верно!"
+    Max_04 ""
+
+# game/events/other.rpy:361
+translate english Kira_arrival_end_yard_af415c55:
+
+    # Ann_04 "Ладно, посмотрим. Кира, мне кажется, что не стоило тратиться на подарки. Мы рады, что ты сама смогла к нам приехать... Но всё равно, большое спасибо!"
+    Ann_04 ""
+
+# game/events/other.rpy:362
+translate english Kira_arrival_end_yard_438c6fcd:
+
+    # Max_07 "Давайте уже завтракать, а то остыло почти всё..."
+    Max_07 ""
+
+translate english strings:
+
+    # game/events/other.rpy:243
+    old "Здравствуй, тётя Кира!"
+    new ""
+
+    # game/events/other.rpy:243
+    old "Что значит почти? Я настоящий мужчина!"
+    new ""
+
+    # game/events/other.rpy:258
+    old "А мне можно тоже обнять свою тётю?"
+    new ""
+
+    # game/events/other.rpy:267
+    old "В гостинице?"
+    new ""
+
+    # game/events/other.rpy:267
+    old "Дела?"
+    new ""
+
+    # game/events/other.rpy:267
+    old "Так ты два дня здесь?"
+    new ""
+
+    # game/events/other.rpy:296
+    old "Да не стоит..."
+    new ""
+
+    # game/events/other.rpy:296
+    old "Хорошо, тётя Кира!"
+    new ""
+
+    # game/events/other.rpy:306
+    old "Выглядит отлично!"
+    new ""
+
+    # game/events/other.rpy:306
+    old "Ну-ка, повернись..."
+    new ""
+
+    # game/events/other.rpy:319
+    old "А что такого? Пусть ходит, я не против..."
+    new ""
+
+    # game/events/other.rpy:333
+    old "Нет, мам, всё отлично!"
+    new ""
+
+    # game/events/other.rpy:333
+    old "А можешь немного повернуться?"
+    new ""
+
+    # game/events/other.rpy:340
+    old "Ты знаешь, длина оптимальная!"
+    new ""
+
+    # game/events/other.rpy:340
+    old "Мне нравится, мам!"
+    new ""
+
+    # game/events/other.rpy:351
+    old "Мне нравится. Просто и со вкусом!"
+    new ""
+
+    # game/events/other.rpy:351
+    old "Отличные... вещички!"
+    new ""
+
+    # game/events/other.rpy:351
+    old "И почти ничего не видно..."
+    new ""
+

@@ -6628,7 +6628,7 @@ translate english massage_sunscreen_spider_fc1a7118:
 translate english massage_sunscreen_spider_fcf0a690:
 
     # Alice_12 "Точно?!"
-    Alice_12 "Точно?!"
+    Alice_12 "Are you sure?!"
 
 # game/dialogues/alicetalk.rpy:1991
 translate english massage_sunscreen_spider_9da1a297:
@@ -6706,7 +6706,7 @@ translate english massage_sunscreen_spider_ff5172bb:
 translate english massage_sunscreen_spider_a71b7a30:
 
     # Alice_16 "Всё, не хочу об этом говорить... Давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
-    Alice_16 "I don't want to talk about it... Go on, get out of here. Run! I'm going to kick your ass!""
+    Alice_16 "I don't want to talk about it... Go on, get out of here. Run! I'm going to kick your ass!"
 
 # game/dialogues/alicetalk.rpy:2013
 translate english massage_sunscreen_spider_64bbd7a2:
@@ -6759,4 +6759,102 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1858
     old "{i}выпустить рядом паука{/i}"
     new "{i}release a spider next to it{/i}"
+
+# TODO: Translation updated at 2020-06-08 10:23
+
+# game/dialogues/alicetalk.rpy:2908
+translate english alice_about_bath_46636898:
+
+    # Alice_12 "Ты о чём, Макс?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2909
+translate english alice_about_bath_bd186826:
+
+    # Max_01 "Ну, ты вернулась ночью из клуба и мы разговаривали в ванной..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2910
+translate english alice_about_bath_212462e6:
+
+    # Alice_13 "Я не помню такого... Тебе приснилось!" nointeract
+    Alice_13 "" nointeract
+
+# game/dialogues/alicetalk.rpy:2913
+translate english alice_about_bath_73bf3b53:
+
+    # Alice_05 "Что?! Всё ты врёшь, Макс. Не было такого!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2914
+translate english alice_about_bath_6d33bb34:
+
+    # Max_02 "Да? Ну, думай так..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2915
+translate english alice_about_bath_e4b16627:
+
+    # Alice_13 "Макс. Повторяю, ничего не было. И даже если и было, ты об этом забудешь, если хочешь жить. Ты меня понял?"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2916
+translate english alice_about_bath_18e158e2:
+
+    # Max_03 "Конечно..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2917
+translate english alice_about_bath_3f1a2327:
+
+    # Alice_16 "Я серьёзно! А теперь вали отсюда..."
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:2918
+translate english alice_about_bath_82324783:
+
+    # Max_01 "Хорошо..."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2926
+translate english alice_about_bath_f3aed3d0:
+
+    # Alice_03 "Надо же, даже извинился... Вот только я правда мало что помню. Будем считать, что ничего и не было. И не напоминай мне больше об этом. Понял?"
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:2927
+translate english alice_about_bath_81b4f5c0:
+
+    # Max_03 "Ага..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2931
+translate english alice_about_bath_ad2b2557:
+
+    # Alice_15 "Что?! Макс! Ты всё врёшь! Если это правда, я тебя убью, обещаю! А если нет, то тоже! Быстро свалил отсюда!"
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:2932
+translate english alice_about_bath_82324783_1:
+
+    # Max_01 "Хорошо..."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:2910
+    old "Ты мне кое-что показала..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2910
+    old "Ты мне кое-что сделала..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2910
+    old "Мы делали кое-что..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2910
+    old "Да, ну извини..."
+    new ""
 

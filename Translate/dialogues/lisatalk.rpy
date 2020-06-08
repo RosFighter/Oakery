@@ -6592,10 +6592,10 @@ translate english strings:
     new ""
 
     # game/dialogues/lisatalk.rpy:1378
-    old "{i}начать массаж \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
+    old "{i}начать массаж{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
     new ""
 
     # game/dialogues/lisatalk.rpy:1397
-    old "{i}продолжить \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
+    old "{i}продолжить{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
     new ""
 
