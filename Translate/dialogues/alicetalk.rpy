@@ -6766,95 +6766,95 @@ translate english strings:
 translate english alice_about_bath_46636898:
 
     # Alice_12 "Ты о чём, Макс?"
-    Alice_12 ""
+    Alice_12 "What are you talking about, Max?"
 
 # game/dialogues/alicetalk.rpy:2909
 translate english alice_about_bath_bd186826:
 
     # Max_01 "Ну, ты вернулась ночью из клуба и мы разговаривали в ванной..."
-    Max_01 ""
+    Max_01 "Well, you came back from the club last night and we talked in the bathroom..."
 
 # game/dialogues/alicetalk.rpy:2910
 translate english alice_about_bath_212462e6:
 
     # Alice_13 "Я не помню такого... Тебе приснилось!" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "I don't remember that... You must have been dreaming." nointeract
 
 # game/dialogues/alicetalk.rpy:2913
 translate english alice_about_bath_73bf3b53:
 
     # Alice_05 "Что?! Всё ты врёшь, Макс. Не было такого!"
-    Alice_05 ""
+    Alice_05 "What? You're lying, Max. That didn't happen!"
 
 # game/dialogues/alicetalk.rpy:2914
 translate english alice_about_bath_6d33bb34:
 
     # Max_02 "Да? Ну, думай так..."
-    Max_02 ""
+    Max_02 "Yeah? Well, think about it..."
 
 # game/dialogues/alicetalk.rpy:2915
 translate english alice_about_bath_e4b16627:
 
     # Alice_13 "Макс. Повторяю, ничего не было. И даже если и было, ты об этом забудешь, если хочешь жить. Ты меня понял?"
-    Alice_13 ""
+    Alice_13 "Max. I repeat, nothing happened. And even if something did, you'll forget about it if you want to live. Do you understand me?"
 
 # game/dialogues/alicetalk.rpy:2916
 translate english alice_about_bath_18e158e2:
 
     # Max_03 "Конечно..."
-    Max_03 ""
+    Max_03 "Of course... (chuckles)"
 
 # game/dialogues/alicetalk.rpy:2917
 translate english alice_about_bath_3f1a2327:
 
     # Alice_16 "Я серьёзно! А теперь вали отсюда..."
-    Alice_16 ""
+    Alice_16 "I'm serious! Now get out of here..."
 
 # game/dialogues/alicetalk.rpy:2918
 translate english alice_about_bath_82324783:
 
     # Max_01 "Хорошо..."
-    Max_01 ""
+    Max_01 "Okay..."
 
 # game/dialogues/alicetalk.rpy:2926
 translate english alice_about_bath_f3aed3d0:
 
     # Alice_03 "Надо же, даже извинился... Вот только я правда мало что помню. Будем считать, что ничего и не было. И не напоминай мне больше об этом. Понял?"
-    Alice_03 ""
+    Alice_03 "Wow. He even apologized... Except I don't really remember much. Let's assume that nothing happened. And don't remind me of it again. Understand?"
 
 # game/dialogues/alicetalk.rpy:2927
 translate english alice_about_bath_81b4f5c0:
 
     # Max_03 "Ага..."
-    Max_03 ""
+    Max_03 "Yep..."
 
 # game/dialogues/alicetalk.rpy:2931
 translate english alice_about_bath_ad2b2557:
 
     # Alice_15 "Что?! Макс! Ты всё врёшь! Если это правда, я тебя убью, обещаю! А если нет, то тоже! Быстро свалил отсюда!"
-    Alice_15 ""
+    Alice_15 "What? Max! You're lying! If it's true, I'll kill you, I promise! Get out of here right now!"
 
 # game/dialogues/alicetalk.rpy:2932
 translate english alice_about_bath_82324783_1:
 
     # Max_01 "Хорошо..."
-    Max_01 ""
+    Max_01 "Well..."
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:2910
     old "Ты мне кое-что показала..."
-    new ""
+    new "You showed me something..."
 
     # game/dialogues/alicetalk.rpy:2910
     old "Ты мне кое-что сделала..."
-    new ""
+    new "You did something to me..."
 
     # game/dialogues/alicetalk.rpy:2910
     old "Мы делали кое-что..."
-    new ""
+    new "We were doing something..."
 
     # game/dialogues/alicetalk.rpy:2910
     old "Да, ну извини..."
-    new ""
+    new "Yeah, well, I'm sorry..."
 

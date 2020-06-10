@@ -988,347 +988,347 @@ translate english strings:
 translate english Eric_talk_afterdinner_second_talk_913ec3c6:
 
     # Eric_00 "Ну что, Макс, готов пообщаться снова, пока твоя мама собирается?"
-    Eric_00 ""
+    Eric_00 "So, Max, ready to talk again while your Mom gets ready?"
 
 # game/events/eric.rpy:153
 translate english Eric_talk_afterdinner_second_talk_25aa812b:
 
     # Max_01 "Конечно!"
-    Max_01 ""
+    Max_01 "Of course!"
 
 # game/events/eric.rpy:154
 translate english Eric_talk_afterdinner_second_talk_5a895ebf:
 
     # Eric_05 "Отлично! Ну что, вроде бы ты и правда настроен на дружбу. Я прав?" nointeract
-    Eric_05 "" nointeract
+    Eric_05 "Great! Well, I guess you're really in the mood for friendship. Am I right?" nointeract
 
 # game/events/eric.rpy:161
 translate english Eric_talk_afterdinner_second_talk_6f10b98c:
 
     # Max_00 "Ну, можно..."
-    Max_00 ""
+    Max_00 "Well, maybe..."
 
 # game/events/eric.rpy:162
 translate english Eric_talk_afterdinner_second_talk_7a3e3f7a:
 
     # Eric_01 "Правда, я не до конца понял твою позицию. Ты настроен на дружбу или хочешь попытаться повоевать?" nointeract
-    Eric_01 "" nointeract
+    Eric_01 "Really. I don't fully understand your position. Do you want to be friends or are you determined to try and fight?" nointeract
 
 # game/events/eric.rpy:169
 translate english Eric_talk_afterdinner_second_talk_becdd118:
 
     # Max_09 "Ты ещё здесь?"
-    Max_09 ""
+    Max_09 "You're still here?"
 
 # game/events/eric.rpy:170
 translate english Eric_talk_afterdinner_second_talk_9f170499:
 
     # Eric_09 "Значит, дружить ты не намерен. Я правильно понимаю?" nointeract
-    Eric_09 "" nointeract
+    Eric_09 "So you don't intend to be friends. Do I understand that correctly?" nointeract
 
 # game/events/eric.rpy:180
 translate english Eric_talk_afterdinner_badbad_ee988680:
 
     # Eric_02 "Всё ясно с тобой. Ну, это твой выбор. У тебя была неделя, чтобы всё обдумать. Ты решил начать войну, ну что же, не вини меня за то, как я её закончу..."
-    Eric_02 ""
+    Eric_02 "Everything is clear with you. Well, it's your choice. You've had a week to think about it. You decided to start a war, well, don't blame me for how I end it..."
 
 # game/events/eric.rpy:189
 translate english Eric_talk_afterdinner_goodgood_2ba39b19:
 
     # Eric_01 "Очень хорошо. Я рад. Ну, ты не пожалеешь, это правильный выбор..."
-    Eric_01 ""
+    Eric_01 "Very well. I'm glad. Well, you won't regret it, it's the right choice..."
 
 # game/events/eric.rpy:190
 translate english Eric_talk_afterdinner_goodgood_910ad55d:
 
     # Max_09 "Но ты так и не сказал, почему не пожалею..."
-    Max_09 ""
+    Max_09 "But you still haven't told me why I won't regret it..."
 
 # game/events/eric.rpy:191
 translate english Eric_talk_afterdinner_goodgood_d956ee71:
 
     # Eric_03 "Ну давай начнём с самого простого. Чего ты хочешь?"
-    Eric_03 ""
+    Eric_03 "Well, let's start basic. What do you want?"
 
 # game/events/eric.rpy:192
 translate english Eric_talk_afterdinner_goodgood_a3b08112:
 
     # Max_07 "В каком смысле?"
-    Max_07 ""
+    Max_07 "In what sense?"
 
 # game/events/eric.rpy:193
 translate english Eric_talk_afterdinner_goodgood_6b61a60f:
 
     # Eric_05 "Я не слепой и вижу как ты смотришь на своих сестёр и даже маму. Не отрицай, иногда даже твои штаны тебя выдают. Но я тебя не виню, ещё бы, такие цыпочки кругом!" nointeract
-    Eric_05 "" nointeract
+    Eric_05 "I'm not blind and I can see the way you look at your sisters and even your mother. Don't try and deny it. I don't even blame you, any man would would want to have these sluts all to themselves." nointeract
 
 # game/events/eric.rpy:201
 translate english Eric_talk_afterdinner_goodgood_3e31f80b:
 
     # Eric_01 "Да ладно, здесь все свои! Любой мужик бы думал только о том, как поиметь их всех по очереди или даже разом. Это нормально! Я тебя понимаю!" nointeract
-    Eric_01 "" nointeract
+    Eric_01 "Come on! Any man would dream about how to fuck them all in turn or even at once. This is normal! I know what you mean!" nointeract
 
 # game/events/eric.rpy:204
 translate english Eric_talk_afterdinner_goodgood_25bd7ebc:
 
     # Eric_05 "Уверен в этом. И если честно, надеюсь, у меня всё получится. А ты мне в этом поможешь!" nointeract
-    Eric_05 "" nointeract
+    Eric_05 "I'm sure of it. And to be honest, I hope it works out. And you can help me with that!" nointeract
 
 # game/events/eric.rpy:213
 translate english Eric_talk_afterdinner_goodgood_6f764d15:
 
     # Eric_05 "Конечно! Я же нормальный мужик... Кстати, ты же никому не расскажешь, верно? Мы же типа друзья?" nointeract
-    Eric_05 "" nointeract
+    Eric_05 "Of course! I'm a normal guy... By the way, you won't tell anyone, will you? We're friends, right?" nointeract
 
 # game/events/eric.rpy:221
 translate english Eric_talk_afterdinner_tell_539dcb1f:
 
     # Eric_03 "Всем? Это кому же? Сёстрам? Ну да, поверят они тебе... Расскажешь матери? Попытайся. Заодно, узнаешь на что способны мои, так сказать, \"чары\"..." nointeract
-    Eric_03 "" nointeract
+    Eric_03 "Everyone? To whom? Your sisters? Yes, they will believe you... Will you tell your mother? Try. At the same time, you will find out what my, \"charms\" so to speak, are capable of..." nointeract
 
 # game/events/eric.rpy:226
 translate english Eric_talk_afterdinner_tell_e73b4f64:
 
     # Eric_09 "Не ожидал я от тебя такого... Ну ладно, дело твоё... Но учти, на этой войне у тебя нет ни единого шанса!" nointeract
-    Eric_09 "" nointeract
+    Eric_09 "I didn't expect this from you... well, that's up to you... But you don't stand a chance in this war!" nointeract
 
 # game/events/eric.rpy:234
 translate english Eric_talk_afterdinner_tell_6653b55b:
 
     # Eric_01 "Так ты меня разводишь? А я тебе почти поверил! Молодец..."
-    Eric_01 ""
+    Eric_01 "Are you trying to trick me? I almost believed you! Well done..."
 
 # game/events/eric.rpy:235
 translate english Eric_talk_afterdinner_tell_b000e44b:
 
     # Max_09 "Ладно, а что я с этого получу?"
-    Max_09 ""
+    Max_09 "Well, what do I get out of it?"
 
 # game/events/eric.rpy:238
 translate english Eric_talk_afterdinner_get_a5be5209:
 
     # Eric_03 "Отличный вопрос, Макс! Пришло время выяснить, чего же именно ты хочешь?"
-    Eric_03 ""
+    Eric_03 "That's a great question, Max! It's time to find out exactly what you want."
 
 # game/events/eric.rpy:239
 translate english Eric_talk_afterdinner_get_cbb3238c:
 
     # Max_07 "Я хочу деньги, подглядывать и кое-что ещё..."
-    Max_07 ""
+    Max_07 "I want money, spying, and something else..."
 
 # game/events/eric.rpy:240
 translate english Eric_talk_afterdinner_get_8cc4ced7:
 
     # Eric_05 "Ого. Вот это запросы! Ну, мы договоримся, Макс. Деньги для меня не проблема, но в разумных пределах, конечно..."
-    Eric_05 ""
+    Eric_05 "Wow. Here are the requests! Well, we'll make a deal, Max. Money is not a problem for me, but within reason, of course..."
 
 # game/events/eric.rpy:241
 translate english Eric_talk_afterdinner_get_a7de4879:
 
     # Max_01 "Сколько?"
-    Max_01 ""
+    Max_01 "How much?"
 
 # game/events/eric.rpy:242
 translate english Eric_talk_afterdinner_get_159a1b33:
 
     # Eric_04 "Посмотрим на твоё поведение. Ещё рано торговаться. Если будешь в своё время закрывать глаза, то денег будет больше. Ну а если будешь мешать, то..."
-    Eric_04 ""
+    Eric_04 "Let's look at your behavior. It's too early to bargain. If you close your mouth closed, there'll be plenty. And if you get in the way, well..."
 
 # game/events/eric.rpy:243
 translate english Eric_talk_afterdinner_get_872bbc39:
 
     # Max_07 "Ладно. А что насчёт подглядывать? Это можно?"
-    Max_07 ""
+    Max_07 "Okay. What about peeping? Is this possible?"
 
 # game/events/eric.rpy:244
 translate english Eric_talk_afterdinner_get_eec94b44:
 
     # Eric_01 "Ну лично я не возражаю. Думаю, даже твою маму подготовлю, чтобы если заметила, то не наказывала. Если ты помнишь, со следующей недели шлёпать вас будут голыми, а это очень унизительно... Что ещё ты там просил?"
-    Eric_01 ""
+    Eric_01 "Well, personally, I don't mind. I think I'll even prepare your mother so that if she notices, she won't punish you. If you remember, from next week you will be spanked naked, and this is very humiliating... What else did you ask for?"
 
 # game/events/eric.rpy:245
 translate english Eric_talk_afterdinner_get_d2c545b7:
 
     # Max_08 "Я бы тоже хотел кое-кого..."
-    Max_08 ""
+    Max_08 "I'd like someone, too..."
 
 # game/events/eric.rpy:246
 translate english Eric_talk_afterdinner_get_9720f70e:
 
     # Eric_02 "Если ты про свою семью, то хотя я тебя и понимаю, но торговаться на этот счёт не намерен. Я тебе буду платить за твоё невмешательство. Более того, даже разрешу подглядывать без последствий, а вот все женщины в семье - мои." nointeract
-    Eric_02 "" nointeract
+    Eric_02 "If you're talking about your family, I understand you, but I don't intend to bargain on it. I'll pay you for non-interference. What's more, I'll even let you peek without consequences, but all the women in the family are mine." nointeract
 
 # game/events/eric.rpy:251
 translate english Eric_talk_afterdinner_get_9af01c97:
 
     # Eric_09 "Ну, тогда мы с тобой перед диллемой. Ты знаешь слишком много о моих планах, я знаю, что ты тот ещё извращенец... Как быть?" nointeract
-    Eric_09 "" nointeract
+    Eric_09 "Well, then you and I are in front of the dilemma. You know too much about my plans, I know you're a pervert... What's it gonna be?" nointeract
 
 # game/events/eric.rpy:254
 translate english Eric_talk_afterdinner_get_5024cd98:
 
     # Eric_03 "Ну, это как посмотреть. Ты хотел потребовать \"доступа\" к женщинам в своей семье... Если бы твоя мать узнала, сомневаюсь, что это бы хорошо для тебя закончилось, правда?" nointeract
-    Eric_03 "" nointeract
+    Eric_03 "Well, that depends. You wanted to demand \ "access\" to the women in your family... If your mother found out, I doubt it would end well for you, right?" nointeract
 
 # game/events/eric.rpy:264
 translate english Eric_talk_afterdinner_get_91cf9d80:
 
     # Eric_02 "Боюсь, что да. Либо ты со мной, либо против меня. Напомню - я тебе буду платить, ты сможешь смотреть, но нельзя трогать... Ну или война и ты точно проиграешь. Очень быстро..." nointeract
-    Eric_02 "" nointeract
+    Eric_02 "I'm afraid so. Either you're with me or you're against me. I'll remind you that I'll pay you, so you can watch, but you can't touch... The alternative is a war you'll definitely lose. Quickly..." nointeract
 
 # game/events/eric.rpy:270
 translate english Eric_talk_afterdinner_get_b74ade66:
 
     # Eric_05 "Вот это разговор! Ну, тогда мы точно поладим. Если я увижу, что ты держишь свои обещания, то даже дам тебе кое-что, от чего ни один мужик не откажется, поверь!"
-    Eric_05 ""
+    Eric_05 "What a conversation! Well, then we'll definitely get along. If I see that you keep your promises, I'll even give you something that no man will refuse, believe me!"
 
 # game/events/eric.rpy:271
 translate english Eric_talk_afterdinner_get_d9312f73:
 
     # Max_03 "О чём речь?"
-    Max_03 ""
+    Max_03 "What are you talking about?"
 
 # game/events/eric.rpy:272
 translate english Eric_talk_afterdinner_get_773ff7d1:
 
     # Eric_06 "Любопытно? Ну я намекну... Сможешь не только подглядывать, но и принимать участие..."
-    Eric_06 ""
+    Eric_06 "Are you curious? Well, I'll give you a hint... You'll be able to do a lot more than just peek..."
 
 # game/events/eric.rpy:273
 translate english Eric_talk_afterdinner_get_15087e37:
 
     # Max_06 "Да ладно?"
-    Max_06 ""
+    Max_06 "Oh, yeah?"
 
 # game/events/eric.rpy:274
 translate english Eric_talk_afterdinner_get_97426be0:
 
     # Eric_03 "Ага. Так что, в твоих интересах мне не только не мешать, но и помогать, если возникнет такая необходимость. Ну там, слово замолвить или сделать что-то..."
-    Eric_03 ""
+    Eric_03 "Yeah. So it's in your interest not only to stay out of my way, but to help me if I have to. You know, put in a good word or do something..."
 
 # game/events/eric.rpy:275
 translate english Eric_talk_afterdinner_get_67b5c25f:
 
     # Max_05 "Договорились!"
-    Max_05 ""
+    Max_05 "Deal!"
 
 # game/events/eric.rpy:276
 translate english Eric_talk_afterdinner_get_3d7ac95b:
 
     # Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
-    Eric_01 ""
+    Eric_01 "All right, Max. I am glad that we have sorted out and divided the territory. Now everything is in your hands. Well, in mine, too... Oh, your mother is coming. All right, bye!"
 
 translate english strings:
 
     # game/events/eric.rpy:154
     old "Да, я только за."
-    new ""
+    new "Yes, I'm all for it."
 
     # game/events/eric.rpy:154
     old "Тебе показалось. Я тебя ненавижу!"
-    new ""
+    new "You imagined it. I hate you!"
 
     # game/events/eric.rpy:162
     old "Думаю, воевать смысла нет..."
-    new ""
+    new "I think there is no point in fighting..."
 
     # game/events/eric.rpy:162
     old "Я тебя ненавижу!"
-    new ""
+    new "I hate you!"
 
     # game/events/eric.rpy:170
     old "Почему? Я подумал как следует. Воевать точно не хочу..."
-    new ""
+    new "Why? I thought hard. I definitely don't want to fight..."
 
     # game/events/eric.rpy:170
     old "Правильно. Я тебя ненавижу!"
-    new ""
+    new "That's right. I hate you!"
 
     # game/events/eric.rpy:181
     old "{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"
-    new ""
+    new "{color=[orange]}{i}{b}Attention:{/b} Your relationship has deteriorated significantly!{/i}{/color}"
 
     # game/events/eric.rpy:193
     old "Что? Ты ошибаешься!"
-    new ""
+    new "What? You're wrong!"
 
     # game/events/eric.rpy:193
     old "Они никакие не цыпочки!"
-    new ""
+    new "They're not sluts!"
 
     # game/events/eric.rpy:193
     old "Я вдруг понял... Да пошёл ты!"
-    new ""
+    new "I suddenly realized... Fuck you!"
 
     # game/events/eric.rpy:201
     old "Думаешь?"
-    new ""
+    new "You think so?"
 
     # game/events/eric.rpy:201
     old "Постой, и ты этого хочешь?"
-    new ""
+    new "Wait, is that what you want?"
 
     # game/events/eric.rpy:204
     old "А если я расскажу про это всем?"
-    new ""
+    new "But if I'm going to tell everyone?"
 
     # game/events/eric.rpy:204
     old "Только, если я что-то получу за это..."
-    new ""
+    new "Only if I get something for it..."
 
     # game/events/eric.rpy:204
     old "Ты подонок! Я передумал. Убирайся!"
-    new ""
+    new "You bastard! I changed my mind. Get out!"
 
     # game/events/eric.rpy:221
     old "Да я не собираюсь рассказывать, просто спросил..."
-    new ""
+    new "I'm not going to tell you, I just asked."
 
     # game/events/eric.rpy:221
     old "Вот и проверим..."
-    new ""
+    new "Let's check it out..."
 
     # game/events/eric.rpy:221
     old "Ты - псих ненормальный. Убирайся!"
-    new ""
+    new "You're a fucking lunatic. Get out!"
 
     # game/events/eric.rpy:226
     old "Да я пошутил! Конечно, не расскажу никому..."
-    new ""
+    new "Yes, I was joking! Of course I won't tell anyone..."
 
     # game/events/eric.rpy:226
     old "Вот и посмотрим..."
-    new ""
+    new "We'll see..."
 
     # game/events/eric.rpy:246
     old "Нет, на это я не согласен."
-    new ""
+    new "No, I don't agree to that."
 
     # game/events/eric.rpy:251
     old "Я не извращенец!"
-    new ""
+    new "I'm not a pervert!"
 
     # game/events/eric.rpy:251
     old "А есть только два варианта?"
-    new ""
+    new "Are there only two options?"
 
     # game/events/eric.rpy:251
     old "Ты знаешь... Я тут подумал. Да пошёл ты! Не надо мне ничего от тебя. Я от тебя избавлюсь!"
-    new ""
+    new "You know... I've been thinking. Fuck you! I don't want anything from you. I'll get rid of you!"
 
     # game/events/eric.rpy:254
     old "Тогда... Остаётся только послать тебя куда подальше. Такая дружба мне не нужна!"
-    new ""
+    new "Then... All I can do is tell you to go fuck yourself. I don't need that kind of friendship!"
 
     # game/events/eric.rpy:264
     old "Если так, то я согласен на твои условия, конечно!"
-    new ""
+    new "If so, I agree to your terms, of course!"
 
     # game/events/eric.rpy:264
     old "Знаешь, что... Эрик? А иди-ка ты в жопу! Без тебя справимся!"
-    new ""
+    new "You know what... Eric? Go fuck yourself! We can manage without you!"
 
     # game/events/eric.rpy:277
     old "{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"
-    new ""
+    new "{color=[lime]}{i}{b}Attention:{/b} Your relationship has improved significantly {/i} {/color}"
 

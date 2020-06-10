@@ -2007,7 +2007,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:698
     old "Извини, мам..."
-    new "I'm sorry, mom"
+    new "I'm sorry, Mom"
 
 # TODO: Translation updated at 2020-06-08 10:23
 
@@ -2015,361 +2015,361 @@ translate english strings:
 translate english breakfast_18_21172a5c:
 
     # Ann_04 "Смотрю, даже Макс шорты натянул. Ну как, легче стало?"
-    Ann_04 ""
+    Ann_04 "I see even Max put his shorts on. So, did it get any easier?"
 
 # game/dialogues/breakfast.rpy:729
 translate english breakfast_18_6d7508e2:
 
     # Max_01 "Ага. Давно надо было..."
-    Max_01 ""
+    Max_01 "Yeah. It's been a while..."
 
 # game/dialogues/breakfast.rpy:730
 translate english breakfast_18_9fb4f2cb:
 
     # Lisa_02 "Ага, согласна с Максом. Так намного комфортнее и легче. Эта жара просто убивает..."
-    Lisa_02 ""
+    Lisa_02 "Yeah, I agree with max. This is much more comfy. The heat is was killing me..."
 
 # game/dialogues/breakfast.rpy:731
 translate english breakfast_18_ca7093e6:
 
     # Max_07 "Кстати, мне показалось или стало ещё более жарко?"
-    Max_07 ""
+    Max_07 "By the way, was it my imagination or did it get even hotter?"
 
 # game/dialogues/breakfast.rpy:732
 translate english breakfast_18_fe79a7f5:
 
     # Kira_01 "Само собой. Начинается самый жаркий сезон, а у вас ещё и кондиционеров нет. Кстати, дом у вас шикарный. А если были бы кондиционеры - был бы идеальным!"
-    Kira_01 ""
+    Kira_01 "Well it is the time of year where the heat really starts to pick up. By the way, this house is gorgeous! Even with the lack on air-conditioning."
 
 # game/dialogues/breakfast.rpy:733
 translate english breakfast_18_33a7119d:
 
     # Max_02 "Ну, тут есть бассейн..."
-    Max_02 ""
+    Max_02 "Well, there's a pool..."
 
 # game/dialogues/breakfast.rpy:734
 translate english breakfast_18_c1792d62:
 
     # Kira_07 "А вот это я обожаю. После пары лет жизни в тех холодных краях, я бы целыми днями под солнцем валялась..."
-    Kira_07 ""
+    Kira_07 "This is what I love. Being able to expose myself to the sun after so many years living in icy corners of the world..."
 
 # game/dialogues/breakfast.rpy:735
 translate english breakfast_18_59e2e29b:
 
     # Ann_05 "Кстати, об этом. Ты бы рассказала, где была, что делала, что планируешь..."
-    Ann_05 ""
+    Ann_05 "Speaking of which. You could have told me where you were, what you were doing, what you were planning..."
 
 # game/dialogues/breakfast.rpy:736
 translate english breakfast_18_e2cfae36:
 
     # Max_04 "Ага, нам всем интересно..."
-    Max_04 ""
+    Max_04 "Yeah, we're all curious..."
 
 # game/dialogues/breakfast.rpy:737
 translate english breakfast_18_9aadeb5e:
 
     # Kira_02 "Да не о чем рассказывать. Работала то тут, то там... Скукота. А сюда я приехала по работе, точнее, хочу устроиться кое-куда. И так здорово, что моя семья уже тут!"
-    Kira_02 ""
+    Kira_02 "There's nothing all that interesting to tell. Did some work here and there... Boring! I decided to come here and scope out some opportunities, and it turned out my family was close-by!"
 
 # game/dialogues/breakfast.rpy:738
 translate english breakfast_18_6935bae9:
 
     # Max_03 "А кем ты хочешь утроиться?"
-    Max_03 ""
+    Max_03 "What kind of opportunities?"
 
 # game/dialogues/breakfast.rpy:739
 translate english breakfast_18_86c53803:
 
     # Kira_14 "Ну... Я не знаю как об этом рассказать..."
-    Kira_14 ""
+    Kira_14 "Well... I don't know how to tell you this..."
 
 # game/dialogues/breakfast.rpy:740
 translate english breakfast_18_3bbc12a6:
 
     # Max_07 "О чём?"
-    Max_07 ""
+    Max_07 "What's that?"
 
 # game/dialogues/breakfast.rpy:741
 translate english breakfast_18_112c970e:
 
     # Ann_02 "Да ладно, Кир, можешь рассказать. Я видела в твоих вещах форму горничной. Наверняка, решила устроиться в какой-то богатый дом, чтобы платили много, а тебе только пыль сдувать. Угадала?"
-    Ann_02 ""
+    Ann_02 "Come on, Kira, you can be open about it. I saw the maid's uniform in your bag. You probably got a job in some rich house that pays well, and all you have to do is blow some dust off. Right?"
 
 # game/dialogues/breakfast.rpy:742
 translate english breakfast_18_81016e2b:
 
     # Max_04 "Горничной?"
-    Max_04 ""
+    Max_04 "A maid?"
 
 # game/dialogues/breakfast.rpy:743
 translate english breakfast_18_c316b223:
 
     # Kira_03 "Ну... Да. Просто подумала, что это не то, чем стоит гордиться. Ты вот работаешь в такой компании крупной, да ещё... Кстати, кем ты работаешь сейчас?" nointeract
-    Kira_03 "" nointeract
+    Kira_03 "Well ... pretty much. I just thought it wasn't something to be proud of. You work for such a big company, after all... By the way, are you still with them, Ann? " nointeract
 
 # game/dialogues/breakfast.rpy:746
 translate english breakfast_18_4898e38f:
 
     # Ann_04 "Макс! Как тебе не стыдно. Я личный ассистент руководителя регионального отделения компании..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Max! Shame on you. I'm a personal assistant to the head of the company's regional division..." nointeract
 
 # game/dialogues/breakfast.rpy:753
 translate english breakfast_18_e1fcda17:
 
     # Ann_02 "Макс! Я не секретарша, а личный ассистент руководителя регионального отделения компании..." nointeract
-    Ann_02 "" nointeract
+    Ann_02 "Max! I'm not a secretary, I'm a personal assistant to the head of the company's regional division..." nointeract
 
 # game/dialogues/breakfast.rpy:760
 translate english breakfast_18_2ffeff05:
 
     # Ann_06 "Я же тебе рассказывала, что я сейчас личный ассистент руководителя регионального отделения компании..." nointeract
-    Ann_06 "" nointeract
+    Ann_06 "I told you, I'm now a personal assistant to the head of the company's regional division..." nointeract
 
 # game/dialogues/breakfast.rpy:766
 translate english breakfast_18_7701c024:
 
     # Ann_17 "Макс! Сейчас выпорю у всех на глазах, если будешь продолжать в подобном духе!"
-    Ann_17 ""
+    Ann_17 "Max! I'll spank you in front of everyone if you keep this up!"
 
 # game/dialogues/breakfast.rpy:767
 translate english breakfast_18_84309eb3:
 
     # Max_00 "Ладно, ладно..."
-    Max_00 ""
+    Max_00 "Okay, okay..."
 
 # game/dialogues/breakfast.rpy:768
 translate english breakfast_18_next_f5423a85:
 
     # Kira_05 "Ну, то есть, сфера обслуги, верно? Да шучу я, Ань, шучу. Ладно, а что там с этим вашим Эриком? Какой он?" nointeract
-    Kira_05 "" nointeract
+    Kira_05 "Okay, what about this Eric guy? What's he like?" nointeract
 
 # game/dialogues/breakfast.rpy:771
 translate english breakfast_18_next_9ffa848f:
 
     # Ann_16 "Макс! Да как ты разговариваешь! Снимай штаны!" nointeract
-    Ann_16 "" nointeract
+    Ann_16 "Max! How dare you talk like that! Take off your pants!" nointeract
 
 # game/dialogues/breakfast.rpy:774
 translate english breakfast_18_next_b4169c04:
 
     # Ann_12 "Так то лучше. И следи за своим языком. В этот раз прощаю, но чтобы такого больше не было!"
-    Ann_12 ""
+    Ann_12 "That's better. And watch your language. I forgive you this time, but don't let it happen again!"
 
 # game/dialogues/breakfast.rpy:776
 translate english breakfast_18_next_dc28dbf2:
 
     # Ann_18 "Макс! Если бы не твоя тётя, я бы тебя точно выпорола бы прямо здесь и сейчас. Но отложим это на другой раз. Считай, что сегодня тебе повезло."
-    Ann_18 ""
+    Ann_18 "Max! If it wasn't for your aunt, I would have whipped you right here and now. But let's put it off for another time. Consider yourself lucky today."
 
 # game/dialogues/breakfast.rpy:777
 translate english breakfast_18_next_6e7aee99:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Well..."
 
 # game/dialogues/breakfast.rpy:778
 translate english breakfast_18_next_38a95e47:
 
     # Kira_13 "Ого! У вас снова в моде физические наказания? Прямо как у нас в детстве, да Ань? Неужели, дети перестали слушаться обычных голосовых команд?" nointeract
-    Kira_13 "" nointeract
+    Kira_13 "Wow! Corporal punishment is back in fashion? Just like when we were kids, huh Ann? Did the kids stop listening to normal voice commands?" nointeract
 
 # game/dialogues/breakfast.rpy:781
 translate english breakfast_18_next_7b275243:
 
     # Kira_04 "Да ладно, расслабься Макс, я же шучу. Ты разве забыл, что я умная, весёлая и красивая?"
-    Kira_04 ""
+    Kira_04 "Come on, relax, I'm just kidding. Have you forgotten that I'm smart, funny, and beautiful?"
 
 # game/dialogues/breakfast.rpy:782
 translate english breakfast_18_next_455cade9:
 
     # Max_01 "Да помню, помню..."
-    Max_01 ""
+    Max_01 "Yes, I remember..."
 
 # game/dialogues/breakfast.rpy:784
 translate english breakfast_18_next_7fc3d25b:
 
     # Kira_14 "Да. Бывает, получишь двойку и думаешь. Идти домой или нет. Кушать хочется, а дома сначала накормят десертом - ремнём по голой заднице... Ух, вот это были времена..."
-    Kira_14 ""
+    Kira_14 "Yeah. Sometimes you'd fail a test at school and then you'd think if it was worth going home or not. If you were hungry, you'd go home and get your dessert first- a belt on your bare ass... Wow, those were the days..."
 
 # game/dialogues/breakfast.rpy:785
 translate english breakfast_18_next_57c98dc0:
 
     # Max_08 "Хорошего мало..."
-    Max_08 ""
+    Max_08 "Not good enough..."
 
 # game/dialogues/breakfast.rpy:787
 translate english breakfast_18_next_df2f93f7:
 
     # Kira_07 "А ты, Макс, я вижу, нашёл с ним общий язык? Значит, Эрик и правда хороший парень. Нужно будет с ним познакомиться..." nointeract
-    Kira_07 "" nointeract
+    Kira_07 "So you're getting along well, Max? Seems like Eric is a really good guy. I'll need to meet him..." nointeract
 
 # game/dialogues/breakfast.rpy:790
 translate english breakfast_18_next_cc699149:
 
     # Kira_06 "Так это же здорово! Поздравляю, сестрёнка! Когда свадьба?"
-    Kira_06 ""
+    Kira_06 "So that's great! Congratulations, Sis! When's the wedding?"
 
 # game/dialogues/breakfast.rpy:791
 translate english breakfast_18_next_1758a9af:
 
     # Ann_02 "Да рано ещё о свадьбе говорить. Мы недавно только познакомились. Да, сделал предложение, да, я приняла, но ничего конкретного ещё не решили..."
-    Ann_02 ""
+    Ann_02 "It's too early to talk about a wedding. We just met recently. Yes, he made an offer, Yes, I accepted, but nothing concrete has been decided yet..."
 
 # game/dialogues/breakfast.rpy:797
 translate english breakfast_18_next_fd109b60:
 
     # Ann_07 "Ну, он сильный, мужественный, внимательный, ответственный... В общем, мужчина моей мечты... Я же тебе рассказывала уже о нём?"
-    Ann_07 ""
+    Ann_07 "Well, he is strong, courageous, attentive, responsible... In General, the man of my dreams... I told you about him, didn't I?"
 
 # game/dialogues/breakfast.rpy:799
 translate english breakfast_18_next_57a8ba37:
 
     # Kira_01 "Ну, так или иначе, нужно будет познакомиться с этим вашим Эриком. Столько разговоров, историй. Хочу всё знать!"
-    Kira_01 ""
+    Kira_01 "Well, one way or another, we'll have to meet this Eric of yours. So much talk, stories. I want to know everything!"
 
 # game/dialogues/breakfast.rpy:800
 translate english breakfast_18_next_856aad49:
 
     # Ann_04 "Да успеешь ещё. Кстати, мы сегодня едем на шоппинг, за нами Эрик пришлёт машину, там и познакомитесь. Если хочешь, поехали с нами!"
-    Ann_04 ""
+    Ann_04 "Yes, you will have time yet. By the way, we're going shopping today, and Eric will send us a car to go meet him there.If you want, come with us!"
 
 # game/dialogues/breakfast.rpy:801
 translate english breakfast_18_next_c706d294:
 
     # Max_08 "А может быть, я хочу с тётей пообщаться..."
-    Max_08 ""
+    Max_08 "Or maybe I want to talk to my Aunt..."
 
 # game/dialogues/breakfast.rpy:802
 translate english breakfast_18_next_266789ea:
 
     # Kira_05 "Ну если племянник настаивает, его нельзя обижать. А если серьёзно, то я бы на солнышке повалялась. К тому же, у меня новый купальник..."
-    Kira_05 ""
+    Kira_05 "Well, if the nephew insists, it couldn't him. But seriously, I'd like to lie in the sun. Besides, I have a new bathing suit..."
 
 # game/dialogues/breakfast.rpy:803
 translate english breakfast_18_next_7f1e65f0:
 
     # Ann_02 "С каких пор ты носишь купальники? Ты меня удивляешь всё больше, Кира. Но я рада, что ты за ум взялась. К тому же, тут дети..."
-    Ann_02 ""
+    Ann_02 "Since when do you wear swimsuits? You surprise me more and more, Kira. But I'm glad you've come to your senses. Besides, there are children here..."
 
 # game/dialogues/breakfast.rpy:804
 translate english breakfast_18_next_6bc24e91:
 
     # Max_09 "Я уже взрослый!"
-    Max_09 ""
+    Max_09 "I'm an adult!"
 
 # game/dialogues/breakfast.rpy:805
 translate english breakfast_18_next_d00b8c9b:
 
     # Kira_07 "Только из-за твоих детей и купила этот самый купальник. А так я не очень люблю все эти верёвочки..."
-    Kira_07 ""
+    Kira_07 "It was only because of your children that I bought this very swimsuit. As it is, I don't like all these strings very much..."
 
 # game/dialogues/breakfast.rpy:806
 translate english breakfast_18_next_ac565b62:
 
     # Max_07 "Какие верёвочки?"
-    Max_07 ""
+    Max_07 "What strings?"
 
 # game/dialogues/breakfast.rpy:807
 translate english breakfast_18_next_accdd7e1:
 
     # Ann_04 "Верёвочки? Наверняка, опять супермини-бикини? Ох, Кира... Я уж думала ты и правда повзрослела... Ладно, спасибо всем за завтрак. Пора собираеться на шоппинг."
-    Ann_04 ""
+    Ann_04 "Strings? Surely, again, a super mini-bikini? Oh, Kira... I thought you'd really grown up... Okay, thank you all for Breakfast. It's time to go shopping."
 
 # game/dialogues/breakfast.rpy:808
 translate english breakfast_18_next_81d2ad52:
 
     # Max_01 "Да, спасибо..."
-    Max_01 ""
+    Max_01 "Yes, thank you..."
 
 # game/dialogues/breakfast.rpy:809
 translate english breakfast_18_next_782a5fef:
 
     # Kira_04 "Совсем забыла сказать, что сегодня я вернусь домой поздно. Где мне лечь спать?"
-    Kira_04 ""
+    Kira_04 "I completely forgot to tell you that I'm coming home late tonight. Where should I sleep?"
 
 # game/dialogues/breakfast.rpy:810
 translate english breakfast_18_next_098c64a8:
 
     # Max_03 "Вернёшься? Откуда?"
-    Max_03 ""
+    Max_03 "Where are you coming back from?"
 
 # game/dialogues/breakfast.rpy:811
 translate english breakfast_18_next_0e8e13c0:
 
     # Ann_06 "Ну, либо с Лизой в комнате на кровати Макса, а он в гостиной поспит, либо..."
-    Ann_06 ""
+    Ann_06 "Well, you could sleep with Lisa on max's bed, and he'll sleep in the living room, or..."
 
 # game/dialogues/breakfast.rpy:812
 translate english breakfast_18_next_0a2cd2b6:
 
     # Max_04 "Мне без разницы, если что..."
-    Max_04 ""
+    Max_04 "I don't care if there's..."
 
 # game/dialogues/breakfast.rpy:813
 translate english breakfast_18_next_0f7bf573:
 
     # Kira_02 "Ой, а давай я в гостиной буду спать, чтобы никого не тревожить, а?"
-    Kira_02 ""
+    Kira_02 "Oh, how about I just sleep in the living room so I don't disturb anyone?"
 
 # game/dialogues/breakfast.rpy:814
 translate english breakfast_18_next_e1c445f6:
 
     # Ann_05 "Как хочешь, Кир. Где тебе будет удобнее. Постельное под диваном. Его можно раздвинуть, ну, сама разберёшься тогда. Всё, мы побежали..."
-    Ann_05 ""
+    Ann_05 "As you wish, Kira. Wherever you're more comfortable. The bed's under the couch. You can spread it out, well, you'll figure it out then. Okay, we're going to go..."
 
 # game/dialogues/breakfast.rpy:815
 translate english breakfast_18_next_bec83eb5:
 
     # Max_01 "Давайте, удачи..."
-    Max_01 ""
+    Max_01 "Go ahead, have fun..."
 
 translate english strings:
 
     # game/dialogues/breakfast.rpy:743
     old "Горничной Эрика!"
-    new ""
+    new "Eric's Maid!"
 
     # game/dialogues/breakfast.rpy:743
     old "Секретаршей"
-    new ""
+    new "Secretary"
 
     # game/dialogues/breakfast.rpy:746
     old "В общем, секретарша..."
-    new ""
+    new "So, the Secretary..."
 
     # game/dialogues/breakfast.rpy:753
     old "Ну я так и сказал - секретарша..."
-    new ""
+    new "Well, that's what I said, the Secretary..."
 
     # game/dialogues/breakfast.rpy:768
     old "Подонок, каких мало..."
-    new ""
+    new "Bastard, how little..."
 
     # game/dialogues/breakfast.rpy:768
     old "Нормальный мужик"
-    new ""
+    new "Normal guy."
 
     # game/dialogues/breakfast.rpy:771
     old "Извини, мам, я пошутил..."
-    new ""
+    new "Sorry, Mom, I was just kidding..."
 
     # game/dialogues/breakfast.rpy:771
     old "Ну и сниму. От своих слов я не отказываюсь!"
-    new ""
+    new "Well, I'll take it off. I'm not giving up on my words!"
 
     # game/dialogues/breakfast.rpy:778
     old "Очень смешно, тётя Кира..."
-    new ""
+    new "Very funny, Aunt Kira..."
 
     # game/dialogues/breakfast.rpy:778
     old "Вас тоже пороли?"
-    new ""
+    new "Have you been spanked, too?"
 
     # game/dialogues/breakfast.rpy:787
     old "А ещё он маме предложение сделал..."
-    new ""
+    new "And he also proposed to Mom..."
 
     # game/dialogues/breakfast.rpy:787
     old "Ну, не настолько хороший..."
-    new ""
+    new "Well, not so good..."
 
