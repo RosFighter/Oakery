@@ -3536,7 +3536,7 @@ translate english lisa_sorry_gifts_bad_05076bc1_1:
 translate english lisa_sorry_gifts_middle_a4afb32f:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Um ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Um... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1489
 translate english lisa_sorry_gifts_middle_a663e899:
@@ -3638,7 +3638,7 @@ translate english lisa_sorry_gifts_middle_9eb46fa9_1:
 translate english lisa_sorry_gifts_middle_a4afb32f_1:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Hmm... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1526
 translate english lisa_sorry_gifts_middle_a663e899_1:
@@ -3722,7 +3722,7 @@ translate english lisa_sorry_gifts_middle_88607894:
 translate english lisa_sorry_gifts_middle_a4afb32f_2:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Um ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Um... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1544
 translate english lisa_sorry_gifts_middle_a663e899_2:
@@ -3800,7 +3800,7 @@ translate english lisa_sorry_gifts_middle_a2dbe53b_2:
 translate english lisa_sorry_gifts_middle_a4afb32f_3:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Hmm... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1577
 translate english lisa_sorry_gifts_middle_a663e899_3:
@@ -3866,7 +3866,7 @@ translate english lisa_sorry_gifts_middle_05076bc1_1:
 translate english lisa_sorry_gifts_middle_a4afb32f_4:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Hmm... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1600
 translate english lisa_sorry_gifts_middle_a663e899_4:
@@ -3998,7 +3998,7 @@ translate english lisa_sorry_gifts_middle_f5f8687c_1:
 translate english lisa_sorry_gifts_middle_a4afb32f_5:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Um ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Um... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1664
 translate english lisa_sorry_gifts_middle_a663e899_5:
@@ -4064,7 +4064,7 @@ translate english lisa_sorry_gifts_middle_f5f8687c_2:
 translate english lisa_sorry_gifts_middle_a4afb32f_6:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Hmm... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1695
 translate english lisa_sorry_gifts_middle_a663e899_6:
@@ -4130,7 +4130,7 @@ translate english lisa_sorry_gifts_middle_f5f8687c_3:
 translate english lisa_sorry_gifts_middle_a4afb32f_7:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Hmm... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1726
 translate english lisa_sorry_gifts_middle_a663e899_7:
@@ -4196,7 +4196,7 @@ translate english lisa_sorry_gifts_middle_f5f8687c_4:
 translate english lisa_sorry_gifts_middle_a4afb32f_8:
 
     # Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
-    Lisa_01 "Hmm ... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
+    Lisa_01 "Hmm... Well, they're delicious... I don't really like cream, but they'll do. Thank you!"
 
 # game/dialogues/lisatalk.rpy:1757
 translate english lisa_sorry_gifts_middle_a663e899_8:
@@ -5282,7 +5282,7 @@ translate english lisa_sorry_gifts_good_5dd722ed:
 translate english lisa_sorry_gifts_good_3bf1b2fc:
 
     # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-    Max_05 "{i}Oh... Kisses from my little sister - a dream come true! It feels so good when she snuggles up to me ... {/i}"
+    Max_05 "{i}Oh... Kisses from my little sister - a dream come true! It feels so good when she snuggles up to me... {/i}"
 
 # game/dialogues/lisatalk.rpy:2291
 translate english lisa_sorry_gifts_good_0559f620_12:
@@ -5478,7 +5478,7 @@ translate english gift_bathrobe_5dd722ed:
 translate english gift_bathrobe_3bf1b2fc:
 
     # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-    Max_05 "{i}Oh... Kisses from my little sister - it's a fairy tale! And how nice it is when she snuggles up to me ... {/i}"
+    Max_05 "{i}Oh... Kisses from my little sister - it's a fairy tale! And how nice it is when she snuggles up to me... {/i}"
 
 # game/dialogues/lisatalk.rpy:1284
 translate english gift_bathrobe_0559f620:
@@ -5743,7 +5743,7 @@ translate english MorningWoodCont_4a409afb:
 translate english MorningWoodCont_f5cbe6f0:
 
     # Lisa_11 "Э-э-э... Ой, всё! Я... вообще в ванную шла..."
-    Lisa_11 "Uh, uh... Oh, that's it! ... I was just going to the bathroom..."
+    Lisa_11 "Uh, uh... Oh, that's it!... I was just going to the bathroom..."
 
 # game/dialogues/lisatalk.rpy:197
 translate english MorningWoodCont_e65dd32b:
@@ -5815,7 +5815,7 @@ translate english MorningWoodCont_78383bc2:
 translate english MorningWoodCont_78590044:
 
     # Lisa_05 "Ну... да... он как-то притягивает... Ой, что я такое говорю..."
-    Lisa_05 "Well ... Yes... it's kind interesting... Oh, what am I saying.."
+    Lisa_05 "Well... Yes... it's kind interesting... Oh, what am I saying.."
 
 # game/dialogues/lisatalk.rpy:215
 translate english MorningWoodCont_20baebc9:
@@ -6291,7 +6291,7 @@ translate english Lisa_HomeWork_next_foot_mass_a46698a5:
 translate english Lisa_HomeWork_next_foot_mass_391645db:
 
     # Max_04 "{i}А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки...{/i}" nointeract
-    Max_04 "{i}Lisa loves what I'm doing. She won't really admit it, but it shows. I like her slender legs ... {/i}" nointeract
+    Max_04 "{i}Lisa loves what I'm doing. She won't really admit it, but it shows. I like her slender legs... {/i}" nointeract
 
 # game/dialogues/lisatalk.rpy:1268
 translate english Lisa_HomeWork_next_foot_mass_20bec9f8:
@@ -6405,7 +6405,7 @@ translate english Lisa_HomeWork_shoulders_052f029d:
 translate english Lisa_HomeWork_shoulders_10265cec:
 
     # Lisa_04 "[lisa_good_mass!t]Ммм... Макс... Не очень хочется это говорить, но по-моему это уже не плечи..."
-    Lisa_04 "[lisa_good_mass!t]Mmm... Max ... I Don't really want to say this, but I don't think it's my shoulders anymore..."
+    Lisa_04 "[lisa_good_mass!t]Mmm... Max... I Don't really want to say this, but I don't think it's my shoulders anymore..."
 
 # game/dialogues/lisatalk.rpy:1337
 translate english Lisa_HomeWork_shoulders_a3369cfd:

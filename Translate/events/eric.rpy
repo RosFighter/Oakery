@@ -802,7 +802,7 @@ translate english eric_ann_tv_closer1_d646f6b6:
 translate english eric_ann_tv_closer1_224a6ad6:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh ... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+    Max_07 "Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
 
 # game/events/eric.rpy:314
 translate english eric_ann_tv_closer1_bdf10685:
@@ -814,7 +814,7 @@ translate english eric_ann_tv_closer1_bdf10685:
 translate english eric_ann_tv_closer1_224a6ad6_1:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh ... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+    Max_07 "Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
 
 # game/events/eric.rpy:318
 translate english eric_ann_tv_closer1_dd256959:
@@ -906,7 +906,7 @@ translate english eric_ann_shower_alt_peepeng_065723ba:
 translate english eric_ann_shower_alt_peepeng_cedd144b:
 
     # Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
-    Max_05 "[undetect!t]Wow! Eric's taking Mom from behind, so actively... And ... it seems that she likes it very much, she even moves towards him... and languishes with passion!" nointeract
+    Max_05 "[undetect!t]Wow! Eric's taking Mom from behind, so actively... And... it seems that she likes it very much, she even moves towards him... and languishes with passion!" nointeract
 
 # game/events/eric.rpy:631
 translate english eric_ann_shower_alt_peepeng_c849c0ca:

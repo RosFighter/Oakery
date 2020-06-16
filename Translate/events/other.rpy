@@ -744,7 +744,7 @@ translate english Kira_arrival_end_yard_4fd7558f:
 translate english Kira_arrival_end_yard_f70abaf0:
 
     # Max_07 "Э... Ну... да..."
-    Max_07 "Er ... Well ... Yes..."
+    Max_07 "Er... Well... Yes..."
 
 # game/events/other.rpy:329
 translate english Kira_arrival_end_yard_761bc9e3:

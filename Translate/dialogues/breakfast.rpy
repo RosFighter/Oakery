@@ -2105,7 +2105,7 @@ translate english breakfast_18_81016e2b:
 translate english breakfast_18_c316b223:
 
     # Kira_03 "Ну... Да. Просто подумала, что это не то, чем стоит гордиться. Ты вот работаешь в такой компании крупной, да ещё... Кстати, кем ты работаешь сейчас?" nointeract
-    Kira_03 "Well ... pretty much. I just thought it wasn't something to be proud of. You work for such a big company, after all... By the way, are you still with them, Ann? " nointeract
+    Kira_03 "Well... pretty much. I just thought it wasn't something to be proud of. You work for such a big company, after all... By the way, are you still with them, Ann? " nointeract
 
 # game/dialogues/breakfast.rpy:746
 translate english breakfast_18_4898e38f:

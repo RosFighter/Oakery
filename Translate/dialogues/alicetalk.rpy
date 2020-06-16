@@ -2310,7 +2310,7 @@ translate english massage_sunscreen_right_foot_facf4587:
 translate english massage_sunscreen_shin_a07f50ac:
 
     # Max_02 "{i}Помассируем эти стройные ножки, вот так...{/i}"
-    Max_02 "{i}Massage these slender legs like this ... {/i}"
+    Max_02 "{i}Massage these slender legs like this... {/i}"
 
 # game/dialogues/alicetalk.rpy:1216
 translate english massage_sunscreen_shin_35e52f27:
@@ -5528,7 +5528,7 @@ translate english gift_pajamas_be8312c9:
 translate english gift_pajamas_16b73ea9:
 
     # Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
-    Max_08 "Of course I'm not looking ... Hey! And you're not supposed to wear panties! We had an agreement!"
+    Max_08 "Of course I'm not looking... Hey! And you're not supposed to wear panties! We had an agreement!"
 
 # game/dialogues/alicetalk.rpy:1182
 translate english gift_pajamas_c14c7755:
@@ -5576,7 +5576,7 @@ translate english gift_pajamas_14440938:
 translate english gift_pajamas_2e964202:
 
     # Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
-    Max_08 "I'm not staring ... Hey! And you're not supposed to wear panties! We had an agreement!"
+    Max_08 "I'm not staring... Hey! And you're not supposed to wear panties! We had an agreement!"
 
 # game/dialogues/alicetalk.rpy:1211
 translate english gift_pajamas_c14c7755_1:
@@ -6377,7 +6377,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:491
     old "Э... Я к тебе не подкатываю. Просто, жарко же..."
-    new "Uh ... I'm not hitting on you. It's just hot..."
+    new "Uh... I'm not hitting on you. It's just hot..."
 
     # game/dialogues/alicetalk.rpy:491
     old "Ну у тебя и фантазии, Алиса... Я не подкатываю!"

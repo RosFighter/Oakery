@@ -1641,7 +1641,7 @@ translate english alice_after_club_knock_c47a2e6b:
 translate english alice_after_club_knock_5fc8c8ba:
 
     # Max_07 "Э... Ты точно в порядке?"
-    Max_07 "Uh ... are you sure you're okay?"
+    Max_07 "Uh... are you sure you're okay?"
 
 # game/events/alice.rpy:1146
 translate english alice_after_club_knock_f3c34ec5:
