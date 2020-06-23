@@ -87,6 +87,9 @@ define talks = {
     'l.ab.sec2'  : TalkTheme('lisa', _("Может всё-таки поделишься своими переживаниями по поводу Алисы?"), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, dcv['alice.secret'].stage>0, dcv['alice.secret'].done])"),
     'lisa.hand'  : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "all([talk_var['lisa.handmass']==0, lisa.plan_name == 'phone', GetWeekday(day) in [2, 5]])"),
     'aboutbath'  : TalkTheme('alice', _("Насчёт ванны ночью..."), 'alice_about_bath', "flags['talkaboutbath']==1"),
+    'kt1'        : TalkTheme('kira', _("Да тут всегда хорошая погода..."), 'kira_firsttalk', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==0])"),
+    'kt2'        : TalkTheme('kira', _("Ага, как всегда..."), 'kira_talk2', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==1])"),
+    'kt3'        : TalkTheme('kira', _("Да, шикарная!"), 'kira_talk3', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==2])"),
     }
 
 

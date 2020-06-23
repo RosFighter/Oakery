@@ -536,7 +536,7 @@ label dinner_11:
         "Я подумаю...":
             Eric_03 "Ты знаешь, думать нужно быстрее. Потому-что выбор у тебя либо школа, либо военный лагерь, а потом и армия... Я бы выбрал армию на твоём месте, но с твоими физическими данными..."
             Max_09 "А что с моими данными?"
-            Eric_01 "Ну, они не очень. Хотя, тебя подготовят, натренеруют. А главное - научат дисциплине и субординации. Мама за тебя порадуется, когда увидишь, что мужиком стал!"
+            Eric_01 "Ну, они не очень. Хотя, тебя подготовят, натренеруют. А главное - научат дисциплине и субординации. Мама за тебя порадуется, когда увидит, что мужиком стал!"
     Max_15 "Да я уже мужик!"
     Eric_09 "Ну ладно, думай так... Заблуждаться никто не мешает..."
     Max_16 "Знаешь, что?"
@@ -673,10 +673,10 @@ label dinner_after_punishment:
         jump dinner_6
     elif all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]):
         jump dinner_11
-    # elif all([day>=12, GetWeekday(day)==0, talk_var['dinner']==11, talk_var['breakfast']==12])
-    #     jump dinner_12
-    # elif all([day>=17, GetWeekday(day)==5, talk_var['dinner']==12]):
-    #     jump dinner_17
+    elif all([day>=12, GetWeekday(day)==0, talk_var['dinner']==11, talk_var['breakfast']==12]):
+        jump dinner_12
+    elif all([day>=17, GetWeekday(day)==5, talk_var['dinner']==12]):
+        jump dinner_17
     else:
         jump typical_dinner
 

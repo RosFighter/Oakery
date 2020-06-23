@@ -526,68 +526,64 @@ init python:
         if name == 'dressed':
             chars[char].dress_inf = '00b'
         elif char == 'lisa':
+            # ставим текщущую одежды соотвестсвенно гардеробу
+            lisa.dress = clothes[lisa].casual.GetCur().suf
+            lisa.dress_inf = clothes[lisa].casual.GetCur().info
             if name == 'sleep':
-                lisa.dress = clothes[lisa].sleep.GetCur().suf  #'b' if poss['sg'].stn > 2 else 'a'
-                lisa.dress_inf = clothes[lisa].sleep.GetCur().info  #'02a' if poss['sg'].stn > 2 else '02'
-
+                lisa.dress = clothes[lisa].sleep.GetCur().suf
+                lisa.dress_inf = clothes[lisa].sleep.GetCur().info
             elif name in ['shower', 'bath']:
                 lisa.dress_inf = '04a'
-
-            elif name in ['breakfast', 'dishes', 'read', 'phone', 'dinner']:
-                lisa.dress = clothes[lisa].casual.GetCur().suf  #'b' if 'bathrobe' in lisa.gifts and lisa.GetMood()[0] > 1 else 'a'
-                lisa.dress_inf = clothes[lisa].casual.GetCur().info  #'04' if 'bathrobe' in lisa.gifts and lisa.GetMood()[0] > 1 else '01a'
-
             elif name == 'in_shcool':
                 lisa.dress_inf = '01b'
-
-            elif name == 'sun':
-                lisa.dress = clothes[lisa].swimsuit.GetCur().suf  #'b' if 'bikini' in lisa.gifts else 'a'
-                lisa.dress_inf = clothes[lisa].swimsuit.GetCur().info  #'03b' if 'bikini' in lisa.gifts else '03'
-
-            elif name == 'swim':
-                lisa.dress = clothes[lisa].swimsuit.GetCur().suf  #'b' if 'bikini' in lisa.gifts else 'a'
+            elif name in ['sun', 'swim']:
+                lisa.dress = clothes[lisa].swimsuit.GetCur().suf
                 lisa.dress_inf = clothes[lisa].swimsuit.GetCur().info
-                if pose3_1 == '03':
+                if name == 'swim' and pose3_1 == '03':
                     lisa.dress_inf += 'w'
-
             elif name == 'homework':
-                if all([clothes[lisa].learn.cur > 0, GetRelMax('lisa')[0] > 2, lisa.GetMood()[0] > 2, 'bathrobe' in lisa.gifts]):
-                    lisa.dress = clothes[lisa].learn.GetCur().suf
-                    lisa.dress_inf = clothes[lisa].learn.GetCur().info
-                elif GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2:
+                # ставим текщущую одежды соотвестсвенно гардеробу
+                lisa.dress = clothes[lisa].learn.GetCur().suf
+                lisa.dress_inf = clothes[lisa].learn.GetCur().info
+                # откорректируем по настрению
+                relmood = GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2
+                if clothes[lisa].learn.rand and relmood:
+                    # если включен рандом и есть нужные настроение с отношением, то полотенце
                     lisa.dress  = 'c'
                     lisa.dress_inf = '04b'
-                elif 'bathrobe' in lisa.gifts:
-                    lisa.dress  = 'b'
-                    lisa.dress_inf = '04'
-                else:
-                    lisa.dress  = 'a'
-                    lisa.dress_inf = '01a'
+                elif clothes[lisa].learn.rand:  # рандом включен, но нет настроения
+                    if 'bathrobe' in lisa.gifts and clothes[lisa].learn.cur==2:  # есть халат и выбрано полотенце, ставим халат
+                        lisa.dress  = 'b'
+                        lisa.dress_inf = '04'
+                    elif 'bathrobe' not in lisa.gifts and clothes[lisa].learn.cur==1:  # нет халата, текущим стоит полотенце
+                        if 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
+                            lisa.dress  = 'd'
+                            lisa.dress_inf = '01c'
+                        else:  # иначе - обычную повседневку
+                            lisa.dress  = 'a'
+                            lisa.dress_inf = '01a'
 
             elif name in ['in_shop', 'at_tutor']:
                 lisa.dress_inf = '01'
 
-            else:
-                lisa.dress = 'a'
-                lisa.dress_inf = '01a'
-
         elif char == 'alice':
+            alice.dress = clothes[alice].casual.GetCur().suf
+            alice.dress_inf = clothes[alice].casual.GetCur().info
+            if flags['smoke']=='nojeans' and alice.dress!='a':
+                # если есть требование не носить джинсы, но установлена другая одежда - отменяем требование
+                flags['smoke']==None
+                flags['smoke.request'] = None
+            elif all([alice.dress=='a', flags['smoke']=='nojeans', not check_is_home('ann')]):
+                alice.dress = 'c'
+                alice.dress_inf = '2e'
+
             if name == 'sleep':
                 alice.dress_inf = '02'
             elif name in ['shower', 'bath']:
                 alice.dress_inf = '04aa'
-            elif name in ['breakfast', 'read', 'dinner']:
-                alice.dress = clothes[alice].casual.GetCur().suf  #cloth_type['alice']['casual']
-                alice.dress_inf = clothes[alice].casual.GetCur().info  #'01c' if cloth_type['alice']['casual'] == 'b' else '01a'
             elif name in ['resting', 'blog', 'tv']:
-                alice.dress = clothes[alice].casual.GetCur().suf  #cloth_type['alice']['casual']
-                alice.dress_inf = clothes[alice].casual.GetCur().info
                 if not ('09:00' <= tm < '20:00'):
                     alice.dress_inf += 'a'
-                # if cloth_type['alice']['casual'] == 'b':
-                #     alice.dress_inf = '01c' if '09:00' <= tm < '20:00' else '01ca'
-                # else:
-                #     alice.dress_inf = '01a' if '09:00' <= tm < '20:00' else '01aa'
             elif name == 'sun':
                 alice.dress = 'a'
                 alice.dress_inf = '03'
@@ -597,59 +593,53 @@ init python:
             elif name in ['in_shop', 'at_friends']:
                 alice.dress_inf = '01'
             elif name == 'cooking':
-                alice.dress = clothes[alice].casual.GetCur().suf  #cloth_type['alice']['casual']
-                alice.dress_inf = '01d' if alice.dress == 'b' else '01b'
+                alice.dress_inf = {'a' : '01b', 'b' : '01d', 'c' : '01g', 'd' : '01f'}[alice.dress]
             elif name == 'smoke':
                 alice.dress = 'b' if flags['smoke'] == 'toples' else 'a'
                 alice.dress_inf = '03b' if flags['smoke'] == 'toples' else '03'
             elif name == 'club':
                 alice.dress = 'a'
                 alice.dress_inf = '06'
-            else:
-                alice.dress = 'a'
-                alice.dress_inf = '01a'
 
         elif char == 'ann':
             if name == 'sleep':
-                ann.dress = clothes[ann].sleep.GetCur().suf  #cloth_type['ann']['sleep']
-                ann.dress_inf = clothes[ann].sleep.GetCur().info  #'02' if cloth_type['ann']['sleep'] == 'a' else '02f'
+                ann.dress = clothes[ann].sleep.GetCur().suf
+                ann.dress_inf = clothes[ann].sleep.GetCur().info
             elif name in ['shower', 'bath', 'shower2']:
                 ann.dress_inf = '04a'
             elif name == 'yoga':
                 ann.dress_inf = '05'
             elif name == 'cooking':
-                ann.dress = clothes[ann].cook_morn.GetCur().suf if tm < '12:00' else clothes[ann].cook_eve.GetCur().suf  #cloth_type['ann']['cooking']
-                ann.dress_inf = clothes[ann].cook_morn.GetCur().info if tm < '12:00' else clothes[ann].cook_eve.GetCur().info  #'05b' if cloth_type['ann']['cooking'] == 'a' else '01c'
+                ann.dress = clothes[ann].cook_morn.GetCur().suf if tm < '12:00' else clothes[ann].cook_eve.GetCur().suf
+                ann.dress_inf = clothes[ann].cook_morn.GetCur().info if tm < '12:00' else clothes[ann].cook_eve.GetCur().info
             elif name == 'breakfast':
                 ann.dress = clothes[ann].cook_morn.GetCur().suf
-                ann.dress_inf = '05a' if ann.dress == 'a' else '01b'
+                ann.dress_inf = {'a':'05a', 'b':'01b', 'd':'01e'}[clothes[ann].cook_morn.GetCur().suf]
             elif name == 'resting':
                 if tm <= '12:00':
-                    ann.dress = 'a'
-                    ann.dress_inf = '01b'
+                    ann.dress = clothes[ann].rest_morn.GetCur().suf
+                    ann.dress_inf = clothes[ann].rest_morn.GetCur().info
                 elif tm <= '19:00':
-                    ann.dress = 'b'
+                    ann.dress = 'b' # купальник
                     ann.dress_inf = '03'
-                else:
-                    ann.dress = clothes[ann].rest_eve.GetCur().suf  #cloth_type['ann']['rest']
-                    ann.dress_inf = clothes[ann].rest_eve.GetCur().info  #'01b' if cloth_type['ann']['rest'] == 'a' else '04b'
+                else: # футболка или полотенце
+                    ann.dress = clothes[ann].rest_eve.GetCur().suf
+                    ann.dress_inf = clothes[ann].rest_eve.GetCur().info
             elif name == 'at_work':
                 ann.dress_inf = '01a'
             elif name == 'in_shop':
                 ann.dress_inf = '01'
             elif name == 'read':
-                ann.dress = 'a' if tm < '14:00' else 'b'
-                ann.dress_inf = '01b' if tm < '14:00' else '03'
+                ann.dress = clothes[ann].casual.GetCur().suf if tm < '14:00' else 'b'
+                ann.dress_inf = clothes[ann].casual.GetCur().info if tm < '14:00' else '03'
             elif name == 'sun':
                 ann.dress_inf = '03'
             elif name == 'swim':
                 ann.dress_inf = '03a'
             elif name == 'dinner':
-                ann.dress = clothes[ann].casual.GetCur().suf  #cloth_type['ann']['casual']
-                ann.dress_inf = clothes[ann].casual.GetCur().info  #'01d' if cloth_type['ann']['casual'] == 'a' else '01b'
-            elif name == 'tv':
-                ann.dress_inf = '04b'
-            elif name == 'tv2':
+                ann.dress = clothes[ann].casual.GetCur().suf
+                ann.dress_inf = clothes[ann].casual.GetCur().info
+            elif name in ['tv','tv2']:
                 ann.dress_inf = '04b'
             elif name == 'fuck':
                 ann.dress_inf = '00b'
@@ -659,7 +649,7 @@ init python:
 
         elif char == 'eric':
             if name in ['dinner', 'rest', 'tv2']:
-                eric.dress = clothes[ann].casual.GetCur().suf  #cloth_type['ann']['casual']
+                eric.dress = 'b' if day % 2 else 'a'
                 eric.dress_inf = '01a' if eric.dress == 'a' else '01b'
             elif name in ['fuck', 'sleep']:
                 eric.dress_inf = '00a'
@@ -667,6 +657,10 @@ init python:
                 eric.dress_inf = '00b'
             else:
                 eric.dress_inf = '01'
+        elif char == 'kira':
+            if name == 'swim':
+                kira.dress = 'a'
+                kira.dress_inf = '03a' if pose3_3 == '03' else '03'
         return
 
 
@@ -769,23 +763,33 @@ init python:
     def seat_Breakfast(): # рассаживает семью за завтраком
         renpy.scene()
         renpy.show('BG breakfast 00') # общий фон
-        renpy.show('Ann breakfast 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+        if 'kira' in chars and check_is_home('kira'):
+            renpy.show('Kira breakfast 2-0'+renpy.random.choice(['1', '2', '3'])+kira.dress)
+            renpy.show('Ann breakfast 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+        else:
+            renpy.show('Ann breakfast 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         renpy.show('Alice breakfast 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
         renpy.show('Lisa breakfast 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
-        renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])) # стол
+        if 'kira' in chars and check_is_home('kira'):
+            renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
+        else:
+            renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])) # стол
         renpy.show('Max breakfast 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
 
 
     def seat_Dinner(): # рассаживает семью за ужином
         renpy.scene()
         renpy.show('BG dinner 00') # общий фон
-        if day == 4 or day == 11 or ('eric' in chars and eric.plan_name == 'dinner'):
-            renpy.show('Ann dinner eric-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+        if any([day == 4, day == 11, ('eric' in chars and eric.plan_name == 'dinner'),
+                                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6])]):
+            renpy.show('Eric dinner 0'+renpy.random.choice(['1', '2', '3'])+eric.dress)
+            renpy.show('Ann dinner 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         else:
             renpy.show('Ann dinner 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         renpy.show('Alice dinner 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
         renpy.show('Lisa dinner 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
-        if day == 4 or day == 11 or ('eric' in chars and eric.plan_name == 'dinner'):
+        if any([day == 4, day == 11, ('eric' in chars and eric.plan_name == 'dinner'),
+                                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6])]):
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
         else:
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])) # стол
@@ -860,6 +864,9 @@ init python:
                 pun_chance = 50.0
 
             for d in range(1, len(punalice)):
+                if d < 4 and (punalice[d][3] or punalice[d][2]): # если Алису наказывали за последние 3 дня, шанс нахождения сигарет нулевой
+                    pun_chance = 0
+                    break
                 if punalice[d][3]:   # Ализа понесла наказание
                     finded += 1
                     pun_chance -= mind  # шанс наказания снижается на уровень здравомыслия
@@ -878,9 +885,9 @@ init python:
                 else:   # Макс не шантажировал Алису или шантажировал неудачно
                     pun_chance += grow
 
-                if d < 7 and finded > 1:  # если за последнюю неделю сигареты были найдены уже дважды
-                    pun_chance -= 250
-                    break
+                # if d < 7 and finded > 1:  # если за последнюю неделю сигареты были найдены уже дважды
+                #     pun_chance -= 250
+                #     break
                 grow = grow * 1.1   # чем больше дней прошло со дня, когда Макс чего-то требовал, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
         return clip(pun_chance, 0, 900)
@@ -980,6 +987,11 @@ init python:
         return rez
 
 
+    def check_is_room(char): # проверяет по расписанию, находится ли персонаж в текущей комнате
+        plan_char = chars[char].get_plan()
+        return eval(plan_char.loc+'['+str(plan_char.room)+']')==current_room
+
+
     def add_lim(var, a, limit):
         if var.find('.')>0:
             v1, arg = var.split('.')
@@ -992,3 +1004,13 @@ init python:
                 globals()[var] += a
                 if eval(var) > limit:
                     globals()[var] = limit
+
+
+    def exist_btn_image():
+        if persone_button1:
+            return any([
+                renpy.loadable(persone_button1.replace(' ', '/')+'.webp'),
+                renpy.loadable(persone_button1.replace(' ', '/')+'.png'),
+                ])
+        else:
+            return False

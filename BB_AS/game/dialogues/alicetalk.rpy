@@ -419,7 +419,7 @@ label alice_talk_tv:
             $ mgg.massage += 0.1
             $ _ch2 = GetChance(mgg.social, 2)
             $ flags['alice.tv.mass'] += 1
-            $ _can_double_choko = True
+            $ _can_double_choko = kol_choco>0
             $ _pose = {'01':'03', '02':'04'}[_pose]
             scene BG char Alice tv-mass-03
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -540,7 +540,7 @@ label alice_talk_tv:
                     Max_07 "Тогда, если хочешь продолжения массажа, то снимай их!"
                     Alice_06 "Макс! Какой же ты... Ладно, только не смотри. И когда продолжишь массаж, не пялься на меня!"
                     Max_03 "Да, да, конечно."
-                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-4')
+                    $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress+'-4')
                     Alice_13 "Хотя, нет, не пойдёт! У меня так всё видно будет... И хватит уже пялиться! Лучше иди уже по своим делам."   #спрайт с прикрыванием
                     Max_05 "Как скажешь. Трусы не потеряй."
                     $ current_room = house[0]
@@ -908,82 +908,50 @@ label smoke_fear:
     $ _ch8 = GetChanceConvince(punalice, 8)
     $ _ch4 = GetChanceConvince(punalice, 4)
     $ _ch3 = GetChanceConvince(punalice, 3)
+    $ _ch2 = GetChanceConvince(punalice, 2)
     $ _ch1 = GetChanceConvince(punalice)
+    $ __can_nojeans = all(['kira' in chars, clothes[alice].casual.cur==0, 'pajamas' in alice.gifts])
     menu:
         Alice_13 "Говори, что ты хочешь за молчание?"
         "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}":
-            if RandomChance(_ch8.ch):
-                $ punalice[0][0] = 3
-                $ spent_time += 10
-                $ mgg.social += 0.2
-                $ _ch2 = GetChanceConvince(punalice, 2)
-                $ flags['smoke.request'] = 'money'
-                menu:
-                    Alice_12 "[succes!t]Ладно, Макс, я дам тебе денег, но только $10, ок?"
-                    "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
-                        if RandomChance(_ch2.ch):
-                            Alice_13 "[succes!t]Чёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
-                            Max_03 "Я жду..."
-                            $ mgg.ask(1)
-                            $ mgg.social += 0.2
-                            $ AddRelMood('alice', 0, -50)
-                        else:
-                            Alice_16 "[failed!t]Макс, не наглей! Сейчас принесу $10. Жди..."
-                            Max_04 "Ну ладно, я жду..."
-                            $ mgg.ask(0)
-                            $ mgg.social += 0.1
-                            $ AddRelMood('alice', 0, -75)
-                    "Хорошо, устроит и $10":
-                        $ mgg.ask(0)
-                        $ AddRelMood('alice', 0, -25)
-                menu:
-                    Alice_12 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!"
-                    "Удачи!":
-                        jump .end
-            else:
-                jump .fail
-        "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}":
-            # когда будет подарена пижамка, этот пункт будет недоступен, т.к. пижаму Алиса носит без трусиков
-            if RandomChance(_ch4.ch):
-                Alice_13 "[succes!t]Тебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
-                Max_02 "Конечно!"
-                $ mgg.social += 0.2
-                $ punalice[0][0] = 6
-                $ flags['smoke.request'] = "nopants"
-                menu:
-                    Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
-                    "{i}уйти{/i}":
-                        jump .end
-            else:
-                jump .fail
+            jump .money
+        "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if clothes[alice].casual.cur==0:
+            # пункт доступен, если Алиса носит джинсы
+            jump .nopants
         "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
-            if RandomChance(_ch3.ch):
-                Alice_03 "[succes!t]Да я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
-                Max_01 "Значит, тогда просто спи без него."
-                Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
-                Max_04 "Вот и отлично!"
-                $ mgg.social += 0.2
-                $ punalice[0][0] = 5
-                $ flags['smoke.request'] = "sleep"
-                menu:
-                    Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
-                    "{i}уйти{/i}":
-                        jump .end
-            else:
-                jump .fail
+            jump .sleep_toples
         "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
-            if RandomChance(_ch3.ch):
-                Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
-                Max_03 "Само собой!"
-                $ mgg.social += 0.2
-                $ punalice[0][0] = 4
-                $ flags['smoke.request'] = "toples"
-                menu:
-                    Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
-                    "{i}уйти{/i}":
-                        jump .end
-            else:
-                jump .fail
+            jump .smoke_toples
+        "Если хочешь, чтобы мама ничего не знала, ты будешь ходить без джинсов." if __can_nojeans:
+            Alice_12 "Ходить без джинсов? А ты не обнаглел, Макс?!"
+            Max_01 "Нет, нисколько. Согласна?"
+            Alice_05 "И как ты себе это представляешь? Или в твоей извращённой фантазии мама просто не заметит, что я расхаживаю по дому в трусах?!"
+            Max_02 "А ты снимай джинсы когда её нет дома и всё будет в порядке."
+            Alice_13 "Ладно, тётя Кира ещё может на это и не обратит внимание, а если Лиза спросит, почему я без штанов?"
+            Max_08 "Ой, Алиса, хватит уже искать отговорки... Как будто тебе бы и в голову не пришло сказать ей, что дома просто жарко."
+            menu:
+                Alice_06 "Лучше попроси что-то другое..."
+                "Нет. Или получаешь вечером по заднице или не одеваешь джинсы. {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
+                    if RandomChance(_ch2.ch):
+                        menu:
+                            Alice_03 "[succes!t]Хорошо. Не буду я одевать джинсы, только дай уже покурить спокойно!"
+                            "Конечно!":
+                                $ mgg.social += 0.2
+                                $ punalice[0][0] = 7
+                                $ flags['smoke.request'] = "nojeans"
+                                $ flags['smoke'] = "nojeans"
+                                jump .end
+                    else:
+                        jump .fail
+                "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}":
+                    jump .money
+                "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if clothes[alice].casual.cur==0:
+                    # пункт доступен, если Алиса носит джинсы
+                    jump .nopants
+                "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
+                    jump .sleep_toples
+                "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
+                    jump .smoke_toples
         # "Если разрешишь тебя отшлёпать, то я ничего не скажу {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
         #     # будет доступно в следующих версиях
         #     if RandomChance(_ch1.ch):
@@ -1006,9 +974,95 @@ label smoke_fear:
                     $ flags['smoke.request'] = None
                     jump .end
 
+    label .smoke_toples:
+        if RandomChance(_ch3.ch):
+            Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
+            Max_03 "Само собой!"
+            $ mgg.social += 0.2
+            $ punalice[0][0] = 4
+            $ flags['smoke.request'] = "toples"
+            menu:
+                Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            jump .fail
+
+    label .sleep_toples:
+        if RandomChance(_ch3.ch):
+            Alice_03 "[succes!t]Да я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
+            Max_01 "Значит, тогда просто спи без него."
+            Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
+            Max_04 "Вот и отлично!"
+            $ mgg.social += 0.2
+            $ punalice[0][0] = 5
+            $ flags['smoke.request'] = "sleep"
+            menu:
+                Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            jump .fail
+
+    label .nopants:
+        if RandomChance(_ch4.ch):
+            Alice_13 "[succes!t]Тебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
+            Max_02 "Конечно!"
+            $ mgg.social += 0.2
+            $ punalice[0][0] = 6
+            $ flags['smoke.request'] = "nopants"
+            menu:
+                Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            jump .fail
+
+    label .money:
+        if RandomChance(_ch8.ch):
+            $ punalice[0][0] = 3
+            $ spent_time += 10
+            $ mgg.social += 0.2
+            $ _ch2 = GetChanceConvince(punalice, 2)
+            $ flags['smoke.request'] = 'money'
+            menu:
+                Alice_12 "[succes!t]Ладно, Макс, я дам тебе денег, но только $10, ок?"
+                "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
+                    if RandomChance(_ch2.ch):
+                        Alice_13 "[succes!t]Чёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
+                        Max_03 "Я жду..."
+                        $ mgg.ask(1)
+                        $ mgg.social += 0.2
+                        $ AddRelMood('alice', 0, -50)
+                    else:
+                        Alice_16 "[failed!t]Макс, не наглей! Сейчас принесу $10. Жди..."
+                        Max_04 "Ну ладно, я жду..."
+                        $ mgg.ask(0)
+                        $ mgg.social += 0.1
+                        $ AddRelMood('alice', 0, -75)
+                "Хорошо, устроит и $10":
+                    $ mgg.ask(0)
+                    $ AddRelMood('alice', 0, -25)
+            menu:
+                Alice_12 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!"
+                "Удачи!":
+                    jump .end
+        else:
+            jump .fail
+
     menu .fail:
         Alice_16 "[failed!t]Ага, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..."
         "{i}уйти{/i}":
+            $ mgg.social += 0.1
+            $ flags['smoke'] = None
+            $ flags['smoke.request'] = None
+            $ punalice[0][0] = 2
+            $ AddRelMood('alice', 0, -50)
+            jump .end
+
+    menu .fail2:
+        Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая."
+        "{i}Ну, как скажешь...{/i}":
             $ mgg.social += 0.1
             $ flags['smoke'] = None
             $ flags['smoke.request'] = None
@@ -1164,6 +1218,24 @@ label smoke_sleep:
         "Я передумал. Ты можешь спать в лифчике, если хочешь.":
             menu:
                 Alice_04 "А чего это ты передумал? А, хотя не важно. Я рада, а то мне неудобно ночью, если выйти куда-то нужно, да и мама заметить может. Спасибо за разрешение, ваше величество. Теперь дай покурю..."
+                "{i}уйти{/i}":
+                    $ flags['smoke'] = None
+                    $ flags['smoke.request'] = None
+                    $ flags['noted'] = False
+                    $ AddRelMood('alice', 0, 100)
+    $ spent_time += 10
+    jump Waiting
+
+
+label smoke_nojeans:
+    menu:
+        Alice_02 "Макс, чего хотел?"
+        "Ничего, просто любуюсь...":
+            Alice_13 "Налюбовался? А вот теперь постой в сторонке, пока я покурю! Давай, иди уже..."
+            Max_01 "Ладно, ладно, как скажешь..."
+        "Я передумал. Ты можешь носить свои джинсы, если захочешь.":
+            menu:
+                Alice_04 "Чего это ты вдруг передумал? Надоело глазеть на мою попку? А, не важно. Спасибо за разрешение, ваше величество. Теперь дай покурю..."
                 "{i}уйти{/i}":
                     $ flags['smoke'] = None
                     $ flags['smoke.request'] = None
@@ -1429,47 +1501,31 @@ label gift_pajamas:
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
         Max_02 "Как страшно... Давай уже, примеряй."
         scene BG char Alice newpajamas
-        if alice.plan_name in ['sun', 'swim']:
-            show Alice newpajamas 01a
-        elif '09:00' <= tm < '20:00':
-            show Alice newpajamas 01
-        else:
-            show Alice newpajamas 01b
+        $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
+        if not ('09:00' <= tm < '20:00'):
+            $ __suf += 'e'
+        $ renpy.show('Alice newpajamas 01'+__suf)
+        $ SetCamsGrow(house[1], 150)
         menu:
             Alice_05 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"   #примерка в комнате/спрайт в одежде (01)
             "Ага, я и не подглядываю...":
                 if renpy.random.randint(0, 1) > 0:   #если линейка началась без верха
-                    if alice.plan_name in ['sun', 'swim']:
-                        show Alice newpajamas 02a
-                    elif '09:00' <= tm < '20:00':
-                        show Alice newpajamas 02
-                    else:
-                        show Alice newpajamas 02b
+                    $ renpy.show('Alice newpajamas 02'+__suf)
                     Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #спрайт без верха (02)
                     Max_03 "Я не пялюсь..."
-                    if alice.plan_name in ['sun', 'swim']:
-                        show Alice newpajamas 04a
-                    elif '09:00' <= tm < '20:00':
-                        show Alice newpajamas 04
-                    else:
-                        show Alice newpajamas 04b
+                    $ renpy.show('Alice newpajamas 04'+__suf)
                     Alice_02 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе?"   #спрайт с одетым топиком (04)
                     Max_04 "Тебе идёт! Мне нравится..."
                     if flags['smoke'] != 'nopants':
                         Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё шортики примерить."   #спрайт в топике без низа, но в трусиках (если бикини, то без трусиков) (06)
+                        $ SetCamsGrow(house[1], 180)
                     else:
                         Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё шортики примерить."   #спрайт в топике без низа, трусиков по уговору нет
-                    if alice.plan_name in ['sun', 'swim'] or flags['smoke'] == 'nopants':  # если Алиса в бикини или без трусиков
-                        if '09:00' <= tm < '20:00':
-                            show Alice newpajamas 06a
-                        else:
-                            show Alice newpajamas 06c
-                    else:
-                        if '09:00' <= tm < '20:00':
-                            show Alice newpajamas 06
-                        else:
-                            show Alice newpajamas 06b
-                    if flags['smoke'] != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
+                    $ suf = 'an' if any([alice.plan_name in ['sun', 'swim'], alice.dress=='d', flags['smoke'] == 'nopants']) else 'a'
+                    if not ('09:00' <= tm < '20:00'):
+                        $ __suf += 'e'
+                    $ renpy.show('Alice newpajamas 06'+__suf)
+                    if any([flags['smoke'] != 'not_nopants', alice.plan_name in ['sun', 'swim'], alice.dress=='d']):
                         Max_02 "Конечно, я не смотрю..."
                     else:
                         Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"   #если на Алисе трусики, но их не должно быть
@@ -1478,25 +1534,20 @@ label gift_pajamas:
                     if '09:00' <= tm < '20:00':
                         show Alice newpajamas 08
                     else:
-                        show Alice newpajamas 08a
+                        show Alice newpajamas 08e
                     Alice_07 "Размер в самый раз... Удобненько и легко. Как тебе, Макс? Хорошо сидит?"   #спрайт с одетыми топиком и шортиками (08)
                     Max_05 "Не то слово, всё выглядит шикарно!"
                 else:   #если линейка началась без низа
-                    if alice.plan_name in ['sun', 'swim']: # Алиса в бикини
-                        show Alice newpajamas 03b
-                    elif flags['smoke'] == 'nopants':  # если Алиса без трусиков
-                        if '09:00' <= tm < '20:00':
-                            show Alice newpajamas 03a
-                        else:
-                            show Alice newpajamas 03d
-                    else:  # Алиса в трусиках
-                        if '09:00' <= tm < '20:00':
-                            show Alice newpajamas 03
-                        else:
-                            show Alice newpajamas 03c
+                    $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
+                    if alice.dress=='a' and flags['smoke'] == 'nopants':  # если Алиса без трусиков
+                        $ __suf += 'n'
+                    if not ('09:00' <= tm < '20:00'):
+                        $ __suf += 'e'
+                    $ renpy.show('Alice newpajamas 03'+__suf)
                     if flags['smoke'] != 'nopants':
                         Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #линейка началась без низа, но в трусиках (03)
                     else:
+                        $ SetCamsGrow(house[1], 180)
                         Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"   #линейка началась без низа, трусиков по уговору нет
                     if flags['smoke'] != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
                         Max_02 "Я не пялюсь..."
@@ -1504,24 +1555,22 @@ label gift_pajamas:
                         Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"   #если на Алисе трусики, но их не должно быть
                         Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
                         Max_01 "Ладно, считай, я ничего не видел."
-                    if alice.plan_name in ['sun', 'swim']:
-                        show Alice newpajamas 05a
-                    elif '09:00' <= tm < '20:00':
-                        show Alice newpajamas 05
-                    else:
-                        show Alice newpajamas 05b
+                    $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
+                    if not ('09:00' <= tm < '20:00'):
+                        $ __suf += 'e'
+                    $ renpy.show('Alice newpajamas 05'+__suf)
                     Alice_02 "Размер в самый раз... Удобненько и легко. Как тебе, Макс? Хорошо сидят?"   #спрайт с одетыми шортиками (05)
                     Max_04 "Не то слово, сидят прекрасно!"
                     Alice_01 "Здорово! А теперь отвернись, не подглядывай! Нужно ещё топик примерить."   #спрайт в шортиках без верха (07)
                     if '09:00' <= tm < '20:00':
                         show Alice newpajamas 07
                     else:
-                        show Alice newpajamas 07a
+                        show Alice newpajamas 07e
                     Max_03 "Конечно, я не смотрю..."
                     if '09:00' <= tm < '20:00':
                         show Alice newpajamas 08
                     else:
-                        show Alice newpajamas 08a
+                        show Alice newpajamas 08e
                     Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"   #спрайт с одетыми топиком и шортиками (08)
                     Max_05 "Тебе идёт, всё выглядит шикарно!"
         Alice_03 "Спасибо тебе ещё раз! Иди ко мне, я тебя приобниму... немного."
@@ -1530,7 +1579,7 @@ label gift_pajamas:
         if '09:00' <= tm < '20:00':
             $ renpy.show("Alice hugging aliceroom 02b"+mgg.dress)
         else:
-            $ renpy.show("Alice hugging aliceroom 02ab"+mgg.dress)
+            $ renpy.show("Alice hugging aliceroom 02b"+mgg.dress+'e')
         Alice_05 "Но ты не зазнавайся, Макс. В следующий раз тебе может так не повезти, как сегодня."   #спрайт с обнимашками в комнате
         Max_02 "Буду иметь ввиду, сестрёнка."
         Alice_02 "Всё, давай шуруй по своим делам, не надоедай мне."
@@ -1592,7 +1641,7 @@ label gift_pajamas:
 
     $ sorry_gifts['alice'].valid = {'ritter-m', 'ferrero-m'}
 
-    $ clothes[alice].casual.sel.append(Garb('b', '01c', 'Пижама', True))
+    $ clothes[alice].casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
     $ clothes[alice].casual.cur = 1
     $ clothes[alice].casual.rand = True
     # $ cloth_type['alice']['casual'] = 'b'
@@ -1641,7 +1690,7 @@ label Alice_solar:
             jump AfterWaiting
 
     scene BG char Alice sun-alone 01-01
-    $ renpy.show('Alice sun-alone 01-01'+mgg.dress)
+    $ renpy.show('Max sun-alone 01'+mgg.dress)
     menu .type_choice:
         Alice_07 "Эти шезлонги всем хороши, но на животе загорать не получается. Приходится коврик для йоги использовать..."
         "{i}нанести крем{/i}" if (kol_cream >= 3 and mgg.massage < 2.0) or 3<=kol_cream<7:  # просто наносим крем. близко к оригиналу
@@ -1650,10 +1699,10 @@ label Alice_solar:
             $ spent_time += 20
             $ kol_cream -= 3
             scene BG char Alice sun-alone 05
-            $ renpy.show('Alice sun-alone 05-01'+_suf+'-01'+mgg.dress)
+            $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
             Max_01 "{i}Так, хорошенько намажем эти стройные ножки...{/i}"
             scene BG char Alice sun-alone 04
-            $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
+            $ renpy.show('Alice sun-alone 04'+_suf+mgg.dress)
             Max_01 "{i}Теперь плечи и совсем немного шею...{/i}" nointeract
             $ __res = renpy.display_menu([(_("{i}наносить крем молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
@@ -1662,13 +1711,8 @@ label Alice_solar:
             $ __r1 = renpy.random.choice(['02','03'])
             $ renpy.scene()
             $ renpy.show('BG char Alice sun-alone '+__r1)
-            $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
+            $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
             Max_03 "{i}И закончим, хорошенько намазав всю её спину...{/i}"
-            # scene BG char Alice sun-alone 01
-            # if talk_var['sun_oiled'] == 2:
-            #     show Alice sun-alone 01a
-            # else:
-            #     show Alice sun-alone 01
             $ mgg.massage += 0.005
             if mgg.massage >= 0.01 and len(online_cources) == 1:
                 Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
@@ -1709,10 +1753,10 @@ label Alice_solar:
             jump massage_sunscreen
         "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}" if kol_cream < 7:
             jump .type_choice
-        # "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}" if kol_cream < 7:
-        #     Alice_00 "Ну что же ты, Макс... Эх, только настроилась..."
-        #     $ talk_var['sun_oiled'] = 4
-        #     jump AfterWaiting
+        "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}" if kol_cream < 3:
+            Alice_00 "Ну что же ты, Макс... Эх, только настроилась..."
+            $ talk_var['sun_oiled'] = 4
+            jump AfterWaiting
 
     jump Waiting
 
@@ -1724,14 +1768,9 @@ label massage_sunscreen:
     else:
         scene BG char Alice sun-alone 01-01
         $ _suf = 'a'
-    $ renpy.show('Alice sun-alone 01-01'+mgg.dress)
+    $ renpy.show('Max sun-alone 01'+mgg.dress)
     if len(online_cources) > 1 and online_cources[1].current > 0:
         if len(_massaged) == 4: # 5: # временно доступны только 4 зоны
-            # scene BG char Alice sun-alone 01
-            # if talk_var['sun_oiled'] == 2:
-            #     show Alice sun-alone 01a
-            # else:
-            #     show Alice sun-alone 01
             Alice_07 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
             Max_03 "Да пустяки, обращайся!"
             Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
@@ -1740,23 +1779,12 @@ label massage_sunscreen:
             jump .end  # если Макс прошел курсы массажа ног, ему доступны 5 зон
 
     elif len(_massaged) == 4:
-        # scene BG char Alice sun-alone 01
-        # if talk_var['sun_oiled'] == 2:
-        #     show Alice sun-alone 01a
-        # else:
-        #     show Alice sun-alone 01
         Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
         Max_04 "Да не за что, обращайся!"
         $ AddRelMood('alice', 10, 100)
         jump .end  # если курсы не пройдены и первыми массировались ступни, доступно 4 зоны
 
     elif len(_massaged) == 2 and _massaged[0] != 'foot':
-        # в противном случае доступны только 2 зоны
-        # scene BG char Alice sun-alone 01
-        # if talk_var['sun_oiled'] == 2:
-        #     show Alice sun-alone 01a
-        # else:
-        #     show Alice sun-alone 01
         Alice_03 "Спасибо, Макс! На сегодня достаточно."
         Max_01 "Да не за что, обращайся!"
         $ AddRelMood('alice', 5, 50)
@@ -1768,31 +1796,30 @@ label massage_sunscreen:
 
     label .left_foot:
         scene BG char Alice sun-alone 06
-        $ renpy.show('Alice sun-alone 06-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 06'+_suf+mgg.dress)
         Max_01 "{i}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
         scene BG char Alice sun-alone 07
-        $ renpy.show('Alice sun-alone 07-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 07'+_suf+mgg.dress)
         Max_03 "{i}А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
         jump .foot
 
     label .right_foot:
         scene BG char Alice sun-alone 07
-        $ renpy.show('Alice sun-alone 07-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 07'+_suf+mgg.dress)
         Max_01 "{i}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
         scene BG char Alice sun-alone 06
-        $ renpy.show('Alice sun-alone 06-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 06'+_suf+mgg.dress)
         Max_03 "{i}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
         jump .foot
 
     label .shin:
         scene BG char Alice sun-alone 05
-        $ renpy.show('Alice sun-alone 05-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
         Max_02 "{i}Помассируем эти стройные ножки, вот так...{/i}"
         if 'shin' in _massaged:
             # голени уже массировались
             jump .double
-        else:   # elif len(online_cources) > 1 and online_cources[1].current > 0:
-            # Макс прошёл курс массажа ступней
+        else:
             $ _multipler = 10 - len(_massaged)
             if len(_massaged)>0 and _massaged[0]=='foot':
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
@@ -1807,46 +1834,45 @@ label massage_sunscreen:
         $ _massaged.append('shin')
         jump massage_sunscreen
 
-    label .hips:
-        # scene BG char Alice sun-alone 05
-        # $ renpy.show('Alice sun-alone 05-01'+_suf+'01'+mgg.dress)
-        Max_00 "{i}Помассируем бёдра...{/i}"
-        if 'hips' in _massaged:
-            # бёдра уже массировались
-            jump .double
-
-        # бёдра доступны только если Макс прошёл курс массажа ступней
-        $ _multipler = 10 - len(_massaged)
-        if len(_massaged)>0 and _massaged[0]=='foot':
-            $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
-
-        if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
-            # Алисе понравилось
-            Alice_00 "А я и не знала, что твои руки могут быть одновременно сильными и нежными..."
-            $ mgg.massage += 0.05
-        else:
-            $ mgg.massage += 0.02
-            jump .fail
-        $ _massaged.append('hips')
-        jump massage_sunscreen
+    # label .hips:
+    #     # scene BG char Alice sun-alone 05
+    #     # $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
+    #     Max_00 "{i}Помассируем бёдра...{/i}"
+    #     if 'hips' in _massaged:
+    #         # бёдра уже массировались
+    #         jump .double
+    #
+    #     # бёдра доступны только если Макс прошёл курс массажа ступней
+    #     $ _multipler = 10 - len(_massaged)
+    #     if len(_massaged)>0 and _massaged[0]=='foot':
+    #         $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
+    #
+    #     if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
+    #         # Алисе понравилось
+    #         Alice_00 "А я и не знала, что твои руки могут быть одновременно сильными и нежными..."
+    #         $ mgg.massage += 0.05
+    #     else:
+    #         $ mgg.massage += 0.02
+    #         jump .fail
+    #     $ _massaged.append('hips')
+    #     jump massage_sunscreen
 
     label .shoulders:
         scene BG char Alice sun-alone 04
-        $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 04'+_suf+mgg.dress)
         Max_04 "{i}Хорошенько разомнём плечи и немного шею...{/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([(_("{i}массировать молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
                 $ _talk_top = True
                 call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless_1
-                $ renpy.show('Alice sun-alone 04-01'+_suf+'-01'+mgg.dress)
+                $ renpy.show('Alice sun-alone 04'+_suf+mgg.dress)
                 Max_01 "И ещё немного..."
 
         if 'shoulders' in _massaged:
             # плечи уже массировались
             jump .double
-        else:   #elif len(online_cources) > 1 and online_cources[1].current > 0:
-            # Макс прошёл курс массажа ступней
+        else:
             $ _multipler = 10 - len(_massaged)
             if len(_massaged)>0 and _massaged[0]=='foot':
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
@@ -1871,21 +1897,20 @@ label massage_sunscreen:
         $ __r1 = renpy.random.choice(['02','03'])
         $ renpy.scene()
         $ renpy.show('BG char Alice sun-alone '+__r1)
-        $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
         Max_05 "{i}Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно.{/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([(_("{i}массировать молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
                 $ _talk_top = True
                 call massage_sunscreen.talk_topless from _call_massage_sunscreen_talk_topless_2
-                $ renpy.show('Alice sun-alone '+__r1+'-01'+_suf+'-01'+mgg.dress)
+                $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
                 Max_01 "Ещё немного крема..."
 
         if 'spine' in _massaged:
             # спина уже массировалась
             jump .double
-        else:   #elif len(online_cources) > 1 and online_cources[1].current > 0:
-            # Макс прошёл курс массажа ступней
+        else:
             $ _multipler = 10 - len(_massaged)
             if len(_massaged)>0 and _massaged[0]=='foot':
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
@@ -1914,8 +1939,7 @@ label massage_sunscreen:
         if 'foot' in _massaged:
             # ступни уже массировались
             jump .double
-        else:   #elif len(online_cources) > 1 and online_cources[1].current > 0:
-            # Макс прошёл курс массажа ступней
+        else:
             $ _multipler = 10 - len(_massaged) if len(_massaged) else 20  # множитель навыка. Если ступни первые, шанс удваивается
             if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
                 # Алисе понравилось
@@ -1966,19 +1990,19 @@ label massage_sunscreen:
         Alice_13 "А чего мне пугаться, Макс? Сейчас что, будешь больно массировать?"
         Max_00 "Нет, просто у нас тут одна проблемка подкралась..."
         scene BG char Alice sun-alone 03
-        $ renpy.show('Alice sun-alone 03-01'+_suf+'-01'+mgg.dress)
+        $ renpy.show('Alice sun-alone 03'+_suf+mgg.dress)
         show FG sun-alone-03
         Alice_12 "Что?! Подкралась?! Ты же говоришь не о том, о чём я подумала?"
         Max_08 "Ну... Ты только не дёргайся!"
         scene BG char Alice spider-sun-01
-        $ renpy.show('Alice spider-sun 01'+mgg.dress+_suf)
+        $ renpy.show('Alice spider-sun 01'+_suf+mgg.dress)
         show FG spider-sun-01
         Alice_15 "А-а-а! Макс! Вот чёрт! Какой он здоровенный!"   #spider-sun-01
         Max_02 "И не говори!"
         Alice_14 "Макс, чего сидишь?! Убери его отсюда! А ещё лучше убей!"
         Max_04 "Да мне как-то не хочется."
         scene BG char Alice spider-sun-02
-        $ renpy.show('Alice spider-sun 02'+mgg.dress+_suf)
+        $ renpy.show('Alice spider-sun 02'+_suf+mgg.dress)
         Alice_06 "В смысле, не хочется?! Охренеть, он страшный!"   #spider-sun-02
         Max_05 "Так хорошо же сидим. Да и он в нашу сторону не ползёт. По-моему, он в сторону травы сменил курс..."
         Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
@@ -2014,7 +2038,7 @@ label massage_sunscreen:
                 jump .end
             else:
                 ###если Макс только в шортах###
-                show Alice spider-sun 03cb
+                show Alice spider-sun 03bc
                 Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."   #спрайт с прикрывающейся от Макса Алисой
                 Max_01 "Да не так-то это просто, прикрыть его."
                 Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
@@ -2083,7 +2107,7 @@ label alice_sorry_gifts:
             if '09:00' <= tm < '20:00':
                 $ renpy.show("Alice hugging aliceroom 01"+alice.dress+mgg.dress)
             else:
-                $ renpy.show("Alice hugging aliceroom 01a"+alice.dress+mgg.dress)
+                $ renpy.show("Alice hugging aliceroom 01"+alice.dress+mgg.dress+'e')
         elif current_room == house[5]:
             scene BG char Alice hugging terrace-01
             $ renpy.show("Alice hugging terrace 01"+alice.dress+mgg.dress)
@@ -2099,7 +2123,7 @@ label alice_sorry_gifts:
             if '09:00' <= tm < '20:00':
                 $ renpy.show("Alice hugging aliceroom 02"+alice.dress+mgg.dress)
             else:
-                $ renpy.show("Alice hugging aliceroom 02a"+alice.dress+mgg.dress)
+                $ renpy.show("Alice hugging aliceroom 02"+alice.dress+mgg.dress+'e')
         elif current_room == house[5]:
             scene BG char Alice hugging terrace-01
             $ renpy.show("Alice hugging terrace 02"+alice.dress+mgg.dress)
@@ -2906,16 +2930,16 @@ label alice_sorry_gifts:
 label alice_about_bath:
     $ flags['talkaboutbath'] = 2
     Alice_12 "Ты о чём, Макс?"
-    Max_00 "Ну, ты вернулась ночью из клуба и мы разговаривали в ванной..."
+    Max_01 "Ну, ты вернулась ночью из клуба и мы разговаривали в ванной..."
     menu:
         Alice_13 "Я не помню такого... Тебе приснилось!"
         "Ты мне кое-что показала...":
-            Alice_02 "Что?! Всё ты врёшь, Макс. Не было такого!"
-            Max_00 "Да? Ну, думай так..."
+            Alice_05 "Что?! Всё ты врёшь, Макс. Не было такого!"
+            Max_02 "Да? Ну, думай так..."
             Alice_13 "Макс. Повторяю, ничего не было. И даже если и было, ты об этом забудешь, если хочешь жить. Ты меня понял?"
-            Max_00 "Конечно..."
-            Alice_17 "Я серьёзно! А теперь вали отсюда..."
-            Max_00 "Хорошо..."
+            Max_03 "Конечно..."
+            Alice_16 "Я серьёзно! А теперь вали отсюда..."
+            Max_01 "Хорошо..."
             $ AddRelMood('alice', 0, -50)
             jump .end
         "Ты мне кое-что сделала...":
@@ -2923,13 +2947,13 @@ label alice_about_bath:
         "Мы делали кое-что...":
             pass
         "Да, ну извини...":
-            Alice_02 "Надо же, даже извинился... Вот только я правда мало что помню. Будем считать, что ничего и не было. И не напоминай мне больше об этом. Понял?"
-            Max_00 "Ага..."
+            Alice_03 "Надо же, даже извинился... Вот только я правда мало что помню. Будем считать, что ничего и не было. И не напоминай мне больше об этом. Понял?"
+            Max_03 "Ага..."
             $ AddRelMood('alice', 0, 50)
             jump .end
 
     Alice_15 "Что?! Макс! Ты всё врёшь! Если это правда, я тебя убью, обещаю! А если нет, то тоже! Быстро свалил отсюда!"
-    Max_00 "Хорошо..."
+    Max_01 "Хорошо..."
     $ AddRelMood('alice', 0, -100)
     jump .end
 

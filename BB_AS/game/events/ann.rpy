@@ -20,7 +20,7 @@ label ann_sleep:
                     Max_04 "О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
                 else:
                     Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
-            else:
+            elif ann.dress == 'b':
                 if pose3_3 == '01':
                     Max_01 "Класс! Мама спит в ночнушке... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
                 elif pose3_3 == '02':
@@ -40,7 +40,7 @@ label ann_sleep:
                         Max_02 "Ухх! Так и хочется прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
                     else:
                         Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась..." nointeract
-                else:
+                elif ann.dress == 'b':
                     if pose3_3 == '01':
                         Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы пристроиться сзади и запустить руки под эту сорочку... Но лучше потихоньку уходить, пока она не проснулась." nointeract
                     elif pose3_3 == '02':
@@ -269,10 +269,13 @@ label ann_dressed_work:
                     jump .end
         "{i}открыть дверь{/i}":
             scene BG char Ann morning
-            $ __ran1 = renpy.random.choice(['01', '01a', '02', '02a', '03', '03a', '01', '01a', '02', '02a', '03', '03a', '04'])
+            $ __list = ['01', '01a', '02', '02a', '03', '03a', '01', '01a', '02', '02a', '03', '03a', '04']
+            if ann.dress=='d':
+                $ __list.extend(['06', '07', '07a'])
+            $ __ran1 = renpy.random.choice(__list)
             $ __open = True
-            $ renpy.show('Ann dressed-work '+__ran1)
-            $ ann.dress_inf = {'01':'02',  '01a':'02e', '02':'02b', '02a':'02d', '03':'02a', '03a':'02c', '04':'00'}[__ran1]
+            $ renpy.show('Ann dressed '+__ran1)
+            $ ann.dress_inf = {'01':'02',  '01a':'02e', '02':'02b', '02a':'02d', '03':'02a', '03a':'02c', '04':'00', '06':'2g', '07':'2i', '07a':'2h'}[__ran1]
             menu:
                 Ann_13 "Макс! Я же учила тебя стучаться!"
                 "Хорошо выглядишь, мам!":
@@ -296,8 +299,11 @@ label ann_dressed_work:
             $ AddRelMood('ann', 0, __mood)
             jump .end
         "{i}заглянуть в окно{/i}":
-            $ __ran1 = renpy.random.choice(['01', '01a', '02', '03', '03a', '04'])
-            $ ann.dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b'}[__ran1]
+            $ __list = ['01', '01a', '02', '03', '03a', '04']
+            if ann.dress=='d':
+                $ __list.extend(['05', '06', '06a'])
+            $ __ran1 = renpy.random.choice(__list)
+            $ ann.dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b', '05':'2g', '06':'2i', '06a':'2h'}[__ran1]
 
             if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
                 scene BG char Ann voyeur-01
@@ -317,7 +323,7 @@ label ann_dressed_work:
 
     label .gift:
         scene BG char Ann morning
-        show Ann dressed-work 05
+        show Ann dressed 05
         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
         Max_04 "У меня для тебя подарок! Ночнушка!"
         Ann_06 "Ты это серьёзно? Но в честь чего?"
@@ -334,12 +340,12 @@ label ann_dressed_work:
         Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
         Max_02 "Думаю, смотрится она на тебе просто фантастически!"
         scene BG char Ann morning
-        show Ann dressed-work 05
+        show Ann dressed 05
         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
         $ __r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-01'+mgg.dress)
+        $ renpy.show('Ann hugging morning-annroom '+__r1+'-1a'+mgg.dress)
         Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
-        $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-02'+mgg.dress)
+        $ renpy.show('Ann hugging morning-annroom '+__r1+'-2a'+mgg.dress)
         $ _ch1 = GetChance(mgg.social, 3, 900)
         $ spent_time += 10
         menu:
@@ -349,9 +355,9 @@ label ann_dressed_work:
                     $ spent_time += 10
                     $ mgg.social += 0.2
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-                    $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-03'+mgg.dress)
+                    $ renpy.show('Ann hugging morning-annroom '+__r1+'-3a'+mgg.dress)
                     Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
-                    $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01a-02'+mgg.dress)
+                    $ renpy.show('Ann hugging morning-annroom '+__r1+'-2a'+mgg.dress)
                     $ AddRelMood('ann', 0, 200)
                     $ AttitudeChange('ann', 0.9)
                     menu:
@@ -433,10 +439,13 @@ label ann_dressed_shop:
                     jump .end
         "{i}открыть дверь{/i}":
             scene BG char Ann morning
-            $ __ran1 = renpy.random.choice(['01', '02', '03', '04'])
+            $ __list = ['01', '02', '03', '04']
+            if ann.dress=='d':
+                $ __list.extend(['06', '07', '07a'])
+            $ __ran1 = renpy.random.choice(__list)
             $ __open = True
-            $ renpy.show('Ann dressed-work '+__ran1)
-            $ ann.dress_inf = {'01':'02', '02':'02b', '03':'02a', '04':'00'}[__ran1]
+            $ renpy.show('Ann dressed '+__ran1)
+            $ ann.dress_inf = {'01':'02', '02':'02b', '03':'02a', '04':'00', '06':'2g', '07':'2i', '07a':'2h'}[__ran1]
             menu:
                 Ann_13 "Макс! Я же учила тебя стучаться!"
                 "Хорошо выглядишь, мам!":
@@ -455,8 +464,11 @@ label ann_dressed_shop:
             $ AddRelMood('ann', 0, __mood)
             jump .end
         "{i}заглянуть в окно{/i}":
-            $ __ran1 = renpy.random.choice(['03', '03a', '04'])
-            $ ann.dress_inf = {'03':'02', '03a':'02a', '04':'02b'}[__ran1]
+            $ __list = ['03', '03a', '04']
+            if ann.dress=='d':
+                $ __list.extend(['05', '06', '06a'])
+            $ __ran1 = renpy.random.choice()
+            $ ann.dress_inf = {'03':'02', '03a':'02a', '04':'02b', '05':'2g', '06':'2i', '06a':'2h'}[__ran1]
 
             if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
                 scene BG char Ann voyeur-01
@@ -476,7 +488,7 @@ label ann_dressed_shop:
 
     label .gift:
         scene BG char Ann morning
-        show Ann dressed-work 05a
+        show Ann dressed 05a
         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
         Max_04 "У меня для тебя подарок! Ночнушка!"
         Ann_06 "Ты это серьёзно? Но в честь чего?"
@@ -493,12 +505,12 @@ label ann_dressed_shop:
         Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
         Max_02 "Думаю, смотрится она на тебе просто фантастически!"
         scene BG char Ann morning
-        show Ann dressed-work 05a
+        show Ann dressed 05a
         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
         $ __r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-01'+mgg.dress)
+        $ renpy.show('Ann hugging morning-annroom '+__r1+'-1b'+mgg.dress)
         Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
-        $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-02'+mgg.dress)
+        $ renpy.show('Ann hugging morning-annroom '+__r1+'-2b'+mgg.dress)
         $ _ch1 = GetChance(mgg.social, 3, 900)
         $ spent_time += 10
         menu:
@@ -508,9 +520,9 @@ label ann_dressed_shop:
                     $ spent_time += 10
                     $ mgg.social += 0.2
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-                    $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-03'+mgg.dress)
+                    $ renpy.show('Ann hugging morning-annroom '+__r1+'-3b'+mgg.dress)
                     Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
-                    $ renpy.show('Ann hugging-morning-annroom '+__r1+'-01b-02'+mgg.dress)
+                    $ renpy.show('Ann hugging morning-annroom '+__r1+'-2b'+mgg.dress)
                     $ AddRelMood('ann', 0, 200)
                     $ AttitudeChange('ann', 0.9)
                     menu:

@@ -93,10 +93,10 @@ label InitCharacters: # стартовая инициация персонаже
                     Schedule((0, ), '10:0', '11:59', 'resting', _("в своей комнате"), 'house', 2, 'ann_resting'),
                     Schedule((1, 2, 3, 4, 5), '11:0', '18:59', 'at_work', _("на работе")),
                     Schedule((6, ), '11:0', '13:59', 'in_shop', _("в магазине")),
-                    Schedule((0, ), '12:0', '13:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', glow=110),
+                    Schedule((0, ), '12:0', '13:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', talklabel='ann_read_closer', glow=110),
                     Schedule((0, 6), '14:0', '14:59', 'swim', _("в бассейне"), 'house', 6, 'ann_swim', glow=105),
                     Schedule((0, 6), '15:0', '15:59', 'resting', _("в своей комнате"), 'house', 2, 'ann_resting', glow=110),
-                    Schedule((0, 6), '16:0', '16:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', glow=110),
+                    Schedule((0, 6), '16:0', '16:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', talklabel='ann_read_closer', glow=110),
                     Schedule((6, ), '17:0', '17:59', 'sun', _("загорает с Алисой"), 'house', 6, 'ann_alice_sun', glow=115),
                     Schedule((0, ), '17:0', '17:59', 'swim', _("в бассейне с Алисой"), 'house', 6, 'ann_alice_swim', glow=110),
                     Schedule((0, 6), '18:0', '18:59', 'cooking', _("готовит ужин"), 'house', 4, 'ann_cooking', talklabel='ann_cooking_closer'),
@@ -115,22 +115,22 @@ label InitCharacters: # стартовая инициация персонаже
                     Schedule((1, 2, 3, 4, 5), '10:0', '10:59', 'resting', _("в своей комнате"), 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
                     Schedule((6,), '10:0', '10:59', 'dressed', _("одевается в магазин"), 'house', 1, 'alice_dressed_shop', enabletalk=False, glow=110),
                     Schedule((0,), '10:0', '10:59', 'dishes', _("моет посуду"), 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
-                    Schedule((0,), '10:0', '10:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', variable='dishes_washed', glow=110),
+                    Schedule((0,), '10:0', '10:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', variable='dishes_washed', glow=110),
                     Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'dishes', _("моет посуду"), 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
-                    Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', variable='dishes_washed', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', variable='dishes_washed', glow=110),
                     Schedule((0,), '11:0', '11:59', 'dressed', _("одевается к подруге"), 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
                     Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'sun', _("загорает"), 'house', 6, 'alice_sun', glow=110),
                     Schedule((1, 2, 3, 4, 5), '13:0', '14:59', 'swim', _("в бассейне"), 'house', 6, 'alice_swim', glow=105),
                     Schedule((6,), '11:0', '13:59', 'in_shop', _("в магазине")),
                     Schedule((6,), '14:0', '14:59', 'dressed', _("одевается к подруге"), 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
                     Schedule((1, 2, 3, 4, 5), '15:0', '15:59', 'sun', _("загорает"), 'house', 6, 'alice_sun', glow=110),
-                    Schedule((1, 2, 3, 4, 5), '16:0', '17:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', glow=110),
+                    Schedule((1, 2, 3, 4, 5), '16:0', '17:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
                     Schedule((6,), '15:0', '16:59', 'at_friends'),
                     Schedule((0,), '12:0', '16:59', 'at_friends'),
                     Schedule((6,), '17:0', '17:59', 'sun', _("загорает с Анной"), 'house', 6, 'ann_alice_sun', glow=115),
                     Schedule((0,), '17:0', '17:59', 'swim', _("в бассейне с Анной"), 'house', 6, 'ann_alice_swim', glow=110),
                     Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'cooking', _("готовит ужин"), 'house', 4, 'alice_cooking_dinner', talklabel='alice_cooking_closer'),
-                    Schedule((0, 6), '18:0', '18:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', glow=110),
+                    Schedule((0, 6), '18:0', '18:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
                     Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', _("семейный ужин"), 'house', 5, 'dinner', enabletalk=False, glow=105),
                     Schedule((1, 2, 3, 4, 5, 6, 0), '20:0', '21:59', 'blog', _("в своей комнате"), 'house', 1, 'alice_rest_evening', talklabel='alice_evening_closer', glow=110),
                     Schedule((1, 2, 3, 4, 5, 6, 0), '22:0', '23:59', 'tv', _("смотрит ТВ"), 'house', 4, 'alice_tv', talklabel='alice_tv_closer'),
@@ -181,6 +181,9 @@ label InitCharacters: # стартовая инициация персонаже
         clothes[ann].cook_morn.rand = True
         clothes[ann].cook_eve = Clothes(_("Для приготовления ужина"), [
                 Garb('b', '01c', 'Футболка + фартук', False, True),
+            ])
+        clothes[ann].rest_morn = Clothes(_("Для утреннего отдыха"), [
+                Garb('a', '01b', 'Футболка', False, True),
             ])
 
         clothes[ann].rest_eve = Clothes(_("Для вечернего отдыха"), [
@@ -443,7 +446,8 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'Eric_afterdinner' : CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day < 12', cut=True),
         'night_of_fun'     : CutEvent('04:00', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
         'need_money'       : CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True),
-        'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, poss['seduction'].stn > 0])", sleep=True, cut=True)
+        'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, poss['seduction'].stn > 0])", sleep=True, cut=True),
+        'Kira arrival'     : CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([day>=18, GetWeekday(day)==6, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True),
         }
     # Переменные влияющие на запуск диалогов
     $ talk_var = {
@@ -624,7 +628,18 @@ label AddEric:
     return
 
 
+label alice_init_nightclub:
+    $ alice.add_schedule(
+            Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', enabletalk=False, glow=110),
+            Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе'),
+            Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе'),
+            Schedule((6,), '3:0', '3:39', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
+        )
+    return
+
+
 label AddKira:
+    # добавляем Киру и её расписание
     $ chars['kira'] = Profile(_("Кира"), _("Киры"), _("Кире"), _("Киру"), _("Кирой"), _("Кире"), _("Тётя Кира, мамина младшая сестра. Конечно, у неё и раньше не были замечены какие-либо комплексы, но сейчас она стала такой... такой..."), "Kira")
     $ kira = chars['kira']
     $ kira.add_schedule(
@@ -640,7 +655,7 @@ label AddKira:
             Schedule((0, 1, 3, 4, 6), '6:00', '7:59', 'sleep', 'спит в гостиной (утро)', 'house', 4, 'kira_sleep_morning', enabletalk=False, glow=115),
             Schedule((1, 4), '8:00', '8:59', 'shower', 'одна в душе', 'house', 3, 'kira_shower', enabletalk=False, glow=120),
             Schedule((2, 5), '7:00', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'kira_lisa_shower', enabletalk=False, glow=135),
-            Schedule((2, 5), '8:00', '8:59', 'None'),  # не определился
+            Schedule((2, 5), '8:00', '8:59', 'swim', 'в бассейне', 'house', 6, 'kira_swim', glow=105),  # временно отравляем плавать
             Schedule((3, 6, 7), '8:00', '8:59', 'shower', 'в душе с Алисой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
             Schedule((0, 1, 2, 3, 4, 5, 6), '9:00', '9:59', 'breakfast', 'семейный завтрак', 'house', 5, 'breakfast', enabletalk=False, glow=105),
             Schedule((0, 1, 2, 3, 4, 5, 6), '10:00', '10:59', 'swim', 'в бассейне', 'house', 6, 'kira_swim', glow=105),
@@ -648,14 +663,62 @@ label AddKira:
             Schedule((0, 1, 2, 3, 4, 5, 6), '13:00', '23:59', 'studio', 'в студии'),
         )
 
-    return
-
-
-label alice_init_nightclub:
-    $ alice.add_schedule(
-            Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', enabletalk=False, glow=110),
-            Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе'),
-            Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе'),
-            Schedule((5,), '3:0', '3:39', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
+    # обновляем расписание Лизы и Алисы
+    $ lisa.add_schedule(
+            Schedule((1, 4), '7:00', '7:59', 'shower', 'в душе с Алисой', 'house', 3, 'alice_lisa_shower', enabletalk=False, glow=135),
+            Schedule((2, 5), '7:00', '7:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_lisa_shower', enabletalk=False, glow=135),
         )
+
+    $ alice.add_schedule(
+            Schedule((1, 4), '6:0', '6:59', 'sleep', _("спит (утро)"), 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
+            Schedule((1, 4), '7:00', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'alice_lisa_shower', enabletalk=False, glow=135),
+            Schedule((1, 4), '8:0', '8:59', 'resting', _("в своей комнате"), 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
+            Schedule((6,), '3:00', '3:59', 'return', 'возвращение из ночного клуба', 'house', 6, 'return_for_club', enabletalk=False, glow=130),
+            Schedule((3, 6, 7), '8:00', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
+            Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
+        )
+
+    # добавляем новую одежду Максу и девчонкам
+    $ clothes[lisa].casual.sel.append(Garb('d', '01c', 'Розовые топик и юбочка', True))
+    $ clothes[lisa].learn.sel.append(Garb('d', '01c', 'Розовые топик и юбочка', True))
+    if len(clothes[lisa].casual.sel)==3:
+        $ clothes[lisa].casual.rand = True
+
+    $ clothes[alice].casual.sel.append(Garb('d', '01e', 'Открытая футболка и микрошорты', True))
+    if len(clothes[alice].casual.sel)==2:
+        $ clothes[alice].casual.rand = True
+
+    $ clothes[ann].casual.sel.append(Garb('d', '01e', 'Топ и шорты', False, True))
+    $ clothes[ann].cook_morn.sel.append(Garb('d', '01f', 'Топ и шорты', False, True))
+    $ clothes[ann].cook_eve.sel.append(Garb('d', '01f', 'Топ и шорты', False, True))
+    $ clothes[ann].cook_eve.rand = True
+    $ clothes[ann].rest_eve.sel.append(Garb('d', '01e', 'Топ и шорты', False, True))
+    $ clothes[ann].rest_morn.sel.append(Garb('d', '01e', 'Топ и шорты', False, True))
+    $ clothes[ann].rest_morn.rand = True
+
+    $ clothes[mgg].casual.sel.append(Garb('c', '01c', 'Шорты', True))
+    if len(clothes[mgg].casual.sel)==2:
+        $ clothes[mgg].casual.rand = True
+
+    # настраиваем запрет на старую повседневку для Лизы и Макса
+    $ clothes[lisa].casual.sel[0].change = False
+    $ clothes[lisa].casual.sel[0].rand   = False
+
+    $ clothes[mgg].casual.sel[0].change = False
+    $ clothes[mgg].casual.sel[0].rand   = False
+
+    # Устанавливаем новую одежду в качестве текущей
+    $ clothes[lisa].casual.cur = 2 if 'bathrobe' in lisa.gifts else 1
+    $ clothes[lisa].casual.left = 2
+    $ clothes[lisa].learn.cur = 3 if 'bathrobe' in lisa.gifts else 2
+    $ clothes[lisa].casual.left = 2
+
+    $ clothes[alice].casual.cur = 2 if 'pajamas' in alice.gifts else 1
+    $ clothes[alice].casual.left = 2
+
+    $ clothes[mgg].casual.cur = 2 if items['max-a'].have else 1
+    $ clothes[mgg].casual.left = 2
+
+    $ dcv['kiratalk'] = Daily(done=True, enabled=True)
+
     return

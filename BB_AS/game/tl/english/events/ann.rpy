@@ -623,7 +623,7 @@ translate english ann_sleep_fd1a61fb:
 translate english ann_sleep_0107c89f:
 
     # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком уж соблазнительно она выглядит в этой сорочке! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "Wow! The sight of those slanted legs ... She looks too tempting in that shirt! As long as she doesn't wake up now..." nointeract
+    Max_05 "Wow! The sight of those slanted legs... She looks too tempting in that shirt! As long as she doesn't wake up now..." nointeract
 
 # game/events/ann.rpy:238
 translate english ann_dressed_work_f3117b6b:
@@ -1014,7 +1014,7 @@ translate english ann_dressed_shop_gift_c0df5b86:
 translate english ann_dressed_shop_fail_f49b0b30:
 
     # Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
-    Ann_01 "[_text!t]Max, I still have some things to do... Come on, son, go ... Do something else." nointeract
+    Ann_01 "[_text!t]Max, I still have some things to do... Come on, son, go... Do something else." nointeract
 
 # game/events/ann.rpy:505
 translate english ann_dressed_shop_loveyou_e41c68c6:

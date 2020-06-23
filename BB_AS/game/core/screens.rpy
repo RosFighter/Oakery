@@ -820,7 +820,7 @@ screen room_navigation():
         $ public += cam.public
     $ public = int(public)
 
-    if persone_button1:
+    if persone_button1 and exist_btn_image():
         imagebutton idle persone_button1:
             focus_mask True
             if have_dialog():
@@ -1261,7 +1261,7 @@ screen menu_userinfo():
                         xpadding 0 ypadding 0 xmargin 0 ymargin 0
                         textbutton _("Макс") action SetVariable('CurChar', 'max') selected CurChar == 'max' text_selected_color gui.text_color
                         foreground 'interface marker'
-                    for char in chars:
+                    for char in sorted(chars.keys()):
                         button background None action SetVariable('CurChar', char) xsize 180:
                             xpadding 0 ypadding 0 xmargin 0 ymargin 0
                             textbutton chars[char].name action SetVariable('CurChar', char) selected CurChar == char text_selected_color gui.text_color
@@ -1289,7 +1289,7 @@ screen menu_userinfo():
                 frame pos (50, 20) xsize 800 background None:
                     if CurChar == 'max':
                         vbox spacing -1:
-                            for char in chars:
+                            for char in sorted(chars.keys()):
                                 # relmax
                                 hbox xfill True:
                                     frame xsize 350 background None:

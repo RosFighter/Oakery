@@ -79,7 +79,7 @@ label Eric_talk_afterdinner:
                     jump .shesaid
         "У меня есть мозги и я что-нибудь придумаю!":
             $ talk_var['empathic'] -= 2
-            show Max talk-terrace 4a
+            show Max talk-terrace 04a
             show Eric meet 01b
             menu:
                 Eric_02 "Серьёзно? И как ты с этими мозгами довёл ситуацию до того, что Алиса в тебе видит маленького извращенца, подглядывающего из-за угла. Лиза рядом только потому, что других защитников не было, а мать... смотрит на тебя как на неудачника!"
@@ -122,7 +122,7 @@ label Eric_talk_afterdinner:
                 jump .friend
 
     label .no:
-        show Max talk-terrace 4a
+        show Max talk-terrace 04a
         show Eric meet 01b
         menu:
             Eric_00 "Ну, как хочешь. Надеюсь, в тебе сейчас говорят эмоции, а не здравый смысл. У тебя есть неделя, чтобы передумать. Тогда и поговорим снова и будет ясно, как быть."
@@ -607,7 +607,7 @@ label eric_ann_fucking:
     $ spent_time += 20
     $ mgg.stealth += 0.1
     $ notify_list.append(_("Скрытность Макса повысилась"))
-    $ current_room = house[1]
+    $ current_room = house[0]
     jump Waiting
 
 

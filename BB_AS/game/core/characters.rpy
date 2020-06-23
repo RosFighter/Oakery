@@ -64,6 +64,15 @@ image side max_18 = 'Max emo-18'
 define Max_19 = Character(kind=Max, image='max_19')
 image side max_19 = 'Max emo-19'
 
+define Max_20 = Character(kind=Max, image='max_20')
+image side max_20 = 'Max emo-20'
+
+define Max_21 = Character(kind=Max, image='max_21')
+image side max_21 = 'Max emo-21'
+
+define Max_22 = Character(kind=Max, image='max_22')
+image side max_22 = 'Max emo-22'
+
 
 ## Лиза, младшая сестра Макса
 
@@ -392,3 +401,65 @@ image side krs_03 = 'Christina emo-03'
 
 define Krs_04 = Character(kind=Krs, image='krs_04')
 image side krs_04 = 'Christina emo-04'
+
+
+## Тётя Кира
+
+define Kira = Character(_("Кира"))
+
+define Kira_00 = Character(kind=Kira, image='kira_00')
+image side kira_00 = 'Kira emo-00'
+
+define Kira_01 = Character(kind=Kira, image='kira_01')
+image side kira_01 = 'Kira emo-01'
+
+define Kira_02 = Character(kind=Kira, image='kira_02')
+image side kira_02 = 'Kira emo-02'
+
+define Kira_03 = Character(kind=Kira, image='kira_03')
+image side kira_03 = 'Kira emo-03'
+
+define Kira_04 = Character(kind=Kira, image='kira_04')
+image side kira_04 = 'Kira emo-04'
+
+define Kira_05 = Character(kind=Kira, image='kira_05')
+image side kira_05 = 'Kira emo-05'
+
+define Kira_06 = Character(kind=Kira, image='kira_06')
+image side kira_06 = 'Kira emo-06'
+
+define Kira_07 = Character(kind=Kira, image='kira_07')
+image side kira_07 = 'Kira emo-07'
+
+define Kira_08 = Character(kind=Kira, image='kira_08')
+image side kira_08 = 'Kira emo-08'
+
+define Kira_09 = Character(kind=Kira, image='kira_09')
+image side kira_09 = 'Kira emo-09'
+
+define Kira_10 = Character(kind=Kira, image='kira_10')
+image side kira_10 = 'Kira emo-10'
+
+define Kira_11 = Character(kind=Kira, image='kira_11')
+image side kira_11 = 'Kira emo-11'
+
+define Kira_12 = Character(kind=Kira, image='kira_12')
+image side kira_12 = 'Kira emo-12'
+
+define Kira_13 = Character(kind=Kira, image='kira_13')
+image side kira_13 = 'Kira emo-13'
+
+define Kira_14 = Character(kind=Kira, image='kira_14')
+image side kira_14 = 'Kira emo-14'
+
+define Kira_15 = Character(kind=Kira, image='kira_15')
+image side kira_15 = 'Kira emo-15'
+
+define Kira_16 = Character(kind=Kira, image='kira_16')
+image side kira_16 = 'Kira emo-16'
+
+define Kira_17 = Character(kind=Kira, image='kira_17')
+image side kira_17 = 'Kira emo-17'
+
+define Kira_18 = Character(kind=Kira, image='kira_18')
+image side kira_18 = 'Kira emo-18'

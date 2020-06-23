@@ -207,13 +207,37 @@ translate english strings:
 
     # game/core/02init.rpy:20
     old "{color=#E59400}{i}Лизе понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Lisa liked the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:21
     old "{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Lisa didn't like the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:59
     old "Массаж рук заказывала?"
-    new ""
+    new "Did you order a hand massage?"
+
+# TODO: Translation updated at 2020-06-08 10:23
+
+translate english strings:
+
+    # game/core/02init.rpy:59
+    old "Насчёт ванны ночью..."
+    new "About the bath at night..."
+
+# TODO: Translation updated at 2020-06-22 20:30
+
+translate english strings:
+
+    # game/core/02init.rpy:59
+    old "Да тут всегда хорошая погода..."
+    new "We always have a great weather here..."
+
+    # game/core/02init.rpy:59
+    old "Ага, как всегда..."
+    new "Yep, like always..."
+
+    # game/core/02init.rpy:59
+    old "Да, шикарная!"
+    new "Yes, the weather is great!"
 

@@ -531,6 +531,7 @@ label lisa_phone_closer:
     $ renpy.show('Lisa phone-closer 01'+lisa.dress)
     return
 
+
 label lisa_bath:
     scene location house bathroom door-evening
     if peeping['lisa_bath'] != 0:

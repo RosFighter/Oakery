@@ -111,6 +111,8 @@ label Midnight:
         if flags['smoke.request'] == 'money':
             $ flags['smoke'] = None
             $ flags['smoke.request'] = None
+        elif flags['smoke']=='nojeans': # если требование не носить джинсы, оно не может быть нарушено
+            pass
         elif flags['smoke.request'] is not None and (flags['smoke'] is None or flags['smoke'][:3] != 'not'):
             # Если требование Макса было и это не деньги
             $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
@@ -198,6 +200,10 @@ label NewDay:
         $ del punalice[14:]
 
     $ flags['lisa_hw'] = False
+    if 'kira' not in chars:
+        $ clothes[lisa].casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
+    else:
+        $ clothes[lisa].casual.cur = renpy.random.randint(1, 2) if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else max(clothes[lisa].casual.GetOpen())
 
     if mgg.credit.debt > 0:        # если кредит не погашен
         $ mgg.credit.left -= 1       # уменьшим счетчик дней
@@ -348,6 +354,7 @@ label after_load:
         "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
     else:
+        "ver [current_ver]"
         if current_ver < "0.03.5.002":
             $ current_ver = "0.03.5.002"
 
@@ -443,14 +450,14 @@ label after_load:
                         Garb('c', '04b', 'Полотенце', True),
                     ])
                 if 'bathrobe' in lisa.gifts:
-                    clothes[lisa].casual.sel.append(Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
+                    clothes[lisa].casual.sel.insert(1, Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
                     clothes[lisa].learn.sel.insert(1, Garb('b', '04', 'Халатик', True))
 
                 clothes[lisa].swimsuit = Clothes(_("КУПАЛЬНИК"), [
                         Garb('a', '03', 'Закрытый купальник'),
                     ])
                 if 'bikini' in lisa.gifts:
-                    clothes[lisa].swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
+                    clothes[lisa].swimsuit.sel.insert(1, Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
                     clothes[lisa].swimsuit.cur = 1
 
                 clothes[lisa].sleep = Clothes(_("Для сна"), [
@@ -464,7 +471,7 @@ label after_load:
                         Garb('a', '01a', 'Обычная одежда', True),
                     ])
                 if 'pajamas' in alice.gifts:
-                    clothes[alice].casual.sel.append(Garb('b', '01c', 'Пижама', True))
+                    clothes[alice].casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
 
                 clothes[ann].casual = Clothes(_("Повседневная"), [
                         Garb('a', '01a', 'Обычная одежда', False, True),
@@ -562,6 +569,25 @@ label after_load:
             $ poss['nightclub'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
 
             $ flags['talkaboutbath'] = 0
+
+        if current_ver < "0.03.9.009":
+            $ current_ver = "0.03.9.009"
+
+            $ EventsByTime['Kira arrival'] = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([day>=18, GetWeekday(day)==6, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True)
+            $ ann.add_schedule(Schedule((0, 6), '16:0', '16:59', 'read', _("читает на веранде"), 'house', 5, 'ann_read', talklabel='ann_read_closer', glow=110))
+
+        if current_ver < "0.03.9.010":
+            $ current_ver = "0.03.9.010"
+            $ dcv['new_pun'] = Daily(done=True, enabled=True)
+            if 'bathrobe' in lisa.gifts and len(clothes[lisa].casual.sel)<2:
+                $ clothes[lisa].casual.sel.insert(1, Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
+
+        if current_ver < "0.03.9.011":
+            $ current_ver = "0.03.9.011"
+            $ clothes[ann].rest_morn = Clothes(_("Для утреннего отдыха"), [
+                    Garb('a', '01b', 'Футболка', False, True),
+                ])
+
 
         if current_ver < config.version:
             $ current_ver = config.version

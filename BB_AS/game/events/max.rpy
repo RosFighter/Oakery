@@ -17,6 +17,9 @@ label StartDialog:
             jump AliceTalkStart
         elif current_room.cur_char[0] == 'ann':
             jump AnnTalkStart
+        elif current_room.cur_char[0] == 'kira':
+            jump KiraTalkStart
+
     jump AfterWaiting
 
 
@@ -532,7 +535,7 @@ label delivery2:
         $ kol_cream += 30
         $ items['solar'].InShop = False
     if 'max-a' in delivery_list[1]:
-        $ clothes[mgg].casual.sel.append(Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
+        $ clothes[mgg].casual.sel.insert(1, Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
         $ clothes[mgg].casual.cur = 1
 
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
@@ -642,7 +645,8 @@ label SearchSecretBook:
 
     label .wardrobe:
         $ spent_time += 10
-        scene BG char Max secretbook-00
+        $ renpy.scene()
+        $ renpy.show('BG char Max secretbook-00'+mgg.dress)
         Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
         $ poss['secretbook'].OpenStage(1)
         $ AvailableActions['searchbook'].enabled = False

@@ -53,7 +53,7 @@ screen choice_zone_sunscreen():
             ground 'BG char Alice sun-alone 01-01a'
         else:
             ground 'BG char Alice sun-alone 01-01'
-        add 'Alice sun-alone 01-01'+mgg.dress
+        add 'Max sun-alone 01'+mgg.dress
         hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.left_foot')]:
             hovered Cursor('palms')
             unhovered Cursor(None)
