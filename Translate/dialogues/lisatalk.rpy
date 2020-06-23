@@ -5917,7 +5917,7 @@ translate english Lisa_MorningWoodCont_c83ed0ea:
 translate english Lisa_MorningWoodCont_955ee47f:
 
     # Max_07 "В том смысле, что я сплю в трусах и ты теперь иногда видишь моего \"Большого Макса\", а вот я вижу тебя слишком одетой... Это не честно!"
-    Max_07 "I mean, I sleep in my underwear and let you see my \"Big Маx\" sometimes, but you're still always dressed... That's not fair!"
+    Max_07 "I mean, I sleep in my underwear and let you see my \"Big Max\" sometimes, but you're still always dressed... That's not fair!"
 
 # game/dialogues/lisatalk.rpy:907
 translate english Lisa_MorningWoodCont_81db866f:
@@ -6303,7 +6303,7 @@ translate english Lisa_HomeWork_next_foot_mass_20bec9f8:
 translate english Lisa_HomeWork_next_foot_mass_4c13c7d3:
 
     # Lisa_01 "Только не заглядывайся туда так сильно..."
-    Lisa_01 "Только не заглядывайся туда так сильно..."
+    Lisa_01 "Just don’t look there so much..."
 
 # game/dialogues/lisatalk.rpy:1277
 translate english Lisa_HomeWork_next_foot_mass_80d50f56:
@@ -6423,7 +6423,7 @@ translate english Lisa_HomeWork_shoulders_12f99b71:
 translate english Lisa_HomeWork_end_shoulders2_a37873ea:
 
     # Max_04 "Тогда заканчиваем. И доделываем уроки. Тебе ещё много?"
-    Max_04 "Then we're done. Now we can finish our homework. How much more do you need?""
+    Max_04 "Then we're done. Now we can finish our homework. How much more do you need?"
 
 # game/dialogues/lisatalk.rpy:1345
 translate english Lisa_HomeWork_end_shoulders1_adfac000:
@@ -6474,9 +6474,9 @@ translate english Lisa_HomeWork_random_answer_42868852:
     Max_04 "Yes, I can. Tired of writing?"
 
 # game/dialogues/lisatalk.rpy:1364
-translate english Lisa_HomeWork_random_answer_72a21eae:
+translate english Lisa_HomeWork_random_answer_86751a8e:
 
-    # Lisa_01 "Немного. Во втрник и пятницу мне приходится много писать, а твой массаж бы это смог облегчить."
+    # Lisa_01 "Немного. Во вторник и пятницу мне приходится много писать, а твой массаж мог бы это облегчить."
     Lisa_01 "A little. On Monday and Friday, I have to write a lot, and your massage could make it easier."
 
 # game/dialogues/lisatalk.rpy:1365
@@ -6598,4 +6598,3 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:1397
     old "{i}продолжить{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
     new "{i}Continue{/i} \n{color=[_ch10.col]} (Massage. Chance: [_ch10. vis]){/color}"
-

@@ -225,3 +225,19 @@ translate english strings:
     old "Насчёт ванны ночью..."
     new "About the bath at night..."
 
+# TODO: Translation updated at 2020-06-22 20:30
+
+translate english strings:
+
+    # game/core/02init.rpy:59
+    old "Да тут всегда хорошая погода..."
+    new "We always have a great weather here..."
+
+    # game/core/02init.rpy:59
+    old "Ага, как всегда..."
+    new "Yep, like always..."
+
+    # game/core/02init.rpy:59
+    old "Да, шикарная!"
+    new "Yes, the weather is great!"
+

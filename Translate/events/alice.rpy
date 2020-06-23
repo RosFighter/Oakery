@@ -10,13 +10,13 @@ translate english alice_bath_086088b7:
 translate english alice_bath_ab9e6db9:
 
     # Alice "{b}Алиса:{/b} Кому там не спится? Я ванну набираю..." nointeract
-    Alice "{b}Аlice:{/b} Who is it? I'm in the bath..." nointeract
+    Alice "{b}Alice:{/b} Who is it? I'm in the bath..." nointeract
 
 # game/events/alice.rpy:16
 translate english alice_bath_74fd8c7a:
 
     # Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
-    Alice "{b}Аlice:{/b} Max, are you deaf? I just told you i'm in the bath. Don't come back for at least an hour!"
+    Alice "{b}Alice:{/b} Max, are you deaf? I just told you i'm in the bath. Don't come back for at least an hour!"
 
 # game/events/alice.rpy:17
 translate english alice_bath_84309eb3:
@@ -1557,13 +1557,13 @@ translate english alice_after_club_24febe35:
 translate english alice_after_club_ab9e6db9:
 
     # Alice "{b}Алиса:{/b} Кому там не спится? Я ванну набираю..." nointeract
-    Alice "{b}Аlice:{/b} Who is it? I'm in the bath..." nointeract
+    Alice "{b}Alice:{/b} Who is it? I'm in the bath..." nointeract
 
 # game/events/alice.rpy:1097
 translate english alice_after_club_74fd8c7a:
 
     # Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
-    Alice "{b}Аlice:{/b} Max, are you deaf? I just told you i'm in the bath. Don't come back for at least an hour!"
+    Alice "{b}Alice:{/b} Max, are you deaf? I just told you i'm in the bath. Don't come back for at least an hour!"
 
 # game/events/alice.rpy:1098
 translate english alice_after_club_84309eb3:

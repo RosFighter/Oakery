@@ -1512,9 +1512,9 @@ translate english dinner_11_bf1cc148:
     Max_09 "What about my physique?"
 
 # game/dialogues/dinner.rpy:539
-translate english dinner_11_1f947bea:
+translate english dinner_11_de1a56d1:
 
-    # Eric_01 "Ну, они не очень. Хотя, тебя подготовят, натренеруют. А главное - научат дисциплине и субординации. Мама за тебя порадуется, когда увидишь, что мужиком стал!"
+    # Eric_01 "Ну, они не очень. Хотя, тебя подготовят, натренеруют. А главное - научат дисциплине и субординации. Мама за тебя порадуется, когда увидит, что мужиком стал!"
     Eric_01 "It's not great. They'll train you, though. And they'll teach you discipline and subordination. Mom will be happy for you when she'll see you transform into a real man."
 
 # game/dialogues/dinner.rpy:540
@@ -1946,3 +1946,4 @@ translate english strings:
     # game/dialogues/dinner.rpy:634
     old "Может быть, наоборот?"
     new "What about the other way around?"
+

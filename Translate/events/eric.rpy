@@ -1168,7 +1168,7 @@ translate english Eric_talk_afterdinner_get_9af01c97:
 translate english Eric_talk_afterdinner_get_5024cd98:
 
     # Eric_03 "Ну, это как посмотреть. Ты хотел потребовать \"доступа\" к женщинам в своей семье... Если бы твоя мать узнала, сомневаюсь, что это бы хорошо для тебя закончилось, правда?" nointeract
-    Eric_03 "Well, that depends. You wanted to demand \ "access\" to the women in your family... If your mother found out, I doubt it would end well for you, right?" nointeract
+    Eric_03 "Well, that depends. You wanted to demand \"access\" to the women in your family... If your mother found out, I doubt it would end well for you, right?" nointeract
 
 # game/events/eric.rpy:264
 translate english Eric_talk_afterdinner_get_91cf9d80:
@@ -1331,4 +1331,3 @@ translate english strings:
     # game/events/eric.rpy:277
     old "{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"
     new "{color=[lime]}{i}{b}Attention:{/b} Your relationship has improved significantly {/i} {/color}"
-
