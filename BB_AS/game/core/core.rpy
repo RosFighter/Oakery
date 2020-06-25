@@ -603,7 +603,8 @@ label after_load:
             if 'kira' in chars:
                 $ kira.add_schedule(Schedule((0, 3), '3:00', '3:59', 'night_tv', 'ночной просмотр порно', 'house', 4, 'kira_night_tv', enabletalk=False, glow=110))
                 $ peeping['kira_sleep'] = 0
-                $ talk_var['kira.porn'] = False
+                $ talk_var['kira.porn'] = 0
+                $ talk_var['kira.bath.mass'] = 0
 
 
         if current_ver < config.version:

@@ -730,7 +730,7 @@ label AddKira:
     $ dcv['kiratalk'] = Daily(done=True, enabled=True)
 
     $ peeping['kira_sleep'] = 0
-    $ talk_var['kira.porn'] = False
-    $ talk_var['kira.porn'] = False
+    $ talk_var['kira.porn'] = 0
+    $ talk_var['kira.bath.mass'] = 0
 
     return
