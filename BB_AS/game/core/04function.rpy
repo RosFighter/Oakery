@@ -658,9 +658,14 @@ init python:
             else:
                 eric.dress_inf = '01'
         elif char == 'kira':
-            if name == 'swim':
-                kira.dress = 'a'
-                kira.dress_inf = '03a' if pose3_3 == '03' else '03'
+            kira.dress = 'a'
+            if name in ['swim', 'sun']:
+                kira.dress_inf = '03a' if pose3_4 == '03' and name == 'swim' else '03'
+            elif name == 'sleep':
+                kira.dress_inf = '02'
+            elif name == 'night_tv':
+                kira.dress_inf = '02'
+            # else:
         return
 
 

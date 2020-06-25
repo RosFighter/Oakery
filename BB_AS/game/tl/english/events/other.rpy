@@ -886,3 +886,11 @@ translate english strings:
     old "И почти ничего не видно..."
     new "And you can barely see anything..."
 
+# TODO: Translation updated at 2020-06-23 13:40
+
+# game/events/other.rpy:304
+translate english Kira_arrival_end_yard_370fc726:
+
+    # Max_11 "Ну где они все?! Если я начну завтракать без них, то потом все только и будут говорить о моей невоспитанности. Давайте уже быстрее!"
+    Max_11 ""
+

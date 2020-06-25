@@ -45,6 +45,7 @@ label Waiting:
         $ pose3_1 = renpy.random.choice(['01', '02', '03'])
         $ pose3_2 = renpy.random.choice(['01', '02', '03'])
         $ pose3_3 = renpy.random.choice(['01', '02', '03'])
+        $ pose3_4 = renpy.random.choice(['01', '02', '03'])
         $ pose2_1 = renpy.random.choice(['01', '02'])
         $ pose2_2 = renpy.random.choice(['01', '02'])
         $ pose2_3 = renpy.random.choice(['01', '02'])
@@ -354,7 +355,7 @@ label after_load:
         "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
     else:
-        "ver [current_ver]"
+        # "ver [current_ver]"
         if current_ver < "0.03.5.002":
             $ current_ver = "0.03.5.002"
 
@@ -587,6 +588,22 @@ label after_load:
             $ clothes[ann].rest_morn = Clothes(_("Для утреннего отдыха"), [
                     Garb('a', '01b', 'Футболка', False, True),
                 ])
+
+        if current_ver < "0.03.9.012":
+            $ current_ver = "0.03.9.012"
+            $ talk_var['teachkiss'] = 0
+            $ talk_var['ask.teachkiss'] = []
+            $ dcv['lizamentor'] = Daily(done=True, enabled=True) # обучение Лизы
+            $ poss['seduction'].stages[4].ps = ""
+            $ poss['seduction'].stages.extend([
+                PossStage("interface poss mentor ep05", _("Итак, Лиза поинтересовалась, чему же я собираюсь её учить. И сразу же поставила меня в глупую ситуацию. Я вроде бы должен её учить, но сам не умею даже целоваться! Нужно срочно найти кого-то, кто бы мне помог в этом... Да, легко сказать...")),
+                PossStage("interface poss mentor ep06", _("Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телек.")),
+                PossStage("interface poss mentor ep06", _("Тётя Кира превосходный учитель поцелуев! Она согласилась меня иногда учить. Кто знает, может быть она научит и чему-то ещё?\n\nНу всё. Теперь нужно практиковаться в поцелуях с тётей Кирой и передавать полученные знания Лизе... Только вот её ещё нужно убедить..."),
+                        _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"))])
+            if 'kira' in chars:
+                $ kira.add_schedule(Schedule((0, 3), '3:00', '3:59', 'night_tv', 'ночной просмотр порно', 'house', 4, 'kira_night_tv', enabletalk=False, glow=110))
+                $ peeping['kira_sleep'] = 0
+                $ talk_var['kira.porn'] = False
 
 
         if current_ver < config.version:

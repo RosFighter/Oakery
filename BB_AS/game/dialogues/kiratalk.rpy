@@ -70,7 +70,7 @@ label kira_firsttalk:
     Max_00 "Хорошо..."
     scene BG shower-closer
     show Max shower 04
-    show FG shower-water
+    show FG shower-closer
     menu:
         Max_03 "{i}Расслабиться в душе? Легко. Особенно, когда рядом такая женщина. Ух! Я и не задумывался о своей тёте в этом плане никогда, но сейчас что-то изменилось... или во мне или в ней...{/i}"
         "{i}снять напряжение{/i}":
@@ -141,7 +141,7 @@ label kira_talk2:
             pass
     scene BG shower-closer
     show Max shower 04
-    show FG shower-water
+    show FG shower-closer
     menu:
         Max_20 "{i}Вроде тётя Кира специально и не провоцирует, но меня к ней так тянет. Её горячее, почти обнажённое тело так и манит...{/i}"
         "{i}кончить{/i}":

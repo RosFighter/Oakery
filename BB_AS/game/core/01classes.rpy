@@ -364,7 +364,7 @@ init python:
         def verify_schedule(self):
             max_krat = 1
             max_week = 0
-            for sh in schedule:  # определяем неделю старта теста и максимальную длительность в неделях (кратность)
+            for sh in self.plan:  # определяем неделю старта теста и максимальную длительность в неделях (кратность)
                 max_krat = max(max_krat, sh.krat)
                 max_week = max(max_week, sh.weekstart)
 
