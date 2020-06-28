@@ -892,5 +892,5 @@ translate english strings:
 translate english Kira_arrival_end_yard_370fc726:
 
     # Max_11 "Ну где они все?! Если я начну завтракать без них, то потом все только и будут говорить о моей невоспитанности. Давайте уже быстрее!"
-    Max_11 ""
+    Max_11 "Where are they all? If I start eating Breakfast without them, then everyone will talk about my bad manners. "
 
