@@ -1268,5 +1268,5 @@ translate english strings:
 
     # game/core/03variables.rpy:185
     old "Для утреннего отдыха"
-    new ""
+    new "For Morning rest"
 

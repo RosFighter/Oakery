@@ -702,215 +702,215 @@ translate english strings:
 translate english StartPunishment_42b2fac4:
 
     # Ann_16 "Прежде, чем мы начнём, кое-кто заслуживает наказания и сейчас все на это посмотрят..."
-    Ann_16 ""
+    Ann_16 "Before we start, I just need to point out, we're all looking at someone who deserves to be punished..."
 
 # game/dialogues/punishment.rpy:96
 translate english first_new_punishment_9e045600:
 
     # Ann_12 "Да, напоминаю всем. С сегодняшнего дня все наказания будут в обнажённом виде. Да, я понимаю, что это непедагогично, но очень эффективно."
-    Ann_12 ""
+    Ann_12 "I'm reminding everyone that from now on, all punishments will be in the Nude. Yes, I understand that it might not sound logical, but I'm sure it will be very effective."
 
 # game/dialogues/punishment.rpy:97
 translate english first_new_punishment_8bbfe5b5:
 
     # Max_10 "Но мам..."
-    Max_10 ""
+    Max_10 "But Mom..."
 
 # game/dialogues/punishment.rpy:98
 translate english first_new_punishment_de217f08:
 
     # Ann_16 "Я знаю, Макс, но уговаривать и пытаться вас убедить другим способом у меня нет ни сил ни времени. Чем более унизительно наказание, тем у вас будет меньше желания нарушить правила."
-    Ann_16 ""
+    Ann_16 "I know, Max, but I don't have the time or energy to try to persuade you in any other way. The more humiliating the punishment, the less likely it is that you will break the rules."
 
 # game/dialogues/punishment.rpy:99
 translate english first_new_punishment_916b3b51:
 
     # Lisa_09 "Мам, и что, нам с Алисой придётся раздеваться догола прямо перед Максом? А если он разденется, нам смотреть на этот... его... ну..."
-    Lisa_09 ""
+    Lisa_09 "Mom, are Alice and I going to have to strip naked in front of max? And if he gets undressed, we'll see... his ... well..."
 
 # game/dialogues/punishment.rpy:100
 translate english first_new_punishment_51f3891b:
 
     # Max_07 "Что, страшно?"
-    Max_07 ""
+    Max_07 "What, are you scared?"
 
 # game/dialogues/punishment.rpy:101
 translate english first_new_punishment_3312b1b2:
 
     # Ann_00 "Да, Лиза. Видишь, ты уже боишься. Значит, приложишь все усилия, чтобы тебя не наказали. Уже правила работают, а стоит один раз вам быть униженными перед всей семьёй..."
-    Ann_00 ""
+    Ann_00 "Yes, Lisa. See, you're already scared. So you'll do your best not to get punished. The rules already work, and once you're humiliated in front of the whole family..."
 
 # game/dialogues/punishment.rpy:102
 translate english first_new_punishment_3d6a4225:
 
     # Max_09 "А если ты накосячишь? Кто тебя будет наказывать?"
-    Max_09 ""
+    Max_09 "What if you screw up? Who will punish you?"
 
 # game/dialogues/punishment.rpy:103
 translate english first_new_punishment_44a5aca6:
 
     # Ann_02 "Макс, ну что за ерунда. Что я могу нарушить? Я же ваша мама и всегда даю вам пример для подражания..."
-    Ann_02 ""
+    Ann_02 "That's nonsense. What rules can I break? I am your mother and I will always be the one to set an example..."
 
 # game/dialogues/punishment.rpy:104
 translate english first_new_punishment_9b49b76d:
 
     # Max_08 "Э... Ты уверена?"
-    Max_08 ""
+    Max_08 "Er ... are you sure?"
 
 # game/dialogues/punishment.rpy:105
 translate english first_new_punishment_8cf88c09:
 
     # Ann_04 "Да, Макс, я уверена. Но даже если я и совершу ошибку, то меня сможет наказать, допустим, Эрик... Но этого не случится. Я соблюдаю свои же правила!"
-    Ann_04 ""
+    Ann_04 "Yes, Max, I'm sure. But even if I make a mistake, I can be punished by, say, Eric... But that won't happen. I follow my own rules!"
 
 # game/dialogues/punishment.rpy:106
 translate english first_new_punishment_c0b6a936:
 
     # Max_09 "Ага, уж он то накажет..."
-    Max_09 ""
+    Max_09 "Yeah, he'll punish you..."
 
 # game/dialogues/punishment.rpy:107
 translate english first_new_punishment_9285451a:
 
     # Ann_12 "Макс, ты слишком много говоришь... Ладно, дам вам последнюю поблажку - в ближайший месяц можете оставаться в трусах во время наказания. Но если и это никак вас не образумит, то всё, будете раздеваться догола. И больше никаких предупреждений. Теперь всё будет строго."
-    Ann_12 ""
+    Ann_12 "That's enough... I'll give you one last chance - you can stay in your underwear for the next month while you're being punished. But if that doesn't bring you to your senses, you'll be stripped naked. No more warnings."
 
 # game/dialogues/punishment.rpy:268
 translate english punishment_max_pun_reson_2f01137f:
 
     # Ann_12 "Ну, Макс, раздевайся до трусов. Остальные просто посмотрят, что бывает, когда кто-то косячит..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Now, Max, strip down to your underwear. Set an example for what happens when the rules get broken..." nointeract
 
 # game/dialogues/punishment.rpy:273
 translate english punishment_max_pun_reson_09e2a1e5:
 
     # Ann_12 "Ну, Макс, снимай шорты. Остальные просто посмотрят, что бывает, когда кто-то косячит..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Come on, Max, take off your shorts. The rest of us will just see what happens when someone messes up..." nointeract
 
 # game/dialogues/punishment.rpy:281
 translate english punishment_max_pun_reson_2f871657:
 
     # Ann_14 "Хорошо. А теперь, ложись на мои колени и приступим, а то все голодные сидят..."
-    Ann_14 ""
+    Ann_14 "Well. Now, get on my lap and let's get started, everyone's waiting for dinner..."
 
 # game/dialogues/punishment.rpy:290
 translate english punishment_max_pun_reson_831f2da1_1:
 
     # Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
-    Ann_16 ""
+    Ann_16 "Max has several faults... He knows them very well. I won't name them, because he brought this upon himself!"
 
-# game/dialogues/punishment.rpy:300
-translate english punishment_max_pun_reson_678436cc_1:
+translate english punishment_max_pun_re
+# game/dialogues/punishment.rpy:300son_678436cc_1:
 
     # Ann_16 "[_text!t]"
-    Ann_16 ""
+    Ann_16 "[_text!t]"
 
 # game/dialogues/punishment.rpy:306
 translate english punishment_max_pun_reson_c632e1a6:
 
     # Max_14 "{i}Блин... Все с таким интересом смотрят, как меня наказывают... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 ""
+    Max_14 "{i}Damn ... I can feel everyone's eyes on me...This is so humiliating...{/i}\n\n{color=[orange]}{b}Attention:{/b} Your influence on the family has decreased!{/color}"
 
 # game/dialogues/punishment.rpy:325
 translate english punishment_max_pun_reson_faf292df:
 
     # Ann_12 "Ну всё, Макс, одевайся. Надеюсь, ты сделал выводы и постараешься больше не попадать в такую унизительную ситуацию..."
-    Ann_12 ""
+    Ann_12 "All right, get dressed. I hope you've come to senses, and that you won't try to get yourself in such an embarrassing situation again"
 
 # game/dialogues/punishment.rpy:376
 translate english punishment_lisa_cc22447a:
 
     # Ann_12 "Лиза. Мне нужно всем объяснять за что ты сейчас будешь наказана? Молчишь? Значит, знаешь... Всё, давай раздевайся до трусов и быстро, без разговоров!"
-    Ann_12 ""
+    Ann_12 "Lisa. Do I have to explain to everyone what you're about to be punished for? You're not saying anything? So, you know... All right, strip down to your underwear, quickly!"
 
 # game/dialogues/punishment.rpy:417
 translate english punishment_lisa_d2163b1e:
 
     # Max_04 "{i}А вот это мне уже нравится... Сестрёнка сверкает своими классными сиськами... Можно смотреть и ничего за это не будет! Красота!{/i}"
-    Max_04 ""
+    Max_04 "{i}Now I like that... Little sister's in a compromising position... Front row seats for and a free show? Nice!{/i}"
 
 # game/dialogues/punishment.rpy:434
 translate english punishment_lisa_1be74016:
 
     # Lisa_10 "Ой... Мам! Больно!"
-    Lisa_10 ""
+    Lisa_10 "Oh ... Mom! It hurts!"
 
 # game/dialogues/punishment.rpy:435
 translate english punishment_lisa_2e6c7d66:
 
     # Ann_16 "Давай терпи. Получила двойку, получила по голой заднице у всех на глазах."
-    Ann_16 ""
+    Ann_16 "Just be patient. Maybe you'll learn that having your bare ass exposed is a worse alternative to just passing your homework!"
 
 # game/dialogues/punishment.rpy:448
 translate english punishment_lisa_3250d4ff:
 
     # Ann_12 "Лиза, надеюсь, ты извлекла урок из этого наказания. Да, тебе было стыдно и неприятно, что все пялились на тебя, но надеюсь, ты всё поняла и больше это не повторится. А теперь одевайся!"
-    Ann_12 ""
+    Ann_12 "Lisa, I hope you've learned your lesson from this punishment. Yes, you were embarrassed and annoyed that everyone was staring at you, but I hope you understood and it won't happen again. Now get dressed!"
 
 # game/dialogues/punishment.rpy:517
 translate english punishment_alice_05b9287b:
 
     # Ann_12 "Так, Алиса, раздевайся до трусов. Надеюсь, не надо объяснять, за что я тебя сейчас буду наказывать и сама всё понимаешь..."
-    Ann_12 ""
+    Ann_12 "All right, Alice, strip down to your underwear. I hope you don't have to explain why I'm going to punish you now, and you understand everything yourself..."
 
 # game/dialogues/punishment.rpy:519
 translate english punishment_alice_194e9daf_1:
 
     # Alice_06 "Мам, но я сегодня без трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
-    Alice_06 ""
+    Alice_06 "Mom, I'm not wearing any panties today... Let Max leave or turn away, at least..."
 
 # game/dialogues/punishment.rpy:521
 translate english punishment_alice_74c9db0c:
 
     # Alice_06 "Мам, но под шортами нет трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
-    Alice_06 ""
+    Alice_06 "Mom, i'm actually not wearing anything under my shorts... Let Max leave or turn away, at least..."
 
 # game/dialogues/punishment.rpy:523
 translate english punishment_alice_f85f1017:
 
     # Ann_16 "Тогда раздевайся догола, так наказание даже эффективней будет. А Макс пусть смотрит, как и все остальные..."
-    Ann_16 ""
+    Ann_16 "Then strip naked, so the punishment will be even more effective. Max will watch, just like everyone else..."
 
 # game/dialogues/punishment.rpy:574
 translate english punishment_alice_03c693ad:
 
     # Max_04 "{i}Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня!{/i}"
-    Max_04 ""
+    Max_04 "{i}It's times like these that I don't regret being punished almost naked in front of each other! Who needs porn when I have a show like this in front of me?{/i}"
 
 # game/dialogues/punishment.rpy:583
 translate english punishment_alice_be504ff7:
 
     # Alice_15 "Ай! Ма-ам! Больно же! Мам, я больше не буду!!!"
-    Alice_15 ""
+    Alice_15 "Ah! MA-am! It hurts! Mom, I won't do it again!!!"
 
 # game/dialogues/punishment.rpy:584
 translate english punishment_alice_02510b3b:
 
     # Ann_16 "Давай не мамкай тут! Я знаю, что не будешь. Заслужила наказание, терпи!"
-    Ann_16 ""
+    Ann_16 "Come on, don't be like that!. You deserve to be punished."
 
 # game/dialogues/punishment.rpy:608
 translate english punishment_alice_3006a77e:
 
     # Ann_12 "Ну что, получила урок? Стыдно? Правильно. Должно быть стыдно. Надеюсь, это больше не повторится. А теперь, одевайся..."
-    Ann_12 ""
+    Ann_12 "Did you learn your lesson? Ashamed? Good. It should be a shame. I hope it doesn't happen again. Now get dressed..."
 
 translate english strings:
 
     # game/dialogues/punishment.rpy:268
     old "{i}раздеться{/i}"
-    new ""
+    new "{i}undress{/i}"
 
     # game/dialogues/punishment.rpy:273
     old "{i}снять шорты{/i}"
-    new ""
+    new "{i}remove shorts{/i}"
 
     # game/dialogues/punishment.rpy:384
     old "Что прикрываешься, Лиза? Стесняешься? Стыдно? Вот и хорошо... А теперь ложись на мои колени. Быстро!"
-    new ""
+    new "What are you covering up for, Lisa? Shy? Ashamed? That's good... Now lie on my lap. Quickly!"
 
     # game/dialogues/punishment.rpy:533
     old "Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!"
-    new ""
+    new "Well, Alice, are you ashamed? Silent? Think about what you did while I'm punishing you in front of everyone... Get on my lap!"
 

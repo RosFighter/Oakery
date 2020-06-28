@@ -231,7 +231,7 @@ translate english strings:
 
     # game/core/02init.rpy:59
     old "Да тут всегда хорошая погода..."
-    new "We always have a great weather here..."
+    new "We always have great weather here..."
 
     # game/core/02init.rpy:59
     old "Ага, как всегда..."
