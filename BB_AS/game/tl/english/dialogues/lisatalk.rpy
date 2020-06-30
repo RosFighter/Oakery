@@ -6598,3 +6598,47 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:1397
     old "{i}продолжить{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
     new "{i}Continue{/i} \n{color=[_ch10.col]} (Massage. Chance: [_ch10. vis]){/color}"
+# TODO: Translation updated at 2020-06-30 14:31
+
+# game/dialogues/lisatalk.rpy:1418
+translate english liza_hand_mass_22036a1c:
+
+    # Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1419
+translate english liza_hand_mass_4b631c6f:
+
+    # Max_02 "Отличная идея! Давай с этого и начнём!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:1420
+translate english liza_hand_mass_47402468:
+
+    # Lisa_02 "А ты сам-то хоть умеешь целоваться?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1421
+translate english liza_hand_mass_69762f31:
+
+    # Max_04 "Конечно! В этом ничего сложного нет!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:1422
+translate english liza_hand_mass_fe9c07f1:
+
+    # Lisa_09 "И с кем же ты, интересно, целовался? Хотя нет, не рассказывай, опять начнёшь нести чушь про сотню своих подружек..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1423
+translate english liza_hand_mass_6a4f1247:
+
+    # Max_07 "Почему про сотню, всего-то десятка два или три..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1424
+translate english liza_hand_mass_c5e66269:
+
+    # Lisa_02 "Хватит языком молоть, вот научишься целоваться с невыдуманными девушками, тогда и поговорим. А массаж у тебя получается здорово! Даже не хочется, чтобы это заканчивалось..."
+    Lisa_02 ""
+

@@ -40,7 +40,7 @@ label StartPunishment:
             scene BG punish-evening 00
             $ renpy.show("Ann punish-evening 00"+ann.dress)
 
-        if newpunishment == 0 and talk_var['dinner']==12:
+        if newpunishment == 0 and talk_var['dinner']>=12:
             jump first_new_punishment
 
         Ann_16 "Прежде, чем мы начнём, кое-кто заслуживает наказания и сейчас все на это посмотрят..."

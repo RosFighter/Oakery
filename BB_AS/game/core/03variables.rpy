@@ -482,6 +482,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'lisa.handmass' : -1,
         'teachkiss'     : 0,
         'ask.teachkiss' : 0,
+        'kira.tv.touch' : 0,
         }
 
     $ cooldown = {
@@ -606,6 +607,8 @@ label InitVariable: # стартовая инициация переменных
 
         ae_tv_order = ['01', '02', '03', '04', '05', '06']  # последовательность фильмов, просматриваемых Анной и Эриком
 
+        persistent.memories = {}
+
     return
 
 
@@ -664,7 +667,7 @@ label AddKira:
             Schedule((1, 4), '8:00', '8:59', 'shower', 'одна в душе', 'house', 3, 'kira_shower', enabletalk=False, glow=120),
             Schedule((2, 5), '7:00', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'kira_lisa_shower', enabletalk=False, glow=135),
             Schedule((2, 5), '8:00', '8:59', 'swim', 'в бассейне', 'house', 6, 'kira_swim', enabletalk=False, glow=105),  # временно отравляем плавать
-            Schedule((3, 6, 7), '8:00', '8:59', 'shower', 'в душе с Алисой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
+            Schedule((0, 3, 6), '8:00', '8:59', 'shower', 'в душе с Алисой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
             Schedule((0, 1, 2, 3, 4, 5, 6), '9:00', '9:59', 'breakfast', 'семейный завтрак', 'house', 5, 'breakfast', enabletalk=False, glow=105),
             Schedule((0, 1, 2, 3, 4, 5, 6), '10:00', '10:59', 'swim', 'в бассейне', 'house', 6, 'kira_swim', glow=105),
             Schedule((0, 1, 2, 3, 4, 5, 6), '11:00', '12:59', 'sun', 'загорает', 'house', 6, 'kira_sun', glow=120),
@@ -719,7 +722,7 @@ label AddKira:
     $ clothes[lisa].casual.cur = 2 if 'bathrobe' in lisa.gifts else 1
     $ clothes[lisa].casual.left = 2
     $ clothes[lisa].learn.cur = 3 if 'bathrobe' in lisa.gifts else 2
-    $ clothes[lisa].casual.left = 2
+    $ clothes[lisa].learn.left = 2
 
     $ clothes[alice].casual.cur = 2 if 'pajamas' in alice.gifts else 1
     $ clothes[alice].casual.left = 2
@@ -727,9 +730,23 @@ label AddKira:
     $ clothes[mgg].casual.cur = 2 if items['max-a'].have else 1
     $ clothes[mgg].casual.left = 2
 
+    $ clothes[ann].casual.cur = 2
+    $ clothes[ann].casual.left = 2
+    $ clothes[ann].rest_eve.cur = 2
+    $ clothes[ann].rest_eve.left = 2
+    $ clothes[ann].rest_morn.cur = 1
+    $ clothes[ann].rest_morn.left = 2
+    $ clothes[ann].cook_morn.cur = 2
+    $ clothes[ann].cook_morn.left = 2
+    $ clothes[ann].cook_eve.cur = 1
+    $ clothes[ann].cook_eve.left = 2
+
+    $ ChoiceClothes()
+
     $ dcv['kiratalk'] = Daily(done=True, enabled=True)
 
     $ peeping['kira_sleep'] = 0
+    $ peeping['kira_bath'] = 0
     $ talk_var['kira.porn'] = 0
     $ talk_var['kira.bath.mass'] = 0
 

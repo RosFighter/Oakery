@@ -1479,12 +1479,24 @@ label gift_book:
 
 
 label gift_pajamas:
-    $ _ch1 = GetChance(mgg.social, 3, 900)
+    if not _in_replay:
+        $ _ch1 = GetChance(mgg.social, 3, 900)
+        if 'gift_pajamas' not in persistent.memories:
+            $ persistent.memories['gift_pajamas'] = False
+    else:
+        # формируем фон для воспоминания
+        if alice.plan_name == 'sun':
+            call alice_sun
+        else:
+            if tm > '20:00':
+                call alice_evening_closer
+            else:
+                call alice_morning_closer
     Alice_06 "Только скажи, что это пижамка, а не сладости! Ты же купил то, что я просила?!"
     Max_04 "Конечно! Топик и шортики, как ты хотела. Вот, держи..."
     Alice_07 "О да! Какие симпатичные! Ты такой молодец, Макс! Спасибо тебе большое..."
     Max_03 "Ну что, примеришь при мне?"
-    if not sorry_gifts['alice'].owe:
+    if not sorry_gifts['alice'].owe:  # не успел подарить пижамку вовремя
         Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
         Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
         Alice_05 "Ладно, поверю... Ого, а что это у тебя здесь..."   #спрайт с ушами
@@ -1497,7 +1509,9 @@ label gift_pajamas:
         Alice_02 "Вот и молодец! Гуляй..."
         $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif flags['alice_hugs'] > 3: # после 3-ей сладости были родственные обнимашки
-        $ poss['risk'].OpenStage(8)
+        $ persistent.memories['gift_pajamas'] = True
+        if not _in_replay:
+            $ poss['risk'].OpenStage(8)
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
         Max_02 "Как страшно... Давай уже, примеряй."
         scene BG char Alice newpajamas
@@ -1505,7 +1519,8 @@ label gift_pajamas:
         if not ('09:00' <= tm < '20:00'):
             $ __suf += 'e'
         $ renpy.show('Alice newpajamas 01'+__suf)
-        $ SetCamsGrow(house[1], 150)
+        if not _in_replay:
+            $ SetCamsGrow(house[1], 150)
         menu:
             Alice_05 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"   #примерка в комнате/спрайт в одежде (01)
             "Ага, я и не подглядываю...":
@@ -1518,10 +1533,11 @@ label gift_pajamas:
                     Max_04 "Тебе идёт! Мне нравится..."
                     if flags['smoke'] != 'nopants':
                         Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё шортики примерить."   #спрайт в топике без низа, но в трусиках (если бикини, то без трусиков) (06)
-                        $ SetCamsGrow(house[1], 180)
+                        if not _in_replay:
+                            $ SetCamsGrow(house[1], 180)
                     else:
                         Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё шортики примерить."   #спрайт в топике без низа, трусиков по уговору нет
-                    $ suf = 'an' if any([alice.plan_name in ['sun', 'swim'], alice.dress=='d', flags['smoke'] == 'nopants']) else 'a'
+                    $ __suf = 'an' if any([alice.plan_name in ['sun', 'swim'], alice.dress=='d', flags['smoke'] == 'nopants']) else 'a'
                     if not ('09:00' <= tm < '20:00'):
                         $ __suf += 'e'
                     $ renpy.show('Alice newpajamas 06'+__suf)
@@ -1547,7 +1563,8 @@ label gift_pajamas:
                     if flags['smoke'] != 'nopants':
                         Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #линейка началась без низа, но в трусиках (03)
                     else:
-                        $ SetCamsGrow(house[1], 180)
+                        if not _in_replay:
+                            $ SetCamsGrow(house[1], 180)
                         Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"   #линейка началась без низа, трусиков по уговору нет
                     if flags['smoke'] != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
                         Max_02 "Я не пялюсь..."
@@ -1584,7 +1601,8 @@ label gift_pajamas:
         Max_02 "Буду иметь ввиду, сестрёнка."
         Alice_02 "Всё, давай шуруй по своим делам, не надоедай мне."
         Max_01 "Ага..."
-        $ spent_time += 20
+        if not _in_replay:
+            $ spent_time += 20
     elif flags['alice_hugs'] > 2: # после 3-ей сладости было прощение без выкручивания ушей
         Alice_04 "А жирно тебе не будет?! В душе на меня глазел, а теперь и здесь хочешь подглядеть... Нет уж! Но за пижамку я тебя всё же обниму! Ну так... совсем немного..."   #спрайт с обнимашками"
         call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs
@@ -1627,6 +1645,7 @@ label gift_pajamas:
         Alice_02 "Вот и молодец! Гуляй..."
         $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
 
+    $ renpy.end_replay()
     $ AddRelMood('alice', 0, 200)
     $ AttitudeChange('alice', 0.9)
     $ items['pajamas'].have = False
@@ -1644,8 +1663,6 @@ label gift_pajamas:
     $ clothes[alice].casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
     $ clothes[alice].casual.cur = 1
     $ clothes[alice].casual.rand = True
-    # $ cloth_type['alice']['casual'] = 'b'
-    # $ cloth_type['alice']['day.left'] = 3
     $ sorry_gifts['alice'].give.append(4)
     $ spent_time += 10
     $ sorry_gifts['alice'].owe = False
@@ -2960,3 +2977,19 @@ label alice_about_bath:
     label .end:
         $ spent_time += 10
         jump Waiting
+
+
+label alice_about_kiss:
+    $ renpy.block_rollback()
+    Alice_02 "Прости, Макс, что?"
+    Max_01 "Да вот спрашиваю, умеешь ты целоваться или нет?"
+    Alice_05 "Да, не показалось... Тебе заняться больше нечем, Макс?"
+    Max_08 "Мне срочно нужно научиться целоваться, и я не знаю кто может помочь..."
+    Alice_07 "Срочно?! Бедняжка... Ты знаешь, я в каком-то фильме смотрела, там учились целоваться на помидорах. Попробуй, может получится хотя бы у тебя..."
+    Max_07 "Алиса, я серьёзно же!"
+    Alice_12 "Макс, отвали. Я не буду целоваться с тобой, даже не мечтай. И придумай другой способ клеиться, а то этот на уровне детского сада, серьёзно."
+    Max_09 "Да я не клеился!"
+
+    $ talk_var['ask.teachkiss'].append('alice')
+    $ spent_time += 10
+    return

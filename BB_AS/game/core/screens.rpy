@@ -389,8 +389,6 @@ screen Search():
                                     textbutton i[0] action [Hide('Search'), Jump(i[1])] yalign .0
                                 key str(yy) action [Hide('Search'), Jump(i[1])]
                     vbar value YScrollValue('vp_choice') style 'search_vscroll'
-            # button action Hide("Search") style "search_but":
-            #     textbutton _("{i}назад{/i}") action Hide("Search") yalign .0
 
 style search_vscroll is vscrollbar:
     unscrollable 'hide'
@@ -984,6 +982,8 @@ screen room_navigation():
         else:
             imagebutton idle 'interface menu opportunity' focus_mask True action [Hide('wait_navigation'), Show('menu_opportunity')] at disable_menu
         imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')] at small_menu
+        if renpy.loadable('extra/extra.webp'):
+            imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')] at small_menu
         imagebutton idle 'interface menu main' focus_mask True action ShowMenu('save') at small_menu
         imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')] at small_menu
 

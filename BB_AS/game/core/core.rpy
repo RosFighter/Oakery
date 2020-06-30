@@ -73,6 +73,7 @@ label Waiting:
         else:
             $ mgg.energy += delt * 1 / 6 # (10% в час)
         $ mgg.cleanness -= delt * 0.5 * cur_ratio / 60.0
+
     else: # в противном случае - расходуется
         $ mgg.energy -= delt * 3.5 * cur_ratio / 60.0
         $ mgg.cleanness -= delt * 2.5 * cur_ratio / 60.0
@@ -94,7 +95,9 @@ label Waiting:
         $ prevtime = tm
         $ CamShow()
         $ cur_ratio = 1
-        $ status_sleep = False
+        if status_sleep:
+            $ status_sleep = False
+            with fade
         $ alarm_time = ''
         jump expression __name_label
 
@@ -204,7 +207,12 @@ label NewDay:
     if 'kira' not in chars:
         $ clothes[lisa].casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
     else:
-        $ clothes[lisa].casual.cur = renpy.random.randint(1, 2) if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else max(clothes[lisa].casual.GetOpen())
+        $ __r1 = renpy.random.randint(1, 2)
+        $ clothes[lisa].casual.cur = _r1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 2 if 'bathrobe' in lisa.gifts else 1
+        if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
+            $ print('rand '+str(__r1))
+        else:
+            $ print('max clot '+str(2 if 'bathrobe' in lisa.gifts else 1))
 
     if mgg.credit.debt > 0:        # если кредит не погашен
         $ mgg.credit.left -= 1       # уменьшим счетчик дней
@@ -240,11 +248,14 @@ label AfterWaiting:
 
     $ MoodNeutralize()
 
+    if any([prevday!=day, prevtime!=tm]):
+        # если прошло какое-то время, проверим необходимость смены одежды
+        $ ChoiceClothes()
+
     $ spent_time = 0
     $ prevday = day
     $ prevtime = tm
     $ cur_ratio = 1
-    $ status_sleep = False
     $ alarm_time = ""
 
     $ persone_button1 = None
@@ -297,6 +308,9 @@ label AfterWaiting:
         else:
             scene image(current_room.cur_bg)
 
+    if status_sleep:
+        $ status_sleep = False
+        with fade
     if mgg.energy < 10 and not flags['little_energy']:
         Max_00 "Я слишком устал. Надо бы вздремнуть..."
         $ flags['little_energy'] = True
@@ -342,6 +356,7 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
+    "ver [current_ver]"
     if current_ver == 'v0.01.TechDemo':
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
@@ -355,7 +370,6 @@ label after_load:
         "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
     else:
-        # "ver [current_ver]"
         if current_ver < "0.03.5.002":
             $ current_ver = "0.03.5.002"
 
@@ -606,6 +620,29 @@ label after_load:
                 $ talk_var['kira.porn'] = 0
                 $ talk_var['kira.bath.mass'] = 0
 
+        if current_ver < "0.03.9.013":
+            $ current_ver = "0.03.9.013"
+            if 'kira' in chars:
+                $ kira.add_schedule(Schedule((0, 3, 6), '8:00', '8:59', 'shower', 'в душе с Алисой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140))
+
+        if current_ver < "0.03.9.014":
+            $ current_ver = "0.03.9.014"
+            $ persistent.memories = {}
+            if 'bikini' in lisa.gifts:
+                $ persistent.memories['gift_swimsuit.swimsuit_show'] = renpy.seen_label('gift_swimsuit.swimsuit_show')
+
+            if renpy.seen_label('gift_pajamas'):
+                $ persistent.memories['gift_pajamas'] = flags['alice_hugs'] > 3
+
+            if renpy.seen_label('Lisa_HomeWork.first_foot_mass'):
+                $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = True
+
+            $ peeping['kira_bath'] = 0
+
+        if current_ver < "0.03.9.015":
+            $ current_ver = "0.03.9.015"
+
+            $ talk_var['kira.tv.touch'] = 0
 
         if current_ver < config.version:
             $ current_ver = config.version

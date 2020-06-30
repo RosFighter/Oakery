@@ -34,6 +34,7 @@ label Sleep:
         Max_00 "{i}Пожалуй, пора ложиться спать...{/i}"
         "{i}спать до утра{/i}":
             Max_19 "Как же в этом доме хорошо..."
+
             $ number_autosave += 1
             $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)

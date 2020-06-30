@@ -1087,7 +1087,7 @@ label Lisa_HomeWork:
                 Lisa_09 "Чего ты хочешь, Макс?"
                 "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['lisa.footmass']<3:
                     jump .show_breast
-        "А ножки тебе помассировать?" if talk_var['lisa.footmass']>=3 and talk_var['lisa.sh_br']>5:
+        "А ножки тебе помассировать?" if talk_var['lisa.footmass']>=3 and talk_var['lisa.sh_br']>=5:
             $ talk_var['help.hw'] += 1
             Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
             Max_02 "А я что-нибудь интересное перед этим увижу?"
@@ -1198,6 +1198,14 @@ label Lisa_HomeWork:
         jump Waiting
 
     label .first_foot_mass:
+        if not _in_replay:
+            $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = True
+        else:
+            # сформируем фон:
+            scene BG char Lisa lessons-help-00
+            $ renpy.show("FG lessons-help-"+pose3_1)
+            $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
+            $ renpy.show("Max lessons-breast 01"+mgg.dress)
         Lisa_01 "Вот, ты увидел, что хотел, теперь делай мои уроки! И смотри, чтобы всё было сделано на пятёрку... Хотя, нет. Давай, я лучше сама, а ты в это время сделаешь мне массаж ног?"
         $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
         $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
@@ -1243,20 +1251,22 @@ label Lisa_HomeWork:
         Max_04 "Сейчас посмотрю... Да, всё сделано правильно. Ты хорошо справилась, Лиза!"
         Lisa_03 "Классно! Спасибо, что помогаешь."
         Max_01 "Да не за что."
+        $ renpy.end_replay()
         $ mgg.massage += 0.05
         $ talk_var['lisa.footmass'] = 1
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
 
     label .next_foot_mass:
-        Lisa_01 "Вот, ты увидел, что хотел, теперь я попробую сама сделать уроки, а ты поможешь мне расслабиться..."
-        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
-        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
-        Max_01 "Хочешь массаж?"
-        menu:
-            Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
-            "{i}начать массаж{/i}":
-                pass
+        if talk_var['lisa.footmass']<3 or talk_var['lisa.sh_br']<5:
+            Lisa_01 "Вот, ты увидел, что хотел, теперь я попробую сама сделать уроки, а ты поможешь мне расслабиться..."
+            $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+            $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
+            Max_01 "Хочешь массаж?"
+            menu:
+                Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
+                "{i}начать массаж{/i}":
+                    pass
         $ __foot = renpy.random.choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
         $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
@@ -1413,7 +1423,8 @@ label liza_hand_mass:
             Max_07 "Почему про сотню, всего-то десятка два или три..."
             Lisa_02 "Хватит языком молоть, вот научишься целоваться с невыдуманными девушками, тогда и поговорим. А массаж у тебя получается здорово! Даже не хочется, чтобы это заканчивалось..."
             $ talk_var['teachkiss'] = 1
-            
+            $ dcv['lizamentor'].set_lost(2)
+            $ poss['seduction'].OpenStage(5)
         else:
             Lisa_05 "[lisa_good_mass!t]Макс, ты так здорово это делаешь. Даже не хочется, чтобы это закончилось..."
     else:
@@ -1538,14 +1549,14 @@ label gift_swimsuit:
     label .give:
         Lisa_03 "Спасибо, Макс! Ты лучший! Я это не забуду!"
         Max_03 "Да, пустяки..."
-        $ renpy.end_replay()
         $ AddRelMood('lisa', 0, 300)
         $ AttitudeChange('lisa', 0.9)
         jump .end
 
     label .swimsuit_show:
+        if not _in_replay:
+            $ persistent.memories['gift_swimsuit.swimsuit_show'] = True
         scene BG char Lisa newsuit
-        # $ __suf = 'a' if GetPlan(plan_lisa, day, tm).name in ['swim', 'sun'] else ''
         $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
         $ renpy.show("Lisa newsuit 01"+__suf)
         Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
@@ -1595,7 +1606,6 @@ label gift_swimsuit:
     label .end:
         $ items['bikini'].have = False
         $ items['bikini'].InShop = False
-        # $ items['bathrobe'].InShop = True
         $ poss['Swimsuit'].OpenStage(3)
         $ lisa.gifts.append('bikini')
         if lisa.inferic is not None:
@@ -1605,7 +1615,6 @@ label gift_swimsuit:
         else:
             $ lisa.infmax = 20.0
 
-        # $ cloth_type['lisa']['swim'] = 'b'
         $ clothes[lisa].swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
         $ clothes[lisa].swimsuit.cur = 1
         $ ClothingNps('lisa', lisa.plan_name)

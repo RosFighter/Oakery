@@ -854,3 +854,87 @@ translate english strings:
     old "Я уже взрослый!"
     new "I'm not a little kid anymore!"
 
+# TODO: Translation updated at 2020-06-30 14:31
+
+# game/dialogues/anntalk.rpy:480
+translate english ann_about_kiss_38892b4b:
+
+    # Ann_02 "Вот это вопрос, Макс. Неожиданный, я бы сказала... А зачем тебе? Нашёл девушку и хочешь её впечатлить?"
+    Ann_02 ""
+
+# game/dialogues/anntalk.rpy:481
+translate english ann_about_kiss_f870de5f:
+
+    # Max_01 "Да, точно!"
+    Max_01 ""
+
+# game/dialogues/anntalk.rpy:482
+translate english ann_about_kiss_060b6710:
+
+    # Ann_04 "Ого! Поздравляю, Макс. Наконец-то ты нашёл кого-то. Расскажи, какая она?" nointeract
+    Ann_04 "" nointeract
+
+# game/dialogues/anntalk.rpy:485
+translate english ann_about_kiss_b3dba2cb:
+
+    # Ann_05 "Макс, что-то ты хитришь. Кстати, а где ты с нею познакомился? Ты же всё время дома сидишь... Через интернет?"
+    Ann_05 ""
+
+# game/dialogues/anntalk.rpy:487
+translate english ann_about_kiss_75d7ada9:
+
+    # Ann_05 "И где ты с этой девушкой познакомился? В интернете?"
+    Ann_05 ""
+
+# game/dialogues/anntalk.rpy:488
+translate english ann_about_kiss_9cfb9a3d:
+
+    # Max_07 "Типа того..."
+    Max_07 ""
+
+# game/dialogues/anntalk.rpy:489
+translate english ann_about_kiss_3ef7d7c6:
+
+    # Ann_02 "Понятно. Ну что я могу тебе сказать. Буть естественным, будь самим собой. Девушки это ценят. Если ты попытаешься выдавать себя за ловеласа, она это раскусит и бросит тебя..."
+    Ann_02 ""
+
+# game/dialogues/anntalk.rpy:490
+translate english ann_about_kiss_f7d895a9:
+
+    # Max_08 "Ну мне всё равно надо научиться..."
+    Max_08 ""
+
+# game/dialogues/anntalk.rpy:491
+translate english ann_about_kiss_6100355b:
+
+    # Ann_04 "Ну вот с этой девушкой и научишься целоваться. Лучше учителя тебе всё равно не найти!"
+    Ann_04 ""
+
+# game/dialogues/anntalk.rpy:492
+translate english ann_about_kiss_83e97fb7:
+
+    # Max_00 "Эх... Спасибо, мам..."
+    Max_00 ""
+
+# game/dialogues/anntalk.rpy:493
+translate english ann_about_kiss_ad47424b:
+
+    # Ann_07 "Не за что, Макс. Обращайся, если будет нужен ещё какой-то совет..."
+    Ann_07 ""
+
+# game/dialogues/anntalk.rpy:494
+translate english ann_about_kiss_03d844e0:
+
+    # Max_01 "Ага, обязательно..."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/anntalk.rpy:482
+    old "Да это не важно..."
+    new ""
+
+    # game/dialogues/anntalk.rpy:482
+    old "Ну, красивая..."
+    new ""
+

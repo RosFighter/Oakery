@@ -515,7 +515,7 @@ label alice_dressed_shop:
                         '01':'02b',
                         '02':'02a' if __suf else '02d',
                         '03':'02c' if __suf else '02e',
-                        '05':'2h',
+                        '05':'02h',
                     }[__ran1]
 
                 if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
@@ -605,7 +605,7 @@ label alice_dressed_friend:
                         '01':'02b',
                         '02':'02a' if __suf else '02d',
                         '03':'02c' if __suf else '02e',
-                        '05':'2h',
+                        '05':'02h',
                     }[__ran1]
 
                 if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):

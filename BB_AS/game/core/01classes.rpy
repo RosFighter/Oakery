@@ -42,17 +42,23 @@ init python:
         def SetRand(self):
             if self.left > 0:
                 self.left -= 1
-                return
-            l = [i for i in range(len(self.sel)) if self.sel[i].rand and i!=self.cur for j in range(5)]
-            if len(l):
-                renpy.random.shuffle(l)
-                self.cur = renpy.random.choice(l)
-                self.left = self.days
+            else:
+                lr = [i for i in range(len(self.sel)) if self.sel[i].rand and i!=self.cur for j in range(5)]
+                if len(lr):
+                    renpy.random.shuffle(lr)
+                    self.cur = renpy.random.choice(lr)
+                    if self.cur > len(self.sel)-1:
+                        print("баг, однако  "+self.name+' - ['+str(lr)+']')
+                        self.cur = len(self.sel)-1
+                    self.left = self.days
 
         def GetOpen(self):
             return [i for i in range(len(self.sel)) if self.sel[i].change]
 
         def GetCur(self):
+            if self.cur > len(self.sel)-1:
+                print("баг, однако  "+self.name+' - '+str(self.cur))
+                self.cur = len(self.sel)-1
             return self.sel[self.cur]
 
     class Clothing:

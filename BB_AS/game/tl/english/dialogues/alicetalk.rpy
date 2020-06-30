@@ -6864,55 +6864,55 @@ translate english strings:
 translate english smoke_fear_eb6c33b9:
 
     # Alice_12 "Ходить без джинсов? А ты не обнаглел, Макс?!"
-    Alice_12 ""
+    Alice_12 "Walking around without jeans? Aren't you a little brazen, Max?!"
 
 # game/dialogues/alicetalk.rpy:927
 translate english smoke_fear_0a459d26:
 
     # Max_01 "Нет, нисколько. Согласна?"
-    Max_01 ""
+    Max_01 "No, not at all. Don't you agree?"
 
 # game/dialogues/alicetalk.rpy:928
 translate english smoke_fear_22bfeb4f:
 
     # Alice_05 "И как ты себе это представляешь? Или в твоей извращённой фантазии мама просто не заметит, что я расхаживаю по дому в трусах?!"
-    Alice_05 ""
+    Alice_05 "How do you imagine that? In your perverted fantasy, Mom just won't notice that I'm walking around the house in my underwear?!"
 
 # game/dialogues/alicetalk.rpy:929
 translate english smoke_fear_cd9a6b71:
 
     # Max_02 "А ты снимай джинсы когда её нет дома и всё будет в порядке."
-    Max_02 ""
+    Max_02 "Just take off your jeans when she's not home and everything will be fine."
 
 # game/dialogues/alicetalk.rpy:930
 translate english smoke_fear_85a118cb:
 
     # Alice_13 "Ладно, тётя Кира ещё может на это и не обратит внимание, а если Лиза спросит, почему я без штанов?"
-    Alice_13 ""
+    Alice_13 "Okay, Aunt Kira might not even mind, but what about Lisa?"
 
 # game/dialogues/alicetalk.rpy:931
 translate english smoke_fear_babd1ad3:
 
     # Max_08 "Ой, Алиса, хватит уже искать отговорки... Как будто тебе бы и в голову не пришло сказать ей, что дома просто жарко."
-    Max_08 ""
+    Max_08 "Oh, Alice, stop looking for excuses... Like it never occurred to you to tell her that it's just hot at home."
 
 # game/dialogues/alicetalk.rpy:932
 translate english smoke_fear_30a05ab3:
 
     # Alice_06 "Лучше попроси что-то другое..." nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Better ask for something else..." nointeract
 
 # game/dialogues/alicetalk.rpy:936
 translate english smoke_fear_1d3c1778:
 
     # Alice_03 "[succes!t]Хорошо. Не буду я одевать джинсы, только дай уже покурить спокойно!" nointeract
-    Alice_03 "" nointeract
+    Alice_03 "[succes!t]Okay. I'm not wearing jeans, just let me smoke in peace!" nointeract
 
 # game/dialogues/alicetalk.rpy:1063
 translate english smoke_fear_fail2_77090a0c:
 
     # Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "[failed!t]Is that it? Well, I'm choosing the option where you might be safe tonight if you get out of here very quickly and don't bother me... As long as I'm feeling kind." nointeract
 
 # game/dialogues/alicetalk.rpy:1231
 translate english smoke_nojeans_7be74dfc:
@@ -6924,45 +6924,95 @@ translate english smoke_nojeans_7be74dfc:
 translate english smoke_nojeans_82da8dd1:
 
     # Alice_13 "Налюбовался? А вот теперь постой в сторонке, пока я покурю! Давай, иди уже..."
-    Alice_13 ""
+    Alice_13 "Have you admired it enough? Now stand aside while I smoke! "
 
 # game/dialogues/alicetalk.rpy:1235
 translate english smoke_nojeans_8091279a:
 
     # Max_01 "Ладно, ладно, как скажешь..."
-    Max_01 ""
+    Max_01 "All right, all right, whatever you say..."
 
 # game/dialogues/alicetalk.rpy:1237
 translate english smoke_nojeans_b7424028:
 
     # Alice_04 "Чего это ты вдруг передумал? Надоело глазеть на мою попку? А, не важно. Спасибо за разрешение, ваше величество. Теперь дай покурю..." nointeract
-    Alice_04 "" nointeract
+    Alice_04 "Why did you suddenly change your mind? Are you tired of staring at my ass? Oh, never mind. Thank you for your permission, Your Majesty. Now let me have a smoke..." nointeract
 
 # game/dialogues/alicetalk.rpy:1754
 translate english Alice_solar_type_choice_0887200d:
 
     # Alice_00 "Ну что же ты, Макс... Эх, только настроилась..."
-    Alice_00 ""
+    Alice_00 "Well, you, Max... Ah, just tuned in..."
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:914
     old "Если хочешь, чтобы мама ничего не знала, ты будешь ходить без джинсов."
-    new ""
+    new "You'll stop wearing your jeans, unless you want Mom to find you what you've been up to."
 
     # game/dialogues/alicetalk.rpy:932
     old "Нет. Или получаешь вечером по заднице или не одеваешь джинсы. {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new ""
+    new "No. Either you get your ass spanked tonight or you don't wear jeans. {color=[_ch2.col]}(persuasion. Chance: [_ch2.vis]){/color]"
 
     # game/dialogues/alicetalk.rpy:1063
     old "{i}Ну, как скажешь...{/i}"
-    new ""
+    new "{i}whatever you say ... {/i}"
 
     # game/dialogues/alicetalk.rpy:1231
     old "Я передумал. Ты можешь носить свои джинсы, если захочешь."
-    new ""
+    new "I changed my mind. You can wear your jeans if you want."
 
     # game/dialogues/alicetalk.rpy:1691
     old "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}"
-    new ""
+    new "{i}Damn, the cream is almost gone... Let's do it another time then ... {/i}"
+
+# TODO: Translation updated at 2020-06-30 14:31
+
+# game/dialogues/alicetalk.rpy:2984
+translate english alice_about_kiss_e0a8fdaa:
+
+    # Alice_02 "Прости, Макс, что?"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:2985
+translate english alice_about_kiss_fba9e700:
+
+    # Max_01 "Да вот спрашиваю, умеешь ты целоваться или нет?"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2986
+translate english alice_about_kiss_5172f74c:
+
+    # Alice_05 "Да, не показалось... Тебе заняться больше нечем, Макс?"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2987
+translate english alice_about_kiss_a95ad17e:
+
+    # Max_08 "Мне срочно нужно научиться целоваться, и я не знаю кто может помочь..."
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:2988
+translate english alice_about_kiss_2cc2ac5d:
+
+    # Alice_07 "Срочно?! Бедняжка... Ты знаешь, я в каком-то фильме смотрела, там учились целоваться на помидорах. Попробуй, может получится хотя бы у тебя..."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:2989
+translate english alice_about_kiss_91a55c2f:
+
+    # Max_07 "Алиса, я серьёзно же!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2990
+translate english alice_about_kiss_5fe5be63:
+
+    # Alice_12 "Макс, отвали. Я не буду целоваться с тобой, даже не мечтай. И придумай другой способ клеиться, а то этот на уровне детского сада, серьёзно."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2991
+translate english alice_about_kiss_f6b0c7e6:
+
+    # Max_09 "Да я не клеился!"
+    Max_09 ""
 
