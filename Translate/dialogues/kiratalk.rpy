@@ -76,7 +76,7 @@ translate english kira_firsttalk_c61d1e38:
 translate english kira_firsttalk_3bdfc955:
 
     # Kira_03 "Что я знаю? Ничего. Я так, про твою скромность, конечно... И, вообще, давай сменим тему!"
-    Kira_03 "What do I know? Nothing. I'm just talking about your modesty, of course...let's change the subject!"
+    Kira_03 "What do I know? Nothing. I'm just talking about your modesty, of course... let's change the subject!"
 
 # game/dialogues/kiratalk.rpy:68
 translate english kira_firsttalk_e43fd195:
@@ -154,7 +154,7 @@ translate english kira_talk2_b8a10094:
 translate english kira_talk2_b0ac0801:
 
     # Kira_07 "Ну тогда я рада за тебя, Макс. И давно вы встречаетесь?"
-    Kira_07 "Well then I'm happy for you, Max. How long have you been dating?
+    Kira_07 "Well then I'm happy for you, Max. How long have you been dating?"
 
 # game/dialogues/kiratalk.rpy:102
 translate english kira_talk2_0104ee16:
@@ -244,7 +244,7 @@ translate english kira_talk2_b8c0dea5:
 translate english kira_talk2_c0a0b7f1:
 
     # Kira_08 "Представляю! Ну, я с Лизой тоже побеседую. Она уже не девочка... хотя, с вашей строгой мамой она о жизни толком ничего и не знает, похоже." nointeract
-    Kira_08 "I can imagine! I'll have a chat to Lisa. She's not a little girl anymore, and there's no way she's going to get any life experience Ann's helicopter parenting. " nointeract
+    Kira_08 "I can imagine! I'll have a chat to Lisa. She's not a little girl anymore, and there's no way she's going to get any life experience Ann's helicopter parenting." nointeract
 
 # game/dialogues/kiratalk.rpy:130
 translate english kira_talk2_6a11f48f:
@@ -268,7 +268,7 @@ translate english kira_talk2_1f8d1009:
 translate english kira_talk2_00d0240b:
 
     # Kira_04 "Ладно, не буду. Но в душ ты сходи. И обязательно холодный. А ещё лучше ледяной..."
-    Kira_04 "Well, I won't. But go take a shower. A icy one. The colder the better."
+    Kira_04 "Well, I won't. But go take a shower. A icy one. The colder the better..."
 
 # game/dialogues/kiratalk.rpy:139
 translate english kira_talk2_6e7aee99:
@@ -286,7 +286,7 @@ translate english kira_talk2_219400e5:
 translate english kira_talk2_bc626e10:
 
     # Max_07 "{i}О да... Надеюсь, она не поняла, что я сейчас делал, глядя на неё. Хотя, всё она понимает. Да ещё и видела меня, мой...{/i}"
-    Max_07 "{i}Oh Yes... I hope she didn't catch on to what I was doing. Although, she doesn't miss much. Yes, I think she saw me...my... {/i}"
+    Max_07 "{i}Oh Yes... I hope she didn't catch on to what I was doing. Although, she doesn't miss much. Yes, I think she saw me... my... {/i}"
 
 # game/dialogues/kiratalk.rpy:161
 translate english kira_talk3_744eb86a:
@@ -382,7 +382,7 @@ translate english kira_talk3_a4e29c8c:
 translate english kira_talk3_b133b86a:
 
     # Kira_03 "Думаю, мне нужно услышать другую сторону. Пообщаться или с Эриком или с твоей мамой, чтобы выяснить всё ли так. Может быть, ты немного... приукрасил..."
-    Kira_03 "I think I need to hear the full story. Talk to either Eric or your Mom to find out if that's the case. Maybe you're a little... exaggerating. "
+    Kira_03 "I think I need to hear the full story. Talk to either Eric or your Mom to find out if that's the case. Maybe you're a little... exaggerating..."
 
 # game/dialogues/kiratalk.rpy:194
 translate english kira_talk3_754341a2:
@@ -438,7 +438,7 @@ translate english strings:
 
     # game/dialogues/kiratalk.rpy:74
     old "{i}снять напряжение{/i}"
-    new "{i}de-energize{/i}"
+    new "{i}relieve some pressure{/i}"
 
     # game/dialogues/kiratalk.rpy:91
     old "Есть!"
@@ -511,4 +511,99 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:186
     old "Я говорю правду!"
     new "I'm telling the truth!"
+# TODO: Translation updated at 2020-06-30 14:31
+
+# game/dialogues/kiratalk.rpy:211
+translate english kira_about_kiss_5e0a2b2a:
+
+    # Kira_07 "Вот это подход, я понимаю! Может быть, тебе ещё что-то нужно?" nointeract
+    Kira_07 "" nointeract
+
+# game/dialogues/kiratalk.rpy:214
+translate english kira_about_kiss_a5fac119:
+
+    # Kira_08 "Шутник ты, Макс... Постой, ты нашёл себе девушку? Кто она? Откуда? Как познакомились? Как зовут? Хочу всё знать!"
+    Kira_08 ""
+
+# game/dialogues/kiratalk.rpy:216
+translate english kira_about_kiss_eb1abb76:
+
+    # Kira_08 "Для начала? Забавно... Постой, ты нашёл себе девушку? Кто она? Откуда? Как познакомились? Как зовут? Хочу всё знать!"
+    Kira_08 ""
+
+# game/dialogues/kiratalk.rpy:217
+translate english kira_about_kiss_e243c55d:
+
+    # Max_01 "Как ты догадалась?"
+    Max_01 ""
+
+# game/dialogues/kiratalk.rpy:218
+translate english kira_about_kiss_50fc02f9:
+
+    # Kira_05 "Ну зачем ещё парню может это понадобиться, сам подумай... И что, больше не у кого просить помощи, решил ко мне обратиться?" nointeract
+    Kira_05 "" nointeract
+
+# game/dialogues/kiratalk.rpy:221
+translate english kira_about_kiss_98e57cfa:
+
+    # Kira_01 "Даже мама не помогла? Ого! Наверняка, сказала, чтобы ты учился целоваться со своей девушкой?"
+    Kira_01 ""
+
+# game/dialogues/kiratalk.rpy:222
+translate english kira_about_kiss_848411ec:
+
+    # Max_07 "Точно!"
+    Max_07 ""
+
+# game/dialogues/kiratalk.rpy:224
+translate english kira_about_kiss_ca020699:
+
+    # Kira_01 "Неудивительно. Наверняка, полез целоваться и получил... по... Хотя, нет. Видимо, тебе повезло. Ну я бы не стала к Алисе с такими вопросами обращаться на твоём месте..."
+    Kira_01 ""
+
+# game/dialogues/kiratalk.rpy:225
+translate english kira_about_kiss_efd591e7:
+
+    # Max_07 "Да, уже жалею..."
+    Max_07 ""
+
+# game/dialogues/kiratalk.rpy:228
+translate english kira_about_kiss_1f69aa9c:
+
+    # Kira_07 "Ну что же... Думаю, я смогу тебе помочь. Правда, не здесь и не сейчас. Нужна более интимная обстановка. О, я иногда вечерами смотрю телевизор. Если ещё не будешь спать, напомни о своей просьбе..." nointeract
+    Kira_07 "" nointeract
+
+# game/dialogues/kiratalk.rpy:233
+translate english kira_about_kiss_d9323be4:
+
+    # Kira_04 "Макс, тебе стоит быть чуть более... тактичным. В общем, помочь я тебе помогу, только выбери подходящий момент. Договорились?"
+    Kira_04 ""
+
+# game/dialogues/kiratalk.rpy:234
+translate english kira_about_kiss_25aa812b:
+
+    # Max_01 "Конечно!"
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/kiratalk.rpy:211
+    old "А можно что-то ещё?"
+    new ""
+
+    # game/dialogues/kiratalk.rpy:211
+    old "Для начала только целоваться!"
+    new ""
+
+    # game/dialogues/kiratalk.rpy:218
+    old "Мама не помогла..."
+    new ""
+
+    # game/dialogues/kiratalk.rpy:218
+    old "Да, Алиса меня отшила..."
+    new ""
+
+    # game/dialogues/kiratalk.rpy:228
+    old "Хорошо! А ты только этому учишь?"
+    new ""
 

@@ -6906,13 +6906,13 @@ translate english smoke_fear_30a05ab3:
 translate english smoke_fear_1d3c1778:
 
     # Alice_03 "[succes!t]Хорошо. Не буду я одевать джинсы, только дай уже покурить спокойно!" nointeract
-    Alice_03 "[succes!t] Okay. I'm not wearing jeans, just let me smoke in peace!" nointeract
+    Alice_03 "[succes!t]Okay. I'm not wearing jeans, just let me smoke in peace!" nointeract
 
 # game/dialogues/alicetalk.rpy:1063
 translate english smoke_fear_fail2_77090a0c:
 
     # Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая." nointeract
-    Alice_12 "[failed!t] Is that it? Well, I'm choosing the option where you might be safe tonight if you get out of here very quickly and don't bother me... As long as I'm feeling kind." nointeract
+    Alice_12 "[failed!t]Is that it? Well, I'm choosing the option where you might be safe tonight if you get out of here very quickly and don't bother me... As long as I'm feeling kind." nointeract
 
 # game/dialogues/alicetalk.rpy:1231
 translate english smoke_nojeans_7be74dfc:
@@ -6965,4 +6965,54 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1691
     old "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}"
     new "{i}Damn, the cream is almost gone... Let's do it another time then ... {/i}"
+
+# TODO: Translation updated at 2020-06-30 14:31
+
+# game/dialogues/alicetalk.rpy:2984
+translate english alice_about_kiss_e0a8fdaa:
+
+    # Alice_02 "Прости, Макс, что?"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:2985
+translate english alice_about_kiss_fba9e700:
+
+    # Max_01 "Да вот спрашиваю, умеешь ты целоваться или нет?"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2986
+translate english alice_about_kiss_5172f74c:
+
+    # Alice_05 "Да, не показалось... Тебе заняться больше нечем, Макс?"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2987
+translate english alice_about_kiss_a95ad17e:
+
+    # Max_08 "Мне срочно нужно научиться целоваться, и я не знаю кто может помочь..."
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:2988
+translate english alice_about_kiss_2cc2ac5d:
+
+    # Alice_07 "Срочно?! Бедняжка... Ты знаешь, я в каком-то фильме смотрела, там учились целоваться на помидорах. Попробуй, может получится хотя бы у тебя..."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:2989
+translate english alice_about_kiss_91a55c2f:
+
+    # Max_07 "Алиса, я серьёзно же!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2990
+translate english alice_about_kiss_5fe5be63:
+
+    # Alice_12 "Макс, отвали. Я не буду целоваться с тобой, даже не мечтай. И придумай другой способ клеиться, а то этот на уровне детского сада, серьёзно."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2991
+translate english alice_about_kiss_f6b0c7e6:
+
+    # Max_09 "Да я не клеился!"
+    Max_09 ""
 

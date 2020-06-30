@@ -800,8 +800,8 @@ translate english punishment_max_pun_reson_831f2da1_1:
     # Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
     Ann_16 "Max has several faults... He knows them very well. I won't name them, because he brought this upon himself!"
 
-translate english punishment_max_pun_re
-# game/dialogues/punishment.rpy:300son_678436cc_1:
+# game/dialogues/punishment.rpy:300
+translate english punishment_max_pun_reson_678436cc_1:
 
     # Ann_16 "[_text!t]"
     Ann_16 "[_text!t]"

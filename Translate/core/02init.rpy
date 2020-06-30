@@ -241,3 +241,19 @@ translate english strings:
     old "Да, шикарная!"
     new "Yes, the weather is great!"
 
+# TODO: Translation updated at 2020-06-30 14:31
+
+translate english strings:
+
+    # game/core/02init.rpy:59
+    old "Мам, а как учатся целоваться?"
+    new ""
+
+    # game/core/02init.rpy:59
+    old "А ты умеешь целоваться?"
+    new ""
+
+    # game/core/02init.rpy:59
+    old "Кира, мне нужно научиться целоваться..."
+    new ""
+
