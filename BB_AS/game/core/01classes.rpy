@@ -48,7 +48,7 @@ init python:
                     renpy.random.shuffle(lr)
                     self.cur = renpy.random.choice(lr)
                     if self.cur > len(self.sel)-1:
-                        print("баг, однако  "+self.name+' - ['+str(lr)+']')
+                        # print("баг, однако  "+self.name+' - ['+str(lr)+']')
                         self.cur = len(self.sel)-1
                     self.left = self.days
 
@@ -57,7 +57,7 @@ init python:
 
         def GetCur(self):
             if self.cur > len(self.sel)-1:
-                print("баг, однако  "+self.name+' - '+str(self.cur))
+                # print("баг, однако  "+self.name+' - '+str(self.cur))
                 self.cur = len(self.sel)-1
             return self.sel[self.cur]
 

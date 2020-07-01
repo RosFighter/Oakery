@@ -523,7 +523,7 @@ init python:
                 dress, inf, clot = GetDressNps(char, cur_shed.name)
                 if dress != '':
                     chars[char].dress = dress
-                    print('%s - %s : %s'%(char, clot, dress))
+                    # print('%s - %s : %s'%(char, clot, dress))
                 if inf != '':
                     chars[char].dress_inf = inf
 
@@ -586,7 +586,7 @@ init python:
                 flags['smoke.request'] = None
             elif all([dress=='a', flags['smoke']=='nojeans', not check_is_home('ann')]):
                 dress = 'c'
-                inf   = '2e'
+                inf   = '02e'
 
             if name == 'sleep':
                 inf = '02'
@@ -692,8 +692,10 @@ init python:
                 inf = '02'
             elif name == 'night_tv':
                 inf = '02'
+            elif name == 'studio':
+                inf = '01b'
 
-        print("%s %s clot - %s, dress - %s ( %s )"%(char, name, clot, dress, inf))
+        # print("%s %s clot - %s, dress - %s ( %s )"%(char, name, clot, dress, inf))
         return dress, inf, clot
 
 
@@ -843,7 +845,7 @@ init python:
     #             kira.dress_inf = '02'
     #         # else:
     #     return
-    
+
 
     def GetKolCams(location): # возвращает количество камер в локации
         kolcam = 0

@@ -95,7 +95,7 @@ define talks = {
     'kt3'        : TalkTheme('kira', _("Да, шикарная!"), 'kira_talk3', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==2])"),
     'ann.kiss'   : TalkTheme('ann', _("Мам, а как учатся целоваться?"), 'ann_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' not in talk_var['ask.teachkiss']])"),
     'alice.kiss' : TalkTheme('alice', _("А ты умеешь целоваться?"), 'alice_about_kiss', "all([talk_var['teachkiss']>=1, 'alice' not in talk_var['ask.teachkiss']])"),
-    'kira.kiss'  : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' in talk_var['ask.teachkiss'], 'alice' not in talk_var['ask.teachkiss'], 'kira' not in talk_var['ask.teachkiss']])"),
+    'kira.kiss'  : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' in talk_var['ask.teachkiss'], 'alice' in talk_var['ask.teachkiss'], 'kira' not in talk_var['ask.teachkiss']])"),
     }
 
 

@@ -29,8 +29,8 @@ define mems = [
         ],
         [
             Memories('Lisa_HomeWork.first_foot_mass', 'lisa-newsuit-01', 'set_foot_mass', _("Первый массаж ног")),
-            # Memories('liza_hand_mass', 'lisa-newsuit-01', 'set_hand_mass', _("Внимание к пальчикам")),
-            # Memories('Lisa_HomeWork.shoulders', 'lisa-newsuit-01', 'set_shoulders_mass', _("Разомнём и плечики")),
+            Memories('liza_hand_mass', 'lisa-newsuit-01', 'set_hand_mass', _("Внимание к пальчикам")),
+            Memories('Lisa_HomeWork.shoulders', 'lisa-newsuit-01', 'set_shoulders_mass', _("Разомнём и плечики")),
         ],
     ]
 

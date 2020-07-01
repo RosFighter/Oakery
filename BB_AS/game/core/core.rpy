@@ -209,10 +209,10 @@ label NewDay:
     else:
         $ __r1 = renpy.random.randint(1, 2)
         $ clothes[lisa].casual.cur = _r1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 2 if 'bathrobe' in lisa.gifts else 1
-        if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
-            $ print('rand '+str(__r1))
-        else:
-            $ print('max clot '+str(2 if 'bathrobe' in lisa.gifts else 1))
+        # if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
+        #     $ print('rand '+str(__r1))
+        # else:
+        #     $ print('max clot '+str(2 if 'bathrobe' in lisa.gifts else 1))
 
     if mgg.credit.debt > 0:        # если кредит не погашен
         $ mgg.credit.left -= 1       # уменьшим счетчик дней

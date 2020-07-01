@@ -1092,6 +1092,7 @@ label Lisa_HomeWork:
             Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
             Max_02 "А я что-нибудь интересное перед этим увижу?"
             Lisa_01 "А что ты хочешь?"
+            $ renpy.show('Max lessons-breast 01'+mgg.dress)
             Max_01 "Чтобы ты показала свою грудь!"
             if lisa.GetMood()[0] < 3:
                 $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
@@ -1300,6 +1301,8 @@ label Lisa_HomeWork:
         jump .random_answer
 
     label .shoulders:
+        if not _in_replay:
+            $ persistent.memories['Lisa_HomeWork.shoulders'] = True
         $ _ch10 = GetChance(mgg.massage, 10)
         $ _ch7 = GetChance(mgg.massage, 7)
         if not RandomChance(_ch2.ch):
@@ -1330,6 +1333,10 @@ label Lisa_HomeWork:
             Lisa_06 "Ага... У меня даже глаза начинают закрываться от удовольствия."
             "{i}закончить массаж{/i}":
                 Max_04 "Ну вот и всё. А то ты ещё заснёшь и уроки придётся мне доделывать."
+                scene BG char Lisa lessons-help-00
+                $ renpy.show("FG lessons-help-"+pose3_1)
+                $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+                $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
                 Lisa_03 "Это было так приятно... Спасибо, Макс! И проверь, пожалуйста, всё ли я сделала правильно."
                 jump .random_answer
             "{i}продолжить ниже \n{color=[_ch7.col]}(Массаж. Шанс: [_ch7.vis]){/color}{/i}":
@@ -1352,6 +1359,10 @@ label Lisa_HomeWork:
     label .end_shoulders2:
         Max_04 "Тогда заканчиваем. И доделываем уроки. Тебе ещё много?"
     label .end_shoulders1:
+        scene BG char Lisa lessons-help-00
+        $ renpy.show("FG lessons-help-"+pose3_1)
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
         Lisa_02 "Нет, осталось совсем немного... Вот и всё! Можешь проверять..."
         jump .random_answer
 
@@ -1381,6 +1392,8 @@ label Lisa_HomeWork:
 
 
 label liza_hand_mass:
+    if not _in_replay:
+        $ persistent.memories['liza_hand_mass'] = True
     $ talk_var['lisa.handmass'] = 1
     $ spent_time += 10
     $ _ch10 = GetChance(mgg.massage, 10)
@@ -1414,7 +1427,7 @@ label liza_hand_mass:
     if RandomChance(_ch10.ch):
         # Лизе понравился массаж!
         $ mgg.massage += 0.1
-        if all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']==8, dcv['mw'].done]):
+        if all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']>=8, dcv['mw'].done]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
             Lisa_02 "А ты сам-то хоть умеешь целоваться?"
