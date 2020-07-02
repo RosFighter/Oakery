@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.03.9.015"
+define config.version = "0.03.9.016"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -198,6 +198,13 @@ init python:
     build.classify('**/thumbs.db', None)
 
     ## Чтобы архивировать файлы, классифицируйте их, например, как 'archive'.
+
+    build.archive("extra", "all")
+    build.classify('game/extra/**.png', 'extra')
+    build.classify('game/extra/**.jpg', 'extra')
+    build.classify('game/extra/**.webp', 'extra')
+    build.classify('game/extra/**.rpyc', 'extra')
+    build.classify('game/tl/english/extra/**.rpyc', 'extra')
 
     build.archive("images", "all")
 

@@ -235,7 +235,7 @@ label ann_yoga:
 label ann_cooking:
     scene BG cooking-00
     $ renpy.show('Ann cooking 01'+ann.dress)
-    $ persone_button1 = 'Ann cooking 01'+ann.dress
+    $ persone_button1 = 'Ann cooking 01'+ann.dress+'b'
     return
 
 

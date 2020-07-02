@@ -644,5 +644,12 @@ label after_load:
 
             $ talk_var['kira.tv.touch'] = 0
 
+        if current_ver < "0.03.9.016":
+            $ current_ver = "0.03.9.016"
+
+            $ flags['kira.bath.fj'] = False
+            $ flags['kira.tv.bj'] = False
+
+
         if current_ver < config.version:
             $ current_ver = config.version

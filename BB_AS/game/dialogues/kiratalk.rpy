@@ -6,7 +6,7 @@ label KiraTalkStart:
     # $ __cur_plan = GetPlan(plan_ann, day, tm)
     $ __cur_plan = kira.get_plan()
     if __cur_plan.talklabel is not None:
-        call expression __cur_plan.talklabel
+        call expression __cur_plan.talklabel from _call_expression_10
 
     if len(dial) > 0:
         $ dial.append((_("{i}Ой, в другой раз...{/i}"), "exit"))
@@ -20,7 +20,7 @@ label KiraTalkStart:
 
     if rez != "exit":
         if renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_11
         jump KiraTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания

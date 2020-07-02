@@ -586,6 +586,8 @@ label InitVariable: # стартовая инициация переменных
             'alice.tv.mass' : 0,
             'alice.drink'   : 0,
             'talkaboutbath' : 0,
+            'kira.bath.fj'  : False,
+            'kira.tv.bj'    : False,
             }
         CurChar = 'max'
         CurPoss = ""

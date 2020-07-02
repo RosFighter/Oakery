@@ -1276,13 +1276,13 @@ translate english strings:
 
     # game/core/03variables.rpy:313
     old "Итак, Лиза поинтересовалась, чему же я собираюсь её учить. И сразу же поставила меня в глупую ситуацию. Я вроде бы должен её учить, но сам не умею даже целоваться! Нужно срочно найти кого-то, кто бы мне помог в этом... Да, легко сказать..."
-    new ""
+    new "So, Lisa asked me what I was going to teach her, and she immediately put me in a sticky situation. I'm supposed to teach her how to kiss, but what do I know?! I need to find someone to help me with this right now... maybe easier said than done..."
 
     # game/core/03variables.rpy:313
     old "Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телек."
-    new ""
+    new "I think I've found someone who can teach me how to kiss. My aunt! This is so strange... Well, she certainly knows enough about the topic. I'd be happy with any teacher, but this is better than what I expected! Aunt Kira said it would be better to talk about this in a more intimate setting. For example, when she's watching TV at night."
 
     # game/core/03variables.rpy:313
     old "Тётя Кира превосходный учитель поцелуев! Она согласилась меня иногда учить. Кто знает, может быть она научит и чему-то ещё?\n\nНу всё. Теперь нужно практиковаться в поцелуях с тётей Кирой и передавать полученные знания Лизе... Только вот её ещё нужно убедить..."
-    new ""
+    new "Aunt Kira is an excellent kissing teacher! She agreed to tutor me. Who knows, maybe it will lead to something else?\n\. I just need to keep the practice up, and pass my knowledge on to Lisa... But she might still need some convincing..."
 

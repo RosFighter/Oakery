@@ -28,9 +28,9 @@ define mems = [
             Memories('gift_pajamas', 'alice-pajamas-01', 'set_gift_pajamas', _("Извинительная пижамка для Алисы")),
         ],
         [
-            Memories('Lisa_HomeWork.first_foot_mass', 'lisa-newsuit-01', 'set_foot_mass', _("Первый массаж ног")),
-            Memories('liza_hand_mass', 'lisa-newsuit-01', 'set_hand_mass', _("Внимание к пальчикам")),
-            Memories('Lisa_HomeWork.shoulders', 'lisa-newsuit-01', 'set_shoulders_mass', _("Разомнём и плечики")),
+            Memories('Lisa_HomeWork.first_foot_mass', 'lisa-massage-01', 'set_foot_mass', _("Первый массаж ног")),
+            Memories('liza_hand_mass', 'lisa-massage-02', 'set_hand_mass', _("Внимание к пальчикам")),
+            Memories('Lisa_HomeWork.shoulders', 'lisa-massage-03', 'set_shoulders_mass', _("Разомнём и плечики")),
         ],
     ]
 

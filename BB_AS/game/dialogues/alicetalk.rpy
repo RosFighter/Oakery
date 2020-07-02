@@ -1486,12 +1486,12 @@ label gift_pajamas:
     else:
         # формируем фон для воспоминания
         if alice.plan_name == 'sun':
-            call alice_sun
+            call alice_sun from _call_alice_sun
         else:
             if tm > '20:00':
-                call alice_evening_closer
+                call alice_evening_closer from _call_alice_evening_closer
             else:
-                call alice_morning_closer
+                call alice_morning_closer from _call_alice_morning_closer
     Alice_06 "Только скажи, что это пижамка, а не сладости! Ты же купил то, что я просила?!"
     Max_04 "Конечно! Топик и шортики, как ты хотела. Вот, держи..."
     Alice_07 "О да! Какие симпатичные! Ты такой молодец, Макс! Спасибо тебе большое..."

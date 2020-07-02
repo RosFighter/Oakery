@@ -366,7 +366,7 @@ label Kira_arrival:
     Max_07 "Давайте уже завтракать, а то остыло почти всё..."
 
     $ spent_time = 20
-    call AddKira
+    call AddKira from _call_AddKira
 
     $ AddRelMood('ann', 0, __mood)
     jump Waiting

@@ -509,7 +509,7 @@ label lisa_sun:
 label lisa_dishes:
     scene BG crockery-evening-00
     $ renpy.show('Lisa crockery-evening 01'+lisa.dress)
-    $ persone_button1 = 'Lisa crockery-evening 01'+lisa.dress
+    $ persone_button1 = 'Lisa crockery-evening 01'+lisa.dress+'b'
     return
 
 

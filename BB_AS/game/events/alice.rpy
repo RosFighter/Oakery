@@ -551,7 +551,7 @@ label alice_dressed_shop:
 label alice_dishes:
     scene BG crockery-morning-00
     $ renpy.show('Alice crockery-morning 01'+alice.dress)
-    $ persone_button1 = 'Alice crockery-morning 01'+alice.dress
+    $ persone_button1 = 'Alice crockery-morning 01'+alice.dress+'b'
     return
 
 
@@ -751,7 +751,7 @@ label alice_swim:
 label alice_cooking_dinner:
     scene BG cooking-00
     $ renpy.show('Alice cooking 01'+alice.dress)
-    $ persone_button1 = 'Alice cooking 01'+alice.dress
+    $ persone_button1 = 'Alice cooking 01'+alice.dress+'b'
     return
 
 
