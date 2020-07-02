@@ -4,29 +4,29 @@ translate english strings:
 
     # game/extra/extra.rpy:25
     old "Новый купальник Лизы"
-    new ""
+    new "Lisa's new swimsuit"
 
     # game/extra/extra.rpy:25
     old "Извинительная пижамка для Алисы"
-    new ""
+    new "Alice's apology pajamas"
 
     # game/extra/extra.rpy:25
     old "Первый массаж ног"
-    new ""
+    new "The first foot massage"
 
     # game/extra/extra.rpy:46
     old "ВОСПОМИНАНИЯ"
-    new ""
+    new "MEMORIES"
 
     # game/extra/extra.rpy:49
     old "ФОТОСНИМКИ"
-    new ""
+    new "PHOTOGRAPHS"
 
     # game/extra/extra.rpy:85
     old "Воспоминание недоступно"
-    new ""
+    new "Memory is not available"
 
     # game/extra/extra.rpy:88
     old "Воспоминание ещё не открыто"
-    new ""
+    new "The memory isn't open yet"
 

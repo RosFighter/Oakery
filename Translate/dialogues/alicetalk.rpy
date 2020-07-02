@@ -6972,47 +6972,47 @@ translate english strings:
 translate english alice_about_kiss_e0a8fdaa:
 
     # Alice_02 "Прости, Макс, что?"
-    Alice_02 ""
+    Alice_02 "Excuse me, what?"
 
 # game/dialogues/alicetalk.rpy:2985
 translate english alice_about_kiss_fba9e700:
 
     # Max_01 "Да вот спрашиваю, умеешь ты целоваться или нет?"
-    Max_01 ""
+    Max_01 "I'm asking if you know much about kissing?"
 
 # game/dialogues/alicetalk.rpy:2986
 translate english alice_about_kiss_5172f74c:
 
     # Alice_05 "Да, не показалось... Тебе заняться больше нечем, Макс?"
-    Alice_05 ""
+    Alice_05 "I don't think... Don't you have anything else to do, Max?"
 
 # game/dialogues/alicetalk.rpy:2987
 translate english alice_about_kiss_a95ad17e:
 
     # Max_08 "Мне срочно нужно научиться целоваться, и я не знаю кто может помочь..."
-    Max_08 ""
+    Max_08 "I urgently need to learn how to kiss, and I don't know who else can help..."
 
 # game/dialogues/alicetalk.rpy:2988
 translate english alice_about_kiss_2cc2ac5d:
 
     # Alice_07 "Срочно?! Бедняжка... Ты знаешь, я в каком-то фильме смотрела, там учились целоваться на помидорах. Попробуй, может получится хотя бы у тебя..."
-    Alice_07 ""
+    Alice_07 "You poor thing... did you ever see that movie about the Princess and the frog? Maybe you can go practice on toads and you might get lucky."
 
 # game/dialogues/alicetalk.rpy:2989
 translate english alice_about_kiss_91a55c2f:
 
     # Max_07 "Алиса, я серьёзно же!"
-    Max_07 ""
+    Max_07 "Alice, I'm serious!"
 
 # game/dialogues/alicetalk.rpy:2990
 translate english alice_about_kiss_5fe5be63:
 
     # Alice_12 "Макс, отвали. Я не буду целоваться с тобой, даже не мечтай. И придумай другой способ клеиться, а то этот на уровне детского сада, серьёзно."
-    Alice_12 ""
+    Alice_12 "Max, back off. I won't kiss you, don't even dream about it. You'd better come up with another covert plan, because this is seriously pathetic."
 
 # game/dialogues/alicetalk.rpy:2991
 translate english alice_about_kiss_f6b0c7e6:
 
     # Max_09 "Да я не клеился!"
-    Max_09 ""
+    Max_09 "I'm not scheming!"
 

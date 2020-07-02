@@ -247,13 +247,13 @@ translate english strings:
 
     # game/core/02init.rpy:59
     old "Мам, а как учатся целоваться?"
-    new ""
+    new "Mom, how do you learn to kiss?"
 
     # game/core/02init.rpy:59
     old "А ты умеешь целоваться?"
-    new ""
+    new "Do you know how to kiss?"
 
     # game/core/02init.rpy:59
     old "Кира, мне нужно научиться целоваться..."
-    new ""
+    new "Kira, I need to learn how to kiss..."
 

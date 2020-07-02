@@ -517,93 +517,93 @@ translate english strings:
 translate english kira_about_kiss_5e0a2b2a:
 
     # Kira_07 "Вот это подход, я понимаю! Может быть, тебе ещё что-то нужно?" nointeract
-    Kira_07 "" nointeract
+    Kira_07 "That's the approach, I understand! Is there anything else you need?" nointeract
 
 # game/dialogues/kiratalk.rpy:214
 translate english kira_about_kiss_a5fac119:
 
     # Kira_08 "Шутник ты, Макс... Постой, ты нашёл себе девушку? Кто она? Откуда? Как познакомились? Как зовут? Хочу всё знать!"
-    Kira_08 ""
+    Kira_08 "You're a Joker, Max... Wait, did you find a girl? Who is she? From where? How did you meet? What's her name? I want to know everything!"
 
 # game/dialogues/kiratalk.rpy:216
 translate english kira_about_kiss_eb1abb76:
 
     # Kira_08 "Для начала? Забавно... Постой, ты нашёл себе девушку? Кто она? Откуда? Как познакомились? Как зовут? Хочу всё знать!"
-    Kira_08 ""
+    Kira_08 "For starters? Funny... Wait, did you find a girl? Who is she? From where? How did you meet? What's her name? I want to know everything!"
 
 # game/dialogues/kiratalk.rpy:217
 translate english kira_about_kiss_e243c55d:
 
     # Max_01 "Как ты догадалась?"
-    Max_01 ""
+    Max_01 "How did you know?"
 
 # game/dialogues/kiratalk.rpy:218
 translate english kira_about_kiss_50fc02f9:
 
     # Kira_05 "Ну зачем ещё парню может это понадобиться, сам подумай... И что, больше не у кого просить помощи, решил ко мне обратиться?" nointeract
-    Kira_05 "" nointeract
+    Kira_05 "Well, why else would a guy need it, think about it... So, what, you don't have anybody else to ask for help, so you decided to come to me" nointeract
 
 # game/dialogues/kiratalk.rpy:221
 translate english kira_about_kiss_98e57cfa:
 
     # Kira_01 "Даже мама не помогла? Ого! Наверняка, сказала, чтобы ты учился целоваться со своей девушкой?"
-    Kira_01 ""
+    Kira_01 "Not even Mom helped? Wow! She must have told you to just practice with your girlfriend, right?"
 
 # game/dialogues/kiratalk.rpy:222
 translate english kira_about_kiss_848411ec:
 
     # Max_07 "Точно!"
-    Max_07 ""
+    Max_07 "That's right!"
 
 # game/dialogues/kiratalk.rpy:224
 translate english kira_about_kiss_ca020699:
 
     # Kira_01 "Неудивительно. Наверняка, полез целоваться и получил... по... Хотя, нет. Видимо, тебе повезло. Ну я бы не стала к Алисе с такими вопросами обращаться на твоём месте..."
-    Kira_01 ""
+    Kira_01 "Unsurprisingly.  Well, I wouldn't go to Alice with such questions either if I were you..."
 
 # game/dialogues/kiratalk.rpy:225
 translate english kira_about_kiss_efd591e7:
 
     # Max_07 "Да, уже жалею..."
-    Max_07 ""
+    Max_07 "Yes, I already regret it..."
 
 # game/dialogues/kiratalk.rpy:228
 translate english kira_about_kiss_1f69aa9c:
 
     # Kira_07 "Ну что же... Думаю, я смогу тебе помочь. Правда, не здесь и не сейчас. Нужна более интимная обстановка. О, я иногда вечерами смотрю телевизор. Если ещё не будешь спать, напомни о своей просьбе..." nointeract
-    Kira_07 "" nointeract
+    Kira_07 "Well... I think I can help you. But not here and not now. We need a little more privacy. I'm usually up late at night in the living room. If you're having a hard time sleeping, come and remind me of your request." nointeract
 
 # game/dialogues/kiratalk.rpy:233
 translate english kira_about_kiss_d9323be4:
 
     # Kira_04 "Макс, тебе стоит быть чуть более... тактичным. В общем, помочь я тебе помогу, только выбери подходящий момент. Договорились?"
-    Kira_04 ""
+    Kira_04 "Max, you should be a little more... considerate. Anyway, I'll help you, just pick the right time. You get me?"
 
 # game/dialogues/kiratalk.rpy:234
 translate english kira_about_kiss_25aa812b:
 
     # Max_01 "Конечно!"
-    Max_01 ""
+    Max_01 "Absolutely!"
 
 translate english strings:
 
     # game/dialogues/kiratalk.rpy:211
     old "А можно что-то ещё?"
-    new ""
+    new "Is there anything else?"
 
     # game/dialogues/kiratalk.rpy:211
     old "Для начала только целоваться!"
-    new ""
+    new "Just kissing for starters!"
 
     # game/dialogues/kiratalk.rpy:218
     old "Мама не помогла..."
-    new ""
+    new "Mom didn't help..."
 
     # game/dialogues/kiratalk.rpy:218
     old "Да, Алиса меня отшила..."
-    new ""
+    new "Yes, Alice turned me down..."
 
     # game/dialogues/kiratalk.rpy:228
     old "Хорошо! А ты только этому учишь?"
-    new ""
+    new "All right! Is that all you teach?"
 
