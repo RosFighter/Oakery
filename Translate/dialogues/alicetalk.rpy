@@ -1669,28 +1669,8 @@ translate english strings:
     new "Aha..."
 
     # game/dialogues/alicetalk.rpy:619
-    old "Дай $20, и я ничего не скажу {color=[_ch8_col]}(Убеждение. Шанс: [ch8_vis]){/color}"
-    new "Give me $20 and I won't say anything {color=[_ch8_col]}(Persuasion. Chance: [ch8_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:619
-    old "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4_col]}(Убеждение. Шанс: [ch4_vis]){/color}"
-    new "If you walk around without your underwear during the day, I'll keep quiet.... {color=[_ch4_col]}(Persuasion. Chance: [ch4_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:619
-    old "Если больше не будешь носить лифчик, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new "If you stop wearing your bra, I'll be quiet.... {color=[_ch3_col]}(Persuasion. Chance: [ch3_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:619
-    old "Если будешь курить без верха купальника, буду молчать {color=[_ch3_col]}(Убеждение. Шанс: [ch3_vis]){/color}"
-    new "I won't say anything if you continue to smoke topless. {color=[_ch3_col]}(Persuasion. Chance: [ch3_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:619
     old "Ты знаешь, я сегодня добрый..."
     new "You know what? I'm in a good mood today..."
-
-    # game/dialogues/alicetalk.rpy:630
-    old "Нет, давай $20 {color=[_ch2_col]}(Убеждение. Шанс: [ch2_vis]){/color}"
-    new "No, give me $20. {color=[_ch2_col]}(Persuasion. Chance: [ch2_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:630
     old "Хорошо, устроит и $10"
@@ -2539,10 +2519,6 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1158
     old "Массаж кистей рук"
     new "Massage hands"
-
-    # game/dialogues/alicetalk.rpy:1406
-    old "Что, стесняешься? {color=[_ch1_color]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Are you shy? {color=[_ch1_color]}(Persuasion. Chance: [ch1_vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1406
     old "Ну, как хочешь..."
@@ -3866,24 +3842,6 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1475
     old "Ого! И правда хочешь рискнуть... И что там у тебя на этот раз?"
     new "Wow! You really want to take that chance... So what have you got this time?"
-
-    # game/dialogues/alicetalk.rpy:1535
-    old "Именно на это я и надеюсь... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "That's what I'm hoping for... {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:1581
-    old "Хочется надеяться, что так и будет... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "I would hope so...{color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:1631
-    old "Только если без последующего насилия... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "Only if there is no subsequent violence... {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
-
-    # game/dialogues/alicetalk.rpy:1700
-    old "Да я же случайно оказался около душа... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "I happened to be near the shower... {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
-
-# TODO: Translation updated at 2020-04-15 00:38
 
 # game/dialogues/alicetalk.rpy:927
 translate english Alice_sorry_f0f56187:
@@ -5835,12 +5793,6 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1144
     old "Ага, я и не подглядываю..."
     new "Yeah, I'm not a peeping Tom..."
-
-    # game/dialogues/alicetalk.rpy:1255
-    old "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1_col]}(Убеждение. Шанс: [ch1_vis]){/color}"
-    new "No, I just wanted to see how your pajamas would look...  {color=[_ch1_col]}(Persuasion. Chance: [ch1_vis]){/color}"
-
-# TODO: Translation updated at 2020-04-18 22:48
 
 # game/dialogues/alicetalk.rpy:1324
 translate english Alice_solar_6edc5f35:

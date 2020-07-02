@@ -6581,23 +6581,23 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:1279
     old "Я и плечи помассировать могу, если хочешь? {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new "I can massage your shoulders, too, if you want? {color=[_ch2.col]}(Conviction. Chance: [_ch2. vis]){/color}"
+    new "I can massage your shoulders, too, if you want? {color=[_ch2.col]}(Conviction. Chance: [_ch2.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1301
     old "{i}начать массаж \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}{/i}"
-    new "{i}Start the massage \n{color=[_ch10.col]}(Massage. Chance: [_ch10. vis]){/color}{/i}"
+    new "{i}Start the massage \n{color=[_ch10.col]}(Massage. Chance: [_ch10.vis]){/color}{/i}"
 
     # game/dialogues/lisatalk.rpy:1319
     old "{i}продолжить ниже \n{color=[_ch7.col]}(Массаж. Шанс: [_ch7.vis]){/color}{/i}"
-    new "{i}Continue below \n{color=[_ch7.col]}(Massage. Chance: [_ch7. vis]){/color}{/i}"
+    new "{i}Continue below \n{color=[_ch7.col]}(Massage. Chance: [_ch7.vis]){/color}{/i}"
 
     # game/dialogues/lisatalk.rpy:1378
     old "{i}начать массаж{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
-    new "{i}Start massage{/i} \n{color=[_ch10.col]} (Massage. Chance: [_ch10. vis]){/color}"
+    new "{i}Start massage{/i} \n{color=[_ch10.col]} (Massage. Chance: [_ch10.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:1397
     old "{i}продолжить{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}"
-    new "{i}Continue{/i} \n{color=[_ch10.col]} (Massage. Chance: [_ch10. vis]){/color}"
+    new "{i}Continue{/i} \n{color=[_ch10.col]} (Massage. Chance: [_ch10.vis]){/color}"
 # TODO: Translation updated at 2020-06-30 14:31
 
 # game/dialogues/lisatalk.rpy:1418

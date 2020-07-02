@@ -257,3 +257,23 @@ translate english strings:
     old "Кира, мне нужно научиться целоваться..."
     new "Kira, I need to learn how to kiss..."
 
+# TODO: Translation updated at 2020-07-02 20:07
+
+translate english strings:
+
+    # game/core/02init.rpy:17
+    old "{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Alice liked the massage!{/i}{/color}\n"
+
+    # game/core/02init.rpy:20
+    old "{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Lisa liked the massage!{/i}{/color}\n"
+
+    # game/core/02init.rpy:23
+    old "{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:24
+    old "{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n"
+    new ""
+

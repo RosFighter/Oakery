@@ -30,3 +30,15 @@ translate english strings:
     old "Воспоминание ещё не открыто"
     new "The memory isn't open yet"
 
+# TODO: Translation updated at 2020-07-02 20:07
+
+translate english strings:
+
+    # game/extra/extra.rpy:25
+    old "Внимание к пальчикам"
+    new ""
+
+    # game/extra/extra.rpy:25
+    old "Разомнём и плечики"
+    new ""
+
