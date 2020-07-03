@@ -3,35 +3,55 @@
 
 Заглянуть со двора (дальний план)
 Max_07 "Класс! Сегодня мои прекрасные сестрёнки принимают душ вместе... Красота!"
+Max_07 "Nice! Today, my beautiful sisters are taking a shower together!"
 
 Продолжить смотреть и дополнительный ракурс
 Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
-
+Max_03 "Yes... I wish I was between the two of them... I'd make sure they don't miss anything!"
 
 Алиса и Кира в душе
 
 Заглянуть со двора (дальний план)
 Max_07 "Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши..."
+Max_07 "Wow... Two very bad girls are washing together today... Aunt Kira and Alice! Very nice..."
 
 Продолжить смотреть и дополнительный ракурс
 Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
-
+Max_02 "Oh, Yes... Slipping something between their tits would be a dream!"
 
 Кира и Лиза в душе
 
 Заглянуть со двора (дальний план)
 Max_07 "Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!"
+Max_07 "Great! Lisa and Aunt Kira were in the shower at the same time today... Very tempting!"
 
 Продолжить смотреть и дополнительный ракурс
 Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
-
+Max_04 "These two pussies are so wet... I can't take my eyes off you! How can I not be a pervert in this house?"
 
 Кира в душе
 
 Заглянуть со двора (дальний план)
 1-3 варианты / Max_07 "Супер! Тётя Кира в душе... и совсем одна... такая голая и мокренькая... Вот это зрелище!"
+1-3 options / Max_07 "Great! Aunt Kira is in the shower... and all alone... so naked and wet... What a sight!"
 4 вариант / Max_05 "Ага! Тётя Кира сегодня одна... и похоже, решила немножко себя развлечь принимая водные процедуры... Это я удачно зашёл!"
+4 option / Max_05 "Aha! Aunt Kira is alone today... and it seems that she decided to entertain herself a little... I'm the lucky one!"
 
 Продолжить смотреть и дополнительный ракурс
 1-6 варианты / Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
+1-6 options / Max_03 "Uhh... Watching my Aunt is a sight to behold! Her roundness and grace of movement are very exciting..."
 7-8 варианты / Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
+7-8 options / Max_05 "That's it, aunt Kira... Give your pussy a good rub for me! Oh, how she enjoys it... It would be awkward if she saw me! Although, she certainly won't..."
+
+
+Max_00 "Алиса и Лиза принимают душ, не стоит им мешать..."
+Max_00 "Alice and Lisa are taking a shower, don't bother them..."
+
+Max_00 "Кира и Алиса принимают душ, не стоит им мешать..."
+Max_00 "Kira and Alice are taking a shower, don't bother them..."
+
+Max_00 "Кира и Лиза принимают душ, не стоит им мешать..."
+Max_00 "Kira and Lisa are taking a shower, do not disturb them..."
+
+Max_01 "Интересно, кто сейчас в душе?"
+Max_01 "I Wonder who's in the shower now?"
