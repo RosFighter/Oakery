@@ -650,6 +650,10 @@ label after_load:
             $ flags['kira.bath.fj'] = False
             $ flags['kira.tv.bj'] = False
 
+        if current_ver < "0.03.9.017":
+            $ current_ver = "0.03.9.017"
 
+            $ peeping['kira_shower'] = 0
+            
         if current_ver < config.version:
             $ current_ver = config.version

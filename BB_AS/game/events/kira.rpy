@@ -992,6 +992,7 @@ label kira_night_tv:
         menu:
             Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
             "{i}раздеть её{/i}":
+                scene BG char Kira tv-cun-01
                 show Kira tv-game cun-02ba
         menu:
             Kira_07 "Оу... Макс, моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..."
@@ -1081,11 +1082,102 @@ label kira_night_tv:
 
 
 label kira_shower:
-    return
+    scene location house bathroom door-morning
+    if peeping['kira_shower'] > 0:
+        menu:
+            Max_00 "Кира сейчас принимает душ, не стоит ей мешать..."
+            "{i}уйти{/i}":
+                return
+    $ peeping['Kira_shower'] = 1
+    menu:
+        Max_01 "Интересно, кто сейчас в душе?"
+        "{i}заглянуть со двора{/i}":
+            jump .start_peeping
+        "{i}уйти{/i}":
+            return
+
+    label .start_peeping:
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
+
+        $ renpy.scene()
+        $ __r1 = renpy.random.choice(['01', '02', '03', '04'])
+        $ renpy.show('Kira shower '+__r1)
+        $ renpy.show('FG shower 00'+mgg.dress)
+        if __r1 == '04':
+            $ __r1 = renpy.random.randint(7, 8)
+            menu:
+                Max_05 "Ага! Тётя Кира сегодня одна... и похоже, решила немножко себя развлечь принимая водные процедуры... Это я удачно зашёл!"
+                "{i}продолжить смотреть{/i}":
+                    pass
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            $ __r1 = renpy.random.randint(1, 6)
+            menu:
+                Max_07 "Супер! Тётя Кира в душе... и совсем одна... такая голая и мокренькая... Вот это зрелище!"
+                "{i}продолжить смотреть{/i}":
+                    pass
+                "{i}уйти{/i}":
+                    jump .end
+
+        $ spent_time += 10
+
+        scene BG shower-closer
+        $ renpy.show('Kira shower-closer 0'+str(__r1))
+        show FG shower-closer
+        if __r1 < 7:
+            Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
+        else:
+            Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
+
+    label .end:
+        $ current_room, prev_room = prev_room, current_room
+        $ spent_time += 10
+        jump Waiting
 
 
 label kira_lisa_shower:
-    return
+    scene location house bathroom door-morning
+    if peeping['lisa_shower'] > 0:
+        menu:
+            Max_00 "Лиза и Кира принимают душ, не стоит им мешать..."
+            "{i}уйти{/i}":
+                return
+    $ peeping['lisa_shower'] = 1
+    menu:
+        Max_01 "Интересно, кто сейчас в душе?"
+        "{i}заглянуть со двора{/i}":
+            jump .start_peeping
+        "{i}уйти{/i}":
+            return
+
+    label .start_peeping:
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
+
+        scene Kira shower-Lisa 01
+        $ renpy.show('FG shower 00'+mgg.dress)
+        menu:
+            Max_07 "Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!"
+            "{i}продолжить смотреть{/i}":
+                pass
+            "{i}уйти{/i}":
+                jump .end
+
+        $ spent_time += 10
+        $ __r1 = renpy.random.randint(1, 6)
+        $ __r2 = renpy.random.randint(1, 6)
+        scene BG shower-closer
+        $ renpy.show('Kira shower-closer 0'+str(__r2), at_list=[left_shift,])
+        $ renpy.show('Lisa shower-closer 0'+str(__r1), at_list=[right_shift,])
+        show FG shower-closer
+        Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
+
+    label .end:
+        $ current_room, prev_room = prev_room, current_room
+        $ spent_time += 10
+        jump Waiting
 
 
 label kira_alice_shower:

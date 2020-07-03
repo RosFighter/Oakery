@@ -1989,3 +1989,89 @@ translate english strings:
     old "Тётя Кира, я больше не могу... сейчас кончу! Да-а-а..."
     new "Aunt Kira, I can't take it anymore... I'm going to cum! ugh!..."
 
+# TODO: Translation updated at 2020-07-03 12:10
+
+# game/events/kira.rpy:1087
+translate english kira_shower_90e1e372:
+
+    # Max_00 "Кира сейчас принимает душ, не стоит ей мешать..." nointeract
+    Max_00 "Kira is taking a shower now, so don't bother her..." nointeract
+
+# game/events/kira.rpy:1092
+translate english kira_shower_c78a15a2:
+
+    # Max_01 "Интересно, кто сейчас в душе?" nointeract
+    Max_01 "I wonder who's in the shower now?" nointeract
+
+# game/events/kira.rpy:1109
+translate english kira_shower_start_peeping_ceaa567f:
+
+    # Max_05 "Ага! Тётя Кира сегодня одна... и похоже, решила немножко себя развлечь принимая водные процедуры... Это я удачно зашёл!" nointeract
+    Max_05 "Aha! Aunt Kira is alone today... and it seems that she decided to entertain herself a little... I'm the lucky one!" nointeract
+
+# game/events/kira.rpy:1117
+translate english kira_shower_start_peeping_adae6fbb:
+
+    # Max_07 "Супер! Тётя Кира в душе... и совсем одна... такая голая и мокренькая... Вот это зрелище!" nointeract
+    Max_07 "Great! Aunt Kira is in the shower... and all alone... so naked and wet... What a sight!" nointeract
+
+# game/events/kira.rpy:1130
+translate english kira_shower_start_peeping_f934835c:
+
+    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
+    Max_03 "Uhh... Watching my Aunt is a sight to behold! Her roundness and grace of movement are very exciting..."
+
+# game/events/kira.rpy:1132
+translate english kira_shower_start_peeping_eab86a2d:
+
+    # Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
+    Max_05 "That's it, aunt Kira... Give your pussy a good rub for me! Oh, how she enjoys it... It would be awkward if she saw me! Although, she certainly won't..."
+
+# game/events/kira.rpy:1143
+translate english kira_lisa_shower_e1e82272:
+
+    # Max_00 "Лиза и Кира принимают душ, не стоит им мешать..." nointeract
+    Max_00 "Kira and Lisa are taking a shower, do not disturb them..." nointeract
+
+# game/events/kira.rpy:1148
+translate english kira_lisa_shower_c78a15a2:
+
+    # Max_01 "Интересно, кто сейчас в душе?" nointeract
+    Max_01 "I wonder who's in the shower now?" nointeract
+
+# game/events/kira.rpy:1161
+translate english kira_lisa_shower_start_peeping_c64a3986:
+
+    # Max_07 "Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!" nointeract
+    Max_07 "Great! Lisa and Aunt Kira were in the shower at the same time today... Very tempting!" nointeract
+
+# game/events/kira.rpy:1175
+translate english kira_lisa_shower_start_peeping_ddbc59ae:
+
+    # Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
+    Max_04 "These two pussies are so wet... I can't take my eyes off you! How can I not be a pervert in this house?"
+
+# game/events/kira.rpy:1186
+translate english kira_alice_shower_d719e4e2:
+
+    # Max_00 "Кира и Алиса принимают душ, не стоит им мешать..." nointeract
+    Max_00 "Kira and Alice are taking a shower, don't bother them..." nointeract
+
+# game/events/kira.rpy:1191
+translate english kira_alice_shower_c78a15a2:
+
+    # Max_01 "Интересно, кто сейчас в душе?" nointeract
+    Max_01 "I wonder who's in the shower now?" nointeract
+
+# game/events/kira.rpy:1204
+translate english kira_alice_shower_start_peeping_15451dbe:
+
+    # Max_07 "Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши..." nointeract
+    Max_07 "Wow... Two very bad girls are washing together today... Aunt Kira and Alice! Very nice..." nointeract
+
+# game/events/kira.rpy:1218
+translate english kira_alice_shower_start_peeping_2ddf2244:
+
+    # Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
+    Max_02 "Oh, Yes... Slipping something between their tits would be a dream!"
+

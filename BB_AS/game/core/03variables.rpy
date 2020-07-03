@@ -752,5 +752,6 @@ label AddKira:
     $ peeping['kira_bath'] = 0
     $ talk_var['kira.porn'] = 0
     $ talk_var['kira.bath.mass'] = 0
+    $ peeping['kira_shower'] = 0
 
     return

@@ -1177,3 +1177,46 @@ label alice_after_club:
         $ flags['talkaboutbath'] = 1
         $ spent_time += 10
         jump Waiting
+
+
+label alice_lisa_shower:
+    scene location house bathroom door-morning
+    if peeping['lisa_shower'] > 0:
+        menu:
+            Max_00 "Сестрёнки принимают душ, не стоит им мешать..."
+            "{i}уйти{/i}":
+                return
+    $ peeping['lisa_shower'] = 1
+    menu:
+        Max_01 "Интересно, кто сейчас в душе?"
+        "{i}заглянуть со двора{/i}":
+            jump .start_peeping
+        "{i}уйти{/i}":
+            return
+
+    label .start_peeping:
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
+
+        scene Alice shower-Lisa 01
+        $ renpy.show('FG shower 00'+mgg.dress)
+        menu:
+            Max_07 "Класс! Сегодня мои прекрасные сестрёнки принимают душ вместе... Красота!"
+            "{i}продолжить смотреть{/i}":
+                pass
+            "{i}уйти{/i}":
+                jump .end
+
+        $ spent_time += 10
+        $ __r1 = renpy.random.randint(1, 6)
+        $ __r2 = renpy.random.randint(1, 6)
+        scene BG shower-closer
+        $ renpy.show('Alice shower-closer 0'+str(__r2), at_list=[left_shift,])
+        $ renpy.show('Lisa shower-closer 0'+str(__r1), at_list=[right_shift,])
+        show FG shower-closer
+        Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
+
+    label .end:
+        $ current_room, prev_room = prev_room, current_room
+        $ spent_time += 10
+        jump Waiting
