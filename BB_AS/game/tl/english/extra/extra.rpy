@@ -36,9 +36,9 @@ translate english strings:
 
     # game/extra/extra.rpy:25
     old "Внимание к пальчикам"
-    new ""
+    new "Attention to the fingers"
 
     # game/extra/extra.rpy:25
     old "Разомнём и плечики"
-    new ""
+    new "Undo the hangers"
 

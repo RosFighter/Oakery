@@ -11,7 +11,8 @@ init python:
 
     def set_gift_pajamas():
         global my_scope
-        sg = {'alice': sorry_gifts['alice']}
+        sg = {'alice': SorryGift()}
+        sg['alice'].give = sorry_gifts['alice'].give.copy()
         sg['alice'].owe = True
         al = Profile("Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.plan_name = 'resting'

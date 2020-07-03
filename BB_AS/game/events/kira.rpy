@@ -1089,4 +1089,43 @@ label kira_lisa_shower:
 
 
 label kira_alice_shower:
-    return
+    scene location house bathroom door-morning
+    if peeping['alice_shower'] > 0:
+        menu:
+            Max_00 "Кира и Алиса принимают душ, не стоит им мешать..."
+            "{i}уйти{/i}":
+                return
+    $ peeping['alice_shower'] = 1
+    menu:
+        Max_01 "Интересно, кто сейчас в душе?"
+        "{i}заглянуть со двора{/i}":
+            jump .start_peeping
+        "{i}уйти{/i}":
+            return
+
+    label .start_peeping:
+        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
+        $ mgg.stealth += 0.03
+
+        scene Kira shower-Alice 01
+        $ renpy.show('FG shower 00'+mgg.dress)
+        menu:
+            Max_07 "Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши..."
+            "{i}продолжить смотреть{/i}":
+                pass
+            "{i}уйти{/i}":
+                jump .end
+
+        $ spent_time += 10
+        $ __r1 = renpy.random.randint(1, 6)
+        $ __r2 = renpy.random.randint(1, 6)
+        scene BG shower-closer
+        $ renpy.show('Kira shower-closer 0'+str(__r2), at_list=[left_shift,])
+        $ renpy.show('Alice shower-closer 0'+str(__r1), at_list=[right_shift,])
+        show FG shower-closer
+        Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
+
+    label .end:
+        $ current_room, prev_room = prev_room, current_room
+        $ spent_time += 10
+        jump Waiting

@@ -208,7 +208,7 @@ label NewDay:
         $ clothes[lisa].casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
     else:
         $ __r1 = renpy.random.randint(1, 2)
-        $ clothes[lisa].casual.cur = _r1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 2 if 'bathrobe' in lisa.gifts else 1
+        $ clothes[lisa].casual.cur = __r1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 2 if 'bathrobe' in lisa.gifts else 1
         # if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
         #     $ print('rand '+str(__r1))
         # else:

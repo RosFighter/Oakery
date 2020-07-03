@@ -92,6 +92,12 @@ init: # трансформации для кнопок
     transform tv_screen:
         xpos 63, ypos 48
 
+    transform left_shift:
+        xpos -200
+
+    transform right_shift:
+        xpos 200
+
 ################################################################################
 
 screen choice_lang():

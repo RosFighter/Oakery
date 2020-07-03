@@ -481,7 +481,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'lisa.footmass' : -1,
         'lisa.handmass' : -1,
         'teachkiss'     : 0,
-        'ask.teachkiss' : 0,
+        'ask.teachkiss' : [],
         'kira.tv.touch' : 0,
         }
 
@@ -588,6 +588,7 @@ label InitVariable: # стартовая инициация переменных
             'talkaboutbath' : 0,
             'kira.bath.fj'  : False,
             'kira.tv.bj'    : False,
+            'smoke'         : None,
             }
         CurChar = 'max'
         CurPoss = ""
