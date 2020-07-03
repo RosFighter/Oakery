@@ -271,9 +271,9 @@ translate english strings:
 
     # game/core/02init.rpy:23
     old "{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Managed to hold back {/i} {/color}\n"
 
     # game/core/02init.rpy:24
     old "{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Couldn't hold back {/i} {/color}\n"
 
