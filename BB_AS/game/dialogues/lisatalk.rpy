@@ -1302,9 +1302,17 @@ label Lisa_HomeWork:
 
     label .shoulders:
         if not _in_replay:
-            $ persistent.memories['Lisa_HomeWork.shoulders'] = True
-        $ _ch10 = GetChance(mgg.massage, 10)
-        $ _ch7 = GetChance(mgg.massage, 7)
+            $ _ch10 = GetChance(mgg.massage, 10)
+            $ _ch7 = GetChance(mgg.massage, 7)
+        else:
+            $ __foot = renpy.random.choice(['02', '01'])
+            scene BG char Lisa lessons-mass-01
+            $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+            $ renpy.show("FG lessons-mass-01-"+pose3_1)
+            $ _ch2 = Chance(1000)
+            $ _ch10 = Chance(1000)
+            $ _ch7 = Chance(1000)
+
         if not RandomChance(_ch2.ch):
             # убеждение не удалось
             Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну..."
@@ -1326,7 +1334,8 @@ label Lisa_HomeWork:
             Max_08 "Извини. Видимо устал уже."
             jump .end_shoulders2
         # Лизе понравился массаж!
-        $ mgg.massage += 0.1
+        if not _in_replay:
+            $ mgg.massage += 0.1
         Lisa_05 "[lisa_good_mass!t]Да... То, что мне и нужно! Как хорошо..."
         Max_03 "Сейчас я помассирую тебе шею... Теперь плечи... Чувствую, они уже так не напряжены."
         menu:
@@ -1349,11 +1358,14 @@ label Lisa_HomeWork:
             Max_10 "Хорошо. Пожалуй, ты права."
             jump .end_shoulders2
         # Лизе понравился массаж!
-        $ mgg.massage += 0.1
+        if not _in_replay:
+            $ mgg.massage += 0.1
         Lisa_04 "[lisa_good_mass!t]Ммм... Макс... Не очень хочется это говорить, но по-моему это уже не плечи..."   #спрайт с массажем ниже
         Max_02 "Уверена?"
         Lisa_06 "Да-а-а... От этого массажа мне становится слишком горячо... А здесь и так жарко!"
-        $ add_lim('lisa.ri', 0.1, 5)
+        if not _in_replay:
+            $ persistent.memories['Lisa_HomeWork.shoulders'] = True
+            $ add_lim('lisa.ri', 0.1, 5)
         jump .end_shoulders2
 
     label .end_shoulders2:
@@ -1377,6 +1389,8 @@ label Lisa_HomeWork:
             Max_03 "Всё сделано отлично, только вот тут есть небольшая ошибка. Вот так будет правильней."
         Lisa_03 "Классно! Спасибо, что помогаешь."
         Max_01 "Да не за что."
+        $ renpy.end_replay()
+        
         $ talk_var['lisa.footmass'] += 1
         $ mgg.massage += 0.05
         if talk_var['lisa.footmass'] == 3:
@@ -1393,10 +1407,12 @@ label Lisa_HomeWork:
 
 label liza_hand_mass:
     if not _in_replay:
-        $ persistent.memories['liza_hand_mass'] = True
-    $ talk_var['lisa.handmass'] = 1
-    $ spent_time += 10
-    $ _ch10 = GetChance(mgg.massage, 10)
+        $ talk_var['lisa.handmass'] = 1
+        $ spent_time += 10
+        $ _ch10 = GetChance(mgg.massage, 10)
+    else:
+        call lisa_phone_closer
+        $ _ch10 = Chance(1000)
     Lisa_01 "Да. Спасибо, что не забыл..."
     menu:
         Max_01 "Тогда давай устраиваемся поудобнее и начинаем."
@@ -1407,7 +1423,8 @@ label liza_hand_mass:
     $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
     if RandomChance(_ch10.ch):
         # Лизе понравился массаж!
-        $ mgg.massage += 0.1
+        if not _in_replay:
+            $ mgg.massage += 0.1
         Lisa_02 "[lisa_good_mass!t]Ммм, хорошо... Это мне нравится. Ты классный массажист."
     else:
         # Лизе не понравился массаж!
@@ -1416,7 +1433,8 @@ label liza_hand_mass:
         Max_08 "Ладно, извини..."
         jump Waiting
 
-    $ spent_time += 10
+    if not _in_replay:
+        $ spent_time += 10
     menu:
         Max_04 "Сейчас разомнём все пальчики и тебе будет легче писать."
         "{i}продолжить{/i} \n{color=[_ch10.col]}(Массаж. Шанс: [_ch10.vis]){/color}":
@@ -1426,8 +1444,9 @@ label liza_hand_mass:
     #спрайт с левой рукой
     if RandomChance(_ch10.ch):
         # Лизе понравился массаж!
-        $ mgg.massage += 0.1
-        if all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']>=8, dcv['mw'].done]):
+        if not _in_replay:
+            $ mgg.massage += 0.1
+        if not _in_replay and all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']>=8, dcv['mw'].done]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
             Lisa_02 "А ты сам-то хоть умеешь целоваться?"
@@ -1447,16 +1466,21 @@ label liza_hand_mass:
         Max_10 "Извини. В следующий раз я сделаю лучше."
         jump Waiting
 
-    $ spent_time += 10
+    if not _in_replay:
+        $ spent_time += 10
     menu:
         Max_03 "Хорошего понемногу, Лиза. Вот почти и всё."
         "{i}закончить массаж{/i}":
             pass
     scene BG char Lisa bed-evening
     $ renpy.show('Lisa phone-closer 01'+lisa.dress)
-    $ talk_var['lisa.handmass'] = 2
-    Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал пои ручки. Я довольна!"
+    Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
     Max_01 "Мне только в радость, сестрёнка. Обращайся."
+
+    $ renpy.end_replay()
+
+    $ persistent.memories['liza_hand_mass'] = True
+    $ talk_var['lisa.handmass'] = 2
     $ AddRelMood('lisa', 0, 50)
     jump Waiting
 

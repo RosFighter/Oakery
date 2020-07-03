@@ -694,6 +694,10 @@ init python:
                 inf = '02'
             elif name == 'studio':
                 inf = '01b'
+            elif name in ['bath', 'night_swim', 'shower']:
+                inf = '00a'
+
+
 
         # print("%s %s clot - %s, dress - %s ( %s )"%(char, name, clot, dress, inf))
         return dress, inf, clot

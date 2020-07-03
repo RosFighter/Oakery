@@ -6557,10 +6557,10 @@ translate english liza_hand_mass_3d7bbcfb:
     # Max_03 "Хорошего понемногу, Лиза. Вот почти и всё." nointeract
     Max_03 "You should relax more, Lisa. You'd do better with your studies." nointeract
 
-# game/dialogues/lisatalk.rpy:1423
-translate english liza_hand_mass_7f42863f:
+# game/dialogues/lisatalk.rpy:1463
+translate english liza_hand_mass_3320f06d:
 
-    # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал пои ручки. Я довольна!"
+    # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
     Lisa_03 "Well... my homework should be easier today. Thank you for massaging my hands. I'm happy!"
 
 # game/dialogues/lisatalk.rpy:1424

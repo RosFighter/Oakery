@@ -1,4 +1,5 @@
 init python:
+
     def set_gift_swimsuit():
         global my_scope
         tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
@@ -30,7 +31,7 @@ init python:
             }
 
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = renpy.random.choice(['a', 'b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        mg.dress = renpy.random.choice(['b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
 
         my_scope = {
                 'sorry_gifts' : sg,
@@ -50,7 +51,7 @@ init python:
         tl.dress = renpy.random.choice(['b', 'c', 'd']) if 'kira' in chars else renpy.random.choice(['b', 'c'])
 
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = renpy.random.choice(['a', 'b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        mg.dress = renpy.random.choice(['b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
 
         my_scope = {
                 'pose3_1' : renpy.random.choice(['01', '02', '03']),
@@ -61,8 +62,23 @@ init python:
 
     def set_hand_mass():
         global my_scope
-
+        tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress = renpy.random.choice(['b', 'd']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = renpy.random.choice(['b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        my_scope = {
+                'lisa' : tl,
+                'mgg'  : mg,
+            }
 
 
     def set_shoulders_mass():
         global my_scope
+        tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress = renpy.random.choice(['b', 'd']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = renpy.random.choice(['b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        my_scope = {
+                'lisa' : tl,
+                'mgg'  : mg,
+            }

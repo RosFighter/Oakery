@@ -356,7 +356,7 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
-    "ver [current_ver]"
+    # "ver [current_ver]"
     if current_ver == 'v0.01.TechDemo':
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
@@ -627,7 +627,6 @@ label after_load:
 
         if current_ver < "0.03.9.014":
             $ current_ver = "0.03.9.014"
-            $ persistent.memories = {}
             if 'bikini' in lisa.gifts:
                 $ persistent.memories['gift_swimsuit.swimsuit_show'] = renpy.seen_label('gift_swimsuit.swimsuit_show')
 
@@ -654,6 +653,6 @@ label after_load:
             $ current_ver = "0.03.9.017"
 
             $ peeping['kira_shower'] = 0
-            
+
         if current_ver < config.version:
             $ current_ver = config.version
