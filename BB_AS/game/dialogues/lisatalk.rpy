@@ -999,6 +999,7 @@ label Lisa_sg1:
         Max_01 "Но я буду тебе помогать с уроками!"
         Lisa_00 "Если не будешь помогать, то я маме всё расскажу и посмотрим, кого накажут. Всё, мы закончили."
         Max_00 "Как скажешь..."
+        $ clothes[lisa].sleep.cur = 1
         $ poss['sg'].OpenStage(3)
         $ flags['lisa_hw'] = True
         $ AddRelMood('lisa', -20, -100)
@@ -1029,6 +1030,7 @@ label Lisa_sg2:
             Max_07 "Допустим, мне стыдно. Так ты согласна?"
     Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
     Max_05 "Как скажешь..."
+    $ clothes[lisa].sleep.cur = 1
     $ poss['sg'].OpenStage(3)
     $ AddRelMood('lisa', -20, -100)
     $ spent_time += 10
@@ -1390,7 +1392,7 @@ label Lisa_HomeWork:
         Lisa_03 "Классно! Спасибо, что помогаешь."
         Max_01 "Да не за что."
         $ renpy.end_replay()
-        
+
         $ talk_var['lisa.footmass'] += 1
         $ mgg.massage += 0.05
         if talk_var['lisa.footmass'] == 3:

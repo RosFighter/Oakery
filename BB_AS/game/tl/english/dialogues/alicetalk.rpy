@@ -1722,7 +1722,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:763
     old "{i}свалить{/i}"
-    new "{I}Leave{/i}"
+    new "{i}Leave{/i}"
 
     # game/dialogues/alicetalk.rpy:810
     old "Ничего, просто любуюсь..."
@@ -2486,7 +2486,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1059
     old "{i}Предложить Алисе намазать её кремом{/i}"
-    new "{i}Ask Alice to to apply some sunscreen.{/I}"
+    new "{i}Ask Alice to to apply some sunscreen.{/i}"
 
     # game/dialogues/alicetalk.rpy:1059
     old "Ладно, загорай..."
@@ -2494,11 +2494,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}нанести крем{/i}"
-    new "{I}Apply cream{/I}"
+    new "{i}Apply cream{/i}"
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}сделать массаж с кремом{/i}"
-    new "{I}Massage it in{/I}"
+    new "{i}Massage it in{/i}"
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}"

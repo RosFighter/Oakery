@@ -446,7 +446,7 @@ label punishment_lisa:
 
     # сцена с наказанной Лизой
     scene BG punish-evening 01
-    $ renpy.show("Lisa punish-evening 03"+lisa.dress)
+    $ renpy.show("Lisa punish-evening 03"+_lisa_dress)
     $ renpy.show("Ann punish-evening 01"+ann.dress)
     if newpunishment==0:
         Ann_12 "Лиза, надеюсь, ты извлекла урок из этого наказания и больше это не повторится. А теперь одевайся!"
