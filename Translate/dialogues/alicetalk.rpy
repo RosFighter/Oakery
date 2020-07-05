@@ -1270,7 +1270,7 @@ translate english smoke_fear_nopants_a86ec81d:
 translate english smoke_fear_sleep_toples_e57727b7:
 
     # Alice_03 "[succes!t]Да я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
-    Alice_03 "[succes!t]I don't actually walk around braless all the time, except when I'm asleep..."
+    Alice_03 "[succes!t]I actually walk around braless all the time, except when I'm asleep..."
 
 # game/dialogues/alicetalk.rpy:994
 translate english smoke_fear_sleep_toples_0f7a641d:
@@ -6652,7 +6652,7 @@ translate english massage_sunscreen_spider_88d0ea09:
 translate english massage_sunscreen_spider_ff5172bb:
 
     # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
-    Max_10 "Ah, Alice, it hurts! She put her bare Tits in my face! And they are beautiful... What else did you expect?!"
+    Max_10 "Ah, Alice, it hurts! you put your bare tits in my face! And they are beautiful... What else did you expect?!"
 
 # game/dialogues/alicetalk.rpy:2012
 translate english massage_sunscreen_spider_a71b7a30:
