@@ -1753,3 +1753,43 @@ translate english strings:
     old "Хорошо. Спокойной ночи, Алиса..."
     new "Well. Good night, Alice..."
 
+# TODO: Translation updated at 2020-07-03 12:10
+
+# game/events/alice.rpy:1185
+translate english alice_lisa_shower_d2af575b:
+
+    # Max_00 "Сестрёнки принимают душ, не стоит им мешать..." nointeract
+    Max_00 "My sisters are taking a shower, so don't bother them..." nointeract
+
+# game/events/alice.rpy:1190
+translate english alice_lisa_shower_c78a15a2:
+
+    # Max_01 "Интересно, кто сейчас в душе?" nointeract
+    Max_01 "I wonder who's in the shower now?" nointeract
+
+# game/events/alice.rpy:1203
+translate english alice_lisa_shower_start_peeping_d9358d57:
+
+    # Max_07 "Класс! Сегодня мои прекрасные сестрёнки принимают душ вместе... Красота!" nointeract
+    Max_07 "Nice! Today, my beautiful sisters are taking a shower together!" nointeract
+
+# game/events/alice.rpy:1217
+translate english alice_lisa_shower_start_peeping_72bf06b5:
+
+    # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
+    Max_03 "Yes... I wish I was between the two of them... I'd make sure they don't miss anything!"
+
+# TODO: Translation updated at 2020-07-06 23:05
+
+# game/events/alice.rpy:130
+translate english alice_sleep_night_fa0741e5:
+
+    # Max_09 "Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!"
+    Max_09 "So it is necessary to bring you to clean water... Perhaps I should take advantage of what Alice is most afraid of?!"
+
+# game/events/alice.rpy:196
+translate english alice_sleep_morning_e5316a8a:
+
+    # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!"
+    Max_09 "I should have brought you to clean water... Maybe should take advantage of what scares Alice the most?!"
+

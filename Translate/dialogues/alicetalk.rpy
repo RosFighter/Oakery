@@ -1722,7 +1722,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:763
     old "{i}свалить{/i}"
-    new "{I}Leave{/i}"
+    new "{i}Leave{/i}"
 
     # game/dialogues/alicetalk.rpy:810
     old "Ничего, просто любуюсь..."
@@ -2486,7 +2486,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1059
     old "{i}Предложить Алисе намазать её кремом{/i}"
-    new "{i}Ask Alice to to apply some sunscreen.{/I}"
+    new "{i}Ask Alice to to apply some sunscreen.{/i}"
 
     # game/dialogues/alicetalk.rpy:1059
     old "Ладно, загорай..."
@@ -2494,11 +2494,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}нанести крем{/i}"
-    new "{I}Apply cream{/I}"
+    new "{i}Apply cream{/i}"
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}сделать массаж с кремом{/i}"
-    new "{I}Massage it in{/I}"
+    new "{i}Massage it in{/i}"
 
     # game/dialogues/alicetalk.rpy:1092
     old "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}"
@@ -6652,7 +6652,7 @@ translate english massage_sunscreen_spider_88d0ea09:
 translate english massage_sunscreen_spider_ff5172bb:
 
     # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
-    Max_10 "Ah, Alice, it hurts! you put your bare tits in my face! And they are beautiful... What else did you expect?!"
+    Max_10 "Ah, Alice, it hurts! You put your bare tits in my face! And they are beautiful... What else did you expect?!"
 
 # game/dialogues/alicetalk.rpy:2012
 translate english massage_sunscreen_spider_a71b7a30:
@@ -6904,7 +6904,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:932
     old "Нет. Или получаешь вечером по заднице или не одеваешь джинсы. {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new "No. Either you get your ass spanked tonight or you don't wear jeans. {color=[_ch2.col]}(persuasion. Chance: [_ch2.vis]){/color]"
+    new "No. Either you get your ass spanked tonight or you don't wear jeans. {color=[_ch2.col]}(persuasion. Chance: [_ch2.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1063
     old "{i}Ну, как скажешь...{/i}"
