@@ -568,7 +568,7 @@ label punishment_alice:
     scene BG punish-evening 02
     if newpunishment==0:
         $ SetCamsGrow(house[5], 150)
-        $ __suf = alice.dress + ('a' if flags['smoke'] == "nopants" else '')
+        $ __suf = alice.dress + ('a' if flags['smoke'] == "nopants" or alice.dress=='b' else '')
         $ renpy.show("Ann punish-evening alice-01"+ann.dress+__suf)
     else:
         if flags['smoke'] == "nopants" or alice.dress=='b':
@@ -579,12 +579,12 @@ label punishment_alice:
             $ __suf = alice.dress
         $ renpy.show('Ann punish-evening alice-03'+ann.dress+__suf)
 
-    $ __mood -= 100 # если Алису наказывают, ее настроение портится
+    $ __mood -= 50 # если Алису наказывают, ее настроение портится
     $ talk_var['alice.pun'] += 1
 
     if newpunishment==0:
         Alice_15 "Ай, больно же! Мам, я больше не буду!!!"
-        $ renpy.show("Ann punish-evening alice-02"+ann.dress+alice.dress+__suf)
+        $ renpy.show("Ann punish-evening alice-02"+ann.dress+__suf)
     else:
         Max_04 "{i}Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня!{/i}"
         $ renpy.show('Ann punish-evening alice-04'+ann.dress+__suf)

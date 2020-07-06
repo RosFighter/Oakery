@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.04.0.01"
+define config.version = "0.04.0.02"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -207,8 +207,8 @@ init python:
     build.classify('game/tl/english/extra/**.rpyc', 'extra')
 
     # build.archive("img_fix", "all")
-    # build.classify('game/Max/talk-terrace/01c.webp', 'images')
-    # build.classify('game/Max/talk-terrace/04c.webp', 'images')
+    # build.classify('game/images/Max/talk-terrace/01c.webp', 'img_fix')
+    # build.classify('game/images/Max/talk-terrace/04c.webp', 'img_fix')
 
     build.archive("images", "all")
 

@@ -467,7 +467,7 @@ label ann_dressed_shop:
             $ __list = ['03', '03a', '04']
             if ann.dress=='d':
                 $ __list.extend(['05', '06', '06a'])
-            $ __ran1 = renpy.random.choice()
+            $ __ran1 = renpy.random.choice(__list)
             $ ann.dress_inf = {'03':'02', '03a':'02a', '04':'02b', '05':'2g', '06':'2i', '06a':'2h'}[__ran1]
 
             if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):

@@ -997,6 +997,8 @@ label smoke_fear:
             $ mgg.social += 0.2
             $ punalice[0][0] = 5
             $ flags['smoke.request'] = "sleep"
+            $ flags['smoke'] = 'sleep'
+            $ alice.sleeptoples = True
             menu:
                 Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
                 "{i}уйти{/i}":
@@ -1011,6 +1013,8 @@ label smoke_fear:
             $ mgg.social += 0.2
             $ punalice[0][0] = 6
             $ flags['smoke.request'] = "nopants"
+            $ flags['smoke'] = 'nopants'
+            $ alice.nopants = True
             menu:
                 Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
                 "{i}уйти{/i}":

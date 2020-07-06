@@ -180,7 +180,7 @@ label Eric_talk_afterdinner:
         Eric_02 "Всё ясно с тобой. Ну, это твой выбор. У тебя была неделя, чтобы всё обдумать. Ты решил начать войну, ну что же, не вини меня за то, как я её закончу..."
         $ notify_list.append(_("{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"))
         $ AttitudeChange('eric', -3)
-        $ poss['alpha'].SetStage(2)
+        $ poss['alpha'].SetStage(3)
         jump Waiting
 
     label .goodgood:

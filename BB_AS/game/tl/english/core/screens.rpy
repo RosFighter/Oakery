@@ -64,7 +64,7 @@ translate english strings:
 
     # game/core/screens.rpy:510
     old "{b}ВЫВОД СРЕДСТВ{/b}"
-    new "{b}CONTRACTION OF MATERIALS{/b}"
+    new "{b}WITHDRAW FUNDS{/b}"
 
     # game/core/screens.rpy:515
     old "Расположение:"
@@ -72,7 +72,7 @@ translate english strings:
 
     # game/core/screens.rpy:516
     old "Зрителей:"
-    new "Spectators:"
+    new "Viewers:"
 
     # game/core/screens.rpy:517
     old "Общий доход:"
@@ -88,7 +88,7 @@ translate english strings:
 
     # game/core/screens.rpy:685
     old "Зрителей: [public]"
-    new "Spectators: [public]"
+    new "Viewers: [public]"
 
     # game/core/screens.rpy:721
     old "ПОЛЕЗНОЕ"
@@ -108,7 +108,7 @@ translate english strings:
 
     # game/core/screens.rpy:904
     old "В данный момент в инвентаре ничего нет"
-    new "At the moment there is nothing in the inventory"
+    new "Your inventory is empty"
 
     # game/core/screens.rpy:967
     old "ПЕРСОНАЖИ"
@@ -272,7 +272,7 @@ translate english strings:
 
     # game/core/screens.rpy:416
     old "Количество занятий: [text2]"
-    new "Amount of lessons: [text2]"
+    new "Number of lessons: [text2]"
 
 # TODO: Translation updated at 2020-03-12 12:28
 
@@ -296,7 +296,7 @@ translate english strings:
 
     # game/core/screens.rpy:339
     old "ВЗЯТЬ КРЕДИТ"
-    new "TAKE THE CREDIT"
+    new "TAKE CREDIT"
 
 # TODO: Translation updated at 2020-03-15 12:13
 

@@ -341,6 +341,8 @@ label night_of_fun:
 
     $ Wait(spent_time)
 
+    call _call_NewDay from _call__call_NewDay
+
     ## теперь отправим Макса досыпать
     $ prevtime = tm
     $ status_sleep = True
@@ -653,6 +655,13 @@ label after_load:
             $ current_ver = "0.03.9.017"
 
             $ peeping['kira_shower'] = 0
+
+        if current_ver < "0.04.0.02":
+            $ current_ver = "0.04.0.02"
+
+            if GetRelMax('eric')[0] < -1:
+                $ poss['alpha'].stages[2].used = False
+                $ poss['alpha'].SetStage(3)
 
         if current_ver < config.version:
             $ current_ver = config.version

@@ -1983,7 +1983,7 @@ translate english strings:
 
     # game/events/kira.rpy:297
     old "Да, давай ещё тётя Кира! Какие же горячие и ненасытные у тебя губки... Да... \n{color=[_ch2.col]}(Сексуальный опыт. Шанс: [_ch2.vis]){/color}"
-    new "Yes, come on, Aunt Kira! What hot and insatiable lips you have... Yes... \n{color=[_ch2.col]} (Sexual experience. Chance: [_ch2.vis"
+    new "Yes, come on, Aunt Kira! What hot and insatiable lips you have... Yes... \n{color=[_ch2.col]} (Sexual experience. Chance: [_ch2.vis]){/color}"
 
     # game/events/kira.rpy:308
     old "Тётя Кира, я больше не могу... сейчас кончу! Да-а-а..."

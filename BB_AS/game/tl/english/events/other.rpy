@@ -856,7 +856,7 @@ translate english strings:
 
     # game/events/other.rpy:319
     old "А что такого? Пусть ходит, я не против..."
-    new "What's wrong with that? Let him go, I don't mind..."
+    new "What's wrong with that? Let her go, I don't mind..."
 
     # game/events/other.rpy:333
     old "Нет, мам, всё отлично!"

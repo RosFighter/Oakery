@@ -1779,3 +1779,17 @@ translate english alice_lisa_shower_start_peeping_72bf06b5:
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
     Max_03 "Yes... I wish I was between the two of them... I'd make sure they don't miss anything!"
 
+# TODO: Translation updated at 2020-07-06 23:05
+
+# game/events/alice.rpy:130
+translate english alice_sleep_night_fa0741e5:
+
+    # Max_09 "Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!"
+    Max_09 "So it is necessary to bring you to clean water... Perhaps I should take advantage of what Alice is most afraid of?!"
+
+# game/events/alice.rpy:196
+translate english alice_sleep_morning_e5316a8a:
+
+    # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!"
+    Max_09 "I should have brought you to clean water... Maybe should take advantage of what scares Alice the most?!"
+

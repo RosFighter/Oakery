@@ -1413,7 +1413,7 @@ label liza_hand_mass:
         $ spent_time += 10
         $ _ch10 = GetChance(mgg.massage, 10)
     else:
-        call lisa_phone_closer
+        call lisa_phone_closer from _call_lisa_phone_closer
         $ _ch10 = Chance(1000)
     Lisa_01 "Да. Спасибо, что не забыл..."
     menu:
@@ -2708,9 +2708,9 @@ label liza_secret_alisa:
     $ _ch4 = GetChance(mgg.social, 4, 900)
     menu:
         Lisa_10 "Алиса просила меня об этом не рассказывать... Так что..."
-        "Лиза, мне можно рассказать! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if GetRelMax('lisa')[0]<4:
+        "Лиза, мне можно рассказать! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if GetRelMax('lisa')[0]<3:
             pass
-        "Лиза, мне можно рассказать! {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if GetRelMax('lisa')[0]>3:
+        "Лиза, мне можно рассказать! {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if GetRelMax('lisa')[0]>2:
             pass
 
     if not any([GetRelMax('lisa')[0]>3 and RandomChance(_ch4.ch), GetRelMax('lisa')[0]<4 and RandomChance(_ch1.ch)]):
@@ -2718,7 +2718,7 @@ label liza_secret_alisa:
         Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
         Max_00 "Верно..."
         $ mgg.social += 0.1
-        $ dcv['alice.secret'].set_lost(2)
+        $ dcv['alice.secret'].set_lost(1)
         $ dcv['alice.secret'].stage = 1
         $ spent_time += 10
         return
