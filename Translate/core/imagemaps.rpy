@@ -8,7 +8,7 @@ translate english strings:
 
     # game/core/imagemaps.rpy:70
     old "{i}массировать голени{/i}"
-    new "{i}massage her shins{/i}"
+    new "{i}massage her lower legs{/i}"
 
     # game/core/imagemaps.rpy:82
     old "{i}массировать бёдра{/i}"
