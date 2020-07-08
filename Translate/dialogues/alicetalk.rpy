@@ -6688,7 +6688,7 @@ translate english massage_sunscreen_spider_6b77c813:
 translate english massage_sunscreen_spider_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 "What did you expect?! You jumped on top of me and put your bare Tits in my face... By the way, I can't help but notice how soft they are!"
+    Max_07 "What did you expect?! You jumped on top of me and put your bare tits in my face... By the way, I can't help but notice how soft they are!"
 
 # game/dialogues/alicetalk.rpy:2022
 translate english massage_sunscreen_spider_e0dd7b8f:
