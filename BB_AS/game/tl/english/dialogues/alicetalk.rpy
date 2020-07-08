@@ -6622,7 +6622,7 @@ translate english massage_sunscreen_spider_22e8563b:
 translate english massage_sunscreen_spider_293d0088:
 
     # Alice_12 "Макс, а что это в меня такое упёрлось там внизу?!"
-    Alice_12 "Max, what got into me down there?!"
+    Alice_12 "Max, what's touching me down there?!"
 
 # game/dialogues/alicetalk.rpy:2003
 translate english massage_sunscreen_spider_ec701e44:
@@ -6688,7 +6688,7 @@ translate english massage_sunscreen_spider_6b77c813:
 translate english massage_sunscreen_spider_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 "What did you expect?! She jumped on top of me and put her bare Tits in my face... By the way, I can't help but note that they are beautiful and elastic!"
+    Max_07 "What did you expect?! You jumped on top of me and put your bare tits in my face... By the way, I can't help but notice how soft they are!"
 
 # game/dialogues/alicetalk.rpy:2022
 translate english massage_sunscreen_spider_e0dd7b8f:
@@ -6700,7 +6700,7 @@ translate english massage_sunscreen_spider_e0dd7b8f:
 translate english massage_sunscreen_spider_4970a131:
 
     # Max_02 "Хорошо. Не скучай."
-    Max_02 "Okay. Don't be bored."
+    Max_02 "Okay. Don't be so upset."
 
 translate english strings:
 
@@ -6710,7 +6710,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1858
     old "{i}выпустить рядом паука{/i}"
-    new "{i}release a spider next to it{/i}"
+    new "{i}Place a spider next to her{/i}"
 
 # TODO: Translation updated at 2020-06-08 10:23
 
@@ -6967,4 +6967,3 @@ translate english alice_about_kiss_f6b0c7e6:
 
     # Max_09 "Да я не клеился!"
     Max_09 "I'm not scheming!"
-

@@ -1354,6 +1354,12 @@ screen menu_userinfo():
                                         text _("Навык поцелуев") size 24 color gui.accent_color
                                     frame xfill True background None:
                                         text str(round(mgg.kissing*10, 1)) size 24
+                            if mgg.sex > 0:
+                                hbox xfill True:
+                                    frame xsize 350 background None:
+                                        text _("Сексуальный опыт") size 24 color gui.accent_color
+                                    frame xfill True background None:
+                                        text str(round(mgg.sex*10, 1)) size 24
 
 
                     elif CurChar == 'eric':

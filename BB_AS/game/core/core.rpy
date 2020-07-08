@@ -324,6 +324,7 @@ label night_of_fun:
 
     $ renpy.random.shuffle(NightOfFun)
 
+    # "Выбор из списка ночных забав"
     $ _fun = NightOfFun.pop() # последний из перемешанного списка - событие на сегодня
 
     if _fun != 'spider' and 'spider' in NightOfFun:
@@ -340,8 +341,6 @@ label night_of_fun:
     $ mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
 
     $ Wait(spent_time)
-
-    call _call_NewDay from _call__call_NewDay
 
     ## теперь отправим Макса досыпать
     $ prevtime = tm
@@ -580,7 +579,6 @@ label after_load:
                     Schedule((0, 6), '17:0', '18:59', 'read', _("читает в нашей комнате"), 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
                 )
 
-            $ EventsByTime['night_of_fun'].tm = '02:30'
 
             $ poss['nightclub'].stages[6].ps = ""
             $ poss['nightclub'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
@@ -662,6 +660,22 @@ label after_load:
             if GetRelMax('eric')[0] < -1:
                 $ poss['alpha'].stages[2].used = False
                 $ poss['alpha'].SetStage(3)
+
+        if current_ver < "0.04.0.03":
+            $ current_ver = "0.04.0.03"
+
+            $ EventsByTime['night_of_fun'].tm = '02:30'
+
+        if current_ver < "0.04.0.04":
+            $ current_ver = "0.04.0.04"
+
+            if items['max-a'].have:
+                $ items['max-a'].InShop = False
+            if poss['nightclub'].stn >= 5 and kol_choco == 0:
+                $ items['choco'].InShop = True
+            if 'kira' in chars:
+                $ flags['hint.cources'] = False
+
 
         if current_ver < config.version:
             $ current_ver = config.version

@@ -538,6 +538,7 @@ label delivery2:
     if 'max-a' in delivery_list[1]:
         $ clothes[mgg].casual.sel.insert(1, Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
         $ clothes[mgg].casual.cur = 1
+        $ items['max-a'].InShop = False
 
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 

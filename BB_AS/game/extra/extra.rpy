@@ -19,7 +19,7 @@ init python:
             if self.module in persistent.memories:
                 return 'open' if persistent.memories[self.module] else 'block'
             else:
-                return 'close'
+                return 'open' if renpy.seen_label(self.module) else 'close'                
 
 
 define mems = [

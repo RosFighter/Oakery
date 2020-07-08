@@ -1030,7 +1030,7 @@ translate english strings:
 
     # game/events/kira.rpy:22
     old "{i}войти{/i}"
-    new "{i}Log in{/i}"
+    new "{i}Enter{/i}"
 
     # game/events/kira.rpy:74
     old "{i}идти к Кире{/i}"
@@ -1967,11 +1967,11 @@ translate english strings:
 
     # game/events/kira.rpy:255
     old "{i}поработать языком{/i}"
-    new "{i}Use the language{/i}"
+    new "{i}Use the tongue{/i}"
 
     # game/events/kira.rpy:259
     old "{i}работать языком быстрее{/i}"
-    new "{i}Work the language faster{/i}"
+    new "{i}Work the tongue faster{/i}"
 
     # game/events/kira.rpy:266
     old "{i}приблизиться членом к её лицу{/i}"
@@ -2074,4 +2074,3 @@ translate english kira_alice_shower_start_peeping_2ddf2244:
 
     # Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
     Max_02 "Oh, Yes... Slipping something between their tits would be a dream!"
-

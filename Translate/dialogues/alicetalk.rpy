@@ -6702,7 +6702,7 @@ translate english massage_sunscreen_spider_4970a131:
     # Max_02 "Хорошо. Не скучай."
     Max_02 "Okay. Don't be so upset."
 
-translate english strings:	
+translate english strings:
 
     # game/dialogues/alicetalk.rpy:1858
     old "{i}продолжить{/i}"
@@ -6967,4 +6967,3 @@ translate english alice_about_kiss_f6b0c7e6:
 
     # Max_09 "Да я не клеился!"
     Max_09 "I'm not scheming!"
-

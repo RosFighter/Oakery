@@ -723,6 +723,10 @@ label alice_dressed_club:
                         Alice_02 "Может быть, мне их ещё и снять для тебя? Давай, вали уже, извращенец. А за конфетку спасибо..."
                     "Да, никакого подвоха!":
                         Alice_07 "Вот это да! Ну, спасибо тогда... А теперь вали. Я ещё не закончила..."
+                $ kol_choco -= 1
+                if kol_choco == 0:
+                    $ items['choco'].InShop = True
+                    $ notify_list.append(_("Конфеты закончились"))
                 jump .end
             # "{i}дать две конфеты {/i} ## убеждение ##" if kol_choco > 1 and poss['nightclub'].stages[7].used:
             #     $ flags['alice.drink'] = 2

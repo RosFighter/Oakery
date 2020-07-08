@@ -312,7 +312,7 @@ label alice_talk_tv:
             Max_11 "{i}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/i}"
             Max_00 "Ладно, пойду я..."
             jump .end
-        "Тебе сделать массаж ног?" if not talk_var['al.tv.mas'] and mgg.massage > 1.0:
+        "Тебе сделать массаж ног?" if all([not talk_var['al.tv.mas'], online_cources[1].cources[0].less > 0]):
             $ renpy.show("Max tv-closer 04"+mgg.dress)
 
     $ talk_var['al.tv.mas'] = 1
@@ -450,6 +450,10 @@ label alice_talk_tv:
         if rez == 'double_drink':
             if RandomChance(_ch3.ch):
                 $ _drink = 2
+                $ kol_choco -= 1
+                if kol_choco == 0:
+                    $ items['choco'].InShop = True
+                    $ notify_list.append(_("Конфеты закончились"))
                 $ mgg.social += 0.1
                 Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
                 Max_01 "Может, тогда тебе стоит снять джинсы? Не будет так жарко..."
@@ -1401,6 +1405,7 @@ label gift_dress:
         $ items['dress'].InShop = False
         $ poss['nightclub'].OpenStage(4)
         $ alice.gifts.append('dress')
+        $ dcv['alice.secret'].set_lost(1)
         if alice.inferic is not None:
             $ alice.inferic = clip(alice.inferic-50.0, 0.0, 100.0)
         if alice.infmax is not None:

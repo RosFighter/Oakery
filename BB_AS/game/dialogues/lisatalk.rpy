@@ -1395,7 +1395,7 @@ label Lisa_HomeWork:
 
         $ talk_var['lisa.footmass'] += 1
         $ mgg.massage += 0.05
-        if talk_var['lisa.footmass'] == 3:
+        if all([talk_var['lisa.footmass']==3, online_cources[1].cources[1].less > 0]):
             Lisa_09 "Макс, а массаж рук ты сможешь сделать?"
             Max_04 "Да, смогу. Устала писать?"
             Lisa_01 "Немного. Во вторник и пятницу мне приходится много писать, а твой массаж мог бы это облегчить."
@@ -1403,6 +1403,8 @@ label Lisa_HomeWork:
             Lisa_02 "Давай."
             Max_01 "Хорошо. Договорились."
             $ talk_var['lisa.handmass'] = 0
+        else:
+            $ talk_var['lisa.footmass'] -= 1
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
 
