@@ -670,11 +670,11 @@ translate english punishment_max_pun_reson_8b8f1722:
 
 # TODO: Translation updated at 2020-03-25 16:16
 
-# game/dialogues/punishment.rpy:418
-translate english punishment_alice_5c85cc9f:
+# game/dialogues/punishment.rpy:516
+translate english punishment_alice_af4957cc:
 
-    # Max_09 "{i}Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас!{/i}"
-    Max_09 "{i}Wow! What are panties doing on Alice?! I thought we agreed with her... That's it, sis, you're in trouble. ...and much more than you are now.{/i}"
+    # Max_09 "{i}( Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас! ){/i}"
+    Max_09 "{i}( Wow! What are panties doing on Alice?! I thought we agreed with her... That's it, sis, you're in trouble. ...and much more than you are now. ){/i}"
 
 # TODO: Translation updated at 2020-05-22 00:12
 
@@ -824,11 +824,11 @@ translate english punishment_lisa_cc22447a:
     # Ann_12 "Лиза. Мне нужно всем объяснять за что ты сейчас будешь наказана? Молчишь? Значит, знаешь... Всё, давай раздевайся до трусов и быстро, без разговоров!"
     Ann_12 "Lisa. Do I have to explain to everyone what you're about to be punished for? You're not saying anything? So, you know... All right, strip down to your underwear, quickly!"
 
-# game/dialogues/punishment.rpy:417
-translate english punishment_lisa_d2163b1e:
+# game/dialogues/punishment.rpy:422
+translate english punishment_lisa_702b565f:
 
-    # Max_04 "{i}А вот это мне уже нравится... Сестрёнка сверкает своими классными сиськами... Можно смотреть и ничего за это не будет! Красота!{/i}"
-    Max_04 "{i}Now I like that... Little sister's in a compromising position... Front row seats for and a free show? Nice!{/i}"
+    # Max_04 "{i}( А вот это мне уже нравится... Сестрёнка сверкает своими классными сиськами... Можно смотреть и ничего за это не будет! Красота! ){/i}"
+    Max_04 "{i}( Now I like that... Little sister's in a compromising position... Front row seats for and a free show? Nice! ){/i}"
 
 # game/dialogues/punishment.rpy:434
 translate english punishment_lisa_1be74016:
@@ -872,11 +872,11 @@ translate english punishment_alice_f85f1017:
     # Ann_16 "Тогда раздевайся догола, так наказание даже эффективней будет. А Макс пусть смотрит, как и все остальные..."
     Ann_16 "Then strip naked, so the punishment will be even more effective. Max will watch, just like everyone else..."
 
-# game/dialogues/punishment.rpy:574
-translate english punishment_alice_03c693ad:
+# game/dialogues/punishment.rpy:589
+translate english punishment_alice_6424b699:
 
-    # Max_04 "{i}Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня!{/i}"
-    Max_04 "{i}It's times like these that I don't regret being punished almost naked in front of each other! Who needs porn when I have a show like this in front of me?{/i}"
+    # Max_04 "{i}( Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня! ){/i}"
+    Max_04 "{i}( It's times like these that I don't regret being punished almost naked in front of each other! Who needs porn when I have a show like this in front of me? ){/i}"
 
 # game/dialogues/punishment.rpy:583
 translate english punishment_alice_be504ff7:
@@ -913,4 +913,3 @@ translate english strings:
     # game/dialogues/punishment.rpy:533
     old "Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!"
     new "Well, Alice, are you ashamed? Silent? Think about what you did while I'm punishing you in front of everyone... Get on my lap!"
-

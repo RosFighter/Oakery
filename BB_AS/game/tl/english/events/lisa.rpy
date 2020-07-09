@@ -78,11 +78,11 @@ translate english lisa_shower_pinded_05cff630:
     # Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!" nointeract
     Lisa_12 "[spotted!t]Max! I can't believe you're peeping! I'm telling mom about this!" nointeract
 
-# game/events/lisa.rpy:151
-translate english lisa_dressed_school_lisa_dressed_7332887d:
+# game/events/lisa.rpy:215
+translate english lisa_dressed_school_lisa_dressed_ae455b87:
 
-    # Max_09 "{i}Похоже, Лиза собирается в школу...{/i}" nointeract
-    Max_09 "{i}Looks like Lisa is getting ready for school...{/i}" nointeract
+    # Max_09 "{i}( Похоже, Лиза собирается в школу... ){/i}" nointeract
+    Max_09 "{i}( Looks like Lisa is getting ready for school... ){/i}" nointeract
 
 # game/events/lisa.rpy:187
 translate english lisa_dressed_school_look_window_be364192:
@@ -620,4 +620,3 @@ translate english lisa_shower_not_luck_e8e13c34:
 
     # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
     Max_12 "{color=[orange]}{i}I think Lisa got suspicious!{/i}{/color}\nOh, no! Looks like she noticed me... time to run!"
-

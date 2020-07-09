@@ -52,16 +52,14 @@ label alice_bath:
         scene BG bath-00
         $ renpy.show('Alice bath-window 0'+str(__r1))
         show FG bath-00
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
         if __r1 == 1:
             menu:
                 Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..."
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show('Alice bath-window '+renpy.random.choice(['02', '03', '04']))
-                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-                    $ mgg.stealth += 0.03
+                    $ Skill('hide', 0.03)
                     menu:
                         Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
                         "{i}уйти{/i}":
@@ -76,8 +74,7 @@ label alice_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Alice bath-window 05
-                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-                    $ mgg.stealth += 0.03
+                    $ Skill('hide', 0.03)
                     menu:
                         Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
                         "{i}уйти{/i}":
@@ -258,8 +255,7 @@ label alice_shower:
                 return
 
     label .start_peeping:
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
         $ __ran1 = renpy.random.randint(1, 4)
 
         $ _ch1 = GetChance(mgg.stealth, 3, 900)
@@ -351,12 +347,12 @@ label alice_shower:
                     "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         pass
                 if RandomChance(_ch1.ch):
-                    $ mgg.social += 0.2
+                    $ Skill('social', 0.2)
                     Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
                     Max_00 "Да это случайно вышло!"
                     Alice_05 "Ну да, конечно..."
                 else:
-                    $ mgg.social += 0.1
+                    $ Skill('social', 0.1)
                     Alice_16 "[failed!t]Я тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
                     Max_10 "Так получилось! Я не хотел..."
                     Alice_17 "Да иди ты, Макс!"
@@ -368,8 +364,7 @@ label alice_shower:
             jump .not_luck
         $ spent_time += 10
         $ peeping['alice_shower'] = 1
-        $ mgg.stealth += 0.2
-        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ Skill('hide', 0.2)
         $ alice.dress_inf = '00aa'
         $ __ran1 = renpy.random.randint(1, 6)
         scene BG shower-alt
@@ -386,8 +381,7 @@ label alice_shower:
         $ spent_time += 10
         if RandomChance(_ch1.ch):
             $ peeping['alice_shower'] = 1
-            $ mgg.stealth += 0.2
-            $ notify_list.append(_("Скрытность Макса повысилась"))
+            $ Skill('hide', 0.2)
             $ alice.dress_inf = '00aa'
             $ __ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
@@ -404,8 +398,7 @@ label alice_shower:
     label .not_luck:
         if RandomChance(_ch1.ch) or len(sorry_gifts['alice'].give) > 3:
             $ peeping['alice_shower'] = 2
-            $ mgg.stealth += 0.1
-            $ notify_list.append(_("Скрытность Макса немного повысилась"))
+            $ Skill('hide', 0.1)
             $ alice.dress_inf = '00aa'
             $ __ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
@@ -419,8 +412,7 @@ label alice_shower:
     label .pinded:
         $ peeping['alice_shower'] = 3
         $ punreason[1] = 1
-        $ mgg.stealth += 0.05
-        $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
+        $ Skill('hide', 0.05)
         $ __ran1 = renpy.random.choice(['09', '10'])
         scene BG shower-closer
         $ renpy.show('Alice shower-closer '+__ran1)
@@ -442,8 +434,7 @@ label alice_shower:
         scene BG bathroom-morning-00
         $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.05
+        $ Skill('hide', 0.05)
         if flags['smoke'] == 'not_nopants' and not flags['noted']:
             # Алиса в трусиках, хотя должна быть без них и Макс еще об этом не знает
             Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
@@ -531,8 +522,7 @@ label alice_dressed_shop:
                     $ renpy.show('Alice voyeur '+__ran1+__suf)
                     $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
-                $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-                $ mgg.stealth += 0.03
+                $ Skill('hide', 0.03)
                 if flags['smoke'] == 'not_nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
                     Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
@@ -621,8 +611,7 @@ label alice_dressed_friend:
                     $ renpy.show('Alice voyeur '+__ran1+__suf)
                     $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
-                $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-                $ mgg.stealth += 0.03
+                $ Skill('hide', 0.03)
                 if flags['smoke'] == 'not_nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
                     Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
@@ -651,7 +640,7 @@ label alice_dressed_club:
 
     $ peeping['alice_dressed'] = 1
     menu:
-        Max_00 "{i}Кажется, Алиса собирается в ночной клуб...{/i}"
+        Max_00 "{i}( Кажется, Алиса собирается в ночной клуб... ){/i}"
         "{i}постучаться{/i}":
             jump .knock
         "{i}заглянуть в окно{/i}":
@@ -672,8 +661,7 @@ label alice_dressed_club:
                 scene BG char Alice voyeur-00
                 $ renpy.show('Alice voyeur 04'+__suf)
                 $ renpy.show('FG voyeur-morning-00'+mgg.dress)
-            $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-            $ mgg.stealth += 0.03
+            $ Skill('hide', 0.03)
 
             ## у нас 3 варианта:
             if flags['smoke'] == 'not_nopants':
@@ -922,7 +910,7 @@ label spider_in_bed:
                 jump .spider
 
     label .fail:
-        $ mgg.social += 0.1
+        $ Skill('social', 0.1)
         $ renpy.show('Alice spider-night 03-05'+__suf)
         Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
@@ -931,7 +919,7 @@ label spider_in_bed:
 
     label .money:
         show Alice spider-night 03-06
-        $ mgg.social += 0.2
+        $ Skill('social', 0.2)
         Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
         Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
         $ __mood -= 20
@@ -940,7 +928,7 @@ label spider_in_bed:
 
     label .tits:
         show Max spider-night 03-03
-        $ mgg.social += 0.2
+        $ Skill('social', 0.2)
         if alice.GetMood()[0] < 3:
             $ __mood -= 50
             $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08']))
@@ -953,7 +941,7 @@ label spider_in_bed:
 
     label .toples:
         $ __toples = True
-        $ mgg.social += 0.2
+        $ Skill('social', 0.2)
         show Max spider-night 03-03
         $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12']))
         if alice.GetMood()[0] < 3:
@@ -989,7 +977,7 @@ label spider_in_bed:
                     "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         show Max spider-night 04-02
                         if RandomChance(_ch1.ch):
-                            $ mgg.social += 0.2
+                            $ Skill('social', 0.2)
                             Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
                             menu:
                                 Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!"
@@ -1002,7 +990,7 @@ label spider_in_bed:
                                     $ items['spider'].have = True
                                     return
                         else:
-                            $ mgg.social += 0.1
+                            $ Skill('social', 0.1)
                             $ __mood -50
                             Alice_16 "[failed!t]Нет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
                             Max_09 "Ладно, будет тебе! Раз ты такая кровожадная..."
@@ -1203,8 +1191,7 @@ label alice_lisa_shower:
             return
 
     label .start_peeping:
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
 
         scene Alice shower-Lisa 01
         $ renpy.show('FG shower 00'+mgg.dress)

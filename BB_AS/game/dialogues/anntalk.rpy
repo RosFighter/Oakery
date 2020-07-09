@@ -183,7 +183,7 @@ label ann_talk_tv:
             show tv 00 at tv_screen
             show Ann tv-watch 01a
             $ renpy.show('Max tv-watch 01'+mgg.dress)
-            Max_02 "{i}Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу...{/i}"
+            Max_02 "{i}( Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу... ){/i}"
             scene BG lounge-tv-01
             $ renpy.show("Ann tv-closer "+pose3_3+'a')
             $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
@@ -253,7 +253,7 @@ label ann_talk_tv:
         show tv ews 01 at tv_screen
         show Ann tv-watch 01a
         $ renpy.show('Max tv-watch 01'+mgg.dress)
-    Max_01 "{i}Интересно, мама хотя бы подозревает, что это эротика?... Посмотрим...{/i}"
+    Max_01 "{i}( Интересно, мама хотя бы подозревает, что это эротика?... Посмотрим... ){/i}"
     show tv ews 02 at tv_screen
     Ann_13 "Ой, кажется, я не посмотрела какой возрастной рейтинг у фильма..."
     Max_04 "Да всё в порядке!"

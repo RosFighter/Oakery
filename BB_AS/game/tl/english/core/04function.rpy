@@ -53,3 +53,43 @@ translate english strings:
     # game/core/04function.rpy:1028
     old "{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
     new "{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
+# TODO: Translation updated at 2020-07-09 15:51
+
+translate english strings:
+
+    # game/core/04function.rpy:195
+    old "+ к навыку скрытности"
+    new "+ to the stealth skill"
+
+    # game/core/04function.rpy:199
+    old "+ к навыку убеждения"
+    new "+ to the persuasion skill"
+
+    # game/core/04function.rpy:203
+    old "+ к навыку массажа"
+    new "+ to the massage skill"
+
+    # game/core/04function.rpy:207
+    old "+ к навыку поцелуев"
+    new "+ to the kissing skill"
+
+    # game/core/04function.rpy:211
+    old "+ к навыку эротического массажа"
+    new "+ to the skill of erotic massage"
+
+    # game/core/04function.rpy:215
+    old "+ к тренированности"
+    new "+ to fitness"
+
+    # game/core/04function.rpy:219
+    old "+ к навыку кунилингуса"
+    new "+ to the cunnilingus skill"
+
+    # game/core/04function.rpy:223
+    old "+ к сексуальному опыту"
+    new "+ to sexual experience"
+
+    # game/core/04function.rpy:227
+    old "+ к опыту анального секса"
+    new "+ to experience anal sex"
+

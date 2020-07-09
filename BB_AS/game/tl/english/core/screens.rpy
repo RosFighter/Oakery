@@ -337,3 +337,11 @@ translate english strings:
     old "Сделать текущей"
     new "Select as current"
 
+# TODO: Translation updated at 2020-07-09 15:51
+
+translate english strings:
+
+    # game/core/screens.rpy:1360
+    old "Сексуальный опыт"
+    new "Sexual experience"
+

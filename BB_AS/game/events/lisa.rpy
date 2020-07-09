@@ -80,8 +80,7 @@ label lisa_shower:
         scene BG bathroom-morning-00
         $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.05
+        $ Skill('hide', 0.05)
         if __r1 == 'a':
             Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
         elif __r1 == 'b':
@@ -97,8 +96,7 @@ label lisa_shower:
 
     label .start_peeping:
         $ peeping['lisa_shower'] = 1
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
         $ __ran1 = renpy.random.randint(1, 4)
 
         $ _ch1 = GetChance(mgg.stealth, 3, 900)
@@ -122,8 +120,7 @@ label lisa_shower:
             jump .not_luck
         $ spent_time += 10
         $ peeping['lisa_shower'] = 1
-        $ mgg.stealth += 0.2
-        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ Skill('hide', 0.2)
         $ lisa.dress_inf = '00a'
         $ __ran1 = renpy.random.randint(1, 6)
         scene BG shower-alt
@@ -140,8 +137,7 @@ label lisa_shower:
         $ spent_time += 10
         if RandomChance(_ch1.ch):
             $ peeping['lisa_shower'] = 1
-            $ mgg.stealth += 0.2
-            $ notify_list.append(_("Скрытность Макса повысилась"))
+            $ Skill('hide', 0.2)
             $ lisa.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
@@ -158,8 +154,7 @@ label lisa_shower:
     label .not_luck:
         if RandomChance(_ch1.ch) or len(sorry_gifts['lisa'].give) > 3:
             $ peeping['lisa_shower'] = 2
-            $ mgg.stealth += 0.1
-            $ notify_list.append(_("Скрытность Макса немного повысилась"))
+            $ Skill('hide', 0.1)
             $ lisa.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
@@ -173,8 +168,7 @@ label lisa_shower:
     label .pinded:
         $ peeping['lisa_shower'] = 3
         $ punreason[0] = 1
-        $ mgg.stealth += 0.05
-        $ notify_list.append(_("Скрытность Макса чуть-чуть повысилась"))
+        $ Skill('hide', 0.05)
         $ __ran1 = renpy.random.choice(['09', '10'])
         scene BG shower-closer
         $ renpy.show('Lisa shower-closer '+__ran1)
@@ -219,7 +213,7 @@ label lisa_dressed_school:
         return
 
     menu .lisa_dressed:
-        Max_09 "{i}Похоже, Лиза собирается в школу...{/i}"
+        Max_09 "{i}( Похоже, Лиза собирается в школу... ){/i}"
         "{i}постучаться{/i}" if lisa.free < 200:
             menu:
                 "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
@@ -252,8 +246,7 @@ label lisa_dressed_school:
             $ renpy.show('Lisa voyeur '+__ran1)
             $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
 
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
         menu:
             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
             "{i}уйти{/i}":
@@ -462,8 +455,7 @@ label lisa_dressed_shop:
             scene BG char Lisa voyeur-00
             $ renpy.show('Lisa voyeur '+__ran1)
             $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
-            $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-            $ mgg.stealth += 0.03
+            $ Skill('hide', 0.03)
             menu:
                 Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
                 "{i}уйти{/i}":
@@ -576,16 +568,14 @@ label lisa_bath:
         scene BG bath-00
         $ renpy.show('Lisa bath-window 0'+str(__r1))
         show FG bath-00
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
         if __r1 == 1:
             menu:
                 Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show('Lisa bath-window '+renpy.random.choice(['02', '03', '04']))
-                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-                    $ mgg.stealth += 0.03
+                    $ Skill('hide', 0.03)
                     menu:
                         Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
                         "{i}уйти{/i}":
@@ -600,8 +590,7 @@ label lisa_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Lisa bath-window 05
-                    $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-                    $ mgg.stealth += 0.03
+                    $ Skill('hide', 0.03)
                     menu:
                         Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
                         "{i}уйти{/i}":

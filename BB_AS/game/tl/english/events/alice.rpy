@@ -1383,11 +1383,11 @@ translate english strings:
 
 # TODO: Translation updated at 2020-05-28 00:22
 
-# game/events/alice.rpy:653
-translate english alice_dressed_club_f4235378:
+# game/events/alice.rpy:642
+translate english alice_dressed_club_08037b56:
 
-    # Max_00 "{i}Кажется, Алиса собирается в ночной клуб...{/i}" nointeract
-    Max_00 "{i}I Think Alice is going to a nightclub...{/i}" nointeract
+    # Max_00 "{i}( Кажется, Алиса собирается в ночной клуб... ){/i}" nointeract
+    Max_00 "{i}( I Think Alice is going to a nightclub... ){/i}" nointeract
 
 # game/events/alice.rpy:659
 translate english alice_dressed_club_ca8b176b:
@@ -1792,4 +1792,3 @@ translate english alice_sleep_morning_e5316a8a:
 
     # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!"
     Max_09 "I should have brought you to clean water... Maybe should take advantage of what scares Alice the most?!"
-

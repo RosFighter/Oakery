@@ -306,11 +306,11 @@ translate english alice_talk_tv_a38da904:
     # Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..." nointeract
     Alice_13 "Absolutely nothing. I'm just relaxing and I wanted some background noise..." nointeract
 
-# game/dialogues/alicetalk.rpy:269
-translate english alice_talk_tv_d478e548:
+# game/dialogues/alicetalk.rpy:312
+translate english alice_talk_tv_13b3ba4f:
 
-    # Max_11 "{i}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/i}"
-    Max_11 "{i}There's nothing interesting on TV today. It would be exciting if there were some adult films to choose from. Could even be fun to watch it with your sister...{/i}"
+    # Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
+    Max_11 "{i}( There's nothing interesting on TV today. It would be exciting if there were some adult films to choose from. Could even be fun to watch it with your sister... ){/i}"
 
 # game/dialogues/alicetalk.rpy:270
 translate english alice_talk_tv_55b37ec4:
@@ -1450,7 +1450,7 @@ translate english smoke_not_toples_21ec5b7a:
 translate english smoke_not_toples_66332c89:
 
     # Alice_15 "Ах ещё и грудь показать! Может сразу и полапать её дать?!"
-    Alice_15 "Oh, and show me your chest! Why don't you just grab it while you're at it?!"
+    Alice_15 "Oh, and show me your breasts! Why don't you just grab them while you're at it?!"
 
 # game/dialogues/alicetalk.rpy:791
 translate english smoke_not_toples_d4cfa9a6:
@@ -2148,17 +2148,17 @@ translate english Alice_solar_260044ac:
     # Max_00 "Ясно. Ну, в другой раз значит..."
     Max_00 "Okay. Well, next time then..."
 
-# game/dialogues/alicetalk.rpy:1074
-translate english Alice_solar_360642b6:
+# game/dialogues/alicetalk.rpy:1705
+translate english Alice_solar_48142c15:
 
-    # Max_07 "{i}Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/i}"
-    Max_07 "{i}Before you try to get to your sister this way, you should wear something that's easier to move around in.{/i}"
+    # Max_07 "{i}( Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче. ){/i}"
+    Max_07 "{i}( Before you try to get to your sister this way, you should wear something that's easier to move around in. ){/i}"
 
-# game/dialogues/alicetalk.rpy:1079
-translate english Alice_solar_77d5a5bb:
+# game/dialogues/alicetalk.rpy:1710
+translate english Alice_solar_a934a086:
 
-    # Max_07 "{i}Крем почти закончился. Нужно купить ещё.{/i}"
-    Max_07 "{i}Sunscreen is almost gone. Need to buy more. {/i}"
+    # Max_07 "{i}( Крем почти закончился. Нужно купить ещё. ){/i}"
+    Max_07 "{i}( Sunscreen is almost gone. Need to buy more. ){/i}"
 
 # game/dialogues/alicetalk.rpy:1084
 translate english Alice_solar_22c9ef31:
@@ -2178,23 +2178,23 @@ translate english Alice_solar_type_choice_327b0489:
     # Alice_07 "Эти шезлонги всем хороши, но на животе загорать не получается. Приходится коврик для йоги использовать..." nointeract
     Alice_07 "These sunbeds are fine and all, but you can't get a tan on your stomach. You have to use a yoga mat..." nointeract
 
-# game/dialogues/alicetalk.rpy:1101
-translate english Alice_solar_type_choice_daa53147:
+# game/dialogues/alicetalk.rpy:1732
+translate english Alice_solar_type_choice_6c9e2ee8:
 
-    # Max_01 "{i}Так, хорошенько намажем эти стройные ножки...{/i}"
-    Max_01 "{i}So, let's get these slim legs smeared...{/i}"
+    # Max_01 "{i}( Так, хорошенько намажем эти стройные ножки... ){/i}"
+    Max_01 "{i}( So, let's get these slim legs smeared... ){/i}"
 
-# game/dialogues/alicetalk.rpy:1104
-translate english Alice_solar_type_choice_75d9a0ca:
+# game/dialogues/alicetalk.rpy:1735
+translate english Alice_solar_type_choice_f9d90e32:
 
-    # Max_01 "{i}Теперь плечи и совсем немного шею...{/i}" nointeract
-    Max_01 "{i}Now her shoulders and neck...{/i}" nointeract
+    # Max_01 "{i}( Теперь плечи и совсем немного шею... ){/i}" nointeract
+    Max_01 "{i}( Now her shoulders and neck... ){/i}" nointeract
 
-# game/dialogues/alicetalk.rpy:1113
-translate english Alice_solar_type_choice_b3836df0:
+# game/dialogues/alicetalk.rpy:1744
+translate english Alice_solar_type_choice_0d743a53:
 
-    # Max_03 "{i}И закончим, хорошенько намазав всю её спину...{/i}"
-    Max_03 "{i}and finish with a good smear all over her back...{/i}"
+    # Max_03 "{i}( И закончим, хорошенько намазав всю её спину... ){/i}"
+    Max_03 "{i}( and finish with a good smear all over her back... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1114
 translate english Alice_solar_type_choice_69129f17:
@@ -2247,8 +2247,8 @@ translate english massage_sunscreen_acc696ab:
 # game/dialogues/alicetalk.rpy:1157
 translate english massage_sunscreen_d45b0d2a:
 
-    # Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
-    Max_07 "{i}Sometimes Alice can be right. It probably is worth studying.{/i}"
+    # Max_07 "{i}( В чём-то Алиса права, поучиться этому, пожалуй, стоит. ){/i}"
+    Max_07 "{i}( Sometimes Alice can be right. It probably is worth studying. ){/i}"
 
 # game/dialogues/alicetalk.rpy:1174
 translate english massage_sunscreen_07ed7b58:
@@ -2262,35 +2262,35 @@ translate english massage_sunscreen_3f529b58:
     # Max_01 "Да не за что, обращайся!"
     Max_01 "Your'e welcome, anytime!"
 
-# game/dialogues/alicetalk.rpy:1186
-translate english massage_sunscreen_left_foot_fbfbb9cf:
+# game/dialogues/alicetalk.rpy:1829
+translate english massage_sunscreen_left_foot_65965316:
 
-    # Max_01 "{i}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
-    Max_01 "{i}Let's Start today with the left heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
+    # Max_01 "{i}( Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку! ){/i}"
+    Max_01 "{i}( Let's Start today with the left heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass! ){/i}"
 
-# game/dialogues/alicetalk.rpy:1189
-translate english massage_sunscreen_left_foot_6df29202:
+# game/dialogues/alicetalk.rpy:1832
+translate english massage_sunscreen_left_foot_58e59668:
 
-    # Max_03 "{i}А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
-    Max_03 "{i}And now the right one... Like this. Yes, I can't take my eyes off you! That ass is perfect!{/i}"
+    # Max_03 "{i}( А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо! ){/i}"
+    Max_03 "{i}( And now the right one... Like this. Yes, I can't take my eyes off you! That ass is perfect! ){/i}"
 
-# game/dialogues/alicetalk.rpy:1195
-translate english massage_sunscreen_right_foot_c55e1f46:
+# game/dialogues/alicetalk.rpy:1838
+translate english massage_sunscreen_right_foot_98f22152:
 
-    # Max_01 "{i}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
-    Max_01 "{i}Let's start today with the right heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass!{/i}"
+    # Max_01 "{i}( Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку! ){/i}"
+    Max_01 "{i}( Let's start today with the right heel... Like this. And while I'm massaging it, I can take a look at Alice's peachy ass! ){/i}"
 
-# game/dialogues/alicetalk.rpy:1198
-translate english massage_sunscreen_right_foot_facf4587:
+# game/dialogues/alicetalk.rpy:1841
+translate english massage_sunscreen_right_foot_48c1655c:
 
-    # Max_03 "{i}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
-    Max_03 "{i}And now the left one... Like this. Yes, I can't take my eyes off you! That ass is perfect!{/i}"
+    # Max_03 "{i}( А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо! ){/i}"
+    Max_03 "{i}( And now the left one... Like this. Yes, I can't take my eyes off you! That ass is perfect! ){/i}"
 
-# game/dialogues/alicetalk.rpy:1204
-translate english massage_sunscreen_shin_a07f50ac:
+# game/dialogues/alicetalk.rpy:1847
+translate english massage_sunscreen_shin_14a9c55f:
 
-    # Max_02 "{i}Помассируем эти стройные ножки, вот так...{/i}"
-    Max_02 "{i}Massage these slender legs like this... {/i}"
+    # Max_02 "{i}( Помассируем эти стройные ножки, вот так... ){/i}"
+    Max_02 "{i}( Massage these slender legs like this... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1216
 translate english massage_sunscreen_shin_35e52f27:
@@ -2313,8 +2313,8 @@ translate english massage_sunscreen_shin_8a65b49d:
 # game/dialogues/alicetalk.rpy:1241
 translate english massage_sunscreen_hips_f9d8b1b4:
 
-    # Max_00 "{i}Помассируем бёдра...{/i}"
-    Max_00 "{i}Massage her thighs...{/i}"
+    # Max_00 "{i}( Помассируем бёдра... ){/i}"
+    Max_00 "{i}( Massage her thighs... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1253
 translate english massage_sunscreen_hips_886699d1:
@@ -2322,11 +2322,11 @@ translate english massage_sunscreen_hips_886699d1:
     # Alice_00 "А я и не знала, что твои руки могут быть одновременно сильными и нежными..."
     Alice_00 "I didn't think your hands would be both strong and gentle..."
 
-# game/dialogues/alicetalk.rpy:1264
-translate english massage_sunscreen_shoulders_3473dfd9:
+# game/dialogues/alicetalk.rpy:1892
+translate english massage_sunscreen_shoulders_c2662af5:
 
-    # Max_04 "{i}Хорошенько разомнём плечи и немного шею...{/i}" nointeract
-    Max_04 "{i}Lets loosen out the shoulders and neck...{/i}" nointeract
+    # Max_04 "{i}( Хорошенько разомнём плечи и немного шею... ){/i}" nointeract
+    Max_04 "{i}( Lets loosen out the shoulders and neck... ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1271
 translate english massage_sunscreen_shoulders_865217d9:
@@ -2352,11 +2352,11 @@ translate english massage_sunscreen_shoulders_78ef9d96:
     # Alice_03 "Весьма неплохо, Макс... Продолжай..."
     Alice_03 "That's pretty good, Max... Go on..."
 
-# game/dialogues/alicetalk.rpy:1311
-translate english massage_sunscreen_spine_13fae47b:
+# game/dialogues/alicetalk.rpy:1930
+translate english massage_sunscreen_spine_c5f20f00:
 
-    # Max_05 "{i}Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно.{/i}" nointeract
-    Max_05 "{i}That's it, you need to RUB the cream well... Now carefully work the back... Gently, but firmly. {/i}" nointeract
+    # Max_05 "{i}( Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно. ){/i}" nointeract
+    Max_05 "{i}( That's it, you need to RUB the cream well... Now carefully work the back... Gently, but firmly. ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1318
 translate english massage_sunscreen_spine_7e3da85a:
@@ -2466,17 +2466,17 @@ translate english massage_sunscreen_talk_topless_57148625:
     # Max_01 "Ладно, как скажешь..."
     Max_01 "Okay, whatever you say..."
 
-# game/dialogues/alicetalk.rpy:1430
-translate english massage_sunscreen_end_1a15b8da:
+# game/dialogues/alicetalk.rpy:2090
+translate english massage_sunscreen_end_904d90d2:
 
-    # Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
-    Max_10 "{i}Well, I'm out of sunscreen. I need to buy more.{/i}"
+    # Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
+    Max_10 "{i}( Well, I'm out of sunscreen. I need to buy more. ){/i}"
 
-# game/dialogues/alicetalk.rpy:1434
-translate english massage_sunscreen_end_2c4d5f44:
+# game/dialogues/alicetalk.rpy:2095
+translate english massage_sunscreen_end_c2993c60:
 
-    # Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
-    Max_08 "{i}There's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance.{/i}"
+    # Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
+    Max_08 "{i}( There's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance. ){/i}"
 
 translate english strings:
 
@@ -5800,17 +5800,17 @@ translate english Alice_solar_6edc5f35:
     # Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
     Max_09 "Sunscreen can probably be found at the online store. I should also get some more casual clothes before I try and massage Alice."
 
-# game/dialogues/alicetalk.rpy:1379
-translate english Alice_solar_type_choice_1a15b8da:
+# game/dialogues/alicetalk.rpy:1770
+translate english Alice_solar_type_choice_904d90d2:
 
-    # Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
-    Max_10 "{i}Well, I'm out of sunscreen. Need to buy more.{/i}"
+    # Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
+    Max_10 "{i}( Well, I'm out of sunscreen. Need to buy more. ){/i}"
 
-# game/dialogues/alicetalk.rpy:1384
-translate english Alice_solar_type_choice_2c4d5f44:
+# game/dialogues/alicetalk.rpy:1775
+translate english Alice_solar_type_choice_c2993c60:
 
-    # Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
-    Max_08 "{i}There's not enough sunscreen left, next time there may not be enough. It's better to buy more in advance.{/i}"
+    # Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
+    Max_08 "{i}( There's not enough sunscreen left, next time there may not be enough. It's better to buy more in advance. ){/i}"
 
 translate english strings:
 
@@ -5953,11 +5953,11 @@ translate english alice_talk_tv_choco_0383591b:
     # Alice_01 "[failed!t]Нет, Макс. Спасибо, конечно, но рисковать я не буду. Ну так что, массаж делать будешь или забыл, что собирался?" nointeract
     Alice_01 "[failed!t]No, Max. Thank you, but I won't take any chances. So, are you going to do the massage or did you forget?" nointeract
 
-# game/dialogues/alicetalk.rpy:413
-translate english alice_talk_tv_massage_4a771e7a:
+# game/dialogues/alicetalk.rpy:414
+translate english alice_talk_tv_massage_4aec2691:
 
-    # Max_03 "{i}Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает?{/i}" nointeract
-    Max_03 "{i}Alice's skin is like silk... I wonder what she's thinking right now.{/i}" nointeract
+    # Max_03 "{i}( Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает? ){/i}" nointeract
+    Max_03 "{i}( Alice's skin is like silk... I wonder what she's thinking right now. ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:425
 translate english alice_talk_tv_massage_953afbb3:
@@ -6041,7 +6041,7 @@ translate english alice_talk_tv_choice_mass_6b6d69b9:
 translate english alice_talk_tv_choice_mass_6daf979b:
 
     # Max_05 "Ладно, но это было так сногсшибательно, что я аж забыл, как ходить!"
-    Max_05 "Okay, I'll go, but your slit is so pretty, I think I've forgotten how to walk!"
+    Max_05 "Okay, I'll go, but your pussy is so pretty, I think I've forgotten how to walk!"
 
 # game/dialogues/alicetalk.rpy:472
 translate english alice_talk_tv_choice_mass_b0f28e71:
@@ -6145,11 +6145,11 @@ translate english alice_talk_tv_jeans_9563ece2:
     # Alice_04 "[succes!t]Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
     Alice_04 "[succes!t] You know, they are in the way. And I feel hot. I think I'll give you a little extra motivation, since you massage so well..."
 
-# game/dialogues/alicetalk.rpy:528
-translate english alice_talk_tv_jeans_a8150747:
+# game/dialogues/alicetalk.rpy:533
+translate english alice_talk_tv_jeans_015c58db:
 
-    # Max_07 "{i}Ого...{/i}"
-    Max_07 "{i}Wow.{/i}"
+    # Max_07 "{i}( Ого... ){/i}"
+    Max_07 "{i}( Wow. ){/i}"
 
 # game/dialogues/alicetalk.rpy:532
 translate english alice_talk_tv_not_jeans_769ebcfd:
@@ -6161,7 +6161,7 @@ translate english alice_talk_tv_not_jeans_769ebcfd:
 translate english alice_talk_tv_massage_next_e8bcd9ee:
 
     # Alice_07 "Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?" nointeract
-    Alice_07 "Max... Your hands are working wonders today... What's my foot against? Is this part of the program or what?" nointeract
+    Alice_07 "Max... Your hands are working wonders today... What's my foot touching there? Is this part of the program or what?" nointeract
 
 # game/dialogues/alicetalk.rpy:550
 translate english alice_talk_tv_massage_next_3837de84:
@@ -6247,11 +6247,11 @@ translate english Alice_solar_type_choice_acc696ab:
     # Max_04 "Да не за что, обращайся!"
     Max_04 "You're welcome!"
 
-# game/dialogues/alicetalk.rpy:1659
-translate english Alice_solar_type_choice_d45b0d2a:
+# game/dialogues/alicetalk.rpy:1754
+translate english Alice_solar_type_choice_41f2b63e:
 
-    # Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
-    Max_07 "{i}In some ways Alice is right, it's probably worth learning.{/i}"
+    # Max_07 "{i}( В чём-то Алиса права, поучиться этому, пожалуй, стоит. ){/i}"
+    Max_07 "{i}( In some ways Alice is right, it's probably worth learning. ){/i}"
 
 translate english strings:
 
@@ -6532,7 +6532,7 @@ translate english massage_sunscreen_spider_4c0bd052:
 translate english massage_sunscreen_spider_cf1f48d4:
 
     # Alice_14 "Макс, чего сидишь?! Убери его отсюда! А ещё лучше убей!"
-    Alice_14 "Max, why are you just sitting there?! Get that out of here! Better yet, kill it!"
+    Alice_14 "Max, why are you just sitting there?! Get that away from me! Better yet, kill it!"
 
 # game/dialogues/alicetalk.rpy:1979
 translate english massage_sunscreen_spider_f4c08b0b:
@@ -6550,13 +6550,13 @@ translate english massage_sunscreen_spider_ad065a63:
 translate english massage_sunscreen_spider_1f9d3af6:
 
     # Max_05 "Так хорошо же сидим. Да и он в нашу сторону не ползёт. По-моему, он в сторону травы сменил курс..."
-    Max_05 "It's not crawling in our direction. I think he changed course towards the grass..."
+    Max_05 "It's not crawling in our direction. I think it changed course towards the grass..."
 
 # game/dialogues/alicetalk.rpy:1984
 translate english massage_sunscreen_spider_f60fe948:
 
     # Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
-    Alice_16 "I don't care where it goes! I want it to be gone!"
+    Alice_16 "I don't care where it goes! I want it gone!"
 
 # game/dialogues/alicetalk.rpy:1987
 translate english massage_sunscreen_spider_f8904d2b:
@@ -6634,13 +6634,13 @@ translate english massage_sunscreen_spider_ec701e44:
 translate english massage_sunscreen_spider_33a334d2:
 
     # Alice_14 "Ой, блин, это член твой что ли?!"
-    Alice_14 "Oh, shit, is that your dick?!"
+    Alice_14 "Oh, shit, is that your... dick?!"
 
 # game/dialogues/alicetalk.rpy:2005
 translate english massage_sunscreen_spider_36e61f16:
 
     # Max_01 "Ага. Он самый."
-    Max_01 "Aha. He's the one."
+    Max_01 "Yep. That's the one."
 
 # game/dialogues/alicetalk.rpy:2010
 translate english massage_sunscreen_spider_88d0ea09:
@@ -6652,7 +6652,7 @@ translate english massage_sunscreen_spider_88d0ea09:
 translate english massage_sunscreen_spider_ff5172bb:
 
     # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
-    Max_10 "Ah, Alice, it hurts! You put your bare tits in my face! And they are beautiful... What else did you expect?!"
+    Max_10 "Ah, Alice, it hurts! You put your bare tits in my face! And they are so beautiful... What else did you expect?!"
 
 # game/dialogues/alicetalk.rpy:2012
 translate english massage_sunscreen_spider_a71b7a30:
@@ -6700,7 +6700,7 @@ translate english massage_sunscreen_spider_e0dd7b8f:
 translate english massage_sunscreen_spider_4970a131:
 
     # Max_02 "Хорошо. Не скучай."
-    Max_02 "Okay. Don't be so upset."
+    Max_02 "Okay. Don't be upset."
 
 translate english strings:
 

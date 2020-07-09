@@ -90,11 +90,11 @@ translate english ann_talk_tv_b9644c38:
     # Ann_05 "Да вот, по кабельному какой-то фильм сейчас начнётся..."
     Ann_05 "Yeah, well, some movie's about to start..."
 
-# game/dialogues/anntalk.rpy:133
-translate english ann_talk_tv_85b388b3:
+# game/dialogues/anntalk.rpy:186
+translate english ann_talk_tv_59854843:
 
-    # Max_02 "{i}Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу...{/i}"
-    Max_02 "{i}Mom is so close to me...in nothing but a towel...I don't even know what movie's playing, she's too distracting.{/i}"
+    # Max_02 "{i}( Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу... ){/i}"
+    Max_02 "{i}( Mom is so close to me...in nothing but a towel...I don't even know what movie's playing, she's too distracting. ){/i}"
 
 # game/dialogues/anntalk.rpy:134
 translate english ann_talk_tv_31044bb9:
@@ -716,11 +716,11 @@ translate english ann_talk_tv_ero_43270e27:
     # Max_01 "Ладно, не буду мешать..."
     Max_01 "Okay, I'll leave you alone then"
 
-# game/dialogues/anntalk.rpy:254
-translate english ann_talk_tv_start_975b2e0f:
+# game/dialogues/anntalk.rpy:256
+translate english ann_talk_tv_start_251e5813:
 
-    # Max_01 "{i}Интересно, мама хотя бы подозревает, что это эротика?... Посмотрим...{/i}"
-    Max_01 "{i}I wonder if she knows it's erotica...?{/i}"
+    # Max_01 "{i}( Интересно, мама хотя бы подозревает, что это эротика?... Посмотрим... ){/i}"
+    Max_01 "{i}( I wonder if she knows it's erotica...? ){/i}"
 
 # game/dialogues/anntalk.rpy:256
 translate english ann_talk_tv_start_2fbf09a3:
@@ -937,4 +937,3 @@ translate english strings:
     # game/dialogues/anntalk.rpy:482
     old "Ну, красивая..."
     new "Well, she's beautiful..."
-

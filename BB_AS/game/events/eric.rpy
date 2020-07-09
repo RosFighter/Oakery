@@ -555,6 +555,7 @@ label eric_ann_fucking:
         $ renpy.show('FG ann&eric-voyeur-01')
 
     if RandomChance(_ch1.ch):
+        $ Skill('hide', 0.1)
         $ ann.dress_inf = '00'
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
@@ -574,13 +575,12 @@ label eric_ann_fucking:
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
         Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-        $ mgg.stealth += 0.05
+        $ Skill('hide', 0.05)
         $ punreason[3] = 1
         $ current_room = house[0]
         jump Waiting
 
-    $ mgg.stealth += 0.1
-    $ notify_list.append(_("Скрытность Макса повысилась"))
+    $ Skill('hide', 0.1)
 
     $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
     if rez > 0:
@@ -605,8 +605,7 @@ label eric_ann_fucking:
         Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
 
     $ spent_time += 20
-    $ mgg.stealth += 0.1
-    $ notify_list.append(_("Скрытность Макса повысилась"))
+    $ Skill('hide', 0.1)
     $ current_room = house[0]
     jump Waiting
 
@@ -676,8 +675,7 @@ label eric_ann_shower:
         else:
             $ renpy.show('Eric bath-window-morning 0'+str(fuck_scene)+'a')
         show FG bathroom-morning-00
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.05
+        $ Skill('hide', 0.05)
         $ spent_time += 30
         Max_07 "Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся..."
 
@@ -735,8 +733,7 @@ label eric_ann_shower:
         jump Waiting
 
     label .start_peeping:
-        $ notify_list.append(_("Скрытность Макса капельку повысилась"))
-        $ mgg.stealth += 0.03
+        $ Skill('hide', 0.03)
         $ __r1 = renpy.random.choice(['01', '02', '03'])
         $ _ch1 = GetChance(mgg.stealth, 3, 900)
         $ _ch2 = GetChance(mgg.stealth, 2, 900)
@@ -763,8 +760,7 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['04', '07'])
         if not RandomChance(_ch1.ch):
             jump .not_luck
-        $ mgg.stealth += 0.2
-        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
@@ -799,7 +795,6 @@ label eric_ann_shower:
         $ current_room = house[6]
         jump Waiting
 
-
     label .closer_peepeng:
         $ spent_time += 10
         if __r1 == '01':
@@ -811,8 +806,7 @@ label eric_ann_shower:
         if not RandomChance(_ch1.ch):
             jump .not_luck
 
-        $ mgg.stealth += 0.2
-        $ notify_list.append(_("Скрытность Макса повысилась"))
+        $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
         scene BG shower-closer
         $ renpy.show('Eric shower-closer '+__r2)
@@ -847,8 +841,8 @@ label eric_ann_shower:
         else:
             show Eric shower-closer seen02
         show FG shower-closer
+        $ Skill('hide', 0.01)
         Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
-        $ mgg.stealth += 0.01
         $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
         $ current_room = house[6]
         jump Waiting

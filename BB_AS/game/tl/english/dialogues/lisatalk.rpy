@@ -2272,11 +2272,11 @@ translate english Lisa_HomeWork_show_breast_eb1cb0cd:
     # Max_05 "Вот теперь убедила!"
     Max_05 "Now that was a proper motivator!"
 
-# game/dialogues/lisatalk.rpy:984
-translate english Lisa_HomeWork_show_breast_0910a185:
+# game/dialogues/lisatalk.rpy:1142
+translate english Lisa_HomeWork_show_breast_4c495bea:
 
-    # Max_00 "{i}Ну, раз Лиза выполнила мою просьбу, придётся всё сделать как положено. Да и если ей поставят двойку за это снова, она больше ничего уже не покажет мне...{/i}"
-    Max_00 "{i}Well, since Lisa actually did what I asked for, I have to do everything right. If she gets an F for this, she'll never show me anything again...{/i}"
+    # Max_00 "{i}( Ну, раз Лиза выполнила мою просьбу, придётся всё сделать как положено. Да и если ей поставят двойку за это снова, она больше ничего уже не покажет мне... ){/i}"
+    Max_00 "{i}( Well, since Lisa actually did what I asked for, I have to do everything right. If she gets an F for this, she'll never show me anything again... ){/i}"
 
 # game/dialogues/lisatalk.rpy:985
 translate english Lisa_HomeWork_show_breast_4a5d69ef:
@@ -2648,17 +2648,17 @@ translate english gift_swimsuit_swimsuit_show_c6805f5f:
     # Lisa_02 "Макс! Ты подглядываешь. Ты же обещал... Отвернись, быстро!" nointeract
     Lisa_02 "You're peeping, Max! You promised... Turn around right now!" nointeract
 
-# game/dialogues/lisatalk.rpy:1109
-translate english gift_swimsuit_swimsuit_show_03596275:
+# game/dialogues/lisatalk.rpy:1613
+translate english gift_swimsuit_swimsuit_show_54114c6f:
 
-    # Max_04 "{i}Да, закрою глаза, когда тут такое... как же!\nУх! А, сестрёнка хороша... Местами даже очень...{/i}"
-    Max_04 "{i}Yeah, like I'm going to close my eyes in this situation...\nWow! My sister is all grown up... everywhere...{/i}"
+    # Max_04 "{i}( Да, закрою глаза, когда тут такое... как же!\nУх! А, сестрёнка хороша... Местами даже очень... ){/i}"
+    Max_04 "{i}( Yeah, like I'm going to close my eyes in this situation...\nWow! My sister is all grown up... everywhere... ){/i}"
 
-# game/dialogues/lisatalk.rpy:1111
-translate english gift_swimsuit_swimsuit_show_b1cd9ad3:
+# game/dialogues/lisatalk.rpy:1615
+translate english gift_swimsuit_swimsuit_show_82fb1fd8:
 
-    # Max_08 "{i}Вот это вид, я понимаю! Главное, чтобы штаны меня не выдали...{/i}"
-    Max_08 "{i}Now this is a nice sight! I hope she won't notice a bulge in my pants...{/i}"
+    # Max_08 "{i}( Вот это вид, я понимаю! Главное, чтобы штаны меня не выдали... ){/i}"
+    Max_08 "{i}( Now this is a nice sight! I hope she won't notice a bulge in my pants... ){/i}"
 
 # game/dialogues/lisatalk.rpy:1113
 translate english gift_swimsuit_swimsuit_show_2a88dea8:
@@ -3080,10 +3080,10 @@ translate english gift_swimsuit_swimsuit_show_62e397b6:
     # Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
     Lisa_05 "It's not like I wanted to...Honestly, I didn't think you could buy it, but... But I think you deserve it..."
 
-# game/dialogues/lisatalk.rpy:1142
-translate english gift_swimsuit_swimsuit_show_dda42a93:
+# game/dialogues/lisatalk.rpy:1637
+translate english gift_swimsuit_swimsuit_show_2b6e74c9:
 
-    # Max_06 "{i}Просто супер! Полуголая сестрёнка целует меня в щёку! Она слегка прижалась ко мне своей грудью и даже через одежду я чувствую, какая она у неё упругая...{/i}"
+    # Max_06 "{i}( Просто супер! Полуголая сестрёнка целует меня в щёку! Она слегка прижалась ко мне своей грудью и даже через одежду я чувствую, какая она у неё упругая... ){/i}"
     Max_06 "That's just great! My half-naked sister kissing me on the cheek! I can feel her breasts pressing up against me even through what little covering she has. I can feel how warm she is..."
 
 # game/dialogues/lisatalk.rpy:1144
@@ -3568,11 +3568,11 @@ translate english lisa_sorry_gifts_middle_ef6e48ab:
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t]I think you earned my forgiveness. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1503
-translate english lisa_sorry_gifts_middle_ab33ec2a:
+# game/dialogues/lisatalk.rpy:2095
+translate english lisa_sorry_gifts_middle_0385dd40:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1508
 translate english lisa_sorry_gifts_middle_1dc98000:
@@ -3754,11 +3754,11 @@ translate english lisa_sorry_gifts_middle_ef6e48ab_1:
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t]I think I can believe that. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1558
-translate english lisa_sorry_gifts_middle_ab33ec2a_1:
+# game/dialogues/lisatalk.rpy:2142
+translate english lisa_sorry_gifts_middle_0385dd40_1:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1563
 translate english lisa_sorry_gifts_middle_df035b43_2:
@@ -3898,11 +3898,11 @@ translate english lisa_sorry_gifts_middle_ef6e48ab_2:
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t]I think I can believe that. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1614
-translate english lisa_sorry_gifts_middle_ab33ec2a_2:
+# game/dialogues/lisatalk.rpy:2193
+translate english lisa_sorry_gifts_middle_0385dd40_2:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1619
 translate english lisa_sorry_gifts_middle_0559f620:
@@ -3964,11 +3964,11 @@ translate english lisa_sorry_gifts_middle_38f4c1c1:
     # Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t] Okay, I think you deserve it. Come here, let me give you a hug!"
 
-# game/dialogues/lisatalk.rpy:1648
-translate english lisa_sorry_gifts_middle_ab33ec2a_3:
+# game/dialogues/lisatalk.rpy:2222
+translate english lisa_sorry_gifts_middle_0385dd40_3:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1653
 translate english lisa_sorry_gifts_middle_0559f620_1:
@@ -4030,11 +4030,11 @@ translate english lisa_sorry_gifts_middle_ef6e48ab_3:
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t]I think I believe it. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1678
-translate english lisa_sorry_gifts_middle_ab33ec2a_4:
+# game/dialogues/lisatalk.rpy:2246
+translate english lisa_sorry_gifts_middle_0385dd40_4:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1683
 translate english lisa_sorry_gifts_middle_0559f620_2:
@@ -4096,11 +4096,11 @@ translate english lisa_sorry_gifts_middle_ef6e48ab_4:
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t]I think I believe it. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1709
-translate english lisa_sorry_gifts_middle_ab33ec2a_5:
+# game/dialogues/lisatalk.rpy:2271
+translate english lisa_sorry_gifts_middle_0385dd40_5:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1714
 translate english lisa_sorry_gifts_middle_0559f620_3:
@@ -4162,11 +4162,11 @@ translate english lisa_sorry_gifts_middle_ef6e48ab_5:
     # Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t]I Think this can be believed. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1740
-translate english lisa_sorry_gifts_middle_ab33ec2a_6:
+# game/dialogues/lisatalk.rpy:2296
+translate english lisa_sorry_gifts_middle_0385dd40_6:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Nice! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Nice! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1745
 translate english lisa_sorry_gifts_middle_0559f620_4:
@@ -4222,11 +4222,11 @@ translate english lisa_sorry_gifts_middle_93a99615:
     # Lisa_05 "В таком случае, иди сюда - дай я тебя обниму!"
     Lisa_05 "In that case, come here and let me give you a hug!"
 
-# game/dialogues/lisatalk.rpy:1767
-translate english lisa_sorry_gifts_middle_ab33ec2a_7:
+# game/dialogues/lisatalk.rpy:2316
+translate english lisa_sorry_gifts_middle_0385dd40_7:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1772
 translate english lisa_sorry_gifts_middle_0559f620_5:
@@ -4282,11 +4282,11 @@ translate english lisa_sorry_gifts_good_cbcbb24a:
     # Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"
     Lisa_05 "All right, all right, you don't have to go on, I believe you."
 
-# game/dialogues/lisatalk.rpy:1797
-translate english lisa_sorry_gifts_good_ab33ec2a:
+# game/dialogues/lisatalk.rpy:2339
+translate english lisa_sorry_gifts_good_0385dd40:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1802
 translate english lisa_sorry_gifts_good_938d39d5:
@@ -4330,11 +4330,11 @@ translate english lisa_sorry_gifts_good_cbcbb24a_1:
     # Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"
     Lisa_05 "All right, all right, you don't have to go on, I believe you."
 
-# game/dialogues/lisatalk.rpy:1819
-translate english lisa_sorry_gifts_good_ab33ec2a_1:
+# game/dialogues/lisatalk.rpy:2353
+translate english lisa_sorry_gifts_good_0385dd40_1:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1824
 translate english lisa_sorry_gifts_good_f39a352c:
@@ -4348,11 +4348,11 @@ translate english lisa_sorry_gifts_good_aae92047:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:1833
-translate english lisa_sorry_gifts_good_a77510fc:
+# game/dialogues/lisatalk.rpy:2362
+translate english lisa_sorry_gifts_good_e964b34a:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:1838
 translate english lisa_sorry_gifts_good_0559f620:
@@ -4408,11 +4408,11 @@ translate english lisa_sorry_gifts_good_cbcbb24a_2:
     # Lisa_05 "Ладно-ладно, можешь не продолжать, я тебе верю. Иди сюда - дай я тебя обниму!"
     Lisa_05 "All right, all right, you don't have to go on, I believe you."
 
-# game/dialogues/lisatalk.rpy:1859
-translate english lisa_sorry_gifts_good_ab33ec2a_2:
+# game/dialogues/lisatalk.rpy:2379
+translate english lisa_sorry_gifts_good_0385dd40_2:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1864
 translate english lisa_sorry_gifts_good_f39a352c_1:
@@ -4426,11 +4426,11 @@ translate english lisa_sorry_gifts_good_aae92047_1:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:1873
-translate english lisa_sorry_gifts_good_a77510fc_1:
+# game/dialogues/lisatalk.rpy:2388
+translate english lisa_sorry_gifts_good_e964b34a_1:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:1878
 translate english lisa_sorry_gifts_good_0559f620_1:
@@ -4504,11 +4504,11 @@ translate english lisa_sorry_gifts_good_eeff752d:
     # Lisa_03 "Я хочу крепкие обнимашки! Вот такие..."
     Lisa_03 "I want a big hug! Like this..."
 
-# game/dialogues/lisatalk.rpy:1908
-translate english lisa_sorry_gifts_good_c5bcc6f6:
+# game/dialogues/lisatalk.rpy:2412
+translate english lisa_sorry_gifts_good_f3144533:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:1913
 translate english lisa_sorry_gifts_good_f39a352c_2:
@@ -4522,11 +4522,11 @@ translate english lisa_sorry_gifts_good_aae92047_2:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:1922
-translate english lisa_sorry_gifts_good_a77510fc_2:
+# game/dialogues/lisatalk.rpy:2421
+translate english lisa_sorry_gifts_good_e964b34a_2:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:1927
 translate english lisa_sorry_gifts_good_0559f620_2:
@@ -4648,11 +4648,11 @@ translate english lisa_sorry_gifts_good_38f4c1c1:
     # Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"
     Lisa_05 "[succes!t] Okay, you probably deserve it. Come here and let me hug you!"
 
-# game/dialogues/lisatalk.rpy:1970
-translate english lisa_sorry_gifts_good_ab33ec2a_3:
+# game/dialogues/lisatalk.rpy:2461
+translate english lisa_sorry_gifts_good_0385dd40_3:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1975
 translate english lisa_sorry_gifts_good_0559f620_3:
@@ -4708,11 +4708,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:1997
-translate english lisa_sorry_gifts_good_c5bcc6f6_1:
+# game/dialogues/lisatalk.rpy:2481
+translate english lisa_sorry_gifts_good_f3144533_1:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2002
 translate english lisa_sorry_gifts_good_0559f620_4:
@@ -4768,11 +4768,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_1:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2020
-translate english lisa_sorry_gifts_good_c5bcc6f6_2:
+# game/dialogues/lisatalk.rpy:2497
+translate english lisa_sorry_gifts_good_f3144533_2:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2025
 translate english lisa_sorry_gifts_good_f39a352c_3:
@@ -4786,11 +4786,11 @@ translate english lisa_sorry_gifts_good_aae92047_3:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:2034
-translate english lisa_sorry_gifts_good_a77510fc_3:
+# game/dialogues/lisatalk.rpy:2506
+translate english lisa_sorry_gifts_good_e964b34a_3:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2039
 translate english lisa_sorry_gifts_good_0559f620_5:
@@ -4846,11 +4846,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_2:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2061
-translate english lisa_sorry_gifts_good_c5bcc6f6_3:
+# game/dialogues/lisatalk.rpy:2526
+translate english lisa_sorry_gifts_good_f3144533_3:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2066
 translate english lisa_sorry_gifts_good_0559f620_6:
@@ -4906,11 +4906,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_3:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2084
-translate english lisa_sorry_gifts_good_c5bcc6f6_4:
+# game/dialogues/lisatalk.rpy:2542
+translate english lisa_sorry_gifts_good_f3144533_4:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2089
 translate english lisa_sorry_gifts_good_f39a352c_4:
@@ -4924,11 +4924,11 @@ translate english lisa_sorry_gifts_good_aae92047_4:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:2098
-translate english lisa_sorry_gifts_good_a77510fc_4:
+# game/dialogues/lisatalk.rpy:2551
+translate english lisa_sorry_gifts_good_e964b34a_4:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2103
 translate english lisa_sorry_gifts_good_0559f620_7:
@@ -4984,11 +4984,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_4:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2125
-translate english lisa_sorry_gifts_good_c5bcc6f6_5:
+# game/dialogues/lisatalk.rpy:2571
+translate english lisa_sorry_gifts_good_f3144533_5:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2130
 translate english lisa_sorry_gifts_good_f39a352c_5:
@@ -5002,11 +5002,11 @@ translate english lisa_sorry_gifts_good_aae92047_5:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:2139
-translate english lisa_sorry_gifts_good_a77510fc_5:
+# game/dialogues/lisatalk.rpy:2580
+translate english lisa_sorry_gifts_good_e964b34a_5:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2144
 translate english lisa_sorry_gifts_good_0559f620_8:
@@ -5062,11 +5062,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_5:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2166
-translate english lisa_sorry_gifts_good_c5bcc6f6_6:
+# game/dialogues/lisatalk.rpy:2600
+translate english lisa_sorry_gifts_good_f3144533_6:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2171
 translate english lisa_sorry_gifts_good_f39a352c_6:
@@ -5080,11 +5080,11 @@ translate english lisa_sorry_gifts_good_aae92047_6:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:2180
-translate english lisa_sorry_gifts_good_a77510fc_6:
+# game/dialogues/lisatalk.rpy:2609
+translate english lisa_sorry_gifts_good_e964b34a_6:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2185
 translate english lisa_sorry_gifts_good_0559f620_9:
@@ -5140,11 +5140,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_6:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2207
-translate english lisa_sorry_gifts_good_c5bcc6f6_7:
+# game/dialogues/lisatalk.rpy:2629
+translate english lisa_sorry_gifts_good_f3144533_7:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2212
 translate english lisa_sorry_gifts_good_f39a352c_7:
@@ -5158,11 +5158,11 @@ translate english lisa_sorry_gifts_good_aae92047_7:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:2221
-translate english lisa_sorry_gifts_good_a77510fc_7:
+# game/dialogues/lisatalk.rpy:2638
+translate english lisa_sorry_gifts_good_e964b34a_7:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2226
 translate english lisa_sorry_gifts_good_0559f620_10:
@@ -5224,11 +5224,11 @@ translate english lisa_sorry_gifts_good_4b7ec1a8_7:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come here..."
 
-# game/dialogues/lisatalk.rpy:2251
-translate english lisa_sorry_gifts_good_c5bcc6f6_8:
+# game/dialogues/lisatalk.rpy:2661
+translate english lisa_sorry_gifts_good_f3144533_8:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It feels good when she presses her breasts up against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2257
 translate english lisa_sorry_gifts_good_f39a352c_8:
@@ -5242,11 +5242,11 @@ translate english lisa_sorry_gifts_good_aae92047_8:
     # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
     Lisa_05 "[succes!t]So be it, this kiss is well deserved!"
 
-# game/dialogues/lisatalk.rpy:2266
-translate english lisa_sorry_gifts_good_a77510fc_8:
+# game/dialogues/lisatalk.rpy:2671
+translate english lisa_sorry_gifts_good_e964b34a_8:
 
-    # Max_05 "{i}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/i}"
-    Max_05 "{i}Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister!{/i}"
+    # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
+    Max_05 "{i}( Wow! Not only did I get out of trouble for peeping, but I also earned a tender kiss from my sister! ){/i}"
 
 # game/dialogues/lisatalk.rpy:2271
 translate english lisa_sorry_gifts_good_0559f620_11:
@@ -5278,11 +5278,11 @@ translate english lisa_sorry_gifts_good_5dd722ed:
     # Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"
     Lisa_05 "And I think you deserve a lot more than just a hug! Here's a kiss!"
 
-# game/dialogues/lisatalk.rpy:2286
-translate english lisa_sorry_gifts_good_3bf1b2fc:
+# game/dialogues/lisatalk.rpy:2686
+translate english lisa_sorry_gifts_good_72637a7c:
 
-    # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-    Max_05 "{i}Oh... Kisses from my little sister - a dream come true! It feels so good when she snuggles up to me... {/i}"
+    # Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне... ){/i}"
+    Max_05 "{i}( Oh... Kisses from my little sister - a dream come true! It feels so good when she snuggles up to me... ){/i}"
 
 # game/dialogues/lisatalk.rpy:2291
 translate english lisa_sorry_gifts_good_0559f620_12:
@@ -5438,11 +5438,11 @@ translate english gift_bathrobe_ee480478:
     # Lisa_02 "Макс, давай обниматься! Лови меня..."
     Lisa_02 "Max, let's hug! Catch me..."
 
-# game/dialogues/lisatalk.rpy:1253
-translate english gift_bathrobe_b7706200:
+# game/dialogues/lisatalk.rpy:1688
+translate english gift_bathrobe_4c4b7366:
 
-    # Max_05 "{i}Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается.{/i}"
-    Max_05 "{i}Wow! Lisa jumped on me! That's a pleasant surprise. She's more acrobatic than I thought, and holding on very tightly...{/i}"
+    # Max_05 "{i}( Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается. ){/i}"
+    Max_05 "{i}( Wow! Lisa jumped on me! That's a pleasant surprise. She's more acrobatic than I thought, and holding on very tightly... ){/i}"
 
 # game/dialogues/lisatalk.rpy:1258
 translate english gift_bathrobe_22c11adb:
@@ -5462,11 +5462,11 @@ translate english gift_bathrobe_4b7ec1a8:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come to me..."
 
-# game/dialogues/lisatalk.rpy:1273
-translate english gift_bathrobe_c5bcc6f6:
+# game/dialogues/lisatalk.rpy:1709
+translate english gift_bathrobe_f3144533:
 
-    # Max_03 "{i}Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью!{/i}"
-    Max_03 "{i}Wow! Lisa practically threw her arms around me... It's so nice to feel her breasts pressing against me!{/i}"
+    # Max_03 "{i}( Вот это да! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 "{i}( Wow! Lisa practically threw her arms around me... It's so nice to feel her breasts pressing against me! ){/i}"
 
 # game/dialogues/lisatalk.rpy:1278
 translate english gift_bathrobe_5dd722ed:
@@ -5474,11 +5474,11 @@ translate english gift_bathrobe_5dd722ed:
     # Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"
     Lisa_05 "And I think you deserve a lot more than just a hug! A kiss awaits you!"
 
-# game/dialogues/lisatalk.rpy:1279
-translate english gift_bathrobe_3bf1b2fc:
+# game/dialogues/lisatalk.rpy:1715
+translate english gift_bathrobe_72637a7c:
 
-    # Max_05 "{i}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/i}"
-    Max_05 "{i}Oh... Kisses from my little sister - it's a fairy tale! And how nice it is when she snuggles up to me... {/i}"
+    # Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне... ){/i}"
+    Max_05 "{i}( Oh... Kisses from my little sister - it's a fairy tale! And how nice it is when she snuggles up to me... ){/i}"
 
 # game/dialogues/lisatalk.rpy:1284
 translate english gift_bathrobe_0559f620:
@@ -5504,11 +5504,11 @@ translate english gift_bathrobe_4b7ec1a8_1:
     # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
     Lisa_03 "I want a big hug! Come to me..."
 
-# game/dialogues/lisatalk.rpy:1295
-translate english gift_bathrobe_ab33ec2a:
+# game/dialogues/lisatalk.rpy:1733
+translate english gift_bathrobe_0385dd40:
 
-    # Max_05 "{i}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/i}"
-    Max_05 "{i}Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better?{/i}"
+    # Max_05 "{i}( Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим? ){/i}"
+    Max_05 "{i}( Great! Lisa wants a hug... Who would have thought that spying on her in the shower would turn out any better? ){/i}"
 
 # game/dialogues/lisatalk.rpy:1300
 translate english gift_bathrobe_0559f620_1:
@@ -6197,11 +6197,11 @@ translate english Lisa_HomeWork_first_foot_mass_88404510:
     # Lisa_01 "Тогда делай то, от чего у Алисы был такой блаженный вид! А я пока уроками займусь..." nointeract
     Lisa_01 "I want to see how you impressed Alice! In the meantime, I'm gonna do my homework..." nointeract
 
-# game/dialogues/lisatalk.rpy:1217
-translate english Lisa_HomeWork_first_foot_mass_367ef0a6:
+# game/dialogues/lisatalk.rpy:1228
+translate english Lisa_HomeWork_first_foot_mass_cd563352:
 
-    # Max_04 "{i}Какие у Лизы красивые ножки. А как классно к ним прикасаться...{/i}" nointeract
-    Max_04 "{i}Lisa has beautiful legs. They're so smooth to touch...{/i}" nointeract
+    # Max_04 "{i}( Какие у Лизы красивые ножки. А как классно к ним прикасаться... ){/i}" nointeract
+    Max_04 "{i}( Lisa has beautiful legs. They're so smooth to touch... ){/i}" nointeract
 
 # game/dialogues/lisatalk.rpy:1221
 translate english Lisa_HomeWork_first_foot_mass_d025901e:
@@ -6287,11 +6287,11 @@ translate english Lisa_HomeWork_next_foot_mass_a46698a5:
     # Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась." nointeract
     Lisa_02 "Let me think about it... Sure, yeah! " nointeract
 
-# game/dialogues/lisatalk.rpy:1264
-translate english Lisa_HomeWork_next_foot_mass_391645db:
+# game/dialogues/lisatalk.rpy:1277
+translate english Lisa_HomeWork_next_foot_mass_ed5b89f2:
 
-    # Max_04 "{i}А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки...{/i}" nointeract
-    Max_04 "{i}Lisa loves what I'm doing. She won't really admit it, but it shows. I like her slender legs... {/i}" nointeract
+    # Max_04 "{i}( А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки... ){/i}" nointeract
+    Max_04 "{i}( Lisa loves what I'm doing. She won't really admit it, but it shows. I like her slender legs... ){/i}" nointeract
 
 # game/dialogues/lisatalk.rpy:1268
 translate english Lisa_HomeWork_next_foot_mass_20bec9f8:
@@ -6641,4 +6641,3 @@ translate english liza_hand_mass_c5e66269:
 
     # Lisa_02 "Хватит языком молоть, вот научишься целоваться с невыдуманными девушками, тогда и поговорим. А массаж у тебя получается здорово! Даже не хочется, чтобы это заканчивалось..."
     Lisa_02 "How about you learn how to make out with non-fictional girls, then we'll talk. Ohhhh, this massage is great!"
-

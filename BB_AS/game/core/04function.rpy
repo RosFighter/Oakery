@@ -181,6 +181,52 @@ init python:
         return renpy.random.randint(0, 1000) < chance
 
 
+    def Skill(skill, rise, limit=1000):
+        global mgg, notify_list
+        if skill in ['hide', 'soc', 'mass', 'kiss', 'ero', 'train']:
+            skil_name = {'hide':'stealth', 'soc':'social', 'mass':'massage', 'ero':'ero_massage', 'kiss':'kissing', 'train':'training'}[skill]
+        else:
+            skil_name = skill
+        start_skill = eval('mgg.'+skil_name)
+
+        if skill in ['stealth', 'hide']:
+            mgg.stealth = mgg.stealth + rise if mgg.stealth + rise <= limit else (limit if limit > mgg.stealth else mgg.stealth)
+            if mgg.stealth > start_skill:
+                notify_list.append(_("+ к навыку скрытности"))
+        elif skill in ['social', 'soc']:
+            mgg.social = mgg.social + rise if mgg.social + rise <= limit else (limit if limit > mgg.social else mgg.social)
+            if mgg.social > start_skill:
+                notify_list.append(_("+ к навыку убеждения"))
+        elif skill in ['massage', 'mass']:
+            mgg.massage = mgg.massage + rise if mgg.massage + rise <= limit else (limit if limit > mgg.massage else mgg.massage)
+            if mgg.massage > start_skill:
+                notify_list.append(_("+ к навыку массажа"))
+        elif skill in ['kissing', 'kiss']:
+            mgg.kissing = mgg.kissing + rise if mgg.kissing + rise <= limit else (limit if limit > mgg.kissing else mgg.kissing)
+            if mgg.kissing > start_skill:
+                notify_list.append(_("+ к навыку поцелуев"))
+        elif skill in ['ero_massage', 'ero']:
+            mgg.ero_massage = mgg.ero_massage + rise if mgg.ero_massage + rise <= limit else (limit if limit > mgg.ero_massage else mgg.ero_massage)
+            if mgg.ero_massage > start_skill:
+                notify_list.append(_("+ к навыку эротического массажа"))
+        elif skill in ['training', 'train']:
+            mgg.training = mgg.training + rise if mgg.training + rise <= limit else (limit if limit > mgg.training else mgg.training)
+            if mgg.training > start_skill:
+                notify_list.append(_("+ к тренированности"))
+        elif skill == 'cuni':
+            mgg.cuni = mgg.cuni + rise if mgg.cuni + rise <= limit else (limit if limit > mgg.cuni else mgg.cuni)
+            if mgg.cuni > start_skill:
+                notify_list.append(_("+ к навыку кунилингуса"))
+        elif skill == 'sex':
+            mgg.sex = mgg.sex + rise if mgg.sex + rise <= limit else (limit if limit > mgg.sex else mgg.sex)
+            if mgg.sex > start_skill:
+                notify_list.append(_("+ к сексуальному опыту"))
+        elif skill == 'anal':
+            mgg.anal = mgg.anal + rise if mgg.anal + rise <= limit else (limit if limit > mgg.anal else mgg.anal)
+            if mgg.anal > start_skill:
+                notify_list.append(_("+ к опыту анального секса"))
+
+
     def NewSaveName(): # дополнение имени сохранения
         global save_name
         save_name = ('' + '$@' + str(weekdays[GetWeekday(day)][0]) +
@@ -250,6 +296,8 @@ init python:
             StrDev = "Так... В накладной написано следующее:"
         elif _preferences.language == "english":
             StrDev = "So... In the consignment note says the following:"
+        else:
+            StrDev = "..."
 
         n = 0
         for i in delivery_list[courier]:
@@ -727,7 +775,7 @@ init python:
 
 
     def clip(x, a, b): # вписывает число x в диапазон между a и b
-        return a if x < a else(b if x > b else x)
+        return a if x < a else (b if x > b else x)
 
 
     def clip_time(x, a='06:00', b='08:00'):

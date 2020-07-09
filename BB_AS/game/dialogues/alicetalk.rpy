@@ -309,10 +309,10 @@ label alice_talk_tv:
     menu:
         Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."
         "Ну, давай смотреть всё подряд...":
-            Max_11 "{i}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/i}"
+            Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
             Max_00 "Ладно, пойду я..."
             jump .end
-        "Тебе сделать массаж ног?" if all([not talk_var['al.tv.mas'], online_cources[1].cources[0].less > 0]):
+        "Тебе сделать массаж ног?" if all([not talk_var['al.tv.mas'], (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):
             $ renpy.show("Max tv-closer 04"+mgg.dress)
 
     $ talk_var['al.tv.mas'] = 1
@@ -345,14 +345,14 @@ label alice_talk_tv:
                 jump .choco
 
     if not RandomChance(_ch4.ch): ###Убеждение не удалось
+        $ Skill('social', 0.05)
         Alice_02 "[failed!t]Нет, Макс, в другой раз. Что-то я сомневаюсь. Вдруг, ты мне что-то сломаешь... Нет, спасибо."
         Max_08 "Ну, как хочешь... Не буду тебе мешать..."
-        $ mgg.social += 0.05
         jump .end
 
     ### Убеждение удалось
     $ _drink = 0
-    $ mgg.social += 0.1
+    $ Skill('social', 0.1)
     menu:
         Alice_03 "[succes!t]Ну, давай. Только я очень привередлива в вопросах массажа. Если сделаешь что-то не так, сразу закончим."
         "Хорошо {i}(начать массаж){/i}":
@@ -388,14 +388,14 @@ label alice_talk_tv:
                 if kol_choco == 0:
                     $ items['choco'].InShop = True
                     $ notify_list.append(_("Конфеты закончились"))
-                $ mgg.social += 0.1
+                $ Skill('social', 0.1)
                 menu:   ### Убеждение удалось
                     Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... Вкусно... Теперь я готова, начинай массаж!"
                     "Ну, хорошо {i}(начать массаж){/i}":
                         jump .massage
             else:
                 $ dcv['tvchoco'].set_lost(2)
-                $ mgg.social += 0.05
+                $ Skill('social', 0.05)
                 $ _drink = 0
                 menu:   ###Убеждение не удалось
                     Alice_01 "[failed!t]Нет, Макс. Спасибо, конечно, но рисковать я не буду. Ну так что, массаж делать будешь или забыл, что собирался?"
@@ -412,11 +412,11 @@ label alice_talk_tv:
         scene BG char Alice tv-mass-01
         $ renpy.show('Alice tv-mass ' + _pose + _dress)
         menu:
-            Max_03 "{i}Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает?{/i}"
+            Max_03 "{i}( Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает? ){/i}"
             "{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}":
                 pass
         if RandomChance(_ch20.ch):  ### {i}Алисе понравился массаж!{/i}
-            $ mgg.massage += 0.1
+            $ Skill('massage', 0.1)
             $ _ch2 = GetChance(mgg.social, 2)
             $ flags['alice.tv.mass'] += 1
             $ _can_double_choko = kol_choco>0
@@ -426,7 +426,7 @@ label alice_talk_tv:
             Alice_04 "[alice_good_mass!t]А ты неплох сегодня в этом деле... Хорошо, что ты никакой не работяга. Руки у тебя нежные. Приятно очень..." nointeract
             jump .choice_mass
         else:
-            $ mgg.massage += 0.05
+            $ Skill('massage', 0.05)
             menu: ### {i}Алисе не понравился массаж!{/i}
                 Alice_12 "[alice_bad_mass!t]Ой, Макс, больно! Не надо так. Ты чуть лодыжку не вывихнул мне... Иди ещё потренируйся там на кошках или в ютубе поучись!"
                 "{i}закончить{/i}":
@@ -454,7 +454,7 @@ label alice_talk_tv:
                 if kol_choco == 0:
                     $ items['choco'].InShop = True
                     $ notify_list.append(_("Конфеты закончились"))
-                $ mgg.social += 0.1
+                $ Skill('social', 0.1)
                 Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
                 Max_01 "Может, тогда тебе стоит снять джинсы? Не будет так жарко..."
                 Alice_04 "Только давай ты снимешь их с меня сам, а то я уже так расслабилась, что двигаться не хочется."
@@ -492,7 +492,7 @@ label alice_talk_tv:
             if RandomChance(_ch2.ch):
                 jump .jeans
             else:
-                $ mgg.social += 0.05
+                $ Skill('social', 0.05)
                 menu:   ### Убеждение не удалось!
                     Alice_05 "[failed!t]Это так ты к девушкам подкатываешь, сразу предлагаешь снять штаны?"
                     "Э... Я к тебе не подкатываю. Просто, жарко же...":
@@ -515,7 +515,7 @@ label alice_talk_tv:
 
 
     label .jeans:
-        $ mgg.social += 0.1
+        $ Skill('social', 0.1)
         ### Убеждение снять джинсы удалось
         if 'smoke' in talk_var and flags['smoke'] == 'nopants':  # Алиса сейчас без трусиков
             menu:   ### Убеждение удалось, но Алиса без трусов
@@ -530,7 +530,7 @@ label alice_talk_tv:
                     jump .end
         else:
             Alice_04 "[succes!t]Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
-            Max_07 "{i}Ого...{/i}"
+            Max_07 "{i}( Ого... ){/i}"
             ### Алиса без джинсов
             $ _dress = mgg.dress+'c'
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -558,7 +558,7 @@ label alice_talk_tv:
 
     label .massage_next:
         if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==2): ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
-            $ mgg.massage += 0.1
+            $ Skill('massage', 0.1)
             $ _pose = {'03':'05', '04':'06'}[_pose]
             scene BG char Alice tv-mass-05
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -585,13 +585,13 @@ label alice_talk_tv:
                             pass
 
         elif RandomChance(_ch15.ch) and not _drink: ### {i}Алисе понравился массаж!{/i} конфету Алиса не ела
-            $ mgg.massage += 0.1
+            $ Skill('massage', 0.1)
             Alice_03 "Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
             Max_04 "Не за что..."
             jump .end
 
         else: ### {i}Алисе не понравился массаж!{/i}
-            $ mgg.massage += 0.05
+            $ Skill('massage', 0.05)
             Alice_13 "[alice_bad_mass!t]Ой, нет, что-то не то. Ты же так хорошо начал, и что-то неприятно стало... Иди, ещё поучись этому своему массажу на ютубе. Так не пойдёт..."
             Max_00 "Ладно..."
             jump .end
@@ -937,10 +937,10 @@ label smoke_fear:
                 Alice_06 "Лучше попроси что-то другое..."
                 "Нет. Или получаешь вечером по заднице или не одеваешь джинсы. {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
                     if RandomChance(_ch2.ch):
+                        $ Skill('social', 0.2)
                         menu:
                             Alice_03 "[succes!t]Хорошо. Не буду я одевать джинсы, только дай уже покурить спокойно!"
                             "Конечно!":
-                                $ mgg.social += 0.2
                                 $ punalice[0][0] = 7
                                 $ flags['smoke.request'] = "nojeans"
                                 $ flags['smoke'] = "nojeans"
@@ -961,7 +961,7 @@ label smoke_fear:
         #     if RandomChance(_ch1.ch):
         #         $ punalice[0][0] = 3
         #     else:
-        #         $ mgg.social += 0.1
+        #         $ Skill('social', 0.1)
         #         jump .fail
         "Ты знаешь, я сегодня добрый...":
             $ punalice[0][0] = 1
@@ -980,9 +980,9 @@ label smoke_fear:
 
     label .smoke_toples:
         if RandomChance(_ch3.ch):
+            $ Skill('social', 0.2)
             Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
             Max_03 "Само собой!"
-            $ mgg.social += 0.2
             $ punalice[0][0] = 4
             $ flags['smoke.request'] = "toples"
             menu:
@@ -994,11 +994,11 @@ label smoke_fear:
 
     label .sleep_toples:
         if RandomChance(_ch3.ch):
+            $ Skill('social', 0.2)
             Alice_03 "[succes!t]Да я вообще-то и так без лифчика все время хожу, только когда сплю одеваю..."
             Max_01 "Значит, тогда просто спи без него."
             Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
             Max_04 "Вот и отлично!"
-            $ mgg.social += 0.2
             $ punalice[0][0] = 5
             $ flags['smoke.request'] = "sleep"
             $ flags['smoke'] = 'sleep'
@@ -1012,9 +1012,9 @@ label smoke_fear:
 
     label .nopants:
         if RandomChance(_ch4.ch):
+            $ Skill('social', 0.2)
             Alice_13 "[succes!t]Тебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
             Max_02 "Конечно!"
-            $ mgg.social += 0.2
             $ punalice[0][0] = 6
             $ flags['smoke.request'] = "nopants"
             $ flags['smoke'] = 'nopants'
@@ -1030,23 +1030,23 @@ label smoke_fear:
         if RandomChance(_ch8.ch):
             $ punalice[0][0] = 3
             $ spent_time += 10
-            $ mgg.social += 0.2
+            $ Skill('social', 0.2)
             $ _ch2 = GetChanceConvince(punalice, 2)
             $ flags['smoke.request'] = 'money'
             menu:
                 Alice_12 "[succes!t]Ладно, Макс, я дам тебе денег, но только $10, ок?"
                 "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
                     if RandomChance(_ch2.ch):
+                        $ Skill('social', 0.2)
                         Alice_13 "[succes!t]Чёрт с тобой, Макс. Совсем без денег оставить хочешь... Сейчас принесу..."
                         Max_03 "Я жду..."
                         $ mgg.ask(1)
-                        $ mgg.social += 0.2
                         $ AddRelMood('alice', 0, -50)
                     else:
                         Alice_16 "[failed!t]Макс, не наглей! Сейчас принесу $10. Жди..."
                         Max_04 "Ну ладно, я жду..."
                         $ mgg.ask(0)
-                        $ mgg.social += 0.1
+                        $ Skill('social', 0.1)
                         $ AddRelMood('alice', 0, -75)
                 "Хорошо, устроит и $10":
                     $ mgg.ask(0)
@@ -1061,7 +1061,7 @@ label smoke_fear:
     menu .fail:
         Alice_16 "[failed!t]Ага, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..."
         "{i}уйти{/i}":
-            $ mgg.social += 0.1
+            $ Skill('social', 0.1)
             $ flags['smoke'] = None
             $ flags['smoke.request'] = None
             $ punalice[0][0] = 2
@@ -1071,7 +1071,7 @@ label smoke_fear:
     menu .fail2:
         Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая."
         "{i}Ну, как скажешь...{/i}":
-            $ mgg.social += 0.1
+            $ Skill('social', 0.1)
             $ flags['smoke'] = None
             $ flags['smoke.request'] = None
             $ punalice[0][0] = 2
@@ -1481,6 +1481,7 @@ label gift_book:
         $ AttitudeChange('alice', 0.4)
         $ items['erobook_5'].have = False
         $ items['erobook_5'].InShop = False
+        $ dcv['secretbook'].stage = 6
         $ alice.gifts.append('erobook_5')
 
     $ spent_time += 10
@@ -1627,11 +1628,13 @@ label gift_pajamas:
             Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
             "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                 if RandomChance(_ch1.ch):
+                    $ Skill('social', 0.2)
                     Alice_03 "[succes!t]Ладно, поверю, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                     Max_07 "Что, вот так вот просто?!"
                     Alice_05 "Ну, ты обещал купить мне пижаму и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
                     Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                 else:
+                    $ Skill('social', 0.1)
                     Alice_05 "[failed!t]Ладно, поверю, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
                     call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_1
                     Max_12 "А-а-ай! Мне же больно, Алиса!"
@@ -1699,12 +1702,12 @@ label Alice_solar:
                 jump AfterWaiting
         "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and any([mgg.dress == 'a', kol_cream < 3]):
             if mgg.dress == 'a':  # Максу нужна одежда
-                Max_07 "{i}Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/i}"
+                Max_07 "{i}( Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче. ){/i}"
                 $ items['max-a'].InShop = True
                 jump AfterWaiting
 
             if kol_cream < 3:  # крема не хватит даже просто нанести
-                Max_07 "{i}Крем почти закончился. Нужно купить ещё.{/i}"
+                Max_07 "{i}( Крем почти закончился. Нужно купить ещё. ){/i}"
                 $ items['solar'].InShop = True
                 jump AfterWaiting
 
@@ -1726,10 +1729,10 @@ label Alice_solar:
             $ kol_cream -= 3
             scene BG char Alice sun-alone 05
             $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
-            Max_01 "{i}Так, хорошенько намажем эти стройные ножки...{/i}"
+            Max_01 "{i}( Так, хорошенько намажем эти стройные ножки... ){/i}"
             scene BG char Alice sun-alone 04
             $ renpy.show('Alice sun-alone 04'+_suf+mgg.dress)
-            Max_01 "{i}Теперь плечи и совсем немного шею...{/i}" nointeract
+            Max_01 "{i}( Теперь плечи и совсем немного шею... ){/i}" nointeract
             $ __res = renpy.display_menu([(_("{i}наносить крем молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
                 $ _talk_top = True
@@ -1738,8 +1741,8 @@ label Alice_solar:
             $ renpy.scene()
             $ renpy.show('BG char Alice sun-alone '+__r1)
             $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
-            Max_03 "{i}И закончим, хорошенько намазав всю её спину...{/i}"
-            $ mgg.massage += 0.005
+            Max_03 "{i}( И закончим, хорошенько намазав всю её спину... ){/i}"
+            $ Skill('massage', 0.005)
             if mgg.massage >= 0.01 and len(online_cources) == 1:
                 Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
                 Max_04 "Да не за что, обращайся!"
@@ -1748,7 +1751,7 @@ label Alice_solar:
                     show Alice sun-alone 01a
                 else:
                     show Alice sun-alone 01
-                Max_07 "{i}В чём-то Алиса права, поучиться этому, пожалуй, стоит.{/i}"
+                Max_07 "{i}( В чём-то Алиса права, поучиться этому, пожалуй, стоит. ){/i}"
                 $ online_cources.append(
                     OnLineCources(_("Массаж"), "massage", "bm", [
                         OnLineCource(_("Массаж ступней"), _("Это уникальная методика массажа с целью оказания оздоравливающего воздействия на организм. Она эффективна и в тоже время несложна в исполнении."), 3, 100, 2),
@@ -1764,15 +1767,15 @@ label Alice_solar:
             else:
                 show Alice sun-alone 01
             if kol_cream < 2:
-                Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
+                Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
                 if kol_cream == 0:
                     $ items['solar'].have = False
                     $ items['solar'].InShop = True
             elif kol_cream < 7:
-                Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
+                Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
                 $ items['solar'].InShop = True
             $ AddRelMood('alice', 5, 50)
-        "{i}сделать массаж с кремом{/i}" if kol_cream >= 7 and mgg.massage > 1:  # попытка сделать массаж с кремом
+        "{i}сделать массаж с кремом{/i}" if all([kol_cream >= 7, (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):  # попытка сделать массаж с кремом
             $ _massaged = []
             $ _talk_top = False
             $ SetCamsGrow(house[6], 160)
@@ -1823,25 +1826,25 @@ label massage_sunscreen:
     label .left_foot:
         scene BG char Alice sun-alone 06
         $ renpy.show('Alice sun-alone 06'+_suf+mgg.dress)
-        Max_01 "{i}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
+        Max_01 "{i}( Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку! ){/i}"
         scene BG char Alice sun-alone 07
         $ renpy.show('Alice sun-alone 07'+_suf+mgg.dress)
-        Max_03 "{i}А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
+        Max_03 "{i}( А теперь правую... Вот так. Да уж, глаз не оторвать, попка - что надо! ){/i}"
         jump .foot
 
     label .right_foot:
         scene BG char Alice sun-alone 07
         $ renpy.show('Alice sun-alone 07'+_suf+mgg.dress)
-        Max_01 "{i}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/i}"
+        Max_01 "{i}( Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку! ){/i}"
         scene BG char Alice sun-alone 06
         $ renpy.show('Alice sun-alone 06'+_suf+mgg.dress)
-        Max_03 "{i}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/i}"
+        Max_03 "{i}( А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо! ){/i}"
         jump .foot
 
     label .shin:
         scene BG char Alice sun-alone 05
         $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
-        Max_02 "{i}Помассируем эти стройные ножки, вот так...{/i}"
+        Max_02 "{i}( Помассируем эти стройные ножки, вот так... ){/i}"
         if 'shin' in _massaged:
             # голени уже массировались
             jump .double
@@ -1852,10 +1855,10 @@ label massage_sunscreen:
 
             if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
                 # Алисе понравилось
+                $ Skill('massage', 0.05)
                 Alice_07 "Ух, как приятно... Ты молодец, Макс! Моим ножкам это понравилось... Не останавливайся, продолжай..."
-                $ mgg.massage += 0.05
             else:
-                $ mgg.massage += 0.02
+                $ Skill('massage', 0.02)
                 jump .fail
         $ _massaged.append('shin')
         jump massage_sunscreen
@@ -1863,7 +1866,7 @@ label massage_sunscreen:
     # label .hips:
     #     # scene BG char Alice sun-alone 05
     #     # $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
-    #     Max_00 "{i}Помассируем бёдра...{/i}"
+    #     Max_00 "{i}( Помассируем бёдра... ){/i}"
     #     if 'hips' in _massaged:
     #         # бёдра уже массировались
     #         jump .double
@@ -1876,9 +1879,9 @@ label massage_sunscreen:
     #     if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
     #         # Алисе понравилось
     #         Alice_00 "А я и не знала, что твои руки могут быть одновременно сильными и нежными..."
-    #         $ mgg.massage += 0.05
+    #         $ Skill('massage', 0.05)
     #     else:
-    #         $ mgg.massage += 0.02
+    #         $ Skill('massage', 0.02)
     #         jump .fail
     #     $ _massaged.append('hips')
     #     jump massage_sunscreen
@@ -1886,7 +1889,7 @@ label massage_sunscreen:
     label .shoulders:
         scene BG char Alice sun-alone 04
         $ renpy.show('Alice sun-alone 04'+_suf+mgg.dress)
-        Max_04 "{i}Хорошенько разомнём плечи и немного шею...{/i}" nointeract
+        Max_04 "{i}( Хорошенько разомнём плечи и немного шею... ){/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([(_("{i}массировать молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
@@ -1906,7 +1909,7 @@ label massage_sunscreen:
             $ _massaged.append('shoulders')
             if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
                 # Алисе понравилось
-                $ mgg.massage += 0.05
+                $ Skill('massage', 0.05)
                 menu:
                     Alice_07 "Это так классно расслабляет... У тебя очень хорошо получается, Макс!"
                     "{i}продолжить{/i}":
@@ -1915,7 +1918,7 @@ label massage_sunscreen:
                         show FG sun-alone-04
                         jump .spider
             else:
-                $ mgg.massage += 0.02
+                $ Skill('massage', 0.02)
                 jump .fail
         jump massage_sunscreen
 
@@ -1924,7 +1927,7 @@ label massage_sunscreen:
         $ renpy.scene()
         $ renpy.show('BG char Alice sun-alone '+__r1)
         $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
-        Max_05 "{i}Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно.{/i}" nointeract
+        Max_05 "{i}( Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно. ){/i}" nointeract
         if not _talk_top:
             $ __res = renpy.display_menu([(_("{i}массировать молча{/i}"), 0), (_("А тебе нравится, что следы от лямок остаются?"), 1)])
             if __res > 0:
@@ -1944,7 +1947,7 @@ label massage_sunscreen:
             $ _massaged.append('spine')
             if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
                 # Алисе понравилось
-                $ mgg.massage += 0.05
+                $ Skill('massage', 0.05)
                 menu:
                     Alice_07 "Как приятно... Макс, ты делаешь успехи! Мне это нравится..."
                     "{i}продолжить{/i}":
@@ -1953,7 +1956,7 @@ label massage_sunscreen:
                         $ renpy.show("FG sun-alone-"+__r1)
                         jump .spider
             else:
-                $ mgg.massage += 0.02
+                $ Skill('massage', 0.02)
                 jump .fail
         jump massage_sunscreen
 
@@ -1969,10 +1972,10 @@ label massage_sunscreen:
             $ _multipler = 10 - len(_massaged) if len(_massaged) else 20  # множитель навыка. Если ступни первые, шанс удваивается
             if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
                 # Алисе понравилось
+                $ Skill('massage', 0.05)
                 Alice_07 "Ух, как же моим пяточкам приятно... Не останавливайся, продолжай..."
-                $ mgg.massage += 0.05
             else:
-                $ mgg.massage += 0.02
+                $ Skill('massage', 0.02)
                 jump .fail
         $ _massaged.append('foot')
         jump massage_sunscreen
@@ -1996,12 +1999,14 @@ label massage_sunscreen:
             Alice_06 "Нет, конечно. Но тебя я так радовать не собираюсь!"
             "Что, стесняешься? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                 if RandomChance(_ch1.ch):
+                    $ Skill('social', 0.1)
                     Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
                     Max_02 "Так держать, сестрёнка!"
                     $ talk_var['sun_oiled'] = 2
                     $ _suf = 'b'
                     $ SetCamsGrow(house[6], 200)
                 else:
+                    $ Skill('social', 0.05)
                     Alice_04 "[failed!t]Вот только на \"слабо\" меня брать не надо!"
                     Max_01 "Ладно, как скажешь..."
             "Ну, как хочешь...":
@@ -2082,12 +2087,12 @@ label massage_sunscreen:
             show Alice sun-alone 01
         $ spent_time += 10 + clip(int(round(5*len(_massaged), -1)), 0, 30)
         if kol_cream < 3 and mgg.massage < 2.0:
-            Max_10 "{i}Ну вот, крем закончился. Надо ещё купить.{/i}"
+            Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
             if kol_cream == 0:
                 $ items['solar'].have = False
                 $ items['solar'].InShop = True
         elif kol_cream < 7:
-            Max_08 "{i}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/i}"
+            Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
             $ items['solar'].InShop = True
 
         jump Waiting
@@ -2168,18 +2173,18 @@ label alice_sorry_gifts:
             Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
             "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                 if RandomChance(_ch1.ch):
+                    $ Skill('social', 0.2)
                     Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                     Max_14 "Ой! Я понял... Больше не буду!"
                     Alice_02 "Вот и молодец! Гуляй..."
                     $ flags['alice_hugs'] = 2
-                    $ mgg.social += 0.2
                 else:
+                    $ Skill('social', 0.1)
                     Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                     Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                     Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
                     Max_14 "Ой! Я понял... Больше не буду!"
                     Alice_02 "Вот и молодец! Гуляй..."
-                    $ mgg.social += 0.1
                     $ flags['alice_hugs'] = 1
                     $ punreason[1] = 1
         return
@@ -2214,6 +2219,7 @@ label alice_sorry_gifts:
         return
 
     label .you_deserve:
+        $ Skill('social', 0.2)
         Alice_04 "[succes!t]Ладно, Макс, пожалуй ты заслужил это своими подарками..."   #спрайт с обнимашками
         call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs_1
         Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
@@ -2222,17 +2228,16 @@ label alice_sorry_gifts:
         Alice_02 "Подглядывать за мной или дарить мне сладости?!"
         Max_02 "Второе, конечно!"
         Alice_05 "Ну да, конечно... Иди давай."
-        $ mgg.social += 0.2
         $ flags['alice_hugs'] = 4
         return
 
     label .what_bummer:
+        $ Skill('social', 0.1)
         Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
         Max_09 "Обнять меня или придушить?"
         Alice_07 "Зачем останавливаться на чём-то одном, Макс? Хи-хи..."
         Max_01 "Я тогда лучше пойду... погуляю."
         Alice_02 "Ну как хочешь..."
-        $ mgg.social += 0.1
         $ flags['alice_hugs'] = 3
         return
 
@@ -2271,6 +2276,7 @@ label alice_sorry_gifts:
                 Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?"
                 "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                     if RandomChance(_ch1.ch):
+                        $ Skill('social', 0.2)
                         Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                         Max_14 "Ой! Понял-понял, не буду! Больше не буду..."
                         Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
@@ -2278,8 +2284,8 @@ label alice_sorry_gifts:
                         Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
                         Max_11 "Ладно! Я учту, только отпусти..."
                         Alice_02 "Вот и правильно! Гуляй..."
-                        $ mgg.social += 0.2
                     else:
+                        $ Skill('social', 0.1)
                         Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                         Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                         Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
@@ -2287,7 +2293,6 @@ label alice_sorry_gifts:
                         Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
                         Max_11 "Ладно! Я учту, только отпусти..."
                         Alice_02 "Вот и правильно! Гуляй..."
-                        $ mgg.social += 0.1
                         $ punreason[1] = 1
 
         elif len(sorry_gifts['alice'].give) == 1:  ## второе вручение
@@ -2329,19 +2334,19 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
                             Max_11 "Взято на заметку, Алиса! Отпусти уже..."
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
                             Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                             $ punreason[1] = 1
 
         elif len(sorry_gifts['alice'].give) == 2:  ### третье вручение
@@ -2374,12 +2379,13 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
@@ -2387,7 +2393,6 @@ label alice_sorry_gifts:
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 1
                             $ punreason[1] = 1
-                            $ mgg.social += 0.1
 
             elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
                 call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again_1
@@ -2402,18 +2407,18 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                             $ flags['alice_hugs'] = 1
                             $ punreason[1] = 1
 
@@ -2436,12 +2441,13 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
@@ -2449,7 +2455,6 @@ label alice_sorry_gifts:
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 1
                             $ punreason[1] = 1
-                            $ mgg.social += 0.1
 
             else:  ### любимое, любимое, ненавистное
                 call alice_sorry_gifts.what_disgusting from _call_alice_sorry_gifts_what_disgusting_2
@@ -2490,6 +2495,7 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
@@ -2497,8 +2503,8 @@ label alice_sorry_gifts:
                             Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
                             Max_11 "Взято на заметку, Алиса! Отпусти уже..."
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
@@ -2506,7 +2512,6 @@ label alice_sorry_gifts:
                             Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
                             Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                             $ punreason[1] = 1
 
             elif sorry_gifts['alice'].give[0] == 2:  ## преемлемое, преемлемое
@@ -2519,6 +2524,7 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
@@ -2526,8 +2532,8 @@ label alice_sorry_gifts:
                             Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
                             Max_11 "Взято на заметку, Алиса! Отпусти уже..."
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
@@ -2535,7 +2541,6 @@ label alice_sorry_gifts:
                             Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
                             Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                             $ punreason[1] = 1
 
             else:  ## любимое, преемлемое
@@ -2592,13 +2597,14 @@ label alice_sorry_gifts:
                     Alice_04 "Видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?"
                     "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                             $ flags['alice_hugs'] = 3
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
                             call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_20
                             Max_12 "А-а-ай! Мне же больно, Алиса!"
@@ -2608,7 +2614,6 @@ label alice_sorry_gifts:
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.1
 
             elif sorry_gifts['alice'].give == [3, 1]:  ### любимое, ненавистное, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
@@ -2620,12 +2625,13 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
@@ -2633,7 +2639,6 @@ label alice_sorry_gifts:
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ punreason[1] = 1
                             $ flags['alice_hugs'] = 1
-                            $ mgg.social += 0.1
 
             elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, преемлемое
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
@@ -2647,13 +2652,14 @@ label alice_sorry_gifts:
                     Alice_04 "Видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?"
                     "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                             $ flags['alice_hugs'] = 3
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
                             call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_22
                             Max_12 "А-а-ай! Мне же больно, Алиса!"
@@ -2663,7 +2669,6 @@ label alice_sorry_gifts:
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.1
 
         $ sorry_gifts['alice'].give.append(2)
         jump .end
@@ -2682,12 +2687,13 @@ label alice_sorry_gifts:
                 Alice_04 "В таком случае, видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?"
                 "Именно на это я и надеюсь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                     if RandomChance(_ch1.ch):
+                        $ Skill('social', 0.2)
                         Alice_03 "[succes!t]Ладно, Макс, считай твои извинения приняты... Мама ничего не узнает, так что можешь дышать спокойно."
                         Max_07 "И даже без подвоха?!"
                         Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
                         Max_01 "О, я понял, сестрёнка! Не буду мешать..."
-                        $ mgg.social += 0.2
                     else:
+                        $ Skill('social', 0.1)
                         Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."   #спрайт с ушами
                         call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_23
                         Max_12 "А-а-ай! Алиса! Больно ведь!"
@@ -2696,7 +2702,6 @@ label alice_sorry_gifts:
                         Alice_05 "Ответ неправильный! Наверно, нужно сильнее потянуть..."
                         Max_14 "Ой! Понял-понял, не буду! Больше не буду..."
                         Alice_02 "Вот и правильно! Гуляй..."
-                        $ mgg.social += 0.1
             $ AddRelMood('alice', 0, 50)
 
         elif len(sorry_gifts['alice'].give) == 1:  ## дарим во второй раз
@@ -2728,12 +2733,13 @@ label alice_sorry_gifts:
                     Alice_04 "В таком случае, видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?"
                     "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
                             call alice_sorry_gifts.kick_ears from _call_alice_sorry_gifts_kick_ears_25
                             Max_12 "А-а-ай! Мне же больно, Алиса!"
@@ -2742,7 +2748,6 @@ label alice_sorry_gifts:
                             Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 50)
 
             else:  ## любимое, любимое
@@ -2753,17 +2758,17 @@ label alice_sorry_gifts:
                         Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                         "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                             if RandomChance(_ch1.ch):
+                                $ Skill('social', 0.2)
                                 Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                                 Max_07 "Что, вот так вот просто?!"
                                 Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Но, Макс, просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
                                 Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
-                                $ mgg.social += 0.2
                             else:
+                                $ Skill('social', 0.1)
                                 call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain
                                 Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
                                 Max_11 "Взято на заметку, Алиса! Отпусти уже..."
                                 Alice_02 "Вот и молодец! Гуляй..."
-                                $ mgg.social += 0.1
                     $ AddRelMood('alice', 0, 100)
                 else:    #если сладость большая
                     Alice_05 "В этот раз конфет даже больше, так что я не припоминаю, чтобы утром за мной кто-то подглядывал! Всё было в порядке..."
@@ -2788,18 +2793,18 @@ label alice_sorry_gifts:
                     Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
                     "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ flags['alice_hugs'] = 2
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                             Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
                             Alice_05 "Слишком уж долго до тебя доходило, что я больше всего люблю... Так что - не повезло тебе..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                             $ flags['alice_hugs'] = 1
                             $ punreason[1] = 1
 
@@ -2818,12 +2823,14 @@ label alice_sorry_gifts:
                     Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                     "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                             Max_07 "Что, вот так вот просто?!"
                             menu:
                                 Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. Я даже подумываю, а не обнять ли тебя, Макс? Ну так... совсем немного..."
                                 "Только если без последующего насилия... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                                     if RandomChance(_ch1.ch):
+                                        $ Skill('social', 0.2)
                                         Alice_04 "[succes!t]Пожалуй ты заслужил это своими подарками..."   #спрайт с обнимашками
                                         call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs_2
                                         Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
@@ -2833,20 +2840,18 @@ label alice_sorry_gifts:
                                         Max_02 "Второе, конечно!"
                                         Alice_05 "Ну да, конечно... Иди давай."
                                         $ flags['alice_hugs'] = 4
-                                        $ mgg.social += 0.2
                                     else:
+                                        $ Skill('social', 0.1)
                                         Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
                                         Max_09 "Обнять меня или придушить?"
                                         Alice_07 "Зачем останавливаться на чём-то одном, Макс? Хи-хи..."
                                         Max_01 "Я тогда лучше пойду... погуляю."
                                         Alice_02 "Ну как хочешь..."
                                         $ flags['alice_hugs'] = 3
-                                        $ mgg.social += 0.1
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_1
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 100)
 
             elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, любимое
@@ -2864,16 +2869,16 @@ label alice_sorry_gifts:
                     Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                     "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                             $ flags['alice_hugs'] = 3
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_2
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 50)
 
             elif sorry_gifts['alice'].give == [2, 3]:  ### преемлемое, любимое, любимое
@@ -2905,16 +2910,16 @@ label alice_sorry_gifts:
                     Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
                     "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
                             Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
                             $ flags['alice_hugs'] = 3
-                            $ mgg.social += 0.2
                         else:
+                            $ Skill('social', 0.1)
                             call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_3
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ mgg.social += 0.1
                 $ AddRelMood('alice', 0, 100)
 
             else:  ### любимое три раза

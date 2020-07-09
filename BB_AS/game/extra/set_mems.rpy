@@ -75,7 +75,7 @@ init python:
     def set_shoulders_mass():
         global my_scope
         tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
-        tl.dress = renpy.random.choice(['b', 'd']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
+        tl.dress = renpy.random.choice(['b', 'c', 'd']) if 'kira' in chars else renpy.random.choice(['b', 'c'])
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = renpy.random.choice(['b', 'c']) if 'kira' in chars else renpy.random.choice(['a', 'b'])
         my_scope = {
