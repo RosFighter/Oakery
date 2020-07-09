@@ -34,7 +34,7 @@ translate english kira_firsttalk_043877d2:
 translate english kira_firsttalk_58c6b494:
 
     # Kira_07 "Ну да, не сомневаюсь. Только что же с тобой будет? Макс, ты можешь смотреть мне в глаза или мы тебя потеряли?" nointeract
-    Kira_07 "Yeah, I'm sure. But will you be okay? Will you be able to took me in the eye or have we completely lost you?" nointeract
+    Kira_07 "Yeah, I'm sure. But will you be okay? Will you be able to took me in the eye or have I completely lost you?" nointeract
 
 # game/dialogues/kiratalk.rpy:45
 translate english kira_firsttalk_00e14e8d:
@@ -97,10 +97,10 @@ translate english kira_firsttalk_6e7aee99:
     Max_00 "Okay..."
 
 # game/dialogues/kiratalk.rpy:74
-translate english kira_firsttalk_dd3b44a4:
+translate english kira_firsttalk_2937ee66:
 
-    # Max_03 "{i}Расслабиться в душе? Легко. Особенно, когда рядом такая женщина. Ух! Я и не задумывался о своей тёте в этом плане никогда, но сейчас что-то изменилось... или во мне или в ней...{/i}" nointeract
-    Max_03 "{i}Relax in the shower? Easy. Especially with a woman like that around. Ugh! I've never thought about my Aunt like this, but something's changed... is it me, or is this her true nature?... {/i}" nointeract
+    # Max_03 "{i}( Расслабиться в душе? Легко. Особенно, когда рядом такая женщина. Ух! Я и не задумывался о своей тёте в этом плане никогда, но сейчас что-то изменилось... или во мне или в ней... ){/i}" nointeract
+    Max_03 "{i}( Relax in the shower? Easy. Especially with a woman like that around. Ugh! I've never thought about my Aunt like this, but something's changed... is it me, or is this her true nature?... ){/i}" nointeract
 
 # game/dialogues/kiratalk.rpy:77
 translate english kira_firsttalk_b89d504e:
@@ -276,17 +276,17 @@ translate english kira_talk2_6e7aee99:
     # Max_00 "Хорошо..."
     Max_00 "Okay..."
 
-# game/dialogues/kiratalk.rpy:145
-translate english kira_talk2_219400e5:
+# game/dialogues/kiratalk.rpy:146
+translate english kira_talk2_a2e870c1:
 
-    # Max_20 "{i}Вроде тётя Кира специально и не провоцирует, но меня к ней так тянет. Её горячее, почти обнажённое тело так и манит...{/i}" nointeract
-    Max_20 "{i}I don't think Aunt Kira is provoking me on purpose, but I'm totally drawn to her. Her almost naked body is so alluring...{/i}" nointeract
+    # Max_20 "{i}( Вроде тётя Кира специально и не провоцирует, но меня к ней так тянет. Её горячее, почти обнажённое тело так и манит... ){/i}" nointeract
+    Max_20 "{i}( I don't think Aunt Kira is provoking me on purpose, but I'm totally drawn to her. Her almost naked body is so alluring... ){/i}" nointeract
 
-# game/dialogues/kiratalk.rpy:149
-translate english kira_talk2_bc626e10:
+# game/dialogues/kiratalk.rpy:150
+translate english kira_talk2_36826af7:
 
-    # Max_07 "{i}О да... Надеюсь, она не поняла, что я сейчас делал, глядя на неё. Хотя, всё она понимает. Да ещё и видела меня, мой...{/i}"
-    Max_07 "{i}Oh Yes... I hope she didn't catch on to what I was doing. Although, she doesn't miss much. Yes, I think she saw me... my... {/i}"
+    # Max_07 "{i}( О да... Надеюсь, она не поняла, что я сейчас делал, глядя на неё. Хотя, всё она понимает. Да ещё и видела меня, мой... ){/i}"
+    Max_07 "{i}( Oh Yes... I hope she didn't catch on to what I was doing. Although, she doesn't miss much. Yes, I think she saw me... my... ){/i}"
 
 # game/dialogues/kiratalk.rpy:161
 translate english kira_talk3_744eb86a:
@@ -334,7 +334,7 @@ translate english kira_talk3_764e2abb:
 translate english kira_talk3_0000db15:
 
     # Kira_04 "Тогда, Макс, я тебе ещё больше сочувствую и теперь лучше тебя понимаю... Может быть, сменим тему?"
-    Kira_04 "Wow, I'm sorry to hear that. I feel like I understand your sitruation a lot better now. Shall we change the subject?"
+    Kira_04 "Wow, I'm sorry to hear that. I feel like I understand your situation a lot better now. Shall we change the subject?"
 
 # game/dialogues/kiratalk.rpy:173
 translate english kira_talk3_82324783:
@@ -606,4 +606,3 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:228
     old "Хорошо! А ты только этому учишь?"
     new "All right! Is that all you teach?"
-

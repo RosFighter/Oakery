@@ -259,18 +259,17 @@ translate english strings:
     old "{i}читать \"WEB STANDARDS\"{/i}"
     new "{i}read \"WEB STANDARDS\"{/i}"
 
-# TODO: Translation updated at 2020-01-17 16:49
-
 # game/events/max.rpy:4
 translate english StartDialog_069fda26:
 
     # Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
     Max_10 "I feel too tired to concentrate. It'd be nice to take a nap first..."
-# game/events/max.rpy:24
-translate english Sleep_679fe800:
 
-    # Max_00 "{i}Пожалуй, пора ложиться спать...{/i}" nointeract
-    Max_00 "{i}I think it's time for bed...{/i}" nointeract
+# game/events/max.rpy:33
+translate english Sleep_002afad6:
+
+    # Max_00 "{i}( Пожалуй, пора ложиться спать... ){/i}" nointeract
+    Max_00 "{i}( I think it's time for bed... ){/i}" nointeract
 
 # game/events/max.rpy:27
 translate english Sleep_dca71115:
@@ -278,11 +277,11 @@ translate english Sleep_dca71115:
     # Max_19 "Как же в этом доме хорошо..."
     Max_19 "It's so nice in this house..."
 
-# game/events/max.rpy:42
-translate english Wearied_524d41b7:
+# game/events/max.rpy:52
+translate english Wearied_6c64d774:
 
-    # Max_10 "{i}Моя голова уже совсем не соображает, нужно ложиться спать...{/i}" nointeract
-    Max_10 "{i}My head isn't even thinking straight anymore, I have to go to bed...{/i}" nointeract
+    # Max_10 "{i}( Моя голова уже совсем не соображает, нужно ложиться спать... ){/i}" nointeract
+    Max_10 "{i}( My head isn't even thinking straight anymore, I have to go to bed... ){/i}" nointeract
 
 # game/events/max.rpy:45
 translate english Wearied_dca71115:
@@ -290,11 +289,11 @@ translate english Wearied_dca71115:
     # Max_19 "Как же в этом доме хорошо..."
     Max_19 "It's so nice in this house..."
 
-# game/events/max.rpy:61
-translate english LittleEnergy_666a8086:
+# game/events/max.rpy:71
+translate english LittleEnergy_f3661dab:
 
-    # Max_10 "{i}Я слишком вымотался, нужно хоть немного вздремнуть...{/i}" nointeract
-    Max_10 "{i}I really need to take a nap...{/i}" nointeract
+    # Max_10 "{i}( Я слишком вымотался, нужно хоть немного вздремнуть... ){/i}" nointeract
+    Max_10 "{i}( I really need to take a nap... ){/i}" nointeract
 
 # game/events/max.rpy:68
 translate english LittleEnergy_dca71115:
@@ -308,11 +307,11 @@ translate english Nap_dca71115:
     # Max_19 "Как же в этом доме хорошо..."
     Max_19 "It's so nice in this house..."
 
-# game/events/max.rpy:113
-translate english Alarm_67a81b77:
+# game/events/max.rpy:123
+translate english Alarm_26005aa6:
 
-    # Max_00 "{i}В каком часу мне будет лучше проснуться?{/i}" nointeract
-    Max_00 "{i}What time should I wake up?{/i}" nointeract
+    # Max_00 "{i}( В каком часу мне будет лучше проснуться? ){/i}" nointeract
+    Max_00 "{i}( What time should I wake up? ){/i}" nointeract
 
 # game/events/max.rpy:124
 translate english Alarm_dca71115:
@@ -419,41 +418,41 @@ translate english InstallCam_d3b30600:
     # "{i}В следующих версиях...{/i}"
     "{i}In future versions...{/i}"
 
-# game/events/max.rpy:519
-translate english InstallCam_8bd385d9:
+# game/events/max.rpy:671
+translate english InstallCam_61508b1b:
 
-    # Max_04 "{i}В этой комнате столько всего может происходить... Думаю, зрителям понравится! Главное - спрятать все провода, чтобы Лиза не заметила новую микро-камеру...{/i}" nointeract
-    Max_04 "{i}A lot of stuff could happen in this room... I think the viewers will like it! I have to conceal all the wires, I can't have Lisa finding the new camera.{/i}" nointeract
+    # Max_04 "{i}( В этой комнате столько всего может происходить... Думаю, зрителям понравится! Главное - спрятать все провода, чтобы Лиза не заметила новую микро-камеру... ){/i}" nointeract
+    Max_04 "{i}( A lot of stuff could happen in this room... I think the viewers will like it! I have to conceal all the wires, I can't have Lisa finding the new camera. ){/i}" nointeract
 
-# game/events/max.rpy:525
-translate english InstallCam_d606b7b5:
+# game/events/max.rpy:677
+translate english InstallCam_a23c5b5d:
 
-    # Max_04 "{i}Пусть зрители посмотрят, чем Алиса занимается в своей комнате, когда её не видят... Я бы и сам был бы рад посмотреть, но пока такой функции у меня нет...{/i}" nointeract
-    Max_04 "{i}Now viewers will be able to see what Alice is doing in her room when no one's around. I'd love to see for myself, too bad I don't have the functionality yet.{/i}" nointeract
+    # Max_04 "{i}( Пусть зрители посмотрят, чем Алиса занимается в своей комнате, когда её не видят... Я бы и сам был бы рад посмотреть, но пока такой функции у меня нет... ){/i}" nointeract
+    Max_04 "{i}( Now viewers will be able to see what Alice is doing in her room when no one's around. I'd love to see for myself, too bad I don't have the functionality yet. ){/i}" nointeract
 
-# game/events/max.rpy:531
-translate english InstallCam_1f539018:
+# game/events/max.rpy:683
+translate english InstallCam_51cc3414:
 
-    # Max_04 "{i}Конечно, здесь редко происходят события. Зато, когда они происходят, то здесь такое... Думаю, зрители будут рады таким моментам...{/i}" nointeract
-    Max_04 "{i}This room doesn't see much action. But when something does happen, it's good. I think the viewers will enjoy it.{/i}" nointeract
+    # Max_04 "{i}( Конечно, здесь редко происходят события. Зато, когда они происходят, то здесь такое... Думаю, зрители будут рады таким моментам... ){/i}" nointeract
+    Max_04 "{i}( This room doesn't see much action. But when something does happen, it's good. I think the viewers will enjoy it. ){/i}" nointeract
 
-# game/events/max.rpy:537
-translate english InstallCam_9d2c076e:
+# game/events/max.rpy:696
+translate english InstallCam_5ff29a44:
 
-    # Max_04 "{i}Конечно, с точки зрения морали ставить камеру в ванной сомнительно. Однако, тут и так окно во всю стену. Так что, формально я лишь приоткрыл это окно...{/i}" nointeract
-    Max_04 "{i}Might be a bit amoral to put a camera in the bathroom, but it already has a huge window anyway. I'm just making this window even bigger.{/i}" nointeract
+    # Max_04 "{i}( Конечно, с точки зрения морали ставить камеру в ванной сомнительно. Однако, тут и так окно во всю стену. Так что, формально я лишь приоткрыл это окно... ){/i}" nointeract
+    Max_04 "{i}( Might be a bit amoral to put a camera in the bathroom, but it already has a huge window anyway. I'm just making this window even bigger. ){/i}" nointeract
 
-# game/events/max.rpy:549
-translate english InstallCam_2547a49f:
+# game/events/max.rpy:702
+translate english InstallCam_da778942:
 
-    # Max_04 "{i}Уж не знаю, будет ли какой-то толк от этой камеры... Тут так редко что-то происходит... Ну пусть будет. Раз уж взялся всё подключать...{/i}" nointeract
-    Max_04 "{i}I'm not sure if there's a point to put a camera in this room, not much action happens here. But if i'm putting cameras everywhere, I may as well install one here too.{/i}" nointeract
+    # Max_04 "{i}( Уж не знаю, будет ли какой-то толк от этой камеры... Тут так редко что-то происходит... Ну пусть будет. Раз уж взялся всё подключать... ){/i}" nointeract
+    Max_04 "{i}( I'm not sure if there's a point to put a camera in this room, not much action happens here. But if i'm putting cameras everywhere, I may as well install one here too. ){/i}" nointeract
 
 # game/events/max.rpy:555
 translate english InstallCam_29989486:
 
-    # Max_04 "{i}Бассейн... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
-    Max_04 "{i}The pool. As long as sun is up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
+    # Max_04 "{i}( Бассейн... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами... ){/i}" nointeract
+    Max_04 "{i}( The pool. As long as sun is up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing... ){/i}" nointeract
 
 # TODO: Translation updated at 2020-01-22 13:53
 
@@ -592,23 +591,23 @@ translate english about_spider_0e3e8b40:
     # Max_01 "Будем искать!"
     Max_01 "Let's look!"
 
-# game/events/max.rpy:651
-translate english InstallCam_8200bc5d:
+# game/events/max.rpy:709
+translate english InstallCam_87d6b203:
 
-    # Max_04 "{i}Вот теперь зрители смогут насладится всеми мокрыми и блестящими красотами, происходящими во дворе...{/i}" nointeract
-    Max_04 "{i}The audience will now be able to enjoy all the wet and shiny beauties in the yard...{/i}" nointeract
+    # Max_04 "{i}( Вот теперь зрители смогут насладится всеми мокрыми и блестящими красотами, происходящими во дворе... ){/i}" nointeract
+    Max_04 "{i}( The audience will now be able to enjoy all the wet and shiny beauties in the yard... ){/i}" nointeract
 
-# game/events/max.rpy:657
-translate english InstallCam_fc408e3e:
+# game/events/max.rpy:715
+translate english InstallCam_c1844184:
 
-    # Max_04 "{i}Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами...{/i}" nointeract
-    Max_04 "{i}Yard... As long as the suns up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing...{/i}" nointeract
+    # Max_04 "{i}( Двор... Тут почти всё время кто-то есть и что-то делает, пока светит солнце. Думаю, тут зрители будут зависать постоянно в надежде увидеть кого-то с голыми сиськами... ){/i}" nointeract
+    Max_04 "{i}( Yard... As long as the suns up, someone's probably here. I think the viewers will like this one, hoping to catch the girls sunbathing... ){/i}" nointeract
 
-# game/events/max.rpy:660
-translate english InstallCam_d9a1c7d0:
+# game/events/max.rpy:718
+translate english InstallCam_3a0ef02c:
 
-    # Max_09 "{i}Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает...{/i}"
-    Max_09 "{i}I guess because of the large area, I should install some cameras so the viewers can see every ass that comes in here...{/i}"
+    # Max_09 "{i}( Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает... ){/i}"
+    Max_09 "{i}( I guess because of the large area, I should install some cameras so the viewers can see every ass that comes in here... ){/i}"
 
 # game/events/max.rpy:673
 translate english SearchSpider_19279e48:
@@ -766,11 +765,11 @@ translate english HideSpider_dbcd96db:
     # Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
     Max_00 "Well, let's hope the spider won't run away before Alice goes to sleep"
 
-# game/events/max.rpy:738
-translate english ViewLesson_4bfad0d0:
+# game/events/max.rpy:796
+translate english ViewLesson_a3b4ee9d:
 
-    # Max_00 "{i}Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало...{/i}"
-    Max_00 "{i}These online courses are a good thing - you can learn everything without getting out of the house! It’s expensive, though{/i}"
+    # Max_00 "{i}( Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало... ){/i}"
+    Max_00 "{i}( These online courses are a good thing - you can learn everything without getting out of the house! It’s expensive, though ){/i}"
 
 translate english strings:
 
@@ -1052,8 +1051,8 @@ translate english SearchCigarettes_b89e2d47:
 
 # TODO: Translation updated at 2020-03-30 11:37
 
-# game/events/max.rpy:668
-translate english InstallCam_e958aece:
+# game/events/max.rpy:690
+translate english InstallCam_4055993b:
 
-    # Max_03 "{i}Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится!{/i}" nointeract
+    # Max_03 "{i}( Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится! ){/i}" nointeract
     Max_03 "Now there's no missing any of the action! The girls like to watch themselves front of the mirror, and Mom and Eric, as I noticed, try not to miss the chance to fuck in front of it... My audience is going to love this!" nointeract

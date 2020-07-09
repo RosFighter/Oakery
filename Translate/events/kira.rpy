@@ -192,11 +192,11 @@ translate english kira_bath_kira_mass_bath_first_1dbb6d63:
     # Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю нось просидеть, но не пора ли сделать своей любимой тёте приятно?" nointeract
     Kira_02 "Hahaha yes you do... I know you wouldn't mind sitting there all night, but isn't it time to make your favorite Aunt happy?" nointeract
 
-# game/events/kira.rpy:121
-translate english kira_bath_kira_mass_bath_first_ed5337cd:
+# game/events/kira.rpy:120
+translate english kira_bath_kira_mass_bath_first_bd743433:
 
-    # Max_04 "{i}Я и мечтать о таком не мог! Что буду сидеть с совершенно голой тётей в одной ванне и массировать её ножки... А как изящно она прикрывает ими свою киску!{/i}"
-    Max_04 "{i}I never would have thought I'd be sharing a bath with Aunt like this... She's so classy with the way she's using her legs to conceal her entrance! {/i}"
+    # Max_04 "{i}( Я и мечтать о таком не мог! Что буду сидеть с совершенно голой тётей в одной ванне и массировать её ножки... А как изящно она прикрывает ими свою киску! ){/i}"
+    Max_04 "{i}( I never would have thought I'd be sharing a bath with Aunt like this... She's so classy with the way she's using her legs to conceal her entrance! ){/i}"
 
 # game/events/kira.rpy:122
 translate english kira_bath_kira_mass_bath_first_9a97257d:
@@ -546,17 +546,17 @@ translate english kira_night_tv_porn_view_acfeb964:
     # Kira_03 "Так, мы порно собирались смотреть или что? Всё, тихо... всё внимание на экран."
     Kira_03 "So, are we going to watch porn or what? All quiet... all eyes on the screen."
 
-# game/events/kira.rpy:374
-translate english kira_night_tv_porn_view_2681a26e:
+# game/events/kira.rpy:563
+translate english kira_night_tv_porn_view_c7a40e97:
 
-    # Max_02 "{i}О да, так классно смотреть такое со своей тётей... Она ведь та ещё проказница! А в шортах-то как тесно...{/i}"
-    Max_02 "{i}Oh Yes, it's so cool to watch this with my Aunt... she's wearing some really tight clothes... {/i}"
+    # Max_02 "{i}( О да, так классно смотреть такое со своей тётей... Она ведь та ещё проказница! А в шортах-то как тесно... ){/i}"
+    Max_02 "{i}( Oh Yes, it's so cool to watch this with my Aunt... she's wearing some really tight clothes... ){/i}"
 
-# game/events/kira.rpy:379
-translate english kira_night_tv_porn_view_919fa9b9:
+# game/events/kira.rpy:568
+translate english kira_night_tv_porn_view_f4086346:
 
-    # Max_03 "{i}Ого, она трогает свою грудь! Блин, мне повезло с тётей. Она такая классная!{/i}"
-    Max_03 "{i}Wow, she's touching her Breasts! Damn, she's so frisky!{/i}"
+    # Max_03 "{i}( Ого, она трогает свою грудь! Блин, мне повезло с тётей. Она такая классная! ){/i}"
+    Max_03 "{i}( Wow, she's touching her Breasts! Damn, she's so frisky! ){/i}"
 
 # game/events/kira.rpy:380
 translate english kira_night_tv_porn_view_9aab7bca:
@@ -582,11 +582,11 @@ translate english kira_night_tv_porn_view_37bfea4c:
     # Kira_02 "Спасибо, Макс... Это приятно слышать... Но ты так всё пропустишь самое интересное на экране..." nointeract
     Kira_02 "Thanks, Max... That's good to hear... But you'll miss what's happening on screen..." nointeract
 
-# game/events/kira.rpy:393
-translate english kira_night_tv_porn_view_6ed4e057:
+# game/events/kira.rpy:583
+translate english kira_night_tv_porn_view_efb6d193:
 
-    # Max_05 "{i}С ума сойти... Я дрочу на глазах у своей тёти перед огромным экраном, на котором показывают порно... А она продолжает трогать свою грудь... и даже раздвинула ножки... И не стесняясь ласкает свою киску через трусики!{/i}"
-    Max_05 "{i}Crazy... I can jerk off in front of my Aunt while she's touching her breasts... she's even spread her legs... now she's rubbing her pussy through her panties!{/i}"
+    # Max_05 "{i}( С ума сойти... Я дрочу на глазах у своей тёти перед огромным экраном, на котором показывают порно... А она продолжает трогать свою грудь... и даже раздвинула ножки... И не стесняясь ласкает свою киску через трусики! ){/i}"
+    Max_05 "{i}( Crazy... I can jerk off in front of my Aunt while she's touching her breasts... she's even spread her legs... now she's rubbing her pussy through her panties! ){/i}"
 
 # game/events/kira.rpy:394
 translate english kira_night_tv_porn_view_331b9e6e:
@@ -594,11 +594,11 @@ translate english kira_night_tv_porn_view_331b9e6e:
     # Kira_10 "Ох, он у тебя такой большой, Макс... Это всё так возбуждает... Ммм..."
     Kira_10 "Oh, it's so big, Max... It's all so exciting... Mmm..."
 
-# game/events/kira.rpy:395
-translate english kira_night_tv_porn_view_9ee6ee9f:
+# game/events/kira.rpy:585
+translate english kira_night_tv_porn_view_0ca1c459:
 
-    # Max_20 "{i}Да, Кира... Твоя помощь бы мне не помешала... Хотя... похоже, я сейчас кончу!{/i}" nointeract
-    Max_20 "{i}Yes, Kira... I could use your help... Although... I think I'm going to cum!{/i}" nointeract
+    # Max_20 "{i}( Да, Кира... Твоя помощь бы мне не помешала... Хотя... похоже, я сейчас кончу! ){/i}" nointeract
+    Max_20 "{i}( Yes, Kira... I could use your help... Although... I think I'm going to cum! ){/i}" nointeract
 
 # game/events/kira.rpy:401
 translate english kira_night_tv_porn_view_f87d5fbf:
@@ -672,11 +672,11 @@ translate english kira_night_tv_porn_view_08ac4b2e:
     # Kira_09 "О да, мне это очень нравится! От этого я становлюсь такой мокренькой... Ой, какая же я грязная девчонка..."
     Kira_09 "Oh, you've got me figured out! You're right, it does a really good job of making me wet..."
 
-# game/events/kira.rpy:431
-translate english kira_night_tv_porn_view_fc38fd3a:
+# game/events/kira.rpy:625
+translate english kira_night_tv_porn_view_037c06af:
 
-    # Max_05 "{i}Да, тётя Кира, ты очень плохая девочка... Мы смотрим порно, а ты раздвинула ножки и с таким жаром ласкаешь свою киску, пока я дрочу...{/i}"
-    Max_05 "{i}Yeah, Aunt Kira, you're just as perverted as I am... We watch porn together, and you let me jerk off to you spreading your legs and caressing your pussy...{/i}"
+    # Max_05 "{i}( Да, тётя Кира, ты очень плохая девочка... Мы смотрим порно, а ты раздвинула ножки и с таким жаром ласкаешь свою киску, пока я дрочу... ){/i}"
+    Max_05 "{i}( Yeah, Aunt Kira, you're just as perverted as I am... We watch porn together, and you let me jerk off to you spreading your legs and caressing your pussy... ){/i}"
 
 # game/events/kira.rpy:432
 translate english kira_night_tv_porn_view_176e65f5:
@@ -684,11 +684,11 @@ translate english kira_night_tv_porn_view_176e65f5:
     # Kira_10 "Ох, он у тебя такой большой, Макс... Это всё так возбуждает... Как хорошо... Делай это быстрее..."
     Kira_10 "Oh, it's so big, Max... It's all so exciting... How good... Do it faster..."
 
-# game/events/kira.rpy:433
-translate english kira_night_tv_porn_view_1cf4a4b0:
+# game/events/kira.rpy:627
+translate english kira_night_tv_porn_view_41ca892e:
 
-    # Max_20 "{i}Да, Кира... Твоя помощь бы мне не помешала... Хотя... похоже, я сейчас кончу и без этого!{/i}" nointeract
-    Max_20 "{i}Yes, Kira... I could use Your help... Although... it looks like I'm going to cum without it!{/i}" nointeract
+    # Max_20 "{i}( Да, Кира... Твоя помощь бы мне не помешала... Хотя... похоже, я сейчас кончу и без этого! ){/i}" nointeract
+    Max_20 "{i}( Yes, Kira... I could use Your help... Although... it looks like I'm going to cum without it! ){/i}" nointeract
 
 # game/events/kira.rpy:438
 translate english kira_night_tv_porn_view_24d4d0dd:
@@ -750,17 +750,17 @@ translate english kira_night_tv_first_lesson_4ac5ca0b:
     # Kira_05 "Ну хорошо. Давай приступим..." nointeract
     Kira_05 "Oh well. Let's get started..." nointeract
 
-# game/events/kira.rpy:575
-translate english kira_night_tv_first_lesson_9797975e:
+# game/events/kira.rpy:668
+translate english kira_night_tv_first_lesson_96d951d4:
 
-    # Max_03 "{i}Ого... Какой горячий ротик... И она так ловко орудует язычком... Так... И что мне, как... Эх, учиться мне ещё и учиться... А что, я очень даже не против такому учиться!{/i}" nointeract
-    Max_03 "{i}Wow... here mouth is so hot... And she really knows what she's doing with her tongue... Oh, I still have to study and learn... I should pay attention!{/i}" nointeract
+    # Max_03 "{i}( Ого... Какой горячий ротик... И она так ловко орудует язычком... Так... И что мне, как... Эх, учиться мне ещё и учиться... А что, я очень даже не против такому учиться! ){/i}" nointeract
+    Max_03 "{i}( Wow... here mouth is so hot... And she really knows what she's doing with her tongue... Oh, I still have to study and learn... I should pay attention! ){/i}" nointeract
 
-# game/events/kira.rpy:581
-translate english kira_night_tv_first_lesson_2f9434d7:
+# game/events/kira.rpy:674
+translate english kira_night_tv_first_lesson_53f38acd:
 
-    # Max_05 "{i}Ухх, она такая классная, что даже не хочется это прекращать! Так бы и целовал её вечно...{/i}"
-    Max_05 "{i}Uhh, she's got me completely under her control! I don't want to stop... {/i}"
+    # Max_05 "{i}( Ухх, она такая классная, что даже не хочется это прекращать! Так бы и целовал её вечно... ){/i}"
+    Max_05 "{i}( Uhh, she's got me completely under her control! I don't want to stop... ){/i}"
 
 # game/events/kira.rpy:583
 translate english kira_night_tv_first_lesson_c592fe34:
@@ -816,11 +816,11 @@ translate english kira_night_tv_second_lesson_c056e0e2:
     # Max_02 "Да я только за!" nointeract
     Max_02 "I'm all for it!" nointeract
 
-# game/events/kira.rpy:671
-translate english kira_night_tv_second_lesson_dac1f836:
+# game/events/kira.rpy:706
+translate english kira_night_tv_second_lesson_c568ecf2:
 
-    # Max_04 "{i}Как же это приятно... Она такая... и такое делает язычком... Ух... Это просто невероятно...{/i}"
-    Max_04 "{i}I'm starting to move in sync with her tounge... Ugh... This is just unbelievably good ... {/i}"
+    # Max_04 "{i}( Как же это приятно... Она такая... и такое делает язычком... Ух... Это просто невероятно... ){/i}"
+    Max_04 "{i}( I'm starting to move in sync with her tounge... Ugh... This is just unbelievably good... ){/i}"
 
 # game/events/kira.rpy:673
 translate english kira_night_tv_second_lesson_dd31d423:
@@ -852,11 +852,11 @@ translate english kira_night_tv_second_lesson_20a886ee:
     # Kira_05 "Ты прав. Когда вы оба уже во всю будете увлечены поцелуем, начни с лёгких прикосновений к талии, ножкам... Поверь мне, ты почувствуешь, нравится ли ей это... Ну что, попробуем?" nointeract
     Kira_05 "You're right. When you are both already fully engaged in a kiss, start with light touches to the waist, legs... Trust me, you'll feel if she likes it... Should we try that?" nointeract
 
-# game/events/kira.rpy:685
-translate english kira_night_tv_second_lesson_c0df6184:
+# game/events/kira.rpy:720
+translate english kira_night_tv_second_lesson_200b578b:
 
-    # Max_03 "{i}О да! Кажется, мне никогда не надоест такая практика... Она так увлечённо целуется... Что она там говорила, про нужный момент? Может быть, это как раз он?{/i}" nointeract
-    Max_03 "{i}Oh Yes! I don't think I'll ever get tired of this practice... She's such a passionate kisser... What did she say about the right moment? Could it be now?{/i}" nointeract
+    # Max_03 "{i}( О да! Кажется, мне никогда не надоест такая практика... Она так увлечённо целуется... Что она там говорила, про нужный момент? Может быть, это как раз он? ){/i}" nointeract
+    Max_03 "{i}( Oh Yes! I don't think I'll ever get tired of this practice... She's such a passionate kisser... What did she say about the right moment? Could it be now? ){/i}" nointeract
 
 # game/events/kira.rpy:690
 translate english kira_night_tv_second_lesson_a1f7e689:
@@ -930,17 +930,17 @@ translate english kira_night_tv_second_lesson_62f4a650_1:
     # Max_01 "Конечно! Спасибо, тётя Кира!"
     Max_01 "Of course! Thank you, Aunt Kira!"
 
-# game/events/kira.rpy:717
-translate english kira_night_tv_second_lesson_f3b2ced0:
+# game/events/kira.rpy:752
+translate english kira_night_tv_second_lesson_9a58bf63:
 
-    # Max_02 "{i}Ничего себе! Кира меня не оттолкнула! Похоже, я всё делаю верно... и, наверно, можно двигаться дальше? Боже мой, какая же у неё гладкая кожа, просто шёлк!{/i}" nointeract
-    Max_02 "{i}Wow! Kira didn't push me away! It seems that I'm doing everything right... and I guess we can move on? I can feel the heat radiating from her smooth skin, she's into this! {/i}" nointeract
+    # Max_02 "{i}( Ничего себе! Кира меня не оттолкнула! Похоже, я всё делаю верно... и, наверно, можно двигаться дальше? Боже мой, какая же у неё гладкая кожа, просто шёлк! ){/i}" nointeract
+    Max_02 "{i}( Wow! Kira didn't push me away! It seems that I'm doing everything right... and I guess we can move on? I can feel the heat radiating from her smooth skin, she's into this! ){/i}" nointeract
 
-# game/events/kira.rpy:745
-translate english kira_night_tv_second_lesson_e96a6c18:
+# game/events/kira.rpy:780
+translate english kira_night_tv_second_lesson_0f234660:
 
-    # Max_04 "{i}Отлично! Кажется, ей действительно нравится, что я делаю... Она целует меня с такой жадностью, пока я мну её обалденную грудь... Она прикасается всё ниже и ниже, класс!{/i}"
-    Max_04 "{i}Great! I think she's really liking it... her kisses are getting sloppier while I'm kneading her amazing breasts...{/i}"
+    # Max_04 "{i}( Отлично! Кажется, ей действительно нравится, что я делаю... Она целует меня с такой жадностью, пока я мну её обалденную грудь... Она прикасается всё ниже и ниже, класс! ){/i}"
+    Max_04 "{i}( Great! I think she's really liking it... her kisses are getting sloppier while I'm kneading her amazing breasts... ){/i}"
 
 # game/events/kira.rpy:749
 translate english kira_night_tv_second_lesson_d77c9445:
@@ -972,11 +972,11 @@ translate english kira_night_tv_second_lesson_4466434c:
     # Kira_09 "[succes!t]О да... уже значительно лучше... Ты быстро схватываешь... Ммм..." nointeract
     Kira_09 "[succes!t]Oh Yes... already much better... You've become a fast learner... Mmm..." nointeract
 
-# game/events/kira.rpy:775
-translate english kira_night_tv_second_lesson_04ec7c30:
+# game/events/kira.rpy:810
+translate english kira_night_tv_second_lesson_7157d27b:
 
-    # Max_05 "{i}Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она она начала поглаживать мой член...{/i}"
-    Max_05 "{i}Yes! I did it! I can finally enjoy her bare tits... It's awesome! Kira seems to like it too, and I can already feel her nipples stiffen. Uhh, shit... she started stroking my cock ... {/i}"
+    # Max_05 "{i}( Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она она начала поглаживать мой член... ){/i}"
+    Max_05 "{i}( Yes! I did it! I can finally enjoy her bare tits... It's awesome! Kira seems to like it too, and I can already feel her nipples stiffen. Uhh, shit... she started stroking my cock... ){/i}"
 
 # game/events/kira.rpy:776
 translate english kira_night_tv_second_lesson_2f02296e:
@@ -1165,11 +1165,11 @@ translate english kira_bath_mass_bath_1dbb6d63:
     # Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю нось просидеть, но не пора ли сделать своей любимой тёте приятно?" nointeract
     Kira_02 "Hahaha yes you do... I know you wouldn't mind sitting there all night, but isn't it time to make your favorite Aunt happy?" nointeract
 
-# game/events/kira.rpy:176
-translate english kira_bath_mass_bath_f1e0694b:
+# game/events/kira.rpy:175
+translate english kira_bath_mass_bath_6f52c62f:
 
-    # Max_04 "{i}А ведь мечты сбываются, если очень захотеть! Сидим с тётей голые в ванне и я массирую её гладкие и стройные ножки. А как изящно она прикрывает ими свою киску!{/i}"
-    Max_04 "{i}Dream come true if you want them to! We sit with my aunt naked in the bath My naked is letting me massage her smooth and slender legs. And how gracefully she covers her pussy with them!{/i}"
+    # Max_04 "{i}( А ведь мечты сбываются, если очень захотеть! Сидим с тётей голые в ванне и я массирую её гладкие и стройные ножки. А как изящно она прикрывает ими свою киску! ){/i}"
+    Max_04 "{i}( Dream come true if you want them to! We sit with my aunt naked in the bath My naked is letting me massage her smooth and slender legs. And how gracefully she covers her pussy with them! ){/i}"
 
 # game/events/kira.rpy:177
 translate english kira_bath_mass_bath_6ab88328:
@@ -1177,11 +1177,11 @@ translate english kira_bath_mass_bath_6ab88328:
     # Kira_04 "Как хорошо... Это то, что мне так сейчас нужно! Хочется, чтобы это продолжалось как можно дольше..."
     Kira_04 "How good... This is what I need right now! I want it to last as long as possible..."
 
-# game/events/kira.rpy:180
-translate english kira_bath_mass_bath_73b198a3:
+# game/events/kira.rpy:179
+translate english kira_bath_mass_bath_553110b2:
 
-    # Max_03 "{i}Она так прекрасна... а мокренькая так вообще огонь! Её шикарная грудь так классно вздымается, когда она начинает глубоко дышать от моего массажа...{/i}"
-    Max_03 "{i}She is so beautiful! Her tits are rising up and down as she takes a deep breaths from my massage...{/i}"
+    # Max_03 "{i}( Она так прекрасна... а мокренькая так вообще огонь! Её шикарная грудь так классно вздымается, когда она начинает глубоко дышать от моего массажа... ){/i}"
+    Max_03 "{i}( She is so beautiful! Her tits are rising up and down as she takes a deep breaths from my massage... ){/i}"
 
 # game/events/kira.rpy:182
 translate english kira_bath_mass_bath_65c7355c:
@@ -1255,11 +1255,11 @@ translate english kira_bath_mass_bath_66a1d6d3:
     # Kira_02 "Раз уж ты снял усталость с моих ножек, то может они, в качестве благодарности, смогут помочь и тебе..."
     Kira_02 "Since you removed the fatigue from my legs, then maybe as a thank you, I can help you..."
 
-# game/events/kira.rpy:213
-translate english kira_bath_mass_bath_f7a3d849:
+# game/events/kira.rpy:215
+translate english kira_bath_mass_bath_27bf21cd:
 
-    # Max_03 "{i}Ох... Определённо смогут! Не зря я так хорошо размял её пальчики, они начинают такое вытворять... Ого! Тётя так возбудилась, что раздвинула ножки и начала ласкать свою киску...{/i}"
-    Max_03 "{i}Oh... she definitely can! It's not for nothing that I flexed her fingers so well, they're starting to do this... Wow! My Aunt was so excited that she spread her legs and began to caress her pussy...{/i}"
+    # Max_03 "{i}( Ох... Определённо смогут! Не зря я так хорошо размял её пальчики, они начинают такое вытворять... Ого! Тётя так возбудилась, что раздвинула ножки и начала ласкать свою киску... ){/i}"
+    Max_03 "{i}( Oh... she definitely can! It's not for nothing that I flexed her fingers so well, they're starting to do this... Wow! My Aunt was so excited that she spread her legs and began to caress her pussy... ){/i}"
 
 # game/events/kira.rpy:214
 translate english kira_bath_mass_bath_0bcadd58:
@@ -1369,11 +1369,11 @@ translate english kira_night_tv_second_lesson_62f4a650_2:
     # Max_01 "Конечно! Спасибо, тётя Кира!"
     Max_01 "Of course! Thank you, Aunt Kira!"
 
-# game/events/kira.rpy:738
-translate english kira_night_tv_second_lesson_3ccd8d41:
+# game/events/kira.rpy:773
+translate english kira_night_tv_second_lesson_f590de98:
 
-    # Max_03 "{i}Обалденно! Неужели это не сон и я действительно трогаю её суперскую попку?! Ну и что, что это попка моей тёти... На ощупь она просто восхитительна - нежная и упругая! Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться...{/i}" nointeract
-    Max_03 "{i}Alright! I've finally got free reign to touch her ass! So what if it's my Aunts? Her curves feels soft and welcoming! But it's time to move higher... I think I'm getting excited...{/i}" nointeract
+    # Max_03 "{i}( Обалденно! Неужели это не сон и я действительно трогаю её суперскую попку?! Ну и что, что это попка моей тёти... На ощупь она просто восхитительна - нежная и упругая! Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться... ){/i}" nointeract
+    Max_03 "{i}( Alright! I've finally got free reign to touch her ass! So what if it's my Aunts? Her curves feels soft and welcoming! But it's time to move higher... I think I'm getting excited... ){/i}" nointeract
 
 # game/events/kira.rpy:788
 translate english kira_night_tv_repeat_lesson_aa588da8:
@@ -1387,35 +1387,35 @@ translate english kira_night_tv_repeat_lesson_3412b7f7:
     # Max_02 "Не отвлекайся!" nointeract
     Max_02 "Don't get distracted!" nointeract
 
-# game/events/kira.rpy:793
-translate english kira_night_tv_repeat_lesson_3962c531:
+# game/events/kira.rpy:828
+translate english kira_night_tv_repeat_lesson_5d625288:
 
-    # Max_04 "{i}Кажется, мне никогда не надоест это делать с такой женщиной... Ну и что, что она моя тётя... Но она так классно целуется!{/i}" nointeract
-    Max_04 "{i} I don't Think I'll ever get tired of doing this with a woman like that... So what if she's my aunt?.. But she's such a great kisser!{/i}" nointeract
+    # Max_04 "{i}( Кажется, мне никогда не надоест это делать с такой женщиной... Ну и что, что она моя тётя... Но она так классно целуется! ){/i}" nointeract
+    Max_04 "{i}( I don't Think I'll ever get tired of doing this with a woman like that... So what if she's my aunt?.. But she's such a great kisser! ){/i}" nointeract
 
-# game/events/kira.rpy:798
-translate english kira_night_tv_repeat_lesson_0212f5a1:
+# game/events/kira.rpy:833
+translate english kira_night_tv_repeat_lesson_d696a69f:
 
-    # Max_01 "{i}Класс! Она и без моей помощи норовит страстно прижаться ко мне. Её нежная грудь слегка трётся об меня от чего мы начинаем целоваться ещё более страстно...{/i}"
-    Max_01 "{i}Yes! Even without my help, I can feel her melting into me. Her soft tits are just rubbing against me, which just makes us kiss even more passionately...{/i}"
+    # Max_01 "{i}( Класс! Она и без моей помощи норовит страстно прижаться ко мне. Её нежная грудь слегка трётся об меня от чего мы начинаем целоваться ещё более страстно... ){/i}"
+    Max_01 "{i}( Yes! Even without my help, I can feel her melting into me. Her soft tits are just rubbing against me, which just makes us kiss even more passionately... ){/i}"
 
-# game/events/kira.rpy:801
-translate english kira_night_tv_repeat_lesson_3bc13675:
+# game/events/kira.rpy:836
+translate english kira_night_tv_repeat_lesson_ae98eb67:
 
-    # Max_03 "{i}А от жара её мягкой попки под моей рукой можно потерять весь контроль... Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться...{/i}"
-    Max_03 "{i}And the heat of her soft ass in my hand can make you lose all control... But it's time to move higher... I think I'm getting excited...{/i}"
+    # Max_03 "{i}( А от жара её мягкой попки под моей рукой можно потерять весь контроль... Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться... ){/i}"
+    Max_03 "{i}( And the heat of her soft ass in my hand can make you lose all control... But it's time to move higher... I think I'm getting excited... ){/i}"
 
-# game/events/kira.rpy:804
-translate english kira_night_tv_repeat_lesson_a9b12414:
+# game/events/kira.rpy:839
+translate english kira_night_tv_repeat_lesson_ec123134:
 
-    # Max_02 "{i}О да! Как же это приятно, ощущать в руке упругость груди тёти Киры и наслаждаться её жаркими поцелуями... О таких уроках я и мечтать раньше не мог!{/i}" nointeract
-    Max_02 "{i}Oh Yes! I'm savouring the feeling of Aunt Kira's tits in my hands, and enjoying every second our tongues are swirling together... I could not have dreamed our lessons would turn out like this!{/i}" nointeract
+    # Max_02 "{i}( О да! Как же это приятно, ощущать в руке упругость груди тёти Киры и наслаждаться её жаркими поцелуями... О таких уроках я и мечтать раньше не мог! ){/i}" nointeract
+    Max_02 "{i}( Oh Yes! I'm savouring the feeling of Aunt Kira's tits in my hands, and enjoying every second our tongues are swirling together... I could not have dreamed our lessons would turn out like this! ){/i}" nointeract
 
-# game/events/kira.rpy:808
-translate english kira_night_tv_repeat_lesson_9be48ce4:
+# game/events/kira.rpy:843
+translate english kira_night_tv_repeat_lesson_d869c154:
 
-    # Max_05 "{i}У неё такая большая и шелковистая грудь, а сосочки твёрдые и набухшие... И ей это всё очень нравится, она дышит так жарко... Её рука так приятно и легко поглаживает головку моего члена!{/i}"
-    Max_05 "{i}Her tits are so big and silky, and her nipples are hard and swollen...her breathing is starting to quicken while she's teasing the head of my cock!{/i}"
+    # Max_05 "{i}( У неё такая большая и шелковистая грудь, а сосочки твёрдые и набухшие... И ей это всё очень нравится, она дышит так жарко... Её рука так приятно и легко поглаживает головку моего члена! ){/i}"
+    Max_05 "{i}( Her tits are so big and silky, and her nipples are hard and swollen...her breathing is starting to quicken while she's teasing the head of my cock! ){/i}"
 
 # game/events/kira.rpy:811
 translate english kira_night_tv_repeat_lesson_34c56996:
@@ -1481,7 +1481,7 @@ translate english kira_night_tv_repeat_lesson_aaa0a3e1:
 translate english kira_night_tv_repeat_lesson_ecb67c1f:
 
     # Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ох, я кончаю... Д-а-а..."
-    Kira_10 "Uhh... fuck! It feels good ... Even ... deeper and faster ... Yes, that's it... Ohhh, I'm cumming..."
+    Kira_10 "Uhh... fuck! It feels good... Even... deeper and faster... Yes, that's it... Ohhh, I'm cumming..."
 
 # game/events/kira.rpy:851
 translate english kira_night_tv_repeat_lesson_4dc1e4e3:
@@ -1543,11 +1543,11 @@ translate english kira_night_tv_repeat_lesson_011a1437:
     # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}" nointeract
     Max_21 "[restrain!t]{i}Amazing! I'm practically buried in her mouth! Shit, I'm already on the edge... I'm about to finish... Now she's moving!{/i}" nointeract
 
-# game/events/kira.rpy:904
-translate english kira_night_tv_repeat_lesson_f07ebc31:
+# game/events/kira.rpy:940
+translate english kira_night_tv_repeat_lesson_01b8f56e:
 
-    # Max_05 "{i}Фух... О да... Прямо туда... Неужели, она всё проглотила? Во даёт!!!{/i}"
-    Max_05 "{i}Ugh... Yeah... Right there... Had she swallowed it all? Oh, she did!!!{/i}"
+    # Max_05 "{i}( Фух... О да... Прямо туда... Неужели, она всё проглотила? Во даёт!!! ){/i}"
+    Max_05 "{i}( Ugh... Yeah... Right there... Had she swallowed it all? Oh, she did!!! ){/i}"
 
 # game/events/kira.rpy:907
 translate english kira_night_tv_repeat_lesson_bf0e8227:
@@ -1658,109 +1658,109 @@ translate english kira_night_tv_not_restrain2_174945ac:
     Max_01 "Of course, Aunt Kira. You are the best! Goodnight!"
 
 # game/events/kira.rpy:950
-translate english kira_night_tv_cun_bj_ef1ea769:
+translate english kira_night_tv_teach_cuni_ef1ea769:
 
     # Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком..." nointeract
     Kira_05 "Oh... Max, my nipples are begging you to relieve them with your mouth... Come on, don't be shy!" nointeract
 
 # game/events/kira.rpy:958
-translate english kira_night_tv_cun_bj_2df27d30:
+translate english kira_night_tv_teach_cuni_2df27d30:
 
     # Kira_06 "Д-а-а... Вот так, Макс... Поиграй со мной! Как же я уже хочу, чтобы ты опускался своим шустрым язычком всё ниже и ниже... прямо туда... Оххх..." nointeract
     Kira_06 "That's it, Max... Come play with me! I already want you to sink your nimble tongue lower and lower... right there... Ohhh..." nointeract
 
 # game/events/kira.rpy:963
-translate english kira_night_tv_cun_bj_328ceb80:
+translate english kira_night_tv_teach_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
     Kira_02 "Max... If my panties are bothering you, I'll take them off... Or just take them off yourself." nointeract
 
 # game/events/kira.rpy:967
-translate english kira_night_tv_cun_bj_fe50801f:
+translate english kira_night_tv_teach_cuni_fe50801f:
 
     # Kira_07 "Оу... Макс, моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..." nointeract
     Kira_07 "Aww... Max, my pussy missed you so much... Don't stop, I love it! You're quite the capable one." nointeract
 
 # game/events/kira.rpy:971
-translate english kira_night_tv_cun_bj_aaa0a3e1:
+translate english kira_night_tv_teach_cuni_aaa0a3e1:
 
     # Kira_09 "Да... Ещё чуть-чуть и я кончу... Проникни в мою киску своими ловкими пальчиками... Она уже такая мокренькая..." nointeract
     Kira_09 "Yes... Just a little more and I'll come... Get into my pussy with your fingers... I'm already so wet..." nointeract
 
 # game/events/kira.rpy:975
-translate english kira_night_tv_cun_bj_ecb67c1f:
+translate english kira_night_tv_teach_cuni_ecb67c1f:
 
     # Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ох, я кончаю... Д-а-а..."
     Kira_10 "Uhh... fuck! It feels good... Even... deeper and faster... Yes, that's it... Ohhh, I'm cumming..."
 
 # game/events/kira.rpy:976
-translate english kira_night_tv_cun_bj_f090a75a:
+translate english kira_night_tv_teach_cuni_f090a75a:
 
     # Max_02 "Какая ты испорченная девчонка, тётя Кира..."
     Max_02 "What a spoiled girl you are, Aunt Kira..."
 
 # game/events/kira.rpy:979
-translate english kira_night_tv_cun_bj_b22c5b23:
+translate english kira_night_tv_teach_cuni_b22c5b23:
 
     # Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Давай снимай шорты! Твой член так и напрашивается на то, чтобы его хорошенько приласкали..." nointeract
     Kira_07 "Yes, I am very spoiled... and you, Max, deserve something special... Take off your shorts! Your cock is begging for my attention..." nointeract
 
-# game/events/kira.rpy:984
-translate english kira_night_tv_cun_bj_f38ad1c4:
+# game/events/kira.rpy:1024
+translate english kira_night_tv_bj_f38ad1c4:
 
     # Kira_02 "Тебя ожидают незабываемые ощущения, Макс! Посмотрим, как долго ты сможешь продержаться на этот раз..." nointeract
     Kira_02 "You will have an unforgettable experience, Max! Let's see how long you can hold out this time..." nointeract
 
-# game/events/kira.rpy:992
-translate english kira_night_tv_cun_bj_87575487:
+# game/events/kira.rpy:1032
+translate english kira_night_tv_bj_87575487:
 
     # Max_07 "Охх... тётя Кира, как приятно..."
     Max_07 "Ohh... Aunt Kira, how nice..."
 
 # game/events/kira.rpy:994
-translate english kira_night_tv_cun_bj_0b605960:
+translate english kira_night_tv_teach_cuni_0b605960:
 
     # Kira_09 "Просто наслаждайся..." nointeract
     Kira_09 "Just enjoy..." nointeract
 
 # game/events/kira.rpy:1010
-translate english kira_night_tv_cun_bj_4e70d008:
+translate english kira_night_tv_teach_cuni_4e70d008:
 
     # Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}" nointeract
     Max_20 "[restrain!t]{i}Uhh, she's sucking the head of my cock so gently... I don't know how she manages to get it in her mouth!{/i}" nointeract
 
 # game/events/kira.rpy:1025
-translate english kira_night_tv_cun_bj_011a1437:
+translate english kira_night_tv_teach_cuni_011a1437:
 
     # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}" nointeract
     Max_21 "[restrain!t]{i}Amazing! I'm practically buried in her mouth! Shit, I'm already on the edge... I'm about to finish... Now she's moving!{/i}" nointeract
 
 # game/events/kira.rpy:1028
-translate english kira_night_tv_cun_bj_5d1bbc4c:
+translate english kira_night_tv_teach_cuni_5d1bbc4c:
 
-    # Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
-    Max_05 "{i}Ugh... Yeah... Right in her mouth! She swallows everything! Oh God... she's talented, isn't she?{/i}"
+    # Max_05 "{i}( Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно! ){/i}"
+    Max_05 "{i}( Ugh... Yeah... Right in her mouth! She swallows everything! Oh God... she's talented, isn't she? ){/i}"
 
 # game/events/kira.rpy:1031
-translate english kira_night_tv_cun_bj_2f0c8e1d:
+translate english kira_night_tv_teach_cuni_2f0c8e1d:
 
     # Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
     Kira_07 "Well. You like it? And not a drop wasted... well, almost."
 
 # game/events/kira.rpy:1032
-translate english kira_night_tv_cun_bj_a2bb381b:
+translate english kira_night_tv_teach_cuni_a2bb381b:
 
     # Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
     Max_05 "You're amazing, Aunt Kira! Until next time?!"
 
 # game/events/kira.rpy:1035
-translate english kira_night_tv_cun_bj_3bfad864:
+translate english kira_night_tv_teach_cuni_3bfad864:
 
     # Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
     Kira_04 "Yes, I will wait... Now go to bed! And I still need to recover a little after all this..."
 
 # game/events/kira.rpy:1036
-translate english kira_night_tv_cun_bj_174945ac:
+translate english kira_night_tv_teach_cuni_174945ac:
 
     # Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
     Max_01 "Of course, Aunt Kira. You are the best! Goodnight!"
@@ -1826,97 +1826,97 @@ translate english strings:
 # TODO: Translation updated at 2020-07-02 22:52
 
 # game/events/kira.rpy:255
-translate english kira_bath_cun_bj_b0f7c22d:
+translate english kira_bath_cuni_bj_b0f7c22d:
 
     # Kira_05 "Оу... Макс, не выдержал и сам захотел поласкать мою киску? У тебя такие нежные пальчики... Да... Поиграй с ней!" nointeract
     Kira_05 "Aww... Max, couldn't stand it and wanted to touch my pussy? You have such delicate fingers... Yes... make me feel good!" nointeract
 
 # game/events/kira.rpy:259
-translate english kira_bath_cun_bj_2b19c412:
+translate english kira_bath_cuni_bj_2b19c412:
 
     # Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
     Kira_09 "Uhh... your hot tongue feels good sliding all over me! Go faster... Mmm..." nointeract
 
 # game/events/kira.rpy:264
-translate english kira_bath_cun_bj_a6041d47:
+translate english kira_bath_cuni_bj_a6041d47:
 
     # Kira_11 "Макс... О да... продолжай вот так, я уже не могу сдерживаться... Сожми мою попку покрепче! Уже так близко... Да! Я кончаю... Ахх..."
     Kira_11 "Max... Yeah... go on like this, I can't hold back anymore... Squeeze my ass! Already so close... Yes! I'm cumming ... ahh..."
 
 # game/events/kira.rpy:265
-translate english kira_bath_cun_bj_4d360262:
+translate english kira_bath_cuni_bj_4d360262:
 
     # Max_03 "Похоже, и здесь я всё помассировал как надо!"
     Max_03 "It looks like I massaged everything right here, too!"
 
 # game/events/kira.rpy:266
-translate english kira_bath_cun_bj_b2b39a0b:
+translate english kira_bath_cuni_bj_b2b39a0b:
 
     # Kira_06 "Да... Ты у меня способный племянник... и я хочу твой член! Хочу почувствовать его у себя во рту..." nointeract
     Kira_06 "Yes... You are my capable nephew... now I want your cock! I want to feel it in my mouth..." nointeract
 
 # game/events/kira.rpy:270
-translate english kira_bath_cun_bj_7a7528d8:
+translate english kira_bath_cuni_bj_7a7528d8:
 
     # Kira_02 "О, Макс... Он такой твёрдый и горячий... Я чувствую, как сильно ты хочешь проникнуть им поглубже мне в рот!"
     Kira_02 "Oh, Max... It's so hard and hot... I can feel how badly you want to push it deeper into my mouth!"
 
 # game/events/kira.rpy:271
-translate english kira_bath_cun_bj_f7a0a397:
+translate english kira_bath_cuni_bj_f7a0a397:
 
     # Max_04 "Да... Я очень этого хочу!"
     Max_04 "Yes... I really want it!"
 
 # game/events/kira.rpy:279
-translate english kira_bath_cun_bj_5603e12f:
+translate english kira_bath_cuni_bj_5603e12f:
 
     # Kira_05 "Сначала, я хочу приласкать его своим язычком... Вот так... Я знаю, что тебе это нравится..." nointeract
     Kira_05 "First, I'll let my tongue glide over him... Like this... I know you like it..." nointeract
 
-# game/events/kira.rpy:297
-translate english kira_bath_cun_bj_dd9c6906:
+# game/events/kira.rpy:300
+translate english kira_bath_cuni_bj_b8f3d235:
 
-    # Max_21 "{i}Ухх... Как нежно она посасывает своими губами мой член. И язычком орудует с такой страстью... Просто бесподобно!{/i}" nointeract
-    Max_21 "{i}uhh... She's teasing my cock so skilfully, it's sending shivers up my spine!{/i}" nointeract
-
-# game/events/kira.rpy:308
-translate english kira_bath_cun_bj_6640fa3d:
-
-    # Max_22 "{i}Вот чёрт! Она так глубоко насаживает на него свой ротик... Ещё чуть-чуть и я взорвусь! А она сосёт всё быстрее...{/i}" nointeract
-    Max_22 "{i}Fuck! She's plunged my cock into her mouth... Just a little more and I'll explode! She keeps going faster and faster... {/i}" nointeract
+    # Max_21 "{i}( Ухх... Как нежно она посасывает своими губами мой член. И язычком орудует с такой страстью... Просто бесподобно! ){/i}" nointeract
+    Max_21 "{i}( uhh... She's teasing my cock so skilfully, it's sending shivers up my spine! ){/i}" nointeract
 
 # game/events/kira.rpy:311
-translate english kira_bath_cun_bj_29e64525:
+translate english kira_bath_cuni_bj_619e7f27:
 
-    # Max_06 "{i}Да... Она принимает всю мою сперму не вынимая член изо рта! О боже... Кажется, я её люблю! Хотя, что я болтаю... Но как же это приятно!{/i}"
-    Max_06 "{i}Yes... She's taking all my cum while leaving my cock in her mouth! I think I'm in love - I mean, she's so talented!{/i}"
+    # Max_22 "{i}( Вот чёрт! Она так глубоко насаживает на него свой ротик... Ещё чуть-чуть и я взорвусь! А она сосёт всё быстрее... ){/i}" nointeract
+    Max_22 "{i}( Fuck! She's plunged my cock into her mouth... Just a little more and I'll explode! She keeps going faster and faster...  ){/i}" nointeract
 
 # game/events/kira.rpy:314
-translate english kira_bath_cun_bj_bab49e4f:
+translate english kira_bath_cuni_bj_c4de2ecf:
+
+    # Max_06 "{i}( Да... Она принимает всю мою сперму не вынимая член изо рта! О боже... Кажется, я её люблю! Хотя, что я болтаю... Но как же это приятно! ){/i}"
+    Max_06 "{i}( Yes... She's taking all my cum while leaving my cock in her mouth! I think I'm in love - I mean, she's so talented! ){/i}"
+
+# game/events/kira.rpy:314
+translate english kira_bath_cuni_bj_bab49e4f:
 
     # Kira_08 "Вот и твоё напряжение мы сняли! Какие мы сегодня молодцы... Мне очень это всё понравилось!"
     Kira_08 "Here's all the tension we removed! What good people we are today... I really liked it all!"
 
 # game/events/kira.rpy:315
-translate english kira_bath_cun_bj_6f308174:
+translate english kira_bath_cuni_bj_6f308174:
 
     # Max_05 "И мне тоже! Было очень классно!"
     Max_05 "Me too! It was very cool!"
 
 # game/events/kira.rpy:316
-translate english kira_bath_cun_bj_94418467:
+translate english kira_bath_cuni_bj_94418467:
 
     # Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
     Kira_01 "Let's leave quietly, just in case anyone heard our noise."
 
 # game/events/kira.rpy:317
-translate english kira_bath_cun_bj_23817ff1:
+translate english kira_bath_cuni_bj_23817ff1:
 
     # Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
     Max_01 "Good night, Aunt Kira. It's great to be with you!"
 
 # game/events/kira.rpy:318
-translate english kira_bath_cun_bj_45071b84:
+translate english kira_bath_cuni_bj_45071b84:
 
     # Kira_04 "Приятных снов, Макс."
     Kira_04 "Sleep well, Max."
@@ -2074,3 +2074,120 @@ translate english kira_alice_shower_start_peeping_2ddf2244:
 
     # Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
     Max_02 "Oh, Yes... Slipping something between their tits would be a dream!"
+
+# TODO: Translation updated at 2020-07-09 15:51
+
+# game/events/kira.rpy:1034
+translate english kira_night_tv_bj_0b605960:
+
+    # Kira_09 "Просто наслаждайся..." nointeract
+    Kira_09 "Just enjoy..." nointeract
+
+# game/events/kira.rpy:1050
+translate english kira_night_tv_bj_4e70d008:
+
+    # Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}" nointeract
+    Max_20 "[restrain!t]{i}Uhh, she's sucking the head of my cock so gently... I don't know how she manages to get it in her mouth!{/i}" nointeract
+
+# game/events/kira.rpy:1065
+translate english kira_night_tv_bj_011a1437:
+
+    # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}" nointeract
+    Max_21 "[restrain!t]{i}Amazing! I'm practically buried in her mouth! Shit, I'm already on the edge... I'm about to finish... Now she's moving!{/i}" nointeract
+
+# game/events/kira.rpy:1068
+translate english kira_night_tv_bj_b4a026f5:
+
+    # Max_05 "{i}( Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно! ){/i}"
+    Max_05 "{i}( Ugh... Yeah... Right in her mouth! She swallows everything! Oh God... she's talented, isn't she? ){/i}"
+
+# game/events/kira.rpy:1071
+translate english kira_night_tv_bj_2f0c8e1d:
+
+    # Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
+    Kira_07 "Well. You like it? And not a drop wasted... well, almost."
+
+# game/events/kira.rpy:1072
+translate english kira_night_tv_bj_a2bb381b:
+
+    # Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
+    Max_05 "You're amazing, Aunt Kira! Until next time?!"
+
+# game/events/kira.rpy:1075
+translate english kira_night_tv_bj_3bfad864:
+
+    # Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
+    Kira_04 "Yes, I will wait... Now go to bed! And I still need to recover a little after all this..."
+
+# game/events/kira.rpy:1076
+translate english kira_night_tv_bj_174945ac:
+
+    # Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
+    Max_01 "Of course, Aunt Kira. You are the best! Goodnight!"
+
+# game/events/kira.rpy:1081
+translate english kira_night_tv_tv_cuni_6764d776:
+
+    # Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Верно?"
+    Kira_05 ""
+
+# game/events/kira.rpy:1082
+translate english kira_night_tv_tv_cuni_2c995eaa:
+
+    # Max_01 "Мне нравится, к чему ты клонишь, тётя Кира..." nointeract
+    Max_01 "" nointeract
+
+# game/events/kira.rpy:1087
+translate english kira_night_tv_tv_cuni_328ceb80:
+
+    # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
+    Kira_02 "Max... If my panties are bothering you, I'll take them off... Or just take them off yourself." nointeract
+
+# game/events/kira.rpy:1092
+translate english kira_night_tv_tv_cuni_fe50801f:
+
+    # Kira_07 "Оу... Макс, моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..." nointeract
+    Kira_07 "Aww... Max, my pussy missed you so much... Don't stop, I love it! You're quite the capable one." nointeract
+
+# game/events/kira.rpy:1096
+translate english kira_night_tv_tv_cuni_aaa0a3e1:
+
+    # Kira_09 "Да... Ещё чуть-чуть и я кончу... Проникни в мою киску своими ловкими пальчиками... Она уже такая мокренькая..." nointeract
+    Kira_09 "Yes... Just a little more and I'll come... Get into my pussy with your fingers... I'm already so wet..." nointeract
+
+# game/events/kira.rpy:1100
+translate english kira_night_tv_tv_cuni_ecb67c1f:
+
+    # Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ох, я кончаю... Д-а-а..."
+    Kira_10 "Uhh... fuck! It feels good... Even... deeper and faster... Yes, that's it... Ohhh, I'm cumming..."
+
+# game/events/kira.rpy:1101
+translate english kira_night_tv_tv_cuni_f090a75a:
+
+    # Max_02 "Какая ты испорченная девчонка, тётя Кира..."
+    Max_02 "What a spoiled girl you are, Aunt Kira..."
+
+# game/events/kira.rpy:1104
+translate english kira_night_tv_tv_cuni_4931b5c7:
+
+    # Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
+    Kira_07 ""
+
+# game/events/kira.rpy:1105
+translate english kira_night_tv_tv_cuni_f7a0a397:
+
+    # Max_04 "Да... Я очень этого хочу!"
+    Max_04 "Yes... I really want it!"
+
+# game/events/kira.rpy:1121
+translate english kira_night_tv_failed_cb5d25ab:
+
+    # Max_09 "Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут."
+    Max_09 ""
+
+translate english strings:
+
+    # game/events/kira.rpy:1082
+    old "{i}начать ласкать её киску языком{/i}"
+    new ""
+

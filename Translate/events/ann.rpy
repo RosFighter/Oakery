@@ -745,11 +745,11 @@ translate english ann_dressed_work_gift_d954a734:
     # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
     Ann_08 "Oh... Thank you for the compliment, my dear. You can tell that my son is a real man! Come here, I'll give you a hug..."
 
-# game/events/ann.rpy:323
-translate english ann_dressed_work_gift_7a4eaba8:
+# game/events/ann.rpy:340
+translate english ann_dressed_work_gift_d8f01eac:
 
-    # Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
-    Max_05 "{i}Oh, yeah... I really have the best mom in the world! What a terrific figure she has... It's so nice to hold on to her... ...her elastic cushy breasts... This is a dream I don't want to wake up from!{/i}"
+    # Max_05 "{i}( О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать! ){/i}"
+    Max_05 "{i}( Oh, yeah... I really have the best mom in the world! What a terrific figure she has... It's so nice to hold on to her... ...her elastic cushy breasts... This is a dream I don't want to wake up from! ){/i}"
 
 # game/events/ann.rpy:328
 translate english ann_dressed_work_gift_b6991faf:
@@ -766,8 +766,8 @@ translate english ann_dressed_work_gift_e66adddb:
 # game/events/ann.rpy:335
 translate english ann_dressed_work_gift_84cd6647:
 
-    # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лицее! Блаженно...{/i}"
-    Max_06 "{i}Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips.{/i}"
+    # Max_06 "{i}( Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лицее! Блаженно... ){/i}"
+    Max_06 "{i}( Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips. ){/i}"
 
 # game/events/ann.rpy:337
 translate english ann_dressed_work_gift_c0df5b86:
@@ -834,11 +834,11 @@ translate english ann_dressed_work_acf27c66:
     # Max_00 "Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит."
     Max_00 "I probably shouldn't have walked in on Mom like that... I hope the gift will smooth things over."
 
-# game/events/ann.rpy:336
-translate english ann_dressed_work_gift_d97afa36:
+# game/events/ann.rpy:352
+translate english ann_dressed_work_gift_0f7cc57e:
 
-    # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
-    Max_06 "{i}Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips.{/i}"
+    # Max_06 "{i}( Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно... ){/i}"
+    Max_06 "{i}( Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips. ){/i}"
 
 # game/events/ann.rpy:348
 translate english ann_dressed_work_fail_a9cf1e2d:
@@ -980,11 +980,11 @@ translate english ann_dressed_shop_gift_d954a734:
     # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
     Ann_08 "Oh... Thank you for the compliment, my dear. You can tell that my son is a real man! Come here, I'll give you a hug..."
 
-# game/events/ann.rpy:462
-translate english ann_dressed_shop_gift_7a4eaba8:
+# game/events/ann.rpy:504
+translate english ann_dressed_shop_gift_d8f01eac:
 
-    # Max_05 "{i}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/i}"
-    Max_05 "{i}Oh, yeah... I really have the best mom in the world! What a terrific figure she has... It's so nice to hold on to her... ...her elastic cushy breasts... This is a dream I don't want to wake up from!{/i}"
+    # Max_05 "{i}( О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать! ){/i}"
+    Max_05 "{i}( Oh, yeah... I really have the best mom in the world! What a terrific figure she has... It's so nice to hold on to her... ...her elastic cushy breasts... This is a dream I don't want to wake up from! ){/i}"
 
 # game/events/ann.rpy:468
 translate english ann_dressed_shop_gift_cda3b4f9:
@@ -998,11 +998,11 @@ translate english ann_dressed_shop_gift_e66adddb:
     # Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
     Ann_05 "[succes!t]You're very nice today, Max! For that, I'll even kiss you on the cheek as motivation to please me more often..."
 
-# game/events/ann.rpy:476
-translate english ann_dressed_shop_gift_d97afa36:
+# game/events/ann.rpy:516
+translate english ann_dressed_shop_gift_0f7cc57e:
 
-    # Max_06 "{i}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/i}"
-    Max_06 "{i}Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips.{/i}"
+    # Max_06 "{i}( Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно... ){/i}"
+    Max_06 "{i}( Wow! That's even more than I was hoping for... And it's just as nice to feel the touch of her lips. ){/i}"
 
 # game/events/ann.rpy:479
 translate english ann_dressed_shop_gift_c0df5b86:
@@ -1052,4 +1052,3 @@ translate english ann_shower_not_luck_9b36810d:
 
     # Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
     Ann_15 "[spotted!t]Max!!!! What are you doing here? Turn around now!!!" nointeract
-
