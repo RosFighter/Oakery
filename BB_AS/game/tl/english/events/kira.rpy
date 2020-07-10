@@ -186,10 +186,10 @@ translate english kira_bath_kira_mass_bath_first_4c5d4be5:
     # Max_05 "Ага, у меня просто невероятная тётя!"
     Max_05 "Yeah, I have an incredible Aunt!"
 
-# game/events/kira.rpy:115
-translate english kira_bath_kira_mass_bath_first_1dbb6d63:
+# game/events/kira.rpy:114
+translate english kira_bath_kira_mass_bath_first_7c395da3:
 
-    # Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю нось просидеть, но не пора ли сделать своей любимой тёте приятно?" nointeract
+    # Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю ночь просидеть, но не пора ли сделать своей любимой тёте приятно?" nointeract
     Kira_02 "Hahaha yes you do... I know you wouldn't mind sitting there all night, but isn't it time to make your favorite Aunt happy?" nointeract
 
 # game/events/kira.rpy:120
@@ -210,10 +210,10 @@ translate english kira_bath_kira_mass_bath_first_b78e1d45:
     # Max_01 "Курсы на компьютере... Ну и на Алисе с Лизой тренировался."
     Max_01 "Online courses... Well, I also practiced on Alice and Lisa."
 
-# game/events/kira.rpy:124
-translate english kira_bath_kira_mass_bath_first_9e434fde:
+# game/events/kira.rpy:123
+translate english kira_bath_kira_mass_bath_first_7e4304c9:
 
-    # Kira_05 "Думаю, тебе нужно это развивать... Уверенна, твои нежные, но сильные пальчики могут принести невероятное наслаждение!"
+    # Kira_05 "Думаю, тебе нужно это развивать... Уверена, твои нежные, но сильные пальчики могут принести невероятное наслаждение!"
     Kira_05 "You should definitely keep at it... I know you're gentle, but strong fingers can also bring incredible pleasure!"
 
 # game/events/kira.rpy:128
@@ -222,10 +222,10 @@ translate english kira_bath_kira_mass_bath_first_1095bd15:
     # Max_07 "И как мне это развивать?"
     Max_07 "And how do I develop this?"
 
-# game/events/kira.rpy:129
-translate english kira_bath_kira_mass_bath_first_8b266fd0:
+# game/events/kira.rpy:128
+translate english kira_bath_kira_mass_bath_first_00ca4913:
 
-    # Kira_01 "У меня здесь есть одна бывшая однокласница и как я помню, она с мужем как раз занимается массажем и йогой. Я попробую с ней встретиться и договориться, чтобы они тебя поднатаскали в этом... Если, конечно, хочешь?"
+    # Kira_01 "У меня здесь есть одна бывшая одноклассница и, как я помню, она с мужем как раз занимается массажем и йогой. Я попробую с ней встретиться и договориться, чтобы они тебя поднатаскали в этом... Если, конечно, хочешь?"
     Kira_01 "I have an old friend here. She and her husband are specialists in massage and yoga. I'll try to meet with her and arrange for them to train you... If, of course, you want to?"
 
 # game/events/kira.rpy:130
@@ -973,9 +973,9 @@ translate english kira_night_tv_second_lesson_4466434c:
     Kira_09 "[succes!t]Oh Yes... already much better... You've become a fast learner... Mmm..." nointeract
 
 # game/events/kira.rpy:810
-translate english kira_night_tv_second_lesson_7157d27b:
+translate english kira_night_tv_second_lesson_dd029968:
 
-    # Max_05 "{i}( Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она она начала поглаживать мой член... ){/i}"
+    # Max_05 "{i}( Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она начала поглаживать мой член... ){/i}"
     Max_05 "{i}( Yes! I did it! I can finally enjoy her bare tits... It's awesome! Kira seems to like it too, and I can already feel her nipples stiffen. Uhh, shit... she started stroking my cock... ){/i}"
 
 # game/events/kira.rpy:776
@@ -1159,10 +1159,10 @@ translate english kira_bath_mass_bath_70ceb864:
     # Max_05 "Ага, у меня самая красивая тётя на свете!"
     Max_05 "Yeah, I have the most beautiful Aunt in the world!"
 
-# game/events/kira.rpy:170
-translate english kira_bath_mass_bath_1dbb6d63:
+# game/events/kira.rpy:169
+translate english kira_bath_mass_bath_7c395da3:
 
-    # Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю нось просидеть, но не пора ли сделать своей любимой тёте приятно?" nointeract
+    # Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю ночь просидеть, но не пора ли сделать своей любимой тёте приятно?" nointeract
     Kira_02 "Hahaha yes you do... I know you wouldn't mind sitting there all night, but isn't it time to make your favorite Aunt happy?" nointeract
 
 # game/events/kira.rpy:175
@@ -2190,4 +2190,3 @@ translate english strings:
     # game/events/kira.rpy:1082
     old "{i}начать ласкать её киску языком{/i}"
     new "{i}Invade her pussy with your tongue{/i}"
-

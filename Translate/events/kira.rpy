@@ -2180,14 +2180,14 @@ translate english kira_night_tv_tv_cuni_f7a0a397:
     Max_04 "Yes... I really want it!"
 
 # game/events/kira.rpy:1121
-translate english kira_night_tv_failed_cb5d25ab:
+translate english kira_night_tv_failed_289db281:
 
-    # Max_09 "Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут."
-    Max_09 "Aunt Kira isn't easily convinced. I should take some online courses to make me more persuasive."
+    # Max_09 "{i}( Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут. ){/i}"
+    Max_09 "{i}( Aunt Kira isn't easily convinced. I should take some online courses to make me more persuasive. ){/i}"
 
 translate english strings:
 
     # game/events/kira.rpy:1082
     old "{i}начать ласкать её киску языком{/i}"
-    new "{i1}Invade her pussy with your tongue{/i}"
+    new "{i}Invade her pussy with your tongue{/i}"
 
