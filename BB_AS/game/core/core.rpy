@@ -676,6 +676,10 @@ label after_load:
             if 'kira' in chars:
                 $ flags['hint.cources'] = False
 
+            if talk_var['dinner'] > talk_var['breakfast']+4:
+                $ talk_var['breakfast'] = 4
+                $ talk_var['dinner'] = 4
+
 
         if current_ver < config.version:
             $ current_ver = config.version

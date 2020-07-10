@@ -669,13 +669,13 @@ label dinner_after_punishment:
         jump dinner_4
     elif all([day>=5, GetWeekday(day)==0, talk_var['dinner']==4]):
         jump dinner_5
-    elif all([day>=6, GetWeekday(day)==1, talk_var['dinner']==5]):
+    elif all([day>=6, GetWeekday(day)==1, talk_var['breakfast']==5, talk_var['dinner']==5]):
         jump dinner_6
-    elif all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]):
+    elif all([day>=11, GetWeekday(day)==6, talk_var['breakfast']==5, talk_var['dinner']==6]):
         jump dinner_11
     elif all([day>=12, GetWeekday(day)==0, talk_var['dinner']==11, talk_var['breakfast']==12]):
         jump dinner_12
-    elif all([day>=17, GetWeekday(day)==5, talk_var['dinner']==12]):
+    elif all([day>=17, GetWeekday(day)==5, talk_var['breakfast']==12, talk_var['dinner']==12]):
         jump dinner_17
     else:
         jump typical_dinner

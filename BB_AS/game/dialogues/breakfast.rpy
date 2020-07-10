@@ -852,7 +852,7 @@ label breakfast_after_punishment:
         jump breakfast_3
     elif day == 4:
         jump breakfast_4
-    elif day == 5:
+    elif all([day>=5, GetWeekday(day)==0, talk_var['breakfast']==4]):
         jump breakfast_5
     elif all([day>=7, GetWeekday(day)==2, talk_var['breakfast']==5, talk_var['dinner']==6]):  # вторник после ночевки Эрика
         jump breakfast_7
