@@ -2129,13 +2129,13 @@ translate english kira_night_tv_bj_174945ac:
 translate english kira_night_tv_tv_cuni_6764d776:
 
     # Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Верно?"
-    Kira_05 ""
+    Kira_05 "That's better... You make watching porn a lot more fun. But, we're not just gonna sit around and look at each other, right?"
 
 # game/events/kira.rpy:1082
 translate english kira_night_tv_tv_cuni_2c995eaa:
 
     # Max_01 "Мне нравится, к чему ты клонишь, тётя Кира..." nointeract
-    Max_01 "" nointeract
+    Max_01 "I like where you're going with this, Aunt Kira..." nointeract
 
 # game/events/kira.rpy:1087
 translate english kira_night_tv_tv_cuni_328ceb80:
@@ -2171,7 +2171,7 @@ translate english kira_night_tv_tv_cuni_f090a75a:
 translate english kira_night_tv_tv_cuni_4931b5c7:
 
     # Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
-    Kira_07 ""
+    Kira_07 "Yes, I'm very spoiled... now I think you deserve something special, I can see your cock is begging for attention..."
 
 # game/events/kira.rpy:1105
 translate english kira_night_tv_tv_cuni_f7a0a397:
@@ -2183,11 +2183,11 @@ translate english kira_night_tv_tv_cuni_f7a0a397:
 translate english kira_night_tv_failed_cb5d25ab:
 
     # Max_09 "Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут."
-    Max_09 ""
+    Max_09 "Aunt Kira isn't easily convinced. I should take some online courses to make me more persuasive."
 
 translate english strings:
 
     # game/events/kira.rpy:1082
     old "{i}начать ласкать её киску языком{/i}"
-    new ""
+    new "{i1}Invade her pussy with your tongue{/i}"
 
