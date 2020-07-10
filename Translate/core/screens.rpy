@@ -343,5 +343,5 @@ translate english strings:
 
     # game/core/screens.rpy:1360
     old "Сексуальный опыт"
-    new ""
+    new "Sexual experience"
 

@@ -59,37 +59,37 @@ translate english strings:
 
     # game/core/04function.rpy:195
     old "+ к навыку скрытности"
-    new ""
+    new "+ Stealth skill"
 
     # game/core/04function.rpy:199
     old "+ к навыку убеждения"
-    new ""
+    new "+ Persuasion skill"
 
     # game/core/04function.rpy:203
     old "+ к навыку массажа"
-    new ""
+    new "+ Massage skill"
 
     # game/core/04function.rpy:207
     old "+ к навыку поцелуев"
-    new ""
+    new "+ Kissing skill"
 
     # game/core/04function.rpy:211
     old "+ к навыку эротического массажа"
-    new ""
+    new "+ Erotic massage skill"
 
     # game/core/04function.rpy:215
     old "+ к тренированности"
-    new ""
+    new "+ Fitness"
 
     # game/core/04function.rpy:219
     old "+ к навыку кунилингуса"
-    new ""
+    new "+ Cunnilingus skill"
 
     # game/core/04function.rpy:223
     old "+ к сексуальному опыту"
-    new ""
+    new "+ Sexual experience"
 
     # game/core/04function.rpy:227
     old "+ к опыту анального секса"
-    new ""
+    new "+ Anal sex experience"
 
