@@ -35,6 +35,7 @@ default number_autosave = 0
 default number_quicksave = 0
 
 default persistent.memories = {}
+default persistent.mems_var = []
 
 define weekdays = (
                   (_("ВС"), _("ВОСКРЕСЕНЬЕ")),

@@ -204,15 +204,17 @@ label NewDay:
         $ del punalice[14:]
 
     $ flags['lisa_hw'] = False
-    if 'kira' not in chars:
-        $ clothes[lisa].casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
-    else:
-        $ __r1 = renpy.random.randint(1, 2)
-        $ clothes[lisa].casual.cur = __r1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 2 if 'bathrobe' in lisa.gifts else 1
-        # if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
-        #     $ print('rand '+str(__r1))
-        # else:
-        #     $ print('max clot '+str(2 if 'bathrobe' in lisa.gifts else 1))
+
+    if clothes[lisa].learn.rand:
+        if 'kira' not in chars:
+            $ clothes[lisa].casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
+        else:
+            $ __r1 = renpy.random.randint(1, 2)
+            $ clothes[lisa].casual.cur = __r1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 2 if 'bathrobe' in lisa.gifts else 1
+        #     if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
+        #         $ print('rand '+str(__r1))
+        #     else:
+        #         $ print('max clot '+str(2 if 'bathrobe' in lisa.gifts else 1))
 
     if mgg.credit.debt > 0:        # если кредит не погашен
         $ mgg.credit.left -= 1       # уменьшим счетчик дней
@@ -679,6 +681,24 @@ label after_load:
             if talk_var['dinner'] > talk_var['breakfast']+4:
                 $ talk_var['breakfast'] = 4
                 $ talk_var['dinner'] = 4
+
+        if current_ver < "0.04.0.05":
+            $ current_ver = "0.04.0.05"
+
+            if flags['talkaboutbath'] > 0 and not poss['nightclub'].stages[5].used:
+                $ flags['talkaboutbath'] = 0
+                $ poss['nightclub'].stages[7].used = False
+                if poss['nightclub'].stages[4].used:
+                    $ poss['nightclub'].stn = 4
+                elif poss['nightclub'].stages[3].used:
+                    $ poss['nightclub'].stn = 3
+                else:
+                    $ poss['nightclub'].stn = 2
+
+
+
+            # if all([kol_choco == 0, items['choco'].have]):
+            #     $ items['choco'].have = False
 
 
         if current_ver < config.version:

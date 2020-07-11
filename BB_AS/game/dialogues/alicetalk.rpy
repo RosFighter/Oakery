@@ -382,12 +382,9 @@ label alice_talk_tv:
         "От конфетки не поправишься! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
             if RandomChance(_ch3.ch):
                 ## Алиса съела конфетку
-                $ kol_choco -= 1
+                $ give_choco()
                 $ dcv['tvchoco'].set_lost(3)
                 $ _drink = 1
-                if kol_choco == 0:
-                    $ items['choco'].InShop = True
-                    $ notify_list.append(_("Конфеты закончились"))
                 $ Skill('social', 0.1)
                 menu:   ### Убеждение удалось
                     Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... Вкусно... Теперь я готова, начинай массаж!"
@@ -450,10 +447,7 @@ label alice_talk_tv:
         if rez == 'double_drink':
             if RandomChance(_ch3.ch):
                 $ _drink = 2
-                $ kol_choco -= 1
-                if kol_choco == 0:
-                    $ items['choco'].InShop = True
-                    $ notify_list.append(_("Конфеты закончились"))
+                $ give_choco()
                 $ Skill('social', 0.1)
                 Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
                 Max_01 "Может, тогда тебе стоит снять джинсы? Не будет так жарко..."

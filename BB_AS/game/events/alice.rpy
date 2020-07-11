@@ -711,10 +711,7 @@ label alice_dressed_club:
                         Alice_02 "Может быть, мне их ещё и снять для тебя? Давай, вали уже, извращенец. А за конфетку спасибо..."
                     "Да, никакого подвоха!":
                         Alice_07 "Вот это да! Ну, спасибо тогда... А теперь вали. Я ещё не закончила..."
-                $ kol_choco -= 1
-                if kol_choco == 0:
-                    $ items['choco'].InShop = True
-                    $ notify_list.append(_("Конфеты закончились"))
+                $ give_choco()
                 jump .end
             # "{i}дать две конфеты {/i} ## убеждение ##" if kol_choco > 1 and poss['nightclub'].stages[7].used:
             #     $ flags['alice.drink'] = 2
@@ -1163,14 +1160,14 @@ label alice_after_club:
             "Ну Алиса... Ну чуть-чуть...":
                 Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
                 Max_00 "Всё понял, ухожу..."
-                jump .end
             "Хорошо. Спокойной ночи, Алиса...":
-                jump .end
+                pass
+        $ poss['nightclub'].SetStage(7)
+        $ flags['talkaboutbath'] = 1
+        jump .end
 
     label .end:
         ### здесь ставим флаг разговора в ванной, продвижение возможности тусовщица
-        $ poss['nightclub'].SetStage(7)
-        $ flags['talkaboutbath'] = 1
         $ spent_time += 10
         jump Waiting
 

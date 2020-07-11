@@ -589,6 +589,20 @@ init python:
                 dress = clothes[lisa].casual.GetCur().suf
                 inf   = clothes[lisa].casual.GetCur().info
                 clot  = 'casual'
+                # # откорректируем по настрению
+                # if clothes[lisa].learn.rand:
+                #     mood = GetRelMax('lisa')[0] > 2
+                #     # если включен рандом и есть нужное настроение
+                #     if 'bathrobe' in lisa.gifts and mood:
+                #         dress  = 'b'
+                #         inf    = '04'
+                #     elif 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
+                #         dress  = 'd'
+                #         inf    = '01c'
+                #     else:  # иначе - обычную повседневку
+                #         dress  = 'a'
+                #         inf    = '01a'
+
             elif name in ['shower', 'bath']:
                 inf = '04a'
             elif name == 'in_shcool':
@@ -1110,3 +1124,12 @@ init python:
                 ])
         else:
             return False
+
+
+    def give_choco():
+        global kol_choco, items
+        kol_choco -= 1
+        if kol_choco == 0:
+            items['choco'].InShop = True
+            items['choco'].have   = Flase
+            notify_list.append(_("Конфеты закончились"))
