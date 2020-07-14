@@ -276,12 +276,13 @@ label alice_shower:
                 jump .end
 
     label .spider:
-        $ spent_time += 10
         $ renpy.scene()
-        $ items['spider'].have = False
-        $ SpiderKill = 1
-        $ SpiderResp = 2
         $ renpy.show('Max spider-bathroom 01'+mgg.dress)
+        if not _in_replay:
+            $ items['spider'].have = False
+            $ SpiderKill = 1
+            $ SpiderResp = 2
+            $ spent_time += 10
         menu:
             Max_03 "Давай, паучок, вперёд! Я хочу, чтобы ты познакомился с моей очаровательной сестрёнкой. Характер у неё правда так себе, но думаю, вы оба поладите..."
             "{i}спрятаться{/i}":
@@ -291,7 +292,8 @@ label alice_shower:
         Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
         Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
         Max_02 "...подождать."
-        $ poss['spider'].OpenStage(3)
+        if not _in_replay:
+            $ poss['spider'].OpenStage(3)
         scene BG char Alice spider-bathroom-00
         $ renpy.show('Alice spider-shower 01'+renpy.random.choice(['a','b','c']))
         Alice_06 "Боже мой, какой кошмар... И что мне теперь с этим пауком делать... Ну почему эти твари лезут именно ко мне? Может быть, он уползёт..."
@@ -322,7 +324,8 @@ label alice_shower:
         $ renpy.show('Alice spider-shower 03'+renpy.random.choice(['a','b','c']))
         Alice_12 "Макс, ну ты где там?! Только смотри, чтобы этого монстра не было на моём полотенце! Иначе тебе будет очень-очень больно..."
         $ renpy.show('Max spider-bathroom 04'+mgg.dress)
-        $ spent_time += 10
+        if not _in_replay:
+            $ spent_time += 10
         menu:
             Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи."
             "{i}отдать Алисе полотенце{/i}":
@@ -346,7 +349,7 @@ label alice_shower:
                     Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!"
                     "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         pass
-                if RandomChance(_ch1.ch):
+                if RandomChance(_ch1.ch) or _in_replay:
                     $ Skill('social', 0.2)
                     Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
                     Max_00 "Да это случайно вышло!"
@@ -357,6 +360,7 @@ label alice_shower:
                     Max_10 "Так получилось! Я не хотел..."
                     Alice_17 "Да иди ты, Макс!"
                     $ AddRelMood('alice', -15, -75)
+        $ renpy.end_replay()
         jump .end
 
     label .alt_peepeng:
@@ -802,7 +806,7 @@ label spider_in_bed:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
         "Что случилось?":
             pass
-        "Разбирайся сама...":
+        "Разбирайся сама..." if not _in_replay:
             jump .goaway
 
     show Max spider-night 02-04
@@ -810,7 +814,7 @@ label spider_in_bed:
         Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!"
         "Ну, пойдём посмотрим...":
             jump .help
-        "Паук? Ерунда какая. Сама разбирайся с ним...":
+        "Паук? Ерунда какая. Сама разбирайся с ним..." if not _in_replay:
             jump .goaway
 
     label .goaway:
@@ -841,17 +845,17 @@ label spider_in_bed:
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
                     "Давай $10! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
-                        if RandomChance(_ch1.ch):
+                        if RandomChance(_ch1.ch) or _in_replay:
                             jump .money
                         else:
                             jump .fail
                     "Покажи сиськи! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
-                        if RandomChance(_ch2.ch):
+                        if RandomChance(_ch2.ch) or _in_replay:
                             jump .tits
                         else:
                             jump .fail
                     "Сними верх! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
-                        if RandomChance(_ch3.ch):
+                        if RandomChance(_ch3.ch) or _in_replay:
                             jump .toples
                         else:
                             jump .fail
@@ -868,11 +872,11 @@ label spider_in_bed:
                 menu:
                     Alice_15 "Ах, так! Значит то, что договорённость я соблюдаю, ты видишь, а вот здоровенного паука на моей кровати нет?!"
                     "На красивое глаза легче открываются... {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
-                        if RandomChance(_ch3.ch):
+                        if RandomChance(_ch3.ch) or _in_replay:
                             jump .toples
                         else:
                             jump .fail
-                    "Давай уже показывай сиськи!":
+                    "Давай уже показывай сиськи!" if not _in_replay:
                         jump .fail
                 jump .spider
             "Хорошо, где он там..." if not flags['noted']:
@@ -964,6 +968,7 @@ label spider_in_bed:
                         menu:
                             Alice_17 "Ах так... Ну, тогда я обижусь на тебя! Всё, вали отсюда!"
                             "{i}вернуться в кровать{/i}":
+                                $ renpy.end_replay()
                                 $ __mood -= 100
                                 $ spent_time = 30
                                 $ AddRelMood('alice', 0, __mood)
@@ -973,12 +978,13 @@ label spider_in_bed:
                                 return
                     "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз.\n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                         show Max spider-night 04-02
-                        if RandomChance(_ch1.ch):
+                        if RandomChance(_ch1.ch) or _in_replay:
                             $ Skill('social', 0.2)
                             Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
                             menu:
                                 Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!"
                                 "{i}вернуться в кровать{/i}":
+                                    $ renpy.end_replay()
                                     $ __mood += 50
                                     $ spent_time = 30
                                     $ AddRelMood('alice', 0, __mood)
@@ -1005,6 +1011,7 @@ label spider_in_bed:
         menu:
             Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!"
             "{i}вернуться в кровать{/i}":
+                $ renpy.end_replay()
                 $ spent_time = 30
                 $ __mood -= 50
                 $ AddRelMood('alice', 0, __mood)
@@ -1017,6 +1024,7 @@ label spider_in_bed:
         menu:
             Alice_01 "Так ему! Спасибо, Макс! Ты мой спаситель. А теперь иди отсюда, я спать хочу!"
             "{i}вернуться в кровать{/i}":
+                $ renpy.end_replay()
                 $ __mood += 100
                 $ AddRelMood('alice', 0, __mood)
                 $ spent_time = 30
@@ -1111,7 +1119,6 @@ label alice_after_club:
             jump .end
 
     label .knock:
-        $ spent_time += 10
         if 'smoke' in talk_var and flags['smoke'] == 'nopants':
             $ __suf = 'a'
             $ alice.dress_inf = '04da'
@@ -1153,7 +1160,7 @@ label alice_after_club:
                     $ renpy.show('Alice bach-after-club '+__r1+'b')
                     Alice_07 "Например, так? Да, я вижу твой дружок запульсировал ещё сильнее... Это так возбуждает!"
                 Max_03 "А ты не хочешь мне помочь?"
-            "А ты не хочешь мне помочь?":
+            "А ты не хочешь мне помочь?" if not _in_replay:
                 pass
         menu:
             Alice_05 "Ты знаешь... Я ещё не настолько пьяна и, кажется, меня уже отпускает. Так что... Придётся тебе самому разбираться с твоей проблемой... А у меня набралась ванна. Так что..."
@@ -1162,6 +1169,8 @@ label alice_after_club:
                 Max_00 "Всё понял, ухожу..."
             "Хорошо. Спокойной ночи, Алиса...":
                 pass
+        $ renpy.end_replay()
+        $ spent_time += 10
         $ poss['nightclub'].SetStage(7)
         $ flags['talkaboutbath'] = 1
         jump .end

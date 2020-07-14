@@ -1202,7 +1202,7 @@ label Lisa_HomeWork:
 
     label .first_foot_mass:
         if not _in_replay:
-            $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = True
+            $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = 1
         else:
             # сформируем фон:
             scene BG char Lisa lessons-help-00
@@ -1368,7 +1368,7 @@ label Lisa_HomeWork:
         Max_02 "Уверена?"
         Lisa_06 "Да-а-а... От этого массажа мне становится слишком горячо... А здесь и так жарко!"
         if not _in_replay:
-            $ persistent.memories['Lisa_HomeWork.shoulders'] = True
+            $ persistent.memories['Lisa_HomeWork.shoulders'] = 1
             $ add_lim('lisa.ri', 0.1, 5)
         jump .end_shoulders2
 
@@ -1485,7 +1485,7 @@ label liza_hand_mass:
 
     $ renpy.end_replay()
 
-    $ persistent.memories['liza_hand_mass'] = True
+    $ persistent.memories['liza_hand_mass'] = 1
     $ talk_var['lisa.handmass'] = 2
     $ AddRelMood('lisa', 0, 50)
     jump Waiting
@@ -1598,7 +1598,7 @@ label gift_swimsuit:
 
     label .swimsuit_show:
         if not _in_replay:
-            $ persistent.memories['gift_swimsuit.swimsuit_show'] = True
+            $ persistent.memories['gift_swimsuit.swimsuit_show'] = 1
         scene BG char Lisa newsuit
         $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
         $ renpy.show("Lisa newsuit 01"+__suf)
@@ -1751,6 +1751,7 @@ label gift_bathrobe:
     $ items['bathrobe'].have = False
     $ items['bathrobe'].InShop = False
     $ lisa.gifts.append('bathrobe')
+    $ added_mem_var('bathrobe')
     if lisa.inferic is not None:
         $ lisa.inferic = clip(lisa.inferic-50.0, 0.0, 100.0)
     if lisa.infmax is not None:

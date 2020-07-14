@@ -54,7 +54,7 @@ label kira_bath:
 
     label .ladder:
         $ renpy.scene()
-        $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
+        show Max bathroom-window-evening 02c
         Max_04 "Посмотрим, что у нас тут..."
 
         scene BG bath-00
@@ -144,9 +144,13 @@ label kira_bath:
         Max_04 "Ладно, тётя Кира. Я тогда пошёл. Спокойной ночи. Было очень классно побыть с тобой!"
         Kira_04 "Приятных снов, Макс. И да, пожалуй, в следующий раз, ты можешь просто заходить без стука. Если ещё не будешь спать..."
         Max_05 "С радостью."
+        if not _in_replay:
+            $ added_mem_var('kira_mass_bath_first')
         jump .end_sleep
 
     label .mass_bath:
+        if not _in_replay and 'kira_bath.mass_bath' not in persistent.memories:
+            $ persistent.memories['kira_bath.mass_bath'] = 0
         scene BG char Kira bath-talk-00
         $ __r1 = renpy.random.choice(['01', '02', '03'])
         $ renpy.show('Kira bath-talk '+__r1)
@@ -194,7 +198,7 @@ label kira_bath:
             menu:
                 Kira_07 "Ты только не останавливайся, от твоих прикосновений мне становится так жарко! Напряжения, как не бывало..."
                 "А моё напряжение только растёт, тётя Кира! Может поможешь? \n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['kira.tv.touch']<2:
-                    if not RandomChance(_ch1.ch):
+                    if not RandomChance(_ch1.ch) and not _in_replay:
                         $ Skill('social', 0.2)
                         Kira_09 "Макс, уже так поздно... и меня настолько расслабила ванна и твой массаж, что я засыпаю. Так что давай закругляться."
                         scene BG char Kira bath-talk-03
@@ -224,11 +228,11 @@ label kira_bath:
             $ _ch1 = GetChance(mgg.sex+10, 4, 900)
             menu:
                 Kira_09 "Ох, Макс, как же меня заводит твой огромный член! Ты так жадно смотришь, как я ласкаю себя, свою грудь... Ах, моя киска вся горит, не отводи от неё глаз..."
-                "{i}подтянуть её к себе и ласкать пальцами{/i}" if flags['kira.tv.bj']:
+                "{i}подтянуть её к себе и ласкать пальцами{/i}" if flags['kira.tv.bj'] or (_in_replay and memes>1):
                     jump .cuni_bj
-                "{i}пытаться не кончить{/i} \n{color=[_ch1.col]}(Сексуальный опыт. Шанс: [_ch1.vis]){/color}":
+                "{i}пытаться не кончить{/i} \n{color=[_ch1.col]}(Сексуальный опыт. Шанс: [_ch1.vis]){/color}" if not _in_replay or (_in_replay and memes<2):
                     pass
-            if not RandomChance(_ch1.ch):
+            if not RandomChance(_ch1.ch) and not _in_replay:
                 scene BG char Kira bath-fj-03
                 show Kira bath-mass fj3-01
                 $ Skill('sex', 0.1)
@@ -248,8 +252,9 @@ label kira_bath:
             Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
             Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
             Kira_04 "Приятных снов, Макс."
-            # $ notify_list.append(_("Теперь Макс чуть лучше себя контролирует"))
             $ flags['kira.bath.fj'] = True
+            if not _in_replay:
+                $ persistent.memories['kira_bath.mass_bath'] = 1
             jump .end_sleep
 
     label .cuni_bj:
@@ -282,7 +287,7 @@ label kira_bath:
         menu:
             Kira_05 "Сначала, я хочу приласкать его своим язычком... Вот так... Я знаю, что тебе это нравится..."
             "Ох, тётя Кира... Ты слишком ловко меня дразнишь! Я могу не выдержать... \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
-                if not RandomChance(_ch3.ch):
+                if not RandomChance(_ch3.ch) and not _in_replay:
                     # (не получилось сдержаться)
                     jump .not_restrain
 
@@ -300,7 +305,7 @@ label kira_bath:
         menu:
             Max_21 "{i}( Ухх... Как нежно она посасывает своими губами мой член. И язычком орудует с такой страстью... Просто бесподобно! ){/i}"
             "Да, давай ещё тётя Кира! Какие же горячие и ненасытные у тебя губки... Да... \n{color=[_ch2.col]}(Сексуальный опыт. Шанс: [_ch2.vis]){/color}":
-                if not RandomChance(_ch3.ch):
+                if not RandomChance(_ch3.ch) and not _in_replay:
                     # (не получилось сдержаться)
                     jump .not_restrain
 
@@ -319,6 +324,8 @@ label kira_bath:
         Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
         Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
         Kira_04 "Приятных снов, Макс."
+        if not _in_replay:
+            $ added_mem_var('bath_cuni_bj')
         jump .end_sleep
 
     label .not_restrain:
@@ -338,6 +345,7 @@ label kira_bath:
         jump .end_sleep
 
     label .end_sleep:
+        $ renpy.end_replay()
         $ spent_time += 30
         $ current_room = house[0]
         jump Sleep
@@ -403,8 +411,9 @@ label kira_night_tv:
         for i in range(1, 6):
             for j in range(3, 4):
                 __list.append('porn-0'+str(i)+' 0'+str(j))
-        for j in range(1, 7):
-            __list.append('serial 0'+str(j))
+        if not _in_replay:
+            for j in range(1, 7):
+                __list.append('serial 0'+str(j))
     $ __film = renpy.random.choice(__list)
     $ renpy.show('tv '+__film, at_list=[tv_screen,])
     $ renpy.show('Kira tv-watch 01'+kira.dress)
@@ -546,6 +555,8 @@ label kira_night_tv:
 
     label .porn_view:
         # совместный просмотр порно
+        if not _in_replay and 'kira_night_tv.porn_view' not in persistent.memories:
+            $ persistent.memories['kira_night_tv.porn_view'] = 0
         scene BG tv-watch-01
         $ talk_var['kira.porn']+=1
         if talk_var['kira.porn']==1:
@@ -593,7 +604,11 @@ label kira_night_tv:
             Max_04 "Хорошо. Спокойной ночи, тётя Кира."
             jump .end
         else:
-            $ renpy.show('tv kira-porn-00 01', at_list=[tv_screen,])
+            if _in_replay:
+                scene BG tv-watch-01
+            elif persistent.memories['kira_night_tv.porn_view'] < 1:
+                $ persistent.memories['kira_night_tv.porn_view'] = 1
+            $ renpy.show('tv kira-porn-00 '+renpy.random.choice(['01', '02', '03']), at_list=[tv_screen,])
             $ renpy.show('Kira tv-watch 01'+kira.dress)
             show Max tv-watch 01c
 
@@ -686,13 +701,18 @@ label kira_night_tv:
                 Kira_01 "Тогда, на сегодня мы закончили. Конечно, получается у тебя пока не очень, но это нормально. И ты знаешь, где меня найти, если захочешь потренироваться ещё... А теперь марш спать!"
                 $ mgg.kissing = 0.9
         Max_01 "Конечно! Спасибо, тётя Кира!"
+        $ renpy.end_replay()
+        $ persistent.memories['kira_night_tv.first_lesson'] = 1
         $ poss['seduction'].OpenStage(7)
         $ talk_var['teachkiss'] = 2
+
         jump .end
 
     label .second_lesson:
         # второй урок
         $ renpy.block_rollback()
+        if not _in_replay and 'kira_night_tv.second_lesson' not in persistent.memories:
+            $ persistent.memories['kira_night_tv.second_lesson'] = 0
         scene BG char Kira tv-kiss-01
         show Kira tv-kiss 1-01
         Kira_01 "В прошлый раз я тебе рассказала про прелюдии, но с ними мы разобрались. Так что, давай просто будем повышать твою технику опытным путём..."
@@ -719,7 +739,7 @@ label kira_night_tv:
         $ renpy.show('Kira tv-kiss 1-'+__r1)
         menu:
             Max_03 "{i}( О да! Кажется, мне никогда не надоест такая практика... Она так увлечённо целуется... Что она там говорила, про нужный момент? Может быть, это как раз он? ){/i}"
-            "{i}прикоснуться к её груди{/i}":
+            "{i}прикоснуться к её груди{/i}" if not _in_replay:
                 $ renpy.block_rollback()
                 show Kira tv-kiss 1-04
                 Kira_03 "Макс, это уже слишком! Зачем же так сразу? Как мне кажется, ты так ничего и не понял..."
@@ -732,7 +752,7 @@ label kira_night_tv:
                 $ Skill('kissing', 0.2)
                 jump .end
 
-            "{i}прикоснуться к её попке{/i}":
+            "{i}прикоснуться к её попке{/i}" if not _in_replay:
                 $ renpy.block_rollback()
                 show Kira tv-kiss 1-01
                 Kira_03 "Макс, ты немного спешишь! Зачем же так сразу? Как мне кажется, ты так ничего и не понял..."
@@ -751,7 +771,7 @@ label kira_night_tv:
                 $ Skill('kissing', 0.1)
                 menu:
                     Max_02 "{i}( Ничего себе! Кира меня не оттолкнула! Похоже, я всё делаю верно... и, наверно, можно двигаться дальше? Боже мой, какая же у неё гладкая кожа, просто шёлк! ){/i}"
-                    "{i}прикоснуться к её груди{/i}":
+                    "{i}прикоснуться к её груди{/i}" if not _in_replay:
                         $ renpy.block_rollback()
                         scene BG char Kira tv-kiss-01
                         show Kira tv-kiss 1-04
@@ -778,7 +798,9 @@ label kira_night_tv:
                 scene BG char Kira tv-kiss-03
                 show Kira tv-kiss 3-01
                 Max_04 "{i}( Отлично! Кажется, ей действительно нравится, что я делаю... Она целует меня с такой жадностью, пока я мну её обалденную грудь... Она прикасается всё ниже и ниже, класс! ){/i}"
-                $ talk_var['teachkiss'] = 4
+                if not _in_replay:
+                    $ persistent.memories['kira_night_tv.second_lesson'] = 1
+                    $ talk_var['teachkiss'] = 4
                 if talk_var['kira.bath.mass']==0:
                     #если массажа ног Киры в ванне ещё не было
                     Kira_07 "Ммм... Макс... думаю... нам надо заканчивать. Уже ведь так поздно."
@@ -794,7 +816,7 @@ label kira_night_tv:
                         Kira_07 "Ммм... Макс... думаю... нам надо заканчивать. Уже ведь так поздно."
                         "Давай ещё немного, тётя Кира... У меня ведь неплохо получается? \n{color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
                             pass
-                    if not RandomChance(_ch2.ch): ###Убеждение не удалось
+                    if not RandomChance(_ch2.ch) and not _in_replay: ###Убеждение не удалось
                         $ Skill('social', 0.1)
                         $ Skill('kissing', 0.3)
                         Kira_04 "[failed!t]Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
@@ -804,7 +826,8 @@ label kira_night_tv:
                         menu:
                             Kira_09 "[succes!t]О да... уже значительно лучше... Ты быстро схватываешь... Ммм..."
                             "{i}развязать её ночнушку{/i}":
-                                $ talk_var['kira.tv.touch'] = 2  # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
+                                if not _in_replay:
+                                    $ talk_var['kira.tv.touch'] = 2  # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
                                 scene BG char Kira tv-kiss-03
                                 show Kira tv-kiss 3-02
                                 Max_05 "{i}( Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она начала поглаживать мой член... ){/i}"
@@ -818,6 +841,13 @@ label kira_night_tv:
 
     label .repeat_lesson:
         # третий и последующие уроки поцелуев
+        if not _in_replay:
+            $ persistent.memories['kira_night_tv.second_lesson'] = 1
+            if 'kira_night_tv.first_lesson' not in persistent.memories:
+                $ persistent.memories['kira_night_tv.repeat_lesson'] = 0
+            if 'kira_tv_bj' not in persistent.memories:
+                $ persistent.memories['kira_tv_bj'] = 0
+
         scene BG char Kira tv-kiss-01
         show Kira tv-kiss 1-01
         Kira_01 "Столько энтузиазма... Меня начинают посещать мысли, что делаешь ты это уже даже не ради обучения поцелуям..."
@@ -906,7 +936,7 @@ label kira_night_tv:
         menu:
             Kira_09 "Просто наслаждайся..."
             "Как бы мне не кончить уже сейчас! Какой у тебя игривый язычок... Ммм... \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
-                if not RandomChance(_ch3.ch):
+                if not RandomChance(_ch3.ch) and not _in_replay:
                     # (не получилось сдержаться)
                     jump .not_restrain
 
@@ -922,7 +952,7 @@ label kira_night_tv:
         menu:
             Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Видно, что это не так-то просто... ей еле хватает рта, чтобы это сделать.{/i}"
             "Да, вот так тётя Кира, твои губки творят чудеса! Охх... \n{color=[_ch2.col]}(Сексуальный опыт. Шанс: [_ch2.vis]){/color}":
-                if not RandomChance(_ch2.ch):
+                if not RandomChance(_ch2.ch) and not _in_replay:
                     # (не получилось сдержаться)
                     jump .not_restrain
 
@@ -951,6 +981,8 @@ label kira_night_tv:
         Kira_04 "Со мной?! Очень может быть... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
         Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
         $ flags['kira.tv.bj'] = True #открывается возможность куни и минета в ванне
+        if not _in_replay:
+            $ persistent.memories['kira_tv_bj'] = 1
         jump .end
 
     label .not_restrain:
@@ -1034,11 +1066,17 @@ label kira_night_tv:
         menu:
             Kira_09 "Просто наслаждайся..."
             "Как бы мне не кончить уже сейчас! Какой у тебя игривый язычок... Ммм... \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
-                if not RandomChance(_ch3.ch):
+                if _in_replay:
+                    if persistent.memories['kira_night_tv.porn_view'] < 3:
+                        jump .not_restrain2
+                elif not RandomChance(_ch3.ch):
                     # (не получилось сдержаться)
                     jump .not_restrain2
 
         # (получилось сдержаться)
+        if not _in_replay and persistent.memories['kira_night_tv.porn_view'] < 3:
+            $ persistent.memories['kira_night_tv.porn_view'] = 3
+        $ added_mem_var('tv_bj1')
         $ Skill('sex', 0.2)
         if renpy.random.randint(1, 2)>1:
             scene BG char Alice tv-mass-07
@@ -1050,12 +1088,18 @@ label kira_night_tv:
         menu:
             Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}"
             "Да, вот так тётя Кира, твои губки творят чудеса! Охх... \n{color=[_ch2.col]}(Сексуальный опыт. Шанс: [_ch2.vis]){/color}":
-                if not RandomChance(_ch2.ch):
+                if _in_replay:
+                    if persistent.memories['kira_night_tv.porn_view'] < 4:
+                        jump .not_restrain2
+                elif not RandomChance(_ch2.ch):
                     # (не получилось сдержаться)
                     jump .not_restrain2
 
         # (получилось сдержаться)
+        if not _in_replay and persistent.memories['kira_night_tv.porn_view'] < 4:
+            $ persistent.memories['kira_night_tv.porn_view'] = 4
         $ Skill('sex', 0.2)
+        $ added_mem_var('tv_bj2')
         if renpy.random.randint(1, 2)>1:
             scene BG char Kira tv-bj-01
             show Kira tv-game bj-08bb
@@ -1074,9 +1118,13 @@ label kira_night_tv:
         show Kira tv-game bj-09bb
         Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
         Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
+        if not _in_replay:
+            $ persistent.memories['kira_tv_bj'] = 1
         jump .end
 
     label .tv_cuni:
+        if _in_replay:
+            scene BG char Alice tv-mass-05
         show Kira tv-closer max-03b
         Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Верно?"
         menu:
@@ -1105,6 +1153,8 @@ label kira_night_tv:
         Max_04 "Да... Я очень этого хочу!"
         scene BG char Kira tv-bj-01
         show Kira tv-game bj-02
+        if persistent.memories['kira_night_tv.porn_view']<2 and not _in_replay:
+            $ persistent.memories['kira_night_tv.porn_view'] = 2
         jump .bj
 
     label .good_night:
@@ -1121,6 +1171,7 @@ label kira_night_tv:
             Max_09 "{i}( Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут. ){/i}"
 
     label .end:
+        $ renpy.end_replay()
         $ spent_time += 30
         $ current_room = house[0]
         jump Sleep

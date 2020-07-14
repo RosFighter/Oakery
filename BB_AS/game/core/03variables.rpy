@@ -753,4 +753,6 @@ label AddKira:
     $ flags['hint.cources'] = False
     $ peeping['kira_shower'] = 0
 
+    $ added_mem_var('kira')
+
     return

@@ -183,6 +183,9 @@ init python:
 
     def Skill(skill, rise, limit=1000):
         global mgg, notify_list
+        if _in_replay:
+            return
+
         if skill in ['hide', 'soc', 'mass', 'kiss', 'ero', 'train']:
             skil_name = {'hide':'stealth', 'soc':'social', 'mass':'massage', 'ero':'ero_massage', 'kiss':'kissing', 'train':'training'}[skill]
         else:
@@ -261,6 +264,8 @@ init python:
 
 
     def AddRelMood(char, rel, mood): # добавить изменение настроения и отношений и показать подсказку
+        if _in_replay:
+            return
         rel_suf = ChangeRel(rel)
         mood_suf = ChangeMood(mood)
 
@@ -783,6 +788,8 @@ init python:
 
 
     def SetCamsGrow(room, grow): # устанавливает коэффициент интереса к событию для камер в комнате
+        if _in_replay:
+            return
         for cam in room.cams:
             cam.grow = max(cam.grow, grow)
             # grow = int(grow * 0.8) # для каждой последующей камеры интерес снижается на 20%
@@ -1128,8 +1135,15 @@ init python:
 
     def give_choco():
         global kol_choco, items
+        if _in_replay:
+            return
         kol_choco -= 1
         if kol_choco == 0:
             items['choco'].InShop = True
             items['choco'].have   = Flase
             notify_list.append(_("Конфеты закончились"))
+
+
+    def added_mem_var(x):
+        if x not in persistent.mems_var:
+            persistent.mems_var.append(x)

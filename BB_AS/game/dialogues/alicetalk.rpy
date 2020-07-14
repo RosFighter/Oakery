@@ -300,6 +300,11 @@ label talkblog1:
 
 
 label alice_talk_tv:
+    if _in_replay:
+        call alice_tv_closer
+    else:
+        if 'alice_talk_tv' not in persistent.memories:
+            $ persistent.memories['alice_talk_tv'] = 0
     Alice_00 "Нет, садись. Тут места много..."
     $ talk_var['alice_tv'] = 1
     $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
@@ -308,15 +313,16 @@ label alice_talk_tv:
     $ SetCamsGrow(house[4], 110)
     menu:
         Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."
-        "Ну, давай смотреть всё подряд...":
+        "Ну, давай смотреть всё подряд..." if not _in_replay:
             Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
             Max_00 "Ладно, пойду я..."
             jump .end
-        "Тебе сделать массаж ног?" if all([not talk_var['al.tv.mas'], (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):
+        "Тебе сделать массаж ног?" if _in_replay or all([not talk_var['al.tv.mas'], (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):
             $ renpy.show("Max tv-closer 04"+mgg.dress)
 
     $ talk_var['al.tv.mas'] = 1
     $ _ch4 = GetChance(mgg.social, 4, 900)
+    $ _drink = 0
     if flags['alice.tv.mass'] == 0:     # Первая беседа о массаже
         Alice_02 "Что-то новенькое... А ты умеешь?"
         Max_01 "Само собой!"
@@ -339,9 +345,9 @@ label alice_talk_tv:
     else:
         menu:
             Alice_07 "Дай-ка подумаю... Да! Я готова..."
-            "Хорошо {i}(начать массаж){/i}":
+            "Хорошо {i}(начать массаж){/i}" if not _in_replay:
                 jump .massage
-            "Может конфетку перед массажем?" if kol_choco:  ### если Макс знает о слабости Алисы
+            "Может конфетку перед массажем?" if kol_choco or _in_replay:  ### если Макс знает о слабости Алисы
                 jump .choco
 
     if not RandomChance(_ch4.ch): ###Убеждение не удалось
@@ -351,7 +357,6 @@ label alice_talk_tv:
         jump .end
 
     ### Убеждение удалось
-    $ _drink = 0
     $ Skill('social', 0.1)
     menu:
         Alice_03 "[succes!t]Ну, давай. Только я очень привередлива в вопросах массажа. Если сделаешь что-то не так, сразу закончим."
@@ -364,7 +369,7 @@ label alice_talk_tv:
         if dcv['tvchoco'].done:
             menu:
                 Alice_02 "У меня такое чувство, что ты чего-то от меня хочешь... Но не сознаешься ведь?"
-                "Хочу тебя!":
+                "Хочу тебя!" if not _in_replay:
                     menu:
                         Alice_15 "Макс! Вали нахрен отсюда со своими шуточками. Дай спокойно телевизор посмотреть!"
                         "{i}уйти{/i}":
@@ -380,7 +385,7 @@ label alice_talk_tv:
     menu:
         Alice_13 "Честно говоря, не знаю. Конфеты я люблю, но не хочу портить фигуру..."
         "От конфетки не поправишься! {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
-            if RandomChance(_ch3.ch):
+            if RandomChance(_ch3.ch) or _in_replay:
                 ## Алиса съела конфетку
                 $ give_choco()
                 $ dcv['tvchoco'].set_lost(3)
@@ -393,7 +398,6 @@ label alice_talk_tv:
             else:
                 $ dcv['tvchoco'].set_lost(2)
                 $ Skill('social', 0.05)
-                $ _drink = 0
                 menu:   ###Убеждение не удалось
                     Alice_01 "[failed!t]Нет, Макс. Спасибо, конечно, но рисковать я не буду. Ну так что, массаж делать будешь или забыл, что собирался?"
                     "Ну, хорошо {i}(начать массаж){/i}":
@@ -412,11 +416,11 @@ label alice_talk_tv:
             Max_03 "{i}( Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает? ){/i}"
             "{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}":
                 pass
-        if RandomChance(_ch20.ch):  ### {i}Алисе понравился массаж!{/i}
+        if RandomChance(_ch20.ch) or _in_replay:  ### {i}Алисе понравился массаж!{/i}
             $ Skill('massage', 0.1)
             $ _ch2 = GetChance(mgg.social, 2)
             $ flags['alice.tv.mass'] += 1
-            $ _can_double_choko = kol_choco>0
+            $ _can_double_choko = _drink>0 and kol_choco>0
             $ _pose = {'01':'03', '02':'04'}[_pose]
             scene BG char Alice tv-mass-03
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -431,7 +435,7 @@ label alice_talk_tv:
 
     label .choice_mass:
         $ dial = []
-        if alice.dress=='a' and _drink and _can_double_choko:
+        if alice.dress=='a' and _can_double_choko:
             $ dial.append((_("Может, ещё конфетку? \n{color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"), 'double_drink'))
         if alice.dress=='a':
             $ dial.append((_("Тебе джинсы не мешают? \n{color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"), 'jeans'))
@@ -440,12 +444,13 @@ label alice_talk_tv:
                 $ dial.append((_("{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}"), 'mass'))
             else:
                 $ dial.append((_("{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}"), 'mass'))
-        $ dial.append((_("{i}закончить массаж{/i}"), 'end_mass'))
+        if not _in_replay:
+            $ dial.append((_("{i}закончить массаж{/i}"), 'end_mass'))
         $ _can_double_choko = False
         $ rez =  renpy.display_menu(dial)
 
         if rez == 'double_drink':
-            if RandomChance(_ch3.ch):
+            if RandomChance(_ch3.ch) or _in_replay:
                 $ _drink = 2
                 $ give_choco()
                 $ Skill('social', 0.1)
@@ -470,7 +475,8 @@ label alice_talk_tv:
                     Max_05 "Ладно, но это было так сногсшибательно, что я аж забыл, как ходить!"
                     Alice_18 "Макс!!!"
                     Max_04 "Всё, ушёл."
-                    $ current_room = house[0]
+                    if not _in_replay:
+                        $ current_room = house[0]
                     jump .end
                 else:
                     Max_02 "Ага, сейчас продолжим..."   #если на Алисе есть трусики
@@ -483,7 +489,7 @@ label alice_talk_tv:
                 jump .choice_mass
 
         elif rez == 'jeans':
-            if RandomChance(_ch2.ch):
+            if RandomChance(_ch2.ch) or _in_replay:
                 jump .jeans
             else:
                 $ Skill('social', 0.05)
@@ -551,7 +557,7 @@ label alice_talk_tv:
                     jump .massage_next
 
     label .massage_next:
-        if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==2): ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
+        if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==2) or _in_replay: ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
             $ Skill('massage', 0.1)
             $ _pose = {'03':'05', '04':'06'}[_pose]
             scene BG char Alice tv-mass-05
@@ -561,19 +567,19 @@ label alice_talk_tv:
                 "Да, это будет на десерт...":
                     menu:
                         Alice_08 "Ты так в себе уверен, Макс... Забыл, что я твоя сестра? Не говори глупости... Просто продолжай массировать мои ножки. Если ты ещё не в курсе, они у меня целиком - эрогенная зона..."
-                        "{i}попытаться приставать{/i}":
+                        "{i}попытаться приставать{/i}" if not _in_replay:
                             jump .fail
                         "{i}продолжать массаж{/i}":
                             pass
                 "{i}продолжать молча{/i}":
                     menu:
                         Alice_04 "Эх, Макс... А я бы захотела продолжения, если бы ты был моим парнем... Жаль, что ты только мой брат..."
-                        "Ну я могу стать твоим парнем... Хотя бы на час... или насколько захочешь...":
+                        "Ну я могу стать твоим парнем... Хотя бы на час... или насколько захочешь..." if not _in_replay:
                             menu:
                                 Alice_05 "На сколько захочу? На секунду! Ой. Она прошла... Всё, Макс, твоё время вышло... Ладно, засовывай свою штуку обратно. Что-то голова кружится... Макс, уйди по хорошему, а..."
                                 "{i}уйти{/i}":
                                     jump .end
-                        "{i}попытаться приставать{/i}":
+                        "{i}попытаться приставать{/i}" if not _in_replay:
                             jump .fail
                         "{i}продолжать массаж{/i}":
                             pass
@@ -598,6 +604,7 @@ label alice_talk_tv:
     Alice_08 "Значит, мы оба полны сюрпризов. Ну всё, хорошего помаленьку. Давай, засовывай свой член обратно, а то до добра это всё дело не дойдёт... Да, и спасибо за массаж..."
     Max_03 "Тебе спасибо..."
     $ talk_var['al.tvgood'] += 1
+    $ persistent.memories['alice_talk_tv'] = 1
     jump .end
 
     menu .fail:
@@ -606,6 +613,7 @@ label alice_talk_tv:
             jump .end
 
     label .end:
+        $ renpy.end_replay()
         $ spent_time = max((60 - int(tm[-2:])), 40)
         $ AddRelMood('alice', 0, __mood)
         $ cur_ratio = 0.5
@@ -938,6 +946,7 @@ label smoke_fear:
                                 $ punalice[0][0] = 7
                                 $ flags['smoke.request'] = "nojeans"
                                 $ flags['smoke'] = "nojeans"
+                                $ added_mem_var('nojeans')
                                 jump .end
                     else:
                         jump .fail
@@ -997,6 +1006,7 @@ label smoke_fear:
             $ flags['smoke.request'] = "sleep"
             $ flags['smoke'] = 'sleep'
             $ alice.sleeptoples = True
+            $ added_mem_var('alice_sleeptoples')
             menu:
                 Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
                 "{i}уйти{/i}":
@@ -1013,6 +1023,7 @@ label smoke_fear:
             $ flags['smoke.request'] = "nopants"
             $ flags['smoke'] = 'nopants'
             $ alice.nopants = True
+            $ added_mem_var('alice_nopants')
             menu:
                 Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
                 "{i}уйти{/i}":
@@ -1486,7 +1497,7 @@ label gift_pajamas:
     if not _in_replay:
         $ _ch1 = GetChance(mgg.social, 3, 900)
         if 'gift_pajamas' not in persistent.memories:
-            $ persistent.memories['gift_pajamas'] = False
+            $ persistent.memories['gift_pajamas'] = -1
     else:
         # формируем фон для воспоминания
         if alice.plan_name == 'sun':
@@ -1513,7 +1524,7 @@ label gift_pajamas:
         Alice_02 "Вот и молодец! Гуляй..."
         $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif flags['alice_hugs'] > 3: # после 3-ей сладости были родственные обнимашки
-        $ persistent.memories['gift_pajamas'] = True
+        $ persistent.memories['gift_pajamas'] = 1
         if not _in_replay:
             $ poss['risk'].OpenStage(8)
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
@@ -1657,6 +1668,7 @@ label gift_pajamas:
     $ items['pajamas'].have = False
     $ items['pajamas'].InShop = False
     $ alice.gifts.append('pajamas')
+    $ added_mem_var('pajamas')
     if alice.inferic is not None:
         $ alice.inferic = clip(alice.inferic-50.0, 0.0, 100.0)
     if alice.infmax is not None:
@@ -1814,7 +1826,8 @@ label massage_sunscreen:
         jump .end
 
     ### выбираем зону массажа
-    $ kol_cream -= 1
+    if not _in_replay:
+        $ kol_cream -= 1
     call screen choice_zone_sunscreen
 
     label .left_foot:
@@ -1847,7 +1860,7 @@ label massage_sunscreen:
             if len(_massaged)>0 and _massaged[0]=='foot':
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
 
-            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
+            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch) or _in_replay:
                 # Алисе понравилось
                 $ Skill('massage', 0.05)
                 Alice_07 "Ух, как приятно... Ты молодец, Макс! Моим ножкам это понравилось... Не останавливайся, продолжай..."
@@ -1856,29 +1869,6 @@ label massage_sunscreen:
                 jump .fail
         $ _massaged.append('shin')
         jump massage_sunscreen
-
-    # label .hips:
-    #     # scene BG char Alice sun-alone 05
-    #     # $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
-    #     Max_00 "{i}( Помассируем бёдра... ){/i}"
-    #     if 'hips' in _massaged:
-    #         # бёдра уже массировались
-    #         jump .double
-    #
-    #     # бёдра доступны только если Макс прошёл курс массажа ступней
-    #     $ _multipler = 10 - len(_massaged)
-    #     if len(_massaged)>0 and _massaged[0]=='foot':
-    #         $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
-    #
-    #     if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
-    #         # Алисе понравилось
-    #         Alice_00 "А я и не знала, что твои руки могут быть одновременно сильными и нежными..."
-    #         $ Skill('massage', 0.05)
-    #     else:
-    #         $ Skill('massage', 0.02)
-    #         jump .fail
-    #     $ _massaged.append('hips')
-    #     jump massage_sunscreen
 
     label .shoulders:
         scene BG char Alice sun-alone 04
@@ -1901,7 +1891,7 @@ label massage_sunscreen:
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
 
             $ _massaged.append('shoulders')
-            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
+            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch) or _in_replay:
                 # Алисе понравилось
                 $ Skill('massage', 0.05)
                 menu:
@@ -1939,14 +1929,14 @@ label massage_sunscreen:
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
 
             $ _massaged.append('spine')
-            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
+            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch) or _in_replay:
                 # Алисе понравилось
                 $ Skill('massage', 0.05)
                 menu:
                     Alice_07 "Как приятно... Макс, ты делаешь успехи! Мне это нравится..."
                     "{i}продолжить{/i}":
                         pass
-                    "{i}выпустить рядом паука{/i}" if items['spider'].have:
+                    "{i}выпустить рядом паука{/i}" if items['spider'].have and not _in_replay:
                         $ renpy.show("FG sun-alone-"+__r1)
                         jump .spider
             else:
@@ -1964,7 +1954,7 @@ label massage_sunscreen:
             jump .double
         else:
             $ _multipler = 10 - len(_massaged) if len(_massaged) else 20  # множитель навыка. Если ступни первые, шанс удваивается
-            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch):
+            if RandomChance(GetChance(mgg.massage, _multipler, 950).ch) or _in_replay:
                 # Алисе понравилось
                 $ Skill('massage', 0.05)
                 Alice_07 "Ух, как же моим пяточкам приятно... Не останавливайся, продолжай..."
@@ -1992,7 +1982,7 @@ label massage_sunscreen:
         menu:
             Alice_06 "Нет, конечно. Но тебя я так радовать не собираюсь!"
             "Что, стесняешься? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
-                if RandomChance(_ch1.ch):
+                if RandomChance(_ch1.ch) or _in_replay:
                     $ Skill('social', 0.1)
                     Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
                     Max_02 "Так держать, сестрёнка!"
@@ -2008,9 +1998,19 @@ label massage_sunscreen:
         return
 
     label .spider:
-        $ items['spider'].have = False
-        $ SpiderKill = 0  # паук остался жив
-        $ SpiderResp = 1  # поэтому поймать можно уже на следующий день
+        if _in_replay:
+            $ _suf = 'b' if talk_var['sun_oiled'] == 2 else 'a'
+            $ __r1 = renpy.random.choice(['02','03'])
+            $ renpy.scene()
+            $ renpy.show('BG char Alice sun-alone '+__r1)
+            $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
+            $ renpy.show("FG sun-alone-"+__r1)
+        else:
+            $ items['spider'].have = False
+            $ SpiderKill = 0  # паук остался жив
+            $ SpiderResp = 1  # поэтому поймать можно уже на следующий день
+            if 'massage_sunscreen.spider' not in persistent.memories:
+                $ persistent.memories['massage_sunscreen.spider'] = 0
         Max_07 "Э-э-э... Алиса, ты только не пугайся, просто лежи, как лежала..."
         Alice_13 "А чего мне пугаться, Макс? Сейчас что, будешь больно массировать?"
         Max_00 "Нет, просто у нас тут одна проблемка подкралась..."
@@ -2063,6 +2063,7 @@ label massage_sunscreen:
                 jump .end
             else:
                 ###если Макс только в шортах###
+                $ persistent.memories['massage_sunscreen.spider'] = 1
                 show Alice spider-sun 03bc
                 Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."   #спрайт с прикрывающейся от Макса Алисой
                 Max_01 "Да не так-то это просто, прикрыть его."
@@ -2074,6 +2075,7 @@ label massage_sunscreen:
 
 
     label .end:
+        $ renpy.end_replay()
         scene BG char Alice sun-alone 01
         if talk_var['sun_oiled'] == 2:
             show Alice sun-alone 01a
