@@ -48,57 +48,57 @@ translate english strings:
 
     # game/extra/extra.rpy:36
     old "Давай я нанесу крем"
-    new ""
+    new "Let me put some sunscreen on"
 
     # game/extra/extra.rpy:36
     old "Ножкам приятно"
-    new ""
+    new "Nice legs"
 
     # game/extra/extra.rpy:36
     old "Массаж для любимой тёти"
-    new ""
+    new "Massaging my Aunt"
 
     # game/extra/extra.rpy:36
     old "Совсем другой массаж"
-    new ""
+    new "A completely different massage"
 
     # game/extra/extra.rpy:36
     old "Ночные страхи"
-    new ""
+    new "Night terrors"
 
     # game/extra/extra.rpy:36
     old "Кто это там ползёт"
-    new ""
+    new "Who is that crawling there?"
 
     # game/extra/extra.rpy:36
     old "Монстр в ванной комнате"
-    new ""
+    new "Monster in the bathroom"
 
     # game/extra/extra.rpy:36
     old "После клуба"
-    new ""
+    new "After the club"
 
     # game/extra/extra.rpy:36
     old "Смотрим порно вместе с тётей"
-    new ""
+    new "Watching porn with my Aunt"
 
     # game/extra/extra.rpy:36
     old "Первый урок поцелуев"
-    new ""
+    new "First kissing lesson"
 
     # game/extra/extra.rpy:36
     old "А это уже совсем не массаж!"
-    new ""
+    new "This isn't a massage!"
 
     # game/extra/extra.rpy:36
     old "Второй урок поцелуев"
-    new ""
+    new "Second kissing lesson"
 
     # game/extra/extra.rpy:36
     old "Третий урок поцелуев"
-    new ""
+    new "Third kissing lesson"
 
     # game/extra/extra.rpy:36
     old "Горячее, чем порно"
-    new ""
+    new "Better than porn"
 
