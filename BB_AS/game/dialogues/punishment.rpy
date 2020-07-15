@@ -513,6 +513,7 @@ label punishment_alice:
                 show Alice punish-evening 02a
                 if flags['smoke'] == 'not_nopants':
                     $ flags['noted'] = True
+                    $ added_mem_var('alice_not_nopants')
                     Max_09 "{i}( Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас! ){/i}"
         else: # Алиса в пижамке
             Ann_14 "Не твои? А чьи они тогда? Быстро шорты снимай!"

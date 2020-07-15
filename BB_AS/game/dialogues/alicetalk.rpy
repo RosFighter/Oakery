@@ -301,7 +301,7 @@ label talkblog1:
 
 label alice_talk_tv:
     if _in_replay:
-        call alice_tv_closer
+        call alice_tv_closer from _call_alice_tv_closer
     else:
         if 'alice_talk_tv' not in persistent.memories:
             $ persistent.memories['alice_talk_tv'] = 0
@@ -547,7 +547,9 @@ label alice_talk_tv:
                     $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress+'-4')
                     Alice_13 "Хотя, нет, не пойдёт! У меня так всё видно будет... И хватит уже пялиться! Лучше иди уже по своим делам."   #спрайт с прикрыванием
                     Max_05 "Как скажешь. Трусы не потеряй."
-                    $ current_room = house[0]
+                    if not _in_replay:
+                        $ added_mem_var('alice_not_nopants')
+                        $ current_room = house[0]
                     jump .end
                 "{i}продолжить{/i} \n{color=[_ch25.col]}(Массаж. Шанс: [_ch25.vis]){/color}" if _drink==2:
                     jump .massage_next
@@ -1213,6 +1215,7 @@ label smoke_not_nopants:
     Alice_13 "Спасибо. А теперь иди уже, погуляй где-нибудь. Дай докурить спокойно."
     Max_01 "Хорошо. Я ушёл..."
 
+    $ added_mem_var('alice_not_nopants')
     $ renpy.show("Alice smoke "+pose3_3+alice.dress)
     $ flags['smoke'] = None
     $ flags['smoke.request'] = None

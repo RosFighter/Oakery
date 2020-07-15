@@ -443,6 +443,7 @@ label alice_shower:
             # Алиса в трусиках, хотя должна быть без них и Макс еще об этом не знает
             Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
             Max_00 "Непорядок. Нужно с этим что-то делать..."
+            $ added_mem_var('alice_not_nopants')
             if __r1 == 'a':
                 $ alice.dress_inf = '04ca'
             else:
@@ -508,6 +509,7 @@ label alice_dressed_shop:
 
                 $ __suf = 'a' if all([__ran1 != '01', 'smoke' in talk_var, flags['smoke'] == 'nopants']) else ''
                 if flags['smoke'] == 'not_nopants':
+                    $ added_mem_var('alice_not_nopants')
                     $ flags['noted'] = True
 
                 $ alice.dress_inf = {
@@ -530,6 +532,7 @@ label alice_dressed_shop:
                 if flags['smoke'] == 'not_nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
                     Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
+                    $ added_mem_var('alice_not_nopants')
                 elif flags['smoke'] == 'nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что Алиса соблюдает договоренность
                     Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит? Но лучше буду гадать об этом в другом месте, а то меня заметят..."
@@ -597,6 +600,7 @@ label alice_dressed_friend:
 
                 $ __suf = 'a' if all([__ran1 != '01', 'smoke' in talk_var, flags['smoke'] == 'nopants']) else ''
                 if flags['smoke'] == 'not_nopants':
+                    $ added_mem_var('alice_not_nopants')
                     $ flags['noted'] = True
 
                 $ alice.dress_inf = {
@@ -618,6 +622,7 @@ label alice_dressed_friend:
                 $ Skill('hide', 0.03)
                 if flags['smoke'] == 'not_nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
+                    $ added_mem_var('alice_not_nopants')
                     Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
                 elif flags['smoke'] == 'nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что Алиса соблюдает договоренность
@@ -656,6 +661,7 @@ label alice_dressed_club:
                 $ __suf = ''
                 $ alice.dress_inf = '06a'
             if 'smoke' in talk_var and flags['smoke'] == 'not_nopants':
+                $ added_mem_var('alice_not_nopants')
                 $ flags['noted'] = True
             if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
                 scene BG char Alice voyeur-01
@@ -670,6 +676,7 @@ label alice_dressed_club:
             ## у нас 3 варианта:
             if flags['smoke'] == 'not_nopants':
                 ## Алиса в трусиках, но их быть не должно
+                $ added_mem_var('alice_not_nopants')
                 Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
             elif flags['smoke'] == 'nopants':
                 ## Алиса без трусиков, как и должна

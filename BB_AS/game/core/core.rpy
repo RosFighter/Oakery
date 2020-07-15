@@ -630,13 +630,16 @@ label after_load:
         if current_ver < "0.03.9.014":
             $ current_ver = "0.03.9.014"
             if 'bikini' in lisa.gifts:
-                $ persistent.memories['gift_swimsuit.swimsuit_show'] = renpy.seen_label('gift_swimsuit.swimsuit_show')
+                if not 'gift_swimsuit.swimsuit_show' in persistent.memories:
+                    $ persistent.memories['gift_swimsuit.swimsuit_show'] = renpy.seen_label('gift_swimsuit.swimsuit_show')
 
             if renpy.seen_label('gift_pajamas'):
-                $ persistent.memories['gift_pajamas'] = flags['alice_hugs'] > 3
+                if not 'gift_pajamas' in persistent.memories:
+                    $ persistent.memories['gift_pajamas'] = flags['alice_hugs'] > 3
 
             if renpy.seen_label('Lisa_HomeWork.first_foot_mass'):
-                $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = True
+                if not 'Lisa_HomeWork.first_foot_mass' in persistent.memories:
+                    $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = True
 
             $ peeping['kira_bath'] = 0
 
@@ -720,24 +723,24 @@ label after_load:
             if 'bathrobe' in lisa.gifts:
                 $ added_mem_var('bathrobe')
 
-            if renpy.seen_label('smoke_nopants'):
-                $ added_mem_var('alice_nopants')
-            if renpy.seen_label('smoke_not_nopants'):
-                $ added_mem_var('alice_not_nopants')
-            if renpy.seen_label('smoke_nojeans'):
-                $ added_mem_var('nojeans')
-            if renpy.seen_label('smoke_sleep'):
-                $ added_mem_var('alice_sleeptoples')
+            # if renpy.seen_label('smoke_nopants'):
+            #     $ added_mem_var('alice_nopants')
+            # if renpy.seen_label('smoke_not_nopants'):
+            #     $ added_mem_var('alice_not_nopants')
+            # if renpy.seen_label('smoke_nojeans'):
+            #     $ added_mem_var('nojeans')
+            # if renpy.seen_label('smoke_sleep'):
+            #     $ added_mem_var('alice_sleeptoples')
 
             if renpy.seen_label('kira_bath.kira_mass_bath_first'):
                 $ added_mem_var('kira_mass_bath_first')
 
-            if renpy.seen_label('kira_bath.cuni_bj'):
-                $ added_mem_var('bath_cuni_bj')
-            if talk_var['kira.bath.mass']:
-                $ added_mem_var('kira.bath.mass')
-            if talk_var['kira.tv.touch']:
-                $ added_mem_var('kira.tv.touch')
+            # if renpy.seen_label('kira_bath.cuni_bj'):
+            #     $ added_mem_var('bath_cuni_bj')
+            # if talk_var['kira.bath.mass']:
+            #     $ added_mem_var('kira.bath.mass')
+            # if talk_var['kira.tv.touch']:
+            #     $ added_mem_var('kira.tv.touch')
             if flags['kira.tv.bj']:
                 $ added_mem_var('kira.tv.bj')
 
@@ -745,14 +748,15 @@ label after_load:
                 $ persistent.memories['alice_talk_tv'] = 1
             elif renpy.seen_label('alice_talk_tv.choco') and 'alice_talk_tv' not in persistent.memories:
                 $ persistent.memories['alice_talk_tv'] = 0
+                
             if renpy.seen_label('kira_night_tv.second_lesson') and 'kira_night_tv.first_lesson' not in persistent.memories:
                 $ persistent.memories['kira_night_tv.first_lesson'] = 1
             if renpy.seen_label('kira_night_tv.repeat_lesson') and 'kira_night_tv.second_lesson' not in persistent.memories:
                 $ persistent.memories['kira_night_tv.first_lesson'] = 1
                 $ persistent.memories['kira_night_tv.second_lesson'] = 1
 
-            if renpy.seen_label('kira_night_tv.bj') and 'kira_tv_bj' not in persistent.memories:
-                $ persistent.memories['kira_tv_bj'] = 1
+            # if renpy.seen_label('kira_night_tv.bj') and 'kira_tv_bj' not in persistent.memories:
+            #     $ persistent.memories['kira_tv_bj'] = 1
             if 'massage_sunscreen.spider' not in persistent.memories:
                 $ persistent.memories['massage_sunscreen.spider'] = 0
 

@@ -146,11 +146,14 @@ label kira_bath:
         Max_05 "С радостью."
         if not _in_replay:
             $ added_mem_var('kira_mass_bath_first')
+            $ added_mem_var('kira.bath.mass')
         jump .end_sleep
 
     label .mass_bath:
         if not _in_replay and 'kira_bath.mass_bath' not in persistent.memories:
             $ persistent.memories['kira_bath.mass_bath'] = 0
+        if not _in_replay:
+            $ added_mem_var('kira.bath.mass')
         scene BG char Kira bath-talk-00
         $ __r1 = renpy.random.choice(['01', '02', '03'])
         $ renpy.show('Kira bath-talk '+__r1)

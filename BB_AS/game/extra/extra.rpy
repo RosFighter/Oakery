@@ -45,7 +45,7 @@ define mems = [
             Memories('liza_hand_mass', 'lisa-massage-02', 'set_hand_mass', _("Внимание к пальчикам")),
             Memories('Lisa_HomeWork.shoulders', 'lisa-massage-03', 'set_shoulders_mass', _("Разомнём и плечики")),
             Memories('kira_bath.ladder', 'kira-bathmassage-01', 'set_kira_bathmass', _("Массаж для любимой тёти"), var="'kira_mass_bath_first' in persistent.mems_var"),
-            Memories('kira_bath.mass_bath', 'kira-bathfj-01', 'set_kira_bathfj', _("Это уже совсем другой массаж")),
+            Memories('kira_bath.mass_bath', 'kira-bathfj-01', 'set_kira_bathfj', _("Совсем другой массаж")),
         ],
         [
             Memories('spider_in_bed', 'alice-spidernight-01', 'set_spider_in_bed', _("Ночные страхи")),
