@@ -34,6 +34,26 @@ init python:
         tm = ('0'+str(h))[-2:] + ':' + ('0'+str(m))[-2:]
 
 
+    def cam_wait(delta=10):
+        global cam_day, cam_tm
+        h, m = cam_tm.split(':')
+        ti = int(h)*60 + int(m) + int(delta)
+        h = ti // 60
+        m = ti % 60
+
+        if h > 23:
+            cam_day += h // 24
+            h = h % 24
+
+        cam_tm = ('0'+str(h))[-2:] + ':' + ('0'+str(m))[-2:]
+
+        for char in chars:
+            plan_char = chars[char].get_plan()
+            if plan_char is not None:
+                if plan_char.loc != '' and not plan_char.loc is None:
+                    eval(plan_char.loc+"["+str(plan_char.room)+"].cur_char.append('"+char+"')")
+
+
     # функция вычисляет разницу в минутах между time2 и time1
     # если time1 больше, считается, что оно принадлежит предыдущему дню """
     def TimeDifference(time1, time2):
@@ -86,7 +106,6 @@ init python:
 
         for char in chars:
 
-            # plan_char = GetPlan(eval('plan_'+char), day, tm)
             plan_char = chars[char].get_plan()
             if plan_char is not None:
                 if plan_char.loc != '' and not plan_char.loc is None:
@@ -570,7 +589,7 @@ init python:
             cur_shed  = chars[char].get_plan()
             if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
 
-                if char == 'alice' and talk_var['sun_oiled']:  # Если Алису уже намазали кремом, повторное намазываение невозможно
+                if char == 'alice' and talk_var['sun_oiled'] in [1, 2]:  # Если Алису уже намазали кремом, повторное намазываение невозможно
                     talk_var['sun_oiled'] = 3
                 dress, inf, clot = GetDressNps(char, cur_shed.name)
                 if dress != '':

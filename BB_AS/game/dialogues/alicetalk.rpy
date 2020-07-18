@@ -1720,7 +1720,7 @@ label Alice_solar:
                 $ items['solar'].InShop = True
                 jump AfterWaiting
 
-        "Может быть, тебя намазать кремом для загара?" if all([talk_var['sun_oiled']!=3, kol_cream>=3, mgg.dress!='a']):
+        "Может быть, тебя намазать кремом для загара?" if all([talk_var['sun_oiled']==0, kol_cream>=3, mgg.dress!='a']):
             Alice_03 "Если у тебя есть крем, то давай, раз тебе делать нечего."
             Max_01 "Ложись на живот тогда..."
             $ talk_var['sun_oiled'] = 1

@@ -735,7 +735,8 @@ screen MySite():
                                     frame area(0, 0, 370, 240) background None:
                                         xmargin 0 ymargin 0 xpadding 0 ypadding 0
                                         button xysize(362, 235) align(0.5, 0.5) background None:
-                                            action NullAction()
+                                            action [SetVariable('at_comp', True), SetVariable('view_cam', (room, cam, num)), Jump('Waiting')]
+                                            # action NullAction()
                                             xmargin 0 ymargin 0 xpadding 0 ypadding 0
                                             if '06:00' <= tm < '11:00':
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-morning-'+str(num)
@@ -1524,6 +1525,40 @@ style clothesselect_button_text is default:
 
 style clothesselect_vscroll is vscrollbar:
     unscrollable 'hide'
+
+################################################################################
+
+screen cam_show:
+
+
+    text tm font 'hermes.ttf' size 28 pos(350, 800) #drop_shadow[(2, 2)]
+
+    text _("Зрителей: [view_cam[1].public]") xalign 1.0 font 'hermes.ttf' size 28 pos(1560, 800) #drop_shadow[(2, 2)] 
+
+    # imagebutton:
+    #     auto 'interface laptop back %s'
+    #     action [SetVariable('at_comp', False), Jump('open_site')] at power_zoom
+    #     pos (420, 985) xalign 0.0
+    # imagebutton:
+    #     auto 'interface laptop wait %s'
+    #     action [SetVariable('spent_time', 10), Jump('Waiting')] at power_zoom
+    #     pos (1500, 985) xalign 1.0
+
+    frame xalign 0.5 ypos 985 xsize 200:# background None:
+        if '06:00' <= tm < '21:00':
+            background 'interface laptop keys-bg-day'
+        else:
+            background 'interface laptop keys-bg-night'
+        xmargin 0 ymargin 0 xpadding 0 ypadding 0
+        hbox spacing 100:
+            imagebutton:
+                auto 'interface laptop back %s'
+                action [SetVariable('at_comp', False), Jump('open_site')] at power_zoom
+            imagebutton:
+                auto 'interface laptop wait %s'
+                action [SetVariable('spent_time', 10), Jump('Waiting')] at power_zoom
+    key 'K_ESCAPE' action [SetVariable('at_comp', False), Jump('open_site')]
+    key 'mouseup_3' action [SetVariable('at_comp', False), Jump('open_site')]
 
 
 ################################################################################

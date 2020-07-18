@@ -90,6 +90,7 @@ label Waiting:
     if __name_label != '' and renpy.has_label(__name_label):
         # "запуск [__name_label]"
         # если есть кат-событие - запускаем его
+        $ at_comp = False
         $ spent_time = 0
         $ prevday = day
         $ prevtime = tm
@@ -102,7 +103,10 @@ label Waiting:
         jump expression __name_label
 
     # иначе запускаем блок 'после ожидания'
-    jump AfterWaiting
+    if at_comp:
+        jump cam_after_waiting
+    else:
+        jump AfterWaiting
 
 
 label Midnight:
@@ -273,12 +277,10 @@ label AfterWaiting:
         elif (day+2) % 7 != 6:
             $ __name_label = ''
             if (day+2) % 7 == 0:
-                # $ __cur_plan = GetPlan(plan_alice, day, '10:00')
                 $ __cur_plan = alice.get_plan(day, '10:00')
                 if __cur_plan is not None:
                     $ __name_label = __cur_plan.label
             else:
-                # $ __cur_plan = GetPlan(plan_alice, day, '11:00')
                 $ __cur_plan = alice.get_plan(day, '11:00')
                 if __cur_plan is not None:
                     $ __name_label = __cur_plan.label
@@ -293,7 +295,6 @@ label AfterWaiting:
     $ __name_label = ''
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
     if len(current_room.cur_char) > 0:
-        # $ __cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
         $ __cur_plan = chars[current_room.cur_char[0]].get_plan()
         if __cur_plan is not None:
             $ __name_label = __cur_plan.label
@@ -353,6 +354,68 @@ label night_of_fun:
     $ renpy.show('Max sleep-night '+pose3_3)
     Max_19 "Теперь можно спокойно спать и ничего больше..."
     jump Waiting
+
+
+label cam_after_waiting:
+
+    ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
+    $ CamShow()
+
+    $ MoodNeutralize()
+
+    if any([prevday!=day, prevtime!=tm]):
+        # если прошло какое-то время, проверим необходимость смены одежды
+        $ ChoiceClothes()
+
+    $ spent_time = 0
+    $ prevday = day
+    $ prevtime = tm
+    $ cur_ratio = 1
+    $ alarm_time = ""
+
+    $ Distribution() # распределяем персонажей по комнатам и устанавливаем фоны для текущей локации
+
+    # if current_room.id == 'my_room' and check_is_room('lisa'):
+    #     if lisa.plan_name != 'sleep':
+    #         Max_00 "Не стоит при Лизе просматривать камеры."
+    #     else:
+    #
+    #
+    # поиск управляющего блока для персонажа, находящегося в текущей комнате
+    if len(view_cam[0].cur_char) > 0:
+        $ __cur_plan = chars[view_cam[0].cur_char[0]].get_plan()
+        $ __cam_label = 'cam'+str(view_cam[2])+'_'+__cur_plan.label if __cur_plan is not None else ''
+
+        if __cam_label!='' and renpy.has_label(__cam_label):
+            call expression __cam_label
+        else:
+            call cam_background
+            show FG cam-shum-act at laptop_screen
+
+        call screen cam_show
+
+    else:
+        call cam_background
+        show FG cam-shum-noact at laptop_screen
+        ## сообщаем об отсутствии интересного и возвращаемся к выбору камеры
+        Max_00 "Сейчас здесь ничего не происходит."
+        jump open_site
+        # call screen cam_show
+
+
+label cam_background:
+    ### показываем пустой фон локации
+    if '06:00' <= tm < '21:00':
+        scene BG char Max laptop-day-01
+    else:
+        scene BG char Max laptop-night-01
+    $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+{
+        '06:00'<=tm<'11:00':' morning',
+        '11:00'<=tm<'19:00':' day',
+        '19:00'<=tm<'21:00':' evening',
+        tm<'06:00'or'21:00'<=tm:' night'}[True], at_list=[laptop_screen,])
+
+    return
 
 
 label after_load:
@@ -723,24 +786,9 @@ label after_load:
             if 'bathrobe' in lisa.gifts:
                 $ added_mem_var('bathrobe')
 
-            # if renpy.seen_label('smoke_nopants'):
-            #     $ added_mem_var('alice_nopants')
-            # if renpy.seen_label('smoke_not_nopants'):
-            #     $ added_mem_var('alice_not_nopants')
-            # if renpy.seen_label('smoke_nojeans'):
-            #     $ added_mem_var('nojeans')
-            # if renpy.seen_label('smoke_sleep'):
-            #     $ added_mem_var('alice_sleeptoples')
-
             if renpy.seen_label('kira_bath.kira_mass_bath_first'):
                 $ added_mem_var('kira_mass_bath_first')
 
-            # if renpy.seen_label('kira_bath.cuni_bj'):
-            #     $ added_mem_var('bath_cuni_bj')
-            # if talk_var['kira.bath.mass']:
-            #     $ added_mem_var('kira.bath.mass')
-            # if talk_var['kira.tv.touch']:
-            #     $ added_mem_var('kira.tv.touch')
             if flags['kira.tv.bj']:
                 $ added_mem_var('kira.tv.bj')
 
@@ -748,17 +796,22 @@ label after_load:
                 $ persistent.memories['alice_talk_tv'] = 1
             elif renpy.seen_label('alice_talk_tv.choco') and 'alice_talk_tv' not in persistent.memories:
                 $ persistent.memories['alice_talk_tv'] = 0
-                
+
             if renpy.seen_label('kira_night_tv.second_lesson') and 'kira_night_tv.first_lesson' not in persistent.memories:
                 $ persistent.memories['kira_night_tv.first_lesson'] = 1
             if renpy.seen_label('kira_night_tv.repeat_lesson') and 'kira_night_tv.second_lesson' not in persistent.memories:
                 $ persistent.memories['kira_night_tv.first_lesson'] = 1
                 $ persistent.memories['kira_night_tv.second_lesson'] = 1
 
-            # if renpy.seen_label('kira_night_tv.bj') and 'kira_tv_bj' not in persistent.memories:
-            #     $ persistent.memories['kira_tv_bj'] = 1
             if 'massage_sunscreen.spider' not in persistent.memories:
                 $ persistent.memories['massage_sunscreen.spider'] = 0
+
+        if current_ver < "0.04.1.00":
+            $ current_ver = "0.04.1.00"
+
+            $ at_comp = False
+            $ view_cam = Null
+
 
         if current_ver < config.version:
             $ current_ver = config.version

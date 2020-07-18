@@ -600,6 +600,8 @@ label InitVariable: # стартовая инициация переменных
 
         kol_cream = 0
         kol_choco = 0
+        at_comp = False
+        view_cam = Null
 
         tier = 0
 
