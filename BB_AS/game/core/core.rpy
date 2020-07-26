@@ -90,6 +90,8 @@ label Waiting:
     if __name_label != '' and renpy.has_label(__name_label):
         # "запуск [__name_label]"
         # если есть кат-событие - запускаем его
+        if 'notebook_on_terrace' in cam_flag:
+            $ cam_flag.remove('notebook_on_terrace')
         $ at_comp = False
         $ spent_time = 0
         $ prevday = day
@@ -299,6 +301,15 @@ label AfterWaiting:
         if __cur_plan is not None:
             $ __name_label = __cur_plan.label
 
+    # Отключим ноутбук на веранде, если Макс переходит в другую комнату
+    # за исключением момента, когда Лиза переодевается, в этом случае кнопка ноутбука продолжает оставаться активной
+    if all([lisa.plan_name!='dressed', current_room!=house[5], 'notebook_on_terrace' in cam_flag]):
+        $ cam_flag.remove('notebook_on_terrace')
+    if current_room.id == 'terrace' and current_room.cur_char:
+        # в комнате появился кто-то, кроме Макса, нужно закрыть ноутбук
+        $ at_comp = False
+        if 'notebook_on_terrace' in cam_flag:
+            $ cam_flag.remove('notebook_on_terrace')
     $ SetAvailableActions()
 
     if __name_label != '' and renpy.has_label(__name_label):
@@ -375,40 +386,115 @@ label cam_after_waiting:
 
     $ Distribution() # распределяем персонажей по комнатам и устанавливаем фоны для текущей локации
 
-    # if current_room.id == 'my_room' and check_is_room('lisa'):
-    #     if lisa.plan_name != 'sleep':
-    #         Max_00 "Не стоит при Лизе просматривать камеры."
-    #     else:
-    #
-    #
+    if current_room.id == 'my_room' and check_is_room('lisa'):
+        if lisa.plan_name != 'sleep':
+            # Лиза не спит
+            if not house[5].cur_char and 'warning' not in flags:
+                # на веранде никого, разговора про веранду еще не было
+                $ flags['warning'] = True
+                menu:
+                    Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..."
+                    "{i}идти на веранду{/i}":
+                        $ current_room = house[5]
+                        $ cam_flag.append('notebook_on_terrace')
+                    "{i}не сейчас{/i}":
+                        jump open_site
+            else:
+                # речь про веранду уже была
+                menu:
+                    Max_09 "Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила..."
+                    "{i}идти на веранду{/i}" if not house[5].cur_char:
+                        $ current_room = house[5]
+                        $ cam_flag.append('notebook_on_terrace')
+                    "{i}не сейчас{/i}":
+                        jump open_site
+        else:
+            # Лиза спит
+            if not house[5].cur_char and 'warning' not in flags:
+                # на веранде никого, разговора про веранду еще не было
+                $ flags['warning'] = True
+                menu:
+                    Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..."
+                    "{i}идти на веранду{/i}":
+                        $ current_room = house[5]
+                        $ cam_flag.append('notebook_on_terrace')
+                    "{i}не сейчас{/i}":
+                        jump open_site
+            elif house[5].cur_char:
+                Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
+                jump open_site
+            else:
+                # речь про веранду уже была или там сейчас кто-то есть
+                menu:
+                    Max_09 "Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю..."
+                    "{i}идти на веранду{/i}" if not house[5].cur_char:
+                        $ current_room = house[5]
+                        $ cam_flag.append('notebook_on_terrace')
+                    "{i}не сейчас{/i}":
+                        jump open_site
+    elif current_room.id == 'terrace' and current_room.cur_char:
+        # в комнате появился кто-то, кроме Макса, нужно закрыть ноутбук
+        $ at_comp = False
+        if 'notebook_on_terrace' in cam_flag:
+            $ cam_flag.remove('notebook_on_terrace')
+        # Max_00 "Упс..."
+        jump Waiting
+
     # поиск управляющего блока для персонажа, находящегося в текущей комнате
     if len(view_cam[0].cur_char) > 0:
+
         $ __cur_plan = chars[view_cam[0].cur_char[0]].get_plan()
         $ __cam_label = 'cam'+str(view_cam[2])+'_'+__cur_plan.label if __cur_plan is not None else ''
 
         if __cam_label!='' and renpy.has_label(__cam_label):
+            call cam_background
             call expression __cam_label
         else:
             call cam_background
-            show FG cam-shum-act at laptop_screen
 
+        show FG cam-shum-act at laptop_screen
+
+        call screen cam_show
+    elif current_room == view_cam[0]:
+        ## камера текущей локации. Макс сидит за компом
+        call cam_background
+
+        $ time_of_day = {
+                '06:00' <= tm < '11:00': 'morning',
+                '11:00' <= tm < '19:00': 'day',
+                '19:00' <= tm < '21:00': 'evening',
+                '21:00'<=tm or tm<'06:00': 'night'
+            }[True]
+
+        if current_room == house[5]:
+            $ renpy.show('Max cams terrace '+time_of_day+'-01'+mgg.dress, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
         call screen cam_show
 
     else:
         call cam_background
         show FG cam-shum-noact at laptop_screen
         ## сообщаем об отсутствии интересного и возвращаемся к выбору камеры
-        Max_00 "Сейчас здесь ничего не происходит."
-        jump open_site
-        # call screen cam_show
+        # "[view_cam[0].id] [view_cam[2]]"
+        if view_cam[0].id+'-'+str(view_cam[2]) not in cam_flag:
+            $ cam_flag.append(view_cam[0].id+'-'+str(view_cam[2]))
+            ## случайная фраза
+            Max_00 "Сейчас здесь ничего не происходит."
+        call screen cam_show
 
 
 label cam_background:
     ### показываем пустой фон локации
     if '06:00' <= tm < '21:00':
-        scene BG char Max laptop-day-01
+        if current_room == house[5]:
+            scene BG char Max laptop-day-01t
+        else:
+            scene BG char Max laptop-day-01
     else:
-        scene BG char Max laptop-night-01
+        if current_room == house[5]:
+            scene BG char Max laptop-night-01t
+        else:
+            scene BG char Max laptop-night-01
     $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+{
         '06:00'<=tm<'11:00':' morning',
         '11:00'<=tm<'19:00':' day',
@@ -750,6 +836,8 @@ label after_load:
 
         if current_ver < "0.04.0.05":
             $ current_ver = "0.04.0.05"
+            if 'talkaboutbath' not in flags:
+                $ flags['talkaboutbath'] = 0
 
             if flags['talkaboutbath'] > 0 and not poss['nightclub'].stages[5].used:
                 $ flags['talkaboutbath'] = 0
@@ -812,6 +900,23 @@ label after_load:
             $ at_comp = False
             $ view_cam = Null
 
+        if current_ver < "0.04.1.01":
+            $ current_ver = "0.04.1.01"
+
+            $ house[3].max_cam = 2
+
+        if current_ver < "0.04.1.03":
+            $ current_ver = "0.04.1.03"
+
+            $ dcv.update({
+                    'lisa_sweets' : Daily(done=True, enabled=True), # дарение сладости Лизе
+                    'alice_sweets': Daily(done=True, enabled=True), # дарение сладости Алисе
+                    'ann_sweets'  : Daily(done=True, enabled=True), # дарение сладости Анне
+                })
+
+            if 4 in sorry_gifts['alice'].give and sorry_gifts['alice'].owe:
+                $ sorry_gifts['alice'].owe = False
+                $ sorry_gifts['alice'].valid = {'ferrero-b', 'ferrero-m'}
 
         if current_ver < config.version:
             $ current_ver = config.version

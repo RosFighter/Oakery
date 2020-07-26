@@ -2743,3 +2743,91 @@ label liza_secret_alisa:
     $ items['choco'].InShop = True
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     return
+
+
+label lisa_gift_sweets:  # Периодическое дарение сладости
+    menu:
+        Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!"
+        "Шоколад \"Ritter Sport\" mini (9 штук)" if items['ritter-m'].have:
+            $ __give = 'ritter-m'
+        "Шоколад \"Ritter Sport\" (4 штуки)" if items['ritter-b'].have:
+            $ __give = 'ritter-b'
+
+    $ items[__give].have = False
+    Lisa_03 "Ого! Ты купил мои любимые шоколадки! Как мило... Спасибо тебе большое!"
+    Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
+    if __give=='ritter-m':
+        #если сладость маленькая
+        $ _ch1 = GetChance(mgg.social, 3, 900)
+
+        #спрайт с обнимашками
+        if current_room == house[0]:
+            scene BG char Lisa hugging myroom-00
+            $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
+        elif current_room == house[6]:
+            scene BG char Lisa hugging yard-00
+            $ renpy.show("Lisa hugging yard 01"+lisa.dress+mgg.dress)
+        Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
+        Max_03 "{i}( Класс! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+        #спрайт вместе
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging myroom 02"+lisa.dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging yard 02"+lisa.dress+mgg.dress)
+        menu:
+            Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"
+            "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                if RandomChance(_ch1.ch):
+                    $ Skill('social', 0.2)
+                    Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
+                    #спрайт с поцелуем
+                    if current_room == house[0]:
+                        $ renpy.show("Lisa hugging myroom 03"+lisa.dress+mgg.dress)
+                    elif current_room == house[6]:
+                        $ renpy.show("Lisa hugging yard 03"+lisa.dress+mgg.dress)
+                    Max_05 "{i}( О да! Этот нежный поцелуй от сестрёнки я и надеялся получить! Блаженно... ){/i}"
+                    Lisa_02 "Ну всё, хорошего понемногу..."
+                    #спрайт вместе
+                    if current_room == house[0]:
+                        $ renpy.show("Lisa hugging myroom 02"+lisa.dress+mgg.dress)
+                    elif current_room == house[6]:
+                        $ renpy.show("Lisa hugging yard 02"+lisa.dress+mgg.dress)
+                    Max_01 "Наслаждайся, сластёна!"
+                else:
+                    $ Skill('social', 0.1)
+                    Lisa_01 "[failed!t]Знаешь, а я передумала! Вот купил бы большую шоколадку, тогда бы и чмокнула..."
+                    Max_11 "Ну вот..."
+                    Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз."
+                    Max_01 "Ага."
+        $ AddRelMood('lisa', 10, 100)
+    else:
+        #если сладость большая
+        #спрайт с суперобнимашками
+        if current_room == house[0]:
+            scene BG char Lisa hugging myroom-00
+            $ renpy.show("Lisa hugging myroom 04"+lisa.dress+mgg.dress)
+        elif current_room == house[6]:
+            scene BG char Lisa hugging yard-00
+            $ renpy.show("Lisa hugging yard 04"+lisa.dress+mgg.dress)
+        Lisa_03 "Макс, давай обниматься! Лови меня..."
+        Max_05 "{i}( Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается. ){/i}"
+        Lisa_05 "Мне нравится, что ты так мило балуешь меня сладостями... Я тебя в щёчку ещё чмокну! Ммм..."
+        #спрайт с поцелуем
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging myroom 03"+lisa.dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging yard 03"+lisa.dress+mgg.dress)
+        Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне... ){/i}"
+        Lisa_02 "Ну всё, хорошего понемногу..."
+        #спрайт вместе
+        if current_room == house[0]:
+            $ renpy.show("Lisa hugging myroom 02"+lisa.dress+mgg.dress)
+        elif current_room == house[6]:
+            $ renpy.show("Lisa hugging yard 02"+lisa.dress+mgg.dress)
+        Max_01 "Наслаждайся, сластёна!"
+        $ AddRelMood('lisa', 15, 150)
+    $ spent_time += 10
+
+    # включаем откат на дарение сладости
+    $ dcv['lisa_sweets'].set_lost(renpy.random.randint(5, 7))
+    jump Waiting

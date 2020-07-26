@@ -112,26 +112,38 @@ screen choice_lang():
 screen PowerBack():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '21:00':
-            background 'interface laptop keys-bg-day'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-dayt'
+            else:
+                background 'interface laptop keys-bg-day'
         else:
-            background 'interface laptop keys-bg-night'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-nightt'
+            else:
+                background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
         hbox spacing 100:
             imagebutton:
                 auto 'interface laptop back %s'
-                action [Hide('Search'), Jump('Laptop')] at power_zoom
+                action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')] at power_zoom
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Search'), Jump('Waiting')] at power_zoom
-    key 'K_ESCAPE' action [Hide('Search'), Jump('Laptop')]
-    key 'mouseup_3' action [Hide('Search'), Jump('Laptop')]
+                action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at power_zoom
+    key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
+    key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
 
 screen PowerBack2():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '21:00':
-            background 'interface laptop keys-bg-day'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-dayt'
+            else:
+                background 'interface laptop keys-bg-day'
         else:
-            background 'interface laptop keys-bg-night'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-nightt'
+            else:
+                background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
         hbox spacing 100:
             imagebutton:
@@ -146,9 +158,15 @@ screen PowerBack2():
 screen PowerBack3():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '21:00':
-            background 'interface laptop keys-bg-day'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-dayt'
+            else:
+                background 'interface laptop keys-bg-day'
         else:
-            background 'interface laptop keys-bg-night'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-nightt'
+            else:
+                background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
         hbox spacing 100:
             imagebutton:
@@ -696,8 +714,8 @@ screen MySite():
                 $ col_cam += 1
     if (col_cam >= 6) and(col_cam % 3 != 0):
         $ dobavka = 3 - (col_cam % 3)
-    elif col_cam % 6 != 0:
-        $ dobavka = 6 - (col_cam % 6)
+    elif col_cam < 6:
+        $ dobavka = 6 - col_cam
     else:
         $ dobavka = 0
 
@@ -705,6 +723,7 @@ screen MySite():
     default t_public = Tooltip("")
     default t_total  = Tooltip("")
     default t_today  = Tooltip("")
+
 
     frame area(221, 93, 1475, 829) background None:
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
@@ -727,6 +746,7 @@ screen MySite():
                         yspacing 30
                         mousewheel 'change'
                         draggable True
+                        $ i = 0
 
                         for loc in locations:
                             for room in locations[loc]:
@@ -735,7 +755,7 @@ screen MySite():
                                     frame area(0, 0, 370, 240) background None:
                                         xmargin 0 ymargin 0 xpadding 0 ypadding 0
                                         button xysize(362, 235) align(0.5, 0.5) background None:
-                                            action [SetVariable('at_comp', True), SetVariable('view_cam', (room, cam, num)), Jump('Waiting')]
+                                            action [SetVariable('at_comp', True), SetVariable('view_cam', (room, cam, num, i)), Jump('Waiting')]
                                             # action NullAction()
                                             xmargin 0 ymargin 0 xpadding 0 ypadding 0
                                             if '06:00' <= tm < '11:00':
@@ -746,7 +766,7 @@ screen MySite():
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-evening-'+str(num)
                                             else:
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-night-'+str(num)
-                                            if len(room.cur_char) > 0 :
+                                            if len(room.cur_char) > 0 or room == current_room:
                                                 add 'interface laptop cam act'
                                             else:
                                                 add 'interface laptop cam noact'
@@ -758,6 +778,7 @@ screen MySite():
                                                 ]
 
                                     $ num += 1
+                                    $ i += 1
 
 
                         # дополним пустыми местами
@@ -817,7 +838,6 @@ screen room_navigation():
     key 'K_MENU' action [Cursor(None), ShowMenu('save')]
 
     $ renpy.block_rollback()
-    # $ renpy.fix_rollback()
 
     $  i = 0
     $ public = 0
@@ -1528,27 +1548,29 @@ style clothesselect_vscroll is vscrollbar:
 
 ################################################################################
 
-screen cam_show:
+screen cam_show():
 
+    hbox pos(350, 800):
+        xalign 0.0
+        text tm font 'bedel.otf' size 30  #drop_shadow[(2, 2)]
 
-    text tm font 'hermes.ttf' size 28 pos(350, 800) #drop_shadow[(2, 2)]
-
-    text _("Зрителей: [view_cam[1].public]") xalign 1.0 font 'hermes.ttf' size 28 pos(1560, 800) #drop_shadow[(2, 2)] 
-
-    # imagebutton:
-    #     auto 'interface laptop back %s'
-    #     action [SetVariable('at_comp', False), Jump('open_site')] at power_zoom
-    #     pos (420, 985) xalign 0.0
-    # imagebutton:
-    #     auto 'interface laptop wait %s'
-    #     action [SetVariable('spent_time', 10), Jump('Waiting')] at power_zoom
-    #     pos (1500, 985) xalign 1.0
+    hbox pos(1560, 800):
+        xalign 1.0
+        spacing 10
+        text _("[view_cam[1].public]") font 'bedel.otf' size 30  #drop_shadow[(2, 2)]
+        add 'interface laptop cam audience' ypos 5
 
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '21:00':
-            background 'interface laptop keys-bg-day'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-dayt'
+            else:
+                background 'interface laptop keys-bg-day'
         else:
-            background 'interface laptop keys-bg-night'
+            if current_room == house[5]:
+                background 'interface laptop keys-bg-nightt'
+            else:
+                background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
         hbox spacing 100:
             imagebutton:
@@ -1559,7 +1581,6 @@ screen cam_show:
                 action [SetVariable('spent_time', 10), Jump('Waiting')] at power_zoom
     key 'K_ESCAPE' action [SetVariable('at_comp', False), Jump('open_site')]
     key 'mouseup_3' action [SetVariable('at_comp', False), Jump('open_site')]
-
 
 ################################################################################
 

@@ -214,6 +214,8 @@ label Box:
 
 
 label Notebook:
+    if current_room == house[5]:
+        jump Laptop
     $ renpy.block_rollback()
     if '06:00' <= tm < '21:00':
         scene BG char Max laptop-day-00
@@ -223,13 +225,20 @@ label Notebook:
         $ renpy.show('Max laptop-night 01'+mgg.dress)
 
     Max_00 "Итак, чем интересным я займусь?"
+    jump Laptop
 
 
 label Laptop:
     if '06:00' <= tm < '21:00':
-        scene BG char Max laptop-day-01
+        if current_room == house[5]:
+            scene BG char Max laptop-day-01t
+        else:
+            scene BG char Max laptop-day-01
     else:
-        scene BG char Max laptop-night-01
+        if current_room == house[5]:
+            scene BG char Max laptop-night-01t
+        else:
+            scene BG char Max laptop-night-01
 
     show interface laptop start page at laptop_screen
 
@@ -256,9 +265,15 @@ label Laptop:
 
 label LaptopShop:
     if '06:00' <= tm < '21:00':
-        scene BG char Max laptop-day-01
+        if current_room == house[5]:
+            scene BG char Max laptop-day-01t
+        else:
+            scene BG char Max laptop-day-01
     else:
-        scene BG char Max laptop-night-01
+        if current_room == house[5]:
+            scene BG char Max laptop-night-01t
+        else:
+            scene BG char Max laptop-night-01
     show interface laptop e-shop at laptop_screen
 
     $ renpy.block_rollback()
@@ -285,9 +300,15 @@ label buyfood:
 
 label courses_start:
     if '06:00' <= tm < '21:00':
-        scene BG char Max laptop-day-01
+        if current_room == house[5]:
+            scene BG char Max laptop-day-01t
+        else:
+            scene BG char Max laptop-day-01
     else:
-        scene BG char Max laptop-night-01
+        if current_room == house[5]:
+            scene BG char Max laptop-night-01t
+        else:
+            scene BG char Max laptop-night-01
     show interface laptop e-shop at laptop_screen
 
     $ renpy.block_rollback()
@@ -325,9 +346,15 @@ label create_site:
 
 label open_site:
     if '06:00' <= tm < '21:00':
-        scene BG char Max laptop-day-01
+        if current_room == house[5]:
+            scene BG char Max laptop-day-01t
+        else:
+            scene BG char Max laptop-day-01
     else:
-        scene BG char Max laptop-night-01
+        if current_room == house[5]:
+            scene BG char Max laptop-night-01t
+        else:
+            scene BG char Max laptop-night-01
     show interface laptop CoverBBCams at laptop_screen
 
     $ renpy.block_rollback()
@@ -775,9 +802,15 @@ label HideSpider:
 label ViewLesson:
 
     if '06:00' <= tm < '21:00':
-        scene BG char Max laptop-day-01
+        if current_room == house[5]:
+            scene BG char Max laptop-day-01t
+        else:
+            scene BG char Max laptop-day-01
     else:
-        scene BG char Max laptop-night-01
+        if current_room == house[5]:
+            scene BG char Max laptop-night-01t
+        else:
+            scene BG char Max laptop-night-01
 
     $ renpy.show('interface laptop '+CurCource.img+'-'+str(CurCource.current)+'-'+str(CurCource.cources[CurCource.current].less), [laptop_screen])
 

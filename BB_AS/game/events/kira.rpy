@@ -420,6 +420,8 @@ label kira_night_tv:
     $ __film = renpy.random.choice(__list)
     $ renpy.show('tv '+__film, at_list=[tv_screen,])
     $ renpy.show('Kira tv-watch 01'+kira.dress)
+    if 'kira_night_tv.porn_view' not in persistent.memories:
+        $ persistent.memories['kira_night_tv.porn_view'] = 0
 
     if 'serial' in __film:
         # кира смотрит сериал

@@ -219,15 +219,16 @@ label lisa_dressed_school:
                 "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
                 "Это я, Макс. Можно войти?":
                     jump .come_in
+                "Можно войти на секунду? Я только ноутбук возьму..." if flags['warning']:
+                    jump get_laptop
                 "Хорошо, я подожду...":
                     $ spent_time = 10
                     jump .rel_mood
+
         "{i}открыть дверь{/i}" if lisa.free < 200:
             jump .open_door
         "{i}заглянуть в окно{/i}"  if lisa.free < 200:
             jump .look_window
-        #"войти в комнату" if lisa.free >= 200:
-        #    pass
         "{i}уйти{/i}":
             $ spent_time = 10
             jump .rel_mood
@@ -401,6 +402,8 @@ label lisa_dressed_shop:
                         jump .open_door
                     "Хорошо...":
                         jump .rel_mood
+            "Можно войти на секунду? Я только ноутбук возьму..." if flags['warning']:
+                jump get_laptop
             "Хорошо, я подожду...":
                 jump .rel_mood
 
@@ -461,13 +464,26 @@ label lisa_dressed_shop:
                 "{i}уйти{/i}":
                     jump .rel_mood
 
-
         scene location house myroom door-morning
 
         label .rel_mood:
             $ AddRelMood('lisa', __rel, __mood)
 
     jump Waiting
+
+
+label get_laptop:
+    scene BG char Lisa morning
+    show Lisa school-dressed 02b
+    Lisa_00 "Мог бы и подождать немного. Ты что, без ноутбука и часа прожить не можешь?"
+    Max_00 "Лиза, мне ноутбук нужен для дела."
+    Lisa_00 "Какого дела? Ты дома сидишь целыми днями и ничего не делаешь..."
+    Lisa_00 "Ладно, неважно... Забирай свой ноутбук и уходи. Дай мне уже переодеться..."
+    $ spent_time += 10
+    $ at_comp = True
+    $ current_room = house[5]
+    $ cam_flag.append('notebook_on_terrace')
+    jump Laptop
 
 
 label lisa_dressed_repetitor:

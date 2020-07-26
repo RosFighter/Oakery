@@ -500,6 +500,9 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'tvchoco'     : Daily(done=True, enabled=True), # предложение конфеты во время просмотра ТВ
         'alice.secret': Daily(done=True, enabled=True), # спросить Лизу о секрете Алисы
         'lizamentor'  : Daily(done=True, enabled=True), # обучение Лизы
+        'lisa_sweets' : Daily(done=True, enabled=True), # дарение сладости Лизе
+        'alice_sweets': Daily(done=True, enabled=True), # дарение сладости Алисе
+        'ann_sweets'  : Daily(done=True, enabled=True), # дарение сладости Анне
         }
 
     # ежедневное подсматривание

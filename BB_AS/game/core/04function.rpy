@@ -185,8 +185,16 @@ init python:
 
         if len(current_room.cur_char) == 1 and current_room.cur_char[0] in gifts:
             for gift in gifts[current_room.cur_char[0]]:
-                if items[gift.item].have and eval(gift.req):
-                    menu_items.append((gift.select, gift))
+                if type(gift.item) == list:
+                    have = False
+                    for it in gift.item:
+                        if items[it].have:
+                            have = True
+                    if have and eval(gift.req):
+                        menu_items.append((gift.select, gift))
+                else:
+                    if items[gift.item].have and eval(gift.req):
+                        menu_items.append((gift.select, gift))
 
         return menu_items
 
@@ -564,12 +572,16 @@ init python:
 
         # гостиная
         if current_room == house[4]:
-            # cur_plan = GetPlan(plan_ann, day, tm)
             cur_plan = alice.get_plan()
             if items['ann_movie'].have and cur_plan is not None and cur_plan.label == 'ann_tv':
                 AvailableActions['momovie'].active = True
             if not dishes_washed and len(current_room.cur_char) == 0:
                 AvailableActions['dishes'].active = True
+
+        # веранда
+        if current_room == house[5]:
+            if mgg.energy > 5 and 'notebook_on_terrace' in cam_flag:
+                AvailableActions['notebook'].active = True
 
         # двор
         if current_room == house[6]:
@@ -579,6 +591,7 @@ init python:
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
+        global cur_shed
         mgg.dress = clothes[mgg].casual.GetCur().suf
 
         if all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]):
@@ -588,6 +601,21 @@ init python:
             prev_shed = chars[char].get_plan(prevday, prevtime)
             cur_shed  = chars[char].get_plan()
             if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
+
+                # удалим флаг подсматривания за персонажем через камеры при смене текущего действия
+                for cur_act in cam_flag:
+                    if cur_act.split('_')[0] == char:
+                        # print('deleted cams act '+cur_act)
+                        cam_flag.remove(cur_act)
+
+                # удалим признак просмотра неактивной камеры
+                if cur_shed.loc:
+                    room = eval(cur_shed.loc+'['+str(cur_shed.room)+']')
+                    i = 0
+                    for cam in room.cams:
+                        if room.id+'-'+str(i) in cam_flag:
+                            cam_flag.remove(room.id+'-'+str(i))
+                        i += 1
 
                 if char == 'alice' and talk_var['sun_oiled'] in [1, 2]:  # Если Алису уже намазали кремом, повторное намазываение невозможно
                     talk_var['sun_oiled'] = 3
@@ -667,6 +695,10 @@ init python:
             inf   = clothes[alice].casual.GetCur().info
             if flags['smoke']=='nojeans' and dress!='a':
                 # если есть требование не носить джинсы, но установлена другая одежда - отменяем требование
+                flags['smoke']==None
+                flags['smoke.request'] = None
+            elif flags['smoke']=='nopants' and dress!='a':
+                # если есть требование не носить трусы под джинсами, но установлена другая одежда - также отменяем требование
                 flags['smoke']==None
                 flags['smoke.request'] = None
             elif all([dress=='a', flags['smoke']=='nojeans', not check_is_home('ann')]):
@@ -1159,7 +1191,7 @@ init python:
         kol_choco -= 1
         if kol_choco == 0:
             items['choco'].InShop = True
-            items['choco'].have   = Flase
+            items['choco'].have   = False
             notify_list.append(_("Конфеты закончились"))
 
 

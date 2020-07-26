@@ -1679,7 +1679,7 @@ label gift_pajamas:
     else:
         $ alice.infmax = 20.0
 
-    $ sorry_gifts['alice'].valid = {'ritter-m', 'ferrero-m'}
+    $ sorry_gifts['alice'].valid = {'ferrero-b', 'ferrero-m'}
 
     $ clothes[alice].casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
     $ clothes[alice].casual.cur = 1
