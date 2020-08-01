@@ -410,7 +410,7 @@ label cam_after_waiting:
                         jump open_site
         else:
             # Лиза спит
-            if not house[5].cur_char and 'warning' not in flags:
+            if not house[5].cur_char and not flags['warning']:
                 # на веранде никого, разговора про веранду еще не было
                 $ flags['warning'] = True
                 menu:
@@ -917,6 +917,12 @@ label after_load:
             if 4 in sorry_gifts['alice'].give and sorry_gifts['alice'].owe:
                 $ sorry_gifts['alice'].owe = False
                 $ sorry_gifts['alice'].valid = {'ferrero-b', 'ferrero-m'}
+
+        if current_ver < "0.04.1.04":
+            $ current_ver = "0.04.1.04"
+
+            if 'warning' not in flags:
+                $ flags['warning'] = False
 
         if current_ver < config.version:
             $ current_ver = config.version

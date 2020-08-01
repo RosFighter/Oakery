@@ -74,102 +74,180 @@ label cam1_alice_swim:
         Max_00 "На старшую сестрёнку всегда приятно взглянуть..."
     return
 
-label cam0_alice_dressed_shop:
-    $ __list = {
-            'a':['01', '02', '03'],
-            'b':['02',],
-            'c':['02','03'],
-            'd':['02','03','05']
-        }[alice.dress]
-    $ __ran1 = renpy.random.choice(__list)
-
-    $ __suf = 'a' if all([__ran1 != '01', 'smoke' in talk_var, flags['smoke'] == 'nopants']) else ''
-    if flags['smoke'] == 'not_nopants':
-        $ flags['noted'] = True
-
+label alice_cam_dress_inf(r1):
     $ alice.dress_inf = {
             '01':'02b',
-            '02':'02a' if __suf else '02d',
-            '03':'02c' if __suf else '02e',
-            '05':'02h',
-        }[__ran1]
+            '02':'02e',
+            '02a':'02c',
+            '03':'02h',
+            '04':'02fa',
+            '05':'00',
+            '06':'00',
+            '07':'00',
+            '08':'00a',
+            '09':'02d',
+            '09a':'02a',
+            '10':'06a',
+            '10a':'06b',
+            '11':'01',
+            '12':'06',
+        }[r1]
+    return
 
-    $ renpy.show('Alice cams dressed '+__ran1+__suf, at_list=[laptop_screen])
+label cam0_alice_dressed_shop:
+
+    if 'alice_dressed' in cam_flag:
+        $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
+        $ alice.dress_inf = '01'
+        if 'alice_dressed_txt' not in cam_flag:
+            $ cam_flag.append('alice_dressed_txt')
+            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+        return
+
+    $ cam_flag.append('alice_dressed')
+    $ spent_time += 10
+
+    if alice.dress in ['a', 'c']:
+        $ __r1 = renpy.random.choice(['01', '02a']) if alice.nopants else renpy.random.choice(['01', '02'])
+    elif alice.dress = 'b':
+        $ __r1 = '04' # нет спрайта, временно ставим в одних
+    elif alice.dress = 'd':
+        $ __r1 = '03'
+    call alice_cam_dress_inf(__r1)
+
+    $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'alice_dressed' not in cam_flag:
-        $ cam_flag.append('alice_dressed')
-        if flags['smoke'] == 'not_nopants' and __ran1 not in ['01', '05']:
-            # на Алисе трусики, когда их быть не должно
-            Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!"
-        elif flags['smoke'] == 'nopants' and __ran1 not in ['01', '05']:
-            # Макс видит, что Алиса соблюдает договоренность
-            Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?"
-        elif __ran1 in ['02', '03']:
-            # Если нет договоренности по поводу трусов
-            Max_04 "Алиса переодевается... Какая соблазнительная попка у неё... Уверен, зрителям это нравится!"
-        else:
-            # Сиськи , однако
-            Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом... Зрители, наверное, без ума от них!"
+    menu:
+        Max_00 "Ага! Алиса одевается на шопинг..."
+        "{i}продолжать смотреть{/i}":
+            pass
+        "{i}достаточно{/i}":
+            jump open_site
+
+    $ __r1 = renpy.random.choice(['05','06','07'])
+    call alice_cam_dress_inf(__r1)
+    $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    menu:
+        Max_00 "Ого, вот это вид!!!"
+        "{i}продолжать смотреть{/i}":
+            pass
+        "{i}достаточно{/i}":
+            jump open_site
+
+    if flags['smoke'] == 'not_nopants':
+        $ renpy.show('Alice cams dressed 09', at_list=[laptop_screen])
+        call alice_cam_dress_inf('09')
+        Max_01 "Похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!"
+    elif flags['smoke'] == 'nopants':
+        $ renpy.show('Alice cams dressed 09a', at_list=[laptop_screen])
+        call alice_cam_dress_inf('09a')
+        Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?"
+    else:
+        $ renpy.show('Alice cams dressed 09', at_list=[laptop_screen])
+        call alice_cam_dress_inf('09')
+        Max_04 "Какая соблазнительная попка у неё... Уверен, зрителям это нравится!"
     return
 
 label cam0_alice_dressed_friend:
-    $ __list = {
-            'a':['01', '02', '03'],
-            'b':['02',],
-            'c':['02','03'],
-            'd':['02','03','05']
-        }[alice.dress]
-    $ __ran1 = renpy.random.choice(__list)
+    if 'alice_dressed' in cam_flag:
+        $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
+        $ alice.dress_inf = '01'
+        if 'alice_dressed_txt' not in cam_flag:
+            $ cam_flag.append('alice_dressed_txt')
+            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+        return
 
-    $ __suf = 'a' if all([__ran1 != '01', 'smoke' in talk_var, flags['smoke'] == 'nopants']) else ''
-    if flags['smoke'] == 'not_nopants':
-        $ flags['noted'] = True
+    $ cam_flag.append('alice_dressed')
+    $ spent_time += 10
 
-    $ alice.dress_inf = {
-            '01':'02b',
-            '02':'02a' if __suf else '02d',
-            '03':'02c' if __suf else '02e',
-            '05':'02h',
-        }[__ran1]
+    if alice.dress in ['a', 'c']:
+        $ __r1 = renpy.random.choice(['01', '02a']) if alice.nopants else renpy.random.choice(['01', '02'])
+    elif alice.dress = 'b':
+        $ __r1 = '04' # нет спрайта, временно ставим в одних
+    elif alice.dress = 'd':
+        $ __r1 = '03'
+    call alice_cam_dress_inf(__r1)
 
-    $ renpy.show('Alice cams dressed '+__ran1+__suf, at_list=[laptop_screen])
+    $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'alice_dressed' not in cam_flag:
-        $ cam_flag.append('alice_dressed')
-        if flags['smoke'] == 'not_nopants' and __ran1 not in ['01', '05']:
-            # на Алисе трусики, когда их быть не должно
-            Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
-        elif flags['smoke'] == 'nopants' and __ran1 not in ['01', '05']:
-            # Алиса соблюдает договоренность
-            Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт..."
-        elif __ran1 in ['02', '03']:
-            # нет договоренности по поводу трусов
-            Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них было бы лучше..."
-        else:
-            # Сиськи , однако
-            Max_03 "О, какой вид! Да, сестрёнка, такими классными и голыми сиськами грех не покрасоваться перед зеркалом..."
+    menu:
+        Max_00 "Алиса переодевается..."
+        "{i}продолжать смотреть{/i}":
+            pass
+        "{i}достаточно{/i}":
+            jump open_site
+
+    $ __r1 = renpy.random.choice(['05','06','07'])
+    call alice_cam_dress_inf(__r1)
+    $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    menu:
+        Max_00 "Ого, вот это вид!!!"
+        "{i}продолжать смотреть{/i}":
+            pass
+        "{i}достаточно{/i}":
+            jump open_site
+
+    if flags['smoke'] == 'not_nopants':
+        $ renpy.show('Alice cams dressed 09', at_list=[laptop_screen])
+        call alice_cam_dress_inf('09')
+        Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
+    elif flags['smoke'] == 'nopants':
+        $ renpy.show('Alice cams dressed 09a', at_list=[laptop_screen])
+        call alice_cam_dress_inf('09a')
+        Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт..."
+    else:
+        $ renpy.show('Alice cams dressed 09', at_list=[laptop_screen])
+        call alice_cam_dress_inf('09')
+        Max_04 "Трусики хорошо смотрятся на её попке. Но без них было бы лучше..."
     return
 
 label cam0_alice_dressed_club:
-    if 'smoke' in talk_var and flags['smoke'] == 'nopants':
-        $ __suf = 'a'
-        $ alice.dress_inf = '06b'
-    else:
-        $ __suf = ''
-        $ alice.dress_inf = '06a'
-    if 'smoke' in talk_var and flags['smoke'] == 'not_nopants':
-        $ flags['noted'] = True
-    $ renpy.show('Alice cams dressed 04'+__suf, at_list=[laptop_screen])
+    if 'alice_dressed' in cam_flag:
+        $ renpy.show('Alice cams dressed 12', at_list=[laptop_screen])
+        $ alice.dress_inf = '06'
+        if 'alice_dressed_txt' not in cam_flag:
+            $ cam_flag.append('alice_dressed_txt')
+            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+        return
+
+    $ cam_flag.append('alice_dressed')
+    $ spent_time += 10
+
+    $ __r1 = '04'
+    call alice_cam_dress_inf(__r1)
+
+    $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'alice_dressed' not in cam_flag:
-        $ cam_flag.append('alice_dressed')
-        if flags['smoke'] == 'not_nopants':
-            ## Алиса в трусиках, но их быть не должно
-            Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
-        elif flags['smoke'] == 'nopants':
-            ## Алиса без трусиков, как и должна
-            Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?"
-        else:
-            ## Алиса в трусиках. Договоренностей нет
-            Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше..."
+    menu:
+        Max_00 "Алиса собирается в клуб..."
+        "{i}продолжать смотреть{/i}":
+            pass
+        "{i}достаточно{/i}":
+            jump open_site
+
+    $ __r1 = renpy.random.choice(['05','06','07'])
+    call alice_cam_dress_inf(__r1)
+    $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    menu:
+        Max_00 "Ого, вот это вид!!!"
+        "{i}продолжать смотреть{/i}":
+            pass
+        "{i}достаточно{/i}":
+            jump open_site
+
+    if flags['smoke'] == 'not_nopants':
+        $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
+        call alice_cam_dress_inf('10')
+        Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
+    elif flags['smoke'] == 'nopants':
+        $ renpy.show('Alice cams dressed 10a', at_list=[laptop_screen])
+        call alice_cam_dress_inf('10a')
+        Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?"
+    else:
+        $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
+        call alice_cam_dress_inf('10')
+        Max_04 "Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше..."
     return

@@ -1405,7 +1405,7 @@ label Lisa_HomeWork:
             Lisa_02 "Давай."
             Max_01 "Хорошо. Договорились."
             $ talk_var['lisa.handmass'] = 0
-        else:
+        elif talk_var['lisa.footmass']==3:
             $ talk_var['lisa.footmass'] -= 1
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
