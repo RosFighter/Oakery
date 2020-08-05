@@ -229,6 +229,9 @@ label NewDay:
 
     $ talk_var['sun_oiled'] = 0  # Алиce можно намазать кремом
     $ flags['alice.drink'] = 0   # Алиса протрезвела
+
+    $ cam_flag = []  # обнулим подсматривания через камеры
+
     return
 
 
@@ -495,11 +498,14 @@ label cam_background:
             scene BG char Max laptop-night-01t
         else:
             scene BG char Max laptop-night-01
-    $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+{
+    $ __time_of_day = {
         '06:00'<=tm<'11:00':' morning',
         '11:00'<=tm<'19:00':' day',
-        '19:00'<=tm<'21:00':' evening',
-        tm<'06:00'or'21:00'<=tm:' night'}[True], at_list=[laptop_screen,])
+        '19:00'<=tm<'22:00':' evening',
+        tm<'06:00'or'22:00'<=tm:' night'}[True]
+    $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+__time_of_day, at_list=[laptop_screen,])
+    if current_room == house[5] and view_cam[0].id == 'my_room':
+        $ renpy.show('Max cams patch '+__time_of_day, at_list=[laptop_screen,])
 
     return
 
@@ -923,6 +929,12 @@ label after_load:
 
             if 'warning' not in flags:
                 $ flags['warning'] = False
+
+        if current_ver < "0.04.1.05":
+            $ current_ver = "0.04.1.05"
+
+            if 'cam_fun_alice' not in flags:
+                $ flags['cam_fun_alice'] = False
 
         if current_ver < config.version:
             $ current_ver = config.version

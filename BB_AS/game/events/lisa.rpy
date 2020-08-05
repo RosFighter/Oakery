@@ -382,7 +382,7 @@ label lisa_dressed_shop:
         $ __rel = 0
         $ __warned = False
         $ peeping['lisa_dressed'] = 1
-        $ spent_time = 60 - int(tm[-2:])
+        $ spent_time = 10 #60 - int(tm[-2:])
         menu .lisa_dressed:
             Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
             "{i}постучаться{/i}":

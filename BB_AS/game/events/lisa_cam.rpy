@@ -34,6 +34,7 @@ label cam1_lisa_swim:
 
 label lisa_cam_dress_inf(r1):
     $ lisa.dress_inf = {
+            '00':'02a',
             '01':'02b',
             '02':'02c',
             '03':'00',
@@ -64,7 +65,7 @@ label cam0_lisa_dressed_school:
     $ cam_flag.append('lisa_dressed')
     $ spent_time += 10
 
-    $ __r1 = renpy.random.choice(['01', '02'])
+    $ __r1 = renpy.random.choice(['00', '01', '02'])
     call lisa_cam_dress_inf(__r1)
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -108,7 +109,7 @@ label cam0_lisa_dressed_shop:
     $ cam_flag.append('lisa_dressed')
     $ spent_time += 10
 
-    $ __r1 = renpy.random.choice(['01', '02'])
+    $ __r1 = renpy.random.choice(['00', '01', '02'])
     call lisa_cam_dress_inf(__r1)
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -137,4 +138,36 @@ label cam0_lisa_dressed_shop:
 
     Max_00 "Эх, самое интересное уже закончилось..."
     # jump open_site
+    return
+
+label cam0_lisa_read:
+    $ renpy.show('Lisa cams reading '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'lisa_read' not in cam_flag:
+        $ cam_flag.append('lisa_read')
+        Max_00 "Лиза с таким увлечением читает..."
+    return
+
+label cam0_lisa_sleep_morning:
+    $ renpy.show('Lisa cams sleep morning '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'lisa_sleep' not in cam_flag:
+        $ cam_flag.append('lisa_sleep')
+        Max_00 "Сестрёнка спит..."
+    return
+
+label cam0_lisa_sleep_night:
+    $ renpy.show('Lisa cams sleep night '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'lisa_sleep' not in cam_flag:
+        $ cam_flag.append('lisa_sleep')
+        Max_00 "Сестрёнка спит..."
+    return
+
+label cam0_lisa_phone:
+    $ renpy.show('Lisa cams phone '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'lisa_phone' not in cam_flag:
+        $ cam_flag.append('lisa_phone')
+        Max_00 "Сестрёнка бездельничает с телефоном..."
     return

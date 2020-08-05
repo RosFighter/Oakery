@@ -592,6 +592,8 @@ label InitVariable: # стартовая инициация переменных
             'kira.bath.fj'  : False,
             'kira.tv.bj'    : False,
             'smoke'         : None,
+            'warning'       : False,
+            'cam_fun_alice' : False,
             }
         CurChar = 'max'
         CurPoss = ""

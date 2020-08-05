@@ -94,16 +94,16 @@ label alice_sleep_night:
         return
 
     $ peeping['alice_sleep'] = 1
-    if 'smoke' in talk_var and flags['smoke'] == 'sleep':
-        $ __suf = 'a'
-    else:
-        $ __suf = ''
+    # if 'smoke' in talk_var and flags['smoke'] == 'sleep':
+    #     $ __suf = 'a'
+    # else:
+    #     $ __suf = ''
     menu:
         Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
         "{i}заглянуть в окно{/i}":
             $ spent_time = 10
             scene BG char Alice bed-night-01
-            $ renpy.show('Alice sleep-night '+pose3_2+__suf)
+            $ renpy.show('Alice sleep-night '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
             if 'smoke' in flags and flags['smoke'] == 'sleep':
                 #  условие выполняется
@@ -136,7 +136,7 @@ label alice_sleep_night:
             if rez != 'exit':
                 $ spent_time += 10
                 scene BG char Alice bed-night-02
-                $ renpy.show('Alice sleep-night-closer '+pose3_2+__suf)
+                $ renpy.show('Alice sleep-night-closer '+pose3_2+alice.dress)
                 if 'smoke' in flags and flags['smoke'] == 'sleep':
                     if pose3_2 == '01':
                         Max_03 "Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить..." nointeract
@@ -162,16 +162,16 @@ label alice_sleep_morning:
     if peeping['alice_sleep'] != 0:
         return
     $ peeping['alice_sleep'] = 1
-    if 'smoke' in talk_var and flags['smoke'] == 'sleep':
-        $ __suf = 'a'
-    else:
-        $ __suf = ''
+    # if 'smoke' in talk_var and flags['smoke'] == 'sleep':
+    #     $ __suf = 'a'
+    # else:
+    #     $ __suf = ''
     menu:
         Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
         "{i}заглянуть в окно{/i}":
             $ spent_time = 10
             scene BG char Alice bed-morning-01
-            $ renpy.show('Alice sleep-morning '+pose3_2+__suf)
+            $ renpy.show('Alice sleep-morning '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-morning-00'+mgg.dress)
             if 'smoke' in flags and flags['smoke'] == 'sleep':
                 $ alice.dress_inf = '02ga'
@@ -202,7 +202,7 @@ label alice_sleep_morning:
             if rez != 'exit':
                 $ spent_time += 10
                 scene BG char Alice bed-morning-02
-                $ renpy.show('Alice sleep-morning-closer '+pose3_2+__suf)
+                $ renpy.show('Alice sleep-morning-closer '+pose3_2+alice.dress)
                 if 'smoke' in flags and flags['smoke'] == 'sleep':
                     if pose3_2 == '01':
                         Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эти сиськи! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract

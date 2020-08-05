@@ -607,6 +607,7 @@ label alice_talk_tv:
     Max_03 "Тебе спасибо..."
     $ talk_var['al.tvgood'] += 1
     $ persistent.memories['alice_talk_tv'] = 1
+    $ talk_var['al.tv.mas'] = 3
     jump .end
 
     menu .fail:

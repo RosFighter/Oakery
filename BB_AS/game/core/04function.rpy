@@ -706,6 +706,7 @@ init python:
                 inf   = '02e'
 
             if name == 'sleep':
+                dress = 'b' if 'smoke' in talk_var and flags['smoke'] == 'sleep' else 'a'
                 inf = '02'
             elif name in ['shower', 'bath']:
                 inf = '04aa'
