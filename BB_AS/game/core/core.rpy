@@ -128,7 +128,7 @@ label Midnight:
             $ __chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
             if RandomChance(__chance):
                 $ flags['smoke'] = 'not_' + flags['smoke.request']
-                $ flags['noted'] = False  # нарушение еще не замечено Максом
+                $ flags['noted'] = False  # нарушение ещё не замечено Максом
                 if flags['smoke.request'] == 'nopants':
                     $ alice.nopants = False
                 elif flags['smoke.request'] == 'sleep':
@@ -393,7 +393,7 @@ label cam_after_waiting:
         if lisa.plan_name != 'sleep':
             # Лиза не спит
             if not house[5].cur_char and 'warning' not in flags:
-                # на веранде никого, разговора про веранду еще не было
+                # на веранде никого, разговора про веранду ещё не было
                 $ flags['warning'] = True
                 menu:
                     Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..."
@@ -414,7 +414,7 @@ label cam_after_waiting:
         else:
             # Лиза спит
             if not house[5].cur_char and not flags['warning']:
-                # на веранде никого, разговора про веранду еще не было
+                # на веранде никого, разговора про веранду ещё не было
                 $ flags['warning'] = True
                 menu:
                     Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..."
@@ -465,8 +465,8 @@ label cam_after_waiting:
         $ time_of_day = {
                 '06:00' <= tm < '11:00': 'morning',
                 '11:00' <= tm < '19:00': 'day',
-                '19:00' <= tm < '21:00': 'evening',
-                '21:00'<=tm or tm<'06:00': 'night'
+                '19:00' <= tm < '22:00': 'evening',
+                '22:00'<=tm or tm<'06:00': 'night'
             }[True]
 
         if current_room == house[5]:
@@ -488,7 +488,7 @@ label cam_after_waiting:
 
 label cam_background:
     ### показываем пустой фон локации
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         if current_room == house[5]:
             scene BG char Max laptop-day-01t
         else:
@@ -498,14 +498,16 @@ label cam_background:
             scene BG char Max laptop-night-01t
         else:
             scene BG char Max laptop-night-01
-    $ __time_of_day = {
+    $ tod = {
         '06:00'<=tm<'11:00':' morning',
         '11:00'<=tm<'19:00':' day',
         '19:00'<=tm<'22:00':' evening',
         tm<'06:00'or'22:00'<=tm:' night'}[True]
-    $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+__time_of_day, at_list=[laptop_screen,])
+    # if all([view_cam[0].id == 'my_room', 'lisa' in house[0].cur_char, lisa.plan_name!='sleep', tod==' night']):
+    #     $ __time_of_day = ' evening'
+    $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+tod, at_list=[laptop_screen,])
     if current_room == house[5] and view_cam[0].id == 'my_room':
-        $ renpy.show('Max cams patch '+__time_of_day, at_list=[laptop_screen,])
+        $ renpy.show('Max cams patch '+tod, at_list=[laptop_screen,])
 
     return
 

@@ -98,6 +98,15 @@ init: # трансформации для кнопок
     transform right_shift:
         xpos 200
 
+    transform alt_left_shift:
+        xpos -75
+
+    transform alt_right_shift:
+        xpos 300
+
+    transform ladder_right_shift:
+        xpos 350
+
 ################################################################################
 
 screen choice_lang():
@@ -111,7 +120,7 @@ screen choice_lang():
 
 screen PowerBack():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
-        if '06:00' <= tm < '21:00':
+        if '06:00' <= tm < '22:00':
             if current_room == house[5]:
                 background 'interface laptop keys-bg-dayt'
             else:
@@ -134,7 +143,7 @@ screen PowerBack():
 
 screen PowerBack2():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
-        if '06:00' <= tm < '21:00':
+        if '06:00' <= tm < '22:00':
             if current_room == house[5]:
                 background 'interface laptop keys-bg-dayt'
             else:
@@ -157,7 +166,7 @@ screen PowerBack2():
 
 screen PowerBack3():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
-        if '06:00' <= tm < '21:00':
+        if '06:00' <= tm < '22:00':
             if current_room == house[5]:
                 background 'interface laptop keys-bg-dayt'
             else:
@@ -585,7 +594,7 @@ screen OnlineCources():
                                         idle_background Frame('interface button green', 12, 12)
                                         hover_background Frame('interface button green', 12, 12)
                                         action Jump('ViewLesson')
-                                else:  # таймаут еще не кончился
+                                else:  # таймаут ещё не кончился
                                     textbutton _("{i}{b}ВЫ УЧИЛИСЬ СОВСЕМ НЕДАВНО. СДЕЛАЙТЕ ПЕРЕРЫВ!{/b}{/i}") style 'buy_button2':
                                         idle_background Frame('interface button orange', 12, 12)
                                         hover_background Frame('interface button orange', 12, 12)
@@ -762,7 +771,7 @@ screen MySite():
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-morning-'+str(num)
                                             elif '11:00' <= tm < '19:00':
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-day-'+str(num)
-                                            elif '19:00' <= tm < '21:00':
+                                            elif '19:00' <= tm < '22:00':
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-evening-'+str(num)
                                             else:
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-night-'+str(num)
@@ -1561,7 +1570,7 @@ screen cam_show():
         add 'interface laptop cam audience' ypos 5
 
     frame xalign 0.5 ypos 985 xsize 200:# background None:
-        if '06:00' <= tm < '21:00':
+        if '06:00' <= tm < '22:00':
             if current_room == house[5]:
                 background 'interface laptop keys-bg-dayt'
             else:

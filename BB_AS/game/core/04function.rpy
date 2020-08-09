@@ -99,7 +99,7 @@ init python:
                     room.cur_bg = 'location '+str(loc)+' '+room.id+' morning-'+random_loc_ab
                 elif '11:00' <= tm < '18:00':
                     room.cur_bg = 'location '+str(loc)+' '+room.id+' day-'+random_loc_ab
-                elif '18:00' <= tm < '21:00':
+                elif '18:00' <= tm < '22:00':
                     room.cur_bg = 'location '+str(loc)+' '+room.id+' evening-'+random_loc_ab
                 else:
                     room.cur_bg = 'location '+str(loc)+' '+room.id+' night-'+random_loc_ab

@@ -45,7 +45,7 @@ translate english ann_sleep_acd8f5fc:
 # game/events/ann.rpy:42
 translate english ann_shower_b99b712c:
 
-    # Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее еще больше."
+    # Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее ещё больше."
     Max_00 "I already got caught peeping at my mom today. Shoudn't make her more mad."
 
 # game/events/ann.rpy:44

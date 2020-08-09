@@ -217,7 +217,7 @@ label Notebook:
     if current_room == house[5]:
         jump Laptop
     $ renpy.block_rollback()
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         scene BG char Max laptop-day-00
         $ renpy.show('Max laptop-day 01'+mgg.dress)
     else:
@@ -229,7 +229,7 @@ label Notebook:
 
 
 label Laptop:
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         if current_room == house[5]:
             scene BG char Max laptop-day-01t
         else:
@@ -264,7 +264,7 @@ label Laptop:
 
 
 label LaptopShop:
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         if current_room == house[5]:
             scene BG char Max laptop-day-01t
         else:
@@ -299,7 +299,7 @@ label buyfood:
 
 
 label courses_start:
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         if current_room == house[5]:
             scene BG char Max laptop-day-01t
         else:
@@ -345,7 +345,7 @@ label create_site:
 
 
 label open_site:
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         if current_room == house[5]:
             scene BG char Max laptop-day-01t
         else:
@@ -801,7 +801,7 @@ label HideSpider:
 
 label ViewLesson:
 
-    if '06:00' <= tm < '21:00':
+    if '06:00' <= tm < '22:00':
         if current_room == house[5]:
             scene BG char Max laptop-day-01t
         else:
@@ -865,7 +865,7 @@ label SearchCigarettes:
             "{i}подставить Алису{/i}":
                 if ((tm < '13:00' and alice.plan_name == 'smoke')
                     or (tm < '17:00') and alice.plan_name == 'at_friends'):
-                        pass  # если сегодня Алиса еще не курила или будет у подружки, подставлять бесполезно, она переложит сигареты
+                        pass  # если сегодня Алиса ещё не курила или будет у подружки, подставлять бесполезно, она переложит сигареты
                 else:
                     $ punalice[0][1] = 1
             "{i}не подставлять Алису{/i}":

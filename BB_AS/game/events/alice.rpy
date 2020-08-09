@@ -226,7 +226,7 @@ label alice_sleep_morning:
 label alice_shower:
     scene location house bathroom door-morning
     if peeping['alice_shower'] == 3:
-        Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее еще больше, а то точно что-нибудь оторвет."
+        Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее ещё больше, а то точно что-нибудь оторвет."
         return
     elif peeping['alice_shower'] == 1:
         Max_00 "Я уже подсматривал сегодня за Алисой. Не стоит искушать судьбу слишком часто."
@@ -440,7 +440,7 @@ label alice_shower:
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
         if flags['smoke'] == 'not_nopants' and not flags['noted']:
-            # Алиса в трусиках, хотя должна быть без них и Макс еще об этом не знает
+            # Алиса в трусиках, хотя должна быть без них и Макс ещё об этом не знает
             Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
             Max_00 "Непорядок. Нужно с этим что-то делать..."
             $ added_mem_var('alice_not_nopants')
@@ -462,7 +462,7 @@ label alice_shower:
             Max_06 "Вау! Алиса сегодня совершенно голая! Как мы и договорились, трусики она не носит и даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями..."
             $ alice.dress_inf = '00a'
 
-        Max_00 "Ладно, хорошего понемногу, а то еще заметит меня здесь кто-нибудь..."
+        Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
 
     label .end:
         $ current_room, prev_room = prev_room, current_room
@@ -1201,8 +1201,46 @@ label alice_lisa_shower:
         Max_01 "Интересно, кто сейчас в душе?"
         "{i}заглянуть со двора{/i}":
             jump .start_peeping
+        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+            jump .ladder
         "{i}уйти{/i}":
             return
+
+    label .ladder:
+        $ Skill('hide', 0.03)
+        $ renpy.scene()
+        $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
+        Max_04 "Посмотрим, что у нас тут..."
+        $ __r0 = renpy.random.randint(1, 4)
+        scene BG bathroom-morning-00
+        $ __r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
+        if __r0 == 1:
+            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+            show FG bathroom-morning-00
+            if __r1=='c':
+                Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А Алиса, видимо, уже в душе..."
+            else:
+                Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А Алиса, видимо, уже в душе..."
+
+        elif __r0 == 2:
+            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+            show FG bathroom-morning-00
+            if __r1=='c':
+                Max_00 "Алиса в одних трусиках красуется перед зеркалом, класс! А Лиза, видимо, уже в душе..."
+            else:
+                Max_00 "Алиса красуется перед зеркалом в костюме Евы, класс! А Лиза, видимо, уже в душе..."
+
+        else:
+            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_right_shift,])
+            show FG bathroom-morning-00
+            if __r1=='c':
+                Max_00 "Две сестрички красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
+            else:
+                Max_00 "Две совершенно голые сестрёнки красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
+
+        Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
+        jump .end
 
     label .start_peeping:
         $ Skill('hide', 0.03)
@@ -1213,6 +1251,8 @@ label alice_lisa_shower:
             Max_07 "Класс! Сегодня мои прекрасные сестрёнки принимают душ вместе... Красота!"
             "{i}продолжить смотреть{/i}":
                 pass
+            "{i}взглянуть со стороны{/i}":
+                jump .alt_peepeng
             "{i}уйти{/i}":
                 jump .end
 
@@ -1224,6 +1264,21 @@ label alice_lisa_shower:
         $ renpy.show('Lisa shower-closer 0'+str(__r1), at_list=[right_shift,])
         show FG shower-closer
         Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
+        jump .end
+
+    label .alt_peepeng:
+        $ spent_time += 10
+        $ alice.dress_inf = '00aa'
+        $ lisa.dress_inf = '00a'
+        $ __r1 = renpy.random.randint(1, 6)
+        $ __r2 = renpy.random.randint(1, 6)
+        scene BG shower-alt
+        $ renpy.show('Max shower-alt 01'+mgg.dress)
+        $ renpy.show('Lisa shower-alt 0'+str(__r1), at_list=[alt_left_shift,])
+        $ renpy.show('Alice shower-alt 0'+str(__r2), at_list=[alt_right_shift,])
+        show FG shower-water
+        Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
+        jump .end
 
     label .end:
         $ current_room, prev_room = prev_room, current_room

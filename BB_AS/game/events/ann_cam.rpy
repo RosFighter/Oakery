@@ -12,6 +12,13 @@ label cam0_ann_yoga:
         Max_02 "Мама, как и всегда в это время, занимается йогой. Здесь, хоть в какой позе, она выглядит очень сексуально..."
     return
 
+label cam1_ann_yoga:
+    show FG cam-shum-act at laptop_screen
+    if 'ann_yoga1' not in cam_flag:
+        $ cam_flag.append('ann_yoga1')
+        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+    return
+
 label cam0_ann_read:
     $ renpy.show('Ann cams reading '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -45,6 +52,7 @@ label ann_cam_dress_inf(r1):
 label cam0_ann_dressed_work:
     if 'ann_dressed' in cam_flag:
         $ renpy.show('Ann cams dressed 11', at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
         $ ann.dress_inf = '01d'
         if 'ann_dressed_txt' not in cam_flag:
             $ cam_flag.append('ann_dressed_txt')
@@ -88,6 +96,7 @@ label cam0_ann_dressed_work:
 label cam0_ann_dressed_shop:
     if 'ann_dressed' in cam_flag:
         $ renpy.show('Ann cams dressed 11', at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
         $ ann.dress_inf = '01d'
         if 'ann_dressed_txt' not in cam_flag:
             $ cam_flag.append('ann_dressed_txt')

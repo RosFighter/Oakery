@@ -617,7 +617,7 @@ init python:
             self.price     = price     # цена в магазине
             self.InShop    = InShop    # доступно к приобретению
             self.have      = have      # есть в сумке
-            self.bought    = bought    # куплено, но еще не доставлено
+            self.bought    = bought    # куплено, но ещё не доставлено
             self.delivery  = delivery  # доставка через .. дней
             self.need_read = need_read # если больше нуля - признак книги. Сколько циклов чтения нужно
             self.read      = 0         # сколько раз уже прочитано

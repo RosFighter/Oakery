@@ -78,6 +78,45 @@ image AnimAnnEric1:  # Анимация в спальне
     0.033
     repeat
 
+image CamAnnEric1:
+    'Eric cams fuck 06 00'
+    0.033
+    'Eric cams fuck 06 01'
+    0.033
+    'Eric cams fuck 06 02'
+    0.033
+    'Eric cams fuck 06 03'
+    0.033
+    'Eric cams fuck 06 04'
+    0.033
+    'Eric cams fuck 06 05'
+    0.033
+    'Eric cams fuck 06 06'
+    0.033
+    'Eric cams fuck 06 07'
+    0.033
+    'Eric cams fuck 06 08'
+    0.033
+    'Eric cams fuck 06 09'
+    0.033
+    'Eric cams fuck 06 10'
+    0.033
+    'Eric cams fuck 06 11'
+    0.033
+    'Eric cams fuck 06 12'
+    0.033
+    'Eric cams fuck 06 13'
+    0.033
+    'Eric cams fuck 06 14'
+    0.033
+    'Eric cams fuck 06 15'
+    0.033
+    'Eric cams fuck 06 16'
+    0.033
+    'Eric cams fuck 06 17'
+    0.033
+    repeat
+
 image AnimAnnEric2:  # Анимация в душе (утром со стремянки)
     'Eric bath-window-morning 06b 00'
     0.033

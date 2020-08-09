@@ -1375,7 +1375,7 @@ label gift_dress:
             scene location house aliceroom door-morning
         elif "11:00" <= tm < "18:00":
             scene location house aliceroom door-day
-        elif "18:00" <= tm < "21:00":
+        elif "18:00" <= tm < "22:00":
             scene location house aliceroom door-evening
         else:
             scene location house aliceroom door-night

@@ -9,19 +9,19 @@ translate english lisa_shower_1532bb65:
 # game/events/lisa.rpy:25
 translate english lisa_shower_265d5f12:
 
-    # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить ее еще больше."
+    # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить ее ещё больше."
     Max_14 "Lisa already caught me peeking. She threatened to tell Mom. I don't want to risk making her any angrier."
 
 # game/events/lisa.rpy:28
 translate english lisa_shower_dfd2e334:
 
-    # Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать еще раз."
+    # Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
     Max_09 "Lisa almost caught me peeping. Lucky I escaped in time. Don't want to risk it again."
 
 # game/events/lisa.rpy:31
 translate english lisa_shower_1ee1bae5:
 
-    # Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать еще раз."
+    # Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
     Max_01 "I've already spied on Lisa today and didn't get caught. Don't want to push my luck."
 
 # game/events/lisa.rpy:35

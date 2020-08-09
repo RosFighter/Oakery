@@ -123,7 +123,7 @@ translate english alice_sleep_morning_21f31196:
 # game/events/alice.rpy:109
 translate english alice_shower_228a4446:
 
-    # Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее еще больше, а то точно что-нибудь оторвет."
+    # Max_00 "Алиса меня уже поймала сегодня. Не стоит злить ее ещё больше, а то точно что-нибудь оторвет."
     Max_00 "Alice has already caught me today. I shouldn't try making her any more angry."
 
 # game/events/alice.rpy:111
@@ -754,13 +754,13 @@ translate english alice_shower_ladder_d56d02cd:
 # game/events/alice.rpy:331
 translate english alice_shower_ladder_00211017:
 
-    # Max_00 "Ладно, хорошего понемногу, а то еще заметит меня здесь кто-нибудь..."
+    # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
     Max_00 "Okay, time to go, or someone will notice me here..."
 
 # game/events/alice.rpy:575
 translate english spider_in_bed_help_34f29649:
 
-    # Alice_00 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
+    # Alice_00 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе ещё надо?!"
     Alice_00 "Max, don't be cheeky! What more do you want?!"
 
 # game/events/alice.rpy:576
@@ -838,7 +838,7 @@ translate english strings:
 # game/events/alice.rpy:577
 translate english spider_in_bed_help_5c9d5c24:
 
-    # Alice_06 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе еще надо?!"
+    # Alice_06 "Макс, не наглей! И так перед тобой голыми сиськами трясу, чего тебе ещё надо?!"
     Alice_06 "Max, don't be cheeky! What more do you want?!"
 
 # game/events/alice.rpy:590

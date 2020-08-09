@@ -56,6 +56,7 @@ label cam0_lisa_dressed_school:
 
     if 'lisa_dressed' in cam_flag:
         $ renpy.show('Lisa cams dressed 13', at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
         $ lisa.dress_inf = '01d'
         if 'lisa_dressed_txt' not in cam_flag:
             $ cam_flag.append('lisa_dressed_txt')
@@ -100,6 +101,7 @@ label cam0_lisa_dressed_shop:
 
     if 'lisa_dressed' in cam_flag:
         $ renpy.show('Lisa cams dressed 14', at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
         $ lisa.dress_inf = '01'
         if 'lisa_dressed_txt' not in cam_flag:
             $ cam_flag.append('lisa_dressed_txt')
@@ -165,6 +167,8 @@ label cam0_lisa_sleep_night:
     return
 
 label cam0_lisa_phone:
+    $ renpy.show('BG-cam house myroom-0 evening', at_list=[laptop_screen,])
+    $ renpy.show('Max cams patch evening', at_list=[laptop_screen,])
     $ renpy.show('Lisa cams phone '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_phone' not in cam_flag:
