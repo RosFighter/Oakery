@@ -1,8 +1,3 @@
-init:
-    transform laptop_screen:
-        xpos 221, ypos 93
-        size (1475, 829)
-
 
 label StartDialog:
     $ renpy.block_rollback()
@@ -217,7 +212,7 @@ label Notebook:
     if current_room == house[5]:
         jump Laptop
     $ renpy.block_rollback()
-    if '06:00' <= tm < '22:00':
+    if ('06:00' <= tm < '22:00') or ('lisa' in house[0].cur_char and lisa.plan_name != 'sleep'):
         scene BG char Max laptop-day-00
         $ renpy.show('Max laptop-day 01'+mgg.dress)
     else:
@@ -237,6 +232,8 @@ label Laptop:
     else:
         if current_room == house[5]:
             scene BG char Max laptop-night-01t
+        elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+            scene BG char Max laptop-day-01
         else:
             scene BG char Max laptop-night-01
 
@@ -272,6 +269,8 @@ label LaptopShop:
     else:
         if current_room == house[5]:
             scene BG char Max laptop-night-01t
+        elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+            scene BG char Max laptop-day-01
         else:
             scene BG char Max laptop-night-01
     show interface laptop e-shop at laptop_screen
@@ -307,6 +306,8 @@ label courses_start:
     else:
         if current_room == house[5]:
             scene BG char Max laptop-night-01t
+        elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+            scene BG char Max laptop-day-01
         else:
             scene BG char Max laptop-night-01
     show interface laptop e-shop at laptop_screen
@@ -353,6 +354,8 @@ label open_site:
     else:
         if current_room == house[5]:
             scene BG char Max laptop-night-01t
+        elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+            scene BG char Max laptop-day-01
         else:
             scene BG char Max laptop-night-01
     show interface laptop CoverBBCams at laptop_screen
@@ -809,6 +812,8 @@ label ViewLesson:
     else:
         if current_room == house[5]:
             scene BG char Max laptop-night-01t
+        elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+            scene BG char Max laptop-day-01
         else:
             scene BG char Max laptop-night-01
 

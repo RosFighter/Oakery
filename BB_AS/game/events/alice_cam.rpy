@@ -1,110 +1,238 @@
 
-label cam0_alice_read:
-    $ renpy.show('Alice cams reading '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+label cam0_alice_sleep_night:
+    if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
+        $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) else 'sleep_no_fun')
+
+    $ renpy.show('Alice cams sleep night '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
-    if 'alice_read' not in cam_flag:
-        $ cam_flag.append('alice_read')
-        Max_07 "Так, Алиса просто читает. Не особо интересно."
-        if poss['secretbook'].stn > 2:
-            Max_09 "Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать..."
+    if all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' not in cam_flag]):
+        $ cam_flag.append('alice_sleep_fun')
+        $ cam_flag.append('alice_sleep')
+        # день веселья. начало
+        show Alice cams fun-in-bed 01 at laptop_screen
+        Max_07 "Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?"
+
+        $ renpy.show('Alice cams fun-in-bed 02'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
+        Max_02 "Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку..."
+
+        $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
+        Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
+
+    elif all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):
+        $ cam_flag.append('alice_end_sleep_fun')
+        # день веселья. интресное закончилось
+        if 'smoke' in flags and flags['smoke'] == 'sleep':
+            Max_04 "Ночное шоу закончилось. Теперь Алиса спит... без лифчика... Умничка!"
+        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+            Max_09 "Ночное шоу закончилось. Теперь Алиса спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
+        else:
+            Max_01 "Ночное шоу закончилось. Теперь Алиса спит..."
+
+    elif 'alice_sleep' not in cam_flag:
+        $ cam_flag.append('alice_sleep')
+        if 'smoke' in flags and flags['smoke'] == 'sleep':
+            Max_04 "Алиса сейчас спит... без лифчика... Умничка!"
+        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+            Max_09 "Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
+        else:
+            Max_01 "Алиса сейчас спит..."
     return
 
-label cam0_alice_sun:
-    if talk_var['sun_oiled'] == 2:
-        show Alice cams sun-alone 00a at laptop_screen
-    elif talk_var['sun_oiled'] > 0:
-        show Alice cams sun-alone 00 at laptop_screen
+label cam0_alice_sleep_morning:
+    $ renpy.show('Alice cams sleep morning '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'alice_sleep' not in cam_flag:
+        $ cam_flag.append('alice_sleep')
+        if 'smoke' in flags and flags['smoke'] == 'sleep':
+            Max_04 "Алиса ещё спит... без лифчика... Умничка!"
+        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+            Max_09 "Алиса ещё спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
+        else:
+            Max_01 "Алиса ещё спит..."
+    return
+
+label cam0_alice_shower:
+    if tm[-2:] < '20' and alice.dress_inf != '00aa':
+        show FG cam-shum-act at laptop_screen
+        if 'alice_not_shower' not in cam_flag:
+            $ cam_flag.append('alice_not_shower')
+            if len(house[3].cams)>1:
+                Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+            else:
+                Max_09 "Алисы не видно через эту камеру..."
+
     else:
-        $ renpy.show('Alice cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-    if 'alice_sun0' not in cam_flag:
-        $ cam_flag.append('alice_sun0')
-        Max_00 "Загорающая Алиска радует глаза зрителей! Ну и мои заодно..."
+        $ alice.dress_inf = '00aa'
+        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
+        show other cam-shower-water at laptop_screen
+        show FG cam-shum-act at laptop_screen
+        if 'alice_shower' not in cam_flag:
+            $ cam_flag.append('alice_shower')
+            Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
     return
 
-label cam1_alice_sun:
-    if talk_var['sun_oiled'] == 2:
-        show Alice cams sun-alone 00a at laptop_screen
-    elif talk_var['sun_oiled'] > 0:
-        show Alice cams sun-alone 00 at laptop_screen
-
-    show FG cam-shum-act at laptop_screen
-    if 'alice_sun1' not in cam_flag:
-        $ cam_flag.append('alice_sun1')
-        if talk_var['sun_oiled']:
-            Max_00 "Загорающая Алиска радует глаза зрителей! Ну и мои заодно..."
+label cam1_alice_shower:
+    if tm[-2:] < '20' and alice.dress_inf != '00aa':
+        # назначим или определим одёжку
+        if alice.dress_inf != '04aa':
+            $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
         else:
-            Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+            if alice.nopants:
+                $ __r1 = renpy.random.choice(['b', 'd'])
+            else:
+                $ __r1 = renpy.random.choice(['a', 'c'])
+            $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
+
+        $ renpy.show('Alice cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath_mirror' not in cam_flag:
+            $ cam_flag.append('alice_bath_mirror')
+            # if flags['smoke'] == 'not_nopants' and not flags['noted'] and __r1 == 'c':
+            #     # Алиса в трусиках, хотя должна быть без них и Макс ещё об этом не знает
+            #     Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
+            #     Max_00 "Непорядок. Нужно с этим что-то делать..."
+            #     $ flags['noted'] = True
+            # elif __r1 in ['a', 'b']:
+            #     Max_02 "Да-а... Может Алиса и в халатике, но сиськи её видны просто замечательно! А они у неё - что надо..."
+            # elif __r1 == 'c':
+            #     Max_04 "Прекрасно! Алиса сегодня без халатика... в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
+            # else:
+            #     Max_06 "Вау! Алиса сегодня совершенно голая! Как мы и договорились, трусики она не носит и даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями..."
+            Max_03 "Алиса, прежде чем принять душ, любуется собой перед зеркалом. А я и мои зрители с радостью полюбуемся этим через камеру..."
+
+    else:
+        show FG cam-shum-act at laptop_screen
+        if 'alice_shower1' not in cam_flag:
+            $ cam_flag.append('alice_shower1')
+            Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
     return
 
-label cam0_alice_rest_morning:
-    $ renpy.show('Alice cams morning 01'+alice.dress, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-
-    if 'alice_morning' not in cam_flag:
-        $ cam_flag.append('alice_morning')
-        Max_00 "Алиска валяется с ноутбуком. Ничего интересного пока..."
-    return
-
-label cam0_alice_rest_evening:
-    if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
-        if GetWeekday(day) in [0, 2]:
-            $ cam_flag.append('blog_fun' if RandomChance(500) else 'blog_no_fun')
-        elif GetWeekday(day) == 6:
-            $ cam_flag.append('blog_fun')
+label cam0_alice_lisa_shower:
+    # выбор, кто из персонажей принимает душ
+    if 'alice_sh' in cam_flag:
+        $ __var = 'alice' if tm[-2:] < '30' else 'lisa' # в первой половине часа в душе Алиса
+    elif 'lisa_sh' in cam_flag:
+        $ __var = 'lisa' if tm[-2:] < '30' else 'alice' # в первой половине часа в душе Лиза
+    elif 'lisa_alice_sh' in cam_flag:
+        $ __var = 'lisa_alice'
+    else:
+        $ __var = renpy.random.choice(['alice', 'lisa_alice', 'lisa', 'lisa_alice'])
+        if __var == 'alice':
+            $ cam_flag.append('alice_sh' if tm[-2:] < '30' else 'lisa_sh')
+        elif __var == 'lisa':
+            $ cam_flag.append('lisa_sh' if tm[-2:] < '30' else 'alice_sh')
         else:
-            $ cam_flag.append('blog_no_fun')
+            $ cam_flag.append('lisa_alice_sh')
 
-    $ renpy.show('Alice cams evening 01'+alice.dress, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
+    if __var == 'alice':
+        # в душе Алиса, Лиза перед умывальниками
+        $ alice.dress_inf != '00aa'
+        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen,])
+        show other cam-shower-water at laptop_screen
+        show FG cam-shum-act at laptop_screen
 
-    if all([tm > '21:00', 'alice_evening' in cam_flag, 'blog_fun' in cam_flag, 'alice_blog_fun' not in cam_flag]):
-        $ cam_flag.append('alice_blog_fun')
-        # день развлечения. Развлечение начинается
-        $ __suf = 'a' if alice.dress =='a' and alice.nopants else ''
-        $ renpy.show('Alice cams fun-at-desk 02'+alice.dress+__suf, at_list=[laptop_screen])
-        Max_00 "Опачки, похоже, начинается что-то интересненькое! Алиска решила поразвлечься и стаскивает мешающую одежду..."
+        if 'alice_shower' not in cam_flag:
+            $ cam_flag.append('alice_shower')
+            Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
+            if 'lisa_mirror' not in cam_flag:
+                # Лизу ещё не видели
+                if len(house[3].cams)>1:
+                    Max_00 "Лиза, должно быть, крутиться перед зеркалом... Надо взглянуть через другую камеру..."
+                else:
+                    Max_00 "Лиза, должно быть, крутиться перед зеркалом, но отсюда не разглядеть..."
+            else:
+                # Лизу перед зеркалом уже видели. Не знаю, нужно ли это как-то комментировать при взгляде через камеру душа
+                pass
+    elif __var == 'lisa':
+        # в душе Лиза, перед умывальниками Алиса
+        $ lisa.dress_inf != '00a'
+        $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen,])
+        show other cam-shower-water at laptop_screen
+        show FG cam-shum-act at laptop_screen
 
-        $ __suf = 'a' if alice.dress in ['a', 'c'] else alice.dress
-        $ renpy.show('Alice cams fun-at-desk '+renpy.random.choice(['03', '04'])+__suf, at_list=[laptop_screen])
-        Max_00 "Вот это она завелась..."
-
-        # if not flags['cam_fun_alice']:
-        #     # переход на размышления Макса по развращению Алисы
-        #     call ....
-
-    elif all([tm >= '21:00', 'alice_blog_fun' in cam_flag, 'alice_end_blog_fun' not in cam_flag]):
-        $ cam_flag.append('alice_end_blog_fun')
-        # день развлечения. развлечение закончилось
-        Max_00 "К сожалению, вкусненькое быстро закончилось и теперь она опять просто занимается блогом..."
-
-    elif 'alice_evening' not in cam_flag:
-        #
-        $ cam_flag.append('alice_evening')
-        if 'blog_fun' in cam_flag:
-            Max_00 "Алиса занимается своим блогом, ничего интересного. Хотя... как знать, может стоит подождать..."
-        else:
-            Max_00 "Алиса занимается своим блогом, ничего интересного."
-
+        if 'lisa_shower' not in cam_flag:
+            $ cam_flag.append('lisa_shower')
+            Max_00 "Младшая сестрёнка в душе... На её прелести я могу смотреть часами..."
+            if 'alice_mirror' not in cam_flag:
+                # Алису ещё не видели
+                if len(house[3].cams)>1:
+                    Max_00 "Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
+                else:
+                    Max_00 "Алиса, должно быть, красуется перед зеркалом, но отсюда не разглядеть..."
+            else:
+                # Алису перед зеркалом уже видели. Не знаю, нужно ли это как-то комментировать при взгляде через камеру душа
+                pass
+    else:
+        # обе девчонки в душе, у зеркал никого
+        $ lisa.dress_inf != '00a'
+        $ alice.dress_inf != '00aa'
+        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 8)), at_list=[cam_shower_right])
+        $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 8)), at_list=[cam_shower_left])
+        show other cam-shower-water at laptop_screen
+        show FG cam-shum-act at laptop_screen
+        if 'lisa_shower' not in cam_flag:
+            $ cam_flag.append('lisa_shower')
+            Max_05 "Обе мои сестрёнки сейчас принимают душ. Глаз не отвести..."
     return
 
-label cam0_alice_swim:
-    show FG cam-shum-act at laptop_screen
-    if 'alice_swim0' not in cam_flag:
-        $ cam_flag.append('alice_swim0')
-        if len(house[6].cams)>1:
-            Max_00 "Ничего толком не видно... Стоит взглянуть с другой камеры..."
+label cam1_alice_lisa_shower:
+    # выбор, кто из персонажей принимает душ
+    if 'alice_sh' in cam_flag:
+        $ __var = 'lisa' if tm[-2:] < '30' else 'alice' # в первой половине часа перед зеркалом Лиза
+    elif 'lisa_sh' in cam_flag:
+        $ __var = 'alice' if tm[-2:] < '30' else 'lisa' # в первой половине часа перед зеркалом Алиса
+    elif 'lisa_alice_sh' in cam_flag:
+        $ __var = 'lisa_alice'
+    else:
+        $ __var = renpy.random.choice(['alice', 'lisa_alice', 'lisa', 'lisa_alice'])
+        if __var == 'alice':
+            $ cam_flag.append('lisa_sh' if tm[-2:] < '30' else 'alice_sh')
+        elif __var == 'lisa':
+            # перед умывальниками первые полчаса Лиза
+            $ cam_flag.append('alice_sh' if tm[-2:] < '30' else 'lisa_sh')
         else:
-            Max_00 "Ничего не разглядеть... Нужно установить камеру охватывающую бассейн..."
-    return
+            $ cam_flag.append('lisa_alice_sh')
 
-label cam1_alice_swim:
-    $ renpy.show('Alice cams swim '+renpy.random.choice(['01', '02', '03', '04']), at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-    if 'alice_swim1' not in cam_flag:
-        $ cam_flag.append('alice_swim1')
-        Max_00 "На старшую сестрёнку всегда приятно взглянуть..."
+
+    if __var == 'lisa':
+        # перед умывальниками Лиза, Алису не видно, она сейчас в душе
+        # if lisa.dress_inf != '04a': # если видели Лизу через окно или со двора
+        #     $ __r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
+        if tm[-2:] < '10' and lisa.dress_inf != '00a' and 'bathrobe' in lisa.gifts: # начало часа, Лизу в душе не видели, у нее есть халат
+            $ __r1 = 'a'
+        elif tm[-2:] < '20' and lisa.dress_inf not in ['00a', '00']: # Лизу не видели голой
+            $ __r1 = 'c'
+        else:
+            $ __r1 = 'd'
+        $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
+        $ renpy.show('Lisa cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
+        if 'lisa_mirror' not in cam_flag:
+            $ cam_flag.append('lisa_mirror')
+            Max_03 "Лиза внимательно разглядывает себя в зеркало... А я и мои зрители с радостью полюбуемся этим через камеру..."
+    elif __var == 'alice':
+        # перед умывальниками Алиса, Лизу не видно, она сейчас в душе
+        # if alice.dress_inf != '04aa': # если видели Алису через окно или со двора
+        #     $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
+        if tm[-2:] < '10' and alice.dress_inf != '00aa': # первая треть часа, Алису в душе не видели
+            $ __r1 = 'a'
+        elif tm[-2:] < '20' and alice.dress_inf not in ['00a', '00aa']:
+            $ __r1 = 'c'
+        else:
+            $ __r1 = 'd'
+        $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
+        $ renpy.show('Alice cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
+        if 'alice_mirror' not in cam_flag:
+            $ cam_flag.append('alice_mirror')
+            Max_05 "Ух, старшая сестрёнка просто сногсшибательна..."
+    else:
+        show FG cam-shum-act at laptop_screen
+        if 'alice_shower1' not in cam_flag:
+            $ cam_flag.append('alice_shower1')
+            Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
+
     return
 
 label alice_cam_dress_inf(r1):
@@ -136,7 +264,7 @@ label cam0_alice_dressed_shop:
         $ alice.dress_inf = '01'
         if 'alice_dressed_txt' not in cam_flag:
             $ cam_flag.append('alice_dressed_txt')
-            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
         return
 
     $ cam_flag.append('alice_dressed')
@@ -153,7 +281,7 @@ label cam0_alice_dressed_shop:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ага! Алиса одевается на шопинг..."
+        Max_07 "Ага! Алиса наряжается, чтобы отправиться на шопинг..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -164,7 +292,7 @@ label cam0_alice_dressed_shop:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого, вот это вид!!!"
+        Max_02 "О да! Сейчас она совсем голенькая..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -191,7 +319,7 @@ label cam0_alice_dressed_friend:
         $ alice.dress_inf = '01'
         if 'alice_dressed_txt' not in cam_flag:
             $ cam_flag.append('alice_dressed_txt')
-            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
         return
 
     $ cam_flag.append('alice_dressed')
@@ -208,7 +336,7 @@ label cam0_alice_dressed_friend:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Алиса переодевается..."
+        Max_07 "Ага! Алиса наряжается, чтобы куда-то отправиться..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -219,7 +347,7 @@ label cam0_alice_dressed_friend:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого, вот это вид!!!"
+        Max_02 "О да! Сейчас она совсем голенькая..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -246,7 +374,7 @@ label cam0_alice_dressed_club:
         $ alice.dress_inf = '06'
         if 'alice_dressed_txt' not in cam_flag:
             $ cam_flag.append('alice_dressed_txt')
-            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
         return
 
     $ cam_flag.append('alice_dressed')
@@ -258,7 +386,7 @@ label cam0_alice_dressed_club:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Алиса собирается в клуб..."
+        Max_07 "Ага! Алиса наряжается, чтобы отправиться в клуб..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -269,7 +397,7 @@ label cam0_alice_dressed_club:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого, вот это вид!!!"
+        Max_02 "О да! Сейчас она совсем голенькая..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -289,140 +417,181 @@ label cam0_alice_dressed_club:
         Max_04 "Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше..."
     return
 
-label cam0_alice_sleep_morning:
-    $ renpy.show('Alice cams sleep morning '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+label cam0_alice_rest_morning:
+    $ renpy.show('Alice cams morning 01'+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'alice_sleep' not in cam_flag:
-        $ cam_flag.append('alice_sleep')
-        Max_00 "Сестрёнка спит..."
+
+    if 'alice_morning' not in cam_flag:
+        $ cam_flag.append('alice_morning')
+        Max_01 "Алиса валяется со своим ноутбуком. Смотрится неплохо..."
     return
 
-label cam0_alice_sleep_night:
-    if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
-        $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) else 'sleep_no_fun')
-
-    $ renpy.show('Alice cams sleep night '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+label cam0_alice_dishes:
+    $ renpy.show('Alice cams crockery 01'+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
-    if all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' not in cam_flag]):
-        $ cam_flag.append('alice_sleep_fun')
-        $ cam_flag.append('alice_sleep')
-        # день веселья. начало
-        show Alice cams fun-in-bed 01 at laptop_screen
-        Max_00 "Похоже, перед сном Алиска решила что-то посмотреть... Интересно, а что она смотрит?"
+    if 'alice_dishes' not in cam_flag:
+        $ cam_flag.append('alice_dishes')
+        Max_01 "Алиса моет посуду. Правильно, нечего весь день прохлаждаться во дворе и за ноутбуком..."
+    return
 
-        $ renpy.show('Alice cams fun-in-bed 02'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
-        Max_00 "Ого! Это что-то явно горячее!!!"
+label cam0_alice_read:
+    $ renpy.show('Alice cams reading '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
 
-        $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
-        Max_00 "Как же она распалилась! Это массаж ног так на неё подействовал?"
+    if 'alice_read' not in cam_flag:
+        $ cam_flag.append('alice_read')
+        Max_07 "Так, Алиса просто читает. Не особо интересно."
+        if poss['secretbook'].stn > 2:
+            Max_09 "Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать..."
+    return
 
-        # if not flags['cam_fun_alice']:
-        #     # переход на размышления Макса по развращению Алисы
-        #     call ....
-
-    elif all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):
-        $ cam_flag.append('alice_end_sleep_fun')
-        # день веселья. интресное закончилось
-        if 'smoke' in flags and flags['smoke'] == 'sleep':
-            Max_00 "Веселье закончилось. Алиса соблюдает условие и спит без лифчика"
-        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
-            Max_00 "Веселье закончилось. Алиса нарушает договор и спит в лифчике"
+label cam0_alice_smoke:
+    show FG cam-shum-act at laptop_screen
+    if 'alice_smoke' not in cam_flag:
+        $ cam_flag.append('alice_smoke')
+        if dcv['smoke'].stage < 1:
+            Max_09 "Алиса должна быть во дворе, но через камеру её не видно... Интересно, где она?!"
         else:
-            Max_00 "Веселье закончилось и теперь Алиса просто спит..."
+            Max_01 "Алиса должна быть во дворе, но через камеру её не видно... Наверное, опять курит..."
+    return
 
-    elif 'alice_sleep' not in cam_flag:
-        $ cam_flag.append('alice_sleep')
-        if 'smoke' in flags and flags['smoke'] == 'sleep':
-            Max_00 "Алиса соблюдает условие и спит без лифчика"
-        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
-            Max_00 "Алиса нарушает договор и спит в лифчике"
+label cam1_alice_smoke:
+    return
+
+label cam0_alice_sun:
+    if talk_var['sun_oiled'] == 2:
+        show Alice cams sun-alone 00a at laptop_screen
+    elif talk_var['sun_oiled'] > 0:
+        show Alice cams sun-alone 00 at laptop_screen
+    else:
+        $ renpy.show('Alice cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'alice_sun0' not in cam_flag:
+        $ cam_flag.append('alice_sun0')
+        Max_01 "Загорающая Алиса радует глаза зрителей! Ну и мои заодно..."
+    return
+
+label cam1_alice_sun:
+    if talk_var['sun_oiled'] == 2:
+        show Alice cams sun-alone 01a at laptop_screen
+    elif talk_var['sun_oiled'] > 0:
+        show Alice cams sun-alone 01 at laptop_screen
+
+    show FG cam-shum-act at laptop_screen
+    if 'alice_sun1' not in cam_flag:
+        $ cam_flag.append('alice_sun1')
+        if talk_var['sun_oiled']:
+            if 'alice_sun0' not in cam_flag:
+                Max_01 "Загорающая Алиса радует глаза зрителей! Ну и мои заодно..."
         else:
-            Max_00 "Сестрёнка спит..."
+            Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
     return
 
-label cam0_alice_shower:
-    $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
+label cam0_alice_swim:
     show FG cam-shum-act at laptop_screen
-    if 'alice_shower' not in cam_flag:
-        $ cam_flag.append('alice_shower')
-        Max_00 "Старшая сестрёнка в душе... Это зрелище, которое никогда не надоедает..."
+    if 'alice_swim0' not in cam_flag:
+        $ cam_flag.append('alice_swim0')
+        if len(house[6].cams)>1:
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+        else:
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     return
 
-label cam1_alice_shower:
+label cam1_alice_swim:
+    $ renpy.show('Alice cams swim '+renpy.random.choice(['01', '02', '03', '04']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'alice_shower1' not in cam_flag:
-        $ cam_flag.append('alice_shower1')
-        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+    if 'alice_swim1' not in cam_flag:
+        $ cam_flag.append('alice_swim1')
+        Max_01 "На мокренькую старшую сестрёнку всегда приятно взглянуть..."
     return
 
-label cam0_alice_lisa_shower:
-    # выбор, кто из персонажей принимает душ
-    if 'alice_sh' in cam_flag:
-        $ __var = 'alice'
-    elif 'lisa_sh' in cam_flag:
-        $ __var = 'lisa'
-    else:
-        $ __var = renpy.random.choice(['alice', 'lisa'])
-        $ cam_flag.append(__var+'_sh')
+label cam0_alice_cooking_dinner:
+    $ renpy.show('Alice cams cooking 01'+alice.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
 
-    if __var == 'alice':
-        # в душе Алиса, Лиза перед умывальниками
-        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen,])
-        show FG cam-shum-act at laptop_screen
+    if 'alice_cooking' not in cam_flag:
+        $ cam_flag.append('alice_cooking')
+        Max_01 "Алиса готовит ужин. А могла бы и попкой покрутить заодно..."
+    return
 
-        if 'alice_shower' not in cam_flag:
-            $ cam_flag.append('alice_shower')
-            Max_00 "Старшая сестрёнка в душе... Это зрелище, которое никогда не надоедает..."
-            if 'lisa_shower' not in cam_flag:
-                # Лизу ещё не видели
-                if len(house[3].cams)>1:
-                    Max_00 "Лиза, должно быть, крутиться перед зеркалом... Надо взглянуть через другую камеру..."
-                else:
-                    Max_00 "Лиза, должно быть, крутиться перед зеркалом, но отсюда не разглядеть..."
-            else:
-                # Лизу перед зеркалом уже видели. Не знаю, нужно ли это как-то комментировать при взгляде через камеру душа
-                pass
-    else:
-        # в душе Лиза, перед умывальниками Алиса
-        $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen,])
-        show FG cam-shum-act at laptop_screen
+label cam0_alice_rest_evening:
+    if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
+        if GetWeekday(day) in [0, 2]:
+            $ cam_flag.append('blog_fun' if RandomChance(500) else 'blog_no_fun')
+        elif GetWeekday(day) == 6:
+            $ cam_flag.append('blog_fun')
+        else:
+            $ cam_flag.append('blog_no_fun')
 
-        if 'lisa_shower' not in cam_flag:
-            $ cam_flag.append('lisa_shower')
-            Max_00 "Младшая сестрёнка в душе... На ее прелести я могу смотреть часами..."
-            if 'alice_shower' not in cam_flag:
-                # Алису ещё не видели
-                if len(house[3].cams)>1:
-                    Max_00 "Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
-                else:
-                    Max_00 "Алиса, должно быть, красуется перед зеркалом, но отсюда не разглядеть..."
-            else:
-                # Алису перед зеркалом уже видели. Не знаю, нужно ли это как-то комментировать при взгляде через камеру душа
-                pass
+    $ renpy.show('Alice cams evening 01'+alice.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+
+    if all([tm > '21:00', 'alice_evening' in cam_flag, 'blog_fun' in cam_flag, 'alice_blog_fun' not in cam_flag]):
+        $ cam_flag.append('alice_blog_fun')
+        # день развлечения. Развлечение начинается
+        $ __suf = 'a' if alice.dress =='a' and alice.nopants else ''
+        $ renpy.show('Alice cams fun-at-desk 02'+alice.dress+__suf, at_list=[laptop_screen])
+        Max_03 "Ого! Похоже, начинается что-то интересненькое! Алиса решила снять лишнюю одежду и поразвлечься?!"
+
+        $ __suf = 'a' if alice.dress in ['a', 'c'] else alice.dress
+        $ renpy.show('Alice cams fun-at-desk '+renpy.random.choice(['03', '04'])+__suf, at_list=[laptop_screen])
+        Max_05 "Вот так, сестрёнка! То, как ты ласкаешь киску и посасываешь свою игрушку что мне, что зрителям, однозначно нравится..."
+
+        if not flags['cam_fun_alice']:
+            $ flags['cam_fun_alice'] = True
+            Max_02 "А ведь Алиса прекрасно бы смотрелась в роли тех девчонок, которые развлекают народ тем, что раздеваются на камеру и ласкают себя... Всё прибыльнее, чем эта её косметика! Надо бы ей на это как-то легонько намекнуть..."
+
+    elif all([tm >= '21:00', 'alice_blog_fun' in cam_flag, 'alice_end_blog_fun' not in cam_flag]):
+        $ cam_flag.append('alice_end_blog_fun')
+        # день развлечения. развлечение закончилось
+        Max_07 "К сожалению, шоу закончилось и теперь Алиса просто занимается своим блогом..."
+
+    elif 'alice_evening' not in cam_flag:
+        #
+        $ cam_flag.append('alice_evening')
+        if 'blog_fun' in cam_flag:
+            Max_07 "Алиса занимается своим блогом. Ничего интересного не намечается. Хотя... как знать, может стоит подождать..."
+        else:
+            Max_07 "Алиса занимается своим блогом. Ничего интересного не намечается..."
 
     return
 
-label cam1_alice_lisa_shower:
-    # выбор, кто из персонажей принимает душ
-    if 'alice_sh' in cam_flag:
-        $ __var = 'alice'
-    elif 'lisa_sh' in cam_flag:
-        $ __var = 'lisa'
+label cam0_alice_tv:
+    $ renpy.show('Alice cams tv '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+
+    if 'alice_tv' not in cam_flag:
+        $ cam_flag.append('alice_tv')
+        Max_01 "Алиса смотрит ТВ. Наверняка залипла в какие-нибудь сериалы..."
+    return
+
+label cam0_alice_bath:
+    if tm[-2:] < '10':
+        # набирает воду
+        show Alice cams bath 01 at laptop_screen
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath0_st0' not in cam_flag:
+            $ cam_flag.append('alice_bath0_st0')
+            Max_00 "Алиса ещё только набирает воду, самое интересное впереди..."
+    elif tm[-2:] > '40':
+        # вытирается
+        show Alice cams bath 05 at laptop_screen
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath0_st1' not in cam_flag:
+            $ cam_flag.append('alice_bath0_st1')
+            Max_00 "Эх, Алиса уже вытирается, самое интересное позади..."
     else:
-        $ __var = renpy.random.choice(['alice', 'lisa'])
-        $ cam_flag.append(__var+'_sh')
+        $ renpy.show('Alice cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath0_st0' not in cam_flag:
+            $ cam_flag.append('alice_bath0_st0')
+            Max_00 "Алиса принимает ванну, заглядение..."
+    return
 
-    if __var == 'alice':
-        # перед умывальниками Лиза, Алису не видно, она сейчас в душе
-        $ cam_flag.append('lisa_shower')
-
-        pass
-
-    else:
-        # перед умывальниками Алиса, Лизу не видно, она сейчас в душе
-        $ cam_flag.append('alice_shower')
-
-        pass
-
+label cam1_alice_bath:
+    show FG cam-shum-act at laptop_screen
+    if 'alice_bath1' not in cam_flag:
+        $ cam_flag.append('alice_bath1')
+        Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
     return

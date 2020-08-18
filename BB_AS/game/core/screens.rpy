@@ -92,6 +92,10 @@ init: # трансформации для кнопок
     transform tv_screen:
         xpos 63, ypos 48
 
+    transform laptop_screen:
+        size (1475, 829)
+        xpos 221, ypos 93
+
     transform left_shift:
         xpos -200
 
@@ -104,8 +108,22 @@ init: # трансформации для кнопок
     transform alt_right_shift:
         xpos 300
 
+    transform ladder_left_shift:
+        ypos -100
+
     transform ladder_right_shift:
-        xpos 350
+        xpos 370
+        ypos 50
+
+    transform cam_shower_right:
+        size (1475, 829)
+        xpos 360
+        ypos 65
+
+    transform cam_shower_left:
+        size (1475, 829)
+        xpos 100
+        ypos 110
 
 ################################################################################
 
@@ -128,6 +146,8 @@ screen PowerBack():
         else:
             if current_room == house[5]:
                 background 'interface laptop keys-bg-nightt'
+            elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+                background 'interface laptop keys-bg-day'
             else:
                 background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
@@ -151,6 +171,8 @@ screen PowerBack2():
         else:
             if current_room == house[5]:
                 background 'interface laptop keys-bg-nightt'
+            elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+                background 'interface laptop keys-bg-day'
             else:
                 background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
@@ -174,6 +196,8 @@ screen PowerBack3():
         else:
             if current_room == house[5]:
                 background 'interface laptop keys-bg-nightt'
+            elif 'lisa' in house[0].cur_char and lisa.plan_name != 'sleep':
+                background 'interface laptop keys-bg-day'
             else:
                 background 'interface laptop keys-bg-night'
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
@@ -774,7 +798,10 @@ screen MySite():
                                             elif '19:00' <= tm < '22:00':
                                                 add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-evening-'+str(num)
                                             else:
-                                                add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-night-'+str(num)
+                                                if len(room.cur_char) > 0 and chars[room.cur_char[0]].plan_name not in ['sleep', 'sleep2']:
+                                                    add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-evening-'+str(num)
+                                                else:
+                                                    add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-night-'+str(num)
                                             if len(room.cur_char) > 0 or room == current_room:
                                                 add 'interface laptop cam act'
                                             else:

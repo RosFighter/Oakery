@@ -296,7 +296,7 @@ label eric_ann_tv:
         ### Дальний план, нейтральная поза
         $ renpy.show('porn_'+film+' 01_02', at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
-    elif peeping['ann_eric_tv'] > 1:
+    elif peeping['ann_eric_tv'] == 2:
         $ renpy.show('tv serial '+renpy.random.choice(['01','02','03','04','05','06','07']), at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     else:
@@ -332,7 +332,6 @@ label eric_ann_tv:
                 "Конечно, мам! {i}(спрятаться){/i}":
                     scene BG tv-watch-01
         "{i}уйти{/i}":
-            $ spent_time += 10
             $ current_room = house[0]
             jump Waiting
 
@@ -536,7 +535,7 @@ label eric_ann_fucking:
         "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
             pass
         "{i}уйти{/i}":
-            $ current_room = house[1]
+            $ current_room = house[0]
             jump AfterWaiting
 
     $ spent_time += 10
@@ -557,6 +556,7 @@ label eric_ann_fucking:
     if RandomChance(_ch1.ch):
         $ Skill('hide', 0.1)
         $ ann.dress_inf = '00'
+        $ peeping['ann_eric_sex1'] = 3
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
         elif fuck_scene == 2:
@@ -568,6 +568,8 @@ label eric_ann_fucking:
         elif fuck_scene == 5:
             Max_07 "[undetect!t]Ничего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
     else:
+        $ peeping['ann_eric_sex1'] = 2
+
         if fuck_scene == 6:
             scene BG char Eric bed-02
             $ renpy.show('Eric fuck 06b')
@@ -603,6 +605,8 @@ label eric_ann_fucking:
         Max_10 "Ох, чёрт... наконец-то Эрик кончил и... хорошо, что не в маму... Вот же счастливый сукин сын... залил ей своей спермой всю спину... Пожалуй, не стоит здесь задерживаться, они могут меня увидеть."
     elif fuck_scene == 5:
         Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
+
+    $ peeping['ann_eric_sex1'] = 4
 
     $ spent_time += 20
     $ Skill('hide', 0.1)

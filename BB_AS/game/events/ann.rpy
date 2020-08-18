@@ -85,7 +85,11 @@ label ann_shower:
         $ renpy.scene()
         $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
-        $ __r1 = renpy.random.choice(['a','b','c','d'])
+        if ann.dress_inf != '04a':
+            $ __r1 = {'04c':'a', '04d':'b', '02b':'c', '00':'d', '00a':'d'}[ann.dress_inf]
+        else:
+            $ __r1 = renpy.random.choice(['a', 'b', 'c', 'd'])
+            $ ann.dress_inf = {'a':'04c', 'b':'04d', 'c':'02b', 'd':'00'}[__r1]
 
         scene BG bathroom-morning-00
         $ renpy.show('Ann bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
@@ -409,7 +413,7 @@ label ann_dressed_work:
 
 
 label ann_dressed_shop:
-    scene location house aliceroom door-evening
+    scene location house annroom door-morning
     if peeping['ann_dressed'] != 0:
         return
 

@@ -68,29 +68,28 @@ label lisa_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
-        $ __list = ['c', ]
-        if lisa.nopants:
-            $ __list.append('d')
-        if 'bathrobe' in lisa.gifts:
-            $ __list.append('a')
-            if lisa.nopants:
-                $ __list.append('b')
-        $ __r1 = renpy.random.choice(__list)
+        # назначим или определим одёжку
+        if lisa.dress_inf != '04a':
+            $ __r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
+        else:
+            $ __list = ['a', 'b', 'c', 'd'] if 'bathrobe' in lisa.gifts else ['c', 'd']
+            $ __r1 = renpy.random.choice(__list)
+            $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
 
         scene BG bathroom-morning-00
         $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
-        if __r1 == 'a':
+        $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
+        if __r1 in ['a', 'b']:
             Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
-        elif __r1 == 'b':
-            Max_05 "Охх... Хорошо, что я уговорил её не носить трусики! Похоже, Лизе и самой приятно, что под халатиком больше ничего нет... а уж мне-то как приятно."
+        # elif __r1 == 'b':
+        #     Max_05 "Охх... Хорошо, что я уговорил её не носить трусики! Похоже, Лизе и самой приятно, что под халатиком больше ничего нет... а уж мне-то как приятно."
         elif __r1 == 'c':
             Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
         else:
             Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
 
-        $ spent_time += 10
         Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
         jump .end_peeping
 

@@ -1452,7 +1452,7 @@ label liza_hand_mass:
         # Лизе понравился массаж!
         if not _in_replay:
             $ Skill('massage', 0.1)
-        if not _in_replay and all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']>=8, dcv['mw'].done]):
+        if not _in_replay and all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']>=8, dcv['mw'].done, dcv['kiratalk'].stage>2]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
             Lisa_02 "А ты сам-то хоть умеешь целоваться?"

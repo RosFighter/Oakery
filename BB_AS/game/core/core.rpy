@@ -49,7 +49,7 @@ label Waiting:
         $ pose2_1 = renpy.random.choice(['01', '02'])
         $ pose2_2 = renpy.random.choice(['01', '02'])
         $ pose2_3 = renpy.random.choice(['01', '02'])
-        # $ tv_scene = renpy.random.choice(['', 'bj', 'hj'])
+        $ tv_scene = '' # renpy.random.choice(['', 'bj', 'hj'])
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
     if prevtime < '12:00' <= tm:
         call Noon from _call_Noon
@@ -392,7 +392,7 @@ label cam_after_waiting:
     if current_room.id == 'my_room' and check_is_room('lisa'):
         if lisa.plan_name != 'sleep':
             # Лиза не спит
-            if not house[5].cur_char and 'warning' not in flags:
+            if not house[5].cur_char and not flags['warning']:
                 # на веранде никого, разговора про веранду ещё не было
                 $ flags['warning'] = True
                 menu:
@@ -503,8 +503,8 @@ label cam_background:
         '11:00'<=tm<'19:00':' day',
         '19:00'<=tm<'22:00':' evening',
         tm<'06:00'or'22:00'<=tm:' night'}[True]
-    # if all([view_cam[0].id == 'my_room', 'lisa' in house[0].cur_char, lisa.plan_name!='sleep', tod==' night']):
-    #     $ __time_of_day = ' evening'
+    if tod == ' night' and len(view_cam[0].cur_char)>0 and chars[view_cam[0].cur_char[0]].plan_name not in ['sleep', 'sleep2']:
+        $ tod = ' tv-evening' if chars[view_cam[0].cur_char[0]].plan_name in ['tv', 'tv2', 'night_tv'] else ' evening'
     $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+tod, at_list=[laptop_screen,])
     if current_room == house[5] and view_cam[0].id == 'my_room':
         $ renpy.show('Max cams patch '+tod, at_list=[laptop_screen,])
@@ -908,11 +908,6 @@ label after_load:
             $ at_comp = False
             $ view_cam = Null
 
-        if current_ver < "0.04.1.01":
-            $ current_ver = "0.04.1.01"
-
-            $ house[3].max_cam = 2
-
         if current_ver < "0.04.1.03":
             $ current_ver = "0.04.1.03"
 
@@ -937,6 +932,15 @@ label after_load:
 
             if 'cam_fun_alice' not in flags:
                 $ flags['cam_fun_alice'] = False
+            if not flags['cam2bath']:
+                $ house[3].max_cam = 2
+                if len(house[3].cams) > 1:
+                    $ house[3].cams.pop(1)
+
+        # if current_ver < "0.04.1.06":
+        #     $ current_ver = "0.04.1.06"
+        #
+        #     $ ann_eric_scene = ''
 
         if current_ver < config.version:
             $ current_ver = config.version

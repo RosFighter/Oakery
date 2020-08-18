@@ -430,10 +430,14 @@ label alice_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
-        if alice.nopants:
-            $ __r1 = renpy.random.choice(['b', 'd'])
+        if alice.dress_inf != '04aa':
+            $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
         else:
-            $ __r1 = renpy.random.choice(['a', 'c'])
+            if alice.nopants:
+                $ __r1 = renpy.random.choice(['b', 'd'])
+            else:
+                $ __r1 = renpy.random.choice(['a', 'c'])
+            $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
 
         scene BG bathroom-morning-00
         $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
@@ -444,23 +448,15 @@ label alice_shower:
             Max_00 "Посмотреть на Алису всегда приятно, но почему она в трусиках? Ведь мы же с ней договаривались..."
             Max_00 "Непорядок. Нужно с этим что-то делать..."
             $ added_mem_var('alice_not_nopants')
-            if __r1 == 'a':
-                $ alice.dress_inf = '04ca'
-            else:
-                $ alice.dress_inf = '02fa'
             $ flags['noted'] = True
         elif __r1 == 'a':
             Max_02 "Да-а... Может Алиса и в халатике, но сиськи её видны просто замечательно! А они у неё - что надо..."
-            $ alice.dress_inf = '04ca'
         elif __r1 == 'b':
             Max_05 "Ого! Кто бы мог подумать, что курение может принести пользу в виде моей сестрёнки, не носящей трусики. Как же она хороша..."
-            $ alice.dress_inf = '04da'
         elif __r1 == 'c':
             Max_04 "Прекрасно! Алиса сегодня без халатика... в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
-            $ alice.dress_inf = '02fa'
         else:
             Max_06 "Вау! Алиса сегодня совершенно голая! Как мы и договорились, трусики она не носит и даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями..."
-            $ alice.dress_inf = '00a'
 
         Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
 
@@ -485,7 +481,7 @@ label alice_rest_evening:
 
 
 label alice_dressed_shop:
-    scene location house aliceroom door-evening
+    scene location house aliceroom door-morning
     if peeping['alice_dressed'] == 0:
         $ peeping['alice_dressed'] = 1
         menu:
@@ -576,7 +572,7 @@ label alice_read_closer:
 
 
 label alice_dressed_friend:
-    scene location house aliceroom door-evening
+    scene location house aliceroom door-day
     if peeping['alice_dressed'] == 0:
         $ peeping['alice_dressed'] = 1
         menu:
@@ -1211,32 +1207,75 @@ label alice_lisa_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
-        $ __r0 = renpy.random.randint(1, 4)
+        if 'alice_sh' in cam_flag:
+            $ __r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зекралом Лиза
+        elif 'lisa_sh' in cam_flag:
+            $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зекралом Алиса
+        elif 'lisa_alice_sh' in cam_flag:
+            $ __var = 'lisa_alice'
+        else:
+            $ __r0 = renpy.random.randint(1, 4)
+            if __r0 < 3: # если выпал один персонаж
+                $ __var = 'alice' if __r0 == 1 else 'lisa'
+                if __var == 'alice':
+                    $ cam_flag.append('lisa_sh' if tm[-2:] < '30' else 'alice_sh')
+                else: # Алиса в душе, соответственно, перед умывальниками первые полчаса Лиза
+                    $ cam_flag.append('alice_sh' if tm[-2:] < '30' else 'lisa_sh')
+            else:
+                $ __var = 'lisa_alice'
+
         scene BG bathroom-morning-00
-        $ __r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
         if __r0 == 1:
+            if lisa.dress_inf != '04a': # Лизу уже видели через камеру
+                $ __r1 = {'04c':'a', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
+            else:
+                if tm[-2:] < '10'  and 'bathrobe' in lisa.gifts:
+                    $ __r1 = 'a'
+                elif tm[-2:] < '20':
+                    $ __r1 = 'c'
+                else:
+                    $ __r1 = 'd'
+                $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
+
             $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
             show FG bathroom-morning-00
-            if __r1=='c':
+            if __r1 == 'a':
+                Max_00 "Лиза здорово смотрится в подаренном мной халате! Особенно, когда видно её упругие сисечки! А Алиса, видимо, уже в душе..."
+            elif __r1=='c':
                 Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А Алиса, видимо, уже в душе..."
             else:
                 Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А Алиса, видимо, уже в душе..."
 
         elif __r0 == 2:
+            if alice.dress_inf != '04aa': # Алису видели через камеру
+                $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
+            else:
+                if tm[-2:] < '10':
+                    $ __r1 = 'a'
+                elif tm[-2:] < '20':
+                    $ __r1 = 'c'
+                else:
+                    $ __r1 = 'd'
+                $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
             $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
             show FG bathroom-morning-00
-            if __r1=='c':
+            if __r1=='a':
+                Max_00 "Старшая сестрёнка в распахнутом халате красуется перед заркалом! А Лиза, наверное, сейчас в душе..."
+            elif __r1=='c':
                 Max_00 "Алиса в одних трусиках красуется перед зеркалом, класс! А Лиза, видимо, уже в душе..."
             else:
                 Max_00 "Алиса красуется перед зеркалом в костюме Евы, класс! А Лиза, видимо, уже в душе..."
 
-        else:
-            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+        else: # если девчонки перед зеркалом вдвоём, то они могут быть либо в трусиках, либо голыми
+            $ __r1 = 'd' if 'lisa_alice_sh' in cam_flag else renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
+            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_left_shift,])
             $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_right_shift,])
             show FG bathroom-morning-00
             if __r1=='c':
                 Max_00 "Две сестрички красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
             else:
+                $ alice.dress_inf = '00a'
+                $ lisa.dress_inf = '00'
                 Max_00 "Две совершенно голые сестрёнки красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
 
         Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."

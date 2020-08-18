@@ -619,6 +619,9 @@ init python:
 
                 if char == 'alice' and talk_var['sun_oiled'] in [1, 2]:  # Если Алису уже намазали кремом, повторное намазываение невозможно
                     talk_var['sun_oiled'] = 3
+
+                if char in ['ann', 'eric'] and 'ann_eric_scene' in globals():
+                    ann_eric_scene = '' # обнулим сцену для камер, если она есть
                 dress, inf, clot = GetDressNps(char, cur_shed.name)
                 if dress != '':
                     chars[char].dress = dress
@@ -641,20 +644,6 @@ init python:
                 dress = clothes[lisa].casual.GetCur().suf
                 inf   = clothes[lisa].casual.GetCur().info
                 clot  = 'casual'
-                # # откорректируем по настрению
-                # if clothes[lisa].learn.rand:
-                #     mood = GetRelMax('lisa')[0] > 2
-                #     # если включен рандом и есть нужное настроение
-                #     if 'bathrobe' in lisa.gifts and mood:
-                #         dress  = 'b'
-                #         inf    = '04'
-                #     elif 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
-                #         dress  = 'd'
-                #         inf    = '01c'
-                #     else:  # иначе - обычную повседневку
-                #         dress  = 'a'
-                #         inf    = '01a'
-
             elif name in ['shower', 'bath']:
                 inf = '04a'
             elif name == 'in_shcool':
@@ -695,11 +684,11 @@ init python:
             inf   = clothes[alice].casual.GetCur().info
             if flags['smoke']=='nojeans' and dress!='a':
                 # если есть требование не носить джинсы, но установлена другая одежда - отменяем требование
-                flags['smoke']==None
+                flags['smoke'] = None
                 flags['smoke.request'] = None
             elif flags['smoke']=='nopants' and dress!='a':
                 # если есть требование не носить трусы под джинсами, но установлена другая одежда - также отменяем требование
-                flags['smoke']==None
+                flags['smoke'] = None
                 flags['smoke.request'] = None
             elif all([dress=='a', flags['smoke']=='nojeans', not check_is_home('ann')]):
                 dress = 'c'
@@ -812,7 +801,9 @@ init python:
                 inf = '02'
             elif name == 'studio':
                 inf = '01b'
-            elif name in ['bath', 'night_swim', 'shower']:
+            elif name in ['bath', 'shower']:
+                inf = '04a'
+            elif name == 'night_swim':
                 inf = '00a'
 
 
