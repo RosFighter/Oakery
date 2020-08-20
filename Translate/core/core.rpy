@@ -49,41 +49,41 @@ translate english after_load_de0e2c19:
 translate english cam_after_waiting_6058d5d4:
 
     # Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
-    Max_09 "" nointeract
+    Max_09 "It's not a good idea to check the cameras right now in case Lisa gets suspicious. Maybe I should go out to the veranda while no ones there..." nointeract
 
 # game/core/core.rpy:407
 translate english cam_after_waiting_38f46f18:
 
     # Max_09 "Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила..." nointeract
-    Max_09 "" nointeract
+    Max_09 "Better not check the cameras when Lisa's right here!" nointeract
 
 # game/core/core.rpy:419
 translate english cam_after_waiting_d4f49617:
 
     # Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
-    Max_09 "" nointeract
+    Max_09 "I don't want to risk checking the cameras now in case Lisa wakes up. Maybe I should go out to the veranda while no ones there..." nointeract
 
 # game/core/core.rpy:427
 translate english cam_after_waiting_c283f316:
 
     # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
-    Max_09 ""
+    Max_09 "Lisa's in our room and the veranda is occupied! I'll just be patient and wait before checking the cameras."
 
 # game/core/core.rpy:431
 translate english cam_after_waiting_eea92f18:
 
     # Max_09 "Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю..." nointeract
-    Max_09 "" nointeract
+    Max_09 "Better check the cameras another time! I don't want to risk Lisa waking up and catching me..." nointeract
 
 # game/core/core.rpy:485
 translate english cam_after_waiting_27f05bf1:
 
     # Max_00 "Сейчас здесь ничего не происходит."
-    Max_00 ""
+    Max_00 "Nothing going on right now."
 
 translate english strings:
 
     # game/core/core.rpy:398
     old "{i}идти на веранду{/i}"
-    new ""
+    new "{i1}Go to the porch{/i}"
 

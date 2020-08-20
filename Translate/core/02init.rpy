@@ -283,9 +283,9 @@ translate english strings:
 
     # game/core/02init.rpy:119
     old "{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"
-    new ""
+    new "{color=#808080}I have a treat for you! \n (you need to wait a few days){/color}"
 
     # game/core/02init.rpy:119
     old "У меня для тебя вкусняшка!"
-    new ""
+    new "I have a treat for you!"
 
