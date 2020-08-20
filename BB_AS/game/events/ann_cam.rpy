@@ -4,7 +4,7 @@ label cam0_ann_sleep:
     show FG cam-shum-act at laptop_screen
     if 'ann_sleep' not in cam_flag:
         $ cam_flag.append('ann_sleep')
-        Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"
+        Max_01 "Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"
     return
 
 label cam0_ann_shower:
@@ -13,9 +13,9 @@ label cam0_ann_shower:
         if 'ann_not_shower' not in cam_flag:
             $ cam_flag.append('ann_not_shower')
             if len(house[3].cams)>1:
-                Max_00 "Мамы не видно, скорее всего она возле зеркала... Но отсюда не видно, нужно посмотреть через другую камеру..."
+                Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
             else:
-                Max_00 "Мамы не видно, скорее всего она возле зеркала... Но через эту камеру не разглядеть..."
+                Max_09 "Мамы не видно через эту камеру..."
     else:
         $ ann.dress_inf = '00a'
         $ renpy.show('Ann cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
@@ -23,7 +23,7 @@ label cam0_ann_shower:
         show FG cam-shum-act at laptop_screen
         if 'ann_shower' not in cam_flag:
             $ cam_flag.append('ann_shower')
-            Max_00 "Моя горячая мама в душе... Это зрелище, которое никогда не надоедает..."
+            Max_04 "Зрелище просто потрясающее... У меня очень горячая мама!"
     return
 
 label cam1_ann_shower:
@@ -39,18 +39,19 @@ label cam1_ann_shower:
         show FG cam-shum-act at laptop_screen
         if 'ann_bath_mirror' not in cam_flag:
             $ cam_flag.append('ann_bath_mirror')
-            if __r1 in ['a', 'b']:
-                Max_02 "Да-а... Может мама и в халатике, но сиськи её видны просто замечательно! А они у неё - что надо..."
-            elif __r1 == 'c':
-                Max_04 "Прекрасно! Мамочка сегодня без халатика... в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
-            else:
-                Max_06 "Вау! Мамочка сегодня совершенно голая!"
+            # if __r1 in ['a', 'b']:
+            #     Max_02 "Да-а... Может мама и в халатике, но сиськи её видны просто замечательно! А они у неё - что надо..."
+            # elif __r1 == 'c':
+            #     Max_04 "Прекрасно! Мамочка сегодня без халатика... в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
+            # else:
+            #     Max_06 "Вау! Мамочка сегодня совершенно голая!"
+            Max_03 "Мама, перед тем, как принять душ, красуется перед зеркалом. Глядя на эту красоту, можно мечтать лишь об одном!"
 
     else:
         show FG cam-shum-act at laptop_screen
         if 'ann_shower1' not in cam_flag:
             $ cam_flag.append('ann_shower1')
-            Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+            Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
     return
 
 label cam0_ann_yoga:
@@ -70,7 +71,7 @@ label cam1_ann_yoga:
     show FG cam-shum-act at laptop_screen
     if 'ann_yoga1' not in cam_flag:
         $ cam_flag.append('ann_yoga1')
-        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+        Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
     return
 
 label cam0_ann_cooking:
@@ -80,9 +81,9 @@ label cam0_ann_cooking:
     if 'ann_cooking' not in cam_flag:
         $ cam_flag.append('ann_cooking')
         if tm < '12:00':
-            Max_00 "Как всегда в это время, мама готовит завтрак, ничего интересного..."
+            Max_01 "Как и всегда, мама готовит завтрак. Вроде, ничего интересного, но она всё равно лучшая..."
         else:
-            Max_00 "Как всегда в это время, мама готовит ужин, ничего интересного..."
+            Max_01 "Мама сегодня готовит ужин. Будет очень вкусно..."
     return
 
 label ann_cam_dress_inf(r1):
@@ -114,7 +115,7 @@ label cam0_ann_dressed_work:
         $ ann.dress_inf = '01d'
         if 'ann_dressed_txt' not in cam_flag:
             $ cam_flag.append('ann_dressed_txt')
-            Max_00 "Уже ничего интересного, мама полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, мама полностью оделась."
         return
 
     $ cam_flag.append('ann_dressed')
@@ -126,7 +127,7 @@ label cam0_ann_dressed_work:
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Мама одевается на работу..."
+        Max_07 "Вот и мама наряжается, чтобы отправиться на работу..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -137,7 +138,7 @@ label cam0_ann_dressed_work:
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого! Становится интересней..."
+        Max_02 "Ох! Голая мама - это восхитительное зрелище..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -147,7 +148,7 @@ label cam0_ann_dressed_work:
     call ann_cam_dress_inf(__ran1)
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    Max_00 "Эх, самое интересное уже закончилось..."
+    Max_04 "Да уж, её округлости равнодушным не оставят никого!"
     # jump open_site
     return
 
@@ -158,7 +159,7 @@ label cam0_ann_dressed_shop:
         $ ann.dress_inf = '01d'
         if 'ann_dressed_txt' not in cam_flag:
             $ cam_flag.append('ann_dressed_txt')
-            Max_00 "Уже ничего интересного, мама полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, мама полностью оделась."
         return
 
     $ cam_flag.append('ann_dressed')
@@ -170,7 +171,7 @@ label cam0_ann_dressed_shop:
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Мама одевается на шопинг..."
+        Max_07 "Вот и мама наряжается, чтобы отправиться на шопинг..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -181,7 +182,7 @@ label cam0_ann_dressed_shop:
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого! Становится интересней..."
+        Max_02 "Ох! Голая мама - это восхитительное зрелище..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -191,7 +192,7 @@ label cam0_ann_dressed_shop:
     call ann_cam_dress_inf(__ran1)
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    Max_00 "Эх, самое интересное уже закончилось..."
+    Max_04 "Да уж, её округлости равнодушным не оставят никого!"
     return
 
 label cam0_ann_resting:
@@ -199,9 +200,10 @@ label cam0_ann_resting:
         $ renpy.show('Ann cams relax-morning '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     else:
         $ renpy.show('Ann cams relax-evening '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
     if 'ann_resting' not in cam_flag:
         $ cam_flag.append('ann_resting')
-        Max_01 "Мама отдыхает..."
+        Max_01 "Мама даже когда отдыхает, выглядит очень сексуально..."
     return
 
 label cam0_ann_read:
@@ -209,7 +211,7 @@ label cam0_ann_read:
     show FG cam-shum-act at laptop_screen
     if 'ann_read' not in cam_flag:
         $ cam_flag.append('ann_read')
-        Max_01 "Мама увлечённо читает... Вроде бы ничего особенного, а смотреть на её округлые формы приятно, чтобы она не делала!"
+        Max_01 "Мама увлечённо читает. Вроде бы ничего особенного, а смотреть на её округлые формы всё равно приятно!"
     return
 
 label cam0_ann_sun:
@@ -217,14 +219,14 @@ label cam0_ann_sun:
     show FG cam-shum-act at laptop_screen
     if 'ann_sun' not in cam_flag:
         $ cam_flag.append('ann_sun')
-        Max_00 "Мама загорает..."
+        Max_01 "Самая горячая мама на свете загорает! Не повезло тем зрителям, которые это пропускают..."
     return
 
 label cam1_ann_sun:
     show FG cam-shum-act at laptop_screen
     if 'ann_sun1' not in cam_flag:
         $ cam_flag.append('ann_sun1')
-        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+        Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
     return
 
 label cam0_ann_swim:
@@ -232,9 +234,9 @@ label cam0_ann_swim:
     if 'ann_swim0' not in cam_flag:
         $ cam_flag.append('ann_swim0')
         if len(house[6].cams)>1:
-            Max_00 "Ничего толком не видно... Стоит взглянуть с другой камеры..."
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
         else:
-            Max_00 "Ничего не разглядеть... Нужно установить камеру охватывающую бассейн..."
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     return
 
 label cam1_ann_swim:
@@ -242,7 +244,7 @@ label cam1_ann_swim:
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
         $ cam_flag.append('ann_swim1')
-        Max_00 "На маму всегда приятно посмотреть..."
+        Max_01 "На маму во дворе всегда приятно посмотреть..."
     return
 
 label cam0_ann_alice_sun:
@@ -252,14 +254,14 @@ label cam0_ann_alice_sun:
     if 'ann_sun' not in cam_flag:
         $ cam_flag.append('ann_sun')
         $ cam_flag.append('alice_sun')
-        Max_00 "Две красотки лучше чем одна..."
+        Max_01 "Две загорающих красотки - лучше чем одна..."
     return
 
 label cam1_ann_alice_sun:
     show FG cam-shum-act at laptop_screen
     if 'ann_sun1' not in cam_flag:
         $ cam_flag.append('ann_sun1')
-        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+        Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
     return
 
 label cam0_ann_alice_swim:
@@ -267,9 +269,9 @@ label cam0_ann_alice_swim:
     if 'ann_swim0' not in cam_flag:
         $ cam_flag.append('ann_swim0')
         if len(house[6].cams)>1:
-            Max_00 "Ничего толком не видно... Стоит взглянуть с другой камеры..."
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
         else:
-            Max_00 "Ничего не разглядеть... Нужно установить камеру охватывающую бассейн..."
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     return
 
 label cam1_ann_alice_swim:
@@ -292,7 +294,7 @@ label cam1_ann_alice_swim:
     if 'ann_swim' not in cam_flag:
         $ cam_flag.append('ann_swim')
         $ cam_flag.append('alice_swim')
-        Max_00 "Две красотки в бассейне, что может быть лучше? Только две голые красотки..."
+        Max_01 "Две соблазнительные дамочки в бассейне, что может быть лучше? Только если бы они были ещё и голые!"
     return
 
 label cam0_ann_bath:
@@ -302,27 +304,27 @@ label cam0_ann_bath:
         show FG cam-shum-act at laptop_screen
         if 'ann_bath0_st0' not in cam_flag:
             $ cam_flag.append('ann_bath0_st0')
-            Max_00 "Мама ещё только набирает воду, самое интересное впереди..."
+            Max_01 "Такой шикарной попке, как у моей мамы, любая женщина может позавидовать..."
     elif tm[-2:] > '40':
         # вытирается
         show Ann cams bath 05 at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'ann_bath0_st1' not in cam_flag:
             $ cam_flag.append('ann_bath0_st1')
-            Max_00 "Эх, мама уже вытирается, самое интересное позади..."
+            Max_04 "Не вытирайся, мам, ходи мокренькая..."
     else:
         $ renpy.show('Ann cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'ann_bath0_st0' not in cam_flag:
             $ cam_flag.append('ann_bath0_st0')
-            Max_00 "Мама принимает ванну, заглядение..."
+            Max_05 "И зачем нужны все эти эротические ролики в интернете, когда можно посмотреть на мою маму в ванне?!"
     return
 
 label cam1_ann_bath:
     show FG cam-shum-act at laptop_screen
     if 'ann_bath1' not in cam_flag:
         $ cam_flag.append('ann_bath1')
-        Max_00 "Через эту камеру ничего не видно, нужно воспользоваться другой..."
+        Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
     return
 
 label cam0_ann_tv:
@@ -331,5 +333,5 @@ label cam0_ann_tv:
 
     if 'ann_tv' not in cam_flag:
         $ cam_flag.append('ann_tv')
-        Max_00 "Мама, как всегда, смотрит какой-то сериал, ничего особенного..."
+        Max_01 "Мама, как всегда, отдыхает за просмотром сериала или фильма."
     return

@@ -275,7 +275,7 @@ label AfterWaiting:
 
     $ Distribution() # распределяем персонажей по комнатам и устанавливаем фоны для текущей локации
 
-    # отключение возможности помыть посуду, если ее вымыли Лиза или Алиса
+    # отключение возможности помыть посуду, если её вымыли Лиза или Алиса
     if not dishes_washed:
         if tm > '20:00':
             $ dishes_washed = True
@@ -471,6 +471,8 @@ label cam_after_waiting:
 
         if current_room == house[5]:
             $ renpy.show('Max cams terrace '+time_of_day+'-01'+mgg.dress, at_list=[laptop_screen])
+        elif current_room == house[0]:
+            $ renpy.show('Max cams myroom 01'+mgg.dress, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         call screen cam_show
 

@@ -57,7 +57,7 @@ label ann_sleep:
 label ann_shower:
     scene location house bathroom door-morning
     if peeping['ann_shower'] == 3:
-        Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее ещё больше."
+        Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить её ещё больше."
         return
     elif peeping['ann_shower'] == 1:
         Max_00 "Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто."

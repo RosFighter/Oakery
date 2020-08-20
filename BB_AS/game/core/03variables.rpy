@@ -631,7 +631,7 @@ label AddEric:
                 Schedule((1, 3, 4), '19:0', '19:59', 'dinner', 'семейный ужин', 'house', 5, 'dinner', enabletalk=False, glow=105),
                 Schedule((1, 3, 4), '20:0', '20:59', 'rest', 'в Аниной комнате', 'house', 2, 'eric_resting'),
                 Schedule((1, 3, 4), '21:0', '21:59', 'tv2', 'смотрит ТВ с Анной', 'house', 4, 'eric_ann_tv', enabletalk=False, glow=150),
-                Schedule((1, 3, 4), '22:0', '23:59', 'fuck', 'трахает Анну в ее комнате', 'house', '2', 'eric_ann_fucking', enabletalk=False, glow=150),
+                Schedule((1, 3, 4), '22:0', '23:59', 'fuck', 'трахает Анну в её комнате', 'house', '2', 'eric_ann_fucking', enabletalk=False, glow=150),
                 Schedule((6, ), '19:0', '19:59', 'dinner', _('семейный ужин'), 'house', 5, 'dinner', enabletalk=False, glow=105, variable='day < 12'),
                 Schedule((6, ), '19:0', '19:59', 'None', variable='day > 12'),
                 )

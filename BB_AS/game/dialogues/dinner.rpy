@@ -1,6 +1,6 @@
 
 label after_dinner:
-    $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
+    $ dishes_washed = False  # посуда грязная, кто-то должен её помыть
     $ spent_time = 60
 
     if len(punlisa)> 0 and punlisa[0][3] == 1:

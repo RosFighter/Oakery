@@ -277,3 +277,15 @@ translate english strings:
     old "{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n"
     new "{color=#E59400}{i}Couldn't hold back{/i}{/color}\n"
 
+# TODO: Translation updated at 2020-08-20 09:36
+
+translate english strings:
+
+    # game/core/02init.rpy:119
+    old "{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"
+    new "{color=#808080}I have a treat for you! \n (you need to wait a few days){/color}"
+
+    # game/core/02init.rpy:119
+    old "У меня для тебя вкусняшка!"
+    new "I have a treat for you!"
+

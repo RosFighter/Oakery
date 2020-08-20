@@ -42,10 +42,10 @@ translate english ann_sleep_acd8f5fc:
     # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась..." nointeract
     Max_05 "Wow! The sight of those legs make me want to explore and see where they lead... Too tempting! As long as she doesn't wake up now..." nointeract
 
-# game/events/ann.rpy:42
-translate english ann_shower_b99b712c:
+# game/events/ann.rpy:60
+translate english ann_shower_05e06b33:
 
-    # Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить ее ещё больше."
+    # Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить её ещё больше."
     Max_00 "I already got caught peeping at my mom today. Shoudn't make her more mad."
 
 # game/events/ann.rpy:44
@@ -1052,3 +1052,4 @@ translate english ann_shower_not_luck_9b36810d:
 
     # Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
     Ann_15 "[spotted!t]Max!!!! What are you doing here? Turn around now!!!" nointeract
+

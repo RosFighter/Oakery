@@ -345,3 +345,11 @@ translate english strings:
     old "Сексуальный опыт"
     new "Sexual experience"
 
+# TODO: Translation updated at 2020-08-20 09:36
+
+translate english strings:
+
+    # game/core/screens.rpy:1596
+    old "[view_cam[1].public]"
+    new "[view_cam[1].public]"
+

@@ -4,7 +4,7 @@ label cam0_eric_ann_sleep:
     show FG cam-shum-act at laptop_screen
     if 'ann_sleep' not in cam_flag:
         $ cam_flag.append('ann_sleep')
-        Max_01 "Красавица и чудовище на одной кровати..."
+        Max_01 "Мама и Эрик спят совсем голые. Ни стыда, ни совести..."
     return
 
 label cam0_eric_ann_shower:
@@ -14,9 +14,9 @@ label cam0_eric_ann_shower:
         if 'ann_not_shower' not in cam_flag:
             $ cam_flag.append('ann_not_shower')
             if len(house[3].cams)>1:
-                Max_00 "Мамы и Эрика не видно, они скорее всего у зеркал... Надо взглянуть через другую камеру."
+                Max_09 "Мамы и Эрика не видно через эту камеру... Может посмотреть через другую?"
             else:
-                Max_00 "Мамы и Эрика не видно, они скорее всего у зеркал... Но обзора этой камеры не хватает..."
+                Max_09 "Мамы и Эрика не видно через эту камеру..."
     else:
         $ ann.dress_inf = '00a'
         if not ann_eric_scene:
@@ -41,7 +41,7 @@ label cam0_eric_ann_shower:
             $ cam_flag.append('ann_shower2')
             if ann_eric_scene in ['04', '05']:
                 # минет
-                Max_00 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может!"
+                Max_08 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может!"
             elif ann_eric_scene in ['06', '07']:
                 # дрочка
                 Max_04 "Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки!"
@@ -55,7 +55,7 @@ label cam0_eric_ann_shower:
             $ cam_flag.append('ann_shower3')
             if ann_eric_scene in ['04', '05']:
                 # минет
-                Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!"
+                Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом!"
             elif ann_eric_scene in ['06', '07', '08']:
                 # дрочка
                 Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает!"
@@ -75,18 +75,32 @@ label cam1_eric_ann_shower:
         elif tm[-2:] < '20':
             $ __r1 = renpy.random.choice(['02', '05', '06'])
         else:
-            $ __r1 = '03' if __r1=='02' else '04'
+            $ __r1 = '04' if __r1=='06' else '03'
         $ renpy.show('Eric cams bath-mirror '+__r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
-        if 'ann_bath_mirror1' not in cam_flag:
+        if __r1=='01' and 'ann_bath_mirror1' not in cam_flag:
             $ cam_flag.append('ann_bath_mirror1')
-            Max_00  "Похоже, мама с Эриком просто не могут спокойно принять душ... Им обязательно нужно заняться чем-нибудь этаким..."
-
+            Max_07 "Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся..."
+        elif __r1=='02' and 'ann_bath_mirror2' not in cam_flag:
+            $ cam_flag.append('ann_bath_mirror2')
+            Max_10 "Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит?"
+        elif __r1=='05' and 'ann_bath_mirror2' not in cam_flag:
+            $ cam_flag.append('ann_bath_mirror2')
+            Max_08 "О Боже! Как бы я мечтал оказаться на месте это счастливого ублюдка! Когда её мокрая попка так красиво скачет на члене, голова начинает идти кругом!"
+        elif __r1=='06' and 'ann_bath_mirror2' not in cam_flag:
+            $ cam_flag.append('ann_bath_mirror2')
+            Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку..."
+        elif __r1 == '03' and 'ann_bath_mirror3' not in cam_flag:
+            $ cam_flag.append('ann_bath_mirror3')
+            Max_08 "Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена..."
+        elif __r1 == '04' and 'ann_bath_mirror3' not in cam_flag:
+            $ cam_flag.append('ann_bath_mirror3')
+            Max_10 "А вот и финал не заставил себя ждать! И похоже всем всё понравилось, как и всегда..."
     else:
         show FG cam-shum-act at laptop_screen
         if 'ann_shower0' not in cam_flag:
             $ cam_flag.append('ann_shower0')
-            Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+            Max_09 "Мамы и Эрика не видно через эту камеру... Может посмотреть через другую?"
     return
 
 label cam0_eric_resting:
@@ -94,7 +108,7 @@ label cam0_eric_resting:
     show FG cam-shum-act at laptop_screen
     if 'eric_resting' not in cam_flag:
         $ cam_flag.append('eric_resting')
-        Max_01 "Обезъян в маминой кровати... Бррр..."
+        Max_01 "О, \"В мире животных\" показывают! То ли шимпанзе на стероидах, то ли горилла..."
     return
 
 label cam0_eric_ann_tv:
@@ -114,27 +128,27 @@ label cam0_eric_ann_tv:
         if 'eric_tv' not in cam_flag:
             $ cam_flag.append('eric_tv')
             if flags['ae.tv.hj']:
-                Max_00 "Мама с Эриком смотрят какой-то фильм... Наверняка, опять порно..."
+                Max_01 "Мама с Эриком смотрят какой-то фильм. Наверняка, опять порнушку..."
             else:
-                Max_00 "Мама с Эриком смотрят какой-то фильм... Интересно, какой?"
+                Max_01 "Мама с Эриком смотрят какой-то фильм. Интересно, какой?"
     elif peeping['ann_eric_tv'] == 1:
         # начали смотреть еще в гостиной
         if 'eric_tv1' not in cam_flag:
             $ cam_flag.append('eric_tv1')
             if tv_scene == 'hj':
-                Max_00 "Как же повезло этому... Эрику. Мамины мягкие, нежные и умелые ручки просто творят чудеса..."
+                Max_08 "Как же повезло Эрику! Я бы тоже с огромной радостью так посмотрел что угодно... если бы мамины нежные и умелые ручки ласкали мой член..."
             elif tv_scene == 'bj':
-                Max_00 "Блин, мама, ну почему ты отсасываешь этому... Эрику? Неужели тебе самой это нравится?"
+                Max_08 "Блин, мама, тебе что, настолько неинтересно то, что происходит на экране или ты просто любишь отсасывать Эрику?!"
     else:
         $ peeping['ann_eric_tv'] = 3
         if tv_scene and pose2_3 == '01':
             if 'eric_tv2' not in cam_flag:
                 $ cam_flag.append('eric_tv2')
-                Max_00 "И конечно же они не могут просто смотреть, им надо принять участие..."
+                Max_09 "Ну конечно, ведь просто так смотреть, что происходит на экране они не будут, обязательно надо вот это вот делать..."
         elif tv_scene:
             if 'eric_tv3' not in cam_flag:
                 $ cam_flag.append('eric_tv3')
-                Max_00 "А теперь мама настолько распалилась, что скинула свое полотенце..."
+                Max_10 "А, ну да, без полотенца однозначно лучше... Но вы же в гостиной! А если зайдёт кто-то, а вы тут развлекаетесь..."
     return
 
 label cam0_eric_ann_fucking:
@@ -145,7 +159,7 @@ label cam0_eric_ann_fucking:
             $ pose2_3 = renpy.random.choice(['01', '02', '03'])
             $ renpy.show('Eric cams fuck relax '+pose2_3, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
-            Max_00 "Утомлённые мама с Эриком лежат на кровати, но всё самое интересное уже закончилось..."
+            Max_09 "Утомлённые мама с Эриком лежат на кровати. Благо, они не только трахаются всё время, но ещё и разговаривают..."
         else:
             $ renpy.show('Eric cams fuck relax '+pose2_3, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
@@ -160,13 +174,13 @@ label cam0_eric_ann_fucking:
             show FG cam-shum-act at laptop_screen
             if peeping['ann_eric_sex1'] == 2:
                 # Макса поймали на подглядывании
-                Max_00 "Через окно посмотреть не удалось, заценим через камеру... А они тут развлекаются, как могут..."
+                Max_07 "Через окно подсмотреть мне не дали, значит заценим через камеру... А они тут развлекаются, только в путь!"
             elif peeping['ann_eric_sex1'] == 1:
                 # ушли от закрытой двери
-                Max_00 "Посмотреть через окно я не рискнул, могут поймать, а вот через камеру могу наслаждаться безнаказанно... А посмотреть есть на что..."
+                Max_07 "Подсмотреть через окно я не рискнул, могут заметить, а вот через камеру могу наслаждаться безнаказанно, сколько захочу... И посмотреть есть на что!"
             else:
                 # вообще не подходили к двери
-                Max_00 "Ого! Вот это я удачно заглянул! Ничуть не хуже порно!!!"
+                Max_07 "Ого! Вот это я удачно заглянул! Всё равно, что порно посмотреть..."
         elif tm[-2:] == '50' and 'eric_fuck_fin' not in cam_flag:
             # конец часа, финал траха
             $ peeping['ann_eric_sex1'] = 4
@@ -174,7 +188,7 @@ label cam0_eric_ann_fucking:
             $ pose2_3 = renpy.random.choice(['01', '02', '03'])
             $ renpy.show('Eric cams fuck 0'+str(fuck_scene)+'a', at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
-            Max_00 "Ну вот и закономерный финал..."
+            Max_08 "Ну вот они и кончили. По крайней мере, Эрик так точно, а вот мама..."
         else:
             if fuck_scene == 6:
                 show CamAnnEric1 at laptop_screen

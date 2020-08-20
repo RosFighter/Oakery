@@ -1077,7 +1077,7 @@ init python:
         ch = mgg.social * 10 * multiplier
         mind = 200
         for d in punchar:
-            if d[3]:  # если сестра была наказана, убедить ее проще
+            if d[3]:  # если сестра была наказана, убедить её проще
                 ch += mind
             mind = mind * 0.70 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
         return Chance(clip(int(ch), 0, 900))

@@ -1209,12 +1209,12 @@ label kira_shower:
         $ __r1 = renpy.random.choice(['b', 'c', 'd'])
         $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
-        if __r1=='c':
-            Max_00 "Здорово, тётя Кира в одних трусиках любуется собой!"
-        elif __r1 == 'b':
-            Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
+        if __r1 == 'b':
+            Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком..."
+        elif __r1=='c':
+            Max_03 "Здорово, тётя Кира в одних трусиках любуется собой! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
         else:
-            Max_00 "Здорово, тётя Кира любуется собой в костюме Евы!"
+            Max_06 "Голая тётя Кира - это шикарно! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
         jump .end
 
     label .start_peeping:
@@ -1267,7 +1267,6 @@ label kira_shower:
         else:
             Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
 
-
     label .end:
         $ current_room, prev_room = prev_room, current_room
         $ spent_time += 10
@@ -1296,24 +1295,67 @@ label kira_lisa_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
-        $ __r0 = renpy.random.randint(1, 4)
+        if 'lisa_sh' in cam_flag:
+            $ __r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зеркалом Кира
+        elif 'kira_sh' in cam_flag:
+            $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зеркалом Лиза
+        elif 'kira_lisa_sh' in cam_flag:
+            pass # $ __var = 'kira_lisa'
+        else:
+            $ __r0 = renpy.random.randint(1, 4)
+            if __r0 < 3: # если выпал один персонаж
+                $ __var = 'kira' if __r0 == 1 else 'lisa'
+                if __var == 'lisa':
+                    $ cam_flag.append('kira_sh' if tm[-2:] < '30' else 'lisa_sh')
+                elif __var == 'kira':
+                    # перед умывальниками первые полчаса Кира
+                    $ cam_flag.append('lisa_sh' if tm[-2:] < '30' else 'kira_sh')
+            # else:
+            #     $ cam_flag.append('kira_lisa_sh')
+
         scene BG bathroom-morning-00
         $ __r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
         if __r0 == 1:
+            if 'kira_sh' in cam_flag: # Киру уже видели через камеру
+                $ __r1 = {'04a':'b', '04b':'c', '00':'d', '00a':'d'}[kira.dress_inf]
+            else:
+                if tm[-2:] < '10':
+                    $ __r1 = 'b'
+                elif tm[-2:] < '20':
+                    $ __r1 = 'c'
+                else:
+                    $ __r1 = 'd'
+                $ kira.dress_inf = {'b':'04a', 'c':'04b', 'd':'00'}[__r1]
             $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
             show FG bathroom-morning-00
-            if __r1=='c':
+            if __r1=='b':
+                Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
+            elif __r1=='c':
                 Max_00 "Здорово, тётя Кира в одних трусиках любуется собой! А Лиза, видимо, уже в душе..."
             else:
                 Max_00 "Здорово, тётя Кира любуется собой в костюме Евы! А Лиза, видимо, уже в душе..."
 
         elif __r0 == 2:
+            # назначим или определим одёжку
+            if lisa.dress_inf != '04a': # Лизу уже видели через камеру
+                $ __r1 = {'04c':'a', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
+            else:
+                if tm[-2:] < '10'  and 'bathrobe' in lisa.gifts:
+                    $ __r1 = 'a'
+                elif tm[-2:] < '20':
+                    $ __r1 = 'c'
+                else:
+                    $ __r1 = 'd'
+                $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
+
             $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
             show FG bathroom-morning-00
-            if __r1=='c':
-                Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А в душе, наверное, тётя Кира..."
+            if __r1 == 'a':
+                Max_00 "Лиза здорово смотрится в подаренном мной халате! Особенно, когда видно её упругие сисечки! А Кира, видимо, уже в душе..."
+            elif __r1=='c':
+                Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А Кира, видимо, уже в душе..."
             else:
-                Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А в душе, наверное, тётя Кира..."
+                Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А Кира, видимо, уже в душе..."
 
         else:
             $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_left_shift,])

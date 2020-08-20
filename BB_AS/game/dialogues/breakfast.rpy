@@ -1,6 +1,6 @@
 
 label after_breakfast:
-    $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
+    $ dishes_washed = False  # посуда грязная, кто-то должен её помыть
     $ spent_time += 60
     $ current_room = house[5]
     $ AvailableActions['dishes'].enabled = True
@@ -315,7 +315,7 @@ label breakfast_first:
 
     label .end_bf:
         $ AvailableActions['unbox'].enabled = True
-        $ dishes_washed = False  # посуда грязная, кто-то должен ее помыть
+        $ dishes_washed = False  # посуда грязная, кто-то должен её помыть
         $ spent_time = 60
         $ current_room = house[6]
         $ AvailableActions['dishes'].enabled = True
@@ -351,7 +351,7 @@ label breakfast_2:
             ## наказание Лизы
             scene BG punish-morning 02
             $ renpy.show("Ann punish-morning lisa-01"+ann.dress)
-            $ __mood -= 50 # если Лизу наказывают, ее настроение портится
+            $ __mood -= 50 # если Лизу наказывают, её настроение портится
             $ talk_var['lisa.pun'] += 1
             Lisa_10 "Ой... Мам! Больно!"
             $ renpy.show("Ann punish-morning lisa-02"+ann.dress)

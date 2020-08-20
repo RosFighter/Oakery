@@ -692,7 +692,7 @@ label InstallCam:
         jump AfterWaiting
 
     if GetKolCams(house) < 7 and len(current_room.cams) > 0:
-        Max_00 "Здесь уже есть камера. Пожалуй, стоит установить ее в другом месте."
+        Max_00 "Здесь уже есть камера. Пожалуй, стоит установить её в другом месте."
         jump AfterWaiting
 
     if len(current_room.cams) >= current_room.max_cam:

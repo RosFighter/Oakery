@@ -414,7 +414,7 @@ label punishment_lisa:
     scene BG punish-evening 02
     $ renpy.show("Ann punish-evening lisa-01"+ann.dress+_lisa_dress)
 
-    $ __mood -= 100 # если Лизу наказывают, ее настроение портится
+    $ __mood -= 100 # если Лизу наказывают, её настроение портится
     $ talk_var['lisa.pun'] += 1
 
     if newpunishment==1:
@@ -580,7 +580,7 @@ label punishment_alice:
             $ __suf = alice.dress
         $ renpy.show('Ann punish-evening alice-03'+ann.dress+__suf)
 
-    $ __mood -= 50 # если Алису наказывают, ее настроение портится
+    $ __mood -= 50 # если Алису наказывают, её настроение портится
     $ talk_var['alice.pun'] += 1
 
     if newpunishment==0:
@@ -597,7 +597,7 @@ label punishment_alice:
         Ann_16 "Давай не мамкай тут! Я знаю, что не будешь. Заслужила наказание, терпи!"
 
     $ punalice[0][3] = 1  # Алиса понесла наказание
-    if  punalice[0][0] > 0 and punalice[0][1] == 1:  # Макс шантажировал Алису и подставил ее в этот же день
+    if  punalice[0][0] > 0 and punalice[0][1] == 1:  # Макс шантажировал Алису и подставил её в этот же день
         $ punalice[0][4] = renpy.random.randint(50, 300)  # подозрительность Алисы растет случайно от 5 до 30%
 
     # сцена с наказанной Алисой

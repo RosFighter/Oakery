@@ -120,8 +120,8 @@ define gifts = {
     'lisa'  : [
         Gift('bikini', _("А у меня есть то, о чём ты мечтала..."), 'gift_swimsuit'),
         Gift('bathrobe', _("У меня для тебя подарок {i}(Халат){/i}"), 'gift_bathrobe', -1, "lisa.plan_name in ['sun', 'read', 'phone']"),
-        Gift(['ritter-m', 'ritter-b'], _("{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"), '', -1, "all([lisa.plan_name in ['sun', 'read', 'phone'], not dcv['lisa_sweets'].done])"),
-        Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all([lisa.plan_name in ['sun', 'read', 'phone'], dcv['lisa_sweets'].done])"),
+        # Gift(['ritter-m', 'ritter-b'], _("{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"), '', -1, "all([lisa.plan_name in ['sun', 'read', 'phone'], not dcv['lisa_sweets'].done])"),
+        # Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all([lisa.plan_name in ['sun', 'read', 'phone'], dcv['lisa_sweets'].done])"),
         ],
     'alice' : [
         Gift('cigarettes', _("У меня есть кое-что запрещённое..."), 'gift_cigarettes', -1),

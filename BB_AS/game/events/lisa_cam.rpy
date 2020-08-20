@@ -2,17 +2,17 @@
 label cam0_lisa_sleep_night:
     $ renpy.show('Lisa cams sleep night '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    # if 'lisa_sleep' not in cam_flag:
-    #     $ cam_flag.append('lisa_sleep')
-    #     Max_00 "Сестрёнка спит..."
+    if 'lisa_sleep' not in cam_flag:
+        $ cam_flag.append('lisa_sleep')
+        Max_01 "Лиза сладко спит..."
     return
 
 label cam0_lisa_sleep_morning:
     $ renpy.show('Lisa cams sleep morning '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    # if 'lisa_sleep' not in cam_flag:
-    #     $ cam_flag.append('lisa_sleep')
-    #     Max_00 "Сестрёнка спит..."
+    if 'lisa_sleep' not in cam_flag:
+        $ cam_flag.append('lisa_sleep')
+        Max_01 "Лиза ещё спит..."
     return
 
 label cam0_lisa_shower:
@@ -21,9 +21,9 @@ label cam0_lisa_shower:
         if 'lisa_not_shower' not in cam_flag:
             $ cam_flag.append('lisa_not_shower')
             if len(house[3].cams)>1:
-                Max_00 "Сестрёнки не видно, скорее всего она возле зеркала... Нужно посмотреть через другую камеру..."
+                Max_09 "Лизы не видно через эту камеру... Может посмотреть через другую?"
             else:
-                Max_00 "Сестрёнки не видно, скорее всего она возле зеркала... Но через эту камеру не разглядеть..."
+                Max_09 "Лизы не видно через эту камеру..."
     else:
         $ lisa.dress_inf = '00a'
         $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
@@ -31,7 +31,7 @@ label cam0_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'lisa_shower' not in cam_flag:
             $ cam_flag.append('lisa_shower')
-            Max_00 "Моя младшая сестрёнка в душе... Это зрелище, которое никогда не надоедает..."
+            Max_04 "Младшая сестрёнка принимает душ... Прекрасная Лиза - прекрасное утро!"
     return
 
 label cam1_lisa_shower:
@@ -48,18 +48,19 @@ label cam1_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath_mirror' not in cam_flag:
             $ cam_flag.append('lisa_bath_mirror')
-            if __r1 in ['a', 'b']:
-                Max_02 "Да-а... Может сестрёнка и в халатике, но её упругие сисечкики видны просто замечательно! А они у неё - что надо..."
-            elif __r1 == 'c':
-                Max_04 "Прекрасно! Сестрёнка сегодня в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
-            else:
-                Max_06 "Вау! Лиза примеряет костюм Евы!"
+            # if __r1 in ['a', 'b']:
+            #     Max_02 "Да-а... Может сестрёнка и в халатике, но её упругие сисечкики видны просто замечательно! А они у неё - что надо..."
+            # elif __r1 == 'c':
+            #     Max_04 "Прекрасно! Сестрёнка сегодня в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
+            # else:
+            #     Max_06 "Вау! Лиза примеряет костюм Евы!"
+            Max_03 "Лиза, прежде чем принять душ, любуется собой перед зеркалом. И мы этим со зрителями тоже полюбуемся..."
 
     else:
         show FG cam-shum-act at laptop_screen
         if 'lisa_shower1' not in cam_flag:
             $ cam_flag.append('lisa_shower1')
-            Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+            Max_09 "Лизы не видно через эту камеру... Может посмотреть через другую?"
     return
 
 label cam0_lisa_read:
@@ -67,7 +68,7 @@ label cam0_lisa_read:
     show FG cam-shum-act at laptop_screen
     if 'lisa_read' not in cam_flag:
         $ cam_flag.append('lisa_read')
-        Max_00 "Лиза с таким увлечением читает..."
+        Max_07 "Люблю смотреть, как Лиза читает. Вернее, люблю позы, в которых она читает..."
     return
 
 label lisa_cam_dress_inf(r1):
@@ -98,7 +99,7 @@ label cam0_lisa_dressed_school:
         $ lisa.dress_inf = '01d'
         if 'lisa_dressed_txt' not in cam_flag:
             $ cam_flag.append('lisa_dressed_txt')
-            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
         return
 
     $ cam_flag.append('lisa_dressed')
@@ -109,7 +110,7 @@ label cam0_lisa_dressed_school:
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Сестрёнка одевается в школу..."
+        Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -120,7 +121,7 @@ label cam0_lisa_dressed_school:
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого, вот это вид!!!"
+        Max_02 "Ухх! Сейчас она такая голенькая и милая..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -131,8 +132,7 @@ label cam0_lisa_dressed_school:
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
-    Max_00 "Эх, самое интересное уже закончилось..."
-    # jump open_site
+    Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
     return
 
 label cam0_lisa_dressed_shop:
@@ -143,7 +143,7 @@ label cam0_lisa_dressed_shop:
         $ lisa.dress_inf = '01'
         if 'lisa_dressed_txt' not in cam_flag:
             $ cam_flag.append('lisa_dressed_txt')
-            Max_00 "Уже ничего интересного, сестрёнка полностью одета и просто любуется собой..."
+            Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
         return
 
     $ cam_flag.append('lisa_dressed')
@@ -154,7 +154,7 @@ label cam0_lisa_dressed_shop:
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Сестрёнка одевается на шопинг..."
+        Max_07 "Отлично! Лиза наряжается, чтобы отправиться на шопинг..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -165,7 +165,7 @@ label cam0_lisa_dressed_shop:
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_00 "Ого, вот это вид!!!"
+        Max_02 "Ухх! Сейчас она такая голенькая и милая..."
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -176,8 +176,7 @@ label cam0_lisa_dressed_shop:
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
-    Max_00 "Эх, самое интересное уже закончилось..."
-    # jump open_site
+    Max_04 "Повезло мне с сестрёнкой! Обворожительна в любой одежде и ещё больше - без неё..."
     return
 
 label cam0_lisa_sun:
@@ -185,14 +184,14 @@ label cam0_lisa_sun:
     show FG cam-shum-act at laptop_screen
     if 'lisa_sun' not in cam_flag:
         $ cam_flag.append('lisa_sun')
-        Max_00 "Младшая сестрёнка загорает..."
+        Max_01 "Лиза загорает и радует этим моих зрителей! И меня, конечно же..."
     return
 
 label cam1_lisa_sun:
     show FG cam-shum-act at laptop_screen
     if 'lisa_sun1' not in cam_flag:
         $ cam_flag.append('lisa_sun1')
-        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+        Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
     return
 
 label cam0_lisa_swim:
@@ -200,9 +199,9 @@ label cam0_lisa_swim:
     if 'lisa_swim0' not in cam_flag:
         $ cam_flag.append('lisa_swim0')
         if len(house[6].cams)>1:
-            Max_00 "Ничего толком не видно... Стоит взглянуть с другой камеры..."
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
         else:
-            Max_00 "Ничего не разглядеть... Нужно установить камеру охватывающую бассейн..."
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     return
 
 label cam1_lisa_swim:
@@ -210,7 +209,7 @@ label cam1_lisa_swim:
     show FG cam-shum-act at laptop_screen
     if 'lisa_swim1' not in cam_flag:
         $ cam_flag.append('lisa_swim1')
-        Max_00 "Приядно наблюдать за младшей сестрёнкой..."
+        Max_01 "Приядно наблюдать за младшей сестрёнкой у водички..."
     return
 
 label cam0_lisa_dishes:
@@ -219,7 +218,7 @@ label cam0_lisa_dishes:
 
     if 'lisa_dishes' not in cam_flag:
         $ cam_flag.append('lisa_dishes')
-        Max_00 "Лиза моет посуду, ничего интересного..."
+        Max_01 "Лиза моет посуду. А ведь я мог бы ей помочь..."
     return
 
 label cam0_lisa_phone:
@@ -229,7 +228,7 @@ label cam0_lisa_phone:
     show FG cam-shum-act at laptop_screen
     if 'lisa_phone' not in cam_flag:
         $ cam_flag.append('lisa_phone')
-        Max_00 "Сестрёнка бездельничает с телефоном..."
+        Max_01 "Сестрёнка бездельничает и залипла в свой телефон. Но лежит красиво..."
     return
 
 label cam0_lisa_bath:
@@ -239,27 +238,27 @@ label cam0_lisa_bath:
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath0_st0' not in cam_flag:
             $ cam_flag.append('lisa_bath0_st0')
-            Max_00 "Лиза ещё только набирает воду, самое интересное впереди..."
+            Max_01 "Лиза почти набрала воду, хотя я смотрю на кое-что другое..."
     elif tm[-2:] > '40':
         # вытирается
         show Lisa cams bath 05 at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath0_st1' not in cam_flag:
             $ cam_flag.append('lisa_bath0_st1')
-            Max_00 "Эх, Лиза уже вытирается, самое интересное позади..."
+            Max_04 "Эх, Лиза... Не вытерайся! Ты мокренькая тоже обалденная..."
     else:
         $ renpy.show('Lisa cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath0_st0' not in cam_flag:
             $ cam_flag.append('lisa_bath0_st0')
-            Max_00 "Сестрёнка принимает ванну, заглядение..."
+            Max_05 "Давай, сестрёнка, не стесняйся показать как можно больше всего интересного..."
     return
 
 label cam1_lisa_bath:
     show FG cam-shum-act at laptop_screen
     if 'lisa_bath1' not in cam_flag:
         $ cam_flag.append('lisa_bath1')
-        Max_00 "Через эту камеру ничего не видно, нужно воспользоваться другой..."
+        Max_09 "Лизы не видно через эту камеру... Может посмотреть через другую?"
     return
 
 label cam0_lisa_homework:
@@ -267,5 +266,5 @@ label cam0_lisa_homework:
     show FG cam-shum-act at laptop_screen
     if 'lisa_lessons' not in cam_flag:
         $ cam_flag.append('lisa_lessons')
-        Max_00 "Лиза учит уроки..."
+        Max_01 "Лиза учит уроки. Может, стоило ей помочь?!"
     return

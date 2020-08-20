@@ -4,7 +4,7 @@ label cam0_kira_sleep_morning:
     show FG cam-shum-act at laptop_screen
     if 'kira_sleep' not in cam_flag:
         $ cam_flag.append('kira_sleep')
-        Max_00 "Очаровательная тётя спит..."
+        Max_01 "Моя очаровательная тётя Кира спит..."
     return
 
 label cam0_kira_shower:
@@ -13,9 +13,9 @@ label cam0_kira_shower:
         if 'kira_not_shower' not in cam_flag:
             $ cam_flag.append('kira_not_shower')
             if len(house[3].cams)>1:
-                Max_00 "Тёти не видно, скорее всего она возле зеркала... Нужно посмотреть через другую камеру..."
+                Max_09 "Киры не видно через эту камеру... Может посмотреть через другую?"
             else:
-                Max_00 "Тёти не видно, скорее всего она возле зеркала... Но через эту камеру не разглядеть..."
+                Max_09 "Киры не видно через эту камеру..."
     else:
         $ kira.dress_inf = '00a'
         if 'kira_shower' not in cam_flag:
@@ -28,9 +28,9 @@ label cam0_kira_shower:
         if 'kira_shower' not in cam_flag:
             $ cam_flag.append('kira_shower')
             if __pose < 7 :
-                Max_00 "Тётя в душе... Это зрелище, которое никогда не надоедает..."
+                Max_04 "За такой классной тётей, принимающей душ, будет преступлением не понаблюдать..."
             else:
-                Max_00 "О, тётя решила поразвлечься... "
+                Max_05 "О да, тётя Кира! Потереть киску на камеру будет точно не лишним... Зрители будут в восторге."
     return
 
 label cam1_kira_shower:
@@ -47,20 +47,21 @@ label cam1_kira_shower:
         show FG cam-shum-act at laptop_screen
         if 'kira_bath_mirror' not in cam_flag:
             $ cam_flag.append('kira_bath_mirror')
-            if __r1 == 'b':
-                Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
-            elif __r1 == 'c':
-                Max_00 "Здорово, тётя Кира в одних трусиках любуется собой!"
-            elif __pose in ['01', '02', '03']:
-                Max_00 "Здорово, тётя Кира любуется собой в костюме Евы!"
+            # if __r1 == 'b':
+            #     Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
+            # elif __r1 == 'c':
+            #     Max_00 "Здорово, тётя Кира в одних трусиках любуется собой!"
+            # elif __pose in ['01', '02', '03']:
+            if __pose in ['01', '02', '03']:
+                Max_03 "Тётя Кира красуется перед зеркалом. Полюбуемся..."
             else:
-                Max_00 "Ого! А тёте Кире явно не хватает секса, раз она решила пошалить перед душем..."
+                Max_05 "Ого! А ей явно не хватает секса, раз она решила пошалить перед душем... А как красиво!"
 
     else:
         show FG cam-shum-act at laptop_screen
         if 'kira_shower1' not in cam_flag:
             $ cam_flag.append('kira_shower1')
-            Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+            Max_09 "Киры не видно через эту камеру... Может посмотреть через другую?"
     return
 
 label cam0_kira_alice_shower:
@@ -88,13 +89,13 @@ label cam0_kira_alice_shower:
 
         if 'alice_shower' not in cam_flag:
             $ cam_flag.append('alice_shower')
-            Max_00 "Старшая сестрёнка в душе... Это зрелище, которое никогда не надоедает..."
+            Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
             if 'kira_mirror' not in cam_flag:
                 # Киру ещё не видели
                 if len(house[3].cams)>1:
-                    Max_00 "Тётя Кира, наверное, перед зеркалом... Надо взглянуть через другую камеру..."
+                    Max_09 "Киры не видно через эту камеру... Может посмотреть через другую?"
                 else:
-                    Max_00 "Тётя Кира, наверное, перед зеркалом, но отсюда не разглядеть..."
+                    Max_09 "Киры не видно через эту камеру..."
     elif __var == 'kira':
         # в душе тётя Кира, перед умывальниками Алиса
         $ renpy.show('Kira cams shower 0'+str(renpy.random.randint(1, 6)), at_list=[laptop_screen,])
@@ -103,13 +104,14 @@ label cam0_kira_alice_shower:
 
         if 'kira_shower' not in cam_flag:
             $ cam_flag.append('kira_shower')
-            Max_00 "Тётя Кира принимает душ... Зрелище, способное отнять разум у любого мужчины..."
+            Max_04 "За такой классной тётей, принимающей душ, будет преступлением не понаблюдать..."
+            # Max_05 "О да, тётя Кира! Потереть киску на камеру будет точно не лишним... Зрители будут в восторге."
             if 'alice_mirror' not in cam_flag:
                 # Алису ещё не видели
                 if len(house[3].cams)>1:
-                    Max_00 "Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
+                    Max_09 "Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
                 else:
-                    Max_00 "Алиса, должно быть, красуется перед зеркалом, но отсюда не разглядеть..."
+                    Max_09 "Алиса, должно быть, красуется перед зеркалом, но здесь этого не увидеть..."
     else:
         # обе девчонки в душе, у зеркал никого
         $ kira.dress_inf != '00a'
@@ -155,7 +157,7 @@ label cam1_kira_alice_shower:
         show FG cam-shum-act at laptop_screen
         if 'kira_mirror' not in cam_flag:
             $ cam_flag.append('kira_mirror')
-            Max_00 "Тётя Кира красуется перед зеркалом..."
+            Max_03 "Тётя Кира красуется перед зеркалом. Полюбуемся..."
     elif __var == 'alice':
         # перед умывальниками Алиса, Киру не видно, она сейчас в душе
         if tm[-2:] < '10' and alice.dress_inf != '00aa': # первая треть часа, Алису в душе не видели
@@ -169,12 +171,12 @@ label cam1_kira_alice_shower:
         show FG cam-shum-act at laptop_screen
         if 'alice_mirror' not in cam_flag:
             $ cam_flag.append('alice_mirror')
-            Max_00 "Ух, вот это вид..."
+            Max_05 "Ух, старшая сестрёнка просто сногсшибательна..."
     else:
         show FG cam-shum-act at laptop_screen
         if 'alice_shower1' not in cam_flag:
             $ cam_flag.append('alice_shower1')
-            Max_00 "Через эту камеру никого не видно... Может посмотреть через другую?"
+            Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
 
     return
 
@@ -204,13 +206,13 @@ label cam0_kira_lisa_shower:
 
         if 'lisa_shower' not in cam_flag:
             $ cam_flag.append('lisa_shower')
-            Max_00 "Младшая сестрёнка в душе... На ее прелести я могу смотреть часами..."
+            Max_04 "Младшая сестрёнка принимает душ... Прекрасная Лиза - прекрасное утро!"
             if 'kira_mirror' not in cam_flag:
                 # Киру ещё не видели
                 if len(house[3].cams)>1:
-                    Max_00 "Тётя Кира, должно быть, перед зеркалом... Надо взглянуть через другую камеру..."
+                    Max_09 "Киры не видно через эту камеру... Может посмотреть через другую?"
                 else:
-                    Max_00 "Тётя Кира, должно быть, перед зеркалом, но отсюда не разглядеть..."
+                    Max_09 "Киры не видно через эту камеру..."
     elif __var == 'kira':
         # в душе тётя Кира, перед умывальниками Лиза
         $ renpy.show('Kira cams shower 0'+str(renpy.random.randint(1, 6)), at_list=[laptop_screen,])
@@ -219,13 +221,13 @@ label cam0_kira_lisa_shower:
 
         if 'kira_shower' not in cam_flag:
             $ cam_flag.append('kira_shower')
-            Max_00 "Тётя Кира принимает душ... Зрелище, способное отнять разум у любого мужчины..."
+            Max_04 "За такой классной тётей, принимающей душ, будет преступлением не понаблюдать..."
             if 'lisa_mirror' not in cam_flag:
                 # Лизу ещё не видели
                 if len(house[3].cams)>1:
-                    Max_00 "Лиза, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
+                    Max_09 "Лизы не видно через эту камеру... Может посмотреть через другую?"
                 else:
-                    Max_00 "Лиза, должно быть, красуется перед зеркалом, но отсюда не разглядеть..."
+                    Max_09 "Лизы не видно через эту камеру..."
     else:
         # обе девчонки в душе, у зеркал никого
         $ kira.dress_inf != '00a'
@@ -236,7 +238,7 @@ label cam0_kira_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'kira_shower' not in cam_flag:
             $ cam_flag.append('kira_shower')
-            Max_07 "Ого... Тётя и младшая сестрёнка сегодня моются вместе... Как же они хороши..."
+            Max_07 "О как... Тётя и младшая сестрёнка сегодня моются вместе! Они офигенно хороши..."
 
     return
 
@@ -260,7 +262,7 @@ label cam1_kira_lisa_shower:
 
     if __var == 'kira':
         # перед умывальниками Кира, Лизу не видно, она сейчас в душе
-        if tm[-2:] < '10' and kira.dress_inf != '00a': # начало часа, Киру в душе не видели, у нее есть халат
+        if tm[-2:] < '10' and kira.dress_inf != '00a': # начало часа, Киру в душе не видели
             $ __r1 = 'b'
         elif tm[-2:] < '20' and kira.dress_inf not in ['00a', '00']: # Киру не видели голой
             $ __r1 = 'c'
@@ -272,7 +274,7 @@ label cam1_kira_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'kira_mirror' not in cam_flag:
             $ cam_flag.append('kira_mirror')
-            Max_00 "Тётя Кира красуется перед зеркалом..."
+            Max_03 "Тётя Кира красуется перед зеркалом. Полюбуемся..."
     elif __var == 'lisa':
         # перед умывальниками Лиза, Киру не видно, она сейчас в душе
         if tm[-2:] < '10' and lisa.dress_inf != '00a' and 'bathrobe' in lisa.gifts: # начало часа, Лизу в душе не видели, у нее есть халат
@@ -286,12 +288,12 @@ label cam1_kira_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'lisa_mirror' not in cam_flag:
             $ cam_flag.append('lisa_mirror')
-            Max_00 "Сестрёнка внимательно разглядывает себя в зеркало... А я и мои зрители с большим удовольствием любуемся ей..."
+            Max_03 "Лиза любуется собой перед зеркалом. И мы этим со зрителями тоже полюбуемся..."
     else:
         show FG cam-shum-act at laptop_screen
         if 'kira_shower1' not in cam_flag:
             $ cam_flag.append('kira_shower1')
-            Max_00 "Через эту камеру никого не видно... Может посмотреть через другую?"
+            Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
 
     return
 
@@ -300,14 +302,14 @@ label cam0_kira_sun:
     show FG cam-shum-act at laptop_screen
     if 'kira_swim1' not in cam_flag:
         $ cam_flag.append('kira_swim1')
-        Max_00 "Ух, тётя Кира загорает..."
+        Max_01 "Ух, тётя Кира загорает и радует нас всех своими соблазнительными формами..."
     return
 
 label cam1_kira_sun:
     show FG cam-shum-act at laptop_screen
     if 'kira_sun1' not in cam_flag:
         $ cam_flag.append('kira_sun1')
-        Max_00 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+        Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
     return
 
 label cam0_kira_swim:
@@ -315,9 +317,9 @@ label cam0_kira_swim:
     if 'kira_swim0' not in cam_flag:
         $ cam_flag.append('kira_swim0')
         if len(house[6].cams)>1:
-            Max_00 "Ничего толком не видно... Стоит взглянуть с другой камеры..."
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
         else:
-            Max_00 "Ничего не разглядеть... Нужно установить камеру охватывающую бассейн..."
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     return
 
 label cam1_kira_swim:
@@ -325,7 +327,7 @@ label cam1_kira_swim:
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
         $ cam_flag.append('ann_swim1')
-        Max_00 "На тётю Киру всегда приятно посмотреть..."
+        Max_01 "Всегда приятно посмотреть, как тётя Кира расслабляется во дворе..."
     return
 
 label cam0_kira_bath:
@@ -335,27 +337,27 @@ label cam0_kira_bath:
         show FG cam-shum-act at laptop_screen
         if 'kira_bath0_st0' not in cam_flag:
             $ cam_flag.append('kira_bath0_st0')
-            Max_00 "Тётя Кира ещё только набирает воду, самое интересное впереди..."
+            Max_01 "Тётя Кира набирает воду. После долгого рабочего дня самое то принять ванну..."
     elif tm[-2:] > '40':
         # вытирается
         show Kira cams bath 05 at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'kira_bath0_st1' not in cam_flag:
             $ cam_flag.append('kira_bath0_st1')
-            Max_00 "Эх, тётя Кира уже вытирается, самое интересное позади..."
+            Max_04 "Эх, тётя Кира уже вытирается, самое интересное позади. Почти..."
     else:
         $ renpy.show('Kira cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'kira_bath0_st0' not in cam_flag:
             $ cam_flag.append('kira_bath0_st0')
-            Max_00 "Тётя Кира принимает ванну, заглядение..."
+            Max_05 "Так, руки на стол! Можно обжечься... ведь тётя Кира - огонь!"
     return
 
 label cam1_kira_bath:
     show FG cam-shum-act at laptop_screen
     if 'kira_bath1' not in cam_flag:
         $ cam_flag.append('kira_bath1')
-        Max_00 "Через эту камеру ничего не видно, нужно воспользоваться другой..."
+        Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
     return
 
 label cam0_kira_night_tv:
@@ -365,16 +367,16 @@ label cam0_kira_night_tv:
         if 'kira_tv' not in cam_flag:
             $ cam_flag.append('kira_tv')
             if talk_var['kira.porn']:
-                Max_00 "Похоже, тётя Кира смотрит какой-то сериал... Может, стоит заглянуть чуть позже?"
+                Max_02 "Похоже, тётя Кира смотрит какой-то сериал или кино... Может, стоит составить ей компанию?"
             else:
-                Max_00 "Похоже, тётя Кира смотрит какой-то сериал... А мне приятней смотреть на тётю..."
+                Max_01 "Похоже, тётя Кира смотрит какой-то сериал или кино... Ну а мне приятней смотреть на тётю..."
     elif talk_var['kira.porn']:
         if 'kira_tv1' not in cam_flag:
             $ cam_flag.append('kira_tv1')
             $ __pose = renpy.random.choice(['01', '02', '03'])
             $ renpy.show('Kira cams tv m-'+__pose, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
-            Max_00 "А вот это уже интересней! Тётя Кира настолько возбудилась, что начала ласкать свою киску..."
+            Max_05 "Ага, тётя наверняка порнушку включила! Хотя, может ей стало просто скучно... Может, ей помочь?"
         else:
             $ renpy.show('Kira cams tv m-'+__pose, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
@@ -389,9 +391,9 @@ label cam0_kira_night_swim:
     if 'kira_swim0' not in cam_flag:
         $ cam_flag.append('kira_swim0')
         if len(house[6].cams)>1:
-            Max_00 "Ничего толком не видно... Стоит взглянуть с другой камеры..."
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
         else:
-            Max_00 "Ничего не разглядеть... Нужно установить камеру охватывающую бассейн..."
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     return
 
 label cam1_kira_night_swim:
@@ -399,5 +401,5 @@ label cam1_kira_night_swim:
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
         $ cam_flag.append('ann_swim1')
-        Max_00 "Тётя кира плавает одетая лишь в лунный свет... Класс!!!"
+        Max_05 "Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!"
     return
