@@ -406,10 +406,10 @@ translate english strings:
     new "{i}read about the book{/i}"
 # TODO: Translation updated at 2020-01-22 10:36
 
-# game/events/max.rpy:512
-translate english InstallCam_a98c4309:
+# game/events/max.rpy:695
+translate english InstallCam_b5c9650c:
 
-    # Max_00 "Здесь уже есть камера. Пожалуй, стоит установить ее в другом месте."
+    # Max_00 "Здесь уже есть камера. Пожалуй, стоит установить её в другом месте."
     Max_00 "There's already a camera here. Perhaps I should install one somewhere else."
 
 # game/events/max.rpy:515

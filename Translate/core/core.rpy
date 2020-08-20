@@ -43,3 +43,47 @@ translate english after_load_de0e2c19:
     # "ver [current_ver]"
     "ver [current_ver]"
 
+# TODO: Translation updated at 2020-08-20 09:36
+
+# game/core/core.rpy:398
+translate english cam_after_waiting_6058d5d4:
+
+    # Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
+    Max_09 "" nointeract
+
+# game/core/core.rpy:407
+translate english cam_after_waiting_38f46f18:
+
+    # Max_09 "Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила..." nointeract
+    Max_09 "" nointeract
+
+# game/core/core.rpy:419
+translate english cam_after_waiting_d4f49617:
+
+    # Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
+    Max_09 "" nointeract
+
+# game/core/core.rpy:427
+translate english cam_after_waiting_c283f316:
+
+    # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
+    Max_09 ""
+
+# game/core/core.rpy:431
+translate english cam_after_waiting_eea92f18:
+
+    # Max_09 "Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю..." nointeract
+    Max_09 "" nointeract
+
+# game/core/core.rpy:485
+translate english cam_after_waiting_27f05bf1:
+
+    # Max_00 "Сейчас здесь ничего не происходит."
+    Max_00 ""
+
+translate english strings:
+
+    # game/core/core.rpy:398
+    old "{i}идти на веранду{/i}"
+    new ""
+

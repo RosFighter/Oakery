@@ -6641,3 +6641,125 @@ translate english liza_hand_mass_c5e66269:
 
     # Lisa_02 "Хватит языком молоть, вот научишься целоваться с невыдуманными девушками, тогда и поговорим. А массаж у тебя получается здорово! Даже не хочется, чтобы это заканчивалось..."
     Lisa_02 "How about you learn how to make out with non-fictional girls, then we'll talk. Ohhhh, this massage is great!"
+# TODO: Translation updated at 2020-08-20 09:36
+
+# game/dialogues/lisatalk.rpy:2749
+translate english lisa_gift_sweets_18a348cf:
+
+    # Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2757
+translate english lisa_gift_sweets_ac3f0acd:
+
+    # Lisa_03 "Ого! Ты купил мои любимые шоколадки! Как мило... Спасибо тебе большое!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2758
+translate english lisa_gift_sweets_ae854677:
+
+    # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:2770
+translate english lisa_gift_sweets_4b7ec1a8:
+
+    # Lisa_03 "Я хочу крепкие обнимашки! Иди ко мне..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2771
+translate english lisa_gift_sweets_144b0de7:
+
+    # Max_03 "{i}( Класс! Лиза практически накинулась на меня с объятиями... Это так классно, когда она прижимается ко мне своей грудью! ){/i}"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:2777
+translate english lisa_gift_sweets_f39a352c:
+
+    # Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2782
+translate english lisa_gift_sweets_aae92047:
+
+    # Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:2788
+translate english lisa_gift_sweets_f11a6f42:
+
+    # Max_05 "{i}( О да! Этот нежный поцелуй от сестрёнки я и надеялся получить! Блаженно... ){/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:2789
+translate english lisa_gift_sweets_55fb9926:
+
+    # Lisa_02 "Ну всё, хорошего понемногу..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2795
+translate english lisa_gift_sweets_b82d876e:
+
+    # Max_01 "Наслаждайся, сластёна!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2798
+translate english lisa_gift_sweets_3cca42ec:
+
+    # Lisa_01 "[failed!t]Знаешь, а я передумала! Вот купил бы большую шоколадку, тогда бы и чмокнула..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2799
+translate english lisa_gift_sweets_da577192:
+
+    # Max_11 "Ну вот..."
+    Max_11 ""
+
+# game/dialogues/lisatalk.rpy:2800
+translate english lisa_gift_sweets_c5dac0f5:
+
+    # Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2801
+translate english lisa_gift_sweets_de3d2863:
+
+    # Max_01 "Ага."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2812
+translate english lisa_gift_sweets_2ea1958a:
+
+    # Lisa_03 "Макс, давай обниматься! Лови меня..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2813
+translate english lisa_gift_sweets_4c4b7366:
+
+    # Max_05 "{i}( Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается. ){/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:2814
+translate english lisa_gift_sweets_06179122:
+
+    # Lisa_05 "Мне нравится, что ты так мило балуешь меня сладостями... Я тебя в щёчку ещё чмокну! Ммм..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:2820
+translate english lisa_gift_sweets_72637a7c:
+
+    # Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне... ){/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:2821
+translate english lisa_gift_sweets_55fb9926_1:
+
+    # Lisa_02 "Ну всё, хорошего понемногу..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2827
+translate english lisa_gift_sweets_b82d876e_1:
+
+    # Max_01 "Наслаждайся, сластёна!"
+    Max_01 ""
+
