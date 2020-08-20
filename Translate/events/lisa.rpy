@@ -7,19 +7,19 @@ translate english lisa_shower_1532bb65:
     Max_00 "Lisa is in the shower..." nointeract
 
 # game/events/lisa.rpy:25
-translate english lisa_shower_97ede92e:
+translate english lisa_shower_265d5f12:
 
     # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
     Max_14 "Lisa already caught me peeking. She threatened to tell Mom. I don't want to risk making her any angrier."
 
 # game/events/lisa.rpy:28
-translate english lisa_shower_309d9d70:
+translate english lisa_shower_dfd2e334:
 
     # Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
     Max_09 "Lisa almost caught me peeping. Lucky I escaped in time. Don't want to risk it again."
 
 # game/events/lisa.rpy:31
-translate english lisa_shower_854c3ca9:
+translate english lisa_shower_1ee1bae5:
 
     # Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
     Max_01 "I've already spied on Lisa today and didn't get caught. Don't want to push my luck."
@@ -622,6 +622,24 @@ translate english lisa_shower_not_luck_e8e13c34:
     Max_12 "{color=[orange]}{i}I think Lisa got suspicious!{/i}{/color}\nOh, no! Looks like she noticed me... time to run!"
 # TODO: Translation updated at 2020-08-20 09:36
 
+# game/events/lisa.rpy:25
+translate english lisa_shower_12ee09ae:
+
+    # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
+    Max_14 ""
+
+# game/events/lisa.rpy:28
+translate english lisa_shower_309d9d70:
+
+    # Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
+    Max_09 ""
+
+# game/events/lisa.rpy:31
+translate english lisa_shower_854c3ca9:
+
+    # Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
+    Max_01 ""
+
 # game/events/lisa.rpy:477
 translate english get_laptop_c361a263:
 
@@ -652,4 +670,11 @@ translate english strings:
     old "Можно войти на секунду? Я только ноутбук возьму..."
     new ""
 
+# TODO: Translation updated at 2020-08-20 10:21
+
+# game/events/lisa.rpy:25
+translate english lisa_shower_97ede92e:
+
+    # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
+    Max_14 ""
 

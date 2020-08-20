@@ -85,5 +85,5 @@ translate english strings:
 
     # game/core/core.rpy:398
     old "{i}идти на веранду{/i}"
-    new "{i1}Go to the porch{/i}"
+    new "{i}go to the verandah{/i}"
 

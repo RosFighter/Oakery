@@ -2190,3 +2190,187 @@ translate english strings:
     # game/events/kira.rpy:1082
     old "{i}начать ласкать её киску языком{/i}"
     new "{i}Invade her pussy with your tongue{/i}"
+# TODO: Translation updated at 2020-08-20 09:36
+
+# game/events/kira.rpy:1206
+translate english kira_shower_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/kira.rpy:1213
+translate english kira_shower_ladder_999e1851:
+
+    # Max_00 "Здорово, тётя Кира в одних трусиках любуется собой!"
+    Max_00 ""
+
+# game/events/kira.rpy:1215
+translate english kira_shower_ladder_d59f5fae:
+
+    # Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
+    Max_00 ""
+
+# game/events/kira.rpy:1217
+translate english kira_shower_ladder_64a8af6a:
+
+    # Max_00 "Здорово, тётя Кира любуется собой в костюме Евы!"
+    Max_00 ""
+
+# game/events/kira.rpy:1266
+translate english kira_shower_alt_peepeng_f934835c:
+
+    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
+    Max_03 ""
+
+# game/events/kira.rpy:1268
+translate english kira_shower_alt_peepeng_eab86a2d:
+
+    # Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
+    Max_05 ""
+
+# game/events/kira.rpy:1298
+translate english kira_lisa_shower_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/kira.rpy:1306
+translate english kira_lisa_shower_ladder_26f275ad:
+
+    # Max_00 "Здорово, тётя Кира в одних трусиках любуется собой! А Лиза, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1308
+translate english kira_lisa_shower_ladder_bbcd78e1:
+
+    # Max_00 "Здорово, тётя Кира любуется собой в костюме Евы! А Лиза, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1314
+translate english kira_lisa_shower_ladder_d04c742d:
+
+    # Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А в душе, наверное, тётя Кира..."
+    Max_00 ""
+
+# game/events/kira.rpy:1316
+translate english kira_lisa_shower_ladder_c2b79032:
+
+    # Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А в душе, наверное, тётя Кира..."
+    Max_00 ""
+
+# game/events/kira.rpy:1323
+translate english kira_lisa_shower_ladder_61cf6972:
+
+    # Max_00 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
+    Max_00 ""
+
+# game/events/kira.rpy:1325
+translate english kira_lisa_shower_ladder_da198cbe:
+
+    # Max_00 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
+    Max_00 ""
+
+# game/events/kira.rpy:1327
+translate english kira_lisa_shower_ladder_87af87e8:
+
+    # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
+    Max_00 ""
+
+# game/events/kira.rpy:1365
+translate english kira_lisa_shower_alt_peepeng_ddbc59ae:
+
+    # Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
+    Max_04 ""
+
+# game/events/kira.rpy:1395
+translate english kira_alice_shower_ladder_2b325faf:
+
+    # Max_04 "Посмотрим, что у нас тут..."
+    Max_04 ""
+
+# game/events/kira.rpy:1429
+translate english kira_alice_shower_ladder_d59f5fae:
+
+    # Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
+    Max_00 ""
+
+# game/events/kira.rpy:1431
+translate english kira_alice_shower_ladder_72559c62:
+
+    # Max_00 "Здорово, тётя Кира в одних трусиках любуется собой! А Алиса, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1433
+translate english kira_alice_shower_ladder_ccbae948:
+
+    # Max_00 "Здорово, тётя Кира любуется собой в костюме Евы! А Алиса, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1449
+translate english kira_alice_shower_ladder_bfb3771e:
+
+    # Max_00 "Старшая сестрёнка в распахнутом халате красуется перед заркалом! А тётя Кира, наверное, сейчас в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1451
+translate english kira_alice_shower_ladder_bd88030a:
+
+    # Max_00 "Алиса в одних трусиках красуется перед зеркалом, класс! А тётя Кира, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1453
+translate english kira_alice_shower_ladder_f10aef39:
+
+    # Max_00 "Алиса красуется перед зеркалом в костюме Евы, класс! А тётя Кира, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1461
+translate english kira_alice_shower_ladder_6f4f0d94:
+
+    # Max_00 "Две непослушные девочки вместе! Красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
+    Max_00 ""
+
+# game/events/kira.rpy:1463
+translate english kira_alice_shower_ladder_36046a26:
+
+    # Max_00 "Две непослушные девочки вместе! Красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
+    Max_00 ""
+
+# game/events/kira.rpy:1465
+translate english kira_alice_shower_ladder_87af87e8:
+
+    # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
+    Max_00 ""
+
+# game/events/kira.rpy:1503
+translate english kira_alice_shower_alt_peepeng_72bf06b5:
+
+    # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
+    Max_03 ""
+
+# TODO: Translation updated at 2020-08-20 11:13
+
+# game/events/kira.rpy:1333
+translate english kira_lisa_shower_ladder_d59f5fae:
+
+    # Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
+    Max_00 ""
+
+# game/events/kira.rpy:1355
+translate english kira_lisa_shower_ladder_2817470d:
+
+    # Max_00 "Лиза здорово смотрится в подаренном мной халате! Особенно, когда видно её упругие сисечки! А Кира, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1357
+translate english kira_lisa_shower_ladder_125b7771:
+
+    # Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А Кира, видимо, уже в душе..."
+    Max_00 ""
+
+# game/events/kira.rpy:1359
+translate english kira_lisa_shower_ladder_e40a1a81:
+
+    # Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А Кира, видимо, уже в душе..."
+    Max_00 ""
+
