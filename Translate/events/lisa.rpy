@@ -626,49 +626,49 @@ translate english lisa_shower_not_luck_e8e13c34:
 translate english lisa_shower_12ee09ae:
 
     # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
-    Max_14 ""
+    Max_14 "Lisa already caught me peeking and threatened to tell Mom. I shouldn't risk making her any more angry."
 
 # game/events/lisa.rpy:28
 translate english lisa_shower_309d9d70:
 
     # Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
-    Max_09 ""
+    Max_09 "Lisa came close to catching me earlier. I shouldn't risking peeking on her again."
 
 # game/events/lisa.rpy:31
 translate english lisa_shower_854c3ca9:
 
     # Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
-    Max_01 ""
+    Max_01 "I've already got my fill on spying on Lisa for today. I was lucky she didn't catch me earlier, so I shouldn't risk it again."
 
 # game/events/lisa.rpy:477
 translate english get_laptop_c361a263:
 
     # Lisa_00 "Мог бы и подождать немного. Ты что, без ноутбука и часа прожить не можешь?"
-    Lisa_00 ""
+    Lisa_00 "You could've waited a bit. Can't you go an hour without the laptop?"
 
 # game/events/lisa.rpy:478
 translate english get_laptop_2123fd5a:
 
     # Max_00 "Лиза, мне ноутбук нужен для дела."
-    Max_00 ""
+    Max_00 "It's very important. I need the laptop for my business."
 
 # game/events/lisa.rpy:479
 translate english get_laptop_169642d2:
 
     # Lisa_00 "Какого дела? Ты дома сидишь целыми днями и ничего не делаешь..."
-    Lisa_00 ""
+    Lisa_00 "What business? Don't you just sit around at home all day?"
 
 # game/events/lisa.rpy:480
 translate english get_laptop_6bc8db4b:
 
     # Lisa_00 "Ладно, неважно... Забирай свой ноутбук и уходи. Дай мне уже переодеться..."
-    Lisa_00 ""
+    Lisa_00 "Okay, I guess it doesn't really matter. Take it. I need to get changed..."
 
 translate english strings:
 
     # game/events/lisa.rpy:217
     old "Можно войти на секунду? Я только ноутбук возьму..."
-    new ""
+    new "Can I come in for a second? I just need my laptop..."
 
 # TODO: Translation updated at 2020-08-20 10:21
 
@@ -676,5 +676,5 @@ translate english strings:
 translate english lisa_shower_97ede92e:
 
     # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
-    Max_14 ""
+    Max_14 "Lisa already caught me peeking. She threatened to tell Mom. I don't want to risk making her any angrier."
 
