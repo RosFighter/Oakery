@@ -54,7 +54,7 @@ label cam0_alice_sleep_morning:
 
 label cam0_alice_shower:
     if tm[-2:] < '20' and alice.dress_inf != '00aa':
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'alice_not_shower' not in cam_flag:
             $ cam_flag.append('alice_not_shower')
             if len(house[3].cams)>1:
@@ -102,7 +102,7 @@ label cam1_alice_shower:
             Max_03 "Алиса, прежде чем принять душ, любуется собой перед зеркалом. А я и мои зрители с радостью полюбуемся этим через камеру..."
 
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'alice_shower1' not in cam_flag:
             $ cam_flag.append('alice_shower1')
             Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
@@ -222,7 +222,7 @@ label cam1_alice_lisa_shower:
             $ cam_flag.append('alice_mirror')
             Max_05 "Ух, старшая сестрёнка просто сногсшибательна..."
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'alice_shower1' not in cam_flag:
             $ cam_flag.append('alice_shower1')
             Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
@@ -292,6 +292,7 @@ label cam0_alice_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10')
@@ -347,6 +348,7 @@ label cam0_alice_dressed_friend:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10')
@@ -397,6 +399,7 @@ label cam0_alice_dressed_club:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
         call alice_cam_dress_inf('11')
@@ -441,7 +444,7 @@ label cam0_alice_read:
     return
 
 label cam0_alice_smoke:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'alice_smoke' not in cam_flag:
         $ cam_flag.append('alice_smoke')
         if dcv['smoke'].stage < 1:
@@ -451,6 +454,7 @@ label cam0_alice_smoke:
     return
 
 label cam1_alice_smoke:
+    show FG cam-shum-noact at laptop_screen
     return
 
 label cam0_alice_sun:
@@ -472,7 +476,11 @@ label cam1_alice_sun:
     elif talk_var['sun_oiled'] > 0:
         show Alice cams sun-alone 01 at laptop_screen
 
-    show FG cam-shum-act at laptop_screen
+    if talk_var['sun_oiled']:
+        show FG cam-shum-act at laptop_screen
+    else:
+        show FG cam-shum-noact at laptop_screen
+
     if 'alice_sun1' not in cam_flag:
         $ cam_flag.append('alice_sun1')
         if talk_var['sun_oiled']:
@@ -483,7 +491,7 @@ label cam1_alice_sun:
     return
 
 label cam0_alice_swim:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'alice_swim0' not in cam_flag:
         $ cam_flag.append('alice_swim0')
         if len(house[6].cams)>1:
@@ -584,7 +592,7 @@ label cam0_alice_bath:
     return
 
 label cam1_alice_bath:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'alice_bath1' not in cam_flag:
         $ cam_flag.append('alice_bath1')
         Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"

@@ -23,6 +23,9 @@ define lisa_bad_mass  = _("{color=#E59400}{i}Лизе не понравился 
 define restrain = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
 define norestrain = _("{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n")
 
+define lisa_good_kiss = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
+define lisa_bad_kiss  = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
+
 define config.has_autosave = False
 define config.has_quicksave = False
 

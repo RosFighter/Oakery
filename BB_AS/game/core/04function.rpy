@@ -1190,3 +1190,21 @@ init python:
     def added_mem_var(x):
         if x not in persistent.mems_var:
             persistent.mems_var.append(x)
+
+
+    def random_pose(pose_list, last_pose=''):  # назначает из списка позу, отличную от последней
+        if pose_list.count(last_pose) > 0:
+            pose_list.remove(last_pose)
+        return renpy.random.choice(pose_list)
+
+    def poses_manager(char, pose_list, cam_number=0):
+        global cam_poses
+        if char.name+'_'+char.plan_name not in cam_poses:
+            # для данного персонажа и занятия поза еще не назначалась
+            cam_poses[char.name+'_'+char.plan_name] = tuple([random_pose(pose_list), tm, cam_number])
+        else:
+            # позу уже назначалась
+            # проверяем прошел ли откат, и если да, назначаем новую позу
+            # время отката разное для разных занятий
+
+            cam_poses[char.name+'_'+char.plan_name] = tuple([random_pose(pose_list, cam_poses[char.name+'_'+char.plan_name][0]), tm, cam_number])

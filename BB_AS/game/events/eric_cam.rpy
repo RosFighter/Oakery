@@ -10,7 +10,7 @@ label cam0_eric_ann_sleep:
 label cam0_eric_ann_shower:
     default ann_eric_scene = ''
     if tm[-2:] < '30':
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'ann_not_shower' not in cam_flag:
             $ cam_flag.append('ann_not_shower')
             if len(house[3].cams)>1:
@@ -31,13 +31,19 @@ label cam0_eric_ann_shower:
         if tm[-2:] < '50':
             $ renpy.show('Eric cams shower '+ann_eric_scene, at_list=[laptop_screen])
         else:
+            if ann_eric_scene in ['01', '02', '03']:
+                $ ann_eric_scene = {
+                        '01' : renpy.random.choice(['04', '05', '06']),
+                        '02' : renpy.random.choice(['08', '10']),
+                        '03' : renpy.random.choice(['07', '09', '11']),
+                    }[ann_eric_scene]
             $ renpy.show('Eric cams shower '+ann_eric_scene+'a', at_list=[laptop_screen])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
-        if 'ann_shower1' not in cam_flag:
+        if tm[-2:] < '40' and 'ann_shower1' not in cam_flag:
             $ cam_flag.append('ann_shower1')
             Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ!"
-        elif 'ann_shower2' not in cam_flag:
+        elif tm[-2:]<'50' and 'ann_shower2' not in cam_flag:
             $ cam_flag.append('ann_shower2')
             if ann_eric_scene in ['04', '05']:
                 # минет
@@ -51,7 +57,7 @@ label cam0_eric_ann_shower:
             else:
                 # секс ссзади
                 Max_05 "Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!"
-        elif tm[-2:] == '50' and 'ann_shower3' not in cam_flag:
+        elif tm[-2:]=='50' and 'ann_shower3' not in cam_flag:
             $ cam_flag.append('ann_shower3')
             if ann_eric_scene in ['04', '05']:
                 # минет
@@ -97,7 +103,7 @@ label cam1_eric_ann_shower:
             $ cam_flag.append('ann_bath_mirror3')
             Max_10 "А вот и финал не заставил себя ждать! И похоже всем всё понравилось, как и всегда..."
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'ann_shower0' not in cam_flag:
             $ cam_flag.append('ann_shower0')
             Max_09 "Мамы и Эрика не видно через эту камеру... Может посмотреть через другую?"

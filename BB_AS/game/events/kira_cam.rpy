@@ -9,7 +9,7 @@ label cam0_kira_sleep_morning:
 
 label cam0_kira_shower:
     if tm[-2:] < '20' and kira.dress_inf != '00a':
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'kira_not_shower' not in cam_flag:
             $ cam_flag.append('kira_not_shower')
             if len(house[3].cams)>1:
@@ -58,7 +58,7 @@ label cam1_kira_shower:
                 Max_05 "Ого! А ей явно не хватает секса, раз она решила пошалить перед душем... А как красиво!"
 
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'kira_shower1' not in cam_flag:
             $ cam_flag.append('kira_shower1')
             Max_09 "Киры не видно через эту камеру... Может посмотреть через другую?"
@@ -173,7 +173,7 @@ label cam1_kira_alice_shower:
             $ cam_flag.append('alice_mirror')
             Max_05 "Ух, старшая сестрёнка просто сногсшибательна..."
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'alice_shower1' not in cam_flag:
             $ cam_flag.append('alice_shower1')
             Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
@@ -290,7 +290,7 @@ label cam1_kira_lisa_shower:
             $ cam_flag.append('lisa_mirror')
             Max_03 "Лиза любуется собой перед зеркалом. И мы этим со зрителями тоже полюбуемся..."
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'kira_shower1' not in cam_flag:
             $ cam_flag.append('kira_shower1')
             Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
@@ -306,14 +306,14 @@ label cam0_kira_sun:
     return
 
 label cam1_kira_sun:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'kira_sun1' not in cam_flag:
         $ cam_flag.append('kira_sun1')
         Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
     return
 
 label cam0_kira_swim:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'kira_swim0' not in cam_flag:
         $ cam_flag.append('kira_swim0')
         if len(house[6].cams)>1:
@@ -323,6 +323,7 @@ label cam0_kira_swim:
     return
 
 label cam1_kira_swim:
+    show BG-cam house courtyard-1 day at laptop_screen
     $ renpy.show('Kira cams swim day '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
@@ -354,7 +355,7 @@ label cam0_kira_bath:
     return
 
 label cam1_kira_bath:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'kira_bath1' not in cam_flag:
         $ cam_flag.append('kira_bath1')
         Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
@@ -387,7 +388,7 @@ label cam0_kira_night_tv:
     return
 
 label cam0_kira_night_swim:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'kira_swim0' not in cam_flag:
         $ cam_flag.append('kira_swim0')
         if len(house[6].cams)>1:

@@ -84,8 +84,8 @@ translate english alice_sleep_morning_7ff48024:
     # Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..." nointeract
     Max_00 "I think Alice is asleep. Probably shouldn't knock. \nAnd it's way too dangerous to just walk in..." nointeract
 
-# game/events/alice.rpy:83
-translate english alice_sleep_morning_46390368:
+# game/events/alice.rpy:196
+translate english alice_sleep_morning_5a7b04f5:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... " nointeract
     Max_07 "Yes! Alice is still asleep, which makes me very happy...it means I can see her naked almost properly... " nointeract
@@ -120,8 +120,8 @@ translate english alice_sleep_morning_21f31196:
     # Max_02 "Вот чёрт! С каким же огромным удовольствием я бы сел рядом с ней, запустил свои руки под её белье и ласкал эти упругие сисечки всё утро... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится." nointeract
     Max_02 "Amazing! It would be great to sit next her, running my hands beneath her underwear while kneading her soft tits all morning...Nice, sis. But I can't hang around to say good morning." nointeract
 
-# game/events/alice.rpy:109
-translate english alice_shower_228a4446:
+# game/events/alice.rpy:229
+translate english alice_shower_e2dd6210:
 
     # Max_00 "Алиса меня уже поймала сегодня. Не стоит злить её ещё больше, а то точно что-нибудь оторвет."
     Max_00 "Alice has already caught me today. I shouldn't try making her any more angry."
@@ -673,8 +673,8 @@ translate english alice_sleep_morning_c6cf727e:
     # Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
     Max_04 "Wow! Such tempting curves and boobs can make you lose consciousness early in the morning... What a big sister I have!" nointeract
 
-# game/events/alice.rpy:178
-translate english alice_sleep_morning_1657f52d:
+# game/events/alice.rpy:188
+translate english alice_sleep_morning_e797b39a:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... Только вот одето на ней больше, чем должно быть!" nointeract
     Max_07 "Uhh! Alice's still asleep, which makes me very happy... Because it means I can see her cool, almost naked figure properly... Except she's wearing more than she should be!" nointeract
@@ -751,8 +751,8 @@ translate english alice_shower_ladder_d56d02cd:
     # Max_06 "Вау! Алиса сегодня совершенно голая! Как мы и договорились, трусики она не носит и даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями..."
     Max_06 "Wow! Alice is totally naked today! As we agreed, she's not wearing panties, and she doesn't even know that gives me the chance to admire all her delights..."
 
-# game/events/alice.rpy:331
-translate english alice_shower_ladder_00211017:
+# game/events/alice.rpy:461
+translate english alice_shower_ladder_87af87e8:
 
     # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
     Max_00 "Okay, time to go, or someone will notice me here..."
@@ -1779,7 +1779,7 @@ translate english alice_lisa_shower_start_peeping_72bf06b5:
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
     Max_03 "Yes... I wish I was between the two of them... I'd make sure they don't miss anything!"
 
-# TODO: Translation updated at 2020-08-20 10:21
+# TODO: Translation updated at 2020-08-22 08:21
 
 # game/events/alice.rpy:127
 translate english alice_sleep_night_fa0741e5:
@@ -1787,35 +1787,11 @@ translate english alice_sleep_night_fa0741e5:
     # Max_09 "Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!"
     Max_09 ""
 
-# game/events/alice.rpy:188
-translate english alice_sleep_morning_e797b39a:
-
-    # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... Только вот одето на ней больше, чем должно быть!" nointeract
-    Max_07 "" nointeract
-
 # game/events/alice.rpy:193
 translate english alice_sleep_morning_e5316a8a:
 
     # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!"
     Max_09 ""
-
-# game/events/alice.rpy:196
-translate english alice_sleep_morning_5a7b04f5:
-
-    # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... " nointeract
-    Max_07 "" nointeract
-
-# game/events/alice.rpy:229
-translate english alice_shower_e2dd6210:
-
-    # Max_00 "Алиса меня уже поймала сегодня. Не стоит злить её ещё больше, а то точно что-нибудь оторвет."
-    Max_00 "Alice has already caught me today. I shouldn't try making her any more angry."
-
-# game/events/alice.rpy:461
-translate english alice_shower_ladder_87af87e8:
-
-    # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
-    Max_00 "Okay, time to go, or someone will notice me here..."
 
 # game/events/alice.rpy:1209
 translate english alice_lisa_shower_ladder_2b325faf:
@@ -1824,52 +1800,52 @@ translate english alice_lisa_shower_ladder_2b325faf:
     Max_04 "Let's see what we got here..."
 
 # game/events/alice.rpy:1243
-translate english alice_lisa_shower_ladder_4755c655:
+translate english alice_lisa_shower_ladder_4a7d5821:
 
-    # Max_00 "Лиза здорово смотрится в подаренном мной халате! Особенно, когда видно её упругие сисечки! А Алиса, видимо, уже в душе..."
-    Max_00 ""
+    # Max_03 "Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и Алиса принимает душ!"
+    Max_03 ""
 
 # game/events/alice.rpy:1245
-translate english alice_lisa_shower_ladder_46278b0a:
+translate english alice_lisa_shower_ladder_60e5c32f:
 
-    # Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А Алиса, видимо, уже в душе..."
-    Max_00 ""
+    # Max_07 "Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и Алиса принимает душ!"
+    Max_07 ""
 
 # game/events/alice.rpy:1247
-translate english alice_lisa_shower_ladder_487422cb:
+translate english alice_lisa_shower_ladder_991a3c5d:
 
-    # Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А Алиса, видимо, уже в душе..."
-    Max_00 ""
+    # Max_06 "Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и Алиса принимает душ!"
+    Max_06 ""
 
 # game/events/alice.rpy:1263
-translate english alice_lisa_shower_ladder_90407278:
+translate english alice_lisa_shower_ladder_982be2bb:
 
-    # Max_00 "Старшая сестрёнка в распахнутом халате красуется перед заркалом! А Лиза, наверное, сейчас в душе..."
-    Max_00 ""
+    # Max_02 "Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и Лиза принимает душ!"
+    Max_02 ""
 
 # game/events/alice.rpy:1265
-translate english alice_lisa_shower_ladder_2bf7343f:
+translate english alice_lisa_shower_ladder_531a740a:
 
-    # Max_00 "Алиса в одних трусиках красуется перед зеркалом, класс! А Лиза, видимо, уже в душе..."
-    Max_00 ""
+    # Max_04 "Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и Лиза принимает душ!"
+    Max_04 ""
 
 # game/events/alice.rpy:1267
-translate english alice_lisa_shower_ladder_d2bbfaa7:
+translate english alice_lisa_shower_ladder_2e2714c1:
 
-    # Max_00 "Алиса красуется перед зеркалом в костюме Евы, класс! А Лиза, видимо, уже в душе..."
-    Max_00 ""
+    # Max_06 "Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и Лиза принимает душ!"
+    Max_06 ""
 
 # game/events/alice.rpy:1275
-translate english alice_lisa_shower_ladder_7392eac8:
+translate english alice_lisa_shower_ladder_f7f3ee79:
 
-    # Max_00 "Две сестрички красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
-    Max_00 ""
+    # Max_05 "Две мои сестрёнки красуются перед зеркалом в одних лишь трусиках! Такую прелесть редко можно увидеть..."
+    Max_05 ""
 
 # game/events/alice.rpy:1279
-translate english alice_lisa_shower_ladder_1eb2d686:
+translate english alice_lisa_shower_ladder_2e1d81d5:
 
-    # Max_00 "Две совершенно голые сестрёнки красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
-    Max_00 ""
+    # Max_06 "Да они же обе голенькие красуются перед зеркалом! Ох, сестрёнки, я бы вами целую вечность любовался..."
+    Max_06 ""
 
 # game/events/alice.rpy:1281
 translate english alice_lisa_shower_ladder_87af87e8:

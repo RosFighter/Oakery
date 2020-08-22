@@ -2190,31 +2190,32 @@ translate english strings:
     # game/events/kira.rpy:1082
     old "{i}начать ласкать её киску языком{/i}"
     new "{i}Invade her pussy with your tongue{/i}"
-# TODO: Translation updated at 2020-08-20 09:36
+
+# TODO: Translation updated at 2020-08-22 08:21
 
 # game/events/kira.rpy:1206
 translate english kira_shower_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 ""
+    Max_04 "Let's see what we got here..."
 
 # game/events/kira.rpy:1213
-translate english kira_shower_ladder_999e1851:
+translate english kira_shower_ladder_547cf525:
 
-    # Max_00 "Здорово, тётя Кира в одних трусиках любуется собой!"
-    Max_00 ""
+    # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком..."
+    Max_07 ""
 
 # game/events/kira.rpy:1215
-translate english kira_shower_ladder_d59f5fae:
+translate english kira_shower_ladder_ee7e4217:
 
-    # Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
-    Max_00 ""
+    # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
+    Max_03 ""
 
 # game/events/kira.rpy:1217
-translate english kira_shower_ladder_64a8af6a:
+translate english kira_shower_ladder_90b187c3:
 
-    # Max_00 "Здорово, тётя Кира любуется собой в костюме Евы!"
-    Max_00 ""
+    # Max_06 "Голая тётя Кира - это шикарно! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
+    Max_06 ""
 
 # game/events/kira.rpy:1266
 translate english kira_shower_alt_peepeng_f934835c:
@@ -2228,149 +2229,135 @@ translate english kira_shower_alt_peepeng_eab86a2d:
     # Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
     Max_05 ""
 
-# game/events/kira.rpy:1298
+# game/events/kira.rpy:1297
 translate english kira_lisa_shower_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 ""
+    Max_04 "Let's see what we got here..."
 
-# game/events/kira.rpy:1306
-translate english kira_lisa_shower_ladder_26f275ad:
+# game/events/kira.rpy:1332
+translate english kira_lisa_shower_ladder_aa3e76cc:
 
-    # Max_00 "Здорово, тётя Кира в одних трусиках любуется собой! А Лиза, видимо, уже в душе..."
-    Max_00 ""
+    # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Лиза принимает душ!"
+    Max_07 ""
 
-# game/events/kira.rpy:1308
-translate english kira_lisa_shower_ladder_bbcd78e1:
+# game/events/kira.rpy:1334
+translate english kira_lisa_shower_ladder_22c3d9c6:
 
-    # Max_00 "Здорово, тётя Кира любуется собой в костюме Евы! А Лиза, видимо, уже в душе..."
-    Max_00 ""
+    # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Лиза принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
+    Max_03 ""
 
-# game/events/kira.rpy:1314
-translate english kira_lisa_shower_ladder_d04c742d:
+# game/events/kira.rpy:1336
+translate english kira_lisa_shower_ladder_fbd5fc9b:
 
-    # Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А в душе, наверное, тётя Кира..."
-    Max_00 ""
+    # Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Лиза принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
+    Max_06 ""
 
-# game/events/kira.rpy:1316
-translate english kira_lisa_shower_ladder_c2b79032:
+# game/events/kira.rpy:1354
+translate english kira_lisa_shower_ladder_df5b66fd:
 
-    # Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А в душе, наверное, тётя Кира..."
-    Max_00 ""
+    # Max_03 "Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и тётя Кира принимает душ!"
+    Max_03 ""
 
-# game/events/kira.rpy:1323
-translate english kira_lisa_shower_ladder_61cf6972:
+# game/events/kira.rpy:1356
+translate english kira_lisa_shower_ladder_ba9256f1:
 
-    # Max_00 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
-    Max_00 ""
+    # Max_07 "Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и тётя Кира принимает душ!"
+    Max_07 ""
 
-# game/events/kira.rpy:1325
-translate english kira_lisa_shower_ladder_da198cbe:
+# game/events/kira.rpy:1358
+translate english kira_lisa_shower_ladder_14a55f78:
 
-    # Max_00 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
-    Max_00 ""
+    # Max_06 "Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и тётя Кира принимает душ!"
+    Max_06 ""
 
-# game/events/kira.rpy:1327
+# game/events/kira.rpy:1365
+translate english kira_lisa_shower_ladder_79519da7:
+
+    # Max_05 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках... Это просто заглядение!"
+    Max_05 ""
+
+# game/events/kira.rpy:1367
+translate english kira_lisa_shower_ladder_30333acb:
+
+    # Max_06 "Ухх, невероятно горячие и голенькие тётя с моей младшей сестрёнкой! Любовался бы бесконечно, как они красуются перед зеркалом..."
+    Max_06 ""
+
+# game/events/kira.rpy:1369
 translate english kira_lisa_shower_ladder_87af87e8:
 
     # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
     Max_00 ""
 
-# game/events/kira.rpy:1365
+# game/events/kira.rpy:1407
 translate english kira_lisa_shower_alt_peepeng_ddbc59ae:
 
     # Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
     Max_04 ""
 
-# game/events/kira.rpy:1395
+# game/events/kira.rpy:1437
 translate english kira_alice_shower_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
     Max_04 ""
 
-# game/events/kira.rpy:1429
-translate english kira_alice_shower_ladder_d59f5fae:
+# game/events/kira.rpy:1471
+translate english kira_alice_shower_ladder_d9e41a49:
 
-    # Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
-    Max_00 ""
+    # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Алиса принимает душ!"
+    Max_07 ""
 
-# game/events/kira.rpy:1431
-translate english kira_alice_shower_ladder_72559c62:
+# game/events/kira.rpy:1473
+translate english kira_alice_shower_ladder_716d82cb:
 
-    # Max_00 "Здорово, тётя Кира в одних трусиках любуется собой! А Алиса, видимо, уже в душе..."
-    Max_00 ""
+    # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Алиса принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
+    Max_03 ""
 
-# game/events/kira.rpy:1433
-translate english kira_alice_shower_ladder_ccbae948:
+# game/events/kira.rpy:1475
+translate english kira_alice_shower_ladder_78119736:
 
-    # Max_00 "Здорово, тётя Кира любуется собой в костюме Евы! А Алиса, видимо, уже в душе..."
-    Max_00 ""
+    # Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Алиса принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
+    Max_06 ""
 
-# game/events/kira.rpy:1449
-translate english kira_alice_shower_ladder_bfb3771e:
+# game/events/kira.rpy:1491
+translate english kira_alice_shower_ladder_0159a8ee:
 
-    # Max_00 "Старшая сестрёнка в распахнутом халате красуется перед заркалом! А тётя Кира, наверное, сейчас в душе..."
-    Max_00 ""
+    # Max_02 "Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и тётя Кира принимает душ!"
+    Max_02 ""
 
-# game/events/kira.rpy:1451
-translate english kira_alice_shower_ladder_bd88030a:
+# game/events/kira.rpy:1493
+translate english kira_alice_shower_ladder_1d3dd6d3:
 
-    # Max_00 "Алиса в одних трусиках красуется перед зеркалом, класс! А тётя Кира, видимо, уже в душе..."
-    Max_00 ""
+    # Max_04 "Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и тётя Кира принимает душ!"
+    Max_04 ""
 
-# game/events/kira.rpy:1453
-translate english kira_alice_shower_ladder_f10aef39:
+# game/events/kira.rpy:1495
+translate english kira_alice_shower_ladder_36f201a2:
 
-    # Max_00 "Алиса красуется перед зеркалом в костюме Евы, класс! А тётя Кира, видимо, уже в душе..."
-    Max_00 ""
+    # Max_06 "Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и тётя Кира принимает душ!"
+    Max_06 ""
 
-# game/events/kira.rpy:1461
-translate english kira_alice_shower_ladder_6f4f0d94:
+# game/events/kira.rpy:1503
+translate english kira_alice_shower_ladder_e400863b:
 
-    # Max_00 "Две непослушные девочки вместе! Красуются перед зеркалом в одних трусиках! Это просто заглядение!!!"
-    Max_00 ""
+    # Max_05 "Класс, две самые непослушные девчонки этого дома вместе! Так изящно позируют перед зеркалом... Глаза аж разбегаются!"
+    Max_05 ""
 
-# game/events/kira.rpy:1463
-translate english kira_alice_shower_ladder_36046a26:
+# game/events/kira.rpy:1505
+translate english kira_alice_shower_ladder_40f09602:
 
-    # Max_00 "Две непослушные девочки вместе! Красуются перед зеркалом! Могу целую вечность любоваться ими!!!"
-    Max_00 ""
+    # Max_06 "О да, сегодня тётя Кира и Алиса зажигают своими голыми попками перед зеркалом! Это можно прировнять к новому чуду света..."
+    Max_06 ""
 
-# game/events/kira.rpy:1465
+# game/events/kira.rpy:1507
 translate english kira_alice_shower_ladder_87af87e8:
 
     # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
     Max_00 ""
 
-# game/events/kira.rpy:1503
+# game/events/kira.rpy:1545
 translate english kira_alice_shower_alt_peepeng_72bf06b5:
 
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
     Max_03 ""
-
-# TODO: Translation updated at 2020-08-20 11:13
-
-# game/events/kira.rpy:1333
-translate english kira_lisa_shower_ladder_d59f5fae:
-
-    # Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
-    Max_00 ""
-
-# game/events/kira.rpy:1355
-translate english kira_lisa_shower_ladder_2817470d:
-
-    # Max_00 "Лиза здорово смотрится в подаренном мной халате! Особенно, когда видно её упругие сисечки! А Кира, видимо, уже в душе..."
-    Max_00 ""
-
-# game/events/kira.rpy:1357
-translate english kira_lisa_shower_ladder_125b7771:
-
-    # Max_00 "Лиза в одних трусиках красуется перед зеркалом, класс! А Кира, видимо, уже в душе..."
-    Max_00 ""
-
-# game/events/kira.rpy:1359
-translate english kira_lisa_shower_ladder_e40a1a81:
-
-    # Max_00 "Лиза красуется перед зеркалом в костюме Евы, класс! А Кира, видимо, уже в душе..."
-    Max_00 ""
 
