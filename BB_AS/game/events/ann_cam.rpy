@@ -19,7 +19,7 @@ label cam0_ann_shower:
                 Max_09 "Мамы не видно через эту камеру..."
     else:
         $ ann.dress_inf = '00a'
-        $ renpy.show('Ann cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
+        $ renpy.show('Ann cams shower 0'+str(cam_poses_manager(ann, [x for x in range(1, 10)])), at_list=[laptop_screen])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'ann_shower' not in cam_flag:
@@ -36,7 +36,7 @@ label cam1_ann_shower:
             $ __r1 = renpy.random.choice(['a', 'b', 'c', 'd'])
             $ ann.dress_inf = {'a':'04c', 'b':'04d', 'c':'02b', 'd':'00'}[__r1]
 
-        $ renpy.show('Ann cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        $ renpy.show('Ann cams bath-mirror '+cam_poses_manager(ann, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         if 'ann_bath_mirror' not in cam_flag:
             $ cam_flag.append('ann_bath_mirror')

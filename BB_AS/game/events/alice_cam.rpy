@@ -66,7 +66,7 @@ label cam0_alice_shower:
 
     else:
         $ alice.dress_inf = '00aa'
-        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
+        $ renpy.show('Alice cams shower 0'+str(cam_poses_manager(alice, [x for x in range(1, 10)])), at_list=[laptop_screen])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'alice_shower' not in cam_flag:
@@ -86,7 +86,7 @@ label cam1_alice_shower:
                 $ __r1 = renpy.random.choice(['a', 'c'])
             $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
 
-        $ renpy.show('Alice cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        $ renpy.show('Alice cams bath-mirror '+cam_poses_manager(alice, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         if 'alice_bath_mirror' not in cam_flag:
             $ cam_flag.append('alice_bath_mirror')
@@ -130,7 +130,7 @@ label cam0_alice_lisa_shower:
     if __var == 'alice':
         # в душе Алиса, Лиза перед умывальниками
         $ alice.dress_inf != '00aa'
-        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen,])
+        $ renpy.show('Alice cams shower 0'+str(cam_poses_manager(alice, [x for x in range(1, 10)])), at_list=[laptop_screen,])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
 
@@ -146,7 +146,7 @@ label cam0_alice_lisa_shower:
     elif __var == 'lisa':
         # в душе Лиза, перед умывальниками Алиса
         $ lisa.dress_inf != '00a'
-        $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen,])
+        $ renpy.show('Lisa cams shower 0'+str(cam_poses_manager(lisa, [x for x in range(1, 10)])), at_list=[laptop_screen,])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
 
@@ -163,8 +163,8 @@ label cam0_alice_lisa_shower:
         # обе девчонки в душе, у зеркал никого
         $ lisa.dress_inf != '00a'
         $ alice.dress_inf != '00aa'
-        $ renpy.show('Alice cams shower 0'+str(renpy.random.randint(1, 8)), at_list=[cam_shower_right])
-        $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 8)), at_list=[cam_shower_left])
+        $ renpy.show('Alice cams shower 0'+str(cam_poses_manager(alice, [x for x in range(1, 9)])), at_list=[cam_shower_right])
+        $ renpy.show('Lisa cams shower 0'+str(cam_poses_manager(lisa, [x for x in range(1, 8)])), at_list=[cam_shower_left])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'lisa_shower' not in cam_flag:
@@ -202,7 +202,7 @@ label cam1_alice_lisa_shower:
         else:
             $ __r1 = 'd'
         $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
-        $ renpy.show('Lisa cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        $ renpy.show('Lisa cams bath-mirror '+cam_poses_manager(alice, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         if 'lisa_mirror' not in cam_flag:
             $ cam_flag.append('lisa_mirror')
@@ -218,7 +218,7 @@ label cam1_alice_lisa_shower:
         else:
             $ __r1 = 'd'
         $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
-        $ renpy.show('Alice cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        $ renpy.show('Alice cams bath-mirror '+cam_poses_manager(alice, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         if 'alice_mirror' not in cam_flag:
             $ cam_flag.append('alice_mirror')

@@ -1209,7 +1209,7 @@ init python:
             # персонаж спит, откат в хх:00 и в хх:30
             last_time = h + ':' + ('30' if '00' < m <= '30' else '00')  # округлим последнее время до получаса в большую сторону
             cooldown = TimeDifference(last_time, tm) >= 30
-        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim']:
+        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim', 'shower']:
             # откат в хх:00, хх:20 и хх:40
             if '00' <= m < '20':
                 last_time = h + ':00'
@@ -1222,15 +1222,15 @@ init python:
             # смена позы один раз в хх:30, поэтому предыдущее время округляем в меньшую сторону
             last_time = h + ':' + ('00' if '00' <= m < '30' else '30')  # округлим последнее время до получаса в большую сторону
             cooldown = TimeDifference(last_time, tm) >= 30
-        elif char.name == 'alice':
+        elif char.pref == 'Alice':
             pass
-        elif char.name == 'ann':
+        elif char.pref == 'Ann':
             pass
-        elif char.name == 'eric':
+        elif char.pref == 'Eric':
             pass
-        elif char.name == 'kira':
+        elif char.pref == 'Kira':
             pass
-        elif char.name == 'lisa':
+        elif char.pref == 'Lisa':
             pass
 
         return cooldown
