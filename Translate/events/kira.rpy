@@ -2203,31 +2203,31 @@ translate english kira_shower_ladder_2b325faf:
 translate english kira_shower_ladder_547cf525:
 
     # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком..."
-    Max_07 ""
+    Max_07 "It's strange to see that she's wearing a towel. She probably hasn't fully woken up yet..."
 
 # game/events/kira.rpy:1215
 translate english kira_shower_ladder_ee7e4217:
 
     # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
-    Max_03 ""
+    Max_03 "Aunt Kira's admiring herself in her panties! Her tits are so round and full, and I love her perky nipples..."
 
 # game/events/kira.rpy:1217
 translate english kira_shower_ladder_90b187c3:
 
     # Max_06 "Голая тётя Кира - это шикарно! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
-    Max_06 ""
+    Max_06 "Naked Aunt Kira is stunning! How has no one ever offered her a movie role? She should take advantage of those killer curves..."
 
 # game/events/kira.rpy:1266
 translate english kira_shower_alt_peepeng_f934835c:
 
     # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
-    Max_03 ""
+    Max_03 "Uhh... Watching my Aunt is a sight to behold! Her curves and grace of movement are so alluring..."
 
 # game/events/kira.rpy:1268
 translate english kira_shower_alt_peepeng_eab86a2d:
 
     # Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
-    Max_05 ""
+    Max_05 "That's it, Aunt Kira... Play with your pussy for me! She's really focused... It would be awkward if she saw me! Although, something tells me she won't..."
 
 # game/events/kira.rpy:1297
 translate english kira_lisa_shower_ladder_2b325faf:
@@ -2239,125 +2239,125 @@ translate english kira_lisa_shower_ladder_2b325faf:
 translate english kira_lisa_shower_ladder_aa3e76cc:
 
     # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Лиза принимает душ!"
-    Max_07 ""
+    Max_07 "It's strange to see that she's wearing a towel. She probably hasn't fully woken up yet. And Lisa is in the shower!"
 
 # game/events/kira.rpy:1334
 translate english kira_lisa_shower_ladder_22c3d9c6:
 
     # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Лиза принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
-    Max_03 ""
+    Max_03 "Aunt Kira's admiring herself in her panties, and Lisa is in the shower. Her tits are so round and full, and I love her perky nipples..."
 
 # game/events/kira.rpy:1336
 translate english kira_lisa_shower_ladder_fbd5fc9b:
 
     # Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Лиза принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
-    Max_06 ""
+    Max_06 "Naked Aunt Kira is stunning! And it looks like Lisa is in the shower. How has no one ever offered her a movie role? She should take advantage of those killer curves..."
 
 # game/events/kira.rpy:1354
 translate english kira_lisa_shower_ladder_df5b66fd:
 
     # Max_03 "Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и тётя Кира принимает душ!"
-    Max_03 ""
+    Max_03 "Lisa looks very inviting in that robe... Especially when you can see her tits so clearly! Aunt Kira seems to be in the shower."
 
 # game/events/kira.rpy:1356
 translate english kira_lisa_shower_ladder_ba9256f1:
 
     # Max_07 "Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и тётя Кира принимает душ!"
-    Max_07 ""
+    Max_07 "My adorable sister is in her panties... I just want to come in and pull them off her beautiful ass! And Aunt Kira is in the shower!"
 
 # game/events/kira.rpy:1358
 translate english kira_lisa_shower_ladder_14a55f78:
 
     # Max_06 "Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и тётя Кира принимает душ!"
-    Max_06 ""
+    Max_06 "It's a great morning when I can see Lisa completely naked. And Aunt Kira is in the shower."
 
 # game/events/kira.rpy:1365
 translate english kira_lisa_shower_ladder_79519da7:
 
     # Max_05 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках... Это просто заглядение!"
-    Max_05 ""
+    Max_05 "Great, today Lisa and Aunt Kira are together! They're both in the mirror wearing underwear... This is just a sight to behold!"
 
 # game/events/kira.rpy:1367
 translate english kira_lisa_shower_ladder_30333acb:
 
     # Max_06 "Ухх, невероятно горячие и голенькие тётя с моей младшей сестрёнкой! Любовался бы бесконечно, как они красуются перед зеркалом..."
-    Max_06 ""
+    Max_06 "Nothing like seeing my sexy Aunt naked with my little sister! I'd love to get between them..."
 
 # game/events/kira.rpy:1369
 translate english kira_lisa_shower_ladder_87af87e8:
 
     # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
-    Max_00 ""
+    Max_00 "Alright, that'll do, before I get noticed."
 
 # game/events/kira.rpy:1407
 translate english kira_lisa_shower_alt_peepeng_ddbc59ae:
 
     # Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
-    Max_04 ""
+    Max_04 "These two pussies are so wet... I can't take my eyes off! How can I not be a pervert in this house?"
 
 # game/events/kira.rpy:1437
 translate english kira_alice_shower_ladder_2b325faf:
 
     # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 ""
+    Max_04 "Let's see what we have here..."
 
 # game/events/kira.rpy:1471
 translate english kira_alice_shower_ladder_d9e41a49:
 
     # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Алиса принимает душ!"
-    Max_07 ""
+    Max_07 "It's strange that aunt Kira is wearing a towel... She probably hasn't woken up yet, and Alice is also taking a shower!"
 
 # game/events/kira.rpy:1473
 translate english kira_alice_shower_ladder_716d82cb:
 
     # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Алиса принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
-    Max_03 ""
+    Max_03 "Great, Aunt Kira is admiring herself in just her panties, and Alice is also taking a shower!"
 
 # game/events/kira.rpy:1475
 translate english kira_alice_shower_ladder_78119736:
 
     # Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Алиса принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
-    Max_06 ""
+    Max_06 "Naked Aunt Kira is stunning! And it looks like Alice is in the shower. How has no one ever offered her a movie role? She should take advantage of those killer curves..."
 
 # game/events/kira.rpy:1491
 translate english kira_alice_shower_ladder_0159a8ee:
 
     # Max_02 "Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и тётя Кира принимает душ!"
-    Max_02 ""
+    Max_02 "Alice may be in her gown, but her tits are visible just fine, and Aunt Kira is taking a shower!"
 
 # game/events/kira.rpy:1493
 translate english kira_alice_shower_ladder_1d3dd6d3:
 
     # Max_04 "Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и тётя Кира принимает душ!"
-    Max_04 ""
+    Max_04 "Alice isn't wearing a robe today... there's no way I can help but get excited looking at her. And Aunt Kira is taking a shower."
 
 # game/events/kira.rpy:1495
 translate english kira_alice_shower_ladder_36f201a2:
 
     # Max_06 "Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и тётя Кира принимает душ!"
-    Max_06 ""
+    Max_06 "Alice is completely naked today! And she doesn't even know that this gives me the opportunity to admire her. Even Aunt Kira is taking a shower."
 
 # game/events/kira.rpy:1503
 translate english kira_alice_shower_ladder_e400863b:
 
     # Max_05 "Класс, две самые непослушные девчонки этого дома вместе! Так изящно позируют перед зеркалом... Глаза аж разбегаются!"
-    Max_05 ""
+    Max_05 "Yes! The two naughtiest girls in this house at the same time! I can't take my eyes off them!"
 
 # game/events/kira.rpy:1505
 translate english kira_alice_shower_ladder_40f09602:
 
     # Max_06 "О да, сегодня тётя Кира и Алиса зажигают своими голыми попками перед зеркалом! Это можно прировнять к новому чуду света..."
-    Max_06 ""
+    Max_06 "Aunt Kira and Alice are finally both naked together! This is a moment I'll have etched into my memory..."
 
 # game/events/kira.rpy:1507
 translate english kira_alice_shower_ladder_87af87e8:
 
     # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
-    Max_00 ""
+    Max_00 "Alright, that'll do, before I get noticed..."
 
 # game/events/kira.rpy:1545
 translate english kira_alice_shower_alt_peepeng_72bf06b5:
 
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
-    Max_03 ""
+    Max_03 "I'd love to be in between those wet asses... I'd clean them properly!"
 
