@@ -120,10 +120,10 @@ translate english cam0_lisa_swim_06c19036:
     # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
     Max_09 "I can't see anything. I should install a camera that covers the entire pool."
 
-# game/events/lisa_cam.rpy:212
-translate english cam1_lisa_swim_95d3c956:
+# game/events/lisa_cam.rpy:214
+translate english cam1_lisa_swim_0cc13309:
 
-    # Max_01 "Приядно наблюдать за младшей сестрёнкой у водички..."
+    # Max_01 "Приятно наблюдать за младшей сестрёнкой у водички..."
     Max_01 "Lisa seems to enjoy using the pool..."
 
 # game/events/lisa_cam.rpy:221
