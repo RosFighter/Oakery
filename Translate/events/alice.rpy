@@ -1785,13 +1785,13 @@ translate english alice_lisa_shower_start_peeping_72bf06b5:
 translate english alice_sleep_night_fa0741e5:
 
     # Max_09 "Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!"
-    Max_09 ""
+    Max_09 "Alice is drawing water... it might be a good time to teach her a lesson with what she fears most?"
 
 # game/events/alice.rpy:193
 translate english alice_sleep_morning_e5316a8a:
 
     # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!"
-    Max_09 ""
+    Max_09 "I ought to take her out of her comfort zone... maybe I could use what she fears most?"
 
 # game/events/alice.rpy:1209
 translate english alice_lisa_shower_ladder_2b325faf:
@@ -1803,59 +1803,59 @@ translate english alice_lisa_shower_ladder_2b325faf:
 translate english alice_lisa_shower_ladder_4a7d5821:
 
     # Max_03 "Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и Алиса принимает душ!"
-    Max_03 ""
+    Max_03 "Lisa looks great in that robe I gave her...Especially with her tits out. I think Alice is also taking a shower!"
 
 # game/events/alice.rpy:1245
 translate english alice_lisa_shower_ladder_60e5c32f:
 
     # Max_07 "Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и Алиса принимает душ!"
-    Max_07 ""
+    Max_07 "My adorable little sister is only wearing her panties... I'd love to be able to go in and take them off her cute ass. I think Alice is also taking a shower!"
 
 # game/events/alice.rpy:1247
 translate english alice_lisa_shower_ladder_991a3c5d:
 
     # Max_06 "Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и Алиса принимает душ!"
-    Max_06 ""
+    Max_06 "Seeing Lisa naked is a great start to the morning, and I think Alice is also taking a shower!"
 
 # game/events/alice.rpy:1263
 translate english alice_lisa_shower_ladder_982be2bb:
 
     # Max_02 "Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и Лиза принимает душ!"
-    Max_02 ""
+    Max_02 "Alice might be wearing her gown, but I can see her tits perfectly fine. I think Lisa is also taking a shower!"
 
 # game/events/alice.rpy:1265
 translate english alice_lisa_shower_ladder_531a740a:
 
     # Max_04 "Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и Лиза принимает душ!"
-    Max_04 ""
+    Max_04 "Alice isn't wearing her robe today, which makes for an even better show. I think Lisa is also taking a shower!"
 
 # game/events/alice.rpy:1267
 translate english alice_lisa_shower_ladder_2e2714c1:
 
     # Max_06 "Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и Лиза принимает душ!"
-    Max_06 ""
+    Max_06 "Alice is completely naked today! And she doesn't even know that this gives me the opportunity to admire all her charms, and behind the scenes, Lisa is also taking a shower!"
 
 # game/events/alice.rpy:1275
 translate english alice_lisa_shower_ladder_f7f3ee79:
 
     # Max_05 "Две мои сестрёнки красуются перед зеркалом в одних лишь трусиках! Такую прелесть редко можно увидеть..."
-    Max_05 ""
+    Max_05 "My sisters are showing off in front of the mirror in just their panties! I'd love to be between them..."
 
 # game/events/alice.rpy:1279
 translate english alice_lisa_shower_ladder_2e1d81d5:
 
     # Max_06 "Да они же обе голенькие красуются перед зеркалом! Ох, сестрёнки, я бы вами целую вечность любовался..."
-    Max_06 ""
+    Max_06 "They're both naked in front of the mirror! It's torture having these two as sisters, sometimes..."
 
 # game/events/alice.rpy:1281
 translate english alice_lisa_shower_ladder_87af87e8:
 
     # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
-    Max_00 "Okay, time to go, or someone will notice me here..."
+    Max_00 "Okay, time to go, before someone notices I'm here..."
 
 # game/events/alice.rpy:1319
 translate english alice_lisa_shower_alt_peepeng_72bf06b5:
 
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
-    Max_03 ""
+    Max_03 "Yeah... I wish I could be between those two wet asses... I'd clean them properly!"
 
