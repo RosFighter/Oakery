@@ -4,49 +4,49 @@
 translate english cam0_eric_ann_sleep_90f750f5:
 
     # Max_01 "Красавица и чудовище на одной кровати..."
-    Max_01 ""
+    Max_01 "Beuty and the beast in the same bed..."
 
 # game/events/eric_cam.rpy:17
 translate english cam0_eric_ann_shower_946cb006:
 
     # Max_00 "Мамы и Эрика не видно, они скорее всего у зеркал... Надо взглянуть через другую камеру."
-    Max_00 ""
+    Max_00 "I don't see Mom or Eric. I need to look through another camera."
 
 # game/events/eric_cam.rpy:19
 translate english cam0_eric_ann_shower_47ab2d76:
 
     # Max_00 "Мамы и Эрика не видно, они скорее всего у зеркал... Но обзора этой камеры не хватает..."
-    Max_00 ""
+    Max_00 "I can't see Mom or Eric with this camera, there's not enough coverage..."
 
 # game/events/eric_cam.rpy:39
 translate english cam0_eric_ann_shower_a12fda17:
 
     # Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ!"
-    Max_07 ""
+    Max_07 "Wow... there's more happening here than just a shower!"
 
 # game/events/eric_cam.rpy:44
 translate english cam0_eric_ann_shower_a78b2811:
 
     # Max_00 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может!"
-    Max_00 ""
+    Max_00 "Looks like Eric has settled in well... Mom's s having so much fun sucking him off she can't get away!"
 
 # game/events/eric_cam.rpy:47
 translate english cam0_eric_ann_shower_22662e7c:
 
     # Max_04 "Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки!"
-    Max_04 ""
+    Max_04 "Eric's lucky... Mom's got such affectionate hands!"
 
 # game/events/eric_cam.rpy:50
 translate english cam0_eric_ann_shower_ff432e4e:
 
     # Max_06 "Охренеть! Вот это страсть! Они так увлечены друг другом... И похоже, маме это очень нравится!"
-    Max_06 ""
+    Max_06 "Shit! They're so into it! Mom looks like she's enjoying it a lot."
 
 # game/events/eric_cam.rpy:53
 translate english cam0_eric_ann_shower_447bb5aa:
 
     # Max_05 "Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!"
-    Max_05 ""
+    Max_05 "Eric's pounding her from behind with so much force! She's enjoying it... and leaning back into his dick with every thrust!"
 
 # game/events/eric_cam.rpy:58
 translate english cam0_eric_ann_shower_90b0887e:
