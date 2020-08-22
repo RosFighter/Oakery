@@ -160,6 +160,8 @@ screen PowerBack():
                 action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at power_zoom
     key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
+    key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+    key 'K_F8' action QuickLoad()
 
 screen PowerBack2():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
@@ -185,6 +187,8 @@ screen PowerBack2():
                 action [Hide('Withdraw'), Hide('SEO'), Jump('Waiting')] at power_zoom
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
+    key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+    key 'K_F8' action QuickLoad()
 
 screen PowerBack3():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
@@ -210,6 +214,8 @@ screen PowerBack3():
                 action [Hide('Withdraw'), Hide('Bank'), Jump('Waiting')] at power_zoom
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
+    key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+    key 'K_F8' action QuickLoad()
 
 screen PowerButton():
     imagebutton:
@@ -217,6 +223,8 @@ screen PowerButton():
         action [Hide('Search'), Jump('Waiting')] at power_zoom
     key 'K_ESCAPE' action [Hide('Search'), Jump('Waiting')]
     key 'mouseup_3' action [Hide('Search'), Jump('Waiting')]
+    key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+    key 'K_F8' action QuickLoad()
 
 ################################################################################
 screen LaptopScreen():
@@ -1615,8 +1623,12 @@ screen cam_show():
             imagebutton:
                 auto 'interface laptop wait %s'
                 action [SetVariable('spent_time', 10), Jump('Waiting')] at power_zoom
+    key 'K_SPACE' action [SetVariable('spent_time', 10), Jump('Waiting')]
+
     key 'K_ESCAPE' action [SetVariable('at_comp', False), Jump('open_site')]
     key 'mouseup_3' action [SetVariable('at_comp', False), Jump('open_site')]
+    key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+    key 'K_F8' action QuickLoad()
 
 ################################################################################
 

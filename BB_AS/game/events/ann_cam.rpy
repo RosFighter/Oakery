@@ -1,6 +1,7 @@
 
 label cam0_ann_sleep:
-    $ renpy.show('Ann cams sleep night '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    $ renpy.show('Ann cams sleep night '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    # $ renpy.show('Ann cams sleep night '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_sleep' not in cam_flag:
         $ cam_flag.append('ann_sleep')
@@ -199,9 +200,9 @@ label cam0_ann_dressed_shop:
 
 label cam0_ann_resting:
     if tm < '19:00':
-        $ renpy.show('Ann cams relax-morning '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+        $ renpy.show('Ann cams relax-morning '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     else:
-        $ renpy.show('Ann cams relax-evening '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+        $ renpy.show('Ann cams relax-evening '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_resting' not in cam_flag:
         $ cam_flag.append('ann_resting')
@@ -209,7 +210,7 @@ label cam0_ann_resting:
     return
 
 label cam0_ann_read:
-    $ renpy.show('Ann cams reading '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    $ renpy.show('Ann cams reading '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_read' not in cam_flag:
         $ cam_flag.append('ann_read')
@@ -217,7 +218,7 @@ label cam0_ann_read:
     return
 
 label cam0_ann_sun:
-    $ renpy.show('Ann cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+    $ renpy.show('Ann cams sun '+cam_poses_manager(ann, ['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_sun' not in cam_flag:
         $ cam_flag.append('ann_sun')
@@ -242,7 +243,7 @@ label cam0_ann_swim:
     return
 
 label cam1_ann_swim:
-    $ renpy.show('Ann cams swim '+renpy.random.choice(['01', '02', '03', '04']), at_list=[laptop_screen])
+    $ renpy.show('Ann cams swim '+cam_poses_manager(ann, ['01', '02', '03', '04']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
         $ cam_flag.append('ann_swim1')
@@ -250,8 +251,8 @@ label cam1_ann_swim:
     return
 
 label cam0_ann_alice_sun:
-    $ renpy.show('Alice cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
-    $ renpy.show('Ann cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+    $ renpy.show('Alice cams sun '+cam_poses_manager(alice, ['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+    $ renpy.show('Ann cams sun '+cam_poses_manager(ann, ['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_sun' not in cam_flag:
         $ cam_flag.append('ann_sun')
@@ -283,7 +284,7 @@ label cam1_ann_alice_swim:
     # alice-02 & ann-02
     # alice-02 & ann-04
     # alice-03 & ann-03
-    $ __alice_pose = renpy.random.choice(['01', '02', '03', '04'])
+    $ __alice_pose = cam_poses_manager(alise, ['01', '02', '03', '04'])
     $ __ann_pose_list = {
             '01' : ['01', '03'],
             '02' : ['01', '03'],
@@ -291,7 +292,7 @@ label cam1_ann_alice_swim:
             '04' : ['01', '02', '03', '04'],
         }[__alice_pose]
     $ renpy.show('Alice cams swim '+__alice_pose, at_list=[laptop_screen])
-    $ renpy.show('Ann cams swim '+renpy.random.choice(__ann_pose_list), at_list=[laptop_screen])
+    $ renpy.show('Ann cams swim '+cam_poses_manager(ann, __ann_pose_list), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_swim' not in cam_flag:
         $ cam_flag.append('ann_swim')
@@ -315,7 +316,7 @@ label cam0_ann_bath:
             $ cam_flag.append('ann_bath0_st1')
             Max_04 "Не вытирайся, мам, ходи мокренькая..."
     else:
-        $ renpy.show('Ann cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
+        $ renpy.show('Ann cams bath '+cam_poses_manager(ann, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'ann_bath0_st0' not in cam_flag:
             $ cam_flag.append('ann_bath0_st0')
@@ -330,7 +331,7 @@ label cam1_ann_bath:
     return
 
 label cam0_ann_tv:
-    $ renpy.show('Ann cams tv '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Ann cams tv '+cam_poses_manager(ann, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if 'ann_tv' not in cam_flag:

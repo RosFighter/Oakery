@@ -3,7 +3,8 @@ label cam0_alice_sleep_night:
     if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
         $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) else 'sleep_no_fun')
 
-    $ renpy.show('Alice cams sleep night '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    # $ renpy.show('Alice cams sleep night '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' not in cam_flag]):
@@ -40,7 +41,8 @@ label cam0_alice_sleep_night:
     return
 
 label cam0_alice_sleep_morning:
-    $ renpy.show('Alice cams sleep morning '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    # $ renpy.show('Alice cams sleep morning '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')
@@ -433,7 +435,7 @@ label cam0_alice_dishes:
     return
 
 label cam0_alice_read:
-    $ renpy.show('Alice cams reading '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Alice cams reading '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if 'alice_read' not in cam_flag:
@@ -463,7 +465,7 @@ label cam0_alice_sun:
     elif talk_var['sun_oiled'] > 0:
         show Alice cams sun-alone 00 at laptop_screen
     else:
-        $ renpy.show('Alice cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams sun '+cam_poses_manager(alice, ['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_sun0' not in cam_flag:
         $ cam_flag.append('alice_sun0')
@@ -501,7 +503,7 @@ label cam0_alice_swim:
     return
 
 label cam1_alice_swim:
-    $ renpy.show('Alice cams swim '+renpy.random.choice(['01', '02', '03', '04']), at_list=[laptop_screen])
+    $ renpy.show('Alice cams swim '+cam_poses_manager(alice, ['01', '02', '03', '04']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_swim1' not in cam_flag:
         $ cam_flag.append('alice_swim1')
@@ -560,7 +562,7 @@ label cam0_alice_rest_evening:
     return
 
 label cam0_alice_tv:
-    $ renpy.show('Alice cams tv '+renpy.random.choice(['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Alice cams tv '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if 'alice_tv' not in cam_flag:
@@ -584,7 +586,7 @@ label cam0_alice_bath:
             $ cam_flag.append('alice_bath0_st1')
             Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
     else:
-        $ renpy.show('Alice cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
+        $ renpy.show('Alice cams bath '+cam_poses_manager(alice, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'alice_bath0_st0' not in cam_flag:
             $ cam_flag.append('alice_bath0_st0')

@@ -1192,19 +1192,60 @@ init python:
             persistent.mems_var.append(x)
 
 
-    def random_pose(pose_list, last_pose=''):  # назначает из списка позу, отличную от последней
+    def random_pose(pose_list, last_pose=None):  # назначает из списка позу, отличную от последней
         if pose_list.count(last_pose) > 0:
             pose_list.remove(last_pose)
         return renpy.random.choice(pose_list)
 
-    def poses_manager(char, pose_list, cam_number=0):
-        global cam_poses
-        if char.name+'_'+char.plan_name not in cam_poses:
-            # для данного персонажа и занятия поза еще не назначалась
-            cam_poses[char.name+'_'+char.plan_name] = tuple([random_pose(pose_list), tm, cam_number])
-        else:
-            # позу уже назначалась
-            # проверяем прошел ли откат, и если да, назначаем новую позу
-            # время отката разное для разных занятий
+    def cooldown_cam_pose(char, last_time):
+        if tm == last_time:
+            # если время не изменилось, откат не прошел
+            return False
 
-            cam_poses[char.name+'_'+char.plan_name] = tuple([random_pose(pose_list, cam_poses[char.name+'_'+char.plan_name][0]), tm, cam_number])
+        # проверяем прошел ли откат, время отката разное для разных занятий
+        cooldown = False
+        h, m = last_time.split(':')
+        if char.plan_name in ['sleep', 'sleep2']:
+            # персонаж спит, откат в хх:00 и в хх:30
+            last_time = h + ':' + ('30' if '00' < m <= '30' else '00')  # округлим последнее время до получаса в большую сторону
+            cooldown = TimeDifference(last_time, tm) >= 30
+        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim']:
+            # откат в хх:00, хх:20 и хх:40
+            if '00' <= m < '20':
+                last_time = h + ':00'
+            elif '20' <= m < '40':
+                last_time = h + ':20'
+            else:
+                last_time = h + ':40'
+            cooldown = TimeDifference(last_time, tm) >= 20
+        elif char.plan_name == 'bath':
+            # смена позы один раз в хх:30, поэтому предыдущее время округляем в меньшую сторону
+            last_time = h + ':' + ('00' if '00' <= m < '30' else '30')  # округлим последнее время до получаса в большую сторону
+            cooldown = TimeDifference(last_time, tm) >= 30
+        elif char.name == 'alice':
+            pass
+        elif char.name == 'ann':
+            pass
+        elif char.name == 'eric':
+            pass
+        elif char.name == 'kira':
+            pass
+        elif char.name == 'lisa':
+            pass
+
+        return cooldown
+
+
+    def cam_poses_manager(char, pose_list, cam_number=0, forced=False):
+        global cam_poses
+        name = char.pref+'-'+char.plan_name+'-'+str(cam_number)
+        if name not in cam_poses or forced:
+            # для данного персонажа и занятия поза еще не назначалась
+            # или есть признак принудительной смены позы
+            cam_poses[name] = tuple([random_pose(pose_list), tm])
+        else:
+            # поза уже назначалась
+            if cooldown_cam_pose(char, cam_poses[name][1]):  # если откат прошёл, назначаем новую позу
+                cam_poses[name] = tuple([random_pose(pose_list, cam_poses[name][0]), tm])
+
+        return cam_poses[name][0]

@@ -1,6 +1,7 @@
 
 label cam0_kira_sleep_morning:
-    $ renpy.show('Kira cams sleep '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('Kira cams sleep '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
+    # $ renpy.show('Kira cams sleep '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'kira_sleep' not in cam_flag:
         $ cam_flag.append('kira_sleep')
@@ -298,7 +299,7 @@ label cam1_kira_lisa_shower:
     return
 
 label cam0_kira_sun:
-    $ renpy.show('Kira cams sun '+renpy.random.choice(['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+    $ renpy.show('Kira cams sun '+cam_poses_manager(kira, ['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'kira_swim1' not in cam_flag:
         $ cam_flag.append('kira_swim1')
@@ -324,7 +325,7 @@ label cam0_kira_swim:
 
 label cam1_kira_swim:
     show BG-cam house courtyard-1 day at laptop_screen
-    $ renpy.show('Kira cams swim day '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('Kira cams swim day '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
         $ cam_flag.append('ann_swim1')
@@ -347,7 +348,7 @@ label cam0_kira_bath:
             $ cam_flag.append('kira_bath0_st1')
             Max_04 "Эх, тётя Кира уже вытирается, самое интересное позади. Почти..."
     else:
-        $ renpy.show('Kira cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
+        $ renpy.show('Kira cams bath '+cam_poses_manager(kira, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'kira_bath0_st0' not in cam_flag:
             $ cam_flag.append('kira_bath0_st0')
@@ -398,7 +399,7 @@ label cam0_kira_night_swim:
     return
 
 label cam1_kira_night_swim:
-    $ renpy.show('Kira cams swim night '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('Kira cams swim night '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_swim1' not in cam_flag:
         $ cam_flag.append('ann_swim1')

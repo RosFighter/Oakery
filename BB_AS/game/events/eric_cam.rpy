@@ -1,6 +1,7 @@
 
 label cam0_eric_ann_sleep:
-    $ renpy.show('Eric cams sleep '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
+    # $ renpy.show('Eric cams sleep '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_sleep' not in cam_flag:
         $ cam_flag.append('ann_sleep')
@@ -110,7 +111,7 @@ label cam1_eric_ann_shower:
     return
 
 label cam0_eric_resting:
-    $ renpy.show('Eric cams relax '+renpy.random.choice(['01', '02', '03'])+eric.dress, at_list=[laptop_screen])
+    $ renpy.show('Eric cams relax '+cam_poses_manager(eric, ['01', '02', '03'])+eric.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'eric_resting' not in cam_flag:
         $ cam_flag.append('eric_resting')

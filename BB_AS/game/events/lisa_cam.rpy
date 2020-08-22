@@ -1,6 +1,7 @@
 
 label cam0_lisa_sleep_night:
-    $ renpy.show('Lisa cams sleep night '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams sleep night '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    # $ renpy.show('Lisa cams sleep night '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_sleep' not in cam_flag:
         $ cam_flag.append('lisa_sleep')
@@ -8,7 +9,8 @@ label cam0_lisa_sleep_night:
     return
 
 label cam0_lisa_sleep_morning:
-    $ renpy.show('Lisa cams sleep morning '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams sleep morning '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    # $ renpy.show('Lisa cams sleep morning '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_sleep' not in cam_flag:
         $ cam_flag.append('lisa_sleep')
@@ -64,7 +66,7 @@ label cam1_lisa_shower:
     return
 
 label cam0_lisa_read:
-    $ renpy.show('Lisa cams reading '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams reading '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_read' not in cam_flag:
         $ cam_flag.append('lisa_read')
@@ -182,7 +184,7 @@ label cam0_lisa_dressed_shop:
     return
 
 label cam0_lisa_sun:
-    $ renpy.show('Lisa cams sun '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams sun '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_sun' not in cam_flag:
         $ cam_flag.append('lisa_sun')
@@ -207,7 +209,7 @@ label cam0_lisa_swim:
     return
 
 label cam1_lisa_swim:
-    $ renpy.show('Lisa cams swim '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams swim '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_swim1' not in cam_flag:
         $ cam_flag.append('lisa_swim1')
@@ -226,7 +228,7 @@ label cam0_lisa_dishes:
 label cam0_lisa_phone:
     $ renpy.show('BG-cam house myroom-0 evening', at_list=[laptop_screen,])
     $ renpy.show('Max cams patch evening', at_list=[laptop_screen,])
-    $ renpy.show('Lisa cams phone '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams phone '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_phone' not in cam_flag:
         $ cam_flag.append('lisa_phone')
@@ -249,7 +251,7 @@ label cam0_lisa_bath:
             $ cam_flag.append('lisa_bath0_st1')
             Max_04 "Эх, Лиза... Не вытерайся! Ты мокренькая тоже обалденная..."
     else:
-        $ renpy.show('Lisa cams bath '+renpy.random.choice(['02', '03', '04']), at_list=[laptop_screen,])
+        $ renpy.show('Lisa cams bath '+cam_poses_manager(lisa, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath0_st0' not in cam_flag:
             $ cam_flag.append('lisa_bath0_st0')
@@ -264,7 +266,7 @@ label cam1_lisa_bath:
     return
 
 label cam0_lisa_homework:
-    $ renpy.show('Lisa cams lessons '+renpy.random.choice(['01', '02'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams lessons '+cam_poses_manager(lisa, ['01', '02'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-noact at laptop_screen
     if 'lisa_lessons' not in cam_flag:
         $ cam_flag.append('lisa_lessons')
