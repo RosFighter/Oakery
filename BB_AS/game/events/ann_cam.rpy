@@ -9,7 +9,7 @@ label cam0_ann_sleep:
 
 label cam0_ann_shower:
     if tm[-2:] < '20' and ann.dress_inf != '00a':
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'ann_not_shower' not in cam_flag:
             $ cam_flag.append('ann_not_shower')
             if len(house[3].cams)>1:
@@ -48,7 +48,7 @@ label cam1_ann_shower:
             Max_03 "Мама, перед тем, как принять душ, красуется перед зеркалом. Глядя на эту красоту, можно мечтать лишь об одном!"
 
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'ann_shower1' not in cam_flag:
             $ cam_flag.append('ann_shower1')
             Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
@@ -68,7 +68,7 @@ label cam0_ann_yoga:
     return
 
 label cam1_ann_yoga:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'ann_yoga1' not in cam_flag:
         $ cam_flag.append('ann_yoga1')
         Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
@@ -144,6 +144,7 @@ label cam0_ann_dressed_work:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     $ __ran1 = renpy.random.choice(['09', '09a'])
     call ann_cam_dress_inf(__ran1)
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
@@ -188,6 +189,7 @@ label cam0_ann_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     $ __ran1 = '10'
     call ann_cam_dress_inf(__ran1)
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
@@ -223,14 +225,14 @@ label cam0_ann_sun:
     return
 
 label cam1_ann_sun:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'ann_sun1' not in cam_flag:
         $ cam_flag.append('ann_sun1')
         Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
     return
 
 label cam0_ann_swim:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'ann_swim0' not in cam_flag:
         $ cam_flag.append('ann_swim0')
         if len(house[6].cams)>1:
@@ -258,14 +260,14 @@ label cam0_ann_alice_sun:
     return
 
 label cam1_ann_alice_sun:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'ann_sun1' not in cam_flag:
         $ cam_flag.append('ann_sun1')
         Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
     return
 
 label cam0_ann_alice_swim:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'ann_swim0' not in cam_flag:
         $ cam_flag.append('ann_swim0')
         if len(house[6].cams)>1:
@@ -321,7 +323,7 @@ label cam0_ann_bath:
     return
 
 label cam1_ann_bath:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'ann_bath1' not in cam_flag:
         $ cam_flag.append('ann_bath1')
         Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"

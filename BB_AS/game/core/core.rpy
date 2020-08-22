@@ -231,7 +231,8 @@ label NewDay:
     $ flags['alice.drink'] = 0   # Алиса протрезвела
 
     $ cam_flag = []  # обнулим подсматривания через камеры
-
+    $ ann_eric_scene = ''
+    $ cam_poses.clear()  # обнулим список поз для камер
     return
 
 
@@ -455,7 +456,7 @@ label cam_after_waiting:
         else:
             call cam_background
 
-        show FG cam-shum-act at laptop_screen
+        # show FG cam-shum-act at laptop_screen
 
         call screen cam_show
     elif current_room == view_cam[0]:
@@ -505,7 +506,7 @@ label cam_background:
         '11:00'<=tm<'19:00':' day',
         '19:00'<=tm<'22:00':' evening',
         tm<'06:00'or'22:00'<=tm:' night'}[True]
-    if tod == ' night' and len(view_cam[0].cur_char)>0 and chars[view_cam[0].cur_char[0]].plan_name not in ['sleep', 'sleep2']:
+    if tod in [' night', ' evening'] and len(view_cam[0].cur_char)>0 and chars[view_cam[0].cur_char[0]].plan_name not in ['sleep', 'sleep2']:
         $ tod = ' tv-evening' if chars[view_cam[0].cur_char[0]].plan_name in ['tv', 'tv2', 'night_tv'] else ' evening'
     $ renpy.show('BG-cam house '+view_cam[0].id.replace('_', '')+'-'+str(view_cam[2])+tod, at_list=[laptop_screen,])
     if current_room == house[5] and view_cam[0].id == 'my_room':
@@ -939,10 +940,10 @@ label after_load:
                 if len(house[3].cams) > 1:
                     $ house[3].cams.pop(1)
 
-        # if current_ver < "0.04.1.06":
-        #     $ current_ver = "0.04.1.06"
-        #
-        #     $ ann_eric_scene = ''
+        if current_ver < "0.04.1.06":
+            $ current_ver = "0.04.1.06"
+
+            $ cam_poses = {}
 
         if current_ver < config.version:
             $ current_ver = config.version

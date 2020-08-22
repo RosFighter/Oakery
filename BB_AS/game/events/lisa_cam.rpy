@@ -17,7 +17,7 @@ label cam0_lisa_sleep_morning:
 
 label cam0_lisa_shower:
     if tm[-2:] < '20' and lisa.dress_inf != '00a':
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'lisa_not_shower' not in cam_flag:
             $ cam_flag.append('lisa_not_shower')
             if len(house[3].cams)>1:
@@ -57,7 +57,7 @@ label cam1_lisa_shower:
             Max_03 "Лиза, прежде чем принять душ, любуется собой перед зеркалом. И мы этим со зрителями тоже полюбуемся..."
 
     else:
-        show FG cam-shum-act at laptop_screen
+        show FG cam-shum-noact at laptop_screen
         if 'lisa_shower1' not in cam_flag:
             $ cam_flag.append('lisa_shower1')
             Max_09 "Лизы не видно через эту камеру... Может посмотреть через другую?"
@@ -127,6 +127,7 @@ label cam0_lisa_dressed_school:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     $ __r1 = renpy.random.choice(['07','08','09'])
     call lisa_cam_dress_inf(__r1)
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
@@ -171,6 +172,7 @@ label cam0_lisa_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
+    $ spent_time += 10
     $ __r1 = renpy.random.choice(['10','11','12'])
     call lisa_cam_dress_inf(__r1)
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
@@ -188,14 +190,14 @@ label cam0_lisa_sun:
     return
 
 label cam1_lisa_sun:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'lisa_sun1' not in cam_flag:
         $ cam_flag.append('lisa_sun1')
         Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
     return
 
 label cam0_lisa_swim:
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'lisa_swim0' not in cam_flag:
         $ cam_flag.append('lisa_swim0')
         if len(house[6].cams)>1:
@@ -209,7 +211,7 @@ label cam1_lisa_swim:
     show FG cam-shum-act at laptop_screen
     if 'lisa_swim1' not in cam_flag:
         $ cam_flag.append('lisa_swim1')
-        Max_01 "Приядно наблюдать за младшей сестрёнкой у водички..."
+        Max_01 "Приятно наблюдать за младшей сестрёнкой у водички..."
     return
 
 label cam0_lisa_dishes:
@@ -263,7 +265,7 @@ label cam1_lisa_bath:
 
 label cam0_lisa_homework:
     $ renpy.show('Lisa cams lessons '+renpy.random.choice(['01', '02'])+lisa.dress, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
+    show FG cam-shum-noact at laptop_screen
     if 'lisa_lessons' not in cam_flag:
         $ cam_flag.append('lisa_lessons')
         Max_01 "Лиза учит уроки. Может, стоило ей помочь?!"
