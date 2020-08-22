@@ -1212,7 +1212,7 @@ label alice_lisa_shower:
         elif 'lisa_sh' in cam_flag:
             $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зекралом Алиса
         elif 'lisa_alice_sh' in cam_flag:
-            pass # $ __var = 'lisa_alice'
+            $ __r0 = 0 # $ __var = 'lisa_alice'
         else:
             $ __r0 = renpy.random.randint(1, 4)
             if __r0 < 3: # если выпал один персонаж

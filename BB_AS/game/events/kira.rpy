@@ -1300,7 +1300,7 @@ label kira_lisa_shower:
         elif 'kira_sh' in cam_flag:
             $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зеркалом Лиза
         elif 'kira_lisa_sh' in cam_flag:
-            pass # $ __var = 'kira_lisa'
+            $ __r0 = 0 # $ __var = 'kira_lisa'
         else:
             $ __r0 = renpy.random.randint(1, 4)
             if __r0 < 3: # если выпал один персонаж
@@ -1441,7 +1441,7 @@ label kira_alice_shower:
         elif 'kira_sh' in cam_flag:
             $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зекралом Алиса
         elif 'kira_alice_sh' in cam_flag:
-            $ __var = 'kira_alice'
+            $ __r0 = 0 # $ __var = 'kira_alice'
         else:
             $ __r0 = renpy.random.randint(1, 4)
             if __r0 < 3: # если выпал один персонаж
