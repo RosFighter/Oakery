@@ -1197,7 +1197,7 @@ init python:
             pose_list.remove(last_pose)
         return renpy.random.choice(pose_list)
 
-    def cooldown_cam_pose(char, last_time):
+    def cooldown_cam_pose(char, last_time, cam=0):
         if tm == last_time:
             # если время не изменилось, откат не прошел
             return False
@@ -1209,7 +1209,7 @@ init python:
             # персонаж спит, откат в хх:00 и в хх:30
             last_time = h + ':' + ('30' if '00' < m <= '30' else '00')  # округлим последнее время до получаса в большую сторону
             cooldown = TimeDifference(last_time, tm) >= 30
-        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim', 'shower']:
+        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim', 'shower', 'tv2', 'night_tv']:
             # откат в хх:00, хх:20 и хх:40
             if '00' <= m < '20':
                 last_time = h + ':00'
@@ -1220,14 +1220,36 @@ init python:
             cooldown = TimeDifference(last_time, tm) >= 20
         elif char.plan_name == 'bath':
             # смена позы один раз в хх:30, поэтому предыдущее время округляем в меньшую сторону
-            last_time = h + ':' + ('00' if '00' <= m < '30' else '30')  # округлим последнее время до получаса в большую сторону
+            last_time = h + ':' + ('00' if '00' <= m < '30' else '30')
             cooldown = TimeDifference(last_time, tm) >= 30
         elif char.pref == 'Alice':
             pass
         elif char.pref == 'Ann':
             pass
         elif char.pref == 'Eric':
-            pass
+            if char.plan_name == 'shower2':
+                # откат в хх:00, хх:20 и хх:40
+                if '00' <= m < '20':
+                    last_time = h + ':00'
+                elif '20' <= m < '40':
+                    last_time = h + ':20'
+                else:
+                    last_time = h + ':40'
+                cooldown = TimeDifference(last_time, tm) >= 20
+            elif char.plan_name == 'fuck':
+                if cam == 0:
+                    # смена позы один раз в хх:30, поэтому предыдущее время округляем в меньшую сторону
+                    last_time = h + ':' + ('00' if '00' <= m < '30' else '30')
+                    cooldown = TimeDifference(last_time, tm) >= 30
+                else:
+                    # откат в хх:00, хх:20 и хх:40
+                    if '00' <= m < '20':
+                        last_time = h + ':00'
+                    elif '20' <= m < '40':
+                        last_time = h + ':20'
+                    else:
+                        last_time = h + ':40'
+                    cooldown = TimeDifference(last_time, tm) >= 20
         elif char.pref == 'Kira':
             pass
         elif char.pref == 'Lisa':
@@ -1245,7 +1267,7 @@ init python:
             cam_poses[name] = tuple([random_pose(pose_list), tm])
         else:
             # поза уже назначалась
-            if cooldown_cam_pose(char, cam_poses[name][1]):  # если откат прошёл, назначаем новую позу
+            if cooldown_cam_pose(char, cam_poses[name][1], cam_number):  # если откат прошёл, назначаем новую позу
                 cam_poses[name] = tuple([random_pose(pose_list, cam_poses[name][0]), tm])
 
         return cam_poses[name][0]

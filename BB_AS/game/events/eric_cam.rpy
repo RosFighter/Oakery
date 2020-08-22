@@ -77,7 +77,7 @@ label cam0_eric_ann_shower:
 label cam1_eric_ann_shower:
     if tm[-2:] < '30':
         default __r1 = ''
-        
+
         if tm[-2:] < '10':
             $ __r1 = '01'
         elif tm[-2:] < '20':
@@ -120,9 +120,9 @@ label cam0_eric_resting:
     return
 
 label cam0_eric_ann_tv:
-    if tm[-2:] < '10':
+    if tm[-2:] < '10' or tm[-2:] >= '50':
         $ tv_scene = ''
-        $ pose2_3 = renpy.random.choice(['01', '02', '03'])
+        $ pose2_3 = cam_poses_manager(eric, ['01', '02', '03'])
     elif tm[-2:] < '30' and flags['ae.tv.hj'] and not tv_scene:
         $ tv_scene = renpy.random.choice(['bj', 'hj']) if flags['ae.tv.hj'] > 0 else 'hj'
         $ pose2_3 = '01'
@@ -162,19 +162,15 @@ label cam0_eric_ann_tv:
 label cam0_eric_ann_fucking:
     if peeping['ann_eric_sex1'] > 2:
         # уже все посмотрели через окно или камеру
+        $ renpy.show('Eric cams fuck relax '+cam_poses_manager(eric, ['01', '02', '03'], 1), at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
         if 'eric_fuck_end' not in cam_flag:
             $ cam_flag.append('eric_fuck_end')
-            $ pose2_3 = renpy.random.choice(['01', '02', '03'])
-            $ renpy.show('Eric cams fuck relax '+pose2_3, at_list=[laptop_screen])
-            show FG cam-shum-act at laptop_screen
             Max_09 "Утомлённые мама с Эриком лежат на кровати. Благо, они не только трахаются всё время, но ещё и разговаривают..."
-        else:
-            $ renpy.show('Eric cams fuck relax '+pose2_3, at_list=[laptop_screen])
-            show FG cam-shum-act at laptop_screen
     else:
         if 'eric_fuck0' not in cam_flag:
             $ cam_flag.append('eric_fuck0')
-            $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,7,1,2,3,4,5,6,7,1,2,3,4,5,6,7])
+            $ fuck_scene = cam_poses_manager(eric, [6,1,2,3,4,5,6,7,1,2,3,4,5,6,7,1,2,3,4,5,6,7])
             if fuck_scene == 6:
                 show CamAnnEric1 at laptop_screen
             else:
@@ -193,11 +189,11 @@ label cam0_eric_ann_fucking:
             # конец часа, финал траха
             $ peeping['ann_eric_sex1'] = 4
             $ cam_flag.append('eric_fuck_fin')
-            $ pose2_3 = renpy.random.choice(['01', '02', '03'])
             $ renpy.show('Eric cams fuck 0'+str(fuck_scene)+'a', at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
             Max_08 "Ну вот они и кончили. По крайней мере, Эрик так точно, а вот мама..."
         else:
+            $ fuck_scene = cam_poses_manager(eric, [6,1,2,3,4,5,6,7,1,2,3,4,5,6,7,1,2,3,4,5,6,7])
             if fuck_scene == 6:
                 show CamAnnEric1 at laptop_screen
             else:

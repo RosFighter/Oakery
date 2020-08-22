@@ -365,7 +365,7 @@ label cam1_kira_bath:
 
 label cam0_kira_night_tv:
     if tm[-2:] < '10':
-        $ renpy.show('Kira cams tv '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+        $ renpy.show('Kira cams tv '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         if 'kira_tv' not in cam_flag:
             $ cam_flag.append('kira_tv')
@@ -376,7 +376,7 @@ label cam0_kira_night_tv:
     elif talk_var['kira.porn']:
         if 'kira_tv1' not in cam_flag:
             $ cam_flag.append('kira_tv1')
-            $ __pose = renpy.random.choice(['01', '02', '03'])
+            $ __pose = cam_poses_manager(kira, ['01', '02', '03'])
             $ renpy.show('Kira cams tv m-'+__pose, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
             Max_05 "Ага, тётя наверняка порнушку включила! Хотя, может ей стало просто скучно... Может, ей помочь?"
@@ -384,7 +384,7 @@ label cam0_kira_night_tv:
             $ renpy.show('Kira cams tv m-'+__pose, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
     else:
-        $ renpy.show('Kira cams tv '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+        $ renpy.show('Kira cams tv '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
 
     return
