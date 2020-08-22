@@ -21,12 +21,12 @@ label cam0_eric_ann_shower:
     else:
         $ ann.dress_inf = '00a'
         if not ann_eric_scene:
-            $ ann_eric_scene = renpy.random.choice(['01', '02', '03'])
+            $ ann_eric_scene = cam_poses_manager(eric, ['01', '02', '03'])
         elif ann_eric_scene in ['01', '02', '03']:
             $ ann_eric_scene = {
-                    '01' : renpy.random.choice(['04', '05', '06']),
-                    '02' : renpy.random.choice(['08', '10']),
-                    '03' : renpy.random.choice(['07', '09', '11']),
+                    '01' : cam_poses_manager(eric, ['04', '05', '06']),
+                    '02' : cam_poses_manager(eric, ['08', '10']),
+                    '03' : cam_poses_manager(eric, ['07', '09', '11']),
                 }[ann_eric_scene]
 
         if tm[-2:] < '50':
@@ -34,9 +34,9 @@ label cam0_eric_ann_shower:
         else:
             if ann_eric_scene in ['01', '02', '03']:
                 $ ann_eric_scene = {
-                        '01' : renpy.random.choice(['04', '05', '06']),
-                        '02' : renpy.random.choice(['08', '10']),
-                        '03' : renpy.random.choice(['07', '09', '11']),
+                        '01' : cam_poses_manager(eric, ['04', '05', '06'], forced=True),
+                        '02' : cam_poses_manager(eric, ['08', '10'], forced=True),
+                        '03' : cam_poses_manager(eric, ['07', '09', '11'], forced=True),
                     }[ann_eric_scene]
             $ renpy.show('Eric cams shower '+ann_eric_scene+'a', at_list=[laptop_screen])
         show other cam-shower-water at laptop_screen
@@ -76,11 +76,12 @@ label cam0_eric_ann_shower:
 
 label cam1_eric_ann_shower:
     if tm[-2:] < '30':
-
+        default __r1 = ''
+        
         if tm[-2:] < '10':
             $ __r1 = '01'
         elif tm[-2:] < '20':
-            $ __r1 = renpy.random.choice(['02', '05', '06'])
+            $ __r1 = cam_poses_manager(eric, ['02', '05', '06'], 1)
         else:
             $ __r1 = '04' if __r1=='06' else '03'
         $ renpy.show('Eric cams bath-mirror '+__r1, at_list=[laptop_screen])
