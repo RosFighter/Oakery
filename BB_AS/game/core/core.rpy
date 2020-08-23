@@ -451,17 +451,17 @@ label cam_after_waiting:
         $ __cam_label = 'cam'+str(view_cam[2])+'_'+__cur_plan.label if __cur_plan is not None else ''
 
         if __cam_label!='' and renpy.has_label(__cam_label):
-            call cam_background
-            call expression __cam_label
+            call cam_background from _call_cam_background
+            call expression __cam_label from _call_expression_12
         else:
-            call cam_background
+            call cam_background from _call_cam_background_1
 
         # show FG cam-shum-act at laptop_screen
 
         call screen cam_show
     elif current_room == view_cam[0]:
         ## камера текущей локации. Макс сидит за компом
-        call cam_background
+        call cam_background from _call_cam_background_2
 
         $ time_of_day = {
                 '06:00' <= tm < '11:00': 'morning',
@@ -478,7 +478,7 @@ label cam_after_waiting:
         call screen cam_show
 
     else:
-        call cam_background
+        call cam_background from _call_cam_background_3
         show FG cam-shum-noact at laptop_screen
         ## сообщаем об отсутствии интересного и возвращаемся к выбору камеры
         # "[view_cam[0].id] [view_cam[2]]"
@@ -944,6 +944,18 @@ label after_load:
             $ current_ver = "0.04.1.06"
 
             $ cam_poses = {}
+
+        if current_ver < "0.04.5.02":
+            $ current_ver = "0.04.5.02"
+
+            if not clothes[lisa].learn.sel[2].change:
+                $ clothes[lisa].learn.sel[2].change = True
+                $ clothes[lisa].learn.sel[2].rand = True
+
+            if kol_choco == 0 and items['choco'].have:
+                $ items['choco'].have = False
+            if poss['nightclub'].stn >= 5 and kol_choco == 0:
+                $ items['choco'].InShop = True
 
         if current_ver < config.version:
             $ current_ver = config.version

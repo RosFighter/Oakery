@@ -20,7 +20,7 @@ label cam0_alice_sleep_night:
         $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
         Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
 
-    elif all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):
+    elif all(['sleep_fun' in cam_flag, 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):
         $ cam_flag.append('alice_end_sleep_fun')
         # день веселья. интресное закончилось
         if 'smoke' in flags and flags['smoke'] == 'sleep':
@@ -272,7 +272,7 @@ label cam0_alice_dressed_shop:
         $ __r1 = '03' # нет спрайта, временно ставим в одних
     elif alice.dress == 'd':
         $ __r1 = '04'
-    call alice_cam_dress_inf(__r1)
+    call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf
 
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -284,7 +284,7 @@ label cam0_alice_dressed_shop:
             jump open_site
 
     $ __r1 = renpy.random.choice(['06','07','08'])
-    call alice_cam_dress_inf(__r1)
+    call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_1
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -297,15 +297,15 @@ label cam0_alice_dressed_shop:
     $ spent_time += 10
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
-        call alice_cam_dress_inf('10')
+        call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_2
         Max_01 "Похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!"
     elif flags['smoke'] == 'nopants':
         $ renpy.show('Alice cams dressed 10a', at_list=[laptop_screen])
-        call alice_cam_dress_inf('10a')
+        call alice_cam_dress_inf('10a') from _call_alice_cam_dress_inf_3
         Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?"
     else:
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
-        call alice_cam_dress_inf('10')
+        call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_4
         Max_04 "Какая соблазнительная попка у неё... Уверен, зрителям это нравится!"
     return
 
@@ -328,7 +328,7 @@ label cam0_alice_dressed_friend:
         $ __r1 = '03' # нет спрайта, временно ставим в одних
     elif alice.dress == 'd':
         $ __r1 = '04'
-    call alice_cam_dress_inf(__r1)
+    call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_5
 
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -340,7 +340,7 @@ label cam0_alice_dressed_friend:
             jump open_site
 
     $ __r1 = renpy.random.choice(['06','07','08'])
-    call alice_cam_dress_inf(__r1)
+    call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_6
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -353,15 +353,15 @@ label cam0_alice_dressed_friend:
     $ spent_time += 10
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
-        call alice_cam_dress_inf('10')
+        call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_7
         Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
     elif flags['smoke'] == 'nopants':
         $ renpy.show('Alice cams dressed 10a', at_list=[laptop_screen])
-        call alice_cam_dress_inf('10a')
+        call alice_cam_dress_inf('10a') from _call_alice_cam_dress_inf_8
         Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт..."
     else:
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
-        call alice_cam_dress_inf('10')
+        call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_9
         Max_04 "Трусики хорошо смотрятся на её попке. Но без них было бы лучше..."
     return
 
@@ -379,7 +379,7 @@ label cam0_alice_dressed_club:
     $ spent_time += 10
 
     $ __r1 = '05'
-    call alice_cam_dress_inf(__r1)
+    call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_10
 
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -391,7 +391,7 @@ label cam0_alice_dressed_club:
             jump open_site
 
     $ __r1 = renpy.random.choice(['06','07','08'])
-    call alice_cam_dress_inf(__r1)
+    call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_11
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -404,15 +404,15 @@ label cam0_alice_dressed_club:
     $ spent_time += 10
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
-        call alice_cam_dress_inf('11')
+        call alice_cam_dress_inf('11') from _call_alice_cam_dress_inf_12
         Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
     elif flags['smoke'] == 'nopants':
         $ renpy.show('Alice cams dressed 11a', at_list=[laptop_screen])
-        call alice_cam_dress_inf('11a')
+        call alice_cam_dress_inf('11a') from _call_alice_cam_dress_inf_13
         Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?"
     else:
         $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
-        call alice_cam_dress_inf('11')
+        call alice_cam_dress_inf('11') from _call_alice_cam_dress_inf_14
         Max_04 "Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше..."
     return
 

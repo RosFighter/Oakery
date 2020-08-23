@@ -3,14 +3,16 @@ label StartPunishment:
     $ pun_list.clear()
     $ first = True
     $ defend = False
-    if sorry_gifts['lisa'].owe and sorry_gifts['lisa'].left == 0: # если Макс обещал Лизе подарок, но не вручил его вовремя
-        $ sorry_gifts['lisa'].owe = False
-        $ punreason[0] = 1
-        $ poss['SoC'].OpenStage(1)
-    if sorry_gifts['alice'].owe and sorry_gifts['alice'].left == 0: # если Макс обещал Алисе подарок, но не вручил его вовремя
-        $ sorry_gifts['alice'].owe = False
-        $ punreason[1] = 1
-        $ poss['risk'].OpenStage(1)
+    if tm > '18:00':
+        # на извинительные подарки у Макса времени до ужина
+        if sorry_gifts['lisa'].owe and sorry_gifts['lisa'].left == 0: # если Макс обещал Лизе подарок, но не вручил его вовремя
+            $ sorry_gifts['lisa'].owe = False
+            $ punreason[0] = 1
+            $ poss['SoC'].OpenStage(1)
+        if sorry_gifts['alice'].owe and sorry_gifts['alice'].left == 0: # если Макс обещал Алисе подарок, но не вручил его вовремя
+            $ sorry_gifts['alice'].owe = False
+            $ punreason[1] = 1
+            $ poss['risk'].OpenStage(1)
     # Макс теоретически может получить наказание как утром, так и вечером
     if punreason[2] or punreason[3] and tm < "18:00":  # утром наказание за подглядывание за Анной или Анной с Эриком
         $ pun_list.append("mgg")

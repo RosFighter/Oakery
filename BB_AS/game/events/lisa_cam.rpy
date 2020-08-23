@@ -108,7 +108,7 @@ label cam0_lisa_dressed_school:
     $ spent_time += 10
 
     $ __r1 = renpy.random.choice(['00', '01', '02'])
-    call lisa_cam_dress_inf(__r1)
+    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -119,7 +119,7 @@ label cam0_lisa_dressed_school:
             jump open_site
 
     $ __r1 = renpy.random.choice(['03','04','05','06'])
-    call lisa_cam_dress_inf(__r1)
+    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_1
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -131,7 +131,7 @@ label cam0_lisa_dressed_school:
 
     $ spent_time += 10
     $ __r1 = renpy.random.choice(['07','08','09'])
-    call lisa_cam_dress_inf(__r1)
+    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_2
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
@@ -153,7 +153,7 @@ label cam0_lisa_dressed_shop:
     $ spent_time += 10
 
     $ __r1 = renpy.random.choice(['00', '01', '02'])
-    call lisa_cam_dress_inf(__r1)
+    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_3
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -164,7 +164,7 @@ label cam0_lisa_dressed_shop:
             jump open_site
 
     $ __r1 = renpy.random.choice(['03','04','05','06'])
-    call lisa_cam_dress_inf(__r1)
+    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_4
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
@@ -176,7 +176,7 @@ label cam0_lisa_dressed_shop:
 
     $ spent_time += 10
     $ __r1 = renpy.random.choice(['10','11','12'])
-    call lisa_cam_dress_inf(__r1)
+    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_5
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 

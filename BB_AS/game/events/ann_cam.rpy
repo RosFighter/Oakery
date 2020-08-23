@@ -123,7 +123,7 @@ label cam0_ann_dressed_work:
     $ spent_time += 10
     $ __list = ['03', '03a', '04'] if ann.dress=='d' else ['01', '01a', '02', '02a', '02b']  # частично одета. Может быть как с нижним бельём, так и без
     $ __ran1 = renpy.random.choice(__list)
-    call ann_cam_dress_inf(__ran1)
+    call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf
 
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -147,7 +147,7 @@ label cam0_ann_dressed_work:
 
     $ spent_time += 10
     $ __ran1 = renpy.random.choice(['09', '09a'])
-    call ann_cam_dress_inf(__ran1)
+    call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_1
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     Max_04 "Да уж, её округлости равнодушным не оставят никого!"
@@ -168,7 +168,7 @@ label cam0_ann_dressed_shop:
     $ spent_time += 10
     $ __list = ['03', '03a', '04'] if ann.dress=='d' else ['01', '01a', '02', '02a', '02b']  # частично одета. Может быть как с нижним бельём, так и без
     $ __ran1 = renpy.random.choice(__list)
-    call ann_cam_dress_inf(__ran1)
+    call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_2
 
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -192,7 +192,7 @@ label cam0_ann_dressed_shop:
 
     $ spent_time += 10
     $ __ran1 = '10'
-    call ann_cam_dress_inf(__ran1)
+    call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_3
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     Max_04 "Да уж, её округлости равнодушным не оставят никого!"

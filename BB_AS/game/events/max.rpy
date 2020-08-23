@@ -255,7 +255,7 @@ label Laptop:
     if poss['spider'].stn == 0:
         $ search_theme.append((_("{i}читать о пауках{/i}"), 'about_spider'))
     if flags['credit'] == 1:
-        $ search_theme.append((_("{i}искать информацию по кридитам{/i}"), 'about_credit'))
+        $ search_theme.append((_("{i}искать информацию по кредитам{/i}"), 'about_credit'))
 
     call screen LaptopScreen
 

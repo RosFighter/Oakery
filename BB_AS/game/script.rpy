@@ -6,6 +6,7 @@ label splashscreen:
 
     return
 
+
 label language_chooser:
     scene BG villa-door
 
@@ -110,6 +111,7 @@ label intro:
         "{i}пропустить{/i}":
             $ spent_time = 10
             jump Waiting
+
 
 label about_poss:
     $ flags['about_poss'] = False

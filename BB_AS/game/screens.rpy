@@ -23,7 +23,6 @@ style hyperlink_text:
 style gui_text:
     properties gui.text_properties("interface")
 
-
 style button:
     properties gui.button_properties("button")
 
@@ -31,13 +30,11 @@ style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
 
-
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
 
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
-
 
 style bar:
     ysize gui.bar_size
@@ -68,7 +65,6 @@ style vslider:
     xsize gui.slider_size
     base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
-
 
 style frame:
     padding gui.frame_borders.padding
@@ -108,9 +104,9 @@ screen say(who, what):
     window:
         id "window"
         hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
+            ysize gui.textbox_height - gui.dialogue_ypos - 20
             spacing 10
             viewport mousewheel "change" id "vp_say":
-                ysize gui.textbox_height - gui.dialogue_ypos - 10
 
                 frame background None:
                     text what id "what" justify False
@@ -132,7 +128,6 @@ style namebox_label is say_label
 
 style say_vscroll is vscrollbar:
     unscrollable "hide"
-
 
 style window:
     xalign 0.5
@@ -162,6 +157,7 @@ style say_dialogue:
 
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
+    ypos gui.dialogue_ypos
 
 ## Экран ввода #################################################################
 ##
@@ -260,43 +256,43 @@ style choice_vscroll is vscrollbar:
 ## Быстрое меню показывается внутри игры, чтобы обеспечить лёгкий доступ к
 ## внеигровым меню.
 
-# screen quick_menu():
-#
-#     ## Гарантирует, что оно появляется поверх других экранов.
-#     zorder 100
-#
-#     if quick_menu:
-#
-#         hbox:
-#             style_prefix "quick"
-#
-#             xalign 0.5
-#             yalign 1.0
-#
-#             textbutton _("История") action ShowMenu('history')
-#             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
-#             textbutton _("Авто") action Preference("auto-forward", "toggle")
-#             textbutton _("Сохранить") action ShowMenu('save')
-#             textbutton _("Б.Сохр") action QuickSave()
-#             textbutton _("Б.Загр") action QuickLoad()
-#             textbutton _("Опции") action ShowMenu('preferences')
-#
-#
-# ## Данный код гарантирует, что экран быстрого меню будет показан в игре в любое
-# ## время, если только игрок не скроет интерфейс.
-# init python:
-#     config.overlay_screens.append("quick_menu")
-#
-# default quick_menu = True
-#
-# style quick_button is default
-# style quick_button_text is button_text
-#
-# style quick_button:
-#     properties gui.button_properties("quick_button")
-#
-# style quick_button_text:
-#     properties gui.button_text_properties("quick_button")
+screen quick_menu():
+
+    ## Гарантирует, что оно появляется поверх других экранов.
+    zorder 100
+
+    if quick_menu:
+
+        hbox:
+            style_prefix "quick"
+
+            xalign 0.5
+            yalign 1.0
+
+            textbutton _("История") action ShowMenu('history')
+            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Сохранить") action ShowMenu('save')
+            textbutton _("Б.Сохр") action QuickSave()
+            textbutton _("Б.Загр") action QuickLoad()
+            textbutton _("Опции") action ShowMenu('preferences')
+
+
+## Данный код гарантирует, что экран быстрого меню будет показан в игре в любое
+## время, если только игрок не скроет интерфейс.
+init python:
+    config.overlay_screens.append("quick_menu")
+
+default quick_menu = renpy.variant("small")
+
+style quick_button is default
+style quick_button_text is button_text
+
+style quick_button:
+    properties gui.button_properties("quick_button")
+
+style quick_button_text:
+    properties gui.button_text_properties("quick_button")
 
 
 ################################################################################
@@ -1551,6 +1547,7 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Назад") action Rollback()
+            textbutton _("История") action ShowMenu('history')
             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Авто") action Preference("auto-forward", "toggle")
             textbutton _("Меню") action ShowMenu()
@@ -1635,3 +1632,10 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
+
+################################################################################
+
+style say_vscroll:
+    variant "small"
+    unscrollable "show"
+    ypos 15 ysize 330 xsize 50
