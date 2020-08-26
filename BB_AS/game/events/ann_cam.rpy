@@ -1,6 +1,6 @@
 
 label cam0_ann_sleep:
-    $ renpy.show('Ann cams sleep night '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    $ renpy.show('Ann cams sleep '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     # $ renpy.show('Ann cams sleep night '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_sleep' not in cam_flag:
@@ -120,7 +120,8 @@ label cam0_ann_dressed_work:
         return
 
     $ cam_flag.append('ann_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     $ __list = ['03', '03a', '04'] if ann.dress=='d' else ['01', '01a', '02', '02a', '02b']  # частично одета. Может быть как с нижним бельём, так и без
     $ __ran1 = renpy.random.choice(__list)
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf
@@ -145,7 +146,8 @@ label cam0_ann_dressed_work:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     $ __ran1 = renpy.random.choice(['09', '09a'])
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_1
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
@@ -165,7 +167,8 @@ label cam0_ann_dressed_shop:
         return
 
     $ cam_flag.append('ann_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     $ __list = ['03', '03a', '04'] if ann.dress=='d' else ['01', '01a', '02', '02a', '02b']  # частично одета. Может быть как с нижним бельём, так и без
     $ __ran1 = renpy.random.choice(__list)
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_2
@@ -190,7 +193,8 @@ label cam0_ann_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     $ __ran1 = '10'
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_3
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
@@ -284,7 +288,7 @@ label cam1_ann_alice_swim:
     # alice-02 & ann-02
     # alice-02 & ann-04
     # alice-03 & ann-03
-    $ __alice_pose = cam_poses_manager(alise, ['01', '02', '03', '04'])
+    $ __alice_pose = cam_poses_manager(alice, ['01', '02', '03', '04'])
     $ __ann_pose_list = {
             '01' : ['01', '03'],
             '02' : ['01', '03'],
@@ -331,7 +335,7 @@ label cam1_ann_bath:
     return
 
 label cam0_ann_tv:
-    $ renpy.show('Ann cams tv '+cam_poses_manager(ann, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Ann cams tv '+cam_poses_manager(ann, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if 'ann_tv' not in cam_flag:

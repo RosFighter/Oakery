@@ -15,10 +15,15 @@ label cam0_alice_sleep_night:
         Max_07 "Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?"
 
         $ renpy.show('Alice cams fun-in-bed 02'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
+        window hide
+        pause(2)
         Max_02 "Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку..."
 
         $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
+        window hide
+        pause(2)
         Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
+        $ Wait(20)
 
     elif all(['sleep_fun' in cam_flag, 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):
         $ cam_flag.append('alice_end_sleep_fun')
@@ -264,7 +269,8 @@ label cam0_alice_dressed_shop:
         return
 
     $ cam_flag.append('alice_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
 
     if alice.dress in ['a', 'c']:
         $ __r1 = renpy.random.choice(['01', '02a']) if alice.nopants else renpy.random.choice(['01', '02'])
@@ -294,7 +300,8 @@ label cam0_alice_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_2
@@ -320,7 +327,8 @@ label cam0_alice_dressed_friend:
         return
 
     $ cam_flag.append('alice_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
 
     if alice.dress in ['a', 'c']:
         $ __r1 = renpy.random.choice(['01', '02a']) if alice.nopants else renpy.random.choice(['01', '02'])
@@ -350,7 +358,8 @@ label cam0_alice_dressed_friend:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_7
@@ -376,7 +385,8 @@ label cam0_alice_dressed_club:
         return
 
     $ cam_flag.append('alice_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
 
     $ __r1 = '05'
     call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_10
@@ -401,7 +411,8 @@ label cam0_alice_dressed_club:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     if flags['smoke'] == 'not_nopants':
         $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
         call alice_cam_dress_inf('11') from _call_alice_cam_dress_inf_12

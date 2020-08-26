@@ -105,7 +105,8 @@ label cam0_lisa_dressed_school:
         return
 
     $ cam_flag.append('lisa_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
 
     $ __r1 = renpy.random.choice(['00', '01', '02'])
     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
@@ -129,7 +130,8 @@ label cam0_lisa_dressed_school:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     $ __r1 = renpy.random.choice(['07','08','09'])
     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_2
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
@@ -150,7 +152,8 @@ label cam0_lisa_dressed_shop:
         return
 
     $ cam_flag.append('lisa_dressed')
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
 
     $ __r1 = renpy.random.choice(['00', '01', '02'])
     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_3
@@ -174,7 +177,8 @@ label cam0_lisa_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ spent_time += 10
+    # $ spent_time += 10
+    $ Wait(10)
     $ __r1 = renpy.random.choice(['10','11','12'])
     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_5
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])

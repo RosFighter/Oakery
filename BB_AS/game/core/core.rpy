@@ -403,6 +403,9 @@ label cam_after_waiting:
                         $ cam_flag.append('notebook_on_terrace')
                     "{i}не сейчас{/i}":
                         jump open_site
+            elif house[5].cur_char:
+                Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
+                jump open_site
             else:
                 # речь про веранду уже была
                 menu:

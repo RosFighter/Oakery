@@ -131,7 +131,7 @@ define gui.namebox_tile = False
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
 define gui.dialogue_xpos = 490
-define gui.dialogue_ypos = 20
+define gui.dialogue_ypos = 10
 
 ## Максимальная ширина текста диалога в пикселях.
 define gui.dialogue_width = 860
@@ -416,35 +416,39 @@ define gui.language = "unicode"
 ## Мобильные устройства
 ################################################################################
 
-# init python:
+init python:
 
-    ## Этот параметр увеличивает размер быстрых кнопок, чтобы сделать их
-    ## доступнее для нажатия на планшетах и телефонах.
-    # if renpy.variant("touch"):
-    #
-    #     gui.quick_button_borders = Borders(60, 21, 60, 0)
+    # Этот параметр увеличивает размер быстрых кнопок, чтобы сделать их
+    # доступнее для нажатия на планшетах и телефонах.
+    if renpy.variant("touch"):
 
-    ## Это изменяет размеры и интервалы различных элементов GUI, чтобы
-    ## убедиться, что они будут лучше видны на телефонах.
-    # if renpy.variant("small"):
-    #
-    #     ## Размеры шрифтов.
-    #     gui.text_size = 45
-    #     gui.name_text_size = 54
-    #     gui.notify_text_size = 38
-    #     gui.interface_text_size = 45
-    #     gui.button_text_size = 45
-    #     gui.label_text_size = 51
-    #
-    #     ## Регулирует местоположение текстового окна.
-    #     gui.textbox_height = 360
-    #     gui.name_xpos = 120
-    #     gui.text_xpos = 135
-    #     gui.text_width = 1650
-    #
-    #     ## Изменяет размеры и интервалы различных объектов.
-    #     gui.slider_size = 54
-    #
+        gui.quick_button_borders = Borders(60, 21, 60, 0)
+
+    # Это изменяет размеры и интервалы различных элементов GUI, чтобы
+    # убедиться, что они будут лучше видны на телефонах.
+    if renpy.variant("small"):
+
+        ## Размеры шрифтов.
+        gui.text_size = 46
+        gui.name_text_size = 54
+        gui.notify_text_size = 38
+        gui.interface_text_size = 46
+        gui.button_text_size = 46
+        gui.label_text_size = 51
+
+        ## Регулирует местоположение текстового окна.
+        gui.textbox_height = 360
+        gui.name_xpos = 120
+        gui.text_xpos = 135
+        gui.text_width = 1650
+
+        gui.dialogue_width = 1350
+        gui.dialogue_xpos = 420
+
+        ## Изменяет размеры и интервалы различных объектов.
+        gui.slider_size = 54
+        gui.scrollbar_size = 20
+
     #     gui.choice_button_width = 1860
     #
     #     gui.navigation_spacing = 30

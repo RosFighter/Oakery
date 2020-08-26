@@ -482,6 +482,7 @@ label alice_talk_tv:
                     Max_02 "Ага, сейчас продолжим..."   #если на Алисе есть трусики
                     # Дальше все продолжается, как и в случае, если Алиса сама сняла джинсы.
                     $ _dress = mgg.dress+'c'
+                    $ alice.dress = 'c'
                     $ renpy.show('Alice tv-mass ' + _pose + _dress)
                     jump .not_jeans
             else:
@@ -552,10 +553,13 @@ label alice_talk_tv:
                         $ current_room = house[0]
                     jump .end
                 "{i}продолжить{/i} \n{color=[_ch25.col]}(Массаж. Шанс: [_ch25.vis]){/color}" if _drink==2:
+                    $ alice.dress = 'c'
                     jump .massage_next
                 "{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}" if _drink==1:
+                    $ alice.dress = 'c'
                     jump .massage_next
                 "{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}" if not _drink:
+                    $ alice.dress = 'c'
                     jump .massage_next
 
     label .massage_next:
