@@ -1271,3 +1271,26 @@ init python:
                 cam_poses[name] = tuple([random_pose(pose_list, cam_poses[name][0]), tm])
 
         return cam_poses[name][0]
+
+
+    def create_cam_list():
+        global cam_list
+
+        cam_list.clear()
+
+        for loc in locations:
+            for room in locations[loc]:
+                number_in_room = 0
+                for cam in room.cams:
+                    cam_list.append((room, cam, number_in_room, loc, len(cam_list)))
+                    number_in_room += 1
+
+    def prev_cam():
+        global view_cam
+        cam_number = view_cam[4]-1 if view_cam[4] >= 0 else len(cam_list)-1
+        view_cam = cam_list[cam_number]
+
+    def next_cam():
+        global view_cam
+        cam_number = view_cam[4]+1 if view_cam[4]+1 < len(cam_list) else 0
+        view_cam = cam_list[cam_number]

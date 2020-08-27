@@ -14,7 +14,12 @@ init: # трансформации для кнопок
             zoom 1.02
 
     transform close_zoom:
-        size (25, 25)
+        xanchor 25
+        size (75, 25)
+
+    transform close_zoom_var_small:
+        xanchor 35
+        size (105, 35)
 
     transform middle_wait:
         size (136, 136)
@@ -58,8 +63,19 @@ init: # трансформации для кнопок
         on hover, selected_hover:
             yanchor 1 alpha 1.0
 
-    transform disable_menu(enable=True):
+    transform small_menu_mobile:
+        size (100, 100)
+        on idle, selected_idle:
+            yanchor 0 alpha 0.4
+        on hover, selected_hover:
+            yanchor 1 alpha 1.0
+
+    transform disable_menu:
         size (80, 80)
+        yanchor 0 alpha 0.2
+
+    transform disable_menu_mobile:
+        size (100, 100)
         yanchor 0 alpha 0.2
 
     transform lang:
@@ -752,15 +768,10 @@ screen MySite():
     modal True
     use notify_check
     use PowerBack
-    $ col_cam = 0
-    for loc in locations:
-        for room in locations[loc]:
-            for cam in room.cams:
-                $ col_cam += 1
-    if (col_cam >= 6) and(col_cam % 3 != 0):
-        $ dobavka = 3 - (col_cam % 3)
-    elif col_cam < 6:
-        $ dobavka = 6 - col_cam
+    if (len(cam_list) >= 6) and(len(cam_list) % 3 != 0):
+        $ dobavka = 3 - (len(cam_list) % 3)
+    elif len(cam_list) < 6:
+        $ dobavka = 6 - len(cam_list)
     else:
         $ dobavka = 0
 
@@ -781,59 +792,53 @@ screen MySite():
                 xsize 1230
                 xalign .5
                 yfill True
-                if col_cam > 6:
+                if len(cam_list) > 6:
                     mousewheel 'change'
                     draggable True
                     scrollbars 'vertical'
+                    if view_cam is not None and view_cam[4] > 5:  # зададим стартовое положение
+                        yinitial 540
                 frame xpadding 27 background None:
                     vpgrid cols 3:
                         xspacing 30
                         yspacing 30
                         mousewheel 'change'
                         draggable True
-                        $ i = 0
 
-                        for loc in locations:
-                            for room in locations[loc]:
-                                $ num = 0
-                                for cam in room.cams:
-                                    frame area(0, 0, 370, 240) background None:
-                                        xmargin 0 ymargin 0 xpadding 0 ypadding 0
-                                        button xysize(362, 235) align(0.5, 0.5) background None:
-                                            action [SetVariable('at_comp', True), SetVariable('view_cam', (room, cam, num, i)), Jump('Waiting')]
-                                            # action NullAction()
-                                            xmargin 0 ymargin 0 xpadding 0 ypadding 0
-                                            if '06:00' <= tm < '11:00':
-                                                add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-morning-'+str(num)
-                                            elif '11:00' <= tm < '19:00':
-                                                add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-day-'+str(num)
-                                            elif '19:00' <= tm < '22:00':
-                                                add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-evening-'+str(num)
-                                            else:
-                                                if len(room.cur_char) > 0 and chars[room.cur_char[0]].plan_name not in ['sleep', 'sleep2']:
-                                                    add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-evening-'+str(num)
-                                                else:
-                                                    add 'location '+str(loc)+' '+room.id.replace('_', '')+' cam-night-'+str(num)
-                                            if len(room.cur_char) > 0 or room == current_room:
-                                                add 'interface laptop cam act'
-                                            else:
-                                                add 'interface laptop cam noact'
-                                            hovered [
-                                                t_loc.Action(room.cam_name),
-                                                t_public.Action(str(int(cam.public))),
-                                                t_total.Action("$"+str(int(cam.total))),
-                                                t_today.Action("$"+str(int(cam.today)))
-                                                ]
-
-                                    $ num += 1
-                                    $ i += 1
-
+                        for cam in cam_list:
+                            frame area(0, 0, 370, 240) background None:
+                                xmargin 0 ymargin 0 xpadding 0 ypadding 0
+                                button xysize(362, 235) align(0.5, 0.5) background None:
+                                    action [SetVariable('at_comp', True), SetVariable('view_cam', cam), Jump('Waiting')]
+                                    xmargin 0 ymargin 0 xpadding 0 ypadding 0
+                                    if '06:00' <= tm < '11:00':
+                                        add 'location '+str(cam[3])+' '+cam[0].id.replace('_', '')+' cam-morning-'+str(cam[2])
+                                    elif '11:00' <= tm < '19:00':
+                                        add 'location '+str(cam[3])+' '+cam[0].id.replace('_', '')+' cam-day-'+str(cam[2])
+                                    elif '19:00' <= tm < '22:00':
+                                        add 'location '+str(cam[3])+' '+cam[0].id.replace('_', '')+' cam-evening-'+str(cam[2])
+                                    else:
+                                        if len(cam[0].cur_char) > 0 and chars[cam[0].cur_char[0]].plan_name not in ['sleep', 'sleep2']:
+                                            add 'location '+str(cam[3])+' '+cam[0].id.replace('_', '')+' cam-evening-'+str(cam[2])
+                                        else:
+                                            add 'location '+str(cam[3])+' '+cam[0].id.replace('_', '')+' cam-night-'+str(cam[2])
+                                    if len(cam[0].cur_char) > 0 or cam[0] == current_room:
+                                        add 'interface laptop cam act'
+                                    else:
+                                        add 'interface laptop cam noact'
+                                    hovered [
+                                        t_loc.Action(cam[0].cam_name),
+                                        t_public.Action(str(int(cam[1].public))),
+                                        t_total.Action("$"+str(int(cam[1].total))),
+                                        t_today.Action("$"+str(int(cam[1].today)))
+                                        ]
 
                         # дополним пустыми местами
                         for i in range(dobavka):
                             frame area(0, 0, 370, 240) background None:
                                 xmargin 0 ymargin 0 xpadding 0 ypadding 0
                                 frame xysize(362, 235) align(0.5, 0.5) background Frame('interface items bg', 10, 10)
+
         frame ysize 145 xfill True yalign 1.0 background None:
             xmargin 0 ymargin 0 xpadding 0 ypadding 0
             button xysize(380, 144) xalign 0.0 background None action Show('SEO'):
@@ -1027,12 +1032,6 @@ screen room_navigation():
         align(0.5, 0.01)
         text tm xalign(0.5) font 'hermes.ttf' size 60 drop_shadow[(2, 2)]
         text weekdays[(day+2) % 7][1] xalign(0.5) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
-        # textbutton 'text MorningWood' action Replay('MorningWood')
-        # textbutton 'text gift_swimsuit':
-        #     action Replay('gift_swimsuit.swimsuit_show', scope = {
-        #             'lisa' : tl,
-        #             'flags': {'promise_kiss':True},
-        #             })
 
     vbox: # деньги и зрители
         align(0.99, 0.01)
@@ -1049,17 +1048,50 @@ screen room_navigation():
     hbox:  # верхнее меню
         align(0.01, 0.01)
         spacing 2
-        imagebutton idle 'interface menu userinfo' focus_mask True action [Hide('wait_navigation'), Show('menu_userinfo')] at small_menu
-        imagebutton idle 'interface menu inventory' focus_mask True action [Hide('wait_navigation'), Show('menu_inventory')] at small_menu
-        if kol > 0:
-            imagebutton idle 'interface menu opportunity' focus_mask True action [Hide('wait_navigation'), Show('menu_opportunity')] at small_menu
-        else:
-            imagebutton idle 'interface menu opportunity' focus_mask True action [Hide('wait_navigation'), Show('menu_opportunity')] at disable_menu
-        imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')] at small_menu
+        imagebutton idle 'interface menu userinfo' focus_mask True action [Hide('wait_navigation'), Show('menu_userinfo')]:
+            if renpy.variant('small'):
+                at small_menu_mobile
+            else:
+                at small_menu
+        imagebutton idle 'interface menu inventory' focus_mask True action [Hide('wait_navigation'), Show('menu_inventory')]:
+            if renpy.variant('small'):
+                at small_menu_mobile
+            else:
+                at small_menu
+        imagebutton idle 'interface menu opportunity' focus_mask True:
+            if kol > 0:
+                action [Hide('wait_navigation'), Show('menu_opportunity')]
+                if renpy.variant('small'):
+                    at small_menu_mobile
+                else:
+                    at small_menu
+            else:
+                action NullAction()
+                if renpy.variant('small'):
+                    at disable_menu_mobile
+                else:
+                    at disable_menu
+        imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')]:
+            if renpy.variant('small'):
+                at small_menu_mobile
+            else:
+                at small_menu
         if renpy.loadable('extra/extra.webp'):
-            imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')] at small_menu
-        imagebutton idle 'interface menu main' focus_mask True action ShowMenu('save') at small_menu
-        imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')] at small_menu
+            imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')]:
+                if renpy.variant('small'):
+                    at small_menu_mobile
+                else:
+                    at small_menu
+        imagebutton idle 'interface menu main' focus_mask True action ShowMenu('save'):
+            if renpy.variant('small'):
+                at small_menu_mobile
+            else:
+                at small_menu
+        imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')]:
+            if renpy.variant('small'):
+                at small_menu_mobile
+            else:
+                at small_menu
 
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
@@ -1078,7 +1110,12 @@ screen menu_my_help():
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
         text _("ПОЛЕЗНОЕ") color gui.accent_color size 28 font 'hermes.ttf'
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting') focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+        if not renpy.variant('small'):
+            focus_mask True
+            at close_zoom
+        else:
+            at close_zoom_var_small
 
     default CurHP = 0
 
@@ -1146,7 +1183,12 @@ screen menu_opportunity():
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
         text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.accent_color size 28 font 'hermes.ttf'
-    imagebutton pos(1740, 100) auto 'interface close %s' action Jump('AfterWaiting') focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+        if not renpy.variant('small'):
+            focus_mask True
+            at close_zoom
+        else:
+            at close_zoom_var_small
 
 
     hbox pos (150, 150) spacing 30:
@@ -1215,7 +1257,12 @@ screen menu_inventory():
     frame area(150, 95, 350, 50) background None:
         text _("ВЕЩИ") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting') focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+        if not renpy.variant('small'):
+            focus_mask True
+            at close_zoom
+        else:
+            at close_zoom_var_small
 
     $ cells = 0
     $ items_list = {
@@ -1325,19 +1372,24 @@ screen menu_userinfo():
     frame area(150, 95, 350, 50) background None:
         text _("ПЕРСОНАЖИ") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting') focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+        if not renpy.variant('small'):
+            focus_mask True
+            at close_zoom
+        else:
+            at close_zoom_var_small
 
     hbox pos (150, 150) spacing 30:
         hbox ypos 25 xsize 190 spacing 5:
             viewport mousewheel 'change' draggable True id 'vp':
                 vbox spacing 5:
                     button background None  action SetVariable('CurChar', 'max') xsize 180:
-                        xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                        # xpadding 0 ypadding 0 xmargin 0 ymargin 0
                         textbutton _("Макс") action SetVariable('CurChar', 'max') selected CurChar == 'max' text_selected_color gui.text_color
                         foreground 'interface marker'
                     for char in sorted(chars.keys()):
                         button background None action SetVariable('CurChar', char) xsize 180:
-                            xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                            # xpadding 0 ypadding 0 xmargin 0 ymargin 0
                             textbutton chars[char].name action SetVariable('CurChar', char) selected CurChar == char text_selected_color gui.text_color
                             foreground 'interface marker'
             vbar value YScrollValue('vp') style 'info_vscroll'
@@ -1471,7 +1523,7 @@ screen menu_userinfo():
 
     frame area(1350, 1000, 450, 50) background None:
         textbutton _("Задать одежду персонажа") xalign 1.0:
-            text_size 24
+            text_size gui.text_size
             if CurChar == 'max':
                 action [SetVariable('cloth', clothes[mgg]), Hide('menu_userinfo'), Show('ClothesSelect')]
                 sensitive clothes[mgg].Opens()
@@ -1486,13 +1538,25 @@ screen menu_userinfo():
     key 'mouseup_3' action Jump('AfterWaiting')
 
 style userinfo_button is default:
+    xpadding 0 ypadding 1
+    xmargin 0 ymargin 2
     left_padding 30
+    yalign .5
 
 style userinfo_button_text is default:
     font 'trebucbd.ttf'
     # xpos 30
     yalign .0
     size 30
+    idle_color gui.accent_color
+    hover_color gui.text_color
+    insensitive_color gui.insensitive_color
+
+style userinfo_button_text:
+    variant "small"
+    font 'trebucbd.ttf'
+    yalign .0
+    size 36
     idle_color gui.accent_color
     hover_color gui.text_color
     insensitive_color gui.insensitive_color
@@ -1507,7 +1571,12 @@ screen ClothesSelect():
     frame area(150, 95, 750, 50) background None:
         text _("ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action [Hide('ClothesSelect'), Show('menu_userinfo')] focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s' action [Hide('ClothesSelect'), Show('menu_userinfo')]:
+        if not renpy.variant('small'):
+            focus_mask True
+            at close_zoom
+        else:
+            at close_zoom_var_small
 
     $ lst1 = cloth.GetList()
     $ list = []
@@ -1609,6 +1678,15 @@ screen cam_show():
         text _("[view_cam[1].public]") font 'bedel.otf' size 30  #drop_shadow[(2, 2)]
         add 'interface laptop cam audience' ypos 5
 
+    if len(cam_list) > 1:
+        imagebutton pos (135, 490) auto 'interface prev %s':
+            focus_mask (False if renpy.variant('small') else True)
+            action [Function(prev_cam), Jump('Waiting')]
+        imagebutton pos (1672, 490) auto 'interface next %s':
+            focus_mask (False if renpy.variant('small') else True)
+            action [Function(next_cam), Jump('Waiting')]
+
+
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '22:00':
             if current_room == house[5]:
@@ -1632,6 +1710,9 @@ screen cam_show():
 
     key 'K_ESCAPE' action [SetVariable('at_comp', False), Jump('open_site')]
     key 'mouseup_3' action [SetVariable('at_comp', False), Jump('open_site')]
+    if len(cam_list) > 1:
+        key 'K_LEFT' action [Function(prev_cam), Jump('Waiting')]
+        key 'K_RIGHT' action [Function(next_cam), Jump('Waiting')]
     if not _in_replay:
         # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
         key 'K_F8' action QuickLoad()

@@ -209,6 +209,7 @@ label Box:
 
 
 label Notebook:
+    $ view_cam = None
     if current_room == house[5]:
         jump Laptop
     $ renpy.block_rollback()
@@ -359,6 +360,8 @@ label open_site:
         else:
             scene BG char Max laptop-night-01
     show interface laptop CoverBBCams at laptop_screen
+
+    $ create_cam_list() # обновим список камер для отображения
 
     $ renpy.block_rollback()
     call screen MySite

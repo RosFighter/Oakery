@@ -483,6 +483,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'teachkiss'     : 0,
         'ask.teachkiss' : [],
         'kira.tv.touch' : 0,
+        'kiss_lessons'  : 0,
         }
 
     $ cooldown = {
@@ -503,6 +504,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'lisa_sweets' : Daily(done=True, enabled=True), # дарение сладости Лизе
         'alice_sweets': Daily(done=True, enabled=True), # дарение сладости Алисе
         'ann_sweets'  : Daily(done=True, enabled=True), # дарение сладости Анне
+        'lisa_mentor'   : Daily(done=True, enabled=True), # попытка обучения Лизы
         }
 
     # ежедневное подсматривание

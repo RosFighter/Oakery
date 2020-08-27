@@ -960,5 +960,11 @@ label after_load:
             if poss['nightclub'].stn >= 5 and kol_choco == 0:
                 $ items['choco'].InShop = True
 
+        if current_ver < "0.04.5.05":
+            $ current_ver = "0.04.5.05"
+
+            $ dcv['lisa_mentor'] = Daily(done=True, enabled=True) # попытка обучения Лизы
+            $ talk_var['kiss_lessons'] = 0 # количество успешно проведённых уроков поцелуев с Лизой
+
         if current_ver < config.version:
             $ current_ver = config.version

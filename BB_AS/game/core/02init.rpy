@@ -41,6 +41,7 @@ default persistent.memories = {}
 default persistent.mems_var = []
 
 define cam_flag = []
+define cam_list = []
 
 define weekdays = (
                   (_("ВС"), _("ВОСКРЕСЕНЬЕ")),
@@ -104,6 +105,7 @@ define talks = {
     'ann.kiss'   : TalkTheme('ann', _("Мам, а как учатся целоваться?"), 'ann_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' not in talk_var['ask.teachkiss']])"),
     'alice.kiss' : TalkTheme('alice', _("А ты умеешь целоваться?"), 'alice_about_kiss', "all([talk_var['teachkiss']>=1, 'alice' not in talk_var['ask.teachkiss']])"),
     'kira.kiss'  : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' in talk_var['ask.teachkiss'], 'alice' in talk_var['ask.teachkiss'], 'kira' not in talk_var['ask.teachkiss']])"),
+    'l.firstkiss': TalkTheme('lisa', _("Ну что, Лиза, готова?"), 'lisa_ment_kiss1', "all([lisa.plan_name=='read', talk_var['teachkiss']>3, 'lisa' not in talk_var['ask.teachkiss']])"),
     }
 
 

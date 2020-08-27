@@ -71,7 +71,7 @@ define gui.text_size = 26
 define gui.name_text_size = 30
 
 ## Размер текста в пользовательском интерфейсе.
-define gui.interface_text_size = 26
+define gui.interface_text_size = 28
 
 ## Размер заголовков в пользовательском интерфейсе.
 define gui.label_text_size = 30
@@ -422,22 +422,22 @@ init python:
     # доступнее для нажатия на планшетах и телефонах.
     if renpy.variant("touch"):
 
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
+        gui.quick_button_borders = Borders(15, 25, 15, 0)
 
     # Это изменяет размеры и интервалы различных элементов GUI, чтобы
     # убедиться, что они будут лучше видны на телефонах.
     if renpy.variant("small"):
 
         ## Размеры шрифтов.
-        gui.text_size = 46
+        gui.text_size = 32
         gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 46
-        gui.button_text_size = 46
+        gui.notify_text_size = 28
+        gui.interface_text_size = 32
+        gui.button_text_size = 36
         gui.label_text_size = 51
 
         ## Регулирует местоположение текстового окна.
-        gui.textbox_height = 360
+        gui.textbox_height = 300
         gui.name_xpos = 120
         gui.text_xpos = 135
         gui.text_width = 1650
@@ -449,20 +449,20 @@ init python:
         gui.slider_size = 54
         gui.scrollbar_size = 20
 
-    #     gui.choice_button_width = 1860
-    #
-    #     gui.navigation_spacing = 30
-    #     gui.pref_button_spacing = 15
-    #
-    #     gui.history_height = 285
-    #     gui.history_text_width = 1035
-    #
-    #     gui.quick_button_text_size = 30
-    #
-    #     ## Местоположение кнопок слотов.
+        gui.choice_button_width = 600
+
+        gui.navigation_spacing = 30
+        gui.pref_button_spacing = 15
+
+        gui.history_height = 285
+        gui.history_text_width = 1035
+
+        gui.quick_button_text_size = 30
+
+        ## Местоположение кнопок слотов.
     #     gui.file_slot_cols = 2
     #     gui.file_slot_rows = 2
-    #
+
     #     ## Режим NVL.
     #     gui.nvl_height = 255
     #

@@ -104,7 +104,8 @@ screen say(who, what):
     window:
         id "window"
         hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
-            ysize gui.textbox_height - gui.dialogue_ypos - 20
+            ypos 10
+            ysize gui.textbox_height - 55# - gui.dialogue_ypos - 20
             spacing 10
             viewport mousewheel "change" id "vp_say":
 
@@ -113,6 +114,8 @@ screen say(who, what):
             vbar value YScrollValue("vp_say") style "say_vscroll"
 
     add SideImage() xalign 0.0 yalign 1.0 zoom 0.85
+    if renpy.variant('small'):
+        use quick_menu
 
 ## Делает namebox доступным для стилизации через объект Character.
 init python:
@@ -215,7 +218,8 @@ screen choice(items):
         key "l" action Language(None)
         key "д" action Language(None)
 
-    frame area(1380, 815, 525, 245) background None:
+    frame background None area(1380, 815, 525, 245):
+
         hbox spacing 5:
             viewport spacing 0 draggable True mousewheel True id "vp_choice":
 
@@ -225,7 +229,7 @@ screen choice(items):
                         $yy+=1
                         button action i.action background None:
                             xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                            textbutton i.caption action i.action xpos 30 yalign .0
+                            textbutton i.caption action i.action yalign .0 xpos 30
                             foreground "interface marker"
 
                         key str(yy) action i.action
@@ -246,6 +250,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
+    size gui.text_size
 
 style choice_vscroll is vscrollbar:
     unscrollable "hide"
@@ -261,7 +266,7 @@ screen quick_menu():
     ## Гарантирует, что оно появляется поверх других экранов.
     zorder 100
 
-    if quick_menu:
+    if quick_menu: # and not renpy.get_screen(['room_navigation', 'MySite', 'menu_userinfo', 'menu_opportunity']):
 
         hbox:
             style_prefix "quick"
@@ -280,8 +285,8 @@ screen quick_menu():
 
 ## Данный код гарантирует, что экран быстрого меню будет показан в игре в любое
 ## время, если только игрок не скроет интерфейс.
-init python:
-    config.overlay_screens.append("quick_menu")
+# init python:
+#     config.overlay_screens.append("quick_menu")
 
 default quick_menu = renpy.variant("small")
 
@@ -334,11 +339,18 @@ screen navigation():
             button action EndReplay(confirm=True) style "nav_button":
                 textbutton _("Завершить повтор") action EndReplay(confirm=True)
 
-        if renpy.variant("pc"):
+
+        # if renpy.variant("pc"):
 
             ## Кнопка выхода блокирована в iOS и не нужна на Android.
             button action Quit(confirm=not main_menu) style "nav_button":
                 textbutton _("Выйти из игры") action Quit(confirm=not main_menu)
+
+        if renpy.variant("small"):
+
+            button action EndReplay(confirm=True) style "nav_button":
+                top_margin 200
+                textbutton _("Назад") action Return()
 
 style nav_button:
     background None
@@ -350,7 +362,7 @@ style navigation_button_text is gui_button_text:
     font "trebucbd.ttf"
     xpos 30
     yalign .0
-    size 28
+    size gui.button_text_size
     idle_color gui.choice_button_text_idle_color
     hover_color gui.text_color
     selected_color gui.text_color
@@ -454,7 +466,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     add "interface phon"
     label _("ГЛАВНОЕ МЕНЮ")
 
-    imagebutton pos (1740, 100) auto "interface close %s" action Return() focus_mask True at close_zoom
+    if not renpy.variant('small'):
+        imagebutton pos (1740, 100) auto "interface close %s" action Return() focus_mask True at close_zoom
 
     frame:
         style "game_menu_outer_frame"
@@ -1550,8 +1563,63 @@ screen quick_menu():
             textbutton _("История") action ShowMenu('history')
             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Скрыть интерфейс") action HideInterface()
             textbutton _("Меню") action ShowMenu()
 
+default AutoScroll = None
+default ChoiceHeight = 300 #ожидаемая сумма высот для полоски. отличается от высоты возможно из за спейсинга. возможно надо будет подкрутить
+
+init python:
+    def GetMenuHeight(items):
+        yy = 0
+        output = 0
+        for i in items:
+            yy+=1
+            widget = renpy.get_widget('choice','vbb'+str(yy))
+            output+= widget.window_size[1]
+        return output
+
+    def ScrlAuto(items):
+        global AutoScroll, ChoiceHeight
+        AutoScroll = 'vertical' if GetMenuHeight(items)>ChoiceHeight else None
+        return
+
+screen choice_clutch(items):
+    timer .01 action Function(ScrlAuto,items)
+
+screen choice(items):
+    variant "small"
+
+    use choice_clutch(items)
+    style_prefix "choice"
+
+    frame xalign 0.98 xsize gui.choice_button_width+50:
+        ypos 750 yanchor 1.0 ysize 400
+        background None
+        viewport:
+            spacing 0
+            draggable True
+            mousewheel True
+            scrollbars AutoScroll
+            id "vp_ch"
+            style "vp_choice"
+
+            ymaximum 400
+            yalign 1.0
+            yminimum 50
+            vbox xfill True spacing 5:
+                $ yy = 0
+                for i in items:
+                    $ yy += 1
+                    button action i.action:
+                        text i.caption style "choice_button_text"
+                        left_padding 50 right_padding 35
+                        foreground "interface marker"
+                        id 'vbb'+str(yy)
+
+style vp_choice:
+    variant 'small'
+    unscrollable "hide"
 
 style window:
     variant "small"
@@ -1635,7 +1703,7 @@ style slider_pref_slider:
 
 ################################################################################
 
-style say_vscroll:
-    variant "small"
-    unscrollable "show"
-    ypos 15 ysize 330 xsize 50
+# style say_vscroll:
+#     variant "small"
+#     unscrollable "hide"
+#     ypos 15 ysize 330 xsize 50

@@ -80,7 +80,12 @@ screen menu_gallery():
                 action SetScreenVariable('st', 'art')
                 selected st=='art'
                 sensitive False
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting') focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+        if not renpy.variant('small'):
+            focus_mask True
+            at close_zoom
+        else:
+            at close_zoom_var_small
 
     if st == 'mem':
         frame area(140, 160, 1640, 850) xalign 0.0 yalign 0.5 background None:
