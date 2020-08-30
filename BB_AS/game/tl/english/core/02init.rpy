@@ -301,3 +301,15 @@ translate english strings:
     old "{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n"
     new ""
 
+# TODO: Translation updated at 2020-08-30 23:23
+
+translate english strings:
+
+    # game/core/02init.rpy:71
+    old "Ну что, Лиза, готова?"
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Ну что, готова?"
+    new ""
+

@@ -1053,3 +1053,11 @@ translate english ann_shower_not_luck_9b36810d:
     # Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!" nointeract
     Ann_15 "[spotted!t]Max!!!! What are you doing here? Turn around now!!!" nointeract
 
+# TODO: Translation updated at 2020-08-30 23:23
+
+translate english strings:
+
+    # game/events/ann.rpy:277
+    old "Зачётные сиськи!"
+    new ""
+

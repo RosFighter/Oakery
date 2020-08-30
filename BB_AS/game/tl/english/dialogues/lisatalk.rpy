@@ -6763,3 +6763,691 @@ translate english lisa_gift_sweets_b82d876e_1:
     # Max_01 "Наслаждайся, сластёна!"
     Max_01 "Enjoy, sweet tooth!"
 
+# TODO: Translation updated at 2020-08-30 23:23
+
+# game/dialogues/lisatalk.rpy:1481
+translate english liza_hand_mass_525a4c7f:
+
+    # Max_01 "Мне только в радость, сестрёнка. А знаешь, чего мы сегодня не делали?"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:1482
+translate english liza_hand_mass_9744a717:
+
+    # Lisa_10 "Эээ... А мы что-то должны были сделать?!"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:1483
+translate english liza_hand_mass_359a4383:
+
+    # Max_05 "Конечно! Уроки поцелуев!"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:1484
+translate english liza_hand_mass_a283d2d9:
+
+    # Lisa_01 "О, точно! Эх, Макс... Начал пропускать уроки... Смотри, как бы мама не наказала!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1485
+translate english liza_hand_mass_0e38c0dc:
+
+    # Max_02 "Вот потому и спрашиваю, устроим вечернюю отработку?"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:1486
+translate english liza_hand_mass_094975bb:
+
+    # Lisa_02 "Ну давай. Почему бы и нет..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1487
+translate english liza_hand_mass_57d66784:
+
+    # Max_03 "Отлично!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:1491
+translate english liza_hand_mass_fc68d392:
+
+    # Max_04 "{i}( Это очень приятное окончание массажа... Такие сочные губки у моей сестрёнки! А язычок какой игривый... ){/i}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1498
+translate english liza_hand_mass_8e573f73:
+
+    # Max_05 "[lisa_good_kiss!t]{i}( Это так здорово... Как же не хочется отрываться от этой классной девочки! Особенно, когда и она не торопиться закончить эти поцелуи... ){/i}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1503
+translate english liza_hand_mass_f032d09a:
+
+    # Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1504
+translate english liza_hand_mass_a9ddec8c:
+
+    # Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:1514
+translate english liza_hand_mass_87d98d7f:
+
+    # Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1515
+translate english liza_hand_mass_dcbaa368:
+
+    # Max_10 "Ладно, в другой раз будет лучше..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:1525
+translate english liza_hand_mass_3320f06d_1:
+
+    # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1526
+translate english liza_hand_mass_6fbf55ab:
+
+    # Max_01 "Мне только в радость, сестрёнка. Готова к поцелуям?"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:1527
+translate english liza_hand_mass_223c2314:
+
+    # Lisa_02 "О, точно! Ты же меня сегодня с ними продинамил, так что можно..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1528
+translate english liza_hand_mass_57d66784_1:
+
+    # Max_03 "Отлично!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:1532
+translate english liza_hand_mass_5f3679b3:
+
+    # Max_04 "{i}( Целовать такие сочные губки моей младшей сестрёнки - это очень приятное окончание массажа! Её игривый язычок может свести с ума... ){/i}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1539
+translate english liza_hand_mass_4e330d46:
+
+    # Max_05 "[lisa_good_kiss!t]{i}( Как же не хочется отрываться от этой классной девочки! Особенно, когда и она не торопиться закончить эти поцелуи... ){/i}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1547
+translate english liza_hand_mass_f032d09a_1:
+
+    # Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:1548
+translate english liza_hand_mass_a9ddec8c_1:
+
+    # Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:1557
+translate english liza_hand_mass_87d98d7f_1:
+
+    # Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1558
+translate english liza_hand_mass_dcbaa368_1:
+
+    # Max_10 "Ладно, в другой раз будет лучше..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:1565
+translate english liza_hand_mass_3320f06d_2:
+
+    # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2921
+translate english lisa_ment_kiss1_635ab1df:
+
+    # Lisa_01 "Готова к чему?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2922
+translate english lisa_ment_kiss1_e4d153bb:
+
+    # Max_01 "Как к чему? К уроку поцелуев!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2923
+translate english lisa_ment_kiss1_563b783b:
+
+    # Lisa_09 "Опять ты за своё... Что, где-то набрался знаний? Погуглил или на ютубе подсмотрел?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2924
+translate english lisa_ment_kiss1_6a8d6115:
+
+    # Max_02 "Гораздо лучше! Личный опыт!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:2925
+translate english lisa_ment_kiss1_1737122f:
+
+    # Lisa_02 "Хватит заливать! Ты из дома не выходишь. Где бы ты научился? Уж точно не у Алисы. Она бы тебе только за предложение напинала бы... по всяким местам..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2926
+translate english lisa_ment_kiss1_c0ab722a:
+
+    # Max_04 "Это не важно. Ты готова учиться или нет?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:2927
+translate english lisa_ment_kiss1_62186e1c:
+
+    # Lisa_00 "Ну посмотрим, чему ты там научился... Но прежде, чем я тебе подыграю и мы начнём этот спектакль, у меня есть ряд условий." nointeract
+    Lisa_00 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2933
+translate english lisa_ment_kiss1_65e16929:
+
+    # Lisa_09 "Во-первых, если уж ты и собрался меня учить, то я хочу, чтобы наши отношения были как учитель и ученик, а не как озабоченный парень и девушка!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2934
+translate english lisa_ment_kiss1_c49c813b:
+
+    # Max_09 "И что это значит?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:2935
+translate english lisa_ment_kiss1_75c959b7:
+
+    # Lisa_01 "Это значит, Макс, что руки не распускай. Ты говоришь чему учишь и учишь именно этому. Никаких приставаний или лишних движений. Договорились?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2936
+translate english lisa_ment_kiss1_501967b3:
+
+    # Max_03 "Буду вести себя как истинный джентльмен!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:2937
+translate english lisa_ment_kiss1_0915d39b:
+
+    # Lisa_02 "Верится с трудом, ну да ладно. Важно, чтобы ты не переносил наши отношения во время этих твоих уроков на остальное наше общение. Что происходит в комнате - остаётся в комнате. Понял?" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2942
+translate english lisa_ment_kiss1_b24fc409:
+
+    # Lisa_12 "Макс! Вот об этом я и говорю. Всё, я передумала!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:2943
+translate english lisa_ment_kiss1_a84562f3:
+
+    # Max_08 "Извини, Лиза. Я глупость сморозил..."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:2944
+translate english lisa_ment_kiss1_7c38d6c0:
+
+    # Lisa_01 "Рада, что ты это осознаёшь..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2945
+translate english lisa_ment_kiss1_148797c4:
+
+    # Max_07 "Да, извини... А что там во-вторых?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2946
+translate english lisa_ment_kiss1_376338cc:
+
+    # Lisa_09 "Во-вторых, когда я скажу нет, ты остановишься и не будешь продолжать или, тем более, меня лапать. Понял?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2947
+translate english lisa_ment_kiss1_c0d51857:
+
+    # Max_04 "Понял. Буду делать только то, о чём договоримся!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:2948
+translate english lisa_ment_kiss1_9e7d3045:
+
+    # Lisa_10 "Я конечно сомневаюсь, что ты с первого раза всё поймёшь, но учти, если что, второго шанса у тебя не будет. Я просто откажусь с тобой иметь дело и учи кого-нибудь ещё. Понял?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:2949
+translate english lisa_ment_kiss1_0c782b21:
+
+    # Max_02 "Да всё я понял!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:2950
+translate english lisa_ment_kiss1_99bba31a:
+
+    # Lisa_02 "Ну ладно. Теперь я спокойна. Так чему ты сегодня решил меня учить?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:2956
+translate english lisa_ment_kiss1_11ef72ed:
+
+    # Max_01 "Как чему? Поцелуям. Я кое-что умею и хочу тебя научить..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2958
+translate english lisa_ment_kiss1_d80a776e:
+
+    # Lisa_09 "Может, в другой раз? Что-то я не в настроении сейчас..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2959
+translate english lisa_ment_kiss1_a5205752:
+
+    # Max_07 "Хорошо. Тогда попробуем, когда ты будешь повеселее..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2961
+translate english lisa_ment_kiss1_150794dc:
+
+    # Lisa_09 "Может, в другой раз? Что-то я не в настроении сейчас..." nointeract
+    Lisa_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2965
+translate english lisa_ment_kiss1_8088f082:
+
+    # Lisa_01 "[succes!t]Только не приставать. Только поцелуи. Договорились?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:2966
+translate english lisa_ment_kiss1_25aa812b:
+
+    # Max_01 "Конечно!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2970
+translate english lisa_ment_kiss1_c379bafa:
+
+    # Max_05 "{i}( Это же надо, я целуюсь со своей младшей сестрёнкой! Кажется, мне бы любой сейчас позавидовал... К тому же, такая девочка! ){/i}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2976
+translate english lisa_ment_kiss1_bede15bc:
+
+    # Lisa_03 "[lisa_good_kiss!t]Ну всё, Макс, хорошего помаленьку. Было приятно, даже очень... Будем считать, что я чему-то даже научилась..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2977
+translate english lisa_ment_kiss1_cd3464be:
+
+    # Max_03 "Рад, что помог... И мне тоже было приятно..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:2985
+translate english lisa_ment_kiss1_87d98d7f:
+
+    # Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2986
+translate english lisa_ment_kiss1_454f515b:
+
+    # Max_10 "Ладно, в другой раз получится лучше..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:2990
+translate english lisa_ment_kiss1_8051d16c:
+
+    # Lisa_00 "[failed!t]Не сейчас, Макс. Давай в другой раз..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:2991
+translate english lisa_ment_kiss1_53c3d833:
+
+    # Max_07 "Хорошо..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3002
+translate english lisa_ment_kiss_edb2d9b3:
+
+    # Lisa_01 "Не поняла... К чему я должна быть готова?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3005
+translate english lisa_ment_kiss_edadce05:
+
+    # Max_01 "К поцелуям, конечно!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3007
+translate english lisa_ment_kiss_a8140412:
+
+    # Lisa_09 "Опять ты со своими дурацкими идеями... Я сейчас не в настроении для этого! Давай, в другой раз..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3008
+translate english lisa_ment_kiss_a5205752:
+
+    # Max_07 "Хорошо. Тогда попробуем, когда ты будешь повеселее..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3010
+translate english lisa_ment_kiss_54caa25c:
+
+    # Lisa_09 "Опять ты со своими дурацкими идеями... Тебе заняться нечем?" nointeract
+    Lisa_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3014
+translate english lisa_ment_kiss_8088f082:
+
+    # Lisa_01 "[succes!t]Только не приставать. Только поцелуи. Договорились?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3015
+translate english lisa_ment_kiss_25aa812b:
+
+    # Max_01 "Конечно!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3019
+translate english lisa_ment_kiss_8051d16c:
+
+    # Lisa_00 "[failed!t]Не сейчас, Макс. Давай в другой раз..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3020
+translate english lisa_ment_kiss_53c3d833:
+
+    # Max_07 "Хорошо..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3027
+translate english lisa_ment_kiss_094975bb:
+
+    # Lisa_02 "Ну давай. Почему бы и нет..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3028
+translate english lisa_ment_kiss_57d66784:
+
+    # Max_03 "Отлично!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3031
+translate english lisa_ment_kiss_1a34ec25:
+
+    # Lisa_00 "Слушай, Макс, а это всё, чему ты решил меня научить? Может быть, в твоём учебном плане есть ещё что-то? Ну там, скажем, немного теории или что-то ещё в плане практики?"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3032
+translate english lisa_ment_kiss_9354c6b9:
+
+    # Max_02 "Конечно! Сейчас будет \"расширенный\" урок поцелуев..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3036
+translate english lisa_ment_kiss_6045ace6:
+
+    # Max_04 "{i}( Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! ){/i}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3043
+translate english lisa_ment_kiss_3e75c8e2:
+
+    # Max_05 "[lisa_good_kiss!t]{i}Ухх... Какие гладкие у неё ножки и упругая попка! И она, похоже, не против того, как и где я к ней прикасаюсь...{/i}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3048
+translate english lisa_ment_kiss_58e6b8e0:
+
+    # Lisa_09 "Эй, Макс! Мы же договорились, помнишь?! Никаких лишних движений... Хотел меня облапать и думал, я не почувствую?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3049
+translate english lisa_ment_kiss_fb8406c2:
+
+    # Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3050
+translate english lisa_ment_kiss_8373015a:
+
+    # Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3051
+translate english lisa_ment_kiss_dcbaa368:
+
+    # Max_10 "Ладно, в другой раз будет лучше..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:3058
+translate english lisa_ment_kiss_f032d09a:
+
+    # Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3059
+translate english lisa_ment_kiss_a9ddec8c:
+
+    # Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3066
+translate english lisa_ment_kiss_94105df4:
+
+    # Lisa_09 "[lisa_bad_kiss!t]Эй, Макс! Мы же договорились, помнишь?! Никаких лишних движений... Хотел меня облапать и думал, я не почувствую?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3067
+translate english lisa_ment_kiss_fb8406c2_1:
+
+    # Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3068
+translate english lisa_ment_kiss_8373015a_1:
+
+    # Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3069
+translate english lisa_ment_kiss_dcbaa368_1:
+
+    # Max_10 "Ладно, в другой раз будет лучше..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:3081
+translate english lisa_ment_kiss_094975bb_1:
+
+    # Lisa_02 "Ну давай. Почему бы и нет..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3082
+translate english lisa_ment_kiss_57d66784_1:
+
+    # Max_03 "Отлично!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3089
+translate english lisa_kiss_lesson_b04003a8:
+
+    # Max_05 "{i}( Эти нежные губки такие сладкие... С огромным удовольствием целовал бы Лизу весь день! ){/i}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3095
+translate english lisa_kiss_lesson_bede15bc:
+
+    # Lisa_03 "[lisa_good_kiss!t]Ну всё, Макс, хорошего помаленьку. Было приятно, даже очень... Будем считать, что я чему-то даже научилась..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3096
+translate english lisa_kiss_lesson_cd3464be:
+
+    # Max_03 "Рад, что помог... И мне тоже было приятно..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3105
+translate english lisa_kiss_lesson_87d98d7f:
+
+    # Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3106
+translate english lisa_kiss_lesson_454f515b:
+
+    # Max_10 "Ладно, в другой раз получится лучше..."
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:3117
+translate english lisa_advanced_kiss_lesson_6045ace6:
+
+    # Max_04 "{i}( Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! ){/i}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3125
+translate english lisa_advanced_kiss_lesson_3c839737:
+
+    # Max_05 "[lisa_good_kiss!t]{i}( Классно... Её ножки такие гладкие, а попка очень упругая! И она явно не против того, чтобы я к ней так прикасался... ){/i}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3130
+translate english lisa_advanced_kiss_lesson_78388306:
+
+    # Max_06 "[lisa_good_kiss!t]{i}( О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду... ){/i}" nointeract
+    Max_06 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3135
+translate english lisa_advanced_kiss_lesson_2c214aa3:
+
+    # Lisa_02 "А не далековато ли ты своими шаловливыми ручонками забрался, Макс?!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3136
+translate english lisa_advanced_kiss_lesson_2d3069dc:
+
+    # Max_07 "Так ты, вроде, не против была!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3137
+translate english lisa_advanced_kiss_lesson_0587ce00:
+
+    # Lisa_05 "Нууу... Ты меня так увлек своими поцелуями... А от прикосновений было только лучше! Мне нравятся эти уроки... Но, хорошего помаленьку."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:3138
+translate english lisa_advanced_kiss_lesson_31256578:
+
+    # Max_04 "Ага. Рад, что поделился с тобой этими... приятными умениями..."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3144
+translate english lisa_advanced_kiss_lesson_f50f3b61:
+
+    # Lisa_02 "Макс, слушай, а чему ещё ты будешь меня учить? Может быть, мне стоит набраться каких-нибудь теоретических знаний или что-то вроде этого?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3145
+translate english lisa_advanced_kiss_lesson_53788c49:
+
+    # Max_02 "Конечно! У меня будет для тебя кое-что, но позже..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3146
+translate english lisa_advanced_kiss_lesson_353e0075:
+
+    # Max_07 "{i}( Хм... Любопытный намёк, вот только на что? Теории хочет? Может быть, какую-то книжку купить ей про секс и всё такое? ){/i}"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3157
+translate english lisa_advanced_kiss_lesson_f032d09a:
+
+    # Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3158
+translate english lisa_advanced_kiss_lesson_a9ddec8c:
+
+    # Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3169
+translate english lisa_advanced_kiss_lesson_fail_94105df4:
+
+    # Lisa_09 "[lisa_bad_kiss!t]Эй, Макс! Мы же договорились, помнишь?! Никаких лишних движений... Хотел меня облапать и думал, я не почувствую?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3170
+translate english lisa_advanced_kiss_lesson_fail_fb8406c2:
+
+    # Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3171
+translate english lisa_advanced_kiss_lesson_fail_8373015a:
+
+    # Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3172
+translate english lisa_advanced_kiss_lesson_fail_dcbaa368:
+
+    # Max_10 "Ладно, в другой раз будет лучше..."
+    Max_10 ""
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:1491
+    old "{i}увлечь её поцелуем{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:1498
+    old "{i}закончить урок{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:1539
+    old "{i}притянуть её к себе{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2927
+    old "Э... Что? Какие условия?"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2927
+    old "Спектакль? Это не спектакль! Но я тебя слушаю..."
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2937
+    old "Понял!"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2937
+    old "Зато сколько интересного может произойти в комнате..."
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2961
+    old "Ну кто ещё тебя научит? А сейчас я готов тебе помочь! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:2970
+    old "{i}Продемонстрировать своё мастерство{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3036
+    old "{i}нежно прикасаться к ней{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3043
+    old "{i}нежно прикасаться к её груди{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3125
+    old "{i}нежно прикасаться к её груди{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
+    new ""
+
