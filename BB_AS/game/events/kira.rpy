@@ -33,7 +33,7 @@ label kira_bath:
                 Max_09 "В следующий раз лучше заглянуть со стремянки..."     # стремянка уже установлена
             jump .end
 
-        "{i}войти{/i}" if talk_var['kira.bath.mass'] > 0:
+        "{i}войти{/i}" if talk_var['kira.bath.mass'] > 0 and len(online_cources)>1 and online_cources[1].cources[0].less:
             # уже состоялся массаж ног в ванной
             jump .mass_bath
 
@@ -63,7 +63,7 @@ label kira_bath:
         $ Skill('hide', 0.03)
 
         Max_02 "Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой..."
-        if all([talk_var['kira.porn']>0, talk_var['lisa.footmass']>0]):
+        if all([len(online_cources)>1 and online_cources[1].cources[0].less, talk_var['kira.porn']>0, talk_var['lisa.footmass']>0]):
             # совместный просмотр порно уже был, Макс делал девчонкам массаж ног
             show Kira bath-window 02
             Max_05 "Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально..."   #если был совместный просмотр порно с Кирой
@@ -147,6 +147,7 @@ label kira_bath:
         if not _in_replay:
             $ added_mem_var('kira_mass_bath_first')
             $ added_mem_var('kira.bath.mass')
+            $ mgg.cleanness = 100
         jump .end_sleep
 
     label .mass_bath:
@@ -351,6 +352,7 @@ label kira_bath:
         $ renpy.end_replay()
         $ spent_time += 30
         $ current_room = house[0]
+        $ mgg.cleanness = 100
         jump Sleep
 
     label .end:
@@ -451,7 +453,7 @@ label kira_night_tv:
                                 jump .end
                             "Давай смотреть порно?!" if talk_var['kira.porn']>0:
                                 jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss']:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
                         Kira_00 "Хорошо, Макс. Спокойной ночи! Я тоже уже скоро ложусь спать, только серию досмотрю..."
@@ -479,7 +481,7 @@ label kira_night_tv:
                                 Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
                                 Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телек с тобой посмотреть?"
                                 jump .porn
-                            "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss']:
+                            "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
                                 $ renpy.show('Kira tv-closer '+pose3_4+kira.dress)
                                 jump .teachkiss
                             "Я просто хотел пожелать спокойной ночи!":
@@ -513,7 +515,7 @@ label kira_night_tv:
                     Kira_07 "А? Макс? Как ты подкрался незаметно... Я думала, уже все спят давно... А я тут... отдыхаю, как видишь. Присоединишься?"
                     "Конечно, да!":
                         jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss']:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
                         jump .good_night
@@ -530,7 +532,7 @@ label kira_night_tv:
                         Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
                         Max_03 "Конечно, тётя Кира. А мне можно тоже... посмотреть этот фильм?"
                         jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss']:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
                         $ renpy.show('Kira tv-closer '+pose3_4+kira.dress)
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
@@ -629,7 +631,7 @@ label kira_night_tv:
             scene BG char Alice tv-mass-05
             show Kira tv-closer max-03
             $ __suf = ''
-            if talk_var['kira.bath.mass']:
+            if talk_var['kira.bath.mass'] and len(online_cources)>1 and online_cources[1].cources[0].less:
                 Kira_05 "Если хочешь, можешь даже снять шорты, чтобы резинка ничего не передавливала..."
                 Max_02 "Только если ты тоже разденешься..."
                 menu:
@@ -754,7 +756,7 @@ label kira_night_tv:
                 Max_03 "Ага... Я учту это."
                 Kira_01 "Тогда, на сегодня мы закончили. Конечно, получается у тебя пока не очень, но это нормально. И ты знаешь, где меня найти, если захочешь потренироваться ещё... А теперь марш спать!"
                 Max_01 "Конечно! Спасибо, тётя Кира!"
-                $ Skill('kissing', 0.2)
+                $ Skill('kissing', 0.2, 3.0)
                 jump .end
 
             "{i}прикоснуться к её попке{/i}" if not _in_replay:
@@ -766,14 +768,14 @@ label kira_night_tv:
                 Max_03 "Ага... Я учту это."
                 Kira_01 "Тогда, на сегодня мы закончили. Конечно, получается у тебя пока не очень, но это нормально. И ты знаешь, где меня найти, если захочешь потренироваться ещё... А теперь марш спать!"
                 Max_01 "Конечно! Спасибо, тётя Кира!"
-                $ Skill('kissing', 0.2)
+                $ Skill('kissing', 0.2, 3.0)
                 jump .end
 
             "{i}подтянуть её ближе к себе{/i}":
                 $ renpy.block_rollback()
                 scene BG char Alice tv-mass-05
                 show Kira tv-kiss 2-01
-                $ Skill('kissing', 0.1)
+                $ Skill('kissing', 0.1, 3.0)
                 menu:
                     Max_02 "{i}( Ничего себе! Кира меня не оттолкнула! Похоже, я всё делаю верно... и, наверно, можно двигаться дальше? Боже мой, какая же у неё гладкая кожа, просто шёлк! ){/i}"
                     "{i}прикоснуться к её груди{/i}" if not _in_replay:
@@ -787,14 +789,14 @@ label kira_night_tv:
                         Max_03 "Ага... Я учту это."
                         Kira_01 "Тогда, на сегодня мы закончили. Конечно, получается у тебя пока не очень, но это нормально. И ты знаешь, где меня найти, если захочешь потренироваться ещё... А теперь марш спать!"
                         Max_01 "Конечно! Спасибо, тётя Кира!"
-                        $ Skill('kissing', 0.2)
+                        $ Skill('kissing', 0.2, 3.0)
                         jump .end
 
                     "{i}прикоснуться к её попке{/i}":
                         $ renpy.block_rollback()
                         scene BG char Alice tv-mass-01
                         show Kira tv-kiss 2-02
-                        $ Skill('kissing', 0.2)
+                        $ Skill('kissing', 0.2, 3.0)
                         menu:
                             Max_03 "{i}( Обалденно! Неужели это не сон и я действительно трогаю её суперскую попку?! Ну и что, что это попка моей тёти... На ощупь она просто восхитительна - нежная и упругая! Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться... ){/i}"
                             "{i}прикоснуться к её груди{/i}":
@@ -813,7 +815,7 @@ label kira_night_tv:
                     show Kira tv-kiss 1-04
                     Kira_04 "Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
                     $ talk_var['kira.tv.touch'] = 1 # теперь в ванной Макс сможет получить FJ (с убеждением)
-                    $ Skill('kissing', 0.3)
+                    $ Skill('kissing', 0.3, 3.0)
                 else:
                     #если был массаж ног Киры в ванне
                     $ _ch2 = GetChance(mgg.social, 2, 900)
@@ -823,11 +825,11 @@ label kira_night_tv:
                             pass
                     if not RandomChance(_ch2.ch) and not _in_replay: ###Убеждение не удалось
                         $ Skill('social', 0.1)
-                        $ Skill('kissing', 0.3)
+                        $ Skill('kissing', 0.3, 3.0)
                         Kira_04 "[failed!t]Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
                     else:
                         $ Skill('social', 0.2)
-                        $ Skill('kissing', 0.5)
+                        $ Skill('kissing', 0.5, 3.0)
                         menu:
                             Kira_09 "[succes!t]О да... уже значительно лучше... Ты быстро схватываешь... Ммм..."
                             "{i}развязать её ночнушку{/i}":
@@ -876,7 +878,7 @@ label kira_night_tv:
             "{i}развязать её ночнушку{/i}":
                 show Kira tv-kiss 3-02
         Max_05 "{i}( У неё такая большая и шелковистая грудь, а сосочки твёрдые и набухшие... И ей это всё очень нравится, она дышит так жарко... Её рука так приятно и легко поглаживает головку моего члена! ){/i}"
-        $ Skill('kissing', 0.5)
+        $ Skill('kissing', 0.5 if mgg.kissing < 5 else 0.2, 8.5)
         if not flags['kira.bath.fj']: # fj в ванной ещё не было
             $ talk_var['kira.tv.touch'] = 2 # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
             Kira_05 "О боже, Макс... Какой же ты развратник, забрался мне под ночнушку... Охх... Остановись, Макс..."
@@ -1189,7 +1191,7 @@ label kira_shower:
             Max_00 "Кира сейчас принимает душ, не стоит ей мешать..."
             "{i}уйти{/i}":
                 return
-    $ peeping['Kira_shower'] = 1
+    $ peeping['kira_shower'] = 1
     menu:
         Max_01 "Интересно, кто сейчас в душе?"
         "{i}заглянуть со двора{/i}":
@@ -1205,7 +1207,7 @@ label kira_shower:
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
         scene BG bathroom-morning-00
-        $ peeping['Kira_shower'] = 2
+        $ peeping['kira_shower'] = 2
         $ __r1 = renpy.random.choice(['b', 'c', 'd'])
         $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
@@ -1221,7 +1223,7 @@ label kira_shower:
         $ Skill('hide', 0.03)
 
         $ renpy.scene()
-        $ peeping['Kira_shower'] = 2
+        $ peeping['kira_shower'] = 2
         $ __r1 = renpy.random.choice(['01', '02', '03', '04'])
         $ renpy.show('Kira shower '+__r1)
         $ renpy.show('FG shower 00'+mgg.dress)

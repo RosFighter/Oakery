@@ -50,11 +50,6 @@ label cam1_kira_shower:
         show FG cam-shum-act at laptop_screen
         if 'kira_bath_mirror' not in cam_flag:
             $ cam_flag.append('kira_bath_mirror')
-            # if __r1 == 'b':
-            #     Max_00 "Тётя Кира красуется перед зеркалом... Жаль, но всё самое вкусное прикрыто полотенцем..."
-            # elif __r1 == 'c':
-            #     Max_00 "Здорово, тётя Кира в одних трусиках любуется собой!"
-            # elif __pose in ['01', '02', '03']:
             if __pose in ['01', '02', '03']:
                 Max_03 "Тётя Кира красуется перед зеркалом. Полюбуемся..."
             else:

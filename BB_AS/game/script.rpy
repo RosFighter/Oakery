@@ -12,7 +12,7 @@ label language_chooser:
 
     call screen choice_lang
 
-    $ renpy.utter_restart()
+    # $ renpy.utter_restart()
 
 
 label start:

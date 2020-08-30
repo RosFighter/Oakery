@@ -525,16 +525,11 @@ label DishesWashed:
             pass
     if GetWeekday(day) != 6:
         if GetWeekday(day) == 0:
-            # $ __name_label = GetPlan(plan_alice, day, '10:30').label
             $ __name_label = alice.get_plan(day, '10:30').label
         else:
-            # $ __name_label = GetPlan(plan_alice, day, '11:30').label
             $ __name_label = alice.get_plan(day, '11:30').label
         if __name_label == 'alice_dishes':
-            if GetRelMax('alice')[0] < 3:
-                $ AddRelMood('alice', 10, 60)
-            else:
-                $ AddRelMood('alice', 0, 60)
+            $ AddRelMood('alice', 10, 60, 2)
     $ dishes_washed = True
     $ spent_time = max((60 - int(tm[-2:])), 50)
     $ cur_ratio = 2
@@ -756,6 +751,9 @@ label InstallCam:
     $ items['hide_cam'].have = False
     $ cur_ratio = 1.5
     $ spent_time = 30
+    if GetKolCams(house)==9:
+        $ items['hide_cam'].InShop = False
+        $ items['hide_cam'].have = False
     jump Waiting
 
 
@@ -786,6 +784,7 @@ label HideSpider:
 
     if '00:40' < tm < '01:00':
         Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
+        jump Waiting
 
     $ _ch1 = Chance({'00:00' <= tm <= '00:40' : 800, '23:00' <= tm <= '23:59' : 700, '20:00' <= tm <= '22:59' : 500, '01:00' <= tm <= '19:59' : 0,}[True])
     menu:

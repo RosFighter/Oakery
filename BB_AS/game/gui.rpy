@@ -460,8 +460,9 @@ init python:
         gui.quick_button_text_size = 30
 
         ## Местоположение кнопок слотов.
-    #     gui.file_slot_cols = 2
-    #     gui.file_slot_rows = 2
+        gui.file_slot_cols = 3
+        # gui.file_slot_rows = 2
+        gui.slot_spacing = 7
 
     #     ## Режим NVL.
     #     gui.nvl_height = 255

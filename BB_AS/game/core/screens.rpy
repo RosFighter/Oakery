@@ -147,8 +147,8 @@ screen choice_lang():
     tag menu
     modal True
     style_prefix 'lang'
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle 'interface/ENG.webp' action [Language('english'), Return()] focus_mask True at lang
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle 'interface/RUS.webp' action [Language(None), Return()] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle 'interface/ENG.webp' action [Language('english'), Function(renpy.full_restart)] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle 'interface/RUS.webp' action [Language(None), Function(renpy.full_restart)] focus_mask True at lang
 
 ################################################################################
 
@@ -1680,10 +1680,10 @@ screen cam_show():
 
     if len(cam_list) > 1:
         imagebutton pos (135, 490) auto 'interface prev %s':
-            focus_mask (False if renpy.variant('small') else True)
+            focus_mask (None if renpy.variant('small') else True)
             action [Function(prev_cam), Jump('Waiting')]
         imagebutton pos (1672, 490) auto 'interface next %s':
-            focus_mask (False if renpy.variant('small') else True)
+            focus_mask (None if renpy.variant('small') else True)
             action [Function(next_cam), Jump('Waiting')]
 
 

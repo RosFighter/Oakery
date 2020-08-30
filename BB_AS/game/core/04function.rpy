@@ -290,9 +290,14 @@ init python:
             }[True]
 
 
-    def AddRelMood(char, rel, mood): # добавить изменение настроения и отношений и показать подсказку
+    def AddRelMood(char, rel, mood, rel_limit=None): # добавить изменение настроения и отношений и показать подсказку
         if _in_replay:
             return
+
+        # если лимит отношений есть, нуно определить, на сколько поднимать отношения и поднимать ли их вообще
+        limit = {1 : 300, 2 : 600, 3 : 1000,  4 : 1500, 5 : 2000}[rel_limit] if rel_limit is not None else 2000
+        rel = rel if chars[char].relmax + rel < limit else (limit-chars[char].relmax if chars[char].relmax < limit else 0)
+
         rel_suf = ChangeRel(rel)
         mood_suf = ChangeMood(mood)
 
@@ -794,7 +799,7 @@ init python:
         elif char=='kira':
             dress = 'a'
             if name in ['swim', 'sun']:
-                inf = '03a' if pose3_4 == '03' and name == 'swim' else '03'
+                inf = '03w' if pose3_4 == '03' and name == 'swim' else '03'
             elif name == 'sleep':
                 inf = '02'
             elif name == 'night_tv':
@@ -1057,7 +1062,7 @@ init python:
         chance = 90
         rise = 90
         for d in range(0, len(punalice)-1):
-            if punalice[d][0] in [4,5,6]:
+            if punalice[d][0] in [4,5,6, 10]:
                 break # посчет идет только до ближайшего требования Макса
             else:
                 chance += rise
@@ -1156,7 +1161,7 @@ init python:
         if var.find('.')>0:
             v1, arg = var.split('.')
             if eval(var) < limit:
-                setattr(eval(v1), arg, a)
+                setattr(eval(v1), arg, eval(var)+a)
                 if eval(var) > limit:
                     setattr(eval(v1), arg, limit)
         else:

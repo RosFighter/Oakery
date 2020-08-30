@@ -343,8 +343,8 @@ screen navigation():
         # if renpy.variant("pc"):
 
             ## Кнопка выхода блокирована в iOS и не нужна на Android.
-            button action Quit(confirm=not main_menu) style "nav_button":
-                textbutton _("Выйти из игры") action Quit(confirm=not main_menu)
+        button action Quit(confirm=not main_menu) style "nav_button":
+            textbutton _("Выйти из игры") action Quit(confirm=not main_menu)
 
         if renpy.variant("small"):
 
@@ -812,6 +812,10 @@ style slot_button_text:
 style slot_vscrollbar:
     xsize 5
 
+style slot_vscrollbar:
+    variant 'small'
+    xsize 25
+
 ## Экран настроек ##############################################################
 ##
 ## Экран настроек позволяет игроку настраивать игру под себя.
@@ -883,48 +887,40 @@ screen preferences():
 
                     bar value Preference("auto-forward time")
 
-                vbox:
-
-                    if config.has_music:
-                        label _("Громкость музыки")
-
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_sound:
-
-                        label _("Громкость звуков")
-
-                        hbox:
-                            bar value Preference("sound volume")
-
-                            if config.sample_sound:
-                                textbutton _("Тест") action Play("sound", config.sample_sound)
-
-
-                    if config.has_voice:
-                        label _("Громкость голоса")
-
-                        hbox:
-                            bar value Preference("voice volume")
-
-                            if config.sample_voice:
-                                textbutton _("Тест") action Play("voice", config.sample_voice)
-
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
-
-                        textbutton _("Без звука"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
-    # imagebutton:
-    #     align(0.02, 0.98)
-    #     if persistent.orint:
-    #         idle "gui/button/on.png"
-    #         action SetVariable("persistent.orint", False)
-    #     else:
-    #         idle "gui/button/off.png"
-    #         action SetVariable("persistent.orint", True)
+                # vbox:
+                #
+                #     if config.has_music:
+                #         label _("Громкость музыки")
+                #
+                #         hbox:
+                #             bar value Preference("music volume")
+                #
+                #     if config.has_sound:
+                #
+                #         label _("Громкость звуков")
+                #
+                #         hbox:
+                #             bar value Preference("sound volume")
+                #
+                #             if config.sample_sound:
+                #                 textbutton _("Тест") action Play("sound", config.sample_sound)
+                #
+                #
+                #     if config.has_voice:
+                #         label _("Громкость голоса")
+                #
+                #         hbox:
+                #             bar value Preference("voice volume")
+                #
+                #             if config.sample_voice:
+                #                 textbutton _("Тест") action Play("voice", config.sample_voice)
+                #
+                #     if config.has_music or config.has_sound or config.has_voice:
+                #         null height gui.pref_spacing
+                #
+                #         textbutton _("Без звука"):
+                #             action Preference("all mute", "toggle")
+                #             style "mute_all_button"
 
 
 style pref_label is gui_label

@@ -86,10 +86,7 @@ label wash_dishes_alice:
             menu:
                 Alice_07 "Что это с тобой? Но я не откажусь. И... спасибо."
                 "{i}мыть посуду{/i}":
-                    if GetRelMax("alice")[0] < 3:
-                        $ AddRelMood('alice', 10, 60)
-                    else:
-                        $ AddRelMood('alice', 0, 60)
+                    $ AddRelMood('alice', 10, 60, 2)
                     $ dishes_washed = True
                     $ spent_time = max((60 - int(tm[-2:])), 30)
                     scene BG crockery-morning-00
@@ -551,6 +548,7 @@ label alice_talk_tv:
                     if not _in_replay:
                         $ added_mem_var('alice_not_nopants')
                         $ current_room = house[0]
+                        $ punalice[3][0] = 10  #ставим на три дня раньше требование Макса, чтобы ослушание Алисы наступило раньше, чем при требовании во время курения
                     jump .end
                 "{i}продолжить{/i} \n{color=[_ch25.col]}(Массаж. Шанс: [_ch25.vis]){/color}" if _drink==2:
                     $ alice.dress = 'c'
@@ -622,7 +620,7 @@ label alice_talk_tv:
     label .end:
         $ renpy.end_replay()
         $ spent_time = max((60 - int(tm[-2:])), 40)
-        $ AddRelMood('alice', 0, __mood)
+        $ AddRelMood('alice', 0, __mood, 3)
         $ cur_ratio = 0.5
         jump Waiting
 
@@ -875,7 +873,7 @@ label gift_cigarettes:
     $ __mood += 100
     $ spent_time += 10
     $ dcv['smoke'].set_lost(0)
-    $ AddRelMood('alice', 10, __mood)
+    $ AddRelMood('alice', 10, __mood, 3)
     return
 
 
@@ -1736,7 +1734,7 @@ label Alice_solar:
     $ renpy.show('Max sun-alone 01'+mgg.dress)
     menu .type_choice:
         Alice_07 "Эти шезлонги всем хороши, но на животе загорать не получается. Приходится коврик для йоги использовать..."
-        "{i}нанести крем{/i}" if (kol_cream >= 3 and mgg.massage < 2.0) or 3<=kol_cream<7:  # просто наносим крем. близко к оригиналу
+        "{i}нанести крем{/i}" if (kol_cream >= 3 and not (len(online_cources)>1 and online_cources[1].cources[0].less > 0)) or 3<=kol_cream<7:  # просто наносим крем. близко к оригиналу
             $ SetCamsGrow(house[6], 140)
             $ _suf = 'a'
             $ spent_time += 20
@@ -1788,7 +1786,7 @@ label Alice_solar:
             elif kol_cream < 7:
                 Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
                 $ items['solar'].InShop = True
-            $ AddRelMood('alice', 5, 50)
+            $ AddRelMood('alice', 5, 50, 2)
         "{i}сделать массаж с кремом{/i}" if all([kol_cream >= 7, (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):  # попытка сделать массаж с кремом
             $ _massaged = []
             $ _talk_top = False
@@ -1818,19 +1816,19 @@ label massage_sunscreen:
             Max_03 "Да пустяки, обращайся!"
             Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
             Max_05 "Не за что! Всегда рад..."
-            $ AddRelMood('alice', 15, 150)
+            $ AddRelMood('alice', 15, 150, 3)
             jump .end  # если Макс прошел курсы массажа ног, ему доступны 5 зон
 
     elif len(_massaged) == 4:
         Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
         Max_04 "Да не за что, обращайся!"
-        $ AddRelMood('alice', 10, 100)
+        $ AddRelMood('alice', 10, 100, 3)
         jump .end  # если курсы не пройдены и первыми массировались ступни, доступно 4 зоны
 
     elif len(_massaged) == 2 and _massaged[0] != 'foot':
         Alice_03 "Спасибо, Макс! На сегодня достаточно."
         Max_01 "Да не за что, обращайся!"
-        $ AddRelMood('alice', 5, 50)
+        $ AddRelMood('alice', 5, 50, 2)
         jump .end
 
     ### выбираем зону массажа
@@ -2784,7 +2782,7 @@ label alice_sorry_gifts:
                                 call alice_sorry_gifts.you_deserve from _call_alice_sorry_gifts_you_deserve
                             else:
                                 call alice_sorry_gifts.what_bummer from _call_alice_sorry_gifts_what_bummer
-                    $ AddRelMood('alice', 5, 150)
+                    $ AddRelMood('alice', 5, 150, 3)
 
         elif len(sorry_gifts['alice'].give) == 2:  ### дарим в третий раз
             if sorry_gifts['alice'].give == [1, 1]:  ### ненависное, ненавистное, любимое
@@ -2952,7 +2950,7 @@ label alice_sorry_gifts:
                     Max_02 "Второе, конечно!"
                     Alice_05 "Ну да, конечно... Иди давай."
                     $ flags['alice_hugs'] = 4
-                    $ AddRelMood('alice', 5, 150)
+                    $ AddRelMood('alice', 5, 150, 3)
 
         $ sorry_gifts['alice'].give.append(3)
         jump .end

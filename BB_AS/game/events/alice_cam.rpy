@@ -1,7 +1,7 @@
 
 label cam0_alice_sleep_night:
     if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
-        $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) else 'sleep_no_fun')
+        $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) and not peeping['alice_sleep'] else 'sleep_no_fun')
 
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
