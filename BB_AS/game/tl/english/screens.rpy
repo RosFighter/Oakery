@@ -388,21 +388,21 @@ translate english strings:
 
     # game/screens.rpy:280
     old "Сохранить"
-    new ""
+    new "Save"
 
     # game/screens.rpy:281
     old "Б.Сохр"
-    new ""
+    new "Q.Save"
 
     # game/screens.rpy:282
     old "Б.Загр"
-    new ""
+    new "Q.Load"
 
     # game/screens.rpy:283
     old "Опции"
-    new ""
+    new "Options"
 
     # game/screens.rpy:1562
     old "Скрыть интерфейс"
-    new ""
+    new "Hide interface"
 

@@ -1059,5 +1059,5 @@ translate english strings:
 
     # game/events/ann.rpy:277
     old "Зачётные сиськи!"
-    new ""
+    new "Nice tits!"
 

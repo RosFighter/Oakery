@@ -93,5 +93,5 @@ translate english strings:
 translate english cam_after_waiting_c283f316_1:
 
     # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
-    Max_09 ""
+    Max_09 "Lisa's in the room... and the verandah is occupied! I shouldn't risk viewing the cameras now."
 
