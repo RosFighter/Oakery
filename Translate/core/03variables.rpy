@@ -12,19 +12,19 @@ translate english strings:
 
     # game/core/03variables.rpy:6
     old "КОМНАТА\nАЛИСЫ"
-    new "ALICE'S\nROOM"
+    new "ALICES\nROOM"
 
     # game/core/03variables.rpy:6
     old "КОМНАТА АЛИСЫ"
-    new "ALICE'S ROOM"
+    new "ALICES ROOM"
 
     # game/core/03variables.rpy:6
     old "КОМНАТА\nАННЫ"
-    new "ANN'S\nROOM"
+    new "ANNS\nROOM"
 
     # game/core/03variables.rpy:6
     old "КОМНАТА АННЫ"
-    new "ANN'S ROOM"
+    new "ANNS ROOM"
 
     # game/core/03variables.rpy:6
     old "ВАННАЯ\nКОМНАТА"
@@ -68,7 +68,7 @@ translate english strings:
 
     # game/core/03variables.rpy:22
     old "Лиза, младшая сестрёнка. Милая и весёлая. Она ещё учится в школе. С Лизой мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."
-    new "This is Lisa, my younger sister. She's very cute, and has a playful personality.  She's still going to school. Even though we fight sometimes we're actually pretty close, and she always looks to me for for help whenever there's trouble."
+    new "This is Lisa, my younger sister. She's very cute and has a playful personality. She's still going to school. Even though we fight sometimes we're actually pretty close, and she always looks to me for for help whenever there's trouble."
 
     # game/core/03variables.rpy:22
     old "Алиса"
@@ -92,7 +92,7 @@ translate english strings:
 
     # game/core/03variables.rpy:22
     old "Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."
-    new "Alice-my older sister. She has a short fuse, if she's angry at me I can expect a slap to the face at best. She recently graduated from school and is supposed to be looking for work, but all I see her do all day blog on her laptop. She thinks I'm an idiot and we don't really get along. Why do older sisters have to be so bitchy?"
+    new "Alice-my older sister. She has a short fuse, if she's angry at me I can expect a slap to the face at best. She recently graduated from school and is supposed to be looking for work, but all I see her do all day blogging on her laptop. She thinks I'm an idiot and we don't really get along. Why do older sisters have to be so bitchy?"
 
     # game/core/03variables.rpy:22
     old "Анна"
@@ -532,7 +532,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Наконец-то, у меня есть свой собственный сайт, где транслируется изображение с камеры из гостиной! Теперь нужно увеличить аудиторию, ведь чем больше людей, тем больше доход от рекламных баннеров. Сделать это можно с помощью вложений в рекламу своего сайта. Кроме того, если в кадре происходит что-то интересное, аудитория также растёт."
-    new "Finally, I have my own streaming website! Now I need to increase my audience to earn more money. And for that I need to advertise my website somewhere. My audience should grow when something exciting happens on stream."
+    new "Finally, I have my own streaming website! Now I need to increase the size of my audience to earn more money. And for that I need to advertise my website somewhere. My audience should grow when something exciting happens on stream."
 
     # game/core/03variables.rpy:324
     old "{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
@@ -564,7 +564,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Вот это да! Я был не так далёк от истины. Конечно, это не порно, но уж точно эротика, да ещё какая! Видимо, Алисе нравятся любовные романы с эротическими оттенками, так сказать. Может быть, стоит ей подарить подобную книгу и посмотреть на её реакцию?"
-    new "Wow, I was almost right! It's not porn, but it's definitely erotica, and it's not shy either! I guess Alice likes love stories with an erotic touch. Maybe I should gift her some and see her reaction."
+    new "Wow, I was almost right! It's not porn, but it's definitely erotica, and it's not the soft type either! I guess Alice likes love stories with an erotic touch. Maybe I should gift her some and see her reaction."
 
     # game/core/03variables.rpy:324
     old "Судя по реакции Алисы, подарок ей понравился. Видимо, стоит периодически заходить в книжный интернет-магазин и смотреть новинки. Возможно, таким образом удастся чуть-чуть улучшить отношения с Алисой."
@@ -672,7 +672,7 @@ translate english strings:
 
     # game/core/03variables.rpy:371
     old "Насчёт посуды..."
-    new "About dishes..."
+    new "About the dishes..."
 
     # game/core/03variables.rpy:371
     old "Мам, дай денег, пожалуйста..."
@@ -680,11 +680,11 @@ translate english strings:
 
     # game/core/03variables.rpy:371
     old "Я продукты заказал!"
-    new "I've ordered the groceries, mom!"
+    new "I've ordered the groceries, Mom!"
 
     # game/core/03variables.rpy:371
     old "Мам, бассейн чист!"
-    new "I've cleaned the pool, mom!"
+    new "I've cleaned the pool, Mom!"
 
     # game/core/03variables.rpy:371
     old "Что смотришь?"
@@ -723,7 +723,7 @@ translate english strings:
 
     # game/core/03variables.rpy:327
     old "Алиса настойчиво просит маму купить ей вечернее платье для посещения ночных клубов. Та ей регулярно отказывала, пока Эрик не предложил подарить ей платье во время следующего шоппинга. Нужно поспешить, если я хочу сделать это первым!"
-    new "Alice asked mom for a new evening dress. Usually mom would say no, but this time Eric said he'd buy her one on the next shopping trip. I should hurry if I want to beat him to it and give her the present myself."
+    new "Alice asked mom for a new evening dress. Usually Mom would say no, but this time Eric said he'd buy her one on the next shopping trip. I should hurry if I want to beat him to it and give her the present myself."
 
     # game/core/03variables.rpy:327
     old "Мне удалось скопить приличную сумму и купить платье для Алисы. Теперь, нужно успеть его подарить ей, пока это не сделал кто-то другой..."
@@ -731,7 +731,7 @@ translate english strings:
 
     # game/core/03variables.rpy:327
     old "Вот что значит не везёт. Я долго копил на красивое короткое платье для Алисы и даже купил его, но меня опередил Эрик... И что самое обидное, он купил точно такое же, но подарил его первым. Теперь у меня есть бесполезное платье..."
-    new "Now this is bad luck. I've spent so much money on a beautiful short dress for Alice, but Eric has beaten me to it. And of course he got her same kind of dress, so I can't just give mine to her."
+    new "Now this is bad luck. I've spent so much money on a beautiful short dress for Alice, but Eric has beaten me to it. And of course he picked the same one as me, so I can't just give mine to her."
 
     # game/core/03variables.rpy:327
     old "Вот что значит не везёт. Я долго копил на красивое короткое платье для Алисы, но меня опередил Эрик... Не удивительно. У него же куча денег. Он может себе позволить такие подарки... Кажется, теперь Алиса к нему относится гораздо лучше..."
@@ -782,7 +782,7 @@ translate english strings:
 
     # game/core/03variables.rpy:436
     old "Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."
-    new "Even before mom introduced me to her new boyfriend Eric, I had the feeling he would be bad news. Something just doesn't feel right about him."
+    new "Even before Mom introduced me to her new boyfriend Eric, I had the feeling he would be bad news. Something just doesn't feel right about him."
 
 # TODO: Translation updated at 2020-02-02 11:37
 
@@ -794,15 +794,15 @@ translate english strings:
 
     # game/core/03variables.rpy:291
     old "Оказалось, что Алиса курит. Причём, она старается это делать, когда дома никого нет. Это можно использовать... Рассказать маме самому или подставить Алису, чтобы мама сама догадалась... А может быть, всё это позволит наладить с Алисой отношения? Столько вариантов. Какой же выбрать?"
-    new "Turns out Alice is a smoker. And she tries to smoke when no one is around. I could use this... Tell mom the truth or frame Alice so mom will figure out everything herself? Or maybe it could improve our relationship? So many options, what should I choose?"
+    new "Turns out Alice is a smoker, trying to get one in when nobodys around. I could use this... I could tell Mom, or even frame Alice? Or maybe it could improve our relationship by keeping it a secret? So many options, what should I choose?"
 
     # game/core/03variables.rpy:291
     old "Мама всё узнала про сигареты и Алиса была наказана. Причём, серьёзно так, у всех на глазах, да по голой заднице. Что самое печальное - Алиса знает, что это я её сдал. Так что, она меня теперь ненавидит, наверное... Неизвестно, получится ли теперь завоевать её доверие..."
-    new "Mom learned about smoking and Alice got a harsh punishment. Mom slapped her naked ass in front of everyone. Unfortunately Alice knows I ratted her out so she probably hates me. I'm not sure if I'll ever earn her trust again."
+    new "Mom learned about Alices habit and gave her a harsh punishment. Mom slapped her bare ass in front of everyone. Unfortunately, Alice knows I ratted her out so she probably hates me. I'm not sure if I'll ever earn her trust again."
 
     # game/core/03variables.rpy:291
     old "Мама почувствовала сигаретный дым, но я не сдал Алису. Кажется, сестрёнка это оценила. Вот только что мешает её подставить, чтобы мама узнала об этом не от меня, а как бы сама что-то нашла? И я не при делах!\n\nА может быть, эта вредная привычка Алисы поможет мне улучшить с ней отношения?"
-    new "Mom noticed smoke but I didn't rat Alice out. I could still frame Alice in a way that wouldn't implicate me.\n\n\nOr maybe I could improve my relationship with Alice"
+    new "Mom noticed ciggarette smoke but I didn't rat Alice out. I could still frame Alice in a way that wouldn't implicate me.\n\n\nOr maybe I could improve my relationship with Alice"
 
     # game/core/03variables.rpy:296
     old "Школьница"
@@ -810,19 +810,19 @@ translate english strings:
 
     # game/core/03variables.rpy:296
     old "Итак, в новой школе Лиза оказалась не такой отличницей, как раньше. Видимо, в новой школе уровень знаний требуется намного более высокий. Ну что же, это хорошая возможность проявить свои школьные знания и помочь младшей сестрёнке разобраться в материале... Или же наоборот, помешать получить хорошую оценку и понаблюдать, как мама её накажет? А может быть, попросить у неё что-то за помощь? Но сначала надо поговорить с Лизой и спросить, что она обо всём этом думает?"
-    new "Lisa's grades took a dive. Looks like the new school requires higher level of education. This is a good opportunity to show my knowledge and help out my little sister... Or sabotage her grades and see how mom will punish her. Or maybe ask for something in return for my help? But first I have to talk to Lisa and see her thoughts on the situation."
+    new "Lisa's grades took a dive. Looks like her new school has a much higher standard. This is a good opportunity to show my knowledge and help out my little sister... Or sabotage her grades and see how Mom will punish her. Or, maybe I can ask for something in exchange for my help? But first I'll have to talk to Lisa and get her thoughts on the situation."
 
     # game/core/03variables.rpy:296
     old "Я поговорил с Лизой и пообещал ей, что помогу с уроками. Причём, абсолютно безвозмездно. То есть - даром. Конечно, это не очень свойственно для меня, но зато есть все шансы наладить отношения с сестрёнкой и завоевать её доверие..."
-    new "I talked with Lisa and promised to help with her studies. For free. Just cause. Of course, it's not very typical of me, but I may improve relationship with my sis and earn her trust."
+    new "I talked to Lisa and promised to help with her studies. For free. Just cause. Of course, it's not very typical of me, but I may improve relationship with my sis and earn her trust."
 
     # game/core/03variables.rpy:296
     old "Я поговорил с Лизой насчёт уроков и намекнул, что моя помощь будет стоить... некоторых услуг. Конечно, она отказалась. Но это пока. До первого наказания. Как только её отшлёпают у меня на глазах, всё изменится! Но для этого надо сделать так, чтобы она снова получила двойку..."
-    new "I talked with Lisa and hinted that my help will cost her some... services. She refused me, though. Until her first punishment, that is. She'll have a change of heart after mom spanks her in front of me. Now I just have to fail her homework."
+    new "I talked with Lisa and hinted that my help will cost her some... services. She refused. Until her first punishment, that is. She'll have a change of heart after Mom spanks her in front of me. Now I just have to fail her homework."
 
     # game/core/03variables.rpy:296
     old "Кажется, я убедил Лизу меня слушаться под страхом наказания. Теперь она будет спать только в футболке и трусах. Ну ничего, я только начал.\n\nТеперь я могу под видом помощи с уроками, подправлять вычисления так, чтобы ей поставили двойку и можно было бы снова наблюдать за её наказанием... Кто знает, может быть, удастся развести её на нечто большее?"
-    new "I think I convinced Lisa to listen to me under fear of punishment. Now she's sleeping in t-shirt and panties only. And that's only the beginning!\n\nNow, under pretense of helping I can fail her homework so I can see her get punished... Who knows, maybe I'll even be able to go further?"
+    new "I think I convinced Lisa to listen to me under fear of punishment. Now she's sleeping in her t-shirt and panties only, and that's only the beginning!\n\nNow, under pretense of helping I can fail her homework so I can see her get punished... Who knows, maybe I'll even be able to go further?"
 
     # game/core/03variables.rpy:302
     old "Арахнофобия"
@@ -834,7 +834,7 @@ translate english strings:
 
     # game/core/03variables.rpy:302
     old "Я порылся в интернете и выяснил, что в нашей местности очень легко встретить один вид пауков. К счастью, он совершенно безвредный, но размеры бывают весьма солидные. Ночью их не найти, а вот когда солнце только начинает прогревать землю, они выползают на свет и проверяют свою добычу."
-    new "I looked it up on the web, and there's a local type of spider that would be perfect for my goal! It's completely harmless and pretty big. Looks like I can try and catch one in the morning when spiders check their nets for prey."
+    new "I looked it up on the web, and there's a local type of spider that would be perfect for my goal! It's completely harmless and pretty big. Looks like I can try and catch one in the morning when spiders check their webs for prey."
 
     # game/core/03variables.rpy:302
     old "Итак, я поймал огромного паука. Это не так сложно, если знать в какое время и где их ловить. Теперь нужно испытать этого монстра на сестрёнке. Вот только бы выбрать подходящий момент..."
@@ -854,15 +854,15 @@ translate english strings:
 
     # game/core/03variables.rpy:302
     old "Похоже, я способствую развитию арахнофобии у Алисы. Во всяком случае, прогресс очевиден. Теперь Алиса задумывается о том, что было бы неплохо иногда впускать меня в постель для защиты от пауков. Но пока только задумывается... Значит, стоит продолжать..."
-    new "I think I may worsening Alice's arachnophobia. Alice is starting to think about letting me into her bed. She still didn't let me sleep in her room, so I think I should keep trying."
+    new "I think I may be worsening Alice's arachnophobia. Alice is starting to think about letting me into her bed. She still didn't let me sleep in her room, so I think I should keep trying."
 
     # game/core/03variables.rpy:302
     old "Да! Алиса разрешила мне спать рядом. Конечно, потребовалось столько паучьих жертв, но оно того стоило! Первый шаг сделан, разрешение получено, а дальше уже всё пойдёт как по маслу!"
-    new "Alice has finally let me sleep in her bed! Moment of silence for all the spiders who sacrificed their lives so this tremendous achievement. Step one is over, now I just have to keep trying..."
+    new "Alice has finally let me sleep in her bed! A moment of silence for all the spiders who sacrificed their lives for this tremendous achievement. Step one is over, now I just have to keep trying..."
 
     # game/core/03variables.rpy:302
     old "Наши забавы с Алисой в постели, как и ожидалось, дошли до самого интересного... Да она сама на меня прыгает! Слава паукам!"
-    new "Our fun in bed with Alice, as expected, has gotten  interesting... She's jumping on me! Hail to the spiders!"
+    new "Our fun in bed with Alice, as expected, has gotten interesting... She's jumping on me! Hail to the spiders!"
 
     # game/core/03variables.rpy:313
     old "Альфа"
@@ -870,19 +870,19 @@ translate english strings:
 
     # game/core/03variables.rpy:313
     old "Итак, я познакомился с этим самым Эриком, бойфрендом мамы. Не могу сказать о нём ничего хорошего или плохого, но он мне не очень понравился. Практически сразу он предложил мне выбрать дружить с ним или воевать. Вот только зачем мне с ним дружить? Что это даст? Да и воевать... Что он может мне сделать? Так или иначе, но он дал на размышления одну неделю. Ну, подумаю как следует и решу что попало..."
-    new "I've meat this Eric, mom's boyfriend. Can't tell anything good or bad about him, but I don't like him. He asked me to choose between friendship and war. Now why would I want to be friends with him, what would that achieve? Same goes for war... What could he do to me? Anyway, he gave me a week to think. I guess I'll have to think this through and decide."
+    new "I've met Eric, Mom's boyfriend. Can't tell anything good or bad about him, but I don't like him. He asked me to choose between friendship and war. Now why would I want to be friends with him, what would that achieve? Same goes for war... What could he do to me? Anyway, he gave me a week to think. I guess I'll have to think this through and decide."
 
     # game/core/03variables.rpy:313
     old "С появлением Эрика мои дела стали неожиданно плохи... Во-первых, он предложил отправить меня в какой-то военный лагерь. Вроде бы для того, чтобы сделать из меня мужика... Да я уже Мужик! Сдались мне эти лагеря...\n\nВо-вторых, он убедил маму, что наказывать нас надо как-то иначе. Нет бы что хорошее подсказал, но это... В общем, со следующей недели нас будут наказывать на глазах друг у друга... голыми! Это такой позор! Это же каким надо быть извращенцем, чтобы такое выдумать.\n\nПонятно, что будет прикольно лишний раз увидеть сиськи сестёр, но и меня могут выпороть на глазах у всех. Это же как подорвёт авторитет!\n\nСначала эта дурацкая идея с военным лагерем, теперь ещё и это... Нужно что-то срочно делать!"
-    new "Eric is definitely a change for the worse. First, he suggested to send me to some military camp. \"To build some character\". I have a huge character!\n\nThen he convinced mom we should have a new punishment system. Why couldn't he suggest something good... Anyway, from next week we're going to be spanked in front of each other! Naked! It's humiliating. What kind of pervert would come up with this idea? It will ruin my authority!\n\nI have to do something immediately!"
+    new "Eric is definitely a change for the worse. First, he suggested to send me to some military camp. \"To build character\". I have a huge character!\n\nThen he convinced Mom that we should have a new punishment system. Why couldn't he suggest something good... Anyway, from next week we're going to be spanked in front of each other! Naked! It's humiliating. What kind of pervert would come up with this idea? It will ruin my authority!\n\nI have to do something immediately!"
 
     # game/core/03variables.rpy:313
     old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращаться свою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
-    new "I feel like I've made a deal with the devil. Eric promised to pay me some money and gave me permission to peek after him and mom having sex. On my part, I have to let him corrupt my family. Who knows, maybe he'll let me participate in some action..."
+    new "I feel like I've made a deal with the devil. Eric promised to pay me some money and gave me permission to peek at him and Mom having sex. On my part, I have to let him corrupt my family. Who knows, maybe he'll let me participate in some action..."
 
     # game/core/03variables.rpy:313
     old "Да пошёл он, этот Эрик! Я отказался от его сомнительного предложения и не собираюсь иметь с ним ничего общего. Пусть попробует только полезть, я ему покажу! Глаза мои его бы не видели... Конечно, я отказался от всего что он там мог предложить, но зато моя совесть чиста и моя семья в моих руках!"
-    new "Screw him! I declined his dubious offer and not going to work with him. I won't get anything he offered but my conscience is clear and my family is in my hands!"
+    new "Screw him! I declined his dubious offer of co-operating. I won't get anything he offered, but my conscience is clear and my family is in my hands!"
 
 # TODO: Translation updated at 2020-02-14 11:29
 
@@ -1089,7 +1089,7 @@ translate english strings:
 
     # game/core/03variables.rpy:327
     old "Я купил для Лизы конфеты \"Raffaello\" и она приняла их, но без особого восторга! Возможно, в следующий раз, следует подарить ей что-то другое?"
-    new "I bought Lisa  \"Raffaello\" sweets and she accepted them, but not very enthusiastically. Maybe next time, you should give her something different?"
+    new "I bought Lisa \"Raffaello\" sweets and she accepted them, but not very enthusiastically. Maybe next time, I should give her something different?"
 
     # game/core/03variables.rpy:327
     old "Я купил для Лизы конфеты \"Ferrero Rocher\" и как оказалось, они ей не нравятся! В следующий раз, лучше подарить что-то другое..."
@@ -1097,7 +1097,7 @@ translate english strings:
 
     # game/core/03variables.rpy:327
     old "Как оказалось, за нравящиеся Лизе сладости можно получить крепкие объятия! И это не смотря на то, что я за ней подглядывал. Посмотрим, что ещё мне удастся получить от сестрёнки..."
-    new "Looks like, you can get a big hug for getting sweets that Lisa likes! And this is despite the fact that I was spying on her. Let's see what else I can get from my sister..."
+    new "Looks like you can get a big hug for getting sweets that Lisa likes! And this is despite the fact that I was spying on her. Let's see what else I can get from my sister..."
 
     # game/core/03variables.rpy:327
     old "Обнимашки - не единственное, что я получил от Лизы за сладости. Она была в таком восторге, что даже чмокнула меня в щёку! Вот уж не думал, что подглядывания за сестрёнкой могут обернуться такими приятными неожиданностями! Интересно, что будет дальше..."
@@ -1125,11 +1125,11 @@ translate english strings:
 
     # game/core/03variables.rpy:338
     old "Увы, я не успел подарить Алисе сладость в срок и поэтому она рассказала маме, как я за ней подглядывал. Возможно, в следующий раз, если Алиса меня заметит, я успею..."
-    new "Unfortunately, I did not  give Alice a sweet in time and so she told Mom how I spied on her. Maybe next time, if Alice sees me, I'll make it..."
+    new "Unfortunately, I did not give Alice a sweet in time and so she told Mom how I spied on her. Maybe next time, if Alice sees me, I'll make it..."
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы конфеты \"Ferrero Rocher\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большую коробку с этими конфетами?"
-    new "I bought Alice sweets \"Ferrero Rocher\" and she was very happy! Of course, it turned out to be her favorite sweet! Maybe next time, you should give her a big box of these sweets."
+    new "I bought Alice some \"Ferrero Rocher\" and she was very happy! Of course, it turned out to be her favorite sweet! Maybe next time, I should give her a big box of them."
 
     # game/core/03variables.rpy:338
     old "Я купил для Алисы шоколад \"Ritter Sport\" и она приняла его, но без особого восторга! Возможно, в следующий раз, следует подарить ей что-то другое?"
