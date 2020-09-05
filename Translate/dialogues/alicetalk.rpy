@@ -190,7 +190,7 @@ translate english talkblog1_help_b9c2b277:
 translate english talkblog1_whatnow_84b3cf98:
 
     # Alice_00 "Не знаю, если честно. Мне даже показаться перед зрителями не в чем. Какой же я бьюти-блогер, если на мне всегда одна и та же одежда..." nointeract
-    Alice_00 "I don't really know, to be honest. I don't even have anything to wear for a blog. What kind of beauty blogger would wear the same clothes all the time..." nointeract
+    Alice_00 "I don't really know, to be honest. I don't even have anything to wear. What kind of beauty blogger would wear the same clothes all the time..." nointeract
 
 # game/dialogues/alicetalk.rpy:207
 translate english talkblog1_otherway_f854dfd1:
@@ -310,7 +310,7 @@ translate english alice_talk_tv_a38da904:
 translate english alice_talk_tv_13b3ba4f:
 
     # Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
-    Max_11 "{i}( There's nothing interesting on TV today. It would be exciting if there were some adult films to choose from. Could even be fun to watch it with your sister... ){/i}"
+    Max_11 "{i}( There's nothing interesting on TV today. It would be exciting if there were some adult films to choose from. Could even be fun to watch it with sis... ){/i}"
 
 # game/dialogues/alicetalk.rpy:270
 translate english alice_talk_tv_55b37ec4:
@@ -864,7 +864,7 @@ translate english second_talk_smoke_ced29bff:
 translate english second_talk_smoke_80e5e0fb:
 
     # Alice_13 "Ну да... Просто нравится именно эти. Их наш отец курил, сначала запах нравился. Когда выросла, попробовала и теперь вот втянулась..." nointeract
-    Alice_13 "Well, yes. But I like them because our dad smoked them. First, I liked how they smelled and when I grew up I decided to try them, so now I'm hooked." nointeract
+    Alice_13 "Well, yeah. But I like them because our dad smoked them. I liked how they smelled and when I grew up I decided to try them, so now I'm hooked." nointeract
 
 # game/dialogues/alicetalk.rpy:502
 translate english second_talk_smoke_182af78a:
@@ -894,7 +894,7 @@ translate english second_talk_smoke_4c9e50aa:
 translate english second_talk_smoke_7541a141:
 
     # Alice_03 "Давай! Было бы чудненько. Только маме не пали меня, а то я на тебя обижусь и больше никогда разговаривать не буду..."
-    Alice_03 "Please try, you'd help me out a lot. Just don't tell mom or I'll never treat you like a human being ever again."
+    Alice_03 "Please try, you'd help me out a lot. Just don't tell Mom or I'll never treat you like a human being ever again."
 
 # game/dialogues/alicetalk.rpy:517
 translate english second_talk_smoke_67b5c25f:
@@ -906,7 +906,7 @@ translate english second_talk_smoke_67b5c25f:
 translate english second_talk_smoke_36adb5ae:
 
     # Alice_12 "Я закончила. Если мама спросит, скажешь, от соседей надуло, хорошо?"
-    Alice_12 "I'm done. If mom asks, tell her the smell is from the neighbors, okay?"
+    Alice_12 "I'm done. If Mom asks, tell her the smell is from the neighbors, okay?"
 
 # game/dialogues/alicetalk.rpy:522
 translate english second_talk_smoke_25aa812b:
@@ -1474,7 +1474,7 @@ translate english smoke_not_toples_e135b876:
 translate english smoke_not_toples_4ee2407f:
 
     # Alice_13 "Ну всё, полюбовался и хватит. Вали отсюда, дай спокойно покурить..." nointeract
-    Alice_13 "Okay, I'm done. Get out of here, let me have a quiet smoke..." nointeract
+    Alice_13 "Okay, I'm done. Get out of here, let me smoke in peace..." nointeract
 
 # game/dialogues/alicetalk.rpy:810
 translate english smoke_nopants_7be74dfc:
@@ -1516,7 +1516,7 @@ translate english smoke_nopants_2485171a:
 translate english smoke_nopants_6e4f674f:
 
     # Alice_02 "Ты наверное думаешь, что у тебя забавные шутки, да? Так вот нет. Абсолютно несмешные, дебильные шутки, как и ты сам. Всё, свалил отсюда. Я занята..."
-    Alice_02 "Do you think you have a good sense of humor, Max? Because you don't. At all. Your jokes are completely humorless and dull, just like you are. Now get lost, I'm busy."
+    Alice_02 "Do you think you have a good sense of humor, Max? Because you don't. At all. Your jokes are completely humorless and dull, just like you. Now get lost, I'm busy."
 
 # game/dialogues/alicetalk.rpy:823
 translate english smoke_nopants_696b9e70:
@@ -1606,7 +1606,7 @@ translate english smoke_not_nopants_b29a919f:
 translate english smoke_not_nopants_9f211f88:
 
     # Alice_13 "Спасибо. А теперь иди уже, погуляй где-нибудь. Дай докурить спокойно."
-    Alice_13 "Thank you. Now go somewhere else and let me have a quiet smoke."
+    Alice_13 "Thank you. Now go somewhere else and let me smoke in peace."
 
 # game/dialogues/alicetalk.rpy:854
 translate english smoke_not_nopants_91edba57:
@@ -1730,7 +1730,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:810
     old "А ты чего в трусах?"
-    new "Why are you in panties?"
+    new "Why are you wearing panties?"
 
     # game/dialogues/alicetalk.rpy:810
     old "Я передумал. Можешь носить трусы..."
