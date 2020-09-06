@@ -1859,3 +1859,53 @@ translate english alice_lisa_shower_alt_peepeng_72bf06b5:
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
     Max_03 "Yeah... I wish I could be between those two wet asses... I'd clean them properly!"
 
+# TODO: Translation updated at 2020-08-30 23:23
+
+# game/events/alice.rpy:122
+translate english alice_sleep_night_013f61a2:
+
+    # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно! Только вот не всё из этого должно быть на ней одето!"
+    Max_07 "Big Sis looks amazing! I want to look at the curves of her body in that semi-transparent underwear forever. Except she shouldn't be wearing it!"
+
+# game/events/alice.rpy:124
+translate english alice_sleep_night_153a8299:
+
+    # Max_04 "Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою попку для меня во всей красе. И есть на ней что-то явно лишнее!"
+    Max_04 "Wow! I'm lucky Alice is sleeping with her back to the window... And she doesn't know that she's showing off her ass to me in all its glory. And there is something clearly unnecessary on it!"
+
+# game/events/alice.rpy:126
+translate english alice_sleep_night_aa8e7463:
+
+    # Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно... Но, похоже, она кое-что забыла с себя снять перед сном!"
+    Max_01 "Awesome! My sister is sleeping with her back arched, making her tits stick out like two mounds... Seductively... But it seems that she forgot to take something off before going to bed!"
+
+# game/events/alice.rpy:127
+translate english alice_sleep_night_a66d1095:
+
+    # Max_09 "Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!" nointeract
+    Max_09 "Sometimes it's good to go out of your comfort zone. Maybe I should take advantage of what Alice is most afraid of?" nointeract
+
+# game/events/alice.rpy:188
+translate english alice_sleep_morning_3ed48829:
+
+    # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... Только вот одето на ней больше, чем должно быть!"
+    Max_07 ""
+
+# game/events/alice.rpy:190
+translate english alice_sleep_morning_88467c6d:
+
+    # Max_01 "Чёрт! Хоть она и спит, но прямо лицом ко мне... И тем не менее, насладится красотой её тела я могу, и ещё как... Хотя, если бы она не забыла кое-что с себя снять, было бы куда интереснее!"
+    Max_01 "Great! Even though she's asleep, she's facing me... And yet, I can enjoy the beauty of her body, and even more so... Although if she hadn't forgotten to take something off, it would be much more interesting!"
+
+# game/events/alice.rpy:192
+translate english alice_sleep_morning_f62eae9b:
+
+    # Max_02 "Вот это да! От таких соблазнительных изгибов можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка! А была бы ещё лучше, если бы снимала с себя то, что должна!"
+    Max_02 "Wow! I just love those curves. My big sister has such a hot body! And it would be even better if you took off what you were supposed to!"
+
+# game/events/alice.rpy:193
+translate english alice_sleep_morning_333a5d36:
+
+    # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!" nointeract
+    Max_09 "I ought to take her out of her comfort zone... maybe I could use what she fears most?" nointeract
+

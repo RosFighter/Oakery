@@ -87,3 +87,11 @@ translate english strings:
     old "{i}идти на веранду{/i}"
     new "{i}go to the verandah{/i}"
 
+# TODO: Translation updated at 2020-08-30 23:23
+
+# game/core/core.rpy:434
+translate english cam_after_waiting_c283f316_1:
+
+    # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
+    Max_09 "Lisa's in the room... and the verandah is occupied! I shouldn't risk viewing the cameras now."
+

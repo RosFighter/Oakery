@@ -991,7 +991,7 @@ translate english return_part_loan_4564f05f:
 translate english strings:
 
     # game/events/max.rpy:246
-    old "{i}искать информацию по кридитам{/i}"
+    old "{i}искать информацию по кредитам{/i}"
     new "{i}find information on the credits{/i}"
 
     # game/events/max.rpy:894

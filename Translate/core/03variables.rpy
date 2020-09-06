@@ -1022,7 +1022,7 @@ translate english strings:
 
     # game/core/03variables.rpy:207
     old "Шоколад \"Ritter Sport\" (4 штуки)"
-    new "Chocolate \"Ritter Sport\" mini (4 pieces)"
+    new "Chocolate \"Ritter Sport\" (4 pieces)"
 
     # game/core/03variables.rpy:207
     old "Конфеты \"Raffaello\" (16 штук)"
@@ -1285,4 +1285,43 @@ translate english strings:
     # game/core/03variables.rpy:313
     old "Тётя Кира превосходный учитель поцелуев! Она согласилась меня иногда учить. Кто знает, может быть она научит и чему-то ещё?\n\nНу всё. Теперь нужно практиковаться в поцелуях с тётей Кирой и передавать полученные знания Лизе... Только вот её ещё нужно убедить..."
     new "Aunt Kira is an excellent kissing teacher! She agreed to tutor me. Who knows, maybe it will lead to something else?\n\. I just need to keep the practice up, and pass my knowledge on to Lisa... But she might still need some convincing..."
+# TODO: Translation updated at 2020-08-30 23:23
+
+translate english strings:
+
+    # game/core/03variables.rpy:313
+    old "Я поговорил с Лизой насчёт её обучения. Она выдвинула ряд условий, среди которых запрет мне к ней прикасаться, если она против. Ну уже что-то."
+    new "I spoke to Lisa about her training. She put forward a number of conditions, including no touching her without permission. Well, at least it's a start."
+
+    # game/core/03variables.rpy:313
+    old "Похоже обучаться Лиза согласна только если у неё хорошее настроение..."
+    new "It seems that Lisa only agrees to learn when she's in a good mood..."
+
+    # game/core/03variables.rpy:313
+    old "Мне удалось впечатлить Лизу своим искусством целоваться! Хотя, пока на искусство это не тянет, но ей понравилось! Всё-таки, тётя Кира отличный учитель. Но нужно продолжать практиковаться."
+    new "I managed to impress Lisa with my kissing skills! I think I have a way to go, but she still liked it! Aunt Kira really is a great teacher. I should keep practicing.  "
+
+    # game/core/03variables.rpy:313
+    old "Лиза намекнула, что не против двигаться дальше и я решил увлечь её поцелуями настолько, чтобы ей нравились при этом и мои прикосновения. А для этого нужно больше целоваться с тётей Кирой по ночам..."
+    new "Lisa appears to be getting a lot more receptive to being touched. I think I'm onto something. I'd better do some more practice with Kira."
+
+    # game/core/03variables.rpy:313
+    old "Лизе очень нравится как я целуюсь. Она даже намекнула, что пора бы научить её ещё чему-то полезному. На этот раз, как мне кажется, стоит подтянуть теорию. Может быть, купить ей какую-то книжку по анатомии, чтобы она разобралась в физиологии и поняла, какие естественные процессы могут происходить между мужчинами и женщинами?"
+    new "Lisa really likes the way I kiss her. She even hinted that she might be interested in learning something more advanced. It's time to tighten my theory. Maybe I should buy her an anatomy book so she could learn more about the natural proccesses that happen between men and women?"
+
+    # game/core/03variables.rpy:313
+    old "Я решил, что и мне самому будет полезно прочитать купленую для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
+    new "I decided to read the book I bought Lisa. I think I'll discover something interesting..."
+
+    # game/core/03variables.rpy:313
+    old "Книга прочитана! Не то, чтобы много всего нового я для себя открыл, но есть то, что может помочь нам с Лизой ещё больше сблизиться. А пока можно ей книжку подарить..."
+    new "I finished the book! I didn't actually learn anything new, but I did notice something that could help Lisa and I get closer. In the meantime, I should give her the book."
+
+    # game/core/03variables.rpy:313
+    old "Я подарил Лизе книжку, которая содержит много ответов на её вопросы. Нужно будет поинтересоваться через какое-то время, что она об этой книге думает..."
+    new "I gave Lisa the book, which will hopefully answer some of her more perverted questions. I'll have to ask her what she thinks after I give her some time to read it."
+
+    # game/core/03variables.rpy:313
+    old "Я подарил Лизе книжку, которая содержит много ответов на её вопросы. Да мне и самому было бы полезно её почитать, но лень.\n\n\nНужно будет поинтересоваться через какое-то время, что она об этой книге думает..."
+    new "I gave Lisa a book that should answer some of her questions. Yes, it would be useful for me to read it myself, but I'm too lazy.\n\n\Will need to ask after a while what she thinks about this book..."
 

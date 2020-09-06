@@ -289,3 +289,27 @@ translate english strings:
     old "У меня для тебя вкусняшка!"
     new "I have a treat for you!"
 
+# TODO: Translation updated at 2020-08-22 08:21
+
+translate english strings:
+
+    # game/core/02init.rpy:26
+    old "{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Lisa liked the kiss!{/i}{/color}\n"
+
+    # game/core/02init.rpy:27
+    old "{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n"
+    new "{color=#E59400}{i}Lisa didn't like the kiss!{/i}{/color}\n"
+
+# TODO: Translation updated at 2020-08-30 23:23
+
+translate english strings:
+
+    # game/core/02init.rpy:71
+    old "Ну что, Лиза, готова?"
+    new "So, are you ready?"
+
+    # game/core/02init.rpy:71
+    old "Ну что, готова?"
+    new "Are you ready?"
+

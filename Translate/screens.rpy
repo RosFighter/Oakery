@@ -382,3 +382,27 @@ translate english strings:
     old "Начать новую игру"
     new "Start new game"
 
+# TODO: Translation updated at 2020-08-30 23:23
+
+translate english strings:
+
+    # game/screens.rpy:280
+    old "Сохранить"
+    new "Save"
+
+    # game/screens.rpy:281
+    old "Б.Сохр"
+    new "Q.Save"
+
+    # game/screens.rpy:282
+    old "Б.Загр"
+    new "Q.Load"
+
+    # game/screens.rpy:283
+    old "Опции"
+    new "Options"
+
+    # game/screens.rpy:1562
+    old "Скрыть интерфейс"
+    new "Hide interface"
+
