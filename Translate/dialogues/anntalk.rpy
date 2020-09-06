@@ -4,7 +4,7 @@
 translate english AnnTalkStart_452e8666:
 
     # Ann_00 "Что-то случилось, дорогой?" nointeract
-    Ann_00 "Did something happen, Max?" nointeract
+    Ann_00 "Yes, Max?" nointeract
 
 # game/dialogues/anntalk.rpy:29
 translate english Ann_cooldown_caafbb44:
@@ -16,7 +16,7 @@ translate english Ann_cooldown_caafbb44:
 translate english Ann_cooldown_fa220d84:
 
     # Max_00 "Ок, мам..."
-    Max_00 "Okay, mom..."
+    Max_00 "Okay, Mom..."
 
 # game/dialogues/anntalk.rpy:38
 translate english ann_ask_money_cf2d6379:
@@ -58,13 +58,13 @@ translate english ann_ask_money_work_b06de883:
 translate english ann_ask_money_work_0e83a6b3:
 
     # Ann_04 "Отличная идея, Макс! Лучше уж я заплачу тебе $40, чем нанимать какого-то человека. Держи. Да, лучше это делать пока светло и никого нет." nointeract
-    Ann_04 "That's a great idea! I'd rather pay you than hire some stranger. Here you go. It's better to do it while the suns up and nobody's home." nointeract
+    Ann_04 "That's a great idea! I'd rather pay you than hire some stranger. Here you go. The best time to do it is while the suns up and nobody's home." nointeract
 
 # game/dialogues/anntalk.rpy:84
 translate english ann_ask_money_work_db69fd50:
 
     # Ann_04 "Хорошая мысль, Макс. Я дам тебе $50 на продукты и авансом $10 за твои услуги, так сказать. Устроит?" nointeract
-    Ann_04 "I think that's a good idea. I'll give you $50 for the groceries, plus 10$ for your time and services. How does that sound?" nointeract
+    Ann_04 "I think that's a good idea. I'll give you $50 for the groceries, plus 10$ as a bonus. How does that sound?" nointeract
 
 # game/dialogues/anntalk.rpy:104
 translate english ann_aboutfood_6a389713:
@@ -130,7 +130,7 @@ translate english ann_talk_tv_466bcb0e:
 translate english ann_talk_tv_22b3f8bb:
 
     # Ann_05 "Ясно. Ну, спасибо за компанию. Пойду в свою комнату, хватит с меня фильмов на сегодня..."
-    Ann_05 "Okay, well thanks for your company I'm going to head to my room. That's enough TV for today."
+    Ann_05 "Okay, well thanks for your company. I'm going to head to my room. That's enough TV for today."
 
 # game/dialogues/anntalk.rpy:145
 translate english ann_talk_tv_980cb3ea:
@@ -266,25 +266,25 @@ translate english Ann_MorningWood_ab75b971:
 translate english Ann_MorningWood_75ea92a8:
 
     # Ann_14 "Но Макс. Лиза ещё маленькая и постарайся, чтобы она не видела твой... тебя. В общем, ты меня понял, да?" nointeract
-    Ann_14 "But still, Max, try not to show your... yourself to Lisa." nointeract
+    Ann_14 "But still, try not to show your... yourself... to Lisa." nointeract
 
 # game/dialogues/anntalk.rpy:204
 translate english Ann_MorningWood_4d3a269f:
 
     # Ann_04 "Что такого? Да то, что девочка не должна видеть здоровенный член своего брата, когда просыпается утром!" nointeract
-    Ann_04 "Because she's not supposed to see her brother's huge cock every morning!" nointeract
+    Ann_04 "Because she's not supposed to see her brother's huge penis every morning!" nointeract
 
 # game/dialogues/anntalk.rpy:207
 translate english Ann_MorningWood_31985b42:
 
     # Ann_07 "Извини, что-то меня занесло. Просто, даже я в шоке была, когда увидела, а что уж говорить про Лизу..." nointeract
-    Ann_07 "I'm sorry, I said too much. Even I was shocked when I saw you, I can't imagine what Lisa was thinking about..." nointeract
+    Ann_07 "I'm sorry, I said too much. Even I was shocked when I saw you, I can't imagine what Lisa was thinking..." nointeract
 
 # game/dialogues/anntalk.rpy:210
 translate english Ann_MorningWood_20707248:
 
     # Ann_12 "Макс! Я конечно рада, что ты у меня уже такой... большой... Но вообще, я всё сказала. Постарайся ей не показываться в таком виде, ладно?"
-    Ann_12 "Max! Of course, I'm glad you're so... big, but... But that's enough of that. Try not to show yourself to your sister like that in the future, okay?"
+    Ann_12 "Max! Of course, I'm glad you're so... endowed, but... But that's enough of that. Try not to show yourself to your sister like that in the future, okay?"
 
 # game/dialogues/anntalk.rpy:211
 translate english Ann_MorningWood_f3fba9dc:
@@ -308,13 +308,13 @@ translate english Ann_MorningWood_845bcbb0:
 translate english Ann_MorningWood_26bf3db9:
 
     # Max_01 "Хорошо, мам..."
-    Max_01 "Okay, mom..."
+    Max_01 "Okay, Mom..."
 
 # game/dialogues/anntalk.rpy:223
 translate english Ann_MorningWood_fe9ff73d:
 
     # Ann_05 "Вот и молодец. А если такое повторится, просто прикройся, как будто ничего нет..."
-    Ann_05 "Good. Next time try to cover yourself..."
+    Ann_05 "Good. Next time, try to cover yourself..."
 
 # game/dialogues/anntalk.rpy:224
 translate english Ann_MorningWood_9fbd015d:
@@ -332,7 +332,7 @@ translate english Ann_MorningWood_6ea36867:
 translate english Ann_MorningWood_d66e2468:
 
     # Max_00 "Хорошо, мам..."
-    Max_00 "Okay, mom..."
+    Max_00 "Okay, Mom..."
 
 translate english strings:
 
@@ -346,7 +346,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:204
     old "Ого, мам..."
-    new "Wow, mom..."
+    new "Wow, Mom..."
 
     # game/dialogues/anntalk.rpy:204
     old "Разве это должно пугать?"
@@ -374,7 +374,7 @@ translate english strings:
 translate english talk_about_smoking_becba3c8:
 
     # Ann_12 "Макс. Я не уверена, но мне кажется, что чувствую запах сигаретного дыма. К нам кто-то приходил?" nointeract
-    Ann_12 "Max. I'm not sure, but I think I smell cigarette smoke. Did somebody come to see us?" nointeract
+    Ann_12 "Max. I'm not sure, but I think I smell cigarette smoke. Did we have a visitor today?" nointeract
 
 # game/dialogues/anntalk.rpy:248
 translate english talk_about_smoking_812b7a4b:
@@ -386,13 +386,13 @@ translate english talk_about_smoking_812b7a4b:
 translate english talk_about_smoking_b75bee26:
 
     # Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
-    Ann_01 "Yeah? Well, maybe it really did. Or maybe it came from the neighbours... Anyway, let's go have a dinner."
+    Ann_01 "Yes? Well, maybe it really did. Or maybe it came from the neighbours... Anyway, let's go have dinner."
 
 # game/dialogues/anntalk.rpy:255
 translate english talk_about_smoking_bc384657:
 
     # Alice_03 "Спасибо, Макс, что не сдал меня... Я это ценю." nointeract
-    Alice_03 "Thanks for not ratting me out, Max. I appreciate it." nointeract
+    Alice_03 "Thanks for not ratting me out. I actually really appreciate it." nointeract
 
 # game/dialogues/anntalk.rpy:259
 translate english talk_about_smoking_582d9cb8:
@@ -410,7 +410,7 @@ translate english talk_about_smoking_d217c75e:
 translate english talk_about_smoking_ae9788a4:
 
     # Alice_16 "Макс! Ты невыносим. Я уже подумала, что ты нормальный брат, а ты..." nointeract
-    Alice_16 "Ugh, Max! Just when I though you could be a decent brother, you had to immediately prove me wrong..." nointeract
+    Alice_16 "Ugh, Max! Just when I thought you could be a decent brother, you had to immediately prove me wrong..." nointeract
 
 # game/dialogues/anntalk.rpy:277
 translate english talk_about_smoking_82373ff8:
@@ -428,7 +428,7 @@ translate english talk_about_smoking_joke_eaa2da91:
 translate english talk_about_smoking_joke_e1be1cb3:
 
     # Max_01 "Ага, пора."
-    Max_01 "Sure, let's go"
+    Max_01 "Sure, let's go."
 
 # game/dialogues/anntalk.rpy:301
 translate english talk_about_smoking_sorry_2ed806ce:
@@ -440,7 +440,7 @@ translate english talk_about_smoking_sorry_2ed806ce:
 translate english talk_about_smoking_sorry_99fabaec:
 
     # Max_01 "Ага, давай."
-    Max_01 "Sure, let's go"
+    Max_01 "Sure, let's go."
 
 # game/dialogues/anntalk.rpy:305
 translate english talk_about_smoking_smoke_9e22726c:
@@ -458,13 +458,13 @@ translate english talk_about_smoking_smoke_07ac8586:
 translate english talk_about_smoking_smoke_36a4946b:
 
     # Alice_13 "Что случилось, мам?"
-    Alice_13 "What happened, mom?"
+    Alice_13 "What happened, Mom?"
 
 # game/dialogues/anntalk.rpy:322
 translate english talk_about_smoking_smoke_7c83b5a1:
 
     # Ann_19 "Что случилось?! Не притворяйся тут невинной овечкой! Макс говорит, что видел, как ты курила!"
-    Ann_19 "What happened? Don't play innocent with me! Max says you were smoking!"
+    Ann_19 "What happened? Don't act clueless! Max says you were smoking!"
 
 # game/dialogues/anntalk.rpy:324
 translate english talk_about_smoking_smoke_ed7bfc86:
@@ -482,7 +482,7 @@ translate english talk_about_smoking_smoke_d155e002:
 translate english talk_about_smoking_smoke_92957f51:
 
     # Max_09 "Я передумал..."
-    Max_09 "I've changed my mind..."
+    Max_09 "I changed my mind..."
 
 # game/dialogues/anntalk.rpy:332
 translate english talk_about_smoking_smoke_7c6f34cb:
@@ -494,19 +494,19 @@ translate english talk_about_smoking_smoke_7c6f34cb:
 translate english talk_about_smoking_smoke_f4dc11b0:
 
     # Max_09 "Сама виновата..."
-    Max_09 "It's your own fault"
+    Max_09 "It's your own fault!"
 
 # game/dialogues/anntalk.rpy:335
 translate english talk_about_smoking_smoke_657fcc61:
 
     # Ann_12 "Так, всё, Алиса, сейчас я тебя накажу! Снимай свои джинсы!"
-    Ann_12 "That's enough, Alice. Take off your pants, I'm going to punish you now."
+    Ann_12 "That's enough, Alice. Take off your pants, I'm going to punish you now!"
 
 # game/dialogues/anntalk.rpy:339
 translate english talk_about_smoking_smoke_0830c325:
 
     # Max_07 "Ого..."
-    Max_07 "Wow"
+    Max_07 "Wow..."
 
 # game/dialogues/anntalk.rpy:340
 translate english talk_about_smoking_smoke_35136fb1:
@@ -524,49 +524,49 @@ translate english talk_about_smoking_smoke_7278fe09:
 translate english talk_about_smoking_smoke_a7a0a14e:
 
     # Ann_19 "Взрослая? С каких пор? Пока ты живёшь со мной под одной крышей, ты моя дочь! Без разговоров, быстро снимай и ложись на мои колени!"
-    Ann_19 "As long as you live in my house you're going to follow my rules! Now stop talking back and drop your pants!"
+    Ann_19 "As long as you live under my roof you're going to follow my rules! Now stop talking back and drop your pants!"
 
 # game/dialogues/anntalk.rpy:344
 translate english talk_about_smoking_smoke_771e9b23:
 
     # Alice_13 "Мам, но тут же Макс... Что, прямо при нём будешь? Пусть он уйдёт!"
-    Alice_13 "But mom, Max is right here... Are you going to punish me right in front of him? Tell him to leave!"
+    Alice_13 "But Mom! Max is right here... Are you going to punish me right in front of him? Tell him to leave!"
 
 # game/dialogues/anntalk.rpy:345
 translate english talk_about_smoking_smoke_dec85e71:
 
     # Ann_18 "Нет, Алиса, пусть смотрит. Это ждёт любого, кто меня разозлит. Быстро ложись на мои колени, кому сказала!"
-    Ann_18 "No, he'll stay. This will happen to everyone who won't obey my rules. Drop your pants and lie down on my knees right now!"
+    Ann_18 "No, he'll stay. This will happen to everyone who won't obey the rules. Drop your pants and lie down on my knees right now!"
 
 # game/dialogues/anntalk.rpy:348
 translate english talk_about_smoking_smoke_1cdb0e42:
 
     # Alice_13 "Ладно... Только не больно, чтобы, ладно? Ай! Ма-ам!"
-    Alice_13 "Okay... But don't hit me too much, okay? Ow! Mooom!"
+    Alice_13 "Okay... just don't be too rough, okay? Ow! Mooom!"
 
 # game/dialogues/anntalk.rpy:349
 translate english talk_about_smoking_smoke_6bcbcfc3:
 
     # Ann_16 "Давай не мамкай тут! Ты знаешь, что я ненавижу сигареты и мои дети точно курить не будут. Особенно, в моём доме, ясно?!"
-    Ann_16 "Don't \"mom\" me! You know I hate smoking, I won't let my children smoke, especially not in my house!"
+    Ann_16 "Don't \"mom\" me! You know I detest smoking. I won't let my children smoke, especially not in my house!"
 
 # game/dialogues/anntalk.rpy:351
 translate english talk_about_smoking_smoke_7df16910:
 
     # Alice_13 "Да, ясно, мам... Ай! Я всё поняла! Я больше не буду!"
-    Alice_13 "Okay, mom... Ow! I understand! I won't do it again!"
+    Alice_13 "Okay, Mom... Ow! I understand! I won't do it again!"
 
 # game/dialogues/anntalk.rpy:355
 translate english talk_about_smoking_smoke_ff080174:
 
     # Ann_12 "Очень на это надеюсь. Так, теперь надевай штаны и садимся ужинать."
-    Ann_12 "I hope so. Now put on your pants and let's have dinner."
+    Ann_12 "I hope so. Now put your pants back on sit down for dinner."
 
 # game/dialogues/anntalk.rpy:359
 translate english talk_about_smoking_smoke_eefff3e3:
 
     # Alice_17 "Ну ты и гад, Макс. Доволен? Ну теперь держись..." nointeract
-    Alice_17 "You're an asshole, Max. Are you happy now? You'll get what's coming for you..." nointeract
+    Alice_17 "You're an asshole, Max. Are you happy now? You'll get what's coming to you..." nointeract
 
 # game/dialogues/anntalk.rpy:364
 translate english talk_about_smoking_smoke_1e8d832d:
@@ -596,7 +596,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:248
     old "Нет, мам, нечего рассказывать"
-    new "No, mom, there's nothing to tell"
+    new "No Mom. There's nothing to tell"
 
     # game/dialogues/anntalk.rpy:248
     old "Вообще-то, Алиса курила..."
@@ -628,7 +628,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:305
     old "Абсолютно. Сам видел. Днём курила у бассейна!"
-    new "I've seen her myself, she was smoking by the pool"
+    new "I saw her myself, she was smoking by the pool"
 
     # game/dialogues/anntalk.rpy:305
     old "Может быть, мне показалось..."
@@ -636,11 +636,11 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:314
     old "Мам, ну не так же..."
-    new "Not like this, mom..."
+    new "Not like this, Mom..."
 
     # game/dialogues/anntalk.rpy:314
     old "Мам, меня не сдавай..."
-    new "Don't rat me out, mom..."
+    new "Don't rat me out, Mom..."
 
     # game/dialogues/anntalk.rpy:359
     old "Извини, я не хотел, чтобы так..."
@@ -652,7 +652,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:364
     old "{i}начать ужин{/i}"
-    new "{i}start dinner{/i}"
+    new "{i}Start dinner{/i}"
 
 # TODO: Translation updated at 2020-04-02 08:49
 
@@ -678,7 +678,7 @@ translate english ann_talk_tv_first_movie_4fe2a7ed:
 translate english ann_talk_tv_first_movie_3a5a46d3:
 
     # Ann_04 "Я не знаю. Мне вот подруга посоветовала фильм с Томом Крузом и Николь Кидман, называется \"С широко закрытыми глазами\". Смотрел?" nointeract
-    Ann_04 "I don't know, really. My friend highly recommended this movie with Tom Cruise and Nicole Kidman called \"Eyes wide shut\". Have you seen it?" nointeract
+    Ann_04 "I don't know, really. My friend highly recommended this movie starring Tom Cruise and Nicole Kidman called \"Eyes wide shut\". Have you seen it?" nointeract
 
 # game/dialogues/anntalk.rpy:224
 translate english ann_talk_tv_first_movie_01e23211:
@@ -702,7 +702,7 @@ translate english ann_talk_tv_first_movie_12158efe:
 translate english ann_talk_tv_ero_ea9d350a:
 
     # Ann_13 "Правда?! Ой, Макс, извини, я не знала. Тогда, нам с тобой его точно смотреть вместе не следует. А подруге я всё скажу, за то, что не предупредила..." nointeract
-    Ann_13 "It is!? I'm sorry, Max, I didn't know. Then we're definitely not going to watch it now. I'll give my friend a piece of my mind for not warning me..." nointeract
+    Ann_13 "It is!? I'm sorry, darling, I didn't know. Then we're definitely not going to watch it now. I'll give my friend a piece of my mind for not warning me..." nointeract
 
 # game/dialogues/anntalk.rpy:243
 translate english ann_talk_tv_ero_e5c312c1:
@@ -768,7 +768,7 @@ translate english ann_talk_tv_start_a52089f5:
 translate english ann_talk_tv_start_6bcfcf09:
 
     # Max_02 "Ну сама подумай, стали бы Том Круз и Николь Кидман сниматься в эротике?"
-    Max_02 "JWell, think about it, would Tom Cruise and Nicole Kidman really be filming something this explicit?"
+    Max_02 "Well, think about it, would Tom Cruise and Nicole Kidman really be filming something this explicit?"
 
 # game/dialogues/anntalk.rpy:268
 translate english ann_talk_tv_start_6382bd94:
@@ -810,13 +810,13 @@ translate english ann_talk_tv_start_1ea84186:
 translate english ann_talk_tv_start_acd22c78:
 
     # Max_01 "Конечно, мам!"
-    Max_01 "Of course, mom!"
+    Max_01 "Of course, Mom!"
 
 translate english strings:
 
     # game/dialogues/anntalk.rpy:221
     old "Нет, не слышал о таком. Давай смотреть!"
-    new "No, never heard about it. Let's watch!"
+    new "No, never heard of it. Let's watch!"
 
     # game/dialogues/anntalk.rpy:221
     old "Да это же эротика!"
@@ -832,7 +832,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:231
     old "Да, отзывы отличные"
-    new "Yeah, it has great reviews!"
+    new "Yeah, it's got great reviews!"
 
     # game/dialogues/anntalk.rpy:231
     old "Ну, это эротика..."
@@ -872,7 +872,7 @@ translate english ann_about_kiss_f870de5f:
 translate english ann_about_kiss_060b6710:
 
     # Ann_04 "Ого! Поздравляю, Макс. Наконец-то ты нашёл кого-то. Расскажи, какая она?" nointeract
-    Ann_04 "Wow! Congratulations, Max. You finally found someone. Tell me, what is she like?" nointeract
+    Ann_04 "Wow! Congratulations! You finally found someone. Tell me, what is she like?" nointeract
 
 # game/dialogues/anntalk.rpy:485
 translate english ann_about_kiss_b3dba2cb:
@@ -896,7 +896,7 @@ translate english ann_about_kiss_9cfb9a3d:
 translate english ann_about_kiss_3ef7d7c6:
 
     # Ann_02 "Понятно. Ну что я могу тебе сказать. Буть естественным, будь самим собой. Девушки это ценят. Если ты попытаешься выдавать себя за ловеласа, она это раскусит и бросит тебя..."
-    Ann_02 "Oh, I see. Well, what can I tell you. Be natural, be yourself. Girls appreciate that. If you try to pretending you're a womanizer, she'll figure it out and leave you..."
+    Ann_02 "Oh, I see. Well, what can I tell you. Be natural, be yourself. Girls appreciate that. If you act like a womanizer, she'll figure it out and leave you..."
 
 # game/dialogues/anntalk.rpy:490
 translate english ann_about_kiss_f7d895a9:
@@ -914,13 +914,13 @@ translate english ann_about_kiss_6100355b:
 translate english ann_about_kiss_83e97fb7:
 
     # Max_00 "Эх... Спасибо, мам..."
-    Max_00 "Uh... Thank you, Mom..."
+    Max_00 "Uh... Thanks, Mom..."
 
 # game/dialogues/anntalk.rpy:493
 translate english ann_about_kiss_ad47424b:
 
     # Ann_07 "Не за что, Макс. Обращайся, если будет нужен ещё какой-то совет..."
-    Ann_07 "You're welcome, Max. Talk to me if you need any more advice..."
+    Ann_07 "You're welcome, darling. Talk to me if you need any more advice..."
 
 # game/dialogues/anntalk.rpy:494
 translate english ann_about_kiss_03d844e0:

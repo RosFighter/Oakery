@@ -1802,7 +1802,7 @@ translate english Alice_sorry_7b2bd462:
 translate english Alice_sorry_f8604e25:
 
     # Alice_08 "Ах ты... паршивец... Это подлый ход, потому что от вкусняшки я бы не отказалась... Хорошо, но обещать ничего не буду, сперва посмотрю, что это будет за вкусность... Если ты конечно успеешь до завтрашего вечера!"
-    Alice_08 "Oh, you... you lousy... that's sneaky, because I could use a yummy... Okay, but I won't promise anything, first I'll see what you're offering.. If you can get it before tomorrow night!"
+    Alice_08 "Oh, you... you lousy... that's sneaky... Okay, but I won't promise anything. First I'll see what you're offering.. If you can get it before tomorrow night!"
 
 # game/dialogues/alicetalk.rpy:892
 translate english Alice_sorry_01f9d180:
@@ -1900,7 +1900,7 @@ translate english gift_dress_newdress_show_4109c7f9:
 translate english gift_dress_newdress_show_1de0592f:
 
     # Alice_07 "Спасибо, Макс! Честно говоря, я не ожидала от тебя такого подарка. Спасибо! И..."
-    Alice_07 "Thank you, Max. I wasn't expecting a present like this from you. And..."
+    Alice_07 "Thank you! I wasn't expecting a present like this from you. And..."
 
 # game/dialogues/alicetalk.rpy:952
 translate english gift_dress_newdress_show_2179945a:
@@ -2004,7 +2004,7 @@ translate english gift_book_64ab516e:
 translate english gift_book_03d13f43:
 
     # Alice_07 "Умный он... Ну, молодец, что догадался. Спасибо, Макс! Если ещё попадутся из этой серии, буду рада принять их от тебя. Безвозмездно!"
-    Alice_07 "Einstein... Well, good job on the book guessing. Thank you, Max! If you find something like this again, I'll be glad to take it. Without compensation!"
+    Alice_07 "Einstein... Well, good job on guessing. Thank you, Max! If you find something like this again, I'll be glad to take it. Without compensation!"
 
 # game/dialogues/alicetalk.rpy:997
 translate english gift_book_e6768cdc:
@@ -2052,7 +2052,7 @@ translate english gift_book_9b836c58:
 translate english gift_book_e823379d:
 
     # Alice_04 "Супер! Давай, показывай, что тут у нас..."
-    Alice_04 "Super! Come on, show me what you've got there..."
+    Alice_04 "Great! Come on, show me what you've got there..."
 
 # game/dialogues/alicetalk.rpy:1021
 translate english gift_book_9652c3b9_2:
@@ -2088,7 +2088,7 @@ translate english gift_book_9652c3b9_3:
 translate english gift_book_a057e2a0:
 
     # Alice_07 "Забавная книжка. Давно хотела почитать... Спасибо, Макс. Ты меня балуешь!"
-    Alice_07 "This should be fun. I wanted to read this one for a long time... Thank you, Max. You're really spoiling me!"
+    Alice_07 "This should be fun. I wanted to read this one for a long time... Thank you. You're really spoiling me!"
 
 # game/dialogues/alicetalk.rpy:1041
 translate english gift_book_9b836c58_2:
@@ -2152,7 +2152,7 @@ translate english Alice_solar_260044ac:
 translate english Alice_solar_48142c15:
 
     # Max_07 "{i}( Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче. ){/i}"
-    Max_07 "{i}( Before you try to get to your sister this way, you should wear something that's easier to move around in. ){/i}"
+    Max_07 "{i}( I should wear something that's easier to move in before I try this. ){/i}"
 
 # game/dialogues/alicetalk.rpy:1710
 translate english Alice_solar_a934a086:
@@ -2356,7 +2356,7 @@ translate english massage_sunscreen_shoulders_78ef9d96:
 translate english massage_sunscreen_spine_c5f20f00:
 
     # Max_05 "{i}( Вот так, нужно хорошенько растереть крем... А теперь тщательно помнём спинку... Нежно, но сильно. ){/i}" nointeract
-    Max_05 "{i}( That's it, you need to RUB the cream well... Now carefully work the back... Gently, but firmly. ){/i}" nointeract
+    Max_05 "{i}( That's it, you need to rub the cream well... Now carefully work the back... Gently, but firmly. ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1318
 translate english massage_sunscreen_spine_7e3da85a:
@@ -2514,7 +2514,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1158
     old "Это уникальная методика массажа с целью оказания оздоравливающего воздействия на организм. Она эффективна и в тоже время несложна в исполнении."
-    new "This is a unique method of massage used to provide a healing effect on the body. It is effective and at the same time, easy to perform."
+    new "This is a unique method of massage used to provide a healing effect on the body. It is effective and easy to perform."
 
     # game/dialogues/alicetalk.rpy:1158
     old "Массаж кистей рук"
@@ -2529,7 +2529,7 @@ translate english strings:
 translate english Alice_sorry_16af519e:
 
     # Alice_08 "Ах ты... паршивец... Это подлый ход, потому что от вкусняшки я бы не отказалась... Хорошо, но обещать ничего не буду, сперва посмотрю, что это будет за вкусность... Если ты конечно успеешь до вечера понедельника!"
-    Alice_08 "You... bastard... that's a dirty move, because I could really go for something delicious... Alright. But i'm not promising anything yet. First, I'll see what you can come up with... If you can have it by Monday night!"
+    Alice_08 "You... bastard... that's a dirty move, because I could really go for something yummy... Alright. But i'm not promising anything yet. First, I'll see what you can come up with... If you can have it by Monday night!"
 
 # game/dialogues/alicetalk.rpy:898
 translate english Alice_sorry_757230ae:
@@ -2559,7 +2559,7 @@ translate english Alice_sorry_89af1794:
 translate english Alice_sorry_88325cef:
 
     # Alice_16 "Конечно нет, дубина! Стоял снова и глазел на меня голую! Мама обязательно об этом узнает..."
-    Alice_16 "Of course not, you idiot! You've just spied on me again! Mom's gonna know about this..."
+    Alice_16 "Of course not, you idiot! You just spied on me again! Mom's gonna know about this..."
 
 # game/dialogues/alicetalk.rpy:914
 translate english Alice_sorry_83ba523d:
@@ -2595,7 +2595,7 @@ translate english Alice_sorry_f61b9d40:
 translate english Alice_sorry_7981d206:
 
     # Alice_02 "Ты, конечно, можешь попробовать, от чего-нибудь сладенького я не откажусь, но ты же понимаешь, что мне должно это очень понравиться."
-    Alice_02 "You can try it, if you want. I'm not going to say no to it, but if you expect forgiveness, it has to be something that I really like."
+    Alice_02 "You can try it, if you want. I'm not going to refuse, but if you expect forgiveness, it has to be something that I really like."
 
 # game/dialogues/alicetalk.rpy:921
 translate english Alice_sorry_bb87973c:
@@ -2607,7 +2607,7 @@ translate english Alice_sorry_bb87973c:
 translate english Alice_sorry_af96d70e:
 
     # Max_01 "Значит, до следующего ужина?"
-    Max_01 "Until the next dinner, then?"
+    Max_01 "Until dinner, then?"
 
 # game/dialogues/alicetalk.rpy:924
 translate english Alice_sorry_21088bb3:
@@ -3003,7 +3003,7 @@ translate english alice_sorry_gifts_good_dc8918e7_1:
 translate english alice_sorry_gifts_good_c6a269e0_1:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
-    Max_11 "Note taken, Alice! Let it go already..."
+    Max_11 "Note taken, Alice! Let go already..."
 
 # game/dialogues/alicetalk.rpy:1625
 translate english alice_sorry_gifts_good_a174e7cf_2:
@@ -3093,7 +3093,7 @@ translate english alice_sorry_gifts_good_39aea913:
 translate english alice_sorry_gifts_good_39cc7463:
 
     # Max_01 "Я тогда лучше пойду... погуляю."
-    Max_01 "I'd better go then and... take a walk."
+    Max_01 "I'd better go then and...take a walk."
 
 # game/dialogues/alicetalk.rpy:1649
 translate english alice_sorry_gifts_good_4d4f6eae:
@@ -5588,7 +5588,7 @@ translate english gift_pajamas_910b5259:
 translate english gift_pajamas_e470c240:
 
     # Alice_03 "Спасибо тебе ещё раз! Иди ко мне, я тебя приобниму... немного."
-    Alice_03 "Thank you again! Come to me, I'll give you a hug... a little one."
+    Alice_03 "Thank you again! Come here, I'll give you a hug... a little one."
 
 # game/dialogues/alicetalk.rpy:1234
 translate english gift_pajamas_7f1920a4:
@@ -5624,7 +5624,7 @@ translate english gift_pajamas_6374794e:
 translate english gift_pajamas_f1206b18:
 
     # Alice_04 "А жирно тебе не будет?! В душе на меня глазел, а теперь и здесь хочешь подглядеть... Нет уж! Но за пижамку я тебя всё же обниму! Ну так... совсем немного..."
-    Alice_04 "Are you serious?! You stared at me in the shower, and now you want to peek at me here... No way! But I'll give you a hug for your pajamas! Well then... just a little..."
+    Alice_04 "Are you serious?! You stared at me in the shower, and now you want to peek at me here... No way! But I'll give you a hug for your pajamas! Well... just a little..."
 
 # game/dialogues/alicetalk.rpy:1248
 translate english gift_pajamas_f070e574:
@@ -5963,7 +5963,7 @@ translate english alice_talk_tv_massage_4aec2691:
 translate english alice_talk_tv_massage_953afbb3:
 
     # Alice_04 "[alice_good_mass!t]А ты неплох сегодня в этом деле... Хорошо, что ты никакой не работяга. Руки у тебя нежные. Приятно очень..." nointeract
-    Alice_04 "[alice_good_mass!t]you're not bad at it today... It's a good thing you don't have rough hands. They feel so eager..." nointeract
+    Alice_04 "[alice_good_mass!t]You're not bad at it today... It's a good thing you don't have rough hands. They feel so eager..." nointeract
 
 # game/dialogues/alicetalk.rpy:429
 translate english alice_talk_tv_massage_67ad610f:
@@ -6119,7 +6119,7 @@ translate english alice_talk_tv_jeans_208248b5:
 translate english alice_talk_tv_jeans_c64ca38f:
 
     # Alice_01 "Сам догадайся, глупый. Но я намекну: возможно, под джинсами ничего нет. Понял? Всё, а теперь иди отсюда, фантазируй..."
-    Alice_01 "You can guess, stupid. But I'll give you a hint: maybe there's nothing under my jeans. Get it? That's it, now get out of here and fantasize..."
+    Alice_01 "You can guess, stupid. But I'll give you a hint: maybe there's nothing under my jeans. Get it? That's it. Now get out of here and fantasize..."
 
 # game/dialogues/alicetalk.rpy:520
 translate english alice_talk_tv_jeans_848c8c8f:
