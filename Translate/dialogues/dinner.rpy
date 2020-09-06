@@ -58,7 +58,7 @@ translate english dinner_first_7344f574:
 translate english dinner_first_ccf193ad:
 
     # Ann_14 "Вот с этим беда. На общественном транспорте добираться долго. Но думаю, что эта проблема решится..." nointeract
-    Ann_14 "In the city, but It takes too long getting there with public transport. I'm hoping to find another way soon..." nointeract
+    Ann_14 "In the city, but it takes too long getting there with public transport. I'm hoping to find another way soon..." nointeract
 
 # game/dialogues/dinner.rpy:44
 translate english dinner_first_great_f75fe005:
