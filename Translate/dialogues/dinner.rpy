@@ -1305,7 +1305,7 @@ translate english dinner_6_d26308bb:
 translate english dinner_6_20ceec69:
 
     # Max_08 "Я против."
-    Max_08 "I'm 100% against this"
+    Max_08 "I'm 100%% against this"
 
 # game/dialogues/dinner.rpy:489
 translate english dinner_6_c16222e2:
