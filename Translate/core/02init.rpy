@@ -313,3 +313,35 @@ translate english strings:
     old "Ну что, готова?"
     new "Are you ready?"
 
+# TODO: Translation updated at 2020-09-08 23:53
+
+translate english strings:
+
+    # game/core/02init.rpy:71
+    old "Слушай, насчёт блога..."
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Насчёт твоего блога... А если не особо раздеваться?"
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Лиза, ты же любишь читать?"
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Лиза, у меня для тебя особая книжка..."
+    new ""
+
+    # game/core/02init.rpy:128
+    old "У меня есть кое-что, о чём мы беседовали..."
+    new ""
+
+    # game/core/02init.rpy:128
+    old "{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"
+    new ""
+
+    # game/core/02init.rpy:128
+    old "Прикупил для тебя немного сладенького!"
+    new ""
+

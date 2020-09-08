@@ -7450,3 +7450,145 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:3125
     old "{i}нежно прикасаться к её груди{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
     new "{{i}Gently touch her breasts{/i} {color=[_kiss.cool]}(Kisses. Chance: [_kiss.vis]){/color}"
+# TODO: Translation updated at 2020-09-08 23:53
+
+# game/dialogues/lisatalk.rpy:2895
+translate english lisa_gift_sweets_e87e32c4:
+
+    # Max_05 "{i}( Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, если я буду так крепко прижимать её упругую попку к себе! ){/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:2905
+translate english lisa_gift_sweets_e3d562ed:
+
+    # Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! Как и то, что она совершенно не против моих прикосновений к её прелестной попке... ){/i}"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:3190
+translate english lisa_sexbook1_2e854bc0:
+
+    # Lisa_02 "Ага, бывает иногда..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3191
+translate english lisa_sexbook1_4e752f92:
+
+    # Max_09 "{i}( А мне и самому было бы полезно прочитать эту книгу. Как знать, вдруг я что-то интересное для себя открою?! ){/i}" nointeract
+    Max_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3195
+translate english lisa_sexbook1_aef61c15:
+
+    # Max_01 "У меня для тебя особая книжка..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3196
+translate english lisa_sexbook1_335b0cd0:
+
+    # Lisa_01 "Ого. Подарок для меня, да ещё книжка! Интересная, хоть?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3200
+translate english lisa_sexbook1_efaaffdf:
+
+    # Max_01 "Тогда я подыщу для тебя какую-нибудь интересную и полезную книжку!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3201
+translate english lisa_sexbook1_822c65a1:
+
+    # Lisa_01 "О как! Я ничего против не имею. Главное, чтобы действительно интересная была..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3202
+translate english lisa_sexbook1_0013fff0:
+
+    # Max_02 "Ага."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3209
+translate english lisa_sexbook2_93a34cd9:
+
+    # Lisa_01 "Ого. Прямо, как ты и обещал! Интересная, хоть?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3213
+translate english gift_sexbook_42f8dd64:
+
+    # Max_02 "Ну, зависит от настроения..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3214
+translate english gift_sexbook_306955ca:
+
+    # Lisa_02 "Заинтриговал. И какое должно быть настроение для этой книги?" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3220
+translate english gift_sexbook_a1b0018d:
+
+    # Lisa_03 "Ну ладно, давай сюда свою книжку, что там... Э... сексуальное образование? Ты серьёзно, Макс?"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3221
+translate english gift_sexbook_847c34e5:
+
+    # Max_04 "Вполне. Считай это частью моей программы!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3222
+translate english gift_sexbook_d6718ec3:
+
+    # Lisa_02 "Что, своих знаний маловато, решил воспользоваться сторонней помощью?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3223
+translate english gift_sexbook_0332c03b:
+
+    # Max_07 "Лишним не будет! Так ты берёшь книгу или нет?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3224
+translate english gift_sexbook_ab7984d5:
+
+    # Lisa_03 "Конечно! Почему бы и нет. Вдруг, окажется интересной. Кто-то же писал, старался. А ты вот пыхтел, деньги на неё зарабатывал, заказывал и речь готовил, скорее всего..." nointeract
+    Lisa_03 "" nointeract
+
+# game/dialogues/lisatalk.rpy:3230
+translate english gift_sexbook_904b73a8:
+
+    # Lisa_01 "В общем, спасибо тебе, Макс. Буду читать перед сном. Ну или когда будет... сам понимаешь, Настроение..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3231
+translate english gift_sexbook_71e49abd:
+
+    # Max_01 "Не за что!"
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:3191
+    old "{i}всё равно подарить книгу{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3191
+    old "{i}сперва прочитать самому{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3214
+    old "Возбуждённое..."
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3214
+    old "Особое такое..."
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3224
+    old "Именно!"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:3224
+    old "Нет, речь не готовил..."
+    new ""
+
