@@ -573,6 +573,58 @@ style game_menu_label_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#save
 
+# screen save_input(prompt="", default="", length=18):
+#     modal True
+#     frame:
+#         xpos 0.2
+#         ypos 0.2
+#         xsize 0.6
+#         ysize 0.3
+#         window:
+#             has vbox
+#
+#             text prompt:
+#                 xpos 0.35
+#                 ypos 3.7
+#             input default default length length:
+#                 xpos 0.37
+#                 ypos 4.7
+#
+# init -2 python:
+#     class get_save_name(FileSave):
+#         def __init__(self, name, confirm=True, newest=True, page=None, cycle=False):
+#             super(get_save_name,self).__init__(name=name,confirm=confirm,newest=newest,page=page,cycle=cycle)
+#         def __call__(self):
+#             renpy.call_in_new_context("get_save_name")
+#             return super(get_save_name,self).__call__()
+#
+#     def get_path():
+#         rv = "Harem route"
+#         if not entzone >= 4:
+#             if entzone == -1:
+#                 rv = "Harem route"
+#             else:
+#                 if jennadeny == 2:
+#                     rv = "Harem route"
+#                 else:
+#                     rv = "Husband route"
+#         elif d6evirgchoice == 1:
+#             if d7embel == 1:
+#                 rv = "Harem route"
+#             else:
+#                 rv = "Elly route"
+#         if spaghetti_ass_code == 1:
+#             rv = "Forbidden route"
+#         return rv
+#
+# label get_save_name:
+#     show screen save
+#     $ save_name = renpy.call_screen("save_input", prompt="Enter a description for your save file:", default=get_path())
+#     $ renpy.retain_after_load()
+#     return
+
+
+
 screen modal_input:
     modal True
     window style "input_window":

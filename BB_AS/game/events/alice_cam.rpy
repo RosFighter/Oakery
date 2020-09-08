@@ -3,7 +3,8 @@ label cam0_alice_sleep_night:
     if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
         $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) and not peeping['alice_sleep'] else 'sleep_no_fun')
 
-    $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('other Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' not in cam_flag]):
@@ -25,7 +26,7 @@ label cam0_alice_sleep_night:
         # день веселья. интресное закончилось
         if 'smoke' in flags and flags['smoke'] == 'sleep':
             Max_04 "Ночное шоу закончилось. Теперь Алиса спит... без лифчика... Умничка!"
-        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+        elif 'smoke' in flags and flags['smoke'] == 'not_sleep' and not flags['noted']:
             Max_09 "Ночное шоу закончилось. Теперь Алиса спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
         else:
             Max_01 "Ночное шоу закончилось. Теперь Алиса спит..."
@@ -34,14 +35,15 @@ label cam0_alice_sleep_night:
         $ cam_flag.append('alice_sleep')
         if 'smoke' in flags and flags['smoke'] == 'sleep':
             Max_04 "Алиса сейчас спит... без лифчика... Умничка!"
-        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+        elif 'smoke' in flags and flags['smoke'] == 'not_sleep' and not flags['noted']:
             Max_09 "Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
         else:
             Max_01 "Алиса сейчас спит..."
     return
 
 label cam0_alice_sleep_morning:
-    $ renpy.show('Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    $ renpy.show('Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('other Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')
@@ -510,8 +512,8 @@ label cam0_alice_cooking_dinner:
 label cam0_alice_rest_evening:
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
         if GetWeekday(day) in [0, 2]:
-            $ cam_flag.append('blog_fun' if RandomChance(500) else 'blog_no_fun')
-        elif GetWeekday(day) == 6:
+            $ cam_flag.append('blog_fun' if RandomChance(500) and poss['blog'].stn>1 and 'kira' in chars else 'blog_no_fun')
+        elif GetWeekday(day) == 6 and poss['blog'].stn>1 and 'kira' in chars:
             $ cam_flag.append('blog_fun')
         else:
             $ cam_flag.append('blog_no_fun')

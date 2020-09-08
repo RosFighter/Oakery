@@ -94,30 +94,26 @@ label alice_sleep_night:
         return
 
     $ peeping['alice_sleep'] = 1
-    # if 'smoke' in talk_var and flags['smoke'] == 'sleep':
-    #     $ __suf = 'a'
-    # else:
-    #     $ __suf = ''
     menu:
         Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
         "{i}заглянуть в окно{/i}":
             $ spent_time = 10
             scene BG char Alice bed-night-01
-            $ renpy.show('Alice sleep-night '+pose3_2+alice.dress)
+            $ renpy.show('Alice sleep-night '+pose3_2)
+            $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
             if 'smoke' in flags and flags['smoke'] == 'sleep':
                 #  условие выполняется
-                $ alice.dress_inf = '02ga'
                 if pose3_2 == '01':
                     Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела, в одних лищь трусиках, хочется смотреть вечно!" nointeract
                 elif pose3_2 == '02':
                     Max_04 "Эх! Не повезло, что Алиса спит спиной к окну и её грудь не видно... Правда, в таком случае, всегда можно насладиться красотой Алисиной попки." nointeract
                 else:
                     Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище..." nointeract
-            elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+            elif 'smoke' in flags and flags['smoke'] == 'not_sleep' and not flags['noted']:
                 # Алиса нарушила условие
                 $ flags['noted'] = True
-                $ alice.dress_inf = '02'
+                $ alice.dress_inf = clothes[alice].sleep.GetCur().info
                 if pose3_2 == '01':
                     Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно! Только вот не всё из этого должно быть на ней одето!"
                 elif pose3_2 == '02':
@@ -136,7 +132,8 @@ label alice_sleep_night:
             if rez != 'exit':
                 $ spent_time += 10
                 scene BG char Alice bed-night-02
-                $ renpy.show('Alice sleep-night-closer '+pose3_2+alice.dress)
+                $ renpy.show('Alice sleep-night-closer '+pose3_2)
+                $ renpy.show('other Alice sleep-night-closer '+pose3_2+alice.dress)
                 if 'smoke' in flags and flags['smoke'] == 'sleep':
                     if pose3_2 == '01':
                         Max_03 "Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить..." nointeract
@@ -162,16 +159,13 @@ label alice_sleep_morning:
     if peeping['alice_sleep'] != 0:
         return
     $ peeping['alice_sleep'] = 1
-    # if 'smoke' in talk_var and flags['smoke'] == 'sleep':
-    #     $ __suf = 'a'
-    # else:
-    #     $ __suf = ''
     menu:
         Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..."
         "{i}заглянуть в окно{/i}":
             $ spent_time = 10
             scene BG char Alice bed-morning-01
-            $ renpy.show('Alice sleep-morning '+pose3_2+alice.dress)
+            $ renpy.show('Alice sleep-morning '+pose3_2)
+            $ renpy.show('other Alice sleep-morning '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-morning-00'+mgg.dress)
             if 'smoke' in flags and flags['smoke'] == 'sleep':
                 $ alice.dress_inf = '02ga'
@@ -181,7 +175,7 @@ label alice_sleep_morning:
                     Max_01 "Чёрт! Как же хорошо, что теперь она спит без лифчика и я могу насладится почти всей красотой её тела, и ещё как... Обалденные у неё сиськи!" nointeract
                 else:
                     Max_04 "Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
-            elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+            elif 'smoke' in flags and flags['smoke'] == 'not_sleep' and not flags['noted']:
                 $ flags['noted'] = True
                 $ alice.dress_inf = '02'
                 if pose3_2 == '01':
@@ -202,7 +196,8 @@ label alice_sleep_morning:
             if rez != 'exit':
                 $ spent_time += 10
                 scene BG char Alice bed-morning-02
-                $ renpy.show('Alice sleep-morning-closer '+pose3_2+alice.dress)
+                $ renpy.show('Alice sleep-morning-closer '+pose3_2)
+                $ renpy.show('other Alice sleep-morning-closer '+pose3_2+alice.dress)
                 if 'smoke' in flags and flags['smoke'] == 'sleep':
                     if pose3_2 == '01':
                         Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эти сиськи! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
@@ -683,6 +678,7 @@ label alice_dressed_club:
                 Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше... Так. Пора бы сваливать. Вдруг, кто-то заметит!"
 
             $ spent_time += 10
+            $ cam_flag.append('alice_dressed')
             jump Waiting
         "{i}уйти{/i}":
             jump Waiting
@@ -691,6 +687,7 @@ label alice_dressed_club:
         $ alice.dress_inf = '06'
         Alice "{b}Алиса:{/b} Кто там? Я собираюсь, подождите..."
         Max_00 "Это я, Макс. У меня к тебе дело..."
+        $ spent_time += 20
         scene BG char Alice newdress
         show Alice newdress 02a
         menu:
@@ -726,6 +723,7 @@ label alice_dressed_club:
     label .end:
         Max_04 "Ага..."
         $ spent_time += 10
+        $ cam_flag.append('alice_dressed')
         jump Waiting
 
 
@@ -791,7 +789,7 @@ label alice_evening_closer:
 label spider_in_bed:
     $ __mood = 0
     if 'smoke' in talk_var and flags['smoke'] == 'sleep':
-        $ __suf = 'a'
+        $ __suf = 't'
         $ __toples = True
     else:
         $ __suf = ''
@@ -800,12 +798,12 @@ label spider_in_bed:
         $ flags['noted'] = True
 
     scene BG char Alice spider-night-01
-    $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+__suf)
+    $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+alice.dress+__suf)
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
     $ renpy.show('Max spider-night 02-'+renpy.random.choice(['01', '02', '03']))
-    $ renpy.show('Alice spider-night 02-01'+__suf)
+    $ renpy.show('Alice spider-night 02-01'+alice.dress+__suf)
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
         "Что случилось?":
@@ -834,7 +832,7 @@ label spider_in_bed:
 
     label .help:
         scene BG char Alice spider-night-03
-        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['01', '02', '03'])+__suf)
+        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['01', '02', '03'])+alice.dress+__suf)
         show Max spider-night 03-01
 
         $ _ch1 = GetChance(mgg.social, 5, 900)
@@ -845,7 +843,7 @@ label spider_in_bed:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
             "А что мне за это будет?" if __suf == '' and not flags['noted']:  # Вариант недоступен, если Алиса без лифчика или нарушает договоренность и Макс об этом знает
                 show Max spider-night 03-02
-                $ renpy.show('Alice spider-night 03-04'+__suf)
+                $ renpy.show('Alice spider-night 03-04'+alice.dress+__suf)
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
                     "Давай $10! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
@@ -868,7 +866,7 @@ label spider_in_bed:
                         jump .spider
             "А что мне за это будет?" if __suf != '':  # Алиса без лифчика
                 show Max spider-night 03-02
-                $ renpy.show("Alice spider-night 03-04"+__suf)
+                $ renpy.show("Alice spider-night 03-04"+alice.dress+__suf)
                 Alice_06 "Макс, не наглей! Я и так перед тобой тут в одних трусиках... Тебе этого мало что ли?!"
                 Max_07 "Ну, я вижу, что условия нашей договорённости ты соблюдаешь, только вот к поимке паука это никак не относится."
                 Alice_12 "И чего тебе, в таком случае, ещё от меня надо?"
@@ -907,13 +905,14 @@ label spider_in_bed:
                 Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
                 Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
                 scene BG char Alice spider-night-05
-                $ renpy.show('Alice spider-night 05-'+renpy.random.choice(['01', '02', '03']))
+                $ renpy.show('Alice spider-night 05-'+renpy.random.choice(['01', '02', '03'])+alice.dress)
                 Alice_06 "Ну вот... смотри... И не говори, что этого мало... большего не покажу! Доволен?"
                 Max_05 "О да, я очень доволен! Попка у тебя просто супер, сестрёнка!"
                 Alice_12 "Всё! Посмотрел и хватит, давай уже, лови этого паука!"
                 Max_04 "Ладно, теперь можно и поймать..."
-                $ punalice[3][0] = 10  #ставим на три дня раньше требование Макса, чтобы ослушание Алисы наступило раньше, чем при требовании во время курения
+                $ punalice[2][0]=10  #ставим на три дня раньше требование Макса, чтобы ослушание Алисы наступило раньше, чем при требовании во время курения
                 $ flags['smoke'] = flags['smoke.request']
+                $ flags['noted'] = False
                 if flags['smoke.request'] == 'nopants':
                     $ alice.nopants = True
                 elif flags['smoke.request'] == 'sleep':
@@ -923,14 +922,14 @@ label spider_in_bed:
 
     label .fail:
         $ Skill('social', 0.1)
-        $ renpy.show('Alice spider-night 03-05'+__suf)
+        $ renpy.show('Alice spider-night 03-05'+alice.dress+__suf)
         Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
         $ __mood -= 100
         jump .spider
 
     label .money:
-        show Alice spider-night 03-06
+        $ renpy.show('Alice spider-night 03-06'+alice.dress)
         $ Skill('social', 0.2)
         Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
         Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
@@ -943,10 +942,10 @@ label spider_in_bed:
         $ Skill('social', 0.2)
         if alice.GetMood()[0] < 3:
             $ __mood -= 50
-            $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08']))
+            $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08'])+alice.dress)
             Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
         else:
-            show Alice spider-night 03-09
+            $ renpy.show('Alice spider-night 03-09'+alice.dress)
             Alice_09 "[succes!t]Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
         Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
         jump .spider
@@ -955,7 +954,7 @@ label spider_in_bed:
         $ __toples = True
         $ Skill('social', 0.2)
         show Max spider-night 03-03
-        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12']))
+        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+alice.dress)
         if alice.GetMood()[0] < 3:
             $ __mood -= 50
         Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
@@ -966,9 +965,9 @@ label spider_in_bed:
         scene BG char Alice spider-night-04
         show Max spider-night 04-01
         if __toples:
-            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06']))
+            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06'])+alice.dress)
         else:
-            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03']))
+            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03'])+alice.dress)
         $ _ch1 = GetChance(mgg.social, 3, 900)
         menu:
             Max_07 "Ага, попался! Пожалуй, вот что я сделаю..."

@@ -16,7 +16,7 @@ translate english alice_bath_ab9e6db9:
 translate english alice_bath_74fd8c7a:
 
     # Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
-    Alice "{b}Alice:{/b} Max, are you deaf? I just told you i'm in the bath. Don't come back for at least an hour!"
+    Alice "{b}Alice:{/b} Max, are you deaf? I just told you I'm in the bath. Don't come back for at least an hour!"
 
 # game/events/alice.rpy:17
 translate english alice_bath_84309eb3:
@@ -34,7 +34,7 @@ translate english alice_bath_12dd9242:
 translate english alice_bath_617c9a2e:
 
     # Max_09 "Нужно что-нибудь придумать..." nointeract
-    Max_09 "We need to think of something..." nointeract
+    Max_09 "I need to think of something..." nointeract
 
 # game/events/alice.rpy:40
 translate english alice_sleep_night_7ff48024:
@@ -88,7 +88,7 @@ translate english alice_sleep_morning_7ff48024:
 translate english alice_sleep_morning_5a7b04f5:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... " nointeract
-    Max_07 "Yes! Alice is still asleep, which makes me very happy...it means I can see her naked almost properly... " nointeract
+    Max_07 "Yes! Alice is still asleep, which makes me very happy...it means I have a good chance to admire her... " nointeract
 
 # game/events/alice.rpy:85
 translate english alice_sleep_morning_f2de281e:
@@ -130,7 +130,7 @@ translate english alice_shower_e2dd6210:
 translate english alice_shower_e37f4a67:
 
     # Max_00 "Я уже подсматривал сегодня за Алисой. Не стоит искушать судьбу слишком часто."
-    Max_00 "Already peeped on here today. Can't tempt fate too often."
+    Max_00 "Already peeped on her today. Can't tempt fate too often."
 
 # game/events/alice.rpy:113
 translate english alice_shower_9d7448c3:
@@ -178,7 +178,7 @@ translate english alice_shower_closer_peepeng_051a23bb:
 translate english alice_shower_pinded_e19147dd:
 
     # Alice_12 "[spotted!t]Макс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!" nointeract
-    Alice_12 "[spotted!t]Max!!! Are you peeping?! You're so dead! You're lucky I'm naked now... But I'm going to I'll tell my mom everything, she'll punish you!" nointeract
+    Alice_12 "[spotted!t]Max!!! Are you peeping?! You're so dead! You're lucky I'm naked now... But I'm going to tell Mom everything, she'll punish you!" nointeract
 
 # game/events/alice.rpy:214
 translate english alice_dressed_shop_61771170:
@@ -379,7 +379,7 @@ translate english spider_in_bed_12221b33:
 translate english spider_in_bed_4e92be20:
 
     # Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!" nointeract
-    Alice_06 "Help me, Max. There's a huge spider in my room! Kill it, please!" nointeract
+    Alice_06 "Help me! There's a huge spider in my room! Kill it, please!" nointeract
 
 # game/events/alice.rpy:410
 translate english spider_in_bed_goaway_9bf961dd:
@@ -427,13 +427,13 @@ translate english spider_in_bed_money_5f8bef51:
 translate english spider_in_bed_tits_556ab3f7:
 
     # Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
-    Alice_14 "[succes!t]You little twerp... Fine, look. Now go and kill this spider already!"
+    Alice_14 "[succes!t]You little shit... Fine, look. Now go and kill that spider already!"
 
 # game/events/alice.rpy:812
 translate english spider_in_bed_tits_455bb217:
 
     # Alice_09 "[succes!t]Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
-    Alice_09 "[succes!t]Ah! What a pig you are, Max... Okay, look, I'm kind today. And kill him already, finally!"
+    Alice_09 "[succes!t]Ah! You're such a pig... Fine, look, I'm generous today. Now go kill it already!"
 
 # game/events/alice.rpy:484
 translate english spider_in_bed_tits_eccbb760:
@@ -445,7 +445,7 @@ translate english spider_in_bed_tits_eccbb760:
 translate english spider_in_bed_toples_199ed983:
 
     # Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
-    Alice_15 "[succes!t]You little twerp... Fine... Are you happy now, you perv? Now go and kill this spider already!"
+    Alice_15 "[succes!t]You little shit... Fine... Are you happy now, you perv? Now go and kill that spider already!"
 
 # game/events/alice.rpy:494
 translate english spider_in_bed_toples_19d75d09:
@@ -641,7 +641,7 @@ translate english alice_sleep_night_108775b5:
 translate english alice_sleep_night_43e235c5:
 
     # Max_03 "Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить..." nointeract
-    Max_03 "Yeah, well... It's a pity you can't see your breasts the way you want to, but you can admire her enchanting ass forever... I just want to slap it... Really, then it'll be the last thing I do in my life. So it's better to leave quietly..." nointeract
+    Max_03 "Yeah, well... It's a pity I can't see her breasts the way I want to, but I can admire her enchanting ass forever... I just want to slap it... Really, then it'll be the last thing I do in my life. So it's better to leave quietly..." nointeract
 
 # game/events/alice.rpy:137
 translate english alice_sleep_night_eab46551:

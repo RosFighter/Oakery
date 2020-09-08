@@ -70,7 +70,8 @@ define helps = [
 # Диалоги
 define talks = {
     'blog1'      : TalkTheme('alice', _("Значит, у тебя есть блог?"), 'talkblog1', "talk_var['blog']==1", -1),
-    'blog2'      : TalkTheme('alice', _("Насчёт блога..."), 'talkblog2', "talk_var['blog']==3", 1),
+    'blog2'      : TalkTheme('alice', _("Слушай, насчёт блога..."), 'talkblog2', "poss['blog'].stn==1", 1),
+    'blog3'      : TalkTheme('alice', _("Насчёт твоего блога... А если не особо раздеваться?"), 'talkblog3', "flags['cam_fun_alice'] and poss['blog'].stn in [2,3]", 1),
     'lisa_fd'    : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and talk_var['lisa_fd']==0 and talk_var['boy']==0"),
     'lisa_swim'  : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].stn < 0 and lisa.plan_name == 'sun'"),
     'lisas_boy'  : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy', "talk_var['boy']==1", 0, "lisa_boy"),
@@ -107,6 +108,8 @@ define talks = {
     'kira.kiss'  : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' in talk_var['ask.teachkiss'], 'alice' in talk_var['ask.teachkiss'], 'kira' not in talk_var['ask.teachkiss']])"),
     'l.firstkiss': TalkTheme('lisa', _("Ну что, Лиза, готова?"), 'lisa_ment_kiss1', "all([lisa.plan_name=='read', talk_var['teachkiss']>3, 'lisa' not in talk_var['ask.teachkiss']])"),
     'l.nextkiss' : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', dcv['lisa_mentor'].done, poss['seduction'].stn>7])"),
+    'l.sex-ed1'  : TalkTheme('lisa', _("Лиза, ты же любишь читать?"), 'lisa_sexbook1', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn<12])"),
+    'l.sex-ed2'  : TalkTheme('lisa', _("Лиза, у меня для тебя особая книжка..."), 'lisa_sexbook2', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn>12])"),
     }
 
 
@@ -126,19 +129,21 @@ define gifts = {
     'lisa'  : [
         Gift('bikini', _("А у меня есть то, о чём ты мечтала..."), 'gift_swimsuit'),
         Gift('bathrobe', _("У меня для тебя подарок {i}(Халат){/i}"), 'gift_bathrobe', -1, "lisa.plan_name in ['sun', 'read', 'phone']"),
-        # Gift(['ritter-m', 'ritter-b'], _("{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"), '', -1, "all([lisa.plan_name in ['sun', 'read', 'phone'], not dcv['lisa_sweets'].done])"),
-        # Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all([lisa.plan_name in ['sun', 'read', 'phone'], dcv['lisa_sweets'].done])"),
+        Gift(['ritter-m', 'ritter-b'], _("{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], not dcv['lisa_sweets'].done])"),
+        Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], dcv['lisa_sweets'].done])"),
         ],
     'alice' : [
-        Gift('cigarettes', _("У меня есть кое-что запрещённое..."), 'gift_cigarettes', -1),
-        Gift('dress', _("Угадай: маленькое, чёрненькое..."), 'gift_dress', -2),
-        Gift('erobook_1', _("У меня для тебя одна книжка..."), 'gift_book', -1),
-        Gift('erobook_2', _("У меня снова для тебя книжка..."), 'gift_book', -1),
-        Gift('erobook_3', _("И снова у меня для тебя книжка..."), 'gift_book', -1),
-        Gift('erobook_4', _("И снова у меня для тебя книжка..."), 'gift_book', -1),
-        Gift('erobook_5', _("У меня снова для тебя книжка..."), 'gift_book', -1),
+        Gift('cigarettes', _("У меня есть кое-что запрещённое..."), 'gift_cigarettes', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift('dress', _("Угадай: маленькое, чёрненькое..."), 'gift_dress', -2, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift('erobook_1', _("У меня для тебя одна книжка..."), 'gift_book', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift('erobook_2', _("У меня снова для тебя книжка..."), 'gift_book', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift('erobook_3', _("И снова у меня для тебя книжка..."), 'gift_book', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift('erobook_4', _("И снова у меня для тебя книжка..."), 'gift_book', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift('erobook_5', _("У меня снова для тебя книжка..."), 'gift_book', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
         Gift('pajamas', _("У меня для тебя подарок {i}(Пижама){/i}"), 'gift_pajamas', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
-        # Gift("", _(""), ""),
+        Gift("b.lingerie", _("У меня есть кое-что, о чём мы беседовали..."), "gift_black_lingerie", -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+        Gift(['ferrero-m', 'ferrero-b'], _("{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], not dcv['alice_sweets'].done])"),
+        Gift(['ferrero-m', 'ferrero-b'], _("Прикупил для тебя немного сладенького!"), 'alice_gift_sweets', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], dcv['alice_sweets'].done])"),
         ],
     'ann'   : [
         # Gift('cosmatic1', _("У меня для тебя подарок {i}(Косметика){/i}"), 'gift_cosmatics'),

@@ -63,7 +63,7 @@ label kira_bath:
         $ Skill('hide', 0.03)
 
         Max_02 "Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой..."
-        if all([len(online_cources)>1 and online_cources[1].cources[0].less, talk_var['kira.porn']>0, talk_var['lisa.footmass']>0]):
+        if _in_replay or all([len(online_cources)>1 and online_cources[1].cources[0].less, talk_var['kira.porn']>0, talk_var['lisa.footmass']>0]):
             # совместный просмотр порно уже был, Макс делал девчонкам массаж ног
             show Kira bath-window 02
             Max_05 "Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально..."   #если был совместный просмотр порно с Кирой
@@ -631,7 +631,7 @@ label kira_night_tv:
             scene BG char Alice tv-mass-05
             show Kira tv-closer max-03
             $ __suf = ''
-            if talk_var['kira.bath.mass'] and len(online_cources)>1 and online_cources[1].cources[0].less:
+            if talk_var['kira.bath.mass'] and (_in_replay or (len(online_cources)>1 and online_cources[1].cources[0].less)):
                 Kira_05 "Если хочешь, можешь даже снять шорты, чтобы резинка ничего не передавливала..."
                 Max_02 "Только если ты тоже разденешься..."
                 menu:

@@ -72,7 +72,7 @@ translate english strings:
 
     # game/core/02init.rpy:33
     old "В процессе игры, во время диалогов и других действий, вы можете открыть для себя новые \"возможности\". Их механика немного похожа на \"задания\" или \"квесты\" из других игр, но есть некоторые отличия.\n\n\n\"Возможности\" могут открывать доступ к скрытым событиям или покупкам в интернет-магазине, к новым опциям в ноутбуке или действиям в некоторых комнатах. Читайте внимательно описание каждой \"возможности\" и вы ничего не упустите!"
-    new "During in game dialogues and other actions, you may be presented with \"opportunities\". These are comparable to quests to in other games, with a few differences. \n\n\n\"Opportunities\" can open hidden actions, items in the online shop, options on your laptop and actions in some rooms. Read their description carefully and you won't miss anything!"
+    new "During in-game dialogues and other actions, you may be presented with \"opportunities\". These are comparable to quests to in other games, with a few differences. \n\n\n\"Opportunities\" can open hidden actions, items in the online shop, options on your laptop and actions in some rooms. Read their description carefully and you won't miss anything!"
 
     # game/core/02init.rpy:33
     old "Настроение"
@@ -80,7 +80,7 @@ translate english strings:
 
     # game/core/02init.rpy:33
     old "Различные действия или фразы, сказанные Максом, могут вызывать соответствующую реакцию в виде смены настроения персонажа.\n\n\nЕсли у персонажа плохое настроение, он может отказаться с вами обсуждать некоторые темы.\n\n\nПостепенно, каждый час, настроение плавно стремится к нейтральному состоянию. Однако, если настроение очень плохое, оно будет долго восстанавливаться.\n\n\nЧтобы поднять настроение, можно подарить то, что нужно именно этому персонажу или же просто извиниться. А иногда и правильное слово во время разговора может значительно улучшить настроение."
-    new "Different actions or phrases will affect character’s moods.\n\n\nIf a character is in a bad mood, they might refuse to talk about some topics, or shut down the players advances.\n\n\nEvery hour, character's moods slowly shift towards neutral. If you've done something to put them in a particularly bad mood, it will take even longer for them to return to normal.\n\nYou may gift some specific items to help fix your mistakes. Certain dialogue choices can also radically improve someones mood."
+    new "Different actions or phrases will affect characters moods.\n\n\nIf a character is in a bad mood, they might refuse to talk about some topics, or shut down the players advances.\n\n\nEvery hour, character's moods slowly shift towards neutral. If you've done something to put them in a particularly bad mood, it will take even longer for them to return to normal.\n\nYou may gift some specific items to help fix your mistakes. Certain dialogue choices can also radically improve someones mood."
 
     # game/core/02init.rpy:33
     old "Шоу"
@@ -164,7 +164,7 @@ translate english strings:
 
     # game/core/02init.rpy:55
     old "У меня для тебя обещанная вкусняшка!"
-    new "I having something tasty that I promised you!"
+    new "I've got something yummy that I promised you!"
 
 # TODO: Translation updated at 2020-04-16 01:21
 
@@ -211,7 +211,7 @@ translate english strings:
 
     # game/core/02init.rpy:21
     old "{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Lisa didn't like the massage!{/i}{/color}\n"
+    new "{color=#E59400}{i}Lisa did not like the massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:59
     old "Массаж рук заказывала?"
@@ -223,7 +223,7 @@ translate english strings:
 
     # game/core/02init.rpy:59
     old "Насчёт ванны ночью..."
-    new "About the bath at night..."
+    new "About the bath the other night..."
 
 # TODO: Translation updated at 2020-06-22 20:30
 
@@ -255,7 +255,7 @@ translate english strings:
 
     # game/core/02init.rpy:59
     old "Кира, мне нужно научиться целоваться..."
-    new "Kira, I need to learn how to kiss..."
+    new "Aunt Kira, I need to learn how to kiss..."
 
 # TODO: Translation updated at 2020-07-02 20:07
 
@@ -312,4 +312,36 @@ translate english strings:
     # game/core/02init.rpy:71
     old "Ну что, готова?"
     new "Are you ready?"
+
+# TODO: Translation updated at 2020-09-08 23:53
+
+translate english strings:
+
+    # game/core/02init.rpy:71
+    old "Слушай, насчёт блога..."
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Насчёт твоего блога... А если не особо раздеваться?"
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Лиза, ты же любишь читать?"
+    new ""
+
+    # game/core/02init.rpy:71
+    old "Лиза, у меня для тебя особая книжка..."
+    new ""
+
+    # game/core/02init.rpy:128
+    old "У меня есть кое-что, о чём мы беседовали..."
+    new ""
+
+    # game/core/02init.rpy:128
+    old "{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"
+    new ""
+
+    # game/core/02init.rpy:128
+    old "Прикупил для тебя немного сладенького!"
+    new ""
 

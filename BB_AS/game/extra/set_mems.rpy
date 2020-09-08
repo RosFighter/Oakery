@@ -14,6 +14,7 @@ init python:
                 dr_l.extend(st)
             else:
                 dr_l.append(st)
+        print(dr_l)
         return renpy.random.choice(dr_l)
 
 
@@ -155,9 +156,10 @@ init python:
             dr_var.append(4)
         if 'kira' in persistent.mems_var:
             dr_var.append(5)
-        print(dr_var)
+        # print(dr_var)
+        # renpy.random.shuffle(dr_var)
         var = renpy.random.choice(dr_var)
-        print(var)
+        # print(var)
         al.dress, smoke = {
                 0 : ('a', ''),
                 1 : ('a', 'nopants'),
@@ -166,6 +168,7 @@ init python:
                 4 : ('c', 'nojeans'),
                 5 : ('d', ''),
             }[var]
+        # print(dr_var, var, al.dress, smoke)
 
         my_scope = {
                 'tm'        : '22:00',
@@ -186,6 +189,8 @@ init python:
         mg.social = 100
         al = Profile("Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.mood = 250
+        # вписать бельё
+        al.dress = renpy.random.choice(['a', 'b']) if 'black_linderie' in persistent.mems_var else 'a'
 
         sm = ['']
         if 'alice_sleeptoples' in persistent.mems_var:

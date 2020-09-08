@@ -467,7 +467,9 @@ label punishment_alice:
     $ renpy.show("Ann punish-evening 01"+ann.dress)
 
     $ __mood = 0
-    $ dcv['smoke'].set_lost(1)
+    $ dcv['smoke'].set_lost(3)
+
+    $ alice.nopants = (alice.dress=="a" and flags['smoke']=='nopants') or alice.dress=='b'
 
     if newpunishment==0:
         # Алиса стоит в одежде, Макс может вмешаться и прервать наказание (если получится)

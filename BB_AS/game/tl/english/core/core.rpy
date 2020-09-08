@@ -18,7 +18,7 @@ translate english after_load_6c975de3:
 translate english after_load_93331e6b:
 
     # "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
-    "Unfortunately, saving in this version is not supported due to a large number of internal changes. Start a new game or select another save."
+    "Unfortunately, saving in this version is not supported due to a large number of internal changes. Please start a new game or select another save."
 
 # TODO: Translation updated at 2020-04-08 14:21
 
@@ -34,7 +34,7 @@ translate english strings:
 translate english after_load_93331e6b_1:
 
     # "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
-    "Unfortunately, saving in this version is not supported due to a large number of internal changes. Start a new game or select another save."
+    "Unfortunately, saving in this version is not supported due to a large number of internal changes. Please start a new game or select another save."
 # TODO: Translation updated at 2020-06-22 20:30
 
 # game/core/core.rpy:357

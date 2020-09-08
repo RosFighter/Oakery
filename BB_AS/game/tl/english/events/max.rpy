@@ -1056,3 +1056,35 @@ translate english InstallCam_4055993b:
 
     # Max_03 "{i}( Теперь через обе камеры можно увидеть всё самое интересное! Девочки любят покрасоваться у зеркала, а моя мама и Эрик, как я заметил, стараются не упустить возможность потрахаться перед этим же зеркалом... Моим зрителям это явно понравится! ){/i}" nointeract
     Max_03 "Now there's no missing any of the action! The girls like to watch themselves front of the mirror, and Mom and Eric, as I noticed, try not to miss the chance to fuck in front of it... My audience is going to love this!" nointeract
+# TODO: Translation updated at 2020-09-08 23:53
+
+# game/events/max.rpy:622
+translate english BookRead_sex_ed_e2e2e4d9:
+
+    # Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
+    Max_01 ""
+
+# game/events/max.rpy:624
+translate english BookRead_sex_ed_2c2e756a:
+
+    # Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+    Max_03 ""
+
+# game/events/max.rpy:626
+translate english BookRead_sex_ed_cdf53c7a:
+
+    # Max_07 "Ого, здесь даже есть краткий исторический очерк о сексуальном воспитании детей и подростков... Как только голову не дурили за всё это время!\n\n{color=[orange]}{i}(Книга изучена на 75%%){/i}{/color}"
+    Max_07 ""
+
+# game/events/max.rpy:630
+translate english BookRead_sex_ed_58528ae0:
+
+    # Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
+    Max_04 ""
+
+translate english strings:
+
+    # game/events/max.rpy:593
+    old "{i}читать \"СЕКС-ОБРАЗОВАНИЕ\"{/i}"
+    new ""
+

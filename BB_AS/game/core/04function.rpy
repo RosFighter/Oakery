@@ -700,8 +700,11 @@ init python:
                 inf   = '02e'
 
             if name == 'sleep':
-                dress = 'b' if 'smoke' in talk_var and flags['smoke'] == 'sleep' else 'a'
-                inf = '02'
+                dress = clothes[alice].sleep.GetCur().suf
+                inf   = clothes[alice].sleep.GetCur().info
+                if 'smoke' in flags and flags['smoke'] == 'sleep':
+                    dress += 'a'
+                    inf = {'a':'02ga', 'b':'02ja'}[clothes[alice].sleep.GetCur().suf]
             elif name in ['shower', 'bath']:
                 inf = '04aa'
             elif name in ['read', 'breakfast', 'dinner', 'dishes']:

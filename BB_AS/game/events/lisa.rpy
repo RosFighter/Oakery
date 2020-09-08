@@ -576,6 +576,7 @@ label lisa_bath:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
+        $ spent_time += 10
 
         $ __r1 = renpy.random.randint(1, 4)
 

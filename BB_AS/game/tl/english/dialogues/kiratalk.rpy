@@ -4,7 +4,7 @@
 translate english KiraTalkStart_14a49468:
 
     # Max_01 "Не против компании?"
-    Max_01 "Do you mind some company?"
+    Max_01 "Do you mind if I join you?"
 
 # game/dialogues/kiratalk.rpy:18
 translate english KiraTalkStart_c5aab882:
@@ -34,7 +34,7 @@ translate english kira_firsttalk_043877d2:
 translate english kira_firsttalk_58c6b494:
 
     # Kira_07 "Ну да, не сомневаюсь. Только что же с тобой будет? Макс, ты можешь смотреть мне в глаза или мы тебя потеряли?" nointeract
-    Kira_07 "Yeah, I'm sure. But will you be okay? Will you be able to took me in the eye or have I completely lost you?" nointeract
+    Kira_07 "Yeah, I'm sure. But will you be okay? Will you be able to took me in the eyes or have I completely lost you?" nointeract
 
 # game/dialogues/kiratalk.rpy:45
 translate english kira_firsttalk_00e14e8d:
@@ -88,7 +88,7 @@ translate english kira_firsttalk_e43fd195:
 translate english kira_firsttalk_1efd517d:
 
     # Kira_04 "А что тётя Кира? Проехали. Кое-кому, так вообще нужно принять душ и расслабиться. Может быть, и мне тоже, но вдвоём не стоит это делать. Так что, иди ты в душ. И включи холодную воду. Очень холодную!"
-    Kira_04 "What about your Aunt? Forget it. Someone needs to take a shower and relax. Maybe I do too, but the two of us shouldn't go together. So go take a shower. And turn on the cold water. Make sure it's really cold! "
+    Kira_04 "What about your Aunt? Forget it. Someone needs to take a shower and relax. Maybe I do too, but the two of us shouldn't go together. So go take a shower. A cold one. Make sure it's really cold! "
 
 # game/dialogues/kiratalk.rpy:70
 translate english kira_firsttalk_6e7aee99:
@@ -244,7 +244,7 @@ translate english kira_talk2_b8c0dea5:
 translate english kira_talk2_c0a0b7f1:
 
     # Kira_08 "Представляю! Ну, я с Лизой тоже побеседую. Она уже не девочка... хотя, с вашей строгой мамой она о жизни толком ничего и не знает, похоже." nointeract
-    Kira_08 "I can imagine! I'll have a chat to Lisa. She's not a little girl anymore, and there's no way she's going to get any life experience Ann's helicopter parenting." nointeract
+    Kira_08 "I can imagine! I'll have a chat to Lisa. She's not a little girl anymore, and there's no way she's going to get any life experience with Ann's helicopter parenting." nointeract
 
 # game/dialogues/kiratalk.rpy:130
 translate english kira_talk2_6a11f48f:
@@ -268,7 +268,7 @@ translate english kira_talk2_1f8d1009:
 translate english kira_talk2_00d0240b:
 
     # Kira_04 "Ладно, не буду. Но в душ ты сходи. И обязательно холодный. А ещё лучше ледяной..."
-    Kira_04 "Well, I won't. But go take a shower. A icy one. The colder the better..."
+    Kira_04 "Well, I won't. But go take a shower. An icy one. The colder the better..."
 
 # game/dialogues/kiratalk.rpy:139
 translate english kira_talk2_6e7aee99:
@@ -292,7 +292,7 @@ translate english kira_talk2_36826af7:
 translate english kira_talk3_744eb86a:
 
     # Kira_05 "Сегодня уже привык к моему купальнику? Или опять только одно на уме?" nointeract
-    Kira_05 "Have you adjusted to seeing my in my swimsuit today? Or is something dirty on your mind again?" nointeract
+    Kira_05 "Have you adjusted to seeing me in my swimsuit today? Or is something dirty on your mind again?" nointeract
 
 # game/dialogues/kiratalk.rpy:166
 translate english kira_talk3_e1f63d41:
@@ -346,7 +346,7 @@ translate english kira_talk3_82324783:
 translate english kira_talk3_4fe1e9be:
 
     # Kira_13 "Слушай, Макс, а тебе не показалось, что твоя мама какая-то... странная. Я имею в виду её одержимость Эриком..." nointeract
-    Kira_13 "Can I ask for your opinion? Don't you didn't your Mom has been acting a little strange, in terms of her obsession with Eric?" nointeract
+    Kira_13 "Can I ask your opinion? Don't you think your Mom has been acting a little strange, in terms of her obsession with Eric?" nointeract
 
 # game/dialogues/kiratalk.rpy:177
 translate english kira_talk3_8905a3cf:
@@ -364,7 +364,7 @@ translate english kira_talk3_f9226615:
 translate english kira_talk3_1942b017:
 
     # Kira_13 "Макс, ты наверное шутишь, да? Не может быть, чтобы всё было вот так. Твоя мама не слепая. Конечно, ею всегда было легко манипулировать, чем я и пользовалась, но такое..." nointeract
-    Kira_13 "You must be joking,  right? There's no way this is happening. Your Mom's not blind. Of course, she was always a little naive in the past, but this..." nointeract
+    Kira_13 "You must be joking, right? There's no way this is happening. Your Mom's not blind. Of course, she was always a little naive in the past, but this..." nointeract
 
 # game/dialogues/kiratalk.rpy:189
 translate english kira_talk3_b62fecc1:
@@ -382,7 +382,7 @@ translate english kira_talk3_a4e29c8c:
 translate english kira_talk3_b133b86a:
 
     # Kira_03 "Думаю, мне нужно услышать другую сторону. Пообщаться или с Эриком или с твоей мамой, чтобы выяснить всё ли так. Может быть, ты немного... приукрасил..."
-    Kira_03 "I think I need to hear the full story. Talk to either Eric or your Mom to find out if that's the case. Maybe you're a little... exaggerating..."
+    Kira_03 "I think I need to hear the full story. Talk to either Eric or your Mom to find out if that's the case. Maybe you're... exaggerating..."
 
 # game/dialogues/kiratalk.rpy:194
 translate english kira_talk3_754341a2:
@@ -523,7 +523,7 @@ translate english kira_about_kiss_5e0a2b2a:
 translate english kira_about_kiss_a5fac119:
 
     # Kira_08 "Шутник ты, Макс... Постой, ты нашёл себе девушку? Кто она? Откуда? Как познакомились? Как зовут? Хочу всё знать!"
-    Kira_08 "You're a Joker, Max... Wait, did you find a girl? Who is she? From where? How did you meet? What's her name? I want to know everything!"
+    Kira_08 "You're a joker, Max... Wait, did you find a girl? Who is she? From where? How did you meet? What's her name? I want to know everything!"
 
 # game/dialogues/kiratalk.rpy:216
 translate english kira_about_kiss_eb1abb76:
