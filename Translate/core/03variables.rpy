@@ -1331,33 +1331,33 @@ translate english strings:
 
     # game/core/03variables.rpy:267
     old "КОМПЛЕКТ ТЁМНОГО НИЖНЕГО БЕЛЬЯ"
-    new ""
+    new "DARK LINGERIE SET"
 
     # game/core/03variables.rpy:267
     old "Отличное нижнее бельё тёмного цвета. Отличный подарок для любимой девушки."
-    new ""
+    new "Exotic dark-colored underwear. A great gift for your favorite girl."
 
     # game/core/03variables.rpy:267
     old "СЕКС-ОБРАЗОВАНИЕ"
-    new ""
+    new "SEX EDUCATION"
 
     # game/core/03variables.rpy:267
     old "Книга обо всём, связанным с сексом. Отлично подходит для обучения подрастающего поколения."
-    new ""
+    new "A comprehensive guide to sex and bodily functions. Great for safely teaching those with limited experience."
 
     # game/core/03variables.rpy:349
     old "В результате поисков информации в интернете о том, чем могла бы заняться Алиса, удалось кое-что выяснить. Самыми популярными оказались блоги, где ведущие - девушки. Причём, чем более откровенные наряды и чем больше грудь, тем более популярны шоу. С грудью, конечно, ничего не поделать, а вот наряды... Может быть, поговорить с ней об этом?"
-    new ""
+    new "After conducting extensive research on the internet, I made a shocking discovery. All of the most popular bloggers are female! Furthermore, their popularity appears to be closely correlated with the skimpiness of their outfits and size of their breasts. Now, there's not much I can do about Alices boobs, but some sexier outftits...should I talk to her about it?"
 
     # game/core/03variables.rpy:349
     old "Я пообщался с Алисой насчёт своих выводов о популярности блога и намекнул, что можно рекламировать не только крема и лаки, но и нижнее бельё, например. Но крутить своей попкой перед камерой она не собирается, так что покрутит сама того не зная, когда я поставлю скрытую камеру в её комнату. Как знать, сколько всего интересного можно будет увидеть..."
-    new ""
+    new "I discussed my conclusions with Alice and suggested she shouldn't just advertise creams and cosmetics, but also lingerie, for instance. But she's not going to put on a show just yet. At least, not knowingly. I wonder what a well-placed hidden camera in her room might reveal?"
 
     # game/core/03variables.rpy:349
     old "Я пообщался с Алисой насчёт своих выводов о популярности блога и намекнул, что можно рекламировать не только крема и лаки, но и нижнее бельё, например. Но крутить своей попкой перед камерой она не собирается... А зря, ведь она и так уже это делает на скрытую камеру, которую я поставил в её комнате. Как знать, может мне удастся увидеть что-то, чего ещё не было..."
-    new ""
+    new "I discussed my conclusions with Alice and suggested she shouldn't just advertise creams and cosmetics, but also lingerie, for instance. Even though she might not be willing to put on a show, she's been giving me one anyway thanks to the hidden camera in her room. I should check it again now that we've had this conversation."
 
     # game/core/03variables.rpy:349
     old "Я решил снова предложить Алисе идею по развитию её блога - рекламировать нижнее бельё. Удивительно, но она согласилась! Правда, теперь мне нужно найти нижнее бельё для того, чтобы она заинтересовала свою аудиторию и привлекла внимание рекламодателей..."
-    new ""
+    new "I reminded Alice of the idea to advertise lingerie on her blog, and surprisingly, she agreed! I should find her something sexy to wear. Something that can really get peoples attention..."
 
