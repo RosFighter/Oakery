@@ -7555,13 +7555,13 @@ translate english alice_gift_sweets_2eba28c2:
 translate english alice_gift_sweets_b7ba514f:
 
     # Alice_07 "Не повезло тебе просто сегодня... Если бы купил большую коробку конфет, я бы чувствовала себя самой любимой сестрёнкой! А так..."
-    Alice_07 ""
+    Alice_07 "Hmm, how unlucky. If only you would have brought a bigger box, I would have felt like I was your favourite sister..."
 
 # game/dialogues/alicetalk.rpy:3262
 translate english alice_gift_sweets_4650613e:
 
     # Max_01 "Понятно всё с тобой. Я тогда лучше пойду..."
-    Max_01 ""
+    Max_01 "Yeah, at least you're honest. I'd better go then..."
 
 # game/dialogues/alicetalk.rpy:3266
 translate english alice_gift_sweets_957ffb88:
@@ -7591,7 +7591,7 @@ translate english alice_gift_sweets_c9c4f595_1:
 translate english alice_gift_sweets_d1ecaad6_1:
 
     # Alice_13 "Ой, Макс, нет! Почаще - не надо... А то я фигуру испорчу, мне так нельзя!"
-    Alice_13 ""Hah, but not too much! I don't want to ruin my figure.""
+    Alice_13 "Hah, but not too much! I don't want to ruin my figure."
 
 # game/dialogues/alicetalk.rpy:3273
 translate english alice_gift_sweets_1401828f_1:
@@ -8149,7 +8149,7 @@ translate english try_cam_girl_39a69f63:
 translate english try_cam_girl_fc7f5c16:
 
     # Max_00 "А я рад, что у меня такая сестра!"
-    Max_00 ""I'm glad to have you as a sister!"
+    Max_00 "I'm glad to have you as a sister!"
 
 translate english strings:
 
