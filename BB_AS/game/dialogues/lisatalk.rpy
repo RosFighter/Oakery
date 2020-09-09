@@ -1421,7 +1421,7 @@ label liza_hand_mass:
     #спрайт с правой рукой
     scene BG char Lisa phone-mass-01
     $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
-    if RandomChance(_ch10.ch):
+    if RandomChance(_ch10.ch) or _in_replay:
         # Лизе понравился массаж!
         if not _in_replay:
             $ Skill('massage', 0.1)
@@ -1442,7 +1442,7 @@ label liza_hand_mass:
     scene BG char Lisa phone-mass-01
     $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
     #спрайт с левой рукой
-    if RandomChance(_ch10.ch):
+    if RandomChance(_ch10.ch) or _in_replay:
         # Лизе понравился массаж!
         if not _in_replay:
             $ Skill('massage', 0.1)
@@ -1472,9 +1472,11 @@ label liza_hand_mass:
         Max_03 "Хорошего понемногу, Лиза. Вот почти и всё."
         "{i}закончить массаж{/i}":
             pass
-    if not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']==0]):
+    if (not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']==0])) or (_in_replay and talk_var['kissingmassage']):
         ###если уроков поцелуев в этот день не было (уже было 3 успешных урока)
         # первый поцелуй после массажа рук
+        if not _in_replay:
+            $ added_mem_var('kissing_massage')
         scene BG char Lisa massage-kisses-01
         $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
         Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
@@ -1491,7 +1493,7 @@ label liza_hand_mass:
         menu:
             Max_04 "{i}( Это очень приятное окончание массажа... Такие сочные губки у моей сестрёнки! А язычок какой игривый... ){/i}"
             "{i}увлечь её поцелуем{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}":
-                if RandomChance(_kiss.ch):
+                if RandomChance(_kiss.ch) or _in_replay:
                     # удалось увлечь её
                     scene BG char Lisa massage-kisses-03
                     $ renpy.show('Lisa kisses massage 03'+lisa.dress+mgg.dress)
@@ -1502,6 +1504,7 @@ label liza_hand_mass:
                             $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+                            $ renpy.end_replay()
                             $ Skill('kissing', 0.2, 4.5)
                             $ __rel = 5
                             $ __mood += 100
@@ -1520,6 +1523,8 @@ label liza_hand_mass:
 
     elif not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']>0]):
         # периодические поцелуи после массажа
+        if not _in_replay:
+            $ added_mem_var('kissing_massage')
         scene BG char Lisa massage-kisses-01
         $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
         Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
@@ -3117,12 +3122,14 @@ label lisa_kiss_lesson:
 
 
 label lisa_advanced_kiss_lesson:
+    if _in_replay:
+        scene BG char Lisa kisses-01
     $ _kiss = GetChance(mgg.kissing, 15, 900)
     $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
     menu:
         Max_04 "{i}( Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! ){/i}"
         "{i}нежно прикасаться к ней{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}":
-            if RandomChance(_kiss.ch):
+            if RandomChance(_kiss.ch) or _in_replay:
                 # удалось увлечь её
                 scene BG char Lisa kisses-02
                 $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
@@ -3130,7 +3137,7 @@ label lisa_advanced_kiss_lesson:
                 menu:
                     Max_05 "[lisa_good_kiss!t]{i}( Классно... Её ножки такие гладкие, а попка очень упругая! И она явно не против того, чтобы я к ней так прикасался... ){/i}"
                     "{i}нежно прикасаться к её груди{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}":
-                        if RandomChance(_kiss.ch):
+                        if RandomChance(_kiss.ch) or _in_replay:
                             $ renpy.show('Lisa kisses morning 02-02'+lisa.dress+mgg.dress)
                             menu:
                                 Max_06 "[lisa_good_kiss!t]{i}( О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду... ){/i}"
@@ -3141,6 +3148,7 @@ label lisa_advanced_kiss_lesson:
                                     Max_07 "Так ты, вроде, не против была!"
                                     Lisa_05 "Нууу... Ты меня так увлек своими поцелуями... А от прикосновений было только лучше! Мне нравятся эти уроки... Но, хорошего помаленьку."
                                     Max_04 "Ага. Рад, что поделился с тобой этими... приятными умениями..."
+                                    $ renpy.end_replay()
                                     $ talk_var['kiss_lessons'] +=1
                                     $ add_lim('lisa.free', 0.1, 10)
                                     $ add_lim('lisa.ri', 0.1, 5)
@@ -3163,6 +3171,7 @@ label lisa_advanced_kiss_lesson:
                         $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                         Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                         Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+                        $ renpy.end_replay()
                         $ Skill('kissing', 0.2, 6.5)
                         $ add_lim('lisa.free', 0.1, 7)
                         $ AddRelMood('lisa', 5, 100, 4)

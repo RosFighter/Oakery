@@ -3070,6 +3070,16 @@ label talkblog3:
 
 label gift_black_lingerie:
     # стартовая фраза "У меня есть кое-что, о чём мы беседовали..."
+    if _in_replay:
+        # формируем фон для воспоминания
+        if alice.plan_name == 'sun':
+            call alice_sun
+        else:
+            if tm > '20:00':
+                call alice_evening_closer
+            else:
+                call alice_morning_closer
+
     $ _ch1 = GetChance(mgg.social, 2, 900)
     $ time_of_day = {
             '06:00' <= tm < '11:00': 'morning',
@@ -3081,12 +3091,12 @@ label gift_black_lingerie:
     Max_01 "Нижнее бельё..."
     menu:
         Alice_07 "Ой. Это супер! Симпатичное? Дай посмотреть..."
-        "Ну что, примеришь при мне?" if 'pajamas' in alice.gifts:
+        "Ну что, примеришь при мне?" if 'pajamas' in alice.gifts or _in_replay:
             $ _ch1 = Chance(1000)  # 100% шанс убеждения
             Alice_05 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
 
-        "Ну что, примеришь при мне? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
-            if not RandomChance(_ch1.ch):
+        "Ну что, примеришь при мне? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if 'pajamas' not in alice.gifts and not _in_replay:
+            if not RandomChance(_ch1.ch) and not _in_replay:
                 # (не удалось убедить)
                 Alice_12 "[failed!t]Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём и только... А если будешь и дальше упрашивать, то вообще ничего не увидишь! Понял?"
                 Max_10 "Да понял... Ладно. Буду ждать за дверью."
@@ -3122,7 +3132,6 @@ label gift_black_lingerie:
 
     # примерка
     scene BG char Alice newpajamas
-    # tckb
     if renpy.random.randint(0, 1) > 0 and alice.dress!='c':
         # примерка началась без верха
         $ renpy.show('Alice newpajamas 02'+__suf)
@@ -3152,14 +3161,14 @@ label gift_black_lingerie:
                 Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
                 Max_01 "Ладно, считай, я ничего не видел."
 
-        $ renpy.show('Alice newlingerie '+'08' if '09:00' <= tm < '20:00' else '08e')
+        $ renpy.show('Alice newlingerie '+('08' if '09:00' <= tm < '20:00' else '08e'))
         Alice_07 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидит?"
         Max_05 "Не то слово, всё выглядит шикарно!"
 
     else:
         # примерка началась без низа
         $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
-        if alice.dress=='a' and flags['smoke'] == 'nopants':  # если Алиса без трусиков
+        if __suf=='a' and flags['smoke'] == 'nopants':  # если Алиса без трусиков
             $ __suf += 'n'
         if not ('09:00' <= tm < '20:00'):
             $ __suf += 'e'
@@ -3196,10 +3205,10 @@ label gift_black_lingerie:
         Max_04 "Не то слово, сидят прекрасно!"
         Alice_01 "Здорово! А теперь отвернись, не подглядывай! Нужно ещё лифчик примерить."
 
-        $ renpy.show('Alice newlingerie '+'07' if '09:00' <= tm < '20:00' else '07e')
+        $ renpy.show('Alice newlingerie '+('07' if '09:00' <= tm < '20:00' else '07e'))
         Max_03 "Конечно, я не смотрю..."
 
-        $ renpy.show('Alice newlingerie '+'08' if '09:00' <= tm < '20:00' else '08e')
+        $ renpy.show('Alice newlingerie '+('08' if '09:00' <= tm < '20:00' else '08e'))
         Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
         Max_05 "Тебе идёт, всё выглядит шикарно!"
         jump .final
@@ -3213,6 +3222,7 @@ label gift_black_lingerie:
     Max_04 "Этого достаточно?"
     Alice_03 "Сомневаюсь, если честно. Ты знаешь... Давай попробуем на всякий случай ещё кое-что. Поищи что-нибудь более сексуальное. Ничего не обещаю, но вдруг поможет..."
     Max_01 "Хорошо, я что-нибудь подыщу..."
+    $ renpy.end_replay()
     $ added_mem_var('black_linderie')
     $ items['b.lingerie'].InShop = False
     $ items['b.lingerie'].have = False

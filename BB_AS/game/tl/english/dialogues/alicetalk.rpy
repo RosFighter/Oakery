@@ -6973,43 +6973,43 @@ translate english alice_about_kiss_f6b0c7e6:
 translate english talkblog2_8c928df1:
 
     # Alice_00 "Я тебя внимательно слушаю..."
-    Alice_00 ""
+    Alice_00 "Yeah? Let's hear it..."
 
 # game/dialogues/alicetalk.rpy:3017
 translate english talkblog2_81673401:
 
     # Max_00 "Я выяснил, какие блоги популярны..."
-    Max_00 ""
+    Max_00 "I found out what kind of blogs get the biggest audiences..."
 
 # game/dialogues/alicetalk.rpy:3018
 translate english talkblog2_8c61026c:
 
     # Alice_02 "Открыл топ блогов и посмотрел? Или что-то более толковое удалось выяснить?"
-    Alice_02 ""
+    Alice_02 "Did you just search 'Most popular blogs of all time'? Or did you find out something that I can actually work with?"
 
 # game/dialogues/alicetalk.rpy:3019
 translate english talkblog2_ae86bae1:
 
     # Max_01 "В общем, тебе нужно сделать акцент на форме, а не на содержании..."
-    Max_01 ""
+    Max_01 "Well...in general, it's more about your style, not so much the content."
 
 # game/dialogues/alicetalk.rpy:3020
 translate english talkblog2_fea06aa4:
 
     # Alice_01 "Ты хочешь сказать, что не важно о чём мой блог, важно как я его веду? Я об этом думала... И если ты помнишь, проблема всё ещё в одежде. Я не могу в одном и том же появляться постоянно, если это бьюти-блог..."
-    Alice_01 ""
+    Alice_01 "So you're saying I could make it about anything, I just need to present myself in a unique way? I'm impressed you could figure that out, with your brain. But if you remember, I don't have the clothes to look unique. I can't run a beauty blog wearing the same boring thing everytime. "
 
 # game/dialogues/alicetalk.rpy:3021
 translate english talkblog2_33410fb8:
 
     # Max_07 "А если это не бьюти-блог?"
-    Max_07 ""
+    Max_07 "Who says it has to about beauty?"
 
 # game/dialogues/alicetalk.rpy:3022
 translate english talkblog2_1b7a68fc:
 
     # Alice_05 "И что же это? Я больше ничего не умею... Или ты на что намекаешь?"
-    Alice_05 ""
+    Alice_05 "Um, me? I...don't know much about anything else. Why? What are you implying?"
 
 # game/dialogues/alicetalk.rpy:3023
 translate english talkblog2_2b784949:
@@ -7021,199 +7021,199 @@ translate english talkblog2_2b784949:
 translate english talkblog2_7f33d114:
 
     # Alice_06 "Кажется, я знаю к чему ты клонишь, Макс. Наверняка, ты насмотрелся каких-нибудь девочек, которые крутят задницами перед камерами за деньги? Нет, я на это не соглашусь!"
-    Alice_06 ""
+    Alice_06 "Oh...I get it. I wasn't born this morning, Max. What makes you think I'd be fine with being some cam-whore for strangers to jerk-off to? There's no chance I'm doing it!"
 
 # game/dialogues/alicetalk.rpy:3025
 translate english talkblog2_209cf8c2:
 
     # Max_03 "Воу... Я не думал об этом, но если ты говоришь..."
-    Max_03 ""
+    Max_03 "Whoa... I hadn't considered that idea. But thinking about the money, now that you mention it..."
 
 # game/dialogues/alicetalk.rpy:3026
 translate english talkblog2_5f590a15:
 
     # Alice_12 "Я знаю, что на этом можно много заработать, но вдруг кто-то из моих друзей или знакомых увидит... Нет, я на это не пойду."
-    Alice_12 ""
+    Alice_12 "I know that some girls can make bank by doing it...But all my friends, and everyone in our family will know. I don't want that."
 
 # game/dialogues/alicetalk.rpy:3027
 translate english talkblog2_598836c4:
 
     # Max_09 "Ты уверена в этом?"
-    Max_09 ""
+    Max_09 "So you've looked into it?"
 
 # game/dialogues/alicetalk.rpy:3028
 translate english talkblog2_6535c1a2:
 
     # Alice_00 "Да, Макс! Уверена, я смогу развить свой блог и без этого."
-    Alice_00 ""
+    Alice_00 "Yes, Max! And I'm sure I can grow my blog without it."
 
 # game/dialogues/alicetalk.rpy:3029
 translate english talkblog2_51c0a20e:
 
     # Max_00 "Ясно. Нет, так нет..."
-    Max_00 ""
+    Max_00 "Okay, if you say so..."
 
 # game/dialogues/alicetalk.rpy:3039
 translate english talkblog3_e22e83d8:
 
     # Alice_02 "Не особо? Это как? Раздеваться частично?"
-    Alice_02 ""
+    Alice_02 "What? How would that work?"
 
 # game/dialogues/alicetalk.rpy:3040
 translate english talkblog3_44c44146:
 
     # Max_07 "Ты можешь рекламировать что-то..."
-    Max_07 ""
+    Max_07 "I'm talking about advertising."
 
 # game/dialogues/alicetalk.rpy:3041
 translate english talkblog3_eb390694:
 
     # Alice_05 "Макс, да все блогеры что-то рекламируют. Ты снова не изобрёл велосипед..."
-    Alice_05 ""
+    Alice_05 "Every blogger advertises something. Don't act like your smooth-brain has somehow reinvented the wheel."
 
 # game/dialogues/alicetalk.rpy:3042
 translate english talkblog3_a74ba9ca:
 
     # Max_01 "Я имею в виду другое..."
-    Max_01 ""
+    Max_01 "That's not all..."
 
 # game/dialogues/alicetalk.rpy:3043
 translate english talkblog3_7801fced:
 
     # Alice_03 "Хорошо, я внимательно слушаю..."
-    Alice_03 ""
+    Alice_03 "Alright...I guess I'm listening."
 
 # game/dialogues/alicetalk.rpy:3044
 translate english talkblog3_8aa1a465:
 
     # Max_04 "Ты можешь рекламировать нижнее бельё или игрушки для взрослых."
-    Max_04 ""
+    Max_04 "You can promote lingerie and adult entertainment items!"
 
 # game/dialogues/alicetalk.rpy:3045
 translate english talkblog3_d682961b:
 
     # Alice_05 "Макс... Это не очень отличается от той идеи с позированием перед камерами за деньги... Хотя, в этом что-то есть, конечно. И я не об игрушках для взрослых..."
-    Alice_05 ""
+    Alice_05 "That's not very far removed from just being a cam-whore... adult entertainment items? Have you been studying marketing or something?"
 
 # game/dialogues/alicetalk.rpy:3046
 translate english talkblog3_155cadcf:
 
     # Max_03 "Значит, нижнее бельё?"
-    Max_03 ""
+    Max_03 "Intimacy-products, then?"
 
 # game/dialogues/alicetalk.rpy:3047
 translate english talkblog3_66db8c63:
 
     # Alice_13 "Ну можно попробовать. Однако, главная проблема остаётся в силе, у меня только один комплект белья, тот в котором я сплю, а этого мало даже чтобы просто начать... И денег на новое нет..."
-    Alice_13 ""
+    Alice_13 "Ignoring the part about sex-toys, your lingerie suggestion is actually the closest thing you've had to a real idea in a while. But if I were to do it, I still only have one set, which might not be enough to start with..."
 
 # game/dialogues/alicetalk.rpy:3048
 translate english talkblog3_0817ffd6:
 
     # Max_07 "Ну а если я тебе его подарю?"
-    Max_07 ""
+    Max_07 "What if I can buy you another?"
 
 # game/dialogues/alicetalk.rpy:3049
 translate english talkblog3_1f84979c:
 
     # Alice_05 "Ты подаришь мне нижнее бельё? На какие деньги? И что я за это буду тебе должна?" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "With what money? And assuming you can get it, what will I owe you?" nointeract
 
 # game/dialogues/alicetalk.rpy:3052
 translate english talkblog3_82299951:
 
     # Alice_02 "И давно ты в альтруисты записался?"
-    Alice_02 ""
+    Alice_02 "And how long have you been an altruist?"
 
 # game/dialogues/alicetalk.rpy:3053
 translate english talkblog3_5d4e09c9:
 
     # Max_01 "Я просто хочу помочь..."
-    Max_01 ""
+    Max_01 "I'd rather you consider me an investor."
 
 # game/dialogues/alicetalk.rpy:3056
 translate english talkblog3_8d3d4b57:
 
     # Alice_02 "Только и всего? Если там что-то приличное, то почему нет..."
-    Alice_02 ""
+    Alice_02 "Oh really? Well I appreciate the help, regardless."
 
 # game/dialogues/alicetalk.rpy:3057
 translate english talkblog3_3b386cc6:
 
     # Max_03 "Было бы супер!"
-    Max_03 ""
+    Max_03 "That would be great!"
 
 # game/dialogues/alicetalk.rpy:3059
 translate english talkblog3_c76393c1:
 
     # Alice_03 "Давай попробуем, но я не уверена и ничего не обещаю. Твои вложения могут оказаться бесполезными... Для начала мне нужно бельё просто для того, чтобы заинтересовать людей."
-    Alice_03 ""
+    Alice_03 "Let's try it, but I can't promise anything. Your investment may be worthless... As a start, just having the underwear might not gaurantee interest."
 
 # game/dialogues/alicetalk.rpy:3060
 translate english talkblog3_7bf40941:
 
     # Max_07 "Для начала?"
-    Max_07 ""
+    Max_07 "As a start?"
 
 # game/dialogues/alicetalk.rpy:3061
 translate english talkblog3_006e2911:
 
     # Alice_00 "Ага. Затем, уже нужно будет найти рекламодателей, которые будут присылать бельё, которое я и буду рекламировать. Обычно это так делается... Или ты думал, что мне кто-то будет платить за моё же бельё?"
-    Alice_00 ""
+    Alice_00 "Yeah. I'm going to have to find advertisers to send me products to promote. That's normally how it works. Unless you think I can make more money just by selling what I'm wearing?"
 
 # game/dialogues/alicetalk.rpy:3062
 translate english talkblog3_f0583bf8:
 
     # Max_00 "Ну, если это так делается..."
-    Max_00 ""
+    Max_00 "Well, if that's how it's done..."
 
 # game/dialogues/alicetalk.rpy:3063
 translate english talkblog3_6f8d6fae:
 
     # Alice_01 "Да, Макс. Причём, желающих на этом зарабатывать больше, чем желающих за это платить. И в этом главная проблема. Но как я уже сказала, я могу попробовать. Если купишь что-то, посмотрим..."
-    Alice_01 ""
+    Alice_01 "Yeah. The blogging community is also really competitve, so that will be another challenge. But I'll try my best. If you manage to buy me something...there might be a chance."
 
 # game/dialogues/alicetalk.rpy:3064
 translate english talkblog3_fd1dc624:
 
     # Max_01 "Понял, с меня симпатичное бельишко..."
-    Max_01 ""
+    Max_01 "You can count on me. I'll find you a good set of lingerie..."
 
 # game/dialogues/alicetalk.rpy:3080
 translate english gift_black_lingerie_83b0dab1:
 
     # Alice_02 "И что же это? Я должна угадать?"
-    Alice_02 ""
+    Alice_02 "And what is it? Should I guess?"
 
 # game/dialogues/alicetalk.rpy:3081
 translate english gift_black_lingerie_11fb39b9:
 
     # Max_01 "Нижнее бельё..."
-    Max_01 ""
+    Max_01 "Lingerie..."
 
 # game/dialogues/alicetalk.rpy:3082
 translate english gift_black_lingerie_acf40ff4:
 
     # Alice_07 "Ой. Это супер! Симпатичное? Дай посмотреть..." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Yes! You actually got it! Is it cute? Let me see..." nointeract
 
 # game/dialogues/alicetalk.rpy:3086
 translate english gift_black_lingerie_0f94a426:
 
     # Alice_05 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
-    Alice_05 ""
+    Alice_05 "Try it on in front of you? We didn't agree on this but...okay. I'll let you see it as a reward, but you can't peek while I change! If you do, you're going into the pool. Head-first."
 
 # game/dialogues/alicetalk.rpy:3091
 translate english gift_black_lingerie_d8f3eecd:
 
     # Alice_12 "[failed!t]Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём и только... А если будешь и дальше упрашивать, то вообще ничего не увидишь! Понял?"
-    Alice_12 ""
+    Alice_12 "[failed!t]Try it on in front of you? We never agreed to that. The only one who's going to watch me try it on is me. And if you keep asking, you won't see anything at all! Do you understand?"
 
 # game/dialogues/alicetalk.rpy:3092
 translate english gift_black_lingerie_5cfb418f:
 
     # Max_10 "Да понял... Ладно. Буду ждать за дверью."
-    Max_10 ""
+    Max_10 "Got it... Okay. I'll wait outside the door."
 
 # game/dialogues/alicetalk.rpy:3097
 translate english gift_black_lingerie_2b4ecf90:
@@ -7225,959 +7225,959 @@ translate english gift_black_lingerie_2b4ecf90:
 translate english gift_black_lingerie_3163cf24:
 
     # Alice "{b}Алиса:{/b} Всё, Макс. Можешь заходить..."
-    Alice ""
+    Alice "{b}Alice:{/b} All done, Max. You can come in..."
 
 # game/dialogues/alicetalk.rpy:3103
 translate english gift_black_lingerie_75108e7f:
 
     # Alice_01 "Ну, как тебе? Хорошо сидит? Вроде бы немного лифчик не того размера... Или нет... Ну, Макс, чего молчишь?"
-    Alice_01 ""
+    Alice_01 "What do you think? How's the fit? The bra sizing is a little uncomfortable... Max, why don't you say something?"
 
 # game/dialogues/alicetalk.rpy:3104
 translate english gift_black_lingerie_39888b89:
 
     # Max_05 "Ну, я... э..."
-    Max_05 ""
+    Max_05 "Well, I...uh.."
 
 # game/dialogues/alicetalk.rpy:3105
 translate english gift_black_lingerie_658397f7:
 
     # Alice_05 "Контуженый что ли? Я тебя спрашиваю хорошо сидит или нет... Хотя... по тебе же всё сразу видно. Значит, всё в порядке..."
-    Alice_05 ""
+    Alice_05 "You should see the look on your face. I'm asking you if it fits me well? Well... I'll take your silence as a yes."
 
 # game/dialogues/alicetalk.rpy:3106
 translate english gift_black_lingerie_3f1d571d:
 
     # Max_02 "Ага, полный порядок!"
-    Max_02 ""
+    Max_02 "Yup, all good."
 
 # game/dialogues/alicetalk.rpy:3110
 translate english gift_black_lingerie_8cfdabce:
 
     # Alice_05 "[succes!t]Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
-    Alice_05 ""
+    Alice_05 "[succes!t]Try it on in front of you? We didn't agree on this but...okay. I'll let you see it as a reward, but you can't peek while I change! If you do, you're going into the pool. Head-first."
 
 # game/dialogues/alicetalk.rpy:3112
 translate english gift_black_lingerie_eb01960e:
 
     # Max_00 "Опять угрозы..."
-    Max_00 ""
+    Max_00 "Luckily I can swim..."
 
 # game/dialogues/alicetalk.rpy:3118
 translate english gift_black_lingerie_7da5dc48:
 
     # Alice_03 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"
-    Alice_03 ""
+    Alice_03 "If you have any desire to live, don't you dare peek!"
 
 # game/dialogues/alicetalk.rpy:3119
 translate english gift_black_lingerie_6374794e:
 
     # Max_01 "Ага..."
-    Max_01 ""
+    Max_01 "Okay..."
 
 # game/dialogues/alicetalk.rpy:3129
 translate english gift_black_lingerie_35b4664a:
 
     # Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
-    Alice_01 ""
+    Alice_01 "Are you staring at my chest! There are mirrors all around me you idiot! Turn around!"
 
 # game/dialogues/alicetalk.rpy:3130
 translate english gift_black_lingerie_d0a89701:
 
     # Max_03 "Я не пялюсь..."
-    Max_03 ""
+    Max_03 "I'm not looking..."
 
 # game/dialogues/alicetalk.rpy:3133
 translate english gift_black_lingerie_d4ca39d6:
 
     # Alice_02 "Похоже, размер мне подходит... и удобно. ... Ну, как тебе?"
-    Alice_02 ""
+    Alice_02 "Look's like it's a good fit, and its comfortable. So, what do you think?"
 
 # game/dialogues/alicetalk.rpy:3134
 translate english gift_black_lingerie_b78414ac:
 
     # Max_04 "Тебе идёт! Мне нравится..."
-    Max_04 ""
+    Max_04 "It suits you! I think..."
 
 # game/dialogues/alicetalk.rpy:3140
 translate english gift_black_lingerie_e189cc43:
 
     # Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё новые трусики примерить."
-    Alice_05 ""
+    Alice_05 "Great! Now, I'm not wearing any panties thanks to you, so turn around. I need to try these on."
 
 # game/dialogues/alicetalk.rpy:3142
 translate english gift_black_lingerie_be8312c9:
 
     # Max_02 "Конечно, я не смотрю..."
-    Max_02 ""
+    Max_02 "Of course. I'm not looking..."
 
 # game/dialogues/alicetalk.rpy:3145
 translate english gift_black_lingerie_29c6ce73:
 
     # Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё трусики примерить."
-    Alice_03 ""
+    Alice_03 "Great! Now don't look! I still need to try on my panties."
 
 # game/dialogues/alicetalk.rpy:3148
 translate english gift_black_lingerie_be8312c9_1:
 
     # Max_02 "Конечно, я не смотрю..."
-    Max_02 ""
+    Max_02 "Of course. I'm not looking..."
 
 # game/dialogues/alicetalk.rpy:3151
 translate english gift_black_lingerie_16b73ea9:
 
     # Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
-    Max_08 ""
+    Max_08 "Of course. I'm not looking...Hey! You're not supposed to wear panties! We had an agreement!"
 
 # game/dialogues/alicetalk.rpy:3152
 translate english gift_black_lingerie_c14c7755:
 
     # Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
-    Alice_06 ""
+    Alice_06 "Oh, shit! I forgot that I'm not supposed to wear them today! But you shouldn't be watching this, so shut up... I'll kick you out of here."
 
 # game/dialogues/alicetalk.rpy:3153
 translate english gift_black_lingerie_25da30bf:
 
     # Max_01 "Ладно, считай, я ничего не видел."
-    Max_01 ""
+    Max_01 "Okay, I didn't see anything."
 
 # game/dialogues/alicetalk.rpy:3156
 translate english gift_black_lingerie_d7e4c21c:
 
     # Alice_07 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидит?"
-    Alice_07 ""
+    Alice_07 "The size is just right. What do you think, Max? Does it look like a good fit?"
 
 # game/dialogues/alicetalk.rpy:3157
 translate english gift_black_lingerie_74d1c40a:
 
     # Max_05 "Не то слово, всё выглядит шикарно!"
-    Max_05 ""
+    Max_05 "Well, it all looks great!"
 
 # game/dialogues/alicetalk.rpy:3169
 translate english gift_black_lingerie_dbebfc6a:
 
     # Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
-    Alice_03 ""
+    Alice_03 "Are you staring at my ass! There are mirrors all around me you idiot! Turn around!"
 
 # game/dialogues/alicetalk.rpy:3172
 translate english gift_black_lingerie_14440938:
 
     # Max_02 "Я не пялюсь..."
-    Max_02 ""
+    Max_02 "I'm not staring..."
 
 # game/dialogues/alicetalk.rpy:3175
 translate english gift_black_lingerie_2e964202:
 
     # Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
-    Max_08 ""
+    Max_08 "I'm not staring...Hey! You're not supposed to wear panties! We had an agreement!"
 
 # game/dialogues/alicetalk.rpy:3176
 translate english gift_black_lingerie_c14c7755_1:
 
     # Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
-    Alice_06 ""
+    Alice_06 "Oh, shit! I forgot that I'm not supposed to wear them today! But you shouldn't be watching this, so shut up... I'll kick you out of here."
 
 # game/dialogues/alicetalk.rpy:3177
 translate english gift_black_lingerie_25da30bf_1:
 
     # Max_01 "Ладно, считай, я ничего не видел."
-    Max_01 ""
+    Max_01 "Okay, I didn't see anything."
 
 # game/dialogues/alicetalk.rpy:3182
 translate english gift_black_lingerie_2d17227f:
 
     # Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"
-    Alice_05 ""
+    Alice_05 "Max! Are you staring at my ass? Turn around! I'm not wearing any panties, thanks to you!"
 
 # game/dialogues/alicetalk.rpy:3183
 translate english gift_black_lingerie_14440938_1:
 
     # Max_02 "Я не пялюсь..."
-    Max_02 ""
+    Max_02 "I'm not staring..."
 
 # game/dialogues/alicetalk.rpy:3188
 translate english gift_black_lingerie_a371d731:
 
     # Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись, на мне же нет трусиков!"
-    Alice_03 ""
+    Alice_03 "Are you staring at my ass! There are mirrors all around me you idiot! I'm not even wearing panties, so turn around!"
 
 # game/dialogues/alicetalk.rpy:3189
 translate english gift_black_lingerie_14440938_2:
 
     # Max_02 "Я не пялюсь..."
-    Max_02 ""
+    Max_02 "I'm not staring..."
 
 # game/dialogues/alicetalk.rpy:3195
 translate english gift_black_lingerie_02ed4906:
 
     # Alice_02 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидят?"
-    Alice_02 ""
+    Alice_02 "The size is just right...What do you think, Max? Is it a good fit?"
 
 # game/dialogues/alicetalk.rpy:3196
 translate english gift_black_lingerie_cd1842d4:
 
     # Max_04 "Не то слово, сидят прекрасно!"
-    Max_04 ""
+    Max_04 "Don't even worry, it sits on you perfectly!"
 
 # game/dialogues/alicetalk.rpy:3197
 translate english gift_black_lingerie_4fdace82:
 
     # Alice_01 "Здорово! А теперь отвернись, не подглядывай! Нужно ещё лифчик примерить."
-    Alice_01 ""
+    Alice_01 "Great! Now turn around! I still need to try the bra on."
 
 # game/dialogues/alicetalk.rpy:3200
 translate english gift_black_lingerie_2c4a92b7:
 
     # Max_03 "Конечно, я не смотрю..."
-    Max_03 ""
+    Max_03 "Of course. I'm not looking..."
 
 # game/dialogues/alicetalk.rpy:3203
 translate english gift_black_lingerie_d60af571:
 
     # Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
-    Alice_07 ""
+    Alice_07 "Looks like it fits well. The top feels really light and comfortable. What do you think?"
 
 # game/dialogues/alicetalk.rpy:3204
 translate english gift_black_lingerie_910b5259:
 
     # Max_05 "Тебе идёт, всё выглядит шикарно!"
-    Max_05 ""
+    Max_05 "It suits you, everything looks great!"
 
 # game/dialogues/alicetalk.rpy:3212
 translate english gift_black_lingerie_final_da4fda21:
 
     # Alice_02 "Ну, спасибо тебе. Да, в этом точно можно покрасоваться перед камерами. Не уверена, что даст эффект, но я же одета... В общем, я попробую!"
-    Alice_02 ""
+    Alice_02 "Well, thanks. I can definitely show this off for my blog, but I'm not sure what the effect will be. We've come this far though, so I'll give it a try!"
 
 # game/dialogues/alicetalk.rpy:3213
 translate english gift_black_lingerie_final_5345692a:
 
     # Max_04 "Этого достаточно?"
-    Max_04 ""
+    Max_04 "Will it be enough?"
 
 # game/dialogues/alicetalk.rpy:3214
 translate english gift_black_lingerie_final_b3981e8d:
 
     # Alice_03 "Сомневаюсь, если честно. Ты знаешь... Давай попробуем на всякий случай ещё кое-что. Поищи что-нибудь более сексуальное. Ничего не обещаю, но вдруг поможет..."
-    Alice_03 ""
+    Alice_03 "I'm not sure if I'm being honest. But I think you being a pervert might actually help me for once. Can you find me something sexier? I'm making no promises...but it could help."
 
 # game/dialogues/alicetalk.rpy:3215
 translate english gift_black_lingerie_final_efb73eb0:
 
     # Max_01 "Хорошо, я что-нибудь подыщу..."
-    Max_01 ""
+    Max_01 "I'll see what I can do. And I'll take that as a compliment..."
 
 # game/dialogues/alicetalk.rpy:3225
 translate english alice_gift_sweets_fd790983:
 
     # Alice_02 "Да ладно! Это мне нравится... И что там у тебя?" nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Come on, what have you got?" nointeract
 
 # game/dialogues/alicetalk.rpy:3233
 translate english alice_gift_sweets_cd967215:
 
     # Alice_07 "Ага! Мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
-    Alice_07 ""
+    Alice_07 "Aha! My favorite candies! How nice...Thanks, Max!"
 
 # game/dialogues/alicetalk.rpy:3234
 translate english alice_gift_sweets_053993a1:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
-    Max_03 ""
+    Max_03 "I just like making by big sis happy!"
 
 # game/dialogues/alicetalk.rpy:3238
 translate english alice_gift_sweets_eadaadaf:
 
     # Alice_03 "Я даже подумываю, а не обнять ли тебя за это, Макс? Ну так... совсем немного..." nointeract
-    Alice_03 "" nointeract
+    Alice_03 "I'm even thinking of giving you a hug for this, Max." nointeract
 
 # game/dialogues/alicetalk.rpy:3244
 translate english alice_gift_sweets_0460935e:
 
     # Alice_04 "[succes!t]Ладно, Макс, пожалуй ты это заслужил..."
-    Alice_04 ""
+    Alice_04 "[success!t] Okay, you probably deserve it..."
 
 # game/dialogues/alicetalk.rpy:3247
 translate english alice_gift_sweets_82bbbdea:
 
     # Max_03 "Хорошо, что хоть так можно взять и обнять тебя без ущерба своему здоровью!"
-    Max_03 ""
+    Max_03 "Wow. It's great to finally hug you without being threatened!"
 
 # game/dialogues/alicetalk.rpy:3248
 translate english alice_gift_sweets_25f9db11:
 
     # Alice_07 "Я вижу, что ты действительно стремишься сделать мне приятно, вот я и не вредничаю..."
-    Alice_07 ""
+    Alice_07 "I can see the effort you're putting in. I can actually be nice...sometimes."
 
 # game/dialogues/alicetalk.rpy:3249
 translate english alice_gift_sweets_c9c4f595:
 
     # Max_05 "Да, надо бы почаще так делать."
-    Max_05 ""
+    Max_05 "Yeah, we should do this more often."
 
 # game/dialogues/alicetalk.rpy:3250
 translate english alice_gift_sweets_d1ecaad6:
 
     # Alice_13 "Ой, Макс, нет! Почаще - не надо... А то я фигуру испорчу, мне так нельзя!"
-    Alice_13 ""
+    Alice_13 "Hah, but not too much! I don't want to ruin my figure."
 
 # game/dialogues/alicetalk.rpy:3251
 translate english alice_gift_sweets_1401828f:
 
     # Max_02 "Согласен, такую стройную фигуру лучше не портить... Но временами, любимыми конфетами можно и побаловаться!"
-    Max_02 ""
+    Max_02 "You're perfect how you are, so I agree that you shouldn't do anything to change your looks. But it's totally fine to have some sweets on occassion!"
 
 # game/dialogues/alicetalk.rpy:3252
 translate english alice_gift_sweets_0594e879:
 
     # Alice_05 "Ну да, временами... И сейчас как раз такой момент!"
-    Alice_05 ""
+    Alice_05 "That's...really nice of you to say. Maybe now would be a good occasion!"
 
 # game/dialogues/alicetalk.rpy:3253
 translate english alice_gift_sweets_05193b35:
 
     # Max_01 "Наслаждайся, сластёна! Не буду мешать..."
-    Max_01 ""
+    Max_01 "Enjoy! I'll leave you to it."
 
 # game/dialogues/alicetalk.rpy:3257
 translate english alice_gift_sweets_22133154:
 
     # Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
-    Alice_05 ""
+    Alice_05 "[failed!t]Oh, I wanted to! How dissapointing..."
 
 # game/dialogues/alicetalk.rpy:3260
 translate english alice_gift_sweets_2eba28c2:
 
     # Max_09 "Ну вот, я тебе любимые конфеты покупаю от чистого сердца, а ты..."
-    Max_09 ""
+    Max_09 "Well, I'm giving you this candy from the bottom of my heart..."
 
 # game/dialogues/alicetalk.rpy:3261
 translate english alice_gift_sweets_b7ba514f:
 
     # Alice_07 "Не повезло тебе просто сегодня... Если бы купил большую коробку конфет, я бы чувствовала себя самой любимой сестрёнкой! А так..."
-    Alice_07 ""
+    Alice_07 "Hmm, how unlucky. If only you would have brought a bigger box, I would have felt like I was your favourite sister..."
 
 # game/dialogues/alicetalk.rpy:3262
 translate english alice_gift_sweets_4650613e:
 
     # Max_01 "Понятно всё с тобой. Я тогда лучше пойду..."
-    Max_01 ""
+    Max_01 "Yeah, at least you're honest. I'd better go then..."
 
 # game/dialogues/alicetalk.rpy:3266
 translate english alice_gift_sweets_957ffb88:
 
     # Alice_04 "Я даже обниму тебя за это! Ну так... совсем немного... Иди ко мне."
-    Alice_04 ""
+    Alice_04 "I'll even hug you! Well...for a little...Come here."
 
 # game/dialogues/alicetalk.rpy:3269
 translate english alice_gift_sweets_82bbbdea_1:
 
     # Max_03 "Хорошо, что хоть так можно взять и обнять тебя без ущерба своему здоровью!"
-    Max_03 ""
+    Max_03 "Wow. It's great to finally hug you without being threatened!"
 
 # game/dialogues/alicetalk.rpy:3270
 translate english alice_gift_sweets_25f9db11_1:
 
     # Alice_07 "Я вижу, что ты действительно стремишься сделать мне приятно, вот я и не вредничаю..."
-    Alice_07 ""
+    Alice_07 "I can see the effort you're putting in. I can actually be nice...sometimes."
 
 # game/dialogues/alicetalk.rpy:3271
 translate english alice_gift_sweets_c9c4f595_1:
 
     # Max_05 "Да, надо бы почаще так делать."
-    Max_05 ""
+    Max_05 "Yeah, we should do this more often."
 
 # game/dialogues/alicetalk.rpy:3272
 translate english alice_gift_sweets_d1ecaad6_1:
 
     # Alice_13 "Ой, Макс, нет! Почаще - не надо... А то я фигуру испорчу, мне так нельзя!"
-    Alice_13 ""
+    Alice_13 "Hah, but not too much! I don't want to ruin my figure."
 
 # game/dialogues/alicetalk.rpy:3273
 translate english alice_gift_sweets_1401828f_1:
 
     # Max_02 "Согласен, такую стройную фигуру лучше не портить... Но временами, любимыми конфетами можно и побаловаться!"
-    Max_02 ""
+    Max_02 "You're perfect how you are, so I agree that you shouldn't do anything to change your looks. But it's totally fine to have some sweets on occassion!"
 
 # game/dialogues/alicetalk.rpy:3274
 translate english alice_gift_sweets_0594e879_1:
 
     # Alice_05 "Ну да, временами... И сейчас как раз такой момент!"
-    Alice_05 ""
+    Alice_05 "That's...really nice of you to say. Maybe now would be a good occasion!"
 
 # game/dialogues/alicetalk.rpy:3275
 translate english alice_gift_sweets_05193b35_1:
 
     # Max_01 "Наслаждайся, сластёна! Не буду мешать..."
-    Max_01 ""
+    Max_01 "Enjoy! I'll leave you to it."
 
 # game/dialogues/alicetalk.rpy:3302
 translate english gift_another_dress_aa741c7f:
 
     # Alice_02 "Дурацкий вопрос, Макс. Все девушки любят платья! Но ты же не просто так решил это спросить?"
-    Alice_02 ""
+    Alice_02 "That's a dumb queston. All girls love dresses! But you didn't ask that for no reason, right?"
 
 # game/dialogues/alicetalk.rpy:3303
 translate english gift_another_dress_3778fb76:
 
     # Max_00 "Конечно, нет..."
-    Max_00 ""
+    Max_00 "Of course not..."
 
 # game/dialogues/alicetalk.rpy:3304
 translate english gift_another_dress_c0f79981:
 
     # Alice_01 "Тогда, рассказывай, к чему это всё?"
-    Alice_01 ""
+    Alice_01 "Then tell me what it's all about."
 
 # game/dialogues/alicetalk.rpy:3305
 translate english gift_another_dress_c6892106:
 
     # Max_00 "Ну, я купил тебе одно..."
-    Max_00 ""
+    Max_00 "Well, I bought you one..."
 
 # game/dialogues/alicetalk.rpy:3306
 translate english gift_another_dress_794d2a72:
 
     # Alice_07 "Макс! Ты супер! Давай, показывай... Какая красота! Если размер подойдёт, я даже при тебе его примерю, если хочешь..."
-    Alice_07 ""
+    Alice_07 "Max! That's so nice of you...come on and show me! Wow! If it fits, I'll even try it on for you. If you like..."
 
 # game/dialogues/alicetalk.rpy:3307
 translate english gift_another_dress_8a93b2dc:
 
     # Max_00 "Конечно хочу!"
-    Max_00 ""
+    Max_00 "I'd love that!"
 
 # game/dialogues/alicetalk.rpy:3308
 translate english gift_another_dress_bb38c59d:
 
     # Alice_04 "Главное условие - не подглядывать, пока я переодеваюсь. Если замечу, то сначала получишь, а потом поползёшь отсюда..."
-    Alice_04 ""
+    Alice_04 "My only rule is that you don't peek while I'm changing. If I catch you, you'll be crawling out of here on all-fours."
 
 # game/dialogues/alicetalk.rpy:3309
 translate english gift_another_dress_0d69c9f8:
 
     # Max_00 "Какая ты агрессивная..."
-    Max_00 ""
+    Max_00 "That sounds... aggressive."
 
 # game/dialogues/alicetalk.rpy:3310
 translate english gift_another_dress_88f035bb:
 
     # Alice_07 "Я? Ты что, я же просто душка! Но подглядывать всё равно нельзя!"
-    Alice_07 ""
+    Alice_07 "Who, me? I'm an angel! But it doesn't mean you can peek!"
 
 # game/dialogues/alicetalk.rpy:3311
 translate english gift_another_dress_84309eb3:
 
     # Max_00 "Ладно, ладно..."
-    Max_00 ""
+    Max_00 "Okay, okay..."
 
 # game/dialogues/alicetalk.rpy:3312
 translate english gift_another_dress_175beb9b:
 
     # Alice_04 "Ну... Как тебе, Макс? Хорошо сидит?"
-    Alice_04 ""
+    Alice_04 "Well... What do you think, Max? Does it fit well?"
 
 # game/dialogues/alicetalk.rpy:3313
 translate english gift_another_dress_d3159781:
 
     # Max_00 "Шикарно!"
-    Max_00 ""
+    Max_00 "Perfectly!"
 
 # game/dialogues/alicetalk.rpy:3314
 translate english gift_another_dress_deaaf322:
 
     # Alice_07 "Блин... Мне тоже нравится! А длина, спереди ничего не видно?"
-    Alice_07 ""
+    Alice_07 "Good. I think so too! And how about the length? You can't see anything from the front?"
 
 # game/dialogues/alicetalk.rpy:3315
 translate english gift_another_dress_d083d8a7:
 
     # Max_00 "Н... нет..."
-    Max_00 ""
+    Max_00 "N-No..."
 
 # game/dialogues/alicetalk.rpy:3316
 translate english gift_another_dress_5e4edaba:
 
     # Alice_04 "Заикаешься, Макс? Хороший знак! А сзади как, хорошо? Попку не видно?"
-    Alice_04 ""
+    Alice_04 "Great! How about from behind? No interesting shapes from that angle?"
 
 # game/dialogues/alicetalk.rpy:3317
 translate english gift_another_dress_76f702e6:
 
     # Max_00 "Под платьем или вообще?"
-    Max_00 ""
+    Max_00 "That I can see through the dress, or in general?"
 
 # game/dialogues/alicetalk.rpy:3318
 translate english gift_another_dress_7962f88b:
 
     # Alice_07 "Очень смешно, Макс... Я вот только забыла спросить... А за что такая щедрость? Ты же не просто так решил мне подарить это платье?" nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Hah. You're real funny for someone who's being so generous all of a sudden. You didn't give me this for no reason, did you?" nointeract
 
 # game/dialogues/alicetalk.rpy:3321
 translate english gift_another_dress_f1428559:
 
     # Alice_04 "Ну, если так... То спасибо тебе большое! Теперь у меня есть выбор в чём ходить в клубы... Конечно, оно слишком... Но мне нравится, когда слишком..."
-    Alice_04 ""
+    Alice_04 "Well, if so... Thank you so much! Now I have something to wear when I go clubbing. It might be a little risky, but... I like it risky."
 
 # game/dialogues/alicetalk.rpy:3322
 translate english gift_another_dress_fbdcfcc1:
 
     # Max_00 "Не за что, Алиса..."
-    Max_00 ""
+    Max_00 "You're welcome, Alice..."
 
 # game/dialogues/alicetalk.rpy:3325
 translate english gift_another_dress_56bb0378:
 
     # Alice_04 "На мою благодарность и улыбку, конечно!"
-    Alice_04 ""
+    Alice_04 "My gratitude and smile, of course!"
 
 # game/dialogues/alicetalk.rpy:3326
 translate english gift_another_dress_7df3d048:
 
     # Max_00 "Ну да, именно на это я и расчитывал..."
-    Max_00 ""
+    Max_00 "Well, yes, that's what I was counting on..."
 
 # game/dialogues/alicetalk.rpy:3331
 translate english gift_black_body_5728fd05:
 
     # Alice_02 "Я на это намекала? Может быть, тебе захотелось так услышать?"
-    Alice_02 ""
+    Alice_02 "Was I hinting at that? Maybe that's what you wanted to hear."
 
 # game/dialogues/alicetalk.rpy:3332
 translate english gift_black_body_0426c8cf:
 
     # Max_00 "Так тебе надо или нет?"
-    Max_00 ""
+    Max_00 "Do you need it or not?"
 
 # game/dialogues/alicetalk.rpy:3333
 translate english gift_black_body_1b92246a:
 
     # Alice_04 "Давай сюда, посмотрим... Конечно надо! Если не будешь смотреть, то я даже при тебе примерю..."
-    Alice_04 ""
+    Alice_04 "Come on, let's see... Of course I do! If you don't look, I'll even try it on in front of you..."
 
 # game/dialogues/alicetalk.rpy:3334
 translate english gift_black_body_fd1851bd:
 
     # Max_00 "Конечно!"
-    Max_00 ""
+    Max_00 "Of course!"
 
 # game/dialogues/alicetalk.rpy:3335
 translate english gift_black_body_4267410f:
 
     # Alice_12 "Макс! Ты пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
-    Alice_12 ""
+    Alice_12 "Max! Are you looking at my ass? There are mirrors all around and I can see everything! Turn around!"
 
 # game/dialogues/alicetalk.rpy:3336
 translate english gift_black_body_90866782:
 
     # Max_00 "Эх..."
-    Max_00 ""
+    Max_00 "Eh..."
 
 # game/dialogues/alicetalk.rpy:3337
 translate english gift_black_body_5478444e:
 
     # Alice_07 "Макс... Я вот только не поняла... А где верх? Он куда-то упал или что это?"
-    Alice_07 ""
+    Alice_07 "I don't think I understand. Why is the top missing?"
 
 # game/dialogues/alicetalk.rpy:3338
 translate english gift_black_body_344c03d6:
 
     # Max_00 "Ну, это такое боди, без верха..."
-    Max_00 ""
+    Max_00 "Well, it's bodysuit. There is no top."
 
 # game/dialogues/alicetalk.rpy:3339
 translate english gift_black_body_62233021:
 
     # Alice_04 "И что ты предлагаешь, мне в таком виде перед камерой крутиться? Серьёзно?"
-    Alice_04 ""
+    Alice_04 "What do you think I'm going to do in front of the camera with this? Seriously?"
 
 # game/dialogues/alicetalk.rpy:3340
 translate english gift_black_body_be3c6c1a:
 
     # Max_00 "Ты сама сказала более откровенное..."
-    Max_00 ""
+    Max_00 "Are you saying it has nothing to do with fashion?"
 
 # game/dialogues/alicetalk.rpy:3341
 translate english gift_black_body_d01083f2:
 
     # Alice_08 "Ты знаешь, я могла бы раздеться до гола с таким успехом..."
-    Alice_08 ""
+    Alice_08 "I may as well just strip naked at this rate..."
 
 # game/dialogues/alicetalk.rpy:3342
 translate english gift_black_body_dbd8033b:
 
     # Max_00 "Значит, не нравится?"
-    Max_00 ""
+    Max_00 "So you don't like it?"
 
 # game/dialogues/alicetalk.rpy:3343
 translate english gift_black_body_dc2cfab5:
 
     # Alice_07 "Ну почему... Очень нравится. Вот только это не для моего блога, но применение я обязательно найду... Кое-кому очень понравится..."
-    Alice_07 ""
+    Alice_07 "No, I really do. Even though it's not suited for my blog, I'll definitely find a use for it... Some people will love it..."
 
 # game/dialogues/alicetalk.rpy:3344
 translate english gift_black_body_44d48fc4:
 
     # Max_00 "Кому же это?"
-    Max_00 ""
+    Max_00 "Who might they be?"
 
 # game/dialogues/alicetalk.rpy:3345
 translate english gift_black_body_426e4aa9:
 
     # Alice_02 "Ну уж точно не тебе!"
-    Alice_02 ""
+    Alice_02 "Well, certainly not you!"
 
 # game/dialogues/alicetalk.rpy:3346
 translate english gift_black_body_7fdd0326:
 
     # Max_00 "Мне же интересно!"
-    Max_00 ""
+    Max_00 "Now I'm interested!"
 
 # game/dialogues/alicetalk.rpy:3347
 translate english gift_black_body_64936e56:
 
     # Alice_07 "Не сомневаюсь. Ну всё, Макс. Спасибо тебе ещё раз за этот шикарный подарок. А ты не безнадёжен..."
-    Alice_07 ""
+    Alice_07 "I'm sure you are. All right, Max. Thank you again for you're help. I'm genuinely greatful..."
 
 # game/dialogues/alicetalk.rpy:3348
 translate english gift_black_body_b6a988ba:
 
     # Max_00 "А что с блогом?"
-    Max_00 ""
+    Max_00 "What about the blog?"
 
 # game/dialogues/alicetalk.rpy:3349
 translate english gift_black_body_5e4d9fbd:
 
     # Alice_01 "Да, кстати об этом... Со мной уже кое-кто связался и мы договорились, что я могу начать рекламировать некоторые товары. Мне будут их присылать курьером, а платить через биткойны, представляешь!"
-    Alice_01 ""
+    Alice_01 "Oh, speaking of...someone actually reached out to me for advertising. They're sending some products out with a courier, and I'm going to get paid in bitcoin! Can you you believe it?"
 
 # game/dialogues/alicetalk.rpy:3350
 translate english gift_black_body_31f775ec:
 
     # Max_00 "Значит, тебя можно поздравить?"
-    Max_00 ""
+    Max_00 "So...congratulations?"
 
 # game/dialogues/alicetalk.rpy:3351
 translate english gift_black_body_5d492bc7:
 
     # Alice_07 "Ага. Кажется, твой план удался!"
-    Alice_07 ""
+    Alice_07 "Yeah. I think your plan might actually work out!"
 
 # game/dialogues/alicetalk.rpy:3352
 translate english gift_black_body_169dd6b4:
 
     # Max_00 "Может быть, ради такого дела покажешь сиськи?"
-    Max_00 ""
+    Max_00 "Why not just show your tits and earn even more?"
 
 # game/dialogues/alicetalk.rpy:3353
 translate english gift_black_body_da23c2c5:
 
     # Alice_04 "Макс! Ну ты и придурок, а... Всё, мы закончили..."
-    Alice_04 ""
+    Alice_04 "Alright, I'm glad you helped, but it's not going the way you wanted, asshole. We're good for now."
 
 # game/dialogues/alicetalk.rpy:3354
 translate english gift_black_body_90866782_1:
 
     # Max_00 "Эх..."
-    Max_00 ""
+    Max_00 "Tch..."
 
 # game/dialogues/alicetalk.rpy:3359
 translate english alice_about_blog3_604bdd6e:
 
     # Alice_00 "Ты знаешь, Макс, не очень..."
-    Alice_00 ""
+    Alice_00 "You know, not really..."
 
 # game/dialogues/alicetalk.rpy:3360
 translate english alice_about_blog3_fbc0cd62:
 
     # Max_00 "А что такое?"
-    Max_00 ""
+    Max_00 "What is it?"
 
 # game/dialogues/alicetalk.rpy:3361
 translate english alice_about_blog3_0a52bb9c:
 
     # Alice_13 "Ну я отработала неделю... Мне присылали бельё, а вот сегодня заплатили какие-то гроши..."
-    Alice_13 ""
+    Alice_13 "I got their products and worked for a week... but they paid me fuck-all."
 
 # game/dialogues/alicetalk.rpy:3362
 translate english alice_about_blog3_181c2177:
 
     # Max_00 "Почему?"
-    Max_00 ""
+    Max_00 "How come?"
 
 # game/dialogues/alicetalk.rpy:3363
 translate english alice_about_blog3_4ee841f5:
 
     # Alice_00 "Ну они объяснили это так, что бельё, которое мне высылали и есть основная плата за работу, а эти копейки возмещение остальных расходов типа того же интернета..."
-    Alice_00 ""
+    Alice_00 "So apparently, the lingerie they send is considered part of my payment. And then another part of the payment was exposure for selling their product."
 
 # game/dialogues/alicetalk.rpy:3364
 translate english alice_about_blog3_23f947b7:
 
     # Max_00 "Так найди других!"
-    Max_00 ""
+    Max_00 "That's bullshit! Can you find another advertiser?"
 
 # game/dialogues/alicetalk.rpy:3365
 translate english alice_about_blog3_d7564f27:
 
     # Alice_13 "Да я как дура подписала контракт... Теперь с нижним бельём могу работать только с ними. И почему я не читаю мелкий шрифт? Блин. Что делать?"
-    Alice_13 ""
+    Alice_13 "I agreed to their contract like an idiot. I'm not allowed to promote other fashion products, and I didn't even read it properly. Fuck. What do I do?"
 
 # game/dialogues/alicetalk.rpy:3366
 translate english alice_about_blog3_b2efea00:
 
     # Max_00 "А контракт на любую деятельность?"
-    Max_00 ""
+    Max_00 "Does the contract restrict what kind of content you can make?"
 
 # game/dialogues/alicetalk.rpy:3367
 translate english alice_about_blog3_014904c2:
 
     # Alice_00 "Ты имеешь в виду, могу ли я рекламировать что-то другое? Да, могу... Но что? Я так надеялась, что твоя идея с нижним бельём сработает и крутилась как дурочка в таком виде, а всё зря..."
-    Alice_00 ""
+    Alice_00 "Like, can I do other products that aren't competitors? Probably. But so what? I was hoping your lingerie idea would work, but I've been played like a fiddle."
 
 # game/dialogues/alicetalk.rpy:3368
 translate english alice_about_blog3_70d9d7e5:
 
     # Max_00 "Не зря. У тебя аудитория есть!"
-    Max_00 ""
+    Max_00 "No! You have an audience now!"
 
 # game/dialogues/alicetalk.rpy:3369
 translate english alice_about_blog3_3690ff67:
 
     # Alice_13 "И что мне им теперь показывать? Не снова же крема и лаки, как раньше? Большинство зрителей это озабоченные мужики, которым нравится на меня смотреть..."
-    Alice_13 ""
+    Alice_13 "And what am I supposed to show them? I can't just do beauty products like before. Right now, my audience is a bunch of lonely men who like to look at girls in lingerie..."
 
 # game/dialogues/alicetalk.rpy:3370
 translate english alice_about_blog3_7c75041e:
 
     # Max_00 "Я предлагал два варианта..."
-    Max_00 ""
+    Max_00 "I did originally come to you with two options."
 
 # game/dialogues/alicetalk.rpy:3371
 translate english alice_about_blog3_ad96a644:
 
     # Alice_00 "А какой второй? Я что-то не помню..."
-    Alice_00 ""
+    Alice_00 "What was the other one again? I can't remember."
 
 # game/dialogues/alicetalk.rpy:3372
 translate english alice_about_blog3_915f02ed:
 
     # Max_00 "Ну, ты можешь рекламировать игрушки для взрослых, например... Или раздеваться..."
-    Max_00 ""
+    Max_00 "There's a market for adult-entertainment and similar products..."
 
 # game/dialogues/alicetalk.rpy:3373
 translate english alice_about_blog3_efecfafc:
 
     # Alice_04 "Ну раздеваться перед камерой я не планирую... Да и игрушки на камеру использовать это ещё хуже..."
-    Alice_04 ""
+    Alice_04 "Tch. I don't plan on getting naked for the camera, let alone using sex-toys."
 
 # game/dialogues/alicetalk.rpy:3374
 translate english alice_about_blog3_1d9a8b36:
 
     # Max_00 "Их же не обязательно использовать. Можно рассказывать об этом..."
-    Max_00 ""
+    Max_00 "You don't even have to use them. You could... review them."
 
 # game/dialogues/alicetalk.rpy:3375
 translate english alice_about_blog3_8f3c6943:
 
     # Alice_07 "И тогда вся аудитория будет состоять из озабоченных мужиков, которые только и ждут, пока я что-то куда-то себе запихну, да?"
-    Alice_07 ""
+    Alice_07 "So I'll attract an audience of nothing but horny men that want to jerk-off to me, right?"
 
 # game/dialogues/alicetalk.rpy:3376
 translate english alice_about_blog3_7894e447:
 
     # Max_00 "Блин, на такое даже я бы подписался..."
-    Max_00 ""
+    Max_00 "Horny men...who pay. A lot."
 
 # game/dialogues/alicetalk.rpy:3377
 translate english alice_about_blog3_c95aff5f:
 
     # Alice_04 "Не сомневаюсь... Но нет, Макс. Идея дурацкая. Даже просто раздеваться на камеру и то лучше, чем с этими игрушками возиться..."
-    Alice_04 ""
+    Alice_04 "I don't doubt that they do, but....no. It's a dumb idea. Getting naked in from the camera would be better than messing around with sex-toys."
 
 # game/dialogues/alicetalk.rpy:3378
 translate english alice_about_blog3_0e193aaf:
 
     # Max_00 "Так в чём проблема?"
-    Max_00 ""
+    Max_00 "So what's the problem?"
 
 # game/dialogues/alicetalk.rpy:3379
 translate english alice_about_blog3_bca00686:
 
     # Alice_00 "Кроме того, что это как-то низко? Вдруг меня увидят мои друзья или знакомые? Это же такой позор!"
-    Alice_00 ""
+    Alice_00 "Besides the fact I'd be a cam-whore? Everyone I've ever known would be able to watch me! You, Mom, Lisa..."
 
 # game/dialogues/alicetalk.rpy:3380
 translate english alice_about_blog3_79f7821f:
 
     # Max_00 "А вот тут есть решение!"
-    Max_00 ""
+    Max_00 "But there is a solution!"
 
 # game/dialogues/alicetalk.rpy:3381
 translate english alice_about_blog3_57b5f7b3:
 
     # Alice_13 "Это какое? Я слушаю. Только не предлагай загримироваться!"
-    Alice_13 ""
+    Alice_13 "Oh yeah? What could that be?"
 
 # game/dialogues/alicetalk.rpy:3382
 translate english alice_about_blog3_84d102a0:
 
     # Max_00 "Можно запретить этому региону смотреть твои трансляции..."
-    Max_00 ""
+    Max_00 "Region-lock. You can block specific geopgraphic areas from being able to watch your live-streams!"
 
 # game/dialogues/alicetalk.rpy:3383
 translate english alice_about_blog3_aff174c0:
 
     # Alice_00 "А так можно? И самое главное, кто это сможет сделать?"
-    Alice_00 ""
+    Alice_00 "Is that actually possible? I'd be missing out on viewers..."
 
 # game/dialogues/alicetalk.rpy:3384
 translate english alice_about_blog3_23923e60:
 
     # Max_00 "Ну, например... я..."
-    Max_00 ""
+    Max_00 "Well, you can make some exceptions for some regions..."
 
 # game/dialogues/alicetalk.rpy:3385
 translate english alice_about_blog3_34bde7cf:
 
     # Alice_07 "Макс! Ты меня удивляешь всё больше. Такое ощущение, что ты всё это делаешь для себя. Или мне только кажется?"
-    Alice_07 ""
+    Alice_07 "Max! You surprise me more and more. It feels like you're doing this all for yourself. Or is it just my imagination?"
 
 # game/dialogues/alicetalk.rpy:3386
 translate english alice_about_blog3_6d2c2d6f:
 
     # Max_00 "Кажется. Я делаю это для тебя!"
-    Max_00 ""
+    Max_00 "I'm just trying to help you!"
 
 # game/dialogues/alicetalk.rpy:3387
 translate english alice_about_blog3_ec62edc4:
 
     # Alice_02 "Ну, допустим. Вот только мне кажется, что я буду как какая-то проститутка..."
-    Alice_02 ""
+    Alice_02 "I'm sure. But look, how am I supposed to do this without looking like some kind of prostitute?"
 
 # game/dialogues/alicetalk.rpy:3388
 translate english alice_about_blog3_f9b52267:
 
     # Max_00 "Тебе не обязательно трахаться на камеру..."
-    Max_00 ""
+    Max_00 "No-one is asking you to fuck on camera..."
 
 # game/dialogues/alicetalk.rpy:3389
 translate english alice_about_blog3_e0012130:
 
     # Alice_04 "Макс, об этом и речи не шло! Я именно про стриптиз или как там это называется... Да и что мама скажет?"
-    Alice_04 ""
+    Alice_04 "That was always out of the question! I'm talking about teasing, or whatever... What would Mom say?"
 
 # game/dialogues/alicetalk.rpy:3390
 translate english alice_about_blog3_7a0b52f3:
 
     # Max_00 "Мама не узнает. И увидеть не сможет. И никто ей не расскажет..."
-    Max_00 ""
+    Max_00 "Mom won't know. She won't be able to see it, and no one will tell her..."
 
 # game/dialogues/alicetalk.rpy:3391
 translate english alice_about_blog3_f7d482a2:
 
     # Alice_02 "В общем, я подумаю, Макс, но ничего не обещаю..."
-    Alice_02 ""
+    Alice_02 "Look, I'll think about it. But I'm not promising anything."
 
 # game/dialogues/alicetalk.rpy:3392
 translate english alice_about_blog3_80ab472f:
 
     # Max_00 "Подумай..."
-    Max_00 ""
+    Max_00 "Yeah. Have a think."
 
 # game/dialogues/alicetalk.rpy:3398
 translate english try_cam_girl_a499c404:
 
     # Alice_02 "Ты о том, чтобы раздеваться за деньги? У меня эта идея не выходит из головы, так как нужны деньги, но блин... Я не могу через себя переступить..." nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Are you talking about getting naked for the camera? I can't get the idea out of my head because I need the money, but shit... I can't convince myself." nointeract
 
 # game/dialogues/alicetalk.rpy:3404
 translate english try_cam_girl_fe322cf1:
 
     # Alice_01 "Да я это понимаю, Макс. Но мысль о том, что на меня будут пялиться толпы озабоченных мужиков меня останавливает..."
-    Alice_01 ""
+    Alice_01 "I understand that, Max. But the thought of being stared at by a crowd of men..."
 
 # game/dialogues/alicetalk.rpy:3405
 translate english try_cam_girl_201fa8c9:
 
     # Max_00 "Ну, подумай ещё..."
-    Max_00 ""
+    Max_00 "Well, think about it again..."
 
 # game/dialogues/alicetalk.rpy:3410
 translate english try_cam_girl_b378d928:
 
     # Alice_07 "Ты знаешь... Была не была! В конце концов, если ты сделаешь так, чтобы меня не могли увидеть мои друзья и знакомые..."
-    Alice_07 ""
+    Alice_07 "You know what... If you can prevent anyone I know in-person from watching me..."
 
 # game/dialogues/alicetalk.rpy:3411
 translate english try_cam_girl_fb9f8404:
 
     # Max_00 "Считай, уже сделано!"
-    Max_00 ""
+    Max_00 "Consider it done!"
 
 # game/dialogues/alicetalk.rpy:3412
 translate english try_cam_girl_8b23112f:
 
     # Alice_04 "А ты не будешь подглядывать? Потому-что для себя то ты наверняка лазейку сделаешь. Я тебя знаю!"
-    Alice_04 ""
+    Alice_04 "Aren't you going to find a way to watch? You'll probably find a loophole, knowing you!"
 
 # game/dialogues/alicetalk.rpy:3413
 translate english try_cam_girl_3b3ff268:
 
     # Max_00 "Что ты! Как я могу? Нет, ни за что!"
-    Max_00 ""
+    Max_00 "What are you!? How can I? No way!"
 
 # game/dialogues/alicetalk.rpy:3414
 translate english try_cam_girl_89f0aaa6:
 
     # Alice_05 "Да, Макс, так я тебе и поверила... Ну ладно. Я попробую. Изучу какие есть подобные сервисы, где сколько платят и... попробую. Если удастся на этом заработать, то я столько себе куплю... Ух!"
-    Alice_05 ""
+    Alice_05 "Yeah, sure.. alright. I'll try. I'll see what sites are out there, how much they pay and... I will try. If I can make money off this, I can really turn my life around!"
 
 # game/dialogues/alicetalk.rpy:3415
 translate english try_cam_girl_7852d704:
 
     # Max_00 "Ага..."
-    Max_00 ""
+    Max_00 "Yeah!"
 
 # game/dialogues/alicetalk.rpy:3416
 translate english try_cam_girl_39a69f63:
 
     # Alice_07 "Ладно, спасибо тебе в очередной раз, Макс! Ты всё время мне помогаешь со всем этими моими историями. Я рада, что у меня такой брат..."
-    Alice_07 ""
+    Alice_07 "Alright. Thanks, Max! We might not always get along, but I appreciate your help."
 
 # game/dialogues/alicetalk.rpy:3417
 translate english try_cam_girl_fc7f5c16:
 
     # Max_00 "А я рад, что у меня такая сестра!"
-    Max_00 ""
+    Max_00 "I'm glad to have you as a sister!"
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:3049
     old "Ничего..."
-    new ""
+    new "Nothing..."
 
     # game/dialogues/alicetalk.rpy:3049
     old "Может, попозируешь для меня..."
-    new ""
+    new "Maybe you can pose for me..."
 
     # game/dialogues/alicetalk.rpy:3082
     old "Ну что, примеришь при мне?"
-    new ""
+    new "Well, will you try it on for me?"
 
     # game/dialogues/alicetalk.rpy:3082
     old "Ну что, примеришь при мне? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new ""
+    new "Well, will you try it on for me? {color=[_ch1.col]}(Convinced. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:3318
     old "Почему? Просто так..."
-    new ""
+    new "Why? For no reason..."
 
     # game/dialogues/alicetalk.rpy:3318
     old "А на что я могу расчитывать?|"
-    new ""
+    new "What can I expect?|"
 
     # game/dialogues/alicetalk.rpy:3398
     old "Ты заработаешь кучу денег! \n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new ""
+    new "You'll make a lot of money! \n{color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
 

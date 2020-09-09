@@ -319,29 +319,29 @@ translate english strings:
 
     # game/core/02init.rpy:71
     old "Слушай, насчёт блога..."
-    new ""
+    new "Listen, about your blog..."
 
     # game/core/02init.rpy:71
     old "Насчёт твоего блога... А если не особо раздеваться?"
-    new ""
+    new "About your blog...maybe you don't have to undress completely?"
 
     # game/core/02init.rpy:71
     old "Лиза, ты же любишь читать?"
-    new ""
+    new "You enjoy reading, right?"
 
     # game/core/02init.rpy:71
     old "Лиза, у меня для тебя особая книжка..."
-    new ""
+    new "Hey Lisa, I have a book you might find interesting..."
 
     # game/core/02init.rpy:128
     old "У меня есть кое-что, о чём мы беседовали..."
-    new ""
+    new "I have something we spoke about earlier..."
 
     # game/core/02init.rpy:128
     old "{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"
-    new ""
+    new "{color=#808080}I bought you some sweets! \n (you need to wait a few days){/color}"
 
     # game/core/02init.rpy:128
     old "Прикупил для тебя немного сладенького!"
-    new ""
+    new "I bought you some sweets!"
 

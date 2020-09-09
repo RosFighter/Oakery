@@ -346,3 +346,66 @@ init python:
             'mgg'      : mg,
             }
         return my_scope
+
+
+    def set_gift_black_lingerie():
+        al = Profile("Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
+        al.plan_name = renpy.random.choice(['sun', 'resting'])
+        if al.plan_name != 'sun':
+            al.dress = renpy.random.choice(['a', 'd']) if 'kira' in persistent.mems_var else 'a'
+            _tm = renpy.random.choice(['10:20', '21:00'])
+        else:
+            al.dress = 'a'
+            _tm = '15:30'
+
+        sm = ['']
+        if 'alice_nopants' in persistent.mems_var:
+            sm.append('nopants')
+        if 'alice_not_nopants' in persistent.mems_var:
+            sm.append('not_nopants')
+        smoke = renpy.random.choice(sm)
+        fl = {
+                'smoke': smoke if al.dress=='a' else ''
+            }
+
+        mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress()
+        mg.social = 45.0
+
+        my_scope = {
+                'alice'       : al,
+                'flags'       : fl,
+                'tm'          : _tm,
+                'talk_var'    : {'sun_oiled': 0},
+                'mgg'         : mg,
+            }
+        return my_scope
+
+    def set_lisa_advanced_kiss_lesson():
+        tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress = get_lisa_dress()
+
+        mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress()
+        mg.kissing = 6.0
+
+        my_scope = {
+                'lisa' : tl,
+                'mgg'  : mg,
+            }
+        return my_scope
+
+    def set_kiss_massage1():
+        tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress = get_lisa_dress()
+
+        mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress()
+        mg.kissing = 6.0
+
+        my_scope = {
+                'talk_var' : {'kissingmassage':True},
+                'lisa'     : tl,
+                'mgg'      : mg,
+            }
+        return my_scope

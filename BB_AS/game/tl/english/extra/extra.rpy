@@ -102,3 +102,19 @@ translate english strings:
     old "Горячее, чем порно"
     new "Better than porn"
 
+# TODO: Translation updated at 2020-09-09 23:31
+
+translate english strings:
+
+    # game/extra/extra.rpy:36
+    old "Тёмное кружево"
+    new ""
+
+    # game/extra/extra.rpy:36
+    old "Вкусные уроки с сестрёнкой"
+    new ""
+
+    # game/extra/extra.rpy:36
+    old "Кажется, мы что-то забыли"
+    new ""
+
