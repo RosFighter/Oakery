@@ -7015,7 +7015,7 @@ translate english talkblog2_1b7a68fc:
 translate english talkblog2_2b784949:
 
     # Max_02 "Как у тебя со скромностью дела?"
-    Max_02 "How well is your blog doing? Honestly."
+    Max_02 ""
 
 # game/dialogues/alicetalk.rpy:3024
 translate english talkblog2_7f33d114:
@@ -7171,7 +7171,7 @@ translate english talkblog3_f0583bf8:
 translate english talkblog3_6f8d6fae:
 
     # Alice_01 "Да, Макс. Причём, желающих на этом зарабатывать больше, чем желающих за это платить. И в этом главная проблема. Но как я уже сказала, я могу попробовать. Если купишь что-то, посмотрим..."
-    Alice_01 "Yeah. The blogging community is also really competitve, so that will be another challenge. But I'll try my best. If you manage to buy me something...there might be a chance.
+    Alice_01 "Yeah. The blogging community is also really competitve, so that will be another challenge. But I'll try my best. If you manage to buy me something...there might be a chance."
 
 # game/dialogues/alicetalk.rpy:3064
 translate english talkblog3_fd1dc624:
