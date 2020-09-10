@@ -108,13 +108,13 @@ translate english strings:
 
     # game/extra/extra.rpy:36
     old "Тёмное кружево"
-    new ""
+    new "Dark-Lace Lingerie"
 
     # game/extra/extra.rpy:36
     old "Вкусные уроки с сестрёнкой"
-    new ""
+    new "Fun lessons with my sister"
 
     # game/extra/extra.rpy:36
     old "Кажется, мы что-то забыли"
-    new ""
+    new "I think we forgot something"
 
