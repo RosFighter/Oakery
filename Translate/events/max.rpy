@@ -11,7 +11,7 @@ translate english Nap_89de1ee6:
 translate english Box_2b7f754d:
 
     # Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
-    Max_08 "So, mom asked me to sort these boxes. Let's see what we have here..."
+    Max_08 "So, Mom asked me to sort these boxes. Let's see what we have here..."
 
 # game/events/max.rpy:154
 translate english Box_7d70e813:
@@ -59,7 +59,7 @@ translate english buyfood_e01f4c0c:
 translate english create_site_3744c5ee:
 
     # Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100" nointeract
-    Max_00 "So, it's time to do the website. First I need to buy a domain, hosting, design sample and pay for services of the streaming. It’s $100." nointeract
+    Max_00 "So, it's time to build the website. First I need to buy a domain, hosting, design a sample and pay for streaming services. It’s $100." nointeract
 
 # game/events/max.rpy:264
 translate english create_site_e36c401d:
@@ -71,13 +71,13 @@ translate english create_site_e36c401d:
 translate english create_site_4e1c08b2:
 
     # Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
-    Max_04 "Yes! Everything's working! Now people will be able to go to my website and watch the show. Of course, if they somehow find the site... Well, I’ll think about what I can do..."
+    Max_04 "Yes! Everything's working! Now people will be able to go to my website and watch the show. Of course, if they somehow find the site... Well, I’ll think about what I can do next..."
 
 # game/events/max.rpy:298
 translate english about_cam_c0885969:
 
     # Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
-    Max_09 "So curious... These cameras can be configured so that they broadcast the to the Internet!"
+    Max_09 "So curious... These cameras can be configured so that they broadcast to the internet!"
 
 # game/events/max.rpy:299
 translate english about_cam_3d3bce54:
@@ -101,13 +101,13 @@ translate english SearchCam_67b6130b:
 translate english SearchCam_140db024:
 
     # Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
-    Max_09 "It's not connected to anything. Maybe dad used it to keep an eye on the house during construction?"
+    Max_09 "It's not connected to anything. Maybe Dad used it to keep an eye on the house during construction?"
 
 # game/events/max.rpy:316
 translate english SearchCam_9487a2c0:
 
     # Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
-    Max_04 "If I can connect to this cam, I think I'll be able to keep and eye on this room. Now I just need to figure out how to link it"
+    Max_04 "If I can connect to this cam, I think I'll be able to keep and eye on this room. Now I just need to figure out how to link it!"
 
 # game/events/max.rpy:323
 translate english SearchCam_c5169ba0:
@@ -119,7 +119,7 @@ translate english SearchCam_c5169ba0:
 translate english ClearPool_f0dc1508:
 
     # Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    Max_11 "It's not easy work, but I need the money. Besides, mom already paid me to do it."
+    Max_11 "It's not easy work, but I need the money. Besides, Mom already paid me to do it."
 
 # game/events/max.rpy:350
 translate english DishesWashed_cedc9161:
@@ -992,7 +992,7 @@ translate english strings:
 
     # game/events/max.rpy:246
     old "{i}искать информацию по кредитам{/i}"
-    new "{i}find information on the credits{/i}"
+    new "{i}find information about loans{/i}"
 
     # game/events/max.rpy:894
     old "$500"

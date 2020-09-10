@@ -82,7 +82,7 @@ translate english MorningWood_2d999f3b:
 translate english MorningWood_e227a0bf:
 
     # Ann_09 "Ну, да, Лиза. Так у мальчиков иногда бывает по утрам. Не нужно паниковать..."
-    Ann_09 "Ah I see what's happening.  You can relax Lisa, Max didn't actually do anything wrong, this is just a natural occurence. There's no need to panic."
+    Ann_09 "Ah I see what's happening. You can relax Lisa, Max didn't actually do anything wrong, this is just a natural occurence. There's no need to panic."
 
 # game/dialogues/lisatalk.rpy:73
 translate english MorningWood_37c5030c:
@@ -184,7 +184,7 @@ translate english about_school_cc4723a0:
 translate english about_school_way_3a1e2dd6:
 
     # Lisa_02 "Ты знаешь, тут школа совсем рядом! Пять минут и я на месте. К тому же, топографическим кретинизмом не страдаю... Ты же поэтому из дома не выходишь, да?" nointeract
-    Lisa_02 "It's right around the corner, only five minutes away! And it's not like I melt from sunlight like someone I know ...That's the reason you never leave the house, right?" nointeract
+    Lisa_02 "It's right around the corner, only five minutes away! And it's not like I melt from sunlight like someone I know...That's the reason you never leave the house, right?" nointeract
 
 # game/dialogues/lisatalk.rpy:137
 translate english about_school_way_99e9aaa4:
