@@ -1909,3 +1909,115 @@ translate english alice_sleep_morning_333a5d36:
     # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!" nointeract
     Max_09 "I ought to take her out of her comfort zone... maybe I could use what she fears most?" nointeract
 
+# TODO: Translation updated at 2020-09-11 17:25
+
+# game/events/alice.rpy:1344
+translate english alice_blog_lingerie_877d3b2a:
+
+    # Max_00 "Обычно в это время Алиса занимается своим блогом, но сейчас её дверь закрыта..." nointeract
+    Max_00 "" nointeract
+
+# game/events/alice.rpy:1354
+translate english alice_blog_lingerie_b79543fc:
+
+    # Alice_15 "Что?! Макс! Ну-ка иди отсюда, пока в ухо не получил!" nointeract
+    Alice_15 "" nointeract
+
+# game/events/alice.rpy:1359
+translate english alice_blog_lingerie_e1665972:
+
+    # Alice_16 "Тебе чего надо, Макс?! Я тут занята..."
+    Alice_16 ""
+
+# game/events/alice.rpy:1360
+translate english alice_blog_lingerie_c5313c11:
+
+    # Max_07 "Да я так, спросить хотел..."
+    Max_07 ""
+
+# game/events/alice.rpy:1363
+translate english alice_blog_lingerie_a3a7e95b:
+
+    # Alice_13 "Ну..." nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:1366
+translate english alice_blog_lingerie_0f9fbb40:
+
+    # Alice_05 "Блогом занимаюсь! И ты это прекрасно знаешь... А если ты тупой, в чём я уверена, то мог бы спросить и через дверь..."
+    Alice_05 ""
+
+# game/events/alice.rpy:1367
+translate english alice_blog_lingerie_d782723f:
+
+    # Max_03 "Так не интересно! Ну и как, получается?"
+    Max_03 ""
+
+# game/events/alice.rpy:1368
+translate english alice_blog_lingerie_147f3ff5:
+
+    # Alice_03 "Да, получается! И не мешай, иди уже..." nointeract
+    Alice_03 "" nointeract
+
+# game/events/alice.rpy:1373
+translate english alice_blog_lingerie_375acb3f:
+
+    # Alice_18 "Макс!!! Я тебе сейчас..." nointeract
+    Alice_18 "" nointeract
+
+# game/events/alice.rpy:1378
+translate english alice_blog_lingerie_4cf96db0:
+
+    # Alice_05 "А что, мне с распахнутой дверью в нижнем белье тут сидеть?!"
+    Alice_05 ""
+
+# game/events/alice.rpy:1379
+translate english alice_blog_lingerie_4b0dd3c8:
+
+    # Max_03 "Конечно, да! Мне вот нравится..."
+    Max_03 ""
+
+# game/events/alice.rpy:1380
+translate english alice_blog_lingerie_02dd6c6b:
+
+    # Alice_03 "Ой, Макс, свали уже... Не мешай!" nointeract
+    Alice_03 "" nointeract
+
+# game/events/alice.rpy:1385
+translate english alice_blog_lingerie_cc7303dd:
+
+    # Alice_18 "Да ты бессмертный что ли!!! Сейчас я тебе напинаю..." nointeract
+    Alice_18 "" nointeract
+
+# game/events/alice.rpy:1393
+translate english alice_blog_lingerie_1a6896b4:
+
+    # Max_05 "{i}( Отлично! Алиса крутит задом перед камерой в одном нижнем белье! Надеюсь, не заметит... Отсюда вид точно лучше, чем через камеру... ){/i}" nointeract
+    Max_05 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:1354
+    old "{i}сбежать{/i}"
+    new ""
+
+    # game/events/alice.rpy:1354
+    old "Классно смотришься!"
+    new ""
+
+    # game/events/alice.rpy:1363
+    old "Чем занята?"
+    new ""
+
+    # game/events/alice.rpy:1363
+    old "Чего дверь-то закрыла?"
+    new ""
+
+    # game/events/alice.rpy:1368
+    old "Точно получается?"
+    new ""
+
+    # game/events/alice.rpy:1380
+    old "Что делаешь-то?"
+    new ""
+
