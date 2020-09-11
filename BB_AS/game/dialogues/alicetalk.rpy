@@ -3081,12 +3081,6 @@ label gift_black_lingerie:
                 call alice_morning_closer
 
     $ _ch1 = GetChance(mgg.social, 2, 900)
-    $ time_of_day = {
-            '06:00' <= tm < '11:00': 'morning',
-            '11:00' <= tm < '19:00': 'day',
-            '19:00' <= tm < '21:00': 'evening',
-            '21:00'<=tm or tm<'06:00': 'night'
-        }[True]
     Alice_02 "И что же это? Я должна угадать?"
     Max_01 "Нижнее бельё..."
     menu:
@@ -3103,7 +3097,7 @@ label gift_black_lingerie:
 
                 #на фоне двери в комнату Алисы
                 $ renpy.scene()
-                $ renpy.show('location house aliceroom door-'+time_of_day)
+                $ renpy.show('location house aliceroom door-'+get_time_of_day())
                 Max_09 "{i}( А посмотреть-то хочется! Быстренько оббежать комнаты и подглядеть в окно? Может заметить... Или пойти в комнату и подглядеть через камеру? Пока дойду и открою свой сайт она уже переоденется... Эх, вот я пролетел! ){/i}"
                 Alice "{b}Алиса:{/b} Всё, Макс. Можешь заходить..."
 
@@ -3114,6 +3108,7 @@ label gift_black_lingerie:
                 Max_05 "Ну, я... э..."
                 Alice_05 "Контуженый что ли? Я тебя спрашиваю хорошо сидит или нет... Хотя... по тебе же всё сразу видно. Значит, всё в порядке..."
                 Max_02 "Ага, полный порядок!"
+                $ poss['blog'].OpenStage(5)
                 jump .final
             else:
                 # (удалось убедить)
@@ -3164,6 +3159,9 @@ label gift_black_lingerie:
         $ renpy.show('Alice newlingerie '+('08' if '09:00' <= tm < '20:00' else '08e'))
         Alice_07 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидит?"
         Max_05 "Не то слово, всё выглядит шикарно!"
+        if not _in_replay:
+            $ poss['blog'].OpenStage(6)
+        jump .final
 
     else:
         # примерка началась без низа
@@ -3211,21 +3209,26 @@ label gift_black_lingerie:
         $ renpy.show('Alice newlingerie '+('08' if '09:00' <= tm < '20:00' else '08e'))
         Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
         Max_05 "Тебе идёт, всё выглядит шикарно!"
+        if not _in_replay:
+            $ poss['blog'].OpenStage(6)
         jump .final
 
     label .final:
-        # финал
-        if not _in_replay:
-            $ poss['blog'].OpenStage(5)
-
+        pass
     Alice_02 "Ну, спасибо тебе. Да, в этом точно можно покрасоваться перед камерами. Не уверена, что даст эффект, но я же одета... В общем, я попробую!"
     Max_04 "Этого достаточно?"
     Alice_03 "Сомневаюсь, если честно. Ты знаешь... Давай попробуем на всякий случай ещё кое-что. Поищи что-нибудь более сексуальное. Ничего не обещаю, но вдруг поможет..."
     Max_01 "Хорошо, я что-нибудь подыщу..."
     $ renpy.end_replay()
     $ added_mem_var('black_linderie')
+    $ alice.gifts.append('black_linderie')
     $ items['b.lingerie'].InShop = False
     $ items['b.lingerie'].have = False
+    if alice.plan_name=='blog':
+        $ dcv['alice.secret'].set_lost(1) # включаем суточный откат, чтобы Алиса не начала блог в белье в этот же день, если блог уже начат
+    $ blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
+    $ renpy.random.shuffle(blog_lingerie)
+    $ cur_blog_lingerie = 'b'
     $ spent_time += 30
     jump Waiting
 

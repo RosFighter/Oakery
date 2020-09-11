@@ -469,6 +469,9 @@ label alice_rest_morning:
 
 
 label alice_rest_evening:
+    if get_format_blog()>0:
+        jump alice_blog_lingerie
+
     scene BG char Alice evening
     $ renpy.show('Alice evening 01'+alice.dress)
     $ persone_button1 = 'Alice evening 01'+alice.dress+'b'
@@ -1329,3 +1332,69 @@ label alice_lisa_shower:
         $ current_room, prev_room = prev_room, current_room
         $ spent_time += 10
         jump Waiting
+
+
+label alice_blog_lingerie:
+    $ renpy.scene()
+    $ renpy.show('location house aliceroom door-'+get_time_of_day())
+    if peeping['alice_blog']:
+        return
+
+    $ peeping['alice_blog'] = 1
+    menu:
+        Max_00 "Обычно в это время Алиса занимается своим блогом, но сейчас её дверь закрыта..."
+        "{i}заглянуть в окно{/i}":
+            $ spent_time += 20
+            scene BG char Alice blog-desk-01
+            $ alice.dress_inf = {'a':'02', 'b':'02ia'}[alice.dress]
+            if renpy.random.randint(1, 2) < 2:
+                # Алиса сидит и спаливает Макса
+                $ renpy.show('Alice blog 01'+alice.dress)
+                $ renpy.show('Max blog 01'+mgg.dress)
+                menu:
+                    Alice_15 "Что?! Макс! Ну-ка иди отсюда, пока в ухо не получил!"
+                    "{i}сбежать{/i}":
+                        pass
+                    "Классно смотришься!":
+                        Alice_16 "Тебе чего надо, Макс?! Я тут занята..."
+                        Max_07 "Да я так, спросить хотел..."
+                        $ renpy.show('Alice blog 02'+alice.dress)
+                        $ renpy.show('Max blog 02'+mgg.dress)
+                        menu:
+                            Alice_13 "Ну..."
+                            "Чем занята?":
+                                Alice_05 "Блогом занимаюсь! И ты это прекрасно знаешь... А если ты тупой, в чём я уверена, то мог бы спросить и через дверь..."
+                                Max_03 "Так не интересно! Ну и как, получается?"
+                                menu:
+                                    Alice_03 "Да, получается! И не мешай, иди уже..."
+                                    "{i}уйти{/i}":
+                                        pass
+                                    "Точно получается?":
+                                        menu:
+                                            Alice_18 "Макс!!! Я тебе сейчас..."
+                                            "{i}сбежать{/i}":
+                                                pass
+                            "Чего дверь-то закрыла?":
+                                Alice_05 "А что, мне с распахнутой дверью в нижнем белье тут сидеть?!"
+                                Max_03 "Конечно, да! Мне вот нравится..."
+                                menu:
+                                    Alice_03 "Ой, Макс, свали уже... Не мешай!"
+                                    "{i}уйти{/i}":
+                                        pass
+                                    "Что делаешь-то?":
+                                        menu:
+                                            Alice_18 "Да ты бессмертный что ли!!! Сейчас я тебе напинаю..."
+                                            "{i}сбежать{/i}":
+                                                pass
+            else:
+                # Алиса позирует стоя и Макс остаётся незамеченным
+                $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
+                $ renpy.show('Max blog 03'+mgg.dress)
+                menu:
+                    Max_05 "{i}( Отлично! Алиса крутит задом перед камерой в одном нижнем белье! Надеюсь, не заметит... Отсюда вид точно лучше, чем через камеру... ){/i}"
+                    "{i}уйти{/i}":
+                        pass
+
+        "{i}уйти{/i}":
+            pass
+    jump Waiting

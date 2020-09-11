@@ -34,7 +34,7 @@ translate english back_shoping_d40343f5:
 translate english back_shoping_8ac1e4ec:
 
     # Alice_01 "А вот у мамы спроси..."
-    Alice_01 "Ask mom..."
+    Alice_01 "Ask Mom..."
 
 # game/events/other.rpy:31
 translate english back_shoping_838f5698:
@@ -52,7 +52,7 @@ translate english back_shoping_ff699a77:
 translate english back_shoping_ec104f51:
 
     # Alice_02 "Ну, теперь остаётся только мечтать. Спасибо тебе мама за чудесный шоппинг... Лизе тоже понравилось, видимо..."
-    Alice_02 "Well, now we can only dream. Thank you mom for a wonderful shop... I think Lisa also liked it..."
+    Alice_02 "Well, now we can only dream. Thank you Mom for a wonderful shopping adventure... I think even Lisa had a good time..."
 
 # game/events/other.rpy:39
 translate english back_shoping_e23a2e06:
@@ -94,7 +94,7 @@ translate english back_shoping_542cfe6c:
 translate english back_shoping_88944574:
 
     # Alice_13 "В общем, бесполезно потратили время. Но Эрик обещал, что на следующий шоппинг купит нам всё, что мы захотим, да, мам?"
-    Alice_13 "So, basically, we wasted our time. But Eric promised he would buy us whatever we want next time, right, mom?"
+    Alice_13 "So, basically, we wasted our time. But Eric promised he would buy us whatever we want next time, right, Mom?"
 
 # game/events/other.rpy:50
 translate english back_shoping_3081eefb:
@@ -408,7 +408,7 @@ translate english MeetingEric_68dfdf17:
 translate english MeetingEric_good_53d048fe:
 
     # Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу." nointeract
-    Ann_07 "I'm glad you've met and are getting along. Now let's to the table. We have breakfast and dinner in the open air on the veranda, come take a look." nointeract
+    Ann_07 "I'm glad you've met and are getting along. Now let's go to the table. We have breakfast and dinner in the open air on the veranda, come take a look." nointeract
 
 # game/events/other.rpy:192
 translate english MeetingEric_middle_6e04cd04:
@@ -522,7 +522,7 @@ translate english Kira_arrival_ce3f4211:
 translate english Kira_arrival_9816e105:
 
     # Max_05 "Супер!"
-    Max_05 "Super!"
+    Max_05 "Great!"
 
 # game/events/other.rpy:243
 translate english Kira_arrival_437eebba:
@@ -672,7 +672,7 @@ translate english Kira_arrival_end_yard_e217d4e7:
 translate english Kira_arrival_end_yard_d90987d8:
 
     # Kira_05 "Так, вы все давайте держите новую одежду, переодевайтесь и встречаемся за столом, где вы завтракаете. Посмотрим, всем ли всё подошло. А тебе, Макс, я ничего не купила. Подумала, что ты можешь и в шортах ходить. Но подарок тебе сделаю, позже решим какой..." nointeract
-    Kira_05 "So, all of you, let's change into your new clothes and meet at the Breakfast table. Let's see if everything works out for everyone. I didn't buy you anything, Max. I thought you could wear shorts. But we can decide on a present later..." nointeract
+    Kira_05 "So, all of you, let's change into your new clothes and meet at the breakfast table. Let's see if everything works out for everyone. I didn't buy you anything, Max. I thought you could wear shorts. But we can decide on a present later..." nointeract
 
 # game/events/other.rpy:306
 translate english Kira_arrival_end_yard_e9e6d4fa:
@@ -892,5 +892,5 @@ translate english strings:
 translate english Kira_arrival_end_yard_370fc726:
 
     # Max_11 "Ну где они все?! Если я начну завтракать без них, то потом все только и будут говорить о моей невоспитанности. Давайте уже быстрее!"
-    Max_11 "Where are they all? If I start eating Breakfast without them, then everyone will talk about my bad manners."
+    Max_11 "Where are they all? If I start eating breakfast without them, then everyone will talk about my bad manners."
 

@@ -420,3 +420,17 @@ translate english strings:
     old "{i}достаточно{/i}"
     new "{i}That's enough{/i}"
 
+# TODO: Translation updated at 2020-09-11 17:25
+
+# game/events/alice_cam.rpy:613
+translate english cam0_alice_blog_lingerie_75ff8725:
+
+    # Max_02 "Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее..."
+    Max_02 ""
+
+# game/events/alice_cam.rpy:615
+translate english cam0_alice_blog_lingerie_470567da:
+
+    # Max_04 "Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!"
+    Max_04 ""
+

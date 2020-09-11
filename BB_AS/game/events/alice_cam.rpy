@@ -510,6 +510,10 @@ label cam0_alice_cooking_dinner:
     return
 
 label cam0_alice_rest_evening:
+    if get_format_blog()>0:
+        call cam0_alice_blog_lingerie
+        return
+
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
         if GetWeekday(day) in [0, 2]:
             $ cam_flag.append('blog_fun' if RandomChance(500) and poss['blog'].stn>1 and 'kira' in chars else 'blog_no_fun')
@@ -589,4 +593,24 @@ label cam1_alice_bath:
     if 'alice_bath1' not in cam_flag:
         $ cam_flag.append('alice_bath1')
         Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+    return
+
+label cam0_alice_blog_lingerie:
+    if not len(cam_pose_blog):
+        # заполняем список поз
+        $ cam_pose_blog = ['01', '02', '03', '04', '05', '06']
+        $ renpy.random.shuffle(cam_pose_blog)
+    $ __cur_pose = cam_poses_manager(alice, cam_pose_blog)
+    $ renpy.show('Alice cams blog '+__cur_pose+alice.dress, at_list=[laptop_screen,])
+    show FG cam-shum-act at laptop_screen
+    if __cur_pose in cam_pose_blog:
+        $ cam_pose_blog.remove(__cur_pose)
+        if not len(cam_pose_blog):
+            $ cam_pose_blog.append('01')
+    if 'alice_blog' not in cam_flag:
+        $ cam_flag.append('alice_blog')
+        if __cur_pose == '01':
+            Max_02 "Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее..."
+        else:
+            Max_04 "Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!"
     return

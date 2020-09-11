@@ -55,7 +55,7 @@ label Waiting:
         call Noon from _call_Noon
     if day != prevday:
         call Midnight from _call_Midnight
-    if prevtime < "04:00" < tm:
+    if prevtime < "04:30" < tm:
         call NewDay from _call_NewDay
 
 
@@ -236,6 +236,9 @@ label NewDay:
     $ cam_flag = []  # обнулим подсматривания через камеры
     $ ann_eric_scene = ''
     $ cam_poses.clear()  # обнулим список поз для камер
+    if 'black_linderie' in alice.gifts:
+        $ cur_blog_lingerie = ''
+        $ cam_pose_blog = []
     return
 
 
@@ -1030,6 +1033,17 @@ label after_load:
                 $ items['sex.ed'].InShop = True
             $ poss['seduction'].stages[14].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
 
+        if current_ver < "0.04.5.11":
+            $ current_ver = "0.04.5.11"
+
+            $ poss['blog'].stages = poss['blog'].stages[:5]
+            $ poss['blog'].stages.extend([
+                    PossStage("interface poss blog ep04", _("Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Правда, увидеть мне ничего не удалось, только Алису уже в этом самом белье, но даже это было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!")),  # 5
+                    PossStage("interface poss blog ep04", _("Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Увидел я не так чтобы много всего, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!")),  # 6
+                ])
+
+            $ peeping['alice_blog'] = 0
+            $ EventsByTime['Wearied'].tm = '03:50'
 
         if current_ver < config.version:
             $ current_ver = config.version

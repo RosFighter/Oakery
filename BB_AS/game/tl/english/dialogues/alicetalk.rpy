@@ -7015,7 +7015,7 @@ translate english talkblog2_1b7a68fc:
 translate english talkblog2_2b784949:
 
     # Max_02 "Как у тебя со скромностью дела?"
-    Max_02 ""
+    Max_02 "You don't have a problem with being shy, do you?"
 
 # game/dialogues/alicetalk.rpy:3024
 translate english talkblog2_7f33d114:
@@ -7219,7 +7219,7 @@ translate english gift_black_lingerie_5cfb418f:
 translate english gift_black_lingerie_2b4ecf90:
 
     # Max_09 "{i}( А посмотреть-то хочется! Быстренько оббежать комнаты и подглядеть в окно? Может заметить... Или пойти в комнату и подглядеть через камеру? Пока дойду и открою свой сайт она уже переоденется... Эх, вот я пролетел! ){/i}"
-    Max_09 ""
+    Max_09 "{i}( I want to see this! Maybe I can quickly run and look out the window? She might notice... Or I can run back to my room and check the camera? But by the time I can get to my laptop she might already be changed... Ah, how did I get so screwed up?! ){/i}"
 
 # game/dialogues/alicetalk.rpy:3098
 translate english gift_black_lingerie_3163cf24:

@@ -524,6 +524,8 @@ init python:
             cur_plan = chars[current_room.cur_char[0]].get_plan()
             # если при данном занятии разрешен диалог и есть тема для разговора
             AvailableActions['talk'].enabled = (cur_plan.enabletalk and len(TalkMenuItems()) > 0)
+            if all([current_room.cur_char[0]=='alice', alice.plan_name=='blog', get_format_blog()]):
+                AvailableActions['talk'].enabled = False
         else:
             AvailableActions['talk'].enabled = False
 
@@ -709,10 +711,26 @@ init python:
                 inf = '04aa'
             elif name in ['read', 'breakfast', 'dinner', 'dishes']:
                 clot = 'casual'
-            elif name in ['resting', 'blog', 'tv']:
+            elif name in ['resting', 'tv']:
                 clot = 'casual'
                 if not ('09:00' <= tm < '20:00'):
                     inf += 'a'
+            elif name == 'blog':
+                if get_format_blog():
+                    # блог в нижнем белье
+                    global cur_blog_lingerie, blog_lingerie
+                    if not cur_blog_lingerie:
+                        cur_blog_lingerie = blog_lingerie.pop(0)
+                        if len(blog_lingerie)==0:
+                            blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
+                            renpy.random.shuffle(blog_lingerie)
+                    # inf = {'a':'02', 'b':'02ia'}[cur_blog_lingerie]
+                    dress = cur_blog_lingerie
+                else:
+                    # блог в обычной одежде
+                    clot = 'casual'
+                    if not ('09:00' <= tm < '20:00'):
+                        inf += 'a'
             elif name == 'sun':
                 dress = 'a'
                 inf   = '03'
@@ -1217,7 +1235,7 @@ init python:
             # персонаж спит, откат в хх:00 и в хх:30
             last_time = h + ':' + ('30' if '00' < m <= '30' else '00')  # округлим последнее время до получаса в большую сторону
             cooldown = TimeDifference(last_time, tm) >= 30
-        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim', 'shower', 'tv2', 'night_tv']:
+        elif char.plan_name in ['read', 'swim', 'sun', 'phone', 'homework', 'cooking', 'resting', 'tv', 'night_swim', 'shower', 'tv2', 'night_tv', 'blog']:
             # откат в хх:00, хх:20 и хх:40
             if '00' <= m < '20':
                 last_time = h + ':00'
@@ -1302,3 +1320,20 @@ init python:
         global view_cam
         cam_number = view_cam[4]+1 if view_cam[4]+1 < len(cam_list) else 0
         view_cam = cam_list[cam_number]
+
+
+    def get_time_of_day():
+        tod = {
+                '06:00' <= tm < '11:00': 'morning',
+                '11:00' <= tm < '19:00': 'day',
+                '19:00' <= tm < '21:00': 'evening',
+                '21:00'<=tm or tm<'06:00': 'night'
+            }[True]
+        return tod
+
+
+    def get_format_blog():
+        if all(['black_linderie' in alice.gifts, GetWeekday(day) in [1, 4], poss['blog'].stn>4, dcv['alice.secret'].done]):
+            return 1  # блог в нижнем белье
+        else:
+            return 0  # обычный блог
