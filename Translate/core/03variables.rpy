@@ -1367,9 +1367,9 @@ translate english strings:
 
     # game/core/03variables.rpy:349
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Правда, увидеть мне ничего не удалось, только Алису уже в этом самом белье, но даже это было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
-    new ""
+    new "I gave Alice a cute set of underwear. She really liked it. However, I didn't get to see anything. She was wearing it before I got a chance to watch, but even that was exciting... But the interesting thing was...she hinted I could try looking for something more sexual!"
 
     # game/core/03variables.rpy:349
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Увидел я не так чтобы много всего, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
-    new ""
+    new "I gave Alice a cute set of underwear. She really liked it. I even got to watch her try it on! That was exciting... But the interesting thing was...she hinted I could try looking for something more sexual!"
 
