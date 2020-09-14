@@ -345,3 +345,15 @@ translate english strings:
     old "Прикупил для тебя немного сладенького!"
     new "I bought you some sweets!"
 
+# TODO: Translation updated at 2020-09-14 22:38
+
+translate english strings:
+
+    # game/core/02init.rpy:75
+    old "Ну как, ты с мамой-то поговорила?"
+    new ""
+
+    # game/core/02init.rpy:75
+    old "Как отдыхается, тётя Кира?"
+    new ""
+

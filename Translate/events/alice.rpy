@@ -1993,7 +1993,7 @@ translate english alice_blog_lingerie_cc7303dd:
 translate english alice_blog_lingerie_1a6896b4:
 
     # Max_05 "{i}( Отлично! Алиса крутит задом перед камерой в одном нижнем белье! Надеюсь, не заметит... Отсюда вид точно лучше, чем через камеру... ){/i}" nointeract
-    Max_05 "{i} (Great! Alice is showing her ass for the webcam in nothing but her underwear! I hope he doesn't notice me... The view is definitely better from here than through my cameras...) {/i}" nointeract
+    Max_05 "{i}( Great! Alice is showing her ass for the webcam in nothing but her underwear! I hope he doesn't notice me... The view is definitely better from here than through my cameras... ){/i}" nointeract
 
 translate english strings:
 
