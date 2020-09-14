@@ -1045,5 +1045,10 @@ label after_load:
             $ peeping['alice_blog'] = 0
             $ EventsByTime['Wearied'].tm = '03:50'
 
+        if current_ver < "0.04.5.12":
+            $ current_ver = "0.04.5.12"
+
+            $ flags['double_mass_alice'] = 0
+
         if current_ver < config.version:
             $ current_ver = config.version

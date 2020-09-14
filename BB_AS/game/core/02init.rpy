@@ -34,8 +34,12 @@ define config.quicksave_slots = 30
 define config.autosave_on_quit = False
 default persistent.grid_vbox = 'grid'
 default persistent.orint = False
+default persistent.request_savename = True
 default number_autosave = 0
 default number_quicksave = 0
+default number_save = 0
+default last_save_name = "(None)"
+
 
 default persistent.memories = {}
 default persistent.mems_var = []
@@ -110,6 +114,8 @@ define talks = {
     'l.nextkiss' : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', dcv['lisa_mentor'].done, poss['seduction'].stn>7])"),
     'l.sex-ed1'  : TalkTheme('lisa', _("Лиза, ты же любишь читать?"), 'lisa_sexbook1', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn<12])"),
     'l.sex-ed2'  : TalkTheme('lisa', _("Лиза, у меня для тебя особая книжка..."), 'lisa_sexbook2', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn>12])"),
+    'kt4'        : TalkTheme('kira', _("Ну как, ты с мамой-то поговорила?"), 'kira_talk4', "all([flags['kira.tv.bj'], dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==3])"),
+    'kt5'        : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==4])"),
     }
 
 

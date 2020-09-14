@@ -405,4 +405,11 @@ translate english strings:
     # game/screens.rpy:1562
     old "Скрыть интерфейс"
     new "Hide interface"
+# TODO: Translation updated at 2020-09-14 22:38
+
+translate english strings:
+
+    # game/screens.rpy:884
+    old "Запрашивать название при сохранении"
+    new ""
 

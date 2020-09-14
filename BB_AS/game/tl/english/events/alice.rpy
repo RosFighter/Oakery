@@ -1889,7 +1889,7 @@ translate english alice_sleep_night_a66d1095:
 translate english alice_sleep_morning_3ed48829:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... Только вот одето на ней больше, чем должно быть!"
-    Max_07 ""
+    Max_07 "Yes! Alice is still asleep, which makes me happy... It means I can get a good look at her cool, almost naked figure... But she's wearing more clothes than she should be!"
 
 # game/events/alice.rpy:190
 translate english alice_sleep_morning_88467c6d:
@@ -1915,109 +1915,109 @@ translate english alice_sleep_morning_333a5d36:
 translate english alice_blog_lingerie_877d3b2a:
 
     # Max_00 "Обычно в это время Алиса занимается своим блогом, но сейчас её дверь закрыта..." nointeract
-    Max_00 "" nointeract
+    Max_00 "This is usually the time when Alice is busy with her blog, but her door is shut..." nointeract
 
 # game/events/alice.rpy:1354
 translate english alice_blog_lingerie_b79543fc:
 
     # Alice_15 "Что?! Макс! Ну-ка иди отсюда, пока в ухо не получил!" nointeract
-    Alice_15 "" nointeract
+    Alice_15 "What? Max! Get out of here right this second!" nointeract
 
 # game/events/alice.rpy:1359
 translate english alice_blog_lingerie_e1665972:
 
     # Alice_16 "Тебе чего надо, Макс?! Я тут занята..."
-    Alice_16 ""
+    Alice_16 "What do you want, Max?! I'm busy here..."
 
 # game/events/alice.rpy:1360
 translate english alice_blog_lingerie_c5313c11:
 
     # Max_07 "Да я так, спросить хотел..."
-    Max_07 ""
+    Max_07 "I just wanted to ask..."
 
 # game/events/alice.rpy:1363
 translate english alice_blog_lingerie_a3a7e95b:
 
     # Alice_13 "Ну..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Well..." nointeract
 
 # game/events/alice.rpy:1366
 translate english alice_blog_lingerie_0f9fbb40:
 
     # Alice_05 "Блогом занимаюсь! И ты это прекрасно знаешь... А если ты тупой, в чём я уверена, то мог бы спросить и через дверь..."
-    Alice_05 ""
+    Alice_05 "Blogging! You already knew that. But if you didn't and you were that stupid, which I'm sure you are, you could just ask from behind the door..."
 
 # game/events/alice.rpy:1367
 translate english alice_blog_lingerie_d782723f:
 
     # Max_03 "Так не интересно! Ну и как, получается?"
-    Max_03 ""
+    Max_03 "Nah, this is way more interesting! How's the blog going anyway?"
 
 # game/events/alice.rpy:1368
 translate english alice_blog_lingerie_147f3ff5:
 
     # Alice_03 "Да, получается! И не мешай, иди уже..." nointeract
-    Alice_03 "" nointeract
+    Alice_03 "It's going fine! Now can you please leave..." nointeract
 
 # game/events/alice.rpy:1373
 translate english alice_blog_lingerie_375acb3f:
 
     # Alice_18 "Макс!!! Я тебе сейчас..." nointeract
-    Alice_18 "" nointeract
+    Alice_18 "Max!!! I'm telling you right now..." nointeract
 
 # game/events/alice.rpy:1378
 translate english alice_blog_lingerie_4cf96db0:
 
     # Alice_05 "А что, мне с распахнутой дверью в нижнем белье тут сидеть?!"
-    Alice_05 ""
+    Alice_05 "What, should I just sit in in my underwear with the door wide open?!"
 
 # game/events/alice.rpy:1379
 translate english alice_blog_lingerie_4b0dd3c8:
 
     # Max_03 "Конечно, да! Мне вот нравится..."
-    Max_03 ""
+    Max_03 "Sure, yeah! I wouldn't mind..."
 
 # game/events/alice.rpy:1380
 translate english alice_blog_lingerie_02dd6c6b:
 
     # Alice_03 "Ой, Макс, свали уже... Не мешай!" nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Oh, just get lost already... Don't disturb me!" nointeract
 
 # game/events/alice.rpy:1385
 translate english alice_blog_lingerie_cc7303dd:
 
     # Alice_18 "Да ты бессмертный что ли!!! Сейчас я тебе напинаю..." nointeract
-    Alice_18 "" nointeract
+    Alice_18 "Do you think you're invincible or something!? I'll kick your ass out of here..." nointeract
 
 # game/events/alice.rpy:1393
 translate english alice_blog_lingerie_1a6896b4:
 
     # Max_05 "{i}( Отлично! Алиса крутит задом перед камерой в одном нижнем белье! Надеюсь, не заметит... Отсюда вид точно лучше, чем через камеру... ){/i}" nointeract
-    Max_05 "" nointeract
+    Max_05 "{i}( Great! Alice is showing her ass for the webcam in nothing but her underwear! I hope he doesn't notice me... The view is definitely better from here than through my cameras... ){/i}" nointeract
 
 translate english strings:
 
     # game/events/alice.rpy:1354
     old "{i}сбежать{/i}"
-    new ""
+    new "{i}escape{/i}"
 
     # game/events/alice.rpy:1354
     old "Классно смотришься!"
-    new ""
+    new "You look great!"
 
     # game/events/alice.rpy:1363
     old "Чем занята?"
-    new ""
+    new "What are you doing?"
 
     # game/events/alice.rpy:1363
     old "Чего дверь-то закрыла?"
-    new ""
+    new "Why did you close the door?"
 
     # game/events/alice.rpy:1368
     old "Точно получается?"
-    new ""
+    new "Are you sure this is working?"
 
     # game/events/alice.rpy:1380
     old "Что делаешь-то?"
-    new ""
+    new "What are you doing?"
 

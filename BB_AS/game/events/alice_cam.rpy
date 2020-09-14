@@ -19,6 +19,8 @@ label cam0_alice_sleep_night:
 
         $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
         Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
+        if not flags['double_mass_alice']:
+            $ flags['double_mass_alice'] = 1
         $ Wait(20)
 
     elif all(['sleep_fun' in cam_flag, 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):

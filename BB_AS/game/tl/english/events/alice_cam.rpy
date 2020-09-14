@@ -426,11 +426,11 @@ translate english strings:
 translate english cam0_alice_blog_lingerie_75ff8725:
 
     # Max_02 "Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее..."
-    Max_02 ""
+    Max_02 "Alice if working on her blog in her underwear! This is much more interesting...."
 
 # game/events/alice_cam.rpy:615
 translate english cam0_alice_blog_lingerie_470567da:
 
     # Max_04 "Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!"
-    Max_04 ""
+    Max_04 "That's right sis, it's all in the posing! And if you got undressed, I'm sure that would make this show even better!"
 

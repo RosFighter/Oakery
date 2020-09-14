@@ -611,6 +611,7 @@ label InitVariable: # стартовая инициация переменных
             'smoke'         : None,
             'warning'       : False,
             'cam_fun_alice' : False,
+            'double_mass_alice' : 0,
             }
         CurChar = 'max'
         CurPoss = ""

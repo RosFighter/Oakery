@@ -573,65 +573,18 @@ style game_menu_label_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#save
 
-# screen save_input(prompt="", default="", length=18):
-#     modal True
-#     frame:
-#         xpos 0.2
-#         ypos 0.2
-#         xsize 0.6
-#         ysize 0.3
-#         window:
-#             has vbox
-#
-#             text prompt:
-#                 xpos 0.35
-#                 ypos 3.7
-#             input default default length length:
-#                 xpos 0.37
-#                 ypos 4.7
-#
-# init -2 python:
-#     class get_save_name(FileSave):
-#         def __init__(self, name, confirm=True, newest=True, page=None, cycle=False):
-#             super(get_save_name,self).__init__(name=name,confirm=confirm,newest=newest,page=page,cycle=cycle)
-#         def __call__(self):
-#             renpy.call_in_new_context("get_save_name")
-#             return super(get_save_name,self).__call__()
-#
-#     def get_path():
-#         rv = "Harem route"
-#         if not entzone >= 4:
-#             if entzone == -1:
-#                 rv = "Harem route"
-#             else:
-#                 if jennadeny == 2:
-#                     rv = "Harem route"
-#                 else:
-#                     rv = "Husband route"
-#         elif d6evirgchoice == 1:
-#             if d7embel == 1:
-#                 rv = "Harem route"
-#             else:
-#                 rv = "Elly route"
-#         if spaghetti_ass_code == 1:
-#             rv = "Forbidden route"
-#         return rv
-#
-# label get_save_name:
-#     show screen save
-#     $ save_name = renpy.call_screen("save_input", prompt="Enter a description for your save file:", default=get_path())
-#     $ renpy.retain_after_load()
-#     return
-
-
-
-screen modal_input:
+screen save_input(prompt="", default="", length=50):
     modal True
-    window style "input_window":
-        has vbox
+    window style "nvl_window":
+        vbox:
+            xalign 0.5
+            yalign 0.2
+            xsize 720
+            spacing 50
+            # ysize 250
 
-        text prompt style "input_prompt"
-        input id "input" style "input_text" length 50
+            text prompt xalign 0.5
+            input default default length length style "input"
 
 init -2 python:
     class get_save_name(FileSave):
@@ -645,7 +598,12 @@ label get_save_name:
     show screen save
     $ NewSaveName()
     if persistent._file_page != "quick":
-        $ save_name = renpy.call_screen("modal_input", prompt=_("Введите описание файла сохранения:"), default="(None)", length=50)
+        if persistent.request_savename:
+            $ save_name = renpy.call_screen("save_input", prompt=_("Введите описание файла сохранения:"), default=last_save_name, length=50)
+            $ last_save_name = save_name
+        else:
+            $ number_save += 1
+            $ save_name = 'Save '+str(number_save)
         $ save_name = save_name + "$@" + str(weekdays[(day+2) % 7][0]) + "$@" + str(tm) + "$@" + str(day) + "$@" + str(number_quicksave) + "$@" + str(number_autosave)
     $ renpy.retain_after_load()
     return
@@ -732,7 +690,8 @@ screen file_slots(title):
 
                             button:
                                 if title == "save":
-                                    action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
+                                    action get_save_name(slot)
+                                    # action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
                                 else:
                                     action FileAction(slot)
 
@@ -885,7 +844,6 @@ screen preferences():
             hbox:
                 box_wrap True
 
-
                 vbox:
                     if renpy.variant("pc"):
                         vbox:
@@ -901,25 +859,30 @@ screen preferences():
                         textbutton _("Правая") action Preference("rollback side", "right")
 
                 vbox:
-
                     vbox:
                         style_prefix "check"
                         label _("Пропуск")
                         textbutton _("Всего текста") action Preference("skip", "toggle")
                         textbutton _("После выборов") action Preference("after choices", "toggle")
                         textbutton _("Переходов") action InvertSelected(Preference("transitions", "toggle"))
-                vbox:
                     vbox:
                         style_prefix "radio"
                         label _("Язык")#| Language")
                         textbutton _("Русский") action Language(None)
                         textbutton _("English") action Language("english")
 
+                vbox:
+                    spacing 20
                     vbox:
                         style_prefix "radio"
                         label _("Дополнительно")
                         textbutton _("Patreon-интро") action SetVariable("persistent.orint", False)
                         textbutton _("Оригинальное интро") action SetVariable("persistent.orint", True)
+                    vbox:
+                        style_prefix "check"
+                        # label _("")
+                        textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
+
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.
 

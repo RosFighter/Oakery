@@ -8181,3 +8181,113 @@ translate english strings:
     old "Ты заработаешь кучу денег! \n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new "You'll make a lot of money! \n{color=[_ch1.col]}(Conviction. Chance: [_ch1. vis]){/color}"
 
+# TODO: Translation updated at 2020-09-14 22:38
+
+# game/dialogues/alicetalk.rpy:638
+translate english advanced_massage1_1f917b5f:
+
+    # Max_08 "{i}( Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух... ){/i}"
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:640
+translate english advanced_massage1_9d9c55f8:
+
+    # Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... У меня ведь красивые ноги, правда?"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:641
+translate english advanced_massage1_bb8e7c16:
+
+    # Max_03 "Очень красивые, сестрёнка! Такие мягкие, но упругие... Массировать их - одно удовольствие! А ещё они у тебя шаловливые..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:642
+translate english advanced_massage1_73f29683:
+
+    # Alice_04 "Они у меня такие... Любят помассировать кое-что большое и твёрдое..." nointeract
+    Alice_04 "" nointeract
+
+# game/dialogues/alicetalk.rpy:650
+translate english advanced_massage1_a8104208:
+
+    # Max_04 "{i}( Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко... ){/i}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/alicetalk.rpy:658
+translate english advanced_massage1_f09cc31b:
+
+    # Alice_09 "Ммм, Макс... Да... Какой же у меня похотливый брат! Как приятно!"
+    Alice_09 ""
+
+# game/dialogues/alicetalk.rpy:659
+translate english advanced_massage1_56670ad9:
+
+    # Max_02 "{i}( Ухх... Алиса начала сама тереться об мои пальцы! Конфеты сделали своё дело и теперь она уже не хочет останавливаться... ){/i}"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:660
+translate english advanced_massage1_924dbedc:
+
+    # Alice_11 "Мне так тепло... там внизу... Кажется, я уже близко... Как хорошо... да..." nointeract
+    Alice_11 "" nointeract
+
+# game/dialogues/alicetalk.rpy:668
+translate english advanced_massage1_b51288bb:
+
+    # Max_05 "{i}( Алиса так жарко и классно трётся об мои пальцы своей киской! Хоть на ней и есть одежда, но я чувствую через неё всё... ){/i}"
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:669
+translate english advanced_massage1_d19db20f:
+
+    # Alice_10 "Ох, чёрт... Макс... я больше не могу! Только не убирай свою руку оттуда... Я уже кончаю... Ахх!"
+    Alice_10 ""
+
+# game/dialogues/alicetalk.rpy:670
+translate english advanced_massage1_aa435d10:
+
+    # Max_06 "{i}( Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила! ){/i}"
+    Max_06 ""
+
+# game/dialogues/alicetalk.rpy:675
+translate english advanced_massage1_95058917:
+
+    # Alice_07 "Да... такой массаж мне нравится... Вот бы всё время так!"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:676
+translate english advanced_massage1_890368bd:
+
+    # Max_01 "Это запросто, Алиса! Наверно, хочешь теперь побыть одна и отдохнуть?"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:677
+translate english advanced_massage1_be1dfa4b:
+
+    # Alice_05 "Ага. Давай, засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж класный, Макс... Спасибо!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:678
+translate english advanced_massage1_ef15cedf:
+
+    # Max_03 "Тебе спасибо..."
+    Max_03 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:573
+    old "{i}массировать её ноги выше{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:642
+    old "{i}массировать ещё выше{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:650
+    old "{i}ласкать её киску через одежду{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:660
+    old "{i}ласкать её киску быстрее{/i}"
+    new ""
+
