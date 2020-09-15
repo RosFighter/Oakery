@@ -411,5 +411,5 @@ translate english strings:
 
     # game/screens.rpy:884
     old "Запрашивать название при сохранении"
-    new ""
+    new "Request a name when saving"
 

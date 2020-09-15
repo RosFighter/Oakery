@@ -351,9 +351,9 @@ translate english strings:
 
     # game/core/02init.rpy:75
     old "Ну как, ты с мамой-то поговорила?"
-    new ""
+    new "So, did you talk to Mom?"
 
     # game/core/02init.rpy:75
     old "Как отдыхается, тётя Кира?"
-    new ""
+    new "How's your vacation going, Aunt Kira?"
 
