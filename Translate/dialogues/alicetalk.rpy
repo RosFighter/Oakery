@@ -8211,7 +8211,7 @@ translate english advanced_massage1_73f29683:
 translate english advanced_massage1_a8104208:
 
     # Max_04 "{i}( Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко... ){/i}" nointeract
-    Max_04 "{i} ( It Looks like Alice is really turned on! She's jerking me off with her legs more and more actively... Why don't I rub her pussy, she's so close...) {/i}" nointeract
+    Max_04 "{i}( It Looks like Alice is really turned on! She's jerking me off with her legs more and more actively... Why don't I rub her pussy, she's so close... ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:658
 translate english advanced_massage1_f09cc31b:
@@ -8223,7 +8223,7 @@ translate english advanced_massage1_f09cc31b:
 translate english advanced_massage1_56670ad9:
 
     # Max_02 "{i}( Ухх... Алиса начала сама тереться об мои пальцы! Конфеты сделали своё дело и теперь она уже не хочет останавливаться... ){/i}"
-    Max_02 "{i}( Alice is rubbing herself against my fingers! The candy has done its job and now she doesn't want to stop...) {/i}"
+    Max_02 "{i}( Alice is rubbing herself against my fingers! The candy has done its job and now she doesn't want to stop... ){/i}"
 
 # game/dialogues/alicetalk.rpy:660
 translate english advanced_massage1_924dbedc:
@@ -8235,7 +8235,7 @@ translate english advanced_massage1_924dbedc:
 translate english advanced_massage1_b51288bb:
 
     # Max_05 "{i}( Алиса так жарко и классно трётся об мои пальцы своей киской! Хоть на ней и есть одежда, но я чувствую через неё всё... ){/i}"
-    Max_05 "{i} ( I can feel the heat from her pussy on my fingers! There's just a thin layer of fabric seperating us, I can feel it all perfectly... ){/i}"
+    Max_05 "{i}( I can feel the heat from her pussy on my fingers! There's just a thin layer of fabric seperating us, I can feel it all perfectly... ){/i}"
 
 # game/dialogues/alicetalk.rpy:669
 translate english advanced_massage1_d19db20f:
