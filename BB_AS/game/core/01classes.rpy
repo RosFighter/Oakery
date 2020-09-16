@@ -627,6 +627,8 @@ init python:
             mgg.pay(self.price)
             self.bought = True
             self.delivery = 1 if GetWeekday(day) != 6 else 2
+            # after_buying(self)
+            purchased_items.append(self)
 
 
         def __repr__(self):

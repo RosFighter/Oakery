@@ -44,6 +44,11 @@ default last_save_name = "(None)"
 default persistent.memories = {}
 default persistent.mems_var = []
 
+default persistent.photos = {}
+default expected_photo = []
+
+default purchased_items = []
+
 define cam_flag = []
 define cam_list = []
 
@@ -116,6 +121,7 @@ define talks = {
     'l.sex-ed2'  : TalkTheme('lisa', _("Лиза, у меня для тебя особая книжка..."), 'lisa_sexbook2', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn>12])"),
     'kt4'        : TalkTheme('kira', _("Ну как, ты с мамой-то поговорила?"), 'kira_talk4', "all([flags['kira.tv.bj'], dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==3])"),
     'kt5'        : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==4])"),
+    'kt6'        : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
     }
 
 

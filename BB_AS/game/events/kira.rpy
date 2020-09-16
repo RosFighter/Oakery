@@ -375,14 +375,33 @@ label kira_night_swim:
 
 
 label kira_sleep_night:
-    # не доступна пользователю
+    scene BG char Kira lounge-night-01
+    $ renpy.show('Kira sleep night '+pose3_4+kira.dress)
+    if peeping['kira_sleep'] != 0:
+        return
+
+    $ peeping['kira_sleep'] = 1
+    menu:
+        Max_04 "Ага! Тётя Кира спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..."
+        "{i}подойти поближе{/i}":
+            scene BG char Kira lounge-night-02
+            $ renpy.show('Kira sleep-closer night '+pose3_4+kira.dress)
+            if pose3_4=='01':
+                Max_02 "Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться..."
+            elif pose3_4=='02':
+                Max_03 "О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути..."
+            else:
+                Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
+        "{i}уйти{/i}":
+            pass
+
     return
 
 
 label kira_sleep_morning:
 
     scene BG char Kira lounge-morning-01
-    $ renpy.show('Kira sleep '+pose3_4+kira.dress)
+    $ renpy.show('Kira sleep morning '+pose3_4+kira.dress)
     if peeping['kira_sleep'] != 0:
         return
 
@@ -391,7 +410,7 @@ label kira_sleep_morning:
         Max_04 "Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..."
         "{i}подойти поближе{/i}":
             scene BG char Kira lounge-morning-02
-            $ renpy.show('Kira sleep-closer '+pose3_4+kira.dress)
+            $ renpy.show('Kira sleep-closer morning '+pose3_4+kira.dress)
             if pose3_4=='01':
                 Max_02 "Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться..."
             elif pose3_4=='02':

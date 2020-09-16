@@ -1337,3 +1337,8 @@ init python:
             return 1  # блог в нижнем белье
         else:
             return 0  # обычный блог
+
+
+    # def after_buying():
+    #     for item in purchased_items:
+    #         print(item.name)

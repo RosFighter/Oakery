@@ -1,7 +1,14 @@
 
+label cam0_kira_sleep_night:
+    $ renpy.show('Kira cams sleep night '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'kira_sleep' not in cam_flag:
+        $ cam_flag.append('kira_sleep')
+        Max_01 "Моя очаровательная тётя Кира спит..."
+    return
+
 label cam0_kira_sleep_morning:
-    $ renpy.show('Kira cams sleep '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
-    # $ renpy.show('Kira cams sleep '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+    $ renpy.show('Kira cams sleep morning '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'kira_sleep' not in cam_flag:
         $ cam_flag.append('kira_sleep')

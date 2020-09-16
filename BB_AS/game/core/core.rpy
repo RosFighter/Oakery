@@ -87,6 +87,9 @@ label Waiting:
     # обновим extra-info для сохранений
     $ NewSaveName()
 
+    if not at_comp:
+        call after_buying
+
     if __name_label != '' and renpy.has_label(__name_label):
         # "запуск [__name_label]"
         # если есть кат-событие - запускаем его
@@ -523,6 +526,18 @@ label cam_background:
 
     return
 
+
+label after_buying:
+    while len(purchased_items) > 0:
+        $ buying_item = purchased_items.pop()
+
+        if buying_item==items['photocamera']:
+            Max_01 "{i}( Так, фотокамеру я заказал, осталось дождаться доставки... ){/i}"
+            Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
+            $ items['nightie2'].InShop = True
+            $ notify_list.append(_("В интернет-магазине доступен новый товар."))
+            
+    return
 
 label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
@@ -1049,6 +1064,12 @@ label after_load:
             $ current_ver = "0.04.5.12"
 
             $ flags['double_mass_alice'] = 0
+
+        if current_ver < "0.04.5.13":
+            $ current_ver = "0.04.5.13"
+
+            $ items['photocamera'] = Item(_("ФОТОАППАРАТ"), _("Профессиональный фотоаппарат с объективом. Не новый, но в отличном состоянии. Подойдёт как для новичков, так и для профессионалов."), 'photocamera', 3, 500)
+            $ items['nightie2']    = Item(_("КОРОТКАЯ ПИКАНТНАЯ СОРОЧКА"), _("Соблазнительная чёрная сорочка выполнена из эластичного тюля. В комплект так же входят трусики-стринги."), 'nightie2', 0, 200, cells=2)
 
         if current_ver < config.version:
             $ current_ver = config.version
