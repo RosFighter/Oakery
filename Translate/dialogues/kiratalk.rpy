@@ -786,13 +786,13 @@ translate english kira_talk4_9a8f75a9:
 translate english kira_talk4_e2118520:
 
     # Max_04 "{i}( Моя тётя снимается в порно! О таком лучше вообще никому не рассказывать. Ох... вот это мне повезло! ){/i}"
-    Max_04 "{i}( My Aunt is doing porn! I should keep this a secret. Oh ... how lucky for me!) {/i}"
+    Max_04 "{i}( My Aunt is doing porn! I should keep this a secret. Oh ... how lucky for me! ){/i}"
 
 # game/dialogues/kiratalk.rpy:307
 translate english kira_talk4_1992b98d:
 
     # Max_19 "{i}( О да, Кира, мы с тобой ещё снимемся в фильме... и даже не в одном. Я сделаю тебя звездой и не только! ){/i}"
-    Max_19 "{i} ( Oh Yes, Kira, you and I will be in a movie... and not just one. I'll make you a star and more! ){/i}"
+    Max_19 "{i}( Oh Yes, Kira, you and I will be in a movie... and not just one. I'll make you a star and more! ){/i}"
 
 # game/dialogues/kiratalk.rpy:308
 translate english kira_talk4_ed62975f:
@@ -828,7 +828,7 @@ translate english kira_talk4_89a335de:
 translate english kira_talk4_b5596ff7:
 
     # Max_07 "{i}( Ну, тётя Кира, ты доприкалываешься! Я ещё реализую свои фантазии с тобой... ){/i}"
-    Max_07 "{i}( Well, Aunt Kira, this is all on you! I'm going to find a way to realize my fantasies... )"
+    Max_07 "{i}( Well, Aunt Kira, this is all on you! I'm going to find a way to realize my fantasies... ){/i}"
 
 # game/dialogues/kiratalk.rpy:330
 translate english kira_talk5_088b1488:
@@ -936,7 +936,7 @@ translate english kira_talk5_45d25fb1:
 translate english kira_talk5_25e093b1:
 
     # Max_04 "{i}( Вот это удача! Порно-звезда будет мне позировать для фотосессии! Я где-то слышал, что порно-модели всегда дают фотографам в качестве оплаты за съёмку... Или нет? Но вдруг! ){/i}"
-    Max_04 "{i} ( What luck! I'm going to do a photo shoot with a pornstar! I've heard stories about cameramen getting all kinds of rewards for their services... maybe I'll get something too? ) {/i}"
+    Max_04 "{i} ( What luck! I'm going to do a photo shoot with a pornstar! I've heard stories about cameramen getting all kinds of rewards for their services... maybe I'll get something too? ){/i}"
 
 # game/dialogues/kiratalk.rpy:366
 translate english kira_talk5_dfeec0a5:
@@ -948,7 +948,7 @@ translate english kira_talk5_dfeec0a5:
 translate english kira_talk5_b53777de:
 
     # Max_09 "{i}( Эх, с тётей Кирой кончать поинтереснее... и намного! ){/i}"
-    Max_09 "{i} ( It's always interesting to see what I can get up to with Aunt Kira! ){/i}"
+    Max_09 "{i}( It's always interesting to see what I can get up to with Aunt Kira! ){/i}"
 
 translate english strings:
 

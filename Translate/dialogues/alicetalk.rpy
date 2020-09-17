@@ -8187,7 +8187,7 @@ translate english strings:
 translate english advanced_massage1_1f917b5f:
 
     # Max_08 "{i}( Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух... ){/i}"
-    Max_08 "{i}( I must not have paid any attention before, but Alice has been hinting that I can massage more than just her feet! I'm a fool... )"
+    Max_08 "{i}( I must not have paid any attention before, but Alice has been hinting that I can massage more than just her feet! I'm a fool... ){/i}"
 
 # game/dialogues/alicetalk.rpy:640
 translate english advanced_massage1_9d9c55f8:
