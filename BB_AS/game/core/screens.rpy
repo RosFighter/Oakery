@@ -84,6 +84,10 @@ init: # трансформации для кнопок
         on hover, selected_hover:
             size (180, 180) alpha 1.0
 
+    transform zoom_out(x, y):
+        size (x, y)
+
+
     transform mark:
         'interface marker red'
         0.5

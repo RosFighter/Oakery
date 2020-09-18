@@ -32,6 +32,12 @@ init python:
         my_scope = eval(set_lbl+'()')
         renpy.call_replay(replay_lbl, my_scope)
 
+    def count_album():
+        rez = 0
+        for album in photo_album:
+            if album[0] in persistent.photos:
+                rez += 1
+        return rez
 
 define mems = [
         [
@@ -68,23 +74,28 @@ define mems = [
         ],
     ]
 
+define photo_album = [
+        ("01-Kira", _("Порно-портфолио для Киры")),
+    ]
+
 define cur_starts = [0, 0, 0, 0, 0]
+define cur_album = None
+define st_gallery = 'mem'
 
 screen menu_gallery():
     tag menu
     style_prefix 'extra'
 
     add 'interface phon'
-    default st = 'mem'
     frame area(150, 95, 350, 50) background None:
         hbox spacing 15:
             textbutton _("ВОСПОМИНАНИЯ"):
-                action SetScreenVariable('st', 'mem')
-                selected st=='mem'
+                action SetVariable('st_gallery', 'mem')
+                selected st_gallery=='mem'
             textbutton _("ФОТОСНИМКИ"):
-                action SetScreenVariable('st', 'art')
-                selected st=='art'
-                sensitive False
+                action SetVariable('st_gallery', 'art')
+                selected st_gallery=='art'
+                # sensitive False
     imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
@@ -92,7 +103,7 @@ screen menu_gallery():
         else:
             at close_zoom_var_small
 
-    if st == 'mem':
+    if st_gallery == 'mem':
         frame area(140, 160, 1640, 850) xalign 0.0 yalign 0.5 background None:
             hbox spacing 5:
                 viewport mousewheel 'change' draggable True id 'vp' area(0, 0, 1630, 840):# scrollbars "vertical":
@@ -128,6 +139,41 @@ screen menu_gallery():
                                                         text _("Воспоминание ещё не открыто") align(0.5, 0.9) color gui.accent_color size 20
 
                 vbar value YScrollValue('vp') style 'extra_vscroll'
+    elif st_gallery == 'art':
+        if count_album()==0:
+            frame area(100, 160, 1720, 850) xalign 0.0 yalign 0.5 background None:
+                text _("В вашей коллекции ещё нет фотоснимков.") size 36 font 'hermes.ttf' color gui.accent_color align(0.5, 0.5)
+        else:
+            hbox spacing 15 pos (50, 160):
+                # список альбомов
+                frame ypos 20 xsize 320 ysize 830 background None:
+                    hbox:
+                        viewport mousewheel 'change' draggable True id 'vp1':
+                            vbox spacing 5:
+                                for id, desc in photo_album:
+                                    if id in persistent.photos:
+                                        if cur_album is None:
+                                            $ cur_album = id
+                                        button background None action SetVariable('cur_album', id) xsize 290 style 'alb_button':
+                                            textbutton desc action SetVariable('cur_album', id) selected cur_album == id style 'album_button'
+
+                        vbar value YScrollValue('vp1') style 'extra_vscroll'
+
+                # таблица текущего альбома
+                frame xsize 1500 ysize 850 background None:
+                    hbox spacing 15:
+                        vpgrid cols 3 spacing 40 mousewheel 'change' draggable True id 'vp':
+                            for photo in persistent.photos[cur_album]:
+                                # frame xysize(600, 338) background None:
+                                # frame xysize(415, 234) background None:
+                                frame xysize(450, 254) background None:
+                                    if photo:
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot '+cur_album+' '+photo action Show('photo_art', current_art='photoshot '+cur_album+' '+photo) at zoom_out(450, 254)
+                                    else:
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot closed-02' action NullAction() at zoom_out(450, 254)
+
+                        vbar value YScrollValue('vp') style 'extra_vscroll'
+
 
 style extra_button_text is default:
     size 28
@@ -137,5 +183,31 @@ style extra_button_text is default:
     selected_color gui.text_color
     insensitive_color gui.insensitive_color
 
+style alb_button:
+    padding(35, 0, 0, 0) xmargin 0 ymargin 10
+    foreground 'interface marker'
+style album_button_text:
+    font 'trebucbd.ttf'
+    yalign .5
+    size 26
+    idle_color gui.accent_color
+    hover_color gui.text_color
+    selected_color gui.text_color
+
+
 style extra_vscroll is vscrollbar:
-    unscrollable 'hide'
+    unscrollable 'hide' #'insensitive'
+
+
+screen photo_art(current_art):
+    frame xfill True yfill True background current_art
+    # imagebutton:
+    #     pos 50, 970
+    #     auto 'interface laptop back %s'
+    #     action Hide('photo_art')
+
+    button pos 50, 970 action Hide('photo_art') background Frame('interface items bg', 10, 10) style "alb_button":
+        textbutton _("Назад") action Hide('photo_art') style 'album_button'        
+
+    key 'K_ESCAPE' action Hide('photo_art')
+    key 'mouseup_3' action Hide('photo_art')

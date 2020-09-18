@@ -1339,6 +1339,11 @@ init python:
             return 0  # обычный блог
 
 
-    # def after_buying():
-    #     for item in purchased_items:
-    #         print(item.name)
+    def append_photo(album, length):
+        rez=[]
+        if album not in persistent.photos:
+            # если коллекция отсутствует, ее нужно создать
+            persistent.photos[album] = [False for x in range(length)]
+
+        for x in expected_photo:
+            persistent.photos[album][int(x)-1] = x

@@ -357,3 +357,15 @@ translate english strings:
     old "Как отдыхается, тётя Кира?"
     new "How's your vacation going, Aunt Kira?"
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+translate english strings:
+
+    # game/core/02init.rpy:82
+    old "Насчёт фотосессии..."
+    new ""
+
+    # game/core/02init.rpy:82
+    old "Понравились фотографии?"
+    new ""
+

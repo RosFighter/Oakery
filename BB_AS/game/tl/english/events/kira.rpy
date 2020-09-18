@@ -2361,3 +2361,29 @@ translate english kira_alice_shower_alt_peepeng_72bf06b5:
     # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
     Max_03 "I'd love to be in between those wet asses... I'd clean them properly!"
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+# game/events/kira.rpy:384
+translate english kira_sleep_night_96d0aaaf:
+
+    # Max_04 "Ага! Тётя Кира спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..." nointeract
+    Max_04 "" nointeract
+
+# game/events/kira.rpy:390
+translate english kira_sleep_night_37f4a3ba:
+
+    # Max_02 "Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться..."
+    Max_02 ""
+
+# game/events/kira.rpy:392
+translate english kira_sleep_night_c1353df2:
+
+    # Max_03 "О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути..."
+    Max_03 ""
+
+# game/events/kira.rpy:394
+translate english kira_sleep_night_e88b00c2:
+
+    # Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
+    Max_05 ""
+

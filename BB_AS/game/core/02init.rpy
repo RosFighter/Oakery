@@ -40,6 +40,8 @@ default number_quicksave = 0
 default number_save = 0
 default last_save_name = "(None)"
 
+default morningwood_var = [1, 2, 3]
+
 
 default persistent.memories = {}
 default persistent.mems_var = []
@@ -80,7 +82,7 @@ define helps = [
 define talks = {
     'blog1'      : TalkTheme('alice', _("Значит, у тебя есть блог?"), 'talkblog1', "talk_var['blog']==1", -1),
     'blog2'      : TalkTheme('alice', _("Слушай, насчёт блога..."), 'talkblog2', "poss['blog'].stn==1", 1),
-    'blog3'      : TalkTheme('alice', _("Насчёт твоего блога... А если не особо раздеваться?"), 'talkblog3', "flags['cam_fun_alice'] and poss['blog'].stn in [2,3]", 1),
+    'blog3'      : TalkTheme('alice', _("Насчёт твоего блога... А если не особо раздеваться?"), 'talkblog3', "all([dcv['alice.secret'].done, flags['cam_fun_alice'], poss['blog'].stn in [2,3]])", 1),
     'lisa_fd'    : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and talk_var['lisa_fd']==0 and talk_var['boy']==0"),
     'lisa_swim'  : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].stn < 0 and lisa.plan_name == 'sun'"),
     'lisas_boy'  : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy', "talk_var['boy']==1", 0, "lisa_boy"),
@@ -122,6 +124,7 @@ define talks = {
     'kt4'        : TalkTheme('kira', _("Ну как, ты с мамой-то поговорила?"), 'kira_talk4', "all([flags['kira.tv.bj'], dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==3])"),
     'kt5'        : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==4])"),
     'kt6'        : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
+    'kt_ft1'     : TalkTheme('kira', _("Понравились фотографии?"), 'kira_about_photo1', "all([dcv['kiratalk'].done, dcv['kiratalk'].stage==6, kira.plan_name=='sun'])"),
     }
 
 

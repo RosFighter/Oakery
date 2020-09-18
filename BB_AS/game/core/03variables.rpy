@@ -465,8 +465,9 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'Eric_afterdinner' : CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day < 12', cut=True),
         'night_of_fun'     : CutEvent('02:30', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
         'need_money'       : CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True),
-        'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, poss['seduction'].stn > 0])", sleep=True, cut=True),
+        'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, 0<poss['seduction'].stn<5])", sleep=True, cut=True),
         'Kira arrival'     : CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([day>=18, GetWeekday(day)==6, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True),
+        'MorningWoodCont2' : CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv['mw'].done, lisa.GetMood()[0]>2])", sleep=True, cut=True),
         }
     # Переменные влияющие на запуск диалогов
     $ talk_var = {
@@ -672,7 +673,7 @@ label alice_init_nightclub:
             Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', enabletalk=False, glow=110),
             Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе'),
             Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе'),
-            Schedule((6,), '3:0', '3:39', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
+            Schedule((6,), '3:0', '3:59', 'bath', 'в ванной после ночного клуба', 'house', 3, 'alice_after_club', enabletalk=False, glow=120),
         )
     return
 
@@ -782,5 +783,14 @@ label AddKira:
     $ peeping['kira_shower'] = 0
 
     $ added_mem_var('kira')
+
+    $ poss['aunt'] = Poss(_("Любимая тётя"), [
+            PossStage("interface poss aunt ep01", _("Итак, к нам приехала тётя Кира, мамина младшая сестра. Конечно, и раньше не были замечены у неё какие-либо комплексы, но сейчас она стала такой... такой... А ещё она увидела мой член, в первый же день! Так неловко. Но и себя тётя Кира показала во всей красе, в таком купальнике, если его можно назвать купальником... Да ещё такие намёки на моего папу. Неужели, они были настолько... знакомы? Нужно выпытать у неё всё, что только возможно.")), #0
+            PossStage("interface poss aunt ep02", _("Я рассказал тёте Кире всё про Эрика, вот как есть, так и сказал. Кажется, она сомневается в моих словах, но пообещала аккуратно всё выяснить и разузнать. Может быть, даже с самим Эриком пообщается...")), #1
+            PossStage("interface poss aunt ep03", _("Вот это да! Моя тётя снимается в порно! Неужели, я живу рядом с порнозвездой? Теперь понятно, почему меня к ней так и тянет. Её просто окружает аура секса! Может быть, ещё больше сблизиться с ней будет не так сложно, как я думал...")), #2
+            PossStage("interface poss aunt ep03", _("Кира предложила мне немного заработать. Нужно лишь её пофотографировать. Вот только для этих целей нужен фотоаппарат. Конечно, вряд-ли она заплатит мне столько, сколько стоит фотоаппарат, зато есть шанс, что мне что-нибудь обломится другое за эту фотосессию...")), #3
+            PossStage("interface poss aunt ep05", _("Фотосессия вышла классная, хоть ничего нового я для себя и не открыл. Ну почти, были интересные моменты, а это намного лучше, чем вообще ничего! Теперь нужно немного подождать, чтобы стало понятно, насколько удачными получились снимки. Может я даже что-то и получу за эту фотосессию...")), #4
+            PossStage("interface poss aunt ep05", _("Итак, снимки вышли удачными и мы с Кирой договорились на новую фотосессию, пока никого не будет дома. Но ещё не ясно, когда мы её проведём... Интересно, что такое Кира хочет достать для съёмок!? Остаётся только ждать...")), #5
+        ])
 
     return

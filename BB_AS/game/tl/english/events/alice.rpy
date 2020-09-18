@@ -2021,3 +2021,17 @@ translate english strings:
     old "Что делаешь-то?"
     new "What are you doing?"
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+# game/events/alice.rpy:1102
+translate english alice_after_club_57eac526:
+
+    # Max_07 "Алиса только что вернулась из клуба и сразу забежала в ванную. Интересно, в каком она состоянии?" nointeract
+    Max_07 "" nointeract
+
+# game/events/alice.rpy:1111
+translate english alice_after_club_9ddb515e:
+
+    # Max_10 "Ладно, ладно..."
+    Max_10 ""
+

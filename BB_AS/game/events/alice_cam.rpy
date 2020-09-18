@@ -541,6 +541,7 @@ label cam0_alice_rest_evening:
         if not flags['cam_fun_alice']:
             $ flags['cam_fun_alice'] = True
             Max_02 "А ведь Алиса прекрасно бы смотрелась в роли тех девчонок, которые развлекают народ тем, что раздеваются на камеру и ласкают себя... Всё прибыльнее, чем эта её косметика! Надо бы ей на это как-то легонько намекнуть..."
+            $ dcv['alice.secret'].set_lost(1)
         $ Wait(20)
 
     elif all([tm >= '21:00', 'alice_blog_fun' in cam_flag, 'alice_end_blog_fun' not in cam_flag]):

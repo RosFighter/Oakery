@@ -305,3 +305,42 @@ image porn_06 09_10:
     'tv porn-06 09'
     6.0
     'tv porn-06 10'
+
+image AnimMaxKira1:
+    'Kira shower-Max 05 00'
+    0.036
+    'Kira shower-Max 05 01'
+    0.036
+    'Kira shower-Max 05 02'
+    0.036
+    'Kira shower-Max 05 03'
+    0.036
+    'Kira shower-Max 05 04'
+    0.036
+    'Kira shower-Max 05 05'
+    0.036
+    'Kira shower-Max 05 06'
+    0.036
+    'Kira shower-Max 05 07'
+    0.036
+    'Kira shower-Max 05 08'
+    0.036
+    'Kira shower-Max 05 09'
+    0.036
+    'Kira shower-Max 05 10'
+    0.036
+    'Kira shower-Max 05 11'
+    0.036
+    'Kira shower-Max 05 12'
+    0.036
+    'Kira shower-Max 05 13'
+    0.036
+    'Kira shower-Max 05 14'
+    0.036
+    'Kira shower-Max 05 15'
+    0.036
+    'Kira shower-Max 05 16'
+    0.036
+    'Kira shower-Max 05 17'
+    0.036
+    repeat

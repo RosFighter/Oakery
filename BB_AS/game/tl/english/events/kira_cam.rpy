@@ -258,3 +258,11 @@ translate english cam1_kira_night_swim_5f08638b:
     # Max_05 "Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!"
     Max_05 "Aunt Kira, skinny dipping? Something tells me she's done this before!"
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+# game/events/kira_cam.rpy:7
+translate english cam0_kira_sleep_night_e86a44fa:
+
+    # Max_01 "Моя очаровательная тётя Кира спит..."
+    Max_01 ""
+

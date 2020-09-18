@@ -80,6 +80,7 @@ label kira_firsttalk:
             $ mgg.cleanness = 100
     $ dcv['kiratalk'].stage += 1
     $ dcv['kiratalk'].set_lost(1)
+    $ poss['aunt'].OpenStage(0)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -201,6 +202,7 @@ label kira_talk3:
 
     $ dcv['kiratalk'].stage += 1
     $ dcv['kiratalk'].set_lost(1)
+    $ poss['aunt'].OpenStage(1)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -241,14 +243,14 @@ label kira_about_kiss:
 
 label kira_talk4:
     # стартовая фраза "Ну как, ты с мамой-то поговорила?"
+    scene BG char Kira sun-talk-01
+    show Kira sun-talk 01
+    show Max sun-talk 01
+
     Kira_10 "Вот так вот! Сразу к делу, да? Нет, Макс, мне не удалось поговорить. Но я обязательно во всём разберусь и выясню что происходит."
     Max_00 "Ну ладно. Значит, ты работаешь горничной?"
     Kira_01 "Ну... Типа того. А что, не похоже?"
     Max_09 "Да странно это всё..."
-
-    scene BG char Kira sun-talk-01
-    show Kira sun-talk 01
-    show Max sun-talk 01
 
     menu:
         Kira_07 "Что же тебя смущает? Я разве не могу работать горничной?"
@@ -302,7 +304,7 @@ label kira_talk4:
 
     Max_04 "{i}( Моя тётя снимается в порно! О таком лучше вообще никому не рассказывать. Ох... вот это мне повезло! ){/i}"
 
-    show other kira-voyeur-shower-00
+    show FG kira-voyeur-shower-00
 
     Max_19 "{i}( О да, Кира, мы с тобой ещё снимемся в фильме...  и даже не в одном. Я сделаю тебя звездой и не только! ){/i}"
     Kira_05 "Что, прости? Я не расслышала последнее..."
@@ -320,6 +322,7 @@ label kira_talk4:
             $ mgg.cleanness = 100
     $ dcv['kiratalk'].stage += 1
     $ dcv['kiratalk'].set_lost(1)
+    $ poss['aunt'].OpenStage(2)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -327,12 +330,12 @@ label kira_talk4:
 
 label kira_talk5:
     # стартовая фраза "Как отдыхается, тётя Кира?"
-    Kira_01 "Прекрасно, Макс! Я, кстати, ждала, что ты подойдёшь. Мне нужна помощь в одном деле и твой энтузиазм и энергия, могут мне помочь с этим."
-    Max_01 "Что за дело? Я слушаю."
-
     scene BG char Kira sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
+
+    Kira_01 "Прекрасно, Макс! Я, кстати, ждала, что ты подойдёшь. Мне нужна помощь в одном деле и твой энтузиазм и энергия, могут мне помочь с этим."
+    Max_01 "Что за дело? Я слушаю."
 
     Kira_03 "Ты как зарабатываешь? У тебя есть какой-то доход или живёшь на карманные деньги, которые тебе мама даёт?"
     Max_07 "Ну, типа того..."
@@ -370,6 +373,7 @@ label kira_talk5:
             Max_09 "{i}( Эх, с тётей Кирой кончать поинтереснее... и намного! ){/i}"
     $ dcv['kiratalk'].stage += 1
     $ dcv['kiratalk'].set_lost(1)
+    $ poss['aunt'].OpenStage(3)
     $ items['photocamera'].InShop = True
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ SetCamsGrow(house[6], 200)
@@ -379,6 +383,9 @@ label kira_talk5:
 
 label kira_talk6:
     # стартовая фраза "Насчёт фотосессии..."
+    scene BG char Kira sun-talk-01
+    show Kira sun-talk 01
+    show Max sun-talk 01
     menu:
         Kira_01 "Ты уже нашёл фотоаппарат?"
         "Ещё нет..." if not items['photocamera'].have:
@@ -400,8 +407,10 @@ label kira_talk6:
 
 
 label first_photoset:
+    $ expected_photo = []
     scene BG char Kira dresses
     show Kira dresses 01
+    with fade
     Kira_01 "А что, отличная идея! Только немного подожди, я переоденусь в свою ночнушку... Она ведь довольно сексуальная, как ты считаешь?"
     Max_02 "Да, но у меня есть идея получше."
 
@@ -524,5 +533,88 @@ label first_photoset:
     Max_07 "{i}( Это было намного лучше, чем ничего! Может, в следующий раз, мне обломится куда больше... ){/i}"
 
     $ SetCamsGrow(house[4], 300)
+    $ poss['aunt'].OpenStage(4)
+    $ items['nightie2'].InShop = False
+    $ items['nightie2'].have = False
+    $ dcv['kiratalk'].stage += 1
+    $ dcv['kiratalk'].set_lost(1)
     $ spent_time += 90
+    $ current_room = house[0]
+    jump Waiting
+
+
+label kira_about_photo1:
+    # стартовая фраза "Понравились фотографии?"
+    scene BG char Kira sun-talk-01
+    show Kira sun-talk 01
+    show Max sun-talk 01
+
+    Kira_04 "А, Макс. Я сразу отправила фотографии своему знакомому и он сказал, что его всё устраивает. Фокус отличный, ракурс тоже. Так что, я бы ещё раз обратилась к тебе за помощью, если ты не против..."
+    Max_01 "В любое время, тётя Кира"
+    Kira_14 "Да в том-то и дело, что не в любое. Нужно выбирать момент, когда никого нет дома. Потому-что, если нас заметят за таким, то точно это будет в последний раз, а мне бы не хотелось этого..."
+    Max_04 "Да, мне тоже... А какой будет следующая фотосессия?"
+
+    show Kira sun-talk 02
+    show Max sun-talk 02
+
+    Kira_05 "Какой ты любопытный, Макс. Вижу, твой дружок уже догадался, что эта фотосессия будет ещё более откровенной..."
+    Max_05 "Ого! А куда ещё откровеннее?"
+    Kira_07 "А вот... Думаю, тебе понравится. А сейчас кое-кому стоит принять холодный... очень холодный душ!"
+    Max_02 "А ты поможешь мне с этим?"
+    Kira_02 "Пожалуй, я ещё немного понежусь на солнышке. Ты и сам прекрасно справишься..."
+    Max_09 "Эх, всё приходится делать самому..."
+
+    scene BG shower-closer
+    show Max shower 04
+    show FG shower-closer
+
+    Max_19 "{i}( Интересно, когда будет следующая фотосессия? Мне уже не терпиться перейти на новый уровень близости с тётей! Вот я бы её хорошенько... ){/i}"
+
+    show FG kira-voyeur-shower-00
+
+    Kira_04 "Не паникуй, Макс, это всего лишь я. Стало как-то слишком жарко... Ты же ведь не против моей компании?"
+    Max_03 "Конечно не против! Ещё спрашиваешь..."
+
+    scene BG shower-closer
+    show Kira shower-Max 01
+    show FG shower-closer
+
+    Kira_07 "Я подумала, фотосессия фотосессией, а за сорочку нужно поблагодарить отдельно. Как считаешь?"
+    Max_05 "Не обязательно, но можно!"
+
+    show Kira shower-Max 03
+
+    Kira_10 "Ты хоть представляешь, Макс, что будет, если нас застукают за таким?"
+    Max_07 "Боюсь даже представить... Может, сделать всё по-быстрому?"
+
+    scene BG char Kira shower-04
+    show Kira shower-Max 04
+
+    Kira_02 "Тогда нам лучше выключить воду... И смотри по сторонам, чтобы никто не увидел, что мы делаем! Мы ведь с тобой такими плохими делишками занимаемся..."
+    Max_02 "Само собой, тётя Кира!"
+
+    scene BG char Kira shower-05
+    show AnimMaxKira1
+
+    menu:
+        Max_20 "{i}( Ох, как она сосёт... Да так глубоко... Похоже, у неё чёрный пояс по минету! Блин, я уже на грани... Вот-вот и кончу... Отпадно! ){/i}"
+        "{i}кончить!{/i}":
+            pass
+    scene BG char Kira shower-06
+    show Kira shower-Max 06
+    Max_22 "{i}( Да... Я кончаю... Прямо ей в рот! О боже... Она так смачно посасывает головку моего члена... Вот это отсос, так отсос! Кажется, это самое офигенное развлечение в мире! ){/i}"
+
+    show Kira shower-Max 07
+    Kira_05 "Ну вот. Понравилось? И ни капли мимо..."
+    Max_05 "Ты потрясающая! Это было классно!"
+    Kira_01 "Я рада, что смогла снять твоё напряжение. А теперь, давай разбегаться, пока нас кто-нибудь не увидел..."
+    Max_04 "Конечно!"
+    $ mgg.cleanness = 100
+    $ SetCamsGrow(house[3], 300)
+    $ poss['aunt'].OpenStage(5)
+    $ dcv['kiratalk'].stage += 1
+    $ dcv['kiratalk'].set_lost(1)
+    $ spent_time += 30
+    $ current_room = house[0]
+    $ append_photo('01-Kira', 12)
     jump Waiting

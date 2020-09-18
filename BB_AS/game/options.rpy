@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.04.5.13"
+define config.version = "0.04.5.15"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -231,6 +231,7 @@ init python:
 
     build.archive('font', 'all')
     build.classify('game/**.ttf', 'font')
+    build.classify('game/**.otf', 'font')
 
     ## Файлы, соответствующие образцам документации, дублируются в приложениях
     ## Mac, чтобы они появлялись и в приложении, и в zip архиве.
