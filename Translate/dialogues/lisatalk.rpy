@@ -7592,3 +7592,305 @@ translate english strings:
     old "Нет, речь не готовил..."
     new "No, I didn't prepare anything..."
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+# game/dialogues/lisatalk.rpy:3268
+translate english MorningWoodCont2_var1_8c16bd79:
+
+    # Lisa_01 "Эй, Макс, просыпайся, а то в школу опоздаешь! Там сегодня важный день, надо на уроке Биологии всем твой стоящий член показать!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3269
+translate english MorningWoodCont2_var1_358c4a02:
+
+    # Max_19 "Нет... Я не хочу в школу... Зови всех сюда, здесь покажем..."
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:3270
+translate english MorningWoodCont2_var1_db1a936b:
+
+    # Lisa_03 "Ага, а учительницу нашу тоже звать?"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3271
+translate english MorningWoodCont2_var1_c08f4c70:
+
+    # Max_19 "О да! Я ей такое покажу, будет знать... как надо..."
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:3272
+translate english MorningWoodCont2_var1_2abb080f:
+
+    # Lisa_02 "Какой же ты озабоченный, Макс!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3275
+translate english MorningWoodCont2_var1_94f51215:
+
+    # Max_07 "А?! Кто озабоченный? Где?!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3276
+translate english MorningWoodCont2_var1_31646b7b:
+
+    # Lisa_01 "Да вот, прямо тут, передо мной валяется один, с торчащим из трусов членом..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3279
+translate english MorningWoodCont2_var1_f25f4e6a:
+
+    # Max_09 "Да я же говорил, это само так происходит... Естественный процесс!"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3280
+translate english MorningWoodCont2_var1_c7ae7591:
+
+    # Lisa_03 "Ну да, очень удобно назвать это естественным процессом!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3281
+translate english MorningWoodCont2_var1_0d61b2ad:
+
+    # Max_07 "Лиза, ты чего меня разбудила-то?!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3282
+translate english MorningWoodCont2_var1_841f7193:
+
+    # Lisa_01 "Да так, просто хотела немного поиздеваться... Случай мне показался подходящим!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3283
+translate english MorningWoodCont2_var1_d3da950b:
+
+    # Max_09 "Может, пойдёшь уже по своим делам куда-нибудь?!"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3284
+translate english MorningWoodCont2_var1_146ba08f:
+
+    # Lisa_02 "Ладно, озабоченный, я пошла в ванную..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3285
+translate english MorningWoodCont2_var1_a7cd4ea6:
+
+    # Max_16 "Ага, на здоровье!"
+    Max_16 ""
+
+# game/dialogues/lisatalk.rpy:3287
+translate english MorningWoodCont2_var1_eb0d01fc:
+
+    # Max_09 "Ты же читала, знаешь, что это естественный процесс!"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3288
+translate english MorningWoodCont2_var1_ec4001bb:
+
+    # Lisa_02 "Да, но это всё равно выглядит забавно, вот я и решила немного поиздеваться, пока ты спросонья..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3289
+translate english MorningWoodCont2_var1_2132c496:
+
+    # Max_07 "Ты меня только из-за этого разбудила что ли?!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3290
+translate english MorningWoodCont2_var1_a8d7114a:
+
+    # Lisa_03 "Ещё сказать, что я пошла в ванную..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3291
+translate english MorningWoodCont2_var1_6b0a393c:
+
+    # Max_16 "Ага, на здоровье! Давай, иди уже..."
+    Max_16 ""
+
+# game/dialogues/lisatalk.rpy:3298
+translate english MorningWoodCont2_var2_aa7578ba:
+
+    # Lisa_01 "Эй, Макс, а бывает, что я тебе снюсь?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3299
+translate english MorningWoodCont2_var2_8fb286a1:
+
+    # Max_19 "Ага... Бывает..."
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:3300
+translate english MorningWoodCont2_var2_7f7f7ffd:
+
+    # Lisa_02 "А что мы делаем?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3301
+translate english MorningWoodCont2_var2_eac59ca3:
+
+    # Max_19 "Да я тебя там... по всякому... и так, и этак..."
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:3302
+translate english MorningWoodCont2_var2_69ba8618:
+
+    # Lisa_11 "Не поняла! Что это там и так, и этак ты делаешь?!"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:3305
+translate english MorningWoodCont2_var2_7d193d82:
+
+    # Max_07 "А?! Чего делаю? Кому?!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3306
+translate english MorningWoodCont2_var2_5aed04d8:
+
+    # Lisa_12 "Мне! Чего это ты там со мной во сне делаешь, признавайся?!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:3307
+translate english MorningWoodCont2_var2_e60ce384:
+
+    # Max_08 "Э-э-э... Да так, во всякие Монополии уделываю тебя только так... В Пазлы..."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:3308
+translate english MorningWoodCont2_var2_8417bd7c:
+
+    # Lisa_02 "Чего?! Как можно уделать кого-то в Пазлы?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3309
+translate english MorningWoodCont2_var2_d4a51097:
+
+    # Max_09 "Вот не мешала бы спать, я бы узнал, как..."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3310
+translate english MorningWoodCont2_var2_62d996ad:
+
+    # Lisa_03 "Заливаешь, Макс! Если бы у тебя член так не стоял, я бы может и поверила в твои оправдания..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3311
+translate english MorningWoodCont2_var2_df170a9a:
+
+    # Max_01 "А будешь так на него пялиться, в школу опоздаешь!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3314
+translate english MorningWoodCont2_var2_b812ded9:
+
+    # Lisa_11 "Я не пялюсь! Не опоздаю... хотя могу... Я тогда побежала в ванную..."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:3315
+translate english MorningWoodCont2_var2_9998603c:
+
+    # Max_02 "Как это!? А ещё поглазеть на мой член? Ой, а может ты извращенка!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3316
+translate english MorningWoodCont2_var2_402b9fe1:
+
+    # Lisa_10 "Чего!? Я не извращенка! Сам такой. Понял! Вот, всё."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:3318
+translate english MorningWoodCont2_var2_92d4cea4:
+
+    # Lisa_01 "Я не пялюсь и сегодня нет уроков! Выходные же!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3319
+translate english MorningWoodCont2_var2_c8f2f573:
+
+    # Max_02 "Нет, ты пялишься... Да ты извращенка!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3320
+translate english MorningWoodCont2_var2_04f38e1a:
+
+    # Lisa_10 "Чего!? Я не извращенка! Сам такой. Вот. А я пошла в ванную..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:3321
+translate english MorningWoodCont2_var2_8137b9e5:
+
+    # Max_01 "Вот и правильно."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3328
+translate english MorningWoodCont2_var3_3a9d9fc0:
+
+    # Lisa_01 "Эй, Макс, спишь?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3329
+translate english MorningWoodCont2_var3_7787cdef:
+
+    # Max_19 "Сплю..."
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:3330
+translate english MorningWoodCont2_var3_9e5c6c3e:
+
+    # Lisa_02 "И как спится?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3331
+translate english MorningWoodCont2_var3_cbecbf92:
+
+    # Max_19 "Ты что хотела?"
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:3332
+translate english MorningWoodCont2_var3_10c7b1bc:
+
+    # Lisa_03 "Да так... У тебя член опять стоит..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3335
+translate english MorningWoodCont2_var3_c0e65314:
+
+    # Max_07 "Ну и пусть стоит, надо так значит! Тебе он что, мешает что ли, из комнаты не даёт выйти?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3336
+translate english MorningWoodCont2_var3_5ac7b7a2:
+
+    # Lisa_02 "Ну, да... мешает... Когда ещё удастся подглядеть за братом в таком... смешном состоянии."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3337
+translate english MorningWoodCont2_var3_6a4f3453:
+
+    # Max_03 "Так ты подглядывать любишь у нас! Какая ты плохая девочка!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3338
+translate english MorningWoodCont2_var3_047a8598:
+
+    # Lisa_11 "Ой, нет... Я не в этом смысле..."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:3339
+translate english MorningWoodCont2_var3_7e24432a:
+
+    # Max_02 "Да всё с тобой понятно!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3340
+translate english MorningWoodCont2_var3_6f083506:
+
+    # Lisa_10 "Я всё, мне пора в ванную..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:3341
+translate english MorningWoodCont2_var3_9aba62c0:
+
+    # Max_01 "Ага, как удобно."
+    Max_01 ""
+

@@ -118,3 +118,15 @@ translate english strings:
     old "Кажется, мы что-то забыли"
     new "I think we forgot something"
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+translate english strings:
+
+    # game/extra/extra.rpy:77
+    old "Порно-портфолио для Киры"
+    new ""
+
+    # game/extra/extra.rpy:145
+    old "В вашей коллекции ещё нет фотоснимков."
+    new ""
+

@@ -95,3 +95,23 @@ translate english cam_after_waiting_c283f316_1:
     # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
     Max_09 "Lisa's in the room... and the verandah is occupied! I shouldn't risk viewing the cameras now."
 
+# TODO: Translation updated at 2020-09-19 00:16
+
+# game/core/core.rpy:535
+translate english after_buying_5c93d1fb:
+
+    # Max_01 "{i}( Так, фотокамеру я заказал, осталось дождаться доставки... ){/i}"
+    Max_01 ""
+
+# game/core/core.rpy:536
+translate english after_buying_7c1c8dcc:
+
+    # Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
+    Max_07 ""
+
+translate english strings:
+
+    # game/core/core.rpy:537
+    old "А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!"
+    new ""
+
