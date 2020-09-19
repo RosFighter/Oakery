@@ -363,9 +363,9 @@ translate english strings:
 
     # game/core/02init.rpy:82
     old "Насчёт фотосессии..."
-    new ""
+    new "About the photo shoot..."
 
     # game/core/02init.rpy:82
     old "Понравились фотографии?"
-    new ""
+    new "Did you like the photos?"
 
