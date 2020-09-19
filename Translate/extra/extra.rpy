@@ -130,3 +130,19 @@ translate english strings:
     old "В вашей коллекции ещё нет фотоснимков."
     new ""
 
+# TODO: Translation updated at 2020-09-20 00:37
+
+translate english strings:
+
+    # game/extra/extra.rpy:233
+    old "Предыдущий снимок"
+    new ""
+
+    # game/extra/extra.rpy:239
+    old "Вернуться в коллекцию"
+    new ""
+
+    # game/extra/extra.rpy:244
+    old "Следующий снимок"
+    new ""
+

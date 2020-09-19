@@ -101,13 +101,13 @@ translate english cam_after_waiting_c283f316_1:
 translate english after_buying_5c93d1fb:
 
     # Max_01 "{i}( Так, фотокамеру я заказал, осталось дождаться доставки... ){/i}"
-    Max_01 "{i}( So, I ordered the camera, now I just have to wait for delivery...) {/i}"
+    Max_01 "{i}( So, I ordered the camera, now I just have to wait for delivery... ){/i}"
 
 # game/core/core.rpy:536
 translate english after_buying_7c1c8dcc:
 
     # Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
-    Max_07 "{i}(I wonder what Aunt Kira wants to be photographed in? She's building her porn portfolio... So maybe I should buy something sexy for her? For example, a more revealing nightgown! That'd be a win for me...){/i}"
+    Max_07 "{i}( I wonder what Aunt Kira wants to be photographed in? She's building her porn portfolio... So maybe I should buy something sexy for her? For example, a more revealing nightgown! That'd be a win for me... ){/i}"
 
 translate english strings:
 
