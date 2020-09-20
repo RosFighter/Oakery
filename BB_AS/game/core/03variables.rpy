@@ -779,8 +779,12 @@ label AddKira:
     $ peeping['kira_bath'] = 0
     $ talk_var['kira.porn'] = 0
     $ talk_var['kira.bath.mass'] = 0
+    $ flags['promise.cuni.kira'] = False  # Макс получил дрочку в бассене и пообещал куни
+    $ flags['hj_in_pool'] = 0  # не было дрочек в бассейне
     $ flags['hint.cources'] = False
     $ peeping['kira_shower'] = 0
+
+    $ dcv['kiratalkcuni'] = Daily(done=True, enabled=True)
 
     $ added_mem_var('kira')
 

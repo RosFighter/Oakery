@@ -39,6 +39,20 @@ init python:
                 rez += 1
         return rez
 
+    def prev_shot(id_key, shot):
+        rez = False
+        while not rez and shot>0:
+            shot -= 1
+            rez = persistent.photos[id_key][shot]
+        return rez
+
+    def next_shot(id_key, shot):
+        rez = False
+        while not rez and shot+1<len(persistent.photos[id_key]):
+            shot += 1
+            rez = persistent.photos[id_key][shot]
+        return rez
+
 define mems = [
         [
             Memories('gift_swimsuit.swimsuit_show', 'lisa-newsuit-01', 'set_gift_swimsuit', _("Новый купальник Лизы")),
@@ -81,6 +95,9 @@ define photo_album = [
 define cur_starts = [0, 0, 0, 0, 0]
 define cur_album = None
 define st_gallery = 'mem'
+
+define next_sh = False
+define prev_sh = False
 
 screen menu_gallery():
     tag menu
@@ -168,12 +185,11 @@ screen menu_gallery():
                                 # frame xysize(415, 234) background None:
                                 frame xysize(450, 254) background None:
                                     if photo:
-                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot '+cur_album+' '+photo action Show('photo_art', current_art='photoshot '+cur_album+' '+photo) at zoom_out(450, 254)
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot '+cur_album+' '+photo action Show('photo_art', cur_alb=cur_album, photo=photo) at zoom_out(450, 254)
                                     else:
-                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot closed-02' action NullAction() at zoom_out(450, 254)
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot closed' action NullAction() at zoom_out(450, 254)
 
                         vbar value YScrollValue('vp') style 'extra_vscroll'
-
 
 style extra_button_text is default:
     size 28
@@ -184,8 +200,9 @@ style extra_button_text is default:
     insensitive_color gui.insensitive_color
 
 style alb_button:
-    padding(35, 0, 0, 0) xmargin 0 ymargin 10
+    padding(30, 0, 5, 0) xmargin 0 ymargin 5
     foreground 'interface marker'
+
 style album_button_text:
     font 'trebucbd.ttf'
     yalign .5
@@ -194,20 +211,39 @@ style album_button_text:
     hover_color gui.text_color
     selected_color gui.text_color
 
-
 style extra_vscroll is vscrollbar:
     unscrollable 'hide' #'insensitive'
 
 
-screen photo_art(current_art):
-    frame xfill True yfill True background current_art
-    # imagebutton:
-    #     pos 50, 970
-    #     auto 'interface laptop back %s'
-    #     action Hide('photo_art')
+screen photo_art(cur_alb, photo):
+    $ photo_list = []
+    for i in persistent.photos[cur_alb]:
+        if i:
+            $ photo_list.append(i)
+    default cur_photo = photo
+    frame xfill True yfill True background 'photoshot '+cur_alb+' '+cur_photo
+    # text str(prev_shot(cur_alb, int(cur_photo)-1))+' / '+cur_photo+' / '+str(next_shot(cur_alb, int(cur_photo)-1))
+    hbox:
+        ypos 970
+        xalign 0.5
+        spacing 30
+        button action NullAction() background Frame('interface items-shop bg', 10, 10):
+            xpadding 5 xmargin 0 ymargin 0
+            button action NullAction() style "alb_button":
+                textbutton _("Предыдущий снимок") style 'album_button':
+                    sensitive cur_photo > min(photo_list)
+                    action SetScreenVariable('cur_photo', prev_shot(cur_alb, int(cur_photo)-1))
+        button action Hide('photo_art') background Frame('interface items-shop bg', 10, 10):
+            xpadding 5 xmargin 0 ymargin 0
+            button action Hide('photo_art') style "alb_button":
+                textbutton _("Вернуться в коллекцию") action Hide('photo_art') style 'album_button'
 
-    button pos 50, 970 action Hide('photo_art') background Frame('interface items bg', 10, 10) style "alb_button":
-        textbutton _("Назад") action Hide('photo_art') style 'album_button'        
+        button action NullAction() background Frame('interface items-shop bg', 10, 10):
+            xpadding 5 xmargin 0 ymargin 0
+            button action NullAction() style "alb_button":
+                textbutton _("Следующий снимок") style 'album_button':
+                    sensitive cur_photo < max(photo_list)
+                    action SetScreenVariable('cur_photo', next_shot(cur_alb, int(cur_photo)-1))
 
     key 'K_ESCAPE' action Hide('photo_art')
     key 'mouseup_3' action Hide('photo_art')

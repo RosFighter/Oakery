@@ -2027,10 +2027,36 @@ translate english strings:
 translate english alice_after_club_57eac526:
 
     # Max_07 "Алиса только что вернулась из клуба и сразу забежала в ванную. Интересно, в каком она состоянии?" nointeract
-    Max_07 "" nointeract
+    Max_07 "Alice just got back from the club and immediately ran into the bathroom. I wonder what condition she's in?" nointeract
 
 # game/events/alice.rpy:1111
 translate english alice_after_club_9ddb515e:
+
+    # Max_10 "Ладно, ладно..."
+    Max_10 "Okay, okay..."
+
+# TODO: Translation updated at 2020-09-21 01:39
+
+# game/events/alice.rpy:1103
+translate english alice_after_club_5ec498e0:
+
+    # Max_07 "После клуба Алиса сразу пошла в ванную. Интересно, в каком она состоянии?" nointeract
+    Max_07 "" nointeract
+
+# game/events/alice.rpy:1110
+translate english alice_after_club_75acb86d:
+
+    # Alice "{b}Алиса:{/b} Кому там не спится? Я ванну принимаю..." nointeract
+    Alice "" nointeract
+
+# game/events/alice.rpy:1124
+translate english alice_after_club_74fd8c7a_1:
+
+    # Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
+    Alice ""
+
+# game/events/alice.rpy:1125
+translate english alice_after_club_9ddb515e_1:
 
     # Max_10 "Ладно, ладно..."
     Max_10 ""

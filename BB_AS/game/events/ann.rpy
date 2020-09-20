@@ -424,7 +424,7 @@ label ann_dressed_shop:
         "{i}постучаться{/i}":
             menu:
                 Ann "{b}Анна:{/b} Кто там?"
-                "Это я, Макс. Можно войти?"  if not items['nightie'].have:
+                "Это я, Макс. Можно войти?" if not items['nightie'].have:
                     Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
                     Max_00 "Хорошо, мам."
                 "Это я, Макс. Можно войти? У меня для тебя кое-что есть." if items['nightie'].have:
@@ -433,7 +433,8 @@ label ann_dressed_shop:
                     $ __open = False
                     jump .gift
                 "{i}уйти{/i}":
-                    jump .end
+                    pass
+            jump .end
         "{i}открыть дверь{/i}":
             scene BG char Ann morning
             $ __list = ['01', '02', '03', '04']

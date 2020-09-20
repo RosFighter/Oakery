@@ -1103,5 +1103,13 @@ label after_load:
 
             $ EventsByTime['MorningWoodCont'].variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, 0<poss['seduction'].stn<5])"
             $ EventsByTime['MorningWoodCont2'] = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv['mw'].done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
+
+        if current_ver < "0.04.5.16":
+            $ current_ver = "0.04.5.16"
+
+            $ flags['promise.cuni.kira'] = False  # Макс получил дрочку в бассене и пообещал куни
+            $ flags['hj_in_pool'] = 0  # не было дрочек в бассейне
+            $ dcv['kiratalkcuni'] = Daily(done=True, enabled=True)
+
         if current_ver < config.version:
             $ current_ver = config.version

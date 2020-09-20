@@ -12,19 +12,19 @@ translate english strings:
 
     # game/core/03variables.rpy:6
     old "КОМНАТА\nАЛИСЫ"
-    new "ALICES\nROOM"
+    new "ALICE'S\nROOM"
 
     # game/core/03variables.rpy:6
     old "КОМНАТА АЛИСЫ"
-    new "ALICES ROOM"
+    new "ALICE'S ROOM"
 
     # game/core/03variables.rpy:6
     old "КОМНАТА\nАННЫ"
-    new "ANNS\nROOM"
+    new "ANN'S\nROOM"
 
     # game/core/03variables.rpy:6
     old "КОМНАТА АННЫ"
-    new "ANNS ROOM"
+    new "ANN'S ROOM"
 
     # game/core/03variables.rpy:6
     old "ВАННАЯ\nКОМНАТА"
@@ -1379,45 +1379,45 @@ translate english strings:
 
     # game/core/03variables.rpy:267
     old "ФОТОАППАРАТ"
-    new ""
+    new "CAMERA"
 
     # game/core/03variables.rpy:267
     old "Профессиональный фотоаппарат с объективом. Не новый, но в отличном состоянии. Подойдёт как для новичков, так и для профессионалов."
-    new ""
+    new "Professional camera with a lens. Not new, but in excellent condition. Suitable for both beginners and professionals."
 
     # game/core/03variables.rpy:267
     old "КОРОТКАЯ ПИКАНТНАЯ СОРОЧКА"
-    new ""
+    new "SHORT CHEMISE"
 
     # game/core/03variables.rpy:267
     old "Соблазнительная чёрная сорочка выполнена из эластичного тюля. В комплект так же входят трусики-стринги."
-    new ""
+    new "The seductive black shirt is made of elastic tulle. The set also includes string panties."
 
     # game/core/03variables.rpy:787
     old "Любимая тётя"
-    new ""
+    new "Favourite Aunt"
 
     # game/core/03variables.rpy:787
     old "Итак, к нам приехала тётя Кира, мамина младшая сестра. Конечно, и раньше не были замечены у неё какие-либо комплексы, но сейчас она стала такой... такой... А ещё она увидела мой член, в первый же день! Так неловко. Но и себя тётя Кира показала во всей красе, в таком купальнике, если его можно назвать купальником... Да ещё такие намёки на моего папу. Неужели, они были настолько... знакомы? Нужно выпытать у неё всё, что только возможно."
-    new ""
+    new "Aunt Kira, Mom's younger sister, has come to visit us. I had no idea she'd be so promiscuous...she even saw my cock on her first day! How embarrassing. Having her around when she wears that swimsuit...if you could even call it a swimsuit, keeps giving me uncontrollable urges. She even said something about my dad, could she have been close with him? I need to find out everything I can."
 
     # game/core/03variables.rpy:787
     old "Я рассказал тёте Кире всё про Эрика, вот как есть, так и сказал. Кажется, она сомневается в моих словах, но пообещала аккуратно всё выяснить и разузнать. Может быть, даже с самим Эриком пообщается..."
-    new ""
+    new "I told Aunt Kira everything about Eric. She seems to doubt my words, but promised to investigate, and maybe even talk to him herself..."
 
     # game/core/03variables.rpy:787
     old "Вот это да! Моя тётя снимается в порно! Неужели, я живу рядом с порнозвездой? Теперь понятно, почему меня к ней так и тянет. Её просто окружает аура секса! Может быть, ещё больше сблизиться с ней будет не так сложно, как я думал..."
-    new ""
+    new "My Aunt is doing porn! Do I seriously live with a porn star? No wonder I'm so drawn to her. She's completely addicted to sex! Maybe getting closer to her won't be as hard as I thought..."
 
     # game/core/03variables.rpy:787
     old "Кира предложила мне немного заработать. Нужно лишь её пофотографировать. Вот только для этих целей нужен фотоаппарат. Конечно, вряд-ли она заплатит мне столько, сколько стоит фотоаппарат, зато есть шанс, что мне что-нибудь обломится другое за эту фотосессию..."
-    new ""
+    new "Kira came up with a way for me to earn a little extra pocket money by taking some pictures for her. I'll just need to get a camera. Of course, she won't help me buy one, but there's a chance I might get compensated in other ways..."
 
     # game/core/03variables.rpy:787
     old "Фотосессия вышла классная, хоть ничего нового я для себя и не открыл. Ну почти, были интересные моменты, а это намного лучше, чем вообще ничего! Теперь нужно немного подождать, чтобы стало понятно, насколько удачными получились снимки. Может я даже что-то и получу за эту фотосессию..."
-    new ""
+    new "The photo shoot went well, but I didn't learn anything new. Luckily there were a few interesting moments that made it worthwhile! Now I'll have to wait to see how the images turned out. Hopefully I can get something good out of this..."
 
     # game/core/03variables.rpy:787
     old "Итак, снимки вышли удачными и мы с Кирой договорились на новую фотосессию, пока никого не будет дома. Но ещё не ясно, когда мы её проведём... Интересно, что такое Кира хочет достать для съёмок!? Остаётся только ждать..."
-    new ""
+    new "The pictures came out well and Kira wants to schedule another photo shoot. This time, while no one else is home, but I'm not sure when we'll hold it. I wonder what she has in mind? All I have to do it wait..."
 

@@ -124,9 +124,25 @@ translate english strings:
 
     # game/extra/extra.rpy:77
     old "Порно-портфолио для Киры"
-    new ""
+    new "Kira's photoshoot"
 
     # game/extra/extra.rpy:145
     old "В вашей коллекции ещё нет фотоснимков."
-    new ""
+    new "There are no photos in your collection yet."
+
+# TODO: Translation updated at 2020-09-20 00:37
+
+translate english strings:
+
+    # game/extra/extra.rpy:233
+    old "Предыдущий снимок"
+    new "Previous snapshot"
+
+    # game/extra/extra.rpy:239
+    old "Вернуться в коллекцию"
+    new "Return to collection"
+
+    # game/extra/extra.rpy:244
+    old "Следующий снимок"
+    new "Next picture"
 

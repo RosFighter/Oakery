@@ -617,3 +617,37 @@ label cam0_alice_blog_lingerie:
         else:
             Max_04 "Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!"
     return
+
+label cam0_alice_after_club:
+    if tm[-2:] > '30':
+        # вытирается
+        show Alice cams bath 05 at laptop_screen
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath0_st1' not in cam_flag:
+            $ cam_flag.append('alice_bath0_st1')
+            Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
+    else:
+        $ renpy.show('Alice cams bath '+cam_poses_manager(alice, ['02', '03', '04']), at_list=[laptop_screen,])
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath0_st0' not in cam_flag:
+            $ cam_flag.append('alice_bath0_st0')
+            Max_05 "Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение..."
+    return
+
+label cam1_alice_after_club:
+    if tm < '20':
+        # Алиса перед зеркалом
+        $ __r1 = 'b' if alice.nopants else 'a'
+        $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
+
+        $ renpy.show('Alice cams bath-mirror '+cam_poses_manager(alice, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
+        if 'alice_bath_mirror' not in cam_flag:
+            $ cam_flag.append('alice_bath_mirror')
+            Max_01 "Алиса вернулась из клуба."
+    else:
+        show FG cam-shum-noact at laptop_screen
+        if 'alice_bath1' not in cam_flag:
+            $ cam_flag.append('alice_bath1')
+            Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+    return

@@ -3343,8 +3343,7 @@ label MorningWoodCont2:
         jump .end
 
     label .end:
-        $ dcv['mw'].set_lost(1)
-        # $ dcv['mw'].set_lost(renpy.random.randint(5, 10))
+        $ dcv['mw'].set_lost(renpy.random.randint(5, 10))
         $ spent_time += 30
         jump Waiting
 

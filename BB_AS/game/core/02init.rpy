@@ -125,6 +125,7 @@ define talks = {
     'kt5'        : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==4])"),
     'kt6'        : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
     'kt_ft1'     : TalkTheme('kira', _("Понравились фотографии?"), 'kira_about_photo1', "all([dcv['kiratalk'].done, dcv['kiratalk'].stage==6, kira.plan_name=='sun'])"),
+    'kt_cuni'    : TalkTheme('kira', _("Не злишься на меня, тётя Кира?"), 'kira_about_cuni', "all([dcv['kiratalkcuni'].done, flags['promise.cuni.kira'], kira.plan_name=='sun'])"),
     }
 
 

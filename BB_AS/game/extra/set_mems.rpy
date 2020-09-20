@@ -255,7 +255,7 @@ init python:
         tk.dress = 'a'
         my_scope = {
             'talk_var' : {'kira.porn' : 2, 'kira.bath.mass':True},
-            'flags'    : {'kira.tv.bj' : False},
+            'flags'    : {'kira.tv.bj' : False, 'promise.cuni.kira':renpy.random.choice([True, False])},
             'kira'     : tk,
             }
         return my_scope
@@ -269,7 +269,7 @@ init python:
         mg.sex = 7
         my_scope = {
             'talk_var' : {'kira.porn' : 2, 'kira.bath.mass':True},
-            'flags'    : {'kira.tv.bj' : True},
+            'flags'    : {'kira.tv.bj' : True, 'hj_in_pool':2},
             'kira'     : tk,
             'mgg'      : mg,
             }
@@ -306,7 +306,7 @@ init python:
         mg.sex = 7
 
         my_scope = {
-            'flags'    : {'kira.bath.fj': True, 'kira.tv.bj': renpy.random.choice([True, False])},
+            'flags'    : {'kira.bath.fj': True, 'kira.tv.bj': renpy.random.choice([True, False]), 'hj_in_pool':renpy.random.randint(0, 2)},
             'mgg'      : mg,
             }
         return my_scope
@@ -327,7 +327,7 @@ init python:
 
         my_scope = {
             'talk_var' : {'kira.tv.touch': 1, 'teachkiss':2},
-            'flags'    : {'kira.tv.bj': False},
+            'flags'    : {'kira.tv.bj': False, 'promise.cuni.kira':renpy.random.choice([True, False]), 'hj_in_pool':renpy.random.choice([1, 2])},
             'memes'    : 1,
             'mgg'      : mg,
             }
@@ -341,7 +341,7 @@ init python:
 
         my_scope = {
             'talk_var' : {'kira.tv.touch': 2, 'teachkiss':2},
-            'flags'    : {'kira.tv.bj': True},
+            'flags'    : {'kira.tv.bj': True, 'promise.cuni.kira':renpy.random.choice([True, False]), 'hj_in_pool':renpy.random.choice([1, 2])},
             'memes'    : 2,
             'mgg'      : mg,
             }

@@ -363,9 +363,17 @@ translate english strings:
 
     # game/core/02init.rpy:82
     old "Насчёт фотосессии..."
-    new ""
+    new "About the photo shoot..."
 
     # game/core/02init.rpy:82
     old "Понравились фотографии?"
+    new "Did you like the photos?"
+
+# TODO: Translation updated at 2020-09-21 01:39
+
+translate english strings:
+
+    # game/core/02init.rpy:82
+    old "Не злишься на меня, тётя Кира?"
     new ""
 

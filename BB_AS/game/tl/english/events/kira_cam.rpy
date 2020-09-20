@@ -264,5 +264,5 @@ translate english cam1_kira_night_swim_5f08638b:
 translate english cam0_kira_sleep_night_e86a44fa:
 
     # Max_01 "Моя очаровательная тётя Кира спит..."
-    Max_01 ""
+    Max_01 "My lovely Aunt Kira is asleep..."
 
