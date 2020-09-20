@@ -2035,3 +2035,29 @@ translate english alice_after_club_9ddb515e:
     # Max_10 "Ладно, ладно..."
     Max_10 "Okay, okay..."
 
+# TODO: Translation updated at 2020-09-21 01:39
+
+# game/events/alice.rpy:1103
+translate english alice_after_club_5ec498e0:
+
+    # Max_07 "После клуба Алиса сразу пошла в ванную. Интересно, в каком она состоянии?" nointeract
+    Max_07 "" nointeract
+
+# game/events/alice.rpy:1110
+translate english alice_after_club_75acb86d:
+
+    # Alice "{b}Алиса:{/b} Кому там не спится? Я ванну принимаю..." nointeract
+    Alice "" nointeract
+
+# game/events/alice.rpy:1124
+translate english alice_after_club_74fd8c7a_1:
+
+    # Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
+    Alice "{b}Alice:{/b} Max, are you deaf? I just told you I'm in the bath. Don't come back for at least an hour!"
+
+# game/events/alice.rpy:1125
+translate english alice_after_club_9ddb515e_1:
+
+    # Max_10 "Ладно, ладно..."
+    Max_10 "Okay, okay..."
+

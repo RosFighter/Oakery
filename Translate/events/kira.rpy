@@ -138,10 +138,10 @@ translate english kira_bath_kira_mass_bath_first_3b03420e:
     # Max_01 "Ну да, бывает такое."
     Max_01 "Well, yeah, but it's not how it sounds."
 
-# game/events/kira.rpy:104
-translate english kira_bath_kira_mass_bath_first_95c3a131:
+# game/events/kira.rpy:103
+translate english kira_bath_kira_mass_bath_first_5ed6b6a0:
 
-    # Kira_02 "Я сегодня очень устала... И если бы нашёлся тот, кто помог бы снять усталость с моих ног, то может быть, в качестве благодарности, я бы и не стала рассказывать своей сестре, какой у неё испорченый сын."
+    # Kira_02 "Я сегодня очень устала... И если бы нашёлся тот, кто помог бы снять усталость с моих ног, то может быть, в качестве благодарности, я бы и не стала рассказывать своей сестре, какой у неё испорченный сын."
     Kira_02 "Well I'm very tired today... And if there was someone who could help relieve the stress from my legs, then maybe, as a thank you, I wouldn't tell my sister what a perverted son she has."
 
 # game/events/kira.rpy:105
@@ -2662,4 +2662,298 @@ translate english strings:
     # game/events/kira.rpy:430
     old "{i}спуститься к Кире{/i}"
     new "{i}Go down to Kira{/i}"
+
+# TODO: Translation updated at 2020-09-21 01:39
+
+# game/events/kira.rpy:268
+translate english kira_bath_promise_cuni_a2ff7924:
+
+    # Kira_02 "Раз уж ты снял усталость с моих ножек, то может порадуешь свою тётю, как обещал? Или ты уже забыл!?"
+    Kira_02 ""
+
+# game/events/kira.rpy:269
+translate english kira_bath_promise_cuni_c2754243:
+
+    # Max_03 "Конечно помню! И хочу порадовать тебя ещё..." nointeract
+    Max_03 "" nointeract
+
+# game/events/kira.rpy:274
+translate english kira_bath_promise_cuni_7f37310e:
+
+    # Kira_05 "Оу... Ты тот ещё шалунишка! У тебя такие нежные пальчики... Да... Поиграй с ней!" nointeract
+    Kira_05 "" nointeract
+
+# game/events/kira.rpy:278
+translate english kira_bath_promise_cuni_2b19c412:
+
+    # Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:281
+translate english kira_bath_promise_cuni_d3732a7c:
+
+    # Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:287
+translate english kira_bath_promise_cuni_a6041d47:
+
+    # Kira_11 "Макс... О да... продолжай вот так, я уже не могу сдерживаться... Сожми мою попку покрепче! Уже так близко... Да! Я кончаю... Ахх..."
+    Kira_11 ""
+
+# game/events/kira.rpy:288
+translate english kira_bath_promise_cuni_4d360262:
+
+    # Max_03 "Похоже, и здесь я всё помассировал как надо!"
+    Max_03 ""
+
+# game/events/kira.rpy:293
+translate english kira_bath_promise_cuni_3a13b724:
+
+    # Kira_06 "Ещё как... Мне очень понравилось... Ты очень способный... племянник..."
+    Kira_06 ""
+
+# game/events/kira.rpy:294
+translate english kira_bath_promise_cuni_9823a121:
+
+    # Max_05 "И ты очень классная, тётя Кира! С тобой здорово!"
+    Max_05 ""
+
+# game/events/kira.rpy:295
+translate english kira_bath_promise_cuni_0649d7bf:
+
+    # Kira_01 "Спасибо, Макс, приятно такое слышать... Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+    Kira_01 ""
+
+# game/events/kira.rpy:296
+translate english kira_bath_promise_cuni_08545885:
+
+    # Max_01 "Ага. Спокойной ночи, тётя Кира."
+    Max_01 ""
+
+# game/events/kira.rpy:297
+translate english kira_bath_promise_cuni_45071b84:
+
+    # Kira_04 "Приятных снов, Макс."
+    Kira_04 ""
+
+# game/events/kira.rpy:312
+translate english kira_bath_cuni_bj_d3732a7c:
+
+    # Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:844
+translate english kira_night_tv_promise_cuni_0ee59050:
+
+    # Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Может порадуешь свою тётю, как обещал? Или ты уже забыл!?"
+    Kira_05 ""
+
+# game/events/kira.rpy:845
+translate english kira_night_tv_promise_cuni_48f0e333:
+
+    # Max_03 "Конечно помню! Сейчас развлечёмся..." nointeract
+    Max_03 "" nointeract
+
+# game/events/kira.rpy:850
+translate english kira_night_tv_promise_cuni_328ceb80:
+
+    # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
+    Kira_02 "" nointeract
+
+# game/events/kira.rpy:861
+translate english kira_night_tv_promise_cuni_0b64a46b:
+
+    # Kira_07 "Оу... Решил поиграть со мной так, Макс... Моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..." nointeract
+    Kira_07 "" nointeract
+
+# game/events/kira.rpy:870
+translate english kira_night_tv_promise_cuni_b6af5762:
+
+    # Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ммм..." nointeract
+    Kira_10 "" nointeract
+
+# game/events/kira.rpy:884
+translate english kira_night_tv_promise_cuni_ee5fc1a0:
+
+    # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Да! Я кончаю... Ахх..."
+    Kira_12 ""
+
+# game/events/kira.rpy:885
+translate english kira_night_tv_promise_cuni_99d10a9a:
+
+    # Max_02 "Какая у тебя сочная попка, тётя Кира..."
+    Max_02 ""
+
+# game/events/kira.rpy:890
+translate english kira_night_tv_promise_cuni_4a1dbaab:
+
+    # Kira_06 "Да, Макс, она у меня такая... Я в восторге! Но лучше нам закругляться, а то я вполне могла кого-нибудь разбудить своими стонами."
+    Kira_06 ""
+
+# game/events/kira.rpy:891
+translate english kira_night_tv_promise_cuni_174945ac:
+
+    # Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
+    Max_01 ""
+
+# game/events/kira.rpy:1311
+translate english kira_night_tv_cuni_var2_0b64a46b:
+
+    # Kira_07 "Оу... Решил поиграть со мной так, Макс... Моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..." nointeract
+    Kira_07 "" nointeract
+
+# game/events/kira.rpy:1320
+translate english kira_night_tv_cuni_var2_b6af5762:
+
+    # Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ммм..." nointeract
+    Kira_10 "" nointeract
+
+# game/events/kira.rpy:1334
+translate english kira_night_tv_cuni_var2_ee5fc1a0:
+
+    # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Да! Я кончаю... Ахх..."
+    Kira_12 ""
+
+# game/events/kira.rpy:1335
+translate english kira_night_tv_cuni_var2_99d10a9a:
+
+    # Max_02 "Какая у тебя сочная попка, тётя Кира..."
+    Max_02 ""
+
+# game/events/kira.rpy:1340
+translate english kira_night_tv_cuni_var2_57da463b:
+
+    # Kira_07 "Да... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
+    Kira_07 ""
+
+# game/events/kira.rpy:1341
+translate english kira_night_tv_cuni_var2_f7a0a397:
+
+    # Max_04 "Да... Я очень этого хочу!"
+    Max_04 ""
+
+# game/events/kira.rpy:1547
+translate english kira_shower_start_peeping_1a39c5f6:
+
+    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
+    Max_03 "" nointeract
+
+# game/events/kira.rpy:1549
+translate english kira_shower_start_peeping_a32344ac:
+
+    # Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
+    Max_05 "" nointeract
+
+# game/events/kira.rpy:1569
+translate english kira_shower_alt_peepeng_1a39c5f6:
+
+    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
+    Max_03 "" nointeract
+
+# game/events/kira.rpy:1571
+translate english kira_shower_alt_peepeng_a32344ac:
+
+    # Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
+    Max_05 "" nointeract
+
+# game/events/kira.rpy:1589
+translate english kira_shower_promise_cuni_c2262ba3:
+
+    # Kira_02 "А, Макс, конечно можно! Тебя и дожидаюсь. Присоединяйся..." nointeract
+    Kira_02 "" nointeract
+
+# game/events/kira.rpy:1594
+translate english kira_shower_promise_cuni_6662fc98:
+
+    # Kira_05 "А я тут стою, вся такая мокренькая и думаю - забыл обо мне мой племянничек или нет."
+    Kira_05 ""
+
+# game/events/kira.rpy:1595
+translate english kira_shower_promise_cuni_7e9dc3d1:
+
+    # Max_03 "Как о тебе можно забыть, тётя Кира? Тебя нужно как следует порадовать за вчерашнее..." nointeract
+    Max_03 "" nointeract
+
+# game/events/kira.rpy:1602
+translate english kira_shower_promise_cuni_d3c0b1c3:
+
+    # Kira_04 "Ох... Ты тот ещё шалунишка! Я обожаю, когда ласкают мою грудь и особенно мои сосочки... Ммм..." nointeract
+    Kira_04 "" nointeract
+
+# game/events/kira.rpy:1606
+translate english kira_shower_promise_cuni_56e27392:
+
+    # Kira_10 "Да, Макс... Продолжай вот так и я уже не смогу сдержаться... У тебя такие ловкие пальчики... Да..." nointeract
+    Kira_10 "" nointeract
+
+# game/events/kira.rpy:1610
+translate english kira_shower_promise_cuni_7ca5775c:
+
+    # Kira_11 "О да... Ещё, Макс... Я уже близко... Так приятно..." nointeract
+    Kira_11 "" nointeract
+
+# game/events/kira.rpy:1616
+translate english kira_shower_promise_cuni_37a341b6:
+
+    # Kira_12 "Ухх... Да, ещё... быстрее и глубже... Ммм, ещё чуть-чуть и я кончу... Ах!"
+    Kira_12 ""
+
+# game/events/kira.rpy:1617
+translate english kira_shower_promise_cuni_59052a0a:
+
+    # Max_04 "Ну как, тётя Кира? Хорошо я тебя порадовал?"
+    Max_04 ""
+
+# game/events/kira.rpy:1618
+translate english kira_shower_promise_cuni_3a13b724:
+
+    # Kira_06 "Ещё как... Мне очень понравилось... Ты очень способный... племянник..."
+    Kira_06 ""
+
+# game/events/kira.rpy:1622
+translate english kira_shower_promise_cuni_fc122d84:
+
+    # Max_07 "Скоро уже, должно быть, завтрак будет готов, так что надо тихонько расходиться, а то нас кто-нибудь увидит."
+    Max_07 ""
+
+# game/events/kira.rpy:1623
+translate english kira_shower_promise_cuni_6a25c28c:
+
+    # Kira_07 "Да, Макс, я как раз должна немного... успеть отойти..."
+    Kira_07 ""
+
+translate english strings:
+
+    # game/events/kira.rpy:274
+    old "{i}проникнуть в неё пальцами{/i}"
+    new ""
+
+    # game/events/kira.rpy:850
+    old "{i}раздеть её и повернуть{/i}"
+    new ""
+
+    # game/events/kira.rpy:870
+    old "{i}продолжить языком{/i}"
+    new ""
+
+    # game/events/kira.rpy:1275
+    old "{i}раздеться вместе{/i}"
+    new ""
+
+    # game/events/kira.rpy:1517
+    old "К тебе можно, тётя Кира?"
+    new ""
+
+    # game/events/kira.rpy:1589
+    old "{i}раздеться и присоединиться к Кире{/i}"
+    new ""
+
+    # game/events/kira.rpy:1595
+    old "{i}ласкать её грудь{/i}"
+    new ""
+
+    # game/events/kira.rpy:1602
+    old "{i}ласкать её киску пальцами{/i}"
+    new ""
 
