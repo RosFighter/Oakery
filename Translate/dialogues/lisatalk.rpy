@@ -7748,25 +7748,25 @@ translate english MorningWoodCont2_var2_7d193d82:
 translate english MorningWoodCont2_var2_5aed04d8:
 
     # Lisa_12 "Мне! Чего это ты там со мной во сне делаешь, признавайся?!"
-    Lisa_12 "Listen! What are you doing to me in your sleep, confess?!"
+    Lisa_12 "Listen! What are you doing to me in your sleep, confess!"
 
 # game/dialogues/lisatalk.rpy:3307
 translate english MorningWoodCont2_var2_e60ce384:
 
     # Max_08 "Э-э-э... Да так, во всякие Монополии уделываю тебя только так... В Пазлы..."
-    Max_08 ""
+    Max_08 "Uh-uh... trying to fold a piece of paper in half eight times..."
 
 # game/dialogues/lisatalk.rpy:3308
 translate english MorningWoodCont2_var2_8417bd7c:
 
     # Lisa_02 "Чего?! Как можно уделать кого-то в Пазлы?"
-    Lisa_02 ""
+    Lisa_02 "What? Is that even possible?"
 
 # game/dialogues/lisatalk.rpy:3309
 translate english MorningWoodCont2_var2_d4a51097:
 
     # Max_09 "Вот не мешала бы спать, я бы узнал, как..."
-    Max_09 ""
+    Max_09 "Maybe if you didn't wake me up I would know..."
 
 # game/dialogues/lisatalk.rpy:3310
 translate english MorningWoodCont2_var2_62d996ad:

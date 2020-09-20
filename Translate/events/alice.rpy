@@ -2027,11 +2027,11 @@ translate english strings:
 translate english alice_after_club_57eac526:
 
     # Max_07 "Алиса только что вернулась из клуба и сразу забежала в ванную. Интересно, в каком она состоянии?" nointeract
-    Max_07 "" nointeract
+    Max_07 "Alice just got back from the club and immediately ran into the bathroom. I wonder what condition she's in?" nointeract
 
 # game/events/alice.rpy:1111
 translate english alice_after_club_9ddb515e:
 
     # Max_10 "Ладно, ладно..."
-    Max_10 ""
+    Max_10 "Okay, okay..."
 

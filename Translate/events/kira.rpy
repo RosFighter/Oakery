@@ -2367,25 +2367,25 @@ translate english kira_alice_shower_alt_peepeng_72bf06b5:
 translate english kira_sleep_night_96d0aaaf:
 
     # Max_04 "Ага! Тётя Кира спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..." nointeract
-    Max_04 "" nointeract
+    Max_04 "Aha! Aunt Kira is asleep. It's good that her nightgown is slightly translucent... Uhh, she's amazing..." nointeract
 
 # game/events/kira.rpy:390
 translate english kira_sleep_night_37f4a3ba:
 
     # Max_02 "Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться..."
-    Max_02 ""
+    Max_02 "Wow! My Aunt has a sweet ass... I want to watch it forever. And not just that..."
 
 # game/events/kira.rpy:392
 translate english kira_sleep_night_c1353df2:
 
     # Max_03 "О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути..."
-    Max_03 ""
+    Max_03 "Oh, Yes! I'd love to have that ass to myself... and those juicy tits, too. Amazing..."
 
 # game/events/kira.rpy:394
 translate english kira_sleep_night_e88b00c2:
 
     # Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
-    Max_05 ""
+    Max_05 "Damn, the sight of those spread and slender legs in shorts makes it too tight... Still, such a hot beauty!"
 
 # TODO: Translation updated at 2020-09-20 00:37
 
@@ -2393,273 +2393,273 @@ translate english kira_sleep_night_e88b00c2:
 translate english kira_night_swim_57679d55_1:
 
     # Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
-    Max_03 ""
+    Max_03 "Wow... skinny dipping, Aunt Kira?! You look great!"
 
 # game/events/kira.rpy:376
 translate english kira_night_swim_41436e7f:
 
     # Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?" nointeract
-    Kira_01 "" nointeract
+    Kira_01 "Ah, Max... I thought everyone was asleep. I wanted to go for a swim... Why aren't you in bed?" nointeract
 
 # game/events/kira.rpy:383
 translate english kira_night_swim_d6e151bf:
 
     # Kira_02 "Ну, бассейн большой. К тому же, это ваш дом. Кому как не тебе решать, с таким-то большим членом?"
-    Kira_02 ""
+    Kira_02 "Well it's a big pool, and it is your home. Who better to make that choice than the one with the biggest dick?"
 
 # game/events/kira.rpy:384
 translate english kira_night_swim_3989efe8:
 
     # Max_03 "А, ну да. Это просто ты голая, вот у меня и стоит."
-    Max_03 ""
+    Max_03 "Oh, right. It's just that you're naked."
 
 # game/events/kira.rpy:385
 translate english kira_night_swim_5418a907:
 
     # Kira_05 "Абсолютно голая! Ладно, спускайся, а то я не могу спокойно на это смотреть..." nointeract
-    Kira_05 "" nointeract
+    Kira_05 "Completely naked! All right, come on down, I can't stand to watch this..." nointeract
 
 # game/events/kira.rpy:390
 translate english kira_night_swim_809f12e2:
 
     # Kira_04 "Да, теперь мне очень хорошо видно, насколько тебе нравится то, что скрывается под этой прозрачной водой..."
-    Kira_04 ""
+    Kira_04 "Now I can see how much you like what's in the water..."
 
 # game/events/kira.rpy:391
 translate english kira_night_swim_5fa643d7:
 
     # Max_04 "Да и над водой тут нисколько картина не хуже!"
-    Max_04 ""
+    Max_04 "Well being in it with you doesn't compare!"
 
 # game/events/kira.rpy:395
 translate english kira_night_swim_afe0a4ee:
 
     # Kira_07 "А тебя, похоже, заводит, что кто-то может увидеть, как твоя обнажённая тётя крепко сжимает и дрочит твой огромный член, да Макс?"
-    Kira_07 ""
+    Kira_07 "Looks like you're getting turned on... is it by the risk that someone might see your Aunt tightly jerking off your huge cock, Max?"
 
 # game/events/kira.rpy:396
 translate english kira_night_swim_d50e2e42:
 
     # Max_02 "О да!"
-    Max_02 ""
+    Max_02 "Oh Yes!"
 
 # game/events/kira.rpy:400
 translate english kira_night_swim_f425302b:
 
     # Kira_06 "Значит, любишь, когда за тобой наблюдают?"
-    Kira_06 ""
+    Kira_06 "So the chance of being watched gets you hard?"
 
 # game/events/kira.rpy:401
 translate english kira_night_swim_a3a87085:
 
     # Max_07 "Ну, смотря кто..."
-    Max_07 ""
+    Max_07 "Well, it depends on who's watching..."
 
 # game/events/kira.rpy:405
 translate english kira_night_swim_6b17ead2:
 
     # Kira_04 "Представь, что за тем, что я вытворяю своим языком с твоим членом, кто-то подглядывает... Может это Алиса... или Лиза... а может, даже твоя мама!"
-    Kira_04 ""
+    Kira_04 "Imagine someone spying on us, watching what I'm doing with my tongue to your cock... Maybe it's Alice... or Lisa... maybe even your Mom!"
 
 # game/events/kira.rpy:406
 translate english kira_night_swim_bfbddab0:
 
     # Max_20 "Ох, от таких мыслей я сейчас кончу, тётя Кира!"
-    Max_20 ""
+    Max_20 "Oh, those thoughts will make me come, Aunt Kira!"
 
 # game/events/kira.rpy:407
 translate english kira_night_swim_13d8c96f:
 
     # Kira_02 "Какой же ты испорченный мальчик! Но не переживай, бассейн мы не испачкаем. Я чувству, ты уже совсем близко... Давай..." nointeract
-    Kira_02 "" nointeract
+    Kira_02 "What a spoiled boy you are! But don't worry, we won't get the pool dirty. I can feel you getting very close..." nointeract
 
 # game/events/kira.rpy:413
 translate english kira_night_swim_296f109d:
 
     # Max_05 "Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
-    Max_05 ""
+    Max_05 "Wow, Aunt Kira, amazing... but I did get you a little messy."
 
 # game/events/kira.rpy:414
 translate english kira_night_swim_f8441ad7:
 
     # Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
-    Kira_05 ""
+    Kira_05 "Well, the most important thing is none got in the water. That would be hard to explain."
 
 # game/events/kira.rpy:415
 translate english kira_night_swim_109b02fc:
 
     # Max_03 "Ага, как будто ничего и не было."
-    Max_03 ""
+    Max_03 "Yeah, lucky you left no trace."
 
 # game/events/kira.rpy:416
 translate english kira_night_swim_42636203:
 
     # Kira_03 "Ладно, Макс, беги спать. Уже поздно. А то если нас заметят тут, будет много вопросов..."
-    Kira_03 ""
+    Kira_03 "All right, Max, better get to bed before we get noticed. There's going to be far too many questions if we're caught..."
 
 # game/events/kira.rpy:421
 translate english kira_night_swim_2d756490:
 
     # Max_04 "Только после тебя..."
-    Max_04 ""
+    Max_04 "Only after you..."
 
 # game/events/kira.rpy:422
 translate english kira_night_swim_a9d98df3:
 
     # Kira_05 "О, спасибо, Макс! Приятно, что ты решил немного поухаживать за мной. Спокойной ночи! И шорты не забудь..."
-    Kira_05 ""
+    Kira_05 "Oh, thank you, Max! It's nice that you decided to be a gentlemen. Goodnight! And don't forget your shorts..."
 
 # game/events/kira.rpy:423
 translate english kira_night_swim_171022d2:
 
     # Max_01 "Не забуду... Спокойной ночи!"
-    Max_01 ""
+    Max_01 "I'll try not to... Goodnight!"
 
 # game/events/kira.rpy:430
 translate english kira_night_swim_06dbdfc5:
 
     # Kira_06 "Ухх, впечатлил! Спускайся, тебе нужно немного охладиться. И как знать, может даже ты встретишь приключение на свой член!" nointeract
-    Kira_06 "" nointeract
+    Kira_06 "Well, impressive! Come on down, you need to cool off a bit. And who knows, you're dick might even go on an adventure!" nointeract
 
 # game/events/kira.rpy:435
 translate english kira_night_swim_62d66d9a:
 
     # Max_04 "Приключения - это я люблю..."
-    Max_04 ""
+    Max_04 "I do love adventures..."
 
 # game/events/kira.rpy:436
 translate english kira_night_swim_2a55a9db:
 
     # Kira_05 "А я, как раз кстати, могу тебе их обеспечить..."
-    Kira_05 ""
+    Kira_05 "And I can provide them for you, just in time..."
 
 # game/events/kira.rpy:445
 translate english kira_night_swim_e6960ed7:
 
     # Kira_04 "Я уже собиралась отправляться спать, устала. Но так уж и быть, немного помогу тебе, а заканчивать будешь сам..."
-    Kira_04 ""
+    Kira_04 "I was about to go to bed, but so be it. I'll help you a little, but you just have to finish yourself..."
 
 # game/events/kira.rpy:446
 translate english kira_night_swim_17b0495e:
 
     # Max_07 "Ну, так не интересно..."
-    Max_07 ""
+    Max_07 "Well, that's no fun."
 
 # game/events/kira.rpy:450
 translate english kira_night_swim_c4001dfb:
 
     # Kira_02 "Не интересно? Ну да, согласна... Тогда давай сделаем так, утром я буду принимать душ одна, но не откажусь от твоей компании!"
-    Kira_02 ""
+    Kira_02 "Not fun? Well, yes, I agree...so let's do this, I'll be in the shower alone in the morning. Maybe you should come keep me company?"
 
 # game/events/kira.rpy:451
 translate english kira_night_swim_2c22d5ff:
 
     # Max_03 "Так это я с радостью, тётя Кира!"
-    Max_03 ""
+    Max_03 "So it's my pleasure, Aunt Kira!"
 
 # game/events/kira.rpy:452
 translate english kira_night_swim_25c9e40d:
 
     # Kira_07 "И если в душе ты меня порадуешь, то я порадую тебя сейчас, договорились?"
-    Kira_07 ""
+    Kira_07 "And if you promise to return the favour, I'll make you happy now, okay?"
 
 # game/events/kira.rpy:453
 translate english kira_night_swim_14117b6f:
 
     # Max_05 "Конечно!"
-    Max_05 ""
+    Max_05 "Of course!"
 
 # game/events/kira.rpy:457
 translate english kira_night_swim_929307c1:
 
     # Kira_04 "Тогда, я пожалуй поиграю с тобой своим язычком. Тебе же нравится, когда я ласкаю им твой член?"
-    Kira_04 ""
+    Kira_04 "Then I think I'll use my tongue. You love it when it meets your cock, don't you?"
 
 # game/events/kira.rpy:458
 translate english kira_night_swim_a2bb097a:
 
     # Max_20 "О да, ты делаешь это великолепно! Продолжай тётя Кира..."
-    Max_20 ""
+    Max_20 "Oh, Yes, you're doing great! Go on, Aunt Kira..."
 
 # game/events/kira.rpy:464
 translate english kira_night_swim_5a6dc4f5:
 
     # Kira_02 "Какой же ты испорченный мальчик! Всё время называешь меня тётей... Это так пикантно! Давай, кончи мне в рот, я этого очень хочу..." nointeract
-    Kira_02 "" nointeract
+    Kira_02 "What a spoiled boy you are! You keep calling me Aunt... It's so deviant! Come on, cum in my mouth, I really want it..." nointeract
 
 # game/events/kira.rpy:470
 translate english kira_night_swim_296f109d_1:
 
     # Max_05 "Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
-    Max_05 ""
+    Max_05 "Wow, Aunt Kira, that was great... I did get you a little messy, though."
 
 # game/events/kira.rpy:471
 translate english kira_night_swim_f8441ad7_1:
 
     # Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
-    Kira_05 ""
+    Kira_05 "Well, the most important thing is none got in the water. That would be hard to explain."
 
 # game/events/kira.rpy:472
 translate english kira_night_swim_109b02fc_1:
 
     # Max_03 "Ага, как будто ничего и не было."
-    Max_03 ""
+    Max_03 "Yeah, lucky you left no trace."
 
 # game/events/kira.rpy:473
 translate english kira_night_swim_42636203_1:
 
     # Kira_03 "Ладно, Макс, беги спать. Уже поздно. А то если нас заметят тут, будет много вопросов..."
-    Kira_03 ""
+    Kira_03 "All right, Max, better get to bed before we get noticed. There's going to be far too many questions if we're caught..."
 
 # game/events/kira.rpy:478
 translate english kira_night_swim_2d756490_1:
 
     # Max_04 "Только после тебя..."
-    Max_04 ""
+    Max_04 "Only after you..."
 
 # game/events/kira.rpy:479
 translate english kira_night_swim_3ce678d0:
 
     # Kira_05 "О, спасибо, Макс! Приятно, что ты решил немного поухаживать за мной. Утром буду тебя ждать... Спокойной ночи! И шорты не забудь..."
-    Kira_05 ""
+    Kira_05 "Oh, thank you, Max! It's nice that you decided to be a gentlemen. Goodnight! And don't forget your shorts..."
 
 # game/events/kira.rpy:480
 translate english kira_night_swim_171022d2_1:
 
     # Max_01 "Не забуду... Спокойной ночи!"
-    Max_01 ""
+    Max_01 "I'll try not to... Goodnight!"
 
 # game/events/kira.rpy:483
 translate english kira_night_swim_1a8dc447:
 
     # Kira_05 "Я тоже уже собираюсь идти спать... Приятных тебе снов, Макс."
-    Kira_05 ""
+    Kira_05 "I'm about to go to bed, too... Sleep well, Max."
 
 # game/events/kira.rpy:484
 translate english kira_night_swim_88e067a5:
 
     # Max_04 "Спокойной ночи, тётя Кира."
-    Max_04 ""
+    Max_04 "Good night, Aunt Kira."
 
 translate english strings:
 
     # game/events/kira.rpy:376
     old "Да, что-то не спится... К тебе можно?"
-    new ""
+    new "Yes, I can't sleep... Can I join you?"
 
     # game/events/kira.rpy:376
     old "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}"
-    new ""
+    new "I can't sleep, I'm too tense! {i}Take off my shorts){/i}"
 
     # game/events/kira.rpy:376
     old "Я просто прогуливался перед сном. Пойду, уже поздно..."
-    new ""
+    new "I was just taking a walk before bed. I'll go, it's late..."
 
     # game/events/kira.rpy:407
     old "{i}кончить ей в рот!{/i}"
-    new ""
+    new "{i}Cum in her mouth!{/i}"
 
     # game/events/kira.rpy:430
     old "{i}спуститься к Кире{/i}"
-    new ""
+    new "{i}Go down to Kira{/i}"
 
