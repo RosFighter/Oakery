@@ -1374,7 +1374,7 @@ translate english kira_about_photo1_e143d1d3:
 translate english kira_about_photo1_b438d6cf:
 
     # Max_22 "{i}( Да... Я кончаю... Прямо ей в рот! О боже... Она так смачно посасывает головку моего члена... Вот это отсос, так отсос! Кажется, это самое офигенное развлечение в мире! ){/i}"
-    Max_22 "{i} ( Yes... I came... Right in her mouth! Oh God... She sucks the head of my cock so hard... her lips are around me so tight! I've got to crown her a blowjob queen!! ){/i"
+    Max_22 "{i}( Yes... I came... Right in her mouth! Oh God... She sucks the head of my cock so hard... her lips are around me so tight! I've got to crown her a blowjob queen!! ){/i}"
 
 # game/dialogues/kiratalk.rpy:608
 translate english kira_about_photo1_74184a9e:

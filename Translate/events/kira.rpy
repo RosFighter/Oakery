@@ -2649,7 +2649,7 @@ translate english strings:
 
     # game/events/kira.rpy:376
     old "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}"
-    new "I can't sleep, I'm too tense! {i}Take off my shorts){/i}"
+    new "I can't sleep, I'm too tense! {i}(Take off my shorts){/i}"
 
     # game/events/kira.rpy:376
     old "Я просто прогуливался перед сном. Пойду, уже поздно..."
