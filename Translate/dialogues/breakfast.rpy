@@ -2373,3 +2373,143 @@ translate english strings:
     old "Ну, не настолько хороший..."
     new "Well, not so good..."
 
+# TODO: Translation updated at 2020-09-21 11:02
+
+# game/dialogues/breakfast.rpy:826
+translate english breakfast_35_ca36c610:
+
+    # Ann_04 "Всем доброе утро, приятного аппетита..."
+    Ann_04 ""
+
+# game/dialogues/breakfast.rpy:827
+translate english breakfast_35_b6e4f095:
+
+    # Max_01 "Приятного аппетита..."
+    Max_01 ""
+
+# game/dialogues/breakfast.rpy:828
+translate english breakfast_35_ee7bd26a:
+
+    # Lisa_02 "Как же всё-таки здорово, что ты снова с нами, тётя Кира! Мне так нравится одежда, которую ты нам подарила..."
+    Lisa_02 ""
+
+# game/dialogues/breakfast.rpy:829
+translate english breakfast_35_dc2af0f6:
+
+    # Ann_12 "За это, конечно, спасибо, но благо вы не видели в какой сорочке собиралась спать ваша тётя! Повезло, что я это заметила..."
+    Ann_12 ""
+
+# game/dialogues/breakfast.rpy:830
+translate english breakfast_35_3c3029c9:
+
+    # Kira_07 "Мне кажется, Ань, ты слишком волнуешься из-за этого."
+    Kira_07 ""
+
+# game/dialogues/breakfast.rpy:831
+translate english breakfast_35_9e534fbb:
+
+    # Max_09 "А что с сорочкой не так?"
+    Max_09 ""
+
+# game/dialogues/breakfast.rpy:832
+translate english breakfast_35_361a3b97:
+
+    # Ann_14 "Да там видно всё, что только можно! Не представляю, как ей вообще пришло в голову такое купить... Дети же увидят."
+    Ann_14 ""
+
+# game/dialogues/breakfast.rpy:833
+translate english breakfast_35_31bd5602:
+
+    # Alice_05 "А я бы посмотрела на эту сорочку, похоже она интересная, раз мама так взволновалась."
+    Alice_05 ""
+
+# game/dialogues/breakfast.rpy:834
+translate english breakfast_35_fcf5caa4:
+
+    # Lisa_03 "И я..."
+    Lisa_03 ""
+
+# game/dialogues/breakfast.rpy:835
+translate english breakfast_35_ee69b2c6:
+
+    # Ann_13 "Так! Никто ничего не будет смотреть! Кира, не вздумай им показывать..."
+    Ann_13 ""
+
+# game/dialogues/breakfast.rpy:836
+translate english breakfast_35_937c8234:
+
+    # Kira_04 "Ань, ну что ты в самом деле? Алиса уже взрослая. А Лиза... ну может ей такое ещё и рановато видеть, но ничего катастрофичного в этом всё равно нет."
+    Kira_04 ""
+
+# game/dialogues/breakfast.rpy:837
+translate english breakfast_35_b01754b3:
+
+    # Alice_02 "Макс, а ты чего притих!? Ты видимо не понял, что мы тут об откровенной сорочке говорим, а ты даже не сказал своё любомое: \"Я бы тоже посмотрел...\"!"
+    Alice_02 ""
+
+# game/dialogues/breakfast.rpy:838
+translate english breakfast_35_4f031040:
+
+    # Max_02 "Всё равно никто ничего мне не покажет такого..."
+    Max_02 ""
+
+# game/dialogues/breakfast.rpy:839
+translate english breakfast_35_1a4b2891:
+
+    # Alice_01 "А я вот думаю, что ты уже успел увидеть! Признавайся!"
+    Alice_01 ""
+
+# game/dialogues/breakfast.rpy:840
+translate english breakfast_35_34472028:
+
+    # Max_07 "Я тихий, потому что всё не решаюсь спросить кое о чём... Как там Александра, тётя Кира!?"
+    Max_07 ""
+
+# game/dialogues/breakfast.rpy:841
+translate english breakfast_35_0fa00af2:
+
+    # Lisa_09 "Кстати, да! Ты была тогда так зла на неё, что запретила даже вспоминать о ней. У неё всё хорошо?"
+    Lisa_09 ""
+
+# game/dialogues/breakfast.rpy:842
+translate english breakfast_35_b37a11b6:
+
+    # Kira_00 "Да что с ней будет! Всё у неё хорошо, по крайней мере сейчас. Возможно, она даже к нам заедет в скором времени, если ей, конечно, снова не взбредёт в голову отчудить что-нибудь безумное."
+    Kira_00 ""
+
+# game/dialogues/breakfast.rpy:843
+translate english breakfast_35_0a7cc259:
+
+    # Alice_12 "А что она в тот раз такое сделала?"
+    Alice_12 ""
+
+# game/dialogues/breakfast.rpy:844
+translate english breakfast_35_a8da0503:
+
+    # Kira_14 "Давайте не будем об этом... Я стараюсь это забыть!"
+    Kira_14 ""
+
+# game/dialogues/breakfast.rpy:845
+translate english breakfast_35_4a19b78c:
+
+    # Max_08 "Хорошо... Она так и называет меня Макси?"
+    Max_08 ""
+
+# game/dialogues/breakfast.rpy:846
+translate english breakfast_35_2a3d1c38:
+
+    # Kira_05 "Может быть да, а может и нет... Узнаешь, если она всё же к нам приедет."
+    Kira_05 ""
+
+# game/dialogues/breakfast.rpy:847
+translate english breakfast_35_e6830c16:
+
+    # Alice_07 "Мы так давно её не видели. Было бы здорово, если бы она к нам заглянула."
+    Alice_07 ""
+
+# game/dialogues/breakfast.rpy:848
+translate english breakfast_35_79b424d8:
+
+    # Ann_02 "Да, Кира. Мы будем рады её увидеть. Думаю, завтрак мы на этом закончим. Спасибо вам всем!"
+    Ann_02 ""
+

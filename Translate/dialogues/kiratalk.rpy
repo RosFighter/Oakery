@@ -1512,7 +1512,7 @@ translate english kira_about_cuni_a74acaec:
 translate english kira_about_cuni_a7579d1c:
 
     # Kira_01 "Посмотрим, Макс."
-    Kira_01 ""We'll see, Max."
+    Kira_01 "We'll see, Max."
 
 translate english strings:
 
@@ -1523,4 +1523,3 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:627
     old "Нет, просто были дела с Алисой."
     new "No, I just had business with Alice."
-
