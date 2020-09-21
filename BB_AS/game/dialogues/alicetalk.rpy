@@ -512,7 +512,6 @@ label alice_talk_tv:
             Max_00 "Угу..."
             jump .end
 
-
     label .jeans:
         $ Skill('social', 0.1)
         ### Убеждение снять джинсы удалось

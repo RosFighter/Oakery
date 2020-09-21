@@ -635,7 +635,7 @@ label cam0_alice_after_club:
     return
 
 label cam1_alice_after_club:
-    if tm < '20':
+    if tm[-2:] < '20':
         # Алиса перед зеркалом
         $ __r1 = 'b' if alice.nopants else 'a'
         $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
