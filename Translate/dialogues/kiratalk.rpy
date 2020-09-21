@@ -1448,7 +1448,7 @@ translate english strings:
 
     # game/dialogues/kiratalk.rpy:508
     old "Пора показать класс, тётя Кира!"
-    new ""
+    new "It's time to see what you can do, Aunt Kira!"
 
     # game/dialogues/kiratalk.rpy:508
     old "Может, сразу удивишь меня чем-нибудь?"
@@ -1456,7 +1456,7 @@ translate english strings:
 
     # game/dialogues/kiratalk.rpy:599
     old "{i}кончить!{/i}"
-    new "{i}Finish!{/i}"
+    new "{i}Cum!{/i}"
 
 # TODO: Translation updated at 2020-09-21 01:39
 
@@ -1464,63 +1464,63 @@ translate english strings:
 translate english kira_about_cuni_8cc8ec4f:
 
     # Kira_13 "А что, Макс, должна?"
-    Kira_13 ""
+    Kira_13 "Well Max, should I?"
 
 # game/dialogues/kiratalk.rpy:626
 translate english kira_about_cuni_063924e5:
 
     # Max_07 "Наверно, да. Я ведь не заглянул к тебе в душ..."
-    Max_07 ""
+    Max_07 "Probably, yeah. I didn't see you in the shower..."
 
 # game/dialogues/kiratalk.rpy:627
 translate english kira_about_cuni_c16b4060:
 
     # Kira_14 "Я не злюсь, но немного расстроена... А разозлюсь я, если ты просто забыл!" nointeract
-    Kira_14 "" nointeract
+    Kira_14 "I'm not angry, but I'm a little upset... I'll be mad if you just forgot!" nointeract
 
 # game/dialogues/kiratalk.rpy:633
 translate english kira_about_cuni_06c8a7c0:
 
     # Kira_07 "Должно быть, это было что-то важное, раз ты решил не приходить к своей любимой, совершенно голой тёте в душ!"
-    Kira_07 ""
+    Kira_07 "It must have been something important if you decided not to come see your beautfiul, naked Aunt in the shower!"
 
 # game/dialogues/kiratalk.rpy:634
 translate english kira_about_cuni_7ea229cb:
 
     # Max_09 "Сестрёнкам надо помогать! А твоё приглашение всё ещё в силе?"
-    Max_09 ""
+    Max_09 "My sisters needed help! Is your invitation still valid?"
 
 # game/dialogues/kiratalk.rpy:636
 translate english kira_about_cuni_17b9a3e8:
 
     # Kira_04 "Если только ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
-    Kira_04 ""
+    Kira_04 "At night, when I get back from work. Unless, of course, you fall asleep before..."
 
 # game/dialogues/kiratalk.rpy:638
 translate english kira_about_cuni_92d34ad2:
 
     # Kira_04 "Если только завтра ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
-    Kira_04 ""
+    Kira_04 "Only tomorrow night, Max. When I come back from work. Unless, of course, you fall asleep before..."
 
 # game/dialogues/kiratalk.rpy:639
 translate english kira_about_cuni_a74acaec:
 
     # Max_02 "Не завалюсь, буду тебя ждать!"
-    Max_02 ""
+    Max_02 "I won't forget, I'll wait for you!"
 
 # game/dialogues/kiratalk.rpy:640
 translate english kira_about_cuni_a7579d1c:
 
     # Kira_01 "Посмотрим, Макс."
-    Kira_01 ""
+    Kira_01 ""We'll see, Max."
 
 translate english strings:
 
     # game/dialogues/kiratalk.rpy:627
     old "Нет, я не забыл... были дела с Лизой."
-    new ""
+    new "No, I haven't forgotten... I had business with Lisa."
 
     # game/dialogues/kiratalk.rpy:627
     old "Нет, просто были дела с Алисой."
-    new ""
+    new "No, I just had business with Alice."
 

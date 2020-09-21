@@ -452,7 +452,7 @@ translate english cam0_alice_after_club_667774e8:
 translate english cam1_alice_after_club_2e382a0f:
 
     # Max_01 "Алиса вернулась из клуба."
-    Max_01 ""
+    Max_01 "Alice is back from the club."
 
 # game/events/alice_cam.rpy:652
 translate english cam1_alice_after_club_ce893c17:

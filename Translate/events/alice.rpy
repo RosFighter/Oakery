@@ -2041,13 +2041,13 @@ translate english alice_after_club_9ddb515e:
 translate english alice_after_club_5ec498e0:
 
     # Max_07 "После клуба Алиса сразу пошла в ванную. Интересно, в каком она состоянии?" nointeract
-    Max_07 "" nointeract
+    Max_07 "After the club, Alice went straight to the bathroom. I wonder what state she's in." nointeract
 
 # game/events/alice.rpy:1110
 translate english alice_after_club_75acb86d:
 
     # Alice "{b}Алиса:{/b} Кому там не спится? Я ванну принимаю..." nointeract
-    Alice "" nointeract
+    Alice "{b}Alice:{/b} Who's there? I'm taking a bath..." nointeract
 
 # game/events/alice.rpy:1124
 translate english alice_after_club_74fd8c7a_1:

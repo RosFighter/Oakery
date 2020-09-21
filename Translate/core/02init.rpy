@@ -375,5 +375,5 @@ translate english strings:
 
     # game/core/02init.rpy:82
     old "Не злишься на меня, тётя Кира?"
-    new ""
+    new "Aren't you mad at me, Aunt Kira?"
 
