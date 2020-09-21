@@ -3131,6 +3131,7 @@ label lisa_advanced_kiss_lesson:
         "{i}нежно прикасаться к ней{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}":
             if RandomChance(_kiss.ch) or _in_replay:
                 # удалось увлечь её
+                $ spent_time += 10
                 scene BG char Lisa kisses-02
                 $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
                 $ _kiss = GetChance(mgg.kissing, 10, 900)
@@ -3138,6 +3139,7 @@ label lisa_advanced_kiss_lesson:
                     Max_05 "[lisa_good_kiss!t]{i}( Классно... Её ножки такие гладкие, а попка очень упругая! И она явно не против того, чтобы я к ней так прикасался... ){/i}"
                     "{i}нежно прикасаться к её груди{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}":
                         if RandomChance(_kiss.ch) or _in_replay:
+                            $ spent_time += 10
                             $ renpy.show('Lisa kisses morning 02-02'+lisa.dress+mgg.dress)
                             menu:
                                 Max_06 "[lisa_good_kiss!t]{i}( О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду... ){/i}"

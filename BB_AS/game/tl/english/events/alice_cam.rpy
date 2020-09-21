@@ -440,23 +440,23 @@ translate english cam0_alice_blog_lingerie_470567da:
 translate english cam0_alice_after_club_822a443e:
 
     # Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
-    Max_04 ""
+    Max_04 "Take your time, Alice. dry yourself slowly..."
 
 # game/events/alice_cam.rpy:634
 translate english cam0_alice_after_club_667774e8:
 
     # Max_05 "Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение..."
-    Max_05 ""
+    Max_05 "This is the best angle to watch Alice take a bath! A lovely sight..."
 
 # game/events/alice_cam.rpy:647
 translate english cam1_alice_after_club_2e382a0f:
 
     # Max_01 "Алиса вернулась из клуба."
-    Max_01 ""
+    Max_01 "Alice is back from the club."
 
 # game/events/alice_cam.rpy:652
 translate english cam1_alice_after_club_ce893c17:
 
     # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 ""
+    Max_09 "I can't see Alice through this camera. Can I try another one?"
 

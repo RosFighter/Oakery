@@ -148,11 +148,13 @@ label kira_bath:
             $ added_mem_var('kira_mass_bath_first')
             $ added_mem_var('kira.bath.mass')
             $ mgg.cleanness = 100
+            $ SetCamsGrow(house[3], 150)
         jump .end_sleep
 
     label .mass_bath:
         if not _in_replay and 'kira_bath.mass_bath' not in persistent.memories:
             $ persistent.memories['kira_bath.mass_bath'] = 0
+            $ SetCamsGrow(house[3], 180)
         if not _in_replay:
             $ added_mem_var('kira.bath.mass')
         scene BG char Kira bath-talk-00
@@ -260,6 +262,7 @@ label kira_bath:
             Kira_04 "Приятных снов, Макс."
             $ flags['kira.bath.fj'] = True
             if not _in_replay:
+                $ SetCamsGrow(house[3], 200)
                 $ persistent.memories['kira_bath.mass_bath'] = 1
             jump .end_sleep
 
@@ -296,10 +299,14 @@ label kira_bath:
         Max_01 "Ага. Спокойной ночи, тётя Кира."
         Kira_04 "Приятных снов, Макс."
 
+        if not _in_replay:
+            $ SetCamsGrow(house[3], 200)
         $ flags['promise.cuni.kira'] = False
         jump .end_sleep
 
     label .cuni_bj:
+        if not _in_replay:
+            $ SetCamsGrow(house[3], 200)
         scene BG char Kira bath-cun-01
         show Kira bath-mass cun-01
         menu:
@@ -417,6 +424,8 @@ label kira_night_swim:
         menu:
             Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?"
             "Да, что-то не спится... К тебе можно?" if flags['hj_in_pool'] < 1:  #только при 1-ой дрочке в бассейне, прописать переменную
+                if not _in_replay:
+                    $ SetCamsGrow(house[6], 200)
                 scene BG char Kira pool-night-01
                 show Max pool-night 01
                 $ renpy.show('Kira pool-night '+renpy.random.choice(['01', '02', '03']))
@@ -467,6 +476,8 @@ label kira_night_swim:
                 $ flags['promise.cuni.kira'] = True
 
             "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}" if flags['hj_in_pool'] > 0:  # периодическая дрочка в бассейне
+                if not _in_replay:
+                    $ SetCamsGrow(house[6], 200)
                 scene BG char Kira pool-night-01
                 show Max pool-night 02
                 $ renpy.show('Kira pool-night '+renpy.random.choice(['01', '02', '03']))
@@ -675,6 +686,8 @@ label kira_night_tv:
     else:
         # Кира смотрит порнушку
         pass
+    if not _in_replay:
+        $ SetCamsGrow(house[4], 150)
 
     menu:
         Max_01 "Тётя Кира ещё не легла спать... смотрит порнушку. Может, стоит задержаться?"
@@ -743,6 +756,8 @@ label kira_night_tv:
         # совместный просмотр порно
         if not _in_replay and 'kira_night_tv.porn_view' not in persistent.memories:
             $ persistent.memories['kira_night_tv.porn_view'] = 0
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 180)
         scene BG tv-watch-01
         $ talk_var['kira.porn']+=1
         if talk_var['kira.porn']==1:
@@ -840,6 +855,8 @@ label kira_night_tv:
     label .promise_cuni:
         scene BG char Alice tv-mass-05
         show Kira tv-closer max-03b
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 200)
 
         Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Может порадуешь свою тётю, как обещал? Или ты уже забыл!?"
         menu:
@@ -949,6 +966,7 @@ label kira_night_tv:
         $ persistent.memories['kira_night_tv.first_lesson'] = 1
         $ poss['seduction'].OpenStage(7)
         $ talk_var['teachkiss'] = 2
+        $ SetCamsGrow(house[4], 150)
 
         jump .end
 
@@ -957,6 +975,8 @@ label kira_night_tv:
         $ renpy.block_rollback()
         if not _in_replay and 'kira_night_tv.second_lesson' not in persistent.memories:
             $ persistent.memories['kira_night_tv.second_lesson'] = 0
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 180)
         scene BG char Kira tv-kiss-01
         show Kira tv-kiss 1-01
         Kira_01 "В прошлый раз я тебе рассказала про прелюдии, но с ними мы разобрались. Так что, давай просто будем повышать твою технику опытным путём..."
@@ -1091,6 +1111,8 @@ label kira_night_tv:
                 $ persistent.memories['kira_night_tv.repeat_lesson'] = 0
             if 'kira_tv_bj' not in persistent.memories:
                 $ persistent.memories['kira_tv_bj'] = 0
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 200)
 
         scene BG char Kira tv-kiss-01
         show Kira tv-kiss 1-01
@@ -1259,6 +1281,8 @@ label kira_night_tv:
         jump .end
 
     label .teach_cuni:
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 200)
         menu:
             Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком..."
             "{i}ласкать её грудь и киску{/i}":
@@ -1301,6 +1325,8 @@ label kira_night_tv:
         jump .bj
 
     label .cuni_var2:
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 200)
         $ __r1 = renpy.random.choice([1, 2])
         if __r1<2:
             scene BG lounge-tv-01
@@ -1342,6 +1368,8 @@ label kira_night_tv:
         return
 
     label .bj:
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 200)
         menu:
             Kira_02 "Тебя ожидают незабываемые ощущения, Макс! Посмотрим, как долго ты сможешь продержаться на этот раз..."
             "{i}получать удовольствие{/i}":
@@ -1414,6 +1442,8 @@ label kira_night_tv:
     label .tv_cuni:
         if _in_replay:
             scene BG char Alice tv-mass-05
+        if not _in_replay:
+            $ SetCamsGrow(house[4], 200)
         show Kira tv-closer max-03b
         Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Верно?"
         menu:
@@ -1547,11 +1577,11 @@ label kira_shower:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
             else:
                 Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
-            menu:
-                "К тебе можно, тётя Кира?":
-                    jump .promise_cuni
-                "{i}уйти{/i}":
-                    jump .end
+            $ rez = renpy.display_menu([(_("К тебе можно, тётя Кира?"), 1), (_("{i}уйти{/i}"), 0)])
+            if rez > 0:
+                jump .promise_cuni
+            else:
+                jump .end
         else:
             if __r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
@@ -1560,6 +1590,7 @@ label kira_shower:
         jump .end
 
     label .alt_peepeng:
+        $ spent_time += 10
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Kira shower-alt 0'+str(__r1), at_list=[left_shift,])
@@ -1569,11 +1600,11 @@ label kira_shower:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
             else:
                 Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
-            menu:
-                "К тебе можно, тётя Кира?":
-                    jump .promise_cuni
-                "{i}уйти{/i}":
-                    jump .end
+            $ rez = renpy.display_menu([(_("К тебе можно, тётя Кира?"), 1), (_("{i}уйти{/i}"), 0)])
+            if rez > 0:
+                jump .promise_cuni
+            else:
+                jump .end
         else:
             if __r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
@@ -1582,6 +1613,9 @@ label kira_shower:
         jump .end
 
     label .promise_cuni:
+        if not _in_replay:
+            $ SetCamsGrow(house[3], 200)
+            $ mgg.cleanness = 100
         scene BG shower-closer
         show Kira shower-closer 03
         show FG shower-closer
@@ -1623,6 +1657,7 @@ label kira_shower:
         Kira_07 "Да, Макс, я как раз должна немного... успеть отойти..."
 
         $ flags['promise.cuni.kira'] = False
+        $ spent_time += 20
         jump .end
 
     label .end:

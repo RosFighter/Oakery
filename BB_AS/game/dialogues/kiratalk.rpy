@@ -376,7 +376,8 @@ label kira_talk5:
     $ poss['aunt'].OpenStage(3)
     $ items['photocamera'].InShop = True
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
-    $ SetCamsGrow(house[6], 200)
+    $ SetCamsGrow(house[6], 180)
+    $ SetCamsGrow(house[3], 180)
     $ spent_time += 30
     jump Waiting
 
@@ -535,6 +536,7 @@ label first_photoset:
     $ SetCamsGrow(house[4], 300)
     $ poss['aunt'].OpenStage(4)
     $ items['nightie2'].InShop = False
+    $ items['photocamera'].InShop = False
     $ items['nightie2'].have = False
     $ dcv['kiratalk'].stage += 1
     $ dcv['kiratalk'].set_lost(1)
@@ -610,7 +612,7 @@ label kira_about_photo1:
     Kira_01 "Я рада, что смогла снять твоё напряжение. А теперь, давай разбегаться, пока нас кто-нибудь не увидел..."
     Max_04 "Конечно!"
     $ mgg.cleanness = 100
-    $ SetCamsGrow(house[3], 300)
+    $ SetCamsGrow(house[3], 250)
     $ poss['aunt'].OpenStage(5)
     $ dcv['kiratalk'].stage += 1
     $ dcv['kiratalk'].set_lost(1)
