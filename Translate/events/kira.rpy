@@ -2947,7 +2947,7 @@ translate english strings:
 
     # game/events/kira.rpy:1589
     old "{i}раздеться и присоединиться к Кире{/i}"
-    new "{i}Undress and join her{/i}
+    new "{i}Undress and join her{/i}"
 
     # game/events/kira.rpy:1595
     old "{i}ласкать её грудь{/i}"
