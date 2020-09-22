@@ -1331,3 +1331,15 @@ translate english strings:
     # game/events/eric.rpy:277
     old "{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"
     new "{color=[lime]}{i}{b}Attention:{/b} Your relationship has improved significantly {/i} {/color}"
+# TODO: Translation updated at 2020-09-22 14:59
+
+translate english strings:
+
+    # game/events/eric.rpy:455
+    old "Вы охренели!"
+    new ""
+
+    # game/events/eric.rpy:457
+    old "Ма-а-ам?"
+    new ""
+

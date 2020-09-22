@@ -2199,7 +2199,7 @@ translate english alice_after_club_caress_101fd6b0:
 translate english alice_after_club_caress_8bdcf0d3:
 
     # Max_05 "ПОЧТИ голым телом, но это мелочи... Мне нравится к чему всё идёт! А потом?"
-    Max_05 "So you're almost naked, but that's nothing... I like where this is going! What comes next?"
+    Max_05 "So you're ALMOST naked, but that's nothing... I like where this is going! What comes next?"
 
 # game/events/alice.rpy:1303
 translate english alice_after_club_caress_cad7bc8f:
