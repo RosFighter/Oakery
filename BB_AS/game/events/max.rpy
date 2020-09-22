@@ -576,13 +576,17 @@ label delivery2:
     scene BG delivery-00
     Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
     scene BG delivery-01
-    $ renpy.show('Christina delivery 01'+renpy.random.choice(['a', 'b']))
-    Krs_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    $ __dress = renpy.random.choice(['a', 'b'])
+    $ renpy.show('Christine delivery 01'+__dress)
+    Christine_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
     Max_00 "Конечно! А что тут?"
-    $ renpy.say(Krs_00, __StrDev)
-    Max_00 "Да, то что нужно. Спасибо!"
+    $ renpy.say(Christine_00, __StrDev)
+    Christine_00 "Да, то что нужно. Спасибо!"
     $ current_room = house[6]
     $ talk_var['courier2'] += 1
+    if 'nightie2' in delivery_list[1]:
+        #при доставке сорочки для Киры первый разговор с Кристиной
+        call christina_first_talk(__dress)
     $ DeletingDeliveryTempVar(1) # удалим временные переменные и очистим список доставки
     $ ChoiceClothes()
     jump AfterWaiting

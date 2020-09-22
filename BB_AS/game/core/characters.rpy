@@ -385,22 +385,22 @@ image side sam_04 = 'Sam emo-04'
 
 ## Кристина, курьер (доставляет одежду, косметику, украшения и товары 18+)
 
-define Krs = Character(_("Кристина"))
+define Christine = Character(_("Кристина"))
 
-define Krs_00 = Character(kind=Krs, image='krs_00')
-image side krs_00 = 'Christina emo-00'
+define Christine_00 = Character(kind=Christine, image='Christine_00')
+image side Christine_00 = 'Christine emo-00'
 
-define Krs_01 = Character(kind=Krs, image='krs_01')
-image side krs_01 = 'Christina emo-01'
+define Christine_01 = Character(kind=Christine, image='Christine_01')
+image side Christine_01 = 'Christine emo-01'
 
-define Krs_02 = Character(kind=Krs, image='krs_02')
-image side krs_02 = 'Christina emo-02'
+define Christine_02 = Character(kind=Christine, image='Christine_02')
+image side Christine_02 = 'Christine emo-02'
 
-define Krs_03 = Character(kind=Krs, image='krs_03')
-image side krs_03 = 'Christina emo-03'
+define Christine_03 = Character(kind=Christine, image='Christine_03')
+image side Christine_03 = 'Christine emo-03'
 
-define Krs_04 = Character(kind=Krs, image='krs_04')
-image side krs_04 = 'Christina emo-04'
+define Christine_04 = Character(kind=Christine, image='Christine_04')
+image side Christine_04 = 'Christine emo-04'
 
 
 ## Тётя Кира

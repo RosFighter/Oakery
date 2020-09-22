@@ -1134,13 +1134,11 @@ label alice_after_club:
                 "{i}уйти{/i}":
                     pass
         jump .end
-
     elif rez==2:
         scene Alice bath 01
         $ renpy.show('FG voyeur-bath-00'+mgg.dress)
         Max_00 "Эх! Не повезло... Алиса уже плюхнулась принимать ванну. Отсюда я уже ничего увидеть не смогу..."
         jump .end
-
     elif rez==3:
         scene BG char Max bathroom-window-evening-00
         $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
@@ -1149,10 +1147,8 @@ label alice_after_club:
         $ items['ladder'].have = False
         $ items['ladder'].InShop = False
         jump alice_bath.ladder
-
     elif rez==4:
         jump alice_bath.ladder
-
     else:
         jump .end
 
@@ -1199,7 +1195,9 @@ label alice_after_club:
                     Alice_07 "Например, так? Да, я вижу твой дружок запульсировал ещё сильнее... Это так возбуждает!"
                 Max_03 "А ты не хочешь мне помочь?"
                 if 'black_linderie' in alice.gifts:
+                    # если подарен комплект тёмного белья для блога
                     jump .next1
+
             "А ты не хочешь мне помочь?" if not _in_replay:
                 pass
         menu:

@@ -1088,3 +1088,17 @@ translate english strings:
     old "{i}читать \"СЕКС-ОБРАЗОВАНИЕ\"{/i}"
     new "{i}Read \"SEX EDUCATION\"{/i}"
 
+# TODO: Translation updated at 2020-09-22 14:58
+
+# game/events/max.rpy:581
+translate english delivery2_60d5c126:
+
+    # Christine_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
+    Christine_00 ""
+
+# game/events/max.rpy:584
+translate english delivery2_77047d91:
+
+    # Christine_00 "Да, то что нужно. Спасибо!"
+    Christine_00 ""
+
