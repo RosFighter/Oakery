@@ -2067,237 +2067,237 @@ translate english alice_after_club_9ddb515e_1:
 translate english alice_after_club_next1_156a877b:
 
     # Alice_13 "Может и хочу! Я ведь была очень плохой девочкой... Ты помогаешь мне с блогом, купил классное нижнее бельё, балуешь сладостями... а я только угрозами в тебя сыплю..."
-    Alice_13 ""
+    Alice_13 "Maybe I do! I was a very bad girl... You help with my blog, buy me lingerie, treat me with sweets... all I do is threaten you..."
 
 # game/events/alice.rpy:1225
 translate english alice_after_club_next1_94ee6ac1:
 
     # Max_01 "Не только... С тобой бывают светлые моменты!"
-    Max_01 ""
+    Max_01 "Don't say that... We still have good moments together!"
 
 # game/events/alice.rpy:1226
 translate english alice_after_club_next1_4614c192:
 
     # Alice_08 "Сейчас их может стать на один больше! Что ты хочешь, чтобы я сделала?" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Now there might be one more! What do you want me to do?" nointeract
 
 # game/events/alice.rpy:1233
 translate english alice_after_club_next1_b4e4420b:
 
     # Alice_05 "Какие у тебя скромные желания, Макс! Всего лишь раздеть свою старшую сестру..."
-    Alice_05 ""
+    Alice_05 "You really don't ask for much, Max! You only want me to get naked..."
 
 # game/events/alice.rpy:1234
 translate english alice_after_club_next1_0a2e7bf2:
 
     # Max_02 "На тебе ещё есть халат, так что ты точно не раздетая!"
-    Max_02 ""
+    Max_02 "You still have a robe on, so you're definitely not naked!"
 
 # game/events/alice.rpy:1235
 translate english alice_after_club_next1_db314a2a:
 
     # Alice_04 "Неужели это всё, чего ты хотел?" nointeract
-    Alice_04 "" nointeract
+    Alice_04 "Is that all you wanted?" nointeract
 
 # game/events/alice.rpy:1253
 translate english alice_after_club_caress_3ee5ce72:
 
     # Alice_09 "Ого... Я даже не могу обхватить его всей рукой! Ты ведь давно об этом мечтал, да Макс?"
-    Alice_09 ""
+    Alice_09 "Wow... I can't even wrap my whole hand around it! You've been dreaming about this for a long time, haven't you?"
 
 # game/events/alice.rpy:1254
 translate english alice_after_club_caress_4833364f:
 
     # Max_04 "Может быть..."
-    Max_04 ""
+    Max_04 "Maybe..."
 
 # game/events/alice.rpy:1255
 translate english alice_after_club_caress_e335bb45:
 
     # Alice_07 "Наверняка, ты много раз фантазировал, как я буду чувственно дрочить его своими нежными руками... Ну и как, Макс, приятно?"
-    Alice_07 ""
+    Alice_07 "I'm sure you've fantasized a lot about me stroking your thick cock... so how is it?"
 
 # game/events/alice.rpy:1256
 translate english alice_after_club_caress_26f96547:
 
     # Max_05 "О да! Намного приятнее, чем фантазировать об этом..."
-    Max_05 ""
+    Max_05 "Oh Yes! The real thing is so much better..."
 
 # game/events/alice.rpy:1257
 translate english alice_after_club_caress_72bb6cc5:
 
     # Alice_05 "Не сомневаюсь. Ванна почти наполнилась водой, так что мы можем быстренько успеть что-то ещё! Но осторожнее с желаниями..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "I don't doubt it. The tub's almost full, so we can quickly try something else! But be careful what you wish for..." nointeract
 
 # game/events/alice.rpy:1264
 translate english alice_after_club_caress_ea00c690:
 
     # Alice_03 "Да ладно! Где это ты успел? Ты же дома больше меня сидишь. Не верю я тебе..."
-    Alice_03 ""
+    Alice_03 "Come on! Where did you get this? You're home more than me. I don't believe you..."
 
 # game/events/alice.rpy:1265
 translate english alice_after_club_caress_92cfee2f:
 
     # Max_03 "А ты попробуй!" nointeract
-    Max_03 "" nointeract
+    Max_03 "Try it!" nointeract
 
 # game/events/alice.rpy:1272
 translate english alice_after_club_caress_0eef6f8e:
 
     # Max_02 "{i}( А Алиса хорошо целуется! Да со страстью, увлечённо... Ммм... Губки у неё сочные... А уж как в член мой вцепилась! ){/i}" nointeract
-    Max_02 "" nointeract
+    Max_02 "{i}( Alice is good with her mouth! She's passionate ... Mmm... Her lips are juicy... and she's slobbering over my cock! ){/i}" nointeract
 
 # game/events/alice.rpy:1279
 translate english alice_after_club_caress_6bfa4c34:
 
     # Alice_09 "Нифига себе! Ты и этому что ли на интернет-курсах научился? Не может быть такого..."
-    Alice_09 ""
+    Alice_09 "Fuck! Did you learn this online too? This can't be happening..."
 
 # game/events/alice.rpy:1280
 translate english alice_after_club_caress_d3653569:
 
     # Max_04 "А вот теперь ванну принимай и гадай, как я научился."
-    Max_04 ""
+    Max_04 "You should get in the bath and you can find out how I learned it."
 
 # game/events/alice.rpy:1281
 translate english alice_after_club_caress_14d69a92:
 
     # Alice_02 "Ой, уже наполнилась! А это значит что? Правильно, спокойной ночи!"
-    Alice_02 ""
+    Alice_02 "Oh, it's already full! Which means what? That's right, good night!"
 
 # game/events/alice.rpy:1282
 translate english alice_after_club_caress_330435b3:
 
     # Max_01 "Ага. Приятных снов, Алиса."
-    Max_01 ""
+    Max_01 "Aha. Sleep well, Sis."
 
 # game/events/alice.rpy:1289
 translate english alice_after_club_caress_0353d6b3:
 
     # Alice_07 "Ха! Кое-чего ты обо мне не знаешь, Макс... Я предпочитаю девушек... Но не откажусь от парня, если у него есть что-то... особенное..."
-    Alice_07 ""
+    Alice_07 "Ha! There's something you don't know about me, Max... I like girls... But I won't turn down a guy if he had something... special..."
 
 # game/events/alice.rpy:1290
 translate english alice_after_club_caress_e6154cb5:
 
     # Max_03 "Как удачно, что ты как раз держишь в руке кое-что особенное!"
-    Max_03 ""
+    Max_03 "How fortunate that you're holding something special in your hand!"
 
 # game/events/alice.rpy:1294
 translate english alice_after_club_caress_5c8fda2a:
 
     # Alice_04 "Да... И я бы, пожалуй, сняла с себя халат, пока ласкала его член... Чтобы ничто не мешало ему наслаждаться моим совершенно голым телом!"
-    Alice_04 ""
+    Alice_04 "Yes... And I would probably take off my robe while I stroke his cock... So that nothing prevents him fully enjoying me!"
 
 # game/events/alice.rpy:1296
 translate english alice_after_club_caress_101fd6b0:
 
     # Max_05 "Правильно, Алиса... Такое шикарное тело лучше не скрывать! А потом?"
-    Max_05 ""
+    Max_05 "That's Right, Alice... you shouldn't hide such a hot body! Then what would you do?"
 
 # game/events/alice.rpy:1298
 translate english alice_after_club_caress_8bdcf0d3:
 
     # Max_05 "ПОЧТИ голым телом, но это мелочи... Мне нравится к чему всё идёт! А потом?"
-    Max_05 ""
+    Max_05 "So you're almost naked, but that's nothing... I like where this is going! What comes next?"
 
 # game/events/alice.rpy:1303
 translate english alice_after_club_caress_cad7bc8f:
 
     # Alice_08 "А потом я бы опустилась на колени и начала водить его членом по своему лицу... неспеша и слегка задевая губами..."
-    Alice_08 ""
+    Alice_08 "And then I would get down on my knees and start running his cock over my face... slowly and lightly brushing my lips..."
 
 # game/events/alice.rpy:1304
 translate english alice_after_club_caress_d8555a86:
 
     # Max_20 "Ох, чёрт! А потом..."
-    Max_20 ""
+    Max_20 "Oh, shit! And then?"
 
 # game/events/alice.rpy:1309
 translate english alice_after_club_caress_3a46d27b:
 
     # Alice_05 "У меня ванна набралась, так что спокойной ночи!"
-    Alice_05 ""
+    Alice_05 "The bath is ready, so good night!"
 
 # game/events/alice.rpy:1310
 translate english alice_after_club_caress_1ad82533:
 
     # Max_10 "Да ладно, Алиса! Это слишком жёсткий облом!"
-    Max_10 ""
+    Max_10 "Come on, Alice! Don't leave me with blue balls!"
 
 # game/events/alice.rpy:1311
 translate english alice_after_club_caress_bb48092d:
 
     # Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
-    Alice_04 ""
+    Alice_04 "Max... you don't want Mom to hear that you groped me, do you?"
 
 # game/events/alice.rpy:1312
 translate english alice_after_club_caress_cfe6cd28:
 
     # Max_00 "Всё понял, ухожу..."
-    Max_00 ""
+    Max_00 "I understand, I'm leaving..."
 
 # game/events/alice.rpy:1318
 translate english alice_after_club_caress_78a02b4d:
 
     # Alice_07 "Думаешь? Как знать... Но в любом случае уже поздно, а мне ещё ванну принимать, так что спокойной ночи, Макс."
-    Alice_07 ""
+    Alice_07 "You think so? Who knows... But in any case, it's late, and I have to take a bath, so good night, Max."
 
 # game/events/alice.rpy:1319
 translate english alice_after_club_caress_330435b3_1:
 
     # Max_01 "Ага. Приятных снов, Алиса."
-    Max_01 ""
+    Max_01 "Aha. Sleep well, Sis."
 
 # game/events/alice.rpy:1324
 translate english alice_after_club_suck_39a258b3:
 
     # Alice_13 "Какой ты грубый, Макс! Я люблю грубость, но не так сразу... Испортил ты всё! И вообще, у меня ванна набралась, так что спокойной ночи." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "You're so gross, Max! I might appreciate that sometimes, but not so soon... You've ruined everything! Anyway, the bath's ready, so good night." nointeract
 
 # game/events/alice.rpy:1327
 translate english alice_after_club_suck_bb48092d:
 
     # Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
-    Alice_04 ""
+    Alice_04 "Max... you don't want Mom to hear that you groped me, do you?"
 
 # game/events/alice.rpy:1328
 translate english alice_after_club_suck_cfe6cd28:
 
     # Max_00 "Всё понял, ухожу..."
-    Max_00 ""
+    Max_00 "I understand, I'm leaving..."
 
 translate english strings:
 
     # game/events/alice.rpy:1226
     old "Хочу, чтобы ты сняла трусики..."
-    new ""
+    new "I want you to take off your panties..."
 
     # game/events/alice.rpy:1226
     old "Хочу, чтобы ты поласкала его..."
-    new ""
+    new "I want you to pet him..."
 
     # game/events/alice.rpy:1226
     old "Хочу, чтобы ты отсосала..."
-    new ""
+    new "I want you to suck my dick..."
 
     # game/events/alice.rpy:1257
     old "Хочу показать тебе, как я научился целоваться..."
-    new ""
+    new "I want to show you how I learned to kiss..."
 
     # game/events/alice.rpy:1257
     old "А если бы я был твоим парнем... Что бы ты сделала дальше?"
-    new ""
+    new "What if I were your boyfriend?.. What would you do next?"
 
     # game/events/alice.rpy:1257
     old "На всё остальное ты не согласишься..."
-    new ""
+    new "You won't agree to anything else..."
 
     # game/events/alice.rpy:1265
     old "{i}целовать Алису{/i}"
-    new ""
+    new "{i}Kiss Alice{/i}"
 
     # game/events/alice.rpy:1272
     old "{i}закончить целоваться{/i}"
-    new ""
+    new "{i}Finish kissing her{/i}"
 
