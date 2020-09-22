@@ -76,7 +76,7 @@ translate english christina_first_talk_61e204a2:
 translate english christina_first_talk_45bffd64:
 
     # Christine_04 "Макс, ты выглядишь лет на десять!"
-    Christine_04 "Max, you look you're about ten years old!
+    Christine_04 "Max, you look you're about ten years old!"
 
 # game/dialogues/christina.rpy:20
 translate english christina_first_talk_c2d8dc26:

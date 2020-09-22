@@ -1341,5 +1341,5 @@ translate english strings:
 
     # game/events/eric.rpy:457
     old "Ма-а-ам?"
-    new "MA-a-am?"
+    new "Mo-o-om?"
 
