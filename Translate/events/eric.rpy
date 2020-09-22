@@ -1337,9 +1337,9 @@ translate english strings:
 
     # game/events/eric.rpy:455
     old "Вы охренели!"
-    new ""
+    new "You are fucked up!"
 
     # game/events/eric.rpy:457
     old "Ма-а-ам?"
-    new ""
+    new "MA-a-am?"
 

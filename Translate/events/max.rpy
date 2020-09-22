@@ -1094,11 +1094,11 @@ translate english strings:
 translate english delivery2_60d5c126:
 
     # Christine_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
-    Christine_00 ""
+    Christine_00 "Hello there! I have a delivery for this adress. Please sign here?"
 
 # game/events/max.rpy:584
 translate english delivery2_77047d91:
 
     # Christine_00 "Да, то что нужно. Спасибо!"
-    Christine_00 ""
+    Christine_00 "Yes, that's it. Thanks!"
 
