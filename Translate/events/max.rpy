@@ -836,12 +836,6 @@ translate english strings:
 
 # TODO: Translation updated at 2020-03-09 09:49
 
-# game/events/max.rpy:517
-translate english delivery2_e7863a82:
-
-    # Krs_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
-    Krs_00 "Hi there! I have a delivery for this address. May I ask you to sign here?"
-
 # game/events/max.rpy:518
 translate english delivery2_509c6af4:
 

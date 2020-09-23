@@ -377,3 +377,15 @@ translate english strings:
     old "Не злишься на меня, тётя Кира?"
     new "Aren't you mad at me, Aunt Kira?"
 
+# TODO: Translation updated at 2020-09-23 17:18
+
+translate english strings:
+
+    # game/core/02init.rpy:82
+    old "Мне нужны деньги..."
+    new ""
+
+    # game/core/02init.rpy:82
+    old "Эрик, мы же договорились!"
+    new ""
+
