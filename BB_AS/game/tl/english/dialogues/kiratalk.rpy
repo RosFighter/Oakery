@@ -1523,3 +1523,11 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:627
     old "Нет, просто были дела с Алисой."
     new "No, I just had business with Alice."
+# TODO: Translation updated at 2020-09-23 17:18
+
+# game/dialogues/kiratalk.rpy:21
+translate english KiraTalkStart_f5d167eb:
+
+    # Kira_00 "Макс, чем тебе помочь?"
+    Kira_00 ""
+

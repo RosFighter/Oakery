@@ -467,7 +467,7 @@ init python:
                         pub = cam.public * k_glow # прирост/отток публики
                         cam.public += round(pub / 6.0, 2) # прирост зрителей от интереса событий
                         earn = (cam.public * k_grow) /45000.0 # расчет прибыли. Чем зрителям интересней, тем больше они донатят
-                        earn = round(earn, 2)
+                        earn = round(earn * 0.7, 2)
                         cam.total += earn
                         if cur_tm == '04:00':
                             cam.today += earn

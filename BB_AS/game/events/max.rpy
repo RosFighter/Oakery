@@ -14,6 +14,8 @@ label StartDialog:
             jump AnnTalkStart
         elif current_room.cur_char[0] == 'kira':
             jump KiraTalkStart
+        elif current_room.cur_char[0] == 'eric':
+            jump EricTalkStart
 
     jump AfterWaiting
 

@@ -1427,9 +1427,21 @@ translate english strings:
 
     # game/core/03variables.rpy:448
     old "Моими подозрительными заказами всякой женской одежды заинтересовалась девчонка из доставки. Как выяснилось, её зовут Кристина. \nЯ не решился подкатить к ней... Она бы меня наверняка отшила. Хотя, попробовать всё равно можно было..."
-    new ""
+    new "The delivery girl got suspicious over my constant orders for women's clothes. Her name is Christina. \nI didn't dare hit on her, she'd definitely turn me down. Although, It's not like I have anything to lose by trying..."
 
     # game/core/03variables.rpy:448
     old "Моими подозрительными заказами всякой женской одежды заинтересовалась девчонка из доставки. Как выяснилось, её зовут Кристина. \nНе самым умным решением было к ней сразу же подкатывать, но что сделано, то сделано. Понятно, что она бы в любом случае меня отшила, но попробовать стоило..."
+    new "The delivery girl got interested by my suspicious orders of women's clothing. Her name is Christina. \nThe smartest decision for me was to hit on her right away, but what's done is done. It's clear that she would have turned me down anyway, but it was worth a try..."
+
+# TODO: Translation updated at 2020-09-23 17:54
+
+translate english strings:
+
+    # game/core/03variables.rpy:453
+    old "Контроль"
+    new ""
+
+    # game/core/03variables.rpy:453
+    old "Что это было? Мама поймала меня на подглядывании за ними, пока они трахались, собиралась наказать, но Эрик сказал нет и мама согласилась?! Моя мама, которая запрещала мне смотреть даже эротику, согласилась, чтобы я присутствовал при таком? Это невероятно. Либо Эрик какой-то колдун, либо дело в другом и нужно в этом разобраться, как следует."
     new ""
 

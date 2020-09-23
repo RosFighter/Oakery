@@ -246,6 +246,8 @@ label punishment_max:
             $ renpy.show("Ann punish-evening max-02"+ann.dress+mgg.dress)
         Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
         ## здесь снижение влияния Макса для присутствующих персонажей
+        if talk_var['eric.voy.stage']==0 and punreason[3]:
+            $ talk_var['eric.voy.stage']=1 # если Макс попался на подглядывании за трахом Ани и Эрика, на пути дружбы с ним
         python:
             for cr in current_room.cur_char:
                 if chars[cr].infmax is not None:
@@ -307,6 +309,8 @@ label punishment_max:
             $ renpy.show("Ann punish-evening max-02"+ann.dress+mgg.dress)
         Max_14 "{i}Блин... Все с таким интересом смотрят, как меня наказывают...  Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
         ## здесь снижение влияния Макса для присутствующих персонажей
+        if talk_var['eric.voy.stage']==0 and punreason[3]:
+            $ talk_var['eric.voy.stage']=1 # если Макс попался на подглядывании за трахом Ани и Эрика, на пути дружбы с ним
         python:
             for cr in current_room.cur_char:
                 if chars[cr].infmax is not None:

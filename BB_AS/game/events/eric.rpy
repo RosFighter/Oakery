@@ -180,6 +180,7 @@ label Eric_talk_afterdinner:
         Eric_02 "Всё ясно с тобой. Ну, это твой выбор. У тебя была неделя, чтобы всё обдумать. Ты решил начать войну, ну что же, не вини меня за то, как я её закончу..."
         $ notify_list.append(_("{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"))
         $ AttitudeChange('eric', -3)
+        $ talk_var['eric.voy.stage'] = -1
         $ poss['alpha'].SetStage(3)
         jump Waiting
 
@@ -276,6 +277,7 @@ label Eric_talk_afterdinner:
         Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
         $ notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"))
         $ poss['alpha'].SetStage(2)
+        $ talk_var['eric.voy.stage'] = 0
         $ AttitudeChange('eric', 4)
         jump Waiting
 
@@ -532,13 +534,19 @@ label eric_ann_fucking:
     $ _ch1 = GetChance(mgg.stealth, 3, 900)
     menu:
         Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
+        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if talk_var['eric.voy.stage']<0:# or talk_var['eric.voy.stage']>6:
             pass
+        "{i}заглянуть в окно{/i}" if talk_var['eric.voy.stage'] in [0, 2, 3]:
+            pass
+        "{i}зайти в спальню{/i}" if 3<talk_var['eric.voy.stage']<8:
+            jump lessons_from_Eric
         "{i}уйти{/i}":
             $ current_room = house[0]
             jump AfterWaiting
 
-    $ spent_time += 10
+    label .voyeur:  # точка входа после заглушки
+        $ spent_time += 10
+
     $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
     if fuck_scene in [3, 6]:
         scene BG char Eric bed-02
@@ -553,7 +561,51 @@ label eric_ann_fucking:
     else:
         $ renpy.show('FG ann&eric-voyeur-01')
 
-    if RandomChance(_ch1.ch):
+    if talk_var['eric.voy.stage'] in [0, 2, 3]:
+        if fuck_scene == 6:
+            scene BG char Eric bed-02
+            $ renpy.show('Eric fuck 06b')
+            $ renpy.show('FG ann&eric-voyeur-02')
+        else:
+            $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
+        if talk_var['eric.voy.stage'] == 0:
+            Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
+            $ punreason[3] = 1
+
+        elif talk_var['eric.voy.stage'] == 2:
+            Ann_19 "Макс? Ты опять подглядываешь? Утром накажу у всех на глазах за это!"
+            Max_10 "Э... Не надо!"
+            Eric_03 "Ань, не спеши. Макс подросток и ему всё интересно. Ты же знаешь, запретный плод сладок. Думаю, не стоит его наказывать за такие шалости. Хорошо?"
+            Ann_14 "Ну, хорошо, Эрик. Если ты так считаешь... Но пусть он уйдёт, я не могу так..."
+            Max_07 "Я уже ухожу, мам... Продолжайте!"
+            $ talk_var['eric.voy.stage'] = 3
+
+        elif talk_var['eric.voy.stage'] == 3:
+            menu:
+                Ann_18 "Макс? Опять подглядываешь?! Ну-ка бегом отсюда!"
+                "Я никому не мешаю же...":
+                    menu:
+                        Eric_02 "Ань, пусть лучше смотрит на нас, чем на непойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..."
+                        "{i}войти в комнату{/i}":
+                            scene BG char Eric annroom-watch-01
+                            show Eric watch 00
+                            $ renpy.show('Max annroom-watch 01'+mgg.dress)
+                            #annroom-watch-01 + annroom-watch-01-ann&eric-00 + annroom-watch-01-max-(01-01b)
+                            Ann_14 "Эрик, но... он мой сын. Это неправильно, ты же понимаешь..."
+                            Eric_03 "Я думаю, что мы должны разрешить ему смотреть, если не будет мешать. Может быть, чему-то научится. Где-то ему же нужно учиться, пусть это будет таким образом... И Ань, не спорь со мной!"
+                            Ann_12 "Как скажешь, Эрик..."
+                            Eric_01 "Ну всё, Макс. Мы тут ещё побеседуем. А для тебя на сегодня хватит, иди."
+                            Max_00 "Хорошо..."
+                            $ talk_var['eric.voy.stage'] = 4
+                            $ poss['control'].OpenStage(0)
+
+                "Я уже ухожу, мам... Извини...":
+                    pass
+
+        $ current_room = house[0]
+        jump Waiting
+
+    if RandomChance(_ch1.ch) or talk_var['eric.voy.stage'] > 6:
         $ Skill('hide', 0.1)
         $ ann.dress_inf = '00'
         $ peeping['ann_eric_sex1'] = 3
@@ -753,8 +805,6 @@ label eric_ann_shower:
             "{i}уйти{/i}":
                 jump Waiting
     label .alt_peepeng:
-        if not RandomChance(_ch2.ch):
-            jump .not_luck
         $ spent_time += 10
         if __r1 == '01':
             $ __r2 = renpy.random.choice(['01', '02', '03'])
@@ -762,7 +812,7 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['05', '06'])
         else:
             $ __r2 = renpy.random.choice(['04', '07'])
-        if not RandomChance(_ch1.ch):
+        if not RandomChance(_ch2.ch) and talk_var['eric.voy.stage']<1:
             jump .not_luck
         $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
@@ -807,7 +857,7 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['04', '05'])
         else:
             $ __r2 = renpy.random.choice(['06', '07'])
-        if not RandomChance(_ch1.ch):
+        if not RandomChance(_ch1.ch) and talk_var['eric.voy.stage']<1:
             jump .not_luck
 
         $ Skill('hide', 0.2)

@@ -14,8 +14,11 @@ label KiraTalkStart:
         jump Waiting
 
     $ renpy.block_rollback()
-    Max_01 "Не против компании?"
-    Kira_01 "Конечно, Макс. Ложись рядом. Погода сегодня отличная!" nointeract
+    if kira.plan_name == 'sun':
+        Max_01 "Не против компании?"
+        Kira_01 "Конечно, Макс. Ложись рядом. Погода сегодня отличная!" nointeract
+    else:
+        Kira_00 "Макс, чем тебе помочь?"
     $ rez =  renpy.display_menu(dial)
 
     if rez != "exit":

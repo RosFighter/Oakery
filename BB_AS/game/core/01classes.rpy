@@ -509,8 +509,8 @@ init python:
         def account(self):
             return self.__account
 
-        def ask(self, lvl):   # просим денег
-            self.__tange += {
+        def ask(self, lvl, fee=0):   # просим денег
+            self.__tange += fee+{
                 0: 10,
                 1: 20,
                 2: 40,
