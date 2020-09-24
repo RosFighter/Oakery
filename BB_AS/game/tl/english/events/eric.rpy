@@ -1349,161 +1349,161 @@ translate english strings:
 translate english eric_ann_fucking_voyeur_c6b7e289:
 
     # Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 ""
+    Ann_15 "[spotted!t]Max?! What the hell? Are you spying on us?! You will be punished tomorrow! Get out now!"
 
 # game/events/eric.rpy:576
 translate english eric_ann_fucking_voyeur_efe42e22:
 
     # Ann_19 "Макс? Ты опять подглядываешь? Утром накажу у всех на глазах за это!"
-    Ann_19 ""
+    Ann_19 "Max? Are you peeking again? You are going to be punished tomorrow morning in front of everyone!"
 
 # game/events/eric.rpy:577
 translate english eric_ann_fucking_voyeur_05e8307c:
 
     # Max_10 "Э... Не надо!"
-    Max_10 ""
+    Max_10 "Er... please no!"
 
 # game/events/eric.rpy:578
 translate english eric_ann_fucking_voyeur_76d28525:
 
     # Eric_03 "Ань, не спеши. Макс подросток и ему всё интересно. Ты же знаешь, запретный плод сладок. Думаю, не стоит его наказывать за такие шалости. Хорошо?"
-    Eric_03 ""
+    Eric_03 "Ann, don't be upset. Max is a teenager, you know they're always going to get up to things they're not supposed to. So I don't think you should punish him just for curiosity, right?"
 
 # game/events/eric.rpy:579
 translate english eric_ann_fucking_voyeur_5af09ed2:
 
     # Ann_14 "Ну, хорошо, Эрик. Если ты так считаешь... Но пусть он уйдёт, я не могу так..."
-    Ann_14 ""
+    Ann_14 "I understand your point Eric. If that's what you really think..."
 
 # game/events/eric.rpy:580
 translate english eric_ann_fucking_voyeur_c6425607:
 
     # Max_07 "Я уже ухожу, мам... Продолжайте!"
-    Max_07 ""
+    Max_07 "I'm leaving now, Mom... don't mind me!"
 
 # game/events/eric.rpy:584
 translate english eric_ann_fucking_voyeur_1a6dca32:
 
     # Ann_18 "Макс? Опять подглядываешь?! Ну-ка бегом отсюда!" nointeract
-    Ann_18 "" nointeract
+    Ann_18 "Max? Peeping again?! Get out of here!" nointeract
 
 # game/events/eric.rpy:587
 translate english eric_ann_fucking_voyeur_afca94eb:
 
     # Eric_02 "Ань, пусть лучше смотрит на нас, чем на непойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
-    Eric_02 "" nointeract
+    Eric_02 "Ann, it's better to watch us instead of all the messed up stuff on the internet, you know? Max, come in here and we'll talk..." nointeract
 
 # game/events/eric.rpy:594
 translate english eric_ann_fucking_voyeur_9e12ffd3:
 
     # Ann_14 "Эрик, но... он мой сын. Это неправильно, ты же понимаешь..."
-    Ann_14 ""
+    Ann_14 "Eric, but... he's my son. It's not right, you know..."
 
 # game/events/eric.rpy:595
 translate english eric_ann_fucking_voyeur_271fa166:
 
     # Eric_03 "Я думаю, что мы должны разрешить ему смотреть, если не будет мешать. Может быть, чему-то научится. Где-то ему же нужно учиться, пусть это будет таким образом... И Ань, не спорь со мной!"
-    Eric_03 ""
+    Eric_03 "I think we should let him watch as long as he keeps to himself. He can learn about relationships, it'll have to happen sometime, so let it be here.... And Ann, you know I'm right about this!"
 
 # game/events/eric.rpy:596
 translate english eric_ann_fucking_voyeur_e33a4f0b:
 
     # Ann_12 "Как скажешь, Эрик..."
-    Ann_12 ""
+    Ann_12 "Whatever you say, Eric..."
 
 # game/events/eric.rpy:597
 translate english eric_ann_fucking_voyeur_9f2cfa55:
 
     # Eric_01 "Ну всё, Макс. Мы тут ещё побеседуем. А для тебя на сегодня хватит, иди."
-    Eric_01 ""
+    Eric_01 "All right, Max. We'll talk later. That's enough for you today, go."
 
 # game/events/eric.rpy:598
 translate english eric_ann_fucking_voyeur_6e7aee99:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Yeah..."
 
 # game/events/eric.rpy:612
 translate english eric_ann_fucking_voyeur_02303e2f:
 
     # Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
-    Max_10 "" nointeract
+    Max_10 "[undetect!t]my God, what is Mom doing?! Does she really like blowing this jerk?!" nointeract
 
 # game/events/eric.rpy:614
 translate english eric_ann_fucking_voyeur_6f277737:
 
     # Max_07 "[undetect!t]Вот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
-    Max_07 "" nointeract
+    Max_07 "[undetect!t]Yes! Just like in a porn movie! I couldn't even imagine that my strict mom could do such a thing. And Eric is not far behind her... She seems to like it very much!" nointeract
 
 # game/events/eric.rpy:616
 translate english eric_ann_fucking_voyeur_fd07b201:
 
     # Max_10 "[undetect!t]Что?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
-    Max_10 "" nointeract
+    Max_10 "[undetect!t]What?! Mom's sucking off this freak? Eric, the bastard, fucking her in the mouth like some cheap street whore! Why would she let him?!" nointeract
 
 # game/events/eric.rpy:618
 translate english eric_ann_fucking_voyeur_2223829f:
 
     # Max_08 "[undetect!t]Ну вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
-    Max_08 "" nointeract
+    Max_08 "[undetect!t]Eric is fucking Mom from behind, so actively... It seems that she just doesn't have the strength to resist it, maybe she likes it!" nointeract
 
 # game/events/eric.rpy:620
 translate english eric_ann_fucking_voyeur_769f0bc5:
 
     # Max_07 "[undetect!t]Ничего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
-    Max_07 "" nointeract
+    Max_07 "[undetect!t]Wow! The passion! Mom's riding Eric like crazy! I couldn't even imagine that she would do such a thing! They seem so involved with each other that they won't notice if I come around the corner..." nointeract
 
 # game/events/eric.rpy:630
 translate english eric_ann_fucking_voyeur_c6b7e289_1:
 
     # Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 ""
+    Ann_15 "[spotted!t]Max?! What the hell? Are you spying on us?! You will be punished tomorrow! Get out now!"
 
 # game/events/eric.rpy:650
 translate english eric_ann_fucking_voyeur_7613d8b5:
 
     # Max_09 "Чёрт, этот удачливый ублюдок кончил ей прямо в рот, причём, судя по довольному лицу мамы, ей это понравилось! Ну почему таким уродам всегда везёт?! Ладно, надо уходить, а то они сейчас меня заметят..."
-    Max_09 ""
+    Max_09 "Damn, the lucky bastard came right in her mouth, and from the look on Mom's face, she liked it! Why do such freaks always get lucky?! Well, I better go, or they'll see me..."
 
 # game/events/eric.rpy:652
 translate english eric_ann_fucking_voyeur_2d5a32c4:
 
     # Max_08 "Ого! Похоже, мама кончила и... Эрик тоже... Хорошо, что хоть не маме в рот... А она у нас та ещё проказница! Пора сматываться, пока меня не заметили!"
-    Max_08 ""
+    Max_08 "Wow! It looks like mom finished and... Eric, too... At least it wasn't in her mouth... Time to get out of here before they see me!"
 
 # game/events/eric.rpy:654
 translate english eric_ann_fucking_voyeur_05040526:
 
     # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватало ещё, чтобы меня увидели..."
-    Max_11 ""
+    Max_11 "Damn, that bastard came right in her mouth and... she doesn't seem too happy about it. Poor Mom... I'd better get out of here, because I don't want to be seen..."
 
 # game/events/eric.rpy:656
 translate english eric_ann_fucking_voyeur_8f598321:
 
     # Max_10 "Ох, чёрт... наконец-то Эрик кончил и... хорошо, что не в маму... Вот же счастливый сукин сын... залил ей своей спермой всю спину... Пожалуй, не стоит здесь задерживаться, они могут меня увидеть."
-    Max_10 ""
+    Max_10 "Oh, shit... finally, Eric finished and... good thing it wasn't inside... What a lucky son of a bitch... poured cum all over her back... I don't think I should stay here too long, they might see me."
 
 # game/events/eric.rpy:658
 translate english eric_ann_fucking_voyeur_844b777a:
 
     # Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
-    Max_10 ""
+    Max_10 "Damn it... he couldn't hold back and finished... Although, it's hardly surprising after all that! You lucky bastard, Eric! Now I have to leave before they notice me!"
 
 translate english strings:
 
     # game/events/eric.rpy:535
     old "{i}зайти в спальню{/i}"
-    new ""
+    new "{i}Go to the bedroom{/i}"
 
     # game/events/eric.rpy:584
     old "Я никому не мешаю же..."
-    new ""
+    new "I'm not bothering anyone..."
 
     # game/events/eric.rpy:584
     old "Я уже ухожу, мам... Извини..."
-    new ""
+    new "I'm leaving now, Mom... Sorry..."
 
     # game/events/eric.rpy:587
     old "{i}войти в комнату{/i}"
-    new ""
+    new "{i}Enter the room{/i}"
 

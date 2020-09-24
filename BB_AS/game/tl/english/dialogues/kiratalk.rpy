@@ -1529,5 +1529,5 @@ translate english strings:
 translate english KiraTalkStart_f5d167eb:
 
     # Kira_00 "Макс, чем тебе помочь?"
-    Kira_00 ""
+    Kira_00 "Max, how can I help you?"
 
