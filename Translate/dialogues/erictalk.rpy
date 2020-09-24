@@ -202,7 +202,7 @@ translate english lessons_from_Eric_first_bj_8d94ef9d:
 translate english lessons_from_Eric_first_bj_dcbf09ea:
 
     # Ann_14 "Прости, Макс... Я была такой никудышной матерью по отношению к тебе..."
-    Ann_14 I'm so, so sorry, Max... I've been such a terrible mother...""
+    Ann_14 "I'm so, so sorry, Max... I've been such a terrible mother..."
 
 # game/dialogues/erictalk.rpy:134
 translate english lessons_from_Eric_first_bj_e2384074:
@@ -478,7 +478,8 @@ translate english lessons_from_Eric_third_bj_ebdc05cd:
 translate english lessons_from_Eric_third_bj_92331caf:
 
     # Eric_01 "Вообще-то, тебе и этого более чем хватит на сегодня. Давай, иди гуляй..."
-    Eric_01 "Actually, that's more than enough for you today. You should take a walk for now
+    Eric_01 "Actually, that's more than enough for you today. You should take a walk for now"
+
 # game/dialogues/erictalk.rpy:297
 translate english lessons_from_Eric_third_bj_adf24661:
 
@@ -530,4 +531,3 @@ translate english strings:
     # game/dialogues/erictalk.rpy:279
     old "{i}пересесть{/i}"
     new "{i}Sit down{/i}"
-
