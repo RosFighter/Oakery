@@ -100,7 +100,7 @@ translate english eric_voy_wtf_ca50ebd8:
 translate english eric_voy_wtf_a30920d7:
 
     # Eric_03 "Так я тебе и выдал свой секрет! Не сейчас. Может быть, однажды расскажу. Но поверь, мой способ очень эффективен! Так что, слушайся меня и я не буду настраивать никого против тебя..." nointeract
-    Eric_03 "You want to know my secret? Not now. Maybe one day I'll tell you. But believe me, it's very effective! So keep running with me and I won't turn aynone against you..." nointeract
+    Eric_03 "You want to know my secret? Not now. Maybe one day I'll tell you. But believe me, it's very effective! So keep running with me and I won't turn anyone against you..." nointeract
 
 # game/dialogues/erictalk.rpy:68
 translate english eric_voy_wtf_adbd392c:
