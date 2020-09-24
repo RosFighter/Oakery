@@ -513,6 +513,8 @@ label cam0_alice_cooking_dinner:
 
 label cam0_alice_rest_evening:
     if get_format_blog()>0:
+        if 'cam_pose_blog' not in globals():
+            $ cam_pose_blog = []
         call cam0_alice_blog_lingerie
         return
 
