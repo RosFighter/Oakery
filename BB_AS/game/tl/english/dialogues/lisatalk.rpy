@@ -7433,7 +7433,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:2961
     old "Ну кто ещё тебя научит? А сейчас я готов тебе помочь! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new "Who else can teach you? And now I'm ready to help you! {color=[_ch2.cooh]}(Conviction. Chance: [_ch2.vis]){/color}"
+    new "Who else can teach you? And now I'm ready to help you! {color=[_ch2.col]}(Conviction. Chance: [_ch2.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:2970
     old "{i}Продемонстрировать своё мастерство{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
@@ -7893,4 +7893,3 @@ translate english MorningWoodCont2_var3_9aba62c0:
 
     # Max_01 "Ага, как удобно."
     Max_01 "Yeah, how convenient."
-
