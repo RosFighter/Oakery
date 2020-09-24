@@ -169,6 +169,11 @@ label InitCharacters: # стартовая инициация персонаже
                 Garb('a', '01a', 'Обычная одежда', True),
             ])
 
+        clothes[alice].sleep = Clothes(_("Для сна"), [
+                Garb('a', '02', 'Белое кружевное бельё', True),
+            ])
+
+
         clothes[ann].casual = Clothes(_("Повседневная"), [
                 Garb('a', '01a', 'Обычная одежда', False, True),
                 Garb('b', '01b', 'Футболка', False, True),

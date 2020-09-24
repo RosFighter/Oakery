@@ -471,7 +471,6 @@ label kira_night_swim:
                 Max_01 "Не забуду... Спокойной ночи!"
 
                 $ flags['hj_in_pool'] = 1
-                $ flags['promise.cuni.kira'] = True
 
             "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}" if flags['hj_in_pool'] > 0:  # периодическая дрочка в бассейне
                 if not _in_replay:

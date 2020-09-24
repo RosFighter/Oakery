@@ -891,7 +891,7 @@ label breakfast_after_punishment:
         jump breakfast_12   # Аня рассказывает о вероятной свадьбе
     elif all([day>=18, GetWeekday(day)==6, talk_var['breakfast']==12, talk_var['dinner']==17]):
         jump breakfast_18   # первый завтрак с Кирой
-    elif all([GetWeekday(day)==2, dcv['kiratalk'].stage in [6, 7], talk_var['breakfast']==18, talk_var['dinner']==17]):
+    elif all([GetWeekday(day)==2, 'kiratalk' in dcv and dcv['kiratalk'].stage in [6, 7], talk_var['breakfast']==18, talk_var['dinner']==17]):
         jump breakfast_35   # первое упоминание Александры (через несколько дней после первой фотосессии с Кирой)
     else:
         jump typical_breakfast

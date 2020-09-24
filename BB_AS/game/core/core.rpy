@@ -1136,5 +1136,13 @@ label after_load:
                                     _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")),
                 ])
 
+        if current_ver < "0.05.0.01":
+            $ current_ver = "0.05.0.01"
+
+            if clothes[alice].sleep is None:
+                $ clothes[alice].sleep = Clothes(_("Для сна"), [
+                        Garb('a', '02', 'Белое кружевное бельё', True),
+                    ])
+
         if current_ver < config.version:
             $ current_ver = config.version
