@@ -1439,9 +1439,9 @@ translate english strings:
 
     # game/core/03variables.rpy:453
     old "Контроль"
-    new ""
+    new "Control"
 
     # game/core/03variables.rpy:453
     old "Что это было? Мама поймала меня на подглядывании за ними, пока они трахались, собиралась наказать, но Эрик сказал нет и мама согласилась?! Моя мама, которая запрещала мне смотреть даже эротику, согласилась, чтобы я присутствовал при таком? Это невероятно. Либо Эрик какой-то колдун, либо дело в другом и нужно в этом разобраться, как следует."
-    new ""
+    new "What just happened? Mom caught me spying on her and Eric while they were fucking, she was going to punish me, but Eric stepped in and let me watch? And Mom allowed me?! My Mom, who won't even let me watch erotica, let me see something like this? This is incredible. Eric either has mind control powers, or something else is at play here."
 

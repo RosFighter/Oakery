@@ -383,9 +383,9 @@ translate english strings:
 
     # game/core/02init.rpy:82
     old "Мне нужны деньги..."
-    new ""
+    new "I need money..."
 
     # game/core/02init.rpy:82
     old "Эрик, мы же договорились!"
-    new ""
+    new "Eric, we had a deal!"
 
