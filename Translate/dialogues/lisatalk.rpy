@@ -7449,7 +7449,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:3125
     old "{i}нежно прикасаться к её груди{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
-    new "{{i}Gently touch her breasts{/i} {color=[_kiss.cool]}(Kisses. Chance: [_kiss.vis]){/color}"
+    new "{i}Gently touch her breasts{/i} {color=[_kiss.cool]}(Kisses. Chance: [_kiss.vis]){/color}"
 # TODO: Translation updated at 2020-09-08 23:53
 
 # game/dialogues/lisatalk.rpy:2895
@@ -7893,4 +7893,3 @@ translate english MorningWoodCont2_var3_9aba62c0:
 
     # Max_01 "Ага, как удобно."
     Max_01 "Yeah, how convenient."
-
