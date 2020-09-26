@@ -556,6 +556,7 @@ screen OnlineShop():
                                                     textbutton "{i}{b}$ "+str(items[i].price)+"{/b}{/i}" style 'buy_button':
                                                         idle_background Frame('interface button orange', 12, 12)
                                                         hover_background Frame('interface button green', 12, 12)
+                                                        # action [AddToSet(purchased_items, items[i]), Function(items[i].buy)]
                                                         action Function(items[i].buy)
 
                     vbar value YScrollValue('vp1') style 'shop_vscroll'

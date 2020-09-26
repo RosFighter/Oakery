@@ -518,7 +518,8 @@ label eric_ann_tv:
             Max_10 "Ладно, уже ухожу..."
 
     label .end:
-        $ flags['ae.tv.'+tv_scene] += 1
+        if tv_scene:
+            $ flags['ae.tv.'+tv_scene] += 1
         $ spent_time += 10
         $ current_room = house[0]
         jump Waiting

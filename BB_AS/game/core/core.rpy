@@ -528,6 +528,7 @@ label cam_background:
 
 
 label after_buying:
+    # $ purchased_items = list(set(purchased_items))
     while len(purchased_items) > 0:
         $ buying_item = purchased_items.pop()
 
@@ -1143,6 +1144,12 @@ label after_load:
                 $ clothes[alice].sleep = Clothes(_("Для сна"), [
                         Garb('a', '02', 'Белое кружевное бельё', True),
                     ])
+
+        if current_ver < "0.05.0.02":
+            $ current_ver = "0.05.0.02"
+
+            if items['photocamera'].InShop and (items['photocamera'].have or items['photocamera'].bought) and not items['nightie2'].InShop:
+                $ purchased_items.append(items['photocamera'])
 
         if current_ver < config.version:
             $ current_ver = config.version

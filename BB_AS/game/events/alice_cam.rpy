@@ -11,6 +11,7 @@ label cam0_alice_sleep_night:
         $ cam_flag.append('alice_sleep_fun')
         $ cam_flag.append('alice_sleep')
         # день веселья. начало
+        hide other
         show Alice cams fun-in-bed 01 at laptop_screen
         Max_07 "Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?"
 

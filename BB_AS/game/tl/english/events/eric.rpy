@@ -1132,7 +1132,7 @@ translate english Eric_talk_afterdinner_get_a7de4879:
 translate english Eric_talk_afterdinner_get_159a1b33:
 
     # Eric_04 "Посмотрим на твоё поведение. Ещё рано торговаться. Если будешь в своё время закрывать глаза, то денег будет больше. Ну а если будешь мешать, то..."
-    Eric_04 "Let's look at your behavior. It's too early to bargain. If you close your mouth closed, there'll be plenty. And if you get in the way, well..."
+    Eric_04 "Let's look at your behavior. It's too early to bargain. If you keep your mouth closed, there'll be plenty. And if you get in the way, well..."
 
 # game/events/eric.rpy:243
 translate english Eric_talk_afterdinner_get_872bbc39:

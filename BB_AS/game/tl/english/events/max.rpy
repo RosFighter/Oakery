@@ -1056,19 +1056,19 @@ translate english InstallCam_4055993b:
 translate english BookRead_sex_ed_e2e2e4d9:
 
     # Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
-    Max_01 "Aha. So it looks like everyone has the same anatomy, but with slightly different preferences and characteristics. This is explaining female genitalia, I should read and take notes.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
+    Max_01 "Aha. So it looks like everyone has the same anatomy, but with slightly different preferences and characteristics. This is explaining female genitalia, I should read and take notes.\n\n{color=[orange]}{i}(The book is 25%% studied){/i}{/color}"
 
 # game/events/max.rpy:624
 translate english BookRead_sex_ed_2c2e756a:
 
     # Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
-    Max_03 "This isn't particularly interesting, but the sexual behaviour of teenagers is extremely relevant! If only there was a section dedicated to explaining my morning wood...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+    Max_03 "This isn't particularly interesting, but the sexual behaviour of teenagers is extremely relevant! If only there was a section dedicated to explaining my morning wood...\n\n{color=[orange]}{i}(The book is 50%% studied){/i}{/color}"
 
 # game/events/max.rpy:626
 translate english BookRead_sex_ed_cdf53c7a:
 
     # Max_07 "Ого, здесь даже есть краткий исторический очерк о сексуальном воспитании детей и подростков... Как только голову не дурили за всё это время!\n\n{color=[orange]}{i}(Книга изучена на 75%%){/i}{/color}"
-    Max_07 "Wow, there's even a short essay on the historical methods of sex education on young peolpe...This really is comprehensive! \n\n{color=[orange]}{i}(The book is 75% studied){/i}{/color}."
+    Max_07 "Wow, there's even a short essay on the historical methods of sex education on young peolpe...This really is comprehensive! \n\n{color=[orange]}{i}(The book is 75%% studied){/i}{/color}."
 
 # game/events/max.rpy:630
 translate english BookRead_sex_ed_58528ae0:
@@ -1095,4 +1095,3 @@ translate english delivery2_77047d91:
 
     # Christine_00 "Да, то что нужно. Спасибо!"
     Christine_00 "Yes, that's it. Thanks!"
-

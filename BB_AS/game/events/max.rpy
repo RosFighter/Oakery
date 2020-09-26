@@ -248,7 +248,7 @@ label Laptop:
     $ renpy.block_rollback()
 
     $ search_theme.clear()
-    $ purchased_items = []
+    # $ purchased_items = []
 
     if poss['cams'].stn == 1:
         $ search_theme.append((_("{i}почитать о камерах{/i}"), 'about_cam'))

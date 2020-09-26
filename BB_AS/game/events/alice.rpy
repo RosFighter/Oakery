@@ -801,12 +801,12 @@ label spider_in_bed:
         $ flags['noted'] = True
 
     scene BG char Alice spider-night-01
-    $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+alice.dress+__suf)
+    $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+alice.dress[:1]+__suf)
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
     $ renpy.show('Max spider-night 02-'+renpy.random.choice(['01', '02', '03']))
-    $ renpy.show('Alice spider-night 02-01'+alice.dress+__suf)
+    $ renpy.show('Alice spider-night 02-01'+alice.dress[:1]+__suf)
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
         "Что случилось?":
@@ -835,7 +835,7 @@ label spider_in_bed:
 
     label .help:
         scene BG char Alice spider-night-03
-        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['01', '02', '03'])+alice.dress+__suf)
+        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['01', '02', '03'])+alice.dress[:1]+__suf)
         show Max spider-night 03-01
 
         $ _ch1 = GetChance(mgg.social, 5, 900)
@@ -869,7 +869,7 @@ label spider_in_bed:
                         jump .spider
             "А что мне за это будет?" if __suf != '':  # Алиса без лифчика
                 show Max spider-night 03-02
-                $ renpy.show("Alice spider-night 03-04"+alice.dress+__suf)
+                $ renpy.show("Alice spider-night 03-04"+alice.dress[:1]+__suf)
                 Alice_06 "Макс, не наглей! Я и так перед тобой тут в одних трусиках... Тебе этого мало что ли?!"
                 Max_07 "Ну, я вижу, что условия нашей договорённости ты соблюдаешь, только вот к поимке паука это никак не относится."
                 Alice_12 "И чего тебе, в таком случае, ещё от меня надо?"
@@ -908,7 +908,7 @@ label spider_in_bed:
                 Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
                 Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
                 scene BG char Alice spider-night-05
-                $ renpy.show('Alice spider-night 05-'+renpy.random.choice(['01', '02', '03'])+alice.dress)
+                $ renpy.show('Alice spider-night 05-'+renpy.random.choice(['01', '02', '03'])+alice.dress[:1])
                 Alice_06 "Ну вот... смотри... И не говори, что этого мало... большего не покажу! Доволен?"
                 Max_05 "О да, я очень доволен! Попка у тебя просто супер, сестрёнка!"
                 Alice_12 "Всё! Посмотрел и хватит, давай уже, лови этого паука!"
@@ -920,19 +920,19 @@ label spider_in_bed:
                     $ alice.nopants = True
                 elif flags['smoke.request'] == 'sleep':
                     $ alice.sleeptoples = True
-                    $ alice.dress = 'b'
+                    $ alice.dress = alice.dress[:1]+'a'
                 jump .spider
 
     label .fail:
         $ Skill('social', 0.1)
-        $ renpy.show('Alice spider-night 03-05'+alice.dress+__suf)
+        $ renpy.show('Alice spider-night 03-05'+alice.dress[:1]+__suf)
         Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
         $ __mood -= 100
         jump .spider
 
     label .money:
-        $ renpy.show('Alice spider-night 03-06'+alice.dress)
+        $ renpy.show('Alice spider-night 03-06'+alice.dress[:1])
         $ Skill('social', 0.2)
         Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
         Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
@@ -945,10 +945,10 @@ label spider_in_bed:
         $ Skill('social', 0.2)
         if alice.GetMood()[0] < 3:
             $ __mood -= 50
-            $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08'])+alice.dress)
+            $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08'])+alice.dress[:1])
             Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
         else:
-            $ renpy.show('Alice spider-night 03-09'+alice.dress)
+            $ renpy.show('Alice spider-night 03-09'+alice.dress[:1])
             Alice_09 "[succes!t]Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
         Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
         jump .spider
@@ -957,7 +957,7 @@ label spider_in_bed:
         $ __toples = True
         $ Skill('social', 0.2)
         show Max spider-night 03-03
-        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+alice.dress)
+        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+alice.dress[:1])
         if alice.GetMood()[0] < 3:
             $ __mood -= 50
         Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
@@ -968,9 +968,9 @@ label spider_in_bed:
         scene BG char Alice spider-night-04
         show Max spider-night 04-01
         if __toples:
-            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06'])+alice.dress)
+            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06'])+alice.dress[:1])
         else:
-            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03'])+alice.dress)
+            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03'])+alice.dress[:1])
         $ _ch1 = GetChance(mgg.social, 3, 900)
         menu:
             Max_07 "Ага, попался! Пожалуй, вот что я сделаю..."

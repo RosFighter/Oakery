@@ -106,7 +106,7 @@ translate english christina_first_talk_204a6521:
 translate english christina_first_talk_4e754e98:
 
     # Christine_04 "Ничего себе! Десятилетки ко мне ещё не подкатывали..."
-    Christine_04 "Wow! I've neer had ten-year-olds hit on me..."
+    Christine_04 "Wow! I've never had ten-year-olds hit on me..."
 
 # game/dialogues/christina.rpy:34
 translate english christina_first_talk_6d86254c:
@@ -124,7 +124,7 @@ translate english christina_first_talk_bf6defe7:
 translate english christina_first_talk_70b67a69:
 
     # Christine_01 "Макс, посмотри на меня... Ну... что скажешь?"
-    Christine_01 "Макс, посмотри на меня... Ну... что скажешь?"
+    Christine_01 "Max, look at me... Well... what do you think?"
 
 # game/dialogues/christina.rpy:37
 translate english christina_first_talk_36dacf0d:

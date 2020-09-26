@@ -331,7 +331,8 @@ screen navigation():
         button action ShowMenu("save") style "nav_button":
             textbutton _("Сохранить игру") action ShowMenu("save")
 
-        button action FilePage("preferences") style "nav_button":
+        # button action FilePage("preferences") style "nav_button":
+        button action ShowMenu("preferences") style "nav_button":
             textbutton _("Настройки") action ShowMenu("preferences")
 
         if _in_replay:
