@@ -7449,7 +7449,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:3125
     old "{i}нежно прикасаться к её груди{/i} {color=[_kiss.col]}(Поцелуи. Шанс: [_kiss.vis]){/color}"
-    new "{i}Gently touch her breasts{/i} {color=[_kiss.cool]}(Kisses. Chance: [_kiss.vis]){/color}"
+    new "{i}Gently touch her breasts{/i} {color=[_kiss.col]}(Kisses. Chance: [_kiss.vis]){/color}"
 # TODO: Translation updated at 2020-09-08 23:53
 
 # game/dialogues/lisatalk.rpy:2895
