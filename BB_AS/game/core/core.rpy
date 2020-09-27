@@ -88,7 +88,7 @@ label Waiting:
     $ NewSaveName()
 
     if not at_comp:
-        call after_buying
+        call after_buying from _call_after_buying
 
     if __name_label != '' and renpy.has_label(__name_label):
         # "запуск [__name_label]"
@@ -1100,7 +1100,7 @@ label after_load:
             $ current_ver = "0.04.5.15"
 
             if talk_var['dinner'] >= 11:
-                call alice_init_nightclub
+                call alice_init_nightclub from _call_alice_init_nightclub_1
 
             $ EventsByTime['MorningWoodCont'].variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, 0<poss['seduction'].stn<5])"
             $ EventsByTime['MorningWoodCont2'] = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv['mw'].done, lisa.GetMood()[0]>2])", sleep=True, cut=True)

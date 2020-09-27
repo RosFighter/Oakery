@@ -516,7 +516,7 @@ label cam0_alice_rest_evening:
     if get_format_blog()>0:
         if 'cam_pose_blog' not in globals():
             $ cam_pose_blog = []
-        call cam0_alice_blog_lingerie
+        call cam0_alice_blog_lingerie from _call_cam0_alice_blog_lingerie
         return
 
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:

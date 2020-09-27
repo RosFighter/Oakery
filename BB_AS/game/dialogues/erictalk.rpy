@@ -5,7 +5,7 @@ label EricTalkStart:
 
     $ __cur_plan = eric.get_plan()
     if __cur_plan.talklabel is not None:
-        call expression __cur_plan.talklabel
+        call expression __cur_plan.talklabel from _call_expression_13
 
     if len(dial) > 0:
         $ dial.append((_("{i}В другой раз...{/i}"), "exit"))
@@ -18,7 +18,7 @@ label EricTalkStart:
 
     if rez != "exit":
         if renpy.has_label(talks[rez].label): # если такая метка сушествует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_14
         jump EricTalkStart       # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting            # если же выбрано "уйти", уходим в после ожидания

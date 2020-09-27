@@ -1316,7 +1316,7 @@ label kira_night_tv:
                         pass
 
             "{i}раздеться вместе{/i}" if flags['hj_in_pool']:
-                call kira_night_tv.cuni_var2
+                call kira_night_tv.cuni_var2 from _call_kira_night_tv_cuni_var2
         scene BG char Kira tv-bj-01
         show Kira tv-game bj-02
         jump .bj
@@ -1468,7 +1468,7 @@ label kira_night_tv:
                 Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
                 Max_04 "Да... Я очень этого хочу!"
             "{i}раздеть её и повернуть{/i}" if flags['hj_in_pool']:
-                call kira_night_tv.cuni_var2
+                call kira_night_tv.cuni_var2 from _call_kira_night_tv_cuni_var2_1
 
         scene BG char Kira tv-bj-01
         show Kira tv-game bj-02

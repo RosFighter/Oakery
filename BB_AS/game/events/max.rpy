@@ -588,7 +588,7 @@ label delivery2:
     $ talk_var['courier2'] += 1
     if 'nightie2' in delivery_list[1]:
         #при доставке сорочки для Киры первый разговор с Кристиной
-        call christina_first_talk(__dress)
+        call christina_first_talk(__dress) from _call_christina_first_talk
     $ DeletingDeliveryTempVar(1) # удалим временные переменные и очистим список доставки
     $ ChoiceClothes()
     jump AfterWaiting
