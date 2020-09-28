@@ -3092,6 +3092,9 @@ label lisa_ment_kiss:
         Max_03 "Отлично!"
         jump lisa_advanced_kiss_lesson
 
+    $ spent_time += 10
+    jump Waiting
+
 
 label lisa_kiss_lesson:
     $ _kiss = GetChance(mgg.kissing, 15, 900)
