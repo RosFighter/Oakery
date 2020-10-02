@@ -2467,10 +2467,10 @@ translate english kira_night_swim_bfbddab0:
     # Max_20 "Ох, от таких мыслей я сейчас кончу, тётя Кира!"
     Max_20 "Oh, those thoughts will make me come, Aunt Kira!"
 
-# game/events/kira.rpy:407
-translate english kira_night_swim_13d8c96f:
+# game/events/kira.rpy:455
+translate english kira_night_swim_1f0f4d2e:
 
-    # Kira_02 "Какой же ты испорченный мальчик! Но не переживай, бассейн мы не испачкаем. Я чувству, ты уже совсем близко... Давай..." nointeract
+    # Kira_02 "Какой же ты испорченный мальчик! Но не переживай, бассейн мы не испачкаем. Я чувствую, ты уже совсем близко... Давай..." nointeract
     Kira_02 "What a spoiled boy you are! But don't worry, we won't get the pool dirty. I can feel you getting very close..." nointeract
 
 # game/events/kira.rpy:413
@@ -2956,4 +2956,3 @@ translate english strings:
     # game/events/kira.rpy:1602
     old "{i}ласкать её киску пальцами{/i}"
     new "{i}Finger her{/i}"
-
