@@ -6,7 +6,7 @@ init python:
         cur_starts[i] = x
 
     class Memories:
-        def __init__(self, module, pict, set='', capt="", cond='', var='True'):
+        def __init__(self, module, pict, set='', capt="", var='True'):
             self.module = module  # метка воспоминания
             self.pict   = pict    # скрин для кнопки в галерее воспоминаний
             self.set    = set     # блок формирования настроек для текущего воспоминания
@@ -29,7 +29,7 @@ init python:
 
     def start_replay(set_lbl, replay_lbl):
         global my_scope
-        my_scope = eval(set_lbl+'()')
+        my_scope = eval(set_lbl+'()') if set_lbl else None
         renpy.call_replay(replay_lbl, my_scope)
 
     def count_album():
@@ -62,6 +62,7 @@ define mems = [
         [
             Memories('massage_sunscreen', 'alice-massagesun-01', 'set_sunscreen', _("Давай я нанесу крем")),
             Memories('alice_talk_tv', 'alice-massagetv-01', 'set_talk_tv', _("Ножкам приятно")),
+            Memories('alice_talk_tv.massage_next', 'alice-massagetv-02', 'set_advanced_massage1', _("Помассирую не только ножки"), var="'advanced_massage1' in persistent.mems_var"),
             Memories('Lisa_HomeWork.first_foot_mass', 'lisa-massage-01', 'set_foot_mass', _("Первый массаж ног")),
             Memories('liza_hand_mass', 'lisa-massage-02', 'set_hand_mass', _("Внимание к пальчикам")),
             Memories('Lisa_HomeWork.shoulders', 'lisa-massage-03', 'set_shoulders_mass', _("Разомнём и плечики")),
@@ -73,6 +74,7 @@ define mems = [
             Memories('massage_sunscreen.spider', 'alice-spidermassage-01', 'set_spider_massage', _("Кто это там ползёт")),
             Memories('alice_shower.spider', 'alice-spidershower-01', 'set_spider_shower', _("Монстр в ванной комнате")),
             Memories('alice_after_club.knock', 'alice-afterclub-01', 'set_after_club', _("После клуба")),
+            Memories('alice_after_club.next1', 'alice-afterclub-02', 'set_after_club_next1', _("Я была плохой девочкой")),
         ],
         [
             Memories('kira_night_tv.porn_view', 'kira-pornotv-01', 'set_porn_tv', _("Смотрим порно вместе с тётей")),
@@ -81,10 +83,18 @@ define mems = [
             Memories('kira_night_tv.second_lesson', 'kira-kisslesson-02', 'set_kira_kiss_02', _("Второй урок поцелуев")),
             Memories('kira_night_tv.repeat_lesson', 'kira-kisslesson-03', 'set_kira_kiss_03', _("Третий урок поцелуев"), var="'kira_tv_bj' in persistent.memories and persistent.memories['kira_tv_bj']>0"),
             Memories('kira_night_tv.tv_cuni', 'kira-pornotv-02', 'set_porn_tv2', _("Горячее, чем порно"), var="'kira_night_tv.porn_view' in persistent.memories and persistent.memories['kira_night_tv.porn_view']>2"),
+            Memories('kira_night_swim', 'kira-night-pool-01', 'set_night_swim', _("Небольшое приключение перед сном"), "'hj_in_pool' in persistent.mems_var"),
+            Memories('kira_about_photo1', 'kira-max-shower-bj-01', '', _("Не зря купил сорочку")),
+            Memories('kira_shower.promise_cuni', 'kira-max-shower-cuni-01', '', _("С меня приятный должок")),
         ],
         [
             Memories('lisa_advanced_kiss_lesson', 'lisa-kisslesson-01', 'set_lisa_advanced_kiss_lesson', _("Вкусные уроки с сестрёнкой")),
             Memories('liza_hand_mass', 'lisa-kissmassage-02', 'set_kiss_massage1', _("Кажется, мы что-то забыли"), var="'kissing_massage' in persistent.mems_var"),
+        ],
+        [
+            Memories('lessons_from_Eric.first_bj', 'ann&eric-bj01', 'set_lessons_Eric_01', _("Урок по минету от мамы и Эрика")),
+            Memories('lessons_from_Eric.second_bj', 'ann&eric-bj02', 'set_lessons_Eric_01', _("Так близко к маминой попке")),
+            Memories('lessons_from_Eric.third_bj', 'ann&eric-bj03', 'set_lessons_Eric_01', _("Глубокий минет в мамином исполнении")),
         ],
     ]
 
@@ -92,7 +102,7 @@ define photo_album = [
         ("01-Kira", _("Порно-портфолио для Киры")),
     ]
 
-define cur_starts = [0, 0, 0, 0, 0]
+define cur_starts = [0, 0, 0, 0, 0, 0]
 define cur_album = None
 define st_gallery = 'mem'
 

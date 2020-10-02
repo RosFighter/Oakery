@@ -475,6 +475,7 @@ label punishment_alice:
 
     $ alice.nopants = (alice.dress=="a" and flags['smoke']=='nopants') or alice.dress=='b'
 
+    $ _ch1 = GetChance(mgg.social, 2, 900)
     if newpunishment==0:
         # Алиса стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
         if alice.dress == "a":  # Алиса в обычной одежде
@@ -489,7 +490,6 @@ label punishment_alice:
         if defend:  # Макс уже не может заступиться
             Ann_18 "[_text!t]"
         else:
-            $ _ch1 = GetChance(mgg.social, 2, 900)
             menu:
                 Ann_18 "[_text!t]"
                 "{i}Заступиться за Алису {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}{/i}":

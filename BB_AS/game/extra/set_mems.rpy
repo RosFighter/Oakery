@@ -174,7 +174,7 @@ init python:
                 'tm'        : '22:00',
                 'mgg'       : mg,
                 'talk_var'  : {'al.tv.mas' : 0, 'al.tvgood':3},
-                'flags'     : {'alice.tv.mass' : 7, 'smoke':smoke},
+                'flags'     : {'alice.tv.mass':7, 'smoke':smoke, 'double_mass_alice':0},
                 'dcv'       : {'tvchoco' : Daily(done=renpy.random.choice([False, True]), enabled=True)},
                 'kol_choco' : 5,
                 'pose3_2'   : renpy.random.choice(['01', '02', '03']),
@@ -381,6 +381,7 @@ init python:
             }
         return my_scope
 
+
     def set_lisa_advanced_kiss_lesson():
         tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dress = get_lisa_dress()
@@ -390,10 +391,12 @@ init python:
         mg.kissing = 6.0
 
         my_scope = {
-                'lisa' : tl,
-                'mgg'  : mg,
+                'lisa'      : tl,
+                'mgg'       : mg,
+                'spent_time': 0,
             }
         return my_scope
+
 
     def set_kiss_massage1():
         tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
@@ -407,5 +410,54 @@ init python:
                 'talk_var' : {'kissingmassage':True},
                 'lisa'     : tl,
                 'mgg'      : mg,
+            }
+        return my_scope
+
+
+    def set_after_club_next1():
+        sm = ['']
+        if 'alice_nopants' in persistent.mems_var:
+            sm.extend(['nopants', 'not_nopants'])
+        al = Profile("Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
+
+        my_scope = {
+            'talk_var'  : {'smoke': '', 'teachkiss':(4 if 'kira_tv_bj' in persistent.memories and persistent.memories['kira_tv_bj']>0 else 3)},
+            'flags'     : {'smoke': renpy.random.choice(sm), 'noted': False, 'double_mass_alice':(2 if 'double_mass_alice' in persistent.mems_var else 0)},
+            'tm'        : '03:00',
+            'alice'     : al,
+            'spent_time': 0,
+            }
+        return my_scope
+
+
+    def set_advanced_massage1():
+
+        my_scope = {
+                'tm'        : '22:00',
+                'flags'     : {'double_mass_alice':renpy.random.randint(1, 2)},
+                '_drink'    : 2,
+                '_ch20'     : Chance(700),
+                '_ch25'     : Chance(875),
+                '_pose'     : renpy.random.choice(['03', '04']),
+                '_dress'    : (renpy.random.choice(['b','c']) if 'max-a' in persistent.mems_var else 'c') + renpy.random.choice((['b', 'c', 'd'] if 'pajamas' in alice.gifts else ['c', 'd']))
+            }
+        return my_scope
+
+
+    def set_night_swim():
+
+        my_scope = {
+                'flags' : {'hj_in_pool':renpy.random.randint(1, 2), 'promise.cuni.kira':False, 'kira.tv.bj':True},
+        }
+        return my_scope
+
+
+    def set_lessons_Eric_01():
+        mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress()
+
+        my_scope = {
+                'mgg'       : mg,
+                '_stockings' : RandomChance(500),
             }
         return my_scope

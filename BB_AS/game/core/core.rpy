@@ -1151,5 +1151,14 @@ label after_load:
             if items['photocamera'].InShop and (items['photocamera'].have or items['photocamera'].bought) and not items['nightie2'].InShop:
                 $ purchased_items.append(items['photocamera'])
 
+        if current_ver < "0.05.0.06":
+            $ current_ver = "0.05.0.06"
+
+            if flags['hj_in_pool']:
+                $ added_mem_var('hj_in_pool')
+
+            if renpy.seen_label('advanced_massage1'):
+                $ added_mem_var('advanced_massage1')
+
         if current_ver < config.version:
             $ current_ver = config.version

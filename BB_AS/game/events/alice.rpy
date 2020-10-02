@@ -263,7 +263,7 @@ label alice_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['alice'].give) < 4:
+            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['alice'].give) < 4 or (poss['risk'].stn<0 and _ch1.ch>600):
                 jump .pinded
             "{i}запустить паука к Алисе{/i}" if items['spider'].have:
                 jump .spider
@@ -1217,6 +1217,8 @@ label alice_after_club:
         jump .end
 
     label .next1:
+        if _in_replay:
+            $ __suf = 'a' if flags['smoke'] else ''
         scene BG char Alice bach-after-club-02
         $ renpy.show('Alice bach-after-club 02-01'+__suf)
         $ spent_time += 10
@@ -1237,13 +1239,13 @@ label alice_after_club:
                     "Хочу, чтобы ты поласкала его...":
                         jump .caress
 
-                    "Хочу, чтобы ты отсосала...":
+                    "Хочу, чтобы ты отсосала..." if not _in_replay:
                         jump .suck
 
             "Хочу, чтобы ты поласкала его...":
                 jump .caress
 
-            "Хочу, чтобы ты отсосала...":
+            "Хочу, чтобы ты отсосала..." if not _in_replay:
                 jump .suck
 
     label .caress:
@@ -1311,7 +1313,7 @@ label alice_after_club:
                 Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
                 Max_00 "Всё понял, ухожу..."
 
-            "Хочу, чтобы ты отсосала...":
+            "Хочу, чтобы ты отсосала..." if not _in_replay:
                 jump .suck
 
             "На всё остальное ты не согласишься...":
@@ -1331,6 +1333,7 @@ label alice_after_club:
         jump .end
 
     label .end:
+        $ renpy.end_replay()
         $ spent_time += 10
         jump Waiting
 

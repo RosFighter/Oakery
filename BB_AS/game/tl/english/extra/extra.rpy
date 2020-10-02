@@ -146,3 +146,39 @@ translate english strings:
     old "Следующий снимок"
     new "Next picture"
 
+# TODO: Translation updated at 2020-10-02 22:35
+
+translate english strings:
+
+    # game/extra/extra.rpy:56
+    old "Помассирую не только ножки"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Я была плохой девочкой"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Небольшое приключение перед сном"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Не зря купил сорочку"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "С меня приятный должок"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Урок по минету от мамы и Эрика"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Так близко к маминой попке"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Глубокий минет в мамином исполнении"
+    new ""
+

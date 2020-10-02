@@ -669,22 +669,22 @@ init python:
                 inf   = clothes[lisa].learn.GetCur().info
                 clot  = 'learn'
                 # откорректируем по настрению
-                relmood = GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2
-                if clothes[lisa].learn.rand and relmood:
-                    # если включен рандом и есть нужные настроение с отношением, то полотенце
-                    dress  = 'c'
-                    inf    = '04b'
-                elif clothes[lisa].learn.rand:  # рандом включен, но нет настроения
-                    if 'bathrobe' in lisa.gifts and clothes[lisa].learn.cur==2:  # есть халат и выбрано полотенце, ставим халат
-                        dress  = 'b'
-                        inf    = '04'
-                    elif 'bathrobe' not in lisa.gifts and clothes[lisa].learn.cur==1:  # нет халата, текущим стоит полотенце
-                        if 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
-                            dress  = 'd'
-                            inf    = '01c'
-                        else:  # иначе - обычную повседневку
-                            dress  = 'a'
-                            inf    = '01a'
+                # relmood = GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2
+                # if clothes[lisa].learn.rand and relmood:
+                #     # если включен рандом и есть нужные настроение с отношением, то полотенце
+                #     dress  = 'c'
+                #     inf    = '04b'
+                # elif clothes[lisa].learn.rand:  # рандом включен, но нет настроения
+                #     if 'bathrobe' in lisa.gifts and clothes[lisa].learn.cur==2:  # есть халат и выбрано полотенце, ставим халат
+                #         dress  = 'b'
+                #         inf    = '04'
+                #     elif 'bathrobe' not in lisa.gifts and clothes[lisa].learn.cur==1:  # нет халата, текущим стоит полотенце
+                #         if 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
+                #             dress  = 'd'
+                #             inf    = '01c'
+                #         else:  # иначе - обычную повседневку
+                #             dress  = 'a'
+                #             inf    = '01a'
 
         elif char=='alice':
             dress = clothes[alice].casual.GetCur().suf
@@ -1215,6 +1215,8 @@ init python:
 
 
     def added_mem_var(x):
+        if _in_replay:
+            return
         if x not in persistent.mems_var:
             persistent.mems_var.append(x)
 

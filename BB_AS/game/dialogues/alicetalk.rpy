@@ -417,7 +417,7 @@ label alice_talk_tv:
             $ Skill('massage', 0.1)
             $ _ch2 = GetChance(mgg.social, 2)
             $ flags['alice.tv.mass'] += 1
-            $ _can_double_choko = _drink>0 and kol_choco>0
+            $ _can_double_choko = _drink>0 and kol_choco>0 and (flags['double_mass_alice'] or alice.dress=='a')
             $ _pose = {'01':'03', '02':'04'}[_pose]
             scene BG char Alice tv-mass-03
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -575,7 +575,7 @@ label alice_talk_tv:
                             jump .fail
                         "{i}массировать её ноги выше{/i}" if _drink > 1 and flags['double_mass_alice']:
                             jump advanced_massage1
-                        "{i}продолжать массаж{/i}":
+                        "{i}продолжать массаж{/i}" if not _in_replay or (_in_replay and not flags['double_mass_alice']):
                             pass
                 "{i}продолжать молча{/i}":
                     menu:
@@ -589,7 +589,7 @@ label alice_talk_tv:
                             jump .fail
                         "{i}массировать её ноги выше{/i}" if _drink > 1 and flags['double_mass_alice']:
                             jump advanced_massage1
-                        "{i}продолжать массаж{/i}":
+                        "{i}продолжать массаж{/i}" if not _in_replay or (_in_replay and not flags['double_mass_alice']):
                             pass
 
         elif RandomChance(_ch15.ch) and not _drink: ### {i}Алисе понравился массаж!{/i} конфету Алиса не ела
@@ -629,6 +629,7 @@ label alice_talk_tv:
         jump Waiting
 
 label advanced_massage1:
+    $ added_mem_var('advanced_massage1')
     scene BG char Alice tv-mass-03
     $ _pose = {'05':'09', '06':'10'}[_pose]
     $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -636,6 +637,7 @@ label advanced_massage1:
     if flags['double_mass_alice'] < 2:
         Max_08 "{i}( Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух... ){/i}"   #только при первом расширенном массаже
         $ flags['double_mass_alice'] = 2
+        $ added_mem_var('double_mass_alice')
     Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... У меня ведь красивые ноги, правда?"
     Max_03 "Очень красивые, сестрёнка! Такие мягкие, но упругие... Массировать их - одно удовольствие! А ещё они у тебя шаловливые..."
     menu:

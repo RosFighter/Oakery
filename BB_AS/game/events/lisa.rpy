@@ -108,7 +108,7 @@ label lisa_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['lisa'].give) < 4:
+            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['lisa'].give) < 4 or (poss['SoC'].stn<0 and _ch1.ch>600):
                 jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping

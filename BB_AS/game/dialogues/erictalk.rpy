@@ -86,7 +86,7 @@ label eric_voy_wtf:
 
 
 label lessons_from_Eric:
-    $ __stockings = RandomChance(500) # шанс, что Аня будет в чулках, 50%
+    $ _stockings = RandomChance(500) # шанс, что Аня будет в чулках, 50%
     if talk_var['eric.voy.stage']==4:
         jump .first_bj
     elif talk_var['eric.voy.stage']==5:
@@ -101,7 +101,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-01
         show Eric watch 01-bj01
-        if __stockings:
+        if _stockings:
             show other Eric watch 01-bj01a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         #annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
@@ -111,7 +111,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-02-bj01
         show Eric watch 02-bj01
-        if __stockings:
+        if _stockings:
             show other Eric watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
         #annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
@@ -124,7 +124,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-01
         show Eric watch 01-bj01
-        if __stockings:
+        if _stockings:
             show other Eric watch 01-bj01a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         #annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
@@ -135,7 +135,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-02-bj01
         show Eric watch 02-bj01
-        if __stockings:
+        if _stockings:
             show other Eric watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
         #annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
@@ -149,7 +149,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-03-bj01
         show Eric watch 03-bj01
-        if __stockings:
+        if _stockings:
             show other Eric watch 03-bj01a
         $ renpy.show('Max annroom-watch 03-bj01'+mgg.dress)
         #annroom-watch-03-bj01 + annroom-watch-03-bj01-ann&eric-(01-01a) + annroom-watch-03-bj01-max-(01-01b)
@@ -164,7 +164,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-04-bj01
         show Eric watch 04-bj01
-        if __stockings:
+        if _stockings:
             show other Eric watch 04-bj01a
         $ renpy.show('Max annroom-watch 04-bj01'+mgg.dress)
         #annroom-watch-04-bj01 + annroom-watch-04-bj01-ann&eric-(01-01a) + annroom-watch-04-bj01-max-(01-01b)
@@ -180,7 +180,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-01
         show Eric watch 01-bj02
-        if __stockings:
+        if _stockings:
             show other Eric watch 01-bj02a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         #annroom-watch-01 + annroom-watch-01-ann&eric-bj(02-02a) + annroom-watch-01-max-(01-01b)
@@ -190,7 +190,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-02-bj02
         show Eric watch 02-bj02
-        if __stockings:
+        if _stockings:
             show other Eric watch 02-bj02a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
         #annroom-watch-02-bj02 + annroom-watch-02-bj02-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
@@ -209,7 +209,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-03-bj02
         show Eric watch 03-bj02
-        if __stockings:
+        if _stockings:
             show other Eric watch 03-bj02a
         $ renpy.show('Max annroom-watch 03-bj02'+mgg.dress)
         #annroom-watch-03-bj02 + annroom-watch-03-bj02-ann&eric-(01-01a) + annroom-watch-03-bj02-max-(01-01b)
@@ -224,7 +224,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-04-bj02
         show Eric watch 04-bj02
-        if __stockings:
+        if _stockings:
             show other Eric watch 04-bj02a
         $ renpy.show('Max annroom-watch 04-bj02'+mgg.dress)
         #annroom-watch-04-bj02 + annroom-watch-04-bj02-ann&eric-(01-01a) + annroom-watch-04-bj02-max-(01-01b)
@@ -240,7 +240,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-01
         show Eric watch 01-bj03
-        if __stockings:
+        if _stockings:
             show other Eric watch 01-bj03a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         #annroom-watch-01 + annroom-watch-01-ann&eric-bj(03-03a) + annroom-watch-01-max-(01-01b)
@@ -251,7 +251,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-02-bj03
         show Eric watch 02-bj03
-        if __stockings:
+        if _stockings:
             show other Eric watch 02-bj03a
         $ renpy.show('Max annroom-watch 02-bj03'+mgg.dress)
         #annroom-watch-02-bj03 + annroom-watch-02-bj03-ann&eric-(01-01a) + annroom-watch-02-bj03-max-(01-01b)
@@ -267,7 +267,7 @@ label lessons_from_Eric:
         scene BG char Eric annroom-watch-03-bj03
         $ renpy.show('Max annroom-watch 03-bj03'+mgg.dress)
         show Eric watch 03-bj03
-        if __stockings:
+        if _stockings:
             show other Eric watch 03-bj03a
         #annroom-watch-03-bj03 + annroom-watch-03-bj03-ann&eric-(01-01a) + annroom-watch-03-bj03-max-(01-01b)
 
@@ -283,7 +283,7 @@ label lessons_from_Eric:
 
         scene BG char Eric annroom-watch-04-bj03
         show Eric watch 04-bj03
-        if __stockings:
+        if _stockings:
             show other Eric watch 04-bj03a
         $ renpy.show('Max annroom-watch 04-bj03'+mgg.dress)
         #annroom-watch-04-bj03 + annroom-watch-04-bj03-ann&eric-(01-01a) + annroom-watch-04-bj03-max-(01-01b)
@@ -300,6 +300,7 @@ label lessons_from_Eric:
                 jump .end
 
     label .end:
+        $ renpy.end_replay()
         $ talk_var['eric.voy.stage']+=1
         $ spent_time += max((60 - int(tm[-2:])), 30)
         $ current_room = house[0]

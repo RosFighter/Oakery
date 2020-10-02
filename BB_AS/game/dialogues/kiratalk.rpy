@@ -614,6 +614,7 @@ label kira_about_photo1:
     Max_05 "Ты потрясающая! Это было классно!"
     Kira_01 "Я рада, что смогла снять твоё напряжение. А теперь, давай разбегаться, пока нас кто-нибудь не увидел..."
     Max_04 "Конечно!"
+    $ renpy.end_replay()
     $ mgg.cleanness = 100
     $ SetCamsGrow(house[3], 250)
     $ poss['aunt'].OpenStage(5)
