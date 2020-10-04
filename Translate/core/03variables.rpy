@@ -500,7 +500,7 @@ translate english strings:
 
     # game/core/03variables.rpy:197
     old "Небольшая стремянка, позволяющая достать то, для чего не хватает роста"
-    new "a small stepladder, allowing you to get what is missing."
+    new "A small stepladder to help access difficult areas."
 
     # game/core/03variables.rpy:197
     old "WEB STANDARDS"
@@ -528,7 +528,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Итак, я внимательно прочитал книгу Web Standards и разобрался как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100."
-    new "Well, I've read WebStandards and figured out how to set up my website. I guess that should be my starting point. I'll need some money to acquire a domain, hosting and design template. $100 should do."
+    new "Well, I've read Web Standards and figured out how to set up my website. I guess that should be my starting point. I'll need some money to acquire a domain, hosting and design template. $100 should do."
 
     # game/core/03variables.rpy:324
     old "Наконец-то, у меня есть свой собственный сайт, где транслируется изображение с камеры из гостиной! Теперь нужно увеличить аудиторию, ведь чем больше людей, тем больше доход от рекламных баннеров. Сделать это можно с помощью вложений в рекламу своего сайта. Кроме того, если в кадре происходит что-то интересное, аудитория также растёт."
@@ -556,15 +556,15 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Алиса читает какие-то книги, но не хочет говорить о них. На порно журналы не похоже... Что же ещё там может быть? Нужно попытаться выяснить это как можно скорее... Любопытно же!"
-    new "Alice is reading some secret books she doesn't want to talk about. They don't look like porn, what could it possibly be? I should investigate."
+    new "Alice won't tell me what book she's reading. It doesn't look like porn, what could it possibly be? I should investigate."
 
     # game/core/03variables.rpy:324
     old "Я нашёл какую-то книгу, но из названия ничего не понятно, а читать саму книгу ни времени, ни желания нет. Может быть, поискать о ней информацию в интернете?"
-    new "I've found a book, but the name is strange and I don't want to waste my time reading it. I should look it up on the web."
+    new "I've found a book, but I don't recognise the name and I don't want to waste my time reading it. I should look it up on the web."
 
     # game/core/03variables.rpy:324
     old "Вот это да! Я был не так далёк от истины. Конечно, это не порно, но уж точно эротика, да ещё какая! Видимо, Алисе нравятся любовные романы с эротическими оттенками, так сказать. Может быть, стоит ей подарить подобную книгу и посмотреть на её реакцию?"
-    new "Wow, I was almost right! It's not porn, but it's definitely erotica, and it's not the soft type either! I guess Alice likes love stories with an erotic touch. Maybe I should gift her some and see her reaction."
+    new "Wow, I was almost right! It's not porn, but it's definitely erotica, and it's not the soft type either! I guess Alice likes love stories with an erotic touch. Maybe I should gift her something like it?"
 
     # game/core/03variables.rpy:324
     old "Судя по реакции Алисы, подарок ей понравился. Видимо, стоит периодически заходить в книжный интернет-магазин и смотреть новинки. Возможно, таким образом удастся чуть-чуть улучшить отношения с Алисой."
@@ -628,11 +628,11 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Я заметил, что Лиза всё время в одном и том же закрытом купальнике. Так же невозможно толком загореть? Она тоже так считает, но другого нет. Остальные пропали с другими вещами во время переезда. Может быть, удастся как-то ей помочь?"
-    new "I noticed Lisa is always wearing the same one-piece swimsuit. How is she supposed to tan in that? She agrees, but she doesn't have anything else to wear, everything got lost when we moved.  Maybe I can help her out somehow?"
+    new "I noticed Lisa always wearing the same one-piece swimsuit. How is she supposed to tan in that? She agrees, but she doesn't have anything else to wear, everything got lost when we moved.  Maybe I can help her out somehow?"
 
     # game/core/03variables.rpy:324
     old "Во время завтрака Лиза намекнула маме, что нужно бы купить во время шоппинга купальник, который не скрывает половину тела и в котором можно загорать..."
-    new "At breakfast Lisa hinted to mom that she needs a new swimsuit so she can get a tan."
+    new "At breakfast Lisa hinted to Mom that she needs a new swimsuit so she can tan."
 
     # game/core/03variables.rpy:324
     old "Выяснилось, что во время последнего шоппинга забыли купить Лизе купальник, о котором она просила. Теперь придётся ждать до следующих выходных, когда Эрик снова повезёт всех за покупками. Но в этот раз сам Эрик пообещал ей подарить этот купальник. Может быть, его опередить?"
@@ -723,7 +723,7 @@ translate english strings:
 
     # game/core/03variables.rpy:327
     old "Алиса настойчиво просит маму купить ей вечернее платье для посещения ночных клубов. Та ей регулярно отказывала, пока Эрик не предложил подарить ей платье во время следующего шоппинга. Нужно поспешить, если я хочу сделать это первым!"
-    new "Alice asked mom for a new evening dress. Usually Mom would say no, but this time Eric said he'd buy her one on the next shopping trip. I should hurry if I want to beat him to it and give her the present myself."
+    new "Alice asked Mom for a new evening dress. Usually Mom would say no, but this time Eric said he'd buy her one on the next shopping trip. I should hurry if I want to beat him to it and give her the present myself."
 
     # game/core/03variables.rpy:327
     old "Мне удалось скопить приличную сумму и купить платье для Алисы. Теперь, нужно успеть его подарить ей, пока это не сделал кто-то другой..."
@@ -802,7 +802,7 @@ translate english strings:
 
     # game/core/03variables.rpy:291
     old "Мама почувствовала сигаретный дым, но я не сдал Алису. Кажется, сестрёнка это оценила. Вот только что мешает её подставить, чтобы мама узнала об этом не от меня, а как бы сама что-то нашла? И я не при делах!\n\nА может быть, эта вредная привычка Алисы поможет мне улучшить с ней отношения?"
-    new "Mom noticed ciggarette smoke but I didn't rat Alice out. I could still frame Alice in a way that wouldn't implicate me.\n\n\nOr maybe I could improve my relationship with Alice"
+    new "Mom noticed ciggarette smoke but I didn't rat Alice out. I could still frame Alice in a way that wouldn't implicate me.\n\n\nOr maybe I could improve my relationship with her?"
 
     # game/core/03variables.rpy:296
     old "Школьница"
