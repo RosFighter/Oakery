@@ -191,7 +191,7 @@ translate english strings:
 
     # game/core/02init.rpy:56
     old "А ты у нас шалунья, оказывается..."
-    new "I didn't think you were actually such a naughty girl..."
+    new "I didn't think you were such a naughty girl..."
 
     # game/core/02init.rpy:56
     old "У тебя странный вид..."

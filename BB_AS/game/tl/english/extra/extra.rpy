@@ -152,33 +152,33 @@ translate english strings:
 
     # game/extra/extra.rpy:56
     old "Помассирую не только ножки"
-    new ""
+    new "More than a leg massage"
 
     # game/extra/extra.rpy:56
     old "Я была плохой девочкой"
-    new ""
+    new "I've been a bad girl"
 
     # game/extra/extra.rpy:56
     old "Небольшое приключение перед сном"
-    new ""
+    new "A little adventure before bed"
 
     # game/extra/extra.rpy:56
     old "Не зря купил сорочку"
-    new ""
+    new "I bought that outfit for a reason"
 
     # game/extra/extra.rpy:56
     old "С меня приятный должок"
-    new ""
+    new "I think I owe you a favor"
 
     # game/extra/extra.rpy:56
     old "Урок по минету от мамы и Эрика"
-    new ""
+    new "A blowjob lesson from Mom and Eric"
 
     # game/extra/extra.rpy:56
     old "Так близко к маминой попке"
-    new ""
+    new "So close to Mom's ass"
 
     # game/extra/extra.rpy:56
     old "Глубокий минет в мамином исполнении"
-    new ""
+    new "Watching Mom deepthroat"
 
