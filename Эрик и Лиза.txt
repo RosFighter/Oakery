@@ -1,0 +1,31 @@
+# --- Разговор с Эриком насчёт обучения Лизы|Conversation with Eric about teaching Lisa
+
+	eric.need.liza@80@e-meet-eric-3@Макс, нам нужно поговорить наедине.|Max, we need to talk in private.
+		eric.need.liza.ok^							Я слушаю...|I'm listening
+
+	eric.need.liza.ok@81@До меня дошли слухи, что ты собрался обучать Лизу... Даже не знаю как это назвать. В общем, ты хочешь стать её своего рода секс-учителем. Это правда?|I heard that you were going to teach Lisa... I do not know how to call it. Well, you want to give her some form of sex-ed. Is this true?
+		eric.need.liza.ok.how^						Как ты узнал?!|How did you know?!
+		eric.need.liza.ok.no!add_eric.fee_-5^		Нет, конечно!|Of course not!
+		eric.need.liza.ok.yes!add_eric.fee_5^		Ну, типа того...|Something like this
+
+	eric.need.liza.ok.how@83@Это совершенно не важно. Важно, что у нас с тобой договор. Ты получаешь деньги, возможность наблюдать, но не трогать. И это касается обеих твоих сестёр и матери.|That's not important. What important is that we have an agreement with you. You get the money, you can to watch, but can't touch. And it appies both to your sisters and mom.
+		eric.need.liza.ok.how.ok^					Ну, хорошо. Забирай и Лизу...|Oh well. Take Lisa too...
+		eric.need.liza.ok.how.no^					Лизу тебе не отдам!|I won't give Lisa to you!
+
+	eric.need.liza.ok.no@84@Ты пытаешься меня обмануть? У нас с тобой договор. И если ты решил его нарушить, то ты первый, кто пострадает. С этого момента я стану давать тебе меньше денег. А вот Лизу ты должен оставить. Она моя.|Are you trying to screw me? We have a contract. And if you decide to break it, then you'll be the one to suffer. From this moment I will give you less money. But you have to leave Lisa. She is mine.
+		eric.need.liza.ok.how.ok^					Ну, хорошо. Забирай и Лизу...|Oh well. Take Lisa too...
+		eric.need.liza.ok.how.no^					Лизу тебе не отдам!|I won't give Lisa to you!
+
+	eric.need.liza.ok.yes@87@Я рад, что ты это не скрываешь. Ради такого надбавлю тебе $5 к твоим чаевым за честность. Напомню, что ты уступил мне всю свою семью. И Лиза её часть. Так что, ты должен бросить свою затею. Обучать её буду я сам.|I'm glad you did not hide it. I’ll add you $5 to your tipping for honesty. I remind you that you are lost to me all your family. And Lisa is its part. So, you have to quit your venture. I’ll teach her myself.
+		eric.need.liza.ok.how.ok^					Ну, хорошо. Забирай и Лизу...|Oh well. Take Lisa too...
+		eric.need.liza.ok.how.no^					Лизу тебе не отдам!|I won't give Lisa to you!
+
+	eric.need.liza.ok.how.ok@86@Макс, ты меня удивляешь. Так спокойно смотришь на то, что я собираюсь перетрахать всех твоих сестёр и мать... Может быть, ты из этих, которые любят только наблюдать? Но не мне тебя судить. Лично меня всё устраивает. Ладно, этот вопрос уладили. Свободен.|Max, you’re surprising me. So calmly look at what I'm going to fuck all your sisters and mom... Maybe you're one of those who just like to watch? But I can’t judge you. Personally, I'm happy with everything. Okay, this question is settled. You may go.
+		leave!giveliza!can^							<i>закончить разговор</i>|<i>finish the conversation</i>
+
+	eric.need.liza.ok.how.no@88@Ну, тогда у нас с тобой проблемы. Если ты помнишь, мы договорились, а договор нужно выполнять. Либо нам с тобой придётся перестать быть друзьями... Выбирай.|Well, then we have problems. If you remember, we agreed, and the contract should be carried out. Or we will have to stop being friends... Choose.
+		eric.need.liza.ok.how.ok^					Ну, хорошо. Забирай и Лизу...|Oh well. Take Lisa too...
+		eric.need.liza.ok.how.no.war^				Делай что хочешь, но Лиза моя!|Do what you want, but Lisa is mine!
+
+	eric.need.liza.ok.how.no.war@81@Ну, значит, война. Я тебя предупреждал уже, что ты проиграешь. Теперь есть возможность в этом убедиться лично. И да, готовь сапоги. Военный лагерь ждёт...\n\n<color=orange><i><b>Внимание:</b> Ваши отношения значительно ухудшились!</i></color>|Well, that means a war. I have already warned you that you would lose. Now it is possible to see it in person. And yes, prepare the boots. Military camp is waiting for you...
+		leave!ericwar!can^							Посмотрим...|Okay
