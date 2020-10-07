@@ -1,7 +1,15 @@
-# --- Разговор с Эриком насчёт обучения Лизы|Conversation with Eric about teaching Lisa
+============== Разговор с Эриком насчёт обучения Лизы =================
 
-	eric.need.liza@80@e-meet-eric-3@Макс, нам нужно поговорить наедине.|Max, we need to talk in private.
-		eric.need.liza.ok^							Я слушаю...|I'm listening
+#сразу после ужина
+#max&eric-terrace-00 + max + eric
+Eric_00 "Макс, нам нужно поговорить наедине."
+Max_00 "Я слушаю..."
+Eric_00 "Как там твоя младшая сестрёнка, проявляет сексуальный интерес к кому-нибудь?"
+Max_00 "Возможно... А что?"
+Eric_00 "Думаю, пришло время мне взяться за её сексуальное образование. Возражения будут?"
+   1 - Нет, можешь обучать... (если решил отдать Лизу или отдать, но искать возможность ее отбить)
+   2 - Лизу тебе не отдам! (если решил нарушить договор или если уже воюешь)
+
 
 	eric.need.liza.ok@81@До меня дошли слухи, что ты собрался обучать Лизу... Даже не знаю как это назвать. В общем, ты хочешь стать её своего рода секс-учителем. Это правда?|I heard that you were going to teach Lisa... I do not know how to call it. Well, you want to give her some form of sex-ed. Is this true?
 		eric.need.liza.ok.how^						Как ты узнал?!|How did you know?!
@@ -29,3 +37,6 @@
 
 	eric.need.liza.ok.how.no.war@81@Ну, значит, война. Я тебя предупреждал уже, что ты проиграешь. Теперь есть возможность в этом убедиться лично. И да, готовь сапоги. Военный лагерь ждёт...\n\n<color=orange><i><b>Внимание:</b> Ваши отношения значительно ухудшились!</i></color>|Well, that means a war. I have already warned you that you would lose. Now it is possible to see it in person. And yes, prepare the boots. Military camp is waiting for you...
 		leave!ericwar!can^							Посмотрим...|Okay
+
+Eric_00 ""
+Max_00 ""
