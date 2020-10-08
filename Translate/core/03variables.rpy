@@ -1260,7 +1260,7 @@ translate english strings:
 
     # game/core/03variables.rpy:623
     old "Тётя Кира, мамина младшая сестра. Конечно, у неё и раньше не были замечены какие-либо комплексы, но сейчас она стала такой... такой..."
-    new "Aunt Kira, mom's younger sister. She wasn't exactly shy before, but now she's so... so..."
+    new "Aunt Kira, Mom's younger sister. She wasn't exactly shy before, but now she's so... so..."
 
 # TODO: Translation updated at 2020-06-22 20:30
 
