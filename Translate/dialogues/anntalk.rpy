@@ -100,13 +100,13 @@ translate english ann_talk_tv_59854843:
 translate english ann_talk_tv_31044bb9:
 
     # Ann_05 "Ну что, отличный фильм, как мне кажется! А тебе понравилось, Макс?" nointeract
-    Ann_05 "I though that was great! What did you think, Max?" nointeract
+    Ann_05 "I thought that was great! What did you think, Max?" nointeract
 
 # game/dialogues/anntalk.rpy:138
 translate english ann_talk_tv_3bc2ea57:
 
     # Ann_07 "Ну я рада. Ладно, спасибо что посидел со мной. Пойду в свою комнату, хватит фильмов на сегодня..."
-    Ann_07 "Well, I'm glad. Thanks for spending some time with me. I'm going to head to my room now, that was enough for today."
+    Ann_07 "Well, I'm glad. Thanks for spending some time with me. I'm going to head to my room now, I'm exhausted..."
 
 # game/dialogues/anntalk.rpy:139
 translate english ann_talk_tv_5939730b:
@@ -130,7 +130,7 @@ translate english ann_talk_tv_466bcb0e:
 translate english ann_talk_tv_22b3f8bb:
 
     # Ann_05 "Ясно. Ну, спасибо за компанию. Пойду в свою комнату, хватит с меня фильмов на сегодня..."
-    Ann_05 "Okay, well thanks for your company. I'm going to head to my room. That's enough TV for today."
+    Ann_05 "Okay, well thanks for your company. I'm going to head to my room. I'm exhausted."
 
 # game/dialogues/anntalk.rpy:145
 translate english ann_talk_tv_980cb3ea:
@@ -160,7 +160,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:53
     old "Я могу сделать какую-то работу, чтобы не просто так выпрашивать деньги..."
-    new "I can do some work around the house..."
+    new "I can do some housekeeping..."
 
     # game/dialogues/anntalk.rpy:53
     old "Ты права, стыдно. В другой раз..."
@@ -180,7 +180,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:68
     old "Ну, могу заказать продукты"
-    new "Well, I can order some food."
+    new "Well, I can order groceries?"
 
     # game/dialogues/anntalk.rpy:68
     old "Не знаю. Видимо, ничего..."
@@ -290,13 +290,13 @@ translate english Ann_MorningWood_20707248:
 translate english Ann_MorningWood_f3fba9dc:
 
     # Max_00 "Ладно, мам..."
-    Max_00 "Okay, mom..."
+    Max_00 "Okay, Mom..."
 
 # game/dialogues/anntalk.rpy:215
 translate english Ann_MorningWood_0bac3ba4:
 
     # Ann_12 "Ну, взрослую женщину это даже притягивает, но девочке явно рано на такое смотреть, ты меня понял?" nointeract
-    Ann_12 "Well, women actually like it, but your sister shouldn't see stuff like this, do you understand?" nointeract
+    Ann_12 "Well, women actually like it, but your sister shouldn't see stuff like that, do you understand?" nointeract
 
 # game/dialogues/anntalk.rpy:218
 translate english Ann_MorningWood_845bcbb0:
@@ -326,7 +326,7 @@ translate english Ann_MorningWood_9fbd015d:
 translate english Ann_MorningWood_6ea36867:
 
     # Ann_12 "Да, понимаю, конечно... Но беседа ушла куда-то не туда. В общем, постарайся не травмировать её психику, хорошо?"
-    Ann_12 "Yeah, I guess... This conversation is going in some weird direction. Anyway, just try not to traumatize your sister, okay?"
+    Ann_12 "Yes, I suppose... This conversation is going in a weird direction. Anyway, just try not to traumatize your sister, okay?"
 
 # game/dialogues/anntalk.rpy:226
 translate english Ann_MorningWood_d66e2468:
@@ -386,7 +386,7 @@ translate english talk_about_smoking_812b7a4b:
 translate english talk_about_smoking_b75bee26:
 
     # Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
-    Ann_01 "Yes? Well, maybe it really did. Or maybe it came from the neighbours... Anyway, let's go have dinner."
+    Ann_01 "Yes? Well, maybe that is the case. Or maybe it came from the neighbours... Anyway, let's go have dinner."
 
 # game/dialogues/anntalk.rpy:255
 translate english talk_about_smoking_bc384657:
@@ -410,7 +410,7 @@ translate english talk_about_smoking_d217c75e:
 translate english talk_about_smoking_ae9788a4:
 
     # Alice_16 "Макс! Ты невыносим. Я уже подумала, что ты нормальный брат, а ты..." nointeract
-    Alice_16 "Ugh, Max! Just when I thought you could be a decent brother, you had to immediately prove me wrong..." nointeract
+    Alice_16 "Ugh, Max! Just when I thought you could be a decent brother, you had to prove me wrong..." nointeract
 
 # game/dialogues/anntalk.rpy:277
 translate english talk_about_smoking_82373ff8:
@@ -672,7 +672,7 @@ translate english ann_talk_tv_first_movie_45629b2c:
 translate english ann_talk_tv_first_movie_4fe2a7ed:
 
     # Max_01 "Не буду тебе мешать..."
-    Max_01 "Okay, I'll leave you to it"
+    Max_01 "Okay, I'll leave you to it..."
 
 # game/dialogues/anntalk.rpy:221
 translate english ann_talk_tv_first_movie_3a5a46d3:
@@ -684,7 +684,7 @@ translate english ann_talk_tv_first_movie_3a5a46d3:
 translate english ann_talk_tv_first_movie_01e23211:
 
     # Ann_05 "Отлично! Вот сейчас и посмотрим, что там подруга насоветовала..." nointeract
-    Ann_05 "Great, let's see what the fuss was about..." nointeract
+    Ann_05 "Great, let's see what the comotion was about..." nointeract
 
 # game/dialogues/anntalk.rpy:231
 translate english ann_talk_tv_first_movie_f174135b:
@@ -726,19 +726,19 @@ translate english ann_talk_tv_start_251e5813:
 translate english ann_talk_tv_start_2fbf09a3:
 
     # Ann_13 "Ой, кажется, я не посмотрела какой возрастной рейтинг у фильма..."
-    Ann_13 "I should've checked the rating for this..."
+    Ann_13 "I should've checked the parental advice..."
 
 # game/dialogues/anntalk.rpy:257
 translate english ann_talk_tv_start_2b8dcae5:
 
     # Max_04 "Да всё в порядке!"
-    Max_04 "It's fine"
+    Max_04 "It's fine!"
 
 # game/dialogues/anntalk.rpy:259
 translate english ann_talk_tv_start_08523ad3:
 
     # Ann_14 "Да уж... В порядке. Ну, если ты стесняешься, можешь закрыть глаза..."
-    Ann_14 "Yeah, right... You can close your eyes if you want."
+    Ann_14 "Yes, right... You can close your eyes if you want..."
 
 # game/dialogues/anntalk.rpy:260
 translate english ann_talk_tv_start_3b14cabb:
@@ -756,7 +756,7 @@ translate english ann_talk_tv_start_0d56f914:
 translate english ann_talk_tv_start_d40a96e0:
 
     # Max_03 "Да это не важно. В любом случае, это же популярный фильм с известными актёрами, что тут такого может быть..."
-    Max_03 "I was just kidding. But anyway, this is a popular movie with famous actors, how bad could it possibly be?"
+    Max_03 "I was just kidding. But look, this is a mainstream movie with famous actors, how bad could it possibly get?"
 
 # game/dialogues/anntalk.rpy:265
 translate english ann_talk_tv_start_a52089f5:
@@ -896,7 +896,7 @@ translate english ann_about_kiss_9cfb9a3d:
 translate english ann_about_kiss_3ef7d7c6:
 
     # Ann_02 "Понятно. Ну что я могу тебе сказать. Буть естественным, будь самим собой. Девушки это ценят. Если ты попытаешься выдавать себя за ловеласа, она это раскусит и бросит тебя..."
-    Ann_02 "Oh, I see. Well, what can I tell you. Be natural, be yourself. Girls appreciate that. If you act like a womanizer, she'll figure it out and leave you..."
+    Ann_02 "Oh, I see. Well, what can I tell you. Be natural, be yourself. Girls appreciate that. If you act like a womanizer, she'll know you're faking it and leave you..."
 
 # game/dialogues/anntalk.rpy:490
 translate english ann_about_kiss_f7d895a9:
