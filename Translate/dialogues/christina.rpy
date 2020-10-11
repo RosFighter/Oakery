@@ -4,7 +4,7 @@
 translate english christina_first_talk_a072d515:
 
     # Christine_03 "А почему всегда ты расписываешься за женскую одежду? Тебя тут совсем девчонки загоняли?"
-    Christine_03 "Why do you always sign for women's clothing? Are girls forcing you to collect their orders?"
+    Christine_03 "Why do you always sign for women's clothing? Are there girls forcing you to collect their orders?"
 
 # game/dialogues/christina.rpy:8
 translate english christina_first_talk_a003babc:
@@ -40,13 +40,13 @@ translate english christina_first_talk_b993408f:
 translate english christina_first_talk_6bc10c65:
 
     # Christine_04 "Ясно, ясно, как скажешь... Даже не знаю, что думать, ты купил очень сексуальную сорочку... Интересные у тебя отношения с твоей семьёй!"
-    Christine_04 "Yeah yeah, whatever you say... I don't know what I'm supposed to think, but you bought some really sexy clothes... You must have an interesting relationship with your family!"
+    Christine_04 "Yeah yeah, whatever you say... I don't know what I'm supposed to think, but you bought some really cute clothes... You must have an interesting relationship with your family!"
 
 # game/dialogues/christina.rpy:14
 translate english christina_first_talk_1eaa95f2:
 
     # Max_07 "Я единственный мужчина в семье, так что приходится за всеми ними присматривать и давать им то, что им будет нужно."
-    Max_07 "I'm the man of the house. So it's important that I look after the girls an give them what they need."
+    Max_07 "I'm the man of the house. So it's important that I look after the girls and give them what they need."
 
 # game/dialogues/christina.rpy:15
 translate english christina_first_talk_45304a41:
@@ -58,7 +58,7 @@ translate english christina_first_talk_45304a41:
 translate english christina_first_talk_9ad20b4c:
 
     # Max_04 "Макс! Меня зовут Макс. А тебя?"
-    Max_04 "Max! My name is Max. What's your name?"
+    Max_04 "Max! My name is Max. And you are...?"
 
 # game/dialogues/christina.rpy:17
 translate english christina_first_talk_73942048:
@@ -88,7 +88,7 @@ translate english christina_first_talk_c2d8dc26:
 translate english christina_first_talk_0f071789:
 
     # Christine_03 "А может все три раза по десять? Ладно, заболталась я с тобой, мне ещё есть, что развозить..." nointeract
-    Christine_03 "Do you even know what three times ten is? Okay, I've milked this enough, I still have more deliveries..." nointeract
+    Christine_03 "Do you even know what three times ten is? But anyway, I've milked this enough, I still have more deliveries..." nointeract
 
 # game/dialogues/christina.rpy:28
 translate english christina_first_talk_13d9bbd2:
@@ -100,13 +100,13 @@ translate english christina_first_talk_13d9bbd2:
 translate english christina_first_talk_204a6521:
 
     # Max_01 "Я тоже, Кристина! Пока."
-    Max_01 "Likewise, Christina! Bye."
+    Max_01 "Likewise, Christina!"
 
 # game/dialogues/christina.rpy:33
 translate english christina_first_talk_4e754e98:
 
     # Christine_04 "Ничего себе! Десятилетки ко мне ещё не подкатывали..."
-    Christine_04 "Wow! I've never had ten-year-olds hit on me..."
+    Christine_04 "Wow! I've never had a ten-year-old hit on me..."
 
 # game/dialogues/christina.rpy:34
 translate english christina_first_talk_6d86254c:
@@ -148,7 +148,7 @@ translate english christina_first_talk_c6c68e68:
 translate english christina_first_talk_9763c614:
 
     # Christine_00 "И всем вам нужно лишь одно, залезть ко мне в трусы! Так ведь?"
-    Christine_00 "And all you want is to get in my pants! Don't you?"
+    Christine_00 "And all you want is to get in my pants! Right?"
 
 # game/dialogues/christina.rpy:41
 translate english christina_first_talk_0622f90e:
@@ -178,7 +178,7 @@ translate english christina_first_talk_13d9bbd2_1:
 translate english christina_first_talk_204a6521_1:
 
     # Max_01 "Я тоже, Кристина! Пока."
-    Max_01 "Me too, Christina! Bye."
+    Max_01 "Me too, Christina!"
 
 translate english strings:
 
