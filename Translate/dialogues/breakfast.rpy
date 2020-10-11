@@ -34,25 +34,25 @@ translate english typical_breakfast_63f629c8:
 translate english breakfast_first_4fdf0844:
 
     # Ann_07 "Ну, дети, как вам живётся на новом месте? Как спалось в первую ночь?"
-    Ann_07 "So, kids, how do you feel about our new home? How was your first night?"
+    Ann_07 "How are we all feeling about our new home? How was your first night?"
 
 # game/dialogues/breakfast.rpy:25
 translate english breakfast_first_6ac209bf:
 
     # Alice_07 "Просто нет слов! После той нашей съёмной квартиры это какой-то рай! А кровать какая удобная..." nointeract
-    Alice_07 "Compared to our last apartment, this is a palace! My bed is so comfy..." nointeract
+    Alice_07 "Compared to how cramped our last apartment, this is a palace! My bed is so comfy..." nointeract
 
 # game/dialogues/breakfast.rpy:28
 translate english breakfast_first_494e7581:
 
     # Ann_12 "Да, меня тоже этот вопрос беспокоит. Но на новой работе мне обещают очень хорошую зарплату. Может быть, не всё так плохо. Кстати, за электричество платить не нужно..." nointeract
-    Ann_12 "I'm worried about that too. But I should earn earn enough from my new job. Maybe things won't be so bad, we don't even have to pay for electricity!." nointeract
+    Ann_12 "I'm worried about that too. But I should earn earn enough from my new job. Maybe things won't be so bad, we don't even have to pay for electricity!" nointeract
 
 # game/dialogues/breakfast.rpy:35
 translate english breakfast_first_02490cba:
 
     # Lisa_01 "А вдруг, нигде не кидают? Хотя я папу и не помню, но мне кажется, что никто не стал бы дарить целый дом только чтобы как-то кинуть..." nointeract
-    Lisa_01 "Maybe there's no catch? I obviously don't remember dad, but why would anyone give us a whole house just to screw us over later?" nointeract
+    Lisa_01 "Maybe there's no catch? I obviously don't remember Dad, but why would anyone give us a whole house just to screw us over later?" nointeract
 
 # game/dialogues/breakfast.rpy:44
 translate english breakfast_first_3acfb325:
@@ -64,19 +64,19 @@ translate english breakfast_first_3acfb325:
 translate english breakfast_first_54853909:
 
     # Ann_00 "Если что, мебель всегда можно будет купить..." nointeract
-    Ann_00 "We can always buy a new bed if that changes." nointeract
+    Ann_00 "We can always save up for a new bed if that changes." nointeract
 
 # game/dialogues/breakfast.rpy:55
 translate english breakfast_first_bf_change_a3dfedbb:
 
     # Ann_00 "Так, хватит. Давайте сменим тему. Например, сегодня у нас Лиза первый раз идёт в новую школу." nointeract
-    Ann_00 "Ok thats enough, lets not forget today is Lisa's first day at her new school!." nointeract
+    Ann_00 "Ok thats enough, lets not forget today is Lisa's first day at her new school!" nointeract
 
 # game/dialogues/breakfast.rpy:58
 translate english breakfast_first_bf_change_44297202:
 
     # Lisa_02 "Спасибо, Макс. Честно говоря, не знаю даже чего ожидать. Новое место, новая школа, новый коллектив..." nointeract
-    Lisa_02 "Thanks, Max. I'm kind of nervous. New house, new school, new people..." nointeract
+    Lisa_02 "Thanks, Max. I'm kinda nervous. New house, new school, new people..." nointeract
 
 # game/dialogues/breakfast.rpy:61
 translate english breakfast_first_bf_change_76249fd8:
@@ -88,7 +88,7 @@ translate english breakfast_first_bf_change_76249fd8:
 translate english breakfast_first_bf_change_e252eb97:
 
     # Alice_06 "Да все мы знаем за что тебя выгнали. Но это не значит, что и учился ты хорошо..." nointeract
-    Alice_06 "We all know why you were kicked out, but that doesn't also mean you had good grades. " nointeract
+    Alice_06 "We all know why you were kicked out, but that doesn't also mean you had good grades." nointeract
 
 # game/dialogues/breakfast.rpy:73
 translate english breakfast_first_bf_change_f6a0ca75:
@@ -100,7 +100,7 @@ translate english breakfast_first_bf_change_f6a0ca75:
 translate english breakfast_first_bf_change_50f154cf:
 
     # Lisa_01 "Ага, деваться то некуда. Кстати, после завтрака я буду уже собираться, в 11 выхожу. А часам к 4 уже вернусь" nointeract
-    Lisa_01 "I'll have to try my best, there's no other schools close-by. I'll start getting ready after breakfast. I'll leave at 11 and be back around 4." nointeract
+    Lisa_01 "I'll have to try my best, there's no other schools close-by. I'll start getting ready after breakfast so I can leave at 11 and be back around 4." nointeract
 
 # game/dialogues/breakfast.rpy:83
 translate english breakfast_first_bf_change_c23566a9:
@@ -112,7 +112,7 @@ translate english breakfast_first_bf_change_c23566a9:
 translate english breakfast_first_bf_change_73ce3762:
 
     # Lisa_00 "Видимо, после завтрака буду уходить и возвращаться часам к 4-м." nointeract
-    Lisa_00 "I'll have to leave after breakfast, but I should get home by 4pm." nointeract
+    Lisa_00 "I'll have to leave after breakfast, but I should get home by 4." nointeract
 
 # game/dialogues/breakfast.rpy:99
 translate english breakfast_first_bf_change_3b6c15c9:
@@ -148,7 +148,7 @@ translate english breakfast_first_bf_earn_0aead3d0:
 translate english breakfast_first_bf_earn_9894dee3:
 
     # Alice_13 "Он даёт подписчиков, аудиторию. Когда начну рекламу крутить, то деньги польются рекой!" nointeract
-    Alice_13 "I'll get views. I'll be able to earn a lot of ad-revenue once my audience is big enough!" nointeract
+    Alice_13 "I'll get views. I'll be able to earn a lot of ad-revenue once I have an audience!" nointeract
 
 # game/dialogues/breakfast.rpy:131
 translate english breakfast_first_bf_earn_a431c924:
@@ -160,7 +160,7 @@ translate english breakfast_first_bf_earn_a431c924:
 translate english breakfast_first_bf_earn_3e84d9e6:
 
     # Alice_07 "Мозги? У тебя?! А кого же из школы тогда выперли? Слишком умный для них был, да?" nointeract
-    Alice_07 "Then how did you get yourself expelled from school, genius? Did you scare them with your intelligence?" nointeract
+    Alice_07 "Then how did you get yourself expelled from school, genius? Were they frightened by your intelligence?" nointeract
 
 # game/dialogues/breakfast.rpy:147
 translate english breakfast_first_bf_earn_f0d53b97:
@@ -184,13 +184,13 @@ translate english breakfast_first_bf_earn3_c9ee5343:
 translate english breakfast_first_bf_earn3_dfce9c3d:
 
     # Alice_00 "А это не важно. Что нужно будет, то и буду рекламировать. А вообще, у меня бьюти-блог!" nointeract
-    Alice_00 "I have a beauty blog, so I'm sure I'll find thematically appropriate ads. Makeup, clothes, there are lots of options." nointeract
+    Alice_00 "I have a beauty blog, so I'm sure I'll find thematically appropriate ads. Makeup, clothes, there's plenty of options." nointeract
 
 # game/dialogues/breakfast.rpy:181
 translate english breakfast_first_bf_earn3_57ece003:
 
     # Alice_00 "Я не говорила, что у меня миллион подписчиков, но будет. И не один. А вот у тебя вообще ничего нет!" nointeract
-    Alice_00 "I never said I have millions of subscribers, but I eventually will. At least more than you'll ever have." nointeract
+    Alice_00 "I never said I have millions of subscribers, but one day I will. Or at least it'll be more than you'll ever have." nointeract
 
 # game/dialogues/breakfast.rpy:191
 translate english breakfast_first_bf_roof_75336744:
@@ -202,7 +202,7 @@ translate english breakfast_first_bf_roof_75336744:
 translate english breakfast_first_bf_roof_306fdb3a:
 
     # Lisa_09 "Да, кстати, очень жарко тут. Я ещё не привыкла к этому климату. С другой стороны, не так жалко ту одежду, что пропала во время переезда." nointeract
-    Lisa_09 "Yeah, it's so hot here, I'm still getting used to the humidity. On the plus side, I'm not going to miss the clothes we lost, we wouldn't be able to wear most of them anyway." nointeract
+    Lisa_09 "Yeah, it's so hot here, I'm still getting used to the humidity. But at lest I'm not going to miss the clothes we lost, we wouldn't be able to wear most of them anyway." nointeract
 
 # game/dialogues/breakfast.rpy:195
 translate english breakfast_first_bf_roof_6de5b34a:
@@ -238,13 +238,13 @@ translate english breakfast_first_bf_roof_089f3e28:
 translate english breakfast_first_bf_roof_a71d40d7:
 
     # Ann_00 "Про кондиционеры я всё узнала. Дом не успели достроить и не вся техника и мебель была закуплена. А теперь уже и не знаю. Видимо, самим придётся всё остальное докупать." nointeract
-    Ann_00 "The house wasn't completely finished so it's missing some equipment and furniture. So we'll have to buy a few things ourselves." nointeract
+    Ann_00 "The house wasn't completely finished so it is missing some furnishings. I'm afraid we'll have to buy a few things ourselves." nointeract
 
 # game/dialogues/breakfast.rpy:236
 translate english breakfast_first_bf_roof_2ce97c4c:
 
     # Ann_15 "Да и без кондиционеров проживём. Как-то же справлялись. Да, здесь климат совсем другой, но человек ко всему привыкает. Да и не до того пока." nointeract
-    Ann_15 "We'll be fine without them.  Yes, the climate is a lot hotter, but we'll get used to it. And it's not high on the priority list right now." nointeract
+    Ann_15 "We'll be fine without them. Yes, the climate is a lot warmer, but we can get used to it. And it's not high on the priority list right now." nointeract
 
 # game/dialogues/breakfast.rpy:239
 translate english breakfast_first_bf_roof_2486ec98:
@@ -304,7 +304,7 @@ translate english breakfast_first_bf_change2_d76935c0:
 translate english breakfast_first_bf_change2_c2fa27a6:
 
     # Ann_00 "Да, Макс. Я когда прибиралась, нашла какие-то коробки. Видимо, остались с ремонта. Посмотри, если ничего ценного нет, потом выбросим. Сейчас они у тебя в комнате." nointeract
-    Ann_00 "Oh, by the way, Max... I found some boxes in your room while I was cleaning. I think they were left behind by the construction crew. I didn't have a chance to look through them, so just throw them out if theres nothing valuable in them, okay?" nointeract
+    Ann_00 "Oh, by the way, Max... I found some boxes in your room while I was cleaning. I think they were left behind by the construction crew. I didn't have a chance to look through them, so just throw them out if there is nothing valuable in them, okay?" nointeract
 
 # game/dialogues/breakfast.rpy:310
 translate english breakfast_first_bf_change2_decd1aa4:
@@ -332,7 +332,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:25
     old "А вот у меня кровать точно такая же..."
-    new "We still have the same beds."
+    new "We still have the same beds..."
 
     # game/dialogues/breakfast.rpy:28
     old "Почему не нужно?"
@@ -344,11 +344,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:35
     old "Как знать. Может быть, у него не всё чисто с законом и дом отберут"
-    new "Who knows. Maybe this is part of some money laundering scheme."
+    new "Who knows. Maybe this is part of some money laundering scheme"
 
     # game/dialogues/breakfast.rpy:35
     old "Верно. У нас толком ничего и не было, чтобы планировать что-то отобрать"
-    new "True... It's not like we have anything of value, there's no reason to target us."
+    new "True... It's not like we have anything of value, there's no reason to target us"
 
     # game/dialogues/breakfast.rpy:35
     old "Хотелось бы так думать..."
@@ -360,7 +360,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:44
     old "Вот заработаю и куплю себе новую кровать!"
-    new "I'll make some money and buy a new bed"
+    new "I'll make some money and buy a new bed!"
 
     # game/dialogues/breakfast.rpy:47
     old "Ага. Кстати, я планирую уже начать зарабатывать!"
@@ -400,7 +400,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:64
     old "Обязательно меня доставать?"
-    new "Do you really have to insult me"
+    new "Do you really have to insult me?"
 
     # game/dialogues/breakfast.rpy:64
     old "Нормально я учился..."
@@ -436,11 +436,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:117
     old "Ой. Кого же мне это всё напоминает?"
-    new "Hey, that sounds just like someone I know"
+    new "Hey, that sounds just like someone I know?"
 
     # game/dialogues/breakfast.rpy:117
     old "А вот и заработаю. Научусь что-то делать и сразу заработаю!"
-    new "I'll learn some skills to make money."
+    new "I'll learn some skills to make money!"
 
     # game/dialogues/breakfast.rpy:117
     old "Ну а ты разве не дома сидишь в своём ноуте? Ты как зарабатывать планируешь?"
@@ -456,11 +456,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:121
     old "А у меня есть мозги!"
-    new "I have a functioning brain"
+    new "I have a functioning brain!"
 
     # game/dialogues/breakfast.rpy:124
     old "Смотри, не захлебнись... рекой"
-    new "Only if you get a big audience"
+    new "Only if you get a big audience..."
 
     # game/dialogues/breakfast.rpy:124
     old "Ну, посмотрим на твою реку..."
@@ -476,11 +476,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:138
     old "Да поумнее некоторых..."
-    new "I'm still smarter than you"
+    new "I'm still smarter than you..."
 
     # game/dialogues/breakfast.rpy:138
     old "Меня не за оценки выперли!"
-    new "I wasn't kicked out for bad grades"
+    new "I wasn't kicked out for bad grades!"
 
     # game/dialogues/breakfast.rpy:138
     old "Да мне школа и не нужна"
@@ -492,11 +492,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:147
     old "Ага, дворником или посудомойкой?"
-    new "I don't want to be a janitor"
+    new "I don't want to be a janitor?"
 
     # game/dialogues/breakfast.rpy:147
     old "Вот сама бы и шла работать по объявлению!"
-    new "Why don't you follow your own advice"
+    new "Why don't you follow your own advice!"
 
     # game/dialogues/breakfast.rpy:160
     old "Ага, всё же так просто..."
@@ -512,15 +512,15 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:163
     old "Да уж, делом. Деловая..."
-    new "You should try harder then"
+    new "You should try harder then..."
 
     # game/dialogues/breakfast.rpy:163
     old "Не перетрудись!"
-    new "Don't overexert yourself"
+    new "Don't overexert yourself!"
 
     # game/dialogues/breakfast.rpy:163
     old "Я хотя бы реалист!"
-    new "I'm just trying to be realistic"
+    new "I'm just trying to be realistic!"
 
     # game/dialogues/breakfast.rpy:172
     old "Бьюти-блогеров как грязи. Чем ты лучше их?"
@@ -528,7 +528,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:172
     old "Думаешь, кому-то нужна твоя реклама?"
-    new "Do you think somebody will want your ad-space?"
+    new "Do you think anyone will want your ad-space?"
 
     # game/dialogues/breakfast.rpy:172
     old "Всё фантазируешь..."
@@ -544,7 +544,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:181
     old "Ага, десять миллионов..."
-    new "Sure you will"
+    new "Sure you will..."
 
     # game/dialogues/breakfast.rpy:192
     old "Ты им звонила, мам, узнала где наши вещи?"
@@ -552,11 +552,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:192
     old "Ничего страшного, купим новую!"
-    new "That's okay, we'll buy new clothes"
+    new "That's okay, we'll buy new clothes!"
 
     # game/dialogues/breakfast.rpy:192
     old "Я не понял, а где кондиционеры?"
-    new "What I don't understand is why this house has no AC"
+    new "What I don't understand is why this house has no AC?"
 
     # game/dialogues/breakfast.rpy:195
     old "Ну и обойдёмся без неё"
@@ -592,11 +592,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:211
     old "Да на тебя вещей не напасёшься!"
-    new "That sounds a bit excessive"
+    new "That sounds a bit excessive!"
 
     # game/dialogues/breakfast.rpy:211
     old "У тебя репа не треснет с такими запросами?"
-    new "That can't possibly be profitable"
+    new "That can't possibly be profitable?"
 
     # game/dialogues/breakfast.rpy:218
     old "И что ты там раскручиваешь?"
@@ -604,7 +604,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:218
     old "Я придумаю и заработаю!"
-    new "I'll find a way, don't worry"
+    new "I'll find a way, don't worry!"
 
     # game/dialogues/breakfast.rpy:229
     old "Ну и купим, без проблем"
@@ -628,11 +628,11 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:239
     old "Я не против!"
-    new "I don't mind"
+    new "I don't mind!"
 
     # game/dialogues/breakfast.rpy:239
     old "Начинай, я уже в предвкушении..."
-    new "I'd like that"
+    new "I'd like that..."
 
     # game/dialogues/breakfast.rpy:239
     old "Ну и ходи в своих джинсах дома"
@@ -652,7 +652,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:260
     old "Кто о чём, а Алиса о шоппинге..."
-    new "That's your solution to every problem"
+    new "That's your solution to every problem..."
 
     # game/dialogues/breakfast.rpy:260
     old "Сначала заработай"
@@ -712,7 +712,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:310
     old "Понял. Посмотрю..."
-    new "Okay, I'll look into it"
+    new "Okay, I'll look into it..."
 
 # TODO: Translation updated at 2020-01-19 10:46
 
@@ -720,19 +720,19 @@ translate english strings:
 translate english breakfast_2_7396b2f9:
 
     # Ann_07 "Всем приятного аппетита... Хотя, постойте. Вчера Лиза сходила в школу и я забыла спросить про оценки. Что-нибудь проверяли, спрашивали?"
-    Ann_07 "Good morning everyone. My apologies, Lisa, yesterday was your first day at school and I completely forgot to ask how it was! Have you gotten homework? Were there any tests?"
+    Ann_07 "Good morning everyone. My apologies, Lisa, yesterday was your first day at school and I completely forgot to ask how it was! Do you have homework? Were there any tests?"
 
 # game/dialogues/breakfast.rpy:328
 translate english breakfast_2_e5c0ee9a:
 
     # Lisa_09 "Ну... Так... Немного..."
-    Lisa_09 "Well, there was a test...yeah."
+    Lisa_09 "Um, we did have a test...yeah."
 
 # game/dialogues/breakfast.rpy:329
 translate english breakfast_2_2081c193:
 
     # Ann_01 "Лиза, что спрашивали и что ты ответила?"
-    Ann_01 "So, what did they ask and how did you answer?"
+    Ann_01 "Excellent! How did you go?"
 
 # game/dialogues/breakfast.rpy:330
 translate english breakfast_2_276a25cf:
@@ -756,7 +756,7 @@ translate english breakfast_2_cc5a72e4:
 translate english breakfast_2_17622a4d:
 
     # Lisa_09 "Ну мам... Я же не специально. Я обещаю, что всё выучу!" nointeract
-    Lisa_09 "Please, Mom... It's not like I failed on purpose. I promise I'll study more!" nointeract
+    Lisa_09 "Please, Mom! It's not like I failed on purpose. I promise I'll study more!" nointeract
 
 # game/dialogues/breakfast.rpy:343
 translate english breakfast_2_591293ef:
@@ -786,13 +786,13 @@ translate english breakfast_2_5c1ae569:
 translate english breakfast_2_b065bbec:
 
     # Ann_00 "Вот и хорошо, что поняла. Теперь иди садись. Прошу прощения, что пришлось прервать завтрак, но иначе нельзя. И да, если узнаю, что кто-то мне врёт, тот получит гораздо сильнее. Больше всего ненавижу ложь. Всё ясно?" nointeract
-    Ann_00 "Good. Now get to your seat. I'm sorry I had to interrupt our breakfast, but that's just what we need to do from now on. And if I find out someone is lying or keeping secrets, then your punishment will be even worse. I hate lying. Is that clear?" nointeract
+    Ann_00 "Good. Now get to your seat. I'm sorry I had to interrupt our breakfast, but that's just what we need to do from now on. And if I find out someone is lying or keeping secrets, then your punishment will be even more severe. I hate lying. Is that clear?" nointeract
 
 # game/dialogues/breakfast.rpy:362
 translate english breakfast_2_696eb569:
 
     # Ann_05 "Так, всё, вернёмся к нашему завтраку. Кто нужно сделал выводы, а остальным бояться нечего. Приятного аппетита!"
-    Ann_05 "Let's return to breakfast. I hope everyone has made right conclusions. Enjoy!"
+    Ann_05 "Let's get back to breakfast. I hope everyone has drawn the right conclusions. Enjoy!"
 
 # game/dialogues/breakfast.rpy:363
 translate english breakfast_2_c34f0d6f:
@@ -840,7 +840,7 @@ translate english breakfast_2_2501d22e:
 translate english breakfast_2_f64d9ad1:
 
     # Alice_01 "Макс, не притворяйся, что не видел. В наших спальнях с мамой уже была вся мебель и картины, в том числе. Наверняка, пялился на них, когда увидел..." nointeract
-    Alice_01 "Like you haven't noticed them, Max. My and Mom's bedroom already had furniture and paintings when we moved in. You were probably ogling them, when you first noticed..." nointeract
+    Alice_01 "Like you haven't noticed them, Max. Me and Mom's bedroom already had furniture and paintings when we moved in. You were probably ogling them, when you first noticed..." nointeract
 
 # game/dialogues/breakfast.rpy:384
 translate english breakfast_2_9beefc93:
@@ -912,19 +912,19 @@ translate english breakfast_2_c5e2637b:
 translate english breakfast_2_2df9f97d:
 
     # Max_00 "Давай, удачи..."
-    Max_00 "Okay, good luck"
+    Max_00 "Okay, good luck..."
 
 # game/dialogues/breakfast.rpy:418
 translate english breakfast_2_ok_1c0e32db:
 
     # Ann_07 "Ну всё, ещё раз всем спасибо. А тебе, Лиза, удачи в школе. Не подведи меня!"
-    Ann_07 "Yeah, thanks for breakfast, everyone. Good luck with school, Lisa. Don't let me down!"
+    Ann_07 "Yes, thanks for breakfast, everyone. Good luck with school, Lisa. Do your best!"
 
 # game/dialogues/breakfast.rpy:419
 translate english breakfast_2_ok_e0b844ce:
 
     # Max_01 "Пока, мам..."
-    Max_01 "Bye, mom"
+    Max_01 "Bye, Mom..."
 
 translate english strings:
 
@@ -942,7 +942,7 @@ translate english strings:
 
     # game/dialogues/breakfast.rpy:340
     old "Мама! Лиза права. Дай ей шанс подготовиться. Я ей помогу!"
-    new "Lisa's right, mom! Give her a chance. I'll help her!"
+    new "Lisa's right, Mom! Give her a chance. I'll help her!"
 
     # game/dialogues/breakfast.rpy:352
     old "Я тут вообще ни при чём"
@@ -1021,13 +1021,13 @@ translate english breakfast_3_b60d309c:
 translate english breakfast_3_b2276362:
 
     # Ann_01 "Алиса, мы не в том положении, чтобы покупать тебе платья для клубов. Да и о чём ты говоришь? Ты бы делом занялась, а не о клубах думала!" nointeract
-    Ann_01 "We can't afford to buy you a dress, Alice. And what are you talking about anyway? You should be thinking about a job or university, not about partying." nointeract
+    Ann_01 "We can't afford to buy you a dress, Alice. And what are you talking about anyway? You should be thinking about a job or university, not about partying!" nointeract
 
 # game/dialogues/breakfast.rpy:437
 translate english breakfast_3_29d5cb7f:
 
     # Alice_13 "Мам! Я молодая, красивая, мне надо развлекаться. Ты сама рассказывала, как раньше зажигала, а мне не даёшь?"
-    Alice_13 "Come on, mom! I'm young, I want to have a good time every once in a while. You were telling me all those stories about your younger days, but I'm not allowed to enjoy myself?"
+    Alice_13 "Come on, Mom! I'm bored, I want to have a good time every once in a while. You were telling me all those stories about your younger days, but I'm not allowed to enjoy myself?"
 
 # game/dialogues/breakfast.rpy:438
 translate english breakfast_3_469954dc:
@@ -1063,25 +1063,25 @@ translate english breakfast_3_fc7e8a5a:
 translate english breakfast_3_b7ff85a4:
 
     # Alice_13 "Мам, ну не слишком короткое... В общем, любое. Главное, чтобы можно было пойти! Ну ма-ам..."
-    Alice_13 "Okay, mom, it doesn't have to be too short... Anything will do. It just has to be good enough for me to go to the club! Come on, Mom..."
+    Alice_13 "Okay, Mom, it doesn't have to be too short... Anything will do. It just has to be good enough for me to go to the club! Come on, Mom..."
 
 # game/dialogues/breakfast.rpy:448
 translate english breakfast_3_713275ed:
 
     # Ann_01 "Ну не знаю, Алиса. Посмотрим. Кстати, завтра после завтрака вы все едем на шоппинг. Ну, кроме Макса, наверное..." nointeract
-    Ann_01 "I don't know, Alice. We'll see. By the way, we're going shopping tomorrow. Well, everyone but Max, I guess..." nointeract
+    Ann_01 "I don't know, Alice. We'll see. By the way, we're going shopping tomorrow. Well, everyone but Max, I suppose..." nointeract
 
 # game/dialogues/breakfast.rpy:451
 translate english breakfast_3_6637c044:
 
     # Ann_05 "Ты знаешь, мне кажется, что тебе будут мало интересны магазины со шмотками. У тебя всё есть, а нам, девочкам, нужно кое-что прикупить..." nointeract
-    Ann_05 "We need to replace the clothes we lost, and what we still have is way too hot for this weather. I doubt you'd be interested in coming, you already have plenty of suitable things to wear. There's a lot the girls and I need to replace, but nothing expensive!." nointeract
+    Ann_05 "We need to replace the clothes we lost, and what we still have is far from suitable for this weather. I doubt you'd be interested in coming, you already have plenty of appropriate things to wear. There are a lot the girls and I need to replace, but nothing expensive!" nointeract
 
 # game/dialogues/breakfast.rpy:458
 translate english breakfast_3_e50e70cf:
 
     # Ann_05 "Вот и я так подумала. Разве тебе будут интересны наши девчачьи магазины? А вот нам очень. Как раз всем нам нужно кое-что прикупить..." nointeract
-    Ann_05 "I thought so. You're not going to be interested in girl stuff. And since we lost so much we'll be a while." nointeract
+    Ann_05 "I thought so. You won't be interested in girl stuff. And since we lost so much we'll be a while." nointeract
 
 # game/dialogues/breakfast.rpy:465
 translate english breakfast_3_nomany_eff4ca88:
@@ -1117,13 +1117,13 @@ translate english breakfast_3_driver_0a7edcf8:
 translate english breakfast_3_driver_1f37d395:
 
     # Ann_00 "Не знаю, Макс, посмотрим. Возможно, завтра вечером после шоппинга он заедет к нам на ужин, там ты с ним и познакомишься..."
-    Ann_00 "I don't know, Max, we'll see. Maybe he'll stay for dinner after shopping and you'll meet him"
+    Ann_00 "I don't know, Max, we'll see. Maybe he'll stay for dinner after shopping and you'll meet him then..."
 
 # game/dialogues/breakfast.rpy:476
 translate english breakfast_3_driver_38f74335:
 
     # Lisa_01 "И какой он, мам? Рассказывай! Значит, у вас всё серьёзно, да? А вы уже целовались?"
-    Lisa_01 "What he's like, Mom? Tell us! Are you two serious? Have you two kissed already?"
+    Lisa_01 "What's he's like, Mom? Tell us! Are you two serious? Have you two kissed already?"
 
 # game/dialogues/breakfast.rpy:477
 translate english breakfast_3_driver_c321de54:
@@ -1289,7 +1289,7 @@ translate english breakfast_4_a0ebdb73:
 translate english breakfast_4_39806b21:
 
     # Max_11 "Если ты о шоппинге, то меня вы всё равно не берёте..."
-    Max_11 "If you're talking about shopping, you're not taking me with you anyway"
+    Max_11 "If you're talking about shopping, you're not taking me with you anyway..."
 
 # game/dialogues/breakfast.rpy:538
 translate english breakfast_4_23b38825:
@@ -1343,7 +1343,7 @@ translate english breakfast_4_55d3a406:
 translate english breakfast_4_af900431:
 
     # Ann_01 "Вот и не стоит раньше времени предполагать худшее. Познакомишься уже сегодня и выяснишь для себя всё, что нужно..."
-    Ann_01 "Then you shouldn't assume the worst. You'll meet him today and be able to form your own opinion..."
+    Ann_01 "Then you shouldn't assume the worst. You'll meet him today and be able to get along..."
 
 # game/dialogues/breakfast.rpy:554
 translate english breakfast_4_d65d04da_1:
@@ -1367,7 +1367,7 @@ translate english breakfast_4_38b7f8b4:
 translate english breakfast_4_05cc408b:
 
     # Alice_02 "Да ты не переживать должен, а радоваться, что у мамы налаживается её личная жизнь! К тому же, ещё и с работой так повезло и даже повышение в первую неделю светит..." nointeract
-    Alice_02 "Instead of worrying, you should be happy for mom instead! Not only did she get herself a boyfriend, but she also got lucky with her new job and she might even get promoted in her first week..." nointeract
+    Alice_02 "Instead of worrying, you should be happy for Mom instead! Not only did she get herself a boyfriend, but she also got lucky with her new job and she might even get promoted in her first week..." nointeract
 
 # game/dialogues/breakfast.rpy:565
 translate english breakfast_4_71328ac0:
@@ -1379,13 +1379,13 @@ translate english breakfast_4_71328ac0:
 translate english breakfast_4_b30b05ba_1:
 
     # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
-    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean."
+    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean?"
 
 # game/dialogues/breakfast.rpy:569
 translate english breakfast_4_b30b05ba:
 
     # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
-    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean."
+    Lisa_03 "I know! I need a swimsuit! I mean I need an open one, so I can tan in it. You know what I mean?"
 
 # game/dialogues/breakfast.rpy:572
 translate english breakfast_4_aed9c202:
@@ -1397,7 +1397,7 @@ translate english breakfast_4_aed9c202:
 translate english breakfast_4_e4ed6353:
 
     # Alice_01 "Лиза! Хватит тараторить. Купальник у тебя уже есть, а вот клубного платья у меня нет ни одного вообще. Так что, сначала мне!"
-    Alice_01 "You already have a swimsuit, Lisa, but I don't have a single dress to go out. So we're picking mine first!"
+    Alice_01 "You already have a swimsuit, Lisa, but I don't have a single dress to go out in. So we're picking mine first!"
 
 # game/dialogues/breakfast.rpy:574
 translate english breakfast_4_68b06732:
@@ -1409,7 +1409,7 @@ translate english breakfast_4_68b06732:
 translate english breakfast_4_ba073505:
 
     # Lisa_12 "У меня купальник закрытый и в нём не позагорать. А клубы твои ничем хорошим не заканчиваются... Особенно, когда..."
-    Lisa_12 "I can't tan in my one piece swimsuit. And your clubbing never ends well anyway, especially when you..."
+    Lisa_12 "I can't tan in my one piece swimsuit. And your clubbing never ends well anyway, especially when you-"
 
 # game/dialogues/breakfast.rpy:576
 translate english breakfast_4_eb10555f:
@@ -1421,7 +1421,7 @@ translate english breakfast_4_eb10555f:
 translate english breakfast_4_f28b7a83:
 
     # Alice_09 "Лиза! Заткнись, пожалуйста. Хватит об этом. Ладно, сначала тебе купальник, потом мне платье..."
-    Alice_09 "Lisa! Could you please shut up!? Okay, swimsuit first, dress second..."
+    Alice_09 "Lisa! Could you shut up!? Okay, swimsuit first, dress second..."
 
 # game/dialogues/breakfast.rpy:578
 translate english breakfast_4_0c7faf0a:
@@ -1439,7 +1439,7 @@ translate english breakfast_4_d7175ecb:
 translate english breakfast_4_2afa1e0c:
 
     # Max_02 "Обязательно разберёмся. Мне же интересно!"
-    Max_02 "Okay, will do"
+    Max_02 "Okay, will do!"
 
 # game/dialogues/breakfast.rpy:581
 translate english breakfast_4_fabe9f19:
@@ -1583,7 +1583,7 @@ translate english breakfast_5_d75ec0ba:
 translate english breakfast_5_6aaaaa8a:
 
     # Alice_09 "Макс! Это уже не смешно. Завязывай с допросом. Мама сама разберётся когда ей и с кем встречаться! Да, мам?"
-    Alice_09 "This isn't funny anymore, Max! Enough with the questions. Mom can decide on her own. Right, mom?"
+    Alice_09 "This isn't funny anymore, Max! Enough with the questions. Mom can decide on her own. Right, Mom?"
 
 # game/dialogues/breakfast.rpy:620
 translate english breakfast_5_e1ca2730:
@@ -1631,7 +1631,7 @@ translate english breakfast_5_7b8f5a70:
 translate english breakfast_5_2c426155:
 
     # Max_04 "Это хорошо..."
-    Max_04 "This is good..."
+    Max_04 "That's good..."
 
 # game/dialogues/breakfast.rpy:633
 translate english breakfast_5_b0c67912:
