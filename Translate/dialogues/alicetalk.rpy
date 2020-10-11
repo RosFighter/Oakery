@@ -1300,7 +1300,7 @@ translate english smoke_fear_sleep_toples_a86ec81d:
 translate english smoke_fear_smoke_toples_92e34996:
 
     # Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
-    Alice_12 "{color=[lime]}{i}Persuasion Successful!{/i}{/color}\You're a disgusting pervert... Okay, but as long as you won't say anything to Mom. I'll start next time I need a smoke."
+    Alice_12 "[succes!t]You're a disgusting pervert... Okay, but as long as you won't say anything to Mom. I'll start next time I need a smoke."
 
 # game/dialogues/alicetalk.rpy:980
 translate english smoke_fear_smoke_toples_9d8a31b7:
