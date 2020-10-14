@@ -1160,5 +1160,15 @@ label after_load:
             if renpy.seen_label('advanced_massage1'):
                 $ added_mem_var('advanced_massage1')
 
+        if current_ver < "0.05.0.07":
+            $ current_ver = "0.05.0.07"
+
+            $ clothes[alice].casual.name = _("Повседневная")
+
+            if len(clothes[alice].sleep.sel) < 2 and 'black_linderie' in alice.gifts:
+                $ clothes[alice].sleep.sel.append(Garb('b', '02ia', "Тёмое кружевное бельё", True))
+                $ clothes[alice].sleep.cur = 1
+                $ clothes[alice].sleep.rand = True
+
         if current_ver < config.version:
             $ current_ver = config.version

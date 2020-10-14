@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2020-09-23 17:33
+﻿# TODO: Translation updated at 2020-10-14 09:08
 
 # game/dialogues/erictalk.rpy:16
 translate english EricTalkStart_210d83ab:
@@ -531,3 +531,4 @@ translate english strings:
     # game/dialogues/erictalk.rpy:279
     old "{i}пересесть{/i}"
     new "{i}Sit down{/i}"
+

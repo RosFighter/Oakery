@@ -3282,6 +3282,11 @@ label gift_black_lingerie:
     $ alice.gifts.append('black_linderie')
     $ items['b.lingerie'].InShop = False
     $ items['b.lingerie'].have = False
+
+    $ clothes[alice].sleep.sel.append(Garb('b', '02ia', "Тёмое кружевное бельё", True))
+    $ clothes[alice].sleep.cur = 1
+    $ clothes[alice].sleep.rand = True
+
     if alice.plan_name=='blog':
         $ dcv['alice.secret'].set_lost(1) # включаем суточный откат, чтобы Алиса не начала блог в белье в этот же день, если блог уже начат
     $ blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']

@@ -187,6 +187,8 @@ label cam0_eric_ann_fucking:
                 Max_07 "Ого! Вот это я удачно заглянул! Всё равно, что порно посмотреть..."
         elif tm[-2:] == '50' and 'eric_fuck_fin' not in cam_flag:
             # конец часа, финал траха
+            if fuck_scene not in globals():
+                $ fuck_scene = cam_poses_manager(eric, [6,1,2,3,4,5,6,7,1,2,3,4,5,6,7,1,2,3,4,5,6,7])
             $ peeping['ann_eric_sex1'] = 4
             $ cam_flag.append('eric_fuck_fin')
             $ renpy.show('Eric cams fuck 0'+str(fuck_scene)+'a', at_list=[laptop_screen])
