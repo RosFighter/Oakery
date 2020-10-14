@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2019-12-01 14:16
+﻿# TODO: Translation updated at 2020-10-14 09:33
 
 translate english strings:
 
@@ -306,15 +306,15 @@ translate english strings:
     old "Previous file page."
     new "Previous file page."
 
-    # renpy/common/00action_file.rpy:906
+    # renpy/common/00action_file.rpy:905
     old "Quick save complete."
     new "Quick save complete."
 
-    # renpy/common/00action_file.rpy:924
+    # renpy/common/00action_file.rpy:923
     old "Quick save."
     new "Quick save."
 
-    # renpy/common/00action_file.rpy:943
+    # renpy/common/00action_file.rpy:942
     old "Quick load."
     new "Quick load."
 
@@ -640,59 +640,59 @@ translate english strings:
 
     # renpy/common/_compat/gamemenu.rpym:198
     old "Empty Slot."
-    new "Пустой слот"
+    new "Empty Slot."
 
     # renpy/common/_compat/gamemenu.rpym:355
     old "Previous"
-    new "Назад"
+    new "Previous"
 
     # renpy/common/_compat/gamemenu.rpym:362
     old "Next"
-    new "Далее"
+    new "Next"
 
     # renpy/common/_compat/preferences.rpym:428
     old "Joystick Mapping"
-    new "Раскладка джойстика"
+    new "Joystick Mapping"
 
     # renpy/common/_developer/developer.rpym:38
     old "Developer Menu"
-    new "Меню разработчика"
+    new "Developer Menu"
 
     # renpy/common/_developer/developer.rpym:43
     old "Interactive Director (D)"
-    new "Интерактивный Директор (D)"
+    new "Interactive Director (D)"
 
     # renpy/common/_developer/developer.rpym:45
     old "Reload Game (Shift+R)"
-    new "Перезагрузить игру (Shift+R)"
+    new "Reload Game (Shift+R)"
 
     # renpy/common/_developer/developer.rpym:47
     old "Console (Shift+O)"
-    new "Консоль (Shift+O)"
+    new "Console (Shift+O)"
 
     # renpy/common/_developer/developer.rpym:49
     old "Variable Viewer"
-    new "Просмотр переменных"
+    new "Variable Viewer"
 
     # renpy/common/_developer/developer.rpym:51
     old "Image Location Picker"
-    new "Инструмент позиционирования на изображениях"
+    new "Image Location Picker"
 
     # renpy/common/_developer/developer.rpym:53
     old "Filename List"
-    new "Список файлов"
+    new "Filename List"
 
     # renpy/common/_developer/developer.rpym:57
     old "Show Image Load Log (F4)"
-    new "Показать лог загрузки изображений (F4)"
+    new "Show Image Load Log (F4)"
 
     # renpy/common/_developer/developer.rpym:60
     old "Hide Image Load Log (F4)"
-    new "Скрыть лог загрузки изображений (F4)"
+    new "Hide Image Load Log (F4)"
 
     # renpy/common/_developer/developer.rpym:63
     old "Image Attributes"
-    new "Аттрибуты изображения"
+    new "Image Attributes"
 
     # renpy/common/_developer/developer.rpym:90
     old "[name] [attributes] (hidden)"
@@ -704,51 +704,51 @@ translate english strings:
 
     # renpy/common/_developer/developer.rpym:143
     old "Nothing to inspect."
-    new "Переменные не заданы."
+    new "Nothing to inspect."
 
     # renpy/common/_developer/developer.rpym:154
     old "Hide deleted"
-    new "Скрыть удалённые"
+    new "Hide deleted"
 
     # renpy/common/_developer/developer.rpym:154
     old "Show deleted"
-    new "Показать удалённые"
+    new "Show deleted"
 
     # renpy/common/_developer/developer.rpym:278
     old "Return to the developer menu"
-    new "Вернуться в меню разработчика"
+    new "Return to the developer menu"
 
     # renpy/common/_developer/developer.rpym:443
     old "Rectangle: %r"
-    new "Прямоугольник: %r"
+    new "Rectangle: %r"
 
     # renpy/common/_developer/developer.rpym:448
     old "Mouse position: %r"
-    new "Позиция мыши: %r"
+    new "Mouse position: %r"
 
     # renpy/common/_developer/developer.rpym:453
     old "Right-click or escape to quit."
-    new "Нажмите правую кнопку мыши или ESC чтобы выйти."
+    new "Right-click or escape to quit."
 
     # renpy/common/_developer/developer.rpym:485
     old "Rectangle copied to clipboard."
-    new "Координаты прямоугольника скопированы в буфер обмена."
+    new "Rectangle copied to clipboard."
 
     # renpy/common/_developer/developer.rpym:488
     old "Position copied to clipboard."
-    new "Координаты позиции скопированы в буфер обмена."
+    new "Position copied to clipboard."
 
     # renpy/common/_developer/developer.rpym:507
     old "Type to filter: "
-    new "Текущий фильтр: "
+    new "Type to filter: "
 
     # renpy/common/_developer/developer.rpym:635
     old "Textures: [tex_count] ([tex_size_mb:.1f] MB)"
-    new "Текстур: [tex_count] ([tex_size_mb:.1f] МБ)"
+    new "Textures: [tex_count] ([tex_size_mb:.1f] MB)"
 
     # renpy/common/_developer/developer.rpym:639
     old "Image cache: [cache_pct:.1f]% ([cache_size_mb:.1f] MB)"
-    new "Кеш изображений: [cache_pct:.1f]% ([cache_size_mb:.1f] МБ)"
+    new "Image cache: [cache_pct:.1f]% ([cache_size_mb:.1f] MB)"
 
     # renpy/common/_developer/developer.rpym:649
     old "✔ "
@@ -760,51 +760,51 @@ translate english strings:
 
     # renpy/common/_developer/developer.rpym:657
     old "\n{color=#cfc}✔ predicted image (good){/color}\n{color=#fcc}✘ unpredicted image (bad){/color}\n{color=#fff}Drag to move.{/color}"
-    new "\n{color=#cfc}✔ предсказанное изображение (хорошо){/color}\n{color=#fcc}✘ внезапное изображение (плохо){/color}\n{color=#fff}Нажмите, чтобы передвинуть.{/color}"
+    new "\n{color=#cfc}✔ predicted image (good){/color}\n{color=#fcc}✘ unpredicted image (bad){/color}\n{color=#fff}Drag to move.{/color}"
 
     # renpy/common/_developer/inspector.rpym:38
     old "Displayable Inspector"
-    new "Диспетчер объектов"
+    new "Displayable Inspector"
 
     # renpy/common/_developer/inspector.rpym:61
     old "Size"
-    new "Разрешение"
+    new "Size"
 
     # renpy/common/_developer/inspector.rpym:65
     old "Style"
-    new "Стиль"
+    new "Style"
 
     # renpy/common/_developer/inspector.rpym:71
     old "Location"
-    new "Местоположение"
+    new "Location"
 
     # renpy/common/_developer/inspector.rpym:122
     old "Inspecting Styles of [displayable_name!q]"
-    new "Инспектирую стили [displayable_name!q]"
+    new "Inspecting Styles of [displayable_name!q]"
 
     # renpy/common/_developer/inspector.rpym:139
     old "displayable:"
-    new "объект:"
+    new "displayable:"
 
     # renpy/common/_developer/inspector.rpym:145
     old "        (no properties affect the displayable)"
-    new "        (на объект не влияют никакие параметры)"
+    new "        (no properties affect the displayable)"
 
     # renpy/common/_developer/inspector.rpym:147
     old "        (default properties omitted)"
-    new "        (настройки по умолчанию опущены)"
+    new "        (default properties omitted)"
 
     # renpy/common/_developer/inspector.rpym:185
     old "<repr() failed>"
-    new "<repr() провален>"
+    new "<repr() failed>"
 
     # renpy/common/_layout/classic_load_save.rpym:170
     old "a"
-    new "а"
+    new "a"
 
     # renpy/common/_layout/classic_load_save.rpym:179
     old "q"
-    new "б"
+    new "q"
 
     # renpy/common/00iap.rpy:217
     old "Contacting App Store\nPlease Wait..."

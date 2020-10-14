@@ -1,6 +1,18 @@
-﻿# TODO: Translation updated at 2020-04-08 14:21
+﻿# TODO: Translation updated at 2020-10-14 09:08
 
 translate english strings:
+
+    # game/core/imagemaps.rpy:32
+    old "{i}искать под кроватью{/i}"
+    new "{i}look under the bed{/i}"
+
+    # game/core/imagemaps.rpy:36
+    old "{i}искать в тумбочке{/i}"
+    new "{i}look in the nightstand{/i}"
+
+    # game/core/imagemaps.rpy:40
+    old "{i}искать в столе{/i}"
+    new "{i}look in the table{/i}"
 
     # game/core/imagemaps.rpy:60
     old "{i}массировать ступни{/i}"

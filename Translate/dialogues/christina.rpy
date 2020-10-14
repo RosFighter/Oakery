@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2020-09-22 14:58
+﻿# TODO: Translation updated at 2020-10-14 09:08
 
 # game/dialogues/christina.rpy:7
 translate english christina_first_talk_a072d515:
@@ -22,7 +22,7 @@ translate english christina_first_talk_343a63e4:
 translate english christina_first_talk_655d6f1e:
 
     # Max_08 "Чего!? Это всё было для моих сестёр, мамы и тёти!"
-    Max_08 "What is that supposed to mean!? It's for my  my sisters, mom and aunt!"
+    Max_08 "What is that supposed to mean!? It's for my my sisters, mom and aunt!"
 
 # game/dialogues/christina.rpy:11
 translate english christina_first_talk_180ce209:
