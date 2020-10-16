@@ -82,7 +82,7 @@ translate english eric_voy_wtf_1fa7083f:
 translate english eric_voy_wtf_32c38a21:
 
     # Eric_01 "Да уж. Ну, раз мы с тобой теперь друзья, я что-нибудь придумаю. Только это будет не сразу, а постепенно, но думаю, что смогу настроить маму так, как нужно..." nointeract
-    Eric_01 "Well, since we're allies, I'll figure something out. But progress will be slow. But for now, I think I know what I can do to get your mom to warm up to the idea..." nointeract
+    Eric_01 "Well, since we're friends, I'll figure something out. But progress will be slow. But for now, I think I know what I can do to get your mom to warm up to the idea..." nointeract
 
 # game/dialogues/erictalk.rpy:62
 translate english eric_voy_wtf_0365ec8f:
@@ -142,7 +142,7 @@ translate english eric_voy_wtf_6b7811d2_2:
 translate english eric_voy_wtf_553b8dcf:
 
     # Eric_01 "Вообще, жизнь - штука несправедливая. А учитывая, что твоя ещё и в моих руках, то жаловаться никому не стоит, даже мне. Ну всё, иди займись чем-нибудь..." nointeract
-    Eric_01 "Generally, life isn't fair. And given now that yours is in my hands, neither of us should complain. All right, go do something productive..." nointeract
+    Eric_01 "Generally, life isn't fair. And given that yours is now in my hands, neither of us should complain. All right, go do something productive..." nointeract
 
 # game/dialogues/erictalk.rpy:97
 translate english lessons_from_Eric_abe1353e:
