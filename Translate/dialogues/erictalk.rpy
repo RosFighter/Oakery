@@ -506,7 +506,7 @@ translate english strings:
 
     # game/dialogues/erictalk.rpy:59
     old "Отлично! Спасибо, Эрик."
-    new "Great! Thank You, Eric."
+    new "Great! Thank you, Eric."
 
     # game/dialogues/erictalk.rpy:65
     old "Это угроза?"
