@@ -46,7 +46,7 @@ translate english kira_firsttalk_58c6b494:
 translate english kira_firsttalk_00e14e8d:
 
     # Kira_07 "Зато знаю я. Макс, постарайся не пялиться на мою грудь. Глаза чуть выше. Ау. Ты здесь, Макс?" nointeract
-    Kira_07 "But I know. Max, try not to stare at my breasts. Eyes a little higher. Anyone home?" nointeract
+    Kira_07 "But I know. Max, try not to stare at my breasts. Eyes a little higher. Hello? Anyone home?" nointeract
 
 # game/dialogues/kiratalk.rpy:54
 translate english kira_firsttalk_8ab98c15:
@@ -106,7 +106,7 @@ translate english kira_firsttalk_6e7aee99:
 translate english kira_firsttalk_2937ee66:
 
     # Max_03 "{i}( Расслабиться в душе? Легко. Особенно, когда рядом такая женщина. Ух! Я и не задумывался о своей тёте в этом плане никогда, но сейчас что-то изменилось... или во мне или в ней... ){/i}" nointeract
-    Max_03 "{i}( Relax in the shower? Easy. Especially with a woman like that around. Ugh! I've never thought about my Aunt like this, but something's changed... is it me, or is this her true nature?... ){/i}" nointeract
+    Max_03 "{i}( Relax in the shower? Easy. Especially with a woman like that around. Ugh! I've never thought about my Aunt like this before, but something's changed... is it me, or is this her true nature?... ){/i}" nointeract
 
 # game/dialogues/kiratalk.rpy:80
 translate english kira_firsttalk_b89d504e:
@@ -124,7 +124,7 @@ translate english kira_firsttalk_d6159f85:
 translate english kira_talk2_cd1cb660:
 
     # Kira_02 "В прошлый раз наш разговор не очень удался. Ты был такой возбуждённый... Слушай, Макс, а у тебя есть девушка?" nointeract
-    Kira_02 "We didn't get to finish our conversation last time... Listen, Max, do you have a girlfriend?" nointeract
+    Kira_02 "We didn't get to finish our conversation last time... Max, do you have a girlfriend?" nointeract
 
 # game/dialogues/kiratalk.rpy:99
 translate english kira_talk2_19060dc1:
@@ -190,13 +190,13 @@ translate english kira_talk2_bd7b611a:
 translate english kira_talk2_3948cb74:
 
     # Max_00 "Да, бывает возбуждаюсь..."
-    Max_00 "Well, I just get excited sometimes..."
+    Max_00 "Well, I just can't control it sometimes..."
 
 # game/dialogues/kiratalk.rpy:116
 translate english kira_talk2_3377b3dc:
 
     # Kira_06 "Это потому-что пялишься не туда, куда надо. В глаза смотри..."
-    Kira_06 "That's because you're staring at the wrong place. Try looking into my eyes..."
+    Kira_06 "That's because you're staring at my breasts. Try looking into my eyes..."
 
 # game/dialogues/kiratalk.rpy:117
 translate english kira_talk2_d2b1efcc:
@@ -244,7 +244,7 @@ translate english kira_talk2_12c2d256:
 translate english kira_talk2_b8c0dea5:
 
     # Max_03 "Панику подняла, маму позвала!"
-    Max_03 "She completely panicked and called Mom!"
+    Max_03 "She freaked out and called Mom!"
 
 # game/dialogues/kiratalk.rpy:130
 translate english kira_talk2_c0a0b7f1:
@@ -298,7 +298,7 @@ translate english kira_talk2_36826af7:
 translate english kira_talk3_744eb86a:
 
     # Kira_05 "Сегодня уже привык к моему купальнику? Или опять только одно на уме?" nointeract
-    Kira_05 "Have you adjusted to seeing me in my swimsuit today? Or is something dirty on your mind again?" nointeract
+    Kira_05 "Have you adjusted to seeing me in my swimsuit? Or is something dirty on your mind again?" nointeract
 
 # game/dialogues/kiratalk.rpy:172
 translate english kira_talk3_e1f63d41:
