@@ -436,7 +436,7 @@ translate english kira_about_kiss_e243c55d:
 translate english kira_about_kiss_50fc02f9:
 
     # Kira_05 "Ну зачем ещё парню может это понадобиться, сам подумай... И что, больше не у кого просить помощи, решил ко мне обратиться?" nointeract
-    Kira_05 "Well, why else would a guy need it, think about it... So, what, you don't have anybody else to ask for help, so you decided to come to me" nointeract
+    Kira_05 "Well, why else would a guy need it? think about it... So, what, you don't have anybody else to ask for help, so you decided to come to me?" nointeract
 
 # game/dialogues/kiratalk.rpy:226
 translate english kira_about_kiss_98e57cfa:
@@ -454,7 +454,7 @@ translate english kira_about_kiss_848411ec:
 translate english kira_about_kiss_ca020699:
 
     # Kira_01 "Неудивительно. Наверняка, полез целоваться и получил... по... Хотя, нет. Видимо, тебе повезло. Ну я бы не стала к Алисе с такими вопросами обращаться на твоём месте..."
-    Kira_01 "Unsurprisingly. Well, I wouldn't go to Alice with such questions either if I were you..."
+    Kira_01 "Unsurprising. Well, I wouldn't go to Alice with such questions either if I were you..."
 
 # game/dialogues/kiratalk.rpy:230
 translate english kira_about_kiss_efd591e7:
@@ -466,7 +466,7 @@ translate english kira_about_kiss_efd591e7:
 translate english kira_about_kiss_1f69aa9c:
 
     # Kira_07 "Ну что же... Думаю, я смогу тебе помочь. Правда, не здесь и не сейчас. Нужна более интимная обстановка. О, я иногда вечерами смотрю телевизор. Если ещё не будешь спать, напомни о своей просьбе..." nointeract
-    Kira_07 "Well... I think I can help you. But not here and not now. We need a little more privacy. I'm usually up late at night in the living room. If you're having a hard time sleeping, come and remind me of your request." nointeract
+    Kira_07 "Well... I think I can help you. But not here and not now. We need a little more privacy. I'm usually up late at night in the living room. If you're having a 'hard' time sleeping, come and remind me of your request." nointeract
 
 # game/dialogues/kiratalk.rpy:238
 translate english kira_about_kiss_d9323be4:
@@ -622,7 +622,7 @@ translate english kira_talk4_069f6948:
 translate english kira_talk4_21d679b2:
 
     # Kira_08 "Макс, ты опять слишком перевозбудился. Боюсь представить что будет, если ты увидишь какой-нибудь фильм с моим участием! Хотя, мы и так с тобой почти как в порно развлекаемся..."
-    Kira_08 "Looks like you're getting excited again. It would be interesting to see how you'd react to seeing me in a movie! Although, this isn't far off from the plot of one..."
+    Kira_08 "Looks like you're getting excited again. It would be interesting to see how you'd react to seeing me in a movie! Although, this isn't far from the plot of one..."
 
 # game/dialogues/kiratalk.rpy:298
 translate english kira_talk4_95af88df:
@@ -808,25 +808,25 @@ translate english kira_talk5_45d25fb1:
 translate english kira_talk5_25e093b1:
 
     # Max_04 "{i}( Вот это удача! Порно-звезда будет мне позировать для фотосессии! Я где-то слышал, что порно-модели всегда дают фотографам в качестве оплаты за съёмку... Или нет? Но вдруг! ){/i}"
-    Max_04 "{i} ( What luck! I'm going to do a photo shoot with a pornstar! I've heard stories about cameramen getting all kinds of rewards for their services... maybe I'll get something too? ){/i}"
+    Max_04 "{i} ( What luck! I've got a photo shoot with a pornstar! I've heard stories about cameramen getting all kinds of rewards for their services... maybe I'll get something too? ){/i}"
 
 # game/dialogues/kiratalk.rpy:372
 translate english kira_talk5_dfeec0a5:
 
     # Max_20 "Дело за малым. Осталось где-то взять фотоаппарат и тогда... Да... Интересно, сколько они стоят? А, не важно. Важно, что мне может дать сама тётя Кира! Ради этого стоит попотеть... О да..." nointeract
-    Max_20 "There's just the small matter of getting a camera. I wonder how much they cost? Oh, never mind. What matters is what I can get from Aunt Kira! I'm sure it will be worth the effort." nointeract
+    Max_20 "There's just the small matter of getting a camera. I wonder how much they cost? Oh, I'll worry about that later. I'm so looking forward to what I'll get from Aunt Kira! I'm sure it'll be worth the effort." nointeract
 
 # game/dialogues/kiratalk.rpy:376
 translate english kira_talk5_b53777de:
 
     # Max_09 "{i}( Эх, с тётей Кирой кончать поинтереснее... и намного! ){/i}"
-    Max_09 "{i}( It's always interesting to see what I can get up to with Aunt Kira! ){/i}"
+    Max_09 "{i}( I always look forward to the exciting things I can get up to with Aunt Kira! ){/i}"
 
 # game/dialogues/kiratalk.rpy:393
 translate english kira_talk6_a9812af2:
 
     # Kira_01 "Ты уже нашёл фотоаппарат?" nointeract
-    Kira_01 "Have you found a camera yet?" nointeract
+    Kira_01 "Do you have a camera yet?" nointeract
 
 # game/dialogues/kiratalk.rpy:396
 translate english kira_talk6_12fde23b:
@@ -838,7 +838,7 @@ translate english kira_talk6_12fde23b:
 translate english kira_talk6_75ec74c9:
 
     # Kira_04 "Очень хорошо. Теперь нужно выбрать подходящий момент, когда дома никого не будет..."
-    Kira_04 "Very well. Now you just need to choose the right moment when no one else is home..."
+    Kira_04 "Very well. Now you just need to pick a time when we have the house to ourselves..."
 
 # game/dialogues/kiratalk.rpy:402
 translate english kira_talk6_3410e32f:
@@ -850,7 +850,7 @@ translate english kira_talk6_3410e32f:
 translate english kira_talk6_94f1fd99:
 
     # Kira_07 "Макс, ты просто чудо! Я всегда бодра, красива и свежа, чтобы фотографироваться. Нужно только решить где это будет..."
-    Kira_07 "Max, you're amazing! I fresh and ready for the camera, as always. You just need to decide where it will be..."
+    Kira_07 "Max, you're amazing! I'm fresh and ready for the camera, as always. You just need to decide where we'll do it..."
 
 # game/dialogues/kiratalk.rpy:406
 translate english kira_talk6_1d4e4efa:
@@ -916,7 +916,7 @@ translate english first_photoset_5ec026e1:
 translate english first_photoset_889601ec:
 
     # Max_01 "Давай начнём на диване. Ты ведь всё-таки в сорочке, так что покажем, как ты просыпаешься..."
-    Max_01 "Let's start on the couch. You're still in your nightgown, so let's imagine you're just waking up..."
+    Max_01 "Let's start on the couch. You're still in your nightgown, so let's pretend you're just waking up..."
 
 # game/dialogues/kiratalk.rpy:440
 translate english first_photoset_676c261f:
@@ -946,7 +946,7 @@ translate english first_photoset_set2_8b0aa53e:
 translate english first_photoset_set2_e69c1ade:
 
     # Max_02 "То, что надо! Сейчас только ракурс подберу поинтереснее и будет отлично... Ага, есть! А дальше мы щёлкнем твою попку..."
-    Max_02 "That's it! This angle captures you beautfiully... this way we can get a good view from behind..."
+    Max_02 "That's it! This angle captures you perfectly... this way we can get a good view from behind..."
 
 # game/dialogues/kiratalk.rpy:459
 translate english first_photoset_set2_0542ad6b:
@@ -1048,7 +1048,7 @@ translate english first_photoset_set6_8f9aa457:
 translate english first_photoset_set6_023fea82:
 
     # Max_20 "Охх... Полегче, тётя Кира! Ты так чувственно берёшь его в рот, что я могу забыть сделать снимки. Да... продолжай вот так, это будет отличный кадр! Может тебе есть, чем меня удивить?"
-    Max_20 "Ohh... Easy, Aunt Kira! You're taking it in your mouth so well I might forget about taking pictures... keep it right there, it'll be a great shot! Do you have something to surprise me with?"
+    Max_20 "Ohh... Easy, Aunt Kira! You're taking it in your mouth so well I might drop the camera... keep it right there, it'll be a great shot! Do you have something to surprise me with?"
 
 # game/dialogues/kiratalk.rpy:527
 translate english first_photoset_set11_2fd9047a:
@@ -1078,7 +1078,7 @@ translate english first_photoset_set11_4fbe04b2:
 translate english first_photoset_set11_9aa39956:
 
     # Kira_06 "Надеюсь... Я скину себе фотографии, мой знакомый их обработает и там уже посмотрим, что получилось. Спасибо тебе, Макс. Кстати, если что, ты же не откажешь ещё пощёлкать свою тётю?"
-    Kira_06 "Hopefully... I'll take a copy of the photos and send them to friend to process. I appreciate your help, Max. If I need some more photos taken, you'd be happy to help your Aunt again, right?"
+    Kira_06 "Hopefully... I'll take a copy of the photos and send them to a friend to process. I appreciate your help, Max. If I need some more photos taken, you'd be happy to help your Aunt again, right?"
 
 # game/dialogues/kiratalk.rpy:535
 translate english first_photoset_set11_be82d054:
@@ -1114,7 +1114,7 @@ translate english kira_about_photo1_3b74eef4:
 translate english kira_about_photo1_ac2316d0:
 
     # Kira_14 "Да в том-то и дело, что не в любое. Нужно выбирать момент, когда никого нет дома. Потому-что, если нас заметят за таким, то точно это будет в последний раз, а мне бы не хотелось этого..."
-    Kira_14 "Yes, although this time we'll need to be discreet. I need you to be ready while no one else is home, because if we get caught, this arrangement will definitely have to end. And I don't want that to happen..."
+    Kira_14 "Yes, although this time we'll need to be even more discreet. I need you to be ready while no one else is home, because if we get caught, this arrangement will definitely have to end. And I don't want that to happen..."
 
 # game/dialogues/kiratalk.rpy:560
 translate english kira_about_photo1_b3630916:
@@ -1282,7 +1282,7 @@ translate english kira_about_cuni_7ea229cb:
 translate english kira_about_cuni_17b9a3e8:
 
     # Kira_04 "Если только ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
-    Kira_04 "At night, when I get back from work. Unless, of course, you fall asleep before..."
+    Kira_04 "Tonight, when I get back from work. Unless, of course, you fall asleep before..."
 
 # game/dialogues/kiratalk.rpy:644
 translate english kira_about_cuni_92d34ad2:
