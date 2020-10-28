@@ -4,7 +4,7 @@
 translate english alice_bath_086088b7:
 
     # Max_00 "Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни." nointeract
-    Max_00 "If it's midnight, than Alice will be soaking in the bath. Entering will put my life at risk." nointeract
+    Max_00 "If it's midnight, then Alice will be soaking in the bath. Entering will put my life at risk." nointeract
 
 # game/events/alice.rpy:15
 translate english alice_bath_ab9e6db9:
@@ -52,19 +52,19 @@ translate english alice_bath_ladder_2b325faf:
 translate english alice_bath_ladder_40583688:
 
     # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
-    Max_03 "What luck! Alice is just about to take a bath... Her gorgeous ass begging to be spanked! That's how I'd like it to be admired..." nointeract
+    Max_03 "What luck! Alice is just about to take a bath... Her gorgeous ass begging to be spanked! Just you wait, soon enough you'll be begging for it..." nointeract
 
 # game/events/alice.rpy:63
 translate english alice_bath_ladder_5529b0b9:
 
     # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
-    Max_05 "Hell, is she teasing me on purpose with her soapy breasts? Big sis might be a bitch, but she's hot! Very sexy..." nointeract
+    Max_05 "Hell, is she teasing me on purpose with her soapy tits? Big sis might be a bitch, but her body looks so good..." nointeract
 
 # game/events/alice.rpy:72
 translate english alice_bath_ladder_5529b0b9_1:
 
     # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
-    Max_05 "Hell, is she teasing me on purpose with her soapy breasts? Big sis might be a bitch, but she's hot! Very sexy..." nointeract
+    Max_05 "Hell, is she teasing me on purpose with her soapy tits? Big sis might be a bitch, but her body looks so good..." nointeract
 
 # game/events/alice.rpy:78
 translate english alice_bath_ladder_98712b50:
@@ -82,7 +82,7 @@ translate english alice_sleep_night_7ff48024:
 translate english alice_sleep_night_3e18ecfd:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела, в одних лищь трусиках, хочется смотреть вечно!" nointeract
-    Max_07 "Oh, yes! My big sister looks amazing... The curves of her body, in her panties alone, you want to look forever!" nointeract
+    Max_07 "Oh, yes! My big sister looks amazing... The curves of her body, you look so sexy right now!" nointeract
 
 # game/events/alice.rpy:110
 translate english alice_sleep_night_5d061581:
