@@ -10,7 +10,7 @@ translate english StartPunishment_42b2fac4:
 translate english punishment_5cebd4e9:
 
     # Ann_18 "Итак, Макс, ты первый..."
-    Ann_18 "So, Max, you're first..."
+    Ann_18 "Max, you're first..."
 
 # game/dialogues/punishment.rpy:65
 translate english punishment_f7581ae0:
@@ -64,7 +64,7 @@ translate english punishment_dd38597c:
 translate english first_new_punishment_9e045600:
 
     # Ann_12 "Да, напоминаю всем. С сегодняшнего дня все наказания будут в обнажённом виде. Да, я понимаю, что это непедагогично, но очень эффективно."
-    Ann_12 "I'm reminding everyone that from now on, all punishments will be in the nude. Yes, I understand that it might not sound logical, but I'm sure it will be very effective."
+    Ann_12 "I'm reminding everyone that from now on, all punishments will be in the nude. Yes, I understand that it sounds scary, but I'm sure it will be very effective."
 
 # game/dialogues/punishment.rpy:99
 translate english first_new_punishment_8bbfe5b5:
@@ -106,7 +106,7 @@ translate english first_new_punishment_3d6a4225:
 translate english first_new_punishment_44a5aca6:
 
     # Ann_02 "Макс, ну что за ерунда. Что я могу нарушить? Я же ваша мама и всегда даю вам пример для подражания..."
-    Ann_02 "That's nonsense. What rules can I break? I am your Mother and I will always be the one to set an example..."
+    Ann_02 "That's nonsense. What rules can I break? I am your Mother and I will always be the one to lead by example..."
 
 # game/dialogues/punishment.rpy:106
 translate english first_new_punishment_9b49b76d:
@@ -118,13 +118,13 @@ translate english first_new_punishment_9b49b76d:
 translate english first_new_punishment_8cf88c09:
 
     # Ann_04 "Да, Макс, я уверена. Но даже если я и совершу ошибку, то меня сможет наказать, допустим, Эрик... Но этого не случится. Я соблюдаю свои же правила!"
-    Ann_04 "Yes, Max, I'm sure. But even if I make a mistake, I can be punished by, say, Eric... But that won't happen. I follow my own rules!"
+    Ann_04 "Yes, Max, I'm sure. But even if I make a mistake, Eric is there to keep in line... But that won't happen. I follow my own rules!"
 
 # game/dialogues/punishment.rpy:108
 translate english first_new_punishment_c0b6a936:
 
     # Max_09 "Ага, уж он то накажет..."
-    Max_09 "Yeah, he'll punish you..."
+    Max_09 "Yeah, like he'll punish you..."
 
 # game/dialogues/punishment.rpy:109
 translate english first_new_punishment_9285451a:
@@ -160,13 +160,13 @@ translate english punishment_max_81902265:
 translate english punishment_max_3cc1d6e0:
 
     # Ann_17 "Не виноват, значит? А я думаю, что ещё как виноват. В этот раз тебе повезло, это всего лишь первое предупреждение. Надеюсь, второго не потребуется... Кстати, можешь всем рассказать, что ты натворил..." nointeract
-    Ann_17 "Not your fault? I don't think so. You're lucky this is your first warning. I hope there won't need to be another one. Now tell everyone what you did..." nointeract
+    Ann_17 "Not your fault? I don't think so. You're lucky this is your first warning. I hope there won't need to be another. Now tell everyone what you did..." nointeract
 
 # game/dialogues/punishment.rpy:152
 translate english punishment_max_pun_reson_2be684f3:
 
     # Lisa_12 "Он видел меня голой, мам! Накажи его! Почему он отделывается только предупреждением? Пусть получит, что заслужил!"
-    Lisa_12 "He saw me naked, mom! Punish him! Why does he only get a warning? Give him what he deserves!"
+    Lisa_12 "He saw me naked, Mom! Punish him! Why does he only get a warning? Give him what he deserves!"
 
 # game/dialogues/punishment.rpy:155
 translate english punishment_max_pun_reson_bd61ea84:
@@ -220,13 +220,13 @@ translate english punishment_max_pun_reson_2719fc6f:
 translate english punishment_max_pun_reson_2f8845d8:
 
     # Max_10 "Да, мам..."
-    Max_10 "Yes, Mom"
+    Max_10 "Yes, Mom..."
 
 # game/dialogues/punishment.rpy:175
 translate english punishment_max_pun_reson_021885f4:
 
     # Alice_16 "Случайно? Мам! Он всё врёт! Он подглядывал и, может быть, даже паука подбросил! А ты знаешь, как я боюсь пауков..."
-    Alice_16 "He's lying, Mom! He was peeping on me and maybe even threw a spider at me! You know how I'm scared of spiders..."
+    Alice_16 "He's lying, Mom! He was peeping on me and maybe even threw a spider at me! You know how I feel about spiders..."
 
 # game/dialogues/punishment.rpy:178
 translate english punishment_max_pun_reson_a3ff079a:
@@ -286,7 +286,7 @@ translate english punishment_max_pun_reson_db52f1d4:
 translate english punishment_max_pun_reson_dbaef78e:
 
     # Max_08 "Спасибо, мам!"
-    Max_08 "Thanks, mom!"
+    Max_08 "Thanks, Mom!"
 
 # game/dialogues/punishment.rpy:211
 translate english punishment_max_pun_reson_291cc499:
@@ -334,7 +334,7 @@ translate english punishment_max_pun_reson_2f01137f:
 translate english punishment_max_pun_reson_09e2a1e5:
 
     # Ann_12 "Ну, Макс, снимай шорты. Остальные просто посмотрят, что бывает, когда кто-то косячит..." nointeract
-    Ann_12 "Come on, Max, take off your shorts. The rest of us will just see what happens when someone messes up..." nointeract
+    Ann_12 "Come on, Max, take off your shorts. The rest of us will witness what happens..." nointeract
 
 # game/dialogues/punishment.rpy:285
 translate english punishment_max_pun_reson_2f871657:
@@ -358,13 +358,13 @@ translate english punishment_max_pun_reson_678436cc_1:
 translate english punishment_max_pun_reson_c632e1a6:
 
     # Max_14 "{i}Блин... Все с таким интересом смотрят, как меня наказывают... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Damn ... I can feel everyone's eyes on me...This is so humiliating...{/i}\n\n{color=[orange]}{b}Attention:{/b} Your influence on the family has decreased!{/color}"
+    Max_14 "{i}Shit... I can feel everyone's eyes on me...This is so humiliating...{/i}\n\n{color=[orange]}{b}Attention:{/b} Your influence on the family has decreased!{/color}"
 
 # game/dialogues/punishment.rpy:333
 translate english punishment_max_pun_reson_faf292df:
 
     # Ann_12 "Ну всё, Макс, одевайся. Надеюсь, ты сделал выводы и постараешься больше не попадать в такую унизительную ситуацию..."
-    Ann_12 "All right, get dressed. I hope you've come to senses, and that you won't try to get yourself in such an embarrassing situation again"
+    Ann_12 "All right, get dressed. I hope you've come to your senses, and that you won't try to get yourself in such an embarrassing situation again"
 
 # game/dialogues/punishment.rpy:354
 translate english punishment_lisa_678436cc:
@@ -382,7 +382,7 @@ translate english punishment_lisa_0b6806cc:
 translate english punishment_lisa_f1ea86d0:
 
     # Max_08 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
-    Max_08 "Mom, you don't have to punish Lisa. She really tried! I saw it. I'm gonna help get her grades up."
+    Max_08 "Mom, you don't have to punish Lisa. She really tried! I saw her studying. I'm gonna help get her grades up."
 
 # game/dialogues/punishment.rpy:363
 translate english punishment_lisa_0fa8acfd:
@@ -418,13 +418,13 @@ translate english punishment_lisa_8b6bc93a:
 translate english punishment_lisa_68fc5c88:
 
     # Ann_14 "Сложное? У тебя была куча времени, чтобы подготовиться! Сидишь в своём телефоне вечно вместо того, чтобы учиться. [_text!t]"
-    Ann_14 "You had plenty of time to do everything properly! You need to spend less time on your phone and more time studying!. [_text!t]"
+    Ann_14 "You had plenty of time to do it all properly! You need to spend less time on your phone and more time studying! [_text!t]"
 
 # game/dialogues/punishment.rpy:384
 translate english punishment_lisa_cc22447a:
 
     # Ann_12 "Лиза. Мне нужно всем объяснять за что ты сейчас будешь наказана? Молчишь? Значит, знаешь... Всё, давай раздевайся до трусов и быстро, без разговоров!"
-    Ann_12 "Lisa. Do I have to explain to everyone what you're about to be punished for? You're not saying anything? So, you know... All right, strip down to your underwear, quickly!"
+    Ann_12 "Lisa. Do I have to explain what you're about to be punished for? You're not saying anything? So, you know... All right, strip down to your underwear, quickly!"
 
 # game/dialogues/punishment.rpy:397
 translate english punishment_lisa_a4b257c5:
@@ -442,7 +442,7 @@ translate english punishment_lisa_67c8b436:
 translate english punishment_lisa_f1ea86d0_1:
 
     # Max_08 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
-    Max_08 "Mom, you don't have to punish Lisa. She really tried! I saw it. I'm gonna help her get her grades up."
+    Max_08 "Mom, you don't have to punish Lisa. She really tried! I saw her studying. I'm gonna help her get her grades up."
 
 # game/dialogues/punishment.rpy:405
 translate english punishment_lisa_0fa8acfd_1:
@@ -472,7 +472,7 @@ translate english punishment_lisa_929c11ac_1:
 translate english punishment_lisa_702b565f:
 
     # Max_04 "{i}( А вот это мне уже нравится... Сестрёнка сверкает своими классными сиськами... Можно смотреть и ничего за это не будет! Красота! ){/i}"
-    Max_04 "{i}( Now I like that... Little sister's in a compromising position... Front row seats for and a free show? Nice! ){/i}"
+    Max_04 "{i}( Now I like that... Little sister's in a compromising position... Front row seats for a free show? Nice! ){/i}"
 
 # game/dialogues/punishment.rpy:431
 translate english punishment_lisa_81192a03:
@@ -526,7 +526,7 @@ translate english punishment_alice_d608324e:
 translate english punishment_alice_8e33c890:
 
     # Alice_12 "Мам, за что? Что я такого сделала?"
-    Alice_12 "For what, mom? what did I do?"
+    Alice_12 "For what, Mom? what did I do?"
 
 # game/dialogues/punishment.rpy:491
 translate english punishment_alice_a4b257c5:
@@ -568,7 +568,7 @@ translate english punishment_alice_2a128a29:
 translate english punishment_alice_c8f8e3ea:
 
     # Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "[failed!t]No, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good."
+    Ann_16 "[failed!t]No, Max, your defence won't help her. She'll get punished on her friends behalf. Having people like that over won't do her any good."
 
 # game/dialogues/punishment.rpy:513
 translate english punishment_alice_055a6121:
@@ -586,7 +586,7 @@ translate english punishment_alice_3761a8bd:
 translate english punishment_alice_194e9daf:
 
     # Alice_06 "Мам, но я сегодня без трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
-    Alice_06 "But Mom, I'm not wearing underwear... Tell Max to leave or at least turn away, please..."
+    Alice_06 "But Mom, I'm not wearing underwear... Tell Max to leave or at least turn around, please..."
 
 # game/dialogues/punishment.rpy:518
 translate english punishment_alice_8ad85845:
@@ -598,7 +598,7 @@ translate english punishment_alice_8ad85845:
 translate english punishment_alice_af4957cc:
 
     # Max_09 "{i}( Ничего себе! А что это на Алисе делают трусики?! Мы же с ней договорились... Ну всё, сестрёнка, считай ты попала... и куда больше, чем есть сейчас! ){/i}"
-    Max_09 "{i}( Wow! What are panties doing on Alice?! I thought we agreed... That's it, sis, you're in trouble. ...and much more than you are now. ){/i}"
+    Max_09 "{i}( Wow! What are those panties doing on Alice?! I thought we agreed... That's it, sis, you're in trouble. ...and much more than you are now. ){/i}"
 
 # game/dialogues/punishment.rpy:527
 translate english punishment_alice_90ee680b:
@@ -610,13 +610,13 @@ translate english punishment_alice_90ee680b:
 translate english punishment_alice_cd360a25:
 
     # Alice_06 "Мам, но под ними нет трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
-    Alice_06 "Mom, I'm not wearing panties... tell Max go or at least turn his back..."
+    Alice_06 "Mom, I'm not wearing panties... tell Max go or at least turn his around..."
 
 # game/dialogues/punishment.rpy:529
 translate english punishment_alice_011ed976:
 
     # Ann_00 "А вот нечего целый день в пижаме по дому шарахаться... Совсем разленилась! Макс пусть смотрит, а тебе будет стыдно. Может тогда за ум возьмёшься!"
-    Ann_00 "But you don't have to wear your pajamas around the house all day... It's completely lazy! Let Max watch, and you'll be ashamed. Then maybe you'll think about it!"
+    Ann_00 "But you don't have to wear your pajamas around the house all day... It's complete laziness! Let Max watch, and you'll be ashamed. Then maybe you'll think about it!"
 
 # game/dialogues/punishment.rpy:532
 translate english punishment_alice_05b9287b:
@@ -628,7 +628,7 @@ translate english punishment_alice_05b9287b:
 translate english punishment_alice_194e9daf_1:
 
     # Alice_06 "Мам, но я сегодня без трусиков... Пусть Макс уйдёт или отвернётся, хотя бы..."
-    Alice_06 "Mom, I'm not wearing any panties today... Let Max leave or turn away, at least..."
+    Alice_06 "Mom, I'm not wearing any panties today... Let Max leave or turn around, at least..."
 
 # game/dialogues/punishment.rpy:536
 translate english punishment_alice_74c9db0c:
@@ -682,7 +682,7 @@ translate english punishment_alice_2a128a29_1:
 translate english punishment_alice_c8f8e3ea_1:
 
     # Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "[failed!t]No, Max, your defence won't help her. She'll get punished anyway on her friends behalf. Having people like that over won't do her any good..."
+    Ann_16 "[failed!t]No, Max, your defence won't help her. She'll get on her friends behalf. Having people like that over won't do her any good..."
 
 # game/dialogues/punishment.rpy:595
 translate english punishment_alice_6bf98fd4:

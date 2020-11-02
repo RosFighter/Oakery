@@ -46,7 +46,7 @@ translate english lisa_shower_0451df43:
 translate english lisa_shower_d84f6a90:
 
     # Lisa "{b}Лиза:{/b} Нет, Макс. Жди за дверью. Я скоро!" nointeract
-    Lisa "{b}Lisa:{/b} No, Max. Wait a bit, I'm almost done!" nointeract
+    Lisa "{b}Lisa:{/b} No, Max. Just hold on, I'm almost done!" nointeract
 
 # game/events/lisa.rpy:58
 translate english lisa_shower_8d94a43d:
@@ -64,19 +64,19 @@ translate english lisa_shower_ladder_2b325faf:
 translate english lisa_shower_ladder_76d51683:
 
     # Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
-    Max_03 "Great! Lisa looks very inviting in that robe... Especially when you can see her boobs so clearly!"
+    Max_03 "Great! Lisa looks very inviting in that robe... Especially when you can see her perky tits so clearly!"
 
 # game/events/lisa.rpy:88
 translate english lisa_shower_ladder_86046798:
 
     # Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
-    Max_07 "Oh, yes! My charming sister in panties... I just want to come in and pull them off her beautiful ass!"
+    Max_07 "Oh, yes! My charming sister in nothing but panties... I just want to come in and take them off her beautiful ass!"
 
 # game/events/lisa.rpy:90
 translate english lisa_shower_ladder_595bd709:
 
     # Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
-    Max_06 "Wow! It can be a really nice morning if you can admire Lisa! Yeah... her body is mesmerizing..."
+    Max_06 "Wow! It can be a really nice morning if you can admire Lisa! Yeah... her tight body is mesmerizing..."
 
 # game/events/lisa.rpy:92
 translate english lisa_shower_ladder_90ff417e:
@@ -94,7 +94,7 @@ translate english lisa_shower_start_peeping_f30ef1eb:
 translate english lisa_shower_alt_peepeng_022529c8:
 
     # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 "[undetect!t]Lisa's so wet! Her figure and tight body are so hot... I'd love to run my hands all over it..."
+    Max_02 "[undetect!t]Lisa's so wet! Her figure and tight body are so hot... I'd love to slide my hands all over it..."
 
 # game/events/lisa.rpy:131
 translate english lisa_shower_alt_peepeng_42f03b58:
@@ -106,7 +106,7 @@ translate english lisa_shower_alt_peepeng_42f03b58:
 translate english lisa_shower_closer_peepeng_022529c8:
 
     # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 "[undetect!t]Lisa's so wet! Her figure and tight body are so hot... I'd love to run my hands all over it..."
+    Max_02 "[undetect!t]Lisa's so wet! Her figure and tight body are so hot... I'd love to slide my hands all over it..."
 
 # game/events/lisa.rpy:147
 translate english lisa_shower_closer_peepeng_42f03b58:
@@ -124,7 +124,7 @@ translate english lisa_shower_not_luck_e8e13c34:
 translate english lisa_shower_pinded_05cff630:
 
     # Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!" nointeract
-    Lisa_12 "[spotted!t]Max! I can't believe you're peeping! I'm telling mom about this!" nointeract
+    Lisa_12 "[spotted!t]Max! I can't believe you're peeping! I'm telling Mom about this!" nointeract
 
 # game/events/lisa.rpy:213
 translate english lisa_dressed_school_lisa_dressed_ae455b87:
@@ -148,7 +148,7 @@ translate english lisa_dressed_school_come_in_e44012a5:
 translate english lisa_dressed_school_come_in_d468ca42:
 
     # Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
-    Lisa_12 "I knew you should've taken the couch in the living room... Okay, I'm dressed, come in... I'm going to school"
+    Lisa_12 "I knew you should've taken the couch in the living room... Okay, I'm dressed, come in... I'm going to school."
 
 # game/events/lisa.rpy:276
 translate english lisa_dressed_school_come_in_5991dbe6:
@@ -442,13 +442,13 @@ translate english lisa_bath_knock_d71a1367:
 translate english lisa_bath_open_knock_397f3e74:
 
     # Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
-    Lisa_11 "Max! I told you I'm taking a bath! I'll tell mom on you!"
+    Lisa_11 "Max! I told you I'm taking a bath! I'll tell Mom on you!"
 
 # game/events/lisa.rpy:644
 translate english lisa_bath_open_knock_397f3e74_1:
 
     # Lisa_11 "Макс! Я же предупредила, что моюсь! Всё маме расскажу!"
-    Lisa_11 "Max! I told you I'm taking a bath! I'll tell mom on you!"
+    Lisa_11 "Max! I told you I'm taking a bath! I'll tell Mom on you!"
 
 # game/events/lisa.rpy:648
 translate english lisa_bath_open_knock_ebe1fe1e:

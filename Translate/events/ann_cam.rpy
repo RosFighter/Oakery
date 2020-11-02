@@ -40,7 +40,7 @@ translate english cam1_ann_shower_0326dfb9:
 translate english cam0_ann_yoga_e9ef9711:
 
     # Max_02 "Мама, как и всегда в это время, занимается йогой. Здесь, хоть в какой позе, она выглядит очень сексуально..."
-    Max_02 "Mom's doing yoga. I admire the effort she puts into staying flexible..."
+    Max_02 "Mom's doing yoga. I admire the effort she puts into staying flexible. Just imagine the things she could do with her body..."
 
 # game/events/ann_cam.rpy:75
 translate english cam1_ann_yoga_ce238a73:
@@ -58,7 +58,7 @@ translate english cam0_ann_cooking_121fe332:
 translate english cam0_ann_cooking_81d5efdf:
 
     # Max_01 "Мама сегодня готовит ужин. Будет очень вкусно..."
-    Max_01 "Mom's cooking dinner tonight. It will be delicious..."
+    Max_01 "Mom's cooking dinner tonight. I'm sure it'll be delicious..."
 
 # game/events/ann_cam.rpy:119
 translate english cam0_ann_dressed_work_6161d2f7:
@@ -70,7 +70,7 @@ translate english cam0_ann_dressed_work_6161d2f7:
 translate english cam0_ann_dressed_work_2a4aa6ca:
 
     # Max_07 "Вот и мама наряжается, чтобы отправиться на работу..." nointeract
-    Max_07 "Mom's getting ready for work. I wonder how often she gets hit on?" nointeract
+    Max_07 "Mom's getting ready for work. I wonder how often she gets hit on..." nointeract
 
 # game/events/ann_cam.rpy:142
 translate english cam0_ann_dressed_work_ecd759fc:
@@ -196,7 +196,7 @@ translate english cam0_ann_bath_412f2768:
 translate english cam0_ann_bath_d9f05873:
 
     # Max_05 "И зачем нужны все эти эротические ролики в интернете, когда можно посмотреть на мою маму в ванне?!"
-    Max_05 "Why would I ever need internet porn when I can watch this right at home! Actually, my Mom would kill it as a pornstar!"
+    Max_05 "Why would I ever need porn when I can watch this right at home! Actually, Mom would kill it as a pornstar!"
 
 # game/events/ann_cam.rpy:334
 translate english cam1_ann_bath_0326dfb9:

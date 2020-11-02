@@ -16,7 +16,7 @@ translate english Eric_talk_afterdinner_9a9eff04:
 translate english Eric_talk_afterdinner_7bba59ab:
 
     # Eric_05 "Я заметил, что ты настроен вполне дружелюбно. Для меня важно подружиться с твоей семьёй, чтобы твоя мама не испытывала дискомфорт на этой почве, если ты меня понимаешь..." nointeract
-    Eric_05 "I've noticed that you're being friendly, and It's important for me to get along with your family, so your mom doesn't feel uncomfrtable." nointeract
+    Eric_05 "I've noticed that you're being friendly, and it's important for me to get along with your family, so that your mom doesn't feel uncomfortable." nointeract
 
 # game/events/eric.rpy:23
 translate english Eric_talk_afterdinner_0d5cb7f0:
@@ -58,13 +58,13 @@ translate english Eric_talk_afterdinner_bad_5431f4ad:
 translate english Eric_talk_afterdinner_what_bd2c8839:
 
     # Eric_05 "Если решишь испытать судьбу, то сам всё скоро узнаешь. У меня есть влияние, деньги, харизма. А главное - я умею убеждать и подчинять других людей. А что есть у тебя?" nointeract
-    Eric_05 "If you decide to try your luck, then you'll know soon enough. I have influence, money, charisma. But the most important thing is that I can convince and subdue others. What do you have?" nointeract
+    Eric_05 "If you decide to try your luck, then you'll know soon enough. I have influence, money, charisma. But the most important thing is that I can dominate and subdue others. What do you have?" nointeract
 
 # game/events/eric.rpy:74
 translate english Eric_talk_afterdinner_what_3a292d72:
 
     # Eric_02 "Правда? А я вот уже слышал, что Алиса относится к тебе как к маленькому извращенцу, Лиза рядом с тобой просто потому, что других защитников в доме не было, а мать смотрит на тебя как на неудачника..." nointeract
-    Eric_02 "Really? I've heard that Alice thinks you're a disgusting pervert, Lisa only looks up to you because there are no other males in the house, and your mom sees you as a loser..." nointeract
+    Eric_02 "Really? I've heard that Alice thinks you're a disgusting pervert, Lisa only looks up to you because there are no other males in the house, and your mom thinks you're a loser with no future." nointeract
 
 # game/events/eric.rpy:84
 translate english Eric_talk_afterdinner_what_c8163074:
@@ -76,19 +76,19 @@ translate english Eric_talk_afterdinner_what_c8163074:
 translate english Eric_talk_afterdinner_bullshit_efb61ad4:
 
     # Eric_09 "Ну не знаю... Даже если что-то ещё и не так, то с моей помощью всё так и будет, поверь... Но повторюсь, я не хочу с тобой воевать и лучше бы ты был на моей стороне..." nointeract
-    Eric_09 "Well, I don't know. Even if they don't think that yet, with my help they will, believe me. But again, I don't want to fight because it would be better for both of us if you were on my side" nointeract
+    Eric_09 "Well, I don't know. Even if they don't think that yet, with my help they will, believe me. But again, I don't want to fight because it would be far better for both of us if we had a partnership." nointeract
 
 # game/events/eric.rpy:100
 translate english Eric_talk_afterdinner_shesaid_d48a9a8b:
 
     # Eric_09 "Ну не словами, но я же это вижу со стороны. Тебя выгнали из школы за отношения с учителем. Если ты не понял, то это такой зашквар, что вернуть себе репутацию будет непросто..."
-    Eric_09 "Well, she didn't say it explicitly, but I can see it from her side. You were kicked out of school for harassing a teacher, can you not see how fucking pathetic that is? Good luck rebuilding your reputation after {b}that{/b}..."
+    Eric_09 "Well, she didn't say it explicitly, but come on. You were kicked out of school for harassing a teacher, can you not see how fucking pathetic that is? Good luck rebuilding your reputation after {b}that{/b}..."
 
 # game/events/eric.rpy:102
 translate english Eric_talk_afterdinner_shesaid_de4eb4e2:
 
     # Eric_00 "Но повторюсь, я не хочу с тобой воевать. Наоборот, я бы хотел с тобой подружиться и если ты будешь на моей стороне, ты только выиграешь..." nointeract
-    Eric_00 "But again, I don't want to fight you. On the contrary, I would like to be friends, and if you're on my side, you'll only win..." nointeract
+    Eric_00 "But again, I don't want to fight you. On the contrary, I would like to be friends, and if you're on my side, you'll only stand to gain..." nointeract
 
 # game/events/eric.rpy:112
 translate english Eric_talk_afterdinner_ok_b9f85d9a:
@@ -100,19 +100,19 @@ translate english Eric_talk_afterdinner_ok_b9f85d9a:
 translate english Eric_talk_afterdinner_ok_4dcd84ae:
 
     # Eric_00 "Ты слишком забегаешь вперёд, Макс. Давай сначала посмотрим на то, как всё пойдёт. Дай мне хотя бы шанс тебя убедить..." nointeract
-    Eric_00 "You're in a hurry, Max. Let's take a look at how things go first. Give me a chance to convince you..." nointeract
+    Eric_00 "You're in a hurry, Max. Let's see how things go first. Give me a chance to convince you..." nointeract
 
 # game/events/eric.rpy:127
 translate english Eric_talk_afterdinner_no_099d542e:
 
     # Eric_00 "Ну, как хочешь. Надеюсь, в тебе сейчас говорят эмоции, а не здравый смысл. У тебя есть неделя, чтобы передумать. Тогда и поговорим снова и будет ясно, как быть." nointeract
-    Eric_00 "If that's what you want. Let's hope these are just emotions talking. You have a week to change your mind. Then we'll talk again and it will be clear what kind of relationship we'll have." nointeract
+    Eric_00 "If that's what you want. Let's hope these are just emotions talking. You have a week to change your mind. Then we'll talk again and lay out what kind of relationship we'll have." nointeract
 
 # game/events/eric.rpy:137
 translate english Eric_talk_afterdinner_friend_9b6bd24d:
 
     # Eric_05 "Я рад, правда. Ты не пожалеешь. Ладно, твоя мама уже идёт, мы поехали. Вернёмся к этому разговору через неделю..."
-    Eric_05 "I'm really glad. You won't regret your decision. Well, your mom is almost ready, so let's wrap this up. We'll revisit this in a week..."
+    Eric_05 "I'm really glad. You won't regret your decision. Well, your mom's almost ready, so let's wrap this up. We'll revisit this in a week..."
 
 # game/events/eric.rpy:138
 translate english Eric_talk_afterdinner_friend_516308d2:
@@ -124,7 +124,7 @@ translate english Eric_talk_afterdinner_friend_516308d2:
 translate english Eric_talk_afterdinner_second_talk_913ec3c6:
 
     # Eric_00 "Ну что, Макс, готов пообщаться снова, пока твоя мама собирается?"
-    Eric_00 "So, Max, ready to talk again while your Mom gets ready?"
+    Eric_00 "So, Max, ready to talk while your Mom gets ready?"
 
 # game/events/eric.rpy:153
 translate english Eric_talk_afterdinner_second_talk_25aa812b:
@@ -136,7 +136,7 @@ translate english Eric_talk_afterdinner_second_talk_25aa812b:
 translate english Eric_talk_afterdinner_second_talk_5a895ebf:
 
     # Eric_05 "Отлично! Ну что, вроде бы ты и правда настроен на дружбу. Я прав?" nointeract
-    Eric_05 "Great! Well, I guess you're really in the mood for friendship. Am I right?" nointeract
+    Eric_05 "Good. Well, I guess you're really in the mood for a partnership. Am I right?" nointeract
 
 # game/events/eric.rpy:161
 translate english Eric_talk_afterdinner_second_talk_6f10b98c:
@@ -172,7 +172,7 @@ translate english Eric_talk_afterdinner_badbad_ee988680:
 translate english Eric_talk_afterdinner_goodgood_2ba39b19:
 
     # Eric_01 "Очень хорошо. Я рад. Ну, ты не пожалеешь, это правильный выбор..."
-    Eric_01 "Very well. I'm glad. Well, you won't regret it, it's the right choice..."
+    Eric_01 "Very well. I'm glad. Well, you won't regret it, you made the right choice..."
 
 # game/events/eric.rpy:191
 translate english Eric_talk_afterdinner_goodgood_910ad55d:
@@ -184,7 +184,7 @@ translate english Eric_talk_afterdinner_goodgood_910ad55d:
 translate english Eric_talk_afterdinner_goodgood_d956ee71:
 
     # Eric_03 "Ну давай начнём с самого простого. Чего ты хочешь?"
-    Eric_03 "Well, let's start basic. What do you want?"
+    Eric_03 "Well, let's start basic. What is it you want?"
 
 # game/events/eric.rpy:193
 translate english Eric_talk_afterdinner_goodgood_a3b08112:
@@ -196,13 +196,13 @@ translate english Eric_talk_afterdinner_goodgood_a3b08112:
 translate english Eric_talk_afterdinner_goodgood_6b61a60f:
 
     # Eric_05 "Я не слепой и вижу как ты смотришь на своих сестёр и даже маму. Не отрицай, иногда даже твои штаны тебя выдают. Но я тебя не виню, ещё бы, такие цыпочки кругом!" nointeract
-    Eric_05 "I'm not blind and I can see the way you look at your sisters and even your mother. Don't try and deny it. I don't even blame you, any man would would want to have these sluts all to themselves." nointeract
+    Eric_05 "I'm not blind. I can see the way you look at your sisters and even your mother. Don't try and deny it. I don't even blame you, any man would would want to have these sluts all to themselves." nointeract
 
 # game/events/eric.rpy:202
 translate english Eric_talk_afterdinner_goodgood_3e31f80b:
 
     # Eric_01 "Да ладно, здесь все свои! Любой мужик бы думал только о том, как поиметь их всех по очереди или даже разом. Это нормально! Я тебя понимаю!" nointeract
-    Eric_01 "Come on! Any man would dream about how to fuck them all in turn or even at once. This is normal! I know what you mean!" nointeract
+    Eric_01 "Come on! Any man would dream about how to fuck them one after the other, or even all at once. This is normal! I know what you mean!" nointeract
 
 # game/events/eric.rpy:205
 translate english Eric_talk_afterdinner_goodgood_25bd7ebc:
@@ -226,7 +226,7 @@ translate english Eric_talk_afterdinner_tell_539dcb1f:
 translate english Eric_talk_afterdinner_tell_e73b4f64:
 
     # Eric_09 "Не ожидал я от тебя такого... Ну ладно, дело твоё... Но учти, на этой войне у тебя нет ни единого шанса!" nointeract
-    Eric_09 "I didn't expect this from you... well, that's up to you... But you don't stand a chance in this war!" nointeract
+    Eric_09 "I didn't expect this from you... well, that's your choice... But you don't stand a chance in this war!" nointeract
 
 # game/events/eric.rpy:235
 translate english Eric_talk_afterdinner_tell_6653b55b:
@@ -250,13 +250,13 @@ translate english Eric_talk_afterdinner_get_a5be5209:
 translate english Eric_talk_afterdinner_get_cbb3238c:
 
     # Max_07 "Я хочу деньги, подглядывать и кое-что ещё..."
-    Max_07 "I want money, spying, and something else..."
+    Max_07 "I want money, spying rights, and something else..."
 
 # game/events/eric.rpy:241
 translate english Eric_talk_afterdinner_get_8cc4ced7:
 
     # Eric_05 "Ого. Вот это запросы! Ну, мы договоримся, Макс. Деньги для меня не проблема, но в разумных пределах, конечно..."
-    Eric_05 "Wow. Here are the requests! Well, we'll make a deal, Max. Money is not a problem for me, but within reason, of course..."
+    Eric_05 "Wow. Here come the requests! Well, we'll make a deal, Max. Money isn't a problem for me, within reason, of course..."
 
 # game/events/eric.rpy:242
 translate english Eric_talk_afterdinner_get_a7de4879:
@@ -268,19 +268,19 @@ translate english Eric_talk_afterdinner_get_a7de4879:
 translate english Eric_talk_afterdinner_get_159a1b33:
 
     # Eric_04 "Посмотрим на твоё поведение. Ещё рано торговаться. Если будешь в своё время закрывать глаза, то денег будет больше. Ну а если будешь мешать, то..."
-    Eric_04 "Let's look at your behavior. It's too early to bargain. If you keep your mouth closed, there'll be plenty. And if you get in the way, well..."
+    Eric_04 "Let's look at your behavior. It's too early to bargain. If you keep your mouth shut, there'll be plenty. And if you get in the way, well..."
 
 # game/events/eric.rpy:244
 translate english Eric_talk_afterdinner_get_872bbc39:
 
     # Max_07 "Ладно. А что насчёт подглядывать? Это можно?"
-    Max_07 "Okay. What about peeping? Is this possible?"
+    Max_07 "Okay. What about being able to spy un-interrupted? Is this possible?"
 
 # game/events/eric.rpy:245
 translate english Eric_talk_afterdinner_get_eec94b44:
 
     # Eric_01 "Ну лично я не возражаю. Думаю, даже твою маму подготовлю, чтобы если заметила, то не наказывала. Если ты помнишь, со следующей недели шлёпать вас будут голыми, а это очень унизительно... Что ещё ты там просил?"
-    Eric_01 "Well, personally, I don't mind. I think I'll even prepare your mother so that if she notices, she won't punish you. If you remember, from next week you will be spanked naked, and this is very humiliating... What else did you ask for?"
+    Eric_01 "Well, personally, I wouldn't care. I think I'll even prepare your mother so that if she catches you, she won't punish you. If you recall, from next week you'll be spanked naked, and this can be very humiliating... What else did you want?"
 
 # game/events/eric.rpy:246
 translate english Eric_talk_afterdinner_get_d2c545b7:
@@ -292,13 +292,13 @@ translate english Eric_talk_afterdinner_get_d2c545b7:
 translate english Eric_talk_afterdinner_get_9720f70e:
 
     # Eric_02 "Если ты про свою семью, то хотя я тебя и понимаю, но торговаться на этот счёт не намерен. Я тебе буду платить за твоё невмешательство. Более того, даже разрешу подглядывать без последствий, а вот все женщины в семье - мои." nointeract
-    Eric_02 "If you're talking about your family, I understand you, but I don't intend to bargain on it. I'll pay you for non-interference. What's more, I'll even let you peek without consequences, but all the women in the family are mine." nointeract
+    Eric_02 "If you're talking about your family, I understand you, but I don't intend to bargain on it. I'll pay you for non-interference. What's more, I'll even let you spy without consequences, but all the women in the family are mine." nointeract
 
 # game/events/eric.rpy:252
 translate english Eric_talk_afterdinner_get_9af01c97:
 
     # Eric_09 "Ну, тогда мы с тобой перед диллемой. Ты знаешь слишком много о моих планах, я знаю, что ты тот ещё извращенец... Как быть?" nointeract
-    Eric_09 "Well, then you and I are in front of the dilemma. You know too much about my plans, I know you're a pervert... What's it gonna be?" nointeract
+    Eric_09 "Well, then you and I are in front of the dilemma. You know too much about my plans, I know you're a pervert... What's it going to be?" nointeract
 
 # game/events/eric.rpy:255
 translate english Eric_talk_afterdinner_get_5024cd98:
@@ -310,7 +310,7 @@ translate english Eric_talk_afterdinner_get_5024cd98:
 translate english Eric_talk_afterdinner_get_91cf9d80:
 
     # Eric_02 "Боюсь, что да. Либо ты со мной, либо против меня. Напомню - я тебе буду платить, ты сможешь смотреть, но нельзя трогать... Ну или война и ты точно проиграешь. Очень быстро..." nointeract
-    Eric_02 "I'm afraid so. Either you're with me or you're against me. I'll remind you that I'll pay you, so you can watch, but you can't touch... The alternative is a war you'll definitely lose. Quickly..." nointeract
+    Eric_02 "I'm afraid so. Either you're with me or against me. I'll remind you that I'll pay you, so you can watch, but you can't touch... The alternative is a war you'll definitely lose. Quickly..." nointeract
 
 # game/events/eric.rpy:271
 translate english Eric_talk_afterdinner_get_b74ade66:
@@ -340,7 +340,7 @@ translate english Eric_talk_afterdinner_get_15087e37:
 translate english Eric_talk_afterdinner_get_97426be0:
 
     # Eric_03 "Ага. Так что, в твоих интересах мне не только не мешать, но и помогать, если возникнет такая необходимость. Ну там, слово замолвить или сделать что-то..."
-    Eric_03 "Yeah. So it's in your interest not only to stay out of my way, but to help me if I have to. You know, put in a good word or do something..."
+    Eric_03 "Yeah. So it's in your interest not only to stay out of my way, but to help me if I ask. You know, put in a good word or do something..."
 
 # game/events/eric.rpy:276
 translate english Eric_talk_afterdinner_get_67b5c25f:
@@ -400,7 +400,7 @@ translate english eric_ann_tv_42ac5694:
 translate english eric_ann_tv_c1692c11:
 
     # Max_09 "Похоже, порно подходит к концу, а вот Эрик не кончает! Наверно, они просто решили {i}разогреться{/i} перед тем, что будет в маминой спальне... А это значит, мне пора уходить."
-    Max_09 "It looks like porn is nearly over, but Eric isn't coming! They probably just decided to {i}warm up{/i} before continuing in Mom's room... Which means it's time for me to leave."
+    Max_09 "It looks like the porn is nearly over, but Eric isn't coming! They probably just decided to {i}warm up{/i} before continuing in Mom's room... Which means it's time for me to leave."
 
 # game/events/eric.rpy:430
 translate english eric_ann_tv_f9ebeced:
@@ -448,13 +448,13 @@ translate english eric_ann_tv_closer1_224a6ad6:
 translate english eric_ann_tv_closer1_bdf10685:
 
     # Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_11 "She's giving him a blow job! Right here... They are so involved with each other that they do not notice anything around them! Well, except for what's happening on the screen..." nointeract
+    Max_11 "She's giving him a blow job! Right here... They're so involved with each other that they do not notice anything around them! Well, except for what's happening on the screen..." nointeract
 
 # game/events/eric.rpy:481
 translate english eric_ann_tv_closer1_224a6ad6_1:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+    Max_07 "Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they're so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
 
 # game/events/eric.rpy:483
 translate english eric_ann_tv_closer1_dd256959:
@@ -466,7 +466,7 @@ translate english eric_ann_tv_closer1_dd256959:
 translate english eric_ann_tv_closer1_1cc34756:
 
     # Ann_13 "Что? Кто здесь? Макс?! Выйди немедленно, не видишь..." nointeract
-    Ann_13 "What? Who's here? Max?! Get out now, can't you see we're busy..." nointeract
+    Ann_13 "What? Who's here? Max?! Get out now, can't you see we're busy!?" nointeract
 
 # game/events/eric.rpy:499
 translate english eric_ann_tv_closer1_282eb1bf:
@@ -544,7 +544,7 @@ translate english eric_ann_fucking_d45f853e:
 translate english eric_ann_fucking_voyeur_c6b7e289:
 
     # Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-    Ann_15 "[spotted!t]Max?! What the hell? Are you peeking at us?! Tomorrow you'll be punished! Get out now!"
+    Ann_15 "[spotted!t]Max?! What the hell? Are you spying?! Tomorrow you'll be punished! Get out now!"
 
 # game/events/eric.rpy:577
 translate english eric_ann_fucking_voyeur_efe42e22:
@@ -580,7 +580,7 @@ translate english eric_ann_fucking_voyeur_c6425607:
 translate english eric_ann_fucking_voyeur_1a6dca32:
 
     # Ann_18 "Макс? Опять подглядываешь?! Ну-ка бегом отсюда!" nointeract
-    Ann_18 "Max? Peeping again?! Get out of here!" nointeract
+    Ann_18 "Max? Again?! Get out of here!" nointeract
 
 # game/events/eric.rpy:588
 translate english eric_ann_fucking_voyeur_afca94eb:
@@ -784,7 +784,7 @@ translate english eric_ann_shower_ladder_fa236e0e:
 translate english eric_ann_shower_ladder_6bc8173a:
 
     # Max_10 "Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко..."
-    Max_10 "Wow! Eric punches Mom in the back with such force that you can even hear a slap on her ass through the glass! Looks like she can barely hold herself back from screaming too loud..."
+    Max_10 "Wow! Eric's pounding Mom in the back with such force that you can even hear a slap on her ass through the glass! Looks like she can barely hold herself back from screaming too loud..."
 
 # game/events/eric.rpy:775
 translate english eric_ann_shower_fin1_547d305b:
