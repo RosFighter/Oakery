@@ -582,3 +582,857 @@ translate english strings:
     old "И что такого? Сестра стесняется брата?"
     new "What's wrong? We're siblings"
 
+# TODO: Translation updated at 2021-01-02 23:12
+
+# game/events/lisa.rpy:728
+translate english lisa_romantic_movie_0_f3247db8:
+
+    # Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Lisa_01 ""
+
+# game/events/lisa.rpy:729
+translate english lisa_romantic_movie_0_a59bad84:
+
+    # Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Max_01 ""
+
+# game/events/lisa.rpy:730
+translate english lisa_romantic_movie_0_8ae1d92e:
+
+    # Lisa_02 "А я пока свет выключу."
+    Lisa_02 ""
+
+# game/events/lisa.rpy:735
+translate english lisa_romantic_movie_0_16a5711d:
+
+    # Max_04 "Давай, запрыгивай! Ты уже знаешь, что будем смотреть?"
+    Max_04 ""
+
+# game/events/lisa.rpy:736
+translate english lisa_romantic_movie_0_ea5cc644:
+
+    # Lisa_09 "В смысле, \"запрыгивай\"? К тебе на кровать, что ли?"
+    Lisa_09 ""
+
+# game/events/lisa.rpy:737
+translate english lisa_romantic_movie_0_c52165ea:
+
+    # Max_07 "Да, ко мне. Или к тебе, если хочешь."
+    Max_07 ""
+
+# game/events/lisa.rpy:738
+translate english lisa_romantic_movie_0_dc0d9e48:
+
+    # Lisa_10 "Я думала каждый со своей кровати будет смотреть!"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:739
+translate english lisa_romantic_movie_0_907e98f3:
+
+    # Max_09 "Здесь же у нас не такой экран, как в гостиной. Смотреть надо близко."
+    Max_09 ""
+
+# game/events/lisa.rpy:740
+translate english lisa_romantic_movie_0_57a4b7fa:
+
+    # Lisa_00 "Ну... ладно. Подвинься тогда."
+    Lisa_00 ""
+
+# game/events/lisa.rpy:744
+translate english lisa_romantic_movie_0_8a7e7885:
+
+    # Max_00 "Ну так... каким фильмом ты собиралась меня мучить?"
+    Max_00 ""
+
+# game/events/lisa.rpy:745
+translate english lisa_romantic_movie_0_ae7209b1:
+
+    # Lisa_01 "Точно не знаю. Напиши в поиске \"лучшие романтические фильмы\" и я что-нибудь выберу."
+    Lisa_01 ""
+
+# game/events/lisa.rpy:746
+translate english lisa_romantic_movie_0_d14c257e:
+
+    # Max_03 "Вот, смотри... Выбирай... Может вот этот? Постер уж очень интересный!"
+    Max_03 ""
+
+# game/events/lisa.rpy:747
+translate english lisa_romantic_movie_0_8a55ebad:
+
+    # Lisa_02 "Нет, мы будем смотреть то, что интересно мне! Хочу вон тот фильм! Давай, включай..."
+    Lisa_02 ""
+
+# game/events/lisa.rpy:748
+translate english lisa_romantic_movie_0_9fe8cbf9:
+
+    # Max_07 "{i}( Да уж, это конечно намного лучше, чем получать при всех от мамы по заднице, но так скучно! Хотя бы с сестрёнкой рядом на одной кровати полежу. А смотреть можно и вполглаза... ){/i}"
+    Max_07 ""
+
+# game/events/lisa.rpy:749
+translate english lisa_romantic_movie_0_60738184:
+
+    # Lisa_13 "Макс, не спи! Ты должен смотреть - это твоё наказание! Если будешь спать, то я буду тебя пихать..."
+    Lisa_13 ""
+
+# game/events/lisa.rpy:753
+translate english lisa_romantic_movie_0_b6398894:
+
+    # Max_02 "{i}( Я бы тоже с огромным удовольствием попихал в тебя чем-нибудь! А если бы она ещё и уснула со мной в обнимку это было бы... ){/i}"
+    Max_02 ""
+
+# game/events/lisa.rpy:754
+translate english lisa_romantic_movie_0_14665ede:
+
+    # Lisa_10 "Ой-ёй-ёй! У фильма же вроде семейный рейтинг?! Почему они раздеваются?"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:755
+translate english lisa_romantic_movie_0_36bae7b4:
+
+    # Max_03 "А вот это уже будет поинтереснее смотреть! Хороший момент, мне нравится..."
+    Max_03 ""
+
+# game/events/lisa.rpy:756
+translate english lisa_romantic_movie_0_938027f4:
+
+    # Lisa_11 "Давай промотаем! Мне как-то неудобно... Ого! А что это он там делает ей?!"
+    Lisa_11 ""
+
+# game/events/lisa.rpy:757
+translate english lisa_romantic_movie_0_77908404:
+
+    # Max_05 "Я не против, что персонажей в этой сцене решили... хорошенько раскрыть..."
+    Max_05 ""
+
+# game/events/lisa.rpy:758
+translate english lisa_romantic_movie_0_f0429dea:
+
+    # Lisa_12 "Чем это ты ноутбук шевелишь? У тебя рука что ли трясётся или..."
+    Lisa_12 ""
+
+# game/events/lisa.rpy:759
+translate english lisa_romantic_movie_0_e9d4d46d:
+
+    # Max_07 "Ну... почти."
+    Max_07 ""
+
+# game/events/lisa.rpy:763
+translate english lisa_romantic_movie_0_f2db6ad8:
+
+    # Lisa_11 "Макс! У тебя встал что ли?"
+    Lisa_11 ""
+
+# game/events/lisa.rpy:764
+translate english lisa_romantic_movie_0_62089fb5:
+
+    # Max_08 "Да, немного. Такой уж фильм ты выбрала!"
+    Max_08 ""
+
+# game/events/lisa.rpy:765
+translate english lisa_romantic_movie_0_1ad44cc8:
+
+    # Lisa_13 "Немного?! Это не немного! Какой же ты озабоченный!"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:766
+translate english lisa_romantic_movie_0_e53fb6ea:
+
+    # Max_09 "Вообще-то, так все мужчины реагируют на такое!"
+    Max_09 ""
+
+# game/events/lisa.rpy:767
+translate english lisa_romantic_movie_0_1095a0d0:
+
+    # Lisa_12 "Молодец, Макс! Испортил весь просмотр."
+    Lisa_12 ""
+
+# game/events/lisa.rpy:768
+translate english lisa_romantic_movie_0_f9bf1574:
+
+    # Max_07 "А ты на экран смотри, а не на член."
+    Max_07 ""
+
+# game/events/lisa.rpy:769
+translate english lisa_romantic_movie_0_1574058f:
+
+    # Lisa_10 "Да не могу я смотреть на экран, когда и там и у тебя такое... Всё, я спать!"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:770
+translate english lisa_romantic_movie_0_288ac083:
+
+    # Max_08 "Погоди, но это ведь считается, что я отбыл наказание?"
+    Max_08 ""
+
+# game/events/lisa.rpy:771
+translate english lisa_romantic_movie_0_3dfedd8c:
+
+    # Lisa_09 "Да ну тебя!"
+    Lisa_09 ""
+
+# game/events/lisa.rpy:772
+translate english lisa_romantic_movie_0_85436806:
+
+    # Max_01 "Ладно. Доброй ночи тогда."
+    Max_01 ""
+
+# game/events/lisa.rpy:786
+translate english lisa_romantic_movie_r_f3247db8:
+
+    # Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Lisa_01 ""
+
+# game/events/lisa.rpy:787
+translate english lisa_romantic_movie_r_a59bad84:
+
+    # Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Max_01 ""
+
+# game/events/lisa.rpy:788
+translate english lisa_romantic_movie_r_8ae1d92e:
+
+    # Lisa_02 "А я пока свет выключу."
+    Lisa_02 ""
+
+# game/events/lisa.rpy:794
+translate english lisa_romantic_movie_r_8885d6ca:
+
+    # Max_04 "Давай, запрыгивай! Будем досматривать тот фильм?"
+    Max_04 ""
+
+# game/events/lisa.rpy:795
+translate english lisa_romantic_movie_r_04dfcf7d:
+
+    # Lisa_09 "Да, но промотай тот момент, ну ты понял..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:796
+translate english lisa_romantic_movie_r_c28db2f2:
+
+    # Max_03 "Считай, что уже сделано. Я к отбытию наказания готов!"
+    Max_03 ""
+
+# game/events/lisa.rpy:797
+translate english lisa_romantic_movie_r_5bd81bcd:
+
+    # Lisa_02 "И смотри чтобы ничего у тебя там не шевелилось больше!"
+    Lisa_02 ""
+
+# game/events/lisa.rpy:799
+translate english lisa_romantic_movie_r_16a5711d:
+
+    # Max_04 "Давай, запрыгивай! Ты уже знаешь, что будем смотреть?"
+    Max_04 ""
+
+# game/events/lisa.rpy:800
+translate english lisa_romantic_movie_r_96f14ddf:
+
+    # Lisa_01 "Нет. Выводи список романтический фильмов и я выберу. Только давай нормальные фильмы, а не как в прошлый раз!"
+    Lisa_01 ""
+
+# game/events/lisa.rpy:801
+translate english lisa_romantic_movie_r_64e0ea74:
+
+    # Max_03 "Ты сама выбирала, моё дело маленькое. Вот этот вроде ничего должен быть..."
+    Max_03 ""
+
+# game/events/lisa.rpy:802
+translate english lisa_romantic_movie_r_598bb99a:
+
+    # Lisa_02 "Ага, давай его. И твоё маленькое дело - это смотреть фильм, мучиться и чтобы у тебя ничего не шевелилось!"
+    Lisa_02 ""
+
+# game/events/lisa.rpy:811
+translate english lisa_romantic_movie_r_5e15c2a1:
+
+    # Max_07 "{i}( Легко говорить, чтобы ничего не шевелилось! Достаточно просто представить, как Лиза лежит рядом со мной, совсем обнажённая... Ой, лучше не думать! ){/i}"
+    Max_07 ""
+
+# game/events/lisa.rpy:812
+translate english lisa_romantic_movie_r_fc9d7a66:
+
+    # Lisa_03 "Что, Макс, заскучал? Будешь знать, как за мной подглядывать! И не вздумай спать, а то я начну тебя щипать..."
+    Lisa_03 ""
+
+# game/events/lisa.rpy:813
+translate english lisa_romantic_movie_r_c8696fac:
+
+    # Max_02 "Так я и ответить могу тем же, если ты не в курсе!"
+    Max_02 ""
+
+# game/events/lisa.rpy:814
+translate english lisa_romantic_movie_r_8aa097ce:
+
+    # Lisa_13 "Эй! Нет, меня нельзя щипать! Ой, ну вот опять откровенные сцены начались..."
+    Lisa_13 ""
+
+# game/events/lisa.rpy:815
+translate english lisa_romantic_movie_r_fb5f92fd:
+
+    # Max_04 "{i}( Вовремя! А то у меня уже слегка привстал, ведь в голову пришло уже столько пошлых мыслей от того, что Лиза лежит так близко ко мне. ){/i}"
+    Max_04 ""
+
+# game/events/lisa.rpy:822
+translate english lisa_romantic_movie_r_ef4f9485:
+
+    # Lisa_10 "Макс, у тебя опять стоит! Ну сколько можно?"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:823
+translate english lisa_romantic_movie_r_8309f28f:
+
+    # Max_01 "Фильмы такие! Что тут поделать..."
+    Max_01 ""
+
+# game/events/lisa.rpy:824
+translate english lisa_romantic_movie_r_b7875281:
+
+    # Lisa_01 "А я знаю что! Мы будем смотреть что-нибудь такое, на что ты не будешь реагировать так, как сейчас."
+    Lisa_01 ""
+
+# game/events/lisa.rpy:825
+translate english lisa_romantic_movie_r_7c8eec32:
+
+    # Max_05 "Например? О, давай боевики?! Или комедии? А ещё лучше - комедийные боевики!"
+    Max_05 ""
+
+# game/events/lisa.rpy:826
+translate english lisa_romantic_movie_r_7b8935fd:
+
+    # Lisa_02 "Нет, мы будем смотреть ужастики!"
+    Lisa_02 ""
+
+# game/events/lisa.rpy:827
+translate english lisa_romantic_movie_r_d996f142:
+
+    # Max_09 "Ужастики?! Ты уверена, что смотреть ужастики в тёмное время суток - это то, что нужно?"
+    Max_09 ""
+
+# game/events/lisa.rpy:828
+translate english lisa_romantic_movie_r_0a46ff77:
+
+    # Lisa_03 "Что, Макс, струсил?! Это то, что мне и нужно. Наверняка, ты будешь визжать от страха, как маленькая девочка!"
+    Lisa_03 ""
+
+# game/events/lisa.rpy:829
+translate english lisa_romantic_movie_r_1ed9f3b6:
+
+    # Max_16 "Не дождёшься! Считай, что вызов я принял! Ещё увидим, кто будет визжать..."
+    Max_16 ""
+
+# game/events/lisa.rpy:830
+translate english lisa_romantic_movie_r_eeef1b80:
+
+    # Lisa_02 "Да, да... Не удивлюсь, если подглядывания за мной... прекратятся."
+    Lisa_02 ""
+
+# game/events/lisa.rpy:831
+translate english lisa_romantic_movie_r_d629e652:
+
+    # Max_09 "У тебя, кстати, есть своя кровать, помнишь?"
+    Max_09 ""
+
+# game/events/lisa.rpy:832
+translate english lisa_romantic_movie_r_1e0138d1:
+
+    # Lisa_01 "Тогда я пойду спать, а то ты сегодня что-то не в духе."
+    Lisa_01 ""
+
+# game/events/lisa.rpy:833
+translate english lisa_romantic_movie_r_cc58a4e6:
+
+    # Max_15 "Да, будь так добра..."
+    Max_15 ""
+
+# game/events/lisa.rpy:838
+translate english lisa_romantic_movie_r_18f9da30:
+
+    # Lisa_12 "Ну и ты следом сразу возбудился! Это вообще нормально?"
+    Lisa_12 ""
+
+# game/events/lisa.rpy:839
+translate english lisa_romantic_movie_r_fe3c40d7:
+
+    # Max_07 "Спроси хоть у кого и ответ будет всегда один - да, это нормальная реакция."
+    Max_07 ""
+
+# game/events/lisa.rpy:840
+translate english lisa_romantic_movie_r_3327948b:
+
+    # Lisa_10 "Ну и как теперь дальше фильм смотреть, а Макс?"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:841
+translate english lisa_romantic_movie_r_7493299f:
+
+    # Max_02 "Как и до этого смотрела, просто с небольшим бонусом."
+    Max_02 ""
+
+# game/events/lisa.rpy:842
+translate english lisa_romantic_movie_r_f2657b97:
+
+    # Lisa_09 "Ага! Очень такой \"небольшой\" бонус, аж в трусах не умещается... Всё, я спать!"
+    Lisa_09 ""
+
+# game/events/lisa.rpy:843
+translate english lisa_romantic_movie_r_56b58bae:
+
+    # Max_07 "Ничего, если я тут досмотрю этот момент, интересно, как закончится?"
+    Max_07 ""
+
+# game/events/lisa.rpy:844
+translate english lisa_romantic_movie_r_1e238823:
+
+    # Lisa_12 "Нет! Выключай всё! А то это уже не наказание получается."
+    Lisa_12 ""
+
+# game/events/lisa.rpy:845
+translate english lisa_romantic_movie_r_79a58dcb:
+
+    # Max_01 "Ладно. Тогда спим..."
+    Max_01 ""
+
+# game/events/lisa.rpy:848
+translate english lisa_romantic_movie_r_91c5b8d8:
+
+    # Lisa_10 "Макс, может уже хватит меня смущать?! Почему ты такой озабоченный?"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:849
+translate english lisa_romantic_movie_r_6a31b0c6:
+
+    # Max_02 "Не понимаю о чём ты говоришь, у меня всё нормально."
+    Max_02 ""
+
+# game/events/lisa.rpy:850
+translate english lisa_romantic_movie_r_53814219:
+
+    # Lisa_13 "Ага, развалился тут со своим членом на всю кровать и довольный! А это вообще-то наказание!"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:851
+translate english lisa_romantic_movie_r_24f4c2ff:
+
+    # Max_07 "Ну а что я сделаю, если они там решили поразвлечься?!"
+    Max_07 ""
+
+# game/events/lisa.rpy:852
+translate english lisa_romantic_movie_r_754adc77:
+
+    # Lisa_09 "Опять ты весь просмотр испортил! Я пошла спать..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:853
+translate english lisa_romantic_movie_r_d7ff6c8f:
+
+    # Max_04 "Ну давай, а я ещё немного посмотрю..."
+    Max_04 ""
+
+# game/events/lisa.rpy:854
+translate english lisa_romantic_movie_r_96ee1624:
+
+    # Lisa_10 "Нет уж! Давай выключай! А то лицо у тебя слишком довольное стало."
+    Lisa_10 ""
+
+# game/events/lisa.rpy:855
+translate english lisa_romantic_movie_r_95c980ce:
+
+    # Max_03 "И не только лицо..."
+    Max_03 ""
+
+# game/events/lisa.rpy:856
+translate english lisa_romantic_movie_r_3dfedd8c:
+
+    # Lisa_09 "Да ну тебя!"
+    Lisa_09 ""
+
+# game/events/lisa.rpy:857
+translate english lisa_romantic_movie_r_85436806:
+
+    # Max_01 "Ладно. Доброй ночи тогда."
+    Max_01 ""
+
+# game/events/lisa.rpy:873
+translate english lisa_horor_movie_0_f3247db8:
+
+    # Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Lisa_01 ""
+
+# game/events/lisa.rpy:874
+translate english lisa_horor_movie_0_a59bad84:
+
+    # Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Max_01 ""
+
+# game/events/lisa.rpy:875
+translate english lisa_horor_movie_0_bb19dc25:
+
+    # Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
+    Lisa_02 ""
+
+# game/events/lisa.rpy:880
+translate english lisa_horor_movie_0_0302cbc0:
+
+    # Max_07 "Как бы не так! Ты уже знаешь, что будем смотреть?"
+    Max_07 ""
+
+# game/events/lisa.rpy:881
+translate english lisa_horor_movie_0_46ea63fd:
+
+    # Lisa_03 "Я думала посмотреть все части \"Кошмара на улице Вязов\" или \"Пятницы 13-е\". Мне в школе посоветовали. Но выбирать тебе, ты же будешь бояться." nointeract
+    Lisa_03 "" nointeract
+
+# game/events/lisa.rpy:892
+translate english lisa_horor_movie_0_d62d1fc8:
+
+    # Lisa_02 "Макс, если тебе будет сильно страшно, то так и скажи! В этом нет ничего такого, мы сразу всё выключим."
+    Lisa_02 ""
+
+# game/events/lisa.rpy:893
+translate english lisa_horor_movie_0_d532a320:
+
+    # Max_03 "Мне нечего бояться, с моей стороны стена, так что никто из под кровати на меня не нападёт. Чего не могу сказать о твоём положении, ты сильно рискуешь!"
+    Max_03 ""
+
+# game/events/lisa.rpy:897
+translate english lisa_horor_movie_0_d3390a12:
+
+    # Lisa_00 "Хорошая попытка, но меня этим не напугаешь, наверно... Вот молчал бы и я об этом сейчас не думала бы!"
+    Lisa_00 ""
+
+# game/events/lisa.rpy:898
+translate english lisa_horor_movie_0_a139b038:
+
+    # Max_02 "Но если тебе всё же начнёт казаться, как что-то тянется из темноты к твоей ноге, то сразу скажи. И мы сразу всё выключим!"
+    Max_02 ""
+
+# game/events/lisa.rpy:902
+translate english lisa_horor_movie_0_793be321:
+
+    # Lisa_09 "Не пугай меня, Макс! И так фильм страшный, так ты тут ещё жути нагоняешь!"
+    Lisa_09 ""
+
+# game/events/lisa.rpy:903
+translate english lisa_horor_movie_0_9243c41a:
+
+    # Max_00 "Не бойся, мне тоже страшно!"
+    Max_00 ""
+
+# game/events/lisa.rpy:904
+translate english lisa_horor_movie_0_7a93c95f:
+
+    # Lisa_10 "Правда? По тебе не скажешь..."
+    Lisa_10 ""
+
+# game/events/lisa.rpy:905
+translate english lisa_horor_movie_0_53effe8a:
+
+    # Max_04 "Есть немного, но трусишка у нас ты... Но мне это нравится, очень мило."
+    Max_04 ""
+
+# game/events/lisa.rpy:910
+translate english lisa_horor_movie_0_6c701e39:
+
+    # Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
+    Lisa_11 ""
+
+# game/events/lisa.rpy:911
+translate english lisa_horor_movie_0_dfc5290b:
+
+    # Max_09 "Ну, ты не одна в комнате, так что бояться нечего. Всех монстров я возьму на себя!"
+    Max_09 ""
+
+# game/events/lisa.rpy:912
+translate english lisa_horor_movie_0_5bde3f33:
+
+    # Lisa_13 "Макс, это что мне в ногу такое твёрдое упёрлось?!"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:913
+translate english lisa_horor_movie_0_d3ed354f:
+
+    # Max_07 "Ноутбук, должно быть."
+    Max_07 ""
+
+# game/events/lisa.rpy:917
+translate english lisa_horor_movie_0_223fddda:
+
+    # Lisa_12 "Ага, ноутбук, как же! Сейчас-то у тебя от чего встал?!"
+    Lisa_12 ""
+
+# game/events/lisa.rpy:918
+translate english lisa_horor_movie_0_a1d4a1fc:
+
+    # Max_08 "Ты ко мне прижалась, вот я и возбудился. Пора бы тебе уже спокойно на это реагировать и не обращать внимание."
+    Max_08 ""
+
+# game/events/lisa.rpy:919
+translate english lisa_horor_movie_0_bda43f4d:
+
+    # Lisa_09 "Да как тут внимание не обращать, ты же меня своим членом сейчас трогал?!"
+    Lisa_09 ""
+
+# game/events/lisa.rpy:920
+translate english lisa_horor_movie_0_2ba42890:
+
+    # Max_09 "Во-первых, не трогал, а ты просто положила на него свою ногу, а во-вторых, ты же к моей ноге своей киской тоже прижалась... Так что всё честно!"
+    Max_09 ""
+
+# game/events/lisa.rpy:926
+translate english lisa_horor_movie_0_42cba858:
+
+    # Lisa_10 "Ничем таким я к тебе не прижималась! И вообще, я спать пошла... только страшно..."
+    Lisa_10 ""
+
+# game/events/lisa.rpy:927
+translate english lisa_horor_movie_0_cd73a907:
+
+    # Max_01 "Ладно. И попку давай береги по пути, а то монстры любят хватать за что-нибудь такое!"
+    Max_01 ""
+
+# game/events/lisa.rpy:928
+translate english lisa_horor_movie_0_3202fbc2:
+
+    # Lisa_11 "Ой ой ой!"
+    Lisa_11 ""
+
+# game/events/lisa.rpy:942
+translate english lisa_horor_movie_r_f3247db8:
+
+    # Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Lisa_01 ""
+
+# game/events/lisa.rpy:943
+translate english lisa_horor_movie_r_a59bad84:
+
+    # Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Max_01 ""
+
+# game/events/lisa.rpy:944
+translate english lisa_horor_movie_r_bb19dc25:
+
+    # Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
+    Lisa_02 ""
+
+# game/events/lisa.rpy:952
+translate english lisa_horor_movie_r_eeace2b8:
+
+    # Max_07 "Как бы не так! Будем досматривать тот фильм, который тогда смотрели?"
+    Max_07 ""
+
+# game/events/lisa.rpy:953
+translate english lisa_horor_movie_r_821fd45a:
+
+    # Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне." nointeract
+    Lisa_00 "" nointeract
+
+# game/events/lisa.rpy:977
+translate english lisa_horor_movie_r_40f992d8:
+
+    # Max_07 "Как бы не так! Будем смотреть следующий фильм в той серии, которую начали?"
+    Max_07 ""
+
+# game/events/lisa.rpy:979
+translate english lisa_horor_movie_r_821fd45a_1:
+
+    # Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне." nointeract
+    Lisa_00 "" nointeract
+
+# game/events/lisa.rpy:1016
+translate english lisa_horor_movie_r_10373a9d:
+
+    # Lisa_09 "Может хоть для приличия испугаешься? А то иначе я уже не знаю, как тебя наказать, разве что маме тебя сдать..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:1017
+translate english lisa_horor_movie_r_5ed34e7c:
+
+    # Max_14 "Я боюсь! Теперь стало намного страшнее после твоих слов."
+    Max_14 ""
+
+# game/events/lisa.rpy:1021
+translate english lisa_horor_movie_r_6f2e38dc:
+
+    # Lisa_10 "Вот и хорошо, а то я не хочу одна бояться. Ну вот что они делают?! Это же точно ничем хорошим не закончится!"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:1022
+translate english lisa_horor_movie_r_bf7f807a:
+
+    # Max_02 "{i}( Хорошо, что в ужастиках куча тупых персонажей, потому что это гарантирует мне крепкие объятия от Лизы! Главное стараться не думать, какими прелестями она ко мне прижимается. ){/i}"
+    Max_02 ""
+
+# game/events/lisa.rpy:1030
+translate english lisa_horor_movie_r_6c701e39:
+
+    # Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
+    Lisa_11 ""
+
+# game/events/lisa.rpy:1033
+translate english lisa_horor_movie_r_016f583a:
+
+    # Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}" nointeract
+    Max_10 "" nointeract
+
+# game/events/lisa.rpy:1045
+translate english lisa_horor_movie_r_5ead36ab:
+
+    # Lisa_09 "Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:1048
+translate english lisa_horor_movie_r_caa5d6fa:
+
+    # Lisa_09 "Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:1051
+translate english lisa_horor_movie_r_e06d84d1:
+
+    # Max_04 "Ага, я тоже. Было страшно, но я рад, что ты была рядом. Это приятно."
+    Max_04 ""
+
+# game/events/lisa.rpy:1056
+translate english lisa_horor_movie_r_e8dd9914:
+
+    # Lisa_10 "Мне только страшно до своей кровати идти теперь..."
+    Lisa_10 ""
+
+# game/events/lisa.rpy:1057
+translate english lisa_horor_movie_r_7656a27c:
+
+    # Max_03 "Так не иди. Спи со мной. Я очень даже не против!"
+    Max_03 ""
+
+# game/events/lisa.rpy:1058
+translate english lisa_horor_movie_r_2ccbf395:
+
+    # Lisa_05 "Чтобы со мной рядом кое-что шевелилось? Так я точно не усну. Мне нужно как-то храбрости набраться..." nointeract
+    Lisa_05 "" nointeract
+
+# game/events/lisa.rpy:1069
+translate english lisa_horor_movie_r_92e639d8:
+
+    # Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки... ){/i}"
+    Max_05 ""
+
+# game/events/lisa.rpy:1073
+translate english lisa_horor_movie_r_5aae11b2:
+
+    # Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
+    Lisa_02 ""
+
+# game/events/lisa.rpy:1074
+translate english lisa_horor_movie_r_5c2cac39:
+
+    # Max_01 "Ага. Приятных снов."
+    Max_01 ""
+
+# game/events/lisa.rpy:1078
+translate english lisa_horor_movie_r_62242552:
+
+    # Lisa_13 "Ну ага, просто иди! А вдруг меня что-то схватит?!"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:1079
+translate english lisa_horor_movie_r_4217f727:
+
+    # Max_07 "У нас в комнате нет никаких монстров! Если конечно не считать того, что у меня в трусах."
+    Max_07 ""
+
+# game/events/lisa.rpy:1083
+translate english lisa_horor_movie_r_08782138:
+
+    # Lisa_01 "Ой, с тобой и правда страшно спать будет! Я пошла к себе..."
+    Lisa_01 ""
+
+# game/events/lisa.rpy:1084
+translate english lisa_horor_movie_r_1dc372f8:
+
+    # Max_01 "Ага. Спокойной ночи."
+    Max_01 ""
+
+# game/events/lisa.rpy:1091
+translate english lisa_horor_movie_r_not_restrain_26ebf379:
+
+    # Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:1092
+translate english lisa_horor_movie_r_not_restrain_e9260b73:
+
+    # Max_07 "Однозначно кажется..."
+    Max_07 ""
+
+# game/events/lisa.rpy:1097
+translate english lisa_horor_movie_r_not_restrain_afe91d1a:
+
+    # Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Я же твоя сестра, тебе стыдно должно быть!"
+    Lisa_12 ""
+
+# game/events/lisa.rpy:1098
+translate english lisa_horor_movie_r_not_restrain_5876b4d3:
+
+    # Max_09 "Стыдно?! Ну встал и встал, подумаешь."
+    Max_09 ""
+
+# game/events/lisa.rpy:1103
+translate english lisa_horor_movie_r_not_restrain_8ab024b6:
+
+    # Lisa_10 "Хватит уже похабно думать обо мне! Я ушла спать... Ой! Как страшно..."
+    Lisa_10 ""
+
+# game/events/lisa.rpy:1104
+translate english lisa_horor_movie_r_not_restrain_75e90268:
+
+    # Max_04 "Проводить тебя до кровати?"
+    Max_04 ""
+
+# game/events/lisa.rpy:1105
+translate english lisa_horor_movie_r_not_restrain_f26114cd:
+
+    # Lisa_13 "Сама справлюсь! Ой ой ой!"
+    Lisa_13 ""
+
+translate english strings:
+
+    # game/events/lisa.rpy:881
+    old "{i}смотреть \"Кошмар на улице Вязов\"{/i}"
+    new ""
+
+    # game/events/lisa.rpy:881
+    old "{i}смотреть \"Пятница 13-е\"{/i}"
+    new ""
+
+    # game/events/lisa.rpy:953
+    old "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")"
+    new ""
+
+    # game/events/lisa.rpy:953
+    old "Тогда досматриваем... (продолжаем смотреть \"Пятница 13-е\")"
+    new ""
+
+    # game/events/lisa.rpy:979
+    old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Кошмар на улице Вязов\")"
+    new ""
+
+    # game/events/lisa.rpy:979
+    old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Пятница 13-е\")"
+    new ""
+
+    # game/events/lisa.rpy:1033
+    old "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}"
+    new ""
+
+    # game/events/lisa.rpy:1033
+    old "{i}да пофиг!{/i}"
+    new ""
+
+    # game/events/lisa.rpy:1058
+    old "{i}поцеловать Лизу{/i}"
+    new ""
+
+    # game/events/lisa.rpy:1058
+    old "Просто иди и всё..."
+    new ""
+

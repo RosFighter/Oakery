@@ -374,3 +374,27 @@ translate english strings:
     old "Меню"
     new "Menu"
 
+# TODO: Translation updated at 2021-01-02 23:12
+
+translate english strings:
+
+    # game/screens.rpy:909
+    old "Громкость музыки"
+    new ""
+
+    # game/screens.rpy:916
+    old "Громкость звуков"
+    new ""
+
+    # game/screens.rpy:922
+    old "Тест"
+    new ""
+
+    # game/screens.rpy:926
+    old "Громкость голоса"
+    new ""
+
+    # game/screens.rpy:937
+    old "Без звука"
+    new ""
+

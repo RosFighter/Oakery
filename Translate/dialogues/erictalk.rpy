@@ -532,3 +532,339 @@ translate english strings:
     old "{i}пересесть{/i}"
     new "{i}Sit down{/i}"
 
+# TODO: Translation updated at 2021-01-02 23:12
+
+# game/dialogues/erictalk.rpy:318
+translate english Eric_talk_about_Lisa_0_77426e44:
+
+    # Eric_00 "Макс, нам нужно поговорить наедине."
+    Eric_00 ""
+
+# game/dialogues/erictalk.rpy:319
+translate english Eric_talk_about_Lisa_0_e7f5724b:
+
+    # Max_07 "Я слушаю..."
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:320
+translate english Eric_talk_about_Lisa_0_e5a04ecc:
+
+    # Eric_01 "Как там твоя младшая сестрёнка, проявляет сексуальный интерес к кому-нибудь?"
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:321
+translate english Eric_talk_about_Lisa_0_0cc9eda2:
+
+    # Max_09 "Возможно... А что?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:322
+translate english Eric_talk_about_Lisa_0_29ab7eaa:
+
+    # Eric_04 "Думаю, пришло время мне взяться за её сексуальное образование. Возражения будут?" nointeract
+    Eric_04 "" nointeract
+
+# game/dialogues/erictalk.rpy:329
+translate english Eric_talk_about_Lisa_0_e2daf20d:
+
+    # Eric_03 "Вот и славно! Как она реагирует на твои стояки, Макс? Уже привыкла?"
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:330
+translate english Eric_talk_about_Lisa_0_8d6f9d1a:
+
+    # Max_01 "Более-менее... По крайней мере маму больше не зовёт на помощь."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:331
+translate english Eric_talk_about_Lisa_0_d948e080:
+
+    # Eric_02 "Уже неплохо. А о мальчиках много спрашивает?"
+    Eric_02 ""
+
+# game/dialogues/erictalk.rpy:332
+translate english Eric_talk_about_Lisa_0_94d23536:
+
+    # Max_02 "Я ей книгу подарил по секс-образованию. Она как раз сейчас её читает."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:333
+translate english Eric_talk_about_Lisa_0_1639915c:
+
+    # Eric_05 "Вот это ты хорошо сделал, Макс! Мне меньше работы будет... А с тебя содействие на счёт Лизы, если вдруг оно мне понадобится."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:334
+translate english Eric_talk_about_Lisa_0_8d96290d:
+
+    # Max_07 "А я что получу за это?!"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:335
+translate english Eric_talk_about_Lisa_0_7767603c:
+
+    # Eric_00 "В каком смысле?"
+    Eric_00 ""
+
+# game/dialogues/erictalk.rpy:336
+translate english Eric_talk_about_Lisa_0_8adb268b:
+
+    # Max_09 "В том, что мы с тобой друзья... А я, как ты сейчас сказал, облегчил тебе задачу по обучению Лизы! Хотелось бы тоже что-то получить за это."
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:337
+translate english Eric_talk_about_Lisa_0_b3b0005d:
+
+    # Eric_01 "Ладно, это будет справедливо. И чего же ты хочешь?" nointeract
+    Eric_01 "" nointeract
+
+# game/dialogues/erictalk.rpy:356
+translate english Eric_talk_about_Lisa_0_003089f4:
+
+    # Eric_03 "А я думал, ты за Лизу горой встанешь! Решил всё же передумать и не враждовать со мной?"
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:357
+translate english Eric_talk_about_Lisa_0_9c1911c5:
+
+    # Max_07 "Да, погорячился я немного. Бывает у меня такое..."
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:358
+translate english Eric_talk_about_Lisa_0_7e4742f9:
+
+    # Eric_02 "Ох, Макс, с кем не бывает. Лучше поздно, чем никогда. Как там Лиза, о мальчиках много спрашивает?"
+    Eric_02 ""
+
+# game/dialogues/erictalk.rpy:359
+translate english Eric_talk_about_Lisa_0_94d23536_1:
+
+    # Max_02 "Я ей книгу подарил по секс-образованию. Она как раз сейчас её читает."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:360
+translate english Eric_talk_about_Lisa_0_b3a9ccd8:
+
+    # Eric_05 "Вот это ты хорошо сделал, Макс! Мне меньше работы будет... А с тебя содействие на счёт Лизы, если вдруг оно мне понадобится, раз уж мы теперь друзья..."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:361
+translate english Eric_talk_about_Lisa_0_8d96290d_1:
+
+    # Max_07 "А я что получу за это?!"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:362
+translate english Eric_talk_about_Lisa_0_7767603c_1:
+
+    # Eric_00 "В каком смысле?"
+    Eric_00 ""
+
+# game/dialogues/erictalk.rpy:363
+translate english Eric_talk_about_Lisa_0_06f08396:
+
+    # Max_09 "В том, что мы с тобой теперь друзья... А я, как ты сейчас сказал, облегчил тебе задачу по обучению Лизы! Хотелось бы тоже что-то получить за это."
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:364
+translate english Eric_talk_about_Lisa_0_c09f624b:
+
+    # Eric_01 "Ладно, Макс, в качестве жеста доброй воли ты можешь подглядывать за нашими с Лизой... уроками. В комнате Ани... Я так и быть, позабочусь, чтобы тебя не заметили."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:365
+translate english Eric_talk_about_Lisa_0_ac9c0fdd:
+
+    # Max_01 "Неплохо. А может..."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:366
+translate english Eric_talk_about_Lisa_0_5f255369:
+
+    # Eric_06 "Нет, Макс! Сперва, посмотрим как ты будешь дальше себя вести... А пока, только это."
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:367
+translate english Eric_talk_about_Lisa_0_2c3dbd88:
+
+    # Max_00 "Ну ладно."
+    Max_00 ""
+
+# game/dialogues/erictalk.rpy:377
+translate english Eric_talk_about_Lisa_0_bf62eaee:
+
+    # Eric_03 "Макс, думаешь тебе это решать, когда рано, а когда нет? Смешной ты..."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:379
+translate english Eric_talk_about_Lisa_0_3d81d628:
+
+    # Max_07 "Да она даже из-за моих утренних стояков маму хочет звать на помощь!"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:380
+translate english Eric_talk_about_Lisa_0_f3cae38e:
+
+    # Eric_06 "Да, возни будет много... а времени мало... Значит так, Макс, вот тебе в таком случае задание! Сделай так, чтобы Лиза перестала шарахаться от вида твоего члена."
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:382
+translate english Eric_talk_about_Lisa_0_8057a22d:
+
+    # Max_09 "И как мне это сделать?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:384
+translate english Eric_talk_about_Lisa_0_de3051f4:
+
+    # Eric_02 "Как ты это сделаешь, не знаю, у нас с Аней на это времени нет, а вот ты всё время дома. Книжки почитайте по теме сексуального воспитания, например. Если за пару недель уложишься, то буду должен - не разочаруешься."
+    Eric_02 ""
+
+# game/dialogues/erictalk.rpy:385
+translate english Eric_talk_about_Lisa_0_9631fee4:
+
+    # Max_00 "Хорошо, я попробую..."
+    Max_00 ""
+
+# game/dialogues/erictalk.rpy:396
+translate english Eric_talk_about_Lisa_0_021426e4:
+
+    # Eric_09 "Ну, тогда у нас с тобой проблемы. Если ты помнишь, мы договорились, а договор нужно выполнять. Либо нам с тобой придётся перестать быть друзьями..."
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:397
+translate english Eric_talk_about_Lisa_0_4fd425bf:
+
+    # Max_15 "Делай что хочешь, но Лиза моя!"
+    Max_15 ""
+
+# game/dialogues/erictalk.rpy:398
+translate english Eric_talk_about_Lisa_0_e0b877a8:
+
+    # Eric_04 "Ну, значит, война. Я тебя предупреждал уже, что ты проиграешь. Теперь есть возможность в этом убедиться лично. И да, готовь сапоги. Военный лагерь ждёт..."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:399
+translate english Eric_talk_about_Lisa_0_2c68645b:
+
+    # Max_16 "Посмотрим..."
+    Max_16 ""
+
+# game/dialogues/erictalk.rpy:408
+translate english Eric_talk_about_Lisa_0_98c18922:
+
+    # Eric_04 "Я это спросил, просто чтобы тебя позлить. Я её всё равно заберу, скоро ты в этом убедишься. И да, готовь сапоги. Военный лагерь ждёт..."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:409
+translate english Eric_talk_about_Lisa_0_2c68645b_1:
+
+    # Max_16 "Посмотрим..."
+    Max_16 ""
+
+# game/dialogues/erictalk.rpy:423
+translate english Eric_talk_about_Lisa_1_77426e44:
+
+    # Eric_00 "Макс, нам нужно поговорить наедине."
+    Eric_00 ""
+
+# game/dialogues/erictalk.rpy:424
+translate english Eric_talk_about_Lisa_1_b13b8f39:
+
+    # Max_07 "Я слушаю... Что такое?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:425
+translate english Eric_talk_about_Lisa_1_ed483f99:
+
+    # Eric_13 "А сам как думаешь!? Как там твои успехи с Лизой?"
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:426
+translate english Eric_talk_about_Lisa_1_62fad2e1:
+
+    # Max_08 "Я ещё работаю над этим..."
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:427
+translate english Eric_talk_about_Lisa_1_11f60e7b:
+
+    # Eric_15 "Понятно, успехов нет. Придётся всё делать самому... Или, может, ты и не собирался мне помогать?"
+    Eric_15 ""
+
+# game/dialogues/erictalk.rpy:428
+translate english Eric_talk_about_Lisa_1_ace5059d:
+
+    # Max_09 "Нет, просто мне нужно больше времени..."
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:429
+translate english Eric_talk_about_Lisa_1_193369f8:
+
+    # Eric_01 "Теперь уже нет. Я сам её научу её всему, что мне нужно."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:430
+translate english Eric_talk_about_Lisa_1_eca5fc80:
+
+    # Max_07 "А что я получу за свои старания?!"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:431
+translate english Eric_talk_about_Lisa_1_e0b0ad2d:
+
+    # Eric_04 "Старания!? Какие ещё старания? Ладно, Макс, в качестве жеста доброй воли ты можешь подглядывать за нашими с Лизой... уроками. В комнате Ани... Я так и быть, позабочусь, чтобы тебя не заметили."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:432
+translate english Eric_talk_about_Lisa_1_ac9c0fdd:
+
+    # Max_01 "Неплохо. А может..."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:433
+translate english Eric_talk_about_Lisa_1_5952ea2d:
+
+    # Eric_06 "Нет, Макс! Только это!"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:434
+translate english Eric_talk_about_Lisa_1_2c3dbd88:
+
+    # Max_00 "Ну ладно."
+    Max_00 ""
+
+translate english strings:
+
+    # game/dialogues/erictalk.rpy:322
+    old "Нет, можешь обучать... (продолжение дружбы)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:322
+    old "Нет, можешь обучать... (попытка подружиться)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:322
+    old "А ей не рановато? (попытка выиграть время)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:322
+    old "Лизу тебе не отдам! (расторжение дружбы)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:322
+    old "Лизу тебе не отдам! (продолжение вражды)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:337
+    old "Бонус в отношении Анны"
+    new ""
+
+    # game/dialogues/erictalk.rpy:337
+    old "Бонус в отношении Киры"
+    new ""
+
+    # game/dialogues/erictalk.rpy:337
+    old "Бонус в отношении Алисы"
+    new ""
+

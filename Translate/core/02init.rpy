@@ -398,3 +398,15 @@ translate english strings:
     old "Прикупил для тебя немного сладенького!"
     new "I bought you some sweets!"
 
+# TODO: Translation updated at 2021-01-02 23:12
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Рассказывай, что делали?"
+    new ""
+
+    # game/core/02init.rpy:100
+    old "Ну так и чему же тебя учили?"
+    new ""
+

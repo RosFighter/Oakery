@@ -110,3 +110,11 @@ translate english strings:
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Правда, я почти ничего не увидел, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
     new "I gave Alice a cute lingerie set. She loved it. She even tried it on in front of me! I didn't get to see much, but the experience was very exciting anyway... And the best part is, she hinted she'd be willing to wear something even more revealing!"
 
+# TODO: Translation updated at 2021-01-02 23:12
+
+translate english strings:
+
+    # game/core/core.rpy:1194
+    old "А что если я не буду помогать Лизе какое-то время? Или несколько раз сделаю ошибку в её работе?"
+    new ""
+
