@@ -404,9 +404,9 @@ translate english strings:
 
     # game/core/02init.rpy:100
     old "Рассказывай, что делали?"
-    new ""
+    new "Tell me, what did you do?"
 
     # game/core/02init.rpy:100
     old "Ну так и чему же тебя учили?"
-    new ""
+    new "So what did they teach you?"
 
