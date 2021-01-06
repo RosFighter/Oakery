@@ -192,19 +192,19 @@ translate english cam0_eric_ann_fucking_96882403:
 translate english cam0_sexed_lisa_6af6ccf5:
 
     # Max_08 "{i}Жаль камеры не передают звук. Нужно будет обязательно спросить Лизу, о чём они разговаривали!{/i}"
-    Max_08 ""
+    Max_08 "{i}Too bad the cameras don't pick up sound. I'll have to ask Lisa what they were talking about!{/i}"
 
 # game/events/eric_cam.rpy:227
 translate english cam0_sexed_lisa_50cbb4f3:
 
     # Max_07 "{i}Лиза пришла на урок к маме и Эрику. Посмотрим, что будет...{/i}"
-    Max_07 ""
+    Max_07 "{i}Lisa came to class. Let's see what happens...{/i}"
 
 # game/events/eric_cam.rpy:235
 translate english cam0_sexed_lisa_e3364532:
 
     # Max_09 "{i}Вот же Эрик! Член он свой вывесил... Интересно, что они ей там рассказывают?{/i}"
-    Max_09 ""
+    Max_09 "{i}There's Eric! He's got his dick out... I wonder what they're telling her?{/i}"
 
 # game/events/eric_cam.rpy:243
 translate english cam0_sexed_lisa_e183afcf:
@@ -216,53 +216,53 @@ translate english cam0_sexed_lisa_e183afcf:
 translate english cam0_sexed_lisa_50cbb4f3_1:
 
     # Max_07 "{i}Лиза пришла на урок к маме и Эрику. Посмотрим, что будет...{/i}"
-    Max_07 ""
+    Max_07 "{i}Yeah, it's a handjob... Eric talked Mom into all this...{/i}"
 
 # game/events/eric_cam.rpy:261
 translate english cam0_sexed_lisa_129292f8:
 
     # Max_09 "{i}Мама при Лизе уже надрачивает Эрику как будто так и надо! Интересно, что они ей там рассказывают при этом?{/i}"
-    Max_09 ""
+    Max_09 "{i}Mom's already jerking off to Eric in front of Lisa, like she should! I wonder what they're telling her?{/i}"
 
 # game/events/eric_cam.rpy:269
 translate english cam0_sexed_lisa_c0f967dd:
 
     # Max_08 "{i}Ага, мама повышает градус показом своей шикарной груди... И уговорил же Эрик маму на всё это!{/i}"
-    Max_08 ""
+    Max_08 "{i}Yeah, Mom's turning up the heat with her gorgeous tits... Eric talked Mom into all this!{/i}"
 
 # game/events/eric_cam.rpy:279
 translate english cam0_sexed_lisa_75260f41:
 
     # Max_00 "{i}Лиза пришла на урок к маме и Эрику. Посмотрим, что будет...{/i}"
-    Max_00 ""
+    Max_00 "{i}Lisa came to class. Let's see what happens...{/i}"
 
 # game/events/eric_cam.rpy:287
 translate english cam0_sexed_lisa_8308f63a:
 
     # Max_00 "{i}Подрочить Эрику на глазах Лизы в образовательных целях? Конечно, обычное дело, не обращайте внимания... Интересно, что они ей там рассказывают при этом?{/i}"
-    Max_00 ""
+    Max_00 "{i}Jerking off Eric in front of Lisa for educational purposes? Sure... Whatever. I wonder how they're explaining this to her?{/i}"
 
 # game/events/eric_cam.rpy:295
 translate english cam0_sexed_lisa_40f36977:
 
     # Max_00 "{i}О, от такого я бы не отказался! Только от одних мыслей о маминых руках, нежно массирующих мои шары, хочется кончить...{/i}"
-    Max_00 ""
+    Max_00 "{i}Oh, I wouldn't say no to that! Just the thought of Mom's hands gently massaging my balls makes me want to cum...{/i}"
 
 # game/events/eric_cam.rpy:305
 translate english cam0_sexed_lisa_75260f41_1:
 
     # Max_00 "{i}Лиза пришла на урок к маме и Эрику. Посмотрим, что будет...{/i}"
-    Max_00 ""
+    Max_00 "{i}Lisa came to class. Let's see what happens...{/i}"
 
 # game/events/eric_cam.rpy:313
 translate english cam0_sexed_lisa_3a79a5f0:
 
     # Max_00 "{i}Всё дрочат и дрочат... Видимо, закрепляют материал.{/i}"
-    Max_00 ""
+    Max_00 "{i}She keeps jerking him off.... I guess it's to go over the material again.{/i}"
 
 # game/events/eric_cam.rpy:321
 translate english cam0_sexed_lisa_cd87d381:
 
     # Max_00 "{i}О, Эрик не выдержал и кончил... Хотя, вряд ли. Скорее всего, они решили показать Лизе для чего это всё было нужно.{/i}"
-    Max_00 ""
+    Max_00 "{i}Oh, Eric couldn't take it anymore and came... I think this has been a great learning experience for Lisa.{/i}"
 
