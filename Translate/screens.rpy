@@ -380,21 +380,21 @@ translate english strings:
 
     # game/screens.rpy:909
     old "Громкость музыки"
-    new ""
+    new "Music volume"
 
     # game/screens.rpy:916
     old "Громкость звуков"
-    new ""
+    new "Sound volume"
 
     # game/screens.rpy:922
     old "Тест"
-    new ""
+    new "Test"
 
     # game/screens.rpy:926
     old "Громкость голоса"
-    new ""
+    new "Voice volume"
 
     # game/screens.rpy:937
     old "Без звука"
-    new ""
+    new "No sound"
 
