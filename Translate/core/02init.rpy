@@ -416,13 +416,13 @@ translate english strings:
 
     # game/core/02init.rpy:100
     old "Что новенького было на уроке?"
-    new ""
+    new "Learn anything new in class?"
 
     # game/core/02init.rpy:100
     old "Что нового мама с Эриком тебе рассказали?"
-    new ""
+    new "Learn anything new from Mom and Eric?"
 
     # game/core/02init.rpy:100
     old "Что нового узнала на уроке у мамы и Эрика?"
-    new ""
+    new "What did you learn from Mom and Eric?"
 
