@@ -868,3 +868,71 @@ translate english strings:
     old "Бонус в отношении Алисы"
     new "Bonus with Alice"
 
+# TODO: Translation updated at 2021-01-09 22:50
+
+# game/dialogues/erictalk.rpy:333
+translate english Eric_talk_about_Lisa_0_832a57f9:
+
+    # Eric_05 "Вот это ты хорошо сделал, Макс! Мне меньше работы будет... А с тебя содействие на счёт Лизы, если вдруг оно мне понадобится. Она теперь моя, так что больше ничему её не учи, я сделаю это сам."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:337
+translate english Eric_talk_about_Lisa_0_bfb417f6:
+
+    # Eric_01 "Ладно, это будет справедливо. Но давай обсудим это в другой раз? Ты как раз хорошенько подумаешь, чего хочешь. И когда надумаешь, то подходи, только смотри чтобы мы были наедине."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:338
+translate english Eric_talk_about_Lisa_0_108fbf0f:
+
+    # Max_07 "Договорились. Но подглядывать же можно будет... за тем, чему ты будешь её учить?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:339
+translate english Eric_talk_about_Lisa_0_c8565167:
+
+    # Eric_02 "Ну если тебе интересно, то да. Ты можешь подглядывать за нашими с Лизой... уроками. В комнате Ани... Я так и быть, позабочусь, чтобы тебя не заметили."
+    Eric_02 ""
+
+# game/dialogues/erictalk.rpy:340
+translate english Eric_talk_about_Lisa_0_00a3aa0c:
+
+    # Max_02 "О, класс! Обязательно гляну..."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:355
+translate english Eric_talk_about_Lisa_0_7dfb73a0:
+
+    # Eric_05 "Вот это ты хорошо сделал, Макс! Мне меньше работы будет... А с тебя содействие на счёт Лизы, если вдруг оно мне понадобится, раз уж мы теперь друзья... Она теперь моя, так что больше ничему её не учи, я сделаю это сам."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:395
+translate english Eric_talk_about_Lisa_0_5ad988a0:
+
+    # Eric_13 "И Макс, если хочешь отправиться в лагерь с целыми яйцами, то даже не пытайся настраивать Лизу против меня! Во-первых, у тебя не получится, а во-вторых, я об этом узнаю..."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:396
+translate english Eric_talk_about_Lisa_0_cf7c26b6:
+
+    # Max_17 "Да пошёл ты!"
+    Max_17 ""
+
+# game/dialogues/erictalk.rpy:407
+translate english Eric_talk_about_Lisa_0_5ad988a0_1:
+
+    # Eric_13 "И Макс, если хочешь отправиться в лагерь с целыми яйцами, то даже не пытайся настраивать Лизу против меня! Во-первых, у тебя не получится, а во-вторых, я об этом узнаю..."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:408
+translate english Eric_talk_about_Lisa_0_cf7c26b6_1:
+
+    # Max_17 "Да пошёл ты!"
+    Max_17 ""
+
+# game/dialogues/erictalk.rpy:428
+translate english Eric_talk_about_Lisa_1_70a63eda:
+
+    # Eric_01 "Теперь уже нет. Она теперь моя, так что больше ничему её не учи, я сделаю это сам."
+    Eric_01 ""
+

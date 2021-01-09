@@ -666,7 +666,7 @@ translate english lisa_romantic_movie_0_8a55ebad:
 translate english lisa_romantic_movie_0_9fe8cbf9:
 
     # Max_07 "{i}( Да уж, это конечно намного лучше, чем получать при всех от мамы по заднице, но так скучно! Хотя бы с сестрёнкой рядом на одной кровати полежу. А смотреть можно и вполглаза... ){/i}"
-    Max_07 "(i)Well, it's a lot better than getting spanked in front of everybody, but it's so boring! At least I get to share a bed with Lisa, who I get to keep an eye on... ){/i}"
+    Max_07 "{i}( Well, it's a lot better than getting spanked in front of everybody, but it's so boring! At least I get to share a bed with Lisa, who I get to keep an eye on... ){/i}"
 
 # game/events/lisa.rpy:749
 translate english lisa_romantic_movie_0_60738184:
@@ -1080,7 +1080,7 @@ translate english lisa_horor_movie_0_0302cbc0:
 translate english lisa_horor_movie_0_46ea63fd:
 
     # Lisa_03 "Я думала посмотреть все части \"Кошмара на улице Вязов\" или \"Пятницы 13-е\". Мне в школе посоветовали. Но выбирать тебе, ты же будешь бояться." nointeract
-    Lisa_03 "I was thinking about watching all the parts to A Nightmare on Elm Street or Friday the 13th. I heard about them at school. But it's your choice, because you're gonna be the one who's scared." nointeract
+    Lisa_03 "I was thinking about watching all the parts to \"A Nightmare on Elm Street\" or \"Friday the 13th\". I heard about them at school. But it's your choice, because you're gonna be the one who's scared." nointeract
 
 # game/events/lisa.rpy:892
 translate english lisa_horor_movie_0_d62d1fc8:
@@ -1398,11 +1398,11 @@ translate english strings:
 
     # game/events/lisa.rpy:881
     old "{i}смотреть \"Кошмар на улице Вязов\"{/i}"
-    new "{i}Watch \ "A Nightmare on Elm Street \"{/ i}"
+    new "{i}Watch \"A Nightmare on Elm Street\"{/i}"
 
     # game/events/lisa.rpy:881
     old "{i}смотреть \"Пятница 13-е\"{/i}"
-    new "{i}Watch \ "Friday the 13th \"{/ i}"
+    new "{i}Watch \"Friday the 13th\"{/i}"
 
     # game/events/lisa.rpy:953
     old "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")"
@@ -1414,15 +1414,15 @@ translate english strings:
 
     # game/events/lisa.rpy:979
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Кошмар на улице Вязов\")"
-    new "Then let's keep watching... (Continue the Nightmare on Elm Street movie series)"
+    new "Then let's keep watching... (Continue \"the Nightmare on Elm Street\" movie series)"
 
     # game/events/lisa.rpy:979
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Пятница 13-е\")"
-    new "Then let's keep watching... (Continue the Friday the 13th movie series)"
+    new "Then let's keep watching... (Continue \"the Friday the 13th\" movie series)"
 
     # game/events/lisa.rpy:1033
     old "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}"
-    new "{i}Hold back{/i} \n{color = [_ ch3.col]}(Sexual experience. Chance: [_ch3.vis]) {/color}"
+    new "{i}Hold back{/i} \n{color = [_ch3.col]}(Sexual experience. Chance: [_ch3.vis]){/color}"
 
     # game/events/lisa.rpy:1033
     old "{i}да пофиг!{/i}"
@@ -1430,9 +1430,8 @@ translate english strings:
 
     # game/events/lisa.rpy:1058
     old "{i}поцеловать Лизу{/i}"
-    new "{i}Kiss Lisa {/i}"
+    new "{i}Kiss Lisa{/i}"
 
     # game/events/lisa.rpy:1058
     old "Просто иди и всё..."
     new "Just go, that's all..."
-

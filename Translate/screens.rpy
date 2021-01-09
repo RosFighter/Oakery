@@ -396,5 +396,5 @@ translate english strings:
 
     # game/screens.rpy:937
     old "Без звука"
-    new "No sound"
+    new "Mute"
 

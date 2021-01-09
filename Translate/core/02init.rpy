@@ -410,3 +410,19 @@ translate english strings:
     old "Ну так и чему же тебя учили?"
     new "So what did they teach you?"
 
+# TODO: Translation updated at 2021-01-09 22:50
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Что новенького было на уроке?"
+    new ""
+
+    # game/core/02init.rpy:100
+    old "Что нового мама с Эриком тебе рассказали?"
+    new ""
+
+    # game/core/02init.rpy:100
+    old "Что нового узнала на уроке у мамы и Эрика?"
+    new ""
+

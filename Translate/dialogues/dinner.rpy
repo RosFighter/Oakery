@@ -2123,7 +2123,7 @@ translate english dinner_ab_earn_90e77c73:
 
     # Ann_02 "Кстати, об этом... Завтра, когда у нас будет гостить Эрик, зайди в мою комнату часов в 10 вечера. Нам с Эриком нужно с тобой поговорить кое о чём."
     Ann_02 "That reminds me, Lisa... When Eric visits tomorrow, come to my room at about 10 p.m. We would like to talk to you about something."
-	
+
 # game/dialogues/dinner.rpy:725
 translate english dinner_ab_earn_9767eb8d:
 
@@ -2147,4 +2147,3 @@ translate english dinner_ab_earn_76177f7d:
 
     # Max_01 "Да, давайте."
     Max_01 "Alright."
-

@@ -1240,7 +1240,7 @@ translate english strings:
 translate english sexed_lisa_f555cf08:
 
     # Max_09 "{i}Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё и Эрик. Может хоть через камеру посмотреть, что там происходит?{/i}" nointeract
-    Max_09 "I wonder why Mom called Lisa to her room? Eric's with her. Maybe I can use a camera to see what's going on?" nointeract
+    Max_09 "{i}I wonder why Mom called Lisa to her room? Eric's with her. Maybe I can use a camera to see what's going on?{/i}" nointeract
 
 # game/events/eric.rpy:930
 translate english sexed_lisa_27c358da:
@@ -1270,7 +1270,7 @@ translate english sexed_lisa_95136286:
 translate english sexed_lisa_lesson_0_4fdcaa4a:
 
     # Max_01 "{i}Отлично! Мне как раз всё видно в зеркале. Посмотрим, чему мою сестрёнку будут учить эти извращенцы...{/i}"
-    Max_01 "Great! I can see everything in the mirror. Let's see what these perverts are teaching my sister."
+    Max_01 "{i}Great! I can see everything in the mirror. Let's see what these perverts are teaching my sister.{/i}"
 
 # game/events/eric.rpy:981
 translate english sexed_lisa_lesson_0_c3153c91:
@@ -1318,7 +1318,7 @@ translate english sexed_lisa_lesson_0_71db625e:
 translate english sexed_lisa_lesson_0_5bf48dbc:
 
     # Max_08 "{i}Офигеть, что творят! Мама надрачивает Эрику прямо на глазах у Лизы, которую она так всё время оберегала. Да, хорошо Эрик над ней поработал...{/i}"
-    Max_08 "What the hell is going on? Mom's jerking off Eric right in front of Lisa, even though she's been so protective of her! Yeah, Eric did a good job on her...{/i}"
+    Max_08 "{i}What the hell is going on? Mom's jerking off Eric right in front of Lisa, even though she's been so protective of her! Yeah, Eric did a good job on her...{/i}"
 
 # game/events/eric.rpy:1005
 translate english sexed_lisa_lesson_0_84fe0924:
@@ -1349,7 +1349,7 @@ translate english sexed_lisa_lesson_0_57ac6b09:
 
     # Lisa_10 "Ой, так я делать не буду!"
     Lisa_10 "Oh, ok, I'll be gentle!"
-	
+
 # game/events/eric.rpy:1010
 translate english sexed_lisa_lesson_0_93c90ce4:
 
@@ -1384,7 +1384,7 @@ translate english sexed_lisa_lesson_0_2874168e:
 translate english sexed_lisa_lesson_1_bcb98a26:
 
     # Max_01 "{i}Посмотрим, чему мою сестрёнку будут сегодня учить...{/i}"
-    Max_01 "Let's see what my little sister is learning today...{/i}"
+    Max_01 "{i}Let's see what my little sister is learning today...{/i}"
 
 # game/events/eric.rpy:1032
 translate english sexed_lisa_lesson_1_87d80caa:
@@ -1420,7 +1420,7 @@ translate english sexed_lisa_lesson_1_fa0a2f77:
 translate english sexed_lisa_lesson_1_56c44793:
 
     # Max_03 "{i}О да, мам! Мне бы очень понравилось, если бы ты подрочила мне обнажив свою сочную и упругую грудь...{/i}"
-    Max_03 "{i} That's right Mom! I would really like it if you would jerk me off while showing off your fat tits...{/ i}"
+    Max_03 "{i} That's right Mom! I would really like it if you would jerk me off while showing off your fat tits...{/i}"
 
 # game/events/eric.rpy:1054
 translate english sexed_lisa_lesson_1_1d6ac237:
@@ -1721,4 +1721,396 @@ translate english strings:
     # game/events/eric.rpy:915
     old "{i}посмотреть через камеру{/i}"
     new "{i}Look through the camera{/i}"
+
+# TODO: Translation updated at 2021-01-09 22:50
+
+# game/events/eric.rpy:915
+translate english sexed_lisa_c6d17e9e:
+
+    # Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё и Эрик. Может хоть через камеру посмотреть, что там происходит? ){/i}" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:930
+translate english sexed_lisa_3bf94e65:
+
+    # Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё Эрик. Если бы я установил камеру в этой комнате, то сейчас смог бы всё увидеть, а так придётся ждать, пока Лиза вернётся, чтобы всё узнать. ){/i}" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:938
+translate english sexed_lisa_27707318:
+
+    # Max_07 "{i}( Эрик сказал, что всё устроит так, чтобы меня не заметили, когда я буду подглядывать. Сейчас посмотрим... ){/i}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:952
+translate english sexed_lisa_b37af91c:
+
+    # Max_09 "{i}( Интересно, чем они там с Лизой занимаются?! Можно бы было попробовать подглядеть через окно, но не стоит давать Эрику шанс меня унизить или ещё чего хуже. Лучше посмотреть через камеру... ){/i}" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:968
+translate english sexed_lisa_5dfb44a6:
+
+    # Max_09 "{i}( Интересно, чем они там с Лизой занимаются?! Можно бы было попробовать подглядеть через окно, но не стоит давать Эрику шанс меня унизить или ещё чего хуже. Придётся ждать, пока Лиза вернётся и расскажет сама, хотя не лишним и будет камеру в мамину комнату поставить. ){/i}" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:980
+translate english sexed_lisa_lesson_0_3242e036:
+
+    # Max_01 "{i}( Отлично! Мне как раз всё видно в зеркале. Посмотрим, чему мою сестрёнку будут учить эти извращенцы... ){/i}"
+    Max_01 ""
+
+# game/events/eric.rpy:999
+translate english sexed_lisa_lesson_0_c156074c:
+
+    # Max_08 "{i}( Офигеть, что творят! Мама надрачивает Эрику прямо на глазах у Лизы, которую она так всё время оберегала. Да, хорошо Эрик над ней поработал... ){/i}"
+    Max_08 ""
+
+# game/events/eric.rpy:1010
+translate english sexed_lisa_lesson_0_863e16ef:
+
+    # Max_02 "{i}( Да, как же классно бы было, если бы моя младшая сестрёнка запустила свои нежные ручки в мои шорты и неспеша поласкала мой член... Ухх! ){/i}"
+    Max_02 ""
+
+# game/events/eric.rpy:1020
+translate english sexed_lisa_lesson_0_25611741:
+
+    # Max_07 "{i}( О, пора мне валить к себе... ){/i}"
+    Max_07 ""
+
+# game/events/eric.rpy:1031
+translate english sexed_lisa_lesson_1_f2ec3c5f:
+
+    # Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
+    Max_01 ""
+
+# game/events/eric.rpy:1048
+translate english sexed_lisa_lesson_1_ac7ee8df:
+
+    # Max_03 "{i}( О да, мам! Мне бы очень понравилось, если бы ты подрочила мне обнажив свою сочную и упругую грудь... ){/i}"
+    Max_03 ""
+
+# game/events/eric.rpy:1066
+translate english sexed_lisa_lesson_1_28fff240:
+
+    # Max_04 "{i}( Как по мне, а грудь у Лизы весьма симпатичная. Не сравнится с маминой, но они все хороши, по-своему... ){/i}"
+    Max_04 ""
+
+# game/events/eric.rpy:1083
+translate english sexed_lisa_lesson_1_e2699e4d:
+
+    # Max_07 "{i}( С интересом... Да уж, а ещё меня называют в этом доме извращенцем! Хотя, если бы не Эрик... ){/i}"
+    Max_07 ""
+
+# game/events/eric.rpy:1094
+translate english sexed_lisa_lesson_2_f2ec3c5f:
+
+    # Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
+    Max_01 ""
+
+# game/events/eric.rpy:1095
+translate english sexed_lisa_lesson_2_4668a125:
+
+    # Ann_02 "... В дополнение к тому, что ты уже видела, не стоит забывать и ещё кое о чём. Дорогой, встань. Так Лизе будет лучше видно..."
+    Ann_02 ""
+
+# game/events/eric.rpy:1096
+translate english sexed_lisa_lesson_2_1340ebb1:
+
+    # Eric_01 "Конечно, Ань, сейчас."
+    Eric_01 ""
+
+# game/events/eric.rpy:1103
+translate english sexed_lisa_lesson_2_24352377:
+
+    # Ann_04 "Так вот, Лиза, во время стимуляции члена можно ещё ласкать яички. Делать это нужно нежно и аккуратно."
+    Ann_04 ""
+
+# game/events/eric.rpy:1104
+translate english sexed_lisa_lesson_2_48f4e3fa:
+
+    # Lisa_10 "Как много всяких нюансов..."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1105
+translate english sexed_lisa_lesson_2_2fff7579:
+
+    # Ann_05 "Как и в любом процессе. Если знаешь как и к чему прикасаться, то принесёшь массу удовольствия мужчине. Вот, посмотри..."
+    Ann_05 ""
+
+# game/events/eric.rpy:1112
+translate english sexed_lisa_lesson_2_e3d29cb3:
+
+    # Lisa_02 "Значит, всё делать так же как и с членом?"
+    Lisa_02 ""
+
+# game/events/eric.rpy:1113
+translate english sexed_lisa_lesson_2_078b2cba:
+
+    # Ann_07 "Да, разве что член нужно держать крепко, а вот яичкам достаточно лёгких прикосновений, чтобы мужчине стало невероятно хорошо. Так ведь, дорогой?"
+    Ann_07 ""
+
+# game/events/eric.rpy:1114
+translate english sexed_lisa_lesson_2_fba6f0fd:
+
+    # Eric_07 "О да! Невероятно хорошо - это твоя мама верно сказала... Кажется, она всего лишь легонько водит по ним своими пальчиками, но ощущения... непередаваемые..."
+    Eric_07 ""
+
+# game/events/eric.rpy:1120
+translate english sexed_lisa_lesson_2_8670f664:
+
+    # Max_10 "{i}( Эй! Я тоже хочу, чтобы мне яички ласкали! Судя по млеющей физиономии Эрика - это как минимум очень блаженно. ){/i}"
+    Max_10 ""
+
+# game/events/eric.rpy:1121
+translate english sexed_lisa_lesson_2_f4970fe1:
+
+    # Lisa_03 "Круто! А как долго это всё надо делать?"
+    Lisa_03 ""
+
+# game/events/eric.rpy:1122
+translate english sexed_lisa_lesson_2_d332b109:
+
+    # Ann_08 "А об этом мы поговорим уже на следующем уроке, дочка. Заодно и пробежимся ещё раз по всем моментам, которые я тебе показывала. Не хочется, чтобы я тут напрасно распиналась."
+    Ann_08 ""
+
+# game/events/eric.rpy:1123
+translate english sexed_lisa_lesson_2_d3b4b1de:
+
+    # Lisa_10 "Ну хорошо. А я надеялась, что хоть здесь экзаменов не будет."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1124
+translate english sexed_lisa_lesson_2_f429540b:
+
+    # Ann_04 "Тут ничего сложного нет. Так что не волнуйся."
+    Ann_04 ""
+
+# game/events/eric.rpy:1125
+translate english sexed_lisa_lesson_2_517ed876:
+
+    # Max_07 "{i}( Экзамен... Тянет на какую-то ролевую игру. Хорошо хоть без костюмов! Хотя маму я бы не прочь увидеть в строгом, но сексуальном костюме... ){/i}"
+    Max_07 ""
+
+# game/events/eric.rpy:1136
+translate english sexed_lisa_lesson_3_fe9c9f59:
+
+    # Max_01 "{i}( И чему же мою сестрёнку будут сегодня учить... ){/i}"
+    Max_01 ""
+
+# game/events/eric.rpy:1137
+translate english sexed_lisa_lesson_3_b8ee0608:
+
+    # Ann_02 "... Посмотрим, всё ли ты усвоила из наших уроков. Что и как мне нужно сделать, чтобы доставить мужчине удовольствие?"
+    Ann_02 ""
+
+# game/events/eric.rpy:1138
+translate english sexed_lisa_lesson_3_19a9a059:
+
+    # Lisa_10 "Ой, мам, сейчас... Так... Нужно взять его член крепко, но нежно и ласкать, да?"
+    Lisa_10 ""
+
+# game/events/eric.rpy:1142
+translate english sexed_lisa_lesson_3_cf0e7b09:
+
+    # Ann_04 "Верно, дорогая. Я снова покажу всё ещё раз, чтобы мы этот этап стимулирования мужского члена руками закончили и могли двигаться дальше."
+    Ann_04 ""
+
+# game/events/eric.rpy:1143
+translate english sexed_lisa_lesson_3_957e747c:
+
+    # Lisa_11 "А будет что-то ещё?! Ещё уроки?"
+    Lisa_11 ""
+
+# game/events/eric.rpy:1144
+translate english sexed_lisa_lesson_3_0db729e3:
+
+    # Ann_05 "Да, дочка. Это не единственный способ доставить мужчине удовольствие."
+    Ann_05 ""
+
+# game/events/eric.rpy:1145
+translate english sexed_lisa_lesson_3_18663d6a:
+
+    # Lisa_02 "А как ещё?"
+    Lisa_02 ""
+
+# game/events/eric.rpy:1149
+translate english sexed_lisa_lesson_3_786cee35:
+
+    # Max_08 "{i}( Мама что, и отсасывать собирается Эрику при Лизе?! Да нет... Хотя, уже можно не удивляться чему-то такому... ){/i}"
+    Max_08 ""
+
+# game/events/eric.rpy:1150
+translate english sexed_lisa_lesson_3_9361d9ee:
+
+    # Ann_12 "Лиза, не сегодня. Сегодня у нас что?"
+    Ann_12 ""
+
+# game/events/eric.rpy:1151
+translate english sexed_lisa_lesson_3_675c30b2:
+
+    # Lisa_09 "Да, я поняла, закрепление пройденного материала."
+    Lisa_09 ""
+
+# game/events/eric.rpy:1157
+translate english sexed_lisa_lesson_3_d212c0f3:
+
+    # Ann_07 "Вот и славно. Как я могу ещё больше возбудить мужчину во время стимуляции руками?"
+    Ann_07 ""
+
+# game/events/eric.rpy:1158
+translate english sexed_lisa_lesson_3_bda10a5f:
+
+    # Lisa_01 "Можно обнажить грудь! Я это помню..."
+    Lisa_01 ""
+
+# game/events/eric.rpy:1165
+translate english sexed_lisa_lesson_3_a38562a0:
+
+    # Ann_08 "Верно. Поводить его членом по своей груди тоже будет не лишним."
+    Ann_08 ""
+
+# game/events/eric.rpy:1166
+translate english sexed_lisa_lesson_3_5816beef:
+
+    # Lisa_10 "Ой, забыла. Точно, ты говорила о том, чтобы немного подразнить этим мужчину."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1172
+translate english sexed_lisa_lesson_3_9fd70478:
+
+    # Ann_02 "Что ещё мы можем делать?"
+    Ann_02 ""
+
+# game/events/eric.rpy:1173
+translate english sexed_lisa_lesson_3_00b63f32:
+
+    # Lisa_02 "Сейчас... Ах да, ласкать яички!"
+    Lisa_02 ""
+
+# game/events/eric.rpy:1180
+translate english sexed_lisa_lesson_3_59d1a715:
+
+    # Ann_04 "И как надо это делать?"
+    Ann_04 ""
+
+# game/events/eric.rpy:1181
+translate english sexed_lisa_lesson_3_cfad66eb:
+
+    # Lisa_10 "Эээ... Нежно и аккуратно. Легонько массировать... Верно, мам?"
+    Lisa_10 ""
+
+# game/events/eric.rpy:1187
+translate english sexed_lisa_lesson_3_49a44ec8:
+
+    # Ann_05 "Верно, моя дорогая. Ты спрашивала в прошлый раз, как долго это нужно делать. Так вот, этой стимуляцией мужчину нужно довести до оргазма, когда он кончает от наслаждения."
+    Ann_05 ""
+
+# game/events/eric.rpy:1188
+translate english sexed_lisa_lesson_3_dd130e24:
+
+    # Lisa_03 "О, это как?!"
+    Lisa_03 ""
+
+# game/events/eric.rpy:1189
+translate english sexed_lisa_lesson_3_02816cbb:
+
+    # Ann_07 "Уже скоро увидишь. Довести мужчину до оргазма не сложно, не то что нас, женщин. Эрик, сегодня нужно показать Лизе как мужчины кончают, так что не сдерживайся..."
+    Ann_07 ""
+
+# game/events/eric.rpy:1190
+translate english sexed_lisa_lesson_3_705d7946:
+
+    # Eric_04 "Да, я уже близок к этому... Давай, детка, поработай немного быстрее и жёстче. О да... То, что надо..."
+    Eric_04 ""
+
+# game/events/eric.rpy:1194
+translate english sexed_lisa_lesson_3_53812ca7:
+
+    # Max_10 "{i}( Эй, вы там на мою сестрёнку только не попадите! Ладно вы люди взрослые, но при Лизе то поаккуратнее будьте... ){/i}"
+    Max_10 ""
+
+# game/events/eric.rpy:1195
+translate english sexed_lisa_lesson_3_d99c9cbc:
+
+    # Ann_06 "Вот так, Лиза, мужчины и кончают... Лучше при себе иметь влажные салфетки, чтобы привести всё в порядок после этого."
+    Ann_06 ""
+
+# game/events/eric.rpy:1196
+translate english sexed_lisa_lesson_3_0bb761d3:
+
+    # Lisa_13 "Да уж, а никак нельзя избежать этого... беспорядка?"
+    Lisa_13 ""
+
+# game/events/eric.rpy:1197
+translate english sexed_lisa_lesson_3_bb73c8db:
+
+    # Ann_14 "Ну, куда бы мужчина не кончил, всё равно придётся прибраться за собой. Можно ещё конечно... Может ей ещё рано знать о таком, дорогой?"
+    Ann_14 ""
+
+# game/events/eric.rpy:1198
+translate english sexed_lisa_lesson_3_455ad0f2:
+
+    # Eric_06 "О том, что можно принять всю сперму в рот и проглотить? Что ты, я думаю это самый подходящий момент!"
+    Eric_06 ""
+
+# game/events/eric.rpy:1204
+translate english sexed_lisa_lesson_3_60ac646f:
+
+    # Lisa_11 "В рот?! И проглотить! Ой, фу-фу-фу! Нет, уж лучше салфетки, потому что это даже звучит противно..."
+    Lisa_11 ""
+
+# game/events/eric.rpy:1205
+translate english sexed_lisa_lesson_3_13aa06a4:
+
+    # Ann_01 "Пожалуй, я с тобой соглашусь, дочка. По крайней мере, пока в твоей жизни не появится особенный мужчина."
+    Ann_01 ""
+
+# game/events/eric.rpy:1206
+translate english sexed_lisa_lesson_3_a14ce656:
+
+    # Lisa_13 "Всё равно, выглядит и звучит это всё ну так себе, если не сказать похуже!"
+    Lisa_13 ""
+
+# game/events/eric.rpy:1207
+translate english sexed_lisa_lesson_3_be7bf484:
+
+    # Eric_02 "Зато, теперь ты знаешь, как оно всё есть без прикрас. И теперь ты готова к дальнейшим урокам..."
+    Eric_02 ""
+
+# game/events/eric.rpy:1208
+translate english sexed_lisa_lesson_3_b6d6c533:
+
+    # Ann_13 "Эрик, давай не спешить, пусть у неё это хоть осядет в голове. И вообще, лучше всё ещё раз обсудить, прежде чем показывать ей такое."
+    Ann_13 ""
+
+# game/events/eric.rpy:1209
+translate english sexed_lisa_lesson_3_24f6a637:
+
+    # Lisa_02 "А о чём таком вы говорите?"
+    Lisa_02 ""
+
+# game/events/eric.rpy:1210
+translate english sexed_lisa_lesson_3_8da9317f:
+
+    # Ann_12 "Давай не сейчас. Ступай к себе, на сегодня достаточно. Мы тебе скажем, если решим продолжить эти... уроки."
+    Ann_12 ""
+
+# game/events/eric.rpy:1211
+translate english sexed_lisa_lesson_3_93463eeb:
+
+    # Lisa_09 "Мам, ты сказала, что мальчикам сложнее сделать нам приятно там внизу, да? А почему?"
+    Lisa_09 ""
+
+# game/events/eric.rpy:1212
+translate english sexed_lisa_lesson_3_a0af2116:
+
+    # Eric_09 "Хватит на сегодня вопросов. Давай беги к себе, Лиза. У взрослых ещё есть дела."
+    Eric_09 ""
+
+# game/events/eric.rpy:1213
+translate english sexed_lisa_lesson_3_762fcd5f:
+
+    # Lisa_01 "Хорошо. Ну, я побежала..."
+    Lisa_01 ""
 
