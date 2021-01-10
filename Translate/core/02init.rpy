@@ -416,7 +416,7 @@ translate english strings:
 
     # game/core/02init.rpy:100
     old "Что новенького было на уроке?"
-    new "Learn anything new in class?"
+    new "What have you been learning from your lessons?"
 
     # game/core/02init.rpy:100
     old "Что нового мама с Эриком тебе рассказали?"
