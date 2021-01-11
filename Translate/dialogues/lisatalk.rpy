@@ -8070,417 +8070,417 @@ translate english lisa_about_ae_sexed1_07023c28:
 translate english lisa_about_ae_sexed2_8e2a71cd:
 
     # Lisa_09 "Да так, контрольная работа очередная. Но я вроде большую часть там решила. Надеюсь, правильно..."
-    Lisa_09 ""
+    Lisa_09 "It's just another test. I hope I got most of it right..."
 
 # game/dialogues/lisatalk.rpy:3447
 translate english lisa_about_ae_sexed2_1279d157:
 
     # Max_07 "Это хорошо, но я немного о другом уроке..."
-    Max_07 ""
+    Max_07 "That's good, but I'm talking about a different lesson..."
 
 # game/dialogues/lisatalk.rpy:3448
 translate english lisa_about_ae_sexed2_cb1b6768:
 
     # Lisa_01 "А, ты про урок у мамы и Эрика! Ой, ну там, было кое-что..."
-    Lisa_01 ""
+    Lisa_01 "Oh, you mean Mom and Eric's class! Oh, well, there was something..."
 
 # game/dialogues/lisatalk.rpy:3449
 translate english lisa_about_ae_sexed2_27613305:
 
     # Max_09 "И что это за кое-что?"
-    Max_09 ""
+    Max_09 "And what's that?"
 
 # game/dialogues/lisatalk.rpy:3450
 translate english lisa_about_ae_sexed2_c808bcab:
 
     # Lisa_02 "А что такого вы, мальчики, находите в женской груди?"
-    Lisa_02 ""
+    Lisa_02 "What is it you boys like so much about girls boobs?"
 
 # game/dialogues/lisatalk.rpy:3451
 translate english lisa_about_ae_sexed2_420abc15:
 
     # Max_05 "Смеёшься?! Так она же у вас такая офигенно классная! Даже не представляю, как вы живёте с такой офигенностью, да ещё и в прямом доступе."
-    Max_05 ""
+    Max_05 "Are you kidding me?! You've got such an awesome, awesome thing going on! I can't even imagine how you live with direct access to something so awesome."
 
 # game/dialogues/lisatalk.rpy:3452
 translate english lisa_about_ae_sexed2_62807940:
 
     # Lisa_03 "Как это в прямом доступе?"
-    Lisa_03 ""
+    Lisa_03 "What do you mean by direct access?"
 
 # game/dialogues/lisatalk.rpy:3453
 translate english lisa_about_ae_sexed2_c540218c:
 
     # Max_06 "Так ты же можешь абсолютно в любой момент её потрогать, поласкать..."
-    Max_06 ""
+    Max_06 "You can touch them, play with them, anytime you want..."
 
 # game/dialogues/lisatalk.rpy:3454
 translate english lisa_about_ae_sexed2_99ff9bc7:
 
     # Lisa_10 "Какой ты, Макс, пошлый! Да и видимо все мальчики..."
-    Lisa_10 ""
+    Lisa_10 "You're so dirty, Max! All you boys are..."
 
 # game/dialogues/lisatalk.rpy:3455
 translate english lisa_about_ae_sexed2_3276bb47:
 
     # Max_07 "А что нам делать? Так природой заложено - балдеть от ваших сисечек и других прелестей!"
-    Max_07 ""
+    Max_07 "So what? It's only natural for us to want to enjoy boobs, among other things..."
 
 # game/dialogues/lisatalk.rpy:3456
 translate english lisa_about_ae_sexed2_1e3c036a:
 
     # Lisa_01 "Скромнее надо быть."
-    Lisa_01 ""
+    Lisa_01 "You shouldn't be so forward."
 
 # game/dialogues/lisatalk.rpy:3457
 translate english lisa_about_ae_sexed2_f954e4f4:
 
     # Max_08 "Ага, будешь скромнее - вы сразу внимания хотите, а если пялишься - то сразу извращенец и озабоченный."
-    Max_08 ""
+    Max_08 "Well it's not like I can win. If you're shy, you're begging for attention. If you stare, that makes you a horny pervert."
 
 # game/dialogues/lisatalk.rpy:3458
 translate english lisa_about_ae_sexed2_8c7a24f9:
 
     # Lisa_02 "Значит надо середину золотую искать!"
-    Lisa_02 ""
+    Lisa_02 "There has to be a middle-ground!"
 
 # game/dialogues/lisatalk.rpy:3459
 translate english lisa_about_ae_sexed2_6d8924fb:
 
     # Max_09 "А ты почему про грудь заговорила, мама или Эрик что-то рассказали?"
-    Max_09 ""
+    Max_09 "Why were you thinking about boobs anyway? Did Mom and Eric mention something?"
 
 # game/dialogues/lisatalk.rpy:3460
 translate english lisa_about_ae_sexed2_f22cfe89:
 
     # Lisa_01 "Да, рассказали и показали..."
-    Lisa_01 ""
+    Lisa_01 "Yeah, they might've mentioned it..."
 
 # game/dialogues/lisatalk.rpy:3461
 translate english lisa_about_ae_sexed2_bc8b4754:
 
     # Max_07 "Мама тебе грудь показала?!"
-    Max_07 ""
+    Max_07 "Did Mom show you her boobs?!"
 
 # game/dialogues/lisatalk.rpy:3462
 translate english lisa_about_ae_sexed2_a000f8cc:
 
     # Lisa_02 "Мне и Эрику. И рассказала, как вы это любите."
-    Lisa_02 ""
+    Lisa_02 "Mmm. To me and Eric. She also said how much boys like it."
 
 # game/dialogues/lisatalk.rpy:3463
 translate english lisa_about_ae_sexed2_b2045b28:
 
     # Max_04 "Это да, любим... Покажешь?"
-    Max_04 ""
+    Max_04 "We definitely love them.... Will you show me?"
 
 # game/dialogues/lisatalk.rpy:3464
 translate english lisa_about_ae_sexed2_05b5b9aa:
 
     # Lisa_11 "Мою грудь?! А то ты не знаешь, как она выглядит..."
-    Lisa_11 ""
+    Lisa_11 "My boobs?! Like you don't know what they look like..."
 
 # game/dialogues/lisatalk.rpy:3465
 translate english lisa_about_ae_sexed2_56f588b2:
 
     # Max_02 "А вдруг что-то изменилось? Надо проверить..."
-    Max_02 ""
+    Max_02 "What if something about them changed? We should check it out to be safe..."
 
 # game/dialogues/lisatalk.rpy:3466
 translate english lisa_about_ae_sexed2_3c085d5c:
 
     # Lisa_03 "А ты мне свою штуку покажешь сперва?" nointeract
-    Lisa_03 "" nointeract
+    Lisa_03 "Will you show me your thing first?" nointeract
 
 # game/dialogues/lisatalk.rpy:3469
 translate english lisa_about_ae_sexed2_b747c083:
 
     # Lisa_02 "Ну вот, все всё знают, так что и показывать незачем."
-    Lisa_02 ""
+    Lisa_02 "Well, everyone knows everything, so there's no need to show it."
 
 # game/dialogues/lisatalk.rpy:3470
 translate english lisa_about_ae_sexed2_6378d558:
 
     # Max_03 "Но мне показалось, ты хотела показать..."
-    Max_03 ""
+    Max_03 "But I thought you wanted to show..."
 
 # game/dialogues/lisatalk.rpy:3471
 translate english lisa_about_ae_sexed2_f6ff2867:
 
     # Lisa_01 "Вот именно, тебе показалось! Ничего я показывать не буду."
-    Lisa_01 ""
+    Lisa_01 "That's right, you imagined it! I'm not going to show you anything."
 
 # game/dialogues/lisatalk.rpy:3473
 translate english lisa_about_ae_sexed2_c0d63fc8:
 
     # Lisa_11 "Ой, не надо. Не буду я тебе ничего показывать!"
-    Lisa_11 ""
+    Lisa_11 "Oh, don't do that. I'm not going to show you anything!"
 
 # game/dialogues/lisatalk.rpy:3474
 translate english lisa_about_ae_sexed2_5ee12902:
 
     # Max_07 "Это сейчас. Но как захочешь, то зови."
-    Max_07 ""
+    Max_07 "That's it for now. But when you want more, you call me."
 
 # game/dialogues/lisatalk.rpy:3475
 translate english lisa_about_ae_sexed2_f39108cf:
 
     # Lisa_02 "Конечно, Макс, обязательно тебя позову..."
-    Lisa_02 ""
+    Lisa_02 "Of course, Max, I'll be sure to call you..."
 
 # game/dialogues/lisatalk.rpy:3476
 translate english lisa_about_ae_sexed2_8c3ac440:
 
     # Max_01 "Сегодня?"
-    Max_01 ""
+    Max_01 "Tonight?"
 
 # game/dialogues/lisatalk.rpy:3477
 translate english lisa_about_ae_sexed2_c66e36da:
 
     # Lisa_01 "Ой, всё, отстань."
-    Lisa_01 ""
+    Lisa_01 "Oh, come on, leave me alone."
 
 # game/dialogues/lisatalk.rpy:3487
 translate english lisa_about_ae_sexed3_8b4345de:
 
     # Lisa_01 "Было кое-что... о ваших яичках. Но ты не знаешь, так что пусть это остаётся для тебя тайной."
-    Lisa_01 ""
+    Lisa_01 "There was something... About your testicles. But you don't know, so I won't say anymore."
 
 # game/dialogues/lisatalk.rpy:3488
 translate english lisa_about_ae_sexed3_be072125:
 
     # Max_08 "Эй, это что ещё за тайны о моих шарах!"
-    Max_08 ""
+    Max_08 "Hey, what's this mystery about?"
 
 # game/dialogues/lisatalk.rpy:3489
 translate english lisa_about_ae_sexed3_60001f5e:
 
     # Lisa_02 "А вот есть кое-какие! Узнаешь, когда придёт время. А может и нет, это как повезёт."
-    Lisa_02 ""
+    Lisa_02 "You'll find out when the time comes. Or maybe not, it depends on your luck."
 
 # game/dialogues/lisatalk.rpy:3490
 translate english lisa_about_ae_sexed3_5a214a8e:
 
     # Max_07 "Да ладно, давай рассказывай!"
-    Max_07 ""
+    Max_07 "Come on, tell me!"
 
 # game/dialogues/lisatalk.rpy:3491
 translate english lisa_about_ae_sexed3_68e0b90b:
 
     # Lisa_09 "Нет, Макс. Если скажу, то ты опять будешь приставать с дурацкими вопросами."
-    Lisa_09 ""
+    Lisa_09 "No, Max. You'll just start asking stupid questions again."
 
 # game/dialogues/lisatalk.rpy:3492
 translate english lisa_about_ae_sexed3_9f5484f1:
 
     # Max_09 "Ну и не надо! Я и так знаю."
-    Max_09 ""
+    Max_09 "Fine! I already know."
 
 # game/dialogues/lisatalk.rpy:3493
 translate english lisa_about_ae_sexed3_306f76d0:
 
     # Lisa_01 "Сильно сомневаюсь... И что же ты знаешь?"
-    Lisa_01 ""
+    Lisa_01 "I highly doubt it... What do you know?"
 
 # game/dialogues/lisatalk.rpy:3494
 translate english lisa_about_ae_sexed3_a0e691e0:
 
     # Max_03 "То же, что знаешь ты!"
-    Max_03 ""
+    Max_03 "The same thing you know!"
 
 # game/dialogues/lisatalk.rpy:3495
 translate english lisa_about_ae_sexed3_8a16652b:
 
     # Lisa_02 "И это..."
-    Lisa_02 ""
+    Lisa_02 "And that is..."
 
 # game/dialogues/lisatalk.rpy:3496
 translate english lisa_about_ae_sexed3_46da8cfb:
 
     # Max_02 "А вот не скажу! Я знаю, что ты знаешь! Не знаю только, как ты будешь теперь жить зная, что я знаю, что ты знаешь."
-    Max_02 ""
+    Max_02 "I know you know! I don't know how you're going to live now, knowing that I know that you know."
 
 # game/dialogues/lisatalk.rpy:3497
 translate english lisa_about_ae_sexed3_917f37d7:
 
     # Lisa_03 "Точно так же я буду жить. А знаешь почему? Потому что ты не знаешь, что я знаю!"
-    Lisa_03 ""
+    Lisa_03 "I'm going to live just fine. Do you know why? Because you don't know what I know!"
 
 # game/dialogues/lisatalk.rpy:3498
 translate english lisa_about_ae_sexed3_b20c59c7:
 
     # Max_09 "Всё я знаю."
-    Max_09 ""
+    Max_09 "I know all about it."
 
 # game/dialogues/lisatalk.rpy:3499
 translate english lisa_about_ae_sexed3_128f2227:
 
     # Lisa_02 "Тогда почему спрашивал?"
-    Lisa_02 ""
+    Lisa_02 "Then why did you ask?"
 
 # game/dialogues/lisatalk.rpy:3500
 translate english lisa_about_ae_sexed3_8a48e450:
 
     # Max_01 "А вот было интересно, расскажешь или нет."
-    Max_01 ""
+    Max_01 "I was wondering if you were going to tell me or not."
 
 # game/dialogues/lisatalk.rpy:3501
 translate english lisa_about_ae_sexed3_c2357250:
 
     # Lisa_01 "Потому что на самом деле ничего ты не знаешь, да?"
-    Lisa_01 ""
+    Lisa_01 "Because you don't really know anything, do you?"
 
 # game/dialogues/lisatalk.rpy:3502
 translate english lisa_about_ae_sexed3_811e0fc7:
 
     # Max_09 "И правда дурацкий разговор вышел."
-    Max_09 ""
+    Max_09 "This conversation is stupid."
 
 # game/dialogues/lisatalk.rpy:3503
 translate english lisa_about_ae_sexed3_56af2ff3:
 
     # Lisa_02 "Уже хорошо, что никто ничего не пытался показать, как в прошлый раз."
-    Lisa_02 ""
+    Lisa_02 "It's already good that no one tried to show anything, like last time."
 
 # game/dialogues/lisatalk.rpy:3504
 translate english lisa_about_ae_sexed3_8a31683e:
 
     # Max_07 "Кстати, когда покажешь?"
-    Max_07 ""
+    Max_07 "By the way, when will you show me?"
 
 # game/dialogues/lisatalk.rpy:3505
 translate english lisa_about_ae_sexed3_c66e36da:
 
     # Lisa_01 "Ой, всё, отстань."
-    Lisa_01 ""
+    Lisa_01 "Oh, that's it, leave me alone."
 
 # game/dialogues/lisatalk.rpy:3515
 translate english lisa_about_ae_sexed4_5b393902:
 
     # Lisa_01 "Ничего особенного. Просто итоговый урок, повторяли всё."
-    Lisa_01 ""
+    Lisa_01 "It was nothing special. Just a final lesson, going over what I learned."
 
 # game/dialogues/lisatalk.rpy:3516
 translate english lisa_about_ae_sexed4_08e8a525:
 
     # Max_07 "И совсем ничего нового?"
-    Max_07 ""
+    Max_07 "Nothing new at all?"
 
 # game/dialogues/lisatalk.rpy:3517
 translate english lisa_about_ae_sexed4_aa1b0bb6:
 
     # Lisa_09 "Ну... Может хоть ты мне скажешь, почему мальчикам сложнее довести девочек до оргазма?"
-    Lisa_09 ""
+    Lisa_09 "Well... Why do you think it's harder for boys to bring girls to orgasm?"
 
 # game/dialogues/lisatalk.rpy:3518
 translate english lisa_about_ae_sexed4_86ff5472:
 
     # Max_09 "Сильное заявление! Это кто такое сказал?"
-    Max_09 ""
+    Max_09 "That's a strong statement! Who said that?"
 
 # game/dialogues/lisatalk.rpy:3519
 translate english lisa_about_ae_sexed4_0f7efd81:
 
     # Lisa_02 "Мама. Сказала, что довести мужчину до оргазма не сложно, а вот женщину..."
-    Lisa_02 ""
+    Lisa_02 "Mom. She said it's not hard to make a man orgasm, but for a woman..."
 
 # game/dialogues/lisatalk.rpy:3520
 translate english lisa_about_ae_sexed4_3c94671c:
 
     # Max_08 "Так это Эрик просто неудачник! Ох не повезло ей с ним... Наверно, вообще не старается для неё."
-    Max_08 ""
+    Max_08 "So Eric is just a loser! He probably doesn't even try to please her at all."
 
 # game/dialogues/lisatalk.rpy:3521
 translate english lisa_about_ae_sexed4_94de4ff7:
 
     # Lisa_13 "Ты с чего так решил?"
-    Lisa_13 ""
+    Lisa_13 "What makes you say that?"
 
 # game/dialogues/lisatalk.rpy:3522
 translate english lisa_about_ae_sexed4_e5da39d4:
 
     # Max_05 "Ты нашу маму видела? Да она настолько сексуальна, что у любого мужчины должна быть святая миссия стараться доводить её до оргазма. Я бы доводил точно!"
-    Max_05 ""
+    Max_05 "Have you seen Mom? She's so sexy, any man would make it his mission to get her to cum. I would!"
 
 # game/dialogues/lisatalk.rpy:3523
 translate english lisa_about_ae_sexed4_be18da32:
 
     # Lisa_11 "Ой, Макс, ты что такое говоришь! Это же наша мама!"
-    Lisa_11 ""
+    Lisa_11 "Oh, Max, what are you talking about? That's our mom!"
 
 # game/dialogues/lisatalk.rpy:3524
 translate english lisa_about_ae_sexed4_edf31da1:
 
     # Max_07 "И что? Она теперь не женщина что ли?"
-    Max_07 ""
+    Max_07 "So? Is she not a woman now?"
 
 # game/dialogues/lisatalk.rpy:3525
 translate english lisa_about_ae_sexed4_3d6ff6ef:
 
     # Lisa_01 "Женщина, но это всё равно как-то странно слышать... Я думаю, всё у них в порядке."
-    Lisa_01 ""
+    Lisa_01 "She is, but it's still kind of weird to hear... I think they're fine."
 
 # game/dialogues/lisatalk.rpy:3526
 translate english lisa_about_ae_sexed4_8ff3a725:
 
     # Max_09 "А почему тебя этот момент так заинтересовал?"
-    Max_09 ""
+    Max_09 "Why are you so interested in this?"
 
 # game/dialogues/lisatalk.rpy:3527
 translate english lisa_about_ae_sexed4_0250bd5b:
 
     # Lisa_02 "Просто... вдруг стало интересно, как это происходит у нас, девочек."
-    Lisa_02 ""
+    Lisa_02 "Well... I just started wondering how it works for us girls."
 
 # game/dialogues/lisatalk.rpy:3528
 translate english lisa_about_ae_sexed4_ed670cb2:
 
     # Max_04 "Там ничего сложного нет."
-    Max_04 ""
+    Max_04 "There's nothing complicated there."
 
 # game/dialogues/lisatalk.rpy:3529
 translate english lisa_about_ae_sexed4_47ada166:
 
     # Lisa_03 "Ага, сказал тот, кто всё время дома сидит! В интернете вычитал?"
-    Lisa_03 ""
+    Lisa_03 "Yeah, says the one who stays at home all the time! Did you read about it online?"
 
 # game/dialogues/lisatalk.rpy:3530
 translate english lisa_about_ae_sexed4_4e2ac284:
 
     # Max_03 "Нет, личный опыт!"
-    Max_03 ""
+    Max_03 "No, personal experience!"
 
 # game/dialogues/lisatalk.rpy:3531
 translate english lisa_about_ae_sexed4_a41a9b44:
 
     # Lisa_02 "Макс, ты же в курсе, что воображаемые девушки не считаются?!"
-    Lisa_02 ""
+    Lisa_02 "Max, you know imaginary girls don't count, right?"
 
 # game/dialogues/lisatalk.rpy:3532
 translate english lisa_about_ae_sexed4_d051b76b:
 
     # Max_09 "Тебе показать, что я умею?"
-    Max_09 ""
+    Max_09 "Shall I show you what I can do?"
 
 # game/dialogues/lisatalk.rpy:3533
 translate english lisa_about_ae_sexed4_e18a43c3:
 
     # Lisa_10 "Ой! Ладно, ладно, верю."
-    Lisa_10 ""
+    Lisa_10 "Oh! Ok, Ok, I do."
 
 # game/dialogues/lisatalk.rpy:3534
 translate english lisa_about_ae_sexed4_6beb7f00:
 
     # Max_02 "То-то же!"
-    Max_02 ""
+    Max_02 "That's the right idea!"
 
 translate english strings:
 
     # game/dialogues/lisatalk.rpy:3466
     old "А то ты не знаешь, как она выглядит..."
-    new ""
+    new "Because you don't know what she looks like..."
 
     # game/dialogues/lisatalk.rpy:3466
     old "Да легко! Ты показываешь грудь, я член!"
-    new ""
+    new "That's easy! You show me your boobs, I show you my dick!"
 
