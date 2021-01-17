@@ -1928,3 +1928,403 @@ translate english strings:
     old "Что делаешь-то?"
     new "What are you doing?"
 
+# TODO: Translation updated at 2021-01-17 20:06
+
+# game/events/alice.rpy:1536
+translate english alice_blog_lingerie_8ab28e18:
+
+    # Alice_05 "Если это только твои ухмылки, Макс, а не что-нибудь полезное, то ты сейчас полетишь в бассейн..."
+    Alice_05 ""
+
+# game/events/alice.rpy:1537
+translate english alice_blog_lingerie_0d57bce1:
+
+    # Max_01 "Ну, это такое чёрное, полупрозрачное... и смотреться это на тебе должно очень сексуально..."
+    Max_01 ""
+
+# game/events/alice.rpy:1538
+translate english alice_blog_lingerie_bfecc2c0:
+
+    # Alice_07 "Снова бельё мне купил! Ну ты даёшь, Макс! Давай сюда, посмотрим..."
+    Alice_07 ""
+
+# game/events/alice.rpy:1539
+translate english alice_blog_lingerie_f5f8f70e:
+
+    # Max_04 "Конечно! Ну как тебе?"
+    Max_04 ""
+
+# game/events/alice.rpy:1544
+translate english alice_blog_lingerie_7d1e8f6a:
+
+    # Alice_03 "Ого, какое классное! Мне уже не терпится примерить... А это у тебя что, фотоаппарат? Макс, ты серьёзно решил, что я позволю тебе фотографировать, как я переодеваюсь?!"
+    Alice_03 ""
+
+# game/events/alice.rpy:1545
+translate english alice_blog_lingerie_31bb7956:
+
+    # Max_02 "Нет, это я подумал, что тебе для блога пригодятся хорошие фотографии. В белье."
+    Max_02 ""
+
+# game/events/alice.rpy:1546
+translate english alice_blog_lingerie_2691e894:
+
+    # Alice_05 "Ага, ну конечно, для блога... Здесь кому угодно будет понятно, что у тебя на самом деле на уме!"
+    Alice_05 ""
+
+# game/events/alice.rpy:1547
+translate english alice_blog_lingerie_ffeb7ac0:
+
+    # Max_07 "Я думаю, несколько качественных фотографий пойдут твоему блогу только на пользу."
+    Max_07 ""
+
+# game/events/alice.rpy:1548
+translate english alice_blog_lingerie_28bb7207:
+
+    # Alice_02 "Ты фотографировать хоть умеешь?"
+    Alice_02 ""
+
+# game/events/alice.rpy:1549
+translate english alice_blog_lingerie_98218f88:
+
+    # Max_03 "Конечно! Так что давай примеряй боди и я тебя пощёлкаю."
+    Max_03 ""
+
+# game/events/alice.rpy:1550
+translate english alice_blog_lingerie_b9b48fda:
+
+    # Alice_13 "Вот ещё! Не буду я переодеваться, когда у тебя в руках эта штука. За дверью подожди..." nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:1556
+translate english alice_blog_lingerie_eb1f20ab:
+
+    # Max_02 "{i}( Алиса не отказалась от снимков - уже хорошо. Интересно, как много через это боди будет видно... ){/i}"
+    Max_02 ""
+
+# game/events/alice.rpy:1558
+translate english alice_blog_lingerie_720e9b65:
+
+    # Alice_05 "Так, конфетку я возьму, а ты всё равно отправляешься за дверь. А будешь спорить, я засуну тебе этот фотоаппарат в ..."
+    Alice_05 ""
+
+# game/events/alice.rpy:1561
+translate english alice_blog_lingerie_43146797:
+
+    # Max_08 "Ладно, подожду за дверью..."
+    Max_08 ""
+
+# game/events/alice.rpy:1565
+translate english alice_blog_lingerie_92921f70:
+
+    # Max_02 "{i}( Алиса не отказалась от конфетки. Интересно, как много я увижу, а главное сфотографирую... ){/i}"
+    Max_02 ""
+
+# game/events/alice.rpy:1566
+translate english alice_blog_lingerie_85e795c3:
+
+    # Alice "{b}Алиса:{/b} Заходи давай, пока я не передумала!" nointeract
+    Alice "" nointeract
+
+# game/events/alice.rpy:1591
+translate english alice_body_photoset1_4b9409e0:
+
+    # Alice_02 "По-моему, оно обалденное, Макс! А ты как думаешь?"
+    Alice_02 ""
+
+# game/events/alice.rpy:1592
+translate english alice_body_photoset1_f6ff2886:
+
+    # Max_03 "Это точно! Снимки получатся прямо как для обложки!"
+    Max_03 ""
+
+# game/events/alice.rpy:1596
+translate english alice_body_photoset1_ad551119:
+
+    # Alice_05 "Да вижу я по твоим шортам, что ты там уже не на обложку напредставлял, а на разворот."
+    Alice_05 ""
+
+# game/events/alice.rpy:1597
+translate english alice_body_photoset1_23024072:
+
+    # Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну ка покрутись..."
+    Max_01 ""
+
+# game/events/alice.rpy:1600
+translate english alice_body_photoset1_2b4d7ce7:
+
+    # Alice_03 "Там всё в порядке. Может тебе повезёт во время съёмки и ты что-то да увидишь. Будешь щёлкать меня прямо здесь, у стены или у зеркала?"
+    Alice_03 ""
+
+# game/events/alice.rpy:1601
+translate english alice_body_photoset1_650b9ebb:
+
+    # Max_04 "Давай, я думаю, на кровати. Будет больше ярких цветов."
+    Max_04 ""
+
+# game/events/alice.rpy:1604
+translate english alice_body_photoset1_c280ab2b:
+
+    # Alice_07 "Там всё в порядке, так ведь?"
+    Alice_07 ""
+
+# game/events/alice.rpy:1605
+translate english alice_body_photoset1_837487e0:
+
+    # Max_05 "О да, такую обалденную попку нужно как можно скорее пощёлкать!"
+    Max_05 ""
+
+# game/events/alice.rpy:1609
+translate english alice_body_photoset1_a7e95245:
+
+    # Alice_03 "Будешь щёлкать меня прямо здесь, у стены или у зеркала?"
+    Alice_03 ""
+
+# game/events/alice.rpy:1610
+translate english alice_body_photoset1_650b9ebb_1:
+
+    # Max_04 "Давай, я думаю, на кровати. Будет больше ярких цветов."
+    Max_04 ""
+
+# game/events/alice.rpy:1614
+translate english alice_body_photoset1_72495e04:
+
+    # Alice_02 "На кровати, так на кровати. А теперь давай признавайся, Макс, когда успел фотоаппарат научиться держать? Не на своих же любимых онлайн-курсах?"
+    Alice_02 ""
+
+# game/events/alice.rpy:1617
+translate english alice_body_photoset1_37c1d751:
+
+    # Max_01 "Ты не вопросы спрашивай, а позируй лучше красиво! Может, я просто талантлив во всём, чего касаюсь... {p=1.5}{nw}"
+    Max_01 ""
+
+# game/events/alice.rpy:1619
+translate english alice_body_photoset1_fa08a285:
+
+    # extend "Снимок готов! Залазь теперь на кровать, снимем твою прелестную попку..."
+    extend ""
+
+# game/events/alice.rpy:1623
+translate english alice_body_photoset1_3b98c4ab:
+
+    # Alice_03 "Смотри, чтобы красиво получалось, но не слишком откровенно! Я всё-таки бельё рекламирую, а не свои прелести. Хотя, и свои прелести тоже, но хоть немного скрытые бельём!"
+    Alice_03 ""
+
+# game/events/alice.rpy:1626
+translate english alice_body_photoset1_cfc08eb7:
+
+    # Max_02 "На тебе ведь сексуальное полупрозрачное бельё, Алиса! Думаешь могут получится не откровенные снимки? {p=1.5}{nw}"
+    Max_02 ""
+
+# game/events/alice.rpy:1628
+translate english alice_body_photoset1_19c7aaa6:
+
+    # extend "Получилось хорошо! Ложись на кровать, раз уж рекламируем бельё, то надо во всей красе показать, как оно на тебе сидит."
+    extend ""
+
+# game/events/alice.rpy:1632
+translate english alice_body_photoset1_f02f67fc:
+
+    # Alice_04 "Мог бы просто сказать, что ты извращенец, который обожает глазеть на полуголый зад своей сестры! А то, что это якобы для развития блога - просто удобный предлог."
+    Alice_04 ""
+
+# game/events/alice.rpy:1635
+translate english alice_body_photoset1_078f176b:
+
+    # Max_04 "То, что я обожаю глазеть - не моя вина, мужчины здесь бессильны. {p=1.5}{nw}"
+    Max_04 ""
+
+# game/events/alice.rpy:1637
+translate english alice_body_photoset1_d5d79998:
+
+    # extend "Отличный кадр! Тебе только остаётся принять этот факт, повернуться ко мне и быть погорячее..."
+    extend ""
+
+# game/events/alice.rpy:1641
+translate english alice_body_photoset1_907f281f:
+
+    # Alice_05 "Вот так погорячее сойдёт или ты хочешь, чтобы я показала ещё больше?"
+    Alice_05 ""
+
+# game/events/alice.rpy:1644
+translate english alice_body_photoset1_75ce9628:
+
+    # Max_03 "Ага, я хочу! Такой кадр упускать нельзя, замри... {p=1.5}{nw}"
+    Max_03 ""
+
+# game/events/alice.rpy:1646
+translate english alice_body_photoset1_49d01d2f:
+
+    # extend "Вот так, готово! А теперь можешь показать больше..."
+    extend ""
+
+# game/events/alice.rpy:1651
+translate english alice_body_photoset1_1d2ef196:
+
+    # Alice_01 "Конечно, уже раздеваюсь... Закатай губу, Макс! Ты ещё маленький для такого."
+    Alice_01 ""
+
+# game/events/alice.rpy:1652
+translate english alice_body_photoset1_77ed3a17:
+
+    # Max_07 "Да ладно тебе, Алиса! Мы всего-то четыре снимка сделали!"
+    Max_07 ""
+
+# game/events/alice.rpy:1655
+translate english alice_body_photoset1_a7f1de8e:
+
+    # Alice_02 "Мне вполне этого будет достаточно для развития блога, пока что. Только будь добр, обработай эти фото побыстрее."
+    Alice_02 ""
+
+# game/events/alice.rpy:1656
+translate english alice_body_photoset1_bfa61729:
+
+    # Max_11 "Вот и помогай тебе! Никакого праздника..."
+    Max_11 ""
+
+# game/events/alice.rpy:1657
+translate english alice_body_photoset1_9a6d3776:
+
+    # Alice_05 "А ты не ожидай многого и разочарований тогда не будет. Всё, жду мои фотографии."
+    Alice_05 ""
+
+# game/events/alice.rpy:1658
+translate english alice_body_photoset1_ce027716:
+
+    # Max_09 "Конечно. Спасибо, Макс за фотосессию... Ой, да не за что, Алиса..."
+    Max_09 ""
+
+# game/events/alice.rpy:1664
+translate english alice_body_photoset1_000f4b58:
+
+    # Alice_04 "Ты же хоть примерно понимаешь, что с тобой будет, если дальнейшие фотографии окажутся в интеренете?"
+    Alice_04 ""
+
+# game/events/alice.rpy:1665
+translate english alice_body_photoset1_dd9dceaf:
+
+    # Max_01 "Там окажутся только те фотографии, которые тебе пригодятся для блога. За остальные можешь не переживать, они только для меня."
+    Max_01 ""
+
+# game/events/alice.rpy:1669
+translate english alice_body_photoset1_5e70c1a4:
+
+    # Alice_08 "Ох, как-то жарковато стало моим арбузикам, да и тебе я вижу тоже. Ого, а что это у нас тут такое большое и твёрдое? Похоже, будет интересный кадр!"
+    Alice_08 ""
+
+# game/events/alice.rpy:1670
+translate english alice_body_photoset1_b99b855d:
+
+    # Max_07 "Хоть это и очень приятно, но мне будет не просто сосредоточиться на съёмке, если ты продолжишь тереться ногой об мой член! Может продолжишь это делать после того, как я тебя отщёлкаю?"
+    Max_07 ""
+
+# game/events/alice.rpy:1673
+translate english alice_body_photoset1_995e42b4:
+
+    # Alice_07 "Ой, я кажется заигралась немного... Не удержалась... {p=1.5}{nw}"
+    Alice_07 ""
+
+# game/events/alice.rpy:1675
+translate english alice_body_photoset1_398d59b9:
+
+    # extend "Люблю исследовать что-нибудь интересное своими ножками! Это меня очень заводит..."
+    extend ""
+
+# game/events/alice.rpy:1676
+translate english alice_body_photoset1_52f0f933:
+
+    # Max_02 "А тем временем я заснял твои шалости и готов к новым... Что твои ножки ещё любят делать?"
+    Max_02 ""
+
+# game/events/alice.rpy:1680
+translate english alice_body_photoset1_c834f9a7:
+
+    # Alice_03 "Я могу их немножко раздвинуть, чтобы этот кадр стал твоим любимым... Какая же я плохая сестрёнка! В хорошем смысле..."
+    Alice_03 ""
+
+# game/events/alice.rpy:1683
+translate english alice_body_photoset1_c493453c:
+
+    # Max_04 "Мне бы фотоаппарат не выронить от восхищения! Фокус настроил и... {p=1.5}{nw}"
+    Max_04 ""
+
+# game/events/alice.rpy:1685
+translate english alice_body_photoset1_fbbf7ca9:
+
+    # extend "Готово. Кадр и правда очень хорош!"
+    extend ""
+
+# game/events/alice.rpy:1689
+translate english alice_body_photoset1_3cbe1fe4:
+
+    # Alice_02 "Или всё-таки снимок моей попки будет твоим любимым, а Макс? Тебе же нравится, когда я делаю так?"
+    Alice_02 ""
+
+# game/events/alice.rpy:1692
+translate english alice_body_photoset1_313fbe6b:
+
+    # Max_03 "Да-а-а... От вида этих изгибов в голове появляются такие пошлые мысли и желания! {p=1.5}{nw}"
+    Max_03 ""
+
+# game/events/alice.rpy:1694
+translate english alice_body_photoset1_d80f658c:
+
+    # extend "Да, кадр получился что надо! Может, теперь фото без белья?"
+    extend ""
+
+# game/events/alice.rpy:1698
+translate english alice_body_photoset1_f7ab4a06:
+
+    # Alice_01 "Конечно, уже раздеваюсь... Закатай губу, Макс! Ты ещё маленький для такого, хоть у тебя и есть кое-что большое..."
+    Alice_01 ""
+
+# game/events/alice.rpy:1701
+translate english alice_body_photoset1_4ebdba51:
+
+    # Max_05 "Тогда последний снимок... {p=1.5}{nw}"
+    Max_05 ""
+
+# game/events/alice.rpy:1703
+translate english alice_body_photoset1_26ab28a4:
+
+    # extend "Сделал! Вот и отснимались."
+    extend ""
+
+# game/events/alice.rpy:1707
+translate english alice_body_photoset1_976b418f:
+
+    # Alice_07 "Классное боди ты купил! Спасибо тебе, Макс! Ты же скоро обработаешь снимки?"
+    Alice_07 ""
+
+# game/events/alice.rpy:1708
+translate english alice_body_photoset1_5e4db7be:
+
+    # Max_04 "Да, как только - так сразу. Шикарно пофотографировались!"
+    Max_04 ""
+
+# game/events/alice.rpy:1709
+translate english alice_body_photoset1_040a94ef:
+
+    # Alice_04 "Это же останется нашим маленьким секретом?"
+    Alice_04 ""
+
+# game/events/alice.rpy:1710
+translate english alice_body_photoset1_cec47c00:
+
+    # Max_03 "Конечно, Алиса!"
+    Max_03 ""
+
+translate english strings:
+
+    # game/events/alice.rpy:1498
+    old "А я тебе принёс кое-что!"
+    new ""
+
+    # game/events/alice.rpy:1550
+    old "Ладно, подожду..."
+    new ""
+
+    # game/events/alice.rpy:1550
+    old "А если конфетку дам, то остаться можно?"
+    new ""
+

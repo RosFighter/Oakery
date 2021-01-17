@@ -1194,3 +1194,15 @@ translate english strings:
     old "Итак, снимки вышли удачными и мы с Кирой договорились на новую фотосессию, пока никого не будет дома. Но ещё не ясно, когда мы её проведём... Интересно, что такое Кира хочет достать для съёмок!? Остаётся только ждать..."
     new "The pictures came out well and Kira wants to schedule another photo shoot. This time, while no one else is home, but I'm not sure when we'll hold it. I wonder what she has in mind? All I have to do it wait..."
 
+# TODO: Translation updated at 2021-01-17 20:06
+
+translate english strings:
+
+    # game/core/03variables.rpy:272
+    old "ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"
+    new ""
+
+    # game/core/03variables.rpy:272
+    old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
+    new ""
+
