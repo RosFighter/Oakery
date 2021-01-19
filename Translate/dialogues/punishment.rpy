@@ -864,53 +864,53 @@ translate english strings:
 translate english first_naked_punishment_3f2e2a3f:
 
     # Ann_12 "А так как месяц прошёл, а вы всё так же не взялись за ум, то с этого момента наказывать я вас буду полностью голых! Как и обещала..."
-    Ann_12 ""
+    Ann_12 "It's been over a month and you still haven't pulled yourselves together. As promised, punishments from now on will be in the nude!"
 
 # game/dialogues/punishment.rpy:128
 translate english first_naked_punishment_c1e4e97a:
 
     # Lisa_11 "Ой, нет! Не надо, мам!"
-    Lisa_11 ""
+    Lisa_11 "Awww! Please don't, Mom!"
 
 # game/dialogues/punishment.rpy:129
 translate english first_naked_punishment_4a37ae29:
 
     # Alice_16 "Это беспредел какой-то!"
-    Alice_16 ""
+    Alice_16 "This is bullshit!"
 
 # game/dialogues/punishment.rpy:130
 translate english first_naked_punishment_2c928228:
 
     # Ann_19 "Тихо! У вас был шанс этого избежать. Если вам не стыдно за свою безалаберность, то, надеюсь, станет стыдно получать по голому заду на глазах у всех!"
-    Ann_19 ""
+    Ann_19 "Enough! You had your chance to avoid this. If your behaviour is not enough for you to feel shame, then then I must resort to this!"
 
 # game/dialogues/punishment.rpy:304
 translate english punishment_max_pun_reson_ad895117:
 
     # Ann_12 "Ну, Макс, раздевайся. Остальные просто посмотрят, что бывает, когда кто-то косячит..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Max, strip. You can be an example for the rest of us." nointeract
 
 # game/dialogues/punishment.rpy:414
 translate english punishment_lisa_e15cfc8b:
 
     # Ann_12 "Лиза. Мне нужно всем объяснять за что ты сейчас будешь наказана? Молчишь? Значит, знаешь... Всё, давай раздевайся и быстро, без разговоров!"
-    Ann_12 ""
+    Ann_12 "Must I even explain why you're being punished, Lisa? No response? So you already understand, good. Now strip and don't say a word!"
 
 # game/dialogues/punishment.rpy:461
 translate english punishment_lisa_e4caf4e0:
 
     # Max_04 "{i}( Хоть Лиза и получает сейчас по своей миленькой попке, но зато можно полюбоваться и всем остальным... А видно много чего интересного! ){/i}"
-    Max_04 ""
+    Max_04 "{i} ( I should probably feel bad that Lisa is getting her little ass roughed up... But I can't say I don't like watching this show! ) {/i}"
 
 # game/dialogues/punishment.rpy:579
 translate english punishment_alice_dd1264f2:
 
     # Ann_12 "Так, Алиса, раздевайся. Надеюсь, не надо объяснять, за что я тебя сейчас буду наказывать и сама всё понимаешь..."
-    Ann_12 ""
+    Ann_12 "Alice, strip. I should not need to explain why you are about to be punished, I believe you already know."
 
 # game/dialogues/punishment.rpy:639
 translate english punishment_alice_78ef4f88:
 
     # Max_04 "{i}( Люблю, когда Алису наказывают... Стервозинка она та ещё, но без последствий полюбоваться её голыми прелестями в других ситуациях опасно для жизни! ){/i}"
-    Max_04 ""
+    Max_04 "{i} ( I love seeing Alice get what she deserves for a change! She's such a bitch... I'm lucky I'm seeing her tight body without having to fear for my life! ) {/i}"
 
