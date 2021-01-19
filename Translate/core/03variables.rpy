@@ -1200,7 +1200,7 @@ translate english strings:
 
     # game/core/03variables.rpy:272
     old "ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"
-    new "BLACK SEXY BODYSUIT"
+    new "SEXY BLACK BODYSUIT"
 
     # game/core/03variables.rpy:272
     old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
