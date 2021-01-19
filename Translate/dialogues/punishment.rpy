@@ -900,7 +900,7 @@ translate english punishment_lisa_e15cfc8b:
 translate english punishment_lisa_e4caf4e0:
 
     # Max_04 "{i}( Хоть Лиза и получает сейчас по своей миленькой попке, но зато можно полюбоваться и всем остальным... А видно много чего интересного! ){/i}"
-    Max_04 "{i} ( I should probably feel bad that Lisa is getting her little ass roughed up... But I can't say I don't like watching this show! ) {/i}"
+    Max_04 "{i}( I should probably feel bad that Lisa is getting her little ass roughed up... But I can't say I don't like watching this show! ){/i}"
 
 # game/dialogues/punishment.rpy:579
 translate english punishment_alice_dd1264f2:
@@ -912,5 +912,5 @@ translate english punishment_alice_dd1264f2:
 translate english punishment_alice_78ef4f88:
 
     # Max_04 "{i}( Люблю, когда Алису наказывают... Стервозинка она та ещё, но без последствий полюбоваться её голыми прелестями в других ситуациях опасно для жизни! ){/i}"
-    Max_04 "{i} ( I love seeing Alice get what she deserves for a change! She's such a bitch... I'm lucky I'm seeing her tight body without having to fear for my life! ) {/i}"
+    Max_04 "{i}( I love seeing Alice get what she deserves for a change! She's such a bitch... I'm lucky I'm seeing her tight body without having to fear for my life! ){/i}"
 
