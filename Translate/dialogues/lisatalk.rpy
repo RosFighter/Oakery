@@ -8532,7 +8532,7 @@ translate english Lisa_HomeWork_7fc42348:
 translate english Lisa_HomeWork_new_self_641cf30e:
 
     # "{i}Спустя какое-то время...{/i}"
-    "{i}Some time later...{/ i}"
+    "{i}Some time later...{/i}"
 
 # game/dialogues/lisatalk.rpy:1461
 translate english Lisa_HomeWork_new_self_64ba960e:
@@ -8550,7 +8550,7 @@ translate english Lisa_HomeWork_new_self_c4f78369:
 translate english Lisa_HomeWork_new_self_62781807:
 
     # Max_02 "Может я сделаю тебе массаж ног, пока ты проверяешь? Тебе станет легче..."
-    Max_02 "How about a foot massage while you check? You'll like it..."
+    Max_02 "How about a foot massage while you do that? You'll like it..."
 
 # game/dialogues/lisatalk.rpy:1467
 translate english Lisa_HomeWork_new_massage_71299d13:
@@ -8568,19 +8568,19 @@ translate english Lisa_HomeWork_new_massage_4549fd0d:
 translate english Lisa_HomeWork_new_massage_65c8d363:
 
     # Lisa_05 "Твой массаж так хорошо расслабляет, даже уроки нескучно проверять. Очень приятно..." nointeract
-    Lisa_05 "Your hands feel amazing... This makes checking your work a lot more interesting." nointeract
+    Lisa_05 "Your hands feel amazing... This makes checking your work a lot more fun." nointeract
 
 # game/dialogues/lisatalk.rpy:1485
 translate english Lisa_HomeWork_new_massage_751c15f5:
 
     # Max_02 "Мне приятно такое слышать! Я всё делал как надо, да?"
-    Max_02 "I'm glad to hear that! I did everything right, didn't I?"
+    Max_02 "I'm glad to hear that! I'm doing everything right, aren't I?"
 
 # game/dialogues/lisatalk.rpy:1486
 translate english Lisa_HomeWork_new_massage_c6577f41:
 
     # Lisa_06 "Ммм, да... Совершенно не хочется, чтобы это закончилось. Так приятно и легко..."
-    Lisa_06 "Mmm, yeah... You're doing great, keep it going..."
+    Lisa_06 "Mmm, yeah... You're doing great, keep going..."
 
 # game/dialogues/lisatalk.rpy:1487
 translate english Lisa_HomeWork_new_massage_93373081:
@@ -8700,7 +8700,7 @@ translate english Lisa_HomeWork_new_shoulders_eac8a037:
 translate english Lisa_HomeWork_new_shoulders_45a8919b:
 
     # Lisa_10 "[lisa_bad_mass!t]Ой, Макс! Это уже как-то... грубовато. Ты, видимо, уже устал. Давай на этом закончим."
-    Lisa_10 "[lisa_bad_mass!t]Oh, Max! That's a bit... much. Let's just call it a night now."
+    Lisa_10 "[lisa_bad_mass!t]Oh, Max! That's a bit... Much. Let's just call it a night now."
 
 # game/dialogues/lisatalk.rpy:1556
 translate english Lisa_HomeWork_new_shoulders_052f029d:
@@ -8748,7 +8748,7 @@ translate english Lisa_HomeWork_new_shoulders_36e2e79a:
 translate english Lisa_HomeWork_new_shoulders_038e8dac:
 
     # Lisa_01 "Нет, просто... Ничего, что я твоя сестра? И мы такое делаем?"
-    Lisa_01 "No, it's just... I'm your sister, isn't it wrong for us to do this?"
+    Lisa_01 "No, it's just... I'm your sister, isn't this wrong?"
 
 # game/dialogues/lisatalk.rpy:1580
 translate english Lisa_HomeWork_new_shoulders_75a4d4d9:
