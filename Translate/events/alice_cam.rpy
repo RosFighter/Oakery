@@ -460,3 +460,17 @@ translate english strings:
     old "{i}достаточно{/i}"
     new "{i}That's enough{/i}"
 
+# TODO: Translation updated at 2021-01-23 16:42
+
+# game/events/alice_cam.rpy:630
+translate english cam0_alice_after_club_ce893c17:
+
+    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+    Max_09 ""
+
+# game/events/alice_cam.rpy:632
+translate english cam0_alice_after_club_d8fc5c8e:
+
+    # Max_09 "Алисы не видно через эту камеру..."
+    Max_09 ""
+

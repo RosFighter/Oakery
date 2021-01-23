@@ -264,3 +264,35 @@ translate english cam1_kira_night_swim_5f08638b:
     # Max_05 "Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!"
     Max_05 "Aunt Kira, skinny dipping? Something tells me she's done this before!"
 
+# TODO: Translation updated at 2021-01-23 16:42
+
+# game/events/kira_cam.rpy:417
+translate english cam0_return_from_club_39c0bef3:
+
+    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+    Max_09 ""
+
+# game/events/kira_cam.rpy:419
+translate english cam0_return_from_club_1ecc7ee3:
+
+    # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы бассейн..."
+    Max_09 ""
+
+# game/events/kira_cam.rpy:423
+translate english cam1_return_from_club_4f374152:
+
+    # Max_01 "{i}( Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их... ){/i}" nointeract
+    Max_01 "" nointeract
+
+# game/events/kira_cam.rpy:430
+translate english cam1_return_from_club_984a3aa6:
+
+    # Max_00 "Поздно уже, пойду лучше спать..."
+    Max_00 ""
+
+translate english strings:
+
+    # game/events/kira_cam.rpy:423
+    old "{i}встретить их{/i}"
+    new ""
+

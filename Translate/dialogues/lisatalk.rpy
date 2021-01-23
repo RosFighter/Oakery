@@ -8616,7 +8616,7 @@ translate english Lisa_HomeWork_new_massage_02025e2e:
 translate english Lisa_HomeWork_new_massage_9f553937:
 
     # Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну... Ещё раз спасибо, Макс! И за уроки, и за мои ножки."
-    Lisa_01 "[failed!t] No, Max. I think I'm all good! I might fall asleep... Thanks again for the help!"
+    Lisa_01 "[failed!t]No, Max. I think I'm all good! I might fall asleep... Thanks again for the help!"
 
 # game/dialogues/lisatalk.rpy:1501
 translate english Lisa_HomeWork_new_massage_02025e2e_1:
@@ -8789,4 +8789,12 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:1566
     old "{i}продолжить массировать её грудь и целовать{/i}"
     new "{i}Continue massaging her breasts and kiss her{/i}"
+
+# TODO: Translation updated at 2021-01-23 16:42
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:1524
+    old "{i}продолжить ниже{/i}"
+    new ""
 

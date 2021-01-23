@@ -1206,3 +1206,11 @@ translate english strings:
     old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
     new "Transparent open-back mesh bodysuit in black."
 
+# TODO: Translation updated at 2021-01-23 16:42
+
+translate english strings:
+
+    # game/core/03variables.rpy:323
+    old "Я решил, что и мне самому будет полезно прочитать купленную для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
+    new ""
+
