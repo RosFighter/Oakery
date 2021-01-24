@@ -466,11 +466,11 @@ translate english strings:
 translate english cam0_alice_after_club_ce893c17:
 
     # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 ""
+    Max_09 "I can't see Alice through this camera... Maybe I should try another one?"
 
 # game/events/alice_cam.rpy:632
 translate english cam0_alice_after_club_d8fc5c8e:
 
     # Max_09 "Алисы не видно через эту камеру..."
-    Max_09 ""
+    Max_09 "I can't see Alice through this camera..."
 
