@@ -1212,5 +1212,5 @@ translate english strings:
 
     # game/core/03variables.rpy:323
     old "Я решил, что и мне самому будет полезно прочитать купленную для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
-    new ""
+    new "I decided that it would be useful for me to read the book I bought for Lisa. Maybe I'll learn something interesting for myself?"
 

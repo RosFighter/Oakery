@@ -2334,417 +2334,417 @@ translate english strings:
 translate english alice_towel_after_club_164b6a94:
 
     # Alice "{b}Алиса:{/b} Кому там не спится? Я ванну принимаю..."
-    Alice ""
+    Alice "{b}Alice:{/b} Which one of you can't sleep? I'm in the bath..."
 
 # game/events/alice.rpy:1726
 translate english alice_towel_after_club_06f4b1d3:
 
     # Max_02 "Это я, Макс. Полотенце твоё принёс."
-    Max_02 ""
+    Max_02 "It's Max. I brought your towel."
 
 # game/events/alice.rpy:1727
 translate english alice_towel_after_club_86a91f2d:
 
     # Alice "{b}Алиса:{/b} Поздно, Макс! Я уже в ванне, так что гуляй."
-    Alice ""
+    Alice "{b}Аlice:{/b} Well I'm already in the bath, so get lost!"
 
 # game/events/alice.rpy:1728
 translate english alice_towel_after_club_71b9cc8b:
 
     # Max_10 "Вот чёрт! И здесь облом." nointeract
-    Max_10 "" nointeract
+    Max_10 "Shit! There goes my chance." nointeract
 
 # game/events/alice.rpy:1741
 translate english alice_towel_after_club_27a836fc:
 
     # Max_02 "А вот и я, Алиса! С твоим полотенцем..."
-    Max_02 ""
+    Max_02 "I'm here with your towel, Alice!"
 
 # game/events/alice.rpy:1742
 translate english alice_towel_after_club_7d78ae31:
 
     # Alice_06 "Макс, я тут вообще-то голая лежу в ванне! Не думаешь, что нужно было постучаться, прежде чем входить? Я ведь могла здесь... чем-нибудь ещё заниматься..."
-    Alice_06 ""
+    Alice_06 "Max! I get that your slow, but don't you at least have the sense to knock first? I could have been having some *me* time in here..."
 
 # game/events/alice.rpy:1743
 translate english alice_towel_after_club_fadd0bdd:
 
     # Max_03 "На это я, если честно, и надеялся."
-    Max_03 ""
+    Max_03 "That's what I was hoping for, if I'm being honest."
 
 # game/events/alice.rpy:1749
 translate english alice_towel_after_club_00a30702:
 
     # Alice_05 "Ты что, стоял перед дверью и о чём-то таком думал, чтобы ТАК отдать мне полотенце?"
-    Alice_05 ""
+    Alice_05 "You must've been having fun with your imagination before you came in here with the towel."
 
 # game/events/alice.rpy:1753
 translate english alice_towel_after_club_a38394fd:
 
     # Max_04 "Ага, специально стоял перед дверью и представлял, как ты тут ублажаешь себя в самых эротичных позах!"
-    Max_04 ""
+    Max_04 "Yeah, I was just picturing all the different ways my big sis could get herself off in the bath!"
 
 # game/events/alice.rpy:1754
 translate english alice_towel_after_club_7368beee:
 
     # Alice_14 "Ну ты и больной, Макс! Даже больше и сказать на это нечего... Давай моё полотенце и скройся, извращенец озабоченный."
-    Alice_14 ""
+    Alice_14 "You're sick, Max! No doubt about it. Just give me my towel and get lost, you horny pervert."
 
 # game/events/alice.rpy:1755
 translate english alice_towel_after_club_b0cd5681:
 
     # Max_02 "Да ладно, весело же придумал с полотенцем?!"
-    Max_02 ""
+    Max_02 "Come on, don't you want to see what I'm hiding?"
 
 # game/events/alice.rpy:1756
 translate english alice_towel_after_club_e959616a:
 
     # Alice_16 "Ещё веселее будет, если вешать будет больше не на что!"
-    Alice_16 ""
+    Alice_16 "Not interested, but I'll call you next time I need to hang something!"
 
 # game/events/alice.rpy:1757
 translate english alice_towel_after_club_70a2c6da:
 
     # Max_10 "Ну вот, опять угрозы пошли..." nointeract
-    Max_10 "" nointeract
+    Max_10 "I guess that was a threat...?" nointeract
 
 # game/events/alice.rpy:1763
 translate english alice_towel_after_club_42b6166d:
 
     # Max_04 "Это тётя Кира мне стриптиз показала, до сих пор стоит..."
-    Max_04 ""
+    Max_04 "Aunt Kira gave me a striptease, so it's probably still from that."
 
 # game/events/alice.rpy:1764
 translate english alice_towel_after_club_c4e57912:
 
     # Alice_13 "Да не смеши, Макс! Тётя Кира, конечно, пьяная, но... хотя в клубе она это вытворяла..."
-    Alice_13 ""
+    Alice_13 "Don't be ridiculous, Max! Aunt Kira is drunk, sure, but... Even though she did it at the club..."
 
 # game/events/alice.rpy:1770
 translate english alice_towel_after_club_fe02f027:
 
     # Max_03 "Двигалась она классно! Ну а как ты повеселилась в клубе?"
-    Max_03 ""
+    Max_03 "She's got moves! How was the club?"
 
 # game/events/alice.rpy:1771
 translate english alice_towel_after_club_acc3abda:
 
     # Alice_02 "Ты знаешь, очень... очень хорошо. Но, похоже, я выпила сегодня куда больше, чем планировала... А что это твоя рука забыла на моей попке?"
-    Alice_02 ""
+    Alice_02 "Well, you know... Pretty good. But I think I drank a bit more than I should've... Why is your hand on my ass?"
 
 # game/events/alice.rpy:1772
 translate english alice_towel_after_club_d472d39e:
 
     # Max_07 "Она потянулась к прекрасному! А может ей хочется наказать эту попку..."
-    Max_07 ""
+    Max_07 "I dunno, it's got a mind of it's own! But I think your ass might be asking for punishment..."
 
 # game/events/alice.rpy:1778
 translate english alice_towel_after_club_7a77d321:
 
     # Alice_12 "За что это?!"
-    Alice_12 ""
+    Alice_12 "What for?!"
 
 # game/events/alice.rpy:1779
 translate english alice_towel_after_club_359b944d:
 
     # Max_09 "Может, потому что ты была плохой девочкой?! Я тебе с блогом помогаю, бельё покупаю, сладостями балую... а ты только угрозами в меня сыпешь..."
-    Max_09 ""
+    Max_09 "Do you even need to ask?! I help with your blog, buy you lingerie, treat you with candy... But all you do is give me that bitchy attitude."
 
 # game/events/alice.rpy:1780
 translate english alice_towel_after_club_77241988:
 
     # Alice_06 "Не надо меня наказывать, Макс! Может, я могу как-то это исправить? Каким-нибудь приятным образом?" nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Don't hurt me, Max! Is there any way I can make it up to you? Without being violent?" nointeract
 
 # game/events/alice.rpy:1788
 translate english alice_towel_after_club_e8547449:
 
     # Alice_15 "Макс! Ну что ты делаешь?! Ахх... Ты полез рукой прямо туда... Это же так..."
-    Alice_15 ""
+    Alice_15 "Max! What are you doing?! Ahh... Your hand... That's so-"
 
 # game/events/alice.rpy:1789
 translate english alice_towel_after_club_df676746:
 
     # Max_02 "Приятно? Это ты хотела сказать?"
-    Max_02 ""
+    Max_02 "Good? Is that what you meant to say?"
 
 # game/events/alice.rpy:1790
 translate english alice_towel_after_club_5827b06a:
 
     # Alice_06 "Д-а-а... То есть, я хотела сказать... неправильно! Ммм..."
-    Alice_06 ""
+    Alice_06 "Y-a-a... I mean, I was going to say... Wrong! Mmm..."
 
 # game/events/alice.rpy:1791
 translate english alice_towel_after_club_845ca42f:
 
     # Max_01 "Хочешь, чтобы я перестал это делать?"
-    Max_01 ""
+    Max_01 "Do you want me to stop?"
 
 # game/events/alice.rpy:1797
 translate english alice_towel_after_club_488205cf:
 
     # Alice_09 "Хочу... ухх... чтобы ты продолжал... Как же хорошо... Ты этому на своих курсах массажа научился?!"
-    Alice_09 ""
+    Alice_09 "I want... uh... For you to keep... That feels good... Did you learn that in your massage class?!"
 
 # game/events/alice.rpy:1798
 translate english alice_towel_after_club_c6245e2a:
 
     # Max_03 "Считай, да. Давно хотел попрактиковаться в этом!"
-    Max_03 ""
+    Max_03 "I sure did. I've wanted to use it on you for a long time!"
 
 # game/events/alice.rpy:1799
 translate english alice_towel_after_club_a7d02419:
 
     # Alice_07 "Такое ощущение, что практика у тебя уже была... Да... я хочу чуть быстрее, Макс... Ммм..." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "It feels like you've done it before... Yes... Go a little faster, Max... Mmm..." nointeract
 
 # game/events/alice.rpy:1808
 translate english alice_towel_after_club_36c30622:
 
     # Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее..."
-    Alice_10 ""
+    Alice_10 "Ah! Oh, shit, Max! Yeah... this is nice... Faster..."
 
 # game/events/alice.rpy:1809
 translate english alice_towel_after_club_93f672b3:
 
     # Max_04 "{i}( Алиса так приятно постанывает... А уж мне не менее приятно трахать эту нежную киску пальцами. Может быть, она даже кончит, если я ускорюсь... ){/i}"
-    Max_04 ""
+    Max_04 "{i}( Alice can barely hold back her moaning... Feeling the inside of her wet and tender pussy with my fingers is amazing. I wonder what will happen when I speed up... ){/i}"
 
 # game/events/alice.rpy:1815
 translate english alice_towel_after_club_85a3c085:
 
     # Alice_11 "Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс!"
-    Alice_11 ""
+    Alice_11 "Yes, Max, yes! I'm cumming... Get in deep... Yeah... Oh... Oh, yeah..."
 
 # game/events/alice.rpy:1820
 translate english alice_towel_after_club_eeeaaecc:
 
     # Alice_15 "Ты такой извращенец, Макс! Подглядываешь, фантазируешь всякое, а теперь хочешь смотреть, как я себя ублажаю..."
-    Alice_15 ""
+    Alice_15 "You're such a pervert, Max! Peeping, fantasizing, and now you want to watch me pleasure myself..."
 
 # game/events/alice.rpy:1821
 translate english alice_towel_after_club_bca1d02e:
 
     # Max_09 "Вот об этом я и говорю, ты очень неблагодарно себя ведёшь. Совершенно не хочешь меня порадовать в ответ..."
-    Max_09 ""
+    Max_09 "That's what I'm saying, you're being very ungrateful. You don't want to please me at all in return..."
 
 # game/events/alice.rpy:1827
 translate english alice_towel_after_club_505ec830:
 
     # Alice_06 "Нет, я хочу... Ахх... но это ведь так... неправильно. Ммм..."
-    Alice_06 ""
+    Alice_06 "No, I want to... Ahh... But this is so... Wrong. Mmm..."
 
 # game/events/alice.rpy:1828
 translate english alice_towel_after_club_6bbc3c8f:
 
     # Max_02 "Может, мне помассировать твои ножки, чтобы тебя это не так напрягало?"
-    Max_02 ""
+    Max_02 "Maybe I should massage your feet so you don't stress too much?"
 
 # game/events/alice.rpy:1829
 translate english alice_towel_after_club_7589c91e:
 
     # Alice_09 "Ох... Ты же знаешь, я никогда не смогу от этого отказаться. Уже можно было давно заметить, что они у меня целиком - эрогенная зона..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Oh... Well I can't turn that down. I'm sure you might have noticed I'm very sensitive there..." nointeract
 
 # game/events/alice.rpy:1838
 translate english alice_towel_after_club_3d921297:
 
     # Alice_07 "О да... Наши с тобой пальчики сегодня творят чудеса! Расшалились не на шутку. Как же меня это всё заводит..."
-    Alice_07 ""
+    Alice_07 "Oh yes... These fingers are working wonders today! They're really going at it. Oh, this is really turning me on..."
 
 # game/events/alice.rpy:1839
 translate english alice_towel_after_club_49efbb69:
 
     # Max_03 "Хочешь узнать, как твои ножки любят шалить?"
-    Max_03 ""
+    Max_03 "Want to see how your legs will react?"
 
 # game/events/alice.rpy:1840
 translate english alice_towel_after_club_549a22d2:
 
     # Alice_08 "Ухх, как интригующе звучит! Я вся в предвкушении узнать, что же они у меня такое любят?" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Hmmm, yes please! I wonder what will happen?" nointeract
 
 # game/events/alice.rpy:1849
 translate english alice_towel_after_club_ffb6b354:
 
     # Alice_10 "Ах! Да-а-а... это так классно... чувствовать твой большущий член... Я и не думала, что тебе понравится такое!"
-    Alice_10 ""
+    Alice_10 "Ah! Yeah... It's so good... To feel your big cock... I wasn't sure you'd like it!"
 
 # game/events/alice.rpy:1850
 translate english alice_towel_after_club_676d6c0d:
 
     # Max_04 "Как могут не нравится прикосновения твоих красивых и нежных ног... Особенно к члену!"
-    Max_04 ""
+    Max_04 "How could anyone not like the touch of your beautiful and delicate feet... Especially on my dick!"
 
 # game/events/alice.rpy:1856
 translate english alice_towel_after_club_84cc95b7:
 
     # Alice_09 "Ммм... Да, Макс, продолжай! Кажется, я скоро кончу... Ахх... ты сводишь меня с ума! Ох..."
-    Alice_09 ""
+    Alice_09 "Mmm... Yes, Max, go on! I think I'm going to come... Ahhh... you're driving me crazy! Oh..."
 
 # game/events/alice.rpy:1857
 translate english alice_towel_after_club_cabe6e82:
 
     # Max_05 "{i}( Алиса так приятно постанывает и всё глубже проникает пальцами в свою киску... Наверняка представляет, как я её трахаю! Вот бы до этого дошло... ){/i}"
-    Max_05 ""
+    Max_05 "{i}( Alice's moans get louder with every thrust of my fingers... I bet she's imagining me fucking her! If only it would come to that... ){/i}"
 
 # game/events/alice.rpy:1858
 translate english alice_towel_after_club_95313742:
 
     # Alice_11 "Ох, Макс... да, да! Я... кончаю... Ухх... Кажется, я не чувствую своих ног... всё..."
-    Alice_11 ""
+    Alice_11 "Oh, Max... yes, yes! I'm... cum-Uhh... I-I don't think I can feel my legs... I-I'm.."
 
 # game/events/alice.rpy:1864
 translate english alice_towel_after_club_max_turn_1852e864:
 
     # Max_02 "Ну вот, можешь же быть хорошей девочкой, хоть недолго."
-    Max_02 ""
+    Max_02 "There you go, you can be a good girl. If only for a little while."
 
 # game/events/alice.rpy:1870
 translate english alice_towel_after_club_max_turn_c02780d8:
 
     # Alice_05 "Мне понравилось, как ты меня \"наказал\", Макс! И я хочу, чтобы ты тоже кончил..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "I liked the way you \"punished me\", Max! And I want you to come too..." nointeract
 
 # game/events/alice.rpy:1878
 translate english alice_towel_after_club_max_turn_552bf71c:
 
     # Alice_04 "Так достаточно быстро? Ну и вымахал же у тебя такой член, Макс! Нравится? Не сдерживайся, а то у меня начинает уставать рука..." nointeract
-    Alice_04 "" nointeract
+    Alice_04 "Is that fast enough? What a big dick you've got, Max! Do you like it? Don't hold back, my arm's getting tired..." nointeract
 
 # game/events/alice.rpy:1885
 translate english alice_towel_after_club_max_turn_e856da6c:
 
     # Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
-    Alice_08 ""
+    Alice_08 "Honestly, I could hardly stop myself from starting out that way! But since you insist..."
 
 # game/events/alice.rpy:1897
 translate english alice_towel_after_club_max_turn_a657719d:
 
     # Max_20 "{i}( О да, сестрёнка... Она так сладко скользит своим языком по всей длине моего члена! И про головку не забывает... Ухх... ){/i}"
-    Max_20 ""
+    Max_20 "{i}( Oh yeah, sis... She's sliding her tongue all over the length of my cock so sweetly! And she's not ignoring the head... Uhh... ){/i}"
 
 # game/events/alice.rpy:1898
 translate english alice_towel_after_club_max_turn_ebb0f71e:
 
     # Alice_04 "Ммм... Только никому ни слова, что я тут вытворяла с твоим членом! Ты уже скоро?" nointeract
-    Alice_04 "" nointeract
+    Alice_04 "Mmm... Don't tell anyone what I've been doing with your cock, ok? Are you gonna cum?" nointeract
 
 # game/events/alice.rpy:1916
 translate english alice_towel_after_club_cum_boobs_f47ad262:
 
     # Alice_09 "Ого, сколько спермы... Ты заляпал мне всю грудь! Теперь мыться надо..."
-    Alice_09 ""
+    Alice_09 "Wow, that's a lot of cum... You sprayed all over my chest! Now I have to clean up..."
 
 # game/events/alice.rpy:1917
 translate english alice_towel_after_club_cum_boobs_05ac8115:
 
     # Max_03 "А ты разве не для этого ванну решила принять?"
-    Max_03 ""
+    Max_03 "Isn't that why you decided to take a bath?"
 
 # game/events/alice.rpy:1918
 translate english alice_towel_after_club_cum_boobs_b197e4d3:
 
     # Alice_06 "Да, точно... Мы же никому не станем рассказывать, что тут было?"
-    Alice_06 ""
+    Alice_06 "Yeah, right... We're not going to tell anyone what happened here, are we?"
 
 # game/events/alice.rpy:1919
 translate english alice_towel_after_club_cum_boobs_d7dd7483:
 
     # Max_02 "Я только полотенце принёс и пошёл спать..."
-    Max_02 ""
+    Max_02 "All I did was bring you a towel and go to bed..."
 
 # game/events/alice.rpy:1920
 translate english alice_towel_after_club_cum_boobs_50e121f5:
 
     # Alice_05 "Ага. Именно так всё и было!" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Yep. That's exactly what happened!" nointeract
 
 # game/events/alice.rpy:1932
 translate english alice_towel_after_club_cum_face_9601d551:
 
     # Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
-    Alice_06 ""
+    Alice_06 "Max! Seriously?! You came all over my face!"
 
 # game/events/alice.rpy:1933
 translate english alice_towel_after_club_cum_face_d5b2b244:
 
     # Max_07 "А ты хотела как-то по-другому?"
-    Max_07 ""
+    Max_07 "Relax, the look suits you!"
 
 # game/events/alice.rpy:1934
 translate english alice_towel_after_club_cum_face_24506f4c:
 
     # Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
-    Alice_13 ""
+    Alice_13 "Asshole... You could have said something in case it got in my eyes... Now I'll have to wash off..."
 
 # game/events/alice.rpy:1935
 translate english alice_towel_after_club_cum_face_05ac8115:
 
     # Max_03 "А ты разве не для этого ванну решила принять?"
-    Max_03 ""
+    Max_03 "Isn't that why you decided to take a bath?"
 
 # game/events/alice.rpy:1936
 translate english alice_towel_after_club_cum_face_b197e4d3:
 
     # Alice_06 "Да, точно... Мы же никому не станем рассказывать, что тут было?"
-    Alice_06 ""
+    Alice_06 "Yeah, right... We're not going to tell anyone what happened here, are we?"
 
 # game/events/alice.rpy:1937
 translate english alice_towel_after_club_cum_face_d7dd7483:
 
     # Max_02 "Я только полотенце принёс и пошёл спать..."
-    Max_02 ""
+    Max_02 "All I did was bring you a towel and go to bed..."
 
 # game/events/alice.rpy:1938
 translate english alice_towel_after_club_cum_face_50e121f5:
 
     # Alice_05 "Ага. Именно так всё и было!" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Yep. That's exactly what happened!" nointeract
 
 translate english strings:
 
     # game/events/alice.rpy:1728
     old "{i}отправиться спать{/i}"
-    new ""
+    new "{i}Go to bed{/i}"
 
     # game/events/alice.rpy:1780
     old "Ну, разве, что так...\n{i}(начать массировать её киску рукой){/i}"
-    new ""
+    new "Well, unless...\n{i}(Start massaging her pussy){/i}"
 
     # game/events/alice.rpy:1780
     old "Поласкай свою киску для меня..."
-    new ""
+    new "Rub your pussy for me..."
 
     # game/events/alice.rpy:1799
     old "{i}проникнуть в её киску пальцами{/i}"
-    new ""
+    new "{i}Penetrate her pussy with your fingers{/i}"
 
     # game/events/alice.rpy:1829
     old "{i}массировать её ножки{/i}"
-    new ""
+    new "{i}Massage her feet{/i}"
 
     # game/events/alice.rpy:1840
     old "{i}тереться членом о её ногу{/i}"
-    new ""
+    new "{i}Rub her legs with your cock{/i}"
 
     # game/events/alice.rpy:1870
     old "Ох! Тогда тебе стоит быстрее работать рукой..."
-    new ""
+    new "Oh! Then you should work faster with your hand..."
 
     # game/events/alice.rpy:1870
     old "Так пусти в дело свой язычок..."
-    new ""
+    new "So put your tongue to work..."
 
     # game/events/alice.rpy:1870
     old "Вообще-то, я надеялся, что ты возьмёшь его в рот..."
-    new ""
+    new "Actually, I was hoping you'd take it in your mouth..."
 
     # game/events/alice.rpy:1898
     old "{i}кончить ей на лицо{/i}"
-    new ""
+    new "{i}Cum on her face{/i}"
 
     # game/events/alice.rpy:1898
     old "{i}кончить ей на грудь{/i}"
-    new ""
+    new "{i}Cum on her chest{/i}"
 

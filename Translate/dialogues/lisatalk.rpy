@@ -8796,5 +8796,5 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:1524
     old "{i}продолжить ниже{/i}"
-    new ""
+    new "{i}Continue below{/i}"
 
