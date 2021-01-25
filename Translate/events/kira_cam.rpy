@@ -270,29 +270,29 @@ translate english cam1_kira_night_swim_5f08638b:
 translate english cam0_return_from_club_39c0bef3:
 
     # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 ""
+    Max_09 "I can't really see anything... It might be worth looking through another camera..."
 
 # game/events/kira_cam.rpy:419
 translate english cam0_return_from_club_1ecc7ee3:
 
     # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы бассейн..."
-    Max_09 ""
+    Max_09 "I can't see anything. I should install a camera that covers the pool..."
 
 # game/events/kira_cam.rpy:423
 translate english cam1_return_from_club_4f374152:
 
     # Max_01 "{i}( Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их... ){/i}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{i}( The girls are back from the club! I better go meet them now if I want a chance at a little fun before bed... ){/i}" nointeract
 
 # game/events/kira_cam.rpy:430
 translate english cam1_return_from_club_984a3aa6:
 
     # Max_00 "Поздно уже, пойду лучше спать..."
-    Max_00 ""
+    Max_00 "It's getting late, I'd better go to bed..."
 
 translate english strings:
 
     # game/events/kira_cam.rpy:423
     old "{i}встретить их{/i}"
-    new ""
+    new "{i}Go meet them{/i}"
 
