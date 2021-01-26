@@ -3018,7 +3018,7 @@ translate english return_from_club_d85c0008:
 translate english return_from_club_c199a7b0:
 
     # Kira_07 "Зачем рассказывать, Макс, когда можно показать?! Присаживайся, если хочешь посмотреть это шоу..."
-    Kira_07 "Hmmm, you know the rule- Show don't tell? Why don't you sit down?"
+    Kira_07 "Hmmm, you know the rule - Show don't tell? Why don't you sit down?"
 
 # game/events/kira.rpy:1992
 translate english return_from_club_3b9356a1:

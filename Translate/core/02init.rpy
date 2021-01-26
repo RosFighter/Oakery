@@ -426,3 +426,15 @@ translate english strings:
     old "Что нового узнала на уроке у мамы и Эрика?"
     new "What did you learn from Mom and Eric?"
 
+# TODO: Translation updated at 2021-01-26 21:47
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "{i}урок поцелуев{/i}"
+    new ""
+
+    # game/core/02init.rpy:100
+    old "Так когда будем снова фотографироваться, тётя Кира?"
+    new ""
+

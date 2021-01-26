@@ -914,3 +914,29 @@ translate english punishment_alice_78ef4f88:
     # Max_04 "{i}( Люблю, когда Алису наказывают... Стервозинка она та ещё, но без последствий полюбоваться её голыми прелестями в других ситуациях опасно для жизни! ){/i}"
     Max_04 "{i}( I love seeing Alice get what she deserves for a change! She's such a bitch... I'm lucky I'm seeing her tight body without having to fear for my life! ){/i}"
 
+# TODO: Translation updated at 2021-01-26 21:47
+
+# game/dialogues/punishment.rpy:424
+translate english punishment_lisa_98ec972c:
+
+    # Ann_12 "Лиза. Твой классный руководитель говорит, ты плохо себя ведёшь в школе! Молчишь? Значит, это правда... Всё, давай раздевайся догола и быстро, без разговоров!"
+    Ann_12 ""
+
+# game/dialogues/punishment.rpy:446
+translate english punishment_lisa_a1d39e4d:
+
+    # Max_08 "Мам, не нужно наказывать Лизу. Обещаю, что бы там ни было, я поработаю с ней над поведением, честно. Вот увидишь, проблем больше не будет!"
+    Max_08 ""
+
+# game/dialogues/punishment.rpy:496
+translate english punishment_lisa_303b7136:
+
+    # Ann_16 "Давай терпи! Плохо вела себя в школе, получила по голой заднице у всех на глазах."
+    Ann_16 ""
+
+# game/dialogues/punishment.rpy:498
+translate english punishment_lisa_b8107edc:
+
+    # Ann_16 "Давай терпи! Получила двойку, получила по голой заднице у всех на глазах."
+    Ann_16 ""
+
