@@ -1220,25 +1220,25 @@ translate english strings:
 
     # game/core/03variables.rpy:323
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! В обмен на возможность подглядывать за этим процессом и кое-каким бонусом, с которым мне нужно будет определиться со временем, я согласился его поддержать. Мы же с ним как-никак \"друзья\"."
-    new ""
+    new "Eric stepped in as soon as I gave Lisa a book on sex ed. Mom has decided to join him, now they're both taking over her sex education! I agreed to help Eric so he'd let me spy on the process, as well as some other perks we're yet to agree on. Let's see where this goes, we are \"friends\" after all."
 
     # game/core/03variables.rpy:323
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! В обмен на возможность подглядывать за этим процессом, я согласился его поддержать. Незачем мне враждовать с Эриком."
-    new ""
+    new "Eric stepped in as soon as I gave Lisa a book on sex ed. Mom has decided to join him, now they're both taking over her sex education! I agreed to help Eric so he'd let me spy on the process. There's no reason for me to antagonize him. "
 
     # game/core/03variables.rpy:323
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! Не смотря на то, что мы с ним \"дружим\", я постарался убедить его, что Лизе ещё рановато это познавать... Это не особо помогло, но Эрик дал мне пару недель на \"чтение книг по теме сексуального образования\" с Лизой. По крайней мере, я выиграл немного времени, которое стоит использовать с умом..."
-    new ""
+    new "Eric stepped in as soon as I gave Lisa a book on sex ed. Mom has decided to join him, now they're both taking over her sex education! Despite the fact that we're \"friends\", I tried to convince him that Lisa isn't ready to learn... It didn't help much, but Eric gave me a couple of weeks to read that book with Lisa. At least I've bought some time that's worth using wisely..."
 
     # game/core/03variables.rpy:323
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! Я, естественно, отказался ему в этом содействовать. Враждовать, так враждовать! Вряд ли теперь у меня есть много времени, чтобы избавиться от него, так что нужно скорее искать такой способ..."
-    new ""
+    new "Eric stepped in as soon as I gave Lisa a book on sex ed. Mom has decided to join him, now they're both taking over her sex education! Naturally, I refused to assist him in this. I probably don't have much time to get rid of him before this becomes a full scale war, so I'd better find a way soon..."
 
     # game/core/03variables.rpy:323
     old "Как выяснилось, Эрик проплатил репетитора для Лизы по воскресеньям, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. Теперь он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
-    new ""
+    new "As it turned out, Eric paid for Lisa's Sunday tutor to improve her grades, in reality, he's trying to get closer to her. Now he and Mom will be giving Lisa sex education classes on Mondays..."
 
     # game/core/03variables.rpy:323
     old "Как выяснилось, Эрик проплатил дополнительные курсы для Лизы в школе, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. А заодно и от меня отстранить, ведь теперь моя помощь с уроками ей особо и не нужна. И ещё он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
-    new ""
+    new "As it turned out, Eric paid for Lisa's Sunday tutor to improve her grades, in reality, he's trying to get closer to her. Not to mention make her less dependant on me so that she doesn't need my help. Now he and Mom will be giving Lisa sex education classes on Mondays..."
 

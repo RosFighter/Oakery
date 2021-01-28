@@ -432,9 +432,9 @@ translate english strings:
 
     # game/core/02init.rpy:100
     old "{i}урок поцелуев{/i}"
-    new ""
+    new "{i}Kissing Lesson{/i}}"
 
     # game/core/02init.rpy:100
     old "Так когда будем снова фотографироваться, тётя Кира?"
-    new ""
+    new "So when are we doing another photo-shoot?"
 
