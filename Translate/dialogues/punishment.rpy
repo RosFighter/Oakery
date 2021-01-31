@@ -920,23 +920,23 @@ translate english punishment_alice_78ef4f88:
 translate english punishment_lisa_98ec972c:
 
     # Ann_12 "Лиза. Твой классный руководитель говорит, ты плохо себя ведёшь в школе! Молчишь? Значит, это правда... Всё, давай раздевайся догола и быстро, без разговоров!"
-    Ann_12 ""
+    Ann_12 "Lisa, your homeroom teacher says you have been misbehaving at school! You have nothing to say? So it's true... Come on then, strip! No talking!"
 
 # game/dialogues/punishment.rpy:446
 translate english punishment_lisa_a1d39e4d:
 
     # Max_08 "Мам, не нужно наказывать Лизу. Обещаю, что бы там ни было, я поработаю с ней над поведением, честно. Вот увидишь, проблем больше не будет!"
-    Max_08 ""
+    Max_08 "Mom, you don't have to punish Lisa. I promise, whatever it is, I'll work with her on her behavior, honestly. There won't be any more problems, you'll see!"
 
 # game/dialogues/punishment.rpy:496
 translate english punishment_lisa_303b7136:
 
     # Ann_16 "Давай терпи! Плохо вела себя в школе, получила по голой заднице у всех на глазах."
-    Ann_16 ""
+    Ann_16 "Let's see! If you misbehave at school, you will come home and get spanked."
 
 # game/dialogues/punishment.rpy:498
 translate english punishment_lisa_b8107edc:
 
     # Ann_16 "Давай терпи! Получила двойку, получила по голой заднице у всех на глазах."
-    Ann_16 ""
+    Ann_16 "Let's see! If you fail at school, you will come home and get spanked."
 

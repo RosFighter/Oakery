@@ -8804,17 +8804,17 @@ translate english strings:
 translate english liza_hand_mass_c99051f1_1:
 
     # Max_01 "Мне только в радость, сестрёнка. Обращайся."
-    Max_01 ""
+    Max_01 "It's my pleasure, Sis. You're welcome."
 
 # game/dialogues/lisatalk.rpy:3734
 translate english lisa_stop_kiss_ed0888b4:
 
-    # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. {/i}"
-    Max_09 ""
+    # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. ){/i}"
+    Max_09 "{i}( I think I'd better stop kissing lessons with Lisa for now so I don't draw attention from Eric. ){/i}"
 
 # game/dialogues/lisatalk.rpy:3737
 translate english lisa_stop_kiss_173f5e04:
 
     # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода побыстрее от меня избавиться. ){/i}"
-    Max_09 ""
+    Max_09 "{i}( Perhaps I'd better stop my kissing lessons with Lisa for now, so as not to give Eric an excuse to get rid of me quickly. ){/i}"
 
