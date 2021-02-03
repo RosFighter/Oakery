@@ -120,7 +120,7 @@ translate english strings:
 
     # game/core/02init.rpy:74
     old "В процессе игры, во время диалогов и других действий, вы можете открыть для себя новые \"возможности\". Их механика немного похожа на \"задания\" или \"квесты\" из других игр, но есть некоторые отличия.\n\n\n\"Возможности\" могут открывать доступ к скрытым событиям или покупкам в интернет-магазине, к новым опциям в ноутбуке или действиям в некоторых комнатах. Читайте внимательно описание каждой \"возможности\" и вы ничего не упустите!"
-    new "During in-game dialogues and other actions, you may be presented with \"opportunities\". These are comparable to quests to in other games, with a few differences. \n\n\n\"Opportunities\" can open hidden actions, items in the online shop, options on your laptop and actions in some rooms. Read their description carefully and you won't miss anything!"
+    new "During in-game dialogues and other actions, you may be presented with \"opportunities\". These are comparable to quests in other games, with a few differences. \n\n\n\"Opportunities\" can open hidden actions, items in the online shop, options on your laptop and actions in some rooms. Read their description carefully and you won't miss anything!"
 
     # game/core/02init.rpy:74
     old "Настроение"
@@ -148,7 +148,7 @@ translate english strings:
 
     # game/core/02init.rpy:82
     old "Насчёт твоего блога... А если не особо раздеваться?"
-    new "About your blog...maybe you don't have to undress completely?"
+    new "About your blog... Maybe you don't have to undress completely?"
 
     # game/core/02init.rpy:82
     old "О школе..."

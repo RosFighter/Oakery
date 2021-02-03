@@ -92,7 +92,7 @@ translate english strings:
 
     # game/core/03variables.rpy:42
     old "Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."
-    new "Alice-my older sister. She has a short fuse, if she's angry at me I can expect a slap to the face at best. She recently graduated from school and is supposed to be looking for work, but all I see her do all day blogging on her laptop. She thinks I'm an idiot and we don't really get along. Why do older sisters have to be so bitchy?"
+    new "Alice-my older sister. She has a short fuse, if she's angry at me I can expect a slap to the face at best. She recently graduated from school and is supposed to be looking for work, but all I see her do all day is blog on her laptop. She thinks I'm an idiot and we don't really get along. Why do older sisters have to be so bitchy?"
 
     # game/core/03variables.rpy:42
     old "Анна"
@@ -632,11 +632,11 @@ translate english strings:
 
     # game/core/03variables.rpy:314
     old "Я нашёл пустую коробку из под скрытой камеры. Видимо, она установлена где-то в доме. Нужно поискать как следует - вдруг, кто-то за нами наблюдал всё это время?"
-    new "I found an empty box that contained hidden camera. It's probably installed somewhere in the house. I should try to find it, what if someone has been watching us all this time?"
+    new "I found an empty box that would have contained a hidden camera. It's probably installed somewhere in the house. I should try to find it, what if someone has been watching us all this time?"
 
     # game/core/03variables.rpy:314
     old "Итак, я нашёл скрытую камеру в гостиной. Она вмонтирована в стену, видимо, во время ремонта. Поэтому, её нельзя вытащить, не повредив. Кроме того, оказалось, что камера сейчас ни к чему не подключена. Может быть, стоит целенаправленно изучить способы подключения камер, чтобы извлечь из неё какую-то пользу..."
-    new "I've found the hidden cam in the living room. It's mounted in the wall, I can't pull it out without damaging it. It's not connected to anything, maybe I should look up ways to fix that, it could be useful..."
+    new "I've found the hidden cam in the living room. It's mounted in the wall, so I can't pull it out without damaging it. It's not connected to anything, maybe I should look up ways to fix that, it could be useful..."
 
     # game/core/03variables.rpy:314
     old "Ко мне пришла отличная идея - заработать на трансляции с веб-камеры в интернет, но я об этом знаю очень мало... Может быть, поможет какая-то литература?"
@@ -668,7 +668,7 @@ translate english strings:
 
     # game/core/03variables.rpy:322
     old "Лиза снова увидела мой утренний стояк. На этот раз маму она не позвала, что уже хорошо. Хотя, смотрела она на мой член не только с подозрением, но ещё и с интересом. По крайней мере, мне так показалось. Думаю, нужно с ней об этом поговорить..."
-    new "Lisa saw my morning wood again. This time she didn't call Mom, which is good. I feel like she was staring at my cock with something other than suspicion this time... I think we should talk to her about it..."
+    new "Lisa saw my morning wood again. This time she didn't call Mom, which is good. I feel like she was staring at my cock with something other than suspicion this time... I think I should talk to her about it..."
 
     # game/core/03variables.rpy:322
     old "Это, конечно, не точно, но Лиза хотела потрогать мой член, думая, что я спал. И судя по её реакции на то, что я это увидел, даже она сама с себя удивилась. Посмотрим, что она потом об этом скажет..."
@@ -680,7 +680,7 @@ translate english strings:
 
     # game/core/03variables.rpy:322
     old "Итак, Лиза поинтересовалась, чему же я собираюсь её учить. И сразу же поставила меня в глупую ситуацию. Я вроде бы должен её учить, но сам не умею даже целоваться! Нужно срочно найти кого-то, кто бы мне помог в этом... Да, легко сказать..."
-    new "So, Lisa asked me what I was going to teach her, and she immediately put me in a sticky situation. I'm supposed to teach her how to kiss, but what do I know?! I need to find someone to help me with this right now... maybe easier said than done..."
+    new "So, Lisa asked me what I was going to teach her, and she immediately put me in a sticky situation. I'm supposed to teach her how to kiss, but what do I know?! I need to find someone to help me with this right now... Maybe easier said than done..."
 
     # game/core/03variables.rpy:322
     old "Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телек."
@@ -708,7 +708,7 @@ translate english strings:
 
     # game/core/03variables.rpy:322
     old "Лизе очень нравится как я целуюсь. Она даже намекнула, что пора бы научить её ещё чему-то полезному. На этот раз, как мне кажется, стоит подтянуть теорию. Может быть, купить ей какую-то книжку по анатомии, чтобы она разобралась в физиологии и поняла, какие естественные процессы могут происходить между мужчинами и женщинами?"
-    new "Lisa really likes the way I kiss her. She even hinted that she might be interested in learning something more advanced. It's time to tighten my theory. Maybe I should buy her an anatomy book so she could learn more about the natural proccesses that happen between men and women?"
+    new "Lisa really likes the way I kiss her. She even hinted that she might be interested in learning something more advanced. It's time to test my theory. Maybe I should buy her an anatomy book so she could learn more about the natural proccesses that happen between men and women?"
 
     # game/core/03variables.rpy:322
     old "Я решил, что и мне самому будет полезно прочитать купленую для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
@@ -724,7 +724,7 @@ translate english strings:
 
     # game/core/03variables.rpy:322
     old "Я подарил Лизе книжку, которая содержит много ответов на её вопросы. Да мне и самому было бы полезно её почитать, но лень.\n\n\nНужно будет поинтересоваться через какое-то время, что она об этой книге думает..."
-    new "I gave Lisa a book that should answer some of her questions. Yes, it would be useful for me to read it myself, but I'm too lazy.\n\n\Will need to ask after a while what she thinks about this book..."
+    new "I gave Lisa a book that should answer some of her questions. Yes, it would be useful for me to read it myself, but I'm too lazy.\n\n\I will need to ask after a while what she thinks about this book..."
 
     # game/core/03variables.rpy:342
     old "Особые книги"
@@ -752,7 +752,7 @@ translate english strings:
 
     # game/core/03variables.rpy:349
     old "Очевидно, Лиза по уши влюблена в какого-то своего одноклассника по имени Алекс. Как она рассказала, у него есть подруга Оливия, самая красивая девочка в школе. Лиза ждёт от меня помощи в виде совета - как ей быть дальше.\n\nВ голову приходит сразу три варианта: предложить ей забыть об этом парне, предложить ей сражаться с Оливией за Алекса до конца или же помочь переключить внимание Оливии на кого-то другого..."
-    new "Lisa is obviously in love in her schoolmate Alex. She told me he has a girlfriend Olivia, the most beautiful girl in the school. I can help Lisa by suggesting her next step.\n\nI can see three options: tell her to forget all about him, fight with Olivia over him, or maybe we could channel Olivia's attention onto someone else..."
+    new "Lisa is obviously in love with her schoolmate Alex. She told me he has a girlfriend - Olivia, the most beautiful girl in the school. I can help Lisa by suggesting her next step.\n\nI can see three options: Tell her to forget all about him, fight with Olivia over him, or maybe we could channel Olivia's attention onto someone else..."
 
     # game/core/03variables.rpy:349
     old "Да, и похоже о своём мальчике Лиза разговаривает только, когда у неё хорошее настроение... \n\n{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}"
@@ -780,7 +780,7 @@ translate english strings:
 
     # game/core/03variables.rpy:356
     old "В результате поисков информации в интернете о том, чем могла бы заняться Алиса, удалось кое-что выяснить. Самыми популярными оказались блоги, где ведущие - девушки. Причём, чем более откровенные наряды и чем больше грудь, тем более популярны шоу. С грудью, конечно, ничего не поделать, а вот наряды... Может быть, поговорить с ней об этом?"
-    new "After conducting extensive research on the internet, I made a shocking discovery. All of the most popular bloggers are female! Furthermore, their popularity appears to be closely correlated with the skimpiness of their outfits and size of their breasts. Now, there's not much I can do about Alices boobs, but some sexier outftits...should I talk to her about it?"
+    new "After conducting extensive research on the internet, I made a shocking discovery. All of the most popular bloggers are female! Furthermore, their popularity appears to be closely correlated with the skimpiness of their outfits and size of their breasts. Now, there's not much I can do about Alices boobs, but some sexier outftits... Should I talk to her about it?"
 
     # game/core/03variables.rpy:356
     old "Я пообщался с Алисой насчёт своих выводов о популярности блога и намекнул, что можно рекламировать не только крема и лаки, но и нижнее бельё, например. Но крутить своей попкой перед камерой она не собирается, так что покрутит сама того не зная, когда я поставлю скрытую камеру в её комнату. Как знать, сколько всего интересного можно будет увидеть..."
@@ -796,11 +796,11 @@ translate english strings:
 
     # game/core/03variables.rpy:356
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Правда, увидеть мне ничего не удалось, только Алису уже в этом самом белье, но даже это было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
-    new "I gave Alice a cute set of underwear. She really liked it. However, I didn't get to see anything. She was wearing it before I got a chance to watch, but even that was exciting... But the interesting thing was...she hinted I could try looking for something more sexual!"
+    new "I gave Alice a cute set of underwear. She really liked it. However, I didn't get to see anything. She was wearing it before I got a chance to watch, but even that was exciting... But the interesting thing was... She hinted I could try looking for something more sexual!"
 
     # game/core/03variables.rpy:356
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Увидел я не так чтобы много всего, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
-    new "I gave Alice a cute set of underwear. She really liked it. I even got to watch her try it on! That was exciting... But the interesting thing was...she hinted I could try looking for something more sexual!"
+    new "I gave Alice a cute set of underwear. She really liked it. I even got to watch her try it on! That was exciting... But the interesting thing was... She hinted I could try looking for something more sexual!"
 
     # game/core/03variables.rpy:367
     old "Купальник"
@@ -808,7 +808,7 @@ translate english strings:
 
     # game/core/03variables.rpy:367
     old "Я заметил, что Лиза всё время в одном и том же закрытом купальнике. Так же невозможно толком загореть? Она тоже так считает, но другого нет. Остальные пропали с другими вещами во время переезда. Может быть, удастся как-то ей помочь?"
-    new "I noticed Lisa always wearing the same one-piece swimsuit. How is she supposed to tan in that? She agrees, but she doesn't have anything else to wear, everything got lost when we moved. Maybe I can help her out somehow?"
+    new "I noticed Lisa is always wearing the same one-piece swimsuit. How is she supposed to tan in that? She agrees, but she doesn't have anything else to wear, everything got lost when we moved. Maybe I can help her out somehow?"
 
     # game/core/03variables.rpy:367
     old "Во время завтрака Лиза намекнула маме, что нужно бы купить во время шоппинга купальник, который не скрывает половину тела и в котором можно загорать..."
@@ -860,11 +860,11 @@ translate english strings:
 
     # game/core/03variables.rpy:376
     old "Итак, у меня есть коробка конфет с ликёром. Судя по надписи на коробке, аромат утончённый. Это значит, есть шанс, что Алиса не заметит алкоголь. Интересно, этого хватит, чтобы её как-то подтолкнуть к этим... безбашенным поступкам?"
-    new "Well, I got myself a box of chocolate liqueurs. They should be subtle enough for sis to not notice any alcohol. I wonder if that would be enough for her to... change."
+    new "Well, I got myself a box of chocolate liqueurs. They should be subtle enough for sis to not notice any alcohol. I wonder if that would be enough for her to... Change."
 
     # game/core/03variables.rpy:376
     old "Всё получилось. И прошло как-то... слишком неожиданно. О таком даже не принято никому рассказывать. Видимо, лишняя капля алкоголя сорвала Алисе крышу и она напилась в ночном клубе. Ну что же, будем надеяться, что она сама ничего не помнит об этом, а иначе мне не жить..."
-    new "Everything worked out fine. And quite... unexpectedly. Can't tell anyone about this. I guess Alice lost her inhibitions and got herself drunk at the club. Let's hope she won't remember anything, or I'm a goner..."
+    new "Everything worked out fine. And quite... Unexpectedly. Can't tell anyone about this. I guess Alice lost her inhibitions and got herself drunk at the club. Let's hope she won't remember anything, or I'm a goner..."
 
     # game/core/03variables.rpy:387
     old "Дым сигарет"
@@ -892,7 +892,7 @@ translate english strings:
 
     # game/core/03variables.rpy:394
     old "Я поговорил с Лизой насчёт уроков и намекнул, что моя помощь будет стоить... некоторых услуг. Конечно, она отказалась. Но это пока. До первого наказания. Как только её отшлёпают у меня на глазах, всё изменится! Но для этого надо сделать так, чтобы она снова получила двойку..."
-    new "I talked with Lisa and hinted that my help will cost her some... services. She refused. Until her first punishment, that is. She'll have a change of heart after Mom spanks her in front of me. Now I just have to fail her homework."
+    new "I talked with Lisa and hinted that my help will cost her some... Services. She refused. Until her first punishment, that is. She'll have a change of heart after Mom spanks her in front of me. Now I just have to fail her homework."
 
     # game/core/03variables.rpy:394
     old "Я поговорил с Лизой и пообещал ей, что помогу с уроками. Причём, абсолютно безвозмездно. То есть - даром. Конечно, это не очень свойственно для меня, но зато есть все шансы наладить отношения с сестрёнкой и завоевать её доверие..."
@@ -1000,7 +1000,7 @@ translate english strings:
 
     # game/core/03variables.rpy:428
     old "К сожалению, я не успел подарить Лизе сладость в срок и поэтому она рассказала маме, как я за ней подглядывал. Возможно, в следующий раз, если Лиза меня заметит, я успею..."
-    new "I didn't get a chance to get Lisa her sweets on time, so she told Mom about my spying. If Lisa catches me again, I might have another chance..."
+    new "I didn't get Lisa her sweets on time, so she told Mom about my spying. If Lisa catches me again, I might have another chance..."
 
     # game/core/03variables.rpy:428
     old "Я купил для Лизы шоколад \"Ritter Sport\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большые шоколадки?"
@@ -1016,7 +1016,7 @@ translate english strings:
 
     # game/core/03variables.rpy:428
     old "Как оказалось, за нравящиеся Лизе сладости можно получить крепкие объятия! И это не смотря на то, что я за ней подглядывал. Посмотрим, что ещё мне удастся получить от сестрёнки..."
-    new "Looks like you can get a big hug for getting sweets that Lisa likes! And this is despite the fact that I was spying on her. Let's see what else I can get from my sister..."
+    new "Looks like I can get a big hug for getting sweets that Lisa likes! And this is despite the fact that I was spying on her. Let's see what else I can get from my sister..."
 
     # game/core/03variables.rpy:428
     old "Обнимашки - не единственное, что я получил от Лизы за сладости. Она была в таком восторге, что даже чмокнула меня в щёку! Вот уж не думал, что подглядывания за сестрёнкой могут обернуться такими приятными неожиданностями! Интересно, что будет дальше..."
@@ -1024,7 +1024,7 @@ translate english strings:
 
     # game/core/03variables.rpy:428
     old "Похоже, сладостей Лизе уже мало и она хочет халатик, как у Алисы. Это уже серьёзная покупка! На этот раз времени у меня больше, но всё равно лучше поторопиться с подарком. Интересно, что меня будет за это ждать..."
-    new "It seems that sweets aren't enough for Lisa. Now, she wants a robe like Alice's. This is a serious purchase! I have more time this to get it, but it's still better to hurry up with the gift. I wonder what I'll get for it..."
+    new "It seems that sweets aren't enough for Lisa. Now, she wants a robe like Alice's. This is a serious purchase! I have more time to get it, but it's still better to hurry up with the gift. I wonder what I'll get for it..."
 
     # game/core/03variables.rpy:428
     old "От моих подарков Лиза уже не просто целует меня в щёку, а запрыгивает на меня с крепкими объятиями! Может быть и мне уже пора в такие моменты проявлять какую-то активность? Так что подглядывать полезно, если правильно извиниться."
@@ -1040,7 +1040,7 @@ translate english strings:
 
     # game/core/03variables.rpy:440
     old "Увы, я не успел подарить Алисе сладость в срок и поэтому она рассказала маме, как я за ней подглядывал. Возможно, в следующий раз, если Алиса меня заметит, я успею..."
-    new "Unfortunately, I did not give Alice a sweet in time and so she told Mom how I spied on her. Maybe next time, if Alice sees me, I'll make it..."
+    new "Unfortunately, I did not give Alice a sweet in time and so she told Mom I spied on her. Maybe next time, if Alice sees me, I'll make it..."
 
     # game/core/03variables.rpy:440
     old "Я купил для Алисы конфеты \"Ferrero Rocher\" и она была очень довольна! Ещё бы, ведь оказалось, что это её любимая сладость! Может быть, в следующий раз, стоит подарить ей большую коробку с этими конфетами?"
@@ -1064,7 +1064,7 @@ translate english strings:
 
     # game/core/03variables.rpy:440
     old "Похоже, сладостей Алисе уже мало и теперь ОНА будет ставить условия! Она хочет, чтобы я купил ей пижаму и это уже покупка посерьёзнее! На этот раз времени у меня больше, но всё равно лучше поторопиться с подарком. Интересно, что меня будет за это ждать..."
-    new "It seems that Alice's sweets are not enough and now she will set conditions! She wants me to buy her pajamas and this is a bigger purchase! I have more time this time, but it's still better to hurry up with the gift. I wonder what I'll get for it..."
+    new "It seems that Alice's sweets are not enough and now she will set conditions! She wants me to buy her pajamas and this is a bigger purchase! I have more time, but it's still better to hurry up with the gift. I wonder what I'll get for it..."
 
     # game/core/03variables.rpy:440
     old "Алиса согласилась пустить меня к себе в комнату, пока примеряла пижаму! Конечно, она просила, чтобы я не подглядывал, хотя прекрасно знала, что я буду... И угрозы её стали какими-то шуточными. Интересно, к чему это приведёт? Так что подглядывать полезно, если правильно извиниться."
@@ -1164,7 +1164,7 @@ translate english strings:
 
     # game/core/03variables.rpy:700
     old "Тётя Кира, мамина младшая сестра. Конечно, у неё и раньше не были замечены какие-либо комплексы, но сейчас она стала такой... такой..."
-    new "Aunt Kira, Mom's younger sister. She wasn't exactly shy before, but now she's so... so..."
+    new "Aunt Kira, Mom's younger sister. She wasn't exactly shy before, but now she's so... So..."
 
     # game/core/03variables.rpy:808
     old "Любимая тётя"
@@ -1172,7 +1172,7 @@ translate english strings:
 
     # game/core/03variables.rpy:808
     old "Итак, к нам приехала тётя Кира, мамина младшая сестра. Конечно, и раньше не были замечены у неё какие-либо комплексы, но сейчас она стала такой... такой... А ещё она увидела мой член, в первый же день! Так неловко. Но и себя тётя Кира показала во всей красе, в таком купальнике, если его можно назвать купальником... Да ещё такие намёки на моего папу. Неужели, они были настолько... знакомы? Нужно выпытать у неё всё, что только возможно."
-    new "Aunt Kira, Mom's younger sister, has come to visit us. I had no idea she'd be so promiscuous...she even saw my cock on her first day! How embarrassing. Having her around when she wears that swimsuit...if you could even call it a swimsuit, keeps giving me uncontrollable urges. She even said something about my dad, could she have been close with him? I need to find out everything I can."
+    new "Aunt Kira, Mom's younger sister, has come to visit us. I had no idea she'd be so promiscuous... She even saw my cock on her first day! How embarrassing. Having her around when she wears that swimsuit... If you could even call it a swimsuit, keeps giving me uncontrollable urges. She even said something about my dad, could she have been close with him? I need to find out everything I can."
 
     # game/core/03variables.rpy:808
     old "Я рассказал тёте Кире всё про Эрика, вот как есть, так и сказал. Кажется, она сомневается в моих словах, но пообещала аккуратно всё выяснить и разузнать. Может быть, даже с самим Эриком пообщается..."
@@ -1224,7 +1224,7 @@ translate english strings:
 
     # game/core/03variables.rpy:323
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! В обмен на возможность подглядывать за этим процессом, я согласился его поддержать. Незачем мне враждовать с Эриком."
-    new "Eric stepped in as soon as I gave Lisa a book on sex ed. Mom has decided to join him, now they're both taking over her sex education! I agreed to help Eric so he'd let me spy on the process. There's no reason for me to antagonize him. "
+    new "Eric stepped in as soon as I gave Lisa a book on sex ed. Mom has decided to join him, now they're both taking over her sex education! I agreed to help Eric so he'd let me spy on the process. There's no reason for me to antagonize him."
 
     # game/core/03variables.rpy:323
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! Не смотря на то, что мы с ним \"дружим\", я постарался убедить его, что Лизе ещё рановато это познавать... Это не особо помогло, но Эрик дал мне пару недель на \"чтение книг по теме сексуального образования\" с Лизой. По крайней мере, я выиграл немного времени, которое стоит использовать с умом..."
