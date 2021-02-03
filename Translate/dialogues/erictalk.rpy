@@ -936,3 +936,459 @@ translate english Eric_talk_about_Lisa_1_70a63eda:
     # Eric_01 "Теперь уже нет. Она теперь моя, так что больше ничему её не учи, я сделаю это сам."
     Eric_01 "Not anymore. She's mine now, so don't teach her anything else, I'll do it myself."
 
+# TODO: Translation updated at 2021-02-04 00:37
+
+# game/dialogues/erictalk.rpy:450
+translate english Eric_talk_about_Alice_0_5f1ddc7a:
+
+    # Eric_01 "Не торопись уходить, Макс. Нужно поговорить наедине."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:451
+translate english Eric_talk_about_Alice_0_3bbc12a6:
+
+    # Max_07 "О чём?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:452
+translate english Eric_talk_about_Alice_0_6f219dbb:
+
+    # Eric_02 "Об Алисе. Вернее о том, чем она занимается за своим компьютером?" nointeract
+    Eric_02 "" nointeract
+
+# game/dialogues/erictalk.rpy:457
+translate english Eric_talk_about_Alice_0_d798872a:
+
+    # Eric_03 "Если она ещё чем-то важным занимается за компьютером, то не только..."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:458
+translate english Eric_talk_about_Alice_0_3c5fbf24:
+
+    # Max_01 "Сперва она бьюти-блог вела, но я её уговорил пойти дальше и рекламировать нижнее бельё, чем она сейчас и пытается заниматься."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:459
+translate english Eric_talk_about_Alice_0_5bcc867b:
+
+    # Eric_05 "Это ты правильно сделал! Девчонка она красивая, так что успехи у неё должны появиться, хотя вряд ли она станет на этом много зарабатывать, если я не помогу."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:460
+translate english Eric_talk_about_Alice_0_410eb2ae:
+
+    # Max_09 "Почему?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:461
+translate english Eric_talk_about_Alice_0_dd9f1e60:
+
+    # Eric_04 "Желающих много, но пробиваются единицы. Здесь нужны и приличные вложения, да и сама она должна суметь привлечь особое внимание к себе."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:462
+translate english Eric_talk_about_Alice_0_f93a5f7b:
+
+    # Max_02 "Я последнее время покупал ей всякое сексуальное нижнее бельё."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:463
+translate english Eric_talk_about_Alice_0_64344f2e:
+
+    # Eric_06 "Об этом можешь больше не беспокоиться, Макс. Это я беру на себя!"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:464
+translate english Eric_talk_about_Alice_0_c77ab0e1:
+
+    # Max_08 "А мне что тогда делать?"
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:465
+translate english Eric_talk_about_Alice_0_5b2ddf99:
+
+    # Eric_03 "Ну, а что ты там любишь делать, подглядывать? Вот и подглядывай дальше в своё удовольствие."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:466
+translate english Eric_talk_about_Alice_0_9607dd8c:
+
+    # Max_07 "Это я люблю, но тебе же может пригодиться моё прикрытие и помощь с Алисой, так, по-дружески?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:467
+translate english Eric_talk_about_Alice_0_abbb104a:
+
+    # Eric_01 "Если мне это понадобится, вот тогда и поговорим о твоих \"премиальных\", а пока гуляй..."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:468
+translate english Eric_talk_about_Alice_0_173e5add:
+
+    # Max_01 "Ловлю на слове!"
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:476
+translate english Eric_talk_about_Alice_0_8fcf1769:
+
+    # Eric_04 "Да что ты? Это Алиса тебя так не любит или ты сам не очень хороший брат?"
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:478
+translate english Eric_talk_about_Alice_0_24f744d8:
+
+    # Max_10 "Это она ко мне несколько стервозно относится! Издевается постоянно и чуть что угрозами сыпет."
+    Max_10 ""
+
+# game/dialogues/erictalk.rpy:479
+translate english Eric_talk_about_Alice_0_24df813b:
+
+    # Eric_01 "Макс, мне не особо хочется выяснять, чем она занимается, вникать и тратить на это время и силы, так что поручаю это дело тебе."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:481
+translate english Eric_talk_about_Alice_0_e05861a4:
+
+    # Max_09 "И как я должен это сделать? Я же сказал, она не очень-то со мной считается!"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:483
+translate english Eric_talk_about_Alice_0_b0566012:
+
+    # Eric_03 "Ты просто будь увереннее и настойчивее. До разумных приделов конечно. Дерзай... Будут проблемы и нужен будет совет - обращайся."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:484
+translate english Eric_talk_about_Alice_0_3679282a:
+
+    # Max_11 "Ну здорово."
+    Max_11 ""
+
+# game/dialogues/erictalk.rpy:492
+translate english Eric_talk_about_Alice_0_58277c10:
+
+    # Eric_09 "О как! Ты разве забыл, о чём мы с тобой договорились, Макс?"
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:493
+translate english Eric_talk_about_Alice_0_7bfb780c:
+
+    # Max_15 "Нет, не забыл, а передумал! Это моя семья и я тебя к ней не подпущу!"
+    Max_15 ""
+
+# game/dialogues/erictalk.rpy:494
+translate english Eric_talk_about_Alice_0_86587c9b:
+
+    # Eric_14 "Ты уверен, что хочешь вражды? Я тебя предупреждал уже, что ты проиграешь."
+    Eric_14 ""
+
+# game/dialogues/erictalk.rpy:495
+translate english Eric_talk_about_Alice_0_2c68645b:
+
+    # Max_16 "Посмотрим..."
+    Max_16 ""
+
+# game/dialogues/erictalk.rpy:502
+translate english Eric_talk_about_Alice_0_e12ec2b8:
+
+    # Eric_04 "Просто, я подумал, мало ли ты погорячился на эмоциях и спустя время одумался со мной враждовать. Вот и даю тебе, так сказать \"шанс\" сделать верный выбор."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:503
+translate english Eric_talk_about_Alice_0_253a79c8:
+
+    # Max_10 "Пожалуй, да. Погорячился... Значит, блог тебя её интересует?"
+    Max_10 ""
+
+# game/dialogues/erictalk.rpy:504
+translate english Eric_talk_about_Alice_0_d798872a_1:
+
+    # Eric_03 "Если она ещё чем-то важным занимается за компьютером, то не только..."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:505
+translate english Eric_talk_about_Alice_0_3936771b:
+
+    # Max_01 "Сперва она бьюти блог вела, но я её уговорил пойти дальше и рекламировать нижнее бельё, чем она сейчас и пытается заниматься."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:506
+translate english Eric_talk_about_Alice_0_5bcc867b_1:
+
+    # Eric_05 "Это ты правильно сделал! Девчонка она красивая, так что успехи у неё должны появиться, хотя вряд ли она станет на этом много зарабатывать, если я не помогу."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:507
+translate english Eric_talk_about_Alice_0_410eb2ae_1:
+
+    # Max_09 "Почему?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:508
+translate english Eric_talk_about_Alice_0_dd9f1e60_1:
+
+    # Eric_04 "Желающих много, но пробиваются единицы. Здесь нужны и приличные вложения, да и сама она должна суметь привлечь особое внимание к себе."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:509
+translate english Eric_talk_about_Alice_0_f93a5f7b_1:
+
+    # Max_02 "Я последнее время покупал ей всякое сексуальное нижнее бельё."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:510
+translate english Eric_talk_about_Alice_0_64344f2e_1:
+
+    # Eric_06 "Об этом можешь больше не беспокоиться, Макс. Это я беру на себя!"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:511
+translate english Eric_talk_about_Alice_0_c77ab0e1_1:
+
+    # Max_08 "А мне что тогда делать?"
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:512
+translate english Eric_talk_about_Alice_0_5b2ddf99_1:
+
+    # Eric_03 "Ну, а что ты там любишь делать, подглядывать? Вот и подглядывай дальше в своё удовольствие."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:513
+translate english Eric_talk_about_Alice_0_9607dd8c_1:
+
+    # Max_07 "Это я люблю, но тебе же может пригодиться моё прикрытие и помощь с Алисой, так, по-дружески?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:514
+translate english Eric_talk_about_Alice_0_1cfeaf31:
+
+    # Eric_01 "Если мне это понадобится, вот тогда и поговорим о твоих \"премиальных\", а пока..."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:515
+translate english Eric_talk_about_Alice_0_173e5add_1:
+
+    # Max_01 "Ловлю на слове!"
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:525
+translate english Eric_talk_about_Alice_0_249d4b12:
+
+    # Eric_09 "Эх, а я думал, вдруг ты одумался и не хочешь со мной враждовать. Ну что, могу только посочувствовать..."
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:526
+translate english Eric_talk_about_Alice_0_53725271:
+
+    # Max_16 "Да отвали ты! И к Алисе не лезь, а то я вышибу тебя отсюда ещё быстрее, чем собирался!"
+    Max_16 ""
+
+# game/dialogues/erictalk.rpy:527
+translate english Eric_talk_about_Alice_0_51b57e1f:
+
+    # Eric_06 "Как жёстко! У меня аж мурашки поползли по спине... от потехи..."
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:528
+translate english Eric_talk_about_Alice_0_5044ba0d:
+
+    # Max_17 "Ещё посмотрим, кто будет потешаться!"
+    Max_17 ""
+
+# game/dialogues/erictalk.rpy:541
+translate english Eric_talk_about_Alice_1_77426e44:
+
+    # Eric_00 "Макс, нам нужно поговорить наедине."
+    Eric_00 ""
+
+# game/dialogues/erictalk.rpy:542
+translate english Eric_talk_about_Alice_1_b13b8f39:
+
+    # Max_07 "Я слушаю... Что такое?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:543
+translate english Eric_talk_about_Alice_1_6c5a1fd9:
+
+    # Eric_13 "А сам как думаешь!? Как там твои успехи с Алисой?"
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:544
+translate english Eric_talk_about_Alice_1_39f68732:
+
+    # Max_08 "В процессе... С ней не всё так просто, как хотелось бы."
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:545
+translate english Eric_talk_about_Alice_1_772d0e28:
+
+    # Eric_15 "Проще было с самого начала всё сделать самому... Что же ты, Макс, с родной сестрой не смог управиться?"
+    Eric_15 ""
+
+# game/dialogues/erictalk.rpy:546
+translate english Eric_talk_about_Alice_1_4b6faf8c:
+
+    # Max_09 "Если бы ты дал мне больше времени..."
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:547
+translate english Eric_talk_about_Alice_1_405cc660:
+
+    # Eric_01 "Нет. Дальше я сам. А у тебя теперь задача максимально простая - не мешать мне. Справишься, я надеюсь хоть с этим?"
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:548
+translate english Eric_talk_about_Alice_1_59c63f25:
+
+    # Max_07 "А за мои старания мне что-нибудь причитается?!"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:549
+translate english Eric_talk_about_Alice_1_bf99dc17:
+
+    # Eric_04 "Чего!? Твои старания? Даже как-то жалко тебя стало, Макс! Ладно, так уж и быть, можешь подглядывать за нами с Алисой. По средам... И постарайся не попасться Алисе на глаза при этом."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:550
+translate english Eric_talk_about_Alice_1_ba47c279:
+
+    # Max_01 "Сойдёт. А что ещё?"
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:551
+translate english Eric_talk_about_Alice_1_5d8605aa:
+
+    # Eric_06 "Вот ты губу раскатал, Макс! Не наглей!"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:552
+translate english Eric_talk_about_Alice_1_2c3dbd88:
+
+    # Max_00 "Ну ладно."
+    Max_00 ""
+
+# game/dialogues/erictalk.rpy:560
+translate english Eric_talk_about_lace_lingerie_ef14eedc:
+
+    # Eric_01 "Задержись, Макс. Нужно поговорить наедине."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:564
+translate english Eric_talk_about_lace_lingerie_8a1a99af:
+
+    # Max_07 "Что случилось?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:565
+translate english Eric_talk_about_lace_lingerie_ce5c1b7e:
+
+    # Eric_09 "Ты зачем подарил Алисе то кружевное боди?"
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:566
+translate english Eric_talk_about_lace_lingerie_fef0db23:
+
+    # Max_09 "Просто хотел порадовать сестрёнку."
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:567
+translate english Eric_talk_about_lace_lingerie_c91f1a8c:
+
+    # Eric_13 "Теперь это моя забота, её радовать. А твоя задача этому не мешать, что ты успешно нарушил!"
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:568
+translate english Eric_talk_about_lace_lingerie_763a23da:
+
+    # Max_08 "Подумаешь бельё ей подарил! У тебя и без этого с ней всё хорошо."
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:569
+translate english Eric_talk_about_lace_lingerie_a40231e1:
+
+    # Eric_00 "Макс, я не так много времени могу уделять Алисе лично. И других дел полно. Поэтому мне важно, чтобы с ней всё шло по выстроенному плану и покупка этого боди - часть этого плана. А что сделал ты?"
+    Eric_00 ""
+
+# game/dialogues/erictalk.rpy:570
+translate english Eric_talk_about_lace_lingerie_182be5db:
+
+    # Max_10 "Немного нарушил..."
+    Max_10 ""
+
+# game/dialogues/erictalk.rpy:571
+translate english Eric_talk_about_lace_lingerie_281c3d59:
+
+    # Eric_14 "Ещё раз нарушишь мои планы и друзьями нам больше не быть. Хорошенько подумай, нужно ли тебе это, Макс, мешать мне. И о своих \"премиальных\" можешь забыть за свою оплошность!"
+    Eric_14 ""
+
+# game/dialogues/erictalk.rpy:572
+translate english Eric_talk_about_lace_lingerie_5907fcad:
+
+    # Max_13 "Эй, ну как же так!"
+    Max_13 ""
+
+# game/dialogues/erictalk.rpy:573
+translate english Eric_talk_about_lace_lingerie_563ce598:
+
+    # Eric_13 "Нечего мне проблемы устраивать! И мы об этом говорили сразу."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:574
+translate english Eric_talk_about_lace_lingerie_770a09a1:
+
+    # Max_11 "Ладно, я всё понял."
+    Max_11 ""
+
+# game/dialogues/erictalk.rpy:578
+translate english Eric_talk_about_lace_lingerie_b3058115:
+
+    # Max_09 "Что надо?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:579
+translate english Eric_talk_about_lace_lingerie_884dcc80:
+
+    # Eric_09 "Тебя ждут большие проблемы, Макс! Зря ты подарил Алисе то боди. Большая ошибка."
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:580
+translate english Eric_talk_about_lace_lingerie_b54fcb7c:
+
+    # Max_02 "Похоже, я испортил чьи-то планы... Какой ужас!"
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:581
+translate english Eric_talk_about_lace_lingerie_88e73d18:
+
+    # Eric_13 "За всё, что будет дальше винить можешь только себя, Макс. Успехов не желаю."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:582
+translate english Eric_talk_about_lace_lingerie_a90aad28:
+
+    # Max_01 "Да и не надо. Обойдусь."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/erictalk.rpy:452
+    old "Значит, тебя её блог интересует? (продолжение дружбы)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:452
+    old "Я мало что об этом знаю... (попытка выиграть время)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:452
+    old "Не лез бы ты к Алисе! (расторжение дружбы)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:452
+    old "Нужна помощь? (попытка подружиться)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:452
+    old "Вот у неё и спрашивай! (продолжение вражды)"
+    new ""
+

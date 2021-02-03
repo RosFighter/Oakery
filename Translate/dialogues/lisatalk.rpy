@@ -8813,4 +8813,11 @@ translate english lisa_stop_kiss_173f5e04:
 
     # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода побыстрее от меня избавиться. ){/i}"
     Max_09 "{i}( Perhaps I'd better stop my kissing lessons with Lisa for now, so as not to give Eric an excuse to get rid of me quickly. ){/i}"
+# TODO: Translation updated at 2021-02-04 00:37
+
+# game/dialogues/lisatalk.rpy:3734
+translate english lisa_stop_kiss_0a680597:
+
+    # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. ){/i}"
+    Max_09 "{i}( I think I'd better stop kissing lessons with Lisa for now so I don't draw attention from Eric. ){/i}"
 

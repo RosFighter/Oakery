@@ -437,4 +437,15 @@ translate english strings:
     # game/core/02init.rpy:100
     old "Так когда будем снова фотографироваться, тётя Кира?"
     new "So when are we doing another photo-shoot?"
+# TODO: Translation updated at 2021-02-04 00:37
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Я слышал, Эрик тебе новое бельё собирается купить?"
+    new ""
+
+    # game/core/02init.rpy:100
+    old "Покажешь боди, которое тебе Эрик купит?"
+    new ""
 

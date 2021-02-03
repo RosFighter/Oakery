@@ -474,3 +474,41 @@ translate english cam0_alice_after_club_d8fc5c8e:
     # Max_09 "Алисы не видно через эту камеру..."
     Max_09 "I can't see Alice through this camera..."
 
+# TODO: Translation updated at 2021-02-04 00:37
+
+# game/events/alice_cam.rpy:671
+translate english cam0_blog_with_Eric_1210ca0b:
+
+    # Max_09 "{i}( Эрик о чём-то разговаривает с Алисой. И развалился так, как будто это его комната... ){/i}"
+    Max_09 ""
+
+# game/events/alice_cam.rpy:675
+translate english cam0_blog_with_Eric_47a71eff:
+
+    # Max_08 "{i}( Ого! Да она при нём, похоже, переодеваться вздумала! Что сказать, Эрик умеет добиваться своего... ){/i}"
+    Max_08 ""
+
+# game/events/alice_cam.rpy:680
+translate english cam0_blog_with_Eric_9a973c1d:
+
+    # Max_01 "{i}( Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! ){/i}"
+    Max_01 ""
+
+# game/events/alice_cam.rpy:684
+translate english cam0_blog_with_Eric_18d8cc91:
+
+    # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
+    Max_07 ""
+
+# game/events/alice_cam.rpy:689
+translate english cam0_blog_with_Eric_913dbbe7:
+
+    # Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь... ){/i}"
+    Max_09 ""
+
+# game/events/alice_cam.rpy:716
+translate english cam0_blog_with_Eric_340b426d:
+
+    # Max_08 "{i}( Эрик сегодня в комнате Алисы. Похоже, пытается помогать с блогом... Но в действительности же, чтобы поглазеть на Алису в белье, по себе знаю... ){/i}"
+    Max_08 ""
+

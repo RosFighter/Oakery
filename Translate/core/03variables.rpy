@@ -1242,3 +1242,15 @@ translate english strings:
     old "Как выяснилось, Эрик проплатил дополнительные курсы для Лизы в школе, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. А заодно и от меня отстранить, ведь теперь моя помощь с уроками ей особо и не нужна. И ещё он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
     new "As it turned out, Eric paid for Lisa's Sunday tutor to improve her grades, in reality, he's trying to get closer to her. Not to mention make her less dependant on me so that she doesn't need my help. Now he and Mom will be giving Lisa sex education classes on Mondays..."
 
+# TODO: Translation updated at 2021-02-04 00:37
+
+translate english strings:
+
+    # game/core/03variables.rpy:272
+    old "ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"
+    new ""
+
+    # game/core/03variables.rpy:272
+    old "Женское сексуальное нижнее бельё с кружевным узором по краям."
+    new ""
+

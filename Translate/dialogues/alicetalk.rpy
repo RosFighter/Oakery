@@ -8110,3 +8110,287 @@ translate english strings:
     old "Ты заработаешь кучу денег! \n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new "You'll make a lot of money! \n{color=[_ch1.col]}(Conviction. Chance: [_ch1.vis]){/color}"
 
+# TODO: Translation updated at 2021-02-04 00:37
+
+# game/dialogues/alicetalk.rpy:2030
+translate english massage_sunscreen_hips_cac75cfe:
+
+    # Alice_06 "Макс, а ты куда это там полез так неожиданно?! Лучше сосредоточься на всём остальном, а туда не лезь..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2034
+translate english massage_sunscreen_hips_7823526e:
+
+    # Alice_13 "Макс, ты слишком высоко забрался! Лучше сосредоточься на всём остальном..."
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2039
+translate english massage_sunscreen_hips_09110d99:
+
+    # Alice_04 "Хоть это и приятно, но ощущение, будто ты не знаешь, как правильно массировать там... Лучше сосредоточься на том, что ты умеешь..."
+    Alice_04 ""
+
+# game/dialogues/alicetalk.rpy:2043
+translate english massage_sunscreen_hips_7439f935:
+
+    # Alice_13 "Макс, а ты куда это там полез так неожиданно?! Если уж решил перейти на ноги, то массируй с самого низа..."
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2046
+translate english massage_sunscreen_hips_7b0d0b5d:
+
+    # Alice_06 "Макс, ты уже определись, что ты массируешь! Ноги или спину... Похоже, на твоих онлайн-курсах не учили тому, что прыгать туда-сюда не здорово..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:3405
+translate english alice_about_lingerie0_d8fa105c:
+
+    # Alice_12 "Слышал или подслушал?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:3406
+translate english alice_about_lingerie0_2a44705b:
+
+    # Max_01 "Слышал. Эрик мне и сказал."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:3407
+translate english alice_about_lingerie0_43b3d5bb:
+
+    # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3408
+translate english alice_about_lingerie0_f8fd533a:
+
+    # Max_02 "Да так, интересно было, какое ты себе боди захотела. Покажешь?"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:3412
+translate english alice_about_lingerie0_7f85a848:
+
+    # Alice_03 "Для этого компьютер нужен. Так что, если интересно, то заходи, когда я в своей комнате. Покажу..."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:3413
+translate english alice_about_lingerie0_4fea5bb2:
+
+    # Max_01 "Ага. Обязательно зайду"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:3423
+translate english alice_showing_lingerie1_5f50ce1d:
+
+    # Alice_03 "Вот, смотри... Боди, как боди, слегка прозрачное и кружевное. Всё, как вы, мальчики, любите."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:3424
+translate english alice_showing_lingerie1_6bddc98c:
+
+    # Max_03 "Ну да, мне уже не терпится увидеть его на тебе!"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:3425
+translate english alice_showing_lingerie1_3f45c9af:
+
+    # Alice_05 "Это если я ещё разрешу тебе смотреть на меня в этом боди! Вот Эрик купит - ему и можно будет смотреть, ну и тем, для кого я всё это рекламирую."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3426
+translate english alice_showing_lingerie1_21921cd2:
+
+    # Max_11 "А как же я?"
+    Max_11 ""
+
+# game/dialogues/alicetalk.rpy:3427
+translate english alice_showing_lingerie1_dfc1c960:
+
+    # Alice_02 "Интернет тебе в помощь, Макс! Там полно всяких разных девушек в любом нижнем белье. Может и меня там найдёшь, уже..."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:3428
+translate english alice_showing_lingerie1_0be86b3e:
+
+    # Max_08 "Ладно, я тебя понял."
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:3429
+translate english alice_showing_lingerie1_039ef6ce:
+
+    # Max_09 "{i}( Мне ещё как можно будет на тебя смотреть, когда я куплю это боди первее Эрика! Вот только времени совсем в обрез, надо торопиться... Блин, Эрик точно будет этому не рад! Стоит ли оно того, это боди? ){/i}"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:3441
+translate english gift_lace_lingerie_7a0bce7e:
+
+    # Alice_15 "Ого! В смысле, то самое, которое я тебе показывала или какое-то другое?"
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:3442
+translate english gift_lace_lingerie_5acfd87b:
+
+    # Max_01 "Да, то самое. Ты же не против?"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:3443
+translate english gift_lace_lingerie_d05d1c9b:
+
+    # Alice_05 "Конечно не против! Давай его сюда, буду примерять... Только, если не будешь смотреть..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3444
+translate english gift_lace_lingerie_88551f02:
+
+    # Max_03 "Конечно! Мне не терпится увидеть, как оно на тебе сидит..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:3450
+translate english gift_lace_lingerie_1bb4de64:
+
+    # Alice_12 "Неплохо это ты уселся в первых рядах, Макс! Отвернись хоть для приличия или живо пойдёшь гулять..."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:3451
+translate english gift_lace_lingerie_c20736bf:
+
+    # Max_02 "Я глаза закрою..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:3455
+translate english gift_lace_lingerie_54299116:
+
+    # Alice_14 "Эй! Макс! Ты же сказал, что закроешь глаза. Хорошо я заметила, что ты пялишься на меня, прежде чем всё с себя сняла! Отвернись, быстро! Ну или хотя бы закрой глаза руками..."
+    Alice_14 ""
+
+# game/dialogues/alicetalk.rpy:3456
+translate english gift_lace_lingerie_8cbe532e:
+
+    # Max_04 "Ты так красиво начала раздеваться, что я забыл не смотреть. Считай, закрыл."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:3460
+translate english gift_lace_lingerie_88c80c12:
+
+    # Alice_05 "Смотри мне, Макс! Я ведь сразу увижу в зеркало, если ты начнёшь подглядывать сквозь пальцы. Ты же не хочешь получить с ноги за это?"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3462
+translate english gift_lace_lingerie_b8b29617:
+
+    # Max_19 "Естественно, не хочу." nointeract
+    Max_19 "" nointeract
+
+# game/dialogues/alicetalk.rpy:3470
+translate english gift_lace_lingerie_5700a36b:
+
+    # Max_02 "{i}( Ага, взял и закрыл! Я что, совсем святой, чтобы не рискнуть хоть одним глазком увидеть голую Алису! Да ещё так близко! Бесподобная у меня сестрёнка... ){/i}"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:3473
+translate english gift_lace_lingerie_6b1999ca:
+
+    # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Прямо, как мне и хочется... Хм, а может она заметила, что я всё равно подглядываю и таким образом дразнит меня?! Знать бы это наверняка... ){/i}"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:3478
+translate english gift_lace_lingerie_b0f28e71:
+
+    # Alice_18 "Макс!!!"
+    Alice_18 ""
+
+# game/dialogues/alicetalk.rpy:3480
+translate english gift_lace_lingerie_9137b0d5:
+
+    # Max_08 "Не бей! Я просто тебя проверял. На внимательность..." nointeract
+    Max_08 "" nointeract
+
+# game/dialogues/alicetalk.rpy:3492
+translate english gift_lace_lingerie_027a5864:
+
+    # Alice_02 "Всё, можно смотреть... Что скажешь, тебе нравится или нет? Мне вот в нём удобно..."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:3493
+translate english gift_lace_lingerie_a50a9b69:
+
+    # Max_04 "Алиса, на твоём чудесном теле, что угодно будет смотреться шикарно. И да, мне нравится, как это выглядит! Покрутись ещё немного для меня..."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:3497
+translate english gift_lace_lingerie_db6ef32c:
+
+    # Alice_06 "Ну как, всё посмотрел? Ай!!! У меня ногу свело! Ой, как же сильно свело... Ой-ёй-ёй!!!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:3498
+translate english gift_lace_lingerie_c2765e70:
+
+    # Max_07 "Которую? Давай её мне, я помассирую..."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:3504
+translate english gift_lace_lingerie_8d729ac8:
+
+    # Alice_13 "Правую. Ой, Макс! По-моему, лучше не трогать... Очень уж тянет. А хотя... вроде лучше... Да, так намного лучше... Фух!"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:3505
+translate english gift_lace_lingerie_27120bb2:
+
+    # Max_09 "Многовато ты за компьютером времени проводишь. Двигаться надо побольше."
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:3506
+translate english gift_lace_lingerie_fe88edb1:
+
+    # Alice_05 "Ой, ну вторая мама появилась у меня! Просто разок свело ногу, подумаешь."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3507
+translate english gift_lace_lingerie_8aa39d7d:
+
+    # Max_08 "Ага, скоро снова сведёт, это я тебе гарантирую. На онлайн-курсах узнал, если сводит, то нужно или двигаться больше, или массаж делать серьёзнее."
+    Max_08 ""
+
+# game/dialogues/alicetalk.rpy:3513
+translate english gift_lace_lingerie_3ecad78b:
+
+    # Alice_03 "Двигаться больше — это спортом заниматься, ты хочешь сказать? Не люблю я это. Я люблю на солнышке понежиться, за книжкой посидеть или перед экраном ТВ или компьютера. Ты же знаешь."
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:3514
+translate english gift_lace_lingerie_697f00d7:
+
+    # Max_07 "Знаю. Значит массаж. Надо больше внимания уделить твоим ножкам. Согласна?"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:3515
+translate english gift_lace_lingerie_6152a638:
+
+    # Alice_05 "А согласна! Ты так самоотверженно мне сейчас ногу помассировал. Даже ни разу не попытался на грудь мою засмотреться или ещё куда. А боди ведь слегка прозрачное!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3516
+translate english gift_lace_lingerie_e52eb91b:
+
+    # Max_02 "Да я твои сосочки наизусть знаю! Это шутка..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:3517
+translate english gift_lace_lingerie_7778d00e:
+
+    # Alice_01 "Но правдивая, извращенец ты мелкий! Давай гуляй, у меня блог простаивает... И спасибо за подарок. Нужно будет Эрику не забыть сказать, что ты его опередил. Это же не станет для вас проблемой?"
+    Alice_01 ""
+
+# game/dialogues/alicetalk.rpy:3518
+translate english gift_lace_lingerie_311d8c21:
+
+    # Max_01 "Разберёмся как-нибудь, не переживай."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:3462
+    old "{i}подглядывать {color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
+    new ""
+
