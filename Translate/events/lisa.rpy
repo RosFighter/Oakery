@@ -1422,7 +1422,7 @@ translate english strings:
 
     # game/events/lisa.rpy:1033
     old "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}"
-    new "{i}Hold back{/i} \n{color = [_ch3.col]}(Sexual experience. Chance: [_ch3.vis]){/color}"
+    new "{i}Hold back{/i} \n{color=[_ch3.col]}(Sexual experience. Chance: [_ch3.vis]){/color}"
 
     # game/events/lisa.rpy:1033
     old "{i}да пофиг!{/i}"

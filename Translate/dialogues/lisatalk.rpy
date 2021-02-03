@@ -8778,10 +8778,6 @@ translate english strings:
     old "Я и плечи помассировать могу, если хочешь? {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}"
     new "I can massage your shoulders, too, if you want? {color=[_ch3.col]}(persuasion. Chance: [_ch3.vis]){/color}"
 
-    # game/dialogues/lisatalk.rpy:1524
-    old "{i}продолжить ниже{i}"
-    new "{i}Continue below{i}"
-
     # game/dialogues/lisatalk.rpy:1545
     old "{i}массировать её грудь \n{color=[_ch4.col]}(Массаж. Шанс: [_ch4.vis]){/color}{/i}"
     new "{i}Massage her breasts \n{color=[_ch4.col]}(Massage. Chance: [_ch4.vis]){/color}{/i}"

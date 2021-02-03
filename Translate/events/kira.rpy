@@ -2874,7 +2874,7 @@ translate english strings:
 translate english return_from_club_ad7639d7:
 
     # Kira_03 "Алиса, тише... Все уже спят! Нужно тихо, тихо, тихо... О... Макс? А ты почему не спишь?!"
-    Kira_03 "Alice, hush... Everyone's asleep! We need to be quiet... Оh... Max? Why aren't you in bed?!"
+    Kira_03 "Alice, hush... Everyone's asleep! We need to be quiet... Oh... Max? Why aren't you in bed?!"
 
 # game/events/kira.rpy:1950
 translate english return_from_club_6f56009f:

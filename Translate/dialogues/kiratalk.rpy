@@ -1582,7 +1582,7 @@ translate english kira_about_photo2_7455059f:
 translate english kira_about_photo2_60e45d8b:
 
     # Max_07 "Хорошо, а зачем?"
-    Max_07 Okay, but why?""
+    Max_07 "Okay, but why?"
 
 # game/dialogues/kiratalk.rpy:690
 translate english kira_about_photo2_22b6f676:
@@ -1618,7 +1618,7 @@ translate english kira_about_photo2_f75acffb:
 translate english kira_about_photo2_d8e7f542:
 
     # Max_03 "Ого, круто!"
-    Max_03 "Оh, wow!"
+    Max_03 "Oh, wow!"
 
 # game/dialogues/kiratalk.rpy:700
 translate english kira_about_photo2_096955da:
@@ -1894,7 +1894,7 @@ translate english kira_about_photo2_b83148a3:
 translate english kira_about_photo2_f2e0ce1e:
 
     # Max_05 "Фух, было обалденно! Но я бы и ночью не перестал это делать!"
-    Max_05 That was awesome! I could do it all day!"
+    Max_05 "That was awesome! I could do it all day!"
 
 # game/dialogues/kiratalk.rpy:878
 translate english kira_about_photo2_20b9c0f0:
@@ -1946,7 +1946,7 @@ translate english strings:
 
     # game/dialogues/kiratalk.rpy:774
     old "{i}крепко привязать Киру{/i}"
-    new "{i}Tie Kira down tight{i}"
+    new "{i}Tie Kira down tight{/i}"
 
     # game/dialogues/kiratalk.rpy:782
     old "{i}раздеться и поиграть с её грудью{/i}"

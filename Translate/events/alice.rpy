@@ -2346,7 +2346,7 @@ translate english alice_towel_after_club_06f4b1d3:
 translate english alice_towel_after_club_86a91f2d:
 
     # Alice "{b}Алиса:{/b} Поздно, Макс! Я уже в ванне, так что гуляй."
-    Alice "{b}Аlice:{/b} Well I'm already in the bath, so get lost!"
+    Alice "{b}Alice:{/b} Well I'm already in the bath, so get lost!"
 
 # game/events/alice.rpy:1728
 translate english alice_towel_after_club_71b9cc8b:
