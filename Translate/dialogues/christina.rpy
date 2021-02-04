@@ -4,7 +4,7 @@
 translate english christina_first_talk_a072d515:
 
     # Christine_03 "А почему всегда ты расписываешься за женскую одежду? Тебя тут совсем девчонки загоняли?"
-    Christine_03 "Why do you always sign for women's clothing? Are there girls forcing you to collect their orders?"
+    Christine_03 "Why do you always sign for women's clothing? Are girls forcing you to collect their orders?"
 
 # game/dialogues/christina.rpy:8
 translate english christina_first_talk_a003babc:
@@ -22,7 +22,7 @@ translate english christina_first_talk_343a63e4:
 translate english christina_first_talk_655d6f1e:
 
     # Max_08 "Чего!? Это всё было для моих сестёр, мамы и тёти!"
-    Max_08 "What is that supposed to mean!? It's for my my sisters, mom and aunt!"
+    Max_08 "What's that supposed to mean!? It's for my my sisters, mom and aunt!"
 
 # game/dialogues/christina.rpy:11
 translate english christina_first_talk_180ce209:
@@ -124,13 +124,13 @@ translate english christina_first_talk_bf6defe7:
 translate english christina_first_talk_70b67a69:
 
     # Christine_01 "Макс, посмотри на меня... Ну... что скажешь?"
-    Christine_01 "Max, look at me... Well... what do you think?"
+    Christine_01 "Max, look at me... Well... What do you think?"
 
 # game/dialogues/christina.rpy:37
 translate english christina_first_talk_36dacf0d:
 
     # Max_03 "Ну, ты красивая... Вроде, интересная..."
-    Max_03 "Well, you are beautiful...and interesting..."
+    Max_03 "Well, you are beautiful... And interesting..."
 
 # game/dialogues/christina.rpy:38
 translate english christina_first_talk_2ad36870:
@@ -178,7 +178,7 @@ translate english christina_first_talk_13d9bbd2_1:
 translate english christina_first_talk_204a6521_1:
 
     # Max_01 "Я тоже, Кристина! Пока."
-    Max_01 "Me too, Christina!"
+    Max_01 "You too, Christina!"
 
 translate english strings:
 

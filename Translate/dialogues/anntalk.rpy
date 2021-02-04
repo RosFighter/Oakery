@@ -118,7 +118,7 @@ translate english ann_talk_tv_b9644c38:
 translate english ann_talk_tv_59854843:
 
     # Max_02 "{i}( Мама так близко... В одном полотенце... Даже не знаю о чём фильм, о нём я думать точно не могу... ){/i}"
-    Max_02 "{i}( Mom is so close to me...in nothing but a towel...I don't even know what movie's playing, she's too distracting. ){/i}"
+    Max_02 "{i}( Mom is so close to me... In nothing but a towel... I don't even know what movie's playing, she's too distracting. ){/i}"
 
 # game/dialogues/anntalk.rpy:190
 translate english ann_talk_tv_31044bb9:
@@ -148,7 +148,7 @@ translate english ann_talk_tv_63971551:
 translate english ann_talk_tv_466bcb0e:
 
     # Max_00 "Не бери в голову, это я так, пошутил неудачно..."
-    Max_00 "Never mind...bad joke."
+    Max_00 "Never mind... Bad joke."
 
 # game/dialogues/anntalk.rpy:200
 translate english ann_talk_tv_22b3f8bb:
@@ -262,7 +262,7 @@ translate english ann_talk_tv_start_3b14cabb:
 translate english ann_talk_tv_start_0d56f914:
 
     # Ann_04 "Да ты что? И где, интересно мне знать? Я когда подключала интернет, выбрала самый безопасный вариант, чтобы оградить вас от такого... Так где ты что там видел?"
-    Ann_04 "Oh really? I chose the most restricted Internet provider specifically so we wouldn't be able to see anything like this... where exactly are you finding such innapropriate content?"
+    Ann_04 "Oh really? I chose the most restricted Internet provider specifically so we wouldn't be able to see anything like this... Where exactly are you finding such innapropriate content?"
 
 # game/dialogues/anntalk.rpy:265
 translate english ann_talk_tv_start_d40a96e0:
@@ -304,7 +304,7 @@ translate english ann_talk_tv_start_ba88c73d:
 translate english ann_talk_tv_start_e9c2c485:
 
     # Ann_02 "Ты знаешь, может быть... Но да, ты прав. Фильм и правда хороший оказался. Хотя и не для детей, однозначно..."
-    Ann_02 "I don't know... but I guess you were right about it being good, except for the explicit parts. Definitely not for children, though."
+    Ann_02 "I don't know... But I guess you were right about it being good, except for the explicit parts. Definitely not for children, though."
 
 # game/dialogues/anntalk.rpy:281
 translate english ann_talk_tv_start_594c1ae6:
@@ -316,7 +316,7 @@ translate english ann_talk_tv_start_594c1ae6:
 translate english ann_talk_tv_start_1ea84186:
 
     # Ann_05 "Жаль, что мы редко с тобой вместе вот так сидим, что-то смотрим. Ну, надеюсь, начало традиции положено. И пусть в следующий раз будет нечто менее... волнующее..."
-    Ann_05 "Too bad we don't do this very often. Well, hopefully we've just started a new tradition. Let's hope the next movie won't be so... exciting."
+    Ann_05 "Too bad we don't do this very often. Well, hopefully we've just started a new tradition. Let's hope the next movie won't be so... Exciting."
 
 # game/dialogues/anntalk.rpy:286
 translate english ann_talk_tv_start_acd22c78:
@@ -340,7 +340,7 @@ translate english Ann_MorningWood_ab75b971:
 translate english Ann_MorningWood_75ea92a8:
 
     # Ann_14 "Но Макс. Лиза ещё маленькая и постарайся, чтобы она не видела твой... тебя. В общем, ты меня понял, да?" nointeract
-    Ann_14 "But still, try not to show your... yourself... to Lisa." nointeract
+    Ann_14 "But still, try not to show your... Yourself... To Lisa." nointeract
 
 # game/dialogues/anntalk.rpy:299
 translate english Ann_MorningWood_4d3a269f:
@@ -358,7 +358,7 @@ translate english Ann_MorningWood_31985b42:
 translate english Ann_MorningWood_20707248:
 
     # Ann_12 "Макс! Я конечно рада, что ты у меня уже такой... большой... Но вообще, я всё сказала. Постарайся ей не показываться в таком виде, ладно?"
-    Ann_12 "Max! Of course, I'm glad you're so... endowed, but... But that's enough of that. Try not to show yourself to your sister like that in the future, okay?"
+    Ann_12 "Max! Of course, I'm glad you're so... Endowed, but... But that's enough of that. Try not to show yourself to your sister like that in the future, okay?"
 
 # game/dialogues/anntalk.rpy:306
 translate english Ann_MorningWood_f3fba9dc:
@@ -580,7 +580,7 @@ translate english talk_about_smoking_smoke_dec85e71:
 translate english talk_about_smoking_smoke_1cdb0e42:
 
     # Alice_13 "Ладно... Только не больно, чтобы, ладно? Ай! Ма-ам!"
-    Alice_13 "Okay... just don't be too rough, okay? Ow! Mooom!"
+    Alice_13 "Okay... Just don't be too rough, okay? Ow! Mooom!"
 
 # game/dialogues/anntalk.rpy:445
 translate english talk_about_smoking_smoke_6bcbcfc3:
@@ -640,7 +640,7 @@ translate english ann_about_kiss_060b6710:
 translate english ann_about_kiss_b3dba2cb:
 
     # Ann_05 "Макс, что-то ты хитришь. Кстати, а где ты с нею познакомился? Ты же всё время дома сидишь... Через интернет?"
-    Ann_05 "Oh, you're acting all coy. By the way, where did you meet her? You're at home all the time... over the Internet?"
+    Ann_05 "Oh, you're acting all coy. By the way, where did you meet her? You're at home all the time... Over the Internet?"
 
 # game/dialogues/anntalk.rpy:487
 translate english ann_about_kiss_75d7ada9:
@@ -894,11 +894,11 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:455
     old "Извини, я не хотел, чтобы так..."
-    new "I'm sorry, that's not what I wanted"
+    new "I'm sorry, that's not what I wanted..."
 
     # game/dialogues/anntalk.rpy:455
     old "И что ты сделаешь? Я тебя не боюсь!"
-    new "And what are you going to do? I'm not afraid of you"
+    new "And what are you going to do? I'm not afraid of you!"
 
     # game/dialogues/anntalk.rpy:460
     old "{i}начать ужин{/i}"
