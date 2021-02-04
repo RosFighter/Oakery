@@ -2147,3 +2147,65 @@ translate english dinner_ab_earn_76177f7d:
 
     # Max_01 "Да, давайте."
     Max_01 "Alright."
+# TODO: Translation updated at 2021-02-04 23:59
+
+# game/dialogues/dinner.rpy:748
+translate english dinner_lace_lingerie_3b579f4f:
+
+    # Ann_04 "Всем добрый вечер и приятного аппетита!"
+    Ann_04 ""
+
+# game/dialogues/dinner.rpy:749
+translate english dinner_lace_lingerie_367064d7:
+
+    # Max_01 "Приятного!"
+    Max_01 ""
+
+# game/dialogues/dinner.rpy:750
+translate english dinner_lace_lingerie_88f276ad:
+
+    # Ann_08 "Кстати, мне тут стало интересно... По пятницам я всё время уезжаю к Эрику, Алиса по клубам шастает и на всём огромном просторе этого дома совершенно одни остаются Макс и Лиза. Ничего подозрительного я так и не заметила после возвращения. Признавайтесь, что делаете?"
+    Ann_08 ""
+
+# game/dialogues/dinner.rpy:751
+translate english dinner_lace_lingerie_c568c91c:
+
+    # Lisa_01 "Да ничего необычного, мам. Всё то же самое, что во все остальные дни. Так ведь, Макс?"
+    Lisa_01 ""
+
+# game/dialogues/dinner.rpy:752
+translate english dinner_lace_lingerie_319ac67e:
+
+    # Max_07 "Ага, я даже не могу вспомнить, что мы делали в прошлую пятницу! Настолько всё было обычно."
+    Max_07 ""
+
+# game/dialogues/dinner.rpy:753
+translate english dinner_lace_lingerie_e70fcdf2:
+
+    # Ann_06 "Хоть вас и есть за что ругать и наказывать периодически, но вы всё равно у меня замечательные! За Алису вот только переживаю немного с этими её клубами. Хорошо, что они с Кирой вместе стали отрываться, мне от этого спокойнее. Хотя, за ней самой нужно приглядывать..."
+    Ann_06 ""
+
+# game/dialogues/dinner.rpy:754
+translate english dinner_lace_lingerie_c85be202:
+
+    # Lisa_02 "Не переживай за нас, мам. Мы уже большие, можем о себе позаботиться."
+    Lisa_02 ""
+
+# game/dialogues/dinner.rpy:755
+translate english dinner_lace_lingerie_df977086:
+
+    # Alice_03 "Сегодня за меня тоже можешь не волноваться, мам. Я не иду в клуб. У тёти Киры этой ночью \"корпоративная\" вечеринка, а я лучше над своим блогом дополнительный вечерок поработаю."
+    Alice_03 ""
+
+# game/dialogues/dinner.rpy:756
+translate english dinner_lace_lingerie_fcb50d1a:
+
+    # Ann_04 "Ну, я рада, что всё так сложилось. Ох, что-то я заболталась, а ведь мне уже скоро уезжать... Спасибо вам за приятный ужин. Я побежала, увидимся утром..."
+    Ann_04 ""
+
+# game/dialogues/dinner.rpy:757
+translate english dinner_lace_lingerie_e0b844ce:
+
+    # Max_01 "Пока, мам..."
+    Max_01 ""
+

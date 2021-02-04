@@ -3237,3 +3237,23 @@ translate english strings:
     old "Как идут дела с блогом?"
     new ""
 
+# TODO: Translation updated at 2021-02-04 23:59
+
+# game/events/alice.rpy:1862
+translate english alice_towel_after_club_63271e00:
+
+    # Alice_15 "Макс, я тут вообще-то голая лежу в ванне! Оу, ты всё же принёс мне полотенце..."
+    Alice_15 ""
+
+# game/events/alice.rpy:1863
+translate english alice_towel_after_club_cff7acb1:
+
+    # Max_02 "Да, я тут как раз нашёл, на что его можно повесить..."
+    Max_02 ""
+
+# game/events/alice.rpy:1869
+translate english alice_towel_after_club_52206218:
+
+    # Alice_06 "Оригинально... А ты не думал, что нужно было постучаться, прежде чем входить? Я ведь могла здесь... чем-нибудь ещё заниматься..."
+    Alice_06 ""
+
