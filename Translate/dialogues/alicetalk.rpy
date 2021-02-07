@@ -8164,7 +8164,7 @@ translate english alice_about_lingerie0_43b3d5bb:
 translate english alice_about_lingerie0_f8fd533a:
 
     # Max_02 "Да так, интересно было, какое ты себе боди захотела. Покажешь?"
-    Max_02 "I was just wondering what kind of outfit you wanted. Will you show me?""
+    Max_02 "I was just wondering what kind of outfit you wanted. Will you show me?"
 
 # game/dialogues/alicetalk.rpy:3412
 translate english alice_about_lingerie0_7f85a848:
@@ -8284,13 +8284,13 @@ translate english gift_lace_lingerie_b8b29617:
 translate english gift_lace_lingerie_5700a36b:
 
     # Max_02 "{i}( Ага, взял и закрыл! Я что, совсем святой, чтобы не рискнуть хоть одним глазком увидеть голую Алису! Да ещё так близко! Бесподобная у меня сестрёнка... ){/i}"
-    Max_02 "{i}( Yeah, I covered my eyes! I've got the self control of a saint! I can't believe I'm this close to my incredible older sister... ) {/i}"
+    Max_02 "{i}( Yeah, I covered my eyes! I've got the self control of a saint! I can't believe I'm this close to my incredible older sister... ){/i}"
 
 # game/dialogues/alicetalk.rpy:3473
 translate english gift_lace_lingerie_6b1999ca:
 
     # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Прямо, как мне и хочется... Хм, а может она заметила, что я всё равно подглядываю и таким образом дразнит меня?! Знать бы это наверняка... ){/i}"
-    Max_07 "{i}( Uhh... Alice is in no hurry to hide her delicious tits under the bodysuit! Just like I want it... Hmm, or maybe she noticed that I was peeking and wants to tease me?! I would like to know this for sure... ) {/i}"
+    Max_07 "{i}( Uhh... Alice is in no hurry to hide her delicious tits under the bodysuit! Just like I want it... Hmm, or maybe she noticed that I was peeking and wants to tease me?! I would like to know this for sure... ){/i}"
 
 # game/dialogues/alicetalk.rpy:3478
 translate english gift_lace_lingerie_b0f28e71:
@@ -8393,4 +8393,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:3462
     old "{i}подглядывать {color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
     new "{i}Peek {color=[_ch1.col]}(Stealth. Chance: [_ch1.vis]){/color}{/i}"
-

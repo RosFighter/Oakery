@@ -1020,7 +1020,7 @@ translate english Eric_talk_about_Alice_0_9607dd8c:
 translate english Eric_talk_about_Alice_0_abbb104a:
 
     # Eric_01 "Если мне это понадобится, вот тогда и поговорим о твоих \"премиальных\", а пока гуляй..."
-    Eric_01 "If I need it, we'll talk about your\"bonus\", but in the meantime, just leave it alone..."
+    Eric_01 "If I need it, we'll talk about your \"bonus\", but in the meantime, just leave it alone..."
 
 # game/dialogues/erictalk.rpy:468
 translate english Eric_talk_about_Alice_0_173e5add:
@@ -1164,7 +1164,7 @@ translate english Eric_talk_about_Alice_0_9607dd8c_1:
 translate english Eric_talk_about_Alice_0_1cfeaf31:
 
     # Eric_01 "Если мне это понадобится, вот тогда и поговорим о твоих \"премиальных\", а пока..."
-    Eric_01 "If I need it, we'll talk about your\"bonus\", but in the meantime, just leave it alone..."
+    Eric_01 "If I need it, we'll talk about your \"bonus\", but in the meantime, just leave it alone..."
 
 # game/dialogues/erictalk.rpy:515
 translate english Eric_talk_about_Alice_0_173e5add_1:
@@ -1182,7 +1182,7 @@ translate english Eric_talk_about_Alice_0_249d4b12:
 translate english Eric_talk_about_Alice_0_53725271:
 
     # Max_16 "Да отвали ты! И к Алисе не лезь, а то я вышибу тебя отсюда ещё быстрее, чем собирался!"
-    Max_16 "Fuck off! And don't you dare go near my sister, or I'll kick you out of here even faster than I intended!""
+    Max_16 "Fuck off! And don't you dare go near my sister, or I'll kick you out of here even faster than I intended!"
 
 # game/dialogues/erictalk.rpy:527
 translate english Eric_talk_about_Alice_0_51b57e1f:
@@ -1320,7 +1320,7 @@ translate english Eric_talk_about_lace_lingerie_182be5db:
 translate english Eric_talk_about_lace_lingerie_281c3d59:
 
     # Eric_14 "Ещё раз нарушишь мои планы и друзьями нам больше не быть. Хорошенько подумай, нужно ли тебе это, Макс, мешать мне. И о своих \"премиальных\" можешь забыть за свою оплошность!"
-    Eric_14 "Interfere with my plans again, and that'll be the end of our alliance. Think carefully about whether you want to stop me, Max. And you can forget about your\"bonus\" thanks to your mistake!"
+    Eric_14 "Interfere with my plans again, and that'll be the end of our alliance. Think carefully about whether you want to stop me, Max. And you can forget about your \"bonus\" thanks to your mistake!"
 
 # game/dialogues/erictalk.rpy:572
 translate english Eric_talk_about_lace_lingerie_5907fcad:
@@ -1391,4 +1391,155 @@ translate english strings:
     # game/dialogues/erictalk.rpy:452
     old "Вот у неё и спрашивай! (продолжение вражды)"
     new "So ask her! (continue war)"
+# TODO: Translation updated at 2021-02-07 23:11
+
+# game/dialogues/erictalk.rpy:602
+translate english Eric_talk_about_Kira_0_a0b9d0c1:
+
+    # Eric_09 "Надеюсь, это что-то весьма интересное или важное, иначе меня это не особо волнует..."
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:603
+translate english Eric_talk_about_Kira_0_4acf3d39:
+
+    # Max_01 "А если именно такое, то мне светят за это какие-нибудь \"премиальные\"?"
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:604
+translate english Eric_talk_about_Kira_0_fb65eee0:
+
+    # Eric_03 "Ну ты ушлый! Если это что-то, что поможет мне её трахнуть, то ты можешь расчитывать на бонус. Так что у тебя там такое про неё имеется?"
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:605
+translate english Eric_talk_about_Kira_0_5b981410:
+
+    # Max_02 "Как минимум неожиданное для тебя. Короче, мы с ней... ну, того... этого..."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:606
+translate english Eric_talk_about_Kira_0_ab04f09c:
+
+    # Eric_13 "Используй более понятные слова, Макс."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:607
+translate english Eric_talk_about_Kira_0_cae5ce20:
+
+    # Max_07 "Мы с ней, как бы это сказать... занимаемся оральными утехами..."
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:608
+translate english Eric_talk_about_Kira_0_ad877c77:
+
+    # Eric_12 "Чего?!"
+    Eric_12 ""
+
+# game/dialogues/erictalk.rpy:609
+translate english Eric_talk_about_Kira_0_41f2d91b:
+
+    # Max_04 "У нас с ней интимная близость, вот."
+    Max_04 ""
+
+# game/dialogues/erictalk.rpy:610
+translate english Eric_talk_about_Kira_0_66b1162c:
+
+    # Eric_04 "Да ладно! Это у тебя приколы такие, Макс?! Хочешь сказать, она тебе отсасывает?!"
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:611
+translate english Eric_talk_about_Kira_0_1dc507c8:
+
+    # Max_03 "Ага. Кстати, по мне так это самая офигенная вещь в мире!"
+    Max_03 ""
+
+# game/dialogues/erictalk.rpy:612
+translate english Eric_talk_about_Kira_0_ba7fd782:
+
+    # Eric_06 "Погоди... То есть ТЕБЕ осасывает ТВОЯ родная тётя?! Это ты хочешь сказать?"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:613
+translate english Eric_talk_about_Kira_0_9acc7a48:
+
+    # Max_01 "Ну да, об этом я и говорю."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:614
+translate english Eric_talk_about_Kira_0_918aaf8d:
+
+    # Eric_12 "Так. Вот это нихрена себе открытие! Это как вышло вообще?!"
+    Eric_12 ""
+
+# game/dialogues/erictalk.rpy:615
+translate english Eric_talk_about_Kira_0_361cd83d:
+
+    # Max_07 "Наверно, сказалось то, что она работает в порноиндустрии сейчас... Хотя, она и без этого была довольно открыта в плане таких развлечений."
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:616
+translate english Eric_talk_about_Kira_0_e0b3dd08:
+
+    # Eric_08 "Ого! Это шикарные новости, Макс! Ты только что подогнал мне порномодель, а она ещё и сестра моей женщины! Это очень круто!!!"
+    Eric_08 ""
+
+# game/dialogues/erictalk.rpy:617
+translate english Eric_talk_about_Kira_0_0cb780ea:
+
+    # Max_09 "Значит, такая информация тянет на бонус?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:618
+translate english Eric_talk_about_Kira_0_9942b3b4:
+
+    # Eric_04 "Однозначно тянет. Обязательно это обсудим... Но сперва, когда вы этим с Кирой занимаетесь?"
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:619
+translate english Eric_talk_about_Kira_0_ae52c68e:
+
+    # Max_04 "По ночам, когда она возвращается с работы. В это время все уже спят, а мы развлекаемся..."
+    Max_04 ""
+
+# game/dialogues/erictalk.rpy:620
+translate english Eric_talk_about_Kira_0_90704005:
+
+    # Eric_03 "И где вы развлекаетесь?"
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:621
+translate english Eric_talk_about_Kira_0_26197899:
+
+    # Max_01 "Когда ты ночуешь у нас в гостях - в ванной комнате и у бассейна."
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:622
+translate english Eric_talk_about_Kira_0_f5bec7c8:
+
+    # Eric_06 "Да вы рисковые ребята! Не боитесь, что вас кто-то увидит? В ванной ладно, там ещё есть шансы как-то скрыться, а вот у бассейна..."
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:623
+translate english Eric_talk_about_Kira_0_8bf662f4:
+
+    # Max_02 "Да мы там по-быстренькому шалим..."
+    Max_02 ""
+
+# game/dialogues/erictalk.rpy:624
+translate english Eric_talk_about_Kira_0_840a0cb4:
+
+    # Eric_08 "В таком случае, я обязательно загляну к вам в ванную, как бы случайно... Так сказать, поймаю с поличным, чтобы можно было максимально просто развести твою тётю на оральные утехи и для себя. Ты же подыграешь мне?"
+    Eric_08 ""
+
+# game/dialogues/erictalk.rpy:625
+translate english Eric_talk_about_Kira_0_b3862c21:
+
+    # Max_03 "Если договоримся о моих \"премиальных\", то подыграю."
+    Max_03 ""
+
+# game/dialogues/erictalk.rpy:626
+translate english Eric_talk_about_Kira_0_c1a34d4e:
+
+    # Eric_02 "Само собой, Макс. Это уже совсем другой разговор."
+    Eric_02 ""
 

@@ -1991,4 +1991,3 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:878
     old "{i}развязать Киру{/i}"
     new "{i}Untie Kira{/i}"
-
