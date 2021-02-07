@@ -142,7 +142,7 @@ translate english dinner_first_yeah_775e169f:
 translate english dinner_first_yeah_c3619227:
 
     # Lisa_01 "Ну, школа находится тут совсем рядом, почти за углом. Уроки короткие, занятий мало. Но преподают интересно, гораздо лучше, чем в старой школе. Думаю, здесь даже Максу понравилось бы учиться!"
-    Lisa_01 "Well, it's super easy to get to, it's only around the corner. The classes are short, but the teachers are interesting, much better than my old school. I even think Max would have liked it!"
+    Lisa_01 "Well, it's super easy to get to, it's only around the corner. The classes are short, but the teachers are interesting, much better than my old school. I even think Max would've liked it!"
 
 # game/dialogues/dinner.rpy:116
 translate english dinner_first_yeah_09a444ef:
@@ -154,7 +154,7 @@ translate english dinner_first_yeah_09a444ef:
 translate english dinner_first_yeah_21c00c7f:
 
     # Lisa_02 "Да, познакомилась... с одной подружкой. Класс супер, всё хорошо, мам!" nointeract
-    Lisa_02 "Yeah, I met a nice... girl. The class is great, Mom!" nointeract
+    Lisa_02 "Yeah, I met a nice... Girl. The class is great, Mom!" nointeract
 
 # game/dialogues/dinner.rpy:121
 translate english dinner_first_yeah_4eb66e9d:
@@ -166,7 +166,7 @@ translate english dinner_first_yeah_4eb66e9d:
 translate english dinner_first_yeah_6649cfb2:
 
     # Lisa_00 "Не удивляйся потом, если твои секреты тоже окажутся... не секретами."
-    Lisa_00 "Don't be surprised if your secrets aren't so secretive anymore."
+    Lisa_00 "Don't be surprised if your secrets aren't so secret anymore."
 
 # game/dialogues/dinner.rpy:128
 translate english dinner_first_yeah_555ab37a:
@@ -382,7 +382,7 @@ translate english dinner_2_help_b7725454:
 translate english dinner_2_next_c6a3dc98:
 
     # Ann_01 "Ох, детишки. Не понимаю я ничего в этих ваших блогах и не уверена, что на это надо тратить своё время, но разберётесь. Я хотела спросить, ни к кому в комнату никакие насекомые не заползали?"
-    Ann_01 "Oh, kids. I don't understand anything about your blogs and I'm not sure you should be wasting your time on them, but I hope you'll figure it out. I wanted to ask you something, did anyone notce any insects crawl into your rooms?"
+    Ann_01 "Oh, kids. I don't understand anything about your blogs and I'm not sure you should be wasting your time on them, but I hope you'll figure it out. I wanted to ask you something, did anyone notice any insects crawl into your rooms?"
 
 # game/dialogues/dinner.rpy:257
 translate english dinner_2_next_e59e27d3:
@@ -454,7 +454,7 @@ translate english dinner_2_next_dcddcdc6:
 translate english dinner_3_161450c7:
 
     # Ann_00 "Всем приятного аппетита. Предлагаю поужинать. Есть у кого-то какие-то новости?"
-    Ann_00 "Enjoy the food, everyone. Does anyone have any news to share?"
+    Ann_00 "Enjoy the food, everyone. Does anyone have news to share?"
 
 # game/dialogues/dinner.rpy:283
 translate english dinner_3_889c8278:
@@ -682,7 +682,7 @@ translate english dinner_4_4ac6b15c:
 translate english dinner_4_129d1f43:
 
     # Eric_05 "Ань, а ты бываешь строгая, как я погляжу... Мне кажется, тебе стоит Алисе разрешить ходить в клубы. К тому же, она почти взрослая..."
-    Eric_05 "You're quite strict sometimes, Ann...you should let Alice go and enjoy herself, she's an adult..."
+    Eric_05 "You're quite strict sometimes, Ann... You should let Alice go and enjoy herself, she's an adult..."
 
 # game/dialogues/dinner.rpy:372
 translate english dinner_4_ceb18512:
@@ -820,7 +820,7 @@ translate english dinner_5_3f0f329e:
 translate english dinner_5_44e3063b:
 
     # Alice_05 "Макс, а ты всё ещё придурок... Эрик отлично подходит маме! Он сильный, умный, ответственный, солидный такой и при деньгах. Маме именно такой и нужен!"
-    Alice_05 "Stop being a jerk, Max. Eric is great for Mom! He's strong, smart, responsible and rich."
+    Alice_05 "Stop being a jerk, Max. Eric is great for Mom! He's strong, smart, responsible, and rich!"
 
 # game/dialogues/dinner.rpy:432
 translate english dinner_5_ab07bd04:
@@ -1060,7 +1060,7 @@ translate english dinner_6_898c60c2:
 translate english dinner_6_3819b060:
 
     # Eric_05 "О да. Ну, посмотрим. Я ещё всё выясню про этот лагерь, когда у них ближайший набор, а в твоих силах пока есть время, доказать поступками, что ты уже мужик и не нуждаешься в этом лагере. Всё в твоих руках..."
-    Eric_05 "Yeah, right. We'll see. I'll need some time to gather more information about the camp, like when their next intake is... but if you can prove in the meantime that you don't need it, and that you're a real man... we can reconsider."
+    Eric_05 "Yeah, right. We'll see. I'll need some time to gather more information about the camp, like when their next intake is... But if you can prove in the meantime that you don't need it, and that you're a real man... We can reconsider."
 
 # game/dialogues/dinner.rpy:495
 translate english dinner_6_58a8fd66:
@@ -1276,7 +1276,7 @@ translate english dinner_11_318e1952:
 translate english dinner_11_f4df1d4d:
 
     # Ann_19 "Макс! Что за тон? Уважительно разговаривай с Эриком! А не то накажу. В общем, мы сейчас поехали, а вы приберитесь тут. Завтра я вернусь. Всем спасибо за ужин!"
-    Ann_19 "What kind of tone is that, Max? You should treat Eric with respect or I'll punish you! But listen, we're leaving now. I'll return tomorrow morning. Thanks for dinner, everyone."
+    Ann_19 "What kind of tone is that, Max? You should treat Eric with respect or I'll punish you! But right now... We're leaving. I'll return tomorrow morning. Thanks for dinner, everyone."
 
 # game/dialogues/dinner.rpy:548
 translate english dinner_11_c8712c7d:
@@ -1318,7 +1318,7 @@ translate english dinner_12_07803c9e:
 translate english dinner_12_597d0ff1:
 
     # Ann_05 "Нет, в этот раз речь не о нём. Ну, ещё варианты есть? Лиза? Алиса?"
-    Ann_05 "Nope, it's not about him this time. Do you have any other ideas? Lisa, Alice?"
+    Ann_05 "Nope, it's not about him this time. Do you have any other ideas? Lisa? Alice?"
 
 # game/dialogues/dinner.rpy:569
 translate english dinner_12_74e231fd:
@@ -1408,25 +1408,25 @@ translate english dinner_12_e4627083:
 translate english dinner_12_797024eb:
 
     # Lisa_01 "Тётя Кира же рассказывала, Макс! Она любит эту историю, правда, каждый раз рассказывает её по-новому. Вот спросишь у неё и узнаешь новую версию!"
-    Lisa_01 "Aunt Kira told this story countless times, Max! She loves telling it. She changes it every time, though. You can ask her and you'll hear a new version every time."
+    Lisa_01 "Aunt Kira told this story countless times, Max! She loves telling it. She changes it every time, though. Whenever you ask her you can expect to hear a new version."
 
 # game/dialogues/dinner.rpy:600
 translate english dinner_12_9c03c99d:
 
     # Max_02 "Ага, спрошу..."
-    Max_02 "Yeah, I will"
+    Max_02 "Yeah, I will..."
 
 # game/dialogues/dinner.rpy:602
 translate english dinner_12_21c6cd97:
 
     # Ann_01 "На искательницу приключений на свою задницу. Она училась на юриста, но бросила первый курс и решила, что хочет стать журналистом. Поступила снова, но и там ей быстро всё наскучило..." nointeract
-    Ann_01 "Major in finding problems. She was studying for a law degree, but she left after her first year and decided to become a journalist. But then she got bored again." nointeract
+    Ann_01 "Major in finding problems. She was studying law, but she left after her first year and decided to become a journalist. But then she got bored again." nointeract
 
 # game/dialogues/dinner.rpy:605
 translate english dinner_12_0e0113dd:
 
     # Ann_04 "Ну и очень хорошо. Это плохой пример для подражания. За что Кира не берётся, всё у неё получается... особым образом. И когда за ум только возьмётся..."
-    Ann_04 "Good. She's not exactly a role model. Anything she tries doesn't quite works out the way she hoped."
+    Ann_04 "Good. She's not exactly a role model. Anything she tries doesn't quite work out the way she hoped."
 
 # game/dialogues/dinner.rpy:606
 translate english dinner_12_8e97f7e1:
@@ -1540,7 +1540,7 @@ translate english dinner_17_sleep_24dcc3e9:
 translate english dinner_17_sleep_b6f8eac5:
 
     # Ann_07 "Вот и хорошо. А вообще, спросим у неё, как ей комфортнее. Ладно, это всё мелочи. Всем спасибо за ужин. Я побежала, Эрик прислал за мной машину. Вернусь утром."
-    Ann_07 "Great. We'll ask her. Anyway, everyone, thanks for the dinner, I'm going to Erics. The car is already here. I'll be home in the morning."
+    Ann_07 "Great. We'll ask her. Anyway, everyone, thanks for the dinner, I'm going to Eric's. The car is already here. I'll be home in the morning."
 
 # game/dialogues/dinner.rpy:648
 translate english dinner_17_sleep_d50d210d:
@@ -1558,7 +1558,7 @@ translate english strings:
 
     # game/dialogues/dinner.rpy:43
     old "Как скажешь, мам..."
-    new "Okay, mom..."
+    new "Okay, Mom..."
 
     # game/dialogues/dinner.rpy:43
     old "У тебя всё хорошо?"
@@ -1942,7 +1942,7 @@ translate english dinner_ab_lisa_ed_f32204fd:
 translate english dinner_ab_lisa_ed_8bc69cc7:
 
     # Eric_02 "По воскресеньям. Будете заниматься 3 или 4 часа, этого более чем хватит, чтобы закрепить то, что вы пройдёте в школе."
-    Eric_02 "Every Sunday for about 3-4 hours, which is more than enough time to cover what you will learn in school."
+    Eric_02 "Every Sunday for about 3-4 hours, which is more than enough time to cover your curriculum."
 
 # game/dialogues/dinner.rpy:666
 translate english dinner_ab_lisa_ed_986bb662:

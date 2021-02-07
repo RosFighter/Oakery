@@ -1344,51 +1344,51 @@ translate english Eric_talk_about_lace_lingerie_770a09a1:
 translate english Eric_talk_about_lace_lingerie_b3058115:
 
     # Max_09 "Что надо?"
-    Max_09 ""
+    Max_09 "What do you need?"
 
 # game/dialogues/erictalk.rpy:579
 translate english Eric_talk_about_lace_lingerie_884dcc80:
 
     # Eric_09 "Тебя ждут большие проблемы, Макс! Зря ты подарил Алисе то боди. Большая ошибка."
-    Eric_09 ""
+    Eric_09 "You're in deep shit, Max! You shouldn't have given Alice that bodysuit. Big mistake."
 
 # game/dialogues/erictalk.rpy:580
 translate english Eric_talk_about_lace_lingerie_b54fcb7c:
 
     # Max_02 "Похоже, я испортил чьи-то планы... Какой ужас!"
-    Max_02 ""
+    Max_02 "Looks like I messed up someone's plans... The horror!"
 
 # game/dialogues/erictalk.rpy:581
 translate english Eric_talk_about_lace_lingerie_88e73d18:
 
     # Eric_13 "За всё, что будет дальше винить можешь только себя, Макс. Успехов не желаю."
-    Eric_13 ""
+    Eric_13 "You can only blame yourself for what comes next. Good luck. You'll need it."
 
 # game/dialogues/erictalk.rpy:582
 translate english Eric_talk_about_lace_lingerie_a90aad28:
 
     # Max_01 "Да и не надо. Обойдусь."
-    Max_01 ""
+    Max_01 "I'm sure I'll manage."
 
 translate english strings:
 
     # game/dialogues/erictalk.rpy:452
     old "Значит, тебя её блог интересует? (продолжение дружбы)"
-    new ""
+    new "So you're interested in her blog? (continue friendship)"
 
     # game/dialogues/erictalk.rpy:452
     old "Я мало что об этом знаю... (попытка выиграть время)"
-    new ""
+    new "I don't know much about it... (try and buy time)"
 
     # game/dialogues/erictalk.rpy:452
     old "Не лез бы ты к Алисе! (расторжение дружбы)"
-    new ""
+    new "You shouldn't have gone to Alice! (end friendship)"
 
     # game/dialogues/erictalk.rpy:452
     old "Нужна помощь? (попытка подружиться)"
-    new ""
+    new "Need some help? (try and become friends)"
 
     # game/dialogues/erictalk.rpy:452
     old "Вот у неё и спрашивай! (продолжение вражды)"
-    new ""
+    new "So ask her! (continue war)"
 

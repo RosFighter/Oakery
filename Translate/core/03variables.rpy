@@ -1248,9 +1248,9 @@ translate english strings:
 
     # game/core/03variables.rpy:272
     old "ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"
-    new ""
+    new "BLACK LACE BODYSUIT"
 
     # game/core/03variables.rpy:272
     old "Женское сексуальное нижнее бельё с кружевным узором по краям."
-    new ""
+    new "Women's sexy underwear with lace pattern on the edges."
 

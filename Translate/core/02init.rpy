@@ -443,9 +443,9 @@ translate english strings:
 
     # game/core/02init.rpy:100
     old "Я слышал, Эрик тебе новое бельё собирается купить?"
-    new ""
+    new "I hear Eric's going to buy you some new underwear?"
 
     # game/core/02init.rpy:100
     old "Покажешь боди, которое тебе Эрик купит?"
-    new ""
+    new "Will you show me the bodysuit that Eric will buy you?"
 
