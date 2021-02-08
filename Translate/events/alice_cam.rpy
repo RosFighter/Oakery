@@ -480,35 +480,34 @@ translate english cam0_alice_after_club_d8fc5c8e:
 translate english cam0_blog_with_Eric_1210ca0b:
 
     # Max_09 "{i}( Эрик о чём-то разговаривает с Алисой. И развалился так, как будто это его комната... ){/i}"
-    Max_09 ""
+    Max_09 "{i}( Eric is talking to Alice about something, sprawled out like it's his room... ){/i}"
 
 # game/events/alice_cam.rpy:675
 translate english cam0_blog_with_Eric_47a71eff:
 
     # Max_08 "{i}( Ого! Да она при нём, похоже, переодеваться вздумала! Что сказать, Эрик умеет добиваться своего... ){/i}"
-    Max_08 ""
+    Max_08 "{i}( Wow! She looks like she's changing clothes in front of him! What can I say, Eric knows how to get what he wants... ){/i}"
 
 # game/events/alice_cam.rpy:680
 translate english cam0_blog_with_Eric_9a973c1d:
 
     # Max_01 "{i}( Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! ){/i}"
-    Max_01 ""
+    Max_01 "{i}( The naked and beautiful Alice! Told Eric not to peek, except he's sure to be peeping through his fingers... I certainly would have ventured that close to peeking at a naked Alice! ){/i}"
 
 # game/events/alice_cam.rpy:684
 translate english cam0_blog_with_Eric_18d8cc91:
 
     # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Ugh... Alice takes her time hiding her luscious boobs under her bodysuit! Hmmm, maybe she noticed that Eric is peeping anyway and is teasing him that way! She clearly has no idea that she's also teasing me... ){/i}"
 
 # game/events/alice_cam.rpy:689
 translate english cam0_blog_with_Eric_913dbbe7:
 
     # Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь... ){/i}"
-    Max_09 ""
+    Max_09 "{i}( I see what's going on... Alice thinks she can use Eric, but is playing right into his hands! Oh, Alice... I hope you know what you're doing... ){/i}"
 
 # game/events/alice_cam.rpy:716
 translate english cam0_blog_with_Eric_340b426d:
 
     # Max_08 "{i}( Эрик сегодня в комнате Алисы. Похоже, пытается помогать с блогом... Но в действительности же, чтобы поглазеть на Алису в белье, по себе знаю... ){/i}"
-    Max_08 ""
-
+    Max_08 "{i}( Eric is in Alice's room today. Looks like he's trying to help with her blog... But really, he just wants to get a good look at her in her underwear, I would know... ){/i}"

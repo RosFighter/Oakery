@@ -2153,59 +2153,58 @@ translate english dinner_ab_earn_76177f7d:
 translate english dinner_lace_lingerie_3b579f4f:
 
     # Ann_04 "Всем добрый вечер и приятного аппетита!"
-    Ann_04 ""
+    Ann_04 "Good evening all, let's enjoy the food!"
 
 # game/dialogues/dinner.rpy:749
 translate english dinner_lace_lingerie_367064d7:
 
     # Max_01 "Приятного!"
-    Max_01 ""
+    Max_01 "Enjoy!"
 
 # game/dialogues/dinner.rpy:750
 translate english dinner_lace_lingerie_88f276ad:
 
     # Ann_08 "Кстати, мне тут стало интересно... По пятницам я всё время уезжаю к Эрику, Алиса по клубам шастает и на всём огромном просторе этого дома совершенно одни остаются Макс и Лиза. Ничего подозрительного я так и не заметила после возвращения. Признавайтесь, что делаете?"
-    Ann_08 ""
+    Ann_08 "By the way, I've been wondering... When I stay over at Eric's every Friday, Alice goes clubbing, while Max and Lisa are left all alone in this vast house... But I've never noticed anything out of place when I return. Tell me, what do you two get up to?"
 
 # game/dialogues/dinner.rpy:751
 translate english dinner_lace_lingerie_c568c91c:
 
     # Lisa_01 "Да ничего необычного, мам. Всё то же самое, что во все остальные дни. Так ведь, Макс?"
-    Lisa_01 ""
+    Lisa_01 "It's nothing out of the ordinary, Mom. It's the same as every other day. Right, Max?"
 
 # game/dialogues/dinner.rpy:752
 translate english dinner_lace_lingerie_319ac67e:
 
     # Max_07 "Ага, я даже не могу вспомнить, что мы делали в прошлую пятницу! Настолько всё было обычно."
-    Max_07 ""
+    Max_07 "Yeah, I can't even remember what we did last Friday! It was so normal."
 
 # game/dialogues/dinner.rpy:753
 translate english dinner_lace_lingerie_e70fcdf2:
 
     # Ann_06 "Хоть вас и есть за что ругать и наказывать периодически, но вы всё равно у меня замечательные! За Алису вот только переживаю немного с этими её клубами. Хорошо, что они с Кирой вместе стали отрываться, мне от этого спокойнее. Хотя, за ней самой нужно приглядывать..."
-    Ann_06 ""
+    Ann_06 "Even though you need to punished sometimes, I'm so happy that you two behave while I'm gone! I'm just a little worried about Alice with all her clubs. It's good that she and Kira have been hanging out together, it makes me feel better. Even if Kira is someone to keep an eye on..."
 
 # game/dialogues/dinner.rpy:754
 translate english dinner_lace_lingerie_c85be202:
 
     # Lisa_02 "Не переживай за нас, мам. Мы уже большие, можем о себе позаботиться."
-    Lisa_02 ""
+    Lisa_02 "Don't worry about us, Mom. We're big enough to take care of ourselves now."
 
 # game/dialogues/dinner.rpy:755
 translate english dinner_lace_lingerie_df977086:
 
     # Alice_03 "Сегодня за меня тоже можешь не волноваться, мам. Я не иду в клуб. У тёти Киры этой ночью \"корпоративная\" вечеринка, а я лучше над своим блогом дополнительный вечерок поработаю."
-    Alice_03 ""
+    Alice_03 "You don't have to worry about me tonight either, Mom. I'm not going out. Aunt Kira's having a company party tonight, so I'll spend some time working on my blog."
 
 # game/dialogues/dinner.rpy:756
 translate english dinner_lace_lingerie_fcb50d1a:
 
     # Ann_04 "Ну, я рада, что всё так сложилось. Ох, что-то я заболталась, а ведь мне уже скоро уезжать... Спасибо вам за приятный ужин. Я побежала, увидимся утром..."
-    Ann_04 ""
+    Ann_04 "Well, I'm glad it worked out that way. Oh, I've been talking a lot, and I have to leave soon... Thank you for a nice dinner. I have to run, see you in the morning!"
 
 # game/dialogues/dinner.rpy:757
 translate english dinner_lace_lingerie_e0b844ce:
 
     # Max_01 "Пока, мам..."
-    Max_01 ""
-
+    Max_01 "Bye, Mom..."

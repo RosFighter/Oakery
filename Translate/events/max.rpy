@@ -970,17 +970,16 @@ translate english strings:
 translate english delivery2_0ba1be34:
 
     # Max_00 "Да, то что нужно. Спасибо!"
-    Max_00 ""
+    Max_00 "Yes, that's just what we need. Thank you!"
 
 # game/events/max.rpy:596
 translate english delivery2_6587db47:
 
     # Max_02 "{i}( Боди у меня! Теперь, нужно подарить его Алисе и больше всего мне может повезти, когда она занимается своим блогом. Она и так в это время в нижнем белье, а с учётом того, что она получит боди раньше времени, то вполне может переодеться и при мне... ){/i}"
-    Max_02 ""
+    Max_02 "{i}( I've got it! Now, I need to give it to Alice, and then I might get lucky when she's doing her blogging. She's already in her underwear at that time, and with her getting the clothes, she might as well change in front of me... ){/i}"
 
 # game/events/max.rpy:598
 translate english delivery2_245175bb:
 
     # Max_10 "{i}( Боди у меня! Вот только поздно... Эрик уже купил Алисе то, что она хотела. Остаётся лишь выставить на ebay, так хотя бы половину стоимости верну. ){/i}"
-    Max_10 ""
-
+    Max_10 "{i}( I've got it! Except it's too late... Eric already bought one for Alice. All that remains is to try and resell it, so at least I'll get half the price back. ){/i}"
