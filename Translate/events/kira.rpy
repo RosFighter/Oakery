@@ -112,7 +112,7 @@ translate english kira_bath_kira_mass_bath_first_14b70a3b:
 translate english kira_bath_kira_mass_bath_first_4507dc04:
 
     # Max_01 "Фух... хорошо."
-    Max_01 "Phew...that's a relief."
+    Max_01 "Phew... That's a relief."
 
 # game/events/kira.rpy:95
 translate english kira_bath_kira_mass_bath_first_cf835ccb:
@@ -160,13 +160,13 @@ translate english kira_bath_kira_mass_bath_first_d286de06:
 translate english kira_bath_kira_mass_bath_first_1f73cf5f:
 
     # Max_08 "Да, но... прямо здесь... в ванне?!"
-    Max_08 "Yes, but ... right here... in the bath?!"
+    Max_08 "Yes, but... Right here... In the bath?!"
 
 # game/events/kira.rpy:107
 translate english kira_bath_kira_mass_bath_first_1994407b:
 
     # Kira_08 "Что ты, нет! Ты сядешь здесь, рядом с ванной, а я свешу тебе свои ноги... Ха! Конечно, в ванне! Я же вижу с каким трудом ты прикрываешь свой... энтузиазм... Расслабься уже и залезай в ванну. Или, может, хочешь уйти?"
-    Kira_08 "Ha! Of course! I can see how hard it is for you to cover your own... enthusiasm... Relax already and get in the tub. You're not going to leave now, are you?"
+    Kira_08 "Ha! Of course! I can see how hard it is for you to cover your own... Enthusiasm... Relax already and get in the tub. You're not going to leave now, are you?"
 
 # game/events/kira.rpy:108
 translate english kira_bath_kira_mass_bath_first_1f0f11e4:
@@ -430,7 +430,7 @@ translate english kira_bath_mass_bath_21d93cdd:
 translate english kira_bath_mass_bath_2f045ba2:
 
     # Kira_09 "Ох, Макс, как же меня заводит твой огромный член! Ты так жадно смотришь, как я ласкаю себя, свою грудь... Ах, моя киска вся горит, не отводи от неё глаз..." nointeract
-    Kira_09 "Your young cock is turning me on! Do you like seeing me play with myself, my big tits? Oh, can you see how wet my pussy is, don't take your eyes off it like a god boy..." nointeract
+    Kira_09 "Your young cock is turning me on! Do you like seeing me play with myself, my big tits? Oh, can you see how wet my pussy is, don't take your eyes off it like a good boy..." nointeract
 
 # game/events/kira.rpy:247
 translate english kira_bath_mass_bath_a7080c78:
@@ -442,7 +442,7 @@ translate english kira_bath_mass_bath_a7080c78:
 translate english kira_bath_mass_bath_b30dfbdb:
 
     # Kira_10 "[restrain!t]Тебе нравится, как я ввожу пальчики в свою киску? Это так приятно и сладко, что я уже вот-вот кончу! Ох... давай, не сдерживайся..." nointeract
-    Kira_10 "[restrain!t]You like the way I put my fingers in my pussy? They're sliding in so easily, I'm going to cum! Oh... come on, don't hold back..." nointeract
+    Kira_10 "[restrain!t]You like the way I put my fingers in my pussy? They're sliding in so easily, I'm going to cum! Oh... Come on, don't hold back..." nointeract
 
 # game/events/kira.rpy:258
 translate english kira_bath_mass_bath_7193f533:
@@ -568,7 +568,7 @@ translate english kira_bath_cuni_bj_d3732a7c:
 translate english kira_bath_cuni_bj_a6041d47:
 
     # Kira_11 "Макс... О да... продолжай вот так, я уже не могу сдерживаться... Сожми мою попку покрепче! Уже так близко... Да! Я кончаю... Ахх..."
-    Kira_11 "Max... Yeah... go on like this, I can't hold back anymore... Squeeze my ass! Already so close... Yes! I'm cumming ... ahh..."
+    Kira_11 "Max... Yeah... go on like this, I can't hold back anymore... Squeeze my ass! Already so close... Yes! I'm cumming ... Ahh..."
 
 # game/events/kira.rpy:323
 translate english kira_bath_cuni_bj_4d360262:
@@ -580,7 +580,7 @@ translate english kira_bath_cuni_bj_4d360262:
 translate english kira_bath_cuni_bj_b2b39a0b:
 
     # Kira_06 "Да... Ты у меня способный племянник... и я хочу твой член! Хочу почувствовать его у себя во рту..." nointeract
-    Kira_06 "Yes... You are my capable nephew... now I want your cock! I want to taste you..." nointeract
+    Kira_06 "Yes... You are my capable nephew... Now I want your cock! I want to taste you..." nointeract
 
 # game/events/kira.rpy:328
 translate english kira_bath_cuni_bj_7a7528d8:
@@ -598,7 +598,7 @@ translate english kira_bath_cuni_bj_f7a0a397:
 translate english kira_bath_cuni_bj_5603e12f:
 
     # Kira_05 "Сначала, я хочу приласкать его своим язычком... Вот так... Я знаю, что тебе это нравится..." nointeract
-    Kira_05 "First, I'll let my tongue glide over him... Like this... you have such a perfect cock..." nointeract
+    Kira_05 "First, I'll let my tongue glide over him... Like this... You have such a perfect cock..." nointeract
 
 # game/events/kira.rpy:355
 translate english kira_bath_cuni_bj_b8f3d235:
@@ -658,7 +658,7 @@ translate english kira_bath_not_restrain_26d27f45:
 translate english kira_bath_not_restrain_ff569f5a:
 
     # Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
-    Max_20 "Phew... I just couldn't... take a bath with you - too hot, Aunt Kira."
+    Max_20 "Phew... I just couldn't... Take a bath with you - too hot, Aunt Kira."
 
 # game/events/kira.rpy:390
 translate english kira_bath_not_restrain_9fe7d7f1:
@@ -730,7 +730,7 @@ translate english kira_night_swim_0341a199:
 translate english kira_night_swim_57679d55_1:
 
     # Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
-    Max_03 "Wow... skinny dipping, Aunt Kira?! You look great!"
+    Max_03 "Wow... Skinny dipping, Aunt Kira?! You look great!"
 
 # game/events/kira.rpy:423
 translate english kira_night_swim_41436e7f:
@@ -772,7 +772,7 @@ translate english kira_night_swim_5fa643d7:
 translate english kira_night_swim_afe0a4ee:
 
     # Kira_07 "А тебя, похоже, заводит, что кто-то может увидеть, как твоя обнажённая тётя крепко сжимает и дрочит твой огромный член, да Макс?"
-    Kira_07 "Looks like you're getting turned on... is it by the risk that someone might see your Aunt tightly jerking off your huge cock, Max?"
+    Kira_07 "Looks like you're getting turned on... Is it by the risk that someone might see your Aunt tightly jerking off your huge cock, Max?"
 
 # game/events/kira.rpy:445
 translate english kira_night_swim_d50e2e42:
@@ -796,7 +796,7 @@ translate english kira_night_swim_a3a87085:
 translate english kira_night_swim_6b17ead2:
 
     # Kira_04 "Представь, что за тем, что я вытворяю своим языком с твоим членом, кто-то подглядывает... Может это Алиса... или Лиза... а может, даже твоя мама!"
-    Kira_04 "Imagine someone spying on us, watching what I'm doing with my tongue to your cock... Maybe it's Alice... or Lisa... maybe even your Mom!"
+    Kira_04 "Imagine someone spying on us, watching what I'm doing with my tongue to your cock... Maybe it's Alice... Or Lisa... Maybe even your Mom!"
 
 # game/events/kira.rpy:455
 translate english kira_night_swim_bfbddab0:
@@ -814,7 +814,7 @@ translate english kira_night_swim_1f0f4d2e:
 translate english kira_night_swim_296f109d:
 
     # Max_05 "Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
-    Max_05 "Wow, Aunt Kira, amazing... but I did get you a little messy."
+    Max_05 "Wow, Aunt Kira, amazing... But I did get you a little messy."
 
 # game/events/kira.rpy:463
 translate english kira_night_swim_f8441ad7:
@@ -886,7 +886,7 @@ translate english kira_night_swim_17b0495e:
 translate english kira_night_swim_c4001dfb:
 
     # Kira_02 "Не интересно? Ну да, согласна... Тогда давай сделаем так, утром я буду принимать душ одна, но не откажусь от твоей компании!"
-    Kira_02 "Not fun? Well, yes, I agree...so let's do this, I'll be in the shower alone in the morning. Maybe you should come keep me company?"
+    Kira_02 "Not fun? Well, yes, I agree... So let's do this, I'll be in the shower alone in the morning. Maybe you should come keep me company?"
 
 # game/events/kira.rpy:504
 translate english kira_night_swim_2c22d5ff:
@@ -1156,7 +1156,7 @@ translate english kira_night_tv_9353de64_1:
 translate english kira_night_tv_3d3fd53e:
 
     # Max_03 "Конечно, тётя Кира. А мне можно тоже... посмотреть этот фильм?"
-    Max_03 "Of course, Aunt Kira. Can I... watch this movie, too?"
+    Max_03 "Of course, Aunt Kira. Can I... Watch this movie, too?"
 
 # game/events/kira.rpy:723
 translate english kira_night_tv_413b9a2c_1:
@@ -1168,7 +1168,7 @@ translate english kira_night_tv_413b9a2c_1:
 translate english kira_night_tv_3d3fd53e_1:
 
     # Max_03 "Конечно, тётя Кира. А мне можно тоже... посмотреть этот фильм?"
-    Max_03 "Of course, Aunt Kira. Can I... watch this movie, too?"
+    Max_03 "Of course, Aunt Kira. Can I... Watch this movie, too?"
 
 # game/events/kira.rpy:738
 translate english kira_night_tv_porn_4fa7f768:
@@ -3390,7 +3390,7 @@ translate english return_from_club_ass_a38e6fb8:
 translate english return_from_club_ass_ee61265b:
 
     # Max_01 "Надеюсь, мама не будет сильно её ругать за то, что она легла спать голая... Со всеми может случиться! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать..." nointeract
-    Max_01 "I hope her Mom doesn't judge her too much for going to bed naked... With a body like hers, who wouldn't? She's hypnotising me with her beauty. But it's time for me to go to bed..." nointeract
+    Max_01 "I hope Mom doesn't judge her too much for going to bed naked... With a body like hers, who wouldn't? She's hypnotising me with her beauty. But it's time for me to go to bed..." nointeract
 
 translate english strings:
 
@@ -3404,7 +3404,7 @@ translate english strings:
 
     # game/events/kira.rpy:1973
     old "{i}отвести тётю в гостиную{/i}"
-    new ""
+    new "{i}Take your aunt to the living room{i}"
 
     # game/events/kira.rpy:2011
     old "{i}Дать Алисе конфету и отвести тётю в гостиную{/i}"
@@ -3451,171 +3451,170 @@ translate english strings:
 translate english kira_bath_caught_3ca0ecaf:
 
     # Eric_12 "Ох нифига себе, Макс!!! Это я удачно зашёл..."
-    Eric_12 ""
+    Eric_12 "Oh, damn! What have I just walked in on?"
 
 # game/events/kira.rpy:420
 translate english kira_bath_caught_0569054a:
 
     # Max_13 "Это не то, чем кажется! Мы просто..."
-    Max_13 ""
+    Max_13 "It's not what it looks like! We just..."
 
 # game/events/kira.rpy:421
 translate english kira_bath_caught_5e78d419:
 
     # Eric_06 "Неужели вы тут на самом деле на лыжах катаетесь?! А так сразу и не скажешь!"
-    Eric_06 ""
+    Eric_06 "Is this how you treat your guests!? There's no way you can explain this!"
 
 # game/events/kira.rpy:422
 translate english kira_bath_caught_a3113548:
 
     # Max_14 "Нет, просто так получилось..."
-    Max_14 ""
+    Max_14 "No, it just happened..."
 
 # game/events/kira.rpy:428
 translate english kira_bath_caught_d574cb19:
 
     # Eric_04 "Да не переживай, Макс. Вам повезло, что это я, а не кто-нибудь из твоих сестёр или твоя мама. Вы бы могли спокойно вылететь из этого дома со скандалом!"
-    Eric_04 ""
+    Eric_04 "Don't worry about it, Max. You're lucky it was me who found you and not one of your sisters, or worse, your Mom. That would've caused a real scandal!"
 
 # game/events/kira.rpy:429
 translate english kira_bath_caught_7b917c05:
 
     # Kira_15 "Мне думается, что нам не так уж и повезло, видя то, как ты злорадствуешь!"
-    Kira_15 ""
+    Kira_15 "The way you said that doesn't make me feel so lucky!"
 
 # game/events/kira.rpy:430
 translate english kira_bath_caught_7b416a24:
 
     # Eric_05 "Это как посмотреть. Думаю, всем здесь понятно, что держать этот секрет в тайне от всех остальных я за просто так не стану..."
-    Eric_05 ""
+    Eric_05 "You should be. I'm the only one who would be willing to keep this a secret. So long as it's worth it for me."
 
 # game/events/kira.rpy:431
 translate english kira_bath_caught_11636359:
 
     # Kira_13 "И что ты хочешь?"
-    Kira_13 ""
+    Kira_13 "So what do you want?"
 
 # game/events/kira.rpy:436
 translate english kira_bath_caught_44eb4c63:
 
     # Eric_03 "Сомневаюсь, что это Макс тебя совратил, а значит отдуваться тебе, Кира! Мне должно быть {b}приятно{/b} хранить этот секрет! Если понимаешь, о чём я..."
-    Eric_03 ""
+    Eric_03 "I highly doubt this was all Max's idea, so I'm going to leave it to you, Kira! I won't say a thing about what you've done if you give me the right motivation..."
 
 # game/events/kira.rpy:437
 translate english kira_bath_caught_b905692f:
 
     # Kira_16 "По-видимому, секс за молчание?!"
-    Kira_16 ""
+    Kira_16 "Cut the crap, you want sex in exchange for silence, right?!"
 
 # game/events/kira.rpy:438
 translate english kira_bath_caught_4bc31a57:
 
     # Eric_08 "Приятно вести дела со взрослыми людьми. Правда, если я оттрахаю тебя, то криков ты точно не сдержишь, так что пока будет достаточно просто обалденного минета от тебя, Кира. Как ты на это смотришь?"
-    Eric_08 ""
+    Eric_08 "Glad to see you've still got the mind of an adult. But if I fuck you right now, there's no way you'll be quiet enough to not bother the others, so lets just have you suck my cock. How do you feel about that?"
 
 # game/events/kira.rpy:439
 translate english kira_bath_caught_6589a7bc:
 
     # Kira_14 "Мы тут слишком застигнуты врасплох. Нужно время, чтобы подумать."
-    Kira_14 ""
+    Kira_14 "I can't think straight right now. We need time to comprehend this."
 
 # game/events/kira.rpy:440
 translate english kira_bath_caught_3d38ed27:
 
     # Eric_02 "Только не тяните с этим, а то я заскучаю... Ещё увидимся, если вы примете верное решение."
-    Eric_02 ""
+    Eric_02 "I understand. Don't take too long... I'll see you later, if you make the right choice."
 
 # game/events/kira.rpy:447
 translate english kira_bath_caught_a45c03b9:
 
     # Max_08 "Ты правда собираешься по ночам отсасывать Эрику?!"
-    Max_08 ""
+    Max_08 "Are you seriously going to blow him?!"
 
 # game/events/kira.rpy:448
 translate english kira_bath_caught_2e0c93cb:
 
     # Kira_13 "Похоже, придётся... Иначе, ты отправишься прямиком в летний лагерь, а я... Меня, скорее всего, тоже выгонят и боюсь отношения с твоей мамой у меня будут испорчены навсегда... А я этого очень не хочу..."
-    Kira_13 ""
+    Kira_13 "I don't think I have a choice... If I don't, it means military camp for you, I'll get kicked out, and my relationship with Ann will be ruined forever. And I couldn't stand that..."
 
 # game/events/kira.rpy:449
 translate english kira_bath_caught_c65783f7:
 
     # Max_09 "Может быть, у меня получится как-то \"смягчить\" условия Эрика..."
-    Max_09 ""
+    Max_09 "Maybe I can convince Eric to make a deal with softer conditions..."
 
 # game/events/kira.rpy:450
 translate english kira_bath_caught_7ede8304:
 
     # Kira_14 "Да они и так довольно мягкие, Макс. Может быть даже так, что от твоих попыток смягчить эти условия, ты сделаешь только обратное. Я буду делать то, что могу... и умею... Хотя бы ради тебя, потому что и правда, это ведь я тебя соблазнила. За всё приходится платить..."
-    Kira_14 ""
+    Kira_14 "They're pretty lax already. But don't talk to Eric or you might risk making it worse. Just let me handle it, for your sake. This was all my fault to begin with... So I'll pay for it."
 
 # game/events/kira.rpy:451
 translate english kira_bath_caught_4bd20739:
 
     # Max_07 "Я всё равно постараюсь тебе как-то помочь!"
-    Max_07 ""
+    Max_07 "I'll find a way to help you!"
 
 # game/events/kira.rpy:452
 translate english kira_bath_caught_65eedbf8:
 
     # Kira_10 "Только осторожно, Макс! Потому что пока, всё не так уж и плохо..."
-    Kira_10 ""
+    Kira_10 "Ok, but you have to be careful! He's got all the power here, and so far, his demands aren't that bad."
 
 # game/events/kira.rpy:455
 translate english kira_bath_caught_90341b4e:
 
     # Max_08 "Тётя Кира, ты же не собираешься по ночам отсасывать Эрику, правда?!"
-    Max_08 ""
+    Max_08 "You're not actually going to blow him, are you?!"
 
 # game/events/kira.rpy:456
 translate english kira_bath_caught_2e0c93cb_1:
 
     # Kira_13 "Похоже, придётся... Иначе, ты отправишься прямиком в летний лагерь, а я... Меня, скорее всего, тоже выгонят и боюсь отношения с твоей мамой у меня будут испорчены навсегда... А я этого очень не хочу..."
-    Kira_13 ""
+    Kira_13 "I don't think I have a choice... If I don't, it means military camp for you, I'll get kicked out, and my relationship with Ann will be ruined forever. And I couldn't stand that..."
 
 # game/events/kira.rpy:457
 translate english kira_bath_caught_fd33e06d:
 
     # Max_09 "Надо что-нибудь придумать, потому что для меня это не вариант!"
-    Max_09 ""
+    Max_09 "I have to think of something, because that's not an option for me!"
 
 # game/events/kira.rpy:458
 translate english kira_bath_caught_4a60b600:
 
     # Kira_14 "Ну, я буду делать то, что могу... и умею... Хотя бы ради тебя, потому что и правда, это ведь я тебя соблазнила. За всё приходится платить..."
-    Kira_14 ""
+    Kira_14 "Just let me handle it, for your sake. This was all my fault to begin with... So I'll pay for it."
 
 # game/events/kira.rpy:459
 translate english kira_bath_caught_65944a3a:
 
     # Max_11 "Мне это всё не нравится..."
-    Max_11 ""
+    Max_11 "I don't like any of this..."
 
 # game/events/kira.rpy:460
 translate english kira_bath_caught_b1929586:
 
     # Kira_13 "Тогда, только ты сможешь с ним договориться о чём-то другом. Ну а мне придётся согласиться на это... Так что, вся надежда на тебя, Макс..."
-    Kira_13 ""
+    Kira_13 "I'm not in a position to do anything, but... Maybe you can negotiate some kind of agreement with him? I'll just do what I can for now..."
 
 # game/events/kira.rpy:461
 translate english kira_bath_caught_c0bc19eb:
 
     # Max_10 "Ладно, я понял..." nointeract
-    Max_10 "" nointeract
+    Max_10 "I'll see what I can do..." nointeract
 
 # game/events/kira.rpy:653
 translate english kira_sleep_morning_aa901b38:
 
     # Max_04 "[txt!t]" nointeract
-    Max_04 "" nointeract
+    Max_04 "[txt!t]" nointeract
 
 translate english strings:
 
     # game/events/kira.rpy:650
     old "Тёте Кире очень идёт быть голой! Может быть, это потому что я привык видеть её голой? В такие округлости просто нельзя не влюбиться..."
-    new ""
+    new "Aunt Kira looks so good naked! You just can't help but fall in love with curves everytime you see them..."
 
     # game/events/kira.rpy:652
     old "Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..."
-    new ""
-
+    new "Aha! Aunt Kira is still asleep. Good thing her nightie's a little see-through... Oooh, she looks good..."

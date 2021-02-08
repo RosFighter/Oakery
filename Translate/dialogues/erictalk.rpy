@@ -526,7 +526,7 @@ translate english strings:
 
     # game/dialogues/erictalk.rpy:220
     old "{i}смотреть, как мама сосёт{/i}"
-    new "{i}Watch mom suck it{/i}"
+    new "{i}Watch Mom suck it{/i}"
 
     # game/dialogues/erictalk.rpy:279
     old "{i}пересесть{/i}"
@@ -1397,149 +1397,148 @@ translate english strings:
 translate english Eric_talk_about_Kira_0_a0b9d0c1:
 
     # Eric_09 "Надеюсь, это что-то весьма интересное или важное, иначе меня это не особо волнует..."
-    Eric_09 ""
+    Eric_09 "This had better be good, or I'll lost interest quickly."
 
 # game/dialogues/erictalk.rpy:603
 translate english Eric_talk_about_Kira_0_4acf3d39:
 
     # Max_01 "А если именно такое, то мне светят за это какие-нибудь \"премиальные\"?"
-    Max_01 ""
+    Max_01 "Lets say it is. Do I get any benefits for it?"
 
 # game/dialogues/erictalk.rpy:604
 translate english Eric_talk_about_Kira_0_fb65eee0:
 
     # Eric_03 "Ну ты ушлый! Если это что-то, что поможет мне её трахнуть, то ты можешь расчитывать на бонус. Так что у тебя там такое про неё имеется?"
-    Eric_03 ""
+    Eric_03 "You're a smart one! If it's something that helps me fuck her, you can count on it. What do you have?"
 
 # game/dialogues/erictalk.rpy:605
 translate english Eric_talk_about_Kira_0_5b981410:
 
     # Max_02 "Как минимум неожиданное для тебя. Короче, мы с ней... ну, того... этого..."
-    Max_02 ""
+    Max_02 "Well that's expected. Anyway, she and I... You know... This..."
 
 # game/dialogues/erictalk.rpy:606
 translate english Eric_talk_about_Kira_0_ab04f09c:
 
     # Eric_13 "Используй более понятные слова, Макс."
-    Eric_13 ""
+    Eric_13 "Speak clearly, Max."
 
 # game/dialogues/erictalk.rpy:607
 translate english Eric_talk_about_Kira_0_cae5ce20:
 
     # Max_07 "Мы с ней, как бы это сказать... занимаемся оральными утехами..."
-    Max_07 ""
+    Max_07 "She and I, how should I say it... We do oral pleasures..."
 
 # game/dialogues/erictalk.rpy:608
 translate english Eric_talk_about_Kira_0_ad877c77:
 
     # Eric_12 "Чего?!"
-    Eric_12 ""
+    Eric_12 "What?!"
 
 # game/dialogues/erictalk.rpy:609
 translate english Eric_talk_about_Kira_0_41f2d91b:
 
     # Max_04 "У нас с ней интимная близость, вот."
-    Max_04 ""
+    Max_04 "She and I are close. That's it."
 
 # game/dialogues/erictalk.rpy:610
 translate english Eric_talk_about_Kira_0_66b1162c:
 
     # Eric_04 "Да ладно! Это у тебя приколы такие, Макс?! Хочешь сказать, она тебе отсасывает?!"
-    Eric_04 ""
+    Eric_04 "Come on! Is this your idea of a joke?! You mean she's sucking your dick?!"
 
 # game/dialogues/erictalk.rpy:611
 translate english Eric_talk_about_Kira_0_1dc507c8:
 
     # Max_03 "Ага. Кстати, по мне так это самая офигенная вещь в мире!"
-    Max_03 ""
+    Max_03 "Yeah. It's pretty awesome to me!"
 
 # game/dialogues/erictalk.rpy:612
 translate english Eric_talk_about_Kira_0_ba7fd782:
 
     # Eric_06 "Погоди... То есть ТЕБЕ осасывает ТВОЯ родная тётя?! Это ты хочешь сказать?"
-    Eric_06 ""
+    Eric_06 "Wait a minute... You mean your own Aunt is actually sucking you off?! For real?"
 
 # game/dialogues/erictalk.rpy:613
 translate english Eric_talk_about_Kira_0_9acc7a48:
 
     # Max_01 "Ну да, об этом я и говорю."
-    Max_01 ""
+    Max_01 "Well, yeah, that's what I said."
 
 # game/dialogues/erictalk.rpy:614
 translate english Eric_talk_about_Kira_0_918aaf8d:
 
     # Eric_12 "Так. Вот это нихрена себе открытие! Это как вышло вообще?!"
-    Eric_12 ""
+    Eric_12 "Right. That's a hell of a discovery! How did that even happen?!"
 
 # game/dialogues/erictalk.rpy:615
 translate english Eric_talk_about_Kira_0_361cd83d:
 
     # Max_07 "Наверно, сказалось то, что она работает в порноиндустрии сейчас... Хотя, она и без этого была довольно открыта в плане таких развлечений."
-    Max_07 ""
+    Max_07 "I guess it must have had something to do with her working in the porn industry now... She's pretty open about this stuff."
 
 # game/dialogues/erictalk.rpy:616
 translate english Eric_talk_about_Kira_0_e0b3dd08:
 
     # Eric_08 "Ого! Это шикарные новости, Макс! Ты только что подогнал мне порномодель, а она ещё и сестра моей женщины! Это очень круто!!!"
-    Eric_08 ""
+    Eric_08 "Damn! That's great news! So you've got me not just a pornstar, but also my girlfriends sister? Nice going!"
 
 # game/dialogues/erictalk.rpy:617
 translate english Eric_talk_about_Kira_0_0cb780ea:
 
     # Max_09 "Значит, такая информация тянет на бонус?"
-    Max_09 ""
+    Max_09 "So would you say this deserves a bonus?"
 
 # game/dialogues/erictalk.rpy:618
 translate english Eric_talk_about_Kira_0_9942b3b4:
 
     # Eric_04 "Однозначно тянет. Обязательно это обсудим... Но сперва, когда вы этим с Кирой занимаетесь?"
-    Eric_04 ""
+    Eric_04 "It definitely might... But first, when does this happen, between you and Kira?"
 
 # game/dialogues/erictalk.rpy:619
 translate english Eric_talk_about_Kira_0_ae52c68e:
 
     # Max_04 "По ночам, когда она возвращается с работы. В это время все уже спят, а мы развлекаемся..."
-    Max_04 ""
+    Max_04 "At night, when she comes home from work. We have fun while everyone's asleep..."
 
 # game/dialogues/erictalk.rpy:620
 translate english Eric_talk_about_Kira_0_90704005:
 
     # Eric_03 "И где вы развлекаетесь?"
-    Eric_03 ""
+    Eric_03 "And where does that happen?"
 
 # game/dialogues/erictalk.rpy:621
 translate english Eric_talk_about_Kira_0_26197899:
 
     # Max_01 "Когда ты ночуешь у нас в гостях - в ванной комнате и у бассейна."
-    Max_01 ""
+    Max_01 "Whenever you stay over it's either in the bathroom or the pool."
 
 # game/dialogues/erictalk.rpy:622
 translate english Eric_talk_about_Kira_0_f5bec7c8:
 
     # Eric_06 "Да вы рисковые ребята! Не боитесь, что вас кто-то увидит? В ванной ладно, там ещё есть шансы как-то скрыться, а вот у бассейна..."
-    Eric_06 ""
+    Eric_06 "You guys are insane! Aren't you worried you'll get caught? Sure, the bathroom is a little more descreet, but the pool..."
 
 # game/dialogues/erictalk.rpy:623
 translate english Eric_talk_about_Kira_0_8bf662f4:
 
     # Max_02 "Да мы там по-быстренькому шалим..."
-    Max_02 ""
+    Max_02 "It's only for a quickie."
 
 # game/dialogues/erictalk.rpy:624
 translate english Eric_talk_about_Kira_0_840a0cb4:
 
     # Eric_08 "В таком случае, я обязательно загляну к вам в ванную, как бы случайно... Так сказать, поймаю с поличным, чтобы можно было максимально просто развести твою тётю на оральные утехи и для себя. Ты же подыграешь мне?"
-    Eric_08 ""
+    Eric_08 "Well, I'll make sure I stop by the bathroom next time. I'll need you to play along so that it looks like an accident, and I'll have to see what all the fuss over your aunt is. You can do that, right? "
 
 # game/dialogues/erictalk.rpy:625
 translate english Eric_talk_about_Kira_0_b3862c21:
 
     # Max_03 "Если договоримся о моих \"премиальных\", то подыграю."
-    Max_03 ""
+    Max_03 "Only if you agree to my bonus."
 
 # game/dialogues/erictalk.rpy:626
 translate english Eric_talk_about_Kira_0_c1a34d4e:
 
     # Eric_02 "Само собой, Макс. Это уже совсем другой разговор."
-    Eric_02 ""
-
+    Eric_02 "Of course. That will be a conversation on its own."
