@@ -2753,489 +2753,489 @@ translate english strings:
 translate english alice_blog_lingerie_44e4a54e:
 
     # Alice_02 "О, Макс! Что-то хотел или просто проведать меня решил?" nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Oh, Max! Did you want something, or are you just here to check on me?" nointeract
 
 # game/events/alice.rpy:1505
 translate english alice_blog_lingerie_43c0d69d:
 
     # Alice_03 "Знаю, а в новом кружевном боди буду смотреться ещё лучше!"
-    Alice_03 ""
+    Alice_03 "I know, and I'll look even better in my new lace bodysuit!"
 
 # game/events/alice.rpy:1506
 translate english alice_blog_lingerie_ca233b96:
 
     # Max_04 "Намёк понял. Купить на мой вкус?"
-    Max_04 ""
+    Max_04 "I get the hint. Buy to my taste?"
 
 # game/events/alice.rpy:1507
 translate english alice_blog_lingerie_b129ed13:
 
     # Alice_02 "Можешь не париться, Макс. Эрик купит то, что мне нужно."
-    Alice_02 ""
+    Alice_02 "Don't sweat it, Bro. Eric will buy me what I need."
 
 # game/events/alice.rpy:1508
 translate english alice_blog_lingerie_c6a4ad3e:
 
     # Max_08 "Эрик купит тебе новое нижнее бельё?"
-    Max_08 ""
+    Max_08 "Is Eric going to buy you new underwear?"
 
 # game/events/alice.rpy:1509
 translate english alice_blog_lingerie_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 ""
+    Alice_05 "Yeah, I need another bodysuit. And I showed him exactly which one I wanted. We decided that we would buy one when we went shopping on Saturday. Why?"
 
 # game/events/alice.rpy:1510
 translate english alice_blog_lingerie_f8fd533a:
 
     # Max_02 "Да так, интересно было, какое ты себе боди захотела. Покажешь?"
-    Max_02 ""
+    Max_02 "I was just wondering what kind of bodysuit you wanted. Can you show me?"
 
 # game/events/alice.rpy:1513
 translate english alice_blog_lingerie_4831c7e5:
 
     # Alice_03 "Знаю, но всё равно спасибо! Надеюсь, ты не станешь мешать, а то я тут немного занята..."
-    Alice_03 ""
+    Alice_03 "I know, but thanks anyway! I hope you won't interrupt, because I'm a little busy here..."
 
 # game/events/alice.rpy:1514
 translate english alice_blog_lingerie_68d07da4:
 
     # Max_04 "Не буду. Успехов тебе..."
-    Max_04 ""
+    Max_04 "I won't. Good luck to you..."
 
 # game/events/alice.rpy:1515
 translate english alice_blog_lingerie_bf451d86:
 
     # Alice_01 "Ага, хорошо бы." nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Yeah, that'd be good." nointeract
 
 # game/events/alice.rpy:1525
 translate english alice_blog_lingerie_f8868d99:
 
     # Alice_03 "Неплохо. Развиваюсь понемногу. Подаренное тобой бельё зачастую сильно выручает!"
-    Alice_03 ""
+    Alice_03 "Not bad. It's slowly getting there. The lingerie you gave me helps a lot!"
 
 # game/events/alice.rpy:1526
 translate english alice_blog_lingerie_f2cccbc6:
 
     # Max_04 "Рад помочь своей сестрёнке! Если что, обращайся."
-    Max_04 ""
+    Max_04 "Anything to help my big sister! If there's anything you need, let me know."
 
 # game/events/alice.rpy:1527
 translate english alice_blog_lingerie_54c261bf:
 
     # Alice_01 "Хорошо, Макс. Спасибо." nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Ok, I definitely will." nointeract
 
 # game/events/alice.rpy:1532
 translate english alice_blog_lingerie_9468119f:
 
     # Alice_03 "Более-менее. Скажем так - с переменным успехом. Но я нацелена стать очень популярной!"
-    Alice_03 ""
+    Alice_03 "More or less. Let's just say with mixed success. But I know I'll go viral eventually!"
 
 # game/events/alice.rpy:1533
 translate english alice_blog_lingerie_9fa89f77:
 
     # Max_04 "Вот это правильный настрой! Ладно, удачи..."
-    Max_04 ""
+    Max_04 "That's the right attitude! Okay, good luck..."
 
 # game/events/alice.rpy:1534
 translate english alice_blog_lingerie_d82f6aba:
 
     # Alice_01 "Спасибо, Макс!" nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Thanks, Max!" nointeract
 
 # game/events/alice.rpy:1543
 translate english alice_blog_lingerie_c89f235f:
 
     # Alice_03 "Ты знаешь, хорошо! Но это в основном заслуга Эрика. Он помогает с раскруткой по моему блогу."
-    Alice_03 ""
+    Alice_03 "Pretty good! Mostly thanks to Eric. He helps with marketing and promotions."
 
 # game/events/alice.rpy:1544
 translate english alice_blog_lingerie_b0a49741:
 
     # Max_07 "Какой он молодец! Реальные вещи делает. А моя помощь нужна?"
-    Max_07 ""
+    Max_07 "What a great guy he is! He sure is doing stuff. Do you need my help?"
 
 # game/events/alice.rpy:1547
 translate english alice_blog_lingerie_b129ed13_1:
 
     # Alice_02 "Можешь не париться, Макс. Эрик купит то, что мне нужно."
-    Alice_02 ""
+    Alice_02 "Don't sweat it, Bro. Eric will buy what I need."
 
 # game/events/alice.rpy:1548
 translate english alice_blog_lingerie_c6a4ad3e_1:
 
     # Max_08 "Эрик купит тебе новое нижнее бельё?"
-    Max_08 ""
+    Max_08 "Is Eric going to buy you new underwear?"
 
 # game/events/alice.rpy:1549
 translate english alice_blog_lingerie_43b3d5bb_1:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 ""
+    Alice_05 "Yeah, I need another bodysuit. And I showed him exactly which one I wanted. We decided that we would buy one when we went shopping on Saturday. Why?"
 
 # game/events/alice.rpy:1550
 translate english alice_blog_lingerie_f8fd533a_1:
 
     # Max_02 "Да так, интересно было, какое ты себе боди захотела. Покажешь?"
-    Max_02 ""
+    Max_02 "I was just wondering what kind of bodysuit you wanted. Can you show me?"
 
 # game/events/alice.rpy:1553
 translate english alice_blog_lingerie_21a0e4ef:
 
     # Alice_02 "Пока что нет, Макс. Эрик обо всём позаботится, можешь расслабиться."
-    Alice_02 ""
+    Alice_02 "Not yet, Max. Eric will take care of everything, so you can relax."
 
 # game/events/alice.rpy:1554
 translate english alice_blog_lingerie_94654992:
 
     # Max_01 "Но если что, всё равно обращайся."
-    Max_01 ""
+    Max_01 "Well if there's anything else, you can come to me anyway."
 
 # game/events/alice.rpy:1555
 translate english alice_blog_lingerie_16484159:
 
     # Alice_01 "Хорошо, Макс. Спасибо."
-    Alice_01 ""
+    Alice_01 "Ok, I definitely will."
 
 # game/events/alice.rpy:1558
 translate english alice_blog_lingerie_604e15a5:
 
     # Alice_03 "Ты знаешь, хорошо! С раскруткой от Эрика по другому и быть не может."
-    Alice_03 ""
+    Alice_03 "You know, it's really good! With Eric's help, it couldn't be any other way."
 
 # game/events/alice.rpy:1559
 translate english alice_blog_lingerie_99e269ed:
 
     # Max_07 "Круто. А моя помощь нужна?"
-    Max_07 ""
+    Max_07 "Cool. Do you need my help?"
 
 # game/events/alice.rpy:1560
 translate english alice_blog_lingerie_21a0e4ef_1:
 
     # Alice_02 "Пока что нет, Макс. Эрик обо всём позаботится, можешь расслабиться."
-    Alice_02 ""
+    Alice_02 "Not yet, Max. Eric will take care of everything, so you can relax."
 
 # game/events/alice.rpy:1561
 translate english alice_blog_lingerie_94654992_1:
 
     # Max_01 "Но если что, всё равно обращайся."
-    Max_01 ""
+    Max_01 "Well if there's anything else, you can come to me anyway."
 
 # game/events/alice.rpy:1562
 translate english alice_blog_lingerie_16484159_1:
 
     # Alice_01 "Хорошо, Макс. Спасибо."
-    Alice_01 ""
+    Alice_01 "Ok, I definitely will."
 
 # game/events/alice.rpy:1568
 translate english alice_blog_lingerie_cf0aa019:
 
     # Alice_07 "Ты знаешь, отлично! Но это в основном заслуга Эрика. Он помогает с раскруткой и рекламой по моему блогу."
-    Alice_07 ""
+    Alice_07 "Really great! Mostly thanks to Eric's help with promoting and advertising."
 
 # game/events/alice.rpy:1569
 translate english alice_blog_lingerie_5c36f4b4:
 
     # Max_00 "Вот козлина какой!"
-    Max_00 ""
+    Max_00 "What an asshole!"
 
 # game/events/alice.rpy:1570
 translate english alice_blog_lingerie_e9c045d0:
 
     # Alice_13 "Что, Макс? Я тут занята немного, прослушала тебя..."
-    Alice_13 ""
+    Alice_13 "Huh, Max? I'm a little busy here, what did you say?"
 
 # game/events/alice.rpy:1571
 translate english alice_blog_lingerie_b8ac6b8c:
 
     # Max_09 "Я говорю, вот молодчина какой..."
-    Max_09 ""
+    Max_09 "I said, that's really nice of him..."
 
 # game/events/alice.rpy:1572
 translate english alice_blog_lingerie_c897778a:
 
     # Alice_05 "Ну да. А то мне послышалось что-то... В общем, всё идёт хорошо у меня. Я довольна!"
-    Alice_05 ""
+    Alice_05 "Oh, I thought you said something else. Anyway, I'm real happy with how things are going!"
 
 # game/events/alice.rpy:1573
 translate english alice_blog_lingerie_b97ab168:
 
     # Max_08 "А я могу чем-то помочь?"
-    Max_08 ""
+    Max_08 "Is there anything I can do to help?"
 
 # game/events/alice.rpy:1576
 translate english alice_blog_lingerie_b129ed13_2:
 
     # Alice_02 "Можешь не париться, Макс. Эрик купит то, что мне нужно."
-    Alice_02 ""
+    Alice_02 "Don't sweat it, Bro. Eric will buy me what I need."
 
 # game/events/alice.rpy:1577
 translate english alice_blog_lingerie_c6a4ad3e_2:
 
     # Max_08 "Эрик купит тебе новое нижнее бельё?"
-    Max_08 ""
+    Max_08 "Is Eric going to buy you new underwear?"
 
 # game/events/alice.rpy:1578
 translate english alice_blog_lingerie_43b3d5bb_2:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 ""
+    Alice_05 "Yeah, I need another bodysuit. And I showed him exactly which one I wanted. We decided that we would buy one when we went shopping on Saturday. Why?"
 
 # game/events/alice.rpy:1579
 translate english alice_blog_lingerie_f8fd533a_2:
 
     # Max_02 "Да так, интересно было, какое ты себе боди захотела. Покажешь?"
-    Max_02 ""
+    Max_02 "I was just wondering what kind of bodysuit you wanted. Can you show me?"
 
 # game/events/alice.rpy:1582
 translate english alice_blog_lingerie_21a0e4ef_2:
 
     # Alice_02 "Пока что нет, Макс. Эрик обо всём позаботится, можешь расслабиться."
-    Alice_02 ""
+    Alice_02 "Not yet, Max. Eric will take care of everything, so you can relax."
 
 # game/events/alice.rpy:1583
 translate english alice_blog_lingerie_94654992_2:
 
     # Max_01 "Но если что, всё равно обращайся."
-    Max_01 ""
+    Max_01 "Well if there's anything else, you can come to me anyway."
 
 # game/events/alice.rpy:1584
 translate english alice_blog_lingerie_16484159_2:
 
     # Alice_01 "Хорошо, Макс. Спасибо."
-    Alice_01 ""
+    Alice_01 "Ok, I definitely will."
 
 # game/events/alice.rpy:1587
 translate english alice_blog_lingerie_2625a223:
 
     # Alice_07 "Ты знаешь, отлично! С раскруткой и размещением рекламы от Эрика по другому и быть не может."
-    Alice_07 ""
+    Alice_07 "Really well! Thanks to Eric's help with prmomoting and advertising, it couldn't go any other way."
 
 # game/events/alice.rpy:1588
 translate english alice_blog_lingerie_dcaa06cd:
 
     # Max_08 "Ну просто фантастика! А я могу чем-то помочь?"
-    Max_08 ""
+    Max_08 "That's fantastic! Is there anything I can do to help?"
 
 # game/events/alice.rpy:1589
 translate english alice_blog_lingerie_21a0e4ef_3:
 
     # Alice_02 "Пока что нет, Макс. Эрик обо всём позаботится, можешь расслабиться."
-    Alice_02 ""
+    Alice_02 "Not yet, Max. Eric will take care of everything, so you can relax."
 
 # game/events/alice.rpy:1590
 translate english alice_blog_lingerie_94654992_3:
 
     # Max_01 "Но если что, всё равно обращайся."
-    Max_01 ""
+    Max_01 "Well if there's anything else, you can come to me anyway."
 
 # game/events/alice.rpy:1591
 translate english alice_blog_lingerie_16484159_3:
 
     # Alice_01 "Хорошо, Макс. Спасибо."
-    Alice_01 ""
+    Alice_01 "Ok, I definitely will."
 
 # game/events/alice.rpy:1675
 translate english alice_blog_lingerie_a937857e:
 
     # Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "So you've completely lost your shame now? You're not even going to try and peek anymore?" nointeract
 
 # game/events/alice.rpy:1683
 translate english alice_blog_lingerie_a937857e_1:
 
     # Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "So you've completely lost your shame now? You're not even going to try and peek anymore?" nointeract
 
 # game/events/alice.rpy:2067
 translate english give_photos1_534f08f4:
 
     # Alice_07 "Ну наконец-то, давай сюда, я их сразу размещу везде, где только можно..."
-    Alice_07 ""
+    Alice_07 "Finally, give it to me, I'll post it everywhere I can..."
 
 # game/events/alice.rpy:2068
 translate english give_photos1_5a614b76:
 
     # Max_01 "Вот, держи."
-    Max_01 ""
+    Max_01 "Here, take it."
 
 # game/events/alice.rpy:2073
 translate english give_photos1_455ae28d:
 
     # Alice_06 "Надеюсь, мы не зря их сделали и они привлекут ко мне больше внимания."
-    Alice_06 ""
+    Alice_06 "I hope I get some attention from these..."
 
 # game/events/alice.rpy:2074
 translate english give_photos1_c2cd67f0:
 
     # Max_02 "Уж точно лишними не будут, на них же такая сексуальная девочка!"
-    Max_02 ""
+    Max_02 "Don't worry, you definitely will. You look amazing in them!"
 
 # game/events/alice.rpy:2075
 translate english give_photos1_3adf2222:
 
     # Alice_05 "Да, я такая! Даже и подумать не могла, что когда-нибудь буду позировать полуголой для своего брата... А снимки хороши, Макс! Мне нравится, ты хорошо снимаешь..."
-    Alice_05 ""
+    Alice_05 "Yeah, I guess I do! I never thought I'd pose half-naked for my brother... The pictures are good, Max. You know your way around a camera..."
 
 # game/events/alice.rpy:2076
 translate english give_photos1_f36db203:
 
     # Max_07 "Так там через бельё почти ничего не видно. Так, слегка..."
-    Max_07 ""
+    Max_07 "You can hardly see anything through the underwear. Just a little..."
 
 # game/events/alice.rpy:2077
 translate english give_photos1_436cfd7e:
 
     # Alice_02 "Ой, Макс, не смущай меня, а! Повезло тебе, что я как раз думала о том, что мне нужны хорошие снимки. И хорошо, что ты купил не сильно откровенное боди. Именно такое, какое было нужно."
-    Alice_02 ""
+    Alice_02 "Oh, Max, don't embarrass me! Lucky for you, I was just thinking about what I need good pictures of. And it's a good thing you didn't buy a very revealing bodysuit. Exactly what I needed."
 
 # game/events/alice.rpy:2078
 translate english give_photos1_1862c1d4:
 
     # Max_03 "Наверно, ещё нужно будет купить что-нибудь из белья, да?"
-    Max_03 ""
+    Max_03 "I guess we'll have to buy some more underwear, won't we?"
 
 # game/events/alice.rpy:2079
 translate english give_photos1_8ae7a081:
 
     # Alice_13 "Ага, желательно. Но не сейчас. Пока и этого хватит, а позже посмотрим..."
-    Alice_13 ""
+    Alice_13 "Yes, but that's enough for now, we'll see later..."
 
 # game/events/alice.rpy:2080
 translate english give_photos1_fb844777:
 
     # Max_04 "Хорошо. Не буду тебе мешать. Ещё ведь пофотографируемся?"
-    Max_04 ""
+    Max_04 "Okay. I'll leave you to it. We'll take more pictures, right?"
 
 # game/events/alice.rpy:2081
 translate english give_photos1_0aaaa454:
 
     # Alice_03 "Не исключаю такого, когда будет в чём позировать. Хотя, будет зависеть от откровенности белья."
-    Alice_03 ""
+    Alice_03 "I won't rule out the possibility of having something else to pose in. But it'll depend on how tasteful the lingerie is."
 
 # game/events/alice.rpy:2082
 translate english give_photos1_2d4bf5db:
 
     # Max_01 "Понял. Ладно, удачи..."
-    Max_01 ""
+    Max_01 "Got it. Okay, good luck..."
 
 # game/events/alice.rpy:2083
 translate english give_photos1_8c1ad17f:
 
     # Alice_01 "Спасибо, Макс!"
-    Alice_01 ""
+    Alice_01 "Thanks, Max!"
 
 # game/events/alice.rpy:2096
 translate english blog_with_Eric_1f5b8e69:
 
     # Max_09 "{i}( Кажется, в комнате Алиса с Эриком... Хорошо бы узнать, что они там делают. А то мало ли... ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}( I think Alice and Eric are in the room. It would be good to know what they're doing in there... {/i}" nointeract
 
 # game/events/alice.rpy:2107
 translate english blog_with_Eric_9a5f49d6:
 
     # Max_07 "{i}( Хоть Эрик и сказал, что подглядывать можно, но вот Алиса вряд ли с этим согласится, так что нужно быть как можно осторожнее... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Eric said it would be fine to peep, but Alice definitely won't feel the same way. I should be careful... ){/i}"
 
 # game/events/alice.rpy:2108
 translate english blog_with_Eric_7ba1d761:
 
     # Alice_06 "Эрик, ты правда хочешь, чтобы я здесь перед тобой одела новое боди? Я, конечно, могу... но только, если ты закроешь глаза и не будешь подглядывать! Хорошо?"
-    Alice_06 ""
+    Alice_06 "Do you really want to see me wear this? I mean, of course I can put it on, but... Only if you close your eyes while I change! Okay?"
 
 # game/events/alice.rpy:2109
 translate english blog_with_Eric_aec65cef:
 
     # Eric_02 "Конечно, Алиса. Давай, мне не терпится увидеть, как оно на тебе сидит..."
-    Eric_02 ""
+    Eric_02 "Of course, Alice. Go on, I can't wait to see how it looks..."
 
 # game/events/alice.rpy:2113
 translate english blog_with_Eric_e501d3e5:
 
     # Alice_14 "Эй! Эрик! Ты обещал не подглядывать. Я же вижу, что ты пялишься на меня! Отвернись, быстро! Ну или хотя бы закрой глаза руками..."
-    Alice_14 ""
+    Alice_14 "Hey! Eric! You promised not to peek but I can see you staring at me! Turn around, quick! Or at least put your hands over your eyes..."
 
 # game/events/alice.rpy:2114
 translate english blog_with_Eric_3786b53a:
 
     # Eric_03 "Ты так красиво начала раздеваться, что я забыл не смотреть. Считай, закрыл."
-    Eric_03 ""
+    Eric_03 "Of course, you just looked so beautiful I couldn't help myself. I'll cover my eyes now."
 
 # game/events/alice.rpy:2119
 translate english blog_with_Eric_d919352c:
 
     # Max_02 "{i}( Ага, закрыл он, как же! Точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! Бесподобная у меня сестрёнка... ){/i}"
-    Max_02 ""
+    Max_02 "{i}( Yeah, he did, he sure did! He's looking through his fingers all the time... I would certainly risk getting a close look at a naked Alice! My sister's unbelievable... ){/i}"
 
 # game/events/alice.rpy:2124
 translate english blog_with_Eric_f57ca7c3:
 
     # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Прямо, как мне и хочется... Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Ugh... Alice is in no hurry to hide her luscious tits under the bodysuit! Just like I want to... Hmmm, maybe she noticed that Eric is peeping anyway and is teasing him! And she doesn't know that she's also teasing me... ){/i}"
 
 # game/events/alice.rpy:2129
 translate english blog_with_Eric_027a5864:
 
     # Alice_02 "Всё, можно смотреть... Что скажешь, тебе нравится или нет? Мне вот в нём удобно..."
-    Alice_02 ""
+    Alice_02 "That's it, you can watch... What do you think, do you like it or not? I'm comfortable in it..."
 
 # game/events/alice.rpy:2130
 translate english blog_with_Eric_abcfcea5:
 
     # Eric_05 "Алиса, на твоём чудесной теле, что угодно будет смотреться шикарно. И да, мне нравится, как это выглядит!"
-    Eric_05 ""
+    Eric_05 "Alice, anything would look gorgeous on your wonderful body. And yes, I love the way it looks!"
 
 # game/events/alice.rpy:2131
 translate english blog_with_Eric_abb8de91:
 
     # Alice_05 "Я рада! А если мне понадобится ещё что-то из нижнего белья, ты поможешь?"
-    Alice_05 ""
+    Alice_05 "I'm glad! And if I need any more underwear, will you help me?"
 
 # game/events/alice.rpy:2132
 translate english blog_with_Eric_55fa4c7f:
 
     # Eric_01 "Естественно! Всегда можешь ко мне обращаться... Только старайся немного заранее, а то я человек занятой..."
-    Eric_01 ""
+    Eric_01 "Naturally! You can always come to me... Just make sure you do it as soon as you need something, I'm a busy man..."
 
 # game/events/alice.rpy:2133
 translate english blog_with_Eric_84a87931:
 
     # Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. А мне лучше сматываться отсюда, не хватало ещё чтобы меня сейчас заметили... ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}( I see what's going on with you two, Alice is sitting on Eric's neck, and he's happy to do it. I'd better get out of here, I don't want to be seen now... ){/i}" nointeract
 
 # game/events/alice.rpy:2154
 translate english blog_with_Eric_dbb6f3c2:
 
     # Max_07 "{i}( Эрик решил поумничать перед Алисой знаниями в потребительстве и рекламе... Ну да, а тем временем глазеет на её прелести, еле прикрытые бельём. Делать мне здесь пока нечего... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Eric decided to poke fun at Alice's knowledge of consumerism and advertising... Yeah, and meanwhile, he's staring at her, barely covered by her underwear. There's nothing for me to do here yet... ){/i}"
 
 # game/events/alice.rpy:2155
 translate english blog_with_Eric_d3903fc2:
 
     # Max_09 "{i}( Подождите-ка, они о покупке белья разговаривают... И без меня! Нужно будет поскорее узнать у Алисы, что это ей там Эрик собрался покупать... ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}( Wait a minute, they're talking about buying lingerie... And without me! I'll have to ask Alice what Eric is going to buy her... ){/i}" nointeract
 
 # game/events/alice.rpy:2160
 translate english blog_with_Eric_e1deaab1:
 
     # Max_07 "{i}( Эрик решил поумничать перед Алисой знаниями в потребительстве и рекламе... Ну да, а тем временем глазеет на её прелести, еле прикрытые бельём. Делать мне здесь пока нечего... ){/i}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{i}( Eric decided to poke fun at Alice's knowledge of consumerism and advertising... Yeah, and meanwhile, he's staring at her, barely covered by her underwear. There's nothing for me to do here yet... ){/i}" nointeract
 
 translate english strings:
 
     # game/events/alice.rpy:1498
     old "Я твои фотки принёс..."
-    new ""
+    new "I've got your pictures..."
 
     # game/events/alice.rpy:1498
     old "Отлично смотришься в этом белье!"
-    new ""
+    new "You look great in that lingerie!"
 
     # game/events/alice.rpy:1498
     old "Как идут дела с блогом?"
-    new ""
+    new "How's the blog going?"
 
 # TODO: Translation updated at 2021-02-04 23:59
 
@@ -3243,17 +3243,16 @@ translate english strings:
 translate english alice_towel_after_club_63271e00:
 
     # Alice_15 "Макс, я тут вообще-то голая лежу в ванне! Оу, ты всё же принёс мне полотенце..."
-    Alice_15 ""
+    Alice_15 "Max, I'm actually naked! Oh, you did bring me a towel..."
 
 # game/events/alice.rpy:1863
 translate english alice_towel_after_club_cff7acb1:
 
     # Max_02 "Да, я тут как раз нашёл, на что его можно повесить..."
-    Max_02 ""
+    Max_02 "Yeah, I just found something to hang it on..."
 
 # game/events/alice.rpy:1869
 translate english alice_towel_after_club_52206218:
 
     # Alice_06 "Оригинально... А ты не думал, что нужно было постучаться, прежде чем входить? Я ведь могла здесь... чем-нибудь ещё заниматься..."
-    Alice_06 ""
-
+    Alice_06 "That's original... Didn't you think you should have knocked before you came in? I could've been doing something else..."
