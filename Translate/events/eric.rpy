@@ -1728,55 +1728,55 @@ translate english strings:
 translate english sexed_lisa_c6d17e9e:
 
     # Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё и Эрик. Может хоть через камеру посмотреть, что там происходит? ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}(  ){/i}" nointeract
 
 # game/events/eric.rpy:930
 translate english sexed_lisa_3bf94e65:
 
     # Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё Эрик. Если бы я установил камеру в этой комнате, то сейчас смог бы всё увидеть, а так придётся ждать, пока Лиза вернётся, чтобы всё узнать. ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}(  ){/i}" nointeract
 
 # game/events/eric.rpy:938
 translate english sexed_lisa_27707318:
 
     # Max_07 "{i}( Эрик сказал, что всё устроит так, чтобы меня не заметили, когда я буду подглядывать. Сейчас посмотрим... ){/i}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{i}(  ){/i}" nointeract
 
 # game/events/eric.rpy:952
 translate english sexed_lisa_b37af91c:
 
     # Max_09 "{i}( Интересно, чем они там с Лизой занимаются?! Можно бы было попробовать подглядеть через окно, но не стоит давать Эрику шанс меня унизить или ещё чего хуже. Лучше посмотреть через камеру... ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}(  ){/i}" nointeract
 
 # game/events/eric.rpy:968
 translate english sexed_lisa_5dfb44a6:
 
     # Max_09 "{i}( Интересно, чем они там с Лизой занимаются?! Можно бы было попробовать подглядеть через окно, но не стоит давать Эрику шанс меня унизить или ещё чего хуже. Придётся ждать, пока Лиза вернётся и расскажет сама, хотя не лишним и будет камеру в мамину комнату поставить. ){/i}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{i}(  ){/i}" nointeract
 
 # game/events/eric.rpy:980
 translate english sexed_lisa_lesson_0_3242e036:
 
     # Max_01 "{i}( Отлично! Мне как раз всё видно в зеркале. Посмотрим, чему мою сестрёнку будут учить эти извращенцы... ){/i}"
-    Max_01 ""
+    Max_01 "{i}(  ){/i}"
 
 # game/events/eric.rpy:999
 translate english sexed_lisa_lesson_0_c156074c:
 
     # Max_08 "{i}( Офигеть, что творят! Мама надрачивает Эрику прямо на глазах у Лизы, которую она так всё время оберегала. Да, хорошо Эрик над ней поработал... ){/i}"
-    Max_08 ""
+    Max_08 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1010
 translate english sexed_lisa_lesson_0_863e16ef:
 
     # Max_02 "{i}( Да, как же классно бы было, если бы моя младшая сестрёнка запустила свои нежные ручки в мои шорты и неспеша поласкала мой член... Ухх! ){/i}"
-    Max_02 ""
+    Max_02 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1020
 translate english sexed_lisa_lesson_0_25611741:
 
     # Max_07 "{i}( О, пора мне валить к себе... ){/i}"
-    Max_07 ""
+    Max_07 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1031
 translate english sexed_lisa_lesson_1_f2ec3c5f:
@@ -1788,25 +1788,25 @@ translate english sexed_lisa_lesson_1_f2ec3c5f:
 translate english sexed_lisa_lesson_1_ac7ee8df:
 
     # Max_03 "{i}( О да, мам! Мне бы очень понравилось, если бы ты подрочила мне обнажив свою сочную и упругую грудь... ){/i}"
-    Max_03 ""
+    Max_03 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1066
 translate english sexed_lisa_lesson_1_28fff240:
 
     # Max_04 "{i}( Как по мне, а грудь у Лизы весьма симпатичная. Не сравнится с маминой, но они все хороши, по-своему... ){/i}"
-    Max_04 ""
+    Max_04 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1083
 translate english sexed_lisa_lesson_1_e2699e4d:
 
     # Max_07 "{i}( С интересом... Да уж, а ещё меня называют в этом доме извращенцем! Хотя, если бы не Эрик... ){/i}"
-    Max_07 ""
+    Max_07 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1094
 translate english sexed_lisa_lesson_2_f2ec3c5f:
 
     # Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
-    Max_01 ""
+    Max_01 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1095
 translate english sexed_lisa_lesson_2_4668a125:
@@ -1860,7 +1860,7 @@ translate english sexed_lisa_lesson_2_fba6f0fd:
 translate english sexed_lisa_lesson_2_8670f664:
 
     # Max_10 "{i}( Эй! Я тоже хочу, чтобы мне яички ласкали! Судя по млеющей физиономии Эрика - это как минимум очень блаженно. ){/i}"
-    Max_10 ""
+    Max_10 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1121
 translate english sexed_lisa_lesson_2_f4970fe1:
@@ -1890,13 +1890,13 @@ translate english sexed_lisa_lesson_2_f429540b:
 translate english sexed_lisa_lesson_2_517ed876:
 
     # Max_07 "{i}( Экзамен... Тянет на какую-то ролевую игру. Хорошо хоть без костюмов! Хотя маму я бы не прочь увидеть в строгом, но сексуальном костюме... ){/i}"
-    Max_07 ""
+    Max_07 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1136
 translate english sexed_lisa_lesson_3_fe9c9f59:
 
     # Max_01 "{i}( И чему же мою сестрёнку будут сегодня учить... ){/i}"
-    Max_01 ""
+    Max_01 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1137
 translate english sexed_lisa_lesson_3_b8ee0608:
@@ -1938,7 +1938,7 @@ translate english sexed_lisa_lesson_3_18663d6a:
 translate english sexed_lisa_lesson_3_786cee35:
 
     # Max_08 "{i}( Мама что, и отсасывать собирается Эрику при Лизе?! Да нет... Хотя, уже можно не удивляться чему-то такому... ){/i}"
-    Max_08 ""
+    Max_08 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1150
 translate english sexed_lisa_lesson_3_9361d9ee:
@@ -2028,7 +2028,7 @@ translate english sexed_lisa_lesson_3_705d7946:
 translate english sexed_lisa_lesson_3_53812ca7:
 
     # Max_10 "{i}( Эй, вы там на мою сестрёнку только не попадите! Ладно вы люди взрослые, но при Лизе то поаккуратнее будьте... ){/i}"
-    Max_10 ""
+    Max_10 "{i}(  ){/i}"
 
 # game/events/eric.rpy:1195
 translate english sexed_lisa_lesson_3_d99c9cbc:
