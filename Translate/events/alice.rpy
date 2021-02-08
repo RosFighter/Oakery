@@ -3131,7 +3131,7 @@ translate english give_photos1_8c1ad17f:
 translate english blog_with_Eric_1f5b8e69:
 
     # Max_09 "{i}( Кажется, в комнате Алиса с Эриком... Хорошо бы узнать, что они там делают. А то мало ли... ){/i}" nointeract
-    Max_09 "{i}( I think Alice and Eric are in the room. It would be good to know what they're doing in there... {/i}" nointeract
+    Max_09 "{i}( I think Alice and Eric are in the room. It would be good to know what they're doing in there... ){/i}" nointeract
 
 # game/events/alice.rpy:2107
 translate english blog_with_Eric_9a5f49d6:
@@ -3256,3 +3256,4 @@ translate english alice_towel_after_club_52206218:
 
     # Alice_06 "Оригинально... А ты не думал, что нужно было постучаться, прежде чем входить? Я ведь могла здесь... чем-нибудь ещё заниматься..."
     Alice_06 "That's original... Didn't you think you should have knocked before you came in? I could've been doing something else..."
+

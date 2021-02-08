@@ -3404,7 +3404,7 @@ translate english strings:
 
     # game/events/kira.rpy:1973
     old "{i}отвести тётю в гостиную{/i}"
-    new "{i}Take your aunt to the living room{i}"
+    new "{i}Take your aunt to the living room{/i}"
 
     # game/events/kira.rpy:2011
     old "{i}Дать Алисе конфету и отвести тётю в гостиную{/i}"

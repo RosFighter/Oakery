@@ -158,3 +158,15 @@ translate english strings:
     old "Следующий снимок"
     new "Next picture"
 
+# TODO: Translation updated at 2021-02-09 00:04
+
+translate english strings:
+
+    # game/extra/extra.rpy:101
+    old "Немного БДСМ от Киры"
+    new ""
+
+    # game/extra/extra.rpy:101
+    old "Первые снимки для блога Алисы"
+    new ""
+

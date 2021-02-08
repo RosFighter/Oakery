@@ -449,3 +449,15 @@ translate english strings:
     old "Покажешь боди, которое тебе Эрик купит?"
     new "Will you show me the bodysuit that Eric will buy you?"
 
+# TODO: Translation updated at 2021-02-09 00:04
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Хочу рассказать тебе кое-что о Кире..."
+    new ""
+
+    # game/core/02init.rpy:100
+    old "Я хотел поговорить о Кире..."
+    new ""
+

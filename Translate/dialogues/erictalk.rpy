@@ -1542,3 +1542,180 @@ translate english Eric_talk_about_Kira_0_c1a34d4e:
 
     # Eric_02 "Само собой, Макс. Это уже совсем другой разговор."
     Eric_02 "Of course. That will be a conversation on its own."
+
+# TODO: Translation updated at 2021-02-09 00:04
+
+# game/dialogues/erictalk.rpy:612
+translate english Eric_talk_about_Kira_0_695395c6:
+
+    # Eric_06 "Погоди... То есть ТЕБЕ отсасывает ТВОЯ родная тётя?! Это ты хочешь сказать?"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:641
+translate english Eric_talk_about_Kira_1_7b4dc231:
+
+    # Eric_05 "О чём тут можно говорить, Макс? Твоя тётя крепко попала на мой член! И между прочим, заслуженно... совратила своего племянника, вот теперь и будет отдуваться за это."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:642
+translate english Eric_talk_about_Kira_1_29e10f9b:
+
+    # Max_09 "И ты думаешь, что я не устрою тебе проблем, если ты от неё не отстанешь?!"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:643
+translate english Eric_talk_about_Kira_1_77fecde0:
+
+    # Eric_08 "Конечно не устроишь! Как будто ты что-то можешь сделать. Я трахаю твою маму и она под моим полным контролем. Твои сёстры всё больше проникаются моим вниманием и заботой. А Кира... просто ещё один приятный бонус ко всему этому."
+    Eric_08 ""
+
+# game/dialogues/erictalk.rpy:644
+translate english Eric_talk_about_Kira_1_9f4a45a4:
+
+    # Max_15 "Ну ты и подонок!"
+    Max_15 ""
+
+# game/dialogues/erictalk.rpy:645
+translate english Eric_talk_about_Kira_1_a8d3d184:
+
+    # Eric_07 "А ты, Макс, уже скоро вылетишь из этого дома и будешь маршировать в сапогах... Тогда как я буду трахать всю твою семью в этом чудесном доме. И если бы ты был умнее, то мы бы даже здесь с тобой смогли ужиться, но..."
+    Eric_07 ""
+
+# game/dialogues/erictalk.rpy:646
+translate english Eric_talk_about_Kira_1_8b72bd61:
+
+    # Max_16 "Да пошёл ты!" nointeract
+    Max_16 "" nointeract
+
+# game/dialogues/erictalk.rpy:653
+translate english Eric_talk_about_Kira_1_2849715d:
+
+    # Eric_09 "Теперь-то зачем о ней говорить? Я уже всё знаю! Вот вопрос, почему я об этом узнал только сейчас, Макс? Как-то не по-дружески получается..."
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:654
+translate english Eric_talk_about_Kira_1_90bc55ba:
+
+    # Max_07 "Я думал, тебя только моя мама и сёстры интересуют."
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:655
+translate english Eric_talk_about_Kira_1_3867ce9e:
+
+    # Eric_01 "Вот оно что! А такую отвязную совратительницу малолетних решил для себя придержать, да? Ох, разочаровал ты меня, Макс..."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:656
+translate english Eric_talk_about_Kira_1_a28191e8:
+
+    # Max_01 "Но теперь ты о ней знаешь, так что всё супер!"
+    Max_01 ""
+
+# game/dialogues/erictalk.rpy:660
+translate english Eric_talk_about_Kira_1_2ee40e37:
+
+    # Eric_03 "У меня-то всё супер, а вот ты лишаешься своих \"премиальных\" за свою оплошность."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:661
+translate english Eric_talk_about_Kira_1_d349b414:
+
+    # Max_08 "Эй, я же не знал, что Кира тоже тебя интересует!"
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:662
+translate english Eric_talk_about_Kira_1_7985e9ed:
+
+    # Eric_13 "Не надо тут из себя тупого изображать, Макс, всё ты знал. Но шанс исправиться у тебя есть. Так что, если вдруг тебе будет что мне рассказать интересного, то лучше рассказывай сразу."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:663
+translate english Eric_talk_about_Kira_1_3fe25b04:
+
+    # Max_11 "Ладно, я всё понял." nointeract
+    Max_11 "" nointeract
+
+# game/dialogues/erictalk.rpy:670
+translate english Eric_talk_about_Kira_1_db0ebd21:
+
+    # Eric_13 "Могло бы быть супер, но ты с Алисой меня подвёл, а теперь и с Кирой. А я тебе сразу сказал, что будет, если станешь мне мешаться. Видимо, ты принял это за шутку."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:671
+translate english Eric_talk_about_Kira_1_91b213e3:
+
+    # Max_08 "Я исправлюсь, правда!"
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:672
+translate english Eric_talk_about_Kira_1_ebd79897:
+
+    # Eric_03 "Поздно! Премиальные ты свои потерял, как и деньги от меня. И вообще всё, что могло быть, если бы ты ценил нашу с тобой дружбу. Я так уж и быть, не стану запрещать тебе подглядывать, но если снова будешь мне мешать, то вылетишь из этого дома очень быстро. Я ясно выразился?"
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:673
+translate english Eric_talk_about_Kira_1_5907fcad:
+
+    # Max_13 "Эй, ну как же так!"
+    Max_13 ""
+
+# game/dialogues/erictalk.rpy:674
+translate english Eric_talk_about_Kira_1_36c8744c:
+
+    # Eric_15 "Всё, давай проваливай. Не раздражай меня!"
+    Eric_15 ""
+
+# game/dialogues/erictalk.rpy:675
+translate english Eric_talk_about_Kira_1_3fe25b04_1:
+
+    # Max_11 "Ладно, я всё понял." nointeract
+    Max_11 "" nointeract
+
+# game/dialogues/erictalk.rpy:682
+translate english Eric_talk_about_Kira_1_492bd5d7:
+
+    # Eric_03 "Ты хорошо отыграл жертву, Макс. Хотя, что там было играть. Теперь твоя тётя крепко попала на мой член! И между прочим, заслуженно... нечего несовершеннолетних родственников соблазнять!"
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:683
+translate english Eric_talk_about_Kira_1_8c47396a:
+
+    # Max_07 "А мне можно с вами?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:684
+translate english Eric_talk_about_Kira_1_d7b8f73b:
+
+    # Eric_06 "Тебе что, подглядываний твоих любимых мало?"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:685
+translate english Eric_talk_about_Kira_1_c1884aa1:
+
+    # Max_09 "Я вообще-то первый с ней сблизился! Конечно, она сама этого хотела, но всё же... Я мог и не рассказывать о ней, но по-дружески решил поделиться. Мне кажется, это тянет на серьёзную премию!"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:689
+translate english Eric_talk_about_Kira_1_895459f6:
+
+    # Eric_02 "Ну, спорить с этим не буду. Ты мне не мешал и даже с кое-чем помог, так что да... Как надумаешь, что хочешь, так сразу обращайся, что смогу - сделаю."
+    Eric_02 ""
+
+# game/dialogues/erictalk.rpy:690
+translate english Eric_talk_about_Kira_1_90c46fa5:
+
+    # Max_05 "Круто!" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/erictalk.rpy:697
+translate english Eric_talk_about_Kira_1_36aae4a3:
+
+    # Eric_01 "Да, Макс, тянуло бы... Если бы ты не обломал мой подарок для Алисы! Но за то, что ты подогнал мне Киру на блюдечке, я тебя прощаю и даже даю возможность попросить что-либо. Конечно, в относительно разумных пределах."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:698
+translate english Eric_talk_about_Kira_1_b1d48d26:
+
+    # Max_01 "Хорошо, как надумаю, что хочу, так сразу к тебе..." nointeract
+    Max_01 "" nointeract
+

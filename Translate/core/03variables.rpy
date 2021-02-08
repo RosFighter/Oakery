@@ -1260,7 +1260,7 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! \n\nВ обмен на возможность подглядывать за этим процессом и кое-каким бонусом, с которым мне нужно будет определиться со временем, я согласился его поддержать. Мы же с ним как-никак \"друзья\"."
-    new "As soon as I gave Lisa a book on sex education, Eric showed up. He and Mom are going to take up her sexual education! \n\nIn exchange for the opportunity to spy on this process and some undecided bonus, I agreed to help. We are \"friends\"after all."
+    new "As soon as I gave Lisa a book on sex education, Eric showed up. He and Mom are going to take up her sexual education! \n\nIn exchange for the opportunity to spy on this process and some undecided bonus, I agreed to help. We are \"friends\" after all."
 
     # game/core/03variables.rpy:324
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! \n\nВ обмен на возможность подглядывать за этим процессом, я согласился его поддержать. Незачем мне враждовать с Эриком."
