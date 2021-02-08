@@ -688,7 +688,7 @@ translate english strings:
 
     # game/core/03variables.rpy:322
     old "Тётя Кира превосходный учитель поцелуев! Она согласилась меня иногда учить. Кто знает, может быть она научит и чему-то ещё?\n\nНу всё. Теперь нужно практиковаться в поцелуях с тётей Кирой и передавать полученные знания Лизе... Только вот её ещё нужно убедить..."
-    new "Aunt Kira is an excellent kissing teacher! She agreed to tutor me. Who knows, maybe it will lead to something else?\n\. I just need to keep the practice up, and pass my knowledge on to Lisa... But she might still need some convincing..."
+    new "Aunt Kira is an excellent kissing teacher! She agreed to tutor me. Who knows, maybe it will lead to something else?\n\nI just need to keep the practice up, and pass my knowledge on to Lisa... But she might still need some convincing..."
 
     # game/core/03variables.rpy:322
     old "Я поговорил с Лизой насчёт её обучения. Она выдвинула ряд условий, среди которых запрет мне к ней прикасаться, если она против. Ну уже что-то."
@@ -1260,69 +1260,68 @@ translate english strings:
 
     # game/core/03variables.rpy:324
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! \n\nВ обмен на возможность подглядывать за этим процессом и кое-каким бонусом, с которым мне нужно будет определиться со временем, я согласился его поддержать. Мы же с ним как-никак \"друзья\"."
-    new ""
+    new "As soon as I gave Lisa a book on sex education, Eric showed up. He and Mom are going to take up her sexual education! \n\nIn exchange for the opportunity to spy on this process and some undecided bonus, I agreed to help. We are \"friends\"after all."
 
     # game/core/03variables.rpy:324
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! \n\nВ обмен на возможность подглядывать за этим процессом, я согласился его поддержать. Незачем мне враждовать с Эриком."
-    new ""
+    new "As soon as I gave Lisa a book on sex education, Eric showed up. He and Mom are going to take up her sexual education! \n\nIn exchange for the opportunity to spy on this process, I agreed to help. I don't need to antagonize Eric."
 
     # game/core/03variables.rpy:324
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! \n\nНе смотря на то, что мы с ним \"дружим\", я постарался убедить его, что Лизе ещё рановато это познавать... Это не особо помогло, но Эрик дал мне пару недель на \"чтение книг по теме сексуального образования\" с Лизой. По крайней мере, я выиграл немного времени, которое стоит использовать с умом..."
-    new ""
+    new "As soon as I gave Lisa a book on sex education, Eric showed up. He and Mom are going to take up her sexual education! \n\nDespite the fact that we're \"friends\", I tried to convince him that Lisa is still too young to be learning this. It didn't help much, but Eric gave me a couple of weeks to read books on sex education with Lisa. At least I've bought some time that's worth using wisely..."
 
     # game/core/03variables.rpy:324
     old "Только я подарил Лизе книгу по сексуальному образованию, как тут же нарисовался Эрик. Он, видите ли, вместе с моей мамой, собирается взяться за её сексуальное воспитание! \n\nЯ, естественно, отказался ему в этом содействовать. Враждовать, так враждовать! Вряд ли теперь у меня есть много времени, чтобы избавиться от него, так что нужно скорее искать такой способ..."
-    new ""
+    new "As soon as I gave Lisa a book on sex education, Eric showed up. He and Mom are going to take up her sexual education! \n\nObviously, I refused to help him. No chance! I don't think I have much time to get rid of him now, so I'll have to find a way to do it soon..."
 
     # game/core/03variables.rpy:364
     old "Я подобрал кое-что более сексуальное для Алисы, а именно - полупрозрачное боди. В меру откровенное, потому что иначе я рискую не увидеть его на ней. А при дарении, пока она была под впечатлением, я ещё и умудрился уговорить её попозировать мне... нужны же ей качественные фотоснимки для развития блога! \n\nМного я не наснимал, всё-таки мы с Алисой ещё не настолько близки, но уже лучше находим общий язык. Посмотрим, что будет дальше..."
-    new ""
+    new "I picked up something sexier for Alice, a semi-transparent bodysuit. It's still modest, because otherwise I risk not seeing her in it. While I was presenting it to her, I also managed to persuade her to pose for me... She needed high-quality photos for her blog! \n\nIt's not like they were too raunchy. Even though Alice and I are not so close yet, I feel like we're starting to find common ground. We'll see what happens next..."
 
     # game/core/03variables.rpy:364
     old "Я подобрал кое-что более сексуальное для Алисы, а именно - полупрозрачное боди. В меру откровенное, потому что иначе я рискую не увидеть его на ней. А при дарении, пока она была под впечатлением, я ещё и умудрился уговорить её попозировать мне... нужны же ей качественные фотоснимки для развития блога! \n\nФотосессия вышла очень интересной, спасибо за это конфетам с алкоголем. Мне удалось сделать несколько весьма горячих снимков с Алисой и они прекрасно подойдут для моей коллекции... Хоть мы с Алисой всё ещё не очень близки, но уже лучше находим общий язык. Посмотрим, что будет дальше..."
-    new ""
+    new "I picked up something sexier for Alice, a semi-transparent bodysuit. It's still modest, because otherwise I risk not seeing her in it. While I was presenting it to her, I also managed to persuade her to pose for me... She needed high-quality photos for her blog! \n\nThe photo-shoot was interesting thanks to the chocolates and alcohol. I managed to take some very hot pictures of Alice for my collection... Even though Alice and I are not so close yet, I feel like we're starting to find common ground. We'll see what happens next..."
 
     # game/core/03variables.rpy:364
     old "Только мои отношения с Алисой начали понемногу налаживаться, как ко мне подвалил Эрик с расспросами о том, чем там моя старшая сестрёнка занимается за компьютером... \n\nЯ рассказал ему всё, что знал о её блоге. Ну а как иначе, мы же друзья. Теперь он собирается помочь ей с развитием блога и мне лучше этому не мешать... а ещё лучше - помогать ему с этим."
-    new ""
+    new "Just as I thought I was getting somewhere with Alice, Eric came along and asked about what she does on her computer... \n\nI told him everything I knew about her blog. Of course I did, we're friends. Now he's going to help her with it, and I'd better not get in the way... Or better yet, see if I can assist."
 
     # game/core/03variables.rpy:364
     old "Только мои отношения с Алисой начали понемногу налаживаться, как ко мне подвалил Эрик с расспросами о том, чем там моя старшая сестрёнка занимается за компьютером... \n\nЯ решил не облегчать ему жизнь и сказал, что мало об этом знаю. Эрик же, чтобы не тратить своё время, попросил меня за несколько недель узнать как можно больше о занятиях Алисы..."
-    new ""
+    new "Just as I thought I was getting somewhere with Alice, Eric came along and asked about what she does on her computer... \n\nI decided not to make it easy for him and said I didn't know anything. Now Eric wants me to investigate and report back with what I know in a few weeks..."
 
     # game/core/03variables.rpy:364
     old "Только мои отношения с Алисой начали понемногу налаживаться, как ко мне подвалил Эрик с расспросами о том, чем там моя старшая сестрёнка занимается за компьютером... \n\nЯ решил прекратить вражду с Эриком и рассказал ему всё, что знал о её блоге. Теперь он собирается помочь ей с развитием блога и мне лучше этому не мешать... а ещё лучше - помогать ему с этим."
-    new ""
+    new "Just as I thought I was getting somewhere with Alice, Eric came along and asked about what she does on her computer... \n\nI decided to end my war with him and told him all I knew. Now he's going to help Alice with her blog, and I'd better not get in the way... Or better yet, see if I can assist. "
 
     # game/core/03variables.rpy:364
     old "Только мои отношения с Алисой начали понемногу налаживаться, как ко мне подвалил Эрик с расспросами о том, чем там моя старшая сестрёнка занимается за компьютером... \n\nУ меня совершенно нет желания помогать ему подкатывать к моей сестрёнке, что ему и сказал. У нас ведь вражда! Главное, чтобы мне это боком не вышло..."
-    new ""
+    new "Just as I thought I was getting somewhere with Alice, Eric came along and asked about what she does on her computer... \n\nI have absolutely no desire to help him get closer to my sister. We are at war, aren't we? I'm not going to make anything easy for him."
 
     # game/core/03variables.rpy:364
     old "Теперь, каждую среду, пока мама принимает ванну, Эрик тусуется у Алисы в комнате, якобы помогая ей с блогом. Понятно, что на самом деле он хочет поглазеть на Алису в нижнем белье... а в будущем и в трусики к ней залезть."
-    new ""
+    new "While Mom is in the bath on Wednesday's, Eric hangs out in Alice's room. Supposedly he's trying to help with her blog, but it's clear he just wants to ogle her while she's wearing lingerie... And try getting into her panties given the chance."
 
     # game/core/03variables.rpy:364
     old "Теперь, каждую среду, пока мама принимает ванну, Эрик тусуется у Алисы в комнате, якобы помогая ей с блогом. Понятно, что на самом деле он хочет поглазеть на Алису в нижнем белье... а в будущем и в трусики к ней залезть.\n\nА ещё мне повезло узнать, что Эрик собирается купить ей новое кружевное боди! Обидно, конечно, что она попросила об этом не меня. Интересно, как Эрик отреагирует, если я его опережу с покупкой..."
-    new ""
+    new "While Mom is in the bath on Wednesday's, Eric hangs out in Alice's room. Supposedly he's trying to help with her blog, but it's clear he just wants to ogle her while she's wearing lingerie... And try getting into her panties given the chance.\n\n I also learned that Eric wants to buy Alice a new bodysuit! She should have asked me instead... I wonder how Eric would react if I beat him to it?"
 
     # game/core/03variables.rpy:364
     old "Эрик подарил Алисе кружевное боди, которое она просила. Похоже, это их сблизило, чего он и добивался. И будет добиваться дальше..."
-    new ""
+    new "Eric gave Alice the bodysuit she asked for. It seemed to bring them closer together, all according to his plan..."
 
     # game/core/03variables.rpy:364
     old "Эрик подарил Алисе кружевное боди, которое она просила. Похоже, это их сблизило, чего он и добивался, а вот я не успел его обойти. Нужно скорее избавляться от Эрика, иначе он заберёт у меня всё..."
-    new ""
+    new "Eric gave Alice the bodysuit she asked for. It seemed to bring them closer together, just like he wanted. I couldn't beat him this time, I need to find a way to get rid of him before he takes everything from me!"
 
     # game/core/03variables.rpy:364
     old "Мне удалось опередить Эрика с покупкой кружевного боди и подарить его Алисе первым! Она даже переоделась при мне и не слишком при этом прикрывалась. Правда в конце у неё ногу свело, но это значит, что у меня теперь есть весомый повод забраться в массаже её прелестных ножек несколько дальше, чем раньше... И мне стоит попробовать это сделать!"
-    new ""
+    new "I beat Eric and gave Alice the bodysuit first! She even changed into it in front of me. Moving into the clothes cramped her leg, but that gave me a good reason to massage her lovely legs a little farther than before... I should try giving her a massage after that!"
 
     # game/core/03variables.rpy:364
     old "Эрик оказался, мягко говоря, не в восторге от того, что я опередил его с дарением кружевного боди для Алисы.\n\nОн предупредил, что если я ещё раз испорчу его планы, друзьями нам дальше не быть... А в качестве наказания, лишил меня всех возможных \"премиальных\", что мне теперь нужно как-то исправить..."
-    new ""
+    new "Eric wasn't happy that I beat him to giving Alice the bodysuit. \n\nHe warned me that if I messed up his plans one more time, we wouldn't be friends anymore... And as punishment, he deprived me of all possible benefits, that I now need to re-earn somehow..."
 
     # game/core/03variables.rpy:364
     old "Эрик оказался, мягко говоря, не в восторге от того, что я опередил его с дарением кружевного боди для Алисы.\n\nОн пригрозил, что у меня теперь будут большие проблемы! Как будто меня этим можно испугать..."
-    new ""
-
+    new "Eric wasn't happy that I beat him to giving Alice the bodysuit. \n\nNow he's threatened me, like I'm in trouble! As if that would scare me..."
