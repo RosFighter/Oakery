@@ -455,9 +455,8 @@ translate english strings:
 
     # game/core/02init.rpy:100
     old "Хочу рассказать тебе кое-что о Кире..."
-    new ""
+    new "I want to tell you something about Kira..."
 
     # game/core/02init.rpy:100
     old "Я хотел поговорить о Кире..."
-    new ""
-
+    new "I wanted to talk about Kira..."

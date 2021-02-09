@@ -164,9 +164,8 @@ translate english strings:
 
     # game/extra/extra.rpy:101
     old "Немного БДСМ от Киры"
-    new ""
+    new "BDSM With Kira"
 
     # game/extra/extra.rpy:101
     old "Первые снимки для блога Алисы"
-    new ""
-
+    new "First Photos for Alice's blog"
