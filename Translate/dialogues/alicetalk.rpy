@@ -8393,3 +8393,53 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:3462
     old "{i}подглядывать {color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
     new "{i}Peek {color=[_ch1.col]}(Stealth. Chance: [_ch1.vis]){/color}{/i}"
+# TODO: Translation updated at 2021-02-09 23:50
+
+# game/dialogues/alicetalk.rpy:1038
+translate english smoke_fear_f8226515:
+
+    # Alice_14 "Голой? Прямо совсем-совсем голой?! Что, фантазия закончилась, скатился до самого простейшего?"
+    Alice_14 ""
+
+# game/dialogues/alicetalk.rpy:1039
+translate english smoke_fear_9c1bf96e:
+
+    # Max_07 "То же голое наказание, только без шлёпающей по твоей чудесной попке руки мамы. Просто подумал, ты бы и сама этого хотела."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:1040
+translate english smoke_fear_081a2966:
+
+    # Alice_12 "Я то совсем не против спать голой, только вот ты же неспроста этого хочешь... Задумал что-то, Макс?! Ну-ка признавайся!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:1041
+translate english smoke_fear_1dfe2435:
+
+    # Max_03 "Всё ты какого-то подвоха от меня ждёшь! Спи себе голенькой в удовольствие, а мне уже от одной этой мысли на душе приятно."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1042
+translate english smoke_fear_e7fe59d8:
+
+    # Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1043
+translate english smoke_fear_201d6989:
+
+    # Max_04 "Вот и отлично!"
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1044
+translate english smoke_fear_df64eeea:
+
+    # Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
+    Alice_01 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:985
+    old "Хочу, чтобы ты спала голой! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
+    new ""
+

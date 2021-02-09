@@ -296,3 +296,47 @@ translate english strings:
     old "{i}встретить их{/i}"
     new "{i}Go meet them{/i}"
 
+# TODO: Translation updated at 2021-02-09 23:50
+
+# game/events/kira_cam.rpy:443
+translate english cam0_kira_bath_with_eric_6d360ec2:
+
+    # Max_08 "Бедной тёте Кире приходится ублажать Эрика, чтобы никто о нас с ней не узнал..."
+    Max_08 ""
+
+# game/events/kira_cam.rpy:445
+translate english cam0_kira_bath_with_eric_00bf555e:
+
+    # Max_01 "Повезло Эрику... Тётя Кира умеет ублажать мужчин и ещё как!"
+    Max_01 ""
+
+# game/events/kira_cam.rpy:453
+translate english cam0_kira_bath_with_eric_c75a22ab:
+
+    # Max_10 "Благо у Эрика такой член, с которым Кире не составит труда справиться! Хотя, его выдержке можно позавидовать..."
+    Max_10 ""
+
+# game/events/kira_cam.rpy:455
+translate english cam0_kira_bath_with_eric_2a2c0f53:
+
+    # Max_07 "Со стороны кажется, что для Киры это самое обыденное дело! Она так легко управляется с членом Эрика, хотя это и не сложно, после моего-то..."
+    Max_07 ""
+
+# game/events/kira_cam.rpy:463
+translate english cam0_kira_bath_with_eric_005f0722:
+
+    # Max_09 "Всё! На этот раз Кира отмучалась... Но от Эрика надо скорее избавляться."
+    Max_09 ""
+
+# game/events/kira_cam.rpy:465
+translate english cam0_kira_bath_with_eric_607c8d39:
+
+    # Max_02 "Вот и всё! С Кирой долго не продержишься... Особенно если она нацелена доставить своим языком максимум удовольствия."
+    Max_02 ""
+
+# game/events/kira_cam.rpy:476
+translate english cam1_kira_bath_with_eric_77deb168:
+
+    # Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
+    Max_09 ""
+

@@ -3618,3 +3618,59 @@ translate english strings:
     # game/events/kira.rpy:652
     old "Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..."
     new "Aha! Aunt Kira is still asleep. Good thing her nightie's a little see-through... Oooh, she looks good..."
+# TODO: Translation updated at 2021-02-09 23:50
+
+# game/events/kira.rpy:42
+translate english kira_bath_226743d2:
+
+    # Max_09 "Пусть лучше тётя Кира отдохнёт, а вернее отмоется от Эрика... А то как-то не очень хочется что-то делать в ванне сразу после него!"
+    Max_09 ""
+
+# game/events/kira.rpy:44
+translate english kira_bath_b08ab956:
+
+    # Max_09 "Пусть лучше тётя Кира отдохнёт и отмоется от Эрика... Можно было бы всё же зайти, но вдруг Эрик этого и ждёт. Лучше не рисковать!"
+    Max_09 ""
+
+# game/events/kira.rpy:2357
+translate english kira_bath_with_eric_e51d277a:
+
+    # Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!" nointeract
+    Max_01 "" nointeract
+
+# game/events/kira.rpy:2369
+translate english kira_bath_with_eric_1593e4c0:
+
+    # Max_08 "Конечно, почему бы среди ночи не сходить в ванную, когда тебя там будет ждать шикарная тётя Кира, чтобы отсосать..."
+    Max_08 ""
+
+# game/events/kira.rpy:2371
+translate english kira_bath_with_eric_460fc52f:
+
+    # Max_01 "Наверно, тётя Кира хотела прийти с работы и отдохнуть, а тут ещё и Эрику нужно отсосать сперва..."
+    Max_01 ""
+
+# game/events/kira.rpy:2382
+translate english kira_bath_with_eric_21dc0f91:
+
+    # Max_10 "Хватит уже трахать её в рот, как какую-то порнозвезду! Она конечно порнозвезда, но не круглые же сутки..."
+    Max_10 ""
+
+# game/events/kira.rpy:2384
+translate english kira_bath_with_eric_bff48399:
+
+    # Max_07 "Неплохо так Эрик её голову на свой член напяливает! Как будто так и надо..."
+    Max_07 ""
+
+# game/events/kira.rpy:2392
+translate english kira_bath_with_eric_b8b602d6:
+
+    # Max_09 "Вот же сволочь! Спустил всё до последней капли Кире прямо в рот! Ну Эрик, ты у меня сполна получишь рано или поздно..." nointeract
+    Max_09 "" nointeract
+
+# game/events/kira.rpy:2397
+translate english kira_bath_with_eric_6bca3a88:
+
+    # Max_02 "Кира не упустила ни единой капли мимо! И как будто никто ни у кого только что смачно не отсасывал... Чистая работа!" nointeract
+    Max_02 "" nointeract
+
