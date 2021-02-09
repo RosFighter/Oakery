@@ -8443,3 +8443,11 @@ translate english strings:
     old "Хочу, чтобы ты спала голой! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
     new ""
 
+# TODO: Translation updated at 2021-02-10 00:00
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:1316
+    old "Я передумал. Ты можешь спать в нижнем белье..."
+    new ""
+
