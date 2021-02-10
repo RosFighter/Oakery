@@ -3624,53 +3624,52 @@ translate english strings:
 translate english kira_bath_226743d2:
 
     # Max_09 "Пусть лучше тётя Кира отдохнёт, а вернее отмоется от Эрика... А то как-то не очень хочется что-то делать в ванне сразу после него!"
-    Max_09 ""
+    Max_09 "It's better for Aunt Kira to rest, or rather to get rid of Eric... I don't want his sloppy seconds!"
 
 # game/events/kira.rpy:44
 translate english kira_bath_b08ab956:
 
     # Max_09 "Пусть лучше тётя Кира отдохнёт и отмоется от Эрика... Можно было бы всё же зайти, но вдруг Эрик этого и ждёт. Лучше не рисковать!"
-    Max_09 ""
+    Max_09 "It would be better if Aunt Kira rested and washed up from Eric's... I could still go in, but maybe that's what Eric was waiting for. I'd better not take any chances!"
 
 # game/events/kira.rpy:2357
 translate english kira_bath_with_eric_e51d277a:
 
     # Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Only one person can stay awake during this time and splash around in the bathtub. And that person is Kira!" nointeract
 
 # game/events/kira.rpy:2369
 translate english kira_bath_with_eric_1593e4c0:
 
     # Max_08 "Конечно, почему бы среди ночи не сходить в ванную, когда тебя там будет ждать шикарная тётя Кира, чтобы отсосать..."
-    Max_08 ""
+    Max_08 "Of course, why not go to the bathroom in the middle of the night with gorgeous Aunt Kira waiting there to give you a blow job..."
 
 # game/events/kira.rpy:2371
 translate english kira_bath_with_eric_460fc52f:
 
     # Max_01 "Наверно, тётя Кира хотела прийти с работы и отдохнуть, а тут ещё и Эрику нужно отсосать сперва..."
-    Max_01 ""
+    Max_01 "Aunt Kira must have wanted to come home from work and rest, but had to suck Eric's dick first..."
 
 # game/events/kira.rpy:2382
 translate english kira_bath_with_eric_21dc0f91:
 
     # Max_10 "Хватит уже трахать её в рот, как какую-то порнозвезду! Она конечно порнозвезда, но не круглые же сутки..."
-    Max_10 ""
+    Max_10 "Stop fucking her in the mouth like a porn star! I mean she is, but she's not a 24-hour porn star..."
 
 # game/events/kira.rpy:2384
 translate english kira_bath_with_eric_bff48399:
 
     # Max_07 "Неплохо так Эрик её голову на свой член напяливает! Как будто так и надо..."
-    Max_07 ""
+    Max_07 "It's nice how Eric puts her head on his dick! It's like it's meant to be..."
 
 # game/events/kira.rpy:2392
 translate english kira_bath_with_eric_b8b602d6:
 
     # Max_09 "Вот же сволочь! Спустил всё до последней капли Кире прямо в рот! Ну Эрик, ты у меня сполна получишь рано или поздно..." nointeract
-    Max_09 "" nointeract
+    Max_09 "What a bastard! He shot every last drop right into Kira's mouth! Well, Eric, I'll get you sooner or later..." nointeract
 
 # game/events/kira.rpy:2397
 translate english kira_bath_with_eric_6bca3a88:
 
     # Max_02 "Кира не упустила ни единой капли мимо! И как будто никто ни у кого только что смачно не отсасывал... Чистая работа!" nointeract
-    Max_02 "" nointeract
-
+    Max_02 "Kira didn't waste a single drop! She didn't leave any evidence of the last few minutes!" nointeract
