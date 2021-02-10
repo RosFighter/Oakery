@@ -1,9 +1,25 @@
 
 label cam0_eric_ann_sleep:
-    $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
-    # $ renpy.show('Eric cams sleep '+renpy.random.choice(['01', '02', '03']), at_list=[laptop_screen])
+    if flags['eric.jerk'] and '02:00'<=tm<'02:30':
+        $ renpy.show('Ann cams sleep '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    else:
+        $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'ann_sleep' not in cam_flag:
+
+    if all([flags['eric.jerk'], '02:00'<=tm<'02:30', not prenoted, not flags['eric.noticed']]):
+        $ prenoted = 1
+        if not flags['eric.firstjerk']:
+            # 1-ое спаливание Эрика у окна Алисы
+            Max_07 "Как же повезло, что у меня такая горячая мама... Стойте-ка, а Эрик где?! Может, пошёл в ванную комнату? Или ещё куда..."
+        else:
+            Max_07 "Как же повезло, что у меня такая горячая мама... А Эрик опять где-то полуночничает..."
+
+    elif all([flags['eric.jerk'], '02:00'<=tm<'02:30', flags['eric.noticed'], 'ann_sleep_alone' not in cam_flag]) or not check_is_room('eric'):
+        # Эрик уже замечен или с Кирой в ванной
+        $ cam_flag.append('ann_sleep_alone')
+        Max_01 "Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"
+
+    if 'ann_sleep' not in cam_flag and not (flags['eric.jerk'] and '02:00'<=tm<'02:30'):
         $ cam_flag.append('ann_sleep')
         Max_01 "Мама и Эрик спят совсем голые. Ни стыда, ни совести..."
     return
@@ -201,5 +217,123 @@ label cam0_eric_ann_fucking:
             else:
                 $ renpy.show('Eric cams fuck 0'+str(fuck_scene), at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
+
+    return
+
+label cam0_sexed_lisa:
+    if talk_var['ae_lisa_number'] < 0:
+        # вводный урок
+        $ renpy.show('Eric cams sexed 01-01'+eric.dress, at_list=[laptop_screen])
+        $ renpy.show('Lisa cams sexed 01'+lisa.dress, at_list=[laptop_screen])
+
+        show FG cam-shum-act at laptop_screen
+
+        if 'ae_lisa_sexed' not in cam_flag:
+            $ cam_flag.append('ae_lisa_sexed')
+            Max_08 "{i}( Жаль камеры не передают звук. Нужно будет обязательно спросить Лизу, о чём они разговаривали! ){/i}"
+
+    elif talk_var['ae_lisa_number'] == 0:
+        # первый урок
+        if tm[-2:] < '10':
+            $ renpy.show('Eric cams sexed 01-01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 01'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed0' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed0')
+                Max_07 "{i}( Лиза пришла на урок к маме и Эрику. Посмотрим, что будет... ){/i}"
+
+        elif tm[-2:] < '20':
+            $ renpy.show('Eric cams sexed 02-01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 02'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed1' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed1')
+                Max_09 "{i}( Вот же Эрик! Член он свой вывесил... Интересно, что они ей там рассказывают? ){/i}"
+
+        elif tm[-2:] < '30':
+            $ renpy.show('Eric cams sexed 03-01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 03'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed2' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed2')
+                Max_08 "{i}( Ага, дрочка пошла... И уговорил же Эрик маму на всё это... ){/i}"
+
+    elif talk_var['ae_lisa_number'] == 1:
+        # второй урок
+        if tm[-2:] < '10':
+            $ renpy.show('Eric cams sexed 01-01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 01'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed0' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed0')
+                Max_07 "{i}( Лиза пришла на урок к маме и Эрику. Посмотрим, что будет... ){/i}"
+
+        elif tm[-2:] < '20':
+            $ renpy.show('Eric cams sexed 02-02'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 02'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed1' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed1')
+                Max_09 "{i}( Мама при Лизе уже надрачивает Эрику как будто так и надо! Интересно, что они ей там рассказывают при этом? ){/i}"
+
+        elif tm[-2:] < '30':
+            $ renpy.show('Eric cams sexed 03-02'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 03'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed2' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed2')
+                Max_08 "{i}( Ага, мама повышает градус показом своей шикарной груди... И уговорил же Эрик маму на всё это! ){/i}"
+
+    elif talk_var['ae_lisa_number'] == 2:
+        # третий урок
+        if tm[-2:] < '10':
+            $ renpy.show('Eric cams sexed 01-01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 01'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed0' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed0')
+                Max_07 "{i}( Лиза пришла на урок к маме и Эрику. Посмотрим, что будет... ){/i}"
+
+        elif tm[-2:] < '20':
+            $ renpy.show('Eric cams sexed 02-02'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 02'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed1' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed1')
+                Max_09 "{i}( Подрочить Эрику на глазах Лизы в образовательных целях? Конечно, обычное дело, не обращайте внимания... Интересно, что они ей там рассказывают при этом? ){/i}"
+
+        elif tm[-2:] < '30':
+            $ renpy.show('Eric cams sexed 03-03'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 03'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed2' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed2')
+                Max_08 "{i}( О, от такого я бы не отказался! Только от одних мыслей о маминых руках, нежно массирующих мои шары, хочется кончить... ){/i}"
+
+    elif talk_var['ae_lisa_number'] == 3:
+        # четвертый урок
+        if tm[-2:] < '10':
+            $ renpy.show('Eric cams sexed 01-01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 01'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed0' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed0')
+                Max_07 "{i}( Лиза пришла на урок к маме и Эрику. Посмотрим, что будет... ){/i}"
+
+        elif tm[-2:] < '20':
+            $ renpy.show('Eric cams sexed 03-02'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 02'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed1' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed1')
+                Max_09 "{i}( Всё дрочат и дрочат... Видимо, закрепляют материал. Ну сколько можно?! ){/i}"
+
+        elif tm[-2:] < '30':
+            $ renpy.show('Eric cams sexed 03-04'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 03'+lisa.dress, at_list=[laptop_screen])
+            show FG cam-shum-act at laptop_screen
+            if 'ann_eric_lisa_sexed2' not in cam_flag:
+                $ cam_flag.append('ann_eric_lisa_sexed2')
+                Max_08 "{i}( О, Эрик не выдержал и кончил... Хотя, вряд ли. Скорее всего, они решили показать Лизе для чего это всё было нужно. ){/i}"
 
     return

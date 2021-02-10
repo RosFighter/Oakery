@@ -4,7 +4,7 @@
 translate english StartDialog_069fda26:
 
     # Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
-    Max_10 "I feel too tired to concentrate. It'd be nice to take a nap first..."
+    Max_10 "I'm too exhausted to concentrate. It'd be nice to take a nap first..."
 
 # game/events/max.rpy:30
 translate english Sleep_002afad6:
@@ -22,7 +22,7 @@ translate english Sleep_dca71115:
 translate english Wearied_6c64d774:
 
     # Max_10 "{i}( Моя голова уже совсем не соображает, нужно ложиться спать... ){/i}" nointeract
-    Max_10 "{i}( My head isn't even thinking straight anymore, I have to go to bed... ){/i}" nointeract
+    Max_10 "{i}( If I keep this up I'm going to collapse, I have to go to bed... ){/i}" nointeract
 
 # game/events/max.rpy:52
 translate english Wearied_dca71115:
@@ -76,13 +76,13 @@ translate english Shower_2c708671:
 translate english Shower_58b0fd27:
 
     # Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
-    Max_03 "Aha! I just noticed that there's another back window! And I think there's a fantastic view of the tub through it... Of course, it's not the bath itself, it's who's going to be in it."
+    Max_03 "Aha! I just noticed that there's another back window! And I think there's a fantastic view of the tub through it... Of course, it's not the bath itself, it's who's going to be in it that's important."
 
 # game/events/max.rpy:154
 translate english Shower_b6233ffc:
 
     # Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
-    Max_09 "Except the location is a little high... We need to get something that's high enough to peeo with and that won't cause suspicion..."
+    Max_09 "Except the location is a little high... We need to get something that's high enough to peep and that won't cause suspicions..."
 
 # game/events/max.rpy:155
 translate english Shower_b3c37b42:
@@ -100,13 +100,13 @@ translate english Bath_2c708671:
 translate english Bath_58b0fd27:
 
     # Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
-    Max_03 "Aha! I just noticed that there's another back window! And I think there's a fantastic view of the tub through it... Of course, it's not the bath itself, it's who's going to be in it."
+    Max_03 "Aha! I just noticed that there's another back window! And I think there's a fantastic view of the tub through it... Of course, it's not the bath itself, it's who's going to be in it that's important."
 
 # game/events/max.rpy:177
 translate english Bath_b6233ffc:
 
     # Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
-    Max_09 "Except the location is a little high... We need to get something that's high enough to peeo with and that won't cause suspicion..."
+    Max_09 "Except the location is a little high... We need to get something that's high enough to peep and that won't cause suspicions..."
 
 # game/events/max.rpy:178
 translate english Bath_b3c37b42:
@@ -964,3 +964,22 @@ translate english strings:
     old "$200"
     new "$200"
 
+# TODO: Translation updated at 2021-02-04 23:59
+
+# game/events/max.rpy:586
+translate english delivery2_0ba1be34:
+
+    # Max_00 "Да, то что нужно. Спасибо!"
+    Max_00 "Yes, that's just what we need. Thank you!"
+
+# game/events/max.rpy:596
+translate english delivery2_6587db47:
+
+    # Max_02 "{i}( Боди у меня! Теперь, нужно подарить его Алисе и больше всего мне может повезти, когда она занимается своим блогом. Она и так в это время в нижнем белье, а с учётом того, что она получит боди раньше времени, то вполне может переодеться и при мне... ){/i}"
+    Max_02 "{i}( I've got it! Now, I need to give it to Alice, and then I might get lucky when she's doing her blogging. She's already in her underwear at that time, and with her getting the clothes, she might as well change in front of me... ){/i}"
+
+# game/events/max.rpy:598
+translate english delivery2_245175bb:
+
+    # Max_10 "{i}( Боди у меня! Вот только поздно... Эрик уже купил Алисе то, что она хотела. Остаётся лишь выставить на ebay, так хотя бы половину стоимости верну. ){/i}"
+    Max_10 "{i}( I've got it! Except it's too late... Eric already bought one for Alice. All that remains is to try and resell it, so at least I'll get half the price back. ){/i}"

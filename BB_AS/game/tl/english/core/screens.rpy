@@ -228,7 +228,7 @@ translate english strings:
 
     # game/core/screens.rpy:1511
     old "Раскрепощенность"
-    new "Emancipation"
+    new "Liberation"
 
     # game/core/screens.rpy:1518
     old "Отношения с Эриком"

@@ -695,11 +695,30 @@ init python:
             self.stage   = 0
 
         def set_lost(self, lost):
+            if lost > 0:
+                self.enabled = True
             self.lost = lost
             self.done = lost == 0
 
         def __repr__(self):
             return "Этап: {self.stage}, осталось дней: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
+
+
+    class Weekly:
+        def __init__(self, lost=0, done=False, enabled=False):
+            self.lost    = lost     # осталось недель до срабатываения события
+            self.enabled = enabled  # счетчик активен, нужно еженедельно убавлять счетчик до 0
+            self.done    = done     # счетчик достиг 0, для проверки доступности диалога
+            self.stage   = 0
+
+        def set_lost(self, lost):
+            if lost > 0:
+                self.enabled = True
+            self.lost = lost
+            self.done = lost == 0
+
+        def __repr__(self):
+            return "Этап: {self.stage}, осталось недель: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
 
 
     ############################################################################
@@ -803,3 +822,85 @@ init python:
             self.ch  = {ch < 0 : 0, ch > 1000 : 1000, 0 <= ch <= 1000: ch}[True]
             self.col = {ch < 333 : red, ch > 666 : lime, 333 <= ch <= 666 : orange}[True]
             self.vis = str(int(ch/10)) + "%"
+
+
+    class Influence:
+        lim = 200
+        def __init__(self, m = None, e = None):
+            self.__m = m
+            self.__e = e
+            self.lim_m = Influence.lim
+            self.lim_e = Influence.lim
+            self.freeze = True
+
+        @property
+        def m(self):
+            # возвращает влияние Макса
+            return [self.__m, (self.__m * 100) // Influence.lim if self.__m is not None else 0]
+
+        @property
+        def e(self):
+            # возвращает влияние Эрика
+            return [self.__e, (self.__e * 100) // Influence.lim if self.__e is not None else 0]
+
+        def balance(self):
+            # возвращает список из трех пунктов:
+            # % влияния Макса (от максимума)
+            # % влияния Эрика (от Максимума)
+            # 'n', 'm' или 'e' в зависимости от того, у кого влияние выше (n - нейтрально, разница в пределах 5%)
+            p1 = (self.__m * 100) // Influence.lim if self.__m is not None else 0
+            p2 = (self.__e * 100) // Influence.lim if self.__e is not None else 0
+            if p2-5 < p1 < p2+5 or p1-1 < p2 < p1+5:
+                p3 = 'n'
+            elif p1 >= p2+5:
+                p3 = 'm'
+            else:
+                p3 = 'e'
+
+            return [p1, p2, p3]
+
+        def add_m(self, d, b = False):
+            if self.__m is not None:
+                d = d if self.__m + d < self.lim_m else self.lim_m - self.__m
+            if d == 0:
+                return
+
+            if b or not self.freeze:
+                if self.__m is not None:
+                    self.__m += d
+                else:
+                    self.__m = d
+                if self.__e is not None:
+                    self.__e -= d // 2
+                    if self.__e < 0:
+                        self.__e = 0
+
+        def add_e(self, d, b = False):
+            if self.__e is not None:
+                d = d if self.__e + d < self.lim_e else self.lim_e - self.__e
+            if d == 0:
+                return
+
+            if b or not self.freeze:
+                if self.__e is not None:
+                    self.__e += d
+                else:
+                    self.__e = d
+                if self.__m is not None:
+                    self.__m -= d // 2
+                    if self.__m < 0:
+                        self.__m = 0
+
+        def sub_m(self, d, b = False):
+            if b or not self.freeze:
+                if self.__m is not None:
+                    self.__m -= d
+                    if self.__m < 0:
+                        self.__m = 0
+
+        def sub_e(self, d, b = False):
+            if b or not self.freeze:
+                if self.__m is not None:
+                    self.__m -= d
+                    if self.__m < 0:
+                        self.__m = 0

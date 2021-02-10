@@ -10,13 +10,13 @@ translate english AfterWaiting_c2510a45:
 translate english night_of_fun_cae91685:
 
     # Max_19 "Теперь можно спокойно спать и ничего больше..."
-    Max_19 "Now you can sleep in peace..."
+    Max_19 "Now I can sleep in peace..."
 
 # game/core/core.rpy:408
 translate english cam_after_waiting_6058d5d4:
 
     # Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
-    Max_09 "It's not a good idea to check the cameras right now in case Lisa gets suspicious. Maybe I should go out to the veranda while no ones there..." nointeract
+    Max_09 "It's not a good idea to check the cameras right now in case Lisa gets suspicious. Maybe I should go out to the veranda while no one's there..." nointeract
 
 # game/core/core.rpy:416
 translate english cam_after_waiting_c283f316:
@@ -34,13 +34,13 @@ translate english cam_after_waiting_38f46f18:
 translate english cam_after_waiting_d4f49617:
 
     # Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
-    Max_09 "I don't want to risk checking the cameras now in case Lisa wakes up. Maybe I should go out to the veranda while no ones there..." nointeract
+    Max_09 "I don't want to risk checking the cameras now in case Lisa wakes up. Maybe I should go out to the veranda while no one's there..." nointeract
 
 # game/core/core.rpy:440
 translate english cam_after_waiting_c283f316_1:
 
     # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
-    Max_09 "Lisa's in the room... and the verandah is occupied! I shouldn't risk viewing the cameras now."
+    Max_09 "Lisa's in the room... And the verandah is occupied! I shouldn't risk viewing the cameras now."
 
 # game/core/core.rpy:444
 translate english cam_after_waiting_eea92f18:
@@ -92,11 +92,11 @@ translate english strings:
 
     # game/core/core.rpy:408
     old "{i}идти на веранду{/i}"
-    new "{i}go to the verandah{/i}"
+    new "{i}Go to the verandah{/i}"
 
     # game/core/core.rpy:408
     old "{i}не сейчас{/i}"
-    new "{i}not now{/i}"
+    new "{i}Not now{/i}"
 
     # game/core/core.rpy:538
     old "А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!"
@@ -109,4 +109,12 @@ translate english strings:
     # game/core/core.rpy:1025
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Правда, я почти ничего не увидел, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"
     new "I gave Alice a cute lingerie set. She loved it. She even tried it on in front of me! I didn't get to see much, but the experience was very exciting anyway... And the best part is, she hinted she'd be willing to wear something even more revealing!"
+
+# TODO: Translation updated at 2021-01-02 23:12
+
+translate english strings:
+
+    # game/core/core.rpy:1194
+    old "А что если я не буду помогать Лизе какое-то время? Или несколько раз сделаю ошибку в её работе?"
+    new "What if I don't help Lisa for a while? Or make a few mistakes in her homework?"
 

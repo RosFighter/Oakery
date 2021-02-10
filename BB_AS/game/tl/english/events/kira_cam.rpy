@@ -264,3 +264,78 @@ translate english cam1_kira_night_swim_5f08638b:
     # Max_05 "Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!"
     Max_05 "Aunt Kira, skinny dipping? Something tells me she's done this before!"
 
+# TODO: Translation updated at 2021-01-23 16:42
+
+# game/events/kira_cam.rpy:417
+translate english cam0_return_from_club_39c0bef3:
+
+    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+    Max_09 "I can't really see anything... It might be worth looking through another camera..."
+
+# game/events/kira_cam.rpy:419
+translate english cam0_return_from_club_1ecc7ee3:
+
+    # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы бассейн..."
+    Max_09 "I can't see anything. I should install a camera that covers the pool..."
+
+# game/events/kira_cam.rpy:423
+translate english cam1_return_from_club_4f374152:
+
+    # Max_01 "{i}( Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их... ){/i}" nointeract
+    Max_01 "{i}( The girls are back from the club! I better go meet them now if I want a chance at a little fun before bed... ){/i}" nointeract
+
+# game/events/kira_cam.rpy:430
+translate english cam1_return_from_club_984a3aa6:
+
+    # Max_00 "Поздно уже, пойду лучше спать..."
+    Max_00 "It's getting late, I'd better go to bed..."
+
+translate english strings:
+
+    # game/events/kira_cam.rpy:423
+    old "{i}встретить их{/i}"
+    new "{i}Go meet them{/i}"
+
+# TODO: Translation updated at 2021-02-09 23:50
+
+# game/events/kira_cam.rpy:443
+translate english cam0_kira_bath_with_eric_6d360ec2:
+
+    # Max_08 "Бедной тёте Кире приходится ублажать Эрика, чтобы никто о нас с ней не узнал..."
+    Max_08 "Poor Aunt Kira has to please Eric so that no one will find out about us..."
+
+# game/events/kira_cam.rpy:445
+translate english cam0_kira_bath_with_eric_00bf555e:
+
+    # Max_01 "Повезло Эрику... Тётя Кира умеет ублажать мужчин и ещё как!"
+    Max_01 "Lucky Eric... Aunt Kira knows how to please men!"
+
+# game/events/kira_cam.rpy:453
+translate english cam0_kira_bath_with_eric_c75a22ab:
+
+    # Max_10 "Благо у Эрика такой член, с которым Кире не составит труда справиться! Хотя, его выдержке можно позавидовать..."
+    Max_10 "Fortunately, Eric has a penis that Kira can easily handle! Although his stamina is enviable..."
+
+# game/events/kira_cam.rpy:455
+translate english cam0_kira_bath_with_eric_2a2c0f53:
+
+    # Max_07 "Со стороны кажется, что для Киры это самое обыденное дело! Она так легко управляется с членом Эрика, хотя это и не сложно, после моего-то..."
+    Max_07 "Kira's doing it with ease! She can handle Eric's cock so easily, though it's not hard, after all, after mine..."
+
+# game/events/kira_cam.rpy:463
+translate english cam0_kira_bath_with_eric_005f0722:
+
+    # Max_09 "Всё! На этот раз Кира отмучалась... Но от Эрика надо скорее избавляться."
+    Max_09 "That's it! This time Kira had exhausted herself... But we must get rid of Eric as soon as possible."
+
+# game/events/kira_cam.rpy:465
+translate english cam0_kira_bath_with_eric_607c8d39:
+
+    # Max_02 "Вот и всё! С Кирой долго не продержишься... Особенно если она нацелена доставить своим языком максимум удовольствия."
+    Max_02 "That's it! You won't last long with Kira... Especially if she aims to give maximum pleasure with her tongue."
+
+# game/events/kira_cam.rpy:476
+translate english cam1_kira_bath_with_eric_77deb168:
+
+    # Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
+    Max_09 "I can't see anyone through this camera... Should I look through the other one?"

@@ -278,6 +278,7 @@ label Eric_talk_afterdinner:
         $ notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"))
         $ poss['alpha'].SetStage(2)
         $ talk_var['eric.voy.stage'] = 0
+        $ talk_var['bonus_from_eric'].append('money')
         $ AttitudeChange('eric', 4)
         jump Waiting
 
@@ -535,11 +536,11 @@ label eric_ann_fucking:
     $ _ch1 = GetChance(mgg.stealth, 3, 900)
     menu:
         Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if talk_var['eric.voy.stage']<0:# or talk_var['eric.voy.stage']>6:
+        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if talk_var['eric.voy.stage']<3 or GetRelMax('eric')[0]<0:
             pass
-        "{i}заглянуть в окно{/i}" if talk_var['eric.voy.stage'] in [0, 2, 3]:
+        "{i}заглянуть в окно{/i}" if talk_var['eric.voy.stage'] in [0, 2, 3] and GetRelMax('eric')[0]>3:
             pass
-        "{i}зайти в спальню{/i}" if 3<talk_var['eric.voy.stage']<8:
+        "{i}зайти в спальню{/i}" if 3<talk_var['eric.voy.stage']<8 and GetRelMax('eric')[0]>3:
             jump lessons_from_Eric
         "{i}уйти{/i}":
             $ current_room = house[0]
@@ -562,7 +563,7 @@ label eric_ann_fucking:
     else:
         $ renpy.show('FG ann&eric-voyeur-01')
 
-    if talk_var['eric.voy.stage'] in [0, 2, 3]:
+    if talk_var['eric.voy.stage'] in [0, 2, 3] and GetRelMax('eric')[0]>3:
         if fuck_scene == 6:
             scene BG char Eric bed-02
             $ renpy.show('Eric fuck 06b')
@@ -588,7 +589,7 @@ label eric_ann_fucking:
                     menu:
                         Eric_02 "Ань, пусть лучше смотрит на нас, чем на непойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..."
                         "{i}войти в комнату{/i}":
-                            scene BG char Eric annroom-watch-01
+                            scene BG annroom-watch-01
                             show Eric watch 00
                             $ renpy.show('Max annroom-watch 01'+mgg.dress)
                             #annroom-watch-01 + annroom-watch-01-ann&eric-00 + annroom-watch-01-max-(01-01b)
@@ -670,11 +671,42 @@ label eric_ann_fucking:
 label eric_ann_sleep:
     scene location house annroom door-night
     if peeping['ann_sleep'] == 0:
-        $ peeping['ann_sleep'] = 1
-        menu:
-            Max_00 "Кажется, все спят..."
-            "{i}заглянуть в окно{/i}":
-                scene BG char Ann bed-night-01
+        return
+
+    $ peeping['ann_sleep'] = 1
+    menu:
+        Max_00 "Кажется, все спят..."
+        "{i}заглянуть в окно{/i}":
+            scene BG char Ann bed-night-01
+            if flags['eric.jerk'] and '02:00'<=tm<'02:30':
+                # Эрик дрочит на Алису
+                if not alice.sleepnaked:
+                    # если Алиса не спит голой, Эрик на балконе
+                    jump jerk_balkon
+
+                $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+                $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                if not prenoted and not flags['eric.noticed']:
+                    # Эрика не видели
+                    menu:
+                        Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!"
+                        "{i}проверить{/i}":
+                            jump jerk_balkon
+                        "{i}прокрасться в комнату{/i}":
+                            jump .not_eric_closer
+                        "{i}уйти{/i}":
+                            jump .end
+                else:
+                    # уже знаем, что Эрик в комнате Алисы
+                    jump .not_eric
+
+            elif not check_is_room('eric'):
+                # Эрик с Кирой
+                $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+                $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                jump .not_eric
+
+            else:
                 $ renpy.show('Eric sleep-night '+pose3_1)
                 $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
                 if pose3_1 == '01':
@@ -686,20 +718,56 @@ label eric_ann_sleep:
                 $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
                 if rez != 'exit':
                     $ spent_time += 10
-                    scene BG char Ann bed-night-02
-                    $ renpy.show('Eric sleep-night-closer '+pose3_1)
-                    if pose3_1 == '01':
-                        Max_03 "Они действительно крепко спят... Может самого интересного и не видно, но мама так элегантно, по-женски, закинула на него свою ножку... Хорошо, что такая жара и дома нет кондиционеров... Так, пора уходить." nointeract
-                    elif pose3_1 == '02':
-                        Max_02 "Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся." nointeract
-                    else:
-                        Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
-                    $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
-            "{i}уйти{/i}":
-                pass
+                else:
+                    jump .end
+                scene BG char Ann bed-night-02
+                $ renpy.show('Eric sleep-night-closer '+pose3_1)
+                if pose3_1 == '01':
+                    Max_03 "Они действительно крепко спят... Может самого интересного и не видно, но мама так элегантно, по-женски, закинула на него свою ножку... Хорошо, что такая жара и дома нет кондиционеров... Так, пора уходить." nointeract
+                elif pose3_1 == '02':
+                    Max_02 "Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся." nointeract
+                else:
+                    Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
+                $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
+                if rez != 'exit':
+                    jump .end
+
+        "{i}уйти{/i}":
+            jump .end
+
+    label .not_eric:
+        # Заглянуть в окно (дальний план):
+        if pose3_1 == '01':
+            Max_01 "Класс! Мама спит голая... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
+        elif pose3_1 == '02':
+            Max_07 "О, да! Какая у мамы голая попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
+        else:
+            Max_04 "Обалденно! Как же повезло, что у меня такая горячая мама... Голой она выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
+        $ rez = renpy.display_menu([(_("{i}прокрасться в комнату{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
+        if rez != 'exit':
+            $ spent_time += 10
+            jump .not_eric_closer
+        else:
+            jump .end
+
+    label .not_eric_closer:
+        # Прокрасться в комнату (ближний план):
+        scene BG char Ann bed-night-02
+        $ renpy.show('Ann sleep-night-closer '+pose3_3+ann.dress)
+        $ prenoted = 2
+        if pose3_1 == '01':
+            Max_03 "Чёрт, у меня самая аппетитная мама на свете! Я бы с огромным удовольствием пораспускал с ней руки... Но лучше потихоньку уходить, пока она не проснулась." nointeract
+        elif pose3_1 == '02':
+            Max_02 "Ухх! Так и хочется прижаться к этой обворожительной голой попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
+        else:
+            Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительная у неё киска! Только бы она сейчас не проснулась..." nointeract
+        $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
+        if rez != 'exit':
+            jump .end
+
+    label .end:
         $ spent_time = 10
         jump Waiting
-    return
 
 
 label eric_ann_shower:
@@ -901,3 +969,476 @@ label eric_ann_shower:
         $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
         $ current_room = house[6]
         jump Waiting
+
+
+label sexed_lisa:
+    scene location house annroom door-night
+    if peeping['ael_sexed'] > 0:
+        return
+
+    $ peeping['ael_sexed'] = 1
+
+    if talk_var['ae_lisa_number'] < 0:
+        if house[2].cams:
+            menu:
+                Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё и Эрик. Может хоть через камеру посмотреть, что там происходит? ){/i}"
+                "{i}посмотреть через камеру{/i}":
+                    $ create_cam_list()
+                    $ current_room = house[0]
+                    $ __cam = 1 if house[0].cams else 0
+                    if house[1].cams:
+                        $ __cam += 1
+                    $ view_cam = (house[2], house[2].cams[0], 0, house, __cam)
+                    $ at_comp = True
+                    jump Waiting
+
+                "{i}уйти{/i}":
+                    return
+        else:
+            menu:
+                Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё Эрик. Если бы я установил камеру в этой комнате, то сейчас смог бы всё увидеть, а так придётся ждать, пока Лиза вернётся, чтобы всё узнать. ){/i}"
+                "{i}уйти{/i}":
+                    return
+
+    else:
+        if GetRelMax('eric')[0]>0:
+            # дружба или нейтралитет с Эриком
+            menu:
+                Max_07 "{i}( Эрик сказал, что всё устроит так, чтобы меня не заметили, когда я буду подглядывать. Сейчас посмотрим... ){/i}"
+                "{i}заглянуть в окно{/i}":
+                    if talk_var['ae_lisa_number'] == 0:
+                        jump .lesson_0
+                    elif talk_var['ae_lisa_number'] == 1:
+                        jump .lesson_1
+                    elif talk_var['ae_lisa_number'] == 2:
+                        jump .lesson_2
+                    elif talk_var['ae_lisa_number'] == 3:
+                        jump .lesson_3
+        else:
+            # война с Эриком
+            if house[2].cams:
+                menu:
+                    Max_09 "{i}( Интересно, чем они там с Лизой занимаются?! Можно бы было попробовать подглядеть через окно, но не стоит давать Эрику шанс меня унизить или ещё чего хуже. Лучше посмотреть через камеру... ){/i}"
+                    "{i}посмотреть через камеру{/i}":
+                        $ create_cam_list()
+                        $ current_room = house[0]
+                        $ __cam = 1 if house[0].cams else 0
+                        if house[1].cams:
+                            $ __cam += 1
+                        $ view_cam = (house[2], house[2].cams[0], 0, house, __cam)
+                        $ at_comp = True
+                        jump Waiting
+
+                    "{i}уйти{/i}":
+                        return
+
+            else:
+                menu:
+                    Max_09 "{i}( Интересно, чем они там с Лизой занимаются?! Можно бы было попробовать подглядеть через окно, но не стоит давать Эрику шанс меня унизить или ещё чего хуже. Придётся ждать, пока Лиза вернётся и расскажет сама, хотя не лишним и будет камеру в мамину комнату поставить. ){/i}"
+                    "{i}уйти{/i}":
+                        return
+
+    label .lesson_0:
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 01-01'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-01-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        Max_01 "{i}( Отлично! Мне как раз всё видно в зеркале. Посмотрим, чему мою сестрёнку будут учить эти извращенцы... ){/i}"
+        Eric_01 "... Рано или поздно у тебя появится парень и тебе нужно знать, как доставить ему удовольствие руками. Но это если вы с ним настроены на серьёзные отношения!"
+        Ann_12 "Да, Лиза, вы должны естественно к этому прийти, не нужно с этим торопиться и уж тем более, чтобы тебя к этому принуждали."
+
+        scene BG char Eric sexed-talk
+        $ renpy.show('Eric sexed talk-01'+eric.dress)
+        $ renpy.show('Lisa sexed talk-01'+lisa.dress)
+        #sexed-talk + sexed-talk-ann-01-eric-(01-01a) + sexed-talk-lisa-(01-01a)
+        Lisa_01 "Конечно, мам, на какие же ещё отношения я могу быть настроена... Итак, что и как надо делать руками?"
+        Eric_02 "Давай я встану, Ань, чтобы Лизе было всё хорошо видно..."
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-01'+eric.dress)
+        $ renpy.show('Lisa sexed 02'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        Ann_02 "Конечно, дорогой. Вот, Лиза, смотри... Нужно взять член крепко, но нежно и делать вот так... Если почувствуешь, что не хватает смазки, можешь использовать слюну или масло..."
+        Lisa_02 "Мам, а как понять, что всё происходит как надо?"
+        Ann_05 "Ты поймёшь, дорогая. Сразу поймёшь... А может быть твой избранник даже будет подсказывать тебе, как ему больше нравится."
+        Max_08 "{i}( Офигеть, что творят! Мама надрачивает Эрику прямо на глазах у Лизы, которую она так всё время оберегала. Да, хорошо Эрик над ней поработал... ){/i}"
+
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-01'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        #sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
+        Lisa_03 "Со стороны всё выглядит довольно просто или это не так?"
+        Ann_07 "Ну, Лиза, я уже делала это много раз, поэтому и выглядит это очень просто, но здесь нужно чувствовать своего партнёра. У тебя ещё это всё впереди, когда придёт время..."
+        Lisa_09 "Надеюсь, я при этом ничего не испорчу..."
+        Eric_03 "О, Лиза, это вряд ли! Уже просто лёгкое прикосновение женской руки к мужскому члену очень возбуждает. Всё можно испортить, если ты начнёшь это делать грубо и бесчувственно, но ты точно не такая. Всё у тебя получится, не сомневайся!"
+        Lisa_10 "Ой, так я делать не буду!"
+        Max_02 "{i}( Да, как же классно бы было, если бы моя младшая сестрёнка запустила свои нежные ручки в мои шорты и неспеша поласкала мой член... Ухх! ){/i}"
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 01-02'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        Ann_04 "Ты у меня умница, дочка. Ладно, ступай, на сегодня я думаю достаточно. Через неделю продолжим..."
+        Lisa_02 "Мам, а что будет в следующий раз?"
+        Ann_01 "Ну, нам с Эриком есть, что тебе ещё показать и рассказать. Но это в следующий раз..."
+        Max_07 "{i}( О, пора мне валить к себе... ){/i}"
+
+        jump .end
+
+    label .lesson_1:
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 01-02'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
+        Ann_02 "... Как правильно стимулировать мужской член рукой я тебе показала. Теперь покажу тебе довольно безобидный и эффективный способ ещё больше возбудить мужчину..."
+        Lisa_01 "Это будет какая-то хитрая техника?"
+
+        scene BG char Eric sexed-talk
+        $ renpy.show('Eric sexed talk-02'+eric.dress)
+        $ renpy.show('Lisa sexed talk-01'+lisa.dress)
+        #sexed-talk + sexed-talk-ann-02-eric-(02-02a) + sexed-talk-lisa-(01-01a)
+        Ann_04 "Ну, на технику это не тянет, скорее... очень приятное дополнение к ласкам."
+        Eric_02 "Давай я встану, Ань, чтобы Лизе было всё хорошо видно... Да и мне тоже."
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-01'+eric.dress)
+        $ renpy.show('Lisa sexed 02'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        Ann_05 "Мужчин очень заводит, когда женщина раздевается, так что в дополнение к ласкам можно обнажить грудь, это точно понравится твоему избраннику."
+        Max_03 "{i}( О да, мам! Мне бы очень понравилось, если бы ты подрочила мне обнажив свою сочную и упругую грудь... ){/i}"
+
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-01'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        #sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
+        Lisa_02 "А, ну это я делать умею..."
+        Ann_15 "В каком это смысле умеешь?! Ты что, уже кому-то показывала свою грудь? Признавайся!"
+        Lisa_10 "Ой, нет, я имела ввиду, что одеваться-раздеваться я умею, каждый день это делаю."
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-02'+eric.dress)
+        $ renpy.show('Lisa sexed 02'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        Ann_08 "Смотри мне, Лиза! Вот... Такая мелочь, дочка, а мужчине приятно..."
+        Lisa_09 "Мам, твоя грудь - уж точно не мелочь! У меня поменьше будет..."
+        Ann_02 "Не переживай из-за этого, тебе ещё расти и расти."
+        Max_04 "{i}( Как по мне, а грудь у Лизы весьма симпатичная. Не сравнится с маминой, но они все хороши, по-своему... ){/i}"
+
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-02'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        #sexed-hj + sexed-hj-ann-02-eric-(02-02a) + sexed-hj-lisa-(01-01a)
+        Lisa_02 "Значит, достаточно просто обнажить грудь и всё?"
+        Ann_05 "Ну... можно ещё немного подразнить своего партнёра и поводить его членом по своей груди. Он уж точно от этого не откажется..."
+        Eric_05 "А если размеры груди позволяют, то некоторые могут стимулировать член и без рук, верно Ань?"
+        Ann_01 "Я думаю, сегодня Лиза и без этого увидела и узнала достаточно. Так что продолжим мы через неделю."
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-01'+eric.dress)
+        $ renpy.show('Lisa sexed 02'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        Lisa_01 "Конечно, мам. С интересом буду ждать следующего урока..."
+        Max_07 "{i}( С интересом... Да уж, а ещё меня называют в этом доме извращенцем! Хотя, если бы не Эрик... ){/i}"
+
+        jump .end
+
+    label .lesson_2:
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 01-02'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
+        Ann_02 "... В дополнение к тому, что ты уже видела, не стоит забывать и ещё кое о чём. Дорогой, встань. Так Лизе будет лучше видно..."
+        Eric_01 "Конечно, Ань, сейчас."
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-02'+eric.dress)
+        $ renpy.show('Lisa sexed 02'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        Ann_04 "Так вот, Лиза, во время стимуляции члена можно ещё ласкать яички. Делать это нужно нежно и аккуратно."
+        Lisa_10 "Как много всяких нюансов..."
+        Ann_05 "Как и в любом процессе. Если знаешь как и к чему прикасаться, то принесёшь массу удовольствия мужчине. Вот, посмотри..."
+
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-03'+eric.dress)
+        $ renpy.show('Lisa sexed 02'+lisa.dress)
+        show Max Lisa-sexed 01
+        #sexed-annroom-01 + sexed-annroom-02-ann-03-eric-(03-03a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        Lisa_02 "Значит, всё делать так же как и с членом?"
+        Ann_07 "Да, разве что член нужно держать крепко, а вот яичкам достаточно лёгких прикосновений, чтобы мужчине стало невероятно хорошо. Так ведь, дорогой?"
+        Eric_07 "О да! Невероятно хорошо - это твоя мама верно сказала... Кажется, она всего лишь легонько водит по ним своими пальчиками, но ощущения... непередаваемые..."
+
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-03'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        #sexed-hj + sexed-hj-ann-03-eric-(03-03a) + sexed-hj-lisa-(01-01a)
+        Max_10 "{i}( Эй! Я тоже хочу, чтобы мне яички ласкали! Судя по млеющей физиономии Эрика - это как минимум очень блаженно. ){/i}"
+        Lisa_03 "Круто! А как долго это всё надо делать?"
+        Ann_08 "А об этом мы поговорим уже на следующем уроке, дочка. Заодно и пробежимся ещё раз по всем моментам, которые я тебе показывала. Не хочется, чтобы я тут напрасно распиналась."
+        Lisa_10 "Ну хорошо. А я надеялась, что хоть здесь экзаменов не будет."
+        Ann_04 "Тут ничего сложного нет. Так что не волнуйся."
+        Max_07 "{i}( Экзамен... Тянет на какую-то ролевую игру. Хорошо хоть без костюмов! Хотя маму я бы не прочь увидеть в строгом, но сексуальном костюме... ){/i}"
+
+        jump .end
+
+    label .lesson_3:
+
+        #sexed-annroom-01 + sexed-annroom-01-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 01-01'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        Max_01 "{i}( И чему же мою сестрёнку будут сегодня учить... ){/i}"
+        Ann_02 "... Посмотрим, всё ли ты усвоила из наших уроков. Что и как мне нужно сделать, чтобы доставить мужчине удовольствие?"
+        Lisa_10 "Ой, мам, сейчас... Так... Нужно взять его член крепко, но нежно и ласкать, да?"
+
+        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        $ renpy.show('Eric sexed 01-02'+eric.dress)
+        Ann_04 "Верно, дорогая. Я снова покажу всё ещё раз, чтобы мы этот этап стимулирования мужского члена руками закончили и могли двигаться дальше."
+        Lisa_11 "А будет что-то ещё?! Ещё уроки?"
+        Ann_05 "Да, дочка. Это не единственный способ доставить мужчине удовольствие."
+        Lisa_02 "А как ещё?"
+
+        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        $ renpy.show('Eric sexed 02-01'+eric.dress)
+        Max_08 "{i}( Мама что, и отсасывать собирается Эрику при Лизе?! Да нет... Хотя, уже можно не удивляться чему-то такому... ){/i}"
+        Ann_12 "Лиза, не сегодня. Сегодня у нас что?"
+        Lisa_09 "Да, я поняла, закрепление пройденного материала."
+
+        #sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-01'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        Ann_07 "Вот и славно. Как я могу ещё больше возбудить мужчину во время стимуляции руками?"
+        Lisa_01 "Можно обнажить грудь! Я это помню..."
+
+        #sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-02'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        Ann_08 "Верно. Поводить его членом по своей груди тоже будет не лишним."
+        Lisa_10 "Ой, забыла. Точно, ты говорила о том, чтобы немного подразнить этим мужчину."
+
+        #sexed-hj + sexed-hj-ann-02-eric-(02-02a) + sexed-hj-lisa-(01-01a)
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-02'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        Ann_02 "Что ещё мы можем делать?"
+        Lisa_02 "Сейчас... Ах да, ласкать яички!"
+
+        #sexed-annroom-01 + sexed-annroom-02-ann-03-eric-(03-03a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        scene BG char Eric sexed-annroom-01
+        $ renpy.show('Eric sexed 02-03'+eric.dress)
+        $ renpy.show('Lisa sexed 01'+lisa.dress)
+        show Max Lisa-sexed 01
+        Ann_04 "И как надо это делать?"
+        Lisa_10 "Эээ... Нежно и аккуратно. Легонько массировать... Верно, мам?"
+
+        #sexed-hj + sexed-hj-ann-03-eric-(03-03a) + sexed-hj-lisa-(01-01a)
+        scene BG char Eric sexed-hj
+        $ renpy.show('Eric sexed hj-03'+eric.dress)
+        $ renpy.show('Lisa sexed hj-01'+lisa.dress)
+        Ann_05 "Верно, моя дорогая. Ты спрашивала в прошлый раз, как долго это нужно делать. Так вот, этой стимуляцией мужчину нужно довести до оргазма, когда он кончает от наслаждения."
+        Lisa_03 "О, это как?!"
+        Ann_07 "Уже скоро увидишь. Довести мужчину до оргазма не сложно, не то что нас, женщин. Эрик, сегодня нужно показать Лизе как мужчины кончают, так что не сдерживайся..."
+        Eric_04 "Да, я уже близок к этому... Давай, детка, поработай немного быстрее и жёстче. О да... То, что надо..."
+
+        #sexed-hj + sexed-hj-ann-04-eric-(04-04a) + sexed-hj-lisa-(01-01a)
+        $ renpy.show('Eric sexed hj-04'+eric.dress)
+        Max_10 "{i}( Эй, вы там на мою сестрёнку только не попадите! Ладно вы люди взрослые, но при Лизе то поаккуратнее будьте... ){/i}"
+        Ann_06 "Вот так, Лиза, мужчины и кончают... Лучше при себе иметь влажные салфетки, чтобы привести всё в порядок после этого."
+        Lisa_13 "Да уж, а никак нельзя избежать этого... беспорядка?"
+        Ann_14 "Ну, куда бы мужчина не кончил, всё равно придётся прибраться за собой. Можно ещё конечно... Может ей ещё рано знать о таком, дорогой?"
+        Eric_06 "О том, что можно принять всю сперму в рот и проглотить? Что ты, я думаю это самый подходящий момент!"
+
+        #sexed-talk + sexed-talk-ann-01-eric-(01-01a) + sexed-talk-lisa-(01-01a)
+        scene BG char Eric sexed-talk
+        $ renpy.show('Eric sexed talk-01'+eric.dress)
+        $ renpy.show('Lisa sexed talk-01'+lisa.dress)
+        Lisa_11 "В рот?! И проглотить! Ой, фу-фу-фу! Нет, уж лучше салфетки, потому что это даже звучит противно..."
+        Ann_01 "Пожалуй, я с тобой соглашусь, дочка. По крайней мере, пока в твоей жизни не появится особенный мужчина."
+        Lisa_13 "Всё равно, выглядит и звучит это всё ну так себе, если не сказать похуже!"
+        Eric_02 "Зато, теперь ты знаешь, как оно всё есть без прикрас. И теперь ты готова к дальнейшим урокам..."
+        Ann_13 "Эрик, давай не спешить, пусть у неё это хоть осядет в голове. И вообще, лучше всё ещё раз обсудить, прежде чем показывать ей такое."
+        Lisa_02 "А о чём таком вы говорите?"
+        Ann_12 "Давай не сейчас. Ступай к себе, на сегодня достаточно. Мы тебе скажем, если решим продолжить эти... уроки."
+        Lisa_09 "Мам, ты сказала, что мальчикам сложнее сделать нам приятно там внизу, да? А почему?"
+        Eric_09 "Хватит на сегодня вопросов. Давай беги к себе, Лиза. У взрослых ещё есть дела."
+        Lisa_01 "Хорошо. Ну, я побежала..."
+
+        jump .end
+
+    label .end:
+        $ current_room = house[0]
+        $ spent_time = 30
+        jump Waiting
+
+
+label first_jerk_balkon:
+    scene Eric jerk off 01
+    Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+    menu:
+        Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..."
+        "{i}уйти{/i}":
+            $ flags['eric.noticed'] = True
+    $ flags['eric.firstjerk'] = True
+    $ poss['discrediting'].OpenStage(0)
+    $ spent_time += 10
+    jump Waiting
+
+
+label first_jerk_yard:
+    #eric-voyeur-yard-01
+    scene Eric jerk off 00
+    menu:
+        Max_07 "Опа, Эрик! Что это он делает среди ночи у окна Алисы?!"
+        "{i}Осторожно подсмотреть за ним с балкона{/i}":
+            pass
+    #eric-voyeur-alice-01
+    scene Eric jerk off 01
+    Max_09 "Вот и он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+    menu:
+        Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..."
+        "{i}уйти{/i}":
+            $ flags['eric.noticed'] = True
+    $ flags['eric.firstjerk'] = True
+    $ poss['discrediting'].OpenStage(0)
+    $ spent_time += 10
+    jump Waiting
+
+
+label jerk_balkon:
+    #если решил подглядеть за Анной или Алисой через окно (Эрик около окна Алисы)
+    #eric-voyeur-alice-01
+    $ _ch1 = Chance(500)
+    if not alice.sleepnaked:
+        $ flags['eric.noticed'] = True
+        scene Eric jerk off 01
+        menu:
+            Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
+            "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags['eric.photo1'] < 1:  #если снимка у окна нет
+                jump jerk_photohant1
+            "{i}уйти{/i}":
+                jump Waiting
+    else:
+        # Дальний план + eric-voyeur-alice-02 (без спрайта подглядывающего Макса)
+        $ poss['discrediting'].OpenStage(2)
+        scene BG char Alice bed-night-01
+        $ renpy.show('Alice sleep-night '+pose3_2)
+        show Eric jerk off 02
+        menu:
+            Max_03 "Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!"
+            "{i}сбегать за фотоаппаратом и вернуться {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags['eric.photo2'] < 1:  #если снимка у окна нет
+                jump jerk_photohant2
+            "{i}уйти{/i}":
+                jump Waiting
+
+            # "{i}Подождать, пока Эрик ляжет спать, чтобы подставить его{/i}" if False:   # if #если есть снимок в комнате
+            #     # Дальний план + комментарий Макса (и все те же варианты, что и при обычном подглядывании через окно за Анной и Эриком)
+            #     menu:
+            #     "{i}идти к Алисе в комнату{/i}" (шанс/если заходил к голым Анне и Эрику в комнату, то шанс подставить Эрика нулевой)
+            #     (Всё может получиться!)
+            #     Ближний план с голой Алисой
+            #     Max_02 "Отлично, вроде Алиса крепко спит! Ну... ничего личного Алиса, но мне позарез нужно, чтобы Эрик вылетел из этого дома!"
+            #     дрочить на Алису
+            #     #...
+            #     тихо и осторожно уйти
+            #     (Слишком опасно!)
+            #     Ближний план с голой Алисой
+            #     Max_10 "Вот чёрт! Похоже, Алиса недостаточно крепко спит, чтобы я смог провернуть эту подставу... Может, в следующий раз повезёт больше..."
+            #     тихо и осторожно уйти
+            #     уйти
+
+
+label jerk_yard:
+    #eric-voyeur-yard-01
+    scene Eric jerk off 00
+    $ _ch1 = Chance(500)
+    $ flags['eric.noticed'] = True
+    menu:
+        Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
+        "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags['eric.photo1'] < 1:  #если снимка у окна нет
+            jump jerk_photohant1
+
+        "{i}уйти{/i}":
+            jump Waiting
+
+
+label jerk_photohant1:
+
+    if RandomChance(500):
+        # (успел)
+        #eric-voyeur-alice-01
+        scene Eric jerk off 01
+        menu:
+            Max_09 "Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!"
+            "{i}сфотографировать его{/i}":
+                pass
+        #eric-voyeur-alice-01 + photocamera
+        show FG photocamera
+        play sound "<from 1>audio/PhotoshootSound.ogg"
+        Max_02 "О да! Такой отвратительный снимок явно может стать полезным для меня. Конечно, если правильно его использовать..."
+        hide FG
+        menu:
+            Max_09 "А если попробовать загнать Эрика в комнату Алисы?! Тогда бы у меня появился шанс сделать уже более определённый снимок, где видно на кого дрочит Эрик. Только вот как..."
+            "{i}уйти{/i}":
+                $ poss['discrediting'].OpenStage(1)
+                $ flags['eric.photo1'] = 1
+    else:
+        # (не успел)
+        #все уже по своим местам и спят
+        scene BG char Alice bed-night-01
+        $ renpy.show('Alice sleep-night '+pose3_2)
+        $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
+        $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+        menu:
+            Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
+            "{i}уйти{/i}":
+                $ flags['eric.jerk'] = False
+
+    $ spent_time += 20
+    jump Waiting
+
+
+label jerk_photohant2:
+    # (шанс/если заходил к голой Анне в комнату, то шанс успеть нулевой)
+    if RandomChance(500) and prenoted < 2:
+        # (успел)
+        # Дальний план + eric-voyeur-alice-02 (без спрайта подглядывающего Макса) + photocamera
+        scene BG char Alice bed-night-01
+        $ renpy.show('Alice sleep-night '+pose3_2)
+        show Eric jerk off 02
+        show FG photocamera
+        play sound "<from 1>audio/PhotoshootSound.ogg"
+        menu:
+            Max_05 "Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!"
+            "{i}уйти{/i}":
+                $ flags['eric.photo2'] = 1
+                $ poss['discrediting'].OpenStage(3)
+    else:
+        # (не успел)
+        #все уже по своим местам и спят
+        scene BG char Alice bed-night-01
+        $ renpy.show('Alice sleep-night '+pose3_2)
+        $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+        menu:
+            Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
+            "{i}уйти{/i}":
+                $ flags['eric.jerk'] = False
+
+    $ spent_time += 20
+    jump Waiting

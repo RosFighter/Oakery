@@ -195,6 +195,8 @@ init python:
         sm = ['']
         if 'alice_sleeptoples' in persistent.mems_var:
             sm.extend(['sleep', 'not_sleep'])
+        if 'alice_sleepnaked' in persistent.mems_var:
+            sm.extend(['naked', 'not_naked'])
         my_scope = {
             'talk_var' : {'smoke': ''},
             'flags'    : {'smoke': renpy.random.choice(sm), 'noted': False},
@@ -352,8 +354,11 @@ init python:
         al = Profile("Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.plan_name = renpy.random.choice(['sun', 'resting'])
         if al.plan_name != 'sun':
-            al.dress = renpy.random.choice(['a', 'd']) if 'kira' in persistent.mems_var else 'a'
+            dress = ['a', 'd'] if 'kira' in persistent.mems_var else ['a']
             _tm = renpy.random.choice(['10:20', '21:00'])
+            if 'pajamas' in alice.gifts:
+                dress.append('b')
+            al.dress = renpy.random.choice(dress)
         else:
             al.dress = 'a'
             _tm = '15:30'

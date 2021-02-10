@@ -460,3 +460,128 @@ translate english strings:
     old "{i}достаточно{/i}"
     new "{i}That's enough{/i}"
 
+# TODO: Translation updated at 2021-01-23 16:42
+
+# game/events/alice_cam.rpy:630
+translate english cam0_alice_after_club_ce893c17:
+
+    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+    Max_09 "I can't see Alice through this camera... Maybe I should try another one?"
+
+# game/events/alice_cam.rpy:632
+translate english cam0_alice_after_club_d8fc5c8e:
+
+    # Max_09 "Алисы не видно через эту камеру..."
+    Max_09 "I can't see Alice through this camera..."
+
+# TODO: Translation updated at 2021-02-04 00:37
+
+# game/events/alice_cam.rpy:671
+translate english cam0_blog_with_Eric_1210ca0b:
+
+    # Max_09 "{i}( Эрик о чём-то разговаривает с Алисой. И развалился так, как будто это его комната... ){/i}"
+    Max_09 "{i}( Eric is talking to Alice about something, sprawled out like it's his room... ){/i}"
+
+# game/events/alice_cam.rpy:675
+translate english cam0_blog_with_Eric_47a71eff:
+
+    # Max_08 "{i}( Ого! Да она при нём, похоже, переодеваться вздумала! Что сказать, Эрик умеет добиваться своего... ){/i}"
+    Max_08 "{i}( Wow! She looks like she's changing clothes in front of him! What can I say, Eric knows how to get what he wants... ){/i}"
+
+# game/events/alice_cam.rpy:680
+translate english cam0_blog_with_Eric_9a973c1d:
+
+    # Max_01 "{i}( Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! ){/i}"
+    Max_01 "{i}( The naked and beautiful Alice! Told Eric not to peek, except he's sure to be peeping through his fingers... I certainly would have ventured that close to peeking at a naked Alice! ){/i}"
+
+# game/events/alice_cam.rpy:684
+translate english cam0_blog_with_Eric_18d8cc91:
+
+    # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
+    Max_07 "{i}( Ugh... Alice takes her time hiding her luscious boobs under her bodysuit! Hmmm, maybe she noticed that Eric is peeping anyway and is teasing him that way! She clearly has no idea that she's also teasing me... ){/i}"
+
+# game/events/alice_cam.rpy:689
+translate english cam0_blog_with_Eric_913dbbe7:
+
+    # Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь... ){/i}"
+    Max_09 "{i}( I see what's going on... Alice thinks she can use Eric, but is playing right into his hands! Oh, Alice... I hope you know what you're doing... ){/i}"
+
+# game/events/alice_cam.rpy:716
+translate english cam0_blog_with_Eric_340b426d:
+
+    # Max_08 "{i}( Эрик сегодня в комнате Алисы. Похоже, пытается помогать с блогом... Но в действительности же, чтобы поглазеть на Алису в белье, по себе знаю... ){/i}"
+    Max_08 "{i}( Eric is in Alice's room today. Looks like he's trying to help with her blog... But really, he just wants to get a good look at her in her underwear, I would know... ){/i}"
+# TODO: Translation updated at 2021-02-10 16:35
+
+# game/events/alice_cam.rpy:52
+translate english cam0_alice_sleep_night_64517693:
+
+    # Max_09 "Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+    Max_09 ""
+
+# game/events/alice_cam.rpy:54
+translate english cam0_alice_sleep_night_22b77a79:
+
+    # Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+    Max_09 ""
+
+# game/events/alice_cam.rpy:56
+translate english cam0_alice_sleep_night_ba6907da:
+
+    # Max_03 "Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!" nointeract
+    Max_03 "" nointeract
+
+# game/events/alice_cam.rpy:70
+translate english cam0_alice_sleep_night_5b3adf24:
+
+    # Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
+    Max_03 ""
+
+# game/events/alice_cam.rpy:72
+translate english cam0_alice_sleep_night_e319aa8d:
+
+    # Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..." nointeract
+    Max_03 "" nointeract
+
+# game/events/alice_cam.rpy:81
+translate english cam0_alice_sleep_night_badc9d8f:
+
+    # Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
+    Max_09 ""
+
+# game/events/alice_cam.rpy:83
+translate english cam0_alice_sleep_night_1d708372:
+
+    # Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..." nointeract
+    Max_09 "" nointeract
+
+# game/events/alice_cam.rpy:95
+translate english cam0_alice_sleep_night_902c46ec:
+
+    # Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
+    Max_04 ""
+
+# game/events/alice_cam.rpy:112
+translate english cam0_alice_sleep_morning_902c46ec:
+
+    # Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
+    Max_04 ""
+
+translate english strings:
+
+    # game/events/alice_cam.rpy:56
+    old "{i}Конечно{/i}"
+    new ""
+
+    # game/events/alice_cam.rpy:72
+    old "{i}Взять фотоаппарат и пойти к окну Алисы {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
+    new ""
+
+    # game/events/alice_cam.rpy:72
+    old "{i}Да и хрен с ним, пусть дрочит{/i}"
+    new ""
+
+    # game/events/alice_cam.rpy:83
+    old "{i}Взять фотоаппарат и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
+    new ""
+

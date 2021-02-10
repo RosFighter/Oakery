@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.05.0.07"
+define config.version = "0.06.0.00"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -46,7 +46,7 @@ define build.name = "BigBrother_AnotherStory"
 ## настройках, которые игрок может настраивать по умолчанию. Изменив один из
 ## параметров на False, скроется соответствующий микшер.
 
-define config.has_sound = False
+define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
 
@@ -62,8 +62,10 @@ define config.has_voice = False
 ## проигрываться в главном меню. Этот файл продолжит проигрываться во время
 ## игры, если не будет остановлен, или не начнёт проигрываться другой аудиофайл.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/main.ogg"
 
+define config.default_music_volume = 0.5
+define config.default_sfx_volume = 0.5
 
 ## Переходы ####################################################################
 ##
@@ -160,6 +162,17 @@ init python:
 ## Иконка, показываемая на панели задач или на dock.
 
 define config.window_icon = 'gui/window_icon.png'
+
+
+## Другие ######################################################################
+##
+
+define config.minimum_presplash_time = 1.0
+define config.mouse_hide_time = 10
+default preferences.desktop_rollback_side = "disable"
+
+init python:
+    config.default_fullscreen = True
 
 
 ## Настройка Дистрибутива ######################################################

@@ -399,12 +399,7 @@ label ann_dressed_work:
         $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
         $ clothes[ann].sleep.cur = 1
         $ clothes[ann].sleep.rand = True
-        if ann.inferic is not None:
-            $ ann.inferic = clip(ann.inferic-50.0, 0.0, 100.0)
-        if ann.infmax is not None:
-            $ ann.infmax = clip(ann.infmax+20.0, 0.0, 100.0)
-        else:
-            $ ann.infmax = 20.0
+        $ infl[ann].add_m(40, True)
         jump .end
 
     label .end:
@@ -564,12 +559,13 @@ label ann_dressed_shop:
         $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
         $ clothes[ann].sleep.cur = 1
         $ clothes[ann].sleep.rand = True
-        if ann.inferic is not None:
-            $ ann.inferic = clip(ann.inferic-50.0, 0.0, 100.0)
-        if ann.infmax is not None:
-            $ ann.infmax = clip(ann.infmax+20.0, 0.0, 100.0)
-        else:
-            $ ann.infmax = 20.0
+        # if ann.inferic is not None:
+        #     $ ann.inferic = clip(ann.inferic-50.0, 0.0, 100.0)
+        # if ann.infmax is not None:
+        #     $ ann.infmax = clip(ann.infmax+20.0, 0.0, 100.0)
+        # else:
+        #     $ ann.infmax = 20.0
+        $ infl[ann].add_m(40, True)
         jump .end
 
     label .end:

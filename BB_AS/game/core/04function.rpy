@@ -1,4 +1,5 @@
 init python:
+    import collections
     config.layers.insert(1, 'wm')
 
     def GetWeekday(day):  # возвращает номер дня недели
@@ -105,6 +106,10 @@ init python:
                     room.cur_bg = 'location '+str(loc)+' '+room.id+' night-'+random_loc_ab
 
         for char in chars:
+            if all([char=='eric', flags['eric.noticed'], flags['eric.jerk'], '02:00'<=tm<'02:30']):
+                # если Эрик дрочит на Алису и замечен, перемещаем его иконку в комнату Алисы без расиписания
+                house[1].cur_char.append('eric')
+                continue
 
             plan_char = chars[char].get_plan()
             if plan_char is not None:
@@ -524,8 +529,6 @@ init python:
             cur_plan = chars[current_room.cur_char[0]].get_plan()
             # если при данном занятии разрешен диалог и есть тема для разговора
             AvailableActions['talk'].enabled = (cur_plan.enabletalk and len(TalkMenuItems()) > 0)
-            if all([current_room.cur_char[0]=='alice', alice.plan_name=='blog', get_format_blog()]):
-                AvailableActions['talk'].enabled = False
         else:
             AvailableActions['talk'].enabled = False
 
@@ -707,6 +710,9 @@ init python:
                 if 'smoke' in flags and flags['smoke'] == 'sleep':
                     dress += 'a'
                     inf = {'a':'02ga', 'b':'02ja'}[clothes[alice].sleep.GetCur().suf]
+                elif 'smoke' in flags and flags['smoke'] == 'naked':
+                    dress = ''
+                    inf = '00a'
             elif name in ['shower', 'bath']:
                 inf = '04aa'
             elif name in ['read', 'breakfast', 'dinner', 'dishes']:
@@ -716,13 +722,18 @@ init python:
                 if not ('09:00' <= tm < '20:00'):
                     inf += 'a'
             elif name == 'blog':
-                if get_format_blog():
+                if (all(['black_linderie' in alice.gifts, GetWeekday(day) in [1, 4], poss['blog'].stn>4, dcv['alice.secret'].done])
+                    or (GetWeekday(day)==3, dcv['eric.lingerie'].enabled)):
                     # блог в нижнем белье
                     global cur_blog_lingerie, blog_lingerie
                     if not cur_blog_lingerie:
                         cur_blog_lingerie = blog_lingerie.pop(0)
                         if len(blog_lingerie)==0:
                             blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
+                            if 'sexbody1' in alice.gifts:
+                                blog_lingerie.extend(['c', 'c', 'c'])
+                            if 'sexbody2' in alice.gifts:
+                                blog_lingerie.extend(['d', 'd', 'd'])
                             renpy.random.shuffle(blog_lingerie)
                     # inf = {'a':'02', 'b':'02ia'}[cur_blog_lingerie]
                     dress = cur_blog_lingerie
@@ -754,6 +765,9 @@ init python:
                 dress = clothes[ann].sleep.GetCur().suf
                 inf   = clothes[ann].sleep.GetCur().info
                 clot  = 'sleep'
+            elif name == 'sleep2':
+                dress == 'n'
+                inf = '00'
             elif name in ['shower', 'bath', 'shower2']:
                 inf = '04a'
             elif name == 'yoga':
@@ -822,7 +836,9 @@ init python:
             if name in ['swim', 'sun']:
                 inf = '03w' if pose3_4 == '03' and name == 'swim' else '03'
             elif name == 'sleep':
-                inf = '02'
+                if flags['strip.show'] and GetWeekday(day)==6:
+                    dress = 'b'
+                inf = '00' if flags['strip.show'] and GetWeekday(day)==6 else '02'
             elif name == 'night_tv':
                 inf = '02'
             elif name == 'studio':
@@ -936,7 +952,7 @@ init python:
             }.get(chars[char].releric, None)
 
 
-    def MoodNeutralize(): # с течением времени настроение стрепится к нейтральному
+    def MoodNeutralize(): # с течением времени настроение стремится к нейтральному
         cycles = spent_time / 10 # расчет выполняется каждые 10 минут
         for char in chars:
             for i in range(cycles):
@@ -966,60 +982,69 @@ init python:
     def seat_Dinner(): # рассаживает семью за ужином
         renpy.scene()
         renpy.show('BG dinner 00') # общий фон
-        if any([day == 4, day == 11, ('eric' in chars and eric.plan_name == 'dinner'),
-                                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6])]):
+        if any([
+                day == 4,
+                day == 11,
+                ('eric' in chars and eric.plan_name == 'dinner'),
+                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]),
+            ]):
             renpy.show('Eric dinner 0'+renpy.random.choice(['1', '2', '3'])+eric.dress)
             renpy.show('Ann dinner 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         else:
             renpy.show('Ann dinner 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+
         renpy.show('Alice dinner 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
         renpy.show('Lisa dinner 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
-        if any([day == 4, day == 11, ('eric' in chars and eric.plan_name == 'dinner'),
-                                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6])]):
+
+        if any([
+                day == 4,
+                day == 11,
+                ('eric' in chars and eric.plan_name == 'dinner'),
+                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6])
+            ]):
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
         else:
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])) # стол
+
         renpy.show('Max dinner 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
 
 
     def GetLisaPunChance():  # вероятность наказания Лизы
         if len(punlisa) == 0 or punlisa[0][0] > 2:
-            pun_chance = 0  # Макс помогал правильно
+            return 0  # Макс помогал правильно
+
         elif punlisa[0][0] == 1:
-            pun_chance = 1000  # Макс сделал ошибку
+            return 1000  # Макс сделал ошибку
+
+        elif not dcv['lisa.punpause'].done:
+            return 0 # не прошёл откат рандомных наказаний
+
         elif poss['sg'].stn == 2 and talk_var['truehelp']>=6:  # Макс на "хорошей" ветке и помог 6 и более раз
-            grow = 100
-            mind = 250
-            if punlisa[0][0] == 2:  # если Макс просил об услуге неудачно, базовый шанс двойки 30% (сердитая Лиза менее внимательна, чем обычно)
-                pun_chance = 300.0
+
+            s = 0
+
+            for d in range(0, len(punlisa)):
+                if not punlisa[d][0]:
+                    s += 1
+
+            if s > 5:
+                return 1000
             else:
-                pun_chance = 100.0
-            for d in range(1, len(punlisa)):
-                if punlisa[d][3]:
-                    pun_chance -= mind
-                    mind = 250 # сбрасываем здравомыслие на исходную
-                if punlisa[d][0] > 2:
-                    pun_chance -= 300  # Макс помог Лизе, шанс наказания уменьшается на 15%
-                    grow = 100
-                    if d < 7:
-                        break
-                elif not punlisa[d][0]:
-                    pun_chance += grow
-                grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
-                mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше усердие Лизы
+                return 300
+
         else:  # Макс не помогал с домашкой накануне
             help_count = 0
             grow = 50
             mind = 250
-            if punlisa[0][0] == 2:  # если Макс просил об услуге неудачно, базовый шанс двойки 30% (сердитая Лиза менее внимательна, чем обычно)
-                pun_chance = 300.0
-            else:
-                pun_chance = 50.0
+
+            # если Макс просил об услуге неудачно, базовый шанс двойки 30% (сердитая Лиза менее внимательна, чем обычно)
+            pun_chance = 300.0 if punlisa[0][0] == 2 else 50.0
 
             for d in range(1, len(punlisa)):
                 if punlisa[d][3]:
                     pun_chance -= mind
                     mind = 250 # сбрасываем здравомыслие на исходную
+
                 if punlisa[d][0] > 2:
                     pun_chance -= 150  # Макс помог Лизе, шанс наказания уменьшается на 15%
                     grow = 50
@@ -1027,68 +1052,82 @@ init python:
                         help_count += 1
                         if help_count > 1:  # если за неделю Макс помог дважды, шанс наказания мизерный
                             break           # прерываем цикл расчета
+
                 elif not punlisa[d][0]:
                     pun_chance += grow
+
                 grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше усердие Лизы
+
         return clip(pun_chance, 0, 900)
 
 
     def GetAlicePunChance():  # вероятность наказания Алисы
         if len(punalice) == 0 or not dcv['smoke'].done:  # Алиса не курила
-            pun_chance = 0
+            return 0
+
         elif punalice[0][1]:   # Макс подставил Алису
-            pun_chance = 1000
+            return 1000
+
+        elif not dcv['alice.punpause'].done:
+            return 0 # не прошёл откат рандомных наказаний
+
         else:
             finded = 0
             help_count = 0
             grow = 50
             mind = 250
-            if punalice[0][0] == 2:  # если Макс просил об услуге неудачно, базовый шанс плохо спрятать сигареты 30% (сердитая Алиса менее внимательна, чем обычно)
-                pun_chance = 150.0
-            else:
-                pun_chance = 50.0
+
+            # если Макс просил об услуге неудачно, базовый шанс плохо спрятать сигареты 30% (сердитая Алиса менее внимательна, чем обычно)
+            pun_chance = 150.0 if punalice[0][0] == 2 else 50.0
 
             for d in range(1, len(punalice)):
                 if d < 6 and (punalice[d][3] or punalice[d][2]): # если Алису наказывали за последние 5 дней, шанс нахождения сигарет нулевой
-                    pun_chance = 0
-                    break
+                    return 0
+
                 if punalice[d][3]:   # Ализа понесла наказание
                     finded += 1
                     pun_chance -= mind  # шанс наказания снижается на уровень здравомыслия
                     mind = 250          # сбрасываем здравомыслие на исходную
+
                 elif punalice[d][2]:  # Макс пытался заступиться за Алису перед наказанием
                     finded += 1
                     pun_chance += grow // 3       # шанс невнимательности меньше
                     mind = clip(mind+100, 0, 250) # плюс прирост здравомыслия
 
-                elif punalice[d][0] in [4,5,6, 10]: # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
+                elif punalice[d][0] in [4,5,6,7,8, 10]: # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
                     pun_chance -= 150
                     grow = 50
                     if d < 7:
                         help_count += 1
                         if help_count > 1:  # если за неделю Макс дважды успешно шантажировал, шанс наказания мизерный
                             break           # прерываем цикл расчета
+
                 else:   # Макс не шантажировал Алису или шантажировал неудачно
                     pun_chance += grow
 
-                # if d < 7 and finded > 1:  # если за последнюю неделю сигареты были найдены уже дважды
-                #     pun_chance -= 250
-                #     break
+
                 grow = grow * 1.1   # чем больше дней прошло со дня, когда Макс чего-то требовал, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
+        if finded:
+            pun_chance /= finded*2
         return clip(pun_chance, 0, 900)
 
 
     def GetDisobedience():  # вероятность ослушания Алисы
         chance = 90
         rise = 90
+        if not dcv['alice.prudence'].done:
+            # в дни благоразумия Алиса не нарушает уговор
+            return 0
+
         for d in range(0, len(punalice)-1):
-            if punalice[d][0] in [4,5,6, 10]:
+            if punalice[d][0] in [4,5,6,7,8, 10]:
                 break # посчет идет только до ближайшего требования Макса
             else:
                 chance += rise
                 rise *= 1.1
+
         return clip(chance, 0, 1000)
 
 
@@ -1115,34 +1154,34 @@ init python:
         if all((not renpy.get_screen('notify'), notify_list)):
             renpy.notify(notify_list.pop(0));
 
-    # функция для смены курсора
-    # курсоры должны лежать в папке images/interface/cursors
-    # формат имен фалов для курсоров:
-    # 'images/interface/cursors/ИмяКурсора.png'
-    def cursor(name = None):
-        config.mouse = None
-        if renpy.game.preferences.physical_size[1] < 900:
-            if name == 'find':
-                config.mouse = {'default' : [('images/interface/cursors/find-64.webp', 27, 27)]}
-            elif name == 'talk':
-                config.mouse = {'default' : [('images/interface/cursors/talk-64.webp', 11, 50)]}
-            elif name == 'palms':
-                config.mouse = {'default' : [('images/interface/cursors/palms-64.webp', 37, 32)]}
-            elif name:
-                config.mouse = {'default' : [('images/interface/cursors/' + name + '-64.webp', 0, 0)]}
-        else:
-            if name == 'find':
-                config.mouse = {'default' : [('images/interface/cursors/find-80.webp', 33, 33)]}
-            elif name == 'talk':
-                config.mouse = {'default' : [('images/interface/cursors/talk-80.webp', 14, 61)]}
-            elif name == 'palms':
-                config.mouse = {'default' : [('images/interface/cursors/palms-80.webp', 46, 40)]}
-            elif name:
-                config.mouse = {'default' : [('images/interface/cursors/' + name + '-80.webp', 0, 0)]}
-    # превращаем функцию в action,
-    # чтобы можно было привязать, например, к нажатию кнопок:
-    # action Cursor('talk')
-    Cursor = renpy.curry(cursor)
+    # # функция для смены курсора
+    # # курсоры должны лежать в папке images/interface/cursors
+    # # формат имен фалов для курсоров:
+    # # 'images/interface/cursors/ИмяКурсора.png'
+    # def cursor(name = None):
+    #     config.mouse = None
+    #     if renpy.game.preferences.physical_size[1] < 900:
+    #         if name == 'find':
+    #             config.mouse = {'default' : [('images/interface/cursors/find-64.webp', 27, 27)]}
+    #         elif name == 'talk':
+    #             config.mouse = {'default' : [('images/interface/cursors/talk-64.webp', 11, 50)]}
+    #         elif name == 'palms':
+    #             config.mouse = {'default' : [('images/interface/cursors/palms-64.webp', 37, 32)]}
+    #         elif name:
+    #             config.mouse = {'default' : [('images/interface/cursors/' + name + '-64.webp', 0, 0)]}
+    #     else:
+    #         if name == 'find':
+    #             config.mouse = {'default' : [('images/interface/cursors/find-80.webp', 33, 33)]}
+    #         elif name == 'talk':
+    #             config.mouse = {'default' : [('images/interface/cursors/talk-80.webp', 14, 61)]}
+    #         elif name == 'palms':
+    #             config.mouse = {'default' : [('images/interface/cursors/palms-80.webp', 46, 40)]}
+    #         elif name:
+    #             config.mouse = {'default' : [('images/interface/cursors/' + name + '-80.webp', 0, 0)]}
+    # # превращаем функцию в action,
+    # # чтобы можно было привязать, например, к нажатию кнопок:
+    # # action Cursor('talk')
+    # Cursor = renpy.curry(cursor)
 
     def have_dialog():  # возвращает признак наличия диалога для первого персонажа в комнате
         # cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
@@ -1335,18 +1374,107 @@ init python:
         return tod
 
 
-    def get_format_blog():
-        if all(['black_linderie' in alice.gifts, GetWeekday(day) in [1, 4], poss['blog'].stn>4, dcv['alice.secret'].done]):
-            return 1  # блог в нижнем белье
-        else:
-            return 0  # обычный блог
-
-
     def append_photo(album, length):
-        rez=[]
+        global expected_photo
         if album not in persistent.photos:
             # если коллекция отсутствует, ее нужно создать
             persistent.photos[album] = [False for x in range(length)]
 
         for x in expected_photo:
             persistent.photos[album][int(x)-1] = x
+
+        expected_photo.clear()
+
+
+    def ready_for_lesson0():
+        mn = day
+        while GetWeekday(mn)!=1:
+            mn += 1
+        dcv['ae_ed_lisa'].enabled = True
+        dcv['ae_ed_lisa'].stage = 1
+        plan = eric.get_plan(mn, '22:00')
+        new_plan = Schedule((1,), '22:00', '22:29', plan.name, plan.desc, plan.loc, plan.room, plan.label,
+                            plan.krat, plan.shift, plan.weekstart, "talk_var['ae_lisa_number']>=4",
+                            plan.enabletalk, plan.talklabel, plan.glow)
+        eric.add_schedule(
+                new_plan,
+                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="talk_var['ae_lisa_number']<0", enabletalk=False, glow=120),
+                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу', 'house', 2, 'sexed_lisa', variable="0<=talk_var['ae_lisa_number']<4", enabletalk=False, glow=180),
+            )
+        plan = lisa.get_plan(mn, '22:00')
+        new_plan = Schedule((1,), '22:00', '22:29', plan.name, plan.desc, plan.loc, plan.room, plan.label,
+                            plan.krat, plan.shift, plan.weekstart, "talk_var['ae_lisa_number']>=4",
+                            plan.enabletalk, plan.talklabel, plan.glow)
+        lisa.add_schedule(
+                new_plan,
+                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="talk_var['ae_lisa_number']<0", enabletalk=False, glow=120),
+                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу', 'house', 2, 'sexed_lisa', variable="0<=talk_var['ae_lisa_number']<4", enabletalk=False, glow=180),
+            )
+        plan = ann.get_plan(mn, '22:00')
+        new_plan = Schedule((1,), '22:00', '22:29', plan.name, plan.desc, plan.loc, plan.room, plan.label,
+                            plan.krat, plan.shift, plan.weekstart, "talk_var['ae_lisa_number']>=4",
+                            plan.enabletalk, plan.talklabel, plan.glow)
+        ann.add_schedule(
+                new_plan,
+                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="talk_var['ae_lisa_number']<0", enabletalk=False, glow=120),
+                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу', 'house', 2, 'sexed_lisa', variable="0<=talk_var['ae_lisa_number']<4", enabletalk=False, glow=180),
+            )
+
+
+    def ready_for_blog0():
+        eric.add_schedule(Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150))
+        alice.add_schedule(Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150))
+
+        dcv['eric.lingerie'].set_lost(6)
+
+
+    def music_starter():
+        if renpy.music.get_playing():
+            return
+
+        if '06:00' <= tm < '11:00':
+            m_name = "morning1" if renpy.random.randint(1, 2) < 2 else "morning2"
+        elif '11:00' <= tm < '18:00':
+            m_name = "day1" if renpy.random.randint(1, 2) < 2 else "day2"
+        elif '18:00' <= tm < '22:00':
+            m_name = "evening1" if renpy.random.randint(1, 2) < 2 else "evening2"
+        else:
+            m_name = "night1" if renpy.random.randint(1, 2) < 2 else "night2"
+
+        renpy.music.play("audio/"+m_name+'.ogg', fadeout=0.5, fadein=1.0, if_changed=True)
+
+
+    def Eric_at_dinner():
+        rez = False
+        if any([day==4, day==11]):
+            rez = True
+        elif all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6]):
+            rez = True
+        elif all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)]):
+            rez = True
+        elif all([GetWeekday(day)==6, talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done]):
+            rez = True
+        elif all([GetWeekday(day)==6, talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)]):
+            rez = True
+        elif all([GetWeekday(day)==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done]):
+            rez = True
+
+        return rez
+
+
+    def friday_without_a_club():
+        rez = False
+        if all([items['sexbody2'].have, dcv['eric.lingerie'].stage<5]):
+            rez = True
+        return rez
+
+
+    def Eric_caught_Kira():
+        eric.add_schedule(
+                Schedule((2, 5), '2:00', '2:29', 'fuck',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable=="not flags['eric.jerk']", enabletalk=False, glow=140),
+                Schedule((2, 5), '2:00', '2:59', 'sleep2', 'спит с Анной', 'house', 2, 'eric_ann_sleep', variable=="flags['eric.jerk']", enabletalk=False, glow=110),
+            )
+        kira.add_schedule(
+                Schedule((2, 5), '2:00', '2:29', 'bath',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable=="not flags['eric.jerk']", enabletalk=False, glow=140),
+                Schedule((2, 5), '2:00', '2:29', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', variable=="flags['eric.jerk']", enabletalk=False, glow=125),
+            )

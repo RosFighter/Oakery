@@ -408,3 +408,70 @@ label cam1_kira_night_swim:
         $ cam_flag.append('ann_swim1')
         Max_05 "Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!"
     return
+
+label cam0_return_from_club:
+    show FG cam-shum-noact at laptop_screen
+    if 'kira_return' not in cam_flag:
+        $ cam_flag.append('kira_return')
+        if len(house[6].cams)>1:
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+        else:
+            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы бассейн..."
+    return
+
+label cam1_return_from_club:
+    show Kira cams after-club 01 at laptop_screen
+    show FG cam-shum-noact at laptop_screen
+    menu:
+        Max_01 "{i}( Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их... ){/i}"
+        "{i}встретить их{/i}":
+            $ at_comp = False
+            jump return_from_club
+
+        "{i}отправиться спать{/i}":
+            Max_00 "Поздно уже, пойду лучше спать..."
+            jump Sleep
+
+label cam0_kira_bath_with_eric:
+    #cam-bath-eric&kira-hj01 или cam-bath-eric&kira-lick01
+    if renpy.random.randint(1, 2):
+        show Eric cams bath-kira hj01 at laptop_screen
+    else:
+        show Eric cams bath-kira lick01 at laptop_screen
+    show FG cam-shum-act at laptop_screen
+    if talk_var['fight_for_Kira'] > 2:
+        Max_08 "Бедной тёте Кире приходится ублажать Эрика, чтобы никто о нас с ней не узнал..."   #если Макс не сдавал Киру
+    else:
+        Max_01 "Повезло Эрику... Тётя Кира умеет ублажать мужчин и ещё как!"   #если Макс сдал Киру
+
+    #cam-bath-eric&kira-bj01 или cam-bath-eric&kira-bj02
+    if renpy.random.randint(1, 2):
+        show Eric cams bath-kira bj01 at laptop_screen
+    else:
+        show Eric cams bath-kira bj02 at laptop_screen
+    if talk_var['fight_for_Kira'] > 2:
+        Max_10 "Благо у Эрика такой член, с которым Кире не составит труда справиться! Хотя, его выдержке можно позавидовать..."   #если Макс не сдавал Киру
+    else:
+        Max_07 "Со стороны кажется, что для Киры это самое обыденное дело! Она так легко управляется с членом Эрика, хотя это и не сложно, после моего-то..."   #если Макс сдал Киру
+
+    #cam-bath-eric&kira-cum01 или cam-bath-eric&kira-cum02
+    if renpy.random.randint(1, 2):
+        show Eric cams bath-kira cum01 at laptop_screen
+    else:
+        show Eric cams bath-kira cum02 at laptop_screen
+    if talk_var['fight_for_Kira'] > 2:
+        Max_09 "Всё! На этот раз Кира отмучалась... Но от Эрика надо скорее избавляться."   #если Макс не сдавал Киру
+    else:
+        Max_02 "Вот и всё! С Кирой долго не продержишься... Особенно если она нацелена доставить своим языком максимум удовольствия."   #если Макс сдал Киру
+
+    if 'kira_bath0_st0' not in cam_flag:
+        $ cam_flag.append('kira_bath0_st0')
+    $ spent_time = max((30 - int(tm[-2:])), 20)
+    jump Waiting
+
+label cam1_kira_bath_with_eric:
+    show FG cam-shum-noact at laptop_screen
+    if 'kira_bath1' not in cam_flag:
+        $ cam_flag.append('kira_bath1')
+        Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
+    return

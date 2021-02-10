@@ -120,7 +120,7 @@ translate english strings:
 
     # game/core/02init.rpy:74
     old "В процессе игры, во время диалогов и других действий, вы можете открыть для себя новые \"возможности\". Их механика немного похожа на \"задания\" или \"квесты\" из других игр, но есть некоторые отличия.\n\n\n\"Возможности\" могут открывать доступ к скрытым событиям или покупкам в интернет-магазине, к новым опциям в ноутбуке или действиям в некоторых комнатах. Читайте внимательно описание каждой \"возможности\" и вы ничего не упустите!"
-    new "During in-game dialogues and other actions, you may be presented with \"opportunities\". These are comparable to quests to in other games, with a few differences. \n\n\n\"Opportunities\" can open hidden actions, items in the online shop, options on your laptop and actions in some rooms. Read their description carefully and you won't miss anything!"
+    new "During in-game dialogues and other actions, you may be presented with \"opportunities\". These are comparable to quests in other games, with a few differences. \n\n\n\"Opportunities\" can open hidden actions, items in the online shop, options on your laptop and actions in some rooms. Read their description carefully and you won't miss anything!"
 
     # game/core/02init.rpy:74
     old "Настроение"
@@ -148,7 +148,7 @@ translate english strings:
 
     # game/core/02init.rpy:82
     old "Насчёт твоего блога... А если не особо раздеваться?"
-    new "About your blog...maybe you don't have to undress completely?"
+    new "About your blog... Maybe you don't have to undress completely?"
 
     # game/core/02init.rpy:82
     old "О школе..."
@@ -398,3 +398,65 @@ translate english strings:
     old "Прикупил для тебя немного сладенького!"
     new "I bought you some sweets!"
 
+# TODO: Translation updated at 2021-01-02 23:12
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Рассказывай, что делали?"
+    new "Tell me, what did you do?"
+
+    # game/core/02init.rpy:100
+    old "Ну так и чему же тебя учили?"
+    new "So what did they teach you?"
+
+# TODO: Translation updated at 2021-01-09 22:50
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Что новенького было на уроке?"
+    new "What have you been learning from your lessons?"
+
+    # game/core/02init.rpy:100
+    old "Что нового мама с Эриком тебе рассказали?"
+    new "Learn anything new from Mom and Eric?"
+
+    # game/core/02init.rpy:100
+    old "Что нового узнала на уроке у мамы и Эрика?"
+    new "What did you learn from Mom and Eric?"
+
+# TODO: Translation updated at 2021-01-26 21:47
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "{i}урок поцелуев{/i}"
+    new "{i}Kissing Lesson{/i}"
+
+    # game/core/02init.rpy:100
+    old "Так когда будем снова фотографироваться, тётя Кира?"
+    new "So when are we doing another photo-shoot?"
+# TODO: Translation updated at 2021-02-04 00:37
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Я слышал, Эрик тебе новое бельё собирается купить?"
+    new "I hear Eric's going to buy you some new underwear?"
+
+    # game/core/02init.rpy:100
+    old "Покажешь боди, которое тебе Эрик купит?"
+    new "Will you show me the bodysuit that Eric will buy you?"
+
+# TODO: Translation updated at 2021-02-09 00:04
+
+translate english strings:
+
+    # game/core/02init.rpy:100
+    old "Хочу рассказать тебе кое-что о Кире..."
+    new "I want to tell you something about Kira..."
+
+    # game/core/02init.rpy:100
+    old "Я хотел поговорить о Кире..."
+    new "I wanted to talk about Kira..."

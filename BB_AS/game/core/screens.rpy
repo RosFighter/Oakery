@@ -892,9 +892,9 @@ screen room_navigation():
     else:
         key 'l' action Language(None)
         key 'д' action Language(None)
-    key 'mouseup_3' action [Cursor(None), ShowMenu('save')]
-    key 'K_ESCAPE' action [Cursor(None), ShowMenu('save')]
-    key 'K_MENU' action [Cursor(None), ShowMenu('save')]
+    key 'mouseup_3' action ShowMenu('save')
+    key 'K_ESCAPE' action ShowMenu('save')
+    key 'K_MENU' action ShowMenu('save')
 
     $ renpy.block_rollback()
 
@@ -908,14 +908,13 @@ screen room_navigation():
         imagebutton idle persone_button1:
             focus_mask True
             if have_dialog():
-                hovered Cursor('talk')
-                unhovered Cursor(None)
-                action [Cursor(None), Jump('StartDialog')]
+                mouse 'talk'
+                action Jump('StartDialog')
             else:
                 action NullAction()
 
     $ wait = 60 - int(tm[-2:])
-    key 'K_SPACE' action [Cursor(None), Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')]
+    key 'K_SPACE' action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')]
     hbox: # Кнопки комнат текущей локации
         yalign 0.99
         if current_room == current_location[0] and len(current_room.cur_char) > 2:
@@ -969,7 +968,7 @@ screen room_navigation():
                                     else:
                                         imagebutton ypos -120 xalign 0.5 idle chars[current_room.cur_char[0]].pref+' icon':
                                                     focus_mask True action NullAction() at middle_face
-                                    if current_room.cur_char[0] == 'alice' and (tm < '09:00' or tm >= '20:00'):
+                                    if current_room.cur_char[1] == 'alice' and (tm < '09:00' or tm >= '20:00'):
                                         imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[1]].pref+' icon a':
                                                     focus_mask True action NullAction() at middle_face
                                     else:
@@ -982,7 +981,7 @@ screen room_navigation():
                                     else:
                                         imagebutton ypos -100 xpos -63 idle chars[current_room.cur_char[0]].pref+' icon':
                                                     focus_mask True action NullAction() at middle_face
-                                    if current_room.cur_char[0] == 'alice' and (tm < '09:00' or tm >= '20:00'):
+                                    if current_room.cur_char[1] == 'alice' and (tm < '09:00' or tm >= '20:00'):
                                         imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[1]].pref+' icon a':
                                                     focus_mask True action NullAction() at middle_face
                                     else:
@@ -995,13 +994,13 @@ screen room_navigation():
                                 else:
                                     imagebutton ypos -100 xpos -63 idle chars[current_room.cur_char[0]].pref+' icon':
                                                 focus_mask True action NullAction() at middle_face
-                                if current_room.cur_char[0] == 'alice' and (tm < '09:00' or tm >= '20:00'):
+                                if current_room.cur_char[1] == 'alice' and (tm < '09:00' or tm >= '20:00'):
                                     imagebutton ypos -120 align (0.5, 0.0) idle chars[current_room.cur_char[1]].pref+' icon a':
                                                 focus_mask True action NullAction() at middle_face
                                 else:
                                     imagebutton ypos -120 align (0.5, 0.0) idle chars[current_room.cur_char[1]].pref+' icon':
                                                 focus_mask True action NullAction() at middle_face
-                                if current_room.cur_char[0] == 'alice' and (tm < '09:00' or tm >= '20:00'):
+                                if current_room.cur_char[2] == 'alice' and (tm < '09:00' or tm >= '20:00'):
                                     imagebutton ypos -100 xpos 63 idle chars[current_room.cur_char[2]].pref+' icon':
                                                 focus_mask True action NullAction() at middle_face
                                 else:

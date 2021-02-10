@@ -69,13 +69,7 @@ label back_shoping:
         if poss['Swimsuit'].stn == 2:
             $ poss['Swimsuit'].OpenStage(4)
             $ lisa.gifts.append('bikini')
-            # $ items['bathrobe'].InShop = True
-            if lisa.inferic is not None:
-                $ lisa.inferic = clip(lisa.inferic+20.0, 0.0, 100.0)
-            else:
-                $ lisa.infmax = 20.0
-            if lisa.infmax is not None:
-                $ lisa.infmax = clip(lisa.infmax-10.0, 0.0, 100.0)
+            $ infl[lisa].add_e(40, True)
             Lisa_03 "А мне Эрик подарил купальник! Именно такой, как я и хотела! Красный, представляешь?!"
             Max_11 "Ясно..."
             Lisa_02 "Что? Ты за меня не рад? Я же теперь смогу загорать в нормальном виде!"
@@ -92,12 +86,7 @@ label back_shoping:
                 $ poss['nightclub'].OpenStage(2)
             else:
                 $ poss['nightclub'].OpenStage(3)
-            if alice.inferic is not None:
-                $ alice.inferic = clip(alice.inferic+20.0, 0.0, 100.0)
-            else:
-                $ alice.infmax = 20.0
-            if alice.infmax is not None:
-                $ alice.infmax = clip(alice.infmax-10.0, 0.0, 100.0)
+            $ infl[alice].add_e(40, True)
             $ alice.gifts.append('dress')
             Ann_07 "Макс, ты какой-то грустный. Что-то случилось? Или мне показалось?"
             Max_00 "Показалось, мам..."

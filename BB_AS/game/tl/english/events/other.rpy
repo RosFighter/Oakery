@@ -4,13 +4,13 @@
 translate english shoping_034007bc:
 
     # Ann_05 "Макс! Мы ушли на шоппинг. Не скучай тут без нас, хорошо? Вернёмся часа через 3..." nointeract
-    Ann_05 "Max! We're going shopping. Don't get too bored without us, okay? We’ll be back in 3 hours..." nointeract
+    Ann_05 "Max! We're going shopping. Don't get too bored without us, okay? We’ll be back in about 3 hours..." nointeract
 
 # game/events/other.rpy:26
 translate english back_shoping_bd2b389d:
 
     # Lisa_02 "Привет, Макс! Мы вернулись..."
-    Lisa_02 "Hi, Max! We're back..."
+    Lisa_02 "Hey, Max! We're back..."
 
 # game/events/other.rpy:27
 translate english back_shoping_cd0b2b2b:
@@ -64,13 +64,13 @@ translate english back_shoping_e23a2e06:
 translate english back_shoping_dbb7dd3e:
 
     # Lisa_09 "Нет. Мама сказала, что тот который я хотела, слишком дорогой, а остальные слишком открытые..." nointeract
-    Lisa_09 "No. Mom said the one I wanted was too expensive, and the others are too open..." nointeract
+    Lisa_09 "Nope. Mom said the one I wanted was too expensive, and the others are too open..." nointeract
 
 # game/events/other.rpy:43
 translate english back_shoping_4ac118f9:
 
     # Ann_01 "Купальник не может стоить таких денег, а она выбрала дизайнерский какой-то. Как будто мы тут миллионеры все..."
-    Ann_01 "Bathing suits shouldn't cost that kind of money, she chose a designer brand. We're not millionaires..."
+    Ann_01 "Bathing suits shouldn't cost that kind of money, she wanted a designer brand. We're not millionaires..."
 
 # game/events/other.rpy:44
 translate english back_shoping_0901fee4:
@@ -82,7 +82,7 @@ translate english back_shoping_0901fee4:
 translate english back_shoping_b5471cb2:
 
     # Ann_05 "Ну тебе бы точно понравилось, как и всем мужикам, кто её бы увидел, но Лиза ещё маленькая, чтобы в таком виде появляться на публике. Так что..."
-    Ann_05 "Well, you would've liked it, like all men would, but Lisa is too young to wear something like that outside"
+    Ann_05 "Well, you would've liked it, like all men would, but Lisa is too young to wear something like that outside."
 
 # game/events/other.rpy:48
 translate english back_shoping_542cfe6c:
@@ -106,7 +106,7 @@ translate english back_shoping_3081eefb:
 translate english back_shoping_87e46818:
 
     # Ann_01 "Алиса, хватит мечтать. Это всё выглядит так, как будто вы хотите из него выкачать как можно больше денег. Успокойтесь и будьте скромнее..." nointeract
-    Ann_01 "Stop it, Alice. It looks like you just want to get as much money as possible out of him. Calm down and be respectful" nointeract
+    Ann_01 "Stop it, Alice. It makes it seem like you just want to get as much money out of him as possible. Calm down and be respectful." nointeract
 
 # game/events/other.rpy:54
 translate english back_shoping_b5a1abfc:
@@ -226,13 +226,13 @@ translate english back_shoping_be1ec23c:
 translate english back_shoping_4d9d39c8:
 
     # Max_00 "Показалось, мам..."
-    Max_00 "Everything is all right, mom..."
+    Max_00 "Everything's fine, Mom..."
 
 # game/events/other.rpy:104
 translate english back_shoping_60b98ba6:
 
     # Alice_02 "Не переживай. Ты всегда можешь заработать и купить себе сам всё, что хочешь..."
-    Alice_02 "Don't worry. You can always make money and buy whatever you want..."
+    Alice_02 "Don't worry. When you start earning money you can always buy whatever you want..."
 
 # game/events/other.rpy:105
 translate english back_shoping_53937e67:
@@ -370,7 +370,7 @@ translate english MeetingEric_c0dc2202:
 translate english MeetingEric_68dfdf17:
 
     # Eric_09 "И что со мной не так? Вот так с первого взгляда делаешь выводы о человеке? Не очень умно... Но для твоего возраста это нормально..." nointeract
-    Eric_09 "And what's wrong with me? It's not wise to jump right to conclusions about someone you've only just met. But you are young, so I understand your feelings. " nointeract
+    Eric_09 "And what's wrong with me? It's not wise to jump right to conclusions about someone you've only just met. But you are young, so I understand your feelings." nointeract
 
 # game/events/other.rpy:196
 translate english MeetingEric_good_53d048fe:
@@ -400,7 +400,7 @@ translate english MeetingEric_bad_341bbd07:
 translate english MeetingEric_bad_9101ec96:
 
     # Ann_01 "Нет, Макс, это точно не нормально. Спишем на то, что ты голодный... Пойдём, Эрик, покажу где мы ужинаем, да и завтракаем. Макс, ты тоже иди ужинать."
-    Ann_01 "No, Max, it's not okay. Let's just say you're in a bad mood because you're starving... Come on, Eric, I'll show you where we eat."
+    Ann_01 "No, Max, it's not okay. I hope you'll feel better after having some food... Come on, Eric, I'll show you where we eat."
 
 # game/events/other.rpy:228
 translate english MeetingEric_bad_c246e424:
@@ -508,7 +508,7 @@ translate english Kira_arrival_4bf7c736:
 translate english Kira_arrival_2171ddd4:
 
     # Kira_02 "Ага. Не буду утомлять вас подробностями, это никому не интересно. Скажу лишь, что всё улажено и теперь я свободна для своей семьи!"
-    Kira_02 "Aha. I won't bore you with the details. I will only say that everything is settled and now I am free for my family!"
+    Kira_02 "Aha. I won't bore you with the details. I will only say that everything is settled and now I'm free for my family!"
 
 # game/events/other.rpy:275
 translate english Kira_arrival_3a81a6f4:
@@ -526,7 +526,7 @@ translate english Kira_arrival_end_yard_5810a3fd:
 translate english Kira_arrival_end_yard_b57b009f:
 
     # Ann_02 "Макс, ну хватит пытать свою тётю. Она сама расскажет, если захочет, верно? А теперь пойдёмте все в дом, скоро будем завтракать."
-    Ann_02 "Max, stop torturing your Aunt. She'll tell you if she wants to, right? Now let's all go inside and have Breakfast."
+    Ann_02 "Max, stop torturing your Aunt. She'll tell you if she wants to, right? Now let's all go inside and have breakfast."
 
 # game/events/other.rpy:290
 translate english Kira_arrival_end_yard_61f344a0:
@@ -580,7 +580,7 @@ translate english Kira_arrival_end_yard_370fc726:
 translate english Kira_arrival_end_yard_e9e6d4fa:
 
     # Lisa_02 "Ну как вам? Такой классный топ и юбочка и мой любимый цвет, представляете!" nointeract
-    Lisa_02 "What do you think? Such a cool top and skirt in my favorite color!" nointeract
+    Lisa_02 "What do you think? How cute is this top? And the skirt is in my favorite color!" nointeract
 
 # game/events/other.rpy:313
 translate english Kira_arrival_end_yard_f609e252:

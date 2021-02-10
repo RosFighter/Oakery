@@ -4,7 +4,16 @@ label cam0_alice_sleep_night:
         $ cam_flag.append('sleep_fun' if talk_var['al.tv.mas']==3 and RandomChance(750) and not peeping['alice_sleep'] else 'sleep_no_fun')
 
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
-    $ renpy.show('other Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    if not alice.sleepnaked:
+        $ renpy.show('other Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+
+    if flags['eric.jerk'] and '02:00'<=tm<'02:30':
+        # показываем дрочащего Эрика
+        if alice.sleepnaked:
+            show Eric cams Alice-room 02
+        else:
+            show Eric cams Alice-room 01
+
     show FG cam-shum-act at laptop_screen
 
     if all(['sleep_fun' in cam_flag, tm < '2:00', 'alice_sleep_fun' not in cam_flag]):
@@ -34,11 +43,57 @@ label cam0_alice_sleep_night:
         else:
             Max_01 "Ночное шоу закончилось. Теперь Алиса спит..."
 
+    elif all([flags['eric.jerk'], '02:00'<=tm<'02:30', not flags['eric.firstjerk'], not flags['eric.noticed'], 'eric_jerk' not in cam_flag]):
+        # Эрик дрочит на Алису первый раз
+        $ cam_flag.append('eric_jerk')
+        $ flags['eric.noticed'] = True
+        if prenoted:
+            # уже заглядывали к Ане
+            Max_09 "Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+        else:
+            Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+
+        menu:
+            Max_03 "Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!"
+            "{i}Конечно{/i}":
+                jump first_jerk_balkon
+
+    elif all([flags['eric.jerk'], '02:00'<=tm<'02:30', flags['eric.firstjerk'], not flags['eric.noticed'], 'eric_jerk'not in cam_flag]):
+        # Эрик повторно дрочит на Алису
+        $ cam_flag.append('eric_jerk')
+        $ flags['eric.noticed'] = True
+        $ _ch1 = Chance(500)
+        if alice.sleepnaked:
+            # Алиса спит голой, Эрик в комнате
+
+            if 'eric.photo2' > 0:
+                Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
+            else:
+                menu:
+                    Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
+                    "{i}Взять фотоаппарат и пойти к окну Алисы {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}":
+                        jump jerk_photohant2
+                    "{i}Да и хрен с ним, пусть дрочит{/i}":
+                        pass
+        else:
+            # Алиса спит в белье, Эрик на балконе
+            if 'eric.photo1' > 0:
+                Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
+            else:
+                menu:
+                    Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
+                    "{i}Взять фотоаппарат и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}":
+                        jump jerk_photohant1
+                    "{i}Да и хрен с ним, пусть дрочит{/i}":
+                        pass
+
     elif 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')
         if 'smoke' in flags and flags['smoke'] == 'sleep':
             Max_04 "Алиса сейчас спит... без лифчика... Умничка!"
-        elif 'smoke' in flags and flags['smoke'] == 'not_sleep' and not flags['noted']:
+        elif 'smoke' in flags and flags['smoke'] == 'naked':
+            Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
+        elif 'smoke' in flags and flags['smoke'] in ['not_sleep', 'not_naked'] and not flags['noted']:
             Max_09 "Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
         else:
             Max_01 "Алиса сейчас спит..."
@@ -46,13 +101,16 @@ label cam0_alice_sleep_night:
 
 label cam0_alice_sleep_morning:
     $ renpy.show('Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
-    $ renpy.show('other Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+    if not alice.sleepnaked:
+        $ renpy.show('other Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')
         if 'smoke' in flags and flags['smoke'] == 'sleep':
             Max_04 "Алиса ещё спит... без лифчика... Умничка!"
-        elif 'smoke' in flags and flags['smoke'] == 'not_sleep':
+        elif 'smoke' in flags and flags['smoke'] == 'naked':
+            Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
+        elif 'smoke' in flags and flags['smoke'] in ['not_sleep', 'not_naked']:
             Max_09 "Алиса ещё спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
         else:
             Max_01 "Алиса ещё спит..."
@@ -513,11 +571,6 @@ label cam0_alice_cooking_dinner:
     return
 
 label cam0_alice_rest_evening:
-    if get_format_blog()>0:
-        if 'cam_pose_blog' not in globals():
-            $ cam_pose_blog = []
-        call cam0_alice_blog_lingerie from _call_cam0_alice_blog_lingerie
-        return
 
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
         if GetWeekday(day) in [0, 2]:
@@ -607,6 +660,7 @@ label cam0_alice_blog_lingerie:
         $ cam_pose_blog = ['01', '02', '03', '04', '05', '06']
         $ renpy.random.shuffle(cam_pose_blog)
     $ __cur_pose = cam_poses_manager(alice, cam_pose_blog)
+    $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]
     $ renpy.show('Alice cams blog '+__cur_pose+alice.dress, at_list=[laptop_screen,])
     show FG cam-shum-act at laptop_screen
     if __cur_pose in cam_pose_blog:
@@ -622,7 +676,15 @@ label cam0_alice_blog_lingerie:
     return
 
 label cam0_alice_after_club:
-    if tm[-2:] > '30':
+    if tm[-2:] < '20':
+        show FG cam-shum-noact at laptop_screen
+        if 'alice_not_bath' not in cam_flag:
+            $ cam_flag.append('alice_not_bath')
+            if len(house[3].cams)>1:
+                Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+            else:
+                Max_09 "Алисы не видно через эту камеру..."
+    elif tm[-2:] > '30':
         # вытирается
         show Alice cams bath 05 at laptop_screen
         show FG cam-shum-act at laptop_screen
@@ -654,3 +716,66 @@ label cam1_alice_after_club:
             $ cam_flag.append('alice_bath1')
             Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
     return
+
+label cam0_blog_with_Eric:
+    if all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5]):
+        #если Эрик купил Алисе чёрное кружевное боди вперёд Макса
+
+        #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(02a/02b/02c или 03a/03b/03c)
+        $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 0'+str(renpy.random.randint(2, 3))+alice.dress, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
+
+        Max_09 "{i}( Эрик о чём-то разговаривает с Алисой. И развалился так, как будто это его комната... ){/i}"
+
+        #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(04a/04b/04c или 05a/05b/05c)
+        $ renpy.show('Alice cams blog dresses 0'+str(renpy.random.randint(4, 5))+alice.dress, at_list=[laptop_screen])
+        Max_08 "{i}( Ого! Да она при нём, похоже, переодеваться вздумала! Что сказать, Эрик умеет добиваться своего... ){/i}"
+
+        #cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(07a/07b)
+        $ renpy.show('Eric cams blog 04'+eric.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 07'+alice.dress, at_list=[laptop_screen])
+        Max_01 "{i}( Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! ){/i}"
+
+        #cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(08a/08b)
+        $ renpy.show('Alice cams blog dresses 08'+alice.dress, at_list=[laptop_screen])
+        Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
+
+        #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(09a/09b)
+        $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 09'+alice.dress, at_list=[laptop_screen])
+        Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь... ){/i}"
+        #после этого через камеру можно увидеть 2 варианта того, что делают Алиса и Эрик, либо она сидит он стоит рядом, либо она позирует он сидит на кровати
+
+        $ dcv['eric.lingerie'].stage = 9  # бельё Алисе подарил Эрик
+        $ alice.dress = 'd'
+        $ alice.dress_inf = '02la'
+        $ blog_lingerie = ['d', 'd', 'd']
+        $ items['sexbody2'].InShop = False
+        $ alice.gifts.append('sexbody2')
+        $ infl[alice].add_e(40)
+        $ poss['blog'].OpenStage(16)
+        $ spent_time = max((60 - int(tm[-2:])), 30)
+        jump Waiting
+    else:
+        #cam-blog-desk-alice-(01d/01e/01f/01g - после дарения) + cam-blog-desk-eric-(01(a) или 02(a))
+        if dcv['eric.lingerie'].stage>4:
+            # кружевное боди подарено
+            $ __r = renpy.random.randint(1, 2)
+            $ renpy.show('Eric cams blog 0'+str(__r)+eric.dress, at_list=[laptop_screen])
+            if __r<2:
+                $ renpy.show('Alice cams blog 01'+alice.dress, at_list=[laptop_screen])
+            else:
+                $ renpy.show('Alice cams blog 0'+str(renpy.random.randint(1, 6))+alice.dress, at_list=[laptop_screen])
+        else:
+            $ renpy.show('Eric cams blog 01'+eric.dress, at_list=[laptop_screen])
+            $ renpy.show('Alice cams blog 01'+alice.dress, at_list=[laptop_screen])
+
+        show FG cam-shum-act at laptop_screen
+
+        Max_08 "{i}( Эрик сегодня в комнате Алисы. Похоже, пытается помогать с блогом... Но в действительности же, чтобы поглазеть на Алису в белье, по себе знаю... ){/i}"
+
+        if not poss['blog'].stages[14].used:
+            $ poss['blog'].OpenStage(13)
+
+        return

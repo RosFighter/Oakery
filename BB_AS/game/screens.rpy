@@ -104,9 +104,9 @@ screen say(who, what):
     window:
         id "window"
         hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
-            ypos 10
-            ysize gui.textbox_height - 55# - gui.dialogue_ypos - 20
-            spacing 10
+            # ypos 5
+            ysize gui.textbox_height - 35# - gui.dialogue_ypos - 20
+            spacing 5
             viewport mousewheel "change" id "vp_say":
 
                 frame background None:
@@ -223,7 +223,7 @@ screen choice(items):
         hbox spacing 5:
             viewport spacing 0 draggable True mousewheel True id "vp_choice":
 
-                vbox xfill True spacing -5:
+                vbox xfill True spacing -3:
                     $yy = 0
                     for i in items:
                         $yy+=1
@@ -399,7 +399,7 @@ screen main_menu():
 
     vbox xalign 0.5 spacing -60:
         frame xalign 0.5 xsize 1235 background None:
-            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 180 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
+            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 178 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
         frame xalign 0.5 xsize 1235 background None:
             text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
             $ __short_ver = config.version[0:4]
@@ -903,40 +903,40 @@ screen preferences():
 
                     bar value Preference("auto-forward time")
 
-                # vbox:
-                #
-                #     if config.has_music:
-                #         label _("Громкость музыки")
-                #
-                #         hbox:
-                #             bar value Preference("music volume")
-                #
-                #     if config.has_sound:
-                #
-                #         label _("Громкость звуков")
-                #
-                #         hbox:
-                #             bar value Preference("sound volume")
-                #
-                #             if config.sample_sound:
-                #                 textbutton _("Тест") action Play("sound", config.sample_sound)
-                #
-                #
-                #     if config.has_voice:
-                #         label _("Громкость голоса")
-                #
-                #         hbox:
-                #             bar value Preference("voice volume")
-                #
-                #             if config.sample_voice:
-                #                 textbutton _("Тест") action Play("voice", config.sample_voice)
-                #
-                #     if config.has_music or config.has_sound or config.has_voice:
-                #         null height gui.pref_spacing
-                #
-                #         textbutton _("Без звука"):
-                #             action Preference("all mute", "toggle")
-                #             style "mute_all_button"
+                vbox:
+
+                    if config.has_music:
+                        label _("Громкость музыки")
+
+                        hbox:
+                            bar value Preference("music volume")
+
+                    if config.has_sound:
+
+                        label _("Громкость звуков")
+
+                        hbox:
+                            bar value Preference("sound volume")
+
+                            if config.sample_sound:
+                                textbutton _("Тест") action Play("sound", config.sample_sound)
+
+
+                    if config.has_voice:
+                        label _("Громкость голоса")
+
+                        hbox:
+                            bar value Preference("voice volume")
+
+                            if config.sample_voice:
+                                textbutton _("Тест") action Play("voice", config.sample_voice)
+
+                    if config.has_music or config.has_sound or config.has_voice:
+                        null height gui.pref_spacing
+
+                        textbutton _("Без звука"):
+                            action Preference("all mute", "toggle")
+                            style "mute_all_button"
 
 
 style pref_label is gui_label
@@ -1007,7 +1007,7 @@ style slider_button_text:
     properties gui.button_text_properties("slider_button")
 
 style slider_vbox:
-    xsize 675
+    xsize 625
 
 
 ## Экран истории ###############################################################

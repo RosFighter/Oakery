@@ -2,6 +2,9 @@
 ## события Лизы
 
 label lisa_sleep_night:
+    if all([flags['film_punish'], not dcv['film_punish'].done, tm < '00:30']):
+        call lisa_select_movie
+
     scene BG char Lisa bed-night
     $ AvailableActions['touch'].active = True
     $ renpy.show('Lisa sleep-night '+pose3_1+lisa.dress)
@@ -110,6 +113,8 @@ label lisa_shower:
                 jump .alt_peepeng
             "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['lisa'].give) < 4 or (poss['SoC'].stn<0 and _ch1.ch>600):
                 jump .pinded
+            "{i}немного пошуметь{/i}" if len(sorry_gifts['lisa'].give) == 4:
+                jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping
 
@@ -164,8 +169,11 @@ label lisa_shower:
         jump .end_peeping
 
     label .pinded:
-        $ peeping['lisa_shower'] = 3
-        $ punreason[0] = 1
+        if flags['film_punish']:
+            $ dcv['film_punish'].set_lost(1)
+        else:
+            $ peeping['lisa_shower'] = 3
+            $ punreason[0] = 1
         $ Skill('hide', 0.05)
         $ __ran1 = renpy.random.choice(['09', '10'])
         scene BG shower-closer
@@ -375,97 +383,100 @@ label lisa_dressed_shop:
 
     if peeping['lisa_dressed'] != 0:
         return
-    else:
-        $ __mood = 0
-        $ __rel = 0
-        $ __warned = False
-        $ peeping['lisa_dressed'] = 1
-        $ spent_time = 10 #60 - int(tm[-2:])
-        menu .lisa_dressed:
-            Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
-            "{i}постучаться{/i}":
-                jump .knock
-            "{i}открыть дверь{/i}":
-                jump .open_door
-            "{i}заглянуть в окно{/i}":
-                jump .look_window
 
-        menu .knock:
-            Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
-            "Это я, Макс. Можно войти?":
+    $ __mood = 0
+    $ __rel = 0
+    $ __warned = False
+    $ peeping['lisa_dressed'] = 1
+    $ spent_time = 10 #60 - int(tm[-2:])
+    menu .lisa_dressed:
+        Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
+        "{i}постучаться{/i}":
+            jump .knock
+        "{i}открыть дверь{/i}":
+            jump .open_door
+        "{i}заглянуть в окно{/i}":
+            jump .look_window
+        "{i}уйти{/i}":
+            $ spent_time = 10
+            jump .rel_mood
+
+    menu .knock:
+        Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
+        "Это я, Макс. Можно войти?":
+            menu:
+                Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там."
+                "{i}открыть дверь{/i}":
+                    $ __warned = True
+                    jump .open_door
+                "Хорошо...":
+                    jump .rel_mood
+        "Можно войти на секунду? Я только ноутбук возьму..." if flags['warning']:
+            jump get_laptop
+        "Хорошо, я подожду...":
+            jump .rel_mood
+
+    label .open_door:
+        $ spent_time = 20
+        $ __ran1 = renpy.random.randint(3, 5)
+        $ lisa.dress_inf = {3:'02c',4:'02b',5:'00'}[__ran1]
+        scene BG char Lisa morning
+        if GetRelMax('lisa')[0] < 0:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1))
+        elif GetRelMax('lisa')[0] < 2:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'a')
+        elif lisa.free < 200:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'b')
+        else:
+            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'c') # пока отсутствует
+
+        if __warned:
+            $ __mood -= 150
+            $ __rel -= 15
+            $ phrase = _("Я же сказала, что я не одета! ")
+        else:
+            $ __mood -= 50 # настроение портится в любом случае
+            $ phrase = _("Я не одета! ")
+
+        menu:
+            Lisa_12 "Макс! [phrase!t]Быстрой закрой дверь с той стороны!"
+            "Извини... Кстати, отличный зад!" if __ran1 == 2:
+                if GetRelMax('lisa')[0] < 2:
+                    $ __rel -= 5
+            "А у тебя сиськи подросли!":
                 menu:
-                    Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там."
-                    "{i}открыть дверь{/i}":
-                        $ __warned = True
-                        jump .open_door
-                    "Хорошо...":
+                    Lisa_11 "Что?! Я всё маме расскажу!"
+                    "Всё, всё, ухожу!":
                         jump .rel_mood
-            "Можно войти на секунду? Я только ноутбук возьму..." if flags['warning']:
-                jump get_laptop
-            "Хорошо, я подожду...":
+                    "Уже ухожу, но сиськи - супер!":
+                        $ __mood -= 50
+                        $ __rel -= 5
+                        menu:
+                            Lisa_12 "..."
+                            "{i}Бежать{/i}":
+                                jump .rel_mood
+            "Извини, я не хотел...":
+                $ __mood += 50
+                $ __rel += 5
                 jump .rel_mood
 
-        label .open_door:
-            $ spent_time = 20
-            $ __ran1 = renpy.random.randint(3, 5)
-            $ lisa.dress_inf = {3:'02c',4:'02b',5:'00'}[__ran1]
-            scene BG char Lisa morning
-            if GetRelMax('lisa')[0] < 0:
-                $ renpy.show('Lisa school-dressed 0'+str(__ran1))
-            elif GetRelMax('lisa')[0] < 2:
-                $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'a')
-            elif lisa.free < 200:
-                $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'b')
-            else:
-                $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'c') # пока отсутствует
+    label .look_window:
+        $ spent_time = 10
+        $ __ran1 = renpy.random.choice(['03', '04', '05', '06'])
+        $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[__ran1]
+        scene BG char Lisa voyeur-00
+        $ renpy.show('Lisa voyeur '+__ran1)
+        $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
+        $ Skill('hide', 0.03)
+        menu:
+            Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
+            "{i}уйти{/i}":
+                jump .rel_mood
 
-            if __warned:
-                $ __mood -= 150
-                $ __rel -= 15
-                $ phrase = _("Я же сказала, что я не одета! ")
-            else:
-                $ __mood -= 50 # настроение портится в любом случае
-                $ phrase = _("Я не одета! ")
+    scene location house myroom door-morning
 
-            menu:
-                Lisa_12 "Макс! [phrase!t]Быстрой закрой дверь с той стороны!"
-                "Извини... Кстати, отличный зад!" if __ran1 == 2:
-                    if GetRelMax('lisa')[0] < 2:
-                        $ __rel -= 5
-                "А у тебя сиськи подросли!":
-                    menu:
-                        Lisa_11 "Что?! Я всё маме расскажу!"
-                        "Всё, всё, ухожу!":
-                            jump .rel_mood
-                        "Уже ухожу, но сиськи - супер!":
-                            $ __mood -= 50
-                            $ __rel -= 5
-                            menu:
-                                Lisa_12 "..."
-                                "{i}Бежать{/i}":
-                                    jump .rel_mood
-                "Извини, я не хотел...":
-                    $ __mood += 50
-                    $ __rel += 5
-                    jump .rel_mood
-
-        label .look_window:
-            $ spent_time = 10
-            $ __ran1 = renpy.random.choice(['03', '04', '05', '06'])
-            $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[__ran1]
-            scene BG char Lisa voyeur-00
-            $ renpy.show('Lisa voyeur '+__ran1)
-            $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
-            $ Skill('hide', 0.03)
-            menu:
-                Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
-                "{i}уйти{/i}":
-                    jump .rel_mood
-
-        scene location house myroom door-morning
-
-        label .rel_mood:
-            $ AddRelMood('lisa', __rel, __mood)
+    label .rel_mood:
+        $ AddRelMood('lisa', __rel, __mood)
 
     jump Waiting
 
@@ -490,6 +501,7 @@ label lisa_dressed_repetitor:
     if peeping['lisa_dressed'] != 0:
         return
 
+    # добавить возможность подглядываать после начала секс.обучения Лизы у АиЭ
     menu:
         Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
         "{i}уйти{/i}":
@@ -688,3 +700,423 @@ label lisa_homework:
     $ renpy.show('Lisa lessons '+pose3_1+lisa.dress)
     $ persone_button1 = 'Lisa lessons '+pose3_1+lisa.dress+'b'
     return
+
+
+label lisa_select_movie:
+    if dcv['film_punish'].stage < 1:
+        # первый просмотр романтического фильма
+        jump lisa_romantic_movie_0
+
+    elif dcv['film_punish'].stage < 4:
+        # периодический просмотр романтического фильма
+        jump lisa_romantic_movie_r
+
+    elif dcv['film_punish'].stage < 5:
+        # первый просмотр ужастика
+        jump lisa_horor_movie_0
+
+    elif dcv['film_punish'].stage < 7:
+        # периодический просмотр ужастика
+        jump lisa_horor_movie_r
+
+
+label lisa_romantic_movie_0:
+
+    scene BG char Lisa myroom-night-talk-01
+    $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Lisa_02 "А я пока свет выключу."
+
+    scene BG char Lisa horror-myroom 00
+    show Max horror-myroom 01a
+    $ renpy.show("Lisa horror-myroom 00-01"+lisa.dress)
+    Max_04 "Давай, запрыгивай! Ты уже знаешь, что будем смотреть?"
+    Lisa_09 "В смысле, \"запрыгивай\"? К тебе на кровать, что ли?"
+    Max_07 "Да, ко мне. Или к тебе, если хочешь."
+    Lisa_10 "Я думала каждый со своей кровати будет смотреть!"
+    Max_09 "Здесь же у нас не такой экран, как в гостиной. Смотреть надо близко."
+    Lisa_00 "Ну... ладно. Подвинься тогда."
+
+    scene BG char Lisa horror-myroom 01
+    $ renpy.show("Lisa horror-myroom 01-01"+lisa.dress)
+    Max_00 "Ну так... каким фильмом ты собиралась меня мучить?"
+    Lisa_01 "Точно не знаю. Напиши в поиске \"лучшие романтические фильмы\" и я что-нибудь выберу."
+    Max_03 "Вот, смотри... Выбирай... Может вот этот? Постер уж очень интересный!"
+    Lisa_02 "Нет, мы будем смотреть то, что интересно мне! Хочу вон тот фильм! Давай, включай..."
+    play music 'audio/romantic.ogg'
+    Max_07 "{i}( Да уж, это конечно намного лучше, чем получать при всех от мамы по заднице, но так скучно! Хотя бы с сестрёнкой рядом на одной кровати полежу. А смотреть можно и вполглаза... ){/i}"
+    Lisa_13"Макс, не спи! Ты должен смотреть - это твоё наказание! Если будешь спать, то я буду тебя пихать..."
+
+    scene BG char Lisa horror-myroom 01a
+    $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+    Max_02 "{i}( Я бы тоже с огромным удовольствием попихал в тебя чем-нибудь! А если бы она ещё и уснула со мной в обнимку это было бы... ){/i}"
+    Lisa_10 "Ой-ёй-ёй! У фильма же вроде семейный рейтинг?! Почему они раздеваются?"
+    Max_03 "А вот это уже будет поинтереснее смотреть! Хороший момент, мне нравится..."
+    Lisa_11 "Давай промотаем! Мне как-то неудобно... Ого! А что это он там делает ей?!"
+    Max_05 "Я не против, что персонажей в этой сцене решили... хорошенько раскрыть..."
+    Lisa_12 "Чем это ты ноутбук шевелишь? У тебя рука что ли трясётся или..."
+    Max_07 "Ну... почти."
+
+    scene BG char Lisa horror-myroom 04
+    $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
+    Lisa_11 "Макс! У тебя встал что ли?"
+    Max_08 "Да, немного. Такой уж фильм ты выбрала!"
+    Lisa_13 "Немного?! Это не немного! Какой же ты озабоченный!"
+    Max_09 "Вообще-то, так все мужчины реагируют на такое!"
+    Lisa_12 "Молодец, Макс! Испортил весь просмотр."
+    Max_07 "А ты на экран смотри, а не на член."
+    Lisa_10 "Да не могу я смотреть на экран, когда и там и у тебя такое... Всё, я спать!"
+    stop music fadeout 1.0
+    Max_08 "Погоди, но это ведь считается, что я отбыл наказание?"
+    Lisa_09 "Да ну тебя!"
+    Max_01 "Ладно. Доброй ночи тогда."
+
+    $ dcv['film_punish'].stage = 1
+    $ dcv['film_punish'].enabled = False
+    $ dcv['film_punish'].set_lost(0)
+    $ infl[lisa].add_m(12)
+    $ spent_time += 60
+    $ flags['cur_series'] = 1
+    jump Waiting
+
+
+label lisa_romantic_movie_r:
+
+    scene BG char Lisa myroom-night-talk-01
+    $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Lisa_02 "А я пока свет выключу."
+
+    scene BG char Lisa horror-myroom 00
+    show Max horror-myroom 01a
+    $ renpy.show("Lisa horror-myroom 00-01"+lisa.dress)
+    if flags['cur_series'] < 2:
+        Max_04 "Давай, запрыгивай! Будем досматривать тот фильм?"   #если не досмотрели фильм
+        Lisa_09 "Да, но промотай тот момент, ну ты понял..."
+        play music 'audio/romantic.ogg'
+        Max_03 "Считай, что уже сделано. Я к отбытию наказания готов!"
+        Lisa_02 "И смотри чтобы ничего у тебя там не шевелилось больше!"
+    else:
+        Max_04 "Давай, запрыгивай! Ты уже знаешь, что будем смотреть?"   #если досмотрели фильм
+        Lisa_01 "Нет. Выводи список романтический фильмов и я выберу. Только давай нормальные фильмы, а не как в прошлый раз!"
+        play music 'audio/romantic.ogg'
+        Max_03 "Ты сама выбирала, моё дело маленькое. Вот этот вроде ничего должен быть..."
+        Lisa_02 "Ага, давай его. И твоё маленькое дело - это смотреть фильм, мучиться и чтобы у тебя ничего не шевелилось!"
+
+    if renpy.random.randint(1, 2) < 2:
+        scene BG char Lisa horror-myroom 01
+        $ renpy.show("Lisa horror-myroom 01-01"+lisa.dress)
+    else:
+        scene BG char Lisa horror-myroom 01a
+        $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+
+    Max_07 "{i}( Легко говорить, чтобы ничего не шевелилось! Достаточно просто представить, как Лиза лежит рядом со мной, совсем обнажённая... Ой, лучше не думать! ){/i}"
+    Lisa_03 "Что, Макс, заскучал? Будешь знать, как за мной подглядывать! И не вздумай спать, а то я начну тебя щипать..."
+    Max_02 "Так я и ответить могу тем же, если ты не в курсе!"
+    Lisa_13 "Эй! Нет, меня нельзя щипать! Ой, ну вот опять откровенные сцены начались..."
+    Max_04 "{i}( Вовремя! А то у меня уже слегка привстал, ведь в голову пришло уже столько пошлых мыслей от того, что Лиза лежит так близко ко мне. ){/i}"
+
+    scene BG char Lisa horror-myroom 04
+    $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
+
+    if poss['seduction'].stn>7 and dcv['film_punish'].stage == 3:
+        #как только открываются уроки поцелуев с Лизой и посмотрели 3 раза романтику
+        Lisa_10 "Макс, у тебя опять стоит! Ну сколько можно?"
+        Max_01 "Фильмы такие! Что тут поделать..."
+        Lisa_01 "А я знаю что! Мы будем смотреть что-нибудь такое, на что ты не будешь реагировать так, как сейчас."
+        Max_05 "Например? О, давай боевики?! Или комедии? А ещё лучше - комедийные боевики!"
+        Lisa_02 "Нет, мы будем смотреть ужастики!"
+        Max_09 "Ужастики?! Ты уверена, что смотреть ужастики в тёмное время суток - это то, что нужно?"
+        Lisa_03 "Что, Макс, струсил?! Это то, что мне и нужно. Наверняка, ты будешь визжать от страха, как маленькая девочка!"
+        Max_16 "Не дождёшься! Считай, что вызов я принял! Ещё увидим, кто будет визжать..."
+        Lisa_02 "Да, да... Не удивлюсь, если подглядывания за мной... прекратятся."
+        Max_09 "У тебя, кстати, есть своя кровать, помнишь?"
+        Lisa_01 "Тогда я пойду спать, а то ты сегодня что-то не в духе."
+        stop music fadeout 1.0
+        Max_15 "Да, будь так добра..."
+        $ dcv['film_punish'].stage = 4
+
+    elif flags['cur_series'] > 1:
+        # чередующийся вариант окончания просмотра
+        Lisa_12 "Ну и ты следом сразу возбудился! Это вообще нормально?"
+        Max_07 "Спроси хоть у кого и ответ будет всегда один - да, это нормальная реакция."
+        Lisa_10 "Ну и как теперь дальше фильм смотреть, а Макс?"
+        Max_02 "Как и до этого смотрела, просто с небольшим бонусом."
+        Lisa_09 "Ага! Очень такой \"небольшой\" бонус, аж в трусах не умещается... Всё, я спать!"
+        Max_07 "Ничего, если я тут досмотрю этот момент, интересно, как закончится?"
+        Lisa_12 "Нет! Выключай всё! А то это уже не наказание получается."
+        stop music fadeout 1.0
+        Max_01 "Ладно. Тогда спим..."
+    else:
+        # чередующийся вариант окончания просмотра
+        Lisa_10 "Макс, может уже хватит меня смущать?! Почему ты такой озабоченный?"
+        Max_02 "Не понимаю о чём ты говоришь, у меня всё нормально."
+        Lisa_13 "Ага, развалился тут со своим членом на всю кровать и довольный! А это вообще-то наказание!"
+        Max_07 "Ну а что я сделаю, если они там решили поразвлечься?!"
+        Lisa_09 "Опять ты весь просмотр испортил! Я пошла спать..."
+        Max_04 "Ну давай, а я ещё немного посмотрю..."
+        Lisa_10 "Нет уж! Давай выключай! А то лицо у тебя слишком довольное стало."
+        Max_03 "И не только лицо..."
+        Lisa_09 "Да ну тебя!"
+        stop music fadeout 1.0
+        Max_01 "Ладно. Доброй ночи тогда."
+
+    if dcv['film_punish'].stage < 3:
+        $ dcv['film_punish'].stage += 1
+
+    $ dcv['film_punish'].enabled = False
+    $ dcv['film_punish'].set_lost(0)
+    $ infl[lisa].add_m(12)
+    $ spent_time += 60
+    $ flags['cur_series'] = {1:2, 2:1}[flags['cur_series']]
+    jump Waiting
+
+
+label lisa_horor_movie_0:
+
+    scene BG char Lisa myroom-night-talk-01
+    $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
+
+    scene BG char Lisa horror-myroom 00
+    show Max horror-myroom 01a
+    show Lisa horror-myroom 00-01b
+    Max_07 "Как бы не так! Ты уже знаешь, что будем смотреть?"
+    menu:
+        Lisa_03 "Я думала посмотреть все части \"Кошмара на улице Вязов\" или \"Пятницы 13-е\". Мне в школе посоветовали. Но выбирать тебе, ты же будешь бояться."
+        "{i}смотреть \"Кошмар на улице Вязов\"{/i}":   #после выбора начинает играть соответствующая фильму музыка
+            $ flags['cur_movies'] = ['hes', 1, 0]
+            play music 'audio/hes.ogg'
+        "{i}смотреть \"Пятница 13-е\"{/i}":   #после выбора начинает играть соответствующая фильму музыка
+            $ flags['cur_movies'] = ['f13', 0, 1]
+            play music 'audio/f13.ogg'
+
+    scene BG char Lisa horror-myroom 01
+    show Lisa horror-myroom 01-01b
+    Lisa_02 "Макс, если тебе будет сильно страшно, то так и скажи! В этом нет ничего такого, мы сразу всё выключим."
+    Max_03 "Мне нечего бояться, с моей стороны стена, так что никто из под кровати на меня не нападёт. Чего не могу сказать о твоём положении, ты сильно рискуешь!"
+
+    scene BG char Lisa horror-myroom 01a
+    show Lisa horror-myroom 01a-01b
+    Lisa_00 "Хорошая попытка, но меня этим не напугаешь, наверно... Вот молчал бы и я об этом сейчас не думала бы!"
+    Max_02 "Но если тебе всё же начнёт казаться, как что-то тянется из темноты к твоей ноге, то сразу скажи. И мы сразу всё выключим!"
+
+    scene BG char Lisa horror-myroom 03
+    show Lisa horror-myroom 03-01b
+    Lisa_09 "Не пугай меня, Макс! И так фильм страшный, так ты тут ещё жути нагоняешь!"
+    Max_00 "Не бойся, мне тоже страшно!"
+    Lisa_10 "Правда? По тебе не скажешь..."
+    Max_04 "Есть немного, но трусишка у нас ты... Но мне это нравится, очень мило."
+
+    scene BG char Lisa horror-myroom 02
+    show Lisa horror-myroom 02-01b
+    $ renpy.show("FG horror-myroom "+flags['cur_movies'][0]+" 01-01")
+    Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
+    Max_09 "Ну, ты не одна в комнате, так что бояться нечего. Всех монстров я возьму на себя!"
+    Lisa_13 "Макс, это что мне в ногу такое твёрдое упёрлось?!"
+    Max_07 "Ноутбук, должно быть."
+
+    scene BG char Lisa horror-myroom 04
+    $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
+    Lisa_12 "Ага, ноутбук, как же! Сейчас-то у тебя от чего встал?!"
+    Max_08 "Ты ко мне прижалась, вот я и возбудился. Пора бы тебе уже спокойно на это реагировать и не обращать внимание."
+    Lisa_09 "Да как тут внимание не обращать, ты же меня своим членом сейчас трогал?!"
+    Max_09 "Во-первых, не трогал, а ты просто положила на него свою ногу, а во-вторых, ты же к моей ноге своей киской тоже прижалась... Так что всё честно!"
+
+    scene BG char Lisa horror-myroom 00
+    show Max horror-myroom 01a
+    show Lisa horror-myroom 00-02b
+    Lisa_10 "Ничем таким я к тебе не прижималась! И вообще, я спать пошла... только страшно..."
+    stop music fadeout 1.0
+    Max_01 "Ладно. И попку давай береги по пути, а то монстры любят хватать за что-нибудь такое!"
+    Lisa_11 "Ой ой ой!"
+
+    $ spent_time += 60
+    $ dcv['film_punish'].stage = 5
+    $ dcv['film_punish'].enabled = False
+    $ dcv['film_punish'].set_lost(0)
+    $ infl[lisa].add_m(12)
+    $ flags['cur_series'] = 1
+    jump Waiting
+
+
+label lisa_horor_movie_r:
+
+    scene BG char Lisa myroom-night-talk-01
+    $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    Lisa_01 "Ну что, Макс, смотрим кино или как?"
+    Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+    Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
+
+    scene BG char Lisa horror-myroom 00
+    show Max horror-myroom 01a
+    show Lisa horror-myroom 00-01b
+
+    if flags['cur_series'] < 2:
+        #если не досмотрели фильм
+        Max_07 "Как бы не так! Будем досматривать тот фильм, который тогда смотрели?"
+        menu:
+            Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне."
+            "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")" if flags['cur_movies'][0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags['cur_series'] = 2
+                play music 'audio/hes.ogg'
+            "Тогда досматриваем... (продолжаем смотреть \"Пятница 13-е\")" if flags['cur_movies'][0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags['cur_series'] = 2
+                play music 'audio/f13.ogg'
+            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags['cur_movies'][0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags['cur_movies'][0] = 'hes'
+                if flags['cur_movies'][1] < 5:
+                    $ flags['cur_movies'][1] += 1
+                else:
+                    $ flags['cur_movies'][1] = 1
+                play music 'audio/hes.ogg'
+            "{i}смотреть \"Пятница 13-е\"{/i}" if flags['cur_movies'][0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags['cur_movies'][0] = 'f13'
+                if flags['cur_movies'][2] < 5:
+                    $ flags['cur_movies'][2] += 1
+                else:
+                    $ flags['cur_movies'][2] = 1
+                play music 'audio/f13.ogg'
+    else:
+        #если досмотрели фильм
+        Max_07 "Как бы не так! Будем смотреть следующий фильм в той серии, которую начали?"
+        $ flags['cur_series'] = 1
+        menu:
+            Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне."
+            "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Кошмар на улице Вязов\")"  if flags['cur_movies'][0] == 'hes':
+                if flags['cur_movies'][1] < 5:
+                    $ flags['cur_movies'][1] += 1
+                else:
+                    $ flags['cur_movies'][1] = 1
+                play music 'audio/hes.ogg'
+            "Тогда смотрим дальше...  (продолжаем смотреть серию фильмов \"Пятница 13-е\")" if flags['cur_movies'][0] == 'f13':
+                if flags['cur_movies'][2] < 5:
+                    $ flags['cur_movies'][2] += 1
+                else:
+                    $ flags['cur_movies'][2] = 1
+                play music 'audio/f13.ogg'
+            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags['cur_movies'][0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags['cur_movies'][0] = 'hes'
+                if flags['cur_movies'][1] < 5:
+                    $ flags['cur_movies'][1] += 1
+                else:
+                    $ flags['cur_movies'][1] = 1
+                play music 'audio/hes.ogg'
+            "{i}смотреть \"Пятница 13-е\"{/i}" if flags['cur_movies'][0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags['cur_movies'][0] = 'f13'
+                if flags['cur_movies'][2] < 5:
+                    $ flags['cur_movies'][2] += 1
+                else:
+                    $ flags['cur_movies'][2] = 1
+                play music 'audio/f13.ogg'
+
+
+    if renpy.random.randint(1, 2) < 2:
+        scene BG char Lisa horror-myroom 01
+        $ renpy.show("Lisa horror-myroom 01-01"+lisa.dress)
+    else:
+        scene BG char Lisa horror-myroom 01a
+        $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+
+    Lisa_09 "Может хоть для приличия испугаешься? А то иначе я уже не знаю, как тебя наказать, разве что маме тебя сдать..."
+    Max_14 "Я боюсь! Теперь стало намного страшнее после твоих слов."
+
+    scene BG char Lisa horror-myroom 03
+    show Lisa horror-myroom 03-01b
+    Lisa_10 "Вот и хорошо, а то я не хочу одна бояться. Ну вот что они делают?! Это же точно ничем хорошим не закончится!"
+    Max_02 "{i}( Хорошо, что в ужастиках куча тупых персонажей, потому что это гарантирует мне крепкие объятия от Лизы! Главное стараться не думать, какими прелестями она ко мне прижимается. ){/i}"
+
+    scene BG char Lisa horror-myroom 02
+    show Lisa horror-myroom 02-01b
+    if flags['cur_movies'][0] == 'hes':
+        $ renpy.show("FG horror-myroom hes 0"+str(flags['cur_movies'][1])+"-0"+str(flags['cur_series']))
+    else:
+        $ renpy.show("FG horror-myroom f13 0"+str(flags['cur_movies'][1])+"-0"+str(flags['cur_series']))
+    Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
+
+    $ _ch3 = GetChance(mgg.sex+5, 3, 900)
+    menu:
+        Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}"
+        "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
+            if not RandomChance(_ch3.ch) and not _in_replay:
+                # (не получилось сдержаться)
+                $ Skill('sex', 0.1)
+                jump .not_restrain
+
+            # (получилось сдержаться)
+            $ Skill('sex', 0.2)
+            if flags['cur_series'] < 2:
+                # если начали новый фильм
+                Lisa_09 "Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
+            else:
+                 #если продолжили смотреть
+                Lisa_09 "Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
+            #  выключается музыка
+            stop music fadeout 1.0
+            Max_04 "Ага, я тоже. Было страшно, но я рад, что ты была рядом. Это приятно."
+
+            #horror-myroom-01a + horror-myroom-01a-max&lisa-02
+            scene BG char Lisa horror-myroom 01a
+            show Lisa horror-myroom 01a-02b
+            Lisa_10 "Мне только страшно до своей кровати идти теперь..."
+            Max_03 "Так не иди. Спи со мной. Я очень даже не против!"
+            menu:
+                Lisa_05 "Чтобы со мной рядом кое-что шевелилось? Так я точно не усну. Мне нужно как-то храбрости набраться..."
+                "{i}поцеловать Лизу{/i}" if talk_var['kiss_lessons'] > 6:   #если открыты поцелуи с прикосновениями
+                    #horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
+                    if renpy.random.randint(1, 2) < 2:
+                        scene BG char Lisa horror-myroom 02
+                        show Lisa horror-myroom 02-02b
+                    else:
+                        scene BG char Lisa horror-myroom 02a
+                        show Lisa horror-myroom 02-03b
+
+                    Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки... ){/i}"
+
+                    scene BG char Lisa horror-myroom 01a
+                    $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+                    Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
+                    Max_01 "Ага. Приятных снов."
+                    jump .end
+
+                "Просто иди и всё...":
+                    Lisa_13 "Ну ага, просто иди! А вдруг меня что-то схватит?!"
+                    Max_07 "У нас в комнате нет никаких монстров! Если конечно не считать того, что у меня в трусах."
+
+                    scene BG char Lisa horror-myroom 04
+                    $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
+                    Lisa_01 "Ой, с тобой и правда страшно спать будет! Я пошла к себе..."
+                    Max_01 "Ага. Спокойной ночи."
+                    jump .end
+
+        "{i}да пофиг!{/i}":
+            jump .not_restrain
+
+    label .not_restrain:
+        Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
+        Max_07 "Однозначно кажется..."
+
+        scene BG char Lisa horror-myroom 04
+        $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
+        stop music fadeout 1.0
+        Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Я же твоя сестра, тебе стыдно должно быть!"
+        Max_09 "Стыдно?! Ну встал и встал, подумаешь."
+
+        scene BG char Lisa horror-myroom 00
+        show Max horror-myroom 01a
+        show Lisa horror-myroom 00-02b
+        Lisa_10 "Хватит уже похабно думать обо мне! Я ушла спать... Ой! Как страшно..."
+        Max_04 "Проводить тебя до кровати?"
+        Lisa_13 "Сама справлюсь! Ой ой ой!"
+        jump .end
+
+    label .end:
+        $ spent_time += 60
+        $ infl[lisa].add_m(12)
+        $ dcv['film_punish'].enabled = False
+        $ dcv['film_punish'].set_lost(0)
+        jump Waiting

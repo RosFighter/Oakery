@@ -26,17 +26,14 @@ screen search_cigarettes():
     use show_dynamic_tooltip
     imagemap:
         ground 'BG char Max cigarettes-00'
-        hotspot (0, 700, 400, 380) action [Hide('dynamic_tooltip'), Cursor(None), Jump('SearchCigarettes.no')]:
-            hovered Cursor('find')
-            unhovered Cursor(None)
+        hotspot (0, 700, 400, 380) action [Hide('dynamic_tooltip'), Jump('SearchCigarettes.no')]:
+            mouse 'find'
             tooltip _("{i}искать под кроватью{/i}")
-        hotspot (0, 310, 615, 330) action [Hide('dynamic_tooltip'), Cursor(None), Jump('SearchCigarettes.bedside')]:
-            hovered Cursor('find')
-            unhovered Cursor(None)
+        hotspot (0, 310, 615, 330) action [Hide('dynamic_tooltip'), Jump('SearchCigarettes.bedside')]:
+            mouse 'find'
             tooltip _("{i}искать в тумбочке{/i}")
-        hotspot (1370, 400, 570, 680) action [Hide('dynamic_tooltip'), Cursor(None), Jump('SearchCigarettes.table')]:
-            hovered Cursor('find')
-            unhovered Cursor(None)
+        hotspot (1370, 400, 570, 680) action [Hide('dynamic_tooltip'), Jump('SearchCigarettes.table')]:
+            mouse 'find'
             tooltip _("{i}искать в столе{/i}")
 
     key 'mouseup_3' action NullAction()
@@ -49,52 +46,42 @@ screen choice_zone_sunscreen():
 
     use show_dynamic_tooltip
     imagemap:
-        if talk_var['sun_oiled'] == 2:
-            ground 'BG char Alice sun-alone 01-01a'
-        else:
-            ground 'BG char Alice sun-alone 01-01'
+        ground 'BG char Alice sun-alone 01f'
+        add 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
         add 'Max sun-alone 01'+mgg.dress
-        hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.left_foot')]:
-            hovered Cursor('palms')
-            unhovered Cursor(None)
+        hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.left_foot')]:
+            mouse 'palms'
             tooltip _("{i}массировать ступни{/i}")
 
-        hotspot (0, 576, 158, 132) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.right_foot')]:
-            hovered Cursor('palms')
-            unhovered Cursor(None)
+        hotspot (0, 576, 158, 132) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.right_foot')]:
+            mouse 'palms'
             tooltip _("{i}массировать ступни{/i}")
 
-        hotspot (224, 349, 348, 118) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.shin')]:
-            hovered Cursor('palms')
-            unhovered Cursor(None)
+        hotspot (224, 349, 348, 118) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.shin')]:
+            mouse 'palms'
             tooltip _("{i}массировать голени{/i}")
 
-        hotspot (181, 552, 391, 122) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.shin')]:
-            hovered Cursor('palms')
-            unhovered Cursor(None)
+        hotspot (181, 552, 391, 122) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.shin')]:
+            mouse 'palms'
             tooltip _("{i}массировать голени{/i}")
 
 
-        if False: # if len(online_cources) > 1 and online_cources[1].current > 0:
-            hotspot (594, 358, 316, 316) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.hips')]:
-                hovered Cursor('palms')
-                unhovered Cursor(None)
+        if all([len(online_cources)>1, online_cources[1].current>0, dcv['eric.lingerie'].stage in [5, 7]]):
+            hotspot (594, 358, 316, 316) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.hips')]:
+                mouse 'palms'
                 tooltip _("{i}массировать бёдра{/i}")
 
-        hotspot (1536, 358, 116, 255) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.shoulders')]:
-            hovered Cursor('palms')
-            unhovered Cursor(None)
+        hotspot (1536, 358, 116, 255) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.shoulders')]:
+            mouse 'palms'
             tooltip _("{i}массировать плечи{/i}")
 
-        hotspot (1146, 363, 374, 250) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.spine')]:
-            hovered Cursor('palms')
-            unhovered Cursor(None)
+        hotspot (1146, 363, 374, 250) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.spine')]:
+            mouse 'palms'
             tooltip _("{i}массировать спину{/i}")
 
         if False:
-            hotspot (924, 348, 206, 326) action [Hide('dynamic_tooltip'), Cursor(None), Jump('massage_sunscreen.ass')]:
-                hovered Cursor('palms')
-                unhovered Cursor(None)
+            hotspot (924, 348, 206, 326) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.ass')]:
+                mouse 'palms'
                 tooltip _("{i}массировать попку{/i}")
 
 

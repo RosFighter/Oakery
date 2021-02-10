@@ -100,11 +100,13 @@ define mems = [
 
 define photo_album = [
         ("01-Kira", _("Порно-портфолио для Киры")),
+        ("02-Kira", _("Немного БДСМ от Киры")),
+        ("01-Alice", _("Первые снимки для блога Алисы")),
     ]
 
 define cur_starts = [0, 0, 0, 0, 0, 0]
 define cur_album = None
-define st_gallery = 'mem'
+default st_gallery =  'mem'
 
 define next_sh = False
 define prev_sh = False
@@ -118,11 +120,11 @@ screen menu_gallery():
         hbox spacing 15:
             textbutton _("ВОСПОМИНАНИЯ"):
                 action SetVariable('st_gallery', 'mem')
-                selected st_gallery=='mem'
+                selected st_gallery == 'mem'
             textbutton _("ФОТОСНИМКИ"):
                 action SetVariable('st_gallery', 'art')
-                selected st_gallery=='art'
-                # sensitive False
+                selected st_gallery == 'art'
+
     imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
@@ -133,7 +135,7 @@ screen menu_gallery():
     if st_gallery == 'mem':
         frame area(140, 160, 1640, 850) xalign 0.0 yalign 0.5 background None:
             hbox spacing 5:
-                viewport mousewheel 'change' draggable True id 'vp' area(0, 0, 1630, 840):# scrollbars "vertical":
+                viewport mousewheel 'change' draggable True id 'vp' area(0, 0, 1630, 840):
                     vbox spacing 10:
                         for i in range(len(cur_starts)):
                             frame ysize 330 padding(0, 0, 0, 0) background None:
@@ -191,8 +193,6 @@ screen menu_gallery():
                     hbox spacing 15:
                         vpgrid cols 3 spacing 40 mousewheel 'change' draggable True id 'vp':
                             for photo in persistent.photos[cur_album]:
-                                # frame xysize(600, 338) background None:
-                                # frame xysize(415, 234) background None:
                                 frame xysize(450, 254) background None:
                                     if photo:
                                         imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot '+cur_album+' '+photo action Show('photo_art', cur_alb=cur_album, photo=photo) at zoom_out(450, 254)
