@@ -1331,21 +1331,20 @@ translate english strings:
 
     # game/core/03variables.rpy:485
     old "Компромат на Эрика"
-    new ""
+    new "Blackmail material on Eric"
 
     # game/core/03variables.rpy:485
     old "Мне случайно удалось заметить, как Эрик посреди ночи стоит около окна в комнату Алисы и дрочит на неё! Не ожидал я такое увидеть... Мне казалось, что Эрик из тех, кто скорее проститутку снимет, чем будет просто дрочить, но как оказалось... я ошибался.\n\nНаверняка он делает это уже не первый раз! Надо понаблюдать за ним по ночам, чтобы заполучить снимок с его грязными делишками... Лучше иметь против него козырь, на случай чего..."
-    new ""
+    new "I happened to notice Eric standing by the window to Alice's room in the middle of the night, jerking off! I didn't expect to see that... I thought Eric was the kind of guy who would rather pick up a hooker than just jerk off, but as it turns out... I was wrong. \n\nI bet this isn't the first time he's done this. We should watch him at night to get a picture of his dirty deeds... It's better to have a bargaining chip against him in case anything happens..."
 
     # game/core/03variables.rpy:485
     old "Получилось! Я сфотографировал, как Эрик дрочит на Алису! Конечно, на самом деле на снимке не понятно, на кого или на что он дрочит, так что не слишком-то эта фотография мне поможет в случае какой-нибудь заварушки с Эриком.\n\nБыло бы хорошо, если бы Эрик обнаглел настолько, что стал дрочить на Алису прямо посреди её комнаты... Вот это уже бы тянуло на компромат! В кадр правда попадёт Алиса, но основное внимание на такой фотографии будет приковано к Эрику. Дело за малым - придумать, как заманить его в комнату Алисы..."
-    new ""
+    new "I did it! I took a picture of Eric jerking off to Alice! Of course, it's not really clear who or what he's jerking off to, so it's not much help to me in case of any kind of trouble.\n\nNo, it would be nice if Erik got cocky enough to jerk off to Alice in the middle of her room... Now that would be some kind of dirt! Alice would be in the picture, but the focus of the photo would be on Eric. It's just a matter of figuring out how to lure him into Alice's room..."
 
     # game/core/03variables.rpy:485
     old "Я так и знал, что Эрик не устоит перед голой и спящей Алисой! Правда, можно ли его за это винить? Я бы на его месте тоже не устоял... Теперь, остаётся лишь успеть сделать снимок, пока он в её комнате..."
-    new ""
+    new "I knew Eric couldn't resist a naked, sleeping Alice! Really, can you blame him for that? I wouldn't be able to resist either... Now, all we have to do is take the picture while he's in her room..."
 
     # game/core/03variables.rpy:485
     old "Вот всё и получилось! У меня есть два снимка, на которых Эрик, как грязный извращенец, дрочит пока все спокойно спят... А на одном из снимков даже видно на кого он дрочит...\n\nМне стоит быть осторожнее с этими снимками, Эрик столько всего делает для моих сестёр, что они запросто могут рассказать о том, что у меня есть. А так же хорошенько подумать над тем, как я буду использовать эти снимки.\n\nЯ могу придержать этот компромат, пойти с ним к Эрику в ближайшее время или же вовсе как-то подставить его..."
-    new ""
-
+    new "So that's it! I have two pictures of Eric jerking off like a pervert while everyone is sleeping peacefully... And in one of the pictures you can even see who he's jerking off to...\n\nI should be careful with these pictures, Eric does so much for my sisters that they could easily tell what I have. I should also think carefully about how I would use them.\n\nI can hold on to these, take the, to Eric's soon, or I can somehow set him up..."

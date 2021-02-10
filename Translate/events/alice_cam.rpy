@@ -517,71 +517,70 @@ translate english cam0_blog_with_Eric_340b426d:
 translate english cam0_alice_sleep_night_64517693:
 
     # Max_09 "Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 ""
+    Max_09 "Hey, there he is! What's he doing there, jacking off or something? Yes... Wow! Eric is jerking off over Alice in her sleep! I didn't know Eric was a fan of that..."
 
 # game/events/alice_cam.rpy:54
 translate english cam0_alice_sleep_night_22b77a79:
 
     # Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 ""
+    Max_09 "Whoa, Eric! What's he doing in there, jacking off or something? Yes... Wow! Eric is jerking off over Alice in her sleep! I didn't know Eric was a fan of that..."
 
 # game/events/alice_cam.rpy:56
 translate english cam0_alice_sleep_night_ba6907da:
 
     # Max_03 "Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!" nointeract
-    Max_03 "" nointeract
+    Max_03 "Maybe I should try to watch him discreetly from the balcony, because somehow I can't even believe it!" nointeract
 
 # game/events/alice_cam.rpy:70
 translate english cam0_alice_sleep_night_5b3adf24:
 
     # Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
-    Max_03 ""
+    Max_03 "Aha! Eric is jerking off over Alice again... Only this time in her room, in front of her! What a pervert."
 
 # game/events/alice_cam.rpy:72
 translate english cam0_alice_sleep_night_e319aa8d:
 
     # Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Aha! Eric is jerking off over Alice again... Only this time in her room, in front of her! What a pervert" nointeract
 
 # game/events/alice_cam.rpy:81
 translate english cam0_alice_sleep_night_badc9d8f:
 
     # Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
-    Max_09 ""
+    Max_09 "Eric is jerking off over Alice again... Really? Even I don't stoop to that..."
 
 # game/events/alice_cam.rpy:83
 translate english cam0_alice_sleep_night_1d708372:
 
     # Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..." nointeract
-    Max_09 "" nointeract
+    Max_09 "Eric is jerking off over Alice again... Really? Even I don't stoop to that..." nointeract
 
 # game/events/alice_cam.rpy:95
 translate english cam0_alice_sleep_night_902c46ec:
 
     # Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
-    Max_04 ""
+    Max_04 "Alice is asleep... All naked and beautiful..."
 
 # game/events/alice_cam.rpy:112
 translate english cam0_alice_sleep_morning_902c46ec:
 
     # Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
-    Max_04 ""
+    Max_04 "Alice is asleep... All naked and beautiful..."
 
 translate english strings:
 
     # game/events/alice_cam.rpy:56
     old "{i}Конечно{/i}"
-    new ""
+    new "{i}Of course{/i}"
 
     # game/events/alice_cam.rpy:72
     old "{i}Взять фотоаппарат и пойти к окну Алисы {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
-    new ""
+    new "{i}Take the camera and go to Alice's window {color=[_ch1.col]}(Luck. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/events/alice_cam.rpy:72
     old "{i}Да и хрен с ним, пусть дрочит{/i}"
-    new ""
+    new "{i}Fuck it, let him jerk off{/i}"
 
     # game/events/alice_cam.rpy:83
     old "{i}Взять фотоаппарат и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
-    new ""
-
+    new "{i}Take the camera and go to the balcony {color=[_ch1.col]}(Luck. Chance: [_ch1.vis]){/color}{/i}"
