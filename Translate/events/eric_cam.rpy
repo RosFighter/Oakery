@@ -346,3 +346,23 @@ translate english cam0_sexed_lisa_6253e993:
     # Max_08 "{i}( О, Эрик не выдержал и кончил... Хотя, вряд ли. Скорее всего, они решили показать Лизе для чего это всё было нужно. ){/i}"
     Max_08 "{i}( Oh, Eric couldn't take it and came... It's likely they decided to show Lisa what it was all about. ){/i}"
 
+# TODO: Translation updated at 2021-02-10 16:35
+
+# game/events/eric_cam.rpy:13
+translate english cam0_eric_ann_sleep_7477b46c:
+
+    # Max_07 "Как же повезло, что у меня такая горячая мама... Стойте-ка, а Эрик где?! Может, пошёл в ванную комнату? Или ещё куда..."
+    Max_07 ""
+
+# game/events/eric_cam.rpy:15
+translate english cam0_eric_ann_sleep_748c66b8:
+
+    # Max_07 "Как же повезло, что у меня такая горячая мама... А Эрик опять где-то полуночничает..."
+    Max_07 ""
+
+# game/events/eric_cam.rpy:20
+translate english cam0_eric_ann_sleep_2e831607:
+
+    # Max_01 "Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"
+    Max_01 ""
+
