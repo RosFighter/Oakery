@@ -1693,6 +1693,7 @@ label liza_hand_mass:
                             $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
+                            $ talk_var['kiss_massage'] += 1
                             $ renpy.end_replay()
                             $ Skill('kissing', 0.2, 4.5)
                             $ __rel = 5
@@ -1752,6 +1753,7 @@ label liza_hand_mass:
                             $ __rel = 5
                             $ __mood += 100
                             $ talk_var['kiss_lessons'] += 1
+                            $ talk_var['kiss_massage'] += 1
                             $ add_lim('lisa.free', 0.1, 7)
                 else:
                     scene BG char Lisa massage-kisses-01

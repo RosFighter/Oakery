@@ -14,7 +14,7 @@ label cam0_eric_ann_sleep:
         else:
             Max_07 "Как же повезло, что у меня такая горячая мама... А Эрик опять где-то полуночничает..."
 
-    elif all([flags['eric.jerk'], '02:00'<=tm<'02:30', flags['eric.noticed'], 'ann_sleep_alone' not in cam_flag]) or not check_is_room('eric'):
+    elif all([flags['eric.jerk'], '02:00'<=tm<'02:30', flags['eric.noticed'], 'ann_sleep_alone' not in cam_flag]) or not check_is_room('eric', house[2]):
         # Эрик уже замечен или с Кирой в ванной
         $ cam_flag.append('ann_sleep_alone')
         Max_01 "Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"

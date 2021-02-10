@@ -700,7 +700,7 @@ label eric_ann_sleep:
                     # уже знаем, что Эрик в комнате Алисы
                     jump .not_eric
 
-            elif not check_is_room('eric'):
+            elif not check_is_room('eric', house[2]):
                 # Эрик с Кирой
                 $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
                 $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)

@@ -1478,15 +1478,15 @@ label after_load_06_0:
         if 'kira' in chars:
             $ infl[kira] = Influence()
 
-        if poss['Swimsuit'].stages[2].used:
-            $ infl[lisa].add_e(30, True)
-        else:
+        if poss['Swimsuit'].stages[3].used:
             $ infl[lisa].add_m(30, True)
-
-        if poss['nightclub'].stages[2].used or poss['nightclub'].stages[3].used:
-            $ infl[alice].add_e(30, True)
         else:
+            $ infl[lisa].add_e(30, True)
+
+        if poss['nightclub'].stages[4]:
             $ infl[alice].add_m(30, True)
+        else:
+            $ infl[alice].add_e(30, True)
 
         if 'bathrobe' in lisa.gifts:
             $ infl[lisa].add_m(30, True)

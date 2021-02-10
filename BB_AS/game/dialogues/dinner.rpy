@@ -798,7 +798,7 @@ label dinner_after_punishment:
         jump dinner_ab_lisa_ed
     elif all([GetWeekday(day)==0, dcv['ae_ed_lisa'].done, not flags['dinner_ab_earn'],
             (talk_var['fight_for_Lisa'] in [4, 6] and dcv['ae_ed_lisa'].stage==1 and talk_var['ae_lisa_number']==1)
-                or (talk_var['fight_for_Lisa']==5 and dcv['ae_ed_lisa'].stage==0)]):
+                or (talk_var['fight_for_Lisa']==2 and dcv['ae_ed_lisa'].stage==0)]):
         jump dinner_ab_earn
     elif all([items['sexbody2'].have, dcv['eric.lingerie'].stage<5]):
         jump dinner_lace_lingerie

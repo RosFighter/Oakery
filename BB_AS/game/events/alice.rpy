@@ -874,7 +874,7 @@ label spider_in_bed:
     $ __naked = False
     $ __toples = False
     if 'smoke' in talk_var and flags['smoke'] == 'sleep':
-        $ __suf = 't'
+        $ __suf = alice.dress[:1]+'t'
         $ __toples = True
     elif 'smoke' in talk_var and flags['smoke'] == 'naked':
         $ __suf = 'n'
@@ -930,7 +930,7 @@ label spider_in_bed:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
             "А что мне за это будет?" if all([not __toples, not __naked, not flags['noted']]):  # Вариант недоступен, если Алиса без лифчика или нарушает договоренность и Макс об этом знает
                 show Max spider-night 03-02
-                $ renpy.show('Alice spider-night 03-04'+alice.dress+__suf)
+                $ renpy.show('Alice spider-night 03-04'+__suf)
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
                     "Давай $10! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
@@ -1996,6 +1996,7 @@ label alice_body_photoset1:
 label alice_towel_after_club:
     scene location house bathroom door-evening
     menu:
+        Max ""
         "{i}постучаться{/i}" if flags['alice.drink'] < 2:
             Alice "{b}Алиса:{/b} Кому там не спится? Я ванну принимаю..."
             Max_02 "Это я, Макс. Полотенце твоё принёс."

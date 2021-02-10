@@ -316,7 +316,7 @@ label punishment_max:
         if tm < "14:00":
             $ renpy.show("Max punish-morning 02"+('c' if newpunishment == 1 else 'ca'))
         else:
-            $ renpy.show("Max punish-evening 02"('c' if newpunishment == 1 else 'ca'))
+            $ renpy.show("Max punish-evening 02"+('c' if newpunishment == 1 else 'ca'))
         Ann_14 "Хорошо. А теперь, ложись на мои колени и приступим, а то все голодные сидят..."
         if tm < "14:00":
             scene BG punish-morning 02
@@ -348,7 +348,8 @@ label punishment_max:
             $ talk_var['eric.voy.stage']=1 # если Макс попался на подглядывании за трахом Ани и Эрика, на пути дружбы с ним
         python:
             for cr in current_room.cur_char:
-                infl[chars[cr]].sub_m(5, True)
+                if chars[cr] in infl:
+                    infl[chars[cr]].sub_m(5, True)
             # обнуление провинностей
             for d in range(len(punreason)):
                 punreason[d] = 0

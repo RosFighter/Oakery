@@ -48,6 +48,8 @@ screen choice_zone_sunscreen():
     imagemap:
         ground 'BG char Alice sun-alone 01f'
         add 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
+        idle 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
+        hover 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
         add 'Max sun-alone 01'+mgg.dress
         hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.left_foot')]:
             mouse 'palms'

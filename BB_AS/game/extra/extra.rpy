@@ -105,7 +105,7 @@ define photo_album = [
     ]
 
 define cur_starts = [0, 0, 0, 0, 0, 0]
-define cur_album = None
+default cur_album = None
 default st_gallery =  'mem'
 
 define next_sh = False

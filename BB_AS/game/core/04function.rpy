@@ -604,7 +604,7 @@ init python:
         global cur_shed
         mgg.dress = clothes[mgg].casual.GetCur().suf
 
-        if all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]):
+        if all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6]):
             clothes[ann].casual.GetCur().suf = 'a'
 
         for char in chars:
@@ -722,8 +722,8 @@ init python:
                 if not ('09:00' <= tm < '20:00'):
                     inf += 'a'
             elif name == 'blog':
-                if (all(['black_linderie' in alice.gifts, GetWeekday(day) in [1, 4], poss['blog'].stn>4, dcv['alice.secret'].done])
-                    or (GetWeekday(day)==3, dcv['eric.lingerie'].enabled)):
+                if (GetWeekday(day) in [1, 4, 5] and all(['black_linderie' in alice.gifts, poss['blog'].stn>4, dcv['alice.secret'].done])
+                    or (GetWeekday(day)==3 and dcv['eric.lingerie'].enabled)):
                     # блог в нижнем белье
                     global cur_blog_lingerie, blog_lingerie
                     if not cur_blog_lingerie:
@@ -986,7 +986,7 @@ init python:
                 day == 4,
                 day == 11,
                 ('eric' in chars and eric.plan_name == 'dinner'),
-                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6]),
+                all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6]),
             ]):
             renpy.show('Eric dinner 0'+renpy.random.choice(['1', '2', '3'])+eric.dress)
             renpy.show('Ann dinner 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
@@ -1000,7 +1000,7 @@ init python:
                 day == 4,
                 day == 11,
                 ('eric' in chars and eric.plan_name == 'dinner'),
-                all([day>=11, GetWeekday(day)==6, talk_var['dinner']==6])
+                all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6])
             ]):
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
         else:
@@ -1206,16 +1206,21 @@ init python:
     def check_only_home(char, loc='house'):  # проверяет, что кроме этого персонажа и Макса дома больше никого нет
         rez = True
         for ch in chars:
-            char_loc = chars[char].get_plan().loc
-            if ch != char and loc == char_loc:
+            if ch == char:
+                continue
+            char_loc = chars[ch].get_plan().loc
+            if loc == char_loc:
                 rez = False
                 break
         return rez
 
 
-    def check_is_room(char): # проверяет по расписанию, находится ли персонаж в текущей комнате
+    def check_is_room(char, room=None): # проверяет по расписанию, находится ли персонаж в текущей комнате
         plan_char = chars[char].get_plan()
-        return eval(plan_char.loc+'['+str(plan_char.room)+']')==current_room
+        if room is None:
+            return eval(plan_char.loc+'['+str(plan_char.room)+']')==current_room
+        else:
+            return eval(plan_char.loc+'['+str(plan_char.room)+']')==room
 
 
     def add_lim(var, a, limit):
