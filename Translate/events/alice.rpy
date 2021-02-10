@@ -3263,209 +3263,208 @@ translate english alice_towel_after_club_52206218:
 translate english alice_sleep_night_395216d9:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела, в одних лишь трусиках, хочется смотреть вечно!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Oh, yes! My big sister looks amazing... I could stare at the curves of her body in just her panties forever!" nointeract
 
 # game/events/alice.rpy:117
 translate english alice_sleep_night_8dcd010e:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её совершенно обнажённого тела хочется смотреть вечно!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Oh, yes! My big sister looks amazing... I could stare at the curves of her totally naked body forever!" nointeract
 
 # game/events/alice.rpy:119
 translate english alice_sleep_night_ba29de31:
 
     # Max_04 "Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою голенькую попку для меня во всей красе." nointeract
-    Max_04 "" nointeract
+    Max_04 "Wow, I'm lucky Alice sleeps with her back to the window... And she has no idea that she is showing her naked ass for me." nointeract
 
 # game/events/alice.rpy:121
 translate english alice_sleep_night_9133399c_1:
 
     # Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище..." nointeract
-    Max_01 "" nointeract
+    Max_01 "Amazing! My sister sleeps with her back out, making her naked tits stick out like two mounds... A seductive sight..." nointeract
 
 # game/events/alice.rpy:157
 translate english alice_sleep_night_5050f40d:
 
     # Max_03 "Да уж... Её обворожительной попкой можно любоваться бесконечно... Так и хочется кое-что в неё присунуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Yeah... I can't stop admiring her beautiful ass... I want to put something in her... But that would be the last thing I'd ever do. I should go quietly." nointeract
 
 # game/events/alice.rpy:159
 translate english alice_sleep_night_5bde02e1:
 
     # Max_02 "Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы не лежал без дела, а как следует её... Но пора уходить, а то ещё проснётся..." nointeract
-    Max_02 "" nointeract
+    Max_02 "Great! Alice may be my sister, but next to her firm ass, I couldn't stop myself... But it's time to go, or she'll wake up..." nointeract
 
 # game/events/alice.rpy:161
 translate english alice_sleep_night_6bde2145:
 
     # Max_05 "Чёрт, какая же она притягательная, когда лежит вот так, полностью голая... И как будто только и ждёт, когда я занырну между этих сисечек и её стройных ножек! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "" nointeract
+    Max_05 "Damn, she's so hot lying there, completely naked... It's like she's just waiting for me to dive in between those tits and her legs! I wish she wouldn't wake up now..." nointeract
 
 # game/events/alice.rpy:200
 translate english alice_sleep_morning_e17fb6e5:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, совершенно голую фигурку как следует..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Yes! Alice is still asleep, which certainly pleases me... Because it means that I can see her cool, completely naked figure properly..." nointeract
 
 # game/events/alice.rpy:202
 translate english alice_sleep_morning_a794e7b7:
 
     # Max_01 "Чёрт! Как же хорошо, что теперь она спит голая и я могу насладится всей красотой её тела, и ещё как... Обалденные у неё сиськи!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Shit! It's good that she's sleeping naked now, so I can enjoy all the beauty of her body, and also... Her tits are amazing!" nointeract
 
 # game/events/alice.rpy:204
 translate english alice_sleep_morning_341e820c:
 
     # Max_04 "Вот это да! От таких соблазнительных изгибов её полностью голого тела можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!" nointeract
-    Max_04 "" nointeract
+    Max_04 "Wow, her completely naked body is so seductive I could faint... What a great big sister I have!" nointeract
 
 # game/events/alice.rpy:242
 translate english alice_sleep_morning_4a356b2c:
 
     # Max_05 "Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! А после натянуть её на свой... И ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти." nointeract
-    Max_05 "" nointeract
+    Max_05 "Oh, the sight of that leaves only the most vulgar thoughts in my head... I want to squeeze that ass! And then I want to put it on my... And... she might wake up, I think I'd like to get out of here quietly." nointeract
 
 # game/events/alice.rpy:244
 translate english alice_sleep_morning_dc8fde31_1:
 
     # Max_03 "О, да! Не лечь и не приобнять эту нежную попку – настоящее преступление... Как и поласкать эти аппетитные сосочки! Только вот Алиса посчитает иначе и оторвёт мне голову прямо здесь. Так что лучше потихоньку уходить..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Oh, yes! It's a crime not to lie down with that ass... So is not fondling those luscious nipples! Except that Alice would think otherwise and rip my head off right here. So it's better to leave quietly..." nointeract
 
 # game/events/alice.rpy:246
 translate english alice_sleep_morning_bf1517f6:
 
     # Max_02 "Вот чёрт! С каким же огромным удовольствием я бы запустил свои руки во все самые интересные места на ёё теле... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится." nointeract
-    Max_02 "" nointeract
+    Max_02 "Oh, shit! What a great pleasure it would be to run my hands into all the most interesting places on her body... Ah, nice, sis, but it's time to go... If she wakes up, I'll be in trouble." nointeract
 
 # game/events/alice.rpy:937
 translate english spider_in_bed_help_934b274d_1:
 
     # Alice_12 "Что ты хочешь за смерть этого паука?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "What will it take for you to kill the spider?" nointeract
 
 # game/events/alice.rpy:945
 translate english spider_in_bed_help_fb30def5:
 
     # Alice_09 "Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
-    Alice_09 ""
+    Alice_09 "Ah! How boring... All right, look, I'm being nice today. Now kill it already!"
 
 # game/events/alice.rpy:946
 translate english spider_in_bed_help_eccbb760:
 
     # Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
-    Max_04 ""
+    Max_04 "Nice tits! Okay, where's that spider..."
 
 # game/events/alice.rpy:948
 translate english spider_in_bed_help_fc956f29:
 
     # Alice_06 "В смысле не прикрывайся руками?! Совсем что ли обнаглел! Я и так перед тобой тут голая стою, рук всё прикрыть не хватает... Тебе этого мало что ли?!"
-    Alice_06 ""
+    Alice_06 "What do you mean, don't use your hands?! You've got some nerve! I'm standing here naked in front of you... Isn't that enough?!"
 
 # game/events/alice.rpy:949
 translate english spider_in_bed_help_9c7305a3:
 
     # Max_02 "Без рук будет поинтереснее!"
-    Max_02 ""
+    Max_02 "I'll be more motivated if you don't use your hands!"
 
 # game/events/alice.rpy:950
 translate english spider_in_bed_help_68df7bcb:
 
     # Alice_17 "Да я сама тебя сейчас без рук оставлю! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
-    Alice_17 ""
+    Alice_17 "And I'll cut yours off if you keep it up! Hurry up and kill it! One of you will die today and you know I'm not touching that spider!"
 
 # game/events/alice.rpy:951
 translate english spider_in_bed_help_11231cfc:
 
     # Max_08 "Ух, какая ты кровожадная. Ну ладно..."
-    Max_08 ""
+    Max_08 "Wow, you are so bloodthirsty. Okay, fine..."
 
 # game/events/alice.rpy:971
 translate english spider_in_bed_help_25aa0e24:
 
     # Alice_12 "Серьёзно, Макс?! Может я оделась и прибежала! Как тебе такое, а?"
-    Alice_12 ""
+    Alice_12 "Seriously, Max?! Maybe I got dressed and came running! How about that, huh?"
 
 # game/events/alice.rpy:973
 translate english spider_in_bed_help_06748eac:
 
     # Max_09 "Что я тебя, не знаю что ли! Ты так боишься пауков, что одежда - это последнее, о чём ты вспомнишь увидя их. Ты просто наплевала на наш уговор, а я ведь твою задницу спас от маминой хлёсткой руки... Я его тоже тогда соблюдать не стану, так что завтра получишь! Приятных снов..."
-    Max_09 ""
+    Max_09 "Don't I know you! You're so afraid of spiders that your clothes are the last thing you'll think of when you see them. You just ignored our agreement, and I saved your ass from Mom... I won't honor it either, so you'll get it tomorrow. Sweet dreams..."
 
 # game/events/alice.rpy:974
 translate english spider_in_bed_help_60173e5f_1:
 
     # Alice_14 "Нет, нет, нет! Ты куда собрался?! У меня же паук на кровати!"
-    Alice_14 ""
+    Alice_14 "No, no, no! Where are you going?! There's a spider on my bed!"
 
 # game/events/alice.rpy:975
 translate english spider_in_bed_help_c57400a7_1:
 
     # Max_07 "Что тут скажешь... Успехов тебе!"
-    Max_07 ""
+    Max_07 "What can I say? Good luck!"
 
 # game/events/alice.rpy:976
 translate english spider_in_bed_help_363f3548:
 
     # Alice_06 "Ну не надо так, Макс! Я не буду больше нарушать наш уговор, только избавься от паука... Пожалуйста!" nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Don't be like that, Max! I won't break our deal anymore, just get rid of the spider... Please!" nointeract
 
 # game/events/alice.rpy:984
 translate english spider_in_bed_help_4a5e6693:
 
     # Alice_06 "Ну вот... разделась... И не говори, что этого мало... Я и так перед тобой тут голая стою, рук всё прикрыть не хватает... Доволен?" nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Here we go... I got undressed... Don't tell me it's not enough... I'm standing here naked in front of you, I can't cover up... Are you happy?" nointeract
 
 # game/events/alice.rpy:989
 translate english spider_in_bed_help_bb493632:
 
     # Alice_14 "Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
-    Alice_14 ""
+    Alice_14 "Ah! You boor... All right, look quick. And kill it already!"
 
 # game/events/alice.rpy:990
 translate english spider_in_bed_help_eccbb760_1:
 
     # Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
-    Max_04 ""
+    Max_04 "Nice tits! Okay, where is that spider of yours..."
 
 # game/events/alice.rpy:992
 translate english spider_in_bed_help_974a3fd9:
 
     # Alice_12 "Вот и хватит глазеть! Давай уже, лови этого паука!"
-    Alice_12 ""
+    Alice_12 "That's enough staring! Come on, catch that spider!"
 
 # game/events/alice.rpy:993
 translate english spider_in_bed_help_27c7b667:
 
     # Max_04 "Классная у тебя фигура, сестрёнка! Особенно когда ты голенькая. Ну да ладно, теперь можно и поймать..."
-    Max_04 ""
+    Max_04 "You have such a nice body, sis! You should walk around naked more often. Oh, yeah, now we can catch it..."
 
 # game/events/alice.rpy:1013
 translate english spider_in_bed_help_165abb28_1:
 
     # Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
-    Alice_13 ""
+    Alice_13 "You're such a pervert! Aren't you ashamed to ask me that?!"
 
 # game/events/alice.rpy:1014
 translate english spider_in_bed_help_adbdf35e_1:
 
     # Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
-    Max_01 ""
+    Max_01 "It's your own fault! I wanted to be nice to you... I can't let you get away with it now, can I?"
 
 translate english strings:
 
     # game/events/alice.rpy:937
     old "Не прикрывайся руками!"
-    new ""
+    new "Don't cover yourself with your hands!"
 
     # game/events/alice.rpy:976
     old "Раздевайся!"
-    new ""
+    new "Take your clothes off!"
 
     # game/events/alice.rpy:984
     old "Сиськи ещё покажи..."
-    new ""
+    new "Show me your tits..."
 
     # game/events/alice.rpy:984
     old "О да, я очень доволен!"
-    new ""
-
+    new "Oh yes, I am very pleased!"
