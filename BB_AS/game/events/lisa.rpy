@@ -3,7 +3,7 @@
 
 label lisa_sleep_night:
     if all([flags['film_punish'], not dcv['film_punish'].done, tm < '00:30']):
-        call lisa_select_movie
+        call lisa_select_movie from _call_lisa_select_movie
 
     scene BG char Lisa bed-night
     $ AvailableActions['touch'].active = True

@@ -757,7 +757,7 @@ label dinner_lace_lingerie:
     Max_01 "Пока, мам..."
 
     # делаем корректировку расписания на 1 день
-    call friday_without_club
+    call friday_without_club from _call_friday_without_club
 
     jump after_dinner
 

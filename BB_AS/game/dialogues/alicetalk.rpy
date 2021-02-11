@@ -2058,11 +2058,11 @@ label massage_sunscreen:
             $ renpy.show('Alice sun-alone 08'+_suf+mgg.dress)
         else:
             # sun-alone-01 + sun-alone-09-max-(01a/01b)-alice-(01/01a)
-            scene BG char Alice sun-alone 01
+            scene BG char Alice sun-alone 01f
             $ renpy.show('Alice sun-alone 09'+_suf+mgg.dress)
 
         if 'hips' in _massaged:
-            # спина уже массировалась
+            # бёдна уже массировались
             jump .double
 
         if not len(_massaged):
@@ -3360,7 +3360,7 @@ label gift_black_lingerie:
     Alice_03 "Сомневаюсь, если честно. Ты знаешь... Давай попробуем на всякий случай ещё кое-что. Поищи что-нибудь более сексуальное. Ничего не обещаю, но вдруг поможет..."
     Max_01 "Хорошо, я что-нибудь подыщу..."
     $ renpy.end_replay()
-    call alice_add_black_linderie
+    call alice_add_black_linderie from _call_alice_add_black_linderie
 
     $ spent_time += 30
     jump Waiting
@@ -3446,6 +3446,9 @@ label alice_about_lingerie0:
 label alice_showing_lingerie1:  #Алиса показывает Максу бельё, которое она выбрала
     #если Алиса за ноутбуком (во время блога и утром)
     #blog-desk-01 + alice 02 + max 04 (для блога, для утра - на фон кровати Алисы)
+    if tm>='20:00' and GetWeekday(day) in [3, 4]:
+        $ renpy.show('Alice blog 02'+alice.dress)
+        $ renpy.show('Max blog 04'+mgg.dress)
     Alice_03 "Вот, смотри... Боди, как боди, слегка прозрачное и кружевное. Всё, как вы, мальчики, любите."
     Max_03 "Ну да, мне уже не терпится увидеть его на тебе!"
     Alice_05 "Это если я ещё разрешу тебе смотреть на меня в этом боди! Вот Эрик купит - ему и можно будет смотреть, ну и тем, для кого я всё это рекламирую."
@@ -3484,7 +3487,7 @@ label gift_lace_lingerie:
     #spider-night-04 + aliceroom-blog-dresses-01-max-(02/02a) + Алиса раздевается(spider-night-04-alice-(04/05/06) / spider-night-04-alice-(04a/05a/06a) / aliceroom-blog-dresses-01-alice-(04a/05a/06a))
     $ renpy.show('Max newbody2 02'+mgg.dress)
     Alice_05 "Смотри мне, Макс! Я ведь сразу увижу в зеркало, если ты начнёшь подглядывать сквозь пальцы. Ты же не хочешь получить с ноги за это?"
-    $ _ch1 = GetChance(mgg.stealth, 1, 900)
+    $ _ch1 = GetChance(mgg.stealth, 1.5, 900)
     menu:
         Max_19 "Естественно, не хочу."
         "{i}подглядывать {color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":

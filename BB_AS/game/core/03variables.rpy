@@ -512,11 +512,11 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, 0<poss['seduction'].stn<5])", sleep=True, cut=True),
         'Kira arrival'     : CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([GetWeekday(day)==6, day>=18, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True),
         'MorningWoodCont2' : CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv['mw'].done, lisa.GetMood()[0]>2])", sleep=True, cut=True),
-        'Eric_talkLisa0'   : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
-        'Eric_talkLisa1'   : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done])", cut=True),
-        'Eric_talkAlice0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)])", cut=True),
-        'Eric_talkAlice1'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done])", cut=True),
-        'Eric_ab_laceling' : CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all(['sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7])", cut=True),
+        'Eric_talkLisa0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
+        'Eric_talkLisa1'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([GetWeekday(day)==6, talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done])", cut=True),
+        'Eric_talkAlice0' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([GetWeekday(day)==6, talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)])", cut=True),
+        'Eric_talkAlice1' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([GetWeekday(day)==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done])", cut=True),
+        'Eric_ab_laceling': CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7])", cut=True),
         }
     # Переменные влияющие на запуск диалогов
     $ talk_var = {
@@ -588,24 +588,27 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'alice.prudence' : Daily(done=True),  # дни благоразумия (Алиса не нарушает условий Макса)
         }
 
+    $ wcv = {}
+
     # ежедневное подсматривание
     $ peeping = {
-        'ann_shower'   : 0,
-        'lisa_shower'  : 0,
-        'alice_shower' : 0,
-        'ann_dressed'  : 0,
-        'lisa_dressed' : 0,
-        'alice_dressed': 0,
-        'ann_eric_tv'  : 0,
-        'ann_eric_sex1': 0,
-        'ann_eric_sex2': 0,
-        'ann_bath'     : 0,
-        'lisa_bath'    : 0,
-        'alice_bath'   : 0,
-        'alice_sleep'  : 0,
-        'ann_sleep'    : 0,
-        'alice_blog'   : 0,
-        'ael_sexed'    : 0,
+        'ann_shower'     : 0,
+        'lisa_shower'    : 0,
+        'alice_shower'   : 0,
+        'ann_dressed'    : 0,
+        'lisa_dressed'   : 0,
+        'alice_dressed'  : 0,
+        'ann_eric_tv'    : 0,
+        'ann_eric_sex1'  : 0,
+        'ann_eric_sex2'  : 0,
+        'ann_bath'       : 0,
+        'lisa_bath'      : 0,
+        'alice_bath'     : 0,
+        'alice_sleep'    : 0,
+        'ann_sleep'      : 0,
+        'alice_blog'     : 0,
+        'ael_sexed'      : 0,
+        'blog_with_eric' : 0,
         }
     return
 
@@ -875,9 +878,7 @@ label AddKira:
 
     $ dcv['kiratalkcuni'] = Daily(done=True, enabled=True)
 
-    $ wcv = {
-            'catch.Kira' : Weekly(4),  # счетчик недель до гарантированного спаливания Киры Эриком (после активации)
-        }
+    $ wcv['catch.Kira'] = Weekly(4)  # счетчик недель до гарантированного спаливания Киры Эриком (после активации)
 
     $ added_mem_var('kira')
 
@@ -888,6 +889,8 @@ label AddKira:
             PossStage("interface poss aunt ep03", _("Кира предложила мне немного заработать. Нужно лишь её пофотографировать. Вот только для этих целей нужен фотоаппарат. Конечно, вряд-ли она заплатит мне столько, сколько стоит фотоаппарат, зато есть шанс, что мне что-нибудь обломится другое за эту фотосессию...")), #3
             PossStage("interface poss aunt ep05", _("Фотосессия вышла классная, хоть ничего нового я для себя и не открыл. Ну почти, были интересные моменты, а это намного лучше, чем вообще ничего! Теперь нужно немного подождать, чтобы стало понятно, насколько удачными получились снимки. Может я даже что-то и получу за эту фотосессию...")), #4
             PossStage("interface poss aunt ep05", _("Итак, снимки вышли удачными и мы с Кирой договорились на новую фотосессию, пока никого не будет дома. Но ещё не ясно, когда мы её проведём... Интересно, что такое Кира хочет достать для съёмок!? Остаётся только ждать...")), #5
+            PossStage("interface poss aunt ep07", _("Вот и состоялась вторая фотосессия! И она была отпадной! Не только потому что Кира решила пофотографироваться на тему БДСМ, но и потому что у нас был секс... Мой первый, настоящий секс... Теперь я официально больше не девственник! Вернее, неофициально... я ведь трахался с тётей. Надеюсь, не в последний раз! Хотя, с этим Эриком, который во всё лезет, лучше быть очень осторожным..."),
+                        _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")), #6
         ])
 
     $ infl[kira] = Influence()
@@ -924,21 +927,31 @@ label alice_add_black_linderie:
 
 label friday_without_club:
 
+    $ flags['noclub'] = True
+
     $ kira.add_schedule(
-        Schedule((6,), '0:00', '3:59', 'None', variable="friday_without_a_club()"),
-        #
-        Schedule((6,), '0:00', '2:59', 'nightclub', 'в ночном клубе с Алисой', variable="not friday_without_a_club()"),
-        Schedule((6,), '3:00', '3:59', 'return', 'возвращение из ночного клуба', 'house', 6, 'return_from_club', variable="not friday_without_a_club()", enabletalk=False, glow=130),
+        Schedule((6,), '0:00', '2:59', 'None', variable="flags['noclub']"),
+        Schedule((6,), '0:00', '2:59', 'nightclub', 'в ночном клубе с Алисой', variable="not flags['noclub']"),
+        Schedule((6,), '3:00', '3:59', 'None', variable="flags['noclub']"),
+        Schedule((6,), '3:00', '3:59', 'return', 'возвращение из ночного клуба', 'house', 6, 'return_from_club', variable="not flags['noclub']", enabletalk=False, glow=130),
         )
 
     $ alice.add_schedule(
-            Schedule((5,), '20:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="friday_without_a_club()", enabletalk=False, glow=150),
-            Schedule((5,), '22:0', '23:59', 'tv', "смотрит ТВ", 'house', 4, 'alice_tv', variable="friday_without_a_club()", talklabel='alice_tv_closer'),
-            Schedule((6,), '0:0', '0:59', 'bath', "принимает ванну", 'house', 3, 'alice_bath', variable="friday_without_a_club()", enabletalk=False, glow=120),
-            Schedule((6,), '1:0', '3:59', 'sleep', "спит (ночь)", 'house', 1, 'alice_sleep_night', variable="friday_without_a_club()", enabletalk=False, glow=105),
-            #
-            Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', variable="not friday_without_a_club()", enabletalk=False, glow=110),
-            Schedule((5,), '21:0', '23:59', 'club', 'в ночном клубе', variable="not friday_without_a_club()"),
-            Schedule((6,), '0:0', '2:59', 'club', 'в ночном клубе', variable="not friday_without_a_club()"),
-            Schedule((6,), '3:00', '3:59', 'return', 'возвращение из ночного клуба', 'house', 6, 'return_from_club', variable="not friday_without_a_club()", enabletalk=False, glow=130),
+            Schedule((5,), '20:0', '20:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="flags['noclub']", enabletalk=False, glow=150),
+            Schedule((5,), '20:0', '20:59', 'dressed', 'одевается в ночной клуб', 'house', 1, 'alice_dressed_club', variable="not flags['noclub']", enabletalk=False, glow=110),
+
+            Schedule((5,), '21:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="flags['noclub']", enabletalk=False, glow=150),
+            Schedule((5,), '21:0', '21:59', 'club', 'в ночном клубе', variable="not flags['noclub']"),
+
+            Schedule((5,), '22:0', '23:59', 'tv', "смотрит ТВ", 'house', 4, 'alice_tv', variable="flags['noclub']", talklabel='alice_tv_closer'),
+            Schedule((5,), '22:0', '23:59', 'club', 'в ночном клубе', variable="not flags['noclub']"),
+            Schedule((6,), '0:0', '0:59', 'bath', "принимает ванну", 'house', 3, 'alice_bath', variable="flags['noclub']", enabletalk=False, glow=120),
+            Schedule((6,), '0:0', '0:59', 'club', 'в ночном клубе', variable="not flags['noclub']"),
+            Schedule((6,), '1:0', '2:59', 'sleep', "спит (ночь)", 'house', 1, 'alice_sleep_night', variable="flags['noclub']", enabletalk=False, glow=105),
+            Schedule((6,), '1:0', '2:59', 'club', 'в ночном клубе', variable="not flags['noclub']"),
+            Schedule((6,), '3:0', '3:59', 'sleep', "спит (ночь)", 'house', 1, 'alice_sleep_night', variable="flags['noclub']", enabletalk=False, glow=105),
+            Schedule((6,), '3:0', '3:59', 'return', 'возвращение из ночного клуба', 'house', 6, 'return_from_club', variable="not flags['noclub']", enabletalk=False, glow=130),
         )
+
+
+    return

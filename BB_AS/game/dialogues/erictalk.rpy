@@ -566,6 +566,10 @@ label Eric_talk_about_Alice_1:
 
 
 label Eric_talk_about_lace_lingerie:
+    scene BG char Max talk-terrace-00
+    $ renpy.show('Eric talk-terrace 01'+eric.dress)
+    $ renpy.show('Max talk-terrace 02'+mgg.dress)
+
     Eric_01 "Задержись, Макс. Нужно поговорить наедине."
 
     if GetRelMax('eric')[0]>0:

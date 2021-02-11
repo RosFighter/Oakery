@@ -10,9 +10,9 @@ label cam0_alice_sleep_night:
     if flags['eric.jerk'] and '02:00'<=tm<'02:30':
         # показываем дрочащего Эрика
         if alice.sleepnaked:
-            show Eric cams Alice-room 02
+            show Eric cams Alice-room 02 at laptop_screen
         else:
-            show Eric cams Alice-room 01
+            show Eric cams Alice-room 01 at laptop_screen
 
     show FG cam-shum-act at laptop_screen
 

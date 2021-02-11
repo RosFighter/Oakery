@@ -610,7 +610,14 @@ init python:
         for char in chars:
             prev_shed = chars[char].get_plan(prevday, prevtime)
             cur_shed  = chars[char].get_plan()
-            if prev_shed.name != cur_shed.name: # начато новое действие, значит меняем одежду
+            # if cur_shed is None:
+            #     print char
+            #     print day, tm
+            # if prev_shed is None:
+            #     print 'prev', char
+            #     print cur_shed.name
+            #     print prevday, prevtime
+            if (prev_shed is None and cur_shed is not None) or (cur_shed is not None and prev_shed.name!=cur_shed.name): # начато новое действие, значит меняем одежду
 
                 # удалим флаг подсматривания за персонажем через камеры при смене текущего действия
                 for cur_act in cam_flag:
@@ -1428,8 +1435,10 @@ init python:
 
     def ready_for_blog0():
         eric.add_schedule(Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150))
-        alice.add_schedule(Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150))
-
+        alice.add_schedule(
+                Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150),
+                Schedule((3,), '21:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="dcv['eric.lingerie'].enabled", enabletalk=False, glow=150),
+            )
         dcv['eric.lingerie'].set_lost(6)
 
 
@@ -1463,23 +1472,20 @@ init python:
             rez = True
         elif all([GetWeekday(day)==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done]):
             rez = True
-
-        return rez
-
-
-    def friday_without_a_club():
-        rez = False
-        if all([items['sexbody2'].have, dcv['eric.lingerie'].stage<5]):
+        elif all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7]):
             rez = True
+
+
         return rez
 
 
     def Eric_caught_Kira():
         eric.add_schedule(
-                Schedule((2, 5), '2:00', '2:29', 'fuck',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable=="not flags['eric.jerk']", enabletalk=False, glow=140),
-                Schedule((2, 5), '2:00', '2:59', 'sleep2', 'спит с Анной', 'house', 2, 'eric_ann_sleep', variable=="flags['eric.jerk']", enabletalk=False, glow=110),
+                Schedule((2, 5), '2:00', '2:29', 'fuck',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable="not flags['eric.jerk']", enabletalk=False, glow=140),
+                Schedule((2, 5), '2:00', '2:29', 'sleep2', 'спит с Анной', 'house', 2, 'eric_ann_sleep', variable="flags['eric.jerk']", enabletalk=False, glow=110),
             )
         kira.add_schedule(
-                Schedule((2, 5), '2:00', '2:29', 'bath',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable=="not flags['eric.jerk']", enabletalk=False, glow=140),
-                Schedule((2, 5), '2:00', '2:29', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', variable=="flags['eric.jerk']", enabletalk=False, glow=125),
+                Schedule((2, 5), '2:00', '2:29', 'bath',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable="not flags['eric.jerk']", enabletalk=False, glow=140),
+                Schedule((2, 5), '2:00', '2:29', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', variable="flags['eric.jerk']", enabletalk=False, glow=125),
             )
+        # renpy.say(Max, "...")

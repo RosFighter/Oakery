@@ -670,7 +670,7 @@ label eric_ann_fucking:
 
 label eric_ann_sleep:
     scene location house annroom door-night
-    if peeping['ann_sleep'] == 0:
+    if peeping['ann_sleep'] != 0:
         return
 
     $ peeping['ann_sleep'] = 1
@@ -682,6 +682,7 @@ label eric_ann_sleep:
                 # Эрик дрочит на Алису
                 if not alice.sleepnaked:
                     # если Алиса не спит голой, Эрик на балконе
+                    $ peeping['alice_sleep'] = 1
                     jump jerk_balkon
 
                 $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
@@ -1325,6 +1326,9 @@ label jerk_balkon:
     #если решил подглядеть за Анной или Алисой через окно (Эрик около окна Алисы)
     #eric-voyeur-alice-01
     $ _ch1 = Chance(500)
+    if not flags['eric.firstjerk']:
+        jump first_jerk_balkon
+
     if not alice.sleepnaked:
         $ flags['eric.noticed'] = True
         scene Eric jerk off 01
@@ -1367,6 +1371,9 @@ label jerk_balkon:
 label jerk_yard:
     #eric-voyeur-yard-01
     scene Eric jerk off 00
+    if not flags['eric.firstjerk']:
+        jump first_jerk_yard
+
     $ _ch1 = Chance(500)
     $ flags['eric.noticed'] = True
     menu:

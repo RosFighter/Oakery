@@ -219,13 +219,13 @@ init python:
     build.classify('game/extra/**.rpyc', 'extra')
     build.classify('game/tl/english/extra/**.rpyc', 'extra')
 
-    build.archive("img_fix", "all")
-    build.classify('game/images/Lisa/hugging/myroom/05bc.webp', 'img_fix')
-    build.classify('game/images/interface/items/pajamas.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02a.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02ia.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02iaa.webp', 'img_fix')
+    # build.archive("img_fix", "all")
+    # build.classify('game/images/Lisa/hugging/myroom/05bc.webp', 'img_fix')
+    # build.classify('game/images/interface/items/pajamas.webp', 'img_fix')
+    # build.classify('game/images/Alice/clot/02.webp', 'img_fix')
+    # build.classify('game/images/Alice/clot/02a.webp', 'img_fix')
+    # build.classify('game/images/Alice/clot/02ia.webp', 'img_fix')
+    # build.classify('game/images/Alice/clot/02iaa.webp', 'img_fix')
 
     build.archive("images", "all")
 
@@ -235,6 +235,11 @@ init python:
 
     build.archive('video', 'all')
     build.classify('game/**.webm', 'video')
+
+    build.archive('audio', 'all')
+    build.classify('game/audio/**.ogg', 'audio')
+    build.classify('game/audio/**.mp3', 'audio')
+    build.classify('game/audio/**.wav', 'audio')
 
     build.archive('translate', 'all')
     build.classify('game/tl/**.**', 'translate')

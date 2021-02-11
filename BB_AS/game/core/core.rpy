@@ -57,7 +57,7 @@ label Waiting:
         if prevtime < '15:00' <= tm:
             if all([GetWeekday(day)==0, flags['dinner_ab_lisa'], talk_var['fight_for_Lisa'] in [2, 4, 5]]):
                     # если у Лизы репетитор
-                    $ infl[lisa].add_e(80)
+                    $ infl[lisa].add_e(60)
 
         if prevtime < '17:00' <= tm:
             if GetWeekday(day) in [1, 2, 3, 4, 5]:
@@ -105,7 +105,7 @@ label Waiting:
     if day != prevday and GetWeekday(day) == 0:
         # с субботы на воскресение начинается новая неделя
         # в том числе для еженедельного понижения влияния и/или отношения
-        call NewWeek
+        call NewWeek from _call_NewWeek
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -352,6 +352,8 @@ label NewWeek:
         # отношения с Эриком по сёстрам определены
         # активируем еженедельный счетчик на спаливание Киры и Макса Эриком
         $ wcv['catch.Kira'].enabled = True  # теперь можно сдать Киру Эрику (при дружбе), либо Эрик может сам спалить Макса и Киру
+
+    $ flags['noclub'] = False
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -686,26 +688,29 @@ label after_load:
         "К сожалению сохранения этой версии не поддерживаются из-за большого количества внутренних изменений. Начните новую игру или выберите другое сохранение."
         $ renpy.full_restart()
     else:
+        if current_ver == "0.06.6.00":
+            $ current_ver = "0.06.0.00"
+
         if current_ver < "0.03.5.999":
-            call after_load_03_5
+            call after_load_03_5 from _call_after_load_03_5
 
         if current_ver < "0.03.9.999":
-            call after_load_03_9
+            call after_load_03_9 from _call_after_load_03_9
 
         if current_ver < "0.04.0.999":
-            call after_load_04_0
+            call after_load_04_0 from _call_after_load_04_0
 
         if current_ver < "0.04.1.999":
-            call after_load_04_1
+            call after_load_04_1 from _call_after_load_04_1
 
         if current_ver < "0.04.5.999":
-            call after_load_04_5
+            call after_load_04_5 from _call_after_load_04_5
 
         if current_ver < "0.05.0.999":
-            call after_load_05_0
+            call after_load_05_0 from _call_after_load_05_0
 
         if current_ver < "0.06.0.999":
-            call after_load_06_0
+            call after_load_06_0 from _call_after_load_06_0
 
         if current_ver < config.version:
             $ current_ver = config.version
@@ -1340,8 +1345,8 @@ label after_load_05_0:
 
 label after_load_06_0:
 
-    if current_ver < "0.06.6.00":
-        $ current_ver = "0.06.6.00"
+    if current_ver < "0.06.0.00":
+        $ current_ver = "0.06.0.00"
 
         if poss['aunt'].stn == 5:
             $ append_photo('01-Kira', 12)
@@ -1403,11 +1408,11 @@ label after_load_06_0:
             })
 
         $ EventsByTime.update({
-                'Eric_talkLisa0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
-                'Eric_talkLisa1'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done])", cut=True),
-                'Eric_talkAlice0' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)])", cut=True),
-                'Eric_talkAlice1' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done])", cut=True),
-                'Eric_ab_laceling': CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all(['sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7])", cut=True),
+                'Eric_talkLisa0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
+                'Eric_talkLisa1'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([GetWeekday(day)==6, talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done])", cut=True),
+                'Eric_talkAlice0' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([GetWeekday(day)==6, talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)])", cut=True),
+                'Eric_talkAlice1' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([GetWeekday(day)==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done])", cut=True),
+                'Eric_ab_laceling': CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7])", cut=True),
             })
 
         $ eric.add_schedule(
@@ -1502,3 +1507,10 @@ label after_load_06_0:
             $ infl[ann].add_m(30, True)
 
         $ prenoted = 0  # замечено отсутствие Эрика в комнате Ани
+
+        $ peeping['blog_with_eric'] = 0
+
+        $ poss['aunt'].stages.append(PossStage("interface poss aunt ep07", _("Вот и состоялась вторая фотосессия! И она была отпадной! Не только потому что Кира решила пофотографироваться на тему БДСМ, но и потому что у нас был секс... Мой первый, настоящий секс... Теперь я официально больше не девственник! Вернее, неофициально... я ведь трахался с тётей. Надеюсь, не в последний раз! Хотя, с этим Эриком, который во всё лезет, лучше быть очень осторожным..."),
+                    _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")))
+
+        $ flags['noclub'] = False

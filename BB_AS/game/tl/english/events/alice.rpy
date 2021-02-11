@@ -3538,3 +3538,11 @@ translate english alice_towel_after_club_3479dfb8:
     # Max "" nointeract
     Max "" nointeract
 
+# TODO: Translation updated at 2021-02-11 13:42
+
+translate english strings:
+
+    # game/events/alice.rpy:1651
+    old "Я тут не удержался и купил тебе боди раньше Эрика!"
+    new "I couldn't resist buying you a bodysuit before Eric did!"
+

@@ -884,6 +884,7 @@ label kira_about_photo2:
     #annroom-shot-02-max&kira-05-f + annroom-shot-02-max&kira-05
     scene BG char Kira annroom-shot 05
     show Kira annroom-shot 05
+    $ expected_photo.append('09')
     menu:
         Kira_11 "Ах, я правильно сделала, что решила подготовить тебя к первому разу! Ммм... Иначе, ты бы кончил почти сразу, как проник в меня... А я хотела, чтобы мой любимый племянник насладился сексом со мной! Ты ещё и фотографировать успеваешь! Ох..."   #открывает снимок 09
         "{i}ускориться{/i}":
@@ -917,6 +918,13 @@ label kira_about_photo2:
     Max_02 "Конечно, тётя Кира!"
     Kira_05 "Мы отлично повеселились. Только не вздумай ко мне приставать! На публике, разумеется. А теперь я пойду. Приятного дня, если он может быть ещё приятнее..."
     Max_01 "Спасибо за фотосессию!"
+
+
+    $ SetCamsGrow(house[2], 300)
+    $ poss['aunt'].OpenStage(6)
+    $ dcv['kiratalk'].stage += 1
+    $ dcv['kiratalk'].set_lost(1)
+    $ append_photo('02-Kira', 9)
 
     $ spent_time += 60
     jump Waiting

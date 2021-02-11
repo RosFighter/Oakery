@@ -111,6 +111,7 @@ label alice_sleep_night:
                         "{i}уйти{/i}":
                             jump .end
                 else:
+                    $ peeping['ann_sleep'] = 1
                     jump jerk_balkon
 
             scene BG char Alice bed-night-01
@@ -1101,6 +1102,7 @@ label spider_in_bed:
     label .toples:
         $ __toples = True
         $ Skill('social', 0.2)
+        $ __suf += 't'
         show Max spider-night 03-03
         $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+__suf)
         if alice.GetMood()[0] < 3:
@@ -1640,7 +1642,7 @@ label alice_blog_lingerie:
             $ spent_time += 20
             scene BG char Alice blog-desk-01
             $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]
-            if renpy.random.randint(1, 2) < 2:
+            if renpy.random.randint(1, 2) < 2 or all([dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
                 # Алиса сидит и спаливает Макса
                 if dcv['gift.lingerie'].stage > 0:
                     #blog-desk-01 + alice 02 + max 02
@@ -1650,6 +1652,8 @@ label alice_blog_lingerie:
                         Alice_02 "О, Макс! Что-то хотел или просто проведать меня решил?"
                         "Я твои фотки принёс..." if all([dcv['gift.lingerie'].enabled, dcv['gift.lingerie'].stage==1, dcv['gift.lingerie'].done]):
                             jump give_photos1
+                        "Я тут не удержался и купил тебе боди раньше Эрика!" if all([dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
+                            jump gift_lace_lingerie
                         "Отлично смотришься в этом белье!":
                             if dcv['eric.lingerie'].lost<4 and dcv['eric.lingerie'].stage<1:
                                 # Макс еще не знает о том, что Эрик собирается купить бельё Алисе
@@ -1667,6 +1671,7 @@ label alice_blog_lingerie:
                                     Alice_01 "Ага, хорошо бы."
                                     "{i}уйти{/i}":
                                         pass
+
                         "Как идут дела с блогом?" if dcv['about_blog'].done:  #после 1-ой фотосессии / откат 3 дня
                             $ dcv['about_blog'].set_lost(3)
 
@@ -1742,6 +1747,8 @@ label alice_blog_lingerie:
                                     Alice_01 "Хорошо, Макс. Спасибо."
                         "Я слышал, Эрик тебе новое бельё собирается купить?" if dcv['eric.lingerie'].stage==1:
                             jump alice_about_lingerie0
+                        "Покажешь боди, которое тебе Эрик купит?" if dcv['eric.lingerie'].stage==2:
+                            jump alice_showing_lingerie1
                 else:
                     $ renpy.show('Alice blog 01'+alice.dress)
                     $ renpy.show('Max blog 01'+mgg.dress)
@@ -1827,14 +1834,16 @@ label alice_blog_lingerie:
                         Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?"
                         "Я твои фотки принёс...":
                             jump give_photos1
-                elif dcv['eric.lingerie'].stage==1:
+                elif dcv['eric.lingerie'].stage in [1, 2]:
                     #blog-desk-01 + alice 03-04 + max 02
                     $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
                     $ renpy.show('Max blog 02'+mgg.dress)
                     menu:
                         Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?"
-                        "Я слышал, Эрик тебе новое бельё собирается купить?":
+                        "Я слышал, Эрик тебе новое бельё собирается купить?" if dcv['eric.lingerie'].stage==1:
                             jump alice_about_lingerie0
+                        "Покажешь боди, которое тебе Эрик купит?" if dcv['eric.lingerie'].stage==2:
+                            jump alice_showing_lingerie1
                 else:
                     $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
                     $ renpy.show('Max blog 03'+mgg.dress)
@@ -2248,10 +2257,13 @@ label give_photos1:
 
 label blog_with_Eric:
     scene location house aliceroom door-evening
-    if peeping['alice_blog']:
+    if peeping['alice_blog'] or (peeping['blog_with_eric'] and check_is_room('eric', house[1])):
         return
 
-    $ peeping['alice_blog'] = 1
+    if check_is_room('eric', house[1]):
+        $ peeping['blog_with_eric'] = 1
+    else:
+        $ peeping['alice_blog'] = 1
 
     menu:
         Max_09 "{i}( Кажется, в комнате Алиса с Эриком... Хорошо бы узнать, что они там делают. А то мало ли... ){/i}"

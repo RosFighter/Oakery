@@ -1348,3 +1348,11 @@ translate english strings:
     # game/core/03variables.rpy:485
     old "Вот всё и получилось! У меня есть два снимка, на которых Эрик, как грязный извращенец, дрочит пока все спокойно спят... А на одном из снимков даже видно на кого он дрочит...\n\nМне стоит быть осторожнее с этими снимками, Эрик столько всего делает для моих сестёр, что они запросто могут рассказать о том, что у меня есть. А так же хорошенько подумать над тем, как я буду использовать эти снимки.\n\nЯ могу придержать этот компромат, пойти с ним к Эрику в ближайшее время или же вовсе как-то подставить его..."
     new "So that's it! I have two pictures of Eric jerking off like a pervert while everyone is sleeping peacefully... And in one of the pictures you can even see who he's jerking off to...\n\nI should be careful with these pictures, Eric does so much for my sisters that they could easily tell what I have. I should also think carefully about how I would use them.\n\nI can hold on to these, take the, to Eric's soon, or I can somehow set him up..."
+# TODO: Translation updated at 2021-02-11 11:17
+
+translate english strings:
+
+    # game/core/03variables.rpy:885
+    old "Вот и состоялась вторая фотосессия! И она была отпадной! Не только потому что Кира решила пофотографироваться на тему БДСМ, но и потому что у нас был секс... Мой первый, настоящий секс... Теперь я официально больше не девственник! Вернее, неофициально... я ведь трахался с тётей. Надеюсь, не в последний раз! Хотя, с этим Эриком, который во всё лезет, лучше быть очень осторожным..."
+    new "And that was the second photo-shoot! Amazing! Not just because Kira brought out her wild side with some BDSM, but because we actually had sex! My first... Finally... I'm officially no longer a virgin! I mean... Unofficially... I can't exactly tell anyone I fucked my Aunt. That being said, I should be careful around Eric. He always seems to be getting involved..."
+

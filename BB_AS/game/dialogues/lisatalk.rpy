@@ -1719,7 +1719,7 @@ label liza_hand_mass:
         $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
         Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
         if flags['lisa.stopkiss'] > 0:
-            call lisa_stop_kiss
+            call lisa_stop_kiss from _call_lisa_stop_kiss
             Max_01 "Мне только в радость, сестрёнка. Обращайся."
             $ talk_var['lisa.handmass'] = 2
             $ AddRelMood('lisa', __rel, __mood)
