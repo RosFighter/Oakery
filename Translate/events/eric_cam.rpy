@@ -352,17 +352,16 @@ translate english cam0_sexed_lisa_6253e993:
 translate english cam0_eric_ann_sleep_7477b46c:
 
     # Max_07 "Как же повезло, что у меня такая горячая мама... Стойте-ка, а Эрик где?! Может, пошёл в ванную комнату? Или ещё куда..."
-    Max_07 ""
+    Max_07 "How lucky I am to have such a hot mom... Wait a minute, where's Eric?! Maybe he went to the bathroom or something..."
 
 # game/events/eric_cam.rpy:15
 translate english cam0_eric_ann_sleep_748c66b8:
 
     # Max_07 "Как же повезло, что у меня такая горячая мама... А Эрик опять где-то полуночничает..."
-    Max_07 ""
+    Max_07 "How lucky I am to have such a hot mom... And Eric is out at midnight again..."
 
 # game/events/eric_cam.rpy:20
 translate english cam0_eric_ann_sleep_2e831607:
 
     # Max_01 "Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"
-    Max_01 ""
-
+    Max_01 "How lucky I am to have such a hot mom... It looks amazing, you can't take your eyes off it!"
