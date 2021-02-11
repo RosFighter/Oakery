@@ -2119,143 +2119,142 @@ translate english sexed_lisa_lesson_3_762fcd5f:
 translate english eric_ann_sleep_7df403de:
 
     # Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!" nointeract
-    Max_09 "" nointeract
+    Max_09 "Оh! Mom sleeps alone... She's so hot, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
 
 # game/events/eric.rpy:741
 translate english eric_ann_sleep_not_eric_a05237c8:
 
     # Max_01 "Класс! Мама спит голая... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Great! Mom sleeps naked... I can't even believe that beauty has three kids. I wouldn't have believed it in my life!" nointeract
 
 # game/events/eric.rpy:743
 translate english eric_ann_sleep_not_eric_f8c5f5ec:
 
     # Max_07 "О, да! Какая у мамы голая попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Oh, yes! What a nice ass Mom has! Still, it's nice that it's so hot and everyone sleeps without covering up... That's great!" nointeract
 
 # game/events/eric.rpy:745
 translate english eric_ann_sleep_not_eric_ca37ba4b:
 
     # Max_04 "Обалденно! Как же повезло, что у меня такая горячая мама... Голой она выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
-    Max_04 "" nointeract
+    Max_04 "Awesome! How lucky I am to have such a hot mom... She looks amazing naked, you can't take your eyes off her!" nointeract
 
 # game/events/eric.rpy:759
 translate english eric_ann_sleep_not_eric_closer_0982aff1:
 
     # Max_03 "Чёрт, у меня самая аппетитная мама на свете! Я бы с огромным удовольствием пораспускал с ней руки... Но лучше потихоньку уходить, пока она не проснулась." nointeract
-    Max_03 "" nointeract
+    Max_03 "Damn, I have the sexiest mom in the world! I'd love to get my hands on her... But I'd better leave quietly before she wakes up." nointeract
 
 # game/events/eric.rpy:761
 translate english eric_ann_sleep_not_eric_closer_5aa8a3a4:
 
     # Max_02 "Ухх! Так и хочется прижаться к этой обворожительной голой попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
-    Max_02 "" nointeract
+    Max_02 "Oooh! I just want to snuggle up to that gorgeous naked ass and fool around all night... But it's time to go, or she might wake up." nointeract
 
 # game/events/eric.rpy:763
 translate english eric_ann_sleep_not_eric_closer_947120a8:
 
     # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительная у неё киска! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "" nointeract
+    Max_05 "Wow, the sight of those spread legs makes me forget that she's my mother... Her pussy is too tempting! I hope she doesn't wake up now..." nointeract
 
 # game/events/eric.rpy:1293
 translate english first_jerk_balkon_22b77a79:
 
     # Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 ""
+    Max_09 "Whoa, Eric! What's he doing in there, jacking off or something? Yes... Wow! Eric is standing in the middle of the night jerking off to Alice in her sleep! I didn't know Eric was a fan of that..."
 
 # game/events/eric.rpy:1294
 translate english first_jerk_balkon_028c8f53:
 
     # Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Maybe I should take a picture of him quietly next time! Just in case..." nointeract
 
 # game/events/eric.rpy:1307
 translate english first_jerk_yard_b743b57a:
 
     # Max_07 "Опа, Эрик! Что это он делает среди ночи у окна Алисы?!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Whoa, Eric! What's he doing at Alice's window in the middle of the night?!" nointeract
 
 # game/events/eric.rpy:1313
 translate english first_jerk_yard_36a13914:
 
     # Max_09 "Вот и он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 ""
+    Max_09 "There he is! What's he doing there, jerking off or something? Yes... Wow! Eric's standing in the middle of the night jerking off to Alice in her sleep! I didn't know Eric was a fan of that..."
 
 # game/events/eric.rpy:1314
 translate english first_jerk_yard_028c8f53:
 
     # Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Maybe I should take a picture of him quietly next time! Just in case..." nointeract
 
 # game/events/eric.rpy:1331
 translate english jerk_balkon_f235bbdd:
 
     # Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Eric keeps jerking off to Alice! How can he be bothered at this time of night?!" nointeract
 
 # game/events/eric.rpy:1343
 translate english jerk_balkon_63126f2e:
 
     # Max_03 "Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!" nointeract
-    Max_03 "" nointeract
+    Max_03 "Aha, Eric's here! He can't resist a naked Alice and is jerking off right in the middle of her room... What a dirty animal!" nointeract
 
 # game/events/eric.rpy:1372
 translate english jerk_yard_f235bbdd:
 
     # Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!" nointeract
-    Max_07 "" nointeract
+    Max_07 "Eric keeps jerking off to Alice! How can he be bothered at this time of night?!" nointeract
 
 # game/events/eric.rpy:1387
 translate english jerk_photohant1_0f4523b2:
 
     # Max_09 "Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!" nointeract
-    Max_09 "" nointeract
+    Max_09 "There he is! Still jerking off... So hard! Don't wipe it off... No, you better wash it!" nointeract
 
 # game/events/eric.rpy:1394
 translate english jerk_photohant1_9aed2e73:
 
     # Max_02 "О да! Такой отвратительный снимок явно может стать полезным для меня. Конечно, если правильно его использовать..."
-    Max_02 ""
+    Max_02 "Oh yes! Such a disgusting picture could obviously be useful to me. Of course, if used properly..."
 
 # game/events/eric.rpy:1396
 translate english jerk_photohant1_9fa70f41:
 
     # Max_09 "А если попробовать загнать Эрика в комнату Алисы?! Тогда бы у меня появился шанс сделать уже более определённый снимок, где видно на кого дрочит Эрик. Только вот как..." nointeract
-    Max_09 "" nointeract
+    Max_09 "What if I tried to get Eric into Alice's room?! Then I'd have a chance to take a more definitive picture of who Eric is jerking off to. Only how..." nointeract
 
 # game/events/eric.rpy:1408
 translate english jerk_photohant1_5893f935:
 
     # Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..." nointeract
-    Max_10 "" nointeract
+    Max_10 "By the time I was running, Eric had already left... Well, I'll catch him next time..." nointeract
 
 # game/events/eric.rpy:1427
 translate english jerk_photohant2_52df7afd:
 
     # Max_05 "Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!" nointeract
-    Max_05 "" nointeract
+    Max_05 "You are so busted! With a dirty picture like that, if anything happens, we'll know everything... The main thing now is not to get caught!" nointeract
 
 # game/events/eric.rpy:1438
 translate english jerk_photohant2_5893f935:
 
     # Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..." nointeract
-    Max_10 "" nointeract
+    Max_10 "By the time I got there, Eric had already left... Well, I'll catch him next time..." nointeract
 
 translate english strings:
 
     # game/events/eric.rpy:1307
     old "{i}Осторожно подсмотреть за ним с балкона{/i}"
-    new ""
+    new "{i}Peeping at the balcony{/i}"
 
     # game/events/eric.rpy:1331
     old "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
-    new ""
+    new "{i}Run for the camera and go to the balcony {color=[_ch1.col]}(Luck. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/events/eric.rpy:1343
     old "{i}сбегать за фотоаппаратом и вернуться {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}"
-    new ""
+    new "{i}Run for the camera and come back {color=[_ch1.col]}(Luck. Chance: [_ch1.vis]){/color}{/i}"
 
     # game/events/eric.rpy:1387
     old "{i}сфотографировать его{/i}"
-    new ""
-
+    new "{i}Photograph him{i}"

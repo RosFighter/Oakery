@@ -3475,59 +3475,66 @@ translate english strings:
 translate english alice_sleep_night_7df403de:
 
     # Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!" nointeract
-    Max_09 "" nointeract
+    Max_09 "Оh! Mom's alone... She's so beautiful, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
 
 # game/events/alice.rpy:154
 translate english alice_sleep_night_a30b80cf:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно! Но она должна быть совершенно голой! Эх, Алиса, не хорошо нарушать наш уговор..."
-    Max_07 ""
+    Max_07 "Oh, yes! My big sister looks amazing... The curves of her body in that translucent lingerie make me want to watch her forever! But she has to be completely naked! Oh, Alice, it's not good to break our pact..."
 
 # game/events/alice.rpy:156
 translate english alice_sleep_night_9cb5a856:
 
     # Max_04 "Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою попку для меня во всей красе. Но она должна быть совершенно голой! Эх, Алиса, не хорошо нарушать наш уговор..."
-    Max_04 ""
+    Max_04 "Wow, I'm lucky Alice sleeps with her back to the window... And has no idea that she's showing her ass in all its glory for me. But she must be completely naked! Oh, Alice, it's not good to break our pact..."
 
 # game/events/alice.rpy:158
 translate english alice_sleep_night_3b644149:
 
     # Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно... Но она должна быть совершенно голой! Эх, Алиса, не хорошо нарушать наш уговор..."
-    Max_01 ""
+    Max_01 "It's amazing! Sis sleeps with her back arched, making her breasts stick out like two mounds... Tempting... But she must be completely naked! Oh, Alice, it's not good to break our pact..."
 
 # game/events/alice.rpy:159
 translate english alice_sleep_night_a66d1095_1:
 
     # Max_09 "Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!" nointeract
-    Max_09 "" nointeract
+    Max_09 "So we have to get you out in the open... Perhaps I should take advantage of what Alice fears most?!" nointeract
 
 # game/events/alice.rpy:250
 translate english alice_sleep_morning_b1433f58:
 
     # Max_07 "Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... А если бы она снимала с себя то, что должна, то было бы просто шикарно! Нарушительница..."
-    Max_07 ""
+    Max_07 "Ugh! Alice is still asleep, which certainly pleases me... After all, it means that I can see her cool, almost naked figure properly... And if she took off what she was supposed to, it would be just awesome!"
 
 # game/events/alice.rpy:252
 translate english alice_sleep_morning_c743e672:
 
     # Max_01 "Чёрт! Хоть она и спит, но прямо лицом ко мне... И тем не менее, насладится красотой её тела я могу, и ещё как... А если бы она снимала с себя то, что должна, то было бы просто шикарно! Нарушительница..."
-    Max_01 ""
+    Max_01 "Shit! Even though she's asleep, she's facing me... And yet, I can enjoy the beauty of her body, and how... And if she took off what she was supposed to, that would be awesome!"
 
 # game/events/alice.rpy:254
 translate english alice_sleep_morning_345503a1:
 
     # Max_02 "Вот это да! От таких соблазнительных изгибов можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка! А если бы она снимала с себя то, что должна, то было бы просто шикарно! Нарушительница..."
-    Max_02 ""
+    Max_02 "Wow, you could faint from seeing those tempting curves. My big sister is awesome! And if she took off what she was supposed to, that would be even better!"
 
 # game/events/alice.rpy:256
 translate english alice_sleep_morning_333a5d36_1:
 
     # Max_09 "Надо бы мне вывести тебя на чистую воду... Может, стоит воспользоваться тем, что пугает Алису больше всего?!" nointeract
-    Max_09 "" nointeract
+    Max_09 "I've got to get you out in the open... Maybe I should take advantage of what scares Alice the most!" nointeract
 
 translate english strings:
 
     # game/events/alice.rpy:105
     old "{i}проверить{/i}"
-    new ""
+    new "{i}Check{/i}"
+# TODO: Translation updated at 2021-02-11 08:23
+
+# game/events/alice.rpy:1998
+translate english alice_towel_after_club_3479dfb8:
+
+    # Max "" nointeract
+    Max "" nointeract
 

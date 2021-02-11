@@ -2217,7 +2217,6 @@ translate english jerk_photohant1_9aed2e73:
     # Max_02 "О да! Такой отвратительный снимок явно может стать полезным для меня. Конечно, если правильно его использовать..."
     Max_02 "Oh yes! Such a disgusting picture could obviously be useful to me. Of course, if used properly..."
 
-
 # game/events/eric.rpy:1396
 translate english jerk_photohant1_9fa70f41:
 

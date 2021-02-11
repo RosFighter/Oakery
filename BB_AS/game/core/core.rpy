@@ -52,48 +52,48 @@ label Waiting:
         $ tv_scene = '' # renpy.random.choice(['', 'bj', 'hj'])
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
 
-        # начисление влияния по времени
-        if 'eric' in chars:
-            if prevtime < '15:00' <= tm:
-                if all([GetWeekday(day)==0, flags['dinner_ab_lisa'], talk_var['fight_for_Lisa'] in [2, 4, 5]]):
-                        # если у Лизы репетитор
-                        $ infl[lisa].add_e(80)
+    # начисление влияния по времени
+    if 'eric' in chars:
+        if prevtime < '15:00' <= tm:
+            if all([GetWeekday(day)==0, flags['dinner_ab_lisa'], talk_var['fight_for_Lisa'] in [2, 4, 5]]):
+                    # если у Лизы репетитор
+                    $ infl[lisa].add_e(80)
 
-            if prevtime < '17:00' <= tm:
-                if GetWeekday(day) in [1, 2, 3, 4, 5]:
-                    $ infl[ann].add_e(12)  # Ане начисляем каждый день, когда она на работе
+        if prevtime < '17:00' <= tm:
+            if GetWeekday(day) in [1, 2, 3, 4, 5]:
+                $ infl[ann].add_e(12)  # Ане начисляем каждый день, когда она на работе
 
-                    if talk_var['fight_for_Lisa'] == 6:
-                        # если у Лизы курсы в школе
-                        $ infl[lisa].add_e(20)
+                if talk_var['fight_for_Lisa'] == 6:
+                    # если у Лизы курсы в школе
+                    $ infl[lisa].add_e(20)
 
-            if prevtime < '22:00' <= tm:
-                if talk_var['fight_for_Alice']>0 and talk_var['fight_for_Alice']!=2:
-                    if GetWeekday(day)==3:
-                        $ infl[alice].add_e(50)
-                    elif GetWeekday(day)!=5:
-                        $ infl[alice].add_e(20)
+        if prevtime < '22:00' <= tm:
+            if talk_var['fight_for_Alice']>0 and talk_var['fight_for_Alice']!=2:
+                if GetWeekday(day)==3:
+                    $ infl[alice].add_e(50)
+                elif GetWeekday(day)!=5:
+                    $ infl[alice].add_e(20)
 
-            if prevtime < '22:30' <= tm:
-                if all([GetWeekday(day)==1, dcv['ae_ed_lisa'].stage > 0, talk_var['ae_lisa_number']<4]):
-                    # если начаты секс.уроки Лизы у АиЭ
-                    $ infl[lisa].add_e(50)
+        if prevtime < '22:30' <= tm:
+            if all([GetWeekday(day)==1, dcv['ae_ed_lisa'].stage > 0, talk_var['ae_lisa_number']<4]):
+                # если начаты секс.уроки Лизы у АиЭ
+                $ infl[lisa].add_e(40)
 
-                    # отмечаем урок пройденным
-                    $ talk_var['ae_lisa_number'] += 1
+                # отмечаем урок пройденным
+                $ talk_var['ae_lisa_number'] += 1
 
-                    # сбрасываем флаг диалога с Лизой
-                    $ flags['l.ab_aeed'] = False
+                # сбрасываем флаг диалога с Лизой
+                $ flags['l.ab_aeed'] = False
 
-            if day != prevday:
-                # полночь
-                if check_is_home('eric'):
-                    # после секса с Эриком
-                    $ infl[ann].add_e(20)
+        if day != prevday:
+            # полночь
+            if check_is_home('eric'):
+                # после секса с Эриком
+                $ infl[ann].add_e(20)
 
-                if not check_is_home('ann'):
-                    # Аня ночует у Эрика
-                    $ infl[ann].add_e(20)
+            if not check_is_home('ann'):
+                # Аня ночует у Эрика
+                $ infl[ann].add_e(20)
 
     if prevtime < '12:00' <= tm:
         call Noon from _call_Noon
