@@ -1978,7 +1978,7 @@ translate english Lisa_HomeWork_ecb8da1b:
 translate english Lisa_HomeWork_1d62a6d4:
 
     # Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
-    Lisa_02 "Let me think about it... Sure, yeah! I bet I'd give it up."
+    Lisa_02 "Let me think about it... Sure, yeah! I think I'd like that."
 
 # game/dialogues/lisatalk.rpy:1087
 translate english Lisa_HomeWork_82957346:
@@ -8820,4 +8820,3 @@ translate english lisa_stop_kiss_0a680597:
 
     # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. ){/i}"
     Max_09 "{i}( I think I'd better stop kissing lessons with Lisa for now so I don't draw attention from Eric. ){/i}"
-
