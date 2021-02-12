@@ -1486,6 +1486,9 @@ label alice_after_club:
 
     label .end:
         $ renpy.end_replay()
+        if check_is_home('kira'):
+            jump Sleep
+
         $ spent_time += 10
         jump Waiting
 
