@@ -1978,7 +1978,7 @@ translate english Lisa_HomeWork_ecb8da1b:
 translate english Lisa_HomeWork_1d62a6d4:
 
     # Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
-    Lisa_02 "Let me think about it... Sure, yeah! I bet I'd give it up."
+    Lisa_02 "Let me think about it... Sure, yeah! I think I'd like that."
 
 # game/dialogues/lisatalk.rpy:1087
 translate english Lisa_HomeWork_82957346:

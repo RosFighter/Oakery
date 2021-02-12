@@ -1525,3 +1525,9 @@ label after_load_06_0:
         $ poss['blog'].stages[15].image = 'interface poss blog ep09a'
         $ poss['blog'].stages[16].image = 'interface poss blog ep09b'
         $ poss['blog'].stages[17].image = 'interface poss blog ep09c'
+
+    if current_ver < "0.06.0.02":
+        $ current_ver = "0.06.0.02"
+
+        if 'sexbody2' in alice.gifts:
+            $ items['sexbody2'].have = False
