@@ -5,6 +5,7 @@ init 9999 python:
 
 init python:
     config.statement_callbacks.remove(_window_auto_callback)
+    renpy.game.preferences.show_empty_window = False
 
 define lime   = "#00FF00"
 define red    = "#FF0000"
@@ -71,7 +72,8 @@ define notify_list = []
 define cloth = None
 init:
     $ config.keymap['hide_windows'].append('`')
-    if renpy.game.preferences.physical_size[1] < 900:
+    if (renpy.game.preferences.physical_size is not None
+            and renpy.game.preferences.physical_size[1] < 900):
         $ config.mouse = {
             'default': [('images/interface/cursors/arrow-64.png', 0, 0)],
             'find' : [('images/interface/cursors/find-64.webp', 27, 27)],
@@ -155,8 +157,8 @@ define talks = {
     'kt.ft2'     : TalkTheme('kira', _("Так когда будем снова фотографироваться, тётя Кира?"), 'kira_about_photo2', "all([dcv['kiratalk'].stage==7, kira.plan_name=='sun', not expected_photo, dcv['kira.nextphoto'].enabled, dcv['kira.nextphoto'].stage==1, dcv['kira.nextphoto'].done, dcv['kiratalk'].done])"),
     'eric.ling0' : TalkTheme('alice', _("Я слышал, Эрик тебе новое бельё собирается купить?"), 'alice_about_lingerie0', "dcv['eric.lingerie'].stage==1"),
     'eric.ling1' : TalkTheme('alice', _("Покажешь боди, которое тебе Эрик купит?"), 'alice_showing_lingerie1', "all([dcv['eric.lingerie'].stage==2, current_room==house[1]])"),
-    'eric.kira0' : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "all([wcv['catch.Kira'].enabled, not wcv['catch.Kira'].done, wcv['catch.Kira'].stage<1, GetRelMax('eric')[0]>0])"),
-    'eric.kira1' : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "all([wcv['catch.Kira'].stage==1, talk_var['fight_for_Kira']>0])"),
+    'eric.kira0' : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "'catch.Kira' in wcv and all([wcv['catch.Kira'].enabled, not wcv['catch.Kira'].done, wcv['catch.Kira'].stage<1, GetRelMax('eric')[0]>0])"),
+    'eric.kira1' : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "'catch.Kira' in wcv and all([wcv['catch.Kira'].stage==1, talk_var['fight_for_Kira']>0])"),
     }
 
 

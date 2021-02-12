@@ -600,7 +600,7 @@ label Eric_talk_about_lace_lingerie:
         $ poss['blog'].OpenStage(19)
         #через ? дней произойдёт история с украденым кошельком Эрика (v0.06.5)
 
-    $ dcv['eric.lingerie'].stage= 7
+    $ dcv['eric.lingerie'].stage = 7
     $ spent_time += 20
     jump Waiting
 

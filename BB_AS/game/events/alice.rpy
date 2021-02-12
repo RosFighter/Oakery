@@ -1100,9 +1100,10 @@ label spider_in_bed:
         jump .spider
 
     label .toples:
-        $ __toples = True
         $ Skill('social', 0.2)
-        $ __suf += 't'
+        if not __toples:
+            $ __toples = True
+            $ __suf += 't'
         show Max spider-night 03-03
         $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+__suf)
         if alice.GetMood()[0] < 3:

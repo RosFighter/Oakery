@@ -2074,7 +2074,7 @@ label massage_sunscreen:
             Alice_13 "Макс, ты слишком высоко забрался! Лучше сосредоточься на всём остальном..."
 
         elif (all([len(_massaged)==2, _massaged==['foot', 'shin']]) or
-                any(_massaged==['shoulders', 'spine', 'foot', 'shin'], _massaged==['spine', 'shoulders', 'foot', 'shin'])):
+                any([_massaged==['shoulders', 'spine', 'foot', 'shin'], _massaged==['spine', 'shoulders', 'foot', 'shin']])):
             #если Макс массировал ступни и голени, после чего начал бёдра
             Alice_04 "Хоть это и приятно, но ощущение, будто ты не знаешь, как правильно массировать там... Лучше сосредоточься на том, что ты умеешь..."
             $ infl[alice].add_m(4)
@@ -3553,6 +3553,7 @@ label gift_lace_lingerie:
     $ alice.dress_inf = '02la'
     $ blog_lingerie = ['d', 'd', 'd']
     $ items['sexbody2'].InShop = False
+    $ items['sexbody2'].have = False
     $ alice.gifts.append('sexbody2')
     $ infl[alice].add_m(40)
     $ poss['blog'].OpenStage(15)
