@@ -142,7 +142,7 @@ translate english cam0_lisa_phone_14f355ab:
 translate english cam0_lisa_bath_b32c78c2:
 
     # Max_01 "Лиза почти набрала воду, хотя я смотрю на кое-что другое..."
-    Max_01 "The tubs almost full...but my attention is somewhere else..."
+    Max_01 "The tubs almost full... But my attention is somewhere else..."
 
 # game/events/lisa_cam.rpy:256
 translate english cam0_lisa_bath_e5e29c98:
@@ -167,4 +167,3 @@ translate english cam0_lisa_homework_8bf186e7:
 
     # Max_01 "Лиза учит уроки. Может, стоило ей помочь?!"
     Max_01 "Lisa's doing her homeowork. I might have missed a chance to help her."
-
