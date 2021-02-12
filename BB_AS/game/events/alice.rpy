@@ -101,6 +101,10 @@ label alice_sleep_night:
             if flags['eric.jerk'] and '02:00'<=tm<'02:30':
                 # Эрик дрочит на Алису
                 if alice.sleepnaked and not prenoted and not flags['eric.noticed']:
+                    scene BG char Ann bed-night-01
+                    $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+                    $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                    $ peeping['ann_sleep'] = 1
                     # Эрика не видели
                     menu:
                         Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!"

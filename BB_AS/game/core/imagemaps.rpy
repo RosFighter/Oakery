@@ -9,7 +9,7 @@ screen dynamic_tooltip():
     if tt:
         label "[tt!t]" text_text_align 0.5:
             xalign 0.5  text_size 36
-            if renpy.game.preferences.physical_size[1] < 900:
+            if renpy.game.preferences.physical_size is not None and renpy.game.preferences.physical_size[1] < 900:
                 pos (x, y+45)
             else:
                 pos (x, y+65)

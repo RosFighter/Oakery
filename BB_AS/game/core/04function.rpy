@@ -132,13 +132,30 @@ init python:
         timelist = []
         for cut in EventsByTime:
             if (EventsByTime[cut].enabled and
-                ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2) or
-                 ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= '08:00') and EventsByTime[cut].extend and EventsByTime[cut].sleep) or
-                 (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= '23:59' or '00:00' <= EventsByTime[cut].tm <= tm2)))
-                and (((day+2) % 7) in EventsByTime[cut].lod) and eval(EventsByTime[cut].variable) and
-                (sleep == EventsByTime[cut].sleep or (sleep and EventsByTime[cut].cut and not EventsByTime[cut].sleep))):
-                    eventslist.append(cut)
-                    timelist.append(EventsByTime[cut].tm)
+                    ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2)
+                    or
+                      ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= '08:00')
+                        and EventsByTime[cut].extend and EventsByTime[cut].sleep)
+                    or
+                      (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= '23:59'
+                                      or '00:00' <= EventsByTime[cut].tm <= tm2)))
+                and (((day+2) % 7) in EventsByTime[cut].lod) and
+                        (sleep == EventsByTime[cut].sleep or (sleep
+                            and EventsByTime[cut].cut
+                            and not EventsByTime[cut].sleep))):
+
+                    try:
+                        rez = eval(EventsByTime[cut].variable)
+                    except KeyError:
+                        # print('KeyError in: '+EventsByTime[cut].variable)
+                        rez = False
+                    except Exception:
+                        # print('Some other error in: '+EventsByTime[cut].variable)
+                        rez = False
+
+                    if rez:
+                        eventslist.append(cut)
+                        timelist.append(EventsByTime[cut].tm)
 
         # получаем самое раннее время на случай если кат-событий несколько
         if len(eventslist) > 0:
@@ -170,12 +187,32 @@ init python:
         for i in talks:
             if len(current_room.cur_char) == 1:
                 # один персонаж
-                if talks[i].char == current_room.cur_char[0] and eval(talks[i].req):
-                    talkslist.append(i)
+                if talks[i].char == current_room.cur_char[0]:
+                    try:
+                        rez = eval(talks[i].req)
+                    except KeyError:
+                        # print('KeyError in: '+talks[i].req)
+                        rez = False
+                    except Exception:
+                        # print('Some other error in: '+talks[i].req)
+                        rez = False
+
+                    if rez:
+                        talkslist.append(i)
             else:
                 # несколько персонажей
-                if sorted(current_room.cur_char) == sorted(talks[i].char) and eval(talks[i].req):
-                    talkslist.append(i)
+                if sorted(current_room.cur_char) == sorted(talks[i].char):
+                    try:
+                        rez = eval(talks[i].req)
+                    except KeyError:
+                        # print('KeyError in: '+talks[i].req)
+                        rez = False
+                    except Exception:
+                        # print('Some other error in: '+talks[i].req)
+                        rez = False
+
+                    if rez:
+                        talkslist.append(i)
 
         return talkslist
 
@@ -195,11 +232,29 @@ init python:
                     for it in gift.item:
                         if items[it].have:
                             have = True
-                    if have and eval(gift.req):
-                        menu_items.append((gift.select, gift))
+                    if have:
+                        try:
+                            rez = eval(gift.req)
+                        except KeyError:
+                            # print('KeyError in: '+EventsByTime[cut].variable)
+                            rez = False
+                        except Exception:
+                            # print('Some other error in: '+EventsByTime[cut].variable)
+                            rez = False
+                        if rez:
+                            menu_items.append((gift.select, gift))
                 else:
-                    if items[gift.item].have and eval(gift.req):
-                        menu_items.append((gift.select, gift))
+                    if items[gift.item].have:
+                        try:
+                            rez = eval(gift.req)
+                        except KeyError:
+                            # print('KeyError in: '+EventsByTime[cut].variable)
+                            rez = False
+                        except Exception:
+                            # print('Some other error in: '+EventsByTime[cut].variable)
+                            rez = False
+                        if rez:
+                            menu_items.append((gift.select, gift))
 
         return menu_items
 
@@ -648,6 +703,7 @@ init python:
 
 
     def GetDressNps(char, name):
+        # print char, name
         dress, inf, clot = '', '', ''
         if name=='dressed':
             inf = '00b'
@@ -715,9 +771,11 @@ init python:
                 dress = clothes[alice].sleep.GetCur().suf
                 inf   = clothes[alice].sleep.GetCur().info
                 if 'smoke' in flags and flags['smoke'] == 'sleep':
+                    alice.sleeptoples = True
                     dress += 'a'
                     inf = {'a':'02ga', 'b':'02ja'}[clothes[alice].sleep.GetCur().suf]
                 elif 'smoke' in flags and flags['smoke'] == 'naked':
+                    alice.sleepnaked = True
                     dress = ''
                     inf = '00a'
             elif name in ['shower', 'bath']:
@@ -773,7 +831,7 @@ init python:
                 inf   = clothes[ann].sleep.GetCur().info
                 clot  = 'sleep'
             elif name == 'sleep2':
-                dress == 'n'
+                dress = 'n'
                 inf = '00'
             elif name in ['shower', 'bath', 'shower2']:
                 inf = '04a'

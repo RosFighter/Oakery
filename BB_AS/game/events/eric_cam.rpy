@@ -322,7 +322,7 @@ label cam0_sexed_lisa:
 
         elif tm[-2:] < '20':
             $ renpy.show('Eric cams sexed 03-02'+eric.dress, at_list=[laptop_screen])
-            $ renpy.show('Lisa cams sexed 02'+lisa.dress, at_list=[laptop_screen])
+            $ renpy.show('Lisa cams sexed 03'+lisa.dress, at_list=[laptop_screen])
             show FG cam-shum-act at laptop_screen
             if 'ann_eric_lisa_sexed1' not in cam_flag:
                 $ cam_flag.append('ann_eric_lisa_sexed1')

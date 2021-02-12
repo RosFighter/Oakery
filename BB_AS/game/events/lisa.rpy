@@ -1033,9 +1033,9 @@ label lisa_horor_movie_r:
     scene BG char Lisa horror-myroom 02
     show Lisa horror-myroom 02-01b
     if flags['cur_movies'][0] == 'hes':
-        $ renpy.show("FG horror-myroom hes 0"+str(flags['cur_movies'][1])+"-0"+str(flags['cur_series']))
+        $ renpy.show("FG horror-myroom hes 0"+str(flags['cur_movies'][1]+1)+"-0"+str(flags['cur_series']))
     else:
-        $ renpy.show("FG horror-myroom f13 0"+str(flags['cur_movies'][1])+"-0"+str(flags['cur_series']))
+        $ renpy.show("FG horror-myroom f13 0"+str(flags['cur_movies'][1]+1)+"-0"+str(flags['cur_series']))
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
 
     $ _ch3 = GetChance(mgg.sex+5, 3, 900)

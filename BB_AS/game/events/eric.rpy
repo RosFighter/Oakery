@@ -1409,7 +1409,8 @@ label jerk_photohant1:
         #все уже по своим местам и спят
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
-        $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
+        if not alice.sleepnaked:
+            $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
         $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
         menu:
             Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
