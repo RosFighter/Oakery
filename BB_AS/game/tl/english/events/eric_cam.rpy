@@ -222,7 +222,7 @@ translate english cam0_sexed_lisa_50cbb4f3_1:
 translate english cam0_sexed_lisa_129292f8:
 
     # Max_09 "{i}Мама при Лизе уже надрачивает Эрику как будто так и надо! Интересно, что они ей там рассказывают при этом?{/i}"
-    Max_09 "{i}Mom's already jerking off to Eric in front of Lisa, like she should! I wonder what they're telling her?{/i}"
+    Max_09 "{i}Mom's already jerking off Eric in front of Lisa, like she should! I wonder what they're telling her?{/i}"
 
 # game/events/eric_cam.rpy:269
 translate english cam0_sexed_lisa_c0f967dd:
@@ -338,7 +338,7 @@ translate english cam0_sexed_lisa_ec99c2de_3:
 translate english cam0_sexed_lisa_2fbe73f5:
 
     # Max_09 "{i}( Всё дрочат и дрочат... Видимо, закрепляют материал. Ну сколько можно?! ){/i}"
-    Max_09 "{i}( Jerking off... I guess they're consolidating. How many times are going to do this?! ){/i}"
+    Max_09 "{i}( Jerking off... I guess they're consolidating. How many times are they going to do this?! ){/i}"
 
 # game/events/eric_cam.rpy:321
 translate english cam0_sexed_lisa_6253e993:

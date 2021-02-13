@@ -52,48 +52,9 @@ label Waiting:
         $ tv_scene = '' # renpy.random.choice(['', 'bj', 'hj'])
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
 
-    # начисление влияния по времени
+    # начисление влияния и бругие события по времени
     if 'eric' in chars:
-        if prevtime < '15:00' <= tm:
-            if all([GetWeekday(day)==0, flags['dinner_ab_lisa'], talk_var['fight_for_Lisa'] in [2, 4, 5]]):
-                    # если у Лизы репетитор
-                    $ infl[lisa].add_e(60)
-
-        if prevtime < '17:00' <= tm:
-            if GetWeekday(day) in [1, 2, 3, 4, 5]:
-                $ infl[ann].add_e(12)  # Ане начисляем каждый день, когда она на работе
-
-                if talk_var['fight_for_Lisa'] == 6:
-                    # если у Лизы курсы в школе
-                    $ infl[lisa].add_e(20)
-
-        if prevtime < '22:00' <= tm:
-            if talk_var['fight_for_Alice']>0 and talk_var['fight_for_Alice']!=2:
-                if GetWeekday(day)==3:
-                    $ infl[alice].add_e(50)
-                elif GetWeekday(day)!=5:
-                    $ infl[alice].add_e(20)
-
-        if prevtime < '22:30' <= tm:
-            if all([GetWeekday(day)==1, dcv['ae_ed_lisa'].stage > 0, talk_var['ae_lisa_number']<4]):
-                # если начаты секс.уроки Лизы у АиЭ
-                $ infl[lisa].add_e(40)
-
-                # отмечаем урок пройденным
-                $ talk_var['ae_lisa_number'] += 1
-
-                # сбрасываем флаг диалога с Лизой
-                $ flags['l.ab_aeed'] = False
-
-        if day != prevday:
-            # полночь
-            if check_is_home('eric'):
-                # после секса с Эриком
-                $ infl[ann].add_e(20)
-
-            if not check_is_home('ann'):
-                # Аня ночует у Эрика
-                $ infl[ann].add_e(20)
+        call eric_time_settings
 
     if prevtime < '12:00' <= tm:
         call Noon from _call_Noon
@@ -160,6 +121,59 @@ label Waiting:
         jump cam_after_waiting
     else:
         jump AfterWaiting
+
+
+label eric_time_settings:
+
+    if prevtime < '14:00' <= tm:
+        if all([GetWeekday(day)==6, 'sexbody2' not in alice.gifts, dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<7]):
+            # Макс не успел вовремя подарить Алисе кружевное бельё
+            $ dcv['eric.lingerie'].stage = 8
+            $ items['sexbody2'].InShop = False
+            $ alice.gifts.append('sexbody2')
+
+    if prevtime < '15:00' <= tm:
+        if all([GetWeekday(day)==0, flags['dinner_ab_lisa'], talk_var['fight_for_Lisa'] in [2, 4, 5]]):
+                # если у Лизы репетитор
+                $ infl[lisa].add_e(60)
+
+    if prevtime < '17:00' <= tm:
+        if GetWeekday(day) in [1, 2, 3, 4, 5]:
+            $ infl[ann].add_e(12)  # Ане начисляем каждый день, когда она на работе
+
+            if talk_var['fight_for_Lisa'] == 6:
+                # если у Лизы курсы в школе
+                $ infl[lisa].add_e(20)
+
+    if prevtime < '22:00' <= tm:
+        if talk_var['fight_for_Alice']>0 and talk_var['fight_for_Alice']!=2:
+            if GetWeekday(day)==3:
+                $ infl[alice].add_e(50)
+            elif GetWeekday(day)!=5:
+                $ infl[alice].add_e(20)
+
+    if prevtime < '22:30' <= tm:
+        if all([GetWeekday(day)==1, dcv['ae_ed_lisa'].stage > 0, talk_var['ae_lisa_number']<4]):
+            # если начаты секс.уроки Лизы у АиЭ
+            $ infl[lisa].add_e(40)
+
+            # отмечаем урок пройденным
+            $ talk_var['ae_lisa_number'] += 1
+
+            # сбрасываем флаг диалога с Лизой
+            $ flags['l.ab_aeed'] = False
+
+    if day != prevday:
+        # полночь
+        if check_is_home('eric'):
+            # после секса с Эриком
+            $ infl[ann].add_e(20)
+
+        if not check_is_home('ann'):
+            # Аня ночует у Эрика
+            $ infl[ann].add_e(20)
+
+    return
 
 
 label Midnight:
@@ -387,11 +401,6 @@ label AfterWaiting:
                 prevtime < '18:00' <= tm,
                 prevtime < '22:00' <= tm]):
             stop music fadeout 1.0
-
-        if all([GetWeekday(day)==6, prevtime<'14:00'<=tm, items['sexbody2'].InShop]):
-            # после шопинга убираем из продажи  кружевное бельё
-            $ items['sexbody2'].InShop = False
-
 
     $ spent_time = 0
     $ prevday = day
@@ -1531,3 +1540,9 @@ label after_load_06_0:
 
         if 'sexbody2' in alice.gifts:
             $ items['sexbody2'].have = False
+
+    if current_ver < "0.06.0.04":
+        $ current_ver = "0.06.0.04"
+
+        if poss['blog'].stn in [15, 16] and dcv['eric.lingerie'].stage < 8:
+            $ dcv['eric.lingerie'].stage = 8

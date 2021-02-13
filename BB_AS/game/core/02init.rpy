@@ -72,7 +72,9 @@ define notify_list = []
 define cloth = None
 init:
     $ config.keymap['hide_windows'].append('`')
-    if (renpy.game.preferences.physical_size is not None
+    if renpy.variant("touch") or renpy.variant("small"):
+        $ config.mouse = None
+    elif (renpy.game.preferences.physical_size is not None
             and renpy.game.preferences.physical_size[1] < 900):
         $ config.mouse = {
             'default': [('images/interface/cursors/arrow-64.png', 0, 0)],

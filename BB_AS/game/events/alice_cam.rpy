@@ -718,7 +718,8 @@ label cam1_alice_after_club:
     return
 
 label cam0_blog_with_Eric:
-    if all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5]):
+    # if all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5]):
+    if dcv['eric.lingerie'].stage == 8:
         #если Эрик купил Алисе чёрное кружевное боди вперёд Макса
 
         #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(02a/02b/02c или 03a/03b/03c)
@@ -751,8 +752,6 @@ label cam0_blog_with_Eric:
         $ alice.dress = 'd'
         $ alice.dress_inf = '02la'
         $ blog_lingerie = ['d', 'd', 'd']
-        $ items['sexbody2'].InShop = False
-        $ alice.gifts.append('sexbody2')
         $ infl[alice].add_e(40)
         $ poss['blog'].OpenStage(16)
         $ spent_time = max((60 - int(tm[-2:])), 30)

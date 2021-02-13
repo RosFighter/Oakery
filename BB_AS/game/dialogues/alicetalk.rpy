@@ -1903,13 +1903,13 @@ label massage_sunscreen:
         $ _suf = 'a'
     $ renpy.show('Max sun-alone 01'+mgg.dress)
     if len(online_cources) > 1 and online_cources[1].current > 0:
-        if len(_massaged) == (5 if dcv['eric.lingerie'].stage in [5, 7] else 4): # 5: # временно доступны только 4 зоны
+        if len(_massaged) == (5 if dcv['eric.lingerie'].stage in [5, 7] else 4): # 5:
             Alice_07 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
             Max_03 "Да пустяки, обращайся!"
             Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
             Max_05 "Не за что! Всегда рад..."
             $ AddRelMood('alice', 15, 150, 3)
-            jump .end  # если Макс прошел курсы массажа ног, ему доступны 5 зон
+            jump .end  # если Макс подарил Алисе кружевное боди, есму доступно 5 зон массажа
 
     elif len(_massaged) == 4:
         Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"

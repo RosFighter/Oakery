@@ -2277,7 +2277,8 @@ label blog_with_Eric:
         Max_09 "{i}( Кажется, в комнате Алиса с Эриком... Хорошо бы узнать, что они там делают. А то мало ли... ){/i}"
         "{i}заглянуть в окно{/i}":
             $ spent_time += 20
-            if all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5, talk_var['fight_for_Alice'] in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
+            # if all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5, talk_var['fight_for_Alice'] in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
+            if all([dcv['eric.lingerie'].stage==8, talk_var['fight_for_Alice'] in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
                 #если Эрик купил Алисе чёрное кружевное боди вперёд Макса
 
                 #spider-night-04 + aliceroom-blog-dresses-01-eric-(01/01a) + Алиса в белье(spider-night-04-alice-(01/02/03) / spider-night-04-alice-(01a/02a/03a) / aliceroom-blog-dresses-01-alice-(01a/02a/03a))
@@ -2318,8 +2319,6 @@ label blog_with_Eric:
                         $ alice.dress = 'd'
                         $ alice.dress_inf = '02la'
                         $ blog_lingerie = ['d', 'd', 'd']
-                        $ items['sexbody2'].InShop = False
-                        $ alice.gifts.append('sexbody2')
                         $ infl[alice].add_e(40)
                         $ poss['blog'].OpenStage(15)
 

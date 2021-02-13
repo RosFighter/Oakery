@@ -664,7 +664,7 @@ label Eric_talk_about_Kira_1:
         Eric_01 "Вот оно что! А такую отвязную совратительницу малолетних решил для себя придержать, да? Ох, разочаровал ты меня, Макс..."
         Max_01 "Но теперь ты о ней знаешь, так что всё супер!"
 
-        if dcv['eric.lingerie']==9 or all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5]):
+        if dcv['eric.lingerie'].stage in [8, 9]:
             #если за Максом нет косяка по боди для Алисы
             Eric_03 "У меня-то всё супер, а вот ты лишаешься своих \"премиальных\" за свою оплошность."
             Max_08 "Эй, я же не знал, что Кира тоже тебя интересует!"
@@ -690,8 +690,9 @@ label Eric_talk_about_Kira_1:
                     while talk_var['bonus_from_eric'].count('bonus'):
                         $ talk_var['bonus_from_eric'].remove('bonus')
                         $ talk_var['bonus_from_eric'].append('nobonus')
-                    $ talk_var['bonus_from_eric'].remove('money')
-                    $ talk_var['bonus_from_eric'].append('nomoney')
+                    if talk_var['bonus_from_eric'].count('money'):
+                        $ talk_var['bonus_from_eric'].remove('money')
+                        $ talk_var['bonus_from_eric'].append('nomoney')
 
     else:
         #если дружба и Макс сдал Киру
@@ -700,7 +701,7 @@ label Eric_talk_about_Kira_1:
         Eric_06 "Тебе что, подглядываний твоих любимых мало?"
         Max_09 "Я вообще-то первый с ней сблизился! Конечно, она сама этого хотела, но всё же... Я мог и не рассказывать о ней, но по-дружески решил поделиться. Мне кажется, это тянет на серьёзную премию!"
 
-        if dcv['eric.lingerie']==9 or all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5]):
+        if dcv['eric.lingerie'].stage in [8, 9]:
             #если за Максом нет косяка по боди для Алисы
             Eric_02 "Ну, спорить с этим не буду. Ты мне не мешал и даже с кое-чем помог, так что да... Как надумаешь, что хочешь, так сразу обращайся, что смогу - сделаю."
             menu:
@@ -720,5 +721,6 @@ label Eric_talk_about_Kira_1:
                         $ talk_var['bonus_from_eric'].append('bonus')
                     $ talk_var['bonus_from_eric'].append('bonus')
 
+    $ wcv['catch.Kira'].stage += 1
     $ spent_time += 20
     return

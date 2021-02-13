@@ -108,7 +108,7 @@ define config.end_game_transition = None
 ## После начала игры этот параметр можно изменить с помощью "window show",
 ## "window hide" и "window auto".
 
-define config.window = "auto"
+define config.window = "hide"
 
 
 ## Переходы, используемые при показе и скрытии диалогового окна
@@ -277,3 +277,12 @@ init python:
 ## разделённые дробью.
 
 # define build.itch_project = "renpytom/test-project"
+
+
+## Включение поддержки 32-битных приложений ####################################
+##
+## Если True, то файлы, необходимые для работы на 32-разрядных процессорах x86,
+## будут включены в сборки Linux и Mac. Если значение False, эти файлы не будут
+## включены.
+
+    build.include_i686 = True
