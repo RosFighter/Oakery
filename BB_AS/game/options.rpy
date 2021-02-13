@@ -285,4 +285,4 @@ init python:
 ## будут включены в сборки Linux и Mac. Если значение False, эти файлы не будут
 ## включены.
 
-    build.include_i686 = True
+    build.include_i686 = False
