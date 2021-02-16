@@ -1660,13 +1660,13 @@ translate english alice_blog_lingerie_cc7303dd:
 translate english alice_blog_lingerie_1a6896b4:
 
     # Max_05 "{i}( Отлично! Алиса крутит задом перед камерой в одном нижнем белье! Надеюсь, не заметит... Отсюда вид точно лучше, чем через камеру... ){/i}" nointeract
-    Max_05 "{i}( Great! Alice is showing her ass for the webcam in nothing but her underwear! I hope he doesn't notice me... The view is definitely better from here than through my cameras... ){/i}" nointeract
+    Max_05 "{i}( Great! Alice is showing her ass for the webcam in nothing but her underwear! I hope she doesn't notice me... The view is definitely better from here than through my cameras... ){/i}" nointeract
 
 translate english strings:
 
     # game/events/alice.rpy:12
     old "{i}постучаться{/i}"
-    new "{i}knock{/i}"
+    new "{i}Knock{/i}"
 
     # game/events/alice.rpy:12
     old "{i}заглянуть со двора{/i}"
@@ -1678,7 +1678,7 @@ translate english strings:
 
     # game/events/alice.rpy:12
     old "{i}воспользоваться стремянкой{/i}"
-    new "{i}take the step ladder{/i}"
+    new "{i}Take the step ladder{/i}"
 
     # game/events/alice.rpy:15
     old "Это я, Макс. Можно войти?"
@@ -1702,15 +1702,15 @@ translate english strings:
 
     # game/events/alice.rpy:260
     old "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}"
-    new "{i}look from the side\n{color=[_ch2.col]}(Stealth. Chance: [_ch2.vis]){/color}{/i}"
+    new "{i}Look from the side\n{color=[_ch2.col]}(Stealth. Chance: [_ch2.vis]){/color}{/i}"
 
     # game/events/alice.rpy:260
     old "{i}немного пошуметь{/i}"
-    new "{i}make some noise{/i}"
+    new "{i}Make some noise{/i}"
 
     # game/events/alice.rpy:260
     old "{i}запустить паука к Алисе{/i}"
-    new "{i}Spider to Alice{/i}"
+    new "{i}Use the spider{/i}"
 
     # game/events/alice.rpy:281
     old "{i}спрятаться{/i}"
@@ -1718,11 +1718,11 @@ translate english strings:
 
     # game/events/alice.rpy:314
     old "{i}принести Алисе полотенце{/i}"
-    new "{i}grab a towel for Alice{/i}"
+    new "{i}Grab a towel for Alice{/i}"
 
     # game/events/alice.rpy:324
     old "{i}отдать Алисе полотенце{/i}"
-    new "{i}towel down Alice{/i}"
+    new "{i}Towel down Alice{/i}"
 
     # game/events/alice.rpy:324
     old "{i}отдать Алисе полотенце (выронив его из одной руки){/i}"
@@ -1754,7 +1754,7 @@ translate english strings:
 
     # game/events/alice.rpy:712
     old "{i}дать одну конфету{/i}"
-    new "{i}give one candy{/i}"
+    new "{i}Give one candy{/i}"
 
     # game/events/alice.rpy:716
     old "Ну, можешь трусы показать..."
@@ -1778,7 +1778,7 @@ translate english strings:
 
     # game/events/alice.rpy:828
     old "{i}спать до утра{/i}"
-    new "{i}sleep till morning{/i}"
+    new "{i}Sleep till morning{/i}"
 
     # game/events/alice.rpy:845
     old "А что мне за это будет?"
@@ -1822,7 +1822,7 @@ translate english strings:
 
     # game/events/alice.rpy:975
     old "{i}выброшу этого паука с балкона{/i}"
-    new "{i}throw the spider off the balcony.{/i}"
+    new "{i}Throw the spider off the balcony.{/i}"
 
     # game/events/alice.rpy:975
     old "{i}убью этого паука{/i}"
@@ -1838,15 +1838,15 @@ translate english strings:
 
     # game/events/alice.rpy:978
     old "{i}выбросить с балкона{/i}"
-    new "{i}throw it outside{/i}"
+    new "{i}Throw it outside{/i}"
 
     # game/events/alice.rpy:978
     old "{i}убить паука{/i}"
-    new "{i}kill the spider{/i}"
+    new "{i}Kill the spider{/i}"
 
     # game/events/alice.rpy:981
     old "{i}вернуться в кровать{/i}"
-    new "{i}go back to bed{/i}"
+    new "{i}Go back to bed{/i}"
 
     # game/events/alice.rpy:1179
     old "У тебя... Очень красивая грудь..."
@@ -1898,15 +1898,15 @@ translate english strings:
 
     # game/events/alice.rpy:1442
     old "{i}продолжить смотреть{/i}"
-    new "{i}continue watching{/i}"
+    new "{i}Continue watching{/i}"
 
     # game/events/alice.rpy:1442
     old "{i}взглянуть со стороны{/i}"
-    new "{i}look from the side{/i}"
+    new "{i}Look from the side{/i}"
 
     # game/events/alice.rpy:1498
     old "{i}сбежать{/i}"
-    new "{i}escape{/i}"
+    new "{i}Escape{/i}"
 
     # game/events/alice.rpy:1498
     old "Классно смотришься!"
@@ -2484,7 +2484,7 @@ translate english alice_towel_after_club_845ca42f:
 translate english alice_towel_after_club_488205cf:
 
     # Alice_09 "Хочу... ухх... чтобы ты продолжал... Как же хорошо... Ты этому на своих курсах массажа научился?!"
-    Alice_09 "I want... uh... For you to keep... That feels good... Did you learn that in your massage class?!"
+    Alice_09 "I want... Uh... For you to keep... That feels good... Did you learn that in your massage class?!"
 
 # game/events/alice.rpy:1798
 translate english alice_towel_after_club_c6245e2a:
@@ -2718,7 +2718,7 @@ translate english strings:
 
     # game/events/alice.rpy:1799
     old "{i}проникнуть в её киску пальцами{/i}"
-    new "{i}Penetrate her pussy with your fingers{/i}"
+    new "{i}Finger her{/i}"
 
     # game/events/alice.rpy:1829
     old "{i}массировать её ножки{/i}"
@@ -3203,7 +3203,7 @@ translate english blog_with_Eric_55fa4c7f:
 translate english blog_with_Eric_84a87931:
 
     # Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. А мне лучше сматываться отсюда, не хватало ещё чтобы меня сейчас заметили... ){/i}" nointeract
-    Max_09 "{i}( I see what's going on with you two, Alice is sitting on Eric's neck, and he's happy to do it. I'd better get out of here, I don't want to be seen now... ){/i}" nointeract
+    Max_09 "{i}( I see what's going on with you two, Alice is trying to take advantage of Eric, and thinks he's falling for it! I'd better get out of here, I don't want to be seen now... ){/i}" nointeract
 
 # game/events/alice.rpy:2154
 translate english blog_with_Eric_dbb6f3c2:
@@ -3545,4 +3545,3 @@ translate english strings:
     # game/events/alice.rpy:1651
     old "Я тут не удержался и купил тебе боди раньше Эрика!"
     new "I couldn't resist buying you a bodysuit before Eric did!"
-
