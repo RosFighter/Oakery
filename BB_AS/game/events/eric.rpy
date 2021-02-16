@@ -535,14 +535,16 @@ label eric_ann_fucking:
 
     $ _ch1 = GetChance(mgg.stealth, 3, 900)
     menu:
-        Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if talk_var['eric.voy.stage']<3 or GetRelMax('eric')[0]<0:
+        Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит..."
+        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if talk_var['eric.voy.stage']<0 or GetRelMax('eric')[0]<0:
             pass
-        "{i}заглянуть в окно{/i}" if talk_var['eric.voy.stage'] in [0, 2, 3] and GetRelMax('eric')[0]>3:
+        "{i}заглянуть в окно{/i}" if 0<=talk_var['eric.voy.stage']<4 and GetRelMax('eric')[0]>3:
             pass
         "{i}зайти в спальню{/i}" if 3<talk_var['eric.voy.stage']<8 and GetRelMax('eric')[0]>3:
             jump lessons_from_Eric
         "{i}уйти{/i}":
+            Max "" nointeract
+            window hide
             $ current_room = house[0]
             jump AfterWaiting
 
@@ -563,14 +565,14 @@ label eric_ann_fucking:
     else:
         $ renpy.show('FG ann&eric-voyeur-01')
 
-    if talk_var['eric.voy.stage'] in [0, 2, 3] and GetRelMax('eric')[0]>3:
+    if talk_var['eric.voy.stage'] in [0, 1, 2, 3] and GetRelMax('eric')[0]>3:
         if fuck_scene == 6:
             scene BG char Eric bed-02
             $ renpy.show('Eric fuck 06b')
             $ renpy.show('FG ann&eric-voyeur-02')
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
-        if talk_var['eric.voy.stage'] == 0:
+        if talk_var['eric.voy.stage'] in [0, 1]:
             Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
             $ punreason[3] = 1
 

@@ -1408,7 +1408,7 @@ translate english Eric_talk_about_Kira_0_4acf3d39:
 # game/dialogues/erictalk.rpy:604
 translate english Eric_talk_about_Kira_0_fb65eee0:
 
-    # Eric_03 "Ну ты ушлый! Если это что-то, что поможет мне её трахнуть, то ты можешь расчитывать на бонус. Так что у тебя там такое про неё имеется?"
+    # Eric_03 "Ну ты ушлый! Если это что-то, что поможет мне её трахнуть, то ты можешь рассчитывать на бонус. Так что у тебя там такое про неё имеется?"
     Eric_03 "You're a smart one! If it's something that helps me fuck her, you can count on it. What do you have?"
 
 # game/dialogues/erictalk.rpy:605

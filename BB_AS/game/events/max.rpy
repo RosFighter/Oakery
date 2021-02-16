@@ -37,7 +37,7 @@ label Sleep:
             $ renpy.loadsave.force_autosave(True, True)
             $ spent_time = 360
             $ status_sleep = True
-            $ alarm_time = '08:00'
+            $ alarm_time = '07:00'
             jump Waiting # спим 360 минут или до наступления 8 утра
 
 

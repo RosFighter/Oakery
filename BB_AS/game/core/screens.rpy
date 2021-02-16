@@ -883,6 +883,8 @@ screen room_navigation():
 
     use notify_check
 
+    $ renpy.stop_predict('extra/**.webp')
+
     if not _in_replay:
         key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
         key 'K_F8' action QuickLoad()
@@ -1080,7 +1082,7 @@ screen room_navigation():
                 at small_menu_mobile
             else:
                 at small_menu
-        if renpy.loadable('extra/extra.webp'):
+        if renpy.loadable('extra/extra.webp') or renpy.loadable('extra.rpa'):
             imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')]:
                 if renpy.variant('small'):
                     at small_menu_mobile

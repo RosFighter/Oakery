@@ -1265,6 +1265,9 @@ init python:
 
 
     def check_is_home(char, loc='house'):  # определяет (по расписанию) находится ли персонаж дома в данный момент
+        if char not in chars:
+            return False
+
         return chars[char].get_plan().loc == loc
 
 
@@ -1547,3 +1550,14 @@ init python:
                 Schedule((2, 5), '2:00', '2:29', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', variable="flags['eric.jerk']", enabletalk=False, glow=125),
             )
         # renpy.say(Max, "...")
+
+    def set_extra_album():
+        for id_alb, desc in photo_album:
+            if id_alb in persistent.photos:
+                if 'cur_album' not in globals():
+                    global cur_album
+                    cur_album = id_alb
+                    break
+                elif cur_album is None:
+                    cur_album = id_alb
+                    break

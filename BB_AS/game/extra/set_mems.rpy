@@ -192,14 +192,16 @@ init python:
         # вписать бельё
         al.dress = renpy.random.choice(['a', 'b']) if 'black_linderie' in persistent.mems_var else 'a'
 
-        sm = ['']
+        sm = [None,]
         if 'alice_sleeptoples' in persistent.mems_var:
             sm.extend(['sleep', 'not_sleep'])
         if 'alice_sleepnaked' in persistent.mems_var:
             sm.extend(['naked', 'not_naked'])
+        sm = renpy.random.choice(sm)
+        smr = None if sm is None else {'sleep':'sleep', 'not_sleep':'sleep', 'naked':'naked', 'not_naked':'naked'}[sm]
         my_scope = {
             'talk_var' : {'smoke': ''},
-            'flags'    : {'smoke': renpy.random.choice(sm), 'noted': False},
+            'flags'    : {'smoke': sm, 'smoke.request':smr ,'noted': False},
             'mgg'      : mg,
             'tm'       : '02:30',
             'alice'    : al,

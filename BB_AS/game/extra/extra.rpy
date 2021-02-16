@@ -105,7 +105,6 @@ define photo_album = [
     ]
 
 define cur_starts = [0, 0, 0, 0, 0, 0]
-default cur_album = None
 default st_gallery =  'mem'
 
 define next_sh = False
@@ -114,6 +113,8 @@ define prev_sh = False
 screen menu_gallery():
     tag menu
     style_prefix 'extra'
+
+    $ renpy.start_predict('extra/**.webp')
 
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
@@ -179,12 +180,12 @@ screen menu_gallery():
                     hbox:
                         viewport mousewheel 'change' draggable True id 'vp1':
                             vbox spacing 5:
-                                for id, desc in photo_album:
-                                    if id in persistent.photos:
-                                        if cur_album is None:
-                                            $ cur_album = id
-                                        button background None action SetVariable('cur_album', id) xsize 290 style 'alb_button':
-                                            textbutton desc action SetVariable('cur_album', id) selected cur_album == id style 'album_button'
+                                for id_alb, desc in photo_album:
+                                    if id_alb in persistent.photos:
+                                        if 'cur_album' not in globals() or cur_album is None:
+                                            $ cur_album = id_alb
+                                        button background None action SetVariable('cur_album', id_alb) xsize 290 style 'alb_button':
+                                            textbutton desc action SetVariable('cur_album', id_alb) selected cur_album == id_alb style 'album_button'
 
                         vbar value YScrollValue('vp1') style 'extra_vscroll'
 
@@ -195,9 +196,9 @@ screen menu_gallery():
                             for photo in persistent.photos[cur_album]:
                                 frame xysize(450, 254) background None:
                                     if photo:
-                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot '+cur_album+' '+photo action Show('photo_art', cur_alb=cur_album, photo=photo) at zoom_out(450, 254)
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'extra photoshot '+cur_album+' '+photo action Show('photo_art', cur_alb=cur_album, photo=photo) #at zoom_out(450, 254)
                                     else:
-                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'photoshot closed' action NullAction() at zoom_out(450, 254)
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'extra photoshot closed' action NullAction() #at zoom_out(450, 254)
 
                         vbar value YScrollValue('vp') style 'extra_vscroll'
 

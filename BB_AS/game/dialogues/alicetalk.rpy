@@ -1804,9 +1804,12 @@ label Alice_solar:
                 jump AfterWaiting
         "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and any([mgg.dress == 'a', kol_cream < 3]):
             if mgg.dress == 'a':  # Максу нужна одежда
-                Max_07 "{i}( Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче. ){/i}"
-                $ items['max-a'].InShop = True
-                jump AfterWaiting
+                if items['max-a'].have:
+                    $ mgg.dress = 'b'
+                else:
+                    Max_07 "{i}( Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче. ){/i}"
+                    $ items['max-a'].InShop = True
+                    jump AfterWaiting
 
             if kol_cream < 3:  # крема не хватит даже просто нанести
                 Max_07 "{i}( Крем почти закончился. Нужно купить ещё. ){/i}"
@@ -1903,7 +1906,7 @@ label massage_sunscreen:
         $ _suf = 'a'
     $ renpy.show('Max sun-alone 01'+mgg.dress)
     if len(online_cources) > 1 and online_cources[1].current > 0:
-        if len(_massaged) == (5 if dcv['eric.lingerie'].stage in [5, 7] else 4): # 5:
+        if len(_massaged) == (5 if 'eric.lingerie' in dcv and dcv['eric.lingerie'].stage in [5, 7] else 4): # 5:
             Alice_07 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
             Max_03 "Да пустяки, обращайся!"
             Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
@@ -3354,13 +3357,14 @@ label gift_black_lingerie:
         jump .final
 
     label .final:
-        pass
+        if not _in_replay:
+            call alice_add_black_linderie from _call_alice_add_black_linderie
+
     Alice_02 "Ну, спасибо тебе. Да, в этом точно можно покрасоваться перед камерами. Не уверена, что даст эффект, но я же одета... В общем, я попробую!"
     Max_04 "Этого достаточно?"
     Alice_03 "Сомневаюсь, если честно. Ты знаешь... Давай попробуем на всякий случай ещё кое-что. Поищи что-нибудь более сексуальное. Ничего не обещаю, но вдруг поможет..."
     Max_01 "Хорошо, я что-нибудь подыщу..."
     $ renpy.end_replay()
-    call alice_add_black_linderie from _call_alice_add_black_linderie
 
     $ spent_time += 30
     jump Waiting
@@ -3556,7 +3560,7 @@ label gift_lace_lingerie:
     $ items['sexbody2'].have = False
     $ alice.gifts.append('sexbody2')
     $ infl[alice].add_m(40)
-    $ poss['blog'].OpenStage(15)
+    $ poss['blog'].OpenStage(18)
     jump Waiting
 
 
@@ -3601,9 +3605,9 @@ label gift_lace_lingerie:
     #         Alice_04 "Ну, если так... То спасибо тебе большое! Теперь у меня есть выбор в чём ходить в клубы... Конечно, оно слишком... Но мне нравится, когда слишком..."
     #         Max_00 "Не за что, Алиса..."
     #
-    #     "А на что я могу расчитывать?|":
+    #     "А на что я могу рассчитывать?|":
     #         Alice_04 "На мою благодарность и улыбку, конечно!"
-    #         Max_00 "Ну да, именно на это я и расчитывал..."
+    #         Max_00 "Ну да, именно на это я и рассчитывал..." id gift_another_dress_7df3d048
 
 
 # label gift_black_body:

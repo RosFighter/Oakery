@@ -285,6 +285,9 @@ label punishment_max:
             for d in range(len(punreason)):
                 punreason[d] = 0
 
+            if flags['film_punish']:
+                dcv['film_punish'].enabled = False
+
         if tm < "14:00":
             scene BG punish-morning 01
             $ renpy.show("Ann punish-morning 01"+ann.dress)
@@ -496,9 +499,9 @@ label punishment_lisa:
     else:
         Lisa_10 "Ой... Мам! Больно!"
         if punlisa[0][1] == 2:
-            Ann_16 "Давай терпи! Плохо вела себя в школе, получила по голой заднице у всех на глазах."
+            Ann_16 "Давай терпи! Плохо вела себя в школе - получила по голой заднице у всех на глазах." id punishment_lisa_303b7136
         else:
-            Ann_16 "Давай терпи! Получила двойку, получила по голой заднице у всех на глазах."
+            Ann_16 "Давай терпи! Получила двойку - получила по голой заднице у всех на глазах." id punishment_lisa_b8107edc
 
     $ punlisa[0][3] = 1  # Лиза понесла наказание
     if punlisa[0][0] == 1:  # Макс умышленно сделал ошибку и Лизу наказали

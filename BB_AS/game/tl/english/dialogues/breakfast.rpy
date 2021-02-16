@@ -1413,7 +1413,7 @@ translate english breakfast_18_9aadeb5e:
 # game/dialogues/breakfast.rpy:746
 translate english breakfast_18_6935bae9:
 
-    # Max_03 "А кем ты хочешь утроиться?"
+    # Max_03 "А кем ты хочешь устроиться?"
     Max_03 "What kind of opportunities?"
 
 # game/dialogues/breakfast.rpy:747
@@ -2473,4 +2473,3 @@ translate english strings:
     # game/dialogues/breakfast.rpy:867
     old "курит"
     new "smokes"
-

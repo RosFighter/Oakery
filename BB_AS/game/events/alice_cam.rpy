@@ -735,16 +735,16 @@ label cam0_blog_with_Eric:
 
         #cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(07a/07b)
         $ renpy.show('Eric cams blog 04'+eric.dress, at_list=[laptop_screen])
-        $ renpy.show('Alice cams blog dresses 07'+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 07'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
         Max_01 "{i}( Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! ){/i}"
 
         #cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(08a/08b)
-        $ renpy.show('Alice cams blog dresses 08'+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 08'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
         Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
 
         #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(09a/09b)
         $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
-        $ renpy.show('Alice cams blog dresses 09'+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 09'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
         Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь... ){/i}"
         #после этого через камеру можно увидеть 2 варианта того, что делают Алиса и Эрик, либо она сидит он стоит рядом, либо она позирует он сидит на кровати
 

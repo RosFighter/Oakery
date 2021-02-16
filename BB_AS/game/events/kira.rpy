@@ -2202,7 +2202,10 @@ label return_from_club:
             menu:
                 Kira_02 "Я постараюсь. Приятных снов, Макс."
                 "{i}отправиться спать{/i}":
+                    $ current_room = house[0]
                     jump Sleep
+                "{i}принести Алисе полотенце{/i}" if flags['alice.drink']>1:
+                    jump alice_towel_after_club
 
         # была 1-ая фотосессия с Кирой
 
@@ -2311,9 +2314,10 @@ label return_from_club:
         menu:
             Max_01 "{i}Надеюсь, мама не будет сильно её осуждать за то, что она легла спать голая... С кем не бывает! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать...{/i}"
             "{i}отправиться спать{/i}":
+                $ current_room = house[0]
                 jump Sleep
 
-            "{i}принести Алисе полотенце{/i}" if flags['alice.drink']:
+            "{i}принести Алисе полотенце{/i}" if flags['alice.drink']>1:
                 jump alice_towel_after_club
 
     label .ass:
@@ -2342,6 +2346,7 @@ label return_from_club:
         menu:
             Max_01 "Надеюсь, мама не будет сильно её ругать за то, что она легла спать голая... Со всеми может случиться! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать..."
             "{i}отправиться спать{/i}":
+                $ current_room = house[0]
                 jump Sleep
 
             "{i}принести Алисе полотенце{/i}" if flags['alice.drink']:

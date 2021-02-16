@@ -54,7 +54,7 @@ label Waiting:
 
     # начисление влияния и бругие события по времени
     if 'eric' in chars:
-        call eric_time_settings
+        call eric_time_settings from _call_eric_time_settings
 
     if prevtime < '12:00' <= tm:
         call Noon from _call_Noon
@@ -131,6 +131,7 @@ label eric_time_settings:
             $ dcv['eric.lingerie'].stage = 8
             $ items['sexbody2'].InShop = False
             $ alice.gifts.append('sexbody2')
+            $ poss['blog'].OpenStage(15)
 
     if prevtime < '15:00' <= tm:
         if all([GetWeekday(day)==0, flags['dinner_ab_lisa'], talk_var['fight_for_Lisa'] in [2, 4, 5]]):
@@ -684,6 +685,9 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
+    if renpy.loadable('extra/extra.webp') or renpy.loadable('extra.rpa'):
+        $ set_extra_album()
+
     # "ver [current_ver]"
     if current_ver == 'v0.01.TechDemo':
         scene BG villa-door
@@ -1154,7 +1158,7 @@ label after_load_04_5:
     if current_ver < "0.04.5.02":
         $ current_ver = "0.04.5.02"
 
-        if not clothes[lisa].learn.sel[2].change:
+        if len(clothes[lisa].learn.sel)>2 and not clothes[lisa].learn.sel[2].change:
             $ clothes[lisa].learn.sel[2].change = True
             $ clothes[lisa].learn.sel[2].rand = True
 
@@ -1207,7 +1211,7 @@ label after_load_04_5:
                     PossStage("interface poss blog ep03", _("Я пообщался с Алисой насчёт своих выводов о популярности блога и намекнул, что можно рекламировать не только крема и лаки, но и нижнее бельё, например. Но крутить своей попкой перед камерой она не собирается... А зря, ведь она и так уже это делает на скрытую камеру, которую я поставил в её комнате. Как знать, может мне удастся увидеть что-то, чего ещё не было...")),  #3 камера уже установлена
                     PossStage("interface poss blog ep03", _("Я решил снова предложить Алисе идею по развитию её блога - рекламировать нижнее бельё. Удивительно, но она согласилась! Правда, теперь мне нужно найти нижнее бельё для того, чтобы она заинтересовала свою аудиторию и привлекла внимание рекламодателей...")),  #4
                     PossStage("interface poss blog ep04", _("Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Правда, я почти ничего не увидел, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!")),
-                    # PossStage("interface poss blog ep05", _("Мой очередной подарок Алисе произвёл эффект, но не совсем тот, на который я расчитывал. Чёрное маленькое боди без верха не подойдёт для её блога... Однако, подойдёт для кого-то, но для кого она не сказала... Столько секретов..."),
+                    # PossStage("interface poss blog ep05", _("Мой очередной подарок Алисе произвёл эффект, но не совсем тот, на который я расcчитывал. Чёрное маленькое боди без верха не подойдёт для её блога... Однако, подойдёт для кого-то, но для кого она не сказала... Столько секретов..."),
                     #           _("Ах да! Алиса сообщила, что с нею связался какой-то рекламодатель, который будет высылать ей нижнее бельё и потом платить за это! Теперь я ей больше не нужен...")),
                 ])
         if day > 2 and not poss['blog'].stages[0].used:
@@ -1265,15 +1269,16 @@ label after_load_04_5:
                 PossStage("interface poss aunt ep05", _("Итак, снимки вышли удачными и мы с Кирой договорились на новую фотосессию, пока никого не будет дома. Но ещё не ясно, когда мы её проведём... Интересно, что такое Кира хочет достать для съёмок!? Остаётся только ждать..."),
                         _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")), #5
             ])
-        if dcv['kiratalk'].stage>=1:
-            $ poss['aunt'].OpenStage(0)
-        if dcv['kiratalk'].stage>=3:
-            $ poss['aunt'].OpenStage(1)
-        if dcv['kiratalk'].stage>=4:
-            $ poss['aunt'].OpenStage(2)
-        if dcv['kiratalk'].stage>=5:
-            $ poss['aunt'].OpenStage(3)
-            $ poss['aunt'].stages[3].ps = _("А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!")
+        if 'kiratalk' in dcv:
+            if dcv['kiratalk'].stage>=1:
+                $ poss['aunt'].OpenStage(0)
+            if dcv['kiratalk'].stage>=3:
+                $ poss['aunt'].OpenStage(1)
+            if dcv['kiratalk'].stage>=4:
+                $ poss['aunt'].OpenStage(2)
+            if dcv['kiratalk'].stage>=5:
+                $ poss['aunt'].OpenStage(3)
+                $ poss['aunt'].stages[3].ps = _("А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!")
 
     if current_ver < "0.04.5.15":
         $ current_ver = "0.04.5.15"
@@ -1358,7 +1363,7 @@ label after_load_06_0:
     if current_ver < "0.06.0.00":
         $ current_ver = "0.06.0.00"
 
-        if poss['aunt'].stn == 5:
+        if 'aunt' in poss and poss['aunt'].stn == 5:
             $ append_photo('01-Kira', 12)
 
         if poss['sg'].stn == 2 and talk_var['truehelp'] >= 6:
@@ -1546,3 +1551,53 @@ label after_load_06_0:
 
         if poss['blog'].stn in [15, 16] and dcv['eric.lingerie'].stage < 8:
             $ dcv['eric.lingerie'].stage = 8
+
+    if current_ver < "0.06.0.05":
+        $ current_ver = "0.06.0.05"
+
+        if 'black_linderie' in alice.gifts and 'cam_pose_blog' not in globals():
+            $ cur_blog_lingerie = ''
+            $ cam_pose_blog = []
+
+
+        $ poss['blog'].stages[14].ps = _("Если я хочу это сделать, то нужно торопиться, чтобы успеть подарить ей боди до субботы... И дарить надо, когда Алиса занимается блогом, тогда она может быть переоденется при мне!")
+
+        $ __poss20 = __poss18 = False
+        if poss['blog'].stages[19].used:
+            $ poss['blog'].stages[19].used = False
+            $ __poss20 = True
+        if poss['blog'].stages[18].used:
+            $ poss['blog'].stages[18].used = False
+            $ poss['blog'].stages[19].used = True
+        if poss['blog'].stages[17].used:
+            $ poss['blog'].stages[17].used = False
+            $ poss['blog'].stages[18].used = True
+        if poss['blog'].stages[16].used:
+            $ poss['blog'].stages[16].used = False
+            $ poss['blog'].stages[17].used = True
+        if poss['blog'].stages[15].used:
+            $ poss['blog'].stages[15].used = False
+            if dcv['eric.lingerie'].stage in [5, 7]:
+                $ __poss18 = True
+            else:
+                $ poss['blog'].stages[16].used = True
+
+        $ poss['blog'].stages.insert(15, PossStage("interface poss blog ep08", _("Теперь, каждую среду, пока мама принимает ванну, Эрик тусуется у Алисы в комнате, якобы помогая ей с блогом. Понятно, что на самом деле он хочет поглазеть на Алису в нижнем белье... а в будущем и в трусики к ней залезть.\n\nА ещё мне повезло узнать, что Эрик собирается купить ей новое кружевное боди! Обидно, конечно, что она попросила об этом не меня. Интересно, как Эрик отреагирует, если я его опережу с покупкой..."), _("Что бы я там не хотел, теперь уже поздно! Мне остаётся только наблюдать...")))  #15!
+
+        $ poss['blog'].stages[16].desc = _("Эрик подарил Алисе кружевное боди, которое она просила. Похоже, это их сблизило, чего он и добивался, а вот я не успел его обойти. Нужно скорее избавляться от Эрика, иначе он заберёт у меня всё...")
+        $ poss['blog'].stages[17].desc = _("Эрик подарил Алисе кружевное боди, которое она просила. Похоже, это их сблизило, чего он и добивался. И будет добиваться дальше...")
+
+        if dcv['eric.lingerie'].stage == 8:
+            $ poss['blog'].OpenStage(15)
+        if dcv['eric.lingerie'].stage == 9:
+            $ poss['blog'].OpenStage(17 if GetRelMax('eric')[0]>0 else 16)
+
+        if __poss20:
+            $ poss['blog'].OpenStage(20)
+
+        python:
+            for i in xrange(20, 15, -1):
+                if poss['blog'].stages[i].used and poss['blog'].stn < i:
+                    poss['blog'].stn = i
+                    "break [i]"
+                    break
