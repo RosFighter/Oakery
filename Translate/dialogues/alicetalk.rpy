@@ -6795,7 +6795,7 @@ translate english gift_another_dress_56bb0378:
 # game/dialogues/alicetalk.rpy:3402
 translate english gift_another_dress_7df3d048:
 
-    # Max_00 "Ну да, именно на это я и расчитывал..."
+    # Max_00 "Ну да, именно на это я и рассчитывал..."
     Max_00 "Well, yes, that's what I was counting on..."
 
 # game/dialogues/alicetalk.rpy:3407
@@ -8103,7 +8103,7 @@ translate english strings:
     new "Why? For no reason..."
 
     # game/dialogues/alicetalk.rpy:3394
-    old "А на что я могу расчитывать?|"
+    old "А на что я могу рассчитывать?|"
     new "What can I expect?|"
 
     # game/dialogues/alicetalk.rpy:3474

@@ -931,12 +931,11 @@ translate english punishment_lisa_a1d39e4d:
 # game/dialogues/punishment.rpy:496
 translate english punishment_lisa_303b7136:
 
-    # Ann_16 "Давай терпи! Плохо вела себя в школе, получила по голой заднице у всех на глазах."
-    Ann_16 "Let's see! If you misbehave at school, you will come home and get spanked."
+    # Ann_16 "Давай терпи! Плохо вела себя в школе - получила по голой заднице у всех на глазах."
+    Ann_16 "Let's see! If you misbehave at school - you will come home and get spanked."
 
 # game/dialogues/punishment.rpy:498
 translate english punishment_lisa_b8107edc:
 
-    # Ann_16 "Давай терпи! Получила двойку, получила по голой заднице у всех на глазах."
-    Ann_16 "Let's see! If you fail at school, you will come home and get spanked."
-
+    # Ann_16 "Давай терпи! Получила двойку - получила по голой заднице у всех на глазах."
+    Ann_16 "Let's see! If you fail at school - you will come home and get spanked."

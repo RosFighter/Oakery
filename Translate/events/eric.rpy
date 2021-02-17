@@ -537,7 +537,7 @@ translate english eric_ann_tv_closer1_cd0fd095:
 # game/events/eric.rpy:536
 translate english eric_ann_fucking_d45f853e:
 
-    # Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открыть дверь точно не стоит, влетит..." nointeract
+    # Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит..." nointeract
     Max_00 "Judging by the sounds, Mom and Eric are doing something. There's no need to open the door..." nointeract
 
 # game/events/eric.rpy:573
@@ -2258,3 +2258,17 @@ translate english strings:
     # game/events/eric.rpy:1387
     old "{i}сфотографировать его{/i}"
     new "{i}Photograph him{i}"
+# TODO: Translation updated at 2021-02-16 09:54
+
+# game/events/eric.rpy:537
+translate english eric_ann_fucking_60cad7ba:
+
+    # Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит..." nointeract
+    Max_00 "Judging by the sounds, Mom and Eric are doing something. There's no need to open the door..." nointeract
+
+# game/events/eric.rpy:546
+translate english eric_ann_fucking_3479dfb8:
+
+    # Max "" nointeract
+    Max "" nointeract
+

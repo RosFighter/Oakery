@@ -1356,3 +1356,15 @@ translate english strings:
     old "Вот и состоялась вторая фотосессия! И она была отпадной! Не только потому что Кира решила пофотографироваться на тему БДСМ, но и потому что у нас был секс... Мой первый, настоящий секс... Теперь я официально больше не девственник! Вернее, неофициально... я ведь трахался с тётей. Надеюсь, не в последний раз! Хотя, с этим Эриком, который во всё лезет, лучше быть очень осторожным..."
     new "And that was the second photo-shoot! Amazing! Not just because Kira brought out her wild side with some BDSM, but because we actually had sex! My first... Finally... I'm officially no longer a virgin! I mean... Unofficially... I can't exactly tell anyone I fucked my Aunt. That being said, I should be careful around Eric. He always seems to be getting involved..."
 
+# TODO: Translation updated at 2021-02-16 09:54
+
+translate english strings:
+
+    # game/core/03variables.rpy:364
+    old "Если я хочу это сделать, то нужно торопиться, чтобы успеть подарить ей боди до субботы... И дарить надо, когда Алиса занимается блогом, тогда она может быть переоденется при мне!"
+    new "If I want to do this, I need to hurry to get her a bodysuit before Saturday... And you need to give it when Alice is engaged in a blog, then she can be changed in front of me!"
+
+    # game/core/03variables.rpy:364
+    old "Что бы я там не хотел, теперь уже поздно! Мне остаётся только наблюдать..."
+    new "Whatever I want, it's too late now! I can only watch..."
+
