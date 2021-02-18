@@ -184,6 +184,9 @@ label Midnight:
 
     if 'smoke' in talk_var:
         $ talk_var['smoke'] = 0
+        $ alice.nopants = False
+        $ alice.sleeptoples = False
+        $ alice.sleepnaked = False
         if flags['smoke.request'] == 'money':
             $ flags['smoke'] = None
             $ flags['smoke.request'] = None
@@ -195,12 +198,12 @@ label Midnight:
             if RandomChance(__chance):
                 $ flags['smoke'] = 'not_' + flags['smoke.request']
                 $ flags['noted'] = False  # нарушение ещё не замечено Максом
-                if flags['smoke.request'] == 'nopants':
-                    $ alice.nopants = False
-                elif flags['smoke.request'] == 'sleep':
-                    $ alice.sleeptoples = False
-                elif flags['smoke.request'] == 'naked':
-                    $ alice.sleepnaked = False
+                # if flags['smoke.request'] == 'nopants':
+                #     $ alice.nopants = False
+                # elif flags['smoke.request'] == 'sleep':
+                #     $ alice.sleeptoples = False
+                # elif flags['smoke.request'] == 'naked':
+                #     $ alice.sleepnaked = False
             else:
                 $ flags['smoke'] = flags['smoke.request']
                 if flags['smoke.request'] == 'nopants':
@@ -488,6 +491,9 @@ label AfterWaiting:
 
 label night_of_fun:
 
+    if not len(NightOfFun):
+        return
+
     $ renpy.random.shuffle(NightOfFun)
 
     # "Выбор из списка ночных забав"
@@ -685,10 +691,10 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
-    if renpy.loadable('extra/extra.webp') or renpy.loadable('extra.rpa'):
+    if extrapak:  #renpy.loadable('extra/extra.webp'):
         $ set_extra_album()
 
-    # "ver [current_ver]"
+    "ver [current_ver]"
     if current_ver == 'v0.01.TechDemo':
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
@@ -1559,7 +1565,6 @@ label after_load_06_0:
             $ cur_blog_lingerie = ''
             $ cam_pose_blog = []
 
-
         $ poss['blog'].stages[14].ps = _("Если я хочу это сделать, то нужно торопиться, чтобы успеть подарить ей боди до субботы... И дарить надо, когда Алиса занимается блогом, тогда она может быть переоденется при мне!")
 
         $ __poss20 = __poss18 = False
@@ -1601,3 +1606,11 @@ label after_load_06_0:
                     poss['blog'].stn = i
                     "break [i]"
                     break
+
+    if current_ver < "0.06.0.06":
+        $ current_ver = "0.06.0.06"
+
+        if talk_var['fight_for_Lisa'] in [4, 5]:
+            $ poss['seduction'].OpenStage(20)
+        elif talk_var['fight_for_Lisa'] == 6:
+            $ poss['seduction'].OpenStage(21)

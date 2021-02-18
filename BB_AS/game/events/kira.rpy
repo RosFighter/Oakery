@@ -2204,7 +2204,7 @@ label return_from_club:
                 "{i}отправиться спать{/i}":
                     $ current_room = house[0]
                     jump Sleep
-                "{i}принести Алисе полотенце{/i}" if flags['alice.drink']>1:
+                "{i}принести Алисе полотенце{/i}" if flags['alice.drink']:
                     jump alice_towel_after_club
 
         # была 1-ая фотосессия с Кирой

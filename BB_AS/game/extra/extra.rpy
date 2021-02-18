@@ -53,6 +53,8 @@ init python:
             rez = persistent.photos[id_key][shot]
         return rez
 
+define extrapak = True
+
 define mems = [
         [
             Memories('gift_swimsuit.swimsuit_show', 'lisa-newsuit-01', 'set_gift_swimsuit', _("Новый купальник Лизы")),

@@ -12,6 +12,8 @@ define red    = "#FF0000"
 define orange = "#E59400"
 define gray   = "#808080"
 
+define extrapak = False
+
 define failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
 define succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
 
@@ -113,7 +115,7 @@ define talks = {
     'alice_dw'   : TalkTheme('alice', _("Насчёт посуды..."), 'wash_dishes_alice', "talk_var['alice_dw']==0 and alice.plan_name == 'dishes'", -2),
     'ask_money'  : TalkTheme('ann', _("Мам, дай денег, пожалуйста..."), 'ann_ask_money', "talk_var['ask_money']==0"),
     'aboutfood'  : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv['buyfood'].stage==2 and not dcv['buyfood'].done"), #dcv['buyfood'].lost==2"),
-    'aboutpool'  : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv['clearpool'].stage==2 and not dcv['clearpool'].lost>3"),
+    'aboutpool'  : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv['clearpool'].stage==2 and dcv['clearpool'].lost>3"),
     'ann_tv'     : TalkTheme('ann', _("Что смотришь?"), 'ann_talk_tv', "talk_var['ann_tv']==0 and ann.plan_name == 'tv'"),
     'alice_tv'   : TalkTheme('alice', _("Не возражаешь против компании?"), 'alice_talk_tv', "talk_var['alice_tv']==0 and alice.plan_name == 'tv'"),
     'aboutbooks' : TalkTheme('alice', _("Что читаешь?"), 'alice_aboutbooks', "alice.plan_name == 'read' and poss['secretbook'].stn < 0"),

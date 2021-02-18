@@ -1082,7 +1082,7 @@ screen room_navigation():
                 at small_menu_mobile
             else:
                 at small_menu
-        if renpy.loadable('extra/extra.webp') or renpy.loadable('extra.rpa'):
+        if extrapak:  #renpy.loadable('extra/extra.webp'):
             imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')]:
                 if renpy.variant('small'):
                     at small_menu_mobile

@@ -1551,13 +1551,15 @@ init python:
             )
         # renpy.say(Max, "...")
 
+
     def set_extra_album():
-        for id_alb, desc in photo_album:
-            if id_alb in persistent.photos:
-                if 'cur_album' not in globals():
-                    global cur_album
-                    cur_album = id_alb
-                    break
-                elif cur_album is None:
-                    cur_album = id_alb
-                    break
+        if 'photo_album' in globals():
+            for id_alb, desc in photo_album:
+                if id_alb in persistent.photos:
+                    if 'cur_album' not in globals():
+                        global cur_album
+                        cur_album = id_alb
+                        break
+                    elif cur_album is None:
+                        cur_album = id_alb
+                        break

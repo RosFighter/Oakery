@@ -10,7 +10,6 @@ label after_dinner:
     elif talk_var['fight_for_Alice']==5 and not dcv['eric.lingerie'].enabled:
         $ ready_for_blog0()
 
-
     if len(punlisa)> 0 and (punlisa[0][3] == 1 or punlisa[0][2] > 1):
         # Лизу наказали
         if all([
@@ -40,7 +39,7 @@ label after_dinner:
             elif poss['sg'].stn == 2:
                 # безвозмездно помогал, но перестал
                 call conversation_after_dinner(2) from _call_conversation_after_dinner_2
-            elif poss['sg'].stn > 2:
+            elif poss['sg'].stn > 2 and poss['seduction'].stn < 19:
                 # обещал помогать за услуги, но не стал или перестал
                 call conversation_after_dinner(3) from _call_conversation_after_dinner_3
 
@@ -683,6 +682,7 @@ label dinner_ab_lisa_ed:
                 Schedule((0, ), '10:0', '10:59', 'dressed', _("одевается к репетитору"), 'house', 0, 'lisa_dressed_repetitor', enabletalk=False, glow=110),
                 Schedule((0, ), '11:0', '14:59', 'at_tutor', _("у репетитора")),
             )
+        $ poss['seduction'].OpenStage(20)
     else:
         # Макс решил не уступать Лизу Эрику
         Eric_01 "Я решил, что нужно уделить твоему образованию больше внимания, Лиза. Так что я оплатил дополнительные учебные курсы у вас в школе."
@@ -703,6 +703,7 @@ label dinner_ab_lisa_ed:
             Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', glow=105),
             Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', glow=110),
             )
+        $ poss['seduction'].OpenStage(21)
 
     Ann_01 "Вот и хорошо. Давайте теперь спокойно поедим."
     Max_00 "Давайте."
