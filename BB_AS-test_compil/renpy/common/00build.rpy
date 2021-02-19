@@ -1,4 +1,4 @@
-﻿# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+﻿# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -87,18 +87,21 @@ init -1500 python in build:
         # Ignore Ren'Py and renpy.exe.
         ( "lib/*/renpy", None),
         ( "lib/*/renpy.exe", None),
+        ( "lib/*/pythonw.exe", None),
 
         # Windows patterns.
-        ( "lib/windows-i686/**", "windows"),
+        ( "lib/windows-i686/**", "windows_i686"),
+        ( "lib/windows-x86_64/**", "windows"),
 
         # Linux patterns.
+        ( "lib/linux-i686/**", "linux_i686"),
         ( "lib/linux-*/**", "linux"),
 
         # Mac patterns
-        ( "lib/darwin-x86_64/**", "mac"),
+        ( "lib/mac-*/**", "mac"),
 
         # Shared patterns.
-        ( "/lib/**", "windows linux mac"),
+        ( "/lib/**", "windows linux mac android ios"),
         ( "renpy.sh", "linux mac"),
     ])
 
@@ -136,7 +139,9 @@ init -1500 python in build:
         ("dialogue.txt", None),
         ("dialogue.tab", None),
         ("profile_screen.txt", None),
+
         ("files.txt", None),
+        ("memory.txt", None),
 
         ("tmp/", None),
         ("game/saves/", None),
@@ -145,6 +150,8 @@ init -1500 python in build:
         ("archived/", None),
         ("launcherinfo.py", None),
         ("android.txt", None),
+
+        ("game/presplash*.*", "all"),
 
         (".android.json", "android"),
         ("android-*.png", "android"),
@@ -157,6 +164,10 @@ init -1500 python in build:
 
         ("web-presplash.png", "web"),
         ("web-presplash.jpg", "web"),
+        ("web-presplash.webp", "web"),
+        ("progressive_download.txt", "web"),
+
+        ("steam_appid.txt", None),
 
         ])
 
@@ -226,21 +237,11 @@ init -1500 python in build:
 
     xbit_patterns = [
         "**.sh",
-        "**/*.so.*",
-        "**/*.so",
-        "**/*.dylib",
 
-        "lib/**/python",
-        "lib/**/pythonw",
-        "lib/**/zsync",
-        "lib/**/zsyncmake",
+        "lib/linux-*/*",
+        "lib/mac-*/*",
 
         "**.app/Contents/MacOS/*",
-
-        "**.app/Contents/MacOS/lib/**/python",
-        "**.app/Contents/MacOS/lib/**/pythonw",
-        "**.app/Contents/MacOS/lib/**/zsync",
-        "**.app/Contents/MacOS/lib/**/zsyncmake",
         ]
 
     def executable(pattern):
@@ -331,14 +332,14 @@ init -1500 python in build:
         packages.append(d)
 
     package("pc", "zip", "windows linux renpy all", "PC: Windows and Linux")
-    package("linux", "tar.bz2", "linux renpy all", "Linux x86/x86_64")
-    package("mac", "app-zip app-dmg", "mac renpy all", "Macintosh x86_64")
-    package("win", "zip", "windows renpy all", "Windows x86")
+    package("linux", "tar.bz2", "linux renpy all", "Linux")
+    package("mac", "app-zip app-dmg", "mac renpy all", "Macintosh")
+    package("win", "zip", "windows renpy all", "Windows")
     package("market", "zip", "windows linux mac renpy all", "Windows, Mac, Linux for Markets")
     package("steam", "zip", "windows linux mac renpy all", hidden=True)
     package("android", "directory", "android all", hidden=True, update=False, dlc=True)
     package("ios", "directory", "ios all", hidden=True, update=False, dlc=True)
-    package("web", "zip", "web all", update=False, dlc=True)
+    package("web", "zip", "web all", hidden=True, update=False, dlc=True)
 
     # Data that we expect the user to set.
 
@@ -397,9 +398,20 @@ init -1500 python in build:
     # The command used to sign a dmg.
     mac_codesign_dmg_command = [ "/usr/bin/codesign", "--timestamp", "-s", "{identity}", "-f", "{dmg}" ]
 
+    # Additional or Override keys to add to the Info.plist.
+    mac_info_plist = { }
+
     # Do we want to add the script_version file?
     script_version = True
 
+    # A list of file lists to merge.
+    merge = [ ]
+
+    # Do we want to include the i686 binaries?
+    include_i686 = True
+
+    # Do we want to change the icon on the i686 binaries?
+    change_icon_i686 = True
 
     # This function is called by the json_dump command to dump the build data
     # into the json file.
@@ -466,6 +478,16 @@ init -1500 python in build:
             rv["mac_codesign_command"] = mac_codesign_command
             rv["mac_create_dmg_command"] = mac_create_dmg_command
             rv["mac_codesign_dmg_command"] = mac_codesign_dmg_command
+
+        rv["mac_info_plist"] = mac_info_plist
+
+        rv["merge"] = list(merge)
+
+        if include_i686:
+           rv['merge'].append(("linux_i686", "linux"))
+           rv['merge'].append(("windows_i686", "windows"))
+
+        rv["change_icon_i686"] = change_icon_i686
 
         return rv
 

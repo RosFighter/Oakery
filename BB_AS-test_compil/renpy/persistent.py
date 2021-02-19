@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -19,11 +19,14 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
 
 import os
 import copy
 import time
+import zlib
+import weakref
 
 import renpy
 
@@ -191,9 +194,8 @@ def load(filename):
 
     # Unserialize the persistent data.
     try:
-        f = file(filename, "rb")
-        s = f.read().decode("zlib")
-        f.close()
+        with open(filename, "rb") as f:
+            s = zlib.decompress(f.read())
         persistent = loads(s)
     except:
         import renpy.display
@@ -232,7 +234,7 @@ def init():
     # Create the backup of the persistent data.
     v = vars(persistent)
 
-    for k, v in vars(persistent).iteritems():
+    for k, v in vars(persistent).items():
         backup[k] = safe_deepcopy(v)
 
     return persistent
@@ -336,7 +338,7 @@ def merge(other):
 
 
 # The mtime of the most recently processed savefile.
-persistent_mtime = None
+persistent_mtime = 0
 
 
 def check_update():
@@ -369,7 +371,7 @@ def update(force_save=False):
     # A list of (mtime, other) pairs, where other is a persistent file
     # we might want to merge in.
     pairs = renpy.loadsave.location.load_persistent()
-    pairs.sort()
+    pairs.sort(key=lambda a : a[0])
 
     # Deals with the case where we don't have any persistent data for
     # some reason.
@@ -403,16 +405,23 @@ def save():
         return
 
     try:
-        data = dumps(renpy.game.persistent).encode("zlib")
+        data = zlib.compress(dumps(renpy.game.persistent), 3)
         renpy.loadsave.location.save_persistent(data)
     except:
         if renpy.config.developer:
             raise
 
-
 ################################################################################
 # MultiPersistent
 ################################################################################
+
+
+save_MP_instances = weakref.WeakSet()
+
+
+def save_MP():
+    for ins in save_MP_instances:
+        ins.save()
 
 
 class _MultiPersistent(object):
@@ -435,41 +444,40 @@ class _MultiPersistent(object):
     def save(self):
 
         fn = self._filename
-        f = file(fn + ".new", "wb")
-        dump(self, f)
-        f.close()
+        with open(fn + b".new", "wb") as f:
+            dump(self, f)
 
         try:
-            os.rename(fn + ".new", fn)
+            os.rename(fn + b".new", fn)
         except:
             os.unlink(fn)
-            os.rename(fn + ".new", fn)
+            os.rename(fn + b".new", fn)
 
 
-def MultiPersistent(name):
+def MultiPersistent(name, save_on_quit=False):
 
     name = renpy.exports.fsencode(name)
 
     if not renpy.game.context().init_phase:
         raise Exception("MultiPersistent objects must be created during the init phase.")
 
-    if renpy.android:
-        files = [ os.path.join(os.environ['ANDROID_OLD_PUBLIC'], '../RenPy/Persistent') ]
-
-    elif renpy.ios:
-        raise Exception("MultiPersistent is not supported on iOS.")
+    if renpy.android or renpy.ios:
+        # Due to the security policy of mobile devices, we store MultiPersistent
+        # in the same place as common persistent.
+        # This is better than not working at all.
+        files = [ renpy.config.savedir ]
 
     elif renpy.windows:
-        files = [ os.path.expanduser("~/RenPy/Persistent") ]
+        files = [ os.path.expanduser(b"~/RenPy/Persistent") ]
 
         if 'APPDATA' in os.environ:
-            files.append(os.environ['APPDATA'] + "/RenPy/persistent")
+            files.append(os.environ[b'APPDATA'] + b"/RenPy/persistent")
 
     elif renpy.macintosh:
-        files = [ os.path.expanduser("~/.renpy/persistent"),
-                  os.path.expanduser("~/Library/RenPy/persistent") ]
+        files = [ os.path.expanduser(b"~/.renpy/persistent"),
+                  os.path.expanduser(b"~/Library/RenPy/persistent") ]
     else:
-        files = [ os.path.expanduser("~/.renpy/persistent") ]
+        files = [ os.path.expanduser(b"~/.renpy/persistent") ]
 
     if "RENPY_MULTIPERSISTENT" in os.environ:
         files = [ os.environ["RENPY_MULTIPERSISTENT"] ]
@@ -480,21 +488,36 @@ def MultiPersistent(name):
     except:
         pass
 
-    fn = ""  # prevent a warning from happening.
+    fn = b"" # prevent a warning from happening.
+    data = None
 
     # Find the first file that actually exists. Otherwise, use the last
     # file.
     for fn in files:
-        fn = fn + "/" + name
-        if os.path.exists(fn):
-            break
+        fn = os.path.join(fn, name)
+        if os.path.isfile(fn):
+            try:
+                data = open(fn, "rb").read()
+                break
+            except:
+                pass
 
-    try:
-        rv = loads(file(fn, "rb").read())
-    except:
+    if data is not None:
+        try:
+            rv = loads(data)
+        except:
+            data = None
+            renpy.display.log.write("Loading MultiPersistent at %r:" % fn)
+            renpy.display.log.exception()
+
+    if data is None:
         rv = _MultiPersistent()
 
-    rv._filename = fn  # W0201
+    rv._filename = fn # W0201
+
+    if save_on_quit:
+        save_MP_instances.add(rv)
+
     return rv
 
 

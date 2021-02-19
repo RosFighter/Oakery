@@ -1,4 +1,4 @@
-﻿# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+﻿# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -92,7 +92,7 @@ init -1500 python:
 
         if "%" in rv:
             import time
-            rv = time.strftime(rv.encode("utf-8"), t).decode("utf-8")
+            rv = time.strftime(rv, t)
 
         return rv
 
@@ -508,9 +508,6 @@ init -1500 python:
 
         def get_sensitive(self):
             return renpy.can_load(__slotname(self.name, self.page, self.slot))
-
-        def get_selected(self):
-            return __newest_slot() == __slotname(self.name, self.page, self.slot)
 
 
     def FileAction(name, page=None, **kwargs):
@@ -955,4 +952,3 @@ init 1050 python hide:
             int(persistent._file_page)
         except:
             persistent._file_page = "1"
-

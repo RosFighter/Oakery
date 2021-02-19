@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -21,23 +21,23 @@
 
 # This module handles the logging of messages to a file.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
+
 import os.path
-import codecs
 import traceback
 import platform
 import time
 import tempfile
 import sys
+import io
 
-import encodings.latin_1  # @UnusedImport
+import encodings.latin_1 # @UnusedImport
 
 import renpy.config
 
-
 real_stdout = sys.stdout
 real_stderr = sys.stderr
-
 
 # The file events are logged to.
 log_file = None
@@ -77,7 +77,11 @@ class LogFile(object):
         if renpy.ios:
             self.file = real_stdout
 
-    def open(self):  # @ReservedAssignment
+    def open(self): # @ReservedAssignment
+
+        if renpy.config.log_to_stdout:
+            self.file = real_stdout
+            return True
 
         if self.file:
             return True
@@ -109,15 +113,10 @@ class LogFile(object):
             else:
                 mode = "w"
 
-            if renpy.config.log_to_stdout:
-                self.file = real_stdout
-
-            else:
-
-                try:
-                    self.file = codecs.open(fn, mode, "utf-8")
-                except:
-                    self.file = codecs.open(altfn, mode, "utf-8")
+            try:
+                self.file = io.open(fn, mode, encoding="utf-8")
+            except:
+                self.file = io.open(altfn, mode, encoding="utf-8")
 
             if self.append:
                 self.write('')
@@ -155,10 +154,8 @@ class LogFile(object):
 
                 s += "\n"
 
-            if not isinstance(s, unicode):
+            if not isinstance(s, str):
                 s = s.decode("latin-1")
-
-            s = s.replace("\n", "\r\n")
 
             self.file.write(s)
 
@@ -179,7 +176,7 @@ class LogFile(object):
 log_cache = { }
 
 
-def open(name, append=False, developer=False, flush=False):  # @ReservedAssignment
+def open(name, append=False, developer=False, flush=False): # @ReservedAssignment
     rv = log_cache.get(name, None)
 
     if rv is None:
@@ -214,25 +211,24 @@ class TimeLog(list):
         while self[0][0] < (now - self.duration):
             self.pop(0)
 
-
 ################################################################################
 # Stdout / Stderr Redirection
+
 
 class StdioRedirector(object):
 
     def __init__(self):
         self.buffer = ''
-        self.log = open("log", developer=False, append=False)
+        self.log = open("log", developer=False, append=False, flush=True)
 
     def write(self, s):
 
-        if isinstance(s, unicode):
-            es = s.encode("utf-8")
-        else:
-            es = s
+        if not isinstance(s, str):
+            s = str(s, "utf-8", "replace")
 
-        self.real_file.write(es)
-        self.real_file.flush()
+        if not renpy.config.log_to_stdout:
+            self.real_file.write(s)
+            self.real_file.flush()
 
         if renpy.ios:
             return
@@ -253,7 +249,6 @@ class StdioRedirector(object):
                 try:
                     i(l)
                 except:
-                    # traceback.print_exc(None, real_stderr)
                     pass
 
         self.buffer = lines[-1]

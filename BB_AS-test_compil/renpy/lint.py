@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -19,7 +19,9 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
+
 import renpy.display
 import renpy.text
 import codecs
@@ -28,10 +30,9 @@ import re
 import sys
 import collections
 import textwrap
+import builtins
 
-import __builtin__
-
-python_builtins = set(dir(__builtin__))
+python_builtins = set(dir(builtins))
 renpy_builtins = set()
 
 image_prefixes = None
@@ -50,6 +51,10 @@ image_prefixes = None
 
 # The node the report will be about:
 report_node = None
+
+# Collect define/default statements to check for duplication
+all_define_statments = {}
+all_default_statements = {}
 
 # Reports a message to the user.
 
@@ -74,8 +79,8 @@ added = { }
 def add(msg, *args):
     if not msg in added:
         added[msg] = True
-        msg = unicode(msg) % args
-        print(msg.encode('utf-8'))
+        msg = str(msg) % args
+        print(msg)
 
 
 # Tries to evaluate an expression, announcing an error if it fails.
@@ -239,8 +244,8 @@ def image_exists_precise(name):
 
             try:
                 da = renpy.display.core.DisplayableArguments()
-                da.name=( im[0], ) + tuple(i for i in name[1:] if i in attrs)
-                da.args=tuple(i for i in name[1:] if i in rest)
+                da.name = (im[0],) + tuple(i for i in name[1:] if i in attrs)
+                da.args = tuple(i for i in name[1:] if i in rest)
                 da.lint = True
                 d._duplicate(da)
             except:
@@ -364,8 +369,8 @@ def precheck_show(node):
     tag = imspec(node.imspec)[2]
     image_prefixes[tag] = True
 
-
 # Lints ast.Hide.
+
 
 def check_hide(node):
 
@@ -403,10 +408,21 @@ def check_user(node):
         report("Didn't properly report what the next statement should be.")
 
 
+def quote_text(s):
+
+    s = s.replace("\\", "\\\\")
+    s = s.replace("\"", "\\\"")
+    s = s.replace("\t", "\\t")
+    s = s.replace("\n", "\\n")
+
+    return "\"" + s + "\""
+
+
 def text_checks(s):
+
     msg = renpy.text.extras.check_text_tags(s)
     if msg:
-        report("%s (in %s)", msg, repr(s)[1:])
+        report("%s (in %s)", msg, quote_text(s))
 
     if "%" in s and renpy.config.old_substitutions:
 
@@ -433,7 +449,7 @@ def text_checks(s):
                 elif c in "diouxXeEfFgGcrs%":
                     state = 0
                 else:
-                    report("Unknown string format code '%s' (in %s)", fmt, repr(s)[1:])
+                    report("Unknown string format code '%s' (in %s)", fmt, quote_text(s))
                     state = 0
 
             # In a mapping key.
@@ -443,7 +459,7 @@ def text_checks(s):
                     state = 1
 
         if state != 0:
-            report("Unterminated string format code '%s' (in %s)", fmt, repr(s)[1:])
+            report("Unterminated string format code '%s' (in %s)", fmt, quote_text(s))
 
 
 def check_say(node):
@@ -482,7 +498,7 @@ def check_say(node):
     if image_exists_imprecise(name):
         return
 
-    if image_exists_imprecise(('side', ) + name):
+    if image_exists_imprecise(('side',) + name):
         return
 
     report("Could not find image (%s) corresponding to attributes on say statement.", " ".join(name))
@@ -526,7 +542,6 @@ def check_while(node):
 
 
 def check_if(node):
-
     for condition, _block in node.entries:
         try_compile("in a condition of the if statement", condition)
 
@@ -543,6 +558,45 @@ def check_define(node, kind):
 
     if node.varname in renpy_builtins:
         report("'%s %s' replaces a Ren'Py built-in name, which may cause problems.", kind, node.varname)
+
+
+def check_redefined(node, kind):
+    """
+    Check if a define or default statement has already been created.
+    """
+    if kind == 'default':
+        scanned = all_default_statements
+    elif kind == 'define':
+        scanned = all_define_statments
+
+        if not (node.operator == "=" and node.index is None):
+            return
+
+    # Combine store name and varname
+
+    store_name = node.store
+    if store_name.startswith("store."):
+        store_name = store_name[6:]
+
+    if store_name:
+        full_name = "{}.{}".format(store_name, node.varname)
+    else:
+        full_name = node.varname
+
+    if full_name in renpy.config.lint_ignore_redefine:
+        return
+
+    original_node = scanned.get(full_name)
+    if original_node:
+        report(
+            "{} {} already defined at {}:{}".format(
+                kind,
+                full_name,
+                original_node.filename,
+                original_node.linenumber,
+            )
+        )
+    scanned[full_name] = node
 
 
 def check_style_property_displayable(name, property, d):
@@ -582,7 +636,7 @@ def check_style_property_displayable(name, property, d):
 def check_style(name, s):
 
     for p in s.properties:
-        for k, v in p.iteritems():
+        for k, v in p.items():
 
             # Treat font specially.
             if k.endswith("font"):
@@ -623,7 +677,7 @@ def check_screen(node):
 
 
 def check_styles():
-    for full_name, s in renpy.style.styles.iteritems():  # @UndefinedVariable
+    for full_name, s in renpy.style.styles.items(): # @UndefinedVariable
         name = "style." + full_name[0]
         for i in full_name[1:]:
             name += "[{!r}]".format(i)
@@ -707,13 +761,12 @@ def lint():
     args = ap.parse_args()
 
     if args.filename:
-        f = open(args.filename, "w")
+        f = codecs.open(args.filename, "w", encoding="utf-8")
         sys.stdout = f
 
     renpy.game.lint = True
 
-    print(codecs.BOM_UTF8)
-    print(unicode(renpy.version + " lint report, generated at: " + time.ctime()).encode("utf-8"))
+    print("\ufeff" + renpy.version + " lint report, generated at: " + time.ctime())
 
     # This supports check_hide.
     global image_prefixes
@@ -725,8 +778,8 @@ def lint():
     # Iterate through every statement in the program, processing
     # them. We sort them in filename, linenumber order.
 
-    all_stmts = [ (i.filename, i.linenumber, i) for i in renpy.game.script.all_stmts ]
-    all_stmts.sort()
+    all_stmts = list(renpy.game.script.all_stmts)
+    all_stmts.sort(key=lambda n : n.filename)
 
     # The current count.
     counts = collections.defaultdict(Count)
@@ -740,11 +793,11 @@ def lint():
 
     global report_node
 
-    for _fn, _ln, node in all_stmts:
+    for node in all_stmts:
         if isinstance(node, (renpy.ast.Show, renpy.ast.Scene)):
             precheck_show(node)
 
-    for _fn, _ln, node in all_stmts:
+    for node in all_stmts:
 
         if common(node):
             continue
@@ -806,9 +859,11 @@ def lint():
 
         elif isinstance(node, renpy.ast.Define):
             check_define(node, "define")
+            check_redefined(node, "define")
 
         elif isinstance(node, renpy.ast.Default):
             check_define(node, "default")
+            check_redefined(node, "default")
 
     report_node = None
 

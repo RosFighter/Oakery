@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -23,7 +23,8 @@
 # Most of the guts of this file have been moved into im.py, with only some
 # of the stuff thar uses images remaining.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
 
 import renpy.display
 import renpy.text
@@ -96,7 +97,7 @@ def get_tag_method(tag, method):
     it returns None.
     """
 
-    ti =  images.get((tag,), None)
+    ti = images.get((tag,), None)
 
     if ti is None:
         return None
@@ -229,7 +230,7 @@ def get_ordered_image_attributes(tag, attributes=(), sort=None):
 
     for attr in attrcount:
         if attr not in rv:
-            l.append((attrtotalpos[attr] / attrcount[attr], sort(attr), attr))
+            l.append((attrtotalpos[attr] // attrcount[attr], sort(attr), attr))
 
     l.sort()
     for i in l:
@@ -405,7 +406,6 @@ class ImageReference(renpy.display.core.Displayable):
         try:
 
             a = self._args.copy(name=name, args=args)
-
             self.target = target._duplicate(a)
 
         except Exception as e:
@@ -414,6 +414,7 @@ class ImageReference(renpy.display.core.Displayable):
                 raise
 
             error(str(e))
+            return False
 
         # Copy the old transform over.
         new_transform = self.target._target()
@@ -634,7 +635,7 @@ class DynamicImage(renpy.display.core.Displayable):
             search = [ ]
             target = renpy.easy.dynamic_image(self.name, scope, prefix=prefix, search=search)
         except KeyError as ke:
-            raise Exception("In DynamicImage %r: Could not find substitution '%s'." % (self.name, unicode(ke.args[0])))
+            raise Exception("In DynamicImage %r: Could not find substitution '%s'." % (self.name, str(ke.args[0])))
         except Exception as e:
             raise Exception("In DynamicImage %r: %r" % (self.name, e))
 
@@ -858,7 +859,7 @@ class ShownImageInfo(renpy.object.Object):
         if layer is None:
             layer = 'master'
 
-        for l, t in self.attributes.keys():
+        for l, t in list(self.attributes.keys()):
             if l == layer:
                 del self.attributes[l, t]
 
@@ -899,7 +900,7 @@ class ShownImageInfo(renpy.object.Object):
         """
         Given a layer, tag, and an image name (with attributes),
         returns the canonical name of an image, if one exists. Raises
-        an exception if it's ambiguious, and returns None if an image
+        an exception if it's ambiguous, and returns None if an image
         with that name couldn't be found.
         """
 
@@ -916,20 +917,28 @@ class ShownImageInfo(renpy.object.Object):
         nametag = name[0]
 
         # The set of attributes a matching image may have.
-        optional = set(wanted) | set(self.attributes.get((layer, tag), [ ]))
+        optional = list(wanted) + list(self.attributes.get((layer, tag), [ ]))
 
-        # The set of attributes a matching image must have/not have.
-        # Evaluated in order.
-        required = set()
+        # The list of attributes a matching image must have.
+        required = [ ]
+
         for i in name[1:]:
             if i[0] == "-":
-                optional.discard(i[1:])
-                required.discard(i[1:])
+
+                i = i[1:]
+
+                if i in optional:
+                    optional.remove(i)
+
+                if i in required:
+                    required.remove(i)
+
             else:
-                required.add(i)
+                required.append(i)
 
         for i in remove:
-            optional.discard(i)
+            if i in optional:
+                optional.remove(i)
 
         return self.choose_image(nametag, required, optional, name)
 
@@ -943,11 +952,14 @@ class ShownImageInfo(renpy.object.Object):
 
         for attrs, d in image_attributes[tag].items():
 
+            if not all((i in required) or (i in optional) for i in attrs):
+                continue
+
             ca = getattr(d, "_choose_attributes", None)
 
             if ca:
-                ca_required = { i for i in required if i not in attrs }
-                ca_optional = { i for i in optional if i not in attrs }
+                ca_required = [ i for i in required if i not in attrs ]
+                ca_optional = [ i for i in optional if i not in attrs ]
                 newattrs = ca(tag, ca_required, ca_optional)
 
                 if newattrs is None:
@@ -961,9 +973,6 @@ class ShownImageInfo(renpy.object.Object):
                 if i in required:
                     num_required += 1
                     continue
-
-                elif i not in optional:
-                    break
 
             else:
 
@@ -982,7 +991,7 @@ class ShownImageInfo(renpy.object.Object):
                     max_len = len_attrs
                     matches = [ ]
 
-                matches.append((tag, ) + attrs)
+                matches.append((tag,) + attrs)
 
         if matches is None:
             return None
@@ -997,7 +1006,6 @@ class ShownImageInfo(renpy.object.Object):
 
 
 renpy.display.core.ImagePredictInfo = ShownImageInfo
-
 
 # Functions that have moved from this module to other modules,
 # that live here for the purpose of backward-compatibility.

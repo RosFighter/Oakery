@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -19,7 +19,8 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
 
 import renpy
 
@@ -149,9 +150,13 @@ def notags_filter(s):
     return square_pass(s)
 
 
+def what_filter(s):
+    return "[what]"
+
+
 class DialogueFile(object):
 
-    def __init__(self, filename, output, tdf=True, strings=False, notags=True, escape=True):  # @ReservedAssignment
+    def __init__(self, filename, output, tdf=True, strings=False, notags=True, escape=True): # @ReservedAssignment
         """
         `filename`
             The file we're extracting dialogue from.
@@ -182,7 +187,7 @@ class DialogueFile(object):
         self.escape = escape
         self.strings = strings
 
-        self.f = open(output, "a")
+        self.f = open(output, "a", encoding="utf-8")
 
         self.write_dialogue()
 
@@ -231,6 +236,7 @@ class DialogueFile(object):
                             what,
                             n.filename,
                             str(n.linenumber),
+                            n.get_code(what_filter)
                             ])
 
                     else:
@@ -258,7 +264,7 @@ class DialogueFile(object):
 
         for line, s in scan_strings(self.filename):
 
-            stl = renpy.game.script.translator.strings[None]  # @UndefinedVariable
+            stl = renpy.game.script.translator.strings[None] # @UndefinedVariable
 
             if s in stl.translations:
                 continue
@@ -312,6 +318,7 @@ def dialogue_command():
                 "Dialogue",
                 "Filename",
                 "Line Number",
+                "Ren'Py Script",
                 ]
 
             f.write("\t".join(line).encode("utf-8") + "\n")

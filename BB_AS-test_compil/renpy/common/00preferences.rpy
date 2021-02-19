@@ -1,4 +1,4 @@
-﻿# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+﻿# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -177,6 +177,8 @@ init -1500 python:
          * Preference("self voicing", "disable") - Disable self-voicing.
          * Preference("self voicing", "toggle") - Toggles self-voicing.
 
+         * Preference("self voicing volume drop", 0.5) - Drops the volume of non-voice mixers when self voicing is active.
+
          * Preference("clipboard voicing", "enable") - Enables clipboard-voicing.
          * Preference("clipboard voicing", "disable") - Disable clipboard-voicing.
          * Preference("clipboard voicing", "toggle") - Toggles clipboard-voicing.
@@ -206,6 +208,10 @@ init -1500 python:
          * Preference("font size", 1.0) - Sets the accessibility font size scaling factor.
          * Preference("font line spacing", 1.0) - Sets the accessibility font vertical spacing scaling factor.
 
+         * Preference("system cursor", "enable") - Use system cursor ignoring config.mouse.
+         * Preference("system cursor", "disable") - Use cursor defined in config.mouse.
+         * Preference("system cursor", "toggle") - Toggle system cursor.
+
          Values that can be used with bars are:
 
          * Preference("text speed")
@@ -214,6 +220,7 @@ init -1500 python:
          * Preference("sound volume")
          * Preference("voice volume")
          * Preference("mixer <mixer> volume")
+         * Preference("self voicing volume drop")
          * Preference("font size")
          * Preference("font line spacing")
 
@@ -376,7 +383,15 @@ init -1500 python:
                 elif value == "disable":
                     return SetField(_preferences, "self_voicing", False)
                 elif value == "toggle":
-                    return ToggleField(_preferences, "self_voicing")
+                    return ToggleField(_preferences, "self_voicing", true_value=True, false_value=False)
+
+            elif name == _("self voicing volume drop"):
+
+                if value is None:
+                    bar_range = range or 1.0
+                    return FieldValue(_preferences, "self_voicing_volume_drop", range=1.0, style="slider")
+
+                return SetField(_preferences, "self_voicing_volume_drop", value)
 
             elif name == _("clipboard voicing"):
 
@@ -385,7 +400,7 @@ init -1500 python:
                 elif value == "disable":
                     return SetField(_preferences, "self_voicing", False)
                 elif value == "toggle":
-                    return ToggleField(_preferences, "self_voicing", true_value="clipboard")
+                    return ToggleField(_preferences, "self_voicing", true_value="clipboard", false_value=False)
 
             elif name == _("debug voicing"):
 
@@ -394,7 +409,7 @@ init -1500 python:
                 elif value == "disable":
                     return SetField(_preferences, "self_voicing", False)
                 elif value == "toggle":
-                    return ToggleField(_preferences, "self_voicing", true_value="debug")
+                    return ToggleField(_preferences, "self_voicing", true_value="debug", false_value=False)
 
             elif name == _("emphasize audio"):
 
@@ -445,6 +460,15 @@ init -1500 python:
                     return FieldValue(_preferences, "font_line_spacing", range=bar_range, style="slider", offset=.5, action=_DisplayReset())
 
                 return [ SetField(_preferences, "font_line_spacing", value), _DisplayReset() ]
+
+            elif name == _("system cursor"):
+
+                if value == "enable":
+                    return SetField(_preferences, "system_cursor", True)
+                elif value == "disable":
+                    return SetField(_preferences, "system_cursor", False)
+                elif value == "toggle":
+                    return ToggleField(_preferences, "system_cursor")
 
 
 

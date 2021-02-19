@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -21,7 +21,8 @@
 
 # This file contains code to handle GUI-based error reporting.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
 
 import renpy.display
 import os
@@ -57,6 +58,8 @@ def init_display():
     The minimum amount of code required to init the display.
     """
 
+    renpy.config.gl2 = getattr(renpy.game.persistent, "_gl2", False)
+
     # Ensure we have correctly-typed preferences.
     renpy.game.preferences.check()
 
@@ -64,9 +67,11 @@ def init_display():
         renpy.config.init_system_styles()
 
     if not renpy.game.interface:
-        renpy.display.core.Interface().start()
+        renpy.display.core.Interface()
         renpy.loader.index_archives()
         renpy.display.im.cache.init()
+    else:
+        renpy.game.interface.start()
 
     renpy.ui.reset()
 
@@ -91,7 +96,7 @@ def report_exception(short, full, traceback_fn):
 
     error_dump()
 
-    if renpy.game.args.command != "run":  # @UndefinedVariable
+    if renpy.game.args.command != "run": # @UndefinedVariable
         return True
 
     if "RENPY_SIMPLE_EXCEPTIONS" in os.environ:
@@ -164,7 +169,7 @@ def report_parse_errors(errors, error_fn):
 
     error_dump()
 
-    if renpy.game.args.command != "run":  # @UndefinedVariable
+    if renpy.game.args.command != "run": # @UndefinedVariable
         return True
 
     if "RENPY_SIMPLE_EXCEPTIONS" in os.environ:

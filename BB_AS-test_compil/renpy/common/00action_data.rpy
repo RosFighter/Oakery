@@ -1,4 +1,4 @@
-﻿# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+﻿# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -428,7 +428,7 @@ init -1600 python:
         `set`
             The set to remove from. This may be a set or list.
         `value`
-            The value to add or append.
+            The value to remove.
         """
 
         identity_fields = [ 'set' ]

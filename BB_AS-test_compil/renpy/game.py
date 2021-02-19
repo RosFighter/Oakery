@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -23,7 +23,8 @@
 # It's purpose is to store in one global all of the data that would
 # be to annoying to lug around otherwise.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
 
 import renpy.display
 
@@ -140,7 +141,7 @@ class FullRestartException(Exception):
     destroying the store and config and so on.
     """
 
-    def __init__(self, reason="end_game"):  # W0231
+    def __init__(self, reason="end_game"): # W0231
         self.reason = reason
 
 
@@ -245,7 +246,7 @@ def context(index=-1):
     return contexts[index]
 
 
-def invoke_in_new_context(callable, *args, **kwargs):  # @ReservedAssignment
+def invoke_in_new_context(callable, *args, **kwargs): # @ReservedAssignment
     """
     :doc: label
 
@@ -270,6 +271,8 @@ def invoke_in_new_context(callable, *args, **kwargs):  # @ReservedAssignment
     :func:`renpy.call_in_new_context` instead.
     """
 
+    restart_context = False
+
     context = renpy.execution.Context(False, contexts[-1], clear=True)
     contexts.append(context)
 
@@ -280,6 +283,14 @@ def invoke_in_new_context(callable, *args, **kwargs):  # @ReservedAssignment
 
         return callable(*args, **kwargs)
 
+    except renpy.game.RestartContext:
+        restart_context = True
+        raise
+
+    except renpy.game.RestartTopContext:
+        restart_context = True
+        raise
+
     except renpy.game.JumpOutException as e:
 
         contexts[-2].force_checkpoint = True
@@ -288,7 +299,8 @@ def invoke_in_new_context(callable, *args, **kwargs):  # @ReservedAssignment
 
     finally:
 
-        context.pop_all_dynamic()
+        if not restart_context:
+            context.pop_all_dynamic()
 
         contexts.pop()
         contexts[-1].do_deferred_rollback()
@@ -372,10 +384,10 @@ def call_replay(label, scope={}):
     # This has to be here, to ensure the scope stuff works.
     renpy.exports.execute_default_statement()
 
-    for k, v in renpy.config.replay_scope.iteritems():
+    for k, v in renpy.config.replay_scope.items():
         setattr(renpy.store, k, v)
 
-    for k, v in scope.iteritems():
+    for k, v in scope.items():
         setattr(renpy.store, k, v)
 
     renpy.store._in_replay = label

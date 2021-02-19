@@ -1,4 +1,4 @@
-# Copyright 2004-2019 Tom Rothamel <pytom@bishoujo.us>
+# Copyright 2004-2021 Tom Rothamel <pytom@bishoujo.us>
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -21,10 +21,12 @@
 
 # This file contains code to manage focus on the display.
 
-from __future__ import print_function
+from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
+from renpy.compat import *
 
 import pygame_sdl2 as pygame
 import renpy.display
+import operator
 
 
 class Focus(object):
@@ -80,7 +82,6 @@ focus_type = "mouse"
 # The same, but for the most recent input that might potentially cause
 # the focus to change.
 pending_focus_type = "mouse"
-
 
 # The current tooltip and tooltip screen.
 tooltip = None
@@ -235,7 +236,10 @@ def before_interact(roots):
         fwn.append((f, n, renpy.display.screen._current_screen))
 
     for root in roots:
-        root.find_focusable(callback, None)
+        try:
+            root.find_focusable(callback, None)
+        except renpy.display.layout.IgnoreLayers:
+            pass
 
     # Assign a full name to each focusable.
 
@@ -270,6 +274,9 @@ def before_interact(roots):
     current = get_focused()
     current = replaced_by.get(id(current), current)
 
+    # Update the grab.
+    grab = replaced_by.get(id(grab), None)
+
     if current is not None:
         current_name = current.full_focus_name
 
@@ -280,6 +287,9 @@ def before_interact(roots):
                 break
         else:
             current = None
+
+    if grab is not None:
+        current = grab
 
     # Otherwise, focus the default widget.
     if current is None:
@@ -292,7 +302,7 @@ def before_interact(roots):
 
         if defaults:
             if len(defaults) > 1:
-                defaults.sort()
+                defaults.sort(key=operator.itemgetter(0))
 
             _, f, screen = defaults[-1]
 
@@ -319,17 +329,15 @@ def before_interact(roots):
         finally:
             renpy.display.screen.pop_current_screen()
 
-    # Update the grab.
-    grab = replaced_by.get(id(grab), None)
-
     # Clear replaced_by.
     replaced_by.clear()
 
-# This changes the focus to be the widget contained inside the new
-# focus object.
-
 
 def change_focus(newfocus, default=False):
+    """
+    Change the focus to the displayable in ``newfocus``.
+    """
+
     rv = None
 
     if grab:
@@ -414,9 +422,12 @@ def mouse_handler(ev, x, y, default=False):
 def focus_extreme(xmul, ymul, wmul, hmul):
 
     max_focus = None
-    max_score = -(65536**2)
+    max_score = -(65536 ** 2)
 
     for f in focus_list:
+
+        if not f.widget.style.keyboard_focus:
+            continue
 
         if f.x is None:
             continue
@@ -437,8 +448,8 @@ def focus_extreme(xmul, ymul, wmul, hmul):
 # This calculates the distance between two points, applying
 # the given fudge factors. The distance is left squared.
 def points_dist(x0, y0, x1, y1, xfudge, yfudge):
-    return (( x0 - x1 ) * xfudge ) ** 2 + \
-           (( y0 - y1 ) * yfudge ) ** 2
+    return ((x0 - x1) * xfudge) ** 2 + \
+           ((y0 - y1) * yfudge) ** 2
 
 
 # This computes the distance between two horizontal lines. (So the
