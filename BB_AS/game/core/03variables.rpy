@@ -510,7 +510,7 @@ label InitTalksEvents: # стартовая инициация диалогов 
         'back_shoping'     : CutEvent('14:00', (6, ), 'back_shoping', 'возвращение с семейного шопинга', "EventsByTime['back_shoping'].stage < 2", cut=True),
         'MeetingEric'      : CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True),
         'Eric_afterdinner' : CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day < 12', cut=True),
-        'night_of_fun'     : CutEvent('02:30', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
+        'night_of_fun'     : CutEvent('02:50', label='night_of_fun', sleep=True, variable='len(NightOfFun)>0', desc='ночные забавы'),
         'need_money'       : CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True),
         'MorningWoodCont'  : CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv['mw'].done, flags['morning_erect']%2==0, 0<poss['seduction'].stn<5])", sleep=True, cut=True),
         'Kira arrival'     : CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([GetWeekday(day)==6, day>=18, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True),

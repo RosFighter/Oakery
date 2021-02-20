@@ -4,8 +4,11 @@
 
 init: # трансформации для кнопок
 
-    transform power_zoom:
-        size (50, 50)
+    transform desaturate:
+        matrixcolor SaturationMatrix(0.0)
+
+    transform blurred:
+        blur 12
 
     transform book_marks:
         on idle:
@@ -14,8 +17,8 @@ init: # трансформации для кнопок
             zoom 1.02
 
     transform close_zoom:
-        xanchor 25
-        size (75, 25)
+        xanchor (35 if renpy.variant("small") else 25)
+        size ((105, 35) if renpy.variant("small") else (75, 25))
 
     transform close_zoom_var_small:
         xanchor 35
@@ -87,7 +90,6 @@ init: # трансформации для кнопок
     transform zoom_out(x, y):
         size (x, y)
 
-
     transform mark:
         'interface marker red'
         0.5
@@ -145,6 +147,15 @@ init: # трансформации для кнопок
         xpos 100
         ypos 110
 
+    transform things:
+        on idle, selected_idle:
+            matrixcolor SaturationMatrix(0.0)
+            zoom 0.9
+        on hover, selected_hover:
+            matrixcolor SaturationMatrix(1.0)
+            zoom 1.0
+
+
 ################################################################################
 
 screen choice_lang():
@@ -174,10 +185,10 @@ screen PowerBack():
         hbox spacing 100:
             imagebutton:
                 auto 'interface laptop back %s'
-                action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')] at power_zoom
+                action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at power_zoom
+                action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
     if not _in_replay:
@@ -202,10 +213,10 @@ screen PowerBack2():
         hbox spacing 100:
             imagebutton:
                 auto 'interface laptop back %s'
-                action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')] at power_zoom
+                action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Withdraw'), Hide('SEO'), Jump('Waiting')] at power_zoom
+                action [Hide('Withdraw'), Hide('SEO'), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     if not _in_replay:
@@ -230,10 +241,10 @@ screen PowerBack3():
         hbox spacing 100:
             imagebutton:
                 auto 'interface laptop back %s'
-                action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')] at power_zoom
+                action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Withdraw'), Hide('Bank'), Jump('Waiting')] at power_zoom
+                action [Hide('Withdraw'), Hide('Bank'), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     if not _in_replay:
@@ -243,7 +254,7 @@ screen PowerBack3():
 screen PowerButton():
     imagebutton:
         pos (935, 985) auto 'interface laptop power %s'
-        action [Hide('Search'), Jump('Waiting')] at power_zoom
+        action [Hide('Search'), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_ESCAPE' action [Hide('Search'), Jump('Waiting')]
     key 'mouseup_3' action [Hide('Search'), Jump('Waiting')]
     if not _in_replay:
@@ -301,13 +312,23 @@ screen LaptopScreen():
 
                     if dcv['buyfood'].stage == 1:
                         frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action Jump('buyfood') at book_marks
-                            text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
+                            if mgg.money < 50:
+                                imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
+                                    idle 'interface laptop grocery' at desaturate
+                                text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color gray
+                            else:
+                                imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action Jump('buyfood') at book_marks
+                                text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if poss['cams'].stn == 3 and mgg.money >= 100:
+                    if poss['cams'].stn == 3:
                         frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop CreateSite' action Jump('create_site') at book_marks
-                            text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
+                            if mgg.money < 100:
+                                imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
+                                    idle 'interface laptop CreateSite' at desaturate
+                                text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color gray text_align 0.5
+                            else:
+                                imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop CreateSite' action Jump('create_site') at book_marks
+                                text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
 
                     if poss['cams'].stn >= 4:
                         frame xysize(370, 295) background None:
@@ -1082,7 +1103,7 @@ screen room_navigation():
                 at small_menu_mobile
             else:
                 at small_menu
-        if extrapak:  #renpy.loadable('extra/extra.webp'):
+        if extrapak or renpy.loadable('extra/extra.webp'):
             imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')]:
                 if renpy.variant('small'):
                     at small_menu_mobile
@@ -1342,13 +1363,19 @@ screen menu_inventory():
                                 $ im_name = 'interface/items/' + items[id].img + '.webp'
                                 if items[id].cells == 2:
                                     frame area(0, 0, 286, 456) background 'interface items bg2':
-                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 224, 360) hover 'interface items '+items[id].img:
+                                        imagebutton align (0.5, 0.5):
+                                            idle 'interface items '+items[id].img
+                                            hover 'interface items '+items[id].img
                                             action NullAction()
+                                            at things
                                             hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
                                 else:
                                     frame area(0, 0, 286, 226) background 'interface items bg':
-                                        imagebutton align (0.5, 0.5) idle im.Scale(im.MatrixColor(im_name, im.matrix.desaturate()), 252, 198) hover 'interface items '+items[id].img:
+                                        imagebutton align (0.5, 0.5):
+                                            idle 'interface items '+items[id].img
+                                            hover 'interface items '+items[id].img
                                             action NullAction()
+                                            at things
                                             hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
 
                             $ addcells = tabrows - listrows[cur_col]
@@ -1708,10 +1735,10 @@ screen cam_show():
         hbox spacing 100:
             imagebutton:
                 auto 'interface laptop back %s'
-                action [SetVariable('at_comp', False), Jump('open_site')] at power_zoom
+                action [SetVariable('at_comp', False), Jump('open_site')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop wait %s'
-                action [SetVariable('spent_time', 10), Jump('Waiting')] at power_zoom
+                action [SetVariable('spent_time', 10), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_SPACE' action [SetVariable('spent_time', 10), Jump('Waiting')]
 
     key 'K_ESCAPE' action [SetVariable('at_comp', False), Jump('open_site')]

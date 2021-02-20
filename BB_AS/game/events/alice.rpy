@@ -100,22 +100,21 @@ label alice_sleep_night:
             $ spent_time += 10
             if flags['eric.jerk'] and '02:00'<=tm<'02:30':
                 # Эрик дрочит на Алису
-                if alice.sleepnaked and not prenoted and not flags['eric.noticed']:
-                    scene BG char Ann bed-night-01
-                    $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
-                    $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
-                    $ peeping['ann_sleep'] = 1
-                    # Эрика не видели
-                    menu:
-                        Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!"
-                        "{i}проверить{/i}":
-                            jump jerk_balkon
-                        "{i}прокрасться в комнату{/i}":
-                            jump eric_ann_sleep.not_eric_closer
-                        "{i}уйти{/i}":
-                            jump .end
-                else:
-                    $ peeping['ann_sleep'] = 1
+                # if alice.sleepnaked and not prenoted and not flags['eric.noticed']:
+                #     scene BG char Ann bed-night-01
+                #     $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+                #     $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                #     $ peeping['ann_sleep'] = 1
+                #     # Эрика не видели
+                #     menu:
+                #         Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!"
+                #         "{i}проверить{/i}":
+                #             jump jerk_balkon
+                #         "{i}прокрасться в комнату{/i}":
+                #             jump eric_ann_sleep.not_eric_closer
+                #         "{i}уйти{/i}":
+                #             jump .end
+                # else:
                     jump jerk_balkon
 
             scene BG char Alice bed-night-01
@@ -415,6 +414,7 @@ label alice_shower:
                 Max_04 "Да ладно, это ерунда, обращайся."
                 Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
                 Max_01 "Да. Не забуду..."
+                $ renpy.end_replay()
                 $ infl[alice].add_m(10)
                 $ AddRelMood('alice', 10, 50, 3)
 
@@ -435,6 +435,7 @@ label alice_shower:
                     Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
                     Max_00 "Да это случайно вышло!"
                     Alice_05 "Ну да, конечно..."
+                    $ renpy.end_replay()
                     $ infl[alice].add_m(4)
                 else:
                     $ Skill('social', 0.1)
@@ -994,7 +995,7 @@ label spider_in_bed:
                         Max_02 "Без рук будет поинтереснее!"
                         Alice_17 "Да я сама тебя сейчас без рук оставлю! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
                         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
-                    "А, ничего. Так поймаю...":
+                    "А, ничего. Так поймаю..." if not _in_replay:
                         $ __mood += 100
                         $ infl[alice].add_m(20)
                 jump .spider
@@ -1037,9 +1038,10 @@ label spider_in_bed:
                                 "О да, я очень доволен!":
                                     Alice_12 "Вот и хватит глазеть! Давай уже, лови этого паука!"
                                     Max_04 "Классная у тебя фигура, сестрёнка! Особенно когда ты голенькая. Ну да ладно, теперь можно и поймать..."
+                    if not _in_replay:
+                        $ dcv['alice.prudence'].set_lost(renpy.random.randint(3, 7))
                     $ flags['smoke'] = flags['smoke.request']
                     $ flags['noted'] = False
-                    $ dcv['alice.prudence'].set_lost(renpy.random.randint(3, 7))
                     $ alice.sleepnaked = True
                     $ alice.dress = ''
                     $ __suf = 'n'
@@ -1343,7 +1345,7 @@ label alice_after_club:
                 Alice_04 "Спасибо, Макс. Девушке очень приятно такое слышать от парня. Даже, если это её младший брат... которого ей хочется подразнить..."
                 if flags['smoke'] == 'not_nopants':
                     # Алиса нарушила уговор по трусикам
-                    Max_09 "А почему на тебе есть трусики?"
+                    Max_09 "А почему на тебе трусики?"
                     Alice_05 "Какой ужас! Похоже, я нарушила наш уговор... или нет... Разве я не могу носить их ночью?"
                     Max_07 "Когда спишь - да, а вот всё остальное время - нет!"
                     Alice_03 "Ну что ж, значит на мне есть кое-что лишнее... Это можно легко исправить..."
@@ -1644,6 +1646,10 @@ label alice_lisa_shower:
 
 
 label alice_blog_lingerie:
+    if not (dcv['alice.secret'].done and 'cam_pose_blog' in globals()):
+        call alice_rest_evening
+        return
+
     $ renpy.scene()
     $ renpy.show('location house aliceroom door-'+get_time_of_day())
     if peeping['alice_blog']:

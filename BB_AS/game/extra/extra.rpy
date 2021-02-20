@@ -128,12 +128,8 @@ screen menu_gallery():
                 action SetVariable('st_gallery', 'art')
                 selected st_gallery == 'art'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
-        if not renpy.variant('small'):
-            focus_mask True
-            at close_zoom
-        else:
-            at close_zoom_var_small
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting') at close_zoom:
+        focus_mask (False if renpy.variant('small') else True)
 
     if st_gallery == 'mem':
         frame area(140, 160, 1640, 850) xalign 0.0 yalign 0.5 background None:
@@ -143,11 +139,11 @@ screen menu_gallery():
                         for i in range(len(cur_starts)):
                             frame ysize 330 padding(0, 0, 0, 0) background None:
                                 imagebutton xpos 5 yalign 0.4 auto 'interface prev %s':
-                                    focus_mask True
+                                    focus_mask (False if renpy.variant("small") else True)
                                     sensitive cur_starts[i] > 0
                                     action Function(MySet, i, cur_starts[i]-1)
                                 imagebutton xpos 1505 yalign 0.4 auto 'interface next %s':
-                                    focus_mask True
+                                    focus_mask (False if renpy.variant("small") else True)
                                     sensitive cur_starts[i] < len(mems[i])-3
                                     action Function(MySet, i, cur_starts[i]+1)
                                 frame area(105, 0, 1380, 330) padding(0, 0, 0, 0) background None:
@@ -164,10 +160,10 @@ screen menu_gallery():
                                                     text mems[i][j].capt align(0.5, 0.9) color gui.accent_color size 20
                                                 else:
                                                     if mems[i][j].open()=='block':
-                                                        add im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate())
+                                                        add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate  #im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate())
                                                         text _("Воспоминание недоступно") align(0.5, 0.9) color gui.accent_color size 20
                                                     else:
-                                                        add im.Scale(im.Scale(im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate()), 50, 28), 450, 254)
+                                                        add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate, blurred  #im.Scale(im.Scale(im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate()), 50, 28), 450, 254)
                                                         text _("Воспоминание ещё не открыто") align(0.5, 0.9) color gui.accent_color size 20
 
                 vbar value YScrollValue('vp') style 'extra_vscroll'

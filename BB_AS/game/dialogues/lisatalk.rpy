@@ -1660,8 +1660,10 @@ label liza_hand_mass:
     menu:
         Max_03 "Хорошего понемногу, Лиза. Вот почти и всё."
         "{i}закончить массаж{/i}":
-            pass
-    if (not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']==0])) or (_in_replay and talk_var['kissingmassage']):
+            if _in_replay and not talk_var['kissingmassage']:
+                $ renpy.end_replay()
+    if ((not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']==0]))
+        or (_in_replay and talk_var['kissingmassage'])):
         ###если уроков поцелуев в этот день не было (уже было 3 успешных урока)
         # первый поцелуй после массажа рук
         if not _in_replay:
@@ -1693,8 +1695,8 @@ label liza_hand_mass:
                             $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
-                            $ talk_var['kiss_massage'] += 1
                             $ renpy.end_replay()
+                            $ talk_var['kiss_massage'] += 1
                             $ Skill('kissing', 0.2, 4.5)
                             $ __rel = 5
                             $ __mood += 100
@@ -1768,7 +1770,6 @@ label liza_hand_mass:
         $ renpy.show('Lisa phone-closer 01'+lisa.dress)
         Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
         Max_01 "Мне только в радость, сестрёнка. Обращайся."
-
 
     $ renpy.end_replay()
 
@@ -1957,12 +1958,6 @@ label gift_swimsuit:
         $ items['bikini'].InShop = False
         $ poss['Swimsuit'].OpenStage(3)
         $ lisa.gifts.append('bikini')
-        # if lisa.inferic is not None:
-        #     $ lisa.inferic = clip(lisa.inferic-50.0, 0.0, 100.0)
-        # if lisa.infmax is not None:
-        #     $ lisa.infmax = clip(lisa.infmax+20.0, 0.0, 100.0)
-        # else:
-        #     $ lisa.infmax = 20.0
         $ infl[lisa].add_m(40, True)
 
         $ clothes[lisa].swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))

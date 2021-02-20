@@ -13,6 +13,7 @@ define orange = "#E59400"
 define gray   = "#808080"
 
 define extrapak = False
+define config.gl2 = True
 
 define failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
 define succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")

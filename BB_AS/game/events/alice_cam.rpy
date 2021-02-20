@@ -655,6 +655,10 @@ label cam1_alice_bath:
     return
 
 label cam0_alice_blog_lingerie:
+    if not (dcv['alice.secret'].done and 'cam_pose_blog' in globals()):
+        call cam0_alice_rest_evening
+        return
+        
     if not len(cam_pose_blog):
         # заполняем список поз
         $ cam_pose_blog = ['01', '02', '03', '04', '05', '06']

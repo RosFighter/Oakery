@@ -52,7 +52,7 @@ label Waiting:
         $ tv_scene = '' # renpy.random.choice(['', 'bj', 'hj'])
         $ talk_var['alice_sun'] = 0 # прдложить Алисе нанести масло можно пробовать каждый час (пока не нанес)
 
-    # начисление влияния и бругие события по времени
+    # начисление влияния и другие события по времени
     if 'eric' in chars:
         call eric_time_settings from _call_eric_time_settings
 
@@ -198,12 +198,6 @@ label Midnight:
             if RandomChance(__chance):
                 $ flags['smoke'] = 'not_' + flags['smoke.request']
                 $ flags['noted'] = False  # нарушение ещё не замечено Максом
-                # if flags['smoke.request'] == 'nopants':
-                #     $ alice.nopants = False
-                # elif flags['smoke.request'] == 'sleep':
-                #     $ alice.sleeptoples = False
-                # elif flags['smoke.request'] == 'naked':
-                #     $ alice.sleepnaked = False
             else:
                 $ flags['smoke'] = flags['smoke.request']
                 if flags['smoke.request'] == 'nopants':
@@ -691,10 +685,10 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
-    if extrapak:  #renpy.loadable('extra/extra.webp'):
+    if extrapak or renpy.loadable('extra/extra.webp'):
         $ set_extra_album()
 
-    "ver [current_ver]"
+    # "ver [current_ver]"
     if current_ver == 'v0.01.TechDemo':
         scene BG villa-door
         "Сохранения версии техно-демо не поддерживаются. Начните новую игру или выберите другое сохранение."
@@ -1614,3 +1608,15 @@ label after_load_06_0:
             $ poss['seduction'].OpenStage(20)
         elif talk_var['fight_for_Lisa'] == 6:
             $ poss['seduction'].OpenStage(21)
+
+    if current_ver < "0.06.0.07":
+        $ current_ver = "0.06.0.07"
+
+        $ EventsByTime['night_of_fun'].tm = '02:50'
+
+        if len(clothes[lisa].learn.sel)>2:
+            $ clothes[lisa].learn.sel[2].change = True
+            $ clothes[lisa].learn.sel[2].rand = True
+        elif len(clothes[lisa].learn.sel)==2:
+            $ clothes[lisa].learn.sel[1].change = True
+            $ clothes[lisa].learn.sel[1].rand = True
