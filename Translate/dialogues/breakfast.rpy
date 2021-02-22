@@ -2473,4 +2473,3 @@ translate english strings:
     # game/dialogues/breakfast.rpy:867
     old "курит"
     new "smokes"
-

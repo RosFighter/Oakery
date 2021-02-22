@@ -3545,3 +3545,11 @@ translate english strings:
     # game/events/alice.rpy:1651
     old "Я тут не удержался и купил тебе боди раньше Эрика!"
     new "I couldn't resist buying you a bodysuit before Eric did!"
+# TODO: Translation updated at 2021-02-22 23:17
+
+# game/events/alice.rpy:1347
+translate english alice_after_club_knock_26bb0ceb:
+
+    # Max_09 "А почему на тебе трусики?"
+    Max_09 ""
+

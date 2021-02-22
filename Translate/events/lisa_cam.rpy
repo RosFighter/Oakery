@@ -167,3 +167,4 @@ translate english cam0_lisa_homework_8bf186e7:
 
     # Max_01 "Лиза учит уроки. Может, стоило ей помочь?!"
     Max_01 "Lisa's doing her homeowork. I might have missed a chance to help her."
+

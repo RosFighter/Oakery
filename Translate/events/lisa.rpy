@@ -1435,3 +1435,29 @@ translate english strings:
     # game/events/lisa.rpy:1058
     old "Просто иди и всё..."
     new "Just go, that's all..."
+# TODO: Translation updated at 2021-02-22 23:17
+
+# game/events/lisa.rpy:1048
+translate english lisa_horor_movie_r_11d3ed3b:
+
+    # Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:1056
+translate english lisa_horor_movie_r_12b43dd4:
+
+    # Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:1059
+translate english lisa_horor_movie_r_a3b4a2f9:
+
+    # Lisa_09 "[restrain!t]Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
+    Lisa_09 ""
+
+# game/events/lisa.rpy:1099
+translate english lisa_horor_movie_r_26ebf379:
+
+    # Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
+    Lisa_13 ""
+

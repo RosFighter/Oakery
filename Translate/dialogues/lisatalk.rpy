@@ -8820,3 +8820,4 @@ translate english lisa_stop_kiss_0a680597:
 
     # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. ){/i}"
     Max_09 "{i}( I think I'd better stop kissing lessons with Lisa for now so I don't draw attention from Eric. ){/i}"
+
