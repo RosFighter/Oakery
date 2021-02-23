@@ -1202,7 +1202,7 @@ label kira_night_tv:
         # третий и последующие уроки поцелуев
         if not _in_replay:
             $ persistent.memories['kira_night_tv.second_lesson'] = 1
-            if 'kira_night_tv.first_lesson' not in persistent.memories:
+            if 'kira_night_tv.repeat_lesson' not in persistent.memories:
                 $ persistent.memories['kira_night_tv.repeat_lesson'] = 0
             if 'kira_tv_bj' not in persistent.memories:
                 $ persistent.memories['kira_tv_bj'] = 0
@@ -1344,6 +1344,7 @@ label kira_night_tv:
         $ flags['kira.tv.bj'] = True #открывается возможность куни и минета в ванне
         if not _in_replay:
             $ persistent.memories['kira_tv_bj'] = 1
+            $ persistent.memories['kira_night_tv.repeat_lesson'] = 1
         jump .end
 
     label .not_restrain:
@@ -1377,6 +1378,7 @@ label kira_night_tv:
 
     label .teach_cuni:
         if not _in_replay:
+            $ persistent.memories['kira_night_tv.repeat_lesson'] = 1
             $ SetCamsGrow(house[4], 200)
         menu:
             Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком..."
@@ -2092,7 +2094,7 @@ label return_from_club:
                 Max_05 "Ого! Такого поворота событий я не ожидал!"
                 jump .striptease
 
-            "Ну, ладно... Пока!":
+            "Ну, ладно... Пока!" if not _in_replay:
                 jump Sleep
     else:
         # Макс дал Алисе конфету перед уходом в клуб (возможен стриптиз от Киры, а после него потехи с Алисой в ванне)
@@ -2110,7 +2112,7 @@ label return_from_club:
         Max_07 "Я принесу тебе полотенце, как только уложу тётю Киру спать. Идёт?"
         menu:
             Alice_12 "Только давай быстрее!"
-            "{i}Дать Алисе конфету и отвести тётю в гостиную{/i}" if kol_choco > 0:  # есть алко-конфеты
+            "{i}Дать Алисе конфету и отвести тётю в гостиную{/i}" if _in_replay or kol_choco > 0:  # есть алко-конфеты
                 $ flags['alice.drink'] = 2
                 $ give_choco()
                 Max_01 "Вот, держи конфетку, чтобы не скучать, пока я с тётей..."
@@ -2133,7 +2135,7 @@ label return_from_club:
                     Kira_07 "Зачем рассказывать, Макс, когда можно показать?! Присаживайся, если хочешь посмотреть это шоу..."
                     "Такого поворота событий я не ожидал! Можно и задержаться...":
                         jump .striptease
-                    "Я бы задержался, но нужно проверить, как там Алиса...":
+                    "Я бы задержался, но нужно проверить, как там Алиса..." if not _in_replay:
                         # возможность попасть на эвент с Алисой в санузле у зеркала
                         jump alice_after_club.knock
 
@@ -2155,7 +2157,7 @@ label return_from_club:
                     Kira_07 "Зачем рассказывать, Макс, когда можно показать?! Присаживайся, если хочешь посмотреть это шоу..."
                     "Такого поворота событий я не ожидал! Можно и задержаться...":
                         jump .striptease
-                    "Я бы задержался, но нужно проверить, как там Алиса...":
+                    "Я бы задержался, но нужно проверить, как там Алиса..." if not _in_replay:
                         # возможность попасть на эвент с Алисой в санузле у зеркала
                         jump alice_after_club.knock
 
@@ -2202,14 +2204,16 @@ label return_from_club:
             menu:
                 Kira_02 "Я постараюсь. Приятных снов, Макс."
                 "{i}отправиться спать{/i}":
+                    $ renpy.end_replay()
                     $ current_room = house[0]
                     jump Sleep
-                "{i}принести Алисе полотенце{/i}" if flags['alice.drink']:
+                "{i}принести Алисе полотенце{/i}" if flags['alice.drink'] and not _in_replay:
                     jump alice_towel_after_club
 
         # была 1-ая фотосессия с Кирой
 
         $ flags['strip.show'] = True  # Кира будет спать голой
+        $ added_mem_var('strip.show')
 
         #after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
         scene BG char Kira after-club-s05-f
@@ -2314,10 +2318,11 @@ label return_from_club:
         menu:
             Max_01 "{i}Надеюсь, мама не будет сильно её осуждать за то, что она легла спать голая... С кем не бывает! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать...{/i}"
             "{i}отправиться спать{/i}":
+                $ renpy.end_replay()
                 $ current_room = house[0]
                 jump Sleep
 
-            "{i}принести Алисе полотенце{/i}" if flags['alice.drink']>1:
+            "{i}принести Алисе полотенце{/i}" if flags['alice.drink']>1 and not _in_replay:
                 jump alice_towel_after_club
 
     label .ass:
@@ -2346,10 +2351,11 @@ label return_from_club:
         menu:
             Max_01 "Надеюсь, мама не будет сильно её ругать за то, что она легла спать голая... Со всеми может случиться! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать..."
             "{i}отправиться спать{/i}":
+                $ renpy.end_replay()
                 $ current_room = house[0]
                 jump Sleep
 
-            "{i}принести Алисе полотенце{/i}" if flags['alice.drink']:
+            "{i}принести Алисе полотенце{/i}" if flags['alice.drink'] and not _in_replay:
                 jump alice_towel_after_club
 
 

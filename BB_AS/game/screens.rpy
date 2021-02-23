@@ -103,6 +103,8 @@ screen say(who, what):
 
     window:
         id "window"
+        if not persistent.transparent_textbox:
+            background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
         hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
             # ypos 5
             ysize gui.textbox_height - 35# - gui.dialogue_ypos - 20
@@ -138,7 +140,8 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    # if not persistent.transparent_textbox:
+    #     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -883,6 +886,7 @@ screen preferences():
                         style_prefix "check"
                         # label _("")
                         textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
+                        textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.

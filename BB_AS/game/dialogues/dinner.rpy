@@ -801,7 +801,7 @@ label dinner_after_punishment:
             (talk_var['fight_for_Lisa'] in [4, 6] and dcv['ae_ed_lisa'].stage==1 and talk_var['ae_lisa_number']==1)
                 or (talk_var['fight_for_Lisa']==2 and dcv['ae_ed_lisa'].stage==0)]):
         jump dinner_ab_earn
-    elif all([GetWeekday(day)==5, items['sexbody2'].have, dcv['eric.lingerie'].stage<5]):
+    elif all([GetWeekday(day)==5, items['sexbody2'].have, dcv['eric.lingerie'].stage<5, dcv['eric.lingerie'].enabled]):
         jump dinner_lace_lingerie
 
     else:

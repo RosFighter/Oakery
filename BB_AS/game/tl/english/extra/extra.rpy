@@ -169,3 +169,47 @@ translate english strings:
     # game/extra/extra.rpy:101
     old "Первые снимки для блога Алисы"
     new "First Photos for Alice's blog"
+# TODO: Translation updated at 2021-02-22 23:17
+
+translate english strings:
+
+    # game/extra/extra.rpy:58
+    old "Больше, чем помощь с домашним заданием"
+    new "More than helping with homework"
+
+    # game/extra/extra.rpy:58
+    old "Ужастики в обнимку с Лизой"
+    new "Horror movies in an embrace with Lisa"
+
+    # game/extra/extra.rpy:58
+    old "Я обошёл Эрика с подарком для Алисы"
+    new "I walked around Eric with a gift for Alice"
+
+    # game/extra/extra.rpy:58
+    old "Я принес тебе полотенце!"
+    new "I brought you a towel!"
+
+    # game/extra/extra.rpy:58
+    old "Стриптиз после клуба"
+    new "Striptease after the club"
+
+    # game/extra/extra.rpy:58
+    old "Её первые познания..."
+    new "Her first knowledge..."
+
+    # game/extra/extra.rpy:58
+    old "Как возбудить ещё больше?"
+    new "How to excite even more?"
+
+    # game/extra/extra.rpy:58
+    old "Нежно и аккуратно!"
+    new "Gently and gently!"
+
+    # game/extra/extra.rpy:58
+    old "Как долго это нужно делать?"
+    new "How long do I need to continue?"
+
+    # game/extra/extra.rpy:58
+    old "Кружевное боди для Алисы от Эрика"
+    new "Lace bodysuit for Alice by Eric"
+

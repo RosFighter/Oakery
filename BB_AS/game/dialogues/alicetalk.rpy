@@ -639,7 +639,7 @@ label advanced_massage1:
     if flags['double_mass_alice'] < 2:
         Max_08 "{i}( Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух... ){/i}"   #только при первом расширенном массаже
         $ flags['double_mass_alice'] = 2
-        $ added_mem_var('double_mass_alice')
+    $ added_mem_var('double_mass_alice')
     Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... У меня ведь красивые ноги, правда?"
     Max_03 "Очень красивые, сестрёнка! Такие мягкие, но упругие... Массировать их - одно удовольствие! А ещё они у тебя шаловливые..."
     menu:
@@ -3498,7 +3498,7 @@ label gift_lace_lingerie:
         Max_19 "Естественно, не хочу."
         "{i}подглядывать {color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
             show FG blog-dresses-max-03
-            if RandomChance(_ch1.ch):
+            if RandomChance(_ch1.ch) or _in_replay:
                 # (повезло)
                 #spider-night-04 + aliceroom-blog-dresses-01-max-(02/02a + (aliceroom-blog-dresses-01-max-03)) + Алиса голая(aliceroom-blog-dresses-02-alice-(01a/02a))
                 $ renpy.show('Alice newbody2 '+renpy.random.choice(['07', '08']))
@@ -3553,6 +3553,8 @@ label gift_lace_lingerie:
     Max_01 "Разберёмся как-нибудь, не переживай."
 
     #открывается возможность массировать Алисе бёдра во дворе (с ограничениями)
+    $ renpy.end_replay()
+    $ added_mem_var('lace_ling_max1')
     $ spent_time += 40
     $ dcv['eric.lingerie'].stage = 5  # бельё Алисе подарил Макс
     $ alice.dress = 'd'

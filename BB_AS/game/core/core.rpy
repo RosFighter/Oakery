@@ -1620,3 +1620,28 @@ label after_load_06_0:
         elif len(clothes[lisa].learn.sel)==2:
             $ clothes[lisa].learn.sel[1].change = True
             $ clothes[lisa].learn.sel[1].rand = True
+
+        #### для воспоминаний ##################################################
+
+        # первая фотосессия Киры
+        if renpy.seen_label('first_photoset') and 'kira_photoset1' not in persistent.mems_var:
+            $ added_mem_var('kira_photoset1')
+
+        # Алиса. Примерка боди с фотосессией
+        if renpy.seen_label('alice_body_photoset1') and 'alice_photoset1' not in persistent.mems_var:
+            $ added_mem_var('alice_photoset1')
+
+        # Алиса. Макс опередил Эрика
+        if renpy.seen_label('gift_lace_lingerie') and 'lace_ling_max1' not in persistent.mems_var:
+            $ added_mem_var('lace_ling_max1')
+
+        # Алиса. Эрик опередил Макса
+        if all([renpy.seen_label('gift_lace_lingerie'),
+                dcv['eric.lingerie'].stage==9,
+                'lace_ling_eric1' not in persistent.mems_var]):
+            $ added_mem_var('lace_ling_eric1')
+
+        if (renpy.seen_label('alice_body_photoset1') and
+                '01-Alice' in persistent.photos and
+                '05' in persistent.photos['01-Alice']):
+            $ added_mem_var('alice_photoset1')

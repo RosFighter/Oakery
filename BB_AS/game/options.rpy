@@ -226,6 +226,8 @@ init python:
     build.classify('game/images/Alice/clot/02iaa.webp', 'img_fix')
     build.classify('game/images/**/bath-after-club/*.webp', 'img_fix')
     build.classify('game/images/Kira/cams/sleep/**.webp', 'img_fix')
+    build.classify('game/images/Lisa/newsuit/**a.webp', 'img_fix')
+    build.classify('game/images/Lisa/newsuit/**b.webp', 'img_fix')
 
     build.archive("images", "all")
 

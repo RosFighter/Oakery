@@ -1441,23 +1441,23 @@ translate english strings:
 translate english lisa_horor_movie_r_11d3ed3b:
 
     # Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
-    Lisa_13 ""
+    Lisa_13 "[norestrain!t]Max, is it just me or is there something under my foot right now?"
 
 # game/events/lisa.rpy:1056
 translate english lisa_horor_movie_r_12b43dd4:
 
     # Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
-    Lisa_09 ""
+    Lisa_09 "[restrain!t]Max, I'm tired. Let's call it a night in a sec..."
 
 # game/events/lisa.rpy:1059
 translate english lisa_horor_movie_r_a3b4a2f9:
 
     # Lisa_09 "[restrain!t]Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
-    Lisa_09 ""
+    Lisa_09 "[restrain!t]Finally it's over, I don't know how much more I could handle..."
 
 # game/events/lisa.rpy:1099
 translate english lisa_horor_movie_r_26ebf379:
 
     # Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
-    Lisa_13 ""
+    Lisa_13 "Max, is it just me or is there something under my foot right now?"
 

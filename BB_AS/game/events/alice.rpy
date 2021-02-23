@@ -704,7 +704,6 @@ label alice_dressed_friend:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
                     $ added_mem_var('alice_not_nopants')
                     Max_01 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
-                    $ added_mem_var('alice_not_nopants')
                 elif flags['smoke'] == 'nopants' and __ran1 not in ['01', '05']:
                     # Макс видит, что Алиса соблюдает договоренность
                     Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт... А чтобы меня никто не заметил, лучше уходить!"
@@ -1662,7 +1661,8 @@ label alice_blog_lingerie:
             $ spent_time += 20
             scene BG char Alice blog-desk-01
             $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]
-            if renpy.random.randint(1, 2) < 2 or all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
+            if (renpy.random.randint(1, 2) < 2 or (_in_replay and items['sexbody1'].have)
+                or all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, dcv['eric.lingerie'].stage>2, items['sexbody2'].have])):
                 # Алиса сидит и спаливает Макса
                 if dcv['gift.lingerie'].stage > 0:
                     #blog-desk-01 + alice 02 + max 02
@@ -1672,9 +1672,9 @@ label alice_blog_lingerie:
                         Alice_02 "О, Макс! Что-то хотел или просто проведать меня решил?"
                         "Я твои фотки принёс..." if all([dcv['gift.lingerie'].enabled, dcv['gift.lingerie'].stage==1, dcv['gift.lingerie'].done]):
                             jump give_photos1
-                        "Я тут не удержался и купил тебе боди раньше Эрика!" if all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
+                        "Я тут не удержался и купил тебе боди раньше Эрика!" if all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage>2, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
                             jump gift_lace_lingerie
-                        "Отлично смотришься в этом белье!" if not all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
+                        "Отлично смотришься в этом белье!" if not _in_replay and dcv['eric.lingerie'].enabled and not all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):
                             if dcv['eric.lingerie'].lost<4 and dcv['eric.lingerie'].stage<1:
                                 # Макс еще не знает о том, что Эрик собирается купить бельё Алисе
                                 Alice_03 "Знаю, а в новом кружевном боди буду смотреться ещё лучше!"
@@ -1691,8 +1691,7 @@ label alice_blog_lingerie:
                                     Alice_01 "Ага, хорошо бы."
                                     "{i}уйти{/i}":
                                         pass
-
-                        "Как идут дела с блогом?" if dcv['about_blog'].done and not all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):  #после 1-ой фотосессии / откат 3 дня
+                        "Как идут дела с блогом?" if not _in_replay and dcv['about_blog'].done and not all([not dcv['eric.lingerie'].done, dcv['eric.lingerie'].lost<5, items['sexbody2'].have]):  #после 1-ой фотосессии / откат 3 дня
                             $ dcv['about_blog'].set_lost(3)
 
                             if talk_var['fight_for_Alice'] in [0, 2] and (dcv['eric.lingerie'].lost>3 or not dcv['eric.lingerie'].enabled):
@@ -1774,9 +1773,9 @@ label alice_blog_lingerie:
                     $ renpy.show('Max blog 01'+mgg.dress)
                     menu:
                         Alice_15 "Что?! Макс! Ну-ка иди отсюда, пока в ухо не получил!"
-                        "{i}сбежать{/i}":
+                        "{i}сбежать{/i}" if not _in_replay:
                             pass
-                        "Классно смотришься!":
+                        "Классно смотришься!" if not _in_replay:
                             Alice_16 "Тебе чего надо, Макс?! Я тут занята..."
                             Max_07 "Да я так, спросить хотел..."
                             $ renpy.show('Alice blog 02'+alice.dress)
@@ -1813,11 +1812,12 @@ label alice_blog_lingerie:
                             Alice_05 "Если это только твои ухмылки, Макс, а не что-нибудь полезное, то ты сейчас полетишь в бассейн..."
                             Max_01 "Ну, это такое чёрное, полупрозрачное... и смотреться это на тебе должно очень сексуально..."
                             Alice_07 "Снова бельё мне купил! Ну ты даёшь, Макс! Давай сюда, посмотрим..."
-                            Max_04 "Конечно! Ну как тебе?"
 
                             scene BG char Alice newbody-00f
                             $ renpy.show('Alice newbody 01'+alice.dress)
                             $ renpy.show('Max newbody 01'+mgg.dress)
+
+                            Max_04 "Конечно! Ну как тебе?"
                             Alice_03 "Ого, какое классное! Мне уже не терпится примерить... А это у тебя что, фотоаппарат? Макс, ты серьёзно решил, что я позволю тебе фотографировать, как я переодеваюсь?!"
                             Max_02 "Нет, это я подумал, что тебе для блога пригодятся хорошие фотографии. В белье."
                             Alice_05 "Ага, ну конечно, для блога... Здесь кому угодно будет понятно, что у тебя на самом деле на уме!"
@@ -1826,12 +1826,12 @@ label alice_blog_lingerie:
                             Max_03 "Конечно! Так что давай примеряй боди и я тебя пощёлкаю."
                             menu:
                                 Alice_13 "Вот ещё! Не буду я переодеваться, когда у тебя в руках эта штука. За дверью подожди..."
-                                "Ладно, подожду...":
+                                "Ладно, подожду..." if not _in_replay or (_in_replay and not flags['alice.drink']):
                                     #дверь в комнату Алисы
                                     $ renpy.scene()
                                     $ renpy.show('location house aliceroom door-'+get_time_of_day())
                                     Max_02 "{i}( Алиса не отказалась от снимков - уже хорошо. Интересно, как много через это боди будет видно... ){/i}"
-                                "А если конфетку дам, то остаться можно?" if kol_choco > 0:
+                                "А если конфетку дам, то остаться можно?" if (_in_replay and flags['alice.drink']) or (not _in_replay and kol_choco>0):
                                     Alice_05 "Так, конфетку я возьму, а ты всё равно отправляешься за дверь. А будешь спорить, я засуну тебе этот фотоаппарат в ..."
                                     $ give_choco()
                                     $ flags['alice.drink'] = 1
@@ -1952,6 +1952,7 @@ label alice_body_photoset1:
         Max_11 "Вот и помогай тебе! Никакого праздника..."
         Alice_05 "А ты не ожидай многого и разочарований тогда не будет. Всё, жду мои фотографии."
         Max_09 "Конечно. Спасибо, Макс за фотосессию... Ой, да не за что, Алиса..."
+        $ renpy.end_replay()
         $ SetCamsGrow(house[1], 200)
         $ poss['blog'].OpenStage(7)
         $ spent_time += 20
@@ -2005,6 +2006,8 @@ label alice_body_photoset1:
     Alice_04 "Это же останется нашим маленьким секретом?"
     Max_03 "Конечно, Алиса!"
 
+    $ renpy.end_replay()
+    $ added_mem_var('alice_photoset1')
     $ SetCamsGrow(house[1], 250)
     $ spent_time += 40
     $ poss['blog'].OpenStage(8)
@@ -2071,6 +2074,7 @@ label alice_towel_after_club:
                 $ current_room = house[0]
                 jump Sleep
 
+    $ added_mem_var('bath_fan')
     # Алису наказывали полностью голую + Макс подарил чёрное сексуальное боди
     Max_04 "Это тётя Кира мне стриптиз показала, до сих пор стоит..."
     Alice_13 "Да не смеши, Макс! Тётя Кира, конечно, пьяная, но... хотя в клубе она это вытворяла..."
@@ -2192,9 +2196,10 @@ label alice_towel_after_club:
                     "{i}кончить{/i}":
                         jump .cum_boobs
 
-            "Так пусти в дело свой язычок..." if True:   #если Алису наказывали полностью голую + Макс опередил Эрика с дарением белья
+            "Так пусти в дело свой язычок..." if 'eric.lingerie' in dcv and dcv['eric.lingerie'].stage in [5, 7]:   #если Алису наказывали полностью голую + Макс опередил Эрика с дарением белья
 
                 Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
+                $ added_mem_var('bath_tongue')
 
                 if renpy.random.randint(1, 2) < 2:
                     #after-club-bath02a-max&alice-02-f + after-club-bathbj01-max&alice-02
@@ -2232,6 +2237,7 @@ label alice_towel_after_club:
         menu:
             Alice_05 "Ага. Именно так всё и было!"
             "{i}отправиться спать{/i}":
+                $ renpy.end_replay()
                 $ current_room = house[0]
                 jump Sleep
 
@@ -2251,6 +2257,7 @@ label alice_towel_after_club:
         menu:
             Alice_05 "Ага. Именно так всё и было!"
             "{i}отправиться спать{/i}":
+                $ renpy.end_replay()
                 $ current_room = house[0]
                 jump Sleep
 
@@ -2284,17 +2291,18 @@ label blog_with_Eric:
     if peeping['alice_blog'] or (peeping['blog_with_eric'] and check_is_room('eric', house[1])):
         return
 
-    if check_is_room('eric', house[1]):
-        $ peeping['blog_with_eric'] = 1
-    else:
-        $ peeping['alice_blog'] = 1
+    if not _in_replay:
+        if check_is_room('eric', house[1]):
+            $ peeping['blog_with_eric'] = 1
+        else:
+            $ peeping['alice_blog'] = 1
 
     menu:
         Max_09 "{i}( Кажется, в комнате Алиса с Эриком... Хорошо бы узнать, что они там делают. А то мало ли... ){/i}"
         "{i}заглянуть в окно{/i}":
             $ spent_time += 20
             # if all([dcv['eric.lingerie'].enabled, dcv['eric.lingerie'].done, dcv['eric.lingerie'].stage<5, talk_var['fight_for_Alice'] in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
-            if all([dcv['eric.lingerie'].stage==8, talk_var['fight_for_Alice'] in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
+            if _in_replay or all([dcv['eric.lingerie'].stage==8, talk_var['fight_for_Alice'] in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
                 #если Эрик купил Алисе чёрное кружевное боди вперёд Макса
 
                 #spider-night-04 + aliceroom-blog-dresses-01-eric-(01/01a) + Алиса в белье(spider-night-04-alice-(01/02/03) / spider-night-04-alice-(01a/02a/03a) / aliceroom-blog-dresses-01-alice-(01a/02a/03a))
@@ -2330,6 +2338,8 @@ label blog_with_Eric:
                 menu:
                     Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. А мне лучше сматываться отсюда, не хватало ещё чтобы меня сейчас заметили... ){/i}"
                     "{i}уйти{/i}":
+                        $ renpy.end_replay()
+                        $ added_mem_var('lace_ling_eric1')
                         $ spent_time += 20
                         $ dcv['eric.lingerie'].stage = 9  # бельё Алисе подарил Эрик
                         $ alice.dress = 'd'

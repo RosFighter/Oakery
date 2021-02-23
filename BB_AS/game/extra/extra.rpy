@@ -77,6 +77,9 @@ define mems = [
             Memories('alice_shower.spider', 'alice-spidershower-01', 'set_spider_shower', _("Монстр в ванной комнате")),
             Memories('alice_after_club.knock', 'alice-afterclub-01', 'set_after_club', _("После клуба")),
             Memories('alice_after_club.next1', 'alice-afterclub-02', 'set_after_club_next1', _("Я была плохой девочкой")),
+            Memories('alice_towel_after_club', 'alice-afterclubbath-01', 'set_alice_towel_after_club', _("Я принес тебе полотенце!"), var="'bath_fan' in persistent.mems_var"),
+            Memories('alice_blog_lingerie', 'alice-dress&photoset-01', 'set_alice_body_photoset1', _("Первые снимки для блога Алисы"), var="'alice_photoset1' in persistent.mems_var"),  # добавить условие на состоявшуюся фотосессию
+            Memories('alice_blog_lingerie', 'alice-dress&max-01', 'set_gift_lace_lingerie', _("Я обошёл Эрика с подарком для Алисы"), var="'lace_ling_max1' in persistent.mems_var"),  # gift_lace_lingerie
         ],
         [
             Memories('kira_night_tv.porn_view', 'kira-pornotv-01', 'set_porn_tv', _("Смотрим порно вместе с тётей")),
@@ -88,15 +91,27 @@ define mems = [
             Memories('kira_night_swim', 'kira-night-pool-01', 'set_night_swim', _("Небольшое приключение перед сном"), "'hj_in_pool' in persistent.mems_var"),
             Memories('kira_about_photo1', 'kira-max-shower-bj-01', '', _("Не зря купил сорочку")),
             Memories('kira_shower.promise_cuni', 'kira-max-shower-cuni-01', '', _("С меня приятный должок")),
+            Memories('return_from_club', 'kira-strip-01', 'set_kira_strip_01', _("Стриптиз после клуба"), var="persistent.memories['kira_tv_bj']>0"),
+            Memories('kira_talk6', 'kira-photoset-01', 'set_kira_photoset_01', _("Порно-портфолио для Киры"), var="'kira_photoset1' in persistent.mems_var"),
+            Memories('kira_about_photo2', 'kira-photoset-02', '', _("Немного БДСМ от Киры")),
         ],
         [
             Memories('lisa_advanced_kiss_lesson', 'lisa-kisslesson-01', 'set_lisa_advanced_kiss_lesson', _("Вкусные уроки с сестрёнкой")),
             Memories('liza_hand_mass', 'lisa-kissmassage-02', 'set_kiss_massage1', _("Кажется, мы что-то забыли"), var="'kissing_massage' in persistent.mems_var"),
+            Memories('Lisa_HomeWork.new_self', 'lisa-massage-04', 'set_homework_mass_01', _("Больше, чем помощь с домашним заданием")),
+            Memories('lisa_horor_movie_r', 'lisa-horror-01', 'set_horor_01', _("Ужастики в обнимку с Лизой")),
         ],
         [
             Memories('lessons_from_Eric.first_bj', 'ann&eric-bj01', 'set_lessons_Eric_01', _("Урок по минету от мамы и Эрика")),
             Memories('lessons_from_Eric.second_bj', 'ann&eric-bj02', 'set_lessons_Eric_01', _("Так близко к маминой попке")),
             Memories('lessons_from_Eric.third_bj', 'ann&eric-bj03', 'set_lessons_Eric_01', _("Глубокий минет в мамином исполнении")),
+        ],
+        [
+            Memories('sexed_lisa.lesson_0', 'lisa-sexed-01', 'set_sexed_01', _("Её первые познания...")),
+            Memories('sexed_lisa.lesson_1', 'lisa-sexed-02', 'set_sexed_01', _("Как возбудить ещё больше?")),
+            Memories('sexed_lisa.lesson_2', 'lisa-sexed-03', 'set_sexed_01', _("Нежно и аккуратно!")),
+            Memories('sexed_lisa.lesson_3', 'lisa-sexed-04', 'set_sexed_01', _("Как долго это нужно делать?")),
+            Memories('blog_with_Eric', 'alice-dress&eric-01', 'set_blog_with_Eric_01', _("Кружевное боди для Алисы от Эрика"), var="'lace_ling_eric1' in persistent.mems_var"),
         ],
     ]
 
@@ -106,7 +121,8 @@ define photo_album = [
         ("01-Alice", _("Первые снимки для блога Алисы")),
     ]
 
-define cur_starts = [0, 0, 0, 0, 0, 0]
+define cur_starts = [0, 0, 0, 0, 0, 0, 0]
+define displayed_group = [1, 1, 1, 1, 1, 0, 0]
 default st_gallery =  'mem'
 
 define next_sh = False
@@ -137,34 +153,45 @@ screen menu_gallery():
                 viewport mousewheel 'change' draggable True id 'vp' area(0, 0, 1630, 840):
                     vbox spacing 10:
                         for i in range(len(cur_starts)):
-                            frame ysize 330 padding(0, 0, 0, 0) background None:
-                                imagebutton xpos 5 yalign 0.4 auto 'interface prev %s':
-                                    focus_mask (False if renpy.variant("small") else True)
-                                    sensitive cur_starts[i] > 0
-                                    action Function(MySet, i, cur_starts[i]-1)
-                                imagebutton xpos 1505 yalign 0.4 auto 'interface next %s':
-                                    focus_mask (False if renpy.variant("small") else True)
-                                    sensitive cur_starts[i] < len(mems[i])-3
-                                    action Function(MySet, i, cur_starts[i]+1)
-                                frame area(105, 0, 1380, 330) padding(0, 0, 0, 0) background None:
-                                    hbox spacing 15:
-                                        for j in range(cur_starts[i], cur_starts[i]+ 3 if len(mems[i])>=3 else len(mems[i])):
-                                            button xysize (450, 330) padding(0, 0, 0, 0) background None:
-                                                if mems[i][j].set !='':
-                                                    action Function(start_replay, mems[i][j].set, mems[i][j].module)
-                                                else:
-                                                    action Replay(mems[i][j].module)
-                                                sensitive mems[i][j].open()=='open'
-                                                if mems[i][j].open()=='open':
-                                                    add 'extra/mems/'+mems[i][j].pict+'.webp'
-                                                    text mems[i][j].capt align(0.5, 0.9) color gui.accent_color size 20
-                                                else:
-                                                    if mems[i][j].open()=='block':
-                                                        add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate  #im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate())
-                                                        text _("Воспоминание недоступно") align(0.5, 0.9) color gui.accent_color size 20
+                            # выводим группу
+                            $ __displayed = displayed_group[i]>0
+
+                            if not __displayed:
+                                for j in range(len(mems[i])):
+                                    if mems[i][j].open()=='open':
+                                        $ __displayed = True
+
+                            if __displayed:
+                                # если в группе нет отображаемых воспоминаний - не показываем её
+                                frame ysize 330 padding(0, 0, 0, 0) background None:
+                                    imagebutton xpos 5 yalign 0.4 auto 'interface prev %s':
+                                        focus_mask (False if renpy.variant("small") else True)
+                                        sensitive cur_starts[i] > 0
+                                        action Function(MySet, i, cur_starts[i]-1)
+                                    imagebutton xpos 1505 yalign 0.4 auto 'interface next %s':
+                                        focus_mask (False if renpy.variant("small") else True)
+                                        sensitive cur_starts[i] < len(mems[i])-3
+                                        action Function(MySet, i, cur_starts[i]+1)
+                                    frame area(105, 0, 1380, 330) padding(0, 0, 0, 0) background None:
+                                        hbox spacing 15:
+                                            for j in range(cur_starts[i], cur_starts[i]+ 3 if len(mems[i])>=3 else len(mems[i])):
+                                                # видимые воспоминания группы
+                                                button xysize (450, 330) padding(0, 0, 0, 0) background None:
+                                                    if mems[i][j].set !='':
+                                                        action Function(start_replay, mems[i][j].set, mems[i][j].module)
                                                     else:
-                                                        add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate, blurred  #im.Scale(im.Scale(im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate()), 50, 28), 450, 254)
-                                                        text _("Воспоминание ещё не открыто") align(0.5, 0.9) color gui.accent_color size 20
+                                                        action Replay(mems[i][j].module)
+                                                    sensitive mems[i][j].open()=='open'
+                                                    if mems[i][j].open()=='open':
+                                                        add 'extra/mems/'+mems[i][j].pict+'.webp'
+                                                        text mems[i][j].capt align(0.5, 0.9) color gui.accent_color size 20
+                                                    else:
+                                                        if mems[i][j].open()=='block':
+                                                            add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate  #im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate())
+                                                            text _("Воспоминание недоступно") align(0.5, 0.9) color gui.accent_color size 20
+                                                        else:
+                                                            add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate, blurred  #im.Scale(im.Scale(im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate()), 50, 28), 450, 254)
+                                                            text _("Воспоминание ещё не открыто") align(0.5, 0.9) color gui.accent_color size 20
 
                 vbar value YScrollValue('vp') style 'extra_vscroll'
     elif st_gallery == 'art':
@@ -180,7 +207,7 @@ screen menu_gallery():
                             vbox spacing 5:
                                 for id_alb, desc in photo_album:
                                     if id_alb in persistent.photos:
-                                        if 'cur_album' not in globals() or cur_album is None:
+                                        if 'cur_album' not in globals() or cur_album is None or cur_album not in persistent.photos:
                                             $ cur_album = id_alb
                                         button background None action SetVariable('cur_album', id_alb) xsize 290 style 'alb_button':
                                             textbutton desc action SetVariable('cur_album', id_alb) selected cur_album == id_alb style 'album_button'

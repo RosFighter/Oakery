@@ -610,7 +610,8 @@ label eric_ann_fucking:
         jump Waiting
 
     if RandomChance(_ch1.ch) or talk_var['eric.voy.stage'] > 6:
-        $ Skill('hide', 0.1)
+        if talk_var['eric.voy.stage']<6:
+            $ Skill('hide', 0.1)
         $ ann.dress_inf = '00'
         $ peeping['ann_eric_sex1'] = 3
         if fuck_scene == 1:
@@ -665,7 +666,8 @@ label eric_ann_fucking:
     $ peeping['ann_eric_sex1'] = 4
 
     $ spent_time += 20
-    $ Skill('hide', 0.1)
+    if talk_var['eric.voy.stage']<6:
+        $ Skill('hide', 0.1)
     $ current_room = house[0]
     jump Waiting
 
@@ -1285,6 +1287,7 @@ label sexed_lisa:
         jump .end
 
     label .end:
+        $ renpy.end_replay()
         $ current_room = house[0]
         $ spent_time = 30
         jump Waiting

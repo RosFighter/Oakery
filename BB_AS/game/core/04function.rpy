@@ -1284,6 +1284,8 @@ init python:
 
 
     def check_is_room(char, room=None): # проверяет по расписанию, находится ли персонаж в текущей комнате
+        if _in_replay:
+            return True
         plan_char = chars[char].get_plan()
         if room is None:
             return eval(plan_char.loc+'['+str(plan_char.room)+']')==current_room

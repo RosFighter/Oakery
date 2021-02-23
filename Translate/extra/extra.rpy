@@ -175,41 +175,41 @@ translate english strings:
 
     # game/extra/extra.rpy:58
     old "Больше, чем помощь с домашним заданием"
-    new ""
+    new "More than helping with homework"
 
     # game/extra/extra.rpy:58
     old "Ужастики в обнимку с Лизой"
-    new ""
+    new "Horror movies in an embrace with Lisa"
 
     # game/extra/extra.rpy:58
     old "Я обошёл Эрика с подарком для Алисы"
-    new ""
+    new "I walked around Eric with a gift for Alice"
 
     # game/extra/extra.rpy:58
     old "Я принес тебе полотенце!"
-    new ""
+    new "I brought you a towel!"
 
     # game/extra/extra.rpy:58
     old "Стриптиз после клуба"
-    new ""
+    new "Striptease after the club"
 
     # game/extra/extra.rpy:58
     old "Её первые познания..."
-    new ""
+    new "Her first knowledge..."
 
     # game/extra/extra.rpy:58
     old "Как возбудить ещё больше?"
-    new ""
+    new "How to excite even more?"
 
     # game/extra/extra.rpy:58
     old "Нежно и аккуратно!"
-    new ""
+    new "Gently and gently!"
 
     # game/extra/extra.rpy:58
     old "Как долго это нужно делать?"
-    new ""
+    new "How long do I need to continue?"
 
     # game/extra/extra.rpy:58
     old "Кружевное боди для Алисы от Эрика"
-    new ""
+    new "Lace bodysuit for Alice by Eric"
 

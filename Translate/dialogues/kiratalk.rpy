@@ -1991,109 +1991,110 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:878
     old "{i}развязать Киру{/i}"
     new "{i}Untie Kira{/i}"
+
 # TODO: Translation updated at 2021-02-22 23:17
 
 # game/dialogues/kiratalk.rpy:452
 translate english first_photoset_4e92d6fb:
 
     # Max_04 "И правильно... Моя тётя очень красиво просыпается! {p=1.5}{nw}"
-    Max_04 ""
+    Max_04 "Perfect...My Aunt is just waking up! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:454
 translate english first_photoset_92396b51:
 
     # extend "Готово! Теперь садись. Ты уже проснулась и решила красиво потянуться..."
-    extend ""
+    extend "Great! Now sit down and stretch your body out..."
 
 # game/dialogues/kiratalk.rpy:462
 translate english first_photoset_set2_2cc32318:
 
     # Max_02 "То, что надо! Сейчас только ракурс подберу поинтереснее и будет отлично... {p=1.5}{nw}"
-    Max_02 ""
+    Max_02 "That's it! This angle captures you perfectly... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:464
 translate english first_photoset_set2_e0b39b37:
 
     # extend "Ага, есть! А дальше мы щёлкнем твою попку..."
-    extend ""
+    extend "This way we can get a good view from behind..."
 
 # game/dialogues/kiratalk.rpy:479
 translate english first_photoset_set2_ec1bc097:
 
     # Max_05 "Нет, тётя Кира, вид обалденный! Лучше некуда! Только фокус настрою сейчас... {p=1.5}{nw}"
-    Max_05 ""
+    Max_05 "Not at all, you look amazing! It couldn't be better! I'll just set up the focus now... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:481
 translate english first_photoset_set2_f7295a5d:
 
     # extend "Вот и готово. Давай, привстань немного, я сделаю ещё снимок..."
-    extend ""
+    extend "That's it. Come on, stand up a little, I'll take another picture..."
 
 # game/dialogues/kiratalk.rpy:491
 translate english first_photoset_set4_d32c6105:
 
     # Max_01 "Не отвлекайся, тётя Кира! А то снимок выйдет так себе... {p=1.5}{nw}"
-    Max_01 ""
+    Max_01 "Don't get distracted, Aunt Kira! I've got just the right angle... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:493
 translate english first_photoset_set4_47f29f71:
 
     # extend "Отлично! Вот что делаем дальше..." nointeract
-    extend "" nointeract
+    extend "Great! Here's what we'll do next..." nointeract
 
 # game/dialogues/kiratalk.rpy:505
 translate english first_photoset_set4_c305aae6:
 
     # Max_03 "Да... Покажем твою сочную попку во всей красе! {p=1.5}{nw}"
-    Max_03 ""
+    Max_03 "Yes... Let's see your rounded ass in all its glory! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:507
 translate english first_photoset_set4_947687dd:
 
     # extend "Снимок выйдет чумовой... Теперь переходим с дивана к столу."
-    extend ""
+    extend "The picture will be freaky... Now let's move to the table."
 
 # game/dialogues/kiratalk.rpy:515
 translate english first_photoset_set6_04c93189:
 
     # Max_02 "О да... Твоя грудь никого не оставит равнодушным. Она у тебя - огонь! {p=1.5}{nw}"
-    Max_02 ""
+    Max_02 "Absolutely, these photos are going to be so hot, it's like I'm playing with fire! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:517
 translate english first_photoset_set6_9e415db6:
 
     # extend "Снимок готов. Давай, покажи мне что-нибудь погорячее..."
-    extend ""
+    extend "I've got a great shot. Now can you show me something more?"
 
 # game/dialogues/kiratalk.rpy:525
 translate english first_photoset_set6_1f7ddded:
 
     # Max_04 "Ага, замри... Сейчас я тебя щёлкну. {p=1.5}{nw}"
-    Max_04 ""
+    Max_04 "Yeah, like that... I'll take the shot. {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:527
 translate english first_photoset_set6_ff3a2d28:
 
     # extend "Да, кадр получился что надо!" nointeract
-    extend "" nointeract
+    extend "Nice, it came out well!" nointeract
 
 # game/dialogues/kiratalk.rpy:534
 translate english first_photoset_set6_ef185983:
 
     # Max_01 "Конечно нет, тётя Кира! {p=1.5}{nw}"
-    Max_01 ""
+    Max_01 "Of course not, Aunt Kira! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:536
 translate english first_photoset_set6_b116d87b:
 
     # extend "Это же все для портфолио, а в нём должны быть продемонстрированы твои умения..."
-    extend ""
+    extend "If we want to improve your portfolio you should show your skills..."
 
 # game/dialogues/kiratalk.rpy:545
 translate english first_photoset_set6_fd2a8d5d:
 
     # Max_02 "Я думаю, кадры будут отличные...{p=1.5}{nw}"
-    Max_02 ""
+    Max_02 "I'm sure the pics will be great...{p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:547
 translate english first_photoset_set6_11fdb519:
@@ -2105,35 +2106,35 @@ translate english first_photoset_set6_11fdb519:
 translate english first_photoset_set6_2da65c76:
 
     # Max_20 "Охх... Полегче, тётя Кира! Ты так чувственно берёшь его в рот, что я могу забыть сделать снимки. {p=1.5}{nw}"
-    Max_20 ""
+    Max_20 "Ohh... Easy, Aunt Kira! You're taking it in your mouth so well I might drop the camera... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:562
 translate english first_photoset_set6_77e15199:
 
     # extend "Да... продолжай вот так, это будет отличный кадр! Может тебе есть, чем меня удивить?"
-    extend ""
+    extend "Keep it right there, it'll be a great shot! Do you have something to surprise me with?"
 
 # game/dialogues/kiratalk.rpy:570
 translate english first_photoset_set11_05c5e747:
 
     # Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же класно ты сосёшь... {p=1.5}{nw}"
-    Max_22 ""
+    Max_22 "Wow! This has to be filmed... your mouth is so good... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:572
 translate english first_photoset_set11_54845204:
 
     # extend "Думаю, я уже почти готов для последнего снимка! Готовься, тётя Кира..."
-    extend ""
+    extend "I think I'm about to capture the final shot! Get ready, Aunt Kira..."
 
 # game/dialogues/kiratalk.rpy:579
 translate english first_photoset_set11_adb51051:
 
     # Max_05 "И снято! {p=1.5}{nw}"
-    Max_05 ""
+    Max_05 "And cut! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:581
 translate english first_photoset_set11_9c4f2555:
 
     # extend "Да уж, это было потрясающе! Думаю, снимки получились удачными..."
-    extend ""
+    extend "That was fantastic! I think the pictures were successful..."
 

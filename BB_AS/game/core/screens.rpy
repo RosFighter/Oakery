@@ -1363,19 +1363,11 @@ screen menu_inventory():
                                 $ im_name = 'interface/items/' + items[id].img + '.webp'
                                 if items[id].cells == 2:
                                     frame area(0, 0, 286, 456) background 'interface items bg2':
-                                        imagebutton align (0.5, 0.5):
-                                            idle 'interface items '+items[id].img
-                                            hover 'interface items '+items[id].img
-                                            action NullAction()
-                                            at things
+                                        imagebutton align (0.5, 0.5) idle 'interface items '+items[id].img action NullAction() at things:
                                             hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
                                 else:
                                     frame area(0, 0, 286, 226) background 'interface items bg':
-                                        imagebutton align (0.5, 0.5):
-                                            idle 'interface items '+items[id].img
-                                            hover 'interface items '+items[id].img
-                                            action NullAction()
-                                            at things
+                                        imagebutton align (0.5, 0.5) idle 'interface items '+items[id].img action NullAction() at things:
                                             hovered [tl.Action(items[id].name), tdesc.Action(items[id].desc)]
 
                             $ addcells = tabrows - listrows[cur_col]

@@ -1042,19 +1042,21 @@ label lisa_horor_movie_r:
     menu:
         Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}"
         "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
-            if not RandomChance(_ch3.ch) and not _in_replay:
+            if (not _in_replay and not RandomChance(_ch3.ch)) or (_in_replay and talk_var['kiss_lessons']<12):
                 # (не получилось сдержаться)
                 $ Skill('sex', 0.1)
+                Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
                 jump .not_restrain
 
             # (получилось сдержаться)
             $ Skill('sex', 0.2)
+            $ added_mem_var('horror_kiss')
             if flags['cur_series'] < 2:
                 # если начали новый фильм
-                Lisa_09 "Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
+                Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
             else:
                  #если продолжили смотреть
-                Lisa_09 "Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
+                Lisa_09 "[restrain!t]Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
             #  выключается музыка
             stop music fadeout 1.0
             Max_04 "Ага, я тоже. Было страшно, но я рад, что ты была рядом. Это приятно."
@@ -1083,7 +1085,7 @@ label lisa_horor_movie_r:
                     Max_01 "Ага. Приятных снов."
                     jump .end
 
-                "Просто иди и всё...":
+                "Просто иди и всё..." if not _in_replay:
                     Lisa_13 "Ну ага, просто иди! А вдруг меня что-то схватит?!"
                     Max_07 "У нас в комнате нет никаких монстров! Если конечно не считать того, что у меня в трусах."
 
@@ -1094,10 +1096,10 @@ label lisa_horor_movie_r:
                     jump .end
 
         "{i}да пофиг!{/i}":
+            Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
             jump .not_restrain
 
     label .not_restrain:
-        Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
         Max_07 "Однозначно кажется..."
 
         scene BG char Lisa horror-myroom 04
@@ -1115,6 +1117,7 @@ label lisa_horor_movie_r:
         jump .end
 
     label .end:
+        $ renpy.end_replay()
         $ spent_time += 60
         $ infl[lisa].add_m(12)
         $ dcv['film_punish'].enabled = False

@@ -398,3 +398,11 @@ translate english strings:
     old "Без звука"
     new "Mute"
 
+# TODO: Translation updated at 2021-02-23 19:08
+
+translate english strings:
+
+    # game/screens.rpy:889
+    old "Прозрачное текстовое окно"
+    new "Transparent text box"
+

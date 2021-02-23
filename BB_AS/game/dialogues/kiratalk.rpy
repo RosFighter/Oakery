@@ -446,17 +446,23 @@ label first_photoset:
 
     # set1
     scene photoshot 01-Kira 01
-    show FG photocamera
-    $ expected_photo.append('01')
     Kira_04 "Макс, постарайся меня держать в фокусе и следи, чтобы горизонт не был завален... Хотя, ты же всё умеешь, говоришь... В общем, я тебе доверяю."
-    Max_04 "И правильно... Моя тётя очень красиво просыпается! Готово! Теперь садись. Ты уже проснулась и решила красиво потянуться..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    Max_04 "И правильно... Моя тётя очень красиво просыпается! {p=1.5}{nw}"
+    hide FG
+    extend "Готово! Теперь садись. Ты уже проснулась и решила красиво потянуться..."
+    $ expected_photo.append('01')
 
     label .set2:
         scene photoshot 01-Kira 02
-        show FG photocamera
-    $ expected_photo.append('02')
     Kira_02 "Как тебе такие потягушки, Макс? Смотрится хорошо?"
-    Max_02 "То, что надо! Сейчас только ракурс подберу поинтереснее и будет отлично... Ага, есть! А дальше мы щёлкнем твою попку..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    Max_02 "То, что надо! Сейчас только ракурс подберу поинтереснее и будет отлично... {p=1.5}{nw}"
+    hide FG
+    extend "Ага, есть! А дальше мы щёлкнем твою попку..."
+    $ expected_photo.append('02')
 
     Kira_01 "С радостью, Макс! Как мне для этого лучше устроиться?" nointeract
     $ dial = [(_("Просто повернись в сторону окна..."), '1'), (_("Немного привстань, а остальное за мной..."), '2')]
@@ -467,18 +473,24 @@ label first_photoset:
 
     # set3
     scene photoshot 01-Kira 03
-    show FG photocamera
-    $ expected_photo.append('03')
     Kira_05 "Вот так должно красиво смотреться... Или сесть по-другому?"
-    Max_05 "Нет, тётя Кира, вид обалденный! Лучше некуда! Только фокус настрою сейчас... Вот и готово. Давай, привстань немного, я сделаю ещё снимок..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    Max_05 "Нет, тётя Кира, вид обалденный! Лучше некуда! Только фокус настрою сейчас... {p=1.5}{nw}"
+    hide FG
+    extend "Вот и готово. Давай, привстань немного, я сделаю ещё снимок..."
+    $ expected_photo.append('03')
 
     label .set4:
         scene photoshot 01-Kira 04
-        show FG photocamera
-    $ expected_photo.append('04')
     Kira_07 "Я вижу, тебе нравится? Ясно, почему ты в джинсах всё время ходил..."
+    $ expected_photo.append('04')
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
 
-    Max_01 "Не отвлекайся, тётя Кира! А то снимок выйдет так себе... Отлично! Вот что делаем дальше..." nointeract
+    Max_01 "Не отвлекайся, тётя Кира! А то снимок выйдет так себе... {p=1.5}{nw}"
+    hide FG
+    extend "Отлично! Вот что делаем дальше..." nointeract
     $ dial = [(_("Сделаем снимок не для портфолио в монастырь..."), '1'), (_("Переходим с дивана к столу..."), '2')]
     $ renpy.random.shuffle(dial)
     $ rez =  renpy.display_menu(dial)
@@ -487,37 +499,52 @@ label first_photoset:
 
     # set5
     scene photoshot 01-Kira 05
-    show FG photocamera
-    $ expected_photo.append('05')
     Kira_09 "Ухх... Макс! Меня и саму очень заводит, когда я завожу фотографа..."
-    Max_03 "Да... Покажем твою сочную попку во всей красе! Снимок выйдет чумовой... Теперь переходим с дивана к столу."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    Max_03 "Да... Покажем твою сочную попку во всей красе! {p=1.5}{nw}"
+    hide FG
+    extend "Снимок выйдет чумовой... Теперь переходим с дивана к столу."
+    $ expected_photo.append('05')
 
     label .set6:
         scene photoshot 01-Kira 06
-        show FG photocamera
-    $ expected_photo.append('06')
     Kira_04 "Если я обопрусь на стол вот так, слегка подразнивая своей грудью, получится неплохой снимок, как мне кажется..."
-    Max_02 "О да... Твоя грудь никого не оставит равнодушным. Она у тебя - огонь! Снимок готов. Давай, покажи мне что-нибудь погорячее..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    Max_02 "О да... Твоя грудь никого не оставит равнодушным. Она у тебя - огонь! {p=1.5}{nw}"
+    hide FG
+    extend "Снимок готов. Давай, покажи мне что-нибудь погорячее..."
+    $ expected_photo.append('06')
 
     scene photoshot 01-Kira 07
-    show FG photocamera
-    $ expected_photo.append('07')
     Kira_06 "Вроде такого? Думаю кадр получится отменный..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    $ expected_photo.append('07')
+    Max_04 "Ага, замри... Сейчас я тебя щёлкну. {p=1.5}{nw}"
+    hide FG
     menu:
-        Max_04 "Ага, замри... Сейчас я тебя щёлкну. Да, кадр получился что надо!"
+        extend "Да, кадр получился что надо!"
         "Хотя, я знаю, как он станет ещё лучше...":
             scene photoshot 01-Kira 08
-            show FG photocamera
-    $ expected_photo.append('08')
     Kira_07 "Мне нужно, чтобы кадры были ещё лучше! Думаешь, мы можем ограничиться лишь снятием с меня трусиков?"
-    Max_01 "Конечно нет, тётя Кира! Это же все для портфолио, а в нём должны быть продемонстрированы твои умения..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    Max_01 "Конечно нет, тётя Кира! {p=1.5}{nw}"
+    hide FG
+    extend "Это же все для портфолио, а в нём должны быть продемонстрированы твои умения..."
+    $ expected_photo.append('08')
 
     scene photoshot 01-Kira 09
-    show FG photocamera
-    $ expected_photo.append('09')
     Kira_09 "И я с удовольствием их продемонстрирую... Особенно, если при этом у тебя получатся очень хорошие кадры!"
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    $ expected_photo.append('09')
 
-    Max_02 "Я думаю, кадры будут отличные..." nointeract
+    Max_02 "Я думаю, кадры будут отличные...{p=1.5}{nw}"
+    hide FG
+    extend "" nointeract
     $ dial = [(_("Пора показать класс, тётя Кира!"), '1'), (_("Может, сразу удивишь меня чем-нибудь?"), '2')]
     $ renpy.random.shuffle(dial)
     $ rez =  renpy.display_menu(dial)
@@ -526,28 +553,39 @@ label first_photoset:
 
     # set10
     scene photoshot 01-Kira 10
-    show FG photocamera
-    $ expected_photo.append('10')
     Kira_02 "Как скажешь, Макс. Держись... Это будет сумасшедший минет!"
-    Max_20 "Охх... Полегче, тётя Кира! Ты так чувственно берёшь его в рот, что я могу забыть сделать снимки. Да... продолжай вот так, это будет отличный кадр! Может тебе есть, чем меня удивить?"
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    $ expected_photo.append('10')
+    Max_20 "Охх... Полегче, тётя Кира! Ты так чувственно берёшь его в рот, что я могу забыть сделать снимки. {p=1.5}{nw}"
+    hide FG
+    extend "Да... продолжай вот так, это будет отличный кадр! Может тебе есть, чем меня удивить?"
 
     label .set11:
         scene photoshot 01-Kira 11
-        show FG photocamera
-    $ expected_photo.append('11')
     Kira_05 "Как тебе такой пируэт, Макс? Уверена, ты будешь в восторге!"
-    Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же класно ты сосёшь... Думаю, я уже почти готов для последнего снимка! Готовься, тётя Кира..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    $ expected_photo.append('11')
+    Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же класно ты сосёшь... {p=1.5}{nw}"
+    hide FG
+    extend "Думаю, я уже почти готов для последнего снимка! Готовься, тётя Кира..."
 
     scene photoshot 01-Kira 12
-    show FG photocamera
-    $ expected_photo.append('12')
     Kira_08 "Да, вот так, Макс! Не сдерживайся! Я должна выглядеть как самая настоящая порно-звезда..."
-    Max_05 "И снято! Да уж, это было потрясающе! Думаю, снимки получились удачными..."
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"
+    $ expected_photo.append('12')
+    Max_05 "И снято! {p=1.5}{nw}"
+    hide FG
+    extend "Да уж, это было потрясающе! Думаю, снимки получились удачными..."
     Kira_06 "Надеюсь... Я скину себе фотографии, мой знакомый их обработает и там уже посмотрим, что получилось. Спасибо тебе, Макс. Кстати, если что, ты же не откажешь ещё пощёлкать свою тётю?"
     Max_03 "Да, я бы пощёлкал..."
     Kira_01 "Вот и здорово, Макс! Ладно, пойду приведу себя в порядок и переоденусь, а тебе ещё раз спасибо..."
     Max_07 "{i}( Это было намного лучше, чем ничего! Может, в следующий раз, мне обломится куда больше... ){/i}"
 
+    $ renpy.end_replay()
+    $ added_mem_var('kira_photoset1')
     $ SetCamsGrow(house[4], 300)
     $ poss['aunt'].OpenStage(4)
     $ items['nightie2'].InShop = False
@@ -671,7 +709,7 @@ label kira_about_photo2:
     Max_01 "Ага! Я готов! А ты?"
 
     # #если не суббота или поздно по времени
-    if GetWeekday(day)!=6 or not check_only_home('kira'):
+    if not _in_replay and (GetWeekday(day)!=6 or not check_only_home('kira')):
         Kira_04 "У меня тоже всё готово, но как ты знаешь, сейчас мы дома не одни. Представь, что подумают, если увидят такое..."
         Max_07 "Э... Какое?"
         Kira_07 "А это сюрприз, Макс. Так что, наберись терпения..."
@@ -718,7 +756,7 @@ label kira_about_photo2:
             #dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-01
             scene BG char Ann voyeur-01
             show Kira dresses 2-01
-            $ renpy.show("FG voyeur-morning-01"+mgg.dress)
+            show FG voyeur-morning-01c
             Max_03 "{i}( Ого! Вот это не дурно тётя Кира принаряжается! Надеюсь, она меня не заметит, а то... Хотя, о чём это я?! Это же Кира! Её это даже заводит... ){/i}"
 
             #dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-02
@@ -920,7 +958,7 @@ label kira_about_photo2:
     Kira_05 "Мы отлично повеселились. Только не вздумай ко мне приставать! На публике, разумеется. А теперь я пойду. Приятного дня, если он может быть ещё приятнее..."
     Max_01 "Спасибо за фотосессию!"
 
-
+    $ renpy.end_replay()
     $ SetCamsGrow(house[2], 300)
     $ poss['aunt'].OpenStage(6)
     $ dcv['kiratalk'].stage += 1
