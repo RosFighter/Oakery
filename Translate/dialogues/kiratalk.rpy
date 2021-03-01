@@ -1998,7 +1998,7 @@ translate english strings:
 translate english first_photoset_4e92d6fb:
 
     # Max_04 "И правильно... Моя тётя очень красиво просыпается! {p=1.5}{nw}"
-    Max_04 "Perfect...My Aunt is just waking up! {p=1.5}{nw}"
+    Max_04 "Perfect... My Aunt is just waking up! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:454
 translate english first_photoset_92396b51:
@@ -2046,7 +2046,7 @@ translate english first_photoset_set4_47f29f71:
 translate english first_photoset_set4_c305aae6:
 
     # Max_03 "Да... Покажем твою сочную попку во всей красе! {p=1.5}{nw}"
-    Max_03 "Yes... Let's see your rounded ass in all its glory! {p=1.5}{nw}"
+    Max_03 "Yes... Let's see your perfect ass! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:507
 translate english first_photoset_set4_947687dd:
@@ -2064,7 +2064,7 @@ translate english first_photoset_set6_04c93189:
 translate english first_photoset_set6_9e415db6:
 
     # extend "Снимок готов. Давай, покажи мне что-нибудь погорячее..."
-    extend "I've got a great shot. Now can you show me something more?"
+    extend "I've got a great shot. Can you show me something more?"
 
 # game/dialogues/kiratalk.rpy:525
 translate english first_photoset_set6_1f7ddded:
@@ -2088,7 +2088,7 @@ translate english first_photoset_set6_ef185983:
 translate english first_photoset_set6_b116d87b:
 
     # extend "Это же все для портфолио, а в нём должны быть продемонстрированы твои умения..."
-    extend "If we want to improve your portfolio you should show your skills..."
+    extend "If we want to improve your portfolio, you should show off your skills..."
 
 # game/dialogues/kiratalk.rpy:545
 translate english first_photoset_set6_fd2a8d5d:
@@ -2118,7 +2118,7 @@ translate english first_photoset_set6_77e15199:
 translate english first_photoset_set11_05c5e747:
 
     # Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же класно ты сосёшь... {p=1.5}{nw}"
-    Max_22 "Wow! This has to be filmed... your mouth is so good... {p=1.5}{nw}"
+    Max_22 "Wow! We shouldg get this on video... Your mouth is so good... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:572
 translate english first_photoset_set11_54845204:

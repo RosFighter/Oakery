@@ -179,7 +179,7 @@ translate english strings:
 
     # game/extra/extra.rpy:58
     old "Ужастики в обнимку с Лизой"
-    new "Horror movies in an embrace with Lisa"
+    new "Horror Movies and cuddling Lisa"
 
     # game/extra/extra.rpy:58
     old "Я обошёл Эрика с подарком для Алисы"
@@ -195,15 +195,15 @@ translate english strings:
 
     # game/extra/extra.rpy:58
     old "Её первые познания..."
-    new "Her first knowledge..."
+    new "Her first lesson..."
 
     # game/extra/extra.rpy:58
     old "Как возбудить ещё больше?"
-    new "How to excite even more?"
+    new "How do you get even more excited?"
 
     # game/extra/extra.rpy:58
     old "Нежно и аккуратно!"
-    new "Gently and gently!"
+    new "Gently and tender!"
 
     # game/extra/extra.rpy:58
     old "Как долго это нужно делать?"
@@ -211,5 +211,5 @@ translate english strings:
 
     # game/extra/extra.rpy:58
     old "Кружевное боди для Алисы от Эрика"
-    new "Lace bodysuit for Alice by Eric"
+    new "Lace bodysuit for Alice from Eric"
 
