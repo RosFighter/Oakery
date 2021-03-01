@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.0.07"
+define config.version = "0.06.0.08"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -228,6 +228,7 @@ init python:
     build.classify('game/images/Kira/cams/sleep/**.webp', 'img_fix')
     build.classify('game/images/Lisa/newsuit/**a.webp', 'img_fix')
     build.classify('game/images/Lisa/newsuit/**b.webp', 'img_fix')
+    build.classify('game/images/Max/lessons-talk/01a.webp', 'img_fix')
 
     build.archive("images", "all")
 

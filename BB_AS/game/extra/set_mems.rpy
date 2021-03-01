@@ -11,16 +11,19 @@ init python:
 
         if 'bathrobe' in persistent.mems_var:
             dr_l.append('b')
+
         if st!='':
             if type(st)==list:
                 dr_l.extend(st)
             else:
                 dr_l.append(st)
-        # print(dr_l)
+
+        # if tp != '':
+        #     print(dr_l)
         return renpy.random.choice(dr_l)
 
 
-    def get_max_dress(st=''):
+    def get_max_dress(st='', ex=''):
         dr_m = ['c'] if 'kira' in persistent.mems_var else ['a']
         if 'max-a' in persistent.mems_var:
             dr_m.append('b')
@@ -29,6 +32,18 @@ init python:
                 dr_m.extend(st)
             else:
                 dr_m.append(st)
+        # print dr_m
+        dr_m = list(set(dr_m))
+        if ex!='':
+            if type(ex)==list:
+                for j in ex:
+                    if j in dr_m:
+                        dr_m.remove(j)
+            else:
+                if ex in dr_m:
+                    dr_m.remove(ex)
+
+        # print dr_m
         return renpy.random.choice(dr_m)
 
     ############################################################################
@@ -217,7 +232,7 @@ init python:
         tl.dress = get_lisa_dress(tp='learn')
 
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress('a')
 
         my_scope = {
                 'pose3_1' : renpy.random.choice(['01', '02', '03']),
@@ -231,7 +246,7 @@ init python:
         tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dress = get_lisa_dress()
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
         my_scope = {
                 'talk_var' : {'kissingmassage':False},
                 'lisa' : tl,
@@ -242,7 +257,7 @@ init python:
     # Разомнём и плечики
     def set_shoulders_mass():
         tl = Profile("Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
-        tl.dress = get_lisa_dress('learn')
+        tl.dress = get_lisa_dress(tp='learn')
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress()
         my_scope = {
@@ -547,7 +562,7 @@ init python:
         al.dress = renpy.random.choice(['a', 'b'])
 
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
 
         my_scope = {
                 'dcv'           : {
@@ -577,7 +592,7 @@ init python:
         al.dress = renpy.random.choice(['a', 'b'])
 
         mg = MaxProfile("Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
         mg.stealth = 28.7
 
         tdcv = {

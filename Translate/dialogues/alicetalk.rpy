@@ -8224,7 +8224,7 @@ translate english alice_showing_lingerie1_039ef6ce:
 translate english gift_lace_lingerie_7a0bce7e:
 
     # Alice_15 "Ого! В смысле, то самое, которое я тебе показывала или какое-то другое?"
-    Alice_15 "Wow! I mean, it it the one I showed you or something different?"
+    Alice_15 "Wow! I mean, is it the one I showed you or something different?"
 
 # game/dialogues/alicetalk.rpy:3442
 translate english gift_lace_lingerie_5acfd87b:

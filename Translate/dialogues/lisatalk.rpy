@@ -8496,7 +8496,7 @@ translate english Lisa_HomeWork_1c83348c:
 translate english Lisa_HomeWork_44b8f3ca:
 
     # Lisa_02 "Знаешь... А ладно, делай. Я так устала сегодня в школе, что не откажусь от того, чтобы ты сделал уроки за меня. Но смотри, я всё проверю..."
-    Lisa_02 "All right... Just do it. I'm so exhausted from school today that I could really use the break. Just don't forget I'll check it when it's done..."
+    Lisa_02 "But you know what... Just do it. I'm so exhausted from school today that I could really use the break. Just don't forget I'll check it when it's done..."
 
 # game/dialogues/lisatalk.rpy:1061
 translate english Lisa_HomeWork_7a1b1aa9:
@@ -8520,7 +8520,7 @@ translate english Lisa_HomeWork_24da02ca:
 translate english Lisa_HomeWork_dd0ccf2c:
 
     # Lisa_02 "[succes!t]Знаешь... А ладно, делай. Я так устала на этих курсах, что не откажусь от того, чтобы ты сделал уроки за меня. Но смотри, я всё проверю..."
-    Lisa_02 "[succes!t]All right... Just do it. I'm so exhausted from school that I could really use the break. Just don't forget I'll check it when it's done..."
+    Lisa_02 "[succes!t]But you know what... Just do it. I'm so exhausted from school that I could really use the break. Just don't forget I'll check it when it's done..."
 
 # game/dialogues/lisatalk.rpy:1075
 translate english Lisa_HomeWork_7fc42348:
@@ -8820,4 +8820,3 @@ translate english lisa_stop_kiss_0a680597:
 
     # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. ){/i}"
     Max_09 "{i}( I think I'd better stop kissing lessons with Lisa for now so I don't draw attention from Eric. ){/i}"
-

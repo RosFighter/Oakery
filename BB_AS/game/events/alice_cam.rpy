@@ -656,7 +656,7 @@ label cam1_alice_bath:
 
 label cam0_alice_blog_lingerie:
     if not (dcv['alice.secret'].done and 'cam_pose_blog' in globals()):
-        call cam0_alice_rest_evening
+        call cam0_alice_rest_evening from _call_cam0_alice_rest_evening
         return
         
     if not len(cam_pose_blog):

@@ -685,7 +685,7 @@ label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
 
-    if extrapak or renpy.loadable('extra/extra.webp'):
+    if ('extrapak' in globals() and extrapak) or renpy.loadable('extra/extra.webp'):
         $ set_extra_album()
 
     # "ver [current_ver]"

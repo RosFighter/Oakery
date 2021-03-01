@@ -1646,7 +1646,7 @@ label alice_lisa_shower:
 
 label alice_blog_lingerie:
     if not (dcv['alice.secret'].done and 'cam_pose_blog' in globals()):
-        call alice_rest_evening
+        call alice_rest_evening from _call_alice_rest_evening
         return
 
     $ renpy.scene()
