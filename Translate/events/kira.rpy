@@ -3673,3 +3673,339 @@ translate english kira_bath_with_eric_6bca3a88:
 
     # Max_02 "Кира не упустила ни единой капли мимо! И как будто никто ни у кого только что смачно не отсасывал... Чистая работа!" nointeract
     Max_02 "Kira didn't waste a single drop! She didn't leave any evidence of the last few minutes!" nointeract
+# TODO: Translation updated at 2021-03-02 01:39
+
+# game/events/kira.rpy:1466
+translate english kira_night_tv_cuni_var2_ea18dd2c:
+
+    # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
+    Kira_12 ""
+
+# game/events/kira.rpy:1605
+translate english kira_night_tv_tv_sex1_6a99226d:
+
+    # Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Ещё чуть-чуть и я кончу... Может быть, ты воспользуешься чем-то потолще пальчиков и язычка?" nointeract
+    Kira_10 "" nointeract
+
+# game/events/kira.rpy:1620
+translate english kira_night_tv_tv_sex2_dfb388ae:
+
+    # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!" nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:1627
+translate english kira_night_tv_tv_sex2_69d27069:
+
+    # Kira_09 "Ох, Макс... Я обожаю этот момент! Д-а-а... Вот так... Вводи его не спеша... хочу немного привыкнуть к его размерам... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:1647
+translate english kira_night_tv_tv_sex2_371a8e90:
+
+    # Kira_11 "[restrain!t]Как приятно чувствовать твой член, Макс! Охх... Да... Вгоняй его в мою киску сильнее... Ещё! Оттрахай меня пожёстче... Д-а-а... Ещё..."
+    Kira_11 ""
+
+# game/events/kira.rpy:1649
+translate english kira_night_tv_tv_sex2_118f7848:
+
+    # Max_20 "Какая у тебя сочная попка, тётя Кира..."
+    Max_20 ""
+
+# game/events/kira.rpy:1650
+translate english kira_night_tv_tv_sex2_c67f39e0:
+
+    # Kira_12 "О да! Ещё... ещё, Макс... Да, вот так... Ммм... Трахай меня ещё быстрее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..." nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:1657
+translate english kira_night_tv_tv_sex2_fa08c779:
+
+    # Kira_07 "Должно быть блаженно, кончать в свою тётю, да Макс? Я к этому готова всегда, но за других женщин говорить не могу, так что лучше быть осторожнее..."
+    Kira_07 ""
+
+# game/events/kira.rpy:1658
+translate english kira_night_tv_tv_sex2_0a14aaaa:
+
+    # Max_07 "Да, тётя Кира! Значит, до следующего раза?!"
+    Max_07 ""
+
+# game/events/kira.rpy:1666
+translate english kira_night_tv_tv_sex2_5d671a08:
+
+    # Kira_05 "Ого, сколько её в тебе, Макс! Всю попку мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+    Kira_05 ""
+
+# game/events/kira.rpy:1667
+translate english kira_night_tv_tv_sex2_ef5f22f0:
+
+    # Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+    Max_02 ""
+
+# game/events/kira.rpy:1688
+translate english kira_night_tv_tv_sex2_ed53830e:
+
+    # Kira_05 "[norestrain!t]Ого, сколько её в тебе, Макс! Всю попку мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+    Kira_05 ""
+
+# game/events/kira.rpy:1690
+translate english kira_night_tv_tv_sex2_ef5f22f0_1:
+
+    # Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+    Max_02 ""
+
+# game/events/kira.rpy:1698
+translate english kira_night_tv_tv_sex2_46cfabbd:
+
+    # Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому наслаждению, которое нас ждало дальше..."
+    Kira_08 ""
+
+# game/events/kira.rpy:1700
+translate english kira_night_tv_tv_sex2_38f54446:
+
+    # Max_07 "Да, тётя Кира, извини! Не сдержался... Значит, до следующего раза?!"
+    Max_07 ""
+
+# game/events/kira.rpy:1709
+translate english kira_night_tv_missionary_87407bd3:
+
+    # Kira_09 "Ох, Макс... Какой же это классный момент! Д-а-а... Вот так... Вводи его не спеша... чтобы я привыкла... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:1723
+translate english kira_night_tv_missionary_20627b65:
+
+    # Kira_11 "[restrain!t]Как приятно чувствовать твой член, Макс! Охх... Да... Вгоняй его в меня сильнее... Ещё! Оттрахай меня как следует... Д-а-а... Ещё..."
+    Kira_11 ""
+
+# game/events/kira.rpy:1725
+translate english kira_night_tv_missionary_ccabbb5f:
+
+    # Max_20 "Какая ты испорченная девчонка, тётя Кира..."
+    Max_20 ""
+
+# game/events/kira.rpy:1726
+translate english kira_night_tv_missionary_a5c44566:
+
+    # Kira_12 "О да! Ещё... ещё, Макс... Да, вот так... Ммм... Трахай меня ещё сильнее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..." nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:1733
+translate english kira_night_tv_missionary_fa08c779:
+
+    # Kira_07 "Должно быть блаженно, кончать в свою тётю, да Макс? Я к этому готова всегда, но за других женщин говорить не могу, так что лучше быть осторожнее..."
+    Kira_07 ""
+
+# game/events/kira.rpy:1734
+translate english kira_night_tv_missionary_0a14aaaa:
+
+    # Max_07 "Да, тётя Кира! Значит, до следующего раза?!"
+    Max_07 ""
+
+# game/events/kira.rpy:1742
+translate english kira_night_tv_missionary_cc7dbac3:
+
+    # Kira_05 "Ого, сколько её в тебе, Макс! Весь живот мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+    Kira_05 ""
+
+# game/events/kira.rpy:1743
+translate english kira_night_tv_missionary_ef5f22f0:
+
+    # Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+    Max_02 ""
+
+# game/events/kira.rpy:1764
+translate english kira_night_tv_missionary_1abefedc:
+
+    # Kira_05 "[norestrain!t]Ого, сколько её в тебе, Макс! Весь живот мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+    Kira_05 ""
+
+# game/events/kira.rpy:1766
+translate english kira_night_tv_missionary_ef5f22f0_1:
+
+    # Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+    Max_02 ""
+
+# game/events/kira.rpy:1774
+translate english kira_night_tv_missionary_46cfabbd:
+
+    # Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому наслаждению, которое нас ждало дальше..."
+    Kira_08 ""
+
+# game/events/kira.rpy:1776
+translate english kira_night_tv_missionary_38f54446:
+
+    # Max_07 "Да, тётя Кира, извини! Не сдержался... Значит, до следующего раза?!"
+    Max_07 ""
+
+# game/events/kira.rpy:1795
+translate english kira_night_tv_cum_in_mouth_4be7addd:
+
+    # Max_20 "[restrain!t]{i}Ухх, как же смачно она посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот, но она справляется! А я кончаю... Д-а-а...{/i}"
+    Max_20 ""
+
+# game/events/kira.rpy:1801
+translate english kira_night_tv_cum_in_mouth_5d1bbc4c:
+
+    # Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
+    Max_05 ""
+
+# game/events/kira.rpy:1802
+translate english kira_night_tv_cum_in_mouth_2f0c8e1d:
+
+    # Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
+    Kira_07 ""
+
+# game/events/kira.rpy:1803
+translate english kira_night_tv_cum_in_mouth_a2bb381b:
+
+    # Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
+    Max_05 ""
+
+# game/events/kira.rpy:1811
+translate english kira_night_tv_minet_after_sex_4713ca96:
+
+    # Kira_07 "[restrain!t]Фух, удивляюсь, как ты ещё не кончил, Макс! Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
+    Kira_07 ""
+
+# game/events/kira.rpy:1813
+translate english kira_night_tv_minet_after_sex_f7a0a397:
+
+    # Max_04 "Да... Я очень этого хочу!"
+    Max_04 ""
+
+# game/events/kira.rpy:1817
+translate english kira_night_tv_minet_after_sex_f0b5050a:
+
+    # Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил мне в рот! Если конечно выдержишь то, что я буду делать языком..."
+    Kira_02 ""
+
+# game/events/kira.rpy:1818
+translate english kira_night_tv_minet_after_sex_f3feae2f:
+
+    # Max_03 "О да, ты им такое вытворяешь!"
+    Max_03 ""
+
+# game/events/kira.rpy:1829
+translate english kira_night_tv_minet_after_sex_87575487:
+
+    # Max_07 "Охх... тётя Кира, как приятно..."
+    Max_07 ""
+
+# game/events/kira.rpy:1830
+translate english kira_night_tv_minet_after_sex_0b605960:
+
+    # Kira_09 "Просто наслаждайся..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:1844
+translate english kira_night_tv_minet_after_sex_ac8a5ca0:
+
+    # Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}"
+    Max_20 ""
+
+# game/events/kira.rpy:1846
+translate english kira_night_tv_minet_after_sex_2cc14887:
+
+    # Max_19 "Да, вот так тётя Кира, твои губки творят чудеса! Охх..." nointeract
+    Max_19 "" nointeract
+
+# game/events/kira.rpy:1859
+translate english kira_night_tv_minet_after_sex_b9d9402f:
+
+    # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}"
+    Max_21 ""
+
+# game/events/kira.rpy:1861
+translate english kira_night_tv_minet_after_sex_6aa1b7d8:
+
+    # Max_22 "Тётя Кира, ещё быстрее... Да... Я сейчас кончу... А-а-а..."
+    Max_22 ""
+
+# game/events/kira.rpy:1862
+translate english kira_night_tv_minet_after_sex_5d1bbc4c:
+
+    # Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
+    Max_05 ""
+
+# game/events/kira.rpy:1867
+translate english kira_night_tv_minet_after_sex_2f0c8e1d:
+
+    # Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
+    Kira_07 ""
+
+# game/events/kira.rpy:1868
+translate english kira_night_tv_minet_after_sex_a2bb381b:
+
+    # Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
+    Max_05 ""
+
+# game/events/kira.rpy:1878
+translate english kira_night_tv_minet_after_sex_da52627c:
+
+    # Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому, что может вытворять мой ротик, потому что это было только начало..."
+    Kira_08 ""
+
+# game/events/kira.rpy:1880
+translate english kira_night_tv_minet_after_sex_f7abf3aa:
+
+    # Max_02 "Значит, до следующего раза?!"
+    Max_02 ""
+
+# game/events/kira.rpy:1887
+translate english kira_night_tv_end_sex_3bfad864:
+
+    # Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
+    Kira_04 ""
+
+# game/events/kira.rpy:1888
+translate english kira_night_tv_end_sex_469c1d2c:
+
+    # Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!" nointeract
+    Max_01 "" nointeract
+
+translate english strings:
+
+    # game/events/kira.rpy:1605
+    old "{i}трахнуть тётю Киру{/i} (миссионерская поза)"
+    new ""
+
+    # game/events/kira.rpy:1605
+    old "{i}снять шорты и трахнуть тётю Киру{/i} (миссионерская поза)"
+    new ""
+
+    # game/events/kira.rpy:1605
+    old "{i}трахнуть тётю Киру{/i} (поза на боку)"
+    new ""
+
+    # game/events/kira.rpy:1620
+    old "{i}трахнуть тётю Киру (догги-стайл){/i}"
+    new ""
+
+    # game/events/kira.rpy:1627
+    old "{i}трахать её{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
+    new ""
+
+    # game/events/kira.rpy:1650
+    old "{i}кончить в неё{/i}"
+    new ""
+
+    # game/events/kira.rpy:1650
+    old "{i}кончить ей на попку{/i}"
+    new ""
+
+    # game/events/kira.rpy:1650
+    old "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
+    new ""
+
+    # game/events/kira.rpy:1650
+    old "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}"
+    new ""
+
+    # game/events/kira.rpy:1726
+    old "{i}кончить ей на живот{/i}"
+    new ""
+
+    # game/events/kira.rpy:1830
+    old "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}"
+    new ""
+

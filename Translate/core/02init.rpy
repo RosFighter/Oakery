@@ -460,3 +460,15 @@ translate english strings:
     # game/core/02init.rpy:100
     old "Я хотел поговорить о Кире..."
     new "I wanted to talk about Kira..."
+# TODO: Translation updated at 2021-03-02 01:39
+
+translate english strings:
+
+    # game/core/02init.rpy:36
+    old "{color=#00FF00}{i}Ей нравится!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:37
+    old "{color=#E59400}{i}Ей не нравится!{/i}{/color}\n"
+    new ""
+
