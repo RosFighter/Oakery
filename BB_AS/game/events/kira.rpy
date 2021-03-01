@@ -705,6 +705,7 @@ label kira_night_tv:
             for j in range(1, 7):
                 __list.append('serial 0'+str(j))
     $ __film = renpy.random.choice(__list)
+    $ __naked = False
     $ renpy.show('tv '+__film, at_list=[tv_screen,])
     $ renpy.show('Kira tv-watch 01'+kira.dress)
     if 'kira_night_tv.porn_view' not in persistent.memories:
@@ -869,7 +870,7 @@ label kira_night_tv:
             Kira_03 "Так, мы порно собирались смотреть или что? Всё, тихо... всё внимание на экран."
             Max_02 "{i}( О да, так классно смотреть такое со своей тётей... Она ведь та ещё проказница! А в шортах-то как тесно... ){/i}"
 
-            scene BG char Alice tv-mass-01
+            scene BG tv-mass-01
             show Kira tv-closer max-01
 
             Max_03 "{i}( Ого, она трогает свою грудь! Блин, мне повезло с тётей. Она такая классная! ){/i}"
@@ -911,7 +912,7 @@ label kira_night_tv:
             Kira_04 "Давай. Благо, у меня большая коллекция таких фильмов..."
             Max_03 "Супер! Хотя я больше рад тому, с кем я это смотрю."
 
-            scene BG char Alice tv-mass-01
+            scene BG tv-mass-01
             show Kira tv-closer max-02
 
             Kira_07 "Не стесняйся, Макс... Вижу, тебе уже очень тесно в шортах, доставай свой член! На экране уже давно это сделали... Ты отстаёшь..."
@@ -957,7 +958,7 @@ label kira_night_tv:
         menu:
             Max_03 "Конечно помню! Сейчас развлечёмся..."
             "{i}начать ласкать её киску языком{/i}":
-                scene BG char Alice tv-mass-03
+                scene BG tv-mass-03
                 show Kira tv-game cun-01ab
         menu:
             Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
@@ -996,7 +997,7 @@ label kira_night_tv:
         Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Да! Я кончаю... Ахх..."
         Max_02 "Какая у тебя сочная попка, тётя Кира..."
 
-        scene BG char Alice tv-mass-03
+        scene BG tv-mass-03
         show Kira tv-game cun-00bb
 
         Kira_06 "Да, Макс, она у меня такая... Я в восторге! Но лучше нам закругляться, а то я вполне могла кого-нибудь разбудить своими стонами."
@@ -1146,7 +1147,7 @@ label kira_night_tv:
 
                     "{i}прикоснуться к её попке{/i}":
                         $ renpy.block_rollback()
-                        scene BG char Alice tv-mass-01
+                        scene BG tv-mass-01
                         show Kira tv-kiss 2-02
                         $ Skill('kissing', 0.2, 3.0)
                         menu:
@@ -1222,7 +1223,7 @@ label kira_night_tv:
                 scene BG char Alice tv-mass-05
                 show Kira tv-kiss 2-01
         Max_01 "{i}( Класс! Она и без моей помощи норовит страстно прижаться ко мне. Её нежная грудь слегка трётся об меня от чего мы начинаем целоваться ещё более страстно... ){/i}"
-        scene BG char Alice tv-mass-01
+        scene BG tv-mass-01
         show Kira tv-kiss 2-02
         Max_03 "{i}( А от жара её мягкой попки под моей рукой можно потерять весь контроль... Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться... ){/i}"
         scene BG char Kira tv-kiss-03
@@ -1260,7 +1261,7 @@ label kira_night_tv:
         menu:
             Kira_06 "Д-а-а... Вот так, Макс... Поиграй со мной! Как же я уже хочу, чтобы ты опускался своим шустрым язычком всё ниже и ниже... прямо туда... Оххх..."
             "{i}ласкать её киску языком{/i}":
-                scene BG char Alice tv-mass-03
+                scene BG tv-mass-03
                 show Kira tv-game cun-01aa
         Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
         Max_01 "В другой раз..."
@@ -1274,11 +1275,12 @@ label kira_night_tv:
             Kira_09 "Да... Ещё чуть-чуть и я кончу... Проникни в мою киску своими ловкими пальчиками... Она уже такая мокренькая..."
             "{i}продолжить пальцами и языком{/i}":
                 show Kira tv-game cun-03aa
+
         Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ох, я кончаю... Д-а-а..."
         Max_02 "Вау, тётя Кира! Это было классно! Какая ты плохая девчонка..."
         Kira_05 "Ты даже не представляеешь, насколько я испорченная девчонка! Долой ночнушку... Стало уж слишком жарко..."
         Max_04 "Это точно!"
-        scene BG char Alice tv-mass-07
+        scene BG tv-mass-07
         show Kira tv-game bj-01aa
         menu:
             Kira_07 "А ты, Макс, намного способнее, чем мне казалось... и заслужил кое-что особенное... Давай снимай шорты!"
@@ -1290,7 +1292,7 @@ label kira_night_tv:
         if renpy.random.randint(1, 2)>1:
             show Kira tv-game bj-04
         else:
-            scene BG char Alice tv-mass-03
+            scene BG tv-mass-03
             show Kira tv-game bj-03ab
         Max_07 "Охх... тётя Кира, как приятно... чёрт, это и правда будет непросто выдержать..."
         $ _ch3 = GetChance(mgg.sex+10, 3, 900)
@@ -1304,7 +1306,7 @@ label kira_night_tv:
         # (получилось сдержаться)
         $ Skill('sex', 0.2)
         if renpy.random.randint(1, 2)>1:
-            scene BG char Alice tv-mass-07
+            scene BG tv-mass-07
             show Kira tv-game bj-05ab
         else:
             scene BG char Kira tv-bj-01
@@ -1335,7 +1337,7 @@ label kira_night_tv:
         Max_03 "Ни капли!"
         Kira_07 "Вот и правильно! Мне очень понравилось... А тебе?"
         Max_05 "Да как такое может не понравиться! Это вообще самое офигенное, что было в моей жизни!"
-        scene BG char Alice tv-mass-01
+        scene BG tv-mass-01
         show Kira tv-game bj-09ab
         Kira_05 "О, Макс... У тебя ещё не было почти ничего..."
         Max_02 "Но, надеюсь, ведь ещё будет, тётя Кира?"
@@ -1356,7 +1358,7 @@ label kira_night_tv:
         Max_05 "Ни капли!"
         Kira_05 "Вот и правильно! Со временем, когда привыкнешь к этому, тебе будет проще сдерживаться."
         Max_02 "Значит, будет следующий раз?!"
-        scene BG char Alice tv-mass-01
+        scene BG tv-mass-01
         show Kira tv-game bj-09ab
         Kira_04 "Очень может быть... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
         Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
@@ -1370,11 +1372,9 @@ label kira_night_tv:
         show Kira tv-game bj-04a
         Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому, что может вытворять мой ротик, потому что это было только начало..."
         Max_02 "Значит, до следующего раза?!"
-        scene BG char Alice tv-mass-01
+        scene BG tv-mass-01
         show Kira tv-game bj-09bb
-        Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
-        Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
-        jump .end
+        jump .end_sex
 
     label .teach_cuni:
         if not _in_replay:
@@ -1391,7 +1391,7 @@ label kira_night_tv:
         menu:
             Kira_06 "Д-а-а... Вот так, Макс... Поиграй со мной! Как же я уже хочу, чтобы ты опускался своим шустрым язычком всё ниже и ниже... прямо туда... Оххх..."
             "{i}ласкать её киску языком{/i}":
-                scene BG char Alice tv-mass-03
+                scene BG tv-mass-03
                 show Kira tv-game cun-01aa
         menu:
             Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
@@ -1406,9 +1406,16 @@ label kira_night_tv:
                     Kira_09 "Да... Ещё чуть-чуть и я кончу... Проникни в мою киску своими ловкими пальчиками... Она уже такая мокренькая..."
                     "{i}продолжить пальцами и языком{/i}":
                         show Kira tv-game cun-03ba
+
+                if dcv['kiratalk'].stage>7:
+                    # была 2-ая фотосессия, секс
+                    # тут в шортах
+                    jump .tv_sex1
+
+                # не было 2-ой фотосессии, дальше минет от Киры
                 Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ох, я кончаю... Д-а-а..."
                 Max_02 "Какая ты испорченная девчонка, тётя Кира..."
-                scene BG char Alice tv-mass-07
+                scene BG tv-mass-07
                 show Kira tv-game bj-01ba
                 menu:
                     Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Давай снимай шорты! Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
@@ -1454,10 +1461,16 @@ label kira_night_tv:
             scene BG char Alice tv-mass-11
             show Kira tv-game cun-06-3
 
+        if dcv['kiratalk'].stage>7:
+            # была 2-ая фотосессия, секс
+            Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
+            jump .tv_sex2
+
+        # не было 2-ой фотосессии, дальше минет от Киры
         Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Да! Я кончаю... Ахх..."
         Max_02 "Какая у тебя сочная попка, тётя Кира..."
 
-        scene BG char Alice tv-mass-07
+        scene BG tv-mass-07
         show Kira tv-game bj-01bb
 
         Kira_07 "Да... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
@@ -1473,7 +1486,7 @@ label kira_night_tv:
                 if renpy.random.randint(1, 2)>1:
                     show Kira tv-game bj-04
                 else:
-                    scene BG char Alice tv-mass-03
+                    scene BG tv-mass-03
                     show Kira tv-game bj-03bb
         Max_07 "Охх... тётя Кира, как приятно..."
         $ _ch3 = GetChance(mgg.sex+10, 3, 900)
@@ -1493,7 +1506,7 @@ label kira_night_tv:
         $ added_mem_var('tv_bj1')
         $ Skill('sex', 0.2)
         if renpy.random.randint(1, 2)>1:
-            scene BG char Alice tv-mass-07
+            scene BG tv-mass-07
             show Kira tv-game bj-05bb
         else:
             scene BG char Kira tv-bj-01
@@ -1528,13 +1541,11 @@ label kira_night_tv:
         show Kira tv-game bj-02a
         Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
         Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
-        scene BG char Alice tv-mass-01
+        scene BG tv-mass-01
         show Kira tv-game bj-09bb
-        Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
-        Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
         if not _in_replay:
             $ persistent.memories['kira_tv_bj'] = 1
-        jump .end
+        jump .end_sex
 
     label .tv_cuni:
         if _in_replay:
@@ -1546,7 +1557,7 @@ label kira_night_tv:
         menu:
             Max_01 "Мне нравится, к чему ты клонишь, тётя Кира..."
             "{i}начать ласкать её киску языком{/i}":
-                scene BG char Alice tv-mass-03
+                scene BG tv-mass-03
                 show Kira tv-game cun-01ab
         menu:
             Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
@@ -1561,9 +1572,16 @@ label kira_night_tv:
                     Kira_09 "Да... Ещё чуть-чуть и я кончу... Проникни в мою киску своими ловкими пальчиками... Она уже такая мокренькая..."
                     "{i}продолжить пальцами и языком{/i}":
                         show Kira tv-game cun-03bb
+
+                if dcv['kiratalk'].stage>7:
+                    # была 2-ая фотосессия, секс
+                    $ __naked = True
+                    jump .tv_sex1
+
+                # не было 2-ой фотосессии, дальше минет от Киры
                 Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ох, я кончаю... Д-а-а..."
                 Max_02 "Какая ты испорченная девчонка, тётя Кира..."
-                scene BG char Alice tv-mass-07
+                scene BG tv-mass-07
                 show Kira tv-game bj-01bb
                 Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
                 Max_04 "Да... Я очень этого хочу!"
@@ -1575,6 +1593,302 @@ label kira_night_tv:
         if persistent.memories['kira_night_tv.porn_view']<2 and not _in_replay:
             $ persistent.memories['kira_night_tv.porn_view'] = 2
         jump .bj
+
+    label .tv_sex1:
+        #tv-cun-01 + tv-cun-01-max-03a-kira-03a
+        scene BG char Kira tv-cun-01
+        if __naked:
+            show Kira tv-game cun-03bb
+        else:
+            show Kira tv-game cun-03ba
+
+        menu:
+            Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Ещё чуть-чуть и я кончу... Может быть, ты воспользуешься чем-то потолще пальчиков и язычка?"
+            "{i}трахнуть тётю Киру{/i} (миссионерская поза)" if __naked:
+                jump .missionary
+
+            "{i}снять шорты и трахнуть тётю Киру{/i} (миссионерская поза)" if not __naked:
+                jump .missionary
+
+            "{i}трахнуть тётю Киру{/i} (поза на боку)" if False:
+                pass
+
+    label .tv_sex2:
+        $ _ch_sex2 = GetChance(mgg.sex+5, 2, 900)
+        $ _ch_sex4 = GetChance(mgg.sex+10, 4, 900)
+
+        menu:
+            Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
+            "{i}трахнуть тётю Киру (догги-стайл){/i}":
+                pass
+        #tv-max&kira-sex02-01-f + tv-max&kira-sex02-01
+        scene BG char Kira tv-sex02-01
+        show Kira tv-sex 02-01
+        menu:
+            Kira_09 "Ох, Макс... Я обожаю этот момент! Д-а-а... Вот так... Вводи его не спеша... хочу немного привыкнуть к его размерам... Ммм..."
+            "{i}трахать её{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                pass
+        if RandomChance(_ch_sex4.ch):
+            # (Удалось сдержаться!)
+            $ __r1 = renpy.random.randint(1, 3)
+            if __r1 < 2:
+                #tv-max&kira-sex02-01-f + tv-max&kira-sex02-02a
+                scene BG char Kira tv-sex02-01
+                show Kira tv-sex 02-02a
+            elif __r1 < 3:
+                #tv-mass-03 + tv-max&kira-sex02-02b
+                scene BG tv-mass-03
+                show Kira tv-sex 02-02b
+            else:
+                #after-club-s09a-f + tv-max&kira-sex02-02c
+                scene BG char Kira after-club-s09a-f
+                show Kira tv-sex 02-02c
+
+            Kira_11 "[restrain!t]Как приятно чувствовать твой член, Макс! Охх... Да... Вгоняй его в мою киску сильнее... Ещё! Оттрахай меня пожёстче... Д-а-а... Ещё..."
+            $ Skill('sex', 0.2)
+            Max_20 "Какая у тебя сочная попка, тётя Кира..."
+            menu:
+                Kira_12 "О да! Ещё... ещё, Макс... Да, вот так... Ммм... Трахай меня ещё быстрее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..."
+                "{i}кончить в неё{/i}":
+                    #tv-max&kira-sex02-01-f + tv-max&kira-sex02-01 + tv-max&kira-sex02-cum01
+                    scene BG char Kira tv-sex02-01
+                    show Kira tv-sex 02-01
+                    show FG Kira tv-sex 02-cum01
+                    Kira_07 "Должно быть блаженно, кончать в свою тётю, да Макс? Я к этому готова всегда, но за других женщин говорить не могу, так что лучше быть осторожнее..."
+                    Max_07 "Да, тётя Кира! Значит, до следующего раза?!"
+                    jump .end_sex
+
+                "{i}кончить ей на попку{/i}":
+                    #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
+                    scene BG char Kira tv-sex03-01
+                    show Kira tv-sex 02-03
+                    $ renpy.show('FG Kira tv-sex 02-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
+                    Kira_05 "Ого, сколько её в тебе, Макс! Всю попку мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+                    Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+                    jump .end_sex
+
+                "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                    if RandomChance(_ch_sex4.ch):
+                        # (Удалось сдержаться!)
+                        jump .cum_in_mouth
+
+                "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
+                    if RandomChance(_ch_sex2.ch):
+                        # (Удалось сдержаться!)
+                        #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03
+                        scene BG char Kira tv-sex03-01
+                        show Kira tv-sex 02-03
+                        jump .minet_after_sex
+
+            # (Не удалось сдержаться!)
+            #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
+            scene BG char Kira tv-sex03-01
+            show Kira tv-sex 02-03
+            $ renpy.show('FG Kira tv-sex 02-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
+            Kira_05 "[norestrain!t]Ого, сколько её в тебе, Макс! Всю попку мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+            $ Skill('sex', 0.1)
+            Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+            jump .end_sex
+
+        # (Не удалось сдержаться!)
+        #tv-max&kira-sex02-01-f + tv-max&kira-sex02-01 + tv-max&kira-sex02-cum01
+        scene BG char Kira tv-sex02-01
+        show Kira tv-sex 02-01
+        show FG Kira tv-sex 02-cum01
+        Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому наслаждению, которое нас ждало дальше..."
+        $ Skill('sex', 0.1)
+        Max_07 "Да, тётя Кира, извини! Не сдержался... Значит, до следующего раза?!"
+        jump .end_sex
+
+    label .missionary:
+        $ _ch_sex2 = GetChance(mgg.sex+5, 2, 900)
+        $ _ch_sex4 = GetChance(mgg.sex+10, 4, 900)
+        #tv-max&kira-sex03-01-f + tv-max&kira-sex03-01
+        scene BG char Kira tv-sex03-01
+        show Kira tv-sex 03-01
+        menu:
+            Kira_09 "Ох, Макс... Какой же это классный момент! Д-а-а... Вот так... Вводи его не спеша... чтобы я привыкла... Ммм..."
+            "{i}трахать её{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                pass
+        if RandomChance(_ch_sex4.ch):
+            # (Удалось сдержаться!)
+            #tv-max&kira-sex03-01-f + tv-max&kira-sex03-02a или tv-mass-03 + tv-max&kira-sex03-02b
+            if renpy.random.randint(1, 2) < 2:
+                scene BG char Kira tv-sex03-01
+                show Kira tv-sex 03-02a
+            else:
+                scene BG tv-mass-03
+                show Kira tv-sex 03-02b
+
+            Kira_11 "[restrain!t]Как приятно чувствовать твой член, Макс! Охх... Да... Вгоняй его в меня сильнее... Ещё! Оттрахай меня как следует... Д-а-а... Ещё..."
+            $ Skill('sex', 0.2)
+            Max_20 "Какая ты испорченная девчонка, тётя Кира..."
+            menu:
+                Kira_12 "О да! Ещё... ещё, Макс... Да, вот так... Ммм... Трахай меня ещё сильнее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..."
+                "{i}кончить в неё{/i}":
+                    #tv-max&kira-sex03-01-f + tv-max&kira-sex03-01 + tv-max&kira-sex03-cum01
+                    scene BG char Kira tv-sex03-01
+                    show Kira tv-sex 03-01
+                    show FG Kira tv-sex 03-cum01
+                    Kira_07 "Должно быть блаженно, кончать в свою тётю, да Макс? Я к этому готова всегда, но за других женщин говорить не могу, так что лучше быть осторожнее..."
+                    Max_07 "Да, тётя Кира! Значит, до следующего раза?!"
+                    jump .end_sex
+
+                "{i}кончить ей на живот{/i}":
+                    #tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
+                    scene BG tv-mass-07
+                    show Kira tv-sex 03-03
+                    $ renpy.show('FG Kira tv-sex 03-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
+                    Kira_05 "Ого, сколько её в тебе, Макс! Весь живот мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+                    Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+                    jump .end_sex
+
+                "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                    if RandomChance(_ch_sex4.ch):
+                        # (Удалось сдержаться!)
+                        jump .cum_in_mouth
+
+                "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
+                    if RandomChance(_ch_sex2.ch):
+                        # (Удалось сдержаться!)
+                        #tv-mass-07 + tv-max&kira-sex03-03
+                        scene BG tv-mass-07
+                        show Kira tv-sex 03-03
+                        jump .minet_after_sex
+
+            # не удалось сдержаться при попытке минета
+            #tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
+            scene BG tv-mass-07
+            show Kira tv-sex 03-03
+            $ renpy.show('FG Kira tv-sex 03-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
+            Kira_05 "[norestrain!t]Ого, сколько её в тебе, Макс! Весь живот мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
+            $ Skill('sex', 0.1)
+            Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
+            jump .end_sex
+
+        # (Не удалось сдержаться!)
+        #tv-max&kira-sex03-01-f + tv-max&kira-sex03-01 + tv-max&kira-sex03-cum01
+        scene BG char Kira tv-sex03-01
+        show Kira tv-sex 03-01
+        show FG Kira tv-sex 03-cum01
+        Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому наслаждению, которое нас ждало дальше..."
+        $ Skill('sex', 0.1)
+        Max_07 "Да, тётя Кира, извини! Не сдержался... Значит, до следующего раза?!"
+        jump .end_sex
+
+    label .cum_in_mouth:
+        # (Удалось сдержаться!)
+        $ __r1 = renpy.random.randint(1, 3)
+        if __r1 < 2:
+            #lounge-tv-01 + tv-bj-02-max&kira-01a
+            scene BG lounge-tv-01
+            show Kira tv-game bj-02-01a
+        elif __r1 < 3:
+            #after-club-s08a-f + tv-bj-02-max&kira-01b
+            scene BG char Kira after-club-s08a-f
+            show Kira tv-game bj-02-01b
+        else:
+            #after-club-s04-f + tv-bj-02-max&kira-01c
+            scene BG char Kira after-club-s04-f
+            show Kira tv-game bj-02-01c
+
+        Max_20 "[restrain!t]{i}Ухх, как же смачно она посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот, но она справляется! А я кончаю... Д-а-а...{/i}"
+        $ Skill('sex', 0.2)
+        #tv-mass-07 + tv-bj-02-max&kira-02 + tv-bj-02-max&kira-02-cum03
+        scene BG tv-mass-07
+        show Kira tv-game bj-02-02
+        show FG Kira tv-sex 02-cum03
+        Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
+        Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
+        Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
+        #tv-mass-03 + tv-cun-00-max-01a-kira-01a
+        scene BG tv-mass-03
+        show Kira tv-game cun-00bb
+        jump .end_sex
+
+    label .minet_after_sex:
+        # (Удалось сдержаться!)
+        Kira_07 "[restrain!t]Фух, удивляюсь, как ты ещё не кончил, Макс! Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
+        $ Skill('sex', 0.2)
+        Max_04 "Да... Я очень этого хочу!"
+        # tv-bj-01 + tv-bj-01-max-02a-kira-02a
+        scene BG char Kira tv-bj-01
+        show Kira tv-game bj-02
+        Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил мне в рот! Если конечно выдержишь то, что я буду делать языком..."
+        Max_03 "О да, ты им такое вытворяешь!"
+        $ __r1 = renpy.random.randint(1, 2)
+        if __r1 < 2:
+            # tv-bj-01 + tv-bj-01-max-04a-kira-04a
+            scene BG char Kira tv-bj-01
+            show Kira tv-game bj-04
+        else:
+            # tv-mass-03 + tv-bj-01-max-03a-kira-03a
+            scene BG tv-mass-03
+            show Kira tv-game bj-03bb
+
+        Max_07 "Охх... тётя Кира, как приятно..."
+        menu:
+            Kira_09 "Просто наслаждайся..."
+            "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
+                if RandomChance(_ch_sex2.ch):
+                    # (Удалось сдержаться!)
+                    if __r1 < 2:
+                        #tv-bj-01 + tv-bj-01-max-06a-kira-06a
+                        scene BG char Kira tv-bj-01
+                        show Kira tv-game bj-06bb
+                    else:
+                        #tv-mass-07 + tv-bj-01-max-05a-kira-05a
+                        scene BG tv-mass-07
+                        show Kira tv-game bj-05bb
+
+                    Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}"
+                    $ Skill('sex', 0.2)
+                    menu:
+                        Max_19 "Да, вот так тётя Кира, твои губки творят чудеса! Охх..."
+                        "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
+                            if RandomChance(_ch_sex2.ch):
+                                # (Удалось сдержаться!)
+                                if __r1 < 2:
+                                    #tv-bj-01 + tv-bj-01-max-08a-kira-08a
+                                    scene BG char Kira tv-bj-01
+                                    show Kira tv-game bj-08bb
+                                else:
+                                    #lounge-tv-01 + tv-bj-01-max-07a-kira-07a
+                                    scene BG lounge-tv-01
+                                    show Kira tv-game bj-07bb
+                                Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}"
+                                $ Skill('sex', 0.2)
+                                Max_22 "Тётя Кира, ещё быстрее... Да... Я сейчас кончу... А-а-а..."
+                                Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
+                                #tv-bj-01 + tv-bj-01-max-02a-kira-02b
+                                scene BG char Kira tv-bj-01
+                                show Kira tv-game bj-02a
+
+                                Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
+                                Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
+                                #tv-mass-01 + tv-bj-01-max-09a-kira-09a
+                                scene BG tv-mass-01
+                                show Kira tv-game bj-09bb
+                                jump .end_sex
+
+        # (Не удалось сдержаться!)
+        #tv-bj-01 + tv-bj-01-max-04a-kira-04b
+        scene BG char Kira tv-bj-01
+        show Kira tv-game bj-04a
+        Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому, что может вытворять мой ротик, потому что это было только начало..."
+        $ Skill('sex', 0.1)
+        Max_02 "Значит, до следующего раза?!"
+        #tv-mass-01 + tv-bj-01-max-09a-kira-09a
+        scene BG tv-mass-01
+        show Kira tv-game bj-09bb
+        jump .end_sex
+
+    label .end_sex:
+        Kira_04 "Да, я буду ждать... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
+        menu:
+            Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
+            "{i}уйти{/i}":
+                jump .end
 
     label .good_night:
         Kira_02 "Хорошо, Макс. Спокойной ночи! Я тоже уже ложусь спать... скоро."
@@ -2196,7 +2510,7 @@ label return_from_club:
             Max_07 "Конечно, тётя Кира, ложись... Значит, никакого продолжения не будет?"
 
             #tv-mass-03 + tv-cun-00-max-01a-kira-01a
-            scene BG char Alice tv-mass-03
+            scene BG tv-mass-03
             show Kira tv-game cun-00bb
 
             Kira_14 "Боюсь, это не закончится ничем хорошим! Может быть в следующий раз..."

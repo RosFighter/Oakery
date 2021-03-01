@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/core/core.rpy:469
 translate deutsch AfterWaiting_c2510a45:
@@ -65,12 +65,6 @@ translate deutsch after_buying_7c1c8dcc:
 
     # Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
     Max_07 ""
-
-# game/core/core.rpy:691
-translate deutsch after_load_de0e2c19:
-
-    # "ver [current_ver]"
-    ""
 
 # game/core/core.rpy:694
 translate deutsch after_load_6c975de3:

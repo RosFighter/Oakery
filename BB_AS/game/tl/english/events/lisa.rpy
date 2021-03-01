@@ -1441,7 +1441,7 @@ translate english strings:
 translate english lisa_horor_movie_r_11d3ed3b:
 
     # Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
-    Lisa_13 "[norestrain!t]Max, is it just me or is there something under my foot right now?"
+    Lisa_13 "[norestrain!t]Max, is it just me, or is there something under my foot right now?"
 
 # game/events/lisa.rpy:1056
 translate english lisa_horor_movie_r_12b43dd4:

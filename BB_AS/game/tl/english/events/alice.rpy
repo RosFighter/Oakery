@@ -3554,3 +3554,287 @@ translate english alice_after_club_knock_26bb0ceb:
     # Max_09 "А почему на тебе трусики?"
     Max_09 "Why are you wearing panties?"
 
+# TODO: Translation updated at 2021-03-02 01:39
+
+# game/events/alice.rpy:1497
+translate english alice_after_club_next2_f71f172a:
+
+    # Max_04 "{i}Ох, какая у неё нежная и упругая грудь! Ухх.. Она ещё активнее начала мне дрочить, а это означает, что ей нравится, как я мну её сиськи! Может даже удастся зайти ещё дальше...{/i}"
+    Max_04 ""
+
+# game/events/alice.rpy:1501
+translate english alice_after_club_next2_2ee98cf3:
+
+    # Alice_09 "Ах, Макс! И где ты такому научился?! У меня теперь сосочки изнывают от возбуждения! А как жарко стало..."
+    Alice_09 ""
+
+# game/events/alice.rpy:1502
+translate english alice_after_club_next2_382fbf38:
+
+    # Max_03 "Сними халатик и я покажу, что ещё умею..."
+    Max_03 ""
+
+# game/events/alice.rpy:1507
+translate english alice_after_club_next2_997ab3b1:
+
+    # Alice_06 "Ммм... Макс... Ну вот что ты делаешь?! Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка..."
+    Alice_06 ""
+
+# game/events/alice.rpy:1508
+translate english alice_after_club_next2_5c41807d:
+
+    # Max_07 "Так почему бы тебе не представить ненадолго, что я твой парень?"
+    Max_07 ""
+
+# game/events/alice.rpy:1509
+translate english alice_after_club_next2_fdd269cf:
+
+    # Alice_07 "Ты должно быть не в курсе, но я предпочитаю девушек... Но для парня, у которого есть кое-что особенное, я не прочь сделать исключение, ради любопытства..." nointeract
+    Alice_07 "" nointeract
+
+# game/events/alice.rpy:1519
+translate english alice_after_club_next2_050241c8:
+
+    # Alice_15 "Макс! Ахх... Ты полез рукой прямо туда... Это же так..."
+    Alice_15 ""
+
+# game/events/alice.rpy:1520
+translate english alice_after_club_next2_df676746:
+
+    # Max_02 "Приятно? Это ты хотела сказать?"
+    Max_02 ""
+
+# game/events/alice.rpy:1521
+translate english alice_after_club_next2_3b10b531:
+
+    # Alice_06 "Д-а-а... То есть, я хотела сказать... неправильно! Но к чёрту, продолжай... Мне нравится, как ты это делаешь, ммм..." nointeract
+    Alice_06 "" nointeract
+
+# game/events/alice.rpy:1530
+translate english alice_after_club_next2_a9d15c00:
+
+    # Alice_10 "[like!t]Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
+    Alice_10 ""
+
+# game/events/alice.rpy:1531
+translate english alice_after_club_next2_09f682d1:
+
+    # Max_04 "{i}Алиса так приятно постанывает... А уж мне не менее приятно трахать эту нежную киску пальцами. Может быть, она даже кончит, если я ускорюсь...{/i}" nointeract
+    Max_04 "" nointeract
+
+# game/events/alice.rpy:1549
+translate english alice_after_club_fast_fingers_4c3bcf59:
+
+    # Alice_11 "[like!t]Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс! А ты скоро кончишь?"
+    Alice_11 ""
+
+# game/events/alice.rpy:1550
+translate english alice_after_club_fast_fingers_0a46f6d0:
+
+    # Max_02 "Для этого тебе придётся очень постараться..."
+    Max_02 ""
+
+# game/events/alice.rpy:1555
+translate english alice_after_club_fast_fingers_7ada76e2:
+
+    # Alice_08 "Если я кончила, то и мой парень должен кончить... Только так и не иначе! Хочешь узнать, на что мой язычок способен?"
+    Alice_08 ""
+
+# game/events/alice.rpy:1556
+translate english alice_after_club_fast_fingers_0dce812e:
+
+    # Max_01 "Жду не дождусь, Алиса!"
+    Max_01 ""
+
+# game/events/alice.rpy:1565
+translate english alice_after_club_fast_fingers_633a64f3:
+
+    # Alice_07 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?" nointeract
+    Alice_07 "" nointeract
+
+# game/events/alice.rpy:1591
+translate english alice_after_club_cunnilingus_22cc9964:
+
+    # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..." nointeract
+    Alice_09 "" nointeract
+
+# game/events/alice.rpy:1601
+translate english alice_after_club_cunnilingus_7b561508:
+
+    # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да... Как же это было классно! Ох... А ты кончил?"
+    Alice_11 ""
+
+# game/events/alice.rpy:1602
+translate english alice_after_club_cunnilingus_6f5c5ffb:
+
+    # Max_02 "А должен был?"
+    Max_02 ""
+
+# game/events/alice.rpy:1607
+translate english alice_after_club_cunnilingus_7ada76e2:
+
+    # Alice_08 "Если я кончила, то и мой парень должен кончить... Только так и не иначе! Хочешь узнать, на что мой язычок способен?"
+    Alice_08 ""
+
+# game/events/alice.rpy:1608
+translate english alice_after_club_cunnilingus_0dce812e:
+
+    # Max_01 "Жду не дождусь, Алиса!"
+    Max_01 ""
+
+# game/events/alice.rpy:1617
+translate english alice_after_club_cunnilingus_633a64f3:
+
+    # Alice_07 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?" nointeract
+    Alice_07 "" nointeract
+
+# game/events/alice.rpy:1637
+translate english alice_after_club_cum_breast_2547c7ed:
+
+    # Alice_09 "Ого, сколько в тебе было... потенциала... Ты заляпал мне всю грудь! Теперь мыться надо..."
+    Alice_09 ""
+
+# game/events/alice.rpy:1638
+translate english alice_after_club_cum_breast_dff49f05:
+
+    # Max_03 "А ты разве не для этого ванну собиралась принять?"
+    Max_03 ""
+
+# game/events/alice.rpy:1639
+translate english alice_after_club_cum_breast_0011e063:
+
+    # Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
+    Alice_06 ""
+
+# game/events/alice.rpy:1640
+translate english alice_after_club_cum_breast_7894f632:
+
+    # Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+    Max_02 ""
+
+# game/events/alice.rpy:1641
+translate english alice_after_club_cum_breast_fa3f7bbe:
+
+    # Alice_05 "Вот именно, что ничего!" nointeract
+    Alice_05 "" nointeract
+
+# game/events/alice.rpy:1652
+translate english alice_after_club_cum_face_9601d551:
+
+    # Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
+    Alice_06 ""
+
+# game/events/alice.rpy:1653
+translate english alice_after_club_cum_face_d5b2b244:
+
+    # Max_07 "А ты хотела как-то по-другому?"
+    Max_07 ""
+
+# game/events/alice.rpy:1654
+translate english alice_after_club_cum_face_24506f4c:
+
+    # Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
+    Alice_13 ""
+
+# game/events/alice.rpy:1655
+translate english alice_after_club_cum_face_dff49f05:
+
+    # Max_03 "А ты разве не для этого ванну собиралась принять?"
+    Max_03 ""
+
+# game/events/alice.rpy:1656
+translate english alice_after_club_cum_face_0011e063:
+
+    # Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
+    Alice_06 ""
+
+# game/events/alice.rpy:1657
+translate english alice_after_club_cum_face_7894f632:
+
+    # Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+    Max_02 ""
+
+# game/events/alice.rpy:1658
+translate english alice_after_club_cum_face_fa3f7bbe:
+
+    # Alice_05 "Вот именно, что ничего!" nointeract
+    Alice_05 "" nointeract
+
+# game/events/alice.rpy:1666
+translate english alice_after_club_dont_like_bce6e4cd:
+
+    # Alice_13 "[dont_like!t]Ай, Макс! Ты слишком грубо это делаешь! Я люблю грубость, но не до такой же степени... Испортил ты всё! И вообще, у меня ванна набралась, так что спокойной ночи." nointeract
+    Alice_13 "" nointeract
+
+# game/events/alice.rpy:1669
+translate english alice_after_club_dont_like_bb48092d:
+
+    # Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
+    Alice_04 ""
+
+# game/events/alice.rpy:1670
+translate english alice_after_club_dont_like_cfe6cd28:
+
+    # Max_00 "Всё понял, ухожу..."
+    Max_00 ""
+
+# game/events/alice.rpy:2421
+translate english alice_towel_after_club_cum_breast_f47ad262:
+
+    # Alice_09 "Ого, сколько спермы... Ты заляпал мне всю грудь! Теперь мыться надо..."
+    Alice_09 ""
+
+# game/events/alice.rpy:2422
+translate english alice_towel_after_club_cum_breast_05ac8115:
+
+    # Max_03 "А ты разве не для этого ванну решила принять?"
+    Max_03 ""
+
+# game/events/alice.rpy:2423
+translate english alice_towel_after_club_cum_breast_b197e4d3:
+
+    # Alice_06 "Да, точно... Мы же никому не станем рассказывать, что тут было?"
+    Alice_06 ""
+
+# game/events/alice.rpy:2424
+translate english alice_towel_after_club_cum_breast_d7dd7483:
+
+    # Max_02 "Я только полотенце принёс и пошёл спать..."
+    Max_02 ""
+
+# game/events/alice.rpy:2425
+translate english alice_towel_after_club_cum_breast_50e121f5:
+
+    # Alice_05 "Ага. Именно так всё и было!" nointeract
+    Alice_05 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:1509
+    old "{i}ласкать её киску рукой{/i}"
+    new ""
+
+    # game/events/alice.rpy:1521
+    old "{i}проникнуть в её киску пальцами{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:1521
+    old "{i}ласкать её киску языком{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:1531
+    old "{i}ускориться{/i} {color=[_ch_sex3.col]}(Сексуальный опыт. Шанс: [_ch_sex3.vis]){/color}"
+    new ""
+
+    # game/events/alice.rpy:1591
+    old "{i}ещё быстрее работать языком{/i}"
+    new ""
+
+    # game/events/alice.rpy:1666
+    old "Я могу лучше..."
+    new ""
+
+    # game/events/alice.rpy:1666
+    old "Извини, я не хотел. Не обижайся..."
+    new ""
+

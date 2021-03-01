@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/dialogues/alicetalk.rpy:18
 translate deutsch AliceTalkStart_50ef2ada:
@@ -3318,3673 +3318,3673 @@ translate deutsch massage_sunscreen_spider_de3d2863:
     # Max_01 "Ага."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2196
+# game/dialogues/alicetalk.rpy:2197
 translate deutsch massage_sunscreen_spider_22e8563b:
 
     # Max_03 "Давай лучше ещё так посидим, подождём. Вон он, уползает..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2197
+# game/dialogues/alicetalk.rpy:2198
 translate deutsch massage_sunscreen_spider_293d0088:
 
     # Alice_12 "Макс, а что это в меня такое упёрлось там внизу?!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2198
+# game/dialogues/alicetalk.rpy:2199
 translate deutsch massage_sunscreen_spider_ec701e44:
 
     # Max_02 "Ну... это я, так сказать."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:2199
+# game/dialogues/alicetalk.rpy:2200
 translate deutsch massage_sunscreen_spider_33a334d2:
 
     # Alice_14 "Ой, блин, это член твой что ли?!"
     Alice_14 ""
 
-# game/dialogues/alicetalk.rpy:2200
+# game/dialogues/alicetalk.rpy:2201
 translate deutsch massage_sunscreen_spider_36e61f16:
 
     # Max_01 "Ага. Он самый."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2205
+# game/dialogues/alicetalk.rpy:2206
 translate deutsch massage_sunscreen_spider_88d0ea09:
 
     # Alice_15 "Ты совсем что ли извращенец? На родную сестру у него стоит!"
     Alice_15 ""
 
-# game/dialogues/alicetalk.rpy:2206
+# game/dialogues/alicetalk.rpy:2207
 translate deutsch massage_sunscreen_spider_ff5172bb:
 
     # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2207
+# game/dialogues/alicetalk.rpy:2208
 translate deutsch massage_sunscreen_spider_a71b7a30:
 
     # Alice_16 "Всё, не хочу об этом говорить... Давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2208
+# game/dialogues/alicetalk.rpy:2209
 translate deutsch massage_sunscreen_spider_64bbd7a2:
 
     # Max_09 "Да ухожу я, уши только мои в покое оставь!"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:2214
+# game/dialogues/alicetalk.rpy:2215
 translate deutsch massage_sunscreen_spider_3b66c1cd:
 
     # Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2215
+# game/dialogues/alicetalk.rpy:2216
 translate deutsch massage_sunscreen_spider_0aa348ea:
 
     # Max_01 "Да не так-то это просто, прикрыть его."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2216
+# game/dialogues/alicetalk.rpy:2217
 translate deutsch massage_sunscreen_spider_6b77c813:
 
     # Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
     Alice_06 ""
 
-# game/dialogues/alicetalk.rpy:2217
+# game/dialogues/alicetalk.rpy:2218
 translate deutsch massage_sunscreen_spider_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2218
+# game/dialogues/alicetalk.rpy:2219
 translate deutsch massage_sunscreen_spider_e0dd7b8f:
 
     # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:2219
+# game/dialogues/alicetalk.rpy:2220
 translate deutsch massage_sunscreen_spider_4970a131:
 
     # Max_02 "Хорошо. Не скучай."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:2232
+# game/dialogues/alicetalk.rpy:2234
 translate deutsch massage_sunscreen_end_904d90d2:
 
     # Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2237
+# game/dialogues/alicetalk.rpy:2239
 translate deutsch massage_sunscreen_end_c2993c60:
 
     # Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2245
+# game/dialogues/alicetalk.rpy:2247
 translate deutsch alice_sorry_gifts_21b81128:
 
     # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:2255
+# game/dialogues/alicetalk.rpy:2257
 translate deutsch alice_sorry_gifts_a4021d45:
 
     # Alice_02 "[txt!t]" nointeract
     Alice_02 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2309
+# game/dialogues/alicetalk.rpy:2311
 translate deutsch alice_sorry_gifts_middle_again_ebaef405:
 
     # Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:2310
+# game/dialogues/alicetalk.rpy:2312
 translate deutsch alice_sorry_gifts_middle_again_744dc556:
 
     # Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2311
+# game/dialogues/alicetalk.rpy:2313
 translate deutsch alice_sorry_gifts_middle_again_9a919278:
 
     # Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2313
+# game/dialogues/alicetalk.rpy:2315
 translate deutsch alice_sorry_gifts_middle_again_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2314
+# game/dialogues/alicetalk.rpy:2316
 translate deutsch alice_sorry_gifts_middle_again_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2319
+# game/dialogues/alicetalk.rpy:2321
 translate deutsch alice_sorry_gifts_middle_again_55e0432c:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2320
+# game/dialogues/alicetalk.rpy:2322
 translate deutsch alice_sorry_gifts_middle_again_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2321
+# game/dialogues/alicetalk.rpy:2323
 translate deutsch alice_sorry_gifts_middle_again_a174e7cf:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2325
+# game/dialogues/alicetalk.rpy:2327
 translate deutsch alice_sorry_gifts_middle_again_bc52a6b0:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2326
+# game/dialogues/alicetalk.rpy:2328
 translate deutsch alice_sorry_gifts_middle_again_088d0b2a:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2327
+# game/dialogues/alicetalk.rpy:2329
 translate deutsch alice_sorry_gifts_middle_again_054e253f:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2328
+# game/dialogues/alicetalk.rpy:2330
 translate deutsch alice_sorry_gifts_middle_again_e2b944cc_1:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2329
+# game/dialogues/alicetalk.rpy:2331
 translate deutsch alice_sorry_gifts_middle_again_a174e7cf_1:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2335
+# game/dialogues/alicetalk.rpy:2337
 translate deutsch alice_sorry_gifts_bad_again_9809db14:
 
     # Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
     Alice_17 ""
 
-# game/dialogues/alicetalk.rpy:2336
+# game/dialogues/alicetalk.rpy:2338
 translate deutsch alice_sorry_gifts_bad_again_8f328335:
 
     # Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2337
+# game/dialogues/alicetalk.rpy:2339
 translate deutsch alice_sorry_gifts_bad_again_72c88396:
 
     # Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2339
+# game/dialogues/alicetalk.rpy:2341
 translate deutsch alice_sorry_gifts_bad_again_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2340
+# game/dialogues/alicetalk.rpy:2342
 translate deutsch alice_sorry_gifts_bad_again_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2341
+# game/dialogues/alicetalk.rpy:2343
 translate deutsch alice_sorry_gifts_bad_again_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2342
+# game/dialogues/alicetalk.rpy:2344
 translate deutsch alice_sorry_gifts_bad_again_f7fd9769:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2343
+# game/dialogues/alicetalk.rpy:2345
 translate deutsch alice_sorry_gifts_bad_again_088d0b2a:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2344
+# game/dialogues/alicetalk.rpy:2346
 translate deutsch alice_sorry_gifts_bad_again_aacea659:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2345
+# game/dialogues/alicetalk.rpy:2347
 translate deutsch alice_sorry_gifts_bad_again_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2346
+# game/dialogues/alicetalk.rpy:2348
 translate deutsch alice_sorry_gifts_bad_again_a174e7cf:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2352
+# game/dialogues/alicetalk.rpy:2354
 translate deutsch alice_sorry_gifts_apology_accepted_29abb604:
 
     # Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2354
+# game/dialogues/alicetalk.rpy:2356
 translate deutsch alice_sorry_gifts_apology_accepted_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2355
+# game/dialogues/alicetalk.rpy:2357
 translate deutsch alice_sorry_gifts_apology_accepted_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2356
+# game/dialogues/alicetalk.rpy:2358
 translate deutsch alice_sorry_gifts_apology_accepted_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2357
+# game/dialogues/alicetalk.rpy:2359
 translate deutsch alice_sorry_gifts_apology_accepted_14c24df1:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2358
+# game/dialogues/alicetalk.rpy:2360
 translate deutsch alice_sorry_gifts_apology_accepted_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2359
+# game/dialogues/alicetalk.rpy:2361
 translate deutsch alice_sorry_gifts_apology_accepted_a174e7cf:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2365
+# game/dialogues/alicetalk.rpy:2367
 translate deutsch alice_sorry_gifts_you_deserve_16e9d084:
 
     # Alice_04 "[succes!t]Ладно, Макс, пожалуй ты заслужил это своими подарками..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2367
+# game/dialogues/alicetalk.rpy:2369
 translate deutsch alice_sorry_gifts_you_deserve_f070e574:
 
     # Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2368
+# game/dialogues/alicetalk.rpy:2370
 translate deutsch alice_sorry_gifts_you_deserve_71f05ee4:
 
     # Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2369
+# game/dialogues/alicetalk.rpy:2371
 translate deutsch alice_sorry_gifts_you_deserve_c9c4f595:
 
     # Max_05 "Да, надо бы почаще так делать."
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:2370
+# game/dialogues/alicetalk.rpy:2372
 translate deutsch alice_sorry_gifts_you_deserve_b47b0634:
 
     # Alice_02 "Подглядывать за мной или дарить мне сладости?!"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2371
+# game/dialogues/alicetalk.rpy:2373
 translate deutsch alice_sorry_gifts_you_deserve_201ce590:
 
     # Max_02 "Второе, конечно!"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:2372
+# game/dialogues/alicetalk.rpy:2374
 translate deutsch alice_sorry_gifts_you_deserve_1405c200:
 
     # Alice_05 "Ну да, конечно... Иди давай."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2378
+# game/dialogues/alicetalk.rpy:2380
 translate deutsch alice_sorry_gifts_what_bummer_22133154:
 
     # Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2379
+# game/dialogues/alicetalk.rpy:2381
 translate deutsch alice_sorry_gifts_what_bummer_ecf61f90:
 
     # Max_09 "Обнять меня или придушить?"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:2380
+# game/dialogues/alicetalk.rpy:2382
 translate deutsch alice_sorry_gifts_what_bummer_39aea913:
 
     # Alice_07 "Зачем останавливаться на чём-то одном, Макс? Хи-хи..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2381
+# game/dialogues/alicetalk.rpy:2383
 translate deutsch alice_sorry_gifts_what_bummer_39cc7463:
 
     # Max_01 "Я тогда лучше пойду... погуляю."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2382
+# game/dialogues/alicetalk.rpy:2384
 translate deutsch alice_sorry_gifts_what_bummer_4d4f6eae:
 
     # Alice_02 "Ну как хочешь..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2387
+# game/dialogues/alicetalk.rpy:2389
 translate deutsch alice_sorry_gifts_im_in_pain_6b2c5b58:
 
     # Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2389
+# game/dialogues/alicetalk.rpy:2391
 translate deutsch alice_sorry_gifts_im_in_pain_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2390
+# game/dialogues/alicetalk.rpy:2392
 translate deutsch alice_sorry_gifts_im_in_pain_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2391
+# game/dialogues/alicetalk.rpy:2393
 translate deutsch alice_sorry_gifts_im_in_pain_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2392
+# game/dialogues/alicetalk.rpy:2394
 translate deutsch alice_sorry_gifts_im_in_pain_14c24df1:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2393
+# game/dialogues/alicetalk.rpy:2395
 translate deutsch alice_sorry_gifts_im_in_pain_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2398
+# game/dialogues/alicetalk.rpy:2400
 translate deutsch alice_sorry_gifts_what_disgusting_b27213f4:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2399
+# game/dialogues/alicetalk.rpy:2401
 translate deutsch alice_sorry_gifts_what_disgusting_581eaf16:
 
     # Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2400
+# game/dialogues/alicetalk.rpy:2402
 translate deutsch alice_sorry_gifts_what_disgusting_bb227ff0:
 
     # Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2402
+# game/dialogues/alicetalk.rpy:2404
 translate deutsch alice_sorry_gifts_what_disgusting_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2403
+# game/dialogues/alicetalk.rpy:2405
 translate deutsch alice_sorry_gifts_what_disgusting_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2404
+# game/dialogues/alicetalk.rpy:2406
 translate deutsch alice_sorry_gifts_what_disgusting_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2412
+# game/dialogues/alicetalk.rpy:2414
 translate deutsch alice_sorry_gifts_bad_b27213f4:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2413
+# game/dialogues/alicetalk.rpy:2415
 translate deutsch alice_sorry_gifts_bad_581eaf16:
 
     # Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2414
+# game/dialogues/alicetalk.rpy:2416
 translate deutsch alice_sorry_gifts_bad_bb227ff0:
 
     # Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2416
+# game/dialogues/alicetalk.rpy:2418
 translate deutsch alice_sorry_gifts_bad_c2c05b19:
 
     # Max_12 "А-а-ай! Алиса! Больно ведь!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2417
+# game/dialogues/alicetalk.rpy:2419
 translate deutsch alice_sorry_gifts_bad_da707812:
 
     # Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2422
+# game/dialogues/alicetalk.rpy:2424
 translate deutsch alice_sorry_gifts_bad_55e0432c:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2423
+# game/dialogues/alicetalk.rpy:2425
 translate deutsch alice_sorry_gifts_bad_5289bcf8:
 
     # Max_14 "Ой! Понял-понял, не буду! Больше не буду..."
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2424
+# game/dialogues/alicetalk.rpy:2426
 translate deutsch alice_sorry_gifts_bad_0c9451cf:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2425
+# game/dialogues/alicetalk.rpy:2427
 translate deutsch alice_sorry_gifts_bad_a2071177:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2426
+# game/dialogues/alicetalk.rpy:2428
 translate deutsch alice_sorry_gifts_bad_e61c4517:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2427
+# game/dialogues/alicetalk.rpy:2429
 translate deutsch alice_sorry_gifts_bad_db0947b7:
 
     # Max_11 "Ладно! Я учту, только отпусти..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2428
+# game/dialogues/alicetalk.rpy:2430
 translate deutsch alice_sorry_gifts_bad_ef1d31f0:
 
     # Alice_02 "Вот и правильно! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2431
+# game/dialogues/alicetalk.rpy:2433
 translate deutsch alice_sorry_gifts_bad_bc52a6b0:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2432
+# game/dialogues/alicetalk.rpy:2434
 translate deutsch alice_sorry_gifts_bad_088d0b2a:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2433
+# game/dialogues/alicetalk.rpy:2435
 translate deutsch alice_sorry_gifts_bad_aacea659:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2434
+# game/dialogues/alicetalk.rpy:2436
 translate deutsch alice_sorry_gifts_bad_a2071177_1:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2435
+# game/dialogues/alicetalk.rpy:2437
 translate deutsch alice_sorry_gifts_bad_e61c4517_1:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2436
+# game/dialogues/alicetalk.rpy:2438
 translate deutsch alice_sorry_gifts_bad_db0947b7_1:
 
     # Max_11 "Ладно! Я учту, только отпусти..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2437
+# game/dialogues/alicetalk.rpy:2439
 translate deutsch alice_sorry_gifts_bad_ef1d31f0_1:
 
     # Alice_02 "Вот и правильно! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2442
+# game/dialogues/alicetalk.rpy:2444
 translate deutsch alice_sorry_gifts_bad_9809db14:
 
     # Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
     Alice_17 ""
 
-# game/dialogues/alicetalk.rpy:2443
+# game/dialogues/alicetalk.rpy:2445
 translate deutsch alice_sorry_gifts_bad_8f328335:
 
     # Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2444
+# game/dialogues/alicetalk.rpy:2446
 translate deutsch alice_sorry_gifts_bad_72c88396:
 
     # Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2446
+# game/dialogues/alicetalk.rpy:2448
 translate deutsch alice_sorry_gifts_bad_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2447
+# game/dialogues/alicetalk.rpy:2449
 translate deutsch alice_sorry_gifts_bad_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2448
+# game/dialogues/alicetalk.rpy:2450
 translate deutsch alice_sorry_gifts_bad_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2449
+# game/dialogues/alicetalk.rpy:2451
 translate deutsch alice_sorry_gifts_bad_f7fd9769:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2450
+# game/dialogues/alicetalk.rpy:2452
 translate deutsch alice_sorry_gifts_bad_088d0b2a_1:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2451
+# game/dialogues/alicetalk.rpy:2453
 translate deutsch alice_sorry_gifts_bad_aacea659_1:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2452
+# game/dialogues/alicetalk.rpy:2454
 translate deutsch alice_sorry_gifts_bad_a2071177_2:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2453
+# game/dialogues/alicetalk.rpy:2455
 translate deutsch alice_sorry_gifts_bad_e61c4517_2:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2454
+# game/dialogues/alicetalk.rpy:2456
 translate deutsch alice_sorry_gifts_bad_ff1e4f63:
 
     # Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2455
+# game/dialogues/alicetalk.rpy:2457
 translate deutsch alice_sorry_gifts_bad_a174e7cf:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2460
+# game/dialogues/alicetalk.rpy:2462
 translate deutsch alice_sorry_gifts_bad_f7fd9769_1:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2461
+# game/dialogues/alicetalk.rpy:2463
 translate deutsch alice_sorry_gifts_bad_088d0b2a_2:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2462
+# game/dialogues/alicetalk.rpy:2464
 translate deutsch alice_sorry_gifts_bad_aacea659_2:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2463
+# game/dialogues/alicetalk.rpy:2465
 translate deutsch alice_sorry_gifts_bad_a2071177_3:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2464
+# game/dialogues/alicetalk.rpy:2466
 translate deutsch alice_sorry_gifts_bad_e61c4517_3:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2465
+# game/dialogues/alicetalk.rpy:2467
 translate deutsch alice_sorry_gifts_bad_ff1e4f63_1:
 
     # Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2466
+# game/dialogues/alicetalk.rpy:2468
 translate deutsch alice_sorry_gifts_bad_a174e7cf_1:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2470
+# game/dialogues/alicetalk.rpy:2472
 translate deutsch alice_sorry_gifts_bad_b27213f4_1:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2471
+# game/dialogues/alicetalk.rpy:2473
 translate deutsch alice_sorry_gifts_bad_581eaf16_1:
 
     # Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2472
+# game/dialogues/alicetalk.rpy:2474
 translate deutsch alice_sorry_gifts_bad_bb227ff0_1:
 
     # Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2474
+# game/dialogues/alicetalk.rpy:2476
 translate deutsch alice_sorry_gifts_bad_324b4e00_1:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2475
+# game/dialogues/alicetalk.rpy:2477
 translate deutsch alice_sorry_gifts_bad_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2480
+# game/dialogues/alicetalk.rpy:2482
 translate deutsch alice_sorry_gifts_bad_55e0432c_1:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2481
+# game/dialogues/alicetalk.rpy:2483
 translate deutsch alice_sorry_gifts_bad_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2482
+# game/dialogues/alicetalk.rpy:2484
 translate deutsch alice_sorry_gifts_bad_0c9451cf_1:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2483
+# game/dialogues/alicetalk.rpy:2485
 translate deutsch alice_sorry_gifts_bad_c6a269e0:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2484
+# game/dialogues/alicetalk.rpy:2486
 translate deutsch alice_sorry_gifts_bad_a174e7cf_2:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2487
+# game/dialogues/alicetalk.rpy:2489
 translate deutsch alice_sorry_gifts_bad_bc52a6b0_1:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2488
+# game/dialogues/alicetalk.rpy:2490
 translate deutsch alice_sorry_gifts_bad_088d0b2a_3:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2489
+# game/dialogues/alicetalk.rpy:2491
 translate deutsch alice_sorry_gifts_bad_aacea659_3:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2490
+# game/dialogues/alicetalk.rpy:2492
 translate deutsch alice_sorry_gifts_bad_ff1e4f63_2:
 
     # Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2491
+# game/dialogues/alicetalk.rpy:2493
 translate deutsch alice_sorry_gifts_bad_a174e7cf_3:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2496
+# game/dialogues/alicetalk.rpy:2498
 translate deutsch alice_sorry_gifts_bad_6e9f618b:
 
     # Alice_17 "Макс, ты что, тупой, я тебе, уже дважды говорила, что не люблю эти конфеты?! Ты меня, что, совсем не слушаешь, или у тебя мозгов нет?!"
     Alice_17 ""
 
-# game/dialogues/alicetalk.rpy:2497
+# game/dialogues/alicetalk.rpy:2499
 translate deutsch alice_sorry_gifts_bad_8f328335_1:
 
     # Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2498
+# game/dialogues/alicetalk.rpy:2500
 translate deutsch alice_sorry_gifts_bad_72c88396_1:
 
     # Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2500
+# game/dialogues/alicetalk.rpy:2502
 translate deutsch alice_sorry_gifts_bad_324b4e00_2:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2501
+# game/dialogues/alicetalk.rpy:2503
 translate deutsch alice_sorry_gifts_bad_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2502
+# game/dialogues/alicetalk.rpy:2504
 translate deutsch alice_sorry_gifts_bad_b4a32aa4_1:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2503
+# game/dialogues/alicetalk.rpy:2505
 translate deutsch alice_sorry_gifts_bad_f7fd9769_2:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2504
+# game/dialogues/alicetalk.rpy:2506
 translate deutsch alice_sorry_gifts_bad_088d0b2a_4:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2505
+# game/dialogues/alicetalk.rpy:2507
 translate deutsch alice_sorry_gifts_bad_64ef2699:
 
     # Alice_16 "Да тебе просто наплевать на всё то, что я тебе говорю! Так что - сам виноват..."
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2506
+# game/dialogues/alicetalk.rpy:2508
 translate deutsch alice_sorry_gifts_bad_e2b944cc_1:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2507
+# game/dialogues/alicetalk.rpy:2509
 translate deutsch alice_sorry_gifts_bad_ca9f7e64:
 
     # Alice_17 "Понял он... Катись отсюда!"
     Alice_17 ""
 
-# game/dialogues/alicetalk.rpy:2515
+# game/dialogues/alicetalk.rpy:2517
 translate deutsch alice_sorry_gifts_bad_9809db14_1:
 
     # Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
     Alice_17 ""
 
-# game/dialogues/alicetalk.rpy:2516
+# game/dialogues/alicetalk.rpy:2518
 translate deutsch alice_sorry_gifts_bad_8f328335_2:
 
     # Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2517
+# game/dialogues/alicetalk.rpy:2519
 translate deutsch alice_sorry_gifts_bad_72c88396_2:
 
     # Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2519
+# game/dialogues/alicetalk.rpy:2521
 translate deutsch alice_sorry_gifts_bad_324b4e00_3:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2520
+# game/dialogues/alicetalk.rpy:2522
 translate deutsch alice_sorry_gifts_bad_ce051c95_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2525
+# game/dialogues/alicetalk.rpy:2527
 translate deutsch alice_sorry_gifts_bad_55e0432c_2:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2526
+# game/dialogues/alicetalk.rpy:2528
 translate deutsch alice_sorry_gifts_bad_e2b944cc_2:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2527
+# game/dialogues/alicetalk.rpy:2529
 translate deutsch alice_sorry_gifts_bad_a174e7cf_4:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2531
+# game/dialogues/alicetalk.rpy:2533
 translate deutsch alice_sorry_gifts_bad_bc52a6b0_2:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2532
+# game/dialogues/alicetalk.rpy:2534
 translate deutsch alice_sorry_gifts_bad_088d0b2a_5:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2533
+# game/dialogues/alicetalk.rpy:2535
 translate deutsch alice_sorry_gifts_bad_aacea659_4:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2534
+# game/dialogues/alicetalk.rpy:2536
 translate deutsch alice_sorry_gifts_bad_e2b944cc_3:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2535
+# game/dialogues/alicetalk.rpy:2537
 translate deutsch alice_sorry_gifts_bad_a174e7cf_5:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2543
+# game/dialogues/alicetalk.rpy:2545
 translate deutsch alice_sorry_gifts_bad_b27213f4_2:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2544
+# game/dialogues/alicetalk.rpy:2546
 translate deutsch alice_sorry_gifts_bad_581eaf16_2:
 
     # Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2545
+# game/dialogues/alicetalk.rpy:2547
 translate deutsch alice_sorry_gifts_bad_bb227ff0_2:
 
     # Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2547
+# game/dialogues/alicetalk.rpy:2549
 translate deutsch alice_sorry_gifts_bad_324b4e00_4:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2548
+# game/dialogues/alicetalk.rpy:2550
 translate deutsch alice_sorry_gifts_bad_ce051c95_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2553
+# game/dialogues/alicetalk.rpy:2555
 translate deutsch alice_sorry_gifts_bad_55e0432c_3:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2554
+# game/dialogues/alicetalk.rpy:2556
 translate deutsch alice_sorry_gifts_bad_e2b944cc_4:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2555
+# game/dialogues/alicetalk.rpy:2557
 translate deutsch alice_sorry_gifts_bad_a174e7cf_6:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2559
+# game/dialogues/alicetalk.rpy:2561
 translate deutsch alice_sorry_gifts_bad_bc52a6b0_3:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2560
+# game/dialogues/alicetalk.rpy:2562
 translate deutsch alice_sorry_gifts_bad_088d0b2a_6:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2561
+# game/dialogues/alicetalk.rpy:2563
 translate deutsch alice_sorry_gifts_bad_aacea659_5:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2562
+# game/dialogues/alicetalk.rpy:2564
 translate deutsch alice_sorry_gifts_bad_e2b944cc_5:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2563
+# game/dialogues/alicetalk.rpy:2565
 translate deutsch alice_sorry_gifts_bad_a174e7cf_7:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2569
+# game/dialogues/alicetalk.rpy:2571
 translate deutsch alice_sorry_gifts_bad_378a8c53:
 
     # Alice_05 "Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2570
+# game/dialogues/alicetalk.rpy:2572
 translate deutsch alice_sorry_gifts_bad_e2b944cc_6:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2571
+# game/dialogues/alicetalk.rpy:2573
 translate deutsch alice_sorry_gifts_bad_a174e7cf_8:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2577
+# game/dialogues/alicetalk.rpy:2579
 translate deutsch alice_sorry_gifts_bad_b27213f4_3:
 
     # Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2578
+# game/dialogues/alicetalk.rpy:2580
 translate deutsch alice_sorry_gifts_bad_581eaf16_3:
 
     # Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2579
+# game/dialogues/alicetalk.rpy:2581
 translate deutsch alice_sorry_gifts_bad_bb227ff0_3:
 
     # Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2581
+# game/dialogues/alicetalk.rpy:2583
 translate deutsch alice_sorry_gifts_bad_324b4e00_5:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2582
+# game/dialogues/alicetalk.rpy:2584
 translate deutsch alice_sorry_gifts_bad_ce051c95_3:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2587
+# game/dialogues/alicetalk.rpy:2589
 translate deutsch alice_sorry_gifts_bad_55e0432c_4:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2588
+# game/dialogues/alicetalk.rpy:2590
 translate deutsch alice_sorry_gifts_bad_e2b944cc_7:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2589
+# game/dialogues/alicetalk.rpy:2591
 translate deutsch alice_sorry_gifts_bad_a174e7cf_9:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2593
+# game/dialogues/alicetalk.rpy:2595
 translate deutsch alice_sorry_gifts_bad_bc52a6b0_4:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2594
+# game/dialogues/alicetalk.rpy:2596
 translate deutsch alice_sorry_gifts_bad_088d0b2a_7:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2595
+# game/dialogues/alicetalk.rpy:2597
 translate deutsch alice_sorry_gifts_bad_aacea659_6:
 
     # Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2596
+# game/dialogues/alicetalk.rpy:2598
 translate deutsch alice_sorry_gifts_bad_e2b944cc_8:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2597
+# game/dialogues/alicetalk.rpy:2599
 translate deutsch alice_sorry_gifts_bad_a174e7cf_10:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2603
+# game/dialogues/alicetalk.rpy:2605
 translate deutsch alice_sorry_gifts_bad_378a8c53_1:
 
     # Alice_05 "Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2604
+# game/dialogues/alicetalk.rpy:2606
 translate deutsch alice_sorry_gifts_bad_e2b944cc_9:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2605
+# game/dialogues/alicetalk.rpy:2607
 translate deutsch alice_sorry_gifts_bad_a174e7cf_11:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2614
+# game/dialogues/alicetalk.rpy:2616
 translate deutsch alice_sorry_gifts_middle_572db627:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2615
+# game/dialogues/alicetalk.rpy:2617
 translate deutsch alice_sorry_gifts_middle_535354bf:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2616
+# game/dialogues/alicetalk.rpy:2618
 translate deutsch alice_sorry_gifts_middle_83a0c29f:
 
     # Alice_05 "Конечно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2618
+# game/dialogues/alicetalk.rpy:2620
 translate deutsch alice_sorry_gifts_middle_c2c05b19:
 
     # Max_12 "А-а-ай! Алиса! Больно ведь!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2619
+# game/dialogues/alicetalk.rpy:2621
 translate deutsch alice_sorry_gifts_middle_7504c76b:
 
     # Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2620
+# game/dialogues/alicetalk.rpy:2622
 translate deutsch alice_sorry_gifts_middle_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2621
+# game/dialogues/alicetalk.rpy:2623
 translate deutsch alice_sorry_gifts_middle_2fae9878:
 
     # Alice_05 "Ответ неправильный! Наверно, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2622
+# game/dialogues/alicetalk.rpy:2624
 translate deutsch alice_sorry_gifts_middle_5289bcf8:
 
     # Max_14 "Ой! Понял-понял, не буду! Больше не буду..."
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2623
+# game/dialogues/alicetalk.rpy:2625
 translate deutsch alice_sorry_gifts_middle_0c9451cf:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2624
+# game/dialogues/alicetalk.rpy:2626
 translate deutsch alice_sorry_gifts_middle_a2071177:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2625
+# game/dialogues/alicetalk.rpy:2627
 translate deutsch alice_sorry_gifts_middle_e61c4517:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2626
+# game/dialogues/alicetalk.rpy:2628
 translate deutsch alice_sorry_gifts_middle_db0947b7:
 
     # Max_11 "Ладно! Я учту, только отпусти..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2627
+# game/dialogues/alicetalk.rpy:2629
 translate deutsch alice_sorry_gifts_middle_ef1d31f0:
 
     # Alice_02 "Вот и правильно! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2631
+# game/dialogues/alicetalk.rpy:2633
 translate deutsch alice_sorry_gifts_middle_572db627_1:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2632
+# game/dialogues/alicetalk.rpy:2634
 translate deutsch alice_sorry_gifts_middle_535354bf_1:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2633
+# game/dialogues/alicetalk.rpy:2635
 translate deutsch alice_sorry_gifts_middle_9a919278:
 
     # Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2635
+# game/dialogues/alicetalk.rpy:2637
 translate deutsch alice_sorry_gifts_middle_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2636
+# game/dialogues/alicetalk.rpy:2638
 translate deutsch alice_sorry_gifts_middle_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2641
+# game/dialogues/alicetalk.rpy:2643
 translate deutsch alice_sorry_gifts_middle_55e0432c:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2642
+# game/dialogues/alicetalk.rpy:2644
 translate deutsch alice_sorry_gifts_middle_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2643
+# game/dialogues/alicetalk.rpy:2645
 translate deutsch alice_sorry_gifts_middle_0c9451cf_1:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2644
+# game/dialogues/alicetalk.rpy:2646
 translate deutsch alice_sorry_gifts_middle_a2071177_1:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2645
+# game/dialogues/alicetalk.rpy:2647
 translate deutsch alice_sorry_gifts_middle_e61c4517_1:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2646
+# game/dialogues/alicetalk.rpy:2648
 translate deutsch alice_sorry_gifts_middle_c6a269e0:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2647
+# game/dialogues/alicetalk.rpy:2649
 translate deutsch alice_sorry_gifts_middle_a174e7cf:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2650
+# game/dialogues/alicetalk.rpy:2652
 translate deutsch alice_sorry_gifts_middle_bc52a6b0:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2651
+# game/dialogues/alicetalk.rpy:2653
 translate deutsch alice_sorry_gifts_middle_088d0b2a:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2652
+# game/dialogues/alicetalk.rpy:2654
 translate deutsch alice_sorry_gifts_middle_054e253f:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2653
+# game/dialogues/alicetalk.rpy:2655
 translate deutsch alice_sorry_gifts_middle_a2071177_2:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2654
+# game/dialogues/alicetalk.rpy:2656
 translate deutsch alice_sorry_gifts_middle_e61c4517_2:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2655
+# game/dialogues/alicetalk.rpy:2657
 translate deutsch alice_sorry_gifts_middle_ff1e4f63:
 
     # Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2656
+# game/dialogues/alicetalk.rpy:2658
 translate deutsch alice_sorry_gifts_middle_a174e7cf_1:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2660
+# game/dialogues/alicetalk.rpy:2662
 translate deutsch alice_sorry_gifts_middle_ebaef405:
 
     # Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:2661
+# game/dialogues/alicetalk.rpy:2663
 translate deutsch alice_sorry_gifts_middle_744dc556:
 
     # Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2662
+# game/dialogues/alicetalk.rpy:2664
 translate deutsch alice_sorry_gifts_middle_9a919278_1:
 
     # Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2664
+# game/dialogues/alicetalk.rpy:2666
 translate deutsch alice_sorry_gifts_middle_324b4e00_1:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2665
+# game/dialogues/alicetalk.rpy:2667
 translate deutsch alice_sorry_gifts_middle_ce051c95_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2670
+# game/dialogues/alicetalk.rpy:2672
 translate deutsch alice_sorry_gifts_middle_55e0432c_1:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2671
+# game/dialogues/alicetalk.rpy:2673
 translate deutsch alice_sorry_gifts_middle_e2b944cc_1:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2672
+# game/dialogues/alicetalk.rpy:2674
 translate deutsch alice_sorry_gifts_middle_0c9451cf_2:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2673
+# game/dialogues/alicetalk.rpy:2675
 translate deutsch alice_sorry_gifts_middle_a2071177_3:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2674
+# game/dialogues/alicetalk.rpy:2676
 translate deutsch alice_sorry_gifts_middle_e61c4517_3:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2675
+# game/dialogues/alicetalk.rpy:2677
 translate deutsch alice_sorry_gifts_middle_c6a269e0_1:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2676
+# game/dialogues/alicetalk.rpy:2678
 translate deutsch alice_sorry_gifts_middle_a174e7cf_2:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2679
+# game/dialogues/alicetalk.rpy:2681
 translate deutsch alice_sorry_gifts_middle_bc52a6b0_1:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2680
+# game/dialogues/alicetalk.rpy:2682
 translate deutsch alice_sorry_gifts_middle_088d0b2a_1:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2681
+# game/dialogues/alicetalk.rpy:2683
 translate deutsch alice_sorry_gifts_middle_054e253f_1:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2682
+# game/dialogues/alicetalk.rpy:2684
 translate deutsch alice_sorry_gifts_middle_a2071177_4:
 
     # Max_08 "И какая у тебя любимая?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2683
+# game/dialogues/alicetalk.rpy:2685
 translate deutsch alice_sorry_gifts_middle_e61c4517_4:
 
     # Alice_03 "Так я тебе и сказала! Но её дольше всех других нужно разворачивать..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2684
+# game/dialogues/alicetalk.rpy:2686
 translate deutsch alice_sorry_gifts_middle_ff1e4f63_1:
 
     # Max_11 "Я обязательно подарю тебе любимую, обещаю! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2685
+# game/dialogues/alicetalk.rpy:2687
 translate deutsch alice_sorry_gifts_middle_a174e7cf_3:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2689
+# game/dialogues/alicetalk.rpy:2691
 translate deutsch alice_sorry_gifts_middle_572db627_2:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2690
+# game/dialogues/alicetalk.rpy:2692
 translate deutsch alice_sorry_gifts_middle_535354bf_2:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2691
+# game/dialogues/alicetalk.rpy:2693
 translate deutsch alice_sorry_gifts_middle_29abb604:
 
     # Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2693
+# game/dialogues/alicetalk.rpy:2695
 translate deutsch alice_sorry_gifts_middle_324b4e00_2:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2694
+# game/dialogues/alicetalk.rpy:2696
 translate deutsch alice_sorry_gifts_middle_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2695
+# game/dialogues/alicetalk.rpy:2697
 translate deutsch alice_sorry_gifts_middle_b4a32aa4_1:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2696
+# game/dialogues/alicetalk.rpy:2698
 translate deutsch alice_sorry_gifts_middle_14c24df1:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2697
+# game/dialogues/alicetalk.rpy:2699
 translate deutsch alice_sorry_gifts_middle_e2b944cc_2:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2698
+# game/dialogues/alicetalk.rpy:2700
 translate deutsch alice_sorry_gifts_middle_0c9451cf_3:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Если только это не будет моя любимая сладость..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2699
+# game/dialogues/alicetalk.rpy:2701
 translate deutsch alice_sorry_gifts_middle_c6a269e0_2:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2700
+# game/dialogues/alicetalk.rpy:2702
 translate deutsch alice_sorry_gifts_middle_a174e7cf_4:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2704
+# game/dialogues/alicetalk.rpy:2706
 translate deutsch alice_sorry_gifts_middle_572db627_3:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2705
+# game/dialogues/alicetalk.rpy:2707
 translate deutsch alice_sorry_gifts_middle_535354bf_3:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2706
+# game/dialogues/alicetalk.rpy:2708
 translate deutsch alice_sorry_gifts_middle_9325b440:
 
     # Alice_12 "Я тебе сейчас дам, ничего не расскажу... А ну-ка иди сюда..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2708
+# game/dialogues/alicetalk.rpy:2710
 translate deutsch alice_sorry_gifts_middle_324b4e00_3:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2709
+# game/dialogues/alicetalk.rpy:2711
 translate deutsch alice_sorry_gifts_middle_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2710
+# game/dialogues/alicetalk.rpy:2712
 translate deutsch alice_sorry_gifts_middle_b4a32aa4_2:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2711
+# game/dialogues/alicetalk.rpy:2713
 translate deutsch alice_sorry_gifts_middle_f7fd9769:
 
     # Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2712
+# game/dialogues/alicetalk.rpy:2714
 translate deutsch alice_sorry_gifts_middle_088d0b2a_2:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2713
+# game/dialogues/alicetalk.rpy:2715
 translate deutsch alice_sorry_gifts_middle_8599f1f0:
 
     # Alice_05 "Не считается, если она мне неинтересна! Ты так и не подарил самую мою любимую сладость! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2714
+# game/dialogues/alicetalk.rpy:2716
 translate deutsch alice_sorry_gifts_middle_e2b944cc_3:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2715
+# game/dialogues/alicetalk.rpy:2717
 translate deutsch alice_sorry_gifts_middle_a174e7cf_5:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2723
+# game/dialogues/alicetalk.rpy:2725
 translate deutsch alice_sorry_gifts_middle_572db627_4:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2724
+# game/dialogues/alicetalk.rpy:2726
 translate deutsch alice_sorry_gifts_middle_535354bf_4:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2731
+# game/dialogues/alicetalk.rpy:2733
 translate deutsch alice_sorry_gifts_middle_3b6271b2:
 
     # Alice_13 "Вот значит как! Снова купил эти шоколадки... А ты рисковый! Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:2732
+# game/dialogues/alicetalk.rpy:2734
 translate deutsch alice_sorry_gifts_middle_744dc556_1:
 
     # Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2736
+# game/dialogues/alicetalk.rpy:2738
 translate deutsch alice_sorry_gifts_middle_ebaef405_1:
 
     # Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:2737
+# game/dialogues/alicetalk.rpy:2739
 translate deutsch alice_sorry_gifts_middle_744dc556_2:
 
     # Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2738
+# game/dialogues/alicetalk.rpy:2740
 translate deutsch alice_sorry_gifts_middle_f82d8d6c:
 
     # Alice_04 "Видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2743
+# game/dialogues/alicetalk.rpy:2745
 translate deutsch alice_sorry_gifts_middle_ad0f4ebe:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2744
+# game/dialogues/alicetalk.rpy:2746
 translate deutsch alice_sorry_gifts_middle_3e4a4815:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2745
+# game/dialogues/alicetalk.rpy:2747
 translate deutsch alice_sorry_gifts_middle_bb302923:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2746
+# game/dialogues/alicetalk.rpy:2748
 translate deutsch alice_sorry_gifts_middle_db82d6f5:
 
     # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2750
+# game/dialogues/alicetalk.rpy:2752
 translate deutsch alice_sorry_gifts_middle_6b2c5b58:
 
     # Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2752
+# game/dialogues/alicetalk.rpy:2754
 translate deutsch alice_sorry_gifts_middle_324b4e00_4:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2753
+# game/dialogues/alicetalk.rpy:2755
 translate deutsch alice_sorry_gifts_middle_27fd05a2_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2754
+# game/dialogues/alicetalk.rpy:2756
 translate deutsch alice_sorry_gifts_middle_b4a32aa4_3:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2755
+# game/dialogues/alicetalk.rpy:2757
 translate deutsch alice_sorry_gifts_middle_14c24df1_1:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2756
+# game/dialogues/alicetalk.rpy:2758
 translate deutsch alice_sorry_gifts_middle_e2b944cc_4:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2757
+# game/dialogues/alicetalk.rpy:2759
 translate deutsch alice_sorry_gifts_middle_a174e7cf_6:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2761
+# game/dialogues/alicetalk.rpy:2763
 translate deutsch alice_sorry_gifts_middle_572db627_5:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2762
+# game/dialogues/alicetalk.rpy:2764
 translate deutsch alice_sorry_gifts_middle_535354bf_5:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2763
+# game/dialogues/alicetalk.rpy:2765
 translate deutsch alice_sorry_gifts_middle_9a919278_2:
 
     # Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2765
+# game/dialogues/alicetalk.rpy:2767
 translate deutsch alice_sorry_gifts_middle_324b4e00_5:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2766
+# game/dialogues/alicetalk.rpy:2768
 translate deutsch alice_sorry_gifts_middle_ce051c95_2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2771
+# game/dialogues/alicetalk.rpy:2773
 translate deutsch alice_sorry_gifts_middle_55e0432c_2:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2772
+# game/dialogues/alicetalk.rpy:2774
 translate deutsch alice_sorry_gifts_middle_e2b944cc_5:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2773
+# game/dialogues/alicetalk.rpy:2775
 translate deutsch alice_sorry_gifts_middle_a174e7cf_7:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2777
+# game/dialogues/alicetalk.rpy:2779
 translate deutsch alice_sorry_gifts_middle_bc52a6b0_2:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2778
+# game/dialogues/alicetalk.rpy:2780
 translate deutsch alice_sorry_gifts_middle_088d0b2a_3:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2779
+# game/dialogues/alicetalk.rpy:2781
 translate deutsch alice_sorry_gifts_middle_054e253f_2:
 
     # Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2780
+# game/dialogues/alicetalk.rpy:2782
 translate deutsch alice_sorry_gifts_middle_e2b944cc_6:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2781
+# game/dialogues/alicetalk.rpy:2783
 translate deutsch alice_sorry_gifts_middle_a174e7cf_8:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2786
+# game/dialogues/alicetalk.rpy:2788
 translate deutsch alice_sorry_gifts_middle_ebaef405_2:
 
     # Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:2787
+# game/dialogues/alicetalk.rpy:2789
 translate deutsch alice_sorry_gifts_middle_744dc556_3:
 
     # Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:2791
+# game/dialogues/alicetalk.rpy:2793
 translate deutsch alice_sorry_gifts_middle_572db627_6:
 
     # Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2792
+# game/dialogues/alicetalk.rpy:2794
 translate deutsch alice_sorry_gifts_middle_535354bf_6:
 
     # Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2793
+# game/dialogues/alicetalk.rpy:2795
 translate deutsch alice_sorry_gifts_middle_f82d8d6c_1:
 
     # Alice_04 "Видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2798
+# game/dialogues/alicetalk.rpy:2800
 translate deutsch alice_sorry_gifts_middle_ad0f4ebe_1:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2799
+# game/dialogues/alicetalk.rpy:2801
 translate deutsch alice_sorry_gifts_middle_3e4a4815_1:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2800
+# game/dialogues/alicetalk.rpy:2802
 translate deutsch alice_sorry_gifts_middle_bb302923_1:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2801
+# game/dialogues/alicetalk.rpy:2803
 translate deutsch alice_sorry_gifts_middle_db82d6f5_1:
 
     # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2805
+# game/dialogues/alicetalk.rpy:2807
 translate deutsch alice_sorry_gifts_middle_6b2c5b58_1:
 
     # Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2807
+# game/dialogues/alicetalk.rpy:2809
 translate deutsch alice_sorry_gifts_middle_324b4e00_6:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2808
+# game/dialogues/alicetalk.rpy:2810
 translate deutsch alice_sorry_gifts_middle_27fd05a2_3:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2809
+# game/dialogues/alicetalk.rpy:2811
 translate deutsch alice_sorry_gifts_middle_b4a32aa4_4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2810
+# game/dialogues/alicetalk.rpy:2812
 translate deutsch alice_sorry_gifts_middle_14c24df1_2:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2811
+# game/dialogues/alicetalk.rpy:2813
 translate deutsch alice_sorry_gifts_middle_e2b944cc_7:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2812
+# game/dialogues/alicetalk.rpy:2814
 translate deutsch alice_sorry_gifts_middle_a174e7cf_9:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2824
+# game/dialogues/alicetalk.rpy:2826
 translate deutsch alice_sorry_gifts_good_d306806a:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2825
+# game/dialogues/alicetalk.rpy:2827
 translate deutsch alice_sorry_gifts_good_2b814165:
 
     # Max_03 "Никто! Просто угадал..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2826
+# game/dialogues/alicetalk.rpy:2828
 translate deutsch alice_sorry_gifts_good_a5776075:
 
     # Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2827
+# game/dialogues/alicetalk.rpy:2829
 translate deutsch alice_sorry_gifts_good_bd79a6d3:
 
     # Max_04 "Просто благоприятное стечение обстоятельств! И я за тобой не подглядывал, просто случайность..."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:2828
+# game/dialogues/alicetalk.rpy:2830
 translate deutsch alice_sorry_gifts_good_c18baf85:
 
     # Alice_04 "В таком случае, видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2833
+# game/dialogues/alicetalk.rpy:2835
 translate deutsch alice_sorry_gifts_good_65bcc085:
 
     # Alice_03 "[succes!t]Ладно, Макс, считай твои извинения приняты... Мама ничего не узнает, так что можешь дышать спокойно."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2834
+# game/dialogues/alicetalk.rpy:2836
 translate deutsch alice_sorry_gifts_good_f3cde9b4:
 
     # Max_07 "И даже без подвоха?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2835
+# game/dialogues/alicetalk.rpy:2837
 translate deutsch alice_sorry_gifts_good_93ee8451:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2836
+# game/dialogues/alicetalk.rpy:2838
 translate deutsch alice_sorry_gifts_good_423a1ca0:
 
     # Max_01 "О, я понял, сестрёнка! Не буду мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2839
+# game/dialogues/alicetalk.rpy:2841
 translate deutsch alice_sorry_gifts_good_53fcd775:
 
     # Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2841
+# game/dialogues/alicetalk.rpy:2843
 translate deutsch alice_sorry_gifts_good_c2c05b19:
 
     # Max_12 "А-а-ай! Алиса! Больно ведь!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2842
+# game/dialogues/alicetalk.rpy:2844
 translate deutsch alice_sorry_gifts_good_7504c76b:
 
     # Alice_16 "Будешь ещё, извращенец лохматый, за мной подглядывать?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2843
+# game/dialogues/alicetalk.rpy:2845
 translate deutsch alice_sorry_gifts_good_b4a32aa4:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2844
+# game/dialogues/alicetalk.rpy:2846
 translate deutsch alice_sorry_gifts_good_2fae9878:
 
     # Alice_05 "Ответ неправильный! Наверно, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2845
+# game/dialogues/alicetalk.rpy:2847
 translate deutsch alice_sorry_gifts_good_5289bcf8:
 
     # Max_14 "Ой! Понял-понял, не буду! Больше не буду..."
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2846
+# game/dialogues/alicetalk.rpy:2848
 translate deutsch alice_sorry_gifts_good_ef1d31f0:
 
     # Alice_02 "Вот и правильно! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2851
+# game/dialogues/alicetalk.rpy:2853
 translate deutsch alice_sorry_gifts_good_d306806a_1:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2852
+# game/dialogues/alicetalk.rpy:2854
 translate deutsch alice_sorry_gifts_good_4eabb1cd:
 
     # Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2853
+# game/dialogues/alicetalk.rpy:2855
 translate deutsch alice_sorry_gifts_good_a5776075_1:
 
     # Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2854
+# game/dialogues/alicetalk.rpy:2856
 translate deutsch alice_sorry_gifts_good_bd79a6d3_1:
 
     # Max_04 "Просто благоприятное стечение обстоятельств! И я за тобой не подглядывал, просто случайность..."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:2855
+# game/dialogues/alicetalk.rpy:2857
 translate deutsch alice_sorry_gifts_good_6837b9d1:
 
     # Alice_04 "В таком случае, видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?"
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2856
+# game/dialogues/alicetalk.rpy:2858
 translate deutsch alice_sorry_gifts_good_07cfa66c:
 
     # Max_01 "Хочется надеяться, что так и будет..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2857
+# game/dialogues/alicetalk.rpy:2859
 translate deutsch alice_sorry_gifts_good_29abb604:
 
     # Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2859
+# game/dialogues/alicetalk.rpy:2861
 translate deutsch alice_sorry_gifts_good_324b4e00:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2860
+# game/dialogues/alicetalk.rpy:2862
 translate deutsch alice_sorry_gifts_good_27fd05a2:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2861
+# game/dialogues/alicetalk.rpy:2863
 translate deutsch alice_sorry_gifts_good_b4a32aa4_1:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2862
+# game/dialogues/alicetalk.rpy:2864
 translate deutsch alice_sorry_gifts_good_14c24df1:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2863
+# game/dialogues/alicetalk.rpy:2865
 translate deutsch alice_sorry_gifts_good_e2b944cc:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2864
+# game/dialogues/alicetalk.rpy:2866
 translate deutsch alice_sorry_gifts_good_dc8918e7:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2865
+# game/dialogues/alicetalk.rpy:2867
 translate deutsch alice_sorry_gifts_good_c6a269e0:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2866
+# game/dialogues/alicetalk.rpy:2868
 translate deutsch alice_sorry_gifts_good_a174e7cf:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2870
+# game/dialogues/alicetalk.rpy:2872
 translate deutsch alice_sorry_gifts_good_d306806a_2:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2871
+# game/dialogues/alicetalk.rpy:2873
 translate deutsch alice_sorry_gifts_good_4eabb1cd_1:
 
     # Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2872
+# game/dialogues/alicetalk.rpy:2874
 translate deutsch alice_sorry_gifts_good_a5776075_2:
 
     # Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2873
+# game/dialogues/alicetalk.rpy:2875
 translate deutsch alice_sorry_gifts_good_bd79a6d3_2:
 
     # Max_04 "Просто благоприятное стечение обстоятельств! И я за тобой не подглядывал, просто случайность..."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:2874
+# game/dialogues/alicetalk.rpy:2876
 translate deutsch alice_sorry_gifts_good_c18baf85_1:
 
     # Alice_04 "В таком случае, видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2879
+# game/dialogues/alicetalk.rpy:2881
 translate deutsch alice_sorry_gifts_good_ad0f4ebe:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2880
+# game/dialogues/alicetalk.rpy:2882
 translate deutsch alice_sorry_gifts_good_3e4a4815:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2881
+# game/dialogues/alicetalk.rpy:2883
 translate deutsch alice_sorry_gifts_good_93ee8451_1:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2882
+# game/dialogues/alicetalk.rpy:2884
 translate deutsch alice_sorry_gifts_good_db82d6f5:
 
     # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2885
+# game/dialogues/alicetalk.rpy:2887
 translate deutsch alice_sorry_gifts_good_29abb604_1:
 
     # Alice_05 "Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2887
+# game/dialogues/alicetalk.rpy:2889
 translate deutsch alice_sorry_gifts_good_324b4e00_1:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2888
+# game/dialogues/alicetalk.rpy:2890
 translate deutsch alice_sorry_gifts_good_27fd05a2_1:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:2889
+# game/dialogues/alicetalk.rpy:2891
 translate deutsch alice_sorry_gifts_good_b4a32aa4_2:
 
     # Max_10 "Да я же случайно оказался около душа..."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:2890
+# game/dialogues/alicetalk.rpy:2892
 translate deutsch alice_sorry_gifts_good_14c24df1_1:
 
     # Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2891
+# game/dialogues/alicetalk.rpy:2893
 translate deutsch alice_sorry_gifts_good_e2b944cc_1:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2892
+# game/dialogues/alicetalk.rpy:2894
 translate deutsch alice_sorry_gifts_good_a174e7cf_1:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2896
+# game/dialogues/alicetalk.rpy:2898
 translate deutsch alice_sorry_gifts_good_a25383e8:
 
     # Alice_07 "Ага! Снова купил мои любимые конфеты! Большое тебе спасибо, Макс! Я удивлена, они ведь дорогие..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2897
+# game/dialogues/alicetalk.rpy:2899
 translate deutsch alice_sorry_gifts_good_c4888519:
 
     # Max_03 "Почему бы не порадовать старшую сестрёнку её любимыми конфетами, если уж возможность подворачивается."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2899
+# game/dialogues/alicetalk.rpy:2901
 translate deutsch alice_sorry_gifts_good_ad5fc344:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2904
+# game/dialogues/alicetalk.rpy:2906
 translate deutsch alice_sorry_gifts_good_ad0f4ebe_1:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2905
+# game/dialogues/alicetalk.rpy:2907
 translate deutsch alice_sorry_gifts_good_3e4a4815_1:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2906
+# game/dialogues/alicetalk.rpy:2908
 translate deutsch alice_sorry_gifts_good_8ca1ca6c:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Но, Макс, просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2907
+# game/dialogues/alicetalk.rpy:2909
 translate deutsch alice_sorry_gifts_good_db82d6f5_1:
 
     # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2911
+# game/dialogues/alicetalk.rpy:2913
 translate deutsch alice_sorry_gifts_good_dc8918e7_1:
 
     # Alice_04 "Ну и просто на будущее, знай, в следующий раз ты так легко не отделаешься! Разве только это не будет большая коробка моих любимых конфет..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2912
+# game/dialogues/alicetalk.rpy:2914
 translate deutsch alice_sorry_gifts_good_c6a269e0_1:
 
     # Max_11 "Взято на заметку, Алиса! Отпусти уже..."
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:2913
+# game/dialogues/alicetalk.rpy:2915
 translate deutsch alice_sorry_gifts_good_a174e7cf_2:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2916
+# game/dialogues/alicetalk.rpy:2918
 translate deutsch alice_sorry_gifts_good_b2da0dd8:
 
     # Alice_05 "В этот раз конфет даже больше, так что я не припоминаю, чтобы утром за мной кто-то подглядывал! Всё было в порядке..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2917
+# game/dialogues/alicetalk.rpy:2919
 translate deutsch alice_sorry_gifts_good_ddda64bf:
 
     # Max_01 "Ну да, меня и рядом тогда не было!"
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2918
+# game/dialogues/alicetalk.rpy:2920
 translate deutsch alice_sorry_gifts_good_0eff0121:
 
     # Alice_03 "Я даже подумываю, а не обнять ли тебя, Макс? Ну так... по семейному..." nointeract
     Alice_03 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2929
+# game/dialogues/alicetalk.rpy:2931
 translate deutsch alice_sorry_gifts_good_d306806a_3:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2930
+# game/dialogues/alicetalk.rpy:2932
 translate deutsch alice_sorry_gifts_good_4eabb1cd_2:
 
     # Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2931
+# game/dialogues/alicetalk.rpy:2933
 translate deutsch alice_sorry_gifts_good_e5d166a4:
 
     # Alice_05 "Лучше поздно, чем никогда! А ну-ка иди сюда..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2933
+# game/dialogues/alicetalk.rpy:2935
 translate deutsch alice_sorry_gifts_good_324b4e00_2:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса!"
     Max_12 ""
 
-# game/dialogues/alicetalk.rpy:2934
+# game/dialogues/alicetalk.rpy:2936
 translate deutsch alice_sorry_gifts_good_ce051c95:
 
     # Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?" nointeract
     Alice_16 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2939
+# game/dialogues/alicetalk.rpy:2941
 translate deutsch alice_sorry_gifts_good_55e0432c:
 
     # Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2940
+# game/dialogues/alicetalk.rpy:2942
 translate deutsch alice_sorry_gifts_good_e2b944cc_2:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2941
+# game/dialogues/alicetalk.rpy:2943
 translate deutsch alice_sorry_gifts_good_a174e7cf_3:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2945
+# game/dialogues/alicetalk.rpy:2947
 translate deutsch alice_sorry_gifts_good_bc52a6b0:
 
     # Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:2946
+# game/dialogues/alicetalk.rpy:2948
 translate deutsch alice_sorry_gifts_good_088d0b2a:
 
     # Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2947
+# game/dialogues/alicetalk.rpy:2949
 translate deutsch alice_sorry_gifts_good_8c11f335:
 
     # Alice_05 "Слишком уж долго до тебя доходило, что я больше всего люблю... Так что - не повезло тебе..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2948
+# game/dialogues/alicetalk.rpy:2950
 translate deutsch alice_sorry_gifts_good_e2b944cc_3:
 
     # Max_14 "Ой! Я понял... Больше не буду!"
     Max_14 ""
 
-# game/dialogues/alicetalk.rpy:2949
+# game/dialogues/alicetalk.rpy:2951
 translate deutsch alice_sorry_gifts_good_a174e7cf_4:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2954
+# game/dialogues/alicetalk.rpy:2956
 translate deutsch alice_sorry_gifts_good_d306806a_4:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2955
+# game/dialogues/alicetalk.rpy:2957
 translate deutsch alice_sorry_gifts_good_4eabb1cd_3:
 
     # Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2956
+# game/dialogues/alicetalk.rpy:2958
 translate deutsch alice_sorry_gifts_good_93bcff24:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2957
+# game/dialogues/alicetalk.rpy:2959
 translate deutsch alice_sorry_gifts_good_07cfa66c_1:
 
     # Max_01 "Хочется надеяться, что так и будет..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2962
+# game/dialogues/alicetalk.rpy:2964
 translate deutsch alice_sorry_gifts_good_64f95d93:
 
     # Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2963
+# game/dialogues/alicetalk.rpy:2965
 translate deutsch alice_sorry_gifts_good_053993a1:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2964
+# game/dialogues/alicetalk.rpy:2966
 translate deutsch alice_sorry_gifts_good_ad5fc344_1:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2969
+# game/dialogues/alicetalk.rpy:2971
 translate deutsch alice_sorry_gifts_good_ad0f4ebe_2:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:2970
+# game/dialogues/alicetalk.rpy:2972
 translate deutsch alice_sorry_gifts_good_3e4a4815_2:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:2971
+# game/dialogues/alicetalk.rpy:2973
 translate deutsch alice_sorry_gifts_good_784e185e:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. Я даже подумываю, а не обнять ли тебя, Макс? Ну так... совсем немного..." nointeract
     Alice_05 "" nointeract
 
-# game/dialogues/alicetalk.rpy:2976
+# game/dialogues/alicetalk.rpy:2978
 translate deutsch alice_sorry_gifts_good_835ab3bd:
 
     # Alice_04 "[succes!t]Пожалуй ты заслужил это своими подарками..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:2978
+# game/dialogues/alicetalk.rpy:2980
 translate deutsch alice_sorry_gifts_good_f070e574:
 
     # Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:2979
+# game/dialogues/alicetalk.rpy:2981
 translate deutsch alice_sorry_gifts_good_71f05ee4:
 
     # Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2980
+# game/dialogues/alicetalk.rpy:2982
 translate deutsch alice_sorry_gifts_good_c9c4f595:
 
     # Max_05 "Да, надо бы почаще так делать."
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:2981
+# game/dialogues/alicetalk.rpy:2983
 translate deutsch alice_sorry_gifts_good_b47b0634:
 
     # Alice_02 "Подглядывать за мной или дарить мне сладости?!"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2982
+# game/dialogues/alicetalk.rpy:2984
 translate deutsch alice_sorry_gifts_good_201ce590:
 
     # Max_02 "Второе, конечно!"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:2983
+# game/dialogues/alicetalk.rpy:2985
 translate deutsch alice_sorry_gifts_good_1405c200:
 
     # Alice_05 "Ну да, конечно... Иди давай."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2987
+# game/dialogues/alicetalk.rpy:2989
 translate deutsch alice_sorry_gifts_good_22133154:
 
     # Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:2988
+# game/dialogues/alicetalk.rpy:2990
 translate deutsch alice_sorry_gifts_good_ecf61f90:
 
     # Max_09 "Обнять меня или придушить?"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:2989
+# game/dialogues/alicetalk.rpy:2991
 translate deutsch alice_sorry_gifts_good_39aea913:
 
     # Alice_07 "Зачем останавливаться на чём-то одном, Макс? Хи-хи..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:2990
+# game/dialogues/alicetalk.rpy:2992
 translate deutsch alice_sorry_gifts_good_39cc7463:
 
     # Max_01 "Я тогда лучше пойду... погуляю."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:2991
+# game/dialogues/alicetalk.rpy:2993
 translate deutsch alice_sorry_gifts_good_4d4f6eae:
 
     # Alice_02 "Ну как хочешь..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:2996
+# game/dialogues/alicetalk.rpy:2998
 translate deutsch alice_sorry_gifts_good_a174e7cf_5:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3000
+# game/dialogues/alicetalk.rpy:3002
 translate deutsch alice_sorry_gifts_good_d306806a_5:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3001
+# game/dialogues/alicetalk.rpy:3003
 translate deutsch alice_sorry_gifts_good_4eabb1cd_4:
 
     # Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3002
+# game/dialogues/alicetalk.rpy:3004
 translate deutsch alice_sorry_gifts_good_93bcff24_1:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3003
+# game/dialogues/alicetalk.rpy:3005
 translate deutsch alice_sorry_gifts_good_07cfa66c_2:
 
     # Max_01 "Хочется надеяться, что так и будет..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3008
+# game/dialogues/alicetalk.rpy:3010
 translate deutsch alice_sorry_gifts_good_d306806a_6:
 
     # Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3009
+# game/dialogues/alicetalk.rpy:3011
 translate deutsch alice_sorry_gifts_good_4eabb1cd_5:
 
     # Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3010
+# game/dialogues/alicetalk.rpy:3012
 translate deutsch alice_sorry_gifts_good_ad5fc344_2:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3015
+# game/dialogues/alicetalk.rpy:3017
 translate deutsch alice_sorry_gifts_good_ad0f4ebe_3:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3016
+# game/dialogues/alicetalk.rpy:3018
 translate deutsch alice_sorry_gifts_good_3e4a4815_3:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3017
+# game/dialogues/alicetalk.rpy:3019
 translate deutsch alice_sorry_gifts_good_93ee8451_2:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3018
+# game/dialogues/alicetalk.rpy:3020
 translate deutsch alice_sorry_gifts_good_db82d6f5_2:
 
     # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3023
+# game/dialogues/alicetalk.rpy:3025
 translate deutsch alice_sorry_gifts_good_a174e7cf_6:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3027
+# game/dialogues/alicetalk.rpy:3029
 translate deutsch alice_sorry_gifts_good_64f95d93_1:
 
     # Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3028
+# game/dialogues/alicetalk.rpy:3030
 translate deutsch alice_sorry_gifts_good_053993a1_1:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3029
+# game/dialogues/alicetalk.rpy:3031
 translate deutsch alice_sorry_gifts_good_93bcff24_2:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3030
+# game/dialogues/alicetalk.rpy:3032
 translate deutsch alice_sorry_gifts_good_07cfa66c_3:
 
     # Max_01 "Хочется надеяться, что так и будет..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3031
+# game/dialogues/alicetalk.rpy:3033
 translate deutsch alice_sorry_gifts_good_45eaf315:
 
     # Alice_03 "Я даже подумываю, а не обнять ли тебя, Макс? Ну так... совсем немного..." nointeract
     Alice_03 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3041
+# game/dialogues/alicetalk.rpy:3043
 translate deutsch alice_sorry_gifts_good_64f95d93_2:
 
     # Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3042
+# game/dialogues/alicetalk.rpy:3044
 translate deutsch alice_sorry_gifts_good_053993a1_2:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3043
+# game/dialogues/alicetalk.rpy:3045
 translate deutsch alice_sorry_gifts_good_93bcff24_3:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3044
+# game/dialogues/alicetalk.rpy:3046
 translate deutsch alice_sorry_gifts_good_07cfa66c_4:
 
     # Max_01 "Хочется надеяться, что так и будет..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3049
+# game/dialogues/alicetalk.rpy:3051
 translate deutsch alice_sorry_gifts_good_64f95d93_3:
 
     # Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3050
+# game/dialogues/alicetalk.rpy:3052
 translate deutsch alice_sorry_gifts_good_053993a1_3:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3051
+# game/dialogues/alicetalk.rpy:3053
 translate deutsch alice_sorry_gifts_good_ad5fc344_3:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?" nointeract
     Alice_04 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3056
+# game/dialogues/alicetalk.rpy:3058
 translate deutsch alice_sorry_gifts_good_ad0f4ebe_4:
 
     # Alice_03 "[succes!t]Ладно, так тому и быть, считай твои извинения приняты... Мама ничего не узнает, так что можешь не напрягаться."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3057
+# game/dialogues/alicetalk.rpy:3059
 translate deutsch alice_sorry_gifts_good_3e4a4815_4:
 
     # Max_07 "Что, вот так вот просто?!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3058
+# game/dialogues/alicetalk.rpy:3060
 translate deutsch alice_sorry_gifts_good_93ee8451_3:
 
     # Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3059
+# game/dialogues/alicetalk.rpy:3061
 translate deutsch alice_sorry_gifts_good_db82d6f5_3:
 
     # Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3064
+# game/dialogues/alicetalk.rpy:3066
 translate deutsch alice_sorry_gifts_good_a174e7cf_7:
 
     # Alice_02 "Вот и молодец! Гуляй..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3068
+# game/dialogues/alicetalk.rpy:3070
 translate deutsch alice_sorry_gifts_good_64f95d93_4:
 
     # Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3069
+# game/dialogues/alicetalk.rpy:3071
 translate deutsch alice_sorry_gifts_good_053993a1_4:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3071
+# game/dialogues/alicetalk.rpy:3073
 translate deutsch alice_sorry_gifts_good_93bcff24_4:
 
     # Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3072
+# game/dialogues/alicetalk.rpy:3074
 translate deutsch alice_sorry_gifts_good_07cfa66c_5:
 
     # Max_01 "Хочется надеяться, что так и будет..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3073
+# game/dialogues/alicetalk.rpy:3075
 translate deutsch alice_sorry_gifts_good_45eaf315_1:
 
     # Alice_03 "Я даже подумываю, а не обнять ли тебя, Макс? Ну так... совсем немного..." nointeract
     Alice_03 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3082
+# game/dialogues/alicetalk.rpy:3084
 translate deutsch alice_sorry_gifts_good_f2a5ad6d:
 
     # Alice_05 "Конфет так много, что я не припоминаю, чтобы утром за мной кто-то подглядывал! Всё было в порядке..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3083
+# game/dialogues/alicetalk.rpy:3085
 translate deutsch alice_sorry_gifts_good_ddda64bf_1:
 
     # Max_01 "Ну да, меня и рядом тогда не было!"
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3084
+# game/dialogues/alicetalk.rpy:3086
 translate deutsch alice_sorry_gifts_good_957ffb88:
 
     # Alice_04 "Я даже обниму тебя за это! Ну так... совсем немного... Иди ко мне."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3086
+# game/dialogues/alicetalk.rpy:3088
 translate deutsch alice_sorry_gifts_good_f070e574_1:
 
     # Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3087
+# game/dialogues/alicetalk.rpy:3089
 translate deutsch alice_sorry_gifts_good_71f05ee4_1:
 
     # Alice_07 "Я вижу, что ты не просто хочешь избежать наказания, а ещё и мне приятно сделать стремишься. Вот я и не вредничаю..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3088
+# game/dialogues/alicetalk.rpy:3090
 translate deutsch alice_sorry_gifts_good_c9c4f595_1:
 
     # Max_05 "Да, надо бы почаще так делать."
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:3089
+# game/dialogues/alicetalk.rpy:3091
 translate deutsch alice_sorry_gifts_good_b47b0634_1:
 
     # Alice_02 "Подглядывать за мной или дарить мне сладости?!"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3090
+# game/dialogues/alicetalk.rpy:3092
 translate deutsch alice_sorry_gifts_good_201ce590_1:
 
     # Max_02 "Второе, конечно!"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3091
+# game/dialogues/alicetalk.rpy:3093
 translate deutsch alice_sorry_gifts_good_1405c200_1:
 
     # Alice_05 "Ну да, конечно... Иди давай."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3105
+# game/dialogues/alicetalk.rpy:3107
 translate deutsch alice_about_bath_46636898:
 
     # Alice_12 "Ты о чём, Макс?"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:3106
+# game/dialogues/alicetalk.rpy:3108
 translate deutsch alice_about_bath_bd186826:
 
     # Max_01 "Ну, ты вернулась ночью из клуба и мы разговаривали в ванной..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3107
+# game/dialogues/alicetalk.rpy:3109
 translate deutsch alice_about_bath_212462e6:
 
     # Alice_13 "Я не помню такого... Тебе приснилось!" nointeract
     Alice_13 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3110
+# game/dialogues/alicetalk.rpy:3112
 translate deutsch alice_about_bath_73bf3b53:
 
     # Alice_05 "Что?! Всё ты врёшь, Макс. Не было такого!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3111
+# game/dialogues/alicetalk.rpy:3113
 translate deutsch alice_about_bath_6d33bb34:
 
     # Max_02 "Да? Ну, думай так..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3112
+# game/dialogues/alicetalk.rpy:3114
 translate deutsch alice_about_bath_e4b16627:
 
     # Alice_13 "Макс. Повторяю, ничего не было. И даже если и было, ты об этом забудешь, если хочешь жить. Ты меня понял?"
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:3113
+# game/dialogues/alicetalk.rpy:3115
 translate deutsch alice_about_bath_18e158e2:
 
     # Max_03 "Конечно..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3114
+# game/dialogues/alicetalk.rpy:3116
 translate deutsch alice_about_bath_3f1a2327:
 
     # Alice_16 "Я серьёзно! А теперь вали отсюда..."
     Alice_16 ""
 
-# game/dialogues/alicetalk.rpy:3115
+# game/dialogues/alicetalk.rpy:3117
 translate deutsch alice_about_bath_82324783:
 
     # Max_01 "Хорошо..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3123
+# game/dialogues/alicetalk.rpy:3125
 translate deutsch alice_about_bath_f3aed3d0:
 
     # Alice_03 "Надо же, даже извинился... Вот только я правда мало что помню. Будем считать, что ничего и не было. И не напоминай мне больше об этом. Понял?"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3124
+# game/dialogues/alicetalk.rpy:3126
 translate deutsch alice_about_bath_81b4f5c0:
 
     # Max_03 "Ага..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3128
+# game/dialogues/alicetalk.rpy:3130
 translate deutsch alice_about_bath_ad2b2557:
 
     # Alice_15 "Что?! Макс! Ты всё врёшь! Если это правда, я тебя убью, обещаю! А если нет, то тоже! Быстро свалил отсюда!"
     Alice_15 ""
 
-# game/dialogues/alicetalk.rpy:3129
+# game/dialogues/alicetalk.rpy:3131
 translate deutsch alice_about_bath_82324783_1:
 
     # Max_01 "Хорошо..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3140
+# game/dialogues/alicetalk.rpy:3142
 translate deutsch alice_about_kiss_e0a8fdaa:
 
     # Alice_02 "Прости, Макс, что?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3141
+# game/dialogues/alicetalk.rpy:3143
 translate deutsch alice_about_kiss_fba9e700:
 
     # Max_01 "Да вот спрашиваю, умеешь ты целоваться или нет?"
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3142
+# game/dialogues/alicetalk.rpy:3144
 translate deutsch alice_about_kiss_5172f74c:
 
     # Alice_05 "Да, не показалось... Тебе заняться больше нечем, Макс?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3143
+# game/dialogues/alicetalk.rpy:3145
 translate deutsch alice_about_kiss_a95ad17e:
 
     # Max_08 "Мне срочно нужно научиться целоваться, и я не знаю кто может помочь..."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:3144
+# game/dialogues/alicetalk.rpy:3146
 translate deutsch alice_about_kiss_2cc2ac5d:
 
     # Alice_07 "Срочно?! Бедняжка... Ты знаешь, я в каком-то фильме смотрела, там учились целоваться на помидорах. Попробуй, может получится хотя бы у тебя..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3145
+# game/dialogues/alicetalk.rpy:3147
 translate deutsch alice_about_kiss_91a55c2f:
 
     # Max_07 "Алиса, я серьёзно же!"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3146
+# game/dialogues/alicetalk.rpy:3148
 translate deutsch alice_about_kiss_5fe5be63:
 
     # Alice_12 "Макс, отвали. Я не буду целоваться с тобой, даже не мечтай. И придумай другой способ клеиться, а то этот на уровне детского сада, серьёзно."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:3147
+# game/dialogues/alicetalk.rpy:3149
 translate deutsch alice_about_kiss_f6b0c7e6:
 
     # Max_09 "Да я не клеился!"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:3157
+# game/dialogues/alicetalk.rpy:3159
 translate deutsch talkblog2_8c928df1:
 
     # Alice_00 "Я тебя внимательно слушаю..."
     Alice_00 ""
 
-# game/dialogues/alicetalk.rpy:3158
+# game/dialogues/alicetalk.rpy:3160
 translate deutsch talkblog2_81673401:
 
     # Max_00 "Я выяснил, какие блоги популярны..."
     Max_00 ""
 
-# game/dialogues/alicetalk.rpy:3159
+# game/dialogues/alicetalk.rpy:3161
 translate deutsch talkblog2_8c61026c:
 
     # Alice_02 "Открыл топ блогов и посмотрел? Или что-то более толковое удалось выяснить?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3160
+# game/dialogues/alicetalk.rpy:3162
 translate deutsch talkblog2_ae86bae1:
 
     # Max_01 "В общем, тебе нужно сделать акцент на форме, а не на содержании..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3161
+# game/dialogues/alicetalk.rpy:3163
 translate deutsch talkblog2_fea06aa4:
 
     # Alice_01 "Ты хочешь сказать, что не важно о чём мой блог, важно как я его веду? Я об этом думала... И если ты помнишь, проблема всё ещё в одежде. Я не могу в одном и том же появляться постоянно, если это бьюти-блог..."
     Alice_01 ""
 
-# game/dialogues/alicetalk.rpy:3162
+# game/dialogues/alicetalk.rpy:3164
 translate deutsch talkblog2_33410fb8:
 
     # Max_07 "А если это не бьюти-блог?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3163
+# game/dialogues/alicetalk.rpy:3165
 translate deutsch talkblog2_1b7a68fc:
 
     # Alice_05 "И что же это? Я больше ничего не умею... Или ты на что намекаешь?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3164
+# game/dialogues/alicetalk.rpy:3166
 translate deutsch talkblog2_2b784949:
 
     # Max_02 "Как у тебя со скромностью дела?"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3165
+# game/dialogues/alicetalk.rpy:3167
 translate deutsch talkblog2_7f33d114:
 
     # Alice_06 "Кажется, я знаю к чему ты клонишь, Макс. Наверняка, ты насмотрелся каких-нибудь девочек, которые крутят задницами перед камерами за деньги? Нет, я на это не соглашусь!"
     Alice_06 ""
 
-# game/dialogues/alicetalk.rpy:3166
+# game/dialogues/alicetalk.rpy:3168
 translate deutsch talkblog2_209cf8c2:
 
     # Max_03 "Воу... Я не думал об этом, но если ты говоришь..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3167
+# game/dialogues/alicetalk.rpy:3169
 translate deutsch talkblog2_5f590a15:
 
     # Alice_12 "Я знаю, что на этом можно много заработать, но вдруг кто-то из моих друзей или знакомых увидит... Нет, я на это не пойду."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:3168
+# game/dialogues/alicetalk.rpy:3170
 translate deutsch talkblog2_598836c4:
 
     # Max_09 "Ты уверена в этом?"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:3169
+# game/dialogues/alicetalk.rpy:3171
 translate deutsch talkblog2_6535c1a2:
 
     # Alice_00 "Да, Макс! Уверена, я смогу развить свой блог и без этого."
     Alice_00 ""
 
-# game/dialogues/alicetalk.rpy:3170
+# game/dialogues/alicetalk.rpy:3172
 translate deutsch talkblog2_51c0a20e:
 
     # Max_00 "Ясно. Нет, так нет..."
     Max_00 ""
 
-# game/dialogues/alicetalk.rpy:3180
+# game/dialogues/alicetalk.rpy:3182
 translate deutsch talkblog3_e22e83d8:
 
     # Alice_02 "Не особо? Это как? Раздеваться частично?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3181
+# game/dialogues/alicetalk.rpy:3183
 translate deutsch talkblog3_44c44146:
 
     # Max_07 "Ты можешь рекламировать что-то..."
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3182
+# game/dialogues/alicetalk.rpy:3184
 translate deutsch talkblog3_eb390694:
 
     # Alice_05 "Макс, да все блогеры что-то рекламируют. Ты снова не изобрёл велосипед..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3183
+# game/dialogues/alicetalk.rpy:3185
 translate deutsch talkblog3_a74ba9ca:
 
     # Max_01 "Я имею в виду другое..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3184
+# game/dialogues/alicetalk.rpy:3186
 translate deutsch talkblog3_7801fced:
 
     # Alice_03 "Хорошо, я внимательно слушаю..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3185
+# game/dialogues/alicetalk.rpy:3187
 translate deutsch talkblog3_8aa1a465:
 
     # Max_04 "Ты можешь рекламировать нижнее бельё или игрушки для взрослых."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:3186
+# game/dialogues/alicetalk.rpy:3188
 translate deutsch talkblog3_d682961b:
 
     # Alice_05 "Макс... Это не очень отличается от той идеи с позированием перед камерами за деньги... Хотя, в этом что-то есть, конечно. И я не об игрушках для взрослых..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3187
+# game/dialogues/alicetalk.rpy:3189
 translate deutsch talkblog3_155cadcf:
 
     # Max_03 "Значит, нижнее бельё?"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3188
+# game/dialogues/alicetalk.rpy:3190
 translate deutsch talkblog3_66db8c63:
 
     # Alice_13 "Ну можно попробовать. Однако, главная проблема остаётся в силе, у меня только один комплект белья, тот в котором я сплю, а этого мало даже чтобы просто начать... И денег на новое нет..."
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:3189
+# game/dialogues/alicetalk.rpy:3191
 translate deutsch talkblog3_0817ffd6:
 
     # Max_07 "Ну а если я тебе его подарю?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3190
+# game/dialogues/alicetalk.rpy:3192
 translate deutsch talkblog3_1f84979c:
 
     # Alice_05 "Ты подаришь мне нижнее бельё? На какие деньги? И что я за это буду тебе должна?" nointeract
     Alice_05 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3193
+# game/dialogues/alicetalk.rpy:3195
 translate deutsch talkblog3_82299951:
 
     # Alice_02 "И давно ты в альтруисты записался?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3194
+# game/dialogues/alicetalk.rpy:3196
 translate deutsch talkblog3_5d4e09c9:
 
     # Max_01 "Я просто хочу помочь..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3197
+# game/dialogues/alicetalk.rpy:3199
 translate deutsch talkblog3_8d3d4b57:
 
     # Alice_02 "Только и всего? Если там что-то приличное, то почему нет..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3198
+# game/dialogues/alicetalk.rpy:3200
 translate deutsch talkblog3_3b386cc6:
 
     # Max_03 "Было бы супер!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3200
+# game/dialogues/alicetalk.rpy:3202
 translate deutsch talkblog3_c76393c1:
 
     # Alice_03 "Давай попробуем, но я не уверена и ничего не обещаю. Твои вложения могут оказаться бесполезными... Для начала мне нужно бельё просто для того, чтобы заинтересовать людей."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3201
+# game/dialogues/alicetalk.rpy:3203
 translate deutsch talkblog3_7bf40941:
 
     # Max_07 "Для начала?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3202
+# game/dialogues/alicetalk.rpy:3204
 translate deutsch talkblog3_006e2911:
 
     # Alice_00 "Ага. Затем, уже нужно будет найти рекламодателей, которые будут присылать бельё, которое я и буду рекламировать. Обычно это так делается... Или ты думал, что мне кто-то будет платить за моё же бельё?"
     Alice_00 ""
 
-# game/dialogues/alicetalk.rpy:3203
+# game/dialogues/alicetalk.rpy:3205
 translate deutsch talkblog3_f0583bf8:
 
     # Max_00 "Ну, если это так делается..."
     Max_00 ""
 
-# game/dialogues/alicetalk.rpy:3204
+# game/dialogues/alicetalk.rpy:3206
 translate deutsch talkblog3_6f8d6fae:
 
     # Alice_01 "Да, Макс. Причём, желающих на этом зарабатывать больше, чем желающих за это платить. И в этом главная проблема. Но как я уже сказала, я могу попробовать. Если купишь что-то, посмотрим..."
     Alice_01 ""
 
-# game/dialogues/alicetalk.rpy:3205
+# game/dialogues/alicetalk.rpy:3207
 translate deutsch talkblog3_fd1dc624:
 
     # Max_01 "Понял, с меня симпатичное бельишко..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3225
+# game/dialogues/alicetalk.rpy:3227
 translate deutsch gift_black_lingerie_83b0dab1:
 
     # Alice_02 "И что же это? Я должна угадать?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3226
+# game/dialogues/alicetalk.rpy:3228
 translate deutsch gift_black_lingerie_11fb39b9:
 
     # Max_01 "Нижнее бельё..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3227
+# game/dialogues/alicetalk.rpy:3229
 translate deutsch gift_black_lingerie_acf40ff4:
 
     # Alice_07 "Ой. Это супер! Симпатичное? Дай посмотреть..." nointeract
     Alice_07 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3231
+# game/dialogues/alicetalk.rpy:3233
 translate deutsch gift_black_lingerie_0f94a426:
 
     # Alice_05 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3236
+# game/dialogues/alicetalk.rpy:3238
 translate deutsch gift_black_lingerie_d8f3eecd:
 
     # Alice_12 "[failed!t]Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём и только... А если будешь и дальше упрашивать, то вообще ничего не увидишь! Понял?"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:3237
+# game/dialogues/alicetalk.rpy:3239
 translate deutsch gift_black_lingerie_5cfb418f:
 
     # Max_10 "Да понял... Ладно. Буду ждать за дверью."
     Max_10 ""
 
-# game/dialogues/alicetalk.rpy:3242
+# game/dialogues/alicetalk.rpy:3244
 translate deutsch gift_black_lingerie_2b4ecf90:
 
     # Max_09 "{i}( А посмотреть-то хочется! Быстренько оббежать комнаты и подглядеть в окно? Может заметить... Или пойти в комнату и подглядеть через камеру? Пока дойду и открою свой сайт она уже переоденется... Эх, вот я пролетел! ){/i}"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:3243
+# game/dialogues/alicetalk.rpy:3245
 translate deutsch gift_black_lingerie_3163cf24:
 
     # Alice "{b}Алиса:{/b} Всё, Макс. Можешь заходить..."
     Alice ""
 
-# game/dialogues/alicetalk.rpy:3248
+# game/dialogues/alicetalk.rpy:3250
 translate deutsch gift_black_lingerie_75108e7f:
 
     # Alice_01 "Ну, как тебе? Хорошо сидит? Вроде бы немного лифчик не того размера... Или нет... Ну, Макс, чего молчишь?"
     Alice_01 ""
 
-# game/dialogues/alicetalk.rpy:3249
+# game/dialogues/alicetalk.rpy:3251
 translate deutsch gift_black_lingerie_39888b89:
 
     # Max_05 "Ну, я... э..."
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:3250
+# game/dialogues/alicetalk.rpy:3252
 translate deutsch gift_black_lingerie_658397f7:
 
     # Alice_05 "Контуженый что ли? Я тебя спрашиваю хорошо сидит или нет... Хотя... по тебе же всё сразу видно. Значит, всё в порядке..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3251
+# game/dialogues/alicetalk.rpy:3253
 translate deutsch gift_black_lingerie_3f1d571d:
 
     # Max_02 "Ага, полный порядок!"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3256
+# game/dialogues/alicetalk.rpy:3258
 translate deutsch gift_black_lingerie_8cfdabce:
 
     # Alice_05 "[succes!t]Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3258
+# game/dialogues/alicetalk.rpy:3260
 translate deutsch gift_black_lingerie_eb01960e:
 
     # Max_00 "Опять угрозы..."
     Max_00 ""
 
-# game/dialogues/alicetalk.rpy:3264
+# game/dialogues/alicetalk.rpy:3266
 translate deutsch gift_black_lingerie_7da5dc48:
 
     # Alice_03 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3265
+# game/dialogues/alicetalk.rpy:3267
 translate deutsch gift_black_lingerie_6374794e:
 
     # Max_01 "Ага..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3274
+# game/dialogues/alicetalk.rpy:3276
 translate deutsch gift_black_lingerie_35b4664a:
 
     # Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
     Alice_01 ""
 
-# game/dialogues/alicetalk.rpy:3275
+# game/dialogues/alicetalk.rpy:3277
 translate deutsch gift_black_lingerie_d0a89701:
 
     # Max_03 "Я не пялюсь..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3278
+# game/dialogues/alicetalk.rpy:3280
 translate deutsch gift_black_lingerie_d4ca39d6:
 
     # Alice_02 "Похоже, размер мне подходит... и удобно. ... Ну, как тебе?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3279
+# game/dialogues/alicetalk.rpy:3281
 translate deutsch gift_black_lingerie_b78414ac:
 
     # Max_04 "Тебе идёт! Мне нравится..."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:3285
+# game/dialogues/alicetalk.rpy:3287
 translate deutsch gift_black_lingerie_e189cc43:
 
     # Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё новые трусики примерить."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3287
+# game/dialogues/alicetalk.rpy:3289
 translate deutsch gift_black_lingerie_be8312c9:
 
     # Max_02 "Конечно, я не смотрю..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3290
+# game/dialogues/alicetalk.rpy:3292
 translate deutsch gift_black_lingerie_29c6ce73:
 
     # Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё трусики примерить."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3293
+# game/dialogues/alicetalk.rpy:3295
 translate deutsch gift_black_lingerie_be8312c9_1:
 
     # Max_02 "Конечно, я не смотрю..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3296
+# game/dialogues/alicetalk.rpy:3298
 translate deutsch gift_black_lingerie_16b73ea9:
 
     # Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:3297
+# game/dialogues/alicetalk.rpy:3299
 translate deutsch gift_black_lingerie_c14c7755:
 
     # Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
     Alice_06 ""
 
-# game/dialogues/alicetalk.rpy:3298
+# game/dialogues/alicetalk.rpy:3300
 translate deutsch gift_black_lingerie_25da30bf:
 
     # Max_01 "Ладно, считай, я ничего не видел."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3302
+# game/dialogues/alicetalk.rpy:3304
 translate deutsch gift_black_lingerie_d7e4c21c:
 
     # Alice_07 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидит?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3303
+# game/dialogues/alicetalk.rpy:3305
 translate deutsch gift_black_lingerie_74d1c40a:
 
     # Max_05 "Не то слово, всё выглядит шикарно!"
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:3318
+# game/dialogues/alicetalk.rpy:3320
 translate deutsch gift_black_lingerie_dbebfc6a:
 
     # Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3321
+# game/dialogues/alicetalk.rpy:3323
 translate deutsch gift_black_lingerie_14440938:
 
     # Max_02 "Я не пялюсь..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3324
+# game/dialogues/alicetalk.rpy:3326
 translate deutsch gift_black_lingerie_2e964202:
 
     # Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:3325
+# game/dialogues/alicetalk.rpy:3327
 translate deutsch gift_black_lingerie_c14c7755_1:
 
     # Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
     Alice_06 ""
 
-# game/dialogues/alicetalk.rpy:3326
+# game/dialogues/alicetalk.rpy:3328
 translate deutsch gift_black_lingerie_25da30bf_1:
 
     # Max_01 "Ладно, считай, я ничего не видел."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3332
+# game/dialogues/alicetalk.rpy:3334
 translate deutsch gift_black_lingerie_2d17227f:
 
     # Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3333
+# game/dialogues/alicetalk.rpy:3335
 translate deutsch gift_black_lingerie_14440938_1:
 
     # Max_02 "Я не пялюсь..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3338
+# game/dialogues/alicetalk.rpy:3340
 translate deutsch gift_black_lingerie_a371d731:
 
     # Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись, на мне же нет трусиков!"
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3339
+# game/dialogues/alicetalk.rpy:3341
 translate deutsch gift_black_lingerie_14440938_2:
 
     # Max_02 "Я не пялюсь..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3345
+# game/dialogues/alicetalk.rpy:3347
 translate deutsch gift_black_lingerie_02ed4906:
 
     # Alice_02 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидят?"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3346
+# game/dialogues/alicetalk.rpy:3348
 translate deutsch gift_black_lingerie_cd1842d4:
 
     # Max_04 "Не то слово, сидят прекрасно!"
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:3347
+# game/dialogues/alicetalk.rpy:3349
 translate deutsch gift_black_lingerie_4fdace82:
 
     # Alice_01 "Здорово! А теперь отвернись, не подглядывай! Нужно ещё лифчик примерить."
     Alice_01 ""
 
-# game/dialogues/alicetalk.rpy:3350
+# game/dialogues/alicetalk.rpy:3352
 translate deutsch gift_black_lingerie_2c4a92b7:
 
     # Max_03 "Конечно, я не смотрю..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3353
+# game/dialogues/alicetalk.rpy:3355
 translate deutsch gift_black_lingerie_d60af571:
 
     # Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3354
+# game/dialogues/alicetalk.rpy:3356
 translate deutsch gift_black_lingerie_910b5259:
 
     # Max_05 "Тебе идёт, всё выглядит шикарно!"
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:3363
+# game/dialogues/alicetalk.rpy:3365
 translate deutsch gift_black_lingerie_final_da4fda21:
 
     # Alice_02 "Ну, спасибо тебе. Да, в этом точно можно покрасоваться перед камерами. Не уверена, что даст эффект, но я же одета... В общем, я попробую!"
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3364
+# game/dialogues/alicetalk.rpy:3366
 translate deutsch gift_black_lingerie_final_5345692a:
 
     # Max_04 "Этого достаточно?"
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:3365
+# game/dialogues/alicetalk.rpy:3367
 translate deutsch gift_black_lingerie_final_b3981e8d:
 
     # Alice_03 "Сомневаюсь, если честно. Ты знаешь... Давай попробуем на всякий случай ещё кое-что. Поищи что-нибудь более сексуальное. Ничего не обещаю, но вдруг поможет..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3366
+# game/dialogues/alicetalk.rpy:3368
 translate deutsch gift_black_lingerie_final_efb73eb0:
 
     # Max_01 "Хорошо, я что-нибудь подыщу..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3375
+# game/dialogues/alicetalk.rpy:3377
 translate deutsch alice_gift_sweets_fd790983:
 
     # Alice_02 "Да ладно! Это мне нравится... И что там у тебя?" nointeract
     Alice_02 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3383
+# game/dialogues/alicetalk.rpy:3385
 translate deutsch alice_gift_sweets_cd967215:
 
     # Alice_07 "Ага! Мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3384
+# game/dialogues/alicetalk.rpy:3386
 translate deutsch alice_gift_sweets_053993a1:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3388
+# game/dialogues/alicetalk.rpy:3390
 translate deutsch alice_gift_sweets_eadaadaf:
 
     # Alice_03 "Я даже подумываю, а не обнять ли тебя за это, Макс? Ну так... совсем немного..." nointeract
     Alice_03 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3394
+# game/dialogues/alicetalk.rpy:3396
 translate deutsch alice_gift_sweets_0460935e:
 
     # Alice_04 "[succes!t]Ладно, Макс, пожалуй ты это заслужил..."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3397
+# game/dialogues/alicetalk.rpy:3399
 translate deutsch alice_gift_sweets_82bbbdea:
 
     # Max_03 "Хорошо, что хоть так можно взять и обнять тебя без ущерба своему здоровью!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3398
+# game/dialogues/alicetalk.rpy:3400
 translate deutsch alice_gift_sweets_25f9db11:
 
     # Alice_07 "Я вижу, что ты действительно стремишься сделать мне приятно, вот я и не вредничаю..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3399
+# game/dialogues/alicetalk.rpy:3401
 translate deutsch alice_gift_sweets_c9c4f595:
 
     # Max_05 "Да, надо бы почаще так делать."
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:3400
+# game/dialogues/alicetalk.rpy:3402
 translate deutsch alice_gift_sweets_d1ecaad6:
 
     # Alice_13 "Ой, Макс, нет! Почаще - не надо... А то я фигуру испорчу, мне так нельзя!"
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:3401
+# game/dialogues/alicetalk.rpy:3403
 translate deutsch alice_gift_sweets_1401828f:
 
     # Max_02 "Согласен, такую стройную фигуру лучше не портить... Но временами, любимыми конфетами можно и побаловаться!"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3402
+# game/dialogues/alicetalk.rpy:3404
 translate deutsch alice_gift_sweets_0594e879:
 
     # Alice_05 "Ну да, временами... И сейчас как раз такой момент!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3403
+# game/dialogues/alicetalk.rpy:3405
 translate deutsch alice_gift_sweets_05193b35:
 
     # Max_01 "Наслаждайся, сластёна! Не буду мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3408
+# game/dialogues/alicetalk.rpy:3410
 translate deutsch alice_gift_sweets_22133154:
 
     # Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3411
+# game/dialogues/alicetalk.rpy:3413
 translate deutsch alice_gift_sweets_2eba28c2:
 
     # Max_09 "Ну вот, я тебе любимые конфеты покупаю от чистого сердца, а ты..."
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:3412
+# game/dialogues/alicetalk.rpy:3414
 translate deutsch alice_gift_sweets_b7ba514f:
 
     # Alice_07 "Не повезло тебе просто сегодня... Если бы купил большую коробку конфет, я бы чувствовала себя самой любимой сестрёнкой! А так..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3413
+# game/dialogues/alicetalk.rpy:3415
 translate deutsch alice_gift_sweets_4650613e:
 
     # Max_01 "Понятно всё с тобой. Я тогда лучше пойду..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3416
+# game/dialogues/alicetalk.rpy:3418
 translate deutsch alice_gift_sweets_957ffb88:
 
     # Alice_04 "Я даже обниму тебя за это! Ну так... совсем немного... Иди ко мне."
     Alice_04 ""
 
-# game/dialogues/alicetalk.rpy:3419
+# game/dialogues/alicetalk.rpy:3421
 translate deutsch alice_gift_sweets_82bbbdea_1:
 
     # Max_03 "Хорошо, что хоть так можно взять и обнять тебя без ущерба своему здоровью!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3420
+# game/dialogues/alicetalk.rpy:3422
 translate deutsch alice_gift_sweets_25f9db11_1:
 
     # Alice_07 "Я вижу, что ты действительно стремишься сделать мне приятно, вот я и не вредничаю..."
     Alice_07 ""
 
-# game/dialogues/alicetalk.rpy:3421
+# game/dialogues/alicetalk.rpy:3423
 translate deutsch alice_gift_sweets_c9c4f595_1:
 
     # Max_05 "Да, надо бы почаще так делать."
     Max_05 ""
 
-# game/dialogues/alicetalk.rpy:3422
+# game/dialogues/alicetalk.rpy:3424
 translate deutsch alice_gift_sweets_d1ecaad6_1:
 
     # Alice_13 "Ой, Макс, нет! Почаще - не надо... А то я фигуру испорчу, мне так нельзя!"
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:3423
+# game/dialogues/alicetalk.rpy:3425
 translate deutsch alice_gift_sweets_1401828f_1:
 
     # Max_02 "Согласен, такую стройную фигуру лучше не портить... Но временами, любимыми конфетами можно и побаловаться!"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3424
+# game/dialogues/alicetalk.rpy:3426
 translate deutsch alice_gift_sweets_0594e879_1:
 
     # Alice_05 "Ну да, временами... И сейчас как раз такой момент!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3425
+# game/dialogues/alicetalk.rpy:3427
 translate deutsch alice_gift_sweets_05193b35_1:
 
     # Max_01 "Наслаждайся, сластёна! Не буду мешать..."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3435
+# game/dialogues/alicetalk.rpy:3437
 translate deutsch alice_about_lingerie0_d8fa105c:
 
     # Alice_12 "Слышал или подслушал?"
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:3436
+# game/dialogues/alicetalk.rpy:3438
 translate deutsch alice_about_lingerie0_2a44705b:
 
     # Max_01 "Слышал. Эрик мне и сказал."
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3437
+# game/dialogues/alicetalk.rpy:3439
 translate deutsch alice_about_lingerie0_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3438
+# game/dialogues/alicetalk.rpy:3440
 translate deutsch alice_about_lingerie0_f8fd533a:
 
     # Max_02 "Да так, интересно было, какое ты себе боди захотела. Покажешь?"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3442
+# game/dialogues/alicetalk.rpy:3444
 translate deutsch alice_about_lingerie0_7f85a848:
 
     # Alice_03 "Для этого компьютер нужен. Так что, если интересно, то заходи, когда я в своей комнате. Покажу..."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3443
+# game/dialogues/alicetalk.rpy:3445
 translate deutsch alice_about_lingerie0_4fea5bb2:
 
     # Max_01 "Ага. Обязательно зайду"
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3456
+# game/dialogues/alicetalk.rpy:3458
 translate deutsch alice_showing_lingerie1_5f50ce1d:
 
     # Alice_03 "Вот, смотри... Боди, как боди, слегка прозрачное и кружевное. Всё, как вы, мальчики, любите."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3457
+# game/dialogues/alicetalk.rpy:3459
 translate deutsch alice_showing_lingerie1_6bddc98c:
 
     # Max_03 "Ну да, мне уже не терпится увидеть его на тебе!"
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3458
+# game/dialogues/alicetalk.rpy:3460
 translate deutsch alice_showing_lingerie1_3f45c9af:
 
     # Alice_05 "Это если я ещё разрешу тебе смотреть на меня в этом боди! Вот Эрик купит - ему и можно будет смотреть, ну и тем, для кого я всё это рекламирую."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3459
+# game/dialogues/alicetalk.rpy:3461
 translate deutsch alice_showing_lingerie1_21921cd2:
 
     # Max_11 "А как же я?"
     Max_11 ""
 
-# game/dialogues/alicetalk.rpy:3460
+# game/dialogues/alicetalk.rpy:3462
 translate deutsch alice_showing_lingerie1_dfc1c960:
 
     # Alice_02 "Интернет тебе в помощь, Макс! Там полно всяких разных девушек в любом нижнем белье. Может и меня там найдёшь, уже..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3461
+# game/dialogues/alicetalk.rpy:3463
 translate deutsch alice_showing_lingerie1_0be86b3e:
 
     # Max_08 "Ладно, я тебя понял."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:3462
+# game/dialogues/alicetalk.rpy:3464
 translate deutsch alice_showing_lingerie1_039ef6ce:
 
     # Max_09 "{i}( Мне ещё как можно будет на тебя смотреть, когда я куплю это боди первее Эрика! Вот только времени совсем в обрез, надо торопиться... Блин, Эрик точно будет этому не рад! Стоит ли оно того, это боди? ){/i}"
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:3474
+# game/dialogues/alicetalk.rpy:3476
 translate deutsch gift_lace_lingerie_7a0bce7e:
 
     # Alice_15 "Ого! В смысле, то самое, которое я тебе показывала или какое-то другое?"
     Alice_15 ""
 
-# game/dialogues/alicetalk.rpy:3475
+# game/dialogues/alicetalk.rpy:3477
 translate deutsch gift_lace_lingerie_5acfd87b:
 
     # Max_01 "Да, то самое. Ты же не против?"
     Max_01 ""
 
-# game/dialogues/alicetalk.rpy:3476
+# game/dialogues/alicetalk.rpy:3478
 translate deutsch gift_lace_lingerie_d05d1c9b:
 
     # Alice_05 "Конечно не против! Давай его сюда, буду примерять... Только, если не будешь смотреть..."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3477
+# game/dialogues/alicetalk.rpy:3479
 translate deutsch gift_lace_lingerie_88551f02:
 
     # Max_03 "Конечно! Мне не терпится увидеть, как оно на тебе сидит..."
     Max_03 ""
 
-# game/dialogues/alicetalk.rpy:3483
+# game/dialogues/alicetalk.rpy:3485
 translate deutsch gift_lace_lingerie_1bb4de64:
 
     # Alice_12 "Неплохо это ты уселся в первых рядах, Макс! Отвернись хоть для приличия или живо пойдёшь гулять..."
     Alice_12 ""
 
-# game/dialogues/alicetalk.rpy:3484
+# game/dialogues/alicetalk.rpy:3486
 translate deutsch gift_lace_lingerie_c20736bf:
 
     # Max_02 "Я глаза закрою..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3488
+# game/dialogues/alicetalk.rpy:3490
 translate deutsch gift_lace_lingerie_54299116:
 
     # Alice_14 "Эй! Макс! Ты же сказал, что закроешь глаза. Хорошо я заметила, что ты пялишься на меня, прежде чем всё с себя сняла! Отвернись, быстро! Ну или хотя бы закрой глаза руками..."
     Alice_14 ""
 
-# game/dialogues/alicetalk.rpy:3489
+# game/dialogues/alicetalk.rpy:3491
 translate deutsch gift_lace_lingerie_8cbe532e:
 
     # Max_04 "Ты так красиво начала раздеваться, что я забыл не смотреть. Считай, закрыл."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:3493
+# game/dialogues/alicetalk.rpy:3495
 translate deutsch gift_lace_lingerie_88c80c12:
 
     # Alice_05 "Смотри мне, Макс! Я ведь сразу увижу в зеркало, если ты начнёшь подглядывать сквозь пальцы. Ты же не хочешь получить с ноги за это?"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3495
+# game/dialogues/alicetalk.rpy:3497
 translate deutsch gift_lace_lingerie_b8b29617:
 
     # Max_19 "Естественно, не хочу." nointeract
     Max_19 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3503
+# game/dialogues/alicetalk.rpy:3505
 translate deutsch gift_lace_lingerie_5700a36b:
 
     # Max_02 "{i}( Ага, взял и закрыл! Я что, совсем святой, чтобы не рискнуть хоть одним глазком увидеть голую Алису! Да ещё так близко! Бесподобная у меня сестрёнка... ){/i}"
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3506
+# game/dialogues/alicetalk.rpy:3508
 translate deutsch gift_lace_lingerie_6b1999ca:
 
     # Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Прямо, как мне и хочется... Хм, а может она заметила, что я всё равно подглядываю и таким образом дразнит меня?! Знать бы это наверняка... ){/i}"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3511
+# game/dialogues/alicetalk.rpy:3513
 translate deutsch gift_lace_lingerie_b0f28e71:
 
     # Alice_18 "Макс!!!"
     Alice_18 ""
 
-# game/dialogues/alicetalk.rpy:3513
+# game/dialogues/alicetalk.rpy:3515
 translate deutsch gift_lace_lingerie_9137b0d5:
 
     # Max_08 "Не бей! Я просто тебя проверял. На внимательность..." nointeract
     Max_08 "" nointeract
 
-# game/dialogues/alicetalk.rpy:3525
+# game/dialogues/alicetalk.rpy:3527
 translate deutsch gift_lace_lingerie_027a5864:
 
     # Alice_02 "Всё, можно смотреть... Что скажешь, тебе нравится или нет? Мне вот в нём удобно..."
     Alice_02 ""
 
-# game/dialogues/alicetalk.rpy:3526
+# game/dialogues/alicetalk.rpy:3528
 translate deutsch gift_lace_lingerie_a50a9b69:
 
     # Max_04 "Алиса, на твоём чудесном теле, что угодно будет смотреться шикарно. И да, мне нравится, как это выглядит! Покрутись ещё немного для меня..."
     Max_04 ""
 
-# game/dialogues/alicetalk.rpy:3530
+# game/dialogues/alicetalk.rpy:3532
 translate deutsch gift_lace_lingerie_db6ef32c:
 
     # Alice_06 "Ну как, всё посмотрел? Ай!!! У меня ногу свело! Ой, как же сильно свело... Ой-ёй-ёй!!!"
     Alice_06 ""
 
-# game/dialogues/alicetalk.rpy:3531
+# game/dialogues/alicetalk.rpy:3533
 translate deutsch gift_lace_lingerie_c2765e70:
 
     # Max_07 "Которую? Давай её мне, я помассирую..."
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3537
+# game/dialogues/alicetalk.rpy:3539
 translate deutsch gift_lace_lingerie_8d729ac8:
 
     # Alice_13 "Правую. Ой, Макс! По-моему, лучше не трогать... Очень уж тянет. А хотя... вроде лучше... Да, так намного лучше... Фух!"
     Alice_13 ""
 
-# game/dialogues/alicetalk.rpy:3538
+# game/dialogues/alicetalk.rpy:3540
 translate deutsch gift_lace_lingerie_27120bb2:
 
     # Max_09 "Многовато ты за компьютером времени проводишь. Двигаться надо побольше."
     Max_09 ""
 
-# game/dialogues/alicetalk.rpy:3539
+# game/dialogues/alicetalk.rpy:3541
 translate deutsch gift_lace_lingerie_fe88edb1:
 
     # Alice_05 "Ой, ну вторая мама появилась у меня! Просто разок свело ногу, подумаешь."
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3540
+# game/dialogues/alicetalk.rpy:3542
 translate deutsch gift_lace_lingerie_8aa39d7d:
 
     # Max_08 "Ага, скоро снова сведёт, это я тебе гарантирую. На онлайн-курсах узнал, если сводит, то нужно или двигаться больше, или массаж делать серьёзнее."
     Max_08 ""
 
-# game/dialogues/alicetalk.rpy:3546
+# game/dialogues/alicetalk.rpy:3548
 translate deutsch gift_lace_lingerie_3ecad78b:
 
     # Alice_03 "Двигаться больше — это спортом заниматься, ты хочешь сказать? Не люблю я это. Я люблю на солнышке понежиться, за книжкой посидеть или перед экраном ТВ или компьютера. Ты же знаешь."
     Alice_03 ""
 
-# game/dialogues/alicetalk.rpy:3547
+# game/dialogues/alicetalk.rpy:3549
 translate deutsch gift_lace_lingerie_697f00d7:
 
     # Max_07 "Знаю. Значит массаж. Надо больше внимания уделить твоим ножкам. Согласна?"
     Max_07 ""
 
-# game/dialogues/alicetalk.rpy:3548
+# game/dialogues/alicetalk.rpy:3550
 translate deutsch gift_lace_lingerie_6152a638:
 
     # Alice_05 "А согласна! Ты так самоотверженно мне сейчас ногу помассировал. Даже ни разу не попытался на грудь мою засмотреться или ещё куда. А боди ведь слегка прозрачное!"
     Alice_05 ""
 
-# game/dialogues/alicetalk.rpy:3549
+# game/dialogues/alicetalk.rpy:3551
 translate deutsch gift_lace_lingerie_e52eb91b:
 
     # Max_02 "Да я твои сосочки наизусть знаю! Это шутка..."
     Max_02 ""
 
-# game/dialogues/alicetalk.rpy:3550
+# game/dialogues/alicetalk.rpy:3552
 translate deutsch gift_lace_lingerie_7778d00e:
 
     # Alice_01 "Но правдивая, извращенец ты мелкий! Давай гуляй, у меня блог простаивает... И спасибо за подарок. Нужно будет Эрику не забыть сказать, что ты его опередил. Это же не станет для вас проблемой?"
     Alice_01 ""
 
-# game/dialogues/alicetalk.rpy:3551
+# game/dialogues/alicetalk.rpy:3553
 translate deutsch gift_lace_lingerie_311d8c21:
 
     # Max_01 "Разберёмся как-нибудь, не переживай."
@@ -7824,71 +7824,71 @@ translate deutsch strings:
     old "Ну, как хочешь..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:2249
+    # game/dialogues/alicetalk.rpy:2251
     old "Да ладно! Это мне нравится... И что там у тебя?"
     new ""
 
-    # game/dialogues/alicetalk.rpy:2249
+    # game/dialogues/alicetalk.rpy:2251
     old "Ого! И правда хочешь рискнуть... И что там у тебя на этот раз?"
     new ""
 
-    # game/dialogues/alicetalk.rpy:2249
+    # game/dialogues/alicetalk.rpy:2251
     old "Наконец-то! Ну давай, показывай, что у тебя на этот раз?!"
     new ""
 
-    # game/dialogues/alicetalk.rpy:2314
+    # game/dialogues/alicetalk.rpy:2316
     old "Да я же случайно оказался около душа... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new ""
 
-    # game/dialogues/alicetalk.rpy:2738
+    # game/dialogues/alicetalk.rpy:2740
     old "Хочется надеяться, что так и будет... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new ""
 
-    # game/dialogues/alicetalk.rpy:2828
+    # game/dialogues/alicetalk.rpy:2830
     old "Именно на это я и надеюсь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new ""
 
-    # game/dialogues/alicetalk.rpy:2918
+    # game/dialogues/alicetalk.rpy:2920
     old "Только если без последующего насилия... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new ""
 
-    # game/dialogues/alicetalk.rpy:3107
+    # game/dialogues/alicetalk.rpy:3109
     old "Ты мне кое-что показала..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:3107
+    # game/dialogues/alicetalk.rpy:3109
     old "Ты мне кое-что сделала..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:3107
+    # game/dialogues/alicetalk.rpy:3109
     old "Мы делали кое-что..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:3107
+    # game/dialogues/alicetalk.rpy:3109
     old "Да, ну извини..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:3190
+    # game/dialogues/alicetalk.rpy:3192
     old "Ничего..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:3190
+    # game/dialogues/alicetalk.rpy:3192
     old "Может, попозируешь для меня..."
     new ""
 
-    # game/dialogues/alicetalk.rpy:3227
+    # game/dialogues/alicetalk.rpy:3229
     old "Ну что, примеришь при мне?"
     new ""
 
-    # game/dialogues/alicetalk.rpy:3227
+    # game/dialogues/alicetalk.rpy:3229
     old "Ну что, примеришь при мне? {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
     new ""
 
-    # game/dialogues/alicetalk.rpy:3495
+    # game/dialogues/alicetalk.rpy:3497
     old "{i}подглядывать {color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}"
     new ""
 
-    # game/dialogues/alicetalk.rpy:3495
+    # game/dialogues/alicetalk.rpy:3497
     old "{i}ждать{/i}"
     new ""
 

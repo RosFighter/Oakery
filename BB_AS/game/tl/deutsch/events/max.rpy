@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/events/max.rpy:5
 translate deutsch StartDialog_069fda26:

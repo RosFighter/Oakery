@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/events/eric_cam.rpy:13
 translate deutsch cam0_eric_ann_sleep_7477b46c:

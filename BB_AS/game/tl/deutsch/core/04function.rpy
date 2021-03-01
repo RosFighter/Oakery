@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 translate deutsch strings:
 
@@ -82,43 +82,43 @@ translate deutsch strings:
     old "Настроение %s %s"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Война"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Враждебные"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Плохие"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Прохладные"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Неплохие"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Хорошие"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Тёплые"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Дружеские"
     new ""
 
-    # game/core/04function.rpy:963
+    # game/core/04function.rpy:965
     old "Близкие"
     new ""
 
-    # game/core/04function.rpy:1326
+    # game/core/04function.rpy:1330
     old "Конфеты закончились"
     new ""
 

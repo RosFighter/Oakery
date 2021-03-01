@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/events/lisa_cam.rpy:8
 translate deutsch cam0_lisa_sleep_night_cab47b53:

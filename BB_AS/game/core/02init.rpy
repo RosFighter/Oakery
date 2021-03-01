@@ -33,6 +33,9 @@ define norestrain = _("{color=#E59400}{i}Сдержаться не удалос�
 define lisa_good_kiss = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
 define lisa_bad_kiss  = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
 
+define like = _("{color=#00FF00}{i}Ей нравится!{/i}{/color}\n")
+define dont_like = _("{color=#E59400}{i}Ей не нравится!{/i}{/color}\n")
+
 define config.has_autosave = False
 define config.has_quicksave = False
 

@@ -366,6 +366,8 @@ init python:
         if 'alice_nopants' in persistent.mems_var:
             sm.extend(['nopants', 'not_nopants'])
         al = Profile("Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
+        tdcv = {'eric.lingerie' : Daily()}
+        tdcv['eric.lingerie'].stage = 7
 
         my_scope = {
             'talk_var'  : {'smoke': '', 'teachkiss':(4 if 'kira_tv_bj' in persistent.memories and persistent.memories['kira_tv_bj']>0 else 3)},
@@ -373,6 +375,8 @@ init python:
             'tm'        : '03:00',
             'alice'     : al,
             'spent_time': 0,
+            'dcv'       : tdcv,
+            'mgg'       : mgg,
             }
         return my_scope
 

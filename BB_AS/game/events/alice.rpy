@@ -1254,7 +1254,7 @@ label alice_smoke:
 
     return
 
-
+#  Алиса перед зеркалом ванной
 label alice_after_club:
     scene location house bathroom door-evening
     if peeping['alice_bath'] != 0:
@@ -1437,6 +1437,8 @@ label alice_after_club:
                     Max_02 "{i}( А Алиса хорошо целуется! Да со страстью, увлечённо... Ммм... Губки у неё сочные... А уж как в член мой вцепилась! ){/i}"
                     "{i}закончить целоваться{/i}":
                         pass
+                    "{i}прикоснуться к её груди{/i}" if dcv['eric.lingerie'].stage in [5, 7] and __suf=='a':  # Макс подарил Алисе кружевное боди
+                        jump .next2
 
                 $ renpy.show('Alice bath-after-club 03-02'+__suf)
 
@@ -1482,6 +1484,192 @@ label alice_after_club:
                 Alice_07 "Думаешь? Как знать... Но в любом случае уже поздно, а мне ещё ванну принимать, так что спокойной ночи, Макс."
                 Max_01 "Ага. Приятных снов, Алиса."
 
+        jump .end
+
+    label .next2:
+        $ _ch_sex4 = GetChance(mgg.sex+10, 4, 900)
+        $ _ch_sex3 = GetChance(mgg.sex+10, 3, 900)
+
+        #вариант "прикоснуться к её груди"   (Макс подарил Алисе кружевное боди)
+        #after-club-03 + after-club-03-max-06-alice-06a
+        scene BG char Alice bath-after-club 03
+        show Alice bath-after-club 03-06a
+        Max_04 "{i}Ох, какая у неё нежная и упругая грудь! Ухх.. Она ещё активнее начала мне дрочить, а это означает, что ей нравится, как я мну её сиськи! Может даже удастся зайти ещё дальше...{/i}"
+
+        #after-club-03 + after-club-03-max-05-alice-05a
+        show Alice bath-after-club 03-05a
+        Alice_09 "Ах, Макс! И где ты такому научился?! У меня теперь сосочки изнывают от возбуждения! А как жарко стало..."
+        Max_03 "Сними халатик и я покажу, что ещё умею..."
+
+        #after-club-05 + after-club-05-max&alice-01
+        scene BG char Alice bath-after-club 05
+        show Alice bath-after-club 05-01
+        Alice_06 "Ммм... Макс... Ну вот что ты делаешь?! Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка..."
+        Max_07 "Так почему бы тебе не представить ненадолго, что я твой парень?"
+        menu:
+            Alice_07 "Ты должно быть не в курсе, но я предпочитаю девушек... Но для парня, у которого есть кое-что особенное, я не прочь сделать исключение, ради любопытства..."
+            "{i}ласкать её киску рукой{/i}":
+                #after-club-05 + after-club-05-max&alice-02 или after-club-06 + after-club-06-max&alice-01
+                if renpy.random.randint(1, 2)>1:
+                    scene BG char Alice bath-after-club 05
+                    show Alice bath-after-club 05-02
+                else:
+                    scene BG char Alice bath-after-club 06
+                    show Alice bath-after-club 06-01
+                Alice_15 "Макс! Ахх... Ты полез рукой прямо туда... Это же так..."
+                Max_02 "Приятно? Это ты хотела сказать?"
+                menu:
+                    Alice_06 "Д-а-а... То есть, я хотела сказать... неправильно! Но к чёрту, продолжай... Мне нравится, как ты это делаешь, ммм..."
+                    "{i}проникнуть в её киску пальцами{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                        if RandomChance(_ch_sex4.ch):
+                            # (Ей нравится!)
+                            $ Skill('sex', 0.2)
+                            #after-club-06 + after-club-06-max&alice-02
+                            scene BG char Alice bath-after-club 06
+                            show Alice bath-after-club 06-02
+                            Alice_10 "[like!t]Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
+                            menu:
+                                Max_04 "{i}Алиса так приятно постанывает... А уж мне не менее приятно трахать эту нежную киску пальцами. Может быть, она даже кончит, если я ускорюсь...{/i}"
+                                "{i}ускориться{/i} {color=[_ch_sex3.col]}(Сексуальный опыт. Шанс: [_ch_sex3.vis]){/color}":
+                                    jump .fast_fingers
+
+                                "{i}ласкать её киску языком{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                                    jump .cunnilingus
+                        else:
+                            # (Ей не нравится!)
+                            jump .dont_like
+
+                    "{i}ласкать её киску языком{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
+                        jump .cunnilingus
+
+    label .fast_fingers:
+        if RandomChance(_ch_sex3.ch):
+            $ Skill('sex', 0.2)
+            # (Ей нравится!)
+            Alice_11 "[like!t]Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс! А ты скоро кончишь?"
+            Max_02 "Для этого тебе придётся очень постараться..."
+
+            #after-club-04 + after-club-04-max-01-alice-01a
+            scene BG char Alice bath-after-club 04
+            show Alice bath-after-club 04-01a
+            Alice_08 "Если я кончила, то и мой парень должен кончить... Только так и не иначе! Хочешь узнать, на что мой язычок способен?"
+            Max_01 "Жду не дождусь, Алиса!"
+
+            #after-club-04 + after-club-04-max&alice-01 или after-club-08 + after-club-08-max&alice-bj01
+            if renpy.random.randint(1, 2)>1:
+                scene BG char Alice bath-after-club 04
+                show Alice bath-after-club 04-02
+            else:
+                scene BG char Alice bath-after-club 08
+                show Alice bath-after-club 08-bj01
+            menu:
+                Alice_07 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?"
+                "{i}кончить ей на лицо{/i}":
+                    jump .cum_face
+
+                "{i}кончить ей на грудь{/i}":
+                    jump .cum_breast
+
+                "Вообще-то, я надеялся, что ты возьмёшь его в рот..." if False:  #для версии 0.07
+                    pass
+        else:
+            # (Ей не нравится!)
+            jump .dont_like
+
+    label .cunnilingus:
+        $ __r1 = renpy.random.randint(1, 2)
+        if __r1>1:
+            scene BG char Alice bath-after-club 05
+            show Alice bath-after-club 05-03
+        else:
+            scene BG char Alice bath-after-club 07
+            show Alice bath-after-club 07-01
+        if RandomChance(_ch_sex4.ch):
+            #(Ей нравится!)
+            $ Skill('sex', 0.2)
+            #after-club-05 + after-club-05-max&alice-03 или after-club-07 + after-club-07-max&alice-01
+            menu:
+                Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..."
+                "{i}ещё быстрее работать языком{/i}":
+                    pass
+
+            #after-club-05 + after-club-05-max&alice-04 или after-club-07 + after-club-07-max&alice-02
+            if __r1>1:
+                show Alice bath-after-club 05-04
+            else:
+                show Alice bath-after-club 07-02
+            Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да... Как же это было классно! Ох... А ты кончил?"
+            Max_02 "А должен был?"
+
+            #after-club-04 + after-club-04-max-01-alice-01a
+            scene BG char Alice bath-after-club 04
+            show Alice bath-after-club 04-01a
+            Alice_08 "Если я кончила, то и мой парень должен кончить... Только так и не иначе! Хочешь узнать, на что мой язычок способен?"
+            Max_01 "Жду не дождусь, Алиса!"
+
+            #after-club-04 + after-club-04-max&alice-01 или after-club-08 + after-club-08-max&alice-bj01
+            if renpy.random.randint(1, 2)>1:
+                scene BG char Alice bath-after-club 04
+                show Alice bath-after-club 04-02
+            else:
+                scene BG char Alice bath-after-club 08
+                show Alice bath-after-club 08-bj01
+            menu:
+                Alice_07 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?"
+                "{i}кончить ей на лицо{/i}":
+                    jump .cum_face
+
+                "{i}кончить ей на грудь{/i}":
+                    jump .cum_breast
+
+                "Вообще-то, я надеялся, что ты возьмёшь его в рот..." if False:  #для версии 0.07
+                    pass
+        else:
+            #(Ей не нравится!)
+            jump .dont_like
+
+    label .cum_breast:
+        #after-club-08 + after-club-08-max&alice-cum02 + after-club-08-max&alice-(cum02a/cum02b)
+        scene BG char Alice bath-after-club 08
+        show Alice bath-after-club 08-cum02
+        $ renpy.show("FG bath-after-club 08-cum02"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
+
+        Alice_09 "Ого, сколько в тебе было... потенциала... Ты заляпал мне всю грудь! Теперь мыться надо..."
+        Max_03 "А ты разве не для этого ванну собиралась принять?"
+        Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
+        Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+        menu:
+            Alice_05 "Вот именно, что ничего!"
+            "{i}отправиться спать{/i}":
+                jump .end
+
+    label .cum_face:
+        #after-club-09 + after-club-09-max&alice-cum01 + after-club-09-max&alice-(cum01a/cum01b)
+        scene BG char Alice bath-after-club 09
+        show Alice bath-after-club 09-cum01
+        $ renpy.show("FG bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
+
+        Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
+        Max_07 "А ты хотела как-то по-другому?"
+        Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
+        Max_03 "А ты разве не для этого ванну собиралась принять?"
+        Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
+        Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+        menu:
+            Alice_05 "Вот именно, что ничего!"
+            "{i}отправиться спать{/i}":
+                jump .end
+
+    label .dont_like:
+        # (Ей не нравится!)
+        $ Skill('sex', 0.1)
+        menu:
+            Alice_13 "[dont_like!t]Ай, Макс! Ты слишком грубо это делаешь! Я люблю грубость, но не до такой же степени... Испортил ты всё! И вообще, у меня ванна набралась, так что спокойной ночи."
+            "Я могу лучше...":
+                Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
+                Max_00 "Всё понял, ухожу..."
+            "Извини, я не хотел. Не обижайся...":
+                pass
         jump .end
 
     label .suck:
@@ -2194,7 +2382,7 @@ label alice_towel_after_club:
                 menu:
                     Alice_04 "Так достаточно быстро? Ну и вымахал же у тебя такой член, Макс! Нравится? Не сдерживайся, а то у меня начинает уставать рука..."
                     "{i}кончить{/i}":
-                        jump .cum_boobs
+                        jump .cum_breast
 
             "Так пусти в дело свой язычок..." if 'eric.lingerie' in dcv and dcv['eric.lingerie'].stage in [5, 7]:   #если Алису наказывали полностью голую + Макс опередил Эрика с дарением белья
 
@@ -2218,12 +2406,12 @@ label alice_towel_after_club:
                         jump .cum_face
 
                     "{i}кончить ей на грудь{/i}":
-                        jump .cum_boobs
+                        jump .cum_breast
 
             "Вообще-то, я надеялся, что ты возьмёшь его в рот..." if False:  #для версии 0.07
                 pass
 
-    label .cum_boobs:
+    label .cum_breast:
 
         #after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-06 + after-club-bathbj01-max&alice-06a
         scene BG char Alice after-club-bath bj-03

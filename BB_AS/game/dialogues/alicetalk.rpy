@@ -407,7 +407,7 @@ label alice_talk_tv:
         $ _ch20 = GetChance(mgg.massage, 10)
         $ _ch15 = GetChance(mgg.massage, 7)
         ### сцена массажа 01 или 02
-        scene BG char Alice tv-mass-01
+        scene BG tv-mass-01
         $ renpy.show('Alice tv-mass ' + _pose + _dress)
         menu:
             Max_03 "{i}( Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает? ){/i}"
@@ -419,7 +419,7 @@ label alice_talk_tv:
             $ flags['alice.tv.mass'] += 1
             $ _can_double_choko = _drink>0 and kol_choco>0 and (flags['double_mass_alice'] or alice.dress=='a')
             $ _pose = {'01':'03', '02':'04'}[_pose]
-            scene BG char Alice tv-mass-03
+            scene BG tv-mass-03
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
             Alice_04 "[alice_good_mass!t]А ты неплох сегодня в этом деле... Хорошо, что ты никакой не работяга. Руки у тебя нежные. Приятно очень..." nointeract
             jump .choice_mass
@@ -607,7 +607,7 @@ label alice_talk_tv:
             jump .end
 
     $ _pose = {'05':'07', '06':'08'}[_pose]
-    scene BG char Alice tv-mass-07
+    scene BG tv-mass-07
     $ renpy.show('Alice tv-mass ' + _pose + _dress)
     Alice_04 "Ну всё, кажется хватит. Во всяком случае, тебе. А то мне ногу испачкаешь... Но ручки у тебя - что надо. Даже не ожидала такого от тебя..."
     Max_05 "Я тоже не ожидал... такого..."
@@ -632,7 +632,7 @@ label alice_talk_tv:
 
 label advanced_massage1:
     $ added_mem_var('advanced_massage1')
-    scene BG char Alice tv-mass-03
+    scene BG tv-mass-03
     $ _pose = {'05':'09', '06':'10'}[_pose]
     $ renpy.show('Alice tv-mass ' + _pose + _dress)
     #tv-mass-09-10
@@ -654,7 +654,7 @@ label advanced_massage1:
         Max_04 "{i}( Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко... ){/i}"
         "{i}ласкать её киску через одежду{/i}":
             pass
-    scene BG char Alice tv-mass-07
+    scene BG tv-mass-07
     $ _pose = {'11':'13', '12':'14'}[_pose]
     $ renpy.show('Alice tv-mass ' + _pose + _dress)
     #tv-mass-13-14
@@ -671,7 +671,7 @@ label advanced_massage1:
     Max_05 "{i}( Алиса так жарко и классно трётся об мои пальцы своей киской! Хоть на ней и есть одежда, но я чувствую через неё всё... ){/i}"
     Alice_10 "Ох, чёрт... Макс... я больше не могу! Только не убирай свою руку оттуда... Я уже кончаю... Ахх!"
     Max_06 "{i}( Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила! ){/i}"
-    scene BG char Alice tv-mass-03
+    scene BG tv-mass-03
     $ _pose = {'15':'09', '16':'10'}[_pose]
     $ renpy.show('Alice tv-mass ' + _pose + _dress)
     #tv-mass-09-10

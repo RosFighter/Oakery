@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/events/kira_cam.rpy:7
 translate deutsch cam0_kira_sleep_night_e86a44fa:

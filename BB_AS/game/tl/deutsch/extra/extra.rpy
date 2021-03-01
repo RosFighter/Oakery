@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 translate deutsch strings:
 
@@ -67,6 +67,18 @@ translate deutsch strings:
     new ""
 
     # game/extra/extra.rpy:58
+    old "Я принес тебе полотенце!"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Первые снимки для блога Алисы"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Я обошёл Эрика с подарком для Алисы"
+    new ""
+
+    # game/extra/extra.rpy:58
     old "Смотрим порно вместе с тётей"
     new ""
 
@@ -103,11 +115,31 @@ translate deutsch strings:
     new ""
 
     # game/extra/extra.rpy:58
+    old "Стриптиз после клуба"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Порно-портфолио для Киры"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Немного БДСМ от Киры"
+    new ""
+
+    # game/extra/extra.rpy:58
     old "Вкусные уроки с сестрёнкой"
     new ""
 
     # game/extra/extra.rpy:58
     old "Кажется, мы что-то забыли"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Больше, чем помощь с домашним заданием"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Ужастики в обнимку с Лизой"
     new ""
 
     # game/extra/extra.rpy:58
@@ -122,47 +154,55 @@ translate deutsch strings:
     old "Глубокий минет в мамином исполнении"
     new ""
 
-    # game/extra/extra.rpy:103
-    old "Порно-портфолио для Киры"
+    # game/extra/extra.rpy:58
+    old "Её первые познания..."
     new ""
 
-    # game/extra/extra.rpy:103
-    old "Немного БДСМ от Киры"
+    # game/extra/extra.rpy:58
+    old "Как возбудить ещё больше?"
     new ""
 
-    # game/extra/extra.rpy:103
-    old "Первые снимки для блога Алисы"
+    # game/extra/extra.rpy:58
+    old "Нежно и аккуратно!"
     new ""
 
-    # game/extra/extra.rpy:124
+    # game/extra/extra.rpy:58
+    old "Как долго это нужно делать?"
+    new ""
+
+    # game/extra/extra.rpy:58
+    old "Кружевное боди для Алисы от Эрика"
+    new ""
+
+    # game/extra/extra.rpy:140
     old "ВОСПОМИНАНИЯ"
     new ""
 
-    # game/extra/extra.rpy:127
+    # game/extra/extra.rpy:143
     old "ФОТОСНИМКИ"
     new ""
 
-    # game/extra/extra.rpy:164
+    # game/extra/extra.rpy:191
     old "Воспоминание недоступно"
     new ""
 
-    # game/extra/extra.rpy:167
+    # game/extra/extra.rpy:194
     old "Воспоминание ещё не открыто"
     new ""
 
-    # game/extra/extra.rpy:173
+    # game/extra/extra.rpy:200
     old "В вашей коллекции ещё нет фотоснимков."
     new ""
 
-    # game/extra/extra.rpy:242
+    # game/extra/extra.rpy:269
     old "Предыдущий снимок"
     new ""
 
-    # game/extra/extra.rpy:248
+    # game/extra/extra.rpy:275
     old "Вернуться в коллекцию"
     new ""
 
-    # game/extra/extra.rpy:253
+    # game/extra/extra.rpy:280
     old "Следующий снимок"
     new ""
 

@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2021-02-20 15:51
+﻿# TODO: Translation updated at 2021-03-02 01:41
 
 # game/events/lisa.rpy:23
 translate deutsch lisa_shower_1532bb65:
@@ -1182,121 +1182,127 @@ translate deutsch lisa_horor_movie_r_016f583a:
     # Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}" nointeract
     Max_10 "" nointeract
 
-# game/events/lisa.rpy:1054
-translate deutsch lisa_horor_movie_r_5ead36ab:
+# game/events/lisa.rpy:1048
+translate deutsch lisa_horor_movie_r_11d3ed3b:
 
-    # Lisa_09 "Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
+    # Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:1056
+translate deutsch lisa_horor_movie_r_12b43dd4:
+
+    # Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
     Lisa_09 ""
 
-# game/events/lisa.rpy:1057
-translate deutsch lisa_horor_movie_r_caa5d6fa:
+# game/events/lisa.rpy:1059
+translate deutsch lisa_horor_movie_r_a3b4a2f9:
 
-    # Lisa_09 "Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
+    # Lisa_09 "[restrain!t]Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
     Lisa_09 ""
 
-# game/events/lisa.rpy:1060
+# game/events/lisa.rpy:1062
 translate deutsch lisa_horor_movie_r_e06d84d1:
 
     # Max_04 "Ага, я тоже. Было страшно, но я рад, что ты была рядом. Это приятно."
     Max_04 ""
 
-# game/events/lisa.rpy:1065
+# game/events/lisa.rpy:1067
 translate deutsch lisa_horor_movie_r_e8dd9914:
 
     # Lisa_10 "Мне только страшно до своей кровати идти теперь..."
     Lisa_10 ""
 
-# game/events/lisa.rpy:1066
+# game/events/lisa.rpy:1068
 translate deutsch lisa_horor_movie_r_7656a27c:
 
     # Max_03 "Так не иди. Спи со мной. Я очень даже не против!"
     Max_03 ""
 
-# game/events/lisa.rpy:1067
+# game/events/lisa.rpy:1069
 translate deutsch lisa_horor_movie_r_2ccbf395:
 
     # Lisa_05 "Чтобы со мной рядом кое-что шевелилось? Так я точно не усну. Мне нужно как-то храбрости набраться..." nointeract
     Lisa_05 "" nointeract
 
-# game/events/lisa.rpy:1078
+# game/events/lisa.rpy:1080
 translate deutsch lisa_horor_movie_r_92e639d8:
 
     # Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки... ){/i}"
     Max_05 ""
 
-# game/events/lisa.rpy:1082
+# game/events/lisa.rpy:1084
 translate deutsch lisa_horor_movie_r_5aae11b2:
 
     # Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
     Lisa_02 ""
 
-# game/events/lisa.rpy:1083
+# game/events/lisa.rpy:1085
 translate deutsch lisa_horor_movie_r_5c2cac39:
 
     # Max_01 "Ага. Приятных снов."
     Max_01 ""
 
-# game/events/lisa.rpy:1087
+# game/events/lisa.rpy:1089
 translate deutsch lisa_horor_movie_r_62242552:
 
     # Lisa_13 "Ну ага, просто иди! А вдруг меня что-то схватит?!"
     Lisa_13 ""
 
-# game/events/lisa.rpy:1088
+# game/events/lisa.rpy:1090
 translate deutsch lisa_horor_movie_r_4217f727:
 
     # Max_07 "У нас в комнате нет никаких монстров! Если конечно не считать того, что у меня в трусах."
     Max_07 ""
 
-# game/events/lisa.rpy:1092
+# game/events/lisa.rpy:1094
 translate deutsch lisa_horor_movie_r_08782138:
 
     # Lisa_01 "Ой, с тобой и правда страшно спать будет! Я пошла к себе..."
     Lisa_01 ""
 
-# game/events/lisa.rpy:1093
+# game/events/lisa.rpy:1095
 translate deutsch lisa_horor_movie_r_1dc372f8:
 
     # Max_01 "Ага. Спокойной ночи."
     Max_01 ""
 
-# game/events/lisa.rpy:1100
-translate deutsch lisa_horor_movie_r_not_restrain_26ebf379:
+# game/events/lisa.rpy:1099
+translate deutsch lisa_horor_movie_r_26ebf379:
 
     # Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
     Lisa_13 ""
 
-# game/events/lisa.rpy:1101
+# game/events/lisa.rpy:1103
 translate deutsch lisa_horor_movie_r_not_restrain_e9260b73:
 
     # Max_07 "Однозначно кажется..."
     Max_07 ""
 
-# game/events/lisa.rpy:1106
+# game/events/lisa.rpy:1108
 translate deutsch lisa_horor_movie_r_not_restrain_afe91d1a:
 
     # Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Я же твоя сестра, тебе стыдно должно быть!"
     Lisa_12 ""
 
-# game/events/lisa.rpy:1107
+# game/events/lisa.rpy:1109
 translate deutsch lisa_horor_movie_r_not_restrain_5876b4d3:
 
     # Max_09 "Стыдно?! Ну встал и встал, подумаешь."
     Max_09 ""
 
-# game/events/lisa.rpy:1112
+# game/events/lisa.rpy:1114
 translate deutsch lisa_horor_movie_r_not_restrain_8ab024b6:
 
     # Lisa_10 "Хватит уже похабно думать обо мне! Я ушла спать... Ой! Как страшно..."
     Lisa_10 ""
 
-# game/events/lisa.rpy:1113
+# game/events/lisa.rpy:1115
 translate deutsch lisa_horor_movie_r_not_restrain_75e90268:
 
     # Max_04 "Проводить тебя до кровати?"
     Max_04 ""
 
-# game/events/lisa.rpy:1114
+# game/events/lisa.rpy:1116
 translate deutsch lisa_horor_movie_r_not_restrain_f26114cd:
 
     # Lisa_13 "Сама справлюсь! Ой ой ой!"
@@ -1424,11 +1430,11 @@ translate deutsch strings:
     old "{i}да пофиг!{/i}"
     new ""
 
-    # game/events/lisa.rpy:1067
+    # game/events/lisa.rpy:1069
     old "{i}поцеловать Лизу{/i}"
     new ""
 
-    # game/events/lisa.rpy:1067
+    # game/events/lisa.rpy:1069
     old "Просто иди и всё..."
     new ""
 
