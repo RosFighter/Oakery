@@ -2326,7 +2326,7 @@ translate english Lisa_HomeWork_next_foot_mass_f9f4ba7f:
 translate english Lisa_HomeWork_shoulders_aa180a92:
 
     # Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну..."
-    Lisa_01 "[failed!t] No, Max. I think that's enough. I already feel nice and relaxed!"
+    Lisa_01 "[failed!t]No, Max. I think that's enough. I already feel nice and relaxed!"
 
 # game/dialogues/lisatalk.rpy:1314
 translate english Lisa_HomeWork_shoulders_6d2ca900:
@@ -2338,7 +2338,7 @@ translate english Lisa_HomeWork_shoulders_6d2ca900:
 translate english Lisa_HomeWork_shoulders_a640ac19:
 
     # Lisa_02 "[succes!t]Ну, можно. Мне бы это тоже не помешало." nointeract
-    Lisa_02 "[succes!t] Well, you can. I could use that, too." nointeract
+    Lisa_02 "[succes!t]Well, you can. I could use that, too." nointeract
 
 # game/dialogues/lisatalk.rpy:1329
 translate english Lisa_HomeWork_shoulders_9678442f:
@@ -2356,7 +2356,7 @@ translate english Lisa_HomeWork_shoulders_3d632a20:
 translate english Lisa_HomeWork_shoulders_947374c1:
 
     # Lisa_05 "[lisa_good_mass!t]Да... То, что мне и нужно! Как хорошо..."
-    Lisa_05 "[lisa_good_mass!t] Yes... That's what I need! So good..."
+    Lisa_05 "[lisa_good_mass!t]Yes... That's what I need! So good..."
 
 # game/dialogues/lisatalk.rpy:1336
 translate english Lisa_HomeWork_shoulders_a8dbd30a:
@@ -2386,7 +2386,7 @@ translate english Lisa_HomeWork_shoulders_202ee0e5:
 translate english Lisa_HomeWork_shoulders_45a8919b:
 
     # Lisa_10 "[lisa_bad_mass!t]Ой, Макс! Это уже как-то... грубовато. Ты, видимо, уже устал. Давай на этом закончим."
-    Lisa_10 "[lisa_bad_mass!t] Oh, Max! That was... kind of rough. You must be tired by now. Let's get this over with."
+    Lisa_10 "[lisa_bad_mass!t]Oh, Max! That was... kind of rough. You must be tired by now. Let's get this over with."
 
 # game/dialogues/lisatalk.rpy:1354
 translate english Lisa_HomeWork_shoulders_052f029d:
@@ -2512,7 +2512,7 @@ translate english liza_hand_mass_f1414293:
 translate english liza_hand_mass_911b0ee4:
 
     # Lisa_09 "[lisa_bad_mass!t]Ой, Макс, нет! Как-то это неприятно... Давай лучше не будем. Может быть в другой раз?"
-    Lisa_09 "[lisa_bad_mass!t] Oh, Max, no! It's kind of unpleasant... Let's not do this. Maybe some other time?"
+    Lisa_09 "[lisa_bad_mass!t]Oh, Max, no! It's kind of unpleasant... Let's not do this. Maybe some other time?"
 
 # game/dialogues/lisatalk.rpy:1433
 translate english liza_hand_mass_d46dc1a6:
@@ -2578,7 +2578,7 @@ translate english liza_hand_mass_b36d62fb:
 translate english liza_hand_mass_874350ae:
 
     # Lisa_10 "[lisa_bad_mass!t]Ой, а вот это уже не очень. Ты так хорошо начал, но дальше лучше не продолжать. Как-то больновато."
-    Lisa_10 "[lisa_bad_mass!t] Oh, that's not good. You started so well, but it's better not to go on. That hurt a little."
+    Lisa_10 "[lisa_bad_mass!t]Oh, that's not good. You started so well, but it's better not to go on. That hurt a little."
 
 # game/dialogues/lisatalk.rpy:1466
 translate english liza_hand_mass_f293ac8d:
@@ -4384,7 +4384,7 @@ translate english lisa_sorry_gifts_middle_f7c7ac85:
 translate english lisa_sorry_gifts_middle_38f4c1c1:
 
     # Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"
-    Lisa_05 "[succes!t] Okay, I think you deserve it. Come here, let me give you a hug!"
+    Lisa_05 "[succes!t]Okay, I think you deserve it. Come here, let me give you a hug!"
 
 # game/dialogues/lisatalk.rpy:2310
 translate english lisa_sorry_gifts_middle_0385dd40_3:
@@ -5068,7 +5068,7 @@ translate english lisa_sorry_gifts_good_f7c7ac85:
 translate english lisa_sorry_gifts_good_38f4c1c1:
 
     # Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"
-    Lisa_05 "[succes!t] Okay, you probably deserve it. Come here and let me hug you!"
+    Lisa_05 "[succes!t]Okay, you probably deserve it. Come here and let me hug you!"
 
 # game/dialogues/lisatalk.rpy:2549
 translate english lisa_sorry_gifts_good_0385dd40_3:
@@ -5764,7 +5764,7 @@ translate english liza_secret_alisa_b629dab1:
 translate english liza_secret_alisa_56fa1346:
 
     # Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
-    Lisa_09 "[failed!t] No, Max, I won't. I promised. You wouldn't want anyone to know your secrets, would you?"
+    Lisa_09 "[failed!t]No, Max, I won't. I promised. You wouldn't want anyone to know your secrets, would you?"
 
 # game/dialogues/lisatalk.rpy:2812
 translate english liza_secret_alisa_1e8b77df:

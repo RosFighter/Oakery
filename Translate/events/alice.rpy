@@ -526,7 +526,7 @@ translate english alice_shower_alt_peepeng_c8b2c2b6:
 translate english alice_shower_alt_peepeng_09abbe09:
 
     # Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-    Max_01 "[undetect!t] Oh, Yes... It's hard to resist wet Alice! Especially when she twists her ass so seductively..."
+    Max_01 "[undetect!t]Oh, Yes... It's hard to resist wet Alice! Especially when she twists her ass so seductively..."
 
 # game/events/alice.rpy:390
 translate english alice_shower_closer_peepeng_c8b2c2b6:
@@ -3614,7 +3614,7 @@ translate english alice_after_club_next2_3b10b531:
 translate english alice_after_club_next2_a9d15c00:
 
     # Alice_10 "[like!t]Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
-    Alice_10 "[like! t]ah! Oh, shit, Max! Yeah... This is so good... Faster... I'm so turned on by your huge cock!"
+    Alice_10 "[like!t]ah! Oh, shit, Max! Yeah... This is so good... Faster... I'm so turned on by your huge cock!"
 
 # game/events/alice.rpy:1531
 translate english alice_after_club_next2_09f682d1:
@@ -3626,7 +3626,7 @@ translate english alice_after_club_next2_09f682d1:
 translate english alice_after_club_fast_fingers_4c3bcf59:
 
     # Alice_11 "[like!t]Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс! А ты скоро кончишь?"
-    Alice_11 "[like! t]Yes, Max, yes! I'm coming... Drive your naughty fingers deeper... Yes... Oh... Oh, that's great. Are you coming soon?"
+    Alice_11 "[like!t]Yes, Max, yes! I'm coming... Drive your naughty fingers deeper... Yes... Oh... Oh, that's great. Are you coming soon?"
 
 # game/events/alice.rpy:1550
 translate english alice_after_club_fast_fingers_0a46f6d0:
@@ -3656,7 +3656,7 @@ translate english alice_after_club_fast_fingers_633a64f3:
 translate english alice_after_club_cunnilingus_22cc9964:
 
     # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..." nointeract
-    Alice_09 "[like! t]Yes, Max, yes! I'm so close... Don't stop. You have such a quick and nimble tongue, Max... Mmm..." nointeract
+    Alice_09 "[like!t]Yes, Max, yes! I'm so close... Don't stop. You have such a quick and nimble tongue, Max... Mmm..." nointeract
 
 # game/events/alice.rpy:1601
 translate english alice_after_club_cunnilingus_7b561508:

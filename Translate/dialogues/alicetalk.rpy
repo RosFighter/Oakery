@@ -460,7 +460,7 @@ translate english alice_talk_tv_choco_dd214a08:
 translate english alice_talk_tv_choco_df78af2c:
 
     # Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_07 "[succes!t] Eh... Shut up and give me the candy. But only one... It's delicious... Now I'm ready, start the massage!" nointeract
+    Alice_07 "[succes!t]Eh... Shut up and give me the candy. But only one... It's delicious... Now I'm ready, start the massage!" nointeract
 
 # game/dialogues/alicetalk.rpy:398
 translate english alice_talk_tv_choco_0383591b:
@@ -490,7 +490,7 @@ translate english alice_talk_tv_massage_67ad610f:
 translate english alice_talk_tv_choice_mass_264b44e4:
 
     # Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
-    Alice_02 "[succes!t] Max, what are you... Oh, okay, let's have one more... But this is the last one, don't offer any more, or I'll kick you know where! And this candy seems to taste even better than the last one! I feel really warm... "
+    Alice_02 "[succes!t]Max, what are you... Oh, okay, let's have one more... But this is the last one, don't offer any more, or I'll kick you know where! And this candy seems to taste even better than the last one! I feel really warm... "
 
 # game/dialogues/alicetalk.rpy:457
 translate english alice_talk_tv_choice_mass_6b3e8ab2:
@@ -628,7 +628,7 @@ translate english alice_talk_tv_choice_mass_29f8b378:
 translate english alice_talk_tv_jeans_208248b5:
 
     # Alice_02 "[succes!t]Да, что-то тесновато в них и так жарко... Хотя...Не-е-ет, нет, нет! Не буду снимать я сейчас джинсы. Не дождёшься!" nointeract
-    Alice_02 "[succes!t] Yeah, they're pretty hot and cramped... Although... No, no, no, no! I'm not taking off my jeans. You can wait!" nointeract
+    Alice_02 "[succes!t]Yeah, they're pretty hot and cramped... Although... No, no, no, no! I'm not taking off my jeans. You can wait!" nointeract
 
 # game/dialogues/alicetalk.rpy:522
 translate english alice_talk_tv_jeans_c64ca38f:
@@ -658,7 +658,7 @@ translate english alice_talk_tv_jeans_61204728:
 translate english alice_talk_tv_jeans_9563ece2:
 
     # Alice_04 "[succes!t]Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
-    Alice_04 "[succes!t] You know, they are in the way. And I feel hot. I think I'll give you a little extra motivation, since you're doing well..."
+    Alice_04 "[succes!t]You know, they are in the way. And I feel hot. I think I'll give you a little extra motivation, since you're doing well..."
 
 # game/dialogues/alicetalk.rpy:531
 translate english alice_talk_tv_jeans_015c58db:
@@ -766,7 +766,7 @@ translate english alice_talk_tv_massage_next_e263d7d3:
 translate english alice_talk_tv_massage_next_18caf83c:
 
     # Alice_13 "[alice_bad_mass!t]Ой, нет, что-то не то. Ты же так хорошо начал, и что-то неприятно стало... Иди, ещё поучись этому своему массажу на ютубе. Так не пойдёт..."
-    Alice_13 "[alice_bad_mass!t] Oh, no, something's wrong. You got off to such a good start, maybe you got too excited. You should go study some more... "
+    Alice_13 "[alice_bad_mass!t]Oh, no, something's wrong. You got off to such a good start, maybe you got too excited. You should go study some more... "
 
 # game/dialogues/alicetalk.rpy:604
 translate english alice_talk_tv_massage_next_689c772b:
@@ -3550,7 +3550,7 @@ translate english alice_sorry_gifts_apology_accepted_a174e7cf:
 translate english alice_sorry_gifts_you_deserve_16e9d084:
 
     # Alice_04 "[succes!t]Ладно, Макс, пожалуй ты заслужил это своими подарками..."
-    Alice_04 "[succes!t] Okay, Max, you probably deserve this for your gifts.."
+    Alice_04 "[succes!t]Okay, Max, you probably deserve this for your gifts.."
 
 # game/dialogues/alicetalk.rpy:2284
 translate english alice_sorry_gifts_you_deserve_f070e574:
@@ -5104,7 +5104,7 @@ translate english alice_sorry_gifts_good_c18baf85:
 translate english alice_sorry_gifts_good_65bcc085:
 
     # Alice_03 "[succes!t]Ладно, Макс, считай твои извинения приняты... Мама ничего не узнает, так что можешь дышать спокойно."
-    Alice_03 "[succes!t] Okay, Max, consider your apology accepted... Mom won't find out, so you can breathe easy."
+    Alice_03 "[succes!t]Okay, Max, consider your apology accepted... Mom won't find out, so you can breathe easy."
 
 # game/dialogues/alicetalk.rpy:2751
 translate english alice_sorry_gifts_good_f3cde9b4:
@@ -5128,7 +5128,7 @@ translate english alice_sorry_gifts_good_423a1ca0:
 translate english alice_sorry_gifts_good_53fcd775:
 
     # Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."
-    Alice_05 "[failed!t] Okay, Max, consider your apology accepted... Come here..."
+    Alice_05 "[failed!t]Okay, Max, consider your apology accepted... Come here..."
 
 # game/dialogues/alicetalk.rpy:2758
 translate english alice_sorry_gifts_good_c2c05b19:
@@ -5572,7 +5572,7 @@ translate english alice_sorry_gifts_good_784e185e:
 translate english alice_sorry_gifts_good_835ab3bd:
 
     # Alice_04 "[succes!t]Пожалуй ты заслужил это своими подарками..."
-    Alice_04 "[succes!t] Perhaps you deserve it with your gifts..."
+    Alice_04 "[succes!t]Perhaps you deserve it with your gifts..."
 
 # game/dialogues/alicetalk.rpy:2895
 translate english alice_sorry_gifts_good_f070e574:
@@ -6556,7 +6556,7 @@ translate english alice_gift_sweets_eadaadaf:
 translate english alice_gift_sweets_0460935e:
 
     # Alice_04 "[succes!t]Ладно, Макс, пожалуй ты это заслужил..."
-    Alice_04 "[succes!t] Okay, you probably deserve it..."
+    Alice_04 "[succes!t]Okay, you probably deserve it..."
 
 # game/dialogues/alicetalk.rpy:3323
 translate english alice_gift_sweets_82bbbdea:

@@ -826,7 +826,7 @@ translate english eric_ann_shower_alt_peepeng_d769a708:
 translate english eric_ann_shower_alt_peepeng_42177608:
 
     # Max_09 "[undetect!t]Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!" nointeract
-    Max_09 "[undetect!t] Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!" nointeract
+    Max_09 "[undetect!t]Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!" nointeract
 
 # game/events/eric.rpy:829
 translate english eric_ann_shower_alt_peepeng_5b560f45:

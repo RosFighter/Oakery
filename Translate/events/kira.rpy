@@ -3757,7 +3757,7 @@ translate english kira_night_tv_tv_sex2_ef5f22f0_1:
 translate english kira_night_tv_tv_sex2_46cfabbd:
 
     # Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому наслаждению, которое нас ждало дальше..."
-    Kira_08 "[norestrain! t]wow! You're done already! Looks like you're still getting used to and getting used to it..."
+    Kira_08 "[norestrain!t]wow! You're done already! Looks like you're still getting used to and getting used to it..."
 
 # game/events/kira.rpy:1700
 translate english kira_night_tv_tv_sex2_38f54446:
@@ -3817,7 +3817,7 @@ translate english kira_night_tv_missionary_ef5f22f0:
 translate english kira_night_tv_missionary_1abefedc:
 
     # Kira_05 "[norestrain!t]Ого, сколько её в тебе, Макс! Весь живот мне залил, безобразник... Это я любя! Славно развлеклись, правда?"
-    Kira_05 "[norestrain!t] That's a lot, Max! You've poured it all over my belly, you naughty... I love it! That was fun, wasn't it?"
+    Kira_05 "[norestrain!t]That's a lot, Max! You've poured it all over my belly, you naughty... I love it! That was fun, wasn't it?"
 
 # game/events/kira.rpy:1766
 translate english kira_night_tv_missionary_ef5f22f0_1:
@@ -3829,7 +3829,7 @@ translate english kira_night_tv_missionary_ef5f22f0_1:
 translate english kira_night_tv_missionary_46cfabbd:
 
     # Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому наслаждению, которое нас ждало дальше..."
-    Kira_08 "[norestrain! t]wow! You're done already! Looks like you're still getting used to and getting used to it..."
+    Kira_08 "[norestrain!t]wow! You're done already! Looks like you're still getting used to and getting used to it..."
 
 # game/events/kira.rpy:1776
 translate english kira_night_tv_missionary_38f54446:
@@ -3865,7 +3865,7 @@ translate english kira_night_tv_cum_in_mouth_a2bb381b:
 translate english kira_night_tv_minet_after_sex_4713ca96:
 
     # Kira_07 "[restrain!t]Фух, удивляюсь, как ты ещё не кончил, Макс! Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
-    Kira_07 "[restrain!t] Whew, I'm surprised you haven't cum yet, Max! Your dick is just begging for it..."
+    Kira_07 "[restrain!t]Whew, I'm surprised you haven't cum yet, Max! Your dick is just begging for it..."
 
 # game/events/kira.rpy:1813
 translate english kira_night_tv_minet_after_sex_f7a0a397:
