@@ -466,9 +466,8 @@ translate english strings:
 
     # game/core/02init.rpy:36
     old "{color=#00FF00}{i}Ей нравится!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}She loves it!{/i}{/color}\n"
 
     # game/core/02init.rpy:37
     old "{color=#E59400}{i}Ей не нравится!{/i}{/color}\n"
-    new ""
-
+    new "{color=#E59400}{i}She does not like it!{/i}{/color}\n"
