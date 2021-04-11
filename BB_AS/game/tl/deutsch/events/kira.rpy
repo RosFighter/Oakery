@@ -3960,3 +3960,247 @@ translate deutsch strings:
     old "Я не могу устоять перед твоей грудью. Хочу её!"
     new ""
 
+# TODO: Translation updated at 2021-04-11 22:25
+
+# game/events/kira.rpy:346
+translate deutsch kira_bath_cuni_bj_c7076e54:
+
+    # Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ммм... Но я бы не отказалась от кое-чего большого и у тебя это есть... Что скажешь?" nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:352
+translate deutsch kira_bath_cuni_bj_e7c17474:
+
+    # Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ммм... Не хочешь проникнуть в свою тётю чем-нибудь ещё?" nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:518
+translate deutsch kira_bath_horsewoman_2e8e9ba1:
+
+    # Kira_09 "Ах, Макс... Д-а-а... Вот так... Хватит уже дразнить мою киску... Дай мне уже сесть на него! Какой он твёрдый... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:532
+translate deutsch kira_bath_horsewoman_0efdd2cc:
+
+    # Kira_11 "Охх... Да... Обожаю, когда можно попрыгать на чём-то весьма ощутимом! Д-а-а... Только не кончи раньше меня... Ммм... Я уже скоро! Как хорошо..."
+    Kira_11 ""
+
+# game/events/kira.rpy:533
+translate deutsch kira_bath_horsewoman_7d6ba17c:
+
+    # Max_20 "Ты обалденная, тётя Кира! Давай ещё быстрее..."
+    Max_20 ""
+
+# game/events/kira.rpy:534
+translate deutsch kira_bath_horsewoman_bd9f2b57:
+
+    # Kira_12 "О да! Я больше не могу, Макс... Ммм... Ох, как хорошо! Да, я кончаю... Ахх..." nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:541
+translate deutsch kira_bath_horsewoman_88fc2651:
+
+    # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+    Kira_07 ""
+
+# game/events/kira.rpy:542
+translate deutsch kira_bath_horsewoman_6f308174:
+
+    # Max_05 "И мне тоже! Было очень классно!"
+    Max_05 ""
+
+# game/events/kira.rpy:549
+translate deutsch kira_bath_horsewoman_7193f533:
+
+    # Kira_08 "Фух, Макс, ну мы и выдали с тобой..."
+    Kira_08 ""
+
+# game/events/kira.rpy:550
+translate deutsch kira_bath_horsewoman_7e4401f1:
+
+    # Max_02 "Да, тётя Кира, это было что-то нереальное!"
+    Max_02 ""
+
+# game/events/kira.rpy:562
+translate deutsch kira_bath_horsewoman_6920394d:
+
+    # Kira_08 "Ого! Кто-то у нас тут слишком перевозбудился... А я ведь только начала..."
+    Kira_08 ""
+
+# game/events/kira.rpy:563
+translate deutsch kira_bath_horsewoman_ff569f5a:
+
+    # Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
+    Max_20 ""
+
+# game/events/kira.rpy:565
+translate deutsch kira_bath_horsewoman_b732174a:
+
+    # Kira_05 "Да, Макс, такая вот у тебя тётя! Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+    Kira_05 ""
+
+# game/events/kira.rpy:566
+translate deutsch kira_bath_horsewoman_4144ec85:
+
+    # Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!" nointeract
+    Max_01 "" nointeract
+
+# game/events/kira.rpy:579
+translate deutsch kira_bath_dogstyle_c700c47b:
+
+    # Kira_09 "Вот, держи... Д-а-а... Вот так... Вводи его не спеша... Ох, Макс... Он с таким трудом входит в меня, даже когда я такая мокренькая... Ммм..." nointeract
+    Kira_09 "" nointeract
+
+# game/events/kira.rpy:592
+translate deutsch kira_bath_dogstyle_1ab5d265:
+
+    # Kira_11 "Охх... Да... Вот так, Макс! Трахай меня... Ещё... Ещё сильнее! Как же чертовски приятно чувствовать твой член! Д-а-а... Ещё... Я уже близко!"
+    Kira_11 ""
+
+# game/events/kira.rpy:593
+translate deutsch kira_bath_dogstyle_847cda3f:
+
+    # Max_20 "Нравится, как я тебя трахаю, тётя Кира? Получай ещё..."
+    Max_20 ""
+
+# game/events/kira.rpy:594
+translate deutsch kira_bath_dogstyle_e8270cba:
+
+    # Kira_12 "О да! Трахай меня ещё быстрее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, вот так... Ммм... Да, я кончаю... Ахх..." nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:601
+translate deutsch kira_bath_dogstyle_88fc2651:
+
+    # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+    Kira_07 ""
+
+# game/events/kira.rpy:602
+translate deutsch kira_bath_dogstyle_6f308174:
+
+    # Max_05 "И мне тоже! Было очень классно!"
+    Max_05 ""
+
+# game/events/kira.rpy:613
+translate deutsch kira_bath_dogstyle_9183245f:
+
+    # Kira_05 "Ого, всю попку со спиной мне забрызгал, Макс! Приятно развлеклись перед сном, да?"
+    Kira_05 ""
+
+# game/events/kira.rpy:614
+translate deutsch kira_bath_dogstyle_7e4401f1:
+
+    # Max_02 "Да, тётя Кира, это было что-то нереальное!"
+    Max_02 ""
+
+# game/events/kira.rpy:625
+translate deutsch kira_bath_dogstyle_afb9d9d3:
+
+    # Kira_08 "Ого! Ты уже всё! Кто-то у нас тут слишком перевозбудился... Тебе ещё привыкать и привыкать к нашим шалостям..."
+    Kira_08 ""
+
+# game/events/kira.rpy:626
+translate deutsch kira_bath_dogstyle_ff569f5a:
+
+    # Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
+    Max_20 ""
+
+# game/events/kira.rpy:628
+translate deutsch kira_bath_dogstyle_b732174a:
+
+    # Kira_05 "Да, Макс, такая вот у тебя тётя! Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+    Kira_05 ""
+
+# game/events/kira.rpy:629
+translate deutsch kira_bath_dogstyle_4144ec85:
+
+    # Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!" nointeract
+    Max_01 "" nointeract
+
+# game/events/kira.rpy:644
+translate deutsch kira_bath_cum_in_her_mouth_37a27ab8:
+
+    # Max_21 "Ухх... Какие же горячие и ненасытные у тебя губки... Ты просто бесподобно сосёшь, тётя Кира! Да..." nointeract
+    Max_21 "" nointeract
+
+# game/events/kira.rpy:651
+translate deutsch kira_bath_cum_in_her_mouth_c4de2ecf:
+
+    # Max_06 "{i}( Да... Она принимает всю мою сперму не вынимая член изо рта! О боже... Кажется, я её люблю! Хотя, что я болтаю... Но как же это приятно! ){/i}"
+    Max_06 ""
+
+# game/events/kira.rpy:655
+translate deutsch kira_bath_cum_in_her_mouth_bab49e4f:
+
+    # Kira_08 "Вот и твоё напряжение мы сняли! Какие мы сегодня молодцы... Мне очень это всё понравилось!"
+    Kira_08 ""
+
+# game/events/kira.rpy:656
+translate deutsch kira_bath_cum_in_her_mouth_6f308174:
+
+    # Max_05 "И мне тоже! Было очень классно!"
+    Max_05 ""
+
+# game/events/kira.rpy:664
+translate deutsch kira_bath_cum_in_her_mouth_439daa20:
+
+    # Kira_08 "Ого! Кто-то у нас тут слишком перевозбудился... Я даже не успела ничего сделать..."
+    Kira_08 ""
+
+# game/events/kira.rpy:665
+translate deutsch kira_bath_cum_in_her_mouth_ff569f5a:
+
+    # Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
+    Max_20 ""
+
+# game/events/kira.rpy:669
+translate deutsch kira_bath_cum_in_her_mouth_9fe7d7f1:
+
+    # Kira_05 "Да, Макс, такая вот у тебя тётя! Но мне всё равно очень понравилось!"
+    Kira_05 ""
+
+# game/events/kira.rpy:670
+translate deutsch kira_bath_cum_in_her_mouth_6f308174_1:
+
+    # Max_05 "И мне тоже! Было очень классно!"
+    Max_05 ""
+
+# game/events/kira.rpy:675
+translate deutsch kira_bath_end_sex_94418467:
+
+    # Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+    Kira_01 ""
+
+# game/events/kira.rpy:676
+translate deutsch kira_bath_end_sex_4144ec85:
+
+    # Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!" nointeract
+    Max_01 "" nointeract
+
+translate deutsch strings:
+
+    # game/events/kira.rpy:357
+    old "Садись на меня, тётя Кира!"
+    new ""
+
+    # game/events/kira.rpy:357
+    old "Давай-ка сюда свою шикарную попку!"
+    new ""
+
+    # game/events/kira.rpy:518
+    old "{i}Наслаждаться{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}"
+    new ""
+
+    # game/events/kira.rpy:534
+    old "{i}кончить ей на ноги{/i}"
+    new ""
+
+    # game/events/kira.rpy:534
+    old "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}"
+    new ""
+
+    # game/events/kira.rpy:579
+    old "{i}трахать её{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}"
+    new ""
+

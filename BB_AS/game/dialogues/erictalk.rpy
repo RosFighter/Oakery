@@ -31,8 +31,8 @@ label eric_needmoney:
     Eric_03 "Да? Ну, ладно... Держи. Только на глаза не попадайся..."
     Max_01 "Хорошо..."
 
-    $ mgg.ask(5, talk_var['eric.fee'])
-    $ dcv['eric.money'].set_lost(1)
+    $ mgg.ask(5, flags.eric_fee)
+    $ eric.daily.ask_money = 1
 
     return
 
@@ -80,18 +80,18 @@ label eric_voy_wtf:
         "{i}уйти{/i}":
             pass
 
-    $ talk_var['eric.voy.stage'] = 2
-    $ talk_var['eric.fee'] -= 10
+    $ flags.voy_stage = 2
+    $ flags.eric_fee -= 10
     return
 
 
 label lessons_from_Eric:
     $ _stockings = RandomChance(500) # шанс, что Аня будет в чулках, 50%
-    if talk_var['eric.voy.stage']==4:
+    if flags.voy_stage==4:
         jump .first_bj
-    elif talk_var['eric.voy.stage']==5:
+    elif flags.voy_stage==5:
         jump .second_bj
-    elif talk_var['eric.voy.stage']==6:
+    elif flags.voy_stage==6:
         jump .third_bj
     else:
         # "{b}Продолжение в следующей версии...{/b}"
@@ -301,7 +301,7 @@ label lessons_from_Eric:
 
     label .end:
         $ renpy.end_replay()
-        $ talk_var['eric.voy.stage']+=1
+        $ flags.voy_stage+=1
         $ spent_time += max((60 - int(tm[-2:])), 30)
         $ current_room = house[0]
         jump Waiting
@@ -339,11 +339,11 @@ label Eric_talk_about_Lisa_0:
             Eric_02 "Ну если тебе интересно, то да. Ты можешь подглядывать за нашими с Лизой... уроками. В комнате Ани... Я так и быть, позабочусь, чтобы тебя не заметили."
             Max_02 "О, класс! Обязательно гляну..."
 
-            if talk_var['eric.voy.stage'] < 0:
-                $ talk_var['eric.voy.stage'] = 0  # теперь можно подглядывать
+            if flags.voy_stage < 0:
+                $ flags.voy_stage = 0  # теперь можно подглядывать
 
-            $ talk_var['fight_for_Lisa'] = 1  # добровольная "передача" Лизы Эрику
-            $ talk_var['bonus_from_eric'].append('bonus')
+            $ lisa.dcv.battle.stage = 1  # добровольная "передача" Лизы Эрику
+            $ flags.bonus_from_eric.append('bonus')
             $ poss['seduction'].OpenStage(16)
 
         "Нет, можешь обучать... (попытка подружиться)" if not GetRelMax('eric')[0]>0:
@@ -363,10 +363,10 @@ label Eric_talk_about_Lisa_0:
             Eric_06 "Нет, Макс! Сперва, посмотрим как ты будешь дальше себя вести... А пока, только это."
             Max_00 "Ну ладно."
             $ AttitudeChange('eric', 7)
-            if talk_var['eric.voy.stage'] < 0:
-                $ talk_var['eric.voy.stage'] = 0  # теперь можно подглядывать
+            if flags.voy_stage < 0:
+                $ flags.voy_stage = 0  # теперь можно подглядывать
 
-            $ talk_var['fight_for_Lisa'] = 1  # добровольная "передача" Лизы Эрику
+            $ lisa.dcv.battle.stage = 1  # добровольная "передача" Лизы Эрику
             $ poss['seduction'].OpenStage(17)
 
         "А ей не рановато? (попытка выиграть время)" if GetRelMax('eric')[0]>3:
@@ -382,8 +382,8 @@ label Eric_talk_about_Lisa_0:
             Eric_02 "Как ты это сделаешь, не знаю, у нас с Аней на это времени нет, а вот ты всё время дома. Книжки почитайте по теме сексуального воспитания, например. Если за пару недель уложишься, то буду должен - не разочаруешься."
             Max_00 "Хорошо, я попробую..."
 
-            $ talk_var['fight_for_Lisa'] = 2  # отсрочка
-            $ dcv['ae_ed_lisa'].set_lost(14)
+            $ lisa.dcv.battle.stage = 2  # отсрочка
+            $ lisa.dcv.intrusion.set_lost(14)
             $ poss['seduction'].OpenStage(18)
 
         "Лизу тебе не отдам! (расторжение дружбы)" if GetRelMax('eric')[0]>0:
@@ -398,7 +398,7 @@ label Eric_talk_about_Lisa_0:
             Eric_13 "И Макс, если хочешь отправиться в лагерь с целыми яйцами, то даже не пытайся настраивать Лизу против меня! Во-первых, у тебя не получится, а во-вторых, я об этом узнаю..."
             Max_17 "Да пошёл ты!"
             $ AttitudeChange('eric', (-7 if GetRelMax('eric')[0]>3 else -4))
-            $ talk_var['fight_for_Lisa'] = 3  # война, однако
+            $ lisa.dcv.battle.stage = 3  # война, однако
             $ poss['seduction'].OpenStage(19)
 
         "Лизу тебе не отдам! (продолжение вражды)" if not GetRelMax('eric')[0]>0:
@@ -411,11 +411,11 @@ label Eric_talk_about_Lisa_0:
             Eric_13 "И Макс, если хочешь отправиться в лагерь с целыми яйцами, то даже не пытайся настраивать Лизу против меня! Во-первых, у тебя не получится, а во-вторых, я об этом узнаю..."
             Max_17 "Да пошёл ты!"
 
-            $ talk_var['fight_for_Lisa'] = 3  # война, однако
+            $ lisa.dcv.battle.stage = 3  # война, однако
             $ poss['seduction'].OpenStage(19)
 
     $ infl[lisa].freeze = False  # начинается борьба за влияние на Лизу
-    $ flags['lisa.stopkiss'] = 1
+    $ flags.stopkiss = 1
     $ spent_time += 20
     jump Waiting
 
@@ -468,11 +468,11 @@ label Eric_talk_about_Alice_0:
             Max_07 "Это я люблю, но тебе же может пригодиться моё прикрытие и помощь с Алисой, так, по-дружески?"
             Eric_01 "Если мне это понадобится, вот тогда и поговорим о твоих \"премиальных\", а пока гуляй..."
             Max_01 "Ловлю на слове!"
-            if talk_var['eric.voy.stage'] < 0:
-                $ talk_var['eric.voy.stage'] = 0  # теперь можно подглядывать
+            if flags.voy_stage < 0:
+                $ flags.voy_stage = 0  # теперь можно подглядывать
 
-            $ talk_var['fight_for_Alice'] = 1  # добровольная "передача" Алисы Эрику
-            $ talk_var['bonus_from_eric'].append('bonus')
+            $ alice.dcv.battle.stage = 1  # добровольная "передача" Алисы Эрику
+            $ flags.bonus_from_eric.append('bonus')
             $ poss['blog'].OpenStage(9)
 
         "Я мало что об этом знаю... (попытка выиграть время)" if GetRelMax('eric')[0]>0:
@@ -487,8 +487,8 @@ label Eric_talk_about_Alice_0:
             Eric_03 "Ты просто будь увереннее и настойчивее. До разумных приделов конечно. Дерзай... Будут проблемы и нужен будет совет - обращайся."
             Max_11 "Ну здорово."
 
-            $ talk_var['fight_for_Alice'] = 2  # отсрочка
-            $ dcv['eric_alice'].set_lost(12)
+            $ alice.dcv.battle.stage = 2  # отсрочка
+            $ alice.dcv.battle.set_lost(12)
             $ poss['blog'].OpenStage(10)
 
         "Не лез бы ты к Алисе! (расторжение дружбы)" if GetRelMax('eric')[0]>0:
@@ -500,7 +500,7 @@ label Eric_talk_about_Alice_0:
             Max_16 "Посмотрим..."
             $ AttitudeChange('eric', (-7 if GetRelMax('eric')[0]>3 else -4))
             $ poss['blog'].OpenStage(12)
-            $ talk_var['fight_for_Alice'] = 3  # война, однако
+            $ alice.dcv.battle.stage = 3  # война, однако
 
         #если с Эриком вражда
         "Нужна помощь? (попытка подружиться)" if not GetRelMax('eric')[0]>0:
@@ -520,11 +520,11 @@ label Eric_talk_about_Alice_0:
             Eric_01 "Если мне это понадобится, вот тогда и поговорим о твоих \"премиальных\", а пока..."
             Max_01 "Ловлю на слове!"
             $ AttitudeChange('eric', 7)
-            if talk_var['eric.voy.stage'] < 0:
-                $ talk_var['eric.voy.stage'] = 0  # теперь можно подглядывать
+            if flags.voy_stage < 0:
+                $ flags.voy_stage = 0  # теперь можно подглядывать
 
             $ poss['blog'].OpenStage(11)
-            $ talk_var['fight_for_Alice'] = 1  # добровольная "передача" Алисы Эрику
+            $ alice.dcv.battle.stage = 1  # добровольная "передача" Алисы Эрику
 
         "Вот у неё и спрашивай! (продолжение вражды)" if not GetRelMax('eric')[0]>0:
             $ renpy.show('Max talk-terrace 04'+mgg.dress)
@@ -533,7 +533,7 @@ label Eric_talk_about_Alice_0:
             Max_16 "Да отвали ты! И к Алисе не лезь, а то я вышибу тебя отсюда ещё быстрее, чем собирался!"
             Eric_06 "Как жёстко! У меня аж мурашки поползли по спине... от потехи..."
             Max_17 "Ещё посмотрим, кто будет потешаться!"
-            $ talk_var['fight_for_Alice'] = 3  # война, однако
+            $ alice.dcv.battle.stage = 3  # война, однако
             $ poss['blog'].OpenStage(12)
 
     $ infl[alice].freeze = False  # начинается борьба за влияние на Алисе
@@ -560,7 +560,7 @@ label Eric_talk_about_Alice_1:
     Eric_06 "Вот ты губу раскатал, Макс! Не наглей!"
     Max_00 "Ну ладно."
 
-    $ talk_var['fight_for_Alice'] = 5
+    $ alice.dcv.battle.stage = 5
     $ spent_time += 20
     jump Waiting
 
@@ -586,9 +586,9 @@ label Eric_talk_about_lace_lingerie:
         Eric_13 "Нечего мне проблемы устраивать! И мы об этом говорили сразу."
         Max_11 "Ладно, я всё понял."
         #Макс теряет 1 бонус
-        if talk_var['bonus_from_eric'].count('bonus'):
-            $ talk_var['bonus_from_eric'].remove('bonus')
-            $ talk_var['bonus_from_eric'].append('nobonus')
+        if bonus_from_eric.count('bonus'):
+            $ flags.bonus_from_eric.remove('bonus')
+            $ flags.bonus_from_eric.append('nobonus')
         $ poss['blog'].OpenStage(19)
     else:
         #если с Эриком вражда
@@ -600,7 +600,7 @@ label Eric_talk_about_lace_lingerie:
         $ poss['blog'].OpenStage(20)
         #через ? дней произойдёт история с украденым кошельком Эрика (v0.06.5)
 
-    $ dcv['eric.lingerie'].stage = 7
+    $ alice.dcv.intrusion.stage = 7
     $ spent_time += 20
     jump Waiting
 
@@ -635,8 +635,8 @@ label Eric_talk_about_Kira_0:
     Eric_02 "Само собой, Макс. Это уже совсем другой разговор."
     #возвращение в меню с вариантами у Эрика
 
-    $ talk_var['fight_for_Kira'] = 1  # добровольная передача Киры
-    $ wcv['catch.Kira'].set_lost(0)
+    $ kira.dcv.battle.stage = 1  # добровольная передача Киры
+    $ wcv.catch_Kira.set_lost(0)
     $ spent_time += 20
     return
 
@@ -657,14 +657,14 @@ label Eric_talk_about_Kira_1:
             "{i}уйти{/i}":
                 pass
 
-    elif talk_var['fight_for_Kira'] != 2:
+    elif kira.dcv.battle.stage != 2:
         #если дружба, но Макс не рассказал о Кире
         Eric_09 "Теперь-то зачем о ней говорить? Я уже всё знаю! Вот вопрос, почему я об этом узнал только сейчас, Макс? Как-то не по-дружески получается..."
         Max_07 "Я думал, тебя только моя мама и сёстры интересуют."
         Eric_01 "Вот оно что! А такую отвязную совратительницу малолетних решил для себя придержать, да? Ох, разочаровал ты меня, Макс..."
         Max_01 "Но теперь ты о ней знаешь, так что всё супер!"
 
-        if dcv['eric.lingerie'].stage in [8, 9]:
+        if alice.dcv.intrusion.stage in [8, 9]:
             #если за Максом нет косяка по боди для Алисы
             Eric_03 "У меня-то всё супер, а вот ты лишаешься своих \"премиальных\" за свою оплошность."
             Max_08 "Эй, я же не знал, что Кира тоже тебя интересует!"
@@ -673,9 +673,9 @@ label Eric_talk_about_Kira_1:
                 Max_11 "Ладно, я всё понял."
                 "{i}уйти{/i}":
                     #бонусы от Эрика замораживаются
-                    if talk_var['bonus_from_eric'].count('bonus'):
-                        $ talk_var['bonus_from_eric'].remove('bonus')
-                        $ talk_var['bonus_from_eric'].append('nobonus')
+                    if bonus_from_eric.count('bonus'):
+                        $ flags.bonus_from_eric.remove('bonus')
+                        $ flags.bonus_from_eric.append('nobonus')
         else:
             #если за Максом есть косяк по боди для Алисы
             Eric_13 "Могло бы быть супер, но ты с Алисой меня подвёл, а теперь и с Кирой. А я тебе сразу сказал, что будет, если станешь мне мешаться. Видимо, ты принял это за шутку."
@@ -687,12 +687,12 @@ label Eric_talk_about_Kira_1:
                 Max_11 "Ладно, я всё понял."
                 "{i}уйти{/i}":
                     #Макс теряет свои бонусы и деньги от Эрика
-                    while talk_var['bonus_from_eric'].count('bonus'):
-                        $ talk_var['bonus_from_eric'].remove('bonus')
-                        $ talk_var['bonus_from_eric'].append('nobonus')
-                    if talk_var['bonus_from_eric'].count('money'):
-                        $ talk_var['bonus_from_eric'].remove('money')
-                        $ talk_var['bonus_from_eric'].append('nomoney')
+                    while bonus_from_eric.count('bonus'):
+                        $ flags.bonus_from_eric.remove('bonus')
+                        $ flags.bonus_from_eric.append('nobonus')
+                    if bonus_from_eric.count('money'):
+                        $ flags.bonus_from_eric.remove('money')
+                        $ flags.bonus_from_eric.append('nomoney')
 
     else:
         #если дружба и Макс сдал Киру
@@ -701,14 +701,14 @@ label Eric_talk_about_Kira_1:
         Eric_06 "Тебе что, подглядываний твоих любимых мало?"
         Max_09 "Я вообще-то первый с ней сблизился! Конечно, она сама этого хотела, но всё же... Я мог и не рассказывать о ней, но по-дружески решил поделиться. Мне кажется, это тянет на серьёзную премию!"
 
-        if dcv['eric.lingerie'].stage in [8, 9]:
+        if alice.dcv.intrusion.stage in [8, 9]:
             #если за Максом нет косяка по боди для Алисы
             Eric_02 "Ну, спорить с этим не буду. Ты мне не мешал и даже с кое-чем помог, так что да... Как надумаешь, что хочешь, так сразу обращайся, что смогу - сделаю."
             menu:
                 Max_05 "Круто!"
                 "{i}уйти{/i}":
                     # + 1 супербонус
-                    $ talk_var['bonus_from_eric'].append('super')
+                    $ flags.bonus_from_eric.append('super')
         else:
             #если за Максом есть косяк по боди для Алисы
             Eric_01 "Да, Макс, тянуло бы... Если бы ты не обломал мой подарок для Алисы! Но за то, что ты подогнал мне Киру на блюдечке, я тебя прощаю и даже даю возможность попросить что-либо. Конечно, в относительно разумных пределах."
@@ -716,11 +716,11 @@ label Eric_talk_about_Kira_1:
                 Max_01 "Хорошо, как надумаю, что хочу, так сразу к тебе..."
                 "{i}уйти{/i}":
                     #бонусы от Эрика размораживаются + 1 новый бонус
-                    while talk_var['bonus_from_eric'].count('nobonus'):
-                        $ talk_var['bonus_from_eric'].remove('nobonus')
-                        $ talk_var['bonus_from_eric'].append('bonus')
-                    $ talk_var['bonus_from_eric'].append('bonus')
+                    while bonus_from_eric.count('nobonus'):
+                        $ flags.bonus_from_eric.remove('nobonus')
+                        $ flags.bonus_from_eric.append('bonus')
+                    $ flags.bonus_from_eric.append('bonus')
 
-    $ wcv['catch.Kira'].stage += 1
+    $ wcv.catch_Kira.stage += 1
     $ spent_time += 20
     return

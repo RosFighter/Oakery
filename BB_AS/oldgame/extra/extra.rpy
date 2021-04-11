@@ -53,7 +53,8 @@ init python:
             rez = persistent.photos[id_key][shot]
         return rez
 
-define extrapak = True
+init 100 python:
+    extrapak = True
 
 define mems = [
         [

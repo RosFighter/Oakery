@@ -16,12 +16,12 @@ label shoping:
 label back_shoping:
     $ renpy.block_rollback()
 
-    $ EventsByTime['back_shoping'].stage += 1
+    $ flags.back_shop += 1
     $ current_room = house[6]
     scene BG incoming-00
     show other shopping-go-02
 
-    if EventsByTime['back_shoping'].stage == 1:
+    if flags.back_shop == 1:
         ## --- Девчонки возвращаются с первого шоппинга
         Lisa_02 "Привет, Макс! Мы вернулись..."
         Max_04 "Ну как, удачно сходили?"
@@ -61,7 +61,7 @@ label back_shoping:
         Max_00 "Ага..."
         $ poss['Swimsuit'].OpenStage(2)
 
-    elif EventsByTime['back_shoping'].stage == 2:
+    elif flags.back_shop == 2:
         ## --- Девчонки возвращаются со второго шоппинга
 
         Ann_05 "Привет, Макс! Мы вернулись..."
@@ -185,7 +185,7 @@ label MeetingEric:
         menu:
             Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу."
             "{i}идти к столу{/i}":
-                $ talk_var['empathic'] = 2
+                $ eric.flags.crush = 2
                 jump Waiting
 
     label .middle:
@@ -195,7 +195,7 @@ label MeetingEric:
         menu:
             Ann_17 "Макс, мы с тобой потом поговорим. Ну, Эрик, проходи к столу. Мы обычно ужинаем, да и завтракаем на открытом воздухе, тут у нас веранда..."
             "{i}идти к столу{/i}":
-                $ talk_var['empathic'] = 1
+                $ eric.flags.crush = 1
                 jump Waiting
 
     label .bad:
@@ -216,7 +216,7 @@ label MeetingEric:
             "{i}промолчать{/i}":
                 Ann_01 "Молчишь? Нечего сказать или стыдно? Будем считать, что ты просто голодный, а не специально хотел нахамить Эрику. Ладно, пойдёмте ужинать..."
 
-        $ talk_var['empathic'] = 0
+        $ eric.flags.crush = 0
         jump Waiting
 
 

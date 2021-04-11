@@ -21,7 +21,7 @@ label typical_breakfast:
 
 
 label breakfast_first:
-    $ talk_var['breakfast'] = 1
+    $ flags.breakfast = 1
     Ann_07 "Ну, дети, как вам живётся на новом месте? Как спалось в первую ночь?"
     menu:
         Alice_07 "Просто нет слов! После той нашей съёмной квартиры это какой-то рай! А кровать какая удобная..."
@@ -118,7 +118,7 @@ label breakfast_first:
         menu:
             Alice_06 "Ага, и как же ты заработаешь? Образования нет, ничего толком не умеешь. Только дома сидишь всё время в своём ноуте..."
             "Ой. Кого же мне это всё напоминает?":
-                $ talk_var['blog'] = 1
+                $ alice.flags.crush = 1
                 menu:
                     Alice_14 "Может быть, себя? У меня то хоть свой блог есть, а вот у тебя ни-че-го!"
                     "И что твой блог тебе даёт?":
@@ -157,7 +157,7 @@ label breakfast_first:
                 jump .bf_earn3
 
     label .bf_earn3:
-        $ talk_var['blog'] = 1
+        $ alice.flags.crush = 1
         menu:
             Alice_13 "Я делом занимаюсь. Раскручиваю свой блог, набираю аудиторию. А потом, когда придёт время, начну крутить рекламу и всё!"
             "Ага, всё же так просто...":
@@ -196,7 +196,7 @@ label breakfast_first:
                 menu:
                     Ann_00 "Звонила. Говорят, отправили в другой город по ошибке, а потом и вовсе потеряли. Обещают компенсировать, но когда - пока неизвестно..."
                     "Ну и обойдёмся без неё":
-                        $ talk_var['blog'] = 1
+                        $ alice.flags.crush = 1
                         menu:
                             Alice_00 "Ты и рад, наверное, голым ходить, а у меня там были хорошие вещички, в которых я блог веду обычно..."
                             "Может и рад. Мне стесняться нечего!":
@@ -325,7 +325,7 @@ label breakfast_first:
 
 label breakfast_2:
     $ __mood = 0
-    $ talk_var['breakfast'] = 2
+    $ flags.breakfast = 2
 
     Ann_07 "Всем приятного аппетита... Хотя, постойте. Вчера Лиза сходила в школу и я забыла спросить про оценки. Что-нибудь проверяли, спрашивали?"
     Lisa_09 "Ну... Так... Немного..."
@@ -352,7 +352,7 @@ label breakfast_2:
             scene BG punish-morning 02
             $ renpy.show("Ann punish-morning lisa-01"+ann.dress)
             $ __mood -= 50 # если Лизу наказывают, её настроение портится
-            $ talk_var['lisa.pun'] += 1
+            $ lisa.flags.pun += 1
             Lisa_10 "Ой... Мам! Больно!"
             $ renpy.show("Ann punish-morning lisa-02"+ann.dress)
             Ann_01 "Давай терпи. За двойки я всегда наказываю. В этот раз не сильно, чтобы ты понимала, что никакие отговорки или причины меня интересовать не будут. Получила двойку, получила по заднице у всех на глазах. Ясно?"
@@ -437,7 +437,7 @@ label breakfast_2:
 
 label breakfast_3:
     $ __mood = 0
-    $ talk_var['breakfast'] = 3
+    $ flags.breakfast = 3
 
     Ann_05 "Всем приятного аппетита! Хотя, за завтраком обычно не принято болтать, но в нашей семье это уже давно не так. Поэтому, рассказывайте - у кого какие новости?"
     Alice_02 "У меня не совсем новость, а скорее вопрос. Скоро же выходные, да?"
@@ -548,7 +548,7 @@ label breakfast_3:
 
 
 label breakfast_4:
-    $ talk_var['breakfast'] = 4
+    $ flags.breakfast = 4
 
     Ann_01 "Всем приятного аппетита. Это наш первый выходной в новом доме и сегодня у нас в планах кое-что приятное, правда?"
     Max_11 "Если ты о шоппинге, то меня вы всё равно не берёте..."
@@ -600,7 +600,7 @@ label breakfast_4:
 
 
 label breakfast_5:
-    $ talk_var['breakfast'] = 5
+    $ flags.breakfast = 5
 
     Ann_01 "Всем доброе утро, приятного аппетита..."
     Max_07 "Ну что, как всё прошло?"
@@ -663,7 +663,7 @@ label breakfast_5:
 
 
 label breakfast_7:
-    $ talk_var['breakfast'] = 7
+    $ flags.breakfast = 7
 
     Ann_04 "Всем доброе утро, приятного аппетита..."
     Max_01 "Приятного аппетита..."
@@ -689,13 +689,13 @@ label breakfast_7:
     Ann_05 "В общем, я вам рассказала, а дальше вы думайте. Время ещё есть. Просто ведите себя прилично и вас это не коснётся... Думаю, завтрак закончен. Всем больше спасибо."
     Max_00 "Ага, спасибо за завтрак..."
     $ poss['alpha'].SetStage(1)
-    $ dcv['new_pun'] = Daily(7, False, True)
-    $ dcv['new_pun'].stage = 1
+    $ dcv.new_pun.set_lost(7)
+    $ dcv.new_pun.stage = 1
     jump after_breakfast
 
 
 label breakfast_12:
-    $ talk_var['breakfast'] = 12
+    $ flags.breakfast = 12
 
     Ann_04 "Всем доброе утро, приятного аппетита... Я хочу рассказать вам кое-что по секрету..."
     Max_01 "По секрету от кого?"
@@ -731,7 +731,7 @@ label breakfast_12:
 
 label breakfast_18:
     ## первый завтрак с Кирой
-    $ talk_var['breakfast'] = 18
+    $ flags.breakfast = 18
 
     Ann_04 "Смотрю, даже Макс шорты натянул. Ну как, легче стало?"
     Max_01 "Ага. Давно надо было..."
@@ -827,7 +827,7 @@ label breakfast_18:
 
 label breakfast_35:
     # первое упоминание Александры (через несколько дней после первой фотосессии с Кирой)
-    $ talk_var['breakfast'] = 35
+    $ flags.breakfast = 35
 
     Ann_04 "Всем доброе утро, приятного аппетита..."
     Max_01 "Приятного аппетита..."
@@ -860,17 +860,10 @@ label breakfast:
     $ current_room = house[5]
     $ Distribution()
 
-    if day > 1 and 'smoke' not in dcv:
+    if day > 1 and not alice.dcv.special.enabled:
         ## Добавляем возможность курения Алисы
-        $ dcv['smoke'] = Daily(done=True, enabled=True)
-        # $ AddSchedule(plan_alice,
-        $ alice.add_schedule(
-            Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "smoke", _("курит"), "house", 6, "alice_smoke", glow=105, variable="dcv['smoke'].done"),
-            Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105, variable="not dcv['smoke'].done"),
-            )
-        $ flags['smoke.request'] = None # требование при курении
-        $ flags['smoke'] = None
-        $ talk_var['smoke'] = False
+        $ alice.dcv.special.enabled = True
+        call set_alice_can_smoke
 
     jump StartPunishment
 
@@ -888,15 +881,15 @@ label breakfast_after_punishment:
         jump breakfast_3
     elif day == 4:  # первый шопинг
         jump breakfast_4
-    elif all([day>=5, GetWeekday(day)==0, talk_var['breakfast']==4]):
+    elif all([day>=5, GetWeekday(day)==0, flags.breakfast==4]):
         jump breakfast_5    # после ночёвки у Эрика
-    elif all([day>=7, GetWeekday(day)==2, talk_var['breakfast']==5, talk_var['dinner']==6]):
+    elif all([day>=7, GetWeekday(day)==2, flags.breakfast==5, flags.dinner==6]):
         jump breakfast_7    # вторник после ночевки Эрика
-    elif all([day>=12, GetWeekday(day)==0, talk_var['breakfast']==7, talk_var['dinner']==11]):
+    elif all([day>=12, GetWeekday(day)==0, flags.breakfast==7, flags.dinner==11]):
         jump breakfast_12   # Аня рассказывает о вероятной свадьбе
-    elif all([day>=18, GetWeekday(day)==6, talk_var['breakfast']==12, talk_var['dinner']==17]):
+    elif all([day>=18, GetWeekday(day)==6, flags.breakfast==12, flags.dinner==17]):
         jump breakfast_18   # первый завтрак с Кирой
-    elif all([GetWeekday(day)==2, 'kiratalk' in dcv and dcv['kiratalk'].stage in [6, 7], talk_var['breakfast']==18, talk_var['dinner']==17]):
+    elif all([GetWeekday(day)==2, 'kiratalk' in dcv and kira.dcv.feature.stage in [6, 7], flags.breakfast==18, flags.dinner==17]):
         jump breakfast_35   # первое упоминание Александры (через несколько дней после первой фотосессии с Кирой)
     else:
         jump typical_breakfast

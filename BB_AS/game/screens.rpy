@@ -92,7 +92,7 @@ screen say(who, what):
     style_prefix "say"
 
     if not _in_replay:
-        key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
+        key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), QuickSave()]
         key "K_F8" action QuickLoad()
     if _preferences.language is None:
         key "l" action Language("english")
@@ -107,7 +107,7 @@ screen say(who, what):
             background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
         hbox xsize gui.dialogue_xpos + gui.dialogue_width + 20:
             # ypos 5
-            ysize gui.textbox_height - 35# - gui.dialogue_ypos - 20
+            ysize gui.textbox_height - 35
             spacing 5
             viewport mousewheel "change" id "vp_say":
 
@@ -212,7 +212,7 @@ screen choice(items):
 
     style_prefix "choice"
     if not _in_replay:
-        key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), NewSaveName(), QuickSave()]
+        key "K_F5" action [SetVariable("number_quicksave", number_quicksave+1), QuickSave()]
         key "K_F8" action QuickLoad()
     if _preferences.language is None:
         key "l" action Language("english")
@@ -577,7 +577,7 @@ style game_menu_label_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#save
 
-screen save_input(prompt="", default="", length=50):
+screen save_input(prompt="", last="", len=50):
     modal True
     window style "nvl_window":
         vbox:
@@ -585,12 +585,20 @@ screen save_input(prompt="", default="", length=50):
             yalign 0.2
             xsize 720
             spacing 50
-            # ysize 250
 
             text prompt xalign 0.5
-            input default default length length style "input"
+            input default last length len style "input"
 
 init -2 python:
+
+    def json_callback(d):
+        d["day"]    = day
+        d["tm"]     = tm
+        d["wd"]     = weekdays[GetWeekday(day)][0]
+        d["desc"]   = save_name
+        d["auto"]   = number_autosave
+        d["quick"]  = number_quicksave
+
     class get_save_name(FileSave):
         def __init__(self, name, confirm=True, newest=True, page=None, cycle=False):
             super(get_save_name,self).__init__(name=name,confirm=confirm,newest=newest,page=page,cycle=cycle)
@@ -600,15 +608,14 @@ init -2 python:
 
 label get_save_name:
     show screen save
-    $ NewSaveName()
     if persistent._file_page != "quick":
         if persistent.request_savename:
-            $ save_name = renpy.call_screen("save_input", prompt=_("Введите описание файла сохранения:"), default=last_save_name, length=50)
+            $ save_name = renpy.call_screen("save_input", _("Введите описание файла сохранения:"), last_save_name, 50)
             $ last_save_name = save_name
         else:
             $ number_save += 1
             $ save_name = 'Save '+str(number_save)
-        $ save_name = save_name + "$@" + str(weekdays[(day+2) % 7][0]) + "$@" + str(tm) + "$@" + str(day) + "$@" + str(number_quicksave) + "$@" + str(number_autosave)
+
     $ renpy.retain_after_load()
     return
 
@@ -690,12 +697,23 @@ screen file_slots(title):
                         for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
                             $ slot = i + 1
-                            $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
+
+                            $ load_day      = FileJson(slot, "day")
+                            $ load_tm       = FileJson(slot, "tm")
+                            $ load_wd       = FileJson(slot, "wd")
+                            if load_day is None:
+                                $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
+                            else:
+                                if persistent._file_page == "auto":
+                                    $ s_description = "AUTO-"+str(FileJson(slot, "auto"))
+                                elif persistent._file_page == "quick":
+                                    $ s_description = "QUICK-"+str(FileJson(slot, "quick"))
+                                else:
+                                    $ s_description = FileJson(slot, "desc")
 
                             button:
                                 if title == "save":
                                     action get_save_name(slot)
-                                    # action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
                                 else:
                                     action FileAction(slot)
 
@@ -730,11 +748,22 @@ screen file_slots(title):
                         for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
                             $ slot = i + 1
-                            $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
+                            $ load_day      = FileJson(slot, "day")
+                            $ load_tm       = FileJson(slot, "tm")
+                            $ load_wd       = FileJson(slot, "wd")
+                            if load_day is None:
+                                $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
+                            else:
+                                if persistent._file_page == "auto":
+                                    $ s_description = "AUTO-"+FileJson(slot, "auto")
+                                elif persistent._file_page == "quick":
+                                    $ s_description = "QUICK-"+FileJson(slot, "quick")
+                                else:
+                                    $ s_description = FileJson(slot, "desc")
 
                             button  xsize 1280 ysize 80:
                                 if title == "save":
-                                    action [SetVariable("save_name",_last_say_what[:50]), get_save_name(slot)]
+                                    action get_save_name(slot)
                                 else:
                                     action FileAction(slot)
                                 idle_background "gui/button/idle_save_button.webp"

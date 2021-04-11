@@ -47,9 +47,9 @@ screen choice_zone_sunscreen():
     use show_dynamic_tooltip
     imagemap:
         ground 'BG char Alice sun-alone 01f'
-        add 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
-        idle 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
-        hover 'Alice sun-alone 01-'+('01a' if talk_var['sun_oiled'] == 2 else '01')
+        add 'Alice sun-alone 01-'+('01a' if alice.daily.oiled == 2 else '01')
+        idle 'Alice sun-alone 01-'+('01a' if alice.daily.oiled == 2 else '01')
+        hover 'Alice sun-alone 01-'+('01a' if alice.daily.oiled == 2 else '01')
         add 'Max sun-alone 01'+mgg.dress
         hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.left_foot')]:
             mouse 'palms'
@@ -68,7 +68,7 @@ screen choice_zone_sunscreen():
             tooltip _("{i}массировать голени{/i}")
 
 
-        if all([len(online_cources)>1, online_cources[1].current>0, dcv['eric.lingerie'].stage in [5, 7]]):
+        if all([len(online_cources)>1, online_cources[1].current>0, alice.dcv.intrusion.stage in [5, 7]]):
             hotspot (594, 358, 316, 316) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.hips')]:
                 mouse 'palms'
                 tooltip _("{i}массировать бёдра{/i}")

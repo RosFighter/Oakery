@@ -10,18 +10,18 @@ label Eric_talk_afterdinner:
     show Eric meet 01a
     show Max talk-terrace 01a
     Eric_00 "Макс, пока твоя мама переодевается, я бы хотел с тобой поговорить. С глазу на глаз, так сказать..."
-    if talk_var['empathic'] > 1:
+    if eric.flags.crush > 1:
         Max_01 "Конечно..."
-        $ talk_var['empathic'] = 7
+        $ eric.flags.crush = 7
         menu:
             Eric_05 "Я заметил, что ты настроен вполне дружелюбно. Для меня важно подружиться с твоей семьёй, чтобы твоя мама не испытывала дискомфорт на этой почве, если ты меня понимаешь..."
             "Понимаю, хорошо...":
                 jump .good
             "И зачем мне это?":
                 jump .bad
-    elif talk_var['empathic'] > 0:
+    elif eric.flags.crush > 0:
         Max_00 "Ну, давай..."
-        $ talk_var['empathic'] = 5
+        $ eric.flags.crush = 5
         menu:
             Eric_09 "Я знаю, что мы начали знакомство не идеально, но мне показалось, что мы можем найти общий язык. Для меня важно, чтобы твоя мама не испытывала какой-либо дискомфорт из-за этого..."
             "Понимаю, хорошо...":
@@ -30,7 +30,7 @@ label Eric_talk_afterdinner:
                 jump .bad
     else:
         Max_09 "У меня есть выбор?"
-        $ talk_var['empathic'] = 3
+        $ eric.flags.crush = 3
         menu:
             Eric_13 "Ты знаешь, мы начали знакомство как-то совсем неудачно. Предлагаю как-то уладить этот конфликт. Я бы очень не хотел, чтобы твоя мама испытывала дискомфорт по этому поводу..."
             "Понимаю, хорошо...":
@@ -39,7 +39,7 @@ label Eric_talk_afterdinner:
                 jump .bad
 
     label .good:
-        $ talk_var['empathic'] += 1
+        $ eric.flags.crush += 1
         show Eric meet 01a
         show Max talk-terrace 01a
         menu:
@@ -47,28 +47,28 @@ label Eric_talk_afterdinner:
             "А если нет, то что?":
                 jump .what
             "Думаю, подружимся...":
-                $ talk_var['empathic'] += 2
+                $ eric.flags.crush += 2
                 jump .friend
 
     label .bad:
         show Max talk-terrace 04a
         show Eric meet 01b
-        $ talk_var['empathic'] -= 1
+        $ eric.flags.crush -= 1
         menu:
             Eric_01 "Я бы на твоём месте не искал врага там, где его нет. Предлагаю вернуться к этому разговору через неделю. Если мы подружимся, ты не пожалеешь. А вот если решишь со мной воевать, то ты точно проиграешь..."
             "Это ещё почему?":
                 jump.what
             "Да я не собираюсь воевать...":
-                $ talk_var['empathic'] += 1
+                $ eric.flags.crush += 1
                 jump .friend
 
     menu .what:
         Eric_05 "Если решишь испытать судьбу, то сам всё скоро узнаешь. У меня есть влияние, деньги, харизма. А главное - я умею убеждать и подчинять других людей. А что есть у тебя?"
         "Да верю, верю. Я просто спросил и не хочу ссориться...":
-            $ talk_var['empathic'] += 1
+            $ eric.flags.crush += 1
             jump .friend
         "Меня все любят и мне поверят, что ты мне угрожал!":
-            $ talk_var['empathic'] -= 2
+            $ eric.flags.crush -= 2
             show Max talk-terrace 04a
             show Eric meet 01b
             menu:
@@ -78,7 +78,7 @@ label Eric_talk_afterdinner:
                 "Она так сказала?":
                     jump .shesaid
         "У меня есть мозги и я что-нибудь придумаю!":
-            $ talk_var['empathic'] -= 2
+            $ eric.flags.crush -= 2
             show Max talk-terrace 04a
             show Eric meet 01b
             menu:
@@ -127,7 +127,7 @@ label Eric_talk_afterdinner:
         menu:
             Eric_00 "Ну, как хочешь. Надеюсь, в тебе сейчас говорят эмоции, а не здравый смысл. У тебя есть неделя, чтобы передумать. Тогда и поговорим снова и будет ясно, как быть."
             "{i}промолчать{/i}":
-                $ talk_var['empathic'] = 0
+                $ eric.flags.crush = 0
                 $ poss['alpha'].OpenStage(0)
                 jump Waiting
 
@@ -142,14 +142,14 @@ label Eric_talk_afterdinner:
     label .second_talk:
         $ spent_time = 20
         scene BG char Max talk-terrace-00
-        if talk_var['empathic'] > 5:
+        if eric.flags.crush > 5:
             show Eric meet 01a
             $ renpy.show('Max talk-terrace 01'+mgg.dress)
         else:
             show Eric meet 01b
             $ renpy.show('Max talk-terrace 04'+mgg.dress)
         Eric_00 "Ну что, Макс, готов пообщаться снова, пока твоя мама собирается?"
-        if talk_var['empathic']>7:
+        if eric.flags.crush>7:
             Max_01 "Конечно!"
             menu:
                 Eric_05 "Отлично! Ну что, вроде бы ты и правда настроен на дружбу. Я прав?"
@@ -157,7 +157,7 @@ label Eric_talk_afterdinner:
                     jump .goodgood
                 "Тебе показалось. Я тебя ненавижу!":
                     jump .badbad
-        elif 3<talk_var['empathic']<8:
+        elif 3<eric.flags.crush<8:
             Max_00 "Ну, можно..."
             menu:
                 Eric_01 "Правда, я не до конца понял твою позицию. Ты настроен на дружбу или хочешь попытаться повоевать?"
@@ -180,7 +180,7 @@ label Eric_talk_afterdinner:
         Eric_02 "Всё ясно с тобой. Ну, это твой выбор. У тебя была неделя, чтобы всё обдумать. Ты решил начать войну, ну что же, не вини меня за то, как я её закончу..."
         $ notify_list.append(_("{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"))
         $ AttitudeChange('eric', -3)
-        $ talk_var['eric.voy.stage'] = -1
+        $ flags.voy_stage = -1
         $ poss['alpha'].SetStage(3)
         jump Waiting
 
@@ -277,8 +277,8 @@ label Eric_talk_afterdinner:
         Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
         $ notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"))
         $ poss['alpha'].SetStage(2)
-        $ talk_var['eric.voy.stage'] = 0
-        $ talk_var['bonus_from_eric'].append('money')
+        $ flags.voy_stage = 0
+        $ flags.bonus_from_eric.append('money')
         $ AttitudeChange('eric', 4)
         jump Waiting
 
@@ -295,11 +295,11 @@ label eric_ann_tv:
     scene BG tv-watch-01
     $ film = ae_tv_order[0]
 
-    if tv_scene == '' or not peeping['ann_eric_tv']:
+    if tv_scene == '' or not eric.daily.tv_sex:
         ### Дальний план, нейтральная поза
         $ renpy.show('porn_'+film+' 01_02', at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
-    elif peeping['ann_eric_tv'] == 2:
+    elif eric.daily.tv_sex == 2:
         $ renpy.show('tv serial '+renpy.random.choice(['01','02','03','04','05','06','07']), at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     else:
@@ -310,12 +310,12 @@ label eric_ann_tv:
             $ renpy.show('porn_'+film+' 07_08', at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch '+tv_scene+pose2_3+eric.dress)
 
-    if peeping['ann_eric_tv']:
+    if eric.daily.tv_sex:
         return
     ### Дальний план, нейтральная поза
 
-    $ peeping['ann_eric_tv'] = 1
-    if flags['ae.tv.hj'] > 0:
+    $ eric.daily.tv_sex = 1
+    if eric.stat.handjob:
         $ txt = _("Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно...")
         $ txt2 = _("Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?")
     else:
@@ -338,7 +338,7 @@ label eric_ann_tv:
             $ current_room = house[0]
             jump Waiting
 
-    $ tv_scene = renpy.random.choice(['bj', 'hj']) if flags['ae.tv.hj'] > 0 else 'hj'
+    $ tv_scene = renpy.random.choice(['bj', 'hj']) if eric.stat.handjob > 0 else 'hj'
 
     $ spent_time += 10
     $ pose2_3 = '01'
@@ -348,7 +348,7 @@ label eric_ann_tv:
 
     if tv_scene == 'bj':
         ### Дальний план, минет
-        if flags['ae.tv.bj'] > 0:
+        if eric.stat.blowjob:
             $ txt = _("Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику...")
             $ txt2 = _("На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?")
         else:
@@ -367,7 +367,7 @@ label eric_ann_tv:
                     Max_07 "[txt2!t]"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
-                    "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+                    "{i}взглянуть со стороны{/i}" if eric.stat.handjob and mgg.stealth >= 11.0:
                         $ _alt = True
                         jump .closer1
                     "{i}продолжать смотреть{/i}":
@@ -375,14 +375,14 @@ label eric_ann_tv:
             "{i}подойти ближе{/i}":
                 ### Ближний план, минет в полотенце
                 jump .closer1
-            "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+            "{i}взглянуть со стороны{/i}" if eric.stat.handjob != 0 and mgg.stealth >= 11.0:
                 $ _alt = True
                 jump .closer1
             "{i}тихо уйти{/i}":
                 jump .end
     else:
         ### Дальний план, дрочка
-        if flags['ae.tv.bj'] > 0:
+        if eric.stat.blowjob:
             $ txt = _("Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику...")
             $ txt2 = _("На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?")
         else:
@@ -401,7 +401,7 @@ label eric_ann_tv:
                     Max_07 "[txt2!t]"
                     "{i}Что за вопрос? Конечно!{/i}":
                         jump .closer1
-                    "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+                    "{i}взглянуть со стороны{/i}" if eric.stat.handjob and mgg.stealth >= 11.0:
                         $ _alt = True
                         jump .closer1
                     "{i}продолжать смотреть{/i}":
@@ -409,7 +409,7 @@ label eric_ann_tv:
             "{i}подойти ближе{/i}":
                 ### Ближний план, дрочка в полотенце
                 jump .closer1
-            "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0:
+            "{i}взглянуть со стороны{/i}" if eric.stat.handjob != 0:
                 $ _alt = True
                 jump .closer1
             "{i}тихо уйти{/i}":
@@ -417,7 +417,7 @@ label eric_ann_tv:
 
     ## откровенная порнуха на экране
     $ renpy.show('porn_'+film+' 07_08', at_list=[tv_screen,])
-    if flags['ae.tv.hj'] > 0:
+    if eric.stat.handjob:
         menu:
             Max_10 "Если меня заметят, пока я смотрю порно на большом экране и подглядываю за тем, что происходит здесь же, наяву, меня точно накажут"
             "{i}продолжать смотреть{/i}":
@@ -432,7 +432,7 @@ label eric_ann_tv:
             Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!"
             "{i}подойти ближе{/i}":
                 jump .closer1
-            "{i}взглянуть со стороны{/i}" if flags['ae.tv.hj'] != 0 and mgg.stealth >= 11.0:
+            "{i}взглянуть со стороны{/i}" if eric.stat.handjob != 0 and mgg.stealth >= 11.0:
                 $ _alt = True
                 jump .closer1
             "{i}тихо уйти{/i}":
@@ -449,7 +449,7 @@ label eric_ann_tv:
             scene BG lounge-tv-00
             $ renpy.show('Eric tv '+tv_scene+pose2_3+eric.dress)
 
-        if flags['ae.tv.hj'] == 0:
+        if not eric.stat.handjob:
             if pose2_3 == '01':
                 Max_15 "Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
             else:
@@ -475,7 +475,7 @@ label eric_ann_tv:
                     Max_11 "Да, она ему дрочит! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
                 else:
                     Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-            elif flags['ae.tv.bj']:  # не первый минет
+            elif eric.stat.blowjob:  # не первый минет
                 if pose2_3 == '01':  # Анна в полотенце
                     Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
                 else:
@@ -489,7 +489,7 @@ label eric_ann_tv:
 
     ### Макс выдал себя
     $ renpy.show('Eric tv hjbj'+pose2_3+eric.dress)
-    $ peeping['ann_eric_tv'] = 2
+    $ eric.daily.tv_sex = 2
     menu:
         Ann_13 "Что? Кто здесь? Макс?! Выйди немедленно, не видишь..."
         "Как раз всё вижу. Не стыдно?":
@@ -519,8 +519,10 @@ label eric_ann_tv:
             Max_10 "Ладно, уже ухожу..."
 
     label .end:
-        if tv_scene:
-            $ flags['ae.tv.'+tv_scene] += 1
+        if tv_scene = 'hj':
+            $ eric.stat.handjob += 1
+        elif tv_scene = 'bj':
+            $ eric.stat.blowjob += 1
         $ spent_time += 10
         $ current_room = house[0]
         jump Waiting
@@ -528,19 +530,19 @@ label eric_ann_tv:
 
 label eric_ann_fucking:
     scene location house annroom door-night
-    if peeping['ann_eric_sex1'] > 0:
+    if eric.daily.sex > 0:
         return
 
-    $ peeping['ann_eric_sex1'] = 1
+    $ eric.daily.sex = 1
 
     $ _ch1 = GetChance(mgg.stealth, 3, 900)
     menu:
         Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if talk_var['eric.voy.stage']<0 or GetRelMax('eric')[0]<0:
+        "{i}заглянуть в окно\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if flags.voy_stage<0 or GetRelMax('eric')[0]<0:
             pass
-        "{i}заглянуть в окно{/i}" if 0<=talk_var['eric.voy.stage']<4 and GetRelMax('eric')[0]>3:
+        "{i}заглянуть в окно{/i}" if 0<=flags.voy_stage<4 and GetRelMax('eric')[0]>3:
             pass
-        "{i}зайти в спальню{/i}" if 3<talk_var['eric.voy.stage']<8 and GetRelMax('eric')[0]>3:
+        "{i}зайти в спальню{/i}" if 3<flags.voy_stage<8 and GetRelMax('eric')[0]>3:
             jump lessons_from_Eric
         "{i}уйти{/i}":
             Max "" nointeract
@@ -565,26 +567,26 @@ label eric_ann_fucking:
     else:
         $ renpy.show('FG ann&eric-voyeur-01')
 
-    if talk_var['eric.voy.stage'] in [0, 1, 2, 3] and GetRelMax('eric')[0]>3:
+    if flags.voy_stage in [0, 1, 2, 3] and GetRelMax('eric')[0]>3:
         if fuck_scene == 6:
             scene BG char Eric bed-02
             $ renpy.show('Eric fuck 06b')
             $ renpy.show('FG ann&eric-voyeur-02')
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
-        if talk_var['eric.voy.stage'] in [0, 1]:
+        if flags.voy_stage in [0, 1]:
             Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
             $ punreason[3] = 1
 
-        elif talk_var['eric.voy.stage'] == 2:
+        elif flags.voy_stage == 2:
             Ann_19 "Макс? Ты опять подглядываешь? Утром накажу у всех на глазах за это!"
             Max_10 "Э... Не надо!"
             Eric_03 "Ань, не спеши. Макс подросток и ему всё интересно. Ты же знаешь, запретный плод сладок. Думаю, не стоит его наказывать за такие шалости. Хорошо?"
             Ann_14 "Ну, хорошо, Эрик. Если ты так считаешь... Но пусть он уйдёт, я не могу так..."
             Max_07 "Я уже ухожу, мам... Продолжайте!"
-            $ talk_var['eric.voy.stage'] = 3
+            $ flags.voy_stage = 3
 
-        elif talk_var['eric.voy.stage'] == 3:
+        elif flags.voy_stage == 3:
             menu:
                 Ann_18 "Макс? Опять подглядываешь?! Ну-ка бегом отсюда!"
                 "Я никому не мешаю же...":
@@ -600,7 +602,7 @@ label eric_ann_fucking:
                             Ann_12 "Как скажешь, Эрик..."
                             Eric_01 "Ну всё, Макс. Мы тут ещё побеседуем. А для тебя на сегодня хватит, иди."
                             Max_00 "Хорошо..."
-                            $ talk_var['eric.voy.stage'] = 4
+                            $ flags.voy_stage = 4
                             $ poss['control'].OpenStage(0)
 
                 "Я уже ухожу, мам... Извини...":
@@ -609,11 +611,11 @@ label eric_ann_fucking:
         $ current_room = house[0]
         jump Waiting
 
-    if RandomChance(_ch1.ch) or talk_var['eric.voy.stage'] > 6:
-        if talk_var['eric.voy.stage']<6:
+    if RandomChance(_ch1.ch) or flags.voy_stage > 6:
+        if flags.voy_stage<6:
             $ Skill('hide', 0.1)
         $ ann.dress_inf = '00'
-        $ peeping['ann_eric_sex1'] = 3
+        $ eric.daily.sex = 3
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
         elif fuck_scene == 2:
@@ -625,7 +627,7 @@ label eric_ann_fucking:
         elif fuck_scene == 5:
             Max_07 "[undetect!t]Ничего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
     else:
-        $ peeping['ann_eric_sex1'] = 2
+        $ eric.daily.sex = 2
 
         if fuck_scene == 6:
             scene BG char Eric bed-02
@@ -663,10 +665,10 @@ label eric_ann_fucking:
     elif fuck_scene == 5:
         Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
 
-    $ peeping['ann_eric_sex1'] = 4
+    $ eric.daily.sex = 4
 
     $ spent_time += 20
-    if talk_var['eric.voy.stage']<6:
+    if flags.voy_stage<6:
         $ Skill('hide', 0.1)
     $ current_room = house[0]
     jump Waiting
@@ -674,24 +676,24 @@ label eric_ann_fucking:
 
 label eric_ann_sleep:
     scene location house annroom door-night
-    if peeping['ann_sleep'] != 0:
+    if ann.hourly.sleep != 0:
         return
 
-    $ peeping['ann_sleep'] = 1
+    $ ann.hourly.sleep = 1
     menu:
         Max_00 "Кажется, все спят..."
         "{i}заглянуть в окно{/i}":
             scene BG char Ann bed-night-01
-            if flags['eric.jerk'] and '02:00'<=tm<'02:30':
+            if flags.eric_jerk and '02:00'<=tm<'02:30':
                 # Эрик дрочит на Алису
                 if not alice.sleepnaked:
                     # если Алиса не спит голой, Эрик на балконе
-                    $ peeping['alice_sleep'] = 1
+                    $ alice.hourly.sleep = 1
                     jump jerk_balkon
 
                 $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
                 $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
-                if not prenoted and not flags['eric.noticed']:
+                if not prenoted and not flags.eric_noticed:
                     # Эрика не видели
                     menu:
                         Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!"
@@ -776,22 +778,22 @@ label eric_ann_sleep:
 
 label eric_ann_shower:
     scene location house bathroom door-morning
-    if peeping['ann_shower'] != 0:
+    if ann.daily.shower != 0:
         return
 
-    $ peeping['ann_shower'] = 1
+    $ ann.daily.shower = 1
     $ spent_time += 10
     menu:
         Max_00 "Похоже, мама вместе с Эриком принимают душ... Или что они там ещё могут делать?"
         "{i}заглянуть со двора{/i}":
             jump .start_peeping
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
             return
 
     label .ladder:
-        $ talk_var['ae.ladd'] += 1
+        $ eric.flags.ladder += 1
         $ spent_time += 20
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
@@ -853,8 +855,7 @@ label eric_ann_shower:
 
     label .end:
         Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-        if talk_var['ae.ladd'] > 1 and house[3].cams and not flags['cam2bath']:
-            $ flags['cam2bath'] = True
+        if eric.flags.ladder > 1 and house[3].cams and house[3].max_cam<2:
             $ house[3].max_cam = 2
             Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
 
@@ -885,7 +886,7 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['05', '06'])
         else:
             $ __r2 = renpy.random.choice(['04', '07'])
-        if not RandomChance(_ch2.ch) and talk_var['eric.voy.stage']<1:
+        if not RandomChance(_ch2.ch) and flags.voy_stage<1:
             jump .not_luck
         $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
@@ -930,7 +931,7 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['04', '05'])
         else:
             $ __r2 = renpy.random.choice(['06', '07'])
-        if not RandomChance(_ch1.ch) and talk_var['eric.voy.stage']<1:
+        if not RandomChance(_ch1.ch) and flags.voy_stage<1:
             jump .not_luck
 
         $ Skill('hide', 0.2)
@@ -977,12 +978,12 @@ label eric_ann_shower:
 
 label sexed_lisa:
     scene location house annroom door-night
-    if peeping['ael_sexed'] > 0:
+    if eric.daily.sex_ed > 0:
         return
 
-    $ peeping['ael_sexed'] = 1
+    $ eric.daily.sex_ed = 1
 
-    if talk_var['ae_lisa_number'] < 0:
+    if flags.lisa_sexed < 0:
         if house[2].cams:
             menu:
                 Max_09 "{i}( Интересно, зачем мама позвала Лизу в комнату? А там ведь ещё и Эрик. Может хоть через камеру посмотреть, что там происходит? ){/i}"
@@ -1010,13 +1011,13 @@ label sexed_lisa:
             menu:
                 Max_07 "{i}( Эрик сказал, что всё устроит так, чтобы меня не заметили, когда я буду подглядывать. Сейчас посмотрим... ){/i}"
                 "{i}заглянуть в окно{/i}":
-                    if talk_var['ae_lisa_number'] == 0:
+                    if flags.lisa_sexed == 0:
                         jump .lesson_0
-                    elif talk_var['ae_lisa_number'] == 1:
+                    elif flags.lisa_sexed == 1:
                         jump .lesson_1
-                    elif talk_var['ae_lisa_number'] == 2:
+                    elif flags.lisa_sexed == 2:
                         jump .lesson_2
-                    elif talk_var['ae_lisa_number'] == 3:
+                    elif flags.lisa_sexed == 3:
                         jump .lesson_3
         else:
             # война с Эриком
@@ -1299,8 +1300,8 @@ label first_jerk_balkon:
     menu:
         Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..."
         "{i}уйти{/i}":
-            $ flags['eric.noticed'] = True
-    $ flags['eric.firstjerk'] = True
+            $ flags.eric_noticed = True
+    $ eric.stat.mast += 1
     $ poss['discrediting'].OpenStage(0)
     $ spent_time += 10
     jump Waiting
@@ -1319,8 +1320,8 @@ label first_jerk_yard:
     menu:
         Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..."
         "{i}уйти{/i}":
-            $ flags['eric.noticed'] = True
-    $ flags['eric.firstjerk'] = True
+            $ flags.eric_noticed = True
+    $ eric.stat.mast += 1
     $ poss['discrediting'].OpenStage(0)
     $ spent_time += 10
     jump Waiting
@@ -1330,15 +1331,16 @@ label jerk_balkon:
     #если решил подглядеть за Анной или Алисой через окно (Эрик около окна Алисы)
     #eric-voyeur-alice-01
     $ _ch1 = Chance(500)
-    if not flags['eric.firstjerk']:
+    if not eric.stat.mast:
         jump first_jerk_balkon
 
+    $ eric.stat.mast += 1
     if not alice.sleepnaked:
-        $ flags['eric.noticed'] = True
+        $ flags.eric_noticed = True
         scene Eric jerk off 01
         menu:
             Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
-            "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags['eric.photo1'] < 1:  #если снимка у окна нет
+            "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags.eric_photo1 < 1:  #если снимка у окна нет
                 jump jerk_photohant1
             "{i}уйти{/i}":
                 jump Waiting
@@ -1350,7 +1352,7 @@ label jerk_balkon:
         show Eric jerk off 02
         menu:
             Max_03 "Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!"
-            "{i}сбегать за фотоаппаратом и вернуться {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags['eric.photo2'] < 1:  #если снимка у окна нет
+            "{i}сбегать за фотоаппаратом и вернуться {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags.eric_photo2 < 1:  #если снимка у окна нет
                 jump jerk_photohant2
             "{i}уйти{/i}":
                 jump Waiting
@@ -1375,14 +1377,15 @@ label jerk_balkon:
 label jerk_yard:
     #eric-voyeur-yard-01
     scene Eric jerk off 00
-    if not flags['eric.firstjerk']:
+    if not eric.stat.mast:
         jump first_jerk_yard
 
     $ _ch1 = Chance(500)
-    $ flags['eric.noticed'] = True
+    $ flags.eric_noticed = True
+    $ eric.stat.mast += 1
     menu:
         Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
-        "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags['eric.photo1'] < 1:  #если снимка у окна нет
+        "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags.eric_photo1 < 1:  #если снимка у окна нет
             jump jerk_photohant1
 
         "{i}уйти{/i}":
@@ -1408,7 +1411,7 @@ label jerk_photohant1:
             Max_09 "А если попробовать загнать Эрика в комнату Алисы?! Тогда бы у меня появился шанс сделать уже более определённый снимок, где видно на кого дрочит Эрик. Только вот как..."
             "{i}уйти{/i}":
                 $ poss['discrediting'].OpenStage(1)
-                $ flags['eric.photo1'] = 1
+                $ flags.eric_photo1 = 1
     else:
         # (не успел)
         #все уже по своим местам и спят
@@ -1420,7 +1423,7 @@ label jerk_photohant1:
         menu:
             Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
             "{i}уйти{/i}":
-                $ flags['eric.jerk'] = False
+                $ flags.eric_jerk = False
 
     $ spent_time += 20
     jump Waiting
@@ -1439,7 +1442,7 @@ label jerk_photohant2:
         menu:
             Max_05 "Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!"
             "{i}уйти{/i}":
-                $ flags['eric.photo2'] = 1
+                $ flags.eric_photo2 = 1
                 $ poss['discrediting'].OpenStage(3)
     else:
         # (не успел)
@@ -1450,7 +1453,7 @@ label jerk_photohant2:
         menu:
             Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
             "{i}уйти{/i}":
-                $ flags['eric.jerk'] = False
+                $ flags.eric_jerk = False
 
     $ spent_time += 20
     jump Waiting

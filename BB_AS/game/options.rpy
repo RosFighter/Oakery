@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.4.00"
+define config.version = "0.06.4.02"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -169,11 +169,11 @@ define config.window_icon = 'gui/window_icon.png'
 
 define config.minimum_presplash_time = 1.0
 define config.mouse_hide_time = 10
-default preferences.desktop_rollback_side = "disable"
+default preferences.desktop_rollback_side = "disable"   # сторона отката
 
 init python:
-    config.default_fullscreen = True
-
+    config.default_fullscreen = False
+    config.save_json_callbacks.append(json_callback)
 
 ## Настройка Дистрибутива ######################################################
 ##
@@ -288,4 +288,4 @@ init python:
 ## будут включены в сборки Linux и Mac. Если значение False, эти файлы не будут
 ## включены.
 
-    build.include_i686 = False
+    build.include_i686 = True

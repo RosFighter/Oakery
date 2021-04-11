@@ -2,7 +2,7 @@
 ## события Лизы
 
 label lisa_sleep_night:
-    if all([flags['film_punish'], not dcv['film_punish'].done, tm < '00:30']):
+    if all([flags.film_punish, not lisa.dcv.special.done, tm < '00:30']):
         call lisa_select_movie from _call_lisa_select_movie
 
     scene BG char Lisa bed-night
@@ -19,23 +19,23 @@ label lisa_sleep_morning:
 
 label lisa_shower:
     scene location house bathroom door-morning
-    if peeping['lisa_shower'] > 3:
+    if lisa.daily.shower > 3:
         menu:
             Max_00 "Лиза сейчас принимает душ..."
             "{i}уйти{/i}":
                 jump .end_peeping2
-    elif peeping['lisa_shower'] > 2:
+    elif lisa.daily.shower > 2:
         Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
         jump .end_peeping2
-    elif peeping['lisa_shower'] > 1:
+    elif lisa.daily.shower > 1:
         Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
         jump .end_peeping2
-    elif peeping['lisa_shower'] > 0:
+    elif lisa.daily.shower > 0:
         Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
         jump .end_peeping2
 
     $ renpy.block_rollback()
-    $ peeping['lisa_shower'] = 4
+    $ lisa.daily.shower = 4
     menu:
         Max_09 "Кажется, Лиза что-то делает в ванной..."
         "{i}постучаться{/i}":
@@ -48,23 +48,23 @@ label lisa_shower:
                             menu:
                                 Lisa "{b}Лиза:{/b} Нет, Макс. Жди за дверью. Я скоро!"
                                 "Ладно, ладно...":
-                                    $ peeping['lisa_shower'] = 4
+                                    $ lisa.daily.shower = 4
                                     jump .end_peeping
                         "Хорошо, я подожду":
-                            $ peeping['lisa_shower'] = 4
+                            $ lisa.daily.shower = 4
                             jump .end_peeping
                 "{i}уйти{/i}":
-                    $ peeping['lisa_shower'] = 4
+                    $ lisa.daily.shower = 4
                     jump .end_peeping
         "{i}заглянуть со двора{/i}":
-            if sorry_gifts['lisa'].owe:
+            if lisa.sorry.owe:
                 Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
                 jump .end_peeping2
             jump .start_peeping
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
-            $ peeping['lisa_shower'] = 4
+            $ lisa.daily.shower = 4
             jump .end_peeping
 
     label .ladder:
@@ -96,7 +96,7 @@ label lisa_shower:
         jump .end_peeping
 
     label .start_peeping:
-        $ peeping['lisa_shower'] = 1
+        $ lisa.daily.shower = 1
         $ Skill('hide', 0.03)
         $ __ran1 = renpy.random.randint(1, 4)
 
@@ -111,9 +111,9 @@ label lisa_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if 1 <= len(sorry_gifts['lisa'].give) < 4 or (poss['SoC'].stn<0 and _ch1.ch>600):
+            "{i}немного пошуметь{/i}" if 1 <= len(lisa.sorry.give) < 4 or (poss['SoC'].stn<0 and _ch1.ch>600):
                 jump .pinded
-            "{i}немного пошуметь{/i}" if len(sorry_gifts['lisa'].give) == 4:
+            "{i}немного пошуметь{/i}" if len(lisa.sorry.give) == 4:
                 jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -122,7 +122,7 @@ label lisa_shower:
         if not RandomChance(_ch2.ch):
             jump .not_luck
         $ spent_time += 10
-        $ peeping['lisa_shower'] = 1
+        $ lisa.daily.shower = 1
         $ Skill('hide', 0.2)
         $ lisa.dress_inf = '00a'
         $ __ran1 = renpy.random.randint(1, 6)
@@ -139,7 +139,7 @@ label lisa_shower:
     label .closer_peepeng:
         $ spent_time += 10
         if RandomChance(_ch1.ch):
-            $ peeping['lisa_shower'] = 1
+            $ lisa.daily.shower = 1
             $ Skill('hide', 0.2)
             $ lisa.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(1, 6)
@@ -155,8 +155,8 @@ label lisa_shower:
             jump .not_luck
 
     label .not_luck:
-        if RandomChance(_ch1.ch) or len(sorry_gifts['lisa'].give) > 3:
-            $ peeping['lisa_shower'] = 2
+        if RandomChance(_ch1.ch) or len(lisa.sorry.give) > 3:
+            $ lisa.daily.shower = 2
             $ Skill('hide', 0.1)
             $ lisa.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(7, 8)
@@ -169,10 +169,10 @@ label lisa_shower:
         jump .end_peeping
 
     label .pinded:
-        if flags['film_punish']:
-            $ dcv['film_punish'].set_lost(1)
+        if flags.film_punish:
+            $ lisa.dcv.special.set_lost(1)
         else:
-            $ peeping['lisa_shower'] = 3
+            $ lisa.daily.shower = 3
             $ punreason[0] = 1
         $ Skill('hide', 0.05)
         $ __ran1 = renpy.random.choice(['09', '10'])
@@ -212,8 +212,8 @@ label lisa_dressed_school:
 
     $ __mood = 0
     $ __rel = 0
-    if peeping['lisa_dressed'] == 0:
-        $ peeping['lisa_dressed'] = 1
+    if lisa.hourly.dressed == 0:
+        $ lisa.hourly.dressed = 1
         jump .lisa_dressed
     else:
         return
@@ -225,7 +225,7 @@ label lisa_dressed_school:
                 "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
                 "Это я, Макс. Можно войти?":
                     jump .come_in
-                "Можно войти на секунду? Я только ноутбук возьму..." if flags['warning']:
+                "Можно войти на секунду? Я только ноутбук возьму..." if flags.warning:
                     jump get_laptop
                 "Хорошо, я подожду...":
                     $ spent_time = 10
@@ -381,13 +381,13 @@ label lisa_dressed_school:
 label lisa_dressed_shop:
     scene location house myroom door-morning
 
-    if peeping['lisa_dressed'] != 0:
+    if lisa.hourly.dressed != 0:
         return
 
     $ __mood = 0
     $ __rel = 0
     $ __warned = False
-    $ peeping['lisa_dressed'] = 1
+    $ lisa.hourly.dressed = 1
     $ spent_time = 10 #60 - int(tm[-2:])
     menu .lisa_dressed:
         Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
@@ -411,7 +411,7 @@ label lisa_dressed_shop:
                     jump .open_door
                 "Хорошо...":
                     jump .rel_mood
-        "Можно войти на секунду? Я только ноутбук возьму..." if flags['warning']:
+        "Можно войти на секунду? Я только ноутбук возьму..." if flags.warning:
             jump get_laptop
         "Хорошо, я подожду...":
             jump .rel_mood
@@ -498,14 +498,14 @@ label get_laptop:
 label lisa_dressed_repetitor:
     scene location house myroom door-morning
 
-    if peeping['lisa_dressed'] != 0:
+    if lisa.hourly.dressed != 0:
         return
 
     # добавить возможность подглядываать после начала секс.обучения Лизы у АиЭ
     menu:
         Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
         "{i}уйти{/i}":
-            $ peeping['lisa_dressed'] = 1
+            $ lisa.hourly.dressed = 1
 
     label .end:
         jump Waiting
@@ -552,10 +552,10 @@ label lisa_phone_closer:
 
 label lisa_bath:
     scene location house bathroom door-evening
-    if peeping['lisa_bath'] != 0:
+    if lisa.daily.bath != 0:
         return
 
-    $ peeping['lisa_bath'] = 1
+    $ lisa.daily.bath = 1
     $ __mood = 0
     $ __rel = 0
     menu:
@@ -564,22 +564,23 @@ label lisa_bath:
             jump .knock
         "{i}открыть дверь{/i}":
             jump .open
-        "{i}заглянуть со двора{/i}" if 'ladder' not in flags or flags['ladder'] < 2:
+        "{i}заглянуть со двора{/i}" if flags.ladder < 2:
             scene Lisa bath 01
             $ renpy.show('FG voyeur-bath-00'+mgg.dress)
             Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
             Max_09 "Нужно что-нибудь придумать..."
-            $ flags['ladder'] = 1
+            $ flags.ladder = 1
             jump .end
         "{i}установить стремянку{/i}" if items['ladder'].have:
             scene BG char Max bathroom-window-evening-00
             $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
             Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-            $ flags['ladder'] = 3
-            $ items['ladder'].have = False
-            $ items['ladder'].InShop = False
+            $ flags.ladder = 3
+            $ items['ladder'].give()
+            # $ items['ladder'].have = False
+            # $ items['ladder'].InShop = False
             jump .ladder
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
             jump .end
@@ -703,19 +704,19 @@ label lisa_homework:
 
 
 label lisa_select_movie:
-    if dcv['film_punish'].stage < 1:
+    if lisa.dcv.special.stage < 1:
         # первый просмотр романтического фильма
         jump lisa_romantic_movie_0
 
-    elif dcv['film_punish'].stage < 4:
+    elif lisa.dcv.special.stage < 4:
         # периодический просмотр романтического фильма
         jump lisa_romantic_movie_r
 
-    elif dcv['film_punish'].stage < 5:
+    elif lisa.dcv.special.stage < 5:
         # первый просмотр ужастика
         jump lisa_horor_movie_0
 
-    elif dcv['film_punish'].stage < 7:
+    elif lisa.dcv.special.stage < 7:
         # периодический просмотр ужастика
         jump lisa_horor_movie_r
 
@@ -772,12 +773,11 @@ label lisa_romantic_movie_0:
     Lisa_09 "Да ну тебя!"
     Max_01 "Ладно. Доброй ночи тогда."
 
-    $ dcv['film_punish'].stage = 1
-    $ dcv['film_punish'].enabled = False
-    $ dcv['film_punish'].set_lost(0)
+    $ lisa.dcv.special.stage = 1
+    $ lisa.dcv.special.disable()
     $ infl[lisa].add_m(12)
     $ spent_time += 60
-    $ flags['cur_series'] = 1
+    $ flags.cur_series = 1
     jump Waiting
 
 
@@ -792,7 +792,7 @@ label lisa_romantic_movie_r:
     scene BG char Lisa horror-myroom 00
     show Max horror-myroom 01a
     $ renpy.show("Lisa horror-myroom 00-01"+lisa.dress)
-    if flags['cur_series'] < 2:
+    if flags.cur_series < 2:
         Max_04 "Давай, запрыгивай! Будем досматривать тот фильм?"   #если не досмотрели фильм
         Lisa_09 "Да, но промотай тот момент, ну ты понял..."
         play music 'audio/romantic.ogg'
@@ -821,7 +821,7 @@ label lisa_romantic_movie_r:
     scene BG char Lisa horror-myroom 04
     $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
 
-    if poss['seduction'].stn>7 and dcv['film_punish'].stage == 3:
+    if poss['seduction'].stn>7 and lisa.dcv.special.stage == 3:
         #как только открываются уроки поцелуев с Лизой и посмотрели 3 раза романтику
         Lisa_10 "Макс, у тебя опять стоит! Ну сколько можно?"
         Max_01 "Фильмы такие! Что тут поделать..."
@@ -836,9 +836,9 @@ label lisa_romantic_movie_r:
         Lisa_01 "Тогда я пойду спать, а то ты сегодня что-то не в духе."
         stop music fadeout 1.0
         Max_15 "Да, будь так добра..."
-        $ dcv['film_punish'].stage = 4
+        $ lisa.dcv.special.stage = 4
 
-    elif flags['cur_series'] > 1:
+    elif flags.cur_series > 1:
         # чередующийся вариант окончания просмотра
         Lisa_12 "Ну и ты следом сразу возбудился! Это вообще нормально?"
         Max_07 "Спроси хоть у кого и ответ будет всегда один - да, это нормальная реакция."
@@ -863,14 +863,13 @@ label lisa_romantic_movie_r:
         stop music fadeout 1.0
         Max_01 "Ладно. Доброй ночи тогда."
 
-    if dcv['film_punish'].stage < 3:
-        $ dcv['film_punish'].stage += 1
+    if lisa.dcv.special.stage < 3:
+        $ lisa.dcv.special.stage += 1
 
-    $ dcv['film_punish'].enabled = False
-    $ dcv['film_punish'].set_lost(0)
+    $ lisa.dcv.special.disable()
     $ infl[lisa].add_m(12)
     $ spent_time += 60
-    $ flags['cur_series'] = {1:2, 2:1}[flags['cur_series']]
+    $ flags.cur_series = {1:2, 2:1}[flags.cur_series]
     jump Waiting
 
 
@@ -889,10 +888,10 @@ label lisa_horor_movie_0:
     menu:
         Lisa_03 "Я думала посмотреть все части \"Кошмара на улице Вязов\" или \"Пятницы 13-е\". Мне в школе посоветовали. Но выбирать тебе, ты же будешь бояться."
         "{i}смотреть \"Кошмар на улице Вязов\"{/i}":   #после выбора начинает играть соответствующая фильму музыка
-            $ flags['cur_movies'] = ['hes', 1, 0]
+            $ flags.cur_movies = ['hes', 1, 0]
             play music 'audio/hes.ogg'
         "{i}смотреть \"Пятница 13-е\"{/i}":   #после выбора начинает играть соответствующая фильму музыка
-            $ flags['cur_movies'] = ['f13', 0, 1]
+            $ flags.cur_movies = ['f13', 0, 1]
             play music 'audio/f13.ogg'
 
     scene BG char Lisa horror-myroom 01
@@ -914,7 +913,7 @@ label lisa_horor_movie_0:
 
     scene BG char Lisa horror-myroom 02
     show Lisa horror-myroom 02-01b
-    $ renpy.show("FG horror-myroom "+flags['cur_movies'][0]+" 01-01")
+    $ renpy.show("FG horror-myroom "+flags.cur_movies[0]+" 01-01")
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
     Max_09 "Ну, ты не одна в комнате, так что бояться нечего. Всех монстров я возьму на себя!"
     Lisa_13 "Макс, это что мне в ногу такое твёрдое упёрлось?!"
@@ -936,11 +935,10 @@ label lisa_horor_movie_0:
     Lisa_11 "Ой ой ой!"
 
     $ spent_time += 60
-    $ dcv['film_punish'].stage = 5
-    $ dcv['film_punish'].enabled = False
-    $ dcv['film_punish'].set_lost(0)
+    $ lisa.dcv.special.stage = 5
+    $ lisa.dcv.special.disable()
     $ infl[lisa].add_m(12)
-    $ flags['cur_series'] = 1
+    $ flags.cur_series = 1
     jump Waiting
 
 
@@ -956,62 +954,62 @@ label lisa_horor_movie_r:
     show Max horror-myroom 01a
     show Lisa horror-myroom 00-01b
 
-    if flags['cur_series'] < 2:
+    if flags.cur_series < 2:
         #если не досмотрели фильм
         Max_07 "Как бы не так! Будем досматривать тот фильм, который тогда смотрели?"
         menu:
             Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне."
-            "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")" if flags['cur_movies'][0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
-                $ flags['cur_series'] = 2
+            "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")" if flags.cur_movies[0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_series = 2
                 play music 'audio/hes.ogg'
-            "Тогда досматриваем... (продолжаем смотреть \"Пятница 13-е\")" if flags['cur_movies'][0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
-                $ flags['cur_series'] = 2
+            "Тогда досматриваем... (продолжаем смотреть \"Пятница 13-е\")" if flags.cur_movies[0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_series = 2
                 play music 'audio/f13.ogg'
-            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags['cur_movies'][0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
-                $ flags['cur_movies'][0] = 'hes'
-                if flags['cur_movies'][1] < 5:
-                    $ flags['cur_movies'][1] += 1
+            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags.cur_movies[0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_movies[0] = 'hes'
+                if flags.cur_movies[1] < 5:
+                    $ flags.cur_movies[1] += 1
                 else:
-                    $ flags['cur_movies'][1] = 1
+                    $ flags.cur_movies[1] = 1
                 play music 'audio/hes.ogg'
-            "{i}смотреть \"Пятница 13-е\"{/i}" if flags['cur_movies'][0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
-                $ flags['cur_movies'][0] = 'f13'
-                if flags['cur_movies'][2] < 5:
-                    $ flags['cur_movies'][2] += 1
+            "{i}смотреть \"Пятница 13-е\"{/i}" if flags.cur_movies[0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_movies[0] = 'f13'
+                if flags.cur_movies[2] < 5:
+                    $ flags.cur_movies[2] += 1
                 else:
-                    $ flags['cur_movies'][2] = 1
+                    $ flags.cur_movies[2] = 1
                 play music 'audio/f13.ogg'
     else:
         #если досмотрели фильм
         Max_07 "Как бы не так! Будем смотреть следующий фильм в той серии, которую начали?"
-        $ flags['cur_series'] = 1
+        $ flags.cur_series = 1
         menu:
             Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне."
-            "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Кошмар на улице Вязов\")"  if flags['cur_movies'][0] == 'hes':
-                if flags['cur_movies'][1] < 5:
-                    $ flags['cur_movies'][1] += 1
+            "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Кошмар на улице Вязов\")"  if flags.cur_movies[0] == 'hes':
+                if flags.cur_movies[1] < 5:
+                    $ flags.cur_movies[1] += 1
                 else:
-                    $ flags['cur_movies'][1] = 1
+                    $ flags.cur_movies[1] = 1
                 play music 'audio/hes.ogg'
-            "Тогда смотрим дальше...  (продолжаем смотреть серию фильмов \"Пятница 13-е\")" if flags['cur_movies'][0] == 'f13':
-                if flags['cur_movies'][2] < 5:
-                    $ flags['cur_movies'][2] += 1
+            "Тогда смотрим дальше...  (продолжаем смотреть серию фильмов \"Пятница 13-е\")" if flags.cur_movies[0] == 'f13':
+                if flags.cur_movies[2] < 5:
+                    $ flags.cur_movies[2] += 1
                 else:
-                    $ flags['cur_movies'][2] = 1
+                    $ flags.cur_movies[2] = 1
                 play music 'audio/f13.ogg'
-            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags['cur_movies'][0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
-                $ flags['cur_movies'][0] = 'hes'
-                if flags['cur_movies'][1] < 5:
-                    $ flags['cur_movies'][1] += 1
+            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags.cur_movies[0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_movies[0] = 'hes'
+                if flags.cur_movies[1] < 5:
+                    $ flags.cur_movies[1] += 1
                 else:
-                    $ flags['cur_movies'][1] = 1
+                    $ flags.cur_movies[1] = 1
                 play music 'audio/hes.ogg'
-            "{i}смотреть \"Пятница 13-е\"{/i}" if flags['cur_movies'][0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
-                $ flags['cur_movies'][0] = 'f13'
-                if flags['cur_movies'][2] < 5:
-                    $ flags['cur_movies'][2] += 1
+            "{i}смотреть \"Пятница 13-е\"{/i}" if flags.cur_movies[0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_movies[0] = 'f13'
+                if flags.cur_movies[2] < 5:
+                    $ flags.cur_movies[2] += 1
                 else:
-                    $ flags['cur_movies'][2] = 1
+                    $ flags.cur_movies[2] = 1
                 play music 'audio/f13.ogg'
 
 
@@ -1032,17 +1030,17 @@ label lisa_horor_movie_r:
 
     scene BG char Lisa horror-myroom 02
     show Lisa horror-myroom 02-01b
-    if flags['cur_movies'][0] == 'hes':
-        $ renpy.show("FG horror-myroom hes 0"+str(flags['cur_movies'][1]+1)+"-0"+str(flags['cur_series']))
+    if flags.cur_movies[0] == 'hes':
+        $ renpy.show("FG horror-myroom hes 0"+str(flags.cur_movies[1]+1)+"-0"+str(flags.cur_series))
     else:
-        $ renpy.show("FG horror-myroom f13 0"+str(flags['cur_movies'][1]+1)+"-0"+str(flags['cur_series']))
+        $ renpy.show("FG horror-myroom f13 0"+str(flags.cur_movies[1]+1)+"-0"+str(flags.cur_series))
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
 
     $ _ch3 = GetChance(mgg.sex+5, 3, 900)
     menu:
         Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}"
         "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
-            if (not _in_replay and not RandomChance(_ch3.ch)) or (_in_replay and talk_var['kiss_lessons']<12):
+            if (not _in_replay and not RandomChance(_ch3.ch)) or (_in_replay and lisa.flags.kiss_lesson<12):
                 # (не получилось сдержаться)
                 $ Skill('sex', 0.1)
                 Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
@@ -1051,7 +1049,7 @@ label lisa_horor_movie_r:
             # (получилось сдержаться)
             $ Skill('sex', 0.2)
             $ added_mem_var('horror_kiss')
-            if flags['cur_series'] < 2:
+            if flags.cur_series < 2:
                 # если начали новый фильм
                 Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
             else:
@@ -1068,7 +1066,7 @@ label lisa_horor_movie_r:
             Max_03 "Так не иди. Спи со мной. Я очень даже не против!"
             menu:
                 Lisa_05 "Чтобы со мной рядом кое-что шевелилось? Так я точно не усну. Мне нужно как-то храбрости набраться..."
-                "{i}поцеловать Лизу{/i}" if talk_var['kiss_lessons'] > 6:   #если открыты поцелуи с прикосновениями
+                "{i}поцеловать Лизу{/i}" if lisa.flags.kiss_lesson > 6:   #если открыты поцелуи с прикосновениями
                     #horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
                     if renpy.random.randint(1, 2) < 2:
                         scene BG char Lisa horror-myroom 02
@@ -1120,6 +1118,5 @@ label lisa_horor_movie_r:
         $ renpy.end_replay()
         $ spent_time += 60
         $ infl[lisa].add_m(12)
-        $ dcv['film_punish'].enabled = False
-        $ dcv['film_punish'].set_lost(0)
+        $ lisa.dcv.special.disable()
         jump Waiting

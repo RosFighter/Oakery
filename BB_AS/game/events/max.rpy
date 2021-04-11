@@ -1,4 +1,3 @@
-
 label StartDialog:
     $ renpy.block_rollback()
     if mgg.energy < 10:
@@ -33,7 +32,7 @@ label Sleep:
             Max_19 "Как же в этом доме хорошо..."
 
             $ number_autosave += 1
-            $ NewSaveName()
+            # $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ spent_time = 360
             $ status_sleep = True
@@ -51,7 +50,7 @@ label Wearied:
         "{i}спать до утра{/i}":
             Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
-            $ NewSaveName()
+            # $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
             $ status_sleep = True
@@ -74,7 +73,7 @@ label LittleEnergy:
                 $ renpy.show('Max sleep-night '+pose3_1)
             Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
-            $ NewSaveName()
+            # $ NewSaveName()
             $ renpy.loadsave.force_autosave(True, True)
             $ current_room = house[0]
 
@@ -130,7 +129,7 @@ label Alarm:
     $ renpy.show('Max sleep-night '+pose3_2)
     Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
-    $ NewSaveName()
+    # $ NewSaveName()
     $ renpy.loadsave.force_autosave(True, True)
     $ spent_time = 420
     $ status_sleep = True
@@ -148,13 +147,13 @@ label Shower:
         "{i}закончить{/i}":
             $ mgg.cleanness = 100
 
-    if 'ladder' in flags and flags['ladder'] == 1:
+    if flags.ladder == 1:
         scene BG char Max shower-window-01
         Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
         Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
         Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
-        $ items['ladder'].InShop = True
-        $ flags['ladder'] = 2
+        $ items['ladder'].unblock()
+        $ flags.ladder = 2
         $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 
     $ spent_time = 30
@@ -171,13 +170,13 @@ label Bath:
         "{i}закончить{/i}":
             $ mgg.cleanness = 100
 
-    if 'ladder' in flags and flags['ladder'] == 1:
+    if flags.ladder == 1:
         scene BG char Max bath-window-01
         Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
         Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
         Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
-        $ items['ladder'].InShop = True
-        $ flags['ladder'] = 2
+        $ items['ladder'].unblock()
+        $ flags.ladder = 2
         $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 
     $ spent_time = 30
@@ -199,7 +198,7 @@ label Box:
         Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..."
         "{i}закончить{/i}":
             pass
-        "{i}узнать подробнее о \"Возможностях\"{/i}" if flags['about_poss']:
+        "{i}узнать подробнее о \"Возможностях\"{/i}":
             call about_poss from _call_about_poss
     $ AvailableActions['unbox'].enabled = False
     $ AvailableActions['searchcam'].enabled = True
@@ -248,7 +247,6 @@ label Laptop:
     $ renpy.block_rollback()
 
     $ search_theme.clear()
-    # $ purchased_items = []
 
     if poss['cams'].stn == 1:
         $ search_theme.append((_("{i}почитать о камерах{/i}"), 'about_cam'))
@@ -258,7 +256,7 @@ label Laptop:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), 'about_secretbook'))
     if poss['spider'].stn == 0:
         $ search_theme.append((_("{i}читать о пауках{/i}"), 'about_spider'))
-    if flags['credit'] == 1:
+    if flags.credit == 1:
         $ search_theme.append((_("{i}искать информацию по кредитам{/i}"), 'about_credit'))
 
     call screen LaptopScreen
@@ -295,8 +293,8 @@ label buyfood:
     Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
     Max_04 "Готово. Да это же самая лёгкая задача!"
     $ spent_time = 50
-    $ dcv['buyfood'].stage = 2
-    $ dcv['buyfood'].set_lost(2)
+    $ dcv.buyfood.stage = 2
+    $ dcv.buyfood.set_lost(2)
     $ mgg.pay(50)
     jump Laptop
 
@@ -342,7 +340,7 @@ label create_site:
     $ spent_time = 60
     $ poss['cams'].OpenStage(4)
     $ mgg.pay(100)
-    $ items['hide_cam'].InShop = True
+    $ items['hide_cam'].unblock()
     $ house[4].cams.append(HideCam())
     $ house[4].cams[0].grow = 100
 
@@ -376,7 +374,7 @@ label about_cam:
     Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
     Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
     Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
-    $ items['manual'].InShop = True
+    $ items['manual'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 20
     $ poss['cams'].OpenStage(2)
@@ -438,9 +436,7 @@ label about_secretbook:
         "{i}читать о книге{/i}":
             Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
 
-    # $ dcv['secretbook'] = Daily(4, False, True) # Покупка первой книги возможна через четыре дня.
-    # $ dcv['secretbook'].stage = 1
-    $ items['erobook_1'].InShop = True
+    $ items['erobook_1'].unblock()
     $ poss['secretbook'].OpenStage(2)
     $ spent_time += 30
     jump Laptop
@@ -504,11 +500,11 @@ label ClearPool:
     scene BG char Max cleeningpool-00
     $ renpy.show('Max cleaning-pool 01'+mgg.dress)
     Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    $ dcv['clearpool'].stage = 2
+    $ dcv.clearpool.stage = 2
     if day > 10:
-        $ dcv['clearpool'].set_lost(6)
+        $ dcv.clearpool.set_lost(6)
     else:
-        $ dcv['clearpool'].set_lost(9)
+        $ dcv.clearpool.set_lost(9)
     $ spent_time = 60
     $ cur_ratio = 2.5
     jump Waiting
@@ -544,7 +540,7 @@ label delivery1:
 
     if 'choco' in delivery_list[0]:
         $ kol_choco += 20
-        $ items['choco'].InShop = False
+        $ items['choco'].block()
     $ __StrDev = GetDeliveryString(0) # сформируем строку накладной
 
     scene BG delivery-00
@@ -556,7 +552,7 @@ label delivery1:
     $ renpy.say(Sam_00, __StrDev)
     Max_00 "Да, то что нужно. Спасибо!"
     $ current_room = house[6]
-    $ talk_var['courier1'] += 1
+    $ flags.courier1 += 1
     $ DeletingDeliveryTempVar(0) # удалим временные переменные и очистим список доставки
     jump AfterWaiting
 
@@ -566,11 +562,11 @@ label delivery2:
 
     if 'solar' in delivery_list[1]:
         $ kol_cream += 30
-        $ items['solar'].InShop = False
+        $ items['solar'].block()
     if 'max-a' in delivery_list[1]:
-        $ clothes[mgg].casual.sel.insert(1, Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
-        $ clothes[mgg].casual.cur = 1
-        $ items['max-a'].InShop = False
+        $ mgg.clothes.casual.sel.insert(1, Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
+        $ mgg.clothes.casual.cur = 1
+        $ items['max-a'].block()
         $ added_mem_var('max-a')
 
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
@@ -585,13 +581,13 @@ label delivery2:
     $ renpy.say(Christine_00, __StrDev)
     Max_00 "Да, то что нужно. Спасибо!"
     $ current_room = house[6]
-    $ talk_var['courier2'] += 1
+    $ flags.courier2 += 1
     if 'nightie2' in delivery_list[1]:
         #при доставке сорочки для Киры первый разговор с Кристиной
         call christina_first_talk(__dress) from _call_christina_first_talk
     if 'sexbody2' in delivery_list[1]:
         # поступило первое бельё для опережения Эрика
-        if dcv['eric.lingerie'].stage<5 and GetWeekday(day) in [4, 5]:
+        if alice.dcv.intrusion.stage<5 and GetWeekday(day) in [4, 5]:
             # Макс успевает
             Max_02 "{i}( Боди у меня! Теперь, нужно подарить его Алисе и больше всего мне может повезти, когда она занимается своим блогом. Она и так в это время в нижнем белье, а с учётом того, что она получит боди раньше времени, то вполне может переодеться и при мне... ){/i}"
         else:
@@ -625,7 +621,7 @@ label BookRead:
         else:
             Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
             $ poss['cams'].OpenStage(3)
-            $ items['manual'].InShop = False
+            $ items['manual'].block()
         jump .end
 
     label .sex_ed:
@@ -633,7 +629,7 @@ label BookRead:
         if items['sex.ed'].read < 2:
             # выбрали читать книгу
             $ poss['seduction'].OpenStage(12)
-            $ items['sex.ed'].InShop = False
+            $ items['sex.ed'].block()
             Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
         elif items['sex.ed'].read < 3:
             Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
@@ -782,12 +778,11 @@ label InstallCam:
                     $ house[6].cams.append(HideCam())
                     $ house[6].cams[0].grow = 100
 
-    $ items['hide_cam'].have = False
+    $ items['hide_cam'].use()
     $ cur_ratio = 1.5
     $ spent_time = 30
     if GetKolCams(house)==9:
-        $ items['hide_cam'].InShop = False
-        $ items['hide_cam'].have = False
+        $ items['hide_cam'].block()
     jump Waiting
 
 
@@ -830,7 +825,7 @@ label HideSpider:
             $ SpiderResp = 1
             if RandomChance(_ch1.ch) and 'spider' not in NightOfFun:
                 $ NightOfFun.append('spider')
-            $ items['spider'].have = False
+            $ items['spider'].use()
             $ spent_time = 10
 
         "В другой раз...":
@@ -880,14 +875,14 @@ label SearchCigarettes:
     call screen search_cigarettes
 
     label .bedside:
-        if (random_sigloc == 'n' and dcv['smoke'].done
+        if (random_sigloc == 'n' and alice.dcv.special.done
                 and alice.plan_name not in['at_friends','smoke']):
             jump .yes
         else:
             jump .no
 
     label .table:
-        if (random_sigloc == 't' and dcv['smoke'].done
+        if (random_sigloc == 't' and alice.dcv.special.done
                 and alice.plan_name not in['at_friends','smoke']):
             jump .yes
         else:
@@ -911,7 +906,7 @@ label SearchCigarettes:
                     $ punalice[0][1] = 1
             "{i}не подставлять Алису{/i}":
                 pass
-    $ dcv['betray_smoke'].set_lost(1)
+    $ alice.dcv.set_up.set_lost(1)
     $ spent_time += 30
     jump Waiting
 
@@ -946,7 +941,7 @@ label need_money:
     else:
         Max_08 "К сожалению, у меня нет источника доходов, все мои деньги я получаю только от мамы. Ну и от Алисы ещё могу..."
     Max_09 "Нужно поискать какую-нибудь информацию в интернете, может есть возможность получить кредит."
-    $ flags['credit'] = 1
+    $ flags.credit = 1
     $ spent_time += 10
     jump Waiting
 
@@ -989,7 +984,7 @@ label about_credit:
     else:
         Max_16 "Вот чёрт, а у меня нет никакого проекта! Получается, что денег мне никто не даст."
 
-    $ flags['credit'] = 2
+    $ flags.credit = 2
     $ spent_time += 30
     jump Laptop
 

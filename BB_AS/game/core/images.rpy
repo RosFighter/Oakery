@@ -10,9 +10,7 @@ init 1900 python hide:
                 continue
             if not fn.lower().endswith('.png') and not fn.lower().endswith('.jpg') and not fn.lower().endswith('.webp'):
                 continue
-            shortfn = fn[:-4]
-            if fn.lower().endswith('.webp'):
-                shortfn = fn[:-5]
+            shortfn = fn[:-5] if fn.lower().endswith('.webp') else fn[:-4]
             shortfn = shortfn.replace('\\', '/')
             name = ( shortfn, )
             for sep in seps:

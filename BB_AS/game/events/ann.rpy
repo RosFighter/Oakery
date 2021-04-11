@@ -3,9 +3,9 @@
 
 label ann_sleep:
     scene location house annroom door-night
-    if peeping['ann_sleep'] != 0:
+    if ann.hourly.sleep != 0:
         return
-    $ peeping['ann_sleep'] = 1
+    $ ann.hourly.sleep = 1
 
     menu:
         Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..."
@@ -56,27 +56,27 @@ label ann_sleep:
 
 label ann_shower:
     scene location house bathroom door-morning
-    if peeping['ann_shower'] == 3:
+    if ann.daily.shower == 3:
         Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить её ещё больше."
         return
-    elif peeping['ann_shower'] == 1:
+    elif ann.daily.shower == 1:
         Max_00 "Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто."
         return
-    elif  peeping['ann_shower'] == 2:
+    elif  ann.daily.shower == 2:
         Max_00 "Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто."
         return
-    elif peeping['ann_shower'] > 3:
+    elif ann.daily.shower > 3:
         menu:
             Max_00 "Мама сейчас принимает душ..."
             "{i}уйти{/i}":
                 return
     else:
-        $ peeping['ann_shower'] = 4
+        $ ann.daily.shower = 4
         menu:
             Max_00 "Похоже, мама принимает душ..."
             "{i}заглянуть со двора{/i}":
                 jump .start_peeping
-            "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+            "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
                 jump .ladder
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -128,7 +128,7 @@ label ann_shower:
         if not RandomChance(_ch2.ch):
             jump .not_luck
         $ spent_time += 10
-        $ peeping['ann_shower'] = 1
+        $ ann.daily.shower = 1
         $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
         $ __ran1 = renpy.random.randint(1, 6)
@@ -145,7 +145,7 @@ label ann_shower:
     label .closer_peepeng:
         $ spent_time += 10
         if RandomChance(_ch1.ch):
-            $ peeping['ann_shower'] = 1
+            $ ann.daily.shower = 1
             $ Skill('hide', 0.2)
             $ ann.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(1, 6)
@@ -162,7 +162,7 @@ label ann_shower:
 
     label .not_luck:
         if RandomChance(_ch1.ch):
-            $ peeping['ann_shower'] = 2
+            $ ann.daily.shower = 2
             $ Skill('hide', 0.1)
             $ ann.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(7, 8)
@@ -172,7 +172,7 @@ label ann_shower:
             Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
             jump .end_peeping
         else:
-            $ peeping['ann_shower'] = 3
+            $ ann.daily.shower = 3
             $ Skill('hide', 0.05)
             $ __ran1 = renpy.random.choice(['09', '10'])
             scene BG shower-closer
@@ -245,9 +245,9 @@ label ann_cooking_closer:
 
 label ann_dressed_work:
     scene location house annroom door-morning
-    if peeping['ann_dressed'] != 0:
+    if ann.hourly.dressed != 0:
         return
-    $ peeping['ann_dressed'] = 1
+    $ ann.hourly.dressed = 1
     $ __mood = 0
     menu:
         Max_09 "Сейчас 10 часов, а значит, мама собирается на работу..."
@@ -393,12 +393,13 @@ label ann_dressed_work:
         jump .endgift
 
     label .endgift:
-        $ items['nightie'].have = False
-        $ items['nightie'].InShop = False
+        $ items['nightie'].give()
+        # $ items['nightie'].have = False
+        # $ items['nightie'].InShop = False
         $ ann.gifts.append('nightie')
-        $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
-        $ clothes[ann].sleep.cur = 1
-        $ clothes[ann].sleep.rand = True
+        $ ann.clothes.sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
+        $ ann.clothes.sleep.cur = 1
+        $ ann.clothes.sleep.rand = True
         $ infl[ann].add_m(40, True)
         jump .end
 
@@ -409,10 +410,10 @@ label ann_dressed_work:
 
 label ann_dressed_shop:
     scene location house annroom door-morning
-    if peeping['ann_dressed'] != 0:
+    if ann.hourly.dressed != 0:
         return
 
-    $ peeping['ann_dressed'] = 1
+    $ ann.hourly.dressed = 1
     $ __mood = 0
     menu:
         Max_09 "Сегодня суббота, день шоппинга. Видимо, мама собирается..."
@@ -553,18 +554,13 @@ label ann_dressed_shop:
         jump .endgift
 
     label .endgift:
-        $ items['nightie'].have = False
-        $ items['nightie'].InShop = False
+        $ items['nightie'].give()
+        # $ items['nightie'].have = False
+        # $ items['nightie'].InShop = False
         $ ann.gifts.append('nightie')
-        $ clothes[ann].sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
-        $ clothes[ann].sleep.cur = 1
-        $ clothes[ann].sleep.rand = True
-        # if ann.inferic is not None:
-        #     $ ann.inferic = clip(ann.inferic-50.0, 0.0, 100.0)
-        # if ann.infmax is not None:
-        #     $ ann.infmax = clip(ann.infmax+20.0, 0.0, 100.0)
-        # else:
-        #     $ ann.infmax = 20.0
+        $ ann.clothes.sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
+        $ ann.clothes.sleep.cur = 1
+        $ ann.clothes.sleep.rand = True
         $ infl[ann].add_m(40, True)
         jump .end
 
@@ -628,10 +624,10 @@ label ann_alice_swim:
 
 label ann_bath:
     scene location house bathroom door-evening
-    if peeping['ann_bath'] != 0:
+    if ann.daily.bath != 0:
         return
 
-    $ peeping['ann_bath'] = 1
+    $ ann.daily.bath = 1
     menu:
         Max_00 "Видимо, мама принимает ванну..."
         "{i}постучаться{/i}":
@@ -671,24 +667,25 @@ label ann_bath:
                     jump .end
                 "{i}уйти{/i}":
                     jump .end
-        "{i}заглянуть со двора{/i}" if 'ladder' not in flags or flags['ladder'] < 2:
+        "{i}заглянуть со двора{/i}" if flags.ladder < 2:
             scene Ann bath 01
             $ renpy.show('FG voyeur-bath-00'+mgg.dress)
             Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
             menu:
                 Max_09 "Нужно что-нибудь придумать..."
                 "{i}уйти{/i}":
-                    $ flags['ladder'] = 1
+                    $ flags.ladder = 1
                     jump .end
         "{i}установить стремянку{/i}" if items['ladder'].have:
             scene BG char Max bathroom-window-evening-00
             $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
             Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-            $ flags['ladder'] = 3
-            $ items['ladder'].have = False
-            $ items['ladder'].InShop = False
+            $ flags.ladder = 3
+            $ items['ladder'].give()
+            # $ items['ladder'].have = False
+            # $ items['ladder'].InShop = False
             jump .ladder
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
             jump .end

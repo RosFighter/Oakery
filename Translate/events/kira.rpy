@@ -2001,7 +2001,7 @@ translate english kira_night_tv_repeat_lesson_9bb8c535:
 # game/events/kira.rpy:1247
 translate english kira_night_tv_repeat_lesson_174945ac:
 
-    # Max_01  "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
+    # Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
     Max_01 "Of course, Aunt Kira. You are the best! Goodnight!"
 
 # game/events/kira.rpy:1258

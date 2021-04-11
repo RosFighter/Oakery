@@ -81,8 +81,8 @@ label kira_firsttalk:
             show Max shower 05
             Max_07 "Я же не сказал это вслух?"
             $ mgg.cleanness = 100
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].OpenStage(0)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
@@ -153,8 +153,8 @@ label kira_talk2:
             show Max shower 05
             Max_07 "{i}( О да... Надеюсь, она не поняла, что я сейчас делал, глядя на неё. Хотя, всё она понимает. Да ещё и видела меня, мой... ){/i}"
             $ mgg.cleanness = 100
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -203,8 +203,8 @@ label kira_talk3:
 
     ## второй этап "Любимой тёти"
 
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].OpenStage(1)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
@@ -222,10 +222,10 @@ label kira_about_kiss:
     Max_01 "Как ты догадалась?"
     menu:
         Kira_05 "Ну зачем ещё парню может это понадобиться, сам подумай... И что, больше не у кого просить помощи, решил ко мне обратиться?"
-        "Мама не помогла..." if 'ann' in talk_var['ask.teachkiss']:
+        "Мама не помогла..." if 'ann' in flags.how_to_kiss:
             Kira_01 "Даже мама не помогла? Ого! Наверняка, сказала, чтобы ты учился целоваться со своей девушкой?"
             Max_07 "Точно!"
-        "Да, Алиса меня отшила..." if 'alice' in talk_var['ask.teachkiss']:
+        "Да, Алиса меня отшила..." if 'alice' in flags.how_to_kiss:
             Kira_01 "Неудивительно. Наверняка, полез целоваться и получил... по... Хотя, нет. Видимо, тебе повезло. Ну я бы не стала к Алисе с такими вопросами обращаться на твоём месте..."
             Max_07 "Да, уже жалею..."
         "Ага...":
@@ -239,7 +239,7 @@ label kira_about_kiss:
             Max_01 "Конечно!"
 
     $ poss['seduction'].OpenStage(6)
-    $ talk_var['ask.teachkiss'].append('kira')
+    $ flags.how_to_kiss.append('kira')
     $ spent_time += 10
     return
 
@@ -323,8 +323,8 @@ label kira_talk4:
             show Max shower 05
             Max_07 "{i}( Ну, тётя Кира, ты доприкалываешься! Я ещё реализую свои фантазии с тобой... ){/i}"
             $ mgg.cleanness = 100
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].OpenStage(2)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
@@ -374,10 +374,10 @@ label kira_talk5:
         "{i}закончить{/i}":
             show Max shower 05
             Max_09 "{i}( Эх, с тётей Кирой кончать поинтереснее... и намного! ){/i}"
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].OpenStage(3)
-    $ items['photocamera'].InShop = True
+    $ items['photocamera'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ SetCamsGrow(house[6], 180)
     $ SetCamsGrow(house[3], 180)
@@ -396,16 +396,16 @@ label kira_talk6:
             menu:
                 Kira_02 "Понятно. Ну, как найдёшь, дай знать. Я почти всегда готова фотографироваться, но нужно, чтобы ещё и дома никого не было... А то нас не поймут..."
                 "Всё понял...":
-                    $ talks['kt6'].req = "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==5, items['photocamera'].have, items['nightie2'].have])"
+                    $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have])"
         "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, GetWeekday(day)!=6]):
             Kira_04 "Очень хорошо. Теперь нужно выбрать подходящий момент, когда дома никого не будет..."
             Max_01 "Точно!"
-            $ talks['kt6'].req = "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==5, items['photocamera'].have, items['nightie2'].have, GetWeekday(day)==6])"
+            $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have, GetWeekday(day)==6])"
         "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, GetWeekday(day)==6]):
             Kira_07 "Макс, ты просто чудо! Я всегда бодра, красива и свежа, чтобы фотографироваться. Нужно только решить где это будет..."
             Max_04 "Может быть, в гостиной?"
             jump first_photoset
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.set_lost(1)
     $ spent_time += 10
     jump Waiting
 
@@ -588,11 +588,11 @@ label first_photoset:
     $ added_mem_var('kira_photoset1')
     $ SetCamsGrow(house[4], 300)
     $ poss['aunt'].OpenStage(4)
-    $ items['nightie2'].InShop = False
-    $ items['photocamera'].InShop = False
-    $ items['nightie2'].have = False
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ items['photocamera'].block()
+    $ items['nightie2'].give()
+    # $ items['nightie2'].have = False
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ spent_time += 90
     $ current_room = house[0]
     jump Waiting
@@ -668,8 +668,10 @@ label kira_about_photo1:
     $ mgg.cleanness = 100
     $ SetCamsGrow(house[3], 250)
     $ poss['aunt'].OpenStage(5)
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
+    $ kira.dcv.photo.stage = 1
+    $ kira.dcv.photo.set_lost(10)
     $ spent_time += 30
     $ current_room = house[0]
     $ append_photo('01-Kira', 12)
@@ -690,11 +692,12 @@ label kira_about_cuni:
     Max_09 "Сестрёнкам надо помогать! А твоё приглашение всё ещё в силе?"
     if GetWeekday(day)!=5:
         Kira_04 "Если только ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
+        $ kira.dcv.sweets.set_lost(1)
     else:
         Kira_04 "Если только завтра ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
+        $ kira.dcv.sweets.set_lost(2)
     Max_02 "Не завалюсь, буду тебя ждать!"
     Kira_01 "Посмотрим, Макс."
-    $ dcv['kiratalkcuni'].set_lost(1)
     $ spent_time += 10
     jump Waiting
 
@@ -714,8 +717,8 @@ label kira_about_photo2:
         Max_07 "Э... Какое?"
         Kira_07 "А это сюрприз, Макс. Так что, наберись терпения..."
         Max_04 "Понял..."
-        $ dcv['kiratalk'].set_lost(1)
-        $ talks['kt.ft2'].req = "all([GetWeekday(day)==6, dcv['kiratalk'].stage==7, kira.plan_name=='sun', not expected_photo, dcv['kira.nextphoto'].enabled, dcv['kira.nextphoto'].stage==1, dcv['kira.nextphoto'].done, dcv['kiratalk'].done])"
+        $ kira.dcv.feature.set_lost(1)
+        $ talks['kt.ft2'].req = "all([GetWeekday(day)==6, kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"
         $ spent_time += 10
         jump Waiting
 
@@ -961,8 +964,9 @@ label kira_about_photo2:
     $ renpy.end_replay()
     $ SetCamsGrow(house[2], 300)
     $ poss['aunt'].OpenStage(6)
-    $ dcv['kiratalk'].stage += 1
-    $ dcv['kiratalk'].set_lost(1)
+    $ kira.dcv.photo.stage = 2
+    $ kira.dcv.feature.stage += 1
+    $ kira.dcv.feature.set_lost(1)
     $ append_photo('02-Kira', 9)
 
     $ spent_time += 60

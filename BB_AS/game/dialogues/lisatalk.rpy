@@ -141,7 +141,7 @@ label MorningWood:
             pass
 
     $ renpy.end_replay()
-    $ flags['morning_erect'] = 1
+    $ dcv.mv.stage = 1
     $ poss['seduction'].OpenStage(0)
     $ spent_time += 30
     jump Waiting
@@ -149,7 +149,7 @@ label MorningWood:
 
 label MorningWoodCont:  # последующие утренние стояки
 
-    if flags['morning_erect'] == 2:
+    if dcv.mv.stage == 2:
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 07'+lisa.dress)
         Lisa_12 "Ну и как тебе это, Макс? Не стыдно, вот так валяться передо мной?"   #oops-01 + 07
@@ -174,7 +174,7 @@ label MorningWoodCont:  # последующие утренние стояки
         Lisa_09 "Да ну тебя, Макс!"
         $ poss['seduction'].OpenStage(2)
 
-    elif flags['morning_erect'] == 4:
+    elif dcv.mv.stage == 4:
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 11'+lisa.dress)
         menu:
@@ -197,7 +197,7 @@ label MorningWoodCont:  # последующие утренние стояки
         Max_01 "Конечно, я так и подумал."
         $ poss['seduction'].OpenStage(3)
 
-    elif flags['morning_erect'] == 6:
+    elif dcv.mv.stage == 6:
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
         Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"   #oops-13 + max-01 lisa-01
@@ -219,11 +219,11 @@ label MorningWoodCont:  # последующие утренние стояки
         Max_04 "Скоро. Очень."
         Lisa_01 "Хорошо, Макс. Будет любопытно понаблюдать за тем, как ты... обучаешь..."
         Max_01 "Договорились!"
-        $ flags['morning_erect'] += 1 # дабы закрыть запуски утренних стояков, долбавляем дважды
+        $ dcv.mv.stage += 1 # дабы закрыть запуски утренних стояков, долбавляем дважды
         $ poss['seduction'].OpenStage(4)
 
-    $ dcv['mw'].set_lost(2)
-    $ flags['morning_erect'] += 1
+    $ dcv.mv.set_lost(2)
+    $ dcv.mv.stage += 1
     $ spent_time += 30
     jump Waiting
 
@@ -242,7 +242,7 @@ label AfterSchoolFD:
 
 
 label about_school:
-    $ talk_var['lisa_fd'] += 1
+    $ flags.lisa_fd += 1
     menu:
         Lisa_00 "Неужели, я дома! До сих пор не могу поверить, что ЭТО наш дом!"
         "Да я сам в шоке!":
@@ -396,7 +396,7 @@ label about_school:
             jump .ok
 
     label .boy:
-        $ talk_var['boy'] += 1
+        $ lisa.flags.crush += 1
         $ cooldown['lisa_boy'] = CooldownTime("01:30")
         menu:
             Lisa_10 "Ну... его зовут Алекс. Мы учимся в одном классе. Даже сидим рядом..."
@@ -619,11 +619,11 @@ label talk_swim:
                     pass
                 "Да легко!":
                     pass
-                "Боюсь тебя шокировать..." if flags['morning_erect'] == 0:
+                "Боюсь тебя шокировать..." if dcv.mv.stage == 0:
                     Lisa_00 "Не поняла. В каком смысле?"
                     Max_00 "Извини, шутки у меня дурацкие... А какой купальник ты хочешь?"
                     jump .want
-                "Боюсь тебя снова шокировать..." if flags['morning_erect'] > 0:
+                "Боюсь тебя снова шокировать..." if dcv.mv.stage > 0:
                     menu:
                         Lisa_12 "Фу, Макс! Опять твои шуточки... Не надо мне такого счастья. Держи свою штуку там, в штанах..."
                         "Ну, ты сама спросила почему я не раздеваюсь...":
@@ -660,7 +660,7 @@ label talk_swim:
         jump .end
 
     label .findout:
-        $ flags['promise_kiss'] = True
+        $ lisa.flags.promise = True
         Lisa_00 "Например? У тебя же нет денег, ты нигде не работаешь и я что-то сомневаюсь, что ты умеешь шить купальники..."
         Max_04 "Вот увидишь!"
         menu:
@@ -677,7 +677,7 @@ label talk_swim:
 
 label about_boy:
 
-    $ talk_var['boy'] = 2
+    $ lisa.flags.crush = 2
 
     menu:
         Lisa_00 "Моего парня? Какого? У меня нет никого..."
@@ -745,7 +745,7 @@ label about_boy:
 
 
 label wash_dishes_lisa:
-    $ talk_var['lisa_dw'] = 1
+    $ lisa.daily.dishes = 1
     menu:
         Lisa_09 "А что насчёт посуды?"
         "Хочешь, я помогу тебе домыть остальное?":
@@ -776,7 +776,7 @@ label wash_dishes_lisa:
 label about_boy2: # разговор с Лизой после того, как на ужине вся семья узнала про Алекса
     Lisa_00 "Макс, давай сменим тему..."
     Max_11 "Ну Лиза..."
-    if talk_var['boy'] == 3: # bad
+    if lisa.flags.crush == 3: # bad
         menu:
             Lisa_09 "Макс, я тебе рассказала по секрету, а ты меня спалил маме. Не хочу ничего рассказывать больше..."
             "Извини, я забыл, что обещал":
@@ -786,7 +786,7 @@ label about_boy2: # разговор с Лизой после того, как �
             "Извини, я не подумал...":
                 Lisa_00 "Не подумал. Я же просила, а ты... Как тебе рассказывать что-то, если ты не думаешь?"
         Max_08 "Извини ещё раз, я не хотел"
-    elif talk_var['boy'] == 5: # good
+    elif lisa.flags.crush == 5: # good
         Lisa_02 "Ну ладно, ладно. Кстати, спасибо, что меня не выдал. Мне нравится, что я могу на тебя положиться."
         Max_04 "Всегда пожалуйста!"
     else: # normal
@@ -839,7 +839,7 @@ label about_boy2: # разговор с Лизой после того, как �
     Max_04 "Всегда пожалуйста!"
     $ AddRelMood('lisa', 0, 100)
     $ spent_time += 30
-    $ talk_var['boy'] = 6
+    $ lisa.flags.crush = 6
     $ cooldown['lisa_boy'] = CooldownTime("05:00")
     return
 
@@ -890,7 +890,7 @@ label Lisa_MorningWood: # Разговор с Лизой после утренн
 
 label Lisa_MorningWoodCont:
 
-    if flags['morning_erect'] == 3:
+    if dcv.mv.stage == 3:
         Lisa_00 "О ком?!"
         Max_01 "О Большом Максе, на которого ты, с таким интересом, смотрела утром."
         Lisa_02 "Ага! Так значит я была права! Раз у него есть имя, значит он и правда живёт своей жизнью..."
@@ -917,7 +917,7 @@ label Lisa_MorningWoodCont:
         Lisa_01 "Да ты тоже на эксперта не тянешь, Макс."
         Max_04 "Хотя бы подумай над этим."
         Lisa_00 "Ладно, подумаю..."
-    $ flags['morning_erect'] += 1
+    $ dcv.mv.stage += 1
     $ spent_time = 30
     return
 
@@ -956,7 +956,7 @@ label Lisa_sg1:
         Lisa_03 "Макс, я тебя обожаю! Спасибо! Сегодня мне помощь не нужна, а вот в следующий раз походи, когда делаю уроки, я найду тебе занятие!"
         Max_01 "Хорошо, Лиза!"
         $ poss['sg'].OpenStage(2)
-        $ flags['lisa_hw'] = True
+        $ lisa.daily.homework = 1
         $ AddRelMood('lisa', 0, 200)
         $ AttitudeChange('lisa', 0.8)
         $ spent_time += 20
@@ -990,15 +990,15 @@ label Lisa_sg1:
 
     Max_03 "Например, я попрошу тебя спать без твоих штанов, в трусиках..."
     Lisa_13 "Фу, Макс! Ты извращенец! Зачем тебе это? Я же твоя сестра, забыл?"
-    if talk_var['lisa.pun'] > 0: # возможно, следует добавить ещё вариант, когда Макс разговаривает Лизой не после первого наказания
+    if lisa.flags.pun > 0: # возможно, следует добавить ещё вариант, когда Макс разговаривает Лизой не после первого наказания
         Max_09 "Ну, решай сама. Тебя мама по джинсам отшлёпала, а представь как будет по голой заднице?"
         Lisa_10 "Было больно... Ладно. Всё равно мне жарко в штанах спать. А ты, Макс, гад. Я думала, что мы друзья, а ты... ещё и извращенец..."
         Max_01 "Но я буду тебе помогать с уроками!"
         Lisa_00 "Если не будешь помогать, то я маме всё расскажу и посмотрим, кого накажут. Всё, мы закончили."
         Max_00 "Как скажешь..."
-        $ clothes[lisa].sleep.cur = 1
+        $ lisa.clothes.sleep.cur = 1
+        $ lisa.daily.homework = 1
         $ poss['sg'].OpenStage(3)
-        $ flags['lisa_hw'] = True
         $ AddRelMood('lisa', -20, -100)
         $ spent_time += 20
     else:
@@ -1006,7 +1006,6 @@ label Lisa_sg1:
         Lisa_12 "Нет, Макс, забудь. Мне не нужна твоя помощь!"
         Max_01 "Ну, посмотрим..."
         $ poss['sg'].OpenStage(1)
-        $ flags['lisa_hw'] = True
         $ AddRelMood('lisa', -10, -50)
         $ spent_time += 20
 
@@ -1027,7 +1026,7 @@ label Lisa_sg2:
             Max_07 "Допустим, мне стыдно. Так ты согласна?"
     Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
     Max_05 "Как скажешь..."
-    $ clothes[lisa].sleep.cur = 1
+    $ lisa.clothes.sleep.cur = 1
     $ poss['sg'].OpenStage(3)
     $ AddRelMood('lisa', -20, -100)
     $ spent_time += 10
@@ -1035,7 +1034,7 @@ label Lisa_sg2:
 
 
 label Lisa_HomeWork:
-    $ flags['lisa_hw'] = True
+    $ lisa.daily.homework = 1
     $ punlisa.insert(0, [0, 0, 0, 0, 0])
     $ del punlisa[10:]
     $ _ch3 = GetChance(mgg.social, 3, 900)
@@ -1044,19 +1043,19 @@ label Lisa_HomeWork:
     # "Помочь с уроками?"
 
     if (GetWeekday(day) in [1, 2, 3] and
-        (talk_var['fight_for_Lisa'] in [1, 4, 5] and talk_var['ae_lisa_number'] >= 0)
-                or (talk_var['fight_for_Lisa'] == 2 and dcv['ae_ed_lisa'].lost < 6)):
+        (lisa.dcv.battle.stage in [1, 4, 5] and flags.lisa_sexed >= 0)
+                or (lisa.dcv.battle.stage == 2 and lisa.dcv.intrusion.lost < 6)):
             # с понедельника по среду - новая схема, чт-пт - старая
             # на развилке с Эриком по Лизе выбрана дружба или отсрочка (у Лизы репетитор)
             # начинается после вводного урока (просто дружба)
-            # или dcv['ae_ed_lisa'].lost < 6, т.е. после второго воскресения после Диалога с Эриком
-            $ talk_var['help.hw'] += 1
+            # или lisa.dcv.intrusion.lost < 6, т.е. после второго воскресения после Диалога с Эриком
+            $ lisa.flags.help += 1
             Lisa_01 "Нет, Макс, спасибо. Я же с репетитором занимаюсь, так что справлюсь сама."
             Lisa_02 "Знаешь... А ладно, делай. Я так устала сегодня в школе, что не откажусь от того, чтобы ты сделал уроки за меня. Но смотри, я всё проверю..."
             jump .new_self
 
-    if all([talk_var['fight_for_Lisa'] in [3, 6], talk_var['ae_lisa_number'] >= 0]):
-        $ talk_var['help.hw'] += 1
+    if all([lisa.dcv.battle.stage in [3, 6], flags.lisa_sexed >= 0]):
+        $ lisa.flags.help += 1
         # на развилке с Эриком по Лизе выбрана война (у Лизы доп.курсы после уроков)
         menu:
             Lisa_01 "Нет, Макс, спасибо. Я теперь посещаю дополнительные курсы в школе, так что справлюсь сама."
@@ -1089,6 +1088,7 @@ label Lisa_HomeWork:
     $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
     $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
 
+    $ lisa.flags.help += 1
     menu:
         Lisa_02 "Отлично. В общем, мне нужно сделать вот это, это и вот то. Поможешь?"
         "Без проблем!" if poss['sg'].stn == 2:
@@ -1097,34 +1097,27 @@ label Lisa_HomeWork:
             Lisa_03 "Спасибо, Макс! Ты так меня выручил! Теперь я точно получу пятёрку!"
             Max_01 "Обращайся!"
             $ AddRelMood('lisa', 10 if GetRelMax("lisa")[0] < 3 else 5, 100, 3)
-            $ talk_var['help.hw'] += 1
             $ punlisa[0][0] = 3
             $ spent_time += max((60 - int(tm[-2:])), 40)
             jump Waiting
         "Конечно! {i}(сделать ошибки){/i}" if poss['sg'].stn == 2:
-            $ talk_var['help.hw'] += 1
             jump .make_bag
         "Ты пока отдохни, я сам всё сделаю!" if poss['sg'].stn == 2:
-            $ talk_var['help.hw'] += 1
             jump .self
         "Ага... {i}(сделать ошибки){/i}" if poss['sg'].stn > 2:
-            $ talk_var['help.hw'] += 1
             jump .make_bag
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].stn > 2:
-            $ talk_var['help.hw'] += 1
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].stn > 2, lisa.dress > 'a', talk_var['lisa.pun'] > 1, talk_var['lisa.footmass']<3]):
-            $ talk_var['help.hw'] += 1
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].stn > 2, lisa.dress > 'a', lisa.flags.pun > 1, lisa.flags.m_foot<3]):
             $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
-                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['lisa.footmass']<3:
+                "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if lisa.flags.m_foot<3:
                     jump .show_breast
-        "А ножки тебе помассировать?" if all([len(online_cources)>1 and online_cources[1].cources[0].less, talk_var['lisa.footmass']>=3, talk_var['lisa.sh_br']>=5]):
-            $ talk_var['help.hw'] += 1
+        "А ножки тебе помассировать?" if all([len(online_cources)>1 and online_cources[1].cources[0].less, lisa.flags.m_foot>2, lisa.stat.sh_breast>=5]):
             # если началась борьба за Лизу с Эриком, то переходим к новой схеме
-            if ((talk_var['fight_for_Lisa'] in [1, 4, 5] and talk_var['ae_lisa_number'] >= 0)
-                    or (talk_var['fight_for_Lisa'] == 2 and dcv['ae_ed_lisa'].lost < 6)):
+            if ((lisa.dcv.battle.stage in [1, 4, 5] and flags.lisa_sexed >= 0)
+                    or (lisa.dcv.battle.stage == 2 and lisa.dcv.intrusion.lost < 6)):
                 jump .new_massage
 
             # иначе действует прежняя схема
@@ -1137,12 +1130,14 @@ label Lisa_HomeWork:
                 $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
             else:
                 $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
+            $ lisa.stat.sh_breast += 1
             Lisa_05 "Ладно, вот, любуйся... И моим ножкам после этого, должно быть так же хорошо, как тебе сейчас!"
             Max_05 "Будет. Обещаю!"
             $ add_lim('lisa.free', 0.1, 5)
             $ punlisa[0][0] = 5
             jump .next_foot_mass
         "Ой, тут много... Давай в другой раз.":
+            $ lisa.flags.help -= 1
             $ AddRelMood('lisa', -5, -50)
             $ spent_time += 10
             jump Waiting
@@ -1158,19 +1153,19 @@ label Lisa_HomeWork:
                     pass
                 "Как хочешь. Но мама тебя накажет!":
                     pass
-            $ talk_var['lisa.sh_br'] += 1
+            $ lisa.stat.sh_breast += 1
             if lisa.GetMood()[0] < 3:
                 $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
                 Lisa_09 "[succes!t]Ладно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
-                if talk_var['lisa.footmass']>0:
+                if lisa.flags.m_foot>0:
                     jump .next_foot_mass
                 Lisa_00 "Ну всё, а теперь сделай работу на отлично!"
             else:
                 $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
                 Lisa_05 "[succes!t]Ладно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
-                if all([len(online_cources)>1 and online_cources[1].cources[0].less, talk_var['lisa.sh_br']>2, talk_var['al.tvgood']>=2, talk_var['lisa.footmass']<0]):
+                if all([len(online_cources)>1 and online_cources[1].cources[0].less, lisa.stat.sh_breast>2, alice.stat.footjob>=2, not lisa.flags.m_foot]):
                     jump .first_foot_mass
-                if len(online_cources)>1 and online_cources[1].cources[0].less and talk_var['lisa.footmass']>0:
+                if len(online_cources)>1 and online_cources[1].cources[0].less and lisa.flags.m_foot>0:
                     jump .next_foot_mass
                 Lisa_01 "Ну все, полюбовался и хватит, а теперь сделай работу на отлично!"
             Max_05 "Вот теперь убедила!"
@@ -1218,14 +1213,14 @@ label Lisa_HomeWork:
     label .self:
         hide Lisa
         $ renpy.show("Max lessons-help single-01"+mgg.dress)
-        $ talk_var['truehelp'] += 1
+        $ lisa.flags.truehelp += 1
         Max_10 "Так, что тут у нас... Ох, вроде недавно школу закончил... ну, учился недавно ещё, а уже ничего не помню... Хотя... Вот. Да, всё верно!"
         Max_04 "Ну всё, Лиза, я закончил!"
         hide Max
         $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
         $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
         $ punlisa[0][0] = 3
-        if talk_var['truehelp'] == 6:
+        if lisa.flags.truehelp == 6:
             $ notify_list.append(_("Лиза очень ценит помощь Макса. Её отношение значительно улучшилось."))
             $ AddRelMood('lisa', 15, 150, 3)
             $ AttitudeChange('lisa', 0.8)
@@ -1242,6 +1237,7 @@ label Lisa_HomeWork:
         jump Waiting
 
     label .first_foot_mass:
+        $ renpy.dynamic("foot")
         if not _in_replay:
             $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = 1
         else:
@@ -1262,9 +1258,9 @@ label Lisa_HomeWork:
             Lisa_01 "Тогда делай то, от чего у Алисы был такой блаженный вид! А я пока уроками займусь..."
             "{i}начать массаж{/i}":
                 pass
-        $ __foot = renpy.random.choice(['03', '04'])
+        $ foot = renpy.random.choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
-        $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+        $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-03-"+pose3_1)
         menu:
             Max_04 "{i}( Какие у Лизы красивые ножки. А как классно к ним прикасаться... ){/i}"   #спрайт где не видно трусиков (или левая, или правая нога)
@@ -1274,9 +1270,9 @@ label Lisa_HomeWork:
             Lisa_02 "У тебя хорошо получается. Мне приятно..."
             "{i}продолжить{/i}":
                 pass
-        $ __foot = {'03':'02', '04':'01'}[__foot]
+        $ foot = {'03':'02', '04':'01'}[foot]
         scene BG char Lisa lessons-mass-01
-        $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+        $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-01-"+pose3_1)
         Lisa_01 "Макс, тебе же ничего не видно?"   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
         Max_01 "Ты про уроки?"
@@ -1299,12 +1295,13 @@ label Lisa_HomeWork:
         Max_01 "Да не за что."
         $ renpy.end_replay()
         $ Skill('massage', 0.05)
-        $ talk_var['lisa.footmass'] = 1
+        $ lisa.flags.m_foot = 1
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
 
     label .next_foot_mass:
-        if talk_var['lisa.footmass']<3 or talk_var['lisa.sh_br']<5:
+        $ renpy.dynamic("foot")
+        if lisa.flags.m_foot<3 or lisa.stat.sh_breast<5:
             Lisa_01 "Вот, ты увидел, что хотел, теперь я попробую сама сделать уроки, а ты поможешь мне расслабиться..."
             $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
             $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
@@ -1313,9 +1310,9 @@ label Lisa_HomeWork:
                 Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
                 "{i}начать массаж{/i}":
                     pass
-        $ __foot = renpy.random.choice(['03', '04'])
+        $ foot = renpy.random.choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
-        $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+        $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-03-"+pose3_1)
         menu:
             Max_04 "{i}( А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки... ){/i}"   #спрайт где не видно трусиков (или левая, или правая нога)
@@ -1325,9 +1322,9 @@ label Lisa_HomeWork:
             Lisa_05 "Твой массаж так хорошо расслабляет, даже уроки нескучно делать. Очень приятно..."
             "{i}продолжить{/i}":
                 pass
-        $ __foot = {'03':'02', '04':'01'}[__foot]
+        $ foot = {'03':'02', '04':'01'}[foot]
         scene BG char Lisa lessons-mass-01
-        $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+        $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-01-"+pose3_1)
         Lisa_01 "Только не заглядывайся туда так сильно..."   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
         Max_01 "Как же мне не заглядываться в учебник, мне же надо контролировать процесс."
@@ -1336,7 +1333,7 @@ label Lisa_HomeWork:
             Max_02 "Так я же многозадачный!"
             "{i}закончить массаж{/i}":
                 pass
-            "Я и плечи помассировать могу, если хочешь? {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}" if len(online_cources)>1 and online_cources[1].cources[1].less and talk_var['lisa.handmass']>1:
+            "Я и плечи помассировать могу, если хочешь? {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}" if len(online_cources)>1 and online_cources[1].cources[1].less and lisa.daily.massage>1:
                 jump .shoulders
         scene BG char Lisa lessons-help-00
         $ renpy.show("FG lessons-help-"+pose3_1)
@@ -1346,13 +1343,14 @@ label Lisa_HomeWork:
         jump .random_answer
 
     label .shoulders:
+        $ renpy.dynamic("foot")
         if not _in_replay:
             $ _ch10 = GetChance(mgg.massage, 10)
             $ _ch7 = GetChance(mgg.massage, 7)
         else:
-            $ __foot = renpy.random.choice(['02', '01'])
+            $ foot = renpy.random.choice(['02', '01'])
             scene BG char Lisa lessons-mass-01
-            $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+            $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
             $ renpy.show("FG lessons-mass-01-"+pose3_1)
             $ _ch3 = Chance(1000)
             $ _ch10 = Chance(1000)
@@ -1438,18 +1436,19 @@ label Lisa_HomeWork:
         Max_01 "Да не за что."
         $ renpy.end_replay()
 
-        $ talk_var['lisa.footmass'] += 1
+        $ lisa.flags.m_foot += 1
         $ Skill('massage', 0.05)
-        if all([talk_var['lisa.footmass']==3, online_cources[1].cources[1].less > 0]):
+        if all([lisa.flags.m_foot==3, online_cources[1].cources[1].less > 0]):
             Lisa_09 "Макс, а массаж рук ты сможешь сделать?"
             Max_04 "Да, смогу. Устала писать?"
             Lisa_01 "Немного. Во вторник и пятницу мне приходится много писать, а твой массаж мог бы это облегчить."
             Max_03 "Тогда давай попробуем перед уроками, когда ты сидишь в телефоне?"
             Lisa_02 "Давай."
             Max_01 "Хорошо. Договорились."
-            $ talk_var['lisa.handmass'] = 0
-        elif talk_var['lisa.footmass']==3:
-            $ talk_var['lisa.footmass'] -= 1
+            $ lisa.flags.handmass = True
+            $ lisa.daily.massage = 0
+        elif lisa.flags.m_foot==3:
+            $ lisa.flags.m_foot -= 1
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
 
@@ -1458,7 +1457,7 @@ label Lisa_HomeWork:
         $ renpy.show("FG lessons-help-"+pose3_1)
         $ renpy.show("Max lessons-help single-01"+mgg.dress)
         if not _in_replay:
-            $ talk_var['truehelp'] += 1
+            $ lisa.flags.truehelp += 1
             $ punlisa[0][0] = 3
         "{i}Спустя какое-то время...{/i}"
         Max_03 "Всё, Лиза, я закончил!"
@@ -1467,14 +1466,15 @@ label Lisa_HomeWork:
         jump .new_massage
 
     label .new_massage:
+        $ renpy.dynamic("foot")
         $ _ch2 = GetChance(mgg.social, 2, 900)
         menu:
             Lisa_02 "Дай-ка подумать... Да, давай! Я люблю, когда ты это делаешь!"
             "{i}начать массаж{/i}":
                 pass
-        $ __foot = renpy.random.choice(['03', '04'])
+        $ foot = renpy.random.choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
-        $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+        $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-03-"+pose3_1)
 
         Max_04 "А я люблю массировать твои стройные ножки! Это меньшее, что я могу сделать для своей любимой сестрёнки..."   #спрайт где не видно трусиков (или левая, или правая нога)
@@ -1482,13 +1482,14 @@ label Lisa_HomeWork:
             Lisa_05 "Твой массаж так хорошо расслабляет, даже уроки нескучно проверять. Очень приятно..."
             "{i}продолжить{/i}":
                 pass
-        $ __foot = {'03':'02', '04':'01'}[__foot]
+        $ foot = {'03':'02', '04':'01'}[foot]
         scene BG char Lisa lessons-mass-01
-        $ renpy.show("Lisa lessons-mass "+__foot+lisa.dress+mgg.dress)
+        $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-01-"+pose3_1)
         Max_02 "Мне приятно такое слышать! Я всё делал как надо, да?"   #спрайт где видно трусики (другая нога, в зависимости от того, какая была до этого)
         Lisa_06 "Ммм, да... Совершенно не хочется, чтобы это закончилось. Так приятно и легко..."
         Max_07 "Я вообще-то говорил про уроки, но принято к сведению."
+        $ lisa.flags.m_foot += 1
         if not _in_replay:
             $ infl[lisa].add_m(12)
         menu:
@@ -1532,7 +1533,7 @@ label Lisa_HomeWork:
                 pass
 
         $ renpy.show("Lisa lessons-mass 06"+lisa.dress+mgg.dress)
-
+        $ lisa.flags.m_shoulder += 1
         Lisa_04 "Ммм... Макс... Не очень хочется это говорить, но по-моему это уже не плечи..."
         if not _in_replay and infl[lisa].m[1] < 35:
             #если у Макса меньше 35% влияния на Лизу
@@ -1565,6 +1566,7 @@ label Lisa_HomeWork:
             $ Skill('massage', 0.1)
 
             $ renpy.show("Lisa lessons-kiss 01"+lisa.dress+mgg.dress)
+            $ lisa.flags.m_breast += 1
 
             Max_05 "[lisa_good_mass!t]{i} (Похоже, Лиза уже так возбудилась, что с ней можно делать всё, что только захочется! У неё такая упругая и нежная грудь... Вот бы добраться и до неё губами! ){/i}"
             Lisa_06 "Аххх... Да, Макс! Мне так это нравится... Твои руки..."
@@ -1574,6 +1576,7 @@ label Lisa_HomeWork:
                     pass
 
             $ renpy.show("Lisa lessons-kiss 02"+lisa.dress+mgg.dress)
+            $ lisa.stat.kiss += 1
 
             Max_06 "{i}( Ухх... А у меня страстная сестрёнка! И очень сладкая... Её сосочки стали такими твёрденькими! Обалденная девочка... ){/i}"
 
@@ -1597,7 +1600,7 @@ label Lisa_HomeWork:
 
 label liza_hand_mass:
     if not _in_replay:
-        $ talk_var['lisa.handmass'] = 1
+        $ lisa.daily.massage = 1
         $ spent_time += 10
         $ _ch10 = GetChance(mgg.massage, 10)
         $ __mood = 50
@@ -1638,7 +1641,7 @@ label liza_hand_mass:
         # Лизе понравился массаж!
         if not _in_replay:
             $ Skill('massage', 0.1)
-        if not _in_replay and all(['kira' in chars, talk_var['teachkiss']==0, flags['morning_erect']>=8, dcv['mw'].done, dcv['kiratalk'].stage>2]):
+        if not _in_replay and all(['kira' in chars, not lisa.dcv.seduce.stage, dcv.mv.stage>=8, dcv.mv.done, kira.dcv.feature.stage>2]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
             Lisa_02 "А ты сам-то хоть умеешь целоваться?"
@@ -1646,8 +1649,8 @@ label liza_hand_mass:
             Lisa_09 "И с кем же ты, интересно, целовался? Хотя нет, не рассказывай, опять начнёшь нести чушь про сотню своих подружек..."
             Max_07 "Почему про сотню, всего-то десятка два или три..."
             Lisa_02 "Хватит языком молоть, вот научишься целоваться с невыдуманными девушками, тогда и поговорим. А массаж у тебя получается здорово! Даже не хочется, чтобы это заканчивалось..."
-            $ talk_var['teachkiss'] = 1
-            $ dcv['lisa_mentor'].set_lost(2)
+            $ lisa.dcv.seduce.stage = 1
+            $ lisa.dcv.seduce.set_lost(2)
             $ poss['seduction'].OpenStage(5)
         else:
             Lisa_05 "[lisa_good_mass!t]Макс, ты так здорово это делаешь. Даже не хочется, чтобы это закончилось..."
@@ -1665,7 +1668,7 @@ label liza_hand_mass:
         "{i}закончить массаж{/i}":
             if _in_replay and not talk_var['kissingmassage']:
                 $ renpy.end_replay()
-    if ((not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']==0]))
+    if ((not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].stn>7, lisa.flags.kiss_lesson>3, not lisa.stat.kiss]))
         or (_in_replay and talk_var['kissingmassage'])):
         ###если уроков поцелуев в этот день не было (уже было 3 успешных урока)
         # первый поцелуй после массажа рук
@@ -1698,7 +1701,7 @@ label liza_hand_mass:
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
                             $ renpy.end_replay()
-                            $ talk_var['kiss_massage'] += 1
+                            $ lisa.stat.kiss += 1
                             $ Skill('kissing', 0.2, 4.5)
                             $ __rel = 5
                             $ __mood += 100
@@ -1712,19 +1715,19 @@ label liza_hand_mass:
                     $ Skill('kissing', 0.1, 4.0)
                     $ __mood -= 30
 
-        $ talk_var['kiss_lessons'] += 1
-        $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+        $ lisa.flags.kiss_lesson += 1
+        $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
 
-    elif not _in_replay and all([dcv['lisa_mentor'].done, poss['seduction'].stn>7, talk_var['kiss_lessons']>3, talk_var['kiss_massage']>0, flags['lisa.stopkiss']<2]):
+    elif not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].stn>7, lisa.flags.kiss_lesson>3, lisa.stat.kiss>0, flags.stopkiss<2]):
         # периодические поцелуи после массажа
         $ added_mem_var('kissing_massage')
         scene BG char Lisa massage-kisses-01
         $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
         Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
-        if flags['lisa.stopkiss'] > 0:
+        if flags.stopkiss > 0:
             call lisa_stop_kiss from _call_lisa_stop_kiss
             Max_01 "Мне только в радость, сестрёнка. Обращайся."
-            $ talk_var['lisa.handmass'] = 2
+            $ lisa.daily.massage = 2
             $ AddRelMood('lisa', __rel, __mood)
             $ infl[lisa].add_m(12)
             jump Waiting
@@ -1755,8 +1758,8 @@ label liza_hand_mass:
                             $ Skill('kissing', 0.2, 5.0)
                             $ __rel = 5
                             $ __mood += 100
-                            $ talk_var['kiss_lessons'] += 1
-                            $ talk_var['kiss_massage'] += 1
+                            $ lisa.flags.kiss_lesson += 1
+                            $ lisa.stat.kiss += 1
                             $ add_lim('lisa.free', 0.1, 7)
                 else:
                     scene BG char Lisa massage-kisses-01
@@ -1765,7 +1768,7 @@ label liza_hand_mass:
                     Max_10 "Ладно, в другой раз будет лучше..."
                     $ Skill('kissing', 0.1, 4.0)
                     $ __mood -= 30
-        $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+        $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     else:
         scene BG char Lisa bed-evening
         $ renpy.show('Lisa phone-closer 01'+lisa.dress)
@@ -1776,13 +1779,13 @@ label liza_hand_mass:
 
     $ infl[lisa].add_m(12)
     $ persistent.memories['liza_hand_mass'] = 1
-    $ talk_var['lisa.handmass'] = 2
+    $ lisa.daily.massage = 2
     $ AddRelMood('lisa', __rel, __mood)
     jump Waiting
 
 
 label Lisa_sorry:
-    if len(sorry_gifts['lisa'].give) == 0:  # Первый диалог
+    if len(lisa.sorry.give) == 0:  # Первый диалог
         Lisa_12 "Значит решил признаться, что бессовестно глазел на меня в душе?!"
         Max_10 "Ты же понимаешь, что я не специально..."
         Lisa_11 "Макс, ты серьёзно думаешь, что я в это поверю? Я же видела, как ты за мной подглядывал!"
@@ -1799,14 +1802,14 @@ label Lisa_sorry:
             Lisa_00 "Ну, Макс... Я хочу вкусняшку... Но времени у тебя до завтрашнего вечера, понял?! Иначе перед ужином мама всё узнает..."
         Max_01 "Хорошо. Завтра всё будет..."
         Lisa_01 "Ну посмотрим."
-        $ sorry_gifts['lisa'].valid = {'ritter-m', 'raffaello-m', 'ferrero-m'}
+        $ lisa.sorry.valid = {'ritter-m', 'raffaello-m', 'ferrero-m'}
         if not all([items['ritter-m'].InShop, items['raffaello-m'].InShop, items['ferrero-m'].InShop]):
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
-        $ items['ritter-m'].InShop = True
-        $ items['raffaello-m'].InShop = True
-        $ items['ferrero-m'].InShop = True
+        $ items['ritter-m'].unblock()
+        $ items['raffaello-m'].unblock()
+        $ items['ferrero-m'].unblock()
         $ poss['SoC'].OpenStage(0)
-    elif len(sorry_gifts['lisa'].give) == 1:
+    elif len(lisa.sorry.give) == 1:
         Lisa_10 "Прошлого раза, видимо, тебе было мало... Захотел ещё поглазеть на меня голую?"
         Max_09 "В этом доме такие большие окна, что куда не пойди, что-то да случайно увидишь..."
         Lisa_09 "И я должна поверить в это оправдание, да?! Во всём окна виноваты!"
@@ -1824,7 +1827,7 @@ label Lisa_sorry:
         Max_03 "Конечно успею!"
         Lisa_02 "И смотри не расстрой меня, Макс!"
         Max_04 "Постараюсь."
-    elif len(sorry_gifts['lisa'].give) == 2:
+    elif len(lisa.sorry.give) == 2:
         Lisa_01 "Дай угадаю, это вышло случайно, да?! И никто не виноват, так получилось!"
         Max_01 "Естественно..."
         Lisa_02 "Сильно в этом сомневаюсь, Макс!"
@@ -1835,7 +1838,7 @@ label Lisa_sorry:
         Max_03 "Ну всё, значит жди в скором времени вкусняшку!"
         Lisa_01 "И только попробуй меня расстроить, Макс! Сроки у тебя те же."
         Max_01 "Ага..."
-    elif len(sorry_gifts['lisa'].give) == 3 and 'bathrobe' not in lisa.gifts:
+    elif len(lisa.sorry.give) == 3 and 'bathrobe' not in lisa.gifts:
         Lisa_09 "Нет уж, Макс... Думаю, я просто сдам тебя маме и пусть она с тобой разбирается! Хватит уже за мной подглядывать..."
         Max_07 "А может мы снова с тобой договоримся?! Как раньше..."
         Lisa_01 "Чтобы ты снова кормил меня сладостями?! Нет, это как-то слишком уж просто для тебя... Теперь, если не хочешь попасть под мамино наказание, ты купишь то, что я попрошу!"
@@ -1847,14 +1850,14 @@ label Lisa_sorry:
         Lisa_00 "Пожалуй... Времени у тебя - три дня. И чтобы успел до ужина!"
         Max_00 "Хорошо, я постараюсь успеть..."
         $ poss['SoC'].OpenStage(7)
-        $ sorry_gifts['lisa'].valid.clear()
+        $ lisa.sorry.valid.clear()
         $ punreason[0] = 0
-        $ peeping['lisa_shower'] = 0
-        $ items['bathrobe'].InShop = True
-        $ sorry_gifts['lisa'].start(3)
+        $ lisa.daily.shower = 0
+        $ items['bathrobe'].unblock()
+        $ lisa.sorry.start(3)
         $ spent_time += 10
         jump Waiting
-    elif len(sorry_gifts['lisa'].give) == 4:
+    elif len(lisa.sorry.give) == 4:
         Lisa_00 "Знаешь, я думаю тебя нужно проучить! С этого момента, Макс, если я увижу, что ты за мной подглядываешь, то в наказание будешь смотреть со мной фильмы."
         Max_01 "Ну, от такого наказания я не откажусь..."
         Lisa_01 "Я где-то слышала, что мальчики очень не любят смотреть романтические фильмы..."
@@ -1865,16 +1868,16 @@ label Lisa_sorry:
         Max_14 "Я как будто в ужастик попал! Что ни делай - какая-то жесть получается."
         Lisa_12 "А вот нечего подглядывать! В полночь смотрим кино, понял?"
         Max_10 "Ага. Понял. Жду не дождусь."
-        $ flags['film_punish'] = True
-        $ dcv['film_punish'].set_lost(1)
+        $ flags.film_punish = True
+        $ lisa.dcv.special.set_lost(1)
         $ punreason[0] = 0
-        $ peeping['lisa_shower'] = 0
+        $ lisa.daily.shower = 0
         $ spent_time += 10
         jump Waiting
 
     $ punreason[0] = 0
-    $ peeping['lisa_shower'] = 0
-    $ sorry_gifts['lisa'].start()
+    $ lisa.daily.shower = 0
+    $ lisa.sorry.start()
     $ spent_time += 10
     jump Waiting
 
@@ -1938,7 +1941,7 @@ label gift_swimsuit:
         Max_04 "Да, пустяки..."
         $ renpy.show('Lisa newsuit 10'+mgg.dress)
         Lisa_01 "Даже не представляю, где ты взял на него деньги! Он ведь дорогой..."
-        if flags['promise_kiss']:
+        if lisa.flags.promise:
             Max_05 "Мне дороже улыбка моей любимой младшей сестрёнки! И кстати, ты помнишь, что хотела поцеловать меня в щёчку, если я достану для тебя этот купальник?"
             Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
             $ renpy.show('Lisa newsuit 11'+mgg.dress)
@@ -1955,14 +1958,15 @@ label gift_swimsuit:
         $ current_room = house[0]
 
     label .end:
-        $ items['bikini'].have = False
-        $ items['bikini'].InShop = False
+        $ items['bikini'].give()
+        # $ items['bikini'].have = False
+        # $ items['bikini'].InShop = False
         $ poss['Swimsuit'].OpenStage(3)
         $ lisa.gifts.append('bikini')
         $ infl[lisa].add_m(40, True)
 
-        $ clothes[lisa].swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
-        $ clothes[lisa].swimsuit.cur = 1
+        $ lisa.clothes.swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
+        $ lisa.clothes.swimsuit.cur = 1
         $ ClothingNps('lisa', lisa.plan_name)
 
         $ spent_time += 10
@@ -1975,12 +1979,12 @@ label gift_bathrobe:
     Lisa_03 "Ничего себе! Он такой же, как у Алисы, только красный! Какая прелесть! Я тебя обожаю! Спасибо!"
     Max_04 "Да не за что, сестрёнка!"
 
-    if not sorry_gifts['lisa'].owe:  # Макс не подарил вовремя и получил наказание
+    if not lisa.sorry.owe:  # Макс не подарил вовремя и получил наказание
         Lisa_02 "А я думала, раз срок уже прошёл, то и надеяться, что ты его подаришь не стоит."
         Max_04 "И когда я на тебе его увижу?"
         Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
         $ poss['SoC'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
-    elif flags['lisa_superhug'] > 3:  ## За третий извинительный подарок Макс получил поцелуй
+    elif lisa.flags.hugs_type > 3:  ## За третий извинительный подарок Макс получил поцелуй
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
             $ renpy.show("Lisa hugging myroom 04"+lisa.dress+mgg.dress)
@@ -2001,7 +2005,7 @@ label gift_bathrobe:
         Max_03 "Ого, сколько нежности... Может быть, примеришь его при мне?"
         Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"   #спрайт вместе
         $ poss['SoC'].OpenStage(8)
-    elif flags['lisa_superhug'] > 2:  ## За третий извинительный подарок Макс получил объятья
+    elif lisa.flags.hugs_type > 2:  ## За третий извинительный подарок Макс получил объятья
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
             $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
@@ -2025,7 +2029,7 @@ label gift_bathrobe:
         Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
         $ poss['SoC'].OpenStage(6)
         $ poss['SoC'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
-    elif flags['lisa_superhug'] > 1:  ## За третий извинительный подарок Макс получил только прощение
+    elif lisa.flags.hugs_type > 1:  ## За третий извинительный подарок Макс получил только прощение
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
             $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
@@ -2051,22 +2055,22 @@ label gift_bathrobe:
 
     $ AddRelMood('lisa', 0, 200)
     $ AttitudeChange('lisa', 0.9)
-    $ items['bathrobe'].have = False
-    $ items['bathrobe'].InShop = False
+    $ items['bathrobe'].give()
+    # $ items['bathrobe'].have = False
+    # $ items['bathrobe'].InShop = False
     $ lisa.gifts.append('bathrobe')
     $ added_mem_var('bathrobe')
     $ infl[lisa].add_m(40, True)
 
-    $ sorry_gifts['lisa'].valid = {'ritter-m', 'raffaello-m'}
-    $ sorry_gifts['lisa'].give.append(4)
-    $ clothes[lisa].casual.sel.insert(1, Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
-    $ clothes[lisa].learn.sel.insert(1, Garb('b', '04', 'Халатик', True))
+    $ lisa.sorry.valid = {'ritter-m', 'raffaello-m'}
+    $ lisa.sorry.give.append(4)
+    $ lisa.clothes.casual.sel.insert(1, Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
+    $ lisa.clothes.learn.sel.insert(1, Garb('b', '04', 'Халатик', True))
     if all([lisa.GetMood()[0] > 1, 'kira' not in chars]):
-        $ clothes[lisa].casual.cur = 1
-    $ clothes[lisa].learn.cur = 1
-    # $ cloth_type['lisa']['learn']  = 'b'
+        $ lisa.clothes.casual.cur = 1
+    $ lisa.clothes.learn.cur = 1
     $ spent_time += 10
-    $ sorry_gifts['lisa'].owe = False
+    $ lisa.sorry.owe = False
     jump Waiting
 
 
@@ -2102,7 +2106,7 @@ label conversation_after_dinner(var=0):
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        if flags['morning_erect'] > 2:
+        if dcv.mv.stage > 2:
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
@@ -2114,7 +2118,7 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -0.5)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(4)
-        $ clothes[lisa].sleep.cur = 1
+        $ lisa.clothes.sleep.cur = 1
 
     elif var == 2:  # Макс безвозмездно помогал Лизе делать уроки, но перестал
         $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
@@ -2132,7 +2136,7 @@ label conversation_after_dinner(var=0):
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        if flags['morning_erect'] > 2:
+        if dcv.mv.stage > 2:
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
@@ -2144,7 +2148,7 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -0.5)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(5)
-        $ clothes[lisa].sleep.cur = 1
+        $ lisa.clothes.sleep.cur = 1
 
     elif var == 3:  # Макс помогал Лизе делать уроки за услуги, но перестал
         $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
@@ -2159,7 +2163,6 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -1)
         $ notify_list.append(_("Лиза недовольна отношением Макса к обещаниям. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(6)
-
 
     elif var == 4:  # Макс специально делал ошибки
         $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
@@ -2189,7 +2192,7 @@ label conversation_after_dinner(var=0):
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        if flags['morning_erect'] > 2:
+        if dcv.mv.stage > 2:
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
@@ -2201,25 +2204,24 @@ label conversation_after_dinner(var=0):
         $ AttitudeChange('lisa', -0.75)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         $ poss['sg'].OpenStage(8)
-        $ clothes[lisa].sleep.cur = 1
+        $ lisa.clothes.sleep.cur = 1
 
-    $ talk_var['lisa.pun'] += 2
-    $ dcv['lisa.ad'].set_lost(7) # неделя до следующего разговора, если Макс не будет помогать...
+    $ lisa.dcv.other.set_lost(7) # неделя до следующего разговора, если Макс не будет помогать...
     return
 
 
 label lisa_sorry_gifts:
-    if sorry_gifts['lisa'].days[0] == day:
+    if lisa.sorry.days[0] == day:
         Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
         return
 
     $ _ch1 = GetChance(mgg.social, 3, 900)
-    $ sorry_gifts['lisa'].owe = False
+    $ lisa.sorry.owe = False
     $ txt = {
         0 : _("Правда? Ты всё-таки достал её для меня?! А какую?"),
         1 : _("Правда? Ну ты даёшь! А какую на этот раз?!"),
         2 : _("Правда? Ну давай, показывай, что у тебя на этот раз?!"),
-        }[len(sorry_gifts['lisa'].give)]
+        }[len(lisa.sorry.give)]
     menu:
         Lisa_02 "[txt!t]"
         "Конфеты \"Raffaello\" (16 штук)" if items['raffaello-m'].have:
@@ -2259,7 +2261,7 @@ label lisa_sorry_gifts:
         Max_10 "Понял."
         $ AddRelMood('lisa', -5, -100)
         $ punreason[0] = 1
-        $ flags['lisa_superhug'] = 1
+        $ lisa.flags.hugs_type = 1
         return
 
     label .middle_again:
@@ -2309,17 +2311,17 @@ label lisa_sorry_gifts:
         return
 
     label .bad: ## ненавистное
-        $ items[__give].have = False
+        $ items[__give].use()
         $ poss['SoC'].OpenStage(4)
-        if len(sorry_gifts['lisa'].give) == 0:  # ненавистное в первый раз
+        if len(lisa.sorry.give) == 0:  # ненавистное в первый раз
             call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st
             Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то так легко ты уже не отделаешься! Ясно?!"
             Max_07 "Ясно... А какую сладость ты больше всего любишь?"
             Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
             Max_01 "Ну, хоть так. Это лучше, чем ничего."
 
-        elif len(sorry_gifts['lisa'].give) == 1:  ## второе вручение
-            if sorry_gifts['lisa'].give[0] == 1:  ## ненавистное, ненавистное
+        elif len(lisa.sorry.give) == 1:  ## второе вручение
+            if lisa.sorry.give[0] == 1:  ## ненавистное, ненавистное
                 Lisa_13 "Фу-у-у... Макс, опять ты купил эти конфеты! Ты что, специально меня решил расстроить?!"
                 Max_10 "Конечно нет! Просто только их я и смог достать..."
                 Lisa_12 "Макс, я знаю, что это очень дорогие конфеты! А это значит, что ты меня не слушал или у тебя памяти нет!"
@@ -2330,57 +2332,57 @@ label lisa_sorry_gifts:
                 Max_10 "Понял."
                 $ punreason[0] = 1
 
-            elif sorry_gifts['lisa'].give[0] > 1: ## преемлемое, ненавистное и ## любимое, ненавистное
+            elif lisa.sorry.give[0] > 1: ## преемлемое, ненавистное и ## любимое, ненавистное
                 call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_1
                 Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
                 Max_07 "Ясно... Я обязательно это учту!"
 
 
-        elif len(sorry_gifts['lisa'].give) == 2:  ### третье вручение
-            if sorry_gifts['lisa'].give == [1, 1]:  ## ненависное, ненавистное, ненавистное
+        elif len(lisa.sorry.give) == 2:  ### третье вручение
+            if lisa.sorry.give == [1, 1]:  ## ненависное, ненавистное, ненавистное
                 Lisa_13 "Фу-у-у... Макс, ты что, тупой, я тебе уже дважды говорила, что не люблю эти конфеты?! Ты меня, что, совсем не слушаешь, или у тебя мозгов нет?!"
                 Max_11 "Прости, Лиза, я смог достать только их."
                 Lisa_12 "Макс, тебе просто наплевать на всё, что я говорю! Всё, Макс, я не хочу тебя слушать! Так что жди наказания от мамы..."
                 Max_10 "Понял."
                 $ AddRelMood('lisa', -15, -200)
-                $ flags['lisa_superhug'] = 1
+                $ lisa.flags.hugs_type = 1
                 $ punreason[0] = 1
 
-            elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
+            elif lisa.sorry.give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
                 call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again
 
-            elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, ненавистное
+            elif lisa.sorry.give == [1, 3]:  ### ненавистное, любимое, ненавистное
                 call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again_1
 
-            elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
+            elif lisa.sorry.give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
                 call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again_2
 
-            elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
+            elif lisa.sorry.give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
                 call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_2
-                $ flags['lisa_superhug'] = 2
+                $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, ненавистное
+            elif lisa.sorry.give == [2, 3]:  ### преемлемое, любимое, ненавистное
                 call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_3
-                $ flags['lisa_superhug'] = 2
+                $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, ненавистное
+            elif lisa.sorry.give == [3, 1]:  ### любимое, ненавистное, ненавистное
                 call lisa_sorry_gifts.bad_again from _call_lisa_sorry_gifts_bad_again_3
 
-            elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, ненавистное
+            elif lisa.sorry.give == [3, 2]:  ### любимое, преемлемое, ненавистное
                 call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_4
-                $ flags['lisa_superhug'] = 2
+                $ lisa.flags.hugs_type = 2
 
             else:  ### любимое, любимое, ненавистное
                 call lisa_sorry_gifts.bad_st from _call_lisa_sorry_gifts_bad_st_5
-                $ flags['lisa_superhug'] = 2
+                $ lisa.flags.hugs_type = 2
 
-        $ sorry_gifts['lisa'].give.append(1)
+        $ lisa.sorry.give.append(1)
         jump .end
 
     label .middle: ## преемлемое
-        $ items[__give].have = False
+        $ items[__give].use()
         $ poss['SoC'].OpenStage(3)
-        if len(sorry_gifts['lisa'].give) == 0:  # преемлемой в первый раз
+        if len(lisa.sorry.give) == 0:  # преемлемой в первый раз
             Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
             Max_07 "Значит - это засчитывается?"
             Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
@@ -2408,8 +2410,8 @@ label lisa_sorry_gifts:
                         Lisa_01 "А вот не скажу! Но дам подсказку, она квадратная..."
                         Max_01 "Ну, хоть так. Это лучше, чем ничего."
 
-        elif len(sorry_gifts['lisa'].give) == 1:  ## второе вручение
-            if sorry_gifts['lisa'].give[0] == 1:  ## ненавистное, преемлемое
+        elif len(lisa.sorry.give) == 1:  ## второе вручение
+            if lisa.sorry.give[0] == 1:  ## ненавистное, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
                 Max_07 "Значит - это засчитывается?"
                 Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
@@ -2417,7 +2419,7 @@ label lisa_sorry_gifts:
                 Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то спасти тебя сможет только моя любимая сладость! Ясно?!"
                 Max_07 "Ясно... Я обязательно это учту!"
 
-            elif sorry_gifts['lisa'].give[0] == 2:  ## преемлемое, преемлемое
+            elif lisa.sorry.give[0] == 2:  ## преемлемое, преемлемое
                 Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Хотя то, что я не очень люблю крем, ты видимо пропустил мимо ушей!"
                 Max_07 "Да, видимо... Извини. Но ты же не расскажешь маме про тот инцидент в душе?!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, мама ничего не узнает..."
@@ -2451,8 +2453,8 @@ label lisa_sorry_gifts:
                             Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю. И спасти тебя сможет только моя любимая сладость!"
                             Max_07 "Ясно... Я обязательно это учту!"
 
-        elif len(sorry_gifts['lisa'].give) == 2:  ###  третье вручение
-            if sorry_gifts['lisa'].give == [1, 1]:  ### ненависное, ненавистное, преемлемое
+        elif len(lisa.sorry.give) == 2:  ###  третье вручение
+            if lisa.sorry.give == [1, 1]:  ### ненависное, ненавистное, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
                 Max_07 "Значит - это засчитывается?"
                 menu:
@@ -2464,7 +2466,7 @@ label lisa_sorry_gifts:
                             Max_00 "Спасибо, Лиза..."
                             Lisa_09 "Всё, Макс, я хочу побыть одна."
                             Max_10 "Понял."
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
                         else:
                             $ Skill('social', 0.1)
                             Lisa_12 "[failed!t]Знаешь, а вот не пройдёт это, Макс! Так что жди наказания от мамы..."
@@ -2472,13 +2474,13 @@ label lisa_sorry_gifts:
                             Lisa_13 "Всё, Макс, я не хочу тебя слушать!"
                             Max_10 "Понял."
                             $ punreason[0] = 1
-                            $ flags['lisa_superhug'] = 1
+                            $ lisa.flags.hugs_type = 1
 
-            elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
+            elif lisa.sorry.give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
                 call lisa_sorry_gifts.middle_again from _call_lisa_sorry_gifts_middle_again
-                $ flags['lisa_superhug'] = 2
+                $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, преемлемое
+            elif lisa.sorry.give == [1, 3]:  ### ненавистное, любимое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
                 Max_07 "Значит - это засчитывается?"
                 Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
@@ -2497,17 +2499,17 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 0, 150)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed
                             $ AddRelMood('lisa', 0, 50)
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
+            elif lisa.sorry.give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
                 call lisa_sorry_gifts.middle_again from _call_lisa_sorry_gifts_middle_again_1
-                $ flags['lisa_superhug'] = 2
+                $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое третий раз
+            elif lisa.sorry.give == [2, 2]:  ### преемлемое третий раз
                 Lisa_01 "Хм... Опять они... Ладно, сойдут, они вкусные. Похоже, ты совершенно пропустил мимо ушей то, что я не очень люблю крем!"
                 Max_07 "Да, видимо... Извини. Но ты же не станешь рассказывать маме про тот инцидент в душе?!"
                 Lisa_02 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, мама ничего не узнает..."
@@ -2526,12 +2528,12 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 0, 150)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_1
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, преемлемое
+            elif lisa.sorry.give == [2, 3]:  ### преемлемое, любимое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
                 Max_07 "Значит - это засчитывается?"
                 Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
@@ -2550,13 +2552,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 0, 150)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_2
                             $ AddRelMood('lisa', 0, 50)
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, преемлемое
+            elif lisa.sorry.give == [3, 1]:  ### любимое, ненавистное, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
                 Max_07 "Значит - это засчитывается?"
                 Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
@@ -2575,13 +2577,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 0, 150)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_3
                             $ AddRelMood('lisa', 0, 50)
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
 
-            elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, преемлемое
+            elif lisa.sorry.give == [3, 2]:  ### любимое, преемлемое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
                 Max_07 "Значит - это засчитывается?"
                 Lisa_02 "Да, Макс, я тебя прощаю! Возможно ты и правда оказался около душа случайно..."
@@ -2600,11 +2602,11 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 0, 150)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_4
                             $ AddRelMood('lisa', 0, 50)
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
 
             else:  ### любимое, любимое, преемлемое
                 Lisa_01 "Хм... Ну, они вкусные... Хоть я и не очень люблю крем, но они сойдут. Спасибо тебе!"
@@ -2619,17 +2621,17 @@ label lisa_sorry_gifts:
                 Max_01 "Да я же случайно оказался около душа..."
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                 Max_02 "Вот и правильно."
-                $ flags['lisa_superhug'] = 3
+                $ lisa.flags.hugs_type = 3
 
-        $ sorry_gifts['lisa'].give.append(2)
+        $ lisa.sorry.give.append(2)
         jump .end
 
     label .good: ## любимое
-        $ items[__give].have = False
+        $ items[__give].use()
         $ poss['SoC'].OpenStage(2)
-        $ items['ritter-b'].InShop = True
-        $ sorry_gifts['lisa'].valid.add('ritter-b')
-        if len(sorry_gifts['lisa'].give) == 0:  # любимое, самый первый раз
+        $ items['ritter-b'].unblock()
+        $ lisa.sorry.valid.add('ritter-b')
+        if len(lisa.sorry.give) == 0:  # любимое, самый первый раз
             Lisa_03 "Ого! Вот это здорово, Макс! Спасибо тебе большое! А откуда ты узнал, что это мой любимый шоколад?!"
             Max_03 "Я не знал... Получается - повезло! Или это профессиональное чутьё!"
             Lisa_02 "Хи-хи... Болтун! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
@@ -2642,8 +2644,8 @@ label lisa_sorry_gifts:
             Max_01 "А уж я-то как рад, сестрёнка!"
             $ AddRelMood('lisa', 5, 150, 3)
 
-        elif len(sorry_gifts['lisa'].give) == 1:  ## дарим во второй раз
-            if sorry_gifts['lisa'].give[0] == 1:  ## ненавистное, любимое
+        elif len(lisa.sorry.give) == 1:  ## дарим во второй раз
+            if lisa.sorry.give[0] == 1:  ## ненавистное, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_02 "Хи-хи... Везунчик! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
@@ -2669,7 +2671,7 @@ label lisa_sorry_gifts:
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_5
 
-            elif sorry_gifts['lisa'].give[0] == 2:  ## преемлемое, любимое
+            elif lisa.sorry.give[0] == 2:  ## преемлемое, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_02 "Хи-хи... Везунчик! Как бы там ни было, этими шоколадками ты точно заслужил прощение."
@@ -2745,8 +2747,8 @@ label lisa_sorry_gifts:
                                 Max_02 "Вот и правильно."
                                 $ AddRelMood('lisa', 5, 150, 3)
 
-        elif len(sorry_gifts['lisa'].give) == 2:  ### дарим в третий раз
-            if sorry_gifts['lisa'].give == [1, 1]:  ### ненависное, ненавистное, любимое
+        elif len(lisa.sorry.give) == 2:  ### дарим в третий раз
+            if lisa.sorry.give == [1, 1]:  ### ненависное, ненавистное, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2765,13 +2767,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 5, 150, 3)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_7
-                            $ flags['lisa_superhug'] = 2
+                            $ lisa.flags.hugs_type = 2
                             $ AddRelMood('lisa', 0, 50, 3)
 
-            elif sorry_gifts['lisa'].give == [1, 2]:  ### ненавистное, преемлемое, любимое
+            elif lisa.sorry.give == [1, 2]:  ### ненавистное, преемлемое, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2785,9 +2787,9 @@ label lisa_sorry_gifts:
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                 Max_02 "Вот и правильно."
                 $ AddRelMood('lisa', 5, 150, 3)
-                $ flags['lisa_superhug'] = 3
+                $ lisa.flags.hugs_type = 3
 
-            elif sorry_gifts['lisa'].give == [1, 3]:  ### ненавистное, любимое, любимое
+            elif lisa.sorry.give == [1, 3]:  ### ненавистное, любимое, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2810,13 +2812,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 5, 200, 3)
-                            $ flags['lisa_superhug'] = 4
+                            $ lisa.flags.hugs_type = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_8
                             $ AddRelMood('lisa', 5, 100, 3)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
 
-            elif sorry_gifts['lisa'].give == [2, 1]:  ### преемлемое, ненавистное, любимое
+            elif lisa.sorry.give == [2, 1]:  ### преемлемое, ненавистное, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2830,9 +2832,9 @@ label lisa_sorry_gifts:
                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                 Max_02 "Вот и правильно."
                 $ AddRelMood('lisa', 5, 200, 3)
-                $ flags['lisa_superhug'] = 3
+                $ lisa.flags.hugs_type = 3
 
-            elif sorry_gifts['lisa'].give == [2, 2]:  ### преемлемое, преемлемое, любимое
+            elif lisa.sorry.give == [2, 2]:  ### преемлемое, преемлемое, любимое
                 Lisa_03 "Ого! Вот это здорово, Макс! Это же моя любимая сладость... Спасибо тебе большое! А как ты узнал?!"
                 Max_03 "Я не знал... Это профессиональное чутьё! Ну и твоя подсказака помогла."
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2855,13 +2857,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 5, 200, 3)
-                            $ flags['lisa_superhug'] = 4
+                            $ lisa.flags.hugs_type = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_9
                             $ AddRelMood('lisa', 5, 100, 3)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
 
-            elif sorry_gifts['lisa'].give == [2, 3]:  ### преемлемое, любимое, любимое
+            elif lisa.sorry.give == [2, 3]:  ### преемлемое, любимое, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2884,13 +2886,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 5, 200, 3)
-                            $ flags['lisa_superhug'] = 4
+                            $ lisa.flags.hugs_type = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_10
                             $ AddRelMood('lisa', 5, 100, 3)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
 
-            elif sorry_gifts['lisa'].give == [3, 1]:  ### любимое, ненавистное, любимое
+            elif lisa.sorry.give == [3, 1]:  ### любимое, ненавистное, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2913,13 +2915,13 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 5, 200, 3)
-                            $ flags['lisa_superhug'] = 4
+                            $ lisa.flags.hugs_type = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_11
                             $ AddRelMood('lisa', 5, 100, 3)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
 
-            elif sorry_gifts['lisa'].give == [3, 2]:  ### любимое, преемлемое, любимое
+            elif lisa.sorry.give == [3, 2]:  ### любимое, преемлемое, любимое
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
                 Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
                 Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."
@@ -2942,11 +2944,11 @@ label lisa_sorry_gifts:
                             Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                             Max_02 "Вот и правильно."
                             $ AddRelMood('lisa', 5, 200, 3)
-                            $ flags['lisa_superhug'] = 4
+                            $ lisa.flags.hugs_type = 4
                         else:
                             call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_12
                             $ AddRelMood('lisa', 5, 100, 3)
-                            $ flags['lisa_superhug'] = 3
+                            $ lisa.flags.hugs_type = 3
 
             else:  ### любимое три раза
                 Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
@@ -2975,11 +2977,11 @@ label lisa_sorry_gifts:
                                 Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                                 Max_02 "Вот и правильно."
                                 $ AddRelMood('lisa', 5, 200, 3)
-                                $ flags['lisa_superhug'] = 4
+                                $ lisa.flags.hugs_type = 4
                             else:
                                 call lisa_sorry_gifts.persuasion_failed from _call_lisa_sorry_gifts_persuasion_failed_13
                                 $ AddRelMood('lisa', 5, 100, 3)
-                                $ flags['lisa_superhug'] = 3
+                                $ lisa.flags.hugs_type = 3
                 else:
                     call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_9
                     Lisa_05 "И думаю, ты достоен гораздо большего, чем просто обнимашки! Тебя ждёт поцелуй!"   #если сладость большая   #спрайт с поцелуем
@@ -2990,9 +2992,9 @@ label lisa_sorry_gifts:
                     Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
                     Max_02 "Вот и правильно."
                     $ AddRelMood('lisa', 20, 200, 3)
-                    $ flags['lisa_superhug'] = 4
+                    $ lisa.flags.hugs_type = 4
 
-        $ sorry_gifts['lisa'].give.append(3)
+        $ lisa.sorry.give.append(3)
         jump .end
 
     label .end:
@@ -3001,7 +3003,7 @@ label lisa_sorry_gifts:
 
 
 label liza_secret_alisa:
-    if dcv['alice.secret'].stage < 1:
+    if alice.dcv.feature.stage < 1:
         ## Самый первый разговор на тему секрета Алисы
         Lisa_02 "Странный? Скорее, беспокойный. Переживаю насчёт Алисы..."
         Max_09 "А что такое?"
@@ -3022,8 +3024,8 @@ label liza_secret_alisa:
         $ Skill('social', 0.1)
         Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
         Max_00 "Верно..."
-        $ dcv['alice.secret'].set_lost(1)
-        $ dcv['alice.secret'].stage = 1
+        $ alice.dcv.feature.set_lost(1)
+        $ alice.dcv.feature.stage = 1
         $ spent_time += 10
         return
 
@@ -3039,7 +3041,7 @@ label liza_secret_alisa:
     Max_01 "Конечно! Я тебя не выдам..."
     $ poss['nightclub'].OpenStage(5)
     $ spent_time += 10
-    $ items['choco'].InShop = True
+    $ items['choco'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     return
 
@@ -3052,7 +3054,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
         "Шоколад \"Ritter Sport\" (4 штуки)" if items['ritter-b'].have:
             $ __give = 'ritter-b'
 
-    $ items[__give].have = False
+    $ items[__give].use()
     Lisa_03 "Ого! Ты купил мои любимые шоколадки! Как мило... Спасибо тебе большое!"
     Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
     if __give=='ritter-m':
@@ -3092,6 +3094,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
                     elif current_room == house[6]:
                         $ renpy.show("Lisa hugging yard 02"+lisa.dress+mgg.dress)
                     Max_01 "Наслаждайся, сластёна!"
+                    $ lisa.flags.hugs += 1
                     $ infl[lisa].add_m(12)
                 else:
                     $ Skill('social', 0.1)
@@ -3104,22 +3107,22 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
         #спрайт с суперобнимашками
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
-            $ renpy.show('Lisa hugging myroom '+('06' if talk_var['kiss_lessons'] >=9 else '04')+lisa.dress+mgg.dress)
+            $ renpy.show('Lisa hugging myroom '+('06' if lisa.flags.kiss_lesson >=9 else '04')+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging yard-00
-            $ renpy.show('Lisa hugging yard '+('06' if talk_var['kiss_lessons'] >=9 else '04')+lisa.dress+mgg.dress)
+            $ renpy.show('Lisa hugging yard '+('06' if lisa.flags.kiss_lesson >=9 else '04')+lisa.dress+mgg.dress)
         Lisa_03 "Макс, давай обниматься! Лови меня..."
-        if talk_var['kiss_lessons'] >=9:
+        if lisa.flags.kiss_lesson >=9:
             Max_05 "{i}( Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, если я буду так крепко прижимать её упругую попку к себе! ){/i}"
         else:
             Max_05 "{i}( Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается. ){/i}"
         Lisa_05 "Мне нравится, что ты так мило балуешь меня сладостями... Я тебя в щёчку ещё чмокну! Ммм..."
         #спрайт с поцелуем
         if current_room == house[0]:
-            $ renpy.show('Lisa hugging myroom '+('05' if talk_var['kiss_lessons'] >=9 else '03')+lisa.dress+mgg.dress)
+            $ renpy.show('Lisa hugging myroom '+('05' if lisa.flags.kiss_lesson >=9 else '03')+lisa.dress+mgg.dress)
         elif current_room == house[6]:
-            $ renpy.show('Lisa hugging yard '+('05' if talk_var['kiss_lessons'] >=9 else '03')+lisa.dress+mgg.dress)
-        if talk_var['kiss_lessons'] >=9:
+            $ renpy.show('Lisa hugging yard '+('05' if lisa.flags.kiss_lesson >=9 else '03')+lisa.dress+mgg.dress)
+        if lisa.flags.kiss_lesson >=9:
             Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! Как и то, что она совершенно не против моих прикосновений к её прелестной попке... ){/i}"
         else:
             Max_05 "{i}( Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне... ){/i}"
@@ -3131,17 +3134,18 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
             $ renpy.show("Lisa hugging yard 02"+lisa.dress+mgg.dress)
         Max_01 "Наслаждайся, сластёна!"
         $ AddRelMood('lisa', 15, 150, 3)
+        $ lisa.flags.hugs += 1
         $ infl[lisa].add_m(20)
     $ spent_time += 10
 
     # включаем откат на дарение сладости
-    $ dcv['lisa_sweets'].set_lost(renpy.random.randint(5, 7))
+    $ lisa.dcv.sweets.set_lost(renpy.random.randint(5, 7))
     jump Waiting
 
 
 label lisa_ment_kiss1:
     $ _ch2 = GetChance(mgg.social, 2, 900)
-    # стартовая фоаза "Ну что, Лиза, готова?"
+    # стартовая фраза "Ну что, Лиза, готова?"
     Lisa_01 "Готова к чему?"
     Max_01 "Как к чему? К уроку поцелуев!"
     Lisa_09 "Опять ты за своё... Что, где-то набрался знаний? Погуглил или на ютубе подсмотрел?"
@@ -3172,7 +3176,7 @@ label lisa_ment_kiss1:
     Lisa_10 "Я конечно сомневаюсь, что ты с первого раза всё поймёшь, но учти, если что, второго шанса у тебя не будет. Я просто откажусь с тобой иметь дело и учи кого-нибудь ещё. Понял?"
     Max_02 "Да всё я понял!"
     Lisa_02 "Ну ладно. Теперь я спокойна. Так чему ты сегодня решил меня учить?"
-    $ talk_var['ask.teachkiss'].append('lisa')
+    $ flags.how_to_kiss.append('lisa')
     $ poss['seduction'].OpenStage(8)
 
     scene BG char Lisa kisses-01
@@ -3201,7 +3205,7 @@ label lisa_ment_kiss1:
                                 Max_03 "Рад, что помог... И мне тоже было приятно..."
                                 $ Skill('kissing', 0.2)
                                 $ AddRelMood('lisa', 5, 100, 4)
-                                $ talk_var['kiss_lessons'] += 1
+                                $ lisa.flags.kiss_lesson += 1
                                 $ poss['seduction'].OpenStage(9)
                             else:
                                 # Навык поцелуев слабоват
@@ -3215,7 +3219,7 @@ label lisa_ment_kiss1:
                     Max_07 "Хорошо..."
                     $ Skill('social', 0.1)
     # включение отката
-    $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+    $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     $ spent_time += 10
     jump Waiting
 
@@ -3230,7 +3234,7 @@ label lisa_ment_kiss:
     if lisa.GetMood()[0]<2:
         Lisa_09 "Опять ты со своими дурацкими идеями... Я сейчас не в настроении для этого! Давай, в другой раз..."
         Max_07 "Хорошо. Тогда попробуем, когда ты будешь повеселее..."
-    elif talk_var['kiss_lessons'] < 3:
+    elif lisa.flags.kiss_lesson < 3:
         menu:
             Lisa_09 "Опять ты со своими дурацкими идеями... Тебе заняться нечем?"
             "Ну кто ещё тебя научит? А сейчас я готов тебе помочь! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
@@ -3244,14 +3248,14 @@ label lisa_ment_kiss:
                     Max_07 "Хорошо..."
                     $ Skill('social', 0.1)
                     # включение отката
-                    $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+                    $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
                     $ spent_time += 10
                     jump Waiting
-    elif talk_var['kiss_lessons'] < 6:
+    elif lisa.flags.kiss_lesson < 6:
         Lisa_02 "Ну давай. Почему бы и нет..."
         Max_03 "Отлично!"
         jump lisa_kiss_lesson
-    elif talk_var['kiss_lessons'] == 6:
+    elif lisa.flags.kiss_lesson == 6:
         Lisa_00 "Слушай, Макс, а это всё, чему ты решил меня научить? Может быть, в твоём учебном плане есть ещё что-то? Ну там, скажем, немного теории или что-то ещё в плане практики?"
         Max_02 "Конечно! Сейчас будет \"расширенный\" урок поцелуев..."
         $ poss['seduction'].OpenStage(10)
@@ -3295,13 +3299,13 @@ label lisa_ment_kiss:
                     $ AddRelMood('lisa', 0, -30)
 
 
-        $ talk_var['kiss_lessons'] += 1  # при любом раскладе засчитывается как успешный, для переключения на периодические расширенные поцелуи
+        $ lisa.flags.kiss_lesson += 1  # при любом раскладе засчитывается как успешный, для переключения на периодические расширенные поцелуи
         # включение отката
-        $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+        $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
         $ spent_time += 10
         jump Waiting
 
-    else: # talk_var['kiss_lessons'] < 9:
+    else: # lisa.flags.kiss_lesson < 9:
         Lisa_02 "Ну давай. Почему бы и нет..."
         Max_03 "Отлично!"
         jump lisa_advanced_kiss_lesson
@@ -3323,7 +3327,7 @@ label lisa_kiss_lesson:
                 Max_03 "Рад, что помог... И мне тоже было приятно..."
                 $ Skill('kissing', 0.2, 5.5)
                 $ AddRelMood('lisa', 5, 100, 4)
-                $ talk_var['kiss_lessons'] += 1
+                $ lisa.flags.kiss_lesson += 1
                 $ add_lim('lisa.free', 0.1, 7)
                 $ poss['seduction'].OpenStage(9)
             else:
@@ -3333,7 +3337,7 @@ label lisa_kiss_lesson:
                 Max_10 "Ладно, в другой раз получится лучше..."
                 $ Skill('kissing', 0.1, 5.0)
                 $ AddRelMood('lisa', 0, -30)
-    $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+    $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     $ spent_time += 10
     jump Waiting
 
@@ -3368,18 +3372,18 @@ label lisa_advanced_kiss_lesson:
                                     Lisa_05 "Нууу... Ты меня так увлек своими поцелуями... А от прикосновений было только лучше! Мне нравятся эти уроки... Но, хорошего помаленьку."
                                     Max_04 "Ага. Рад, что поделился с тобой этими... приятными умениями..."
                                     $ renpy.end_replay()
-                                    $ talk_var['kiss_lessons'] +=1
+                                    $ lisa.flags.kiss_lesson +=1
                                     $ add_lim('lisa.free', 0.1, 10)
                                     $ add_lim('lisa.ri', 0.1, 5)
 
-                            if talk_var['kiss_lessons'] >= 9 and poss['seduction'].stn < 11:
+                            if lisa.flags.kiss_lesson >= 9 and poss['seduction'].stn < 11:
                                 Lisa_02 "Макс, слушай, а чему ещё ты будешь меня учить? Может быть, мне стоит набраться каких-нибудь теоретических знаний или что-то вроде этого?"
                                 Max_02 "Конечно! У меня будет для тебя кое-что, но позже..."
                                 Max_07 "{i}( Хм... Любопытный намёк, вот только на что? Теории хочет? Может быть, какую-то книжку купить ей про секс и всё такое? ){/i}"
                                 $ poss['seduction'].OpenStage(11)
-                                $ items['sex.ed'].InShop = True
+                                $ items['sex.ed'].unblock()
 
-                            $ Skill('kissing', 0.2, 7.5)
+                            $ Skill('kissing', 0.2, 6.5)
                             $ AddRelMood('lisa', 5, 100, 4)
                             jump .end
                         else:
@@ -3391,7 +3395,7 @@ label lisa_advanced_kiss_lesson:
                         Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                         Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
                         $ renpy.end_replay()
-                        $ Skill('kissing', 0.2, 6.5)
+                        $ Skill('kissing', 0.2, 6.0)
                         $ add_lim('lisa.free', 0.1, 7)
                         $ AddRelMood('lisa', 5, 100, 4)
                         jump .end
@@ -3409,7 +3413,7 @@ label lisa_advanced_kiss_lesson:
         $ AddRelMood('lisa', 0, -30)
 
     label .end:
-        $ dcv['lisa_mentor'].set_lost(2 if talk_var['kiss_lessons']>9 else 1)
+        $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
         $ spent_time += 10
         jump Waiting
 
@@ -3428,7 +3432,7 @@ label lisa_sexbook1:
             Max_01 "Тогда я подыщу для тебя какую-нибудь интересную и полезную книжку!"
             Lisa_01 "О как! Я ничего против не имею. Главное, чтобы действительно интересная была..."
             Max_02 "Ага."
-            $ items['sex.ed'].InShop = False
+            $ items['sex.ed'].block()
             $ poss['seduction'].OpenStage(12)
     $ spent_time += 10
     jump Waiting
@@ -3458,10 +3462,11 @@ label gift_sexbook:
             pass
     Lisa_01 "В общем, спасибо тебе, Макс. Буду читать перед сном. Ну или когда будет... сам понимаешь, Настроение..."
     Max_01 "Не за что!"
-    $ items['sex.ed'].InShop = False
-    $ items['sex.ed'].have = False
+    $ items['sex.ed'].give()
+    # $ items['sex.ed'].InShop = False
+    # $ items['sex.ed'].have = False
     $ spent_time += 10
-    $ dcv['lizamentor'].set_lost(9) # по прошествии срока можно будет поинтересоваться мнением Лизы о книге...
+    $ lisa.dcv.battle.set_lost(9) # по прошествии срока можно будет поинтересоваться мнением Лизы о книге...
     jump Waiting
 
 
@@ -3562,7 +3567,7 @@ label MorningWoodCont2:
         jump .end
 
     label .end:
-        $ dcv['mw'].set_lost(renpy.random.randint(5, 10))
+        $ dcv.mv.set_lost(renpy.random.randint(5, 10))
         $ spent_time += 30
         jump Waiting
 
@@ -3576,7 +3581,7 @@ label lisa_about_ae_sexed0:
     Lisa_09 "Они хотят подготовить меня к взрослой жизни. Всё покажут и расскажут. То же, чему и ты собирался меня учить, только вот..."
     Max_07 "Только вот что?"
     Lisa_10 "А это вообще нормально? Одно дело, когда меня чему-нибудь учишь ты, а здесь... Мама... и Эрик... Мама так вообще раньше меня от всего такого до жути оберегала!"
-    if talk_var['fight_for_Lisa'] == 1:
+    if lisa.dcv.battle.stage == 1:
         #если Макс решил уступить Лизу Эрику
         Max_09 "У них-то в этом знаний и опыта куда больше моего, я даже не рядом. Так что кому, как не им тебя к этому готовить."
         Lisa_00 "Ну ладно. Пожалуй, ты прав."
@@ -3597,7 +3602,7 @@ label lisa_about_ae_sexed0:
         Lisa_02 "Расскажу, если тебе интересно."
         Max_08 "Конечно интресно!"
 
-    $ flags['l.ab_aeed'] = True
+    $ flags.l_ab_sexed = True
     $ spent_time += 10
     jump Waiting
 
@@ -3624,7 +3629,7 @@ label lisa_about_ae_sexed1:
     Lisa_00 "Хорошо... Но я тебе говорю, он не такой!"
     Max_09 "Ага, конечно. Ещё посмотрим..."
 
-    $ flags['l.ab_aeed'] = True
+    $ flags.l_ab_sexed = True
     $ spent_time += 10
     jump Waiting
 
@@ -3665,7 +3670,7 @@ label lisa_about_ae_sexed2:
     Max_01 "Сегодня?"
     Lisa_01 "Ой, всё, отстань."
 
-    $ flags['l.ab_aeed'] = True
+    $ flags.l_ab_sexed = True
     $ spent_time += 10
     jump Waiting
 
@@ -3693,7 +3698,7 @@ label lisa_about_ae_sexed3:
     Max_07 "Кстати, когда покажешь?"
     Lisa_01 "Ой, всё, отстань."
 
-    $ flags['l.ab_aeed'] = True
+    $ flags.l_ab_sexed = True
     $ spent_time += 10
     jump Waiting
 
@@ -3722,7 +3727,7 @@ label lisa_about_ae_sexed4:
     Lisa_10 "Ой! Ладно, ладно, верю."
     Max_02 "То-то же!"
 
-    $ flags['l.ab_aeed'] = True
+    $ flags.l_ab_sexed = True
     $ spent_time += 10
     jump Waiting
 
@@ -3736,7 +3741,7 @@ label lisa_stop_kiss:
         #если вражда
         Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода побыстрее от меня избавиться. ){/i}"
 
-    $ flags['lisa.stopkiss'] = 2
+    $ flags.stopkiss = 2
 
     return
 

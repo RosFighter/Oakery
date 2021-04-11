@@ -122,3 +122,11 @@ translate deutsch strings:
     old "Конфеты закончились"
     new ""
 
+# TODO: Translation updated at 2021-04-11 22:25
+
+translate deutsch strings:
+
+    # game/core/04function.rpy:378
+    old "Так... В накладной написано следующее:"
+    new ""
+

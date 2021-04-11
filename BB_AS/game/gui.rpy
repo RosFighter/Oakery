@@ -444,6 +444,7 @@ init python:
 
         gui.dialogue_width = 1450
         gui.dialogue_xpos = 430
+        gui.dialogue_ypos = 20
 
         ## Изменяет размеры и интервалы различных объектов.
         gui.slider_size = 54

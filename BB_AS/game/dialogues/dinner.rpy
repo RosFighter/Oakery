@@ -4,36 +4,24 @@ label after_dinner:
     $ spent_time = 60
 
     # проверим, не пора ли начинать блог с Эриком
-    if talk_var['fight_for_Alice'] in [1, 3]:
-        $ talk_var['fight_for_Alice'] += 3
-        $ ready_for_blog0()
-    elif talk_var['fight_for_Alice']==5 and not dcv['eric.lingerie'].enabled:
-        $ ready_for_blog0()
+    if alice.dcv.battle.stage in [1, 3]:
+        $ alice.dcv.battle.stage += 3
+        $ alice.dcv.intrusion.set_lost(6)
+    elif alice.dcv.battle.stage==5 and not alice.dcv.intrusion.enabled:
+        $ alice.dcv.intrusion.set_lost(6)
 
     if len(punlisa)> 0 and (punlisa[0][3] == 1 or punlisa[0][2] > 1):
         # Лизу наказали
-        if all([
-                    punlisa[0][0] == 1, len(punlisa) >= 7,
-                    poss['sg'].stn == 2,
-                    ColumnSum(punlisa, 1, 7) == 2,
-                    talk_var['truehelp']>=6
-                ]):
+        if all([punlisa[0][0] == 1, len(punlisa) >= 7, ColumnSum(punlisa, 1, 7) == 2,
+                    poss['sg'].stn == 2, lisa.flags.truehelp>5]):
             # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
             call conversation_after_dinner(5) from _call_conversation_after_dinner_4
-        elif all([
-                    punlisa[0][0] == 1,
-                    ColumnSum(punlisa, 4) >= 1000,
-                    poss['sg'].stn > 2
-                ]):
+        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4) >= 1000, poss['sg'].stn > 2]):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4) from _call_conversation_after_dinner
-        elif all([
-                    len(punlisa) >= 7,
-                    ColumnSum(punlisa, 0, 6) == 0,
-                    ('lisa.ad' not in dcv or dcv['lisa.ad'].done)
-                ]):
+        elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done]):
             # если Макс не помогал Лизе 5 раз и разговора после ужина не было больше недели
-            if talk_var['help.hw'] == 0 and poss['sg'].stn <= 2:
+            if lisa.flags.help == 0 and poss['sg'].stn <= 2:
                 # совсем не помогал
                 call conversation_after_dinner(1) from _call_conversation_after_dinner_1
             elif poss['sg'].stn == 2:
@@ -59,7 +47,7 @@ label typical_dinner:
 
 
 label dinner_first:
-    $ talk_var['dinner'] = 1
+    $ flags.dinner = 1
     Ann_07 "Рада, что все смогли сегодня собраться. Всем приятного аппетита! Ну, у кого как день прошёл?"
     Alice_00 "Мам, да у нас всё как обычно. Это ты рассказывай, как первый рабочий день?"
     menu:
@@ -123,8 +111,8 @@ label dinner_first:
         Ann_07 "Ну а ученики какие? Повезло с классом? Уже завела себе друзей и подруг?"
         menu:
             Lisa_02 "Да, познакомилась... с одной подружкой. Класс супер, всё хорошо, мам!"
-            "Ага, а подружку зовут Алекс..." if talk_var['boy'] > 0:
-                $ talk_var['boy'] = 3
+            "Ага, а подружку зовут Алекс..." if lisa.flags.crush > 0:
+                $ lisa.flags.crush = 3
                 menu:
                     Lisa_12 "Макс! Я же тебе по секрету рассказала..."
                     "Ой, извини. Я думал, у нас нет секретов...":
@@ -134,10 +122,10 @@ label dinner_first:
                 Lisa_00 "Не удивляйся потом, если твои секреты тоже окажутся... не секретами."
                 Ann_07 "Лиза, так что там за подружка по имени Алекс?"
                 jump .secret
-            "Что за подружка?" if talk_var['boy'] == 0:
-                $ talk_var['boy'] = 4
-            "Что за подружка? {i}(подмигнуть){/i}" if talk_var['boy'] > 0:
-                $ talk_var['boy'] = 5
+            "Что за подружка?" if lisa.flags.crush == 0:
+                $ lisa.flags.crush = 4
+            "Что за подружка? {i}(подмигнуть){/i}" if lisa.flags.crush > 0:
+                $ lisa.flags.crush = 5
         Lisa_00 "Ой, да обычная подружка..."
         Alice_06 "Кажется, у кого-то секреты..."
         jump .secret
@@ -160,7 +148,7 @@ label dinner_first:
 
 
 label dinner_2:
-    $ talk_var['dinner'] = 2
+    $ flags.dinner = 2
     Ann_04 "Всем приятного аппетита. У кого какие новости? Рассказывайте..."
     Max_04 "У меня всё как всегда"
     menu:
@@ -221,7 +209,7 @@ label dinner_2:
             pass
         "Помощь нужна?":
             pass
-    if talk_var['blog'] < 2:
+    if alice.flags.crush < 2:
         jump .help
     else:
         jump .blog2
@@ -231,12 +219,12 @@ label dinner_2:
         "Ну как построишь, позови!":
             pass
         "Помощь нужна?":
-            if talk_var['blog'] < 2:
+            if alice.flags.crush < 2:
                 $ poss['blog'].OpenStage(0)
                 jump .help
 
     label .blog2:
-        if talk_var['blog'] == 2:
+        if alice.flags.crush == 2:
             Alice_00 "Кстати, ты уже предлагал свою помощь, если я не ошибаюсь... Или это было так, не серьёзно всё?"
             Max_09 "А ты и правда прислушаешься к моим советам?"
             Alice_13 "Макс, я готова на любую помощь. У самой уже нет идей, если честно. Так что, да. Прислушаюсь..."
@@ -283,7 +271,7 @@ label dinner_2:
 
 
 label dinner_3:
-    $ talk_var['dinner'] = 3
+    $ flags.dinner = 3
     $ __mmood = 0
     $ __lmood = 0
     Ann_00 "Всем приятного аппетита. Предлагаю поужинать. Есть у кого-то какие-то новости?"
@@ -333,7 +321,7 @@ label dinner_3:
 
 
 label dinner_4:
-    $ talk_var['dinner'] = 4
+    $ flags.dinner = 4
     $ __alice = 0
     $ __ann = 0
     Ann_05 "Я рада, что все мы вместе сегодня смогли собраться. Наконец-то, все познакомились с Эриком!"
@@ -359,7 +347,7 @@ label dinner_4:
         Eric_05 "Лиза, я тебе обещаю, что если вместе поедем на шоппинг через неделю, я тебе куплю отличный купальник. Конечно, не дизайнерский, но красивый и такой, в котором сможешь загорать! Это будет мой подарок тебе."
         "{i}промолчать{/i}":
             $ poss['Swimsuit'].OpenStage(2)
-            $ items['bikini'].InShop = True
+            $ items['bikini'].unblock()
     Ann_14 "Эрик, ну не стоит же её так баловать..."
     menu:
         Alice_02 "Если что, то мне тоже ничего не купили..."
@@ -395,7 +383,7 @@ label dinner_4:
         "{i}промолчать{/i}":
             pass
     $ poss['nightclub'].SetStage(0)
-    $ items['dress'].InShop = True
+    $ items['dress'].unblock()
     Alice_02 "Спасибо, Эрик! Ты и правда лучший! Буду ждать следующей субботы!"
     menu:
         Ann_00 "Так, ладно. Спасибо всем за ужин. Мы сейчас с Эриком уедем и вернусь завтра утром. Надеюсь, вопросов не возникнет, да? Алиса за старшую, а остальным - не шалите, хорошо?"
@@ -415,7 +403,7 @@ label dinner_4:
 
 
 label dinner_5:
-    $ talk_var['dinner'] = 5
+    $ flags.dinner = 5
 
     Ann_04 "Молодцы, что все собрались. Всем приятного аппетита!"
     Max_01 "Приятного..."
@@ -431,7 +419,7 @@ label dinner_5:
             menu:
                 Ann_06 "Ого. Значит, тебе понравился Эрик? Я рада..."
                 "Почему понравился? Нормальный мужик...":
-                    $ talk_var['empathic'] += 1
+                    $ eric.flags.crush += 1
                     Alice_07 "Ну вот, мы же тебе говорили, что он нормальный, а ты всё ворчал. Вот увидишь, маме именно он и нужен был всё это время!"
                 "Эрик? Понравился?! Нет, просто рад, что ты дома будешь...":
                     Alice_05 "Макс, а ты всё ещё придурок... Эрик отлично подходит маме! Он сильный, умный, ответственный, солидный такой и при деньгах. Маме именно такой и нужен!"
@@ -455,12 +443,12 @@ label dinner_5:
 
 
 label dinner_6:
-    $ talk_var['dinner'] = 6
+    $ flags.dinner = 6
 
     menu:
         Ann_04 "Всем добрый вечер и приятного аппетита! Эрик, мы очень рады, что ты смог сегодня к нам присоединиться!"
         "Ну, кто рад, а кто...":
-            $ talk_var['empathic'] -= 2
+            $ eric.flags.crush -= 2
             menu:
                 Eric_02 "Макс, у нас с тобой какие-то проблемы? Может быть, расскажешь, чем я тебе не нравлюсь?"
                 "Да всё нормально...":
@@ -520,7 +508,7 @@ label dinner_6:
 
 
 label dinner_11:
-    $ talk_var['dinner'] = 11
+    $ flags.dinner = 11
 
     Ann_04 "Всем добрый вечер и приятного аппетита! Сегодня мы с Эриком снова уедем, вернусь завтра. Но вы уже привыкли к этому, правда?"
     Alice_03 "Конечно, езжайте, развеятесь хоть..."
@@ -557,12 +545,12 @@ label dinner_11:
     call alice_init_nightclub from _call_alice_init_nightclub
 
     ## после ужина должен состоятся разговор Макса с Эриком на счет решения Макса
-    $ EventsByTime['Eric_afterdinner'].variable = "talk_var['dinner']==11"
+    # $ EventsByTime['Eric_afterdinner'].variable = "flags.dinner==11"
     jump after_dinner
 
 
 label dinner_12:
-    $ talk_var['dinner'] = 12
+    $ flags.dinner = 12
 
     Ann_04 "Всем приятного аппетита!"
     Max_01 "Приятного аппетита..."
@@ -621,7 +609,7 @@ label dinner_12:
 
 
 label dinner_17:
-    $ talk_var['dinner'] = 17
+    $ flags.dinner = 17
 
     Ann_04 "Всем приятного аппетита!"
     Max_01 "Приятного!"
@@ -665,23 +653,19 @@ label dinner_ab_lisa_ed:
     Ann_05 "Лиза, у Эрика для тебя есть новость..."
     Lisa_00 "Для меня?! Какая?"
 
-    if talk_var['fight_for_Lisa'] in [1, 2]:
+    if lisa.dcv.battle.stage in [1, 2]:
         # Макс решил уступить Лизу Эрику или выпросил отсрочку
         Eric_01 "Я решил, что нужно уделить твоему образованию больше внимания, Лиза. Так что я нанял репетитора, который натаскает тебя по учёбе на самые высокие отметки."
         Lisa_11 "Ой! А когда мне нужно к нему ездить?"
         Eric_02 "По воскресеньям. Будете заниматься 3 или 4 часа, этого более чем хватит, чтобы закрепить то, что вы пройдёте в школе."
         Lisa_02 "Здорово! Спасибо огромное! Слышал, Макс, у меня теперь есть репетитор!"
         Max_01 "Ага. Очень здорово."
-        if talk_var['fight_for_Lisa'] == 1:
+        if lisa.dcv.battle.stage == 1:
             # Макс решил уступить Лизу Эрику
             Ann_02 "Да, Лиза, зайди в мою комнату часов в 10 вечера. Нам с Эриком нужно с тобой поговорить кое о чём."
             Lisa_01 "Хорошо, мам."
-            $ ready_for_lesson0()  # готовность к 0 уроку
-        # репетитор в воскресенье
-        $ lisa.add_schedule(
-                Schedule((0, ), '10:0', '10:59', 'dressed', _("одевается к репетитору"), 'house', 0, 'lisa_dressed_repetitor', enabletalk=False, glow=110),
-                Schedule((0, ), '11:0', '14:59', 'at_tutor', _("у репетитора")),
-            )
+            $ lisa.dcv.intrusion.enabled = True
+            $ lisa.dcv.intrusion.stage = 1
         $ poss['seduction'].OpenStage(20)
     else:
         # Макс решил не уступать Лизу Эрику
@@ -696,27 +680,22 @@ label dinner_ab_lisa_ed:
         Max_07 "Не хочу..."
         Ann_02 "А ты, Лиза, зайди в мою комнату часов в 10 вечера. Нам с Эриком нужно с тобой поговорить кое о чём."
         Lisa_01 "Хорошо, мам."
-        $ ready_for_lesson0()  # готовность к 0 уроку
-        # дополнительные курсы у Лизы после школы (по будням)
-        $ lisa.add_schedule(
-            Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'on_courses', "на курсах"),
-            Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', glow=105),
-            Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', glow=110),
-            )
+        $ lisa.dcv.intrusion.enabled = True
+        $ lisa.dcv.intrusion.stage = 1
         $ poss['seduction'].OpenStage(21)
 
     Ann_01 "Вот и хорошо. Давайте теперь спокойно поедим."
     Max_00 "Давайте."
 
-    if talk_var['fight_for_Lisa'] != 2:
-        $ talk_var['fight_for_Lisa'] += 3
-    $ flags['dinner_ab_lisa'] = True
+    if lisa.dcv.battle.stage != 2:
+        $ lisa.dcv.battle.stage += 3
+    $ flags.add_training = True
     jump after_dinner
 
 
 # требуется доработка кода, для включения возможности делать заказ продуктов и чистку бассейна без денег Ани
 label dinner_ab_earn:
-    $ flags['dinner_ab_earn'] = True
+    $ flags.about_earn = True
 
     Ann_04 "Всем приятного аппетита!"
     Max_01 "Приятного аппетита..."
@@ -729,14 +708,15 @@ label dinner_ab_earn:
     Max_04 "Я просто тоже пробую то одно, то другое. Ищу себя..."
     Ann_06 "Раз уж у тебя есть свой доход, Макс, может ты тогда будешь следить за бассейном и продуктами без моей финансовой поддержки?"
     Max_02 "Да легко, мам! Я прослежу, чтобы всё в этом доме было в порядке!"
-    if talk_var['fight_for_Lisa'] == 2:
+    if lisa.dcv.battle.stage == 2:
         # отсрочка с уроками Лизы
         Lisa_09 "Ой, все деловые такие! Только одна я ещё маленькая для этого."
         Ann_02 "Кстати, об этом... Завтра, когда у нас будет гостить Эрик, зайди в мою комнату часов в 10 вечера. Нам с Эриком нужно с тобой поговорить кое о чём."
         Lisa_01 "Хорошо, мам. А зачем?"
         Ann_04 "Вот придёшь и узнаешь... Давайте больше ешьте, а не разговаривайте."
-        $ talk_var['fight_for_Lisa'] = 5
-        $ ready_for_lesson0()  # готовность к 0 уроку
+        $ lisa.dcv.battle.stage = 5
+        $ lisa.dcv.intrusion.enabled = True
+        $ lisa.dcv.intrusion.stage = 1
     else:
         # отсрочки уроков Лизы не было
         Ann_04 "Я была бы тебе сынок очень признательна, если бы так и было. А теперь, давайте больше ешьте, а не разговаривайте."
@@ -757,8 +737,7 @@ label dinner_lace_lingerie:
     Ann_04 "Ну, я рада, что всё так сложилось. Ох, что-то я заболталась, а ведь мне уже скоро уезжать... Спасибо вам за приятный ужин. Я побежала, увидимся утром..."
     Max_01 "Пока, мам..."
 
-    # делаем корректировку расписания на 1 день
-    call friday_without_club from _call_friday_without_club
+    $ flags.noclub = True
 
     jump after_dinner
 
@@ -785,23 +764,23 @@ label dinner_after_punishment:
         jump dinner_3
     elif day == 4: # первый ужин с Эриком
         jump dinner_4
-    elif all([day>=5, GetWeekday(day)==0, talk_var['dinner']==4]):
+    elif all([day>=5, GetWeekday(day)==0, flags.dinner==4]):
         jump dinner_5
-    elif all([day>=6, GetWeekday(day)==1, talk_var['breakfast']==5, talk_var['dinner']==5]):
+    elif all([day>=6, GetWeekday(day)==1, flags.breakfast==5, flags.dinner==5]):
         jump dinner_6
-    elif all([day>=11, GetWeekday(day)==6, talk_var['breakfast']==7, talk_var['dinner']==6]):
+    elif all([day>=11, GetWeekday(day)==6, flags.breakfast==7, flags.dinner==6]):
         jump dinner_11
-    elif all([day>=12, GetWeekday(day)==0, talk_var['dinner']==11, talk_var['breakfast']==12]):
+    elif all([day>=12, GetWeekday(day)==0, flags.dinner==11, flags.breakfast==12]):
         jump dinner_12
-    elif all([day>=17, GetWeekday(day)==5, talk_var['breakfast']==12, talk_var['dinner']==12]):
+    elif all([day>=17, GetWeekday(day)==5, flags.breakfast==12, flags.dinner==12]):
         jump dinner_17
-    elif all([GetWeekday(day)==1, talk_var['fight_for_Lisa'] in [1, 2, 3], not flags['dinner_ab_lisa']]):
+    elif all([GetWeekday(day)==1, lisa.dcv.battle.stage in [1, 2, 3], not flags.add_training]):
         jump dinner_ab_lisa_ed
-    elif all([GetWeekday(day)==0, dcv['ae_ed_lisa'].done, not flags['dinner_ab_earn'],
-            (talk_var['fight_for_Lisa'] in [4, 6] and dcv['ae_ed_lisa'].stage==1 and talk_var['ae_lisa_number']==1)
-                or (talk_var['fight_for_Lisa']==2 and dcv['ae_ed_lisa'].stage==0)]):
+    elif all([GetWeekday(day)==0, lisa.dcv.intrusion.done, not flags.about_earn,
+            (lisa.dcv.battle.stage in [4, 6] and lisa.dcv.intrusion.stage==1 and flags.l_ab_sexed==1)
+                or (lisa.dcv.battle.stage==2 and not lisa.dcv.intrusion.stage)]):
         jump dinner_ab_earn
-    elif all([GetWeekday(day)==5, items['sexbody2'].have, dcv['eric.lingerie'].stage<5, dcv['eric.lingerie'].enabled]):
+    elif all([GetWeekday(day)==5, items['sexbody2'].have, alice.dcv.intrusion.stage<5, alice.dcv.intrusion.enabled]):
         jump dinner_lace_lingerie
 
     else:

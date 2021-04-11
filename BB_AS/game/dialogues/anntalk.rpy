@@ -96,7 +96,7 @@ label ann_ask_money:
             "Точно, извини...":
                 jump AfterWaiting
 
-    $ talk_var['ask_money'] = 1
+    $ ann.daily.ask_money = 1
     $ spent_time = 10
     menu:
         Ann_00 "Макс, тебе не стыдно просить деньги у мамы, хотя сам целыми днями дома сидишь и ничего не делаешь?"
@@ -115,9 +115,8 @@ label ann_ask_money:
 
     menu .work:
         Ann_01 "И что же, например?"
-        "Может быть, почистить бассейн?" if dcv['clearpool'].done:
-            $ dcv['clearpool'].done = False
-            $ dcv['clearpool'].stage = 1
+        "Может быть, почистить бассейн?" if dcv.clearpool.done and dcv.clearpool.stage in [0, 2]:
+            $ dcv.clearpool.stage = 1
             $ mgg.ask(2)
             menu:
                 Ann_04 "Отличная идея, Макс! Лучше уж я заплачу тебе $40, чем нанимать какого-то человека. Держи. Да, лучше это делать пока светло и никого нет."
@@ -125,9 +124,8 @@ label ann_ask_money:
                     jump AfterWaiting
                 "Может я могу ещё что-то сделать?":
                     jump .work
-        "Ну, могу заказать продукты" if dcv['buyfood'].done:
-            $ dcv['buyfood'].done = False
-            $ dcv['buyfood'].stage = 1
+        "Ну, могу заказать продукты" if dcv.buyfood.done  and dcv.buyfood.stage in [0, 2]:
+            $ dcv.buyfood.stage = 1
             $ mgg.ask(3)
             menu:
                 Ann_04 "Хорошая мысль, Макс. Я дам тебе $50 на продукты и авансом $10 за твои услуги, так сказать. Устроит?"
@@ -135,15 +133,6 @@ label ann_ask_money:
                     jump AfterWaiting
                 "Может я могу ещё что-то сделать?":
                     jump .work
-        # "Может быть, тебе что-то нужно из косметики?" if dcv['ordercosm'].done:
-        #     $ dcv['ordercosm'].done = False
-        #     $ money += 115
-        #     menu:
-        #         Ann_04 "Ты знаешь, мне и правда нужно кое-что заказать. Купи для меня набор косметики, вот $100 и $15 сверху за твои труды, хорошо?"
-        #         "Конечно!":
-        #             jump AfterWaiting
-        #         "Может я могу ещё что-то сделать?":
-        #             jump .work
         "Не знаю. Видимо, ничего...":
             jump AfterWaiting
 
@@ -154,7 +143,7 @@ label ann_aboutfood:
         "Супер!":
             pass
     $ AddRelMood('ann', 0, 50)
-    $ dcv['buyfood'].stage = 0
+    $ dcv.buyfood.stage = 0
     return
 
 
@@ -164,13 +153,13 @@ label ann_aboutpool:
         "Ага...":
             pass
     $ AddRelMood('ann', 0, 50)
-    $ dcv['clearpool'].stage = 0
+    $ dcv.clearpool.stage = 0
     return
 
 
 label ann_talk_tv:
-    $ talk_var['ann_tv'] = 1
-    if talk_var['ann_movie'] == 0:
+    $ ann.daily.tvwatch = 1
+    if not ann.flags.erofilms:
         jump .first_movie
 
     menu:
@@ -214,7 +203,7 @@ label ann_talk_tv:
         menu:
             Ann_01 "Да так, всякую ерунду. Хотела какой-нибудь фильм посмотреть. Садись рядом, если тоже делать нечего..."
             "Конечно! Что смотреть будем?":
-                $ talk_var['ann_movie'] += 1
+                $ ann.flags.erofilms += 1
                 $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
             "В другой раз...":
                 Ann_05 "Ну, как хочешь!"
@@ -319,7 +308,7 @@ label Ann_MorningWood:
             Max_03 "Ну, ты же знаешь, что мне с моим размером это трудно сделать..."
             Ann_12 "Да, понимаю, конечно... Но беседа ушла куда-то не туда. В общем, постарайся не травмировать её психику, хорошо?"
             Max_00 "Хорошо, мам..."
-    $ flags['morning_erect'] = 2
+    $ dcv.mv.stage = 2
     $ spent_time = 20
     jump Waiting
 
@@ -419,7 +408,7 @@ label talk_about_smoking:
     show Max talk-terrace 02a
     Max_14 "Ну..."
 
-    if flags['smoke.request'] == 'money':
+    if alice.req.req == 'money':
         $ __mood -= 300
         Alice_17 "Ну и придурок же ты, Макс! Мы же договорились, а ты..."
         Max_09 "Я передумал..."
@@ -467,8 +456,7 @@ label talk_about_smoking:
                 Alice_16 "Я не буду тебе ничего говорить, сам всё поймёшь в своё время. Карма штука жестокая, но справедливая..."
                 "{i}начать ужин{/i}":
                     pass
-    # $ AddSchedule(plan_alice, Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
-    $ alice.add_schedule(Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
+    call set_alice_cant_smoke   # теперь Алиса не будет курить на вилле
     $ AddRelMood('alice', -10, __mood)
     $ current_room = house[5]
     $ Distribution()
@@ -493,6 +481,6 @@ label ann_about_kiss:
     Ann_07 "Не за что, Макс. Обращайся, если будет нужен ещё какой-то совет..."
     Max_01 "Ага, обязательно..."
 
-    $ talk_var['ask.teachkiss'].append('ann')
+    $ flags.how_to_kiss.append('ann')
     $ spent_time += 10
     return

@@ -1,7 +1,7 @@
 init 9999 python:
     renpy.config.rollback_enabled = True
-    renpy.config.hard_rollback_limit = 64
-    renpy.config.rollback_length = 64
+    renpy.config.hard_rollback_limit = 16
+    renpy.config.rollback_length = 16
 
 init python:
     config.statement_callbacks.remove(_window_auto_callback)
@@ -12,8 +12,8 @@ define red    = "#FF0000"
 define orange = "#E59400"
 define gray   = "#808080"
 
-define extrapak = False
 define config.gl2 = True
+define dop = namedtuple('dop', 'day tm ctm ll ul ddop')
 
 define failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
 define succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
@@ -53,7 +53,6 @@ default last_save_name = "(None)"
 
 default morningwood_var = [1, 2, 3]
 
-
 default persistent.memories = {}
 default persistent.mems_var = []
 
@@ -77,6 +76,12 @@ define weekdays = (
 define notify_list = []
 
 define cloth = None
+
+define events_by_tm = Events_by_time()
+
+default cam_poses = {}
+default cam_pose_blog = []
+
 init:
     $ config.keymap['hide_windows'].append('`')
     if renpy.variant("touch") or renpy.variant("small"):
@@ -109,65 +114,75 @@ define helps = [
 
 # Диалоги
 define talks = {
-    'blog1'      : TalkTheme('alice', _("Значит, у тебя есть блог?"), 'talkblog1', "talk_var['blog']==1", -1),
+    'blog1'      : TalkTheme('alice', _("Значит, у тебя есть блог?"), 'talkblog1', "alice.flags.crush==1", -1),
     'blog2'      : TalkTheme('alice', _("Слушай, насчёт блога..."), 'talkblog2', "poss['blog'].stn==1", 1),
-    'blog3'      : TalkTheme('alice', _("Насчёт твоего блога... А если не особо раздеваться?"), 'talkblog3', "all([dcv['alice.secret'].done, flags['cam_fun_alice'], poss['blog'].stn in [2,3]])", 1),
-    'lisa_fd'    : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and talk_var['lisa_fd']==0 and talk_var['boy']==0"),
-    'lisa_swim'  : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].stn < 0 and lisa.plan_name == 'sun'"),
-    'lisas_boy'  : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy', "talk_var['boy']==1", 0, "lisa_boy"),
-    'lisas_boy2' : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy2', "2 < talk_var['boy'] < 6", 1),
-    'lisa_dw'    : TalkTheme('lisa', _("Насчёт посуды..."), 'wash_dishes_lisa', "talk_var['lisa_dw']==0 and lisa.plan_name == 'dishes'", -2),
-    'alice_dw'   : TalkTheme('alice', _("Насчёт посуды..."), 'wash_dishes_alice', "talk_var['alice_dw']==0 and alice.plan_name == 'dishes'", -2),
-    'ask_money'  : TalkTheme('ann', _("Мам, дай денег, пожалуйста..."), 'ann_ask_money', "talk_var['ask_money']==0"),
-    'aboutfood'  : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv['buyfood'].stage==2 and not dcv['buyfood'].done"), #dcv['buyfood'].lost==2"),
-    'aboutpool'  : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv['clearpool'].stage==2 and dcv['clearpool'].lost>3"),
-    'ann_tv'     : TalkTheme('ann', _("Что смотришь?"), 'ann_talk_tv', "talk_var['ann_tv']==0 and ann.plan_name == 'tv'"),
-    'alice_tv'   : TalkTheme('alice', _("Не возражаешь против компании?"), 'alice_talk_tv', "talk_var['alice_tv']==0 and alice.plan_name == 'tv'"),
+    'blog3'      : TalkTheme('alice', _("Насчёт твоего блога... А если не особо раздеваться?"), 'talkblog3', "all([alice.dcv.feature.done, alice.stat.mast, poss['blog'].stn in [2,3]])", 1),
+    'alice_dw'   : TalkTheme('alice', _("Насчёт посуды..."), 'wash_dishes_alice', "not alice.daily.dishes and alice.plan_name == 'dishes'", -2),
+    'alice_tv'   : TalkTheme('alice', _("Не возражаешь против компании?"), 'alice_talk_tv', "not alice.daily.tvwatch and alice.plan_name == 'tv'"),
     'aboutbooks' : TalkTheme('alice', _("Что читаешь?"), 'alice_aboutbooks', "alice.plan_name == 'read' and poss['secretbook'].stn < 0"),
-    'ann_mw'     : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "flags['morning_erect'] == 1"),
+    'alice_peep' : TalkTheme('alice', _("Хотел извиниться за утренний инцидент..."), 'Alice_sorry', "alice.daily.shower==3"),
+    'alice_sol'  : TalkTheme('alice', _("Загораешь?"), 'Alice_solar', "not alice.hourly.sun_cream and (alice.daily.oiled==0 or alice.daily.oiled==3)and alice.plan_name == 'sun'"),
+    'alice_gift' : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_sorry_gifts', "alice.sorry.owe and alice.sorry.there_in_stock and alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
+    'aboutbath'  : TalkTheme('alice', _("Насчёт ванны ночью..."), 'alice_about_bath', "alice.flags.incident==1"),
+    'alice.kiss' : TalkTheme('alice', _("А ты умеешь целоваться?"), 'alice_about_kiss', "all([lisa.dcv.seduce.stage==1, 'alice' not in flags.how_to_kiss])"),
+    'eric.ling0' : TalkTheme('alice', _("Я слышал, Эрик тебе новое бельё собирается купить?"), 'alice_about_lingerie0', "alice.dcv.intrusion.stage==1"),
+    'eric.ling1' : TalkTheme('alice', _("Покажешь боди, которое тебе Эрик купит?"), 'alice_showing_lingerie1', "all([alice.dcv.intrusion.stage==2, current_room==house[1]])"),
+    'a.privpun0' : TalkTheme('alice', _("Хотел узнать, хорошо ли тебе сидится?"), 'alice_about_defend_punish0', "all([alice.dcv.private.stage==0, alice.dcv.private.lost>1])"),
+    'a.privpun1' : TalkTheme('alice', _("Не слабо тебя отшлёпали!"), 'alice_about_defend_punish1', "all([alice.dcv.private.stage==2, alice.dcv.private.lost>1])"),
+    'a.privpun2' : TalkTheme('alice', _("Ты не передумала о наказаниях?"), 'alice_about_defend_punish1.cont', "all([alice.dcv.private.stage==3, alice.dcv.private.lost>1])"),
+    'a.privpunt' : TalkTheme('alice', _("Отшлёпать тебя сейчас или..."), 'alice_about_private_punish', "all([not alice.flags.private, alice.dcv.private.stage==4, alice.dcv.private.lost>1])"),
+    'a.privpun'  : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_0', "all([alice.plan_name in ['sun', 'smoke'], alice.flags.private, alice.dcv.private.stage==4, not alice.dcv.private.done, not alice.spanked])"),
+    'a.privpunr' : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_r', "all([alice.plan_name == 'sun', alice.dcv.private.stage==5, not alice.dcv.private.done, not alice.spanked])"),
+
+    'ask_money'  : TalkTheme('ann', _("Мам, дай денег, пожалуйста..."), 'ann_ask_money', "ann.daily.ask_money==0"),
+    'aboutfood'  : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv.buyfood.stage==2 and not dcv.buyfood.done"), #dcv.buyfood.lost==2"),
+    'aboutpool'  : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv.clearpool.stage==2 and dcv.clearpool.lost>3"),
+    'ann_tv'     : TalkTheme('ann', _("Что смотришь?"), 'ann_talk_tv', "not ann.daily.tvwatch and ann.plan_name == 'tv'"),
+    'ann_mw'     : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "dcv.mv.stage == 1"),
+    'ann.kiss'   : TalkTheme('ann', _("Мам, а как учатся целоваться?"), 'ann_about_kiss', "all([lisa.dcv.seduce.stage==1, 'ann' not in flags.how_to_kiss])"),
+
+    'eric.money' : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, GetRelMax('eric')[0]>3, 'money' in flags.bonus_from_eric])"),
+    'eric.wtf'   : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "flags.voy_stage==1"),
+    'eric.kira0' : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1, GetRelMax('eric')[0]>0])"),
+    'eric.kira1' : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "all([wcv.catch_Kira.stage==1, kira.dcv.battle.stage>0])"),
+
+    'kt1'        : TalkTheme('kira', _("Да тут всегда хорошая погода..."), 'kira_firsttalk', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==0])"),
+    'kt2'        : TalkTheme('kira', _("Ага, как всегда..."), 'kira_talk2', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==1])"),
+    'kt3'        : TalkTheme('kira', _("Да, шикарная!"), 'kira_talk3', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==2])"),
+    'kira.kiss'  : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([lisa.dcv.seduce.stage==1, list_in_list(['ann', 'alice'], flags.how_to_kiss), 'kira' not in flags.how_to_kiss])"),
+    'kt4'        : TalkTheme('kira', _("Ну как, ты с мамой-то поговорила?"), 'kira_talk4', "all([kira.stat.blowjob, kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==3])"),
+    'kt5'        : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==4])"),
+    'kt6'        : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
+    'kt_ft1'     : TalkTheme('kira', _("Понравились фотографии?"), 'kira_about_photo1', "all([kira.dcv.feature.done, kira.dcv.feature.stage==6, kira.plan_name=='sun'])"),
+    'kt_cuni'    : TalkTheme('kira', _("Не злишься на меня, тётя Кира?"), 'kira_about_cuni', "all([kira.dcv.sweets.done, kira.flags.promise, kira.plan_name=='sun'])"),
+    'kt.ft2'     : TalkTheme('kira', _("Так когда будем снова фотографироваться, тётя Кира?"), 'kira_about_photo2', "all([kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"),
+
+    'lisa_fd'    : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and flags.lisa_fd==0 and lisa.flags.crush==0"),
+    'lisa_swim'  : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].stn < 0 and lisa.plan_name == 'sun'"),
+    'lisas_boy'  : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy', "lisa.flags.crush==1", 0, "lisa_boy"),
+    'lisas_boy2' : TalkTheme('lisa', _("Насчёт твоего парня..."), 'about_boy2', "2 < lisa.flags.crush < 6", 1),
+    'lisa_dw'    : TalkTheme('lisa', _("Насчёт посуды..."), 'wash_dishes_lisa', "not lisa.daily.dishes and lisa.plan_name == 'dishes'", -2),
     'lisa_mw'    : TalkTheme('lisa', _("Насчёт этого случая утром..."), 'Lisa_MorningWood', "poss['seduction'].stn == 0 and current_room==house[0]", 0, "talkcooldown"),
-    'lisa_mw2'   : TalkTheme('lisa', _("Хотел поговорить о Большом Максе..."), 'Lisa_MorningWoodCont', "flags['morning_erect']==3 and current_room==house[0]"),
-    'lisa_mw3'   : TalkTheme('lisa', _("А ты у нас шалунья, оказывается..."), 'Lisa_MorningWoodCont', "flags['morning_erect']==5 and current_room==house[0]"),
+    'lisa_mw2'   : TalkTheme('lisa', _("Хотел поговорить о Большом Максе..."), 'Lisa_MorningWoodCont', "dcv.mv.stage==3 and current_room==house[0]"),
+    'lisa_mw3'   : TalkTheme('lisa', _("А ты у нас шалунья, оказывается..."), 'Lisa_MorningWoodCont', "dcv.mv.stage==5 and current_room==house[0]"),
     'lisa_sg1'   : TalkTheme('lisa', _("Насчёт успеваемости..."), 'Lisa_sg1', "poss['sg'].stn == 0"),
-    'lisa_sg2'   : TalkTheme('lisa', _("Ну как, ты подумала о моих условиях?"), 'Lisa_sg2', "poss['sg'].stn == 1 and talk_var['lisa.pun'] > 0"),
-    'lisa_hw'    : TalkTheme('lisa', _("Помочь с уроками?"), 'Lisa_HomeWork', "poss['sg'].stn > 1 and not flags['lisa_hw'] and lisa.plan_name == 'homework'"),
-    'lisa_peep'  : TalkTheme('lisa', _("Хотел извиниться за утренний инцидент..."), 'Lisa_sorry', "peeping['lisa_shower']==3"),
-    'alice_peep' : TalkTheme('alice', _("Хотел извиниться за утренний инцидент..."), 'Alice_sorry', "peeping['alice_shower']==3"),
-    'alice_sol'  : TalkTheme('alice', _("Загораешь?"), 'Alice_solar', "talk_var['alice_sun']==0 and (talk_var['sun_oiled']==0 or talk_var['sun_oiled']==3)and alice.plan_name == 'sun'"),
-    'lisa_gift'  : TalkTheme('lisa', _("У меня для тебя обещанная вкусняшка!"), 'lisa_sorry_gifts', "sorry_gifts['lisa'].owe and there_in_stock('lisa') and lisa.plan_name in ['sun', 'read', 'phone']"),
-    'alice_gift' : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_sorry_gifts', "sorry_gifts['alice'].owe and there_in_stock('alice') and alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
-    'l.ab.sec1'  : TalkTheme('lisa', _("У тебя странный вид..."), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, dcv['alice.secret'].stage<1, dcv['alice.secret'].done])"),
-    'l.ab.sec2'  : TalkTheme('lisa', _("Может всё-таки поделишься своими переживаниями по поводу Алисы?"), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, dcv['alice.secret'].stage>0, dcv['alice.secret'].done])"),
-    'lisa.hand'  : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "GetWeekday(day) in [2, 5] and all([len(online_cources)>1 and online_cources[1].cources[1].less, talk_var['lisa.handmass']==0, lisa.plan_name == 'phone'])"),
-    'aboutbath'  : TalkTheme('alice', _("Насчёт ванны ночью..."), 'alice_about_bath', "flags['talkaboutbath']==1"),
-    'kt1'        : TalkTheme('kira', _("Да тут всегда хорошая погода..."), 'kira_firsttalk', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==0])"),
-    'kt2'        : TalkTheme('kira', _("Ага, как всегда..."), 'kira_talk2', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==1])"),
-    'kt3'        : TalkTheme('kira', _("Да, шикарная!"), 'kira_talk3', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==2])"),
-    'ann.kiss'   : TalkTheme('ann', _("Мам, а как учатся целоваться?"), 'ann_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' not in talk_var['ask.teachkiss']])"),
-    'alice.kiss' : TalkTheme('alice', _("А ты умеешь целоваться?"), 'alice_about_kiss', "all([talk_var['teachkiss']>=1, 'alice' not in talk_var['ask.teachkiss']])"),
-    'kira.kiss'  : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([talk_var['teachkiss']>=1, 'ann' in talk_var['ask.teachkiss'], 'alice' in talk_var['ask.teachkiss'], 'kira' not in talk_var['ask.teachkiss']])"),
-    'l.firstkiss': TalkTheme('lisa', _("Ну что, Лиза, готова?"), 'lisa_ment_kiss1', "all([lisa.plan_name=='read', talk_var['teachkiss']>3, 'lisa' not in talk_var['ask.teachkiss']])"),
-    'l.nextkiss' : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', dcv['lisa_mentor'].done, poss['seduction'].stn>7, flags['lisa.stopkiss']<1])"),
+    'lisa_sg2'   : TalkTheme('lisa', _("Ну как, ты подумала о моих условиях?"), 'Lisa_sg2', "poss['sg'].stn == 1 and lisa.flags.pun > 0"),
+    'lisa_hw'    : TalkTheme('lisa', _("Помочь с уроками?"), 'Lisa_HomeWork', "poss['sg'].stn > 1 and not lisa.daily.homework and lisa.plan_name == 'homework'"),
+    'lisa_peep'  : TalkTheme('lisa', _("Хотел извиниться за утренний инцидент..."), 'Lisa_sorry', "lisa.daily.shower==3"),
+    'lisa_gift'  : TalkTheme('lisa', _("У меня для тебя обещанная вкусняшка!"), 'lisa_sorry_gifts', "lisa.sorry.owe and lisa.sorry.there_in_stock() and lisa.plan_name in ['sun', 'read', 'phone']"),
+    'l.ab.sec1'  : TalkTheme('lisa', _("У тебя странный вид..."), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, alice.dcv.feature.stage<1, alice.dcv.feature.done])"),
+    'l.ab.sec2'  : TalkTheme('lisa', _("Может всё-таки поделишься своими переживаниями по поводу Алисы?"), 'liza_secret_alisa', "all([poss['nightclub'].stn < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, alice.dcv.feature.stage>0, alice.dcv.feature.done])"),
+    'lisa.hand'  : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "GetWeekday(day) in [2, 5] and all([len(online_cources)>1 and online_cources[1].cources[1].less, lisa.flags.handmass, not lisa.daily.massage, lisa.plan_name == 'phone'])"),
+    'l.firstkiss': TalkTheme('lisa', _("Ну что, Лиза, готова?"), 'lisa_ment_kiss1', "all([lisa.plan_name=='read', lisa.dcv.seduce.stage>3, 'lisa' not in flags.how_to_kiss])"),
+    'l.nextkiss' : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].stn>7, flags.stopkiss<1])"),
     'l.sex-ed1'  : TalkTheme('lisa', _("Лиза, ты же любишь читать?"), 'lisa_sexbook1', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn<12])"),
     'l.sex-ed2'  : TalkTheme('lisa', _("Лиза, у меня для тебя особая книжка..."), 'lisa_sexbook2', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].stn>12])"),
-    'kt4'        : TalkTheme('kira', _("Ну как, ты с мамой-то поговорила?"), 'kira_talk4', "all([flags['kira.tv.bj'], dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==3])"),
-    'kt5'        : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==4])"),
-    'kt6'        : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([dcv['kiratalk'].done, kira.plan_name=='sun', dcv['kiratalk'].stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
-    'kt_ft1'     : TalkTheme('kira', _("Понравились фотографии?"), 'kira_about_photo1', "all([dcv['kiratalk'].done, dcv['kiratalk'].stage==6, kira.plan_name=='sun'])"),
-    'kt_cuni'    : TalkTheme('kira', _("Не злишься на меня, тётя Кира?"), 'kira_about_cuni', "all([dcv['kiratalkcuni'].done, flags['promise.cuni.kira'], kira.plan_name=='sun'])"),
-    'eric.money' : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([dcv['eric.money'].done, GetRelMax('eric')[0]>3, 'money' in talk_var['bonus_from_eric']])"),
-    'eric.wtf'   : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "talk_var['eric.voy.stage']==1"),
-    'l.ab_aeed0' : TalkTheme('lisa', _("Рассказывай, что делали?"), 'lisa_about_ae_sexed0', "not flags['l.ab_aeed'] and talk_var['ae_lisa_number']==0"),
-    'l.ab_aeed1' : TalkTheme('lisa', _("Ну так и чему же тебя учили?"), 'lisa_about_ae_sexed1', "not flags['l.ab_aeed'] and talk_var['ae_lisa_number']==1"),
-    'l.ab_aeed2' : TalkTheme('lisa', _("Что новенького было на уроке?"), 'lisa_about_ae_sexed2', "not flags['l.ab_aeed'] and talk_var['ae_lisa_number']==2"),
-    'l.ab_aeed3' : TalkTheme('lisa', _("Что нового мама с Эриком тебе рассказали?"), 'lisa_about_ae_sexed3', "not flags['l.ab_aeed'] and talk_var['ae_lisa_number']==3"),
-    'l.ab_aeed4' : TalkTheme('lisa', _("Что нового узнала на уроке у мамы и Эрика?"), 'lisa_about_ae_sexed4', "not flags['l.ab_aeed'] and talk_var['ae_lisa_number']==4"),
-    'l.stopkiss' : TalkTheme('lisa', _("{i}урок поцелуев{/i}"), 'lisa_stop_kiss', "all([lisa.plan_name=='read', dcv['lisa_mentor'].done, poss['seduction'].stn>7, flags['lisa.stopkiss']==1])"),
-    'kt.ft2'     : TalkTheme('kira', _("Так когда будем снова фотографироваться, тётя Кира?"), 'kira_about_photo2', "all([dcv['kiratalk'].stage==7, kira.plan_name=='sun', not expected_photo, dcv['kira.nextphoto'].enabled, dcv['kira.nextphoto'].stage==1, dcv['kira.nextphoto'].done, dcv['kiratalk'].done])"),
-    'eric.ling0' : TalkTheme('alice', _("Я слышал, Эрик тебе новое бельё собирается купить?"), 'alice_about_lingerie0', "dcv['eric.lingerie'].stage==1"),
-    'eric.ling1' : TalkTheme('alice', _("Покажешь боди, которое тебе Эрик купит?"), 'alice_showing_lingerie1', "all([dcv['eric.lingerie'].stage==2, current_room==house[1]])"),
-    'eric.kira0' : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "all([wcv['catch.Kira'].enabled, not wcv['catch.Kira'].done, wcv['catch.Kira'].stage<1, GetRelMax('eric')[0]>0])"),
-    'eric.kira1' : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "all([wcv['catch.Kira'].stage==1, talk_var['fight_for_Kira']>0])"),
+    'l.ab_aeed0' : TalkTheme('lisa', _("Рассказывай, что делали?"), 'lisa_about_ae_sexed0', "not flags.l_ab_sexed and flags.lisa_sexed==0"),
+    'l.ab_aeed1' : TalkTheme('lisa', _("Ну так и чему же тебя учили?"), 'lisa_about_ae_sexed1', "not flags.l_ab_sexed and flags.lisa_sexed==1"),
+    'l.ab_aeed2' : TalkTheme('lisa', _("Что новенького было на уроке?"), 'lisa_about_ae_sexed2', "not flags.l_ab_sexed and flags.lisa_sexed==2"),
+    'l.ab_aeed3' : TalkTheme('lisa', _("Что нового мама с Эриком тебе рассказали?"), 'lisa_about_ae_sexed3', "not flags.l_ab_sexed and flags.lisa_sexed==3"),
+    'l.ab_aeed4' : TalkTheme('lisa', _("Что нового узнала на уроке у мамы и Эрика?"), 'lisa_about_ae_sexed4', "not flags.l_ab_sexed and flags.lisa_sexed==4"),
+    'l.stopkiss' : TalkTheme('lisa', _("{i}урок поцелуев{/i}"), 'lisa_stop_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].stn>7, flags.stopkiss==1])"),
     }
 
 
@@ -187,8 +202,8 @@ define gifts = {
     'lisa'  : [
         Gift('bikini', _("А у меня есть то, о чём ты мечтала..."), 'gift_swimsuit'),
         Gift('bathrobe', _("У меня для тебя подарок {i}(Халат){/i}"), 'gift_bathrobe', -1, "lisa.plan_name in ['sun', 'read', 'phone']"),
-        Gift(['ritter-m', 'ritter-b'], _("{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], not dcv['lisa_sweets'].done])"),
-        Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], dcv['lisa_sweets'].done])"),
+        Gift(['ritter-m', 'ritter-b'], _("{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], not lisa.dcv.sweets.done])"),
+        Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], lisa.dcv.sweets.done])"),
         ],
     'alice' : [
         Gift('cigarettes', _("У меня есть кое-что запрещённое..."), 'gift_cigarettes', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
@@ -200,8 +215,8 @@ define gifts = {
         Gift('erobook_5', _("У меня снова для тебя книжка..."), 'gift_book', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
         Gift('pajamas', _("У меня для тебя подарок {i}(Пижама){/i}"), 'gift_pajamas', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
         Gift("b.lingerie", _("У меня есть кое-что, о чём мы беседовали..."), "gift_black_lingerie", -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
-        Gift(['ferrero-m', 'ferrero-b'], _("{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], not dcv['alice_sweets'].done])"),
-        Gift(['ferrero-m', 'ferrero-b'], _("Прикупил для тебя немного сладенького!"), 'alice_gift_sweets', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], dcv['alice_sweets'].done])"),
+        Gift(['ferrero-m', 'ferrero-b'], _("{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], not alice.dcv.sweets.done])"),
+        Gift(['ferrero-m', 'ferrero-b'], _("Прикупил для тебя немного сладенького!"), 'alice_gift_sweets', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], alice.dcv.sweets.done])"),
         ],
     'ann'   : [
         # Gift('cosmatic1', _("У меня для тебя подарок {i}(Косметика){/i}"), 'gift_cosmatics'),

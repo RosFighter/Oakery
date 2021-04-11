@@ -2,7 +2,7 @@
 
 ###############################################################################
 
-init: # трансформации для кнопок
+init: # трансформации
 
     transform desaturate:
         matrixcolor SaturationMatrix(0.0)
@@ -155,6 +155,12 @@ init: # трансформации для кнопок
             matrixcolor SaturationMatrix(1.0)
             zoom 1.0
 
+    transform alpha_dissolve:
+        alpha 0.0
+        linear 0.5 alpha 1.0
+        on hide:
+            linear 0.5 alpha 0
+
 
 ################################################################################
 
@@ -192,7 +198,7 @@ screen PowerBack():
     key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
     if not _in_replay:
-        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
 screen PowerBack2():
@@ -220,7 +226,7 @@ screen PowerBack2():
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     if not _in_replay:
-        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
 screen PowerBack3():
@@ -248,7 +254,7 @@ screen PowerBack3():
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     if not _in_replay:
-        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
 screen PowerButton():
@@ -258,7 +264,7 @@ screen PowerButton():
     key 'K_ESCAPE' action [Hide('Search'), Jump('Waiting')]
     key 'mouseup_3' action [Hide('Search'), Jump('Waiting')]
     if not _in_replay:
-        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
 ################################################################################
@@ -271,7 +277,7 @@ screen LaptopScreen():
     use notify_check
 
     $ bookmarks = 2
-    if dcv['buyfood'].stage == 1:
+    if dcv.buyfood.stage == 1:
         $ bookmarks += 1
     if poss['cams'].stn == 3 and mgg.money >= 100:
         $ bookmarks += 1
@@ -310,7 +316,7 @@ screen LaptopScreen():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action Jump('courses_start') at book_marks
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if dcv['buyfood'].stage == 1:
+                    if dcv.buyfood.stage == 1:
                         frame xysize(370, 295) background None:
                             if mgg.money < 50:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
@@ -354,7 +360,7 @@ screen LaptopDouble():
     use notify_check
 
     $ bookmarks = 2
-    if dcv['buyfood'].stage == 1:
+    if dcv.buyfood.stage == 1:
         $ bookmarks += 1
     if poss['cams'].stn == 3 and mgg.money >= 100:
         $ bookmarks += 1
@@ -396,7 +402,7 @@ screen LaptopDouble():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action NullAction()
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if dcv['buyfood'].stage == 1:
+                    if dcv.buyfood.stage == 1:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action NullAction()
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
@@ -907,7 +913,7 @@ screen room_navigation():
     $ renpy.stop_predict('extra/**.webp')
 
     if not _in_replay:
-        key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+        key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
     if _preferences.language is None:
         key 'l' action Language('english')
@@ -1038,8 +1044,8 @@ screen room_navigation():
         align(.99, .99)  # правый нижний угол
         # располагаем клавиши действий
 
-        for id in ListButton:  # добавим последовательно все доступные действия (ключи берем из списка кнопок)
-            $ act = AvailableActions[id] # а сами кнопки из словаря
+        for id in AvailableActions:
+            $ act = AvailableActions[id]
             if act.active and act.enabled:
                 button xysize (126, 190) action [Hide('wait_navigation'), Jump(act.label)]: # Поговорить
                     vbox xsize 126 spacing 0:
@@ -1103,7 +1109,7 @@ screen room_navigation():
                 at small_menu_mobile
             else:
                 at small_menu
-        if ('extrapak' in globals() and extrapak) or renpy.loadable('extra/extra.webp'):
+        if renpy.loadable('extra/extra.webp'):
             imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')]:
                 if renpy.variant('small'):
                     at small_menu_mobile
@@ -1420,7 +1426,7 @@ screen menu_userinfo():
             vbar value YScrollValue('vp') style 'info_vscroll'
 
         if CurChar == 'max': ## временное определение на стадии вывода изображения
-            add 'Max info '+clothes[mgg].casual.GetCur().info size (550, 900) xpos -50 ypos 10
+            add 'Max info '+mgg.clothes.casual.GetCur().info size (550, 900) xpos -50 ypos 10
 
         else:
             frame xysize(550, 900) background None:
@@ -1550,11 +1556,11 @@ screen menu_userinfo():
         textbutton _("Задать одежду персонажа") xalign 1.0:
             text_size gui.text_size
             if CurChar == 'max':
-                action [SetVariable('cloth', clothes[mgg]), Hide('menu_userinfo'), Show('ClothesSelect')]
-                sensitive clothes[mgg].Opens()
-            elif chars[CurChar] in clothes:
-                action [SetVariable('cloth', clothes[chars[CurChar]]), Hide('menu_userinfo'), Show('ClothesSelect')]
-                sensitive clothes[chars[CurChar]].Opens()
+                action [SetVariable('cloth', mgg.clothes), Hide('menu_userinfo'), Show('ClothesSelect')]
+                sensitive mgg.clothes.Opens()
+            elif chars[CurChar].clothes.GetList():      #chars[CurChar] in clothes:
+                action [SetVariable('cloth', chars[CurChar].clothes), Hide('menu_userinfo'), Show('ClothesSelect')]
+                sensitive chars[CurChar].clothes.Opens()
             else:
                 action NullAction()
                 sensitive False
@@ -1739,7 +1745,7 @@ screen cam_show():
         key 'K_LEFT' action [Function(prev_cam), Jump('Waiting')]
         key 'K_RIGHT' action [Function(next_cam), Jump('Waiting')]
     if not _in_replay:
-        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), NewSaveName(), QuickSave()]
+        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
 ################################################################################
@@ -1754,8 +1760,25 @@ screen watermark():
                 action OpenURL('https://www.patreon.com/aleksey90artimages')
                 at main_logo2
 
+
 screen notify_check():
     timer .3 repeat True action Function(notify_queue)
     # $ tt = GetTooltip()
     # if tt:
     #     text "[tt!t]" pos renpy.get_mouse_pos()
+
+################################################################################
+
+screen countdown():
+    zorder 100
+
+    timer .1 repeat True:
+        action If(ctd.time_left > 0, true=SetVariable('ctd.time_left', ctd.time_left - .1), false=[Hide('countdown'), Jump(ctd.timer_jump)])
+    bar value ctd.time_left*10 range ctd.timer_range*10:
+        if renpy.variant("small"):
+            ypos 1000  #905, 1000
+            xalign 0.5
+        else:
+            pos 645, 1020
+        xysize 500, 22
+        at alpha_dissolve

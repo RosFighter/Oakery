@@ -46,7 +46,7 @@ label cam0_kira_shower:
 label cam1_kira_shower:
     if tm[-2:] < '20' and kira.dress_inf != '00a':
         # назначим или определим одёжку
-        if peeping['kira_shower'] > 1 or 'kira_bath_mirror' in cam_flag:
+        if kira.daily.shower > 1 or 'kira_bath_mirror' in cam_flag:
             $ __r1 = {'04a':'b', '02a':'c', '00':'d', '00a':'d'}[kira.dress_inf]
         else:
             $ __r1 = renpy.random.choice(['b', 'c', 'd'])
@@ -371,11 +371,11 @@ label cam0_kira_night_tv:
         show FG cam-shum-act at laptop_screen
         if 'kira_tv' not in cam_flag:
             $ cam_flag.append('kira_tv')
-            if talk_var['kira.porn']:
+            if kira.flags.porno:
                 Max_02 "Похоже, тётя Кира смотрит какой-то сериал или кино... Может, стоит составить ей компанию?"
             else:
                 Max_01 "Похоже, тётя Кира смотрит какой-то сериал или кино... Ну а мне приятней смотреть на тётю..."
-    elif talk_var['kira.porn']:
+    elif kira.flags.porno:
         if 'kira_tv1' not in cam_flag:
             $ cam_flag.append('kira_tv1')
             $ __pose = cam_poses_manager(kira, ['01', '02', '03'])
@@ -439,7 +439,7 @@ label cam0_kira_bath_with_eric:
     else:
         show Eric cams bath-kira lick01 at laptop_screen
     show FG cam-shum-act at laptop_screen
-    if talk_var['fight_for_Kira'] > 2:
+    if kira.dcv.battle.stage > 2:
         Max_08 "Бедной тёте Кире приходится ублажать Эрика, чтобы никто о нас с ней не узнал..."   #если Макс не сдавал Киру
     else:
         Max_01 "Повезло Эрику... Тётя Кира умеет ублажать мужчин и ещё как!"   #если Макс сдал Киру
@@ -449,7 +449,7 @@ label cam0_kira_bath_with_eric:
         show Eric cams bath-kira bj01 at laptop_screen
     else:
         show Eric cams bath-kira bj02 at laptop_screen
-    if talk_var['fight_for_Kira'] > 2:
+    if kira.dcv.battle.stage > 2:
         Max_10 "Благо у Эрика такой член, с которым Кире не составит труда справиться! Хотя, его выдержке можно позавидовать..."   #если Макс не сдавал Киру
     else:
         Max_07 "Со стороны кажется, что для Киры это самое обыденное дело! Она так легко управляется с членом Эрика, хотя это и не сложно, после моего-то..."   #если Макс сдал Киру
@@ -459,7 +459,7 @@ label cam0_kira_bath_with_eric:
         show Eric cams bath-kira cum01 at laptop_screen
     else:
         show Eric cams bath-kira cum02 at laptop_screen
-    if talk_var['fight_for_Kira'] > 2:
+    if kira.dcv.battle.stage > 2:
         Max_09 "Всё! На этот раз Кира отмучалась... Но от Эрика надо скорее избавляться."   #если Макс не сдавал Киру
     else:
         Max_02 "Вот и всё! С Кирой долго не продержишься... Особенно если она нацелена доставить своим языком максимум удовольствия."   #если Макс сдал Киру

@@ -15,30 +15,31 @@ label kira_sun:
 
 label kira_bath:
     scene location house bathroom door-evening
-    if peeping['kira_bath'] != 0:
+    if kira.daily.bath != 0:
         return
 
-    $ peeping['kira_bath'] = 1
+    $ renpy.dynamic('ch_catch', 'catch', 'r1')
+    $ kira.daily.bath = 1
     menu:
         Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!"
-        "{i}постучаться{/i}" if talk_var['kira.bath.mass']==0:
+        "{i}постучаться{/i}" if not kira.flags.m_foot:
             Kira "{b}Кира:{/b} Кто там? Я принимаю ванну и абсолютно голая... Так что не входите, дайте отдохнуть!"
-            if flags['ladder'] < 1:
+            if flags.ladder < 1:
                 Max_09 "Нужно найти способ как-то подглядеть за девчонками в ванной. Может, попробовать вечером со двора?!"   #если Макс ни разу не пытался подглядеть вечером за девчонками в ванной
-            elif flags['ladder'] < 2:
+            elif flags.ladder < 2:
                 Max_09 "Нужно найти способ как-то подглядеть за девчонками в ванной. Может, стоит осмотреться изнутри?!"    # если Макс подглядывал со двора, но сам не мылся
-            elif flags['ladder'] < 3:
+            elif flags.ladder < 3:
                 Max_09 "Нужно уже наконец купить стремянку, чтобы подглядывать за тем, что происходит в ванной..."   #если всё ещё не куплена стремянка, но она уже есть в магазине
             else:
                 Max_09 "В следующий раз лучше заглянуть со стремянки..."     # стремянка уже установлена
             jump .end
 
-        "{i}войти{/i}" if talk_var['kira.bath.mass'] > 0 and len(online_cources)>1 and online_cources[1].cources[0].less:
+        "{i}войти{/i}" if kira.flags.m_foot > 0 and len(online_cources)>1 and online_cources[1].cources[0].less:
             # уже состоялся массаж ног в ванной
-            if wcv['catch.Kira'].stage==1:
+            if wcv.catch_Kira.stage==1:
                 # Эрик спалил Макса с Кирой
 
-                if talk_var['fight_for_Kira'] == 2:
+                if kira.dcv.battle.stage == 2:
                     Max_09 "Пусть лучше тётя Кира отдохнёт, а вернее отмоется от Эрика... А то как-то не очень хочется что-то делать в ванне сразу после него!"
                 else:
                     Max_09 "Пусть лучше тётя Кира отдохнёт и отмоется от Эрика... Можно было бы всё же зайти, но вдруг Эрик этого и ждёт. Лучше не рисковать!"
@@ -51,12 +52,13 @@ label kira_bath:
             scene BG char Max bathroom-window-evening-00
             $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
             Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-            $ flags['ladder'] = 3
-            $ items['ladder'].have = False
-            $ items['ladder'].InShop = False
+            $ flags.ladder = 3
+            $ items['ladder'].give()
+            # $ items['ladder'].have = False
+            # $ items['ladder'].InShop = False
             jump .ladder
 
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2 and talk_var['kira.bath.mass']==0:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2 and not kira.flags.m_foot:
             jump .ladder
 
         "{i}уйти{/i}":
@@ -73,7 +75,7 @@ label kira_bath:
         $ Skill('hide', 0.03)
 
         Max_02 "Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой..."
-        if _in_replay or all([len(online_cources)>1 and online_cources[1].cources[0].less, talk_var['kira.porn']>0, talk_var['lisa.footmass']>0]):
+        if _in_replay or all([len(online_cources)>1 and online_cources[1].cources[0].less, kira.flags.porno, lisa.flags.m_foot>0]):
             # совместный просмотр порно уже был, Макс делал девчонкам массаж ног
             show Kira bath-window 02
             Max_05 "Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально..."   #если был совместный просмотр порно с Кирой
@@ -83,19 +85,19 @@ label kira_bath:
             menu:
                 Max_08 "Что? Она зовёт меня к себе?! Да ладно! Как-то мне это не очень нравится..."
                 "{i}идти к Кире{/i}":
-                    $ talk_var['kira.bath.mass'] = 1
+                    $ kira.flags.m_foot = 1
                     jump .kira_mass_bath_first
 
         else:
-            $ __r1 = renpy.random.choice(['05', '06'])
-            $ renpy.show('Kira bath-window '+__r1)
+            $ r1 = renpy.random.choice(['05', '06'])
+            $ renpy.show('Kira bath-window '+r1)
             Max_04 "Да-а-а, у неё просто обалденная грудь! Сосочки прямо там, где надо... Ох, я бы с ней ванну попринимал! Надеюсь, мне это приснится. Пора идти спать..."
             jump .end_sleep
 
     label .kira_mass_bath_first:
         scene BG bath-talk-00
-        $ __r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Kira bath-talk '+__r1)
+        $ r1 = renpy.random.choice(['01', '02'])
+        $ renpy.show('Kira bath-talk '+r1)
         Kira_04 "А мне было интересно, осмелишься ли ты зайти... Значит, Макс, любишь подглядывать?"
         Max_07 "Ну, немного..."
         Kira_05 "Немного? Это сколько? Раз в неделю? Или раз в день?"
@@ -106,7 +108,7 @@ label kira_bath:
         Max_08 "В каком это смысле?"
 
         scene BG bath-talk-02
-        $ renpy.show('Kira bath-talk 2-'+__r1)
+        $ renpy.show('Kira bath-talk 2-'+r1)
         show Max bath-talk 2-01
         Kira_01 "Я слышала, ты неплохо так массируешь ножки то одной сестре, то другой..."
         Max_01 "Ну да, бывает такое."
@@ -125,21 +127,21 @@ label kira_bath:
             Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю ночь просидеть, но не пора ли сделать своей любимой тёте приятно?"
             "{i}начать массаж{/i}":
                 pass
-        $ __r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Kira bath-mass 1-'+__r1)
+        $ r1 = renpy.random.choice(['01', '02'])
+        $ renpy.show('Kira bath-mass 1-'+r1)
         Max_04 "{i}( Я и мечтать о таком не мог! Что буду сидеть с совершенно голой тётей в одной ванне и массировать её ножки... А как изящно она прикрывает ими свою киску! ){/i}"
         Kira_04 "Да, Макс, это очень приятно! Ты молодец... Кто тебя научил этому?"
         Max_01 "Курсы на компьютере... Ну и на Алисе с Лизой тренировался."
         Kira_05 "Думаю, тебе нужно это развивать... Уверена, твои нежные, но сильные пальчики могут принести невероятное наслаждение!"
 
         scene BG char Kira bath-mass-02
-        $ renpy.show('Kira bath-mass 2-'+__r1)
+        $ renpy.show('Kira bath-mass 2-'+r1)
         Max_07 "И как мне это развивать?"
         Kira_01 "У меня здесь есть одна бывшая одноклассница и, как я помню, она с мужем как раз занимается массажем и йогой. Я попробую с ней встретиться и договориться, чтобы они тебя поднатаскали в этом... Если, конечно, хочешь?"
         Max_03 "Конечно, да! Я сейчас понял, насколько это классно, делать массаж голой женщине!"
         Kira_09 "Ты только не останавливайся, от твоих прикосновений мне становится так жарко..."
 
-        $ renpy.show('Kira bath-mass 3-'+__r1)
+        $ renpy.show('Kira bath-mass 3-'+r1)
         Max_07 "Ухх, тётя Кира, ты..."
         Kira_07 "Ой! А во что это там такое твёрдое и большое упёрлась моя нога?"
         Max_02 "А то ты не знаешь?!"
@@ -149,8 +151,8 @@ label kira_bath:
                 pass
 
         scene BG bath-talk-00
-        $ __r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Kira bath-talk '+__r1)
+        $ r1 = renpy.random.choice(['01', '02'])
+        $ renpy.show('Kira bath-talk '+r1)
         Max_04 "Ладно, тётя Кира. Я тогда пошёл. Спокойной ночи. Было очень классно побыть с тобой!"
         Kira_04 "Приятных снов, Макс. И да, пожалуй, в следующий раз, ты можешь просто заходить без стука. Если ещё не будешь спать..."
         Max_05 "С радостью."
@@ -169,25 +171,25 @@ label kira_bath:
             $ added_mem_var('kira.bath.mass')
 
         # рассчитываем шанс на спаливание Киры и Макса Эриком:
-        if _in_replay or not wcv['catch.Kira'].enabled:
-            $ __ch_catch = 0
-        elif flags['eric.jerk']:  # Эрик дрочит на Алису
-            $ __ch_catch = 0
-        elif all([wcv['catch.Kira'].enabled, not wcv['catch.Kira'].done, wcv['catch.Kira'].stage<1]):
-            $ __ch_catch = 1000 - 250 * wcv['catch.Kira'].lost
+        if _in_replay or not wcv.catch_Kira.enabled:
+            $ ch_catch = 0
+        elif flags.eric_jerk:  # Эрик дрочит на Алису
+            $ ch_catch = 0
+        elif all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1]):
+            $ ch_catch = 1000 - 250 * wcv.catch_Kira.lost
         else:
-            $ __ch_catch = 1000
+            $ ch_catch = 1000
 
         scene BG bath-talk-00
-        $ __r1 = renpy.random.choice(['01', '02', '03'])
-        $ renpy.show('Kira bath-talk '+__r1)
+        $ r1 = renpy.random.choice(['01', '02', '03'])
+        $ renpy.show('Kira bath-talk '+r1)
         Kira_01 "А, Макс, это ты! Всё полуночничаешь... А я вот хотела немного поваляться в ванне, перед тем, как идти спать. Присоединишься?"
         menu:
             Max_02 "Конечно, тётя Кира! Тебя я и дожидался."
             "{i}снять шорты{/i}":
                 pass
         scene BG bath-talk-02
-        $ renpy.show('Kira bath-talk 2-'+__r1)
+        $ renpy.show('Kira bath-talk 2-'+r1)
         show Max bath-talk 2-02
         menu:
             Kira_02 "О да, я вижу, как ты меня ждал! Залезай скорее..."
@@ -201,14 +203,15 @@ label kira_bath:
             Kira_02 "Да, я такая... Понимаю, ты был бы не прочь так всю ночь просидеть, но не пора ли сделать своей любимой тёте приятно?"
             "{i}начать массаж{/i}":
                 pass
-        $ __r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Kira bath-mass 1-'+__r1)
+        $ kira.flags.m_foot += 1
+        $ r1 = renpy.random.choice(['01', '02'])
+        $ renpy.show('Kira bath-mass 1-'+r1)
         Max_04 "{i}( А ведь мечты сбываются, если очень захотеть! Сидим с тётей голые в ванне и я массирую её гладкие и стройные ножки. А как изящно она прикрывает ими свою киску! ){/i}"
         Kira_04 "Как хорошо... Это то, что мне так сейчас нужно! Хочется, чтобы это продолжалось как можно дольше..."
         scene BG char Kira bath-mass-02
-        $ renpy.show('Kira bath-mass 2-'+__r1)
+        $ renpy.show('Kira bath-mass 2-'+r1)
         Max_03 "{i}( Она так прекрасна... а мокренькая так вообще огонь! Её шикарная грудь так классно вздымается, когда она начинает глубоко дышать от моего массажа... ){/i}"
-        if talk_var['teachkiss']<2:
+        if lisa.dcv.seduce.stage<2:
             Kira_07 "Ты только не останавливайся, от твоих прикосновений мне становится так жарко! Напряжения, как не бывало..."
             menu:
                 Max_01 "Это потому что я уже скоро закончу."
@@ -224,7 +227,7 @@ label kira_bath:
             $ _ch1 = GetChance(mgg.social, 2, 900)
             menu:
                 Kira_07 "Ты только не останавливайся, от твоих прикосновений мне становится так жарко! Напряжения, как не бывало..."
-                "А моё напряжение только растёт, тётя Кира! Может поможешь? \n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if talk_var['kira.tv.touch']<2:
+                "А моё напряжение только растёт, тётя Кира! Может поможешь? \n{color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if kira.flags.m_breast<2:
                     if not RandomChance(_ch1.ch) and not _in_replay:
                         $ Skill('social', 0.2)
                         Kira_09 "Макс, уже так поздно... и меня настолько расслабила ванна и твой массаж, что я засыпаю. Так что давай закругляться."
@@ -235,12 +238,12 @@ label kira_bath:
                         jump .end_sleep
                     else:
                         $ Skill('social', 0.1)
-                "А моё напряжение только растёт, тётя Кира! Может поможешь?" if talk_var['kira.tv.touch']>1:
+                "А моё напряжение только растёт, тётя Кира! Может поможешь?" if kira.flags.m_breast>1:
                     pass
-            $ renpy.show('Kira bath-mass 3-'+__r1)
+            $ renpy.show('Kira bath-mass 3-'+r1)
             Kira_05 "О, ты прав, Макс! Думаю, очень непросто высидеть со мной в одной ванне и ограничиться лишь массажем..."
             Max_05 "Ухх... от твоих прикосновений мне становится уже немного лучше!"
-            if flags['promise.cuni.kira']:
+            if kira.flags.promise:
                 jump .promise_cuni
             scene BG bath-talk-03
             show Kira bath-mass fj1-01
@@ -248,8 +251,8 @@ label kira_bath:
             Max_03 "{i}( Ох... Определённо смогут! Не зря я так хорошо размял её пальчики, они начинают такое вытворять... Ого! Тётя так возбудилась, что раздвинула ножки и начала ласкать свою киску... ){/i}"
             Kira_07 "Ну как, Макс? Тебе нравится то, что твоя тётя умеет вытворять ногами?"
             Max_20 "Да-а-а... Это очень приятно! Только не прекращай, тётя Кира!"
-            $ __r1 = renpy.random.randint(1,2)
-            if __r1== 1:
+            $ r1 = renpy.random.randint(1,2)
+            if r1== 1:
                 show Kira bath-mass fj1-02
             else:
                 scene BG bath-cun-01
@@ -257,7 +260,7 @@ label kira_bath:
             $ _ch1 = GetChance(mgg.sex+10, 4, 900)
             menu:
                 Kira_09 "Ох, Макс, как же меня заводит твой огромный член! Ты так жадно смотришь, как я ласкаю себя, свою грудь... Ах, моя киска вся горит, не отводи от неё глаз..."
-                "{i}подтянуть её к себе и ласкать пальцами{/i}" if flags['kira.tv.bj'] or (_in_replay and memes>1):
+                "{i}подтянуть её к себе и ласкать пальцами{/i}" if kira.stat.blowjob or (_in_replay and memes>1):
                     jump .cuni_bj
                 "{i}пытаться не кончить{/i} \n{color=[_ch1.col]}(Сексуальный опыт. Шанс: [_ch1.vis]){/color}" if not _in_replay or (_in_replay and memes<2):
                     pass
@@ -281,7 +284,7 @@ label kira_bath:
             Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
             Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
             Kira_04 "Приятных снов, Макс."
-            $ flags['kira.bath.fj'] = True
+            $ kira.stat.footjob += 1
             if not _in_replay:
                 $ SetCamsGrow(house[3], 200)
                 $ persistent.memories['kira_bath.mass_bath'] = 1
@@ -300,7 +303,7 @@ label kira_bath:
             "{i}поработать языком{/i}":
                 show Kira bath-mass cun-02
                 Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
-            "{i}проникнуть в неё пальцами{/i}" if flags['hj_in_pool'] > 1:   #открывается, если была дрочка в бассене
+            "{i}проникнуть в неё пальцами{/i}" if kira.stat.handjob:   #открывается, если была дрочка в бассене
                 show Kira bath-mass cun-04
                 Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
         $ rez = renpy.display_menu([(_("{i}работать языком быстрее{/i}"), 0)])
@@ -308,8 +311,8 @@ label kira_bath:
         show Kira bath-mass cun-03
 
         # переход на спаливание (куни)
-        if RandomChance(__ch_catch):
-            $ __catch = 'cun'
+        if RandomChance(ch_catch):
+            $ catch = 'cun'
             jump .caught
 
         Kira_11 "Макс... О да... продолжай вот так, я уже не могу сдерживаться... Сожми мою попку покрепче! Уже так близко... Да! Я кончаю... Ахх..."
@@ -326,7 +329,7 @@ label kira_bath:
 
         if not _in_replay:
             $ SetCamsGrow(house[3], 200)
-        $ flags['promise.cuni.kira'] = False
+        $ kira.flags.promise = False
         jump .end_sleep
 
     label .cuni_bj:
@@ -338,17 +341,32 @@ label kira_bath:
             Kira_05 "Оу... Макс, не выдержал и сам захотел поласкать мою киску? У тебя такие нежные пальчики... Да... Поиграй с ней!"
             "{i}поработать языком{/i}":
                 show Kira bath-mass cun-02
-                Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
-            "{i}проникнуть в неё пальцами{/i}" if flags['hj_in_pool'] > 1:   #открывается, если была дрочка в бассене
+                if kira.dcv.photo.stage>1:
+                    # Была вторая фотосессия
+                    Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ммм... Но я бы не отказалась от кое-чего большого и у тебя это есть... Что скажешь?" nointeract
+                else:
+                    Kira_09 "Ухх... Как же ловко твой горячий язычок скользит там внизу... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
+            "{i}проникнуть в неё пальцами{/i}" if kira.stat.handjob:   #открывается, если была дрочка в бассене
                 show Kira bath-mass cun-04
-                Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
-        $ rez = renpy.display_menu([(_("{i}работать языком быстрее{/i}"), 0)])
+                if kira.dcv.photo.stage>1:
+                    Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ммм... Не хочешь проникнуть в свою тётю чем-нибудь ещё?" nointeract
+                else:
+                    Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
+        if kira.dcv.photo.stage > 1:
+            #если была 2-ая фотосессия с Кирой, то к варианту "работать языком быстрее" добавляются ещё 2 варианта
+            $ rez = renpy.display_menu([(_("{i}работать языком быстрее{/i}"), 0), (_("Садись на меня, тётя Кира!"), 1), (_("Давай-ка сюда свою шикарную попку!"), 2)])
+            if rez == 1:
+                jump .horsewoman
+            elif rez == 2:
+                jump .dogstyle
+        else:
+            $ rez = renpy.display_menu([(_("{i}работать языком быстрее{/i}"), 0)])
         scene BG bath-cun-02
         show Kira bath-mass cun-03
 
         # переход на спаливание (куни)
-        if RandomChance(__ch_catch * .75):  # во время куни шанс чуть меньше, чтобы была возможность сработать на минете
-            $ __catch = 'cun'
+        if RandomChance(ch_catch * .75):  # во время куни шанс чуть меньше, чтобы была возможность сработать на минете
+            $ catch = 'cun'
             jump .caught
 
         Kira_11 "Макс... О да... продолжай вот так, я уже не могу сдерживаться... Сожми мою попку покрепче! Уже так близко... Да! Я кончаю... Ахх..."
@@ -359,8 +377,8 @@ label kira_bath:
                 show Kira bath-mass hj-01
 
         # переход на спаливание (минет)
-        if RandomChance(__ch_catch):
-            $ __catch = 'hj'
+        if RandomChance(ch_catch):
+            $ catch = 'hj'
             jump .caught
 
         Kira_02 "О, Макс... Он такой твёрдый и горячий... Я чувствую, как сильно ты хочешь проникнуть им поглубже мне в рот!"
@@ -435,7 +453,7 @@ label kira_bath:
     label .caught:
         #catch-bath-00 + (catch-bath-00-max&kira-cun или catch-bath-00-max&kira-hj) + catch-bath-00-eric-01
         scene BG char Eric catch-bath-00
-        $ renpy.show('Kira catch bath '+__catch)
+        $ renpy.show('Kira catch bath '+catch)
         show Eric catch bath 00
 
         Eric_12 "Ох нифига себе, Макс!!! Это я удачно зашёл..."
@@ -464,7 +482,7 @@ label kira_bath:
         #bath-mass-02 + catch-bath-01-max-kira-eric-03
         scene BG char Kira bath-mass-02
         show Eric catch bath 03
-        if GetRelMax('eric')[0]>0 and talk_var['fight_for_Kira'] == 1:
+        if GetRelMax('eric')[0]>0 and kira.dcv.battle.stage == 1:
             #при дружбе с Эриком (если сдал Киру до этого)
             Max_08 "Ты правда собираешься по ночам отсасывать Эрику?!"
             Kira_13 "Похоже, придётся... Иначе, ты отправишься прямиком в летний лагерь, а я... Меня, скорее всего, тоже выгонят и боюсь отношения с твоей мамой у меня будут испорчены навсегда... А я этого очень не хочу..."
@@ -472,7 +490,7 @@ label kira_bath:
             Kira_14 "Да они и так довольно мягкие, Макс. Может быть даже так, что от твоих попыток смягчить эти условия, ты сделаешь только обратное. Я буду делать то, что могу... и умею... Хотя бы ради тебя, потому что и правда, это ведь я тебя соблазнила. За всё приходится платить..."
             Max_07 "Я всё равно постараюсь тебе как-то помочь!"
             Kira_10 "Только осторожно, Макс! Потому что пока, всё не так уж и плохо..."
-            $ talk_var['fight_for_Kira'] = 2
+            $ kira.dcv.battle.stage = 2
         else:
             #при вражде с Эриком (а так же, если при дружбе Макс не сдал Киру)
             Max_08 "Тётя Кира, ты же не собираешься по ночам отсасывать Эрику, правда?!"
@@ -481,12 +499,183 @@ label kira_bath:
             Kira_14 "Ну, я буду делать то, что могу... и умею... Хотя бы ради тебя, потому что и правда, это ведь я тебя соблазнила. За всё приходится платить..."
             Max_11 "Мне это всё не нравится..."
             Kira_13 "Тогда, только ты сможешь с ним договориться о чём-то другом. Ну а мне придётся согласиться на это... Так что, вся надежда на тебя, Макс..."
-            $ talk_var['fight_for_Kira'] = 3
+            $ kira.dcv.battle.stage = 3
         menu:
             Max_10 "Ладно, я понял..."
             "{i}отправиться спать{/i}":
-                $ Eric_caught_Kira()
-                $ wcv['catch.Kira'].stage = 1
+                $ wcv.catch_Kira.set_lost(0)
+                $ wcv.catch_Kira.stage = 1
+                jump .end_sleep
+
+    label .horsewoman:
+        $ renpy.dynamic('ch3', 'ch2')
+        $ ch3 = GetChance(mgg.sex+10, 2, 900)
+        $ ch2 = GetChance(mgg.sex, 33, 900)
+
+        #bath-sex-03 + bath-max&kira-sex01-01
+        scene BG char Kira bath-sex-03
+        show Kira bath-sex 01-01
+        menu:
+            Kira_09 "Ах, Макс... Д-а-а... Вот так... Хватит уже дразнить мою киску... Дай мне уже сесть на него! Какой он твёрдый... Ммм..."
+            "{i}Наслаждаться{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}":
+                pass
+        if RandomChance(ch3.ch) or _in_replay:
+            #(Удалось сдержаться!)
+            $ Skill('sex', 0.2)
+            #bath-sex-04 + bath-max&kira-sex01-02a или bath-sex-05 + bath-max&kira-sex01-02b
+            if renpy.random.randint(0, 1):
+                scene BG char Kira bath-sex-04
+                show Kira bath-sex 01-02a
+            else:
+                scene BG char Kira bath-sex-05
+                show Kira bath-sex 01-02b
+            Kira_11 "Охх... Да... Обожаю, когда можно попрыгать на чём-то весьма ощутимом! Д-а-а... Только не кончи раньше меня... Ммм... Я уже скоро! Как хорошо..."
+            Max_20 "Ты обалденная, тётя Кира! Давай ещё быстрее..."
+            menu:
+                Kira_12 "О да! Я больше не могу, Макс... Ммм... Ох, как хорошо! Да, я кончаю... Ахх..."
+                "{i}кончить в неё{/i}":
+                    #bath-sex-03 + bath-max&kira-sex01-01 + bath-max&kira-sex01-cum01
+                    scene BG char Kira bath-sex-03
+                    show Kira bath-sex 01-01
+                    show FG Kira bath-sex 01-cum01
+                    Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+                    Max_05 "И мне тоже! Было очень классно!"
+                    jump .end_sex
+
+                "{i}кончить ей на ноги{/i}":
+                    #bath-fj-03 + bath-fj-03-max-01-kira-01
+                    scene BG char Kira bath-fj-03
+                    show Kira bath-mass fj3-01
+                    Kira_08 "Фух, Макс, ну мы и выдали с тобой..."
+                    Max_02 "Да, тётя Кира, это было что-то нереальное!"
+                    jump .end_sex
+
+                "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}":
+                    jump .cum_in_her_mouth
+
+        else:
+            # (Не удалось сдержаться!)
+            #bath-sex-03 + bath-max&kira-sex01-01 + bath-max&kira-sex01-cum01
+            scene BG char Kira bath-sex-03
+            show Kira bath-sex 01-01
+            show FG Kira bath-sex 01-cum01
+            Kira_08 "Ого! Кто-то у нас тут слишком перевозбудился... А я ведь только начала..."
+            Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
+            $ Skill('sex', 0.1)
+            Kira_05 "Да, Макс, такая вот у тебя тётя! Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+            menu:
+                Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
+                "{i}уйти{/i}":
+                    jump .end_sleep
+
+    label .dogstyle:
+        $ renpy.dynamic('ch3', 'ch2')
+        $ ch3 = GetChance(mgg.sex+10, 2, 900)
+        $ ch2 = GetChance(mgg.sex, 33, 900)
+
+        #bath-sex-01 + bath-max&kira-sex02-01
+        scene BG char Kira bath-sex-01
+        show Kira bath-sex 02-01
+        menu:
+            Kira_09 "Вот, держи... Д-а-а... Вот так... Вводи его не спеша... Ох, Макс... Он с таким трудом входит в меня, даже когда я такая мокренькая... Ммм..."
+            "{i}трахать её{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}":
+                pass
+        if RandomChance(ch3.ch) or _in_replay:
+            # (Удалось сдержаться!)
+            #bath-cun-02 + bath-max&kira-sex02-02a или bath-sex-02 + bath-max&kira-sex02-02b
+            if renpy.random.randint(0, 1):
+                scene BG bath-cun-02
+                show Kira bath-sex 02-02a
+            else:
+                scene BG char Kira bath-sex-02
+                show Kira bath-sex 02-02b
+            Kira_11 "Охх... Да... Вот так, Макс! Трахай меня... Ещё... Ещё сильнее! Как же чертовски приятно чувствовать твой член! Д-а-а... Ещё... Я уже близко!"
+            Max_20 "Нравится, как я тебя трахаю, тётя Кира? Получай ещё..."
+            menu:
+                Kira_12 "О да! Трахай меня ещё быстрее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, вот так... Ммм... Да, я кончаю... Ахх..."
+                "{i}кончить в неё{/i}":
+                    #bath-sex-01 + bath-max&kira-sex02-01 + bath-max&kira-sex02-cum01
+                    scene BG char Kira bath-sex-01
+                    show Kira bath-sex 02-01
+                    show FG Kira bath-sex 02-cum01
+                    Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+                    Max_05 "И мне тоже! Было очень классно!"
+                    jump .end_sex
+
+                "{i}кончить ей на попку{/i}":
+                    #bath-cun-01 + bath-max&kira-sex02-03 + bath-max&kira-sex02-(cum02a/cum02b)
+                    scene BG bath-cun-01
+                    show Kira bath-sex 02-03
+                    if renpy.random.randint(0, 1):
+                        show FG Kira bath-sex 02-cum02a
+                    else:
+                        show FG Kira bath-sex 02-cum02b
+                    Kira_05 "Ого, всю попку со спиной мне забрызгал, Макс! Приятно развлеклись перед сном, да?"
+                    Max_02 "Да, тётя Кира, это было что-то нереальное!"
+                    jump .end_sex
+
+                "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}":
+                    jump .cum_in_her_mouth
+        else:
+            # (Не удалось сдержаться!)
+            #bath-sex-01 + bath-max&kira-sex02-01 + bath-max&kira-sex02-cum01
+            scene BG char Kira bath-sex-01
+            show Kira bath-sex 02-01
+            show FG Kira bath-sex 02-cum01
+            Kira_08 "Ого! Ты уже всё! Кто-то у нас тут слишком перевозбудился... Тебе ещё привыкать и привыкать к нашим шалостям..."
+            Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
+            $ Skill('sex', 0.1)
+            Kira_05 "Да, Макс, такая вот у тебя тётя! Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+            menu:
+                Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
+                "{i}уйти{/i}":
+                    jump .end_sleep
+
+    label .cum_in_her_mouth:
+        if RandomChance(ch2.ch) or _in_replay:
+            # (Удалось сдержаться!)
+            #bath-cun-01 + bath-bj-02-max-01-kira-01 или bath-bj-02 + bath-bj-02-max-02-kira-02
+            if renpy.random.randint(0, 1):
+                scene BG bath-cun-01
+                show Kira bath-mass bj-03
+            else:
+                scene BG char Kira bath-bj-02
+                show Kira bath-mass bj-04
+            menu:
+                Max_21 "Ухх... Какие же горячие и ненасытные у тебя губки... Ты просто бесподобно сосёшь, тётя Кира! Да..."
+                "{i}кончить{/i}":
+                    pass
+            #bath-bj-02 + bath-bj-03-max-02-kira-02
+            scene BG char Kira bath-bj-02
+            show Kira bath-mass bj-05
+            Max_06 "{i}( Да... Она принимает всю мою сперму не вынимая член изо рта! О боже... Кажется, я её люблю! Хотя, что я болтаю... Но как же это приятно! ){/i}"
+            #bath-cum-01 + bath-cum-02-max-01-kira-01
+            scene BG bath-cun-01
+            show Kira bath-mass cum-02
+            Kira_08 "Вот и твоё напряжение мы сняли! Какие мы сегодня молодцы... Мне очень это всё понравилось!"
+            Max_05 "И мне тоже! Было очень классно!"
+            $ Skill('sex', 0.2)
+            jump .end_sex
+        else:
+            # (Не удалось сдержаться!)
+            #bath-cun-02 + bath-hj-01-max-02-kira-02
+            scene BG bath-cun-02
+            show Kira bath-mass hj-02
+            Kira_08 "Ого! Кто-то у нас тут слишком перевозбудился... Я даже не успела ничего сделать..."
+            Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
+            #bath-cum-01 + bath-cum-01-max-01-kira-01
+            scene BG char Kira bath-cum-01
+            show Kira bath-mass cum-01            
+            Kira_05 "Да, Макс, такая вот у тебя тётя! Но мне всё равно очень понравилось!"
+            Max_05 "И мне тоже! Было очень классно!"
+            $ Skill('sex', 0.1)
+            jump .end_sex
+
+    label .end_sex:
+        Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
+        menu:
+            Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
+            "{i}уйти{/i}":
                 jump .end_sleep
 
     label .end_sleep:
@@ -502,10 +691,11 @@ label kira_bath:
 
 
 label kira_night_swim:
+    $ renpy.dynamic('r1')
     $ renpy.scene()
     $ renpy.show('Kira night-swim '+renpy.random.choice(['01', '02', '03']))
 
-    if flags['promise.cuni.kira'] or not flags['kira.tv.bj']:
+    if kira.flags.promise or not kira.stat.blowjob:
         Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
         Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?"
         Max_01 "Да, что-то не спится... К тебе можно?"
@@ -517,7 +707,7 @@ label kira_night_swim:
         Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
         menu:
             Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?"
-            "Да, что-то не спится... К тебе можно?" if flags['hj_in_pool'] < 1:  #только при 1-ой дрочке в бассейне, прописать переменную
+            "Да, что-то не спится... К тебе можно?" if kira.stat.handjob < 1:  #только при 1-ой дрочке в бассейне, прописать переменную
                 if not _in_replay:
                     $ SetCamsGrow(house[6], 200)
                 scene BG char Kira pool-night-01
@@ -566,9 +756,9 @@ label kira_night_swim:
                 Kira_05 "О, спасибо, Макс! Приятно, что ты решил немного поухаживать за мной. Спокойной ночи! И шорты не забудь..."
                 Max_01 "Не забуду... Спокойной ночи!"
 
-                $ flags['hj_in_pool'] = 1
+                $ kira.stat.handjob = 1
 
-            "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}" if flags['hj_in_pool'] > 0:  # периодическая дрочка в бассейне
+            "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}" if kira.stat.handjob > 0:  # периодическая дрочка в бассейне
                 if not _in_replay:
                     $ SetCamsGrow(house[6], 200)
                 scene BG char Kira pool-night-01
@@ -583,8 +773,8 @@ label kira_night_swim:
                 Max_04 "Приключения - это я люблю..."
                 Kira_05 "А я, как раз кстати, могу тебе их обеспечить..."
 
-                $ __r1 = renpy.random.choice([1, 2])
-                if __r1 < 2:
+                $ r1 = renpy.random.choice([1, 2])
+                if r1 < 2:
                     scene BG char Kira pool-night-05
                     show Kira pool-night 05
                 else:
@@ -605,15 +795,15 @@ label kira_night_swim:
                 Kira_04 "Тогда, я пожалуй поиграю с тобой своим язычком. Тебе же нравится, когда я ласкаю им твой член?"
                 Max_20 "О да, ты делаешь это великолепно! Продолжай тётя Кира..."
 
-                $ __r1 = renpy.random.choice(['08', '09'])
+                $ r1 = renpy.random.choice(['08', '09'])
                 $ renpy.scene()
-                $ renpy.show('Kira pool-night '+__r1)
+                $ renpy.show('Kira pool-night '+r1)
 
                 menu:
                     Kira_02 "Какой же ты испорченный мальчик! Всё время называешь меня тётей... Это так пикантно! Давай, кончи мне в рот, я этого очень хочу..."
                     "{i}кончить!{/i}":
                         #какой ракурс выпал до этого, к такому и добавляются следы
-                        $ renpy.show('other Kira pool-night '+__r1)
+                        $ renpy.show('other Kira pool-night '+r1)
 
                 Max_05 "Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
                 Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
@@ -627,8 +817,8 @@ label kira_night_swim:
                 Kira_05 "О, спасибо, Макс! Приятно, что ты решил немного поухаживать за мной. Утром буду тебя ждать... Спокойной ночи! И шорты не забудь..."
                 Max_01 "Не забуду... Спокойной ночи!"
 
-                $ flags['hj_in_pool'] = 2
-                $ flags['promise.cuni.kira'] = True
+                $ kira.stat.handjob += 1
+                $ kira.flags.promise = True
 
             "Я просто прогуливался перед сном. Пойду, уже поздно..." if not _in_replay:
                 Kira_05 "Я тоже уже собираюсь идти спать... Приятных тебе снов, Макс."
@@ -642,10 +832,10 @@ label kira_night_swim:
 label kira_sleep_night:
     scene BG char Kira lounge-night-01
     $ renpy.show('Kira sleep night '+pose3_4+kira.dress)
-    if peeping['kira_sleep'] != 0:
+    if kira.hourly.sleep != 0:
         return
 
-    $ peeping['kira_sleep'] = 1
+    $ kira.hourly.sleep = 1
     menu:
         Max_04 "Ага! Тётя Кира спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..."
         "{i}подойти поближе{/i}":
@@ -667,12 +857,12 @@ label kira_sleep_morning:
 
     scene BG char Kira lounge-morning-01
     $ renpy.show('Kira sleep morning '+pose3_4+kira.dress)
-    if peeping['kira_sleep'] != 0:
+    if kira.hourly.sleep != 0:
         return
 
-    $ peeping['kira_sleep'] = 1
+    $ kira.hourly.sleep = 1
 
-    if flags['strip.show']:
+    if kira.sleepnaked:
         $ txt = _("Тёте Кире очень идёт быть голой! Может быть, это потому что я привык видеть её голой? В такие округлости просто нельзя не влюбиться...")
     else:
         $ txt = _("Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша...")
@@ -695,23 +885,24 @@ label kira_sleep_morning:
 
 label kira_night_tv:
     $ renpy.block_rollback()
+    $ renpy.dynamic('lst', 'film', 'naked', 'suf', 'r1')
     scene BG tv-watch-01
-    $ __list = []
+    $ lst = []
     python:
         for i in range(1, 6):
             for j in range(3, 4):
-                __list.append('porn-0'+str(i)+' 0'+str(j))
+                lst.append('porn-0'+str(i)+' 0'+str(j))
         if not _in_replay:
             for j in range(1, 7):
-                __list.append('serial 0'+str(j))
-    $ __film = renpy.random.choice(__list)
-    $ __naked = False
-    $ renpy.show('tv '+__film, at_list=[tv_screen,])
+                lst.append('serial 0'+str(j))
+    $ film = renpy.random.choice(lst)
+    $ naked = False
+    $ renpy.show('tv '+film, at_list=[tv_screen,])
     $ renpy.show('Kira tv-watch 01'+kira.dress)
     if 'kira_night_tv.porn_view' not in persistent.memories:
         $ persistent.memories['kira_night_tv.porn_view'] = 0
 
-    if 'serial' in __film:
+    if 'serial' in film:
         # кира смотрит сериал
         menu:
             Max_01 "Тётя Кира ещё не легла спать... смотрит сериалы. Может, стоит задержаться?"
@@ -731,15 +922,15 @@ label kira_night_tv:
                     "Мне что-то не спится. Можно тоже телек с тобой посмотреть?":
                         menu:
                             Kira_04 "Да без проблем, садись рядом. Будем досматривать сериал или найдём какой-нибудь боевик, фантастику?"
-                            "Может быть, эротику?" if talk_var['kira.porn']==0:
+                            "Может быть, эротику?" if not kira.flags.porno:
                                 Kira_08 "Макс, а ты не слишком юн для этого? Я не думаю, что это хорошая идея."
                                 Max_09 "Ты прямо как моя мама! Я уже взрослый, а в этом доме не то что посмотреть эротику не выйдет, так даже просто произнести это нельзя."
                                 Kira_14 "Вообще, я думаю, что тебе уже пора спать. Три часа ночи... Давай в другой раз поговорим об этом..."
                                 Max_08 "Вот так всегда..."
                                 jump .end
-                            "Давай смотреть порно?!" if talk_var['kira.porn']>0:
+                            "Давай смотреть порно?!" if kira.flags.porno:
                                 jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
                         Kira_00 "Хорошо, Макс. Спокойной ночи! Я тоже уже скоро ложусь спать, только серию досмотрю..."
@@ -767,7 +958,7 @@ label kira_night_tv:
                                 Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
                                 Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телек с тобой посмотреть?"
                                 jump .porn
-                            "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
+                            "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
                                 $ renpy.show('Kira tv-closer '+pose3_4+kira.dress)
                                 jump .teachkiss
                             "Я просто хотел пожелать спокойной ночи!":
@@ -798,12 +989,12 @@ label kira_night_tv:
             $ renpy.show('Kira tv-closer m-'+pose3_4+kira.dress)
             show Max tv 00c
 
-            if talk_var['kira.porn']>0:
+            if kira.flags.porno:
                 menu:
                     Kira_07 "А? Макс? Как ты подкрался незаметно... Я думала, уже все спят давно... А я тут... отдыхаю, как видишь. Присоединишься?"
                     "Конечно, да!":
                         jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
                         jump .good_night
@@ -820,7 +1011,7 @@ label kira_night_tv:
                         Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
                         Max_03 "Конечно, тётя Кира. А мне можно тоже... посмотреть этот фильм?"
                         jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in talk_var['ask.teachkiss'] and len(online_cources)>1 and online_cources[1].cources[1].less:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
                         $ renpy.show('Kira tv-closer '+pose3_4+kira.dress)
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
@@ -830,7 +1021,7 @@ label kira_night_tv:
             jump .end
 
     label .porn:
-        if talk_var['kira.porn']>0:
+        if kira.flags.porno:
             jump .porn_view
         Kira_08 "Макс, а не рано тебе такое смотреть? Если эротику, то ещё куда ни шло... но это самое настоящее порно! Хотя, и эротику тебе не стоит смотреть. Во всяком случае, со мной..."
         Max_07 "Как будто я порно не видел... Мама с Эриком всё время тут порно смотрят, прежде чем уходят к себе наверх."
@@ -855,8 +1046,8 @@ label kira_night_tv:
         if not _in_replay:
             $ SetCamsGrow(house[4], 180)
         scene BG tv-watch-01
-        $ talk_var['kira.porn']+=1
-        if talk_var['kira.porn']==1:
+        $ kira.flags.porno+=1
+        if kira.flags.porno==1:
             show tv kira-porn-00 01 at tv_screen
             $ renpy.show('Kira tv-watch 01'+kira.dress)
             show Max tv-watch 01c
@@ -920,18 +1111,18 @@ label kira_night_tv:
 
             scene BG char Alice tv-mass-05
             show Kira tv-closer max-03
-            $ __suf = ''
-            if talk_var['kira.bath.mass'] and (_in_replay or (len(online_cources)>1 and online_cources[1].cources[0].less)):
+            $ suf = ''
+            if kira.flags.m_foot and (_in_replay or (len(online_cources)>1 and online_cources[1].cources[0].less)):
                 Kira_05 "Если хочешь, можешь даже снять шорты, чтобы резинка ничего не передавливала..."
                 Max_02 "Только если ты тоже разденешься..."
                 menu:
                     Kira_02 "Как же без этого, Макс. Но только немножко... чтобы ты не кончил уж очень быстро..."
-                    "{i}снять шорты{/i}" if not flags['kira.tv.bj'] and not flags['promise.cuni.kira']:
-                        $ __suf = 'a'
+                    "{i}снять шорты{/i}" if not kira.stat.blowjob and not kira.flags.promise:
+                        $ suf = 'a'
                         show Kira tv-closer max-03a
-                    "{i}снять шорты{/i}" if flags['kira.tv.bj'] and not flags['promise.cuni.kira']:
+                    "{i}снять шорты{/i}" if kira.stat.blowjob and not kira.flags.promise:
                         jump .tv_cuni
-                    "{i}снять шорты{/i}" if flags['promise.cuni.kira']:
+                    "{i}снять шорты{/i}" if kira.flags.promise:
                         jump .promise_cuni
             Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Похоже, тебе совершенно не стыдно дрочить прямо перед своей тётей?"
             Max_01 "Ни капли не стыдно! Особенно, если ей самой это нравится..."
@@ -942,7 +1133,7 @@ label kira_night_tv:
                 Max_20 "{i}( Да, Кира... Твоя помощь бы мне не помешала... Хотя... похоже, я сейчас кончу и без этого! ){/i}"
                 "{i}кончить{/i}":
                     scene BG char Kira tv-kiss-03
-                    $ renpy.show('Kira tv-closer max-04'+__suf)
+                    $ renpy.show('Kira tv-closer max-04'+suf)
 
             Kira_09 "Ох, ты всё? Ну, тогда иди приведи себя в порядок и ложись спать. Тебе уже пора. Я тоже уже близка к тому... чтобы закончить..."
             Max_04 "Хорошо. Спокойной ночи, тётя Кира."
@@ -963,8 +1154,8 @@ label kira_night_tv:
         menu:
             Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
             "{i}раздеть её и повернуть{/i}":
-                $ __r1 = renpy.random.choice([1, 2])
-        if __r1<2:
+                $ r1 = renpy.random.choice([1, 2])
+        if r1<2:
             scene BG lounge-tv-01
             show Kira tv-game cun-04-1
         else:
@@ -974,7 +1165,7 @@ label kira_night_tv:
         menu:
             Kira_07 "Оу... Решил поиграть со мной так, Макс... Моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..."
             "{i}проникнуть в неё пальцами{/i}":
-                if __r1<2:
+                if r1<2:
                     scene BG char Kira tv-cun-01
                     show Kira tv-game cun-05-1
                 else:
@@ -983,11 +1174,11 @@ label kira_night_tv:
         menu:
             Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ммм..."
             "{i}продолжить языком{/i}":
-                $ __r1 = renpy.random.choice([1, 2, 3])
-        if __r1<2:
+                $ r1 = renpy.random.choice([1, 2, 3])
+        if r1<2:
             scene BG lounge-tv-01
             show Kira tv-game cun-06-1
-        elif __r1<3:
+        elif r1<3:
             scene BG char Kira tv-kiss-03
             show Kira tv-game cun-06-2
         else:
@@ -1003,18 +1194,18 @@ label kira_night_tv:
         Kira_06 "Да, Макс, она у меня такая... Я в восторге! Но лучше нам закругляться, а то я вполне могла кого-нибудь разбудить своими стонами."
         Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
 
-        $ flags['promise.cuni.kira'] = False
+        $ kira.flags.promise = False
         jump .end
 
     menu .teachkiss:
         Kira_00 "Да, да... Момент вполне подходящий... Ну что же, давай приступим."
-        "С чего начнём?" if talk_var['teachkiss'] == 1:
+        "С чего начнём?" if lisa.dcv.seduce.stage == 1:
             jump .first_lesson
 
-        "Как в прошлый раз?" if 1 < talk_var['teachkiss'] < 4:
+        "Как в прошлый раз?" if 1 < lisa.dcv.seduce.stage < 4:
             jump .second_lesson
 
-        "Отлично!" if talk_var['teachkiss'] > 3:
+        "Отлично!" if lisa.dcv.seduce.stage > 3:
             jump .repeat_lesson
 
     label .first_lesson:
@@ -1035,14 +1226,14 @@ label kira_night_tv:
             Kira_05 "Ну хорошо. Давай приступим..."
             "{i}поцеловать её{/i}":
                 pass
-        $ __r1 = renpy.random.choice(['02', '03'])
-        $ renpy.show('Kira tv-kiss 1-'+__r1)
+        $ r1 = renpy.random.choice(['02', '03'])
+        $ renpy.show('Kira tv-kiss 1-'+r1)
         menu:
             Max_03 "{i}( Ого... Какой горячий ротик... И она так ловко орудует язычком... Так... И что мне, как... Эх, учиться мне ещё и учиться... А что, я очень даже не против такому учиться! ){/i}"
             "{i}продолжить целоваться{/i}":
                 $ renpy.block_rollback()
-                $ __r1 = {'02':'03', '03':'02'}[__r1]
-                $ renpy.show('Kira tv-kiss 1-'+__r1)
+                $ r1 = {'02':'03', '03':'02'}[r1]
+                $ renpy.show('Kira tv-kiss 1-'+r1)
                 Max_05 "{i}( Ухх, она такая классная, что даже не хочется это прекращать! Так бы и целовал её вечно... ){/i}"
                 show Kira tv-kiss 1-01
                 Kira_01 "Ну всё, на сегодня хватит. Конечно, получается у тебя пока не очень, но это нормально. И ты знаешь, где меня найти, если захочешь потренироваться ещё... А теперь марш спать!"
@@ -1061,7 +1252,7 @@ label kira_night_tv:
         $ renpy.end_replay()
         $ persistent.memories['kira_night_tv.first_lesson'] = 1
         $ poss['seduction'].OpenStage(7)
-        $ talk_var['teachkiss'] = 2
+        $ lisa.dcv.seduce.stage = 2
         $ SetCamsGrow(house[4], 150)
 
         jump .end
@@ -1080,9 +1271,9 @@ label kira_night_tv:
             Max_02 "Да я только за!"
             "{i}поцеловать её{/i}":
                 pass
-        if talk_var['teachkiss'] < 3:
-            $ __r1 = renpy.random.choice(['02', '03'])
-            $ renpy.show('Kira tv-kiss 1-'+__r1)
+        if lisa.dcv.seduce.stage < 3:
+            $ r1 = renpy.random.choice(['02', '03'])
+            $ renpy.show('Kira tv-kiss 1-'+r1)
             Max_04 "{i}( Как же это приятно... Она такая... и такое делает язычком... Ух... Это просто невероятно... ){/i}"
             show Kira tv-kiss 1-01
             Kira_02 "Ну, уже лучше... Возвращаясь к прелюдии, кроме самих поцелуев важную роль играют так же и обоюдные ласки, которыми обмениваются партнёры во время поцелуев."
@@ -1094,9 +1285,9 @@ label kira_night_tv:
                 "{i}поцеловать её{/i}":
                     pass
 
-        $ talk_var['teachkiss'] = 3
-        $ __r1 = renpy.random.choice(['02', '03'])
-        $ renpy.show('Kira tv-kiss 1-'+__r1)
+        $ lisa.dcv.seduce.stage = 3
+        $ r1 = renpy.random.choice(['02', '03'])
+        $ renpy.show('Kira tv-kiss 1-'+r1)
         menu:
             Max_03 "{i}( О да! Кажется, мне никогда не надоест такая практика... Она так увлечённо целуется... Что она там говорила, про нужный момент? Может быть, это как раз он? ){/i}"
             "{i}прикоснуться к её груди{/i}" if not _in_replay:
@@ -1160,14 +1351,14 @@ label kira_night_tv:
                 Max_04 "{i}( Отлично! Кажется, ей действительно нравится, что я делаю... Она целует меня с такой жадностью, пока я мну её обалденную грудь... Она прикасается всё ниже и ниже, класс! ){/i}"
                 if not _in_replay:
                     $ persistent.memories['kira_night_tv.second_lesson'] = 1
-                    $ talk_var['teachkiss'] = 4
-                if talk_var['kira.bath.mass']==0:
+                    $ lisa.dcv.seduce.stage = 4
+                if not kira.flags.m_foot:
                     #если массажа ног Киры в ванне ещё не было
                     Kira_07 "Ммм... Макс... думаю... нам надо заканчивать. Уже ведь так поздно."
                     scene BG char Kira tv-kiss-01
                     show Kira tv-kiss 1-04
                     Kira_04 "Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
-                    $ talk_var['kira.tv.touch'] = 1 # теперь в ванной Макс сможет получить FJ (с убеждением)
+                    $ kira.flags.m_breast = 1 # теперь в ванной Макс сможет получить FJ (с убеждением)
                     $ Skill('kissing', 0.3, 3.0)
                 else:
                     #если был массаж ног Киры в ванне
@@ -1187,7 +1378,7 @@ label kira_night_tv:
                             Kira_09 "[succes!t]О да... уже значительно лучше... Ты быстро схватываешь... Ммм..."
                             "{i}развязать её ночнушку{/i}":
                                 if not _in_replay:
-                                    $ talk_var['kira.tv.touch'] = 2  # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
+                                    $ kira.flags.m_breast = 2  # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
                                 scene BG char Kira tv-kiss-03
                                 show Kira tv-kiss 3-02
                                 Max_05 "{i}( Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она начала поглаживать мой член... ){/i}"
@@ -1233,9 +1424,9 @@ label kira_night_tv:
             "{i}развязать её ночнушку{/i}":
                 show Kira tv-kiss 3-02
         Max_05 "{i}( У неё такая большая и шелковистая грудь, а сосочки твёрдые и набухшие... И ей это всё очень нравится, она дышит так жарко... Её рука так приятно и легко поглаживает головку моего члена! ){/i}"
-        $ Skill('kissing', 0.5 if mgg.kissing < 5 else 0.2, 8.5)
-        if not flags['kira.bath.fj']: # fj в ванной ещё не было
-            $ talk_var['kira.tv.touch'] = 2 # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
+        $ Skill('kissing', 0.5 if mgg.kissing < 5 else 0.2, 6.5)
+        if not kira.stat.footjob: # fj в ванной ещё не было
+            $ kira.flags.m_breast = 2 # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
             Kira_05 "О боже, Макс... Какой же ты развратник, забрался мне под ночнушку... Охх... Остановись, Макс..."
             Max_07 "Почему?"
             scene BG char Kira tv-kiss-01
@@ -1246,13 +1437,14 @@ label kira_night_tv:
 
         # fj в ванной уже состоялся
 
-        if flags['kira.tv.bj']:
+        if kira.stat.blowjob:
             # куни и менет у ТВ уже были
             jump .teach_cuni
 
         menu:
             Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком... Давай, не стесняйся!"
             "{i}ласкать её грудь и киску{/i}":
+                $ kira.flags.m_breast += 1
                 if renpy.random.randint(1, 2)>1:
                     scene BG char Alice tv-mass-05
                     show Kira tv-kiss 3-04
@@ -1305,6 +1497,7 @@ label kira_night_tv:
 
         # (получилось сдержаться)
         $ Skill('sex', 0.2)
+        $ kira.stat.blowjob += 1 #открывается возможность куни и минета в ванне
         if renpy.random.randint(1, 2)>1:
             scene BG tv-mass-07
             show Kira tv-game bj-05ab
@@ -1343,7 +1536,6 @@ label kira_night_tv:
         Max_02 "Но, надеюсь, ведь ещё будет, тётя Кира?"
         Kira_04 "Со мной?! Очень может быть... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
         Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
-        $ flags['kira.tv.bj'] = True #открывается возможность куни и минета в ванне
         if not _in_replay:
             $ persistent.memories['kira_tv_bj'] = 1
             $ persistent.memories['kira_night_tv.repeat_lesson'] = 1
@@ -1362,7 +1554,6 @@ label kira_night_tv:
         show Kira tv-game bj-09ab
         Kira_04 "Очень может быть... А теперь бегом спать! А мне ещё нужно придти немного в себя после всего этого..."
         Max_01 "Конечно, тётя Кира. Ты лучшая! Спокойной ночи!"
-        $ flags['kira.tv.bj'] = True #открывается возможность куни и минета в ванне
         jump .end
 
     label .not_restrain2:
@@ -1383,6 +1574,7 @@ label kira_night_tv:
         menu:
             Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком..."
             "{i}ласкать её грудь и киску{/i}":
+                $ kira.flags.m_breast += 1
                 if renpy.random.randint(1, 2)>1:
                     scene BG char Alice tv-mass-05
                     show Kira tv-kiss 3-04
@@ -1407,7 +1599,7 @@ label kira_night_tv:
                     "{i}продолжить пальцами и языком{/i}":
                         show Kira tv-game cun-03ba
 
-                if dcv['kiratalk'].stage>7:
+                if kira.dcv.photo.stage>1:  #kira.dcv.feature.stage>7:
                     # была 2-ая фотосессия, секс
                     # тут в шортах
                     jump .tv_sex1
@@ -1422,7 +1614,7 @@ label kira_night_tv:
                     "{i}снять шорты{/i}":
                         pass
 
-            "{i}раздеться вместе{/i}" if flags['hj_in_pool']:
+            "{i}раздеться вместе{/i}" if kira.stat.handjob:
                 call kira_night_tv.cuni_var2 from _call_kira_night_tv_cuni_var2
         scene BG char Kira tv-bj-01
         show Kira tv-game bj-02
@@ -1431,8 +1623,8 @@ label kira_night_tv:
     label .cuni_var2:
         if not _in_replay:
             $ SetCamsGrow(house[4], 200)
-        $ __r1 = renpy.random.choice([1, 2])
-        if __r1<2:
+        $ r1 = renpy.random.choice([1, 2])
+        if r1<2:
             scene BG lounge-tv-01
             show Kira tv-game cun-04-1
         else:
@@ -1441,7 +1633,7 @@ label kira_night_tv:
         menu:
             Kira_07 "Оу... Решил поиграть со мной так, Макс... Моя киска так скучала по твоим ласкам... Не останавливайся, я это обожаю! А ты способный... племянник..."
             "{i}проникнуть в неё пальцами{/i}":
-                if __r1<2:
+                if r1<2:
                     scene BG char Kira tv-cun-01
                     show Kira tv-game cun-05-1
                 else:
@@ -1450,18 +1642,18 @@ label kira_night_tv:
         menu:
             Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ммм..."
             "{i}продолжить языком{/i}":
-                $ __r1 = renpy.random.choice([1, 2, 3])
-        if __r1<2:
+                $ r1 = renpy.random.choice([1, 2, 3])
+        if r1<2:
             scene BG lounge-tv-01
             show Kira tv-game cun-06-1
-        elif __r1<3:
+        elif r1<3:
             scene BG char Kira tv-kiss-03
             show Kira tv-game cun-06-2
         else:
             scene BG char Alice tv-mass-11
             show Kira tv-game cun-06-3
 
-        if dcv['kiratalk'].stage>7:
+        if kira.dcv.photo.stage>1:  #kira.dcv.feature.stage>7:
             # была 2-ая фотосессия, секс
             Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
             jump .tv_sex2
@@ -1537,6 +1729,7 @@ label kira_night_tv:
             Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}"
             "Тётя Кира, ещё быстрее... Да... Я сейчас кончу... А-а-а...":
                 Max_05 "{i}( Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно! ){/i}"
+                $ kira.stat.blowjob += 1
         scene BG char Kira tv-bj-01
         show Kira tv-game bj-02a
         Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
@@ -1573,9 +1766,9 @@ label kira_night_tv:
                     "{i}продолжить пальцами и языком{/i}":
                         show Kira tv-game cun-03bb
 
-                if dcv['kiratalk'].stage>7:
+                if kira.dcv.photo.stage>1:  #kira.dcv.feature.stage>7:
                     # была 2-ая фотосессия, секс
-                    $ __naked = True
+                    $ naked = True
                     jump .tv_sex1
 
                 # не было 2-ой фотосессии, дальше минет от Киры
@@ -1585,7 +1778,7 @@ label kira_night_tv:
                 show Kira tv-game bj-01bb
                 Kira_07 "Да, я очень испорченная... а ты, Макс, заслужил кое-что особенное... Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
                 Max_04 "Да... Я очень этого хочу!"
-            "{i}раздеть её и повернуть{/i}" if flags['hj_in_pool']:
+            "{i}раздеть её и повернуть{/i}" if kira.stat.handjob:
                 call kira_night_tv.cuni_var2 from _call_kira_night_tv_cuni_var2_1
 
         scene BG char Kira tv-bj-01
@@ -1597,17 +1790,17 @@ label kira_night_tv:
     label .tv_sex1:
         #tv-cun-01 + tv-cun-01-max-03a-kira-03a
         scene BG char Kira tv-cun-01
-        if __naked:
+        if naked:
             show Kira tv-game cun-03bb
         else:
             show Kira tv-game cun-03ba
 
         menu:
             Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Ещё чуть-чуть и я кончу... Может быть, ты воспользуешься чем-то потолще пальчиков и язычка?"
-            "{i}трахнуть тётю Киру{/i} (миссионерская поза)" if __naked:
+            "{i}трахнуть тётю Киру{/i} (миссионерская поза)" if naked:
                 jump .missionary
 
-            "{i}снять шорты и трахнуть тётю Киру{/i} (миссионерская поза)" if not __naked:
+            "{i}снять шорты и трахнуть тётю Киру{/i} (миссионерская поза)" if not naked:
                 jump .missionary
 
             "{i}трахнуть тётю Киру{/i} (поза на боку)" if False:
@@ -1630,12 +1823,12 @@ label kira_night_tv:
                 pass
         if RandomChance(_ch_sex4.ch):
             # (Удалось сдержаться!)
-            $ __r1 = renpy.random.randint(1, 3)
-            if __r1 < 2:
+            $ r1 = renpy.random.randint(1, 3)
+            if r1 < 2:
                 #tv-max&kira-sex02-01-f + tv-max&kira-sex02-02a
                 scene BG char Kira tv-sex02-01
                 show Kira tv-sex 02-02a
-            elif __r1 < 3:
+            elif r1 < 3:
                 #tv-mass-03 + tv-max&kira-sex02-02b
                 scene BG tv-mass-03
                 show Kira tv-sex 02-02b
@@ -1778,12 +1971,12 @@ label kira_night_tv:
 
     label .cum_in_mouth:
         # (Удалось сдержаться!)
-        $ __r1 = renpy.random.randint(1, 3)
-        if __r1 < 2:
+        $ r1 = renpy.random.randint(1, 3)
+        if r1 < 2:
             #lounge-tv-01 + tv-bj-02-max&kira-01a
             scene BG lounge-tv-01
             show Kira tv-game bj-02-01a
-        elif __r1 < 3:
+        elif r1 < 3:
             #after-club-s08a-f + tv-bj-02-max&kira-01b
             scene BG char Kira after-club-s08a-f
             show Kira tv-game bj-02-01b
@@ -1816,8 +2009,8 @@ label kira_night_tv:
         show Kira tv-game bj-02
         Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил мне в рот! Если конечно выдержишь то, что я буду делать языком..."
         Max_03 "О да, ты им такое вытворяешь!"
-        $ __r1 = renpy.random.randint(1, 2)
-        if __r1 < 2:
+        $ r1 = renpy.random.randint(1, 2)
+        if r1 < 2:
             # tv-bj-01 + tv-bj-01-max-04a-kira-04a
             scene BG char Kira tv-bj-01
             show Kira tv-game bj-04
@@ -1832,7 +2025,7 @@ label kira_night_tv:
             "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
                 if RandomChance(_ch_sex2.ch):
                     # (Удалось сдержаться!)
-                    if __r1 < 2:
+                    if r1 < 2:
                         #tv-bj-01 + tv-bj-01-max-06a-kira-06a
                         scene BG char Kira tv-bj-01
                         show Kira tv-game bj-06bb
@@ -1848,7 +2041,7 @@ label kira_night_tv:
                         "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
                             if RandomChance(_ch_sex2.ch):
                                 # (Удалось сдержаться!)
-                                if __r1 < 2:
+                                if r1 < 2:
                                     #tv-bj-01 + tv-bj-01-max-08a-kira-08a
                                     scene BG char Kira tv-bj-01
                                     show Kira tv-game bj-08bb
@@ -1899,8 +2092,8 @@ label kira_night_tv:
         $ Skill('social', 0.05)
         Kira_14 "[failed!t]Приятно слышать, Макс, но тебе пора спать! Три часа ночи... Мне уже и самой пора ложиться спать."
         Max_08 "Вот так всегда..."
-        if online_cources[0].current < 3 and not flags['hint.cources']:
-            $ flags['hint.cources'] = True
+        if online_cources[0].current < 3 and not flags.hint_cources:
+            $ flags.hint_cources = True
             Max_09 "{i}( Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут. ){/i}"
 
     label .end:
@@ -1911,18 +2104,20 @@ label kira_night_tv:
 
 
 label kira_shower:
+    $ renpy.dynamic('r1')
+
     scene location house bathroom door-morning
-    if peeping['kira_shower'] > 0:
+    if kira.daily.shower > 0:
         menu:
             Max_00 "Кира сейчас принимает душ, не стоит ей мешать..."
             "{i}уйти{/i}":
                 return
-    $ peeping['kira_shower'] = 1
+    $ kira.daily.shower = 1
     menu:
         Max_01 "Интересно, кто сейчас в душе?"
         "{i}заглянуть со двора{/i}":
             jump .start_peeping
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
             return
@@ -1933,13 +2128,13 @@ label kira_shower:
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
         scene BG bathroom-morning-00
-        $ peeping['kira_shower'] = 2
-        $ __r1 = renpy.random.choice(['b', 'c', 'd'])
-        $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+        $ kira.daily.shower = 2
+        $ r1 = renpy.random.choice(['b', 'c', 'd'])
+        $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
         show FG bathroom-morning-00
-        if __r1 == 'b':
+        if r1 == 'b':
             Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком..."
-        elif __r1=='c':
+        elif r1=='c':
             Max_03 "Здорово, тётя Кира в одних трусиках любуется собой! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
         else:
             Max_06 "Голая тётя Кира - это шикарно! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
@@ -1949,15 +2144,15 @@ label kira_shower:
         $ Skill('hide', 0.03)
 
         $ renpy.scene()
-        $ peeping['kira_shower'] = 2
-        $ __r1 = renpy.random.choice(['01', '02', '03', '04'])
-        $ renpy.show('Kira shower '+__r1)
+        $ kira.daily.shower = 2
+        $ r1 = renpy.random.choice(['01', '02', '03', '04'])
+        $ renpy.show('Kira shower '+r1)
         $ renpy.show('FG shower 00'+mgg.dress)
-        if __r1 == '04':
-            $ __r1 = renpy.random.randint(7, 8)
+        if r1 == '04':
+            $ r1 = renpy.random.randint(7, 8)
             menu:
                 Max_05 "Ага! Тётя Кира сегодня одна... и похоже, решила немножко себя развлечь принимая водные процедуры... Это я удачно зашёл!"
-                "К тебе можно, тётя Кира?" if flags['promise.cuni.kira']:
+                "К тебе можно, тётя Кира?" if kira.flags.promise:
                     jump .promise_cuni
                 "{i}продолжить смотреть{/i}":
                     pass
@@ -1966,10 +2161,10 @@ label kira_shower:
                 "{i}уйти{/i}":
                     jump .end
         else:
-            $ __r1 = renpy.random.randint(1, 6)
+            $ r1 = renpy.random.randint(1, 6)
             menu:
                 Max_07 "Супер! Тётя Кира в душе... и совсем одна... такая голая и мокренькая... Вот это зрелище!"
-                "К тебе можно, тётя Кира?" if flags['promise.cuni.kira']:
+                "К тебе можно, тётя Кира?" if kira.flags.promise:
                     jump .promise_cuni
                 "{i}продолжить смотреть{/i}":
                     pass
@@ -1981,10 +2176,10 @@ label kira_shower:
         $ spent_time += 10
 
         scene BG shower-closer
-        $ renpy.show('Kira shower-closer 0'+str(__r1))
+        $ renpy.show('Kira shower-closer 0'+str(r1))
         show FG shower-closer
-        if flags['promise.cuni.kira']:
-            if __r1 < 7:
+        if kira.flags.promise:
+            if r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
             else:
                 Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
@@ -1994,7 +2189,7 @@ label kira_shower:
             else:
                 jump .end
         else:
-            if __r1 < 7:
+            if r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
             else:
                 Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
@@ -2004,10 +2199,10 @@ label kira_shower:
         $ spent_time += 10
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
-        $ renpy.show('Kira shower-alt 0'+str(__r1), at_list=[left_shift,])
+        $ renpy.show('Kira shower-alt 0'+str(r1), at_list=[left_shift,])
         show FG shower-closer
-        if flags['promise.cuni.kira']:
-            if __r1 < 7:
+        if kira.flags.promise:
+            if r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
             else:
                 Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
@@ -2017,7 +2212,7 @@ label kira_shower:
             else:
                 jump .end
         else:
-            if __r1 < 7:
+            if r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
             else:
                 Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
@@ -2040,18 +2235,18 @@ label kira_shower:
         menu:
             Max_03 "Как о тебе можно забыть, тётя Кира? Тебя нужно как следует порадовать за вчерашнее..."
             "{i}ласкать её грудь{/i}":
-                $ __r1 = renpy.random.choice(['07', '08'])
+                $ r1 = renpy.random.choice(['07', '08'])
                 $ renpy.scene()
-                $ renpy.show('BG char Kira shower-'+__r1)
-                $ renpy.show('Kira shower-Max '+__r1+'-01')
+                $ renpy.show('BG char Kira shower-'+r1)
+                $ renpy.show('Kira shower-Max '+r1+'-01')
         menu:
             Kira_04 "Ох... Ты тот ещё шалунишка! Я обожаю, когда ласкают мою грудь и особенно мои сосочки... Ммм..."
             "{i}ласкать её киску пальцами{/i}":
-                $ renpy.show('Kira shower-Max '+__r1+'-02')
+                $ renpy.show('Kira shower-Max '+r1+'-02')
         menu:
             Kira_10 "Да, Макс... Продолжай вот так и я уже не смогу сдержаться... У тебя такие ловкие пальчики... Да..."
             "{i}ласкать её киску языком{/i}":
-                $ renpy.show('Kira shower-Max '+__r1+'-03')
+                $ renpy.show('Kira shower-Max '+r1+'-03')
         menu:
             Kira_11 "О да... Ещё, Макс... Я уже близко... Так приятно..."
             "{i}проникнуть в неё пальцами{/i}":
@@ -2068,7 +2263,7 @@ label kira_shower:
         Kira_07 "Да, Макс, я как раз должна немного... успеть отойти..."
 
         $ renpy.end_replay()
-        $ flags['promise.cuni.kira'] = False
+        $ kira.flags.promise = False
         $ spent_time += 20
         jump .end
 
@@ -2079,18 +2274,20 @@ label kira_shower:
 
 
 label kira_lisa_shower:
+    $ renpy.dynamic('r0', 'r1')
+
     scene location house bathroom door-morning
-    if peeping['lisa_shower'] > 0:
+    if lisa.daily.shower > 0:
         menu:
             Max_00 "Лиза и Кира принимают душ, не стоит им мешать..."
             "{i}уйти{/i}":
                 return
-    $ peeping['lisa_shower'] = 1
+    $ lisa.daily.shower = 1
     menu:
         Max_01 "Интересно, кто сейчас в душе?"
         "{i}заглянуть со двора{/i}":
             jump .start_peeping
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
             return
@@ -2101,15 +2298,15 @@ label kira_lisa_shower:
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
         if 'lisa_sh' in cam_flag:
-            $ __r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зеркалом Кира
+            $ r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зеркалом Кира
         elif 'kira_sh' in cam_flag:
-            $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зеркалом Лиза
+            $ r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зеркалом Лиза
         elif 'kira_lisa_sh' in cam_flag:
-            $ __r0 = 0 # $ __var = 'kira_lisa'
+            $ r0 = 0 # $ __var = 'kira_lisa'
         else:
-            $ __r0 = renpy.random.randint(1, 4)
-            if __r0 < 3: # если выпал один персонаж
-                $ __var = 'kira' if __r0 == 1 else 'lisa'
+            $ r0 = renpy.random.randint(1, 4)
+            if r0 < 3: # если выпал один персонаж
+                $ __var = 'kira' if r0 == 1 else 'lisa'
                 if __var == 'lisa':
                     $ cam_flag.append('kira_sh' if tm[-2:] < '30' else 'lisa_sh')
                 elif __var == 'kira':
@@ -2119,54 +2316,54 @@ label kira_lisa_shower:
             #     $ cam_flag.append('kira_lisa_sh')
 
         scene BG bathroom-morning-00
-        $ __r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
-        if __r0 == 1:
+        $ r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
+        if r0 == 1:
             if 'kira_sh' in cam_flag: # Киру уже видели через камеру
-                $ __r1 = {'04a':'b', '04b':'c', '00':'d', '00a':'d'}[kira.dress_inf]
+                $ r1 = {'04a':'b', '04b':'c', '00':'d', '00a':'d'}[kira.dress_inf]
             else:
                 if tm[-2:] < '10':
-                    $ __r1 = 'b'
+                    $ r1 = 'b'
                 elif tm[-2:] < '20':
-                    $ __r1 = 'c'
+                    $ r1 = 'c'
                 else:
-                    $ __r1 = 'd'
-                $ kira.dress_inf = {'b':'04a', 'c':'04b', 'd':'00'}[__r1]
-            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+                    $ r1 = 'd'
+                $ kira.dress_inf = {'b':'04a', 'c':'04b', 'd':'00'}[r1]
+            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
             show FG bathroom-morning-00
-            if __r1=='b':
+            if r1=='b':
                 Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Лиза принимает душ!"
-            elif __r1=='c':
+            elif r1=='c':
                 Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Лиза принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
             else:
                 Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Лиза принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
 
-        elif __r0 == 2:
+        elif r0 == 2:
             # назначим или определим одёжку
             if lisa.dress_inf != '04a': # Лизу уже видели через камеру
-                $ __r1 = {'04c':'a', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
+                $ r1 = {'04c':'a', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
             else:
                 if tm[-2:] < '10'  and 'bathrobe' in lisa.gifts:
-                    $ __r1 = 'a'
+                    $ r1 = 'a'
                 elif tm[-2:] < '20':
-                    $ __r1 = 'c'
+                    $ r1 = 'c'
                 else:
-                    $ __r1 = 'd'
-                $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
+                    $ r1 = 'd'
+                $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[r1]
 
-            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
             show FG bathroom-morning-00
-            if __r1 == 'a':
+            if r1 == 'a':
                 Max_03 "Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и тётя Кира принимает душ!"
-            elif __r1=='c':
+            elif r1=='c':
                 Max_07 "Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и тётя Кира принимает душ!"
             else:
                 Max_06 "Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и тётя Кира принимает душ!"
 
         else:
-            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_left_shift,])
-            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_right_shift,])
+            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1, at_list=[ladder_left_shift,])
+            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1, at_list=[ladder_right_shift,])
             show FG bathroom-morning-00
-            if __r1=='c':
+            if r1=='c':
                 Max_05 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках... Это просто заглядение!"
             else:
                 Max_06 "Ухх, невероятно горячие и голенькие тётя с моей младшей сестрёнкой! Любовался бы бесконечно, как они красуются перед зеркалом..."
@@ -2189,11 +2386,11 @@ label kira_lisa_shower:
                 jump .end
 
         $ spent_time += 10
-        $ __r1 = renpy.random.randint(1, 6)
+        $ r1 = renpy.random.randint(1, 6)
         $ __r2 = renpy.random.randint(1, 6)
         scene BG shower-closer
         $ renpy.show('Kira shower-closer 0'+str(__r2), at_list=[left_shift,])
-        $ renpy.show('Lisa shower-closer 0'+str(__r1), at_list=[right_shift,])
+        $ renpy.show('Lisa shower-closer 0'+str(r1), at_list=[right_shift,])
         show FG shower-closer
         Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
         jump .end
@@ -2202,12 +2399,12 @@ label kira_lisa_shower:
         $ spent_time += 10
         $ lisa.dress_inf = '00aa'
         $ kira.dress_inf = '00a'
-        $ __r1 = renpy.random.randint(1, 6)
+        $ r1 = renpy.random.randint(1, 6)
         $ __r2 = renpy.random.randint(1, 6)
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(__r2), at_list=[alt_left_shift,])
-        $ renpy.show('Kira shower-alt 0'+str(__r1), at_list=[alt_right_shift,])
+        $ renpy.show('Kira shower-alt 0'+str(r1), at_list=[alt_right_shift,])
         show FG shower-water
         Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
         jump .end
@@ -2219,18 +2416,19 @@ label kira_lisa_shower:
 
 
 label kira_alice_shower:
+    $ renpy.dynamic('r0', 'r1')
     scene location house bathroom door-morning
-    if peeping['alice_shower'] > 0:
+    if alice.daily.shower > 0:
         menu:
             Max_00 "Кира и Алиса принимают душ, не стоит им мешать..."
             "{i}уйти{/i}":
                 return
-    $ peeping['alice_shower'] = 1
+    $ alice.daily.shower = 1
     menu:
         Max_01 "Интересно, кто сейчас в душе?"
         "{i}заглянуть со двора{/i}":
             jump .start_peeping
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
         "{i}уйти{/i}":
             return
@@ -2240,17 +2438,17 @@ label kira_alice_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
-        # $ __r0 = renpy.random.randint(1, 4)
+        # $ r0 = renpy.random.randint(1, 4)
         if 'alice_sh' in cam_flag:
-            $ __r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зекралом Лиза
+            $ r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зекралом Лиза
         elif 'kira_sh' in cam_flag:
-            $ __r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зекралом Алиса
+            $ r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зекралом Алиса
         elif 'kira_alice_sh' in cam_flag:
-            $ __r0 = 0 # $ __var = 'kira_alice'
+            $ r0 = 0 # $ __var = 'kira_alice'
         else:
-            $ __r0 = renpy.random.randint(1, 4)
-            if __r0 < 3: # если выпал один персонаж
-                $ __var = 'alice' if __r0 == 1 else 'kira'
+            $ r0 = renpy.random.randint(1, 4)
+            if r0 < 3: # если выпал один персонаж
+                $ __var = 'alice' if r0 == 1 else 'kira'
                 if __var == 'alice':
                     $ cam_flag.append('kira_sh' if tm[-2:] < '30' else 'alice_sh')
                 else: # Алиса в душе, соответственно, перед умывальниками первые полчаса Лиза
@@ -2258,53 +2456,53 @@ label kira_alice_shower:
             else:
                 $ __var = 'kira_alice'
         scene BG bathroom-morning-00
-        if __r0 == 1:
+        if r0 == 1:
             if 'kira_sh' in cam_flag: # Киру уже видели через камеру
-                $ __r1 = {'04a':'b', '04b':'c', '00':'d', '00a':'d'}[kira.dress_inf]
+                $ r1 = {'04a':'b', '04b':'c', '00':'d', '00a':'d'}[kira.dress_inf]
             else:
                 if tm[-2:] < '10':
-                    $ __r1 = 'b'
+                    $ r1 = 'b'
                 elif tm[-2:] < '20':
-                    $ __r1 = 'c'
+                    $ r1 = 'c'
                 else:
-                    $ __r1 = 'd'
-                $ kira.dress_inf = {'b':'04a', 'c':'04b', 'd':'00'}[__r1]
+                    $ r1 = 'd'
+                $ kira.dress_inf = {'b':'04a', 'c':'04b', 'd':'00'}[r1]
 
-            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
             show FG bathroom-morning-00
-            if __r1=='b':
+            if r1=='b':
                 Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Алиса принимает душ!"
-            elif __r1=='c':
+            elif r1=='c':
                 Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Алиса принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
             else:
                 Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Алиса принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
 
-        elif __r0 == 2:
+        elif r0 == 2:
             if alice.dress_inf != '04aa': # Алису видели через камеру
-                $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
+                $ r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
             else:
                 if tm[-2:] < '10':
-                    $ __r1 = 'a'
+                    $ r1 = 'a'
                 elif tm[-2:] < '20':
-                    $ __r1 = 'c'
+                    $ r1 = 'c'
                 else:
-                    $ __r1 = 'd'
-                $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
-            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+                    $ r1 = 'd'
+                $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[r1]
+            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
             show FG bathroom-morning-00
-            if __r1=='a':
+            if r1=='a':
                 Max_02 "Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и тётя Кира принимает душ!"
-            elif __r1=='c':
+            elif r1=='c':
                 Max_04 "Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и тётя Кира принимает душ!"
             else:
                 Max_06 "Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и тётя Кира принимает душ!"
 
         else:
-            $ __r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
-            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_left_shift,])
-            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[ladder_right_shift,])
+            $ r1 = renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
+            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1, at_list=[ladder_left_shift,])
+            $ renpy.show('Kira bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1, at_list=[ladder_right_shift,])
             show FG bathroom-morning-00
-            if __r1=='c':
+            if r1=='c':
                 Max_05 "Класс, две самые непослушные девчонки этого дома вместе! Так изящно позируют перед зеркалом... Глаза аж разбегаются!"
             else:
                 Max_06 "О да, сегодня тётя Кира и Алиса зажигают своими голыми попками перед зеркалом! Это можно прировнять к новому чуду света..."
@@ -2327,11 +2525,11 @@ label kira_alice_shower:
                 jump .end
 
         $ spent_time += 10
-        $ __r1 = renpy.random.randint(1, 6)
+        $ r1 = renpy.random.randint(1, 6)
         $ __r2 = renpy.random.randint(1, 6)
         scene BG shower-closer
         $ renpy.show('Kira shower-closer 0'+str(__r2), at_list=[left_shift,])
-        $ renpy.show('Alice shower-closer 0'+str(__r1), at_list=[right_shift,])
+        $ renpy.show('Alice shower-closer 0'+str(r1), at_list=[right_shift,])
         show FG shower-closer
         Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
         jump .end
@@ -2340,12 +2538,12 @@ label kira_alice_shower:
         $ spent_time += 10
         $ alice.dress_inf = '00aa'
         $ kira.dress_inf = '00a'
-        $ __r1 = renpy.random.randint(1, 6)
+        $ r1 = renpy.random.randint(1, 6)
         $ __r2 = renpy.random.randint(1, 6)
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Alice shower-alt 0'+str(__r2), at_list=[alt_left_shift,])
-        $ renpy.show('Kira shower-alt 0'+str(__r1), at_list=[alt_right_shift,])
+        $ renpy.show('Kira shower-alt 0'+str(r1), at_list=[alt_right_shift,])
         show FG shower-water
         Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
         jump .end
@@ -2365,7 +2563,7 @@ label return_from_club:
     Kira_03 "Алиса, тише... Все уже спят! Нужно тихо, тихо, тихо... О... Макс? А ты почему не спишь?!"
     Max_02 "Да что-то не спится..."
 
-    if not flags['alice.drink']:
+    if not alice.daily.drink:
         # Макс не давал Алисе конфету перед уходом в клуб (возможен лишь стриптиз от Киры)
         Kira_05 "Это зря... Надо спать... Мы вот с Алисой тоже собираемся спать... Конечно, не вместе... Хотя... Она такая классная!"
         Max_07 "Кажется, кто-то пьян..."
@@ -2381,7 +2579,7 @@ label return_from_club:
         Max_04 "Я только за!"
         menu:
             Alice_03 "Не сомневаюсь, Макс. Но всё, хватит разговоров. Я пойду переодену и уложу тётю Киру в гостиной, а ты иди в свою комнату и ложись спать. Пока!"
-            "Давай лучше я уложу тётю Киру!" if flags['kira.tv.bj']:  # был 1-ый минет от Киры
+            "Давай лучше я уложу тётю Киру!" if kira.stat.blowjob:  # был 1-ый минет от Киры
                 Alice_05 "Наверняка из-за момента, что её нужно переодеть, да? Какой же ты испорченный мальчишка, Макс!"
                 Max_09 "Мне теперь и тёте любимой нельзя помочь без упрёков?! Может, это вы тут все испорченные, а я один адекватный. Тётя Кира, ты ведь не против, если я тебе помогу?"
                 Kira_05 "Ой, Макс... Я просто не могу отказать такому галантному вниманию. Алиса, можешь гулять... Макс обо мне позаботится."
@@ -2427,7 +2625,7 @@ label return_from_club:
         menu:
             Alice_12 "Только давай быстрее!"
             "{i}Дать Алисе конфету и отвести тётю в гостиную{/i}" if _in_replay or kol_choco > 0:  # есть алко-конфеты
-                $ flags['alice.drink'] = 2
+                $ alice.daily.drink = 2
                 $ give_choco()
                 Max_01 "Вот, держи конфетку, чтобы не скучать, пока я с тётей..."
                 Alice_02 "Ой, спасибо, это я люблю, Макс. На ночь лучше, конечно, сладости не есть, но разок можно. Ничего плохого не случится. Всё, жду полотенце..."
@@ -2501,7 +2699,7 @@ label return_from_club:
         Kira_07 "Тебе нравится, как я двигаюсь? Уверена, ты уже представил, как эта попка с жаром прыгает на твоём огромном члене! Ухх, я и сама начинаю намокать от этих мыслей..."
         Max_03 "Так может стоит в самом деле немного попрыгать перед сном?"
 
-        if dcv['kiratalk'].stage < 6:
+        if kira.dcv.feature.stage < 6:
             #если ещё не было 1-ой фотосессии с Кирой
             #after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
             $ renpy.show("Kira after-club s05-"+renpy.random.choice(['04', '05']))
@@ -2521,12 +2719,12 @@ label return_from_club:
                     $ renpy.end_replay()
                     $ current_room = house[0]
                     jump Sleep
-                "{i}принести Алисе полотенце{/i}" if flags['alice.drink'] and not _in_replay:
+                "{i}принести Алисе полотенце{/i}" if alice.daily.drink and not _in_replay:
                     jump alice_towel_after_club
 
         # была 1-ая фотосессия с Кирой
 
-        $ flags['strip.show'] = True  # Кира будет спать голой
+        $ kira.sleepnaked = True  # Кира будет спать голой
         $ added_mem_var('strip.show')
 
         #after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
@@ -2636,7 +2834,7 @@ label return_from_club:
                 $ current_room = house[0]
                 jump Sleep
 
-            "{i}принести Алисе полотенце{/i}" if flags['alice.drink']>1 and not _in_replay:
+            "{i}принести Алисе полотенце{/i}" if alice.daily.drink>1 and not _in_replay:
                 jump alice_towel_after_club
 
     label .ass:
@@ -2669,19 +2867,19 @@ label return_from_club:
                 $ current_room = house[0]
                 jump Sleep
 
-            "{i}принести Алисе полотенце{/i}" if flags['alice.drink'] and not _in_replay:
+            "{i}принести Алисе полотенце{/i}" if alice.daily.drink and not _in_replay:
                 jump alice_towel_after_club
 
 
 label kira_bath_with_eric:
     scene location house bathroom door-evening
-    if peeping['kira_bath'] != 0:
+    if kira.daily.bath != 0:
         return
 
-    $ peeping['kira_bath'] = 1
+    $ kira.daily.bath = 1
     menu:
         Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!"
-        "{i}воспользоваться стремянкой{/i}" if flags['ladder'] > 2:
+        "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             scene BG bath-00
             #bath-eric&kira-hj01 или bath-eric&kira-lick01
             if renpy.random.randint(1, 2):
@@ -2690,7 +2888,7 @@ label kira_bath_with_eric:
                 show Eric bath-kira lick01
             show FG bath-00
 
-            if talk_var['fight_for_Kira'] > 2:
+            if kira.dcv.battle.stage > 2:
                 Max_08 "Конечно, почему бы среди ночи не сходить в ванную, когда тебя там будет ждать шикарная тётя Кира, чтобы отсосать..."   #если Макс не сдавал Киру
             else:
                 Max_01 "Наверно, тётя Кира хотела прийти с работы и отдохнуть, а тут ещё и Эрику нужно отсосать сперва..."   #если Макс сдал Киру
@@ -2703,7 +2901,7 @@ label kira_bath_with_eric:
                 show Eric bath-kira bj01
             else:
                 show Eric bath-kira bj02
-            if talk_var['fight_for_Kira'] > 2:
+            if kira.dcv.battle.stage > 2:
                 Max_10 "Хватит уже трахать её в рот, как какую-то порнозвезду! Она конечно порнозвезда, но не круглые же сутки..."   #если Макс не сдавал Киру
             else:
                 Max_07 "Неплохо так Эрик её голову на свой член напяливает! Как будто так и надо..."   #если Макс сдал Киру
@@ -2713,7 +2911,7 @@ label kira_bath_with_eric:
 
             #bath-eric&kira-cum01
             show Eric bath-kira cum01
-            if talk_var['fight_for_Kira'] > 2:
+            if kira.dcv.battle.stage > 2:
                 menu:
                     Max_09 "Вот же сволочь! Спустил всё до последней капли Кире прямо в рот! Ну Эрик, ты у меня сполна получишь рано или поздно..."   #если Макс не сдавал Киру
                     "{i}уйти{/i}":

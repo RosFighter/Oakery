@@ -1,5 +1,4 @@
 init python:
-    import collections
     config.layers.insert(1, 'wm')
 
     def GetWeekday(day):  # возвращает номер дня недели
@@ -106,7 +105,7 @@ init python:
                     room.cur_bg = 'location '+str(loc)+' '+room.id+' night-'+random_loc_ab
 
         for char in chars:
-            if all([char=='eric', flags['eric.noticed'], flags['eric.jerk'], '02:00'<=tm<'02:30']):
+            if all([char=='eric', flags.eric_noticed, flags.eric_jerk, '02:00'<=tm<'02:30']):
                 # если Эрик дрочит на Алису и замечен, перемещаем его иконку в комнату Алисы без расиписания
                 house[1].cur_char.append('eric')
                 continue
@@ -125,57 +124,57 @@ init python:
 
 
     # находит самое раннее всплывающее событие в указанный промежуток времени и возвращает его ключ
-    def GetCutEvents(tm1, tm2, sleep):
-
-        # получим список событий, "всплывающих" в указанный период
-        eventslist = []
-        timelist = []
-        for cut in EventsByTime:
-            if (EventsByTime[cut].enabled and
-                    ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2)
-                    or
-                      ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= '08:00')
-                        and EventsByTime[cut].extend and EventsByTime[cut].sleep)
-                    or
-                      (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= '23:59'
-                                      or '00:00' <= EventsByTime[cut].tm <= tm2)))
-                and (((day+2) % 7) in EventsByTime[cut].lod) and
-                        (sleep == EventsByTime[cut].sleep or (sleep
-                            and EventsByTime[cut].cut
-                            and not EventsByTime[cut].sleep))):
-
-                    try:
-                        rez = eval(EventsByTime[cut].variable)
-                    except KeyError:
-                        # print('KeyError in: '+EventsByTime[cut].variable)
-                        rez = False
-                    except Exception:
-                        # print('Some other error in: '+EventsByTime[cut].variable)
-                        rez = False
-
-                    if rez:
-                        eventslist.append(cut)
-                        timelist.append(EventsByTime[cut].tm)
-
-        # получаем самое раннее время на случай если кат-событий несколько
-        if len(eventslist) > 0:
-            mintime = min(timelist)
-
-        # удалим из списка ключи с другим временем
-        i = 0
-        while i <= len(eventslist)-1:
-            if EventsByTime[eventslist[i]].tm == mintime:
-                i += 1
-            else:
-                eventslist.pop(i)
-
-        # если в это время стартует несколько событий - выбираем одно рандомно
-        if len(eventslist) > 1:
-            return eventslist[renpy.random.randint(0, len(eventslist)-1)]
-        elif len(eventslist) == 1:
-            return eventslist[0]
-        else:
-            return ''
+    # def GetCutEvents(tm1, tm2, sleep):
+    #
+    #     # получим список событий, "всплывающих" в указанный период
+    #     eventslist = []
+    #     timelist = []
+    #     for cut in EventsByTime:
+    #         if (EventsByTime[cut].enabled and
+    #                 ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2)
+    #                 or
+    #                   ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= '08:00')
+    #                     and EventsByTime[cut].extend and EventsByTime[cut].sleep)
+    #                 or
+    #                   (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= '23:59'
+    #                                   or '00:00' <= EventsByTime[cut].tm <= tm2)))
+    #             and (((day+2) % 7) in EventsByTime[cut].lod) and
+    #                     (sleep == EventsByTime[cut].sleep or (sleep
+    #                         and EventsByTime[cut].cut
+    #                         and not EventsByTime[cut].sleep))):
+    #
+    #                 try:
+    #                     rez = eval(EventsByTime[cut].variable)
+    #                 except KeyError:
+    #                     # print('KeyError in: '+EventsByTime[cut].variable)
+    #                     rez = False
+    #                 except Exception:
+    #                     # print('Some other error in: '+EventsByTime[cut].variable)
+    #                     rez = False
+    #
+    #                 if rez:
+    #                     eventslist.append(cut)
+    #                     timelist.append(EventsByTime[cut].tm)
+    #
+    #     # получаем самое раннее время на случай если кат-событий несколько
+    #     if len(eventslist) > 0:
+    #         mintime = min(timelist)
+    #
+    #     # удалим из списка ключи с другим временем
+    #     i = 0
+    #     while i <= len(eventslist)-1:
+    #         if EventsByTime[eventslist[i]].tm == mintime:
+    #             i += 1
+    #         else:
+    #             eventslist.pop(i)
+    #
+    #     # если в это время стартует несколько событий - выбираем одно рандомно
+    #     if len(eventslist) > 1:
+    #         return eventslist[renpy.random.randint(0, len(eventslist)-1)]
+    #     elif len(eventslist) == 1:
+    #         return eventslist[0]
+    #     else:
+    #         return ''
 
 
     # ищет все доступные темы для разговора с персонажем в текущей комнате
@@ -236,10 +235,8 @@ init python:
                         try:
                             rez = eval(gift.req)
                         except KeyError:
-                            # print('KeyError in: '+EventsByTime[cut].variable)
                             rez = False
                         except Exception:
-                            # print('Some other error in: '+EventsByTime[cut].variable)
                             rez = False
                         if rez:
                             menu_items.append((gift.select, gift))
@@ -248,10 +245,8 @@ init python:
                         try:
                             rez = eval(gift.req)
                         except KeyError:
-                            # print('KeyError in: '+EventsByTime[cut].variable)
                             rez = False
                         except Exception:
-                            # print('Some other error in: '+EventsByTime[cut].variable)
                             rez = False
                         if rez:
                             menu_items.append((gift.select, gift))
@@ -317,19 +312,9 @@ init python:
                 notify_list.append(_("+ к опыту анального секса"))
 
 
-    def NewSaveName(): # дополнение имени сохранения
-        global save_name
-        save_name = ('' + '$@' + str(weekdays[GetWeekday(day)][0]) +
-                    '$@' + str(tm) + '$@' + str(day) +
-                    '$@' + str(number_quicksave) +
-                    '$@' + str(number_autosave))
-
-
     def NewNumberAutosave(): # новый номер автосохранения
         global number_autosave
         number_autosave += 1
-
-        NewSaveName()
 
 
     def ChangeRel(rel): # возвращает текстовое описание изменения отношений
@@ -389,19 +374,19 @@ init python:
 
 
     def GetDeliveryString(courier): # формирует строку cо списком доставленных товаров
-        if _preferences.language is None:
-            StrDev = "Так... В накладной написано следующее:"
-        elif _preferences.language == "english":
-            StrDev = "So... In the consignment note says the following:"
-        elif _preferences.language == "deutsch":
-            StrDev = "Also... Auf dem Lieferschein steht folgendes:"
-        else:
-            StrDev = "..."
+        # if _preferences.language is None:
+        StrDev = __("Так... В накладной написано следующее:")
+        # elif _preferences.language == "english":
+        #     StrDev = "So... In the consignment note says the following:"
+        # elif _preferences.language == "deutsch":
+        #     StrDev = "Also... Auf dem Lieferschein steht folgendes:"
+        # else:
+        #     StrDev = "..."
 
         n = 0
         for i in delivery_list[courier]:
-            items[i].bought = False
-            items[i].have = True
+            items[i].bought = False     # удаляем признак доставки
+            items[i].have = True        # ставим признак наличия
             n += 1
             globals()['TmpName'+str(n)] = items[i].name
             StrDev += "\n \"[TmpName" + str(n) +"!t]\""
@@ -621,7 +606,7 @@ init python:
             AvailableActions['searchbook'].active = (cur_plan.name != 'read' and '08:00' <= tm < '22:00')
             if items['spider'].have:
                 AvailableActions['hidespider'].active = True
-            AvailableActions['searchciga'].active = (cur_plan.name != 'smoke' and 'betray_smoke' in dcv and dcv['betray_smoke'].done and '08:00' <= tm < '19:00')
+            AvailableActions['searchciga'].active = (cur_plan.name != 'smoke' and alice.dcv.set_up.enabled and alice.dcv.set_up.done and '08:00' <= tm < '19:00')
 
         # ванная комната
         if current_room == house[3]:
@@ -653,33 +638,25 @@ init python:
         # двор
         if current_room == house[6]:
             AvailableActions['clearpool'].enabled = ('10:00' <= tm <= '16:00') and (len(current_room.cur_char) == 0)
-            AvailableActions['clearpool'].active = (dcv['clearpool'].stage == 1)
+            AvailableActions['clearpool'].active = (dcv.clearpool.stage == 1)
             AvailableActions['catchspider'].active = ('10:00' <= tm < '12:00') and not items['spider'].have
 
 
     def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
         global cur_shed
-        mgg.dress = clothes[mgg].casual.GetCur().suf
+        mgg.dress = mgg.clothes.casual.GetCur().suf
 
-        if all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6]):
-            clothes[ann].casual.GetCur().suf = 'a'
+        if all([GetWeekday(day)==6, day>=11, flags.dinner==6]):
+            ann.clothes.casual.GetCur().suf = 'a'
 
         for char in chars:
             prev_shed = chars[char].get_plan(prevday, prevtime)
             cur_shed  = chars[char].get_plan()
-            # if cur_shed is None:
-            #     print char
-            #     print day, tm
-            # if prev_shed is None:
-            #     print 'prev', char
-            #     print cur_shed.name
-            #     print prevday, prevtime
             if (prev_shed is None and cur_shed is not None) or (cur_shed is not None and prev_shed.name!=cur_shed.name): # начато новое действие, значит меняем одежду
 
                 # удалим флаг подсматривания за персонажем через камеры при смене текущего действия
                 for cur_act in cam_flag:
                     if cur_act.split('_')[0] == char:
-                        # print('deleted cams act '+cur_act)
                         cam_flag.remove(cur_act)
 
                 # удалим признак просмотра неактивной камеры
@@ -691,41 +668,39 @@ init python:
                             cam_flag.remove(room.id+'-'+str(i))
                         i += 1
 
-                if char == 'alice' and talk_var['sun_oiled'] in [1, 2]:  # Если Алису уже намазали кремом, повторное намазываение невозможно
-                    talk_var['sun_oiled'] = 3
+                if char == 'alice' and alice.daily.oiled in [1, 2]:  # Если Алису уже намазали кремом, повторное намазываение невозможно
+                    alice.daily.oiled = 3
 
                 if char in ['ann', 'eric'] and 'ann_eric_scene' in globals():
                     ann_eric_scene = '' # обнулим сцену для камер, если она есть
                 dress, inf, clot = GetDressNps(char, cur_shed.name)
                 if dress != '':
                     chars[char].dress = dress
-                    # print('%s - %s : %s'%(char, clot, dress))
                 if inf != '':
                     chars[char].dress_inf = inf
 
 
     def GetDressNps(char, name):
-        # print char, name
         dress, inf, clot = '', '', ''
         if name=='dressed':
             inf = '00b'
 
         elif char=='lisa':
             if name == 'sleep':
-                dress = clothes[lisa].sleep.GetCur().suf
-                inf   = clothes[lisa].sleep.GetCur().info
+                dress = lisa.clothes.sleep.GetCur().suf
+                inf   = lisa.clothes.sleep.GetCur().info
                 clot  = 'sleep'
             elif name in ['read', 'breakfast', 'dinner', 'dishes', 'phone']:
-                dress = clothes[lisa].casual.GetCur().suf
-                inf   = clothes[lisa].casual.GetCur().info
+                dress = lisa.clothes.casual.GetCur().suf
+                inf   = lisa.clothes.casual.GetCur().info
                 clot  = 'casual'
             elif name in ['shower', 'bath']:
                 inf = '04a'
             elif name == 'in_shcool':
                 inf = '01b'
             elif name in ['sun', 'swim']:
-                dress = clothes[lisa].swimsuit.GetCur().suf
-                inf   = clothes[lisa].swimsuit.GetCur().info
+                dress = lisa.clothes.swimsuit.GetCur().suf
+                inf   = lisa.clothes.swimsuit.GetCur().info
                 clot  = 'swimsuit'
                 if name == 'swim' and pose3_1 == '03':
                     inf += 'w'
@@ -733,20 +708,20 @@ init python:
                 inf = '01'
             elif name == 'homework':
                 # ставим текщущую одежды соотвестсвенно гардеробу
-                dress = clothes[lisa].learn.GetCur().suf
-                inf   = clothes[lisa].learn.GetCur().info
+                dress = lisa.clothes.learn.GetCur().suf
+                inf   = lisa.clothes.learn.GetCur().info
                 clot  = 'learn'
                 # откорректируем по настрению
                 # relmood = GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2
-                # if clothes[lisa].learn.rand and relmood:
+                # if lisa.clothes.learn.rand and relmood:
                 #     # если включен рандом и есть нужные настроение с отношением, то полотенце
                 #     dress  = 'c'
                 #     inf    = '04b'
-                # elif clothes[lisa].learn.rand:  # рандом включен, но нет настроения
-                #     if 'bathrobe' in lisa.gifts and clothes[lisa].learn.cur==2:  # есть халат и выбрано полотенце, ставим халат
+                # elif lisa.clothes.learn.rand:  # рандом включен, но нет настроения
+                #     if 'bathrobe' in lisa.gifts and lisa.clothes.learn.cur==2:  # есть халат и выбрано полотенце, ставим халат
                 #         dress  = 'b'
                 #         inf    = '04'
-                #     elif 'bathrobe' not in lisa.gifts and clothes[lisa].learn.cur==1:  # нет халата, текущим стоит полотенце
+                #     elif 'bathrobe' not in lisa.gifts and lisa.clothes.learn.cur==1:  # нет халата, текущим стоит полотенце
                 #         if 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
                 #             dress  = 'd'
                 #             inf    = '01c'
@@ -755,28 +730,26 @@ init python:
                 #             inf    = '01a'
 
         elif char=='alice':
-            dress = clothes[alice].casual.GetCur().suf
-            inf   = clothes[alice].casual.GetCur().info
-            if flags['smoke']=='nojeans' and dress!='a':
+            dress = alice.clothes.casual.GetCur().suf
+            inf   = alice.clothes.casual.GetCur().info
+            if alice.req.result=='nojeans' and dress!='a':
                 # если есть требование не носить джинсы, но установлена другая одежда - отменяем требование
-                flags['smoke'] = None
-                flags['smoke.request'] = None
-            elif flags['smoke']=='nopants' and dress!='a':
+                alice.req.reset()
+            elif alice.req.result=='nopants' and dress!='a':
                 # если есть требование не носить трусы под джинсами, но установлена другая одежда - также отменяем требование
-                flags['smoke'] = None
-                flags['smoke.request'] = None
-            elif all([dress=='a', flags['smoke']=='nojeans', not check_is_home('ann')]):
+                alice.req.reset()
+            elif all([dress=='a', alice.req.result=='nojeans', not check_is_home('ann')]):
                 dress = 'c'
                 inf   = '02e'
 
             if name == 'sleep':
-                dress = clothes[alice].sleep.GetCur().suf
-                inf   = clothes[alice].sleep.GetCur().info
-                if 'smoke' in flags and flags['smoke'] == 'sleep':
+                dress = alice.clothes.sleep.GetCur().suf
+                inf   = alice.clothes.sleep.GetCur().info
+                if alice.req.result == 'sleep':
                     alice.sleeptoples = True
                     dress += 'a'
-                    inf = {'a':'02ga', 'b':'02ja'}[clothes[alice].sleep.GetCur().suf]
-                elif 'smoke' in flags and flags['smoke'] == 'naked':
+                    inf = {'a':'02ga', 'b':'02ja'}[alice.clothes.sleep.GetCur().suf]
+                elif alice.req.result == 'naked':
                     alice.sleepnaked = True
                     dress = ''
                     inf = '00a'
@@ -789,8 +762,8 @@ init python:
                 if not ('09:00' <= tm < '20:00'):
                     inf += 'a'
             elif name == 'blog':
-                if (GetWeekday(day) in [1, 4, 5] and all(['black_linderie' in alice.gifts, poss['blog'].stn>4, dcv['alice.secret'].done])
-                    or (GetWeekday(day)==3 and dcv['eric.lingerie'].enabled)):
+                if (GetWeekday(day) in [1, 4, 5] and all(['black_linderie' in alice.gifts, poss['blog'].stn>4, alice.dcv.feature.done])
+                    or (GetWeekday(day)==3 and alice.dcv.intrusion.enabled)):
                     # блог в нижнем белье
                     global cur_blog_lingerie, blog_lingerie
                     if not cur_blog_lingerie:
@@ -821,16 +794,16 @@ init python:
                 inf  = {'a' : '01b', 'b' : '01d', 'c' : '01g', 'd' : '01f'}[dress]
                 clot = 'casual'
             elif name == 'smoke':
-                dress = 'b' if flags['smoke'] == 'toples' else 'a'
-                inf   = '03b' if flags['smoke'] == 'toples' else '03'
+                dress = 'b' if alice.req.result == 'toples' else 'a'
+                inf   = '03b' if alice.req.result == 'toples' else '03'
             elif name == 'club':
                 dress = 'a'
                 inf   = '06'
 
         elif char=='ann':
             if name == 'sleep':
-                dress = clothes[ann].sleep.GetCur().suf
-                inf   = clothes[ann].sleep.GetCur().info
+                dress = ann.clothes.sleep.GetCur().suf
+                inf   = ann.clothes.sleep.GetCur().info
                 clot  = 'sleep'
             elif name == 'sleep2':
                 dress = 'n'
@@ -840,41 +813,41 @@ init python:
             elif name == 'yoga':
                 inf = '05'
             elif name == 'cooking':
-                dress = clothes[ann].cook_morn.GetCur().suf if tm < '12:00' else clothes[ann].cook_eve.GetCur().suf
-                inf   = clothes[ann].cook_morn.GetCur().info if tm < '12:00' else clothes[ann].cook_eve.GetCur().info
+                dress = ann.clothes.cook_morn.GetCur().suf if tm < '12:00' else ann.clothes.cook_eve.GetCur().suf
+                inf   = ann.clothes.cook_morn.GetCur().info if tm < '12:00' else ann.clothes.cook_eve.GetCur().info
                 clot  = 'cook_morn' if tm < '12:00' else 'cook_eve'
             elif name == 'breakfast':
-                dress = clothes[ann].cook_morn.GetCur().suf
-                inf   = {'a':'05a', 'b':'01b', 'd':'01e'}[clothes[ann].cook_morn.GetCur().suf]
+                dress = ann.clothes.cook_morn.GetCur().suf
+                inf   = {'a':'05a', 'b':'01b', 'd':'01e'}[ann.clothes.cook_morn.GetCur().suf]
                 clot  = 'cook_morn'
             elif name == 'resting':
                 if tm <= '12:00':
-                    dress = clothes[ann].rest_morn.GetCur().suf
-                    inf   = clothes[ann].rest_morn.GetCur().info
+                    dress = ann.clothes.rest_morn.GetCur().suf
+                    inf   = ann.clothes.rest_morn.GetCur().info
                     clot  = 'rest_morn'
                 elif tm <= '19:00':
                     dress = 'b' # купальник
                     inf   = '03'
                     clot  = 'купальник'
                 else: # футболка или полотенце
-                    dress = clothes[ann].rest_eve.GetCur().suf
-                    inf   = clothes[ann].rest_eve.GetCur().info
+                    dress = ann.clothes.rest_eve.GetCur().suf
+                    inf   = ann.clothes.rest_eve.GetCur().info
                     clot  = 'rest_eve'
             elif name == 'at_work':
                 inf = '01a'
             elif name == 'in_shop':
                 inf = '01'
             elif name == 'read':
-                dress = clothes[ann].casual.GetCur().suf if tm < '14:00' else 'b'
-                inf   = clothes[ann].casual.GetCur().info if tm < '14:00' else '03'
+                dress = ann.clothes.casual.GetCur().suf if tm < '14:00' else 'b'
+                inf   = ann.clothes.casual.GetCur().info if tm < '14:00' else '03'
                 clot  = 'casual' if tm < '14:00' else 'купальник'
             elif name == 'sun':
                 inf = '03'
             elif name == 'swim':
                 inf = '03a'
             elif name == 'dinner':
-                dress = clothes[ann].casual.GetCur().suf
-                inf   = clothes[ann].casual.GetCur().info
+                dress = ann.clothes.casual.GetCur().suf
+                inf   = ann.clothes.casual.GetCur().info
                 clot  = 'casual'
             elif name in ['tv','tv2']:
                 inf = '04b'
@@ -903,9 +876,9 @@ init python:
             if name in ['swim', 'sun']:
                 inf = '03w' if pose3_4 == '03' and name == 'swim' else '03'
             elif name == 'sleep':
-                if flags['strip.show'] and GetWeekday(day)==6:
+                if kira.sleepnaked and GetWeekday(day)==6:
                     dress = 'b'
-                inf = '00' if flags['strip.show'] and GetWeekday(day)==6 else '02'
+                inf = '00' if kira.sleepnaked and GetWeekday(day)==6 else '02'
             elif name == 'night_tv':
                 inf = '02'
             elif name == 'studio':
@@ -1053,7 +1026,7 @@ init python:
                 day == 4,
                 day == 11,
                 ('eric' in chars and eric.plan_name == 'dinner'),
-                all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6]),
+                all([GetWeekday(day)==6, day>=11, flags.dinner==6]),
             ]):
             renpy.show('Eric dinner 0'+renpy.random.choice(['1', '2', '3'])+eric.dress)
             renpy.show('Ann dinner 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
@@ -1067,7 +1040,7 @@ init python:
                 day == 4,
                 day == 11,
                 ('eric' in chars and eric.plan_name == 'dinner'),
-                all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6])
+                all([GetWeekday(day)==6, day>=11, flags.dinner==6])
             ]):
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
         else:
@@ -1083,10 +1056,10 @@ init python:
         elif punlisa[0][0] == 1:
             return 1000  # Макс сделал ошибку
 
-        elif not dcv['lisa.punpause'].done:
+        elif not lisa.dcv.punpause.done:
             return 0 # не прошёл откат рандомных наказаний
 
-        elif poss['sg'].stn == 2 and talk_var['truehelp']>=6:  # Макс на "хорошей" ветке и помог 6 и более раз
+        elif poss['sg'].stn == 2 and lisa.flags.truehelp>5:  # Макс на "хорошей" ветке и помог 6 и более раз
 
             s = 0
 
@@ -1130,13 +1103,13 @@ init python:
 
 
     def GetAlicePunChance():  # вероятность наказания Алисы
-        if len(punalice) == 0 or not dcv['smoke'].done:  # Алиса не курила
+        if len(punalice) == 0 or not alice.dcv.special.done:  # Алиса не курила
             return 0
 
         elif punalice[0][1]:   # Макс подставил Алису
             return 1000
 
-        elif not dcv['alice.punpause'].done:
+        elif not alice.dcv.punpause.done:
             return 0 # не прошёл откат рандомных наказаний
 
         else:
@@ -1184,7 +1157,7 @@ init python:
     def GetDisobedience():  # вероятность ослушания Алисы
         chance = 90
         rise = 90
-        if not dcv['alice.prudence'].done:
+        if not alice.dcv.prudence.done:
             # в дни благоразумия Алиса не нарушает уговор
             return 0
 
@@ -1221,34 +1194,6 @@ init python:
         if all((not renpy.get_screen('notify'), notify_list)):
             renpy.notify(notify_list.pop(0));
 
-    # # функция для смены курсора
-    # # курсоры должны лежать в папке images/interface/cursors
-    # # формат имен фалов для курсоров:
-    # # 'images/interface/cursors/ИмяКурсора.png'
-    # def cursor(name = None):
-    #     config.mouse = None
-    #     if renpy.game.preferences.physical_size[1] < 900:
-    #         if name == 'find':
-    #             config.mouse = {'default' : [('images/interface/cursors/find-64.webp', 27, 27)]}
-    #         elif name == 'talk':
-    #             config.mouse = {'default' : [('images/interface/cursors/talk-64.webp', 11, 50)]}
-    #         elif name == 'palms':
-    #             config.mouse = {'default' : [('images/interface/cursors/palms-64.webp', 37, 32)]}
-    #         elif name:
-    #             config.mouse = {'default' : [('images/interface/cursors/' + name + '-64.webp', 0, 0)]}
-    #     else:
-    #         if name == 'find':
-    #             config.mouse = {'default' : [('images/interface/cursors/find-80.webp', 33, 33)]}
-    #         elif name == 'talk':
-    #             config.mouse = {'default' : [('images/interface/cursors/talk-80.webp', 14, 61)]}
-    #         elif name == 'palms':
-    #             config.mouse = {'default' : [('images/interface/cursors/palms-80.webp', 46, 40)]}
-    #         elif name:
-    #             config.mouse = {'default' : [('images/interface/cursors/' + name + '-80.webp', 0, 0)]}
-    # # превращаем функцию в action,
-    # # чтобы можно было привязать, например, к нажатию кнопок:
-    # # action Cursor('talk')
-    # Cursor = renpy.curry(cursor)
 
     def have_dialog():  # возвращает признак наличия диалога для первого персонажа в комнате
         # cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
@@ -1257,13 +1202,6 @@ init python:
             return cur_plan.enabletalk and len(TalkMenuItems()) > 0
         else:
             return False
-
-
-    def there_in_stock(char):  # проверяет, есть ли у Макса подарок персонажу в качестве извинения
-        for id in sorry_gifts[char].valid:
-            if items[id].have:
-                return True
-        return False
 
 
     def check_is_home(char, loc='house'):  # определяет (по расписанию) находится ли персонаж дома в данный момент
@@ -1463,50 +1401,6 @@ init python:
         expected_photo.clear()
 
 
-    def ready_for_lesson0():
-        mn = day
-        while GetWeekday(mn)!=1:
-            mn += 1
-        dcv['ae_ed_lisa'].enabled = True
-        dcv['ae_ed_lisa'].stage = 1
-        plan = eric.get_plan(mn, '22:00')
-        new_plan = Schedule((1,), '22:00', '22:29', plan.name, plan.desc, plan.loc, plan.room, plan.label,
-                            plan.krat, plan.shift, plan.weekstart, "talk_var['ae_lisa_number']>=4",
-                            plan.enabletalk, plan.talklabel, plan.glow)
-        eric.add_schedule(
-                new_plan,
-                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="talk_var['ae_lisa_number']<0", enabletalk=False, glow=120),
-                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу', 'house', 2, 'sexed_lisa', variable="0<=talk_var['ae_lisa_number']<4", enabletalk=False, glow=180),
-            )
-        plan = lisa.get_plan(mn, '22:00')
-        new_plan = Schedule((1,), '22:00', '22:29', plan.name, plan.desc, plan.loc, plan.room, plan.label,
-                            plan.krat, plan.shift, plan.weekstart, "talk_var['ae_lisa_number']>=4",
-                            plan.enabletalk, plan.talklabel, plan.glow)
-        lisa.add_schedule(
-                new_plan,
-                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="talk_var['ae_lisa_number']<0", enabletalk=False, glow=120),
-                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу', 'house', 2, 'sexed_lisa', variable="0<=talk_var['ae_lisa_number']<4", enabletalk=False, glow=180),
-            )
-        plan = ann.get_plan(mn, '22:00')
-        new_plan = Schedule((1,), '22:00', '22:29', plan.name, plan.desc, plan.loc, plan.room, plan.label,
-                            plan.krat, plan.shift, plan.weekstart, "talk_var['ae_lisa_number']>=4",
-                            plan.enabletalk, plan.talklabel, plan.glow)
-        ann.add_schedule(
-                new_plan,
-                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="talk_var['ae_lisa_number']<0", enabletalk=False, glow=120),
-                Schedule((1,), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу', 'house', 2, 'sexed_lisa', variable="0<=talk_var['ae_lisa_number']<4", enabletalk=False, glow=180),
-            )
-
-
-    def ready_for_blog0():
-        eric.add_schedule(Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150))
-        alice.add_schedule(
-                Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', enabletalk=False, glow=150),
-                Schedule((3,), '21:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="dcv['eric.lingerie'].enabled", enabletalk=False, glow=150),
-            )
-        dcv['eric.lingerie'].set_lost(6)
-
-
     def music_starter():
         if renpy.music.get_playing():
             return
@@ -1527,33 +1421,21 @@ init python:
         rez = False
         if any([day==4, day==11]):
             rez = True
-        elif all([GetWeekday(day)==6, day>=11, talk_var['dinner']==6]):
+        elif all([GetWeekday(day)==6, day>=11, flags.dinner==6]):
             rez = True
-        elif all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)]):
+        elif all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)]):
             rez = True
-        elif all([GetWeekday(day)==6, talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done]):
+        elif all([GetWeekday(day)==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done]):
             rez = True
-        elif all([GetWeekday(day)==6, talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)]):
+        elif all([GetWeekday(day)==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)]):
             rez = True
-        elif all([GetWeekday(day)==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done]):
+        elif all([GetWeekday(day)==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done]):
             rez = True
-        elif all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7]):
+        elif all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7]):
             rez = True
 
 
         return rez
-
-
-    def Eric_caught_Kira():
-        eric.add_schedule(
-                Schedule((2, 5), '2:00', '2:29', 'fuck',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable="not flags['eric.jerk']", enabletalk=False, glow=140),
-                Schedule((2, 5), '2:00', '2:29', 'sleep2', 'спит с Анной', 'house', 2, 'eric_ann_sleep', variable="flags['eric.jerk']", enabletalk=False, glow=110),
-            )
-        kira.add_schedule(
-                Schedule((2, 5), '2:00', '2:29', 'bath',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable="not flags['eric.jerk']", enabletalk=False, glow=140),
-                Schedule((2, 5), '2:00', '2:29', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', variable="flags['eric.jerk']", enabletalk=False, glow=125),
-            )
-        # renpy.say(Max, "...")
 
 
     def set_extra_album():
@@ -1567,3 +1449,7 @@ init python:
                     elif cur_album is None:
                         cur_album = id_alb
                         break
+
+
+    def list_in_list(sub_lst, lst):
+        return all(x in lst for x in sub_lst)

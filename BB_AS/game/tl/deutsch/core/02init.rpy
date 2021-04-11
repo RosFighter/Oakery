@@ -450,3 +450,27 @@ translate deutsch strings:
     old "Прикупил для тебя немного сладенького!"
     new ""
 
+# TODO: Translation updated at 2021-04-11 22:25
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:116
+    old "Хотел узнать, хорошо ли тебе сидится?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Не слабо тебя отшлёпали!"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Ты не передумала о наказаниях?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Отшлёпать тебя сейчас или..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Пора отшлёпать одну милую попку!"
+    new ""
+

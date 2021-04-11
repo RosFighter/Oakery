@@ -1,4 +1,3 @@
-
 label AliceTalkStart:
 
     $ dial = TalkMenuItems()
@@ -79,7 +78,7 @@ label Alice_cooldown:
 
 
 label wash_dishes_alice:
-    $ talk_var['alice_dw'] = 1
+    $ alice.daily.dishes = 1
     menu:
         Alice_13 "Хочешь о посуде поговорить или пришёл помочь?"
         "Давай, я домою остальное":
@@ -254,7 +253,7 @@ label talkblog1:
             jump .findout
 
     label .together:
-        $ talk_var['blog'] = 2
+        $ alice.flags.crush = 2
         menu:
             Alice_14 "Вместе? Ещё ничего нет, а уже в партнёры набиваешься?"
             "Ну если придумаю что-то, то почему нет?":
@@ -277,7 +276,7 @@ label talkblog1:
         jump .end
 
     label .findout:
-        $ talk_var['blog'] = 2
+        $ alice.flags.crush = 2
         menu:
             Alice_07 "Ну, давай. Сомневаюсь, конечно, что это не пустая болтовня, но вдруг... Удиви меня!"
             "Постараюсь...":
@@ -291,9 +290,8 @@ label talkblog1:
                 Max_00 "Да прорвёмся!"
 
     label .end:
-        if talk_var['blog'] == 2:
-            $ spent_time = 10
-            jump Waiting
+        $ spent_time = 10
+        jump Waiting
 
 
 label alice_talk_tv:
@@ -303,7 +301,7 @@ label alice_talk_tv:
         if 'alice_talk_tv' not in persistent.memories:
             $ persistent.memories['alice_talk_tv'] = 0
     Alice_00 "Нет, садись. Тут места много..."
-    $ talk_var['alice_tv'] = 1
+    $ alice.daily.tvwatch = 1
     $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
     Max_00 "Хорошо. Что смотришь?"
     $ __mood = 50
@@ -314,13 +312,13 @@ label alice_talk_tv:
             Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
             Max_00 "Ладно, пойду я..."
             jump .end
-        "Тебе сделать массаж ног?" if _in_replay or all([not talk_var['al.tv.mas'], (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):
+        "Тебе сделать массаж ног?" if _in_replay or all([not alice.daily.massage, (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):
             $ renpy.show("Max tv-closer 04"+mgg.dress)
 
-    $ talk_var['al.tv.mas'] = 1
+    $ alice.daily.massage = 1
     $ _ch4 = GetChance(mgg.social, 4, 900)
     $ _drink = 0
-    if flags['alice.tv.mass'] == 0:     # Первая беседа о массаже
+    if alice.flags.m_foot == 0:     # Первая беседа о массаже
         Alice_02 "Что-то новенькое... А ты умеешь?"
         Max_01 "Само собой!"
         Alice_01 "Могу я спросить откуда? Раньше ты, вроде бы, не умел. Да и не представляю, где бы ты мог этому научиться..."
@@ -333,8 +331,8 @@ label alice_talk_tv:
                 Alice_01 "Что-то я очень сомневаюсь, Макс..." nointeract
         if renpy.display_menu([(_("Так тебе продемонстрировать или как? \n{color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}"), 1)]) == 1:
             pass
-        $ flags['alice.tv.mass'] = 1
-    elif flags['alice.tv.mass'] in range(1, 5):
+        $ alice.flags.m_foot = 1
+    elif alice.flags.m_foot in range(1, 6):
         menu:
             Alice_02 "Ну, не знаю, не знаю..."
             "Тебе понравится! \n{color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}":
@@ -363,7 +361,7 @@ label alice_talk_tv:
             jump .choco
 
     label .choco:
-        if dcv['tvchoco'].done:
+        if alice.dcv.seduce.done:
             menu:
                 Alice_02 "У меня такое чувство, что ты чего-то от меня хочешь... Но не сознаешься ведь?"
                 "Хочу тебя!" if not _in_replay:
@@ -385,7 +383,7 @@ label alice_talk_tv:
             if RandomChance(_ch3.ch) or _in_replay:
                 ## Алиса съела конфетку
                 $ give_choco()
-                $ dcv['tvchoco'].set_lost(3)
+                $ alice.dcv.seduce.set_lost(3)
                 $ _drink = 1
                 $ Skill('social', 0.1)
                 menu:   ### Убеждение удалось
@@ -393,7 +391,7 @@ label alice_talk_tv:
                     "Ну, хорошо {i}(начать массаж){/i}":
                         jump .massage
             else:
-                $ dcv['tvchoco'].set_lost(2)
+                $ alice.dcv.seduce.set_lost(2)
                 $ Skill('social', 0.05)
                 menu:   ###Убеждение не удалось
                     Alice_01 "[failed!t]Нет, Макс. Спасибо, конечно, но рисковать я не буду. Ну так что, массаж делать будешь или забыл, что собирался?"
@@ -416,8 +414,8 @@ label alice_talk_tv:
         if RandomChance(_ch20.ch) or _in_replay:  ### {i}Алисе понравился массаж!{/i}
             $ Skill('massage', 0.1)
             $ _ch2 = GetChance(mgg.social, 2)
-            $ flags['alice.tv.mass'] += 1
-            $ _can_double_choko = _drink>0 and kol_choco>0 and (flags['double_mass_alice'] or alice.dress=='a')
+            $ alice.flags.m_foot += 1
+            $ _can_double_choko = _drink>0 and kol_choco>0 and (alice.flags.hip_mass or alice.dress=='a')
             $ _pose = {'01':'03', '02':'04'}[_pose]
             scene BG tv-mass-03
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
@@ -428,6 +426,8 @@ label alice_talk_tv:
             menu: ### {i}Алисе не понравился массаж!{/i}
                 Alice_12 "[alice_bad_mass!t]Ой, Макс, больно! Не надо так. Ты чуть лодыжку не вывихнул мне... Иди ещё потренируйся там на кошках или в ютубе поучись!"
                 "{i}закончить{/i}":
+                    if alice.flags.m_foot in range(2, 6):
+                        $ alice.flags.m_foot -= 1
                     jump .end
 
     label .choice_mass:
@@ -458,14 +458,14 @@ label alice_talk_tv:
                 Alice_04 "Только давай ты снимешь их с меня сам, а то я уже так расслабилась, что двигаться не хочется."
                 Max_03 "О, это я с радостью сделаю!"
                 Alice_07 "Я немного приподнимусь, чтобы тебе было проще их стянуть..."   #спрайт со стягиванием джинсов
-                if flags['smoke'] == 'nopants':
+                if alice.req.result == 'nopants':
                     $ renpy.show('Alice tv-mass ' + _pose + _dress+'-3')
                     Max_06 "О да, это ты классно придумала!"   #если на Алисе нет трусиков
                 else:
                     $ renpy.show('Alice tv-mass ' + _pose + _dress+'-2')
                     Max_05 "О да, так гораздо лучше..."   #если на Алисе есть трусики
                 Alice_05 "Ты только там сильно не заглядывайся, куда не нужно! Лучше скорее продолжай массаж, пока я не расхотела..."
-                if flags['smoke'] == 'nopants':
+                if alice.req.result == 'nopants':
                     Max_07 "Ну да... точно... я же... это... массаж делал."   #если на Алисе нет трусиков
                     Alice_03 "Ты чего там так тормозишь? Как будто в трусиках меня никогда не видел..."
                     # стянуть джинсы до конца
@@ -515,7 +515,7 @@ label alice_talk_tv:
     label .jeans:
         $ Skill('social', 0.1)
         ### Убеждение снять джинсы удалось
-        if 'smoke' in talk_var and flags['smoke'] == 'nopants':  # Алиса сейчас без трусиков
+        if alice.req.result == 'nopants':  # Алиса сейчас без трусиков
             menu:   ### Убеждение удалось, но Алиса без трусов
                 Alice_02 "[succes!t]Да, что-то тесновато в них и так жарко... Хотя...Не-е-ет, нет, нет! Не буду снимать я сейчас джинсы. Не дождёшься!"
                 "Почему?":
@@ -534,7 +534,7 @@ label alice_talk_tv:
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
             menu .not_jeans:
                 Alice_05 "Да, так гораздо лучше. Только ты не пялься, куда не надо. Вижу, краем глаза пытаешься что-то разглядеть. Вот не надо. Лучше, продолжай массаж..."
-                "А почему на тебе трусики?" if flags['smoke'] == 'not_nopants':
+                "А почему на тебе трусики?" if alice.req.result == 'not_nopants':
                     Alice_07 "А с чего бы мне быть без них!"
                     Alice_14 "Ой..."
                     Max_09 "Вот ты и попалась! Я значит тут со всей любезностью массаж сестрёнке делаю, конфетами угощаю, а она..."
@@ -548,7 +548,7 @@ label alice_talk_tv:
                     if not _in_replay:
                         $ added_mem_var('alice_not_nopants')
                         $ current_room = house[0]
-                        $ dcv['alice.prudence'].set_lost(renpy.random.randint(2, 5))
+                        $ alice.dcv.prudence.set_lost(renpy.random.randint(2, 5))
                         $ punalice[2][0]=10  #ставим на три дня раньше требование Макса, чтобы ослушание Алисы наступило раньше, чем при требовании во время курения
                     jump .end
                 "{i}продолжить{/i} \n{color=[_ch25.col]}(Массаж. Шанс: [_ch25.vis]){/color}" if _drink==2:
@@ -572,11 +572,11 @@ label alice_talk_tv:
                 "Да, это будет на десерт...":
                     menu:
                         Alice_08 "Ты так в себе уверен, Макс... Забыл, что я твоя сестра? Не говори глупости... Просто продолжай массировать мои ножки. Если ты ещё не в курсе, они у меня целиком - эрогенная зона..."
-                        "{i}попытаться приставать{/i}" if _drink < 2 and not _in_replay and not flags['double_mass_alice']:
+                        "{i}попытаться приставать{/i}" if _drink < 2 and not _in_replay and not alice.flags.hip_mass:
                             jump .fail
-                        "{i}массировать её ноги выше{/i}" if _drink > 1 and flags['double_mass_alice']:
+                        "{i}массировать её ноги выше{/i}" if _drink > 1 and alice.flags.hip_mass:
                             jump advanced_massage1
-                        "{i}продолжать массаж{/i}" if not _in_replay or (_in_replay and not flags['double_mass_alice']):
+                        "{i}продолжать массаж{/i}" if not _in_replay or (_in_replay and not alice.flags.hip_mass):
                             pass
                 "{i}продолжать молча{/i}":
                     menu:
@@ -586,11 +586,11 @@ label alice_talk_tv:
                                 Alice_05 "На сколько захочу? На секунду! Ой. Она прошла... Всё, Макс, твоё время вышло... Ладно, засовывай свою штуку обратно. Что-то голова кружится... Макс, уйди по хорошему, а..."
                                 "{i}уйти{/i}":
                                     jump .end
-                        "{i}попытаться приставать{/i}" if _drink < 2 and not _in_replay and not flags['double_mass_alice']:
+                        "{i}попытаться приставать{/i}" if _drink < 2 and not _in_replay and not alice.flags.hip_mass:
                             jump .fail
-                        "{i}массировать её ноги выше{/i}" if _drink > 1 and flags['double_mass_alice']:
+                        "{i}массировать её ноги выше{/i}" if _drink > 1 and alice.flags.hip_mass:
                             jump advanced_massage1
-                        "{i}продолжать массаж{/i}" if not _in_replay or (_in_replay and not flags['double_mass_alice']):
+                        "{i}продолжать массаж{/i}" if not _in_replay or (_in_replay and not alice.flags.hip_mass):
                             pass
 
         elif RandomChance(_ch15.ch) and not _drink: ### {i}Алисе понравился массаж!{/i} конфету Алиса не ела
@@ -613,9 +613,9 @@ label alice_talk_tv:
     Max_05 "Я тоже не ожидал... такого..."
     Alice_08 "Значит, мы оба полны сюрпризов. Ну всё, хорошего помаленьку. Давай, засовывай свой член обратно, а то до добра это всё дело не дойдёт... Да, и спасибо за массаж..."
     Max_03 "Тебе спасибо..."
-    $ talk_var['al.tvgood'] += 1
+    $ alice.stat.footjob += 1
     $ persistent.memories['alice_talk_tv'] = 1
-    $ talk_var['al.tv.mas'] = 3
+    $ alice.daily.massage = 3
     jump .end
 
     menu .fail:
@@ -636,9 +636,9 @@ label advanced_massage1:
     $ _pose = {'05':'09', '06':'10'}[_pose]
     $ renpy.show('Alice tv-mass ' + _pose + _dress)
     #tv-mass-09-10
-    if flags['double_mass_alice'] < 2:
+    if alice.flags.hip_mass < 2:
         Max_08 "{i}( Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух... ){/i}"   #только при первом расширенном массаже
-        $ flags['double_mass_alice'] = 2
+        $ alice.flags.hip_mass = 2
     $ added_mem_var('double_mass_alice')
     Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... У меня ведь красивые ноги, правда?"
     Max_03 "Очень красивые, сестрёнка! Такие мягкие, но упругие... Массировать их - одно удовольствие! А ещё они у тебя шаловливые..."
@@ -681,7 +681,7 @@ label advanced_massage1:
     Max_03 "Тебе спасибо..."
     $ renpy.end_replay()
     $ current_room = house[0]
-    $ talk_var['al.tv.mas'] = 4
+    $ alice.daily.massage = 4
     jump alice_talk_tv.end
 
 
@@ -724,7 +724,7 @@ label first_talk_smoke:
     Alice_13 "Упс. Макс, ты ничего не видел!"
     $ poss['smoke'].OpenStage(0)
     Max_08 "Алиса, ты куришь?!"
-    $ dcv['smoke'].stage = 1
+    $ alice.dcv.special.stage = 1
     menu:
         Alice_12 "Нет, блин, просто зажгла сигарету, посмотреть как горит... Давай так, ты уйдёшь и сделаешь вид, что ничего не было, хорошо?"
         "А если уйду, что мне за это будет?":
@@ -771,7 +771,7 @@ label first_talk_smoke:
                     $ __mood -= 50
                     $ spent_time += 10
                     $ mgg.ask(0)
-                    $ flags['smoke.request'] = 'money'
+                    $ alice.req.req = 'money'
                     menu:
                         Alice_13 "Сейчас сбегаю за деньгами...\nВот, держи $10, и теперь-то уж точно ты ничего не видел. Так?"
                         "Так!":
@@ -895,12 +895,11 @@ label second_talk_smoke:
             Max_01 "Конечно!"
 
     $ AddRelMood('alice', 5, __mood)
-    $ items['cigarettes'].InShop = True
+    $ items['cigarettes'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
-    $ talk_var['alice.pun'] = 0
-    $ dcv['smoke'].stage = 2
-    $ dcv['smoke'].set_lost(1)
-    $ dcv['betray_smoke'] = Daily(1, False, True)
+    $ alice.dcv.special.stage = 2
+    $ alice.dcv.special.set_lost(1)
+    $ alice.dcv.set_up.set_lost(1)
     $ AvailableActions['searchciga'].enabled = True
     $ spent_time = 30 - int(tm[-2:])
     jump Waiting
@@ -913,12 +912,12 @@ label gift_cigarettes:
         "А что взамен?":
             Alice_13 "Макс! Не будь придурком. Давай сюда!"
             Max_01 "Ну, держи..."
-        "Только давай условимся, что ты не скажешь маме о том, как я за тобой подглядывал в душе..." if peeping['alice_shower'] == 3:
+        "Только давай условимся, что ты не скажешь маме о том, как я за тобой подглядывал в душе..." if alice.daily.shower == 3:
             Alice_12 "Хоть ты и тот ещё извращенец, Макс, но мне было сложно достать эти сигареты самой... Так и быть, мама ничего не узнает, по крайней мере в этот раз."
             Max_05 "Спасибо, Алиса! И я не извращенец. Просто проходил мимо, а там такая красотища..."
             Alice_05 "Ну да, ну да... Мимо он проходил..."
             $ punreason[1] = 0
-            $ peeping['alice_shower'] = 0
+            $ alice.daily.shower = 0
         "Держи!":
             if alice.GetMood()[0] < -1:
                 Alice_05 "Хотя ты и полный придурок, но, похоже, начинаешь исправляться!"
@@ -929,10 +928,10 @@ label gift_cigarettes:
                 Max_05 "Да не за что..."
     Alice_03 "Спасибо. И маме ни слова! У неё рука очень тяжёлая, особенно когда речь о сигаретах..."
     Max_01 "Конечно!"
-    $ items['cigarettes'].have = False
+    $ items['cigarettes'].use()
     $ __mood += 100
     $ spent_time += 10
-    $ dcv['smoke'].set_lost(0)
+    $ alice.dcv.special.set_lost(0) # теперь Алиса снова может курить
     $ AddRelMood('alice', 10, __mood, 3)
     return
 
@@ -981,12 +980,12 @@ label smoke_fear:
     $ _ch3 = GetChanceConvince(punalice, 3)
     $ _ch2 = GetChanceConvince(punalice, 2)
     $ _ch1 = GetChanceConvince(punalice)
-    $ __can_nojeans = all(['kira' in chars, clothes[alice].casual.cur==0, 'pajamas' in alice.gifts])
+    $ __can_nojeans = all(['kira' in chars, alice.clothes.casual.cur==0, 'pajamas' in alice.gifts])
     menu:
         Alice_13 "Говори, что ты хочешь за молчание?"
         "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}":
             jump .money
-        "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if clothes[alice].casual.cur==0:
+        "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if alice.clothes.casual.cur==0:
             # пункт доступен, если Алиса носит джинсы
             jump .nopants
         "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
@@ -1009,29 +1008,56 @@ label smoke_fear:
                             Alice_03 "[succes!t]Хорошо. Не буду я одевать джинсы, только дай уже покурить спокойно!"
                             "Конечно!":
                                 $ punalice[0][0] = 7
-                                $ flags['smoke.request'] = "nojeans"
-                                $ flags['smoke'] = "nojeans"
+                                $ alice.req.req = "nojeans"
+                                $ alice.req.result = "nojeans"
                                 $ added_mem_var('nojeans')
                                 jump .end
                     else:
                         jump .fail2
                 "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}":
                     jump .money
-                "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if clothes[alice].casual.cur==0:
+                "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if alice.clothes.casual.cur==0:
                     # пункт доступен, если Алиса носит джинсы
                     jump .nopants
                 "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
                     jump .sleep_toples
                 "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
                     jump .smoke_toples
-        # "Если разрешишь тебя отшлёпать, то я ничего не скажу {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
-        #     # будет доступно в следующих версиях
-        #     if RandomChance(_ch1.ch):
-        #         $ punalice[0][0] = 3
-        #     else:
-        #         $ Skill('social', 0.1)
-        #         jump .fail
-        "Хочу, чтобы ты спала голой! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}" if all([flags['eric.firstjerk'], flags['alice.nakedpunish'], flags['eric.photo1']>0]):
+        "Если разрешишь тебя отшлёпать, то я ничего не скажу!" if alice.dcv.private.stage > 4 and not alice.spanked:
+            # если состоялось первое приватное наказание и Алиса сегодня ещё не отшлёпана
+            if not alice.dcv.private.done:
+                # накануне спасли попку Алисы от наказания
+                jump alice_private_punish_r.smoke
+            else:
+                if not (punalice[1][2] or punalice[1][3]):
+                    #если Алису не наказывали
+                    Alice_12 "Это ещё с чего, Макс?! Меня же не наказывали! А мы договаривались, если ты меня спас от мамы, то и отшлёпать можешь..."  nointeract
+                else: # punalice[1][3]:
+                    # Ализа понесла наказание
+                    Alice_12 "Это ещё с чего, Макс?! Ты же мою попку от мамы не спас! А мы договаривались, если ты меня выручаешь, то и отшлёпать можешь..."  nointeract
+                menu:
+                    "Но сейчас тебя есть за что отшлёпать! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
+                        if RandomChance(_ch1.ch):
+                            $ Skill('social', 0.2)
+                            # удалось убедить
+                            Alice_05 "[succes!t]Ну... Только если легонько! Понял?! Только докурю сперва в тишине и покое..."
+                            menu:
+                                Max_03 "Хорошо. Я подожду..."
+                                "{i}подождать Алису{/i}":
+                                    jump alice_private_punish_r.smoke_pun
+                        else:
+                            menu:
+                                Alice_16 "[failed!t]Нет уж! Что-то другое ещё можешь попробовать выпросить, но к своей попке я тебя сегодня не подпущу."
+                                "Дай $20, и я ничего не скажу {color=[_ch8.col]}(Убеждение. Шанс: [_ch8.vis]){/color}":
+                                    jump .money
+                                "Если днем ты будешь ходить без трусов, буду молчать {color=[_ch4.col]}(Убеждение. Шанс: [_ch4.vis]){/color}" if alice.clothes.casual.cur==0:
+                                    # пункт доступен, если Алиса носит джинсы
+                                    jump .nopants
+                                "Если больше не будешь носить лифчик, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
+                                    jump .sleep_toples
+                                "Если будешь курить без верха купальника, буду молчать {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}":
+                                    jump .smoke_toples
+        "Хочу, чтобы ты спала голой! {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}" if all([eric.stat.mast, alice.flags.nakedpunish, flags.eric_photo1>0]):
             # если Эрик был хотя бы раз замечен на балконе Алисы и алису наказывали голой
             if RandomChance(_ch2.ch):
                 $ Skill('social', 0.2)
@@ -1043,14 +1069,13 @@ label smoke_fear:
                 Max_04 "Вот и отлично!"
                 Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
                 $ punalice[0][0] = 8
-                $ flags['smoke.request'] = "naked"
-                $ flags['smoke'] = "naked"
+                $ alice.req.req = "naked"
+                $ alice.req.result = "naked"
                 $ alice.sleepnaked = True
                 $ added_mem_var('alice_sleepnaked')
                 jump .end
             else:
                 jump .fail
-
         "Ты знаешь, я сегодня добрый...":
             $ punalice[0][0] = 1
             menu:
@@ -1062,8 +1087,7 @@ label smoke_fear:
             menu:
                 Alice_13 "Ну вот тогда иди чем-нибудь займись, а меня не отвлекай..."
                 "{i}уйти{/i}":
-                    $ flags['smoke'] = None
-                    $ flags['smoke.request'] = None
+                    $ alice.req.reset()
                     jump .end
 
     label .smoke_toples:
@@ -1072,7 +1096,7 @@ label smoke_fear:
             Alice_12 "[succes!t]Маленький извращенец... Ладно, но при условии, что маме не будешь ничего говорить. И разденусь только с завтрашнего дня. Договорились?"
             Max_03 "Само собой!"
             $ punalice[0][0] = 4
-            $ flags['smoke.request'] = "toples"
+            $ alice.req.req = "toples"
             menu:
                 Alice_01 "А теперь вали отсюда. Дай спокойно покурить!"
                 "{i}уйти{/i}":
@@ -1088,8 +1112,8 @@ label smoke_fear:
             Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
             Max_04 "Вот и отлично!"
             $ punalice[0][0] = 5
-            $ flags['smoke.request'] = "sleep"
-            $ flags['smoke'] = 'sleep'
+            $ alice.req.req = "sleep"
+            $ alice.req.result = 'sleep'
             $ alice.sleeptoples = True
             $ added_mem_var('alice_sleeptoples')
             menu:
@@ -1105,8 +1129,8 @@ label smoke_fear:
             Alice_13 "[succes!t]Тебя так заботят мои трусы? Ну, хорошо. Всё равно я почти всё время в джинсах, так что не страшно. Значит, договорились?"
             Max_02 "Конечно!"
             $ punalice[0][0] = 6
-            $ flags['smoke.request'] = "nopants"
-            $ flags['smoke'] = 'nopants'
+            $ alice.req.req = "nopants"
+            $ alice.req.result = 'nopants'
             $ alice.nopants = True
             $ added_mem_var('alice_nopants')
             menu:
@@ -1122,7 +1146,7 @@ label smoke_fear:
             $ spent_time += 10
             $ Skill('social', 0.2)
             $ _ch2 = GetChanceConvince(punalice, 2)
-            $ flags['smoke.request'] = 'money'
+            $ alice.req.req = 'money'
             menu:
                 Alice_12 "[succes!t]Ладно, Макс, я дам тебе денег, но только $10, ок?"
                 "Нет, давай $20 {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}":
@@ -1152,8 +1176,7 @@ label smoke_fear:
         Alice_16 "[failed!t]Ага, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..."
         "{i}уйти{/i}":
             $ Skill('social', 0.1)
-            $ flags['smoke'] = None
-            $ flags['smoke.request'] = None
+            $ alice.req.reset()
             $ punalice[0][0] = 2
             $ AddRelMood('alice', 0, -50)
             jump .end
@@ -1162,8 +1185,7 @@ label smoke_fear:
         Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая."
         "{i}Ну, как скажешь...{/i}":
             $ Skill('social', 0.1)
-            $ flags['smoke'] = None
-            $ flags['smoke.request'] = None
+            $ alice.req.reset()
             $ punalice[0][0] = 2
             $ AddRelMood('alice', 0, -50)
             jump .end
@@ -1214,10 +1236,8 @@ label smoke_toples:
                             $ AddRelMood('alice', 0, -50)
                             $ spent_time += 10
                             jump Waiting
-            $ flags['smoke'] = None
-            $ flags['smoke.request'] = None
-            $ flags['noted'] = False
-            $ dcv['alice.prudence'].set_lost(0)
+            $ alice.req.reset()
+            $ alice.dcv.prudence.set_lost(0)
 
     label .end:
         $ spent_time += 10
@@ -1243,10 +1263,8 @@ label smoke_not_toples:
         "Ага...":
             pass
     $ renpy.show("Alice smoke "+pose3_3+alice.dress)
-    $ flags['smoke'] = None
-    $ flags['smoke.request'] = None
-    $ flags['noted'] = False
-    $ dcv['alice.prudence'].set_lost(0)
+    $ alice.req.reset()
+    $ alice.dcv.prudence.set_lost(0)
     $ spent_time += 10
     $ current_room = house[5]
     jump Waiting
@@ -1271,10 +1289,8 @@ label smoke_nopants:
             menu:
                 Alice_03 "А чего передумал? А, хотя не важно. Я рада, а то мне всё натирает в джинсах... Хотя, тебе такие подробности знать не нужно. Спасибо за разрешение, ваше величество. Теперь дай покурю..."
                 "{i}уйти{/i}":
-                    $ flags['smoke'] = None
-                    $ flags['smoke.request'] = None
-                    $ flags['noted'] = False
-                    $ dcv['alice.prudence'].set_lost(0)
+                    $ alice.req.reset()
+                    $ alice.dcv.prudence.set_lost(0)
                     $ alice.nopants = False
                     $ AddRelMood('alice', 0, 100)
 
@@ -1303,10 +1319,8 @@ label smoke_not_nopants:
 
     $ added_mem_var('alice_not_nopants')
     $ renpy.show("Alice smoke "+pose3_3+alice.dress)
-    $ flags['smoke'] = None
-    $ flags['smoke.request'] = None
-    $ flags['noted'] = False
-    $ dcv['alice.prudence'].set_lost(0)
+    $ alice.req.reset()
+    $ alice.dcv.prudence.set_lost(0)
     $ spent_time += 10
     $ current_room = house[5]
     jump Waiting
@@ -1321,19 +1335,17 @@ label smoke_sleep:
             $ spent_time += 10
             jump Waiting
 
-        "Я передумал. Ты можешь спать в лифчике, если хочешь." if flags['smoke.request']=='sleep':
+        "Я передумал. Ты можешь спать в лифчике, если хочешь." if alice.req.req=='sleep':
             pass
-        "Я передумал. Ты можешь спать в нижнем белье..." if flags['smoke.request']=='naked':
+        "Я передумал. Ты можешь спать в нижнем белье..." if alice.req.req=='naked':
             pass
     menu:
         Alice_04 "А чего это ты передумал? А, хотя не важно. Я рада, а то мне неудобно ночью, если выйти куда-то нужно, да и мама заметить может. Спасибо за разрешение, ваше величество. Теперь дай покурю..."
         "{i}уйти{/i}":
             pass
 
-    $ flags['smoke'] = None
-    $ flags['smoke.request'] = None
-    $ flags['noted'] = False
-    $ dcv['alice.prudence'].set_lost(0)
+    $ alice.req.reset()
+    $ alice.dcv.prudence.set_lost(0)
     $ AddRelMood('alice', 0, 100)
 
     $ spent_time += 10
@@ -1349,17 +1361,15 @@ label smoke_nojeans:
             menu:
                 Alice_04 "Чего это ты вдруг передумал? Надоело глазеть на мою попку? А, не важно. Спасибо за разрешение, ваше величество. Теперь дай покурю..."
                 "{i}уйти{/i}":
-                    $ flags['smoke'] = None
-                    $ flags['smoke.request'] = None
-                    $ flags['noted'] = False
-                    $ dcv['alice.prudence'].set_lost(0)
+                    $ alice.req.reset()
+                    $ alice.dcv.prudence.set_lost(0)
                     $ AddRelMood('alice', 0, 100)
     $ spent_time += 10
     jump Waiting
 
 
 label Alice_sorry:
-    if len(sorry_gifts['alice'].give) == 0:  # Первый диалог
+    if len(alice.sorry.give) == 0:  # Первый диалог
         Alice_15 "Ух ты, у тебя, извращенца мелкого, совесть проснулась?! Неожиданно..."
         Max_10 "Нет, я думаю, ты вряд ли правильно поняла то, что случилось. Я за тобой не подглядывал..."
         Alice_16 "Макс, я по-твоему полная дура что ли?! Ты стоял за стеной, и нагло смотрел, как я принимала душ!"
@@ -1376,14 +1386,14 @@ label Alice_sorry:
             Max_01 "Обязательно успею! Завтра всё будет..."
         Alice_07 "И смотри, чтобы мне понравилось..."
         Max_04 "Хорошо."
-        $ sorry_gifts['alice'].valid = {'ritter-m', 'raffaello-m', 'ferrero-m'}
+        $ alice.sorry.valid = {'ritter-m', 'raffaello-m', 'ferrero-m'}
         if not all([items['ritter-m'].InShop, items['raffaello-m'].InShop, items['ferrero-m'].InShop]):
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
-        $ items['ritter-m'].InShop = True
-        $ items['raffaello-m'].InShop = True
-        $ items['ferrero-m'].InShop = True
+        $ items['ritter-m'].unblock()
+        $ items['raffaello-m'].unblock()
+        $ items['ferrero-m'].unblock()
         $ poss['risk'].OpenStage(0)
-    elif len(sorry_gifts['alice'].give) == 1:
+    elif len(alice.sorry.give) == 1:
         Alice_03 "Ой, Макс, конечно же я тебя прощаю! Не переживай ты так... Всё прекрасно!"
         Max_09 "Э-э-э... Правда?!"
         Alice_16 "Конечно нет, дубина! Стоял снова и глазел на меня голую! Мама обязательно об этом узнает..."
@@ -1399,14 +1409,14 @@ label Alice_sorry:
             Max_01 "Значит, до следующего ужина?"
         Alice_05 "Ничего не обещаю, но не опаздывай, Макс!"
         Max_04 "Постараюсь."
-    elif len(sorry_gifts['alice'].give) == 2:
+    elif len(alice.sorry.give) == 2:
         Alice_05 "Макс, а давай всё упростим до того, что ты сейчас уходишь покупать мне конфеты, а я их жду до следующего ужина? Как тебе, а?!"
         Max_08 "Можно и так... Только мне как-то немного не по себе от того, что это предлагаешь ты, а не я!"
         Alice_03 "Просто экономлю время, которое тебе лучше потратить на то, чтобы я в итоге осталась очень довольна этим."
         Max_07 "Тогда я пойду, да?"
         Alice_01 "Бегом! Извращенец тормозной..."
         Max_01 "Ага..."
-    elif len(sorry_gifts['alice'].give) == 3 and 'pajamas' not in alice.gifts:
+    elif len(alice.sorry.give) == 3 and 'pajamas' not in alice.gifts:
         Alice_05 "Но ведь не только это! Ясно же, что снова пообещаешь вкусняшку за моё молчание."
         Max_07 "Ну а что мне ещё остаётся?"
         Alice_03 "Только вот на этот раз Я буду ставить условия! Сладости - это хорошо, но я хочу большего..."
@@ -1419,18 +1429,18 @@ label Alice_sorry:
         Max_08 "Хорошо, но мне нужно больше времени..."
         Alice_01 "Согласна подождать три дня. А ты не тормози..."
         Max_00 "Хорошо."
-        $ sorry_gifts['alice'].valid.clear()
+        $ alice.sorry.valid.clear()
         $ punreason[1] = 0
-        $ peeping['alice_shower'] = 0
-        $ items['pajamas'].InShop = True
-        $ sorry_gifts['alice'].start(3)
+        $ alice.daily.shower = 0
+        $ items['pajamas'].unblock()
+        $ alice.sorry.start(3)
         $ spent_time += 10
         $ poss['risk'].OpenStage(7)
         jump Waiting
 
     $ punreason[1] = 0
-    $ peeping['alice_shower'] = 0
-    $ sorry_gifts['alice'].start()
+    $ alice.daily.shower = 0
+    $ alice.sorry.start()
     $ spent_time += 10
     jump Waiting
 
@@ -1506,11 +1516,10 @@ label gift_dress:
         $ current_room = house[5]
 
     label .end:
-        $ items['dress'].have = False
-        $ items['dress'].InShop = False
+        $ items['dress'].give()
         $ poss['nightclub'].OpenStage(4)
         $ alice.gifts.append('dress')
-        $ dcv['alice.secret'].set_lost(1)
+        $ alice.dcv.feature.set_lost(1)
         $ infl[alice].add_m(40, True)
         $ spent_time += 10
         jump Waiting
@@ -1536,11 +1545,10 @@ label gift_book:
         $ poss['secretbook'].OpenStage(3)
         $ AddRelMood('alice', 0, 100)
         $ AttitudeChange('alice', 0.25)
-        $ items['erobook_1'].have = False
-        $ items['erobook_1'].InShop = False
+        $ items['erobook_1'].dive()
         $ alice.gifts.append('erobook_1')
-        $ dcv['secretbook'] = Daily(7, False, True) # Покупка второй книги возможна через неделю.
-        $ dcv['secretbook'].stage = 2
+        $ alice.dcv.gifts.set_lost(7) # Покупка второй книги возможна через неделю.
+        $ alice.dcv.gifts.stage = 2
     elif items['erobook_2'].have:
         Alice_04 "Да? И какая на этот раз? Давай сюда..."
         Max_01 "Держи..."
@@ -1548,11 +1556,10 @@ label gift_book:
         Max_04 "Конечно!"
         $ AddRelMood('alice', 0, 120)
         $ AttitudeChange('alice', 0.3)
-        $ items['erobook_2'].have = False
-        $ items['erobook_2'].InShop = False
+        $ items['erobook_2'].give()
         $ alice.gifts.append('erobook_2')
-        $ dcv['secretbook'] = Daily(9, False, True) # Покупка третьей книги возможна через девять дней.
-        $ dcv['secretbook'].stage = 3
+        $ alice.dcv.gifts.set_lost(9) # Покупка третьей книги возможна через девять дней.
+        $ alice.dcv.gifts.stage = 3
     elif items['erobook_3'].have or items['erobook_4'].have:
         Alice_04 "Супер! Давай, показывай, что тут у нас..."
         Max_01 "Держи..."
@@ -1561,17 +1568,15 @@ label gift_book:
         $ AddRelMood('alice', 0, 100)
         $ AttitudeChange('alice', 0.25)
         if items['erobook_4'].have:
-            $ items['erobook_4'].have = False
-            $ items['erobook_4'].InShop = False
+            $ items['erobook_4'].give()
             $ alice.gifts.append('erobook_4')
-            $ dcv['secretbook'] = Daily(13, False, True) # Покупка пятой книги возможна через тринадцать дней.
-            $ dcv['secretbook'].stage = 5
+            $ alice.dcv.gifts.set_lost(13) # Покупка пятой книги возможна через тринадцать дней.
+            $ alice.dcv.gifts.stage = 5
         else:
-            $ items['erobook_3'].have = False
-            $ items['erobook_3'].InShop = False
+            $ items['erobook_3'].give()
             $ alice.gifts.append('erobook_3')
-            $ dcv['secretbook'] = Daily(11, False, True) # Покупка четвертой книги возможна через одинадцать дней.
-            $ dcv['secretbook'].stage = 4
+            $ alice.dcv.gifts.set_lost(11) # Покупка четвертой книги возможна через одинадцать дней.
+            $ alice.dcv.gifts.stage = 4
     elif items['erobook_5'].have:
         Alice_04 "Да? И какая на этот раз? Давай сюда..."
         Max_01 "Держи..."
@@ -1579,9 +1584,8 @@ label gift_book:
         Max_04 "Конечно!"
         $ AddRelMood('alice', 0, 160)
         $ AttitudeChange('alice', 0.4)
-        $ items['erobook_5'].have = False
-        $ items['erobook_5'].InShop = False
-        $ dcv['secretbook'].stage = 6
+        $ items['erobook_5'].give()
+        $ alice.dcv.gifts.stage = 6
         $ alice.gifts.append('erobook_5')
 
     $ spent_time += 10
@@ -1606,7 +1610,7 @@ label gift_pajamas:
     Max_04 "Конечно! Топик и шортики, как ты хотела. Вот, держи..."
     Alice_07 "О да! Какие симпатичные! Ты такой молодец, Макс! Спасибо тебе большое..."
     Max_03 "Ну что, примеришь при мне?"
-    if not sorry_gifts['alice'].owe:  # не успел подарить пижамку вовремя
+    if not alice.sorry.owe:  # не успел подарить пижамку вовремя
         Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
         Max_01 "Нет, просто хотел увидеть, как на тебе будет смотреться пижама..."
         Alice_05 "Ладно, поверю... Ого, а что это у тебя здесь..."   #спрайт с ушами
@@ -1618,7 +1622,7 @@ label gift_pajamas:
         Max_14 "Ой! Я понял... Больше не буду!"
         Alice_02 "Вот и молодец! Гуляй..."
         $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
-    elif flags['alice_hugs'] > 3: # после 3-ей сладости были родственные обнимашки
+    elif alice.flags.hugs_type > 3: # после 3-ей сладости были родственные обнимашки
         $ persistent.memories['gift_pajamas'] = 1
         if not _in_replay:
             $ poss['risk'].OpenStage(8)
@@ -1641,17 +1645,17 @@ label gift_pajamas:
                     $ renpy.show('Alice newpajamas 04'+__suf)
                     Alice_02 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе?"   #спрайт с одетым топиком (04)
                     Max_04 "Тебе идёт! Мне нравится..."
-                    if flags['smoke'] != 'nopants':
+                    if alice.req.result != 'nopants':
                         Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё шортики примерить."   #спрайт в топике без низа, но в трусиках (если бикини, то без трусиков) (06)
                         if not _in_replay:
                             $ SetCamsGrow(house[1], 180)
                     else:
                         Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё шортики примерить."   #спрайт в топике без низа, трусиков по уговору нет
-                    $ __suf = 'an' if any([alice.plan_name in ['sun', 'swim'], alice.dress=='d', flags['smoke'] == 'nopants']) else 'a'
+                    $ __suf = 'an' if any([alice.plan_name in ['sun', 'swim'], alice.dress=='d', alice.req.result == 'nopants']) else 'a'
                     if not ('09:00' <= tm < '20:00'):
                         $ __suf += 'e'
                     $ renpy.show('Alice newpajamas 06'+__suf)
-                    if any([flags['smoke'] != 'not_nopants', alice.plan_name in ['sun', 'swim'], alice.dress=='d']):
+                    if any([alice.req.result != 'not_nopants', alice.plan_name in ['sun', 'swim'], alice.dress=='d']):
                         Max_02 "Конечно, я не смотрю..."
                     else:
                         Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"   #если на Алисе трусики, но их не должно быть
@@ -1665,18 +1669,18 @@ label gift_pajamas:
                     Max_05 "Не то слово, всё выглядит шикарно!"
                 else:   #если линейка началась без низа
                     $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
-                    if __suf=='a' and flags['smoke'] == 'nopants':  # если Алиса в обычной одежде и без трусиков
+                    if __suf=='a' and alice.req.result == 'nopants':  # если Алиса в обычной одежде и без трусиков
                         $ __suf += 'n'
                     if not ('09:00' <= tm < '20:00'):
                         $ __suf += 'e'
                     $ renpy.show('Alice newpajamas 03'+__suf)
-                    if flags['smoke'] != 'nopants':
+                    if alice.req.result != 'nopants':
                         Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #линейка началась без низа, но в трусиках (03)
                     else:
                         if not _in_replay:
                             $ SetCamsGrow(house[1], 180)
                         Alice_05 "Макс! Ты что, пялишься на мой зад? Быстро отвернись, на мне же нет трусиков, благодаря твоим уговорам!"   #линейка началась без низа, трусиков по уговору нет
-                    if flags['smoke'] != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
+                    if alice.req.result != 'not_nopants' or alice.plan_name in ['sun', 'swim']:
                         Max_02 "Я не пялюсь..."
                     else:
                         Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"   #если на Алисе трусики, но их не должно быть
@@ -1713,7 +1717,7 @@ label gift_pajamas:
         Max_01 "Ага..."
         if not _in_replay:
             $ spent_time += 20
-    elif flags['alice_hugs'] > 2: # после 3-ей сладости было прощение без выкручивания ушей
+    elif alice.flags.hugs_type > 2: # после 3-ей сладости было прощение без выкручивания ушей
         Alice_04 "А жирно тебе не будет?! В душе на меня глазел, а теперь и здесь хочешь подглядеть... Нет уж! Но за пижамку я тебя всё же обниму! Ну так... совсем немного..."   #спрайт с обнимашками"
         call alice_sorry_gifts.kindred_hugs from _call_alice_sorry_gifts_kindred_hugs
         Max_03 "Вау! Это как-то очень непривычно... обнимать тебя без ущерба своему здоровью!"
@@ -1723,7 +1727,7 @@ label gift_pajamas:
         Max_02 "Второе, конечно!"
         Alice_05 "Ну да, конечно... Иди давай."
         $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
-    elif flags['alice_hugs'] > 1: # после 3-ей сладости было выкручивание ушей
+    elif alice.flags.hugs_type > 1: # после 3-ей сладости было выкручивание ушей
         menu:
             Alice_04 "А жирно тебе не будет?! В душе не нагляделся на меня и теперь хочешь подсмотреть, как я переодеваюсь, да?"
             "Нет, просто хотел увидеть, как на тебе будет смотреться пижама... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
@@ -1760,8 +1764,9 @@ label gift_pajamas:
     $ renpy.end_replay()
     $ AddRelMood('alice', 0, 200)
     $ AttitudeChange('alice', 0.9)
-    $ items['pajamas'].have = False
-    $ items['pajamas'].InShop = False
+    $ items['pajamas'].give()
+    # $ items['pajamas'].have = False
+    # $ items['pajamas'].InShop = False
     $ alice.gifts.append('pajamas')
     $ added_mem_var('pajamas')
     # if alice.inferic is not None:
@@ -1772,34 +1777,34 @@ label gift_pajamas:
     #     $ alice.infmax = 20.0
     $ infl[alice].add_m(40, True)
 
-    $ sorry_gifts['alice'].valid = {'ferrero-b', 'ferrero-m'}
+    $ alice.sorry.valid = {'ferrero-b', 'ferrero-m'}
 
-    $ clothes[alice].casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
-    $ clothes[alice].casual.cur = 1
-    $ clothes[alice].casual.rand = True
-    $ sorry_gifts['alice'].give.append(4)
+    $ alice.clothes.casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
+    $ alice.clothes.casual.cur = 1
+    $ alice.clothes.casual.rand = True
+    $ alice.sorry.give.append(4)
     $ spent_time += 10
-    $ sorry_gifts['alice'].owe = False
+    $ alice.sorry.owe = False
     jump Waiting
 
 
 label Alice_solar:
-    $ talk_var['alice_sun'] = 1
+    $ alice.hourly.sun_cream = 1
     ## Загораешь?
     menu:
         Alice_02 "Как ты догадался, Шерлок?"
-        "Может быть, тебя намазать кремом для загара?" if talk_var['sun_oiled'] == 3:
+        "Может быть, тебя намазать кремом для загара?" if alice.daily.oiled == 3:
             Alice_04 "Достаточно на сегодня, Макс..."
             Max_00 "Ясно. Ну, тогда, может, завтра..."
-            $ talk_var['sun_oiled'] = 4
+            $ alice.daily.oiled = 4
             jump AfterWaiting
         "Может быть, тебя намазать кремом для загара?" if not items['solar'].have:  # нет крема
                 Alice_13 "Может быть. Вот только у меня его нет..."
                 Max_00 "Ясно. Ну, в другой раз значит..."
                 if not any([items['max-a'].InShop, items['max-a'].have]):
                     Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
-                    $ items['solar'].InShop = True
-                    $ items['max-a'].InShop = True
+                    $ items['solar'].unblock()
+                    $ items['max-a'].unblock()
                     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
                 jump AfterWaiting
         "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and any([mgg.dress == 'a', kol_cream < 3]):
@@ -1808,18 +1813,18 @@ label Alice_solar:
                     $ mgg.dress = 'b'
                 else:
                     Max_07 "{i}( Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче. ){/i}"
-                    $ items['max-a'].InShop = True
+                    $ items['max-a'].unblock()
                     jump AfterWaiting
 
             if kol_cream < 3:  # крема не хватит даже просто нанести
                 Max_07 "{i}( Крем почти закончился. Нужно купить ещё. ){/i}"
-                $ items['solar'].InShop = True
+                $ items['solar'].unblock()
                 jump AfterWaiting
 
-        "Может быть, тебя намазать кремом для загара?" if all([talk_var['sun_oiled']==0, kol_cream>=3, mgg.dress!='a']):
+        "Может быть, тебя намазать кремом для загара?" if all([alice.daily.oiled==0, kol_cream>=3, mgg.dress!='a']):
             Alice_03 "Если у тебя есть крем, то давай, раз тебе делать нечего."
             Max_01 "Ложись на живот тогда..."
-            $ talk_var['sun_oiled'] = 1
+            $ alice.daily.oiled = 1
         "Ладно, загорай...":
             jump AfterWaiting
 
@@ -1853,7 +1858,7 @@ label Alice_solar:
                 Alice_04 "Спасибо, Макс! На сегодня достаточно. У тебя очень неплохо получается, а если поучишься, может стать ещё лучше!"
                 Max_04 "Да не за что, обращайся!"
                 scene BG char Alice sun-alone 01
-                if talk_var['sun_oiled'] == 2:
+                if alice.daily.oiled == 2:
                     show Alice sun-alone 01a
                 else:
                     show Alice sun-alone 01
@@ -1868,18 +1873,18 @@ label Alice_solar:
                 Alice_03 "Спасибо, Макс. Так намного лучше..."
                 Max_04 "Обращайся, если что..."
             scene BG char Alice sun-alone 01
-            if talk_var['sun_oiled'] == 2:
+            if alice.daily.oiled == 2:
                 show Alice sun-alone 01a
             else:
                 show Alice sun-alone 01
             if kol_cream < 2:
                 Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
                 if kol_cream == 0:
-                    $ items['solar'].have = False
-                    $ items['solar'].InShop = True
+                    $ items['solar'].use()
+                    $ items['solar'].unblock()
             elif kol_cream < 7:
                 Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
-                $ items['solar'].InShop = True
+                $ items['solar'].unblock()
             $ AddRelMood('alice', 5, 50, 2)
         "{i}сделать массаж с кремом{/i}" if all([kol_cream >= 7, (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):  # попытка сделать массаж с кремом
             $ _massaged = []
@@ -1890,7 +1895,7 @@ label Alice_solar:
             jump .type_choice
         "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}" if kol_cream < 3:
             Alice_00 "Ну что же ты, Макс... Эх, только настроилась..."
-            $ talk_var['sun_oiled'] = 4
+            $ alice.daily.oiled = 4
             jump AfterWaiting
 
     jump Waiting
@@ -1898,7 +1903,7 @@ label Alice_solar:
 
 label massage_sunscreen:
     scene BG char Alice sun-alone 01f
-    if talk_var['sun_oiled'] == 2:
+    if alice.daily.oiled == 2:
         show Alice sun-alone 01-01a
         $ _suf = 'b'
     else:
@@ -1906,7 +1911,7 @@ label massage_sunscreen:
         $ _suf = 'a'
     $ renpy.show('Max sun-alone 01'+mgg.dress)
     if len(online_cources) > 1 and online_cources[1].current > 0:
-        if len(_massaged) == (5 if 'eric.lingerie' in dcv and dcv['eric.lingerie'].stage in [5, 7] else 4): # 5:
+        if len(_massaged) == (5 if 'eric.lingerie' in dcv and alice.dcv.intrusion.stage in [5, 7] else 4): # 5:
             Alice_07 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
             Max_03 "Да пустяки, обращайся!"
             Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
@@ -2131,7 +2136,7 @@ label massage_sunscreen:
                     $ Skill('social', 0.1)
                     Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
                     Max_02 "Так держать, сестрёнка!"
-                    $ talk_var['sun_oiled'] = 2
+                    $ alice.daily.oiled = 2
                     $ _suf = 'b'
                     $ SetCamsGrow(house[6], 200)
                 else:
@@ -2144,14 +2149,14 @@ label massage_sunscreen:
 
     label .spider:
         if _in_replay:
-            $ _suf = 'b' if talk_var['sun_oiled'] == 2 else 'a'
+            $ _suf = 'b' if alice.daily.oiled == 2 else 'a'
             $ __r1 = renpy.random.choice(['02','03'])
             $ renpy.scene()
             $ renpy.show('BG char Alice sun-alone '+__r1)
             $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
             $ renpy.show("FG sun-alone-"+__r1)
         else:
-            $ items['spider'].have = False
+            $ items['spider'].use()
             $ SpiderKill = 0  # паук остался жив
             $ SpiderResp = 1  # поэтому поймать можно уже на следующий день
             if 'massage_sunscreen.spider' not in persistent.memories:
@@ -2176,7 +2181,7 @@ label massage_sunscreen:
         Alice_06 "В смысле, не хочется?! Охренеть, он страшный!"   #spider-sun-02
         Max_05 "Так хорошо же сидим. Да и он в нашу сторону не ползёт. По-моему, он в сторону травы сменил курс..."
         Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
-        if talk_var['sun_oiled'] != 2:
+        if alice.daily.oiled != 2:
             # верх купальника не снят
             Max_01 "Ладно, тогда слезай, я с ним разберусь."
             Alice_06 "Не-е-ет, он тогда сразу ко мне поползёт! Что я их, не знаю что ли..."
@@ -2225,7 +2230,7 @@ label massage_sunscreen:
     label .end:
         $ renpy.end_replay()
         scene BG char Alice sun-alone 01
-        if talk_var['sun_oiled'] == 2:
+        if alice.daily.oiled == 2:
             show Alice sun-alone 01a
         else:
             show Alice sun-alone 01
@@ -2233,17 +2238,17 @@ label massage_sunscreen:
         if kol_cream < 3 and mgg.massage < 2.0:
             Max_10 "{i}( Ну вот, крем закончился. Надо ещё купить. ){/i}"
             if kol_cream == 0:
-                $ items['solar'].have = False
-                $ items['solar'].InShop = True
+                $ items['solar'].use()
+                $ items['solar'].unblock()
         elif kol_cream < 7:
             Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
-            $ items['solar'].InShop = True
+            $ items['solar'].unblock()
 
         jump Waiting
 
 
 label alice_sorry_gifts:
-    if sorry_gifts['alice'].days[0] == day:
+    if alice.sorry.days[0] == day:
         Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
         return
 
@@ -2252,8 +2257,8 @@ label alice_sorry_gifts:
         0 : _("Да ладно! Это мне нравится... И что там у тебя?"),
         1 : _("Ого! И правда хочешь рискнуть... И что там у тебя на этот раз?"),
         2 : _("Наконец-то! Ну давай, показывай, что у тебя на этот раз?!"),
-        }[len(sorry_gifts['alice'].give)]
-    $ sorry_gifts['alice'].owe = False
+        }[len(alice.sorry.give)]
+    $ alice.sorry.owe = False
     menu:
         Alice_02 "[txt!t]"
         "Конфеты \"Raffaello\" (16 штук)" if items['raffaello-m'].have:
@@ -2321,7 +2326,7 @@ label alice_sorry_gifts:
                     Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                     Max_14 "Ой! Я понял... Больше не буду!"
                     Alice_02 "Вот и молодец! Гуляй..."
-                    $ flags['alice_hugs'] = 2
+                    $ alice.flags.hugs_type = 2
                 else:
                     $ Skill('social', 0.1)
                     Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
@@ -2329,7 +2334,7 @@ label alice_sorry_gifts:
                     Alice_05 "Не считается, если она мне неинтересна! Так что - не повезло тебе..."
                     Max_14 "Ой! Я понял... Больше не буду!"
                     Alice_02 "Вот и молодец! Гуляй..."
-                    $ flags['alice_hugs'] = 1
+                    $ alice.flags.hugs_type = 1
                     $ punreason[1] = 1
         return
 
@@ -2347,7 +2352,7 @@ label alice_sorry_gifts:
         Max_14 "Ой! Я понял... Больше не буду!"
         Alice_02 "Вот и молодец! Гуляй..."
         $ punreason[1] = 1
-        $ flags['alice_hugs'] = 1
+        $ alice.flags.hugs_type = 1
         return
 
     label .apology_accepted:
@@ -2359,7 +2364,7 @@ label alice_sorry_gifts:
         Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
         Max_14 "Ой! Я понял... Больше не буду!"
         Alice_02 "Вот и молодец! Гуляй..."
-        $ flags['alice_hugs'] = 2
+        $ alice.flags.hugs_type = 2
         return
 
     label .you_deserve:
@@ -2372,7 +2377,7 @@ label alice_sorry_gifts:
         Alice_02 "Подглядывать за мной или дарить мне сладости?!"
         Max_02 "Второе, конечно!"
         Alice_05 "Ну да, конечно... Иди давай."
-        $ flags['alice_hugs'] = 4
+        $ alice.flags.hugs_type = 4
         return
 
     label .what_bummer:
@@ -2382,7 +2387,7 @@ label alice_sorry_gifts:
         Alice_07 "Зачем останавливаться на чём-то одном, Макс? Хи-хи..."
         Max_01 "Я тогда лучше пойду... погуляю."
         Alice_02 "Ну как хочешь..."
-        $ flags['alice_hugs'] = 3
+        $ alice.flags.hugs_type = 3
         return
 
     label .im_in_pain:
@@ -2393,7 +2398,7 @@ label alice_sorry_gifts:
         Max_10 "Да я же случайно оказался около душа..."
         Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
         Max_14 "Ой! Я понял... Больше не буду!"
-        $ flags['alice_hugs'] = 2
+        $ alice.flags.hugs_type = 2
         return
 
     label .what_disgusting:
@@ -2404,13 +2409,13 @@ label alice_sorry_gifts:
         Max_12 "А-а-ай! Мне же больно, Алиса!"
         Alice_16 "Ещё подглядывать за мной будешь, подлиза ты эдакий?"
         Max_10 "Да я же случайно оказался около душа..."
-        $ flags['alice_hugs'] = 2
+        $ alice.flags.hugs_type = 2
         return
 
     label .bad: ## ненавистное
-        $ items[__give].have = False
+        $ items[__give].use()
         $ poss['risk'].OpenStage(4)
-        if len(sorry_gifts['alice'].give) == 0:  # ненавистное в первый раз
+        if len(alice.sorry.give) == 0:  # ненавистное в первый раз
             Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
             Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
             Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2439,8 +2444,8 @@ label alice_sorry_gifts:
                         Alice_02 "Вот и правильно! Гуляй..."
                         $ punreason[1] = 1
 
-        elif len(sorry_gifts['alice'].give) == 1:  ## второе вручение
-            if sorry_gifts['alice'].give[0] == 1:  ## ненавистное, ненавистное
+        elif len(alice.sorry.give) == 1:  ## второе вручение
+            if alice.sorry.give[0] == 1:  ## ненавистное, ненавистное
                 Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
                 Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
                 Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2457,7 +2462,7 @@ label alice_sorry_gifts:
                 Alice_02 "Вот и молодец! Гуляй..."
                 $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give[0] == 2: ## преемлемое, ненавистное
+            elif alice.sorry.give[0] == 2: ## преемлемое, ненавистное
                 call alice_sorry_gifts.what_disgusting from _call_alice_sorry_gifts_what_disgusting
                 Alice_12 "Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
                 Max_14 "Но, Алиса, я же купил вкусняшку... Ой, отпусти!"
@@ -2468,7 +2473,7 @@ label alice_sorry_gifts:
                 Alice_02 "Вот и молодец! Гуляй..."
                 $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give[0] == 3: ## любимое, ненавистное
+            elif alice.sorry.give[0] == 3: ## любимое, ненавистное
                 Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
                 Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
                 Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2493,8 +2498,8 @@ label alice_sorry_gifts:
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ punreason[1] = 1
 
-        elif len(sorry_gifts['alice'].give) == 2:  ### третье вручение
-            if sorry_gifts['alice'].give == [1, 1]:  ## ненависное, ненавистное, ненавистное
+        elif len(alice.sorry.give) == 2:  ### третье вручение
+            if alice.sorry.give == [1, 1]:  ## ненависное, ненавистное, ненавистное
                 Alice_17 "Макс, ты что, тупой, я тебе, уже дважды говорила, что не люблю эти конфеты?! Ты меня, что, совсем не слушаешь, или у тебя мозгов нет?!"
                 Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
                 Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2507,13 +2512,13 @@ label alice_sorry_gifts:
                 Alice_16 "Да тебе просто наплевать на всё то, что я тебе говорю! Так что - сам виноват..."
                 Max_14 "Ой! Я понял... Больше не буду!"
                 Alice_17 "Понял он... Катись отсюда!"
-                $ flags['alice_hugs'] = 1
+                $ alice.flags.hugs_type = 1
                 $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
+            elif alice.sorry.give == [1, 2]:  ### ненавистное, преемлемое, ненавистное
                 call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again
 
-            elif sorry_gifts['alice'].give == [1, 3]:  ### ненавистное, любимое, ненавистное
+            elif alice.sorry.give == [1, 3]:  ### ненавистное, любимое, ненавистное
                 Alice_17 "Макс, ты что, тупой?! Я тебе уже говорила, что не люблю эти конфеты! Ты меня, что, совсем не слушаешь, или у тебя помяти нет?!"
                 Max_08 "Просто так уж вышло... Извини. Не смог достать другие."
                 Alice_12 "Я тебе сейчас дам, не смог... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2527,7 +2532,7 @@ label alice_sorry_gifts:
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
                         else:
                             $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
@@ -2535,13 +2540,13 @@ label alice_sorry_gifts:
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 1
+                            $ alice.flags.hugs_type = 1
                             $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
+            elif alice.sorry.give == [2, 1]:  ### преемлемое, ненавистное, ненавистное
                 call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again_1
 
-            elif sorry_gifts['alice'].give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
+            elif alice.sorry.give == [2, 2]:  ### преемлемое, преемлемое, ненавистное
                 Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
                 Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
                 Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2555,7 +2560,7 @@ label alice_sorry_gifts:
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
                         else:
                             $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
@@ -2563,19 +2568,19 @@ label alice_sorry_gifts:
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 1
+                            $ alice.flags.hugs_type = 1
                             $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give == [2, 3]:  ### преемлемое, любимое, ненавистное
+            elif alice.sorry.give == [2, 3]:  ### преемлемое, любимое, ненавистное
                 call alice_sorry_gifts.what_disgusting from _call_alice_sorry_gifts_what_disgusting_1
                 Alice_05 "Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                 Max_14 "Ой! Я понял... Больше не буду!"
                 Alice_02 "Вот и молодец! Гуляй..."
 
-            elif sorry_gifts['alice'].give == [3, 1]:  ### любимое, ненавистное, ненавистное
+            elif alice.sorry.give == [3, 1]:  ### любимое, ненавистное, ненавистное
                 call alice_sorry_gifts.bad_again from _call_alice_sorry_gifts_bad_again_2
 
-            elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, ненавистное
+            elif alice.sorry.give == [3, 2]:  ### любимое, преемлемое, ненавистное
                 Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
                 Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
                 Alice_05 "Надо было, но теперь у меня есть повод сделать вот так... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2589,7 +2594,7 @@ label alice_sorry_gifts:
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
                         else:
                             $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
@@ -2597,7 +2602,7 @@ label alice_sorry_gifts:
                             Alice_05 "Не считается, если она мне не нравится! Так что - не повезло тебе..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 1
+                            $ alice.flags.hugs_type = 1
                             $ punreason[1] = 1
 
             else:  ### любимое, любимое, ненавистное
@@ -2606,13 +2611,13 @@ label alice_sorry_gifts:
                 Max_14 "Ой! Я понял... Больше не буду!"
                 Alice_02 "Вот и молодец! Гуляй..."
 
-        $ sorry_gifts['alice'].give.append(1)
+        $ alice.sorry.give.append(1)
         jump .end
 
     label .middle: ## преемлемое
-        $ items[__give].have = False
+        $ items[__give].use()
         $ poss['risk'].OpenStage(3)
-        if len(sorry_gifts['alice'].give) == 0:  # преемлемой в первый раз
+        if len(alice.sorry.give) == 0:  # преемлемой в первый раз
             Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
             Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
             Alice_05 "Конечно, Макс, считай твои извинения приняты... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2628,8 +2633,8 @@ label alice_sorry_gifts:
             Max_11 "Ладно! Я учту, только отпусти..."
             Alice_02 "Вот и правильно! Гуляй..."
 
-        elif len(sorry_gifts['alice'].give) == 1:  ## второе вручение
-            if sorry_gifts['alice'].give[0] == 1:  ## ненавистное, преемлемое
+        elif len(alice.sorry.give) == 1:  ## второе вручение
+            if alice.sorry.give[0] == 1:  ## ненавистное, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2658,7 +2663,7 @@ label alice_sorry_gifts:
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give[0] == 2:  ## преемлемое, преемлемое
+            elif alice.sorry.give[0] == 2:  ## преемлемое, преемлемое
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
                 Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2701,8 +2706,8 @@ label alice_sorry_gifts:
                 Max_11 "Взято на заметку, Алиса! Отпусти уже..."
                 Alice_02 "Вот и молодец! Гуляй..."
 
-        elif len(sorry_gifts['alice'].give) == 2:  ###  третье вручение
-            if sorry_gifts['alice'].give == [1, 1]:  ### ненависное, ненавистное, преемлемое
+        elif len(alice.sorry.give) == 2:  ###  третье вручение
+            if alice.sorry.give == [1, 1]:  ### ненависное, ненавистное, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_12 "Я тебе сейчас дам, ничего не расскажу... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2715,26 +2720,26 @@ label alice_sorry_gifts:
                 Alice_05 "Не считается, если она мне неинтересна! Ты так и не подарил самую мою любимую сладость! Так что - не повезло тебе..."
                 Max_14 "Ой! Я понял... Больше не буду!"
                 Alice_02 "Вот и молодец! Гуляй..."
-                $ flags['alice_hugs'] = 1
+                $ alice.flags.hugs_type = 1
                 $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
+            elif alice.sorry.give == [1, 2]:  ### ненавистное, преемлемое, преемлемое
                 call alice_sorry_gifts.middle_again from _call_alice_sorry_gifts_middle_again
 
-            elif sorry_gifts['alice'].give == [1, 3]:  ### ненавистное, любимое, преемлемое
+            elif alice.sorry.give == [1, 3]:  ### ненавистное, любимое, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted
 
-            elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
+            elif alice.sorry.give == [2, 1]:  ### преемлемое, ненавистное, преемлемое
                 call alice_sorry_gifts.middle_again from _call_alice_sorry_gifts_middle_again_1
 
-            elif sorry_gifts['alice'].give == [2, 2]:  ### преемлемое третий раз
+            elif alice.sorry.give == [2, 2]:  ### преемлемое третий раз
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... А ты рисковый! Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
                 call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_1
 
-            elif sorry_gifts['alice'].give == [2, 3]:  ### преемлемое, любимое, преемлемое
+            elif alice.sorry.give == [2, 3]:  ### преемлемое, любимое, преемлемое
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
                 menu:
@@ -2746,7 +2751,7 @@ label alice_sorry_gifts:
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
-                            $ flags['alice_hugs'] = 3
+                            $ alice.flags.hugs_type = 3
                         else:
                             $ Skill('social', 0.1)
                             Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
@@ -2757,9 +2762,9 @@ label alice_sorry_gifts:
                             Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
 
-            elif sorry_gifts['alice'].give == [3, 1]:  ### любимое, ненавистное, преемлемое
+            elif alice.sorry.give == [3, 1]:  ### любимое, ненавистное, преемлемое
                 Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
                 Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
                 Alice_05 "Может и не буду, только сперва сделаю вот что... А ну-ка иди сюда..."   #спрайт с ушами
@@ -2773,7 +2778,7 @@ label alice_sorry_gifts:
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
                         else:
                             $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
@@ -2782,9 +2787,9 @@ label alice_sorry_gifts:
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
                             $ punreason[1] = 1
-                            $ flags['alice_hugs'] = 1
+                            $ alice.flags.hugs_type = 1
 
-            elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, преемлемое
+            elif alice.sorry.give == [3, 2]:  ### любимое, преемлемое, преемлемое
                 Alice_13 "Вот значит как! Снова купил эти шоколадки... Спасибо, конечно, но не очень-то тебе хочется избежать наказания, как я вижу."
                 Max_08 "Просто так уж вышло... Может, ты всё же не будешь рассказывать маме про то, что было утром?"
                 call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_2
@@ -2801,7 +2806,7 @@ label alice_sorry_gifts:
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я сейчас более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
-                            $ flags['alice_hugs'] = 3
+                            $ alice.flags.hugs_type = 3
                         else:
                             $ Skill('social', 0.1)
                             Alice_05 "[failed!t]Ладно, Макс, считай твои извинения приняты... Ого, а что это у тебя здесь..."   #спрайт с ушами
@@ -2812,17 +2817,17 @@ label alice_sorry_gifts:
                             Alice_05 "Видимо, ты хочешь, чтобы я ещё сильнее тебе ухо выкрутила... Я только с радостью!"
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
 
-        $ sorry_gifts['alice'].give.append(2)
+        $ alice.sorry.give.append(2)
         jump .end
 
     label .good: ## любимое
-        $ items[__give].have = False
+        $ items[__give].use()
         $ poss['risk'].OpenStage(2)
-        $ items['ferrero-b'].InShop = True
-        $ sorry_gifts['alice'].valid.add('ferrero-b')
-        if len(sorry_gifts['alice'].give) == 0:  # любимое, самый первый раз
+        $ items['ferrero-b'].unblock()
+        $ alice.sorry.valid.add('ferrero-b')
+        if len(alice.sorry.give) == 0:  # любимое, самый первый раз
             Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
             Max_03 "Никто! Просто угадал..."
             Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
@@ -2848,8 +2853,8 @@ label alice_sorry_gifts:
                         Alice_02 "Вот и правильно! Гуляй..."
             $ AddRelMood('alice', 0, 50)
 
-        elif len(sorry_gifts['alice'].give) == 1:  ## дарим во второй раз
-            if sorry_gifts['alice'].give[0] == 1:  ## ненавистное, любимое
+        elif len(alice.sorry.give) == 1:  ## дарим во второй раз
+            if alice.sorry.give[0] == 1:  ## ненавистное, любимое
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
@@ -2868,7 +2873,7 @@ label alice_sorry_gifts:
                 Alice_02 "Вот и молодец! Гуляй..."
                 $ AddRelMood('alice', 0, 50)
 
-            elif sorry_gifts['alice'].give[0] == 2:  ## преемлемое, любимое
+            elif alice.sorry.give[0] == 2:  ## преемлемое, любимое
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_05 "Хм... Похоже, что ты, Макс, большой везунчик! Поглазел на меня голую в душе, да ещё и с конфетами угадал... Не слишком ли?"
@@ -2926,8 +2931,8 @@ label alice_sorry_gifts:
                                 call alice_sorry_gifts.what_bummer from _call_alice_sorry_gifts_what_bummer
                     $ AddRelMood('alice', 5, 150, 3)
 
-        elif len(sorry_gifts['alice'].give) == 2:  ### дарим в третий раз
-            if sorry_gifts['alice'].give == [1, 1]:  ### ненависное, ненавистное, любимое
+        elif len(alice.sorry.give) == 2:  ### дарим в третий раз
+            if alice.sorry.give == [1, 1]:  ### ненависное, ненавистное, любимое
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_05 "Лучше поздно, чем никогда! А ну-ка иди сюда..."   #спрайт с ушами
@@ -2941,7 +2946,7 @@ label alice_sorry_gifts:
                             Alice_05 "[succes!t]Пожалуй, на этот раз, я поверю и ничего не расскажу маме. Но, на всякий случай, за подглядывание, нужно сильнее потянуть..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 2
+                            $ alice.flags.hugs_type = 2
                         else:
                             $ Skill('social', 0.1)
                             Alice_12 "[failed!t]Ты всерьёз думаешь, что меня можно в этом убедить?! Нет уж, я очень хочу посмотреть, как мама тебя отшлёпает!"
@@ -2949,10 +2954,10 @@ label alice_sorry_gifts:
                             Alice_05 "Слишком уж долго до тебя доходило, что я больше всего люблю... Так что - не повезло тебе..."
                             Max_14 "Ой! Я понял... Больше не буду!"
                             Alice_02 "Вот и молодец! Гуляй..."
-                            $ flags['alice_hugs'] = 1
+                            $ alice.flags.hugs_type = 1
                             $ punreason[1] = 1
 
-            elif sorry_gifts['alice'].give == [1, 2]:  ### ненавистное, преемлемое, любимое
+            elif alice.sorry.give == [1, 2]:  ### ненавистное, преемлемое, любимое
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
@@ -2960,7 +2965,7 @@ label alice_sorry_gifts:
                 call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_3
                 $ AddRelMood('alice', 0, 100)
 
-            elif sorry_gifts['alice'].give == [1, 3]:  ### ненавистное, любимое, любимое
+            elif alice.sorry.give == [1, 3]:  ### ненавистное, любимое, любимое
                 Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
                 Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
                 menu:
@@ -2983,7 +2988,7 @@ label alice_sorry_gifts:
                                         Alice_02 "Подглядывать за мной или дарить мне сладости?!"
                                         Max_02 "Второе, конечно!"
                                         Alice_05 "Ну да, конечно... Иди давай."
-                                        $ flags['alice_hugs'] = 4
+                                        $ alice.flags.hugs_type = 4
                                     else:
                                         $ Skill('social', 0.1)
                                         Alice_05 "[failed!t]Ах, а так хотелось! Какой облом..."
@@ -2991,14 +2996,14 @@ label alice_sorry_gifts:
                                         Alice_07 "Зачем останавливаться на чём-то одном, Макс? Хи-хи..."
                                         Max_01 "Я тогда лучше пойду... погуляю."
                                         Alice_02 "Ну как хочешь..."
-                                        $ flags['alice_hugs'] = 3
+                                        $ alice.flags.hugs_type = 3
                         else:
                             $ Skill('social', 0.1)
                             call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_1
                             Alice_02 "Вот и молодец! Гуляй..."
                 $ AddRelMood('alice', 0, 100)
 
-            elif sorry_gifts['alice'].give == [2, 1]:  ### преемлемое, ненавистное, любимое
+            elif alice.sorry.give == [2, 1]:  ### преемлемое, ненавистное, любимое
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
@@ -3006,7 +3011,7 @@ label alice_sorry_gifts:
                 call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_4
                 $ AddRelMood('alice', 0, 50)
 
-            elif sorry_gifts['alice'].give == [2, 2]:  ### преемлемое, преемлемое, любимое
+            elif alice.sorry.give == [2, 2]:  ### преемлемое, преемлемое, любимое
                 Alice_07 "Ничего себе! Ты даже умудрился купить мои любимые конфеты! Большое спасибо! И кто об этом проболтался?"
                 Max_03 "Никто! Просто повезло, а может твоя подсказа помогла."
                 menu:
@@ -3018,14 +3023,14 @@ label alice_sorry_gifts:
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
-                            $ flags['alice_hugs'] = 3
+                            $ alice.flags.hugs_type = 3
                         else:
                             $ Skill('social', 0.1)
                             call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_2
                             Alice_02 "Вот и молодец! Гуляй..."
                 $ AddRelMood('alice', 0, 50)
 
-            elif sorry_gifts['alice'].give == [2, 3]:  ### преемлемое, любимое, любимое
+            elif alice.sorry.give == [2, 3]:  ### преемлемое, любимое, любимое
                 Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
                 Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
@@ -3039,7 +3044,7 @@ label alice_sorry_gifts:
                             call alice_sorry_gifts.what_bummer from _call_alice_sorry_gifts_what_bummer_1
                 $ AddRelMood('alice', 0, 100)
 
-            elif sorry_gifts['alice'].give == [3, 1]:  ### любимое, ненавистное, любимое
+            elif alice.sorry.give == [3, 1]:  ### любимое, ненавистное, любимое
                 Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
                 Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
                 Alice_04 "Видимо, теперь я должна представить, что никто утром за мной в душе не подглядывал, да?"
@@ -3047,7 +3052,7 @@ label alice_sorry_gifts:
                 call alice_sorry_gifts.apology_accepted from _call_alice_sorry_gifts_apology_accepted_5
                 $ AddRelMood('alice', 0, 100)
 
-            elif sorry_gifts['alice'].give == [3, 2]:  ### любимое, преемлемое, любимое
+            elif alice.sorry.give == [3, 2]:  ### любимое, преемлемое, любимое
                 Alice_07 "Ага! Снова купил мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
                 Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
                 menu:
@@ -3059,7 +3064,7 @@ label alice_sorry_gifts:
                             Max_07 "Что, вот так вот просто?!"
                             Alice_05 "Ну, ты обещал мне вкусняшку и сдержал слово. А я добрая, если настроение хорошее. Более-менее добрая... Так что не искушай судьбу!"
                             Max_01 "Понял, сестрёнка! Не буду тебе мешать..."
-                            $ flags['alice_hugs'] = 3
+                            $ alice.flags.hugs_type = 3
                         else:
                             $ Skill('social', 0.1)
                             call alice_sorry_gifts.im_in_pain from _call_alice_sorry_gifts_im_in_pain_3
@@ -3091,10 +3096,10 @@ label alice_sorry_gifts:
                     Alice_02 "Подглядывать за мной или дарить мне сладости?!"
                     Max_02 "Второе, конечно!"
                     Alice_05 "Ну да, конечно... Иди давай."
-                    $ flags['alice_hugs'] = 4
+                    $ alice.flags.hugs_type = 4
                     $ AddRelMood('alice', 5, 150, 3)
 
-        $ sorry_gifts['alice'].give.append(3)
+        $ alice.sorry.give.append(3)
         jump .end
 
     label .end:
@@ -3103,7 +3108,7 @@ label alice_sorry_gifts:
 
 
 label alice_about_bath:
-    $ flags['talkaboutbath'] = 2
+    $ alice.flags.incident = 2
     Alice_12 "Ты о чём, Макс?"
     Max_01 "Ну, ты вернулась ночью из клуба и мы разговаривали в ванной..."
     menu:
@@ -3148,7 +3153,7 @@ label alice_about_kiss:
     Alice_12 "Макс, отвали. Я не буду целоваться с тобой, даже не мечтай. И придумай другой способ клеиться, а то этот на уровне детского сада, серьёзно."
     Max_09 "Да я не клеился!"
 
-    $ talk_var['ask.teachkiss'].append('alice')
+    $ flags.how_to_kiss.append('alice')
     $ spent_time += 10
     return
 
@@ -3206,7 +3211,7 @@ label talkblog3:
     Alice_01 "Да, Макс. Причём, желающих на этом зарабатывать больше, чем желающих за это платить. И в этом главная проблема. Но как я уже сказала, я могу попробовать. Если купишь что-то, посмотрим..."
     Max_01 "Понял, с меня симпатичное бельишко..."
     $ poss['blog'].OpenStage(4)
-    $ items['b.lingerie'].InShop = True
+    $ items['b.lingerie'].unblock()
     $ spent_time += 10
     jump Waiting
 
@@ -3280,9 +3285,9 @@ label gift_black_lingerie:
         Alice_02 "Похоже, размер мне подходит... и удобно. ... Ну, как тебе?"   #спрайт с одетым лифчиком
         Max_04 "Тебе идёт! Мне нравится..."
 
-        $ __suf = 'a' if alice.dress=='a' and flags['smoke'] != 'nopants' else 'an'
+        $ __suf = 'a' if alice.dress=='a' and alice.req.result != 'nopants' else 'an'
         $ __suf += 'e' if not ('09:00' <= tm < '20:00') else ''
-        if __suf in ['an', 'ane'] and flags['smoke'] == 'nopants':
+        if __suf in ['an', 'ane'] and alice.req.result == 'nopants':
             # Алиса без трусиков, согласно договорённости
             Alice_05 "Класс! А теперь быстро отвернись, а то на мне трусиков нет, благодаря твоим уговорам! Нужно ещё новые трусики примерить."
             $ renpy.show('Alice newlingerie 06'+__suf)
@@ -3291,14 +3296,14 @@ label gift_black_lingerie:
             # Алиса в трусиках или без них, если такая одежда
             Alice_03 "Отлично! А теперь отвернись, не подглядывай! Нужно ещё трусики примерить."
             $ renpy.show('Alice newlingerie 06'+__suf)
-            if flags['smoke'] != 'not_nopants':
+            if alice.req.result != 'not_nopants':
                 Max_02 "Конечно, я не смотрю..."
             else:
                 # Алиса нарушает договор
                 Max_08 "Конечно, я не смотрю... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
                 Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
                 Max_01 "Ладно, считай, я ничего не видел."
-                $ flags['noted'] = True
+                $ alice.req.noted = True
 
         $ renpy.show('Alice newlingerie '+('08' if '09:00' <= tm < '20:00' else '08e'))
         Alice_07 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидит?"
@@ -3310,7 +3315,7 @@ label gift_black_lingerie:
     else:
         # примерка началась без низа
         $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
-        if __suf=='a' and flags['smoke'] == 'nopants':  # если Алиса без трусиков
+        if __suf=='a' and alice.req.result == 'nopants':  # если Алиса без трусиков
             $ __suf += 'n'
         if not ('09:00' <= tm < '20:00'):
             $ __suf += 'e'
@@ -3318,7 +3323,7 @@ label gift_black_lingerie:
         if __suf in ['a', 'ae']:
             # Алиса в трусиках
             Alice_03 "Макс! Ты что, пялишься на мой зад? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"
-            if flags['smoke'] != 'not_nopants':
+            if alice.req.result != 'not_nopants':
                  # Алиса одета как должно
                 Max_02 "Я не пялюсь..."
             else:
@@ -3326,7 +3331,7 @@ label gift_black_lingerie:
                 Max_08 "Я не пялюсь... Эй! А ты же ведь не должна носить трусики! У нас ведь уговор!"
                 Alice_06 "Вот чёрт! Да... я забыла, что сегодня не должна их носить! А ты сейчас не должен был этого увидеть, так что молчи... а то выпну отсюда..."
                 Max_01 "Ладно, считай, я ничего не видел."
-                $ flags['noted'] = True
+                $ alice.req.noted = True
         elif __suf in ['an', 'ane']:
             # Алиса без трусиков по уговору
             if not _in_replay:
@@ -3381,7 +3386,7 @@ label alice_gift_sweets:   # Периодическое дарение слад�
         "Конфеты \"Ferrero Rocher\" (24 штуки)" if items['ferrero-b'].have:
             $ __give = 'ferrero-b'
 
-    $ items[__give].have = False
+    $ items[__give].use()
     Alice_07 "Ага! Мои любимые конфеты! Как здорово... Большое тебе спасибо, Макс!"
     Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
     if __give=='ferrero-m':
@@ -3403,7 +3408,7 @@ label alice_gift_sweets:   # Периодическое дарение слад�
             Max_02 "Согласен, такую стройную фигуру лучше не портить... Но временами, любимыми конфетами можно и побаловаться!"
             Alice_05 "Ну да, временами... И сейчас как раз такой момент!"
             Max_01 "Наслаждайся, сластёна! Не буду мешать..."
-
+            $ alice.flags.hugs += 1
             $ infl[alice].add_m(12)
         else:
             $ Skill('social', 0.2)
@@ -3425,11 +3430,12 @@ label alice_gift_sweets:   # Периодическое дарение слад�
         Max_02 "Согласен, такую стройную фигуру лучше не портить... Но временами, любимыми конфетами можно и побаловаться!"
         Alice_05 "Ну да, временами... И сейчас как раз такой момент!"
         Max_01 "Наслаждайся, сластёна! Не буду мешать..."
+        $ alice.flags.hugs += 1
         $ infl[alice].add_m(20)
     $ spent_time += 10
 
     # включаем откат на дарение сладости
-    $ dcv['alice_sweets'].set_lost(renpy.random.randint(5, 7))
+    $ alice.dcv.sweets.set_lost(renpy.random.randint(5, 7))
     jump Waiting
 
 
@@ -3443,7 +3449,7 @@ label alice_about_lingerie0:
     else:
         Alice_03 "Для этого компьютер нужен. Так что, если интересно, то заходи, когда я в своей комнате. Покажу..."
         Max_01 "Ага. Обязательно зайду"
-        $ dcv['eric.lingerie'].stage = 2  # Макс говорил с Алисой о белье, которое купит Эрик, но подошел не вовремя
+        $ alice.dcv.intrusion.stage = 2  # Макс говорил с Алисой о белье, которое купит Эрик, но подошел не вовремя
 
     $ spent_time += 10
     jump Waiting
@@ -3463,8 +3469,8 @@ label alice_showing_lingerie1:  #Алиса показывает Максу бе
     Max_08 "Ладно, я тебя понял."
     Max_09 "{i}( Мне ещё как можно будет на тебя смотреть, когда я куплю это боди первее Эрика! Вот только времени совсем в обрез, надо торопиться... Блин, Эрик точно будет этому не рад! Стоит ли оно того, это боди? ){/i}"
 
-    $ dcv['eric.lingerie'].stage = 3  # Макс знает, какое бельё хочет Алиса
-    $ items['sexbody2'].InShop = True
+    $ alice.dcv.intrusion.stage = 3  # Макс знает, какое бельё хочет Алиса
+    $ items['sexbody2'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 10
     jump Waiting
@@ -3556,17 +3562,319 @@ label gift_lace_lingerie:
     $ renpy.end_replay()
     $ added_mem_var('lace_ling_max1')
     $ spent_time += 40
-    $ dcv['eric.lingerie'].stage = 5  # бельё Алисе подарил Макс
+    $ alice.dcv.intrusion.stage = 5  # бельё Алисе подарил Макс
     $ alice.dress = 'd'
     $ alice.dress_inf = '02la'
     $ blog_lingerie = ['d', 'd', 'd']
-    $ items['sexbody2'].InShop = False
-    $ items['sexbody2'].have = False
+    $ items['sexbody2'].give()
     $ alice.gifts.append('sexbody2')
     $ infl[alice].add_m(40)
     $ poss['blog'].OpenStage(18)
     jump Waiting
 
+
+label alice_about_defend_punish0:
+
+    # "Хотел узнать, хорошо ли тебе сидится?"
+    Alice_12 "Эээ... Прекрасно сидится, как видишь."
+    Max_02 "Ну ещё бы, ведь твою симпатичную попку никто сегодня не отшлёпал, благодаря мне."
+    Alice_05 "А, вот ты о чём! Ну да, моя попка цела и невредима. Почаще бы ты меня от маминой руки ещё спасал, было бы супер!"
+    Max_07 "Да как-то не очень хочется, на самом деле, вообще это делать. По крайней мере за просто так."
+    Alice_13 "А что ты хочешь? Гадости какие-нибудь наверняка..."
+    Max_03 "Самое правильное - это всё равно тебя наказать! Только в отличие от мамы, я сделаю это с нежностью."
+    Alice_15 "Чего?! Вот ещё! Чтобы меня младший брат наказывал? Обойдёшься, Макс!"
+    Max_09 "Ты уверена? Ох, не сладко тебе будет без моего вмешательства. Но дело твоё."
+    Alice_05 "Вот именно."
+
+    $ spent_time += 10
+    $ alice.dcv.private.stage = 1
+    jump Waiting
+
+
+label alice_about_defend_punish1:
+
+    # "Не слабо тебя отшлёпали!"
+    $ alice.dcv.private.stage = 3
+    Alice_13 "Так ты позлорадствовать пришёл. Нет, чтобы заступиться за сестрёнку..."
+    Max_01 "Если разрешишь тебя немного пошлёпать за это, то буду заступаться."
+    Alice_12 "Макс, давай иначе договоримся? Это отстой..."
+    Max_09 "Иногда получать от меня легонько по попке - это значит отстой, а всегда и сурово от мамы - это класс?! Ты ведь даже не знаешь, как я буду шлёпать!"
+    $ _ch1 = GetChance(mgg.social, 1.5, 900)
+    menu:
+        Alice_16 "Я и узнавать не хочу!"
+        "Ладно, как знаешь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":   #(убеждение)
+            jump .convince
+
+    label .cont:
+        $ _ch1 = GetChance(mgg.social, 1.5, 900)
+        menu:
+            Alice_12 "Чтобы меня младший брат наказывал? Обойдёшься, Макс!"
+            "Ладно, как знаешь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":   #(убеждение)
+                jump .convince
+
+    label .convince:
+        if not RandomChance(_ch1.ch):
+            # (не удалось)
+            Alice_17 "Я лучше от мамы наказания потерплю, чем от тебя..."
+            Max_07 "Ох, не завидую я тебе..."
+        else:
+            # (удалось)
+            Alice_06 "А ты точно не больно будешь шлёпать?"
+            Max_04 "Точно."
+            Alice_05 "Ладно, можешь меня шлёпать. Конечно, если от мамы спасёшь. Тогда и поговорим."
+            Max_01 "Я постараюсь."
+            $ poss['ass'].OpenStage(0)
+            $ alice.dcv.private.stage = 4
+            $ alice.dcv.private.set_lost(0)
+
+    $ spent_time += 10
+    jump Waiting
+
+
+label alice_about_private_punish:
+
+    if tm> '19:00' and 1<GetWeekday(day)<5:
+        #если приватное наказание выпадает на пн-пт
+        Alice_13 "Макс, давай завтра! Днём, например. Когда мы дома одни остаёмся... Ну и всё, что выпадет на выходные дни, будем переносить на понедельник, хорошо?"
+    else:
+        #если приватное наказание выпадает на сб-вс
+        Alice_13 "Макс, давай теперь уже в понедельник днём! Когда мы дома одни остаёмся..."
+    Max_04 "Без проблем."
+    Alice_16 "И смотри, если мне будет больно, то ты с фингалом ходить неделю будешь... Ясно?"
+    Max_01 "Ага, не переживай."
+    $ alice.flags.private = True
+    $ spent_time += 10
+    jump Waiting
+
+
+label alice_private_punish_0:
+    # "Пора отшлёпать одну милую попку!"
+    Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделам?"
+    jump .pun
+
+    menu .smoke:
+        Alice_00 "Макс, поглазеть пришёл?"
+        "Пора отшлёпать одну милую попку!":
+            Alice_05 "Да, Макс, сейчас... Только дай докурю спокойно и я в твоём распоряжении."
+            menu:
+                Max_03 "Хорошо. Я подожду..."
+                "{i}подождать Алису{/i}":
+                    pass
+            #punish-sun-01 + punish-sun-01-alice-01 + punish-sun-01-max-(01a/01b)
+            scene BG char Alice punish-sun 01
+            show Alice punish-sun 01-01
+            $ renpy.show("Max punish-sun 01-01"+mgg.dress)
+            Alice_03 "Всё, я готова. Где это сделам?"
+            jump .pun
+
+    label .pun:
+        Max_01 "Да прямо тут, во дворе."
+
+    #punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
+    scene BG char Alice punish-sun 02
+    $ renpy.show("Alice punish-sun 02-01"+mgg.dress)
+    Alice_05 "Ладно, давай здесь. Только не больно, хорошо? И не приставать!"
+    Max_02 "Ага, раздевайся давай..."
+
+    #punish-sun-02 + punish-sun-02-max-(02a/02b)-alice-02
+    $ renpy.show("Alice punish-sun 02-02"+mgg.dress)
+    Alice_14 "Чего?! В смысле, раздевайся? О таком мы не договаривались!"
+    Max_07 "Это само собой разумеющееся, Алиса. Со всеми претензиями обращайся к маме, это ведь она установила такой порядок наказаний."
+    menu:
+        Alice_13 "Если ты думаешь, что я стану тут перед тобой раздеваться..."
+        "{i}стянуть верх купальника{/i}":
+            pass
+    #punish-sun-02 + punish-sun-02-max-(03a/03b)-alice-03
+    $ renpy.show("Alice punish-sun 02-03"+mgg.dress)
+    Alice_15 "Макс!!! Ты офигел так делать?! Я же тебе сейчас уши оторву..."
+    menu:
+        Max_09 "Сколько от тебя шума, Алиса! Да ещё и по такому пустяку. Надоели уже твои угрозы."
+        "{i}стянуть низ купальника{/i}":
+            pass
+    #punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
+    $ renpy.show("Alice punish-sun 02-04"+mgg.dress)
+    Alice_06 "Дикарь ты и извращенец! Я тебе потом такое устрою..."
+    Max_01 "Ага, обязательно. Только давай сперва тебя накажем."
+    menu:
+        Alice_12 "Только не вздумай глазеть на меня при этом!"
+        "{i}шлёпать нежно{/i}":
+            #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
+            scene BG char Alice punish-sun 03
+            $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            menu:
+                Alice_05 "А это однозначно лучше, чем когда мама шлёпает! После того, чему моя попка подвергалась, твои шлепки даже приятны..."
+                "Ну вот, а ты не хотела!":
+                    #punish-sun-02 + punish-sun-02-max-(05a/05b)-alice-05
+                    scene BG char Alice punish-sun 02
+                    $ renpy.show("Alice punish-sun 02-05"+mgg.dress)
+                    Alice_06 "Ну всё, хватит. А то ты уже не шлёпаешь, а просто лапаешь мою попку. И так раздел меня бесцеремонно..."
+                    Max_03 "Просто хотел ускорить процесс."
+                    #punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
+                    $ renpy.show("Alice punish-sun 02-04"+mgg.dress)
+                    Alice_03 "Ты меня своим озабоченным взглядом не смущай. Вали уже, оденусь я без твоей помощи..."
+
+                "Могу сильнее, а то это уже не наказание!":
+                    $ __r1 = renpy.random.randint(1, 2)
+                    #punish-sun-04 + punish-sun-04-max-(01a/01b)-alice-01 или punish-sun-04-max-(02a/02b)-alice-02
+                    scene BG char Alice punish-sun 04
+                    $ renpy.show("Alice punish-sun 04-0"+str(__r1)+mgg.dress)
+                    Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
+                    Max_04 "А если я немного потру, чтобы не болело... Так легче?"
+                    #punish-sun-05 + punish-sun-05-max-(01a/01b)-alice-01 или punish-sun-05-max-(02a/02b)-alice-02
+                    scene BG char Alice punish-sun 05
+                    $ renpy.show("Alice punish-sun 05-0"+str(__r1)+mgg.dress)
+                    Alice_12 "Да... Но этого не пришлось бы делать, если бы ты шлёпал легонько!"
+                    Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
+                    Alice_13 "А мне кажется, что это больше похоже на извращение! Давай прекращай..."
+                    Max_05 "Но приятное ведь?"
+                    #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
+                    scene BG char Alice punish-sun 04
+                    $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
+                    Alice_05 "Ага, сложно не заметить, сколько радости от этого в твоих шортах."
+                    Max_03 "На такую красотку, как ты, у любого встанет!"
+                    Alice_03 "Ах... Вот это комплимент! Не ожидала я такого от тебя, Макс. Так, всё, повеселились и хватит. Убери эту свою штуку и не появляйся в таком виде рядом со мной!"
+                    $ alice.set_pf('pun_stroking', True)
+            menu:
+                Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
+                "{i}уйти{/i}":
+                    jump .end
+
+        "{i}шлёпать сильно{/i}":
+            #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
+            scene BG char Alice punish-sun 03
+            $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
+            Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
+            #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
+            scene BG char Alice punish-sun 04
+            $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
+            Alice_15 "Это не немножко... У тебя ещё и стоит на всё это! Я в шоке! Прикрылся бы хоть..."
+            Max_03 "Ну, ты же девушка... И очень привлекательная!"
+            Alice_17 "И что? Я ещё и твоя сестра! Забыл? Всё, мы закончили. И что у тебя там, вообще, в башке творится..."
+            Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
+            menu:
+                Alice_13 "Ох, и зачем я на всё это согласилась..."
+                "{i}уйти{/i}":
+                    jump .end
+
+    label .end:
+        $ spent_time += 30
+        $ alice.dcv.private.stage = 5
+        $ alice.dcv.private.set_lost(0)
+        $ alice.dcv.prudence.set_lost(renpy.random.randint(1, 3))
+        $ alice.spanked = True
+        jump Waiting
+
+
+label alice_private_punish_r:
+    # "Пора отшлёпать одну милую попку!"
+    Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, давай побыстрее с этим покончим..."
+    jump .pun
+
+    label .smoke:
+        Alice_05 "Да, Макс, сейчас... Только дай докурю спокойно и я в твоём распоряжении."
+        menu:
+            Max_03 "Хорошо. Я подожду..."
+            "{i}подождать Алису{/i}":
+                jump .smoke_pun
+
+    label .smoke_pun:
+        #punish-sun-01 + punish-sun-01-alice-01 + punish-sun-01-max-(01a/01b)
+        scene BG char Alice punish-sun 01
+        show Alice punish-sun 01-01
+        $ renpy.show("Max punish-sun 01-01"+mgg.dress)
+        Alice_03 "Всё, я готова. Давай побыстрее с этим покончим..."
+        jump .pun
+
+    label .pun:
+        pass
+
+    #punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
+    scene BG char Alice punish-sun 02
+    $ renpy.show("Alice punish-sun 02-01"+mgg.dress)
+    Alice_05 "Мне же больше делать нечего, только и жду с самого утра, когда ты придёшь и накажешь меня!"
+    Max_02 "Сама разденешься или помочь?"
+    #punish-sun-02 + punish-sun-02-max-(02a/02b)-alice-02
+    $ renpy.show("Alice punish-sun 02-02"+mgg.dress)
+    menu:
+        Alice_04 "Вот тебе надо, чтобы я была голая, так сам и раздевай! Не облегчать же тебе работу..."
+        "{i}стянуть верх купальника{/i}":
+            pass
+    #punish-sun-02 + punish-sun-02-max-(03a/03b)-alice-03
+    $ renpy.show("Alice punish-sun 02-03"+mgg.dress)
+    menu:
+        Alice_15 "Ну не так же резко, Макс! Смотри, если порвёшь мой купальник, я тебе тоже мигом что-нибудь порву..."
+        "{i}стянуть низ купальника{/i}":
+            pass
+    #punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
+    $ renpy.show("Alice punish-sun 02-04"+mgg.dress)
+    menu:
+        Alice_06 "И чего глазеем? Шлёпай давай! Руки только не распускай слишком сильно."
+        "{i}шлёпать нежно{/i}":
+            #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
+            scene BG char Alice punish-sun 03
+            $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            menu:
+                Alice_05 "Ты там уже начал? А то мне показалось, что это больше тянет на поглаживания, а не на шлепки..."
+                "И как, тебе нравится?":
+                    #punish-sun-02 + punish-sun-02-max-(05a/05b)-alice-05
+                    scene BG char Alice punish-sun 02
+                    $ renpy.show("Alice punish-sun 02-05"+mgg.dress)
+                    Alice_02 "Мне нравится, что небольно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
+                    Max_03 "Просто зрелище такое... завораживающее."
+                    #punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
+                    $ renpy.show("Alice punish-sun 02-04"+mgg.dress)
+                    Alice_03 "Ты меня своим озабоченным взглядом не смущай. Вали уже, оденусь я без твоей помощи..."
+
+                "Могу сильнее, раз ты заскучала!":
+                    $ __r1 = renpy.random.randint(1, 2)
+                    #punish-sun-04 + punish-sun-04-max-(01a/01b)-alice-01 или punish-sun-04-max-(02a/02b)-alice-02
+                    scene BG char Alice punish-sun 04
+                    $ renpy.show("Alice punish-sun 04-0"+str(__r1)+mgg.dress)
+                    Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
+                    Max_04 "А я потру, чтобы не болело... Так легче?"
+                    #punish-sun-05 + punish-sun-05-max-(01a/01b)-alice-01 или punish-sun-05-max-(02a/02b)-alice-02
+                    scene BG char Alice punish-sun 05
+                    $ renpy.show("Alice punish-sun 05-0"+str(__r1)+mgg.dress)
+                    Alice_13 "Да, я не жалуюсь... Но можно было ведь и дальше шлёпать легонько."
+                    Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
+                    Alice_02 "Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
+                    Max_03 "Просто зрелище такое... завораживающее."
+                    #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
+                    scene BG char Alice punish-sun 04
+                    $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
+                    Alice_03 "Ага, сложно не заметить, сколько радости от этого в твоих шортах. Приму это за комплимент, но хватит уже меня смущать своим озабоченным видом!"
+                    $ poss['ass'].OpenStage(1)
+                    $ alice.set_pf('pun_stroking', True)
+            menu:
+                Max_02 "Хорошо, до следующего раза."
+                "{i}уйти{/i}":
+                    jump .end
+
+        "{i}шлёпать сильно{/i}":
+            #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
+            scene BG char Alice punish-sun 03
+            $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
+            Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
+            #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
+            scene BG char Alice punish-sun 04
+            $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
+            Alice_15 "Это не немножко... У тебя ещё и стоит на всё это! Я в шоке! Прикрылся бы хоть..."
+            Max_03 "Ну, ты же девушка... И очень привлекательная!"
+            Alice_17 "И что? Я ещё и твоя сестра! Забыл? Всё, мы закончили. И что у тебя там, вообще, в башке творится..."
+            Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
+            menu:
+                Alice_13 "Ох, и зачем я на всё это согласилась..."
+                "{i}уйти{/i}":
+                    jump .end
+
+    label .end:
+        $ spent_time += 30
+        $ alice.dcv.private.set_lost(0)
+        $ alice.dcv.prudence.set_lost(renpy.random.randint(1, 3))
+        $ alice.spanked = True
+        jump Waiting
 
 
 # label about_eric_gifts:

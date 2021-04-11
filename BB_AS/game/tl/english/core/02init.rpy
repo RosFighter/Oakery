@@ -466,9 +466,32 @@ translate english strings:
 
     # game/core/02init.rpy:36
     old "{color=#00FF00}{i}Ей нравится!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}She loves it!{/i}{/color}\n"
 
     # game/core/02init.rpy:37
     old "{color=#E59400}{i}Ей не нравится!{/i}{/color}\n"
+    new "{color=#E59400}{i}She does not like it!{/i}{/color}\n"
+# TODO: Translation updated at 2021-04-11 22:26
+
+translate english strings:
+
+    # game/core/02init.rpy:116
+    old "Хотел узнать, хорошо ли тебе сидится?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Не слабо тебя отшлёпали!"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Ты не передумала о наказаниях?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Отшлёпать тебя сейчас или..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Пора отшлёпать одну милую попку!"
     new ""
 

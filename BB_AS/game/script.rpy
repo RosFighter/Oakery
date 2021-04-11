@@ -19,12 +19,12 @@ label start:
     show screen watermark
     show screen notify_check
     call InitHouse from _call_InitHouse
+    call InitVariable from _call_InitVariable
     call InitCharacters from _call_InitCharacters
     call InitActions from _call_InitActions
     call InitStuff from _call_InitStuff
     call InitPoss from _call_InitPoss
     call InitTalksEvents from _call_InitTalksEvents
-    call InitVariable from _call_InitVariable
     call InitPunish from _call_InitPunish
     call InitCources from _call_InitCources
 
@@ -32,7 +32,7 @@ label start:
 
 
 label intro:
-    $ NewSaveName()
+    # $ NewSaveName()
     scene BG intro max
     $ renpy.block_rollback()
     menu:
@@ -114,7 +114,6 @@ label intro:
 
 
 label about_poss:
-    $ flags['about_poss'] = False
     scene BG intro max
     Max_00 "\"Возможности\" - это особые пути, по которым можно пройти, чтобы достичь какого-то результата. Обычно они скрыты и не очень очевидны."
     Max_03 "Некоторые действия в игре открывают такие \"возможности\". Увидеть их можно на соответствующем экране, который можно открыть через верхнее меню."
