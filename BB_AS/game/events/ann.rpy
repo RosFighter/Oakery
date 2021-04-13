@@ -217,16 +217,16 @@ label ann_shower:
 
 
 label ann_yoga:
-    scene BG char Ann yoga-00
+    scene BG char Ann yoga 00
     if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
-        $ renpy.show('Ann yoga '+pose3_1)
-        $ persone_button1 = 'Ann yoga '+pose3_1+'b'
+        $ renpy.show('Ann yoga '+pose3_1+ann.dress)
+        $ persone_button1 = 'Ann yoga '+pose3_1+ann.dress
     elif int(tm[3:4])%3 == 1:
-        $ renpy.show('Ann yoga '+pose3_2)
-        $ persone_button1 = 'Ann yoga '+pose3_2+'b'
+        $ renpy.show('Ann yoga '+pose3_2+ann.dress)
+        $ persone_button1 = 'Ann yoga '+pose3_2+ann.dress
     else:
-        $ renpy.show('Ann yoga '+pose3_3)
-        $ persone_button1 = 'Ann yoga '+pose3_3+'b'
+        $ renpy.show('Ann yoga '+pose3_3+ann.dress)
+        $ persone_button1 = 'Ann yoga '+pose3_3+ann.dress
     return
 
 

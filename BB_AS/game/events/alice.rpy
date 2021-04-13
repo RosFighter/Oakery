@@ -2482,7 +2482,7 @@ label alice_towel_after_club:
                     "{i}кончить{/i}":
                         jump .cum_breast
 
-            "Так пусти в дело свой язычок..." if 'eric.lingerie' in dcv and alice.dcv.intrusion.stage in [5, 7]:   #если Алису наказывали полностью голую + Макс опередил Эрика с дарением белья
+            "Так пусти в дело свой язычок..." if alice.flags.nakedpunish and alice.dcv.intrusion.stage in [5, 7]:   #если Алису наказывали полностью голую + Макс опередил Эрика с дарением белья
 
                 Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
                 $ added_mem_var('bath_tongue')

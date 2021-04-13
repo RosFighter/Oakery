@@ -1023,7 +1023,7 @@ translate deutsch first_photoset_set4_947687dd:
 # game/dialogues/kiratalk.rpy:512
 translate deutsch first_photoset_set6_6e260e36:
 
-    # Kira_04 "Если я обопрусь на стол вот так, слегка подразнивая своей грудью, получится неплохой снимок, как мне кажется..."
+    # Kira_04 "Если я обопрусь на стол вот так, слегка поддразнивая своей грудью, получится неплохой снимок, как мне кажется..."
     Kira_04 ""
 
 # game/dialogues/kiratalk.rpy:515
@@ -1119,7 +1119,7 @@ translate deutsch first_photoset_set11_2fd9047a:
 # game/dialogues/kiratalk.rpy:570
 translate deutsch first_photoset_set11_05c5e747:
 
-    # Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же класно ты сосёшь... {p=1.5}{nw}"
+    # Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же классно ты сосёшь... {p=1.5}{nw}"
     Max_22 ""
 
 # game/dialogues/kiratalk.rpy:572
@@ -1233,7 +1233,7 @@ translate deutsch kira_about_photo1_caa6f41d:
 # game/dialogues/kiratalk.rpy:626
 translate deutsch kira_about_photo1_fc887226:
 
-    # Max_19 "{i}( Интересно, когда будет следующая фотосессия? Мне уже не терпиться перейти на новый уровень близости с тётей! Вот я бы её хорошенько... ){/i}"
+    # Max_19 "{i}( Интересно, когда будет следующая фотосессия? Мне уже не терпится перейти на новый уровень близости с тётей! Вот я бы её хорошенько... ){/i}"
     Max_19 ""
 
 # game/dialogues/kiratalk.rpy:630

@@ -25,20 +25,36 @@ init python:
             else:
                 self.rand = rand  # этот вариант доступен для случайного выбора
 
+        def enable(self):
+            self.change = True
+            self.rand   = True
+
+        def rand_enable(self):
+            self.rand   = True
+
+        def disable(self):
+            self.change = False
+            self.rand   = False
+
         def __repr__(self):
-            return "{self.name} ({self.suf}/{self.info}), вручную: {self.change}, случайно: {self.rand}".format(self=self)
+            r1 = 'доступно' if self.change else 'только случайно' if self.rand else 'заблокировано'
+            return "{self.name} ({self.suf}/{self.info}), {r1}".format(self=self, r1=r1)
 
     class Clothes():
-        cur   = 0       # номер выбранного варианта из списка
-        rand  = False   # выбирать случайно из доступных вариантов раз в days дней
-        left  = 0       # осталось дней до случайного выбора
-        days  = 1       # количество дней по умолчанию до смены одежды
-        req   = 'True'  # условие доступности ручного выбора одежды
-        hints = ''      # подсказка, показываемая при невозможности выбора
+        name    = ''        # Наименование типа одежды для окна выбора
+        sel     = None      # список доступных вариантов выбора (тип Garb)
+        cur     = 0         # номер выбранного варианта из списка
+        rand    = False     # выбирать случайно из доступных вариантов раз в days дней
+        left    = 0         # осталось дней до случайного выбора
+        days    = 1         # количество дней по умолчанию до смены одежды
+        req     = 'True'    # условие доступности ручного выбора одежды
+        hints   = ''        # подсказка, показываемая при невозможности выбора
 
         def __init__(self, name="", sel=[], req='True', hints=""):
-            self.name = name   # Наименование типа одежды для окна выбора
-            self.sel  = sel    # список доступных вариантов выбора (тип Garb)
+            self.name   = name
+            self.sel    = sel
+            self.req    = req
+            self.hints  = hints
 
         # достаточно ли вариантов для ручной установки
         def Opens(self):
@@ -86,8 +102,62 @@ init python:
 
             return not rez
 
+        # проверяет, открыт ли доступ к конкретному варианту
+        @property
+        def enabled(self, num):
+            return self.sel[num].rand   # если доступен вручную, случайный тоже доступен
+
+        # ативирует одежду для смены вручную (конкретную или список)
+        def enable(self, nums, cur=None):
+            if type(nums) == int:
+                self.sel[nums].enable()
+            elif type(nums) in [tuple, list]:
+                for k in nums:
+                    self.sel[k].enable()
+            if cur is not None:
+                self.cur = cur
+            elif type(nums) == int:
+                self.cur = nums
+            elif type(nums) in [tuple, list]:
+                self.cur = max(nums)
+                self.rand   = True
+            self.left = self.days
+
+        # ативирует одежду для рандомной смены (конкретную или список)
+        def rand_enable(self, nums=[]):
+            if type(nums) == int:
+                self.sel[nums].enable()
+            elif type(nums) in [tuple, list]:
+                for k in nums:
+                    self.sel[k].enable()
+
+            if not self.rand:
+                self.rand = True
+
+            if cur is not None:
+                self.cur = cur
+            elif type(nums) == int:
+                self.cur = nums
+            elif type(nums) in [tuple, list]:
+                self.cur    = max(nums)
+
+        # закрывает доступ
+        def disable(self, num):
+            if type(nums) == int:
+                self.sel[nums].disable()
+            elif type(nums) in [tuple, list]:
+                for k in nums:
+                    self.sel[k].disable()
+            if self.cur is None:
+                self.SetRand()
+
+        # устанавливает условие доступности (и подсказку) для типа одежды
+        def set_condition(self, req, hints):
+            self.req    = req
+            self.hints  = hints
+
         def __repr__(self):
-            return str({attr : getattr(self, attr) for attr in self.__dict__ if attr!='id'})[1:-1]
+            return self.name+':    '+str({attr : getattr(self, attr) for attr in self.__dict__ if attr not in ['id', 'name']})[1:-1]
 
     class Clothing():
 
@@ -138,7 +208,7 @@ init python:
             return True if len(l) else False
 
         def __repr__(self):
-            return str({attr : getattr(self, attr) for attr in self.__dict__ if attr is not None})[1:-1]
+            return '\n'.join([attr for attr in self.__dict__ if getattr(self, attr) is not None])
 
     ############################################################################
 
@@ -1394,6 +1464,7 @@ init python:
             # возвращает влияние Эрика
             return [self.__e, (self.__e * 100) // Influence.LIM if self.__e is not None else 0]
 
+        @property
         def balance(self):
             # возвращает список из трех пунктов:
             # % влияния Макса (от максимума)
