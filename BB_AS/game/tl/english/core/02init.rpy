@@ -495,3 +495,35 @@ translate english strings:
     old "Пора отшлёпать одну милую попку!"
     new ""
 
+# TODO: Translation updated at 2021-04-15 10:31
+
+translate english strings:
+
+    # game/core/02init.rpy:116
+    old "Мам, Кира отправила меня к тебе..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "С тобой можно?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Я присоединюсь?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Тётя Кира, когда ты уже с мамой поговоришь?!"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Я хотел спросить про тот случай из детства мамы..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Расскажи уже про тот случай из детства мамы..."
+    new ""
+
+    # game/core/02init.rpy:207
+    old "Мам, я купил тебе одежду полегче!"
+    new ""
+

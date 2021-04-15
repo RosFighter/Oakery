@@ -22,7 +22,6 @@ label start:
     call InitVariable from _call_InitVariable
     call InitCharacters from _call_InitCharacters
     call InitActions from _call_InitActions
-    call InitStuff from _call_InitStuff
     call InitPoss from _call_InitPoss
     call InitTalksEvents from _call_InitTalksEvents
     call InitPunish from _call_InitPunish

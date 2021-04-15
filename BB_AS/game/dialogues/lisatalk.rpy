@@ -141,7 +141,7 @@ label MorningWood:
             pass
 
     $ renpy.end_replay()
-    $ dcv.mv.stage = 1
+    $ dcv.mw.stage = 1
     $ poss['seduction'].OpenStage(0)
     $ spent_time += 30
     jump Waiting
@@ -149,7 +149,7 @@ label MorningWood:
 
 label MorningWoodCont:  # последующие утренние стояки
 
-    if dcv.mv.stage == 2:
+    if dcv.mw.stage == 2:
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 07'+lisa.dress)
         Lisa_12 "Ну и как тебе это, Макс? Не стыдно, вот так валяться передо мной?"   #oops-01 + 07
@@ -174,7 +174,7 @@ label MorningWoodCont:  # последующие утренние стояки
         Lisa_09 "Да ну тебя, Макс!"
         $ poss['seduction'].OpenStage(2)
 
-    elif dcv.mv.stage == 4:
+    elif dcv.mw.stage == 4:
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 11'+lisa.dress)
         menu:
@@ -197,7 +197,7 @@ label MorningWoodCont:  # последующие утренние стояки
         Max_01 "Конечно, я так и подумал."
         $ poss['seduction'].OpenStage(3)
 
-    elif dcv.mv.stage == 6:
+    elif dcv.mw.stage == 6:
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
         Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"   #oops-13 + max-01 lisa-01
@@ -219,11 +219,11 @@ label MorningWoodCont:  # последующие утренние стояки
         Max_04 "Скоро. Очень."
         Lisa_01 "Хорошо, Макс. Будет любопытно понаблюдать за тем, как ты... обучаешь..."
         Max_01 "Договорились!"
-        $ dcv.mv.stage += 1 # дабы закрыть запуски утренних стояков, долбавляем дважды
+        $ dcv.mw.stage += 1 # дабы закрыть запуски утренних стояков, долбавляем дважды
         $ poss['seduction'].OpenStage(4)
 
-    $ dcv.mv.set_lost(2)
-    $ dcv.mv.stage += 1
+    $ dcv.mw.set_lost(2)
+    $ dcv.mw.stage += 1
     $ spent_time += 30
     jump Waiting
 
@@ -619,11 +619,11 @@ label talk_swim:
                     pass
                 "Да легко!":
                     pass
-                "Боюсь тебя шокировать..." if dcv.mv.stage == 0:
+                "Боюсь тебя шокировать..." if dcv.mw.stage == 0:
                     Lisa_00 "Не поняла. В каком смысле?"
                     Max_00 "Извини, шутки у меня дурацкие... А какой купальник ты хочешь?"
                     jump .want
-                "Боюсь тебя снова шокировать..." if dcv.mv.stage > 0:
+                "Боюсь тебя снова шокировать..." if dcv.mw.stage > 0:
                     menu:
                         Lisa_12 "Фу, Макс! Опять твои шуточки... Не надо мне такого счастья. Держи свою штуку там, в штанах..."
                         "Ну, ты сама спросила почему я не раздеваюсь...":
@@ -890,7 +890,7 @@ label Lisa_MorningWood: # Разговор с Лизой после утренн
 
 label Lisa_MorningWoodCont:
 
-    if dcv.mv.stage == 3:
+    if dcv.mw.stage == 3:
         Lisa_00 "О ком?!"
         Max_01 "О Большом Максе, на которого ты, с таким интересом, смотрела утром."
         Lisa_02 "Ага! Так значит я была права! Раз у него есть имя, значит он и правда живёт своей жизнью..."
@@ -917,7 +917,7 @@ label Lisa_MorningWoodCont:
         Lisa_01 "Да ты тоже на эксперта не тянешь, Макс."
         Max_04 "Хотя бы подумай над этим."
         Lisa_00 "Ладно, подумаю..."
-    $ dcv.mv.stage += 1
+    $ dcv.mw.stage += 1
     $ spent_time = 30
     return
 
@@ -1641,7 +1641,7 @@ label liza_hand_mass:
         # Лизе понравился массаж!
         if not _in_replay:
             $ Skill('massage', 0.1)
-        if not _in_replay and all(['kira' in chars, not lisa.dcv.seduce.stage, dcv.mv.stage>=8, dcv.mv.done, kira.dcv.feature.stage>2]):
+        if not _in_replay and all(['kira' in chars, not lisa.dcv.seduce.stage, dcv.mw.stage>=8, dcv.mw.done, kira.dcv.feature.stage>2]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
             Lisa_02 "А ты сам-то хоть умеешь целоваться?"
@@ -2106,7 +2106,7 @@ label conversation_after_dinner(var=0):
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        if dcv.mv.stage > 2:
+        if dcv.mw.stage > 2:
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
@@ -2136,7 +2136,7 @@ label conversation_after_dinner(var=0):
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        if dcv.mv.stage > 2:
+        if dcv.mw.stage > 2:
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
@@ -2192,7 +2192,7 @@ label conversation_after_dinner(var=0):
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        if dcv.mv.stage > 2:
+        if dcv.mw.stage > 2:
             $ __tmp = _("Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
         else:
             $ __tmp = _("Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!")
@@ -3567,7 +3567,7 @@ label MorningWoodCont2:
         jump .end
 
     label .end:
-        $ dcv.mv.set_lost(renpy.random.randint(5, 10))
+        $ dcv.mw.set_lost(renpy.random.randint(5, 10))
         $ spent_time += 30
         jump Waiting
 

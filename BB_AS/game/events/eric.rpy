@@ -519,9 +519,9 @@ label eric_ann_tv:
             Max_10 "Ладно, уже ухожу..."
 
     label .end:
-        if tv_scene = 'hj':
+        if tv_scene == 'hj':
             $ eric.stat.handjob += 1
-        elif tv_scene = 'bj':
+        elif tv_scene == 'bj':
             $ eric.stat.blowjob += 1
         $ spent_time += 10
         $ current_room = house[0]

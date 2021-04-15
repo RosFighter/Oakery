@@ -1545,7 +1545,7 @@ label gift_book:
         $ poss['secretbook'].OpenStage(3)
         $ AddRelMood('alice', 0, 100)
         $ AttitudeChange('alice', 0.25)
-        $ items['erobook_1'].dive()
+        $ items['erobook_1'].give()
         $ alice.gifts.append('erobook_1')
         $ alice.dcv.gifts.set_lost(7) # Покупка второй книги возможна через неделю.
         $ alice.dcv.gifts.stage = 2

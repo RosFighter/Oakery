@@ -107,49 +107,61 @@ init python:
         def enabled(self, num):
             return self.sel[num].rand   # если доступен вручную, случайный тоже доступен
 
-        # ативирует одежду для смены вручную (конкретную или список)
+        # активирует одежду для смены вручную (конкретную или список)
         def enable(self, nums, cur=None):
+            added = False
             if type(nums) == int:
+                if not self.sel[nums].rand:
+                    added = True
                 self.sel[nums].enable()
             elif type(nums) in [tuple, list]:
                 for k in nums:
+                    if not self.sel[k].rand:
+                        added = True
                     self.sel[k].enable()
             if cur is not None:
                 self.cur = cur
-            elif type(nums) == int:
-                self.cur = nums
-            elif type(nums) in [tuple, list]:
-                self.cur = max(nums)
-                self.rand   = True
-            self.left = self.days
-
-        # ативирует одежду для рандомной смены (конкретную или список)
-        def rand_enable(self, nums=[]):
-            if type(nums) == int:
-                self.sel[nums].enable()
-            elif type(nums) in [tuple, list]:
-                for k in nums:
-                    self.sel[k].enable()
-
-            if not self.rand:
+            elif added:
                 self.rand = True
+                self.left = self.days
+                if type(nums) == int:
+                    self.cur = nums
+                elif type(nums) in [tuple, list]:
+                    self.cur = max(nums)
+                    self.rand   = True
 
-            if cur is not None:
-                self.cur = cur
-            elif type(nums) == int:
-                self.cur = nums
+        # активирует одежду для рандомной смены (конкретную или список)
+        def rand_enable(self, nums=[]):
+            added = False
+            if type(nums) == int:
+                if not self.sel[nums].rand:
+                    self.sel[nums].rand_enable()
+                    added = True
             elif type(nums) in [tuple, list]:
-                self.cur    = max(nums)
+                for k in nums:
+                    if not self.sel[k].rand:
+                        self.sel[k].rand_enable()
+                        added = True
+
+            if added:
+                self.rand = True
+                self.left = self.days
+                if type(nums) == int:
+                    self.cur = nums
+                elif type(nums) in [tuple, list]:
+                    self.cur    = max(nums)
 
         # закрывает доступ
-        def disable(self, num):
+        def disable(self, nums):
             if type(nums) == int:
                 self.sel[nums].disable()
+                if self.cur == nums:
+                    self.SetRand()
             elif type(nums) in [tuple, list]:
                 for k in nums:
                     self.sel[k].disable()
-            if self.cur is None:
-                self.SetRand()
+                if self.cur in nums:
+                    self.SetRand()
 
         # устанавливает условие доступности (и подсказку) для типа одежды
         def set_condition(self, req, hints):
@@ -533,7 +545,7 @@ init python:
             self.relmax     = relmax            # уровень отношений с ГГ
             self.plan       = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]    # расписание персонажа
 
-            self.gifts      = set()             # полученные подарки
+            self.gifts      = []                # полученные подарки
             self.sorry      = SorryGift()       # "извинительные" подарки
             self.flags      = Flags_Counter(id) # флаги и счетчики
             self.stat       = SexStat(id)       # статистика сексульных отношений
@@ -761,7 +773,7 @@ init python:
                 self.stat       = SexStat(self.id)     # статистика отношений с ГГ
 
             if self.gifts is None:
-                self.gifts      = set()     # полученные подарки
+                self.gifts      = []                # полученные подарки
 
             if self.req is None:
                 self.req      = Request()
@@ -865,14 +877,17 @@ init python:
         __account   = 0             # состояние счета на сайте
         invited     = 0             # привлечено зрителей за счет рекламы
 
-        clothes     = Clothing()    # сменяемая одежда
-        flags       = MaxFlags()    # флаги и счетчики мгг
-        credit      = Loan()
+        clothes     = None    # сменяемая одежда
+        flags       = None    # флаги и счетчики мгг
+        credit      = None
 
         def __init__(self, id, name, name_1, name_2, name_3, name_4, name_5, desc='', img=''):
 
             super(MaxProfile, self).__init__(id, name, name_1, name_2, name_3, name_4, name_5, desc)
             self.img        = img           # изображение в окно описания
+            self.clothes    = Clothing()    # сменяемая одежда
+            self.flags      = MaxFlags()    # флаги и счетчики мгг
+            self.credit     = Loan()
 
         @property
         def money(self):
@@ -939,6 +954,14 @@ init python:
             if self.__tange >= sum:
                 self.__tange -= sum
                 self.credit.part(sum)
+
+        def reinit(self):
+            if self.clothes is None:
+                self.clothes    = Clothing()    # сменяемая одежда
+            if self.flags is None:
+                self.flags      = MaxFlags()    # флаги и счетчики мгг
+            if self.credit is None:
+                self.credit     = Loan()
 
         def __repr__(self):
             return "имя: {self.name}, описание: {self.desc}, изображение=\"{self.img}\", "\
@@ -1276,8 +1299,8 @@ init python:
         Kira_arrival    = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([GetWeekday(day)==6, day>=18, flags.breakfast==12, flags.dinner==17])", cut=True)
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
-        MorningWood1    = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mv.done, dcv.mv.stage%2==0, 0<poss['seduction'].stn<5])", sleep=True, cut=True)
-        MorningWood2    = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv.mv.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
+        MorningWood1    = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].stn<5])", sleep=True, cut=True)
+        MorningWood2    = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
         Eric_af_dinner  = CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day<12 or flags.dinner==11')

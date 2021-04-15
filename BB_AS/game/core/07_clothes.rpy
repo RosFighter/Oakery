@@ -47,7 +47,7 @@ init python:
                 else:
                     check_extend_clot_type(clots, clot_type, char_id)
 
-        setting_by_conditions()
+        setting_clothes_by_conditions()
 
     def add_new_clot_type(clots, clot_type, char_id):
         # такой одежды у персонажа ещё не было, нужно добавить
@@ -68,15 +68,20 @@ init python:
         for clot in clothes_dict[char_id][clot_type]:
             clot_list.append(Garb(clot[0], clot[1], clot[2]))
 
-        setattr(chars[char_id].clothes, clot_type, Clothes(clot_name, clot_list))
-        clots = getattr(chars[char_id].clothes, clot_type)
+        if char_id != 'mgg':
+            setattr(chars[char_id].clothes, clot_type, Clothes(clot_name, clot_list))
+            clots = getattr(chars[char_id].clothes, clot_type)
+        else:
+            setattr(mgg.clothes, clot_type, Clothes(clot_name, clot_list))
+            clots = getattr(mgg.clothes, clot_type)
 
         # теперь нужно активировать одежду "по умолчанию"
+        # 'тип_одежды' : (доступна вручную, номер либо список/кортеж номеров одежды)
         def_list = {
                 'casual'    : (False, (0, 1) if char_id in ['ann', 'eric'] else 0),
-                'sleep'     : (True, 0),
-                'sports'    : (True, 0),
-                'lingerie'  : (True, 0),
+                'sleep'     : (True,  0),
+                'sports'    : (False, 0),
+                'lingerie'  : (True,  0),
                 'cook_morn' : (False, (0, 1)),
                 'cook_eve'  : (False, (0, 1)),
                 'rest_morn' : (False, 0),
@@ -103,7 +108,7 @@ init python:
                 # добавляем новые
                 clots.sel.append(Garb(clot[0], clot[1], clot[2]))
 
-    def setting_by_conditions():
+    def setting_clothes_by_conditions():
         # Алиса
         if 'pajamas' in alice.gifts:        # подарена пижамка
             alice.clothes.casual.enable(1)
@@ -123,6 +128,7 @@ init python:
             alice.clothes.lingerie.set_condition("infl[alice].balance[2]=='m' and infl[alice].m[1]>=35", _("Влияние Макса недостаточно"))
 
         # Анна
+        ann.clothes.sleep.enable(0)         # обычное бельё для сна доступно всегда
         if 'kira' in chars:
             ann.clothes.casual.rand_enable(2)
             ann.clothes.cook_morn.rand_enable(3)
@@ -130,7 +136,10 @@ init python:
             ann.clothes.rest_morn.rand_enable(1)
             ann.clothes.rest_eve.rand_enable(2)
         if 'nightie' in ann.gifts:          # подарена ночнушка
-            ann.clothes.sleep.enable(0, 1)
+            ann.clothes.sleep.enable(1)
+        if 'fit1' in ann.gifts:             # подарены Спортивные лиф и мини-шорты
+            ann.clothes.sports.rand_enable(1)
+
 
         # Лиза
         lisa.clothes.learn.enable(2)        # полотенце доступно всегда
@@ -152,3 +161,5 @@ init python:
         if 'kira' in chars:                 # приехала Кира
             mgg.clothes.casual.enable(2)
             mgg.clothes.casual.disable(0)
+        else:
+            mgg.clothes.casual.enable(0)

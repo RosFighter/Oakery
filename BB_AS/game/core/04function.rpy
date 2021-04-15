@@ -625,8 +625,8 @@ init python:
         # гостиная
         if current_room == house[4]:
             cur_plan = alice.get_plan()
-            if items['ann_movie'].have and cur_plan is not None and cur_plan.label == 'ann_tv':
-                AvailableActions['momovie'].active = True
+            # if items['ann_movie'].have and cur_plan is not None and cur_plan.label == 'ann_tv':
+            #     AvailableActions['momovie'].active = True
             if not dishes_washed and len(current_room.cur_char) == 0:
                 AvailableActions['dishes'].active = True
 
@@ -1280,6 +1280,7 @@ init python:
             pose_list.remove(last_pose)
         return renpy.random.choice(pose_list)
 
+
     def cooldown_cam_pose(char, last_time, cam=0):
         if tm == last_time:
             # если время не изменилось, откат не прошел
@@ -1368,10 +1369,12 @@ init python:
                     cam_list.append((room, cam, number_in_room, loc, len(cam_list)))
                     number_in_room += 1
 
+
     def prev_cam():
         global view_cam
         cam_number = view_cam[4]-1 if view_cam[4] >= 0 else len(cam_list)-1
         view_cam = cam_list[cam_number]
+
 
     def next_cam():
         global view_cam
@@ -1379,7 +1382,7 @@ init python:
         view_cam = cam_list[cam_number]
 
 
-    def get_time_of_day():
+    def get_time_of_day():      # возвращает время суток
         tod = {
                 '06:00' <= tm < '11:00': 'morning',
                 '11:00' <= tm < '19:00': 'day',

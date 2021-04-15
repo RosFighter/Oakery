@@ -3,7 +3,6 @@ label KiraTalkStart:
 
     $ dial = TalkMenuItems()
 
-    # $ __cur_plan = GetPlan(plan_ann, day, tm)
     $ __cur_plan = kira.get_plan()
     if __cur_plan.talklabel is not None:
         call expression __cur_plan.talklabel from _call_expression_10

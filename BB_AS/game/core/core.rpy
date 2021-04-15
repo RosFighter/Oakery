@@ -688,6 +688,11 @@ label after_load:
         call set_kira_schedule
         call set_lisa_schedule
 
+        $ checking_items()
+        $ checking_clothes()
+
+        $ _version = config.version
+
     return
 
 
@@ -711,10 +716,13 @@ label update_06_5:
             flag = Other_Flags_and_counters()
 
             mgg.id = 'mgg'
+            mgg.reinit()
 
             for char in chars:
                 chars[char].id = char
                 chars[char].reinit()
+
+                chars[char].gifts = list(set(chars[char].gifts))
 
             mgg.clothes   = clothes[mgg]
             lisa.clothes  = clothes[lisa]
@@ -910,5 +918,7 @@ label update_06_5:
             elif 'sexbody1' in alice.gifts:
                 $ alice.flags.hugs = 3
 
+    if _version < "0.06.4.03":
+        $ items.pop('ann_movie', None)
 
     return
