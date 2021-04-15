@@ -122,3 +122,11 @@ translate english strings:
     old "Конфеты закончились"
     new "We're out of candy"
 
+# TODO: Translation updated at 2021-04-11 22:26
+
+translate english strings:
+
+    # game/core/04function.rpy:378
+    old "Так... В накладной написано следующее:"
+    new ""
+

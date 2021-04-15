@@ -939,3 +939,17 @@ translate english punishment_lisa_b8107edc:
 
     # Ann_16 "Давай терпи! Получила двойку - получила по голой заднице у всех на глазах."
     Ann_16 "Let's see! If you fail at school - you will come home and get spanked."
+# TODO: Translation updated at 2021-04-11 22:26
+
+# game/dialogues/punishment.rpy:632
+translate english punishment_alice_ce43f374:
+
+    # Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
+    Max_07 ""
+
+# game/dialogues/punishment.rpy:649
+translate english punishment_alice_9e76b62f:
+
+    # Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
+    Max_09 ""
+

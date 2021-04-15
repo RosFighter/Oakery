@@ -471,3 +471,59 @@ translate english strings:
     # game/core/02init.rpy:37
     old "{color=#E59400}{i}Ей не нравится!{/i}{/color}\n"
     new "{color=#E59400}{i}She does not like it!{/i}{/color}\n"
+# TODO: Translation updated at 2021-04-11 22:26
+
+translate english strings:
+
+    # game/core/02init.rpy:116
+    old "Хотел узнать, хорошо ли тебе сидится?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Не слабо тебя отшлёпали!"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Ты не передумала о наказаниях?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Отшлёпать тебя сейчас или..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Пора отшлёпать одну милую попку!"
+    new ""
+
+# TODO: Translation updated at 2021-04-15 10:31
+
+translate english strings:
+
+    # game/core/02init.rpy:116
+    old "Мам, Кира отправила меня к тебе..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "С тобой можно?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Я присоединюсь?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Тётя Кира, когда ты уже с мамой поговоришь?!"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Я хотел спросить про тот случай из детства мамы..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Расскажи уже про тот случай из детства мамы..."
+    new ""
+
+    # game/core/02init.rpy:207
+    old "Мам, я купил тебе одежду полегче!"
+    new ""
+
