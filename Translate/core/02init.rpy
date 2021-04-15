@@ -477,23 +477,23 @@ translate english strings:
 
     # game/core/02init.rpy:116
     old "Хотел узнать, хорошо ли тебе сидится?"
-    new ""
+    new "I was wondering if you're comfortable?"
 
     # game/core/02init.rpy:116
     old "Не слабо тебя отшлёпали!"
-    new ""
+    new "That's a hell of a spanking!"
 
     # game/core/02init.rpy:116
     old "Ты не передумала о наказаниях?"
-    new ""
+    new "About punishments - Have you you changed your mind?"
 
     # game/core/02init.rpy:116
     old "Отшлёпать тебя сейчас или..."
-    new ""
+    new "Should I spank you now or...?"
 
     # game/core/02init.rpy:116
     old "Пора отшлёпать одну милую попку!"
-    new ""
+    new "It's time to smack some sweet ass!"
 
 # TODO: Translation updated at 2021-04-15 10:31
 
@@ -501,29 +501,28 @@ translate english strings:
 
     # game/core/02init.rpy:116
     old "Мам, Кира отправила меня к тебе..."
-    new ""
+    new "Mom, Kira sent me to you..."
 
     # game/core/02init.rpy:116
     old "С тобой можно?"
-    new ""
+    new "Can I join you?"
 
     # game/core/02init.rpy:116
     old "Я присоединюсь?"
-    new ""
+    new "Shall I join you?"
 
     # game/core/02init.rpy:116
     old "Тётя Кира, когда ты уже с мамой поговоришь?!"
-    new ""
+    new "Aunt Kira, when are you going to talk to Mom?!"
 
     # game/core/02init.rpy:116
     old "Я хотел спросить про тот случай из детства мамы..."
-    new ""
+    new "I wanted to ask about that incident from Mom's childhood..."
 
     # game/core/02init.rpy:116
     old "Расскажи уже про тот случай из детства мамы..."
-    new ""
+    new "Tell me about that incident from Mom's childhood..."
 
     # game/core/02init.rpy:207
     old "Мам, я купил тебе одежду полегче!"
-    new ""
-
+    new "Mom, I bought you some better clothes!"
