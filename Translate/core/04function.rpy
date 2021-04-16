@@ -128,5 +128,4 @@ translate english strings:
 
     # game/core/04function.rpy:378
     old "Так... В накладной написано следующее:"
-    new ""
-
+    new "So... The waybill says the following:"
