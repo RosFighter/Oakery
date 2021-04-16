@@ -1374,13 +1374,12 @@ translate english strings:
 
     # game/core/03variables.rpy:399
     old "Забота о попках"
-    new ""
+    new "Taking care of your ass"
 
     # game/core/03variables.rpy:399
     old "Интересно получилось! Я ради интереса сказал Алисе, что больше не хочу за неё заступаться, когда её наказывают, но готов это делать и дальше, если она согласится, чтобы её шлёпал я.\nОна сперва приняла такой уговор в штыки, но после нескольких наказаний от мамы всё же согласилась, чтобы её шлёпал я. По крайней мере, если получилось спасти Алису от маминой руки. Надо так же не забыть обсудить с ней, когда можно её отшлёпать.\n\nПравда есть небольшой нюанс, благодаря которому Алиса и согласилась на это... Я пообещал, что отшлёпаю её нежно. Да уж, будет не просто устоять и не влепить по её попке за то, как стервозно она себя вела..."
-    new ""
+    new "That was interesting! I told Alice that I didn't want to stand up for her when she was punished anymore, but that I was willing to continue to do so if she would agree to be spanked by me. At least, if it was possible to save Alice from Mom's hand. I also had to remember to discuss with her when it was okay to spank her. I promised her I'd give her a gentle spanking. Yeah, it's not gonna be easy to resist slapping her ass for being such a bitch..."
 
     # game/core/03variables.rpy:399
     old "Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше..."
-    new ""
-
+    new "It really is a fascinating sight! Not many people have ever managed to undress and spank their big sister... Even though she's capricious and threatening, my persistence seems to have taken over. It's a pleasure to admire her naked and firm ass, as well as to slap her. Now I know how not to overdo it, so I can enjoy this private punishment as long as possible..."
