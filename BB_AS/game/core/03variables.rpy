@@ -441,60 +441,9 @@ label AddKira:
     call alice_after_arrival_kira
 
     # добавляем новую одежду Максу и девчонкам
-    $ lisa.clothes.casual.sel.append(Garb('d', '01c', 'Розовые топик и юбочка', True))
-    $ lisa.clothes.learn.sel.append(Garb('d', '01c', 'Розовые топик и юбочка', True))
-    if len(lisa.clothes.casual.sel)==3:
-        $ lisa.clothes.casual.rand = True
-
-    $ alice.clothes.casual.sel.append(Garb('d', '01e', 'Открытая футболка и микрошорты', True))
-    if len(alice.clothes.casual.sel)==2:
-        $ alice.clothes.casual.rand = True
-
-    $ ann.clothes.casual.sel.append(Garb('d', '01e', 'Топ и шорты', False, True))
-    $ ann.clothes.cook_morn.sel.append(Garb('d', '01f', 'Топ и шорты', False, True))
-    $ ann.clothes.cook_eve.sel.append(Garb('d', '01f', 'Топ и шорты', False, True))
-    $ ann.clothes.cook_eve.rand = True
-    $ ann.clothes.rest_eve.sel.append(Garb('d', '01e', 'Топ и шорты', False, True))
-    $ ann.clothes.rest_morn.sel.append(Garb('d', '01e', 'Топ и шорты', False, True))
-    $ ann.clothes.rest_morn.rand = True
-
-    $ mgg.clothes.casual.sel.append(Garb('c', '01c', 'Шорты', True))
-    if len(mgg.clothes.casual.sel)==2:
-        $ mgg.clothes.casual.rand = True
-
-    # настраиваем запрет на старую повседневку для Лизы и Макса
-    $ lisa.clothes.casual.sel[0].change = False
-    $ lisa.clothes.casual.sel[0].rand   = False
-
-    $ mgg.clothes.casual.sel[0].change = False
-    $ mgg.clothes.casual.sel[0].rand   = False
-
-    # Устанавливаем новую одежду в качестве текущей
-    $ lisa.clothes.casual.cur = 2 if 'bathrobe' in lisa.gifts else 1
-    $ lisa.clothes.casual.left = 2
-    $ lisa.clothes.learn.cur = 3 if 'bathrobe' in lisa.gifts else 2
-    $ lisa.clothes.learn.left = 2
-
-    $ alice.clothes.casual.cur = 2 if 'pajamas' in alice.gifts else 1
-    $ alice.clothes.casual.left = 2
-
-    $ mgg.clothes.casual.cur = 2 if items['max-a'].have else 1
-    $ mgg.clothes.casual.left = 2
-
-    $ ann.clothes.casual.cur = 2
-    $ ann.clothes.casual.left = 2
-    $ ann.clothes.rest_eve.cur = 2
-    $ ann.clothes.rest_eve.left = 2
-    $ ann.clothes.rest_morn.cur = 1
-    $ ann.clothes.rest_morn.left = 2
-    $ ann.clothes.cook_morn.cur = 2
-    $ ann.clothes.cook_morn.left = 2
-    $ ann.clothes.cook_eve.cur = 1
-    $ ann.clothes.cook_eve.left = 2
+    $ setting_clothes_by_conditions()
 
     $ ChoiceClothes()
-
-    $ kira.daily.shower = 0
 
     $ added_mem_var('kira')
 
@@ -518,10 +467,7 @@ label alice_add_black_linderie:
     $ added_mem_var('black_linderie')
     $ items['b.lingerie'].give()
     $ alice.gifts.append('black_linderie')
-
-    $ alice.clothes.sleep.sel.append(Garb('b', '02ia', "Тёмое кружевное бельё", True))
-    $ alice.clothes.sleep.cur = 1
-    $ alice.clothes.sleep.rand = True
+    $ setting_clothes_by_conditions()
 
     if alice.plan_name=='blog':
         $ alice.dcv.feature.set_lost(1) # включаем суточный откат, чтобы Алиса не начала блог в белье в этот же день, если блог уже начат
@@ -529,8 +475,20 @@ label alice_add_black_linderie:
     # прописываем расписание:
     call alice_can_blog_in_underwear
 
-    $ blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
-    $ renpy.random.shuffle(blog_lingerie)
-    $ cur_blog_lingerie = 'b'
+    # $ blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
+    # $ renpy.random.shuffle(blog_lingerie)
+    # $ cur_blog_lingerie = 'b'
+
+    return
+
+
+label AddOlivia:
+    pass
+    # добавляем Оливию и её расписание
+    # $ chars['olivia'] = Profile('olivia', _("Оливия"), _("Оливии"), _("Оливии"), _("Оливию"), _("Оливией"), _("Оливии"), _(""), "Olivia")
+    # $ olivia = chars['olivia']
+    # call set_olivia_shedule
+    #
+    # $ added_mem_var('olivia')
 
     return

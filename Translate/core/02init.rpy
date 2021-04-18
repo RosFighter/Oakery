@@ -485,7 +485,7 @@ translate english strings:
 
     # game/core/02init.rpy:116
     old "Ты не передумала о наказаниях?"
-    new "About punishments - Have you you changed your mind?"
+    new "About punishments - Have you changed your mind?"
 
     # game/core/02init.rpy:116
     old "Отшлёпать тебя сейчас или..."
@@ -526,3 +526,4 @@ translate english strings:
     # game/core/02init.rpy:207
     old "Мам, я купил тебе одежду полегче!"
     new "Mom, I bought you some better clothes!"
+

@@ -463,3 +463,29 @@ image side kira_17 = 'Kira emo-17'
 
 define Kira_18 = Character(kind=Kira, image='kira_18')
 image side kira_18 = 'Kira emo-18'
+
+
+## Оливия - одноклассница Лизы
+
+define Olivia = Character(_("Оливия"))
+
+define Olivia_00 = Character(kind=Olivia, image='olivia_00')
+image side olivia_00 = 'Olivia emo-00'
+
+define Olivia_01 = Character(kind=Olivia, image='olivia_01')
+image side olivia_01 = 'Olivia emo-01'
+
+define Olivia_02 = Character(kind=Olivia, image='olivia_02')
+image side olivia_02 = 'Olivia emo-02'
+
+define Olivia_03 = Character(kind=Olivia, image='olivia_03')
+image side olivia_03 = 'Olivia emo-03'
+
+define Olivia_04 = Character(kind=Olivia, image='olivia_04')
+image side olivia_04 = 'Olivia emo-04'
+
+define Olivia_05 = Character(kind=Olivia, image='olivia_05')
+image side olivia_05 = 'Olivia emo-05'
+
+define Olivia_06 = Character(kind=Olivia, image='olivia_06')
+image side olivia_06 = 'Olivia emo-06'

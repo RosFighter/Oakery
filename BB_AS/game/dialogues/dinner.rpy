@@ -16,7 +16,7 @@ label after_dinner:
                     poss['sg'].stn == 2, lisa.flags.truehelp>5]):
             # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
             call conversation_after_dinner(5) from _call_conversation_after_dinner_4
-        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4) >= 1000, poss['sg'].stn > 2]):
+        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].stn > 2]):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4) from _call_conversation_after_dinner
         elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done]):

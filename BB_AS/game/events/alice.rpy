@@ -2175,7 +2175,7 @@ label alice_body_photoset1:
     show Alice newbody 02
 
     Alice_05 "Да вижу я по твоим шортам, что ты там уже не на обложку напредставлял, а на разворот."
-    Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну ка покрутись..."
+    Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-капокрутись..."
 
     if not alice.daily.drink:
         Alice_03 "Там всё в порядке. Может тебе повезёт во время съёмки и ты что-то да увидишь. Будешь щёлкать меня прямо здесь, у стены или у зеркала?"   #без конфеты
@@ -2302,11 +2302,12 @@ label alice_body_photoset1:
         # $ items['sexbody1'].InShop = False
         # $ items['sexbody1'].have   = False
         $ alice.gifts.append('sexbody1')
+        $ setting_clothes_by_conditions()
         $ alice.dcv.photo.stage = 1
         $ alice.dcv.photo.set_lost(2)
-        $ alice.dress = 'c'
-        $ alice.dress_inf = '02ka'
-        $ blog_lingerie = ['c', 'c', 'c']
+        # $ alice.dress = 'c'
+        # $ alice.dress_inf = '02ka'
+        # $ blog_lingerie = ['c', 'c', 'c']
         $ current_room = house[0]
         jump Waiting
 
@@ -2627,9 +2628,11 @@ label blog_with_Eric:
                         $ added_mem_var('lace_ling_eric1')
                         $ spent_time += 20
                         $ alice.dcv.intrusion.stage = 9  # бельё Алисе подарил Эрик
-                        $ alice.dress = 'd'
-                        $ alice.dress_inf = '02la'
-                        $ blog_lingerie = ['d', 'd', 'd']
+                        # $ alice.dress = 'd'
+                        # $ alice.dress_inf = '02la'
+                        # $ blog_lingerie = ['d', 'd', 'd']
+                        $ alice.gifts.append('sexbody2')
+                        $ setting_clothes_by_conditions()
                         $ infl[alice].add_e(40)
                         $ poss['blog'].OpenStage(17)
 

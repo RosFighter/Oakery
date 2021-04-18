@@ -189,6 +189,11 @@ define talks = {
     'l.ab_aeed3' : TalkTheme('lisa', _("Что нового мама с Эриком тебе рассказали?"), 'lisa_about_ae_sexed3', "not flags.l_ab_sexed and flags.lisa_sexed==3"),
     'l.ab_aeed4' : TalkTheme('lisa', _("Что нового узнала на уроке у мамы и Эрика?"), 'lisa_about_ae_sexed4', "not flags.l_ab_sexed and flags.lisa_sexed==4"),
     'l.stopkiss' : TalkTheme('lisa', _("{i}урок поцелуев{/i}"), 'lisa_stop_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].stn>7, flags.stopkiss==1])"),
+    'lisas_boy3' : TalkTheme('lisa', _("Насчёт Алекса..."), 'about_boy3', "all([lisa.flags.crush==6, day>=10, lisa.dcv.feature.done])", 1),
+    'l.olivia_1' : TalkTheme('lisa', _("Есть успехи с Оливией?"), 'about_olivia_1', "all([lisa.flags.crush==7, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
+    'l.olivia_2' : TalkTheme('lisa', _("Что-нибудь узнала про Оливию?"), 'about_olivia_2', "all([lisa.flags.crush==8, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
+    'l.olivia_3' : TalkTheme('lisa', _("Ну так, что там с трусиками Оливии?"), 'about_olivia_3', "all([lisa.flags.crush==9, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
+    'l.olivia_4' : TalkTheme('lisa', _("Ты позвала Оливию к нам?"), 'about_olivia_4', "all([lisa.flags.kiss_lesson, lisa.flags.crush==10, lisa.dcv.feature.done, GetWeekday(day)!=3])", 1),
     }
 
 

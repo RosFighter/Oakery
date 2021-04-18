@@ -2,8 +2,8 @@
 define clothes_dict = {
     'alice' : {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '01c', 'Пижама'), ('d', '01e', 'Открытая футболка и микро-шорты')],
-        'sleep'     : [('a', '02', 'Белое бельё'), ('b', '02ia', 'Тёмое бельё')],
-        'lingerie'  : [('a', '02', 'Белое бельё'), ('b', '02ia', 'Тёмое бельё'), ('c', '02ka', 'Чёрное боди'), ('d', '02la', 'Кружевное боди')],
+        'sleep'     : [('a', '02', 'Белое бельё'), ('b', '02ia', 'Тёмное бельё')],
+        'lingerie'  : [('a', '02', 'Белое бельё'), ('b', '02ia', 'Тёмное бельё'), ('c', '02ka', 'Чёрное боди'), ('d', '02la', 'Кружевное боди')],
         },
     'ann'   : {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '01b', 'Футболка'), ('d', '01e', 'Топ и шорты')],
@@ -110,12 +110,13 @@ init python:
 
     def setting_clothes_by_conditions():
         # Алиса
+        alice.clothes.sleep.enable(0)       # обычное бельё для сна доступно всегда
         if 'pajamas' in alice.gifts:        # подарена пижамка
             alice.clothes.casual.enable(1)
         if 'kira' in chars:                 # приехала Кира
             alice.clothes.casual.enable(2)
         if 'black_linderie' in alice.gifts: # подарено тёмное бельё для блога
-            alice.clothes.sleep.enable((0, 1))
+            alice.clothes.sleep.enable(1)
             alice.clothes.lingerie.rand_enable((0, 1))
         if 'sexbody1' in alice.gifts:       # подарено боди
             alice.clothes.lingerie.rand_enable(2)
@@ -163,3 +164,23 @@ init python:
             mgg.clothes.casual.disable(0)
         else:
             mgg.clothes.casual.enable(0)
+
+    # # возвращает одежду для блога, если очередь пустая - заполняет список
+    # # если указано значение df (default) - его же и возвращает, создав список очереди из 3х df
+    # def blog_lingerie_create(df=''):
+    #     global blog_lingerie
+    #
+    #     if df:
+    #         blog_lingerie = [df] * 3
+    #     else:
+    #         if len(blog_lingerie):
+    #             df = blog_lingerie.pop(0, '')
+    #
+    #         if not len(blog_lingerie):
+    #             blog_lingerie = [clot.suf for clot in alice.clothes.lingerie.sel if clot.rand] * 3
+    #             renpy.random.shuffle(blog_lingerie)
+    #
+    #         if not df:
+    #             df = blog_lingerie.pop(0, '')
+    #
+    #     return df

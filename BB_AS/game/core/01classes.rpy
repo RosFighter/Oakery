@@ -394,6 +394,7 @@ init python:
         # флаги
         nakedpunish = False     # были "голые" наказания
         handmass    = False     # доступен массаж рук
+        touched     = False     # прикасалась к члену Макса
         promise     = False     # обещание девушки Максу (или наоборот)
         hip_mass    = 0         # доступ к массажу бёдер
         hugs_type   = 0         # тип обнимашек за третье дарение "извинительных" сладостей
@@ -403,7 +404,7 @@ init python:
 
         # счетчики
         defend      = 0         # счетчик спасений от наказания голышом
-        privpunish  = 0         # счетчик приватных наказаний
+        privpunish  = 0         # счетчик успешных приватных наказаний
         hugs        = 0         # счетчик обнимашек(поцелуев) за периодические сладости
         pun         = 0         # всего наказаний
         m_foot      = 0         # счетчик массажей ног
@@ -1299,7 +1300,7 @@ init python:
         Kira_arrival    = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([GetWeekday(day)==6, day>=18, flags.breakfast==12, flags.dinner==17])", cut=True)
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
-        MorningWood1    = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].stn<5])", sleep=True, cut=True)
+        MorningWood1    = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].stn<4])", sleep=True, cut=True)
         MorningWood2    = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].stn>10, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
@@ -1309,6 +1310,8 @@ init python:
         Eric_Alice0     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([GetWeekday(day)==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)])")
         Eric_Alice1     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([GetWeekday(day)==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done])")
         Eric_laceling   = CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7])")
+
+        MeetingOlivia   = CutEvent('16:00', (3, ), 'olivia_first_meeting', "Оливия приходит на виллу в первый раз", "all([GetWeekday(day)==3, lisa.flags.crush==11, lisa.dcv.feature.done])", cut=True)
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

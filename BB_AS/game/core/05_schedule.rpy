@@ -245,7 +245,6 @@ label set_kira_schedule:
     return
 
 
-
 ################################################################################
 
 label set_lisa_schedule:
@@ -296,6 +295,30 @@ label set_lisa_schedule:
         Schedule((0, 2, 3, 4, 5, 6), '22:0', '22:59', 'bath', "принимает ванну", 'house', 3, 'lisa_bath', enabletalk=False, glow=120),
         Schedule((1, 2, 3, 4, 5), '23:0', '23:59', 'homework', "учит уроки", 'house', 0, 'lisa_homework', glow=105),
         Schedule((0, 6), '23:0', '23:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', glow=105),
+        )
+
+    return
+
+
+################################################################################
+
+label set_olivia_shedule:
+    if 'olivia' not in chars:
+        return
+
+    $ olivia.plan = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
+
+    $ olivia.add_schedule(
+        Schedule((1, 2, 3, 4, 5), '11:0', '15:59', 'in_shcool', "в школе"),
+        # доп.курсы Лизы по будния (жёсткие меры Эрика)
+        Schedule((3, ), '16:0', '16:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage not in [3, 6]", glow=105),
+
+        Schedule((3, ), '16:0', '16:59', 'on_courses', "на курсах", variable="lisa.dcv.battle.stage in [3, 6]"),
+        Schedule((3, ), '17:0', '17:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage in [3, 6]", glow=105),
+        Schedule((3, ), '18:0', '18:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage in [3, 6]", glow=110),
+
+        Schedule((3, ), '17:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6]", glow=110),
+        # конец блока
         )
 
     return

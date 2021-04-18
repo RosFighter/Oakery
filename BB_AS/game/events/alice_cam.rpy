@@ -754,9 +754,11 @@ label cam0_blog_with_Eric:
         #после этого через камеру можно увидеть 2 варианта того, что делают Алиса и Эрик, либо она сидит он стоит рядом, либо она позирует он сидит на кровати
 
         $ alice.dcv.intrusion.stage = 9  # бельё Алисе подарил Эрик
-        $ alice.dress = 'd'
-        $ alice.dress_inf = '02la'
-        $ blog_lingerie = ['d', 'd', 'd']
+        # $ alice.dress = 'd'
+        # $ alice.dress_inf = '02la'
+        # $ blog_lingerie = ['d', 'd', 'd']
+        $ alice.gifts.append('sexbody2')
+        $ setting_clothes_by_conditions()
         $ infl[alice].add_e(40)
         $ poss['blog'].OpenStage(16)
         $ spent_time = max((60 - int(tm[-2:])), 30)

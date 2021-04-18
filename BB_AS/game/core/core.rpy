@@ -122,7 +122,7 @@ label eric_time_settings:
             # Макс не успел вовремя подарить Алисе кружевное бельё
             $ alice.dcv.intrusion.stage = 8
             $ items['sexbody2'].block()
-            $ alice.gifts.append('sexbody2')
+            # $ alice.gifts.append('sexbody2')
             $ poss['blog'].OpenStage(15)
 
     if prevtime < '15:00' <= tm:
@@ -306,9 +306,9 @@ label NewDay:
     $ ann_eric_scene = ''
 
     $ cam_poses.clear()  # обнулим список поз для камер
-    if 'black_linderie' in alice.gifts:
-        $ cur_blog_lingerie = ''
-        $ cam_pose_blog = []
+    # if 'black_linderie' in alice.gifts:
+    #     $ cur_blog_lingerie = ''
+    #     $ cam_pose_blog = []
 
     return
 
@@ -649,7 +649,6 @@ label cam_background:
 
 
 label after_buying:
-    # $ purchased_items = list(set(purchased_items))
     while len(purchased_items) > 0:
         $ buying_item = purchased_items.pop()
 

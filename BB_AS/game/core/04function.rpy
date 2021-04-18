@@ -765,18 +765,16 @@ init python:
                 if (GetWeekday(day) in [1, 4, 5] and all(['black_linderie' in alice.gifts, poss['blog'].stn>4, alice.dcv.feature.done])
                     or (GetWeekday(day)==3 and alice.dcv.intrusion.enabled)):
                     # блог в нижнем белье
-                    global cur_blog_lingerie, blog_lingerie
-                    if not cur_blog_lingerie:
-                        cur_blog_lingerie = blog_lingerie.pop(0)
-                        if len(blog_lingerie)==0:
-                            blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
-                            if 'sexbody1' in alice.gifts:
-                                blog_lingerie.extend(['c', 'c', 'c'])
-                            if 'sexbody2' in alice.gifts:
-                                blog_lingerie.extend(['d', 'd', 'd'])
-                            renpy.random.shuffle(blog_lingerie)
-                    # inf = {'a':'02', 'b':'02ia'}[cur_blog_lingerie]
-                    dress = cur_blog_lingerie
+                    clot = 'lingerie'
+                    dress = alice.clothes.lingerie.GetCur().suf
+                    inf   = alice.clothes.lingerie.GetCur().info
+                    # global cur_blog_lingerie
+                    # if alice.clothes.lingerie.Opens() and not alice.clothes.lingerie.blocked:
+                    # else:
+                    #     if not cur_blog_lingerie:
+                    #         cur_blog_lingerie = blog_lingerie_create()
+                    #     dress = cur_blog_lingerie
+                    #     inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[cur_blog_lingerie]
                 else:
                     # блог в обычной одежде
                     clot = 'casual'

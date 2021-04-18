@@ -69,6 +69,7 @@ label back_shoping:
         if poss['Swimsuit'].stn == 2:
             $ poss['Swimsuit'].OpenStage(4)
             $ lisa.gifts.append('bikini')
+            $ setting_clothes_by_conditions()
             $ infl[lisa].add_e(40, True)
             Lisa_03 "А мне Эрик подарил купальник! Именно такой, как я и хотела! Красный, представляешь?!"
             Max_11 "Ясно..."

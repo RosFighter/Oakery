@@ -1769,6 +1769,7 @@ label gift_pajamas:
     # $ items['pajamas'].InShop = False
     $ alice.gifts.append('pajamas')
     $ added_mem_var('pajamas')
+    $ setting_clothes_by_conditions()
     # if alice.inferic is not None:
     #     $ alice.inferic = clip(alice.inferic-50.0, 0.0, 100.0)
     # if alice.infmax is not None:
@@ -1779,9 +1780,9 @@ label gift_pajamas:
 
     $ alice.sorry.valid = {'ferrero-b', 'ferrero-m'}
 
-    $ alice.clothes.casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
-    $ alice.clothes.casual.cur = 1
-    $ alice.clothes.casual.rand = True
+    # $ alice.clothes.casual.sel.insert(1, Garb('b', '01c', 'Пижама', True))
+    # $ alice.clothes.casual.cur = 1
+    # $ alice.clothes.casual.rand = True
     $ alice.sorry.give.append(4)
     $ spent_time += 10
     $ alice.sorry.owe = False
@@ -2169,6 +2170,7 @@ label massage_sunscreen:
         show FG sun-alone-03
         Alice_12 "Что?! Подкралась?! Ты же говоришь не о том, о чём я подумала?"
         Max_08 "Ну... Ты только не дёргайся!"
+        #spider-sun-01 + spider-sun-01-max-(01/01a)-alice-(01/01a) + spider-sun-01-spider
         scene BG char Alice spider-sun-01
         $ renpy.show('Alice spider-sun 01'+_suf+mgg.dress)
         show FG spider-sun-01
@@ -2176,20 +2178,22 @@ label massage_sunscreen:
         Max_02 "И не говори!"
         Alice_14 "Макс, чего сидишь?! Убери его отсюда! А ещё лучше убей!"
         Max_04 "Да мне как-то не хочется."
+        #spider-sun-02 + spider-sun-02-max-(01/01a)-alice-(01/01a)
         scene BG char Alice spider-sun-02
-        $ renpy.show('Alice spider-sun 02'+_suf+mgg.dress)
+        $ renpy.show('Alice spider-sun 02-01'+_suf+mgg.dress)
         Alice_06 "В смысле, не хочется?! Охренеть, он страшный!"   #spider-sun-02
         Max_05 "Так хорошо же сидим. Да и он в нашу сторону не ползёт. По-моему, он в сторону травы сменил курс..."
-        Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
         if alice.daily.oiled != 2:
+            Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
             # верх купальника не снят
             Max_01 "Ладно, тогда слезай, я с ним разберусь."
             Alice_06 "Не-е-ет, он тогда сразу ко мне поползёт! Что я их, не знаю что ли..."
             Max_03 "Ты определись уже, Алиса, чего хочешь. Я бы просто немного подождал, вон он, уползает..."
             Alice_12 "Точно?!"
             Max_04 "Ага. В траву убежал."
-            scene BG char Alice hugging yard-01
-            $ renpy.show('Alice hugging yard 02a'+mgg.dress)
+            #hugging-sun-01 + hugging-sun-max-(02a/02b)-alice-02
+            scene BG char Alice hugging sun-01
+            $ renpy.show('Alice hugging sun 02a'+mgg.dress)
             Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."   #спрайт с родственными обнимашками
             Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
             Alice_05 "Тебе хватит. Не обольщайся..."
@@ -2199,24 +2203,77 @@ label massage_sunscreen:
             jump .end
         else:
             # верх купальника снят
-            Max_03 "Давай лучше ещё так посидим, подождём. Вон он, уползает..."
-            Alice_12 "Макс, а что это в меня такое упёрлось там внизу?!"
-            Max_02 "Ну... это я, так сказать."
-            Alice_14 "Ой, блин, это член твой что ли?!"
-            Max_01 "Ага. Он самый."
-            if mgg.dress == 'b':
-                ###если Макс в майке и шортах###
-                scene BG char Alice hugging yard-01
-                $ renpy.show('Alice hugging yard 01b'+mgg.dress)
+            menu:
+                Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!"
+                "Давай лучше ещё так посидим, подождём. Вон он, уползает...":
+                    Alice_12 "Макс, а что это в меня такое упёрлось там внизу?!"
+                    Max_02 "Ну... это я, так сказать."
+                    Alice_14 "Ой, блин, это член твой что ли?!"
+                    Max_01 "Ага. Он самый."
+                    jump .sit_and_wait
+
+                "Спрячься за меня, хотя бы..." if all([alice.dcv.intrusion.stage in [5, 7], alice.flags.privpunish, mgg.dress=='c']):
+                    #если Макс опередил Эрика с кружевным бельём, было положительное приватное наказание Алисы и Макс только в шортах
+                    jump .hide_behind
+
+                "{i}потискать Алису за грудь{/i}" if alice.dcv.intrusion.stage in [5, 7]:
+                    jump .squeeze_chest
+
+    label .sit_and_wait:
+        if mgg.dress == 'b':
+            ###если Макс в майке и шортах###
+            if alice.flags.touched:
+                #если вариант "Спрячься за меня, хотя бы..." пройден
+                #spider-sun-02 + spider-sun-02-max-01-alice-01a
+                scene BG char Alice spider-sun-02
+                show Alice spider-sun 02-01bb
+                Alice_13 "Ну, Макс... Может хватит уже так на меня реагировать?! Я же твоя сестра всё-таки!"
+                Max_02 "А ты ещё сильнее прижмись ко мне своими сиськами... Эффект будет ещё ощутимее!"
+                Alice_06 "Паука бы лучше отогнал!"
+                Max_03 "Незачем, он и так уползает..."
+                Alice_12 "Точно?!"
+                Max_04 "Ага. В траву убежал."
+                #hugging-sun-01 + hugging-sun-max-02a-alice-02a
+                scene BG char Alice hugging sun-01
+                show Alice hugging sun 02bb
+                Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."
+                Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
+                Alice_05 "Тебе хватит. Не обольщайся..."
+                Max_01 "Ага."
+            else:
+                scene BG char Alice hugging sun-01
+                show Alice hugging sun 01bb
                 Alice_15 "Ты совсем что ли извращенец? На родную сестру у него стоит!"   #спрайт с выкручиванием ушей
                 Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
                 Alice_16 "Всё, не хочу об этом говорить... Давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
                 Max_09 "Да ухожу я, уши только мои в покое оставь!"
-                jump .end
+            jump .end
+        else:
+            ###если Макс только в шортах###
+            if alice.flags.touched:
+                #spider-sun-02 + spider-sun-02-max-01a-alice-01a   #если вариант "Спрячься за меня, хотя бы..." пройден
+                scene BG char Alice spider-sun-02
+                show Alice spider-sun 02-01bc
+                Alice_13 "Ну, Макс... Может хватит уже так на меня реагировать?! Я же твоя сестра всё-таки!"
+                Max_02 "А ты ещё сильнее прижмись ко мне своими сиськами... Эффект будет ещё ощутимее!"
+                Alice_06 "Куда уж ещё ощутимее! Я и так почти что на твоём члене сижу..."
+                Max_03 "Зато, паук в совершенно противоположную сторону от нас уползает!"
+                Alice_12 "Точно?!"
+                Max_04 "Ага. В траву убежал."
+                #hugging-sun-01 + hugging-sun-max-02c-alice-02a
+                scene BG char Alice hugging sun-01
+                show Alice hugging sun 02bc
+                Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
+                Max_03 "Не слишком-то ты раскаиваешься, а?"
+                Alice_02 "Будем считать, что твой стояк меня сегодня спас! Паук сразу убежал... И я теперь чувствую себя, какой-то защищённой, что ли... Кажется, уже и я какой-то извращенкой становлюсь!"
+                Max_04 "Это у нас семейное, по-видимому."
+                Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
+                Max_02 "Да не так-то это просто сделать..."
+                Alice_05 "А ты постарайся."
+                Max_01 "Ага."
             else:
-                ###если Макс только в шортах###
                 $ persistent.memories['massage_sunscreen.spider'] = 1
-                show Alice spider-sun 03bc
+                show Alice spider-sun 02-02bc
                 Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."   #спрайт с прикрывающейся от Макса Алисой
                 Max_01 "Да не так-то это просто, прикрыть его."
                 Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
@@ -2225,7 +2282,96 @@ label massage_sunscreen:
                 Max_02 "Хорошо. Не скучай."
                 $ renpy.end_replay()
                 $ infl[alice].add_m(10)
-                jump .end
+            jump .end
+
+    label .hide_behind:
+        Alice_06 "Нет, я боюсь..."
+        Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
+        #spider-sun-03 + spider-sun-03-max-01b-alice-01a
+        scene BG char Alice spider-sun-03
+        show Alice spider-sun 03bc
+        Alice_13 "Ой, нет! Не надо к моей попке! Что ему вообще надо тут?! Почему ему в траве не сидится или где он там живёт..."
+        Max_07 "Ну... Не то, чтобы меня что-то не устраивало сейчас, но ты держишься за меня!"
+        #spider-sun-04 + spider-sun-04-max-01b-alice-01a
+        scene BG char Alice spider-sun-04
+        show Alice spider-sun 04-01bc
+        Alice_12 "Конечно держусь! Мне же страшно, Макс! Ты ведь знаешь, как я их боюсь..."
+        Max_03 "Нет, я в смысле, ты держишься за мой член! Это, конечно, весьма приятно... Но ты же на меня, как всегда, разорёшься потом!"
+        #spider-sun-04 + spider-sun-04-max-02b-alice-02a
+        show Alice spider-sun 04-02bc
+        Alice_15 "Ой! Я это не специально! Видишь, насколько я этих пауков не переношу? Даже не поняла, за что схватилась..."
+        Max_02 "Да ладно, схватилась и схватилась. Уж это точно не страшно!"
+        Alice_12 "Он уползает, кстати..."
+        Max_05 "Точно! Наверно, испугался моей торчащей мощи!"
+        Alice_07 "У тебя что, стоит до сих пор?!"
+        Max_04 "Ну... Ты так классно ко мне прижимаешься... Мне приятно!"
+        #hugging-sun-01 + hugging-sun-max-02c-alice-02a
+        scene BG char Alice hugging sun-01
+        show Alice hugging sun 02bc
+        Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
+        Max_03 "Не слишком-то ты раскаиваешься, а?"
+        Alice_02 "Будем считать, что твой стояк меня сегодня спас! Паук сразу убежал... И я теперь чувствую себя, какой-то защищённой, что ли... Кажется, уже и я какой-то извращенкой становлюсь!"
+        Max_04 "Это у нас семейное, по-видимому."
+        Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
+        Max_02 "Да не так-то это просто сделать..."
+        Alice_05 "А ты постарайся."
+        Max_01 "Ага."
+        $ alice.flags.touched = True
+        jump .end
+
+
+    label .squeeze_chest:
+        #spider-sun-02 + spider-sun-02-max-(03/03a)-alice-03a
+        scene BG char Alice spider-sun-02
+        $ renpy.show('Alice spider-sun 02-03b'+mgg.dress)
+        Alice_14 "Ты офигел что ли, Макс! Ну-ка руки быстро убери, пока не получил..."
+        Max_07 "Шуму-то сколько... У тебя сиськи голые, вот я их и прикрыл! А то мало ли кто увидит..."
+        $ ctd = Countdown(5, 'massage_sunscreen.hands_off')
+        show screen countdown       # меню с таймером
+        $ renpy.block_rollback()
+        Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо..." nointeract
+        $ renpy.dynamic('dial')
+        $ dial = [(_("{i}убрать руки{/i}"), 1), (_("{i}не убирать руки{/i}"), 0)]   # (на время c вариантами "убрать руки" и "не убирать руки")
+        $ renpy.random.shuffle(dial)    # варианты располагаем рандомно, чтобы отучить бездумно жать "1"
+        $ rez =  renpy.display_menu(dial)
+        $ renpy.block_rollback()
+        if rez:
+            # (успел)
+            hide screen countdown
+            #spider-sun-02 + spider-sun-02-max-(01/01a)-alice-01a
+            scene BG char Alice spider-sun-02
+            $ renpy.show('Alice spider-sun 02-01b'+mgg.dress)
+            Max_02 "Всё, убрал. Правда, если ты продолжишь так крепко прижиматься ими к моему лицу, то есть риск..."
+            Alice_06 "Макс... Я что, практически на твоём члене сейчас сижу?!"
+            Max_03 "А сама как думаешь?"
+            jump .sit_and_wait
+        else:
+            hide screen countdown
+            jump .hands_off
+
+    label .hands_off:
+        $ renpy.block_rollback()
+        # (не успел)
+        if mgg.dress == 'b':
+            #если Макс в майке и шортах
+            #hugging-sun-01 + hugging-sun-max-01a-alice-01a
+            scene BG char Alice hugging sun-01
+            show Alice hugging sun 01bb
+            Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
+            Alice_16 "А я ведь тебя предупреждала! Наверно, раз до тебя не дошло, нужно крутануть ещё сильнее..."
+            Max_14 "Ой! Я понял... Больше не буду! Отпусти уже..."
+            Alice_17 "Всё, давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
+        else:
+            #если Макс только в шортах
+            #hugging-sun-01 + hugging-sun-max-01c-alice-01a
+            scene BG char Alice hugging sun-01
+            show Alice hugging sun 01bc
+            Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
+            Alice_00 "Ах, у тебя ещё и стоит на это всё! Совсем что ли извращенец? Я же твоя сестра!"
+            Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
+            Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
+        Max_09 "Да ухожу я, уши только мои в покое оставь!"
+        jump .end
 
     label .end:
         $ renpy.end_replay()
@@ -2292,8 +2438,8 @@ label alice_sorry_gifts:
             scene BG char Alice hugging terrace-01
             $ renpy.show("Alice hugging terrace 01"+alice.dress+mgg.dress)
         elif current_room == house[6]:
-            scene BG char Alice hugging yard-01
-            $ renpy.show("Alice hugging yard 01"+alice.dress+mgg.dress)
+            scene BG char Alice hugging sun-01
+            $ renpy.show("Alice hugging sun 01"+alice.dress+mgg.dress)
         return
 
     label .kindred_hugs:
@@ -2308,8 +2454,8 @@ label alice_sorry_gifts:
             scene BG char Alice hugging terrace-01
             $ renpy.show("Alice hugging terrace 02"+alice.dress+mgg.dress)
         elif current_room == house[6]:
-            scene BG char Alice hugging yard-01
-            $ renpy.show("Alice hugging yard 02"+alice.dress+mgg.dress)
+            scene BG char Alice hugging sun-01
+            $ renpy.show("Alice hugging sun 02"+alice.dress+mgg.dress)
         return
 
     label .middle_again:
@@ -3563,11 +3709,12 @@ label gift_lace_lingerie:
     $ added_mem_var('lace_ling_max1')
     $ spent_time += 40
     $ alice.dcv.intrusion.stage = 5  # бельё Алисе подарил Макс
-    $ alice.dress = 'd'
-    $ alice.dress_inf = '02la'
-    $ blog_lingerie = ['d', 'd', 'd']
+    # $ alice.dress = 'd'
+    # $ alice.dress_inf = '02la'
+    # $ blog_lingerie = ['d', 'd', 'd']
     $ items['sexbody2'].give()
     $ alice.gifts.append('sexbody2')
+    $ setting_clothes_by_conditions()
     $ infl[alice].add_m(40)
     $ poss['blog'].OpenStage(18)
     jump Waiting
@@ -3661,7 +3808,7 @@ label alice_private_punish_0:
                 "{i}подождать Алису{/i}":
                     pass
             #punish-sun-01 + punish-sun-01-alice-01 + punish-sun-01-max-(01a/01b)
-            scene BG char Alice punish-sun 01
+            scene BG punish-sun 01
             show Alice punish-sun 01-01
             $ renpy.show("Max punish-sun 01-01"+mgg.dress)
             Alice_03 "Всё, я готова. Где это сделам?"
@@ -3671,7 +3818,7 @@ label alice_private_punish_0:
         Max_01 "Да прямо тут, во дворе."
 
     #punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
-    scene BG char Alice punish-sun 02
+    scene BG punish-sun 02
     $ renpy.show("Alice punish-sun 02-01"+mgg.dress)
     Alice_05 "Ладно, давай здесь. Только не больно, хорошо? И не приставать!"
     Max_02 "Ага, раздевайся давай..."
@@ -3699,13 +3846,13 @@ label alice_private_punish_0:
         Alice_12 "Только не вздумай глазеть на меня при этом!"
         "{i}шлёпать нежно{/i}":
             #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
-            scene BG char Alice punish-sun 03
+            scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
             menu:
                 Alice_05 "А это однозначно лучше, чем когда мама шлёпает! После того, чему моя попка подвергалась, твои шлепки даже приятны..."
                 "Ну вот, а ты не хотела!":
                     #punish-sun-02 + punish-sun-02-max-(05a/05b)-alice-05
-                    scene BG char Alice punish-sun 02
+                    scene BG punish-sun 02
                     $ renpy.show("Alice punish-sun 02-05"+mgg.dress)
                     Alice_06 "Ну всё, хватит. А то ты уже не шлёпаешь, а просто лапаешь мою попку. И так раздел меня бесцеремонно..."
                     Max_03 "Просто хотел ускорить процесс."
@@ -3716,24 +3863,24 @@ label alice_private_punish_0:
                 "Могу сильнее, а то это уже не наказание!":
                     $ __r1 = renpy.random.randint(1, 2)
                     #punish-sun-04 + punish-sun-04-max-(01a/01b)-alice-01 или punish-sun-04-max-(02a/02b)-alice-02
-                    scene BG char Alice punish-sun 04
+                    scene BG punish-sun 04
                     $ renpy.show("Alice punish-sun 04-0"+str(__r1)+mgg.dress)
                     Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
                     Max_04 "А если я немного потру, чтобы не болело... Так легче?"
                     #punish-sun-05 + punish-sun-05-max-(01a/01b)-alice-01 или punish-sun-05-max-(02a/02b)-alice-02
-                    scene BG char Alice punish-sun 05
+                    scene BG punish-sun 05
                     $ renpy.show("Alice punish-sun 05-0"+str(__r1)+mgg.dress)
                     Alice_12 "Да... Но этого не пришлось бы делать, если бы ты шлёпал легонько!"
                     Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
                     Alice_13 "А мне кажется, что это больше похоже на извращение! Давай прекращай..."
                     Max_05 "Но приятное ведь?"
                     #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
-                    scene BG char Alice punish-sun 04
+                    scene BG punish-sun 04
                     $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
                     Alice_05 "Ага, сложно не заметить, сколько радости от этого в твоих шортах."
                     Max_03 "На такую красотку, как ты, у любого встанет!"
                     Alice_03 "Ах... Вот это комплимент! Не ожидала я такого от тебя, Макс. Так, всё, повеселились и хватит. Убери эту свою штуку и не появляйся в таком виде рядом со мной!"
-                    $ alice.set_pf('pun_stroking', True)
+                    $ alice.flags.privpunish += 1
             menu:
                 Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
                 "{i}уйти{/i}":
@@ -3741,12 +3888,12 @@ label alice_private_punish_0:
 
         "{i}шлёпать сильно{/i}":
             #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
-            scene BG char Alice punish-sun 03
+            scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
             Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
             Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
             #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
-            scene BG char Alice punish-sun 04
+            scene BG punish-sun 04
             $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
             Alice_15 "Это не немножко... У тебя ещё и стоит на всё это! Я в шоке! Прикрылся бы хоть..."
             Max_03 "Ну, ты же девушка... И очень привлекательная!"
@@ -3780,7 +3927,7 @@ label alice_private_punish_r:
 
     label .smoke_pun:
         #punish-sun-01 + punish-sun-01-alice-01 + punish-sun-01-max-(01a/01b)
-        scene BG char Alice punish-sun 01
+        scene BG punish-sun 01
         show Alice punish-sun 01-01
         $ renpy.show("Max punish-sun 01-01"+mgg.dress)
         Alice_03 "Всё, я готова. Давай побыстрее с этим покончим..."
@@ -3790,7 +3937,7 @@ label alice_private_punish_r:
         pass
 
     #punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
-    scene BG char Alice punish-sun 02
+    scene BG punish-sun 02
     $ renpy.show("Alice punish-sun 02-01"+mgg.dress)
     Alice_05 "Мне же больше делать нечего, только и жду с самого утра, когда ты придёшь и накажешь меня!"
     Max_02 "Сама разденешься или помочь?"
@@ -3812,13 +3959,13 @@ label alice_private_punish_r:
         Alice_06 "И чего глазеем? Шлёпай давай! Руки только не распускай слишком сильно."
         "{i}шлёпать нежно{/i}":
             #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
-            scene BG char Alice punish-sun 03
+            scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
             menu:
                 Alice_05 "Ты там уже начал? А то мне показалось, что это больше тянет на поглаживания, а не на шлепки..."
                 "И как, тебе нравится?":
                     #punish-sun-02 + punish-sun-02-max-(05a/05b)-alice-05
-                    scene BG char Alice punish-sun 02
+                    scene BG punish-sun 02
                     $ renpy.show("Alice punish-sun 02-05"+mgg.dress)
                     Alice_02 "Мне нравится, что небольно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
                     Max_03 "Просто зрелище такое... завораживающее."
@@ -3829,23 +3976,23 @@ label alice_private_punish_r:
                 "Могу сильнее, раз ты заскучала!":
                     $ __r1 = renpy.random.randint(1, 2)
                     #punish-sun-04 + punish-sun-04-max-(01a/01b)-alice-01 или punish-sun-04-max-(02a/02b)-alice-02
-                    scene BG char Alice punish-sun 04
+                    scene BG punish-sun 04
                     $ renpy.show("Alice punish-sun 04-0"+str(__r1)+mgg.dress)
                     Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
                     Max_04 "А я потру, чтобы не болело... Так легче?"
                     #punish-sun-05 + punish-sun-05-max-(01a/01b)-alice-01 или punish-sun-05-max-(02a/02b)-alice-02
-                    scene BG char Alice punish-sun 05
+                    scene BG punish-sun 05
                     $ renpy.show("Alice punish-sun 05-0"+str(__r1)+mgg.dress)
                     Alice_13 "Да, я не жалуюсь... Но можно было ведь и дальше шлёпать легонько."
                     Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
                     Alice_02 "Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
                     Max_03 "Просто зрелище такое... завораживающее."
                     #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
-                    scene BG char Alice punish-sun 04
+                    scene BG punish-sun 04
                     $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
                     Alice_03 "Ага, сложно не заметить, сколько радости от этого в твоих шортах. Приму это за комплимент, но хватит уже меня смущать своим озабоченным видом!"
                     $ poss['ass'].OpenStage(1)
-                    $ alice.set_pf('pun_stroking', True)
+                    $ alice.flags.privpunish += 1
             menu:
                 Max_02 "Хорошо, до следующего раза."
                 "{i}уйти{/i}":
@@ -3853,12 +4000,12 @@ label alice_private_punish_r:
 
         "{i}шлёпать сильно{/i}":
             #punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
-            scene BG char Alice punish-sun 03
+            scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
             Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
             Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
             #punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
-            scene BG char Alice punish-sun 04
+            scene BG punish-sun 04
             $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
             Alice_15 "Это не немножко... У тебя ещё и стоит на всё это! Я в шоке! Прикрылся бы хоть..."
             Max_03 "Ну, ты же девушка... И очень привлекательная!"
