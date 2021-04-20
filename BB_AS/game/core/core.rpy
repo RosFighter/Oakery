@@ -2,6 +2,7 @@
 label Waiting:
     # обработчик ожидания, запускает события по времени
     # "ждем [spent_time]"
+    $ renpy.end_replay()
     $ renpy.block_rollback()
     $ renpy.dynamic('name_label')
 
@@ -323,8 +324,9 @@ label Noon:
         not items['erobook_'+str(alice.dcv.gifts.stage)].InShop): # прошел откат после дарения книги, можно купить следующую
         $ items['erobook_'+str(alice.dcv.gifts.stage)].unblock()
         $ new_items = True
-    if (GetWeekday(day)==1 and kira.dcv.feature.stage>6
-            and not ('sexbody1' in alice.gifts or items['sexbody1'].have or items['sexbody1'].InShop)):
+    if (GetWeekday(day)==1 and 'kira' in chars and kira.dcv.feature.stage>6     # понедельник, состоялась первая фотосессия с Кирой
+            and not ('sexbody1' in alice.gifts or items['sexbody1'].have or items['sexbody1'].InShop)):     # sexbody1 ещё не продавалось
+
         $ items['sexbody1'].unblock()
         $ new_items = True
 
@@ -670,13 +672,13 @@ label after_load:
         $ set_extra_album()
 
     if 'current_ver' in globals():
-        "ver [current_ver], _ver [_version], conf.ver [config.version]"
+        # "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix
 
-    else:
-        "_ver [_version], conf.ver [config.version]"
+    # else:
+    #     "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
         call update_06_5
@@ -780,7 +782,7 @@ label update_06_5:
             alice.daily.blog_we     = peeping.pop('blog_with_eric', 0)
             alice.daily.dishes      = talk_var.pop('alice_dw', 0)
             alice.daily.tvwatch     = talk_var.pop('alice_tv', 0)
-            alice.daily.massate     = talk_var.pop('al.tv.mas', 0)
+            alice.daily.massage     = talk_var.pop('al.tv.mas', 0)
             alice.daily.oiled       = talk_var.pop('sun_oiled', 0)
             alice.daily.drink       = flags.pop('alice.drink', 0)
             alice.daily.smoke       = talk_var.pop('smoke', 0)

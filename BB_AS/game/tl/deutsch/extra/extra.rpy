@@ -206,3 +206,11 @@ translate deutsch strings:
     old "Следующий снимок"
     new ""
 
+# TODO: Translation updated at 2021-04-20 20:05
+
+translate deutsch strings:
+
+    # game/extra/extra.rpy:56
+    old "Держи и не отпускай"
+    new ""
+

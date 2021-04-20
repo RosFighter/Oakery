@@ -473,7 +473,7 @@ label alice_shower:
                     $ renpy.show('Alice spider-shower 02-01'+mgg.dress)
                     menu:
                         Alice_04 "Эм... Макс... Это уже как-то слишком, тебе не кажется?!"
-                        "Нет. Слишком - это вот так... {i}(обнять за попку){/i}" if alice.get_pf('pun_stroking'):
+                        "Нет. Слишком - это вот так... {i}(обнять за попку){/i}" if alice.flags.privpunish:
                             jump .dangerous_hugs
 
                         "Может быть, чуть-чуть... Рад был помочь.":
@@ -2157,7 +2157,7 @@ label alice_blog_lingerie:
                         "{i}уйти{/i}":
                             pass
 
-        "{i}уйти{/i}":
+        "{i}уйти{/i}" if not _in_replay:
             pass
     jump Waiting
 
@@ -2175,7 +2175,7 @@ label alice_body_photoset1:
     show Alice newbody 02
 
     Alice_05 "Да вижу я по твоим шортам, что ты там уже не на обложку напредставлял, а на разворот."
-    Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-капокрутись..."
+    Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-ка покрутись..."
 
     if not alice.daily.drink:
         Alice_03 "Там всё в порядке. Может тебе повезёт во время съёмки и ты что-то да увидишь. Будешь щёлкать меня прямо здесь, у стены или у зеркала?"   #без конфеты
@@ -2299,15 +2299,10 @@ label alice_body_photoset1:
 
     label .end:
         $ items['sexbody1'].give()
-        # $ items['sexbody1'].InShop = False
-        # $ items['sexbody1'].have   = False
         $ alice.gifts.append('sexbody1')
         $ setting_clothes_by_conditions()
         $ alice.dcv.photo.stage = 1
         $ alice.dcv.photo.set_lost(2)
-        # $ alice.dress = 'c'
-        # $ alice.dress_inf = '02ka'
-        # $ blog_lingerie = ['c', 'c', 'c']
         $ current_room = house[0]
         jump Waiting
 
@@ -2484,11 +2479,10 @@ label alice_towel_after_club:
                         jump .cum_breast
 
             "Так пусти в дело свой язычок..." if alice.flags.nakedpunish and alice.dcv.intrusion.stage in [5, 7]:   #если Алису наказывали полностью голую + Макс опередил Эрика с дарением белья
-
-                Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
                 $ added_mem_var('bath_tongue')
+                Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
 
-                if renpy.random.randint(1, 2) < 2:
+                if renpy.random.randint(0, 1):
                     #after-club-bath02a-max&alice-02-f + after-club-bathbj01-max&alice-02
                     scene BG char Alice after-club-bath 02a
                     show Alice after-club-bath bj-02

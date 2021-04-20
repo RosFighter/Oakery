@@ -1074,7 +1074,7 @@ init python:
         delivery  = 0       # доставка через .. дней
         read      = 0       # сколько раз уже прочитано
 
-        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, need_read=0, cells=1):
+        def __init__(self, name, desc="", img="", category="", price=0, InShop=False, need_read=0, cells=1, have=False):
             self.name       = name      # наименование (в магазине и в сумке)
             self.desc       = desc      # описание
             self.img        = img       # изображение
@@ -1083,6 +1083,7 @@ init python:
             self.InShop     = InShop    # доступно к приобретению
             self.need_read  = need_read # если больше нуля - признак книги. Сколько циклов чтения нужно
             self.cells      = cells     # занимаемые по вертикали ячейки (1 или 2)
+            self.have       = have      # есть в сумке
 
         def buy(self):          # выполняет покупку предмета из интернет-магазина
             mgg.pay(self.price)

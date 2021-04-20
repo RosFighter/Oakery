@@ -14,3 +14,11 @@ translate deutsch strings:
     old "Сэм"
     new ""
 
+# TODO: Translation updated at 2021-04-20 19:46
+
+translate deutsch strings:
+
+    # game/core/characters.rpy:470
+    old "Оливия"
+    new ""
+
