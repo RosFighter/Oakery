@@ -8456,61 +8456,61 @@ translate english strings:
 translate english smoke_fear_37c7808b:
 
     # Alice_12 "Это ещё с чего, Макс?! Меня же не наказывали! А мы договаривались, если ты меня спас от мамы, то и отшлёпать можешь..." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Why is that, Max?! I wasn't punished! We agreed that if you saved me from Mom, you could spank me..." nointeract
 
 # game/dialogues/alicetalk.rpy:1037
 translate english smoke_fear_b915b812:
 
     # Alice_12 "Это ещё с чего, Макс?! Ты же мою попку от мамы не спас! А мы договаривались, если ты меня выручаешь, то и отшлёпать можешь..." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Why would I do that, Max?! You didn't save me from Mom! We agreed that if you helped me out, you could spank me..." nointeract
 
 # game/dialogues/alicetalk.rpy:1043
 translate english smoke_fear_07fafa70:
 
     # Alice_05 "[succes!t]Ну... Только если легонько! Понял?! Только докурю сперва в тишине и покое..."
-    Alice_05 ""
+    Alice_05 "[succes!t]Well... Only if it's gentle! Got it?! I'll just smoke in peace and quiet first..."
 
 # game/dialogues/alicetalk.rpy:1044
 translate english smoke_fear_5f4eb3c1:
 
     # Max_03 "Хорошо. Я подожду..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Okay. I'll wait..." nointeract
 
 # game/dialogues/alicetalk.rpy:1049
 translate english smoke_fear_9229c45e:
 
     # Alice_16 "[failed!t]Нет уж! Что-то другое ещё можешь попробовать выпросить, но к своей попке я тебя сегодня не подпущу." nointeract
-    Alice_16 "" nointeract
+    Alice_16 "[failed!t]No way! You can still try to ask for something else, but I'm not letting you near my ass tonight." nointeract
 
 # game/dialogues/alicetalk.rpy:3579
 translate english alice_about_defend_punish0_38177009:
 
     # Alice_12 "Эээ... Прекрасно сидится, как видишь."
-    Alice_12 ""
+    Alice_12 "Um... I'm just fine, as you can see."
 
 # game/dialogues/alicetalk.rpy:3580
 translate english alice_about_defend_punish0_a7c4989a:
 
     # Max_02 "Ну ещё бы, ведь твою симпатичную попку никто сегодня не отшлёпал, благодаря мне."
-    Max_02 ""
+    Max_02 "Of course, no one spanked your pretty ass today, thanks to me."
 
 # game/dialogues/alicetalk.rpy:3581
 translate english alice_about_defend_punish0_ad4cdba7:
 
     # Alice_05 "А, вот ты о чём! Ну да, моя попка цела и невредима. Почаще бы ты меня от маминой руки ещё спасал, было бы супер!"
-    Alice_05 ""
+    Alice_05 "Oh, that's what you mean! Yeah, my ass is safe and sound. If you saved me from Mom more often, that would be great!"
 
 # game/dialogues/alicetalk.rpy:3582
 translate english alice_about_defend_punish0_e4999aae:
 
     # Max_07 "Да как-то не очень хочется, на самом деле, вообще это делать. По крайней мере за просто так."
-    Max_07 ""
+    Max_07 "I don't really feel like doing it at all. At least not for nothing."
 
 # game/dialogues/alicetalk.rpy:3583
 translate english alice_about_defend_punish0_59372acc:
 
     # Alice_13 "А что ты хочешь? Гадости какие-нибудь наверняка..."
-    Alice_13 ""
+    Alice_13 "What do you want? Something perverted for sure..."
 
 # game/dialogues/alicetalk.rpy:3584
 translate english alice_about_defend_punish0_437a93ad:
@@ -9077,4 +9077,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:3817
     old "Могу сильнее, раз ты заскучала!"
     new ""
-
