@@ -312,7 +312,7 @@ label alice_talk_tv:
             Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
             Max_00 "Ладно, пойду я..."
             jump .end
-        "Тебе сделать массаж ног?" if _in_replay or all([not alice.daily.massage, (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):
+        "Тебе сделать массаж ног?" if _in_replay or all([not alice.daily.massage, learned_foot_massage()]):
             $ renpy.show("Max tv-closer 04"+mgg.dress)
 
     $ alice.daily.massage = 1
@@ -1623,8 +1623,8 @@ label gift_pajamas:
         Alice_02 "Вот и молодец! Гуляй..."
         $ poss['risk'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif alice.flags.hugs_type > 3: # после 3-ей сладости были родственные обнимашки
-        $ persistent.memories['gift_pajamas'] = 1
         if not _in_replay:
+            $ persistent.memories['gift_pajamas'] = 1
             $ poss['risk'].OpenStage(8)
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
         Max_02 "Как страшно... Давай уже, примеряй."
@@ -1638,7 +1638,7 @@ label gift_pajamas:
         menu:
             Alice_05 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"   #примерка в комнате/спрайт в одежде (01)
             "Ага, я и не подглядываю...":
-                if renpy.random.randint(0, 1) > 0:   #если линейка началась без верха
+                if renpy.random.randint(0, 1):      # линейка началась без верха
                     $ renpy.show('Alice newpajamas 02'+__suf)
                     Alice_01 "Макс! Ты что, пялишься на мою грудь? Тут же кругом зеркала и я всё вижу! Быстро отвернись!"   #спрайт без верха (02)
                     Max_03 "Я не пялюсь..."
@@ -1667,7 +1667,7 @@ label gift_pajamas:
                         show Alice newpajamas 08e
                     Alice_07 "Размер в самый раз... Удобненько и легко. Как тебе, Макс? Хорошо сидит?"   #спрайт с одетыми топиком и шортиками (08)
                     Max_05 "Не то слово, всё выглядит шикарно!"
-                else:   #если линейка началась без низа
+                else:           # линейка началась без низа
                     $ __suf = 's' if alice.plan_name in ['sun', 'swim'] else alice.dress
                     if __suf=='a' and alice.req.result == 'nopants':  # если Алиса в обычной одежде и без трусиков
                         $ __suf += 'n'
@@ -1834,7 +1834,7 @@ label Alice_solar:
     $ renpy.show('Max sun-alone 01'+mgg.dress)
     menu .type_choice:
         Alice_07 "Эти шезлонги всем хороши, но на животе загорать не получается. Приходится коврик для йоги использовать..."
-        "{i}нанести крем{/i}" if (kol_cream >= 3 and not (len(online_cources)>1 and online_cources[1].cources[0].less > 0)) or 3<=kol_cream<7:  # просто наносим крем. близко к оригиналу
+        "{i}нанести крем{/i}" if (kol_cream >= 3 and not learned_foot_massage()) or 3<=kol_cream<7:  # просто наносим крем. близко к оригиналу
             $ SetCamsGrow(house[6], 140)
             $ _suf = 'a'
             $ spent_time += 20
@@ -1887,7 +1887,7 @@ label Alice_solar:
                 Max_08 "{i}( Осталось мало крема, в следующий раз может не хватить, лучше купить заранее. ){/i}"
                 $ items['solar'].unblock()
             $ AddRelMood('alice', 5, 50, 2)
-        "{i}сделать массаж с кремом{/i}" if all([kol_cream >= 7, (len(online_cources)>1 and online_cources[1].cources[0].less > 0)]):  # попытка сделать массаж с кремом
+        "{i}сделать массаж с кремом{/i}" if all([kol_cream >= 7, learned_foot_massage()]):  # попытка сделать массаж с кремом
             $ _massaged = []
             $ _talk_top = False
             $ SetCamsGrow(house[6], 160)
@@ -1911,8 +1911,8 @@ label massage_sunscreen:
         show Alice sun-alone 01-01
         $ _suf = 'a'
     $ renpy.show('Max sun-alone 01'+mgg.dress)
-    if len(online_cources) > 1 and online_cources[1].current > 0:
-        if len(_massaged) == (5 if 'eric.lingerie' in dcv and alice.dcv.intrusion.stage in [5, 7] else 4): # 5:
+    if learned_hand_massage():
+        if len(_massaged) == (5 if alice.dcv.intrusion.stage in [5, 7] else 4): # 5:
             Alice_07 "Макс, ты делаешь успехи! Ещё немного попрактикуешься, и к тебе будет сложно записаться на приём!"
             Max_03 "Да пустяки, обращайся!"
             Alice_04 "Ладно, хватит на сегодня, Макс. И... спасибо!"
@@ -2285,6 +2285,7 @@ label massage_sunscreen:
             jump .end
 
     label .hide_behind:
+        $ added_mem_var('hide_behind')
         Alice_06 "Нет, я боюсь..."
         Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
         #spider-sun-03 + spider-sun-03-max-01b-alice-01a
@@ -2321,6 +2322,7 @@ label massage_sunscreen:
 
 
     label .squeeze_chest:
+        $ added_mem_var('squeeze_chest')
         #spider-sun-02 + spider-sun-02-max-(03/03a)-alice-03a
         scene BG char Alice spider-sun-02
         $ renpy.show('Alice spider-sun 02-03b'+mgg.dress)

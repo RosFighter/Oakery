@@ -456,7 +456,7 @@ label after_load_04_5:
         $ current_ver = "0.04.5.05"
 
         # $ dcv['lisa_mentor'] = Daily(done=True, enabled=True) # попытка обучения Лизы
-        # $ talk_var['kiss_lessons'] = 0 # количество успешно проведённых уроков поцелуев с Лизой
+        $ talk_var['kiss_lessons'] = 0 # количество успешно проведённых уроков поцелуев с Лизой
         $ poss['seduction'].stages[7].ps = ''
         $ poss['seduction'].stages.extend([
                 PossStage("interface poss mentor ep08", _("Я поговорил с Лизой насчёт её обучения. Она выдвинула ряд условий, среди которых запрет мне к ней прикасаться, если она против. Ну уже что-то."), _("Похоже обучаться Лиза согласна только если у неё хорошее настроение...")), #8
@@ -538,7 +538,7 @@ label after_load_04_5:
     if current_ver < "0.04.5.13":
         $ current_ver = "0.04.5.13"
 
-        # $ items['photocamera'] = Item(_("ФОТОАППАРАТ"), _("Профессиональный фотоаппарат с объективом. Не новый, но в отличном состоянии. Подойдёт как для новичков, так и для профессионалов."), 'photocamera', 3, 500)
+        $ items['photocamera'] = Item(_("ФОТОАППАРАТ"), _("Профессиональный фотоаппарат с объективом. Не новый, но в отличном состоянии. Подойдёт как для новичков, так и для профессионалов."), 'photocamera', 3, 500)
         # $ items['nightie2']    = Item(_("КОРОТКАЯ ПИКАНТНАЯ СОРОЧКА"), _("Соблазнительная чёрная сорочка выполнена из эластичного тюля. В комплект так же входят трусики-стринги."), 'nightie2', 0, 200, cells=2)
 
     if current_ver < "0.04.5.14":
@@ -577,7 +577,7 @@ label after_load_04_5:
         $ current_ver = "0.04.5.16"
 
         # $ flags['promise.cuni.kira'] = False  # Макс получил дрочку в бассене и пообещал куни
-        # $ flags['hj_in_pool'] = 0  # не было дрочек в бассейне
+        $ flags['hj_in_pool'] = 0  # не было дрочек в бассейне
         # $ dcv['kiratalkcuni'] = Daily(done=True, enabled=True)
 
     if current_ver < "0.04.5.17":
@@ -702,13 +702,13 @@ label after_load_06_0:
                           _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")),  #3
             ])
 
-        # $ talk_var.update({
-        #         'fight_for_Lisa'  : 0,  # битва за Лизу, стадии
-        #         'fight_for_Alice' : 0,  # битва за Алису
-        #         'ae_lisa_number'  : -1, # "урок", проведённый Эриком (и Аней) с Лизой
-        #         'fight_for_Kira'  : 0,  # битва за Киру
-        #         'bonus_from_eric' : ['money',],
-        #     })
+        $ talk_var.update({
+                'fight_for_Lisa'  : 0,  # битва за Лизу, стадии
+                'fight_for_Alice' : 0,  # битва за Алису
+                'ae_lisa_number'  : -1, # "урок", проведённый Эриком (и Аней) с Лизой
+                'fight_for_Kira'  : 0,  # битва за Киру
+                'bonus_from_eric' : ['money',],
+            })
 
         # $ EventsByTime.update({
         #         'Eric_talkLisa0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
@@ -720,44 +720,44 @@ label after_load_06_0:
 
         # $ peeping['ael_sexed'] = 0  # подсматривание за сек.уроками Лизы
 
-        # $ dcv.update({
-        #         'ae_ed_lisa'     : Daily(done=True),  # до следующего урока Лизы у АиЭ
-        #         'film_punish'    : Daily(done=True),  # пока счетчик не прошёл, Макс должен посмотреть с Лизой фильм
-        #         'kira.nextphoto' : Daily(done=True),  # отсрочка до следующей фотосессии с Кирой
-        #         'eric_alice'     : Daily(done=True),  # отсрочка у Эрика по Алисые
-        #         'gift.lingerie'  : Daily(done=True),  # фотосессии Алисы в нижнем белье
-        #         'about_blog'     : Daily(done=True, enabled=True),  # интересуемся у Алисы, как дела с блогом (в нижнем белье)
-        #         'eric.lingerie'  : Daily(done=True),  # по истечении Эрик подарит бельё Алисе (борьба на опережение)
-        #         'lisa.punpause'  : Daily(done=True),  # во время паузы невозможны наказания без подставы
-        #         'alice.punpause' : Daily(done=True),
-        #         'alice.prudence' : Daily(done=True),  # дни благоразумия (Алиса не нарушает условий Макса)
-        #     })
+        $ dcv.update({
+                'ae_ed_lisa'     : Daily(done=True),  # до следующего урока Лизы у АиЭ
+                'film_punish'    : Daily(done=True),  # пока счетчик не прошёл, Макс должен посмотреть с Лизой фильм
+                'kira.nextphoto' : Daily(done=True),  # отсрочка до следующей фотосессии с Кирой
+                'eric_alice'     : Daily(done=True),  # отсрочка у Эрика по Алисые
+                'gift.lingerie'  : Daily(done=True),  # фотосессии Алисы в нижнем белье
+                'about_blog'     : Daily(done=True, enabled=True),  # интересуемся у Алисы, как дела с блогом (в нижнем белье)
+                'eric.lingerie'  : Daily(done=True),  # по истечении Эрик подарит бельё Алисе (борьба на опережение)
+                'lisa.punpause'  : Daily(done=True),  # во время паузы невозможны наказания без подставы
+                'alice.punpause' : Daily(done=True),
+                'alice.prudence' : Daily(done=True),  # дни благоразумия (Алиса не нарушает условий Макса)
+            })
 
-        # $ wcv = {
-        #         'catch.Kira' : Weekly(4),  # счетчик недель до гарантированного спаливания Киры Эриком (после активации)
-        #     }
+        $ wcv = {
+                'catch.Kira' : Weekly(4),  # счетчик недель до гарантированного спаливания Киры Эриком (после активации)
+            }
 
-        # $ flags.update({
-        #         'l.ab_aeed'         : False,  # состоялся разговор с Лизой о последнем уроке АиЭ (доступен один раз в течении текущей недели)
-        #         'dinner_ab_lisa'    : False,  # разговор за ужином о доп.обучении Лизы
-        #         'dinner_ab_earn'    : False,  # разговор за ужином о доходах Макса и старт секс.обучения Лизы в случае отсрочки
-        #         'film_punish'       : False,  # после подглядывания за Лизой Макс должен посмотреть с ней фильм
-        #         'dinner_ab_earn'    : False,  # разговор за ужином о доходах Макса и старт секс.обучения Лизы в случае отсрочки
-        #         'film_punish'       : False,  # после подглядывания за Лизой Макс должен посмотреть с ней фильм
-        #         'lisa.stopkiss'     : 0,      # нужно прекратить поцелуи с Лизой
-        #         'strip.show'        : False,  # Кира спит голой после стриптиза
-        #         'eric.jerk'         : False,  # Эрик дрочит на Алису
-        #         'eric.noticed'      : False,  # в этот день Эрик замечен за дрочкой
-        #         'eric.firstjerk'    : False,  # первый раз заметили Эрика
-        #         'eric.photo1'       : 0,
-        #         'eric.photo2'       : 0,
-        #     })
+        $ flags.update({
+                'l.ab_aeed'         : False,  # состоялся разговор с Лизой о последнем уроке АиЭ (доступен один раз в течении текущей недели)
+                'dinner_ab_lisa'    : False,  # разговор за ужином о доп.обучении Лизы
+                'dinner_ab_earn'    : False,  # разговор за ужином о доходах Макса и старт секс.обучения Лизы в случае отсрочки
+                'film_punish'       : False,  # после подглядывания за Лизой Макс должен посмотреть с ней фильм
+                'dinner_ab_earn'    : False,  # разговор за ужином о доходах Макса и старт секс.обучения Лизы в случае отсрочки
+                'film_punish'       : False,  # после подглядывания за Лизой Макс должен посмотреть с ней фильм
+                'lisa.stopkiss'     : 0,      # нужно прекратить поцелуи с Лизой
+                'strip.show'        : False,  # Кира спит голой после стриптиза
+                'eric.jerk'         : False,  # Эрик дрочит на Алису
+                'eric.noticed'      : False,  # в этот день Эрик замечен за дрочкой
+                'eric.firstjerk'    : False,  # первый раз заметили Эрика
+                'eric.photo1'       : 0,
+                'eric.photo2'       : 0,
+            })
 
         # вещи
-        # $ items.update({
-        #         "sexbody1" : Item(_("ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"), _("Прозрачное сетчатое боди с открытой спиной чёрного цвета."), 'sexbody1', 0, 500, False, cells=2),
-        #         "sexbody2" : Item(_("ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"), _("Женское сексуальное нижнее бельё с кружевным узором по краям."), 'sexbody2', 0, 450, False, cells=2),
-        #     })
+        $ items.update({
+                "sexbody1" : Item(_("ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"), _("Прозрачное сетчатое боди с открытой спиной чёрного цвета."), 'sexbody1', 0, 500, False, cells=2),
+                "sexbody2" : Item(_("ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"), _("Женское сексуальное нижнее бельё с кружевным узором по краям."), 'sexbody2', 0, 450, False, cells=2),
+            })
 
         # влияние
         $ infl = {

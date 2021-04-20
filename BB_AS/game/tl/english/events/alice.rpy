@@ -2045,9 +2045,9 @@ translate english alice_body_photoset1_ad551119:
     Alice_05 "Yeah, and from the looks of you, I'm the kind of cover-girl you'd prefer to be 'uncovered', right?"
 
 # game/events/alice.rpy:1597
-translate english alice_body_photoset1_23024072:
+translate english alice_body_photoset1_da413f09:
 
-    # Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-капокрутись..."
+    # Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-ка покрутись..."
     Max_01 "I'm only reacting to what's in front of me, which is more than enough to prove how hot you look in that outfit. But how is it from the back? Spin around a little..."
 
 # game/events/alice.rpy:1600

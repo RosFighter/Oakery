@@ -38,7 +38,6 @@ define items_dict = {
 
 init python:
     def checking_items():
-        print 'checking items'
         for items_id in items_dict:
             if items_id not in items:
                 items[items_id] = items_dict[items_id]

@@ -34,7 +34,7 @@ label kira_bath:
                 Max_09 "В следующий раз лучше заглянуть со стремянки..."     # стремянка уже установлена
             jump .end
 
-        "{i}войти{/i}" if kira.flags.m_foot > 0 and len(online_cources)>1 and online_cources[1].cources[0].less:
+        "{i}войти{/i}" if kira.flags.m_foot > 0:
             # уже состоялся массаж ног в ванной
             if wcv.catch_Kira.stage==1:
                 # Эрик спалил Макса с Кирой
@@ -75,7 +75,7 @@ label kira_bath:
         $ Skill('hide', 0.03)
 
         Max_02 "Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой..."
-        if _in_replay or all([len(online_cources)>1 and online_cources[1].cources[0].less, kira.flags.porno, lisa.flags.m_foot>0]):
+        if _in_replay or all([kira.flags.porno, lisa.flags.m_foot>0]):
             # совместный просмотр порно уже был, Макс делал девчонкам массаж ног
             show Kira bath-window 02
             Max_05 "Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально..."   #если был совместный просмотр порно с Кирой
@@ -665,7 +665,7 @@ label kira_bath:
             Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
             #bath-cum-01 + bath-cum-01-max-01-kira-01
             scene BG char Kira bath-cum-01
-            show Kira bath-mass cum-01            
+            show Kira bath-mass cum-01
             Kira_05 "Да, Макс, такая вот у тебя тётя! Но мне всё равно очень понравилось!"
             Max_05 "И мне тоже! Было очень классно!"
             $ Skill('sex', 0.1)
@@ -930,7 +930,7 @@ label kira_night_tv:
                                 jump .end
                             "Давай смотреть порно?!" if kira.flags.porno:
                                 jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and learned_hand_massage():
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
                         Kira_00 "Хорошо, Макс. Спокойной ночи! Я тоже уже скоро ложусь спать, только серию досмотрю..."
@@ -958,7 +958,7 @@ label kira_night_tv:
                                 Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
                                 Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телек с тобой посмотреть?"
                                 jump .porn
-                            "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
+                            "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and learned_hand_massage():
                                 $ renpy.show('Kira tv-closer '+pose3_4+kira.dress)
                                 jump .teachkiss
                             "Я просто хотел пожелать спокойной ночи!":
@@ -994,7 +994,7 @@ label kira_night_tv:
                     Kira_07 "А? Макс? Как ты подкрался незаметно... Я думала, уже все спят давно... А я тут... отдыхаю, как видишь. Присоединишься?"
                     "Конечно, да!":
                         jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and learned_hand_massage():
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
                         jump .good_night
@@ -1011,7 +1011,7 @@ label kira_night_tv:
                         Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
                         Max_03 "Конечно, тётя Кира. А мне можно тоже... посмотреть этот фильм?"
                         jump .porn
-                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and len(online_cources)>1 and online_cources[1].cources[1].less:
+                    "Я насчёт уроков поцелуев, если момент подходящий..." if 'kira' in flags.how_to_kiss and learned_hand_massage():
                         $ renpy.show('Kira tv-closer '+pose3_4+kira.dress)
                         jump .teachkiss
                     "Я просто хотел пожелать спокойной ночи!":
@@ -1112,7 +1112,7 @@ label kira_night_tv:
             scene BG char Alice tv-mass-05
             show Kira tv-closer max-03
             $ suf = ''
-            if kira.flags.m_foot and (_in_replay or (len(online_cources)>1 and online_cources[1].cources[0].less)):
+            if kira.flags.m_foot:
                 Kira_05 "Если хочешь, можешь даже снять шорты, чтобы резинка ничего не передавливала..."
                 Max_02 "Только если ты тоже разденешься..."
                 menu:

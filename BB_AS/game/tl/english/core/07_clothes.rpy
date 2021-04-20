@@ -4,29 +4,29 @@ translate english strings:
 
     # game/core/07_clothes.rpy:54
     old "Для йоги"
-    new ""
+    new "For yoga"
 
     # game/core/07_clothes.rpy:54
     old "Блог в нижнем белье"
-    new ""
+    new "The lingerie blog"
 
     # game/core/07_clothes.rpy:54
     old "Готовит завтрак"
-    new ""
+    new "Making breakfast"
 
     # game/core/07_clothes.rpy:54
     old "Готовит ужин"
-    new ""
+    new "Cooking dinner"
 
     # game/core/07_clothes.rpy:54
     old "Утренний отдых"
-    new ""
+    new "Morning Recreation"
 
     # game/core/07_clothes.rpy:54
     old "Вечерний отдых"
-    new ""
+    new "Evening Recreation"
 
     # game/core/07_clothes.rpy:128
     old "Влияние Макса недостаточно"
-    new ""
+    new "Max's influence isn't high enough"
 

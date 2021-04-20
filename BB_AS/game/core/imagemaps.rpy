@@ -68,7 +68,7 @@ screen choice_zone_sunscreen():
             tooltip _("{i}массировать голени{/i}")
 
 
-        if all([len(online_cources)>1, online_cources[1].current>0, alice.dcv.intrusion.stage in [5, 7]]):
+        if alice.dcv.intrusion.stage in [5, 7]:
             hotspot (594, 358, 316, 316) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.hips')]:
                 mouse 'palms'
                 tooltip _("{i}массировать бёдра{/i}")

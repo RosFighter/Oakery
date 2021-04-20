@@ -527,3 +527,27 @@ translate english strings:
     old "Мам, я купил тебе одежду полегче!"
     new "Mom, I bought you some better clothes!"
 
+# TODO: Translation updated at 2021-04-20 19:51
+
+translate english strings:
+
+    # game/core/02init.rpy:116
+    old "Насчёт Алекса..."
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Есть успехи с Оливией?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Что-нибудь узнала про Оливию?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Ну так, что там с трусиками Оливии?"
+    new ""
+
+    # game/core/02init.rpy:116
+    old "Ты позвала Оливию к нам?"
+    new ""
+

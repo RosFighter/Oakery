@@ -2533,9 +2533,9 @@ translate deutsch alice_body_photoset1_ad551119:
     Alice_05 ""
 
 # game/events/alice.rpy:2081
-translate deutsch alice_body_photoset1_23024072:
+translate deutsch alice_body_photoset1_da413f09:
 
-    # Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-капокрутись..."
+    # Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-ка покрутись..."
     Max_01 ""
 
 # game/events/alice.rpy:2084

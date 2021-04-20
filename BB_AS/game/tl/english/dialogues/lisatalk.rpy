@@ -8820,3 +8820,485 @@ translate english lisa_stop_kiss_0a680597:
 
     # Max_09 "{i}( Пожалуй, лучше пока прекратить наши с Лизой уроки поцелуев, чтобы не давать Эрику повода устроить мне проблемы. ){/i}"
     Max_09 "{i}( I think I'd better stop kissing lessons with Lisa for now so I don't draw attention from Eric. ){/i}"
+# TODO: Translation updated at 2021-04-20 19:51
+
+# game/dialogues/lisatalk.rpy:3755
+translate english about_boy3_3785b052:
+
+    # Lisa_00 "Да, что насчёт него? Появились какие-то мысли?"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3756
+translate english about_boy3_2317bd16:
+
+    # Max_01 "Ага, могу предложить кое-что..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3757
+translate english about_boy3_7df1d7f0:
+
+    # Lisa_01 "Супер! Я тебя слушаю..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3758
+translate english about_boy3_157d8a4e:
+
+    # Max_07 "Думаю, тебе стоит подружиться с Оливией."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3759
+translate english about_boy3_c933d2ee:
+
+    # Lisa_09 "С Оливией?! Дружить? По-моему, дружить с девочкой, которая встречается с парнем, который мне интересен, не самая лучшая идея."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3760
+translate english about_boy3_44f9090c:
+
+    # Max_09 "Разве?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3761
+translate english about_boy3_59f8b5d7:
+
+    # Lisa_10 "Ну, как своей подружке, она ведь явно будет рассказывать, чем они с Алексом занимаются... А я не уверена, что хочу знать! Особенно в подробностях..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:3762
+translate english about_boy3_de4ad589:
+
+    # Max_03 "В том и смысл! Если ты будешь общаться с Алексом сама, то ещё не известно, каким он себя покажет. А вот через дружбу с Оливией ты сможешь узнать, действительно ли он так хорош, как тебе кажется."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3763
+translate english about_boy3_a8df8b20:
+
+    # Lisa_00 "А знаешь, может быть ты и прав. Есть правда одно но... Даже если мы с ней подружимся, она ведь не выдаст о нём всё, что только знает и думает. Для такой дружбы нужно время..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3764
+translate english about_boy3_2b4e8f98:
+
+    # Max_07 "Да, но это лучше, чем попытаться их, например, рассорить или ещё чего... Если Оливия очень нравится Алексу и из-за тебя они расстанутся, он вообще тебя может возненавидеть."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3765
+translate english about_boy3_e62a48a2:
+
+    # Lisa_11 "Нет, врагов я себе наживать в школе не собираюсь."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:3766
+translate english about_boy3_39374c7a:
+
+    # Max_04 "Тогда наберись терпения и попробуй подружиться с Оливией. И если всё выйдет, то и об Алексе сможешь узнать всякого... А там и поймёшь, надо ли оно тебе..."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3767
+translate english about_boy3_d680efb0:
+
+    # Lisa_01 "Значит, так и сделаю. Спасибо за совет, Макс!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3768
+translate english about_boy3_df1916d7:
+
+    # Max_01 "Обращайся, если что... И удачи тебе."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3781
+translate english about_olivia_1_09938d5a:
+
+    # Lisa_09 "Пока никакого прогресса. Я ещё не знаю, как к ней подступиться и подружиться."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3782
+translate english about_olivia_1_7f1defbf:
+
+    # Max_09 "Ну а какие у неё вкусы?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3783
+translate english about_olivia_1_68de12ae:
+
+    # Lisa_13 "Кроме Алекса? Не знаю... Она для меня загадка. С одной стороны выглядит скромной девочкой, но парни за ней бегают толпой. И я никак не могу понять почему..."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:3784
+translate english about_olivia_1_608ac77f:
+
+    # Max_07 "И что, никаких идей?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3785
+translate english about_olivia_1_d85e5631:
+
+    # Lisa_00 "Нет... Может быть, что-то посоветуешь?"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3786
+translate english about_olivia_1_5f89f927:
+
+    # Max_01 "Ну, для начала можно выяснить её секрет."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3787
+translate english about_olivia_1_c7d9bcae:
+
+    # Lisa_01 "Спасибо, Шерлок! А то я не догадалась... Но как?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3788
+translate english about_olivia_1_3e8cb83e:
+
+    # Max_02 "Да это же очевидно! Спроси у кого-нибудь..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3789
+translate english about_olivia_1_e2d3ae18:
+
+    # Lisa_02 "У кого же? Или ты думаешь мне теперь нужно подружиться с кем-то, кто бегает за Оливией, чтобы узнать её секрет, чтобы подружиться с ней, чтобы... Ну ты понял..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3790
+translate english about_olivia_1_5151687b:
+
+    # Max_04 "Именно! Даже я бы лучше не сказал!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3791
+translate english about_olivia_1_be05742b:
+
+    # Lisa_01 "Спасибо. Ладно, попробую..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3792
+translate english about_olivia_1_e7be6e2a:
+
+    # Max_01 "Держи меня в курсе..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3804
+translate english about_olivia_2_b5d4852d:
+
+    # Lisa_00 "Ага... Только не знаю, как это мне поможет..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3805
+translate english about_olivia_2_45d6f1c7:
+
+    # Max_01 "Рассказывай!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3806
+translate english about_olivia_2_866da865:
+
+    # Lisa_01 "В общем, я подружилась с одним мальчиком, который просто бегает за этой самой Оливией..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3807
+translate english about_olivia_2_6fab788d:
+
+    # Max_07 "Ну и?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3808
+translate english about_olivia_2_eb0e994e:
+
+    # Lisa_09 "Не перебивай. Мальчик этот когда станет взрослым, я уверена, превратится в маньяка. Уж слишком он помешанный на ней... Ну так вот. У Оливии есть одна... фишка, если можно так сказать..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3809
+translate english about_olivia_2_86654cb7:
+
+    # Max_09 "Да говори уже!"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3810
+translate english about_olivia_2_26f09c98:
+
+    # Lisa_01 "Ты чего такой нервный, Макс? Я же и рассказываю! В общем, Оливия не носит нижнее бельё... Вот. И я думаю, что это бесполезная информация..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3811
+translate english about_olivia_2_98c2c9ae:
+
+    # Max_02 "Класс! Это всё объясняет..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3812
+translate english about_olivia_2_6a089c6b:
+
+    # Lisa_10 "В том плане, что теперь ясно, почему все мальчики бегают за Оливией? Ну да... Но что с этим знанием делать?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:3813
+translate english about_olivia_2_c559c6ad:
+
+    # Max_03 "Это уже повод втянуть Оливию в интересный разговор!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3814
+translate english about_olivia_2_35067208:
+
+    # Lisa_13 "Это как? Типа: \"Оливия, у нас столько общего, я тоже не ношу трусы, давай дружить...\" Так? Глупее идеи не слышала..."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:3815
+translate english about_olivia_2_53126813:
+
+    # Max_07 "Подумаешь, немного соврёшь ради дела... Для перестраховки, можешь даже какое-то время не надевать трусики в школу!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3816
+translate english about_olivia_2_bb497a79:
+
+    # Lisa_12 "Не собираюсь я ходить в школу без трусов! Подозреваю, что ты был бы очень доволен, но нет. Даже не мечтай..."
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:3817
+translate english about_olivia_2_2558f747:
+
+    # Max_04 "Тогда просто поинтересуйся у Оливии, почему она не носит нижнее бельё!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3818
+translate english about_olivia_2_ac090428:
+
+    # Lisa_01 "Ну и она ответит что-то из серии \"а я так хочу\"... И что потом?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3819
+translate english about_olivia_2_85b1418e:
+
+    # Max_02 "А ты спроси. Вдруг разговоритесь..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3820
+translate english about_olivia_2_d34b3ba8:
+
+    # Lisa_00 "Ну ладно. Может и получится... В любом случае, других идей нет. Я попробую спросить."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3821
+translate english about_olivia_2_918d8dea:
+
+    # Max_01 "Вот и молодчинка!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:3834
+translate english about_olivia_3_f08097f2:
+
+    # Lisa_02 "Ты же понимаешь, что этот вопрос без контекста звучит очень... странно, да?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3835
+translate english about_olivia_3_7f469577:
+
+    # Max_02 "Догадываюсь. Ну так как?"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3836
+translate english about_olivia_3_6c31e1af:
+
+    # Lisa_01 "Ты был прав, эта информация оказалась не такой уж и бесполезной! Оливия была рада поболтать на эту тему и рассказала, что она из семьи натуристов..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3837
+translate english about_olivia_3_323b6e88:
+
+    # Max_09 "Это кто такие?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3838
+translate english about_olivia_3_4158502d:
+
+    # Lisa_02 "В общем, они сторонники всего натурального или как-то так. Я не поняла... Но главная особенность в том, что они дома все ходят голые, представляешь!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3839
+translate english about_olivia_3_8f05f23a:
+
+    # Max_07 "Обалдеть! А к ним можно в гости?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3840
+translate english about_olivia_3_1f949911:
+
+    # Lisa_03 "Очень смешно, Макс! Вот придёт к нам в гости и будешь её тут уговаривать раздеться..."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:3841
+translate english about_olivia_3_de635d4d:
+
+    # Max_08 "Да уж..."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:3842
+translate english about_olivia_3_656601bb:
+
+    # Lisa_01 "И по этой причине Оливия не носит нижнее бельё. Говорит, что с радостью разделась бы, если бы её за это не выгнали бы из школы..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3843
+translate english about_olivia_3_90c72700:
+
+    # Max_03 "А мне эта Оливия нравится всё больше и больше!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3844
+translate english about_olivia_3_a68680de:
+
+    # Lisa_09 "Ещё один адепт в её секте объявился! Все вы парни думаете одинаково и только об одном..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3845
+translate english about_olivia_3_80dfda46:
+
+    # Max_07 "Постой, так вы подружились или как?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3846
+translate english about_olivia_3_34b22a0e:
+
+    # Lisa_01 "Можно и так сказать... В общем, мы разговорились и она рассказала, что живёт тут недалеко, у них тоже большой дом и она больше всего любит воду и солнце..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3847
+translate english about_olivia_3_beb5640a:
+
+    # Max_08 "Видимо, бассейн у них тоже есть?"
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:3848
+translate english about_olivia_3_42500edd:
+
+    # Lisa_02 "Есть. И дом, как я поняла, у них очень шикарный. Ну, она не из бедной семьи, мягко говоря..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3849
+translate english about_olivia_3_59d62371:
+
+    # Max_09 "Значит, заманить её бассейном не выйдет..."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:3850
+translate english about_olivia_3_85a04777:
+
+    # Lisa_00 "Не совсем так. У них какая-то проблема с их бассейном и там или грибок завёлся или какие-то насекомые, я не поняла, но они уже давно не купаются там, боятся..."
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:3851
+translate english about_olivia_3_b4cc52d3:
+
+    # Max_07 "Так если они богатые, могут починить, почистить, убрать проблемы..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3852
+translate english about_olivia_3_f75860a7:
+
+    # Lisa_13 "Ага, только этим обычно её папа занимается, а сейчас он с ними не живёт... Так бассейн у них и пустует... Погоди, а зачем ты её сюда заманивать собрался?"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:3853
+translate english about_olivia_3_e095c9de:
+
+    # Max_02 "Одно дело в школе общаться и совсем другое, вместе отдыхать, загорать и плавать!"
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:3854
+translate english about_olivia_3_7fddae8d:
+
+    # Lisa_01 "Думаешь, мы так с ней быстрее станем лучшими подругами? Пожалуй... Но ты же это не поэтому предложил?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3855
+translate english about_olivia_3_6fa9b63e:
+
+    # Max_07 "А зачем ещё?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:3856
+translate english about_olivia_3_9f99955a:
+
+    # Lisa_09 "Думается мне, чтобы раздеть мою одноклассницу..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3857
+translate english about_olivia_3_621616af:
+
+    # Max_04 "Знаешь, одно другому не мешает. Да и кто я такой, чтобы запрещать ей раздеваться, если ей так это нравится!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3858
+translate english about_olivia_3_1f31ef8e:
+
+    # Lisa_02 "Какие вы мальчики озабоченные! Ну да ладно... Я позову её в гости, а ты смотри не спугни мою подружку своим... озабоченным дружком..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3872
+translate english about_olivia_4_c448fbc0:
+
+    # Lisa_01 "Да, Макс. Она хочет зайти к нам в среду после школы. Заодно и познакомитесь..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3874
+translate english about_olivia_4_4470ea5e:
+
+    # Lisa_01 "Да, Макс. Она зайдёт к нам завтра, после школы. Заодно и познакомитесь..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3876
+translate english about_olivia_4_a459378c:
+
+    # Max_04 "Жду не дождусь! Ты ей что-нибудь рассказывала обо мне?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:3877
+translate english about_olivia_4_4fc0fc30:
+
+    # Lisa_09 "Да, я её предупредила, что у меня есть озабоченный старший брат, который любит бессовестно подглядывать за всей моей семьёй с утра до ночи..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:3878
+translate english about_olivia_4_d1ba4cae:
+
+    # Max_10 "Серьёзно?!"
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:3879
+translate english about_olivia_4_b72aae7f:
+
+    # Lisa_02 "Нет, конечно! Мы же не хотим её спугнуть, верно? Так что, она знает, что у меня есть старший брат, ну и так, по мелочи..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:3880
+translate english about_olivia_4_a30b0cf3:
+
+    # Max_08 "Фух... Тогда ладно..."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:3881
+translate english about_olivia_4_4c7266a2:
+
+    # Lisa_10 "Макс, только постарайся сильно нам не мешать, ладно?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:3882
+translate english about_olivia_4_2ce73bef:
+
+    # Max_03 "Не волнуйся. Если я к вам и пристану, то только чтобы вас сплотить."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:3883
+translate english about_olivia_4_b0a16a19:
+
+    # Lisa_01 "Спасибо, надеюсь так и будет..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:3884
+translate english about_olivia_4_b9e478cb:
+
+    # Max_01 "Конечно."
+    Max_01 ""
+

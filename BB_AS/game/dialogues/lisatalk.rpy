@@ -1116,7 +1116,7 @@ label Lisa_HomeWork:
                 Lisa_09 "Чего ты хочешь, Макс?"
                 "Покажи грудь! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}" if lisa.flags.m_foot<3:
                     jump .show_breast
-        "А ножки тебе помассировать?" if all([len(online_cources)>1 and online_cources[1].cources[0].less, lisa.flags.m_foot>2, lisa.stat.sh_breast>=5]):
+        "А ножки тебе помассировать?" if all([lisa.flags.m_foot>2, lisa.stat.sh_breast>=5]):
             # если началась борьба за Лизу с Эриком, то переходим к новой схеме
             if ((lisa.dcv.battle.stage in [1, 4, 5] and flags.lisa_sexed >= 0)
                     or (lisa.dcv.battle.stage == 2 and lisa.dcv.intrusion.lost < 6)):
@@ -1165,9 +1165,9 @@ label Lisa_HomeWork:
             else:
                 $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
                 Lisa_05 "[succes!t]Ладно. Тебе повезло, что настроение у меня сейчас очень хорошее... Так что наслаждайся, извращенец..."
-                if all([len(online_cources)>1 and online_cources[1].cources[0].less, lisa.stat.sh_breast>2, alice.stat.footjob>=2, not lisa.flags.m_foot]):
+                if all([learned_foot_massage(), lisa.stat.sh_breast>2, alice.stat.footjob>=2, not lisa.flags.m_foot]):
                     jump .first_foot_mass
-                if len(online_cources)>1 and online_cources[1].cources[0].less and lisa.flags.m_foot>0:
+                if lisa.flags.m_foot>0:
                     jump .next_foot_mass
                 Lisa_01 "Ну все, полюбовался и хватит, а теперь сделай работу на отлично!"
             Max_05 "Вот теперь убедила!"
@@ -1335,7 +1335,7 @@ label Lisa_HomeWork:
             Max_02 "Так я же многозадачный!"
             "{i}закончить массаж{/i}":
                 pass
-            "Я и плечи помассировать могу, если хочешь? {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}" if len(online_cources)>1 and online_cources[1].cources[1].less and lisa.daily.massage>1:
+            "Я и плечи помассировать могу, если хочешь? {color=[_ch3.col]}(Убеждение. Шанс: [_ch3.vis]){/color}" if learned_hand_massage() and lisa.daily.massage>1:
                 jump .shoulders
         scene BG char Lisa lessons-help-00
         $ renpy.show("FG lessons-help-"+pose3_1)
@@ -1667,10 +1667,10 @@ label liza_hand_mass:
     menu:
         Max_03 "Хорошего понемногу, Лиза. Вот почти и всё."
         "{i}закончить массаж{/i}":
-            if _in_replay and not talk_var['kissingmassage']:
+            if _in_replay and not kissmas:
                 $ renpy.end_replay()
     if ((not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].stn>7, lisa.flags.kiss_lesson>3, not lisa.stat.kiss]))
-        or (_in_replay and talk_var['kissingmassage'])):
+        or (_in_replay and kissmas)):
         ###если уроков поцелуев в этот день не было (уже было 3 успешных урока)
         # первый поцелуй после массажа рук
         $ added_mem_var('kissing_massage')

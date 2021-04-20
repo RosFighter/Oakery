@@ -1048,7 +1048,6 @@ label lisa_horor_movie_r:
 
             # (получилось сдержаться)
             $ Skill('sex', 0.2)
-            $ added_mem_var('horror_kiss')
             if flags.cur_series < 2:
                 # если начали новый фильм
                 Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
@@ -1067,6 +1066,7 @@ label lisa_horor_movie_r:
             menu:
                 Lisa_05 "Чтобы со мной рядом кое-что шевелилось? Так я точно не усну. Мне нужно как-то храбрости набраться..."
                 "{i}поцеловать Лизу{/i}" if lisa.flags.kiss_lesson > 6:   #если открыты поцелуи с прикосновениями
+                    $ added_mem_var('horror_kiss')
                     #horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
                     if renpy.random.randint(1, 2) < 2:
                         scene BG char Lisa horror-myroom 02

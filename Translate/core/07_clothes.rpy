@@ -3,7 +3,7 @@
 translate english strings:
 
     # game/core/07_clothes.rpy:54
-    old "For yoga"
+    old "Для йоги"
     new "For yoga"
 
     # game/core/07_clothes.rpy:54
@@ -29,3 +29,4 @@ translate english strings:
     # game/core/07_clothes.rpy:128
     old "Влияние Макса недостаточно"
     new "Max's influence isn't high enough"
+

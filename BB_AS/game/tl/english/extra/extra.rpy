@@ -213,3 +213,11 @@ translate english strings:
     old "Кружевное боди для Алисы от Эрика"
     new "Lace bodysuit for Alice from Eric"
 
+# TODO: Translation updated at 2021-04-20 20:04
+
+translate english strings:
+
+    # game/extra/extra.rpy:56
+    old "Держи и не отпускай"
+    new ""
+
