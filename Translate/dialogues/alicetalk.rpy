@@ -9077,3 +9077,440 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:3817
     old "Могу сильнее, раз ты заскучала!"
     new ""
+
+# TODO: Translation updated at 2021-04-20 19:51
+
+# game/dialogues/alicetalk.rpy:2206
+translate english massage_sunscreen_spider_f5313802:
+
+    # Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!" nointeract
+    Alice_16 "" nointeract
+
+# game/dialogues/alicetalk.rpy:2230
+translate english massage_sunscreen_sit_and_wait_f7d7f0ae:
+
+    # Alice_13 "Ну, Макс... Может хватит уже так на меня реагировать?! Я же твоя сестра всё-таки!"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2231
+translate english massage_sunscreen_sit_and_wait_720cbf34:
+
+    # Max_02 "А ты ещё сильнее прижмись ко мне своими сиськами... Эффект будет ещё ощутимее!"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2232
+translate english massage_sunscreen_sit_and_wait_a74aa1e4:
+
+    # Alice_06 "Паука бы лучше отогнал!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2233
+translate english massage_sunscreen_sit_and_wait_1f30d302:
+
+    # Max_03 "Незачем, он и так уползает..."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2234
+translate english massage_sunscreen_sit_and_wait_fcf0a690:
+
+    # Alice_12 "Точно?!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2235
+translate english massage_sunscreen_sit_and_wait_9da1a297:
+
+    # Max_04 "Ага. В траву убежал."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:2239
+translate english massage_sunscreen_sit_and_wait_45030154:
+
+    # Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:2240
+translate english massage_sunscreen_sit_and_wait_63bd396f:
+
+    # Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2241
+translate english massage_sunscreen_sit_and_wait_54c7faac:
+
+    # Alice_05 "Тебе хватит. Не обольщайся..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2242
+translate english massage_sunscreen_sit_and_wait_de3d2863:
+
+    # Max_01 "Ага."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2246
+translate english massage_sunscreen_sit_and_wait_88d0ea09:
+
+    # Alice_15 "Ты совсем что ли извращенец? На родную сестру у него стоит!"
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:2247
+translate english massage_sunscreen_sit_and_wait_ff5172bb:
+
+    # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:2248
+translate english massage_sunscreen_sit_and_wait_a71b7a30:
+
+    # Alice_16 "Всё, не хочу об этом говорить... Давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:2249
+translate english massage_sunscreen_sit_and_wait_64bbd7a2:
+
+    # Max_09 "Да ухожу я, уши только мои в покое оставь!"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:2257
+translate english massage_sunscreen_sit_and_wait_f7d7f0ae_1:
+
+    # Alice_13 "Ну, Макс... Может хватит уже так на меня реагировать?! Я же твоя сестра всё-таки!"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2258
+translate english massage_sunscreen_sit_and_wait_720cbf34_1:
+
+    # Max_02 "А ты ещё сильнее прижмись ко мне своими сиськами... Эффект будет ещё ощутимее!"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2259
+translate english massage_sunscreen_sit_and_wait_2edc53d2:
+
+    # Alice_06 "Куда уж ещё ощутимее! Я и так почти что на твоём члене сижу..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2260
+translate english massage_sunscreen_sit_and_wait_4a9e590c:
+
+    # Max_03 "Зато, паук в совершенно противоположную сторону от нас уползает!"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2261
+translate english massage_sunscreen_sit_and_wait_fcf0a690_1:
+
+    # Alice_12 "Точно?!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2262
+translate english massage_sunscreen_sit_and_wait_9da1a297_1:
+
+    # Max_04 "Ага. В траву убежал."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:2266
+translate english massage_sunscreen_sit_and_wait_975489a5:
+
+    # Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2267
+translate english massage_sunscreen_sit_and_wait_6bb8e8fa:
+
+    # Max_03 "Не слишком-то ты раскаиваешься, а?"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2268
+translate english massage_sunscreen_sit_and_wait_429171c6:
+
+    # Alice_02 "Будем считать, что твой стояк меня сегодня спас! Паук сразу убежал... И я теперь чувствую себя, какой-то защищённой, что ли... Кажется, уже и я какой-то извращенкой становлюсь!"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:2269
+translate english massage_sunscreen_sit_and_wait_d2128d74:
+
+    # Max_04 "Это у нас семейное, по-видимому."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:2270
+translate english massage_sunscreen_sit_and_wait_25ec43fd:
+
+    # Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:2271
+translate english massage_sunscreen_sit_and_wait_0f9075aa:
+
+    # Max_02 "Да не так-то это просто сделать..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2272
+translate english massage_sunscreen_sit_and_wait_87cca898:
+
+    # Alice_05 "А ты постарайся."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2273
+translate english massage_sunscreen_sit_and_wait_de3d2863_1:
+
+    # Max_01 "Ага."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2277
+translate english massage_sunscreen_sit_and_wait_3b66c1cd:
+
+    # Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2278
+translate english massage_sunscreen_sit_and_wait_0aa348ea:
+
+    # Max_01 "Да не так-то это просто, прикрыть его."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2279
+translate english massage_sunscreen_sit_and_wait_6b77c813:
+
+    # Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2280
+translate english massage_sunscreen_sit_and_wait_5c995a4f:
+
+    # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2281
+translate english massage_sunscreen_sit_and_wait_e0dd7b8f:
+
+    # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2282
+translate english massage_sunscreen_sit_and_wait_4970a131:
+
+    # Max_02 "Хорошо. Не скучай."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2289
+translate english massage_sunscreen_hide_behind_4afa2c53:
+
+    # Alice_06 "Нет, я боюсь..."
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2290
+translate english massage_sunscreen_hide_behind_15ab4ca7:
+
+    # Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:2294
+translate english massage_sunscreen_hide_behind_9657c7e4:
+
+    # Alice_13 "Ой, нет! Не надо к моей попке! Что ему вообще надо тут?! Почему ему в траве не сидится или где он там живёт..."
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2295
+translate english massage_sunscreen_hide_behind_348c3ca5:
+
+    # Max_07 "Ну... Не то, чтобы меня что-то не устраивало сейчас, но ты держишься за меня!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2299
+translate english massage_sunscreen_hide_behind_1aef0366:
+
+    # Alice_12 "Конечно держусь! Мне же страшно, Макс! Ты ведь знаешь, как я их боюсь..."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2300
+translate english massage_sunscreen_hide_behind_92d357db:
+
+    # Max_03 "Нет, я в смысле, ты держишься за мой член! Это, конечно, весьма приятно... Но ты же на меня, как всегда, разорёшься потом!"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2303
+translate english massage_sunscreen_hide_behind_2ead0b6d:
+
+    # Alice_15 "Ой! Я это не специально! Видишь, насколько я этих пауков не переношу? Даже не поняла, за что схватилась..."
+    Alice_15 ""
+
+# game/dialogues/alicetalk.rpy:2304
+translate english massage_sunscreen_hide_behind_955fd37c:
+
+    # Max_02 "Да ладно, схватилась и схватилась. Уж это точно не страшно!"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2305
+translate english massage_sunscreen_hide_behind_b7b059d0:
+
+    # Alice_12 "Он уползает, кстати..."
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:2306
+translate english massage_sunscreen_hide_behind_2cb42984:
+
+    # Max_05 "Точно! Наверно, испугался моей торчащей мощи!"
+    Max_05 ""
+
+# game/dialogues/alicetalk.rpy:2307
+translate english massage_sunscreen_hide_behind_b238bcf5:
+
+    # Alice_07 "У тебя что, стоит до сих пор?!"
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:2308
+translate english massage_sunscreen_hide_behind_7976c130:
+
+    # Max_04 "Ну... Ты так классно ко мне прижимаешься... Мне приятно!"
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:2312
+translate english massage_sunscreen_hide_behind_975489a5:
+
+    # Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2313
+translate english massage_sunscreen_hide_behind_6bb8e8fa:
+
+    # Max_03 "Не слишком-то ты раскаиваешься, а?"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2314
+translate english massage_sunscreen_hide_behind_429171c6:
+
+    # Alice_02 "Будем считать, что твой стояк меня сегодня спас! Паук сразу убежал... И я теперь чувствую себя, какой-то защищённой, что ли... Кажется, уже и я какой-то извращенкой становлюсь!"
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:2315
+translate english massage_sunscreen_hide_behind_d2128d74:
+
+    # Max_04 "Это у нас семейное, по-видимому."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:2316
+translate english massage_sunscreen_hide_behind_25ec43fd:
+
+    # Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:2317
+translate english massage_sunscreen_hide_behind_0f9075aa:
+
+    # Max_02 "Да не так-то это просто сделать..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2318
+translate english massage_sunscreen_hide_behind_87cca898:
+
+    # Alice_05 "А ты постарайся."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:2319
+translate english massage_sunscreen_hide_behind_de3d2863:
+
+    # Max_01 "Ага."
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:2329
+translate english massage_sunscreen_squeeze_chest_50d218c8:
+
+    # Alice_14 "Ты офигел что ли, Макс! Ну-ка руки быстро убери, пока не получил..."
+    Alice_14 ""
+
+# game/dialogues/alicetalk.rpy:2330
+translate english massage_sunscreen_squeeze_chest_d339927c:
+
+    # Max_07 "Шуму-то сколько... У тебя сиськи голые, вот я их и прикрыл! А то мало ли кто увидит..."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2334
+translate english massage_sunscreen_squeeze_chest_f1d7395d:
+
+    # Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо..." nointeract
+    Alice_15 "" nointeract
+
+# game/dialogues/alicetalk.rpy:2346
+translate english massage_sunscreen_squeeze_chest_1160d297:
+
+    # Max_02 "Всё, убрал. Правда, если ты продолжишь так крепко прижиматься ими к моему лицу, то есть риск..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:2347
+translate english massage_sunscreen_squeeze_chest_6804276a:
+
+    # Alice_06 "Макс... Я что, практически на твоём члене сейчас сижу?!"
+    Alice_06 ""
+
+# game/dialogues/alicetalk.rpy:2348
+translate english massage_sunscreen_squeeze_chest_c1a03ce0:
+
+    # Max_03 "А сама как думаешь?"
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:2362
+translate english massage_sunscreen_hands_off_fda55c91:
+
+    # Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
+    Max_12 ""
+
+# game/dialogues/alicetalk.rpy:2363
+translate english massage_sunscreen_hands_off_6af5aed9:
+
+    # Alice_16 "А я ведь тебя предупреждала! Наверно, раз до тебя не дошло, нужно крутануть ещё сильнее..."
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:2364
+translate english massage_sunscreen_hands_off_244d58a6:
+
+    # Max_14 "Ой! Я понял... Больше не буду! Отпусти уже..."
+    Max_14 ""
+
+# game/dialogues/alicetalk.rpy:2365
+translate english massage_sunscreen_hands_off_f8029f81:
+
+    # Alice_17 "Всё, давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
+    Alice_17 ""
+
+# game/dialogues/alicetalk.rpy:2371
+translate english massage_sunscreen_hands_off_fda55c91_1:
+
+    # Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
+    Max_12 ""
+
+# game/dialogues/alicetalk.rpy:2372
+translate english massage_sunscreen_hands_off_b767f1de:
+
+    # Alice_00 "Ах, у тебя ещё и стоит на это всё! Совсем что ли извращенец? Я же твоя сестра!"
+    Alice_00 ""
+
+# game/dialogues/alicetalk.rpy:2373
+translate english massage_sunscreen_hands_off_5c995a4f:
+
+    # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:2374
+translate english massage_sunscreen_hands_off_e0dd7b8f:
+
+    # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
+    Alice_13 ""
+
+# game/dialogues/alicetalk.rpy:2375
+translate english massage_sunscreen_hands_off_64bbd7a2:
+
+    # Max_09 "Да ухожу я, уши только мои в покое оставь!"
+    Max_09 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:2206
+    old "Давай лучше ещё так посидим, подождём. Вон он, уползает..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2206
+    old "Спрячься за меня, хотя бы..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:2206
+    old "{i}потискать Алису за грудь{/i}"
+    new ""
+
