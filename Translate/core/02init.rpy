@@ -533,21 +533,20 @@ translate english strings:
 
     # game/core/02init.rpy:116
     old "Насчёт Алекса..."
-    new ""
+    new "About Alex..."
 
     # game/core/02init.rpy:116
     old "Есть успехи с Оливией?"
-    new ""
+    new "Any luck with Olivia?"
 
     # game/core/02init.rpy:116
     old "Что-нибудь узнала про Оливию?"
-    new ""
+    new "Did you find out anything about Olivia?"
 
     # game/core/02init.rpy:116
     old "Ну так, что там с трусиками Оливии?"
-    new ""
+    new "So, what about Olivia's panties?"
 
     # game/core/02init.rpy:116
     old "Ты позвала Оливию к нам?"
-    new ""
-
+    new "Did you ask Olivia to join us?"
