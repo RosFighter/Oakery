@@ -8881,7 +8881,7 @@ translate english alice_private_punish_r_smoke_5f4eb3c1:
 # game/dialogues/alicetalk.rpy:3786
 translate english alice_private_punish_r_smoke_pun_9bb538a8:
 
-    # Alice_03 "That's it, I'm ready. Let's just get this over with..."
+    # Alice_03 "Всё, я готова. Давай побыстрее с этим покончим..."
     Alice_03 "That's it, I'm ready. Let's just get this over with..."
 
 # game/dialogues/alicetalk.rpy:3795
