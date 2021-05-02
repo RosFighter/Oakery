@@ -21,3 +21,4 @@ translate english strings:
     # game/core/characters.rpy:470
     old "Оливия"
     new "Olivia"
+

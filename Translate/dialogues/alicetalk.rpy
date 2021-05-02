@@ -9513,3 +9513,4 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:2206
     old "{i}потискать Алису за грудь{/i}"
     new "{i}Squeeze Alice's breasts{/i}"
+

@@ -415,14 +415,6 @@ translate english strings:
     new "Advanced micro camera for concealed surveillance. It has a radio-module so it can transfer encrypted digital video streams."
 
     # game/core/03variables.rpy:272
-    old "ФИЛЬМ \"ШКОЛЬНИЦЫ\""
-    new "PORN MOVIE \"SCHOOLGIRL\""
-
-    # game/core/03variables.rpy:272
-    old "Строгая учительница пытается наказать непослушных школьниц..."
-    new "Strict teacher is trying to punish naughty schoolgirls..."
-
-    # game/core/03variables.rpy:272
     old "ШЕЛКОВЫЙ ХАЛАТ"
     new "SILK BATHROBE"
 
@@ -1383,4 +1375,20 @@ translate english strings:
     # game/core/03variables.rpy:399
     old "Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше..."
     new "It really is a fascinating sight! Not many people have ever managed to undress and spank their big sister... Even though she's capricious and threatening, my persistence seems to have taken over. It's a pleasure to admire her naked and firm ass, as well as to slap her. Now I know how not to overdo it, so I can enjoy this private punishment as long as possible..."
+
+# TODO: Translation updated at 2021-05-02 21:51
+
+translate english strings:
+
+    # game/core/03variables.rpy:295
+    old "Оливии"
+    new ""
+
+    # game/core/03variables.rpy:295
+    old "Оливию"
+    new ""
+
+    # game/core/03variables.rpy:295
+    old "Оливией"
+    new ""
 

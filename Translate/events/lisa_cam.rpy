@@ -145,9 +145,9 @@ translate english cam0_lisa_bath_b32c78c2:
     Max_01 "The tubs almost full... But my attention is somewhere else..."
 
 # game/events/lisa_cam.rpy:256
-translate english cam0_lisa_bath_e5e29c98:
+translate english cam0_lisa_bath_4e37cfa9:
 
-    # Max_04 "Эх, Лиза... Не вытерайся! Ты мокренькая тоже обалденная..."
+    # Max_04 "Эх, Лиза... Не вытирайся! Ты мокренькая тоже обалденная..."
     Max_04 "Lisa's body looks amazing when it's wet!"
 
 # game/events/lisa_cam.rpy:262
