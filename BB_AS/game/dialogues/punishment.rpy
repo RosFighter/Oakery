@@ -8,14 +8,14 @@ label StartPunishment:
         if lisa.sorry.owe and lisa.sorry.left == 0: # если Макс обещал Лизе подарок, но не вручил его вовремя
             $ lisa.sorry.owe = False
             $ punreason[0] = 1
-            $ poss['SoC'].OpenStage(1)
+            $ poss['SoC'].open(1)
         elif all([flags.film_punish, lisa.dcv.special.enabled, lisa.dcv.special.done]):
             $ punreason[0] = 1
 
         if alice.sorry.owe and alice.sorry.left == 0: # если Макс обещал Алисе подарок, но не вручил его вовремя
             $ alice.sorry.owe = False
             $ punreason[1] = 1
-            $ poss['risk'].OpenStage(1)
+            $ poss['risk'].open(1)
     # Макс теоретически может получить наказание как утром, так и вечером
     if punreason[2] or punreason[3] and tm < "18:00":  # утром наказание за подглядывание за Анной или Анной с Эриком
         $ pun_list.append("mgg")

@@ -343,7 +343,7 @@ label breakfast_2:
     scene BG punish-morning 01
     show Lisa punish-morning 01
     $ renpy.show("Ann punish-morning 01"+ann.dress)
-    $ poss['sg'].OpenStage(0)
+    $ poss['sg'].open(0)
     menu:
         Lisa_09 "Ну мам... Я же не специально. Я обещаю, что всё выучу!"
         "{i}Наблюдать{/i}":
@@ -582,7 +582,7 @@ label breakfast_4:
     Ann_05 "Вот и отлично! Хватит уже про Эрика, давайте обсудим что планируем купить.."
     if poss['Swimsuit'].stn < 0:
         Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
-        $ poss['Swimsuit'].OpenStage(1)
+        $ poss['Swimsuit'].open(1)
     else:
         Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
     Max_03 "Конечно, как тут не понять..."
@@ -688,7 +688,7 @@ label breakfast_7:
     Max_00 "Посмотрим..."
     Ann_05 "В общем, я вам рассказала, а дальше вы думайте. Время ещё есть. Просто ведите себя прилично и вас это не коснётся... Думаю, завтрак закончен. Всем больше спасибо."
     Max_00 "Ага, спасибо за завтрак..."
-    $ poss['alpha'].SetStage(1)
+    $ poss['alpha'].open(1)
     $ dcv.new_pun.set_lost(7)
     $ dcv.new_pun.stage = 1
     jump after_breakfast

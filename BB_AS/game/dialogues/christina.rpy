@@ -27,7 +27,7 @@ label christina_first_talk(dress):
         "Хорошего тебе дня!":
             Christine_03 "Спасибо, Макс. Была рада познакомиться!"
             Max_01 "Я тоже, Кристина! Пока."
-            $ poss['Christine'].OpenStage(0)
+            $ poss['Christine'].open(0)
 
         "А чем вечером будешь заниматься? Давай погуляем!?":
             Christine_04 "Ничего себе! Десятилетки ко мне ещё не подкатывали..."
@@ -43,6 +43,6 @@ label christina_first_talk(dress):
             Max_00 "Ага. Ладно... Тогда, хорошего тебе дня."
             Christine_03 "Спасибо, Макс. Была рада познакомиться!"
             Max_01 "Я тоже, Кристина! Пока."
-            $ poss['Christine'].OpenStage(1)
+            $ poss['Christine'].open(1)
 
     return

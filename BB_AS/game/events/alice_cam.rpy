@@ -760,7 +760,7 @@ label cam0_blog_with_Eric:
         $ alice.gifts.append('sexbody2')
         $ setting_clothes_by_conditions()
         $ infl[alice].add_e(40)
-        $ poss['blog'].OpenStage(16)
+        $ poss['blog'].open(16)
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
     else:
@@ -781,7 +781,7 @@ label cam0_blog_with_Eric:
 
         Max_08 "{i}( Эрик сегодня в комнате Алисы. Похоже, пытается помогать с блогом... Но в действительности же, чтобы поглазеть на Алису в белье, по себе знаю... ){/i}"
 
-        if not poss['blog'].stages[14].used:
-            $ poss['blog'].OpenStage(13)
+        if not poss['blog'].used(14):
+            $ poss['blog'].open(13)
 
         return

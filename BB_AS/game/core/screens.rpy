@@ -1072,11 +1072,11 @@ screen room_navigation():
         if len(current_room.cams) > 0:
             text _("Зрителей: [public]") xalign(1.0) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
 
-    $ kol = 0
-
-    for ps in poss:
-        if poss[ps].stn >= 0: # количество открытых возможностей
-            $ kol += 1
+    # $ kol = 0
+    # for ps in poss:
+    #     if poss[ps].stn >= 0: # количество открытых возможностей
+    #         $ kol += 1
+    $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict]) # количество открытых возможностей
 
     hbox:  # верхнее меню
         align(0.01, 0.01)
@@ -1196,22 +1196,16 @@ screen menu_opportunity():
     tag menu
     style_prefix 'opportunity'
 
-    $ kol = 0
-    $ all = len(poss) # Общее количество введенных в игру 'возможностей'
+    $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict])# количество открытых возможностей
+    $ all = len(poss_dict) # Общее количество введенных в игру 'возможностей'
     $ lst_stage = []
 
-    for ps in poss:
-        if poss[ps].stn >= 0: # количество открытых возможностей
-            $ kol += 1
-            if CurPoss == '':
-                $ CurPoss = ps
+    if not CurPoss:
+        default CurPoss = 'cams'
 
     if CurPoss != '':
-        default view_stage = poss[CurPoss].stn
-        for i, st in enumerate(poss[CurPoss].stages):
-            if st.used:
-                $ lst_stage.append(i)
-
+        $ lst_stage = [i for i, st in enumerate(poss[CurPoss].stages) if st]
+        default view_stage = max(lst_stage)
 
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
@@ -1229,30 +1223,37 @@ screen menu_opportunity():
             hbox:
                 viewport mousewheel 'change' draggable True id 'vp1':
                     vbox spacing 5:
-                        for ps in poss:
-                            if poss[ps].stn >= 0:
+                        for ps in poss_dict:
+                            if sum(poss[ps].stages):
                                 if CurPoss == '':
                                     $ CurPoss = ps
-                                    $ view_stage = poss[ps].stn
-                                button background None action [SetVariable('CurPoss', ps), SetScreenVariable('view_stage', poss[ps].stn)] xsize 390:
+                                    $ view_stage = max([i for i, st in enumerate(poss[CurPoss].stages) if st])
+                                button background None action [SetVariable('CurPoss', ps), SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]))] xsize 390:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                                    textbutton poss[ps].name action [SetVariable('CurPoss', ps), SetScreenVariable('view_stage', poss[ps].stn)] selected CurPoss == ps
+                                    textbutton poss_dict[ps][0] action [SetVariable('CurPoss', ps), SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]))] selected CurPoss == ps
                                     foreground 'interface marker'
                 vbar value YScrollValue('vp1') style 'poss_vscroll'
         if CurPoss != '':
             frame area (0, 30, 1190, 850) background None:
                 vbox spacing 20:
                     frame xsize 800 ysize 400 pos (195, 0) background None:
-                        if poss[CurPoss].stages[view_stage].image != '':
-                            add poss[CurPoss].stages[view_stage].image
+                        if poss_dict[CurPoss][1][view_stage].img != '':
+                            add 'interface poss '+poss_dict[CurPoss][1][view_stage].img
                     frame xsize 1180 xalign 0.5 background None:
                         text poss[CurPoss].name size 30 font 'hermes.ttf' xalign 0.5
                     frame area (0, 0, 1190, 400) background None:
                         hbox:
                             viewport mousewheel 'change' draggable True id 'vp2':
                                 vbox spacing 30:
-                                    text poss[CurPoss].stages[view_stage].desc size 24  color gui.accent_color
-                                    text poss[CurPoss].stages[view_stage].ps size 28
+                                    text poss_dict[CurPoss][1][view_stage].desc size 24  color gui.accent_color
+                                    text poss_dict[CurPoss][1][view_stage].ps size 28
+                                    if view_stage in poss_dict[CurPoss][2]:     # временная концовка
+                                        text _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}") size 24 color orange
+                                    elif view_stage in poss_dict[CurPoss][3]:   # хорошая концовка
+                                        text "{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}" size 24 color lime
+                                    elif view_stage in poss_dict[CurPoss][4]:   # плохая концовка
+                                        text "{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}" size 24 color red
+
                             vbar value YScrollValue('vp2') style 'poss_vscroll'
     if len(lst_stage) > 1:
         imagebutton pos (690, 360) auto 'interface prev %s':

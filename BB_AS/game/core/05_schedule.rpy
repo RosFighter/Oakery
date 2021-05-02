@@ -34,7 +34,7 @@ label set_alice_schedule:
         Schedule((1, 2, 3, 4, 5, 6, 0), '22:0', '23:59', 'tv', "смотрит ТВ", 'house', 4, 'alice_tv', talklabel='alice_tv_closer'),
         )
 
-    if day > 1 and not poss['smoke'].Used(1):
+    if day > 1 and not poss['smoke'].used(1):
         # Алиса может курить
         call set_alice_can_smoke
 
@@ -252,7 +252,13 @@ label set_lisa_schedule:
     $ lisa.plan = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
 
     $ lisa.add_schedule(
-        Schedule((0, 1, 2, 3, 4, 5, 6), '0:0', '5:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night', enabletalk=False, glow=102),
+        # если пришла Оливия, смотрим ТВ
+        Schedule((6,), '0:00', '1:59', 'tv2', "смотрит ТВ с Оливией", 'house', 4, 'olivia_lisa_tv',  variable="olivia_nightvisits()", enabletalk=False, glow=140),
+        Schedule((6,), '2:00', '5:59', 'sleep2', "спит с Оливией", 'house', 0, 'olivia_lisa_sleep',  variable="olivia_nightvisits()", enabletalk=False, glow=130),
+
+        Schedule((6,), '00:0', '5:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night',  variable="not olivia_nightvisits()", enabletalk=False, glow=102),
+        Schedule((0, 1, 2, 3, 4, 5), '0:0', '5:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night', enabletalk=False, glow=102),
+        # конец блока
         Schedule((0, 1, 2, 3, 4, 5, 6), '6:0', '6:59', 'sleep', "спит (утро)", 'house', 0, 'lisa_sleep_morning', enabletalk=False, glow=102),
         Schedule((0, 3, 6), '7:00', '7:59', 'shower', "принимает душ", 'house', 3, 'lisa_shower', enabletalk=False, glow=120),
         # если приехала Кира, в душе не одна
@@ -274,11 +280,17 @@ label set_lisa_schedule:
         Schedule((6, ), '14:0', '14:59', 'read', "читает", 'house', 0, 'lisa_read', glow=105),
         Schedule((0, 6), '15:0', '15:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', glow=105),
         # доп.курсы Лизы по будния (жёсткие меры Эрика)
-        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage not in [3, 6]", glow=105),
+        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=105),
+        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'sun', "загорает с Оливией", 'house', 6, 'olivia_lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and olivia_visits()", glow=130),
         Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'on_courses', "на курсах", variable="lisa.dcv.battle.stage in [3, 6]"),
-        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage in [3, 6]", glow=105),
-        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage in [3, 6]", glow=110),
-        Schedule((1, 2, 3, 4, 5), '17:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6]", glow=110),
+
+        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=110),
+        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает с Оливией", 'house', 6, 'olivia_lisa_sun', variable="olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage in [3, 6] and not olivia_visits()", glow=105),
+
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=110),
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage in [3, 6] and not olivia_visits()", glow=110),
         # конец блока
         Schedule((6, 0), '16:0', '16:59', 'sun', "загорает", 'house', 6, 'lisa_sun', glow=110),
         Schedule((0, 6), '17:0', '18:59', 'read', "читает", 'house', 0, 'lisa_read', glow=105),
@@ -309,16 +321,18 @@ label set_olivia_shedule:
     $ olivia.plan = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]
 
     $ olivia.add_schedule(
+        Schedule((6,), '0:00', '1:59', 'tv2', "смотрит ТВ с Оливией", 'house', 4, 'olivia_lisa_tv',  variable="olivia_nightvisits()", enabletalk=False, glow=140),
+        Schedule((6,), '2:00', '5:59', 'sleep2', "спит с Оливией", 'house', 0, 'olivia_lisa_sleep',  variable="olivia_nightvisits()", enabletalk=False, glow=130),
+        Schedule((6,), '00:0', '5:59', 'sleep', "спит y себя дома",  variable="not olivia_nightvisits()"),
+
         Schedule((1, 2, 3, 4, 5), '11:0', '15:59', 'in_shcool', "в школе"),
-        # доп.курсы Лизы по будния (жёсткие меры Эрика)
-        Schedule((3, ), '16:0', '16:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage not in [3, 6]", glow=105),
 
-        Schedule((3, ), '16:0', '16:59', 'on_courses', "на курсах", variable="lisa.dcv.battle.stage in [3, 6]"),
-        Schedule((3, ), '17:0', '17:59', 'swim', _("в бассейне"), 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage in [3, 6]", glow=105),
-        Schedule((3, ), '18:0', '18:59', 'sun', _("загорает"), 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage in [3, 6]", glow=110),
-
-        Schedule((3, ), '17:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6]", glow=110),
-        # конец блока
+        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'sun', "загорает с Лизой", 'house', 6, 'olivia_lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'at_home', "у себя дома", variable="lisa.dcv.battle.stage in [3, 6] or not olivia_visits()"),
+        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает с Лизой", 'house', 6, 'olivia_lisa_sun', variable="olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
         )
 
     return

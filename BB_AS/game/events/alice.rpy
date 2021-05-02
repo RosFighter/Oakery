@@ -373,7 +373,7 @@ label alice_shower:
         Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
         Max_02 "...подождать."
         if not _in_replay:
-            $ poss['spider'].OpenStage(3)
+            $ poss['spider'].open(3)
         scene BG char Alice spider-bathroom-00
         $ renpy.show('Alice spider-shower 01'+renpy.random.choice(['a','b','c']))
         Alice_06 "Боже мой, какой кошмар... И что мне теперь с этим пауком делать... Ну почему эти твари лезут именно ко мне? Может быть, он уползёт..."
@@ -896,7 +896,7 @@ label alice_dressed_club:
                         Alice_07 "Вот это да! Ну, спасибо тогда... А теперь вали. Я ещё не закончила..."
                 $ give_choco()
                 jump .end
-            # "{i}дать две конфеты {/i} ## убеждение ##" if kol_choco > 1 and poss['nightclub'].stages[7].used:
+            # "{i}дать две конфеты {/i} ## убеждение ##" if kol_choco > 1 and poss['nightclub'].used(7):
             #     $ alice.daily.drink = 2
     label .end:
         Max_04 "Ага..."
@@ -1470,7 +1470,7 @@ label alice_after_club:
         $ renpy.end_replay()
         ### здесь ставим флаг разговора в ванной, продвижение возможности тусовщица
         $ spent_time += 10
-        $ poss['nightclub'].SetStage(7)
+        $ poss['nightclub'].open(7)
         if alice.flags.incident < 1:
             $ alice.flags.incident = 1
         jump .end
@@ -2239,7 +2239,7 @@ label alice_body_photoset1:
         Max_09 "Конечно. Спасибо, Макс за фотосессию... Ой, да не за что, Алиса..."
         $ renpy.end_replay()
         $ SetCamsGrow(house[1], 200)
-        $ poss['blog'].OpenStage(7)
+        $ poss['blog'].open(7)
         $ spent_time += 20
         jump .end
 
@@ -2295,7 +2295,7 @@ label alice_body_photoset1:
     $ added_mem_var('alice_photoset1')
     $ SetCamsGrow(house[1], 250)
     $ spent_time += 40
-    $ poss['blog'].OpenStage(8)
+    $ poss['blog'].open(8)
 
     label .end:
         $ items['sexbody1'].give()
@@ -2628,7 +2628,7 @@ label blog_with_Eric:
                         $ alice.gifts.append('sexbody2')
                         $ setting_clothes_by_conditions()
                         $ infl[alice].add_e(40)
-                        $ poss['blog'].OpenStage(17)
+                        $ poss['blog'].open(17)
 
             else:
                 #blog-desk-01 + alice-02 + eric-01 + max-03
@@ -2644,15 +2644,15 @@ label blog_with_Eric:
                     menu:
                         Max_09 "{i}( Подождите-ка, они о покупке белья разговаривают... И без меня! Нужно будет поскорее узнать у Алисы, что это ей там Эрик собрался покупать... ){/i}"
                         "{i}уйти{/i}":
-                            $ poss['blog'].OpenStage(14)
+                            $ poss['blog'].open(14)
                             $ alice.dcv.intrusion.stage = 1
                 else:
                     menu:
                         Max_07 "{i}( Эрик решил поумничать перед Алисой знаниями в потребительстве и рекламе... Ну да, а тем временем глазеет на её прелести, еле прикрытые бельём. Делать мне здесь пока нечего... ){/i}"
                         "{i}уйти{/i}":
-                            if not poss['blog'].stages[14].used:
-                                $ poss['blog'].OpenStage(13)
+                            if not poss['blog'].used(14):
+                                $ poss['blog'].open(13)
         "{i}уйти{/i}":
-            if not poss['blog'].stages[14].used:
-                $ poss['blog'].OpenStage(13)
+            if not poss['blog'].used(14):
+                $ poss['blog'].open(13)
     jump Waiting

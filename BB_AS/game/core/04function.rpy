@@ -184,7 +184,7 @@ init python:
         talkslist = []
 
         for i in talks:
-            if len(current_room.cur_char) == 1:
+            if len(current_room.cur_char) == 1 and type(talks[i].char)==str:
                 # один персонаж
                 if talks[i].char == current_room.cur_char[0]:
                     try:
@@ -198,7 +198,7 @@ init python:
 
                     if rez:
                         talkslist.append(i)
-            else:
+            elif type(talks[i].char)==list:
                 # несколько персонажей
                 if sorted(current_room.cur_char) == sorted(talks[i].char):
                     try:
@@ -690,6 +690,9 @@ init python:
                 dress = lisa.clothes.sleep.GetCur().suf
                 inf   = lisa.clothes.sleep.GetCur().info
                 clot  = 'sleep'
+            elif name in ['sleep2', 'tv2']:
+                dress = lisa.clothes.sleep.GetCur().suf
+                inf   = lisa.clothes.sleep.GetCur().info
             elif name in ['read', 'breakfast', 'dinner', 'dishes', 'phone']:
                 dress = lisa.clothes.casual.GetCur().suf
                 inf   = lisa.clothes.casual.GetCur().info
@@ -886,7 +889,11 @@ init python:
             elif name == 'night_swim':
                 inf = '00a'
 
-
+        elif char=='olivia':
+            if olivia.dcv.other.stage:
+                dress = 'b'
+            else:
+                dress = 'a'
 
         # print("%s %s clot - %s, dress - %s ( %s )"%(char, name, clot, dress, inf))
         return dress, inf, clot
@@ -1202,35 +1209,6 @@ init python:
             return False
 
 
-    def check_is_home(char, loc='house'):  # определяет (по расписанию) находится ли персонаж дома в данный момент
-        if char not in chars:
-            return False
-
-        return chars[char].get_plan().loc == loc
-
-
-    def check_only_home(char, loc='house'):  # проверяет, что кроме этого персонажа и Макса дома больше никого нет
-        rez = True
-        for ch in chars:
-            if ch == char:
-                continue
-            char_loc = chars[ch].get_plan().loc
-            if loc == char_loc:
-                rez = False
-                break
-        return rez
-
-
-    def check_is_room(char, room=None): # проверяет по расписанию, находится ли персонаж в текущей комнате
-        if _in_replay:
-            return True
-        plan_char = chars[char].get_plan()
-        if room is None:
-            return eval(plan_char.loc+'['+str(plan_char.room)+']')==current_room
-        else:
-            return eval(plan_char.loc+'['+str(plan_char.room)+']')==room
-
-
     def add_lim(var, a, limit):
         if var.find('.')>0:
             v1, arg = var.split('.')
@@ -1245,7 +1223,7 @@ init python:
                     globals()[var] = limit
 
 
-    def exist_btn_image():
+    def exist_btn_image():      # проверяет есть ли хобращения для кнопки-персонажа
         if persone_button1:
             return any([
                 renpy.loadable(persone_button1.replace(' ', '/')+'.webp'),
@@ -1255,7 +1233,7 @@ init python:
             return False
 
 
-    def give_choco():
+    def give_choco():       # даём конфетку
         global kol_choco, items
         if _in_replay:
             return
@@ -1418,27 +1396,6 @@ init python:
         renpy.music.play("audio/"+m_name+'.ogg', fadeout=0.5, fadein=1.0, if_changed=True)
 
 
-    def Eric_at_dinner():
-        rez = False
-        if any([day==4, day==11]):
-            rez = True
-        elif all([GetWeekday(day)==6, day>=11, flags.dinner==6]):
-            rez = True
-        elif all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)]):
-            rez = True
-        elif all([GetWeekday(day)==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done]):
-            rez = True
-        elif all([GetWeekday(day)==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)]):
-            rez = True
-        elif all([GetWeekday(day)==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done]):
-            rez = True
-        elif all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7]):
-            rez = True
-
-
-        return rez
-
-
     def set_extra_album():
         if 'photo_album' in globals():
             for id_alb, desc in photo_album:
@@ -1450,7 +1407,3 @@ init python:
                     elif cur_album is None:
                         cur_album = id_alb
                         break
-
-
-    def list_in_list(sub_lst, lst):
-        return all(x in lst for x in sub_lst)

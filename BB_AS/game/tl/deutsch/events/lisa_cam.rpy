@@ -145,9 +145,9 @@ translate deutsch cam0_lisa_bath_b32c78c2:
     Max_01 ""
 
 # game/events/lisa_cam.rpy:256
-translate deutsch cam0_lisa_bath_e5e29c98:
+translate deutsch cam0_lisa_bath_4e37cfa9:
 
-    # Max_04 "Эх, Лиза... Не вытерайся! Ты мокренькая тоже обалденная..."
+    # Max_04 "Эх, Лиза... Не вытирайся! Ты мокренькая тоже обалденная..."
     Max_04 ""
 
 # game/events/lisa_cam.rpy:262

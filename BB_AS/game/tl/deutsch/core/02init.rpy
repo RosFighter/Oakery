@@ -530,3 +530,31 @@ translate deutsch strings:
     old "Ты позвала Оливию к нам?"
     new ""
 
+# TODO: Translation updated at 2021-05-02 21:54
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:23
+    old "{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Ну как, получилось рассказать всё Оливии?"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Учтите, я испытываю... некоторый подъём!"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Пошепчемся немного о моей сестрёнке?"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Что новенького, Оливия?"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Рад тебя видеть, Оливия!"
+    new ""
+

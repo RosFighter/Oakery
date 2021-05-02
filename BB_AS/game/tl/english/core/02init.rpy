@@ -533,21 +533,49 @@ translate english strings:
 
     # game/core/02init.rpy:116
     old "Насчёт Алекса..."
-    new ""
+    new "About Alex..."
 
     # game/core/02init.rpy:116
     old "Есть успехи с Оливией?"
-    new ""
+    new "Any luck with Olivia?"
 
     # game/core/02init.rpy:116
     old "Что-нибудь узнала про Оливию?"
-    new ""
+    new "Did you find out anything about Olivia?"
 
     # game/core/02init.rpy:116
     old "Ну так, что там с трусиками Оливии?"
-    new ""
+    new "So, what about Olivia's panties?"
 
     # game/core/02init.rpy:116
     old "Ты позвала Оливию к нам?"
+    new "Did you ask Olivia to join us?"
+
+# TODO: Translation updated at 2021-05-02 21:51
+
+translate english strings:
+
+    # game/core/02init.rpy:23
+    old "{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Ну как, получилось рассказать всё Оливии?"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Учтите, я испытываю... некоторый подъём!"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Пошепчемся немного о моей сестрёнке?"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Что новенького, Оливия?"
+    new ""
+
+    # game/core/02init.rpy:117
+    old "Рад тебя видеть, Оливия!"
     new ""
 

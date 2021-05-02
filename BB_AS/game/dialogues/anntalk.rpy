@@ -315,7 +315,7 @@ label talk_about_smoking:
     $ renpy.block_rollback()
     $ __mood = 0
 
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     show Max talk-terrace 01a
     $ renpy.show("Ann talk-terrace 01"+ann.dress)
     menu:
@@ -332,7 +332,7 @@ label talk_about_smoking:
         Ann_00 "Точно? Макс, ты ничего не хочешь рассказать?"
         "Нет, мам, нечего рассказывать":
             Ann_01 "Да? Ну, может и правда показалось. Или от соседей надуло... Ладно, давайте ужинать..."
-            $ poss['smoke'].OpenStage(2)
+            $ poss['smoke'].open(2)
             hide Ann
             show Alice talk-terrace 02a
             menu:
@@ -393,7 +393,7 @@ label talk_about_smoking:
             show Max talk-terrace 03a
         "Может быть, мне показалось...":
             pass
-    $ poss['smoke'].OpenStage(1)
+    $ poss['smoke'].open(1)
     menu:
         Ann_20 "Алиса! Иди сюда, бегом!"
         "Мам, ну не так же...":
@@ -436,7 +436,7 @@ label talk_about_smoking:
     show Alice punish-evening 03a
     $ renpy.show("Ann punish-evening 01"+ann.dress)
     Ann_12 "Очень на это надеюсь. Так, теперь надевай штаны и садимся ужинать."
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     show Max talk-terrace 01a
     show Alice talk-terrace 03a
     menu:

@@ -565,7 +565,7 @@ label alice_talk_tv:
         if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==2) or _in_replay: ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
             $ Skill('massage', 0.1)
             $ _pose = {'03':'05', '04':'06'}[_pose]
-            scene BG char Alice tv-mass-05
+            scene BG tv-mass-05
             $ renpy.show('Alice tv-mass ' + _pose + _dress)
             menu:
                 Alice_07 "Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?"
@@ -714,7 +714,7 @@ label alice_aboutbooks:
     Alice_01 "Думай, что хочешь, а я всё равно не скажу."
     Max_00 "Ну и ладно!"
     $ spent_time += 10
-    $ poss['secretbook'].OpenStage(0)
+    $ poss['secretbook'].open(0)
     $ AvailableActions['searchbook'].enabled = True
     jump Waiting
 
@@ -722,7 +722,7 @@ label alice_aboutbooks:
 label first_talk_smoke:
     $ __mood = 0
     Alice_13 "Упс. Макс, ты ничего не видел!"
-    $ poss['smoke'].OpenStage(0)
+    $ poss['smoke'].open(0)
     Max_08 "Алиса, ты куришь?!"
     $ alice.dcv.special.stage = 1
     menu:
@@ -1392,7 +1392,7 @@ label Alice_sorry:
         $ items['ritter-m'].unblock()
         $ items['raffaello-m'].unblock()
         $ items['ferrero-m'].unblock()
-        $ poss['risk'].OpenStage(0)
+        $ poss['risk'].open(0)
     elif len(alice.sorry.give) == 1:
         Alice_03 "Ой, Макс, конечно же я тебя прощаю! Не переживай ты так... Всё прекрасно!"
         Max_09 "Э-э-э... Правда?!"
@@ -1435,7 +1435,7 @@ label Alice_sorry:
         $ items['pajamas'].unblock()
         $ alice.sorry.start(3)
         $ spent_time += 10
-        $ poss['risk'].OpenStage(7)
+        $ poss['risk'].open(7)
         jump Waiting
 
     $ punreason[1] = 0
@@ -1517,7 +1517,7 @@ label gift_dress:
 
     label .end:
         $ items['dress'].give()
-        $ poss['nightclub'].OpenStage(4)
+        $ poss['nightclub'].open(4)
         $ alice.gifts.append('dress')
         $ alice.dcv.feature.set_lost(1)
         $ infl[alice].add_m(40, True)
@@ -1542,7 +1542,7 @@ label gift_book:
             "Я и не знал. Просто угадал видимо...":
                 Alice_05 "Поздравляю, попал в десятку! Если найдёшь ещё что-то подобное, буду рада такому подарку. Даже от тебя..."
                 Max_04 "Ну, если даже от меня, то ладно..."
-        $ poss['secretbook'].OpenStage(3)
+        $ poss['secretbook'].open(3)
         $ AddRelMood('alice', 0, 100)
         $ AttitudeChange('alice', 0.25)
         $ items['erobook_1'].give()
@@ -1625,7 +1625,7 @@ label gift_pajamas:
     elif alice.flags.hugs_type > 3: # после 3-ей сладости были родственные обнимашки
         if not _in_replay:
             $ persistent.memories['gift_pajamas'] = 1
-            $ poss['risk'].OpenStage(8)
+            $ poss['risk'].open(8)
         Alice_03 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в ней, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
         Max_02 "Как страшно... Давай уже, примеряй."
         scene BG char Alice newpajamas
@@ -2429,7 +2429,7 @@ label alice_sorry_gifts:
             jump .middle
 
     label .kick_ears:
-        $ poss['risk'].OpenStage(5)
+        $ poss['risk'].open(5)
         if current_room == house[1]:
             scene BG char Alice newdress
             if '09:00' <= tm < '20:00':
@@ -2445,7 +2445,7 @@ label alice_sorry_gifts:
         return
 
     label .kindred_hugs:
-        $ poss['risk'].OpenStage(6)
+        $ poss['risk'].open(6)
         if current_room == house[1]:
             scene BG char Alice newdress
             if '09:00' <= tm < '20:00':
@@ -2562,7 +2562,7 @@ label alice_sorry_gifts:
 
     label .bad: ## ненавистное
         $ items[__give].use()
-        $ poss['risk'].OpenStage(4)
+        $ poss['risk'].open(4)
         if len(alice.sorry.give) == 0:  # ненавистное в первый раз
             Alice_12 "Ой! Какая же гадость этот кокос, не люблю его, фу-у-у! Это большая ошибка, Макс!"
             Max_10 "Я же не знал! Если ты так их не любишь, то можно было и предупредить..."
@@ -2764,7 +2764,7 @@ label alice_sorry_gifts:
 
     label .middle: ## преемлемое
         $ items[__give].use()
-        $ poss['risk'].OpenStage(3)
+        $ poss['risk'].open(3)
         if len(alice.sorry.give) == 0:  # преемлемой в первый раз
             Alice_03 "Неплохо... Не то, чтобы он мне нравился, не люблю многие начинки, но сойдёт. Спасибо!"
             Max_07 "Так значит, ты ничего не расскажешь маме об утреннем инцеденте?"
@@ -2972,7 +2972,7 @@ label alice_sorry_gifts:
 
     label .good: ## любимое
         $ items[__give].use()
-        $ poss['risk'].OpenStage(2)
+        $ poss['risk'].open(2)
         $ items['ferrero-b'].unblock()
         $ alice.sorry.valid.add('ferrero-b')
         if len(alice.sorry.give) == 0:  # любимое, самый первый раз
@@ -3323,7 +3323,7 @@ label talkblog2:
     Max_09 "Ты уверена в этом?"
     Alice_00 "Да, Макс! Уверена, я смогу развить свой блог и без этого."
     Max_00 "Ясно. Нет, так нет..."
-    $ poss['blog'].OpenStage(3 if len(house[1].cams) else 2)  # если камера установлена, открываем стадию 3 иначе 2
+    $ poss['blog'].open(3 if len(house[1].cams) else 2)  # если камера установлена, открываем стадию 3 иначе 2
     $ spent_time += 10
     jump Waiting
 
@@ -3358,7 +3358,7 @@ label talkblog3:
     Max_00 "Ну, если это так делается..."
     Alice_01 "Да, Макс. Причём, желающих на этом зарабатывать больше, чем желающих за это платить. И в этом главная проблема. Но как я уже сказала, я могу попробовать. Если купишь что-то, посмотрим..."
     Max_01 "Понял, с меня симпатичное бельишко..."
-    $ poss['blog'].OpenStage(4)
+    $ poss['blog'].open(4)
     $ items['b.lingerie'].unblock()
     $ spent_time += 10
     jump Waiting
@@ -3404,7 +3404,7 @@ label gift_black_lingerie:
                 Max_05 "Ну, я... э..."
                 Alice_05 "Контуженый что ли? Я тебя спрашиваю хорошо сидит или нет... Хотя... по тебе же всё сразу видно. Значит, всё в порядке..."
                 Max_02 "Ага, полный порядок!"
-                $ poss['blog'].OpenStage(5)
+                $ poss['blog'].open(5)
                 jump .final
             else:
                 # (удалось убедить)
@@ -3457,7 +3457,7 @@ label gift_black_lingerie:
         Alice_07 "Размер в самый раз... ... Как тебе, Макс? Хорошо сидит?"
         Max_05 "Не то слово, всё выглядит шикарно!"
         if not _in_replay:
-            $ poss['blog'].OpenStage(6)
+            $ poss['blog'].open(6)
         jump .final
 
     else:
@@ -3508,7 +3508,7 @@ label gift_black_lingerie:
         Alice_07 "Похоже, размер мне подходит... и удобно. Очень лёгонький топик. Ну, как тебе всё в целом?"
         Max_05 "Тебе идёт, всё выглядит шикарно!"
         if not _in_replay:
-            $ poss['blog'].OpenStage(6)
+            $ poss['blog'].open(6)
         jump .final
 
     label .final:
@@ -3718,7 +3718,7 @@ label gift_lace_lingerie:
     $ alice.gifts.append('sexbody2')
     $ setting_clothes_by_conditions()
     $ infl[alice].add_m(40)
-    $ poss['blog'].OpenStage(18)
+    $ poss['blog'].open(18)
     jump Waiting
 
 
@@ -3772,7 +3772,7 @@ label alice_about_defend_punish1:
             Max_04 "Точно."
             Alice_05 "Ладно, можешь меня шлёпать. Конечно, если от мамы спасёшь. Тогда и поговорим."
             Max_01 "Я постараюсь."
-            $ poss['ass'].OpenStage(0)
+            $ poss['ass'].open(0)
             $ alice.dcv.private.stage = 4
             $ alice.dcv.private.set_lost(0)
 
@@ -3993,7 +3993,7 @@ label alice_private_punish_r:
                     scene BG punish-sun 04
                     $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
                     Alice_03 "Ага, сложно не заметить, сколько радости от этого в твоих шортах. Приму это за комплимент, но хватит уже меня смущать своим озабоченным видом!"
-                    $ poss['ass'].OpenStage(1)
+                    $ poss['ass'].open(1)
                     $ alice.flags.privpunish += 1
             menu:
                 Max_02 "Хорошо, до следующего раза."

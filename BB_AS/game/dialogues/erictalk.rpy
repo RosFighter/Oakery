@@ -310,7 +310,7 @@ label lessons_from_Eric:
 # требуется допилка
 label Eric_talk_about_Lisa_0:
 
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
 
@@ -344,7 +344,7 @@ label Eric_talk_about_Lisa_0:
 
             $ lisa.dcv.battle.stage = 1  # добровольная "передача" Лизы Эрику
             $ flags.bonus_from_eric.append('bonus')
-            $ poss['seduction'].OpenStage(16)
+            $ poss['seduction'].open(16)
 
         "Нет, можешь обучать... (попытка подружиться)" if not GetRelMax('eric')[0]>0:
             # (уступаем Лизу [дружба/война])
@@ -367,7 +367,7 @@ label Eric_talk_about_Lisa_0:
                 $ flags.voy_stage = 0  # теперь можно подглядывать
 
             $ lisa.dcv.battle.stage = 1  # добровольная "передача" Лизы Эрику
-            $ poss['seduction'].OpenStage(17)
+            $ poss['seduction'].open(17)
 
         "А ей не рановато? (попытка выиграть время)" if GetRelMax('eric')[0]>3:
             # (отсрочка уроков с Лизой [дружба])
@@ -384,7 +384,7 @@ label Eric_talk_about_Lisa_0:
 
             $ lisa.dcv.battle.stage = 2  # отсрочка
             $ lisa.dcv.intrusion.set_lost(14)
-            $ poss['seduction'].OpenStage(18)
+            $ poss['seduction'].open(18)
 
         "Лизу тебе не отдам! (расторжение дружбы)" if GetRelMax('eric')[0]>0:
             #(не уступаем Лизу [дружба/война])
@@ -399,7 +399,7 @@ label Eric_talk_about_Lisa_0:
             Max_17 "Да пошёл ты!"
             $ AttitudeChange('eric', (-7 if GetRelMax('eric')[0]>3 else -4))
             $ lisa.dcv.battle.stage = 3  # война, однако
-            $ poss['seduction'].OpenStage(19)
+            $ poss['seduction'].open(19)
 
         "Лизу тебе не отдам! (продолжение вражды)" if not GetRelMax('eric')[0]>0:
             #(не уступаем Лизу [дружба/война])
@@ -412,7 +412,7 @@ label Eric_talk_about_Lisa_0:
             Max_17 "Да пошёл ты!"
 
             $ lisa.dcv.battle.stage = 3  # война, однако
-            $ poss['seduction'].OpenStage(19)
+            $ poss['seduction'].open(19)
 
     $ infl[lisa].freeze = False  # начинается борьба за влияние на Лизу
     $ flags.stopkiss = 1
@@ -422,7 +422,7 @@ label Eric_talk_about_Lisa_0:
 
 label Eric_talk_about_Lisa_1:
     #через две недели после первого диалога, в случае отсрочки
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
 
@@ -446,7 +446,7 @@ label Eric_talk_about_Lisa_1:
 label Eric_talk_about_Alice_0:
 
     #max&eric-terrace-00 + max + eric
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
     Eric_01 "Не торопись уходить, Макс. Нужно поговорить наедине."
@@ -473,7 +473,7 @@ label Eric_talk_about_Alice_0:
 
             $ alice.dcv.battle.stage = 1  # добровольная "передача" Алисы Эрику
             $ flags.bonus_from_eric.append('bonus')
-            $ poss['blog'].OpenStage(9)
+            $ poss['blog'].open(9)
 
         "Я мало что об этом знаю... (попытка выиграть время)" if GetRelMax('eric')[0]>0:
             $ renpy.show('Max talk-terrace 02'+mgg.dress)
@@ -489,7 +489,7 @@ label Eric_talk_about_Alice_0:
 
             $ alice.dcv.battle.stage = 2  # отсрочка
             $ alice.dcv.battle.set_lost(12)
-            $ poss['blog'].OpenStage(10)
+            $ poss['blog'].open(10)
 
         "Не лез бы ты к Алисе! (расторжение дружбы)" if GetRelMax('eric')[0]>0:
             $ renpy.show('Max talk-terrace 04'+mgg.dress)
@@ -499,7 +499,7 @@ label Eric_talk_about_Alice_0:
             Eric_14 "Ты уверен, что хочешь вражды? Я тебя предупреждал уже, что ты проиграешь."
             Max_16 "Посмотрим..."
             $ AttitudeChange('eric', (-7 if GetRelMax('eric')[0]>3 else -4))
-            $ poss['blog'].OpenStage(12)
+            $ poss['blog'].open(12)
             $ alice.dcv.battle.stage = 3  # война, однако
 
         #если с Эриком вражда
@@ -523,7 +523,7 @@ label Eric_talk_about_Alice_0:
             if flags.voy_stage < 0:
                 $ flags.voy_stage = 0  # теперь можно подглядывать
 
-            $ poss['blog'].OpenStage(11)
+            $ poss['blog'].open(11)
             $ alice.dcv.battle.stage = 1  # добровольная "передача" Алисы Эрику
 
         "Вот у неё и спрашивай! (продолжение вражды)" if not GetRelMax('eric')[0]>0:
@@ -534,7 +534,7 @@ label Eric_talk_about_Alice_0:
             Eric_06 "Как жёстко! У меня аж мурашки поползли по спине... от потехи..."
             Max_17 "Ещё посмотрим, кто будет потешаться!"
             $ alice.dcv.battle.stage = 3  # война, однако
-            $ poss['blog'].OpenStage(12)
+            $ poss['blog'].open(12)
 
     $ infl[alice].freeze = False  # начинается борьба за влияние на Алисе
     $ spent_time += 20
@@ -543,7 +543,7 @@ label Eric_talk_about_Alice_0:
 
 label Eric_talk_about_Alice_1:
     #через две недели после первого диалога, в случае отсрочки
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
 
@@ -566,7 +566,7 @@ label Eric_talk_about_Alice_1:
 
 
 label Eric_talk_about_lace_lingerie:
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
 
@@ -589,7 +589,7 @@ label Eric_talk_about_lace_lingerie:
         if bonus_from_eric.count('bonus'):
             $ flags.bonus_from_eric.remove('bonus')
             $ flags.bonus_from_eric.append('nobonus')
-        $ poss['blog'].OpenStage(19)
+        $ poss['blog'].open(19)
     else:
         #если с Эриком вражда
         Max_09 "Что надо?"
@@ -597,7 +597,7 @@ label Eric_talk_about_lace_lingerie:
         Max_02 "Похоже, я испортил чьи-то планы... Какой ужас!"
         Eric_13 "За всё, что будет дальше винить можешь только себя, Макс. Успехов не желаю."
         Max_01 "Да и не надо. Обойдусь."
-        $ poss['blog'].OpenStage(20)
+        $ poss['blog'].open(20)
         #через ? дней произойдёт история с украденым кошельком Эрика (v0.06.5)
 
     $ alice.dcv.intrusion.stage = 7

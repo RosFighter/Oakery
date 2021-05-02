@@ -46,6 +46,7 @@ label Waiting:
         $ pose2_1 = renpy.random.choice(['01', '02'])
         $ pose2_2 = renpy.random.choice(['01', '02'])
         $ pose2_3 = renpy.random.choice(['01', '02'])
+        $ pose2_4 = renpy.random.choice(['02', '03'])
         $ tv_scene = '' # renpy.random.choice(['', 'bj', 'hj'])
 
     # начисление влияния и другие события по времени
@@ -124,7 +125,7 @@ label eric_time_settings:
             $ alice.dcv.intrusion.stage = 8
             $ items['sexbody2'].block()
             # $ alice.gifts.append('sexbody2')
-            $ poss['blog'].OpenStage(15)
+            $ poss['blog'].open(15)
 
     if prevtime < '15:00' <= tm:
         if all([GetWeekday(day)==0, flags.add_training, lisa.dcv.battle.stage in [2, 4, 5]]):
@@ -206,7 +207,7 @@ label Midnight:
         # если подсматривали за АиЭ у ТВ, меняем фильм
         $ ae_tv_order.pop(0)
         if not ae_tv_order:
-            $ ae_tv_order = ['01', '02', '03', '04', '05', '06']
+            $ ae_tv_order = ['0'+str(i) for i in range(1, 8)]
             $ renpy.random.shuffle(ae_tv_order)  # перемешаем список случайным образом
 
     if 'sexbody2' in alice.gifts and check_is_home('eric'):
@@ -220,6 +221,7 @@ label Midnight:
         $ flags.eric_jerk = False
     $ flags.eric_noticed = False
     $ prenoted = 0
+    $ film = ''
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -244,6 +246,10 @@ label NewDay:
     $ ann.daily.ask_money = 0 # просили денег у Анны
 
     python:
+        if olivia_nightvisits():
+            # установим откат для ночных визитов Оливии.
+            olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
+
         for ch in chars:
             char = chars[ch]
             # сбросим подглядывания, диалоги и состояния
@@ -261,8 +267,6 @@ label NewDay:
 
         # сброс фильма-наказания
         lisa.dcv.countdown(only=['special'])
-        # if lisa.dcv.special.enabled and not lisa.dcv.special.done:
-        #     lisa.dcv.special.set_lost(lisa.dcv.special.lost-1)
 
     if 'spider' in NightOfFun:
         $ NightOfFun.remove('spider') # если ночная забава не состоялась, паука из списка забав удаляем - он сбежал
@@ -307,9 +311,6 @@ label NewDay:
     $ ann_eric_scene = ''
 
     $ cam_poses.clear()  # обнулим список поз для камер
-    # if 'black_linderie' in alice.gifts:
-    #     $ cur_blog_lingerie = ''
-    #     $ cam_pose_blog = []
 
     return
 
@@ -347,6 +348,11 @@ label NewWeek:
         # отношения с Эриком по сёстрам определены
         # активируем еженедельный счетчик на спаливание Киры и Макса Эриком
         $ wcv.catch_Kira.enabled = True  # теперь можно сдать Киру Эрику (при дружбе), либо Эрик может сам спалить Макса и Киру
+
+    if 'olivia' in chars:
+        if olivia.dcv.feature.stage==2:
+            # состоялись первые два разговора по средам, теперь Оливия будет приходить во вторник и пятницу
+            $ olivia.dcv.feature.stage = 3
 
     $ flags.noclub = False
 
@@ -681,16 +687,20 @@ label after_load:
     #     "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
-        call update_06_5
 
+        call update_06_5    # фиксы текущей версии
+
+        # обновление расписаний
         call set_alice_schedule
         call set_ann_schedule
         call set_eric_schedule
         call set_kira_schedule
         call set_lisa_schedule
 
+        # обновление списка предметов, одежды, возможностей
         $ checking_items()
         $ checking_clothes()
+        $ poss_update()
 
         $ _version = config.version
 
@@ -703,10 +713,9 @@ label update_06_5:
         # $ current_ver = "0.06.4.01"
         $ _version = "0.06.4.01"
 
-        $ poss['ass'] = Poss(_("Забота о попках"), [
+        $ poss['ass'] = Poss([
                 PossStage("interface poss ass ep01", _("Интересно получилось! Я ради интереса сказал Алисе, что больше не хочу за неё заступаться, когда её наказывают, но готов это делать и дальше, если она согласится, чтобы её шлёпал я.\nОна сперва приняла такой уговор в штыки, но после нескольких наказаний от мамы всё же согласилась, чтобы её шлёпал я. По крайней мере, если получилось спасти Алису от маминой руки. Надо так же не забыть обсудить с ней, когда можно её отшлёпать.\n\nПравда есть небольшой нюанс, благодаря которому Алиса и согласилась на это... Я пообещал, что отшлёпаю её нежно. Да уж, будет не просто устоять и не влепить по её попке за то, как стервозно она себя вела...")),  #0
-                PossStage("interface poss ass ep02", _("Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше..."),
-                        _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")),  #1
+                PossStage("interface poss ass ep02", _("Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше...")),  #1
             ])
 
     if _version < "0.06.4.02":
@@ -911,7 +920,7 @@ label update_06_5:
             elif 'sexbody1' in alice.gifts:
                 $ alice.flags.defend = 2
 
-        if poss['risk'].stages[6].used:
+        if poss['risk'].used(6):
             # были обнимашки за периодическое дарение сладостей
             if alice.dcv.intrusion.stage in [5, 7]:
                 # опередил Эрика с кружевным бельём
@@ -921,5 +930,22 @@ label update_06_5:
 
     if _version < "0.06.4.03":
         $ items.pop('ann_movie', None)
+
+    if _version < "0.06.4.04":
+        python:
+
+            if lisa.dcv.special.stage > 0:
+                poss['SoC'].OpenStage(10)
+            if lisa.dcv.special.stage > 2:
+                poss['SoC'].OpenStage(11)
+            if lisa.dcv.special.stage > 4:
+                poss['SoC'].OpenStage(12)
+            if lisa.dcv.special.stage > 4 and 'horror_kiss' in persistent.mems_var:
+                poss['SoC'].OpenStage(13)
+
+            for ps in poss:
+                poss[ps].stages = [int(st.used) for st in poss[ps].stages]
+
+            ol_tv_order = ['0'+str(i) for i in range(1, 8)]
 
     return

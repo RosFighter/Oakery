@@ -6,7 +6,7 @@ label Eric_talk_afterdinner:
     $ spent_time = 20
     $ current_room = house[6]
 
-    scene BG char Max talk-terrace-00
+    scene BG talk-terrace-00
     show Eric meet 01a
     show Max talk-terrace 01a
     Eric_00 "Макс, пока твоя мама переодевается, я бы хотел с тобой поговорить. С глазу на глаз, так сказать..."
@@ -128,7 +128,7 @@ label Eric_talk_afterdinner:
             Eric_00 "Ну, как хочешь. Надеюсь, в тебе сейчас говорят эмоции, а не здравый смысл. У тебя есть неделя, чтобы передумать. Тогда и поговорим снова и будет ясно, как быть."
             "{i}промолчать{/i}":
                 $ eric.flags.crush = 0
-                $ poss['alpha'].OpenStage(0)
+                $ poss['alpha'].open(0)
                 jump Waiting
 
     label .friend:
@@ -136,12 +136,12 @@ label Eric_talk_afterdinner:
         show Eric meet 01a
         Eric_05 "Я рад, правда. Ты не пожалеешь. Ладно, твоя мама уже идёт, мы поехали. Вернёмся к этому разговору через неделю..."
         Max_04 "Ага..."
-        $ poss['alpha'].OpenStage(0)
+        $ poss['alpha'].open(0)
         jump Waiting
 
     label .second_talk:
         $ spent_time = 20
-        scene BG char Max talk-terrace-00
+        scene BG talk-terrace-00
         if eric.flags.crush > 5:
             show Eric meet 01a
             $ renpy.show('Max talk-terrace 01'+mgg.dress)
@@ -181,7 +181,7 @@ label Eric_talk_afterdinner:
         $ notify_list.append(_("{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"))
         $ AttitudeChange('eric', -3)
         $ flags.voy_stage = -1
-        $ poss['alpha'].SetStage(3)
+        $ poss['alpha'].open(3)
         jump Waiting
 
     label .goodgood:
@@ -276,7 +276,7 @@ label Eric_talk_afterdinner:
         Max_05 "Договорились!"
         Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
         $ notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"))
-        $ poss['alpha'].SetStage(2)
+        $ poss['alpha'].open(2)
         $ flags.voy_stage = 0
         $ flags.bonus_from_eric.append('money')
         $ AttitudeChange('eric', 4)
@@ -300,7 +300,7 @@ label eric_ann_tv:
         $ renpy.show('porn_'+film+' 01_02', at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     elif eric.daily.tv_sex == 2:
-        $ renpy.show('tv serial '+renpy.random.choice(['01','02','03','04','05','06','07']), at_list=[tv_screen,])
+        $ renpy.show('tv serial 0'+str(renpy.random.randint(1, 7))+'+0'+str(renpy.random.randint(1, 3)), at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     else:
         ### Дальний план, поза, на которой остановилось подглядывание
@@ -442,7 +442,7 @@ label eric_ann_tv:
         ### ближний план отрисовываем согласно установленным переменным bj/hj + поза в полотенце/без полотенца
         $ spent_time += 10
         if _alt:
-            scene BG char Alice tv-mass-05
+            scene BG tv-mass-05
             $ renpy.show('Max tv 02'+mgg.dress)
             $ renpy.show('Eric tv '+tv_scene+pose2_3+eric.dress+'-alt')
         else:
@@ -545,7 +545,7 @@ label eric_ann_fucking:
         "{i}зайти в спальню{/i}" if 3<flags.voy_stage<8 and GetRelMax('eric')[0]>3:
             jump lessons_from_Eric
         "{i}уйти{/i}":
-            Max "" nointeract
+            # Max "" nointeract
             window hide
             $ current_room = house[0]
             jump AfterWaiting
@@ -603,7 +603,7 @@ label eric_ann_fucking:
                             Eric_01 "Ну всё, Макс. Мы тут ещё побеседуем. А для тебя на сегодня хватит, иди."
                             Max_00 "Хорошо..."
                             $ flags.voy_stage = 4
-                            $ poss['control'].OpenStage(0)
+                            $ poss['control'].open(0)
 
                 "Я уже ухожу, мам... Извини...":
                     pass
@@ -1302,7 +1302,7 @@ label first_jerk_balkon:
         "{i}уйти{/i}":
             $ flags.eric_noticed = True
     $ eric.stat.mast += 1
-    $ poss['discrediting'].OpenStage(0)
+    $ poss['discrediting'].open(0)
     $ spent_time += 10
     jump Waiting
 
@@ -1322,7 +1322,7 @@ label first_jerk_yard:
         "{i}уйти{/i}":
             $ flags.eric_noticed = True
     $ eric.stat.mast += 1
-    $ poss['discrediting'].OpenStage(0)
+    $ poss['discrediting'].open(0)
     $ spent_time += 10
     jump Waiting
 
@@ -1346,7 +1346,7 @@ label jerk_balkon:
                 jump Waiting
     else:
         # Дальний план + eric-voyeur-alice-02 (без спрайта подглядывающего Макса)
-        $ poss['discrediting'].OpenStage(2)
+        $ poss['discrediting'].open(2)
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
         show Eric jerk off 02
@@ -1410,7 +1410,7 @@ label jerk_photohant1:
         menu:
             Max_09 "А если попробовать загнать Эрика в комнату Алисы?! Тогда бы у меня появился шанс сделать уже более определённый снимок, где видно на кого дрочит Эрик. Только вот как..."
             "{i}уйти{/i}":
-                $ poss['discrediting'].OpenStage(1)
+                $ poss['discrediting'].open(1)
                 $ flags.eric_photo1 = 1
     else:
         # (не успел)
@@ -1443,7 +1443,7 @@ label jerk_photohant2:
             Max_05 "Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!"
             "{i}уйти{/i}":
                 $ flags.eric_photo2 = 1
-                $ poss['discrediting'].OpenStage(3)
+                $ poss['discrediting'].open(3)
     else:
         # (не успел)
         #все уже по своим местам и спят

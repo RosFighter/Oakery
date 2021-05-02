@@ -8456,627 +8456,627 @@ translate english strings:
 translate english smoke_fear_37c7808b:
 
     # Alice_12 "Это ещё с чего, Макс?! Меня же не наказывали! А мы договаривались, если ты меня спас от мамы, то и отшлёпать можешь..." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Why is that, Max?! I wasn't punished! We agreed that if you saved me from Mom, you could spank me..." nointeract
 
 # game/dialogues/alicetalk.rpy:1037
 translate english smoke_fear_b915b812:
 
     # Alice_12 "Это ещё с чего, Макс?! Ты же мою попку от мамы не спас! А мы договаривались, если ты меня выручаешь, то и отшлёпать можешь..." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Why would I do that, Max?! You didn't save me from Mom! We agreed that if you helped me out, you could spank me..." nointeract
 
 # game/dialogues/alicetalk.rpy:1043
 translate english smoke_fear_07fafa70:
 
     # Alice_05 "[succes!t]Ну... Только если легонько! Понял?! Только докурю сперва в тишине и покое..."
-    Alice_05 ""
+    Alice_05 "[succes!t]Well... Only if it's gentle! Got it?! I'll just smoke in peace and quiet first..."
 
 # game/dialogues/alicetalk.rpy:1044
 translate english smoke_fear_5f4eb3c1:
 
     # Max_03 "Хорошо. Я подожду..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Okay. I'll wait..." nointeract
 
 # game/dialogues/alicetalk.rpy:1049
 translate english smoke_fear_9229c45e:
 
     # Alice_16 "[failed!t]Нет уж! Что-то другое ещё можешь попробовать выпросить, но к своей попке я тебя сегодня не подпущу." nointeract
-    Alice_16 "" nointeract
+    Alice_16 "[failed!t]No way! You can still try to ask for something else, but I'm not letting you near my ass tonight." nointeract
 
 # game/dialogues/alicetalk.rpy:3579
 translate english alice_about_defend_punish0_38177009:
 
     # Alice_12 "Эээ... Прекрасно сидится, как видишь."
-    Alice_12 ""
+    Alice_12 "Um... I'm just fine, as you can see."
 
 # game/dialogues/alicetalk.rpy:3580
 translate english alice_about_defend_punish0_a7c4989a:
 
     # Max_02 "Ну ещё бы, ведь твою симпатичную попку никто сегодня не отшлёпал, благодаря мне."
-    Max_02 ""
+    Max_02 "Of course, no one spanked your pretty ass today, thanks to me."
 
 # game/dialogues/alicetalk.rpy:3581
 translate english alice_about_defend_punish0_ad4cdba7:
 
     # Alice_05 "А, вот ты о чём! Ну да, моя попка цела и невредима. Почаще бы ты меня от маминой руки ещё спасал, было бы супер!"
-    Alice_05 ""
+    Alice_05 "Oh, that's what you mean! Yeah, my ass is safe and sound. If you saved me from Mom more often, that would be great!"
 
 # game/dialogues/alicetalk.rpy:3582
 translate english alice_about_defend_punish0_e4999aae:
 
     # Max_07 "Да как-то не очень хочется, на самом деле, вообще это делать. По крайней мере за просто так."
-    Max_07 ""
+    Max_07 "I don't really feel like doing it at all. At least not for nothing."
 
 # game/dialogues/alicetalk.rpy:3583
 translate english alice_about_defend_punish0_59372acc:
 
     # Alice_13 "А что ты хочешь? Гадости какие-нибудь наверняка..."
-    Alice_13 ""
+    Alice_13 "What do you want? Something perverted for sure..."
 
 # game/dialogues/alicetalk.rpy:3584
 translate english alice_about_defend_punish0_437a93ad:
 
     # Max_03 "Самое правильное - это всё равно тебя наказать! Только в отличие от мамы, я сделаю это с нежностью."
-    Max_03 ""
+    Max_03 "The right thing to do is to punish you anyway! But unlike Mom, I'll do it gently."
 
 # game/dialogues/alicetalk.rpy:3585
 translate english alice_about_defend_punish0_308ae596:
 
     # Alice_15 "Чего?! Вот ещё! Чтобы меня младший брат наказывал? Обойдёшься, Макс!"
-    Alice_15 ""
+    Alice_15 "What?! No way! I'm not going to let my little brother punish me!"
 
 # game/dialogues/alicetalk.rpy:3586
 translate english alice_about_defend_punish0_43e26bff:
 
     # Max_09 "Ты уверена? Ох, не сладко тебе будет без моего вмешательства. Но дело твоё."
-    Max_09 ""
+    Max_09 "Are you sure? Oh, it won't be easy for you without my help. But it's up to you."
 
 # game/dialogues/alicetalk.rpy:3587
 translate english alice_about_defend_punish0_6b2fc537:
 
     # Alice_05 "Вот именно."
-    Alice_05 ""
+    Alice_05 "Right, it is."
 
 # game/dialogues/alicetalk.rpy:3598
 translate english alice_about_defend_punish1_a691d52f:
 
     # Alice_13 "Так ты позлорадствовать пришёл. Нет, чтобы заступиться за сестрёнку..."
-    Alice_13 ""
+    Alice_13 "So you came to gloat. Instead of sticking up for your sister..."
 
 # game/dialogues/alicetalk.rpy:3599
 translate english alice_about_defend_punish1_f8acf22c:
 
     # Max_01 "Если разрешишь тебя немного пошлёпать за это, то буду заступаться."
-    Max_01 ""
+    Max_01 "If you let me give you a little spanking for that, I'll stick up for you."
 
 # game/dialogues/alicetalk.rpy:3600
 translate english alice_about_defend_punish1_cc301f6a:
 
     # Alice_12 "Макс, давай иначе договоримся? Это отстой..."
-    Alice_12 ""
+    Alice_12 "Max, how about another deal? This sucks..."
 
 # game/dialogues/alicetalk.rpy:3601
 translate english alice_about_defend_punish1_7b76a9ae:
 
     # Max_09 "Иногда получать от меня легонько по попке - это значит отстой, а всегда и сурово от мамы - это класс?! Ты ведь даже не знаешь, как я буду шлёпать!"
-    Max_09 ""
+    Max_09 "So getting your ass battered by Momm would be better than my gentle touch?! You don't even know how it'll go!"
 
 # game/dialogues/alicetalk.rpy:3603
 translate english alice_about_defend_punish1_1428cf3b:
 
     # Alice_16 "Я и узнавать не хочу!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "I don't even want to find out!" nointeract
 
 # game/dialogues/alicetalk.rpy:3610
 translate english alice_about_defend_punish1_cont_1a13a2ef:
 
     # Alice_12 "Чтобы меня младший брат наказывал? Обойдёшься, Макс!" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "To be punished by my little brother? It will be fine, Max!" nointeract
 
 # game/dialogues/alicetalk.rpy:3618
 translate english alice_about_defend_punish1_convince_7bec5e8c:
 
     # Alice_17 "Я лучше от мамы наказания потерплю, чем от тебя..."
-    Alice_17 ""
+    Alice_17 "I'd rather be punished by Mom than you..."
 
 # game/dialogues/alicetalk.rpy:3619
 translate english alice_about_defend_punish1_convince_b3302105:
 
     # Max_07 "Ох, не завидую я тебе..."
-    Max_07 ""
+    Max_07 "Oh, I don't envy you..."
 
 # game/dialogues/alicetalk.rpy:3622
 translate english alice_about_defend_punish1_convince_7a330082:
 
     # Alice_06 "А ты точно не больно будешь шлёпать?"
-    Alice_06 ""
+    Alice_06 "Are you sure it won't hurt?"
 
 # game/dialogues/alicetalk.rpy:3623
 translate english alice_about_defend_punish1_convince_8fb481bd:
 
     # Max_04 "Точно."
-    Max_04 ""
+    Max_04 "That's right."
 
 # game/dialogues/alicetalk.rpy:3624
 translate english alice_about_defend_punish1_convince_bf9afe8c:
 
     # Alice_05 "Ладно, можешь меня шлёпать. Конечно, если от мамы спасёшь. Тогда и поговорим."
-    Alice_05 ""
+    Alice_05 "Okay, you can spank me if you save me from Mom. Then we'll talk."
 
 # game/dialogues/alicetalk.rpy:3625
 translate english alice_about_defend_punish1_convince_649ce7e0:
 
     # Max_01 "Я постараюсь."
-    Max_01 ""
+    Max_01 "I'll do my best."
 
 # game/dialogues/alicetalk.rpy:3638
 translate english alice_about_private_punish_2d00b175:
 
     # Alice_13 "Макс, давай завтра! Днём, например. Когда мы дома одни остаёмся... Ну и всё, что выпадет на выходные дни, будем переносить на понедельник, хорошо?"
-    Alice_13 ""
+    Alice_13 "Max, let's do it tomorrow! In the afternoon, when we're home alone... And anything that falls on the weekend, we'll move it to Monday, okay?"
 
 # game/dialogues/alicetalk.rpy:3641
 translate english alice_about_private_punish_d4464c28:
 
     # Alice_13 "Макс, давай теперь уже в понедельник днём! Когда мы дома одни остаёмся..."
-    Alice_13 ""
+    Alice_13 "Max, let's do it on Monday afternoon! When we're alone..."
 
 # game/dialogues/alicetalk.rpy:3642
 translate english alice_about_private_punish_e717bf67:
 
     # Max_04 "Без проблем."
-    Max_04 ""
+    Max_04 "No problem."
 
 # game/dialogues/alicetalk.rpy:3643
 translate english alice_about_private_punish_904c836c:
 
     # Alice_16 "И смотри, если мне будет больно, то ты с фингалом ходить неделю будешь... Ясно?"
-    Alice_16 ""
+    Alice_16 "And look, if I get hurt, you'll walk around with a black eye for a week... Okay?"
 
 # game/dialogues/alicetalk.rpy:3644
 translate english alice_about_private_punish_3714870a:
 
     # Max_01 "Ага, не переживай."
-    Max_01 ""
+    Max_01 "Yeah, don't worry about it."
 
 # game/dialogues/alicetalk.rpy:3652
 translate english alice_private_punish_0_d5f4ef08:
 
     # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделам?"
-    Alice_03 ""
+    Alice_03 "Eh, Max... I've been enjoying my sunbathing. Oh, come on, where do we do that?"
 
 # game/dialogues/alicetalk.rpy:3655
 translate english alice_private_punish_0_smoke_0e942505:
 
     # Alice_00 "Макс, поглазеть пришёл?" nointeract
-    Alice_00 "" nointeract
+    Alice_00 "Max, are you here to gawk?" nointeract
 
 # game/dialogues/alicetalk.rpy:3658
 translate english alice_private_punish_0_smoke_f9653964:
 
     # Alice_05 "Да, Макс, сейчас... Только дай докурю спокойно и я в твоём распоряжении."
-    Alice_05 ""
+    Alice_05 "Yes, Max, now... Just let me smoke in peace, and I'm all yours."
 
 # game/dialogues/alicetalk.rpy:3659
 translate english alice_private_punish_0_smoke_5f4eb3c1:
 
     # Max_03 "Хорошо. Я подожду..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Okay. I'll wait..." nointeract
 
 # game/dialogues/alicetalk.rpy:3667
 translate english alice_private_punish_0_smoke_45633ee6:
 
     # Alice_03 "Всё, я готова. Где это сделам?"
-    Alice_03 ""
+    Alice_03 "That's it, I'm ready. Where do we do it?"
 
 # game/dialogues/alicetalk.rpy:3671
 translate english alice_private_punish_0_pun_64b31743:
 
     # Max_01 "Да прямо тут, во дворе."
-    Max_01 ""
+    Max_01 "Right here in the yard."
 
 # game/dialogues/alicetalk.rpy:3676
 translate english alice_private_punish_0_pun_a4f1146d:
 
     # Alice_05 "Ладно, давай здесь. Только не больно, хорошо? И не приставать!"
-    Alice_05 ""
+    Alice_05 "Okay, let's do it. Just don't hurt me, okay? And no touching more than you're supposed to!"
 
 # game/dialogues/alicetalk.rpy:3677
 translate english alice_private_punish_0_pun_f7a5e0a2:
 
     # Max_02 "Ага, раздевайся давай..."
-    Max_02 ""
+    Max_02 "Yeah, take your clothes off..."
 
 # game/dialogues/alicetalk.rpy:3681
 translate english alice_private_punish_0_pun_8b2d0dc4:
 
     # Alice_14 "Чего?! В смысле, раздевайся? О таком мы не договаривались!"
-    Alice_14 ""
+    Alice_14 "What?! What do you mean, take your clothes off? That wasn't part of the deal!"
 
 # game/dialogues/alicetalk.rpy:3682
 translate english alice_private_punish_0_pun_990d8736:
 
     # Max_07 "Это само собой разумеющееся, Алиса. Со всеми претензиями обращайся к маме, это ведь она установила такой порядок наказаний."
-    Max_07 ""
+    Max_07 "Well maybe you can take your complaints to Mom? She's the one who set the rules for punishment, after all."
 
 # game/dialogues/alicetalk.rpy:3683
 translate english alice_private_punish_0_pun_ebd9385d:
 
     # Alice_13 "Если ты думаешь, что я стану тут перед тобой раздеваться..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "If you think I'm going to undress in front of you..." nointeract
 
 # game/dialogues/alicetalk.rpy:3689
 translate english alice_private_punish_0_pun_a00d3c07:
 
     # Alice_15 "Макс!!! Ты офигел так делать?! Я же тебе сейчас уши оторву..."
-    Alice_15 ""
+    Alice_15 "Max!!! Are you crazy? I'm gonna rip your ears off..."
 
 # game/dialogues/alicetalk.rpy:3690
 translate english alice_private_punish_0_pun_d8b14cf0:
 
     # Max_09 "Сколько от тебя шума, Алиса! Да ещё и по такому пустяку. Надоели уже твои угрозы." nointeract
-    Max_09 "" nointeract
+    Max_09 "You're too noisy, Alice! I think I've heard enough of your threats." nointeract
 
 # game/dialogues/alicetalk.rpy:3696
 translate english alice_private_punish_0_pun_49ee5695:
 
     # Alice_06 "Дикарь ты и извращенец! Я тебе потом такое устрою..."
-    Alice_06 ""
+    Alice_06 "You're a savage and a pervert! I won't forget this..."
 
 # game/dialogues/alicetalk.rpy:3697
 translate english alice_private_punish_0_pun_29bdee42:
 
     # Max_01 "Ага, обязательно. Только давай сперва тебя накажем."
-    Max_01 ""
+    Max_01 "Sure, but let's punish you first."
 
 # game/dialogues/alicetalk.rpy:3698
 translate english alice_private_punish_0_pun_fbb72d96:
 
     # Alice_12 "Только не вздумай глазеть на меня при этом!" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Just don't stare at me while you're doing it!" nointeract
 
 # game/dialogues/alicetalk.rpy:3704
 translate english alice_private_punish_0_pun_78161a28:
 
     # Alice_05 "А это однозначно лучше, чем когда мама шлёпает! После того, чему моя попка подвергалась, твои шлепки даже приятны..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "It's definitely more tolerable than Mom! After what my ass has been subjected to, it's kinda nice by comparison..." nointeract
 
 # game/dialogues/alicetalk.rpy:3710
 translate english alice_private_punish_0_pun_b92248bb:
 
     # Alice_06 "Ну всё, хватит. А то ты уже не шлёпаешь, а просто лапаешь мою попку. И так раздел меня бесцеремонно..."
-    Alice_06 ""
+    Alice_06 "All right, that's enough. You're not spanking me anymore, you're just groping my ass. On top of getting me undressed..."
 
 # game/dialogues/alicetalk.rpy:3711
 translate english alice_private_punish_0_pun_e7174564:
 
     # Max_03 "Просто хотел ускорить процесс."
-    Max_03 ""
+    Max_03 "I just wanted to speed up the process."
 
 # game/dialogues/alicetalk.rpy:3714
 translate english alice_private_punish_0_pun_5a4d6fec:
 
     # Alice_03 "Ты меня своим озабоченным взглядом не смущай. Вали уже, оденусь я без твоей помощи..."
-    Alice_03 ""
+    Alice_03 "Don't embarrass me with your worried look. Go away, I can get dressed without your help..."
 
 # game/dialogues/alicetalk.rpy:3721
 translate english alice_private_punish_0_pun_a4f2c5d6:
 
     # Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
-    Alice_06 ""
+    Alice_06 "Oh, Max! What's the matter with you? It hurts already. I thought you said you'd be gentle!'"
 
 # game/dialogues/alicetalk.rpy:3722
 translate english alice_private_punish_0_pun_f9903cb1:
 
     # Max_04 "А если я немного потру, чтобы не болело... Так легче?"
-    Max_04 ""
+    Max_04 "And if I rub it a little so it doesn't hurt... Is that better?"
 
 # game/dialogues/alicetalk.rpy:3726
 translate english alice_private_punish_0_pun_1fa115d2:
 
     # Alice_12 "Да... Но этого не пришлось бы делать, если бы ты шлёпал легонько!"
-    Alice_12 ""
+    Alice_12 "Yes... But you wouldn't have to do that if you were gentle in the first place!"
 
 # game/dialogues/alicetalk.rpy:3727
 translate english alice_private_punish_0_pun_bb2ccad5:
 
     # Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
-    Max_07 ""
+    Max_07 "That's so you remember that this is still supposed to be a punishment."
 
 # game/dialogues/alicetalk.rpy:3728
 translate english alice_private_punish_0_pun_53b5cc8a:
 
     # Alice_13 "А мне кажется, что это больше похоже на извращение! Давай прекращай..."
-    Alice_13 ""
+    Alice_13 "That sounds more like perversion to me! Come on, stop it..."
 
 # game/dialogues/alicetalk.rpy:3729
 translate english alice_private_punish_0_pun_be6fbddf:
 
     # Max_05 "Но приятное ведь?"
-    Max_05 ""
+    Max_05 "But you're liking it, right?"
 
 # game/dialogues/alicetalk.rpy:3733
 translate english alice_private_punish_0_pun_ab3fe557:
 
     # Alice_05 "Ага, сложно не заметить, сколько радости от этого в твоих шортах."
-    Alice_05 ""
+    Alice_05 "Well I can tell that something in your shorts seems to be enjoying it."
 
 # game/dialogues/alicetalk.rpy:3734
 translate english alice_private_punish_0_pun_094ba066:
 
     # Max_03 "На такую красотку, как ты, у любого встанет!"
-    Max_03 ""
+    Max_03 "Anyone can get a hard-on for a pretty girl like you!"
 
 # game/dialogues/alicetalk.rpy:3735
 translate english alice_private_punish_0_pun_d303c89a:
 
     # Alice_03 "Ах... Вот это комплимент! Не ожидала я такого от тебя, Макс. Так, всё, повеселились и хватит. Убери эту свою штуку и не появляйся в таком виде рядом со мной!"
-    Alice_03 ""
+    Alice_03 "Ah... What a compliment! I didn't expect that from you, Max. All right, that's enough fun. Put that thing away and don't come near me like that!"
 
 # game/dialogues/alicetalk.rpy:3737
 translate english alice_private_punish_0_pun_5a5d4bd5:
 
     # Max_02 "Хорошо, до следующего раза. А попка у тебя славная!" nointeract
-    Max_02 "" nointeract
+    Max_02 "Okay, until next time. You've got a nice ass!" nointeract
 
 # game/dialogues/alicetalk.rpy:3746
 translate english alice_private_punish_0_pun_7082b350:
 
     # Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
-    Alice_18 ""
+    Alice_18 "Ow, ow, ow! That hurts! Come on, Max. It's just like Mom, that's enough!"
 
 # game/dialogues/alicetalk.rpy:3747
 translate english alice_private_punish_0_pun_e65bca79:
 
     # Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
-    Max_07 ""
+    Max_07 "What kind of punishment would this be without a little pain?"
 
 # game/dialogues/alicetalk.rpy:3751
 translate english alice_private_punish_0_pun_3a2c72e7:
 
     # Alice_15 "Это не немножко... У тебя ещё и стоит на всё это! Я в шоке! Прикрылся бы хоть..."
-    Alice_15 ""
+    Alice_15 "It's more than a little... I'm getting more than I expected! You should at least cover up..."
 
 # game/dialogues/alicetalk.rpy:3752
 translate english alice_private_punish_0_pun_023850e4:
 
     # Max_03 "Ну, ты же девушка... И очень привлекательная!"
-    Max_03 ""
+    Max_03 "Well, you're a girl... And very attractive!"
 
 # game/dialogues/alicetalk.rpy:3753
 translate english alice_private_punish_0_pun_08cf69a4:
 
     # Alice_17 "И что? Я ещё и твоя сестра! Забыл? Всё, мы закончили. И что у тебя там, вообще, в башке творится..."
-    Alice_17 ""
+    Alice_17 "So? I'm also your sister! Remember? That's it, we're done. What's going on in that head of yours anyway..."
 
 # game/dialogues/alicetalk.rpy:3754
 translate english alice_private_punish_0_pun_1e46a369:
 
     # Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
-    Max_02 ""
+    Max_02 "Okay, until next time. You've got a nice ass!"
 
 # game/dialogues/alicetalk.rpy:3755
 translate english alice_private_punish_0_pun_e5a94fd2:
 
     # Alice_13 "Ох, и зачем я на всё это согласилась..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Oh, why did I agree to all this..." nointeract
 
 # game/dialogues/alicetalk.rpy:3771
 translate english alice_private_punish_r_8d5a5603:
 
     # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, давай побыстрее с этим покончим..."
-    Alice_03 ""
+    Alice_03 "Eh, Max... I've just been enjoying the sun. Come on, let's get it over with..."
 
 # game/dialogues/alicetalk.rpy:3775
 translate english alice_private_punish_r_smoke_f9653964:
 
     # Alice_05 "Да, Макс, сейчас... Только дай докурю спокойно и я в твоём распоряжении."
-    Alice_05 ""
+    Alice_05 "Yes, Max, now... Just let me smoke in peace, and I'm all yours."
 
 # game/dialogues/alicetalk.rpy:3776
 translate english alice_private_punish_r_smoke_5f4eb3c1:
 
     # Max_03 "Хорошо. Я подожду..." nointeract
-    Max_03 "" nointeract
+    Max_03 "Okay. I'll wait..." nointeract
 
 # game/dialogues/alicetalk.rpy:3786
 translate english alice_private_punish_r_smoke_pun_9bb538a8:
 
     # Alice_03 "Всё, я готова. Давай побыстрее с этим покончим..."
-    Alice_03 ""
+    Alice_03 "That's it, I'm ready. Let's just get this over with..."
 
 # game/dialogues/alicetalk.rpy:3795
 translate english alice_private_punish_r_pun_ace551c8:
 
     # Alice_05 "Мне же больше делать нечего, только и жду с самого утра, когда ты придёшь и накажешь меня!"
-    Alice_05 ""
+    Alice_05 "I have nothing else to do, I've been waiting for you to come and punish me all morning!"
 
 # game/dialogues/alicetalk.rpy:3796
 translate english alice_private_punish_r_pun_714f308a:
 
     # Max_02 "Сама разденешься или помочь?"
-    Max_02 ""
+    Max_02 "Will you undress yourself or help me?"
 
 # game/dialogues/alicetalk.rpy:3799
 translate english alice_private_punish_r_pun_1c0c8b5a:
 
     # Alice_04 "Вот тебе надо, чтобы я была голая, так сам и раздевай! Не облегчать же тебе работу..." nointeract
-    Alice_04 "" nointeract
+    Alice_04 "If you want me to be naked, then undress me yourself! I'm not making your job easier..." nointeract
 
 # game/dialogues/alicetalk.rpy:3805
 translate english alice_private_punish_r_pun_d739f9b9:
 
     # Alice_15 "Ну не так же резко, Макс! Смотри, если порвёшь мой купальник, я тебе тоже мигом что-нибудь порву..." nointeract
-    Alice_15 "" nointeract
+    Alice_15 "Well, don't be so harsh, Max! Look, if you tear my swimsuit, I'll tear something of yours..." nointeract
 
 # game/dialogues/alicetalk.rpy:3811
 translate english alice_private_punish_r_pun_56f85399:
 
     # Alice_06 "И чего глазеем? Шлёпай давай! Руки только не распускай слишком сильно." nointeract
-    Alice_06 "" nointeract
+    Alice_06 "What are you staring at? Slap it! Just don't be too forceful." nointeract
 
 # game/dialogues/alicetalk.rpy:3817
 translate english alice_private_punish_r_pun_daa1c1ea:
 
     # Alice_05 "Ты там уже начал? А то мне показалось, что это больше тянет на поглаживания, а не на шлепки..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Have you started yet? Feels more like a massage than a spanking..." nointeract
 
 # game/dialogues/alicetalk.rpy:3823
 translate english alice_private_punish_r_pun_57b399dd:
 
     # Alice_02 "Мне нравится, что небольно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
-    Alice_02 ""
+    Alice_02 "I like that it doesn't hurt. That's it, you've touched my ass, and that's all. If I don't stop you, you're just gonna keep sticking it where it doesn't belong..."
 
 # game/dialogues/alicetalk.rpy:3824
 translate english alice_private_punish_r_pun_c75cb6e6:
 
     # Max_03 "Просто зрелище такое... завораживающее."
-    Max_03 ""
+    Max_03 "It's just a sight... mesmerizing."
 
 # game/dialogues/alicetalk.rpy:3827
 translate english alice_private_punish_r_pun_5a4d6fec:
 
     # Alice_03 "Ты меня своим озабоченным взглядом не смущай. Вали уже, оденусь я без твоей помощи..."
-    Alice_03 ""
+    Alice_03 "Don't embarrass me with your worried look. Go away, I can get dressed without your help..."
 
 # game/dialogues/alicetalk.rpy:3834
 translate english alice_private_punish_r_pun_a4f2c5d6:
 
     # Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
-    Alice_06 ""
+    Alice_06 "Oh, Max! What's the matter with you? It hurts already. I thought you said you'd be gentle!"
 
 # game/dialogues/alicetalk.rpy:3835
 translate english alice_private_punish_r_pun_960d624c:
 
     # Max_04 "А я потру, чтобы не болело... Так легче?"
-    Max_04 ""
+    Max_04 "And I'll rub it so it doesn't hurt... Is that better?"
 
 # game/dialogues/alicetalk.rpy:3839
 translate english alice_private_punish_r_pun_42899ba4:
 
     # Alice_13 "Да, я не жалуюсь... Но можно было ведь и дальше шлёпать легонько."
-    Alice_13 ""
+    Alice_13 "Yeah, I'm not complaining... But you could have been more gentle."
 
 # game/dialogues/alicetalk.rpy:3840
 translate english alice_private_punish_r_pun_bb2ccad5:
 
     # Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
-    Max_07 ""
+    Max_07 "That's so you remember that this is still supposed to be a punishment."
 
 # game/dialogues/alicetalk.rpy:3841
 translate english alice_private_punish_r_pun_c0c2f489:
 
     # Alice_02 "Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
-    Alice_02 ""
+    Alice_02 "I like that it doesn't hurt. That's it, you've touched my ass, and that's all. If I don't stop you, you're just gonna keep sticking it where it doesn't belong..."
 
 # game/dialogues/alicetalk.rpy:3842
 translate english alice_private_punish_r_pun_c75cb6e6_1:
 
     # Max_03 "Просто зрелище такое... завораживающее."
-    Max_03 ""
+    Max_03 "It's just a sight... mesmerizing."
 
 # game/dialogues/alicetalk.rpy:3846
 translate english alice_private_punish_r_pun_38fc3e82:
 
     # Alice_03 "Ага, сложно не заметить, сколько радости от этого в твоих шортах. Приму это за комплимент, но хватит уже меня смущать своим озабоченным видом!"
-    Alice_03 ""
+    Alice_03 "Yeah, it's hard not to notice what's happening in your shorts. I'll take that as a compliment, but stop embarrassing me with your horny look!"
 
 # game/dialogues/alicetalk.rpy:3849
 translate english alice_private_punish_r_pun_8f47acee:
 
     # Max_02 "Хорошо, до следующего раза." nointeract
-    Max_02 "" nointeract
+    Max_02 "Okay, see you next time." nointeract
 
 # game/dialogues/alicetalk.rpy:3858
 translate english alice_private_punish_r_pun_7082b350:
 
     # Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
-    Alice_18 ""
+    Alice_18 "Ow, ow, ow! That hurts! Come on, Max. It's just like Mom, that's enough!"
 
 # game/dialogues/alicetalk.rpy:3859
 translate english alice_private_punish_r_pun_e65bca79:
 
     # Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
-    Max_07 ""
+    Max_07 "What kind of punishment would this be without a little pain?"
 
 # game/dialogues/alicetalk.rpy:3863
 translate english alice_private_punish_r_pun_3a2c72e7:
 
     # Alice_15 "Это не немножко... У тебя ещё и стоит на всё это! Я в шоке! Прикрылся бы хоть..."
-    Alice_15 ""
+    Alice_15 "It's more than a little... I'm getting more than I expected! You should at least cover up..."
 
 # game/dialogues/alicetalk.rpy:3864
 translate english alice_private_punish_r_pun_023850e4:
 
     # Max_03 "Ну, ты же девушка... И очень привлекательная!"
-    Max_03 ""
+    Max_03 "Well, you're a girl... And very attractive!"
 
 # game/dialogues/alicetalk.rpy:3865
 translate english alice_private_punish_r_pun_08cf69a4:
 
     # Alice_17 "И что? Я ещё и твоя сестра! Забыл? Всё, мы закончили. И что у тебя там, вообще, в башке творится..."
-    Alice_17 ""
+    Alice_17 "So? I'm also your sister! Remember? That's it, we're done. What's going on in that head of yours anyway.."
 
 # game/dialogues/alicetalk.rpy:3866
 translate english alice_private_punish_r_pun_1e46a369:
 
     # Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
-    Max_02 ""
+    Max_02 "Okay, until next time. You've got a nice ass!"
 
 # game/dialogues/alicetalk.rpy:3867
 translate english alice_private_punish_r_pun_e5a94fd2:
 
     # Alice_13 "Ох, и зачем я на всё это согласилась..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Oh, why did I agree to all this..." nointeract
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:984
     old "Если разрешишь тебя отшлёпать, то я ничего не скажу!"
-    new ""
+    new "If you let me spank you, I won't say anything!"
 
     # game/dialogues/alicetalk.rpy:1038
     old "Но сейчас тебя есть за что отшлёпать! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new ""
+    new "But now I have a reason to spank you! {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:1044
     old "{i}подождать Алису{/i}"
-    new ""
+    new "{i}Wait for Alice{i}"
 
     # game/dialogues/alicetalk.rpy:3603
     old "Ладно, как знаешь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new ""
+    new "Okay, whatever... {color=[_ch1.col]}(Persuasion. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:3683
     old "{i}стянуть верх купальника{/i}"
-    new ""
+    new "{i}Stretch the top of the swimsuit{/i}"
 
     # game/dialogues/alicetalk.rpy:3690
     old "{i}стянуть низ купальника{/i}"
-    new ""
+    new "{i}Stretch the bottom of the swimsuit{/i}"
 
     # game/dialogues/alicetalk.rpy:3698
     old "{i}шлёпать нежно{/i}"
-    new ""
+    new "{i}Spank gently{/i}"
 
     # game/dialogues/alicetalk.rpy:3698
     old "{i}шлёпать сильно{/i}"
-    new ""
+    new "{i}Spank hard{/i}"
 
     # game/dialogues/alicetalk.rpy:3704
     old "Ну вот, а ты не хотела!"
-    new ""
+    new "Well, you didn't want to!"
 
     # game/dialogues/alicetalk.rpy:3704
     old "Могу сильнее, а то это уже не наказание!"
-    new ""
+    new "I can do it harder, or it's no longer a punishment!"
 
     # game/dialogues/alicetalk.rpy:3817
     old "И как, тебе нравится?"
-    new ""
+    new "How do you like it?"
 
     # game/dialogues/alicetalk.rpy:3817
     old "Могу сильнее, раз ты заскучала!"
-    new ""
+    new "I can do more, if you're bored!"
 
 # TODO: Translation updated at 2021-04-20 19:51
 
@@ -9084,433 +9084,433 @@ translate english strings:
 translate english massage_sunscreen_spider_f5313802:
 
     # Alice_16 "Да плевать мне, куда он ползёт! Я хочу, чтобы его не было!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "I don't care how, I just want him gone!" nointeract
 
 # game/dialogues/alicetalk.rpy:2230
 translate english massage_sunscreen_sit_and_wait_f7d7f0ae:
 
     # Alice_13 "Ну, Макс... Может хватит уже так на меня реагировать?! Я же твоя сестра всё-таки!"
-    Alice_13 ""
+    Alice_13 "Well, Max... Will you stop reacting to me like that?! I'm your sister!"
 
 # game/dialogues/alicetalk.rpy:2231
 translate english massage_sunscreen_sit_and_wait_720cbf34:
 
     # Max_02 "А ты ещё сильнее прижмись ко мне своими сиськами... Эффект будет ещё ощутимее!"
-    Max_02 ""
+    Max_02 "You can't say that and then press your tits even harder against me!"
 
 # game/dialogues/alicetalk.rpy:2232
 translate english massage_sunscreen_sit_and_wait_a74aa1e4:
 
     # Alice_06 "Паука бы лучше отогнал!"
-    Alice_06 ""
+    Alice_06 "You'd better chase that spider away!"
 
 # game/dialogues/alicetalk.rpy:2233
 translate english massage_sunscreen_sit_and_wait_1f30d302:
 
     # Max_03 "Незачем, он и так уползает..."
-    Max_03 ""
+    Max_03 "There's no need, he's already crawling away..."
 
 # game/dialogues/alicetalk.rpy:2234
 translate english massage_sunscreen_sit_and_wait_fcf0a690:
 
     # Alice_12 "Точно?!"
-    Alice_12 ""
+    Alice_12 "Really?!"
 
 # game/dialogues/alicetalk.rpy:2235
 translate english massage_sunscreen_sit_and_wait_9da1a297:
 
     # Max_04 "Ага. В траву убежал."
-    Max_04 ""
+    Max_04 "Yep. Ran off into the grass."
 
 # game/dialogues/alicetalk.rpy:2239
 translate english massage_sunscreen_sit_and_wait_45030154:
 
     # Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."
-    Alice_07 ""
+    Alice_07 "Whew... Okay. Just keep an eye for me in case another one crawls over to me."
 
 # game/dialogues/alicetalk.rpy:2240
 translate english massage_sunscreen_sit_and_wait_63bd396f:
 
     # Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
-    Max_02 ""
+    Max_02 "All right. But if you need anything, call me. We'll stay for a while."
 
 # game/dialogues/alicetalk.rpy:2241
 translate english massage_sunscreen_sit_and_wait_54c7faac:
 
     # Alice_05 "Тебе хватит. Не обольщайся..."
-    Alice_05 ""
+    Alice_05 "You've had enough. Don't get excited... "
 
 # game/dialogues/alicetalk.rpy:2242
 translate english massage_sunscreen_sit_and_wait_de3d2863:
 
     # Max_01 "Ага."
-    Max_01 ""
+    Max_01 "Right."
 
 # game/dialogues/alicetalk.rpy:2246
 translate english massage_sunscreen_sit_and_wait_88d0ea09:
 
     # Alice_15 "Ты совсем что ли извращенец? На родную сестру у него стоит!"
-    Alice_15 ""
+    Alice_15 "Are you some kind of pervert? You've got a hard-on for your own sister!"
 
 # game/dialogues/alicetalk.rpy:2247
 translate english massage_sunscreen_sit_and_wait_ff5172bb:
 
     # Max_10 "Ай, Алиса, больно! Сама же своими голыми сиськами в моё лицо упёрлась! А они красивые... Чего ты ещё ожидала?!"
-    Max_10 ""
+    Max_10 "Ow, Alice, that hurts! You're the one with your bare tits in my face! And they're beautiful... What did you expect?!"
 
 # game/dialogues/alicetalk.rpy:2248
 translate english massage_sunscreen_sit_and_wait_a71b7a30:
 
     # Alice_16 "Всё, не хочу об этом говорить... Давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
-    Alice_16 ""
+    Alice_16 "That's it, I don't want to talk about it... Go on, get out of here. Get out of here! Or I'll kick your ass right now!"
 
 # game/dialogues/alicetalk.rpy:2249
 translate english massage_sunscreen_sit_and_wait_64bbd7a2:
 
     # Max_09 "Да ухожу я, уши только мои в покое оставь!"
-    Max_09 ""
+    Max_09 "I'm going, just leave my ears alone!"
 
 # game/dialogues/alicetalk.rpy:2257
 translate english massage_sunscreen_sit_and_wait_f7d7f0ae_1:
 
     # Alice_13 "Ну, Макс... Может хватит уже так на меня реагировать?! Я же твоя сестра всё-таки!"
-    Alice_13 ""
+    Alice_13 "Well, Max... Will you stop reacting to me like that?! I'm your sister!"
 
 # game/dialogues/alicetalk.rpy:2258
 translate english massage_sunscreen_sit_and_wait_720cbf34_1:
 
     # Max_02 "А ты ещё сильнее прижмись ко мне своими сиськами... Эффект будет ещё ощутимее!"
-    Max_02 ""
+    Max_02 "You can't say that and then press your tits even harder against me!"
 
 # game/dialogues/alicetalk.rpy:2259
 translate english massage_sunscreen_sit_and_wait_2edc53d2:
 
     # Alice_06 "Куда уж ещё ощутимее! Я и так почти что на твоём члене сижу..."
-    Alice_06 ""
+    Alice_06 "It doesn't get much closer than that! I'm practically sitting on your dick as it is..."
 
 # game/dialogues/alicetalk.rpy:2260
 translate english massage_sunscreen_sit_and_wait_4a9e590c:
 
     # Max_03 "Зато, паук в совершенно противоположную сторону от нас уползает!"
-    Max_03 ""
+    Max_03 "But, the spider crawled away from us in the opposite direction!"
 
 # game/dialogues/alicetalk.rpy:2261
 translate english massage_sunscreen_sit_and_wait_fcf0a690_1:
 
     # Alice_12 "Точно?!"
-    Alice_12 ""
+    Alice_12 "Really?!"
 
 # game/dialogues/alicetalk.rpy:2262
 translate english massage_sunscreen_sit_and_wait_9da1a297_1:
 
     # Max_04 "Ага. В траву убежал."
-    Max_04 ""
+    Max_04 "Yeah. Got away to the grass."
 
 # game/dialogues/alicetalk.rpy:2266
 translate english massage_sunscreen_sit_and_wait_975489a5:
 
     # Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
-    Alice_05 ""
+    Alice_05 "Oh... I'm sorry that I've been a bit of a jerk to you... I didn't do it on purpose."
 
 # game/dialogues/alicetalk.rpy:2267
 translate english massage_sunscreen_sit_and_wait_6bb8e8fa:
 
     # Max_03 "Не слишком-то ты раскаиваешься, а?"
-    Max_03 ""
+    Max_03 "You're not too remorseful, are you?"
 
 # game/dialogues/alicetalk.rpy:2268
 translate english massage_sunscreen_sit_and_wait_429171c6:
 
     # Alice_02 "Будем считать, что твой стояк меня сегодня спас! Паук сразу убежал... И я теперь чувствую себя, какой-то защищённой, что ли... Кажется, уже и я какой-то извращенкой становлюсь!"
-    Alice_02 ""
+    Alice_02 "I'll consider that your boner saved me today! The spider ran off... And now I feel, like, protected or something. I feel like I'm becoming some kind of pervert too."
 
 # game/dialogues/alicetalk.rpy:2269
 translate english massage_sunscreen_sit_and_wait_d2128d74:
 
     # Max_04 "Это у нас семейное, по-видимому."
-    Max_04 ""
+    Max_04 "It runs in the family, apparently."
 
 # game/dialogues/alicetalk.rpy:2270
 translate english massage_sunscreen_sit_and_wait_25ec43fd:
 
     # Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
-    Alice_07 ""
+    Alice_07 "But you'd better clean up, because we look really weird from the outside right now."
 
 # game/dialogues/alicetalk.rpy:2271
 translate english massage_sunscreen_sit_and_wait_0f9075aa:
 
     # Max_02 "Да не так-то это просто сделать..."
-    Max_02 ""
+    Max_02 "That's not so easy to do..."
 
 # game/dialogues/alicetalk.rpy:2272
 translate english massage_sunscreen_sit_and_wait_87cca898:
 
     # Alice_05 "А ты постарайся."
-    Alice_05 ""
+    Alice_05 "You do your best."
 
 # game/dialogues/alicetalk.rpy:2273
 translate english massage_sunscreen_sit_and_wait_de3d2863_1:
 
     # Max_01 "Ага."
-    Max_01 ""
+    Max_01 "Right."
 
 # game/dialogues/alicetalk.rpy:2277
 translate english massage_sunscreen_sit_and_wait_3b66c1cd:
 
     # Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."
-    Alice_12 ""
+    Alice_12 "What the hell, Max?! What are you, some kind of pervert? I'm your sister! Shit... At least cover up..."
 
 # game/dialogues/alicetalk.rpy:2278
 translate english massage_sunscreen_sit_and_wait_0aa348ea:
 
     # Max_01 "Да не так-то это просто, прикрыть его."
-    Max_01 ""
+    Max_01 "It's not that easy to cover it up."
 
 # game/dialogues/alicetalk.rpy:2279
 translate english massage_sunscreen_sit_and_wait_6b77c813:
 
     # Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
-    Alice_06 ""
+    Alice_06 "I didn't expect this from you, Max. What's going on in your head?!"
 
 # game/dialogues/alicetalk.rpy:2280
 translate english massage_sunscreen_sit_and_wait_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 ""
+    Max_07 "What did you expect?! You jumped on top of me and put your bare tits in my face... By the way, I can't help but notice how soft they are!"
 
 # game/dialogues/alicetalk.rpy:2281
 translate english massage_sunscreen_sit_and_wait_e0dd7b8f:
 
     # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
-    Alice_13 ""
+    Alice_13 "No, you're definitely sick... Okay, let's say nothing happened. Put that thing away and don't come near me like this!"
 
 # game/dialogues/alicetalk.rpy:2282
 translate english massage_sunscreen_sit_and_wait_4970a131:
 
     # Max_02 "Хорошо. Не скучай."
-    Max_02 ""
+    Max_02 "Okay. Don't be upset."
 
 # game/dialogues/alicetalk.rpy:2289
 translate english massage_sunscreen_hide_behind_4afa2c53:
 
     # Alice_06 "Нет, я боюсь..."
-    Alice_06 ""
+    Alice_06 "No, I'm scared..."
 
 # game/dialogues/alicetalk.rpy:2290
 translate english massage_sunscreen_hide_behind_15ab4ca7:
 
     # Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
-    Max_09 ""
+    Max_09 "What if he comes running at us, right up your ass!"
 
 # game/dialogues/alicetalk.rpy:2294
 translate english massage_sunscreen_hide_behind_9657c7e4:
 
     # Alice_13 "Ой, нет! Не надо к моей попке! Что ему вообще надо тут?! Почему ему в траве не сидится или где он там живёт..."
-    Alice_13 ""
+    Alice_13 "Oh, no! Don't go near my ass! What's he doing here, anyway?! Why can't he stay in the grass or wherever he lives..."
 
 # game/dialogues/alicetalk.rpy:2295
 translate english massage_sunscreen_hide_behind_348c3ca5:
 
     # Max_07 "Ну... Не то, чтобы меня что-то не устраивало сейчас, но ты держишься за меня!"
-    Max_07 ""
+    Max_07 "Well... It's not that I'm not happy with anything right now, but you're sticking with me!"
 
 # game/dialogues/alicetalk.rpy:2299
 translate english massage_sunscreen_hide_behind_1aef0366:
 
     # Alice_12 "Конечно держусь! Мне же страшно, Макс! Ты ведь знаешь, как я их боюсь..."
-    Alice_12 ""
+    Alice_12 "Of course I am! I'm scared, Max! You know that..."
 
 # game/dialogues/alicetalk.rpy:2300
 translate english massage_sunscreen_hide_behind_92d357db:
 
     # Max_03 "Нет, я в смысле, ты держишься за мой член! Это, конечно, весьма приятно... Но ты же на меня, как всегда, разорёшься потом!"
-    Max_03 ""
+    Max_03 "No, I mean, you're holding my dick! That's very nice, of course... But you're going to be mad at me afterwards, like always!"
 
 # game/dialogues/alicetalk.rpy:2303
 translate english massage_sunscreen_hide_behind_2ead0b6d:
 
     # Alice_15 "Ой! Я это не специально! Видишь, насколько я этих пауков не переношу? Даже не поняла, за что схватилась..."
-    Alice_15 ""
+    Alice_15 "Oh! I didn't do it on purpose! See how much I can't stand these spiders? I didn't even know what I was grabbing..."
 
 # game/dialogues/alicetalk.rpy:2304
 translate english massage_sunscreen_hide_behind_955fd37c:
 
     # Max_02 "Да ладно, схватилась и схватилась. Уж это точно не страшно!"
-    Max_02 ""
+    Max_02 "Come on, it's certainly not scary!"
 
 # game/dialogues/alicetalk.rpy:2305
 translate english massage_sunscreen_hide_behind_b7b059d0:
 
     # Alice_12 "Он уползает, кстати..."
-    Alice_12 ""
+    Alice_12 "It's crawling away..."
 
 # game/dialogues/alicetalk.rpy:2306
 translate english massage_sunscreen_hide_behind_2cb42984:
 
     # Max_05 "Точно! Наверно, испугался моей торчащей мощи!"
-    Max_05 ""
+    Max_05 "That's right! Probably scared of my protruding power!"
 
 # game/dialogues/alicetalk.rpy:2307
 translate english massage_sunscreen_hide_behind_b238bcf5:
 
     # Alice_07 "У тебя что, стоит до сих пор?!"
-    Alice_07 ""
+    Alice_07 "Are you still hard?!"
 
 # game/dialogues/alicetalk.rpy:2308
 translate english massage_sunscreen_hide_behind_7976c130:
 
     # Max_04 "Ну... Ты так классно ко мне прижимаешься... Мне приятно!"
-    Max_04 ""
+    Max_04 "Well... You're so nice to me... It feels good!"
 
 # game/dialogues/alicetalk.rpy:2312
 translate english massage_sunscreen_hide_behind_975489a5:
 
     # Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
-    Alice_05 ""
+    Alice_05 "Oh... I'm sorry that I've been a bit of a jerk to you... I didn't do it on purpose."
 
 # game/dialogues/alicetalk.rpy:2313
 translate english massage_sunscreen_hide_behind_6bb8e8fa:
 
     # Max_03 "Не слишком-то ты раскаиваешься, а?"
-    Max_03 ""
+    Max_03 "You're not too remorseful, are you?"
 
 # game/dialogues/alicetalk.rpy:2314
 translate english massage_sunscreen_hide_behind_429171c6:
 
     # Alice_02 "Будем считать, что твой стояк меня сегодня спас! Паук сразу убежал... И я теперь чувствую себя, какой-то защищённой, что ли... Кажется, уже и я какой-то извращенкой становлюсь!"
-    Alice_02 ""
+    Alice_02 "I'll consider that your boner saved me today! The spider ran off... And now I feel, like, protected or something. I feel like I'm becoming some kind of pervert too."
 
 # game/dialogues/alicetalk.rpy:2315
 translate english massage_sunscreen_hide_behind_d2128d74:
 
     # Max_04 "Это у нас семейное, по-видимому."
-    Max_04 ""
+    Max_04 "It runs in the family, apparently."
 
 # game/dialogues/alicetalk.rpy:2316
 translate english massage_sunscreen_hide_behind_25ec43fd:
 
     # Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
-    Alice_07 ""
+    Alice_07 "But you'd better clean up, because we look really weird from the outside right now."
 
 # game/dialogues/alicetalk.rpy:2317
 translate english massage_sunscreen_hide_behind_0f9075aa:
 
     # Max_02 "Да не так-то это просто сделать..."
-    Max_02 ""
+    Max_02 "That's not so easy to do..."
 
 # game/dialogues/alicetalk.rpy:2318
 translate english massage_sunscreen_hide_behind_87cca898:
 
     # Alice_05 "А ты постарайся."
-    Alice_05 ""
+    Alice_05 "You do your best."
 
 # game/dialogues/alicetalk.rpy:2319
 translate english massage_sunscreen_hide_behind_de3d2863:
 
     # Max_01 "Ага."
-    Max_01 ""
+    Max_01 "Right."
 
 # game/dialogues/alicetalk.rpy:2329
 translate english massage_sunscreen_squeeze_chest_50d218c8:
 
     # Alice_14 "Ты офигел что ли, Макс! Ну-ка руки быстро убери, пока не получил..."
-    Alice_14 ""
+    Alice_14 "What the fuck is wrong with you, Max? Get your hands off me before you get..."
 
 # game/dialogues/alicetalk.rpy:2330
 translate english massage_sunscreen_squeeze_chest_d339927c:
 
     # Max_07 "Шуму-то сколько... У тебя сиськи голые, вот я их и прикрыл! А то мало ли кто увидит..."
-    Max_07 ""
+    Max_07 "What a lot of noise... Your tits are exposed, so I covered them up! You don't want anyone to see them..."
 
 # game/dialogues/alicetalk.rpy:2334
 translate english massage_sunscreen_squeeze_chest_f1d7395d:
 
     # Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо..." nointeract
-    Alice_15 "" nointeract
+    Alice_15 "What? Spiders or something?! If you don't take your hands off in five seconds, you're gonna regret it..." nointeract
 
 # game/dialogues/alicetalk.rpy:2346
 translate english massage_sunscreen_squeeze_chest_1160d297:
 
     # Max_02 "Всё, убрал. Правда, если ты продолжишь так крепко прижиматься ими к моему лицу, то есть риск..."
-    Max_02 ""
+    Max_02 "That's it, it's gone. But if you keep pressing them so hard against my face, there's a risk..."
 
 # game/dialogues/alicetalk.rpy:2347
 translate english massage_sunscreen_squeeze_chest_6804276a:
 
     # Alice_06 "Макс... Я что, практически на твоём члене сейчас сижу?!"
-    Alice_06 ""
+    Alice_06 "Max... Am I practically sitting on your dick right now?!"
 
 # game/dialogues/alicetalk.rpy:2348
 translate english massage_sunscreen_squeeze_chest_c1a03ce0:
 
     # Max_03 "А сама как думаешь?"
-    Max_03 ""
+    Max_03 "What do you think?"
 
 # game/dialogues/alicetalk.rpy:2362
 translate english massage_sunscreen_hands_off_fda55c91:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
-    Max_12 ""
+    Max_12 "Ah-ah-ah! You're hurting me, Alice! Stop it!"
 
 # game/dialogues/alicetalk.rpy:2363
 translate english massage_sunscreen_hands_off_6af5aed9:
 
     # Alice_16 "А я ведь тебя предупреждала! Наверно, раз до тебя не дошло, нужно крутануть ещё сильнее..."
-    Alice_16 ""
+    Alice_16 "And I warned you! I guess if you don't get it, I'll have to twist even harder..."
 
 # game/dialogues/alicetalk.rpy:2364
 translate english massage_sunscreen_hands_off_244d58a6:
 
     # Max_14 "Ой! Я понял... Больше не буду! Отпусти уже..."
-    Max_14 ""
+    Max_14 "Ow! I got it... I won't do it again! Let go already..."
 
 # game/dialogues/alicetalk.rpy:2365
 translate english massage_sunscreen_hands_off_f8029f81:
 
     # Alice_17 "Всё, давай, шуруй отсюда. Бегом! А то я живо тебе по заднице напинаю!"
-    Alice_17 ""
+    Alice_17 "Go on, get out of here. Get out of here! Or I'll kick your ass right now!"
 
 # game/dialogues/alicetalk.rpy:2371
 translate english massage_sunscreen_hands_off_fda55c91_1:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
-    Max_12 ""
+    Max_12 "Ah-ah-ah! You're hurting me, Alice! Stop it!"
 
 # game/dialogues/alicetalk.rpy:2372
 translate english massage_sunscreen_hands_off_b767f1de:
 
     # Alice_00 "Ах, у тебя ещё и стоит на это всё! Совсем что ли извращенец? Я же твоя сестра!"
-    Alice_00 ""
+    Alice_00 "Oh, you have a hard-on for all this! How perverted can you get? I'm your sister!"
 
 # game/dialogues/alicetalk.rpy:2373
 translate english massage_sunscreen_hands_off_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 ""
+    Max_07 "What did you expect?! You jumped on top of me and put your bare tits in my face... By the way, I can't help but notice how soft they are!"
 
 # game/dialogues/alicetalk.rpy:2374
 translate english massage_sunscreen_hands_off_e0dd7b8f:
 
     # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
-    Alice_13 ""
+    Alice_13 "No, you're definitely sick... Okay, let's say nothing happened. Put that thing away and don't come near me like this!"
 
 # game/dialogues/alicetalk.rpy:2375
 translate english massage_sunscreen_hands_off_64bbd7a2:
 
     # Max_09 "Да ухожу я, уши только мои в покое оставь!"
-    Max_09 ""
+    Max_09 "Yes, I'm leaving, just leave my ears alone!"
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:2206
     old "Давай лучше ещё так посидим, подождём. Вон он, уползает..."
-    new ""
+    new "Let's just sit here and wait. There he is, crawling away..."
 
     # game/dialogues/alicetalk.rpy:2206
     old "Спрячься за меня, хотя бы..."
-    new ""
+    new "Hide behind me, at least..."
 
     # game/dialogues/alicetalk.rpy:2206
     old "{i}потискать Алису за грудь{/i}"
-    new ""
+    new "{i}Squeeze Alice's breasts{/i}"
 

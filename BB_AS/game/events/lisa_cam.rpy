@@ -50,12 +50,6 @@ label cam1_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath_mirror' not in cam_flag:
             $ cam_flag.append('lisa_bath_mirror')
-            # if __r1 in ['a', 'b']:
-            #     Max_02 "Да-а... Может сестрёнка и в халатике, но её упругие сисечкики видны просто замечательно! А они у неё - что надо..."
-            # elif __r1 == 'c':
-            #     Max_04 "Прекрасно! Сестрёнка сегодня в одних трусиках... Глядя на эту красоту, можно мечтать лишь об одном!"
-            # else:
-            #     Max_06 "Вау! Лиза примеряет костюм Евы!"
             Max_03 "Лиза, прежде чем принять душ, любуется собой перед зеркалом. И мы этим со зрителями тоже полюбуемся..."
 
     else:
@@ -105,7 +99,6 @@ label cam0_lisa_dressed_school:
         return
 
     $ cam_flag.append('lisa_dressed')
-    # $ spent_time += 10
     $ Wait(10)
 
     $ __r1 = renpy.random.choice(['00', '01', '02'])
@@ -253,7 +246,7 @@ label cam0_lisa_bath:
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath0_st1' not in cam_flag:
             $ cam_flag.append('lisa_bath0_st1')
-            Max_04 "Эх, Лиза... Не вытерайся! Ты мокренькая тоже обалденная..."
+            Max_04 "Эх, Лиза... Не вытирайся! Ты мокренькая тоже обалденная..."
     else:
         $ renpy.show('Lisa cams bath '+cam_poses_manager(lisa, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen

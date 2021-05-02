@@ -427,7 +427,6 @@ init python:
             self.promise        = False
             self.hip_mass       = 0
             self.hugs_type      = 0
-            self.battle_st      = 0
             self.private        = False
 
             #счетчики
@@ -458,9 +457,9 @@ init python:
         photo       = None      # фотосессии
         set_up      = None      # можем подставить
         feature     = None      # секреты, особенности, стадии бесед
-        special     = None      # курение Алисы, фильм-наказание с Лизой
+        special     = None      # курение Алисы, фильм-наказание с Лизой, ночные посещения с Оливией
         seduce      = None      # соблазнение
-        other       = None      # прочее
+        other       = None      # прочее, просмотры ТВ с Оливией
         gifts       = None      # особые подарки
         private     = None      # доступно приватное наказание
 
@@ -1111,33 +1110,35 @@ init python:
 
     ############################################################################
 
+    class PossHint():   # подсказки к этапу возможности
+        def __init__(self, stage, hint, req):
+            self.stage  = stage     # этап возможности
+            self.hint   = hint      # подсказака
+            self.req    = req       # условие отображения подсказки
+
     class PossStage():  # Описание этапа возможности
-        used   = False
-        def __init__(self, image="", desc="", ps=""):
-            self.image  = image # изображение в экран описания возможностей
+        used    = False
+        hints   = None
+        def __init__(self, img="", desc="", ps="", hints=[]):
+            self.img    = img   # изображение в экран описания возможностей
             self.desc   = desc  # описание этапа возможности (в окно возможэностей)
-            self.ps     = ps    # послесловие (мысли ГГ по поводу развития или сообщение о временном или постоянном окончании возможности)
+            self.ps     = ps    # послесловие (мысли ГГ по поводу развития)
+            self.used   = False # этап был пройден
+            self.hints  = hints # список подсказок к этапу возможности
+
         def __repr__(self):
-            return "изображение=\"{self.image}\", описание: {self.desc}, послесловие: {self.ps}\n".format(self=self)
+            return "изображение=\"{self.img}\", описание: {self.desc}, послесловие: {self.ps}\n".format(self=self)
 
     class Poss():  # описание возможности
-        stn = -1  # текущий этап
-        def __init__(self, name, stages=[]):
-            self.name   = name    # Наименование (в экран описания возможностей)
-            self.stages = stages  # список этапов возможности
+        stn     = -1
+        def __init__(self, stages=[]):
+            # self.stn    = -1        # текущий этап
+            self.stages = stages    # список НОМЕРОВ этапов возможности
+
         def __repr__(self):
-            return "Наименование=\"{self.name}\", текущий этап: {self.stn}, список этапов:\n {self.stages}".format(self=self)
+            return "{cur} ({self.stages})".format(self=self, cur = max([i if st else -1 for i, st in enumerate(self.stages)]))
 
-        def SetStage(self, stage):  # устанавливает этап "возможности"
-            a = [1 for st in self.stages if st.used]
-
-            self.stn = stage
-            self.stages[stage].used = True
-
-            if sum(a) == 0:
-                notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
-
-        def OpenStage(self, stage): # открывает этап "возможности", если номер этапа больше текущего, устанавливает текущим новый этап
+        def OpenStage(self, stage): # для корректировки старых сохранений
             a = [1 for st in self.stages if st.used]
             self.stages[stage].used = True
             if self.stn < stage:
@@ -1145,8 +1146,14 @@ init python:
             if sum(a) == 0:
                 notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
 
-        def Used(self, stage):      # проверяет, задействован ли этап возможности
-            return self.stages[stage].used
+        def open(self, stage): # открывает этап "возможности", если номер этапа больше текущего, устанавливает текущим новый этап
+            if sum(self.stages) < 1:
+                notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
+            self.stages[stage] = 1
+
+        def used(self, stage):      # проверяет, задействован ли этап возможности
+            return self.stages[stage]   #.used
+
 
     ############################################################################
 
@@ -1313,6 +1320,11 @@ init python:
         Eric_laceling   = CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7])")
 
         MeetingOlivia   = CutEvent('16:00', (3, ), 'olivia_first_meeting', "Оливия приходит на виллу в первый раз", "all([GetWeekday(day)==3, lisa.flags.crush==11, lisa.dcv.feature.done])", cut=True)
+        Night_Olivia    = CutEvent('00:00', (6, ), 'olivia_night_visit', "Оливия приходит на ночные посиделки", "all([GetWeekday(day)==6, olivia_nightvisits()])", cut=True)
+
+        Lisa_ab_Alex1   = CutEvent('20:00', (3, ), 'about_alex1', "1-й разговор с Лизой о подкате Алекса", "all([olivia.dcv.feature.stage==5, lisa.flags.crush==12])"),
+        Lisa_ab_Alex2   = CutEvent('20:00', (5, ), 'about_alex2', "2-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==13, lisa.dcv.feature.done])"),
+        Lisa_ab_Alex3   = CutEvent('20:00', (1, ), 'about_alex3', "3-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==14, lisa.dcv.feature.done])"),
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

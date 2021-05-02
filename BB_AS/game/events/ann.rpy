@@ -608,7 +608,7 @@ label ann_sun:
 
 
 label ann_alice_sun:
-    scene BG char Ann Alice 2sun-00
+    scene BG 2sun-00
     $ renpy.show('Alice 2sun '+pose3_2)
     # $ persone_button1 = 'Alice 2sun '+pose3_2
     $ renpy.show('Ann 2sun '+pose3_3)

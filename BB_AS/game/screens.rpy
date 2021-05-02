@@ -408,10 +408,6 @@ screen main_menu():
             $ __short_ver = config.version[0:4]
             text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
-    # $ __fix = config.version[-4:]
-    # if __fix > "0.00":
-    #     text "Исправление [__fix]" pos(1900, 950) xalign 1.0 color "#000000"
-
     imagebutton:
         idle "interface patreon logo"
         action OpenURL("https://www.patreon.com/aleksey90artimages")

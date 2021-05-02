@@ -707,7 +707,7 @@ label kira_night_swim:
         Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
         menu:
             Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?"
-            "Да, что-то не спится... К тебе можно?" if kira.stat.handjob < 1:  #только при 1-ой дрочке в бассейне, прописать переменную
+            "Да, что-то не спится... К тебе можно?" if kira.stat.handjob < 1:
                 if not _in_replay:
                     $ SetCamsGrow(house[6], 200)
                 scene BG char Kira pool-night-01
@@ -894,7 +894,7 @@ label kira_night_tv:
                 lst.append('porn-0'+str(i)+' 0'+str(j))
         if not _in_replay:
             for j in range(1, 7):
-                lst.append('serial 0'+str(j))
+                lst.append('serial 0'+str(j)+'0'+str(renpy.random.randint(1, 3)))
     $ film = renpy.random.choice(lst)
     $ naked = False
     $ renpy.show('tv '+film, at_list=[tv_screen,])
@@ -1076,7 +1076,7 @@ label kira_night_tv:
                 "{i}начать дрочить{/i}":
                     pass
 
-            scene BG char Alice tv-mass-05
+            scene BG tv-mass-05
             show Kira tv-closer max-03
 
             Max_05 "{i}( С ума сойти... Я дрочу на глазах у своей тёти перед огромным экраном, на котором показывают порно... А она продолжает трогать свою грудь... и даже раздвинула ножки... И не стесняясь ласкает свою киску через трусики! ){/i}"
@@ -1086,7 +1086,7 @@ label kira_night_tv:
                 "{i}кончить{/i}":
                     pass
 
-            scene BG char Kira tv-kiss-03
+            scene BG tv-kiss-03
             show Kira tv-closer max-04
             Kira_09 "Ох, ты уже? Так быстро... Ну, иди приведи себя в порядок и ложись спать. Тебе уже пора. Я тоже скоро... заканчиваю..."
             Max_04 "Хорошо. Спокойной ночи, тётя Кира."
@@ -1109,7 +1109,7 @@ label kira_night_tv:
             Kira_07 "Не стесняйся, Макс... Вижу, тебе уже очень тесно в шортах, доставай свой член! На экране уже давно это сделали... Ты отстаёшь..."
             Max_04 "Меня уговаривать не надо..."
 
-            scene BG char Alice tv-mass-05
+            scene BG tv-mass-05
             show Kira tv-closer max-03
             $ suf = ''
             if kira.flags.m_foot:
@@ -1132,7 +1132,7 @@ label kira_night_tv:
             menu:
                 Max_20 "{i}( Да, Кира... Твоя помощь бы мне не помешала... Хотя... похоже, я сейчас кончу и без этого! ){/i}"
                 "{i}кончить{/i}":
-                    scene BG char Kira tv-kiss-03
+                    scene BG tv-kiss-03
                     $ renpy.show('Kira tv-closer max-04'+suf)
 
             Kira_09 "Ох, ты всё? Ну, тогда иди приведи себя в порядок и ложись спать. Тебе уже пора. Я тоже уже близка к тому... чтобы закончить..."
@@ -1140,7 +1140,7 @@ label kira_night_tv:
             jump .end
 
     label .promise_cuni:
-        scene BG char Alice tv-mass-05
+        scene BG tv-mass-05
         show Kira tv-closer max-03b
         if not _in_replay:
             $ SetCamsGrow(house[4], 200)
@@ -1169,7 +1169,7 @@ label kira_night_tv:
                     scene BG char Kira tv-cun-01
                     show Kira tv-game cun-05-1
                 else:
-                    scene BG char Kira tv-kiss-03
+                    scene BG tv-kiss-03
                     show Kira tv-game cun-05-2
         menu:
             Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ммм..."
@@ -1179,7 +1179,7 @@ label kira_night_tv:
             scene BG lounge-tv-01
             show Kira tv-game cun-06-1
         elif r1<3:
-            scene BG char Kira tv-kiss-03
+            scene BG tv-kiss-03
             show Kira tv-game cun-06-2
         else:
             scene BG char Alice tv-mass-11
@@ -1251,7 +1251,7 @@ label kira_night_tv:
         Max_01 "Конечно! Спасибо, тётя Кира!"
         $ renpy.end_replay()
         $ persistent.memories['kira_night_tv.first_lesson'] = 1
-        $ poss['seduction'].OpenStage(7)
+        $ poss['seduction'].open(7)
         $ lisa.dcv.seduce.stage = 2
         $ SetCamsGrow(house[4], 150)
 
@@ -1317,7 +1317,7 @@ label kira_night_tv:
 
             "{i}подтянуть её ближе к себе{/i}":
                 $ renpy.block_rollback()
-                scene BG char Alice tv-mass-05
+                scene BG tv-mass-05
                 show Kira tv-kiss 2-01
                 $ Skill('kissing', 0.1, 3.0)
                 menu:
@@ -1346,7 +1346,7 @@ label kira_night_tv:
                             "{i}прикоснуться к её груди{/i}":
                                 pass
 
-                scene BG char Kira tv-kiss-03
+                scene BG tv-kiss-03
                 show Kira tv-kiss 3-01
                 Max_04 "{i}( Отлично! Кажется, ей действительно нравится, что я делаю... Она целует меня с такой жадностью, пока я мну её обалденную грудь... Она прикасается всё ниже и ниже, класс! ){/i}"
                 if not _in_replay:
@@ -1379,7 +1379,7 @@ label kira_night_tv:
                             "{i}развязать её ночнушку{/i}":
                                 if not _in_replay:
                                     $ kira.flags.m_breast = 2  # теперь в ванной Макс сможет получить FJ (убеждение уже не нужно)
-                                scene BG char Kira tv-kiss-03
+                                scene BG tv-kiss-03
                                 show Kira tv-kiss 3-02
                                 Max_05 "{i}( Да! Я сделал это! Наконец-то я могу насладиться нежностью её обнажённой груди... Обалдеть можно, какая же она классная! Похоже, Кире тоже это нравится, я уже чувствую, как набухли её сосочки. Ухх, чёрт... она начала поглаживать мой член... ){/i}"
                                 Kira_05 "О боже, Макс... Какой же ты развратник, забрался мне под ночнушку... Охх... Это очень мило, что я вызываю такое влечение у своего племянника, но нам надо остановиться..."
@@ -1411,13 +1411,13 @@ label kira_night_tv:
         menu:
             Max_04 "{i}( Кажется, мне никогда не надоест это делать с такой женщиной... Ну и что, что она моя тётя... Но она так классно целуется! ){/i}"
             "{i}подтянуть её ближе к себе{/i}":
-                scene BG char Alice tv-mass-05
+                scene BG tv-mass-05
                 show Kira tv-kiss 2-01
         Max_01 "{i}( Класс! Она и без моей помощи норовит страстно прижаться ко мне. Её нежная грудь слегка трётся об меня от чего мы начинаем целоваться ещё более страстно... ){/i}"
         scene BG tv-mass-01
         show Kira tv-kiss 2-02
         Max_03 "{i}( А от жара её мягкой попки под моей рукой можно потерять весь контроль... Но пора двигаться выше. Охх... Кажется, я начинаю возбуждаться... ){/i}"
-        scene BG char Kira tv-kiss-03
+        scene BG tv-kiss-03
         show Kira tv-kiss 3-01
         menu:
             Max_02 "{i}( О да! Как же это приятно, ощущать в руке упругость груди тёти Киры и наслаждаться её жаркими поцелуями... О таких уроках я и мечтать раньше не мог! ){/i}"
@@ -1446,7 +1446,7 @@ label kira_night_tv:
             "{i}ласкать её грудь и киску{/i}":
                 $ kira.flags.m_breast += 1
                 if renpy.random.randint(1, 2)>1:
-                    scene BG char Alice tv-mass-05
+                    scene BG tv-mass-05
                     show Kira tv-kiss 3-04
                 else:
                     show Kira tv-kiss 3-03
@@ -1576,7 +1576,7 @@ label kira_night_tv:
             "{i}ласкать её грудь и киску{/i}":
                 $ kira.flags.m_breast += 1
                 if renpy.random.randint(1, 2)>1:
-                    scene BG char Alice tv-mass-05
+                    scene BG tv-mass-05
                     show Kira tv-kiss 3-04
                 else:
                     show Kira tv-kiss 3-03
@@ -1637,7 +1637,7 @@ label kira_night_tv:
                     scene BG char Kira tv-cun-01
                     show Kira tv-game cun-05-1
                 else:
-                    scene BG char Kira tv-kiss-03
+                    scene BG tv-kiss-03
                     show Kira tv-game cun-05-2
         menu:
             Kira_10 "Ухх... Чёрт! Как хорошо... Ещё... глубже и быстрее... Да, вот так... Ммм..."
@@ -1647,7 +1647,7 @@ label kira_night_tv:
             scene BG lounge-tv-01
             show Kira tv-game cun-06-1
         elif r1<3:
-            scene BG char Kira tv-kiss-03
+            scene BG tv-kiss-03
             show Kira tv-game cun-06-2
         else:
             scene BG char Alice tv-mass-11
@@ -1742,7 +1742,7 @@ label kira_night_tv:
 
     label .tv_cuni:
         if _in_replay:
-            scene BG char Alice tv-mass-05
+            scene BG tv-mass-05
         if not _in_replay:
             $ SetCamsGrow(house[4], 200)
         show Kira tv-closer max-03b

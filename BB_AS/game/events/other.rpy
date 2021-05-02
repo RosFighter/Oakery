@@ -59,7 +59,7 @@ label back_shoping:
         Max_08 "Да я и не переживаю..."
         Ann_05 "Вот и отлично. Ладно, поболтаем позже..."
         Max_00 "Ага..."
-        $ poss['Swimsuit'].OpenStage(2)
+        $ poss['Swimsuit'].open(2)
 
     elif flags.back_shop == 2:
         ## --- Девчонки возвращаются со второго шоппинга
@@ -67,7 +67,7 @@ label back_shoping:
         Ann_05 "Привет, Макс! Мы вернулись..."
         Max_04 "Рассказывайте, что купили?"
         if poss['Swimsuit'].stn == 2:
-            $ poss['Swimsuit'].OpenStage(4)
+            $ poss['Swimsuit'].open(4)
             $ lisa.gifts.append('bikini')
             $ setting_clothes_by_conditions()
             $ infl[lisa].add_e(40, True)
@@ -84,9 +84,9 @@ label back_shoping:
             Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
             Max_11 "Поздравляю..."
             if poss['nightclub'].stn == 1:
-                $ poss['nightclub'].OpenStage(2)
+                $ poss['nightclub'].open(2)
             else:
-                $ poss['nightclub'].OpenStage(3)
+                $ poss['nightclub'].open(3)
             $ infl[alice].add_e(40, True)
             $ alice.gifts.append('dress')
             Ann_07 "Макс, ты какой-то грустный. Что-то случилось? Или мне показалось?"

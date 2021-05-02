@@ -1438,3 +1438,11 @@ translate deutsch strings:
     old "Просто иди и всё..."
     new ""
 
+# TODO: Translation updated at 2021-05-02 21:54
+
+# game/events/lisa.rpy:186
+translate deutsch lisa_shower_pinded_054e4844:
+
+    # Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал!" nointeract
+    Lisa_09 "" nointeract
+

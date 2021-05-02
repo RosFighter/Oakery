@@ -15,6 +15,9 @@ label StartDialog:
             jump KiraTalkStart
         elif current_room.cur_char[0] == 'eric':
             jump EricTalkStart
+    elif len(current_room.cur_char) == 2:
+        if sorted(current_room.cur_char) == sorted(['lisa', 'olivia']):
+            jump OliviaTalkStart
 
     jump AfterWaiting
 
@@ -193,7 +196,7 @@ label Box:
     scene Max unbox 03
     Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
     scene Max unbox 04
-    $ poss['cams'].OpenStage(0)
+    $ poss['cams'].open(0)
     menu:
         Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..."
         "{i}закончить{/i}":
@@ -338,7 +341,7 @@ label create_site:
     show interface laptop cam-inf-4 at laptop_screen
     Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
     $ spent_time = 60
-    $ poss['cams'].OpenStage(4)
+    $ poss['cams'].open(4)
     $ mgg.pay(100)
     $ items['hide_cam'].unblock()
     $ house[4].cams.append(HideCam())
@@ -377,7 +380,7 @@ label about_cam:
     $ items['manual'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ spent_time += 20
-    $ poss['cams'].OpenStage(2)
+    $ poss['cams'].open(2)
     jump Laptop
 
 
@@ -422,7 +425,7 @@ label about_blog:
             Max_00 "И зачем я только что-то изучал..."
 
 
-    $ poss['blog'].OpenStage(1)
+    $ poss['blog'].open(1)
     $ spent_time += 30
     jump Laptop
 
@@ -437,7 +440,7 @@ label about_secretbook:
             Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
 
     $ items['erobook_1'].unblock()
-    $ poss['secretbook'].OpenStage(2)
+    $ poss['secretbook'].open(2)
     $ spent_time += 30
     jump Laptop
 
@@ -466,7 +469,7 @@ label about_spider:
     Max_04 "Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?"
     Max_01 "Будем искать!"
 
-    $ poss['spider'].OpenStage(1)
+    $ poss['spider'].open(1)
     $ AvailableActions['catchspider'].enabled = True
     $ AvailableActions['hidespider'].enabled = True
     $ SpiderKill = 0
@@ -486,7 +489,7 @@ label SearchCam:
         $ random_loc_ab = 'b'
         $ AvailableActions['searchcam'].enabled = False
         $ InspectedRooms.clear()
-        $ poss['cams'].OpenStage(1)
+        $ poss['cams'].open(1)
     else:
         Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
         $ InspectedRooms.append(current_room)
@@ -620,7 +623,7 @@ label BookRead:
             Max_00 "Так, ну теперь картина вырисовывается. Осталось разобраться только с мелочами... Или это не мелочи?\n\n{color=[orange]}{i}(Книга изучена на 80%%){/i}{/color}"
         else:
             Max_00 "Всё, вот теперь точно всё понятно! Я уже могу сделать свой сайт и транслировать на него изображение! Но как получать за это деньги?"
-            $ poss['cams'].OpenStage(3)
+            $ poss['cams'].open(3)
             $ items['manual'].block()
         jump .end
 
@@ -628,7 +631,7 @@ label BookRead:
         $ items['sex.ed'].read += 1
         if items['sex.ed'].read < 2:
             # выбрали читать книгу
-            $ poss['seduction'].OpenStage(12)
+            $ poss['seduction'].open(12)
             $ items['sex.ed'].block()
             Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
         elif items['sex.ed'].read < 3:
@@ -637,7 +640,7 @@ label BookRead:
             Max_07 "Ого, здесь даже есть краткий исторический очерк о сексуальном воспитании детей и подростков... Как только голову не дурили за всё это время!\n\n{color=[orange]}{i}(Книга изучена на 75%%){/i}{/color}"
         else:
             # чтение завершено, можно дарить
-            $ poss['seduction'].OpenStage(13)
+            $ poss['seduction'].open(13)
             Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
         jump .end
 
@@ -710,7 +713,7 @@ label SearchSecretBook:
         $ renpy.scene()
         $ renpy.show('BG char Max secretbook-00'+mgg.dress)
         Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
-        $ poss['secretbook'].OpenStage(1)
+        $ poss['secretbook'].open(1)
         $ AvailableActions['searchbook'].enabled = False
         jump Waiting
 
@@ -797,7 +800,7 @@ label SearchSpider:
                 $ renpy.scene()
                 $ renpy.show('BG char Max spider-search-01'+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
-                $ poss['spider'].OpenStage(2)
+                $ poss['spider'].open(2)
                 $ items['spider'].have = True
             else:
                 Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"

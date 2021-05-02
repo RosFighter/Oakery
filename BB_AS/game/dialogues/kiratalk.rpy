@@ -29,7 +29,7 @@ label KiraTalkStart:
 
 
 label kira_firsttalk:
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
     Kira_04 "Ну, рассказывай, Макс, как ты тут живёшь, как твои дела, что нового?"
@@ -82,14 +82,14 @@ label kira_firsttalk:
             $ mgg.cleanness = 100
     $ kira.dcv.feature.stage += 1   # 1
     $ kira.dcv.feature.set_lost(1)
-    $ poss['aunt'].OpenStage(0)
+    $ poss['aunt'].open(0)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
 
 
 label kira_talk2:
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
     menu:
@@ -160,7 +160,7 @@ label kira_talk2:
 
 
 label kira_talk3:
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
     menu:
@@ -204,7 +204,7 @@ label kira_talk3:
 
     $ kira.dcv.feature.stage += 1   # 3
     $ kira.dcv.feature.set_lost(1)
-    $ poss['aunt'].OpenStage(1)
+    $ poss['aunt'].open(1)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -237,7 +237,7 @@ label kira_about_kiss:
             Kira_04 "Макс, тебе стоит быть чуть более... тактичным. В общем, помочь я тебе помогу, только выбери подходящий момент. Договорились?"
             Max_01 "Конечно!"
 
-    $ poss['seduction'].OpenStage(6)
+    $ poss['seduction'].open(6)
     $ flags.how_to_kiss.append('kira')
     $ spent_time += 10
     return
@@ -245,7 +245,7 @@ label kira_about_kiss:
 
 label kira_talk4:
     # стартовая фраза "Ну как, ты с мамой-то поговорила?"
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
 
@@ -324,7 +324,7 @@ label kira_talk4:
             $ mgg.cleanness = 100
     $ kira.dcv.feature.stage += 1   # 4
     $ kira.dcv.feature.set_lost(1)
-    $ poss['aunt'].OpenStage(2)
+    $ poss['aunt'].open(2)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -332,7 +332,7 @@ label kira_talk4:
 
 label kira_talk5:
     # стартовая фраза "Как отдыхается, тётя Кира?"
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
 
@@ -375,7 +375,7 @@ label kira_talk5:
             Max_09 "{i}( Эх, с тётей Кирой кончать поинтереснее... и намного! ){/i}"
     $ kira.dcv.feature.stage += 1   # 5
     $ kira.dcv.feature.set_lost(1)
-    $ poss['aunt'].OpenStage(3)
+    $ poss['aunt'].open(3)
     $ items['photocamera'].unblock()
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     $ SetCamsGrow(house[6], 180)
@@ -386,7 +386,7 @@ label kira_talk5:
 
 label kira_talk6:
     # стартовая фраза "Насчёт фотосессии..."
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
     menu:
@@ -586,7 +586,7 @@ label first_photoset:
     $ renpy.end_replay()
     $ added_mem_var('kira_photoset1')
     $ SetCamsGrow(house[4], 300)
-    $ poss['aunt'].OpenStage(4)
+    $ poss['aunt'].open(4)
     $ items['photocamera'].block()
     $ items['nightie2'].give()
     # $ items['nightie2'].have = False
@@ -599,7 +599,7 @@ label first_photoset:
 
 label kira_about_photo1:
     # стартовая фраза "Понравились фотографии?"
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
 
@@ -666,7 +666,7 @@ label kira_about_photo1:
     $ renpy.end_replay()
     $ mgg.cleanness = 100
     $ SetCamsGrow(house[3], 250)
-    $ poss['aunt'].OpenStage(5)
+    $ poss['aunt'].open(5)
     $ kira.dcv.feature.stage += 1   # 7
     $ kira.dcv.feature.set_lost(1)
     $ kira.dcv.photo.stage = 1
@@ -704,7 +704,7 @@ label kira_about_cuni:
 label kira_about_photo2:
     # стартовая фраза "Так когда будем снова фотографироваться, тётя Кира?"   #доступна через 10 дней после первой фотосессии
     # #фоновая картинка с загорающей Кирой
-    scene BG char Kira sun-talk-01
+    scene BG sun-talk-01
     show Kira sun-talk 01
     show Max sun-talk 01
     Kira_05 "Что, Макс, не терпится?"
@@ -962,7 +962,7 @@ label kira_about_photo2:
 
     $ renpy.end_replay()
     $ SetCamsGrow(house[2], 300)
-    $ poss['aunt'].OpenStage(6)
+    $ poss['aunt'].open(6)
     $ kira.dcv.photo.stage = 2
     $ kira.dcv.feature.stage += 1   # 8
     $ kira.dcv.feature.set_lost(1)

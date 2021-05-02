@@ -1461,3 +1461,11 @@ translate english lisa_horor_movie_r_26ebf379:
     # Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
     Lisa_13 "Max, is it just me or is there something under my foot right now?"
 
+# TODO: Translation updated at 2021-05-02 21:51
+
+# game/events/lisa.rpy:186
+translate english lisa_shower_pinded_054e4844:
+
+    # Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал!" nointeract
+    Lisa_09 "" nointeract
+

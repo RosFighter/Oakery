@@ -35,6 +35,7 @@ label lisa_shower:
         jump .end_peeping2
 
     $ renpy.block_rollback()
+    $ renpy.dynamic('r1')
     $ lisa.daily.shower = 4
     menu:
         Max_09 "Кажется, Лиза что-то делает в ванной..."
@@ -73,21 +74,19 @@ label lisa_shower:
         Max_04 "Посмотрим, что у нас тут..."
         # назначим или определим одёжку
         if lisa.dress_inf != '04a':
-            $ __r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
+            $ r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
         else:
             $ __list = ['a', 'b', 'c', 'd'] if 'bathrobe' in lisa.gifts else ['c', 'd']
-            $ __r1 = renpy.random.choice(__list)
-            $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
+            $ r1 = renpy.random.choice(__list)
+            $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[r1]
 
         scene BG bathroom-morning-00
-        $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+        $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
-        if __r1 in ['a', 'b']:
+        if r1 in ['a', 'b']:
             Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
-        # elif __r1 == 'b':
-        #     Max_05 "Охх... Хорошо, что я уговорил её не носить трусики! Похоже, Лизе и самой приятно, что под халатиком больше ничего нет... а уж мне-то как приятно."
-        elif __r1 == 'c':
+        elif r1 == 'c':
             Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
         else:
             Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
@@ -98,12 +97,12 @@ label lisa_shower:
     label .start_peeping:
         $ lisa.daily.shower = 1
         $ Skill('hide', 0.03)
-        $ __ran1 = renpy.random.randint(1, 4)
+        $ r1 = renpy.random.randint(1, 4)
 
         $ _ch1 = GetChance(mgg.stealth, 3, 900)
         $ _ch2 = GetChance(mgg.stealth, 2, 900)
         $ renpy.scene()
-        $ renpy.show('Lisa shower 0'+str(__ran1))
+        $ renpy.show('Lisa shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
@@ -125,12 +124,12 @@ label lisa_shower:
         $ lisa.daily.shower = 1
         $ Skill('hide', 0.2)
         $ lisa.dress_inf = '00a'
-        $ __ran1 = renpy.random.randint(1, 6)
+        $ r1 = renpy.random.randint(1, 6)
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
-        $ renpy.show('Lisa shower-alt 0'+str(__ran1))
+        $ renpy.show('Lisa shower-alt 0'+str(r1))
         show FG shower-water
-        if 1 < __ran1 < 5:
+        if 1 < r1 < 5:
             Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
         else:
             Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
@@ -142,11 +141,11 @@ label lisa_shower:
             $ lisa.daily.shower = 1
             $ Skill('hide', 0.2)
             $ lisa.dress_inf = '00a'
-            $ __ran1 = renpy.random.randint(1, 6)
+            $ r1 = renpy.random.randint(1, 6)
             scene BG shower-closer
-            $ renpy.show('Lisa shower-closer 0'+str(__ran1))
+            $ renpy.show('Lisa shower-closer 0'+str(r1))
             show FG shower-closer
-            if 1 < __ran1 < 5:
+            if 1 < r1 < 5:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
                 Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
@@ -159,9 +158,9 @@ label lisa_shower:
             $ lisa.daily.shower = 2
             $ Skill('hide', 0.1)
             $ lisa.dress_inf = '00a'
-            $ __ran1 = renpy.random.randint(7, 8)
+            $ r1 = renpy.random.choice(['07', '08'])
             scene BG shower-closer
-            $ renpy.show('Lisa shower-closer 0'+str(__ran1))
+            $ renpy.show('Lisa shower-closer '+r1)
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
         else:
@@ -174,15 +173,25 @@ label lisa_shower:
         else:
             $ lisa.daily.shower = 3
             $ punreason[0] = 1
-        $ Skill('hide', 0.05)
-        $ __ran1 = renpy.random.choice(['09', '10'])
+        if 'olivia' in chars and olivia.dcv.special.stage>1:
+            # после второго ТВ с Оливией
+            $ r1 = renpy.random.choice(['07', '08'])
+        else:
+            $ Skill('hide', 0.05)
+            $ r1 = renpy.random.choice(['09', '10'])
         scene BG shower-closer
-        $ renpy.show('Lisa shower-closer '+__ran1)
+        $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
-        menu:
-            Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
-            "{i}Бежать{/i}":
-                jump .end_peeping
+        if 'olivia' in chars and olivia.dcv.special.stage>1:
+            menu:
+                Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал!"
+                "{i}Бежать{/i}":
+                    jump .end_peeping
+        else:
+            menu:
+                Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
+                "{i}Бежать{/i}":
+                    jump .end_peeping
 
     label .end_peeping2:
         $ current_room, prev_room = prev_room, current_room
@@ -267,7 +276,7 @@ label lisa_dressed_school:
         elif GetRelMax('lisa')[0] < 2:
             show Lisa school-dressed 01a
             $ lisa.dress_inf = '01b'
-        elif lisa.free < 200:
+        elif lisa.free < 200:       # правим тут
             show Lisa school-dressed 01b
             $ lisa.dress_inf = '02a'
         else:
@@ -723,7 +732,7 @@ label lisa_select_movie:
 
 label lisa_romantic_movie_0:
 
-    scene BG char Lisa myroom-night-talk-01
+    scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
@@ -775,6 +784,7 @@ label lisa_romantic_movie_0:
 
     $ lisa.dcv.special.stage = 1
     $ lisa.dcv.special.disable()
+    $ poss['SoC'].open(10)
     $ infl[lisa].add_m(12)
     $ spent_time += 60
     $ flags.cur_series = 1
@@ -783,7 +793,7 @@ label lisa_romantic_movie_0:
 
 label lisa_romantic_movie_r:
 
-    scene BG char Lisa myroom-night-talk-01
+    scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
@@ -836,6 +846,7 @@ label lisa_romantic_movie_r:
         Lisa_01 "Тогда я пойду спать, а то ты сегодня что-то не в духе."
         stop music fadeout 1.0
         Max_15 "Да, будь так добра..."
+        $ poss['SoC'].open(11)
         $ lisa.dcv.special.stage = 4
 
     elif flags.cur_series > 1:
@@ -875,7 +886,7 @@ label lisa_romantic_movie_r:
 
 label lisa_horor_movie_0:
 
-    scene BG char Lisa myroom-night-talk-01
+    scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
@@ -937,6 +948,7 @@ label lisa_horor_movie_0:
     $ spent_time += 60
     $ lisa.dcv.special.stage = 5
     $ lisa.dcv.special.disable()
+    $ poss['SoC'].open(12)
     $ infl[lisa].add_m(12)
     $ flags.cur_series = 1
     jump Waiting
@@ -944,7 +956,7 @@ label lisa_horor_movie_0:
 
 label lisa_horor_movie_r:
 
-    scene BG char Lisa myroom-night-talk-01
+    scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
@@ -1081,6 +1093,9 @@ label lisa_horor_movie_r:
                     $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
                     Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
                     Max_01 "Ага. Приятных снов."
+                    if lisa.dcv.special.stage < 6:
+                        $ lisa.dcv.special.stage = 6
+                    $ poss['SoC'].open(13)
                     jump .end
 
                 "Просто иди и всё..." if not _in_replay:
