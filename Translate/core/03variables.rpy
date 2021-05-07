@@ -703,8 +703,8 @@ translate english strings:
     new "Lisa really likes the way I kiss her. She even hinted that she might be interested in learning something more advanced. It's time to test my theory. Maybe I should buy her an anatomy book so she could learn more about the natural proccesses that happen between men and women?"
 
     # game/core/03variables.rpy:322
-    old "Я решил, что и мне самому будет полезно прочитать купленую для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
-    new "I decided to read the book I bought Lisa. I think I'll discover something interesting..."
+    old "Я решил, что и мне самому будет полезно прочитать купленную для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
+    new "I decided that it would be useful for me to read the book I bought for Lisa. Maybe I'll learn something interesting for myself?"
 
     # game/core/03variables.rpy:322
     old "Книга прочитана! Не то, чтобы много всего нового я для себя открыл, но есть то, что может помочь нам с Лизой ещё больше сблизиться. А пока можно ей книжку подарить..."
@@ -1198,14 +1198,6 @@ translate english strings:
     old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
     new "Transparent open-back mesh bodysuit in black."
 
-# TODO: Translation updated at 2021-01-23 16:42
-
-translate english strings:
-
-    # game/core/03variables.rpy:323
-    old "Я решил, что и мне самому будет полезно прочитать купленную для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
-    new "I decided that it would be useful for me to read the book I bought for Lisa. Maybe I'll learn something interesting for myself?"
-
 # TODO: Translation updated at 2021-01-26 21:47
 
 translate english strings:
@@ -1391,4 +1383,3 @@ translate english strings:
     # game/core/03variables.rpy:295
     old "Оливией"
     new ""
-

@@ -8855,7 +8855,7 @@ translate english about_boy3_c933d2ee:
 # game/dialogues/lisatalk.rpy:3760
 translate english about_boy3_44f9090c:
 
-    # Max_09 "Is that so?"
+    # Max_09 "Разве?"
     Max_09 "Is that so?"
 
 # game/dialogues/lisatalk.rpy:3761
@@ -9559,7 +9559,7 @@ translate english about_alex3_0f41d7ee:
 # game/dialogues/lisatalk.rpy:3989
 translate english about_alex3_ccafc63a:
 
-    # Lisa_09 "So I wondered... I'm about to lose Olivia, and then Alex will trade me for someone else the same way. And then I'll end up losing everyone..."
+    # Lisa_09 "Вот я и задумалась... Я сейчас потеряю Оливию, а потом меня таким же образом Алекс променяет на кого-нибудь. И в итоге я вообще всех потеряю..."
     Lisa_09 "It's like... I'm about to lose Olivia, and then Alex will just swap me for someone else. And then I'll end up losing everyone..."
 
 # game/dialogues/lisatalk.rpy:3990

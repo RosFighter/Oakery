@@ -111,7 +111,7 @@ translate english olivia_talk1_beb70033:
 # game/dialogues/oliviatalk.rpy:55
 translate english olivia_talk1_d8405804:
 
-    # Olivia_03 "So it turns out Lisa is a naughty girl! And from the outside she seems so modest..."
+    # Olivia_03 "Так Лиза у нас оказывается шалунья! А со стороны такой скромняжкой кажется..."
     Olivia_03 "So it turns out Lisa is a naughty girl! And from the outside she seems so modest..."
 
 # game/dialogues/oliviatalk.rpy:56
