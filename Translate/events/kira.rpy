@@ -3979,7 +3979,7 @@ translate english strings:
 
     # game/events/kira.rpy:1620
     old "{i}трахнуть тётю Киру (догги-стайл){/i}"
-    new "{i}Fuck Aunt Kira (Doggie)"
+    new "{i}Fuck Aunt Kira (Doggie){/i}"
 
     # game/events/kira.rpy:1627
     old "{i}трахать её{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
@@ -3987,7 +3987,7 @@ translate english strings:
 
     # game/events/kira.rpy:1650
     old "{i}кончить в неё{/i}"
-    new "{i}Finish in her{i}"
+    new "{i}Finish in her{/i}"
 
     # game/events/kira.rpy:1650
     old "{i}кончить ей на попку{/i}"
@@ -4251,4 +4251,3 @@ translate english strings:
     # game/events/kira.rpy:579
     old "{i}трахать её{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}"
     new ""
-

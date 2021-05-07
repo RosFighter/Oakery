@@ -772,4 +772,4 @@ translate english strings:
 
     # game/dialogues/oliviatalk.rpy:251
     old "{i}идти в гостиную{/i}"
-    new "{i}Go to the living room{i}"
+    new "{i}Go to the living room{/i}"
