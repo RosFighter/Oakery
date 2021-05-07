@@ -1468,3 +1468,12 @@ translate english lisa_shower_pinded_054e4844:
 
     # Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал!" nointeract
     Lisa_09 "[spotted!t]Well, Max! You're peeking again. If you're so eager to watch horror movies with me, then that's what you'll get!" nointeract
+
+# TODO: Translation updated at 2021-05-07 23:01
+
+# game/events/lisa.rpy:186
+translate english lisa_shower_pinded_cc880acd:
+
+    # Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал! А сейчас, кыш отсюда..." nointeract
+    Lisa_09 "" nointeract
+

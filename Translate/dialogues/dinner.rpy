@@ -2208,3 +2208,24 @@ translate english dinner_lace_lingerie_e0b844ce:
 
     # Max_01 "Пока, мам..."
     Max_01 "Bye, Mom..."
+
+# TODO: Translation updated at 2021-05-07 23:01
+
+# game/dialogues/dinner.rpy:39
+translate english typical_dinner_abe1c298:
+
+    # Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. И бассейн я вижу чистый. Молодец, что взял на себя эту ответственность, мы все это ценим. А теперь давайте ужинать..." nointeract
+    Ann_01 "" nointeract
+
+# game/dialogues/dinner.rpy:41
+translate english typical_dinner_e043c878:
+
+    # Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. Хоть ответственности и немного, но она важна. А теперь давайте ужинать..." nointeract
+    Ann_01 "" nointeract
+
+# game/dialogues/dinner.rpy:43
+translate english typical_dinner_6b0248d1:
+
+    # Ann_01 "Всем приятного аппетита. Я заметила с балкона, что бассейн почищен. Спасибо тебе, Макс, что заботишься о порядке, это меня радует. А теперь давайте ужинать..." nointeract
+    Ann_01 "" nointeract
+

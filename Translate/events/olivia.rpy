@@ -944,3 +944,125 @@ translate english strings:
     old "{i}раздеться и сесть рядом{/i}"
     new ""
 
+# TODO: Translation updated at 2021-05-07 23:01
+
+# game/events/olivia.rpy:271
+translate english olivia_night_visit_r_c0291a99:
+
+    # Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
+    Olivia_01 ""
+
+# game/events/olivia.rpy:272
+translate english olivia_night_visit_r_04f7e51a:
+
+    # Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
+    Max_04 ""
+
+# game/events/olivia.rpy:277
+translate english olivia_night_visit_r_b6a957f2:
+
+    # Olivia_02 "Лиза, я полдня тебя сегодня не видела, а уже соскучилась... Жду не дождусь уже раздеться и заниматься ничегонеделанием. Только сериалы с любимыми друзьями!"
+    Olivia_02 ""
+
+# game/events/olivia.rpy:278
+translate english olivia_night_visit_r_9b51ac68:
+
+    # Lisa_02 "Я тоже рада поваляться вместе с вами хоть один поздний вечерок." nointeract
+    Lisa_02 "" nointeract
+
+# game/events/olivia.rpy:287
+translate english olivia_night_visit_r_8574b567:
+
+    # Max_05 "Ого! Лиза у нас сегодня тоже почти голенькая будет! Рад, что не стесняешься..."
+    Max_05 ""
+
+# game/events/olivia.rpy:288
+translate english olivia_night_visit_r_a21cc315:
+
+    # Lisa_02 "Ну... Почему бы немного не порадовать тебя, раз уж ты достойно помогал мне со всем, чем только можно на неделе."
+    Lisa_02 ""
+
+# game/events/olivia.rpy:289
+translate english olivia_night_visit_r_43994455:
+
+    # Max_03 "Хороший стимул... Мне нравится!"
+    Max_03 ""
+
+# game/events/olivia.rpy:290
+translate english olivia_night_visit_r_d351d1a1:
+
+    # Lisa_01 "Только не засматривайся на меня так сильно! Я ведь и одеться могу."
+    Lisa_01 ""
+
+# game/events/olivia.rpy:297
+translate english olivia_night_visit_r_252b0246:
+
+    # Olivia_03 "Лиза, а ты почему маечку не снимаешь? Опять стесняешься..."
+    Olivia_03 ""
+
+# game/events/olivia.rpy:298
+translate english olivia_night_visit_r_a6b1ccae:
+
+    # Lisa_00 "Нет. У нас с Максом было... одно соглашение и он его нарушил. Поэтому радости у него сегодня будет поменьше."
+    Lisa_00 ""
+
+# game/events/olivia.rpy:300
+translate english olivia_night_visit_r_f773bcda:
+
+    # Max_07 "Лиза, а ты почему маечку не снимаешь? Я думал, ты уже не особо нас стесняешься..."
+    Max_07 ""
+
+# game/events/olivia.rpy:301
+translate english olivia_night_visit_r_11ccf991:
+
+    # Lisa_09 "Я бы сняла, да вот только не очень хочется тебя так радовать."
+    Lisa_09 ""
+
+# game/events/olivia.rpy:302
+translate english olivia_night_visit_r_24763cdf:
+
+    # Max_10 "Да ладно тебе, Лиза! Почему?"
+    Max_10 ""
+
+# game/events/olivia.rpy:304
+translate english olivia_night_visit_r_c53d4c7a:
+
+    # Lisa_10 "Вот помогал бы мне на этой неделе хоть немного с домашним заданием, ручки бы мои пожалел, с посудой помог... Или ты думаешь, защитил меня от маминого наказания разок и всё? Голую грудь в студию?!"
+    Lisa_10 ""
+
+# game/events/olivia.rpy:306
+translate english olivia_night_visit_r_1c92ddb9:
+
+    # Lisa_10 "Вот помогал бы мне на этой неделе хоть немного с домашним заданием, ручки бы мои пожалел, с посудой помог... С таким Максом я бы ещё рядом посидела без маечки, а так..."
+    Lisa_10 ""
+
+# game/events/olivia.rpy:308
+translate english olivia_night_visit_r_414a4238:
+
+    # Lisa_10 "Вот помогал бы мне на этой неделе хоть немного с домашним заданием, ручки бы мои пожалел, с посудой помог... А ты даже от маминого наказания меня не защитил..."
+    Lisa_10 ""
+
+# game/events/olivia.rpy:309
+translate english olivia_night_visit_r_0d89d3d3:
+
+    # Max_11 "Ну... Я мог бы..."
+    Max_11 ""
+
+# game/events/olivia.rpy:310
+translate english olivia_night_visit_r_17b1c448:
+
+    # Lisa_13 "Вот как сможешь, так и посмотрим. А пока что я ничего снимать с себя не хочу."
+    Lisa_13 ""
+
+# game/events/olivia.rpy:317
+translate english olivia_night_visit_r_2fa10a26:
+
+    # Olivia_04 "Эх, Макс! Прошляпил всё веселье. Ладно, пойдёмте уже..." nointeract
+    Olivia_04 "" nointeract
+
+# game/events/olivia.rpy:319
+translate english olivia_night_visit_r_a6603bc7:
+
+    # Olivia_04 "Такими темпами мы ничего не посмотрим. Пойдёмте уже..." nointeract
+    Olivia_04 "" nointeract
+

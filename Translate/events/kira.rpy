@@ -4028,12 +4028,6 @@ translate english kira_bath_horsewoman_2e8e9ba1:
     # Kira_09 "Ах, Макс... Д-а-а... Вот так... Хватит уже дразнить мою киску... Дай мне уже сесть на него! Какой он твёрдый... Ммм..." nointeract
     Kira_09 "" nointeract
 
-# game/events/kira.rpy:532
-translate english kira_bath_horsewoman_0efdd2cc:
-
-    # Kira_11 "Охх... Да... Обожаю, когда можно попрыгать на чём-то весьма ощутимом! Д-а-а... Только не кончи раньше меня... Ммм... Я уже скоро! Как хорошо..."
-    Kira_11 ""
-
 # game/events/kira.rpy:533
 translate english kira_bath_horsewoman_7d6ba17c:
 
@@ -4070,12 +4064,6 @@ translate english kira_bath_horsewoman_7e4401f1:
     # Max_02 "Да, тётя Кира, это было что-то нереальное!"
     Max_02 ""
 
-# game/events/kira.rpy:562
-translate english kira_bath_horsewoman_6920394d:
-
-    # Kira_08 "Ого! Кто-то у нас тут слишком перевозбудился... А я ведь только начала..."
-    Kira_08 ""
-
 # game/events/kira.rpy:563
 translate english kira_bath_horsewoman_ff569f5a:
 
@@ -4099,12 +4087,6 @@ translate english kira_bath_dogstyle_c700c47b:
 
     # Kira_09 "Вот, держи... Д-а-а... Вот так... Вводи его не спеша... Ох, Макс... Он с таким трудом входит в меня, даже когда я такая мокренькая... Ммм..." nointeract
     Kira_09 "" nointeract
-
-# game/events/kira.rpy:592
-translate english kira_bath_dogstyle_1ab5d265:
-
-    # Kira_11 "Охх... Да... Вот так, Макс! Трахай меня... Ещё... Ещё сильнее! Как же чертовски приятно чувствовать твой член! Д-а-а... Ещё... Я уже близко!"
-    Kira_11 ""
 
 # game/events/kira.rpy:593
 translate english kira_bath_dogstyle_847cda3f:
@@ -4142,12 +4124,6 @@ translate english kira_bath_dogstyle_7e4401f1:
     # Max_02 "Да, тётя Кира, это было что-то нереальное!"
     Max_02 ""
 
-# game/events/kira.rpy:625
-translate english kira_bath_dogstyle_afb9d9d3:
-
-    # Kira_08 "Ого! Ты уже всё! Кто-то у нас тут слишком перевозбудился... Тебе ещё привыкать и привыкать к нашим шалостям..."
-    Kira_08 ""
-
 # game/events/kira.rpy:626
 translate english kira_bath_dogstyle_ff569f5a:
 
@@ -4166,12 +4142,6 @@ translate english kira_bath_dogstyle_4144ec85:
     # Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!" nointeract
     Max_01 "" nointeract
 
-# game/events/kira.rpy:644
-translate english kira_bath_cum_in_her_mouth_37a27ab8:
-
-    # Max_21 "Ухх... Какие же горячие и ненасытные у тебя губки... Ты просто бесподобно сосёшь, тётя Кира! Да..." nointeract
-    Max_21 "" nointeract
-
 # game/events/kira.rpy:651
 translate english kira_bath_cum_in_her_mouth_c4de2ecf:
 
@@ -4189,12 +4159,6 @@ translate english kira_bath_cum_in_her_mouth_6f308174:
 
     # Max_05 "И мне тоже! Было очень классно!"
     Max_05 ""
-
-# game/events/kira.rpy:664
-translate english kira_bath_cum_in_her_mouth_439daa20:
-
-    # Kira_08 "Ого! Кто-то у нас тут слишком перевозбудился... Я даже не успела ничего сделать..."
-    Kira_08 ""
 
 # game/events/kira.rpy:665
 translate english kira_bath_cum_in_her_mouth_ff569f5a:
@@ -4251,3 +4215,148 @@ translate english strings:
     # game/events/kira.rpy:579
     old "{i}трахать её{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}"
     new ""
+
+# TODO: Translation updated at 2021-05-07 23:01
+
+# game/events/kira.rpy:533
+translate english kira_bath_horsewoman_06f39603:
+
+    # Kira_11 "[restrain!t]Охх... Да... Обожаю, когда можно попрыгать на чём-то весьма ощутимом! Д-а-а... Только не кончи раньше меня... Ммм... Я уже скоро! Как хорошо..."
+    Kira_11 ""
+
+# game/events/kira.rpy:563
+translate english kira_bath_horsewoman_26d27f45:
+
+    # Kira_08 "[norestrain!t]Ого! Кто-то у нас тут слишком перевозбудился... А я ведь только начала..."
+    Kira_08 "[norestrain!t]Wow! Someone's getting overexcited here... I'm just getting started..."
+
+# game/events/kira.rpy:593
+translate english kira_bath_dogstyle_4f355bc8:
+
+    # Kira_11 "[restrain!t]Охх... Да... Вот так, Макс! Трахай меня... Ещё... Ещё сильнее! Как же чертовски приятно чувствовать твой член! Д-а-а... Ещё... Я уже близко!"
+    Kira_11 ""
+
+# game/events/kira.rpy:628
+translate english kira_bath_dogstyle_fd38c112:
+
+    # Kira_08 "[norestrain!t]Ого! Ты уже всё! Кто-то у нас тут слишком перевозбудился... Тебе ещё привыкать и привыкать к нашим шалостям..."
+    Kira_08 ""
+
+# game/events/kira.rpy:647
+translate english kira_bath_cum_in_her_mouth_8f9ac8f3:
+
+    # Max_21 "[restrain!t]Ухх... Какие же горячие и ненасытные у тебя губки... Ты просто бесподобно сосёшь, тётя Кира! Да..." nointeract
+    Max_21 "" nointeract
+
+# game/events/kira.rpy:667
+translate english kira_bath_cum_in_her_mouth_ec302532:
+
+    # Kira_08 "[norestrain!t]Ого! Кто-то у нас тут слишком перевозбудился... Я даже не успела ничего сделать..."
+    Kira_08 ""
+
+# game/events/kira.rpy:827
+translate english kira_night_swim_1d59945b:
+
+    # Kira_07 "[restrain!t]Похоже, против таких приёмов, ты просто так сдаваться не собираешься... Как думаешь, долго ли ты продержишься, если твой дружок окажется у меня во рту?"
+    Kira_07 ""
+
+# game/events/kira.rpy:828
+translate english kira_night_swim_0c3aba50:
+
+    # Max_02 "Давай проверим..."
+    Max_02 ""
+
+# game/events/kira.rpy:831
+translate english kira_night_swim_3c073ea3:
+
+    # Max_20 "{i}( Д-а-а... Она сосёт просто потрясающе! Так смачно и жадно... Как же приятно, когда мой член проскальзывает сквозь её нежные губки прямо в рот! ){/i}"
+    Max_20 ""
+
+# game/events/kira.rpy:832
+translate english kira_night_swim_9c2b6ab8:
+
+    # Max_19 "Охх... тётя Кира... Обожаю, когда ты так делаешь..." nointeract
+    Max_19 "" nointeract
+
+# game/events/kira.rpy:840
+translate english kira_night_swim_3129d202:
+
+    # Max_21 "[restrain!t]{i}( Вот чёрт! Я двигаюсь ей навстречу, а она всё глубже берёт его в рот! И всё больше и больше ускоряется... Такое я долго не выдержу! Я уже на грани... ){/i}"
+    Max_21 ""
+
+# game/events/kira.rpy:841
+translate english kira_night_swim_820774f8:
+
+    # Max_22 "Тётя Кира, да... Я сейчас кончу... Давай ещё глубже! А-а-а..."
+    Max_22 ""
+
+# game/events/kira.rpy:847
+translate english kira_night_swim_33afd869:
+
+    # Max_05 "{i}( О да... Прямо ей в рот! Хотя, нет, и мимо немного попало... О боже... Как же это приятно! ){/i}"
+    Max_05 ""
+
+# game/events/kira.rpy:848
+translate english kira_night_swim_61e5f4b9:
+
+    # Kira_05 "Понравилось, Макс? Как же я увлеклась... Надеюсь, мы никого не разбудили!"
+    Kira_05 ""
+
+# game/events/kira.rpy:849
+translate english kira_night_swim_4521e956:
+
+    # Max_03 "Вроде, нет... Всё тихо. Ты лучшая, тётя Кира!"
+    Max_03 ""
+
+# game/events/kira.rpy:869
+translate english kira_night_swim_no_restrain_6151b910:
+
+    # Max_05 "[norestrain!t]Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
+    Max_05 ""
+
+# game/events/kira.rpy:870
+translate english kira_night_swim_no_restrain_f8441ad7:
+
+    # Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
+    Kira_05 ""
+
+# game/events/kira.rpy:871
+translate english kira_night_swim_no_restrain_109b02fc:
+
+    # Max_03 "Ага, как будто ничего и не было."
+    Max_03 ""
+
+# game/events/kira.rpy:875
+translate english kira_night_swim_end_cum_42636203:
+
+    # Kira_03 "Ладно, Макс, беги спать. Уже поздно. А то если нас заметят тут, будет много вопросов..."
+    Kira_03 ""
+
+# game/events/kira.rpy:880
+translate english kira_night_swim_end_cum_2d756490:
+
+    # Max_04 "Только после тебя..."
+    Max_04 ""
+
+# game/events/kira.rpy:881
+translate english kira_night_swim_end_cum_3ce678d0:
+
+    # Kira_05 "О, спасибо, Макс! Приятно, что ты решил немного поухаживать за мной. Утром буду тебя ждать... Спокойной ночи! И шорты не забудь..."
+    Kira_05 ""
+
+# game/events/kira.rpy:882
+translate english kira_night_swim_end_cum_171022d2:
+
+    # Max_01 "Не забуду... Спокойной ночи!"
+    Max_01 ""
+
+translate english strings:
+
+    # game/events/kira.rpy:812
+    old "{i}сдерживаться{/i} {color=[sex4.col]}(Сексуальный опыт. Шанс: [sex4.vis]){/color}"
+    new ""
+
+    # game/events/kira.rpy:832
+    old "{i}получать удовольствие{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"
+    new ""
+

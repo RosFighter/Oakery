@@ -9615,3 +9615,168 @@ translate english about_alex4_ddac2765:
 
     # Max_07 "Ладно. Успехов тебе."
     Max_07 "Okay. Good luck to you."
+
+# TODO: Translation updated at 2021-05-07 23:01
+
+# game/dialogues/lisatalk.rpy:4032
+translate english about_horror_toples_41628922:
+
+    # Lisa_01 "Конечно! И я очень благодарна. Надеюсь, это не сильно сказывается на твоих отношениях с мамой?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4033
+translate english about_horror_toples_685823e5:
+
+    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь «спасибо»."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4034
+translate english about_horror_toples_6ae67ce0:
+
+    # Lisa_02 "Могу ещё в щёчку чмокнуть..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4035
+translate english about_horror_toples_578a31c7:
+
+    # Max_04 "У меня идейка получше. Чтобы у меня был стимул спорить с мамой за сохранность твоей попки и дальше, мы будем смотреть ужастики без маек!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4036
+translate english about_horror_toples_9559e606:
+
+    # Lisa_00 "Подожди... Ты же и так их смотришь в одних трусах!"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:4037
+translate english about_horror_toples_881f1ee2:
+
+    # Max_02 "Точно! Дело осталось за тобой."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4038
+translate english about_horror_toples_0e688fc3:
+
+    # Lisa_11 "Хочешь, чтобы я смотрела их в одних трусиках?! Это уже совсем не тянет на твоё наказание! Скорее наоборот..."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:4039
+translate english about_horror_toples_7e32ecd8:
+
+    # Max_09 "Тогда мне не очень интересно тебя защищать от мамы. Тем более, что наказание ты всегда заслуживаешь."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4040
+translate english about_horror_toples_8842e189:
+
+    # Lisa_09 "Ты же возбудишься сразу! Что я тебя, не знаю что ли!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4041
+translate english about_horror_toples_6ce6ffc4:
+
+    # Max_07 "Я думал, тебя это уже не особо смущает?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4042
+translate english about_horror_toples_214dcb00:
+
+    # Lisa_10 "Так ведь ты же начнёшь постоянно подглядывать за мной в душе, чтобы как можно чаще смотреть ужастики! Так не пойдёт!"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4043
+translate english about_horror_toples_11071bb4:
+
+    # Max_03 "Мы можем установить лимит, например, не чаще трёх раз в неделю."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4044
+translate english about_horror_toples_5ef819ff:
+
+    # Lisa_13 "Трёх?! Вот ты разбежался! Одного раза будет предостаточно."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4045
+translate english about_horror_toples_d4345730:
+
+    # Max_04 "Два. Давай, два!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4046
+translate english about_horror_toples_70f11476:
+
+    # Lisa_02 "Ну ладно, два. И только рискни попасться мне в третий раз! Я сразу же надену её обратно и не буду снимать неделю при тебе. А лучше две недели!"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4047
+translate english about_horror_toples_a26f9157:
+
+    # Max_07 "Справедливо. Не поспоришь."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4048
+translate english about_horror_toples_6dc8f68b:
+
+    # Lisa_05 "Но это только, если будешь меня защищать. Провальные попытки не считаются! Понял?"
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:4049
+translate english about_horror_toples_9b836c58:
+
+    # Max_04 "Конечно!"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4050
+translate english about_horror_toples_ddaf895d:
+
+    # Lisa_01 "Извращенец ты."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4051
+translate english about_horror_toples_0c050606:
+
+    # Max_01 "Сама-то."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4063
+translate english Lisa_wear_Tshirt_dcb327ce:
+
+    # Lisa_09 "Вот и всё, Макс... Теперь в течение недели можешь и не надеяться увидеть меня без майки! Рад, что меня наказали?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4065
+translate english Lisa_wear_Tshirt_e4f37387:
+
+    # Lisa_09 "Вот и всё, Макс... Теперь в ближайшие две недели можешь и не надеяться увидеть меня без майки! Рад, что меня наказали?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4066
+translate english Lisa_wear_Tshirt_4adb73b5:
+
+    # Max_10 "Конечно, нет!"
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:4069
+translate english Lisa_wear_Tshirt_84065ed2:
+
+    # Lisa_13 "Может, в следующий раз, ты будешь хоть немного поубедительнее меня защищать..."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4070
+translate english Lisa_wear_Tshirt_029fd40e:
+
+    # Max_08 "Можешь даже не сомневаться."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:4073
+translate english Lisa_wear_Tshirt_8c6e0082:
+
+    # Lisa_12 "Может, в следующий раз, ты хоть что-то сделаешь, а не просто тихо отсидишься..."
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:4074
+translate english Lisa_wear_Tshirt_7a250a36:
+
+    # Max_08 "Так и сделаю. В смысле, сделаю..."
+    Max_08 ""
+
