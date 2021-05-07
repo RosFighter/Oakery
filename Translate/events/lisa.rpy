@@ -1467,5 +1467,4 @@ translate english lisa_horor_movie_r_26ebf379:
 translate english lisa_shower_pinded_054e4844:
 
     # Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал!" nointeract
-    Lisa_09 "" nointeract
-
+    Lisa_09 "[spotted!t]Well, Max! You're peeking again. If you're so eager to watch horror movies with me, then that's what you'll get!" nointeract
