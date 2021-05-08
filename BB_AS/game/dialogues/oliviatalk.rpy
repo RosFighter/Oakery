@@ -5,7 +5,7 @@ label OliviaTalkStart:
 
     $ plan = olivia.get_plan()
     if plan.talklabel is not None:
-        call expression plan.talklabel
+        call expression plan.talklabel from _call_expression_15
 
     if len(dial) > 0:
         $ dial.append((_("Хотя, нет... У меня вообще-то дела есть..."), "exit"))
@@ -23,7 +23,7 @@ label OliviaTalkStart:
 
     if rez != "exit":
         if renpy.has_label(talks[rez].label):   # если такая метка существует, запускаем ее
-            call expression talks[rez].label
+            call expression talks[rez].label from _call_expression_16
         jump OliviaTalkStart        # а затем возвращаемся в начало диалога, если в разговоре не указан переход на ожидание
 
     jump AfterWaiting               # если же выбрано "уйти", уходим в после ожидания

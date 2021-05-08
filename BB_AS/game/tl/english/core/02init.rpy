@@ -579,3 +579,11 @@ translate english strings:
     old "Рад тебя видеть, Оливия!"
     new ""
 
+# TODO: Translation updated at 2021-05-07 23:01
+
+translate english strings:
+
+    # game/core/02init.rpy:117
+    old "Нравится, что я спасаю твою попку от наказания?"
+    new ""
+

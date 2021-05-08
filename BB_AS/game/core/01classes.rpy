@@ -322,6 +322,27 @@ init python:
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
 
+    class Weekly_resets():      # сбрасываемые раз в неделю
+        mass1       = 0
+        dishes      = 0
+        help        = 0
+        punished    = 0
+        protected   = 0
+
+        def __init__(self):
+            self.mass1      = 0
+            self.dishes     = 0
+            self.help       = 0
+            self.punished   = 0
+            self.protected  = 0
+
+        def reset(self):
+            for attr in self.__dict__:
+                setattr(self, attr, 0)
+
+        def __repr__(self):
+            return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
+
     class Daily_resettable():   # сбрасываемые при наступлении нового дня
         # подсматривания
         shower  = 0     # душ
@@ -418,6 +439,7 @@ init python:
         help        = 0         # счетчик помощи девушке (с домашкой, йогой или чем-то подобным)
         truehelp    = 0         # помощь Макса с полной самоотдачей
         ladder      = 0         # счетчик подсматриваний со стремянки
+        topless     = 0         # снимала верх при Максе
 
         def __init__(self, id):
             self.id         = id
@@ -533,6 +555,7 @@ init python:
         clothes     = None      # сменяемая одежда
 
         # сбрасываемые
+        weekly  = None          # раз в неделю
         daily   = None          # при наступлении нового дня
         hourly  = None          # ежечасно
         dcv     = None          # дейлики
@@ -554,6 +577,7 @@ init python:
             self.clothes    = Clothing()        # сменяемая одежда
 
             # сбрасываемые
+            self.weekly = Weekly_resets()
             self.daily  = Daily_resettable()
             self.hourly = Hourly_resets()
             self.dcv    = Dcv_list()
@@ -794,6 +818,9 @@ init python:
 
             if self.dcv is None:
                 self.dcv        = Dcv_list()
+
+            if self.weekly is None:
+                self.weekly = Weekly_resets()
 
     ############################################################################
 
@@ -1187,7 +1214,7 @@ init python:
         def disable(self):
             self.enabled    = False
             self.lost       = 0
-            seld.done       = True
+            self.done       = True
 
         def __repr__(self):
             return "Этап: {self.stage}, осталось дней: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
@@ -1241,7 +1268,7 @@ init python:
         def disable(self):
             self.enabled    = False
             self.lost       = 0
-            seld.done       = True
+            self.done       = True
 
         def __repr__(self):
             return "Этап: {self.stage}, осталось недель: {self.lost}, выполнено: {self.done}, активно: {self.enabled}".format(self=self)
@@ -1322,9 +1349,11 @@ init python:
         MeetingOlivia   = CutEvent('16:00', (3, ), 'olivia_first_meeting', "Оливия приходит на виллу в первый раз", "all([GetWeekday(day)==3, lisa.flags.crush==11, lisa.dcv.feature.done])", cut=True)
         Night_Olivia    = CutEvent('00:00', (6, ), 'olivia_night_visit', "Оливия приходит на ночные посиделки", "all([GetWeekday(day)==6, olivia_nightvisits()])", cut=True)
 
-        Lisa_ab_Alex1   = CutEvent('20:00', (3, ), 'about_alex1', "1-й разговор с Лизой о подкате Алекса", "all([olivia.dcv.feature.stage==5, lisa.flags.crush==12])"),
-        Lisa_ab_Alex2   = CutEvent('20:00', (5, ), 'about_alex2', "2-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==13, lisa.dcv.feature.done])"),
-        Lisa_ab_Alex3   = CutEvent('20:00', (1, ), 'about_alex3', "3-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==14, lisa.dcv.feature.done])"),
+        Lisa_ab_Alex1   = CutEvent('20:00', (3, ), 'about_alex1', "1-й разговор с Лизой о подкате Алекса", "all([olivia.dcv.feature.stage==5, lisa.flags.crush==12])")
+        Lisa_ab_Alex2   = CutEvent('20:00', (5, ), 'about_alex2', "2-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==13, lisa.dcv.feature.done])")
+        Lisa_ab_Alex3   = CutEvent('20:00', (1, ), 'about_alex3', "3-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==14, lisa.dcv.feature.done])")
+
+        Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

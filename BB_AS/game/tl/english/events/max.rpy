@@ -983,3 +983,18 @@ translate english delivery2_245175bb:
 
     # Max_10 "{i}( Боди у меня! Вот только поздно... Эрик уже купил Алисе то, что она хотела. Остаётся лишь выставить на ebay, так хотя бы половину стоимости верну. ){/i}"
     Max_10 "{i}( I've got it! Except it's too late... Eric already bought one for Alice. All that remains is to try and resell it, so at least I'll get half the price back. ){/i}"
+
+# TODO: Translation updated at 2021-05-07 23:01
+
+# game/events/max.rpy:301
+translate english buyfood_96f7e58d:
+
+    # Max_01 "Готово. То, что я делаю это без маминой финансовой помощи точно пойдёт мне только в плюс."
+    Max_01 ""
+
+# game/events/max.rpy:513
+translate english ClearPool_62cb38c0:
+
+    # Max_01 "Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам."
+    Max_01 ""
+

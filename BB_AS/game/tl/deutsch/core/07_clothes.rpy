@@ -4,29 +4,29 @@ translate deutsch strings:
 
     # game/core/07_clothes.rpy:54
     old "Для йоги"
-    new ""
+    new "Für Yoga"
 
     # game/core/07_clothes.rpy:54
     old "Блог в нижнем белье"
-    new ""
+    new "Unterwäsche-Blog"
 
     # game/core/07_clothes.rpy:54
     old "Готовит завтрак"
-    new ""
+    new "Frühstück zubereiten"
 
     # game/core/07_clothes.rpy:54
     old "Готовит ужин"
-    new ""
+    new "Abendessen zubereiten"
 
     # game/core/07_clothes.rpy:54
     old "Утренний отдых"
-    new ""
+    new "Vormittagsruhe"
 
     # game/core/07_clothes.rpy:54
     old "Вечерний отдых"
-    new ""
+    new "Abendliche Erholung"
 
     # game/core/07_clothes.rpy:128
     old "Влияние Макса недостаточно"
-    new ""
+    new "Max' Einfluss reicht nicht aus"
 

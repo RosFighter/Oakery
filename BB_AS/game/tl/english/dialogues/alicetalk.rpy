@@ -9040,7 +9040,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:1044
     old "{i}подождать Алису{/i}"
-    new "{i}Wait for Alice{i}"
+    new "{i}Wait for Alice{/i}"
 
     # game/dialogues/alicetalk.rpy:3603
     old "Ладно, как знаешь... {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
@@ -9513,4 +9513,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:2206
     old "{i}потискать Алису за грудь{/i}"
     new "{i}Squeeze Alice's breasts{/i}"
-

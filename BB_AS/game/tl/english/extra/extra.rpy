@@ -219,5 +219,4 @@ translate english strings:
 
     # game/extra/extra.rpy:56
     old "Держи и не отпускай"
-    new ""
-
+    new "Hold on and don't let go"

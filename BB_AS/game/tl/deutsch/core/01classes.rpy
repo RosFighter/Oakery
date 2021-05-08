@@ -4,45 +4,45 @@ translate deutsch strings:
 
     # game/core/01classes.rpy:237
     old "Ужасное"
-    new ""
+    new "Schrecklich"
 
     # game/core/01classes.rpy:237
     old "Очень плохое"
-    new ""
+    new "Sehr schlecht"
 
     # game/core/01classes.rpy:237
     old "Плохое"
-    new ""
+    new "Schlacht"
 
     # game/core/01classes.rpy:237
     old "Не очень"
-    new ""
+    new "So so"
 
     # game/core/01classes.rpy:237
     old "Нейтральное"
-    new ""
+    new "Neutral"
 
     # game/core/01classes.rpy:237
     old "Неплохое"
-    new ""
+    new "Nicht schlecht"
 
     # game/core/01classes.rpy:237
     old "Хорошее"
-    new ""
+    new "Gut"
 
     # game/core/01classes.rpy:237
     old "Очень хорошее"
-    new ""
+    new "Sehr gut"
 
     # game/core/01classes.rpy:237
     old "Прекрасное"
-    new ""
+    new "Wunderbar"
 
     # game/core/01classes.rpy:543
     old "Приобретен пакет рекламы"
-    new ""
+    new "Werbepaket erworben"
 
     # game/core/01classes.rpy:666
     old "{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
-    new ""
+    new "{color=[lime]}{i}{b}Attention:{/b} You have found a new opportunity!{/i}{/color}"
 

@@ -57,13 +57,12 @@ label Waiting:
         call Noon from _call_Noon
     if day != prevday:
         call Midnight from _call_Midnight
+        if GetWeekday(day) == 0:
+            # с субботы на воскресение начинается новая неделя
+            # в том числе для еженедельного понижения влияния и/или отношения
+            call NewWeek from _call_NewWeek
     if prevtime < "04:30" < tm:
         call NewDay from _call_NewDay
-
-    if day != prevday and GetWeekday(day) == 0:
-        # с субботы на воскресение начинается новая неделя
-        # в том числе для еженедельного понижения влияния и/или отношения
-        call NewWeek from _call_NewWeek
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -235,6 +234,13 @@ label Midnight:
 
         dcv.countdown()
 
+        if flags.about_earn:
+            # был разговор о заработках за ужином
+            if dcv.clearpool.done and dcv.clearpool.stage < 3:  # прошёл откат чистки бассейна
+                dcv.clearpool.stage = 3     # теперь Макс работает без оплаты
+            if dcv.buyfood.done and dcv.buyfood.stage < 3:      # прошёл откат заказа продуктов
+                dcv.buyfood.stage = 3       # теперь Макс работает без оплаты
+
         if SpiderResp > 0:
             SpiderResp -= 1
 
@@ -243,7 +249,7 @@ label Midnight:
 
 label NewDay:
     # "Новый день"
-    $ ann.daily.ask_money = 0 # просили денег у Анны
+    # $ ann.daily.ask_money = 0 # просили денег у Анны
 
     python:
         if olivia_nightvisits():
@@ -362,10 +368,13 @@ label NewWeek:
             if wcv[i].enabled and not wcv[i].done:
                 wcv[i].set_lost(wcv[i].lost-1)
 
+        for char in chars:
+            char.weekly.reset()
+
         # еженедельное снижения влияния
-        for __char in infl:
-            infl[__char].sub_m(40)
-            infl[__char].sub_e(40)
+        for char in infl:
+            infl[char].sub_m(30)
+            infl[char].sub_e(30)
 
     return
 
@@ -468,6 +477,7 @@ label AfterWaiting:
             jump jerk_yard
 
     window hide
+    $ renpy.block_rollback()
     call screen room_navigation
 
 
@@ -681,21 +691,21 @@ label after_load:
         # "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
         if _version < current_ver or current_ver < "0.06.0.999":
-            call old_fix
+            call old_fix from _call_old_fix
 
     # else:
     #     "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
 
-        call update_06_5    # фиксы текущей версии
+        call update_06_5 from _call_update_06_5    # фиксы текущей версии
 
         # обновление расписаний
-        call set_alice_schedule
-        call set_ann_schedule
-        call set_eric_schedule
-        call set_kira_schedule
-        call set_lisa_schedule
+        call set_alice_schedule from _call_set_alice_schedule
+        call set_ann_schedule from _call_set_ann_schedule
+        call set_eric_schedule from _call_set_eric_schedule
+        call set_kira_schedule from _call_set_kira_schedule
+        call set_lisa_schedule from _call_set_lisa_schedule
 
         # обновление списка предметов, одежды, возможностей
         $ checking_items()
@@ -947,5 +957,12 @@ label update_06_5:
                 poss[ps].stages = [int(st.used) for st in poss[ps].stages]
 
             ol_tv_order = ['0'+str(i) for i in range(1, 8)]
+
+    if _version < "0.06.4.05":
+        python:
+            if len(flags.cur_movies)==3:
+                flags.cur_movies.append(0)
+            for char in chars:
+                chars[char].reinit()
 
     return

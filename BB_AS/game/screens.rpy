@@ -899,6 +899,7 @@ screen preferences():
                         label _("Язык")#| Language")
                         textbutton _("Русский") action Language(None)
                         textbutton _("English") action Language("english")
+                        textbutton _("Deutsch") action Language("deutsch")
 
                 vbox:
                     spacing 20

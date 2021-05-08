@@ -168,8 +168,9 @@ screen choice_lang():
     tag menu
     modal True
     style_prefix 'lang'
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 465 idle 'interface/ENG.webp' action [Language('english'), Function(renpy.full_restart)] focus_mask True at lang
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 825 idle 'interface/RUS.webp' action [Language(None), Function(renpy.full_restart)] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 425 idle 'interface/ENG.webp' action [Language('english'), Function(renpy.full_restart)] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 645 idle 'interface/RUS.webp' action [Language(None), Function(renpy.full_restart)] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 865 idle 'interface/GER.webp' action [Language('deutsch'), Function(renpy.full_restart)] focus_mask True at lang
 
 ################################################################################
 
@@ -277,7 +278,7 @@ screen LaptopScreen():
     use notify_check
 
     $ bookmarks = 2
-    if dcv.buyfood.stage == 1:
+    if dcv.buyfood.stage in [1, 3]:
         $ bookmarks += 1
     if poss['cams'].stn == 3 and mgg.money >= 100:
         $ bookmarks += 1
@@ -316,7 +317,7 @@ screen LaptopScreen():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action Jump('courses_start') at book_marks
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if dcv.buyfood.stage == 1:
+                    if dcv.buyfood.stage in [1, 3]:
                         frame xysize(370, 295) background None:
                             if mgg.money < 50:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
@@ -360,7 +361,7 @@ screen LaptopDouble():
     use notify_check
 
     $ bookmarks = 2
-    if dcv.buyfood.stage == 1:
+    if dcv.buyfood.stage in [1, 3]:
         $ bookmarks += 1
     if poss['cams'].stn == 3 and mgg.money >= 100:
         $ bookmarks += 1
@@ -402,7 +403,7 @@ screen LaptopDouble():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action NullAction()
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if dcv.buyfood.stage == 1:
+                    if dcv.buyfood.stage in [1, 3]:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action NullAction()
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]

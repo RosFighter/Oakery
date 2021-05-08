@@ -4,451 +4,451 @@ translate deutsch strings:
 
     # game/core/02init.rpy:18
     old "{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Überzeugung gescheitert!{/i}{/color}\n"
 
     # game/core/02init.rpy:19
     old "{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Überzeugung erfolgreich!{/i}{/color}\n"
 
     # game/core/02init.rpy:21
     old "{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Du bist unentdeckt!{/i}{/color}\n"
 
     # game/core/02init.rpy:22
     old "{color=#E59400}{i}Вас заметили!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Du bist entdeckt worden!{/i}{/color}\n"
 
     # game/core/02init.rpy:24
     old "{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Alice gefiel die Massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:25
     old "{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Alice gefiel die Massage nicht!{/i}{/color}\n"
 
     # game/core/02init.rpy:27
     old "{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Lisa liebte die Massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:28
     old "{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Lisa mochte die Massage nicht!{/i}{/color}\n"
 
     # game/core/02init.rpy:30
     old "{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Ich konnte mich zurückhalten{/i}{/color}\n"
 
     # game/core/02init.rpy:31
     old "{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Ich konnte mich nicht zurückhalten{/i}{/color}\n"
 
     # game/core/02init.rpy:33
     old "{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Lisa liebte den Kuss!{/i}{/color}\n"
 
     # game/core/02init.rpy:34
     old "{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Lisa gefiel der Kuss nicht!{/i}{/color}\n"
 
     # game/core/02init.rpy:36
     old "{color=#00FF00}{i}Ей нравится!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Sie liebt es!{/i}{/color}\n"
 
     # game/core/02init.rpy:37
     old "{color=#E59400}{i}Ей не нравится!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Sie hasst es!{/i}{/color}\n"
 
     # game/core/02init.rpy:68
     old "ВС"
-    new ""
+    new "SO"
 
     # game/core/02init.rpy:68
     old "ВОСКРЕСЕНЬЕ"
-    new ""
+    new "SONNTAG"
 
     # game/core/02init.rpy:68
     old "ПН"
-    new ""
+    new "MO"
 
     # game/core/02init.rpy:68
     old "ПОНЕДЕЛЬНИК"
-    new ""
+    new "MONTAG"
 
     # game/core/02init.rpy:68
     old "ВТ"
-    new ""
+    new "DIE"
 
     # game/core/02init.rpy:68
     old "ВТОРНИК"
-    new ""
+    new "DIENSTAG"
 
     # game/core/02init.rpy:68
     old "СР"
-    new ""
+    new "MI"
 
     # game/core/02init.rpy:68
     old "СРЕДА"
-    new ""
+    new "MITTWOCH"
 
     # game/core/02init.rpy:68
     old "ЧТ"
-    new ""
+    new "DO"
 
     # game/core/02init.rpy:68
     old "ЧЕТВЕРГ"
-    new ""
+    new "DONNERSTAG"
 
     # game/core/02init.rpy:68
     old "ПТ"
-    new ""
+    new "FR"
 
     # game/core/02init.rpy:68
     old "ПЯТНИЦА"
-    new ""
+    new "FREITAG"
 
     # game/core/02init.rpy:68
     old "СБ"
-    new ""
+    new "SA"
 
     # game/core/02init.rpy:68
     old "СУББОТА"
-    new ""
+    new "SAMSTAG"
 
     # game/core/02init.rpy:103
     old "Управление"
-    new ""
+    new "Steuerung"
 
     # game/core/02init.rpy:103
     old "В данной игре предусмотрено управление с помощью клавиатуры. Вы можете сохраняться в любой момент. Быстрые клавиши по-умолчанию:\nF5 - сохранить, F8 - загрузить.\n\n\nКроме того, во время диалогов работают клавиши 1... 9 для различных вариантов ответов. Если вариант всего один, можно нажимать клавишу [[Space].\n\n\nДля переключения между комнатами можно воспользоваться клавишами 1... 7.\n\n\nОтключить интерфейс можно клавишами [[ ` ], [[ h ] или нажав среднюю клавишу мыши.\nЭто очень удобно, если область диалогов скрывает интересную часть изображения..."
-    new ""
+    new "In diesem Spiel können Sie die Tastatur zur Steuerung verwenden. Sie können jederzeit speichern.Die Standard-Shortcuts sind: \nF5 - Speichern, F8 - Laden.\n\n\nZusätzlich stehen während der Dialoge die Tasten 1... 9 Tasten für verschiedene Antworten.Wenn es nur eine Option gibt, können Sie [[Leertaste] drücken.\n\n\nUm zwischen den Räumen zu wechseln, benutzen Sie 1... 7.\n\n\nSie können die Textanzeige mit [[ ` ], [[ h ] oder durch Drücken der mittleren Maustaste ausblenden.\nDies ist sehr nützlich, wenn der Dialogbereich einen interessanten Teil des Bildes verdeckt..."
 
     # game/core/02init.rpy:103
     old "Возможности"
-    new ""
+    new "Möglichkeiten"
 
     # game/core/02init.rpy:103
     old "В процессе игры, во время диалогов и других действий, вы можете открыть для себя новые \"возможности\". Их механика немного похожа на \"задания\" или \"квесты\" из других игр, но есть некоторые отличия.\n\n\n\"Возможности\" могут открывать доступ к скрытым событиям или покупкам в интернет-магазине, к новым опциям в ноутбуке или действиям в некоторых комнатах. Читайте внимательно описание каждой \"возможности\" и вы ничего не упустите!"
-    new ""
+    new "Während Dialogen im Spiel und anderen Aktionen werden Ihnen möglicherweise \"Gelegenheiten\" geboten. Diese sind vergleichbar mit Quests in anderen Spielen, mit ein paar Unterschieden. \n\n\n\n\"Gelegenheiten\" können versteckte Aktionen, Gegenstände im Online-Shop, Optionen auf Ihrem Laptop und Aktionen in einigen Räumen eröffnen. Lesen Sie ihre Beschreibung sorgfältig durch und Sie werden nichts verpassen!"
 
     # game/core/02init.rpy:103
     old "Настроение"
-    new ""
+    new "Stimmung"
 
     # game/core/02init.rpy:103
     old "Различные действия или фразы, сказанные Максом, могут вызывать соответствующую реакцию в виде смены настроения персонажа.\n\n\nЕсли у персонажа плохое настроение, он может отказаться с вами обсуждать некоторые темы.\n\n\nПостепенно, каждый час, настроение плавно стремится к нейтральному состоянию. Однако, если настроение очень плохое, оно будет долго восстанавливаться.\n\n\nЧтобы поднять настроение, можно подарить то, что нужно именно этому персонажу или же просто извиниться. А иногда и правильное слово во время разговора может значительно улучшить настроение."
-    new ""
+    new "Verschiedene Handlungen oder Formulierungen wirken sich auf die Stimmung des Protagonisten aus.\n\n\n\nWenn ein Akteur schlecht gelaunt ist, kann es sein, dass er sich weigert, über bestimmte Themen zu sprechen, oder dass er die Fortschritte des Spielers abbricht.\n\n\n\n\n Jede Stunde verschiebt sich die Stimmung des Charakters langsam in Richtung neutral. Wenn Sie etwas getan haben, um sie in eine besonders schlechte Stimmung zu versetzen, dauert es sogar noch länger, bis sie wieder normal sind.\n\n\nSie können bestimmte Gegenstände schenken, um Ihre Fehler zu beheben. Bestimmte Dialogmöglichkeiten können auch die Stimmung eines Menschen radikal verbessern."
 
     # game/core/02init.rpy:103
     old "Шоу"
-    new ""
+    new "Zeigen"
 
     # game/core/02init.rpy:103
     old "Скрытые камеры могут быть основным источником дохода. Чем больше аудитория, тем больше людей, готовых платить за просмотр.\n\n\nУвеличить аудиторию можно с помощью рекламы. Если на камерах не происходит ничего интересного - аудитория падает. Если в кадр попадают пикантные моменты, аудитория растёт.\n\n\nЕсли у вас есть сайт, вы можете зарабатывать на рекламных баннерах. Поэтому, чем больше аудитория, тем больше у вас денег.\n\n\n{i}{b}Внимание:{/b} В следующих версиях игры появятся VIP-пользователи с особыми просьбами. Если вы будете их выполнять, получите солидную прибавку к доходу.{/i}"
-    new ""
+    new "Versteckte Kameras können eine wichtige Einnahmequelle sein. Ein größeres Publikum bedeutet, dass Sie mehr Leute finden, die bereit sind, Sie zu bezahlen.\n\n\n Mit Werbung können Sie mehr Zuschauer anlocken.\n\n\nWenn Ihre Kameras nichts Interessantes einfangen können, wird die Zahl der Zuschauer sinken. Sie müssen also herausfinden, wie Sie das Publikum bei Laune halten können.\n\n\n\{i}{b}Achtung:{/b} VIP-Benutzer mit besonderen Anforderungen werden in späteren Versionen eingeführt. Wenn Sie tun, was diese wollen, werden Sie erheblich besser belohnt.{/i}"
 
     # game/core/02init.rpy:111
     old "Значит, у тебя есть блог?"
-    new ""
+    new "So, du hast also einen Blog?"
 
     # game/core/02init.rpy:111
     old "Слушай, насчёт блога..."
-    new ""
+    new "Also, wegen deinem Blog..."
 
     # game/core/02init.rpy:111
     old "Насчёт твоего блога... А если не особо раздеваться?"
-    new ""
+    new "Wegen deinem Blog... vielleicht musst du dich nicht ganz ausziehen?"
 
     # game/core/02init.rpy:111
     old "О школе..."
-    new ""
+    new "Wegen der Schule..."
 
     # game/core/02init.rpy:111
     old "А ты чего так загораешь?"
-    new ""
+    new "Warum sonnst du dich so?"
 
     # game/core/02init.rpy:111
     old "Насчёт твоего парня..."
-    new ""
+    new "Wegen deinem Freund..."
 
     # game/core/02init.rpy:111
     old "Насчёт посуды..."
-    new ""
+    new "Wegen des Abwasch..."
 
     # game/core/02init.rpy:111
     old "Мам, дай денег, пожалуйста..."
-    new ""
+    new "Kannst du mir bitte etwas Geld geben, Mom?"
 
     # game/core/02init.rpy:111
     old "Я продукты заказал!"
-    new ""
+    new "Ich habe die Lebensmittel bestellt, Mom!"
 
     # game/core/02init.rpy:111
     old "Мам, бассейн чист!"
-    new ""
+    new "Ich habe den Pool sauber gemacht, Mom!"
 
     # game/core/02init.rpy:111
     old "Что смотришь?"
-    new ""
+    new "Was schaust du gerade?"
 
     # game/core/02init.rpy:111
     old "Не возражаешь против компании?"
-    new ""
+    new "Darf ich Dir Gesellschaft leisten?"
 
     # game/core/02init.rpy:111
     old "Что читаешь?"
-    new ""
+    new "Was ließt du da?"
 
     # game/core/02init.rpy:111
     old "Насчёт случая с Лизой..."
-    new ""
+    new "Etwa zu der Zeit mit Lisa..."
 
     # game/core/02init.rpy:111
     old "Насчёт этого случая утром..."
-    new ""
+    new "Ungefähr um diese Zeit am Morgen..."
 
     # game/core/02init.rpy:111
     old "Хотел поговорить о Большом Максе..."
-    new ""
+    new "Ich wollte über Big Max reden..."
 
     # game/core/02init.rpy:111
     old "А ты у нас шалунья, оказывается..."
-    new ""
+    new "Ich hätte nicht gedacht, dass du so ein ungezogenes Mädchen bist..."
 
     # game/core/02init.rpy:111
     old "Насчёт успеваемости..."
-    new ""
+    new "Wegen deiner Noten..."
 
     # game/core/02init.rpy:111
     old "Ну как, ты подумала о моих условиях?"
-    new ""
+    new "Also, hast du über meine Bedingungen nachgedacht?"
 
     # game/core/02init.rpy:111
     old "Помочь с уроками?"
-    new ""
+    new "Brauchst du Hilfe bei deinen Hausaufgaben?"
 
     # game/core/02init.rpy:111
     old "Хотел извиниться за утренний инцидент..."
-    new ""
+    new "Ich wollte mich für heute Morgen entschuldigen..."
 
     # game/core/02init.rpy:111
     old "Загораешь?"
-    new ""
+    new "Sonnenbad?"
 
     # game/core/02init.rpy:111
     old "У меня для тебя обещанная вкусняшка!"
-    new ""
+    new "Ich habe etwas Leckeres, das ich dir versprochen habe!"
 
     # game/core/02init.rpy:111
     old "У тебя странный вид..."
-    new ""
+    new "Du siehst irgendwie komisch aus..."
 
     # game/core/02init.rpy:111
     old "Может всё-таки поделишься своими переживаниями по поводу Алисы?"
-    new ""
+    new "Kannst Du mir sagen, was Du über Alice denkst?"
 
     # game/core/02init.rpy:111
     old "Массаж рук заказывала?"
-    new ""
+    new "Willst du eine Handmassage haben?"
 
     # game/core/02init.rpy:111
     old "Насчёт ванны ночью..."
-    new ""
+    new "Wegen dem Bad neulich Abend..."
 
     # game/core/02init.rpy:111
     old "Да тут всегда хорошая погода..."
-    new ""
+    new "Wir haben hier immer tolles Wetter..."
 
     # game/core/02init.rpy:111
     old "Ага, как всегда..."
-    new ""
+    new "Ja, wie immer..."
 
     # game/core/02init.rpy:111
     old "Да, шикарная!"
-    new ""
+    new "Ja, das Wetter ist großartig!"
 
     # game/core/02init.rpy:111
     old "Мам, а как учатся целоваться?"
-    new ""
+    new "Mom, wie lernt man küssen?"
 
     # game/core/02init.rpy:111
     old "А ты умеешь целоваться?"
-    new ""
+    new "Weißt du, wie man küsst?"
 
     # game/core/02init.rpy:111
     old "Кира, мне нужно научиться целоваться..."
-    new ""
+    new "Tante Kira, ich muß lernen, wie man küsst..."
 
     # game/core/02init.rpy:111
     old "Ну что, Лиза, готова?"
-    new ""
+    new "Also, bist du bereit?"
 
     # game/core/02init.rpy:111
     old "Ну что, готова?"
-    new ""
+    new "Bist du soweit?"
 
     # game/core/02init.rpy:111
     old "Лиза, ты же любишь читать?"
-    new ""
+    new "Du liest doch gerne, oder?"
 
     # game/core/02init.rpy:111
     old "Лиза, у меня для тебя особая книжка..."
-    new ""
+    new "Hey Lisa, ich habe ein Buch, das dich interessieren könnte..."
 
     # game/core/02init.rpy:111
     old "Ну как, ты с мамой-то поговорила?"
-    new ""
+    new "Und, hast du mit Mom gesprochen?"
 
     # game/core/02init.rpy:111
     old "Как отдыхается, тётя Кира?"
-    new ""
+    new "Wie ist dein Urlaub, Tante Kira?"
 
     # game/core/02init.rpy:111
     old "Насчёт фотосессии..."
-    new ""
+    new "Wegen dem Fotoshooting..."
 
     # game/core/02init.rpy:111
     old "Понравились фотографии?"
-    new ""
+    new "Haben dir die Fotos gefallen?"
 
     # game/core/02init.rpy:111
     old "Не злишься на меня, тётя Кира?"
-    new ""
+    new "Bist du nicht böse auf mich, Tante Kira?"
 
     # game/core/02init.rpy:111
     old "Мне нужны деньги..."
-    new ""
+    new "Ich brauche Geld..."
 
     # game/core/02init.rpy:111
     old "Эрик, мы же договорились!"
-    new ""
+    new "Eric, wir hatten einen Deal!"
 
     # game/core/02init.rpy:111
     old "Рассказывай, что делали?"
-    new ""
+    new "Sage mir, was hast du getan?"
 
     # game/core/02init.rpy:111
     old "Ну так и чему же тебя учили?"
-    new ""
+    new "Was haben sie dir beigebracht?"
 
     # game/core/02init.rpy:111
     old "Что новенького было на уроке?"
-    new ""
+    new "Was hast du aus deinen Lektionen gelernt?"
 
     # game/core/02init.rpy:111
     old "Что нового мама с Эриком тебе рассказали?"
-    new ""
+    new "Hast du etwas Neues von Mom und Eric gelernt?"
 
     # game/core/02init.rpy:111
     old "Что нового узнала на уроке у мамы и Эрика?"
-    new ""
+    new "Was hast du von Mom und Eric gelernt?"
 
     # game/core/02init.rpy:111
     old "{i}урок поцелуев{/i}"
-    new ""
+    new "{i}Kuss-Lektion{/i}"
 
     # game/core/02init.rpy:111
     old "Так когда будем снова фотографироваться, тётя Кира?"
-    new ""
+    new "Wann machen wir wieder ein Foto-Shooting?"
 
     # game/core/02init.rpy:111
     old "Я слышал, Эрик тебе новое бельё собирается купить?"
-    new ""
+    new "Ich habe gehört, Eric will dir neue Unterwäsche kaufen?"
 
     # game/core/02init.rpy:111
     old "Покажешь боди, которое тебе Эрик купит?"
-    new ""
+    new "Zeigst du mir den Body, den Eric dir kaufen wird?"
 
     # game/core/02init.rpy:111
     old "Хочу рассказать тебе кое-что о Кире..."
-    new ""
+    new "Ich möchte dir etwas über Kira erzählen..."
 
     # game/core/02init.rpy:111
     old "Я хотел поговорить о Кире..."
-    new ""
+    new "Ich wollte über Kira reden..."
 
     # game/core/02init.rpy:175
     old "Одежда"
-    new ""
+    new "Kleidung"
 
     # game/core/02init.rpy:175
     old "Книги"
-    new ""
+    new "Bücher"
 
     # game/core/02init.rpy:175
     old "Продукты"
-    new ""
+    new "Essen"
 
     # game/core/02init.rpy:175
     old "Электроника"
-    new ""
+    new "Elektronik"
 
     # game/core/02init.rpy:175
     old "Товары 18+"
-    new ""
+    new "Über 18+"
 
     # game/core/02init.rpy:175
     old "Косметика"
-    new ""
+    new "Kosmetik"
 
     # game/core/02init.rpy:175
     old "Украшения"
-    new ""
+    new "Schmuck"
 
     # game/core/02init.rpy:175
     old "Другое"
-    new ""
+    new "Sonstiges"
 
     # game/core/02init.rpy:186
     old "А у меня есть то, о чём ты мечтала..."
-    new ""
+    new "Ich habe etwas, das du wolltest..."
 
     # game/core/02init.rpy:186
     old "У меня для тебя подарок {i}(Халат){/i}"
-    new ""
+    new "Ich habe ein Geschenk für dich {i}(Bademantel){/i}"
 
     # game/core/02init.rpy:186
     old "{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"
-    new ""
+    new "{color=#808080}Ich habe einen Vorschlag für dich! \n (Du musst ein paar Tage warten){/color}"
 
     # game/core/02init.rpy:186
     old "У меня для тебя вкусняшка!"
-    new ""
+    new "Ich habe einen Vorschlag für dich!"
 
     # game/core/02init.rpy:186
     old "У меня есть кое-что запрещённое..."
-    new ""
+    new "Ich habe etwas verbotenes für Dich..."
 
     # game/core/02init.rpy:186
     old "Угадай: маленькое, чёрненькое..."
-    new ""
+    new "Rate mal: klein, schwarz..."
 
     # game/core/02init.rpy:186
     old "У меня для тебя одна книжка..."
-    new ""
+    new "Ich habe ein Buch für dich..."
 
     # game/core/02init.rpy:186
     old "У меня снова для тебя книжка..."
-    new ""
+    new "Ich habe wieder ein Buch für dich..."
 
     # game/core/02init.rpy:186
     old "И снова у меня для тебя книжка..."
-    new ""
+    new "Ich habe noch ein Buch für dich..."
 
     # game/core/02init.rpy:186
     old "У меня для тебя подарок {i}(Пижама){/i}"
-    new ""
+    new "Ich habe ein Geschenk für dich {i}(Pyjama){/i}"
 
     # game/core/02init.rpy:186
     old "У меня есть кое-что, о чём мы беседовали..."
-    new ""
+    new "Ich habe etwas, wegen dem worüber wir vorhin sprachen..."
 
     # game/core/02init.rpy:186
     old "{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"
-    new ""
+    new "{color=#808080}Ich habe dir Süßigkeiten gekauft! \n (Du musst ein paar Tage warten.){/color}"
 
     # game/core/02init.rpy:186
     old "Прикупил для тебя немного сладенького!"
-    new ""
+    new "Ich habe dir Süßigkeiten gekauft!"
 
 # TODO: Translation updated at 2021-04-11 22:25
 
@@ -456,23 +456,23 @@ translate deutsch strings:
 
     # game/core/02init.rpy:116
     old "Хотел узнать, хорошо ли тебе сидится?"
-    new ""
+    new "Ich wollte wissen, ob du dich gut amüsiert hast?"
 
     # game/core/02init.rpy:116
     old "Не слабо тебя отшлёпали!"
-    new ""
+    new "Das ist eine höllische Tracht Prügel!"
 
     # game/core/02init.rpy:116
     old "Ты не передумала о наказаниях?"
-    new ""
+    new "Hast du deine Meinung zur Bestrafung geändert?"
 
     # game/core/02init.rpy:116
     old "Отшлёпать тебя сейчас или..."
-    new ""
+    new "Ich verhau dich jetzt oder..."
 
     # game/core/02init.rpy:116
     old "Пора отшлёпать одну милую попку!"
-    new ""
+    new "Zeit, einen süßen Arsch zu versohlen!"
 
 # TODO: Translation updated at 2021-04-15 10:35
 
@@ -480,31 +480,31 @@ translate deutsch strings:
 
     # game/core/02init.rpy:116
     old "Мам, Кира отправила меня к тебе..."
-    new ""
+    new "Mom, Kira hat mich zu dir geschickt..."
 
     # game/core/02init.rpy:116
     old "С тобой можно?"
-    new ""
+    new "Kann ich mitkommen?"
 
     # game/core/02init.rpy:116
     old "Я присоединюсь?"
-    new ""
+    new "Kann ich mich zu dir setzen?"
 
     # game/core/02init.rpy:116
     old "Тётя Кира, когда ты уже с мамой поговоришь?!"
-    new ""
+    new "Tante Kira, wann wirst du mit Mom sprechen?!"
 
     # game/core/02init.rpy:116
     old "Я хотел спросить про тот случай из детства мамы..."
-    new ""
+    new "Ich wollte  meine Mom nach diesem Vorfall aus ihrer Kindheit fragen..."
 
     # game/core/02init.rpy:116
     old "Расскажи уже про тот случай из детства мамы..."
-    new ""
+    new "Erzähle mir von dem Vorfall aus der Kindheit von Mom..."
 
     # game/core/02init.rpy:207
     old "Мам, я купил тебе одежду полегче!"
-    new ""
+    new "Mom, ich habe dir ein paar dünnere Klamotten gekauft!"
 
 # TODO: Translation updated at 2021-04-20 19:46
 
@@ -512,23 +512,23 @@ translate deutsch strings:
 
     # game/core/02init.rpy:116
     old "Насчёт Алекса..."
-    new ""
+    new "Über Alex..."
 
     # game/core/02init.rpy:116
     old "Есть успехи с Оливией?"
-    new ""
+    new "Hattest du Glück mit Olivia?"
 
     # game/core/02init.rpy:116
     old "Что-нибудь узнала про Оливию?"
-    new ""
+    new "Hast du etwas über Olivia herausgefunden?"
 
     # game/core/02init.rpy:116
     old "Ну так, что там с трусиками Оливии?"
-    new ""
+    new "Also, was hat es mit Olivias Höschen auf sich?"
 
     # game/core/02init.rpy:116
     old "Ты позвала Оливию к нам?"
-    new ""
+    new "Du hast Olivia herbestellt?"
 
 # TODO: Translation updated at 2021-05-02 21:54
 
@@ -536,25 +536,33 @@ translate deutsch strings:
 
     # game/core/02init.rpy:23
     old "{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Zu riskant!{/i}{/color}\n"
 
     # game/core/02init.rpy:117
     old "Ну как, получилось рассказать всё Оливии?"
-    new ""
+    new "Hast du es Olivia schon gesagt?"
 
     # game/core/02init.rpy:117
     old "Учтите, я испытываю... некоторый подъём!"
-    new ""
+    new "Wohlgemerkt, ich erlebe... eine gewisse Aufregung!"
 
     # game/core/02init.rpy:117
     old "Пошепчемся немного о моей сестрёнке?"
-    new ""
+    new "Ein kleines Geheimniss über meine Schwester?"
 
     # game/core/02init.rpy:117
     old "Что новенького, Оливия?"
-    new ""
+    new "Was gibt es Neues, Olivia?"
 
     # game/core/02init.rpy:117
     old "Рад тебя видеть, Оливия!"
-    new ""
+    new "Schön, dich zu sehen, Olivia!"
+
+# TODO: Translation updated at 2021-05-07 23:00
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:117
+    old "Нравится, что я спасаю твою попку от наказания?"
+    new "Gefällt es dir, dass ich deinen Arsch vor der Bestrafung bewahre?"
 

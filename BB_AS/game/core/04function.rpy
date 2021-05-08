@@ -567,19 +567,16 @@ init python:
 
         # установка разрешения диалога
         if len(current_room.cur_char) == 1:
-            # cur_plan = GetPlan(eval('plan_'+current_room.cur_char[0]), day, tm)
             cur_plan = chars[current_room.cur_char[0]].get_plan()
             # если при данном занятии разрешен диалог и есть тема для разговора
-            AvailableActions['talk'].enabled = (cur_plan.enabletalk and len(TalkMenuItems()) > 0)
+            AvailableActions['talk'].enabled = all([cur_plan.enabletalk, len(TalkMenuItems()) > 0])
         else:
             AvailableActions['talk'].enabled = False
 
         # комната Макса и Лизы
         if current_room == house[0]:
-            # cur_plan = GetPlan(plan_lisa, day, tm)
-            cur_plan = lisa.get_plan()
 
-            if (cur_plan is not None and cur_plan.name != 'dressed' and '08:00' <= tm < '21:30'):
+            if all([lisa.plan_name != 'dressed', '08:00' <= tm < '21:30']):
                 AvailableActions['unbox'].active = True
 
             if '00:00' <= tm <= '04:00':
@@ -589,30 +586,25 @@ init python:
                 AvailableActions['nap'].active = True
 
             if mgg.energy > 5:
-                if cur_plan is not None and cur_plan.name != 'dressed':
+                if lisa.plan_name != 'dressed':
                     AvailableActions['notebook'].active = True
 
-            if ('06:00' <= tm <= '21:30' and cur_plan is not None
-                                         and cur_plan.name != 'dressed'):
+            if all(['06:00' <= tm <= '21:30', lisa.plan_name != 'dressed']):
                 for key in items:
-                    if items[key].have and items[key].need_read > items[key].read and ItsTime(cooldown['learn']):
+                    if all([items[key].have, items[key].need_read > items[key].read, ItsTime(cooldown['learn'])]):
                         AvailableActions['readbook'].active = True
 
         # комната Алисы
         if current_room == house[1] and len(current_room.cur_char) == 0:
-            # cur_plan = GetPlan(plan_alice, day, tm)
-            cur_plan = alice.get_plan()
             AvailableActions['usb'].active = True
-            AvailableActions['searchbook'].active = (cur_plan.name != 'read' and '08:00' <= tm < '22:00')
+            AvailableActions['searchbook'].active = all([alice.plan_name != 'read', '08:00' <= tm < '22:00'])
             if items['spider'].have:
                 AvailableActions['hidespider'].active = True
-            AvailableActions['searchciga'].active = (cur_plan.name != 'smoke' and alice.dcv.set_up.enabled and alice.dcv.set_up.done and '08:00' <= tm < '19:00')
+            AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00'])
 
         # ванная комната
         if current_room == house[3]:
-            # cur_plan = GetPlan(plan_alice, day, tm)
-            cur_plan = alice.get_plan()
-            if cur_plan.label == 'alice_shower' and len(current_room.cur_char) == 1: # Алиса принимает душ одна
+            if alice.plan_name == 'shower' and len(current_room.cur_char) == 1: # Алиса принимает душ одна
                 AvailableActions['throwspider3'].active = True
 
             if '06:00' <= tm <= '18:00' and mgg.cleanness < 80:
@@ -624,7 +616,6 @@ init python:
 
         # гостиная
         if current_room == house[4]:
-            cur_plan = alice.get_plan()
             # if items['ann_movie'].have and cur_plan is not None and cur_plan.label == 'ann_tv':
             #     AvailableActions['momovie'].active = True
             if not dishes_washed and len(current_room.cur_char) == 0:
@@ -638,7 +629,7 @@ init python:
         # двор
         if current_room == house[6]:
             AvailableActions['clearpool'].enabled = ('10:00' <= tm <= '16:00') and (len(current_room.cur_char) == 0)
-            AvailableActions['clearpool'].active = (dcv.clearpool.stage == 1)
+            AvailableActions['clearpool'].active = (dcv.clearpool.stage in [1, 3])
             AvailableActions['catchspider'].active = ('10:00' <= tm < '12:00') and not items['spider'].have
 
 
@@ -690,9 +681,12 @@ init python:
                 dress = lisa.clothes.sleep.GetCur().suf
                 inf   = lisa.clothes.sleep.GetCur().info
                 clot  = 'sleep'
-            elif name in ['sleep2', 'tv2']:
+            elif name == 'sleep2':
                 dress = lisa.clothes.sleep.GetCur().suf
                 inf   = lisa.clothes.sleep.GetCur().info
+            elif name == 'tv2':
+                dress = 'c' if lisa_will_be_topless() > 0 else 'b'
+                inf = '02c' if lisa_will_be_topless() > 0 else '02a'
             elif name in ['read', 'breakfast', 'dinner', 'dishes', 'phone']:
                 dress = lisa.clothes.casual.GetCur().suf
                 inf   = lisa.clothes.casual.GetCur().info
@@ -714,23 +708,6 @@ init python:
                 dress = lisa.clothes.learn.GetCur().suf
                 inf   = lisa.clothes.learn.GetCur().info
                 clot  = 'learn'
-                # откорректируем по настрению
-                # relmood = GetRelMax('lisa')[0] > 2 and lisa.GetMood()[0] > 2
-                # if lisa.clothes.learn.rand and relmood:
-                #     # если включен рандом и есть нужные настроение с отношением, то полотенце
-                #     dress  = 'c'
-                #     inf    = '04b'
-                # elif lisa.clothes.learn.rand:  # рандом включен, но нет настроения
-                #     if 'bathrobe' in lisa.gifts and lisa.clothes.learn.cur==2:  # есть халат и выбрано полотенце, ставим халат
-                #         dress  = 'b'
-                #         inf    = '04'
-                #     elif 'bathrobe' not in lisa.gifts and lisa.clothes.learn.cur==1:  # нет халата, текущим стоит полотенце
-                #         if 'kira' in chars:  # если Кира уже приехала, ставим топик и юбочку
-                #             dress  = 'd'
-                #             inf    = '01c'
-                #         else:  # иначе - обычную повседневку
-                #             dress  = 'a'
-                #             inf    = '01a'
 
         elif char=='alice':
             dress = alice.clothes.casual.GetCur().suf

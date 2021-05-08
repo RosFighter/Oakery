@@ -863,7 +863,7 @@ label breakfast:
     if day > 1 and not alice.dcv.special.enabled:
         ## Добавляем возможность курения Алисы
         $ alice.dcv.special.enabled = True
-        call set_alice_can_smoke
+        call set_alice_can_smoke from _call_set_alice_can_smoke_1
 
     jump StartPunishment
 

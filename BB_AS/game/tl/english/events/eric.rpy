@@ -2119,7 +2119,7 @@ translate english sexed_lisa_lesson_3_762fcd5f:
 translate english eric_ann_sleep_7df403de:
 
     # Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!" nointeract
-    Max_09 "Оh! Mom sleeps alone... She's so hot, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
+    Max_09 "Oh! Mom sleeps alone... She's so hot, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
 
 # game/events/eric.rpy:741
 translate english eric_ann_sleep_not_eric_a05237c8:
@@ -2257,7 +2257,7 @@ translate english strings:
 
     # game/events/eric.rpy:1387
     old "{i}сфотографировать его{/i}"
-    new "{i}Photograph him{i}"
+    new "{i}Photograph him{/i}"
 # TODO: Translation updated at 2021-02-16 09:54
 
 # game/events/eric.rpy:537
@@ -2271,4 +2271,3 @@ translate english eric_ann_fucking_3479dfb8:
 
     # Max "" nointeract
     Max "" nointeract
-

@@ -36,19 +36,19 @@ label set_alice_schedule:
 
     if day > 1 and not poss['smoke'].used(1):
         # Алиса может курить
-        call set_alice_can_smoke
+        call set_alice_can_smoke from _call_set_alice_can_smoke
 
     if flags.dinner >= 11:
         # после второй субботы Алиса может посещать ночной клуб
-        call alice_init_nightclub
+        call alice_init_nightclub from _call_alice_init_nightclub_2
 
     if 'kira' in chars:
         # Приехала Кира
-        call alice_after_arrival_kira
+        call alice_after_arrival_kira from _call_alice_after_arrival_kira
 
     if 'black_linderie' in alice.gifts:
         # Макс подарил Алисе черное нижнее бельё
-        call alice_can_blog_in_underwear
+        call alice_can_blog_in_underwear from _call_alice_can_blog_in_underwear
 
     return
 
@@ -140,7 +140,7 @@ label set_ann_schedule:
         )
 
     if 'eric' in chars:
-        call ann_after_appearance_eric
+        call ann_after_appearance_eric from _call_ann_after_appearance_eric
 
     return
 

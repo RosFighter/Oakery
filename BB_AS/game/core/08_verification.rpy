@@ -1,6 +1,11 @@
 
 init python:
 
+    # список sub_lst входит в список lst
+    def list_in_list(sub_lst, lst):
+        return all(x in lst for x in sub_lst)
+
+
     # определяет (по расписанию) находится ли персонаж дома в данный момент
     def check_is_home(char, loc='house'):
         if char not in chars:
@@ -110,6 +115,34 @@ init python:
         return rez
 
 
-    # список sub_lst входит в список lst
-    def list_in_list(sub_lst, lst):
-        return all(x in lst for x in sub_lst)
+    # Лиза уже снимала майку при просмотре ТВ с Оливией
+    def lisa_was_topless():
+        return 'olivia' in chars and olivia.dcv.special.stage>1
+
+
+    # Лиза снимет майку для события
+    def lisa_will_be_topless():
+        ###условия для того, чтобы Лиза сняла майку##
+        if not lisa_was_topless():
+            return 0    # не было просмотра ТВ с Оливией топлесс
+
+        if not lisa.dcv.other.done:
+            return -4
+
+        if lisa.plan_name == 'tv2':
+            #1 с пн-пт Лизу наказывали и была 1 успешная защита от наказания, то: 1 помощь с уроками + 1 массаж рук + 1 мытьё посуды
+            #2 с пн-пт Лизу не наказывали, то: 2 помощи с уроками + 1 массаж рук + 2 мытья посуды
+            #3 с пн-пт Лизу наказывали и не было защиты или не поучилось защитить, то: 3 помощи с уроками + 2 массажа рук + 3 мытья посуды
+            #4 уговор с Лизой на ужастики-топлесс, но Макс больше 2х раз за неделю влез в душ, идёт 2хнедельный откат
+            lw = lisa.weekly
+            if lw.punished:
+                # Лизу наказывали
+                if lw.protected:
+                    # была успешная защита от наказания
+                    return 1 if all([lw.help, lw.mass1, lw.dishes]) else -1
+                else:
+                    # не защитил (или не смог)
+                    return 3 if all([lw.help>2, lw.mass1>1, lw.dishes>2]) else -3
+            else:
+                # не было наказаний
+                    return 2 if all([lw.help>1, lw.mass1, lw.dishes>1]) else -2

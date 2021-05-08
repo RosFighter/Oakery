@@ -566,7 +566,8 @@ label alice_talk_tv:
             $ Skill('massage', 0.1)
             $ _pose = {'03':'05', '04':'06'}[_pose]
             scene BG tv-mass-05
-            $ renpy.show('Alice tv-mass ' + _pose + _dress)
+            $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+            $ renpy.show('Max tv-mass ' + _pose + max.dress)
             menu:
                 Alice_07 "Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?"
                 "Да, это будет на десерт...":

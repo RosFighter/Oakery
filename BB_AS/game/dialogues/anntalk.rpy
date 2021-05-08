@@ -79,16 +79,15 @@ label Ann_cooldown:
 
 label ann_ask_money:
 
-    $ __cur_plan = ann.get_plan()
-    if __cur_plan is None:
+    if ann.plan_name is None:
         "При нормальном развитии событий эта строка не должна была появится. Сообщите разработчику."
         return
-    if __cur_plan.name == "yoga": ## Анна занимается йогой
+    if ann.plan_name == 'yoga': ## Анна занимается йогой
          menu:
             Ann_05 "Макс, ты же видишь, я сейчас занята... Выбери более подходящий момент, пожалуйста..."
             "Точно, извини...":
                 jump AfterWaiting
-    elif __cur_plan.name == "swim" or __cur_plan.name == "tv": ## Анна загорает, плавает или смотрит ТВ
+    elif ann.plan_name in ['swim', 'sun', 'tv']: ## Анна загорает, плавает или смотрит ТВ
          menu:
             Ann_05 "Очень смешно, Макс. Ты видишь у меня карманы? Нет? Выбери более подходящий момент, пожалуйста..."
             "Точно, извини...":
@@ -141,7 +140,10 @@ label ann_aboutfood:
         "Супер!":
             pass
     $ AddRelMood('ann', 0, 50)
-    $ dcv.buyfood.stage = 0
+    if flags.about_earn:
+        $ dcv.buyfood.stage = 3
+    else:
+        $ dcv.buyfood.stage = 0
     return
 
 
@@ -151,7 +153,10 @@ label ann_aboutpool:
         "Ага...":
             pass
     $ AddRelMood('ann', 0, 50)
-    $ dcv.clearpool.stage = 0
+    if flags.about_earn:
+        $ dcv.clearpool.stage = 3
+    else:
+        $ dcv.clearpool.stage = 0
     return
 
 
@@ -454,7 +459,7 @@ label talk_about_smoking:
                 Alice_16 "Я не буду тебе ничего говорить, сам всё поймёшь в своё время. Карма штука жестокая, но справедливая..."
                 "{i}начать ужин{/i}":
                     pass
-    call set_alice_cant_smoke   # теперь Алиса не будет курить на вилле
+    call set_alice_cant_smoke from _call_set_alice_cant_smoke   # теперь Алиса не будет курить на вилле
     $ AddRelMood('alice', -10, __mood)
     $ current_room = house[5]
     $ Distribution()

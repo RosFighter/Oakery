@@ -3475,7 +3475,7 @@ translate english strings:
 translate english alice_sleep_night_7df403de:
 
     # Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!" nointeract
-    Max_09 "Оh! Mom's alone... She's so beautiful, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
+    Max_09 "Oh! Mom's alone... She's so beautiful, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
 
 # game/events/alice.rpy:154
 translate english alice_sleep_night_a30b80cf:
@@ -3991,4 +3991,3 @@ translate english strings:
     # game/events/alice.rpy:506
     old "{i}не убирать руки{/i}"
     new ""
-

@@ -101,11 +101,11 @@ label InitCharacters: # стартовая инициация персонаже
         lisa  = chars['lisa']
 
     # расписание
-    call set_alice_schedule
+    call set_alice_schedule from _call_set_alice_schedule_1
 
-    call set_ann_schedule
+    call set_ann_schedule from _call_set_ann_schedule_1
 
-    call set_lisa_schedule
+    call set_lisa_schedule from _call_set_lisa_schedule_1
 
     python:
         # предметы
@@ -244,8 +244,8 @@ label AddEric:
     $ chars['eric'] = Profile('eric', _("Эрик"), _("Эрика"), _("Эрику"), _("Эрика"), _("Эриком"), _("Эрике"), _("Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."), "Eric")
     $ eric = chars['eric']
 
-    call set_eric_schedule
-    call ann_after_appearance_eric
+    call set_eric_schedule from _call_set_eric_schedule_1
+    call ann_after_appearance_eric from _call_ann_after_appearance_eric_1
     $ infl[ann].freeze = False
     return
 
@@ -254,10 +254,10 @@ label AddKira:
     # добавляем Киру и её расписание
     $ chars['kira'] = Profile('kira', _("Кира"), _("Киры"), _("Кире"), _("Киру"), _("Кирой"), _("Кире"), _("Тётя Кира, мамина младшая сестра. Конечно, у неё и раньше не были замечены какие-либо комплексы, но сейчас она стала такой... такой..."), "Kira")
     $ kira = chars['kira']
-    call set_kira_schedule
+    call set_kira_schedule from _call_set_kira_schedule_1
 
     # обновляем расписание Лизы и Алисы
-    call alice_after_arrival_kira
+    call alice_after_arrival_kira from _call_alice_after_arrival_kira_1
 
     # добавляем новую одежду Максу и девчонкам
     $ setting_clothes_by_conditions()
@@ -281,7 +281,7 @@ label alice_add_black_linderie:
         $ alice.dcv.feature.set_lost(1) # включаем суточный откат, чтобы Алиса не начала блог в белье в этот же день, если блог уже начат
 
     # прописываем расписание:
-    call alice_can_blog_in_underwear
+    call alice_can_blog_in_underwear from _call_alice_can_blog_in_underwear_1
 
     # $ blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
     # $ renpy.random.shuffle(blog_lingerie)
@@ -294,7 +294,7 @@ label AddOlivia:
     # добавляем Оливию и её расписание
     $ chars['olivia'] = Profile('olivia', _("Оливия"), _("Оливии"), _("Оливии"), _("Оливию"), _("Оливией"), _("Оливии"), _(""), "Olivia")
     $ olivia = chars['olivia']
-    call set_olivia_shedule
+    call set_olivia_shedule from _call_set_olivia_shedule
 
     $ added_mem_var('olivia')
 

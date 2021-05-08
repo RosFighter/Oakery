@@ -4,9 +4,9 @@ translate deutsch strings:
 
     # game/core/06_items.rpy:2
     old "СПОРТИВНЫЕ ЛИФ И МИНИ ШОРТЫ"
-    new ""
+    new "SPORT-BH UND MINI-SHORTS"
 
     # game/core/06_items.rpy:2
     old "Удобная, открытая и лёгкая одежда для занятий спортом. Так же она прекрасно подойдёт для отдыха на природе."
-    new ""
+    new "Bequemes, offenes und leichtes Outfit für sportliche Aktivitäten. Auch Geeignet für Aktivitäten im Freien."
 

@@ -19,7 +19,7 @@ label after_dinner:
         elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].stn > 2]):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4) from _call_conversation_after_dinner
-        elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done]):
+        elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done, not lisa.dcv.other.stage]):
             # если Макс не помогал Лизе 5 раз и разговора после ужина не было больше недели
             if lisa.flags.help == 0 and poss['sg'].stn <= 2:
                 # совсем не помогал
@@ -35,8 +35,19 @@ label after_dinner:
 
 
 label typical_dinner:
+    if dcv.buyfood.stage == 4 and dcv.clearpool.stage == 4:
+        $ dcv.buyfood.stage = 3
+        $ dcv.clearpool.stage = 3
+        Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. И бассейн я вижу чистый. Молодец, что взял на себя эту ответственность, мы все это ценим. А теперь давайте ужинать..." nointeract
+    elif dcv.buyfood.stage == 4:
+        $ dcv.buyfood.stage = 3
+        Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. Хоть ответственности и немного, но она важна. А теперь давайте ужинать..." nointeract
+    elif dcv.clearpool.stage == 4:
+        $ dcv.clearpool.stage = 3
+        Ann_01 "Всем приятного аппетита. Я заметила с балкона, что бассейн почищен. Спасибо тебе, Макс, что заботишься о порядке, это меня радует. А теперь давайте ужинать..." nointeract
+    else:
+        Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract
     menu:
-        Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..."
         "Как скажешь, мам...":
             Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
             Max_00 "Приятного аппетита!"

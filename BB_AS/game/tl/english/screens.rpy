@@ -406,3 +406,11 @@ translate english strings:
     old "Прозрачное текстовое окно"
     new "Transparent text box"
 
+# TODO: Translation updated at 2021-05-07 23:01
+
+translate english strings:
+
+    # game/screens.rpy:902
+    old "Deutsch"
+    new "Deutsch"
+

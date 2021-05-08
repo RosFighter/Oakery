@@ -10,12 +10,12 @@ label cam0_olivia_lisa_sun:
 
 
 label cam1_olivia_lisa_sun:
-    call cam1_lisa_sun
+    call cam1_lisa_sun from _call_cam1_lisa_sun
     return
 
 
 label cam0_olivia_lisa_swim:
-    call cam0_lisa_swim
+    call cam0_lisa_swim from _call_cam0_lisa_swim
     return
 
 
@@ -28,7 +28,7 @@ label cam1_olivia_lisa_swim:
     show FG cam-shum-act at laptop_screen
     if 'lisa_swim1' not in cam_flag:
         $ cam_flag.append('lisa_swim1')
-        Max_01 "Приядно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..."
+        Max_01 "Приятно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..." id cam1_olivia_lisa_swim_c66f3478
     return
 
 

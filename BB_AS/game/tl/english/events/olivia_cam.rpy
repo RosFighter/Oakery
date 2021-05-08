@@ -9,7 +9,7 @@ translate english cam0_olivia_lisa_sun_fb60e201:
 # game/events/olivia_cam.rpy:31
 translate english cam1_olivia_lisa_swim_c66f3478:
 
-    # Max_01 "Приядно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..."
+    # Max_01 "Приятно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..."
     Max_01 ""
 
 # game/events/olivia_cam.rpy:42

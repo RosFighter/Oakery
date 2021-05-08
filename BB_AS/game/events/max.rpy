@@ -294,9 +294,13 @@ label buyfood:
     hide video1_movie
     show interface laptop grocery-1 at laptop_screen
     Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
-    Max_04 "Готово. Да это же самая лёгкая задача!"
+    if dcv.buyfood.stage == 1:
+        Max_04 "Готово. Да это же самая лёгкая задача!"
+        $ dcv.buyfood.stage = 2
+    else:
+        Max_01 "Готово. То, что я делаю это без маминой финансовой помощи точно пойдёт мне только в плюс."
+        $ dcv.buyfood.stage = 4
     $ spent_time = 50
-    $ dcv.buyfood.stage = 2
     $ dcv.buyfood.set_lost(2)
     $ mgg.pay(50)
     jump Laptop
@@ -502,8 +506,12 @@ label ClearPool:
     $ renpy.block_rollback()
     scene BG char Max cleeningpool-00
     $ renpy.show('Max cleaning-pool 01'+mgg.dress)
-    Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    $ dcv.clearpool.stage = 2
+    if dcv.clearpool.stage == 1:
+        Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
+        $ dcv.clearpool.stage = 2
+    else:
+        Max_01 "Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам."
+        $ dcv.clearpool.stage = 4
     if day > 10:
         $ dcv.clearpool.set_lost(6)
     else:

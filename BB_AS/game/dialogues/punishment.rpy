@@ -72,7 +72,7 @@ label StartPunishment:
 
 label punishment:
     $ _i = 0
-    play music "audio/punishment.ogg"
+    play music punishment
     while len(pun_list) > _i:
         if pun_list[_i] == "mgg":
             if len(pun_list) > 1:  # за эвент будут наказаны больше одного персонажа
@@ -276,7 +276,7 @@ label punishment_max:
             $ renpy.show("Ann punish-evening max-02"+ann.dress+mgg.dress)
         Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
 
-        call max_consequences
+        call max_consequences from _call_max_consequences
 
         if tm < "14:00":
             scene BG punish-morning 01
@@ -337,7 +337,7 @@ label punishment_max:
             $ renpy.show("Ann punish-evening max-02"+ann.dress+('c' if newpunishment == 1 else 'ca'))
         Max_14 "{i}Блин... Все с таким интересом смотрят, как меня наказывают...  Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
 
-        call max_consequences
+        call max_consequences from _call_max_consequences_1
 
         if tm < "14:00":
             scene BG punish-morning 01
@@ -391,7 +391,7 @@ label punishment_lisa:
     $ __mood = 0
 
     $ lisa.dcv.punpause.set_lost(renpy.random.randint(5, 12))
-
+    $ lisa.weekly.punished += 1
     if newpunishment==0:
         # Лиза стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
         if lisa.dress == "a":  # Лиза в обычной одежде
@@ -413,6 +413,8 @@ label punishment_lisa:
                         $ Skill('social', 0.2)
                         Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
                         Lisa_02 "Спасибо тебе, Макс!"
+                        $ lisa.flags.defend += 1
+                        $ lisa.weekly.protected += 1
                         $ punlisa[0][2] = 2
                         return
                     else:
@@ -463,6 +465,15 @@ label punishment_lisa:
                     $ Skill('social', 0.2)
                     Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, можешь одеваться. Скажи спасибо Максу, что сегодня осталась безнаказанной. Но не думай, что я всегда буду такой доброй..."
                     Lisa_02 "Спасибо тебе, Макс!"
+                    if newpunishment==2:
+                        $ lisa.flags.defend += 1
+
+                        if lisa.flags.defend >= 5:
+                            if lisa.flags.topless and not lisa.dcv.other.enabled:
+                                Max_07 "{i}( На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти... ){/i}"
+                            $ lisa.dcv.other.set_lost(1)
+
+                    $ lisa.weekly.protected += 1
                     $ punlisa[0][2] = 2
                     return
                 else:
@@ -540,7 +551,7 @@ label punishment_alice:
     $ alice.dcv.punpause.set_lost(renpy.random.randint(5, 14))
 
     $ alice.nopants = (alice.dress=="a" and alice.req.result=='nopants') or alice.dress=='b'
-
+    $ alice.weekly.punished += 1
     $ _ch1 = GetChance(mgg.social, 2, 900)
     if newpunishment==0:
         # Алиса стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
@@ -568,6 +579,7 @@ label punishment_alice:
                         Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, и не приглашай больше сюда таких подружек, хорошему они не научат..."
                         Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
                         $ punalice[0][2] = 2
+                        $ alice.weekly.protected += 1
                         return
                     else:
                         $ Skill('social', 0.1)
@@ -650,6 +662,7 @@ label punishment_alice:
                                 $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
 
                         $ punalice[0][2] = 2
+                        $ alice.weekly.protected += 1
                         return
                     else:
                         $ Skill('social', 0.1)

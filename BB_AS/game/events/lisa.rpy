@@ -173,7 +173,7 @@ label lisa_shower:
         else:
             $ lisa.daily.shower = 3
             $ punreason[0] = 1
-        if 'olivia' in chars and olivia.dcv.special.stage>1:
+        if lisa_was_topless():
             # после второго ТВ с Оливией
             $ r1 = renpy.random.choice(['07', '08'])
         else:
@@ -182,10 +182,10 @@ label lisa_shower:
         scene BG shower-closer
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
-        if 'olivia' in chars and olivia.dcv.special.stage>1:
+        if lisa_was_topless():
             menu:
-                Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал!"
-                "{i}Бежать{/i}":
+                Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал! А сейчас, кыш отсюда..."
+                "{i}уйти{/i}":
                     jump .end_peeping
         else:
             menu:
@@ -219,8 +219,9 @@ label lisa_read_closer:
 label lisa_dressed_school:
     scene location house myroom door-morning
 
-    $ __mood = 0
-    $ __rel = 0
+    $ renpy.dynamic('r1', 'mood', 'rel', 'suf')
+    $ mood = 0
+    $ rel = 0
     if lisa.hourly.dressed == 0:
         $ lisa.hourly.dressed = 1
         jump .lisa_dressed
@@ -229,7 +230,7 @@ label lisa_dressed_school:
 
     menu .lisa_dressed:
         Max_09 "{i}( Похоже, Лиза собирается в школу... ){/i}"
-        "{i}постучаться{/i}" if lisa.free < 200:
+        "{i}постучаться{/i}":
             menu:
                 "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
                 "Это я, Макс. Можно войти?":
@@ -240,9 +241,12 @@ label lisa_dressed_school:
                     $ spent_time = 10
                     jump .rel_mood
 
-        "{i}открыть дверь{/i}" if lisa.free < 200:
-            jump .open_door
-        "{i}заглянуть в окно{/i}"  if lisa.free < 200:
+        "{i}открыть дверь{/i}":
+            if lisa_was_topless():
+                jump .open_door2
+            else:
+                jump .open_door
+        "{i}заглянуть в окно{/i}":
             jump .look_window
         "{i}уйти{/i}":
             $ spent_time = 10
@@ -250,16 +254,16 @@ label lisa_dressed_school:
 
     label .look_window:
         $ spent_time = 10
-        $ __ran1 = renpy.random.choice(['01', '02', '03', '04'])
-        $ lisa.dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[__ran1]
+        $ r1 = renpy.random.choice(['01', '02', '03', '04'])
+        $ lisa.dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[r1]
 
         if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
             scene BG char Lisa voyeur-01
-            $ renpy.show('Lisa voyeur alt-'+__ran1)
+            $ renpy.show('Lisa voyeur alt-'+r1)
             $ renpy.show('FG voyeur-lisa-01'+mgg.dress)
         else:
             scene BG char Lisa voyeur-00
-            $ renpy.show('Lisa voyeur '+__ran1)
+            $ renpy.show('Lisa voyeur '+r1)
             $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
 
         $ Skill('hide', 0.03)
@@ -270,104 +274,244 @@ label lisa_dressed_school:
 
     label .come_in:
         scene BG char Lisa morning
-        if GetRelMax('lisa')[0] < 0:
-            show Lisa school-dressed 01
-            $ lisa.dress_inf = '01b'
-        elif GetRelMax('lisa')[0] < 2:
-            show Lisa school-dressed 01a
-            $ lisa.dress_inf = '01b'
-        elif lisa.free < 200:       # правим тут
-            show Lisa school-dressed 01b
-            $ lisa.dress_inf = '02a'
-        else:
-            show Lisa school-dressed 01c # пока отсутствует
-            $ lisa.dress_inf = '00'
 
         $ spent_time = 60 - int(tm.split(":")[1])
-        menu:
-            Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
-            "Это и моя комната!":
-                if lisa.GetMood()[0] < 0: # настроение не очень и ниже
-                    show Lisa school-dressed 01
-                    Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
-                    Max_00 "Удачи"
-                    $ __rel  -= 5 # при плохом настроении отношения и настроение снижаются
-                    $ __mood -= 25
-                else: # нейтральное настроение
-                    Lisa_02 "В любом случае, я уже оделась, так что, входи. А я побежала в школу."
-                    Max_00 "Удачи"
-            "Да чего я там не видел...":
-                if GetRelMax('lisa')[0] < 1: # отношения прохладные и ниже
-                    Lisa_12 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
+        if not lisa_was_topless():
+            $ lisa.dress_inf = '01b'
+            $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
+            $ renpy.show('Lisa school-dressed 01'+suf)
+            menu:
+                Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
+                "Это и моя комната!":
+                    if lisa.GetMood()[0] < 0: # настроение не очень и ниже
+                        show Lisa school-dressed 01
+                        Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
+                        Max_00 "Удачи"
+                        $ rel  -= 5 # при плохом настроении отношения и настроение снижаются
+                        $ mood -= 25
+                    else: # нейтральное настроение
+                        Lisa_02 "В любом случае, я уже оделась, так что, входи. А я побежала в школу."
+                        Max_00 "Удачи"
+                "Да чего я там не видел...":
+                    if GetRelMax('lisa')[0] < 1: # отношения прохладные и ниже
+                        Lisa_12 "Что бы ты там не видел, но подождать немного за дверью можно было? Так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
+                        Max_00 "Пока, Лиза!"
+                        $ rel  -= 5 # при низком отношении отношения и настроение снижаются
+                        $ mood -= 25
+                    elif GetRelMax('lisa')[0] < 2: # Неплохие отношения
+                        Lisa_01 "А за дверью постоять не мог? А ладно, входи... Я уже оделась и побежала в школу."
+                        Max_00 "Пока, Лиза!"
+                    else: # хорошие и выше отношения
+                        Lisa_02 "Но за дверью подождать немного ты всё равно мог! Хотя бы для приличия..."
+                        show Lisa school-dressed 01a
+                        Lisa_01 "Как бы там ни было, проходи... Я уже оделась и побежала в школу. Вернусь часа в четыре."
+                        Max_00 "Пока, Лиза!"
+                        $ mood += 25 # при хорошем отношении настроение повышается
+                "Извини":
+                    if GetRelMax('lisa')[0] < 2: # Неплохие отношения
+                        Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
+                    else:
+                        Lisa_03 "Да ты у нас, оказывается, джентльмен!"
+                        show Lisa school-dressed 01a
+                        Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
                     Max_00 "Пока, Лиза!"
-                    $ __rel  -= 5 # при низком отношении отношения и настроение снижаются
-                    $ __mood -= 30
-                elif GetRelMax('lisa')[0] < 2: # Неплохие отношения
-                    Lisa_01 "Откуда я знаю, что ты видел, а что ещё нет? Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
-                    Max_00 "Пока, Лиза!"
-                else: # хорошие и выше отношения
-                    Lisa_02 "Откуда я знаю, что ты видел, а что ещё нет?"
-                    show Lisa school-dressed 01a
-                    Lisa_01 "Но так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
-                    Max_00 "Пока, Лиза!"
-                    $ __mood += 30 # при хорошем отношении настроение повышается
-            "Извини":
-                if GetRelMax('lisa')[0] < 2: # Неплохие отношения
-                    Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
-                else:
-                    Lisa_03 "Да ты у нас, оказывается, джентльмен!"
-                    show Lisa school-dressed 01a
-                    Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
-                Max_00 "Пока, Лиза!"
-                $ __mood += 30 # при извинении настроение повышается
+                    $ mood += 25 # при извинении настроение повышается
+        else:
+            $ r1 = '0'+str(renpy.random.randint(3, 4))
+            $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
+            $ renpy.show('Lisa school-dressed '+r1+suf)
+            menu:
+                Lisa_09 "Макс, я в школу одеваюсь! И ты прекрасно это знал..."
+                "Могла бы и не прикрываться...":
+                    #спрайт в блузке и трусиках
+                    show Lisa school-dressed 01b
+                    if GetRelMax('lisa')[0] < 0:
+                        # настроение не очень и ниже отношения и настроение снижаются
+                        $ rel  -= 5
+                        $ mood -= 25
+                        Lisa_12 "А ты бы мог и за дверью подождать немного! Хотя бы для приличия..."
+                        #одетая
+                        show Lisa school-dressed 01
+                        Lisa_00 "Ладно, я уже оделась, входи уж... А я в школу побежала."
+                        Max_01 "Удачи!"
+                    else:
+                        # настроение нейтральное и выше
+                        Lisa_02 "Могла бы... Но не буду, пока тут такие любознательные личности, как ты, лазят!"
+                        #одетая
+                        show Lisa school-dressed 01a
+                        Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
+                        Max_01 "Удачи!"
+                "У тебя классная грудь, не стесняйся..." if r1==3:   # Лиза без верха
+                    #спрайт в блузке и трусиках
+                    show Lisa school-dressed 01b
+                    if GetRelMax('lisa')[0] < 1:
+                        # отношения прохладные и ниже отношения и настроение снижаются
+                        $ rel  -= 5
+                        $ mood -= 25
+                        Lisa_12 "И что теперь, тебе можно на неё глазеть, когда захочешь?! Нет уж, не угадал!"
+                        #одетая
+                        show Lisa school-dressed 01
+                        Lisa_00 "Так или иначе, я уже оделась и побежала в школу."
+                        Max_01 "Удачи!"
+                    elif GetRelMax('lisa')[0] < 2:
+                        # неплохие отношения
+                        Lisa_00 "Ага, красивая... Но это не значит, что из-за этого я должна её тебе показывать!"
+                        #одетая
+                        show Lisa school-dressed 01
+                        Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
+                        Max_01 "Удачи!"
+                    else:
+                        # при хорошем (и выше) отношении настроение повышается
+                        $ mood += 25
+                        Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку!"
+                        Max_03 "Не так часто, как хотелось бы."
+                        #одетая
+                        show Lisa school-dressed 01a
+                        Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
+                        Max_01 "Удачи!"
+                "Подумаешь, твою очаровательную попку без трусиков увижу..." if r1==4:   # Лиза без низа
+                    #спрайт в маечке и трусиках
+                    $ renpy.show('Lisa school-dressed 02'+suf)
+                    if GetRelMax('lisa')[0] < 1:
+                        # отношения прохладные и ниже отношения и настроение снижаются
+                        $ rel  -= 5
+                        $ mood -= 25
+                        Lisa_12 "Мог бы и за дверью подождать немного! Хотя бы для приличия..."
+                        #спрайт в юбке
+                        show Lisa school-dressed 01c
+                        Lisa_09 "Прекращай пялиться! Припёрся ни раньше и ни позже..."
+                        #одетая
+                        show Lisa school-dressed 01
+                        Lisa_00 "Можешь входить... А я в школу побежала."
+                        Max_01 "Удачи!"
+                    elif GetRelMax('lisa')[0] < 2:
+                        # неплохие отношения
+                        Lisa_00 "Так, на мою попку сильно не глазеть! Я тут переодеваюсь не для того, чтобы тебя порадовать."
+                        #спрайт в юбке
+                        show Lisa school-dressed 01c
+                        Lisa_09 "Отвернись, Макс! Я чувствую, как ты пялишься на меня..."
+                        #одетая
+                        show Lisa school-dressed 01
+                        Lisa_01 "Можешь входить... А я в школу побежала."
+                        Max_01 "Удачи!"
+                    else:
+                        #при хорошем (и выше) отношении настроение повышается
+                        $ mood += 25
+                        Lisa_02 "А вот и не увидишь! Когда надо, я могу их так быстренько одеть, как тебе и не снилось!"
+                        Max_03 "Это правда! В моих снах ты делаешь это очень медленно..."
+                        #спрайт в юбке
+                        show Lisa school-dressed 01c
+                        Lisa_05 "Так же медленно, как и эту юбку?"
+                        Max_05 "О да! Примерно так же..."
+                        #одетая
+                        show Lisa school-dressed 01a
+                        Lisa_01 "Так, представим, что я ничего не слышала! Можешь входить... А я в школу побежала."
+                        Max_01 "Удачи!"
 
         jump .rel_mood
 
-    label .open_door:
+    label .open_door2:
+        # Лиза уже снимала майку во время ТВ
         $ spent_time = 20
-        $ __ran1 = renpy.random.randint(2, 5)
-        $ lisa.dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[__ran1]
+        $ r1 = renpy.random.randint(3, 5)
+        $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
+        $ lisa.dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[r1]
         scene BG char Lisa morning
-        if GetRelMax('lisa')[0] < 0:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1))
-        elif GetRelMax('lisa')[0] < 2:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'a')
-        elif lisa.free < 200:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'b')
-        else:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'c') # пока отсутствует
+        $ renpy.show('Lisa school-dressed 0'+str(r1)+suf)
 
-        $ __mood -= 50 # настроение портится в любом случае
-        if __ran1 < 3: # Лиза практически одета
+        if r1 < 5:
+            # Лиза без верха или без низа
+            menu:
+                Lisa_12 "Макс! Ты почему без стука входишь? Я не одета..."
+                "У тебя классная грудь, не стесняйся..." if r1==3:
+                    if GetRelMax('lisa')[0] < 1:
+                        # отношения прохладные и ниже отношения и настроение снижаются
+                        $ rel  -= 5
+                        $ mood -= 25
+                        Lisa_12 "И что теперь, тебе можно на неё глазеть, когда захочешь?! Нет уж, не угадал! Выйди быстро, пока маму не позвала!" nointeract
+                    elif GetRelMax('lisa')[0] < 2:
+                        # неплохие отношения
+                        Lisa_00 "Ага, красивая... Но это не значит, что из-за этого я должна её тебе показывать! Выйди, пожалуйста..." nointeract
+                    else:
+                        # при хорошем (и выше) отношении настроение повышается
+                        $ mood += 25
+                        Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку! А теперь выйди, дай переодеться..." nointeract
+                "Подумаешь, твою очаровательную попку без трусиков увижу..." if r1==4:
+                    if GetRelMax('lisa')[0] < 1:
+                        # отношения прохладные и ниже отношения и настроение снижаются
+                        $ rel  -= 5
+                        $ mood -= 25
+                        Lisa_12 "Так, быстро выйди и жди за дверью! Хотя бы для приличия... Или мне маму позвать?" nointeract
+                    elif GetRelMax('lisa')[0] < 2:
+                        # неплохие отношения
+                        Lisa_00 "Так, на мою попку сильно не глазеть! Будь добр, выйди и дверь закрой..." nointeract
+                    else:
+                        # при хорошем (и выше) отношении настроение повышается
+                        $ mood += 25
+                        Lisa_02 "А вот и не увидишь! Дай переодеться спокойно, нечего тут всяким любопытным личностям лазить..." nointeract
+        else:
+            # Лиза голая
+            menu:
+                Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны!"
+                "Извини, я думал, что ты уже оделась. Хотя бы немного...":
+                    pass
+            if GetRelMax('lisa')[0] < 1:
+                # отношения прохладные и ниже отношения и настроение снижаются
+                $ rel  -= 5
+                $ mood -= 25
+                Lisa_12 "И что теперь, можно заходить когда вздумается и без стука?! Нет уж, не угадал! Выйди быстро, пока маму не позвала!" nointeract
+            elif GetRelMax('lisa')[0] < 2:
+                # неплохие отношения
+                Lisa_00 "Не оделась... Но это не значит, что ты можешь вот просто так заходить без стука! Выйди, пожалуйста..." nointeract
+            else:
+                # при хорошем (и выше) отношении настроение повышается
+                $ mood += 25
+                Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..."
+        menu:
+            "{i}уйти{/i}":
+                scene location house myroom door-morning
+                jump .rel_mood
+
+    label .open_door:
+        # Лиза ещё не снимала майку во время ТВ
+        $ spent_time = 20
+        $ r1 = renpy.random.randint(2, 5)
+        $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
+        $ lisa.dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[r1]
+        scene BG char Lisa morning
+        $ renpy.show('Lisa school-dressed 0'+str(r1)+suf)
+
+        $ mood -= 50 # настроение портится в любом случае
+        if r1 < 3: # Лиза практически одета
             menu:
                 Lisa_12 "Макс! Стучаться надо! А вдруг я была бы голая?! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "Ну, тогда мне бы повезло":
-                    $ __rel -= 5
+                    $ rel -= 5
                     Lisa_13 "Ну ты хам! Быстро закрой дверь с той стороны!"
                     Max_00 "Хорошо..."
                 "Извини, я забыл...":
                     Lisa_01 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
                     Max_00 "Хорошо..."
-                    $ __mood += 50
-        elif __ran1 < 5: # Лиза частично одета
+                    $ mood += 50
+        elif r1 < 5: # Лиза частично одета
             menu:
                 Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "Извини... Кстати, отличный зад!" if __ran1 < 3:
                     if GetRelMax('lisa')[0] < 2:
-                        $ __rel -= 5
+                        $ rel -= 5
                 "Извини..." if __ran1 > 2:
-                    $ __mood += 50
+                    $ mood += 50
         else: # Лиза полностью голая
             menu:
                 Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
                 "А у тебя сиськи подросли!":
-                    $ __rel -= 5
+                    $ rel -= 5
                     menu:
                         Lisa_11 "Что?! Я всё маме расскажу!"
                         "Всё, всё, ухожу!":
                             pass
                         "Уже ухожу, но сиськи - супер!":
-                            $ __rel -= 5
+                            $ rel -= 5
                             menu:
                                 Lisa_12 "..."
                                 "{i}Бежать{/i}":
@@ -376,12 +520,12 @@ label lisa_dressed_school:
                     Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
                     Max_00 "Хорошо..."
                     if GetRelMax('lisa')[0] > 1:
-                        $ __mood += 50
+                        $ mood += 50
 
-    scene location house myroom door-morning
+        scene location house myroom door-morning
 
     label .rel_mood:
-        $ AddRelMood('lisa', __rel, __mood)
+        $ AddRelMood('lisa', rel, mood)
 
     label .end:
         jump Waiting
@@ -725,7 +869,7 @@ label lisa_select_movie:
         # первый просмотр ужастика
         jump lisa_horor_movie_0
 
-    elif lisa.dcv.special.stage < 7:
+    elif lisa.dcv.special.stage < 8:
         # периодический просмотр ужастика
         jump lisa_horor_movie_r
 
@@ -754,7 +898,7 @@ label lisa_romantic_movie_0:
     Lisa_01 "Точно не знаю. Напиши в поиске \"лучшие романтические фильмы\" и я что-нибудь выберу."
     Max_03 "Вот, смотри... Выбирай... Может вот этот? Постер уж очень интересный!"
     Lisa_02 "Нет, мы будем смотреть то, что интересно мне! Хочу вон тот фильм! Давай, включай..."
-    play music 'audio/romantic.ogg'
+    play music romantic
     Max_07 "{i}( Да уж, это конечно намного лучше, чем получать при всех от мамы по заднице, но так скучно! Хотя бы с сестрёнкой рядом на одной кровати полежу. А смотреть можно и вполглаза... ){/i}"
     Lisa_13"Макс, не спи! Ты должен смотреть - это твоё наказание! Если будешь спать, то я буду тебя пихать..."
 
@@ -805,13 +949,13 @@ label lisa_romantic_movie_r:
     if flags.cur_series < 2:
         Max_04 "Давай, запрыгивай! Будем досматривать тот фильм?"   #если не досмотрели фильм
         Lisa_09 "Да, но промотай тот момент, ну ты понял..."
-        play music 'audio/romantic.ogg'
+        play music romantic
         Max_03 "Считай, что уже сделано. Я к отбытию наказания готов!"
         Lisa_02 "И смотри чтобы ничего у тебя там не шевелилось больше!"
     else:
         Max_04 "Давай, запрыгивай! Ты уже знаешь, что будем смотреть?"   #если досмотрели фильм
         Lisa_01 "Нет. Выводи список романтический фильмов и я выберу. Только давай нормальные фильмы, а не как в прошлый раз!"
-        play music 'audio/romantic.ogg'
+        play music romantic
         Max_03 "Ты сама выбирала, моё дело маленькое. Вот этот вроде ничего должен быть..."
         Lisa_02 "Ага, давай его. И твоё маленькое дело - это смотреть фильм, мучиться и чтобы у тебя ничего не шевелилось!"
 
@@ -899,11 +1043,14 @@ label lisa_horor_movie_0:
     menu:
         Lisa_03 "Я думала посмотреть все части \"Кошмара на улице Вязов\" или \"Пятницы 13-е\". Мне в школе посоветовали. Но выбирать тебе, ты же будешь бояться."
         "{i}смотреть \"Кошмар на улице Вязов\"{/i}":   #после выбора начинает играть соответствующая фильму музыка
-            $ flags.cur_movies = ['hes', 1, 0]
-            play music 'audio/hes.ogg'
+            $ flags.cur_movies = ['hes', 1, 0, 0]
+            play music hes
         "{i}смотреть \"Пятница 13-е\"{/i}":   #после выбора начинает играть соответствующая фильму музыка
-            $ flags.cur_movies = ['f13', 0, 1]
-            play music 'audio/f13.ogg'
+            $ flags.cur_movies = ['f13', 0, 1, 0]
+            play music f13
+        "{i}смотреть \"Крик\"{/i}":
+            $ flags.cur_movies = ['scr', 0, 0, 1]
+            play music scream
 
     scene BG char Lisa horror-myroom 01
     show Lisa horror-myroom 01-01b
@@ -956,15 +1103,24 @@ label lisa_horor_movie_0:
 
 label lisa_horor_movie_r:
 
+    if lisa.dcv.other.stage>1 and lisa.dcv.other.done:
+        $ lisa.dress = 'c'
+
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
-    Max_01 "Да, смотрим. Сейчас всё подготовлю..."
-    Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
+    if lisa.dcv.other.stage==1 and lisa.dcv.other.done:
+        Max_01 "Да, смотрим. Сейчас всё подготовлю... Не стесняйся, снимай маечку."
+        Lisa_02 "Сейчас сниму, только свет сначала выключу. Тебе уже страшно?"
+        $ lisa.dcv.other.stage=2
+        $ lisa.dress = 'c'
+    else:
+        Max_01 "Да, смотрим. Сейчас всё подготовлю..."
+        Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
 
     scene BG char Lisa horror-myroom 00
     show Max horror-myroom 01a
-    show Lisa horror-myroom 00-01b
+    $ renpy.show('Lisa horror-myroom 00-01'+lisa.dress)
 
     if flags.cur_series < 2:
         #если не досмотрели фильм
@@ -973,24 +1129,34 @@ label lisa_horor_movie_r:
             Lisa_00 "Ой, я даже не знаю... Главное, чтобы и тебе было страшно! И желательно, чтобы больше, чем мне."
             "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")" if flags.cur_movies[0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
                 $ flags.cur_series = 2
-                play music 'audio/hes.ogg'
+                play music hes
             "Тогда досматриваем... (продолжаем смотреть \"Пятница 13-е\")" if flags.cur_movies[0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
                 $ flags.cur_series = 2
-                play music 'audio/f13.ogg'
-            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags.cur_movies[0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                play music f13
+            "Тогда досматриваем... (продолжаем смотреть \"Крик\")" if flags.cur_movies[0] == 'scr':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_series = 2
+                play music scream
+            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags.cur_movies[0]!='hes':   #после выбора начинает играть соответствующая фильму музыка
                 $ flags.cur_movies[0] = 'hes'
                 if flags.cur_movies[1] < 5:
                     $ flags.cur_movies[1] += 1
                 else:
                     $ flags.cur_movies[1] = 1
-                play music 'audio/hes.ogg'
-            "{i}смотреть \"Пятница 13-е\"{/i}" if flags.cur_movies[0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                play music hes
+            "{i}смотреть \"Пятница 13-е\"{/i}" if flags.cur_movies[0]!='f13':   #после выбора начинает играть соответствующая фильму музыка
                 $ flags.cur_movies[0] = 'f13'
                 if flags.cur_movies[2] < 5:
                     $ flags.cur_movies[2] += 1
                 else:
                     $ flags.cur_movies[2] = 1
-                play music 'audio/f13.ogg'
+                play music f13
+            "{i}смотреть \"Крик\"{/i}" if flags.cur_movies[0]!='scr':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_movies[0] = 'scr'
+                if flags.cur_movies[3] < 4:
+                    $ flags.cur_movies[3] += 1
+                else:
+                    $ flags.cur_movies[3] = 1
+                play music scream
     else:
         #если досмотрели фильм
         Max_07 "Как бы не так! Будем смотреть следующий фильм в той серии, которую начали?"
@@ -1002,27 +1168,40 @@ label lisa_horor_movie_r:
                     $ flags.cur_movies[1] += 1
                 else:
                     $ flags.cur_movies[1] = 1
-                play music 'audio/hes.ogg'
+                play music hes
             "Тогда смотрим дальше...  (продолжаем смотреть серию фильмов \"Пятница 13-е\")" if flags.cur_movies[0] == 'f13':
                 if flags.cur_movies[2] < 5:
                     $ flags.cur_movies[2] += 1
                 else:
                     $ flags.cur_movies[2] = 1
-                play music 'audio/f13.ogg'
-            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags.cur_movies[0] == 'f13':   #после выбора начинает играть соответствующая фильму музыка
+                play music f13
+            "Тогда смотрим дальше...  (продолжаем смотреть серию фильмов \"Крик\")" if flags.cur_movies[0] == 'scr':
+                if flags.cur_movies[3] < 4:
+                    $ flags.cur_movies[3] += 1
+                else:
+                    $ flags.cur_movies[3] = 1
+                play music scream
+            "{i}смотреть \"Кошмар на улице Вязов\"{/i}" if flags.cur_movies[0]!='hes':   #после выбора начинает играть соответствующая фильму музыка
                 $ flags.cur_movies[0] = 'hes'
                 if flags.cur_movies[1] < 5:
                     $ flags.cur_movies[1] += 1
                 else:
                     $ flags.cur_movies[1] = 1
-                play music 'audio/hes.ogg'
-            "{i}смотреть \"Пятница 13-е\"{/i}" if flags.cur_movies[0] == 'hes':   #после выбора начинает играть соответствующая фильму музыка
+                play music hes
+            "{i}смотреть \"Пятница 13-е\"{/i}" if flags.cur_movies[0]!='f13':   #после выбора начинает играть соответствующая фильму музыка
                 $ flags.cur_movies[0] = 'f13'
                 if flags.cur_movies[2] < 5:
                     $ flags.cur_movies[2] += 1
                 else:
                     $ flags.cur_movies[2] = 1
-                play music 'audio/f13.ogg'
+                play music f13
+            "{i}смотреть \"Крик\"{/i}" if flags.cur_movies[0]!='scr':   #после выбора начинает играть соответствующая фильму музыка
+                $ flags.cur_movies[0] = 'scr'
+                if flags.cur_movies[3] < 4:
+                    $ flags.cur_movies[3] += 1
+                else:
+                    $ flags.cur_movies[3] = 1
+                play music f13
 
 
     if renpy.random.randint(1, 2) < 2:
@@ -1036,21 +1215,23 @@ label lisa_horor_movie_r:
     Max_14 "Я боюсь! Теперь стало намного страшнее после твоих слов."
 
     scene BG char Lisa horror-myroom 03
-    show Lisa horror-myroom 03-01b
+    $ renpy.show('Lisa horror-myroom 03-01'+lisa.dress)
     Lisa_10 "Вот и хорошо, а то я не хочу одна бояться. Ну вот что они делают?! Это же точно ничем хорошим не закончится!"
     Max_02 "{i}( Хорошо, что в ужастиках куча тупых персонажей, потому что это гарантирует мне крепкие объятия от Лизы! Главное стараться не думать, какими прелестями она ко мне прижимается. ){/i}"
 
     scene BG char Lisa horror-myroom 02
-    show Lisa horror-myroom 02-01b
-    if flags.cur_movies[0] == 'hes':
-        $ renpy.show("FG horror-myroom hes 0"+str(flags.cur_movies[1]+1)+"-0"+str(flags.cur_series))
-    else:
-        $ renpy.show("FG horror-myroom f13 0"+str(flags.cur_movies[1]+1)+"-0"+str(flags.cur_series))
+    $ renpy.show('Lisa horror-myroom 02-01'+lisa.dress)
+    $ renpy.dynamic('h_film', 'r1')
+    $ h_film = {'hes':1, 'f13':2, 'scr':3}[flags.cur_movies[0]]
+    $ renpy.show('FG horror-myroom '+flags.cur_movies[0]+' 0'+str(flags.cur_movies[h_film]+1)+"-0"+str(flags.cur_series))
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
 
     $ _ch3 = GetChance(mgg.sex+5, 3, 900)
+    if lisa.dress>'b':
+        Max_10 "{i}( Только бы у меня не встал! У меня тут полный эффект погружения... Ладно в ужастике сиськи голые периодически мелькают, а вот голая грудь моей сестрёнки, которой она слегка трётся о меня, вот это проблема... Как тут сдерживаться? ){/i}" nointeract
+    else:
+        Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}" nointeract
     menu:
-        Max_10 "{i}( Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться? ){/i}"
         "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}":
             if (not _in_replay and not RandomChance(_ch3.ch)) or (_in_replay and lisa.flags.kiss_lesson<12):
                 # (не получилось сдержаться)
@@ -1072,7 +1253,7 @@ label lisa_horor_movie_r:
 
             #horror-myroom-01a + horror-myroom-01a-max&lisa-02
             scene BG char Lisa horror-myroom 01a
-            show Lisa horror-myroom 01a-02b
+            $ renpy.show('Lisa horror-myroom 01a-02'+lisa.dress)
             Lisa_10 "Мне только страшно до своей кровати идти теперь..."
             Max_03 "Так не иди. Спи со мной. Я очень даже не против!"
             menu:
@@ -1080,14 +1261,16 @@ label lisa_horor_movie_r:
                 "{i}поцеловать Лизу{/i}" if lisa.flags.kiss_lesson > 6:   #если открыты поцелуи с прикосновениями
                     $ added_mem_var('horror_kiss')
                     #horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
-                    if renpy.random.randint(1, 2) < 2:
-                        scene BG char Lisa horror-myroom 02
-                        show Lisa horror-myroom 02-02b
+                    $ r1 = '0'+str(renpy.random.randint(2, 3))
+                    $ renpy.scene()
+                    $ renpy.show('BG char Lisa horror-myroom '+r1)
+                    $ renpy.show('Lisa horror-myroom 02-'+r1+lisa.dress)
+                    if lisa.dress>'b':
+                        Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки и нежная грудь, которой она касается меня... ){/i}"
+                        if lisa.dcv.special.stage < 7:
+                            $ lisa.dcv.special.stage = 7
                     else:
-                        scene BG char Lisa horror-myroom 02a
-                        show Lisa horror-myroom 02-03b
-
-                    Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки... ){/i}"
+                        Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки... ){/i}"
 
                     scene BG char Lisa horror-myroom 01a
                     $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
@@ -1118,12 +1301,16 @@ label lisa_horor_movie_r:
         scene BG char Lisa horror-myroom 04
         $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
         stop music fadeout 1.0
-        Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Я же твоя сестра, тебе стыдно должно быть!"
-        Max_09 "Стыдно?! Ну встал и встал, подумаешь."
+        if lisa.dress>'b':
+            Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Хотя, ничего удивительного, я была почти уверена, что так и будет."
+            Max_09 "Ну встал и встал, подумаешь. Спрячу под ноутбуком."
+        else:
+            Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Я же твоя сестра, тебе стыдно должно быть!"
+            Max_09 "Стыдно?! Ну встал и встал, подумаешь."
 
         scene BG char Lisa horror-myroom 00
         show Max horror-myroom 01a
-        show Lisa horror-myroom 00-02b
+        $ renpy.show('Lisa horror-myroom 00-02'+lisa.dress)
         Lisa_10 "Хватит уже похабно думать обо мне! Я ушла спать... Ой! Как страшно..."
         Max_04 "Проводить тебя до кровати?"
         Lisa_13 "Сама справлюсь! Ой ой ой!"
@@ -1131,6 +1318,8 @@ label lisa_horor_movie_r:
 
     label .end:
         $ renpy.end_replay()
+        if lisa.dcv.other.stage>1 and lisa.dcv.other.done:
+            $ lisa.dress = 'b'
         $ spent_time += 60
         $ infl[lisa].add_m(12)
         $ lisa.dcv.special.disable()
