@@ -990,11 +990,10 @@ translate english delivery2_245175bb:
 translate english buyfood_96f7e58d:
 
     # Max_01 "Готово. То, что я делаю это без маминой финансовой помощи точно пойдёт мне только в плюс."
-    Max_01 ""
+    Max_01 "Done. The fact that I'm doing this without Mom's financial help will really please her."
 
 # game/events/max.rpy:513
 translate english ClearPool_62cb38c0:
 
     # Max_01 "Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам."
-    Max_01 ""
-
+    Max_01 "Eh... It's a tedious job, but it's important that my girls can swim in clear water. And now, I'm making sure of that myself."
