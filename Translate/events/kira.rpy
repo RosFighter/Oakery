@@ -4202,11 +4202,11 @@ translate english strings:
 
     # game/events/kira.rpy:518
     old "{i}Наслаждаться{/i} {color=[ch3.col]}(Сексуальный опыт. Шанс: [ch3.vis]){/color}"
-    new "{i}Feels good{i} {color=[ch3.col]}(Sexual Experience. Chance: [ch3.vis]){/color}"
+    new "{i}Feels good{/i} {color=[ch3.col]}(Sexual Experience. Chance: [ch3.vis]){/color}"
 
     # game/events/kira.rpy:534
     old "{i}кончить ей на ноги{/i}"
-    new "{i}Finish on her feet{i}"
+    new "{i}Finish on her feet{/i}"
 
     # game/events/kira.rpy:534
     old "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}"

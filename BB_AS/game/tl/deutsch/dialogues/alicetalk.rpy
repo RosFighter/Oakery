@@ -8700,109 +8700,109 @@ translate deutsch massage_sunscreen_sit_and_wait_de3d2863_1:
 translate deutsch massage_sunscreen_sit_and_wait_3b66c1cd:
 
     # Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."
-    Alice_12 ""
+    Alice_12 "Was zum Teufel, Max?! Was bist du, eine Art Perverser? Ich bin deine Schwester! Oh, Mann... Versuche zumindest ihn abdecken..."
 
 # game/dialogues/alicetalk.rpy:2278
 translate deutsch massage_sunscreen_sit_and_wait_0aa348ea:
 
     # Max_01 "Да не так-то это просто, прикрыть его."
-    Max_01 ""
+    Max_01 "Es ist nicht so einfach, es zu kaschieren."
 
 # game/dialogues/alicetalk.rpy:2279
 translate deutsch massage_sunscreen_sit_and_wait_6b77c813:
 
     # Alice_06 "Не ожидала я от тебя такого, Макс. И что у тебя в голове творится?!"
-    Alice_06 ""
+    Alice_06 "Das habe ich nicht von dir erwartet, Max. Was geht nur in deinem Kopf vor?!"
 
 # game/dialogues/alicetalk.rpy:2280
 translate deutsch massage_sunscreen_sit_and_wait_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 ""
+    Max_07 "Was hast du denn erwartet?! Du bist förmlich auf mich draufgesprungen und hast mir deine nackten Brüste ins Gesicht gedrückt... Übrigens, ich kann nicht umhin zu bemerken, wie schön und fest deine Brüste sind."
 
 # game/dialogues/alicetalk.rpy:2281
 translate deutsch massage_sunscreen_sit_and_wait_e0dd7b8f:
 
     # Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
-    Alice_13 ""
+    Alice_13 "Nein, du bist krank... Okay, tun wir mal so, als wäre das nie passiert. Steck das Ding weg und komm mir nicht so nahe!"
 
 # game/dialogues/alicetalk.rpy:2282
 translate deutsch massage_sunscreen_sit_and_wait_4970a131:
 
     # Max_02 "Хорошо. Не скучай."
-    Max_02 ""
+    Max_02 "Das war's. Viel Spaß."
 
 # game/dialogues/alicetalk.rpy:2289
 translate deutsch massage_sunscreen_hide_behind_4afa2c53:
 
     # Alice_06 "Нет, я боюсь..."
-    Alice_06 ""
+    Alice_06 "Nein, ich befürchte..."
 
 # game/dialogues/alicetalk.rpy:2290
 translate deutsch massage_sunscreen_hide_behind_15ab4ca7:
 
     # Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
-    Max_09 ""
+    Max_09 "Was, wenn sie gleich auf die Krabbelt, direkt zu deinem Arsch!"
 
 # game/dialogues/alicetalk.rpy:2294
 translate deutsch massage_sunscreen_hide_behind_9657c7e4:
 
     # Alice_13 "Ой, нет! Не надо к моей попке! Что ему вообще надо тут?! Почему ему в траве не сидится или где он там живёт..."
-    Alice_13 ""
+    Alice_13 "Oh, nein! Lass sie bloß nicht in die Nähe meines Arsches! Was macht die überhaupt hier?! Warum kann die nicht im Gras bleiben oder wo sie hingehört..."
 
 # game/dialogues/alicetalk.rpy:2295
 translate deutsch massage_sunscreen_hide_behind_348c3ca5:
 
     # Max_07 "Ну... Не то, чтобы меня что-то не устраивало сейчас, но ты держишься за меня!"
-    Max_07 ""
+    Max_07 "Nun... Es ist nicht so, dass ich im Moment mit irgendetwas unzufrieden bin, aber halte dich ruhig an mich!"
 
 # game/dialogues/alicetalk.rpy:2299
 translate deutsch massage_sunscreen_hide_behind_1aef0366:
 
     # Alice_12 "Конечно держусь! Мне же страшно, Макс! Ты ведь знаешь, как я их боюсь..."
-    Alice_12 ""
+    Alice_12 "Natürlich tue ich das! Ich habe Angst, Max. Du weißt, wie viel Angst ich vor denen habe..."
 
 # game/dialogues/alicetalk.rpy:2300
 translate deutsch massage_sunscreen_hide_behind_92d357db:
 
     # Max_03 "Нет, я в смысле, ты держишься за мой член! Это, конечно, весьма приятно... Но ты же на меня, как всегда, разорёшься потом!"
-    Max_03 ""
+    Max_03 "Nein, ich meine, du hältst meinen Schwanz! Ich meine, das ist sehr angenehm... Aber danach wirst du wütend auf mich sein, wie du es immer bist!"
 
 # game/dialogues/alicetalk.rpy:2303
 translate deutsch massage_sunscreen_hide_behind_2ead0b6d:
 
     # Alice_15 "Ой! Я это не специально! Видишь, насколько я этих пауков не переношу? Даже не поняла, за что схватилась..."
-    Alice_15 ""
+    Alice_15 "Oh! Ich habe das nicht mit Absicht gemacht! Siehst du, wie sehr ich diese Spinnen nicht ausstehen kann? Ich wusste nicht mal, was ich da in der Hand habe..."
 
 # game/dialogues/alicetalk.rpy:2304
 translate deutsch massage_sunscreen_hide_behind_955fd37c:
 
     # Max_02 "Да ладно, схватилась и схватилась. Уж это точно не страшно!"
-    Max_02 ""
+    Max_02 "Komm schon, du hast ihns angefasst. Das ist definitiv nicht unheimlich!"
 
 # game/dialogues/alicetalk.rpy:2305
 translate deutsch massage_sunscreen_hide_behind_b7b059d0:
 
     # Alice_12 "Он уползает, кстати..."
-    Alice_12 ""
+    Alice_12 "Sie krabbelt übrigens weg..."
 
 # game/dialogues/alicetalk.rpy:2306
 translate deutsch massage_sunscreen_hide_behind_2cb42984:
 
     # Max_05 "Точно! Наверно, испугался моей торчащей мощи!"
-    Max_05 ""
+    Max_05 "Das ist richtig! Wahrscheinlich hat sie Angst vor meiner herausragenden Stärke!"
 
 # game/dialogues/alicetalk.rpy:2307
 translate deutsch massage_sunscreen_hide_behind_b238bcf5:
 
     # Alice_07 "У тебя что, стоит до сих пор?!"
-    Alice_07 ""
+    Alice_07 "Hast du sie noch?!"
 
 # game/dialogues/alicetalk.rpy:2308
 translate deutsch massage_sunscreen_hide_behind_7976c130:
 
     # Max_04 "Ну... Ты так классно ко мне прижимаешься... Мне приятно!"
-    Max_04 ""
+    Max_04 "Nun... Du bist so nett zu mir... Das fühlt sich gut an!"
 
 # game/dialogues/alicetalk.rpy:2312
 translate deutsch massage_sunscreen_hide_behind_975489a5:

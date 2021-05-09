@@ -1783,7 +1783,7 @@ translate english lisa_horor_movie_r_973ca668:
 translate english lisa_horor_movie_r_not_restrain_04d9f431:
 
     # Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Хотя, ничего удивительного, я была почти уверена, что так и будет."
-    Lisa_12 "Yeah, I guess so! You're horny again... No surprise there....
+    Lisa_12 "Yeah, I guess so! You're horny again... No surprise there...."
 
 # game/events/lisa.rpy:1306
 translate english lisa_horor_movie_r_not_restrain_c4107b2d:
@@ -1815,7 +1815,7 @@ translate english strings:
 
     # game/events/lisa.rpy:1128
     old "Тогда досматриваем... (продолжаем смотреть \"Крик\")"
-    new "Then we'll finish watching... (Continue \"Scream")"
+    new "Then we'll finish watching... (Continue \"Scream\")"
 
     # game/events/lisa.rpy:1164
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Крик\")"

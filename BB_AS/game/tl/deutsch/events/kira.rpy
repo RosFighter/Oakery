@@ -4264,13 +4264,13 @@ translate deutsch kira_night_swim_3c073ea3:
 translate deutsch kira_night_swim_9c2b6ab8:
 
     # Max_19 "Охх... тётя Кира... Обожаю, когда ты так делаешь..." nointeract
-    Max_19 "" nointeract
+    Max_19 "Ohhh... Tante Kira... Ich liebe es, wenn du das machst..." nointeract
 
 # game/events/kira.rpy:840
 translate deutsch kira_night_swim_3129d202:
 
     # Max_21 "[restrain!t]{i}( Вот чёрт! Я двигаюсь ей навстречу, а она всё глубже берёт его в рот! И всё больше и больше ускоряется... Такое я долго не выдержу! Я уже на грани... ){/i}"
-    Max_21 ""
+    Max_21 "[restrain!t] {i}(Verdammt! Ich bewege mich in ihre Richtung und sie nimmt ihn tiefer und tiefer in ihren Mund! Und sie wird schneller und schneller... Ich kann nicht mehr viel davon ertragen. Ich bin kurz davor,...){/i}"
 
 # game/events/kira.rpy:841
 translate deutsch kira_night_swim_820774f8:
@@ -4342,7 +4342,7 @@ translate deutsch strings:
 
     # game/events/kira.rpy:812
     old "{i}сдерживаться{/i} {color=[sex4.col]}(Сексуальный опыт. Шанс: [sex4.vis]){/color}"
-    new "{i}zurückhalten{/i} (Sexuelle Erfahrung. Chance: [sex4.vis]){/color}"
+    new "{i}zurückhalten{/i} {color=[sex4.col]}(Sexuelle Erfahrung. Chance: [sex4.vis]){/color}"
 
     # game/events/kira.rpy:832
     old "{i}получать удовольствие{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"

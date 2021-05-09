@@ -9713,7 +9713,7 @@ translate deutsch about_horror_toples_ddaf895d:
 translate deutsch about_horror_toples_0c050606:
 
     # Max_01 "Сама-то."
-    Max_01 "Ganz wie du meinst."
+    Max_01 "Das musst du gerade sagen."
 
 # game/dialogues/lisatalk.rpy:4063
 translate deutsch Lisa_wear_Tshirt_dcb327ce:

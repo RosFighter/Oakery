@@ -1460,341 +1460,341 @@ translate deutsch lisa_shower_pinded_cc880acd:
 translate deutsch lisa_dressed_school_come_in_f8ba2a12:
 
     # Lisa_12 "Что бы ты там не видел, но подождать немного за дверью можно было? Так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
-    Lisa_12 ""
+    Lisa_12 "Was auch immer du da gesehen hast, aber konntest du nicht eine Weile vor der Tür warten? Wie auch immer, ich bin schon angezogen und renne zur Schule. Ich bin um 16:00 Uhr zurück."
 
 # game/events/lisa.rpy:302
 translate deutsch lisa_dressed_school_come_in_9a56f583:
 
     # Lisa_01 "А за дверью постоять не мог? А ладно, входи... Я уже оделась и побежала в школу."
-    Lisa_01 ""
+    Lisa_01 "Kannst du nicht vor die Tür warten? Tja, dann komm rein... Ich habe mich angezogen und bin zur Schule unterwegs."
 
 # game/events/lisa.rpy:305
 translate deutsch lisa_dressed_school_come_in_3509edb4:
 
     # Lisa_02 "Но за дверью подождать немного ты всё равно мог! Хотя бы для приличия..."
-    Lisa_02 ""
+    Lisa_02 "Trotzdem musst du noch eine Weile vor der Tür warten! Zumindest dem Anstand zuliebe..."
 
 # game/events/lisa.rpy:307
 translate deutsch lisa_dressed_school_come_in_7d099dd7:
 
     # Lisa_01 "Как бы там ни было, проходи... Я уже оделась и побежала в школу. Вернусь часа в четыре."
-    Lisa_01 ""
+    Lisa_01 "Wie auch immer, komm rein... Ich bin schon angezogen und auf dem Weg zur Schule. Ich bin um vier Uhr zurück."
 
 # game/events/lisa.rpy:323
 translate deutsch lisa_dressed_school_come_in_0a935d42:
 
     # Lisa_09 "Макс, я в школу одеваюсь! И ты прекрасно это знал..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "Max, ich ziehe mich für die Schule an! Und das weißt du ganz genau..." nointeract
 
 # game/events/lisa.rpy:332
 translate deutsch lisa_dressed_school_come_in_a45dadcf:
 
     # Lisa_12 "А ты бы мог и за дверью подождать немного! Хотя бы для приличия..."
-    Lisa_12 ""
+    Lisa_12 "Du hättest noch eine Weile vor der Tür warten können! Zumindest dem Anstand zuliebe..."
 
 # game/events/lisa.rpy:335
 translate deutsch lisa_dressed_school_come_in_3db28928:
 
     # Lisa_00 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-    Lisa_00 ""
+    Lisa_00 "Okay, ich bin schon angezogen, also komm rein... Ich werde jetzt zur Schule gehen."
 
 # game/events/lisa.rpy:336
 translate deutsch lisa_dressed_school_come_in_3c50f3cc:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:339
 translate deutsch lisa_dressed_school_come_in_75ed6c5f:
 
     # Lisa_02 "Могла бы... Но не буду, пока тут такие любознательные личности, как ты, лазят!"
-    Lisa_02 ""
+    Lisa_02 "Ich könnte... Aber das werde ich nicht, solange neugierige Leute wie du hier unterwegs sind!"
 
 # game/events/lisa.rpy:342
 translate deutsch lisa_dressed_school_come_in_eca89f2c:
 
     # Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-    Lisa_01 ""
+    Lisa_01 "Okay, ich bin schon angezogen, also komm rein... Ich werde jetzt zur Schule gehen."
 
 # game/events/lisa.rpy:343
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_1:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:351
 translate deutsch lisa_dressed_school_come_in_2b19a5cb:
 
     # Lisa_12 "И что теперь, тебе можно на неё глазеть, когда захочешь?! Нет уж, не угадал!"
-    Lisa_12 ""
+    Lisa_12 "Also willst du mich jetzt anstarren, wann immer du willst?! Nein, das kannst du nicht!"
 
 # game/events/lisa.rpy:354
 translate deutsch lisa_dressed_school_come_in_d00e2a63:
 
     # Lisa_00 "Так или иначе, я уже оделась и побежала в школу."
-    Lisa_00 ""
+    Lisa_00 "Wie auch immer, ich war schon angezogen und bin auf dem Weg zur Schule."
 
 # game/events/lisa.rpy:355
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_2:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:358
 translate deutsch lisa_dressed_school_come_in_61968822:
 
     # Lisa_00 "Ага, красивая... Но это не значит, что из-за этого я должна её тебе показывать!"
-    Lisa_00 ""
+    Lisa_00 "Ja, es ist wunderschön... Aber das bedeutet nicht, dass ich es dir zeigen muss!"
 
 # game/events/lisa.rpy:361
 translate deutsch lisa_dressed_school_come_in_eca89f2c_1:
 
     # Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-    Lisa_01 ""
+    Lisa_01 "Okay, ich bin schon angezogen, also komm rein... Ich werde jetzt zur Schule gehen."
 
 # game/events/lisa.rpy:362
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_3:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:366
 translate deutsch lisa_dressed_school_come_in_7a317488:
 
     # Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку!"
-    Lisa_02 ""
+    Lisa_02 "Vielen Dank! Aber du siehst sie schon zu oft... Ein kleines Geheimniss muss es noch geben!"
 
 # game/events/lisa.rpy:367
 translate deutsch lisa_dressed_school_come_in_f886aea4:
 
     # Max_03 "Не так часто, как хотелось бы."
-    Max_03 ""
+    Max_03 "Nicht so oft, wie ich es gerne hätte."
 
 # game/events/lisa.rpy:370
 translate deutsch lisa_dressed_school_come_in_eca89f2c_2:
 
     # Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-    Lisa_01 ""
+    Lisa_01 "Okay, ich bin schon angezogen, also komm rein... Ich werde jetzt zur Schule gehen."
 
 # game/events/lisa.rpy:371
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_4:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:379
 translate deutsch lisa_dressed_school_come_in_2c1fd973:
 
     # Lisa_12 "Мог бы и за дверью подождать немного! Хотя бы для приличия..."
-    Lisa_12 ""
+    Lisa_12 "Du hättest noch eine Weile vor der Tür warten können! Zumindest dem Anstand zuliebe..."
 
 # game/events/lisa.rpy:382
 translate deutsch lisa_dressed_school_come_in_f82aeccc:
 
     # Lisa_09 "Прекращай пялиться! Припёрся ни раньше и ни позже..."
-    Lisa_09 ""
+    Lisa_09 "Hör auf zu starren! Du bekommst es nicht, weder jetzt oder später..."
 
 # game/events/lisa.rpy:385
 translate deutsch lisa_dressed_school_come_in_edd0796e:
 
     # Lisa_00 "Можешь входить... А я в школу побежала."
-    Lisa_00 ""
+    Lisa_00 "Du kannst reinkommen... Ich muss zur Schule gehen."
 
 # game/events/lisa.rpy:386
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_5:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:389
 translate deutsch lisa_dressed_school_come_in_6b16431e:
 
     # Lisa_00 "Так, на мою попку сильно не глазеть! Я тут переодеваюсь не для того, чтобы тебя порадовать."
-    Lisa_00 ""
+    Lisa_00 "Okay, starrt mir nicht so sehr auf den Arsch! Ich ziehe mich hier nicht um, um dich glücklich zu machen."
 
 # game/events/lisa.rpy:392
 translate deutsch lisa_dressed_school_come_in_f1ca6a56:
 
     # Lisa_09 "Отвернись, Макс! Я чувствую, как ты пялишься на меня..."
-    Lisa_09 ""
+    Lisa_09 "Dreh dich um, Max! Ich kann förmlich spüren, wie du mich anstarrst..."
 
 # game/events/lisa.rpy:395
 translate deutsch lisa_dressed_school_come_in_dd82b3ec:
 
     # Lisa_01 "Можешь входить... А я в школу побежала."
-    Lisa_01 ""
+    Lisa_01 "Du kannst reinkommen... Ich muss zur Schule gehen."
 
 # game/events/lisa.rpy:396
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_6:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:400
 translate deutsch lisa_dressed_school_come_in_6a5b426f:
 
     # Lisa_02 "А вот и не увидишь! Когда надо, я могу их так быстренько одеть, как тебе и не снилось!"
-    Lisa_02 ""
+    Lisa_02 "Nein, das wirst du nicht! Wenn nötig, kann ich sie so schnell anziehen, wie du es dir nur träumen kannst!"
 
 # game/events/lisa.rpy:401
 translate deutsch lisa_dressed_school_come_in_403fb8c6:
 
     # Max_03 "Это правда! В моих снах ты делаешь это очень медленно..."
-    Max_03 ""
+    Max_03 "Das stimmt! In meinen Träumen machst du es sehr langsam..."
 
 # game/events/lisa.rpy:404
 translate deutsch lisa_dressed_school_come_in_2edfb4a5:
 
     # Lisa_05 "Так же медленно, как и эту юбку?"
-    Lisa_05 ""
+    Lisa_05 "So langsam wie dieser Rock?"
 
 # game/events/lisa.rpy:405
 translate deutsch lisa_dressed_school_come_in_f45557aa:
 
     # Max_05 "О да! Примерно так же..."
-    Max_05 ""
+    Max_05 "Oh, ja! Ungefähr so..."
 
 # game/events/lisa.rpy:408
 translate deutsch lisa_dressed_school_come_in_99d386a7:
 
     # Lisa_01 "Так, представим, что я ничего не слышала! Можешь входить... А я в школу побежала."
-    Lisa_01 ""
+    Lisa_01 "Okay, tun wir mal so, als hätte ich das nicht gehört! Du kannst reinkommen... Ich muss zur Schule gehen."
 
 # game/events/lisa.rpy:409
 translate deutsch lisa_dressed_school_come_in_3c50f3cc_7:
 
     # Max_01 "Удачи!"
-    Max_01 ""
+    Max_01 "Viel Erfolg!"
 
 # game/events/lisa.rpy:424
 translate deutsch lisa_dressed_school_open_door2_8f5f8f0e:
 
     # Lisa_12 "Макс! Ты почему без стука входишь? Я не одета..." nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Max! Warum kommst du hier rein, ohne anzuklopfen? Ich bin nicht angezogen..." nointeract
 
 # game/events/lisa.rpy:431
 translate deutsch lisa_dressed_school_open_door2_5c672fa5:
 
     # Lisa_12 "И что теперь, тебе можно на неё глазеть, когда захочешь?! Нет уж, не угадал! Выйди быстро, пока маму не позвала!" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Also darfst du mich jetzt anstarren, wann immer du willst?! Nein, das darfst du nicht! Raus hier, bevor ich Mom herrufe!" nointeract
 
 # game/events/lisa.rpy:434
 translate deutsch lisa_dressed_school_open_door2_37b11a6a:
 
     # Lisa_00 "Ага, красивая... Но это не значит, что из-за этого я должна её тебе показывать! Выйди, пожалуйста..." nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Ja, das ist wunderschön... Aber das bedeutet nicht, dass ich es dir zeigen muss! Geh raus, bitte..." nointeract
 
 # game/events/lisa.rpy:438
 translate deutsch lisa_dressed_school_open_door2_ff3ad2ef:
 
     # Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку! А теперь выйди, дай переодеться..." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Vielen Dank! Aber du siehst sie schon zu oft... Es muss alles in Maßen sein. Jetzt geh raus und lass mich in Ruhe umziehen..." nointeract
 
 # game/events/lisa.rpy:444
 translate deutsch lisa_dressed_school_open_door2_b6730509:
 
     # Lisa_12 "Так, быстро выйди и жди за дверью! Хотя бы для приличия... Или мне маму позвать?" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Okay, geh sofort raus und warte draußen! umindest dem Anstand zuliebe... Oder soll ich Mom herrufen?" nointeract
 
 # game/events/lisa.rpy:447
 translate deutsch lisa_dressed_school_open_door2_d1918bbe:
 
     # Lisa_00 "Так, на мою попку сильно не глазеть! Будь добр, выйди и дверь закрой..." nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Okay, starrt mir nicht zu sehr auf den Arsch! Sei bitte so lieb und mach die Tür zu..." nointeract
 
 # game/events/lisa.rpy:451
 translate deutsch lisa_dressed_school_open_door2_f8c0fd52:
 
     # Lisa_02 "А вот и не увидишь! Дай переодеться спокойно, нечего тут всяким любопытным личностям лазить..." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Nein, das wirst du nicht! Lass mich in Ruhe anziehen, es gibt keinen Grund, dass neugierige Leute hier reinkommen..." nointeract
 
 # game/events/lisa.rpy:454
 translate deutsch lisa_dressed_school_open_door2_43bf6961:
 
     # Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны!" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Max! Ich bin nicht angezogen! Mach die Tür von draußen zu, und zwar schnell!" nointeract
 
 # game/events/lisa.rpy:462
 translate deutsch lisa_dressed_school_open_door2_302e61de:
 
     # Lisa_12 "И что теперь, можно заходить когда вздумается и без стука?! Нет уж, не угадал! Выйди быстро, пока маму не позвала!" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Also kannst du jetzt einfach hier reinspazieren, wann immer du willst, ohne anzuklopfen?! Nein, das kannst du nicht! Geh lieber schnell raus, bevor ich Mom herrufe!" nointeract
 
 # game/events/lisa.rpy:465
 translate deutsch lisa_dressed_school_open_door2_2ba475e4:
 
     # Lisa_00 "Не оделась... Но это не значит, что ты можешь вот просто так заходить без стука! Выйди, пожалуйста..." nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Nicht angezogen... Das heißt aber nicht, dass du einfach reinkommen kannst, ohne anzuklopfen! Geh raus, bitte..." nointeract
 
 # game/events/lisa.rpy:469
 translate deutsch lisa_dressed_school_open_door2_0e43742a:
 
     # Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..."
-    Lisa_02 ""
+    Lisa_02 "Noch nicht! Sei froh, aber lass mich bitte in Ruhe umziehen..."
 
 # game/events/lisa.rpy:1113
 translate deutsch lisa_horor_movie_r_766c16b3:
 
     # Max_01 "Да, смотрим. Сейчас всё подготовлю... Не стесняйся, снимай маечку."
-    Max_01 ""
+    Max_01 "Ja, das machen wir. Ich bereite alles vor... Keine Scheu, zieh dein Oberteil aus."
 
 # game/events/lisa.rpy:1114
 translate deutsch lisa_horor_movie_r_7a0c4061:
 
     # Lisa_02 "Сейчас сниму, только свет сначала выключу. Тебе уже страшно?"
-    Lisa_02 ""
+    Lisa_02 "Ich ziehe es aus, aber erst schalte ich das Licht aus. Hast du schon Angst?"
 
 # game/events/lisa.rpy:1231
 translate deutsch lisa_horor_movie_r_c31e8301:
 
     # Max_10 "{i}( Только бы у меня не встал! У меня тут полный эффект погружения... Ладно в ужастике сиськи голые периодически мелькают, а вот голая грудь моей сестрёнки, которой она слегка трётся о меня, вот это проблема... Как тут сдерживаться? ){/i}" nointeract
-    Max_10 "" nointeract
+    Max_10 "{i}(Ich hoffe, ich bekomme keinen Ständer! Ich habe hier einen vollen Immersions-Effekt... Okay, in einem Horrorfilm blitzen ab und zu nackte Brüste auf, aber die nackten Brüste meiner Schwester, die sie leicht an mir reibt, das ist das Problem... Wie halte ich mich da unter Kontrolle?){/i}" nointeract
 
 # game/events/lisa.rpy:1269
 translate deutsch lisa_horor_movie_r_973ca668:
 
     # Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки и нежная грудь, которой она касается меня... ){/i}"
-    Max_05 ""
+    Max_05 "{i}(Ein sanfter Kuss mit meiner kleinen Schwester vor dem Einschlafen wird sie definitiv von all ihren Ängsten befreien. Wenn man sie küsst, vergisst man alles, was vorher passiert ist... Nur ihre saftigen Lippen und die zarten Brüste, die sie mir entgegenstreckt...){/i}"
 
 # game/events/lisa.rpy:1305
 translate deutsch lisa_horor_movie_r_not_restrain_04d9f431:
 
     # Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Хотя, ничего удивительного, я была почти уверена, что так и будет."
-    Lisa_12 ""
+    Lisa_12 "Ja, ich denke schon! Du bist wieder geil... Obwohl, keine Überraschung, ich war mir ziemlich sicher, dass ich das sein würde."
 
 # game/events/lisa.rpy:1306
 translate deutsch lisa_horor_movie_r_not_restrain_c4107b2d:
 
     # Max_09 "Ну встал и встал, подумаешь. Спрячу под ноутбуком."
-    Max_09 ""
+    Max_09 "Ich bin also munter, aktiv. Ich werde es unter meinem Laptop verstecken."
 
 translate deutsch strings:
 
     # game/events/lisa.rpy:323
     old "Могла бы и не прикрываться..."
-    new ""
+    new "Du musst dich nicht verstecken..."
 
     # game/events/lisa.rpy:323
     old "У тебя классная грудь, не стесняйся..."
-    new ""
+    new "Du hast schöne Brüste, sei nicht schüchtern..."
 
     # game/events/lisa.rpy:323
     old "Подумаешь, твою очаровательную попку без трусиков увижу..."
-    new ""
+    new "Was ist, wenn ich deinen süßen Arsch ohne dein Höschen sehe..."
 
     # game/events/lisa.rpy:454
     old "Извини, я думал, что ты уже оделась. Хотя бы немного..."
-    new ""
+    new "Entschuldigung, ich dachte, du wärst angezogen. Zumindest ein bisschen..."
 
     # game/events/lisa.rpy:1043
     old "{i}смотреть \"Крик\"{/i}"
-    new ""
+    new "{i}\"The Scream\" ansehen{/i}"
 
     # game/events/lisa.rpy:1128
     old "Тогда досматриваем... (продолжаем смотреть \"Крик\")"
-    new ""
+    new "Dann sehen wir mal... (weiter mit \"The Scream\")"
 
     # game/events/lisa.rpy:1164
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Крик\")"
-    new ""
+    new "Dann lassen uns fortfahren... (\"The Scream\" weiter schauen)"
 

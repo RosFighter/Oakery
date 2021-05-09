@@ -33,3 +33,4 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Лиза хоть и убежала в свою постельку, но мне удалось воспользоваться моментом и поцеловать её на ночь, чтобы ей было не так страшно! Может, со временем ей не захочется уходить от меня или даже больше..."
     new "Even though Lisa ran off to her bed, I managed to take advantage of the moment and kiss her good night so she wouldn't be so scared! Maybe in time she wouldn't want to leave..."
+    

@@ -23,3 +23,4 @@ translate english cam0_olivia_lisa_sleep_8eb12594:
 
     # Max_01 "Красавицы сладко спят..."
     Max_01 "Sleeping beauties..."
+

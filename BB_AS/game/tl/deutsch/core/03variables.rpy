@@ -1324,15 +1324,15 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:399
     old "Забота о попках"
-    new ""
+    new "spezielle Arsch-Behandlung"
 
     # game/core/03variables.rpy:399
     old "Интересно получилось! Я ради интереса сказал Алисе, что больше не хочу за неё заступаться, когда её наказывают, но готов это делать и дальше, если она согласится, чтобы её шлёпал я.\nОна сперва приняла такой уговор в штыки, но после нескольких наказаний от мамы всё же согласилась, чтобы её шлёпал я. По крайней мере, если получилось спасти Алису от маминой руки. Надо так же не забыть обсудить с ней, когда можно её отшлёпать.\n\nПравда есть небольшой нюанс, благодаря которому Алиса и согласилась на это... Я пообещал, что отшлёпаю её нежно. Да уж, будет не просто устоять и не влепить по её попке за то, как стервозно она себя вела..."
-    new ""
+    new "Das ist interessant! Ich habe Alice gesagt, dass ich nicht mehr für sie einstehen will, wenn sie bestraft wird, aber dass ich es weiterhin tun würde, wenn sie zustimmt, von mir bestraft zu werden.\nZumindest dann, wenn Alice vor Mom gerettet habe. Ich sollte auch daran denken, mit ihr darüber zu sprechen, wann es okay ist, ihr den Arsch zu versohlen. Ich habe ihr versprochen, dass ich ihren Arsch  sanft versohlen werde.\n\nJa, es wird schwer sein, ihr nicht richtig den Arsch zu versohlen, weil sie so eine Schlampe ist..."
 
     # game/core/03variables.rpy:399
     old "Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше..."
-    new ""
+    new "Es ist wirklich ein faszinierender Anblick! Ich glaube nicht, dass viele Leute es jemals geschafft haben, ihre große Schwester auszuziehen und zu bestrafen...\nObwohl sie launisch und gefährlich ist, scheint meine Hartnäckigkeit das Beste aus ihr herauszuholen. Es macht genauso viel Spaß, ihren nackten und knackigen Arsch zu bewundern, wie sie zu bestrafen.\n\Und jetzt weiß ich auch, das ich es nicht übertreiben darf, um diese private Bestrafung so lange wie möglich zu genießen..."
 
 # TODO: Translation updated at 2021-05-02 21:54
 
@@ -1340,13 +1340,13 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:295
     old "Оливии"
-    new ""
+    new "Olivia"
 
     # game/core/03variables.rpy:295
     old "Оливию"
-    new ""
+    new "Olivia"
 
     # game/core/03variables.rpy:295
     old "Оливией"
-    new ""
+    new "Olivia"
 

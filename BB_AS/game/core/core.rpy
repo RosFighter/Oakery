@@ -944,17 +944,19 @@ label update_06_5:
     if _version < "0.06.4.04":
         python:
 
-            if lisa.dcv.special.stage > 0:
-                poss['SoC'].OpenStage(10)
-            if lisa.dcv.special.stage > 2:
-                poss['SoC'].OpenStage(11)
-            if lisa.dcv.special.stage > 4:
-                poss['SoC'].OpenStage(12)
-            if lisa.dcv.special.stage > 4 and 'horror_kiss' in persistent.mems_var:
-                poss['SoC'].OpenStage(13)
-
             for ps in poss:
                 poss[ps].stages = [int(st.used) for st in poss[ps].stages]
+
+            poss_update()
+
+            if lisa.dcv.special.stage > 0:
+                poss['SoC'].open(10)
+            if lisa.dcv.special.stage > 2:
+                poss['SoC'].open(11)
+            if lisa.dcv.special.stage > 4:
+                poss['SoC'].open(12)
+            if lisa.dcv.special.stage > 4 and 'horror_kiss' in persistent.mems_var:
+                poss['SoC'].open(13)
 
             ol_tv_order = ['0'+str(i) for i in range(1, 8)]
 

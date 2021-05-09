@@ -942,7 +942,7 @@ translate english strings:
 
     # game/events/olivia.rpy:316
     old "{i}раздеться и сесть рядом{/i}"
-    new "{i}Sit down next to each other{i}"
+    new "{i}Sit down next to each other{/i}"
 
 # TODO: Translation updated at 2021-05-07 23:01
 
@@ -1065,3 +1065,4 @@ translate english olivia_night_visit_r_a6603bc7:
 
     # Olivia_04 "Такими темпами мы ничего не посмотрим. Пойдёмте уже..." nointeract
     Olivia_04 "At this rate, we won't see anything. Let's go already..." nointeract
+    

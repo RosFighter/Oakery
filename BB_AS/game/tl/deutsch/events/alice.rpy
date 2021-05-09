@@ -2536,7 +2536,7 @@ translate deutsch alice_body_photoset1_ad551119:
 translate deutsch alice_body_photoset1_da413f09:
 
     # Max_01 "Зато отличный индикатор! Сразу ясно, что выглядишь ты в этом боди очень классно. А как там сзади всё выглядит? Ну-ка покрутись..."
-    Max_01 ""
+    Max_01 "Aber das ist ein toller Anblick! Ich kann sagen, dass du in diesem Body wirklich gut aussiehst. Wie sieht es von hinten aus? Dreh dich mal..."
 
 # game/events/alice.rpy:2084
 translate deutsch alice_body_photoset1_2b4d7ce7:

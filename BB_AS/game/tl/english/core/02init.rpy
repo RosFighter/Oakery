@@ -557,27 +557,27 @@ translate english strings:
 
     # game/core/02init.rpy:23
     old "{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}It's too risky!{/i}{/color}\n"
 
     # game/core/02init.rpy:117
     old "Ну как, получилось рассказать всё Оливии?"
-    new ""
+    new "Did you get to tell Olivia everything?"
 
     # game/core/02init.rpy:117
     old "Учтите, я испытываю... некоторый подъём!"
-    new ""
+    new "Mind you, I'm experiencing... a bit of an upswing!"
 
     # game/core/02init.rpy:117
     old "Пошепчемся немного о моей сестрёнке?"
-    new ""
+    new "Let's have a little chat about my sister, shall we?"
 
     # game/core/02init.rpy:117
     old "Что новенького, Оливия?"
-    new ""
+    new "What's new, Olivia?"
 
     # game/core/02init.rpy:117
     old "Рад тебя видеть, Оливия!"
-    new ""
+    new "Good to see you, Olivia!"
 
 # TODO: Translation updated at 2021-05-07 23:01
 
@@ -585,5 +585,5 @@ translate english strings:
 
     # game/core/02init.rpy:117
     old "Нравится, что я спасаю твою попку от наказания?"
-    new ""
+    new "Do you like how I'm saving your ass from punishment?"
 

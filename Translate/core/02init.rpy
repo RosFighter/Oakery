@@ -586,3 +586,4 @@ translate english strings:
     # game/core/02init.rpy:117
     old "Нравится, что я спасаю твою попку от наказания?"
     new "Do you like how I'm saving your ass from punishment?"
+

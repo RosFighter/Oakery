@@ -459,17 +459,17 @@ label alice_talk_tv:
                 Max_03 "О, это я с радостью сделаю!"
                 Alice_07 "Я немного приподнимусь, чтобы тебе было проще их стянуть..."   #спрайт со стягиванием джинсов
                 if alice.req.result == 'nopants':
-                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-3')
+                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-2')
                     Max_06 "О да, это ты классно придумала!"   #если на Алисе нет трусиков
                 else:
-                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-2')
+                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-1')
                     Max_05 "О да, так гораздо лучше..."   #если на Алисе есть трусики
                 Alice_05 "Ты только там сильно не заглядывайся, куда не нужно! Лучше скорее продолжай массаж, пока я не расхотела..."
                 if alice.req.result == 'nopants':
                     Max_07 "Ну да... точно... я же... это... массаж делал."   #если на Алисе нет трусиков
                     Alice_03 "Ты чего там так тормозишь? Как будто в трусиках меня никогда не видел..."
                     # стянуть джинсы до конца
-                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-4')
+                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-3')
                     Alice_15 "Ой, Макс, я же сегодня без них! Вот чёрт! Чего глазеешь, иди отсюда, ты и так увидел больше положенного..."   #спрайт с прикрыванием
                     Max_05 "Ладно, но это было так сногсшибательно, что я аж забыл, как ходить!"
                     Alice_18 "Макс!!!"
@@ -542,7 +542,7 @@ label alice_talk_tv:
                     Max_07 "Тогда, если хочешь продолжения массажа, то снимай их!"
                     Alice_06 "Макс! Какой же ты... Ладно, только не смотри. И когда продолжишь массаж, не пялься на меня!"
                     Max_03 "Да, да, конечно."
-                    $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress+'-4')
+                    $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress+'-3')
                     Alice_13 "Хотя, нет, не пойдёт! У меня так всё видно будет... И хватит уже пялиться! Лучше иди уже по своим делам."   #спрайт с прикрыванием
                     Max_05 "Как скажешь. Трусы не потеряй."
                     if not _in_replay:
@@ -567,7 +567,7 @@ label alice_talk_tv:
             $ _pose = {'03':'05', '04':'06'}[_pose]
             scene BG tv-mass-05
             $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
-            $ renpy.show('Max tv-mass ' + _pose + max.dress)
+            $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
             menu:
                 Alice_07 "Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?"
                 "Да, это будет на десерт...":
@@ -609,7 +609,8 @@ label alice_talk_tv:
 
     $ _pose = {'05':'07', '06':'08'}[_pose]
     scene BG tv-mass-07
-    $ renpy.show('Alice tv-mass ' + _pose + _dress)
+    $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+    $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     Alice_04 "Ну всё, кажется хватит. Во всяком случае, тебе. А то мне ногу испачкаешь... Но ручки у тебя - что надо. Даже не ожидала такого от тебя..."
     Max_05 "Я тоже не ожидал... такого..."
     Alice_08 "Значит, мы оба полны сюрпризов. Ну всё, хорошего помаленьку. Давай, засовывай свой член обратно, а то до добра это всё дело не дойдёт... Да, и спасибо за массаж..."
@@ -635,7 +636,8 @@ label advanced_massage1:
     $ added_mem_var('advanced_massage1')
     scene BG tv-mass-03
     $ _pose = {'05':'09', '06':'10'}[_pose]
-    $ renpy.show('Alice tv-mass ' + _pose + _dress)
+    $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+    $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     #tv-mass-09-10
     if alice.flags.hip_mass < 2:
         Max_08 "{i}( Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух... ){/i}"   #только при первом расширенном массаже
@@ -674,7 +676,8 @@ label advanced_massage1:
     Max_06 "{i}( Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила! ){/i}"
     scene BG tv-mass-03
     $ _pose = {'15':'09', '16':'10'}[_pose]
-    $ renpy.show('Alice tv-mass ' + _pose + _dress)
+    $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+    $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     #tv-mass-09-10
     Alice_07 "Да... такой массаж мне нравится... Вот бы всё время так!"
     Max_01 "Это запросто, Алиса! Наверно, хочешь теперь побыть одна и отдохнуть?"

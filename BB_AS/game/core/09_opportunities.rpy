@@ -186,6 +186,10 @@ init python:
         for ps in poss_dict:
             if ps not in poss:
                 poss[ps] = Poss([0 for st in poss_dict[ps][1]])
+
+            else:
+                while len(poss[ps].stages) < len(poss_dict[ps][1]):
+                    poss[ps].stages.append(0)
         return
 
 # _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")

@@ -9779,3 +9779,4 @@ translate english Lisa_wear_Tshirt_7a250a36:
 
     # Max_08 "Так и сделаю. В смысле, сделаю..."
     Max_08 "That's what I'll do. I will..."
+

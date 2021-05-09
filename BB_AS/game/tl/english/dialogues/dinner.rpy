@@ -2215,17 +2215,17 @@ translate english dinner_lace_lingerie_e0b844ce:
 translate english typical_dinner_abe1c298:
 
     # Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. И бассейн я вижу чистый. Молодец, что взял на себя эту ответственность, мы все это ценим. А теперь давайте ужинать..." nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Enjoy the food, everyone. I'm pleased you were able to buy groceries using your own funds, Max. And I see the pool is clean. Well done for taking responsibility, we all appreciate it. Now let's have dinner..." nointeract
 
 # game/dialogues/dinner.rpy:41
 translate english typical_dinner_e043c878:
 
     # Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. Хоть ответственности и немного, но она важна. А теперь давайте ужинать..." nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Enjoy the food, everyone. I'm pleased you were able to buy groceries using your own funds, Max. It's not much responsibility, but it's a start. Now, let's eat..." nointeract
 
 # game/dialogues/dinner.rpy:43
 translate english typical_dinner_6b0248d1:
 
     # Ann_01 "Всем приятного аппетита. Я заметила с балкона, что бассейн почищен. Спасибо тебе, Макс, что заботишься о порядке, это меня радует. А теперь давайте ужинать..." nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Enjoy the food, everyone. I noticed that the pool was cleaned. Thank you for taking care of it, Max. Now let's have dinner..." nointeract
 
