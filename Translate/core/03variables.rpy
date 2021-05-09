@@ -1374,12 +1374,12 @@ translate english strings:
 
     # game/core/03variables.rpy:295
     old "Оливии"
-    new ""
+    new "Olivia"
 
     # game/core/03variables.rpy:295
     old "Оливию"
-    new ""
+    new "Olivia"
 
     # game/core/03variables.rpy:295
     old "Оливией"
-    new ""
+    new "Olivia"
