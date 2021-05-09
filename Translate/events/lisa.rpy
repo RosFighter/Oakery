@@ -1819,4 +1819,4 @@ translate english strings:
 
     # game/events/lisa.rpy:1164
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Крик\")"
-        new "Then let's keep watching... (Continue watching the \"Scream\" series)"
+    new "Then let's keep watching... (Continue watching the \"Scream\" series)"

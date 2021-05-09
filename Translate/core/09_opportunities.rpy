@@ -16,7 +16,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "На этот раз Лиза не стала просить сладости или одежду... Она решила \"наказать меня\" совместным просмотром фильмов перед сном! Всё бы ничего, да смотреть мы будем романтические фильмы... Остаётся надеяться, что это будет терпимо, потому что глазеть на принимающую душ Лизу я люблю."
-    new "This time Lisa didn't ask for candy or clothes... She decided to "punish me" by watching movies together before bed! That would be all right, but we're going to watch romantic movies... We can only hope that it will be tolerable, because I love to watch Lisa taking a shower."
+    new "This time Lisa didn't ask for candy or clothes... She decided to \"punish me\" by watching movies together before bed! That would be all right, but we're going to watch romantic movies... We can only hope that it will be tolerable, because I love to watch Lisa taking a shower."
 
     # game/core/09_opportunities.rpy:4
     old "Затея Лизы с просмотром романтики оказалась лучше, чем я думал! По крайней мере для меня. Сестрёнка в нижнем белье со мной рядом в одной постели! А на экране ещё и откровенные сцены мелькают, да такие, что у меня встал! Лизу это как-то не обрадовало, но посмотрим, что будет дальше..."

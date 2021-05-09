@@ -1065,4 +1065,4 @@ translate english olivia_night_visit_r_a6603bc7:
 
     # Olivia_04 "Такими темпами мы ничего не посмотрим. Пойдёмте уже..." nointeract
     Olivia_04 "At this rate, we won't see anything. Let's go already..." nointeract
-    
+
