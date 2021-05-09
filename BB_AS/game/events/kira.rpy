@@ -954,7 +954,7 @@ label kira_night_tv:
                 lst.append('porn-0'+str(i)+' 0'+str(j))
         if not _in_replay:
             for j in range(1, 7):
-                lst.append('serial 0'+str(j)+'0'+str(renpy.random.randint(1, 3)))
+                lst.append('serial 0'+str(j)+'-0'+str(renpy.random.randint(1, 3)))
     $ film = renpy.random.choice(lst)
     $ naked = False
     $ renpy.show('tv '+film, at_list=[tv_screen,])

@@ -789,7 +789,8 @@ init python:
             elif name in ['shower', 'bath', 'shower2']:
                 inf = '04a'
             elif name == 'yoga':
-                inf = '05'
+                dress = ann.clothes.sports.GetCur().suf
+                inf   = ann.clothes.sports.GetCur().info
             elif name == 'cooking':
                 dress = ann.clothes.cook_morn.GetCur().suf if tm < '12:00' else ann.clothes.cook_eve.GetCur().suf
                 inf   = ann.clothes.cook_morn.GetCur().info if tm < '12:00' else ann.clothes.cook_eve.GetCur().info

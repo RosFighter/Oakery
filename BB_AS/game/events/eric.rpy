@@ -300,7 +300,7 @@ label eric_ann_tv:
         $ renpy.show('porn_'+film+' 01_02', at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     elif eric.daily.tv_sex == 2:
-        $ renpy.show('tv serial 0'+str(renpy.random.randint(1, 7))+'+0'+str(renpy.random.randint(1, 3)), at_list=[tv_screen,])
+        $ renpy.show('tv serial 0'+str(renpy.random.randint(1, 7))+'-0'+str(renpy.random.randint(1, 3)), at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     else:
         ### Дальний план, поза, на которой остановилось подглядывание

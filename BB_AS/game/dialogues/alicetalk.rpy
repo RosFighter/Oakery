@@ -441,6 +441,11 @@ label alice_talk_tv:
                 $ dial.append((_("{i}продолжить{/i} \n{color=[_ch20.col]}(Массаж. Шанс: [_ch20.vis]){/color}"), 'mass'))
             else:
                 $ dial.append((_("{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}"), 'mass'))
+                if 5 > alice.flags.hip_mass > 1 and alice.flags.touched:
+                    $ dial.append((_("{i}высунуть член{/i}"), 'sober'))
+                elif alice.flags.hip_mass > 4:
+                    $ dial.append((_("{i}высунуть член{/i}"), 'sober_r'))
+
         if not _in_replay:
             $ dial.append((_("{i}закончить массаж{/i}"), 'end_mass'))
         $ _can_double_choko = False
@@ -469,7 +474,8 @@ label alice_talk_tv:
                     Max_07 "Ну да... точно... я же... это... массаж делал."   #если на Алисе нет трусиков
                     Alice_03 "Ты чего там так тормозишь? Как будто в трусиках меня никогда не видел..."
                     # стянуть джинсы до конца
-                    $ renpy.show('Alice tv-mass ' + _pose + _dress+'-3')
+                    $ renpy.show('Alice tv-mass '+_pose+'-3a')#+alice.dress)
+                    $ renpy.show('Max tv-mass '+_pose+'-3'+mgg.dress)
                     Alice_15 "Ой, Макс, я же сегодня без них! Вот чёрт! Чего глазеешь, иди отсюда, ты и так увидел больше положенного..."   #спрайт с прикрыванием
                     Max_05 "Ладно, но это было так сногсшибательно, что я аж забыл, как ходить!"
                     Alice_18 "Макс!!!"
@@ -504,7 +510,10 @@ label alice_talk_tv:
 
         elif rez == 'mass':
             jump .massage_next
-
+        elif rez == 'sober':
+            jump .sober_mass
+        elif rez == 'sober_r':
+            jump .sober_mass_r
         else:
             Alice_07 "Как, всё? А мне понравилось... Спасибо, Макс. Вот ты и сделал девушке приятно!"
             Max_07 "Я и не так могу..."
@@ -542,7 +551,8 @@ label alice_talk_tv:
                     Max_07 "Тогда, если хочешь продолжения массажа, то снимай их!"
                     Alice_06 "Макс! Какой же ты... Ладно, только не смотри. И когда продолжишь массаж, не пялься на меня!"
                     Max_03 "Да, да, конечно."
-                    $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress+'-3')
+                    $ renpy.show('Alice tv-mass '+_pose+'-3a')#+alice.dress)
+                    $ renpy.show('Max tv-mass '+_pose+'-3'+mgg.dress)
                     Alice_13 "Хотя, нет, не пойдёт! У меня так всё видно будет... И хватит уже пялиться! Лучше иди уже по своим делам."   #спрайт с прикрыванием
                     Max_05 "Как скажешь. Трусы не потеряй."
                     if not _in_replay:
@@ -560,7 +570,12 @@ label alice_talk_tv:
                 "{i}продолжить{/i} \n{color=[_ch15.col]}(Массаж. Шанс: [_ch15.vis]){/color}" if not _drink:
                     $ alice.dress = 'c'
                     jump .massage_next
-
+                "{i}высунуть член{/i}" if all([not _drink, 5 > alice.flags.hip_mass > 1, alice.flags.touched]):
+                    $ alice.dress = 'c'
+                    jump .sober_mass
+                "{i}высунуть член{/i}" if all([not _drink, alice.flags.hip_mass > 4]):  # эпизодический
+                    $ alice.dress = 'c'
+                    jump .sober_mass_r
     label .massage_next:
         if (RandomChance(_ch20.ch) and _drink==1) or (RandomChance(_ch25.ch) and _drink==2) or _in_replay: ### {i}Алисе понравился массаж!{/i} Алиса съела конфетку
             $ Skill('massage', 0.1)
@@ -615,8 +630,8 @@ label alice_talk_tv:
     Max_05 "Я тоже не ожидал... такого..."
     Alice_08 "Значит, мы оба полны сюрпризов. Ну всё, хорошего помаленьку. Давай, засовывай свой член обратно, а то до добра это всё дело не дойдёт... Да, и спасибо за массаж..."
     Max_03 "Тебе спасибо..."
-    $ alice.stat.footjob += 1
     $ persistent.memories['alice_talk_tv'] = 1
+    $ alice.stat.footjob += 1
     $ alice.daily.massage = 3
     jump .end
 
@@ -624,6 +639,154 @@ label alice_talk_tv:
         Alice_12 "Макс! Ещё одно лишнее движение, и я дам тебе по шарам вот это самой ногой. Ты меня понял? Всё, массаж окончен, вали отсюда!"
         "{i}уйти{/i}":
             jump .end
+
+    label .sober_mass:
+        #tv-mass-05 + tv-mass-(05/06)-max-(01a/01b) + tv-mass-(05/06)-alice-(01a/01b/01c)
+        $ _pose = {'03':'05', '04':'06'}[_pose]
+        scene BG tv-mass-05
+        $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
+        $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+
+        if alice.flags.hip_mass < 3:
+            ###в 1-ый раз###
+            $ alice.flags.hip_mass = 3
+            Alice_07 "Макс... Сегодня твои ручки творят чудеса... Но мне немного щекотно. Раньше ты массировал мне ножки без этого..."
+            Max_02 "Ты права. Без этого... Не нравится?"
+            Alice_04 "Нет, мне очень нравится! Просто, я пока не поняла, что изменилось и как ты это делаешь... А хотя... Подожди-ка..."
+            Max_07 "Знай, я не специально."
+            #tv-mass-03 + tv-mass-04-max-(03a/03b) + tv-mass-04-alice-(03a/03b/03c)
+            scene BG tv-mass-03
+            $ renpy.show('Max tv-mass 04-3' + mgg.dress)
+            $ renpy.show('Alice tv-mass 04-3' + alice.dress)
+            Alice_15 "Так я об член твой тёрлась?! Ну, Макс! Ты зачем так сделал, совсем что ли извращенец? Хотя, зачем я спрашиваю..."
+            Max_04 "У тебя такая нежная кожа, вот у меня и встал. И несмотря на это, я хотел закончить массаж... для своей дорогой сестрёнки."
+            Alice_16 "Да ты что! А если бы я так и не поняла, что ты мне ножки членом своим щекочешь?!"
+            Max_03 "Ты же сама сказала, что тебе очень нравится! А для меня это главное."
+            Alice_17 "Ещё бы! Должно быть, это очень приятно, делать массаж ног, когда тебе в ответ дрочат. Пнуть бы тебя за это сам знаешь куда!"
+            Max_07 "Алиса, зачем этого стыдиться? Тебе же понравилось..."
+            Alice_06 "Макс, это ведь грязно! Я твоя сестра!"
+            Max_09 "И что теперь, мне нельзя что-то приятное сделать для тебя? Это не круто."
+            Alice_12 "Можно, но не так же..."
+            Max_08 "Смотри... Тогда буду массировать руками."
+            Alice_00 "Вот именно! Но уже в следующий раз. На сегодня хватит. Я так уж и быть, представлю, что ничего не было, потому что твой массаж мне нравится."
+            Max_00 "Хорошо."
+
+        elif alice.flags.hip_mass < 4:
+            ###во 2-ой раз###
+            $ alice.flags.hip_mass = 4
+            Alice_07 "Макс... Сегодня твои ручки творят чудеса... Мне снова щекотно... Это что, снова твой член! Ты же сказал, что будешь массировать руками!"
+            Max_02 "Так и есть."
+            Alice_06 "Я ведь и пнуть могу, если не уберёшь свою штуку!"
+            Max_04 "Я бы убрал, если бы ты перестала тереться об него своими ножками."
+            #tv-mass-03 + tv-mass-04-max-(03a/03b) + tv-mass-04-alice-(03a/03b/03c)
+            scene BG tv-mass-03
+            $ renpy.show('Max tv-mass 04-3' + mgg.dress)
+            $ renpy.show('Alice tv-mass 04-3' + alice.dress)
+            Alice_14 "Ничего я не тёрлась! Просто по инерции... немного... Это всё массаж твой. Мне становится так хорошо, что я не осознаю, что делаю."
+            Max_03 "Ну и делай себе дальше, если тебе нравится. Будет у нас маленький секретик."
+            Alice_06 "Да мне просто стыдно, что я тут делаю со своим братом на диване!"
+            Max_07 "Подумаешь! Я просто хочу сделать приятно своей сестрёнке, а уж как - не важно."
+            Alice_13 "Мило, Макс. Хочешь сказать, мне стоило бы просто дать тебе закончить вот такой массаж и ни о чём не думать?"
+            Max_02 "Попробовала бы разок. Уверен, ты останешься весьма довольной."
+            Alice_05 "Ты так в себе уверен?! Что ж, в следующий раз я попробую. И если мне хоть что-то, хоть немного не понравится... тебе будет плохо."
+            Max_01 "Не будет."
+
+        else: #alice.flags.hip_mass < 5:
+            ###в 3-ий раз###
+            $ alice.flags.hip_mass = 5
+            Alice_07 "Макс... Сегодня твои ручки творят чудеса... Но будь осторожен, высовывая свой член... Мне не должно быть слишком щекотно..."
+            Max_02 "Не будет."
+            #tv-mass-07 + tv-mass-(07/08)-max-(01a/01b) + tv-mass-(07/08)-alice-(01a/01b/01c)
+            $ _pose = {'05':'07', '06':'08'}[_pose]
+            scene BG tv-mass-07
+            $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+            $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
+            menu:
+                Alice_08 "Ты так в себе уверен, Макс... Ну посмотрим... Просто продолжай массировать мои ножки. Если ты ещё не в курсе, они у меня целиком - эрогенная зона..."
+                "{i}продолжать массаж{/i}":
+                    Alice_04 "Эх, Макс... Хоть мне и хорошо, но нам пора закругляться. Мне кажется, ты уже близок к тому, чтобы испачкать меня или диван."
+                    Max_09 "Как бы не так!"
+            #tv-mass-03 + tv-mass-04-max-(03a/03b) + tv-mass-04-alice-(03a/03b/03c)
+            scene BG tv-mass-03
+            $ renpy.show('Max tv-mass 04-3' + mgg.dress)
+            $ renpy.show('Alice tv-mass 04-3' + alice.dress)
+            Alice_12 "Да ты что! Хочешь сказать, для тебя это было не так уж и приятно?!"
+            Max_03 "Шутишь? Было супер! Но этого мало, чтобы я тебя испачкал."
+            Alice_05 "Даже так... Ну, проверять мы это, пожалуй, не будем. Спасибо за массаж, Макс. Мне понравилось. Но это будет только нашей вечерней шалостью, так что не думай, что к тебе будет особенное отношение во всё остальное время."
+            Max_01 "Хотя бы так."
+
+        $ Skill('massage', 0.1)
+        $ alice.stat.footjob += 1
+        $ alice.daily.massage = 3
+        $ alice.free += 1   # 3 максимум
+        $ infl[alice].add_m(16)
+        jump .end
+
+    label .sober_mass_r:
+        #tv-mass-05 + tv-mass-(05/06)-max-(01a/01b) + tv-mass-(05/06)-alice-(01a/01b/01c)
+        $ _pose = {'03':'05', '04':'06'}[_pose]
+        scene BG tv-mass-05
+        $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
+        $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+
+        Alice_07 "Макс... Обожаю то, какие чудеса творят твои руки... Но будь осторожен, высовывая свой член... Мне не должно быть слишком щекотно..."
+        Max_02 "Не будет."
+        #tv-mass-07 + tv-mass-(07/08)-max-(01a/01b) + tv-mass-(07/08)-alice-(01a/01b/01c)
+        $ _pose = {'05':'07', '06':'08'}[_pose]
+        scene BG tv-mass-07
+        $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+        $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
+
+        $ renpy.dynamic('ch')
+        $ ch = GetChance(mgg.massage, 3)
+
+        menu:
+            Alice_08 "Ты так в себе уверен, Макс... Ну посмотрим... Просто продолжай массировать мои ножки. Они у меня любят твой твёрдый... настрой."
+            "{i}продолжать массаж{/i}":
+                #tv-mass-03 + tv-mass-04-max-(03a/03b) + tv-mass-04-alice-(03a/03b/03c)
+                scene BG tv-mass-03
+                $ renpy.show('Max tv-mass 04-3' + mgg.dress)
+                $ renpy.show('Alice tv-mass 04-3' + alice.dress)
+                Alice_03 "Ух, как хорошо... Но пора закругляться. Ты молодец, Макс! Мне нравится эта чувственность и в то же время сила... Спасибо тебе."
+                Max_04 "Не за что..."
+                $ Skill('massage', 0.05)
+            "{i}массировать её ноги выше{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}":
+                if RandomChance(ch):
+                    # (Ей нравится!)
+                    #tv-mass-03 + tv-mass-(09/10)-max-(01a/01b) + tv-mass-(09/10)-alice-(01a/01b/01c)
+                    scene BG tv-mass-03
+                    $ _pose = {'07':'09', '08':'10'}[_pose]
+                    $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
+                    $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
+                    Alice_07 "[like!t]Да, моим ножкам становится так легко от твоих прикосновений... И они очень тебе благодарны. Чувствуешь, насколько?"
+                    Max_03 "А как же... Они у тебя шаловливые..."
+                    menu:
+                        Alice_04 "Они у меня такие... Любят помассировать кое-что большое и твёрдое... Главное, не перестараться и чувствовать, когда нужно заканчивать..."
+                        "{i}закончить массаж{/i}":
+                            #tv-mass-03 + tv-mass-04-max-(03a/03b) + tv-mass-04-alice-(03a/03b/03c)
+                            scene BG tv-mass-03
+                            $ renpy.show('Max tv-mass 04-3' + mgg.dress)
+                            $ renpy.show('Alice tv-mass 04-3' + alice.dress)
+                            Alice_03 "Ух, как хорошо... Макс, а ты молодец! Мне нравится эта чувственность и в то же время сила... Спасибо тебе."
+                            Max_04 "Не за что..."
+                        "{i}массировать ещё выше{/i} (навык массажа)" if False:   #в следующей версии
+                            pass
+                    $ alice.stat.footjob += 1
+                    $ add_lim('alice.free', 0.1, 5)
+                    $ infl[alice].add_m(16)
+                    $ Skill('massage', 0.1)
+                else:
+                    # (Ей не нравится!)
+                    #tv-mass-03 + tv-mass-04-max-(03a/03b) + tv-mass-04-alice-(03a/03b/03c)
+                    scene BG tv-mass-03
+                    $ renpy.show('Max tv-mass 04-3' + mgg.dress)
+                    $ renpy.show('Alice tv-mass 04-3' + alice.dress)
+                    Alice_03 "[dont_like!t]Было хорошо, Макс! Но ты немного поспешил двигаться выше... Но ручки у тебя - что надо. До следующего раза... и спасибо..."
+                    Max_04 "Не за что..."
+                    $ Skill('massage', 0.05)
+
+        $ alice.daily.massage = 3
+        jump .end
 
     label .end:
         $ renpy.end_replay()
