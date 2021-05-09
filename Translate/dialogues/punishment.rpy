@@ -946,13 +946,13 @@ translate english punishment_lisa_b8107edc:
 translate english punishment_alice_ce43f374:
 
     # Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
-    Max_07 ""
+    Max_07 "{i}Let's see if Alice will be more cooperative if I stop interfering... I have to talk to her while it's still painful to sit down!{/i}"
 
 # game/dialogues/punishment.rpy:649
 translate english punishment_alice_9e76b62f:
 
     # Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
-    Max_09 ""
+    Max_09 "{i}Yeah, well, she won't forget... Hmm... Maybe I should ask her for something so she doesn't think my kindness is gratuitous. And I should do it today, while she's still under the impression...{/i}"
 
 # TODO: Translation updated at 2021-05-07 23:14
 
@@ -960,5 +960,4 @@ translate english punishment_alice_9e76b62f:
 translate english punishment_lisa_dd201a37:
 
     # Max_07 "{i}( На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти... ){/i}"
-    Max_07 ""
-
+    Max_07 "{i}( You can't get far with just a "thank you"... We have to come up with something good for ourselves, too. I think I can get Lisa to watch a horror movie without her top on. It's definitely better than getting spanked by Mom in front of everyone! And I better talk to her while my kindness is still fresh in her mind... ){/i}"
