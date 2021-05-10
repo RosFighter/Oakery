@@ -918,585 +918,584 @@ translate english strings:
 translate english ann_about_ann_secret1_09d49aac:
 
     # Ann_13 "Кира? Для чего, я не понимаю..."
-    Ann_13 ""
+    Ann_13 "Kira? What for, I don't understand..."
 
 # game/dialogues/anntalk.rpy:491
 translate english ann_about_ann_secret1_71994bdb:
 
     # Max_07 "Она сказала, чтобы я поговорил с тобой про какой-то случай из твоего детства..."
-    Max_07 ""
+    Max_07 "She told me to talk to you about some incident from your childhood..."
 
 # game/dialogues/anntalk.rpy:492
 translate english ann_about_ann_secret1_68a27479:
 
     # Ann_14 "Кира совсем не умеет держать язык за зубами... Макс, это точно не та история, которую я хочу тебе рассказать. Давай сменим тему."
-    Ann_14 ""
+    Ann_14 "Kira can't keep her mouth shut at all... Max, that's definitely not something I want to tell you. Let's change the subject."
 
 # game/dialogues/anntalk.rpy:493
 translate english ann_about_ann_secret1_38897d65:
 
     # Max_09 "Вот теперь мне ещё больше интересно!"
-    Max_09 ""
+    Max_09 "Now I'm even more curious!"
 
 # game/dialogues/anntalk.rpy:494
 translate english ann_about_ann_secret1_c226a717:
 
     # Ann_16 "Макс! Я же сказала, что не хочу об этом. А теперь иди, занимайся своими делами!"
-    Ann_16 ""
+    Ann_16 "Max! I told you I don't want to talk about it. Now go mind your own business!"
 
 # game/dialogues/anntalk.rpy:495
 translate english ann_about_ann_secret1_ea6dbe8b:
 
     # Max_08 "Ну а тётя может мне рассказать об этом?"
-    Max_08 ""
+    Max_08 "Well, can Aunt Kira tell me about it herself?"
 
 # game/dialogues/anntalk.rpy:496
 translate english ann_about_ann_secret1_e3577307:
 
     # Ann_17 "Нет, Макс. Это тебя не касается и я не хочу возвращаться к этой теме!"
-    Ann_17 ""
+    Ann_17 "No, Max, it doesn't concern you!"
 
 # game/dialogues/anntalk.rpy:497
 translate english ann_about_ann_secret1_150383db:
 
     # Max_11 "Я понял..."
-    Max_11 ""
+    Max_11 "Alright, I get it..."
 
 # game/dialogues/anntalk.rpy:515
 translate english ann_yoga_with_max0_213e7a1d:
 
     # Ann_05 "Ты решил заняться йогой? Вот это да, Макс! Не ожидала! Но я буду рада твоей компании... Прямо сейчас планируешь начать?"
-    Ann_05 ""
+    Ann_05 "Have you decided to take up yoga? Wow, Max! I didn't expect that. But I'd love your company... Are you planning to start right now?"
 
 # game/dialogues/anntalk.rpy:516
 translate english ann_yoga_with_max0_f662b5b1:
 
     # Max_01 "Не совсем. Мы просто очень мало времени вместе проводим, вот я и решил присоединиться."
-    Max_01 ""
+    Max_01 "Not really. We just spend very little time together, so I decided to join in."
 
 # game/dialogues/anntalk.rpy:517
 translate english ann_yoga_with_max0_9e833fb7:
 
     # Ann_14 "Да, знаю сынок. Я бы и сама хотела проводить со всеми вами больше времени..."
-    Ann_14 ""
+    Ann_14 "Yes, I know, Son. I do wish I could spend more time with you all..."
 
 # game/dialogues/anntalk.rpy:518
 translate english ann_yoga_with_max0_46fe20f5:
 
     # Max_03 "Знаешь, я бы сначала просто посмотрел, что ты делаешь. Ну и может, помог чем. Расскажешь мне об этой йоге?"
-    Max_03 ""
+    Max_03 "Maybe I should start by just watching. Then maybe I can help little bit. Will you tell me about this yoga thing?"
 
 # game/dialogues/anntalk.rpy:524
 translate english ann_yoga_with_max0_1c28cd86:
 
     # Ann_04 "Вообще-то не очень удобно, выполнять упражнения и одновременно говорить. Но так уж и быть, сегодня я сделаю исключение."
-    Ann_04 ""
+    Ann_04 "It's not very wise to exercise and talk at the same time. But I'm going to make an exception today."
 
 # game/dialogues/anntalk.rpy:525
 translate english ann_yoga_with_max0_c0042528:
 
     # Max_07 "Тебе не больно так делать?"
-    Max_07 ""
+    Max_07 "Doesn't that hurt?"
 
 # game/dialogues/anntalk.rpy:526
 translate english ann_yoga_with_max0_210d2429:
 
     # Ann_06 "Когда-то было, когда я только начинала это осваивать. Когда Алиса появилась на свет... Ох, как это было давно!"
-    Ann_06 ""
+    Ann_06 "When I was first starting out it did, around the time I had Alice... Oh, that was so long ago!"
 
 # game/dialogues/anntalk.rpy:527
 translate english ann_yoga_with_max0_0ff8c00d:
 
     # Max_09 "Так в чём суть?"
-    Max_09 ""
+    Max_09 "So what does it do?"
 
 # game/dialogues/anntalk.rpy:533
 translate english ann_yoga_with_max0_f3131795:
 
     # Ann_07 "Ну, для начала, то что я делаю нельзя назвать йогой. Это скорее растяжка, в которой есть некоторые позы из упражнений по йоге."
-    Ann_07 ""
+    Ann_07 "Well, for starters, I wouldn't call what I do yoga. It's more of a stretching exercise that has some yoga poses in it."
 
 # game/dialogues/anntalk.rpy:534
 translate english ann_yoga_with_max0_38d1697c:
 
     # Max_04 "Для укрепления здоровья?"
-    Max_04 ""
+    Max_04 "For better health?"
 
 # game/dialogues/anntalk.rpy:535
 translate english ann_yoga_with_max0_66fd055f:
 
     # Ann_08 "Да. Здесь тебе и развитие гибкости, и оздоровление организма в целом, а так же выносливость и умиротворение. В моём возрасте это всё имеет очень важное значение, сынок."
-    Ann_08 ""
+    Ann_08 "Yes. It's all about flexibility and overall health, as well as stamina and peace of mind. At my age, this is all very important."
 
 # game/dialogues/anntalk.rpy:536
 translate english ann_yoga_with_max0_873d6aa0:
 
     # Max_05 "Да ты выглядишь получше многих старшеклассниц, мам!"
-    Max_05 ""
+    Max_05 "You look better than girls half your age, Mom!"
 
 # game/dialogues/anntalk.rpy:537
 translate english ann_yoga_with_max0_5b94cd49:
 
     # Ann_05 "Спасибо, Макс! Приятно такое слышать. Значит, я не зря этим занимаюсь и это работает..."
-    Ann_05 ""
+    Ann_05 "Thank you, Max! That's good to hear. It means I'm not doing it for nothing, and it works..."
 
 # game/dialogues/anntalk.rpy:538
 translate english ann_yoga_with_max0_892ccf62:
 
     # Max_02 "Ещё как работает! Может, я чем-то могу помочь?"
-    Max_02 ""
+    Max_02 "It sure does! Is there anything I can do to help?"
 
 # game/dialogues/anntalk.rpy:543
 translate english ann_yoga_with_max0_4b285dc9:
 
     # Ann_02 "Тебе со стороны должно быть хорошо видно, всё ли я делаю правильно. У меня должна быть прямая спина и прямые ноги..."
-    Ann_02 ""
+    Ann_02 "You should be able check if I'm doing it right. I should have a straight back and straight legs..."
 
 # game/dialogues/anntalk.rpy:544
 translate english ann_yoga_with_max0_9ca4a1b0:
 
     # Max_01 "Ну да, почти. Разве что, ножки держи попрямее. Я тебя немножко придержу, чтобы ты лучше чувствовала, правильно ли всё делаешь..."
-    Max_01 ""
+    Max_01 "Yeah, almost. Keep your legs straight. I'm going to hold you up a little bit, so you can feel your form..."
 
 # game/dialogues/anntalk.rpy:545
 translate english ann_yoga_with_max0_f9d94bca:
 
     # Ann_06 "Ага, я поняла... Здесь важно правильно выстроить позу и просто дышать, стараясь максимально расслабиться."
-    Ann_06 ""
+    Ann_06 "Yeah, I feel it... It's important to strike the right pose and just breathe, trying to relax as much as possible."
 
 # game/dialogues/anntalk.rpy:546
 translate english ann_yoga_with_max0_d73509bb:
 
     # Max_09 "Сложно представить, что в таком положении можно расслабиться!"
-    Max_09 ""
+    Max_09 "It's hard to imagine relaxing in that position!"
 
 # game/dialogues/anntalk.rpy:547
 translate english ann_yoga_with_max0_277e783c:
 
     # Ann_07 "Это приходит со временем, Макс. Сам-то попробовать не хочешь?"
-    Ann_07 ""
+    Ann_07 "It comes with time, Max. Don't you want to try it yourself?"
 
 # game/dialogues/anntalk.rpy:548
 translate english ann_yoga_with_max0_a52325cd:
 
     # Max_07 "Пока что нет. Я лучше за тобой понаблюдаю и знаний наберусь сперва."
-    Max_07 ""
+    Max_07 "Not yet. I'd rather watch you and gain knowledge first."
 
 # game/dialogues/anntalk.rpy:553
 translate english ann_yoga_with_max0_d00039fe:
 
     # Ann_04 "Слегка придержи меня, чтобы я равновесие нашла... Только совсем легонько."
-    Ann_04 ""
+    Ann_04 "Hold me lightly so that I find my balance... Just very lightly."
 
 # game/dialogues/anntalk.rpy:554
 translate english ann_yoga_with_max0_4509bc5a:
 
     # Max_03 "Конечно. А ты на шпагат садишься?"
-    Max_03 ""
+    Max_03 "Sure. Can you do the splits?"
 
 # game/dialogues/anntalk.rpy:555
 translate english ann_yoga_with_max0_89cac39b:
 
     # Ann_13 "Ох, сынок, давно не пробовала. Честно говоря, побаиваюсь. Возраст всё-таки..."
-    Ann_13 ""
+    Ann_13 "Oh, it's been a long time since I tried it. Honestly, I'm afraid. My age, after all..."
 
 # game/dialogues/anntalk.rpy:556
 translate english ann_yoga_with_max0_57f1fb65:
 
     # Max_04 "По-моему ты очень гибкая! Выглядишь прекрасно! И не важно сколько тебе лет, главное - на сколько ты себя чувствуешь."
-    Max_04 ""
+    Max_04 "I think you are very flexible! You look great! And it doesn't matter how old you are, what matters is how good you feel."
 
 # game/dialogues/anntalk.rpy:557
 translate english ann_yoga_with_max0_d6b30cb1:
 
     # Ann_08 "Ой, ну всё, засмущал маму своими комплиментами. Пора заканчивать..."
-    Ann_08 ""
+    Ann_08 "Oh, that's it, you embarrassed my me with your compliments. It's time to finish..."
 
 # game/dialogues/anntalk.rpy:558
 translate english ann_yoga_with_max0_00253c29:
 
     # Max_05 "Хорошего понемножку, да?"
-    Max_05 ""
+    Max_05 "Don't want too much of a good thing, huh?"
 
 # game/dialogues/anntalk.rpy:564
 translate english ann_yoga_with_max0_ff65f9c4:
 
     # Ann_05 "Именно так, Макс. Спасибо за компанию, вместе куда веселее... Буду только рада, если решишь снова присоединиться ко мне."
-    Ann_05 ""
+    Ann_05 "That's right, Max. Thanks for the company, it's more fun together... I'd be delighted if you decide to join me again."
 
 # game/dialogues/anntalk.rpy:565
 translate english ann_yoga_with_max0_fb97042e:
 
     # Max_01 "Хорошо, мам. Это я с радостью!" nointeract
-    Max_01 "" nointeract
+    Max_01 "Okay, Mom. It's my pleasure!" nointeract
 
 # game/dialogues/anntalk.rpy:575
 translate english yoga_after_peeping_81dfb3e8:
 
     # Ann_17 "Макс, ты мне всё настроение испортил своим подглядыванием! Даже не думай отвлекать меня!"
-    Ann_17 ""
+    Ann_17 "Max, you've ruined the mood with your peeping! Don't even think about distracting me!"
 
 # game/dialogues/anntalk.rpy:577
 translate english yoga_after_peeping_81dfb3e8_1:
 
     # Ann_17 "Макс, ты мне всё настроение испортил своим подглядыванием! Даже не думай отвлекать меня!"
-    Ann_17 ""
+    Ann_17 "Max, you've ruined the mood with your peeping! Don't even think about distracting me!"
 
 # game/dialogues/anntalk.rpy:578
 translate english yoga_after_peeping_feb3cf15:
 
     # Max_09 "Значит за тобой с Эриком смотреть можно, а засмотреться, как ты принимаешь душ, нет?!"
-    Max_09 ""
+    Max_09 "So it's okay to watch you and Eric, but not to watch you take a shower?!"
 
 # game/dialogues/anntalk.rpy:579
 translate english yoga_after_peeping_aaccd9ee:
 
     # Ann_16 "Так, с Эриком - это совсем другое! Там это всё мы тебе показываем... для образовательных целей... А в душе или где-то ещё - это уже просто нахальство!"
-    Ann_16 ""
+    Ann_16 "Okay, with Eric, that's different! That's where we teach you... For educational purposes... But in the shower or anywhere else, that's just deviant!"
 
 # game/dialogues/anntalk.rpy:581
 translate english yoga_after_peeping_7d9027ce:
 
     # Max_11 "Ладно, понял..."
-    Max_11 ""
+    Max_11 "Okay, whatever..."
 
 # game/dialogues/anntalk.rpy:593
 translate english ann_yoga_with_maxr_6cc59cc4:
 
     # Ann_05 "Конечно, Макс, зачем спрашиваешь... Если ты ещё не созрел проверить свою гибкость, то просто смотри и помогай, если я попрошу. Ну и запоминай, что я делаю..." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Sure, Max, why do you ask... If you're not ready to test your flexibility, just watch and help me if I ask you to. And remember what I do..." nointeract
 
 # game/dialogues/anntalk.rpy:596
 translate english ann_yoga_with_maxr_77a6f27b:
 
     # Max_07 "Посмотри на себя! Какой ещё лишний вес?"
-    Max_07 ""
+    Max_07 "Look at you! What extra weight?"
 
 # game/dialogues/anntalk.rpy:597
 translate english ann_yoga_with_maxr_d6ccbb68:
 
     # Ann_04 "Вот потому я и выгляжу хорошо. И чувствую себя отлично, в тонусе, так сказать..."
-    Ann_04 ""
+    Ann_04 "That's why I look good. And I feel great, toned up, so to speak..."
 
 # game/dialogues/anntalk.rpy:598
 translate english ann_yoga_with_maxr_0e61fe75:
 
     # Max_09 "Ты хорошо выглядишь, потому что растяжкой занимаешься, а тело должно дышать."
-    Max_09 ""
+    Max_09 "You look good because you're stretching, but the body has to breathe."
 
 # game/dialogues/anntalk.rpy:599
 translate english ann_yoga_with_maxr_1b61bbd4:
 
     # Ann_01 "И что ты предлагаешь?"
-    Ann_01 ""
+    Ann_01 "What are you suggesting?"
 
 # game/dialogues/anntalk.rpy:600
 translate english ann_yoga_with_maxr_43739b05:
 
     # Max_02 "Нужно прикупить для тебя спортивную одежду полегче, вот что."
-    Max_02 ""
+    Max_02 "We need to get you some lighter sports clothes."
 
 # game/dialogues/anntalk.rpy:601
 translate english ann_yoga_with_maxr_308a3cfc:
 
     # Ann_02 "Ну... может ты и прав. Пожалуй, на выходных мы с Эриком съездим и что-нибудь присмотрим."
-    Ann_02 ""
+    Ann_02 "Well... maybe you're right. Maybe this weekend Eric and I will go out and see what we can find."
 
 # game/dialogues/anntalk.rpy:602
 translate english ann_yoga_with_maxr_b46819ec:
 
     # Max_07 "А давай я сам и за свои деньги?"
-    Max_07 ""
+    Max_07 "Why don't I do it myself, with my own money?"
 
 # game/dialogues/anntalk.rpy:603
 translate english ann_yoga_with_maxr_192c46c7:
 
     # Ann_13 "Сам? Ну не знаю, Макс... А тебе накопленных денег разве не жалко?"
-    Ann_13 ""
+    Ann_13 "By yourself? I don't know, Max... Don't you want to save your money?"
 
 # game/dialogues/anntalk.rpy:604
 translate english ann_yoga_with_maxr_00214c1a:
 
     # Max_03 "Для тебя, мам, ничего не жалко!"
-    Max_03 ""
+    Max_03 "For you, Mom, it'd be no trouble at all!"
 
 # game/dialogues/anntalk.rpy:605
 translate english ann_yoga_with_maxr_aeb9d0fe:
 
     # Ann_04 "Ну смотри, сынок... Я, конечно, рада твоему вниманию и заботе, но ты же понимаешь, что это должно быть что-то приличное и не слишком короткое?"
-    Ann_04 ""
+    Ann_04 "Well, look... Of course, I'm appreciate your attention and care, but you understand that it must be something decent, right?"
 
 # game/dialogues/anntalk.rpy:606
 translate english ann_yoga_with_maxr_f9ba225d:
 
     # Max_04 "Естественно. Ты будешь довольна!"
-    Max_04 ""
+    Max_04 "Naturally. You'll love it!"
 
 # game/dialogues/anntalk.rpy:607
 translate english ann_yoga_with_maxr_a4d4efa2:
 
     # Ann_12 "Надеюсь... Так, ты меня совсем заболтал разговорами своими. Давай уже делом заниматься..."
-    Ann_12 ""
+    Ann_12 "I hope... Well, you've kept me talking too much. Let's move on..."
 
 # game/dialogues/anntalk.rpy:608
 translate english ann_yoga_with_maxr_be09b23d:
 
     # Max_01 "Да, давай..."
-    Max_01 ""
+    Max_01 "Yes, let's..."
 
 # game/dialogues/anntalk.rpy:617
 translate english ann_yoga_with_maxr_dbbb3c5b:
 
     # Ann_02 "Я рада, что хоть так мы успеваем побыть вместе... Какие у тебя планы на день? Надеюсь, не за компьютером будешь всё время сидеть..."
-    Ann_02 ""
+    Ann_02 "I'm glad this let's us spend time together... What are your plans for the day? I hope you're not on the computer all the time..."
 
 # game/dialogues/anntalk.rpy:618
 translate english ann_yoga_with_maxr_c8a1933c:
 
     # Max_04 "Ага... Класс..."
-    Max_04 ""
+    Max_04 "Yeah... Of course not..."
 
 # game/dialogues/anntalk.rpy:619
 translate english ann_yoga_with_maxr_9dc43457:
 
     # Ann_12 "Это в смысле - да, будешь сидеть?"
-    Ann_12 ""
+    Ann_12 "What do you mean? Are you listening?"
 
 # game/dialogues/anntalk.rpy:620
 translate english ann_yoga_with_maxr_b6c184b0:
 
     # Max_03 "А, что? Я просто засмотрелся и немного прослушал, что ты говорила..."
-    Max_03 ""
+    Max_03 "what? Of course. Every word..."
 
 # game/dialogues/anntalk.rpy:626
 translate english ann_yoga_with_maxr_a8e83c1d:
 
     # Ann_04 "Макс, будь повнимательнее... Я ведь хочу, чтобы ты хоть чему-то научился от меня."
-    Ann_04 ""
+    Ann_04 "Max, pay attention... I want to teach you something."
 
 # game/dialogues/anntalk.rpy:627
 translate english ann_yoga_with_maxr_8e1d1dc1:
 
     # Max_02 "О, мам, поверь, я сейчас очень внимателен!"
-    Max_02 ""
+    Max_02 "Oh, Mom, believe me, I'm very attentive right now!"
 
 # game/dialogues/anntalk.rpy:628
 translate english ann_yoga_with_maxr_86c153f3:
 
     # Ann_06 "Тогда подержишь меня немножко, чтобы я всё правильно сделала?"
-    Ann_06 ""
+    Ann_06 "Then will you hold me steady so I can get it right?"
 
 # game/dialogues/anntalk.rpy:629
 translate english ann_yoga_with_maxr_6d56a825:
 
     # Max_01 "Да, мам. Сейчас..."
-    Max_01 ""
+    Max_01 "Yes, Mom. Now..."
 
 # game/dialogues/anntalk.rpy:634
 translate english ann_yoga_with_maxr_501f5751:
 
     # Max_05 "{i}( Она такая гибкая! Главное всё не испортить, хотя, как же хочется прикоснуться ко всему, что я перед собой сейчас вижу... Мама у меня конфетка! ){/i}"
-    Max_05 ""
+    Max_05 "{i}( She's so flexible! As much as I want to run my hands over everything in front of me, I'd better not! My mom's such a babe! ){/i}"
 
 # game/dialogues/anntalk.rpy:635
 translate english ann_yoga_with_maxr_7a9a0790:
 
     # Ann_08 "Макс, ты чего молчишь? Это мне говорить не очень удобно, потому что я стараюсь расслабиться и сосредоточиться на дыхании..."
-    Ann_08 ""
+    Ann_08 "Max, why aren't you talking? It's not very comfortable for me to say, because I'm trying to relax and focus on my breathing..."
 
 # game/dialogues/anntalk.rpy:636
 translate english ann_yoga_with_maxr_a322538b:
 
     # Max_03 "Да что тут скажешь, красота да и только!"
-    Max_03 ""
+    Max_03 "What can I say, it's beautiful!"
 
 # game/dialogues/anntalk.rpy:645
 translate english ann_yoga_with_maxr_f2360ace:
 
     # Ann_07 "Приятно каждый раз от тебя слышать, что я не зря этим занимаюсь... Это прекрасно мотивирует."
-    Ann_07 ""
+    Ann_07 "That's nice to hear... It's a great motivator."
 
 # game/dialogues/anntalk.rpy:646
 translate english ann_yoga_with_maxr_f49c0ca2:
 
     # Max_04 "Тебе явно эти занятия идут только на пользу. А чувствуешь себя как?"
-    Max_04 ""
+    Max_04 "Obviously, this exercise is perfect for you. How do you feel?"
 
 # game/dialogues/anntalk.rpy:647
 translate english ann_yoga_with_maxr_8fdf7ba4:
 
     # Ann_06 "Немного устала, но в целом, мне хорошо. Появляется такое ощущение... лёгкости..."
-    Ann_06 ""
+    Ann_06 "I'm a little tired, but overall, I feel good. Like I'm... Floating."
 
 # game/dialogues/anntalk.rpy:648
 translate english ann_yoga_with_maxr_6fd1e81a:
 
     # Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
-    Max_05 ""
+    Max_05 "That's great, Mom! Stretch a little more and it'll be perfect..."
 
 # game/dialogues/anntalk.rpy:649
 translate english ann_yoga_with_maxr_05a9f42c:
 
     # Ann_14 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе..."
-    Ann_14 ""
+    Ann_14 "It's just important that I don't strain myself... Otherwise I'll barely be alive at work..."
 
 # game/dialogues/anntalk.rpy:655
 translate english ann_yoga_with_maxr_df4f32db:
 
     # Ann_04 "Фух... На этом, пожалуй, закончим. Спасибо, что составил компанию. Буду только рада, если решишь снова присоединиться ко мне."
-    Ann_04 ""
+    Ann_04 "Whew... I think we're done here. Thank you for keeping me company. I'd be delighted if you decide to join me again."
 
 # game/dialogues/anntalk.rpy:656
 translate english ann_yoga_with_maxr_4e133757:
 
     # Max_01 "С радостью, мам! Обязательно..." nointeract
-    Max_01 "" nointeract
+    Max_01 "Gladly, Mom! I will..." nointeract
 
 # game/dialogues/anntalk.rpy:668
 translate english ann_gift_fit1_d73a8076:
 
     # Ann_06 "Для моих занятий по утрам? Спасибо, дорогой! Ждала с нетерпением, показывай..."
-    Ann_06 ""
+    Ann_06 "For my classes in the morning? Thank you, darling! I've been looking forward to it, show me...."
 
 # game/dialogues/anntalk.rpy:670
 translate english ann_gift_fit1_30ef2ee8:
 
     # Max_01 "Переодевайся... Хочу посмотреть, всё ли хорошо с размером."
-    Max_01 ""
+    Max_01 "Change your clothes... I want to see if the size is right."
 
 # game/dialogues/anntalk.rpy:671
 translate english ann_gift_fit1_4683888e:
 
     # Ann_04 "Хорошо. Подожди минутку за дверью. Я тебя позову..."
-    Ann_04 ""
+    Ann_04 "Okay. Wait outside the door for a minute. I'll call you..."
 
 # game/dialogues/anntalk.rpy:673
 translate english ann_gift_fit1_5a0a5cb4:
 
     # Max_01 "Пойдём, переоденешься... Хочу посмотреть, всё ли хорошо с размером."
-    Max_01 ""
+    Max_01 "Come on, let's go change... I want to see if my size is okay."
 
 # game/dialogues/anntalk.rpy:674
 translate english ann_gift_fit1_e6a81926:
 
     # Ann_04 "Хорошо. Пойдем в мою комнату. Я быстренько переоденусь, а ты подождёшь за дверью..."
-    Ann_04 ""
+    Ann_04 "All right. Let's go to my room. I'll change quickly, and you wait outside the door..."
 
 # game/dialogues/anntalk.rpy:683
 translate english ann_gift_fit1_62fb14c1:
 
     # Max_07 "{i}( Надеюсь, она не станет возмущаться, насколько там всё коротенькое в одежде... С другой стороны, эта одежда не короче её бикини. ){/i}"
-    Max_07 ""
+    Max_07 "{i}( I hope she doesn't mind how short her clothes are... On the other hand, those clothes are no shorter than her bikini. ){/i}"
 
 # game/dialogues/anntalk.rpy:684
 translate english ann_gift_fit1_dc4afcad:
 
     # Ann "{b}Анна:{/b} Сынок, с размером всё в порядке. Вроде, сидит отлично. Только вот..."
-    Ann ""
+    Ann "{b}Ann:{/b} Son, there's nothing wrong with the size. I think it fits perfectly. But..."
 
 # game/dialogues/anntalk.rpy:689
 translate english ann_gift_fit1_5783d83b:
 
     # Max_06 "Ого, мам! Тебе очень идёт! Выглядишь обалденно! Удобно?"
-    Max_06 ""
+    Max_06 "Wow, Mom! It looks great on you! You look amazing! Is it comfortable?"
 
 # game/dialogues/anntalk.rpy:690
 translate english ann_gift_fit1_417b9068:
 
     # Ann_14 "Да, Макс, удобно... Просто... Не слишком ли всё открыто?"
-    Ann_14 ""
+    Ann_14 "Yes, Max, it's just... Isn't it too open?"
 
 # game/dialogues/anntalk.rpy:691
 translate english ann_gift_fit1_00a839ef:
 
     # Max_07 "Так, а где что открыто? Главное, чтобы было легко и комфортно. Тут такое солнце, даже ранним утром, что эта одежда - идеальный вариант."
-    Max_07 ""
+    Max_07 "I don't know what you mean? All that matters is that it's easy to move around in. Especially with how sunny it get's, your skin will have plenty of room to breathe."
 
 # game/dialogues/anntalk.rpy:692
 translate english ann_gift_fit1_70a6e03b:
 
     # Ann_02 "Не могу не согласиться. Ладно, посмотрим, удобно ли будет в этой одежде заниматься..."
-    Ann_02 ""
+    Ann_02 "I couldn't agree more. Okay, let's see how it goes..."
 
 # game/dialogues/anntalk.rpy:693
 translate english ann_gift_fit1_f388be1a:
 
     # Max_04 "Я уверен, что будет..."
-    Max_04 ""
+    Max_04 "I'm sure it'll be fine..."
 
 # game/dialogues/anntalk.rpy:694
 translate english ann_gift_fit1_aad628a4:
 
     # Ann_05 "Спасибо, что делаешь маме приятно... Иди ко мне, я тебя обниму, как следует..."
-    Ann_05 ""
+    Ann_05 "Thank you for making your mother feel good... Come here..."
 
 # game/dialogues/anntalk.rpy:697
 translate english ann_gift_fit1_d619eeac:
 
     # Max_05 "{i}( О да... У мамы такое потрясающее тело! Так приятно прижиматься к ней... её упругой груди... Что точно хорошо в новой одежде, так это то, что мне прекрасно видны очертания её сосочков через эту тонкую ткань! ){/i}"
-    Max_05 ""
+    Max_05 "{i}( Oh yeah... Mom has such an amazing body! It feels so good to snuggle up to her... her firm breasts... What's so great about the new clothes is that I can see the outline of her nipples through the thin fabric! ){/i}"
 
 # game/dialogues/anntalk.rpy:700
 translate english ann_gift_fit1_0056777b:
 
     # Ann_04 "Ну всё, мой дорогой, не будем же мы так часами стоять обниматься, пора делами заняться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "That's it, my dear, we're not going to stand hugging for hours, come on..." nointeract
 
 # game/dialogues/anntalk.rpy:703
 translate english ann_gift_fit1_bad26272:
 
     # Ann_05 "Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-    Ann_05 ""
+    Ann_05 "You're so thoughtful, Max! I'll even kiss you on the cheek for that, as a reward..."
 
 # game/dialogues/anntalk.rpy:706
 translate english ann_gift_fit1_e19f9013:
 
     # Max_06 "{i}( Ухх, а как хочется притянуть маму к себе за её аппетитную и подтянутую попку... Ммм... Вот это было бы очень сладко! ){/i}"
-    Max_06 ""
+    Max_06 "{i}( Ugh, I just want to grab her ass and pull her toward me... Mmm... That would be sweet! ){/i}"
 
 # game/dialogues/anntalk.rpy:707
 translate english ann_gift_fit1_c5ca0730:
 
     # Ann_04 "Ну вот, дорогой. Теперь, давай заниматься своими делами..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "There you go, honey. Now, let's go..." nointeract
 
 # game/dialogues/anntalk.rpy:710
 translate english ann_gift_fit1_e41c68c6:
 
     # Ann_07 "И я тебя, Макс..."
-    Ann_07 ""
+    Ann_07 "You too, Max..."
 
 # game/dialogues/anntalk.rpy:712
 translate english ann_gift_fit1_8e40314a:
 
     # Ann_02 "Спасибо, сынок! И ты тоже..."
-    Ann_02 ""
+    Ann_02 "Thank you, Son! And you too..."
 
 # game/dialogues/anntalk.rpy:714
 translate english ann_gift_fit1_8e40314a_1:
 
     # Ann_02 "Спасибо, сынок! И ты тоже..."
-    Ann_02 ""
+    Ann_02 "Thank you, Son! And you too..."
 
 translate english strings:
 
     # game/dialogues/anntalk.rpy:593
     old "Тебе не жарко, мам?"
-    new ""
+    new "Don't you feel hot, Mom?"
 
     # game/dialogues/anntalk.rpy:593
     old "Продолжай, мам. Я весь во внимании..."
-    new ""
+    new "Go on, Mom. I'm all ears..."
 
     # game/dialogues/anntalk.rpy:678
     old "..."
-    new ""
+    new "..."
 
     # game/dialogues/anntalk.rpy:700
     old "Давай ещё?! Ты такая классная!"
-    new ""
+    new "Come again?! You're so cool!"
 
     # game/dialogues/anntalk.rpy:700
     old "Конечно, мам! Не скучай..."
-    new ""
-
+    new "Of course, Mom! Don't be bored..."
