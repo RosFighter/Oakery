@@ -66,7 +66,7 @@ label back_shoping:
 
         Ann_05 "Привет, Макс! Мы вернулись..."
         Max_04 "Рассказывайте, что купили?"
-        if poss['Swimsuit'].stn == 2:
+        if poss['Swimsuit'].st() == 2:
             $ poss['Swimsuit'].open(4)
             $ lisa.gifts.append('bikini')
             $ setting_clothes_by_conditions()
@@ -78,12 +78,12 @@ label back_shoping:
         else:
             Lisa_02 "Да так, вскую ерунду... Для нас, девочек. Тебе это не интересно..."
             Max_00 "Понятно..."
-        if poss['nightclub'].stn < 4:
+        if poss['nightclub'].st() < 4:
             Alice_07 "Ты забыла про самое главное, Лиза. Мне Эрик купил платье! Представляешь?!"
             Max_10 "Да, это чудесно..."
             Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
             Max_11 "Поздравляю..."
-            if poss['nightclub'].stn == 1:
+            if poss['nightclub'].st() == 1:
                 $ poss['nightclub'].open(2)
             else:
                 $ poss['nightclub'].open(3)

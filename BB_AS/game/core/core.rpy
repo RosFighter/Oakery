@@ -278,7 +278,7 @@ label NewDay:
         $ NightOfFun.remove('spider') # если ночная забава не состоялась, паука из списка забав удаляем - он сбежал
 
     if 0 < GetWeekday(prevday) < 6:
-        if poss['sg'].stn > 0 and not lisa.daily.homework:  # был разговор с Лизой по поводу наказаний и не помогал
+        if poss['sg'].st() > 0 and not lisa.daily.homework:  # был разговор с Лизой по поводу наказаний и не помогал
             $ punlisa.insert(0, [  # вставляем в начало
                 0,  # помощь Макса с д/з (0, 1, 2, 3, 4) (не помогал / допустил ошибку / неудачно попросил услугу / помог безвозмездно / помог за услугу)
                 0,  # получена двойка в школе (0, 1)
@@ -288,7 +288,7 @@ label NewDay:
                 ])
             $ del punlisa[10:]
 
-    if poss['smoke'].stn > 1:  # Макс видел курящую Алису
+    if poss['smoke'].st() > 1:  # Макс видел курящую Алису
         $ punalice.insert(0, [  # вставляем в начало
             0,  # Макс шантажировал Алису (1-передумал, 2-неудачно, 3-деньги, 4-перекур топлес, 5-лифчик, 6-трусики, 7-джинсы, 8-голая)
             0,  # Макс подставлял Алису
@@ -348,7 +348,8 @@ label Noon:
 
 
 label NewWeek:
-    $ kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
+    if 'kira' in chars:
+        $ kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
 
     if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0]):
         # отношения с Эриком по сёстрам определены
@@ -367,7 +368,7 @@ label NewWeek:
         wcv.countdown()
 
         for char in chars:
-            char.weekly.reset()
+            chars[char].weekly.reset()
 
         # еженедельное снижения влияния
         for char in infl:
@@ -965,8 +966,6 @@ label update_06_5:
             for char in chars:
                 chars[char].reinit()
 
-
-
     if _version < "0.06.4.07":
         python:
             if type(kira.dcv.photo)!=Daily:
@@ -974,4 +973,8 @@ label update_06_5:
                 if kira.dcv.feature.stage > 7:
                     kira.dcv.photo.stage = 2
 
+    if _version < "0.06.4.08":
+        if ann.flags.help>4:
+            $ items['fit1'].unblock()
+            $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     return

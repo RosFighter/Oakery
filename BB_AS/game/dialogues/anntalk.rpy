@@ -121,7 +121,7 @@ label ann_ask_money:
                     jump AfterWaiting
                 "Может я могу ещё что-то сделать?":
                     jump .work
-        "Ну, могу заказать продукты" if dcv.buyfood.done  and dcv.buyfood.stage in [0, 2]:
+        "Ну, могу заказать продукты" if dcv.buyfood.done and dcv.buyfood.stage in [0, 2]:
             $ dcv.buyfood.stage = 1
             $ mgg.ask(3)
             menu:
@@ -612,6 +612,8 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
             Ann_12 "Надеюсь... Так, ты меня совсем заболтал разговорами своими. Давай уже делом заниматься..."
             Max_01 "Да, давай..."
             #открывается возможность купить новую одежду для йоги
+            $ items['fit1'].unblock()
+            $ notify_list.append(_("В интернет-магазине доступен новый товар."))
         "Продолжай, мам. Я весь во внимании...":
             pass
 

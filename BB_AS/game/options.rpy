@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.4.07"
+define config.version = "0.06.4.08"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -219,16 +219,20 @@ init python:
     build.classify('game/extra/**.rpyc', 'extra')
     build.classify('game/tl/english/extra/**.rpyc', 'extra')
 
-    build.archive("img_fix", "all")
-    build.classify('game/images/Alice/clot/02.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02a.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02ia.webp', 'img_fix')
-    build.classify('game/images/Alice/clot/02iaa.webp', 'img_fix')
-    build.classify('game/images/**/bath-after-club/*.webp', 'img_fix')
-    build.classify('game/images/Kira/cams/sleep/**.webp', 'img_fix')
-    build.classify('game/images/Lisa/newsuit/**a.webp', 'img_fix')
-    build.classify('game/images/Lisa/newsuit/**b.webp', 'img_fix')
-    build.classify('game/images/Max/lessons-talk/01a.webp', 'img_fix')
+    # build.archive("img_fix", "all")
+    # build.classify('game/images/FG/Lisa_Olivia/2swim-01.webp', 'img_fix')
+    # build.classify('game/images/FG/Lisa_Olivia/2swim-02.webp', 'img_fix')
+    # build.classify('game/images/FG/Lisa_Olivia/2swim-03.webp', 'img_fix')
+    # build.classify('game/images/BG/char/Lisa_Olivia/2swim-01.webp', 'img_fix')
+    # build.classify('game/images/BG/char/Lisa_Olivia/2swim-02.webp', 'img_fix')
+    # build.classify('game/images/BG/char/Lisa_Olivia/2swim-03.webp', 'img_fix')
+    # build.classify('game/images/Olivia/icon.webp', 'img_fix')
+    # build.classify('game/images/Alice/clot/02iaa.webp', 'img_fix')
+    # build.classify('game/images/**/bath-after-club/*.webp', 'img_fix')
+    # build.classify('game/images/Kira/cams/sleep/**.webp', 'img_fix')
+    # build.classify('game/images/Lisa/newsuit/**a.webp', 'img_fix')
+    # build.classify('game/images/Lisa/newsuit/**b.webp', 'img_fix')
+    # build.classify('game/images/Max/lessons-talk/01a.webp', 'img_fix')
 
     build.archive("images", "all")
 

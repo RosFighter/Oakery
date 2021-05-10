@@ -1096,7 +1096,7 @@ label Lisa_HomeWork:
 
     menu:
         Lisa_02 "Отлично. В общем, мне нужно сделать вот это, это и вот то. Поможешь?"
-        "Без проблем!" if poss['sg'].stn == 2:
+        "Без проблем!" if poss['sg'].st() == 2:
             "{i}Спустя какое-то время...{/i}"
             Max_04 "Ну, вот мы и закончили!"
             Lisa_03 "Спасибо, Макс! Ты так меня выручил! Теперь я точно получу пятёрку!"
@@ -1105,15 +1105,15 @@ label Lisa_HomeWork:
             $ punlisa[0][0] = 3
             $ spent_time += max((60 - int(tm[-2:])), 40)
             jump Waiting
-        "Конечно! {i}(сделать ошибки){/i}" if poss['sg'].stn == 2:
+        "Конечно! {i}(сделать ошибки){/i}" if poss['sg'].st() == 2:
             jump .make_bag
-        "Ты пока отдохни, я сам всё сделаю!" if poss['sg'].stn == 2:
+        "Ты пока отдохни, я сам всё сделаю!" if poss['sg'].st() == 2:
             jump .self
-        "Ага... {i}(сделать ошибки){/i}" if poss['sg'].stn > 2:
+        "Ага... {i}(сделать ошибки){/i}" if poss['sg'].st() > 2:
             jump .make_bag
-        "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].stn > 2:
+        "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].st() > 2:
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].stn > 2, lisa.dress > 'a', lisa.flags.pun > 1, lisa.flags.m_foot<3]):
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].st() > 2, lisa.dress > 'a', lisa.flags.pun > 1, lisa.flags.m_foot<3]):
             $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
@@ -1235,7 +1235,7 @@ label Lisa_HomeWork:
             $ AttitudeChange('lisa', 0.8)
             Lisa_03 "О, супер! Макс! Ты такой молодец! Всё время меня выручаешь... Я бы сама долго возилась и, наверняка, ошибок бы наделала... Спасибо тебе!"
 
-            if poss['sg'].stn == 2:
+            if poss['sg'].st() == 2:
                 $ poss['sg'].stages[2].ps = _("А что если я не буду помогать Лизе какое-то время? Или несколько раз сделаю ошибку в её работе?")
 
         else:
@@ -1680,7 +1680,7 @@ label liza_hand_mass:
         "{i}закончить массаж{/i}":
             if _in_replay and not kissmas:
                 $ renpy.end_replay()
-    if ((not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].stn>7, lisa.flags.kiss_lesson>3, not lisa.stat.kiss]))
+    if ((not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].st()>7, lisa.flags.kiss_lesson>3, not lisa.stat.kiss]))
         or (_in_replay and kissmas)):
         ###если уроков поцелуев в этот день не было (уже было 3 успешных урока)
         # первый поцелуй после массажа рук
@@ -1730,7 +1730,7 @@ label liza_hand_mass:
         $ lisa.flags.kiss_lesson += 1
         $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
 
-    elif not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].stn>7, lisa.flags.kiss_lesson>3, lisa.stat.kiss>0, flags.stopkiss<2]):
+    elif not _in_replay and all([lisa.dcv.seduce.done, poss['seduction'].st()>7, lisa.flags.kiss_lesson>3, lisa.stat.kiss>0, flags.stopkiss<2]):
         # периодические поцелуи после массажа
         $ added_mem_var('kissing_massage')
         scene BG char Lisa massage-kisses-01
@@ -3391,7 +3391,7 @@ label lisa_advanced_kiss_lesson:
                                     $ add_lim('lisa.free', 0.1, 10)
                                     $ add_lim('lisa.ri', 0.1, 5)
 
-                            if lisa.flags.kiss_lesson >= 9 and poss['seduction'].stn < 11:
+                            if lisa.flags.kiss_lesson >= 9 and poss['seduction'].st() < 11:
                                 Lisa_02 "Макс, слушай, а чему ещё ты будешь меня учить? Может быть, мне стоит набраться каких-нибудь теоретических знаний или что-то вроде этого?"
                                 Max_02 "Конечно! У меня будет для тебя кое-что, но позже..."
                                 Max_07 "{i}( Хм... Любопытный намёк, вот только на что? Теории хочет? Может быть, какую-то книжку купить ей про секс и всё такое? ){/i}"
@@ -3514,7 +3514,7 @@ label MorningWoodCont2:
         Max_07 "А?! Кто озабоченный? Где?!"
         Lisa_01 "Да вот, прямо тут, передо мной валяется один, с торчащим из трусов членом..."
 
-        if poss['seduction'].stn<16:
+        if poss['seduction'].st()<16:
             Max_09 "Да я же говорил, это само так происходит... Естественный процесс!"   #если Лиза ещё не прочитала книгу сексуального образования или если до неё ещё не дошёл прогресс
             Lisa_03 "Ну да, очень удобно назвать это естественным процессом!"
             Max_07 "Лиза, ты чего меня разбудила-то?!"

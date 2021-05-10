@@ -110,7 +110,7 @@ label lisa_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if 1 <= len(lisa.sorry.give) < 4 or (poss['SoC'].stn<0 and _ch1.ch>600):
+            "{i}немного пошуметь{/i}" if 1 <= len(lisa.sorry.give) < 4 or (not poss['SoC'].used(0) and _ch1.ch>600):
                 jump .pinded
             "{i}немного пошуметь{/i}" if len(lisa.sorry.give) == 4:
                 jump .pinded
@@ -798,7 +798,7 @@ label lisa_bath:
             jump .end
 
     label .open_knock:
-        if poss['seduction'].stn < 31:
+        if poss['seduction'].st() < 31:
             $ __mood -= 50
             scene BG bath-open-00
             if GetRelMax('lisa')[0] < 0:
@@ -820,7 +820,7 @@ label lisa_bath:
             jump .end
 
     label .open:
-        if poss['seduction'].stn < 31:
+        if poss['seduction'].st() < 31:
             scene BG bath-open-00
             if GetRelMax('lisa')[0] < 0:
                 show Lisa bath-open 01
@@ -975,7 +975,7 @@ label lisa_romantic_movie_r:
     scene BG char Lisa horror-myroom 04
     $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
 
-    if poss['seduction'].stn>7 and lisa.dcv.special.stage == 3:
+    if poss['seduction'].st()>7 and lisa.dcv.special.stage == 3:
         #как только открываются уроки поцелуев с Лизой и посмотрели 3 раза романтику
         Lisa_10 "Макс, у тебя опять стоит! Ну сколько можно?"
         Max_01 "Фильмы такие! Что тут поделать..."

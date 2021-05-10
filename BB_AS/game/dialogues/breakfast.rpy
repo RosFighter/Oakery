@@ -580,7 +580,7 @@ label breakfast_4:
                 "Да я рад...":
                     pass
     Ann_05 "Вот и отлично! Хватит уже про Эрика, давайте обсудим что планируем купить.."
-    if poss['Swimsuit'].stn < 0:
+    if not poss['Swimsuit'].used(0):
         Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
         $ poss['Swimsuit'].open(1)
     else:
@@ -889,7 +889,7 @@ label breakfast_after_punishment:
         jump breakfast_12   # Аня рассказывает о вероятной свадьбе
     elif all([day>=18, GetWeekday(day)==6, flags.breakfast==12, flags.dinner==17]):
         jump breakfast_18   # первый завтрак с Кирой
-    elif all([GetWeekday(day)==2, kira.dcv.feature.stage in [6, 7], flags.breakfast==18, flags.dinner==17]):
+    elif 'kira' in chars and all([GetWeekday(day)==2, kira.dcv.feature.stage in [6, 7], flags.breakfast==18, flags.dinner==17]):
         jump breakfast_35   # первое упоминание Александры (через несколько дней после первой фотосессии с Кирой)
     else:
         jump typical_breakfast

@@ -3906,3 +3906,17 @@ translate deutsch strings:
     old "{i}не убирать руки{/i}"
     new "{i}Hände dort lassen{/i}"
 
+# TODO: Translation updated at 2021-05-10 11:18
+
+# game/events/alice.rpy:502
+translate deutsch alice_shower_dangerous_hugs_e3f63f1b:
+
+    # Alice_14 "Так, ну всё! У тебя три... ну максимум пять секунд, чтобы убрать руки. Иначе я тебе что-нибудь оторву!{p=5}{nw}"
+    Alice_14 "Gut, das reicht! Du hast drei... fünf Sekunden, höchstens, um deine Hände wegzunehmen. Sonst reiße ich dir etwas ab!{p=5}{nw}"
+
+# game/events/alice.rpy:508
+translate deutsch alice_shower_dangerous_hugs_11fdb519:
+
+    # extend "" nointeract
+    extend "" nointeract
+

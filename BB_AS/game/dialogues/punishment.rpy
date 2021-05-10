@@ -631,20 +631,19 @@ label punishment_alice:
         $ SetCamsGrow(house[5], 150 if newpunishment==1 else 250)
         $ _text = _("Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!")
 
-    if defend or alice.dcv.private.stage:  # Макс уже заступался
-        if alice.dcv.private.stage==2:
+    if defend or alice.dcv.private.stage<4:  # Макс уже заступался
+        if alice.dcv.private.stage==1:
+            # первый раз поговорили с Алисой о приватном наказании
+            Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
+            $ alice.dcv.private.stage = 2
+            $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
+        elif alice.dcv.private.stage==2:
             $ alice.dcv.private.set_lost(2)
         Ann_18 "[_text!t]"
     else:
         menu:  # У Макса есть шанс заступиться за Алису
             Ann_18 "[_text!t]"
             "{i}Заступиться за Алису {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}{/i}":
-                if alice.dcv.private.stage==1:
-                    # первый раз поговорили с Алисой о приватном наказании
-                    Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
-                    $ alice.dcv.private.stage = 2
-                    $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
-                else:
                     $ defend = True
                     Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
                     if "mgg" in pun_list:
@@ -659,7 +658,7 @@ label punishment_alice:
                             if alice.flags.defend >= 5:
                                 if not alice.dcv.private.enabled:
                                     Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
-                                $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
+                                $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 4))
 
                         $ punalice[0][2] = 2
                         $ alice.weekly.protected += 1

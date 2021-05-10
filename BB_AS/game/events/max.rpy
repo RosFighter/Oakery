@@ -201,7 +201,7 @@ label Box:
         Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..."
         "{i}закончить{/i}":
             pass
-        "{i}узнать подробнее о \"Возможностях\"{/i}":
+        "{i}узнать подробнее о \"Возможностях\"{/i}" if sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict]) < 2:
             call about_poss from _call_about_poss
     $ AvailableActions['unbox'].enabled = False
     $ AvailableActions['searchcam'].enabled = True
@@ -251,13 +251,13 @@ label Laptop:
 
     $ search_theme.clear()
 
-    if poss['cams'].stn == 1:
+    if poss['cams'].st() == 1:
         $ search_theme.append((_("{i}почитать о камерах{/i}"), 'about_cam'))
-    if poss['blog'].stn == 0:
+    if poss['blog'].st() == 0:
         $ search_theme.append((_("{i}читать о блогах{/i}"), 'about_blog'))
-    if poss['secretbook'].stn == 1:
+    if poss['secretbook'].st() == 1:
         $ search_theme.append((_("{i}узнать о книге Алисы{/i}"), 'about_secretbook'))
-    if poss['spider'].stn == 0:
+    if poss['spider'].st() == 0:
         $ search_theme.append((_("{i}читать о пауках{/i}"), 'about_spider'))
     if flags.credit == 1:
         $ search_theme.append((_("{i}искать информацию по кредитам{/i}"), 'about_credit'))
@@ -958,7 +958,7 @@ label need_money:
 
 
 label cheat_money:
-    if poss['cams'].stn < 4:
+    if poss['cams'].st() < 4:
         if all([
                 items['bikini'].InShop and not any([items['bikini'].have, items['bikini'].bought]),
                 items['dress'].InShop and not any([items['dress'].have, items['dress'].bought]),

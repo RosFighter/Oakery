@@ -278,11 +278,11 @@ screen LaptopScreen():
     use notify_check
 
     $ bookmarks = 2
-    if dcv.buyfood.stage in [1, 3]:
+    if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
         $ bookmarks += 1
-    if poss['cams'].stn == 3 and mgg.money >= 100:
+    if poss['cams'].st() == 3 and mgg.money >= 100:
         $ bookmarks += 1
-    if poss['cams'].stn >= 4:
+    if poss['cams'].st() >= 4:
         $ bookmarks += 1
     if mgg.credit.level > 0:
         $ bookmarks += 1
@@ -317,7 +317,7 @@ screen LaptopScreen():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action Jump('courses_start') at book_marks
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if dcv.buyfood.stage in [1, 3]:
+                    if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
                         frame xysize(370, 295) background None:
                             if mgg.money < 50:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
@@ -327,7 +327,7 @@ screen LaptopScreen():
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action Jump('buyfood') at book_marks
                                 text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if poss['cams'].stn == 3:
+                    if poss['cams'].st() == 3:
                         frame xysize(370, 295) background None:
                             if mgg.money < 100:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
@@ -337,7 +337,7 @@ screen LaptopScreen():
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop CreateSite' action Jump('create_site') at book_marks
                                 text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
 
-                    if poss['cams'].stn >= 4:
+                    if poss['cams'].st() >= 4:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop bb cam' action Jump('open_site') at book_marks
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
@@ -361,11 +361,11 @@ screen LaptopDouble():
     use notify_check
 
     $ bookmarks = 2
-    if dcv.buyfood.stage in [1, 3]:
+    if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
         $ bookmarks += 1
-    if poss['cams'].stn == 3 and mgg.money >= 100:
+    if poss['cams'].st() == 3 and mgg.money >= 100:
         $ bookmarks += 1
-    if poss['cams'].stn >= 4:
+    if poss['cams'].st() >= 4:
         $ bookmarks += 1
     if mgg.credit.level > 0:
         $ bookmarks += 1
@@ -403,17 +403,17 @@ screen LaptopDouble():
                         imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action NullAction()
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if dcv.buyfood.stage in [1, 3]:
+                    if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action NullAction()
                             text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
-                    if poss['cams'].stn == 3 and mgg.money >= 100:
+                    if poss['cams'].st() == 3 and mgg.money >= 100:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop CreateSite' action NullAction()
                             text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
 
-                    if poss['cams'].stn >= 4:
+                    if poss['cams'].st() >= 4:
                         frame xysize(370, 295) background None:
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop bb cam' action NullAction()
                             text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
@@ -1075,7 +1075,7 @@ screen room_navigation():
 
     # $ kol = 0
     # for ps in poss:
-    #     if poss[ps].stn >= 0: # количество открытых возможностей
+    #     if poss[ps].st() >= 0: # количество открытых возможностей
     #         $ kol += 1
     $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict]) # количество открытых возможностей
 
@@ -1202,7 +1202,12 @@ screen menu_opportunity():
     $ lst_stage = []
 
     if not CurPoss:
-        default CurPoss = 'cams'
+        if sum(poss['cams'].stages):
+            default CurPoss = 'cams'
+        elif sum(poss['secretbook'].stages):
+            default CurPoss = 'secretbook'
+        else:
+            default CurPoss = ''
 
     if CurPoss != '':
         $ lst_stage = [i for i, st in enumerate(poss[CurPoss].stages) if st]
@@ -1241,7 +1246,7 @@ screen menu_opportunity():
                         if poss_dict[CurPoss][1][view_stage].img != '':
                             add 'interface poss '+poss_dict[CurPoss][1][view_stage].img
                     frame xsize 1180 xalign 0.5 background None:
-                        text poss[CurPoss].name size 30 font 'hermes.ttf' xalign 0.5
+                        text poss_dict[CurPoss][0] size 30 font 'hermes.ttf' xalign 0.5
                     frame area (0, 0, 1190, 400) background None:
                         hbox:
                             viewport mousewheel 'change' draggable True id 'vp2':

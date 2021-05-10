@@ -13,21 +13,21 @@ label after_dinner:
     if len(punlisa)> 0 and (punlisa[0][3] == 1 or punlisa[0][2] > 1):
         # Лизу наказали
         if all([punlisa[0][0] == 1, len(punlisa) >= 7, ColumnSum(punlisa, 1, 7) == 2,
-                    poss['sg'].stn == 2, lisa.flags.truehelp>5]):
+                    poss['sg'].st() == 2, lisa.flags.truehelp>5]):
             # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
             call conversation_after_dinner(5) from _call_conversation_after_dinner_4
-        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].stn > 2]):
+        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].st() > 2]):
             # если Макс подставил Лизу и её подозрение достигло 100% (1000)
             call conversation_after_dinner(4) from _call_conversation_after_dinner
         elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done, not lisa.dcv.other.stage]):
             # если Макс не помогал Лизе 5 раз и разговора после ужина не было больше недели
-            if lisa.flags.help == 0 and poss['sg'].stn <= 2:
+            if lisa.flags.help == 0 and poss['sg'].st() <= 2:
                 # совсем не помогал
                 call conversation_after_dinner(1) from _call_conversation_after_dinner_1
-            elif poss['sg'].stn == 2:
+            elif poss['sg'].st() == 2:
                 # безвозмездно помогал, но перестал
                 call conversation_after_dinner(2) from _call_conversation_after_dinner_2
-            elif poss['sg'].stn > 2 and poss['seduction'].stn < 19:
+            elif poss['sg'].st() > 2 and poss['seduction'].st() < 19:
                 # обещал помогать за услуги, но не стал или перестал
                 call conversation_after_dinner(3) from _call_conversation_after_dinner_3
 
@@ -756,7 +756,7 @@ label dinner_lace_lingerie:
 label dinner:
     $ current_room = house[5]
     $ Distribution()
-    if poss['smoke'].stn == 0:
+    if poss['smoke'].st() == 0:
         jump talk_about_smoking
 
     jump StartPunishment

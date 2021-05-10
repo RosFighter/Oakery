@@ -629,7 +629,7 @@ init python:
         # двор
         if current_room == house[6]:
             AvailableActions['clearpool'].enabled = ('10:00' <= tm <= '16:00') and (len(current_room.cur_char) == 0)
-            AvailableActions['clearpool'].active = (dcv.clearpool.stage in [1, 3])
+            AvailableActions['clearpool'].active = (dcv.clearpool.stage in [1, 3] and dcv.clearpool.done))
             AvailableActions['catchspider'].active = ('10:00' <= tm < '12:00') and not items['spider'].have
 
 
@@ -742,7 +742,7 @@ init python:
                 if not ('09:00' <= tm < '20:00'):
                     inf += 'a'
             elif name == 'blog':
-                if (GetWeekday(day) in [1, 4, 5] and all(['black_linderie' in alice.gifts, poss['blog'].stn>4, alice.dcv.feature.done])
+                if (GetWeekday(day) in [1, 4, 5] and all(['black_linderie' in alice.gifts, poss['blog'].st()>4, alice.dcv.feature.done])
                     or (GetWeekday(day)==3 and alice.dcv.intrusion.enabled)):
                     # блог в нижнем белье
                     clot = 'lingerie'
@@ -1042,7 +1042,7 @@ init python:
         elif not lisa.dcv.punpause.done:
             return 0 # не прошёл откат рандомных наказаний
 
-        elif poss['sg'].stn == 2 and lisa.flags.truehelp>5:  # Макс на "хорошей" ветке и помог 6 и более раз
+        elif poss['sg'].st() == 2 and lisa.flags.truehelp>5:  # Макс на "хорошей" ветке и помог 6 и более раз
 
             s = 0
 

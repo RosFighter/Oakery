@@ -878,10 +878,14 @@ label alice_aboutbooks:
             pass
         "Неужели справочник по квантовой механике?":
             pass
-    Alice_01 "Думай, что хочешь, а я всё равно не скажу."
-    Max_00 "Ну и ладно!"
-    $ spent_time += 10
     $ poss['secretbook'].open(0)
+    menu:
+        Alice_01 "Думай, что хочешь, а я всё равно не скажу."
+        "Ну и ладно!":
+            pass
+        "{i}узнать подробнее о \"Возможностях\"{/i}" if sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict]) < 2:
+            call about_poss
+    $ spent_time += 10
     $ AvailableActions['searchbook'].enabled = True
     jump Waiting
 
@@ -3952,9 +3956,12 @@ label alice_about_private_punish:
     if tm> '19:00' and 1<GetWeekday(day)<5:
         #если приватное наказание выпадает на пн-пт
         Alice_13 "Макс, давай завтра! Днём, например. Когда мы дома одни остаёмся... Ну и всё, что выпадет на выходные дни, будем переносить на понедельник, хорошо?"
+        $ alice.dcv.private.set_lost(2)
     else:
         #если приватное наказание выпадает на сб-вс
         Alice_13 "Макс, давай теперь уже в понедельник днём! Когда мы дома одни остаёмся..."
+        $ alice.dcv.private.set_lost(2+GetWeekday(day)-5)
+
     Max_04 "Без проблем."
     Alice_16 "И смотри, если мне будет больно, то ты с фингалом ходить неделю будешь... Ясно?"
     Max_01 "Ага, не переживай."

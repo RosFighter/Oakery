@@ -3893,12 +3893,6 @@ translate english alice_shower_hug_428606a5_1:
     # Max_01 "Да. Не забуду..."
     Max_01 ""
 
-# game/events/alice.rpy:504
-translate english alice_shower_dangerous_hugs_de08c649:
-
-    # Alice_14 "Так, ну всё! У тебя три... ну максимум пять секунд, чтобы убрать руки. Иначе я тебе что-нибудь оторву!" nointeract
-    Alice_14 "" nointeract
-
 # game/events/alice.rpy:515
 translate english alice_shower_dangerous_hugs_8f49945b:
 
@@ -3992,3 +3986,17 @@ translate english strings:
     # game/events/alice.rpy:506
     old "{i}не убирать руки{/i}"
     new ""
+# TODO: Translation updated at 2021-05-10 11:19
+
+# game/events/alice.rpy:502
+translate english alice_shower_dangerous_hugs_e3f63f1b:
+
+    # Alice_14 "Так, ну всё! У тебя три... ну максимум пять секунд, чтобы убрать руки. Иначе я тебе что-нибудь оторву!{p=5}{nw}"
+    Alice_14 ""
+
+# game/events/alice.rpy:508
+translate english alice_shower_dangerous_hugs_11fdb519:
+
+    # extend "" nointeract
+    extend "" nointeract
+

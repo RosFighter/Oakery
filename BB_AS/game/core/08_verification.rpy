@@ -49,7 +49,7 @@ init python:
         elif all([GetWeekday(day)==6, day>=11, flags.dinner==6]):
             # вторая суббота с Эриком (фикс пропущенных)
             rez = True
-        elif all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)]):
+        elif all([GetWeekday(day)==6, poss['seduction'].st() in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)]):
             # начинается битва за Лизу, битва за Алису еще не началась или уже результат определился
             rez = True
         elif all([GetWeekday(day)==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done]):

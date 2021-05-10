@@ -348,7 +348,7 @@ label alice_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if 1 <= len(alice.sorry.give) < 4 or (poss['risk'].stn<0 and _ch1.ch>600):
+            "{i}немного пошуметь{/i}" if 1 <= len(alice.sorry.give) < 4 or (not poss['risk'].used(0) and _ch1.ch>600):
                 jump .pinded
             "{i}запустить паука к Алисе{/i}" if items['spider'].have:
                 jump .spider
@@ -494,17 +494,18 @@ label alice_shower:
         scene BG char Alice spider-bathroom-02
         $ renpy.show('Alice spider-shower 02-02'+mgg.dress)
         #spider-shower-02 + spider-shower-02-max-(02a/02b)-alice-02
-        $ ctd = Countdown(5, 'alice_shower.hands_off')
-        show screen countdown
-        # меню с таймером
+        $ ctd = Countdown(3, 'alice_shower.hands_off')
 
         # (на время c вариантами "убрать руки" и "не убирать руки")
         # варианты располагаем рандомно, чтобы отучить бездумно жать "1"
         $ renpy.block_rollback()
-        Alice_14 "Так, ну всё! У тебя три... ну максимум пять секунд, чтобы убрать руки. Иначе я тебе что-нибудь оторву!" nointeract
+        Alice_14 "Так, ну всё! У тебя три... ну максимум пять секунд, чтобы убрать руки. Иначе я тебе что-нибудь оторву!{p=5}{nw}"
         $ renpy.dynamic('dial')
         $ dial = [(_("{i}убрать руки{/i}"), 1), (_("{i}не убирать руки{/i}"), 0)]
         $ renpy.random.shuffle(dial)
+        # меню с таймером
+        show screen countdown
+        extend "" nointeract
         $ rez =  renpy.display_menu(dial)
         $ renpy.block_rollback()
         if rez:

@@ -492,7 +492,7 @@ label cam0_alice_read:
     if 'alice_read' not in cam_flag:
         $ cam_flag.append('alice_read')
         Max_07 "Так, Алиса просто читает. Не особо интересно."
-        if poss['secretbook'].stn > 2:
+        if poss['secretbook'].st() > 2:
             Max_09 "Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать..."
     return
 
@@ -574,8 +574,8 @@ label cam0_alice_rest_evening:
 
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
         if GetWeekday(day) in [0, 2]:
-            $ cam_flag.append('blog_fun' if all([RandomChance(500), poss['blog'].stn>1, 'kira' in chars]) else 'blog_no_fun')
-        elif all([GetWeekday(day) == 6, poss['blog'].stn>1, 'kira' in chars]):
+            $ cam_flag.append('blog_fun' if all([RandomChance(500), poss['blog'].st()>1, 'kira' in chars]) else 'blog_no_fun')
+        elif all([GetWeekday(day) == 6, poss['blog'].st()>1, 'kira' in chars]):
             $ cam_flag.append('blog_fun')
         else:
             $ cam_flag.append('blog_no_fun')
