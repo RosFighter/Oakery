@@ -629,7 +629,7 @@ init python:
         # двор
         if current_room == house[6]:
             AvailableActions['clearpool'].enabled = ('10:00' <= tm <= '16:00') and (len(current_room.cur_char) == 0)
-            AvailableActions['clearpool'].active = (dcv.clearpool.stage in [1, 3] and dcv.clearpool.done))
+            AvailableActions['clearpool'].active = (dcv.clearpool.stage in [1, 3] and dcv.clearpool.done)
             AvailableActions['catchspider'].active = ('10:00' <= tm < '12:00') and not items['spider'].have
 
 
