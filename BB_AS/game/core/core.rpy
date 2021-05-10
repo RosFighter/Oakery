@@ -364,9 +364,7 @@ label NewWeek:
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
-        for i in wcv:
-            if wcv[i].enabled and not wcv[i].done:
-                wcv[i].set_lost(wcv[i].lost-1)
+        wcv.countdown()
 
         for char in chars:
             char.weekly.reset()
@@ -857,7 +855,7 @@ label update_06_5:
                 kira.dcv.battle.stage   = talk_var.pop('fight_for_Kira', 0)
 
                 if kira.dcv.feature.stage > 7:
-                    kira.dcv.photo = 2
+                    kira.dcv.photo.stage = 2
 
             if 'eric' in chars:
                 eric.daily.sex_ed       = peeping.pop('ael_sexed', 0)
@@ -966,5 +964,14 @@ label update_06_5:
                 flags.cur_movies.append(0)
             for char in chars:
                 chars[char].reinit()
+
+
+
+    if _version < "0.06.4.07":
+        python:
+            if type(kira.dcv.photo)!=Daily:
+                kira.dcv.photo = Daily()
+                if kira.dcv.feature.stage > 7:
+                    kira.dcv.photo.stage = 2
 
     return

@@ -2487,7 +2487,6 @@ label massage_sunscreen:
         $ alice.flags.touched = True
         jump .end
 
-
     label .squeeze_chest:
         $ added_mem_var('squeeze_chest')
         #spider-sun-02 + spider-sun-02-max-(03/03a)-alice-03a
@@ -2495,13 +2494,14 @@ label massage_sunscreen:
         $ renpy.show('Alice spider-sun 02-03b'+mgg.dress)
         Alice_14 "Ты офигел что ли, Макс! Ну-ка руки быстро убери, пока не получил..."
         Max_07 "Шуму-то сколько... У тебя сиськи голые, вот я их и прикрыл! А то мало ли кто увидит..."
-        $ ctd = Countdown(5, 'massage_sunscreen.hands_off')
-        show screen countdown       # меню с таймером
+        $ ctd = Countdown(3, 'massage_sunscreen.hands_off')
         $ renpy.block_rollback()
-        Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо..." nointeract
+        Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо...{p=5}{nw}"
+        show screen countdown       # меню с таймером
         $ renpy.dynamic('dial')
-        $ dial = [(_("{i}убрать руки{/i}"), 1), (_("{i}не убирать руки{/i}"), 0)]   # (на время c вариантами "убрать руки" и "не убирать руки")
+        $ dial = [(_("{i}убрать руки{/i}"), 1), (_("{i}тискать дальше...{/i}"), 0)]   # (на время c вариантами "убрать руки" и "не убирать руки")
         $ renpy.random.shuffle(dial)    # варианты располагаем рандомно, чтобы отучить бездумно жать "1"
+        extend "" nointeract
         $ rez =  renpy.display_menu(dial)
         $ renpy.block_rollback()
         if rez:

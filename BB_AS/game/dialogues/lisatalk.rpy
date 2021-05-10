@@ -1470,6 +1470,9 @@ label Lisa_HomeWork:
             $ punlisa[0][0] = 3
         "{i}Спустя какое-то время...{/i}"
         Max_03 "Всё, Лиза, я закончил!"
+        hide Max
+        $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
+        $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
         Lisa_01 "Спасибо, Макс! Ты так меня выручил! Если конечно там всё правильно, что я сейчас и проверю..."
         Max_02 "Может я сделаю тебе массаж ног, пока ты проверяешь? Тебе станет легче..."
         jump .new_massage
