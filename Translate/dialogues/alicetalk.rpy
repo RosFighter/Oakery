@@ -9824,3 +9824,37 @@ translate english strings:
     old "{i}массировать ещё выше{/i} (навык массажа)"
     new ""
 
+# TODO: Translation updated at 2021-05-10 11:19
+
+# game/dialogues/alicetalk.rpy:2499
+translate english massage_sunscreen_squeeze_chest_1c5bed82:
+
+    # Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо...{p=5}{nw}"
+    Alice_15 "What? Spiders or something?! If you don't take your hands off in five seconds, you're gonna regret it...{p=5}{nw}"
+
+# game/dialogues/alicetalk.rpy:2504
+translate english massage_sunscreen_squeeze_chest_11fdb519:
+
+    # extend "" nointeract
+    extend "" nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:2502
+    old "{i}тискать дальше...{/i}"
+    new ""
+
+# TODO: Translation updated at 2021-05-10 23:57
+
+# game/dialogues/alicetalk.rpy:882
+translate english alice_aboutbooks_2eac1a27:
+
+    # Alice_01 "Думай, что хочешь, а я всё равно не скажу." nointeract
+    Alice_01 "Think what you want, I won't tell." nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:882
+    old "Ну и ладно!"
+    new "Fine!"
+
