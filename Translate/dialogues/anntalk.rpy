@@ -1499,3 +1499,4 @@ translate english strings:
     # game/dialogues/anntalk.rpy:700
     old "Конечно, мам! Не скучай..."
     new "Of course, Mom! Don't be bored..."
+    

@@ -1337,3 +1337,4 @@ translate english strings:
     # game/events/olivia.rpy:606
     old "{i}идти в свою комнату{/i}"
     new "{i}Go to your room{i}"
+
