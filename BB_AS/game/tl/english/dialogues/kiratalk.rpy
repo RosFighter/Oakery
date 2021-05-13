@@ -2144,473 +2144,472 @@ translate english first_photoset_set11_9c4f2555:
 translate english first_photoset_set6_9af80df1:
 
     # Kira_04 "Если я обопрусь на стол вот так, слегка поддразнивая своей грудью, получится неплохой снимок, как мне кажется..."
-    Kira_04 ""
+    Kira_04 "If I lean on the table like this, slightly teasing my breasts, I think it would make a pretty good picture..."
 
 # game/dialogues/kiratalk.rpy:569
 translate english first_photoset_set11_be14bc45:
 
     # Max_22 "Вау! Такое нужно обязательно заснять... Ох, как же классно ты сосёшь... {p=1.5}{nw}"
-    Max_22 ""
+    Max_22 "Wow! You should totally film that... Oh, that's great...{p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:625
 translate english kira_about_photo1_acc5470d:
 
     # Max_19 "{i}( Интересно, когда будет следующая фотосессия? Мне уже не терпится перейти на новый уровень близости с тётей! Вот я бы её хорошенько... ){/i}"
-    Max_19 ""
+    Max_19 "{i}( I wonder what she's planning for the next shoot? This is becoming a great arrangement, I can't wait to get closer to my Aunt! ){/i}"
 
 # game/dialogues/kiratalk.rpy:978
 translate english kira_about_ann_secret0_7e3447c7:
 
     # Kira_14 "Да я поговорила с ней, Макс... Просто... Даже не знаю, что тут можно сделать."
-    Kira_14 ""
+    Kira_14 "Yeah, I talked to her, Max... It's just... I don't know what to do here."
 
 # game/dialogues/kiratalk.rpy:979
 translate english kira_about_ann_secret0_38f9df67:
 
     # Max_09 "Как что?! Нужно показать ей, что на самом деле Эрик за тип! Ну... я так думаю..."
-    Max_09 ""
+    Max_09 "What?! We have to show her what kind of guy Eric really is!"
 
 # game/dialogues/kiratalk.rpy:980
 translate english kira_about_ann_secret0_11df571a:
 
     # Kira_01 "Тут всё несколько сложнее, чем ты думаешь. А почему ты не допускаешь, что твоя мама могла просто влюбится в Эрика? Ты же знаешь, любовь слепа, и не такое бывает..."
-    Kira_01 ""
+    Kira_01 "It's a little more complicated than you think. Why don't you think it's possible that your mother might have fallen in love with Eric? You know, love is blind, and it happens..."
 
 # game/dialogues/kiratalk.rpy:981
 translate english kira_about_ann_secret0_d4376736:
 
     # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но они с Эриком обучают Лизу, как доставлять удовольствие мужчине!"
-    Max_07 ""
+    Max_07 "She does things that, before Eric, she never would have done! You probably don't know this, but she and Eric are teaching Lisa how to please a man!"
 
 # game/dialogues/kiratalk.rpy:982
 translate english kira_about_ann_secret0_3da98396:
 
     # Kira_13 "О как! Этого я действительно не знала... Может быть, оно и правильно?"
-    Kira_13 ""
+    Kira_13 "Oh, boy! I really didn't know that... Maybe that's the right thing to do?"
 
 # game/dialogues/kiratalk.rpy:983
 translate english kira_about_ann_secret0_6f1f83f6:
 
     # Max_10 "Мама дрочит Эрику по всякому, прямо у Лизы на глазах! Ты как, начинаешь осознавать масштаб того, как мама изменилась?"
-    Max_10 ""
+    Max_10 "Mom is jerking off to Eric right in front of Lisa! Are you starting to realize the extent of how much Mom has changed?"
 
 # game/dialogues/kiratalk.rpy:984
 translate english kira_about_ann_secret0_a81f26a0:
 
     # Kira_15 "Подожди! Хочешь сказать они ей не просто рассказывают об этом, но и показывают на личном примере?"
-    Kira_15 ""
+    Kira_15 "Wait! You mean they're not just telling her about it?!"
 
 # game/dialogues/kiratalk.rpy:985
 translate english kira_about_ann_secret0_0176adba:
 
     # Max_15 "Да, тётя Кира, именно так. И я думаю, вопрос времени, когда мама начнёт отсасывать Эрику при ней! Или того хуже..."
-    Max_15 ""
+    Max_15 "Yes, Aunt Kira, that's right. And I think it's only a matter of time before Mom starts sucking Eric off in front of her! Or worse..."
 
 # game/dialogues/kiratalk.rpy:986
 translate english kira_about_ann_secret0_35b169a4:
 
     # Kira_16 "С этим нужно срочно что-то делать..."
-    Kira_16 ""
+    Kira_16 "Something needs to be done..."
 
 # game/dialogues/kiratalk.rpy:987
 translate english kira_about_ann_secret0_5ae91ac3:
 
     # Max_09 "А я о чём! Я не понимаю, почему она на такое соглашается... Понятно, что она не инициатор этого, но тем не менее, она всё это поддерживает!"
-    Max_09 ""
+    Max_09 "That's what I mean! I don't understand why she agrees to this... It's clear that she didn't initiate it, but still, she supports it all!"
 
 # game/dialogues/kiratalk.rpy:988
 translate english kira_about_ann_secret0_327cdcef:
 
     # Kira_13 "Ты прав, тут дело не только в Эрике... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
-    Kira_13 ""
+    Kira_13 "You're right, it's not just Eric... I can guess what's wrong with your mom. But it's a big secret between me and her, or rather her secret. And I'm not sure I can tell you..."
 
 # game/dialogues/kiratalk.rpy:989
 translate english kira_about_ann_secret0_881c3cb4:
 
     # Max_07 "О чём? Что за секрет?"
-    Max_07 ""
+    Max_07 "About what? What's the secret?"
 
 # game/dialogues/kiratalk.rpy:990
 translate english kira_about_ann_secret0_ab0718b9:
 
     # Kira_14 "Поговори с мамой, спроси про случай из детства. Если она разрешит, я расскажу. А может быть, она и сама всё объяснит..."
-    Kira_14 ""
+    Kira_14 "Talk to your mother, ask about an incident from her childhood. If she says it's okay, I'll tell you. Or maybe she'll explain it herself..."
 
 # game/dialogues/kiratalk.rpy:991
 translate english kira_about_ann_secret0_12d0c7ef:
 
     # Max_08 "Ладно, попробую."
-    Max_08 ""
+    Max_08 "Okay, I'll give it a try."
 
 # game/dialogues/kiratalk.rpy:1003
 translate english kira_about_ann_secret2_ac685536:
 
     # Kira_14 "Я так понимаю, мама тебе ничего не рассказала? Значит, не хочет, чтобы кто-то об этом что-то знал. А значит, я ничем не могу тебе помочь..." nointeract
-    Kira_14 "" nointeract
+    Kira_14 "I take it Mom didn't tell you anything? It means she doesn't want anyone to know anything about it. Which means there's nothing I can do for you..." nointeract
 
 # game/dialogues/kiratalk.rpy:1013
 translate english kira_about_ann_secret2_failed_f2f10ce3:
 
     # Kira_13 "Я это понимаю, Макс. Но это также и частная жизнь и история твоей мамы... Я не могу в обход её запрета раскрыть эту тайну."
-    Kira_13 ""
+    Kira_13 "I understand that, Max. But it's also your mother's private life and history... I can't betray that."
 
 # game/dialogues/kiratalk.rpy:1014
 translate english kira_about_ann_secret2_failed_f936ff3c:
 
     # Max_11 "Ясно..."
-    Max_11 ""
+    Max_11 "I see..."
 
 # game/dialogues/kiratalk.rpy:1025
 translate english kira_about_ann_secret_r_39f028b6:
 
     # Kira_14 "Макс, твоя мама не хочет, чтобы кто-то об этом что-то знал. На это есть причины и я не хочу подорвать её, и без того довольно шаткое, доверие ко мне..." nointeract
-    Kira_14 "" nointeract
+    Kira_14 "Max, your mom doesn't want anyone to know anything about this. There are reasons for that, and I don't want to betray her trust..." nointeract
 
 # game/dialogues/kiratalk.rpy:1037
 translate english story_from_childhood_ann_37f146bb:
 
     # Kira_03 "Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
-    Kira_03 ""
+    Kira_03 "You're not going to let it go, are you? Just keep in mind, if you mention it to anyone or your mother herself, they will lose trust in you."
 
 # game/dialogues/kiratalk.rpy:1038
 translate english story_from_childhood_ann_9b09dcde:
 
     # Max_07 "Конечно. Рассказывай!"
-    Max_07 ""
+    Max_07 "Of course. I know!"
 
 # game/dialogues/kiratalk.rpy:1040
 translate english story_from_childhood_ann_d4fc0814:
 
     # Kira_01 "Наверняка, тебе мама рассказывала, что когда мы были совсем юные, мы жили в небольшом городке, где все друг друга знали. Двери не закрывали, не было никакой сигнализации, ничего."
-    Kira_01 ""
+    Kira_01 "Surely your mother told you that when we were very young, we lived in a small town where everyone knew each other. They didn't lock the doors, there were no alarms, nothing."
 
 # game/dialogues/kiratalk.rpy:1041
 translate english story_from_childhood_ann_2946f7b5:
 
     # Max_09 "Что-то такое было..."
-    Max_09 ""
+    Max_09 "There was something like that..."
 
 # game/dialogues/kiratalk.rpy:1042
 translate english story_from_childhood_ann_3d8e4e72:
 
     # Kira_14 "В общем, жили в безопасности и можно сказать полной идиллии... Пока не произошёл тот случай, о котором твоя мама и не хочет вспоминать..."
-    Kira_14 ""
+    Kira_14 "In general, they lived in safety... Until the incident happened..."
 
 # game/dialogues/kiratalk.rpy:1043
 translate english story_from_childhood_ann_d7ab20c8:
 
     # Max_08 "Слушаю внимательно..."
-    Max_08 ""
+    Max_08 "I'm listening carefully..."
 
 # game/dialogues/kiratalk.rpy:1044
 translate english story_from_childhood_ann_7eb89e3f:
 
     # Kira_13 "Однажды вечером мы с Аней заигрались на опушке леса и когда собрались возвращаться домой, к нам подошёл мужчина. Предложил нам воду... А нас как раз мучила жажда..."
-    Kira_13 ""
+    Kira_13 "One evening, Ann and I were playing at the edge of the forest, and as we were getting ready to go home, a man came up to us. He offered us water... And we were so thirsty..."
 
 # game/dialogues/kiratalk.rpy:1045
 translate english story_from_childhood_ann_0367db1f:
 
     # Max_10 "Звучит как не очень хорошее начало..."
-    Max_10 ""
+    Max_10 "That doesn't sound like a very good start..."
 
 # game/dialogues/kiratalk.rpy:1046
 translate english story_from_childhood_ann_2aea0d90:
 
     # Kira_15 "Так и было. Очнулись мы в каком-то подвале, обе связанные. Представляешь, как мы перепугались! Я до сих пор иногда просыпаюсь в холодном поту..."
-    Kira_15 ""
+    Kira_15 "We woke up in a dark basement, tied up. Can you imagine how scared we were? I still wake up in a cold sweat sometimes..."
 
 # game/dialogues/kiratalk.rpy:1047
 translate english story_from_childhood_ann_98fdbce9:
 
     # Max_08 "Ого! И что дальше?"
-    Max_08 ""
+    Max_08 "Whoa! What happened next?"
 
 # game/dialogues/kiratalk.rpy:1048
 translate english story_from_childhood_ann_86924c02:
 
     # Kira_13 "Мне повезло, верёвки на руках не слишком туго были затянуты и я смогла освободиться. Затем, попыталась развязать сестрёнку, но услышала шаги и вылезла в малюсенькое окошко под потолком..." nointeract
-    Kira_13 "" nointeract
+    Kira_13 "I was lucky, the ropes weren't tight enough and I was able to free myself. Then I tried to untie my sister, but I heard footsteps and climbed out the tiny window under the ceiling..." nointeract
 
 # game/dialogues/kiratalk.rpy:1051
 translate english story_from_childhood_ann_4e458508:
 
     # Kira_03 "Макс, ну я была маленькая, напуганная, а там кто-то шёл. Я подумала, что лучше позову кого-то взрослого на помощь, чем полезу обратно и меня снова поймают..."
-    Kira_03 ""
+    Kira_03 "I was little and scared, and there was someone walking. I thought I'd rather get an adult to help me than climb back up and get caught agai"
 
 # game/dialogues/kiratalk.rpy:1053
 translate english story_from_childhood_ann_2a672bb2:
 
     # Kira_03 "Конечно, я была жутко напугана и хотела помочь маме, но этот человек начал меня искать и я побежала. Думала, что позову кого-то на помощь, потому-что мне самой с ним не справиться..."
-    Kira_03 ""
+    Kira_03 "Of course, I was terribly frightened and wanted to help my mother, but the man started looking for me and I ran. I thought I was going to get help, because I couldn't deal with him by myself..."
 
 # game/dialogues/kiratalk.rpy:1054
 translate english story_from_childhood_ann_592f32a1:
 
     # Max_07 "Да, это разумно..."
-    Max_07 ""
+    Max_07 "Yes, that makes sense..."
 
 # game/dialogues/kiratalk.rpy:1056
 translate english story_from_childhood_ann_4f8c7216:
 
     # Kira_15 "Конечно, я жутко испугалась и до сих пор себя виню, что оставила Аню там одну с этим мужиком..."
-    Kira_15 ""
+    Kira_15 "I was terrified and I still blame myself for leaving Anya there alone with that man..."
 
 # game/dialogues/kiratalk.rpy:1057
 translate english story_from_childhood_ann_b02cea58:
 
     # Max_08 "Ты позвала на помощь и всё было хорошо?"
-    Max_08 ""
+    Max_08 "You called for help and everything was okay?"
 
 # game/dialogues/kiratalk.rpy:1058
 translate english story_from_childhood_ann_fb6d98c5:
 
     # Kira_13 "Ну, не совсем. Я долго бродила по лесу одна, в темноте... Потом уснула и только к вечеру следующего дня я вышла на дорогу, где меня подобрали добрые люди."
-    Kira_13 ""
+    Kira_13 "Well, not really. I wandered alone in the woods in the dark for a long time... Then I fell asleep, it wasn't until the next day when people picked me up."
 
 # game/dialogues/kiratalk.rpy:1059
 translate english story_from_childhood_ann_90a4d5fe:
 
     # Max_07 "Повезло... А что потом?"
-    Max_07 ""
+    Max_07 "That was fortunate... Then what?"
 
 # game/dialogues/kiratalk.rpy:1060
 translate english story_from_childhood_ann_1a0e195b:
 
     # Kira_14 "Потом начались поиски. Аню вышли искать почти все жители нашего городка. Многие её знали и любили... Поиски продолжались почти неделю..."
-    Kira_14 ""
+    Kira_14 "Then the search began. Almost everyone in our town came out looking for Ann. Many people knew her and loved her... The search went on for almost a week..."
 
 # game/dialogues/kiratalk.rpy:1061
 translate english story_from_childhood_ann_8989f4f4:
 
     # Max_12 "Неделю?! Это же где-то недалеко от дома было?"
-    Max_12 ""
+    Max_12 "A week?! Didn't you wander close to home?"
 
 # game/dialogues/kiratalk.rpy:1062
 translate english story_from_childhood_ann_88f82231:
 
     # Kira_03 "К лесу мы ездили на велосипедах, так что, не очень близко. Да и ночью от того домика я не помню в какую сторону бежала... В общем, мы его нашли..."
-    Kira_03 ""
+    Kira_03 "We rode our bikes to the forest, so it wasn't very close. And at night I don't remember which way I ran from that cabin... Anyway, we finally found it..."
 
 # game/dialogues/kiratalk.rpy:1063
 translate english story_from_childhood_ann_6ac93aa0:
 
     # Max_09 "Того похитителя?"
-    Max_09 ""
+    Max_09 "That kidnapper?"
 
 # game/dialogues/kiratalk.rpy:1064
 translate english story_from_childhood_ann_b5813a73:
 
     # Kira_14 "Нет, тот домик, где её держали. К счастью, она была жива! Правда, ещё месяц от неё не могли услышать ни слова..."
-    Kira_14 ""
+    Kira_14 "No, the cabin where they kept her. Fortunately, she was alive! But she didn't speak for a month..."
 
 # game/dialogues/kiratalk.rpy:1065
 translate english story_from_childhood_ann_3c529246:
 
     # Max_07 "Но потом она заговорила?"
-    Max_07 ""
+    Max_07 "But then she started talking?"
 
 # game/dialogues/kiratalk.rpy:1066
 translate english story_from_childhood_ann_3fbb2f08:
 
     # Kira_15 "Да, но про тот случай она отказалась тогда говорить, да и сейчас, как видишь, не хочет. Никто не знает что там было, но её держали там больше недели. Скорее всего, издевались..."
-    Kira_15 ""
+    Kira_15 "Yes, but she refused to talk about it. No one knows what happened, but they kept her there for more than a week. They probably abused her..."
 
 # game/dialogues/kiratalk.rpy:1067
 translate english story_from_childhood_ann_ec2ba79c:
 
     # Max_14 "Это ужасно..."
-    Max_14 ""
+    Max_14 "This is terrible..."
 
 # game/dialogues/kiratalk.rpy:1068
 translate english story_from_childhood_ann_460d2f32:
 
     # Kira_13 "Не то слово. С тех пор твоя мама сильно изменилась. Хотя она и смогла вернуться к обычной жизни, что происходит не часто, но её как будто надломили..."
-    Kira_13 ""
+    Kira_13 "That's not the right word. Your mother has changed a lot since then. Although she was able to return to normal life, which doesn't happen often, it's as if she was broken..."
 
 # game/dialogues/kiratalk.rpy:1069
 translate english story_from_childhood_ann_b67dc203:
 
     # Max_09 "В каком смысле?"
-    Max_09 ""
+    Max_09 "In what way?"
 
 # game/dialogues/kiratalk.rpy:1070
 translate english story_from_childhood_ann_e6fa3b05:
 
     # Kira_01 "До того инцидента Аня была своевольной, капризной, непослушной. Она всеми командовала и не подчинялась никому, кроме нашей мамы, твоей бабушки..."
-    Kira_01 ""
+    Kira_01 "Before that incident she was willful, capricious, disobedient. She bossed everyone around and didn't obey anyone except our mother, your grandmother..."
 
 # game/dialogues/kiratalk.rpy:1071
 translate english story_from_childhood_ann_8812f1ba:
 
     # Max_07 "А после?"
-    Max_07 ""
+    Max_07 "And afterwards?"
 
 # game/dialogues/kiratalk.rpy:1072
 translate english story_from_childhood_ann_8cfbb2b1:
 
     # Kira_03 "А после... Мы как-то поссорились и я потребовала, чтобы она сделала за меня домашнюю работу... И представляешь, она покорно согласилась! Я тогда подумала, что просто повезло."
-    Kira_03 ""
+    Kira_03 "The strangest thing happened... We had an argument and I demanded that she do my homework for me... And she agreed! I thought I was just lucky."
 
 # game/dialogues/kiratalk.rpy:1073
 translate english story_from_childhood_ann_18445936:
 
     # Max_08 "Видимо, не в этом дело?"
-    Max_08 ""
+    Max_08 "I guess that's not it?"
 
 # game/dialogues/kiratalk.rpy:1074
 translate english story_from_childhood_ann_b52fe882:
 
     # Kira_07 "Да. Однажды, когда нашей мамы не было дома, мы позвали друзей на ночь, устроили вечеринку. Хорошо отдохнули, но на утро весь дом был вверх дном. И я потребовала, чтобы Аня прибралась сама..."
-    Kira_07 ""
+    Kira_07 "Yeah. One day when our mom wasn't home, we invited some friends over and had a party. We had a good time, but in the morning the whole house was upside down. So I demanded that Ann clean it up herself..."
 
 # game/dialogues/kiratalk.rpy:1075
 translate english story_from_childhood_ann_a96a39cd:
 
     # Max_07 "Видимо, она и прибралась?"
-    Max_07 ""
+    Max_07 "She did it all herself?"
 
 # game/dialogues/kiratalk.rpy:1076
 translate english story_from_childhood_ann_e30529a3:
 
     # Kira_13 "Именно! Представляешь? Вот тогда я и поняла, что она стала с радостью подчиняться чужой воле. Так что, я думаю, что тут дело не в вашем Эрике, а скорее, в самой маме..."
-    Kira_13 ""
+    Kira_13 "Exactly! Can you imagine? That's when I realized that she was happy to obey someone else's will. So I don't think it's Eric, but rather Mom herself..."
 
 # game/dialogues/kiratalk.rpy:1077
 translate english story_from_childhood_ann_65a2cc17:
 
     # Max_15 "Но Эрик всё равно козёл!"
-    Max_15 ""
+    Max_15 "But Eric is still an asshole!"
 
 # game/dialogues/kiratalk.rpy:1078
 translate english story_from_childhood_ann_0042f9c6:
 
     # Kira_04 "А кто спорит? Одно другому не мешает. Зато теперь ты лучше понимаешь, что творится в голове твоей мамы. Ну или как минимум, что-то разъяснилось, верно?"
-    Kira_04 ""
+    Kira_04 "I'm not arguing with that, they aren't mutually exclusive. At least now you know what's going on in your mother's head. Or at least something's cleared up, right?"
 
 # game/dialogues/kiratalk.rpy:1079
 translate english story_from_childhood_ann_c5bde529:
 
     # Max_07 "Значит, если я прикажу что-то, то она сделает?"
-    Max_07 ""
+    Max_07 "So if I order her to do something, she will?"
 
 # game/dialogues/kiratalk.rpy:1080
 translate english story_from_childhood_ann_5f8c8553:
 
     # Kira_05 "Что-то я сомневаюсь. Вы же её дети и к вам у неё особое отношение. К тому же, тут сильнее всего материнский инстинкт... Постой, а что ты собрался ей приказывать?"
-    Kira_05 ""
+    Kira_05 "I don't think so. You are her children and she has a special attitude toward you. Besides, it's the maternal instinct that's strongest here... Wait, what are you going to tell her?"
 
 # game/dialogues/kiratalk.rpy:1081
 translate english story_from_childhood_ann_cb1ca5b1:
 
     # Max_08 "Нет, нет, ничего..."
-    Max_08 ""
+    Max_08 "No, no, it's nothing."
 
 # game/dialogues/kiratalk.rpy:1082
 translate english story_from_childhood_ann_25af7870:
 
     # Kira_07 "Понятно. Ну, хотела бы я посмотреть, как ты пытаешься. Спорим, по заднице получишь в тот же момент!"
-    Kira_07 ""
+    Kira_07 "Well, I'd like to see you try. I bet you'd get your ass kicked!"
 
 # game/dialogues/kiratalk.rpy:1083
 translate english story_from_childhood_ann_d98db293:
 
     # Max_10 "Да, есть такое подозрение..."
-    Max_10 ""
+    Max_10 "Yes, probably..."
 
 # game/dialogues/kiratalk.rpy:1084
 translate english story_from_childhood_ann_630821d9:
 
     # Kira_02 "Кстати, нас в детстве тоже пороли. Правда, до гола не заставляли раздеваться. Видимо, это уже инициатива Эрика. Кстати, забавная инициатива и вроде даже эффективная..."
-    Kira_02 ""
+    Kira_02 "By the way, they spanked us when we were kids, too. They didn't make us strip naked, though. Apparently, that was Eric's initiative. By the way, it's a funny idea, and it seems to be effective..."
 
 # game/dialogues/kiratalk.rpy:1085
 translate english story_from_childhood_ann_ff307f55:
 
     # Max_11 "И это очень унизительно!"
-    Max_11 ""
+    Max_11 "And it's very humiliating!"
 
 # game/dialogues/kiratalk.rpy:1086
 translate english story_from_childhood_ann_9069ca5d:
 
     # Kira_05 "Да, да, я именно так и сказала. Ну это уже не моё дело. Как вас воспитывать будет решать ваша мама. Я могу лишь понаблюдать со стороны на всё это..."
-    Kira_05 ""
+    Kira_05 "Yes, yes, that's exactly what I said. Well, that's none of my business. How you're raised will be up to your mother. All I can do is watch from the sidelines..."
 
 # game/dialogues/kiratalk.rpy:1087
 translate english story_from_childhood_ann_14140d51:
 
     # Max_07 "Ясно. Ну, спасибо за историю. Теперь многое стало понятно!"
-    Max_07 ""
+    Max_07 "I see. Well, thanks for teling me. It makes a lot of sense now!"
 
 # game/dialogues/kiratalk.rpy:1088
 translate english story_from_childhood_ann_326f8304:
 
     # Kira_01 "Да не за что. Мне кажется, что ты должен знать. Может быть, теперь ты сможешь лучше понять свою маму и не будешь так резко реагировать на эти её отклонения..."
-    Kira_01 ""
+    Kira_01 "You're welcome. I feel like you should know. Maybe now you can understand your mom better and not react so strongly to these deviations of hers..."
 
 # game/dialogues/kiratalk.rpy:1089
 translate english story_from_childhood_ann_7c95cc62:
 
     # Max_09 "Это да, но с Эриком всё равно нужно что-то делать. Иначе он тут не на шутку разгуляется!"
-    Max_09 ""
+    Max_09 "That's true, but we still have to do something about Eric. Otherwise, he's going to go on a rampage!"
 
 # game/dialogues/kiratalk.rpy:1090
 translate english story_from_childhood_ann_ada1f3f2:
 
     # Kira_13 "В глазах твоей мамы, Эрик сейчас - идеальный мужчина! Сомневаюсь, что ты можешь что-то сделать, чтобы это изменить."
-    Kira_13 ""
+    Kira_13 "In your mother's eyes, Eric is the perfect man! I doubt there's anything you can do to change that."
 
 # game/dialogues/kiratalk.rpy:1091
 translate english story_from_childhood_ann_0451edb6:
 
     # Max_07 "Как думаешь, а если все будут против Эрика, то она начнёт в нём сомневаться?"
-    Max_07 ""
+    Max_07 "Do you think if everyone is against Eric, she would start to doubt him?"
 
 # game/dialogues/kiratalk.rpy:1092
 translate english story_from_childhood_ann_1d0ac909:
 
     # Kira_02 "Хороший вопрос, Макс. Может быть. А может и нет. Такое не предугадаешь... Но хорошо бы, чтобы она при этом достаточно доверительно относилась к тебе."
-    Kira_02 ""
+    Kira_02 "That's a good question, Max. Maybe. Maybe not. You never know... But it's a good thing that she trusts you."
 
 # game/dialogues/kiratalk.rpy:1093
 translate english story_from_childhood_ann_3d02dc28:
 
     # Max_10 "Вот только она столько времени проводит на работе и с Эриком..."
-    Max_10 ""
+    Max_10 "Except she spends so much time at work and with Eric..."
 
 # game/dialogues/kiratalk.rpy:1094
 translate english story_from_childhood_ann_ebdba48d:
 
     # Kira_07 "Она у нас ранняя пташка, так что придётся и тебе рано вставать, чтобы проводить с ней больше времени. Помоги ей с чем-нибудь..."
-    Kira_07 ""
+    Kira_07 "She's an early bird, so you have to get up early to spend more time with her. Help her with something..."
 
 # game/dialogues/kiratalk.rpy:1095
 translate english story_from_childhood_ann_bf43c03c:
 
     # Max_01 "Да, спасибо за совет!"
-    Max_01 ""
+    Max_01 "Yes, thanks for the advice!"
 
 # game/dialogues/kiratalk.rpy:1096
 translate english story_from_childhood_ann_e3cb39dd:
 
     # Max_09 "{i}( Если я буду проводить с мамой больше времени вместе, то может быть и от Эрика будет не так уж сложно избавиться?! Главное, не вести себя по идиотски с ней... И про сестёр нужно не забывать, хорошие и доверительные отношения с ними тоже могут мне помочь. По-моему, мама каждое утро занимается йогой. Пожалуй, стоит попробовать составить ей компанию... ){/i}"
-    Max_09 ""
+    Max_09 "{i}( If I spend more time with my mom, maybe it won't be so hard to get rid of Eric, either! I just need to be sensible... I can't forget my sisters either, a good relationship with them can help me too. I think Mom does yoga every morning. Maybe I should keep her company... ){/i}"
 
 translate english strings:
 
     # game/dialogues/kiratalk.rpy:1003
     old "Но это моя семья! \n{color=[ch1.col]}(Убеждение. Шанс: [ch1.vis]){/color}"
-    new ""
+    new "But this is my family! \n{color=[ch1.col]}(Persuasion. Chance: [ch1.vis]){/color}"
 
     # game/dialogues/kiratalk.rpy:1025
     old "Я же не из корыстных целей это спрашиваю! Я хочу ей помочь... \n{color=[ch1.col]}(Убеждение. Шанс: [ch1.vis]){/color}"
-    new ""
+    new "It's not like I've got an ulterior motive! I want to help her. {\n{color=[ch1.col]}(persuasion. Chance: [ch1.vis]){/color}"
 
     # game/dialogues/kiratalk.rpy:1048
     old "Так ты бросила там мою маму?"
-    new ""
+    new "So you left my mom there?"
 
     # game/dialogues/kiratalk.rpy:1048
     old "Тебе удалось сбежать?"
-    new ""
-
+    new "Did you manage to escape?"

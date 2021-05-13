@@ -106,7 +106,7 @@ translate deutsch ann_aboutpool_ddbab3e4:
 translate deutsch ann_talk_tv_3f2cda46:
 
     # Ann_00 "Да так, всё подряд. Садись рядом, если хочешь..." nointeract
-    Ann_00 "Es ist nichts. Du kannst dich neben mich setzen, wenn du willst..." nointeract
+    Ann_00 "Nichts besonderes. Du kannst dich gern zu mich setzen, wenn du willst..." nointeract
 
 # game/dialogues/anntalk.rpy:181
 translate deutsch ann_talk_tv_b9644c38:
@@ -124,7 +124,7 @@ translate deutsch ann_talk_tv_59854843:
 translate deutsch ann_talk_tv_31044bb9:
 
     # Ann_05 "Ну что, отличный фильм, как мне кажется! А тебе понравилось, Макс?" nointeract
-    Ann_05 "Ich meine, das war großartig! Was denkst du, Max?" nointeract
+    Ann_05 "Ich finde, dass der Film großartig war! Hat es dir gefallen, Max?" nointeract
 
 # game/dialogues/anntalk.rpy:194
 translate deutsch ann_talk_tv_3bc2ea57:

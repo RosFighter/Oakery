@@ -96,7 +96,7 @@ translate deutsch strings:
 
     # game/core/core.rpy:547
     old "{i}не сейчас{/i}"
-    new "{i}jettz nicht{/i}"
+    new "{i}jetzt nicht{/i}"
 
     # game/core/core.rpy:677
     old "А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!"

@@ -196,7 +196,7 @@ define talks = {
     'l.olivia_3' : TalkTheme('lisa', _("Ну так, что там с трусиками Оливии?"), 'about_olivia_3', "all([lisa.flags.crush==9, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
     'l.olivia_4' : TalkTheme('lisa', _("Ты позвала Оливию к нам?"), 'about_olivia_4', "all([lisa.flags.kiss_lesson, lisa.flags.crush==10, lisa.dcv.feature.done, GetWeekday(day)!=3])", 1),
     'l_ab_alex4' : TalkTheme('lisa', _("Ну как, получилось рассказать всё Оливии?"), 'about_alex4', "all([lisa.flags.crush==15, GetWeekday(day) in [3, 4] or (GetWeekday(day)=2 and tm>'19:00')])"),
-    'l.toples_0' : TalkTheme('lisa', _("Нравится, что я спасаю твою попку от наказания?"), 'about_horror_toples', "all([tm<'23:00', not lisa.dcv.other.stage, lisa.dcv.other.lost])"),
+    'l.toples_0' : TalkTheme('lisa', _("Нравится, что я спасаю твою попку от наказания?"), 'about_horror_toples', "all([tm<'23:00', lisa.flags.topless, lisa.flags.defend>4, not lisa.dcv.other.stage, lisa.dcv.other.lost])"),
     'ol.l.t1'    : TalkTheme(['lisa', 'olivia'], _("Учтите, я испытываю... некоторый подъём!"), 'olivia_talk1', "all([olivia.plan_name=='sun', not olivia.dcv.feature.stage, olivia.dcv.feature.done])"),
     'ol.l.t2'    : TalkTheme(['lisa', 'olivia'], _("Пошепчемся немного о моей сестрёнке?"), 'olivia_talk2', "all([olivia.plan_name=='sun', olivia.dcv.feature.stage==1, olivia.dcv.feature.done])"),
     'ol.l.t3'    : TalkTheme(['lisa', 'olivia'], _("Что новенького, Оливия?"), 'olivia_talk3', "all([olivia.plan_name=='sun', GetWeekday(day)==2, olivia.dcv.feature.stage==3, olivia.dcv.feature.done])"),

@@ -6850,7 +6850,7 @@ translate deutsch gift_sexbook_42f8dd64:
 translate deutsch gift_sexbook_306955ca:
 
     # Lisa_02 "Заинтриговал. И какое должно быть настроение для этой книги?" nointeract
-    Lisa_02 "Really...what kind of mood should I be in to enjoy it?" nointeract
+    Lisa_02 "Wirklich... in was für einer Stimmung sollte ich sein, um es zu genießen?" nointeract
 
 # game/dialogues/lisatalk.rpy:3449
 translate deutsch gift_sexbook_a1b0018d:
@@ -8568,7 +8568,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:1092
     old "А ножки тебе помассировать?"
-    new "Should I massage your legs?"
+    new "Soll ich deine Beine massieren?"
 
     # game/dialogues/lisatalk.rpy:1092
     old "Ой, тут много... Давай в другой раз."

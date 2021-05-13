@@ -100,7 +100,9 @@ label alice_can_blog_in_underwear:
     $ alice.add_schedule(
         Schedule((1, 4), '20:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="poss['blog'].st()>4 and alice.dcv.feature.done", enabletalk=False, glow=150),
         Schedule((1, 4), '20:0', '21:59', 'blog', "в своей комнате", 'house', 1, 'alice_rest_evening', variable="not(poss['blog'].st()>4 and alice.dcv.feature.done)", talklabel='alice_evening_closer', glow=110),
+        Schedule((3,), '20:0', '20:59', 'blog', "в своей комнате", 'house', 1, 'alice_rest_evening', variable="not alice.dcv.intrusion.enabled", enabletalk=False, glow=150),
         Schedule((3,), '20:0', '20:59', 'blog', "блог с Эриком", 'house', 1, 'blog_with_Eric', variable="alice.dcv.intrusion.enabled", enabletalk=False, glow=150),
+        Schedule((3,), '21:0', '21:59', 'blog', "в своей комнате", 'house', 1, 'alice_rest_evening', variable="not alice.dcv.intrusion.enabled", enabletalk=False, glow=150),
         Schedule((3,), '21:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="alice.dcv.intrusion.enabled", enabletalk=False, glow=150),
         Schedule((6,), '20:0', '21:59', 'blog', "блог в нижнем белье", 'house', 1, 'alice_blog_lingerie', variable="alice.dcv.intrusion.enabled", enabletalk=False, glow=150),
         Schedule((6,), '20:0', '21:59', 'blog', "в своей комнате", 'house', 1, 'alice_rest_evening', variable="not alice.dcv.intrusion.enabled", talklabel='alice_evening_closer', glow=110),

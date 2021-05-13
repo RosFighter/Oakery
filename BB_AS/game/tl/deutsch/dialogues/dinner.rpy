@@ -1648,7 +1648,7 @@ translate deutsch dinner_ab_lisa_ed_ab303f17:
 translate deutsch dinner_ab_lisa_ed_2ec88256:
 
     # Max_09 "И зачем?! Я и без всяких курсов тебя круглой отличницей сделаю!"
-    Max_09 "Why should you?! Those classes are for delinquents, I can make you a great student without them!"
+    Max_09 "Warum? Ich kann Sie zu einem Einser-Schüler machen, ganz ohne Kurse!"
 
 # game/dialogues/dinner.rpy:693
 translate deutsch dinner_ab_lisa_ed_b7233bd2:

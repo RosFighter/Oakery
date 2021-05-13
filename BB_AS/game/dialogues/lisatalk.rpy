@@ -1235,8 +1235,8 @@ label Lisa_HomeWork:
             $ AttitudeChange('lisa', 0.8)
             Lisa_03 "О, супер! Макс! Ты такой молодец! Всё время меня выручаешь... Я бы сама долго возилась и, наверняка, ошибок бы наделала... Спасибо тебе!"
 
-            if poss['sg'].st() == 2:
-                $ poss['sg'].stages[2].ps = _("А что если я не буду помогать Лизе какое-то время? Или несколько раз сделаю ошибку в её работе?")
+            # if poss['sg'].st() == 2:
+            #     $ poss['sg'].stages[2].ps = _("А что если я не буду помогать Лизе какое-то время? Или несколько раз сделаю ошибку в её работе?")
 
         else:
             $ AddRelMood('lisa', 15, 150, 3)
@@ -1653,7 +1653,7 @@ label liza_hand_mass:
     if RandomChance(_ch10.ch) or _in_replay:
         # Лизе понравился массаж!
         $ Skill('massage', 0.1)
-        if not _in_replay and all(['kira' in chars, not lisa.dcv.seduce.stage, dcv.mw.stage>=8, dcv.mw.done, kira.dcv.feature.stage>2]):
+        if not _in_replay and all(['kira' in chars, not lisa.dcv.seduce.stage, dcv.mw.stage>=7, dcv.mw.done, kira.dcv.feature.stage>2]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
             Lisa_02 "А ты сам-то хоть умеешь целоваться?"
@@ -1972,15 +1972,11 @@ label gift_swimsuit:
 
     label .end:
         $ items['bikini'].give()
-        # $ items['bikini'].have = False
-        # $ items['bikini'].InShop = False
         $ poss['Swimsuit'].open(3)
         $ lisa.gifts.append('bikini')
         $ setting_clothes_by_conditions()
         $ infl[lisa].add_m(40, True)
 
-        # $ lisa.clothes.swimsuit.sel.append(Garb('b', '03b', 'КУПАЛЬНИК КРАСНЫЙ', True))
-        # $ lisa.clothes.swimsuit.cur = 1
         $ ClothingNps('lisa', lisa.plan_name)
 
         $ spent_time += 10
@@ -1997,7 +1993,6 @@ label gift_bathrobe:
         Lisa_02 "А я думала, раз срок уже прошёл, то и надеяться, что ты его подаришь не стоит."
         Max_04 "И когда я на тебе его увижу?"
         Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
-        $ poss['SoC'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif lisa.flags.hugs_type > 3:  ## За третий извинительный подарок Макс получил поцелуй
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
@@ -2042,7 +2037,6 @@ label gift_bathrobe:
         Max_04 "Может быть, примеришь его при мне?"
         Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
         $ poss['SoC'].open(6)
-        $ poss['SoC'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     elif lisa.flags.hugs_type > 1:  ## За третий извинительный подарок Макс получил только прощение
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
@@ -2060,18 +2054,14 @@ label gift_bathrobe:
         Max_04 "И когда я на тебе его увижу?"
         Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
         $ poss['SoC'].open(5)
-        $ poss['SoC'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
     else:  ## За третий извинительный подарок Макс не получил прощение
         Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
-        $ poss['SoC'].stages[7].ps = _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}")
 
     Max_01 "Супер! Будет любопытно посмотреть..."
 
     $ AddRelMood('lisa', 0, 200)
     $ AttitudeChange('lisa', 0.9)
     $ items['bathrobe'].give()
-    # $ items['bathrobe'].have = False
-    # $ items['bathrobe'].InShop = False
     $ lisa.gifts.append('bathrobe')
     $ setting_clothes_by_conditions()
     $ added_mem_var('bathrobe')
@@ -2079,11 +2069,6 @@ label gift_bathrobe:
 
     $ lisa.sorry.valid = {'ritter-m', 'raffaello-m'}
     $ lisa.sorry.give.append(4)
-    # $ lisa.clothes.casual.sel.insert(1, Garb('b', '04', _("ШЕЛКОВЫЙ ХАЛАТ"), True))
-    # $ lisa.clothes.learn.sel.insert(1, Garb('b', '04', 'Халатик', True))
-    # if all([lisa.GetMood()[0] > 1, 'kira' not in chars]):
-    #     $ lisa.clothes.casual.cur = 1
-    # $ lisa.clothes.learn.cur = 1
     $ spent_time += 10
     $ lisa.sorry.owe = False
     jump Waiting

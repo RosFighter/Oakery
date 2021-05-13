@@ -1030,7 +1030,7 @@ translate deutsch lisa_horor_movie_0_9243c41a:
 translate deutsch lisa_horor_movie_0_7a93c95f:
 
     # Lisa_10 "Правда? По тебе не скажешь..."
-    Lisa_10 "Really? Y-You don't look it..."
+    Lisa_10 "Wirklich? Du siehst nicht..."
 
 # game/events/lisa.rpy:913
 translate deutsch lisa_horor_movie_0_53effe8a:

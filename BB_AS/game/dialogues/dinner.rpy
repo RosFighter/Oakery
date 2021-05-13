@@ -38,12 +38,18 @@ label typical_dinner:
     if dcv.buyfood.stage == 4 and dcv.clearpool.stage == 4:
         $ dcv.buyfood.stage = 3
         $ dcv.clearpool.stage = 3
+        $ AddRelMood('ann', 0, 50)
+        $ infl[ann].add_m(24, True)
         Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. И бассейн я вижу чистый. Молодец, что взял на себя эту ответственность, мы все это ценим. А теперь давайте ужинать..." nointeract
     elif dcv.buyfood.stage == 4:
         $ dcv.buyfood.stage = 3
+        $ infl[ann].add_m(18, True)
+        $ AddRelMood('ann', 0, 50)
         Ann_01 "Всем приятного аппетита. Я рада, Макс, что ты закупил продуктов за свой счёт. Хоть ответственности и немного, но она важна. А теперь давайте ужинать..." nointeract
     elif dcv.clearpool.stage == 4:
         $ dcv.clearpool.stage = 3
+        $ infl[ann].add_m(6, True)
+        $ AddRelMood('ann', 0, 50)
         Ann_01 "Всем приятного аппетита. Я заметила с балкона, что бассейн почищен. Спасибо тебе, Макс, что заботишься о порядке, это меня радует. А теперь давайте ужинать..." nointeract
     else:
         Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract

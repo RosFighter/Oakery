@@ -395,9 +395,6 @@ label ann_dressed_work:
     label .endgift:
         $ items['nightie'].give()
         $ ann.gifts.append('nightie')
-        # $ ann.clothes.sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
-        # $ ann.clothes.sleep.cur = 1
-        # $ ann.clothes.sleep.rand = True
         $ setting_clothes_by_conditions()
         $ infl[ann].add_m(40, True)
         jump .end

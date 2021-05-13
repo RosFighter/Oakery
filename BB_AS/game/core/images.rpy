@@ -304,6 +304,31 @@ image porn_06 09_10:
     6.0
     'tv porn-06 10'
 
+image porn_07 01_02:
+    'tv porn-07 01'
+    6.0
+    'tv porn-07 02'
+
+image porn_07 03_04:
+    'tv porn-07 03'
+    6.0
+    'tv porn-07 04'
+
+image porn_07 05_06:
+    'tv porn-07 05'
+    6.0
+    'tv porn-07 06'
+
+image porn_07 07_08:
+    'tv porn-07 07'
+    6.0
+    'tv porn-07 08'
+
+image porn_07 09_10:
+    'tv porn-07 09'
+    6.0
+    'tv porn-07 10'
+
 image AnimMaxKira1:
     'Kira shower-Max 05 00'
     0.036

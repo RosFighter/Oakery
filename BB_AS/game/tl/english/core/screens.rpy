@@ -258,3 +258,15 @@ translate english strings:
     old "[view_cam[1].public]"
     new "[view_cam[1].public]"
 
+# TODO: Translation updated at 2021-05-11 10:36
+
+translate english strings:
+
+    # game/core/screens.rpy:1259
+    old "{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}"
+    new ""
+
+    # game/core/screens.rpy:1261
+    old "{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}"
+    new ""
+

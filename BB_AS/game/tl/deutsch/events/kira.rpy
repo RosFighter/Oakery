@@ -3842,7 +3842,7 @@ translate deutsch strings:
 
     # game/events/kira.rpy:1396
     old "{i}раздеться вместе{/i}"
-    new "{i}zusammen ausziehen{/i}"
+    new "{i}Sie und mich ausziehen{/i}"
 
     # game/events/kira.rpy:1483
     old "{i}получать удовольствие{/i}"
@@ -3894,11 +3894,11 @@ translate deutsch strings:
 
     # game/events/kira.rpy:1958
     old "К тебе можно, тётя Кира?"
-    new "Darf ich mich zu dir setzen?"
+    new "Darf ich dir Gesellschaft leisten?"
 
     # game/events/kira.rpy:2034
     old "{i}раздеться и присоединиться к Кире{/i}"
-    new "{i}Ausziehen und zu ihr setzen{/i}"
+    new "{i}Ausziehen und zu ihr gehen{/i}"
 
     # game/events/kira.rpy:2040
     old "{i}ласкать её грудь{/i}"
@@ -3930,7 +3930,7 @@ translate deutsch strings:
 
     # game/events/kira.rpy:2448
     old "Такого поворота событий я не ожидал! Можно и задержаться..."
-    new "Das habe ich nicht erwartet ! Du kannst länger bleiben..."
+    new "Das habe ich nicht erwartet ! Ich bleibe länger..."
 
     # game/events/kira.rpy:2448
     old "Я бы задержался, но нужно проверить, как там Алиса..."

@@ -306,7 +306,7 @@ label NewDay:
             if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
                 $ lisa.clothes.casual.cur = renpy.random.randint(1, 2)
             else:
-                $ lisa.clothes.casual.cur = 2 if 'bathrobe' in lisa.gifts else 1
+                $ lisa.clothes.casual.cur = 1 if 'bathrobe' in lisa.gifts else 2
 
     if mgg.credit.debt > 0:        # если кредит не погашен
         $ mgg.credit.left -= 1       # уменьшим счетчик дней
@@ -672,7 +672,7 @@ label after_buying:
         if buying_item==items['photocamera']:
             Max_01 "{i}( Так, фотокамеру я заказал, осталось дождаться доставки... ){/i}"
             Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
-            $ poss['aunt'].stages[3].ps = _("А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!")
+            # $ poss['aunt'].stages[3].ps = _("А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!")
             $ items['nightie2'].unblock()
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 

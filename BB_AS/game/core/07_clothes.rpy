@@ -49,6 +49,21 @@ init python:
 
         setting_clothes_by_conditions()
 
+        for char_id in clothes_dict:
+            if char_id == 'mgg':
+                char = mgg
+            elif char_id in chars:
+                char = chars[char_id]
+            else:
+                continue
+            for clot_type in clothes_dict[char_id]:
+                clots = getattr(char.clothes, clot_type)
+                if not (clots.sel[clots.cur].rand or clots.sel[clots.cur].change):
+                    # установленная одежда недопустима
+                    clots.SetRand(True)     # принудительная установка допустимой случайной одежды
+                    plan = chars[char_id].get_plan()
+                    ClothingNps(char_id, plan.name) # установка текущей одежды
+
     def add_new_clot_type(clots, clot_type, char_id):
         # такой одежды у персонажа ещё не было, нужно добавить
         clot_name = {
@@ -121,8 +136,6 @@ init python:
         if 'sexbody1' in alice.gifts:       # подарено боди
             alice.clothes.lingerie.rand_enable(2)
         if 'sexbody2' in alice.gifts:       # подарено кружевное боди
-            # alice.clothes.lingerie.rand_enable(3)
-            # if alice.dcv.intrusion.stage in [5, 7]:     # Макс опередил Эрика с кружевным боди
             # открываем доступ к смене одежды
             alice.clothes.lingerie.enable((0, 1, 2, 3))
             # но при этом ставим условие
@@ -155,6 +168,9 @@ init python:
             lisa.clothes.casual.disable(0)
             lisa.clothes.learn.enable(3)
             lisa.clothes.learn.disable(0)
+        if any([poss['sg'].used(3), poss['sg'].used(4), poss['sg'].used(5), poss['sg'].used(8)]):
+            lisa.clothes.sleep.enable(1)
+            lisa.clothes.sleep.disable(0)
 
         # Макс
         if items['max-a'].have:             # куплены шорты с майкой
@@ -164,23 +180,3 @@ init python:
             mgg.clothes.casual.disable(0)
         else:
             mgg.clothes.casual.enable(0)
-
-    # # возвращает одежду для блога, если очередь пустая - заполняет список
-    # # если указано значение df (default) - его же и возвращает, создав список очереди из 3х df
-    # def blog_lingerie_create(df=''):
-    #     global blog_lingerie
-    #
-    #     if df:
-    #         blog_lingerie = [df] * 3
-    #     else:
-    #         if len(blog_lingerie):
-    #             df = blog_lingerie.pop(0, '')
-    #
-    #         if not len(blog_lingerie):
-    #             blog_lingerie = [clot.suf for clot in alice.clothes.lingerie.sel if clot.rand] * 3
-    #             renpy.random.shuffle(blog_lingerie)
-    #
-    #         if not df:
-    #             df = blog_lingerie.pop(0, '')
-    #
-    #     return df

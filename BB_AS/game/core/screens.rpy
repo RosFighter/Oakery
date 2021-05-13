@@ -223,7 +223,7 @@ screen PowerBack2():
                 action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Withdraw'), Hide('SEO'), Jump('Waiting')] at zoom_out(50, 50)
+                action [Hide('Withdraw'), Hide('SEO'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('SEO'), Jump('open_site')]
     if not _in_replay:
@@ -251,7 +251,7 @@ screen PowerBack3():
                 action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Withdraw'), Hide('Bank'), Jump('Waiting')] at zoom_out(50, 50)
+                action [Hide('Withdraw'), Hide('Bank'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
     key 'K_ESCAPE' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     key 'mouseup_3' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
     if not _in_replay:
@@ -261,9 +261,9 @@ screen PowerBack3():
 screen PowerButton():
     imagebutton:
         pos (935, 985) auto 'interface laptop power %s'
-        action [Hide('Search'), Jump('Waiting')] at zoom_out(50, 50)
-    key 'K_ESCAPE' action [Hide('Search'), Jump('Waiting')]
-    key 'mouseup_3' action [Hide('Search'), Jump('Waiting')]
+        action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
+    key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')]
+    key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')]
     if not _in_replay:
         # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
@@ -1250,15 +1250,18 @@ screen menu_opportunity():
                     frame area (0, 0, 1190, 400) background None:
                         hbox:
                             viewport mousewheel 'change' draggable True id 'vp2':
-                                vbox spacing 30:
-                                    text poss_dict[CurPoss][1][view_stage].desc size 24  color gui.accent_color
-                                    text poss_dict[CurPoss][1][view_stage].ps size 28
+                                vbox spacing 20:
+                                    text poss_dict[CurPoss][1][view_stage].desc size 24 color gui.accent_color
+                                    text poss_dict[CurPoss][1][view_stage].ps size 24
+                                    for ht in poss_dict[CurPoss][1][view_stage].hints:
+                                        if ht.met():
+                                            text ht.hint size 20
                                     if view_stage in poss_dict[CurPoss][2]:     # временная концовка
                                         text _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}") size 24 color orange
                                     elif view_stage in poss_dict[CurPoss][3]:   # хорошая концовка
-                                        text "{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}" size 24 color lime
+                                        text _("{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}") size 24 color lime
                                     elif view_stage in poss_dict[CurPoss][4]:   # плохая концовка
-                                        text "{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}" size 24 color red
+                                        text _("{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}") size 24 color red
 
                             vbar value YScrollValue('vp2') style 'poss_vscroll'
     if len(lst_stage) > 1:

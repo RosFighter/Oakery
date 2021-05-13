@@ -792,12 +792,19 @@ init python:
                 dress = ann.clothes.sports.GetCur().suf
                 inf   = ann.clothes.sports.GetCur().info
             elif name == 'cooking':
-                dress = ann.clothes.cook_morn.GetCur().suf if tm < '12:00' else ann.clothes.cook_eve.GetCur().suf
-                inf   = ann.clothes.cook_morn.GetCur().info if tm < '12:00' else ann.clothes.cook_eve.GetCur().info
-                clot  = 'cook_morn' if tm < '12:00' else 'cook_eve'
+                if tm < '12:00':
+                    if ann.clothes.cook_morn.cur in [0, 2]:
+                        ann.clothes.cook_morn.cur = 2 if ann.clothes.sports.cur > 0 else 0
+                    dress = ann.clothes.cook_morn.GetCur().suf
+                    inf   = ann.clothes.cook_morn.GetCur().info
+                    clot  = 'cook_morn'
+                else:
+                    dress = ann.clothes.cook_eve.GetCur().suf
+                    inf   = ann.clothes.cook_eve.GetCur().info
+                    clot  = 'cook_eve'
             elif name == 'breakfast':
                 dress = ann.clothes.cook_morn.GetCur().suf
-                inf   = {'a':'05a', 'b':'01b', 'd':'01e'}[ann.clothes.cook_morn.GetCur().suf]
+                inf   = {'a':'05a', 'b':'01b', 'd':'01e', 'c':'05с'}[ann.clothes.cook_morn.GetCur().suf]
                 clot  = 'cook_morn'
             elif name == 'resting':
                 if tm <= '12:00':
@@ -1217,7 +1224,7 @@ init python:
             return
         kol_choco -= 1
         if kol_choco == 0:
-            items['choco'].InShop = True
+            items['choco'].unblock()
             items['choco'].have   = False
             notify_list.append(_("Конфеты закончились"))
 

@@ -67,8 +67,8 @@ init python:
             return True if len(l)>1 else False
 
         # устанавливает случайную одежду, отличную от текущей
-        def SetRand(self):
-            if self.left > 0:
+        def SetRand(self, forced=False):
+            if self.left > 0 and not forced:
                 self.left -= 1
             else:
                 lr = [i for i in range(len(self.sel)) if self.sel[i].rand and i!=self.cur for j in range(5)]
@@ -1138,10 +1138,19 @@ init python:
     ############################################################################
 
     class PossHint():   # подсказки к этапу возможности
-        def __init__(self, stage, hint, req):
-            self.stage  = stage     # этап возможности
+        def __init__(self, hint, req=True):
             self.hint   = hint      # подсказака
             self.req    = req       # условие отображения подсказки
+
+        def met(self):
+            rez = False
+            try:
+                rez = eval(self.req)
+            except KeyError:
+                pass
+            except Exception:
+                pass
+            return rez
 
     class PossStage():  # Описание этапа возможности
         used    = False
@@ -1306,7 +1315,7 @@ init python:
 
     class CutEvent():
         """ События, запускаемые в конкретное время"""
-        def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), label="", desc="", variable="True", enabled=True, stage=0, sleep=False, extend=False, cut=False):
+        def __init__(self, tm="", lod=(0, 1, 2, 3, 4, 5, 6), label="", desc="", variable="True", enabled=True, stage=0, sleep=None, extend=False, cut=False):
             h, m = tm.split(":") if str(tm).find(":") > 0 else str(float(tm)).replace(".", ":").split(":")
             self.tm        = ("0" + str(int(h)))[-2:] + ":" + ("0" + str(int((m + "0")[:2])))[-2:] # время начала события
 
@@ -1325,9 +1334,9 @@ init python:
 
     class Events_by_time():
 
-        breakfast       = CutEvent('09:00', label='breakfast', desc='завтрак')
+        breakfast       = CutEvent('09:00', label='breakfast', desc='завтрак', cut=True)
         dinner          = CutEvent('19:00', label='dinner', desc='ужин', cut=True)
-        shoping         = CutEvent('11:00', (6, ), 'shoping', 'семейный шопинг')
+        shoping         = CutEvent('11:00', (6, ), 'shoping', 'семейный шопинг', cut=True)
         back_shoping    = CutEvent('14:00', (6, ), 'back_shoping', 'возвращение с семейного шопинга', "flags.back_shop < 2", cut=True)
         delivery1       = CutEvent('13:30', (1, 2, 3, 4, 5, 6), 'delivery1', 'доставка товаров Сэмом', 'len(delivery_list[0])>0', cut=True)
         delivery2       = CutEvent('15:30', (1, 2, 3, 4, 5, 6), 'delivery2', 'доставка товаров Кристиной', 'len(delivery_list[1])>0', cut=True)
@@ -1371,11 +1380,16 @@ init python:
 
                 if GetWeekday(ev_day) in cut.lod or cut.lod is None:
                     # день недели входит в диаппазон
-                    # print attr, tm1, cut.tm, tm2
                     if tm1 < cut.tm <= tm2:
+                        # print attr, tm1, cut.tm, tm2
                         # время события входит в диаппазон
-                        if status_sleep == cut.sleep or cut.cut:
-                            # статус сна совпадает или событие прерывает сон
+                        if all([status_sleep, cut.sleep]):
+                            # статус сна совпадает
+                            resp = True
+                        elif cut.cut and not cut.sleep:
+                            # событие прерывает сон, но сон не является условием
+                            resp = True
+                        elif cut.sleep==status_sleep:
                             resp = True
                     elif all([tm2 < cut.tm < '08:00', status_sleep, cut.sleep, cut.extend]):
                         # время события позже диаппазона, но МГГ спит и стоит статус продлевать сон

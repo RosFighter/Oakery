@@ -408,11 +408,11 @@ translate deutsch strings:
 
     # game/core/02init.rpy:186
     old "{color=#808080}У меня для тебя вкусняшка! \n (нужно выждать несколько дней){/color}"
-    new "{color=#808080}Ich habe einen Vorschlag für dich! \n (Du musst ein paar Tage warten){/color}"
+    new "{color=#808080}Ich habe etwas für dich! \n (Du musst ein paar Tage warten){/color}"
 
     # game/core/02init.rpy:186
     old "У меня для тебя вкусняшка!"
-    new "Ich habe einen Vorschlag für dich!"
+    new "Ich habe etwas für dich!"
 
     # game/core/02init.rpy:186
     old "У меня есть кое-что запрещённое..."

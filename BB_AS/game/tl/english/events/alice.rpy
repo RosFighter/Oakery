@@ -3843,156 +3843,157 @@ translate english strings:
 translate english alice_shower_spider_22e4abcd:
 
     # Alice_07 "Ох, Макс, спасибо тебе огромное! Думала, ты будешь прикалываться, но ты можешь временами вести себя, не как озабоченный... Это приятно." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Oh, Max, thank you so much! I thought you were going to make fun of me, but you can act like you're not horny at times... That's nice." nointeract
 
 # game/events/alice.rpy:463
 translate english alice_shower_hug_58bf4c9b:
 
     # Alice_05 "[succes!t]Это я, конечно, могу сделать... Но если вздумаешь с меня полотенце сорвать, то я тебя прибью нафиг!"
-    Alice_05 ""
+    Alice_05 "[succes!t]I can do that, of course... But if you try to rip my towel off, I'll fucking kill you!"
 
 # game/events/alice.rpy:464
 translate english alice_shower_hug_ad2935a8:
 
     # Max_07 "Не буду я ничего такого делать! Что я, маленький что ли?"
-    Max_07 ""
+    Max_07 "I'm not going to do anything like that! What am I, a kid or something?"
 
 # game/events/alice.rpy:468
 translate english alice_shower_hug_daa9ed05:
 
     # Alice_03 "Таких объятий тебе достаточно? Уж извини, что не обнимаю обеими руками... сам знаешь почему..." nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Is this hug enough for you? I'm sorry I can't use both hands... you know why..." nointeract
 
 # game/events/alice.rpy:474
 translate english alice_shower_hug_81f9b380:
 
     # Alice_04 "Эм... Макс... Это уже как-то слишком, тебе не кажется?!" nointeract
-    Alice_04 "" nointeract
+    Alice_04 "Um... Max... That's a bit much, don't you think?!" nointeract
 
 # game/events/alice.rpy:483
 translate english alice_shower_hug_23328126:
 
     # Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
-    Alice_03 ""
+    Alice_03 "That's it, I'm off... Just don't forget to kick the spider out of the bathroom, okay?!"
 
 # game/events/alice.rpy:484
 translate english alice_shower_hug_428606a5:
 
     # Max_01 "Да. Не забуду..."
-    Max_01 ""
+    Max_01 "Yes. I won't forget..."
 
 # game/events/alice.rpy:489
 translate english alice_shower_hug_f3a79944:
 
     # Alice_05 "[failed!t]Ага, знаю я, чего ты хочешь! Полуголую сестрёнку полапать за всякие запретные места... Нет уж, Макс, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
-    Alice_05 ""
+    Alice_05 "[failed!t] Yeah, I know what you want! To touch your half-naked sister in all kinds of forbidden places... No, Max, I'm out of here. Don't forget to kick the spider out of the bathroom, okay?"
 
 # game/events/alice.rpy:490
 translate english alice_shower_hug_428606a5_1:
 
     # Max_01 "Да. Не забуду..."
-    Max_01 ""
+    Max_01 "Yes. I won't forget..."
 
 # game/events/alice.rpy:515
 translate english alice_shower_dangerous_hugs_8f49945b:
 
     # Max_04 "Всё, убрал. Но я просто хотел прикрыть твою попку, чтобы никто на неё не глазел."
-    Max_04 ""
+    Max_04 "That's it, it's gone. But I just wanted to cover your ass so no one would stare at it."
 
 # game/events/alice.rpy:516
 translate english alice_shower_dangerous_hugs_dfcbcf78:
 
     # Alice_05 "Ну конечно. И кто, интересно, на неё глазеет?!"
-    Alice_05 ""
+    Alice_05 "Of course. And who, I wonder, is staring at it?!"
 
 # game/events/alice.rpy:517
 translate english alice_shower_dangerous_hugs_e8876c4a:
 
     # Max_07 "Пауки, Алиса. Они такие! И глаз у них дофига бывает!"
-    Max_07 ""
+    Max_07 "Spiders, Alice. They are! And they have a lot of eyes!"
 
 # game/events/alice.rpy:518
 translate english alice_shower_dangerous_hugs_a3f37ed4:
 
     # Alice_06 "Бррр... Фу! Какая мерзость... Всё, я пошла! Только не забудь паука вышвырнуть из ванной, хорошо?!"
-    Alice_06 ""
+    Alice_06 "Brrr... Ugh! That's disgusting. I'm out of here. Don't forget to kick the spider out of the bathroom, okay?"
 
 # game/events/alice.rpy:519
 translate english alice_shower_dangerous_hugs_428606a5:
 
     # Max_01 "Да. Не забуду..."
-    Max_01 ""
+    Max_01 "Yes. I won't forget..."
 
 # game/events/alice.rpy:531
 translate english alice_shower_hands_off_fda55c91:
 
     # Max_12 "А-а-ай! Мне же больно, Алиса! Перестань!"
-    Max_12 ""
+    Max_12 "Ah-ah-ah! You're hurting me, Alice! Stop it!"
 
 # game/events/alice.rpy:532
 translate english alice_shower_hands_off_6af5aed9:
 
     # Alice_16 "А я ведь тебя предупреждала! Наверно, раз до тебя не дошло, нужно крутануть ещё сильнее..."
-    Alice_16 ""
+    Alice_16 "And I warned you! I guess if you don't get it, I need to twist even harder..."
 
 # game/events/alice.rpy:533
 translate english alice_shower_hands_off_244d58a6:
 
     # Max_14 "Ой! Я понял... Больше не буду! Отпусти уже..."
-    Max_14 ""
+    Max_14 "Ow! I got it... I won't do it again! Let go already..."
 
 # game/events/alice.rpy:534
 translate english alice_shower_hands_off_30dd2b3c:
 
     # Alice_17 "То-то же! Всё, я пошла! И паука вышвырни из ванной..."
-    Alice_17 ""
+    Alice_17 "That's right! That's it, I'm out of here! And kick the spider out of the bathroom..."
 
 # game/events/alice.rpy:535
 translate english alice_shower_hands_off_c95561c5:
 
     # Max_10 "Хорошо... Как только отпустишь!"
-    Max_10 ""
+    Max_10 "Okay... As soon as you let go!"
 
 translate english strings:
 
     # game/events/alice.rpy:417
     old "Да ладно, это ерунда, обращайся."
-    new ""
+    new "Come on, it's no big deal."
 
     # game/events/alice.rpy:417
     old "А как же братика обнять? {color=[_ch2.col]}(Убеждение. Шанс: [_ch2.vis]){/color}"
-    new ""
+    new "What about hugging your little brother? {color=[_ch2.col]}(Persuasion. Chance: [_ch2.vis]){/color}"
 
     # game/events/alice.rpy:468
     old "Зато у меня руки свободны... {i}(обнять в ответ){/i}"
-    new ""
+    new "At least my hands are free... {i}(Hug back){/i}"
 
     # game/events/alice.rpy:468
     old "Вот это другое дело! Рад был помочь."
-    new ""
+    new "Now that's another thing! Glad I could help."
 
     # game/events/alice.rpy:474
     old "Нет. Слишком - это вот так... {i}(обнять за попку){/i}"
-    new ""
+    new "No. Too much is like this... {i}(Hug ass){/i}"
 
     # game/events/alice.rpy:474
     old "Может быть, чуть-чуть... Рад был помочь."
-    new ""
+    new "Maybe a little bit... Glad I could help."
 
     # game/events/alice.rpy:506
     old "{i}убрать руки{/i}"
-    new ""
+    new "{i}Take your hands off{/i}"
 
     # game/events/alice.rpy:506
     old "{i}не убирать руки{/i}"
-    new ""
+    new "{i}Don't take your hands off{/i}"
+
 # TODO: Translation updated at 2021-05-10 11:19
 
 # game/events/alice.rpy:502
 translate english alice_shower_dangerous_hugs_e3f63f1b:
 
     # Alice_14 "Так, ну всё! У тебя три... ну максимум пять секунд, чтобы убрать руки. Иначе я тебе что-нибудь оторву!{p=5}{nw}"
-    Alice_14 ""
+    Alice_14 "All right, that's it! You have three... Five seconds, tops, to get your hands off. Otherwise, I'm gonna rip something off!{p=5}{nw}"
 
 # game/events/alice.rpy:508
 translate english alice_shower_dangerous_hugs_11fdb519:
