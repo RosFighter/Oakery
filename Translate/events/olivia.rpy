@@ -1072,269 +1072,268 @@ translate english olivia_night_visit_r_a6603bc7:
 translate english olivia_repeatable_night_out_with_01d47c87:
 
     # Lisa_02 "Ты чего завис, Макс? Давай садись быстрее..."
-    Lisa_02 ""
+    Lisa_02 "What are you hangin' around for, Max? Come on, get in quick..."
 
 # game/events/olivia.rpy:519
 translate english olivia_repeatable_night_out_with_35ff1b35:
 
     # Max_02 "Знаешь, бывают моменты, когда засмотришься на что-то и потом никак оторваться не можешь..."
-    Max_02 ""
+    Max_02 "You know, there are times when you look at something and then you can't look away..."
 
 # game/events/olivia.rpy:520
 translate english olivia_repeatable_night_out_with_3e8c189f:
 
     # Lisa_01 "Может, мне тогда стоит одеться, чтобы ты над душой не стоял?"
-    Lisa_01 ""
+    Lisa_01 "Maybe I should get dressed, then, so you don't have to stand over me."
 
 # game/events/olivia.rpy:521
 translate english olivia_repeatable_night_out_with_d5bd5179:
 
     # Max_04 "Нет, нет, нет... Я уже раздеваюсь!"
-    Max_04 ""
+    Max_04 "No, no, no... I'm already undressing!"
 
 # game/events/olivia.rpy:525
 translate english olivia_repeatable_night_out_with_01d47c87_1:
 
     # Lisa_02 "Ты чего завис, Макс? Давай садись быстрее..."
-    Lisa_02 ""
+    Lisa_02 "What are you hangin' around for, Max? Come on, get in quick..."
 
 # game/events/olivia.rpy:526
 translate english olivia_repeatable_night_out_with_f90d7bab:
 
     # Max_02 "Да я вот задумался, как мне тебя уговорить маечку снять... Только, по-моему, без шансов, да?"
-    Max_02 ""
+    Max_02 "I was wondering how I could convince you to take your top off... I don't think there's any chance, is there?"
 
 # game/events/olivia.rpy:527
 translate english olivia_repeatable_night_out_with_fe51560e:
 
     # Lisa_01 "Именно! Ты или тогда не стой над душой, или раздевайся и присоединяйся... пока я добрая."
-    Lisa_01 ""
+    Lisa_01 "Exactly! You either don't stand over me then, or get undressed and join in... while I'm being nice."
 
 # game/events/olivia.rpy:528
 translate english olivia_repeatable_night_out_with_34230b3b:
 
     # Max_04 "От такой симпатичной компании, как вы, я не откажусь!"
-    Max_04 ""
+    Max_04 "I wouldn't refuse such good-looking company as you!"
 
 # game/events/olivia.rpy:536
 translate english olivia_repeatable_night_out_with_217e442e:
 
     # Olivia_05 "Ты бы поосторожнее запрыгивал на диван, Макс! А то своей огромной штуковиной по Лизе ещё попадёшь! Тебе же потом придётся объяснять всем своим, откуда у неё фингал."
-    Olivia_05 ""
+    Olivia_05 "You'd better be more careful jumping on the couch, Max! Or you'll hit Lisa with that huge thing! You'll have to explain to your friends how she got the black eye."
 
 # game/events/olivia.rpy:537
 translate english olivia_repeatable_night_out_with_f33032d6:
 
     # Max_03 "Уж извините... Со мной лучше ртом не зевать!"
-    Max_03 ""
+    Max_03 "I'm sorry... Just try not to leave your mouth open!"
 
 # game/events/olivia.rpy:538
 translate english olivia_repeatable_night_out_with_323f301e:
 
     # Lisa_02 "Что правда, то правда! Я видела Макса голым уже столько раз, а всё ещё удивляюсь."
-    Lisa_02 ""
+    Lisa_02 "What's true is true! I've seen Max naked so many times, and I'm still surprised."
 
 # game/events/olivia.rpy:539
 translate english olivia_repeatable_night_out_with_07085c52:
 
     # Max_05 "И кто на кого, в итоге, больше всех засматривается?"
-    Max_05 ""
+    Max_05 "I wonder who the bigger pervert really is?"
 
 # game/events/olivia.rpy:542
 translate english olivia_repeatable_night_out_with_797a3326:
 
     # Lisa_02 "Ты поосторожнее, Макс, запрыгивай на диван, а то этой своей штукой ещё по мне попадёшь! Я не хочу потом с фингалом ходить и придумывать историю, в которой не фигурирует твой член."
-    Lisa_02 ""
+    Lisa_02 "Careful, Max, hop up on the couch, or you'll hit me with that thing! I don't want to make up a story to explain my black eye."
 
 # game/events/olivia.rpy:543
 translate english olivia_repeatable_night_out_with_79cd0f1c:
 
     # Max_03 "Со мной лучше быть начеку! Тогда и фингалов никаких не будет."
-    Max_03 ""
+    Max_03 "You better watch out for me! Then there won't be any injuries."
 
 # game/events/olivia.rpy:544
 translate english olivia_repeatable_night_out_with_dfd0b5de:
 
     # Olivia_05 "Я таких беззастенчивых парней, как Макс, ещё не встречала. Хотя, оно и понятно, почему... Есть чем гордиться!"
-    Olivia_05 ""
+    Olivia_05 "I've never met such shameless guys as Max. Although it's understandable why... He's got something to be proud of!"
 
 # game/events/olivia.rpy:545
 translate english olivia_repeatable_night_out_with_1c4fe2d2:
 
     # Max_05 "Спасибо! Я, конечно, не против этого внимания, прикованного к моему члену, но вы и на экран поглядывайте тоже."
-    Max_05 ""
+    Max_05 "Thank you! I certainly don't mind all this attention being focused on my dick, but you should look at the screen, too."
 
 # game/events/olivia.rpy:554
 translate english olivia_repeatable_night_out_with_965e183f:
 
     # Olivia_04 "О! Давайте это посмотрим... Жалко, что не на самое начало серии попали, а то как-то совсем уж непонятно, что там происходит."
-    Olivia_04 ""
+    Olivia_04 "Оh! Let's watch this... Too bad we didn't get to the very beginning of the series, because it's kind of hard to see what's going on there."
 
 # game/events/olivia.rpy:555
 translate english olivia_repeatable_night_out_with_72187a45:
 
     # Lisa_01 "Непонятно, но лично меня заинтриговало... Мне интересно, что дальше будет."
-    Lisa_01 ""
+    Lisa_01 "It's not clear, but personally I'm intrigued... I wonder what will happen next."
 
 # game/events/olivia.rpy:556
 translate english olivia_repeatable_night_out_with_83c9fee5:
 
     # Max_04 "{i}( А вот мне нет разницы, что происходит в сериале... Ведь на этом диване есть то, что в сериалах не каждый день увидишь! ){/i}"
-    Max_04 ""
+    Max_04 "{i}( But I don't care what happens on the show... After all, there are things on this couch that you don't see on TV! ){/i}"
 
 # game/events/olivia.rpy:559
 translate english olivia_repeatable_night_out_with_22d3a585:
 
     # Olivia_04 "Вот, можем этот сериал посмотреть... Вроде, что-то интересное происходит у них там. Надо вникать..."
-    Olivia_04 ""
+    Olivia_04 "Here, we can watch this show... It sounds like something interesting is going on there. We have to look into it..."
 
 # game/events/olivia.rpy:560
 translate english olivia_repeatable_night_out_with_00c76c93:
 
     # Lisa_01 "Тогда смотрим... Может, по ходу просмотра во всём разберёмся."
-    Lisa_01 ""
+    Lisa_01 "Then let's see... Maybe we'll figure it all out as we go along."
 
 # game/events/olivia.rpy:561
 translate english olivia_repeatable_night_out_with_42357461:
 
     # Max_04 "{i}( А вот мне куда интереснее то, что происходит на диване... Здесь, рядом со мной, сидят две обалденные девчонки, которые не против моей компании! ){/i}"
-    Max_04 ""
+    Max_04 "{i}( But I'm much more interested in what's going on on the couch... Here, next to me, there are two gorgeous girls who don't mind my company! ){/i}"
 
 # game/events/olivia.rpy:569
 translate english olivia_repeatable_night_out_with_f6fc3e47:
 
     # Olivia_02 "Здорово, что можно просто вот так, побездельничать в пустом и шикарном доме... Да ещё и с такими классными ребятами, как вы!"
-    Olivia_02 ""
+    Olivia_02 "It's great to be able to just hang out in an empty, fancy house like this... And with great friends like you!"
 
 # game/events/olivia.rpy:570
 translate english olivia_repeatable_night_out_with_c95bc97f:
 
     # Lisa_03 "Ага. Особенно здорово Максу. Мальчики, наверно, только о таком и мечтают?!"
-    Lisa_03 ""
+    Lisa_03 "Yeah. Especially great for Max. That must be what all the boys want, right?!"
 
 # game/events/olivia.rpy:573
 translate english olivia_repeatable_night_out_with_a0ea375d:
 
     # Olivia_02 "А хорошо закрутили, совсем у них дела плохи... Я аж на месте не могу усидеть. Хочется раскинуться на диване, но для вас это будет слишком откровенно."
-    Olivia_02 ""
+    Olivia_02 "They're doing a good job, they're not doing well at all... I can't even sit still. I want to stretch out on the couch, but that would show to much."
 
 # game/events/olivia.rpy:574
 translate english olivia_repeatable_night_out_with_45fbf759:
 
     # Lisa_03 "Мне и самой хочется... Особенно здорово будет Максу, он ведь наверняка о таком и мечтает сейчас!"
-    Lisa_03 ""
+    Lisa_03 "I want to do it myself... It would be especially great for Max, he's probably dreaming about it right now!"
 
 # game/events/olivia.rpy:575
 translate english olivia_repeatable_night_out_with_0a4c9412:
 
     # Max_02 "Не только о таком. Но и то, что сейчас - тоже круто!"
-    Max_02 ""
+    Max_02 "It's not just about that. But this is still pretty great!"
 
 # game/events/olivia.rpy:581
 translate english olivia_repeatable_night_out_with_05e08a2a:
 
     # Olivia_01 "Тебе повезло с братом, Лиза. Мальчишки думают только об одном, но такими уж их сделала природа. И Макс не исключение, но он хотя бы внимателен к нам."
-    Olivia_01 ""
+    Olivia_01 "You're lucky to have a brother, Lisa. Boys only think about one thing, but that's how nature made them. Max is no exception, but at least he pays attention to us."
 
 # game/events/olivia.rpy:582
 translate english olivia_repeatable_night_out_with_0f6c9465:
 
     # Lisa_02 "Макс очень внимательный, когда хочет за кем-нибудь подсмотреть!"
-    Lisa_02 ""
+    Lisa_02 "Max is very attentive when he wants to spy on someone!"
 
 # game/events/olivia.rpy:583
 translate english olivia_repeatable_night_out_with_d1813384:
 
     # Max_01 "Я внимательный всегда."
-    Max_01 ""
+    Max_01 "I'm always attentive."
 
 # game/events/olivia.rpy:589
 translate english olivia_repeatable_night_out_with_59450400:
 
     # Olivia_03 "Ну и как думаешь, Макс... Правильно герои сериала делают или нет?"
-    Olivia_03 ""
+    Olivia_03 "So what do you think, Max... Are the characters in the show doing the right thing or not?"
 
 # game/events/olivia.rpy:590
 translate english olivia_repeatable_night_out_with_268c1645:
 
     # Max_03 "Так или иначе - да. Ведь впереди ещё много сезонов..."
-    Max_03 ""
+    Max_03 "One way or another, yes. After all, there are many more seasons to come..."
 
 # game/events/olivia.rpy:591
 translate english olivia_repeatable_night_out_with_925a0535:
 
     # Lisa_09 "Эй, ты испортил всю интригу! Как мы теперь дальше будем смотреть, зная, что у них всё получится?"
-    Lisa_09 ""
+    Lisa_09 "Hey, you ruined all the suspense! How are we going to watch now, knowing that they're going to make it?"
 
 # game/events/olivia.rpy:597
 translate english olivia_repeatable_night_out_with_74291412:
 
     # Max_07 "Так не всем же может повезти! Кто-нибудь да огребёт... возможно..."
-    Max_07 ""
+    Max_07 "Well, not everyone can get lucky! Somebody's going to get hurt... maybe..."
 
 # game/events/olivia.rpy:598
 translate english olivia_repeatable_night_out_with_72c801d9:
 
     # Olivia_04 "Твоя правда. Ладно, тихо... Мы смотреть будем или обсуждать?"
-    Olivia_04 ""
+    Olivia_04 "You're right. Okay, quiet... Are we going to watch or discuss?"
 
 # game/events/olivia.rpy:599
 translate english olivia_repeatable_night_out_with_6cd95a15:
 
     # Lisa_01 "Конечно, смотреть! Обсудить и потом можно... Если Макс опять о чём-нибудь не проболтается."
-    Lisa_01 ""
+    Lisa_01 "Of course you can watch! We can talk about it later... If Max doesn't blab about something again."
 
 # game/events/olivia.rpy:605
 translate english olivia_repeatable_night_out_with_dd6e369a:
 
     # Olivia_06 "Вот и серия заканчивается. Вы как, спать хотите? Я вот уже зеваю, но оно и понятно, ночь на дворе..."
-    Olivia_06 ""
+    Olivia_06 "This is the end of the series. Do you guys want to go to bed? I'm already yawning, but that's understandable, it's the middle of the night."
 
 # game/events/olivia.rpy:606
 translate english olivia_repeatable_night_out_with_0b752bfe:
 
     # Lisa_05 "Ага, давайте пойдём по кроваткам, пока здесь не заснули." nointeract
-    Lisa_05 "" nointeract
+    Lisa_05 "Yeah, let's go to bed before we fall asleep here." nointeract
 
 # game/events/olivia.rpy:614
 translate english olivia_repeatable_night_out_with_1e38110f:
 
     # Max_04 "Если вдруг вам надоест спать вместе, я всегда рад приютить любую из вас на своей кровати."
-    Max_04 ""
+    Max_04 "If you happen to get tired of sleeping together, I'm always happy to snuggle either of you in my bed."
 
 # game/events/olivia.rpy:615
 translate english olivia_repeatable_night_out_with_e56be7a5:
 
     # Olivia_03 "Спасибо, Макс! Трусы хоть одень, чтобы было не так заметно, насколько ты рад этим фантазиям."
-    Olivia_03 ""
+    Olivia_03 "Thank you, Max! At least put some underpants on so it's not so obvious how excited you are about these fantasies."
 
 # game/events/olivia.rpy:616
 translate english olivia_repeatable_night_out_with_6538cfc3:
 
     # Lisa_02 "И с чего ты взял, что нам надоест?"
-    Lisa_02 ""
+    Lisa_02 "And what makes you think we're going to get bored?"
 
 # game/events/olivia.rpy:617
 translate english olivia_repeatable_night_out_with_893cf053:
 
     # Max_02 "Ну мало ли."
-    Max_02 ""
+    Max_02 "Well, you never know."
 
 # game/events/olivia.rpy:618
 translate english olivia_repeatable_night_out_with_76458fcb:
 
     # Olivia_01 "Всем спокойной ночи..."
-    Olivia_01 ""
+    Olivia_01 "Good night, everyone..."
 
 # game/events/olivia.rpy:619
 translate english olivia_repeatable_night_out_with_cb768b4d:
 
     # Max_01 "Приятных снов."
-    Max_01 ""
+    Max_01 "Sweet dreams."
 
 translate english strings:
 
     # game/events/olivia.rpy:606
     old "{i}идти в свою комнату{/i}"
-    new ""
-
+    new "{i}Go to your room{i}"
