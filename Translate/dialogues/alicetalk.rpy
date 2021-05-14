@@ -9863,7 +9863,7 @@ translate english strings:
 translate english alice_talk_tv_choco_b23dcf5f:
 
     # Alice_02 "Как же без неё. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_02 "I can't do without her. But just one... It's good... Now I'm ready, start the massage!" nointeract
+    Alice_02 "I can't do without it. But just a second... Now I'm ready, start the massage!" nointeract
 
 # game/dialogues/alicetalk.rpy:511
 translate english alice_talk_tv_jeans_off_68d09736:
