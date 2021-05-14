@@ -10,13 +10,13 @@ translate english AliceTalkStart_50ef2ada:
 translate english Alice_badbadmood_86d8a37d:
 
     # Alice_09 "Да пошёл ты! Не хочу тебя видеть даже!" nointeract
-    Alice_09 "Screw you! I don't want to see you right now!" nointeract
+    Alice_09 "Fuck off! I'm not in the mood!" nointeract
 
 # game/dialogues/alicetalk.rpy:53
 translate english Alice_badmood_de141364:
 
     # Alice_09 "Макс, отвали! Я не хочу с тобой разговаривать." nointeract
-    Alice_09 "Get lost, Max! I don't want to talk to you." nointeract
+    Alice_09 "Get lost, Max! I'm not in the mood." nointeract
 
 # game/dialogues/alicetalk.rpy:62
 translate english Alice_asksorry_2395f0d1:
@@ -64,7 +64,7 @@ translate english wash_dishes_alice_07966f8d:
 translate english wash_dishes_alice_e341ef54:
 
     # Alice_09 "Знаешь что, вали отсюда, пока мокрой тряпкой по голове не получил!" nointeract
-    Alice_09 "You know what? Get out of here before I hit you with a wet rag!" nointeract
+    Alice_09 "You know what? Piss off before I hit you with a wet rag!" nointeract
 
 # game/dialogues/alicetalk.rpy:114
 translate english talkblog1_3a17a0f5:
@@ -100,7 +100,7 @@ translate english talkblog1_51f5104a:
 translate english talkblog1_4c394248:
 
     # Alice_00 "Развиваться? Шутишь? Все мои вещи, лаки, материалы и прочее было в том контейнере, который пропал. Теперь у меня нет ничего..." nointeract
-    Alice_00 "Plans? Are you kidding me? Everything I need for my blog got lost, and all my plans along with them..." nointeract
+    Alice_00 "Plans? Are you kidding me? Everything I need for my blog got lost, and my plans along with them..." nointeract
 
 # game/dialogues/alicetalk.rpy:140
 translate english talkblog1_b5c0083a:
@@ -130,13 +130,13 @@ translate english talkblog1_bc534058:
 translate english talkblog1_no_f28dfb56:
 
     # Alice_00 "Типа ты не в курсе, что у нас пропала большая часть вещей во время переезда?" nointeract
-    Alice_00 "As if you don't remember most of our stuff got lost when we moved?" nointeract
+    Alice_00 "Like you don't recall most of our stuff getting lost when we moved out?" nointeract
 
 # game/dialogues/alicetalk.rpy:169
 translate english talkblog1_no_e05a3f44:
 
     # Alice_09 "Знаешь что, Макс, отвали!"
-    Alice_09 "You know what, leave me alone!"
+    Alice_09 "You know what? Leave me alone!"
 
 # game/dialogues/alicetalk.rpy:170
 translate english talkblog1_no_4a96e107:
@@ -148,13 +148,13 @@ translate english talkblog1_no_4a96e107:
 translate english talkblog1_no_c2e53ff4:
 
     # Alice_13 "Ну, вот среди тех вещей было всё, что я использовала для ведения своего блога. Одежда, различные лаки, кремы... вообще всё!" nointeract
-    Alice_13 "Well, there was a whole bunch of clothes and makeup in all the stuff we lost which I needed for my blog." nointeract
+    Alice_13 "Well, there were a whole lot of clothes and makeup in everything we lost that I needed for my blog." nointeract
 
 # game/dialogues/alicetalk.rpy:181
 translate english talkblog1_no_a26f49f6:
 
     # Alice_13 "Макс, тебе заняться нечем, кроме как меня доставать? Ты же знаешь, что у меня всё пропало!" nointeract
-    Alice_13 "Max, why are you bothering me? Don't you have anything better to do? You know I lost everything!" nointeract
+    Alice_13 "Max, what are you messing with me for? Don't you have anything better to do? You know I lost everything!" nointeract
 
 # game/dialogues/alicetalk.rpy:186
 translate english talkblog1_no_3c44b91d:
@@ -9126,13 +9126,13 @@ translate english massage_sunscreen_sit_and_wait_9da1a297:
 translate english massage_sunscreen_sit_and_wait_45030154:
 
     # Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."
-    Alice_07 "Whew... Okay. Just keep an eye for me in case another one crawls over to me."
+    Alice_07 "Whew... Okay. Just keep an eye out in case another one crawls over to me."
 
 # game/dialogues/alicetalk.rpy:2240
 translate english massage_sunscreen_sit_and_wait_63bd396f:
 
     # Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
-    Max_02 "All right. But if you need anything, call me. We'll stay for a while."
+    Max_02 "Alright. But if you need anything, say so. I'll stay for a while."
 
 # game/dialogues/alicetalk.rpy:2241
 translate english massage_sunscreen_sit_and_wait_54c7faac:
@@ -9216,7 +9216,7 @@ translate english massage_sunscreen_sit_and_wait_975489a5:
 translate english massage_sunscreen_sit_and_wait_6bb8e8fa:
 
     # Max_03 "Не слишком-то ты раскаиваешься, а?"
-    Max_03 "You're not too remorseful, are you?"
+    Max_03 "You dont really mean that, do you?"
 
 # game/dialogues/alicetalk.rpy:2268
 translate english massage_sunscreen_sit_and_wait_429171c6:
@@ -9234,7 +9234,7 @@ translate english massage_sunscreen_sit_and_wait_d2128d74:
 translate english massage_sunscreen_sit_and_wait_25ec43fd:
 
     # Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
-    Alice_07 "But you'd better clean up, because we look really weird from the outside right now."
+    Alice_07 "But you'd better clean up, because we look really weird from right now."
 
 # game/dialogues/alicetalk.rpy:2271
 translate english massage_sunscreen_sit_and_wait_0f9075aa:
@@ -9264,7 +9264,7 @@ translate english massage_sunscreen_sit_and_wait_3b66c1cd:
 translate english massage_sunscreen_sit_and_wait_0aa348ea:
 
     # Max_01 "Да не так-то это просто, прикрыть его."
-    Max_01 "It's not that easy to cover it up."
+    Max_01 "It's not that easy."
 
 # game/dialogues/alicetalk.rpy:2279
 translate english massage_sunscreen_sit_and_wait_6b77c813:
