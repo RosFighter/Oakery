@@ -9863,7 +9863,7 @@ translate english strings:
 translate english alice_talk_tv_choco_b23dcf5f:
 
     # Alice_02 "Как же без неё. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_02 "I can't do without it. But just a second... Now I'm ready, start the massage!" nointeract
+    Alice_02 "I can't do without it. I'll just have one... Now I'm ready, start the massage!" nointeract
 
 # game/dialogues/alicetalk.rpy:511
 translate english alice_talk_tv_jeans_off_68d09736:
@@ -10160,4 +10160,3 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
     new "{i}Lick her pussy tongue{/i} {color=[ch.col]}(Sexual Experience. Chance: [ch.vis]){/color}"
-
