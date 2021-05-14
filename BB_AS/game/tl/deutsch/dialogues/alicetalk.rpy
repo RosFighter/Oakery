@@ -9305,7 +9305,7 @@ translate deutsch strings:
 translate deutsch alice_talk_tv_choco_b23dcf5f:
 
     # Alice_02 "Как же без неё. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Jedenfalls nicht ohne. Aber nur eine... Es ist gut... Jetzt bin ich bereit, beginne mit deiner Massage!" nointeract
 
 # game/dialogues/alicetalk.rpy:511
 translate deutsch alice_talk_tv_jeans_off_68d09736:
@@ -9455,7 +9455,7 @@ translate deutsch advanced_massage1_faster_890368bd:
 translate deutsch advanced_massage1_faster_9a3b862d:
 
     # Alice_05 "Ага. Давай, засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж классный, Макс... Спасибо!"
-    Alice_05 ""
+    Alice_05 "Ja. Komm schon, steck deinen Schwanz wieder weg oder du machst meine Füße ganz schmutzig... Nette Massage, Max... Danke!"
 
 # game/dialogues/alicetalk.rpy:887
 translate deutsch advanced_massage1_faster_ef15cedf:
@@ -9467,79 +9467,79 @@ translate deutsch advanced_massage1_faster_ef15cedf:
 translate deutsch advanced_massage1_no_rush_2a840d78:
 
     # Alice_06 "Макс, ты почему замедлился? Я хочу ещё, не останавливайся!"
-    Alice_06 ""
+    Alice_06 "Max, warum wirst du langsamer? Ich will mehr, hör jetzt bloß nicht auf!"
 
 # game/dialogues/alicetalk.rpy:900
 translate deutsch advanced_massage1_no_rush_9141846d:
 
     # Max_03 "Хочешь узнать, что я умею делать языком?"
-    Max_03 ""
+    Max_03 "Willst du wissen, was ich mit meiner Zunge alles machen kann?"
 
 # game/dialogues/alicetalk.rpy:901
 translate deutsch advanced_massage1_no_rush_070d587a:
 
     # Alice_08 "Ммм... Макс... Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка... Но я могу это представить, ненадолго... Так что успевай." nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Mmm... Max, ähm... Ich bin deine Schwester, und du... behandelst mich... als ob ich deine Freundin wäre... Aber ich kann mir vorstellen, dass ich für eine Weile... nimm Dir also soviel Zeit wie möglich." nointeract
 
 # game/dialogues/alicetalk.rpy:915
 translate deutsch advanced_massage1_no_rush_c8afbf4c:
 
     # Alice_07 "Мне любопытно узнать, сможешь ли ты что-то противопоставить тем, кто это делал до тебя... А это, между прочим, были девушки, которые куда больше твоего знают, как это надо делать."
-    Alice_07 ""
+    Alice_07 "Ich bin gespannt, ob du es mit denen aufnehmen kannst, die es vor dir versucht haben... und das waren übrigens Mädchen, die viel mehr darüber wissen, wie man das besser macht als du."
 
 # game/dialogues/alicetalk.rpy:916
 translate deutsch advanced_massage1_no_rush_1a590885:
 
     # Max_07 "Сомневаешься во мне?"
-    Max_07 ""
+    Max_07 "Zweifelst du an mir?"
 
 # game/dialogues/alicetalk.rpy:917
 translate deutsch advanced_massage1_no_rush_a4a1d9f6:
 
     # Alice_05 "А ты болтай поменьше... Может и перестану." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Du redest zu viel... Vielleicht sollte ich das." nointeract
 
 # game/dialogues/alicetalk.rpy:931
 translate deutsch advanced_massage1_no_rush_32373cd7:
 
     # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм... Как хорошо!"
-    Alice_09 ""
+    Alice_09 "[like!t] Ja, Max, ja! Ich bin so kurz davor... bloß nicht aufhören... Du hast so eine schnelle und flinke Zunge, Max... Mmm... Das fühlt sich gut an."
 
 # game/dialogues/alicetalk.rpy:932
 translate deutsch advanced_massage1_no_rush_40fa9c53:
 
     # Max_04 "{i}( Я сейчас устрою твоей сладкой киске такое, чего ты точно не забудешь! Хотя... нет, ты забудешь... Да и ладно. ){/i}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{i}(Ich bin dabei, deiner süßen Muschi etwas zu verpassen, das du nie vergessen wirst! Obwohl... Nein, du wirst... Oh, das ist okay.){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:944
 translate deutsch advanced_massage1_no_rush_b40ae767:
 
     # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да... Как же это было классно! Ох... Это было потрясающе..."
-    Alice_11 ""
+    Alice_11 "Ah! Ich kann es nicht mehr ertragen, Max... Ich komme! Ja... Das war so gut! Das war... Du warst unglaublich..."
 
 # game/dialogues/alicetalk.rpy:945
 translate deutsch advanced_massage1_no_rush_4ca76960:
 
     # Max_02 "Будешь ещё сомневаться в моих навыках?"
-    Max_02 ""
+    Max_02 "Zweifelst du immer noch an meinen Fähigkeiten?"
 
 # game/dialogues/alicetalk.rpy:952
 translate deutsch advanced_massage1_no_rush_d0cd8b5f:
 
     # Alice_07 "Ах, Макс! И где ты такому научился?! Неужто, просмотр порнушки может такому научить?"
-    Alice_07 ""
+    Alice_07 "Ach, Max! Wo hast du das gelernt?! Ist es nicht das, was man durch das Gucken von Pornos lernen kann?"
 
 # game/dialogues/alicetalk.rpy:953
 translate deutsch advanced_massage1_no_rush_51e45fcc:
 
     # Max_05 "Просто сделал всё так, как хотел бы, чтобы сделали мне..."
-    Max_05 ""
+    Max_05 "Ich habe nur das getan, was ich gewollt habe, dass ich sie mit dir mache..."
 
 # game/dialogues/alicetalk.rpy:954
 translate deutsch advanced_massage1_no_rush_9a92aacc:
 
     # Alice_05 "Да... такой массаж мне нравится... Вот бы всё время так! А сейчас, давай-ка засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж класcный, Макс... Спасибо!"
-    Alice_05 ""
+    Alice_05 "Ja... Ich mag diese Art der Massage... Ich wünschte, ich könnte das die ganze Zeit bekommen. Jetzt steck deinen Schwanz wieder weg oder du machst meine Füße ganz schmutzig... Das ist eine tolle Massage, Max. Danke!"
 
 # game/dialogues/alicetalk.rpy:955
 translate deutsch advanced_massage1_no_rush_ef15cedf:
@@ -9551,25 +9551,25 @@ translate deutsch advanced_massage1_no_rush_ef15cedf:
 translate deutsch advanced_massage1_no_rush_b26ae136:
 
     # Max_09 "{i}( С Алисой нужно как-то сближаться без конфет. Только как?! Она стала более адекватно воспринимать мои стояки, после случая с пауком во дворе... Так может, и при массаже ног у ТВ без конфет у меня что-то выгорит? ){/i}"
-    Max_09 ""
+    Max_09 "{i}(Ich brauche einen Weg, um an Alice heranzukommen, ohne die Süßigkeiten. Aber wie?! Seit dem Vorfall mit der Spinne im Garten toleriert sie meine Ständer besser... Vielleicht hilft da eine bonbonfreie Fußmassage vor dem Fernseher.){/i}"
 
 # game/dialogues/alicetalk.rpy:965
 translate deutsch advanced_massage1_no_rush_79e35b5c:
 
     # Alice_03 "[dont_like!t]Всё, Макс! Я передумала! Массаж был неплохой, но на этом мы закончим..."
-    Alice_03 ""
+    Alice_03 "[dont_like!t] Das ist es, Max! Ich habe meine Meinung geändert! Die Massage war gut, aber wir sind hier fertig..."
 
 # game/dialogues/alicetalk.rpy:966
 translate deutsch advanced_massage1_no_rush_bfdd5c01:
 
     # Max_08 "Да ладно, Алиса! Я же ещё ничего не успел сделать!"
-    Max_08 ""
+    Max_08 "Komm schon, Alice! Ich hatte noch keine Gelegenheit, irgendwas zu machen!"
 
 # game/dialogues/alicetalk.rpy:967
 translate deutsch advanced_massage1_no_rush_7d367cd2:
 
     # Alice_05 "Слишком много болтал. Вот и передумала. Но за массаж, спасибо! Давай, засовывай свой член обратно и гуляй..."
-    Alice_05 ""
+    Alice_05 "Du redest zu viel. Also habe ich meine Meinung geändert. Aber danke für die Massage! Komm schon, steck deinen Schwanz wieder weg und verschwinde..."
 
 # game/dialogues/alicetalk.rpy:968
 translate deutsch advanced_massage1_no_rush_7e6ff7bf:
@@ -9585,21 +9585,20 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:450
     old "Тебе джинсы не мешают? Может, снять..."
-    new ""
+    new "Stört dich deine Jeans? Warum ziehst du sie nicht aus..."
 
     # game/dialogues/alicetalk.rpy:864
     old "{i}не торопиться{/i}"
-    new ""
+    new "{i}Zeit nehmen{/i}"
 
     # game/dialogues/alicetalk.rpy:901
-    old "снять с Алисы трусики"
-    new ""
+    old "{i}снять с Алисы трусики{/i}"
+    new "{i}Alices Slip ausziehen{/i}"
 
     # game/dialogues/alicetalk.rpy:901
-    old "снять с Алисы шортики"
-    new ""
+    old "{i}снять с Алисы шортики{/i}"
+    new "{i}Alices Hosen ausziehen{/i}"
 
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
-    new ""
-
+    new "{i}ihre Muschi mit der Zunge verwöhnen{/i} {color=[ch.col]}(Sexuelle Erfahrung. Chance: [ch.vis]){/color}"

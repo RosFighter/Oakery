@@ -76,7 +76,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:68
     old "ВТ"
-    new "DIE"
+    new "DI"
 
     # game/core/02init.rpy:68
     old "ВТОРНИК"
@@ -376,7 +376,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:175
     old "Продукты"
-    new "Essen"
+    new "Produkte"
 
     # game/core/02init.rpy:175
     old "Электроника"

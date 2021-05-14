@@ -571,7 +571,7 @@ init python:
             # если при данном занятии разрешен диалог и есть тема для разговора
             AvailableActions['talk'].enabled = all([cur_plan.enabletalk, len(TalkMenuItems()) > 0])
         else:
-            AvailableActions['talk'].enabled = False
+            AvailableActions['talk'].enabled = True if GetTalksTheme() else False
 
         # комната Макса и Лизы
         if current_room == house[0]:

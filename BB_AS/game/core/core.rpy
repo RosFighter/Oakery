@@ -260,6 +260,7 @@ label NewDay:
             char = chars[ch]
             # сбросим подглядывания, диалоги и состояния
             char.daily.reset()
+            char.spanked = False
 
             # срок извинительных подарков
             if char.sorry.owe and char.sorry.left > 0:
@@ -977,4 +978,8 @@ label update_06_5:
         if ann.flags.help>4:
             $ items['fit1'].unblock()
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
+
+    if _version < "0.06.4.14":
+        if not lisa.flags.topless:
+            $ lisa.dcv.other.stage = 0
     return

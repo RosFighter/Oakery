@@ -10061,7 +10061,7 @@ translate english advanced_massage1_no_rush_a4a1d9f6:
 translate english advanced_massage1_no_rush_32373cd7:
 
     # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм... Как хорошо!"
-    Alice_09 "[like! t]Yes, Max, yes! I'm so close... Don't stop. You have such a quick and nimble tongue, Max... Mmm... That feels so good."
+    Alice_09 "[like!t]Yes, Max, yes! I'm so close... Don't stop. You have such a quick and nimble tongue, Max... Mmm... That feels so good."
 
 # game/dialogues/alicetalk.rpy:932
 translate english advanced_massage1_no_rush_40fa9c53:
@@ -10159,4 +10159,5 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
-    new "{i}Lick her pussy tongue{i} {color=[ch.col]}(Sexual Experience. Chance: [ch.vis]){/color}"
+    new "{i}Lick her pussy tongue{/i} {color=[ch.col]}(Sexual Experience. Chance: [ch.vis]){/color}"
+

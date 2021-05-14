@@ -1168,7 +1168,7 @@ translate deutsch olivia_repeatable_night_out_with_1c4fe2d2:
 translate deutsch olivia_repeatable_night_out_with_965e183f:
 
     # Olivia_04 "О! Давайте это посмотрим... Жалко, что не на самое начало серии попали, а то как-то совсем уж непонятно, что там происходит."
-    Olivia_04 "Оh! Schauen wir uns das an... Schade, dass wir nicht vom Anfang an schauen konnten, denn es ist irgendwie unlogisch, was da vor sich geht."
+    Olivia_04 "Oh! Schauen wir uns das an... Schade, dass wir nicht vom Anfang an schauen konnten, denn es ist irgendwie unlogisch, was da vor sich geht."
 
 # game/events/olivia.rpy:555
 translate deutsch olivia_repeatable_night_out_with_72187a45:

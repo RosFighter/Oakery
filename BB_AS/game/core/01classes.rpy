@@ -1381,16 +1381,16 @@ init python:
                 if GetWeekday(ev_day) in cut.lod or cut.lod is None:
                     # день недели входит в диаппазон
                     if tm1 < cut.tm <= tm2:
-                        # print attr, tm1, cut.tm, tm2
                         # время события входит в диаппазон
-                        if all([status_sleep, cut.sleep]):
-                            # статус сна совпадает
+                        # print attr, tm1, cut.tm, tm2
+                        if cut.sleep is None:
                             resp = True
-                        elif cut.cut and not cut.sleep:
-                            # событие прерывает сон, но сон не является условием
+                        elif (status_sleep == cut.sleep):
                             resp = True
-                        elif cut.sleep==status_sleep:
+                        elif all([status_sleep, cut.cut, not cut.sleep]):
                             resp = True
+                        # print attr, resp, (status_sleep, cut.sleep), (status_sleep, cut.cut, cut.sleep)
+
                     elif all([tm2 < cut.tm < '08:00', status_sleep, cut.sleep, cut.extend]):
                         # время события позже диаппазона, но МГГ спит и стоит статус продлевать сон
                         resp = True

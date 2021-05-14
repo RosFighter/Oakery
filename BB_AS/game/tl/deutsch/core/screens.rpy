@@ -264,9 +264,9 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1259
     old "{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}"
-    new ""
+    new "{i}{b}Gratulation!{/b} Du hast diese Möglichkeit abgeschlossen!{/i}"
 
     # game/core/screens.rpy:1261
     old "{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}"
-    new ""
+    new "{i}{b}Fehlgeschlagen.{/b} Leider haben deine Entscheidungen zu einem unschönen Ende geführt und die weitere Entwicklung der \"Möglichkeit\" verhindert.{/i}"
 

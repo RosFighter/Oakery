@@ -10,13 +10,13 @@ translate english AliceTalkStart_50ef2ada:
 translate english Alice_badbadmood_86d8a37d:
 
     # Alice_09 "Да пошёл ты! Не хочу тебя видеть даже!" nointeract
-    Alice_09 "Screw you! I don't want to see you right now!" nointeract
+    Alice_09 "Fuck off! I'm not in the mood!" nointeract
 
 # game/dialogues/alicetalk.rpy:53
 translate english Alice_badmood_de141364:
 
     # Alice_09 "Макс, отвали! Я не хочу с тобой разговаривать." nointeract
-    Alice_09 "Get lost, Max! I don't want to talk to you." nointeract
+    Alice_09 "Get lost, Max! I'm not in the mood." nointeract
 
 # game/dialogues/alicetalk.rpy:62
 translate english Alice_asksorry_2395f0d1:
@@ -64,7 +64,7 @@ translate english wash_dishes_alice_07966f8d:
 translate english wash_dishes_alice_e341ef54:
 
     # Alice_09 "Знаешь что, вали отсюда, пока мокрой тряпкой по голове не получил!" nointeract
-    Alice_09 "You know what? Get out of here before I hit you with a wet rag!" nointeract
+    Alice_09 "You know what? Piss off before I hit you with a wet rag!" nointeract
 
 # game/dialogues/alicetalk.rpy:114
 translate english talkblog1_3a17a0f5:
@@ -100,7 +100,7 @@ translate english talkblog1_51f5104a:
 translate english talkblog1_4c394248:
 
     # Alice_00 "Развиваться? Шутишь? Все мои вещи, лаки, материалы и прочее было в том контейнере, который пропал. Теперь у меня нет ничего..." nointeract
-    Alice_00 "Plans? Are you kidding me? Everything I need for my blog got lost, and all my plans along with them..." nointeract
+    Alice_00 "Plans? Are you kidding me? Everything I need for my blog got lost, and my plans along with them..." nointeract
 
 # game/dialogues/alicetalk.rpy:140
 translate english talkblog1_b5c0083a:
@@ -130,13 +130,13 @@ translate english talkblog1_bc534058:
 translate english talkblog1_no_f28dfb56:
 
     # Alice_00 "Типа ты не в курсе, что у нас пропала большая часть вещей во время переезда?" nointeract
-    Alice_00 "As if you don't remember most of our stuff got lost when we moved?" nointeract
+    Alice_00 "Like you don't recall most of our stuff getting lost when we moved out?" nointeract
 
 # game/dialogues/alicetalk.rpy:169
 translate english talkblog1_no_e05a3f44:
 
     # Alice_09 "Знаешь что, Макс, отвали!"
-    Alice_09 "You know what, leave me alone!"
+    Alice_09 "You know what? Leave me alone!"
 
 # game/dialogues/alicetalk.rpy:170
 translate english talkblog1_no_4a96e107:
@@ -148,13 +148,13 @@ translate english talkblog1_no_4a96e107:
 translate english talkblog1_no_c2e53ff4:
 
     # Alice_13 "Ну, вот среди тех вещей было всё, что я использовала для ведения своего блога. Одежда, различные лаки, кремы... вообще всё!" nointeract
-    Alice_13 "Well, there was a whole bunch of clothes and makeup in all the stuff we lost which I needed for my blog." nointeract
+    Alice_13 "Well, there were a whole lot of clothes and makeup in everything we lost that I needed for my blog." nointeract
 
 # game/dialogues/alicetalk.rpy:181
 translate english talkblog1_no_a26f49f6:
 
     # Alice_13 "Макс, тебе заняться нечем, кроме как меня доставать? Ты же знаешь, что у меня всё пропало!" nointeract
-    Alice_13 "Max, why are you bothering me? Don't you have anything better to do? You know I lost everything!" nointeract
+    Alice_13 "Max, what are you messing with me for? Don't you have anything better to do? You know I lost everything!" nointeract
 
 # game/dialogues/alicetalk.rpy:186
 translate english talkblog1_no_3c44b91d:
@@ -9126,13 +9126,13 @@ translate english massage_sunscreen_sit_and_wait_9da1a297:
 translate english massage_sunscreen_sit_and_wait_45030154:
 
     # Alice_07 "Фух... Ладно. Только ты посматривай, временами, чтобы в мою сторону никто не полз."
-    Alice_07 "Whew... Okay. Just keep an eye for me in case another one crawls over to me."
+    Alice_07 "Whew... Okay. Just keep an eye out in case another one crawls over to me."
 
 # game/dialogues/alicetalk.rpy:2240
 translate english massage_sunscreen_sit_and_wait_63bd396f:
 
     # Max_02 "Хорошо. Но, если что, зови. Ещё посидим."
-    Max_02 "All right. But if you need anything, call me. We'll stay for a while."
+    Max_02 "Alright. But if you need anything, say so. I'll stay for a while."
 
 # game/dialogues/alicetalk.rpy:2241
 translate english massage_sunscreen_sit_and_wait_54c7faac:
@@ -9216,7 +9216,7 @@ translate english massage_sunscreen_sit_and_wait_975489a5:
 translate english massage_sunscreen_sit_and_wait_6bb8e8fa:
 
     # Max_03 "Не слишком-то ты раскаиваешься, а?"
-    Max_03 "You're not too remorseful, are you?"
+    Max_03 "You dont really mean that, do you?"
 
 # game/dialogues/alicetalk.rpy:2268
 translate english massage_sunscreen_sit_and_wait_429171c6:
@@ -9234,7 +9234,7 @@ translate english massage_sunscreen_sit_and_wait_d2128d74:
 translate english massage_sunscreen_sit_and_wait_25ec43fd:
 
     # Alice_07 "Только ты давай прибери свою штуку, а то мы со стороны очень странно сейчас выглядим."
-    Alice_07 "But you'd better clean up, because we look really weird from the outside right now."
+    Alice_07 "But you'd better clean up, because we look really weird from right now."
 
 # game/dialogues/alicetalk.rpy:2271
 translate english massage_sunscreen_sit_and_wait_0f9075aa:
@@ -9264,7 +9264,7 @@ translate english massage_sunscreen_sit_and_wait_3b66c1cd:
 translate english massage_sunscreen_sit_and_wait_0aa348ea:
 
     # Max_01 "Да не так-то это просто, прикрыть его."
-    Max_01 "It's not that easy to cover it up."
+    Max_01 "It's not that easy."
 
 # game/dialogues/alicetalk.rpy:2279
 translate english massage_sunscreen_sit_and_wait_6b77c813:
@@ -9857,13 +9857,14 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:882
     old "Ну и ладно!"
     new "Fine!"
+
 # TODO: Translation updated at 2021-05-13 23:41
 
 # game/dialogues/alicetalk.rpy:364
 translate english alice_talk_tv_choco_b23dcf5f:
 
     # Alice_02 "Как же без неё. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_02 "" nointeract
+    Alice_02 "I can't do without it. But just a second... Now I'm ready, start the massage!" nointeract
 
 # game/dialogues/alicetalk.rpy:511
 translate english alice_talk_tv_jeans_off_68d09736:
@@ -10013,91 +10014,91 @@ translate english advanced_massage1_faster_890368bd:
 translate english advanced_massage1_faster_9a3b862d:
 
     # Alice_05 "Ага. Давай, засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж классный, Макс... Спасибо!"
-    Alice_05 ""
+    Alice_05 "Yeah. Come on, put your dick back in, or you'll get my feet all dirty... Nice massage, Max... Thank you."
 
 # game/dialogues/alicetalk.rpy:887
 translate english advanced_massage1_faster_ef15cedf:
 
     # Max_03 "Тебе спасибо..."
-    Max_03 "Thank you..."
+    Max_03 "No problem..."
 
 # game/dialogues/alicetalk.rpy:899
 translate english advanced_massage1_no_rush_2a840d78:
 
     # Alice_06 "Макс, ты почему замедлился? Я хочу ещё, не останавливайся!"
-    Alice_06 ""
+    Alice_06 "Max, why are you slowing down? I want more, don't stop!"
 
 # game/dialogues/alicetalk.rpy:900
 translate english advanced_massage1_no_rush_9141846d:
 
     # Max_03 "Хочешь узнать, что я умею делать языком?"
-    Max_03 ""
+    Max_03 "Do you want to know what I can do with my tongue?"
 
 # game/dialogues/alicetalk.rpy:901
 translate english advanced_massage1_no_rush_070d587a:
 
     # Alice_08 "Ммм... Макс... Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка... Но я могу это представить, ненадолго... Так что успевай." nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Mmm... Max, um... I'm your sister, and you... treating me... like I'm your girlfriend... But I can imagine that for a little while... So make time." nointeract
 
 # game/dialogues/alicetalk.rpy:915
 translate english advanced_massage1_no_rush_c8afbf4c:
 
     # Alice_07 "Мне любопытно узнать, сможешь ли ты что-то противопоставить тем, кто это делал до тебя... А это, между прочим, были девушки, которые куда больше твоего знают, как это надо делать."
-    Alice_07 ""
+    Alice_07 "I'm curious to see if you can do anything against those who did it before you... And they were girls, by the way, who know a lot more about how to do it than you do."
 
 # game/dialogues/alicetalk.rpy:916
 translate english advanced_massage1_no_rush_1a590885:
 
     # Max_07 "Сомневаешься во мне?"
-    Max_07 ""
+    Max_07 "Are you doubting me?"
 
 # game/dialogues/alicetalk.rpy:917
 translate english advanced_massage1_no_rush_a4a1d9f6:
 
     # Alice_05 "А ты болтай поменьше... Может и перестану." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "You don't talk so much... Maybe I will." nointeract
 
 # game/dialogues/alicetalk.rpy:931
 translate english advanced_massage1_no_rush_32373cd7:
 
     # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм... Как хорошо!"
-    Alice_09 ""
+    Alice_09 "[like!t]Yes, Max, yes! I'm so close... Don't stop. You have such a quick and nimble tongue, Max... Mmm... That feels so good."
 
 # game/dialogues/alicetalk.rpy:932
 translate english advanced_massage1_no_rush_40fa9c53:
 
     # Max_04 "{i}( Я сейчас устрою твоей сладкой киске такое, чего ты точно не забудешь! Хотя... нет, ты забудешь... Да и ладно. ){/i}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{i}( I'm about to give your sweet pussy something you won't forget! Although... no, you will... Oh, that's okay. ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:944
 translate english advanced_massage1_no_rush_b40ae767:
 
     # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да... Как же это было классно! Ох... Это было потрясающе..."
-    Alice_11 ""
+    Alice_11 "Ah! I can't take it anymore, Max... I'm coming! Yes... That was so good! That was... That was amazing..."
 
 # game/dialogues/alicetalk.rpy:945
 translate english advanced_massage1_no_rush_4ca76960:
 
     # Max_02 "Будешь ещё сомневаться в моих навыках?"
-    Max_02 ""
+    Max_02 "Are you still questioning my skills?"
 
 # game/dialogues/alicetalk.rpy:952
 translate english advanced_massage1_no_rush_d0cd8b5f:
 
     # Alice_07 "Ах, Макс! И где ты такому научился?! Неужто, просмотр порнушки может такому научить?"
-    Alice_07 ""
+    Alice_07 "Oh, Max! Where did you learn that?! Isn't that what watching porn can teach you?"
 
 # game/dialogues/alicetalk.rpy:953
 translate english advanced_massage1_no_rush_51e45fcc:
 
     # Max_05 "Просто сделал всё так, как хотел бы, чтобы сделали мне..."
-    Max_05 ""
+    Max_05 "I just did it the way I wanted them to do it for me..."
 
 # game/dialogues/alicetalk.rpy:954
 translate english advanced_massage1_no_rush_9a92aacc:
 
     # Alice_05 "Да... такой массаж мне нравится... Вот бы всё время так! А сейчас, давай-ка засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж класcный, Макс... Спасибо!"
-    Alice_05 ""
+    Alice_05 "Yes... I like this kind of massage... I wish I could do it all the time! Now put your dick back in or you'll get my feet all dirty... That's a great massage, Max. Thank you."
 
 # game/dialogues/alicetalk.rpy:955
 translate english advanced_massage1_no_rush_ef15cedf:
@@ -10109,25 +10110,25 @@ translate english advanced_massage1_no_rush_ef15cedf:
 translate english advanced_massage1_no_rush_b26ae136:
 
     # Max_09 "{i}( С Алисой нужно как-то сближаться без конфет. Только как?! Она стала более адекватно воспринимать мои стояки, после случая с пауком во дворе... Так может, и при массаже ног у ТВ без конфет у меня что-то выгорит? ){/i}"
-    Max_09 ""
+    Max_09 "{i}( You have to get close to Alice without candy. But how?! She's more accepting of my boners since the spider in the yard... So maybe a foot massage at the TV without candy would do the trick? ){/i}"
 
 # game/dialogues/alicetalk.rpy:965
 translate english advanced_massage1_no_rush_79e35b5c:
 
     # Alice_03 "[dont_like!t]Всё, Макс! Я передумала! Массаж был неплохой, но на этом мы закончим..."
-    Alice_03 ""
+    Alice_03 "[dont_like!t]That's it, Max! I changed my mind! The massage wasn't bad, but that's the end of it..."
 
 # game/dialogues/alicetalk.rpy:966
 translate english advanced_massage1_no_rush_bfdd5c01:
 
     # Max_08 "Да ладно, Алиса! Я же ещё ничего не успел сделать!"
-    Max_08 ""
+    Max_08 "Come on, Alice! I haven't had a chance to do anything yet!"
 
 # game/dialogues/alicetalk.rpy:967
 translate english advanced_massage1_no_rush_7d367cd2:
 
     # Alice_05 "Слишком много болтал. Вот и передумала. Но за массаж, спасибо! Давай, засовывай свой член обратно и гуляй..."
-    Alice_05 ""
+    Alice_05 "He talked too much. So I changed my mind. But for the massage, thank you! Come on, put your dick back in and take a walk..."
 
 # game/dialogues/alicetalk.rpy:968
 translate english advanced_massage1_no_rush_7e6ff7bf:
@@ -10143,21 +10144,20 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:450
     old "Тебе джинсы не мешают? Может, снять..."
-    new ""
+    new "Do your jeans bother you? Why don't you take them off..."
 
     # game/dialogues/alicetalk.rpy:864
     old "{i}не торопиться{/i}"
-    new ""
+    new "{i}Take your time{/i}"
 
     # game/dialogues/alicetalk.rpy:901
-    old "снять с Алисы трусики"
-    new ""
+    old "{i}снять с Алисы трусики{/i}"
+    new "{i}Take off Alice's panties{/i}"
 
     # game/dialogues/alicetalk.rpy:901
-    old "снять с Алисы шортики"
-    new ""
+    old "{i}снять с Алисы шортики{/i}"
+    new "{i}Take Alice's shorts off{/i}"
 
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
-    new ""
-
+    new "{i}Lick her pussy tongue{/i} {color=[ch.col]}(Sexual Experience. Chance: [ch.vis]){/color}"

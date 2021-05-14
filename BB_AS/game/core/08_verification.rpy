@@ -85,13 +85,13 @@ init python:
 
         rez = False
 
-        if all([GetWeekday(day)==3, olivia.dcv.feature.stage < 3]):
+        if all([GetWeekday(day)==3, olivia.dcv.feature.stage < 2]):
             # среда, первые две беседы с Оливией
             rez = True
-        elif all([lisa.flags.crush>11, GetWeekday(day)==2, olivia.dcv.feature.stage>2]):
+        elif all([lisa.flags.crush>11, GetWeekday(day)==2, olivia.dcv.feature.stage>1]):
             # каждый вторник, больше двух бесед с Оливией
             rez = True
-        elif  all([GetWeekday(day)==5, olivia.dcv.feature.stage<4]):
+        elif  all([GetWeekday(day)==5, 1<olivia.dcv.feature.stage<4]):
             # пятница, беседа о ночных посиделках ещё не состоялась
             rez = True
         elif  all([GetWeekday(day)==5, olivia.dcv.feature.stage>3, not olivia.dcv.special.done]):
