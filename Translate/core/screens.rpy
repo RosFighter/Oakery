@@ -264,9 +264,8 @@ translate english strings:
 
     # game/core/screens.rpy:1259
     old "{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}"
-    new ""
+    new "{i}{b}Congratulations! You have completed this opportunity!{/i}"
 
     # game/core/screens.rpy:1261
     old "{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}"
-    new ""
-
+    new "{i}{b}Failure.{/b} Your choices have led to an unfortunate end, blocking further advancement of this\"opportunity\"{/i}"
