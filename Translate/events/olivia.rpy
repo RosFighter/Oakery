@@ -1168,7 +1168,7 @@ translate english olivia_repeatable_night_out_with_1c4fe2d2:
 translate english olivia_repeatable_night_out_with_965e183f:
 
     # Olivia_04 "О! Давайте это посмотрим... Жалко, что не на самое начало серии попали, а то как-то совсем уж непонятно, что там происходит."
-    Olivia_04 "Оh! Let's watch this... Too bad we didn't get to the very beginning of the series, because it's kind of hard to see what's going on there."
+    Olivia_04 "Oh! Let's watch this... Too bad we didn't get to the very beginning of the series, because it's kind of hard to see what's going on there."
 
 # game/events/olivia.rpy:555
 translate english olivia_repeatable_night_out_with_72187a45:
@@ -1336,5 +1336,5 @@ translate english strings:
 
     # game/events/olivia.rpy:606
     old "{i}идти в свою комнату{/i}"
-    new "{i}Go to your room{i}"
+    new "{i}Go to your room{/i}"
 

@@ -9857,6 +9857,7 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:882
     old "Ну и ладно!"
     new "Fine!"
+
 # TODO: Translation updated at 2021-05-13 23:41
 
 # game/dialogues/alicetalk.rpy:364
@@ -10150,12 +10151,12 @@ translate english strings:
     new "{i}Take your time{/i}"
 
     # game/dialogues/alicetalk.rpy:901
-    old "снять с Алисы трусики"
-    new "Take off Alice's panties"
+    old "{i}снять с Алисы трусики{/i}"
+    new "{i}Take off Alice's panties{/i}"
 
     # game/dialogues/alicetalk.rpy:901
-    old "снять с Алисы шортики"
-    new "Take Alice's shorts off"
+    old "{i}снять с Алисы шортики{/i}"
+    new "{i}Take Alice's shorts off{/i}"
 
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"

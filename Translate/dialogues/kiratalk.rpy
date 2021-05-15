@@ -2604,7 +2604,7 @@ translate english strings:
 
     # game/dialogues/kiratalk.rpy:1025
     old "Я же не из корыстных целей это спрашиваю! Я хочу ей помочь... \n{color=[ch1.col]}(Убеждение. Шанс: [ch1.vis]){/color}"
-    new "It's not like I've got an ulterior motive! I want to help her. {\n{color=[ch1.col]}(persuasion. Chance: [ch1.vis]){/color}"
+    new "It's not like I've got an ulterior motive! I want to help her. \n{color=[ch1.col]}(persuasion. Chance: [ch1.vis]){/color}"
 
     # game/dialogues/kiratalk.rpy:1048
     old "Так ты бросила там мою маму?"
