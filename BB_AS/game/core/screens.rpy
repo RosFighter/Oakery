@@ -557,7 +557,7 @@ screen OnlineShop():
                                             add 'interface items-shop '+items[i].img
                                             # frame xfill True:
                                             vbox spacing 5:
-                                                frame xpos 50 xsize 400 background None:
+                                                frame xpos 50 xsize 600 background None:
                                                     text items[i].name style 'item_header'
                                                 frame xsize 700 background None:
                                                     text items[i].desc color gui.accent_color

@@ -1380,7 +1380,7 @@ init python:
 
                 if GetWeekday(ev_day) in cut.lod or cut.lod is None:
                     # день недели входит в диаппазон
-                    if tm1 < cut.tm <= tm2:
+                    if tm1 < cut.tm <= tm2 or all([cut.tm==tm2, tm2=='00:00']):
                         # время события входит в диаппазон
                         # print attr, tm1, cut.tm, tm2
                         if cut.sleep is None:
@@ -1413,7 +1413,7 @@ init python:
 
         def upcoming(self):
             if tm < prevtime and day>prevday:
-                lst = self.get_list_events(prevtime, '00:00', prevday)
+                lst = self.get_list_events(prevtime, '23:59', prevday)
                 if not lst:
                     lst.extend(self.get_list_events('00:00', tm, day))
             else:

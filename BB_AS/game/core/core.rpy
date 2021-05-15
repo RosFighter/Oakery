@@ -334,8 +334,11 @@ label Noon:
         $ new_items = True
     if (GetWeekday(day)==1 and 'kira' in chars and kira.dcv.feature.stage>6     # понедельник, состоялась первая фотосессия с Кирой
             and not ('sexbody1' in alice.gifts or items['sexbody1'].have or items['sexbody1'].InShop)):     # sexbody1 ещё не продавалось
-
         $ items['sexbody1'].unblock()
+        $ new_items = True
+    if all([ann.dcv.feature.stage==5, lisa.flags.m_shoulder>4, not (items['erofilm2'].have or items['erofilm2'].InShop)]):
+        # была йога с Анной, 5 и более сассажей плеч Лизе, фильм "Цвет ночи" еще не был приобретён
+        $ items['erofilm2'].unblock()
         $ new_items = True
 
         # если не активирован счетчик на фотосессию с Кирой - активировать его
@@ -706,6 +709,7 @@ label after_load:
         call set_eric_schedule from _call_set_eric_schedule
         call set_kira_schedule from _call_set_kira_schedule
         call set_lisa_schedule from _call_set_lisa_schedule
+        call set_olivia_shedule
 
         # обновление списка предметов, одежды, возможностей
         $ checking_items()
@@ -759,6 +763,8 @@ label update_06_5:
             ann.hourly.sleep        = peeping.pop('ann_sleep', 0)
             ann.hourly.dressed      = peeping.pop('ann_dressed', 0)
             ann.flags.erofilms      = talk_var.pop('ann_movie', 0)
+            if ann.flags.erofilms > 1:
+                ann.flags.erofilms = 1
 
             lisa.daily.bath         = peeping.pop('lisa_bath', 0)
             lisa.daily.shower       = peeping.pop('lisa_shower', 0)
@@ -982,4 +988,13 @@ label update_06_5:
     if _version < "0.06.4.14":
         if not lisa.flags.topless:
             $ lisa.dcv.other.stage = 0
+
+        if 'olivia' in chars:
+            if not olivia.desc:
+                $ olivia.desc = "Оливия, одноклассница моей младшей сестрёнки Лизы. Довольно милая девчонка. А главное с изюминкой... Ходит по школе без трусиков, а у себя по дому вообще голая, как и её родители, они ведь натуристы. Это классно, что у Лизы появилась такая интересная подружка!"
+
+    if _version < "0.06.4.16":
+        if 'erofilm2' in items:
+            $ items['erofilm2'].desc = items_dict['erofilm2'].desc
+
     return

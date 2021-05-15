@@ -587,3 +587,23 @@ translate english strings:
     old "Нравится, что я спасаю твою попку от наказания?"
     new "Do you like how I'm saving your ass from punishment?"
 
+# TODO: Translation updated at 2021-05-15 16:54
+
+translate english strings:
+
+    # game/core/02init.rpy:31
+    old "{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:32
+    old "{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:33
+    old "{color=#00FF00}{i}Получилось!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:34
+    old "{color=#E59400}{i}Не получилось!{/i}{/color}\n"
+    new ""
+

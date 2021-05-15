@@ -28,6 +28,11 @@ define alice_bad_mass  = _("{color=#E59400}{i}Алисе не понравилс
 define lisa_good_mass = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
 define lisa_bad_mass  = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
 
+define ann_good_mass = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
+define ann_bad_mass  = _("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")
+define succes_hide = _("{color=#00FF00}{i}Получилось!{/i}{/color}\n")
+define failed_hide  = _("{color=#E59400}{i}Не получилось!{/i}{/color}\n")
+
 define restrain = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
 define norestrain = _("{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n")
 

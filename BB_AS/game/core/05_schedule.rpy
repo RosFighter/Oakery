@@ -258,7 +258,8 @@ label set_lisa_schedule:
         Schedule((6,), '0:00', '1:59', 'tv2', "смотрит ТВ с Оливией", 'house', 4, 'olivia_lisa_tv',  variable="olivia_nightvisits()", enabletalk=False, glow=140),
         Schedule((6,), '2:00', '5:59', 'sleep2', "спит с Оливией", 'house', 0, 'olivia_lisa_sleep',  variable="olivia_nightvisits()", enabletalk=False, glow=130),
 
-        Schedule((6,), '00:0', '5:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night',  variable="not olivia_nightvisits()", enabletalk=False, glow=102),
+        Schedule((6,), '0:00', '1:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night',  variable="not olivia_nightvisits()", enabletalk=False, glow=102),
+        Schedule((6,), '2:00', '5:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night',  variable="not olivia_nightvisits()", enabletalk=False, glow=102),
         Schedule((0, 1, 2, 3, 4, 5), '0:0', '5:59', 'sleep', "спит (ночь)", 'house', 0, 'lisa_sleep_night', enabletalk=False, glow=102),
         # конец блока
         Schedule((0, 1, 2, 3, 4, 5, 6), '6:0', '6:59', 'sleep', "спит (утро)", 'house', 0, 'lisa_sleep_morning', enabletalk=False, glow=102),
@@ -325,7 +326,8 @@ label set_olivia_shedule:
     $ olivia.add_schedule(
         Schedule((6,), '0:00', '1:59', 'tv2', "смотрит ТВ с Оливией", 'house', 4, 'olivia_lisa_tv',  variable="olivia_nightvisits()", enabletalk=False, glow=140),
         Schedule((6,), '2:00', '5:59', 'sleep2', "спит с Оливией", 'house', 0, 'olivia_lisa_sleep',  variable="olivia_nightvisits()", enabletalk=False, glow=130),
-        Schedule((6,), '00:0', '5:59', 'sleep', "спит y себя дома",  variable="not olivia_nightvisits()"),
+        Schedule((6,), '0:00', '1:59', 'sleep', "спит y себя дома",  variable="not olivia_nightvisits()"),
+        Schedule((6,), '2:00', '5:59', 'sleep', "спит y себя дома",  variable="not olivia_nightvisits()"),
 
         Schedule((1, 2, 3, 4, 5), '11:0', '15:59', 'in_shcool', "в школе"),
 

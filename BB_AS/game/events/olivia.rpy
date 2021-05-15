@@ -69,7 +69,7 @@ label olivia_lisa_tv:
 
 label olivia_lisa_sleep:
     scene BG char Lisa bed-night
-    $ renpy.show('Olivia sleep-night '+pose2_4+lisa.dress)
+    $ renpy.show('Olivia sleep '+pose2_4+lisa.dress)
     return
 
 

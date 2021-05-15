@@ -566,3 +566,23 @@ translate deutsch strings:
     old "Нравится, что я спасаю твою попку от наказания?"
     new "Gefällt es dir, dass ich deinen Arsch vor der Bestrafung bewahre?"
 
+# TODO: Translation updated at 2021-05-15 16:54
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:31
+    old "{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:32
+    old "{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:33
+    old "{color=#00FF00}{i}Получилось!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:34
+    old "{color=#E59400}{i}Не получилось!{/i}{/color}\n"
+    new ""
+

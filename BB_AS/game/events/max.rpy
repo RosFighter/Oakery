@@ -217,7 +217,7 @@ label Notebook:
     if current_room == house[5]:
         jump Laptop
     $ renpy.block_rollback()
-    if ('06:00' <= tm < '22:00') or ('lisa' in house[0].cur_char and lisa.plan_name != 'sleep'):
+    if ('06:00' <= tm < '22:00') or ('lisa' in house[0].cur_char and lisa.plan_name not in ['sleep', 'sleep2']):
         scene BG char Max laptop-day-00
         $ renpy.show('Max laptop-day 01'+mgg.dress)
     else:
