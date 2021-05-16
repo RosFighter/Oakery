@@ -997,4 +997,37 @@ label update_06_5:
         if 'erofilm2' in items:
             $ items['erofilm2'].desc = items_dict['erofilm2'].desc
 
+    if _version < "0.06.4.17":
+        $ poss_update()
+
+        if lisa.flags.crush>6:
+            $ poss['Schoolmate'].open(1)
+        if lisa.flags.crush>7:
+            $ poss['Schoolmate'].open(2)
+        if lisa.flags.crush>8:
+            $ poss['Schoolmate'].open(3)
+        if lisa.flags.crush>9:
+            $ poss['Schoolmate'].open(4)
+        if lisa.flags.crush>11:
+            $ poss['Schoolmate'].open(5)
+        if 'olivia' in chars:
+            if olivia.dcv.feature.stage>0:
+                $ poss['Schoolmate'].open(6)
+            if olivia.dcv.feature.stage>1:
+                $ poss['Schoolmate'].open(7)
+            if olivia.dcv.feature.stage>3:
+                $ poss['Schoolmate'].open(8)
+            if olivia.dcv.special.stage>0:
+                if lisa.dcv.special.stage < 4:
+                    $ poss['Schoolmate'].open(9)
+                else:
+                    $ poss['Schoolmate'].open(10)
+            if olivia.dcv.feature.stage>4:
+                $ poss['Schoolmate'].open(11)
+            if olivia.dcv.other.stage>1:
+                $ poss['Schoolmate'].open(12)
+        if lisa.flags.topless>1:
+            $ poss['Schoolmate'].open(13)
+
+
     return

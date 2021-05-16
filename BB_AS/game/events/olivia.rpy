@@ -131,6 +131,7 @@ label olivia_first_meeting:
 
     #после этого девчонки будут загорать и купаться с 17:00 до 19:00
     $ lisa.flags.crush = 12
+    $ poss['Schoolmate'].open(5)
     call AddOlivia from _call_AddOlivia
     # если уже началась борьба с Эриком за Лизу, ночные встречи будут каждую неделю, иначе раз в две недели
     $ olivia.dcv.battle.stage = 1 if lisa.dcv.battle.stage else 2
@@ -197,6 +198,7 @@ label olivia_first_night_visit:
     menu:
         Olivia_04 "Ну и отлично! Пойдёмте уже..."
         "{i}идти в гостиную{/i}":
+            $ poss['Schoolmate'].open(10)
             jump night_tv_with_olivia
 
     label .failure:
@@ -212,6 +214,7 @@ label olivia_first_night_visit:
 
         Max_14 "Ладно..."
         #перенос Макса в его комнату
+        $ poss['Schoolmate'].open(9)
         $ spent_time = 20
         $ current_room = house[0]
         jump Waiting
@@ -504,6 +507,7 @@ label olivia_second_night_out_with:
     Lisa_01 "Нет, я даже не заметила, как ты встала..."
     Max_01 "Да, я тоже. Сладких снов, девчонки."
 
+    $ poss['Schoolmate'].open(12)
     $ spent_time = TimeDifference(tm, '02:00')
     jump Waiting
 
@@ -618,5 +622,6 @@ label olivia_repeatable_night_out_with:
     Olivia_01 "Всем спокойной ночи..."
     Max_01 "Приятных снов."
 
+    $ poss['Schoolmate'].open(13)
     $ spent_time = TimeDifference(tm, '02:00')
     jump Waiting

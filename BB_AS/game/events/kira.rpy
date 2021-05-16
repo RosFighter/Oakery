@@ -835,6 +835,7 @@ label kira_night_swim:
                                     if RandomChance(sex2.ch):
                                         # (Удалось сдержаться!)
                                         $ Skill('sex', 0.2)
+                                        $ added_mem_var('bj_in_pool')
                                         #pool-night-06-m&k-02
                                         scene Kira pool-night 12
                                         Max_21 "[restrain!t]{i}( Вот чёрт! Я двигаюсь ей навстречу, а она всё глубже берёт его в рот! И всё больше и больше ускоряется... Такое я долго не выдержу! Я уже на грани... ){/i}"

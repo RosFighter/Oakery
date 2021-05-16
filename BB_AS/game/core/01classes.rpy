@@ -1620,374 +1620,374 @@ init python:
             self.timer_range = timer_range - .1
             self.timer_jump  = timer_jump
 
-    class Chip():
-        def __init__(self, nm, pr, cv, lv, dv, mv, dd=None):
-            self.nm = nm    # наименование показателя
-            self.pr = pr    # строка-кортеж, содержащая day, tm(игровое время), ctm (время назначения проверки), ll, ul, ddop
-            self.cv = cv    # текущее значение
-            self.lv = lv    # последнее значение
-            self.dv = dv    # значение на начало дня
-            self.mv = mv    # максимальное значение
-            self.dd = dd    # значение дополнительного параметра
+    # class Chip():
+    #     def __init__(self, nm, pr, cv, lv, dv, mv, dd=None):
+    #         self.nm = nm    # наименование показателя
+    #         self.pr = pr    # строка-кортеж, содержащая day, tm(игровое время), ctm (время назначения проверки), ll, ul, ddop
+    #         self.cv = cv    # текущее значение
+    #         self.lv = lv    # последнее значение
+    #         self.dv = dv    # значение на начало дня
+    #         self.mv = mv    # максимальное значение
+    #         self.dd = dd    # значение дополнительного параметра
 
-    class Cipher():
-
-        # класс для хранения и шифровки числовых параметров
-        LETS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + \
-            'abcdefghijklmnopqrstuvwxyz' + \
-            '0123456789' + \
-            ':.;,?!@#$%&()+=-*/_<>[]{}`~^"\'\\' + \
-            'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ' + \
-            'абвгдеёжзийклмнопрстуфхйчшщьыъэюя'
-
-        NS = '0123456789abcdefghijklmnopqrstuvwxyz'
-
-        hran  = {}  # словарь-хранилище зашифрованных параметров
-        kdir  = {}  # словарь ключей для шифровки параметров (обновляются при верификации)
-        cur   = {}  # номера ключей и слова для шифровки текущих значений (меняются при верификации)
-
-        name = ''
-
-        def __init__(self, name, val=None, ll=None, ul=None, ddop=None):
-            # генерируем ключи для подстановочного шифра
-            if not Cipher.hran:
-                # словаря ключей обновляются при инициации только при пустом хранилище
-                self.__key_gen__()
-                self.__cur_gen__()
-                # так же один раз задается порядок символов для задания
-                # произвольной шифрованой системы счисления
-                l0 = list('123456789abcdefghijklmnopqrstuvwxyz')
-                renpy.random.shuffle(l0)
-                Cipher.NS = '0'+''.join(l0)
-
-            # шифруем name и используем его md5 в качестве ключа словаря hran
-            self.name = self.alg3_0(name)
-            digest = hashlib.md5(self.alg2(name).encode("utf-8")).hexdigest()
-
-            if val is None:
-                val = 0     # шифруем как 0
-
-            # затем шифруем значение и размещаем его в нужных частях значения словаря
-            if not digest[:12] in Cipher.hran:
-                Cipher.hran[digest[:12]] = Chip(
-                        self.alg0(self.alg2(self.name, 0, Cipher.cur[2]), 0, Cipher.cur[3]),            # nm, наименование параметра
-                        self.alg3_0(str((day, tm, tm, ll, ul, ddop))),                                  # pr, кортеж дополнительных параметров, нужные для проверки
-                        self.alg0(self.alg4(self.to_str(val))+';'+tm, 0, digest),                       # cv, текущее значение
-                        self.alg1(self.alg2(self.to_str(val), 0, Cipher.cur[2])+';'+tm+';'+str(day)),   # lv, последнее значение
-                        self.alg4(self.alg0(self.to_str(val)), Cipher.cur[1]),                          # dv, значение на начало дня
-                        self.alg4(self.alg0(self.to_str(val), 0, Cipher.cur[3]), Cipher.cur[0]),        # mv, максимальное значение
-                        None if ddop is None else self.alg0(self.to_str(eval(ddop))),                   # dd, значение дополнительного параметра
-                    )
-            else:
-                print "Показатель уже есть в хранилище"
-
-        def get(self):
-            digest = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
-            return self.from_str(self.alg4(self.alg0(Cipher.hran[digest[:12]].cv, 1, digest)[:-6], '10'))
-
-        def add(self, pr):
-            # добавляет pr к текущему значению
-            digest  = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
-            val     = self.from_str(self.alg4(self.alg0(Cipher.hran[digest[:12]].cv, 1, digest)[:-6], '10'))+pr
-            pr      = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
-            if pr.ll and val < pr.ll:
-                var = pr.ll
-            if pr.ul and val > pr.ul:
-                var = pr.ul
-            Cipher.hran[digest[:12]].cv = self.alg0(self.alg4(self.to_str(val))+';'+tm, 0, digest)
-
-        def update(self, newval):
-            # задаём новое текущее значение
-            digest = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
-            pr      = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
-            if pr.ll and val < pr.ll:
-                var = pr.ll
-            if pr.ul and val > pr.ul:
-                var = pr.ul
-            Cipher.hran[digest[:12]].cv = self.alg0(self.alg4(self.to_str(newval))+';'+tm, 0, digest)
-
-        def add_limits(self, ll, ul=None):
-            # устанавливает лимиты значения, если не были заданы при создании
-            digest  = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
-            pr      = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
-            edited = False
-            val     = self.from_str(self.alg4(self.alg0(Cipher.hran[digest[:12]].cv, 1, digest)[:-6], '10'))
-            if ll and val < ll:
-                edited = True
-                var = ll
-            if ul and val > ul:
-                edited = True
-                var = ul
-            if edited:
-                Cipher.hran[digest[:12]].cv = self.alg0(self.alg4(self.to_str(newval))+';'+tm, 0, digest)
-            Cipher.hran[digest[:12]].pr = self.alg3_0(str((day, tm, pr.ctm, ll, ul, pr.ddop)))
-
-        def add_ddop(self, ddop):
-            # устанавливает (или заменяет) дополнительный параметр, если не был задан при создании
-            digest = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
-            pr = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
-            Cipher.hran[digest[:12]].pr = self.alg3_0(str((day, tm, pr.ctm, pr.ll, pr.ul, pr.ddop)))
-            Cipher.hran[digest[:12]].dd = None if ddop is None else self.alg0(self.to_str(eval(ddop)))
-
-        def proverka(self, ctm=None, tp=0):
-            if ctm is None:
-                ctm = tm
-            # tp: 0 - раз в 6 часов, 1 - новый игровой день
-            td = {}
-            # расшифруем все значения во временный словарь
-            for dict_key in Cipher.hran:
-                nm      = self.alg3_1(self.alg2(self.alg0(Cipher.hran[dict_key].nm, 1, Cipher.cur[3]), 1, Cipher.cur[2]))
-                pr      = self.razdop(self.alg3_1(Cipher.hran[dict_key].pr))
-                digest  = hashlib.md5(self.alg2(nm).encode("utf-8")).hexdigest()
-                cv      = self.from_str(self.alg4(self.alg0(Cipher.hran[dict_key].cv, 1, digest)[:-6], '10'))
-                tv      = self.alg1(Cipher.hran[dict_key].lv, 1)
-                lv      = self.from_str(self.alg2(tv[:tv[:tv.rfind(';')].rfind(';')], 1, Cipher.cur[2]))
-                dv      = self.from_str(self.alg0(self.alg4(Cipher.hran[dict_key].dv, Cipher.cur[1][::-1]), 1))
-                mv      = self.from_str(self.alg0(self.alg4(Cipher.hran[dict_key].mv, Cipher.cur[0][::-1]), 1, Cipher.cur[3]))
-                dd      = None if Cipher.hran[dict_key].dd is None else self.from_str(self.alg0(Cipher.hran[dict_key].dd, 1))
-
-                td[nm]  = [cv, lv, dv, mv, dd, pr, digest]
-
-            if tp==1:
-                # если проверка "новый день", сменим ключи
-                self.__key_gen__()
-                self.__cur_gen__()
-
-            # проверим и обновим значения
-            for nm in td:
-                cv      = td[nm][0]
-                lv      = td[nm][1]
-                dv      = td[nm][2]
-                mv      = td[nm][3]
-                dd      = td[nm][4]
-                pr      = td[nm][5]
-                digest  = td[nm][6]
-
-                if not self.acceptable(nm, td, tp):
-                    # изменения за пределами разрешённых
-                    cv = lv / 2 if cv > mv else lv
-
-                if tp<1:
-                    # обновим последнее значение
-                    lv  = cv
-                else:
-                    # обновим последнее и суточное значения
-                    dv = lv = cv
-
-                # при необходимости обновим максимальное значение
-                if cv > mv:
-                    mv  = cv
-
-                # обновим значение дополнительного реквизита
-                ll      = pr.ll
-                ul      = pr.ul
-                ddop    = pr.ddop
-
-                if ddop is not None:
-                    dd  = eval(ddop)
-
-                # запишем значения в словрь
-                # записываем сразу все параметры, чтобы не проверять на изменения при проверке в течении дня
-                # а при ежедневной проверке у нас меняются ключи
-                Cipher.hran[digest[:12]] = Chip(
-                        self.alg0(self.alg2(self.alg3_0(nm), 0, Cipher.cur[2]), 0, Cipher.cur[3]),      # nm, наименование параметра
-                        self.alg3_0(str((day, tm, ctm, ll, ul, ddop))),                                 # pr, кортеж дополнительных параметров, нужные для проверки
-                        self.alg0(self.alg4(self.to_str(cv))+';'+tm, 0, digest),                        # cv, текущее значение
-                        self.alg1(self.alg2(self.to_str(lv), 0, Cipher.cur[2])+';'+tm+';'+str(day)),    # lv, последнее значение
-                        self.alg4(self.alg0(self.to_str(dv)), Cipher.cur[1]),                           # dv, значение на начало дня
-                        self.alg4(self.alg0(self.to_str(mv), 0, Cipher.cur[3]), Cipher.cur[0]),         # mv, максимальное значение
-                        None if ddop is None else self.alg0(self.to_str(eval(ddop))),                   # dd, значение дополнительного параметра
-                    )
-
-        def acceptable(self, nm, td, tp=0):
-            if td[nm][0] < td[nm][1]:
-                # текущее значение меньше последнего
-                return True
-            else:
-                t_delta = td[nm][0] - td[nm][1]
-                d_delta = td[nm][0] - td[nm][2]
-            rez = True
-
-            # if self.alg3_1(eval(nm).name) != nm:
-            #     # строка имени параметра должна выдавать именно это значение, а не какое-то другое
-            #     return False
-
-            if nm=='mgg.money':
-                pass
-            elif nm=='mgg.account':
-                pass
-
-            return rez
-
-        def __key_gen__(self):
-            # исходный список символов для формирования ключей подстановочного шифра
-            l0 = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ' + \
-                'abcdefghijklmnopqrstuvwxyz' + \
-                '0123456789' + ':.;,!@#$()+=-*_<>~^')
-            for i in range(10):
-                renpy.random.shuffle(l0)
-                Cipher.kdir[i] = ''.join(l0)
-
-        def __cur_gen__(self):
-            k0 = renpy.random.randint(0, 9)
-            k1 = renpy.random.randint(0, 9)
-            while k0 == k1:
-                k1 = renpy.random.randint(0, 9)
-            k2 = renpy.random.randint(0, 9)
-            k3 = renpy.random.randint(0, 9)
-            while k2 == k3:
-                k3 = renpy.random.randint(0, 9)
-            lets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-            w1 = w2 = ''
-            for i in range(renpy.random.randint(6, 15)):
-                w1 += lets[renpy.random.randint(0, 51)]
-            for i in range(renpy.random.randint(6, 15)):
-                w2 += lets[renpy.random.randint(0, 51)]
-            Cipher.cur[0] = str(k0)+str(k1)
-            Cipher.cur[1] = str(k2)+str(k3)
-            Cipher.cur[2] = w1
-            Cipher.cur[3] = w2
-
-        def razdop(self, pr):
-            ts = pr[1:-1].split(', ')
-            try:
-                tday = int(ts[0])
-            except:
-                print "Не удалось преобразовать день к числу ({t1})".format(t1=ts[0])
-                tday = day
-
-            ttm  = ts[1][2:-1]
-            ctm = ts[2][2:-1]
-            if ts[3] == "None":
-                ll = None
-            elif ts[3].find('.'):
-                ll = float(ts[3])
-            else:
-                ll = int(ts[3])
-            if ts[4] == "None":
-                ul = None
-            elif ts[3].find('.'):
-                ul = float(ts[4])
-            else:
-                ul = int(ts[4])
-            ddop = None if ts[5] == "None" else ts[5][2:-1]
-
-            return dop(tday, ttm, ctm, ll, ul, ddop)
-
-        def to_str(self, val):
-            if type(val)==float:
-                return self.alg3_0('f_'+str(val))
-            elif type(val)==int:
-                return self.alg3_0('i_'+str(val))
-            else:
-                # в остальных случаях на выходе дешифровки будет строка
-                return self.alg3_0(str(val))
-
-        def from_str(self, string):
-            t = self.alg3_1(string)
-            try:
-                if t[:2]=='f_':
-                    return float(t[2:])
-                elif t[:2]=='i_':
-                    return int(t[2:])
-                else:
-                    return t
-            except ValueError:
-                print "Ошибка преобразования строки в число {t} ({str})".format(t=t, str=string)
-                return 0
-
-        def alg0(self, string, mode=0, kw=None):
-            # метод Виженера
-            tr = []
-            keyIndex = 0
-            if kw is None:
-                kw = Cipher.cur[2]
-
-            for sym in string:
-                num = self.LETS.find(sym)
-                if num != -1:
-                    if mode == 0:
-                        num += self.LETS.find(kw[keyIndex])
-                    elif mode == 1:
-                        num -= self.LETS.find(kw[keyIndex])
-                    num %= len(self.LETS)
-
-                    tr.append(self.LETS[num])
-                    keyIndex += 1
-
-                    if keyIndex == len(kw):
-                        keyIndex = 0
-                else:
-                    tr.append(sym)
-            return ''.join(tr)
-
-        def alg1(self, string, mode=0):
-            # Афинный шифр
-            if mode > 0:
-                return ''.join(map(lambda ch:chr(55*(ord(ch)-3)%128), string)).decode('utf-8')
-            else:
-                return ''.join(map(lambda ch:chr((7*ord(ch)+3)%128), string.encode('utf-8')))
-
-        def alg2(self, string, mode=0, sk='SagitTariUs'):
-            # метод XOR
-            if mode==1:
-                string = base64.b64decode(string)
-            rez = ''.join(chr(ord(x) ^ ord(y)) for (x,y) in izip(string, cycle(sk)))
-            if mode==0:
-                return base64.b64encode(rez).strip()
-            return rez
-
-        def alg3_0(self, string, numb_sys=None, rev=None):
-            # мой алгоритм. шифровка в произвольную систему счисления на базе рандомизированной строки
-            if numb_sys is None:
-                numb_sys = renpy.random.randint(4, 36)  # выбираем систему счисления
-            nums = []
-            max_len = 1
-            if rev is None:
-                rev = renpy.random.randint(1, 3)        # каждая rev запись будет в развёрнутом виде
-            for ch in string:
-                s = ''
-                d = ord(ch)  # получаем десятичный код символа
-                if d == 0:
-                    s = Cipher.NS[0]
-                while d > 0:
-                    # переводим в выбранную систему счисления, регистр случаен
-                    s = (Cipher.NS[d % numb_sys] if renpy.random.randint(0, 1)>0 else Cipher.NS[d % numb_sys].upper())+ s
-                    d = d // numb_sys
-                max_len = max(max_len, len(s))
-                nums.append(s)
-
-            # первые 2 символа - система счисления
-            # 3-й символ номер разворачиваемых
-            # 4й и 5й - максимальная длина записи символа в развёрнутом виде
-            rez = ('0'+str(numb_sys))[-2:]+str(rev)+(('0'+str(max_len))[-2:])[::-1]
-            s0 = ''.join('0' for ch in range(max_len))
-            x = 0
-            for d in nums:
-                rez += ((s0 + d)[-max_len:][::-1] if x % rev == 0 else (s0 + d)[-max_len:])
-                x += 1
-
-            return rez
-
-        def alg3_1(self, string):
-            # мой алгоритм. дешифровка
-            try:
-                numb_sys = int(string[:2])
-                rev      = int(string[2])
-                max_len  = int(string[4:2:-1])
-            except ValueError:
-                print "Ошибка преобразования в число {t1}, {t2}, {t3})".format(t1=string[:2], t2=string[2], t3=string[4:2:-1])
-                return ''
-
-            string = string[5:]
-            nums = [(string[x:x+max_len][::-1] if (x // max_len) % rev == 0 else string[x:x+max_len]) for x in range(0, len(string), max_len)]
-            result = ''
-            for st in nums:
-                result += chr(int(sum([Cipher.NS.find(st[x].lower())*numb_sys**(len(st)-x-1) for x in range(len(st))])))
-            return result
-
-        def alg4(self, crtext, sk='01'):
-            # подстановочный шифр
-            key1 = self.kdir[int(sk[0])]    # определяем позицию символа в первом ключе
-            key2 = self.kdir[int(sk[1])]    # и заменяем символом с такой же позицией из второго ключа
-            return ''.join([((key2[key1.find(symbol)] if key1.find(symbol)!=-1 else symbol)) for symbol in crtext])
+    # class Cipher():
+    #
+    #     # класс для хранения и шифровки числовых параметров
+    #     LETS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + \
+    #         'abcdefghijklmnopqrstuvwxyz' + \
+    #         '0123456789' + \
+    #         ':.;,?!@#$%&()+=-*/_<>[]{}`~^"\'\\' + \
+    #         'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ' + \
+    #         'абвгдеёжзийклмнопрстуфхйчшщьыъэюя'
+    #
+    #     NS = '0123456789abcdefghijklmnopqrstuvwxyz'
+    #
+    #     hran  = {}  # словарь-хранилище зашифрованных параметров
+    #     kdir  = {}  # словарь ключей для шифровки параметров (обновляются при верификации)
+    #     cur   = {}  # номера ключей и слова для шифровки текущих значений (меняются при верификации)
+    #
+    #     name = ''
+    #
+    #     def __init__(self, name, val=None, ll=None, ul=None, ddop=None):
+    #         # генерируем ключи для подстановочного шифра
+    #         if not Cipher.hran:
+    #             # словаря ключей обновляются при инициации только при пустом хранилище
+    #             self.__key_gen__()
+    #             self.__cur_gen__()
+    #             # так же один раз задается порядок символов для задания
+    #             # произвольной шифрованой системы счисления
+    #             l0 = list('123456789abcdefghijklmnopqrstuvwxyz')
+    #             renpy.random.shuffle(l0)
+    #             Cipher.NS = '0'+''.join(l0)
+    #
+    #         # шифруем name и используем его md5 в качестве ключа словаря hran
+    #         self.name = self.alg3_0(name)
+    #         digest = hashlib.md5(self.alg2(name).encode("utf-8")).hexdigest()
+    #
+    #         if val is None:
+    #             val = 0     # шифруем как 0
+    #
+    #         # затем шифруем значение и размещаем его в нужных частях значения словаря
+    #         if not digest[:12] in Cipher.hran:
+    #             Cipher.hran[digest[:12]] = Chip(
+    #                     self.alg0(self.alg2(self.name, 0, Cipher.cur[2]), 0, Cipher.cur[3]),            # nm, наименование параметра
+    #                     self.alg3_0(str((day, tm, tm, ll, ul, ddop))),                                  # pr, кортеж дополнительных параметров, нужные для проверки
+    #                     self.alg0(self.alg4(self.to_str(val))+';'+tm, 0, digest),                       # cv, текущее значение
+    #                     self.alg1(self.alg2(self.to_str(val), 0, Cipher.cur[2])+';'+tm+';'+str(day)),   # lv, последнее значение
+    #                     self.alg4(self.alg0(self.to_str(val)), Cipher.cur[1]),                          # dv, значение на начало дня
+    #                     self.alg4(self.alg0(self.to_str(val), 0, Cipher.cur[3]), Cipher.cur[0]),        # mv, максимальное значение
+    #                     None if ddop is None else self.alg0(self.to_str(eval(ddop))),                   # dd, значение дополнительного параметра
+    #                 )
+    #         else:
+    #             print "Показатель уже есть в хранилище"
+    #
+    #     def get(self):
+    #         digest = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
+    #         return self.from_str(self.alg4(self.alg0(Cipher.hran[digest[:12]].cv, 1, digest)[:-6], '10'))
+    #
+    #     def add(self, pr):
+    #         # добавляет pr к текущему значению
+    #         digest  = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
+    #         val     = self.from_str(self.alg4(self.alg0(Cipher.hran[digest[:12]].cv, 1, digest)[:-6], '10'))+pr
+    #         pr      = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
+    #         if pr.ll and val < pr.ll:
+    #             var = pr.ll
+    #         if pr.ul and val > pr.ul:
+    #             var = pr.ul
+    #         Cipher.hran[digest[:12]].cv = self.alg0(self.alg4(self.to_str(val))+';'+tm, 0, digest)
+    #
+    #     def update(self, newval):
+    #         # задаём новое текущее значение
+    #         digest = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
+    #         pr      = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
+    #         if pr.ll and val < pr.ll:
+    #             var = pr.ll
+    #         if pr.ul and val > pr.ul:
+    #             var = pr.ul
+    #         Cipher.hran[digest[:12]].cv = self.alg0(self.alg4(self.to_str(newval))+';'+tm, 0, digest)
+    #
+    #     def add_limits(self, ll, ul=None):
+    #         # устанавливает лимиты значения, если не были заданы при создании
+    #         digest  = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
+    #         pr      = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
+    #         edited = False
+    #         val     = self.from_str(self.alg4(self.alg0(Cipher.hran[digest[:12]].cv, 1, digest)[:-6], '10'))
+    #         if ll and val < ll:
+    #             edited = True
+    #             var = ll
+    #         if ul and val > ul:
+    #             edited = True
+    #             var = ul
+    #         if edited:
+    #             Cipher.hran[digest[:12]].cv = self.alg0(self.alg4(self.to_str(newval))+';'+tm, 0, digest)
+    #         Cipher.hran[digest[:12]].pr = self.alg3_0(str((day, tm, pr.ctm, ll, ul, pr.ddop)))
+    #
+    #     def add_ddop(self, ddop):
+    #         # устанавливает (или заменяет) дополнительный параметр, если не был задан при создании
+    #         digest = hashlib.md5(self.alg2(self.alg3_1(self.name)).encode("utf-8")).hexdigest()
+    #         pr = self.razdop(self.alg3_1(Cipher.hran[digest[:12]].pr))
+    #         Cipher.hran[digest[:12]].pr = self.alg3_0(str((day, tm, pr.ctm, pr.ll, pr.ul, pr.ddop)))
+    #         Cipher.hran[digest[:12]].dd = None if ddop is None else self.alg0(self.to_str(eval(ddop)))
+    #
+    #     def proverka(self, ctm=None, tp=0):
+    #         if ctm is None:
+    #             ctm = tm
+    #         # tp: 0 - раз в 6 часов, 1 - новый игровой день
+    #         td = {}
+    #         # расшифруем все значения во временный словарь
+    #         for dict_key in Cipher.hran:
+    #             nm      = self.alg3_1(self.alg2(self.alg0(Cipher.hran[dict_key].nm, 1, Cipher.cur[3]), 1, Cipher.cur[2]))
+    #             pr      = self.razdop(self.alg3_1(Cipher.hran[dict_key].pr))
+    #             digest  = hashlib.md5(self.alg2(nm).encode("utf-8")).hexdigest()
+    #             cv      = self.from_str(self.alg4(self.alg0(Cipher.hran[dict_key].cv, 1, digest)[:-6], '10'))
+    #             tv      = self.alg1(Cipher.hran[dict_key].lv, 1)
+    #             lv      = self.from_str(self.alg2(tv[:tv[:tv.rfind(';')].rfind(';')], 1, Cipher.cur[2]))
+    #             dv      = self.from_str(self.alg0(self.alg4(Cipher.hran[dict_key].dv, Cipher.cur[1][::-1]), 1))
+    #             mv      = self.from_str(self.alg0(self.alg4(Cipher.hran[dict_key].mv, Cipher.cur[0][::-1]), 1, Cipher.cur[3]))
+    #             dd      = None if Cipher.hran[dict_key].dd is None else self.from_str(self.alg0(Cipher.hran[dict_key].dd, 1))
+    #
+    #             td[nm]  = [cv, lv, dv, mv, dd, pr, digest]
+    #
+    #         if tp==1:
+    #             # если проверка "новый день", сменим ключи
+    #             self.__key_gen__()
+    #             self.__cur_gen__()
+    #
+    #         # проверим и обновим значения
+    #         for nm in td:
+    #             cv      = td[nm][0]
+    #             lv      = td[nm][1]
+    #             dv      = td[nm][2]
+    #             mv      = td[nm][3]
+    #             dd      = td[nm][4]
+    #             pr      = td[nm][5]
+    #             digest  = td[nm][6]
+    #
+    #             if not self.acceptable(nm, td, tp):
+    #                 # изменения за пределами разрешённых
+    #                 cv = lv / 2 if cv > mv else lv
+    #
+    #             if tp<1:
+    #                 # обновим последнее значение
+    #                 lv  = cv
+    #             else:
+    #                 # обновим последнее и суточное значения
+    #                 dv = lv = cv
+    #
+    #             # при необходимости обновим максимальное значение
+    #             if cv > mv:
+    #                 mv  = cv
+    #
+    #             # обновим значение дополнительного реквизита
+    #             ll      = pr.ll
+    #             ul      = pr.ul
+    #             ddop    = pr.ddop
+    #
+    #             if ddop is not None:
+    #                 dd  = eval(ddop)
+    #
+    #             # запишем значения в словрь
+    #             # записываем сразу все параметры, чтобы не проверять на изменения при проверке в течении дня
+    #             # а при ежедневной проверке у нас меняются ключи
+    #             Cipher.hran[digest[:12]] = Chip(
+    #                     self.alg0(self.alg2(self.alg3_0(nm), 0, Cipher.cur[2]), 0, Cipher.cur[3]),      # nm, наименование параметра
+    #                     self.alg3_0(str((day, tm, ctm, ll, ul, ddop))),                                 # pr, кортеж дополнительных параметров, нужные для проверки
+    #                     self.alg0(self.alg4(self.to_str(cv))+';'+tm, 0, digest),                        # cv, текущее значение
+    #                     self.alg1(self.alg2(self.to_str(lv), 0, Cipher.cur[2])+';'+tm+';'+str(day)),    # lv, последнее значение
+    #                     self.alg4(self.alg0(self.to_str(dv)), Cipher.cur[1]),                           # dv, значение на начало дня
+    #                     self.alg4(self.alg0(self.to_str(mv), 0, Cipher.cur[3]), Cipher.cur[0]),         # mv, максимальное значение
+    #                     None if ddop is None else self.alg0(self.to_str(eval(ddop))),                   # dd, значение дополнительного параметра
+    #                 )
+    #
+    #     def acceptable(self, nm, td, tp=0):
+    #         if td[nm][0] < td[nm][1]:
+    #             # текущее значение меньше последнего
+    #             return True
+    #         else:
+    #             t_delta = td[nm][0] - td[nm][1]
+    #             d_delta = td[nm][0] - td[nm][2]
+    #         rez = True
+    #
+    #         # if self.alg3_1(eval(nm).name) != nm:
+    #         #     # строка имени параметра должна выдавать именно это значение, а не какое-то другое
+    #         #     return False
+    #
+    #         if nm=='mgg.money':
+    #             pass
+    #         elif nm=='mgg.account':
+    #             pass
+    #
+    #         return rez
+    #
+    #     def __key_gen__(self):
+    #         # исходный список символов для формирования ключей подстановочного шифра
+    #         l0 = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ' + \
+    #             'abcdefghijklmnopqrstuvwxyz' + \
+    #             '0123456789' + ':.;,!@#$()+=-*_<>~^')
+    #         for i in range(10):
+    #             renpy.random.shuffle(l0)
+    #             Cipher.kdir[i] = ''.join(l0)
+    #
+    #     def __cur_gen__(self):
+    #         k0 = renpy.random.randint(0, 9)
+    #         k1 = renpy.random.randint(0, 9)
+    #         while k0 == k1:
+    #             k1 = renpy.random.randint(0, 9)
+    #         k2 = renpy.random.randint(0, 9)
+    #         k3 = renpy.random.randint(0, 9)
+    #         while k2 == k3:
+    #             k3 = renpy.random.randint(0, 9)
+    #         lets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    #         w1 = w2 = ''
+    #         for i in range(renpy.random.randint(6, 15)):
+    #             w1 += lets[renpy.random.randint(0, 51)]
+    #         for i in range(renpy.random.randint(6, 15)):
+    #             w2 += lets[renpy.random.randint(0, 51)]
+    #         Cipher.cur[0] = str(k0)+str(k1)
+    #         Cipher.cur[1] = str(k2)+str(k3)
+    #         Cipher.cur[2] = w1
+    #         Cipher.cur[3] = w2
+    #
+    #     def razdop(self, pr):
+    #         ts = pr[1:-1].split(', ')
+    #         try:
+    #             tday = int(ts[0])
+    #         except:
+    #             print "Не удалось преобразовать день к числу ({t1})".format(t1=ts[0])
+    #             tday = day
+    #
+    #         ttm  = ts[1][2:-1]
+    #         ctm = ts[2][2:-1]
+    #         if ts[3] == "None":
+    #             ll = None
+    #         elif ts[3].find('.'):
+    #             ll = float(ts[3])
+    #         else:
+    #             ll = int(ts[3])
+    #         if ts[4] == "None":
+    #             ul = None
+    #         elif ts[3].find('.'):
+    #             ul = float(ts[4])
+    #         else:
+    #             ul = int(ts[4])
+    #         ddop = None if ts[5] == "None" else ts[5][2:-1]
+    #
+    #         return dop(tday, ttm, ctm, ll, ul, ddop)
+    #
+    #     def to_str(self, val):
+    #         if type(val)==float:
+    #             return self.alg3_0('f_'+str(val))
+    #         elif type(val)==int:
+    #             return self.alg3_0('i_'+str(val))
+    #         else:
+    #             # в остальных случаях на выходе дешифровки будет строка
+    #             return self.alg3_0(str(val))
+    #
+    #     def from_str(self, string):
+    #         t = self.alg3_1(string)
+    #         try:
+    #             if t[:2]=='f_':
+    #                 return float(t[2:])
+    #             elif t[:2]=='i_':
+    #                 return int(t[2:])
+    #             else:
+    #                 return t
+    #         except ValueError:
+    #             print "Ошибка преобразования строки в число {t} ({str})".format(t=t, str=string)
+    #             return 0
+    #
+    #     def alg0(self, string, mode=0, kw=None):
+    #         # метод Виженера
+    #         tr = []
+    #         keyIndex = 0
+    #         if kw is None:
+    #             kw = Cipher.cur[2]
+    #
+    #         for sym in string:
+    #             num = self.LETS.find(sym)
+    #             if num != -1:
+    #                 if mode == 0:
+    #                     num += self.LETS.find(kw[keyIndex])
+    #                 elif mode == 1:
+    #                     num -= self.LETS.find(kw[keyIndex])
+    #                 num %= len(self.LETS)
+    #
+    #                 tr.append(self.LETS[num])
+    #                 keyIndex += 1
+    #
+    #                 if keyIndex == len(kw):
+    #                     keyIndex = 0
+    #             else:
+    #                 tr.append(sym)
+    #         return ''.join(tr)
+    #
+    #     def alg1(self, string, mode=0):
+    #         # Афинный шифр
+    #         if mode > 0:
+    #             return ''.join(map(lambda ch:chr(55*(ord(ch)-3)%128), string)).decode('utf-8')
+    #         else:
+    #             return ''.join(map(lambda ch:chr((7*ord(ch)+3)%128), string.encode('utf-8')))
+    #
+    #     def alg2(self, string, mode=0, sk='SagitTariUs'):
+    #         # метод XOR
+    #         if mode==1:
+    #             string = base64.b64decode(string)
+    #         rez = ''.join(chr(ord(x) ^ ord(y)) for (x,y) in izip(string, cycle(sk)))
+    #         if mode==0:
+    #             return base64.b64encode(rez).strip()
+    #         return rez
+    #
+    #     def alg3_0(self, string, numb_sys=None, rev=None):
+    #         # мой алгоритм. шифровка в произвольную систему счисления на базе рандомизированной строки
+    #         if numb_sys is None:
+    #             numb_sys = renpy.random.randint(4, 36)  # выбираем систему счисления
+    #         nums = []
+    #         max_len = 1
+    #         if rev is None:
+    #             rev = renpy.random.randint(1, 3)        # каждая rev запись будет в развёрнутом виде
+    #         for ch in string:
+    #             s = ''
+    #             d = ord(ch)  # получаем десятичный код символа
+    #             if d == 0:
+    #                 s = Cipher.NS[0]
+    #             while d > 0:
+    #                 # переводим в выбранную систему счисления, регистр случаен
+    #                 s = (Cipher.NS[d % numb_sys] if renpy.random.randint(0, 1)>0 else Cipher.NS[d % numb_sys].upper())+ s
+    #                 d = d // numb_sys
+    #             max_len = max(max_len, len(s))
+    #             nums.append(s)
+    #
+    #         # первые 2 символа - система счисления
+    #         # 3-й символ номер разворачиваемых
+    #         # 4й и 5й - максимальная длина записи символа в развёрнутом виде
+    #         rez = ('0'+str(numb_sys))[-2:]+str(rev)+(('0'+str(max_len))[-2:])[::-1]
+    #         s0 = ''.join('0' for ch in range(max_len))
+    #         x = 0
+    #         for d in nums:
+    #             rez += ((s0 + d)[-max_len:][::-1] if x % rev == 0 else (s0 + d)[-max_len:])
+    #             x += 1
+    #
+    #         return rez
+    #
+    #     def alg3_1(self, string):
+    #         # мой алгоритм. дешифровка
+    #         try:
+    #             numb_sys = int(string[:2])
+    #             rev      = int(string[2])
+    #             max_len  = int(string[4:2:-1])
+    #         except ValueError:
+    #             print "Ошибка преобразования в число {t1}, {t2}, {t3})".format(t1=string[:2], t2=string[2], t3=string[4:2:-1])
+    #             return ''
+    #
+    #         string = string[5:]
+    #         nums = [(string[x:x+max_len][::-1] if (x // max_len) % rev == 0 else string[x:x+max_len]) for x in range(0, len(string), max_len)]
+    #         result = ''
+    #         for st in nums:
+    #             result += chr(int(sum([Cipher.NS.find(st[x].lower())*numb_sys**(len(st)-x-1) for x in range(len(st))])))
+    #         return result
+    #
+    #     def alg4(self, crtext, sk='01'):
+    #         # подстановочный шифр
+    #         key1 = self.kdir[int(sk[0])]    # определяем позицию символа в первом ключе
+    #         key2 = self.kdir[int(sk[1])]    # и заменяем символом с такой же позицией из второго ключа
+    #         return ''.join([((key2[key1.find(symbol)] if key1.find(symbol)!=-1 else symbol)) for symbol in crtext])

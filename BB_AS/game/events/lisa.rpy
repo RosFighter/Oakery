@@ -1223,7 +1223,7 @@ label lisa_horor_movie_r:
     $ renpy.show('Lisa horror-myroom 02-01'+lisa.dress)
     $ renpy.dynamic('h_film', 'r1')
     $ h_film = {'hes':1, 'f13':2, 'scr':3}[flags.cur_movies[0]]
-    $ renpy.show('FG horror-myroom '+flags.cur_movies[0]+' 0'+str(flags.cur_movies[h_film]+1)+"-0"+str(flags.cur_series))
+    $ renpy.show('FG horror-myroom '+flags.cur_movies[0]+' 0'+str(flags.cur_movies[h_film])+"-0"+str(flags.cur_series))
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
 
     $ _ch3 = GetChance(mgg.sex+5, 3, 900)

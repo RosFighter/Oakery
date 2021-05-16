@@ -3765,6 +3765,7 @@ label about_boy3:
     Max_01 "Обращайся, если что... И удачи тебе."
 
     $ spent_time += 30
+    $ poss['Schoolmate'].open(1)
     $ lisa.flags.crush = 7
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
     return
@@ -3789,6 +3790,7 @@ label about_olivia_1:
     Max_01 "Держи меня в курсе..."
 
     $ spent_time += 30
+    $ poss['Schoolmate'].open(2)
     $ lisa.flags.crush = 8
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
     return
@@ -3818,6 +3820,7 @@ label about_olivia_2:
     Max_01 "Вот и молодчинка!"
 
     $ spent_time += 30
+    $ poss['Schoolmate'].open(3)
     $ lisa.flags.crush = 9
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
     return
@@ -3855,6 +3858,7 @@ label about_olivia_3:
     Lisa_02 "Какие вы мальчики озабоченные! Ну да ладно... Я позову её в гости, а ты смотри не спугни мою подружку своим... озабоченным дружком..."
 
     $ spent_time += 30
+    $ poss['Schoolmate'].open(4)
     $ lisa.flags.crush = 10
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
     return

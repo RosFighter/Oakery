@@ -87,6 +87,7 @@ label olivia_talk1:
     Olivia_02 "Рада была пообщаться... Думаю, я загляну к вам в следующую среду. Ведь можно?"
     Max_01 "Конечно, Оливия. Мы будем только рады."
 
+    $ poss['Schoolmate'].open(6)
     $ olivia.dcv.feature.stage = 1
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30
@@ -129,6 +130,7 @@ label olivia_talk2:
     Olivia_05 "Взаимно, Макс... Наверное, теперь буду приходить почаще, скажем во вторник и пятницу... Я же не помешаю?"
     Max_01 "Нисколько. Обязательно приходи..."
 
+    $ poss['Schoolmate'].open(7)
     $ olivia.dcv.feature.stage = 2
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30
@@ -159,6 +161,7 @@ label olivia_talk3:
     Olivia_03 "В тебе, Макс, я нисколько не сомневалась... У тебя вон, полные шорты энтузиазма! И уже долгое время..."
     Max_01 "Да, я пожалуй пойду, развеюсь немного..."
 
+    $ poss['Schoolmate'].open(8)
     $ olivia.dcv.feature.stage = 4
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30
@@ -227,6 +230,7 @@ label olivia_talk4:
         Olivia_01 "Хорошо поболтали, Макс. Мы же устроим ночные посиделки в эту пятницу, да?"
         Max_01 "Конечно. Будем тебя ждать..."
 
+    $ poss['Schoolmate'].open(11)
     $ olivia.dcv.feature.stage = 5
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30

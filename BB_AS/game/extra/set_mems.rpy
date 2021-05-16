@@ -195,14 +195,18 @@ init python:
     # Помассирую не только ножки
     def set_advanced_massage1():
 
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress()
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.flags.hip_mass = renpy.random.randint(1, 2)
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
         if 'kira' in persistent.mems_var:
             dr_var.append('d')
+        al.dress = renpy.random.choice(dr_var)
         my_scope = {
                 'tm'        : '22:00',
                 'alice'     : al,
+                'mgg'       : mg,
                 '_drink'    : 2,
                 '_ch20'     : Chance(700),
                 '_ch25'     : Chance(875),
@@ -581,11 +585,18 @@ init python:
     # Небольшое приключение перед сном
     def set_night_swim():
 
+        mg        = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.social = 100
+        mg.sex    = 7
+
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
         tk.stat.handjob   = renpy.random.randint(1, 2)
         tk.flags.promise  = False
         tk.stat.blowjob   = 1
+        if 'bj_in_pool' in persistent.mems_var:
+            tk.stat.sex = 5
         my_scope = {
+            'mgg'      : mg,
             'kira'     : tk,
             }
         return my_scope
@@ -687,7 +698,7 @@ init python:
 
         tf = Other_Flags_and_counters()
         tf.cur_series = renpy.random.randint(1, 2)
-        tf.cur_movies = [renpy.random.choice(['hes', 'f13']), renpy.random.randint(0, 4), renpy.random.randint(0, 4)]
+        tf.cur_movies = [renpy.random.choice(['hes', 'f13', 'scr']), renpy.random.randint(0, 4), renpy.random.randint(0, 4), renpy.random.randint(0, 3)]
 
         my_scope = {
             'lisa'  : tl,
