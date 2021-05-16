@@ -1499,7 +1499,7 @@ translate english strings:
     # game/dialogues/anntalk.rpy:700
     old "Конечно, мам! Не скучай..."
     new "Of course, Mom! Don't get bored..."
-
+    
 # TODO: Translation updated at 2021-05-15 16:54
 
 # game/dialogues/anntalk.rpy:742
@@ -2072,7 +2072,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:781
     old "{i}перестраховаться (массаж){/i}"
-    new "{i}Reassure (massage){i}"
+    new "{i}Reassure (massage){/i}"
 
     # game/dialogues/anntalk.rpy:876
     old "Мам, хочешь массаж?"
@@ -2080,7 +2080,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:876
     old "{i}сидеть и надеяться на лучшее{/i}"
-    new "{i}Sit back and hope for the best{i}"
+    new "{i}Sit back and hope for the best{/i}"
 
     # game/dialogues/anntalk.rpy:903
     old "Мам, у тебя полотенце сползает..."
@@ -2088,7 +2088,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:903
     old "{i}продолжать массаж{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
-    new "{i}(Massage: {i} \n{color=[ch.col]}(Massage. Chance: [ch.vis]){/color}"
+    new "{i}Continue the massage{/i} \n{color=[ch.col]}(Massage. Chance: [ch.vis]){/color}"
 
     # game/dialogues/anntalk.rpy:980
     old "{i}попытаться скрыть стояк{/i} \n{color=[ch.col]}(Скрытность. Шанс: [ch.vis]){/color}"
