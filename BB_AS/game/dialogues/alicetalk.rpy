@@ -2289,7 +2289,7 @@ label massage_sunscreen:
                     Alice_07 "Это так классно расслабляет... У тебя очень хорошо получается, Макс!"
                     "{i}продолжить{/i}":
                         pass
-                    "{i}выпустить рядом паука{/i}" if items['spider'].have:
+                    "{i}выпустить рядом паука{/i}" if items['spider'].have and poss['spider'].used(4) and not _in_replay:
                         show FG sun-alone-04
                         jump .spider
             else:
@@ -2328,7 +2328,7 @@ label massage_sunscreen:
                     Alice_07 "Как приятно... Макс, ты делаешь успехи! Мне это нравится..."
                     "{i}продолжить{/i}":
                         pass
-                    "{i}выпустить рядом паука{/i}" if items['spider'].have and not _in_replay:
+                    "{i}выпустить рядом паука{/i}" if items['spider'].have and poss['spider'].used(4) and not _in_replay:
                         $ renpy.show("FG sun-alone-"+__r1)
                         jump .spider
             else:
@@ -2439,6 +2439,7 @@ label massage_sunscreen:
             $ renpy.show('Alice sun-alone '+__r1+_suf+mgg.dress)
             $ renpy.show("FG sun-alone-"+__r1)
         else:
+            $ poss['spider'].open(5)
             $ items['spider'].use()
             $ SpiderKill = 0  # паук остался жив
             $ SpiderResp = 1  # поэтому поймать можно уже на следующий день
@@ -2599,6 +2600,7 @@ label massage_sunscreen:
         Max_02 "Да не так-то это просто сделать..."
         Alice_05 "А ты постарайся."
         Max_01 "Ага."
+        $ poss['spider'].open(6)
         $ alice.flags.touched = True
         jump .end
 
@@ -3993,9 +3995,6 @@ label gift_lace_lingerie:
     $ added_mem_var('lace_ling_max1')
     $ spent_time += 40
     $ alice.dcv.intrusion.stage = 5  # бельё Алисе подарил Макс
-    # $ alice.dress = 'd'
-    # $ alice.dress_inf = '02la'
-    # $ blog_lingerie = ['d', 'd', 'd']
     $ items['sexbody2'].give()
     $ alice.gifts.append('sexbody2')
     $ setting_clothes_by_conditions()
@@ -4278,6 +4277,7 @@ label alice_private_punish_r:
                     scene BG punish-sun 04
                     $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
                     Alice_03 "Ага, сложно не заметить, сколько радости от этого в твоих шортах. Приму это за комплимент, но хватит уже меня смущать своим озабоченным видом!"
+                    $ renpy.end_replay()
                     $ poss['ass'].open(1)
                     $ alice.flags.privpunish += 1
             menu:

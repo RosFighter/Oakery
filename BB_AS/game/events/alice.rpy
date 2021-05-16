@@ -465,6 +465,7 @@ label alice_shower:
             #spider-bathroom-01 + spider-shower-01-max-(01a/01b)-alice-01
             scene BG char Alice spider-bathroom-01
             $ renpy.show('Alice spider-shower 01-01'+mgg.dress)
+            $ added_mem_var('alice_hug_in_shower')
             menu:
                 Alice_03 "Таких объятий тебе достаточно? Уж извини, что не обнимаю обеими руками... сам знаешь почему..."
                 "Зато у меня руки свободны... {i}(обнять в ответ){/i}":
@@ -511,6 +512,7 @@ label alice_shower:
         if rez:
             # (успел)
             hide screen countdown
+            $ added_mem_var('alice_danger_in_shower')
             $ renpy.show('Alice spider-shower 02-01'+mgg.dress)
             #spider-shower-02 + spider-shower-02-max-(01a/01b)-alice-01
             Max_04 "Всё, убрал. Но я просто хотел прикрыть твою попку, чтобы никто на неё не глазел."
@@ -1021,6 +1023,8 @@ label spider_in_bed:
         $ _ch1 = GetChance(mgg.social, 5, 900)
         $ _ch2 = GetChance(mgg.social, 3, 900)
         $ _ch3 = GetChance(mgg.social, 2, 900)
+        if not _in_replay:
+            $ poss['spider'].open(4)
 
         menu:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"

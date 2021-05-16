@@ -593,11 +593,11 @@ translate english strings:
 
     # game/core/02init.rpy:31
     old "{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n"
-    new "{color=#00FF00}{i}{Mom liked the massage}{/i}{/color}\n"
+    new "{color=#00FF00}{i}Mom liked the massage{/i}{/color}\n"
 
     # game/core/02init.rpy:32
     old "{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}{Mom didn't like the massage}{/i}{/color}\n"
+    new "{color=#E59400}{i}Mom didn't like the massage{/i}{/color}\n"
 
     # game/core/02init.rpy:33
     old "{color=#00FF00}{i}Получилось!{/i}{/color}\n"

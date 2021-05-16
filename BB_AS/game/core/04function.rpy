@@ -598,7 +598,7 @@ init python:
         if current_room == house[1] and len(current_room.cur_char) == 0:
             AvailableActions['usb'].active = True
             AvailableActions['searchbook'].active = all([alice.plan_name != 'read', '08:00' <= tm < '22:00'])
-            if items['spider'].have:
+            if items['spider'].have and poss['spider'].used(3):
                 AvailableActions['hidespider'].active = True
             AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00'])
 

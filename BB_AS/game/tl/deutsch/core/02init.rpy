@@ -572,17 +572,17 @@ translate deutsch strings:
 
     # game/core/02init.rpy:31
     old "{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Mom liebte die Massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:32
     old "{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Mom liebte die Massage nicht!{/i}{/color}\n"
 
     # game/core/02init.rpy:33
     old "{color=#00FF00}{i}Получилось!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Es hat funktioniert!{/i}{/color}\n"
 
     # game/core/02init.rpy:34
     old "{color=#E59400}{i}Не получилось!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Es hat nicht funktioniert!{/i}{/color}\n"
 

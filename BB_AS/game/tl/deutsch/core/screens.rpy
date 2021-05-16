@@ -270,3 +270,119 @@ translate deutsch strings:
     old "{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}"
     new "{i}{b}Fehlgeschlagen.{/b} Leider haben deine Entscheidungen zu einem unschönen Ende geführt und die weitere Entwicklung der \"Möglichkeit\" verhindert.{/i}"
 
+# TODO: Translation updated at 2021-05-16 19:25
+
+translate deutsch strings:
+
+    # game/core/screens.rpy:1468
+    old "Отношения с [char_name!t]:"
+    new ""
+
+    # game/core/screens.rpy:1476
+    old "Запас сил:"
+    new ""
+
+    # game/core/screens.rpy:1481
+    old "Тренированность:"
+    new ""
+
+    # game/core/screens.rpy:1486
+    old "Чистота:"
+    new ""
+
+    # game/core/screens.rpy:1496
+    old "Навык убеждения:"
+    new ""
+
+    # game/core/screens.rpy:1501
+    old "Навык скрытности:"
+    new ""
+
+    # game/core/screens.rpy:1507
+    old "Навык массажа:"
+    new ""
+
+    # game/core/screens.rpy:1513
+    old "Навык эро.массажа:"
+    new ""
+
+    # game/core/screens.rpy:1519
+    old "Навык поцелуев:"
+    new ""
+
+    # game/core/screens.rpy:1525
+    old "Сексуальный опыт:"
+    new ""
+
+    # game/core/screens.rpy:1536
+    old "Настроение:"
+    new ""
+
+    # game/core/screens.rpy:1542
+    old "Уровень отношений:"
+    new ""
+
+    # game/core/screens.rpy:1550
+    old "Раскрепощенность:"
+    new ""
+
+    # game/core/screens.rpy:1574
+    old "Предпочтения в сладостях:"
+    new ""
+
+    # game/core/screens.rpy:1578
+    old "Любит \"Ritter Sport\""
+    new ""
+
+    # game/core/screens.rpy:1580
+    old "Сгодится \"Raffaello\""
+    new ""
+
+    # game/core/screens.rpy:1582
+    old "Ненавидит \"Ferrero Rocher\""
+    new ""
+
+    # game/core/screens.rpy:1586
+    old "Предпочтения в массаже:"
+    new ""
+
+    # game/core/screens.rpy:1589
+    old "- После массажа рук Лиза может позволить массировать ей плечи (и не только их) при выполнении домашнего задания"
+    new ""
+
+    # game/core/screens.rpy:1598
+    old "Любит \"Ferrero Rocher\""
+    new ""
+
+    # game/core/screens.rpy:1600
+    old "Сгодится \"Ritter Sport\""
+    new ""
+
+    # game/core/screens.rpy:1602
+    old "Ненавидит \"Raffaello\""
+    new ""
+
+    # game/core/screens.rpy:1606
+    old "Действие алкоголя:"
+    new ""
+
+    # game/core/screens.rpy:1609
+    old "???"
+    new ""
+
+    # game/core/screens.rpy:1613
+    old "- Не может вспомнить всё, что происходило, пока она была пьяна"
+    new ""
+
+    # game/core/screens.rpy:1619
+    old "- Если начинать массаж для Алисы во дворе со ступней, то вероятность помассировать остальное больше"
+    new ""
+
+    # game/core/screens.rpy:1621
+    old "- При помощи конфет с ликёром можно получить фут-джоб (и не только) от Алисы при массаже у ТВ"
+    new ""
+
+    # game/core/screens.rpy:1623
+    old "- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном"
+    new ""
+

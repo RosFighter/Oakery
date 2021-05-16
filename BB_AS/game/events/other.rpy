@@ -84,7 +84,7 @@ label back_shoping:
             Max_10 "Да, это чудесно..."
             Alice_04 "Вот именно! Теперь я смогу ходить по клубам, а не сидеть дома вечерами! Эрик такой молодец. Я в восторге!"
             Max_11 "Поздравляю..."
-            if poss['nightclub'].st() == 1:
+            if poss['nightclub'].used(1):
                 $ poss['nightclub'].open(2)
             else:
                 $ poss['nightclub'].open(3)

@@ -552,6 +552,7 @@ label delivery1:
     if 'choco' in delivery_list[0]:
         $ kol_choco += 20
         $ items['choco'].block()
+        $ poss['nightclub'].open(6)
     $ __StrDev = GetDeliveryString(0) # сформируем строку накладной
 
     scene BG delivery-00
@@ -579,6 +580,8 @@ label delivery2:
         $ mgg.clothes.casual.cur = 1
         $ items['max-a'].block()
         $ added_mem_var('max-a')
+    if 'dress' in delivery_list[1] and not poss['nightclub'].used(3):
+        $ poss['nightclub'].open(1)
 
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 

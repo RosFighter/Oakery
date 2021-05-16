@@ -304,7 +304,7 @@ init python:
         if 'alice_sleepnaked' in persistent.mems_var:
             sm.extend(['naked', 'not_naked'])
         al.req.result = renpy.random.choice(sm)
-        print sm
+        # print sm
         al.req.req = {None: None, 'sleep':'sleep', 'not_sleep':'sleep', 'naked':'naked', 'not_naked':'naked'}[al.req.result]
         my_scope = {
             'tm'       : '02:30',
@@ -342,12 +342,14 @@ init python:
         mg.dress = get_max_dress()
         mg.social = 100
 
-        # были обнимашки во время ивента
-        al.gifts.append('sexbody1')
-        al.flags.hugs = 5
+        if 'alice_hug_in_shower' in persistent.mems_var:
+            # были обнимашки во время ивента
+            al.gifts.append('sexbody1')
+            al.flags.hugs = 5
 
-        # были рискованные обнимашки
-        al.flags.privpunish += 1
+        if 'alice_danger_in_shower' in persistent.mems_var:
+            # были рискованные обнимашки
+            al.flags.privpunish += 1
 
         my_scope = {
             'tm'       : '08:00',
@@ -365,11 +367,12 @@ init python:
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.daily.oiled = 2
 
-        # Алиса может спрятаться за Максом
-        al.dcv.intrusion.stage = 7
-        al.flags.privpunish = 1
-        # Алиса уже пряталась за Максом
-        al.flags.touched = True
+        if 'hide_behind' in persistent.mems_var:
+            # Алиса может спрятаться за Максом
+            al.dcv.intrusion.stage = 7
+            al.flags.privpunish = 1
+            # Алиса уже пряталась за Максом
+            al.flags.touched = True
 
         my_scope = {
             'tm'    : '15:00',

@@ -40,57 +40,85 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Хорошенько подумав, какой совет дать Лизе относительно Алекса, я решил поступить хитро и предложил ей подружиться с Оливией. Таким образом Лиза сможет узнать от неё, действительно ли Алекс так хорош, как ей кажется. Наверняка ведь, он не слишком идеален... А может и ещё хуже... Не знаю, сколько времени понадобиться, чтобы у Лизы получилось ненавязчиво подружиться с Оливией. Пожалуй, мне стоит интересоваться её успехами время от времени..."
-    new ""
+    new "After thinking about what advice to give Lisa about Alex, I decided to be sly and suggest that she become friends with Olivia. That way Lisa could find out if Alex is really as good as she thought he was. I'm sure he's not perfect... Maybe even worse... I don't know how long it will take for Lisa to make friends with Olivia. I should probably take an interest in her progress from time to time..."
 
     # game/core/09_opportunities.rpy:4
     old "Лиза пытается понять, как ей подружиться с Оливией, девушкой Алекса. Для этого Лиза попытается подружиться с кем-то, кому ещё нравится Оливия, чтобы выпытать у него побольше информации об этой девушке..."
-    new ""
+    new "Lisa is trying to figure out how she can be friends with Olivia, Alex's girlfriend. To do this, Lisa will try to make friends with someone else who likes Olivia in order to get more information about the girl..."
 
     # game/core/09_opportunities.rpy:4
     old "Лизе удалось выяснить одну любопытную особенность Оливии: она не носит нижнее бельё! Конечно, это не очень много, но это может оказаться хорошей темой для обсуждения... Глядишь и разболтаются, а там и до дружбы недалеко..."
-    new ""
+    new "Lisa managed to find out one curious thing about Olivia: she doesn't wear underwear! Of course, it's not much, but it might be a good topic of discussion... They might get to know each other, and then they could become friends..."
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то что-то начало получаться! Лизе удалось выяснить, что Оливия не носит трусы, потому что она из семьи каких-то нудистов или натуристов, не важно. И ещё она обожает бассейны, но у них дома он почему-то не работает. Теперь дело за малым... Чтобы Лиза позвала Оливию к нам в гости, где они будут загорать и купаться. Ну и, конечно, общаться вне школы, что, как я думаю, их сблизит..."
-    new ""
+    new "Finally something is starting to work! Lisa managed to figure out that Olivia doesn't wear underwear because she's from some nudist or naturist family, whatever. And she also loves swimming pools, but for some reason it doesn't work at their house. Now it's just a matter of time... For Lisa to invite Olivia to visit us, where they will sunbathe and swim. And, of course, to socialize outside of school, which I think will bring them closer together..."
 
     # game/core/09_opportunities.rpy:4
     old "Я познакомился с Оливией! Да, реальность даже немного превзошла все мои ожидания! Оливия абсолютно не стесняется своей наготы... На что я соответствующе отреагировал. Ну ничего, главное, что я произвел впечатление..."
-    new ""
+    new "I met Olivia! Yes, the reality even slightly exceeded my expectations! Olivia is not at all shy... To which I reacted accordingly. But that's okay, the main thing is that I made an impression..."
 
     # game/core/09_opportunities.rpy:4
     old "Мне удалось немного поболтать с Оливией. Она оказалась не такой глупой, как я думал. Она весёлая, жизнерадостная, острая на язычок... Ох, попробовать бы его... Но я отвлёкся от дела. Как я понял, их отношения с Алексом не идеальны. Вопрос только в том, кто в этом больше виноват, она или он? Думаю, со временем нам с Лизой удастся узнать больше о них. А пока, я могу, как минимум раз в неделю, совершенно без последствий наблюдать голую грудь Оливии у нас во дворе!"
-    new ""
+    new "I managed to have a little chat with Olivia. She wasn't as dumb as I thought she would be. She's funny, cheerful, sharp-tongued... Oh, I'd like to try it. But I got sidetracked. From what I understand, her relationship with Alex isn't perfect. The only question is, whose fault is it more, her or him? I think, in time, Lisa and I will be able to learn more about them. In the meantime, I can, at least once a week, watch Olivia's naked breasts in our front yard completely unaffected!"
 
     # game/core/09_opportunities.rpy:4
     old "Мы с Оливией немного пошептались о Лизе. Пускай, это не очень красиво, но мы пришли к выводу, что нужно поработать над сексуальным раскрепощением моей младшей сестрёнки. Хотя бы немного... И компания Оливии идеально для этого подходит! Она девочка без комплексов, очень открытая во всех смыслах. А как говорится, с кем поведёшься, от того и наберёшься!"
-    new ""
+    new "Olivia and I had a little chat about Lisa. It may not be pretty, but we've come to the conclusion that we need to work on my little sister's sexual liberation. At least a little... And Olivia's company is perfect for that! She is a girl without complexes, very open in every way. And as they say, you get what you can get from who you can get from who you can get!"
 
     # game/core/09_opportunities.rpy:4
     old "Оливия узнала, что по вечерам пятницы наш дом пустеет и мы с Лизой остаёмся одни на какое-то время... Отличное время, чтобы втроём полодырничать у нашего большого экрана в гостиной! И самое классное, что я понятия не имею, во что это выльется! Но в чём я уверен точно, так это в том, что будет интересно..."
-    new ""
+    new "Olivia found out that on Friday nights our house is empty and Lisa and I are alone for a while... A great time for the three of us to laze around our big screen in the living room! And the best part is, I have no idea what it's going to be like! But what I am sure of is that it will be interesting..."
 
     # game/core/09_opportunities.rpy:4
     old "Оливия пришла в полночь, как и обещала. Хоть я и догадывался, в каком виде намечаются наши ночные посиделки, но всё равно сомневался, действительно ли мне так повезёт... И Оливия меня не разочаровала! Она сразу же распрощалась с одеждой..."
-    new ""
+    new "Olivia arrived at midnight, as promised. Even though I guessed what kind of night out we were going to have, I still wondered if I would really be so lucky... And Olivia did not disappoint me! She immediately said goodbye to her clothes..."
 
     # game/core/09_opportunities.rpy:4
     old "Только вот все остальные мои надежды разбились о нежелание Лизы находится на одном диване с моим стояком! Невероятно обидно... У меня на диване среди ночи сидят такие классные девчонки и я хочу с ними! Похоже, нужно что-то делать, чтобы для Лизы мой возбуждённый вид стал чем-то довольно обыденным и естественным. Пока она меня стесняется, на диван к ним мне не попасть..."
-    new ""
+    new "Except all my other hopes were dashed by Lisa's reluctance to be on the same couch as my boner! Incredibly frustrating... I have such great girls sitting on my couch in the middle of the night and I want to be with them! It looks like I need to do something to make my horny appearance become something rather ordinary and natural for Lisa. As long as she's shy of me, I can't get on the couch with them..."
 
     # game/core/09_opportunities.rpy:4
     old "Ухх... Как же классно оказаться с такими прекрасными девчонками на одном диване! Оливия совершенно голая... Я совершенно голый... Только одна Лиза ещё стесняется... Но думаю, со временем, если такие посиделки станут традицией, она привыкнет и более того, сама начнёт раздеваться! Мечтать не вредно. Главное, не давить на неё, пусть привыкает... Не исключено, что втайне, ей очень нравится всё, что происходит!"
-    new ""
+    new "Ugh... How cool is it to be on the same couch with such beautiful girls! Olivia is totally naked... I'm totally naked... Only Lisa alone is still shy... But I think over time, if such gatherings become a tradition, she will get used to it and in fact, she herself will start to undress! It is not harmful to dream. The main thing is not to put pressure on her, let her get used to it ... It is possible that secretly, she really likes everything that happens!"
 
     # game/core/09_opportunities.rpy:4
     old "Оливия рассказала мне о кое-каких своих опасениях... После того, как Алекс узнал от неё, какой у нас классный и дорогой дом, он быстренько переобулся и начал проявлять к Лизе большой интерес. Похоже, это Алекс тот ещё альфонс... Теперь главное, ненавязчиво донести этот факт до Лизы! Думаю, она рано или поздно обратиться ко мне за советом... И даже не раз..."
-    new ""
+    new "Olivia told me about some of her concerns... After Alex found out from her how cool and expensive our house is, he quickly changed his shoes and started showing a lot of interest in Lisa. Sounds like Alex is a real alphonse... Now the main thing, unobtrusively bring this fact to Lisa! I think she will sooner or later ask me for advice... And even more than once..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот всё и разрешилось с этим Алексом! Оливия его бросила, а Лиза в нём разочаровалась. Хотя, если бы не мои подсказки, Лиза бы точно наделала глупостей и тот первый ночной визит Оливии мог стать последним... Но одну глупость Лиза всё же сделала на радостях - сняла свою маечку прямо на мох глазах! Это очень приятная глупость! Правда, она намекнула, что это может остаться единичным случаем, поэтому лучше делать всё, чтобы моя сестрёнка чувствовала на себе мою заботу..."
-    new ""
+    new "So that's it with this Alex guy! Olivia dumped him, and Lisa was disappointed in him. Although, if it were not for my clues, Lisa would have done something stupid, and that first night visit of Olivia could have been her last... But one stupid thing Lisa did for fun - she took off her shirt right in front of my eyes! This is a very nice thing! She hinted, though, that it might remain an isolated incident, so I'd better do everything I can to make my little sister feel appreciated..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь две эти симпатичные попки в моём распоряжении... Аж глаза разбегаются... Хоть Оливия и не особо привязывалась к Алексу, но расставание есть расставание и ей явно нужно время, чтобы оправиться. Как знать, может у нас с ней что-нибудь получится?! Ну а чтобы Лиза чаще сверкала своими голыми сисечками, нужно проявить побольше заботы... Главное постоянно и в разумных пределах! А позаботиться можно и о защите её от маминых наказаний, и о помощи с домашним заданием. А так же уделять внимание и её рукам, помогая с мытьём посуды и делая массаж."
+    new "Now I've got two of those cute girls at my disposal... Although Olivia wasn't particularly attached to Alex, but a breakup is a breakup, and she obviously needs time to recover. Who knows, maybe something will work out between us! Well, to make Lisa sparkle more often with her boobs, I need to show more care... I should remember to protect her from Mom's punishments, and help with homework. And also to pay attention to her hands, helping with washing the dishes, and massaging."
+
+# TODO: Translation updated at 2021-05-16 19:26
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Итак, я поймал огромного паука. Это не так сложно, если знать в какое время и где их ловить. Теперь нужно испытать этого монстра на сестрёнке. Вот только бы выбрать подходящий момент... Интересно, а она заметит паука, если будет принимать душ?"
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "О да! Алиса определённо боится пауков! Такой мокрой и трясущейся от страха попки моей старшей сестрёнки я ещё не видел... Визг слышали все соседи со всей округи, это точно! Вот только если Алиса узнает, что я это всё специально подстроил, меня ждёт смерть. Надеюсь, быстрая! А пока этого не случилось, можно попробовать подложить паука в её комнату..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Алиса так боится пауков, что прибежала ко мне за спасением посреди ночи! Алиса так сексуальна в своём нижнем белье, ммм... И похоже, её можно на многое развести под страхом ночёвки с пауком, так что я точно спасаю её не в последний раз! Может, подложить паука, когда Алиса загорает?"
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Таких крепких объятий от Алисы я не ожидал! Так близко к моему лицу её сиськи не были ещё никогда! С помощью пауков я могу обеспечить себе много каких по-хорошему волнующих моментов с Алисой... Посмотрим, к чему это приведёт..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "А вот это интересно! Я думал Алиса, как всегда, обругает меня после того, как вцепилась в мой член, прячась от паука... Но, нет! Более того, она даже как-то... подобрела ко мне... Вернее, стала спокойнее относится к моему \"возбуждённому\" состоянию! Странно... Может, она наконец почувствовала, что пауки намного страшнее, чем мой стояк?! Если так, то это очень хорошо, потому что многое с Алисой теперь будет иначе..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Как хорошо, что я предложил Лизе сдружиться с Оливией! Благодаря ей, Лиза уже не та стеснительная девочка, которая разве что на периодические поцелуйчики соглашалась... Теперь её реально можно уговорить смотреть ужастики в одних лишь трусиках! Всё, что для этого нужно, не давать маме её наказывать... Если до этого дойдёт."
     new ""
 

@@ -2072,7 +2072,7 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:781
     old "{i}перестраховаться (массаж){/i}"
-    new "{i}Reassure (massage){i}"
+    new "{i}Reassure (massage){/i}"
 
     # game/dialogues/anntalk.rpy:876
     old "Мам, хочешь массаж?"

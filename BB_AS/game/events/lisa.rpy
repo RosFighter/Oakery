@@ -1114,6 +1114,8 @@ label lisa_horor_movie_r:
         Lisa_02 "Сейчас сниму, только свет сначала выключу. Тебе уже страшно?"
         $ lisa.dcv.other.stage=2
         $ lisa.dress = 'c'
+        if poss['SoC'].used(13):
+            $ poss['SoC'].open(14)
     else:
         Max_01 "Да, смотрим. Сейчас всё подготовлю..."
         Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
@@ -1279,6 +1281,8 @@ label lisa_horor_movie_r:
                     if lisa.dcv.special.stage < 6:
                         $ lisa.dcv.special.stage = 6
                     $ poss['SoC'].open(13)
+                    if lisa.dress=='c':
+                        $ poss['SoC'].open(14)
                     jump .end
 
                 "Просто иди и всё..." if not _in_replay:

@@ -1449,118 +1449,183 @@ screen menu_userinfo():
             vbox spacing 20:
                 frame xsize 850 background None:
                     if CurChar == 'max':
-                        text mgg.desc size 24
+                        text mgg.desc size 24 justify True first_indent 30
                     else:
-                        text chars[CurChar].desc size 24
+                        text chars[CurChar].desc size 24 justify True
 
-                frame pos (50, 20) xsize 800 background None:
-                    if CurChar == 'max':
-                        vbox spacing -1:
-                            for char in sorted(chars.keys()):
-                                # relmax
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        $ char_name = chars[char].name_4
-                                        text _("Отношения с [char_name!t]") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text GetRelMax(char)[1] size 24
-                            frame area (0, 0, 350, 25):
-                                background None
+                # frame pos (20, 20) xsize 840 background None:
+                hbox pos (20, 0) xsize 810 spacing 5:
+                    viewport mousewheel 'change' draggable True id 'vp3':
+                        vbox spacing 5:
+                            frame xfill True background None:
+                                if CurChar == 'max':
+                                    vbox spacing -1:
+                                        for char in sorted(chars.keys()):
+                                            # relmax
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    $ char_name = chars[char].name_4
+                                                    text _("Отношения с [char_name!t]:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text GetRelMax(char)[1] size 24
+                                        frame area (0, 0, 350, 25):
+                                            background None
 
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Запас сил") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text str(round(mgg.energy, 1))+"%" size 24
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Тренированность") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text str(round(mgg.training, 1))+"%" size 24
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Чистота") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text str(round(mgg.cleanness, 1))+"%" size 24
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Запас сил:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text str(round(mgg.energy, 1))+"%" size 24
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Тренированность:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text str(round(mgg.training, 1))+"%" size 24
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Чистота:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text str(round(mgg.cleanness, 1))+"%" size 24
 
-                            frame area (0, 0, 350, 25):
-                                background None
-                            frame xsize 350 background None:
-                                text _("Навыки:") size 26 font 'trebucbd.ttf'
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Навык убеждения") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text str(round(mgg.social*10, 1)) size 24
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Навык скрытности") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text str(round(mgg.stealth*10, 1)) size 24
-                            if mgg.massage > 0:
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Навык массажа") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text str(round(mgg.massage*10, 1)) size 24
-                            if mgg.ero_massage > 0:
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Навык эро.массажа") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text str(round(mgg.ero_massage*10, 1)) size 24
-                            if mgg.kissing > 0:
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Навык поцелуев") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text str(round(mgg.kissing*10, 1)) size 24
-                            if mgg.sex > 0:
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Сексуальный опыт") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text str(round(mgg.sex*10, 1)) size 24
+                                        frame area (0, 0, 350, 25):
+                                            background None
+                                        frame xsize 350 background None:
+                                            text _("Навыки:") size 26 font 'trebucbd.ttf'
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Навык убеждения:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text str(round(mgg.social*10, 1)) size 24
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Навык скрытности:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text str(round(mgg.stealth*10, 1)) size 24
+                                        if mgg.massage > 0:
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Навык массажа:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(round(mgg.massage*10, 1)) size 24
+                                        if mgg.ero_massage > 0:
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Навык эро.массажа:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(round(mgg.ero_massage*10, 1)) size 24
+                                        if mgg.kissing > 0:
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Навык поцелуев:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(round(mgg.kissing*10, 1)) size 24
+                                        if mgg.sex > 0:
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Сексуальный опыт:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(round(mgg.sex*10, 1)) size 24
 
+                                elif CurChar == 'eric':
+                                    pass
+                                else:
+                                    vbox spacing -1:
+                                        # mood
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Настроение:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text chars[CurChar].GetMood()[1] size 24
+                                        # relmax
+                                        hbox xfill True:
+                                            frame xsize 350 background None:
+                                                text _("Уровень отношений:") size 24 color gui.accent_color
+                                            frame xfill True background None:
+                                                text GetRelMax(CurChar)[1] size 24
 
-                    elif CurChar == 'eric':
-                        pass
-                    else:
-                        vbox spacing -1:
-                            # mood
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Настроение") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text chars[CurChar].GetMood()[1] size 24
-                            # relmax
-                            hbox xfill True:
-                                frame xsize 350 background None:
-                                    text _("Уровень отношений") size 24 color gui.accent_color
-                                frame xfill True background None:
-                                    text GetRelMax(CurChar)[1] size 24
+                                        # free
+                                        if not chars[CurChar].free is None:
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Раскрепощенность:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(chars[CurChar].free) size 24
+                                        # if not chars[CurChar].releric is None:
+                                        #     # releric
+                                        #     hbox xfill True:
+                                        #         frame xsize 350 background None:
+                                        #             text _("Отношения с Эриком") size 24 color gui.accent_color
+                                        #         frame xfill True background None:
+                                        #             text GetRelEric(CurChar)[1] size 24
+                                        #
+                                        #     # inf_eric
+                                        #     hbox xfill True:
+                                        #         frame xsize 350 background None:
+                                        #             text _("Влияние Эрика") size 24 color gui.accent_color
+                                        #         frame xfill True background None:
+                                        #             text str(chars[CurChar].free)+"%" size 24
 
-                            # free
-                            if not chars[CurChar].free is None:
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Раскрепощенность") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text str(chars[CurChar].free) size 24
-                            if not chars[CurChar].releric is None:
-                                # releric
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Отношения с Эриком") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text GetRelEric(CurChar)[1] size 24
+                            frame xfill True background None:
+                                vbox spacing 5:
+                                    if CurChar == 'lisa':
+                                        if len(lisa.sorry.give):
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Предпочтения в сладостях:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    vbox spacing 1:
+                                                        if 3 in lisa.sorry.give:
+                                                            text _("Любит \"Ritter Sport\"") size 24
+                                                        if 2 in lisa.sorry.give:
+                                                            text _("Сгодится \"Raffaello\"") size 24
+                                                        if 1 in lisa.sorry.give:
+                                                            text _("Ненавидит \"Ferrero Rocher\"") size 24
 
-                                # inf_eric
-                                hbox xfill True:
-                                    frame xsize 350 background None:
-                                        text _("Влияние Эрика") size 24 color gui.accent_color
-                                    frame xfill True background None:
-                                        text str(chars[CurChar].free)+"%" size 24
+                                        if renpy.seen_label('Lisa_HomeWork.shoulders') and lisa.ri:
+                                            frame xsize 350 background None:
+                                                text _("Предпочтения в массаже:") size 24 color gui.accent_color
+                                            frame xpos 20 xsize 790 background None:
+                                                vbox spacing 10:
+                                                    text _("- После массажа рук Лиза может позволить массировать ей плечи (и не только их) при выполнении домашнего задания") size 24 justify True
+                                    elif CurChar == 'alice':
+                                        if len(alice.sorry.give):
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Предпочтения в сладостях:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    vbox spacing 1:
+                                                        # if 3 in alice.sorry.give:
+                                                            text _("Любит \"Ferrero Rocher\"") size 24
+                                                        # if 2 in alice.sorry.give:
+                                                            text _("Сгодится \"Ritter Sport\"") size 24
+                                                        # if 1 in alice.sorry.give:
+                                                            text _("Ненавидит \"Raffaello\"") size 24
+                                        if poss['nightclub'].used(5):
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Действие алкоголя:") size 24 color gui.accent_color
+                                                if alice.flags.incident<1:
+                                                    frame xfill True background None:
+                                                        text _("???") size 24
+                                        if alice.flags.incident>1:
+                                            frame xpos 20 xsize 790 background None:
+                                                vbox spacing 10:
+                                                    text _("- Не может вспомнить всё, что происходило, пока она была пьяна") size 24 justify True first_indent -20
+                                        if learned_foot_massage():
+                                            frame xsize 350 background None:
+                                                text _("Предпочтения в массаже:") size 24 color gui.accent_color
+                                            frame xpos 20 xsize 790 background None:
+                                                vbox spacing 10:
+                                                    text _("- Если начинать массаж для Алисы во дворе со ступней, то вероятность помассировать остальное больше") size 24 first_indent -20
+                                                    if alice.stat.footjob:
+                                                        text _("- При помощи конфет с ликёром можно получить фут-джоб (и не только) от Алисы при массаже у ТВ") size 24 first_indent -20
+                                                    if alice.flags.hip_mass:
+                                                        text _("- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном") size 24 first_indent -20
+
+                                    frame xfill True ysize 15 background None:
+                                        pass
+                    vbar value YScrollValue('vp3') style 'info_vscroll'
+
 
     frame area(1350, 1000, 450, 50) background None:
         textbutton _("Задать одежду персонажа") xalign 1.0:

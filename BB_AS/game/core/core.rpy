@@ -709,7 +709,7 @@ label after_load:
         call set_eric_schedule from _call_set_eric_schedule
         call set_kira_schedule from _call_set_kira_schedule
         call set_lisa_schedule from _call_set_lisa_schedule
-        call set_olivia_shedule
+        call set_olivia_shedule from _call_set_olivia_shedule_1
 
         # обновление списка предметов, одежды, возможностей
         $ checking_items()
@@ -1029,5 +1029,17 @@ label update_06_5:
         if lisa.flags.topless>1:
             $ poss['Schoolmate'].open(13)
 
+        if poss['nightclub'].used(4):
+            $ poss['nightclub'].open(1)
+        if poss['nightclub'].used(7):
+            $ poss['nightclub'].open(6)
+
+        if poss['spider'].used(3):
+            if renpy.seen_label('spider_in_bed.spider'):
+                $ poss['spider'].open(4)
+            if renpy.seen_label('massage_sunscreen.spider'):
+                $ poss['spider'].open(5)
+            if alice.flags.touched:
+                $ poss['spider'].open(6)
 
     return
