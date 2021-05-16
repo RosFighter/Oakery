@@ -1011,13 +1011,17 @@ label update_06_5:
         if lisa.flags.crush>11:
             $ poss['Schoolmate'].open(5)
         if 'olivia' in chars:
+            $ olivia.mood = 165
             if olivia.dcv.feature.stage>0:
                 $ poss['Schoolmate'].open(6)
+                $ AttitudeChange('olivia', 1)   # Неплохие
             if olivia.dcv.feature.stage>1:
                 $ poss['Schoolmate'].open(7)
             if olivia.dcv.feature.stage>3:
                 $ poss['Schoolmate'].open(8)
             if olivia.dcv.special.stage>0:
+                if GetRelMax('olivia')[0]<2:
+                    $ AttitudeChange('olivia', 1)   # Хорошие
                 if lisa.dcv.special.stage < 4:
                     $ poss['Schoolmate'].open(9)
                 else:
@@ -1026,6 +1030,7 @@ label update_06_5:
                 $ poss['Schoolmate'].open(11)
             if olivia.dcv.other.stage>1:
                 $ poss['Schoolmate'].open(12)
+
         if lisa.flags.topless>1:
             $ poss['Schoolmate'].open(13)
 
@@ -1041,5 +1046,20 @@ label update_06_5:
                 $ poss['spider'].open(5)
             if alice.flags.touched:
                 $ poss['spider'].open(6)
+
+        if 'kira' in chars:
+            $ kira.mood = 165
+            if GetRelMax('kira')[0]<1 and kira.dcv.feature.stage:
+                $ AttitudeChange('kira', 1) # Неплохие
+            if GetRelMax('kira')[0]<2 and (kira.flags.porno or lisa.dcv.seduce.stage>1):
+                $ AttitudeChange('kira', 1) # Хорошие
+            if GetRelMax('kira')[0]<3 and kira.stat.blowjob:
+                $ AttitudeChange('kira', 1) # Тёплые
+            if GetRelMax('kira')[0]<4 and kira.dcv.feature.stage>5:
+                $ AttitudeChange('kira', 1) # Дружеские
+            if GetRelMax('kira')[0]<5 and kira.dcv.feature.stage>7:
+                $ AttitudeChange('kira', 1) # Близкие
+
+
 
     return

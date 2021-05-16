@@ -335,6 +335,8 @@ label kira_bath:
     label .cuni_bj:
         if not _in_replay:
             $ SetCamsGrow(house[3], 200)
+            if GetRelMax('kira')[0]<3:
+                $ AttitudeChange('kira', 1) # Тёплые
         scene BG bath-cun-01
         show Kira bath-mass cun-01
         menu:
@@ -1108,6 +1110,8 @@ label kira_night_tv:
             $ persistent.memories['kira_night_tv.porn_view'] = 0
         if not _in_replay:
             $ SetCamsGrow(house[4], 180)
+            if GetRelMax('kira')[0] < 2:
+                $ AttitudeChange('kira', 1)
         scene BG tv-watch-01
         $ kira.flags.porno+=1
         if kira.flags.porno==1:
@@ -1315,6 +1319,8 @@ label kira_night_tv:
         $ renpy.end_replay()
         $ persistent.memories['kira_night_tv.first_lesson'] = 1
         $ poss['seduction'].open(7)
+        if GetRelMax('kira')[0] < 2:
+            $ AttitudeChange('kira', 1)
         $ lisa.dcv.seduce.stage = 2
         $ SetCamsGrow(house[4], 150)
 
@@ -1561,6 +1567,8 @@ label kira_night_tv:
         # (получилось сдержаться)
         $ Skill('sex', 0.2)
         $ kira.stat.blowjob += 1 #открывается возможность куни и минета в ванне
+        if GetRelMax('kira')[0]<3:
+            $ AttitudeChange('kira', 1) # Тёплые
         if renpy.random.randint(1, 2)>1:
             scene BG tv-mass-07
             show Kira tv-game bj-05ab
@@ -1634,6 +1642,8 @@ label kira_night_tv:
         if not _in_replay:
             $ persistent.memories['kira_night_tv.repeat_lesson'] = 1
             $ SetCamsGrow(house[4], 200)
+            if GetRelMax('kira')[0]<3:
+                $ AttitudeChange('kira', 1) # Тёплые
         menu:
             Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком..."
             "{i}ласкать её грудь и киску{/i}":

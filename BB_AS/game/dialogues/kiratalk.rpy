@@ -83,6 +83,7 @@ label kira_firsttalk:
     $ kira.dcv.feature.stage += 1   # 1
     $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].open(0)
+    $ AttitudeChange('kira', 1)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
     jump Waiting
@@ -592,6 +593,8 @@ label first_photoset:
     # $ items['nightie2'].have = False
     $ kira.dcv.feature.stage += 1   # 6
     $ kira.dcv.feature.set_lost(1)
+    if GetRelMax('kira')[0]<4:
+        $ AttitudeChange('kira', 1) # Дружеские
     $ spent_time += 90
     $ current_room = house[0]
     jump Waiting
@@ -967,6 +970,8 @@ label kira_about_photo2:
     $ kira.dcv.feature.stage += 1   # 8
     $ kira.dcv.feature.set_lost(1)
     $ append_photo('02-Kira', 9)
+    if GetRelMax('kira')[0]<5:
+        $ AttitudeChange('kira', 1) # Близкие
 
     $ spent_time += 60
     jump Waiting

@@ -150,6 +150,8 @@ label olivia_night_visit:
 
     elif olivia.dcv.special.stage < 2:
         # второй ночной визит Оливии (повторяемый, пока не дошло до просмотра ТВ второй раз)
+        if GetRelMax('olivia')[0]<2:
+            $ AttitudeChange('olivia', 1)   # Хорошие
         jump olivia_second_night_visit
 
     else:       # третий и последующие визиты

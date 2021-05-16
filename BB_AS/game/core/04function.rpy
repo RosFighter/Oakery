@@ -985,6 +985,8 @@ init python:
     def MoodNeutralize(): # с течением времени настроение стремится к нейтральному
         cycles = spent_time / 10 # расчет выполняется каждые 10 минут
         for char in chars:
+            if char in ['olivia', 'kira']:
+                continue
             for i in range(cycles):
                 if chars[char].mood > 0:
                     chars[char].mood -= 1

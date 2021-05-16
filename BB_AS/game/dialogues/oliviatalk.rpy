@@ -90,6 +90,7 @@ label olivia_talk1:
     $ poss['Schoolmate'].open(6)
     $ olivia.dcv.feature.stage = 1
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
+    $ AttitudeChange('olivia', 1)   # Неплохие
     $ spent_time += 30
     jump Waiting
 

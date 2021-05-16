@@ -1527,7 +1527,8 @@ screen menu_userinfo():
                                                     text str(round(mgg.sex*10, 1)) size 24
 
                                 elif CurChar == 'eric':
-                                    pass
+                                    frame xfill True ysize 15 background None:
+                                        pass
                                 else:
                                     vbox spacing -1:
                                         # mood
@@ -1594,11 +1595,11 @@ screen menu_userinfo():
                                                     text _("Предпочтения в сладостях:") size 24 color gui.accent_color
                                                 frame xfill True background None:
                                                     vbox spacing 1:
-                                                        # if 3 in alice.sorry.give:
+                                                        if 3 in alice.sorry.give:
                                                             text _("Любит \"Ferrero Rocher\"") size 24
-                                                        # if 2 in alice.sorry.give:
+                                                        if 2 in alice.sorry.give:
                                                             text _("Сгодится \"Ritter Sport\"") size 24
-                                                        # if 1 in alice.sorry.give:
+                                                        if 1 in alice.sorry.give:
                                                             text _("Ненавидит \"Raffaello\"") size 24
                                         if poss['nightclub'].used(5):
                                             hbox xfill True:
