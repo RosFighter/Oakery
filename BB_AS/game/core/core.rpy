@@ -701,7 +701,7 @@ label after_load:
 
     if _version < config.version:
 
-        call update_06_5 from _call_update_06_5    # фиксы текущей версии
+        call update_06_5 from _call_update_06_5    # фиксы до релиза
 
         # обновление расписаний
         call set_alice_schedule from _call_set_alice_schedule
@@ -975,10 +975,11 @@ label update_06_5:
 
     if _version < "0.06.4.07":
         python:
-            if type(kira.dcv.photo)!=Daily:
-                kira.dcv.photo = Daily()
-                if kira.dcv.feature.stage > 7:
-                    kira.dcv.photo.stage = 2
+            if 'kira' in chars:
+                if type(kira.dcv.photo)!=Daily:
+                    kira.dcv.photo = Daily()
+                    if kira.dcv.feature.stage > 7:
+                        kira.dcv.photo.stage = 2
 
     if _version < "0.06.4.08":
         if ann.flags.help>4:
@@ -1059,7 +1060,5 @@ label update_06_5:
                 $ AttitudeChange('kira', 1) # Дружеские
             if GetRelMax('kira')[0]<5 and kira.dcv.feature.stage>7:
                 $ AttitudeChange('kira', 1) # Близкие
-
-
 
     return

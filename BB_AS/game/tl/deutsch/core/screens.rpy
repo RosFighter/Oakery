@@ -276,113 +276,113 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1468
     old "Отношения с [char_name!t]:"
-    new ""
+    new "Beziehung zu [char_name!t]:"
 
     # game/core/screens.rpy:1476
     old "Запас сил:"
-    new ""
+    new "Kraftreserve:"
 
     # game/core/screens.rpy:1481
     old "Тренированность:"
-    new ""
+    new "Übung:"
 
     # game/core/screens.rpy:1486
     old "Чистота:"
-    new ""
+    new "Sauberkeit:"
 
     # game/core/screens.rpy:1496
     old "Навык убеждения:"
-    new ""
+    new "Überredungskunst:"
 
     # game/core/screens.rpy:1501
     old "Навык скрытности:"
-    new ""
+    new "Tarnfähigkeit:"
 
     # game/core/screens.rpy:1507
     old "Навык массажа:"
-    new ""
+    new "Massage-Fähigkeit:"
 
     # game/core/screens.rpy:1513
     old "Навык эро.массажа:"
-    new ""
+    new "Erotische Massage:"
 
     # game/core/screens.rpy:1519
     old "Навык поцелуев:"
-    new ""
+    new "Kussfähigkeit:"
 
     # game/core/screens.rpy:1525
     old "Сексуальный опыт:"
-    new ""
+    new "Sexuelle Erfahrung:"
 
     # game/core/screens.rpy:1536
     old "Настроение:"
-    new ""
+    new "Stimmung:"
 
     # game/core/screens.rpy:1542
     old "Уровень отношений:"
-    new ""
+    new "Beziehungsebene:"
 
     # game/core/screens.rpy:1550
     old "Раскрепощенность:"
-    new ""
+    new "Lässigkeit:"
 
     # game/core/screens.rpy:1574
     old "Предпочтения в сладостях:"
-    new ""
+    new "Süßigkeitenvorliebe:"
 
     # game/core/screens.rpy:1578
     old "Любит \"Ritter Sport\""
-    new ""
+    new "Liebt \"Ritter Sport\""
 
     # game/core/screens.rpy:1580
     old "Сгодится \"Raffaello\""
-    new ""
+    new "\"Raffaello\" wird genügen"
 
     # game/core/screens.rpy:1582
     old "Ненавидит \"Ferrero Rocher\""
-    new ""
+    new "Hasst \"Ferrero Rocher\""
 
     # game/core/screens.rpy:1586
     old "Предпочтения в массаже:"
-    new ""
+    new "Massagevorlieben:"
 
     # game/core/screens.rpy:1589
     old "- После массажа рук Лиза может позволить массировать ей плечи (и не только их) при выполнении домашнего задания"
-    new ""
+    new "- Nach einer Handmassage kann sich Lisa die Schultern (und nicht nur die) massieren, während sie ihre Hausaufgaben macht"
 
     # game/core/screens.rpy:1598
     old "Любит \"Ferrero Rocher\""
-    new ""
+    new "Liebt \"Ferrero Rocher\""
 
     # game/core/screens.rpy:1600
     old "Сгодится \"Ritter Sport\""
-    new ""
+    new "\"Ritter Sport\" wird genügen"
 
     # game/core/screens.rpy:1602
     old "Ненавидит \"Raffaello\""
-    new ""
+    new "Hasst \"Raffaello\""
 
     # game/core/screens.rpy:1606
     old "Действие алкоголя:"
-    new ""
+    new "Wirkung von Alkohol:"
 
     # game/core/screens.rpy:1609
     old "???"
-    new ""
+    new "???"
 
     # game/core/screens.rpy:1613
     old "- Не может вспомнить всё, что происходило, пока она была пьяна"
-    new ""
+    new "- Kann sich nicht an alles erinnern, was passiert ist, während sie betrunken war"
 
     # game/core/screens.rpy:1619
     old "- Если начинать массаж для Алисы во дворе со ступней, то вероятность помассировать остальное больше"
-    new ""
+    new "- Wenn die Massage für Alice im Garten bei den Füßen beginnt, ist es wahrscheinlicher, dass auch der Rest massiert werden kann"
 
     # game/core/screens.rpy:1621
     old "- При помощи конфет с ликёром можно получить фут-джоб (и не только) от Алисы при массаже у ТВ"
-    new ""
+    new "- Bei einer Massage beim Fernsehen mit Likörbonbon bekommt man von Alice einen Footjob (und mehr)"
 
     # game/core/screens.rpy:1623
     old "- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном"
-    new ""
+    new "- gibt Alice bei einer Fernseh-Massage einen Footjob und kann durch die Kamera beobachtet werden, wie sie masturbiert, bevor sie ins Bett geht"
 

@@ -100,25 +100,25 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Итак, я поймал огромного паука. Это не так сложно, если знать в какое время и где их ловить. Теперь нужно испытать этого монстра на сестрёнке. Вот только бы выбрать подходящий момент... Интересно, а она заметит паука, если будет принимать душ?"
-    new ""
+    new "Also, ich habe eine riesige Spinne gefangen. Es ist gar nicht so schwer, wenn man weiß, wann und wo man sie fangen kann. Jetzt muss ich dieses Ungetüm an meiner Schwester testen. Ich muss nur den richtigen Moment erwischen... Ich frage mich, ob sie es merkt, wenn sie gerade duscht."
 
     # game/core/09_opportunities.rpy:4
     old "О да! Алиса определённо боится пауков! Такой мокрой и трясущейся от страха попки моей старшей сестрёнки я ещё не видел... Визг слышали все соседи со всей округи, это точно! Вот только если Алиса узнает, что я это всё специально подстроил, меня ждёт смерть. Надеюсь, быстрая! А пока этого не случилось, можно попробовать подложить паука в её комнату..."
-    new ""
+    new "Oh, ja! Alice hat definitiv Angst vor Spinnen! Ich habe den Arsch meiner großen Schwester noch nie so nass und zitternd vor Angst gesehen... Das Geschrei konnten die gesammte Nachbarschaft hören, das ist mal sicher. Aber wenn Alice herausfindet, dass ich es absichtlich gemacht habe, bin ich tot. Hoffentlich schnell! Bevor das passiert, könnte ich versuchen, eine Spinne in ihrem Zimmer freizulassen..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса так боится пауков, что прибежала ко мне за спасением посреди ночи! Алиса так сексуальна в своём нижнем белье, ммм... И похоже, её можно на многое развести под страхом ночёвки с пауком, так что я точно спасаю её не в последний раз! Может, подложить паука, когда Алиса загорает?"
-    new ""
+    new "Alice hat so viel Angst vor Spinnen, dass sie mitten in der Nacht zu mir gerannt kam, um mich zu holen! Alice ist so sexy in ihrer Unterwäsche, mmm... Und es sieht so aus, als gäbe es eine Menge Dinge, zu denen sie aus Angst, mit einer Spinne schlafen zu müssen, ermutigt werden könnte, also rette ich sie definitiv nicht zum letzten Mal! Vielleicht eine Spinne freilassen, wenn Alice ein Sonnenbad nimmt."
 
     # game/core/09_opportunities.rpy:4
     old "Таких крепких объятий от Алисы я не ожидал! Так близко к моему лицу её сиськи не были ещё никогда! С помощью пауков я могу обеспечить себе много каких по-хорошему волнующих моментов с Алисой... Посмотрим, к чему это приведёт..."
-    new ""
+    new "Eine so innige Umarmung hatte ich von Alice nicht erwartet! Ihre Brüste waren noch nie so nah an meinem Gesicht gewesen! Mit Hilfe der Spinnen kann ich dafür sorgen, dass ich viele gute, aufregende Momente mit Alice habe... Mal sehen, wohin das führt."
 
     # game/core/09_opportunities.rpy:4
     old "А вот это интересно! Я думал Алиса, как всегда, обругает меня после того, как вцепилась в мой член, прячась от паука... Но, нет! Более того, она даже как-то... подобрела ко мне... Вернее, стала спокойнее относится к моему \"возбуждённому\" состоянию! Странно... Может, она наконец почувствовала, что пауки намного страшнее, чем мой стояк?! Если так, то это очень хорошо, потому что многое с Алисой теперь будет иначе..."
-    new ""
+    new "Das ist ja interessant! Ich dachte, Alice würde mich wie üblich beschimpfen, nachdem sie meinen Schwanz festgehalten hatte, während sie sich vor einer Spinne fürchtete... Aber, nein! Eigentlich ist sie sogar irgendwie... ...hat sie sich bei mir wohler gefühlt... Ich meine, sie ist entspannter, was meinen \"geilen\" Zustand angeht. Das ist seltsam. Vielleicht fängt sie endlich an zu merken, dass Spinnen gruseliger sind als mein Ständer. Wenn ja, ist das eine gute Sache, denn mit Alice wird jetzt vieles anders sein."
 
     # game/core/09_opportunities.rpy:4
     old "Как хорошо, что я предложил Лизе сдружиться с Оливией! Благодаря ей, Лиза уже не та стеснительная девочка, которая разве что на периодические поцелуйчики соглашалась... Теперь её реально можно уговорить смотреть ужастики в одних лишь трусиках! Всё, что для этого нужно, не давать маме её наказывать... Если до этого дойдёт."
-    new ""
+    new "Gut, dass ich Lisa vorgeschlagen habe, sich mit Olivia anzufreunden! Dank ihr ist Lisa nicht mehr das schüchterne Mädchen, das nur einem gelegentlichen Kuss eingewilligt hat... Jetzt kann sie wirklich dazu überredet werden, sich Horrorfilme nur in ihrem Slip anzusehen! Alles, was ich tun muss, ist, sie nicht von Mom bestrafen zu lassen... Wenn es dazu kommt."
 

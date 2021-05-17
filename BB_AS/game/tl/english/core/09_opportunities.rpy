@@ -100,25 +100,25 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Итак, я поймал огромного паука. Это не так сложно, если знать в какое время и где их ловить. Теперь нужно испытать этого монстра на сестрёнке. Вот только бы выбрать подходящий момент... Интересно, а она заметит паука, если будет принимать душ?"
-    new ""
+    new "So, I caught a huge spider. It's not that hard if you know where and when to catch them. Now I have to test this monster on my sister. I just have to pick the right moment... I wonder if she'll notice the spider if she's taking a shower?"
 
     # game/core/09_opportunities.rpy:4
     old "О да! Алиса определённо боится пауков! Такой мокрой и трясущейся от страха попки моей старшей сестрёнки я ещё не видел... Визг слышали все соседи со всей округи, это точно! Вот только если Алиса узнает, что я это всё специально подстроил, меня ждёт смерть. Надеюсь, быстрая! А пока этого не случилось, можно попробовать подложить паука в её комнату..."
-    new ""
+    new "Oh yes! Alice is definitely afraid of spiders! I've never seen my big sister's butt so wet and shaking with fear... Squealing heard all the neighbors around the neighborhood, that's for sure! Except that if Alice finds out that I did it on purpose, I will die. Quick death, I hope! And before that happens, we can try to put a spider in her room..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса так боится пауков, что прибежала ко мне за спасением посреди ночи! Алиса так сексуальна в своём нижнем белье, ммм... И похоже, её можно на многое развести под страхом ночёвки с пауком, так что я точно спасаю её не в последний раз! Может, подложить паука, когда Алиса загорает?"
-    new ""
+    new "Alice is so afraid of spiders that she came running to me for rescue in the middle of the night! Alice is so sexy in her underwear, mmm. And it looks like there's a lot of things she could be tempted to do under fear of sleeping with a spider, so I'm definitely not rescuing her for the last time! Maybe put a spider underneath when Alice is sunbathing?"
 
     # game/core/09_opportunities.rpy:4
     old "Таких крепких объятий от Алисы я не ожидал! Так близко к моему лицу её сиськи не были ещё никогда! С помощью пауков я могу обеспечить себе много каких по-хорошему волнующих моментов с Алисой... Посмотрим, к чему это приведёт..."
-    new ""
+    new "I hadn't expected such a tight embrace from Alice! Her tits have never been so close to my face! With the help of the spiders, I can provide myself with a lot of good-enough exciting moments with Alice... Let's see where this goes..."
 
     # game/core/09_opportunities.rpy:4
     old "А вот это интересно! Я думал Алиса, как всегда, обругает меня после того, как вцепилась в мой член, прячась от паука... Но, нет! Более того, она даже как-то... подобрела ко мне... Вернее, стала спокойнее относится к моему \"возбуждённому\" состоянию! Странно... Может, она наконец почувствовала, что пауки намного страшнее, чем мой стояк?! Если так, то это очень хорошо, потому что многое с Алисой теперь будет иначе..."
-    new ""
+    new "Now that's interesting! I thought Alice, as usual, would scold me after she clung to my cock, hiding from the spider... But no! Moreover, she even somehow... She's been more comfortable with me... I mean, she's more relaxed around my \"horny\" state. That's weird. Maybe she finally felt that spiders are scarier than my boner. If so, that's a good thing, because a lot of things will be different with Alice now..."
 
     # game/core/09_opportunities.rpy:4
     old "Как хорошо, что я предложил Лизе сдружиться с Оливией! Благодаря ей, Лиза уже не та стеснительная девочка, которая разве что на периодические поцелуйчики соглашалась... Теперь её реально можно уговорить смотреть ужастики в одних лишь трусиках! Всё, что для этого нужно, не давать маме её наказывать... Если до этого дойдёт."
-    new ""
+    new "It's a good thing I suggested that Lisa become friends with Olivia! Thanks to her, Lisa is no longer the shy girl who only agreed to the occasional kiss... Now she can really be talked into watching horror movies in just her panties! All you have to do is not let Mom punish her... If it comes to that."
 
