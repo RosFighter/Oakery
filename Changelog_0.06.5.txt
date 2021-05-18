@@ -1,8 +1,9 @@
 Fix 0.06.5.01
 
 0.06.5.01
-    - исправлена ошибка, иногда возникавшая в субботу после ужина перед разговором с Эриком
-    - исправлена ошибка вывода изображения при подсматривании за Лизой и Оливией, смотрящими фильм
-    - исправлена ошибка вывода изображения при подсматривании через скрытую камеру за Лизой и Оливией, смотрящими фильм
-    - исправлена ошибка, иногда возникавшая при наблюдении через скрытую камеру за Лизой и Оливией в бассейне
-    - исправлена ошибка, иногда приводившая к краху при начале новой игры
+    - fixed a bug that sometimes occurred on Saturday after dinner before talking to Eric (исправлена ошибка, иногда возникавшая в субботу после ужина перед разговором с Эриком)
+    - fixed an image output error when spying on Lisa and Olivia watching a movie (исправлена ошибка вывода изображения при подсматривании за Лизой и Оливией, смотрящими фильм)
+    - fixed an image output error when peeking through a hidden camera at Lisa and Olivia watching a movie (исправлена ошибка вывода изображения при подсматривании через скрытую камеру за Лизой и Оливией, смотрящими фильм)
+    - fixed a bug that sometimes occurred when watching Lisa and Olivia in the pool through a hidden camera (исправлена ошибка, иногда возникавшая при наблюдении через скрытую камеру за Лизой и Оливией в бассейне)
+    - fixed a bug that sometimes caused a crash when starting a new game (исправлена ошибка, иногда приводившая к краху при начале новой игры)
+    - some corrections of the German translation (некоторые исправления немецкого перевода)
