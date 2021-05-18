@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.5.00"
+define config.version = "0.06.5.01"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -219,7 +219,7 @@ init python:
     build.classify('game/extra/**.jpg', 'extra')
     build.classify('game/extra/**.webp', 'extra')
     build.classify('game/extra/**.rpyc', 'extra')
-    build.classify('game/tl/english/extra/**.rpyc', 'extra')
+    build.classify('game/tl/**/extra/**.rpyc', 'extra')
 
     # build.archive("img_fix", "all")
     # build.classify('game/images/Alice/punish-sun/*.webp', 'img_fix')

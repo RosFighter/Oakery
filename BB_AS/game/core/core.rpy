@@ -701,7 +701,8 @@ label after_load:
 
     if _version < config.version:
 
-        call update_06_5 from _call_update_06_5    # фиксы до релиза
+        call update_06_5 from _call_update_06_5         # фиксы до релиза
+        call update_06_5_99 from _call_update_06_5_99   # фиксы после релиза
 
         # обновление расписаний
         call set_alice_schedule from _call_set_alice_schedule
@@ -720,12 +721,10 @@ label after_load:
 
     return
 
-
 label update_06_5:
 
     if _version < "0.06.4.01":
         # $ current_ver = "0.06.4.01"
-        $ _version = "0.06.4.01"
 
         $ poss['ass'] = Poss([
                 PossStage("interface poss ass ep01", _("Интересно получилось! Я ради интереса сказал Алисе, что больше не хочу за неё заступаться, когда её наказывают, но готов это делать и дальше, если она согласится, чтобы её шлёпал я.\nОна сперва приняла такой уговор в штыки, но после нескольких наказаний от мамы всё же согласилась, чтобы её шлёпал я. По крайней мере, если получилось спасти Алису от маминой руки. Надо так же не забыть обсудить с ней, когда можно её отшлёпать.\n\nПравда есть небольшой нюанс, благодаря которому Алиса и согласилась на это... Я пообещал, что отшлёпаю её нежно. Да уж, будет не просто устоять и не влепить по её попке за то, как стервозно она себя вела...")),  #0
@@ -733,7 +732,6 @@ label update_06_5:
             ])
 
     if _version < "0.06.4.02":
-        $ _version = "0.06.4.02"
 
         python:
             renpy.dynamic('flag', 'dcv_tmp', 'wcv_tmp')
@@ -1060,5 +1058,43 @@ label update_06_5:
                 $ AttitudeChange('kira', 1) # Дружеские
             if GetRelMax('kira')[0]<5 and kira.dcv.feature.stage>7:
                 $ AttitudeChange('kira', 1) # Близкие
+
+    return
+
+label update_06_5_99:
+
+    if _version < "0.06.5.01":
+        if 'infl' not in globals():
+            $ infl = {
+                lisa : Influence(),
+                ann : Influence(),
+                alice : Influence(),
+                }
+
+            if 'kira' in chars:
+                $ infl[kira] = Influence()
+
+            if poss['Swimsuit'].used(3):
+                $ infl[lisa].add_m(30, True)
+            else:
+                $ infl[lisa].add_e(30, True)
+
+            if poss['nightclub'].stages[4]:
+                $ infl[alice].add_m(30, True)
+            else:
+                $ infl[alice].add_e(30, True)
+
+            if 'bathrobe' in lisa.gifts:
+                $ infl[lisa].add_m(30, True)
+
+            if 'pajamas' in alice.gifts:
+                $ infl[alice].add_m(30, True)
+
+            if 'black_linderie' in alice.gifts:
+                $ infl[alice].add_m(30, True)
+
+            $ infl[ann].add_e(150, True)
+            if 'nightie' in ann.gifts:
+                $ infl[ann].add_m(30, True)
 
     return

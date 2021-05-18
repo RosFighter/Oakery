@@ -1228,7 +1228,7 @@ translate deutsch Eric_talk_about_lace_lingerie_770a09a1:
 translate deutsch Eric_talk_about_lace_lingerie_b3058115:
 
     # Max_09 "Что надо?"
-    Max_09 "What do you need?"
+    Max_09 "Was willst du?"
 
 # game/dialogues/erictalk.rpy:596
 translate deutsch Eric_talk_about_lace_lingerie_884dcc80:

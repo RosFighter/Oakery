@@ -44,7 +44,7 @@ label olivia_lisa_tv:
                 #tv-mass-05 + tv-watch-02-max-(01a/01b) + (tv-watch-02-lisa&olivia-(01/01a) или tv-watch-02-lisa&olivia-(02/02a) или tv-watch-02-lisa&olivia-(03/03a))
                 scene BG tv-mass-05
                 $ renpy.show('Max tv 02'+mgg.dress)
-                $ renpy.show('Olivia night-tv 02-0'+renpy.random.randint(1, 3)+lisa.dress)
+                $ renpy.show('Olivia night-tv 02-0'+str(renpy.random.randint(1, 3))+lisa.dress)
                 if lisa.dcv.special.stage < 4:
                     Max_04 "{i}( Красота! Сидеть вместе с ними на диване было бы куда интереснее... Можно было бы поглядывать одним глазком на них, а другим на экран. Эх, лучше здесь не задерживаться, они в любой момент могут меня заметить... ){/i}"
                 else:

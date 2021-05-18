@@ -8858,7 +8858,7 @@ translate deutsch about_boy3_a8df8b20:
 translate deutsch about_boy3_2b4e8f98:
 
     # Max_07 "Да, но это лучше, чем попытаться их, например, рассорить или ещё чего... Если Оливия очень нравится Алексу и из-за тебя они расстанутся, он вообще тебя может возненавидеть."
-    Max_07 "Ja, aber es ist besser, als zu versuchen, sie auseinander zu bringen oder so... Wenn Alex Olivia wirklich mag und Sie sie trennen, könnte er Sie hassen."
+    Max_07 "Ja, aber es ist besser, als zu versuchen, sie auseinander zu bringen oder so... Wenn Alex Olivia wirklich mag und du die beiden auseinander bringst, könnte er dich womöglich hassen."
 
 # game/dialogues/lisatalk.rpy:3765
 translate deutsch about_boy3_e62a48a2:

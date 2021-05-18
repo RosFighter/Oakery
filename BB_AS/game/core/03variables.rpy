@@ -100,6 +100,12 @@ label InitCharacters: # стартовая инициация персонаже
         ann   = chars['ann']
         lisa  = chars['lisa']
 
+        infl = {
+            lisa : Influence(),
+            ann : Influence(),
+            alice : Influence(),
+            }
+
     # расписание
     call set_alice_schedule from _call_set_alice_schedule_1
 
@@ -117,38 +123,6 @@ label InitCharacters: # стартовая инициация персонаже
 
         # одежда
         checking_clothes()
-
-        infl = {
-            lisa : Influence(),
-            ann : Influence(),
-            alice : Influence(),
-            }
-        #     lisa.clothes.casual     = Clothes(_("Повседневная"), [Garb('a', '01a', 'Обычная одежда')])
-        #     lisa.clothes.sleep      = Clothes(_("Для сна"),
-        #                     [Garb('a', '02', 'Обычная одежда'), Garb('b', '02a', 'Маечка и трусики')])
-        #     lisa.clothes.swimsuit   = Clothes(_("КУПАЛЬНИК"), [Garb('a', '03', 'Закрытый купальник')])
-        #     lisa.clothes.learn      = Clothes(_("За уроками"),
-        #                     [Garb('a', '01a', 'Обычная одежда'), Garb('c', '04b', 'Полотенце', True)])
-        #
-        #     alice.clothes.casual = Clothes(_("Повседневная"), [Garb('a', '01a', 'Обычная одежда', True)])
-        #     alice.clothes.sleep = Clothes(_("Для сна"), [Garb('a', '02', 'Белое кружевное бельё', True)])
-        #
-        #     ann.clothes.casual = Clothes(_("Повседневная"),
-        #                     [Garb('a', '01a', 'Обычная одежда', False, True), Garb('b', '01b', 'Футболка', False, True)])
-        #     ann.clothes.cook_morn = Clothes(_("Для приготовления завтрака"),
-        #                     [Garb('a', '05b', 'Спортивная форма + фартук', False, True), Garb('b', '01c', 'Футболка + фартук', False, True)])
-        #     ann.clothes.cook_eve = Clothes(_("Для приготовления ужина"), [Garb('b', '01c', 'Футболка + фартук', False, True)])
-        #     ann.clothes.rest_morn = Clothes(_("Для утреннего отдыха"), [Garb('a', '01b', 'Футболка', False, True)])
-        #
-        #     ann.clothes.rest_eve = Clothes(_("Для вечернего отдыха"),
-        #                     [Garb('a', '01b', 'Футболка', False, True), Garb('b', '04b', 'Полотенце', False, True)])
-        #     ann.clothes.sleep = Clothes(_("Для сна"), [Garb('a', '02', 'Обычная одежда для сна')])
-        #
-        #     ann.clothes.rest_eve.rand = True
-        #     ann.clothes.casual.rand = True
-        #     ann.clothes.cook_morn.rand = True
-        #
-        #     mgg.clothes.casual = Clothes(_("Повседневная"), [Garb('a', '01a', 'Обычная одежда', True)])
 
     return
 

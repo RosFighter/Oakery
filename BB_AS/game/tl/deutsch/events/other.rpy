@@ -652,7 +652,7 @@ translate deutsch Kira_arrival_end_yard_f70abaf0:
 translate deutsch Kira_arrival_end_yard_761bc9e3:
 
     # Alice_02 "Мам, я дома могу одеваться так, как мне нравится. Ну и что, что Макс. Я из-за него не буду целыми днями ходить в парандже! Мне удобно, выглядит отлично! Ну а если и увидит что-то, пусть радуется, мне всё равно..."
-    Alice_02 "Mama, ich kann mich zu Hause so anziehen, wie ich will. Was soll's, Max. Ich werde mich seinetwegen nicht den ganzen Tag völlig verhüllen! Ich fühle mich wohl und es sieht toll aus! Es ist mir egal, ob er einen Blick erhascht, er ist harmlos."
+    Alice_02 "Mom, ich kann mich zu Hause so anziehen, wie ich will. Was soll's, Max. Ich werde mich seinetwegen nicht den ganzen Tag völlig einmummeln! Ich fühle mich wohl und es sieht toll aus! Es ist mir egal, ob er einen Blick erhascht, er ist harmlos."
 
 # game/events/other.rpy:323
 translate deutsch Kira_arrival_end_yard_82a7c555:

@@ -130,7 +130,7 @@ translate deutsch ann_shower_ladder_5a8c4673:
 translate deutsch ann_shower_ladder_96a69e90:
 
     # Max_03 "Вот это повезло... Мама в одних лишь трусиках, а её упругая грудь предстаёт передо мной во всей своей красе! Так бы любовался и любовался ей..."
-    Max_03 "Nun, das ist ein Glück... Mama trägt nur ein Höschen, und ihre weichen Brüste erscheinen mir in ihrer ganzen Pracht! Deshalb bewundere ich sie..."
+    Max_03 "Nun, das ist ein Glück... Mom trägt nur ein Höschen, und ihre weichen Brüste erscheinen mir in ihrer ganzen Pracht! Deshalb bewundere ich sie..."
 
 # game/events/ann.rpy:105
 translate deutsch ann_shower_ladder_0c9341b6:

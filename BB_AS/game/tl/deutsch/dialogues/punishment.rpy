@@ -340,7 +340,7 @@ translate deutsch punishment_max_pun_reson_678436cc:
 translate deutsch punishment_max_pun_reson_219ecbe7:
 
     # Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Mama bestraft mich vor allen anderen... Das ist so demütigend...{/i}\n\n{color=[orange]}{b}Warnung:{/b} Dein Einfluss auf deine Familie hat abgenommen.{/color}"
+    Max_14 "{i}Mom bestraft mich vor allen anderen... Das ist so demütigend...{/i}\n\n{color=[orange]}{b}Warnung:{/b} Dein Einfluss in deiner Familie hat abgenommen.{/color}"
 
 # game/dialogues/punishment.rpy:300
 translate deutsch punishment_max_pun_reson_700a2ea3:

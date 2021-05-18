@@ -76,7 +76,7 @@ translate deutsch alice_bath_ladder_98712b50:
 translate deutsch alice_sleep_night_7ff48024:
 
     # Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..." nointeract
-    Max_00 "Ich glaube, Alice schläft schon. Ich werde auf keinen Fall an die Tür klopfen.\nUnd es ist gefährlich, reinzugehen..." nointeract
+    Max_00 "Ich glaube, Alice schläft schon. Wahrscheinlich sollte ich nicht klopfen.\nUnd es ist viel zu gefährlich, einfach reinzugehen..." nointeract
 
 # game/events/alice.rpy:128
 translate deutsch alice_sleep_night_395216d9:
@@ -130,7 +130,7 @@ translate deutsch alice_sleep_night_153a8299:
 translate deutsch alice_sleep_night_aa8e7463:
 
     # Max_01 "Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно... Но, похоже, она кое-что забыла с себя снять перед сном!"
-    Max_01 "Fantastisch! Meine Schwester schläft mit gebogenem Rücken, so dass ihre Titten wie zwei Hügel herausragen... Verführerisch... Aber es scheint, dass sie vergessen hat, etwas auszuziehen, bevor sie ins Bett geht!"
+    Max_01 "Das ist großartig! Schwesterherz schläft auf dem Rücken, so dass ihre Brüste wie zwei Hügel abstehen... Verlockend... Aber es sieht so aus, als hätte sie vergessen, etwas auszuziehen, bevor sie zu Bett gegangen ist!"
 
 # game/events/alice.rpy:152
 translate deutsch alice_sleep_night_a66d1095:
@@ -238,7 +238,7 @@ translate deutsch alice_sleep_night_ef329553:
 translate deutsch alice_sleep_morning_7ff48024:
 
     # Max_00 "Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья..." nointeract
-    Max_00 "Ich glaube, Alice schläft schon. Wahrscheinlich sollte ich nicht klopfen.\nUnd es ist viel zu gefährlich, einfach reinzugehen..." nointeract
+    Max_00 "Ich glaube, Alice schläft noch. Ich werde auf keinen Fall an die Tür klopfen.\nEs ist aber auch ein wenig gefährlich, einfach so reinzugehen..." nointeract
 
 # game/events/alice.rpy:224
 translate deutsch alice_sleep_morning_7c1f0327:
@@ -3484,7 +3484,7 @@ translate deutsch strings:
 
     # game/events/alice.rpy:934
     old "Хорошо, где он там..."
-    new "Fine, where is it..."
+    new "Schön, wo ist sie..."
 
     # game/events/alice.rpy:934
     old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Или может я не прав?!"

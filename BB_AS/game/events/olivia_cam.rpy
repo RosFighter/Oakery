@@ -33,12 +33,12 @@ label cam1_olivia_lisa_swim:
 
 
 label cam0_olivia_lisa_tv:
-    $ renpy.show('Olivia cams tv '+cam_poses_manager(olivia, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    $ renpy.show('Olivia cams night-tv '+cam_poses_manager(olivia, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if 'olivia_lisa_tv' not in cam_flag:
         $ cam_flag.append('olivia_lisa_tv')
-        if lisa.dress < 'c':
+        if lisa.dress < 'd':
             Max_01 "Девчонки смотрят сериалы... Жду не дождусь, когда Лиза тоже начнёт смотреть их голой, как Оливия!"
         else:
             pass

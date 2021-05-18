@@ -4900,7 +4900,7 @@ translate deutsch alice_sorry_gifts_middle_744dc556_2:
 translate deutsch alice_sorry_gifts_middle_f82d8d6c:
 
     # Alice_04 "Видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?" nointeract
-    Alice_04 "In diesem Fall werde ich wohl einfach so tun, als sei heute Morgen nichts passiert, was bedeutet, dass Mama nichts davon wissen muss, richtig?" nointeract
+    Alice_04 "In diesem Fall werde ich wohl einfach so tun, als sei heute Morgen nichts passiert, was bedeutet, dass Mom nichts davon wissen muss, richtig?" nointeract
 
 # game/dialogues/alicetalk.rpy:2745
 translate deutsch alice_sorry_gifts_middle_ad0f4ebe:
@@ -5074,7 +5074,7 @@ translate deutsch alice_sorry_gifts_middle_535354bf_6:
 translate deutsch alice_sorry_gifts_middle_f82d8d6c_1:
 
     # Alice_04 "Видимо, я должна представить, что ничего такого утром не было, а значит и маме нечего рассказывать, так?" nointeract
-    Alice_04 "In diesem Fall werde ich wohl einfach so tun, als sei heute Morgen nichts passiert, was bedeutet, dass Mama nichts davon wissen muss, richtig?" nointeract
+    Alice_04 "In diesem Fall werde ich wohl einfach so tun, als sei heute Morgen nichts passiert, was bedeutet, dass Mom nichts davon wissen muss, richtig?" nointeract
 
 # game/dialogues/alicetalk.rpy:2800
 translate deutsch alice_sorry_gifts_middle_ad0f4ebe_1:
@@ -7226,7 +7226,7 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:311
     old "Ну, давай смотреть всё подряд..."
-    new "Nun, behalten wir es im Auge..."
+    new "Nun, schauen wir es uns an..."
 
     # game/dialogues/alicetalk.rpy:311
     old "Тебе сделать массаж ног?"
@@ -7254,7 +7254,7 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:343
     old "Может конфетку перед массажем?"
-    new "Wie wäre es mit einem Konfekt vor der Massage?"
+    new "Wie wäre es mit etwas Süßem vor der Massage?"
 
     # game/dialogues/alicetalk.rpy:367
     old "Хочу тебя!"
@@ -9597,7 +9597,7 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:901
     old "{i}снять с Алисы шортики{/i}"
-    new "{i}Alices Hosen ausziehen{/i}"
+    new "{i}Alices Slip ausziehen{/i}"
 
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"

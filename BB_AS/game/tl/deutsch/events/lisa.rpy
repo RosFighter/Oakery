@@ -1400,11 +1400,11 @@ translate deutsch strings:
 
     # game/events/lisa.rpy:889
     old "{i}смотреть \"Кошмар на улице Вязов\"{/i}"
-    new "{i}schaue \"A Nightmare on Elm Street\"{/i}"
+    new "{i}schaue \"Nightmare on Elm Street\"{/i}"
 
     # game/events/lisa.rpy:889
     old "{i}смотреть \"Пятница 13-е\"{/i}"
-    new "{i}schaue \"Friday the 13th\"{/i}"
+    new "{i}schaue \"Freitag, der 13.\"{/i}"
 
     # game/events/lisa.rpy:962
     old "Тогда досматриваем... (продолжаем смотреть \"Кошмар на улице Вязов\")"
@@ -1412,15 +1412,15 @@ translate deutsch strings:
 
     # game/events/lisa.rpy:962
     old "Тогда досматриваем... (продолжаем смотреть \"Пятница 13-е\")"
-    new "Dann schauen wir mal... (weiter mit \"Friday the 13th\")"
+    new "Dann schauen wir mal... (weiter mit \"Freitag, der 13.\")"
 
     # game/events/lisa.rpy:988
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Кошмар на улице Вязов\")"
-    new "Dann schauen wir weiter... (weiter mit der Reihe \"the Nightmare on Elm Street\")"
+    new "Dann schauen wir weiter... (weiter mit der Reihe \"Nightmare on Elm Street\")"
 
     # game/events/lisa.rpy:988
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Пятница 13-е\")"
-    new "Dann schauen wir weiter... (weiter mit der Reihe \"the Friday the 13th\")"
+    new "Dann schauen wir weiter... (weiter mit der Reihe \"Freitag, der 13.\")"
 
     # game/events/lisa.rpy:1042
     old "{i}сдерживаться{/i} \n{color=[_ch3.col]}(Сексуальный опыт. Шанс: [_ch3.vis]){/color}"
@@ -1788,13 +1788,13 @@ translate deutsch strings:
 
     # game/events/lisa.rpy:1043
     old "{i}смотреть \"Крик\"{/i}"
-    new "{i}\"The Scream\" ansehen{/i}"
+    new "{i}\"Scream – Schrei!\" ansehen{/i}"
 
     # game/events/lisa.rpy:1128
     old "Тогда досматриваем... (продолжаем смотреть \"Крик\")"
-    new "Dann sehen wir mal... (weiter mit \"The Scream\")"
+    new "Dann sehen wir mal... (weiter mit \"Scream – Schrei!\")"
 
     # game/events/lisa.rpy:1164
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Крик\")"
-    new "Dann lassen uns fortfahren... (\"The Scream\" weiter schauen)"
+    new "Dann lassen uns fortfahren... (\"Scream – Schrei!\" weiter schauen)"
 

@@ -239,7 +239,7 @@ define gifts = {
         Gift('pajamas', _("У меня для тебя подарок {i}(Пижама){/i}"), 'gift_pajamas', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
         Gift("b.lingerie", _("У меня есть кое-что, о чём мы беседовали..."), "gift_black_lingerie", -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),
         Gift(['ferrero-m', 'ferrero-b'], _("{color=#808080}Прикупил для тебя немного сладенького! \n (нужно выждать несколько дней){/color}"), '', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], not alice.dcv.sweets.done])"),
-        Gift(['ferrero-m', 'ferrero-b'], _("Прикупил для тебя немного сладенького!"), 'alice_gift_sweets', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], alice.dcv.sweets.done])"),
+        Gift(['ferrero-m', 'ferrero-b'], _("Прикупил для тебя немного сладенького!"), 'alice_gift_sweets', -1, "all(['pajamas' in alice.gifts, alice.plan_name in ['sun', 'read', 'resting', 'blog'], alice.dcv.sweets.done, alice.daily.oiled!=2])"),
         ],
     'ann'   : [
         # Gift(['cosmatic1', 'cosmatic2', 'cosmatic3'], _("У меня для тебя подарок {i}(Косметика){/i}"), 'gift_cosmatics'),

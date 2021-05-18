@@ -484,7 +484,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:116
     old "С тобой можно?"
-    new "Kann ich mitkommen?"
+    new "Kann ich mitmachen?"
 
     # game/core/02init.rpy:116
     old "Я присоединюсь?"
@@ -496,7 +496,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:116
     old "Я хотел спросить про тот случай из детства мамы..."
-    new "Ich wollte  meine Mom nach diesem Vorfall aus ihrer Kindheit fragen..."
+    new "Ich wollte Mom nach dem Vorfall aus ihrer Kindheit fragen..."
 
     # game/core/02init.rpy:116
     old "Расскажи уже про тот случай из детства мамы..."

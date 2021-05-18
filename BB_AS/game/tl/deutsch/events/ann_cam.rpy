@@ -40,7 +40,7 @@ translate deutsch cam1_ann_shower_0326dfb9:
 translate deutsch cam0_ann_yoga_e9ef9711:
 
     # Max_02 "Мама, как и всегда в это время, занимается йогой. Здесь, хоть в какой позе, она выглядит очень сексуально..."
-    Max_02 "Mama macht Yoga. Ich bewundere den Aufwand, den sie betreibt, um flexibel zu bleiben. Man stelle sich nur vor, was sie mit ihrem Körper alles machen könnte..."
+    Max_02 "Mom macht Yoga. Ich bewundere den Aufwand, den sie betreibt, um flexibel zu bleiben. Man stelle sich nur vor, was sie mit ihrem Körper alles machen könnte..."
 
 # game/events/ann_cam.rpy:75
 translate deutsch cam1_ann_yoga_ce238a73:

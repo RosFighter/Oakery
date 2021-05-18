@@ -442,7 +442,7 @@ translate deutsch eric_ann_tv_closer1_d646f6b6:
 translate deutsch eric_ann_tv_closer1_224a6ad6:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mama ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf dem Bildschirm passiert..." nointeract
+    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf dem Bildschirm passiert..." nointeract
 
 # game/events/eric.rpy:480
 translate deutsch eric_ann_tv_closer1_bdf10685:
@@ -874,7 +874,7 @@ translate deutsch eric_ann_shower_alt_peepeng_d769a708:
 translate deutsch eric_ann_shower_alt_peepeng_42177608:
 
     # Max_09 "[undetect!t]Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!" nointeract
-    Max_09 "[undetect!t] Ja, Eric hat sich gut eingelebt... Mama lutscht ihn mit solcher Freude ab, dass sie nicht mehr wegkommt! Lutscht sie wirklich gern an seinem Schwanz?!" nointeract
+    Max_09 "[undetect!t] Ja, Eric hat sich gut eingelebt... Mom lutscht ihn mit solcher Freude ab, dass sie nicht mehr wegkommt! Lutscht sie wirklich gern an seinem Schwanz?!" nointeract
 
 # game/events/eric.rpy:901
 translate deutsch eric_ann_shower_alt_peepeng_5b560f45:
@@ -1174,7 +1174,7 @@ translate deutsch sexed_lisa_lesson_1_03d6e80a:
 translate deutsch sexed_lisa_lesson_1_d1ae2239:
 
     # Lisa_09 "Мам, твоя грудь - уж точно не мелочь! У меня поменьше будет..."
-    Lisa_09 "Mama, deine Brüste sind definitiv nicht klein! Zumindest im Vergleich zu meinen..."
+    Lisa_09 "Mom, deine Brüste sind definitiv nicht klein! Zumindest im Vergleich zu meinen..."
 
 # game/events/eric.rpy:1137
 translate deutsch sexed_lisa_lesson_1_0f719766:
@@ -1852,7 +1852,7 @@ translate deutsch strings:
 
     # game/events/eric.rpy:356
     old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
-    new "Wow! Eric hat Mama das Handtuch weggezogen und ich sehe ihren nackten Arsch! Vielleicht sollte ich näher ran."
+    new "Wow! Eric hat Mom das Handtuch weggezogen und ich sehe ihren nackten Arsch! Vielleicht sollte ich näher ran."
 
     # game/events/eric.rpy:357
     old "{i}подойти ближе{/i}"
@@ -1872,7 +1872,7 @@ translate deutsch strings:
 
     # game/events/eric.rpy:387
     old "На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?"
-    new "Es ist gerade sehr viel los! Eine Mom hat ihr Handtuch fallen gelassen. Schade, dass ich ihre Brüste nicht sehen kann... Soll ich näher kommen??"
+    new "Es ist gerade sehr viel los! Mom hat gerade ihr Handtuch fallen gelassen. Schade, dass ich ihre Brüste nicht sehen kann... Soll ich näher kommen??"
 
     # game/events/eric.rpy:389
     old "Ого! На экране стало интереснее! А что это мама там делает?"

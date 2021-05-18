@@ -348,7 +348,7 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1589
     old "- После массажа рук Лиза может позволить массировать ей плечи (и не только их) при выполнении домашнего задания"
-    new "- Nach einer Handmassage kann sich Lisa die Schultern (und nicht nur die) massieren, während sie ihre Hausaufgaben macht"
+    new "- Nach einer Handmassage kann ich Lisa die Schultern (und nicht nur die) massieren, während sie ihre Hausaufgaben macht"
 
     # game/core/screens.rpy:1598
     old "Любит \"Ferrero Rocher\""
@@ -376,13 +376,13 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1619
     old "- Если начинать массаж для Алисы во дворе со ступней, то вероятность помассировать остальное больше"
-    new "- Wenn die Massage für Alice im Garten bei den Füßen beginnt, ist es wahrscheinlicher, dass auch der Rest massiert werden kann"
+    new "- Wenn die Massage für Alice im Garten bei ihren Füßen beginnt, ist es wahrscheinlicher, dass man auch den Rest massieren kann"
 
     # game/core/screens.rpy:1621
     old "- При помощи конфет с ликёром можно получить фут-джоб (и не только) от Алисы при массаже у ТВ"
-    new "- Bei einer Massage beim Fernsehen mit Likörbonbon bekommt man von Alice einen Footjob (und mehr)"
+    new "- Bei einer Massage vor dem Fernseher mit einem Likörbonbon bekommt man von Alice einen Footjob (und mehr)"
 
     # game/core/screens.rpy:1623
     old "- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном"
-    new "- gibt Alice bei einer Fernseh-Massage einen Footjob und kann durch die Kamera beobachtet werden, wie sie masturbiert, bevor sie ins Bett geht"
+    new "- gibt Alice bei einer Massage vor dem Fernseher einen Footjob, kann später durch die Kamera beobachtet werden, wie sie masturbiert, bevor sie schalfen geht"
 

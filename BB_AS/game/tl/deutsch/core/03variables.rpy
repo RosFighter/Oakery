@@ -68,7 +68,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:42
     old "Лиза, младшая сестрёнка. Милая и весёлая. Она ещё учится в школе. С Лизой мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."
-    new "Das ist Lisa, meine jüngere Schwester. Sie ist sehr süß und hat eine verspielte Persönlichkeit. Sie geht noch zur Schule. Auch wenn wir uns manchmal streiten, sind wir uns eigentlich ziemlich nahe, und sie bittet mich immer um Hilfe, wenn es Probleme gibt."
+    new "Lisa, kleine Schwester. Sie ist süß und lustig. Sie ist noch in der Schule. Lisa und ich sind auf der gleichen Wellenlänge, obwohl wir uns von Zeit zu Zeit streiten. Aber wenn etwas passiert, bin ich derjenige, der sie beschützt."
 
     # game/core/03variables.rpy:42
     old "Алиса"
@@ -92,7 +92,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:42
     old "Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."
-    new "Alice - meine ältere Schwester. Sie hat eine kurze Geduld, wenn sie wütend auf mich ist, kann ich bestenfalls mit einer Ohrfeige rechnen. Sie hat vor kurzem die Schule abgeschlossen und sollte eigentlich auf Arbeitssuche sein, aber alles, was ich sie den ganzen Tag machen sehe, ist bloggen auf ihrem Laptop. Sie hält mich für einen Idioten und wir verstehen uns nicht wirklich. Warum müssen ältere Schwestern so zickig sein?"
+    new "Alice, meine ältere Schwester.  In jeder unmöglichen Situation gibt sie mir (bestenfalls) eine Ohrfeige. Sie hat vor kurzem ihren Schulabschluss gemacht und sucht, genau wie ich, ihren eigenen Weg. Den ganzen Tag über sitzt sie an ihrem Laptop und beschäftigt sich mit einer Art Blog von ihr. Wie es bei Brüdern und älteren Schwestern oft der Fall ist, verstehen wir uns nicht besonders gut..."
 
     # game/core/03variables.rpy:42
     old "Анна"
@@ -404,7 +404,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Самое страшное существо на свете. С точки зрения Алисы, конечно. Нужно этим воспользоваться в подходящий момент!"
-    new "Die furchterregendste Kreatur aller Zeiten. Jedenfalls aus der Sicht von Alice. Ich sollte dies zum richtigen Zeitpunkt einsetzen!"
+    new "Die furchterregendste Kreatur aller Zeiten. Jedenfalls aus der Sicht von Alice. Ich sollte das zum richtigen Zeitpunkt einsetzen!"
 
     # game/core/03variables.rpy:272
     old "СКРЫТАЯ КАМЕРА"
@@ -500,7 +500,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Небольшая стремянка, позволяющая достать то, для чего не хватает роста"
-    new "Eine kleine Trittleiter, die es Ihnen ermöglicht, das Unerreichte doch noch zu bekommen."
+    new "Eine kleine Trittleiter, die es ermöglicht, das Unerreichte doch noch zu erreichen."
 
     # game/core/03variables.rpy:272
     old "WEB STANDARDS"
@@ -508,7 +508,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Книга рассказывает о способах создавать свои сайты, работающие на любых устройствах."
-    new "Das Buch lehrt, wie man benutzerdefinierte Websites erstellt, die mit jedem Gerät funktionieren können."
+    new "Das Buch beschreibt, wie man seine eigenen Website erstellen kann, die auf jedem Gerät funktioniert."
 
     # game/core/03variables.rpy:272
     old "ЛЁГКАЯ ПИЖАМА"
@@ -532,7 +532,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Небольшой набор косметики для повседневного использования. Для женщин - только лучшее..."
-    new "Ein kleines Set Kosmetika für den täglichen Gebrauch. Für Frauen, nur das Beste..."
+    new "Ein kleines Kosmetikset für den täglichen Gebrauch. Für Frauen - nur das Beste..."
 
     # game/core/03variables.rpy:272
     old "Шоколад \"Ritter Sport\" mini (9 штук)"
@@ -564,7 +564,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Сочетание цельного фундука и восхитительного сливочно-орехового крема в хрустящей вафельной оболочке подарит вам неповторимые вкусовые ощущения."
-    new "Die Kombination aus ganzen Haselnüssen und einer köstlichen cremigen Nuss in einer knusprigen Waffelschale bietet Ihnen ein einzigartiges Geschmackserlebnis."
+    new "Die Kombination aus ganzen Haselnüssen und einer köstlichen cremigem Nougat in einer knusprigen Waffelschale bieten ein einzigartiges Geschmackserlebnis."
 
     # game/core/03variables.rpy:272
     old "Конфеты \"Ferrero Rocher\" (24 штуки)"
@@ -576,7 +576,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Легкий, хорошо впитывающийся препарат для ускорения загара обладает увлажняющими и защитными свойствами. Рекомендуется для применения на пляже и в солярии."
-    new "Leichtes, gut absorbierendes Produkt zur Beschleunigung der Bräunung mit feuchtigkeitsspendenden und schützenden Eigenschaften. Empfohlen für die Anwendung am Strand und im Solarium."
+    new "Ein gut einziehendes Präparat zur Beschleunigung der Bräunung mit feuchtigkeitsspendenden und schützenden Eigenschaften. Empfohlen für den Einsatz am Strand und im Solarium."
 
     # game/core/03variables.rpy:272
     old "МУЖСКИЕ МАЙКА И ШОРТЫ"
@@ -584,7 +584,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Свободный и лёгкий летний комплект одежды на каждый день."
-    new "Ein leichter und preiswerter Satz Sommerkleidung für den täglichen Gebrauch."
+    new "Eine lässige und leichte Kombination Sommerkleidung für jeden Tag."
 
     # game/core/03variables.rpy:272
     old "КОНФЕТЫ С ЛИКЁРОМ"
@@ -592,7 +592,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Шоколадные конфеты с ликёром. Уникальные ароматизаторы скрывают вкус алкоголя. Отлично поднимают настроение. Очень крепкие."
-    new "Schokoladenbonbons und Likör. Einzigartige Aromen verbergen den Geschmack von Alkohol. Sie sind sehr stark."
+    new "Schokoladenbonbons mit Likör. Einzigartige Aromen verbergen den Geschmack von Alkohol. Sie sind sehr stark."
 
     # game/core/03variables.rpy:272
     old "КОМПЛЕКТ ТЁМНОГО НИЖНЕГО БЕЛЬЯ"
@@ -976,7 +976,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:413
     old "Мама всё узнала про сигареты и Алиса была наказана. Причём, серьёзно так, у всех на глазах, да по голой заднице. Что самое печальное - Алиса знает, что это я её сдал. Так что, она меня теперь ненавидит, наверное... Неизвестно, получится ли теперь завоевать её доверие..."
-    new "Mama bemerkte den Rauchen und Alice bekam eine harte Strafe. Mom versohlt ihren nackten Hintern vor allen Leuten. Leider weiß Alice, dass ich sie verpfiffen habe, so dass sie mich wahrscheinlich hasst. Ich bin mir nicht sicher, ob ich ihr Vertrauen je wieder gewinnen kann."
+    new "Mom bemerkte den Rauchen und Alice bekam eine harte Strafe. Mom versohlt ihren nackten Hintern vor allen Leuten. Leider weiß Alice, dass ich sie verpfiffen habe, so dass sie mich wahrscheinlich hasst. Ich bin mir nicht sicher, ob ich ihr Vertrauen je wieder gewinnen kann."
 
     # game/core/03variables.rpy:413
     old "Мама почувствовала сигаретный дым, но я не сдал Алису. Кажется, сестрёнка это оценила. Вот только что мешает её подставить, чтобы мама узнала об этом не от меня, а как бы сама что-то нашла? И я не при делах!\n\nА может быть, эта вредная привычка Алисы поможет мне улучшить с ней отношения?"
@@ -1260,7 +1260,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:736
     old "Ещё до того, как мама познакомила меня со своим внезапным ухажёром Эриком, я начал чувствовать, что ничего хорошего он в мою жизнь не принесёт. Слишком уж он подозрительный..."
-    new "Schon bevor Mom mir ihren neuen Freund Eric vorstellte, hatte ich das Gefühl, dass er ein schlechter Einfluß sein würde. Irgendetwas fühlt sich bei ihm einfach nicht richtig an."
+    new "Schon bevor Mom mir ihren neuen Freund Eric vorgestellt hat, hatte ich das Gefühl dass er ein schlechter Einfluß sein würde. Irgendetwas fühlt sich bei ihm einfach nicht richtig an..."
 
     # game/core/03variables.rpy:777
     old "Кира"

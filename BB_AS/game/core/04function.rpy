@@ -1239,7 +1239,7 @@ init python:
 
 
     def random_pose(pose_list, last_pose=None):  # назначает из списка позу, отличную от последней
-        if pose_list.count(last_pose) > 0:
+        if len(pose_list)>1 and pose_list.count(last_pose) > 0:
             pose_list.remove(last_pose)
         return renpy.random.choice(pose_list)
 
