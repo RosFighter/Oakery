@@ -1,31 +1,12 @@
-============ Ошибки версии 0.04.0.01 ======================
-
-fixed - Exception when peeking on Ann on Saturday morning
-
-fixed - When Alice is spanked before the "Eric" punishments are active, she first has her panties on then they disappear for 1 image (red ass) then they come back
-
-fixed - Sometimes most of the "Talk to" options are not availble (ask Ann for money, help with dishes in the evening or sit with Alice in front of TV, help Lisa with homework). It might be related to putting a spider in Alices room
-
-fixed - When going to war with Eric the Opportunity still says "I feel like I've made a deal with the devil..."
-
-fixed - Text Fix: "What's wrong with that? Let him go, I don't mind..." should be "her"
-
-fixed - Text Fix: Alice "I don't actually walk around braless all the time, except when I'm asleep..." the "don't" is wrong
-
-fixed - Text Fix: Max "Ah, Alice, it hurts! She put her bare Tits in my face!" should be "You" and "tits"
-
-fixed - Exception when telling Alice to not wear her jeans any more Open text tag at end of string u"No. Either you get your ass spanked tonight or you don't wear jeans. {color=#E59400}(persuaion. Chance: 55%){/color]".
-
-- Option to ask Lisa about Alice has incredible low chance and disappears after a while (might be after the first time MC stays up longer and sees Alice came back to the Bathroom at 3 AM)
-### Для того, чтобы состоялся разговор об Алисе, у Лизы должно быть хорошее (или выше) настроение
-### Для повышения шанса убедить Лизу, отношения с Максом должны быть тёплыми (было дружественными)
-
-- Alice is sleeping with her bra but when smoking she and Max still behave as if she does sleep without it (you have to tell her that she can sleep with a bra again and wait until the next day to tell her again and then she changes clothes and it starts again)
-### если Макс знает, что Алиса спит без лифчика, он должен подкинуть ей паука в постель для выведения Алисы на чистую воду
-### добавлена фраза-подсказка
-
-fixed - Image 'Max talk-terrace 01c' not found.
-
-fixed - Image 'Max talk-terrace 04c' not found.
-
-Теперь Алиса не будет носить трусы сразу же после требования Макса, а не на следующий день
+     
+    -  в возможности кнута или пряника вы, возможно, могли бы добавить новый шаг, в котором упоминается спасение Лизы от наказания и просмотр фильма ужасов в голом виде..
+     
+    - путаница с расписанием. первый визит Оливии 16:30 девушек нет, в 17:00 они снова есть
+    
+    - загорающая Алиса при вручении большой сладости одевает лифчик перед объятьями
+    
+    - В воскресенье в 8:00 значок показывает Алису и Киру в душе. Но когда вы нажимаете на душ, там есть только Алиса. сохранение 1-30
+    
+    - отсутствует одежда mgg (запрашиваю подробности и исходное сохранение) (андроид)
+    
+    - проблема открытия окна сохранения/загрузки.Похоже, возникает при попытке получения дополнительной информации о сохранении. нужно добавить обработчик ошибок
