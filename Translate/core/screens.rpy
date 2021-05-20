@@ -320,7 +320,7 @@ translate english strings:
 
     # game/core/screens.rpy:1542
     old "Уровень отношений:"
-    new ""
+    new "Relationship Level:"
 
     # game/core/screens.rpy:1550
     old "Раскрепощенность:"

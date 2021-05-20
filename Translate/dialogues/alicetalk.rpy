@@ -10161,3 +10161,41 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
     new "{i}Lick her pussy tongue{/i} {color=[ch.col]}(Sexual Experience. Chance: [ch.vis]){/color}"
+# TODO: Translation updated at 2021-05-20 09:56
+
+# game/dialogues/alicetalk.rpy:3864
+translate english alice_gift_sweets_9a2d0fc0:
+
+    # Alice_12 "Так, Макс, это что за дела? У тебя почему стоит? На меня что ли?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:3865
+translate english alice_gift_sweets_51f009cc:
+
+    # Max_02 "Даже не знаю! Здесь больше никого нет. Похоже, что на тебя..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:3866
+translate english alice_gift_sweets_5c50d3fc:
+
+    # Alice_03 "Ты же в курсе, что есть иные способы сказать, что я нисколько не порчу этими конфетами фигуру?"
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:3867
+translate english alice_gift_sweets_07748222:
+
+    # Max_04 "Ну, а я выдал комплимент без слов! Честнее некуда."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:3868
+translate english alice_gift_sweets_44bf1dad:
+
+    # Alice_05 "Ну да, я вижу... Считай, этот комплимент принят!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3869
+translate english alice_gift_sweets_1ebc62cf:
+
+    # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
+    Max_01 ""
+
