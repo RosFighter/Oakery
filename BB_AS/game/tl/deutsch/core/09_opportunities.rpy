@@ -128,9 +128,9 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Итак, я внимательно прочитал книгу Web Standards и разобрался, как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100."
-    new ""
+    new "Ich habe das Buch \"Webstandards\" sorgfältig gelesen und herausgefunden, wie ich meine eigene Website erstellen kann. Vielleicht sollte ich an dieser Stelle beginnen. Ich werde Geld für die Domain, das Hosting und die Bezahlung einer fertigen Vorlage mit Design benötigen. Alles in allem würde ich etwa 100$ benötigen."
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то, у меня есть свой собственный сайт, где транслируется изображение с камеры из гостиной! Теперь нужно увеличить аудиторию, ведь чем больше людей, тем больше доход от рекламных баннеров. Сделать это можно с помощью вложений в рекламу своего сайта. Кроме того, если в кадре происходит что-то интересное, аудитория также растёт. Для начала стоит установить камеры в каждую комнату, а так же во двор..."
-    new ""
+    new "Endlich habe ich meine eigene Website, die das Kamerabild aus unserem Wohnzimmer überträgt! Jetzt muss ich mein Publikum vergrößern, denn je mehr Leute, desto mehr Einnahmen aus der Werbung. Dafür muss ich in die Werbung für meine Website investieren. Außerdem wächst das Publikum, wenn vor der Kamera etwas Interessantes passiert. Zunächst einmal sollten ich in jedem Raum, aber auch im Hof, Kameras installieren..."
 

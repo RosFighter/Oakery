@@ -9608,35 +9608,35 @@ translate deutsch strings:
 translate deutsch alice_gift_sweets_9a2d0fc0:
 
     # Alice_12 "Так, Макс, это что за дела? У тебя почему стоит? На меня что ли?"
-    Alice_12 ""
+    Alice_12 "Also, Max, was soll das alles? Warum stehst du dort? Liegt es an mir?"
 
 # game/dialogues/alicetalk.rpy:3865
 translate deutsch alice_gift_sweets_51f009cc:
 
     # Max_02 "Даже не знаю! Здесь больше никого нет. Похоже, что на тебя..."
-    Max_02 ""
+    Max_02 "Ich weiß es nicht! Es ist sonst niemand hier. Es sieht so aus, als ob du..."
 
 # game/dialogues/alicetalk.rpy:3866
 translate deutsch alice_gift_sweets_5c50d3fc:
 
     # Alice_03 "Ты же в курсе, что есть иные способы сказать, что я нисколько не порчу этими конфетами фигуру?"
-    Alice_03 ""
+    Alice_03 "Du weißt schon, dass es andere Möglichkeiten gibt, mir zu sagen, dass ich mir mit deinen Süßigkeiten nicht die Figur ruiniere, oder?"
 
 # game/dialogues/alicetalk.rpy:3867
 translate deutsch alice_gift_sweets_07748222:
 
     # Max_04 "Ну, а я выдал комплимент без слов! Честнее некуда."
-    Max_04 ""
+    Max_04 "Nun, ich habe ein Kompliment ohne Worte gemacht! So ehrlich wie nur möglich."
 
 # game/dialogues/alicetalk.rpy:3868
 translate deutsch alice_gift_sweets_44bf1dad:
 
     # Alice_05 "Ну да, я вижу... Считай, этот комплимент принят!"
-    Alice_05 ""
+    Alice_05 "Ja, das kann ich sehen... Betrachte dein Kompliment als angenommen!"
 
 # game/dialogues/alicetalk.rpy:3869
 translate deutsch alice_gift_sweets_1ebc62cf:
 
     # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
-    Max_01 ""
+    Max_01 "Lass dir deine Süßigkeiten schmecken, mein Häschen! Ich will dabei nicht stören..."
 

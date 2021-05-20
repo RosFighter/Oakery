@@ -10167,35 +10167,35 @@ translate english strings:
 translate english alice_gift_sweets_9a2d0fc0:
 
     # Alice_12 "Так, Макс, это что за дела? У тебя почему стоит? На меня что ли?"
-    Alice_12 ""
+    Alice_12 "So, Max, what's this about? Why do you have a hard? On me or something?"
 
 # game/dialogues/alicetalk.rpy:3865
 translate english alice_gift_sweets_51f009cc:
 
     # Max_02 "Даже не знаю! Здесь больше никого нет. Похоже, что на тебя..."
-    Max_02 ""
+    Max_02 "I don't know! There's no one else here. It looks like you..."
 
 # game/dialogues/alicetalk.rpy:3866
 translate english alice_gift_sweets_5c50d3fc:
 
     # Alice_03 "Ты же в курсе, что есть иные способы сказать, что я нисколько не порчу этими конфетами фигуру?"
-    Alice_03 ""
+    Alice_03 "You know there are other ways to say that I don't ruin my figure with these candies, right?"
 
 # game/dialogues/alicetalk.rpy:3867
 translate english alice_gift_sweets_07748222:
 
     # Max_04 "Ну, а я выдал комплимент без слов! Честнее некуда."
-    Max_04 ""
+    Max_04 "Well, I gave a compliment without words! It couldn't be more honest."
 
 # game/dialogues/alicetalk.rpy:3868
 translate english alice_gift_sweets_44bf1dad:
 
     # Alice_05 "Ну да, я вижу... Считай, этот комплимент принят!"
-    Alice_05 ""
+    Alice_05 "Well, yes, I see... Consider this compliment accepted!"
 
 # game/dialogues/alicetalk.rpy:3869
 translate english alice_gift_sweets_1ebc62cf:
 
     # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
-    Max_01 ""
+    Max_01 "Enjoy the candy, sweetmeat! I won't bother you..."
 

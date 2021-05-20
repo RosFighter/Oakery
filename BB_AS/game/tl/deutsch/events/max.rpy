@@ -995,5 +995,5 @@ translate deutsch ClearPool_62cb38c0:
 translate deutsch SearchCam_529c107e:
 
     # Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
-    Max_14 ""
+    Max_14 "Es scheint hier keine Kameras zu geben... Am besten, ich durchsuche das ganze Haus danach!"
 

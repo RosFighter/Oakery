@@ -1004,5 +1004,5 @@ translate english ClearPool_62cb38c0:
 translate english SearchCam_529c107e:
 
     # Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
-    Max_14 ""
+    Max_14 "I don't see any cameras... Need to look in the house itself!"
 
