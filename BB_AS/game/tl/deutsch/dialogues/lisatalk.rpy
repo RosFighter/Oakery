@@ -6820,7 +6820,7 @@ translate deutsch lisa_sexbook1_335b0cd0:
 translate deutsch lisa_sexbook1_efaaffdf:
 
     # Max_01 "Тогда я подыщу для тебя какую-нибудь интересную и полезную книжку!"
-    Max_01 "Don't worry, I'll find you a book that's interesting!"
+    Max_01 "Keine Sorge, ich werde ein passendens Buch finden, das für dich interessant ist!"
 
 # game/dialogues/lisatalk.rpy:3429
 translate deutsch lisa_sexbook1_822c65a1:
@@ -9418,7 +9418,7 @@ translate deutsch about_alex2_92ef6f12:
 translate deutsch about_alex2_1eb82239:
 
     # Max_07 "Кстати, когда мы лежали и загорали в последний раз, Оливия сказала мне, что Алекс как-то иначе стал к ней относиться, после того, как узнал, что у них финансовые проблемы в семье."
-    Max_07 "Übrigens, als wir das letzte Mal in der Sonne lagen, erzählte mir Olivia, dass Alex irgendwie angefangen hatte, sie anders zu behandeln, nachdem sie herausgefunden hatte, dass sie finanzielle Probleme in der Familie haben."
+    Max_07 "Übrigens, als wir das letzte Mal in der Sonne lagen, erzählte mir Olivia, dass Alex irgendwie angefangen hatte, sie anders zu behandeln, nachdem er herausgefunden hatte, dass sie finanzielle Probleme in der Familie haben."
 
 # game/dialogues/lisatalk.rpy:3947
 translate deutsch about_alex2_390de030:
@@ -9568,7 +9568,7 @@ translate deutsch about_alex3_b7ed45ec:
 translate deutsch about_alex3_f7d9992c:
 
     # Max_04 "Хорошо. А пока отвлекись чем-нибудь. Правильные мысли придут с утра."
-    Max_04 "In Ordnung. Seufzt - In der Zwischenzeit sollteich mich ablenken. Die richtigen Ideen werde ich erst morgen haben."
+    Max_04 "In Ordnung. Seufzt - In der Zwischenzeit sollte ich mich ablenken. Die richtigen Ideen werde ich erst morgen haben."
 
 # game/dialogues/lisatalk.rpy:3998
 translate deutsch about_alex3_28233916:

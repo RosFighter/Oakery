@@ -490,7 +490,7 @@ translate deutsch alice_talk_tv_massage_67ad610f:
 translate deutsch alice_talk_tv_choice_mass_264b44e4:
 
     # Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
-    Alice_02 "[succes!t] Max, was machst du... Oh, okay, lass uns noch einen nehmen... Aber das ist das letzte, biete nicht noch mehr an, oder ich trete dich, du weißt schon wohin! Und diese Süßigkeit scheint noch besser zu schmecken als die letzte! Mir ist richtig warm..."
+    Alice_02 "[succes!t] Max, was machst du... Oh, okay, dann gib mir noch eine Süßigkeit... Aber das ist dann das letzte, biete nicht noch mehr an, oder ich trete dich, du weißt schon wohin! Und diese Süßigkeit scheint noch besser zu schmecken als die letzte! Mir ist richtig warm..."
 
 # game/dialogues/alicetalk.rpy:457
 translate deutsch alice_talk_tv_choice_mass_6b3e8ab2:
@@ -8294,7 +8294,7 @@ translate deutsch alice_private_punish_0_pun_08cf69a4:
 translate deutsch alice_private_punish_0_pun_1e46a369:
 
     # Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
-    Max_02 "kay, bis zum nächsten Mal. Das ist ein schöner Arsch, den du da hast."
+    Max_02 "Okay, bis zum nächsten Mal. Das ist ein schöner Arsch, den du da hast."
 
 # game/dialogues/alicetalk.rpy:3755
 translate deutsch alice_private_punish_0_pun_e5a94fd2:
@@ -9244,7 +9244,7 @@ translate deutsch alice_talk_tv_sober_mass_r_e263d7d3_1:
 translate deutsch alice_talk_tv_sober_mass_r_0b39819b:
 
     # Alice_03 "[dont_like!t]Было хорошо, Макс! Но ты немного поспешил двигаться выше... Но ручки у тебя - что надо. До следующего раза... и спасибо..."
-    Alice_03 "[dont_like!t] Das war gut, Max! Aber du hattest es ein bisschen eilig, mehr zu kommen... Aber du hast tolle Hände. Bis zum nächsten Mal... und ich danke dir..."
+    Alice_03 "[dont_like!t] Das war gut, Max! Aber du hattest es ein bisschen eilig, mehr zu bekommen... Aber du hast tolle Hände. Bis zum nächsten Mal... und ich danke dir..."
 
 # game/dialogues/alicetalk.rpy:785
 translate deutsch alice_talk_tv_sober_mass_r_e263d7d3_2:
@@ -9256,7 +9256,7 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:445
     old "{i}высунуть член{/i}"
-    new "{i}aufhören{/i}"
+    new "{i}Schwanz rausholen{/i}"
 
     # game/dialogues/alicetalk.rpy:743
     old "{i}массировать её ноги выше{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
@@ -9602,3 +9602,41 @@ translate deutsch strings:
     # game/dialogues/alicetalk.rpy:917
     old "{i}ласкать её киску языком{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
     new "{i}ihre Muschi mit der Zunge verwöhnen{/i} {color=[ch.col]}(Sexuelle Erfahrung. Chance: [ch.vis]){/color}"
+# TODO: Translation updated at 2021-05-20 09:57
+
+# game/dialogues/alicetalk.rpy:3864
+translate deutsch alice_gift_sweets_9a2d0fc0:
+
+    # Alice_12 "Так, Макс, это что за дела? У тебя почему стоит? На меня что ли?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:3865
+translate deutsch alice_gift_sweets_51f009cc:
+
+    # Max_02 "Даже не знаю! Здесь больше никого нет. Похоже, что на тебя..."
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:3866
+translate deutsch alice_gift_sweets_5c50d3fc:
+
+    # Alice_03 "Ты же в курсе, что есть иные способы сказать, что я нисколько не порчу этими конфетами фигуру?"
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:3867
+translate deutsch alice_gift_sweets_07748222:
+
+    # Max_04 "Ну, а я выдал комплимент без слов! Честнее некуда."
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:3868
+translate deutsch alice_gift_sweets_44bf1dad:
+
+    # Alice_05 "Ну да, я вижу... Считай, этот комплимент принят!"
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:3869
+translate deutsch alice_gift_sweets_1ebc62cf:
+
+    # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
+    Max_01 ""
+

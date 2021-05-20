@@ -27,6 +27,8 @@ label Waiting:
 
     $ spent_time = TimeDifference(prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
+    # проверка одежды?
+    # $ checking_clothes() 
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
 

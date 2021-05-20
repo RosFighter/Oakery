@@ -385,4 +385,3 @@ translate english strings:
     # game/core/screens.rpy:1623
     old "- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном"
     new "- Getting a footjob from Alice during a massage by the TV, there's a chance to see her masturbate before bed using a spy-camera."
-

@@ -58,13 +58,13 @@ translate deutsch alice_bath_ladder_40583688:
 translate deutsch alice_bath_ladder_5529b0b9:
 
     # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
-    Max_05 "Verdammt, ärgert sie mich absichtlich mit ihren seifigen Brüsten? Big Sis mag eine Schlampe sein, aber ihr Körper sieht so gut aus..." nointeract
+    Max_05 "Verdammt, reizt sie mich absichtlich mit ihren nassen Brüsten... Meine große Schwester mag eine Schlampe sein, aber sie ist so heiß! Sehr sexy..." nointeract
 
 # game/events/alice.rpy:72
 translate deutsch alice_bath_ladder_5529b0b9_1:
 
     # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
-    Max_05 "Verdammt, ärgert sie mich absichtlich mit ihren seifigen Brüsten? Big Sis mag eine Schlampe sein, aber ihr Körper sieht so gut aus..." nointeract
+    Max_05 "Verdammt, reizt sie mich absichtlich mit ihren nassen Brüsten... Meine große Schwester mag eine Schlampe sein, aber sie ist so heiß! Sehr sexy..." nointeract
 
 # game/events/alice.rpy:78
 translate deutsch alice_bath_ladder_98712b50:
@@ -118,7 +118,7 @@ translate deutsch alice_sleep_night_9133399c_1:
 translate deutsch alice_sleep_night_013f61a2:
 
     # Max_07 "О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно! Только вот не всё из этого должно быть на ней одето!"
-    Max_07 "Big Sis sieht fantastisch aus! Ich möchte die Kurven ihres Körpers in dieser halbtransparenten Unterwäsche für immer betrachten. Nur sollte sie sie nicht tragen!"
+    Max_07 "Oh, ja! Meine große Schwester sieht umwerfend aus... Die Kurven ihres Körpers in dieser durchsichtigen Unterwäsche möchte ich für immer betrachten! Es muss nur nicht immer gleich alles sein!"
 
 # game/events/alice.rpy:149
 translate deutsch alice_sleep_night_153a8299:
@@ -1180,7 +1180,7 @@ translate deutsch spider_in_bed_help_aa7a7a05:
 translate deutsch spider_in_bed_help_165abb28_1:
 
     # Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
-    Alice_13 "Du bist so ein Perversling! Schämst du dich nicht, mir das vorzuschlagen?!"
+    Alice_13 "Du bist so ein Perversling! Schämst du dich nicht, soetwas von mir zu verlangen?!"
 
 # game/events/alice.rpy:1064
 translate deutsch spider_in_bed_help_adbdf35e_1:
@@ -2308,7 +2308,7 @@ translate deutsch alice_blog_lingerie_2625a223:
 translate deutsch alice_blog_lingerie_dcaa06cd:
 
     # Max_08 "Ну просто фантастика! А я могу чем-то помочь?"
-    Max_08 "That's fantastic! Kann ich etwas tun, um zu helfen?"
+    Max_08 "Das ist fantastisch! Kann ich etwas tun, um zu helfen?"
 
 # game/events/alice.rpy:1952
 translate deutsch alice_blog_lingerie_21a0e4ef_3:
@@ -2920,7 +2920,7 @@ translate deutsch alice_towel_after_club_acc3abda:
 translate deutsch alice_towel_after_club_d472d39e:
 
     # Max_07 "Она потянулась к прекрасному! А может ей хочется наказать эту попку..."
-    Max_07 "Ich weiß nicht, es hat seinen eigenen Willen! Aber ich denke, dein Arsch könnte nach einer Bestrafung verlangen..."
+    Max_07 "Ich weiß nicht, sie hat einen eigenen Willen! Aber ich denke, dein Arsch könnte nach einer Bestrafung verlangen..."
 
 # game/events/alice.rpy:2282
 translate deutsch alice_towel_after_club_7a77d321:

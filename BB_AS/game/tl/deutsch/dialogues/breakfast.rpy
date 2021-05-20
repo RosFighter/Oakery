@@ -4,13 +4,13 @@
 translate deutsch typical_breakfast_32286f7d:
 
     # Ann_00 "Всех ещё раз с добрым утром, всем приятного аппетита! Давайте сегодня покушаем в тишине, если вы не возражаете..." nointeract
-    Ann_00 "Guten Morgen allerseits. Guten Appetit! Lasst uns heute in Ruhe essen, wenn es euch nichts ausmacht." nointeract
+    Ann_00 "Nochmals guten Morgen und guten Appetit an alle! Lass uns heute in Ruhe essen, wenn es euch nichts ausmacht..." nointeract
 
 # game/dialogues/breakfast.rpy:15
 translate deutsch typical_breakfast_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Danke für Ihr Verständnis, Max. Lass uns anfangen..."
+    Ann_05 "Danke für dein Verständnis, Max. Lass uns anfangen..."
 
 # game/dialogues/breakfast.rpy:16
 translate deutsch typical_breakfast_4a7da202:
@@ -46,25 +46,25 @@ translate deutsch breakfast_first_6ac209bf:
 translate deutsch breakfast_first_494e7581:
 
     # Ann_12 "Да, меня тоже этот вопрос беспокоит. Но на новой работе мне обещают очень хорошую зарплату. Может быть, не всё так плохо. Кстати, за электричество платить не нужно..." nointeract
-    Ann_12 "Auch darüber mache ich mir Sorgen. Aber ich sollte mit meiner neuen Arbeit genug verdienen. Vielleicht wird es gar nicht so schlimm, wir müssen nicht einmal für Strom bezahlen!" nointeract
+    Ann_12 "Ja, das macht mir auch Sorgen. Aber mein neuer Job verspricht mir ein sehr gutes Gehalt. Vielleicht ist es gar nicht so schlimm. Übrigens, für Strom brauchen wir nichts zu bezahlen..." nointeract
 
 # game/dialogues/breakfast.rpy:36
 translate deutsch breakfast_first_02490cba:
 
     # Lisa_01 "А вдруг, нигде не кидают? Хотя я папу и не помню, но мне кажется, что никто не стал бы дарить целый дом только чтобы как-то кинуть..." nointeract
-    Lisa_01 "Vielleicht gibt es keinen Haken? Ich erinnere mich natürlich nicht an Papa, aber warum sollte uns jemand ein ganzes Haus geben, nur um uns später zu bescheißen?" nointeract
+    Lisa_01 "Was ist, wenn es einen Haken gibt? Ich erinnere mich zwar nicht an meinen Vater, aber ich glaube nicht, dass jemand ein ganzes Haus hergeben würde, nur um es irgendwie loszuwerden..." nointeract
 
 # game/dialogues/breakfast.rpy:45
 translate deutsch breakfast_first_3acfb325:
 
     # Lisa_03 "Это потому, что у нас с тобой наши старые кровати. Ты забыл? Кстати, мне нравится моя. Даже не хочу менять её на новую..." nointeract
-    Lisa_03 "Ich weiß, aber ich liebe meins. Es ist so weich!" nointeract
+    Lisa_03 "Das liegt daran, dass wir beide unsere alten Betten haben. Hast du das vergessen? Ich mag meins übrigens. Ich will es nicht einmal gegen ein neues eintauschen..." nointeract
 
 # game/dialogues/breakfast.rpy:48
 translate deutsch breakfast_first_54853909:
 
     # Ann_00 "Если что, мебель всегда можно будет купить..." nointeract
-    Ann_00 "Wir können immer ein neues Bett kaufen, wenn sich das ändert." nointeract
+    Ann_00 "Wenn überhaupt, können wir uns jederzeit neue Möbel kaufen..." nointeract
 
 # game/dialogues/breakfast.rpy:56
 translate deutsch breakfast_first_bf_change_a3dfedbb:

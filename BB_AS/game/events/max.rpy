@@ -495,7 +495,11 @@ label SearchCam:
         $ InspectedRooms.clear()
         $ poss['cams'].open(1)
     else:
-        Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
+        if current_room == house[6]:
+            # двор
+            Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
+        else:
+            Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
         $ InspectedRooms.append(current_room)
     $ spent_time = 30
     $ cur_ratio = 2

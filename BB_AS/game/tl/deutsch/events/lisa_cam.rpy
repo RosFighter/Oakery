@@ -142,13 +142,13 @@ translate deutsch cam0_lisa_phone_14f355ab:
 translate deutsch cam0_lisa_bath_b32c78c2:
 
     # Max_01 "Лиза почти набрала воду, хотя я смотрю на кое-что другое..."
-    Max_01 "Die Wannen sind fast voll... aber meine Aufmerksamkeit ist woanders..."
+    Max_01 "Die Wanne ist fast voll... aber meine Aufmerksamkeit ist woanders..."
 
 # game/events/lisa_cam.rpy:256
 translate deutsch cam0_lisa_bath_4e37cfa9:
 
     # Max_04 "Эх, Лиза... Не вытирайся! Ты мокренькая тоже обалденная..."
-    Max_04 "Oh, Lisa... Wisch dich nicht ab! Du bist auch klatschnass..."
+    Max_04 "Oh, Lisa... Trockne dich nicht ab! Du bist so schön nass..."
 
 # game/events/lisa_cam.rpy:262
 translate deutsch cam0_lisa_bath_8714e3c3:

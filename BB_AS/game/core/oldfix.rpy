@@ -501,7 +501,7 @@ label after_load_04_5:
         if day > 2 and not poss['blog'].used(0):
             $ poss['blog'].OpenStage(0)
         if poss['blog'].stn==1:
-            $ poss['blog'].OpenStageStage(1)
+            $ poss['blog'].OpenStage(1)
         # $ flags['cam_fun_alice'] = False
 
     if current_ver < "0.04.5.09":

@@ -1396,7 +1396,7 @@ translate deutsch kira_night_tv_porn_view_1cd738e7:
 translate deutsch kira_night_tv_porn_view_acfeb964:
 
     # Kira_03 "Так, мы порно собирались смотреть или что? Всё, тихо... всё внимание на экран."
-    Kira_03 "Also, sehen wir uns jetzt einen Porno an oder was? Alles ruhig... alle Augen auf den Bildschirm."
+    Kira_03 "Also, sehen wir uns jetzt einen Porno an oder was? Alles ruhig... alle Augen auf den Fernseher."
 
 # game/events/kira.rpy:871
 translate deutsch kira_night_tv_porn_view_c7a40e97:
@@ -1432,7 +1432,7 @@ translate deutsch kira_night_tv_porn_view_9c22a090:
 translate deutsch kira_night_tv_porn_view_37bfea4c:
 
     # Kira_02 "Спасибо, Макс... Это приятно слышать... Но ты так всё пропустишь самое интересное на экране..." nointeract
-    Kira_02 "Danke, Max... Das ist gut zu hören... Aber du wirst verpassen, was auf dem Bildschirm passiert..." nointeract
+    Kira_02 "Danke, Max... Das ist schön zu hören... Aber du wirst verpassen, was im Fernseher passiert..." nointeract
 
 # game/events/kira.rpy:891
 translate deutsch kira_night_tv_porn_view_efb6d193:
@@ -1558,7 +1558,7 @@ translate deutsch kira_night_tv_porn_view_06e0a5a8_1:
 translate deutsch kira_night_tv_promise_cuni_0ee59050:
 
     # Kira_05 "Да, Макс, так уже лучше... С тобой просмотр порно становится куда интереснее. Но, мы же не будем просто сидеть, смотреть на экран и ласкать себя! Может порадуешь свою тётю, как обещал? Или ты уже забыл!?"
-    Kira_05 "Ja, Max, das ist besser ... Porno schauen ist so viel heißer, wenn es mit dir ist. Aber ich will nicht nur hier sitzen, während wir uns berühren und auf den Bildschirm schauen! Kannst du deiner Tante gefallen, wie du es versprochen hast? Oder hast du das schon vergessen!?"
+    Kira_05 "Ja, Max, das ist besser ... Porno schauen ist so viel heißer, wenn es mit dir ist. Aber ich will nicht nur hier sitzen, während wir uns berühren und auf den Fernseher schauen! Kannst du deiner Tante gefallen, wie du es versprochen hast? Oder hast du das schon vergessen!?"
 
 # game/events/kira.rpy:958
 translate deutsch kira_night_tv_promise_cuni_48f0e333:
@@ -1570,7 +1570,7 @@ translate deutsch kira_night_tv_promise_cuni_48f0e333:
 translate deutsch kira_night_tv_promise_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Höschen stört, ziehe ich es aus... Oder du kannst es mir auch selbst ausziehen." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder du kannst es mir auch selbst ausziehen." nointeract
 
 # game/events/kira.rpy:974
 translate deutsch kira_night_tv_promise_cuni_0b64a46b:
@@ -2032,7 +2032,7 @@ translate deutsch kira_night_tv_repeat_lesson_2df27d30:
 translate deutsch kira_night_tv_repeat_lesson_c494b70e:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
-    Kira_02 "Max... Wenn dich mein Höschen stört, ziehe ich es aus... Oder zieh sie einfach selbst aus."
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus."
 
 # game/events/kira.rpy:1267
 translate deutsch kira_night_tv_repeat_lesson_7d5bc607:
@@ -2236,7 +2236,7 @@ translate deutsch kira_night_tv_teach_cuni_2df27d30:
 translate deutsch kira_night_tv_teach_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Höschen stört, ziehe ich es aus... Oder zieh ihn einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1401
 translate deutsch kira_night_tv_teach_cuni_fe50801f:
@@ -2374,7 +2374,7 @@ translate deutsch kira_night_tv_tv_cuni_2c995eaa:
 translate deutsch kira_night_tv_tv_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Höschen stört, ziehe ich es aus... Oder zieh ihn einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1567
 translate deutsch kira_night_tv_tv_cuni_fe50801f:
@@ -2500,7 +2500,7 @@ translate deutsch kira_night_tv_tv_sex2_38f54446:
 translate deutsch kira_night_tv_missionary_87407bd3:
 
     # Kira_09 "Ох, Макс... Какой же это классный момент! Д-а-а... Вот так... Вводи его не спеша... чтобы я привыкла... Ммм..." nointeract
-    Kira_09 "Oh, Max... Ich freue mich schon darauf! Ja... So ist's gut... Steck es langsam rein... Damit ich mich daran gewöhnen kann... Mmm..." nointeract
+    Kira_09 "Oh, Max... Ich freue mich schon darauf! Ja... So ist's gut... Steck ihn langsam rein... Damit ich mich daran gewöhnen kann... Mmm..." nointeract
 
 # game/events/kira.rpy:1723
 translate deutsch kira_night_tv_missionary_20627b65:
@@ -2590,7 +2590,7 @@ translate deutsch kira_night_tv_cum_in_mouth_2f0c8e1d:
 translate deutsch kira_night_tv_cum_in_mouth_a2bb381b:
 
     # Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
-    Max_05 "You're amazing, Aunt Kira! Until next time?"
+    Max_05 "Du bist unglaublich Tante Kira! Bis zum nächsten Mal?!"
 
 # game/events/kira.rpy:1811
 translate deutsch kira_night_tv_minet_after_sex_4713ca96:
@@ -3754,7 +3754,7 @@ translate deutsch strings:
 
     # game/events/kira.rpy:758
     old "Да ты продолжай, я посижу, посмотрю..."
-    new "Du gehst vor, ich sitze und schaue zu..."
+    new "Mach weiter, ich setz mich und schaue zu..."
 
     # game/events/kira.rpy:802
     old "Конечно, да!"

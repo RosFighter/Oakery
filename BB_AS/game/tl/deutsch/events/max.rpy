@@ -989,3 +989,11 @@ translate deutsch ClearPool_62cb38c0:
     # Max_01 "Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам."
     Max_01 "Eh... Es ist eine mühsame Arbeit, aber es ist wichtig, dass meine Mädchen in sauberem Wasser planschen. Und dafür sorge ich selbst."
 
+# TODO: Translation updated at 2021-05-20 09:57
+
+# game/events/max.rpy:500
+translate deutsch SearchCam_529c107e:
+
+    # Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
+    Max_14 ""
+

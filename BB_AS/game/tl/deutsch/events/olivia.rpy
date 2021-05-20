@@ -118,7 +118,7 @@ translate deutsch olivia_first_meeting_d35082b4:
 translate deutsch olivia_first_meeting_a3a21fd8:
 
     # Olivia_06 "Ну... Они с мамой поругались некоторое время назад и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
-    Olivia_06 "Nun, ähm... Er und meine Mutter hatten vor einer Weile einen Streit und jetzt wohnt er nicht mehr bei uns. Außerdem ist unser Pool kaputt und es gibt niemanden, der ihn repariert... Darf ich her kommen und bei euch baden?"
+    Olivia_06 "Nun, ähm... Er und meine Mutter hatten vor einer Weile einen Streit und jetzt wohnt er nicht mehr bei uns. Außerdem ist unser Pool kaputt und es gibt niemanden, der ihn repariert... Darf ich her kommen und bei euch schwimmen?"
 
 # game/events/olivia.rpy:42
 translate deutsch olivia_first_meeting_7db6c66b:
@@ -270,7 +270,7 @@ translate deutsch olivia_first_night_visit_82837f34:
 translate deutsch olivia_first_night_visit_8074ca27:
 
     # Max_03 "Да... Мама ушла к Эрику, а Алиса с тётей Кирой как всегда в это время тусят где-то. Вернутся поздно, так что у нас полно времени!"
-    Max_03 "Ja... Mom ist zu Eric gegangen und Alice und Tante Kira sind im Club. Sie kommen erst spät zurück, wir haben also noch viel Zeit!"
+    Max_03 "Richtig... Mom ist zu Eric gegangen und Alice und Tante Kira sind im Club. Sie kommen erst spät zurück, wir haben also noch viel Zeit!"
 
 # game/events/olivia.rpy:189
 translate deutsch olivia_first_night_visit_9df66df1:
@@ -318,7 +318,7 @@ translate deutsch olivia_first_night_visit_cdef23a7:
 translate deutsch olivia_first_night_visit_db0bd127:
 
     # Max_10 "Да ладно тебе, Лиза! Что тут такого?"
-    Max_10 "omm schon, Lisa! Was ist denn so schlimm daran?"
+    Max_10 "Komm schon, Lisa! Was ist denn so schlimm daran?"
 
 # game/events/olivia.rpy:208
 translate deutsch olivia_first_night_visit_0d60f763:
@@ -714,7 +714,7 @@ translate deutsch olivia_second_night_out_with_e6bc223b:
 translate deutsch olivia_second_night_out_with_2c2c214a:
 
     # Max_02 "{i}( Интересно, как бы Оливия отреагировала, если бы Лиза рассказала, как я учу её целоваться и где мои руки при этом оказываются?! Святую тут из себя строит. Ну да ладно... ){/i}"
-    Max_02 "{i}(Ich frage mich, wie Olivia reagieren würde, wenn Lisa mir erzählen würde, wie ich ihr das Küssen beigebracht habe und wo meine Hände gelandet sind! Sie verhält sich wie eine Heilige. Oh, na ja...){/i}"
+    Max_02 "{i}(Ich frage mich, wie Olivia reagieren würde, wenn Lisa ihr erzählen würde, wie ich ihr das Küssen beigebracht habe und wo meine Hände dabei gelandet sind! Sie verhält sich wie eine Heilige. Oh, na ja...){/i}"
 
 # game/events/olivia.rpy:399
 translate deutsch olivia_second_night_out_with_bd177cb8:

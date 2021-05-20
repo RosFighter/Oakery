@@ -160,7 +160,7 @@ translate deutsch cam0_eric_ann_tv_814eef63:
 translate deutsch cam0_eric_ann_tv_91bf9136:
 
     # Max_08 "Блин, мама, тебе что, настолько неинтересно то, что происходит на экране или ты просто любишь отсасывать Эрику?!"
-    Max_08 "Verdammt, Mom, dich interessiert nicht einmal, was auf dem Bildschirm zu sehen ist. Du konzentrierst dich nur darauf, Eric einen zu blasen!"
+    Max_08 "Verdammt, Mom, dich interessiert nicht einmal, was auf dem Fernseher zu sehen ist. Du konzentrierst dich nur darauf, Eric einen zu blasen!"
 
 # game/events/eric_cam.rpy:171
 translate deutsch cam0_eric_ann_tv_01416e5e:

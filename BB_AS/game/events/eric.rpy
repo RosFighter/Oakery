@@ -794,6 +794,7 @@ label eric_ann_shower:
 
     label .ladder:
         $ eric.flags.ladder += 1
+        $ ann.flags.ladder += 1
         $ spent_time += 20
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)

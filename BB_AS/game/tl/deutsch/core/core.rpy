@@ -104,7 +104,7 @@ translate deutsch strings:
 
     # game/core/core.rpy:805
     old "{color=#E59400}{i}Алисе понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Alice liebte die Massage!{/i}{/color}\n"
+    new "{color=#E59400}{i}Alice liebt die Massage!{/i}{/color}\n"
 
     # game/core/core.rpy:1208
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Правда, я почти ничего не увидел, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное!"

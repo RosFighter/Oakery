@@ -4,6 +4,15 @@
 
 init: # трансформации
 
+    # transform desaturate2:
+    #     on hover:
+    #         matrixcolor SaturationMatrix(0.0)
+    #     on idle:
+    #         matrixcolor SaturationMatrix(1.0)
+
+    # transform my_color(n_color):
+    #     matrixcolor TintMatrix(n_color)
+
     transform desaturate:
         matrixcolor SaturationMatrix(0.0)
 
@@ -115,8 +124,8 @@ init: # трансформации
         xpos 63, ypos 48
 
     transform laptop_screen:
-        size (1475, 829)
-        xpos 221, ypos 93
+        size (1476, 831)
+        xpos 221, ypos 92
 
     transform left_shift:
         xpos -200
@@ -1202,16 +1211,16 @@ screen menu_opportunity():
     $ lst_stage = []
 
     if not CurPoss:
-        if sum(poss['cams'].stages):
-            default CurPoss = 'cams'
-        elif sum(poss['secretbook'].stages):
-            default CurPoss = 'secretbook'
-        else:
-            default CurPoss = ''
+        for ps in poss_dict:
+            if sum(poss[ps].stages) and not CurPoss:
+                default CurPoss = ps
+    if not CurPoss:
+        default CurPoss = ''
+    default ShowHint = False
 
     if CurPoss != '':
         $ lst_stage = [i for i, st in enumerate(poss[CurPoss].stages) if st]
-        default view_stage = max(lst_stage)
+        default view_stage = max(lst_stage) if sum(poss[CurPoss].stages) else -1
 
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
@@ -1230,40 +1239,65 @@ screen menu_opportunity():
                 viewport mousewheel 'change' draggable True id 'vp1':
                     vbox spacing 5:
                         for ps in poss_dict:
-                            if sum(poss[ps].stages):
+                            if sum(poss[ps].stages) or persistent.all_opportunities:
                                 if CurPoss == '':
                                     $ CurPoss = ps
-                                    $ view_stage = max([i for i, st in enumerate(poss[CurPoss].stages) if st])
-                                button background None action [SetVariable('CurPoss', ps), SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]))] xsize 390:
-                                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                                    textbutton poss_dict[ps][0] action [SetVariable('CurPoss', ps), SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]))] selected CurPoss == ps
+                                    $ view_stage = max([i for i, st in enumerate(poss[CurPoss].stages) if st]) if sum(poss[ps].stages) else -1
+                                button background None xsize 390 xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+                                    selected CurPoss == ps
+                                    action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False),
+                                        SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
+                                    textbutton poss_dict[ps][0] selected CurPoss == ps:
+                                        if not sum(poss[ps].stages):
+                                            text_idle_color gray
+                                            text_selected_color '#fafafa'
+                                        action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False),
+                                            SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
                                     foreground 'interface marker'
                 vbar value YScrollValue('vp1') style 'poss_vscroll'
         if CurPoss != '':
             frame area (0, 30, 1190, 850) background None:
                 vbox spacing 20:
-                    frame xsize 800 ysize 400 pos (195, 0) background None:
-                        if poss_dict[CurPoss][1][view_stage].img != '':
-                            add 'interface poss '+poss_dict[CurPoss][1][view_stage].img
+                    if view_stage>=0:
+                        frame xsize 800 ysize 400 pos (195, 0) background None:
+                            if poss_dict[CurPoss][1][view_stage].img != '':
+                                add 'interface poss '+poss_dict[CurPoss][1][view_stage].img
                     frame xsize 1180 xalign 0.5 background None:
                         text poss_dict[CurPoss][0] size 30 font 'hermes.ttf' xalign 0.5
-                    frame area (0, 0, 1190, 400) background None:
-                        hbox:
-                            viewport mousewheel 'change' draggable True id 'vp2':
-                                vbox spacing 20:
-                                    text poss_dict[CurPoss][1][view_stage].desc size 24 color gui.accent_color
-                                    text poss_dict[CurPoss][1][view_stage].ps size 24
-                                    for ht in poss_dict[CurPoss][1][view_stage].hints:
-                                        if ht.met():
-                                            text ht.hint size 20
-                                    if view_stage in poss_dict[CurPoss][2]:     # временная концовка
-                                        text _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}") size 24 color orange
-                                    elif view_stage in poss_dict[CurPoss][3]:   # хорошая концовка
-                                        text _("{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}") size 24 color lime
-                                    elif view_stage in poss_dict[CurPoss][4]:   # плохая концовка
-                                        text _("{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}") size 24 color red
+                    if view_stage>=0:
+                        frame area (0, 0, 1190, 400) background None:
+                            hbox:
+                                viewport mousewheel 'change' draggable True id 'vp2':
+                                    vbox spacing 20:
+                                        text poss_dict[CurPoss][1][view_stage].desc size 24 color gui.accent_color
+                                        text poss_dict[CurPoss][1][view_stage].ps size 24
+                                        if view_stage in poss_dict[CurPoss][2]:     # временная концовка
+                                            text _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}") size 24 color orange
+                                        elif view_stage in poss_dict[CurPoss][3]:   # хорошая концовка
+                                            text _("{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}") size 24 color lime
+                                        elif view_stage in poss_dict[CurPoss][4]:   # плохая концовка
+                                            text _("{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}") size 24 color red
+                                        elif ShowHint and view_stage==max([i for i, st in enumerate(poss[CurPoss].stages) if st]):
+                                            text _("Подсказка:") size 24 color gui.accent_color
+                                            for ht in poss_dict[CurPoss][1][view_stage].hints:
+                                                if ht.met():
+                                                    text ht.hint size 20
 
                             vbar value YScrollValue('vp2') style 'poss_vscroll'
+                    # else:
+                    #     if ShowHint:
+                    #         frame area (0, 0, 1190, 400) background None:
+                    #             hbox:
+                    #                 viewport mousewheel 'change' draggable True id 'vp2':
+                    #                     vbox spacing 20:
+                    #                         text zero_hints[CurPoss] size 24 color orange
+                    #
+                    #             vbar value YScrollValue('vp2') style 'poss_vscroll'
+    # if not ShowHint:
+    #     imagebutton idle 'interface tip idle' at desaturate2:
+    #         pos (1720, 180)
+    #         action SetScreenVariable('ShowHint', True)
+
     if len(lst_stage) > 1:
         imagebutton pos (690, 360) auto 'interface prev %s':
             focus_mask True
@@ -1282,9 +1316,9 @@ style opportunity_button_text is default:
     xpos 30
     yalign .0
     size 28
-    idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
+    idle_color gui.accent_color
 
 style poss_vscroll is vscrollbar:
     xsize 7
@@ -1721,8 +1755,6 @@ screen ClothesSelect():
                 idle chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info
                 hover chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info+'a'
 
-
-
         imagebutton pos (0, 360) auto 'interface next %s':
             focus_mask True
             sensitive cur_var < len(list_var)-1
@@ -1743,10 +1775,16 @@ screen ClothesSelect():
         textbutton _("Сделать текущей"):
             xsize 400
             text_size 30
-            if eval('cloth.'+cur_cl).rand:
-                action [SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var]), SetVariable('cloth.'+cur_cl+'.left', 1)]
+            if CurChar == 'max':
+                if eval('cloth.'+cur_cl).rand:
+                    action [SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var]), SetVariable('cloth.'+cur_cl+'.left', 1), Function(ChoiceClothes)]
+                else:
+                    action [SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var]), Function(ChoiceClothes)]
             else:
-                action SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var])
+                if eval('cloth.'+cur_cl).rand:
+                    action [SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var]), SetVariable('cloth.'+cur_cl+'.left', 1)]
+                else:
+                    action SetVariable('cloth.'+cur_cl+'.cur', list_var[cur_var])
             sensitive eval('cloth.'+cur_cl).cur != list_var[cur_var]
             text_selected_color gui.selected_color
             text_insensitive_color gui.insensitive_color

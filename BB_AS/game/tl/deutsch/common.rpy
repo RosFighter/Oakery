@@ -108,75 +108,75 @@ translate deutsch strings:
 
     # renpy/common/00accessibility.rpy:207
     old "Return"
-    new "Return"
+    new "Zurück"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Monday"
-    new "{#weekday}Monday"
+    new "{#weekday}Montag"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Tuesday"
-    new "{#weekday}Tuesday"
+    new "{#weekday}Dienstag"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Wednesday"
-    new "{#weekday}Wednesday"
+    new "{#weekday}Mittwoch"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Thursday"
-    new "{#weekday}Thursday"
+    new "{#weekday}Donnerstag"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Friday"
-    new "{#weekday}Friday"
+    new "{#weekday}Freitag"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Saturday"
-    new "{#weekday}Saturday"
+    new "{#weekday}Samstag"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Sunday"
-    new "{#weekday}Sunday"
+    new "{#weekday}Sonntag"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Mon"
-    new "{#weekday_short}Mon"
+    new "{#weekday_short}Mo"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Tue"
-    new "{#weekday_short}Tue"
+    new "{#weekday_short}Di"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Wed"
-    new "{#weekday_short}Wed"
+    new "{#weekday_short}Mi"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Thu"
-    new "{#weekday_short}Thu"
+    new "{#weekday_short}Do"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Fri"
-    new "{#weekday_short}Fri"
+    new "{#weekday_short}Fr"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Sat"
-    new "{#weekday_short}Sat"
+    new "{#weekday_short}Sa"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Sun"
-    new "{#weekday_short}Sun"
+    new "{#weekday_short}So"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}January"
-    new "{#month}January"
+    new "{#month}Januar"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}February"
-    new "{#month}February"
+    new "{#month}Februar"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}March"
-    new "{#month}March"
+    new "{#month}März"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}April"
@@ -184,15 +184,15 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:47
     old "{#month}May"
-    new "{#month}May"
+    new "{#month}Mai"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}June"
-    new "{#month}June"
+    new "{#month}Juni"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}July"
-    new "{#month}July"
+    new "{#month}Juli"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}August"
@@ -204,7 +204,7 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:47
     old "{#month}October"
-    new "{#month}October"
+    new "{#month}Oktober"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}November"
@@ -212,7 +212,7 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:47
     old "{#month}December"
-    new "{#month}December"
+    new "{#month}Dezember"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jan"
@@ -232,7 +232,7 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}May"
-    new "{#month_short}May"
+    new "{#month_short}Mai"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jun"
@@ -252,7 +252,7 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Oct"
-    new "{#month_short}Oct"
+    new "{#month_short}Okt"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Nov"
@@ -260,7 +260,7 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Dec"
-    new "{#month_short}Dec"
+    new "{#month_short}Dez"
 
     # renpy/common/00action_file.rpy:240
     old "%b %d, %H:%M"
@@ -268,15 +268,15 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:353
     old "Save slot %s: [text]"
-    new "Save slot %s: [text]"
+    new "Speicherplatz %s: [text]"
 
     # renpy/common/00action_file.rpy:434
     old "Load slot %s: [text]"
-    new "Load slot %s: [text]"
+    new "Slot laden %s: [text]"
 
     # renpy/common/00action_file.rpy:487
     old "Delete slot [text]"
-    new "Delete slot [text]"
+    new "Slot löschen [text]"
 
     # renpy/common/00action_file.rpy:566
     old "File page auto"
@@ -292,15 +292,15 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:628
     old "Page {}"
-    new "Page {}"
+    new "Seite {}"
 
     # renpy/common/00action_file.rpy:628
     old "Automatic saves"
-    new "Automatic saves"
+    new "Auto-Speichern"
 
     # renpy/common/00action_file.rpy:628
     old "Quick saves"
-    new "Quick saves"
+    new "Schnellspeichern"
 
     # renpy/common/00action_file.rpy:769
     old "Next file page."
@@ -316,15 +316,15 @@ translate deutsch strings:
 
     # renpy/common/00action_file.rpy:921
     old "Quick save."
-    new "Quick save."
+    new "Schnellspeichern."
 
     # renpy/common/00action_file.rpy:940
     old "Quick load."
-    new "Quick load."
+    new "Schnelladen."
 
     # renpy/common/00action_other.rpy:375
     old "Language [text]"
-    new "Language [text]"
+    new "Sprache [text]"
 
     # renpy/common/00director.rpy:708
     old "The interactive director is not enabled here."
@@ -340,7 +340,7 @@ translate deutsch strings:
 
     # renpy/common/00director.rpy:1551
     old "Done"
-    new "Done"
+    new "Fertig"
 
     # renpy/common/00director.rpy:1561
     old "(statement)"
@@ -372,19 +372,19 @@ translate deutsch strings:
 
     # renpy/common/00director.rpy:1631
     old "Change"
-    new "Change"
+    new "Wechseln"
 
     # renpy/common/00director.rpy:1633
     old "Add"
-    new "Add"
+    new "Hinzu"
 
     # renpy/common/00director.rpy:1636
     old "Cancel"
-    new "Cancel"
+    new "Abbrechen"
 
     # renpy/common/00director.rpy:1639
     old "Remove"
-    new "Remove"
+    new "Entfernen"
 
     # renpy/common/00director.rpy:1674
     old "Statement:"
@@ -476,15 +476,15 @@ translate deutsch strings:
 
     # renpy/common/00preferences.rpy:240
     old "display"
-    new "display"
+    new "Anzeige"
 
     # renpy/common/00preferences.rpy:252
     old "transitions"
-    new "transitions"
+    new "Überblendung"
 
     # renpy/common/00preferences.rpy:261
     old "skip transitions"
-    new "skip transitions"
+    new "Überblendung überspringen"
 
     # renpy/common/00preferences.rpy:263
     old "video sprites"
@@ -508,23 +508,23 @@ translate deutsch strings:
 
     # renpy/common/00preferences.rpy:296
     old "skip"
-    new "skip"
+    new "Überspringen"
 
     # renpy/common/00preferences.rpy:299
     old "skip unseen [text]"
-    new "skip unseen [text]"
+    new "ungesehenes überspringen [text]"
 
     # renpy/common/00preferences.rpy:304
     old "skip unseen text"
-    new "skip unseen text"
+    new "ungesehenen Text überspringen"
 
     # renpy/common/00preferences.rpy:306
     old "begin skipping"
-    new "begin skipping"
+    new "Anfang überspringen"
 
     # renpy/common/00preferences.rpy:310
     old "after choices"
-    new "after choices"
+    new "nach Auswahl"
 
     # renpy/common/00preferences.rpy:317
     old "skip after choices"
@@ -608,35 +608,35 @@ translate deutsch strings:
 
     # renpy/common/00preferences.rpy:464
     old "system cursor"
-    new "system cursor"
+    new "System Cursor"
 
     # renpy/common/00preferences.rpy:484
     old "music volume"
-    new "music volume"
+    new "Musiklautstärke"
 
     # renpy/common/00preferences.rpy:485
     old "sound volume"
-    new "sound volume"
+    new "Soundlautstärke"
 
     # renpy/common/00preferences.rpy:486
     old "voice volume"
-    new "voice volume"
+    new "Sprachlautstärke"
 
     # renpy/common/00preferences.rpy:487
     old "mute music"
-    new "mute music"
+    new "Musik stumm"
 
     # renpy/common/00preferences.rpy:488
     old "mute sound"
-    new "mute sound"
+    new "Sound stumm"
 
     # renpy/common/00preferences.rpy:489
     old "mute voice"
-    new "mute voice"
+    new "Sprache Stumm"
 
     # renpy/common/00preferences.rpy:490
     old "mute all"
-    new "mute all"
+    new "alles summ"
 
     # renpy/common/00preferences.rpy:571
     old "Clipboard voicing enabled. Press 'shift+C' to disable."
@@ -652,15 +652,15 @@ translate deutsch strings:
 
     # renpy/common/_compat/gamemenu.rpym:198
     old "Empty Slot."
-    new "Empty Slot."
+    new "leerer Platz."
 
     # renpy/common/_compat/gamemenu.rpym:355
     old "Previous"
-    new "Previous"
+    new "Zurück"
 
     # renpy/common/_compat/gamemenu.rpym:362
     old "Next"
-    new "Next"
+    new "Weiter"
 
     # renpy/common/_compat/preferences.rpym:428
     old "Joystick Mapping"
@@ -676,11 +676,11 @@ translate deutsch strings:
 
     # renpy/common/_developer/developer.rpym:45
     old "Reload Game (Shift+R)"
-    new "Reload Game (Shift+R)"
+    new "Spiel neuladen (Shift+R)"
 
     # renpy/common/_developer/developer.rpym:47
     old "Console (Shift+O)"
-    new "Console (Shift+O)"
+    new "Konsole (Shift+O)"
 
     # renpy/common/_developer/developer.rpym:49
     old "Variable Viewer"

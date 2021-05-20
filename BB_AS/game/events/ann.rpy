@@ -85,6 +85,7 @@ label ann_shower:
         $ renpy.scene()
         $ renpy.show("Max bathroom-window-morning 01"+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
+        $ ann.flags.ladder += 1
         if ann.dress_inf != '04a':
             $ __r1 = {'04c':'a', '04d':'b', '02b':'c', '00':'d', '00a':'d'}[ann.dress_inf]
         else:

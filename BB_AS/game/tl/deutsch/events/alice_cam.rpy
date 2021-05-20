@@ -142,7 +142,7 @@ translate deutsch cam0_alice_shower_d8fc5c8e:
 translate deutsch cam0_alice_shower_ce820080:
 
     # Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
-    Max_04 "Big Sis einseifen in der Dusche ist ein Anblick, der mir nie langweilig werden wird..."
+    Max_04 "Meine große Schwester nimmt eine Dusche... Es ist ein Anblick, an dem ich mich nie satt sehen werde..."
 
 # game/events/alice_cam.rpy:155
 translate deutsch cam1_alice_shower_77f51d82:
@@ -160,7 +160,7 @@ translate deutsch cam1_alice_shower_ce893c17:
 translate deutsch cam0_alice_lisa_shower_ce820080:
 
     # Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
-    Max_04 "Big Sis einseifen in der Dusche ist ein Anblick, der mir nie langweilig werden wird..."
+    Max_04 "Meine große Schwester nimmt eine Dusche... Es ist ein Anblick, an dem ich mich nie satt sehen werde..."
 
 # game/events/alice_cam.rpy:194
 translate deutsch cam0_alice_lisa_shower_038e8b74:

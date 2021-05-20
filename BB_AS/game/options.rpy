@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.5.01"
+define config.version = "0.06.5.02"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -172,6 +172,14 @@ define config.mouse_hide_time = 10
 default preferences.desktop_rollback_side = "disable"   # сторона отката
 
 init python:
+    def json_callback(d):
+        d["day"]    = day
+        d["tm"]     = tm
+        d["wd"]     = weekdays[GetWeekday(day)][0]
+        d["desc"]   = save_name
+        d["auto"]   = number_autosave
+        d["quick"]  = number_quicksave
+
     config.default_fullscreen = False
     config.save_json_callbacks.append(json_callback)
 

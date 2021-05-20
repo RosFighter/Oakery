@@ -2202,6 +2202,7 @@ label kira_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
+        $ kira.flags.ladder += 1
         scene BG bathroom-morning-00
         $ kira.daily.shower = 2
         $ r1 = renpy.random.choice(['b', 'c', 'd'])
@@ -2374,10 +2375,14 @@ label kira_lisa_shower:
         Max_04 "Посмотрим, что у нас тут..."
         if 'lisa_sh' in cam_flag:
             $ r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зеркалом Кира
+            $ kira.flags.ladder += 1
         elif 'kira_sh' in cam_flag:
             $ r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зеркалом Лиза
+            $ lisa.flags.ladder += 1
         elif 'kira_lisa_sh' in cam_flag:
             $ r0 = 0 # $ __var = 'kira_lisa'
+            $ kira.flags.ladder += 1
+            $ lisa.flags.ladder += 1
         else:
             $ r0 = renpy.random.randint(1, 4)
             if r0 < 3: # если выпал один персонаж
@@ -2515,11 +2520,15 @@ label kira_alice_shower:
         Max_04 "Посмотрим, что у нас тут..."
         # $ r0 = renpy.random.randint(1, 4)
         if 'alice_sh' in cam_flag:
-            $ r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зекралом Лиза
+            $ r0 = 1 if tm[-2:] < '30' else 2 # в первой половине часа перед зекралом Кира
+            $ kira.flags.ladder += 1
         elif 'kira_sh' in cam_flag:
             $ r0 = 2 if tm[-2:] < '30' else 1 # в первой половине часа перед зекралом Алиса
+            $ alice.flags.ladder += 1
         elif 'kira_alice_sh' in cam_flag:
             $ r0 = 0 # $ __var = 'kira_alice'
+            $ kira.flags.ladder += 1
+            $ alice.flags.ladder += 1
         else:
             $ r0 = renpy.random.randint(1, 4)
             if r0 < 3: # если выпал один персонаж

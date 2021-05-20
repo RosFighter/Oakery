@@ -436,25 +436,25 @@ translate deutsch eric_ann_tv_closer1_03d660f3:
 translate deutsch eric_ann_tv_closer1_d646f6b6:
 
     # Max_11 "Да, она ему дрочит! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_11 "Sie holt ihm einen runter! Genau hier... Sie sind so leidenschaftlich bei der Sache, dass sie nichts um sich herum bemerken! Na ja, außer dem, was auf dem Bildschirm passiert..." nointeract
+    Max_11 "Sie holt ihm einen runter! Genau hier... Sie sind so leidenschaftlich bei der Sache, dass sie nichts um sich herum bemerken! Na ja, außer dem, was auf im Fernseher passiert..." nointeract
 
 # game/events/eric.rpy:477
 translate deutsch eric_ann_tv_closer1_224a6ad6:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf dem Bildschirm passiert..." nointeract
+    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf im Fernseher passiert..." nointeract
 
 # game/events/eric.rpy:480
 translate deutsch eric_ann_tv_closer1_bdf10685:
 
     # Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_11 "Sie bläst ihm einen! Genau hier... Sie sind so sehr miteinander beschäftigt, dass sie nichts um sich herum bemerken! Nun, außer dem, was auf dem Bildschirm passiert..." nointeract
+    Max_11 "Sie bläst ihm einen! Genau hier... Sie sind so sehr miteinander beschäftigt, dass sie nichts um sich herum bemerken! Nun, außer dem, was auf im Fernseher passiert..." nointeract
 
 # game/events/eric.rpy:482
 translate deutsch eric_ann_tv_closer1_224a6ad6_1:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf dem Bildschirm passiert..." nointeract
+    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf im Fernseher passiert..." nointeract
 
 # game/events/eric.rpy:484
 translate deutsch eric_ann_tv_closer1_dd256959:
@@ -814,7 +814,7 @@ translate deutsch eric_ann_shower_ladder_4ce9d959:
 translate deutsch eric_ann_shower_ladder_993c77ee:
 
     # Max_09 "Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?"
-    Max_09 "Wow! Was für eine Leidenschaft Mom für das Lutschen von Eric Schwanz... Und er scheint nicht genug zu bekommen und versucht, seinen Schwanz tief in ihren Mund zu stecken... Warum lässt sie ihn das tun, gehorcht sie gerne?"
+    Max_09 "Wow! Mit was für eine Leidenschaft lutscht Mom den chwanz von Eric... Und er scheint nicht genug zu bekommen und versucht, seinen Schwanz tief in ihren Mund zu stecken... Warum lässt sie ihn das tun, gehorcht sie gerne?"
 
 # game/events/eric.rpy:828
 translate deutsch eric_ann_shower_ladder_c6081091:
@@ -826,7 +826,7 @@ translate deutsch eric_ann_shower_ladder_c6081091:
 translate deutsch eric_ann_shower_ladder_fa236e0e:
 
     # Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!"
-    Max_10 "Wow! That's what they do! Eric fucks Mom like some slut in the mirror, and she also caresses her already wet pussy... Yeah, as long as you don't fall off a ladder like that!"
+    Max_10 "Wow! Das ist es, was sie tun! Eric fickt Mum, positioniert sie vor dem Spiegel wie eine Schlampe, während sie ihre bereits feuchte Muschi streichelt... Ja, ich hoffe, ich falle nicht gleich von der Leiter!"
 
 # game/events/eric.rpy:840
 translate deutsch eric_ann_shower_ladder_6bc8173a:
@@ -844,7 +844,7 @@ translate deutsch eric_ann_shower_fin1_547d305b:
 translate deutsch eric_ann_shower_fin2_7b69081a:
 
     # Max_10 "А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!"
-    Max_10 "Und hier kommt das Finale! Eric beendet auf Mom's ganze Gesicht und ihren Brüste, und sie scheint sehr glücklich... lächelnd... Ohh... wie heiß und schmutzig sie ist!"
+    Max_10 "Und hier kommt das Finale! Eric spritzt auf Mom's ganzes Gesicht und ihren Brüste, und sie scheint sehr glücklich... lächelt... Ohh... wie heiß und schmutzig sie ist!"
 
 # game/events/eric.rpy:855
 translate deutsch eric_ann_shower_end_90ff417e:
@@ -1848,7 +1848,7 @@ translate deutsch strings:
 
     # game/events/eric.rpy:355
     old "Ого! На экране стало интереснее! А куда это мама так наклонилась?"
-    new "Wow! Der Bildschirm wurde noch interessanter! Warum lehnt Mom sich so an?"
+    new "Wow! Der Film wird noch interessanter! Aber wieso lehnt Mom sich so komisch an?"
 
     # game/events/eric.rpy:356
     old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
@@ -1876,7 +1876,7 @@ translate deutsch strings:
 
     # game/events/eric.rpy:389
     old "Ого! На экране стало интереснее! А что это мама там делает?"
-    new "Wow! Der Bildschirm wurde noch interessanter! Was macht Mom da?"
+    new "Wow! Der Film wurde noch interessanter! Was macht Mom da?"
 
     # game/events/eric.rpy:390
     old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?"

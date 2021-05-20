@@ -90,7 +90,7 @@ label alice_after_arrival_kira:
         Schedule((1, 4), '6:0', '6:59', 'sleep', _("спит (утро)"), 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
         Schedule((1, 4), '7:00', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'alice_lisa_shower', enabletalk=False, glow=135),
         Schedule((1, 4), '8:0', '8:59', 'resting', _("в своей комнате"), 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
-        Schedule((3, 6, 7), '8:00', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
+        Schedule((3, 6, 0), '8:00', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
         Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
         )
     return

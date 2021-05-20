@@ -28,7 +28,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:27
     old "{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Lisa liebte die Massage!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Lisa liebt die Massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:28
     old "{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n"
@@ -44,7 +44,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:33
     old "{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Lisa liebte den Kuss!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Lisa liebt den Kuss!{/i}{/color}\n"
 
     # game/core/02init.rpy:34
     old "{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n"
@@ -488,7 +488,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:116
     old "Я присоединюсь?"
-    new "Kann ich mich zu dir setzen?"
+    new "Kann ich dir Gesellschaft leisten?"
 
     # game/core/02init.rpy:116
     old "Тётя Кира, когда ты уже с мамой поговоришь?!"
@@ -572,11 +572,11 @@ translate deutsch strings:
 
     # game/core/02init.rpy:31
     old "{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Mom liebte die Massage!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Mom liebt die Massage!{/i}{/color}\n"
 
     # game/core/02init.rpy:32
     old "{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Mom liebte die Massage nicht!{/i}{/color}\n"
+    new "{color=#E59400}{i}Mom mochte die Massage nicht!{/i}{/color}\n"
 
     # game/core/02init.rpy:33
     old "{color=#00FF00}{i}Получилось!{/i}{/color}\n"

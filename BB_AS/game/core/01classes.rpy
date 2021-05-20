@@ -1138,7 +1138,7 @@ init python:
     ############################################################################
 
     class PossHint():   # подсказки к этапу возможности
-        def __init__(self, hint, req=True):
+        def __init__(self, hint, req='True'):
             self.hint   = hint      # подсказака
             self.req    = req       # условие отображения подсказки
 

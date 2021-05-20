@@ -587,14 +587,6 @@ screen save_input(prompt="", last="", len=50):
 
 init -2 python:
 
-    def json_callback(d):
-        d["day"]    = day
-        d["tm"]     = tm
-        d["wd"]     = weekdays[GetWeekday(day)][0]
-        d["desc"]   = save_name
-        d["auto"]   = number_autosave
-        d["quick"]  = number_quicksave
-
     class get_save_name(FileSave):
         def __init__(self, name, confirm=True, newest=True, page=None, cycle=False):
             super(get_save_name,self).__init__(name=name,confirm=confirm,newest=newest,page=page,cycle=cycle)
@@ -701,9 +693,13 @@ screen file_slots(title):
                                 $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
                             else:
                                 if persistent._file_page == "auto":
-                                    $ s_description = "AUTO-"+str(FileJson(slot, "auto"))
+                                    $ s_description = FileJson(slot, "auto")
+                                    if s_description:
+                                        $ s_description = "AUTO-"+str(s_description)
                                 elif persistent._file_page == "quick":
-                                    $ s_description = "QUICK-"+str(FileJson(slot, "quick"))
+                                    $ s_description = FileJson(slot, "quick")
+                                    if s_description:
+                                        $ s_description = "QUICK-"+str(s_description)
                                 else:
                                     $ s_description = FileJson(slot, "desc")
 
@@ -751,9 +747,13 @@ screen file_slots(title):
                                 $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
                             else:
                                 if persistent._file_page == "auto":
-                                    $ s_description = "AUTO-"+FileJson(slot, "auto")
+                                    $ s_description = FileJson(slot, "auto")
+                                    if s_description:
+                                        $ s_description = "AUTO-"+str(s_description)
                                 elif persistent._file_page == "quick":
-                                    $ s_description = "QUICK-"+FileJson(slot, "quick")
+                                    $ s_description = FileJson(slot, "quick")
+                                    if s_description:
+                                        $ s_description = "QUICK-"+str(s_description)
                                 else:
                                     $ s_description = FileJson(slot, "desc")
 
@@ -913,6 +913,7 @@ screen preferences():
                         # label _("")
                         textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
                         textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
+                        # textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.

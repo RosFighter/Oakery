@@ -605,6 +605,7 @@ label alice_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
+        $ alice.flags.ladder += 1
         if alice.dress_inf != '04aa':
             $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d', '00aa':'d'}[alice.dress_inf]
         else:

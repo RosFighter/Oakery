@@ -1330,25 +1330,25 @@ translate deutsch kira_about_cuni_8cc8ec4f:
 translate deutsch kira_about_cuni_063924e5:
 
     # Max_07 "Наверно, да. Я ведь не заглянул к тебе в душ..."
-    Max_07 "Wahrscheinlich, ja. Ich habe dich nicht in der Dusche gesehen..."
+    Max_07 "Wahrscheinlich, ja. Ich habe dich neulich nicht im Bad besucht..."
 
 # game/dialogues/kiratalk.rpy:683
 translate deutsch kira_about_cuni_c16b4060:
 
     # Kira_14 "Я не злюсь, но немного расстроена... А разозлюсь я, если ты просто забыл!" nointeract
-    Kira_14 "Ich bin nicht wütend, aber ich bin ein wenig verärgert... Ich bin sauer, wenn du es einfach vergessen hast!" nointeract
+    Kira_14 "Ich bin nicht wütend, aber ich bin ein wenig verärgert... Ich wäre aber sauer, wenn du es einfach nur vergessen hast!" nointeract
 
 # game/dialogues/kiratalk.rpy:689
 translate deutsch kira_about_cuni_06c8a7c0:
 
     # Kira_07 "Должно быть, это было что-то важное, раз ты решил не приходить к своей любимой, совершенно голой тёте в душ!"
-    Kira_07 "Es muss etwas Wichtiges gewesen sein, wenn du entschieden hast, nicht zu kommen, um deine schöne, nackte Tante in der Dusche zu sehen!"
+    Kira_07 "Es muss etwas Wichtiges gewesen sein, wenn du entschieden hast, nicht zu kommen, um deine schöne, nackte Tante in der Wanne zu bersuchen!"
 
 # game/dialogues/kiratalk.rpy:690
 translate deutsch kira_about_cuni_7ea229cb:
 
     # Max_09 "Сестрёнкам надо помогать! А твоё приглашение всё ещё в силе?"
-    Max_09 "Meine Schwestern brauchten Hilfe! Ist deine Einladung noch gültig?"
+    Max_09 "Meine Schwestern brauchten Hilfe! Ist dein Angebot noch gültig?"
 
 # game/dialogues/kiratalk.rpy:692
 translate deutsch kira_about_cuni_17b9a3e8:
@@ -2092,7 +2092,7 @@ translate deutsch kira_about_ann_secret0_38f9df67:
 translate deutsch kira_about_ann_secret0_11df571a:
 
     # Kira_01 "Тут всё несколько сложнее, чем ты думаешь. А почему ты не допускаешь, что твоя мама могла просто влюбится в Эрика? Ты же знаешь, любовь слепа, и не такое бывает..."
-    Kira_01 "Es ist ein wenig komplizierter als du denkst. Warum denkst du nicht, dass es möglich ist, dass deine Mom einfach in Eric verliebt ist? Weißt du, Liebe ist blind, und es passiert..."
+    Kira_01 "Es ist ein wenig komplizierter als du denkst. Warum denkst du nicht, dass es möglich ist, dass deine Mom einfach in Eric verliebt ist? Weißt du, Liebe macht blind, und es passiert dann eben..."
 
 # game/dialogues/kiratalk.rpy:981
 translate deutsch kira_about_ann_secret0_d4376736:
@@ -2110,7 +2110,7 @@ translate deutsch kira_about_ann_secret0_3da98396:
 translate deutsch kira_about_ann_secret0_6f1f83f6:
 
     # Max_10 "Мама дрочит Эрику по всякому, прямо у Лизы на глазах! Ты как, начинаешь осознавать масштаб того, как мама изменилась?"
-    Max_10 "Mom lässt sich von Erica vor den Augen von Lisa vollspritzen! Wird dir allmählich klar, wie sehr sich Mom verändert hat?"
+    Max_10 "Mom lässt sich von Eric vor den Augen von Lisa vollspritzen! Wird dir allmählich klar, wie sehr sich Mom verändert hat?"
 
 # game/dialogues/kiratalk.rpy:984
 translate deutsch kira_about_ann_secret0_a81f26a0:
@@ -2122,7 +2122,7 @@ translate deutsch kira_about_ann_secret0_a81f26a0:
 translate deutsch kira_about_ann_secret0_0176adba:
 
     # Max_15 "Да, тётя Кира, именно так. И я думаю, вопрос времени, когда мама начнёт отсасывать Эрику при ней! Или того хуже..."
-    Max_15 "Ja, Tante Kira, das ist richtig. Und ich denke, es ist nur eine Frage der Zeit, bis Mom anfängt, Erica vor ihr einen zu blasen! Oder noch schlimmer..."
+    Max_15 "Ja, Tante Kira, das ist richtig. Und ich denke, es ist nur eine Frage der Zeit, bis Mom anfängt, Eric vor ihr einen zu blasen! Oder noch schlimmer..."
 
 # game/dialogues/kiratalk.rpy:986
 translate deutsch kira_about_ann_secret0_35b169a4:
@@ -2140,7 +2140,7 @@ translate deutsch kira_about_ann_secret0_5ae91ac3:
 translate deutsch kira_about_ann_secret0_327cdcef:
 
     # Kira_13 "Ты прав, тут дело не только в Эрике... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
-    Kira_13 "Du hast Recht, es ist nicht nur Eric... Ich schätze, es geht um deine Mom. Aber es ist ein großes Geheimnis zwischen mir und ihr, oder vielmehr ihr Geheimnis. Und ich bin mir nicht sicher, ob ich es dir erzählen kann..."
+    Kira_13 "Du hast Recht, es ist nicht nur Eric... Ich schätze, es geht um deine Mom. Aber es gibt zwischen ihr und mir ein großen Geheimnis, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich es dir das einfach so erzählen kann..."
 
 # game/dialogues/kiratalk.rpy:989
 translate deutsch kira_about_ann_secret0_881c3cb4:
@@ -2152,7 +2152,7 @@ translate deutsch kira_about_ann_secret0_881c3cb4:
 translate deutsch kira_about_ann_secret0_ab0718b9:
 
     # Kira_14 "Поговори с мамой, спроси про случай из детства. Если она разрешит, я расскажу. А может быть, она и сама всё объяснит..."
-    Kira_14 "Sprich mit deiner Mutter, frag sie nach einem Erlebniss aus ihrer Kindheit. Wenn sie sagt, dass es okay ist, werde ich es ihr sagen. Oder vielleicht erklärt sie es selbst..."
+    Kira_14 "Sprich mit deiner Mutter, frag sie nach einem Erlebniss aus ihrer Kindheit. Wenn sie sagt, dass es okay ist, werde ich es dir erzählen. Oder vielleicht macht sie das ja auch selbst..."
 
 # game/dialogues/kiratalk.rpy:991
 translate deutsch kira_about_ann_secret0_12d0c7ef:

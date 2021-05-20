@@ -1626,7 +1626,7 @@ translate deutsch erofilm2_1_8b1570e1:
 translate deutsch erofilm2_1_681882f0:
 
     # Ann_06 "Это здорово, Макс! Я очень рада, что ты умеешь кое-что, что в жизни может пригодится. Конечно, работа массажистом это не то, о чём я думаю, ты мечтаешь, но..."
-    Ann_06 "Das ist großartig, Max! Ich bin wirklich froh, dass du einige Fähigkeiten hast, die dir im Leben nützlich sein werden. Natürlich ist es nicht das, wovon du träumst, eine Masseuse zu sein, aber..."
+    Ann_06 "Das ist großartig, Max! Ich bin wirklich froh, dass du einige Fähigkeiten hast, die dir im Leben nützlich sein werden. Natürlich ist es nicht das, wovon du träumst, ein Masseur zu sein, aber..."
 
 # game/dialogues/anntalk.rpy:802
 translate deutsch erofilm2_1_02233271:

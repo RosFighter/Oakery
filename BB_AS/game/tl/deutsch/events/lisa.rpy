@@ -658,13 +658,13 @@ translate deutsch lisa_romantic_movie_0_1095a0d0:
 translate deutsch lisa_romantic_movie_0_f9bf1574:
 
     # Max_07 "А ты на экран смотри, а не на член."
-    Max_07 "Du bist diejenige, die auf meinen Schwanz statt auf den Bildschirm geschaut hat."
+    Max_07 "Du bist diejenige, die auf meinen Schwanz statt auf den Fernseher geschaut hat."
 
 # game/events/lisa.rpy:769
 translate deutsch lisa_romantic_movie_0_1574058f:
 
     # Lisa_10 "Да не могу я смотреть на экран, когда и там и у тебя такое... Всё, я спать!"
-    Lisa_10 "Nein, du hast Recht. Ich kann mich nicht auf den Bildschirm konzentrieren, wenn du... Das war's. Ich gehe jetzt ins Bett."
+    Lisa_10 "Nein, du hast Recht. Ich kann mich nicht auf den Fernseher konzentrieren, wenn du... Das war's. Ich gehe jetzt ins Bett."
 
 # game/events/lisa.rpy:771
 translate deutsch lisa_romantic_movie_0_288ac083:

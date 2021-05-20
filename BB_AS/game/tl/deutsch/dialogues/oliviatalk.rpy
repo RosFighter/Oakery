@@ -256,7 +256,7 @@ translate deutsch olivia_talk1_8c268e09:
 translate deutsch olivia_talk2_030c42a2:
 
     # Olivia_03 "Что, Макс? Какие-то гадости хочешь рассказать о Лизе?"
-    Olivia_03 "Was, Max? Gibt es etwas Gemeines, das du über Lisa erzählen möchtest?"
+    Olivia_03 "Was, Max? Gibt es etwas Geheimes, das du über Lisa erzählen möchtest?"
 
 # game/dialogues/oliviatalk.rpy:104
 translate deutsch olivia_talk2_945ee6bc:
@@ -298,7 +298,7 @@ translate deutsch olivia_talk2_4e9ba903:
 translate deutsch olivia_talk2_3f69da2f:
 
     # Max_03 "Мечтать не вредно!"
-    Max_03 "Träum weiter!"
+    Max_03 "Träumen darf ich!"
 
 # game/dialogues/oliviatalk.rpy:115
 translate deutsch olivia_talk2_a63b59f8:
@@ -436,7 +436,7 @@ translate deutsch olivia_talk3_720aafa5:
 translate deutsch olivia_talk3_f7f4adb9:
 
     # Olivia_03 "Вот ещё! Всего лишь одна ночь на неделе, когда можно спокойно поваляться на диване перед огромным экраном с друзьями, а Алекс у меня в распоряжении почти всегда. Так что обойдётся!"
-    Olivia_03 "Also dann! Es ist nur ein Abend in der Woche, an dem ich mich mit meinen Freunden auf der Couch vor dem riesigen Bildschirm entspannen kann, und ich habe Alex die meiste Zeit zur Verfügung. Es wird also reichen!"
+    Olivia_03 "Also dann! Es ist nur ein Abend in der Woche, an dem ich mich mit meinen Freunden auf der Couch vor einem riesigen Fernseher entspannen kann, und ich habe Alex die meiste Zeit zur Verfügung. Es wird also reichen!"
 
 # game/dialogues/oliviatalk.rpy:156
 translate deutsch olivia_talk3_f303719b:

@@ -72,6 +72,7 @@ label lisa_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
+        $ lisa.flags.ladder += 1
         # назначим или определим одёжку
         if lisa.dress_inf != '04a':
             $ r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
@@ -1264,8 +1265,10 @@ label lisa_horor_movie_r:
                     $ added_mem_var('horror_kiss')
                     #horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
                     $ r1 = '0'+str(renpy.random.randint(2, 3))
-                    $ renpy.scene()
-                    $ renpy.show('BG char Lisa horror-myroom '+r1)
+                    if r1=='02':
+                        scene BG char Lisa horror-myroom 02
+                    else:
+                        scene BG char Lisa horror-myroom 02a
                     $ renpy.show('Lisa horror-myroom 02-'+r1+lisa.dress)
                     if lisa.dress>'b':
                         Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки и нежная грудь, которой она касается меня... ){/i}"
