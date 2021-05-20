@@ -1,4 +1,11 @@
-Fix 0.06.5.01
+Fix 0.06.5.01 - 0.06.5.02
+
+0.06.5.02
+    - Fixed a moment where Alice wore the top of a swimsuit when giving sweets in the yard (Исправлен момент, где Алиса одевала верх купальника при дарении сладостей во дворе)
+    - Kira no longer disappears from the shower with Alice on Sundays (Кира больше не исчезает из душа с Алисой по воскресеньям)
+    - fixed bugs that sometimes caused crashes when opening the save window (исправлены ошибки иногда приводившие к вылету при открытии окна сохранений)
+    - fixed crash issue on first launch on Android (исправлена ошибка вылета при первом запуске на Android)
+    - some corrections of the German translation (некоторые исправления немецкого перевода)
 
 0.06.5.01
     - fixed a bug that sometimes occurred on Saturday after dinner before talking to Eric (исправлена ошибка, иногда возникавшая в субботу после ужина перед разговором с Эриком)
