@@ -57,11 +57,11 @@ label cam1_ann_shower:
 
 label cam0_ann_yoga:
     if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
-        $ renpy.show('Ann cams yoga 0'+str(renpy.random.randint(1, 3)+ann.dress), at_list=[laptop_screen])
+        $ renpy.show('Ann cams yoga 0'+str(renpy.random.randint(1, 3))+ann.dress, at_list=[laptop_screen])
     elif int(tm[3:4])%3 == 1:
-        $ renpy.show('Ann cams yoga 0'+str(renpy.random.randint(4, 6)+ann.dress), at_list=[laptop_screen])
+        $ renpy.show('Ann cams yoga 0'+str(renpy.random.randint(4, 6))+ann.dress, at_list=[laptop_screen])
     else:
-        $ renpy.show('Ann cams yoga 0'+str(renpy.random.randint(7, 9)+ann.dress), at_list=[laptop_screen])
+        $ renpy.show('Ann cams yoga 0'+str(renpy.random.randint(7, 9))+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_yoga' not in cam_flag:
         $ cam_flag.append('ann_yoga')

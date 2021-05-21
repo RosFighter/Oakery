@@ -586,7 +586,7 @@ label Eric_talk_about_lace_lingerie:
         Eric_13 "Нечего мне проблемы устраивать! И мы об этом говорили сразу."
         Max_11 "Ладно, я всё понял."
         #Макс теряет 1 бонус
-        if bonus_from_eric.count('bonus'):
+        if flags.bonus_from_eric.count('bonus'):
             $ flags.bonus_from_eric.remove('bonus')
             $ flags.bonus_from_eric.append('nobonus')
         $ poss['blog'].open(19)
@@ -673,7 +673,7 @@ label Eric_talk_about_Kira_1:
                 Max_11 "Ладно, я всё понял."
                 "{i}уйти{/i}":
                     #бонусы от Эрика замораживаются
-                    if bonus_from_eric.count('bonus'):
+                    if flags.bonus_from_eric.count('bonus'):
                         $ flags.bonus_from_eric.remove('bonus')
                         $ flags.bonus_from_eric.append('nobonus')
         else:
@@ -687,10 +687,10 @@ label Eric_talk_about_Kira_1:
                 Max_11 "Ладно, я всё понял."
                 "{i}уйти{/i}":
                     #Макс теряет свои бонусы и деньги от Эрика
-                    while bonus_from_eric.count('bonus'):
+                    while flags.bonus_from_eric.count('bonus'):
                         $ flags.bonus_from_eric.remove('bonus')
                         $ flags.bonus_from_eric.append('nobonus')
-                    if bonus_from_eric.count('money'):
+                    if flags.bonus_from_eric.count('money'):
                         $ flags.bonus_from_eric.remove('money')
                         $ flags.bonus_from_eric.append('nomoney')
 
@@ -716,7 +716,7 @@ label Eric_talk_about_Kira_1:
                 Max_01 "Хорошо, как надумаю, что хочу, так сразу к тебе..."
                 "{i}уйти{/i}":
                     #бонусы от Эрика размораживаются + 1 новый бонус
-                    while bonus_from_eric.count('nobonus'):
+                    while flags.bonus_from_eric.count('nobonus'):
                         $ flags.bonus_from_eric.remove('nobonus')
                         $ flags.bonus_from_eric.append('bonus')
                     $ flags.bonus_from_eric.append('bonus')

@@ -1743,10 +1743,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
-
-################################################################################
-
-# style say_vscroll:
-#     variant "small"
-#     unscrollable "hide"
-#     ypos 15 ysize 330 xsize 50

@@ -128,9 +128,8 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Итак, я внимательно прочитал книгу Web Standards и разобрался, как сделать свой сайт. Пожалуй, стоит начать именно с этого. Мне потребуются деньги на домен, хостинг и оплату готового шаблона с дизайном. Всего нужно порядка $100."
-    new "Well, I've read Web Standards and figured out how to set up my website. I guess that should be my starting point. I'll need some money to acquire a domain, hosting and design template. $100 should do."
+    new "I carefully read Web Standards and figured out how to make my own site. That's probably a good place to start. I would need money for a domain, hosting, and a ready-made template with a design. I will need $100."
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то, у меня есть свой собственный сайт, где транслируется изображение с камеры из гостиной! Теперь нужно увеличить аудиторию, ведь чем больше людей, тем больше доход от рекламных баннеров. Сделать это можно с помощью вложений в рекламу своего сайта. Кроме того, если в кадре происходит что-то интересное, аудитория также растёт. Для начала стоит установить камеры в каждую комнату, а так же во двор..."
-    new "Finally, I have my own streaming website! Now I need to increase the size of my audience to earn more money. And for that I need to advertise my website somewhere. My audience should grow when something exciting happens on stream. To begin with, you should install cameras in each room, as well as in the courtyard..."
-
+    new "Finally, I have my own website that broadcasts the image from the living room camera! Now I need to grow my audience, because the more people, the more income I get from advertising. I should invest in some advertising packages. In addition, if something interesting happens on camera, the audience will surely grow. I should aim to install cameras in every room, as well as in the yard..."

@@ -126,6 +126,7 @@ init python:
     def setting_clothes_by_conditions():
         # Алиса
         alice.clothes.sleep.enable(0)       # обычное бельё для сна доступно всегда
+        alice.clothes.casual.enable(0)      # джинсы доступны всегда
         if 'pajamas' in alice.gifts:        # подарена пижамка
             alice.clothes.casual.enable(1)
         if 'kira' in chars:                 # приехала Кира
@@ -143,6 +144,12 @@ init python:
 
         # Анна
         ann.clothes.sleep.enable(0)         # обычное бельё для сна доступно всегда
+        ann.clothes.casual.rand_enable((0, 1))
+        ann.clothes.cook_morn.rand_enable((0, 1))
+        ann.clothes.cook_eve.rand_enable(0)
+        ann.clothes.rest_morn.rand_enable(0)
+        ann.clothes.rest_eve.rand_enable((0, 1))
+        ann.clothes.sports.rand_enable(0)
         if 'kira' in chars:
             ann.clothes.casual.rand_enable(2)
             ann.clothes.cook_morn.rand_enable(3)
@@ -153,7 +160,6 @@ init python:
             ann.clothes.sleep.enable(1)
         if 'fit1' in ann.gifts:             # подарены Спортивные лиф и мини-шорты
             ann.clothes.sports.rand_enable(1)
-
 
         # Лиза
         lisa.clothes.learn.enable(2)        # полотенце доступно всегда

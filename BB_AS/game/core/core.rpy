@@ -28,7 +28,7 @@ label Waiting:
     $ spent_time = TimeDifference(prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
     # проверка одежды?
-    # $ checking_clothes() 
+    # $ checking_clothes()
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
 
@@ -1098,5 +1098,14 @@ label update_06_5_99:
             $ infl[ann].add_e(150, True)
             if 'nightie' in ann.gifts:
                 $ infl[ann].add_m(30, True)
+
+    if _version < "0.06.5.03":
+        if GetKolCams(house)>7:
+            $ poss['cams'].open(5)
+        if GetKolCams(house)>8:
+            $ poss['cams'].open(6)
+
+        if mgg.clothes.casual.sel[1].name == 'МУЖСКИЕ МАЙКА И ШОРТЫ':
+            $ mgg.clothes.casual.sel.pop(1)
 
     return

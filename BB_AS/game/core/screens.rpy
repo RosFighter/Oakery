@@ -2,7 +2,7 @@
 
 ###############################################################################
 
-init: # трансформации
+init: # трансформации gl2
 
     # transform desaturate2:
     #     on hover:
@@ -10,14 +10,40 @@ init: # трансформации
     #     on idle:
     #         matrixcolor SaturationMatrix(1.0)
 
-    # transform my_color(n_color):
-    #     matrixcolor TintMatrix(n_color)
+    transform my_color(n_color):
+        matrixcolor TintMatrix(n_color)
 
     transform desaturate:
         matrixcolor SaturationMatrix(0.0)
 
     transform blurred:
         blur 12
+
+    transform things:
+        on idle, selected_idle:
+            matrixcolor SaturationMatrix(0.0)
+            zoom 0.9
+        on hover, selected_hover:
+            matrixcolor SaturationMatrix(1.0)
+            zoom 1.0
+
+    transform mark_alt:
+        anchor (0.5, 0.5)
+        rotate 90
+        pos (19, 14)
+
+        block:
+            linear 0.5 matrixcolor TintMatrix('#FF0000')
+            pause 0.5
+            linear 0.5 matrixcolor TintMatrix('#FFBE00')
+            pause 0.5
+            linear 0.5 matrixcolor TintMatrix('#008000')
+            pause 0.5
+            linear 0.5 matrixcolor TintMatrix('#0000FF')
+            pause 0.5
+            repeat
+
+init: # трансформации
 
     transform book_marks:
         on idle:
@@ -28,17 +54,6 @@ init: # трансформации
     transform close_zoom:
         xanchor (35 if renpy.variant("small") else 25)
         size ((105, 35) if renpy.variant("small") else (75, 25))
-
-    transform close_zoom_var_small:
-        xanchor 35
-        size (105, 35)
-
-    transform middle_wait:
-        size (136, 136)
-        on idle, selected_idle:
-            yanchor 0 alpha 1.0
-        on hover, selected_hover:
-            yanchor 1 alpha 0.9
 
     transform middle_zoom:
         size (136, 136)
@@ -69,25 +84,14 @@ init: # трансформации
             yanchor 1 alpha 0.93
 
     transform small_menu:
-        size (80, 80)
-        on idle, selected_idle:
-            yanchor 0 alpha 0.4
-        on hover, selected_hover:
-            yanchor 1 alpha 1.0
-
-    transform small_menu_mobile:
-        size (100, 100)
+        size ((100, 100) if renpy.variant('small') else (80, 80))
         on idle, selected_idle:
             yanchor 0 alpha 0.4
         on hover, selected_hover:
             yanchor 1 alpha 1.0
 
     transform disable_menu:
-        size (80, 80)
-        yanchor 0 alpha 0.2
-
-    transform disable_menu_mobile:
-        size (100, 100)
+        size ((100, 100) if renpy.variant('small') else (80, 80))
         yanchor 0 alpha 0.2
 
     transform lang:
@@ -155,14 +159,6 @@ init: # трансформации
         size (1475, 829)
         xpos 100
         ypos 110
-
-    transform things:
-        on idle, selected_idle:
-            matrixcolor SaturationMatrix(0.0)
-            zoom 0.9
-        on hover, selected_hover:
-            matrixcolor SaturationMatrix(1.0)
-            zoom 1.0
 
     transform alpha_dissolve:
         alpha 0.0
@@ -330,7 +326,10 @@ screen LaptopScreen():
                         frame xysize(370, 295) background None:
                             if mgg.money < 50:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
-                                    idle 'interface laptop grocery' at desaturate
+                                    if config.gl2:
+                                        idle 'interface laptop grocery' at desaturate
+                                    else:
+                                        idle im.MatrixColor('images/interface/laptop/grocery.webp', im.matrix.desaturate())
                                 text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color gray
                             else:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action Jump('buyfood') at book_marks
@@ -340,7 +339,10 @@ screen LaptopScreen():
                         frame xysize(370, 295) background None:
                             if mgg.money < 100:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) action NullAction():
-                                    idle 'interface laptop CreateSite' at desaturate
+                                    if config.gl2:
+                                        idle 'interface laptop CreateSite' at desaturate
+                                    else:
+                                        idle im.MatrixColor('images/interface/laptop/CreateSite.webp', im.matrix.desaturate())
                                 text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color gray text_align 0.5
                             else:
                                 imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop CreateSite' action Jump('create_site') at book_marks
@@ -359,8 +361,7 @@ screen LaptopScreen():
 
             if len(search_theme) > 0:
                 frame  xpos 1055 ypos 25 background None:
-                    add 'interface marker blue' at mark
-
+                    add 'interface marker' at (mark_alt if config.gl2 else mark)
 
 screen LaptopDouble():
     tag menu
@@ -521,7 +522,7 @@ style search_vscroll is vscrollbar:
 style search_but:
     xpadding 0 ypadding 0 xmargin 0 ymargin 0
     xsize 675
-    foreground 'interface marker black'
+    foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(0.0, 0.0, 0.0))
 style search_button:
     xsize 675
     xpadding 30
@@ -1068,7 +1069,7 @@ screen room_navigation():
             vbox xsize 136 spacing 0:
                 frame xysize (136, 140) background None:
                     imagebutton idle 'interface wait 60' hover 'interface wait 60 a':# hovered Show('wait_navigation'):
-                                align (0.5, 0.0) focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')] at middle_wait
+                                align (0.5, 0.0) focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')] at middle_zoom
                 text _("ЖДАТЬ") font 'trebucbd.ttf' size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
 
     vbox:  # Время и день недели
@@ -1091,51 +1092,20 @@ screen room_navigation():
     hbox:  # верхнее меню
         align(0.01, 0.01)
         spacing 2
-        imagebutton idle 'interface menu userinfo' focus_mask True action [Hide('wait_navigation'), Show('menu_userinfo')]:
-            if renpy.variant('small'):
-                at small_menu_mobile
-            else:
-                at small_menu
-        imagebutton idle 'interface menu inventory' focus_mask True action [Hide('wait_navigation'), Show('menu_inventory')]:
-            if renpy.variant('small'):
-                at small_menu_mobile
-            else:
-                at small_menu
+        imagebutton idle 'interface menu userinfo' focus_mask True action [Hide('wait_navigation'), Show('menu_userinfo')] at small_menu
+        imagebutton idle 'interface menu inventory' focus_mask True action [Hide('wait_navigation'), Show('menu_inventory')] at small_menu
         imagebutton idle 'interface menu opportunity' focus_mask True:
             if kol > 0:
                 action [Hide('wait_navigation'), Show('menu_opportunity')]
-                if renpy.variant('small'):
-                    at small_menu_mobile
-                else:
-                    at small_menu
+                at small_menu
             else:
                 action NullAction()
-                if renpy.variant('small'):
-                    at disable_menu_mobile
-                else:
-                    at disable_menu
-        imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')]:
-            if renpy.variant('small'):
-                at small_menu_mobile
-            else:
-                at small_menu
+                at disable_menu
+        imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')] at small_menu
         if renpy.loadable('extra/extra.webp'):
-            imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')]:
-                if renpy.variant('small'):
-                    at small_menu_mobile
-                else:
-                    at small_menu
-        imagebutton idle 'interface menu main' focus_mask True action ShowMenu('save'):
-            if renpy.variant('small'):
-                at small_menu_mobile
-            else:
-                at small_menu
-        imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')]:
-            if renpy.variant('small'):
-                at small_menu_mobile
-            else:
-                at small_menu
-
+            imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')] at small_menu
+        imagebutton idle 'interface menu main' focus_mask True action ShowMenu('save') at small_menu
+        imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')] at small_menu
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
     frame align(.99, .99) xysize(123, 395) background None:
@@ -1156,9 +1126,7 @@ screen menu_my_help():
     imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
-            at close_zoom
-        else:
-            at close_zoom_var_small
+        at close_zoom
 
     default CurHP = 0
 
@@ -1199,7 +1167,6 @@ style my_help_button_text is default:
 style hp_vscroll is vscrollbar:
     unscrollable 'hide'
 
-
 ################################################################################
 screen menu_opportunity():
 
@@ -1210,10 +1177,37 @@ screen menu_opportunity():
     $ all = len(poss_dict) # Общее количество введенных в игру 'возможностей'
     $ lst_stage = []
 
-    if not CurPoss:
-        for ps in poss_dict:
-            if sum(poss[ps].stages) and not CurPoss:
-                default CurPoss = ps
+    $ lst_poss      = []
+    $ InProgress    = []
+    $ tmpComplete   = []
+    $ Complete      = []
+    $ NotStarted    = []
+
+    for ps in poss_dict:
+        if sum(poss[ps].stages) and not CurPoss:
+            default CurPoss = ps
+        $ last_st = max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1
+        if last_st == -1:                   # неоткрыта
+            $ NotStarted.append(ps)
+        elif last_st in poss_dict[ps][2]:   # временная концовка
+            $ tmpComplete.append(ps)
+        elif last_st in poss_dict[ps][3]:   # хорошая концовка
+            $ Complete.append(ps)
+        elif last_st in poss_dict[ps][4]:   # плохая концовка
+            $ Complete.append(ps)
+        else:                               # в процессе
+            $ InProgress.append(ps)
+
+    $ lst_poss.extend(InProgress)
+    $ lst_poss.extend(Complete)
+    $ lst_poss.extend(tmpComplete)
+    $ lst_poss.extend(NotStarted)
+    # if InProgress:
+    # if Complete:
+    # if tmpComplete:
+    # if NotStarted:
+    $ t_ps = 0
+
     if not CurPoss:
         default CurPoss = ''
     default ShowHint = False
@@ -1228,32 +1222,50 @@ screen menu_opportunity():
     imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
-            at close_zoom
-        else:
-            at close_zoom_var_small
+        at close_zoom
 
-
-    hbox pos (150, 150) spacing 30:
-        frame  ypos 25 xsize 400 ysize 850 background None:
+    hbox pos (120, 150) spacing 30:
+        frame  ypos 25 xsize 430 ysize 850 background None:
             hbox:
                 viewport mousewheel 'change' draggable True id 'vp1':
                     vbox spacing 5:
-                        for ps in poss_dict:
+                        for ps in lst_poss:
+                            if t_ps == 0 and InProgress:
+                                text _("В ПРОЦЕССЕ...") size 22 color gui.interface_text_color
+                            elif t_ps == len(InProgress) and (tmpComplete or Complete):
+                                text _("ЗАВЕРШЕНЫ...") size 22 color lime
+                            elif (t_ps == len(InProgress)+len(tmpComplete)+len(Complete) and
+                                                persistent.all_opportunities and NotStarted):
+                                text _("НЕ ОТКРЫТЫ...") size 22 color red
+
+                            $ t_ps += 1
                             if sum(poss[ps].stages) or persistent.all_opportunities:
                                 if CurPoss == '':
                                     $ CurPoss = ps
                                     $ view_stage = max([i for i, st in enumerate(poss[CurPoss].stages) if st]) if sum(poss[ps].stages) else -1
-                                button background None xsize 390 xpadding 0 ypadding 0 xmargin 0 ymargin 0:
+                                button background None xpos 30 xsize 390 xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                                     selected CurPoss == ps
                                     action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False),
                                         SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
                                     textbutton poss_dict[ps][0] selected CurPoss == ps:
-                                        if not sum(poss[ps].stages):
+                                        if ps in NotStarted:
                                             text_idle_color gray
                                             text_selected_color '#fafafa'
                                         action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False),
                                             SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
-                                    foreground 'interface marker'
+                                    if CurPoss == ps:
+                                        foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(1, 0.74, 0))
+                                    elif ps in Complete:
+                                        if max([i for i, st in enumerate(poss[ps].stages) if st]) in poss_dict[ps][4]:  # плохая концовка
+                                            foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(1, 0, 0))
+                                        else:
+                                            foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(0, 1, 0))
+                                    elif ps in tmpComplete:
+                                        foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(0.07, 0.3, 0.2))
+                                    elif ps in NotStarted:
+                                        foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(0.5, 0.5, 0.5))
+                                    else:
+                                        foreground 'interface marker'
                 vbar value YScrollValue('vp1') style 'poss_vscroll'
         if CurPoss != '':
             frame area (0, 30, 1190, 850) background None:
@@ -1337,9 +1349,7 @@ screen menu_inventory():
     imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
-            at close_zoom
-        else:
-            at close_zoom_var_small
+        at close_zoom
 
     $ cells = 0
     $ items_list = {
@@ -1450,9 +1460,7 @@ screen menu_userinfo():
     imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
-            at close_zoom
-        else:
-            at close_zoom_var_small
+        at close_zoom
 
     hbox pos (150, 150) spacing 30:
         hbox ypos 25 xsize 190 spacing 5:
@@ -1715,9 +1723,7 @@ screen ClothesSelect():
     imagebutton pos (1740, 100) auto 'interface close %s' action [Hide('ClothesSelect'), Show('menu_userinfo')]:
         if not renpy.variant('small'):
             focus_mask True
-            at close_zoom
-        else:
-            at close_zoom_var_small
+        at close_zoom
 
     $ lst1 = cloth.GetList()
     $ list = []

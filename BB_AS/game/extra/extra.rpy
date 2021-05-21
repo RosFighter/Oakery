@@ -90,7 +90,7 @@ define mems = [
             Memories('kira_night_swim', 'kira-night-pool-01', 'set_night_swim', _("Небольшое приключение перед сном"), "'hj_in_pool' in persistent.mems_var"),
             Memories('kira_about_photo1', 'kira-max-shower-bj-01', '', _("Не зря купил сорочку")),
             Memories('kira_shower.promise_cuni', 'kira-max-shower-cuni-01', '', _("С меня приятный должок")),
-            Memories('return_from_club', 'kira-strip-01', 'set_kira_strip_01', _("Стриптиз после клуба"), var="persistent.memories['kira_tv_bj']>0"),
+            Memories('return_from_club', 'kira-strip-01', 'set_kira_strip_01', _("Стриптиз после клуба"), var="'kira_tv_bj' in persistent.memories and persistent.memories['kira_tv_bj']>0"),
             Memories('kira_talk6', 'kira-photoset-01', 'set_kira_photoset_01', _("Порно-портфолио для Киры"), var="'kira_photoset1' in persistent.mems_var"),
             Memories('kira_about_photo2', 'kira-photoset-02', '', _("Немного БДСМ от Киры")),
         ],
@@ -186,10 +186,16 @@ screen menu_gallery():
                                                         text mems[i][j].capt align(0.5, 0.9) color gui.accent_color size 20
                                                     else:
                                                         if mems[i][j].open()=='block':
-                                                            add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate  #im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate())
+                                                            if config.gl2:
+                                                                add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate
+                                                            else:
+                                                                add im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate())
                                                             text _("Воспоминание недоступно") align(0.5, 0.9) color gui.accent_color size 20
                                                         else:
-                                                            add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate, blurred  #im.Scale(im.Scale(im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate()), 50, 28), 450, 254)
+                                                            if config.gl2:
+                                                                add 'extra/mems/'+mems[i][j].pict+'.webp' at desaturate, blurred
+                                                            else:
+                                                                add im.Scale(im.Scale(im.MatrixColor('extra/mems/'+mems[i][j].pict+'.webp', im.matrix.desaturate()), 50, 28), 450, 254)
                                                             text _("Воспоминание ещё не открыто") align(0.5, 0.9) color gui.accent_color size 20
 
                 vbar value YScrollValue('vp') style 'extra_vscroll'
@@ -220,9 +226,9 @@ screen menu_gallery():
                             for photo in persistent.photos[cur_album]:
                                 frame xysize(450, 254) background None:
                                     if photo:
-                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'extra photoshot '+cur_album+' '+photo action Show('photo_art', cur_alb=cur_album, photo=photo) #at zoom_out(450, 254)
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'extra photoshot '+cur_album+' '+photo action Show('photo_art', cur_alb=cur_album, photo=photo)
                                     else:
-                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'extra photoshot closed' action NullAction() #at zoom_out(450, 254)
+                                        imagebutton pos(0.5, 0.5) anchor (0.5, 0.5) idle 'extra photoshot closed' action NullAction()
 
                         vbar value YScrollValue('vp') style 'extra_vscroll'
 

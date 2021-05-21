@@ -9,7 +9,7 @@ init python:
 
 define lime   = "#00FF00"
 define red    = "#FF0000"
-define orange = "#E59400"
+define orange = "#FFBE00"
 define gray   = "#808080"
 
 define config.gl2 = True
@@ -52,7 +52,7 @@ default persistent.grid_vbox = 'grid'
 default persistent.orint = False
 default persistent.request_savename = True
 default persistent.transparent_textbox = False
-# default persistent.all_opportunities = False
+default persistent.all_opportunities = False
 default number_autosave = 0
 default number_quicksave = 0
 default number_save = 0

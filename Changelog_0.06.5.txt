@@ -1,9 +1,10 @@
 Fix 0.06.5.01 - 0.06.5.03
 
 0.06.5.03
-    - устранена ошибка, мешавшая переодеванию Алису в джинсы
-    - устранена ошибка не позволявшая переодеть Макса в шорты
-    - устранена ошибка при подсматривании за йогой Анны через скрытую камеру
+    - fixed a bug that prevented Alice from dressing up in jeans (устранена ошибка, мешавшая переодеванию Алису в джинсы)
+    - fixed a bug that prevented Max from changing into shorts (устранена ошибка не позволявшая переодеть Макса в шорты)
+    - fixed a bug when spying on Anna's yoga through a hidden camera (устранена ошибка при подсматривании за йогой Анны через скрытую камеру)
+    - fixed variable name error in conversations with Eric (устранена ошибка имени переменной в разговорах с Эриком)
 
 0.06.5.02
     - Fixed a moment where Alice wore the top of a swimsuit when giving sweets in the yard (Исправлен момент, где Алиса одевала верх купальника при дарении сладостей во дворе)

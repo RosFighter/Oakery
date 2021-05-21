@@ -580,8 +580,9 @@ label delivery2:
         $ kol_cream += 30
         $ items['solar'].block()
     if 'max-a' in delivery_list[1]:
-        $ mgg.clothes.casual.sel.insert(1, Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
-        $ mgg.clothes.casual.cur = 1
+        # $ mgg.clothes.casual.sel.insert(1, Garb('b', '01b', 'МУЖСКИЕ МАЙКА И ШОРТЫ', True))
+        # $ mgg.clothes.casual.cur = 1
+        $ mgg.clothes.casual.enable(1, 1)
         $ items['max-a'].block()
         $ added_mem_var('max-a')
     if 'dress' in delivery_list[1] and not poss['nightclub'].used(3):
@@ -799,7 +800,11 @@ label InstallCam:
     $ items['hide_cam'].use()
     $ cur_ratio = 1.5
     $ spent_time = 30
+    if GetKolCams(house)>7:
+        $ poss['cams'].open(5)
+
     if GetKolCams(house)==9:
+        $ poss['cams'].open(6)
         $ items['hide_cam'].block()
     jump Waiting
 

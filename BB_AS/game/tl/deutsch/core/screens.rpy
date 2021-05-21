@@ -386,3 +386,23 @@ translate deutsch strings:
     old "- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном"
     new "- gibt Alice bei einer Massage vor dem Fernseher einen Footjob, kann später durch die Kamera beobachtet werden, wie sie masturbiert, bevor sie schalfen geht"
 
+# TODO: Translation updated at 2021-05-21 12:33
+
+translate deutsch strings:
+
+    # game/core/screens.rpy:1234
+    old "В ПРОЦЕССЕ..."
+    new "AKTIV..."
+
+    # game/core/screens.rpy:1236
+    old "ЗАВЕРШЕНЫ..."
+    new "FERTIG..."
+
+    # game/core/screens.rpy:1239
+    old "НЕ ОТКРЫТЫ..."
+    new "GESCHLOOSSEN..."
+
+    # game/core/screens.rpy:1293
+    old "Подсказка:"
+    new "Tipp:"
+
