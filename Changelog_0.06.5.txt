@@ -1,6 +1,11 @@
-Fix 0.06.5.01 - 0.06.5.03
+Fix 0.06.5.01 - 0.06.5.04
 
+0.06.5.04
+
+    - исправлено несколько ошибок возникающих при загрузке сохранений
+    
 0.06.5.03
+    - added the "Opportunities" status (добавлен статус "Возможностей")
     - fixed a bug that prevented Alice from dressing up in jeans (устранена ошибка, мешавшая переодеванию Алису в джинсы)
     - fixed a bug that prevented Max from changing into shorts (устранена ошибка не позволявшая переодеть Макса в шорты)
     - fixed a bug when spying on Anna's yoga through a hidden camera (устранена ошибка при подсматривании за йогой Анны через скрытую камеру)

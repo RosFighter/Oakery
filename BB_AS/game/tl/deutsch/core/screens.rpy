@@ -396,11 +396,11 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1236
     old "ЗАВЕРШЕНЫ..."
-    new "FERTIG..."
+    new "ABGESCHLOSSEN..."
 
     # game/core/screens.rpy:1239
     old "НЕ ОТКРЫТЫ..."
-    new "GESCHLOOSSEN..."
+    new "NICHT GESTARTET..."
 
     # game/core/screens.rpy:1293
     old "Подсказка:"

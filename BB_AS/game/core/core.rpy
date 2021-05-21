@@ -704,7 +704,6 @@ label after_load:
     if _version < config.version:
 
         call update_06_5 from _call_update_06_5         # фиксы до релиза
-        call update_06_5_99 from _call_update_06_5_99   # фиксы после релиза
 
         # обновление расписаний
         call set_alice_schedule from _call_set_alice_schedule
@@ -718,6 +717,8 @@ label after_load:
         $ checking_items()
         $ checking_clothes()
         $ poss_update()
+
+        call update_06_5_99 from _call_update_06_5_99   # фиксы после релиза
 
         $ _version = config.version
 
@@ -736,6 +737,8 @@ label update_06_5:
     if _version < "0.06.4.02":
 
         python:
+            global flags, dcv, wcv
+
             renpy.dynamic('flag', 'dcv_tmp', 'wcv_tmp')
             flag = Other_Flags_and_counters()
 
@@ -885,7 +888,8 @@ label update_06_5:
             dcv_tmp.new_pun         = dcv.pop('new_pun', Daily())
 
             wcv_tmp = Weekly_list()
-            wcv_tmp.catch_Kira      = wcv.pop('catch.Kira', Weekly(4))
+            if 'wcv' in globals():
+                wcv_tmp.catch_Kira      = wcv.pop('catch.Kira', Weekly(4))
 
             flag.lisa_fd            = talk_var.pop('lisa_fd', 0)
             flag.back_shop          = EventsByTime['back_shoping'].stage
@@ -1100,10 +1104,11 @@ label update_06_5_99:
                 $ infl[ann].add_m(30, True)
 
     if _version < "0.06.5.03":
-        if GetKolCams(house)>7:
-            $ poss['cams'].open(5)
-        if GetKolCams(house)>8:
-            $ poss['cams'].open(6)
+        # перенести в более поздний фикс
+        # if GetKolCams(house)>7:
+        #     $ poss['cams'].open(5)
+        # if GetKolCams(house)>8:
+        #     $ poss['cams'].open(6)
 
         if mgg.clothes.casual.sel[1].name == 'МУЖСКИЕ МАЙКА И ШОРТЫ':
             $ mgg.clothes.casual.sel.pop(1)
