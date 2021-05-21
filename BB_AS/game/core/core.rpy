@@ -722,6 +722,11 @@ label after_load:
 
         $ _version = config.version
 
+    # # обновление списка предметов, одежды, возможностей независимо от версии
+    # $ checking_items()
+    # $ checking_clothes()
+    # $ poss_update()
+
     return
 
 label update_06_5:
@@ -1104,13 +1109,15 @@ label update_06_5_99:
                 $ infl[ann].add_m(30, True)
 
     if _version < "0.06.5.03":
+        if mgg.clothes.casual.sel[1].suf == mgg.clothes.casual.sel[2].suf:
+            $ mgg.clothes.casual.sel.pop(1)
+            $ checking_clothes()
+
+    if _version < "0.06.5.05":
+        $ renamed_clothes()
         # перенести в более поздний фикс
         # if GetKolCams(house)>7:
         #     $ poss['cams'].open(5)
         # if GetKolCams(house)>8:
         #     $ poss['cams'].open(6)
-
-        if mgg.clothes.casual.sel[1].name == 'МУЖСКИЕ МАЙКА И ШОРТЫ':
-            $ mgg.clothes.casual.sel.pop(1)
-
     return

@@ -64,6 +64,23 @@ init python:
                     plan = chars[char_id].get_plan()
                     ClothingNps(char_id, plan.name) # установка текущей одежды
 
+    def renamed_clothes():
+        for char_id in clothes_dict:
+            if char_id == 'mgg':
+                char = mgg
+            elif char_id in chars:
+                char = chars[char_id]
+            else:
+                continue
+
+            for clot_type in clothes_dict[char_id]:
+                clots = getattr(char.clothes, clot_type)
+                for k in range(len(clothes_dict[char_id][clot_type])):
+                    clot = clothes_dict[char_id][clot_type][k]
+                    if clots.sel[k].name != clot[2]:
+                        # print 'меняем имя одежды', '('+char_id+'-'+clot_type+')', clots.sel[k].name,'|', clot[2]
+                        clots.sel[k].name = clot[2]
+
     def add_new_clot_type(clots, clot_type, char_id):
         # такой одежды у персонажа ещё не было, нужно добавить
         clot_name = {

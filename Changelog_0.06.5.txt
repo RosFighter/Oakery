@@ -1,8 +1,12 @@
-Fix 0.06.5.01 - 0.06.5.04
+Fix 0.06.5.01 - 0.06.5.05
+
+0.06.5.05
+
+    - fixing some bugs that prevented the characters from dressing up properly (исправление некоторых ошибок, препятствовавших нормальному переодеванию персонажей)
 
 0.06.5.04
 
-    - исправлено несколько ошибок возникающих при загрузке сохранений
+    - fixed several bugs that sometimes occur when loading saves (исправлено несколько ошибок, иногда возникающих при загрузке сохранений)
     
 0.06.5.03
     - added the "Opportunities" status (добавлен статус "Возможностей")
