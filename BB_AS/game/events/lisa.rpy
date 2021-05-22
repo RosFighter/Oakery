@@ -1330,4 +1330,6 @@ label lisa_horor_movie_r:
         $ spent_time += 60
         $ infl[lisa].add_m(12)
         $ lisa.dcv.special.disable()
+        if lisa.dress>'b':
+            $ lisa.dress = 'b'
         jump Waiting
