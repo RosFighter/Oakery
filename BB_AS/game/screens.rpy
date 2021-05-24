@@ -716,8 +716,7 @@ screen file_slots(title):
                                     text FileTime(slot, format=_("{#file_time}%a, %d %b %Y, %H:%M"), empty=_("Пустой слот")):
                                         style "slot_time_text"
 
-                                    text s_description:
-                                        style "slot_name_text"
+                                    text "[s_description]" style "slot_name_text"
 
                                 if load_day != "":
                                     vbox xalign 0.95:
@@ -767,7 +766,7 @@ screen file_slots(title):
                                 hover_background "gui/button/hover_save_button.webp"
 
                                 fixed:
-                                    text s_description:
+                                    text "[s_description]":
                                         color gui.hover_color
                                         size 36
                                         xalign .05

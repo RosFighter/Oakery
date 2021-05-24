@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.5.05"
+define config.version = "0.06.5.06"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -177,8 +177,8 @@ init python:
         d["tm"]     = tm
         d["wd"]     = weekdays[GetWeekday(day)][0]
         d["desc"]   = save_name
-        d["auto"]   = number_autosave
-        d["quick"]  = number_quicksave
+        d["auto"]   = str(number_autosave)
+        d["quick"]  = str(number_quicksave)
 
     config.default_fullscreen = False
     config.save_json_callbacks.append(json_callback)

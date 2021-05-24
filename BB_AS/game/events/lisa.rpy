@@ -69,6 +69,7 @@ label lisa_shower:
             jump .end_peeping
 
     label .ladder:
+        $ renpy.dynamic('lst')
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
@@ -77,8 +78,8 @@ label lisa_shower:
         if lisa.dress_inf != '04a':
             $ r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
         else:
-            $ __list = ['a', 'b', 'c', 'd'] if 'bathrobe' in lisa.gifts else ['c', 'd']
-            $ r1 = renpy.random.choice(__list)
+            $ lst = ['a', 'b', 'c', 'd'] if 'bathrobe' in lisa.gifts else ['c', 'd']
+            $ r1 = renpy.random.choice(lst)
             $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[r1]
 
         scene BG bathroom-morning-00
@@ -223,12 +224,10 @@ label lisa_dressed_school:
     $ renpy.dynamic('r1', 'mood', 'rel', 'suf')
     $ mood = 0
     $ rel = 0
-    if lisa.hourly.dressed == 0:
-        $ lisa.hourly.dressed = 1
-        jump .lisa_dressed
-    else:
+    if lisa.hourly.dressed:
         return
 
+    $ lisa.hourly.dressed = 1
     menu .lisa_dressed:
         Max_09 "{i}( Похоже, Лиза собирается в школу... ){/i}"
         "{i}постучаться{/i}":
@@ -497,10 +496,10 @@ label lisa_dressed_school:
         elif r1 < 5: # Лиза частично одета
             menu:
                 Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
-                "Извини... Кстати, отличный зад!" if __ran1 < 3:
+                "Извини... Кстати, отличный зад!" if r1 < 3:
                     if GetRelMax('lisa')[0] < 2:
                         $ rel -= 5
-                "Извини..." if __ran1 > 2:
+                "Извини..." if r1 > 2:
                     $ mood += 50
         else: # Лиза полностью голая
             menu:
@@ -538,9 +537,11 @@ label lisa_dressed_shop:
     if lisa.hourly.dressed != 0:
         return
 
-    $ __mood = 0
-    $ __rel = 0
-    $ __warned = False
+    $ renpy.dynamic('mood', 'rel', 'warned', 'r1')
+
+    $ mood = 0
+    $ rel = 0
+    $ warned = False
     $ lisa.hourly.dressed = 1
     $ spent_time = 10 #60 - int(tm[-2:])
     menu .lisa_dressed:
@@ -561,7 +562,7 @@ label lisa_dressed_shop:
             menu:
                 Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там."
                 "{i}открыть дверь{/i}":
-                    $ __warned = True
+                    $ warned = True
                     jump .open_door
                 "Хорошо...":
                     jump .rel_mood
@@ -572,54 +573,52 @@ label lisa_dressed_shop:
 
     label .open_door:
         $ spent_time = 20
-        $ __ran1 = renpy.random.randint(3, 5)
-        $ lisa.dress_inf = {3:'02c',4:'02b',5:'00'}[__ran1]
+        $ r1 = renpy.random.randint(3, 5)
+        $ lisa.dress_inf = {3:'02c',4:'02b',5:'00'}[r1]
         scene BG char Lisa morning
         if GetRelMax('lisa')[0] < 0:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1))
+            $ renpy.show('Lisa school-dressed 0'+str(r1))
         elif GetRelMax('lisa')[0] < 2:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'a')
-        elif lisa.free < 200:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'b')
+            $ renpy.show('Lisa school-dressed 0'+str(r1)+'a')
         else:
-            $ renpy.show('Lisa school-dressed 0'+str(__ran1)+'c') # пока отсутствует
+            $ renpy.show('Lisa school-dressed 0'+str(r1)+'b')
 
-        if __warned:
-            $ __mood -= 150
-            $ __rel -= 15
+        if warned:
+            $ mood -= 150
+            $ rel -= 15
             $ phrase = _("Я же сказала, что я не одета! ")
         else:
-            $ __mood -= 50 # настроение портится в любом случае
+            $ mood -= 50 # настроение портится в любом случае
             $ phrase = _("Я не одета! ")
 
         menu:
             Lisa_12 "Макс! [phrase!t]Быстрой закрой дверь с той стороны!"
-            "Извини... Кстати, отличный зад!" if __ran1 == 2:
+            "Извини... Кстати, отличный зад!" if r1 == 2:
                 if GetRelMax('lisa')[0] < 2:
-                    $ __rel -= 5
+                    $ rel -= 5
             "А у тебя сиськи подросли!":
                 menu:
                     Lisa_11 "Что?! Я всё маме расскажу!"
                     "Всё, всё, ухожу!":
                         jump .rel_mood
                     "Уже ухожу, но сиськи - супер!":
-                        $ __mood -= 50
-                        $ __rel -= 5
+                        $ mood -= 50
+                        $ rel -= 5
                         menu:
                             Lisa_12 "..."
                             "{i}Бежать{/i}":
                                 jump .rel_mood
             "Извини, я не хотел...":
-                $ __mood += 50
-                $ __rel += 5
+                $ mood += 50
+                $ rel += 5
                 jump .rel_mood
 
     label .look_window:
         $ spent_time = 10
-        $ __ran1 = renpy.random.choice(['03', '04', '05', '06'])
-        $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[__ran1]
+        $ r1 = renpy.random.choice(['03', '04', '05', '06'])
+        $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[r1]
         scene BG char Lisa voyeur-00
-        $ renpy.show('Lisa voyeur '+__ran1)
+        $ renpy.show('Lisa voyeur '+r1)
         $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
         $ Skill('hide', 0.03)
         menu:
@@ -630,7 +629,7 @@ label lisa_dressed_shop:
     scene location house myroom door-morning
 
     label .rel_mood:
-        $ AddRelMood('lisa', __rel, __mood)
+        $ AddRelMood('lisa', rel, mood)
 
     jump Waiting
 
@@ -652,7 +651,7 @@ label get_laptop:
 label lisa_dressed_repetitor:
     scene location house myroom door-morning
 
-    if lisa.hourly.dressed != 0:
+    if lisa.hourly.dressed:
         return
 
     # добавить возможность подглядываать после начала секс.обучения Лизы у АиЭ
@@ -706,12 +705,13 @@ label lisa_phone_closer:
 
 label lisa_bath:
     scene location house bathroom door-evening
-    if lisa.daily.bath != 0:
+    if lisa.daily.bath:
         return
 
+    $ renpy.dynamic('mood', 'rel', 'r1')
     $ lisa.daily.bath = 1
-    $ __mood = 0
-    $ __rel = 0
+    $ mood = 0
+    $ rel = 0
     menu:
         Max_00 "В это время Лиза обычно плескается в ванне..."
         "{i}постучаться{/i}":
@@ -731,8 +731,6 @@ label lisa_bath:
             Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
             $ flags.ladder = 3
             $ items['ladder'].give()
-            # $ items['ladder'].have = False
-            # $ items['ladder'].InShop = False
             jump .ladder
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
@@ -745,13 +743,13 @@ label lisa_bath:
         Max_04 "Посмотрим, что у нас тут..."
         $ spent_time += 10
 
-        $ __r1 = renpy.random.randint(1, 4)
+        $ r1 = renpy.random.randint(1, 4)
 
         scene BG bath-00
-        $ renpy.show('Lisa bath-window 0'+str(__r1))
+        $ renpy.show('Lisa bath-window 0'+str(r1))
         show FG bath-00
         $ Skill('hide', 0.03)
-        if __r1 == 1:
+        if r1 == 1:
             menu:
                 Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
                 "{i}смотреть ещё{/i}":
@@ -800,7 +798,7 @@ label lisa_bath:
 
     label .open_knock:
         if poss['seduction'].st() < 31:
-            $ __mood -= 50
+            $ mood -= 50
             scene BG bath-open-00
             if GetRelMax('lisa')[0] < 0:
                 show Lisa bath-open 01
@@ -845,7 +843,7 @@ label lisa_bath:
             Max_00 "В следующих версиях..."
 
     label .end:
-        $ AddRelMood('lisa', __rel, __mood)
+        $ AddRelMood('lisa', rel, mood)
         $ spent_time = 10
         jump Waiting
 

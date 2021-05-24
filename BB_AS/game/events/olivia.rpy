@@ -287,6 +287,7 @@ label olivia_night_visit_r:
     if lisa_will_be_topless()>0:
         #Лиза без майки
         $ lisa.flags.topless += 1
+        $ lisa.dress = 'c'
         #after-club-alice&kira-00-f + villa-lisa-03a + villa-olivia-(03/03a)
         show Lisa night-visit 03c
         $ renpy.show('Olivia night-visit 03'+olivia.dress)
@@ -623,6 +624,9 @@ label olivia_repeatable_night_out_with:
     Max_02 "Ну мало ли."
     Olivia_01 "Всем спокойной ночи..."
     Max_01 "Приятных снов."
+
+    if lisa.dress > 'b':    # возвращаем маечку
+        $ lisa.dress = 'b'
 
     $ poss['Schoolmate'].open(13)
     $ spent_time = TimeDifference(tm, '02:00')

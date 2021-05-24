@@ -1007,4 +1007,5 @@ label erofilm2_2:
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ AddRelMood('ann', 10, 100)
     $ SetCamsGrow(house[4], 180)
+    $ items['erofilm2'].block()
     jump Waiting

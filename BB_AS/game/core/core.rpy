@@ -1115,6 +1115,10 @@ label update_06_5_99:
 
     if _version < "0.06.5.05":
         $ renamed_clothes()
+
+    if _version < "0.06.5.06":
+        if ann.dcv.feature.stage>6:
+            $ items['erofilm2'].block()
         # перенести в более поздний фикс
         # if GetKolCams(house)>7:
         #     $ poss['cams'].open(5)
