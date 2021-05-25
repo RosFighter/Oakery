@@ -874,3 +874,11 @@ translate english strings:
     old "Ой, нет, я передумал"
     new "Oh, sorry, I changed my mind"
 
+# TODO: Translation updated at 2021-05-25 22:06
+
+# game/events/ann.rpy:110
+translate english ann_shower_ladder_f790b709:
+
+    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 ""
+

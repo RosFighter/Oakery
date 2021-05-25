@@ -4359,3 +4359,29 @@ translate english strings:
     # game/events/kira.rpy:832
     old "{i}получать удовольствие{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"
     new "{i}Have fun{/i} {color=[sex2.col]}(Sexual experience. Chance: [sex2.vis]){/color}"
+# TODO: Translation updated at 2021-05-25 22:06
+
+# game/events/kira.rpy:2219
+translate english kira_shower_ladder_f790b709:
+
+    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 ""
+
+# game/events/kira.rpy:2220
+translate english kira_shower_ladder_90ff417e:
+
+    # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
+    Max_00 ""
+
+# game/events/kira.rpy:2457
+translate english kira_lisa_shower_ladder_f790b709:
+
+    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 ""
+
+# game/events/kira.rpy:2603
+translate english kira_alice_shower_ladder_f790b709:
+
+    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 ""
+
