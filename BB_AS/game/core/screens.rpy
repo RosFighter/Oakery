@@ -4,11 +4,11 @@
 
 init: # трансформации gl2
 
-    # transform desaturate2:
-    #     on hover:
-    #         matrixcolor SaturationMatrix(0.0)
-    #     on idle:
-    #         matrixcolor SaturationMatrix(1.0)
+    transform saturate:
+        on idle:
+            matrixcolor TintMatrix('#FFBE00')
+        on hover:
+            matrixcolor SaturationMatrix(1.0)
 
     transform my_color(n_color):
         matrixcolor TintMatrix(n_color)
@@ -52,8 +52,8 @@ init: # трансформации
             zoom 1.02
 
     transform close_zoom:
-        xanchor (35 if renpy.variant("small") else 25)
         size ((105, 35) if renpy.variant("small") else (75, 25))
+        xanchor (35 if renpy.variant("small") else 25)
 
     transform middle_zoom:
         size (136, 136)
@@ -1202,15 +1202,12 @@ screen menu_opportunity():
     $ lst_poss.extend(Complete)
     $ lst_poss.extend(tmpComplete)
     $ lst_poss.extend(NotStarted)
-    # if InProgress:
-    # if Complete:
-    # if tmpComplete:
-    # if NotStarted:
     $ t_ps = 0
 
     if not CurPoss:
         default CurPoss = ''
     default ShowHint = False
+    default ShowBtnHint = False
 
     if CurPoss != '':
         $ lst_stage = [i for i, st in enumerate(poss[CurPoss].stages) if st]
@@ -1245,13 +1242,13 @@ screen menu_opportunity():
                                     $ view_stage = max([i for i, st in enumerate(poss[CurPoss].stages) if st]) if sum(poss[ps].stages) else -1
                                 button background None xpos 30 xsize 390 xpadding 0 ypadding 0 xmargin 0 ymargin 0:
                                     selected CurPoss == ps
-                                    action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False),
+                                    action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False), SetScreenVariable('ShowBtnHint', False),
                                         SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
                                     textbutton poss_dict[ps][0] selected CurPoss == ps:
                                         if ps in NotStarted:
                                             text_idle_color gray
                                             text_selected_color '#fafafa'
-                                        action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False),
+                                        action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False), SetScreenVariable('ShowBtnHint', False),
                                             SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
                                     if CurPoss == ps:
                                         foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(1, 0.74, 0))
@@ -1289,26 +1286,31 @@ screen menu_opportunity():
                                             text _("{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}") size 24 color lime
                                         elif view_stage in poss_dict[CurPoss][4]:   # плохая концовка
                                             text _("{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}") size 24 color red
-                                        elif ShowHint and view_stage==max([i for i, st in enumerate(poss[CurPoss].stages) if st]):
-                                            text _("Подсказка:") size 24 color gui.accent_color
-                                            for ht in poss_dict[CurPoss][1][view_stage].hints:
-                                                if ht.met():
-                                                    text ht.hint size 20
+                                        elif view_stage==max([i for i, st in enumerate(poss[CurPoss].stages) if st]):
+                                            if ShowHint:
+                                                text _("Подсказка:") size 24 color gui.accent_color
+                                                for ht in poss_dict[CurPoss][1][view_stage].hints:
+                                                    if ht.met():
+                                                        text ht.hint size 20
+                                            else:
+                                                $ ShowBtnHint = True
 
                             vbar value YScrollValue('vp2') style 'poss_vscroll'
-                    # else:
-                    #     if ShowHint:
-                    #         frame area (0, 0, 1190, 400) background None:
-                    #             hbox:
-                    #                 viewport mousewheel 'change' draggable True id 'vp2':
-                    #                     vbox spacing 20:
-                    #                         text zero_hints[CurPoss] size 24 color orange
-                    #
-                    #             vbar value YScrollValue('vp2') style 'poss_vscroll'
-    # if not ShowHint:
-    #     imagebutton idle 'interface tip idle' at desaturate2:
-    #         pos (1720, 180)
-    #         action SetScreenVariable('ShowHint', True)
+                    else:
+                        if ShowHint:
+                            frame area (0, 0, 1190, 400) background None:
+                                hbox:
+                                    viewport mousewheel 'change' draggable True id 'vp2':
+                                        vbox spacing 20:
+                                            text zero_hints[CurPoss] size 24 color orange
+
+                                vbar value YScrollValue('vp2') style 'poss_vscroll'
+
+    if not ShowHint and (view_stage<0 or ShowBtnHint):
+        imagebutton idle 'interface tip' at saturate:
+            pos (1753, 180)
+            xanchor 0.5
+            action SetScreenVariable('ShowHint', True)
 
     if len(lst_stage) > 1:
         imagebutton pos (690, 360) auto 'interface prev %s':

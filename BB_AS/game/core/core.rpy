@@ -722,11 +722,6 @@ label after_load:
 
         $ _version = config.version
 
-    # # обновление списка предметов, одежды, возможностей независимо от версии
-    # $ checking_items()
-    # $ checking_clothes()
-    # $ poss_update()
-
     return
 
 label update_06_5:
@@ -1119,9 +1114,11 @@ label update_06_5_99:
     if _version < "0.06.5.06":
         if ann.dcv.feature.stage>6:
             $ items['erofilm2'].block()
-        # перенести в более поздний фикс
-        # if GetKolCams(house)>7:
-        #     $ poss['cams'].open(5)
-        # if GetKolCams(house)>8:
-        #     $ poss['cams'].open(6)
+
+    if _version < "0.06.5.07":
+        # новые этапы возможностей
+        if GetKolCams(house)>7:
+            $ poss['cams'].open(5)
+        if GetKolCams(house)>8:
+            $ poss['cams'].open(6)
     return

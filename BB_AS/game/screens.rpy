@@ -912,7 +912,7 @@ screen preferences():
                         # label _("")
                         textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
                         textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
-                        # textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")
+                        textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.

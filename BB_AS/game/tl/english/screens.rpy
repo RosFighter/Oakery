@@ -414,3 +414,11 @@ translate english strings:
     old "Deutsch"
     new "Deutsch"
 
+# TODO: Translation updated at 2021-05-25 22:06
+
+translate english strings:
+
+    # game/screens.rpy:915
+    old "Отображать все \"Возможности\""
+    new ""
+

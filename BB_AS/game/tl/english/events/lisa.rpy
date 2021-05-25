@@ -1820,3 +1820,11 @@ translate english strings:
     # game/events/lisa.rpy:1164
     old "Тогда смотрим дальше... (продолжаем смотреть серию фильмов \"Крик\")"
     new "Then let's keep watching... (Continue watching the \"Scream\" series)"
+# TODO: Translation updated at 2021-05-25 22:06
+
+# game/events/lisa.rpy:98
+translate english lisa_shower_ladder_f790b709:
+
+    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 ""
+

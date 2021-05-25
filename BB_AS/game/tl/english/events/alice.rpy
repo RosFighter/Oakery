@@ -4001,3 +4001,11 @@ translate english alice_shower_dangerous_hugs_11fdb519:
     # extend "" nointeract
     extend "" nointeract
 
+# TODO: Translation updated at 2021-05-25 22:06
+
+# game/events/alice.rpy:639
+translate english alice_shower_ladder_f790b709:
+
+    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 ""
+

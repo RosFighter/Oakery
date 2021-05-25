@@ -146,3 +146,15 @@ init python:
             else:
                 # не было наказаний
                     return 2 if all([lw.help>1, lw.mass1, lw.dishes>1]) else -2
+
+
+    # соблюдены условия для открытия второй камеры ванной
+    def looked_ladder():
+        if all([flags.ladder>2, house[3].cams, house[3].max_cam<2]):
+            # стремянка установлена, есть камера в ванной, вторая камера не активирована
+            rez = all([alice.flags.ladder, ann.flags.ladder, lisa.flags.ladder])
+            if 'kira' in chars:
+                rez = all([rez, kira.flags.ladder])
+            return rez
+        else:
+            return False

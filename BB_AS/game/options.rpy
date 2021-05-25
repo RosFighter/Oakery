@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.5.06"
+define config.version = "0.06.5.07"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -229,10 +229,10 @@ init python:
     build.classify('game/extra/**.rpyc', 'extra')
     # build.classify('game/tl/**/extra/**.rpyc', 'extra')
 
-    # build.archive("img_fix", "all")
-    # build.classify('game/images/interface/poss/cams/ep06.webp', 'img_fix')
-    # build.classify('game/images/interface/poss/cams/ep07.webp', 'img_fix')
-    # build.classify('game/images/interface/poss/secretbook/ep04.webp', 'img_fix')
+    build.archive("img_fix", "all")
+    build.classify('game/images/interface/poss/cams/ep06.webp', 'img_fix')
+    build.classify('game/images/interface/poss/cams/ep07.webp', 'img_fix')
+    build.classify('game/images/interface/poss/secretbook/ep04.webp', 'img_fix')
     # build.classify('game/images/Ann/cooking*/*c.webp', 'img_fix')
     # build.classify('game/images/Olivia/info/*.webp', 'img_fix')
     # build.classify('game/images/Ann/punish-morning/*c.webp', 'img_fix')
