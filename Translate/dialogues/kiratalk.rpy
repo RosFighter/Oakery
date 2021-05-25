@@ -2354,7 +2354,7 @@ translate english story_from_childhood_ann_592f32a1:
 translate english story_from_childhood_ann_4f8c7216:
 
     # Kira_15 "Конечно, я жутко испугалась и до сих пор себя виню, что оставила Аню там одну с этим мужиком..."
-    Kira_15 "I was terrified and I still blame myself for leaving Anya there alone with that man..."
+    Kira_15 "I was terrified and I still blame myself for leaving Ann there alone with that man..."
 
 # game/dialogues/kiratalk.rpy:1057
 translate english story_from_childhood_ann_b02cea58:
