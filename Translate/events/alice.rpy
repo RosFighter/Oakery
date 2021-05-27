@@ -3836,7 +3836,7 @@ translate english strings:
     # game/events/alice.rpy:1666
     old "Извини, я не хотел. Не обижайся..."
     new "I'm sorry, I didn't mean to. No offense..."
-    
+
 # TODO: Translation updated at 2021-04-11 22:26
 
 # game/events/alice.rpy:417
@@ -4007,5 +4007,4 @@ translate english alice_shower_dangerous_hugs_11fdb519:
 translate english alice_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 ""
-
+    Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."

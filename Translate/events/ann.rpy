@@ -880,5 +880,4 @@ translate english strings:
 translate english ann_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 ""
-
+    Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."

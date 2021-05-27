@@ -33,7 +33,7 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Лиза хоть и убежала в свою постельку, но мне удалось воспользоваться моментом и поцеловать её на ночь, чтобы ей было не так страшно! Может, со временем ей не захочется уходить от меня или даже больше..."
     new "Even though Lisa ran off to her bed, I managed to take advantage of the moment and kiss her good night so she wouldn't be so scared! Maybe in time she wouldn't want to leave..."
-    
+
 # TODO: Translation updated at 2021-05-16 13:24
 
 translate english strings:
@@ -139,73 +139,72 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вероятнее всего, скрытая камера будет охватывать самую людную комнату внутри дома..."
-    new ""
+    new "Most likely, the hidden camera will cover the most crowded room inside the house..."
 
     # game/core/09_opportunities.rpy:4
     old "Информацию можно поискать с помощью ноутбука..."
-    new ""
+    new "The information can be searched with a laptop..."
 
     # game/core/09_opportunities.rpy:4
     old "Иногда, специализированные книги куда лучше, чем то, что пишут в интернете! Это как раз такой случай..."
-    new ""
+    new "Sometimes, specialized books are much better than what is written on the Internet! This is just such a case..."
 
     # game/core/09_opportunities.rpy:4
     old "Главное, собрать нужную сумму, а остальное - уже ерунда..."
-    new ""
+    new "The main thing is to raise the necessary amount, and the rest is nothing..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно периодически оплачивать рекламу для сайта, чтобы быстрее накопить денег на новые камеры и, как вариант, попробовать выпросить что-то у Алисы, мамы или Эрика..."
-    new ""
+    new "You need to pay for advertising for the site periodically to save up money for new cameras faster and, alternatively, try to extort something from Alice, Mom or Eric..."
 
     # game/core/09_opportunities.rpy:4
     old "Отлично! Теперь у меня есть камеры в каждой комнате! Затраты были высоки, но они явно окупятся, ведь в этом доме столько прекрасных девушек, которые периодически сверкают своими прелестями... Хотя, не помешало бы поставить ещё одну камеру во двор, ведь девочки не только загорают, но и плавают. Для полноты картины, моя аудитория точно захочет полюбоваться на мокреньких девушек!"
-    new ""
+    new "Great! Now I have cameras in every room! The cost was high, but it will definitely pay off, because there are so many beautiful girls in this house, flashing their charms from time to time... Although, it would not hurt to put another camera in the yard, because the girls are not only sunbathing, but also swimming. To complete the picture, my audience will definitely want to admire the wet girls!"
 
     # game/core/09_opportunities.rpy:4
     old "Лучше начать с поиска хорошего обзора ванной комнаты..."
-    new ""
+    new "Better start by finding a good overview of the bathroom..."
 
     # game/core/09_opportunities.rpy:4
     old "Вечер - это самое лучшее время, чтобы попробовать подсмотреть за кем-нибудь в ванной комнате и не попасться..."
-    new ""
+    new "Evening is the best time to try to spy on someone in the bathroom and not get caught..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит понаблюдать, чем обычно все занимаются у зеркала в ванной комнате..."
-    new ""
+    new "It's worth observing what everyone usually does at the bathroom mirror..."
 
     # game/core/09_opportunities.rpy:4
     old "Ну вот, пожалуй, девяти камер будет более чем достаточно, чтобы неплохо зарабатывать! Остаётся лишь позаботиться о том, чтобы по каждой из них, моим зрителям было что увидеть..."
-    new ""
+    new "Well, I guess nine cameras would be more than enough to make good money! All that remains is to make sure that for each of them, my viewers have something to see..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит поискать книгу в комнате Алисы..."
-    new ""
+    new "It's worth looking for the book in Alice's room..."
 
     # game/core/09_opportunities.rpy:4
     old "Всё просто! До ноутбука дойти не проблема..."
-    new ""
+    new "It's easy! It's not a problem to get to the laptop..."
 
     # game/core/09_opportunities.rpy:4
     old "Наверняка удастся найти похожие книги в интернет-магазине. Были бы деньги..."
-    new ""
+    new "I'm sure I could find similar books in an online store. If only there were money..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит подождать, вдруг проблема разрешится сама собой..."
-    new ""
+    new "It's worth waiting to see if the problem resolves itself..."
 
     # game/core/09_opportunities.rpy:4
     old "Выяснилось, что во время последнего шоппинга забыли купить Лизе купальник, о котором она просила. Теперь придётся ждать до следующих выходных, когда Эрик снова повезёт всех за покупками. Но, в этот раз, сам Эрик пообещал ей подарить этот купальник. Может быть, его опередить?"
-    new ""
+    new "It turns out that during the last shopping trip they forgot to buy Lisa the swimsuit she asked for. Now we will have to wait until next weekend, when Eric will take everyone shopping again. But, this time, Eric himself has promised to get her that swimsuit. Maybe we should get ahead of him."
 
     # game/core/09_opportunities.rpy:212
     old "Может, стоит всё-таки разобрать коробки, о которых говорила мама..."
-    new ""
+    new "Maybe we should take apart the boxes my mother was talking about after all..."
 
     # game/core/09_opportunities.rpy:212
     old "Может, стоит интересоваться, чем живёт моя старшая сестрёнка, когда не сидит в своей комнате..."
-    new ""
+    new "Maybe I should be interested in what my big sis does when she's not in her room..."
 
     # game/core/09_opportunities.rpy:212
     old "Может, стоит интересоваться, чем живёт моя младшая сестрёнка, когда не сидит в своей комнате..."
-    new ""
-
+    new "Maybe I should wonder what my little sister's life is like when she's not in her room..."
