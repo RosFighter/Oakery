@@ -1192,7 +1192,7 @@ translate deutsch kira_sleep_morning_c1353df2:
 translate deutsch kira_sleep_morning_e88b00c2:
 
     # Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
-    Max_05 "Zum Teufel, der Anblick ihrer schlanken Beine in diesen knappen Höschen... sie ist so heiß!"
+    Max_05 "Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es sehr end in meinen Shorts... Darauf kann man wetten, sie ist so heiß!"
 
 # game/events/kira.rpy:716
 translate deutsch kira_night_tv_234d0568:
@@ -3286,7 +3286,7 @@ translate deutsch return_from_club_f9df4462:
 translate deutsch return_from_club_babe3fd1:
 
     # Alice_02 "Ой, спасибо, это я люблю, Макс. На ночь лучше, конечно, сладости не есть, но разок можно. Ничего плохого не случится. Всё, жду полотенце..."
-    Alice_02 "Oh, danke, das liebe ich, Max. Du solltest wahrscheinlich nachts keine Süßigkeiten essen, aber ab und zu schadet es nicht. Ich werde auf das Handtuch warten..."
+    Alice_02 "Oh, danke, das liebe ich, Max. Ich sollte wahrscheinlich nachts keine Süßigkeiten mehr essen, aber ab und zu schadet es nicht. Ich werde auf das Handtuch warten..."
 
 # game/events/kira.rpy:2439
 translate deutsch return_from_club_ece3a784_1:

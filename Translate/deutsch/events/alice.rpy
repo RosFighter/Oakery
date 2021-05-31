@@ -3620,7 +3620,7 @@ translate deutsch strings:
 
     # game/events/alice.rpy:1521
     old "{i}проникнуть в её киску пальцами{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
-    new "{i}ihr Pussy fingern{/i} {color=[_ch_sex4.col]}(Sexuelle Erfahrung. Chance: [_ch_sex4.vis]){/color}"
+    new "{i}ihre Pussy fingern{/i} {color=[_ch_sex4.col]}(Sexuelle Erfahrung. Chance: [_ch_sex4.vis]){/color}"
 
     # game/events/alice.rpy:1521
     old "{i}ласкать её киску языком{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"
