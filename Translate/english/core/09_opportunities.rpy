@@ -346,49 +346,48 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "В результате поисков информации в интернете о том, чем могла бы заняться Алиса, удалось кое-что выяснить. Самыми популярными оказались блоги, где ведущие - девушки. Причём, чем более откровенные наряды и чем больше грудь, тем более популярны шоу. С грудью, конечно, ничего не поделать, а вот наряды..."
-    new ""
+    new "As a result of searching the Internet for information about what Alice could do, we were able to find out some things. The most popular blogs were those where the hosts were girls. Moreover, the more revealing the outfits and the bigger the breasts, the more popular the shows. Of course, you can't do anything about the breasts, but the outfits..."
 
     # game/core/09_opportunities.rpy:4
     old "Может быть, поговорить с ней об этом?"
-    new ""
+    new "Maybe talk to her about it?"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет последить через скрытую камеру за тем, как Алиса ведёт блог..."
-    new ""
+    new "We'll have to follow Alice's blogging through a hidden camera..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит подарить Алисе красивое нижнее бельё. Дело плёвое, если есть деньги..."
-    new ""
+    new "It's worth getting Alice some nice underwear. It's easy if you have the money..."
 
     # game/core/09_opportunities.rpy:4
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Правда, увидеть мне ничего не удалось, только Алису уже в этом самом белье, но даже это было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное! И кстати, может предложить ей устроить фотосессию? Алисе точно пригодятся снимки в нижнем белье для её блога. Лишь бы она только согласилась!"
-    new ""
+    new "I gave Alice a cute set of underwear. She liked it very much. I did not get to see anything, only Alice already in this very lingerie, but even that was exciting... What's most curious, she hinted that we can look for something more... sexy! And should I suggest that we take her on a photo shoot? Alice could definitely use some lingerie shots for her blog. Just as long as she says yes!"
 
     # game/core/09_opportunities.rpy:4
     old "Купить для Алисы что-нибудь посексуальнее я только рад. Были бы деньги... Как на нижнее бельё, так и на фотоаппарат..."
-    new ""
+    new "To buy something sexier for Alice, I'm only glad. If only I had money... Both for lingerie and for a camera..."
 
     # game/core/09_opportunities.rpy:4
     old "Купить для Алисы что-нибудь посексуальнее я только рад. Были бы деньги..."
-    new ""
+    new "To buy something sexier for Alice, I'm only glad. If I had the money..."
 
     # game/core/09_opportunities.rpy:4
     old "Самый лучший момент для дарения, когда Алиса ведёт свой блог в нижнем белье..."
-    new ""
+    new "The best time to give a present is when Alice is blogging in her underwear..."
 
     # game/core/09_opportunities.rpy:4
     old "Я подарил Алисе симпатичный комплект нижнего белья. Ей очень понравилось. Она даже при мне его примерила! Увидел я не так чтобы много всего, но было волнующе... Что самое любопытное, она намекнула, что можно поискать и что-то более... сексуальное! И кстати, может предложить ей устроить фотосессию? Алисе точно пригодятся снимки в нижнем белье для её блога. Лишь бы она только согласилась!"
-    new ""
+    new "I gave Alice a cute set of underwear. She really liked it. She even tried it on in front of me! I didn't see much of anything, but it was exciting... What's most curious, she hinted that we could look for something more... sexy! And by the way, maybe I should suggest that we do a photo shoot with her. Alice could definitely use some lingerie shots for her blog. Just as long as she said yes!"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно приглядывать за этой парочкой, когда они вместе. Вдруг удастся подслушать что-то важное..."
-    new ""
+    new "We should keep an eye on this couple when they are together. Maybe we can overhear something important..."
 
     # game/core/09_opportunities.rpy:4
     old "Надо хоть подсмотреть, как это сексуальное боди смотрится на Алисе..."
-    new ""
+    new "We should at least see how this sexy bodysuit looks on Alice..."
 
     # game/core/09_opportunities.rpy:4
     old "Какова будет реакция Эрика? Скоро я это узнаю! Зато, с Алисой теперь можно вести себя поувереннее во многих моментах..."
-    new ""
-
+    new "What will be Eric's reaction? I'll find out soon enough! But now I can be more confident with Alice in many moments..."
