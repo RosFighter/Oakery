@@ -4384,3 +4384,11 @@ translate english kira_alice_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
     Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."
+# TODO: Translation updated at 2021-06-26 22:47
+
+# game/events/kira.rpy:1436
+translate english kira_night_tv_second_lesson_e9adc097:
+
+    # Max_07 "Я думал, что у меня неплохо получается..."
+    Max_07 ""
+

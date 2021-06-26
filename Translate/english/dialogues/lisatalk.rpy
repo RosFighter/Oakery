@@ -9780,3 +9780,293 @@ translate english Lisa_wear_Tshirt_7a250a36:
     # Max_08 "Так и сделаю. В смысле, сделаю..."
     Max_08 "That's what I'll do. I will..."
 
+# TODO: Translation updated at 2021-06-26 22:47
+
+# game/dialogues/lisatalk.rpy:992
+translate english Lisa_sg1_maybe_a1d7e248:
+
+    # Lisa_10 "Было больно... Но я уж лучше сама попробую как-нибудь справиться с уроками. Без тебя. Я думала, что мы друзья, а ты... ещё и извращенец..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:993
+translate english Lisa_sg1_maybe_1f05f30a:
+
+    # Max_09 "А ты точно хорошо подумала? Я ведь не так и много прошу за свою помощь."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:999
+translate english Lisa_sg1_maybe_f4df23a2_1:
+
+    # Lisa_12 "Нет, Макс, забудь. Мне не нужна твоя помощь!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:1274
+translate english Lisa_HomeWork_first_foot_mass_def08673:
+
+    # Lisa_02 "[lisa_good_mass!t]У тебя хорошо получается. Мне приятно..." nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1283
+translate english Lisa_HomeWork_first_foot_mass_3f00b33e:
+
+    # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
+    Lisa_01 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1296
+translate english Lisa_HomeWork_first_foot_mass_31c88882:
+
+    # Lisa_01 "[lisa_good_mass!t]Макс, тебе же ничего не видно?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1313
+translate english Lisa_HomeWork_first_foot_mass_d2d86c45:
+
+    # Lisa_09 "[lisa_bad_mass!t]Ай, всё... Прекращай, Макс! Щекотно же... Я не могу на домашнем задании сосредоточиться... Не так уж ты и хорош в этом деле."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1318
+translate english Lisa_HomeWork_first_foot_mass_d6b64053:
+
+    # Max_07 "К тебе, просто, другой подход нужен. Не как с Алисой. В следующий раз у меня получится лучше..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1319
+translate english Lisa_HomeWork_first_foot_mass_7ecaa66b:
+
+    # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1355
+translate english Lisa_HomeWork_next_foot_mass_9ba963d4:
+
+    # Lisa_05 "[lisa_good_mass!t]Твой массаж так хорошо расслабляет, даже уроки нескучно делать. Очень приятно..." nointeract
+    Lisa_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1362
+translate english Lisa_HomeWork_next_foot_mass_3f00b33e:
+
+    # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
+    Lisa_01 "" nointeract
+
+# game/dialogues/lisatalk.rpy:1374
+translate english Lisa_HomeWork_next_foot_mass_ecec7f41:
+
+    # Lisa_01 "[lisa_good_mass!t]Только не заглядывайся туда так сильно..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1388
+translate english Lisa_HomeWork_next_foot_mass_9f553937:
+
+    # Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну... Ещё раз спасибо, Макс! И за уроки, и за мои ножки."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:1389
+translate english Lisa_HomeWork_next_foot_mass_02025e2e:
+
+    # Max_01 "Да не за что."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:1405
+translate english Lisa_HomeWork_next_foot_mass_af5ff8cf:
+
+    # Lisa_09 "[lisa_bad_mass!t]Ай, Макс, прекращай! Щекотно же... Я не могу на домашнем задании сосредоточиться... Неужели нельзя нормально сделать массаж?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:1410
+translate english Lisa_HomeWork_next_foot_mass_3cd1b957:
+
+    # Max_07 "Я всё делаю, как надо, так что терпи. В следующий раз у меня получится лучше..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1411
+translate english Lisa_HomeWork_next_foot_mass_7ecaa66b:
+
+    # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:1516
+translate english Lisa_HomeWork_random_answer_9e744743:
+
+    # Max_07 "Вообще-то, такое я ещё не делал и даже не изучал. Устала писать?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:1521
+translate english Lisa_HomeWork_random_answer_2750982c:
+
+    # Max_03 "Тогда я быстренько узнаю, как это делается и попробуем перед уроками, когда ты сидишь в телефоне?"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:2159
+translate english conversation_after_dinner_97ef0497:
+
+    # Lisa_09 "Помнишь, ты говорил, что можешь помогать мне делать уроки?" nointeract
+    Lisa_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2165
+translate english conversation_after_dinner_e31da10c:
+
+    # Lisa_10 "Так вот, мне всё-таки нужна твоя помощь..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:2166
+translate english conversation_after_dinner_e2667b85:
+
+    # Max_07 "Значит, мамина рука заставила тебя хорошенько задуматься над моими условиями?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2168
+translate english conversation_after_dinner_66e18cac:
+
+    # Lisa_09 "Ты правда поможешь мне с уроками или ты просто так это ляпнул, чтобы от мамы меня защитить?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2169
+translate english conversation_after_dinner_37e07b02:
+
+    # Max_07 "Ну... Я, конечно, мог бы, но зачем мне просто так тратить своё время. Мне нужен какой-то интерес в этом... Не стоит ли нам задуматься над теми моими условиями?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2175
+translate english conversation_after_dinner_81d11bdc:
+
+    # Lisa_09 "Ты о чём, Макс? Над какими условиями?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2178
+translate english conversation_after_dinner_34ff4f41:
+
+    # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Может, сегодня я тебя спас от мамы, но за следующую двойку тебе точно влетит..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2179
+translate english conversation_after_dinner_9b2bb001:
+
+    # Lisa_10 "Ладно, я согласна. Не хочу, чтобы было больно потом сидеть в школе и дома. Так чего ты хочешь?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:2181
+translate english conversation_after_dinner_9315363a:
+
+    # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Ну или мама будет тебя и дальше наказывать..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2182
+translate english conversation_after_dinner_d20cc8fb:
+
+    # Lisa_10 "Ладно, я согласна. Очень больно было. Так чего ты хочешь?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:2183
+translate english conversation_after_dinner_7ab6791f:
+
+    # Max_01 "Ну для начала я бы хотел, чтобы ты спала в трусиках, без штанов..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:2184
+translate english conversation_after_dinner_3bb41a82:
+
+    # Lisa_09 "Макс, я говорила, что ты извращенец?" nointeract
+    Lisa_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:2189
+translate english conversation_after_dinner_9b6d30b2:
+
+    # Lisa_12 "Ну так вот, скажу. Ты - извращенец. Я твоя сестра и требовать от меня такого... стыдно должно быть!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:2190
+translate english conversation_after_dinner_c90b454f:
+
+    # Max_07 "Допустим, мне стыдно. Так ты согласна?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2194
+translate english conversation_after_dinner_157c3cd3:
+
+    # Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:2195
+translate english conversation_after_dinner_4de7c9e3:
+
+    # Max_05 "Как скажешь..."
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:2222
+translate english conversation_after_dinner_b3f2e820:
+
+    # Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получила двойку..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2223
+translate english conversation_after_dinner_6aec55e6:
+
+    # Max_08 "Наверно, я просто был невнимателен... Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:2238
+translate english conversation_after_dinner_8828b64e:
+
+    # Lisa_03 "Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2241
+translate english conversation_after_dinner_fe9a4ee6:
+
+    # Lisa_03 "Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:2261
+translate english conversation_after_dinner_f5a57d16:
+
+    # Lisa_09 "Помнишь, ты говорил, что будешь помогать мне делать уроки?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2262
+translate english conversation_after_dinner_0cc9eda2:
+
+    # Max_09 "Возможно... А что?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:2267
+translate english conversation_after_dinner_072e112e:
+
+    # Max_08 "Я думал, что у тебя получится самой во всём разобраться... Хотя, раз тебя наказали за двойку, значит не всё так уж здорово у тебя с уроками."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:2268
+translate english conversation_after_dinner_24603f9e:
+
+    # Lisa_09 "Да... Мне нужна твоя помощь, Макс. А если не будешь помогать, я очень сильно обижусь или даже маме на тебя нажалуюсь!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2269
+translate english conversation_after_dinner_9d468184:
+
+    # Max_07 "Ладно, я помогу тебе. Не переживай."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2275
+translate english conversation_after_dinner_29408871:
+
+    # Lisa_09 "Мне вот начинает казаться, что толку от твоей помощи с уроками никакой! Может, уже будешь больше стараний прикладывать? Я ведь и обидеться могу сильно!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:2276
+translate english conversation_after_dinner_189104ef:
+
+    # Max_07 "Ладно, я постараюсь. Не переживай."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:2282
+translate english conversation_after_dinner_3ad45326:
+
+    # Lisa_01 "Я перестану переживать, когда мои оценки надолго станут в порядке!"
+    Lisa_01 ""
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:1265
+    old "{i}продолжить{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
+    new ""
+

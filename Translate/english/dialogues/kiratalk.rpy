@@ -2613,3 +2613,35 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:1048
     old "Тебе удалось сбежать?"
     new "Did you manage to escape?"
+# TODO: Translation updated at 2021-06-26 22:47
+
+# game/dialogues/kiratalk.rpy:350
+translate english kira_talk5_1195595b:
+
+    # Max_02 "Так у нас же Алиса блог свой ведёт. Вот я ей и помогал с его развитием. Хорошие фотографии нужны всем!"
+    Max_02 ""
+
+# game/dialogues/kiratalk.rpy:351
+translate english kira_talk5_8431a94b:
+
+    # Kira_03 "Так ты с телефона её фотографировал?"
+    Kira_03 ""
+
+# game/dialogues/kiratalk.rpy:352
+translate english kira_talk5_0a43014e:
+
+    # Max_05 "Нет. Я купил хороший и серьёзный фотоаппарат. Опыта у меня пока маловато, но я готов пощёлкать тебя бесплатно, если ты попозируешь..."
+    Max_05 ""
+
+# game/dialogues/kiratalk.rpy:359
+translate english kira_talk5_c73f7880:
+
+    # Max_05 "Ага. Вот прямо недавно купил!"
+    Max_05 ""
+
+# game/dialogues/kiratalk.rpy:362
+translate english kira_talk5_b6188756:
+
+    # Max_08 "Найду!"
+    Max_08 ""
+
