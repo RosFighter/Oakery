@@ -10198,3 +10198,11 @@ translate english alice_gift_sweets_1ebc62cf:
 
     # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
     Max_01 "Enjoy your candy! I won't interrupt..."
+# TODO: Translation updated at 2021-06-28 23:57
+
+# game/dialogues/alicetalk.rpy:3834
+translate english alice_gift_sweets_21b81128:
+
+    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
+    Max_09 ""
+

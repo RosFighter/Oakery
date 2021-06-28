@@ -4008,3 +4008,53 @@ translate english alice_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
     Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."
+# TODO: Translation updated at 2021-06-28 23:57
+
+# game/events/alice.rpy:613
+translate english alice_shower_pinded_ca60b39d:
+
+    # Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
+    Alice_06 ""
+
+# game/events/alice.rpy:614
+translate english alice_shower_pinded_5f021073:
+
+    # Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
+    Max_05 ""
+
+# game/events/alice.rpy:615
+translate english alice_shower_pinded_74645a19:
+
+    # Alice_13 "Я рада такое слышать, но с тебя конфеты. Сам знаешь какие... А то ни стыда, ни совести. Уходи давай!"
+    Alice_13 ""
+
+# game/events/alice.rpy:616
+translate english alice_shower_pinded_f19a9058:
+
+    # Max_01 "Ладно, ухожу..."
+    Max_01 ""
+
+# game/events/alice.rpy:621
+translate english alice_shower_pinded_e826d0b4:
+
+    # Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
+    Alice_15 ""
+
+# game/events/alice.rpy:622
+translate english alice_shower_pinded_15d601e2:
+
+    # Max_13 "Нет! Я просто... Так получилось. Чистое совпадение!"
+    Max_13 ""
+
+# game/events/alice.rpy:623
+translate english alice_shower_pinded_3e2060a2:
+
+    # Alice_18 "А ну пошёл отсюда, извращенец такой! Считай мама уже всё знает! И даже не пытайся извиняться! Брысь!!!"
+    Alice_18 ""
+
+# game/events/alice.rpy:624
+translate english alice_shower_pinded_2df0e482:
+
+    # Max_10 "Вот чёрт!"
+    Max_10 ""
+

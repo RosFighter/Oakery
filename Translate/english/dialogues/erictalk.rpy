@@ -1718,3 +1718,11 @@ translate english Eric_talk_about_Kira_1_b1d48d26:
 
     # Max_01 "Хорошо, как надумаю, что хочу, так сразу к тебе..." nointeract
     Max_01 "Well, as soon as I think of what I want, I'll let you know..." nointeract
+# TODO: Translation updated at 2021-06-28 23:57
+
+# game/dialogues/erictalk.rpy:386
+translate english Eric_talk_about_Lisa_0_c4df9dbc:
+
+    # Eric_02 "Как ты это сделаешь, не знаю, у нас с Аней на это времени нет, а вот ты всё время дома. Книжки почитайте по теме сексуального воспитания, например. Если за неделю уложишься, то буду должен - не разочаруешься."
+    Eric_02 ""
+

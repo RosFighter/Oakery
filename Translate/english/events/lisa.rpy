@@ -1827,3 +1827,65 @@ translate english lisa_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
     Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."
+# TODO: Translation updated at 2021-06-28 23:57
+
+# game/events/lisa.rpy:195
+translate english lisa_shower_pinded_aded2cb3:
+
+    # Lisa_11 "[spotted!t]Ой, Макс! Опять ты подглядываешь... Это уже маньячество какое-то!"
+    Lisa_11 ""
+
+# game/events/lisa.rpy:196
+translate english lisa_shower_pinded_839bdc8e:
+
+    # Max_02 "Просто любуюсь формами! А так, я вообще мимо шёл, а здесь ты..."
+    Max_02 ""
+
+# game/events/lisa.rpy:197
+translate english lisa_shower_pinded_c430f032:
+
+    # Lisa_10 "Вот и иди мимо! И без майки ты меня теперь две недели точно не увидишь. Помнишь, я предупреждала?"
+    Lisa_10 ""
+
+# game/events/lisa.rpy:198
+translate english lisa_shower_pinded_02f58c38:
+
+    # Max_08 "Блин! Точно, вспомнил... Но, может..."
+    Max_08 ""
+
+# game/events/lisa.rpy:199
+translate english lisa_shower_pinded_d7baed79:
+
+    # Lisa_13 "Нет. Это будет для тебя уроком!"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:200
+translate english lisa_shower_pinded_7428c407:
+
+    # Max_11 "Ладно..."
+    Max_11 ""
+
+# game/events/lisa.rpy:210
+translate english lisa_shower_pinded_88f45d12:
+
+    # Lisa_13 "[spotted!t] Ай, Макс!!! Ты в конец бессовестный что ли?! Отвернись немедленно и иди куда шёл!"
+    Lisa_13 ""
+
+# game/events/lisa.rpy:211
+translate english lisa_shower_pinded_6f1ab50c:
+
+    # Max_13 "Лиза, я случайно! Ты же не расскажешь маме?"
+    Max_13 ""
+
+# game/events/lisa.rpy:212
+translate english lisa_shower_pinded_1ad82afe:
+
+    # Lisa_14 "Ещё как расскажу! Сразу же, как только душ спокойно приму... А ты, вали с глаз моих!"
+    Lisa_14 ""
+
+# game/events/lisa.rpy:213
+translate english lisa_shower_pinded_e472503c:
+
+    # Max_10 "Вот же попал!"
+    Max_10 ""
+
