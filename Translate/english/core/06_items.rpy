@@ -28,13 +28,12 @@ translate english strings:
 
     # game/core/06_items.rpy:2
     old "КОМПРОМАТ НА ЭРИКА"
-    new ""
+    new "DIRT ON ERIK"
 
     # game/core/06_items.rpy:2
     old "Снимок того, как Эрик по ночам дрочит на Алису у окна её комнаты."
-    new ""
+    new "A snapshot of Eric jerking off to Alice at night at her room window."
 
     # game/core/06_items.rpy:2
     old "Снимки того, как Эрик по ночам сперва дрочил на Алису у окна её комнаты, а затем и в самой комнате."
-    new ""
-
+    new "Pictures of Eric jerking off to Alice outside her room window at night, and then in the room itself."
