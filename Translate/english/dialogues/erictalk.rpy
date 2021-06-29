@@ -1724,5 +1724,4 @@ translate english Eric_talk_about_Kira_1_b1d48d26:
 translate english Eric_talk_about_Lisa_0_c4df9dbc:
 
     # Eric_02 "Как ты это сделаешь, не знаю, у нас с Аней на это времени нет, а вот ты всё время дома. Книжки почитайте по теме сексуального воспитания, например. Если за неделю уложишься, то буду должен - не разочаруешься."
-    Eric_02 ""
-
+    Eric_02 "How you do it, I don't know, Ann and I don't have time for it, but you're home all the time. Read books on sex education, for example. If you can do it in a week, I'll owe you one - you won't be disappointed."

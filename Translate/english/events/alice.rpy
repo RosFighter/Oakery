@@ -4014,47 +4014,46 @@ translate english alice_shower_ladder_f790b709:
 translate english alice_shower_pinded_ca60b39d:
 
     # Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
-    Alice_06 ""
+    Alice_06 "[spotted!t]Max! Don't you have anything better to do than spy on me?"
 
 # game/events/alice.rpy:614
 translate english alice_shower_pinded_5f021073:
 
     # Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
-    Max_05 ""
+    Max_05 "I was just passing by and noticed... And as it turned out, I can't take my eyes off you!"
 
 # game/events/alice.rpy:615
 translate english alice_shower_pinded_74645a19:
 
     # Alice_13 "Я рада такое слышать, но с тебя конфеты. Сам знаешь какие... А то ни стыда, ни совести. Уходи давай!"
-    Alice_13 ""
+    Alice_13 "I'm glad to hear that, but now you owe me candy. You know what kind... You have no shame and no conscience. Get out of here!"
 
 # game/events/alice.rpy:616
 translate english alice_shower_pinded_f19a9058:
 
     # Max_01 "Ладно, ухожу..."
-    Max_01 ""
+    Max_01 "Okay, I'm leaving..."
 
 # game/events/alice.rpy:621
 translate english alice_shower_pinded_e826d0b4:
 
     # Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
-    Alice_15 ""
+    Alice_15 "[spotted!t]Max!!! You're peeping at me again! How many times is it now?! Have you lost your mind?"
 
 # game/events/alice.rpy:622
 translate english alice_shower_pinded_15d601e2:
 
     # Max_13 "Нет! Я просто... Так получилось. Чистое совпадение!"
-    Max_13 ""
+    Max_13 "No! I just... It just happened. Pure coincidence!"
 
 # game/events/alice.rpy:623
 translate english alice_shower_pinded_3e2060a2:
 
     # Alice_18 "А ну пошёл отсюда, извращенец такой! Считай мама уже всё знает! И даже не пытайся извиняться! Брысь!!!"
-    Alice_18 ""
+    Alice_18 "Get out of here, you pervert! Mom will know everything! And don't even try to apologize! Get out!"
 
 # game/events/alice.rpy:624
 translate english alice_shower_pinded_2df0e482:
 
     # Max_10 "Вот чёрт!"
-    Max_10 ""
-
+    Max_10 "Oh, shit!"

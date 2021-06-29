@@ -10204,5 +10204,4 @@ translate english alice_gift_sweets_1ebc62cf:
 translate english alice_gift_sweets_21b81128:
 
     # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
-    Max_09 ""
-
+    Max_09 "I don't think it's a good idea to give a goodie today. It might arouse unnecessary suspicion... It is better to do it tomorrow."
