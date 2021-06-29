@@ -1658,3 +1658,11 @@ translate deutsch strings:
     old "Вот у неё и спрашивай! (продолжение вражды)"
     new "Also frag sie! (Krieg fortsetzen)"
 
+# TODO: Translation updated at 2021-06-28 23:59
+
+# game/dialogues/erictalk.rpy:386
+translate deutsch Eric_talk_about_Lisa_0_c4df9dbc:
+
+    # Eric_02 "Как ты это сделаешь, не знаю, у нас с Аней на это времени нет, а вот ты всё время дома. Книжки почитайте по теме сексуального воспитания, например. Если за неделю уложишься, то буду должен - не разочаруешься."
+    Eric_02 "Ich weiß nicht, wie du das machst, Ann und ich haben keine Zeit dafür, aber du bist die ganze Zeit zu Hause. Ließ doch z. B. Bücher über Sexualkunde. Wenn Du das in einer Woche schaffst - wirst Du nicht enttäuscht werden."
+

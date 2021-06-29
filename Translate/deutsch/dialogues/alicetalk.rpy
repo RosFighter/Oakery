@@ -1060,7 +1060,7 @@ translate deutsch first_talk_smoke_owe_bbfe892c:
 translate deutsch first_talk_smoke_owe_911030ca:
 
     # Alice_03 "Ну, вот когда решишь, тогда и поговорим. А теперь иди отсюда, пока ещё можешь!" nointeract
-    Alice_03 "Dann können wir dieses Gespräch führen, nachdem Du dich entschieden haben. Verschwinde jetzt, bevor Du mich noch mehr verärgerst, als du es bereits getan habst." nointeract
+    Alice_03 "Dann können wir dieses Gespräch führen, nachdem Du dich entschieden haben. Verschwinde jetzt, bevor Du mich noch mehr verärgerst, als du es bereits getan hast." nointeract
 
 # game/dialogues/alicetalk.rpy:832
 translate deutsch first_talk_smoke_owe_c066f246:
@@ -6418,7 +6418,7 @@ translate deutsch gift_black_lingerie_35b4664a:
 translate deutsch gift_black_lingerie_d0a89701:
 
     # Max_03 "Я не пялюсь..."
-    Max_03 "Ich gucke doch garnicht..."
+    Max_03 "Ich gucke doch gar nicht..."
 
 # game/dialogues/alicetalk.rpy:3280
 translate deutsch gift_black_lingerie_d4ca39d6:
@@ -6616,7 +6616,7 @@ translate deutsch alice_gift_sweets_cd967215:
 translate deutsch alice_gift_sweets_053993a1:
 
     # Max_03 "Я люблю радовать старшую сестрёнку её любимыми конфетами."
-    Max_03 "Ich mag es einfach, große Schwestern glücklich zu machen!"
+    Max_03 "Ich liebe es, meine große Schwester mit ihrer Lieblingssüßigkeit glücklich zu machen."
 
 # game/dialogues/alicetalk.rpy:3390
 translate deutsch alice_gift_sweets_eadaadaf:
@@ -7026,7 +7026,7 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:114
     old "Нет, хотел просто больше узнать"
-    new "Nein, ich wollte mehr lernen."
+    new "Nein, ich wollte nur mehr Informationen"
 
     # game/dialogues/alicetalk.rpy:114
     old "Много подписчиков уже?"
@@ -7630,7 +7630,7 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:1177
     old "Доволен, конечно!"
-    new "Natürlich bin ich das!"
+    new "Natürlich tut sie das!"
 
     # game/dialogues/alicetalk.rpy:1177
     old "А чего ты прикрываешься?"
@@ -9551,7 +9551,7 @@ translate deutsch advanced_massage1_no_rush_ef15cedf:
 translate deutsch advanced_massage1_no_rush_b26ae136:
 
     # Max_09 "{i}( С Алисой нужно как-то сближаться без конфет. Только как?! Она стала более адекватно воспринимать мои стояки, после случая с пауком во дворе... Так может, и при массаже ног у ТВ без конфет у меня что-то выгорит? ){/i}"
-    Max_09 "{i}(Ich brauche einen Weg, um an Alice heranzukommen, ohne die Süßigkeiten. Aber wie?! Seit dem Vorfall mit der Spinne im Garten toleriert sie meine Ständer besser... Vielleicht hilft da eine bonbonfreie Fußmassage vor dem Fernseher.){/i}"
+    Max_09 "{i}(Ich brauche einen Weg, um an Alice heranzukommen, ohne die Süßigkeiten. Aber wie?! Seit dem Vorfall mit der Spinne im Garten toleriert sie meinen Ständer besser... Vielleicht hilft da eine bonbonfreie Fußmassage vor dem Fernseher.){/i}"
 
 # game/dialogues/alicetalk.rpy:965
 translate deutsch advanced_massage1_no_rush_79e35b5c:
@@ -9639,4 +9639,12 @@ translate deutsch alice_gift_sweets_1ebc62cf:
 
     # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
     Max_01 "Lass dir deine Süßigkeiten schmecken, mein Häschen! Ich will dabei nicht stören..."
+
+# TODO: Translation updated at 2021-06-28 23:59
+
+# game/dialogues/alicetalk.rpy:3834
+translate deutsch alice_gift_sweets_21b81128:
+
+    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
+    Max_09 "Ich glaube nicht, dass es eine gute Idee ist, heute ein Geschenk zu machen. Es könnte unnötigen Verdacht erregen... Es ist besser, es morgen zu tun."
 

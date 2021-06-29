@@ -100,7 +100,7 @@ translate deutsch breakfast_first_bf_change_f6a0ca75:
 translate deutsch breakfast_first_bf_change_50f154cf:
 
     # Lisa_01 "Ага, деваться то некуда. Кстати, после завтрака я буду уже собираться, в 11 выхожу. А часам к 4 уже вернусь" nointeract
-    Lisa_01 "Ich werde mein Bestes versuchen müssen, es gibt keine anderen Schulen in der Nähe. Ich werde mich nach dem Frühstück fertig machen. Ich gehe um 11 Uhr und bin gegen 16 Uhr zurück." nointeract
+    Lisa_01 "Es gibt keine anderen Schulen in der Nähe. Übrigens, ich mache mich nach dem Frühstück fertig, ich gehe um 11:00 Uhr. Ich bin um 16:00 Uhr zurück." nointeract
 
 # game/dialogues/breakfast.rpy:84
 translate deutsch breakfast_first_bf_change_c23566a9:
@@ -208,7 +208,7 @@ translate deutsch breakfast_first_bf_roof_306fdb3a:
 translate deutsch breakfast_first_bf_roof_6de5b34a:
 
     # Ann_00 "Звонила. Говорят, отправили в другой город по ошибке, а потом и вовсе потеряли. Обещают компенсировать, но когда - пока неизвестно..." nointeract
-    Ann_00 "a. Angeblich wurde es versehentlich in eine andere Stadt geschickt und ging danach verloren. Sie versprachen, uns zu entschädigen, aber das würde einige Zeit dauern." nointeract
+    Ann_00 "Ich habe angerufen. Sie sagen, dass sie es versehentlich in eine andere Stadt geschickt haben und dann haben sie es ganz verloren. Sie versprechen, uns zu entschädigen, aber sie wissen nicht, wann..." nointeract
 
 # game/dialogues/breakfast.rpy:200
 translate deutsch breakfast_first_bf_roof_640b53f3:
@@ -298,7 +298,7 @@ translate deutsch breakfast_first_bf_buy_new_00b44dcb:
 translate deutsch breakfast_first_bf_change2_d76935c0:
 
     # Ann_00 "Так, всем спасибо за завтрак. А мне уже пора убегать на работу. Алиса, как всегда, моет посуду после завтрака, а Лиза после ужина. Макс, если захочешь помочь сёстрам, они будут только рады." nointeract
-    Ann_00 "Gut, ich danke euch allen für das Frühstück, aber ich muss mich für die Arbeit fertig machen. Alice, bitte wasche nach dem Frühstück unbedingt das Geschirr ab. Und Lisa, spüle es nach dem Abendessen. Max, ich möchte, dass du deinen Schwestern hilfst, ich bin sicher, sie sind dir dankbar." nointeract
+    Ann_00 "Okay, ich danke euch allen für das Frühstück. Und ich muss zur Arbeit gehen. Alice macht den Abwasch wie immer nach dem Frühstück und Lisa nach dem Abendessen. Max, wenn du deinen Schwestern helfen willst, werden sie es zu schätzen wissen." nointeract
 
 # game/dialogues/breakfast.rpy:306
 translate deutsch breakfast_first_bf_change2_c2fa27a6:
@@ -1896,7 +1896,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:74
     old "А сама, такая умная, даже помощь сестрёнке не предложила!"
-    new "Wenn du so schlau bist, warum hast du dann nicht deine Hilfe angeboten?"
+    new "Und du, so schlau, hast nicht einmal angeboten, deiner Schwester zu helfen!"
 
     # game/dialogues/breakfast.rpy:74
     old "Чему смогу, тому и научу..."
@@ -1912,11 +1912,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:81
     old "Ну, удачи тебе в школе!"
-    new "Viel Glück an deiner neuen Schule"
+    new "Also, viel Glück in der Schule!"
 
     # game/dialogues/breakfast.rpy:84
     old "Мы в тебя верим..."
-    new "Viel Glück, du wirst es gut machen..."
+    new "Wir glauben an dich..."
 
     # game/dialogues/breakfast.rpy:93
     old "А почему так мало?"
@@ -2040,11 +2040,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:193
     old "Ничего страшного, купим новую!"
-    new "Das ist okay, wir kaufen neue Kleidung."
+    new "Das ist in Ordnung, wir kaufen Sie neu!"
 
     # game/dialogues/breakfast.rpy:193
     old "Я не понял, а где кондиционеры?"
-    new "Was ich nicht verstehe, ist, warum das Haus keinen Klimaanlage hat"
+    new "Ich verstehe das nicht, wo die Klimaanlage ist?"
 
     # game/dialogues/breakfast.rpy:196
     old "Ну и обойдёмся без неё"
@@ -2052,11 +2052,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:196
     old "Вот заработаю и куплю всё, что потеряли..."
-    new "Ich werde Geld verdienen und alles neu kaufen, was wir verloren haben"
+    new "Ich werde Geld verdienen und alles neu kaufen, was wir verloren habe...n"
 
     # game/dialogues/breakfast.rpy:200
     old "Может и рад. Мне стесняться нечего!"
-    new "Ich werde Geld verdienen und alles neu kaufen, was wir verloren haben"
+    new "Vielleicht schon. Ich habe nichts, wofür ich mich schämen müsste!"
 
     # game/dialogues/breakfast.rpy:200
     old "Да всем плевать, в чём ты там что ведёшь"
@@ -2180,7 +2180,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:298
     old "Не сомневаюсь"
-    new "Ich bin sicher, das wird sie."
+    new "Das bezweifele ich nicht"
 
     # game/dialogues/breakfast.rpy:298
     old "Вот ещё..."

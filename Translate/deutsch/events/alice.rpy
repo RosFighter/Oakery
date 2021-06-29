@@ -1042,7 +1042,7 @@ translate deutsch spider_in_bed_help_c57400a7:
 translate deutsch spider_in_bed_help_93127800:
 
     # Alice_06 "Ну не надо так, Макс! Я не буду больше нарушать наш уговор, только избавься от паука... Пожалуйста!"
-    Alice_06 "Sei doch nicht so, Max! Ich werde unseren Deal nicht mehr brechen, nur die Spinne beseitigen... Bitte!"
+    Alice_06 "Sei doch nicht so, Max! Ich werde unseren Deal nicht mehr brechen, beseitige nur die Spinne... Bitte!"
 
 # game/events/alice.rpy:1017
 translate deutsch spider_in_bed_help_25aa0e24:
@@ -1072,7 +1072,7 @@ translate deutsch spider_in_bed_help_c57400a7_1:
 translate deutsch spider_in_bed_help_363f3548:
 
     # Alice_06 "Ну не надо так, Макс! Я не буду больше нарушать наш уговор, только избавься от паука... Пожалуйста!" nointeract
-    Alice_06 "Sei doch nicht so, Max! Ich werde unseren Deal nicht mehr brechen, nur die Spinne beseitigen... Bitte!" nointeract
+    Alice_06 "Sei doch nicht so, Max! Ich werde unseren Deal nicht mehr brechen, beseitige nur die Spinne... Bitte!" nointeract
 
 # game/events/alice.rpy:1025
 translate deutsch spider_in_bed_help_165abb28:
@@ -3660,7 +3660,7 @@ translate deutsch strings:
 
     # game/events/alice.rpy:1796
     old "{i}продолжить смотреть{/i}"
-    new "{i}Weiter hinsehen{/i}"
+    new "{i}weiter beobachten{/i}"
 
     # game/events/alice.rpy:1796
     old "{i}взглянуть со стороны{/i}"
@@ -3927,4 +3927,54 @@ translate deutsch alice_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
     Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
+
+# TODO: Translation updated at 2021-06-28 23:59
+
+# game/events/alice.rpy:613
+translate deutsch alice_shower_pinded_ca60b39d:
+
+    # Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
+    Alice_06 "[spotted!t] Komm schon, Max! Hast du nichts Besseres zu tun, als mir nachzuspionieren?"
+
+# game/events/alice.rpy:614
+translate deutsch alice_shower_pinded_5f021073:
+
+    # Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
+    Max_05 "Ich kam gerade vorbei und bemerkte... Und dieser Anblick ist, wie sich herausstellte, unbezahlbar!"
+
+# game/events/alice.rpy:615
+translate deutsch alice_shower_pinded_74645a19:
+
+    # Alice_13 "Я рада такое слышать, но с тебя конфеты. Сам знаешь какие... А то ни стыда, ни совести. Уходи давай!"
+    Alice_13 "Freut mich, das zu hören, aber du schuldest mir was Süßes. Du weißt, welche Sorte... Du hast kein Schamgefühl, kein Gewissen. Verschwinde von hier!"
+
+# game/events/alice.rpy:616
+translate deutsch alice_shower_pinded_f19a9058:
+
+    # Max_01 "Ладно, ухожу..."
+    Max_01 "Okay, ich gehe..."
+
+# game/events/alice.rpy:621
+translate deutsch alice_shower_pinded_e826d0b4:
+
+    # Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
+    Alice_15 "[spotted!t] Max!!! Du spionierst mir schon wieder hinterher! Wie oft denn noch?! Hast du jeglichen Respekt verloren?"
+
+# game/events/alice.rpy:622
+translate deutsch alice_shower_pinded_15d601e2:
+
+    # Max_13 "Нет! Я просто... Так получилось. Чистое совпадение!"
+    Max_13 "Nein! Ich habe nur... Es ist einfach passiert. Reiner Zufall!"
+
+# game/events/alice.rpy:623
+translate deutsch alice_shower_pinded_3e2060a2:
+
+    # Alice_18 "А ну пошёл отсюда, извращенец такой! Считай мама уже всё знает! И даже не пытайся извиняться! Брысь!!!"
+    Alice_18 "Raus hier, du Perversling! Du denkst, Mom erfährt das alles! Und versuche gar nicht erst, dich zu rauszureden! Raus!!!"
+
+# game/events/alice.rpy:624
+translate deutsch alice_shower_pinded_2df0e482:
+
+    # Max_10 "Вот чёрт!"
+    Max_10 "Verdammt!"
 

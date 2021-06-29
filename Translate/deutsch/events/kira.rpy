@@ -1570,7 +1570,7 @@ translate deutsch kira_night_tv_promise_cuni_48f0e333:
 translate deutsch kira_night_tv_promise_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder du kannst es mir auch selbst ausziehen." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
 
 # game/events/kira.rpy:974
 translate deutsch kira_night_tv_promise_cuni_0b64a46b:
@@ -4373,4 +4373,12 @@ translate deutsch kira_alice_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
     Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
+
+# TODO: Translation updated at 2021-06-26 22:46
+
+# game/events/kira.rpy:1436
+translate deutsch kira_night_tv_second_lesson_e9adc097:
+
+    # Max_07 "Я думал, что у меня неплохо получается..."
+    Max_07 "Ich dachte, ich wäre ziemlich gut darin..."
 

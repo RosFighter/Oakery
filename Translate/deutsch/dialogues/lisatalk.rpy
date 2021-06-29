@@ -178,7 +178,7 @@ translate deutsch MorningWoodCont_b16aed06:
 translate deutsch MorningWoodCont_cd0dcccf:
 
     # Max_09 "Вот ты про что... Странно, что ты ещё маму не позвала..."
-    Max_09 "Oh, das... Ich bin überrascht, dass du Mom noch nicht angerufen hast..."
+    Max_09 "Oh, das... Ich bin überrascht, dass du noch nicht nach Mom gerufen hast..."
 
 # game/dialogues/lisatalk.rpy:164
 translate deutsch MorningWoodCont_d9073d40:
@@ -2512,7 +2512,7 @@ translate deutsch Lisa_HomeWork_random_answer_42868852:
 translate deutsch Lisa_HomeWork_random_answer_86751a8e:
 
     # Lisa_01 "Немного. Во вторник и пятницу мне приходится много писать, а твой массаж мог бы это облегчить."
-    Lisa_01 "Ein wenig. Montags und freitags muss ich viel schreiben, und deine Massage könnte es leichter machen."
+    Lisa_01 "Nicht viel. Ich muss dienstags und freitags viel schreiben, so dass deine Massage es mir leichter machen könnten."
 
 # game/dialogues/lisatalk.rpy:1447
 translate deutsch Lisa_HomeWork_random_answer_52d217a7:
@@ -2878,7 +2878,7 @@ translate deutsch liza_hand_mass_3d7bbcfb:
 translate deutsch liza_hand_mass_3320f06d:
 
     # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
-    Lisa_03 "Nun... meine Hausaufgaben sollten heute einfacher sein. Danke, dass du meine Hände massiert hast. Ich bin glücklich!"
+    Lisa_03 "Naja... Meine Hausaufgaben sollten sich heute einfacher erledigen lassen. Danke, dass du meine Hände massiert hast. Ich bin glücklich!"
 
 # game/dialogues/lisatalk.rpy:1676
 translate deutsch liza_hand_mass_525a4c7f:
@@ -2962,7 +2962,7 @@ translate deutsch liza_hand_mass_dcbaa368:
 translate deutsch liza_hand_mass_3320f06d_1:
 
     # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
-    Lisa_03 "Meine Hausaufgaben sollten heute viel leichter sein, du glaubst gar nicht, wie oft sich meine Hände verkrampfen. Danke für die Massage!"
+    Lisa_03 "Naja... Meine Hausaufgaben sollten sich heute einfacher erledigen lassen. Danke, dass du meine Hände massiert hast. Ich bin glücklich!"
 
 # game/dialogues/lisatalk.rpy:1726
 translate deutsch liza_hand_mass_c99051f1:
@@ -3028,7 +3028,7 @@ translate deutsch liza_hand_mass_dcbaa368_1:
 translate deutsch liza_hand_mass_3320f06d_2:
 
     # Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
-    Lisa_03 "Meine Hausaufgaben sollten heute viel leichter sein, du glaubst gar nicht, wie oft sich meine Hände verkrampfen. Danke für die Massage!"
+    Lisa_03 "Naja... Meine Hausaufgaben sollten sich heute einfacher erledigen lassen. Danke, dass du meine Hände massiert hast. Ich bin glücklich!"
 
 # game/dialogues/lisatalk.rpy:1773
 translate deutsch liza_hand_mass_c99051f1_1:
@@ -3214,7 +3214,7 @@ translate deutsch Lisa_sorry_9bfe44c3:
 translate deutsch Lisa_sorry_437cd4e3:
 
     # Lisa_01 "Дай угадаю, это вышло случайно, да?! И никто не виноват, так получилось!"
-    Lisa_01 "Lass mich raten, es war ein Unfall, richtig?! Und niemand hat Schuld, es ist einfach passiert!"
+    Lisa_01 "Lass mich raten, es war nur ein Zufall, richtig?! Und niemand hat Schuld, es ist einfach so passiert!"
 
 # game/dialogues/lisatalk.rpy:1829
 translate deutsch Lisa_sorry_6310bc4e:
@@ -5122,7 +5122,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047:
 translate deutsch lisa_sorry_gifts_good_e964b34a:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2664
 translate deutsch lisa_sorry_gifts_good_0559f620:
@@ -5200,7 +5200,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_1:
 translate deutsch lisa_sorry_gifts_good_e964b34a_1:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2690
 translate deutsch lisa_sorry_gifts_good_0559f620_1:
@@ -5248,7 +5248,7 @@ translate deutsch lisa_sorry_gifts_good_ea3d9a2d:
 translate deutsch lisa_sorry_gifts_good_9ee6b2ae:
 
     # Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"
-    Lisa_02 "Nun, das ist viel mehr, als ich erwartet habe... sieht so aus, als ob ich mich nicht daran erinnern kann, dass Du mich beobachtet habst!"
+    Lisa_02 "Nun, das ist viel mehr, als ich erwartet habe... sieht so aus, als ob ich mich nicht daran erinnern kann, dass Du mich beobachtet hast!"
 
 # game/dialogues/lisatalk.rpy:2707
 translate deutsch lisa_sorry_gifts_good_d8a1eb18:
@@ -5296,7 +5296,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_2:
 translate deutsch lisa_sorry_gifts_good_e964b34a_2:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2723
 translate deutsch lisa_sorry_gifts_good_0559f620_2:
@@ -5560,7 +5560,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_3:
 translate deutsch lisa_sorry_gifts_good_e964b34a_3:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2808
 translate deutsch lisa_sorry_gifts_good_0559f620_5:
@@ -5698,7 +5698,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_4:
 translate deutsch lisa_sorry_gifts_good_e964b34a_4:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2853
 translate deutsch lisa_sorry_gifts_good_0559f620_7:
@@ -5776,7 +5776,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_5:
 translate deutsch lisa_sorry_gifts_good_e964b34a_5:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2882
 translate deutsch lisa_sorry_gifts_good_0559f620_8:
@@ -5854,7 +5854,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_6:
 translate deutsch lisa_sorry_gifts_good_e964b34a_6:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2911
 translate deutsch lisa_sorry_gifts_good_0559f620_9:
@@ -5932,7 +5932,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_7:
 translate deutsch lisa_sorry_gifts_good_e964b34a_7:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2940
 translate deutsch lisa_sorry_gifts_good_0559f620_10:
@@ -5980,7 +5980,7 @@ translate deutsch lisa_sorry_gifts_good_ea3d9a2d_9:
 translate deutsch lisa_sorry_gifts_good_9ee6b2ae_1:
 
     # Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"
-    Lisa_02 "Nun, das ist viel mehr, als ich erwartet habe... sieht so aus, als ob ich mich nicht daran erinnern kann, dass Du mich beobachtet habst!"
+    Lisa_02 "Nun, das ist viel mehr, als ich erwartet habe... sieht so aus, als ob ich mich nicht daran erinnern kann, dass Du mich beobachtet hast!"
 
 # game/dialogues/lisatalk.rpy:2958
 translate deutsch lisa_sorry_gifts_good_d8a1eb18_9:
@@ -6016,7 +6016,7 @@ translate deutsch lisa_sorry_gifts_good_aae92047_8:
 translate deutsch lisa_sorry_gifts_good_e964b34a_8:
 
     # Max_05 "{i}( Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно... ){/i}"
-    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsch gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
+    Max_05 "{i}(Wow! Ich bin nicht nur wegen des Spähens aus der Patsche gekommen, sondern ich habe mir auch einen zärtlichen Kuss von meiner Schwester verdient!){/i}"
 
 # game/dialogues/lisatalk.rpy:2973
 translate deutsch lisa_sorry_gifts_good_0559f620_11:
@@ -9514,7 +9514,7 @@ translate deutsch about_alex3_4a18f465:
 translate deutsch about_alex3_8b30592e:
 
     # Lisa_13 "Вот только они с Оливией ещё не расстались, а он уже ко мне подкатывает, представляешь! Так же нельзя!"
-    Lisa_13 "Er und Olivia haben sich noch nicht einmal getrennt und er baggert mich schon an. Das geht garnicht!"
+    Lisa_13 "Er und Olivia haben sich noch nicht einmal getrennt und er baggert mich schon an. Das geht gar nicht!"
 
 # game/dialogues/lisatalk.rpy:3986
 translate deutsch about_alex3_8ebc6de5:
@@ -9756,4 +9756,294 @@ translate deutsch Lisa_wear_Tshirt_7a250a36:
 
     # Max_08 "Так и сделаю. В смысле, сделаю..."
     Max_08 "Das werde ich. Ich meine, ich werde..."
+
+# TODO: Translation updated at 2021-06-26 22:46
+
+# game/dialogues/lisatalk.rpy:992
+translate deutsch Lisa_sg1_maybe_a1d7e248:
+
+    # Lisa_10 "Было больно... Но я уж лучше сама попробую как-нибудь справиться с уроками. Без тебя. Я думала, что мы друзья, а ты... ещё и извращенец..."
+    Lisa_10 "Es war schmerzhaft... Aber ich versuche lieber, meine Hausaufgaben selbst zu machen. Ohne dich. Ich dachte, wir wären Freunde, aber du... du bist ein Perversling..."
+
+# game/dialogues/lisatalk.rpy:993
+translate deutsch Lisa_sg1_maybe_1f05f30a:
+
+    # Max_09 "А ты точно хорошо подумала? Я ведь не так и много прошу за свою помощь."
+    Max_09 "Bist du sicher, dass du dir das gut überlegt hast? Es ist nicht zu viel verlangt, mich um Hilfe zu bitten."
+
+# game/dialogues/lisatalk.rpy:999
+translate deutsch Lisa_sg1_maybe_f4df23a2_1:
+
+    # Lisa_12 "Нет, Макс, забудь. Мне не нужна твоя помощь!"
+    Lisa_12 "Nein, Max, vergiss es. Ich brauche deine Hilfe nicht!"
+
+# game/dialogues/lisatalk.rpy:1274
+translate deutsch Lisa_HomeWork_first_foot_mass_def08673:
+
+    # Lisa_02 "[lisa_good_mass!t]У тебя хорошо получается. Мне приятно..." nointeract
+    Lisa_02 "[lisa_good_mass!t] Du bist gut darin. Es ist mir ein Vergnügen..." nointeract
+
+# game/dialogues/lisatalk.rpy:1283
+translate deutsch Lisa_HomeWork_first_foot_mass_3f00b33e:
+
+    # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
+    Lisa_01 "[lisa_bad_mass!t] Max! Ich bin kitzelig! Lassen wir das lieber, ich könnte ja keinen Fehler machen..." nointeract
+
+# game/dialogues/lisatalk.rpy:1296
+translate deutsch Lisa_HomeWork_first_foot_mass_31c88882:
+
+    # Lisa_01 "[lisa_good_mass!t]Макс, тебе же ничего не видно?"
+    Lisa_01 "[lisa_good_mass!t] Max, du kannst nichts sehen, oder?"
+
+# game/dialogues/lisatalk.rpy:1313
+translate deutsch Lisa_HomeWork_first_foot_mass_d2d86c45:
+
+    # Lisa_09 "[lisa_bad_mass!t]Ай, всё... Прекращай, Макс! Щекотно же... Я не могу на домашнем задании сосредоточиться... Не так уж ты и хорош в этом деле."
+    Lisa_09 "[lisa_bad_mass!t] Autsch, das war's... Hör auf, Max! Das kitzelt... Ich kann mich nicht auf meine Hausaufgaben konzentrieren... Du bist nicht so gut darin."
+
+# game/dialogues/lisatalk.rpy:1318
+translate deutsch Lisa_HomeWork_first_foot_mass_d6b64053:
+
+    # Max_07 "К тебе, просто, другой подход нужен. Не как с Алисой. В следующий раз у меня получится лучше..."
+    Max_07 "Du magst es eben anders. Nicht wie Alice. Das nächste Mal kann ich es besser machen..."
+
+# game/dialogues/lisatalk.rpy:1319
+translate deutsch Lisa_HomeWork_first_foot_mass_7ecaa66b:
+
+    # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
+    Lisa_02 "Ja, ich wünschte, ich könnte. Und bitte stell sicher, dass ich alles richtig gemacht habe..."
+
+# game/dialogues/lisatalk.rpy:1355
+translate deutsch Lisa_HomeWork_next_foot_mass_9ba963d4:
+
+    # Lisa_05 "[lisa_good_mass!t]Твой массаж так хорошо расслабляет, даже уроки нескучно делать. Очень приятно..." nointeract
+    Lisa_05 "[lisa_good_mass!t] Die Massage ist so entspannend, dass es nicht einmal langweilig ist, Hausaufgaben zu machen. Es fühlt sich so gut an..." nointeract
+
+# game/dialogues/lisatalk.rpy:1362
+translate deutsch Lisa_HomeWork_next_foot_mass_3f00b33e:
+
+    # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
+    Lisa_01 "[lisa_bad_mass!t] Max! Ich bin kitzelig! Lassen wir das lieber, ich könnte sonst einen Fehler machen..." nointeract
+
+# game/dialogues/lisatalk.rpy:1374
+translate deutsch Lisa_HomeWork_next_foot_mass_ecec7f41:
+
+    # Lisa_01 "[lisa_good_mass!t]Только не заглядывайся туда так сильно..."
+    Lisa_01 "[lisa_good_mass!t] Sieh einfach nicht so genau hin..."
+
+# game/dialogues/lisatalk.rpy:1388
+translate deutsch Lisa_HomeWork_next_foot_mass_9f553937:
+
+    # Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну... Ещё раз спасибо, Макс! И за уроки, и за мои ножки."
+    Lisa_01 "[failed!t] Nein, Max. Ich denke, das ist genug. Mir ist auch so schon warm genug! Ich werde jetzt schlafen gehen... Danke noch mal, Max! Und für die Lektionen und für meine Beine."
+
+# game/dialogues/lisatalk.rpy:1389
+translate deutsch Lisa_HomeWork_next_foot_mass_02025e2e:
+
+    # Max_01 "Да не за что."
+    Max_01 "Gern geschehen."
+
+# game/dialogues/lisatalk.rpy:1405
+translate deutsch Lisa_HomeWork_next_foot_mass_af5ff8cf:
+
+    # Lisa_09 "[lisa_bad_mass!t]Ай, Макс, прекращай! Щекотно же... Я не могу на домашнем задании сосредоточиться... Неужели нельзя нормально сделать массаж?"
+    Lisa_09 "[lisa_bad_mass!t] Au, Max, hör auf! Das kitzelt... Ich kann mich nicht auf meine Hausaufgaben konzentrieren... Kann ich nicht eine richtige Massage bekommen?"
+
+# game/dialogues/lisatalk.rpy:1410
+translate deutsch Lisa_HomeWork_next_foot_mass_3cd1b957:
+
+    # Max_07 "Я всё делаю, как надо, так что терпи. В следующий раз у меня получится лучше..."
+    Max_07 "Ich mache es richtig, also hab bitte Geduld mit mir. Nächstes Mal werde ich es besser machen..."
+
+# game/dialogues/lisatalk.rpy:1411
+translate deutsch Lisa_HomeWork_next_foot_mass_7ecaa66b:
+
+    # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
+    Lisa_02 "Ja, ich wünschte, ich könnte. Und bitte stell sicher, dass ich alles richtig gemacht habe..."
+
+# game/dialogues/lisatalk.rpy:1516
+translate deutsch Lisa_HomeWork_random_answer_9e744743:
+
+    # Max_07 "Вообще-то, такое я ещё не делал и даже не изучал. Устала писать?"
+    Max_07 "Eigentlich habe ich das noch nicht gemacht oder gar recherchiert. Müde vom Schreiben?"
+
+# game/dialogues/lisatalk.rpy:1521
+translate deutsch Lisa_HomeWork_random_answer_2750982c:
+
+    # Max_03 "Тогда я быстренько узнаю, как это делается и попробуем перед уроками, когда ты сидишь в телефоне?"
+    Max_03 "Dann finde ich schnell heraus, wie es geht und mache es vor den Hausaufgaben, wenn du am Smartphone bist?"
+
+# game/dialogues/lisatalk.rpy:2159
+translate deutsch conversation_after_dinner_97ef0497:
+
+    # Lisa_09 "Помнишь, ты говорил, что можешь помогать мне делать уроки?" nointeract
+    Lisa_09 "Weißt du noch, als du gesagt hast, du könntest mir bei den Hausaufgaben helfen?" nointeract
+
+# game/dialogues/lisatalk.rpy:2165
+translate deutsch conversation_after_dinner_e31da10c:
+
+    # Lisa_10 "Так вот, мне всё-таки нужна твоя помощь..."
+    Lisa_10 "Also, ich brauche doch deine Hilfe..."
+
+# game/dialogues/lisatalk.rpy:2166
+translate deutsch conversation_after_dinner_e2667b85:
+
+    # Max_07 "Значит, мамина рука заставила тебя хорошенько задуматься над моими условиями?"
+    Max_07 "Die Hand von Mom hat dich also dazu gebracht, über meine Bedingungen nachzudenken?"
+
+# game/dialogues/lisatalk.rpy:2168
+translate deutsch conversation_after_dinner_66e18cac:
+
+    # Lisa_09 "Ты правда поможешь мне с уроками или ты просто так это ляпнул, чтобы от мамы меня защитить?"
+    Lisa_09 "Wirst du mir wirklich bei den Hausaufgaben helfen oder verlangst du das nur, um mich vor Mom zu schützen?"
+
+# game/dialogues/lisatalk.rpy:2169
+translate deutsch conversation_after_dinner_37e07b02:
+
+    # Max_07 "Ну... Я, конечно, мог бы, но зачем мне просто так тратить своё время. Мне нужен какой-то интерес в этом... Не стоит ли нам задуматься над теми моими условиями?"
+    Max_07 "Nun... Ich meine, ich könnte, aber warum sollte ich nur meine Zeit verschwenden. Ich brauche irgendeine Art von Beteiligung deinerseits... Sollten wir nicht über diese Bedingungen von mir nachdenken?"
+
+# game/dialogues/lisatalk.rpy:2175
+translate deutsch conversation_after_dinner_81d11bdc:
+
+    # Lisa_09 "Ты о чём, Макс? Над какими условиями?"
+    Lisa_09 "Wovon redest du, Max? Zu welchen Bedingungen?"
+
+# game/dialogues/lisatalk.rpy:2178
+translate deutsch conversation_after_dinner_34ff4f41:
+
+    # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Может, сегодня я тебя спас от мамы, но за следующую двойку тебе точно влетит..."
+    Max_01 "Worüber? Darüber, wie ich dir bei deinem Unterricht helfen werde. Du hilfst mir, ich helfe dir. Ich habe dich heute vielleicht vor Mom gerettet, aber wenn du das nächste Mal eine Sechs bekommst..."
+
+# game/dialogues/lisatalk.rpy:2179
+translate deutsch conversation_after_dinner_9b2bb001:
+
+    # Lisa_10 "Ладно, я согласна. Не хочу, чтобы было больно потом сидеть в школе и дома. Так чего ты хочешь?"
+    Lisa_10 "Okay, ich stimme zu. Ich möchte nicht, dass es schmerzhaft ist, später in der Schule und zu Hause zu sitzen. Was willst du also?"
+
+# game/dialogues/lisatalk.rpy:2181
+translate deutsch conversation_after_dinner_9315363a:
+
+    # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Ну или мама будет тебя и дальше наказывать..."
+    Max_01 "Worüber? Darüber, wie ich dir bei deinem Unterricht helfen werde. Du hilfst mir, ich helfe dir. Oder Mom wird dich weiter bestrafen..."
+
+# game/dialogues/lisatalk.rpy:2182
+translate deutsch conversation_after_dinner_d20cc8fb:
+
+    # Lisa_10 "Ладно, я согласна. Очень больно было. Так чего ты хочешь?"
+    Lisa_10 "Okay, ich stimme zu. Das tat wirklich weh. Was willst du also?"
+
+# game/dialogues/lisatalk.rpy:2183
+translate deutsch conversation_after_dinner_7ab6791f:
+
+    # Max_01 "Ну для начала я бы хотел, чтобы ты спала в трусиках, без штанов..."
+    Max_01 "Nun, für den Anfang möchte ich, dass du in deinem Slip schläfst, ohne Hose..."
+
+# game/dialogues/lisatalk.rpy:2184
+translate deutsch conversation_after_dinner_3bb41a82:
+
+    # Lisa_09 "Макс, я говорила, что ты извращенец?" nointeract
+    Lisa_09 "Max, habe ich dir gesagt, dass du ein Perverser bist?" nointeract
+
+# game/dialogues/lisatalk.rpy:2189
+translate deutsch conversation_after_dinner_9b6d30b2:
+
+    # Lisa_12 "Ну так вот, скажу. Ты - извращенец. Я твоя сестра и требовать от меня такого... стыдно должно быть!"
+    Lisa_12 "Nun, ich sage dir was. Du bist ein Perverser. Ich bin deine Schwester, und das von mir zu verlangen... Du solltest dich schämen!"
+
+# game/dialogues/lisatalk.rpy:2190
+translate deutsch conversation_after_dinner_c90b454f:
+
+    # Max_07 "Допустим, мне стыдно. Так ты согласна?"
+    Max_07 "Sagen wir, ich bin peinlich berührt. Du bist also damit einverstanden?"
+
+# game/dialogues/lisatalk.rpy:2194
+translate deutsch conversation_after_dinner_157c3cd3:
+
+    # Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
+    Lisa_10 "Nun, ich habe keine große Wahl... Und es ist zu heiß, um in meiner Hose zu schlafen... Ja, ich stimme zu. Aber du hilfst mir bei meinen Hausaufgaben!"
+
+# game/dialogues/lisatalk.rpy:2195
+translate deutsch conversation_after_dinner_4de7c9e3:
+
+    # Max_05 "Как скажешь..."
+    Max_05 "Wenn du meinst..."
+
+# game/dialogues/lisatalk.rpy:2222
+translate deutsch conversation_after_dinner_b3f2e820:
+
+    # Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получила двойку..."
+    Lisa_09 "Max, was ist los mit dir? Du warst so gut darin, mir bei den Hausaufgaben zu helfen... Und jetzt bekomme ich ein Sechs..."
+
+# game/dialogues/lisatalk.rpy:2223
+translate deutsch conversation_after_dinner_6aec55e6:
+
+    # Max_08 "Наверно, я просто был невнимателен... Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
+    Max_08 "Ich schätze, ich habe einfach nicht aufgepasst... Ich brauche eine Art Anreiz, um das zu erreichen! Könntest du mir helfen?"
+
+# game/dialogues/lisatalk.rpy:2238
+translate deutsch conversation_after_dinner_8828b64e:
+
+    # Lisa_03 "Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!"
+    Lisa_03 "Ja, ich habe dich schon ein paar Mal so schlafen sehen... Ich passe nicht mal mehr in meine Unterwäsche! Aber du hast Recht, ich bin heiß... und ich will nicht bestraft werden. Nun, wenn es dein Interesse weckt, mir zu helfen, ist das in Ordnung!"
+
+# game/dialogues/lisatalk.rpy:2241
+translate deutsch conversation_after_dinner_fe9a4ee6:
+
+    # Lisa_03 "Ага, видела я уже, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!"
+    Lisa_03 "Ja, ich habe gesehen, wie gut du schläfst... Ich passe nicht mal mehr in meine Unterwäsche. Aber du hast Recht, ich bin heiß... und ich will nicht bestraft werden. Nun, wenn es dein Interesse weckt, mir zu helfen, ist das in Ordnung!"
+
+# game/dialogues/lisatalk.rpy:2261
+translate deutsch conversation_after_dinner_f5a57d16:
+
+    # Lisa_09 "Помнишь, ты говорил, что будешь помогать мне делать уроки?"
+    Lisa_09 "Weißt du noch, als du gesagt hast, du würdest mir bei den Hausaufgaben helfen?"
+
+# game/dialogues/lisatalk.rpy:2262
+translate deutsch conversation_after_dinner_0cc9eda2:
+
+    # Max_09 "Возможно... А что?"
+    Max_09 "Vielleicht... Warum?"
+
+# game/dialogues/lisatalk.rpy:2267
+translate deutsch conversation_after_dinner_072e112e:
+
+    # Max_08 "Я думал, что у тебя получится самой во всём разобраться... Хотя, раз тебя наказали за двойку, значит не всё так уж здорово у тебя с уроками."
+    Max_08 "Ich dachte, du würdest es selbst herausfinden können... Obwohl, wenn du für eine \"4\" bestraft wirst, bist du wohl doch nicht so toll im Unterricht."
+
+# game/dialogues/lisatalk.rpy:2268
+translate deutsch conversation_after_dinner_24603f9e:
+
+    # Lisa_09 "Да... Мне нужна твоя помощь, Макс. А если не будешь помогать, я очень сильно обижусь или даже маме на тебя нажалуюсь!"
+    Lisa_09 "Ja... Ich brauche deine Hilfe, Max. Und wenn du es nicht tust, werde ich wirklich sauer auf dich oder ich werde es Mom erzählen."
+
+# game/dialogues/lisatalk.rpy:2269
+translate deutsch conversation_after_dinner_9d468184:
+
+    # Max_07 "Ладно, я помогу тебе. Не переживай."
+    Max_07 "Okay, ich helfe dir. Mach dir keine Gedanken darüber."
+
+# game/dialogues/lisatalk.rpy:2275
+translate deutsch conversation_after_dinner_29408871:
+
+    # Lisa_09 "Мне вот начинает казаться, что толку от твоей помощи с уроками никакой! Может, уже будешь больше стараний прикладывать? Я ведь и обидеться могу сильно!"
+    Lisa_09 "Langsam habe ich das Gefühl, dass deine Hilfe bei den Hausaufgaben nutzlos ist! Streng dich doch ein bisschen an. Ich könnte sonst wirklich sauer werden!"
+
+# game/dialogues/lisatalk.rpy:2276
+translate deutsch conversation_after_dinner_189104ef:
+
+    # Max_07 "Ладно, я постараюсь. Не переживай."
+    Max_07 "Okay, ich werde es versuchen. Mach dir keine Gedanken darüber."
+
+# game/dialogues/lisatalk.rpy:2282
+translate deutsch conversation_after_dinner_3ad45326:
+
+    # Lisa_01 "Я перестану переживать, когда мои оценки надолго станут в порядке!"
+    Lisa_01 "Wenn meine Noten in Ordnung sind, mache ich mir keine Sorgen mehr!"
+
+translate deutsch strings:
+
+    # game/dialogues/lisatalk.rpy:1265
+    old "{i}продолжить{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
+    new "{i}Weiter{/i} \n{color=[ch.col]}(Massage. Chance: [ch.vis]){/color}"
 

@@ -30,3 +30,19 @@ translate deutsch strings:
     old "Брюс Уиллис в роли нью-йоркского психолога, потерявшего пациентку - она выбросилась в окно прямо во время сеанса. Чтобы прийти в себя, он едет в Лос-Анджелес к своему другу, с которым они вместе учились..."
     new "Bruce Willis spielt einen New Yorker Psychologen, der eine Patientin verliert, die sich während einer Sitzung aus einem Fenster stürzt. Um zur Vernunft zu kommen, geht er nach Los Angeles zu seinem Freund, mit dem er zusammen studiert hat..."
 
+# TODO: Translation updated at 2021-06-26 22:47
+
+translate deutsch strings:
+
+    # game/core/06_items.rpy:2
+    old "КОМПРОМАТ НА ЭРИКА"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Снимок того, как Эрик по ночам дрочит на Алису у окна её комнаты."
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Снимки того, как Эрик по ночам сперва дрочил на Алису у окна её комнаты, а затем и в самой комнате."
+    new ""
+

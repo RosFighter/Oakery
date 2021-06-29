@@ -1810,7 +1810,7 @@ translate deutsch strings:
 
     # game/dialogues/kiratalk.rpy:96
     old "Есть!"
-    new "Verstanden!"
+    new "Bingo!"
 
     # game/dialogues/kiratalk.rpy:96
     old "Нет..."
@@ -2140,7 +2140,7 @@ translate deutsch kira_about_ann_secret0_5ae91ac3:
 translate deutsch kira_about_ann_secret0_327cdcef:
 
     # Kira_13 "Ты прав, тут дело не только в Эрике... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
-    Kira_13 "Du hast Recht, es ist nicht nur Eric... Ich schätze, es geht um deine Mom. Aber es gibt zwischen ihr und mir ein großen Geheimnis, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich es dir das einfach so erzählen kann..."
+    Kira_13 "Du hast Recht, es ist nicht nur Eric... Ich schätze, es geht um deine Mom. Aber es gibt zwischen ihr und mir ein großee Geheimnis, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich es dir das einfach so erzählen kann..."
 
 # game/dialogues/kiratalk.rpy:989
 translate deutsch kira_about_ann_secret0_881c3cb4:
@@ -2531,4 +2531,36 @@ translate deutsch strings:
     # game/dialogues/kiratalk.rpy:1048
     old "Тебе удалось сбежать?"
     new "Konntest du entkommen?"
+
+# TODO: Translation updated at 2021-06-26 22:46
+
+# game/dialogues/kiratalk.rpy:350
+translate deutsch kira_talk5_1195595b:
+
+    # Max_02 "Так у нас же Алиса блог свой ведёт. Вот я ей и помогал с его развитием. Хорошие фотографии нужны всем!"
+    Max_02 "Nun, Alice hat ihren eigenen Blog. Also habe ich ihr geholfen, ihn zu gestalten Jeder braucht gute Bilder!"
+
+# game/dialogues/kiratalk.rpy:351
+translate deutsch kira_talk5_8431a94b:
+
+    # Kira_03 "Так ты с телефона её фотографировал?"
+    Kira_03 "Du hast sie also mit deinem Handy fotografiert?"
+
+# game/dialogues/kiratalk.rpy:352
+translate deutsch kira_talk5_0a43014e:
+
+    # Max_05 "Нет. Я купил хороший и серьёзный фотоаппарат. Опыта у меня пока маловато, но я готов пощёлкать тебя бесплатно, если ты попозируешь..."
+    Max_05 "Nein. Ich habe eine ordentliche, professionelle Kamera gekauft. Ich habe noch nicht viel Erfahrung, aber ich bin bereit, dich umsonst zu fotografieren, wenn du posierst..."
+
+# game/dialogues/kiratalk.rpy:359
+translate deutsch kira_talk5_c73f7880:
+
+    # Max_05 "Ага. Вот прямо недавно купил!"
+    Max_05 "Ja. Ich habe es gerade gekauft!"
+
+# game/dialogues/kiratalk.rpy:362
+translate deutsch kira_talk5_b6188756:
+
+    # Max_08 "Найду!"
+    Max_08 "Das finde ich schon!"
 

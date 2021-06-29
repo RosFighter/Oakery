@@ -620,7 +620,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "КОРОТКАЯ ПИКАНТНАЯ СОРОЧКА"
-    new "KURZE CHEMIE"
+    new "SÜSSES BABYDOLL"
 
     # game/core/03variables.rpy:272
     old "Соблазнительная чёрная сорочка выполнена из эластичного тюля. В комплект так же входят трусики-стринги."
@@ -632,7 +632,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
-    new "Blickdichter Netz-Body mit offenem Rücken in Schwarz."
+    new "Blickdichter schwarzer Netz-Body mit offenem Rücken."
 
     # game/core/03variables.rpy:272
     old "ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"
@@ -1080,7 +1080,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:448
     old "С появлением Эрика мои дела стали неожиданно плохи... Во-первых, он предложил отправить меня в какой-то военный лагерь. Вроде бы для того, чтобы сделать из меня мужика... Да я уже Мужик! Сдались мне эти лагеря...\n\nВо-вторых, он убедил маму, что наказывать нас надо как-то иначе. Нет бы что хорошее подсказал, но это... В общем, со следующей недели нас будут наказывать на глазах друг у друга... голыми! Это такой позор! Это же каким надо быть извращенцем, чтобы такое выдумать.\n\nПонятно, что будет прикольно лишний раз увидеть сиськи сестёр, но и меня могут выпороть на глазах у всех. Это же как подорвёт авторитет!\n\nСначала эта дурацкая идея с военным лагерем, теперь ещё и это... Нужно что-то срочно делать!"
-    new "Eric ist definitiv eine Veränderung zum Schlechteren. Zuerst schlug er vor, mich in irgendein Militärlager zu schicken. \"Um einen Karakter aufzubauen\". Ich habe einen riesigen Karakter!\n\n\n Dann überzeugte er Mom, dass wir ein neues Bestrafungssystem haben sollten. Warum konnte er nicht etwas Gutes vorschlagen... Jedenfalls werden wir ab nächster Woche voreinander den Hintern versohlt bekommen! Und zwar nackt! Das ist demütigend. Was für ein Perverser würde auf diese Idee kommen? Das wird meine Autorität ruinieren! Ich muss sofort etwas unternehmen!"
+    new "Eric ist definitiv eine Veränderung zum Schlechteren. Zuerst schlug er vor, mich in irgendein Militärlager zu schicken. \"Um mein Selbstbewustsein aufzubauen\". Ich habe ein ausgeprägtes Selbstbewustsein!\n\n\n Dann überzeugte er Mom, dass wir ein neues Bestrafungssystem haben sollten. Warum konnte er nicht etwas Gutes vorschlagen... Jedenfalls werden wir ab nächster Woche voreinander den Hintern versohlt bekommen! Und zwar nackt! Das ist demütigend. Was für ein Perverser würde auf diese Idee kommen? Das wird meine Autorität ruinieren! Ich muss sofort etwas unternehmen!"
 
     # game/core/03variables.rpy:448
     old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращаться свою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
