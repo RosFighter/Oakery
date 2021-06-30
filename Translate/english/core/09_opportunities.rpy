@@ -1068,193 +1068,192 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Талантливый массажист"
-    new ""
+    new "Talented Masseur"
 
     # game/core/09_opportunities.rpy:4
     old "Я, без особых надежд, предложил Алисе намазать её кремом для загара... Которого ни у неё, ни у меня не было. Но, она не против! Я уже предвкушаю, как буду растирать этот крем по её телу... Только его сперва нужно купить. Как и одежду полегче, ведь во дворе будет жарко!"
-    new ""
+    new "I, without much hope, suggested that Alice put sunscreen on... Which neither she nor I had. But she didn't mind! I already anticipate how I will rub this cream on her body... But I have to buy it first. As well as lighter clothes, because of the heat in the yard!"
 
     # game/core/09_opportunities.rpy:4
     old "Вот теперь у меня есть всё, чтобы подарить Алисе равномерный и безопасный загар. Только бы всё не испортить своими руками... Надеюсь, они у меня не слишком корявые. Так или иначе, скоро я это пойму."
-    new ""
+    new "Now I have everything I need to give Alice an even and safe tan. As long as I don't ruin it with my hands... I hope they're not too sloppy. One way or another, I'll find out soon enough."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно хотя бы несколько раз намазать Алису кремом, прежде чем станет что-нибудь понятно..."
-    new ""
+    new "It takes at least a few sessions of applying sunscreen to see what happens..."
 
     # game/core/09_opportunities.rpy:4
     old "А я молодец! Алиса сказала, что у меня неплохо получается и подкинула идею по обучению массажу. Почему бы и нет? Может быть, там не всё так уж сложно. Наверняка в интернете можно найти базовые курсы по массажу, только вот действительно обучающие курсы будут стоить денег."
-    new ""
+    new "And I'm good! Alice said I was pretty good at it and gave me the idea to learn how massage. Why not? Maybe it's not that complicated. You can probably find basic massage courses on the Internet, except that really good training courses will cost money."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит купить хотя бы один урок по массажу, чтобы было с чем снова лезть к Алисе. А в перспективе, чем больше изучу, тем больших успехов достигну..."
-    new ""
+    new "It's worth buying at least one massage lesson, so that I have something to go back to Alice with. And in the long run, the more I learn, the more progress I'll make..."
 
     # game/core/09_opportunities.rpy:4
     old "Мне кажется или Алисе очень нравится, когда я начинаю массаж с её ног? Особенно со ступней. Может быть, это её слабое место? Если это так, то её слабость станет моим преимуществом!"
-    new ""
+    new "Is it just me, or does Alice really like it when I start massaging her feet? Especially her feet. Maybe that's her weak spot? If it is, then her weakness will be my advantage!"
 
     # game/core/09_opportunities.rpy:4
     old "Хорошо бы начинать массаж, каждый раз, с её прелестных ножек. Того гляди и везде смогу помассировать за раз. А может и верх купальника уговорю без проблем снять..."
-    new ""
+    new "It would be nice to start massaging her lovely legs every time. I might be able to massage everywhere at once. And maybe I'll get her to take off her swimsuit top without any problems..."
 
     # game/core/09_opportunities.rpy:4
     old "Красота! Так я могу и профессиональным массажистом стать! А что, я не против... Главное, чтобы у меня было побольше сексуальных клиенток и это будет улётно! Но одними интернет-курсами тут не обойтись, нужна полноценная практика и обучение. И возьмут ли меня куда-нибудь этому обучаться без школьного образования? Может тётя Кира с этим как-то поможет?"
-    new ""
+    new "It's beautiful! So I could be a professional masseur, too! Why, I don't mind... The main thing is to have more sexy clients and it would be awesome! But I can't do it with Internet courses alone. I need full-time practice and training. And will they take me anywhere to learn this without a school education? Maybe Aunt Kira can help with that?"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет продемонстрировать тёте Кире мои умения в массаже. А для этого потребуются успехи в возможности \"Любимая тётя\"..."
-    new ""
+    new "I would have to demonstrate my massage skills to Aunt Kira. And that will require success in the \"Favorite aunt\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Отличная новость! Тётя Кира сказала, что встретится со своей одноклассницей, которая занимается массажем, и возможна та, возьмёт меня к себе на обучение. Надеюсь, и правда возьмёт, потому что там я научусь ещё большему, чем тут. Буду с нетерпением этого ждать..."
-    new ""
+    new "Great news! Aunt Kira said that she was going to meet her classmate, who was a massage therapist, and maybe she would take me to her school. I hope she does, because I'll learn even more there than I did here. I'm looking forward to it..."
 
     # game/core/09_opportunities.rpy:4
     old "Шаловливые ножки"
-    new ""
+    new "Naughty Feet"
 
     # game/core/09_opportunities.rpy:4
     old "Жалко, что Алису приходится уговаривать на массаж ног, но что поделать... Может, однажды это изменится, кто знает. Зато, так я могу ещё больше попрактиковаться в массаже, а заодно и узнать, как и что моей сестрёнке больше всего нравится. Да и виды весьма неплохие на Алису открываются."
-    new ""
+    new "It's a pity that Alice has to be persuaded for a foot massage, but what can you do? Maybe someday that will change, who knows. But at least this way I can practice massaging more, and at the same time learn how and what my little sister likes best. And the views on Alice are pretty good, too."
 
     # game/core/09_opportunities.rpy:4
     old "Если Алисе будет нравиться массаж, то можно попробовать стащить с неё джинсы. Вернее, уговорить, чтобы она их сняла..."
-    new ""
+    new "If Alice likes a massage, then we can try to take off her jeans. Or rather, persuade her to take them off..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот такими красотами можно любоваться бесконечно! Обидно, что недолго, но это намного лучше, чем ничего. Эх, вот бы однажды запустить руки под эти трусики..."
-    new ""
+    new "That's the kind of beauty you can admire forever! It's a shame that it doesn't last, but it's better than nothing. Oh, I wish I could get my hands under those panties one day..."
 
     # game/core/09_opportunities.rpy:4
     old "Было бы неплохо побольше сблизиться со своими сёстрами. Тогда наши совместные занятия с ними станут более естественными и перспективными. \nС Алисой же особое внимание стоит уделить успехам в возможности \"Тусовщица\"..."
-    new ""
+    new "It would be nice to get closer to my sisters. Then our activities with them would be more natural and promising. \nWith Alice, special attention should be paid to her progress in the \"Party Girl\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "А ведь конфеты с ликёром делают своё дело и очень быстро! Алиса явно становится более податливой и открытой в моих руках. Её трусики скрывают так мало, что у меня каждый раз слегка привстаёт. Чувствую, рано или поздно её ножки упрутся в мой член и будет много криков! И как замечательно, что она об этом потом не вспомнит."
-    new ""
+    new "But candy and liquor do the trick, and very quickly! Alice is clearly becoming more pliable and open in my hands. Her panties hide so little that I get a little bit of a hard-on every time. I feel that sooner or later her legs will be against my cock! And how wonderful that she won't remember it later."
 
     # game/core/09_opportunities.rpy:4
     old "Если давать Алисе конфеты с ликёром, то про массаж она и не вспомнит, но вот моё мастерство всё равно будет расти. Остаётся узнать, к чему это приведёт..."
-    new ""
+    new "If you give Alice candy and liquor, she won't even remember the massage, but my skills will still grow. It remains to be seen where this will lead..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса та ещё проказница! Вроде кажется стервозиной, а на деле, всего одной конфеты достаточно, чтобы её шаловливые ножки начали надрачивать мой член. Что уж говорить о двух конфетах... \nОх, как же это приятно и круто! Конечно, без массажа до этого бы не дошло, ведь её ножки - одна сплошная эрогенная зона. Жаль, что она не вспомнит этого... А может и хорошо. \nВ любом случае, чтобы добиться от неё большего в массаже с конфетами, нужно сближаться с ней без них... И сколько нужно времени, чтобы она отошла от конфет?"
-    new ""
+    new "Alice is such a prankster! She seems like a bitch, but in fact, just one candy is enough to make her naughty legs begin to masturbate my cock. Not to mention two candies... \nOh, that feels so good! Of course, it wouldn't have come to this without the massage, because her legs are one big erogenous zone. Too bad she won't remember that... Maybe that's a good thing. \nIn any case, to get more out of her in a massage with candy, you have to get closer to her without it... And how long does it take for the candy to wear off?"
 
     # game/core/09_opportunities.rpy:4
     old "Стоит последить за Алисой через скрытые камеры. Как знать, что она ещё может отчудить, пока будет на веселе после фут-джоба до того, как ляжет спать..."
-    new ""
+    new "It's worth keeping an eye on Alice through the hidden cameras. Who knows what else she might do, while she's having fun after the footjob before she goes to bed..."
 
     # game/core/09_opportunities.rpy:4
     old "Ухх... А моя сестрёнка ловко управляется со своей розовой игрушкой! Неужели это мой массаж её так завёл? Похоже на то. А конфеты её только раззадорили и она хочет ещё... Не означает ли это, что я могу зайти куда дальше во время массажа её ног?"
-    new ""
+    new "Ugh... And my sister is very good with her pink toy! Is it my massage that's turning her on? I think so. And the candy just got her all fired up and she wants more... Doesn't that mean I can go much further while massaging her feet?"
 
     # game/core/09_opportunities.rpy:4
     old "Пора покорять новые вершины в массаже ног Алисы у ТВ..."
-    new ""
+    new "It's time to conquer new heights in massaging Alice's feet at the TV..."
 
     # game/core/09_opportunities.rpy:4
     old "Да-а-а-а... Она действительно была не против, чтобы мои руки двигались выше... Хоть одежда и отделяет мои пальцы от Алисиной киски, но я всё равно чувствую её и она обалденная! Правда, без двух конфет такое уже не провернуть, а это значит, что нужно ещё больше сближаться с Алисой... И, может быть, мне даже удастся проникнуть своими пальцами в святую святых!"
-    new ""
+    new "Yeah... She really didn't mind my hands moving higher... Even though my clothes separate my fingers from Alice's pussy, I can still feel her and she's awesome! But I can't do it without two candies, which means that I have to get even closer to Alice... And maybe I can even get my fingers in the holy of holies!"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно больше сближаться с Алисой в экстремальных ситуациях. Для этого потребуются успехи в возможности \"Арахнофобия\"..."
-    new ""
+    new "You need to get closer to Alice in extreme situations. This will require progress in \"Arachnophobia\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попробовать не торопиться довести Алису до оргазма в самый последний момент..."
-    new ""
+    new "It's worth trying not to rush to bring Alice to orgasm at the very last moment..."
 
     # game/core/09_opportunities.rpy:4
     old "Так-то лучше! Если не торопиться, то Алиса даже позволяет стянуть с неё одежду, лишь бы я не останавливался и продолжал ласкать её киску. И казалось бы, всё здорово, но с помощью конфет далеко зайти с Алисой мне не удастся, потому что она ничего не помнит... Она уже не так резко реагирует на мои стояки, так что можно попробовать просунуть член в её ножки при массаже у ТВ, без конфет?"
-    new ""
+    new "That's better! If I take my time, Alice even lets me take off her clothes, as long as I don't stop and continue to caress her pussy. And it would seem that everything is great, but I can't go far with Alice with candy, because she doesn't remember anything... She doesn't react so sharply to my boners anymore, so can I try slipping my dick into her legs while massaging her at the TV, without the candy?"
 
     # game/core/09_opportunities.rpy:4
     old "Стоит рискнуть и во время массажа ног Алисы у ТВ без конфет, попробовать высунуть свой член и посмотреть на её реакцию..."
-    new ""
+    new "It's worth the risk and while massaging Alice's feet at the TV without candy, try taking your dick out and see her reaction..."
 
     # game/core/09_opportunities.rpy:4
     old "А ведь всё вышло намного лучше, чем я думал. Я ожидал жестокого избиения от Алисы, но она относительно спокойно отреагировала на то, что я делал. Да, немного повозмущалась, но ей понравилось... пока она не поняла, что дрочит мне ногами. Это обязательно нужно будет повторить..."
-    new ""
+    new "It turned out much better than I thought it would. I was expecting a brutal beating from Alice, but she reacted relatively calmly to what I was doing. Yeah, she was a little bit angry, but she liked it... Until she realized she was jerking me off with her feet. It will definitely have to be done again..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит снова рискнуть. Хуже не будет..."
-    new ""
+    new "It's worth the risk again. It won't get any worse..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса либо не ожидала, что я проверну то же самое, что и в прошлый раз, либо ожидала и просто развыступалась, чтобы не казаться такой же извращенкой, как и я сам! В любом случае, теперь она не против ТАКОГО массажа, но только если ей не будет слишком щекотно. Я уж постараюсь, чтобы не было..."
-    new ""
+    new "Either Alice didn't expect me to do the same thing I did last time, or she expected me to do it, so she wouldn't seem as perverted as I was! Either way, she doesn't mind this kind of massage now, as long as it doesn't tickle her too much. I'll try my best not to..."
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, всё офигенно! Мы наконец-то сошлись на том, что нам обоим это всё нравится. Я так думаю, можно даже попробовать помассировать её ноги выше ступней, а вот ещё выше лучше пока не лезть, всё-таки Алиса трезвая... Но, думаю, это изменится, когда я попрактикуюсь в массаже у профессионалов!"
-    new ""
+    new "Everything seems to be awesome! We finally agreed that we both like it. I think we can even try massaging her legs above her feet, but it's better not to go any higher, because Alice is sober after all... But I think that will change once I've learned to massage with professionals!"
 
     # game/core/09_opportunities.rpy:4
     old "Должно быть теперь, после того, чего я добился без конфет, их понадобится меньше, чем раньше? По крайней мере на то, что уже было..."
-    new ""
+    new "It must be that now, after what I've accomplished without candy, it will take less than before? At least for what I already had..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса такая добренькая и чуткая, если я защищаю её от наказаний. Только вот от этого мало что остаётся уже через час. Пора бы преподать ей урок и потребовать с неё что-нибудь стоящее для себя за защиту от наказаний мамы. Но нужно торопиться, на следующий день она и не вспомнит, что я для неё делал..."
-    new ""
+    new "Alice is so kind and sensitive if I protect her from punishment. Except there's not much left of that after an hour. It's time to teach her a lesson and demand something worthwhile from her for stopping Mom's punishments. But we must hurry, because the next day she won't even remember what I did for her..."
 
     # game/core/09_opportunities.rpy:4
     old "Времени немного. Нужно успевать до того, как Алиса ляжет спать..."
-    new ""
+    new "There's not much time. We have to make it before Alice goes to bed..."
 
     # game/core/09_opportunities.rpy:4
     old "Я ради интереса сказал Алисе, что больше не хочу за неё заступаться, когда её наказывают, но готов это делать и дальше, если она согласится, чтобы её шлёпал я. Конечно, она не согласилась на такое, но ничего... Посмотрим, что она скажет, когда мама её отшлепает, а я буду только смотреть на это. И даже если она не сразу согласится, то я буду спрашивать её из раза в раз..."
-    new ""
+    new "I told Alice, for the sake of interest, that I no longer wanted to stand up for her when she was being punished, but that I was willing to continue to do so if she agreed to be spanked by me. Of course, she didn't agree to that, but that's okay. We'll see what she says when Mom spanks her and I just watch it. And even if she doesn't agree right away, I'll ask her time after time after time..."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, Алиса согласится на мои условия, рано или поздно. Нужно лишь после каждого наказания не забывать напоминать ей, как было хорошо, когда я её защищал..."
-    new ""
+    new "I think Alice will agree to my terms, sooner or later. I just need to remember after each punishment to remind her how good it was when I defended her..."
 
     # game/core/09_opportunities.rpy:4
     old "Интересно получилось! Она сперва принимала мои условия в штыки, но после нескольких наказаний от мамы всё же согласилась, чтобы её шлёпал я. По крайней мере, если у меня будет получаться спасти Алису от маминой руки. Надо так же не забыть обсудить с ней, когда можно её отшлёпать. Но сперва нужно защитить, а уже после спрашивать."
-    new ""
+    new "It was interesting! She accepted my conditions with reluctance at first, but after a few punishment, she still agreed to let me spank her. At least, if I could save Alice from her Mom's hand. I also have to remember to discuss with her when I can spank her. But you have to protect her first, and then you have to ask her."
 
     # game/core/09_opportunities.rpy:4
     old "Обязательно нужно поговорить с Алисой в тот же день, в который мне удалось её защитить..."
-    new ""
+    new "It's imperative to talk to Alice on the same day that I managed to protect her..."
 
     # game/core/09_opportunities.rpy:4
     old "Ну вот и договорились. Теперь, если я защитил Алису от наказания, то на следующий день могу отшлёпать её во дворе, пока она загорает. Ну, а если это приватное наказание выпадает на выходные дни, то перенесём на понедельник, я не против. Правда есть небольшой нюанс, благодаря которому Алиса и согласилась на это... Я пообещал, что отшлёпаю её нежно. Да уж, будет не просто устоять и не влепить по её попке за то, как стервозно она себя вела..."
-    new ""
+    new "So that's the deal. Now, if I protected Alice from punishment, I can spank her in the yard the next day while she's sunbathing. Well, if that private punishment falls on the weekend, then we'll move it to Monday, that's fine with me. There's just one little thing that got Alice to agree to this... I promised her I'd give her a gentle spanking. Yeah, it's not gonna be easy to resist slapping her ass for being such a bitch..."
 
     # game/core/09_opportunities.rpy:4
     old "Если я подойду, а Алиса будет курить, то придётся поставить её в известность и немного подождать. С учётом того, что её ждёт, пусть спокойно покурит..."
-    new ""
+    new "If I walk up and Alice is smoking, I'll have to let her know and wait a little while. Given what's waiting for her, let her smoke in peace..."
 
     # game/core/09_opportunities.rpy:4
     old "Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось... \nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней. \n\nХорошо бы понять, как её лучше шлёпать, чтобы тискать как можно дольше и без вреда для здоровья."
-    new ""
+    new "The sight is truly mesmerizing! Not many people have ever managed to undress and spank their big sister. \nEven though she's naughty and threatening to do it, I think my persistence got the better of her. It's just as much fun to admire her naked and firm ass as it is to slap it. \nIt would be nice to know how to spank her, so that I could squeeze her for as long as possible and without harming her health."
 
     # game/core/09_opportunities.rpy:4
     old "Лучше шлёпать нежно. По крайней мере, сначала. Алиса не должна забывать, что это так или иначе, наказание..."
-    new ""
+    new "It's better to spank gently. At least at first. Alice must not forget that this is, one way or another, punishment..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше. Если шлёпать Алису нежно, а затем посильнее, то будет смысл проявить нежность, потерев её шёлковую попку. И ей не так больно, и мне крайне приятно."
-    new ""
+    new "Now I understand how not to overdo it, so that I can enjoy this private punishment as long as possible. If I spanked Alice gently, and then harder, it would make sense to show tenderness by rubbing her plump ass. It would not hurt her as much, and it would be extremely pleasurable for me."
 
     # game/core/09_opportunities.rpy:646
     old "Алиса любит понежиться на солнышке. Интересно, а она бы разрешила мне растереть ей спину каким-нибудь средством для загара? Стоит узнать..."
-    new ""
+    new "Alice likes to bask in the sun. I wonder if she'd let me rub some sunscreen on her back. It's worth finding out..."
 
     # game/core/09_opportunities.rpy:646
     old "Почему бы не составить Алисе компанию, когда она смотрит ТВ? А чтобы не сидеть без дела, можно и массаж ей сделать. Только нужно хоть какими-то знаниями обзавестись в этом деле..."
-    new ""
+    new "Why not keep Alice company while she watches TV? And not to sit idly by, you can give her a massage. You just need to get some massage knowledge ..."
 
     # game/core/09_opportunities.rpy:646
     old "Я слишком мало защищал Алису от наказаний мамы..."
-    new ""
+    new "I didn't protect Alice from being punished enough..."
 
     # game/core/09_opportunities.rpy:646
     old "Нужно опередить Эрика во всём, что он будет делать для Алисы. Особенно в дарении одежды..."
-    new ""
+    new "We need to get ahead of Eric in everything he will do for Alice. Especially buying clothes..."
 
     # game/core/09_opportunities.rpy:646
     old "Эрик подарил Алисе кружевное боди раньше меня, а значит я упустил возможность ещё больше с ней сблизиться. По крайней мере, пока не избавлюсь от него (но не в этой версии игры)..."
-    new ""
-
+    new "Eric gave Alice a lace bodysuit before I did, which means I missed an opportunity to get even closer to her. At least until I get rid of him (but not in this version of the game)..."
