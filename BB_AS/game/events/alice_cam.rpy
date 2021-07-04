@@ -1,7 +1,7 @@
 
 label cam0_alice_sleep_night:
     if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
-        $ cam_flag.append('sleep_fun' if alice.daily.massage==3 and RandomChance(750) and not alice.hourly.sleep else 'sleep_no_fun')
+        $ cam_flag.append('sleep_fun' if all([alice.daily.massage==3, RandomChance(750), not alice.hourly.sleep, 'kira' in chars]) else 'sleep_no_fun')
 
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
     if not alice.sleepnaked:
@@ -31,6 +31,7 @@ label cam0_alice_sleep_night:
         Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
         if not alice.flags.hip_mass:
             $ alice.flags.hip_mass = 1
+            $ poss['naughty'].open(4)
         $ Wait(20)
 
     elif all(['sleep_fun' in cam_flag, 'alice_sleep_fun' in cam_flag, 'alice_end_sleep_fun' not in cam_flag]):

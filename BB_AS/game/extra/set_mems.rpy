@@ -189,6 +189,7 @@ init python:
                 'alice'     : al,
                 'kol_choco' : 5,
                 'pose3_2'   : renpy.random.choice(['01', '02', '03']),
+                'chars'     : ['alice'],
             }
         return my_scope
 
@@ -211,7 +212,8 @@ init python:
                 '_ch20'     : Chance(700),
                 '_ch25'     : Chance(875),
                 '_pose'     : renpy.random.choice(['03', '04']),
-                '_dress'    : (renpy.random.choice(['b','c']) if 'max-a' in persistent.mems_var else 'c') + renpy.random.choice(dr_var)
+                '_dress'    : (renpy.random.choice(['b','c']) if 'max-a' in persistent.mems_var else 'c') + renpy.random.choice(dr_var),
+                'chars'     : ['alice', 'kira'],
             }
         return my_scope
 
@@ -221,7 +223,7 @@ init python:
         tl.dress = get_lisa_dress(tp='learn')
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress('a')
+        mg.dress = get_max_dress() if tl.dress == 'd' else get_max_dress('a')
 
         my_scope = {
                 'pose3_1' : renpy.random.choice(['01', '02', '03']),
@@ -564,7 +566,7 @@ init python:
         tk.stat.footjob = 1
         my_scope = {
             'kira'  : tk,
-            'mgg'      : mg,
+            'mgg'   : mg,
             }
         return my_scope
 

@@ -10198,3 +10198,96 @@ translate english alice_gift_sweets_1ebc62cf:
 
     # Max_01 "Наслаждайся конфетами, сластёна! Не буду мешать..."
     Max_01 "Enjoy your candy! I won't interrupt..."
+# TODO: Translation updated at 2021-06-28 23:57
+
+# game/dialogues/alicetalk.rpy:3834
+translate english alice_gift_sweets_21b81128:
+
+    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
+    Max_09 "I don't think it's a good idea to give a goodie today. It might arouse unnecessary suspicion... It is better to do it tomorrow."
+# TODO: Translation updated at 2021-07-04 11:48
+
+# game/dialogues/alicetalk.rpy:999
+translate english advanced_massage1_reciprocity_194015b5:
+
+    # Alice_02 "Ты даришь мне столько удовольствия, что я просто вынуждена ответить тебе взаимностью."
+    Alice_02 ""
+
+# game/dialogues/alicetalk.rpy:1000
+translate english advanced_massage1_reciprocity_2405c908:
+
+    # Max_02 "Значит, это будет что-то приятное?"
+    Max_02 ""
+
+# game/dialogues/alicetalk.rpy:1005
+translate english advanced_massage1_reciprocity_6a543908:
+
+    # Alice_03 "Думаю, тебе будет настолько хорошо, что закачаешься... Ты ведь наверняка об этом мечтал кучу раз?"
+    Alice_03 ""
+
+# game/dialogues/alicetalk.rpy:1006
+translate english advanced_massage1_reciprocity_768593ae:
+
+    # Max_04 "Хорошо, что мечты сбываются!"
+    Max_04 ""
+
+# game/dialogues/alicetalk.rpy:1017
+translate english advanced_massage1_reciprocity_f810aaf0:
+
+    # Alice_08 "И ещё как! Я уже приласкала тебя своими ножками... А как тебе мой язычок? Вижу, тебе это нравится... Я буду исследовать им твой член столько, сколько ты сможешь сдержаться!" nointeract
+    Alice_08 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1027
+translate english advanced_massage1_reciprocity_b368585e:
+
+    # Alice_05 "[restrain!t]А ты стойкий, Макс! Похоже, без помощи моих губ тебя не удастся удовлетворить. Ну, держись..."
+    Alice_05 ""
+
+# game/dialogues/alicetalk.rpy:1032
+translate english advanced_massage1_reciprocity_83e9a3a9:
+
+    # Max_21 "{i}( Ох, как это классно! Алиса с явным наслаждением посасывает мой член. Мой массаж её определённо очень возбуждает, раз она делает мне минет с таким смаком. Д-а-а, это кайф! ){/i}" nointeract
+    Max_21 "" nointeract
+
+# game/dialogues/alicetalk.rpy:1042
+translate english advanced_massage1_reciprocity_1272725b:
+
+    # Max_22 "[restrain!t]Давай, сестрёнка! Ты сосёшь просто отпадно! Если ты продолжишь ещё быстрее, то сдержаться я уже не смогу... О да, молодчинка... Д-а-а... Давай ещё... Именно так! Ох-х-х, я кончаю..."
+    Max_22 ""
+
+# game/dialogues/alicetalk.rpy:1048
+translate english advanced_massage1_reciprocity_da5f55a1:
+
+    # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1049
+translate english advanced_massage1_reciprocity_7fef34b9:
+
+    # Max_03 "Да, повеселились от души."
+    Max_03 ""
+
+# game/dialogues/alicetalk.rpy:1059
+translate english advanced_massage1_no_restrain_1bb78087:
+
+    # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+    Max_20 ""
+
+# game/dialogues/alicetalk.rpy:1065
+translate english advanced_massage1_no_restrain_da5f55a1:
+
+    # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
+    Alice_07 ""
+
+# game/dialogues/alicetalk.rpy:1066
+translate english advanced_massage1_no_restrain_7fef34b9:
+
+    # Max_03 "Да, повеселились от души."
+    Max_03 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:1032
+    old "{i}сдерживаться{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"
+    new ""
+

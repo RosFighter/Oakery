@@ -67,8 +67,11 @@ label back_shoping:
 
         Ann_05 "Привет, Макс! Мы вернулись..."
         Max_04 "Рассказывайте, что купили?"
-        if poss['Swimsuit'].st() == 2:
-            $ poss['Swimsuit'].open(4)
+        if poss['Swimsuit'].st() != 5:
+            if items['bikini'].have:
+                $ poss['Swimsuit'].open(6)
+            else:
+                $ poss['Swimsuit'].open(4)
             $ lisa.gifts.append('bikini')
             $ setting_clothes_by_conditions()
             $ infl[lisa].add_e(40, True)

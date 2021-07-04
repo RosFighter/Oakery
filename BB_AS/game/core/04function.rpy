@@ -396,7 +396,8 @@ init python:
     def DeletingDeliveryTempVar(courier): # удаляет временные переменные строки списа доставленных товаров
         n = 1
         for i in delivery_list[courier]:
-            del globals()['TmpName'+str(n)]
+            if 'TmpName'+str(n) in globals():
+                del globals()['TmpName'+str(n)]
             n += 1
         delivery_list[courier].clear()
 
@@ -598,9 +599,9 @@ init python:
         if current_room == house[1] and len(current_room.cur_char) == 0:
             AvailableActions['usb'].active = True
             AvailableActions['searchbook'].active = all([alice.plan_name != 'read', '08:00' <= tm < '22:00'])
-            if items['spider'].have and poss['spider'].used(3):
+            if items['spider'].have and poss['spider'].used(4):
                 AvailableActions['hidespider'].active = True
-            AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00'])
+            AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00', (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)])
 
         # ванная комната
         if current_room == house[3]:
@@ -1042,10 +1043,10 @@ init python:
 
 
     def GetLisaPunChance():  # вероятность наказания Лизы
-        if len(punlisa) == 0 or punlisa[0][0] > 2:
+        if len(punlisa) < 2 or punlisa[1][0] > 2:
             return 0  # Макс помогал правильно
 
-        elif punlisa[0][0] == 1:
+        elif punlisa[1][0] == 1:
             return 1000  # Макс сделал ошибку
 
         elif not lisa.dcv.punpause.done:
@@ -1055,7 +1056,7 @@ init python:
 
             s = 0
 
-            for d in range(0, len(punlisa)):
+            for d in range(1, len(punlisa)):
                 if not punlisa[d][0]:
                     s += 1
 
@@ -1070,7 +1071,7 @@ init python:
             mind = 250
 
             # если Макс просил об услуге неудачно, базовый шанс двойки 30% (сердитая Лиза менее внимательна, чем обычно)
-            pun_chance = 300.0 if punlisa[0][0] == 2 else 50.0
+            pun_chance = 300.0 if punlisa[1][0] == 2 else 50.0
 
             for d in range(1, len(punlisa)):
                 if punlisa[d][3]:

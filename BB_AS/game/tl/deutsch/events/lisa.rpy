@@ -658,13 +658,13 @@ translate deutsch lisa_romantic_movie_0_1095a0d0:
 translate deutsch lisa_romantic_movie_0_f9bf1574:
 
     # Max_07 "А ты на экран смотри, а не на член."
-    Max_07 "Du bist diejenige, die auf meinen Schwanz statt auf den Fernseher geschaut hat."
+    Max_07 "Du bist diejenige, die auf meinen Schwanz statt auf den Film geschaut hat."
 
 # game/events/lisa.rpy:769
 translate deutsch lisa_romantic_movie_0_1574058f:
 
     # Lisa_10 "Да не могу я смотреть на экран, когда и там и у тебя такое... Всё, я спать!"
-    Lisa_10 "Nein, du hast Recht. Ich kann mich nicht auf den Fernseher konzentrieren, wenn du... Das war's. Ich gehe jetzt ins Bett."
+    Lisa_10 "Ich kann mich nicht auf den Film konzentrieren, wenn du... Ich gehe jetzt ins Bett."
 
 # game/events/lisa.rpy:771
 translate deutsch lisa_romantic_movie_0_288ac083:
@@ -1804,5 +1804,67 @@ translate deutsch strings:
 translate deutsch lisa_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 ""
+    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
+
+# TODO: Translation updated at 2021-06-28 23:59
+
+# game/events/lisa.rpy:195
+translate deutsch lisa_shower_pinded_aded2cb3:
+
+    # Lisa_11 "[spotted!t]Ой, Макс! Опять ты подглядываешь... Это уже маньячество какое-то!"
+    Lisa_11 "[spotted!t] Oh, Max! Du spionierst schon wieder... Das ist doch Wahnsinn!"
+
+# game/events/lisa.rpy:196
+translate deutsch lisa_shower_pinded_839bdc8e:
+
+    # Max_02 "Просто любуюсь формами! А так, я вообще мимо шёл, а здесь ты..."
+    Max_02 "Ich bewundere einfach nur deine Figur! Also, ich bin nur vorbeigelaufen, und da bist du..."
+
+# game/events/lisa.rpy:197
+translate deutsch lisa_shower_pinded_c430f032:
+
+    # Lisa_10 "Вот и иди мимо! И без майки ты меня теперь две недели точно не увидишь. Помнишь, я предупреждала?"
+    Lisa_10 "Also geh ruhig vorbei! Und du wirst mich zwei Wochen lang nicht ohne Oberteil zu sehen bekommen. Erinnerst du dich, dass ich dich gewarnt habe?"
+
+# game/events/lisa.rpy:198
+translate deutsch lisa_shower_pinded_02f58c38:
+
+    # Max_08 "Блин! Точно, вспомнил... Но, может..."
+    Max_08 "Scheiße! Richtig, ich erinnere mich... Aber vielleicht..."
+
+# game/events/lisa.rpy:199
+translate deutsch lisa_shower_pinded_d7baed79:
+
+    # Lisa_13 "Нет. Это будет для тебя уроком!"
+    Lisa_13 "Nein. Das wird eine Lektion für dich sein!"
+
+# game/events/lisa.rpy:200
+translate deutsch lisa_shower_pinded_7428c407:
+
+    # Max_11 "Ладно..."
+    Max_11 "Okay, ähm..."
+
+# game/events/lisa.rpy:210
+translate deutsch lisa_shower_pinded_88f45d12:
+
+    # Lisa_13 "[spotted!t] Ай, Макс!!! Ты в конец бессовестный что ли?! Отвернись немедленно и иди куда шёл!"
+    Lisa_13 "[spotted!t] Ach, Max!!! Bist du völlig gewissenlos oder was?! Dreh dich sofort um und verschwinde dorthin, wo du hin willst!"
+
+# game/events/lisa.rpy:211
+translate deutsch lisa_shower_pinded_6f1ab50c:
+
+    # Max_13 "Лиза, я случайно! Ты же не расскажешь маме?"
+    Max_13 "Lisa, es war ein Versehen! Du wirst es doch nicht Mom erzählen, oder?"
+
+# game/events/lisa.rpy:212
+translate deutsch lisa_shower_pinded_1ad82afe:
+
+    # Lisa_14 "Ещё как расскажу! Сразу же, как только душ спокойно приму... А ты, вали с глаз моих!"
+    Lisa_14 "Doch, das werde ich! Sobald ich in Ruhe duschen kann... Und du, geh mir aus den Augen!"
+
+# game/events/lisa.rpy:213
+translate deutsch lisa_shower_pinded_e472503c:
+
+    # Max_10 "Вот же попал!"
+    Max_10 "So ein Mist!"
 

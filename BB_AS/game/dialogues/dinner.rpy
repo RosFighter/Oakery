@@ -10,26 +10,63 @@ label after_dinner:
     elif alice.dcv.battle.stage==5 and not alice.dcv.intrusion.enabled:
         $ alice.dcv.intrusion.set_lost(6)
 
-    if len(punlisa)> 0 and (punlisa[0][3] == 1 or punlisa[0][2] > 1):
+    if len(punlisa)>1 and punlisa[0][1] == 1:
+        # Лиза получила двойку
+        if poss['sg'].st() == 1:
+            # "плохой" путь
+            if punlisa[0][2]>1:
+                # Макс успешно заступился за Лизу
+                call conversation_after_dinner(1)
+            elif punlisa[0][2]>0:
+                # Макс пытался заступиться за Лизу, но не получилось
+                call conversation_after_dinner(2)
+            else:
+                # Макс даже не пытался защитить Лизу
+                call conversation_after_dinner(3)
+        elif poss['sg'].st() == 4 and punlisa[0][3]:
+            # "хороший" путь, Лиза получила наказание
+            if punlisa[1][0]<1:
+                # Макс не помогал
+                call conversation_after_dinner(4)
+            elif punlisa[1][0]<2:
+                # Макс специально сделал ошибку
+                call conversation_after_dinner(5)
+        elif poss['sg'].st() == 2 and lisa.flags.truehelp < 6:
+            # Претензии на "хорошем" пути
+            if not lisa.flags.help:
+                # Макс ещё не набрал 6 домашек и вообще не помогал
+                call conversation_after_dinner(6)
+            elif punlisa[1][0]<2:
+                # Макс так себе помогал
+                call conversation_after_dinner(7)
+        elif (poss['sg'].used(3) or poss['sg'].used(5)) and punlisa[1][0]<2:
+            # заключен договор "ты мне - я тебе", Макс сделал двойку специально или не помогал
+            if punlisa[1][0]<1:
+                # Макс не помогал
+                call conversation_after_dinner(8)
+            else:
+                # Макс специально сделал ошибку
+                call conversation_after_dinner(7)
+
         # Лизу наказали
-        if all([punlisa[0][0] == 1, len(punlisa) >= 7, ColumnSum(punlisa, 1, 7) == 2,
-                    poss['sg'].st() == 2, lisa.flags.truehelp>5]):
-            # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
-            call conversation_after_dinner(5) from _call_conversation_after_dinner_4
-        elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].st() > 2]):
-            # если Макс подставил Лизу и её подозрение достигло 100% (1000)
-            call conversation_after_dinner(4) from _call_conversation_after_dinner
-        elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done, not lisa.dcv.other.stage]):
-            # если Макс не помогал Лизе 5 раз и разговора после ужина не было больше недели
-            if lisa.flags.help == 0 and poss['sg'].st() <= 2:
-                # совсем не помогал
-                call conversation_after_dinner(1) from _call_conversation_after_dinner_1
-            elif poss['sg'].st() == 2:
-                # безвозмездно помогал, но перестал
-                call conversation_after_dinner(2) from _call_conversation_after_dinner_2
-            elif poss['sg'].st() > 2 and poss['seduction'].st() < 19:
-                # обещал помогать за услуги, но не стал или перестал
-                call conversation_after_dinner(3) from _call_conversation_after_dinner_3
+        # if all([punlisa[0][0] == 1, len(punlisa) >= 7, ColumnSum(punlisa, 1, 7) == 2,
+        #             poss['sg'].st() == 2, lisa.flags.truehelp>5]):
+        #     # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
+        #     call conversation_after_dinner(5) from _call_conversation_after_dinner_4
+        # elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].st() > 2]):
+        #     # если Макс подставил Лизу и её подозрение достигло 100% (1000)
+        #     call conversation_after_dinner(4) from _call_conversation_after_dinner
+        # elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done, not lisa.dcv.other.stage]):
+        #     # если Макс не помогал Лизе 5 раз и разговора после ужина не было больше недели
+        #     if lisa.flags.help == 0 and poss['sg'].st() <= 2:
+        #         # совсем не помогал
+        #         call conversation_after_dinner(1) from _call_conversation_after_dinner_1
+        #     elif poss['sg'].st() == 2:
+        #         # безвозмездно помогал, но перестал
+        #         call conversation_after_dinner(2) from _call_conversation_after_dinner_2
+        #     elif poss['sg'].st() > 2 and poss['seduction'].st() < 20:
+        #         # обещал помогать за услуги, но не стал или перестал
+        #         call conversation_after_dinner(3) from _call_conversation_after_dinner_3
 
     jump Waiting
 
@@ -237,7 +274,6 @@ label dinner_2:
             pass
         "Помощь нужна?":
             if alice.flags.crush < 2:
-                $ poss['blog'].open(0)
                 jump .help
 
     label .blog2:
@@ -245,11 +281,9 @@ label dinner_2:
             Alice_00 "Кстати, ты уже предлагал свою помощь, если я не ошибаюсь... Или это было так, не серьёзно всё?"
             Max_09 "А ты и правда прислушаешься к моим советам?"
             Alice_13 "Макс, я готова на любую помощь. У самой уже нет идей, если честно. Так что, да. Прислушаюсь..."
-            $ poss['blog'].open(0)
             Max_03 "Отлично. Тогда и правда помогу!"
             jump .next
         else:
-            $ poss['blog'].open(0)
             menu:
                 Alice_07 "Зачем? Чтобы ты в очередной раз посмеялся? И, вообще, если ты такой умный, то вот ты и придумай что-нибудь. Я даже спасибо скажу. Честно говоря, я в депрессии..."
                 "Даже спасибо? Ну, хорошо...":
@@ -265,6 +299,7 @@ label dinner_2:
             pass
 
     label .next:
+        $ poss['blog'].open(0)
         Ann_01 "Ох, детишки. Не понимаю я ничего в этих ваших блогах и не уверена, что на это надо тратить своё время, но разберётесь. Я хотела спросить, ни к кому в комнату никакие насекомые не заползали?"
         Max_09 "Нет вроде, а что?"
         Ann_00 "Да я сегодня огромного паука видела... Даже не знала, что такие бывают..."
@@ -683,7 +718,10 @@ label dinner_ab_lisa_ed:
             Lisa_01 "Хорошо, мам."
             $ lisa.dcv.intrusion.enabled = True
             $ lisa.dcv.intrusion.stage = 1
-        $ poss['seduction'].open(20)
+            $ poss['seduction'].open(22)
+        else:
+            # отсрочка
+            $ poss['seduction'].open(21)
     else:
         # Макс решил не уступать Лизу Эрику
         Eric_01 "Я решил, что нужно уделить твоему образованию больше внимания, Лиза. Так что я оплатил дополнительные учебные курсы у вас в школе."
@@ -699,7 +737,7 @@ label dinner_ab_lisa_ed:
         Lisa_01 "Хорошо, мам."
         $ lisa.dcv.intrusion.enabled = True
         $ lisa.dcv.intrusion.stage = 1
-        $ poss['seduction'].open(21)
+        $ poss['seduction'].open(23)
 
     Ann_01 "Вот и хорошо. Давайте теперь спокойно поедим."
     Max_00 "Давайте."
@@ -734,6 +772,7 @@ label dinner_ab_earn:
         $ lisa.dcv.battle.stage = 5
         $ lisa.dcv.intrusion.enabled = True
         $ lisa.dcv.intrusion.stage = 1
+        $ poss['seduction'].open(22)
     else:
         # отсрочки уроков Лизы не было
         Ann_04 "Я была бы тебе сынок очень признательна, если бы так и было. А теперь, давайте больше ешьте, а не разговаривайте."

@@ -876,5 +876,5 @@ translate deutsch strings:
 translate deutsch ann_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 ""
+    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
 

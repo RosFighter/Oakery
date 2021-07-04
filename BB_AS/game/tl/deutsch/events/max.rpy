@@ -130,7 +130,7 @@ translate deutsch Box_7d70e813:
 translate deutsch Box_05229898:
 
     # Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
-    Max_01 "Einige Anweisungen, Beschreibungen im Inneren... diese Box war für eine versteckte Kamera! Ich frage mich, was es hier macht?"
+    Max_01 "Da ist eine Art Handbuch drin, eine Beschreibung... Es ist eine versteckte Kamera! Ich frage mich, warum mein Vater sowas macht?"
 
 # game/events/max.rpy:198
 translate deutsch Box_b28a0ea4:
@@ -484,7 +484,7 @@ translate deutsch SearchSecretBook_table_f75e7ca0:
 translate deutsch SearchSecretBook_wardrobe_ef3ccc0f:
 
     # Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
-    Max_04 "Da ist es! Warum musste sie es verstecken? Interessantes Cover. Ich frage mich, worum es in diesem Buch geht? Ich werde mir den Namen merken und im Internet suchen"
+    Max_04 "Da ist sie! Warum es so verstecken? Interessante Tarnung. Ich werde mir den Namen merken. Ich frage mich, was es damit auf sich hat. Vielleicht sollte ich das mal googeln. In Ordnung, ich muss los..."
 
 # game/events/max.rpy:727
 translate deutsch InstallCam_b5c9650c:

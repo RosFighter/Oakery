@@ -97,6 +97,9 @@ init python:
         elif  all([GetWeekday(day)==5, olivia.dcv.feature.stage>3, not olivia.dcv.special.done]):
             # пятница, состоялась беседа о ночных посиделках, не прошел откат ночных посиделок
             rez = True
+        elif all([GetWeekday(day)==5, olivia.dcv.special.stage==1, olivia.dcv.feature.stage<5]):
+            # пятница, после первых ночных посиделок, разговора с Оливией после ночного визита ещё не было
+            rez = True
 
         return rez
 
@@ -108,8 +111,11 @@ init python:
 
         rez = False
 
-        if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, olivia.dcv.special.done]):
-            # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, прошел откат ночных посиделок
+        if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, not olivia.dcv.special.stagee]):
+            # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, ночных посиделок ещё не было
+            rez = True
+        elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):
+            # ночь с пятницы на субботу, состоялась беседа после первых ночных посиделках, прошел откат ночных посиделок
             rez = True
 
         return rez
@@ -126,15 +132,15 @@ init python:
         if not lisa_was_topless():
             return 0    # не было просмотра ТВ с Оливией топлесс
 
-        if not lisa.dcv.other.done:
-            return -4
-
         if lisa.plan_name == 'tv2':
             #1 с пн-пт Лизу наказывали и была 1 успешная защита от наказания, то: 1 помощь с уроками + 1 массаж рук + 1 мытьё посуды
             #2 с пн-пт Лизу не наказывали, то: 2 помощи с уроками + 1 массаж рук + 2 мытья посуды
             #3 с пн-пт Лизу наказывали и не было защиты или не поучилось защитить, то: 3 помощи с уроками + 2 массажа рук + 3 мытья посуды
             #4 уговор с Лизой на ужастики-топлесс, но Макс больше 2х раз за неделю влез в душ, идёт 2хнедельный откат
             lw = lisa.weekly
+            if not lisa.dcv.shower.done:
+                # Макс попался на третьем подглядывании за неделю (соглашение об ужастиках топлесс)
+                return -4
             if lw.punished:
                 # Лизу наказывали
                 if lw.protected:
@@ -146,6 +152,10 @@ init python:
             else:
                 # не было наказаний
                     return 2 if all([lw.help>1, lw.mass1, lw.dishes>1]) else -2
+        # else:
+        #     if not lisa.dcv.other.done:
+        #         # Лизу наказали, значит ужастики в майке
+        #         return -4
 
 
     # соблюдены условия для открытия второй камеры ванной

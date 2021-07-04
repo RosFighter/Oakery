@@ -123,7 +123,7 @@ init python:
                 self.cur = cur
             elif added:
                 self.rand = True
-                self.left = self.days
+                self.left = 1 + self.days*2
                 if type(nums) == int:
                     self.cur = nums
                 elif type(nums) in [tuple, list]:
@@ -145,7 +145,7 @@ init python:
 
             if added:
                 self.rand = True
-                self.left = self.days
+                self.left = 1 + self.days * 2
                 if type(nums) == int:
                     self.cur = nums
                 elif type(nums) in [tuple, list]:
@@ -323,11 +323,12 @@ init python:
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
 
     class Weekly_resets():      # сбрасываемые раз в неделю
-        mass1       = 0
-        dishes      = 0
-        help        = 0
-        punished    = 0
-        protected   = 0
+        mass1       = 0     # массажей (рук для Лизы)
+        dishes      = 0     # помогал с посудой
+        help        = 0     # помогал (с домашкой для Лизы)
+        punished    = 0     # попала под наказание
+        protected   = 0     # защитил
+        shower      = 0     # попался в душе
 
         def __init__(self):
             self.mass1      = 0
@@ -335,6 +336,7 @@ init python:
             self.help       = 0
             self.punished   = 0
             self.protected  = 0
+            self.shower     = 0
 
         def reset(self):
             for attr in self.__dict__:
@@ -434,6 +436,7 @@ init python:
         m_back      = 0         # счетчик массажей спины
         m_pussy     = 0         # счетчик масажей киски
         kiss_lesson = 0         # счетчик уроков поцелуев
+        kiss_touch  = 0         # счетчик поцелуев с прикосновениями
         porno       = 0         # счетчик совместно просмотренных порнофильмов
         erofilms    = 0         # счетчик совместно просмотренных эротических фильмов
         help        = 0         # счетчик помощи девушке (с домашкой, йогой или чем-то подобным)
@@ -462,6 +465,7 @@ init python:
             self.m_back         = 0
             self.m_pussy        = 0
             self.kiss_lesson    = 0
+            self.kiss_touch     = 0
             self.porno          = 0
             self.erofilms       = 0
             self.help           = 0
@@ -477,13 +481,14 @@ init python:
         battle      = None      # битва за девушку (откаты и стадии)
         intrusion   = None      # вмешательство (махинации) Эрика
         photo       = None      # фотосессии
-        set_up      = None      # можем подставить
+        set_up      = None      # можем подставить Алису
         feature     = None      # секреты, особенности, стадии бесед
         special     = None      # курение Алисы, фильм-наказание с Лизой, ночные посещения с Оливией
         seduce      = None      # соблазнение
         other       = None      # прочее, просмотры ТВ с Оливией
         gifts       = None      # особые подарки
         private     = None      # доступно приватное наказание
+        shower      = None      # откат по подглядыванию в душе. Стадии: 0-без ограничений, 1-мягкое ограничение, 2-спалился, жёсткое ограничение
 
         def __init__(self):
             self.punpause   = Daily()
@@ -499,6 +504,7 @@ init python:
             self.other      = Daily()
             self.gifts      = Daily()
             self.private    = Daily()
+            self.shower     = Daily()
 
         def countdown(self, exceptions=[], only=[]):
             for attr in self.__dict__:
@@ -516,9 +522,8 @@ init python:
                     dcv.set_lost(dcv.lost - 1)
 
         def reinit(self):
-            for attr in self.__dict__:
-                if getattr(self, attr) is None:
-                    setattr(self, attr, Daily())
+            if self.shower is None:
+                self.shower = Daily()
 
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
@@ -553,6 +558,7 @@ init python:
         req         = None      # требование
         stat        = None      # статистика сексульных отношений
         clothes     = None      # сменяемая одежда
+        claims      = None      # претензии
 
         # сбрасываемые
         weekly  = None          # раз в неделю
@@ -573,6 +579,7 @@ init python:
             self.flags      = Flags_Counter(id) # флаги и счетчики
             self.stat       = SexStat(id)       # статистика сексульных отношений
             self.req        = Request()         # требование к девушке
+            self.claims     = []                # претензии девушки
 
             self.clothes    = Clothing()        # сменяемая одежда
 
@@ -820,7 +827,10 @@ init python:
                 self.dcv        = Dcv_list()
 
             if self.weekly is None:
-                self.weekly = Weekly_resets()
+                self.weekly     = Weekly_resets()
+
+            if self.claims is None:
+                self.claims     = []        # претензии
 
     ############################################################################
 
@@ -1007,7 +1017,7 @@ init python:
         eric_photo1     = 0         # получено фото Эрика на балконе
         eric_photo2     = 0         # получено фото Эрика в комнате Алисы
         eric_fee        = 0         # прибавка или штраф к карманным деньгам от Эрика
-        voy_stage       = 0         # стадии подглядывания за АиЭ
+        voy_stage       = -1        # стадии подглядывания за АиЭ
 
         ladder          = 0         # стадии получения/установки стремянки
         credit          = 0         # стадии доступа к кредиту  (доработать на опережение Эрика с бельём)
@@ -1040,6 +1050,8 @@ init python:
             self.eric_noticed       = False
             self.eric_photo1        = 0
             self.eric_photo2        = 0
+            self.eric_fee           = 0
+            self.voy_stage          = -1
             self.bonus_from_eric    = []
             self.how_to_kiss        = []
             self.lisa_sexed         = -1
@@ -1119,6 +1131,8 @@ init python:
 
         def block(self):        # блокирует доступ к приобретению
             self.InShop = False
+            self.bought = False
+            self.delivery = 0
 
         def unblock(self):      # открывает доступ к приобретению предмета
             self.InShop = True
@@ -1188,7 +1202,10 @@ init python:
             self.stages[stage] = 1
 
         def used(self, stage):      # проверяет, задействован ли этап возможности
-            return self.stages[stage]   #.used
+            if type(self.stages[stage]) == PossStage:
+                return self.stages[stage].used
+            else:
+                return self.stages[stage]   #.used
 
         def st(self):   # возвращает номер текущего этапа (максимальный открытый)
             stn = [i for i, st in enumerate(self.stages) if st]
@@ -1349,11 +1366,11 @@ init python:
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
         MorningWood1    = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].st()<4])", sleep=True, cut=True)
-        MorningWood2    = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].st()>10, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
+        MorningWood2    = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
         Eric_af_dinner  = CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day<12 or flags.dinner==11')
-        Eric_Lisa0      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].st() in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)])")
+        Eric_Lisa0      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].st() in [15, 16], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)])")
         Eric_Lisa1      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([GetWeekday(day)==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done])")
         Eric_Alice0     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([GetWeekday(day)==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)])")
         Eric_Alice1     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([GetWeekday(day)==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done])")

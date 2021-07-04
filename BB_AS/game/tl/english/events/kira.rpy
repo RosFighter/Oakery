@@ -4365,23 +4365,30 @@ translate english strings:
 translate english kira_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 ""
+    Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."
 
 # game/events/kira.rpy:2220
 translate english kira_shower_ladder_90ff417e:
 
     # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-    Max_00 ""
+    Max_00 "Even though I don't want to, I'd better leave before I'm noticed..."
 
 # game/events/kira.rpy:2457
 translate english kira_lisa_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 ""
+    Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."
 
 # game/events/kira.rpy:2603
 translate english kira_alice_shower_ladder_f790b709:
 
     # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
+    Max_07 "My viewers are obviously missing out on a lot of great stuff! I should definitely install another camera here..."
+# TODO: Translation updated at 2021-06-26 22:47
+
+# game/events/kira.rpy:1436
+translate english kira_night_tv_second_lesson_e9adc097:
+
+    # Max_07 "Я думал, что у меня неплохо получается..."
     Max_07 ""
 

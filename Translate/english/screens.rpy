@@ -421,3 +421,4 @@ translate english strings:
     # game/screens.rpy:915
     old "Отображать все \"Возможности\""
     new "Display all \"Possibilities\""
+

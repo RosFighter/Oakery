@@ -405,3 +405,14 @@ translate english strings:
     old "Подсказка:"
     new "Hint:"
 
+# TODO: Translation updated at 2021-06-28 23:57
+
+translate english strings:
+
+    # game/core/screens.rpy:1629
+    old "Лучше пока не попадаться на подглядывании за Лизой в душе"
+    new "Better not get caught peeking at Lisa in the shower just yet"
+
+    # game/core/screens.rpy:1653
+    old "Лучше пока не попадаться на подглядывании за Алисой в душе"
+    new "Better not get caught peeking at Alice in the shower just yet"

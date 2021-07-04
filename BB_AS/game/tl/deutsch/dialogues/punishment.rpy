@@ -760,13 +760,13 @@ translate deutsch punishment_alice_6bf98fd4:
 translate deutsch punishment_alice_6424b699:
 
     # Max_04 "{i}( Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня! ){/i}"
-    Max_04 "{i}(Es sind Zeiten wie diese, in denen ich es nicht bereue, fast nackt voreinander bestraft zu werden! Wer braucht schon Pornos, wenn ich so eine Show vor mir habe?){/i}"
+    Max_04 "{i}(Es sind Momente wie dieser, in denen ich es nicht bereue, dass wir praktisch nackt voreinander bestraft werden! Ich brauche nicht einmal einen Porno, wenn eine solche Show nur wenige Meter vor mir abläuft!){/i}"
 
 # game/dialogues/punishment.rpy:665
 translate deutsch punishment_alice_78ef4f88:
 
     # Max_04 "{i}( Люблю, когда Алису наказывают... Стервозинка она та ещё, но без последствий полюбоваться её голыми прелестями в других ситуациях опасно для жизни! ){/i}"
-    Max_04 "{i}( Ich liebe es zu sehen, dass Alice zur Abwechslung mal das bekommt, was sie verdient! Sie ist so eine Schlampe... Ich bin froh, dass ich ihren knackigen Körper sehen kann, ohne um mein Leben fürchten zu müssen! ){/i}"
+    Max_04 "{i}( Ich liebe es, wenn Alice bestraft wird... Sie ist ein bisschen zickig, aber es ist lebensgefährlich, ihre nackten Reize in anderen Situationen ohne Konsequenzen zu bewundern! ){/i}"
 
 # game/dialogues/punishment.rpy:669
 translate deutsch punishment_alice_9e2ea44b:

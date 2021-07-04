@@ -46,7 +46,7 @@ translate deutsch back_shoping_838f5698:
 translate deutsch back_shoping_ff699a77:
 
     # Ann_01 "Алиса, мы это уже обсуждали. Я против платьев, где у тебя всё видно. То, что оно длинное, не значит, что твою задницу не видно через разрез до ушей..." nointeract
-    Ann_01 "Alice, wir haben es bereits besprochen. Das Kleid war zu übertrieben offen, man konnte fast deinen Hintern sehen." nointeract
+    Ann_01 "Alice, das haben wir doch schon besprochen. Ich bin gegen Kleider, bei denen man alles sehen kann. Nur weil es lang ist, heißt das nicht, dass man deinen Arsch nicht durch einen Schlitz bis hoch zu deinen Ohren sehen kann..." nointeract
 
 # game/events/other.rpy:38
 translate deutsch back_shoping_ec104f51:
@@ -58,7 +58,7 @@ translate deutsch back_shoping_ec104f51:
 translate deutsch back_shoping_e23a2e06:
 
     # Max_01 "А что с Лизой? Купальник купили?"
-    Max_01 "Und was ist mit Lisa? Haben Sie einen Bikini bekommen?"
+    Max_01 "Und was ist mit Lisa? Hast du deinen Bikini bekommen?"
 
 # game/events/other.rpy:40
 translate deutsch back_shoping_dbb7dd3e:
@@ -76,13 +76,13 @@ translate deutsch back_shoping_4ac118f9:
 translate deutsch back_shoping_0901fee4:
 
     # Max_05 "Ясно. А насколько открытыми были остальные?"
-    Max_05 "Ich verstehe. Wie freizügig waren sie"
+    Max_05 "Ich verstehe. Und wie freizügig waren die gewünschten?"
 
 # game/events/other.rpy:47
 translate deutsch back_shoping_b5471cb2:
 
     # Ann_05 "Ну тебе бы точно понравилось, как и всем мужикам, кто её бы увидел, но Лиза ещё маленькая, чтобы в таком виде появляться на публике. Так что..."
-    Ann_05 "Nun, du hättest ihn gern gehabt, wie alle Männer, aber Lisa ist zu jung, um so etwas zu tragen"
+    Ann_05 "Nun, Du hättest ihn geliebt, ebenso wie alle Männer, die ihn gesehen hätten, aber Lisa ist zu jung, um sich so in der Öffentlichkeit zu zeigen. Also, äh..."
 
 # game/events/other.rpy:48
 translate deutsch back_shoping_542cfe6c:
@@ -106,7 +106,7 @@ translate deutsch back_shoping_3081eefb:
 translate deutsch back_shoping_87e46818:
 
     # Ann_01 "Алиса, хватит мечтать. Это всё выглядит так, как будто вы хотите из него выкачать как можно больше денег. Успокойтесь и будьте скромнее..." nointeract
-    Ann_01 "Hör auf damit, Alice. Es sieht so aus, als wolltest du nur so viel Geld wie möglich aus ihm herausquetschen. Beruhige dich und sei respektvoll." nointeract
+    Ann_01 "Alice, hör auf zu träumen. Es sieht alles so aus, als wolltest du so viel Geld wie möglich aus ihm herausholen. Beruhige dich und sei etwas mehr bescheiden..." nointeract
 
 # game/events/other.rpy:54
 translate deutsch back_shoping_b5a1abfc:

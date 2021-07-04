@@ -159,6 +159,17 @@ label eric_time_settings:
             # сбрасываем флаг диалога с Лизой
             $ flags.l_ab_sexed = False
 
+    if prevtime < '01:55' <= tm:
+        if 'sexbody2' in alice.gifts and check_is_home('eric'):
+            if ((GetWeekday(day)==4 and RandomChance(700))
+                or (GetWeekday(day)==5 and RandomChance(350))):
+                # Эрик дрочит на спящую Алису
+                $ flags.eric_jerk = True
+            else:
+                $ flags.eric_jerk = False
+        else:
+            $ flags.eric_jerk = False
+
     if day != prevday:
         # полночь
         if check_is_home('eric'):
@@ -178,7 +189,7 @@ label Midnight:
     $ random_loc_ab = renpy.random.choice(['a', 'b'])
     $ random_sigloc = renpy.random.choice(['n', 't'])
 
-    if alice.dcv.special.enabled:
+    if alice.dcv.special.enabled and alice.dcv.set_up.enabled:
         $ alice.daily.smoke = 0
         $ alice.nopants     = False
         $ alice.sleeptoples = False
@@ -211,15 +222,6 @@ label Midnight:
             $ ae_tv_order = ['0'+str(i) for i in range(1, 8)]
             $ renpy.random.shuffle(ae_tv_order)  # перемешаем список случайным образом
 
-    if 'sexbody2' in alice.gifts and check_is_home('eric'):
-        if ((GetWeekday(day)==4 and RandomChance(700))
-            or (GetWeekday(day)==5 and RandomChance(350))):
-            # Эрик дрочит на спящую Алису
-            $ flags.eric_jerk = True
-        else:
-            $ flags.eric_jerk = False
-    else:
-        $ flags.eric_jerk = False
     $ flags.eric_noticed = False
     $ prenoted = 0
     $ film = ''
@@ -233,6 +235,10 @@ label Midnight:
                 char.dcv.countdown(['special'])
             else:
                 char.dcv.countdown()
+
+            if char.dcv.shower.done and char.dcv.shower.stage:
+                # откат по подглядыванию в душе кончился, обнуляем этап
+                char.dcv.shower.stage = 0
 
         dcv.countdown()
 
@@ -291,7 +297,7 @@ label NewDay:
                 ])
             $ del punlisa[10:]
 
-    if poss['smoke'].st() > 1:  # Макс видел курящую Алису
+    if poss['smoke'].st() > 2:  # Макс видел курящую Алису
         $ punalice.insert(0, [  # вставляем в начало
             0,  # Макс шантажировал Алису (1-передумал, 2-неудачно, 3-деньги, 4-перекур топлес, 5-лифчик, 6-трусики, 7-джинсы, 8-голая)
             0,  # Макс подставлял Алису
@@ -334,19 +340,23 @@ label Noon:
         not items['erobook_'+str(alice.dcv.gifts.stage)].InShop): # прошел откат после дарения книги, можно купить следующую
         $ items['erobook_'+str(alice.dcv.gifts.stage)].unblock()
         $ new_items = True
-    if (GetWeekday(day)==1 and 'kira' in chars and kira.dcv.feature.stage>6     # понедельник, состоялась первая фотосессия с Кирой
-            and not ('sexbody1' in alice.gifts or items['sexbody1'].have or items['sexbody1'].InShop)):     # sexbody1 ещё не продавалось
+    if (GetWeekday(day)==1 and # понедельник
+            (('kira' in chars and kira.dcv.feature.stage>6) or alice.dcv.photo.done)    # состоялась первая фотосессия с Кирой или прошло 8 дней с момента вручения тёмного белья Алисе
+            and not ('sexbody1' in alice.gifts or items['sexbody1'].have or items['sexbody1'].InShop)   # sexbody1 ещё не продавалось
+            and 'black_linderie' in alice.gifts):   # тёмный комплект белья подарен Алисе
         $ items['sexbody1'].unblock()
+        if not (items['photocamera'].have or items['photocamera'].InShop):  # фотокамера ещё не приобреталась
+            $ items['photocamera'].unblock()
         $ new_items = True
     if all([ann.dcv.feature.stage==5, lisa.flags.m_shoulder>4, not (items['erofilm2'].have or items['erofilm2'].InShop)]):
-        # была йога с Анной, 5 и более сассажей плеч Лизе, фильм "Цвет ночи" еще не был приобретён
+        # была йога с Анной, 5 и более массажей плеч Лизе, фильм "Цвет ночи" еще не был приобретён
         $ items['erofilm2'].unblock()
         $ new_items = True
 
+    if 'kira' in chars and kira.dcv.feature.stage==7 and not kira.dcv.photo.enabled:
         # если не активирован счетчик на фотосессию с Кирой - активировать его
-        if not kira.dcv.photo.enabled:
-            $ kira.dcv.photo.stage = 1
-            $ kira.dcv.photo.set_lost(8)
+        $ kira.dcv.photo.stage = 1
+        $ kira.dcv.photo.set_lost(8 if day<70 else 3)
 
     if new_items:
         $ notify_list.append(_("В интернет-магазине доступен новый товар."))
@@ -1116,9 +1126,270 @@ label update_06_5_99:
             $ items['erofilm2'].block()
 
     if _version < "0.06.5.07":
+        if alice.flags.hip_mass and 'kira' not in chars:
+            $ alice.flags.hip_mass = 0
+
+        # корректировка секс-боди
+        if ('black_linderie' not in alice.gifts and ('sexbody1' in alice.gifts
+            or items['sexbody1'].have or items['sexbody1'].bought or items['sexbody1'].InShop)):
+            # если тёмное бельё ещё не подарено и при этом разблокировано, имеется, куплено или подарено сексбоди
+            # убираем сексбоди из подарков Алисы, из сумки и из магазина. Закрываем этапы возможности
+            if 'sexbody1' in alice.gifts:
+                $ alice.gifts.remove('sexbody1')
+            $ items['sexbody1'].have    = False
+            $ items['sexbody1'].bought  = False
+            $ items['sexbody1'].InShop  = False
+
+            python:
+                for st in range(5, len(poss['blog'].stages)):
+                    poss['blog'].stages[st] = 0
+        if day > 2 and not poss['blog'].used(0):
+            $ poss['blog'].open(0)
+
+    if _version < "0.06.5.08":
         # новые этапы возможностей
-        if GetKolCams(house)>7:
-            $ poss['cams'].open(5)
-        if GetKolCams(house)>8:
-            $ poss['cams'].open(6)
+        if poss['Swimsuit'].used(3):
+            $ poss['Swimsuit'].open(5)
+        if poss['Swimsuit'].used(4):
+            if items['bikini'].have:
+                $ poss['Swimsuit'].open(6)
+                $ poss['Swimsuit'].stages[4]=0
+
+        if poss['smoke'].used(2):
+            $ poss['smoke'].open(1)
+        if alice.flags.pun:
+            $ poss['smoke'].open(2)
+            $ poss['smoke'].open(3)
+
+    if _version < "0.06.5.10":
+        python:
+            # правим неверно открытые этапы "Блог"
+            if all([poss['blog'].used(17), poss['blog'].used(18), poss['blog'].used(19)]):
+                if not (poss['blog'].used(5) or poss['blog'].used(6)):
+                    # не дарил нижнее бельё
+                    if 'black_linderie' in alice.gifts:
+                        alice.gifts.remove('black_linderie')
+                        items['sexbody1'].block()
+                        items['sexbody1'].have = False
+                        items['sexbody2'].block()
+                        items['sexbody2'].have = False
+                    for st in range(7, len(poss['blog'].stages)):
+                        poss['blog'].stages[st] = 0
+                elif not (poss['blog'].used(7) or poss['blog'].used(8)):
+                    # не дарил сексбоди
+                    if 'sexbody1' in alice.gifts:
+                        alice.gifts.remove('sexbody1')
+                        items['sexbody2'].block()
+                        items['sexbody2'].have = False
+                    for st in range(9, len(poss['blog'].stages)):
+                        poss['blog'].stages[st] = 0
+                elif not (poss['blog'].used(9) or poss['blog'].used(10) or poss['blog'].used(11) or poss['blog'].used(12)):
+                    # не подваливал Эрик (не начата битва за Алису)
+                    if 'sexbody2' in alice.gifts:
+                        alice.gifts.remove('sexbody2')
+                    items['sexbody2'].block()
+                    items['sexbody2'].have = False
+                    for st in range(13, len(poss['blog'].stages)):
+                        poss['blog'].stages[st] = 0
+                elif not (poss['blog'].used(13) or poss['blog'].used(14) or poss['blog'].used(15) or poss['blog'].used(16)):
+                    if 'sexbody2' in alice.gifts:
+                        alice.gifts.remove('sexbody2')
+                    items['sexbody2'].block()
+                    items['sexbody2'].have = False
+                for st in range(17, len(poss['blog'].stages)):
+                    poss['blog'].stages[st] = 0
+
+            # убираем возможность раньше времени поговорить с Эриком о наказании за подглядывания
+            if 'eric' in chars and GetRelMax('eric')[0]==0:
+                flags.voy_stage = -1
+
+            # коррекция индикатора второй фото-сессии с Кирой
+            if 'kira' in chars and kira.dcv.feature.stage > 7:
+                kira.dcv.photo.stage = 2
+
+            # пропущенное по камерам
+            if GetKolCams(house)>7:
+                poss['cams'].open(5)
+            if GetKolCams(house)>8:
+                poss['cams'].open(6)
+
+            # новые этапы "Наставник"
+            poss['seduction'].stages.insert(8, (1 if lisa.dcv.seduce.stage>3 else 0))
+            poss['seduction'].stages.insert(21, (1 if lisa.dcv.battle.stage in [2, 5] else 0))
+            poss['seduction'].stages = poss['seduction'].stages[0:len(poss_dict['seduction'][1])]
+
+            # инициализируем счетчик поцелуев с прикосновением
+            if lisa.flags.kiss_lesson > 7:
+                lisa.flags.kiss_touch = (lisa.flags.kiss_lesson-7) // 3
+
+            # Если не опередил Эрика с кружевным боди, возможность приватных наказаний Алисы закрыта
+            if alice.dcv.private.enabled and not all([alice.flags.nakedpunish, alice.flags.defend >= 5, alice.dcv.intrusion.stage in [5, 7]]):
+                alice.dcv.private.enabled = False
+                alice.dcv.private.stage = 0
+                alice.dcv.private.lost = 0
+                alice.dcv.private.done = True
+                alice.flags.private = False
+                alice.flags.privpunish = 0
+                alice.spanked = False
+                for st in range(0, len(poss['ass'].stages)):
+                    poss['ass'].stages[st] = 0
+
+            # добавим "претензии"
+            for char in chars:
+                chars[char].reinit()
+
+            # закроем неактуальные этапы "Школьница"
+            for st in range(4, len(poss['sg'].stages)):
+                poss['sg'].stages[st] = 0
+
+            # пропишем пройденные этапы "Школьница"
+            if poss['sg'].used(2):
+                if lisa.flags.truehelp<6 and lisa.stat.sh_breast:
+                    # "хороший" путь, Лиза уже показывала грудь, но сделано меньше 6 домашек вместо Лизы
+                    lisa.flags.truehelp = 6
+                if lisa.flags.truehelp>5:
+                    poss['sg'].open(4)
+                if lisa.clothes.sleep.cur:
+                    poss['sg'].open(5)
+            if lisa.stat.sh_breast:
+                poss['sg'].open(6)
+            if lisa.flags.m_foot:
+                poss['sg'].open(7)
+            if lisa.flags.handmass:
+                poss['sg'].open(8)
+            if lisa.flags.m_shoulder:
+                poss['sg'].open(9)
+                poss['sg'].open(10)
+            if lisa.flags.m_breast:
+                poss['sg'].open(11)
+
+            # добавим в инвентарь фото-компромат на Эрика
+            if flags.eric_photo2:
+                items['ericphoto2'].have = True
+            elif flags.eric_photo1:
+                items['ericphoto1'].have = True
+
+            # вставим новые этапы "Любимая тётя"
+            if 'kira' in chars:
+                poss['aunt'].stages.insert(2, (1 if kira.flags.porno or lisa.dcv.seduce.stage else 0))
+                if kira.flags.m_foot and not kira.flags.porno:
+                    kira.flags.porno = True
+                poss['aunt'].stages.insert(3, (1 if kira.flags.porno else 0))
+                poss['aunt'].stages.insert(4, (1 if kira.flags.m_foot else 0))
+                poss['aunt'].stages.insert(5, (1 if kira.stat.footjob else 0))
+                poss['aunt'].stages.insert(6, (1 if kira.stat.blowjob else 0))
+                poss['aunt'].stages.insert(8, 0)
+                poss['aunt'].stages = poss['aunt'].stages[0:len(poss_dict['aunt'][1])]
+
+            # коррекция "Кнут или пряник?"
+            poss['SoC'].stages[2], poss['SoC'].stages[4] = poss['SoC'].stages[4], poss['SoC'].stages[2]
+            poss['SoC'].stages.insert(5, 0)
+            poss['SoC'].stages.insert(10, 0)
+            poss['SoC'].stages.insert(16, (1 if lisa.flags.topless and lisa.dcv.other.enabled else 0))
+            poss['SoC'].stages = poss['SoC'].stages[0:len(poss_dict['SoC'][1])]
+            poss['SoC'].stages[17] = 1 if lisa.dcv.special.stage>6 else 0
+            poss['SoC'].stages[16] = 1 if lisa.dcv.other.enabled else 0
+            poss['SoC'].stages[15] = 1 if lisa.dcv.special.stage>5 else 0
+            poss['SoC'].stages[14] = 1 if lisa.dcv.special.stage>4 else 0
+            poss['SoC'].stages[13] = 1 if lisa.dcv.special.stage>3 else 0
+            poss['SoC'].stages[12] = 1 if lisa.dcv.special.stage>0 else 0
+            poss['SoC'].stages[11] = 1 if flags.film_punish else 0
+            if 'bathrobe' in lisa.gifts:
+                poss['SoC'].stages[10] = 1 if not lisa.flags.hugs_type>3 else 0
+                poss['SoC'].stages[9] = 1 if lisa.flags.hugs_type>3 else 0
+
+            # коррекция "Кто не рискует"
+            poss['risk'].stages[2], poss['risk'].stages[4] = poss['risk'].stages[4], poss['risk'].stages[2]
+            poss['risk'].stages.insert(5, 0)
+            poss['risk'].stages = poss['risk'].stages[0:len(poss_dict['risk'][1])]
+            if 'pajamas' in alice.gifts:
+                poss['risk'].stages[10] = 1 if not alice.flags.hugs_type>3 else 0
+                poss['risk'].stages[9] = 1 if alice.flags.hugs_type>3 else 0
+
+            # иницализация дейлика по подглядываниям в душе
+            for ch in chars:
+                chars[ch].dcv.reinit()
+
+    if _version < "0.06.5.11":
+        python:
+            # инициализация этапов "Контроль"
+            if poss['control'].used(0):
+                poss['control'].stages.insert(0, 1)
+                poss['control'].stages.insert(1, 1)
+                poss['control'].stages = poss['control'].stages[0:len(poss_dict['control'][1])]
+                if flags.voy_stage>3:
+                    poss['control'].open(3)
+                if flags.voy_stage>4:
+                    poss['control'].open(4)
+                if flags.voy_stage>5:
+                    poss['control'].open(5)
+                if flags.voy_stage>6:
+                    poss['control'].open(6)
+
+            # корректировака "Забота о попках"
+            for st in range(0, len(poss['ass'].stages)):
+                poss['ass'].stages[st] = 0
+            if all([alice.flags.nakedpunish, alice.flags.defend >= 5, alice.dcv.intrusion.stage in [5, 7], alice.dcv.private.enabled]):
+                poss['ass'].open(0)
+                if alice.dcv.private.stage:
+                    poss['ass'].open(1)
+                if alice.dcv.private.stage>3:
+                    poss['ass'].open(2)
+                if alice.flags.private:
+                    poss['ass'].open(3)
+                if alice.dcv.private.stage>4:
+                    poss['ass'].open(4)
+                if alice.flags.privpunish>1:
+                    poss['ass'].open(5)
+
+            # иницализация "Талантливый массажист"
+            if items['max-a'].InShop or items['max-a'].have:
+                poss['massage'].open(0)
+            if mgg.massage and poss['massage'].used(0):
+                poss['massage'].open(1)
+            if len(online_cources)>1:
+                poss['massage'].open(2)
+            if 'kira' in chars and kira.flags.m_foot:
+                poss['massage'].open(3)
+                poss['massage'].open(4)
+                poss['massage'].open(5)
+
+            # иницализация "Шаловливые ножки"
+            if alice.flags.m_foot > 1:
+                poss['naughty'].open(0)
+            if alice.stat.footjob:
+                if renpy.seen_label('alice_talk_tv.not_jeans'):
+                    poss['naughty'].open(1)
+                poss['naughty'].open(2)
+                poss['naughty'].open(3)
+            if alice.flags.hip_mass:
+                poss['naughty'].open(4)
+            if alice.flags.hip_mass>1:
+                poss['naughty'].open(5)
+            if alice.flags.hip_mass>2:
+                if renpy.seen_label('advanced_massage1.no_rush'):
+                    poss['naughty'].open(6)
+                poss['naughty'].open(7)
+            if alice.flags.hip_mass>3:
+                poss['naughty'].open(8)
+            if alice.flags.hip_mass>4:
+                poss['naughty'].open(9)
+
+            # иницализация "Волнующие изгибы"
+            if ann.dcv.feature.stage>4:
+                poss['yoga'].open(0)
+            if ann.flags.help>4:
+                poss['yoga'].open(1)
+            if 'fit1' in ann.gifts:
+                poss['yoga'].open(2)
+
+            # дополнение возможности "Любимая тётя"
+            if 'kira' in chars:
+                if ann.dcv.feature.stage:
+                    poss['aunt'].open(13)
+                if ann.dcv.feature.stage>1:
+                    poss['aunt'].open(14)
+                if ann.dcv.feature.stage>3:
+                    poss['aunt'].open(15)
+
     return

@@ -111,13 +111,13 @@ label lisa_shower:
         $ renpy.show('FG shower 00'+mgg.dress)
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
-            "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
+            "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if lisa.dcv.shower.stage<2:
                 jump .closer_peepeng
-            "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
+            "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}" if lisa.dcv.shower.stage<2:
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if 1 <= len(lisa.sorry.give) < 4 or (not poss['SoC'].used(0) and _ch1.ch>600):
+            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (1 <= len(lisa.sorry.give) < 4 or (not poss['SoC'].used(0) and _ch1.ch>600)):
                 jump .pinded
-            "{i}немного пошуметь{/i}" if len(lisa.sorry.give) == 4:
+            "{i}немного пошуметь{/i}" if len(lisa.sorry.give) == 4 and lisa.dcv.shower.stage<2:
                 jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -159,6 +159,8 @@ label lisa_shower:
             jump .not_luck
 
     label .not_luck:
+        if lisa_was_topless():
+            jump .pinded
         if RandomChance(_ch1.ch) or len(lisa.sorry.give) > 3:
             $ lisa.daily.shower = 2
             $ Skill('hide', 0.1)
@@ -173,6 +175,7 @@ label lisa_shower:
         jump .end_peeping
 
     label .pinded:
+        $ lisa.weekly.shower += 1
         if flags.film_punish:
             $ lisa.dcv.special.set_lost(1)
         else:
@@ -188,10 +191,30 @@ label lisa_shower:
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
         if lisa_was_topless():
-            menu:
-                Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал! А сейчас, кыш отсюда..."
-                "{i}уйти{/i}":
-                    jump .end_peeping
+            if lisa.weekly.shower>2:
+                Lisa_11 "[spotted!t]Ой, Макс! Опять ты подглядываешь... Это уже маньячество какое-то!"
+                Max_02 "Просто любуюсь формами! А так, я вообще мимо шёл, а здесь ты..."
+                Lisa_10 "Вот и иди мимо! И без майки ты меня теперь две недели точно не увидишь. Помнишь, я предупреждала?"
+                Max_08 "Блин! Точно, вспомнил... Но, может..."
+                Lisa_13 "Нет. Это будет для тебя уроком!"
+                Max_11 "Ладно..."
+                $ lisa.dcv.shower.set_lost(14)
+                jump .end_peeping
+            else:
+                menu:
+                    Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал! А сейчас, кыш отсюда..."
+                    "{i}уйти{/i}":
+                        jump .end_peeping
+
+        elif lisa.dcv.shower.stage:
+            Lisa_13 "[spotted!t] Ай, Макс!!! Ты в конец бессовестный что ли?! Отвернись немедленно и иди куда шёл!"
+            Max_13 "Лиза, я случайно! Ты же не расскажешь маме?"
+            Lisa_14 "Ещё как расскажу! Сразу же, как только душ спокойно приму... А ты, вали с глаз моих!"
+            Max_10 "Вот же попал!"
+            $ lisa.dcv.shower.stage = 2
+            $ lisa.dcv.shower.set_lost(4)
+            jump .end_peeping
+
         else:
             menu:
                 Lisa_12 "[spotted!t]Макс! Ты подглядываешь за мной? Как тебе не стыдно?! Я всё маме расскажу!"
@@ -930,7 +953,7 @@ label lisa_romantic_movie_0:
 
     $ lisa.dcv.special.stage = 1
     $ lisa.dcv.special.disable()
-    $ poss['SoC'].open(10)
+    $ poss['SoC'].open(12)
     $ infl[lisa].add_m(12)
     $ spent_time += 60
     $ flags.cur_series = 1
@@ -977,7 +1000,7 @@ label lisa_romantic_movie_r:
     scene BG char Lisa horror-myroom 04
     $ renpy.show("Lisa horror-myroom 04-02"+lisa.dress)
 
-    if poss['seduction'].st()>7 and lisa.dcv.special.stage == 3:
+    if lisa.flags.kiss_lesson and lisa.dcv.special.stage == 3:
         #как только открываются уроки поцелуев с Лизой и посмотрели 3 раза романтику
         Lisa_10 "Макс, у тебя опять стоит! Ну сколько можно?"
         Max_01 "Фильмы такие! Что тут поделать..."
@@ -992,7 +1015,7 @@ label lisa_romantic_movie_r:
         Lisa_01 "Тогда я пойду спать, а то ты сегодня что-то не в духе."
         stop music fadeout 1.0
         Max_15 "Да, будь так добра..."
-        $ poss['SoC'].open(11)
+        $ poss['SoC'].open(13)
         $ lisa.dcv.special.stage = 4
 
     elif flags.cur_series > 1:
@@ -1097,7 +1120,7 @@ label lisa_horor_movie_0:
     $ spent_time += 60
     $ lisa.dcv.special.stage = 5
     $ lisa.dcv.special.disable()
-    $ poss['SoC'].open(12)
+    $ poss['SoC'].open(14)
     $ infl[lisa].add_m(12)
     $ flags.cur_series = 1
     jump Waiting
@@ -1105,19 +1128,20 @@ label lisa_horor_movie_0:
 
 label lisa_horor_movie_r:
 
-    if lisa.dcv.other.stage>1 and lisa.dcv.other.done:
+    if all([lisa.dcv.other.stage>1, lisa.dcv.other.done, lisa.dcv.shower.done]):
+        # Лиза уже снимала майку во время ужастика
+        # закончился откат по наказаниям и по подсматриванию в душе
         $ lisa.dress = 'c'
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
-    if lisa.dcv.other.stage==1 and lisa.dcv.other.done:
+    if all([lisa.dcv.other.stage==1, lisa.dcv.other.done, lisa.dcv.shower.done]):
         Max_01 "Да, смотрим. Сейчас всё подготовлю... Не стесняйся, снимай маечку."
         Lisa_02 "Сейчас сниму, только свет сначала выключу. Тебе уже страшно?"
         $ lisa.dcv.other.stage=2
         $ lisa.dress = 'c'
-        if poss['SoC'].used(13):
-            $ poss['SoC'].open(14)
+
     else:
         Max_01 "Да, смотрим. Сейчас всё подготовлю..."
         Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
@@ -1277,16 +1301,19 @@ label lisa_horor_movie_r:
                             $ lisa.dcv.special.stage = 7
                     else:
                         Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки... ){/i}"
+                        if lisa.dcv.special.stage < 6:
+                            $ lisa.dcv.special.stage = 6
 
                     scene BG char Lisa horror-myroom 01a
                     $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
                     Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
                     Max_01 "Ага. Приятных снов."
-                    if lisa.dcv.special.stage < 6:
-                        $ lisa.dcv.special.stage = 6
-                    $ poss['SoC'].open(13)
-                    if lisa.dress=='c':
-                        $ poss['SoC'].open(14)
+                    if not _in_replay:
+                        if lisa.dress=='c':
+                            $ poss['SoC'].open(17)
+                        else:
+                            $ poss['SoC'].open(15)
+
                     jump .end
 
                 "Просто иди и всё..." if not _in_replay:

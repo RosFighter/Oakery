@@ -1810,7 +1810,7 @@ translate deutsch strings:
 
     # game/dialogues/kiratalk.rpy:96
     old "Есть!"
-    new "Verstanden!"
+    new "Bingo!"
 
     # game/dialogues/kiratalk.rpy:96
     old "Нет..."
@@ -2140,7 +2140,7 @@ translate deutsch kira_about_ann_secret0_5ae91ac3:
 translate deutsch kira_about_ann_secret0_327cdcef:
 
     # Kira_13 "Ты прав, тут дело не только в Эрике... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
-    Kira_13 "Du hast Recht, es ist nicht nur Eric... Ich schätze, es geht um deine Mom. Aber es gibt zwischen ihr und mir ein großen Geheimnis, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich es dir das einfach so erzählen kann..."
+    Kira_13 "Du hast Recht, es ist nicht nur Eric... Ich schätze, es geht um deine Mom. Aber es gibt zwischen ihr und mir ein großee Geheimnis, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich es dir das einfach so erzählen kann..."
 
 # game/dialogues/kiratalk.rpy:989
 translate deutsch kira_about_ann_secret0_881c3cb4:
@@ -2531,4 +2531,62 @@ translate deutsch strings:
     # game/dialogues/kiratalk.rpy:1048
     old "Тебе удалось сбежать?"
     new "Konntest du entkommen?"
+
+# TODO: Translation updated at 2021-06-26 22:46
+
+# game/dialogues/kiratalk.rpy:350
+translate deutsch kira_talk5_1195595b:
+
+    # Max_02 "Так у нас же Алиса блог свой ведёт. Вот я ей и помогал с его развитием. Хорошие фотографии нужны всем!"
+    Max_02 "Nun, Alice hat ihren eigenen Blog. Also habe ich ihr geholfen, ihn zu gestalten Jeder braucht gute Bilder!"
+
+# game/dialogues/kiratalk.rpy:351
+translate deutsch kira_talk5_8431a94b:
+
+    # Kira_03 "Так ты с телефона её фотографировал?"
+    Kira_03 "Du hast sie also mit deinem Handy fotografiert?"
+
+# game/dialogues/kiratalk.rpy:352
+translate deutsch kira_talk5_0a43014e:
+
+    # Max_05 "Нет. Я купил хороший и серьёзный фотоаппарат. Опыта у меня пока маловато, но я готов пощёлкать тебя бесплатно, если ты попозируешь..."
+    Max_05 "Nein. Ich habe eine ordentliche, professionelle Kamera gekauft. Ich habe noch nicht viel Erfahrung, aber ich bin bereit, dich umsonst zu fotografieren, wenn du posierst..."
+
+# game/dialogues/kiratalk.rpy:359
+translate deutsch kira_talk5_c73f7880:
+
+    # Max_05 "Ага. Вот прямо недавно купил!"
+    Max_05 "Ja. Ich habe es gerade gekauft!"
+
+# game/dialogues/kiratalk.rpy:362
+translate deutsch kira_talk5_b6188756:
+
+    # Max_08 "Найду!"
+    Max_08 "Das finde ich schon!"
+
+# TODO: Translation updated at 2021-07-04 11:49
+
+# game/dialogues/kiratalk.rpy:1001
+translate deutsch kira_about_ann_secret0_475d1a3d:
+
+    # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но Эрик напрямую мне заявил, что намерен трахать не только маму, но и моих сестёр!"
+    Max_07 "Sie macht Dinge, die sie vor Eric nie tun würde! Du weißt es wahrscheinlich nicht, aber Eric hat mir direkt gesagt, dass er vorhat, nicht nur meine Mutter zu ficken, sondern auch meine Schwestern!"
+
+# game/dialogues/kiratalk.rpy:1002
+translate deutsch kira_about_ann_secret0_0767af53:
+
+    # Kira_13 "О как! Этого я действительно не знала... Тогда дела и правда плохи!"
+    Kira_13 "Oh, Mann! Ich wusste wirklich nicht, dass... Dann ist es wirklich schlimm!"
+
+# game/dialogues/kiratalk.rpy:1003
+translate deutsch kira_about_ann_secret0_d8eb099b:
+
+    # Max_10 "Вот-вот. И я понятия не имею, как повлиять на маму! Она вся в его власти. Ты как, хочешь жить в месте, где все делают то, что пожелает Эрик? А скоро так и будет, если ничего не делать..."
+    Max_10 "Genau. Und ich habe keine Ahnung, wie ich Mom damit überzeugen kann! Er hat die ganze Macht bei ihr. Wollen Wir echt an einem Ort leben, an dem jeder macht, was Eric verlangt? Und das werden wir bald, wenn wir nichts unternehmen..."
+
+# game/dialogues/kiratalk.rpy:1004
+translate deutsch kira_about_ann_secret0_57f3cd2a:
+
+    # Kira_13 "Ты прав, такого я не хочу... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
+    Kira_13 "Du hast Recht, ich will das auf keinen Fall... Ich kann mir denken, was mit deiner Mom los ist. Aber es ist ein großes Geheimnis zwischen mir und ihr, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich dir das erzählen kann..."
 

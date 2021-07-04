@@ -406,3 +406,15 @@ translate deutsch strings:
     old "Подсказка:"
     new "Tipp:"
 
+# TODO: Translation updated at 2021-06-28 23:59
+
+translate deutsch strings:
+
+    # game/core/screens.rpy:1629
+    old "Лучше пока не попадаться на подглядывании за Лизой в душе"
+    new "Lass dich besser nicht dabei erwischen, wie du Lisa unter der Dusche anstarrst."
+
+    # game/core/screens.rpy:1653
+    old "Лучше пока не попадаться на подглядывании за Алисой в душе"
+    new "Lass dich besser nicht dabei erwischen, wie du Alice unter der Dusche anstarrst."
+

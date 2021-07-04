@@ -585,6 +585,7 @@ label eric_ann_fucking:
             Ann_14 "Ну, хорошо, Эрик. Если ты так считаешь... Но пусть он уйдёт, я не могу так..."
             Max_07 "Я уже ухожу, мам... Продолжайте!"
             $ flags.voy_stage = 3
+            $ poss['control'].open(2)
 
         elif flags.voy_stage == 3:
             menu:
@@ -603,7 +604,7 @@ label eric_ann_fucking:
                             Eric_01 "Ну всё, Макс. Мы тут ещё побеседуем. А для тебя на сегодня хватит, иди."
                             Max_00 "Хорошо..."
                             $ flags.voy_stage = 4
-                            $ poss['control'].open(0)
+                            $ poss['control'].open(3)
 
                 "Я уже ухожу, мам... Извини...":
                     pass
@@ -1304,7 +1305,7 @@ label first_jerk_balkon:
             $ flags.eric_noticed = True
     $ eric.stat.mast += 1
     $ poss['discrediting'].open(0)
-    $ spent_time += 10
+    $ spent_time += 30
     jump Waiting
 
 
@@ -1324,7 +1325,7 @@ label first_jerk_yard:
             $ flags.eric_noticed = True
     $ eric.stat.mast += 1
     $ poss['discrediting'].open(0)
-    $ spent_time += 10
+    $ spent_time += 30
     jump Waiting
 
 

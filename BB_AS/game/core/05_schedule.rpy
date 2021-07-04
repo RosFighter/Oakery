@@ -18,7 +18,9 @@ label set_alice_schedule:
         Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'read', "читает на веранде", 'house', 5, 'alice_read', talklabel='alice_read_closer', variable='dishes_washed', glow=110),
         Schedule((0,), '11:0', '11:59', 'dressed', "одевается к подруге", 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
         Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'sun', "загорает", 'house', 6, 'alice_sun', glow=110),
-        Schedule((1, 2, 3, 4, 5), '13:0', '14:59', 'swim', "в бассейне", 'house', 6, 'alice_swim', glow=105),
+        Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "smoke", _("курит"), "house", 6, "alice_smoke", glow=105, variable="day>1 and alice.dcv.special.done"),
+        Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105, variable="not (day>1 and alice.dcv.special.done)"),
+        Schedule((1, 2, 3, 4, 5), '13:30', '14:59', 'swim', "в бассейне", 'house', 6, 'alice_swim', glow=105),
         Schedule((6,), '11:0', '13:59', 'in_shop', "в магазине"),
         Schedule((6,), '14:0', '14:59', 'dressed', "одевается к подруге", 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
         Schedule((1, 2, 3, 4, 5), '15:0', '15:59', 'sun', "загорает", 'house', 6, 'alice_sun', glow=110),
@@ -34,10 +36,6 @@ label set_alice_schedule:
         Schedule((1, 2, 3, 4, 5, 6, 0), '22:0', '23:59', 'tv', "смотрит ТВ", 'house', 4, 'alice_tv', talklabel='alice_tv_closer'),
         )
 
-    if day > 1 and not poss['smoke'].used(1):
-        # Алиса может курить
-        call set_alice_can_smoke from _call_set_alice_can_smoke
-
     if flags.dinner >= 11:
         # после второй субботы Алиса может посещать ночной клуб
         call alice_init_nightclub from _call_alice_init_nightclub_2
@@ -50,19 +48,6 @@ label set_alice_schedule:
         # Макс подарил Алисе черное нижнее бельё
         call alice_can_blog_in_underwear from _call_alice_can_blog_in_underwear
 
-    return
-
-# Алиса может курить дома
-label set_alice_can_smoke:
-    $ alice.add_schedule(
-        Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "smoke", _("курит"), "house", 6, "alice_smoke", glow=105, variable="alice.dcv.special.done"),
-        Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105, variable="not alice.dcv.special.done"),
-        )
-    return
-
-# Алиса дома не курит
-label set_alice_cant_smoke:
-    $ alice.add_schedule(Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105))
     return
 
 # Алиса может посещать ночной клуб

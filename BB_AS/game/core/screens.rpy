@@ -1294,17 +1294,30 @@ screen menu_opportunity():
                                                         text ht.hint size 20
                                             else:
                                                 $ ShowBtnHint = True
-
-                            vbar value YScrollValue('vp2') style 'poss_vscroll'
-                    else:
-                        if ShowHint:
-                            frame area (0, 0, 1190, 400) background None:
-                                hbox:
-                                    viewport mousewheel 'change' draggable True id 'vp2':
-                                        vbox spacing 20:
-                                            text zero_hints[CurPoss] size 24 color orange
+                                        else:
+                                            $ ShowBtnHint = False
 
                                 vbar value YScrollValue('vp2') style 'poss_vscroll'
+                    else:
+                        if ShowHint:
+                            if type(zero_hints[CurPoss]) == str:
+                                frame area (0, 0, 1190, 400) background None:
+                                    hbox:
+                                        viewport mousewheel 'change' draggable True id 'vp2':
+                                            vbox spacing 20:
+                                                text _("Подсказка:") size 24 color gui.accent_color
+                                                text zero_hints[CurPoss] size 24 #color orange
+                                        vbar value YScrollValue('vp2') style 'poss_vscroll'
+                            else:
+                                frame area (0, 0, 1190, 400) background None:
+                                    hbox:
+                                        viewport mousewheel 'change' draggable True id 'vp2':
+                                            vbox spacing 20:
+                                                text _("Подсказка:") size 24 color gui.accent_color
+                                                for ht in zero_hints[CurPoss]:
+                                                    if ht.met():
+                                                        text ht.hint size 20
+                                        vbar value YScrollValue('vp2') style 'poss_vscroll'
 
     if not ShowHint and (view_stage<0 or ShowBtnHint):
         imagebutton idle 'interface tip' at saturate:
@@ -1613,6 +1626,9 @@ screen menu_userinfo():
                             frame xfill True background None:
                                 vbox spacing 5:
                                     if CurChar == 'lisa':
+                                        if lisa.dcv.shower.stage == 1:
+                                            # Макс замечен на подглядывании в душе
+                                            text _("Лучше пока не попадаться на подглядывании за Лизой в душе")
                                         if len(lisa.sorry.give):
                                             hbox xfill True:
                                                 frame xsize 350 background None:
@@ -1626,13 +1642,17 @@ screen menu_userinfo():
                                                         if 1 in lisa.sorry.give:
                                                             text _("Ненавидит \"Ferrero Rocher\"") size 24
 
-                                        if renpy.seen_label('Lisa_HomeWork.shoulders') and lisa.ri:
+                                        # if renpy.seen_label('Lisa_HomeWork.shoulders') and lisa.ri:
+                                        if poss['sg'].used(10):
                                             frame xsize 350 background None:
                                                 text _("Предпочтения в массаже:") size 24 color gui.accent_color
                                             frame xpos 20 xsize 790 background None:
                                                 vbox spacing 10:
                                                     text _("- После массажа рук Лиза может позволить массировать ей плечи (и не только их) при выполнении домашнего задания") size 24 justify True
                                     elif CurChar == 'alice':
+                                        if alice.dcv.shower.stage == 1:
+                                            # Макс замечен на подглядывании в душе
+                                            text _("Лучше пока не попадаться на подглядывании за Алисой в душе")
                                         if len(alice.sorry.give):
                                             hbox xfill True:
                                                 frame xsize 350 background None:
@@ -1652,7 +1672,7 @@ screen menu_userinfo():
                                                 if alice.flags.incident<1:
                                                     frame xfill True background None:
                                                         text _("???") size 24
-                                        if alice.flags.incident>1:
+                                        if alice.flags.incident in [2, 4]:
                                             frame xpos 20 xsize 790 background None:
                                                 vbox spacing 10:
                                                     text _("- Не может вспомнить всё, что происходило, пока она была пьяна") size 24 justify True first_indent -20

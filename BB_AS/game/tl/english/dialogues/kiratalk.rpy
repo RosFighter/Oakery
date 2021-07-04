@@ -2354,7 +2354,7 @@ translate english story_from_childhood_ann_592f32a1:
 translate english story_from_childhood_ann_4f8c7216:
 
     # Kira_15 "Конечно, я жутко испугалась и до сих пор себя виню, что оставила Аню там одну с этим мужиком..."
-    Kira_15 "I was terrified and I still blame myself for leaving Anya there alone with that man..."
+    Kira_15 "I was terrified and I still blame myself for leaving Ann there alone with that man..."
 
 # game/dialogues/kiratalk.rpy:1057
 translate english story_from_childhood_ann_b02cea58:
@@ -2613,3 +2613,61 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:1048
     old "Тебе удалось сбежать?"
     new "Did you manage to escape?"
+# TODO: Translation updated at 2021-06-26 22:47
+
+# game/dialogues/kiratalk.rpy:350
+translate english kira_talk5_1195595b:
+
+    # Max_02 "Так у нас же Алиса блог свой ведёт. Вот я ей и помогал с его развитием. Хорошие фотографии нужны всем!"
+    Max_02 ""
+
+# game/dialogues/kiratalk.rpy:351
+translate english kira_talk5_8431a94b:
+
+    # Kira_03 "Так ты с телефона её фотографировал?"
+    Kira_03 ""
+
+# game/dialogues/kiratalk.rpy:352
+translate english kira_talk5_0a43014e:
+
+    # Max_05 "Нет. Я купил хороший и серьёзный фотоаппарат. Опыта у меня пока маловато, но я готов пощёлкать тебя бесплатно, если ты попозируешь..."
+    Max_05 ""
+
+# game/dialogues/kiratalk.rpy:359
+translate english kira_talk5_c73f7880:
+
+    # Max_05 "Ага. Вот прямо недавно купил!"
+    Max_05 ""
+
+# game/dialogues/kiratalk.rpy:362
+translate english kira_talk5_b6188756:
+
+    # Max_08 "Найду!"
+    Max_08 ""
+
+# TODO: Translation updated at 2021-07-04 11:48
+
+# game/dialogues/kiratalk.rpy:1001
+translate english kira_about_ann_secret0_475d1a3d:
+
+    # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но Эрик напрямую мне заявил, что намерен трахать не только маму, но и моих сестёр!"
+    Max_07 ""
+
+# game/dialogues/kiratalk.rpy:1002
+translate english kira_about_ann_secret0_0767af53:
+
+    # Kira_13 "О как! Этого я действительно не знала... Тогда дела и правда плохи!"
+    Kira_13 ""
+
+# game/dialogues/kiratalk.rpy:1003
+translate english kira_about_ann_secret0_d8eb099b:
+
+    # Max_10 "Вот-вот. И я понятия не имею, как повлиять на маму! Она вся в его власти. Ты как, хочешь жить в месте, где все делают то, что пожелает Эрик? А скоро так и будет, если ничего не делать..."
+    Max_10 ""
+
+# game/dialogues/kiratalk.rpy:1004
+translate english kira_about_ann_secret0_57f3cd2a:
+
+    # Kira_13 "Ты прав, такого я не хочу... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
+    Kira_13 ""
+

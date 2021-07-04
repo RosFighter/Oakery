@@ -200,7 +200,8 @@ label olivia_first_night_visit:
     menu:
         Olivia_04 "Ну и отлично! Пойдёмте уже..."
         "{i}идти в гостиную{/i}":
-            $ poss['Schoolmate'].open(10)
+            if not _in_replay:
+                $ poss['Schoolmate'].open(10)
             jump night_tv_with_olivia
 
     label .failure:
@@ -510,6 +511,7 @@ label olivia_second_night_out_with:
     Lisa_01 "Нет, я даже не заметила, как ты встала..."
     Max_01 "Да, я тоже. Сладких снов, девчонки."
 
+    $ renpy.end_replay()
     $ poss['Schoolmate'].open(12)
     $ spent_time = TimeDifference(tm, '02:00')
     jump Waiting
@@ -628,6 +630,7 @@ label olivia_repeatable_night_out_with:
     if lisa.dress > 'b':    # возвращаем маечку
         $ lisa.dress = 'b'
 
+    $ renpy.end_replay()
     $ poss['Schoolmate'].open(13)
     $ spent_time = TimeDifference(tm, '02:00')
     jump Waiting

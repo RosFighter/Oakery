@@ -9,6 +9,8 @@ label StartPunishment:
             $ lisa.sorry.owe = False
             $ punreason[0] = 1
             $ poss['SoC'].open(1)
+            $ lisa.dcv.shower.stage = 1
+            $ lisa.dcv.shower.set_lost(3)
         elif all([flags.film_punish, lisa.dcv.special.enabled, lisa.dcv.special.done]):
             $ punreason[0] = 1
 
@@ -16,9 +18,19 @@ label StartPunishment:
             $ alice.sorry.owe = False
             $ punreason[1] = 1
             $ poss['risk'].open(1)
+            $ alice.dcv.shower.stage = 1
+            $ alice.dcv.shower.set_lost(3)
     # Макс теоретически может получить наказание как утром, так и вечером
-    if punreason[2] or punreason[3] and tm < "18:00":  # утром наказание за подглядывание за Анной или Анной с Эриком
+    if punreason[2] or punreason[3] and tm < "18:00":
+        # утром наказание за подглядывание за Анной или Анной с Эриком
         $ pun_list.append("mgg")
+    elif punreason[1] and alice.dcv.shower.stage>1 and tm < "18:00":
+        # наказание за подсматривание за Алисой в душе во время отката
+        $ pun_list.append("mgg")
+    elif punreason[0] and lisa.dcv.shower.stage>1 and tm < "18:00":
+        # наказание за подсматривание за Лизой в душе во время отката
+        $ pun_list.append("mgg")
+
     elif max(punreason) and tm > "18:00":
         $ pun_list.append("mgg")
 
@@ -39,8 +51,8 @@ label StartPunishment:
                     $ punlisa[0][1] = 2
                     $ pun_list.append("lisa")
 
-    if all([tm > "18:00", alice.dcv.special.enabled, alice.dcv.special.stage > 1, 0 < GetWeekday(day) < 6]):
-        # Алиса получает наказание вечером в будни, если открыт ивент с сигаретами
+    if all([tm > "18:00", alice.dcv.special.enabled, alice.dcv.special.stage > 1, (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)]):
+        # Алиса получает наказание вечером (в будни, если были приватные наказания), если открыт ивент с сигаретами
         $ chance = GetAlicePunChance()  # шанс нахождения Анной сигарет Алисы
         if RandomChance(chance):  # найдет ли Анна сигареты Алисы
             $ pun_list.append("alice")
@@ -278,6 +290,11 @@ label punishment_max:
 
         call max_consequences from _call_max_consequences
 
+        if punreason[1] and alice.dcv.shower.stage>1:
+            $ poss['risk'].open(5)
+        if punreason[0] and lisa.dcv.shower.stage>1:
+            $ poss['SoC'].open(5)
+
         if tm < "14:00":
             scene BG punish-morning 01
             $ renpy.show("Ann punish-morning 01"+ann.dress)
@@ -339,6 +356,11 @@ label punishment_max:
 
         call max_consequences from _call_max_consequences_1
 
+        if punreason[1] and alice.dcv.shower.stage>1:
+            $ poss['risk'].open(5)
+        if punreason[0] and lisa.dcv.shower.stage>1:
+            $ poss['SoC'].open(5)
+
         if tm < "14:00":
             scene BG punish-morning 01
             $ renpy.show("Ann punish-morning 01"+ann.dress)
@@ -361,8 +383,9 @@ label punishment_max:
 label max_consequences:
     ## здесь снижение влияния Макса для присутствующих персонажей
     python:
-        if flags.voy_stage==0 and punreason[3]:
+        if all([flags.voy_stage==0, punreason[3], GetRelMax('eric')[0]>0]):
             flags.voy_stage=1 # если Макс попался на подглядывании за трахом Ани и Эрика, на пути дружбы с ним
+            poss['control'].open(0)
 
         for cr in current_room.cur_char:
             if chars[cr].infmax is not None:
@@ -383,12 +406,13 @@ label max_consequences:
 
 label punishment_lisa:
     $ renpy.block_rollback()
+    $ renpy.dynamic('mood')
 
     scene BG punish-evening 01
     $ renpy.show("Lisa punish-evening 01"+lisa.dress)
     $ renpy.show("Ann punish-evening 01"+ann.dress)
 
-    $ __mood = 0
+    $ mood = 0
 
     $ lisa.dcv.punpause.set_lost(renpy.random.randint(5, 12))
     $ lisa.weekly.punished += 1
@@ -398,7 +422,7 @@ label punishment_lisa:
             $ _text = _("Ближе подходи, Лиза. И да, снимай штаны, ты заслужила!")
         else: # Лиза в халате
             $ _text = _("Ближе подходи, Лиза. И да, снимай свой халат, ты заслужила!")
-        if defend:  # Макс уже не может заступиться
+        if defend or poss['sg'].st() == 4:  # Макс уже не может заступиться или нужно наказание для продвижения на "хорошем" пути Школьницы
             Ann_16 "[_text!t]"
         else:
             $ _ch1 = GetChance(mgg.social, 2, 900)
@@ -448,7 +472,7 @@ label punishment_lisa:
         $_text = _("Что прикрываешься, Лиза? Стесняешься? Стыдно? Вот и хорошо... А теперь ложись на мои колени. Быстро!")
         $ SetCamsGrow(house[5], 150)
 
-    if defend:  # Макс уже заступался
+    if defend or poss['sg'].st() == 4:  # Макс уже не может заступиться или нужно наказание для продвижения на "хорошем" пути Школьницы
         Ann_18 "[_text!t]"
     else:
         menu:  # У Макса есть шанс заступиться за Лизу
@@ -471,6 +495,7 @@ label punishment_lisa:
                         if lisa.flags.defend >= 5:
                             if lisa.flags.topless and not lisa.dcv.other.enabled:
                                 Max_07 "{i}( На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти... ){/i}"
+                                $ poss['SoC'].open(16)
                             $ lisa.dcv.other.set_lost(1)
 
                     $ lisa.weekly.protected += 1
@@ -487,7 +512,7 @@ label punishment_lisa:
     scene BG punish-evening 02
     $ renpy.show("Ann punish-evening lisa-01"+ann.dress+_lisa_dress)
 
-    $ __mood -= 100 # если Лизу наказывают, её настроение портится
+    $ mood -= 100 # если Лизу наказывают, её настроение портится
     $ lisa.flags.pun += 1
 
     if newpunishment==1:
@@ -535,18 +560,19 @@ label punishment_lisa:
     if newpunishment==2:
         $ lisa.flags.nakedpunish = True
 
-    $ AddRelMood('lisa', 0, __mood)
+    $ AddRelMood('lisa', 0, mood)
     return
 
 
 label punishment_alice:
     $ renpy.block_rollback()
+    $ renpy.dynamic('mood', 'suf')
 
     scene BG punish-evening 01
     $ renpy.show("Alice punish-evening 01"+alice.dress)
     $ renpy.show("Ann punish-evening 01"+ann.dress)
 
-    $ __mood = 0
+    $ mood = 0
     $ alice.dcv.special.set_lost(3) # Анна забрала сигареты, поэтому Алиса пока не сможет курить
     $ alice.dcv.punpause.set_lost(renpy.random.randint(5, 14))
 
@@ -571,6 +597,7 @@ label punishment_alice:
                 Ann_18 "[_text!t]"
                 "{i}Заступиться за Алису {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}{/i}":
                     $ defend = True
+                    $ alice.flags.defend += 1
                     Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
                     if "mgg" in pun_list:
                         Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
@@ -637,7 +664,7 @@ label punishment_alice:
             Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
             $ alice.dcv.private.stage = 2
             $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
-        elif alice.dcv.private.stage==2:
+        else:
             $ alice.dcv.private.set_lost(2)
         Ann_18 "[_text!t]"
     else:
@@ -645,6 +672,7 @@ label punishment_alice:
             Ann_18 "[_text!t]"
             "{i}Заступиться за Алису {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}{/i}":
                     $ defend = True
+                    $ alice.flags.defend += 1
                     Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
                     if "mgg" in pun_list:
                         Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
@@ -652,13 +680,13 @@ label punishment_alice:
                         $ Skill('social', 0.2)
                         Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
                         Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
-                        if newpunishment==2:
-                            $ alice.flags.defend += 1
 
-                            if alice.flags.defend >= 5:
-                                if not alice.dcv.private.enabled:
-                                    Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
-                                $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 4))
+                        if all([alice.flags.nakedpunish, alice.flags.defend >= 5, alice.dcv.intrusion.stage in [5, 7]]):
+                            # Алису наказывали голой + Макс подарил кружевное боди + получилось защитить Алису от наказания (минимум 5 раз, включая этот)
+                            if not alice.dcv.private.enabled:
+                                Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
+                                $ poss['ass'].open(0)
+                            $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 4))
 
                         $ punalice[0][2] = 2
                         $ alice.weekly.protected += 1
@@ -670,33 +698,35 @@ label punishment_alice:
             "{i}далее{/i}":
                 pass
 
+    $ poss['smoke'].open(3)
+
     # сцена наказания Алисы
     scene BG punish-evening 02
     if newpunishment==0:
         $ SetCamsGrow(house[5], 150)
-        $ __suf = alice.dress + ('a' if alice.req.result == "nopants" or alice.dress=='b' else '')
-        $ renpy.show("Ann punish-evening alice-01"+ann.dress+__suf)
+        $ suf = alice.dress + ('a' if alice.req.result == "nopants" or alice.dress=='b' else '')
+        $ renpy.show("Ann punish-evening alice-01"+ann.dress+suf)
     else:
         if alice.req.result == "nopants" or alice.dress=='b' or newpunishment==2:  # править условие
             $ SetCamsGrow(house[5], 250)
-            $ __suf = 'ba'
+            $ suf = 'ba'
         else:
             $ SetCamsGrow(house[5], 220)
-            $ __suf = alice.dress
-        $ renpy.show('Ann punish-evening alice-03'+ann.dress+__suf)
+            $ suf = alice.dress
+        $ renpy.show('Ann punish-evening alice-03'+ann.dress+suf)
 
-    $ __mood -= 50 # если Алису наказывают, её настроение портится
+    $ mood -= 50 # если Алису наказывают, её настроение портится
     $ alice.flags.pun += 1
 
     if newpunishment==0:
         Alice_15 "Ай, больно же! Мам, я больше не буду!!!"
-        $ renpy.show("Ann punish-evening alice-02"+ann.dress+__suf)
+        $ renpy.show("Ann punish-evening alice-02"+ann.dress+suf)
     else:
         if newpunishment==1:
             Max_04 "{i}( Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня! ){/i}"
         else:
             Max_04 "{i}( Люблю, когда Алису наказывают... Стервозинка она та ещё, но без последствий полюбоваться её голыми прелестями в других ситуациях опасно для жизни! ){/i}"
-        $ renpy.show('Ann punish-evening alice-04'+ann.dress+__suf)
+        $ renpy.show('Ann punish-evening alice-04'+ann.dress+suf)
 
     if newpunishment==0:
         Ann_17 "Я знаю, что не будешь. Заслужила наказание, терпи!"
@@ -712,11 +742,11 @@ label punishment_alice:
     scene BG punish-evening 01
     $ renpy.show("Ann punish-evening 01"+ann.dress)
     if newpunishment==0:
-        $ __suf = alice.dress+('a' if alice.req.result == 'nopants' or alice.dress=='b' else '')
+        $ suf = alice.dress+('a' if alice.req.result == 'nopants' or alice.dress=='b' else '')
     else:
-        $ __suf = 'ca' if alice.req.result == 'nopants' or alice.dress=='b' or newpunishment == 2 else 'c' if alice.dress<'d' else 'd'
+        $ suf = 'ca' if alice.req.result == 'nopants' or alice.dress=='b' or newpunishment == 2 else 'c' if alice.dress<'d' else 'd'
 
-    $ renpy.show('Alice punish-evening 03'+__suf)
+    $ renpy.show('Alice punish-evening 03'+suf)
     if newpunishment==0:
         if alice.dress == "a":
             Ann_12 "Так, всё, надевай свои джинсы. Надеюсь, ты осознала свои поступки и следующего раза не будет..."
@@ -728,5 +758,5 @@ label punishment_alice:
     if newpunishment==2:
         $ alice.flags.nakedpunish = True
 
-    $ AddRelMood('alice', 0, __mood)
+    $ AddRelMood('alice', 0, mood)
     return

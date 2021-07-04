@@ -257,10 +257,6 @@ label alice_add_black_linderie:
     # прописываем расписание:
     call alice_can_blog_in_underwear from _call_alice_can_blog_in_underwear_1
 
-    # $ blog_lingerie = ['a', 'a', 'a', 'b', 'b', 'b']
-    # $ renpy.random.shuffle(blog_lingerie)
-    # $ cur_blog_lingerie = 'b'
-
     return
 
 

@@ -587,6 +587,8 @@ label delivery2:
         $ added_mem_var('max-a')
     if 'dress' in delivery_list[1] and not poss['nightclub'].used(3):
         $ poss['nightclub'].open(1)
+    if 'bikini' in delivery_list[1] and not poss['Swimsuit'].used(4):
+        $ poss['Swimsuit'].open(3)
 
     $ __StrDev = GetDeliveryString(1) # сформируем строку накладной
 
@@ -647,7 +649,7 @@ label BookRead:
         $ items['sex.ed'].read += 1
         if items['sex.ed'].read < 2:
             # выбрали читать книгу
-            $ poss['seduction'].open(12)
+            $ poss['seduction'].open(13)
             $ items['sex.ed'].block()
             Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
         elif items['sex.ed'].read < 3:
@@ -656,7 +658,7 @@ label BookRead:
             Max_07 "Ого, здесь даже есть краткий исторический очерк о сексуальном воспитании детей и подростков... Как только голову не дурили за всё это время!\n\n{color=[orange]}{i}(Книга изучена на 75%%){/i}{/color}"
         else:
             # чтение завершено, можно дарить
-            $ poss['seduction'].open(13)
+            $ poss['seduction'].open(14)
             Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
         jump .end
 
@@ -800,11 +802,11 @@ label InstallCam:
     $ items['hide_cam'].use()
     $ cur_ratio = 1.5
     $ spent_time = 30
-    # if GetKolCams(house)>7:
-    #     $ poss['cams'].open(5)
+    if GetKolCams(house)>7:
+        $ poss['cams'].open(5)
 
     if GetKolCams(house)==9:
-        # $ poss['cams'].open(6)
+        $ poss['cams'].open(6)
         $ items['hide_cam'].block()
     jump Waiting
 
