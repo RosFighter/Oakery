@@ -4057,3 +4057,135 @@ translate english alice_shower_pinded_2df0e482:
 
     # Max_10 "Вот чёрт!"
     Max_10 "Oh, shit!"
+# TODO: Translation updated at 2021-07-04 11:48
+
+# game/events/alice.rpy:1797
+translate english alice_after_club_need_hurry_05ef44a9:
+
+    # Alice_08 "В таком случае, я буду меньше говорить и больше делать... Тебе понравится!"
+    Alice_08 ""
+
+# game/events/alice.rpy:1801
+translate english alice_after_club_need_hurry_93923f62:
+
+    # Max_21 "Ох, Алиса, это мне очень нравится! Так приятно... Д-а-а... Давай ещё... Как же сладко твои сочные губки это делают, д-а-а..." nointeract
+    Max_21 "" nointeract
+
+# game/events/alice.rpy:1810
+translate english alice_after_club_need_hurry_bfd3e0e2:
+
+    # Max_22 "[restrain!t]Да, продолжай вот так! Давай быстрее, сестрёнка... Вижу, что с ним не просто справиться, но у тебя классно получается! Ещё немного... Я сейчас кончу..." nointeract
+    Max_22 "" nointeract
+
+# game/events/alice.rpy:1860
+translate english alice_after_club_no_restrain_2de4d2ed:
+
+    # Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
+    Alice_06 ""
+
+# game/events/alice.rpy:1861
+translate english alice_after_club_no_restrain_d5b2b244:
+
+    # Max_07 "А ты хотела как-то по-другому?"
+    Max_07 ""
+
+# game/events/alice.rpy:1862
+translate english alice_after_club_no_restrain_24506f4c:
+
+    # Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
+    Alice_13 ""
+
+# game/events/alice.rpy:1863
+translate english alice_after_club_no_restrain_dff49f05:
+
+    # Max_03 "А ты разве не для этого ванну собиралась принять?"
+    Max_03 ""
+
+# game/events/alice.rpy:1864
+translate english alice_after_club_no_restrain_0011e063:
+
+    # Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
+    Alice_06 ""
+
+# game/events/alice.rpy:1865
+translate english alice_after_club_no_restrain_7894f632:
+
+    # Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+    Max_02 ""
+
+# game/events/alice.rpy:1866
+translate english alice_after_club_no_restrain_fa3f7bbe:
+
+    # Alice_05 "Вот именно, что ничего!" nointeract
+    Alice_05 "" nointeract
+
+# game/events/alice.rpy:2669
+translate english alice_towel_after_club_not_even_close_6117492e:
+
+    # Alice_08 "Кажется, я знаю, что с этим поможет... Смотри, не упади от наслаждения!"
+    Alice_08 ""
+
+# game/events/alice.rpy:2673
+translate english alice_towel_after_club_not_even_close_05fe5279:
+
+    # Max_21 "Ох, Алиса! Упасть здесь действительно есть от чего! Какие у тебя нежные губы... Д-а-а... У тебя хорошо получается, сестрёнка... Давай поактивнее... Как же приятно, д-а-а..." nointeract
+    Max_21 "" nointeract
+
+# game/events/alice.rpy:2681
+translate english alice_towel_after_club_not_even_close_73619acf:
+
+    # Max_22 "[restrain!t]Вот чёрт, Алиса! Ты делаешь это просто потрясающе! Да, продолжай вот так... Ещё быстрее... Вот умница! Я держусь из последних сил... Вот-вот кончу..." nointeract
+    Max_22 "" nointeract
+
+# game/events/alice.rpy:2700
+translate english alice_towel_after_club_no_restrain_2de4d2ed:
+
+    # Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
+    Alice_06 ""
+
+# game/events/alice.rpy:2701
+translate english alice_towel_after_club_no_restrain_d5b2b244:
+
+    # Max_07 "А ты хотела как-то по-другому?"
+    Max_07 ""
+
+# game/events/alice.rpy:2702
+translate english alice_towel_after_club_no_restrain_24506f4c:
+
+    # Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
+    Alice_13 ""
+
+# game/events/alice.rpy:2703
+translate english alice_towel_after_club_no_restrain_05ac8115:
+
+    # Max_03 "А ты разве не для этого ванну решила принять?"
+    Max_03 ""
+
+# game/events/alice.rpy:2704
+translate english alice_towel_after_club_no_restrain_b197e4d3:
+
+    # Alice_06 "Да, точно... Мы же никому не станем рассказывать, что тут было?"
+    Alice_06 ""
+
+# game/events/alice.rpy:2705
+translate english alice_towel_after_club_no_restrain_d7dd7483:
+
+    # Max_02 "Я только полотенце принёс и пошёл спать..."
+    Max_02 ""
+
+# game/events/alice.rpy:2706
+translate english alice_towel_after_club_no_restrain_50e121f5:
+
+    # Alice_05 "Ага. Именно так всё и было!" nointeract
+    Alice_05 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:1717
+    old "Нет, я хочу ещё, но нужно поторопиться..."
+    new ""
+
+    # game/events/alice.rpy:2610
+    old "Нет, я даже не близко..."
+    new ""
+

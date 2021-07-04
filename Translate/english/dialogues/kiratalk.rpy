@@ -2645,3 +2645,29 @@ translate english kira_talk5_b6188756:
     # Max_08 "Найду!"
     Max_08 ""
 
+# TODO: Translation updated at 2021-07-04 11:48
+
+# game/dialogues/kiratalk.rpy:1001
+translate english kira_about_ann_secret0_475d1a3d:
+
+    # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но Эрик напрямую мне заявил, что намерен трахать не только маму, но и моих сестёр!"
+    Max_07 ""
+
+# game/dialogues/kiratalk.rpy:1002
+translate english kira_about_ann_secret0_0767af53:
+
+    # Kira_13 "О как! Этого я действительно не знала... Тогда дела и правда плохи!"
+    Kira_13 ""
+
+# game/dialogues/kiratalk.rpy:1003
+translate english kira_about_ann_secret0_d8eb099b:
+
+    # Max_10 "Вот-вот. И я понятия не имею, как повлиять на маму! Она вся в его власти. Ты как, хочешь жить в месте, где все делают то, что пожелает Эрик? А скоро так и будет, если ничего не делать..."
+    Max_10 ""
+
+# game/dialogues/kiratalk.rpy:1004
+translate english kira_about_ann_secret0_57f3cd2a:
+
+    # Kira_13 "Ты прав, такого я не хочу... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
+    Kira_13 ""
+
