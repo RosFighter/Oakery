@@ -10211,83 +10211,82 @@ translate english alice_gift_sweets_21b81128:
 translate english advanced_massage1_reciprocity_194015b5:
 
     # Alice_02 "Ты даришь мне столько удовольствия, что я просто вынуждена ответить тебе взаимностью."
-    Alice_02 ""
+    Alice_02 "You give me so much pleasure that I just have to return the favor."
 
 # game/dialogues/alicetalk.rpy:1000
 translate english advanced_massage1_reciprocity_2405c908:
 
     # Max_02 "Значит, это будет что-то приятное?"
-    Max_02 ""
+    Max_02 "So it's going to be something nice?"
 
 # game/dialogues/alicetalk.rpy:1005
 translate english advanced_massage1_reciprocity_6a543908:
 
     # Alice_03 "Думаю, тебе будет настолько хорошо, что закачаешься... Ты ведь наверняка об этом мечтал кучу раз?"
-    Alice_03 ""
+    Alice_03 "I think you're going to feel so good... You've probably dreamed about it a bunch of times, haven't you?"
 
 # game/dialogues/alicetalk.rpy:1006
 translate english advanced_massage1_reciprocity_768593ae:
 
     # Max_04 "Хорошо, что мечты сбываются!"
-    Max_04 ""
+    Max_04 "It's good that dreams come true!"
 
 # game/dialogues/alicetalk.rpy:1017
 translate english advanced_massage1_reciprocity_f810aaf0:
 
     # Alice_08 "И ещё как! Я уже приласкала тебя своими ножками... А как тебе мой язычок? Вижу, тебе это нравится... Я буду исследовать им твой член столько, сколько ты сможешь сдержаться!" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "And how! I've already rubbed you with my feet... How do you like my tongue? I see you like it. I'll use it to explore your cock as long as you can hold it!" nointeract
 
 # game/dialogues/alicetalk.rpy:1027
 translate english advanced_massage1_reciprocity_b368585e:
 
     # Alice_05 "[restrain!t]А ты стойкий, Макс! Похоже, без помощи моих губ тебя не удастся удовлетворить. Ну, держись..."
-    Alice_05 ""
+    Alice_05 "[restrain!t] You're tough, Max! Looks like you can't be satisfied without the help of my lips. Well, hang in there..."
 
 # game/dialogues/alicetalk.rpy:1032
 translate english advanced_massage1_reciprocity_83e9a3a9:
 
     # Max_21 "{i}( Ох, как это классно! Алиса с явным наслаждением посасывает мой член. Мой массаж её определённо очень возбуждает, раз она делает мне минет с таким смаком. Д-а-а, это кайф! ){/i}" nointeract
-    Max_21 "" nointeract
+    Max_21 "{i}( Oh, this is so good! Alice is sucking my cock with obvious pleasure. My massage definitely excites her a lot, since she gives me a blowjob with such relish. A-a-a, it's amazing! ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1042
 translate english advanced_massage1_reciprocity_1272725b:
 
     # Max_22 "[restrain!t]Давай, сестрёнка! Ты сосёшь просто отпадно! Если ты продолжишь ещё быстрее, то сдержаться я уже не смогу... О да, молодчинка... Д-а-а... Давай ещё... Именно так! Ох-х-х, я кончаю..."
-    Max_22 ""
+    Max_22 "[restrain!t] Come on, sis! You suck so good! If you go any faster, I won't be able to help myself... Oh, yeah, good girl. Yeah. Do it again. That's right. Oh, I'm coming."
 
 # game/dialogues/alicetalk.rpy:1048
 translate english advanced_massage1_reciprocity_da5f55a1:
 
     # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
-    Alice_07 ""
+    Alice_07 "Come on! Cum on my chest... I'd be surprised if you lasted even longer. That was a great massage, Max... and I'm not just talking about the massage. Now, why don't you put your dick back in, and I've got to get cleaned up fast."
 
 # game/dialogues/alicetalk.rpy:1049
 translate english advanced_massage1_reciprocity_7fef34b9:
 
     # Max_03 "Да, повеселились от души."
-    Max_03 ""
+    Max_03 "Yeah, we had a lot of fun."
 
 # game/dialogues/alicetalk.rpy:1059
 translate english advanced_massage1_no_restrain_1bb78087:
 
     # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
-    Max_20 ""
+    Max_20 "[norestrain!t]Oh, Alice... No, I can't take it anymore... Ugh... I'm going to cum!"
 
 # game/dialogues/alicetalk.rpy:1065
 translate english advanced_massage1_no_restrain_da5f55a1:
 
     # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
-    Alice_07 ""
+    Alice_07 "Come on! Cum on my chest... I'd be surprised if you lasted even longer. That was a great massage, Max... and I'm not just talking about the massage. Now, why don't you put your dick back in, and I've got to get cleaned up fast."
 
 # game/dialogues/alicetalk.rpy:1066
 translate english advanced_massage1_no_restrain_7fef34b9:
 
     # Max_03 "Да, повеселились от души."
-    Max_03 ""
+    Max_03 "Yeah, we had a lot of fun."
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:1032
     old "{i}сдерживаться{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"
-    new ""
-
+    new "{i}Hold Back{/i} {color=[sex2.col]}(Sexual experience. Chance: [sex2.vis]){/color}"
