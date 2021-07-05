@@ -1,3 +1,18 @@
+родную сестру   |   own sister  |   eigenen Schwester
+родной сестрой  |   own sister  |   eigene Schwester
+родная тётя     |   own Aunt    |   eigene Tante
+родной тёте     |   own Aunt's  |   eigenen Tante
+родной матери   |   own mother  |   eigene Mutter
+родные дочери   |   daughters   |   Töchter
+
+мать            |   mother      |   Mutter
+матери          |   mother      |   Mutter    
+матерью         |   mother      |   Mutter
+
+ма-ам           |   Mom         |   Mom
+
+
+
 мам
 мама
 маме
@@ -32,6 +47,7 @@
 
 сестёр
 сёстрами
+сёстрам
 
 брат
 брата
@@ -52,3 +68,6 @@
 племянник
 племянника
 племянничек
+
+
+?? Вы же её дети и к вам у неё особое отношение. К тому же, тут сильнее всего материнский инстинкт
