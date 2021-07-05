@@ -1308,21 +1308,21 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то я пообщался с тётей Кирой насчёт поведения мамы и она намекнула, что знает причины, но не может мне рассказать, пока мама не даст согласия на это. А может быть, она и сама всё расскажет мне? Нужно лишь намекнуть про какую-то историю из её детства..."
-    new ""
+    new "Schließlich habe ich mit Tante Kira über Moms Verhalten gesprochen, und sie hat angedeutet, dass sie die Gründe kennt, aber sie konnte sie mir nicht sagen, bevor Mom nicht zugestimmt hat. Vielleicht erzählt Mom es mir ja selbst. Alles, was ich tun muss, ist, eine Geschichte aus ihrer Kindheit anzudeuten..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно поговорить об этом с мамой, когда она одна и не слишком занята..."
-    new ""
+    new "Ich musst mit Mom darüber reden, wenn sie allein und nicht zu beschäftigt ist..."
 
     # game/core/09_opportunities.rpy:4
     old "Мама категорически отказалась со мной общаться на тему какого-то случая из её детства, на который намекала тётя Кира. Теперь я знаю где копать, но не знаю кто может что-то объяснить... Может быть, удастся убедить тётю Киру мне всё рассказать по секрету?"
-    new ""
+    new "Mom weigerte sich entschieden, mit mir über den Vorfall aus ihrer Kindheit zu sprechen, auf den Tante Kira angespielt hatte. Jetzt weiß ich, wo ich graben muss, aber ich weiß nicht, wer etwas sagen kann... Vielleicht kann ich Tante Kira überzeugen, mir alles im Vertrauen zu erzählen."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно пытаться убедить Киру рассказать мамин секрет..."
-    new ""
+    new "Ich muss versuchen, Tante Kira davon zu überzeugen, mir das Geheimnis von Mom zu verraten..."
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то, мне удалось убедить тётю Киру рассказать о том, что случилось с мамой в детстве. Очевидно, что психологическая травма, которую нанёс ей тот похититель в лесу, оказала серьёзное влияние на то, какой она стала. Ну и Эрик, её босс, оказался идеальной причиной, чтобы все последствия той травмы вновь проявились, но уже таким... странным образом..."
-    new ""
+    new "Endlich ist es mir gelungen, Tante Kira zu überreden, darüber zu sprechen, was Mom als Kind widerfahren war. Offensichtlich hatte das psychologische Trauma, das ihr der Entführer im Wald zugefügt hatte, einen tiefgreifenden Einfluss auf das, was aus ihr geworden war. Und Eric, ihr Boss, war der perfekte Grund dafür, dass die Auswirkungen dieses Traumas wieder zum Vorschein kamen, aber in diesem Fall... auf eine seltsame Art und Weise..."
 

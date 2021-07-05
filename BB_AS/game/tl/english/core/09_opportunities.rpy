@@ -1263,39 +1263,39 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Волнующие изгибы"
-    new ""
+    new "Exciting Curves"
 
     # game/core/09_opportunities.rpy:4
     old "Да уж! Я раньше видел, как мама занимается йогой, но вот так, как в этот раз... Она такая гибкая, а все эти изгибы и позы... Ммм... Волнуют не по детски! Я старался как можно больше помогать и прикасаться к ней и её упражнения прекрасно для этого подходят. Она чувствует мою поддержку, а я наслаждаюсь её формами. Хорошо, что у меня уже есть какой-никакой сексуальный опыт, иначе у меня член колом бы стоял от её упражнений! Только вот, чтобы составить ей компанию, нужно рано вставать. Но, оно того стоит уже сейчас, а вот что будет дальше..."
-    new ""
+    new "Yeah! I've seen Mom do yoga before, but this time... She's so flexible, and all those bends and poses... Mmm... Exciting! I have tried to help and touch her as much as possible and her exercises are perfect for that. She feels my support and I enjoy her forms. It's a good thing I already had some sexual experience, otherwise my dick would be hard from her exercises! Except I have to get up early to keep her company. But it's worth it now, but what happens next..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно и дальше продолжать помогать маме с йогой..."
-    new ""
+    new "We need to keep helping Mom with yoga..."
 
     # game/core/09_opportunities.rpy:4
     old "Мне жарко уже только смотреть на маму, а какого ей выполнять все эти упражнения в одежде! Нужно купить для неё что-нибудь полегче... И что-нибудь такое, что ещё больше подчеркнёт её шикарную фигуру. Что-нибудь ближе к бикини, но со спортивным уклоном. И тело будет больше дышать и моему восторгу не будет предела."
-    new ""
+    new "I'm already hot just looking at Mom and what it's like for her to do all those exercises with her clothes on! I need to buy her something lighter... And something that will accentuate her figure even more. Something closer to a bikini, but with an athletic twist. It'll give my body more room to breathe and I'll be over the moon about it."
 
     # game/core/09_opportunities.rpy:4
     old "Если есть деньги, то купить новую спортивную одежду для мамы не трудно..."
-    new ""
+    new "If you have the money, it's not hard to buy new sportswear for mom..."
 
     # game/core/09_opportunities.rpy:4
     old "Подарить ей новую спортивную одежду можно хоть когда. Лишь бы она была одна и не сильно занята..."
-    new ""
+    new "You can gift her new sports clothes at any time. As long as she is alone and not too busy..."
 
     # game/core/09_opportunities.rpy:4
     old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... Как по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды..."
-    new ""
+    new "It's already so much better! Mom now has a new tracksuit that will give her and me a lot of warmth. She wasn't even too vocal about it being very open. That depends on what it's for... Seems to me, if she did yoga completely naked it would be the bomb! Eh, dreams... But who knows, maybe one day..."
 
     # game/core/09_opportunities.rpy:657
     old "Потребуются успехи в возможности \"Любимая тётя\"..."
-    new ""
+    new "It's going to take some progress in the \"Favorite Aunt\" opportunity..."
 
     # game/core/09_opportunities.rpy:657
     old "Нужно больше времени проводить с мамой. Её утренние занятия йогой помогут нам сблизиться..."
-    new ""
+    new "We need to spend more time with Mom during her morning yoga class."
 
 # TODO: Translation updated at 2021-07-04 20:21
 
@@ -1303,21 +1303,20 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то я пообщался с тётей Кирой насчёт поведения мамы и она намекнула, что знает причины, но не может мне рассказать, пока мама не даст согласия на это. А может быть, она и сама всё расскажет мне? Нужно лишь намекнуть про какую-то историю из её детства..."
-    new ""
+    new "I finally talked to Aunt Kira about Mom's behavior, and she hinted that she knew the reasons, but she couldn't tell me until Mom agreed to it. Maybe she'll tell me herself. All I have to do is hint at some story from her childhood..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно поговорить об этом с мамой, когда она одна и не слишком занята..."
-    new ""
+    new "You need to talk to Mom about it when she's alone and not too busy..."
 
     # game/core/09_opportunities.rpy:4
     old "Мама категорически отказалась со мной общаться на тему какого-то случая из её детства, на который намекала тётя Кира. Теперь я знаю где копать, но не знаю кто может что-то объяснить... Может быть, удастся убедить тётю Киру мне всё рассказать по секрету?"
-    new ""
+    new "Mom categorically refused to talk to me about her childhood that Aunt Kira alluded to. Now I know where to dig, but I don't know who can explain anything... Maybe I can convince Aunt Kira to tell me everything in confidence."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно пытаться убедить Киру рассказать мамин секрет..."
-    new ""
+    new "We have to try to convince Kira to spill Mom's secret..."
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то, мне удалось убедить тётю Киру рассказать о том, что случилось с мамой в детстве. Очевидно, что психологическая травма, которую нанёс ей тот похититель в лесу, оказала серьёзное влияние на то, какой она стала. Ну и Эрик, её босс, оказался идеальной причиной, чтобы все последствия той травмы вновь проявились, но уже таким... странным образом..."
-    new ""
-
+    new "Finally, I managed to convince Aunt Kira to talk about what happened to Mom when she was a child. Obviously, the psychological trauma that that kidnapper had inflicted on her in the woods had had a profound effect on what she had become. And Eric, her boss, was the perfect reason for all the effects of that trauma to reappear, but in this... in a strange way..."

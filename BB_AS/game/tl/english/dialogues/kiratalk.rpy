@@ -2619,31 +2619,31 @@ translate english strings:
 translate english kira_talk5_1195595b:
 
     # Max_02 "Так у нас же Алиса блог свой ведёт. Вот я ей и помогал с его развитием. Хорошие фотографии нужны всем!"
-    Max_02 ""
+    Max_02 "So we have Alice's blog. So I helped her with its development. Everyone needs good pictures!"
 
 # game/dialogues/kiratalk.rpy:351
 translate english kira_talk5_8431a94b:
 
     # Kira_03 "Так ты с телефона её фотографировал?"
-    Kira_03 ""
+    Kira_03 "So you took her picture with your phone?"
 
 # game/dialogues/kiratalk.rpy:352
 translate english kira_talk5_0a43014e:
 
     # Max_05 "Нет. Я купил хороший и серьёзный фотоаппарат. Опыта у меня пока маловато, но я готов пощёлкать тебя бесплатно, если ты попозируешь..."
-    Max_05 ""
+    Max_05 "No. I bought a good camera. I don't have much experience yet, but I'm willing to snap you for free if you pose..."
 
 # game/dialogues/kiratalk.rpy:359
 translate english kira_talk5_c73f7880:
 
     # Max_05 "Ага. Вот прямо недавно купил!"
-    Max_05 ""
+    Max_05 "Yeah. I just bought it recently!"
 
 # game/dialogues/kiratalk.rpy:362
 translate english kira_talk5_b6188756:
 
     # Max_08 "Найду!"
-    Max_08 ""
+    Max_08 "I'll find it!"
 
 # TODO: Translation updated at 2021-07-04 11:48
 
@@ -2651,23 +2651,22 @@ translate english kira_talk5_b6188756:
 translate english kira_about_ann_secret0_475d1a3d:
 
     # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но Эрик напрямую мне заявил, что намерен трахать не только маму, но и моих сестёр!"
-    Max_07 ""
+    Max_07 "She does things that, before Eric, she would never have done! You probably don't know this, but Eric told me directly that he intends to fuck not only Mom, but my sisters as well!"
 
 # game/dialogues/kiratalk.rpy:1002
 translate english kira_about_ann_secret0_0767af53:
 
     # Kira_13 "О как! Этого я действительно не знала... Тогда дела и правда плохи!"
-    Kira_13 ""
+    Kira_13 "Oh, my! I really didn't know that... Then things are really bad!"
 
 # game/dialogues/kiratalk.rpy:1003
 translate english kira_about_ann_secret0_d8eb099b:
 
     # Max_10 "Вот-вот. И я понятия не имею, как повлиять на маму! Она вся в его власти. Ты как, хочешь жить в месте, где все делают то, что пожелает Эрик? А скоро так и будет, если ничего не делать..."
-    Max_10 ""
+    Max_10 "Exactly. And I have no idea how to influence my mom! He has all the power over her. Do you want to live in a place where everyone does whatever Eric wants? And soon we will, if we do nothing..."
 
 # game/dialogues/kiratalk.rpy:1004
 translate english kira_about_ann_secret0_57f3cd2a:
 
     # Kira_13 "Ты прав, такого я не хочу... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
-    Kira_13 ""
-
+    Kira_13 "You're right, I don't want that... I can guess what's wrong with your mom. But it's a big secret between me and her, or rather her secret. And I'm not sure I can tell you..."
