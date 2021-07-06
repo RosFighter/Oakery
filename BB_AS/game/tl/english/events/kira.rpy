@@ -4390,5 +4390,4 @@ translate english kira_alice_shower_ladder_f790b709:
 translate english kira_night_tv_second_lesson_e9adc097:
 
     # Max_07 "Я думал, что у меня неплохо получается..."
-    Max_07 ""
-
+    Max_07 "I thought I was pretty good at it..."
