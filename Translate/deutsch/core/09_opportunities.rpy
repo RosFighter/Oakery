@@ -1152,7 +1152,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Ухх... А моя сестрёнка ловко управляется со своей розовой игрушкой! Неужели это мой массаж её так завёл? Похоже на то. А конфеты её только раззадорили и она хочет ещё... Не означает ли это, что я могу зайти куда дальше во время массажа её ног?"
-    new "Äh... Und meine kleine Schwester ist wirklich gut mit ihrem rosa Spielzeug! Ist es meine Massage, die sie anmacht? Ich denke schon. Und die Süßigkeiten haben sie nur angeheizt und sie will mehr... Bedeutet das nicht, dass ich viel weiter gehen kann, während ich ihre Füße massiere?"
+    new "Äh... Und meine süße Schwester ist wirklich gut mit ihrem rosa Spielzeug! Ist es meine Massage, die sie so heiß macht? Ich denke schon. Und die Süßigkeiten haben sie nur noch mehr angeheizt und sie will mehr... Bedeutet das etwa, dass ich viel weiter gehen kann, während ich ihre Füße massiere?"
 
     # game/core/09_opportunities.rpy:4
     old "Пора покорять новые вершины в массаже ног Алисы у ТВ..."
