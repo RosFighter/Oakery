@@ -2564,3 +2564,29 @@ translate deutsch kira_talk5_b6188756:
     # Max_08 "Найду!"
     Max_08 "Das finde ich schon!"
 
+# TODO: Translation updated at 2021-07-04 11:49
+
+# game/dialogues/kiratalk.rpy:1001
+translate deutsch kira_about_ann_secret0_475d1a3d:
+
+    # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но Эрик напрямую мне заявил, что намерен трахать не только маму, но и моих сестёр!"
+    Max_07 "Sie macht Dinge, die sie vor Eric nie tun würde! Du weißt es wahrscheinlich nicht, aber Eric hat mir direkt gesagt, dass er vorhat, nicht nur meine Mutter zu ficken, sondern auch meine Schwestern!"
+
+# game/dialogues/kiratalk.rpy:1002
+translate deutsch kira_about_ann_secret0_0767af53:
+
+    # Kira_13 "О как! Этого я действительно не знала... Тогда дела и правда плохи!"
+    Kira_13 "Oh, Mann! Ich wusste wirklich nicht, dass... Dann ist es wirklich schlimm!"
+
+# game/dialogues/kiratalk.rpy:1003
+translate deutsch kira_about_ann_secret0_d8eb099b:
+
+    # Max_10 "Вот-вот. И я понятия не имею, как повлиять на маму! Она вся в его власти. Ты как, хочешь жить в месте, где все делают то, что пожелает Эрик? А скоро так и будет, если ничего не делать..."
+    Max_10 "Genau. Und ich habe keine Ahnung, wie ich Mom damit überzeugen kann! Er hat die ganze Macht bei ihr. Wollen Wir echt an einem Ort leben, an dem jeder macht, was Eric verlangt? Und das werden wir bald, wenn wir nichts unternehmen..."
+
+# game/dialogues/kiratalk.rpy:1004
+translate deutsch kira_about_ann_secret0_57f3cd2a:
+
+    # Kira_13 "Ты прав, такого я не хочу... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
+    Kira_13 "Du hast Recht, ich will das auf keinen Fall... Ich kann mir denken, was mit deiner Mom los ist. Aber es ist ein großes Geheimnis zwischen mir und ihr, oder vielmehr ist es ihr Geheimnis. Und ich bin mir nicht sicher, ob ich dir das erzählen kann..."
+

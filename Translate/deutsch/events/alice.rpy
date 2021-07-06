@@ -3978,3 +3978,135 @@ translate deutsch alice_shower_pinded_2df0e482:
     # Max_10 "Вот чёрт!"
     Max_10 "Verdammt!"
 
+# TODO: Translation updated at 2021-07-04 11:49
+
+# game/events/alice.rpy:1797
+translate deutsch alice_after_club_need_hurry_05ef44a9:
+
+    # Alice_08 "В таком случае, я буду меньше говорить и больше делать... Тебе понравится!"
+    Alice_08 "In diesem Fall werde ich weniger reden und mehr handeln... Du wirst es lieben!"
+
+# game/events/alice.rpy:1801
+translate deutsch alice_after_club_need_hurry_93923f62:
+
+    # Max_21 "Ох, Алиса, это мне очень нравится! Так приятно... Д-а-а... Давай ещё... Как же сладко твои сочные губки это делают, д-а-а..." nointeract
+    Max_21 "Oh, Alice, ich liebe es! Es fühlt sich so gut an... J-a-a... Mach das noch einmal... Wie geil deine saftigen Lippen sind, j-a-a-a..." nointeract
+
+# game/events/alice.rpy:1810
+translate deutsch alice_after_club_need_hurry_bfd3e0e2:
+
+    # Max_22 "[restrain!t]Да, продолжай вот так! Давай быстрее, сестрёнка... Вижу, что с ним не просто справиться, но у тебя классно получается! Ещё немного... Я сейчас кончу..." nointeract
+    Max_22 "[restrain!t] Ja, mach weiter so! Beeil dich, Schwesterherz... Ich kann sehen, dass es nicht einfach ist, damit klar zu kommen, aber du machst das toll! Nur ein wenig mehr... Ich komme gleich..." nointeract
+
+# game/events/alice.rpy:1860
+translate deutsch alice_after_club_no_restrain_2de4d2ed:
+
+    # Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
+    Alice_06 "[norestrain!t] Max! Das ist Mist! Du bist über mein ganzes Gesicht gekommen."
+
+# game/events/alice.rpy:1861
+translate deutsch alice_after_club_no_restrain_d5b2b244:
+
+    # Max_07 "А ты хотела как-то по-другому?"
+    Max_07 "Wolltest du es anders haben?"
+
+# game/events/alice.rpy:1862
+translate deutsch alice_after_club_no_restrain_24506f4c:
+
+    # Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
+    Alice_13 "Nun, du hättest mich wenigstens warnen können... Jetzt muss ich mich waschen..."
+
+# game/events/alice.rpy:1863
+translate deutsch alice_after_club_no_restrain_dff49f05:
+
+    # Max_03 "А ты разве не для этого ванну собиралась принять?"
+    Max_03 "Wolltest du nicht gerade ein Bad nehmen?"
+
+# game/events/alice.rpy:1864
+translate deutsch alice_after_club_no_restrain_0011e063:
+
+    # Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
+    Alice_06 "Ja, das ist richtig... Du wirst doch niemandem erzählen, was hier passiert ist, oder?"
+
+# game/events/alice.rpy:1865
+translate deutsch alice_after_club_no_restrain_7894f632:
+
+    # Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+    Max_02 "Wie wer? Was wo? Ich weiß nicht, was du meinst!"
+
+# game/events/alice.rpy:1866
+translate deutsch alice_after_club_no_restrain_fa3f7bbe:
+
+    # Alice_05 "Вот именно, что ничего!" nointeract
+    Alice_05 "Richtig, nichts!" nointeract
+
+# game/events/alice.rpy:2669
+translate deutsch alice_towel_after_club_not_even_close_6117492e:
+
+    # Alice_08 "Кажется, я знаю, что с этим поможет... Смотри, не упади от наслаждения!"
+    Alice_08 "Ich glaube, ich weiß, was dabei helfen wird... Fallt nicht vor Freude um!"
+
+# game/events/alice.rpy:2673
+translate deutsch alice_towel_after_club_not_even_close_05fe5279:
+
+    # Max_21 "Ох, Алиса! Упасть здесь действительно есть от чего! Какие у тебя нежные губы... Д-а-а... У тебя хорошо получается, сестрёнка... Давай поактивнее... Как же приятно, д-а-а..." nointeract
+    Max_21 "Oh, Alice! Es gibt wirklich viel, worauf man fallen kann! Was für weiche Lippen du hast... Ja... Du bist gut darin, Schwesterherz. Komm schon... Es fühlt sich so gut an, j-a-a-a..." nointeract
+
+# game/events/alice.rpy:2681
+translate deutsch alice_towel_after_club_not_even_close_73619acf:
+
+    # Max_22 "[restrain!t]Вот чёрт, Алиса! Ты делаешь это просто потрясающе! Да, продолжай вот так... Ещё быстрее... Вот умница! Я держусь из последних сил... Вот-вот кончу..." nointeract
+    Max_22 "[restrain!t] Oh, Scheiße, Alice! Du machst das toll! Ja, mach weiter so... Schneller... Gutes Mädchen! Ich tue mein Bestes... Ich werde gleich kommen..." nointeract
+
+# game/events/alice.rpy:2700
+translate deutsch alice_towel_after_club_no_restrain_2de4d2ed:
+
+    # Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
+    Alice_06 "[norestrain!t] Max! Das ist Mist! Du bist über mein ganzes Gesicht gekommen!"
+
+# game/events/alice.rpy:2701
+translate deutsch alice_towel_after_club_no_restrain_d5b2b244:
+
+    # Max_07 "А ты хотела как-то по-другому?"
+    Max_07 "Wolltest du es anders haben?"
+
+# game/events/alice.rpy:2702
+translate deutsch alice_towel_after_club_no_restrain_24506f4c:
+
+    # Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
+    Alice_13 "Nun, du hättest mich wenigstens warnen können... Jetzt muss ich mich waschen..."
+
+# game/events/alice.rpy:2703
+translate deutsch alice_towel_after_club_no_restrain_05ac8115:
+
+    # Max_03 "А ты разве не для этого ванну решила принять?"
+    Max_03 "Wolltest du nicht gerade ein Bad nehmen?"
+
+# game/events/alice.rpy:2704
+translate deutsch alice_towel_after_club_no_restrain_b197e4d3:
+
+    # Alice_06 "Да, точно... Мы же никому не станем рассказывать, что тут было?"
+    Alice_06 "Ja, das ist richtig... Du wirst doch niemandem erzählen, was hier passiert ist, oder?"
+
+# game/events/alice.rpy:2705
+translate deutsch alice_towel_after_club_no_restrain_d7dd7483:
+
+    # Max_02 "Я только полотенце принёс и пошёл спать..."
+    Max_02 "Ich habe nur ein Handtuch gebracht und bin dann ins Bett gegangen..."
+
+# game/events/alice.rpy:2706
+translate deutsch alice_towel_after_club_no_restrain_50e121f5:
+
+    # Alice_05 "Ага. Именно так всё и было!" nointeract
+    Alice_05 "Ja. Das ist genau das, was passiert ist!" nointeract
+
+translate deutsch strings:
+
+    # game/events/alice.rpy:1717
+    old "Нет, я хочу ещё, но нужно поторопиться..."
+    new "Nein, ich will mehr, aber wir sollten uns beeilen..."
+
+    # game/events/alice.rpy:2610
+    old "Нет, я даже не близко..."
+    new "Nein, ich bin nicht mal nah dran..."
+
