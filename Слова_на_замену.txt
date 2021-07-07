@@ -10,22 +10,22 @@
 матерью         |   mother      |   Mutter
 
 ма-ам           |   Mom         |   Mom
+мам             |   Mom         |   Mom
 
+мама            |   Mom         |   Mom
+мамы            |   Mom['s]     |   Mom
+маме            |   Mom         |   Mom
+маму            |   Mom         |   Mom
+мамой           |   Mom         |   Mom
 
-
-мам
-мама
-маме
-мамы
-маму
-
-мамой
-мамин
-мамина
-мамину
-маминых
-маминой
-мамином
+мамин           |   Mom's       |   Mom
+мамина          |   Mom's       |   Mom
+мамину          |   mother's    |   Moom's
+мамино          |   Mom         |   Mom
+маминого        |   Mom's       |   Mom
+маминых         |   Mom's       |   Mom
+маминой         |   Mom['s]     |   Mom[s]['s]
+мамином         |   Mom         |   Mom
 
 тётя
 тёте
