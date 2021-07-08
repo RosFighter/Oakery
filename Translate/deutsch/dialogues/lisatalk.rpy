@@ -3826,7 +3826,7 @@ translate deutsch conversation_after_dinner_62a423d2:
 translate deutsch conversation_after_dinner_acc8a38c:
 
     # Max_01 "Договорились."
-    Max_01 "You got a deal."
+    Max_01 "Einverstanden."
 
 # game/dialogues/lisatalk.rpy:2121
 translate deutsch conversation_after_dinner_d5365485:

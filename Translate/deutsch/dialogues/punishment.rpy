@@ -370,7 +370,7 @@ translate deutsch punishment_max_pun_reson_ad895117:
 translate deutsch punishment_max_pun_reson_2f871657:
 
     # Ann_14 "Хорошо. А теперь, ложись на мои колени и приступим, а то все голодные сидят..."
-    Ann_14 "Na ja. Also, rauf auf meinen Schoß und los geht's, alle warten auf das Abendessen..."
+    Ann_14 "Na ja. Also, rauf auf meinen Schoß und los geht's, denn alle haben Hunger..."
 
 # game/dialogues/punishment.rpy:332
 translate deutsch punishment_max_pun_reson_831f2da1_1:
