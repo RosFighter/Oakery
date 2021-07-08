@@ -9734,3 +9734,29 @@ translate deutsch strings:
     old "{i}сдерживаться{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"
     new "{i}zurückhalten{/i} {color=[sex2.col]}(Sexuelle Erfahrung. Chance: [sex2.vis]){/color}"
 
+# TODO: Translation updated at 2021-07-09 00:12
+
+# game/dialogues/alicetalk.rpy:551
+translate deutsch alice_talk_tv_jeans_6db9afd9:
+
+    # Alice_04 "Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
+    Alice_04 "Weißt du, sie sind im Weg. Und ich fühle mich heiß. Ich denke, ich gebe dir eine kleine Extra-Motivation, da du dich gut machst..."
+
+# game/dialogues/alicetalk.rpy:584
+translate deutsch alice_talk_tv_not_jeans_a2d4a2f1:
+
+    # Max_09 "Вот ты и попалась! Я значит тут со всей любезностью массаж сестрёнке делаю, а она..."
+    Max_09 "Na Du bist ja klasse! Ich gebe meiner Schwester eine Massage, und sie..."
+
+# game/dialogues/alicetalk.rpy:621
+translate deutsch alice_talk_tv_massage_next_db75bb50:
+
+    # Alice_07 "[alice_good_mass!t]Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?" nointeract
+    Alice_07 "[alice_good_mass!t]Max... Deine Hände vollbringen heute wahre Wunder... Was berührt mein Fuß da? Gehört das zum Programm oder was?" nointeract
+
+# game/dialogues/alicetalk.rpy:654
+translate deutsch alice_talk_tv_massage_next_e52ff194:
+
+    # Alice_03 "[alice_good_mass!t]Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
+    Alice_03 "[alice_good_mass!t]Uh, das ist super... Max, du bist heute großartig! Ich habe nicht erwartet, dass so viel Sinnlichkeit und Stärke gleichzeitig... Nun, danke."
+
