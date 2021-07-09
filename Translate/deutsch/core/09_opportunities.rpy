@@ -1332,9 +1332,9 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лучше, если Лиза будет делать домашнее задание в одежде посвободнее той, в которой мы заехали в этот дом..."
-    new ""
+    new "Es ist besser, wenn Lisa ihre Hausaufgaben in luftigerer Kleidung macht, als in der, mit der sie in diesem Haus angekommen ist..."
 
     # game/core/09_opportunities.rpy:4
     old "Мама обязательно должна наказать Лизу. Иначе сестрёнка не поймёт, насколько сильно нуждается во мне..."
-    new ""
+    new "Mom muss Lisa bestrafen. Sonst wird meine Schwester nicht verstehen, wie sehr sie mich braucht..."
 

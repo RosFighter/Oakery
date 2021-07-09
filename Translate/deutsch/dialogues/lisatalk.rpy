@@ -10053,5 +10053,5 @@ translate deutsch strings:
 translate deutsch lisa_gift_sweets_9a51061a:
 
     # Max_09 "{i}( Ещё рановато для сладостей. Нужно немного подождать, пусть Лиза соскучится по сладкому... ){/i}"
-    Max_09 ""
+    Max_09 "{i}(Es ist ein bisschen früh für Süßigkeiten. Ich sollte noch ein wenig warten, damit Lisa die Süßigkeiten genießen kann...){/i}"
 

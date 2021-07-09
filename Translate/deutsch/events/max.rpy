@@ -1003,11 +1003,11 @@ translate deutsch SearchCam_529c107e:
 translate deutsch Sleep_26005aa6:
 
     # Max_00 "{i}( В каком часу мне будет лучше проснуться? ){/i}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{i}(Wann wäre der beste Zeitpunkt für mich, um aufzuwachen?){/i}" nointeract
 
 translate deutsch strings:
 
     # game/events/max.rpy:31
     old "{i}установить будильник{/i}"
-    new ""
+    new "{i}Wecker stellen{/i}"
 
