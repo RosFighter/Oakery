@@ -9760,3 +9760,11 @@ translate deutsch alice_talk_tv_massage_next_e52ff194:
     # Alice_03 "[alice_good_mass!t]Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
     Alice_03 "[alice_good_mass!t]Uh, das ist super... Max, du bist heute großartig! Ich habe nicht erwartet, dass so viel Sinnlichkeit und Stärke gleichzeitig... Nun, danke."
 
+# TODO: Translation updated at 2021-07-09 15:31
+
+# game/dialogues/alicetalk.rpy:3958
+translate deutsch alice_gift_sweets_abfdc62f:
+
+    # Max_09 "{i}( Ещё рановато для сладостей, так недолго и фигуру Алисе испортить. Лучше немного подождать... ){/i}"
+    Max_09 ""
+

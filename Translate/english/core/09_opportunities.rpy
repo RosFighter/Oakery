@@ -1320,3 +1320,15 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Наконец-то, мне удалось убедить тётю Киру рассказать о том, что случилось с мамой в детстве. Очевидно, что психологическая травма, которую нанёс ей тот похититель в лесу, оказала серьёзное влияние на то, какой она стала. Ну и Эрик, её босс, оказался идеальной причиной, чтобы все последствия той травмы вновь проявились, но уже таким... странным образом..."
     new "Finally, I managed to convince Aunt Kira to talk about what happened to Mom when she was a child. Obviously, the psychological trauma that that kidnapper had inflicted on her in the woods had had a profound effect on what she had become. And Eric, her boss, was the perfect reason for all the effects of that trauma to reappear, but in this... in a strange way..."
+# TODO: Translation updated at 2021-07-09 14:53
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Лучше, если Лиза будет делать домашнее задание в одежде посвободнее той, в которой мы заехали в этот дом..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Мама обязательно должна наказать Лизу. Иначе сестрёнка не поймёт, насколько сильно нуждается во мне..."
+    new ""
+

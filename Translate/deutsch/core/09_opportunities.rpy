@@ -1326,3 +1326,15 @@ translate deutsch strings:
     old "Наконец-то, мне удалось убедить тётю Киру рассказать о том, что случилось с мамой в детстве. Очевидно, что психологическая травма, которую нанёс ей тот похититель в лесу, оказала серьёзное влияние на то, какой она стала. Ну и Эрик, её босс, оказался идеальной причиной, чтобы все последствия той травмы вновь проявились, но уже таким... странным образом..."
     new "Endlich ist es mir gelungen, Tante Kira zu überreden, darüber zu sprechen, was Mom als Kind widerfahren war. Offensichtlich hatte das psychologische Trauma, das ihr der Entführer im Wald zugefügt hatte, einen tiefgreifenden Einfluss auf das, was aus ihr geworden war. Und Eric, ihr Boss, war der perfekte Grund dafür, dass die Auswirkungen dieses Traumas wieder zum Vorschein kamen, aber in diesem Fall... auf eine seltsame Art und Weise..."
 
+# TODO: Translation updated at 2021-07-09 15:31
+
+translate deutsch strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Лучше, если Лиза будет делать домашнее задание в одежде посвободнее той, в которой мы заехали в этот дом..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Мама обязательно должна наказать Лизу. Иначе сестрёнка не поймёт, насколько сильно нуждается во мне..."
+    new ""
+

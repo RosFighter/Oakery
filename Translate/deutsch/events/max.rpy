@@ -997,3 +997,17 @@ translate deutsch SearchCam_529c107e:
     # Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
     Max_14 "Es scheint hier keine Kameras zu geben... Am besten, ich durchsuche das ganze Haus danach!"
 
+# TODO: Translation updated at 2021-07-09 15:31
+
+# game/events/max.rpy:34
+translate deutsch Sleep_26005aa6:
+
+    # Max_00 "{i}( В каком часу мне будет лучше проснуться? ){/i}" nointeract
+    Max_00 "" nointeract
+
+translate deutsch strings:
+
+    # game/events/max.rpy:31
+    old "{i}установить будильник{/i}"
+    new ""
+

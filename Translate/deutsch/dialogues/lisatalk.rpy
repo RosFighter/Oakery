@@ -10047,3 +10047,11 @@ translate deutsch strings:
     old "{i}продолжить{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
     new "{i}Weiter{/i} \n{color=[ch.col]}(Massage. Chance: [ch.vis]){/color}"
 
+# TODO: Translation updated at 2021-07-09 15:31
+
+# game/dialogues/lisatalk.rpy:3306
+translate deutsch lisa_gift_sweets_9a51061a:
+
+    # Max_09 "{i}( Ещё рановато для сладостей. Нужно немного подождать, пусть Лиза соскучится по сладкому... ){/i}"
+    Max_09 ""
+
