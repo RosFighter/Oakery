@@ -2670,3 +2670,10 @@ translate english kira_about_ann_secret0_57f3cd2a:
 
     # Kira_13 "Ты прав, такого я не хочу... Я догадываюсь, что с твоей мамой. Но это наш с ней большой секрет, точнее, скорее её секрет. И я не уверена, что могу тебе рассказать..."
     Kira_13 "You're right, I don't want that... I can guess what's wrong with your mom. But it's a big secret between me and her, or rather her secret. And I'm not sure I can tell you..."
+# TODO: Translation updated at 2021-07-10 19:36
+
+# game/dialogues/kiratalk.rpy:388
+translate english kira_talk5_7c1c8dcc:
+
+    # Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
+    Max_07 "{i}( I wonder what Aunt Kira wants to be photographed in? She's building her porn portfolio... So maybe I should buy something sexy for her? For example, a more revealing nightgown! That'd be a win for me... ){/i}"
