@@ -2718,7 +2718,7 @@ translate english strings:
 
     # game/events/alice.rpy:1799
     old "{i}проникнуть в её киску пальцами{/i}"
-    new "{i}Finger her{/i}"
+    new "{i}Penetrate her pussy with your fingers{/i}"
 
     # game/events/alice.rpy:1829
     old "{i}массировать её ножки{/i}"

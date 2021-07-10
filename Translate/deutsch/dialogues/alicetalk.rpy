@@ -9766,5 +9766,4 @@ translate deutsch alice_talk_tv_massage_next_e52ff194:
 translate deutsch alice_gift_sweets_abfdc62f:
 
     # Max_09 "{i}( Ещё рановато для сладостей, так недолго и фигуру Алисе испортить. Лучше немного подождать... ){/i}"
-    Max_09 "{i}(Es ist ein bisschen früh für Süßigkeiten, Ich könnte sonst Alices Figur ruinieren. Es ist besser, noch ein wenig zu warten...){/i}""
-
+    Max_09 "{i}( Es ist ein bisschen früh für Süßigkeiten, Ich könnte sonst Alices Figur ruinieren. Es ist besser, noch ein wenig zu warten... ){/i}"
