@@ -1344,21 +1344,21 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы получить большее от Алисы, мне нужно сближаться с ней без помощи конфет с ликёром. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new ""
+    new "Um weiter an Alice heranzukoommen, muss ich mich ihr ohne die Hilfe von Pralinen nähern. Es braucht Fortschritte bei der Möglichkeit \"freche Schenkel\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь я вполне могу рассчитывать на что-то большее, чем то, что Алиса вытворяет своим языком после клуба. Главное, чтобы конфет с ликёром хватало..."
-    new ""
+    new "Jetzt kann ich mich darauf verlassen, dass es mehr gibt als das, was Alice nach dem Club mit ihrer Zunge macht. Solange es genug Pralinen gibt..."
 
     # game/core/09_opportunities.rpy:4
     old "Ох, Алиса... Это тебе не свою розовую игрушку посасывать... У меня в трусах штука посерьёзнее будет. Её губы с таким трудом охватывают мой член и доставляют нереальное удовольствие! Уверен, впереди нас ждёт ещё много развлечений, но для этого нужно развивать наши с Алисой отношения..."
-    new ""
+    new "Oh, Alice... Es ist ja nicht so, als ob du an deinem rosa Spielzeug lutschen würdest... Ich habe etwas Besseres in meiner Hose. Ihre Lippen sind so fest um meinen Schwanz, dass sie mir ein unwirkliches Vergnügen bereiten. Ich bin sicher, dass ich eine Menge Spaß vor mir habe, aber dafür muss ich meine Beziehung zu Alice ausbauen..."
 
     # game/core/09_opportunities.rpy:4
     old "Должно быть теперь, после того, чего я добился без конфет, их понадобится меньше, чем раньше? По крайней мере на то, что уже было. А вот для чего-то нового, без двух конфет точно не обойдётся..."
-    new ""
+    new "Es wird jetzt, nach dem, was ich ohne Pralinen erreicht habe, weniger brauchen als vorher? Zumindest für das, was ich bereits habe. Aber für etwas Neues muss es definitiv zwei Pralinen geben..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь Алиса считает своим долгом приласкать меня не только шаловливыми ногами за массаж, но и пустить в ход свой не менее шаловливый ротик! Пока что я не хочу рисковать и засаживать свой член как можно глубже ей в рот, но когда наши отношения станут ещё лучше, уххх... Держись, сестрёнка... Тебе будет нелегко!"
-    new ""
+    new "Jetzt sieht Alice es als ihre Pflicht an, mich nicht nur mit ihren frechen Schenkeln zu massieren, sondern auch ihren ebenso frechen Mund zu benutzen! Im Moment will ich nicht riskieren, meinen Schwanz so tief wie möglich in ihren Mund zu stecken, aber wenn unsere Beziehung noch besser wird, ughhhh... Halte durch, Schwesterchen... Das wird nicht einfach für dich werden!"
 
