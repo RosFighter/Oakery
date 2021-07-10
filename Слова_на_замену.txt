@@ -27,47 +27,106 @@
 маминой         |   Mom['s]     |   Mom[s]['s]
 мамином         |   Mom         |   Mom
 
-тётя
-тёте
-тёти
-тётю
-тётей
+тётя            |   Aunt        |   Tante
+тёти            |   Aunt        |   Tante
+тёте            |   Aunt        |   Tante
+тётю            |   Aunt        |   Tante
+тётей           |   Aunt        |   Tante
 
-сестрёнка
-сестрёнке
-сестрёнки
-сестрёнку
-сестрёнкой
+сестренка       |   sis         |   Schwester
+сестрёнка       |   sis[ter]    |   Schwester
+сестрёнки       |   sister['s]  |   Schwester
+сестрёнке       
+сестрёнку       |   sister      |   Schwester
+сестрёнкой      |   sis[ter]    |   Schwester
+сестрёнок
+сестрёнкам      |   sisters     |   Schwestern
+сестрёнками
+сестренках
 
-сестра
-сестре
-сестры
-сестру
-сестрой
+сестра          |   sister      |   Schwester
+сестры          |   sister[s]   |   Schwester[n]
+сестре          |   sister      |   Schwester
+сестру          |   sister      |   Schwester
+сестрой         |   sister      |   Schwester
+сёстры          |   sisters     |   Schwestern
+сестёр          |   sisters     |   Schwestern
+сёстрам         |   sisters     |   Schwestern
+сёстрами        |   sisters     |   Schwestern
+сёстрах         |   sisters     |   Schwestern
 
-сестёр
-сёстрами
-сёстрам
+брат            |   brother     |   Bruder
+брата           |   brother['s] |   Bruder
+брату           |   brother     |   Bruder
+братом          |   brother     |   Bruder
+брате
+братья
+братьев
+братьям
+братьями        |   brother     |   Bruder, Brüdern
+братьях
 
-брат
-брата
-брату
-братом
+братья и сёстры |   siblings
 
-братишка
-братика
+усыновила       |   adopted     |   adoptierte
 
-братьями
+братишка        |   brother     |   Bruder
 
-семья
-семье
-семьи
-семью
-семьёй
+братик
+братика         |   brother     |   Bruder
+братику
+братиком
+братике
 
-племянник
-племянника
-племянничек
+семья           |   family      |   Familie
+семьи           |   family      |   Familie
+семье           |   family      |   Familie
+семью           |   family      |   Familie
+семьёй          |   family      |   Familie
+семей
+семьям
+семьями
+семьях
 
+семейный        |   family      |   
+семейного
+семейному
+семейным
+семейном
+семейная
+семейной
+семейную
+семейное        |   family      |   Familie
+семейные
+семейных
+семейными
+
+семейный бизнес |               |   Familienunternehmen
+семейный ужин   |               |   Familienessen
+
+
+племянник       |   nephew      |   Neffe
+племянника      |   nephew      |   Neffe
+племяннику
+племянником
+племяннике
+
+племянники
+племянников
+племянникам
+племянниками
+племянниках
+
+племянничек     |   nephew      |   Neffe
+племянничка
+племянничку
+племянничком
+племянничке
+
+племяннички
+племянничков
+племянничкам
+племянничками
+племянничках
 
 ?? Вы же её дети и к вам у неё особое отношение. К тому же, тут сильнее всего материнский инстинкт
