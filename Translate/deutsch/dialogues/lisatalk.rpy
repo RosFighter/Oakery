@@ -8384,7 +8384,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:722
     old "Хотел дать тебе один совет..."
-    new "I can give you advice..."
+    new "Ich möchte dir einen Rat geben..."
 
     # game/dialogues/lisatalk.rpy:722
     old "Да, забей..."
