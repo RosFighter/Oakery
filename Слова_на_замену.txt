@@ -33,6 +33,14 @@
 тётю            |   Aunt        |   Tante
 тётей           |   Aunt        |   Tante
 
+дочь            |   
+
+сын             |   son         |   Sohn
+сына            |   son         |   Sohn
+сыну            |
+сыном           |   son         |   Sohn
+сыне            |   son         |   Sohn
+
 сестренка       |   sis         |   Schwester
 сестрёнка       |   sis[ter]    |   Schwester
 сестрёнки       |   sister['s]  |   Schwester
