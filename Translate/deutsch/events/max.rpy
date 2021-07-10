@@ -10,7 +10,7 @@ translate deutsch StartDialog_069fda26:
 translate deutsch Sleep_002afad6:
 
     # Max_00 "{i}( Пожалуй, пора ложиться спать... ){/i}" nointeract
-    Max_00 "{i}( Ich glaube, es ist Zeit, ins Bett zu gehen... ){/i}" nointeract
+    Max_00 "{i}( Ich glaube, es ist Zeit ins Bett zu gehen... ){/i}" nointeract
 
 # game/events/max.rpy:33
 translate deutsch Sleep_dca71115:
@@ -94,7 +94,7 @@ translate deutsch Shower_b3c37b42:
 translate deutsch Bath_2c708671:
 
     # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
-    Max_19 "Es ist besser, sauber zu sein." nointeract
+    Max_19 "Es ist aber viel besser, sauber zu sein. Auch wenn ich nicht immer..." nointeract
 
 # game/events/max.rpy:176
 translate deutsch Bath_58b0fd27:
@@ -274,7 +274,7 @@ translate deutsch about_spider_3be5aefa:
 translate deutsch about_spider_e3aa40bf:
 
     # Max_00 "Так, и что у нас получается?"
-    Max_00 "Also, was tun?"
+    Max_00 "Na, was haben wir denn hier?"
 
 # game/events/max.rpy:461
 translate deutsch about_spider_49e33bd9:
@@ -304,13 +304,13 @@ translate deutsch about_spider_0e3e8b40:
 translate deutsch SearchCam_67b6130b:
 
     # Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
-    Max_04 "Das ist es! Jemand hat es in der Wand versteckt. Ich glaube nicht, dass ich eine Chance gehabt hätte, es zu finden, wenn ich nicht genau gewusst hätte, wonach ich suchen muss..."
+    Max_04 "Wow! Da ist es! Jemand hat es so gut in der Wand versteckt, dass man es nur finden kann, wenn man genau weiß, wonach man sucht..."
 
 # game/events/max.rpy:488
 translate deutsch SearchCam_140db024:
 
     # Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
-    Max_09 "Sie ist mit nichts verbunden. Vielleicht hat Dad damit das Haus während des Baus im Auge behalten?"
+    Max_09 "Okay, äh... Aber sie ist im Moment nicht angeschlossen. Anscheinend hatte Dad früher ein Auge auf den Bau und die Renovierung geworfen, und jetzt gibt es niemanden mehr, auf den man ein Auge werfen kann und nichts anderes mehr..."
 
 # game/events/max.rpy:489
 translate deutsch SearchCam_9487a2c0:
@@ -322,13 +322,13 @@ translate deutsch SearchCam_9487a2c0:
 translate deutsch SearchCam_c5169ba0:
 
     # Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
-    Max_14 "Ich sehe keine Kameras... Ich sollte in einem anderen Raum nachsehen."
+    Max_14 "Es scheint hier keine Kameras zu geben... Vielleicht sollte ich in dem anderen Raum suchen?"
 
 # game/events/max.rpy:506
 translate deutsch ClearPool_f0dc1508:
 
     # Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    Max_11 "Es ist keine leichte Arbeit, aber ich brauche das Geld. Außerdem hat mich Mom schon dafür bezahlt."
+    Max_11 "Eh... Es ist kein leichter Job, aber ich muss das Geld abarbeiten, das meine Mom schon bezahlt hat..."
 
 # game/events/max.rpy:525
 translate deutsch DishesWashed_cedc9161:
@@ -466,7 +466,7 @@ translate deutsch SearchSecretBook_390d326c:
 translate deutsch SearchSecretBook_pillow_fdc18f7e:
 
     # Max_14 "Нет, здесь её нет... Ну где же эта чёртова книга? Шаги? Нет, показалось..." nointeract
-    Max_14 "Nicht hier... Wo ist dieses verdammte Buch? Höre ich da etwa Schritte? Nein, ich glaube, ich habe es mir eingebildet..." nointeract
+    Max_14 "Nein, es ist nicht hier... Wo zum Teufel ist das Buch? Schritte? Nein, ich bilde mir das nur ein..." nointeract
 
 # game/events/max.rpy:685
 translate deutsch SearchSecretBook_bed_893f346c:
@@ -508,7 +508,7 @@ translate deutsch InstallCam_a23c5b5d:
 translate deutsch InstallCam_51cc3414:
 
     # Max_04 "{i}( Конечно, здесь редко происходят события. Зато, когда они происходят, то здесь такое... Думаю, зрители будут рады таким моментам... ){/i}" nointeract
-    Max_04 "{i}( In diesem Raum ist nicht viel los. Aber wenn etwas passiert, dann ist es gut. Ich denke, die Zuschauer werden es genießen. ){/i}" nointeract
+    Max_04 "{i}( Natürlich passiert hier selten etwas. Aber wenn doch, dann ist es so... Ich denke, die Zuschauer werden diese Momente genießen... ){/i}" nointeract
 
 # game/events/max.rpy:753
 translate deutsch InstallCam_4055993b:
@@ -520,13 +520,13 @@ translate deutsch InstallCam_4055993b:
 translate deutsch InstallCam_5ff29a44:
 
     # Max_04 "{i}( Конечно, с точки зрения морали ставить камеру в ванной сомнительно. Однако, тут и так окно во всю стену. Так что, формально я лишь приоткрыл это окно... ){/i}" nointeract
-    Max_04 "{i}( Es ist vielleicht ein bisschen unmoralisch, eine Kamera im Badezimmer anzubringen, aber es hat sowieso schon ein riesiges Fenster. Ich mache dieses Fenster nur noch größer. ){/i}" nointeract
+    Max_04 "{i}( Natürlich ist es moralisch fragwürdig, eine Kamera im Badezimmer anzubringen. Es gibt allerdings bereits ein wandfüllendes Fenster. Also technisch gesehen habe ich nur dieses Fenster geöffnet... ){/i}" nointeract
 
 # game/events/max.rpy:765
 translate deutsch InstallCam_da778942:
 
     # Max_04 "{i}( Уж не знаю, будет ли какой-то толк от этой камеры... Тут так редко что-то происходит... Ну пусть будет. Раз уж взялся всё подключать... ){/i}" nointeract
-    Max_04 "{i}( Ich bin mir nicht sicher, ob es einen Sinn hat, eine Kamera in diesem Raum anzubringen, hier passiert nicht viel Action. Aber wenn ich überall Kameras anbringe, kann ich auch hier eine installieren. ){/i}" nointeract
+    Max_04 "{i}( Ich weiß nicht, ob diese Kamera etwas taugt... Es ist so wenig los hier... Nun, dann soll es so sein. Jetzt, wo alles verkabelt ist... ){/i}" nointeract
 
 # game/events/max.rpy:772
 translate deutsch InstallCam_87d6b203:
@@ -550,7 +550,7 @@ translate deutsch InstallCam_3a0ef02c:
 translate deutsch SearchSpider_19279e48:
 
     # Max_00 "Так, нужно хорошенько рассмотреть траву..." nointeract
-    Max_00 "Ich sollte das Gras überprüfen" nointeract
+    Max_00 "Okay, jetzt sollte ich das Gras genau untersuchen..." nointeract
 
 # game/events/max.rpy:804
 translate deutsch SearchSpider_1b27d19f:
@@ -562,7 +562,7 @@ translate deutsch SearchSpider_1b27d19f:
 translate deutsch SearchSpider_88937e9a:
 
     # Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"
-    Max_00 "Sieht nicht so aus, als würde ich eine finden... Vielleicht habe ich sie alle verschreckt und sollte ein oder zwei Tage warten"
+    Max_00 "Nein, es gibt nichts, was wie eine große, gruselige Spinne aussieht... Vielleicht habe ich sie alle gefangen und ich sollte ein oder zwei Tage warten?"
 
 # game/events/max.rpy:820
 translate deutsch HideSpider_59b81ead:
@@ -580,13 +580,13 @@ translate deutsch HideSpider_14a01e28:
 translate deutsch HideSpider_dbcd96db:
 
     # Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
-    Max_00 "Nun, hoffen wir, dass die Spinne nicht wegläuft, bevor Alice einschläft"
+    Max_00 "Nun, hoffen wir, dass die Spinne nicht entkommt, bevor Alice ins Bett geht..."
 
 # game/events/max.rpy:871
 translate deutsch ViewLesson_a3b4ee9d:
 
     # Max_00 "{i}( Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало... ){/i}"
-    Max_00 "{i}( Diese Online-Kurse sind eine gute Sache - man kann alles lernen, ohne aus dem Haus zu gehen! Allerdings ist das teuer ){/i}"
+    Max_00 "{i}( Das Gute an diesen Online-Kursen ist, dass man alles bequem von zu Hause aus lernen kann! Die einzige Sache ist, dass es eine Menge kostet... ){/i}"
 
 # game/events/max.rpy:878
 translate deutsch SearchCigarettes_b89e2d47:
@@ -604,7 +604,7 @@ translate deutsch SearchCigarettes_no_34602f75:
 translate deutsch SearchCigarettes_yes_b172b515:
 
     # Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..." nointeract
-    Max_04 "Ich habe sie gefunden! Jetzt muss ich sie irgendwo platzieren, damit Mom sie findet." nointeract
+    Max_04 "Ja, ich habe es gefunden! Okay, ähm... Jetzt ich sie sie so platzieren, dass Mom sie auch bemerkt, wenn sie ins Zimmer schaut..." nointeract
 
 # game/events/max.rpy:923
 translate deutsch need_money_abb42405:
@@ -646,7 +646,7 @@ translate deutsch need_money_e2c6bbaf:
 translate deutsch need_money_4caca393:
 
     # Max_08 "К сожалению, у меня нет источника доходов, все мои деньги я получаю только от мамы. Ну и от Алисы ещё могу..."
-    Max_08 "Leider habe ich keine Einkommensquelle, alles Geld, das ich bekomme, ist von Mom und Alice."
+    Max_08 "Leider habe ich keine andere Geldquelle, mein ganzes Geld kommt nur von Mom. Und dann ist da noch Alice..."
 
 # game/events/max.rpy:948
 translate deutsch need_money_e2987b4e:
@@ -724,7 +724,7 @@ translate deutsch getting_load_f9d89f7f:
 translate deutsch return_part_loan_4564f05f:
 
     # Max_00 "Сколько я верну сейчас?" nointeract
-    Max_00 "Wie viel werde ich jetzt zurückzahlen?" nointeract
+    Max_00 "Wie viel werde ich jetzt zurückbekommen?" nointeract
 
 translate deutsch strings:
 
@@ -798,7 +798,7 @@ translate deutsch strings:
 
     # game/events/max.rpy:336
     old "Настроить работу сайта"
-    new "Funktionalität der Website konfigurieren"
+    new "Einrichten der Website"
 
     # game/events/max.rpy:390
     old "Собрать статистику"
@@ -806,7 +806,7 @@ translate deutsch strings:
 
     # game/events/max.rpy:390
     old "Просмотреть популярные блоги"
-    new "Populäre Blogs prüfen"
+    new "Beliebte Blogs durchstöbern"
 
     # game/events/max.rpy:390
     old "Почитать комменты на блогах"
@@ -830,11 +830,11 @@ translate deutsch strings:
 
     # game/events/max.rpy:398
     old "Так. Из этой таблицы мы делаем вывод. Ага. Вот это значит, что... Нет, не так. Вот. Вроде получилось..."
-    new "Gut. Aus dieser Tabelle ziehe ich eine Schlussfolgerung. Ja, genau. Was bedeutet, dass... Nein, ist es nicht. Okay, hier. Es sieht aus, als wäre es..."
+    new "Okay. Aus dieser Tabelle lässt sich die folgende Aussage ableiten. Aha. Das heißt also, dass... Nein, tut es nicht. So geht's. Ich glaube, ich hab's..."
 
     # game/events/max.rpy:400
     old "Рисователь графиков из меня ещё тот. Но попробуем. Так, это шкала популярности, это... Ага. Кажется, всё сходится..."
-    new "Ich bin kein guter Grafiker. Aber lass es versuchen. Okay, es ist eine Beliebtheitsskala, es ist... Ja, das ist es. Ich denke, es passt zusammen..."
+    new "Ich bin kein großer Grafiker. Aber probieren wir es mal aus. Okay, das ist die Beliebtheitsskala, das ist... Aha. Es scheint sich alles zu summieren..."
 
     # game/events/max.rpy:402
     old "Составить список"
@@ -862,7 +862,7 @@ translate deutsch strings:
 
     # game/events/max.rpy:411
     old "Воспользоваться поиском"
-    new "Suchen"
+    new "Die Suche benutzen"
 
     # game/events/max.rpy:411
     old "Читать всё подряд"
