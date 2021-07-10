@@ -1083,7 +1083,7 @@ translate deutsch strings:
     new "Eric ist definitiv eine Veränderung zum Schlechteren. Zuerst schlug er vor, mich in irgendein Militärlager zu schicken. \"Um mein Selbstbewustsein aufzubauen\". Ich habe ein ausgeprägtes Selbstbewustsein!\n\n\n Dann überzeugte er Mom, dass wir ein neues Bestrafungssystem haben sollten. Warum konnte er nicht etwas Gutes vorschlagen... Jedenfalls werden wir ab nächster Woche voreinander den Hintern versohlt bekommen! Und zwar nackt! Das ist demütigend. Was für ein Perverser würde auf diese Idee kommen? Das wird meine Autorität ruinieren! Ich muss sofort etwas unternehmen!"
 
     # game/core/03variables.rpy:448
-    old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращаться свою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
+    old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращать мою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
     new "Ich habe das Gefühl, einen Pakt mit dem Teufel geschlossen zu haben. Eric versprach, mir etwas Geld zu zahlen und gab mir die Erlaubnis, ihm und meiner Mutter beim Sex hinterherzuspionieren. Ich meinerseits muss zulassen, dass er meine ganze Familie korrumpiert. Wer weiß, vielleicht lässt er mich an seiner Aktion teilnehmen..."
 
     # game/core/03variables.rpy:448
