@@ -1192,7 +1192,7 @@ translate deutsch kira_sleep_morning_c1353df2:
 translate deutsch kira_sleep_morning_e88b00c2:
 
     # Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
-    Max_05 "Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es sehr end in meinen Shorts... Darauf kann man wetten, sie ist so heiß!"
+    Max_05 "Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es sehr eng in meinen Shorts... Darauf kann man wetten, sie ist so heiß!"
 
 # game/events/kira.rpy:716
 translate deutsch kira_night_tv_234d0568:

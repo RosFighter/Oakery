@@ -1984,7 +1984,7 @@ translate deutsch Alice_sorry_88325cef:
 translate deutsch Alice_sorry_83ba523d:
 
     # Max_08 "А вдруг это была случайность и ты напрасно меня сдашь?"
-    Max_08 "Was ist, wenn es ein Unfall war und du mich wegen nichts anzeigst?"
+    Max_08 "Was, wenn es ein Versehen war und du mich umsonst verpfiffen hast?"
 
 # game/dialogues/alicetalk.rpy:1391
 translate deutsch Alice_sorry_79c516e2:
