@@ -1326,11 +1326,11 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лучше, если Лиза будет делать домашнее задание в одежде посвободнее той, в которой мы заехали в этот дом..."
-    new ""
+    new "It's better if Lisa does her homework in looser clothes than the ones she has..."
 
     # game/core/09_opportunities.rpy:4
     old "Мама обязательно должна наказать Лизу. Иначе сестрёнка не поймёт, насколько сильно нуждается во мне..."
-    new ""
+    new "Mom has to punish Lisa. Otherwise, my sister won't understand how much she needs me..."
 
 # TODO: Translation updated at 2021-07-10 17:10
 
@@ -1338,21 +1338,20 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы получить большее от Алисы, мне нужно сближаться с ней без помощи конфет с ликёром. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new ""
+    new "To get more out of Alice, I need to get closer to her without the help of the liquor candy. It's going to take some progress on the Naughty Feet opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь я вполне могу рассчитывать на что-то большее, чем то, что Алиса вытворяет своим языком после клуба. Главное, чтобы конфет с ликёром хватало..."
-    new ""
+    new "Now I can count on something more than what Alice does with her tongue after the club. As long as there is enough candy and liquor..."
 
     # game/core/09_opportunities.rpy:4
     old "Ох, Алиса... Это тебе не свою розовую игрушку посасывать... У меня в трусах штука посерьёзнее будет. Её губы с таким трудом охватывают мой член и доставляют нереальное удовольствие! Уверен, впереди нас ждёт ещё много развлечений, но для этого нужно развивать наши с Алисой отношения..."
-    new ""
+    new "Oh, Alice... It's not like you're sucking on your pink toy... I've got a bigger thing in my shorts. Her lips are so hard to grip my cock and it gives me unreal pleasure! I'm sure we have a lot of fun ahead of us, but for that we need to develop our relationship with Alice..."
 
     # game/core/09_opportunities.rpy:4
     old "Должно быть теперь, после того, чего я добился без конфет, их понадобится меньше, чем раньше? По крайней мере на то, что уже было. А вот для чего-то нового, без двух конфет точно не обойдётся..."
-    new ""
+    new "It must take less now, after what I've accomplished without candy, than it did before? At least for what I already had. But for something new, I'll definitely need two candies..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь Алиса считает своим долгом приласкать меня не только шаловливыми ногами за массаж, но и пустить в ход свой не менее шаловливый ротик! Пока что я не хочу рисковать и засаживать свой член как можно глубже ей в рот, но когда наши отношения станут ещё лучше, уххх... Держись, сестрёнка... Тебе будет нелегко!"
-    new ""
-
+    new "Now Alice considers it her duty to caress me not only with her naughty legs for a massage, but also to use her equally naughty mouth! For now, I don't want to risk putting my dick as deep into her mouth as possible, but when our relationship gets even better, ughhhh... Hang in there, sis... This isn't going to be easy for you!"
