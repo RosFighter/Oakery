@@ -113,6 +113,7 @@ screen say(who, what):
 
                 frame background None:
                     text what id "what" justify False
+                    # text renpy.config.say_menu_text_filter(renpy.translate_string(what)) id "what" justify False
             vbar value YScrollValue("vp_say") style "say_vscroll"
 
     add SideImage() xalign 0.0 yalign 1.0 zoom 0.85
@@ -232,7 +233,7 @@ screen choice(items):
                         $yy+=1
                         button action i.action background None:
                             xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                            textbutton i.caption action i.action yalign .0 xpos 30
+                            textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)) action i.action yalign .0 xpos 30
                             foreground "interface marker"
 
                         key str(yy) action i.action
@@ -1070,7 +1071,7 @@ screen history():
 
                 if h.who:
 
-                    label h.who:
+                    label renpy.config.say_menu_text_filter(renpy.translate_string(h.who)):
                         style "history_name"
                         substitute False
 

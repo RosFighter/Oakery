@@ -2663,6 +2663,7 @@ label return_from_club:
     #after-club-alice&kira-00-f + after-club-alice&kira-00
     scene BG char Kira after-club-pull
     show Kira after-club 00
+    with Fade(0.4, 0, 0.3)
 
     Kira_03 "Алиса, тише... Все уже спят! Нужно тихо, тихо, тихо... О... Макс? А ты почему не спишь?!"
     Max_02 "Да что-то не спится..."
@@ -2696,6 +2697,7 @@ label return_from_club:
                 #after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
+                with Fade(0.4, 0, 0.3)
 
                 Kira_02 "Должна сказать, Макс, я довольно неплохо иду... если учесть, сколько я выпила..."
                 Max_02 "Да, но я тебя всё равно немного придержу, чтобы никаких казусов не вышло. Приятное платьице... на ощупь."
@@ -2719,6 +2721,7 @@ label return_from_club:
 
         #after-club-alice&kira-00-f + after-club-alice&kira-00a
         show Kira after-club 00a
+        with Fade(0.4, 0, 0.3)
 
         Kira_07 "Скажу по секрету... Это касается трусиков Алисы! Но это секрет, так ведь?"
         Alice_05 "Именно! И Макса мы в это посвящать не будем... К тому же даже сама тётя Кира сейчас без трусиков!"
@@ -2737,6 +2740,7 @@ label return_from_club:
                 #after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
+                with Fade(0.4, 0, 0.3)
 
                 Kira_02 "Должна сказать, Макс, я довольно неплохо иду... если учесть, сколько я выпила..."
                 Max_02 "Да, но я тебя всё равно немного придержу, чтобы никаких казусов не вышло. Приятное платьице... на ощупь."
@@ -2759,6 +2763,7 @@ label return_from_club:
                 #after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
+                with Fade(0.4, 0, 0.3)
 
                 Kira_02 "Должна сказать, Макс, я довольно неплохо иду... если учесть, сколько я выпила..."
                 Max_02 "Да, но я тебя всё равно немного придержу, чтобы никаких казусов не вышло. Приятное платьице... на ощупь."

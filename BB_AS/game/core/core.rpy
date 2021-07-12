@@ -107,7 +107,7 @@ label Waiting:
         $ cur_ratio = 1
         if status_sleep:
             $ status_sleep = False
-            with fade
+            # with Fade(0.4, 0, 0.3)
         $ alarm_time = ''
         jump expression name_label
 
@@ -225,6 +225,7 @@ label Midnight:
     $ flags.eric_noticed = False
     $ prenoted = 0
     $ film = ''
+    $ olivia_night_visits = olivia_nightvisits()
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -235,6 +236,9 @@ label Midnight:
                 char.dcv.countdown(['special'])
             else:
                 char.dcv.countdown()
+
+            if char.dcv.shower is None:
+                char.dcv.reinit()
 
             if char.dcv.shower.done and char.dcv.shower.stage:
                 # откат по подглядыванию в душе кончился, обнуляем этап
@@ -475,7 +479,7 @@ label AfterWaiting:
 
     if status_sleep:
         $ status_sleep = False
-        with fade
+        with Fade(0.4, 0, 0.3)
     if mgg.energy < 10 and not mgg.flags.tired:
         Max_00 "Я слишком устал. Надо бы вздремнуть..."
         $ mgg.flags.tired = True
@@ -685,7 +689,7 @@ label after_buying:
     while len(purchased_items) > 0:
         $ buying_item = purchased_items.pop()
 
-        if buying_item==items['photocamera']:
+        if buying_item==items['photocamera'] and poss['aunt'].used(9):
             Max_01 "{i}( Так, фотокамеру я заказал, осталось дождаться доставки... ){/i}"
             Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
             # $ poss['aunt'].stages[3].ps = _("А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!")
@@ -1391,5 +1395,16 @@ label update_06_5_99:
                     poss['aunt'].open(14)
                 if ann.dcv.feature.stage>3:
                     poss['aunt'].open(15)
+
+            # иницализация дейлика по подглядываниям в душе
+            for ch in chars:
+                chars[ch].dcv.reinit()
+
+    if _version < "0.06.5.12":
+        if alice.dcv.private.enabled and not all([alice.flags.nakedpunish, alice.flags.defend >= 5, alice.dcv.intrusion.stage in [5, 7]]):
+            $ alice.dcv.private.enabled = False
+
+    if _version < "0.06.5.15":
+        $ olivia_night_visits = olivia_nightvisits()
 
     return

@@ -1005,3 +1005,16 @@ translate english SearchCam_529c107e:
 
     # Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
     Max_14 "There don't seem to be any cameras here... We need to look in the house itself!"
+# TODO: Translation updated at 2021-07-09 14:53
+
+# game/events/max.rpy:34
+translate english Sleep_26005aa6:
+
+    # Max_00 "{i}( В каком часу мне будет лучше проснуться? ){/i}" nointeract
+    Max_00 "{i}( What time would be the best time for me to wake up? ){/i}" nointeract
+
+translate english strings:
+
+    # game/events/max.rpy:31
+    old "{i}установить будильник{/i}"
+    new "{i}Set the alarm clock{/i}"

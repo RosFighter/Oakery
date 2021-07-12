@@ -82,6 +82,7 @@ label MorningWood:
 
     scene BG char Lisa morning-oops 01
     show Lisa morning-oops 01a
+    with Fade(0.4, 0, 0.3)
     menu:
         Lisa_11 "Макс! Это что такое?! Я сейчас маму позову!"
         "Что? Ты о чём?":
@@ -151,6 +152,7 @@ label MorningWoodCont:  # последующие утренние стояки
     if dcv.mw.stage == 2:
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 07'+lisa.dress)
+        with Fade(0.4, 0, 0.3)
         Lisa_12 "Ну и как тебе это, Макс? Не стыдно, вот так валяться передо мной?"   #oops-01 + 07
         Max_07 "Что случилось опять?"
         scene BG char Lisa morning-oops 02
@@ -176,6 +178,7 @@ label MorningWoodCont:  # последующие утренние стояки
     elif dcv.mw.stage == 4:
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 11'+lisa.dress)
+        with Fade(0.4, 0, 0.3)
         menu:
             Max "Это что?! Лиза хочет прикоснуться к моему члену?! Да нет, это я, наверно, всё ещё сплю... Или нет?"   #oops-01 + 11
             "{i}подождать{/i}":
@@ -199,6 +202,7 @@ label MorningWoodCont:  # последующие утренние стояки
     elif dcv.mw.stage == 6:
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
+        with Fade(0.4, 0, 0.3)
         Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"   #oops-13 + max-01 lisa-01
         Max_19 "Я сплю, Лиза... Какая штука?"
         Lisa_05 "Ну эта ваша штука..."
@@ -232,6 +236,7 @@ label AfterSchoolFD:
     $ current_room = house[6]
     scene BG incoming-00
     show Lisa incoming-01
+    with Fade(0.4, 0, 0.3)
     Lisa_01 "Привет, Макс! Я вернулась."
     Max_03 "Супер! Как первый день?"
     Lisa_02 "Да ничего так. Но потом поболтаем. Сейчас переоденусь и прыгну в бассейн. Только об этом и мечтала целый день!"
@@ -1085,6 +1090,7 @@ label Lisa_HomeWork:
     $ renpy.show("FG lessons-help-"+pose3_1)
     $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
     $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
+    with Fade(0.4, 0, 0.3)
 
     menu:
         Lisa_02 "Отлично. В общем, мне нужно сделать вот это, это и вот то. Поможешь?"
@@ -1103,7 +1109,7 @@ label Lisa_HomeWork:
             jump .make_bag
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].st() > 2:
             jump .self
-        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].st() not in [2, 4], lisa.dress > 'a', lisa.flags.pun > 1, lisa.flags.m_foot<4]):
+        "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].st() not in [2, 4], lisa.dress > 'a', lisa.flags.pun > 0, lisa.flags.m_foot<4]):
             $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
@@ -1225,7 +1231,8 @@ label Lisa_HomeWork:
             $ notify_list.append(_("Лиза очень ценит помощь Макса. Её отношение значительно улучшилось."))
             $ AddRelMood('lisa', 15, 150, 3)
             $ AttitudeChange('lisa', 0.8)
-            $ poss['sg'].open(4)
+            if poss['sg'].st() == 2:
+                $ poss['sg'].open(4)
             Lisa_03 "О, супер! Макс! Ты такой молодец! Всё время меня выручаешь... Я бы сама долго возилась и, наверняка, ошибок бы наделала... Спасибо тебе!"
 
         else:
@@ -1531,6 +1538,7 @@ label Lisa_HomeWork:
         scene BG char Lisa lessons-help-00
         $ renpy.show("FG lessons-help-"+pose3_1)
         $ renpy.show("Max lessons-help single-01"+mgg.dress)
+        with Fade(0.4, 0, 0.3)
         if not _in_replay:
             $ lisa.flags.truehelp += 1
             $ punlisa[0][0] = 3
@@ -1698,6 +1706,7 @@ label liza_hand_mass:
     #спрайт с правой рукой
     scene BG char Lisa phone-mass-01
     $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
+    with Fade(0.4, 0, 0.3)
     if RandomChance(_ch10.ch) or _in_replay:
         # Лизе понравился массаж!
         if not _in_replay:
@@ -1995,6 +2004,7 @@ label gift_swimsuit:
         scene BG char Lisa newsuit
         $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
         $ renpy.show("Lisa newsuit 01"+__suf)
+        with Fade(0.4, 0, 0.3)
         Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
         Max_02 "Ладно, ладно... Раздевайся уже!"
         $ renpy.show("Lisa newsuit 02"+__suf)
@@ -2151,6 +2161,7 @@ label conversation_after_dinner(var=0):
     scene BG talk-terrace-00
     $ renpy.show("Lisa talk-terrace 01"+lisa.dress)
     $ renpy.show("Max talk-terrace 01"+mgg.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_00 "Макс, подожди минутку..."
     Max_00 "Да, Лиза, что такое?"
 
@@ -3301,6 +3312,11 @@ label liza_secret_alisa:
 
 
 label lisa_gift_sweets:  # Периодическое дарение сладости
+    if not lisa.dcv.sweets.done:
+        Max_09 "{i}( Ещё рановато для сладостей. Нужно немного подождать, пусть Лиза соскучится по сладкому... ){/i}"
+        $ lisa.daily.sweets = 1
+        jump Waiting
+
     menu:
         Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!"
         "Шоколад \"Ritter Sport\" mini (9 штук)" if items['ritter-m'].have:
@@ -3394,6 +3410,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
 
     # включаем откат на дарение сладости
     $ lisa.dcv.sweets.set_lost(renpy.random.randint(5, 7))
+    $ lisa.daily.sweets = 1
     jump Waiting
 
 
@@ -3744,6 +3761,7 @@ label MorningWoodCont2:
     label .var1:
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
+        with Fade(0.4, 0, 0.3)
         Lisa_01 "Эй, Макс, просыпайся, а то в школу опоздаешь! Там сегодня важный день, надо на уроке Биологии всем твой стоящий член показать!"
         Max_19 "Нет... Я не хочу в школу... Зови всех сюда, здесь покажем..."
         Lisa_03 "Ага, а учительницу нашу тоже звать?"
@@ -3774,6 +3792,7 @@ label MorningWoodCont2:
     label .var2:
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
+        with Fade(0.4, 0, 0.3)
         Lisa_01 "Эй, Макс, а бывает, что я тебе снюсь?"
         Max_19 "Ага... Бывает..."
         Lisa_02 "А что мы делаем?"
@@ -3804,6 +3823,7 @@ label MorningWoodCont2:
     label .var3:
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
+        with Fade(0.4, 0, 0.3)
         Lisa_01 "Эй, Макс, спишь?"
         Max_19 "Сплю..."
         Lisa_02 "И как спится?"
@@ -4153,6 +4173,7 @@ label about_alex1:
     scene BG talk-terrace-00
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_00 "Макс, подожди минутку..."
     Max_00 "Да, Лиза, что такое?"
     Lisa_10 "Мне нужен совет по мальчикам..."
@@ -4187,6 +4208,7 @@ label about_alex2:
     scene BG talk-terrace-00
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_00 "Макс, у меня есть кое-какие новости..."
     Max_00 "Да, Лиза, я слушаю..."
     Lisa_09 "Оливия сегодня не придёт. Они с Алексом куда-то пошли вдвоём."
@@ -4229,6 +4251,7 @@ label about_alex3:
     scene BG talk-terrace-00
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_00 "Макс, мне нужно с тобой поговорить..."
     Max_00 "Я весь во внимании."
     Lisa_09 "У меня такая ситуация непростая случилась... И я хотела с тобой посоветоваться."
@@ -4277,7 +4300,7 @@ label about_horror_toples:
 
     # "Нравится, что я спасаю твою попку от наказания?"
     Lisa_01 "Конечно! И я очень благодарна. Надеюсь, это не сильно сказывается на твоих отношениях с мамой?"
-    Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь «спасибо»."
+    Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь \"спасибо\"."
     Lisa_02 "Могу ещё в щёчку чмокнуть..."
     Max_04 "У меня идейка получше. Чтобы у меня был стимул спорить с мамой за сохранность твоей попки и дальше, мы будем смотреть ужастики без маек!"
     Lisa_00 "Подожди... Ты же и так их смотришь в одних трусах!"
@@ -4306,6 +4329,7 @@ label Lisa_wear_Tshirt:
     scene BG talk-terrace-00
     $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
     $ renpy.show("Max talk-terrace 03"+mgg.dress)
+    with Fade(0.4, 0, 0.3)
     if punlisa[0][2]:   # Макс пытался защитить Лизу
         Lisa_09 "Вот и всё, Макс... Теперь в течение недели можешь и не надеяться увидеть меня без майки! Рад, что меня наказали?"
     else:
@@ -4322,9 +4346,6 @@ label Lisa_wear_Tshirt:
         $ lisa.dcv.other.set_lost(14)
     $ spent_time += 10
     jump Waiting
-
-
-
 
 
 # label lisa_ask_book:

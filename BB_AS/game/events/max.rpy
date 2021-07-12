@@ -28,19 +28,26 @@ label StartDialog:
 label Sleep:
     $ renpy.block_rollback()
     scene BG char Max bed-night-01
-    $ renpy.show('Max sleep-night '+pose3_3)
     menu:
         Max_00 "{i}( Пожалуй, пора ложиться спать... ){/i}"
-        "{i}спать до утра{/i}":
-            Max_19 "Как же в этом доме хорошо..."
+        "{i}установить будильник{/i}" if mgg.energy>40:
+            menu:
+                Max_00 "{i}( В каком часу мне будет лучше проснуться? ){/i}"
+                "{i}в 6 утра{/i}":
+                    $ alarm_time = '06:00'
+                "{i}в 7 утра{/i}":
+                    $ alarm_time = '07:00'
 
-            $ number_autosave += 1
-            # $ NewSaveName()
-            $ renpy.loadsave.force_autosave(True, True)
-            $ spent_time = 360
-            $ status_sleep = True
+        "{i}спать до утра{/i}":
             $ alarm_time = '08:00'
-            jump Waiting # спим 360 минут или до наступления 8 утра
+    $ renpy.show('Max sleep-night '+pose3_3)
+    Max_19 "Как же в этом доме хорошо..."
+
+    $ number_autosave += 1
+    $ renpy.loadsave.force_autosave(True, True)
+    $ spent_time = 360
+    $ status_sleep = True
+    jump Waiting # спим 360 минут или до наступления 8 утра
 
 
 label Wearied:
@@ -121,8 +128,6 @@ label Alarm:
     scene BG char Max bed-night-01
     menu:
         Max_00 "{i}( В каком часу мне будет лучше проснуться? ){/i}"
-        # "{i}в 5 утра{/i}":
-        #     $ alarm_time = '05:00'
         "{i}в 6 утра{/i}":
             $ alarm_time = '06:00'
         "{i}в 7 утра{/i}":
@@ -132,7 +137,6 @@ label Alarm:
     $ renpy.show('Max sleep-night '+pose3_2)
     Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
-    # $ NewSaveName()
     $ renpy.loadsave.force_autosave(True, True)
     $ spent_time = 420
     $ status_sleep = True

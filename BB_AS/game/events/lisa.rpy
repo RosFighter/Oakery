@@ -115,9 +115,9 @@ label lisa_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}" if lisa.dcv.shower.stage<2:
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (1 <= len(lisa.sorry.give) < 4 or (not poss['SoC'].used(0) and _ch1.ch>600)):
+            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (0<len(lisa.sorry.give)<4 or (not poss['SoC'].used(0) and _ch1.ch>600)):
                 jump .pinded
-            "{i}немного пошуметь{/i}" if len(lisa.sorry.give) == 4 and lisa.dcv.shower.stage<2:
+            "{i}немного пошуметь{/i}" if len(lisa.sorry.give)>3 and lisa.dcv.shower.stage<2:
                 jump .pinded
             "{i}уйти{/i}":
                 jump .end_peeping
@@ -190,7 +190,7 @@ label lisa_shower:
         scene BG shower-closer
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
-        if lisa_was_topless():
+        if lisa_was_topless() and lisa.dcv.other.stage:
             if lisa.weekly.shower>2:
                 Lisa_11 "[spotted!t]Ой, Макс! Опять ты подглядываешь... Это уже маньячество какое-то!"
                 Max_02 "Просто любуюсь формами! А так, я вообще мимо шёл, а здесь ты..."
@@ -903,6 +903,7 @@ label lisa_romantic_movie_0:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
     Lisa_02 "А я пока свет выключу."
@@ -964,6 +965,7 @@ label lisa_romantic_movie_r:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
     Lisa_02 "А я пока свет выключу."
@@ -1057,6 +1059,7 @@ label lisa_horor_movie_0:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
     Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
@@ -1135,6 +1138,7 @@ label lisa_horor_movie_r:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
+    with Fade(0.4, 0, 0.3)
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     if all([lisa.dcv.other.stage==1, lisa.dcv.other.done, lisa.dcv.shower.done]):
         Max_01 "Да, смотрим. Сейчас всё подготовлю... Не стесняйся, снимай маечку."

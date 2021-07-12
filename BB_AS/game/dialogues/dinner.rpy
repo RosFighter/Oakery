@@ -811,6 +811,7 @@ label dinner_after_punishment:
     $ renpy.block_rollback()
 
     $ seat_Dinner()
+    with Fade(0.4, 0, 0.3)
 
     if day == 1:
         jump dinner_first

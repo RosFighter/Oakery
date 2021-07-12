@@ -5,6 +5,7 @@ label shoping:
     scene BG shopping-go-00
     show other shopping-go-01
     show FG shopping-go-00
+    with Fade(0.4, 0, 0.3)
 
     menu:
         Ann_05 "Макс! Мы ушли на шоппинг. Не скучай тут без нас, хорошо? Вернёмся часа через 3..."
@@ -21,6 +22,7 @@ label back_shoping:
     $ current_room = house[6]
     scene BG incoming-00
     show other shopping-go-02
+    with Fade(0.4, 0, 0.3)
 
     if flags.back_shop == 1:
         ## --- Девчонки возвращаются с первого шоппинга
@@ -110,6 +112,7 @@ label MeetingEric:
     scene BG char Max meet-eric-villa-00
     show Ann meet-Eric 01a
     show Eric meet 01a
+    with Fade(0.4, 0, 0.3)
     Ann_00 "Макс, подойди пожалуйста. К нам приехал Эрик. Знакомься..."
     show Max meet-Eric 01a
     menu:
@@ -231,6 +234,7 @@ label Kira_arrival:
     $ renpy.block_rollback()
     scene BG delivery-01
     $ renpy.show("Kira arrival 01"+ann.dress)
+    with Fade(0.4, 0, 0.3)
     Ann_05 "Ну что, дети, дождались? Встречайте, к нам приехала тётя Кира!"
     Max_05 "Супер!"
     menu:

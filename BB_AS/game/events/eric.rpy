@@ -9,6 +9,7 @@ label Eric_talk_afterdinner:
     scene BG talk-terrace-00
     show Eric meet 01a
     show Max talk-terrace 01a
+    with Fade(0.4, 0, 0.3)
     Eric_00 "Макс, пока твоя мама переодевается, я бы хотел с тобой поговорить. С глазу на глаз, так сказать..."
     if eric.flags.crush > 1:
         Max_01 "Конечно..."
@@ -1298,6 +1299,7 @@ label sexed_lisa:
 
 label first_jerk_balkon:
     scene Eric jerk off 01
+    with Fade(0.4, 0, 0.3)
     Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
     menu:
         Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..."
@@ -1312,6 +1314,7 @@ label first_jerk_balkon:
 label first_jerk_yard:
     #eric-voyeur-yard-01
     scene Eric jerk off 00
+    with Fade(0.4, 0, 0.3)
     menu:
         Max_07 "Опа, Эрик! Что это он делает среди ночи у окна Алисы?!"
         "{i}Осторожно подсмотреть за ним с балкона{/i}":
@@ -1340,6 +1343,7 @@ label jerk_balkon:
     if not alice.sleepnaked:
         $ flags.eric_noticed = True
         scene Eric jerk off 01
+        with Fade(0.4, 0, 0.3)
         menu:
             Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
             "{i}сбегать за фотоаппаратом и пойти на балкон {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags.eric_photo1 < 1:  #если снимка у окна нет
@@ -1352,6 +1356,7 @@ label jerk_balkon:
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
         show Eric jerk off 02
+        with Fade(0.4, 0, 0.3)
         menu:
             Max_03 "Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!"
             "{i}сбегать за фотоаппаратом и вернуться {color=[_ch1.col]}(Удача. Шанс: [_ch1.vis]){/color}{/i}" if flags.eric_photo2 < 1:  #если снимка у окна нет
@@ -1378,10 +1383,11 @@ label jerk_balkon:
 
 label jerk_yard:
     #eric-voyeur-yard-01
-    scene Eric jerk off 00
     if not eric.stat.mast:
         jump first_jerk_yard
 
+    scene Eric jerk off 00
+    with Fade(0.4, 0, 0.3)
     $ _ch1 = Chance(500)
     $ flags.eric_noticed = True
     $ eric.stat.mast += 1
@@ -1400,6 +1406,7 @@ label jerk_photohant1:
         # (успел)
         #eric-voyeur-alice-01
         scene Eric jerk off 01
+        with Fade(0.4, 0, 0.3)
         menu:
             Max_09 "Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!"
             "{i}сфотографировать его{/i}":
@@ -1422,6 +1429,7 @@ label jerk_photohant1:
         if not alice.sleepnaked:
             $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
         $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+        with Fade(0.4, 0, 0.3)
         menu:
             Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
             "{i}уйти{/i}":
@@ -1440,6 +1448,7 @@ label jerk_photohant2:
         $ renpy.show('Alice sleep-night '+pose3_2)
         show Eric jerk off 02
         show FG photocamera
+        with Fade(0.4, 0, 0.3)
         play sound "<from 1>audio/PhotoshootSound.ogg"
         menu:
             Max_05 "Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!"
@@ -1452,6 +1461,7 @@ label jerk_photohant2:
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
         $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+        with Fade(0.4, 0, 0.3)
         menu:
             Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..."
             "{i}уйти{/i}":

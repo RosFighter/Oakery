@@ -64,9 +64,11 @@ label StartPunishment:
         if tm < "14:00":
             scene BG punish-morning 00
             $ renpy.show("Ann punish-morning 00"+ann.dress)
+            with Fade(0.4, 0, 0.3)
         else:
             scene BG punish-evening 00
             $ renpy.show("Ann punish-evening 00"+ann.dress)
+            with Fade(0.4, 0, 0.3)
 
         if newpunishment == 0 and flags.dinner>=12:
             jump first_new_punishment
@@ -414,7 +416,7 @@ label punishment_lisa:
 
     $ mood = 0
 
-    $ lisa.dcv.punpause.set_lost(renpy.random.randint(5, 12))
+    $ lisa.dcv.punpause.set_lost(renpy.random.randint(3, 8))
     $ lisa.weekly.punished += 1
     if newpunishment==0:
         # Лиза стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
@@ -664,7 +666,7 @@ label punishment_alice:
             Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
             $ alice.dcv.private.stage = 2
             $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
-        else:
+        elif alice.dcv.private.stage:
             $ alice.dcv.private.set_lost(2)
         Ann_18 "[_text!t]"
     else:

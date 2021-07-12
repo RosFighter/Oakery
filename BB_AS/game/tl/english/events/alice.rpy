@@ -54,16 +54,16 @@ translate english alice_bath_ladder_40583688:
     # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
     Max_03 "What luck! Alice is just about to take a bath... Her gorgeous ass begging to be spanked! Just you wait, soon enough you'll be begging for it..." nointeract
 
-# game/events/alice.rpy:63
-translate english alice_bath_ladder_5529b0b9:
+# game/events/alice.rpy:65
+translate english alice_bath_ladder_ef1f5ff4:
 
-    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
+    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
     Max_05 "Hell, is she teasing me on purpose with her soapy tits? Big sis might be a bitch, but her body looks so good..." nointeract
 
-# game/events/alice.rpy:72
-translate english alice_bath_ladder_5529b0b9_1:
+# game/events/alice.rpy:74
+translate english alice_bath_ladder_ef1f5ff4_1:
 
-    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
+    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
     Max_05 "Hell, is she teasing me on purpose with her soapy tits? Big sis might be a bitch, but her body looks so good..." nointeract
 
 # game/events/alice.rpy:78
@@ -2718,7 +2718,7 @@ translate english strings:
 
     # game/events/alice.rpy:1799
     old "{i}проникнуть в её киску пальцами{/i}"
-    new "{i}Finger her{/i}"
+    new "{i}Penetrate her pussy with your fingers{/i}"
 
     # game/events/alice.rpy:1829
     old "{i}массировать её ножки{/i}"
@@ -4188,3 +4188,4 @@ translate english strings:
     # game/events/alice.rpy:2610
     old "Нет, я даже не близко..."
     new "No, I'm not even close..."
+

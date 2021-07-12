@@ -1,3 +1,10 @@
+init -100 python:
+    def original_str(st0):
+        return st0
+
+init -100:
+    $ config.say_menu_text_filter = original_str
+    
 init python:
     config.layers.insert(1, 'wm')
 
@@ -341,7 +348,10 @@ init python:
 
         # если лимит отношений есть, нуно определить, на сколько поднимать отношения и поднимать ли их вообще
         limit = {1 : 300, 2 : 600, 3 : 1000,  4 : 1500, 5 : 2000}[rel_limit] if rel_limit is not None else 2000
-        rel = rel if chars[char].relmax + rel < limit else (limit-chars[char].relmax if chars[char].relmax < limit else 0)
+        if chars[char].relmax<0 and rel>0:
+            rel = rel*2 if chars[char].relmax + rel*2 < limit else (limit-chars[char].relmax if chars[char].relmax < limit else 0)
+        else:
+            rel = rel if chars[char].relmax + rel < limit else (limit-chars[char].relmax if chars[char].relmax < limit else 0)
 
         rel_suf = ChangeRel(rel)
         mood_suf = ChangeMood(mood)
@@ -599,7 +609,7 @@ init python:
         if current_room == house[1] and len(current_room.cur_char) == 0:
             AvailableActions['usb'].active = True
             AvailableActions['searchbook'].active = all([alice.plan_name != 'read', '08:00' <= tm < '22:00'])
-            if items['spider'].have and poss['spider'].used(4):
+            if items['spider'].have and poss['spider'].used(3):
                 AvailableActions['hidespider'].active = True
             AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00', (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)])
 
@@ -706,8 +716,12 @@ init python:
                 inf = '01'
             elif name == 'homework':
                 # ставим текщущую одежды соотвестсвенно гардеробу
-                dress = lisa.clothes.learn.GetCur().suf
-                inf   = lisa.clothes.learn.GetCur().info
+                if not lisa.clothes.learn.cur and lisa.GetMood()[0]>2:
+                    dress = lisa.clothes.learn.sel[2].suf
+                    inf   = lisa.clothes.learn.sel[2].info
+                else:
+                    dress = lisa.clothes.learn.GetCur().suf
+                    inf   = lisa.clothes.learn.GetCur().info
                 clot  = 'learn'
 
         elif char=='alice':

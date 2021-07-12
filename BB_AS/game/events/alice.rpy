@@ -63,7 +63,7 @@ label alice_bath:
                     $ renpy.show('Alice bath-window '+renpy.random.choice(['02', '03', '04']))
                     $ Skill('hide', 0.03)
                     menu:
-                        Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
+                        Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..."
                         "{i}уйти{/i}":
                             $ spent_time += 10
                             $ alice.dress_inf = '00aa'
@@ -72,7 +72,7 @@ label alice_bath:
                     pass
         else:
             menu:
-                Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..."
+                Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..."
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Alice bath-window 05
@@ -350,7 +350,7 @@ label alice_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}" if alice.dcv.shower.stage<2:
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if (1<len(alice.sorry.give)<4 or (not poss['risk'].used(0) and _ch1.ch>600)) and alice.dcv.shower.stage<2:
+            "{i}немного пошуметь{/i}" if (0<len(alice.sorry.give)<4 or (not poss['risk'].used(0) and _ch1.ch>600)) and alice.dcv.shower.stage<2:
                 jump .pinded
             # "{i}немного пошуметь{/i}" if len(alice.sorry.give)>3 and alice.flags.touched:
             #     jump .pinded
@@ -951,8 +951,10 @@ label alice_sun:
         scene BG char Alice sun-alone 01
         if alice.daily.oiled == 2:
             show Alice sun-alone 01a
+            $ persone_button1 = 'Alice sun-alone 01a'
         else:
             show Alice sun-alone 01
+            $ persone_button1 = 'Alice sun-alone 01'
     else:
         scene BG char Alice sun
         $ renpy.show('Alice sun '+pose2_2+alice.dress)
@@ -1023,6 +1025,7 @@ label spider_in_bed:
 
     scene BG char Alice spider-night-01
     $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+suf)
+    with Fade(0.4, 0, 0.3)
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
@@ -1348,6 +1351,7 @@ label alice_smoke:
         return
     else:
         $ renpy.show('Alice smoke '+pose3_3+alice.dress)
+        with Fade(0.4, 0, 0.3)
 
     $ alice.daily.smoke = 1
 
@@ -1392,6 +1396,7 @@ label alice_smoke:
                 jump smoke_nojeans
 
     return
+
 
 #  Алиса перед зеркалом ванной
 label alice_after_club:
@@ -1465,6 +1470,7 @@ label alice_after_club:
         scene BG char Alice bath-after-club 01
         $ renpy.show('Alice bath-after-club 01-'+r1+suf)
         show Max bath-after-club 01
+        with Fade(0.4, 0, 0.3)
         Alice_05 "А, Макс... Не спится? Чего хотел?"
         Max_01 "Да... Я вот... Умыться перед сном хотел!"
         Alice_03 "Ну, проходи. Я собиралась ванну принять, но ещё вода набирается..."
@@ -1795,6 +1801,8 @@ label alice_after_club:
         scene BG char Alice bath-after-club 04
         show Alice bath-after-club 04-01a
         Alice_08 "В таком случае, я буду меньше говорить и больше делать... Тебе понравится!"
+        if not _in_replay:
+            $ poss['nightclub'].open(12)
         #after-club-09 + after-club-09-max&alice-bj02
         scene BG char Alice bath-after-club 09
         show Alice bath-after-club 09-bj02
@@ -2205,7 +2213,7 @@ label alice_blog_lingerie:
                                                 Alice_18 "Да ты бессмертный что ли!!! Сейчас я тебе напинаю..."
                                                 "{i}сбежать{/i}":
                                                     pass
-                        "А я тебе принёс кое-что!" if items['sexbody1'].have and not expected_photo:
+                        "А я тебе принёс кое-что!" if all([items['sexbody1'].have, items['photocamera'].have, not expected_photo]):
                             $ renpy.show('Alice blog 02'+alice.dress)
                             $ renpy.show('Max blog 02'+mgg.dress)
                             Alice_05 "Если это только твои ухмылки, Макс, а не что-нибудь полезное, то ты сейчас полетишь в бассейн..."
@@ -2442,6 +2450,7 @@ label alice_towel_after_club:
     #bath-open-00 + bath-open-alice-01
     scene BG bath-open-00
     show Alice bath-talk 01
+    with Fade(0.4, 0, 0.3)
     Alice_15 "Макс, я тут вообще-то голая лежу в ванне! Оу, ты всё же принёс мне полотенце..."
     Max_02 "Да, я тут как раз нашёл, на что его можно повесить..."
 

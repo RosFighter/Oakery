@@ -36,13 +36,13 @@ translate deutsch strings:
 
     # game/core/06_items.rpy:2
     old "КОМПРОМАТ НА ЭРИКА"
-    new ""
+    new "ERIC KOMPROMITTIEREN"
 
     # game/core/06_items.rpy:2
     old "Снимок того, как Эрик по ночам дрочит на Алису у окна её комнаты."
-    new ""
+    new "Ein Foto von Eric, der sich nachts vor dem Zimmerfenster von Alice einen runterholt."
 
     # game/core/06_items.rpy:2
     old "Снимки того, как Эрик по ночам сперва дрочил на Алису у окна её комнаты, а затем и в самой комнате."
-    new ""
+    new "Fotos von Eric, der sich nachts vor dem Zimmerfenster auf Alice einen runterholt, und es dann direkt im Zimmer weiter macht."
 

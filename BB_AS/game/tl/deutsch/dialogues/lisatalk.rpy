@@ -3826,7 +3826,7 @@ translate deutsch conversation_after_dinner_62a423d2:
 translate deutsch conversation_after_dinner_acc8a38c:
 
     # Max_01 "Договорились."
-    Max_01 "You got a deal."
+    Max_01 "Einverstanden."
 
 # game/dialogues/lisatalk.rpy:2121
 translate deutsch conversation_after_dinner_d5365485:
@@ -8384,7 +8384,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:722
     old "Хотел дать тебе один совет..."
-    new "I can give you advice..."
+    new "Ich möchte dir einen Rat geben..."
 
     # game/dialogues/lisatalk.rpy:722
     old "Да, забей..."
@@ -9601,10 +9601,10 @@ translate deutsch about_horror_toples_41628922:
     # Lisa_01 "Конечно! И я очень благодарна. Надеюсь, это не сильно сказывается на твоих отношениях с мамой?"
     Lisa_01 "Ja, natürlich! Und ich bin sehr dankbar dafür. Ich hoffe, es beeinträchtigt die Beziehung zu unserer Mutter nicht zu sehr?"
 
-# game/dialogues/lisatalk.rpy:4033
-translate deutsch about_horror_toples_685823e5:
+# game/dialogues/lisatalk.rpy:4303
+translate deutsch about_horror_toples_256f7f17:
 
-    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь «спасибо»."
+    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь \"спасибо\"."
     Max_07 "Nein, aber ich erspare dir die Demütigung vor der ganzen Familie, und alles, was ich als Gegenleistung bekomme, ist ein «Danke schön»."
 
 # game/dialogues/lisatalk.rpy:4034
@@ -10046,4 +10046,12 @@ translate deutsch strings:
     # game/dialogues/lisatalk.rpy:1265
     old "{i}продолжить{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
     new "{i}Weiter{/i} \n{color=[ch.col]}(Massage. Chance: [ch.vis]){/color}"
+
+# TODO: Translation updated at 2021-07-09 15:31
+
+# game/dialogues/lisatalk.rpy:3306
+translate deutsch lisa_gift_sweets_9a51061a:
+
+    # Max_09 "{i}( Ещё рановато для сладостей. Нужно немного подождать, пусть Лиза соскучится по сладкому... ){/i}"
+    Max_09 "{i}(Es ist ein bisschen früh für Süßigkeiten. Ich sollte noch ein wenig warten, damit Lisa die Süßigkeiten genießen kann...){/i}"
 

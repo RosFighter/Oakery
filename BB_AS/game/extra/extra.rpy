@@ -183,7 +183,7 @@ screen menu_gallery():
                                                     sensitive mems[i][j].open()=='open'
                                                     if mems[i][j].open()=='open':
                                                         add 'extra/mems/'+mems[i][j].pict+'.webp'
-                                                        text mems[i][j].capt align(0.5, 0.9) color gui.accent_color size 20
+                                                        text renpy.config.say_menu_text_filter(renpy.translate_string(mems[i][j].capt)) align(0.5, 0.9) color gui.accent_color size 20
                                                     else:
                                                         if mems[i][j].open()=='block':
                                                             if config.gl2:

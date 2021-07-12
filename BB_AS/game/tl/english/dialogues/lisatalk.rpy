@@ -9624,10 +9624,10 @@ translate english about_horror_toples_41628922:
     # Lisa_01 "Конечно! И я очень благодарна. Надеюсь, это не сильно сказывается на твоих отношениях с мамой?"
     Lisa_01 "Of course! And I'm very grateful. I hope it doesn't affect your relationship with Mom too much?"
 
-# game/dialogues/lisatalk.rpy:4033
-translate english about_horror_toples_685823e5:
+# game/dialogues/lisatalk.rpy:4303
+translate english about_horror_toples_256f7f17:
 
-    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь «спасибо»."
+    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь \"спасибо\"."
     Max_07 "No, but I save you from humiliation in front of the whole family, and all I get in return is one «thank you»."
 
 # game/dialogues/lisatalk.rpy:4034
@@ -10069,3 +10069,10 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:1265
     old "{i}продолжить{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}"
     new "{i}continue{/i} \n{color=[ch.col]}(Massage. Chance: [ch.vis]){/color}"
+# TODO: Translation updated at 2021-07-09 14:53
+
+# game/dialogues/lisatalk.rpy:3306
+translate english lisa_gift_sweets_9a51061a:
+
+    # Max_09 "{i}( Ещё рановато для сладостей. Нужно немного подождать, пусть Лиза соскучится по сладкому... ){/i}"
+    Max_09 "{i}( It's a little early for candy. We need to wait a little while, let Lisa miss the sweets... ){/i}"

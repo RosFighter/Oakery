@@ -975,7 +975,7 @@ translate english strings:
     new "Eric is definitely a change for the worse. First, he suggested to send me to some military camp. \"To build character\". I have a huge character!\n\nThen he convinced Mom that we should have a new punishment system. Why couldn't he suggest something good... Anyway, from next week we're going to be spanked in front of each other! Naked! It's humiliating. What kind of pervert would come up with this idea? It will ruin my authority!\n\nI have to do something immediately!"
 
     # game/core/03variables.rpy:422
-    old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращаться свою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
+    old "Ну что же, у меня такое чувство, что я заключил сделку с дьяволом. Эрик пообещал мне платить какие-то деньги и разрешил подглядывать за ними с мамой. В свою очередь, я не должен мешать ему совращать мою семью... Кто знает, может быть это позволит и мне поучаствовать в чём-то таком... Если он разрешит..."
     new "I feel like I've made a deal with the devil. Eric promised to pay me some money and gave me permission to peek at him and Mom having sex. On my part, I have to let him corrupt my family. Who knows, maybe he'll let me participate in some action..."
 
     # game/core/03variables.rpy:422

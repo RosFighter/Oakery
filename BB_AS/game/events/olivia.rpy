@@ -79,6 +79,7 @@ label olivia_first_meeting:
     #lisa-incoming-00 + lisa&olivia-incoming-01
     scene BG incoming-00
     show Olivia incoming 00
+    with Fade(0.4, 0, 0.3)
     Lisa_01 "Вот и мой старший брат, знакомьтесь, это Оливия, моя одноклассница!"
     Max_04 "Привет, я Макс!"
     Olivia_01 "Приятно познакомиться, Макс!"
@@ -163,6 +164,7 @@ label olivia_first_night_visit:
     #villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
+    with Fade(0.4, 0, 0.3)
     Olivia_01 "Приветик! А вот и я... Спасибо, что встретил, Макс."
     Max_04 "Да без проблем. Проходи..."
     Olivia_02 "Значит, кроме нас и Лизы дома больше никого нет?"
@@ -227,6 +229,7 @@ label olivia_second_night_visit:
     #villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
+    with Fade(0.4, 0, 0.3)
     Olivia_01 "Привет, Макс. Вот я и снова к вам пришла... Как домашние? Никому не помешаю?"
     Max_04 "Нет, всё в порядке... Проходи, чувствуй себя как дома."
 
@@ -274,6 +277,7 @@ label olivia_night_visit_r:
     #villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
+    with Fade(0.4, 0, 0.3)
     Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
     Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
     #after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
@@ -363,6 +367,7 @@ label olivia_first_night_out_with:
     scene BG lounge-tv-01
     show Olivia night-tv 03-01b
     $ renpy.show('Max tv 00'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
     Max_05 "Ух ты! Ничего себе! Я даже забыл, что хотел спросить..."
     Olivia_03 "Так садись, Макс... Потом вспомнишь!"
     Max_02 "Ах, вот... Я тоже буду сидеть голышом! Вы же не против?"
@@ -420,6 +425,7 @@ label olivia_first_night_out_with:
     scene BG myroom-night-talk-01
     show Lisa myroom-night-talk 02b
     show Olivia myroom-night-talk 01
+    with Fade(0.4, 0, 0.3)
     Max_04 "Кто куда ляжет?"
     Lisa_02 "Естественно, Оливия ляжет со мной, а ты как всегда... сам по себе."
     Max_02 "Оливия же в гостях... Может определим её на твою кровать, а ты со мной?"
@@ -439,6 +445,7 @@ label olivia_second_night_out_with:
     scene BG lounge-tv-01
     show Olivia night-tv 03-02b
     show Max night-tv 03-01
+    with Fade(0.4, 0, 0.3)
     Lisa_11 "А вы ещё мне предлагаете раздеться! Это Макс только на тебя одну, Оливия, так реагирует... А представь, что будет, если разденусь и я? Его штука вообще, наверно, взорвётся!"
     Max_03 "Ничего не взорвётся, не переживай."
     Olivia_03 "Лучше радуйся за брата, Лиза. Далеко не каждому мальчику настолько везёт с размерами... Не каждый день такое можно увидеть в живую. Вернее... ты-то как раз и можешь видеть!"
@@ -502,6 +509,7 @@ label olivia_second_night_out_with:
     scene BG myroom-night-talk-01
     show Lisa myroom-night-talk 02c
     show Olivia myroom-night-talk 01
+    with Fade(0.4, 0, 0.3)
     Max_04 "Спокойной ночи, девчонки. Я в восторге от наших с вами ночных посиделок!"
     Lisa_03 "По тебе и так прекрасно видно, как сильно ты доволен. Уверена, надеешься, что я забуду маечку надеть и прямо так и лягу..."
     Max_02 "Ага. Зря, да?"
@@ -521,6 +529,7 @@ label olivia_repeatable_night_out_with:
     scene BG lounge-tv-01
     $ renpy.show('Olivia night-tv 03-01'+lisa.dress)
     $ renpy.show('Max tv 00'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
     if lisa_will_be_topless()>0:
         #Лиза без майки
         #lounge-tv-01 + tv-watch-03-lisa&olivia-01a + tv-max-(00a/00b)
@@ -620,6 +629,7 @@ label olivia_repeatable_night_out_with:
     scene BG myroom-night-talk-01
     $ renpy.show('Lisa myroom-night-talk 02'+lisa.dress)
     show Olivia myroom-night-talk 01
+    with Fade(0.4, 0, 0.3)
     Max_04 "Если вдруг вам надоест спать вместе, я всегда рад приютить любую из вас на своей кровати."
     Olivia_03 "Спасибо, Макс! Трусы хоть одень, чтобы было не так заметно, насколько ты рад этим фантазиям."
     Lisa_02 "И с чего ты взял, что нам надоест?"

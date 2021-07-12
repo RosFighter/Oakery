@@ -362,6 +362,7 @@ init python:
         homework    = 0     # диалог о помощи с домашкой
         smoke       = 0     # диалог во время курения
         ask_money   = 0     # просил денег
+        sweets      = 0     # вручение сладости
 
         # состояния
         oiled    = 0    # намазана солнцезащитным кремом
@@ -382,6 +383,7 @@ init python:
             self.homework   = 0
             self.smoke      = 0
             self.ask_money  = 0
+            self.sweets     = 0
 
             self.oiled      = 0
             self.drink      = 0

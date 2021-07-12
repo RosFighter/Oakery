@@ -111,7 +111,7 @@ init python:
 
         rez = False
 
-        if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, not olivia.dcv.special.stagee]):
+        if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, not olivia.dcv.special.stage]):
             # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, ночных посиделок ещё не было
             rez = True
         elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):

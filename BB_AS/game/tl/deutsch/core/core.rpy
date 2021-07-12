@@ -113,3 +113,4 @@ translate deutsch strings:
     # game/core/core.rpy:1370
     old "А что если я не буду помогать Лизе какое-то время? Или несколько раз сделаю ошибку в её работе?"
     new "Was ist, wenn ich Lisa eine Zeit lang nicht helfe? Oder ein paar Fehler bei ihren Hausaufgaben mache?"
+

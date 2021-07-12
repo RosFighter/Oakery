@@ -118,6 +118,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
+        with Fade(0.4, 0, 0.3)
         #annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Ann_14 "Эрик! Ты правда хочешь, чтобы он смотрел, как мы с тобой... здесь..."
@@ -197,6 +198,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 02-bj02a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
+        with Fade(0.4, 0, 0.3)
         #annroom-watch-02-bj02 + annroom-watch-02-bj02-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Ann_13 "А вам не кажется, что это уже слишком!?"
@@ -252,12 +254,12 @@ label lessons_from_Eric:
         Max_07 "К вам ведь можно?"
         Eric_03 "Да, Макс, как раз вовремя... Мы кое-что тебе покажем, да Ань!?"
 
-
         scene BG char Eric annroom-watch-02-bj03
         show Eric watch 02-bj03
         if _stockings:
             show other Eric watch 02-bj03a
         $ renpy.show('Max annroom-watch 02-bj03'+mgg.dress)
+        with Fade(0.4, 0, 0.3)
         #annroom-watch-02-bj03 + annroom-watch-02-bj03-ann&eric-(01-01a) + annroom-watch-02-bj03-max-(01-01b)
 
         Ann_12 "Ты правда думаешь, что ему нужно такое показывать?"
@@ -317,6 +319,7 @@ label Eric_talk_about_Lisa_0:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
 
     # #max&eric-terrace-00 + max + eric
     Eric_00 "Макс, нам нужно поговорить наедине."
@@ -429,6 +432,7 @@ label Eric_talk_about_Lisa_1:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
 
     Eric_00 "Макс, нам нужно поговорить наедине."
     Max_07 "Я слушаю... Что такое?"
@@ -453,6 +457,7 @@ label Eric_talk_about_Alice_0:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
     Eric_01 "Не торопись уходить, Макс. Нужно поговорить наедине."
     Max_07 "О чём?"
     menu:
@@ -550,6 +555,7 @@ label Eric_talk_about_Alice_1:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
 
     Eric_00 "Макс, нам нужно поговорить наедине."
     Max_07 "Я слушаю... Что такое?"
@@ -573,6 +579,7 @@ label Eric_talk_about_lace_lingerie:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
 
     Eric_01 "Задержись, Макс. Нужно поговорить наедине."
 

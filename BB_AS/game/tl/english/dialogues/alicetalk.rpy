@@ -10290,3 +10290,36 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:1032
     old "{i}сдерживаться{/i} {color=[sex2.col]}(Сексуальный опыт. Шанс: [sex2.vis]){/color}"
     new "{i}Hold Back{/i} {color=[sex2.col]}(Sexual experience. Chance: [sex2.vis]){/color}"
+# TODO: Translation updated at 2021-07-09 00:11
+
+# game/dialogues/alicetalk.rpy:551
+translate english alice_talk_tv_jeans_6db9afd9:
+
+    # Alice_04 "Ты знаешь, мешают. И очень жарко. Пожалуй, порадую тебя немного, раз ты так хорошо массаж делаешь..."
+    Alice_04 "You know, they are in the way. And I feel hot. I think I'll give you a little extra motivation, since you're doing well..."
+
+# game/dialogues/alicetalk.rpy:584
+translate english alice_talk_tv_not_jeans_a2d4a2f1:
+
+    # Max_09 "Вот ты и попалась! Я значит тут со всей любезностью массаж сестрёнке делаю, а она..."
+    Max_09 "There you are! I'm giving my sister a massage, and she's..."
+
+# game/dialogues/alicetalk.rpy:621
+translate english alice_talk_tv_massage_next_db75bb50:
+
+    # Alice_07 "[alice_good_mass!t]Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?" nointeract
+    Alice_07 "[alice_good_mass!t]Max... Your hands are working wonders today... What's my foot touching there? Is this part of the program or what?" nointeract
+
+# game/dialogues/alicetalk.rpy:654
+translate english alice_talk_tv_massage_next_e52ff194:
+
+    # Alice_03 "[alice_good_mass!t]Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
+    Alice_03 "[alice_good_mass!t]Uh, that's good... Max, you did great today! I didn't expect such sensuality and strength at the same time..."
+
+# TODO: Translation updated at 2021-07-09 14:53
+
+# game/dialogues/alicetalk.rpy:3958
+translate english alice_gift_sweets_abfdc62f:
+
+    # Max_09 "{i}( Ещё рановато для сладостей, так недолго и фигуру Алисе испортить. Лучше немного подождать... ){/i}"
+    Max_09 "{i}( It's a little early for sweets, it's not long before you ruin Alice's figure. It's better to wait a little longer... ){/i}"

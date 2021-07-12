@@ -44,5 +44,5 @@ translate deutsch strings:
 
     # game/core/01classes.rpy:666
     old "{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
-    new "{color=[lime]}{i}{b}Achtung:{/b} Es gibt eine neue \"Möglichkeiten\"!{/i}{/color}"
+    new "{color=[lime]}{i}{b}Achtung:{/b} Es gibt neue \"Möglichkeiten\"!{/i}{/color}"
 

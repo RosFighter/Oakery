@@ -1244,7 +1244,7 @@ screen menu_opportunity():
                                     selected CurPoss == ps
                                     action [SetVariable('CurPoss', ps), SetScreenVariable('ShowHint', False), SetScreenVariable('ShowBtnHint', False),
                                         SetScreenVariable('view_stage', max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1)]
-                                    textbutton poss_dict[ps][0] selected CurPoss == ps:
+                                    textbutton renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[ps][0])) selected CurPoss == ps:
                                         if ps in NotStarted:
                                             text_idle_color gray
                                             text_selected_color '#fafafa'
@@ -1272,14 +1272,14 @@ screen menu_opportunity():
                             if poss_dict[CurPoss][1][view_stage].img != '':
                                 add 'interface poss '+poss_dict[CurPoss][1][view_stage].img
                     frame xsize 1180 xalign 0.5 background None:
-                        text poss_dict[CurPoss][0] size 30 font 'hermes.ttf' xalign 0.5
+                        text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][0])) size 30 font 'hermes.ttf' xalign 0.5
                     if view_stage>=0:
                         frame area (0, 0, 1190, 400) background None:
                             hbox:
                                 viewport mousewheel 'change' draggable True id 'vp2':
                                     vbox spacing 20:
-                                        text poss_dict[CurPoss][1][view_stage].desc size 24 color gui.accent_color
-                                        text poss_dict[CurPoss][1][view_stage].ps size 24
+                                        text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][1][view_stage].desc)) size 24 color gui.accent_color
+                                        text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][1][view_stage].ps)) size 24
                                         if view_stage in poss_dict[CurPoss][2]:     # временная концовка
                                             text _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}") size 24 color orange
                                         elif view_stage in poss_dict[CurPoss][3]:   # хорошая концовка
@@ -1291,7 +1291,7 @@ screen menu_opportunity():
                                                 text _("Подсказка:") size 24 color gui.accent_color
                                                 for ht in poss_dict[CurPoss][1][view_stage].hints:
                                                     if ht.met():
-                                                        text ht.hint size 20
+                                                        text renpy.config.say_menu_text_filter(renpy.translate_string(ht.hint)) size 20
                                             else:
                                                 $ ShowBtnHint = True
                                         else:
@@ -1306,7 +1306,7 @@ screen menu_opportunity():
                                         viewport mousewheel 'change' draggable True id 'vp2':
                                             vbox spacing 20:
                                                 text _("Подсказка:") size 24 color gui.accent_color
-                                                text zero_hints[CurPoss] size 24 #color orange
+                                                text renpy.config.say_menu_text_filter(renpy.translate_string(zero_hints[CurPoss])) size 24 #color orange
                                         vbar value YScrollValue('vp2') style 'poss_vscroll'
                             else:
                                 frame area (0, 0, 1190, 400) background None:
@@ -1316,7 +1316,7 @@ screen menu_opportunity():
                                                 text _("Подсказка:") size 24 color gui.accent_color
                                                 for ht in zero_hints[CurPoss]:
                                                     if ht.met():
-                                                        text ht.hint size 20
+                                                        text renpy.config.say_menu_text_filter(renpy.translate_string(ht.hint)) size 20
                                         vbar value YScrollValue('vp2') style 'poss_vscroll'
 
     if not ShowHint and (view_stage<0 or ShowBtnHint):
@@ -1327,11 +1327,11 @@ screen menu_opportunity():
 
     if len(lst_stage) > 1:
         imagebutton pos (690, 360) auto 'interface prev %s':
-            focus_mask True
+            # focus_mask True
             sensitive view_stage > min(lst_stage)
             action SetScreenVariable('view_stage', lst_stage[lst_stage.index(view_stage)-1] if lst_stage.index(view_stage) >= 0 else lst_stage[0])
         imagebutton pos (1570, 360) auto 'interface next %s':
-            focus_mask True
+            # focus_mask True
             sensitive view_stage < max(lst_stage)
             action SetScreenVariable('view_stage', lst_stage[lst_stage.index(view_stage)+1] if lst_stage.index(view_stage)<len(lst_stage)-1 else lst_stage[len(lst_stage)-1])
 
@@ -1508,7 +1508,7 @@ screen menu_userinfo():
                     if CurChar == 'max':
                         text mgg.desc size 24 justify True first_indent 30
                     else:
-                        text chars[CurChar].desc size 24 justify True
+                        text renpy.config.say_menu_text_filter(renpy.translate_string(chars[CurChar].desc)) size 24 justify True
 
                 # frame pos (20, 20) xsize 840 background None:
                 hbox pos (20, 0) xsize 810 spacing 5:
