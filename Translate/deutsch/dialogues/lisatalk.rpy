@@ -8716,7 +8716,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:2458
     old "Это было случайно... Просто так получается всё время! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
-    new "Es war ein Unfall... Das passiert einfach immer wieder! {color=[_ch1.col]}(Überzeugung. Chance: [_ch1.vis]){/color}"
+    new "Es ist ein Versehen... Das passiert einfach immer so! {color=[_ch1.col]}(Überzeugung. Chance: [_ch1.vis]){/color}"
 
     # game/dialogues/lisatalk.rpy:2655
     old "Конечно стоит! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
