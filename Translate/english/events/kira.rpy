@@ -2898,7 +2898,7 @@ translate english return_from_club_4f524a35:
 translate english return_from_club_b5fd31fe:
 
     # Alice_02 "Ага, еле дотащила её. А ведь она сильная. Ещё и сопротивляется! Хотела в какой-то другой ночной клуб пойти, продолжить тусить... Еле отговорила!"
-    Alice_02 "I could hardly carry her! She's tougher than she looks. She thought it'd be a great idea to keeo partying and wanted to go to another club... I barely talked her out of it!"
+    Alice_02 "I could hardly carry her! She's tougher than she looks. She thought it'd be a great idea to keep partying and wanted to go to another club... I barely talked her out of it!"
 
 # game/events/kira.rpy:1957
 translate english return_from_club_8fb778db:

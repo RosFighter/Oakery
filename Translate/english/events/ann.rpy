@@ -568,7 +568,7 @@ translate english ann_dressed_shop_d66e2468:
 translate english ann_dressed_shop_a4d8ba92:
 
     # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
-    Max_01 "Wow, what a sight! I chose my moment well... But it's time to go, or she might see me in the mirro"
+    Max_01 "Wow, what a sight! I chose my moment well... But it's time to go, or she might see me in the mirror"
 
 # game/events/ann.rpy:489
 translate english ann_dressed_shop_gift_a14e771b:

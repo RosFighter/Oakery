@@ -657,7 +657,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чем больше уроков по массажу рук удастся изучить, тем эффективнее я смогу его применить. Самое лучшее время для массажа рук - когда Лиза залипает в свой телефон..."
-    new "The more hand massage lessons I can learn, the more effectively I can apply them. The best time to massage my hands is when Lisa is on her phone..."
+    new "The more hand massage lessons I can learn, the more effectively I can apply them. The best time to massage her hands is when Lisa is on her phone..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь я могу массировать Лизе не только ножки, но и ручки. Немного практики и всё будет прекрасно. Может быть даже, если массаж пройдёт хорошо, она захочет, чтобы я помассировать ещё что-то кроме её ног? Например, плечи... Наверняка, они тоже напряжены."
@@ -665,7 +665,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Если я смогу успешно закончить массаж рук, а во время помощи с домашним заданием и ног, то стоит попробовать уговорить Лизу на массаж плеч..."
-    new "If I can successfully finish massaging my hands, and while helping with homework, my feet as well, I should try to talk Lisa into massaging her shoulders..."
+    new "If I can successfully finish massaging her hands, and while helping with homework, her feet as well, I should try to talk Lisa into massaging her shoulders..."
 
     # game/core/09_opportunities.rpy:4
     old "Не зря я занялся массажем рук Лизы! Правда, если ей не понравится массаж ног, то нет смысла лезть к ней дальше. Даже сделав и то, и то, как надо, её нужно уговаривать на массаж плеч. Надеюсь, со временем, её станет проще на это уговорить, а пока, практикуюсь дальше..."
@@ -701,7 +701,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Алиса должна как можно меньше меня стесняться. Для этого нужны успехи в возможности \"Забота о попках\"..."
-    new "Alice should be as embarrassed as possible about me. This requires progress in the \"Booty Care\" opportunity...."
+    new "Alice should be as embarrassed as possible about me. This requires progress in the \"Taking care of your ass\" opportunity...."
 
     # game/core/09_opportunities.rpy:4
     old "Хорошо бы нам с ней быть, как можно более раздетыми. Я в одних шортах, а Алиса без верха купальника..."
