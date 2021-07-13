@@ -1924,15 +1924,15 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:118
     old "Ой. Кого же мне это всё напоминает?"
-    new "Hey, das klingt wie jemand, den ich kenne."
+    new "Autsch. An wen erinnert mich das alles?"
 
     # game/dialogues/breakfast.rpy:118
     old "А вот и заработаю. Научусь что-то делать и сразу заработаю!"
-    new "Ich werde einige Fähigkeiten erlernen, um Geld zu verdienen."
+    new "Ich werde Geld verdienen. Ich lerne, wie man etwas anpackt, und ich verdiene es mir sofort!"
 
     # game/dialogues/breakfast.rpy:118
     old "Ну а ты разве не дома сидишь в своём ноуте? Ты как зарабатывать планируешь?"
-    new "Du bist einer, der redet, du sitzt nur hinter deinem Laptop. Wie willst du Geld verdienen?"
+    new "Nun, sitzt du nicht die ganze Zeit zu Hause an deinem Laptop? Wie willst du Geld verdienen?"
 
     # game/dialogues/breakfast.rpy:122
     old "И что твой блог тебе даёт?"
@@ -1948,7 +1948,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:125
     old "Смотри, не захлебнись... рекой"
-    new "Nur wenn du ein großes Publikum bekommst"
+    new "Lass dich nicht unterkriegen... in der Masse"
 
     # game/dialogues/breakfast.rpy:125
     old "Ну, посмотрим на твою реку..."
@@ -1960,15 +1960,15 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:132
     old "Может быть, тебе подарить губозакатывательную машинку?"
-    new "Sicher wirst du das..."
+    new "Vielleicht sollte ich dir einen Lippenstift besorgen?"
 
     # game/dialogues/breakfast.rpy:139
     old "Да поумнее некоторых..."
-    new "Ich bin immer noch klüger als du."
+    new "Ich bin klüger als so mancher..."
 
     # game/dialogues/breakfast.rpy:139
     old "Меня не за оценки выперли!"
-    new "Ich bin nicht wegen schlechter Noten rausgeflogen"
+    new "Ich wurde nicht wegen meiner Noten rausgeschmissen!"
 
     # game/dialogues/breakfast.rpy:139
     old "Да мне школа и не нужна"
@@ -1980,11 +1980,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:148
     old "Ага, дворником или посудомойкой?"
-    new "Ich will kein Hausmeister sein"
+    new "Klar, ein Hausmeister oder ein Tellerwäscher?"
 
     # game/dialogues/breakfast.rpy:148
     old "Вот сама бы и шла работать по объявлению!"
-    new "Warum befolgst du nicht deinen eigenen Rat"
+    new "WDu hättest selber an deiner Lektion arbeiten sollen!"
 
     # game/dialogues/breakfast.rpy:161
     old "Ага, всё же так просто..."
