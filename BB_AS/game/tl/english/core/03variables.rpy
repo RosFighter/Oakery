@@ -92,7 +92,7 @@ translate english strings:
 
     # game/core/03variables.rpy:42
     old "Алиса, моя старшая сестра.  В любой непонятной ситуации бьёт по лицу (в лучшем случае). Недавно закончила школу и, так же, как и я, ищет свой путь. Целыми днями сидит в ноутбуке и занимается каким-то своим блогом. Как это часто бывает с братьями и старшими сёстрами, мы не очень ладим..."
-    new "Alice-my older sister. She has a short fuse, if she's angry at me I can expect a slap to the face at best. She recently graduated from school and is supposed to be looking for work, but all I see her do all day is blog on her laptop. She thinks I'm an idiot and we don't really get along. Why do older sisters have to be so bitchy?"
+    new "Alice - my older sister. She has a short fuse, if she's angry at me I can expect a slap to the face at best. She recently graduated from school and is supposed to be looking for work, but all I see her do all day is blog on her laptop. She thinks I'm an idiot and we don't really get along. Why do older sisters have to be so bitchy?"
 
     # game/core/03variables.rpy:42
     old "Анна"
@@ -1390,4 +1390,3 @@ translate english strings:
     # game/core/03variables.rpy:295
     old "Оливия, одноклассница моей младшей сестрёнки Лизы. Довольно милая девчонка. А главное с изюминкой... Ходит по школе без трусиков, а у себя по дому вообще голая, как и её родители, они ведь натуристы. Это классно, что у Лизы появилась такая интересная подружка!"
     new "Olivia, a classmate of my little sister Lisa. She's a pretty sweet girl. And most importantly with a twist... She walks around school without panties, and she's completely naked in her house, just like her parents, because they are naturists. It's great that Lisa has such an interesting girlfriend!"
-

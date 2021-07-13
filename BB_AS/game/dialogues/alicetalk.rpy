@@ -2833,7 +2833,6 @@ label alice_sorry_gifts:
         1 : _("Ого! И правда хочешь рискнуть... И что там у тебя на этот раз?"),
         2 : _("Наконец-то! Ну давай, показывай, что у тебя на этот раз?!"),
         }[len(alice.sorry.give)]
-    $ alice.sorry.owe = False
     menu:
         Alice_02 "[txt!t]"
         "Конфеты \"Raffaello\" (16 штук)" if items['raffaello-m'].have:
@@ -3679,6 +3678,9 @@ label alice_sorry_gifts:
 
     label .end:
         $ spent_time += 10
+        $ alice.sorry.owe = False
+        $ alice.dcv.shower.stage = 1
+        $ alice.dcv.shower.set_lost(3)
         jump Waiting
 
 

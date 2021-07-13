@@ -214,7 +214,7 @@ translate deutsch punishment_max_pun_reson_638d9e56:
 translate deutsch punishment_max_pun_reson_42d1fc27:
 
     # Ann_14 "Очень хочу надеяться, что это было случайно. Тем не менее, ты пойман и как я уже сказала, получаешь предупреждение."
-    Ann_14 "Ich hoffe, es war ein Unfall, vorerst bleibt es bei einer Verwarnung."
+    Ann_14 "Ich hoffe wirklich, dass das ein Zufall war. Trotzdem wurdest du erwischt, und wie angekündigt bekommst du eine Verwarnung."
 
 # game/dialogues/punishment.rpy:194
 translate deutsch punishment_max_pun_reson_cc5c3e8d:

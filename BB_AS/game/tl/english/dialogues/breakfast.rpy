@@ -1582,7 +1582,7 @@ translate english breakfast_18_next_c706d294:
 translate english breakfast_18_next_266789ea:
 
     # Kira_05 "Ну если племянник настаивает, его нельзя обижать. А если серьёзно, то я бы на солнышке повалялась. К тому же, у меня новый купальник..."
-    Kira_05 "Well, if the nephew insists, it couldn't him. But seriously, I'd like to lie in the sun. Besides, I have a new bathing suit..."
+    Kira_05 "Well, if the nephew insists, I couldn't leave him. But seriously, I'd like to lie in the sun. Besides, I have a new bathing suit..."
 
 # game/dialogues/breakfast.rpy:811
 translate english breakfast_18_next_7f1e65f0:
@@ -1636,7 +1636,7 @@ translate english breakfast_18_next_098c64a8:
 translate english breakfast_18_next_0e8e13c0:
 
     # Ann_06 "Ну, либо с Лизой в комнате на кровати Макса, а он в гостиной поспит, либо..."
-    Ann_06 "Well, you could sleep with Lisa on Max's bed, and he'll sleep in the living room, or..."
+    Ann_06 "Well, you could sleep with Lisa in Max's bed, and he'll sleep in the living room, or..."
 
 # game/dialogues/breakfast.rpy:820
 translate english breakfast_18_next_0a2cd2b6:
