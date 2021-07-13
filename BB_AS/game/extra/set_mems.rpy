@@ -197,7 +197,7 @@ init python:
     def set_advanced_massage1():
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.flags.hip_mass = renpy.random.randint(1, 2)
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
@@ -212,7 +212,7 @@ init python:
                 '_ch20'     : Chance(700),
                 '_ch25'     : Chance(875),
                 '_pose'     : renpy.random.choice(['03', '04']),
-                '_dress'    : (renpy.random.choice(['b','c']) if 'max-a' in persistent.mems_var else 'c') + renpy.random.choice(dr_var),
+                '_dress'    : mg.dress + al.dress,
                 'chars'     : ['alice', 'kira'],
             }
         return my_scope

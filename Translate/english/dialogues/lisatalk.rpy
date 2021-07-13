@@ -9624,10 +9624,10 @@ translate english about_horror_toples_41628922:
     # Lisa_01 "Конечно! И я очень благодарна. Надеюсь, это не сильно сказывается на твоих отношениях с мамой?"
     Lisa_01 "Of course! And I'm very grateful. I hope it doesn't affect your relationship with Mom too much?"
 
-# game/dialogues/lisatalk.rpy:4033
-translate english about_horror_toples_685823e5:
+# game/dialogues/lisatalk.rpy:4303
+translate english about_horror_toples_256f7f17:
 
-    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь «спасибо»."
+    # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь \"спасибо\"."
     Max_07 "No, but I save you from humiliation in front of the whole family, and all I get in return is one «thank you»."
 
 # game/dialogues/lisatalk.rpy:4034

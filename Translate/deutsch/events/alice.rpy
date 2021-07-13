@@ -54,16 +54,16 @@ translate deutsch alice_bath_ladder_40583688:
     # Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..." nointeract
     Max_03 "Was für ein Glück! Alice ist gerade dabei, ein Bad zu nehmen... Ihr wunderschöner Arsch bettelt darum, versohlt zu werden! Warte nur ab, schon bald wirst du darum betteln..." nointeract
 
-# game/events/alice.rpy:63
-translate deutsch alice_bath_ladder_5529b0b9:
+# game/events/alice.rpy:65
+translate deutsch alice_bath_ladder_ef1f5ff4:
 
-    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
+    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
     Max_05 "Verdammt, reizt sie mich absichtlich mit ihren nassen Brüsten... Meine große Schwester mag eine Schlampe sein, aber sie ist so heiß! Sehr sexy..." nointeract
 
-# game/events/alice.rpy:72
-translate deutsch alice_bath_ladder_5529b0b9_1:
+# game/events/alice.rpy:74
+translate deutsch alice_bath_ladder_ef1f5ff4_1:
 
-    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестренка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
+    # Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..." nointeract
     Max_05 "Verdammt, reizt sie mich absichtlich mit ihren nassen Brüsten... Meine große Schwester mag eine Schlampe sein, aber sie ist so heiß! Sehr sexy..." nointeract
 
 # game/events/alice.rpy:78
@@ -4109,4 +4109,3 @@ translate deutsch strings:
     # game/events/alice.rpy:2610
     old "Нет, я даже не близко..."
     new "Nein, ich bin nicht mal nah dran..."
-
