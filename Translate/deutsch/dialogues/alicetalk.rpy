@@ -334,7 +334,7 @@ translate deutsch alice_talk_tv_a38da904:
 translate deutsch alice_talk_tv_13b3ba4f:
 
     # Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
-    Max_11 "{i}(Heute gibt es nichts Interessantes im Fernsehen. Es wäre spannend, wenn es einige Filme für Erwachsene zur Auswahl gäbe. Könnte sogar Spaß machen, diese dann mit deiner Schwester anzuschauen...){/i}"
+    Max_11 "{i}(Heute gibt es nichts Interessantes im Fernsehen... Kein Porno, nicht einmal Erotik... Es würde Spaß machen, sowas mit meiner Schwester zu sehen...){/i}"
 
 # game/dialogues/alicetalk.rpy:315
 translate deutsch alice_talk_tv_55b37ec4:
