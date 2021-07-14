@@ -921,7 +921,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Одноклассник\"..."
-    new "In order for Lisa and I to be more comfortable with each other, we will need progress in the \"Classmates\" possibility..."
+    new "In order for Lisa and I to be more comfortable with each other, we will need progress in the \"Schoolmate\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно чаще защищать Лизу от маминых наказаний. Это только на пользу нашим отношениям..."
