@@ -8558,7 +8558,7 @@ translate english alice_about_defend_punish1_cc301f6a:
 translate english alice_about_defend_punish1_7b76a9ae:
 
     # Max_09 "Иногда получать от меня легонько по попке - это значит отстой, а всегда и сурово от мамы - это класс?! Ты ведь даже не знаешь, как я буду шлёпать!"
-    Max_09 "So getting your ass battered by Momm would be better than my gentle touch?! You don't even know how it'll go!"
+    Max_09 "So getting your ass battered by Mom would be better than my gentle touch?! You don't even know how it'll go!"
 
 # game/dialogues/alicetalk.rpy:3603
 translate english alice_about_defend_punish1_1428cf3b:

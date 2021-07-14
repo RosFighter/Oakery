@@ -6946,7 +6946,7 @@ translate deutsch gift_lace_lingerie_27120bb2:
 translate deutsch gift_lace_lingerie_fe88edb1:
 
     # Alice_05 "Ой, ну вторая мама появилась у меня! Просто разок свело ногу, подумаешь."
-    Alice_05 "Ja, danke, Mom! Ich habe also einmal einen Krampf im Bein, große Sache."
+    Alice_05 "Ja, danke, \"Mami\"! Ich habe also einmal einen Krampf im Bein, große Sache."
 
 # game/dialogues/alicetalk.rpy:3542
 translate deutsch gift_lace_lingerie_8aa39d7d:

@@ -901,7 +901,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Если Лиза заметила, как я за ней подглядывал, то лучше в полночь вернуться в нашу с ней комнату, чтобы посмотреть фильм..."
-    new "If Lisa noticed me peeping on her, she better come back to our room at midnight to watch a movie..."
+    new "If Lisa noticed me peeping on her, I better come back to our room at midnight to watch a movie..."
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Наставник\"..."
@@ -1355,3 +1355,15 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Теперь Алиса считает своим долгом приласкать меня не только шаловливыми ногами за массаж, но и пустить в ход свой не менее шаловливый ротик! Пока что я не хочу рисковать и засаживать свой член как можно глубже ей в рот, но когда наши отношения станут ещё лучше, уххх... Держись, сестрёнка... Тебе будет нелегко!"
     new "Now Alice considers it her duty to caress me not only with her naughty legs for a massage, but also to use her equally naughty mouth! For now, I don't want to risk putting my dick as deep into her mouth as possible, but when our relationship gets even better, ughhhh... Hang in there, sis... This isn't going to be easy for you!"
+# TODO: Translation updated at 2021-07-15 02:28
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Остаётся ждать, пока Алисе снова что-нибудь не понадобится. И хотя бы временами интересоваться, как у неё идут дела с блогом. Заодно и на сестрёнку в нижнем белье поглазею..."
+    new ""
+
+    # game/core/09_opportunities.rpy:682
+    old "Нужно и дальше защищать Алису от наказаний..."
+    new ""
+
