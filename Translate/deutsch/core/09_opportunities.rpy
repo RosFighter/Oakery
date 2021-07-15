@@ -1368,9 +1368,9 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Остаётся ждать, пока Алисе снова что-нибудь не понадобится. И хотя бы временами интересоваться, как у неё идут дела с блогом. Заодно и на сестрёнку в нижнем белье поглазею..."
-    new ""
+    new "Ich muss nur warten, bis Alice wieder etwas braucht. Ich werde sie wenigstens ab und zu fragen, wie es mit ihrem Blog läuft. Ich werde also auch noch meine Schwester in Unterwäsche zu sehen bekommen..."
 
     # game/core/09_opportunities.rpy:682
     old "Нужно и дальше защищать Алису от наказаний..."
-    new ""
+    new "Ich glaube, ich sollte Alice weiterhin vor einer Bestrafung schützen..."
 
