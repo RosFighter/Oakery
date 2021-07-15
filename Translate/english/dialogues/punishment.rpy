@@ -706,7 +706,7 @@ translate english punishment_alice_9e2ea44b:
 translate english punishment_alice_be504ff7:
 
     # Alice_15 "Ай! Ма-ам! Больно же! Мам, я больше не буду!!!"
-    Alice_15 "Ah! MO-om! It hurts! Mom, I won't do it again!!!"
+    Alice_15 "Ah! Mo-om! It hurts! Mom, I won't do it again!!!"
 
 # game/dialogues/punishment.rpy:605
 translate english punishment_alice_02510b3b:

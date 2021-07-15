@@ -778,7 +778,7 @@ translate deutsch punishment_alice_9e2ea44b:
 translate deutsch punishment_alice_be504ff7:
 
     # Alice_15 "Ай! Ма-ам! Больно же! Мам, я больше не буду!!!"
-    Alice_15 "Ah! MO-om! Das tut weh! Mom, ich werde es nicht wieder tun!!!"
+    Alice_15 "Ah! Mo-om! Das tut weh! Mom, ich werde es nicht wieder tun!!!"
 
 # game/dialogues/punishment.rpy:672
 translate deutsch punishment_alice_02510b3b:

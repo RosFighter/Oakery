@@ -1984,7 +1984,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:148
     old "Вот сама бы и шла работать по объявлению!"
-    new "WDu hättest selber an deiner Lektion arbeiten sollen!"
+    new "Du hättest selber an deiner Lektion arbeiten sollen!"
 
     # game/dialogues/breakfast.rpy:161
     old "Ага, всё же так просто..."

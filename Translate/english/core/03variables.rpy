@@ -116,7 +116,7 @@ translate english strings:
 
     # game/core/03variables.rpy:42
     old "Анна, моя мама. Сама воспитывает нас с двумя сёстрами уже несколько лет. Работает в офисе какой-то компании. Хотя, зарплата у неё вполне приличная, но почти всё уходит на оплату жилья, еду и одежду."
-    new "Ann, my Mom. She's been raising my sisters and I by herself for several years. She works in the office at some big company. She earns enough to survive, but rent, food, clothing, and other various expenses eat up most of her salary."
+    new "Ann, my Mom. She's been raising my sisters and me by herself for several years. She works in the office at some big company. She earns enough to survive, but rent, food, clothing, and other various expenses eat up most of her salary."
 
     # game/core/03variables.rpy:53
     old "Макс"
