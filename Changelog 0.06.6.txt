@@ -1,0 +1,64 @@
+Fix 0.06.5.01-0.06.6.00
+
+0.06.5.01
+ - fixed a bug that sometimes occurred on Saturday after dinner before talking to Eric (исправлена ошибка, иногда возникавшая в субботу после ужина перед разговором с Эриком);
+ - fixed an image output error when spying on Lisa and Olivia watching a serials (исправлена ошибка вывода изображения при подсматривании за Лизой и Оливией, смотрящими сериалы);
+ - fixed an image output error when peeking through a hidden camera at Lisa and Olivia watching a serials (исправлена ошибка вывода изображения при подсматривании через скрытую камеру за Лизой и Оливией, смотрящими сериалы);
+ - fixed a bug that sometimes occurred when watching Lisa and Olivia in the pool through a hidden camera (исправлена ошибка, иногда возникавшая при наблюдении через скрытую камеру за Лизой и Оливией в бассейне);
+ - fixed a bug that sometimes caused a crash when starting a new game (исправлена ошибка, иногда приводившая к краху при начале новой игры);
+ - some corrections of the German translation (некоторые исправления немецкого перевода).
+
+0.06.5.02
+ - fixed a moment where Alice wore the top of a swimsuit when giving sweets in the yard (исправлен момент, где Алиса одевала верх купальника при дарении сладостей во дворе);
+ - Kira no longer disappears from the shower with Alice on Sundays (Кира больше не исчезает из душа с Алисой по воскресеньям);
+ - fixed bugs that sometimes caused crashes when opening the save window (исправлены ошибки иногда приводившие к вылету при открытии окна сохранений);
+ - fixed crash issue on first launch on Android (исправлена ошибка вылета при первом запуске на Android);
+ - some corrections of the German translation (некоторые исправления немецкого перевода).
+
+0.06.5.03
+ - fixed a bug that prevented Alice from dressing up in jeans (устранена ошибка, мешавшая переодеванию Алису в джинсы);
+ - fixed a bug that prevented Max from changing into shorts (устранена ошибка не позволявшая переодеть Макса в шорты);
+ - fixed a bug when spying on Ann's yoga through a hidden camera (устранена ошибка при подсматривании за йогой Анны через скрытую камеру);
+ - fixed variable name error in conversations with Eric (устранена ошибка имени переменной в разговорах с Эриком);
+ - added Opportunities status (добавлен статус Возможностей).
+
+0.06.5.04
+ - fixed several bugs that sometimes occur when loading saves (исправлено несколько ошибок, иногда возникающих при загрузке сохранений).
+
+0.06.5.05
+ - fixing some bugs that prevented the characters from dressing up properly (исправление некоторых ошибок, препятствовавших нормальному переодеванию персонажей).
+
+0.06.5.06
+ - fixed a bug that occurs when trying to break in to Lisa while she is changing clothes (исправлена ошибка, возникающая при попытке вломится к переодевающейся Лизе);
+ - fixed a bug where Lisa first took off her T-shirt in the yard, and then put it on on the couch (исправлена ошибка, когда Лиза сперва снимала майку во дворе, а затем одевала на диване);
+ - fixed a bug that sometimes occurred when opening auto-saves or quick saves (исправлена ошибка, иногда возникавшая при открытии автосохранений или быстрых сохранений).
+
+0.06.5.07
+ - with Alice, you can no longer start a conversation about giving sweets if it is not in the inventory (с Алисой теперь нельзя начать разговор о дарении сладости, если её нет в инвентаре);
+ - now Lisa gets a deuce for her homework if Max made mistakes there (теперь Лиза получает двойку за домашнее задание, если Макс сделал там ошибки);
+ - fixed a bug that made it possible to talk to Lisa about a new swimsuit when it was already given to her (исправлена ошибка, из-за которой с Лизой был доступен разговор о новом купальнике, когда он уже ей подарен);
+ - sexy bodysuit for Alice now does not appear earlier than it should (сексуальное боди для Алисы теперь не появляется раньше положенного);
+ - added missing images (добавлены упущенные изображения).
+
+0.06.5.08
+ - updated some Opportunities (обновлены некоторые Возможности);
+ - partially added hints to Opportunities (частично добавлены подсказки к Возможностям);
+ - in the settings, you can enable the display of all Opportunities (в настройках есть возможность включения отображения всех Возможностей).
+
+0.06.5.09
+ - fixed bugs that occurred due to hints for Opportunities (исправлены ошибки, возникавшие из-за подсказок для Возможностей).
+
+0.06.6.00
+ - redesigned all Opportunities, more information, more stages, hints for passing (переработаны все Возможности, больше информации, больше этапов, подсказки для прохождения);
+ - added new Opportunities that describe events that have not previously appeared in the game's Opportunities(добавлены новые Возможности, в которых описываются эвенты ранее не фигурировавшие в возможностях игры);
+ - changed a lot of requirements for events, fixed inconsistencies throughout the game (изменено много требований к эвентам, исправлены нестыковки по всей игре);
+ - now Max has pictures with Eric in his inventory (теперь у Макса в инвентаре имеются снимки с Эриком);
+ - extended moments with Alice in the bathroom after the club and during a massage at the TV (расширенны моменты с Алисой в ванной комнате после клуба и при массаже у ТВ);
+ - reduced the variability of how to persuade Lisa to sleep without pants and show her breasts (уменьшена вариативность того, как уговорить Лизу спать без штанов и показать грудь);
+ - relationships of the characters are revised in accordance with the rules of the Patreon (пересмотренны отношения персонажей в соответствии с правилами Патреона);
+ - now, getting caught spying on Alice and Lisa in the shower too often, Max will not be saved by the sweetness bought for girls (теперь попадаясь на подглядывании за Алисой и Лизой в душе слишком часто, Макса не спасёт купленая для девочек сладость);
+ - now relationship with Eric can be set only when you meet him and a week after that (теперь отношения с Эриком можно задавать только при знакомстве с ним и через неделю после этого);
+ - now, if you are friends with Eric, you can get a postponement for Alice and Lisa in one week, and not in two (теперь при дружбе с Эриком можно получить отсрочку по Алисе и Лизе в одну неделю, а не в две);
+ - added the ability to set an alarm after a night of entertainment with Kira, if Max is not too tired (добавлена возможность установить будильник после ночных развлечений с Кирой, если Макс не слишком устал);
+ - updated the game engine (обновлён игровой движок);
+ - fixed all the found errors of the game (исправлены все найденнные ошибки игры).
