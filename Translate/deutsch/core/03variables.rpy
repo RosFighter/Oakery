@@ -632,7 +632,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
-    new "Blickdichter schwarzer Netz-Body mit offenem Rücken."
+    new "Durchsichtiger schwarzer Netz-Body mit offenem Rücken."
 
     # game/core/03variables.rpy:272
     old "ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"
