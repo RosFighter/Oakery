@@ -412,7 +412,7 @@ translate english kira_bath_mass_bath_66a1d6d3:
 translate english kira_bath_mass_bath_27bf21cd:
 
     # Max_03 "{i}( Ох... Определённо смогут! Не зря я так хорошо размял её пальчики, они начинают такое вытворять... Ого! Тётя так возбудилась, что раздвинула ножки и начала ласкать свою киску... ){/i}"
-    Max_03 "{i}( Oh... she definitely can! It's not for nothing that I flexed her fingers so well, they're starting to do this... Wow! My Aunt was so excited that she spread her legs and began to rub her pussy... ){/i}"
+    Max_03 "{i}( Oh... she definitely can! It's not for nothing that I rubbed her toes, now see look what they're doing... Wow! My Aunt is so excited that she's spreading her legs to rub her pussy... ){/i}"
 
 # game/events/kira.rpy:228
 translate english kira_bath_mass_bath_0bcadd58:
