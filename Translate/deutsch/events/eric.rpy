@@ -826,7 +826,7 @@ translate deutsch eric_ann_shower_ladder_c6081091:
 translate deutsch eric_ann_shower_ladder_fa236e0e:
 
     # Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!"
-    Max_10 "Wow! Das ist es, was sie tun! Eric fickt Mum, positioniert sie vor dem Spiegel wie eine Schlampe, während sie ihre bereits feuchte Muschi streichelt... Ja, ich hoffe, ich falle nicht gleich von der Leiter!"
+    Max_10 "Wow! Das ist es, was sie tun! Eric fickt Mom, positioniert sie vor dem Spiegel wie eine Schlampe, während sie ihre bereits feuchte Muschi streichelt... Ja, ich hoffe, ich falle nicht gleich von der Leiter!"
 
 # game/events/eric.rpy:840
 translate deutsch eric_ann_shower_ladder_6bc8173a:
@@ -1048,7 +1048,7 @@ translate deutsch sexed_lisa_lesson_0_c156074c:
 translate deutsch sexed_lisa_lesson_0_84fe0924:
 
     # Lisa_03 "Со стороны всё выглядит довольно просто или это не так?"
-    Lisa_03 "It looks pretty easy... Right?"
+    Lisa_03 "Von hier sieht es recht einfach aus, oder doch nicht?"
 
 # game/events/eric.rpy:1078
 translate deutsch sexed_lisa_lesson_0_4d9014eb:
@@ -1840,11 +1840,11 @@ translate deutsch strings:
 
     # game/events/eric.rpy:352
     old "Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику..."
-    new "Wow! Das ist ja interessant! Und Mom wird Eric anscheinend einen blasen..."
+    new "Wow! Das ist ja interessant! Mom will Eric anscheinend einen blasen..."
 
     # game/events/eric.rpy:353
     old "На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?"
-    new "Die Leinwand ist bereits voll mit den interessantesten Dingen, und Mom hat ihr Handtuch abgenommen! Ich würde diesen nackten Arsch gerne aus einem anderen Blickwinkel sehen... Soll ich näher kommen?"
+    new "Im Fernseher laufen bereits sehr interessanteste Dinge, und Mom hat ihr Handtuch abgenommen! Ich würde diesen nackten Arsch gerne aus einem anderen Blickwinkel sehen... Soll ich näher kommen?"
 
     # game/events/eric.rpy:355
     old "Ого! На экране стало интереснее! А куда это мама так наклонилась?"

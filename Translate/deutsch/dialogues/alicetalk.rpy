@@ -8742,7 +8742,7 @@ translate deutsch massage_sunscreen_hide_behind_4afa2c53:
 translate deutsch massage_sunscreen_hide_behind_15ab4ca7:
 
     # Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
-    Max_09 "Was, wenn sie gleich auf die Krabbelt, direkt zu deinem Arsch!"
+    Max_09 "Was, wenn sie gleich zu hier her krabbelt, direkt zu deinem Arsch!"
 
 # game/dialogues/alicetalk.rpy:2294
 translate deutsch massage_sunscreen_hide_behind_9657c7e4:
