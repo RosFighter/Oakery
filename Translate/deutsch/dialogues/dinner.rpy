@@ -292,13 +292,13 @@ translate deutsch dinner_2_dfe71170:
 translate deutsch dinner_2_925d99c6:
 
     # Ann_01 "Бьюти-блог... Эх, Алиса, лучше бы делом занялась! Тебе поступать пора, а ты воздух пинаешь. Сидела бы и готовилась!" nointeract
-    Ann_01 "Schönheitsblog... Du solltest stattdessen etwas Sinnvolles tun, Alice. Du könntest dich gerade jetzt an den Universitäten bewerben." nointeract
+    Ann_01 "Beauty Blog... Oh, Alice, du solltest dich lieber beschäftigen! Es ist an der Zeit, dass du dich bewirbst und dann geht es auch voran. Du solltest dich hinsetzen und lernen!" nointeract
 
 # game/dialogues/dinner.rpy:180
 translate deutsch dinner_2_da5e0a4f:
 
     # Ann_14 "Ну, я не знаю. Денег лишних у нас нет, но одарённые дети точно могут учиться бесплатно. Им ещё и стипендию доплачивают..." nointeract
-    Ann_14 "Ich weiß nicht. Wir haben nicht viel Geld, aber vielleicht kannst du ja einen Weg finden, dir ein Stipendium zu verdienen..." nointeract
+    Ann_14 "Ich weiß nicht. Wir haben nicht viel Geld, aber vielleicht kannst du ja einen Weg finden, dir ein Stipendium zu beschaffen..." nointeract
 
 # game/dialogues/dinner.rpy:189
 translate deutsch dinner_2_0720556d:
@@ -310,7 +310,7 @@ translate deutsch dinner_2_0720556d:
 translate deutsch dinner_2_7c524f0c:
 
     # Ann_00 "Ну ты знаешь, иногда можно поступить и без денег, было бы желание. Одарённым детям ещё и стипендию доплачивают..." nointeract
-    Ann_00 "Es gibt einige Stipendien für besondere Kinder, die ihnen die Möglichkeit geben, eine Ausbildung zu absolvieren, ohne so viel zu bezahlen." nointeract
+    Ann_00 "Nun, weißt du, manchmal kommt man auch ohne Geld aus, wenn man es will. Auch besonders talentierte Kids bekommen ein Stipendium..." nointeract
 
 # game/dialogues/dinner.rpy:199
 translate deutsch dinner_2_who_89ba014f:
@@ -334,7 +334,7 @@ translate deutsch dinner_2_wtf_5ae1e087:
 translate deutsch dinner_2_poor_afe4f7a3:
 
     # Alice_13 "Для тупых повторяю - у меня всё украли! Так что меня не трогать, я думаю и строю план!" nointeract
-    Alice_13 "Du bist buchstäblich zurückgeblieben, Max. Ich. Verloren. Alle. Meine. Sachen. Für. Meinen. Blog. Jetzt kann ich also nicht mehr daran arbeiten und muss einen neuen Plan für die Zukunft schmieden!" nointeract
+    Alice_13 "Für die Dummen sage ich es noch einmal - alles ist mir abhanden gekommen! Also fass mich nicht an, ich denke nach und mache einen Plan!" nointeract
 
 # game/dialogues/dinner.rpy:229
 translate deutsch dinner_2_plan_2c02a509:
