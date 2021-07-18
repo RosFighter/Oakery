@@ -454,19 +454,19 @@ translate deutsch breakfast_2_9beefc93:
 translate deutsch breakfast_2_57d9acaf:
 
     # Max_03 "А вот и нет! Но картины красивые..."
-    Max_03 "Stimmt nicht! Aber ich mag die Gemälde, obwohl..."
+    Max_03 "Stimmt nicht! Aber die Bilder sind wunderschön..."
 
 # game/dialogues/breakfast.rpy:401
 translate deutsch breakfast_2_f4ded1d4:
 
     # Alice_01 "Да ты любым будешь рад, особенно таким... Но да, я согласна с Максом, красивые. Лично меня всё устраивает!"
-    Alice_01 "Selbstverständlich tust du das... Aber ich stimme Max zu, mir gefallen die Bilder auch."
+    Alice_01 "Du wirst mit jedem zufrieden sein, besonders mit diesen... Aber ja, ich stimme Max zu, wunderschön. Ich persönlich habe kein Problem damit!"
 
 # game/dialogues/breakfast.rpy:403
 translate deutsch breakfast_2_69423f59:
 
     # Alice_01 "Да, Макс, про тех. А что мам тебе не нравится? Там же нет ничего такого. Думаю, что это даже искусство... Лично меня всё устраивает!"
-    Alice_01 "Ja, Max. Stört es dich, Mom? Es ist ja nicht so, dass sie zu vulgär sind. Ich denke, es ist Kunst und ich komme gut mit ihnen zurecht."
+    Alice_01 "Ja, Max, wegen denen. Was magst du daran nicht Mom? Daran ist nichts auszusetzen. Ich denke, es ist sogar Kunst... Ich persönlich habe kein Problem damit!"
 
 # game/dialogues/breakfast.rpy:404
 translate deutsch breakfast_2_827a03ce:
@@ -484,13 +484,13 @@ translate deutsch breakfast_2_e684f7c7:
 translate deutsch breakfast_2_80ba4f7f:
 
     # Ann_01 "Нет, и слава богу. Конечно, я рада этому подарку, этому дому. Хотя, до сих пор не понимаю с чего он так расщедрился. Но даже так не компенсировать пропущенные годы вашего воспитания и семейной жизни..."
-    Ann_01 "Glücklicherweise nicht. Auch wenn ich mich über das Haus freue, verstehe ich immer noch nicht, warum er plötzlich auftaucht, nur um es uns zu schenken. Trotzdem müsste er noch viel mehr tun, um sich meine Vergebung zu verdienen."
+    Ann_01 "Nein, und das ist auch gut so. Natürlich freue ich mich über das Geschenk, über das Haus. Obwohl ich immer noch nicht verstehe, warum er so großzügig war. Aber selbst das macht die verlorenen Jahre eurer Jugend und unseres Familienlebens nicht wett..."
 
 # game/dialogues/breakfast.rpy:407
 translate deutsch breakfast_2_ea287806:
 
     # Ann_00 "Так, всем спасибо за завтрак, мне пора на работу. Сегодня мне позвонили и сказали, что приедет машина, довезёт до работы. Нельзя опаздывать..." nointeract
-    Ann_00 "Vielen Dank für das Frühstück. Ich gehe jetzt zur Arbeit. Man hat mir einen Wagen geschickt, also sollte ich ihn nicht warten lassen." nointeract
+    Ann_00 "Ok, danke für das Frühstück, ich muss jetzt zur Arbeit. Ich bekam heute einen Anruf, dass ein Auto kommt, um mich zur Arbeit zu bringen. Ich darf nicht zu spät kommen..." nointeract
 
 # game/dialogues/breakfast.rpy:410
 translate deutsch breakfast_2_42d6f90e:
@@ -502,19 +502,19 @@ translate deutsch breakfast_2_42d6f90e:
 translate deutsch breakfast_2_cc48757f:
 
     # Ann_05 "Нет, Макс, что ты. Он большой начальник. Босс моего босса. Его тоже возит свой водитель. Просто... Я думаю, что так компания поддерживает новичков..." nointeract
-    Ann_05 "Natürlich nicht, Max. Er ist ein viel beschäftigter Mann, er hat keine Zeit, mich zur Arbeit zu fahren. Er ist derjenige, dem mein Chef untersteht, und er hat einen persönlichen Fahrer. Vielleicht begrüßt die Firma so Neuankömmlinge..." nointeract
+    Ann_05 "Nein, Max, tust du nicht. Er ist der große Boss. Der Chef des Chefs meines Chefs. Er hat auch seinen eigenen Fahrer. Es ist nur... Ich denke, das ist die Art des Unternehmens, die neuen Mittarbeiter zu unterstützen..." nointeract
 
 # game/dialogues/breakfast.rpy:426
 translate deutsch breakfast_2_c5e2637b:
 
     # Ann_00 "Кто знает. Посмотрим, к чему это всё приведёт. В любом случае, я рада, что не придётся трястись в общественном транспорте и теперь точно успею. Ну всё, я побежала!"
-    Ann_00 "Wer weiß das schon? Wir werden sehen, wie es weitergeht. Jedenfalls bin ich froh, dass ich mich nicht mit den öffentlichen Verkehrsmitteln herumschlagen muss, und ich werde es tatsächlich pünktlich schaffen. Okay, ich bin weg. Seid brav!"
+    Ann_00 "Wer weiß. Wir werden sehen, wohin das führt. Jedenfalls bin ich froh, dass ich nicht mit öffentlichen Verkehrsmitteln fahren muss und werde jetzt auf jeden Fall ankommen. In Ordnung, ich bin weg!"
 
 # game/dialogues/breakfast.rpy:427
 translate deutsch breakfast_2_2df9f97d:
 
     # Max_00 "Давай, удачи..."
-    Max_00 "Okay, viel Glück"
+    Max_00 "Okay, viel Glück..."
 
 # game/dialogues/breakfast.rpy:432
 translate deutsch breakfast_2_ok_1c0e32db:
@@ -526,13 +526,13 @@ translate deutsch breakfast_2_ok_1c0e32db:
 translate deutsch breakfast_2_ok_e0b844ce:
 
     # Max_01 "Пока, мам..."
-    Max_01 "Bye, Mom"
+    Max_01 "Bye, Mom..."
 
 # game/dialogues/breakfast.rpy:442
 translate deutsch breakfast_3_cb642594:
 
     # Ann_05 "Всем приятного аппетита! Хотя, за завтраком обычно не принято болтать, но в нашей семье это уже давно не так. Поэтому, рассказывайте - у кого какие новости?"
-    Ann_05 "Guten Appetit, allerseits! Mit vollem Mund zu reden ist nicht die beste Idee, aber es ist eine Art Tradition in unserer Familie, also, hat jemand Neuigkeiten?"
+    Ann_05 "Guten Appetit, allerseits! Obwohl es nicht üblich ist, beim Frühstück zu reden, ist das in unserer Familie schon lange der Fall - Also, wer hat Neuigkeiten?"
 
 # game/dialogues/breakfast.rpy:443
 translate deutsch breakfast_3_66f2bf7b:
@@ -550,13 +550,13 @@ translate deutsch breakfast_3_bf4775a2:
 translate deutsch breakfast_3_b60d309c:
 
     # Alice_01 "Отвали, Макс. Дело в том, что я бы хотела сходить в ночной клуб, а у меня ни одного подходящего платья нет!"
-    Alice_01 "Klappe, Max. Ich wollte in einen Club gehen, aber wie wir festgestellt haben, habe ich buchstäblich nichts zum Anziehen."
+    Alice_01 "Vergiß es, Max. Die Sache ist die, dass ich gerne in einen Nachtclub gehen würde aber ich habe keine passenden Klamotten dazu!"
 
 # game/dialogues/breakfast.rpy:446
 translate deutsch breakfast_3_b2276362:
 
     # Ann_01 "Алиса, мы не в том положении, чтобы покупать тебе платья для клубов. Да и о чём ты говоришь? Ты бы делом занялась, а не о клубах думала!" nointeract
-    Ann_01 "Wir können es uns nicht leisten, dir ein Kleid zu kaufen, Alice. Und wovon redest du überhaupt? Du solltest über einen Job oder eine Universität nachdenken, nicht über Feiern." nointeract
+    Ann_01 "Alice, wir sind nicht in der Lage, dir ein Outfit für den Club zu kaufen. Wovon redest du? Du solltest dich um deine Arbeit kümmern, nicht um Clubs!" nointeract
 
 # game/dialogues/breakfast.rpy:452
 translate deutsch breakfast_3_29d5cb7f:
@@ -616,7 +616,7 @@ translate deutsch breakfast_3_6637c044:
 translate deutsch breakfast_3_e50e70cf:
 
     # Ann_05 "Вот и я так подумала. Разве тебе будут интересны наши девчачьи магазины? А вот нам очень. Как раз всем нам нужно кое-что прикупить..." nointeract
-    Ann_05 "Das dachte ich mir. Du wirst dich nicht für Mädchenkram interessieren. Und da wir so viel verloren haben, wird es noch eine Weile dauern." nointeract
+    Ann_05 "Das habe ich auch gedacht. Hättst Du Interesse an unseren Mädchen-Zeugs? Nun, das wohl kaum. Wir müssen alle einkaufen gehen..." nointeract
 
 # game/dialogues/breakfast.rpy:480
 translate deutsch breakfast_3_nomany_eff4ca88:
@@ -634,25 +634,25 @@ translate deutsch breakfast_3_nomany_5bb7a231:
 translate deutsch breakfast_3_driver_636e2df7:
 
     # Ann_01 "Макс, ну я же уже говорила про Эрика, вот он за нами отправит машину, а с ним мы встретимся уже в магазине..." nointeract
-    Ann_01 "Eric wird uns das Auto schicken, und wir werden ihn dort treffen." nointeract
+    Ann_01 "Max, ich habe dir von Eric erzählt, er schickt uns einen Wagen und wir treffen ihn im Geschäft..." nointeract
 
 # game/dialogues/breakfast.rpy:486
 translate deutsch breakfast_3_driver_fb54e463:
 
     # Ann_00 "Ну это не совсем так. Раз уж он нам... мне так помогает во всём, было бы неприлично отказываться и от предложения свозить нас на шоппинг..."
-    Ann_00 "Nicht ganz. Da er... mir so sehr hilft, konnte ich seine Einladung zum Einkaufen nicht ablehnen..."
+    Ann_00 "Nun, das ist nicht ganz richtig. Da er uns hilft... mir so sehr bei allem hilft, dass es unanständig wäre, sich zu weigern, uns beim Einkaufen zu begleiten..."
 
 # game/dialogues/breakfast.rpy:487
 translate deutsch breakfast_3_driver_0a7edcf8:
 
     # Max_09 "Надеюсь, я то его увижу, когда вернётесь?"
-    Max_09 "Ich hoffe, ich sehe ihn bei Eurer Rückkehr noch..."
+    Max_09 "Ich hoffe, ich kann ihn treffen, wenn ihr zurückkommt?"
 
 # game/dialogues/breakfast.rpy:490
 translate deutsch breakfast_3_driver_1f37d395:
 
     # Ann_00 "Не знаю, Макс, посмотрим. Возможно, завтра вечером после шоппинга он заедет к нам на ужин, там ты с ним и познакомишься..."
-    Ann_00 "Ich weiß es nicht, Max, wir werden sehen. Vielleicht bleibt er nach dem Einkaufen zum Abendessen und du lernst ihn kennen."
+    Ann_00 "Ich weiß es nicht, Max, wir werden sehen. Vielleicht kommt er morgen Abend nach dem Einkaufen zum Essen rüber und du kannst ihn dann treffen..."
 
 # game/dialogues/breakfast.rpy:491
 translate deutsch breakfast_3_driver_38f74335:
@@ -718,7 +718,7 @@ translate deutsch breakfast_3_conf_6e7aee99:
 translate deutsch breakfast_3_wedd_d62947f2:
 
     # Ann_14 "Ну я образно... И, вообще, давайте сменим тему!"
-    Ann_14 "Du weißt, dass ich nur im übertragenen Sinne gesprochen habe! Wie auch immer, lass uns das Thema wechseln."
+    Ann_14 "Nun, bildlich gesprochen... Und überhaupt, lasst uns das Thema wechseln!"
 
 # game/dialogues/breakfast.rpy:534
 translate deutsch breakfast_3_wedd_6e7aee99:
@@ -730,19 +730,19 @@ translate deutsch breakfast_3_wedd_6e7aee99:
 translate deutsch breakfast_3_hurry_21b57076:
 
     # Alice_13 "Макс! Ну сколько можно? Мама сама разберётся. Лично я очень за неё рада. Думаю, Лиза тоже. А вот ты... не знаю. Ладно, давайте сменим тему, а то Макс что-то докапывается..."
-    Alice_13 "Wirst du damit aufhören? Mom kann alles selbst herausfinden. Ich persönlich freue mich sehr für sie. Und ich bin sicher, Lisa auch. Aber du... Wie auch immer, wechseln wir das Thema, Max belästigt Mom mit zu vielen Fragen."
+    Alice_13 "Max! Wann und wie oft? Mum kann sich selbst helfen. Persönlich freue ich mich sehr für sie. Ich glaube, Lisa tut das auch. Aber du... Ich weiß es nicht. Okay, lass uns das Thema wechseln, denn Max wird ganz..."
 
 # game/dialogues/breakfast.rpy:539
 translate deutsch breakfast_3_hurry_9a1f1014:
 
     # Max_09 "И ничего я не докапываюсь..."
-    Max_09 "Das tue ich nicht!"
+    Max_09 "Ich hacke nicht auf irgendetwas herum..."
 
 # game/dialogues/breakfast.rpy:541
 translate deutsch breakfast_3_end_280db0e0:
 
     # Ann_00 "Так, ладно. Кажется, завтрак закончен, все уже наелись. Мне пора на работу, а Лизе в школу. Алиса, не забудь вымыть посуду!" nointeract
-    Ann_00 "Okay. Sieht aus, als wäre das Frühstück vorbei. Ich gehe zur Arbeit, Lisa geht zur Schule. Vergiss nicht, das Geschirr abzuwaschen, Alice." nointeract
+    Ann_00 "Schon gut, schon gut. Ich glaube, das Frühstück ist vorbei und alle sind satt geworden. Ich muss zur Arbeit gehen und Lisa muss zur Schule gehen. Alice, vergiss nicht, das Geschirr zu spülen!" nointeract
 
 # game/dialogues/breakfast.rpy:553
 translate deutsch breakfast_4_a0ebdb73:
@@ -754,7 +754,7 @@ translate deutsch breakfast_4_a0ebdb73:
 translate deutsch breakfast_4_39806b21:
 
     # Max_11 "Если ты о шоппинге, то меня вы всё равно не берёте..."
-    Max_11 "Wenn du vom Einkaufen sprichst, nimmst du mich sowieso nicht mit"
+    Max_11 "Wenn du einkaufen meinst, nimmst du mich sowieso nicht mit..."
 
 # game/dialogues/breakfast.rpy:555
 translate deutsch breakfast_4_23b38825:
@@ -766,7 +766,7 @@ translate deutsch breakfast_4_23b38825:
 translate deutsch breakfast_4_80f63239:
 
     # Max_00 "Как скажешь, мам..."
-    Max_00 "Okay, Mom..."
+    Max_00 "Was immer du sagst, Mom..."
 
 # game/dialogues/breakfast.rpy:557
 translate deutsch breakfast_4_c34f4557:
@@ -778,7 +778,7 @@ translate deutsch breakfast_4_c34f4557:
 translate deutsch breakfast_4_111a77d9:
 
     # Ann_01 "Макс, я тебя прекрасно понимаю и тоже сомневалась бы на твоём месте, но поверь, у тебя будет возможность с ним познакомиться и узнать лучше..."
-    Ann_01 "Ich verstehe zwar deine Position, und ich wäre auch besorgt, aber du bekommst die Gelegenheit, ihn zu treffen und besser kennen zu lernen."
+    Ann_01 "Max, ich verstehe dich sehr gut und würde an deiner Stelle auch Zweifel haben, aber vertrau mir, du wirst die Gelegenheit haben, ihn zu sehen und ihn besser kennenzulernen..."
 
 # game/dialogues/breakfast.rpy:561
 translate deutsch breakfast_4_d65d04da:
@@ -790,7 +790,7 @@ translate deutsch breakfast_4_d65d04da:
 translate deutsch breakfast_4_3320b1d4:
 
     # Lisa_03 "И за кого он себя выдаёт? За человека, которому нравится мама, а на само деле он... кто?" nointeract
-    Lisa_03 "Mir scheint, er mag Mom einfach gern. Was glaubst du, wer er wirklich ist?" nointeract
+    Lisa_03 "Und was glaubt du, wer er ist? Ein Mann, der Mom mag, obwohl er in Wirklichkeit... Was?" nointeract
 
 # game/dialogues/breakfast.rpy:567
 translate deutsch breakfast_4_a7ed0c3d:
@@ -820,7 +820,7 @@ translate deutsch breakfast_4_d65d04da_1:
 translate deutsch breakfast_4_6e76d4ab:
 
     # Alice_06 "Ой, кто бы говорил! Очередной... Маму повысили в первую неделю, дали личного водителя, на шоппинг вот везут, а ты всё ворчишь. Не веди себя сам как придурок и люди к тебе потянутся!"
-    Alice_06 "Sieh mal, wer da meckert! Mom wurde in der ersten Arbeitswoche befördert, bekam einen persönlichen Fahrer, geht mit uns einkaufen, und du beschwerst dich immer noch. Benimm dich nicht selbst wie ein Idiot und die Leute werden es zu schätzen wissen!"
+    Alice_06 "Oh, das musst du gerade sagen! Noch eins... Mom ist in ihrer ersten Woche befördert worden, sie hat einen privaten Fahrer, er geht mit ihr einkaufen und du meckerst immer noch. Benimm dich nicht selbst wie ein Idiot und die Leute werden dich akzeptieren!"
 
 # game/dialogues/breakfast.rpy:574
 translate deutsch breakfast_4_38b7f8b4:
@@ -844,13 +844,13 @@ translate deutsch breakfast_4_71328ac0:
 translate deutsch breakfast_4_b30b05ba:
 
     # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
-    Lisa_03 "Ich weiß! Ich brauche einen Bikini! Ich meine, ich brauche einen normalen Bikini, damit ich darin braun werden kann. Du weißt, was ich meine."
+    Lisa_03 "Ich weiß! Ich brauche einen Bikini! Eine, in der ich mich sonnen kann und eine, der, du weißt schon, passend ist?"
 
 # game/dialogues/breakfast.rpy:587
 translate deutsch breakfast_4_b30b05ba_1:
 
     # Lisa_03 "Я знаю! Мне нужен купальник! Такой, чтобы можно было загорать и чтобы такой, ну вы понимаете, да?"
-    Lisa_03 "Ich weiß! Ich brauche einen Bikini! Ich meine, ich brauche einen normalen Bikini, damit ich darin braun werden kann. Du weißt, was ich meine."
+    Lisa_03 "Ich weiß! Ich brauche einen Bikini! Eine, in der ich mich sonnen kann und eine, der, du weißt schon, passend ist?"
 
 # game/dialogues/breakfast.rpy:588
 translate deutsch breakfast_4_aed9c202:
@@ -880,7 +880,7 @@ translate deutsch breakfast_4_ba073505:
 translate deutsch breakfast_4_eb10555f:
 
     # Max_07 "Что особенно? Подробнее, пожалуйста..."
-    Max_07 "Wenn sie was...? Mehr Details, bitte!"
+    Max_07 "Was im Speziellen? Mehr Details, bitte..."
 
 # game/dialogues/breakfast.rpy:593
 translate deutsch breakfast_4_f28b7a83:
@@ -934,7 +934,7 @@ translate deutsch breakfast_5_8cd1cf54:
 translate deutsch breakfast_5_717457d5:
 
     # Ann_14 "Ты о чём, Макс? Я не понимаю..." nointeract
-    Ann_14 "Was meinst du damit?" nointeract
+    Ann_14 "Wovon redest du, Max? Ich verstehe nicht..." nointeract
 
 # game/dialogues/breakfast.rpy:613
 translate deutsch breakfast_5_c980ce82:
@@ -952,7 +952,7 @@ translate deutsch breakfast_5_80f63239:
 translate deutsch breakfast_5_750a3c2d:
 
     # Lisa_02 "А ты часто теперь будешь к нему ездить так... на ночь?"
-    Lisa_02 "Wie oft willst du in seinem Haus übernachten?"
+    Lisa_02 "Wirst du ihn jetzt oft besuchen... über Nacht?"
 
 # game/dialogues/breakfast.rpy:616
 translate deutsch breakfast_5_38fbc66e:
@@ -976,7 +976,7 @@ translate deutsch breakfast_5_97033bef:
 translate deutsch breakfast_5_fb058679:
 
     # Ann_05 "Я очень рада, что вы у меня такие... сообразительные."
-    Ann_05 "Ich bin sehr froh, dass du das verstehst."
+    Ann_05 "Ich bin wirklich froh, dass du mich... verstehst."
 
 # game/dialogues/breakfast.rpy:625
 translate deutsch breakfast_5_5c0dc787:
@@ -1006,7 +1006,7 @@ translate deutsch breakfast_5_2e9a76d0:
 translate deutsch breakfast_5_d75ec0ba:
 
     # Ann_12 "Ещё рано об этом говорить, но... может быть... будем с ним встречаться через день-два, то у него, то у нас... Может быть..." nointeract
-    Ann_12 "Es mag zu früh sein, das zu sagen, aber... vielleicht... Ich denke, wir werden es jeden zweiten Tag wechseln. Einen Tag hier, einen Tag dort." nointeract
+    Ann_12 "Es ist zu früh, um das zu sagen, aber... Vielleicht... wir treffen uns alle ein oder zwei Tage bei ihm, dann bei ihm, dann bei uns... Vielleicht..." nointeract
 
 # game/dialogues/breakfast.rpy:637
 translate deutsch breakfast_5_6aaaaa8a:
@@ -1018,7 +1018,7 @@ translate deutsch breakfast_5_6aaaaa8a:
 translate deutsch breakfast_5_e1ca2730:
 
     # Ann_00 "Да, Алиса. Если вы все подружитесь с Эриком, я буду очень рада. Для меня это очень важно. Ну а пока, хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
-    Ann_00 "Ja. Und wenn du dich anstrengst, mit Eric auszukommen, wirst du mich sehr glücklich machen. Das ist sehr wichtig für mich. Aber das reicht jetzt. Sieht aus, als hätten alle fertig gefrühstückt. Ich danke euch allen."
+    Ann_00 "Ja, Alice. Wenn ihr euch alle mit Eric anfreundet, würde ich mich sehr freuen. Das bedeutet mir sehr viel. In der Zwischenzeit, genug über ihn. Ich glaube, das Frühstück ist vorbei. Herzlichen Dank an alle!"
 
 # game/dialogues/breakfast.rpy:639
 translate deutsch breakfast_5_37c01b98:
@@ -1042,7 +1042,7 @@ translate deutsch breakfast_5_5d531f6c:
 translate deutsch breakfast_5_0c66c488:
 
     # Ann_01 "Макс, я уже сказала, что это возможно, но будет ли и когда - неизвестно. Так что, не будем гадать. Кстати, завтрак затянулся... Всем большое спасибо!"
-    Ann_01 "Ich sagte nur, es ist möglich, Max. Aber es ist noch zu früh, um zu vermuten, ob es tatsächlich jemals passieren wird. Übrigens, wie es aussieht, sind wir mit dem Essen fertig. Ich danke euch allen."
+    Ann_01 "Max, ich habe bereits gesagt, dass es möglich ist, aber ob und wann es passieren wird, ist ungewiss. Also, lasst uns nicht raten. Übrigens, das Frühstück ist länger geworden... Herzlichen Dank an alle!"
 
 # game/dialogues/breakfast.rpy:645
 translate deutsch breakfast_5_37c01b98_1:
@@ -1066,13 +1066,13 @@ translate deutsch breakfast_5_2c426155:
 translate deutsch breakfast_5_b0c67912:
 
     # Ann_05 "В любом случае, для вас ничего не изменится. А если вы подружитесь с Эриком, я буду очень рада!" nointeract
-    Ann_05 "Für dich ändert das jedenfalls nichts. Und wenn du dich anstrengst, mit Eric auszukommen, wirst du mich sehr glücklich machen." nointeract
+    Ann_05 "So oder so, für dich wird sich nichts ändern. Und wenn du dich mit Eric anfreundest, bin ich sehr glücklich!" nointeract
 
 # game/dialogues/breakfast.rpy:656
 translate deutsch breakfast_5_3ebe962a:
 
     # Ann_00 "Очень жаль, Макс, что ты так настроен. Эрик очень хороший человек и мне кажется, ты просто в нём не разглядел то, что вижу я. Но хватит об Эрике. Завтрак затянулся. Всем большое спасибо!"
-    Ann_00 "Schade, dass du das denkst, Max. Eric ist ein sehr netter Mensch und ich glaube, du hast es nur noch nicht gesehen. Aber genug von Eric. Das Frühstück ist vorbei, danke an alle."
+    Ann_00 "Tut mir leid, dass du so denkst, Max. Eric ist ein sehr guter Mann, und ich glaube, du siehst einfach nicht, was ich in ihm sehe. Aber genug von Eric. Das Frühstück dauerte lange. Herzlichen Dank an alle!"
 
 # game/dialogues/breakfast.rpy:657
 translate deutsch breakfast_5_37c01b98_2:
@@ -1084,7 +1084,7 @@ translate deutsch breakfast_5_37c01b98_2:
 translate deutsch breakfast_5_ecb96749:
 
     # Ann_05 "Конечно, я буду очень рада, если вы все найдёте общий язык с Эриком и подружитесь. Но хватит о нём. Думаю, завтрак окончен. Всем большое спасибо!"
-    Ann_05 "Wenn du dich anstrengst, mit Eric auszukommen, wirst du mich sehr glücklich machen. Aber genug von ihm. Sieht aus, als hätten alle aufgegessen. Ich danke euch allen."
+    Ann_05 "Natürlich würde ich mich sehr freuen, wenn ihr euch alle mit Eric vertragen und Freunde werden könntet. Aber genug von ihm. Ich glaube, das Frühstück ist vorbei. Herzlichen Dank an alle!"
 
 # game/dialogues/breakfast.rpy:660
 translate deutsch breakfast_5_37c01b98_3:
@@ -1120,7 +1120,7 @@ translate deutsch breakfast_7_10956b89:
 translate deutsch breakfast_7_3c8ac77b:
 
     # Ann_05 "Нет, Лиза. Эрик уже убежал. Он начинает работу раньше меня. Всё-таки, ответственная должность, много работы... А за мной позже машина подъедет. Так что, завтракаем без него..."
-    Ann_05 "Nein, Lisa. Eric ist bereits gegangen. Er beginnt seine Arbeit vor mir. Er hat eine wichtige Arbeit, es gibt viel zu tun... Der Wagen wird mich später abholen. Wir frühstücken also ohne ihn."
+    Ann_05 "Nein, Lisa. Eric ist bereits losgefahren. Er fängt vor mir mit der Arbeit an. Immerhin ist es ein anspruchsvoller Job, eine Menge Arbeit... Und das Auto kommt mich später abholen. Also, Frühstück ohne ihn..."
 
 # game/dialogues/breakfast.rpy:673
 translate deutsch breakfast_7_c6610d95:
@@ -2232,7 +2232,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:392
     old "Какие картины?"
-    new "Welche Gemälde?"
+    new "Was für Bilder?"
 
     # game/dialogues/breakfast.rpy:392
     old "Ты про тех голых женщин в ваших спальнях?"
