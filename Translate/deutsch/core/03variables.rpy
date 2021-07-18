@@ -408,7 +408,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "СКРЫТАЯ КАМЕРА"
-    new "VERSTECKTE KAMMERA"
+    new "MINI-KAMMERA"
 
     # game/core/03variables.rpy:272
     old "Высокотехнологичная микро-камера, предназначенная для скрытного наблюдения. Имеет радиомодуль для беспроводной передачи зашифрованного цифрового видеосигнала."
@@ -448,7 +448,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "МАЛЕНЬКОЕ ЧЕРНОЕ ПЛАТЬЕ"
-    new "KLEINES SCHWARZES KLEIDCHEN"
+    new "DAS KLEINE SCHWARZE"
 
     # game/core/03variables.rpy:272
     old "Отличный подарок для девушки, желающей произвести фурор на вечеринке или дискотеке."
@@ -456,7 +456,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "ЛЮБЯЩАЯ РУБИ"
-    new "LIEBENDE RUBINE"
+    new "LOVING RUBY"
 
     # game/core/03variables.rpy:272
     old "Роман о запретной любви между секретаршей и её начальником, полный любви, страсти, эмоций и... мистики."
@@ -496,7 +496,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "СТРЕМЯНКА"
-    new "Trittleiter"
+    new "TRITTLEITER"
 
     # game/core/03variables.rpy:272
     old "Небольшая стремянка, позволяющая достать то, для чего не хватает роста"
@@ -512,7 +512,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "ЛЁГКАЯ ПИЖАМА"
-    new "BLAUE PYJAMAS"
+    new "BLAUER PYJAMA"
 
     # game/core/03variables.rpy:272
     old "Удобнейшие маечка и шортики. В них не жарко душными летними ночами, и так же уютно в течение всего года."
@@ -596,7 +596,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "КОМПЛЕКТ ТЁМНОГО НИЖНЕГО БЕЛЬЯ"
-    new "SCHWARZE UNTERWÄSCHE SET"
+    new "SCHWARZES UNTERWÄSCHE-SET"
 
     # game/core/03variables.rpy:272
     old "Отличное нижнее бельё тёмного цвета. Отличный подарок для любимой девушки."
@@ -612,7 +612,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "ФОТОАППАРАТ"
-    new "KAMERA"
+    new "FOTO-KAMERA"
 
     # game/core/03variables.rpy:272
     old "Профессиональный фотоаппарат с объективом. Не новый, но в отличном состоянии. Подойдёт как для новичков, так и для профессионалов."
@@ -628,7 +628,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:272
     old "ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"
-    new "SEXY SCHWARZEN BODY"
+    new "SEXY SCHWARZER BODY"
 
     # game/core/03variables.rpy:272
     old "Прозрачное сетчатое боди с открытой спиной чёрного цвета."
@@ -672,7 +672,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:324
     old "Наставник"
-    new "LEHRER"
+    new "Lehrer"
 
     # game/core/03variables.rpy:324
     old "Кажется, Лиза совсем ничего не знает о мальчиках. Возможно, она даже порно ни разу не видела, раз так удивилась обычному утреннему стояку. Может быть, стоит заняться просветительской деятельностью среди своей младшей сестрёнки? Но с чего начать? Поговорить?"
@@ -1072,7 +1072,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:448
     old "Альфа"
-    new "Alpha"
+    new "Alphatier"
 
     # game/core/03variables.rpy:448
     old "Итак, я познакомился с этим самым Эриком, бойфрендом мамы. Не могу сказать о нём ничего хорошего или плохого, но он мне не очень понравился. Практически сразу он предложил мне выбрать дружить с ним или воевать. Вот только зачем мне с ним дружить? Что это даст? Да и воевать... Что он может мне сделать? Так или иначе, но он дал на размышления одну неделю. Ну, подумаю как следует и решу что попало..."
@@ -1132,7 +1132,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:466
     old "Кто не рискует..."
-    new "Wer kein Risiko eingeht..."
+    new "Wer nichts wagt..."
 
     # game/core/03variables.rpy:466
     old "Я подглядывал, как Алиса принимает душ и она меня заметила. Пытаясь извиниться я пообещал купить ей какую-нибудь сладость, в обмен на то, чтобы она не рассказывала обо всём маме. На удивление, я ещё жив, но времени у меня немного..."
@@ -1192,7 +1192,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:488
     old "Компромат на Эрика"
-    new "Erpressungsmaterial über Eric"
+    new "Eric im Dreck"
 
     # game/core/03variables.rpy:488
     old "Мне случайно удалось заметить, как Эрик посреди ночи стоит около окна в комнату Алисы и дрочит на неё! Не ожидал я такое увидеть... Мне казалось, что Эрик из тех, кто скорее проститутку снимет, чем будет просто дрочить, но как оказалось... я ошибался.\n\nНаверняка он делает это уже не первый раз! Надо понаблюдать за ним по ночам, чтобы заполучить снимок с его грязными делишками... Лучше иметь против него козырь, на случай чего..."
@@ -1216,7 +1216,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:620
     old "Навыки общения: Чувства человека"
-    new "Kommunikationsfähigkeit: Die Sinne des Menschen"
+    new "Kommunikationsfähigkeit: Menschliche Gefühle"
 
     # game/core/03variables.rpy:620
     old "Это базовый курс обучения навыкам общения и содержит в себе основную информацию об органах чувств, о реакции человека на ваши слова, а также основы языка тела."
