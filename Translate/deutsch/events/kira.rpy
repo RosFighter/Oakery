@@ -694,7 +694,7 @@ translate deutsch kira_bath_not_restrain_94418467:
 translate deutsch kira_bath_not_restrain_23817ff1:
 
     # Max_01 "Ага. Спокойной ночи, тётя Кира. С тобой очень здорово!"
-    Max_01 "Gute Nacht, Tante Kira. It's great having you here!"
+    Max_01 "Gute Nacht, Tante Kira. Es ist toll, das du da bist!"
 
 # game/events/kira.rpy:432
 translate deutsch kira_bath_not_restrain_45071b84:
