@@ -7578,7 +7578,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:1110
     old "Как хочешь. Но мама тебя накажет!"
-    new "As you wish. But Mom with punish you!"
+    new "As you wish. But Mom will punish you!"
 
     # game/dialogues/lisatalk.rpy:1151
     old "Да, Лиза, ты права..."
