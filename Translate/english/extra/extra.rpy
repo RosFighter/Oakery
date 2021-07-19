@@ -226,33 +226,32 @@ translate english strings:
 
     # game/extra/extra.rpy:56
     old "Могу не только руками"
-    new ""
+    new "I can do more than just use my hands."
 
     # game/extra/extra.rpy:56
     old "Ответная благодарность"
-    new ""
+    new "Thanks in return"
 
     # game/extra/extra.rpy:56
     old "Как тебе такое?"
-    new ""
+    new "Well, how about that?"
 
     # game/extra/extra.rpy:56
     old "Попка, которую я теперь могу отшлёпать"
-    new ""
+    new "An ass I can now spank"
 
     # game/extra/extra.rpy:56
     old "Хватит мять сиськи"
-    new ""
+    new "Stop squeezing the boobs"
 
     # game/extra/extra.rpy:56
     old "И помылись, и порезвились"
-    new ""
+    new "Washed and frolicked."
 
     # game/extra/extra.rpy:56
     old "Без майки куда интереснее"
-    new ""
+    new "Better off shirtless"
 
     # game/extra/extra.rpy:56
     old "Долой смущение"
-    new ""
-
+    new "Down with embarrassment"
