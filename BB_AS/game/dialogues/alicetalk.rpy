@@ -2371,7 +2371,8 @@ label massage_sunscreen:
         jump .end
 
     if all([len(_massaged)==2, _massaged==['foot', 'shin']]):
-        $ poss['massage'].open(3)
+        if not _in_replay:
+            $ poss['massage'].open(3)
 
     ### выбираем зону массажа
     if not _in_replay:

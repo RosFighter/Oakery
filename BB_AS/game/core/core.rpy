@@ -737,6 +737,34 @@ label after_load:
 
         $ _version = config.version
 
+    # корректировка persistent
+    if 'kira' in chars:
+        $ added_mem_var('kira')
+    if items['max-a'].have:
+        $ added_mem_var('max-a')
+    if 'black_linderie' in alice.gifts:
+        $ added_mem_var('black_linderie')
+    if 'olivia' in chars:
+        $ added_mem_var('olivia')
+    if 'pajamas' in alice.gifts:
+        $ added_mem_var('pajamas')
+    if 'bathrobe' in lisa.gifts:
+        $ added_mem_var('bathrobe')
+
+    if alice.stat.footjob and 'alice_talk_tv' not in persistent.memories:
+        $ persistent.memories['alice_talk_tv'] = 1
+    elif renpy.seen_label('alice_talk_tv.choco') and 'alice_talk_tv' not in persistent.memories:
+        $ persistent.memories['alice_talk_tv'] = 0
+
+    if renpy.seen_label('kira_night_tv.second_lesson') and 'kira_night_tv.first_lesson' not in persistent.memories:
+        $ persistent.memories['kira_night_tv.first_lesson'] = 1
+    if renpy.seen_label('kira_night_tv.repeat_lesson') and 'kira_night_tv.second_lesson' not in persistent.memories:
+        $ persistent.memories['kira_night_tv.first_lesson'] = 1
+        $ persistent.memories['kira_night_tv.second_lesson'] = 1
+
+    if 'massage_sunscreen.spider' not in persistent.memories:
+        $ persistent.memories['massage_sunscreen.spider'] = 0
+
     return
 
 label update_06_5:

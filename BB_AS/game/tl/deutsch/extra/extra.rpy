@@ -220,33 +220,33 @@ translate deutsch strings:
 
     # game/extra/extra.rpy:56
     old "Могу не только руками"
-    new ""
+    new "Mehr als nur meine Hände benutzen"
 
     # game/extra/extra.rpy:56
     old "Ответная благодарность"
-    new ""
+    new "Vielen Dank dafür"
 
     # game/extra/extra.rpy:56
     old "Как тебе такое?"
-    new ""
+    new "Wie ist das möglich?"
 
     # game/extra/extra.rpy:56
     old "Попка, которую я теперь могу отшлёпать"
-    new ""
+    new "Ein Arsch, den ich jetzt versohlen kann"
 
     # game/extra/extra.rpy:56
     old "Хватит мять сиськи"
-    new ""
+    new "Hör auf, die Titten zu zerdrücken"
 
     # game/extra/extra.rpy:56
     old "И помылись, и порезвились"
-    new ""
+    new "Gemeinsam baden, gemeinsamer Spaß"
 
     # game/extra/extra.rpy:56
     old "Без майки куда интереснее"
-    new ""
+    new "Ohne T-Shirt ist es viel interessanter"
 
     # game/extra/extra.rpy:56
     old "Долой смущение"
-    new ""
+    new "Peinlich berührt"
 

@@ -43,6 +43,8 @@ init python:
                     dr_m.remove(ex)
 
         # print dr_m
+        if not dr_m:
+            return 'c'
         return renpy.random.choice(dr_m)
 
     ############################################################################
@@ -217,8 +219,7 @@ init python:
             }
         return my_scope
 
-
-    ### Используя не только пальцы
+    # Могу не только руками
     def set_advanced_massage2():
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
@@ -240,7 +241,7 @@ init python:
             }
         return my_scope
 
-    ### Ответная благодарность
+    # Ответная благодарность
     def set_advanced_massage3():
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
@@ -257,7 +258,6 @@ init python:
                 'mgg'       : mg,
             }
         return my_scope
-
 
     # Первый массаж ног
     def set_foot_mass():
@@ -403,7 +403,7 @@ init python:
             }
         return my_scope
 
-    ## Торчащая мощь
+    # Держи и не отпускай
     def set_spider_massage2():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = 'c'
@@ -464,8 +464,7 @@ init python:
             }
         return my_scope
 
-
-    ### Покажу тебе, чтоя умею
+    # Как тебе такое?
     def set_after_club_next2():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.sex = 12
@@ -494,8 +493,7 @@ init python:
             }
         return my_scope
 
-
-    ### Я принес тебе полотенце!
+    # Я принес тебе полотенце!
     def set_alice_towel_after_club():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.sex = 12
@@ -565,8 +563,7 @@ init python:
 
         return my_scope
 
-
-    ### Я накажу тебя лучше
+    # Попка, которую я теперь могу отшлёпать
     def set_private_punish1():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
@@ -731,8 +728,7 @@ init python:
 
     # Немного БДСМ от Киры
 
-
-    ### А не заняться ли нам чем-нибудь ещё?
+    # Хватит мять сиськи
     def set_porn_tv3():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.sex = 12
@@ -747,7 +743,7 @@ init python:
             }
         return my_scope
 
-    # Развлечения в ванной
+    # И помылись, и порезвились
     def set_kira_batxsex1():
         mg        = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.sex    = 11
@@ -773,7 +769,7 @@ init python:
         tl.dress = get_lisa_dress()
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
         mg.kissing = 6.0
 
         my_scope = {
@@ -789,7 +785,7 @@ init python:
         tl.dress = get_lisa_dress()
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
         mg.kissing = 6.0
 
         my_scope = {
@@ -805,7 +801,7 @@ init python:
         tl.dress = get_lisa_dress(tp='learn')
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = get_max_dress()
+        mg.dress = get_max_dress(ex='a')
         mg.social = 45.0
         mg.massage = 19.1
 
@@ -836,8 +832,7 @@ init python:
             }
         return my_scope
 
-
-    ### Тебе будет не так страшно
+    # Без майки куда интереснее
     def set_horor_02():
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dress  = 'b'
@@ -858,7 +853,7 @@ init python:
             }
         return my_scope
 
-    ### Ночная гостья
+    # Долой смущение
     def set_olivia_second_night_visit():
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dcv.special.stage=4
