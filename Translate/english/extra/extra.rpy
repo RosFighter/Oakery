@@ -220,3 +220,39 @@ translate english strings:
     # game/extra/extra.rpy:56
     old "Держи и не отпускай"
     new "Hold on and don't let go"
+# TODO: Translation updated at 2021-07-19 09:36
+
+translate english strings:
+
+    # game/extra/extra.rpy:56
+    old "Могу не только руками"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Ответная благодарность"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Как тебе такое?"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Попка, которую я теперь могу отшлёпать"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Хватит мять сиськи"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "И помылись, и порезвились"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Без майки куда интереснее"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Долой смущение"
+    new ""
+
