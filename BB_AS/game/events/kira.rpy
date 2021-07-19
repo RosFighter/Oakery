@@ -361,7 +361,10 @@ label kira_bath:
                     Kira_09 "Ухх... Да, ещё... Входи своими пальчиками поглубже... Это такие сладкие ощущения! Ещё быстрее... Ммм..." nointeract
         if kira.dcv.photo.stage > 1:
             #если была 2-ая фотосессия с Кирой, то к варианту "работать языком быстрее" добавляются ещё 2 варианта
-            $ rez = renpy.display_menu([(_("{i}работать языком быстрее{/i}"), 0), (_("Садись на меня, тётя Кира!"), 1), (_("Давай-ка сюда свою шикарную попку!"), 2)])
+            if _in_replay:
+                $ rez = renpy.display_menu([(_("Садись на меня, тётя Кира!"), 1), (_("Давай-ка сюда свою шикарную попку!"), 2)])
+            else:
+                $ rez = renpy.display_menu([(_("{i}работать языком быстрее{/i}"), 0), (_("Садись на меня, тётя Кира!"), 1), (_("Давай-ка сюда свою шикарную попку!"), 2)])
             if rez == 1:
                 jump .horsewoman
             elif rez == 2:
@@ -558,7 +561,7 @@ label kira_bath:
                     Max_02 "Да, тётя Кира, это было что-то нереальное!"
                     jump .end_sex
 
-                "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}":
+                "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_bath.cum_in_her_mouth')):
                     jump .cum_in_her_mouth
 
         else:
@@ -624,7 +627,7 @@ label kira_bath:
                     Max_02 "Да, тётя Кира, это было что-то нереальное!"
                     jump .end_sex
 
-                "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}":
+                "{i}кончить ей в рот{/i} {color=[ch2.col]}(Сексуальный опыт. Шанс: [ch2.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_bath.cum_in_her_mouth')):
                     jump .cum_in_her_mouth
         else:
             # (Не удалось сдержаться!)
@@ -1103,6 +1106,7 @@ label kira_night_tv:
                 # или (скрытый бонус) полностью пройден второй урок поцелуев
                 if RandomChance(_ch1.ch):
                     $ Skill('social', 0.1)
+                    play sound succes
                     Kira_02 "[succes!t]Очень приятно это слышать, Макс. Порно, значит... Ну давай, присаживайся. Только руки не распускать. И не смущайся - я иногда... к себе прикасаюсь, так ощущения от фильма более... интересные, если ты меня понимаешь..."
                     Max_04 "Да без проблем! Давай уже смотреть..."
                     $ poss['aunt'].open(3)
@@ -1448,10 +1452,12 @@ label kira_night_tv:
                     if not RandomChance(_ch2.ch) and not _in_replay: ###Убеждение не удалось
                         $ Skill('social', 0.1)
                         $ Skill('kissing', 0.3, 3.0)
+                        play sound failed
                         Kira_04 "[failed!t]Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
                     else:
                         $ Skill('social', 0.2)
                         $ Skill('kissing', 0.5, 3.0)
+                        play sound succes
                         menu:
                             Kira_09 "[succes!t]О да... уже значительно лучше... Ты быстро схватываешь... Ммм..."
                             "{i}развязать её ночнушку{/i}":
@@ -1654,6 +1660,10 @@ label kira_night_tv:
             $ SetCamsGrow(house[4], 200)
             if GetRelMax('kira')[0]<3:
                 $ AttitudeChange('kira', 1) # Тёплые
+        else:
+            scene BG tv-kiss-03
+            show Kira tv-kiss 3-02
+
         menu:
             Kira_05 "Ох... Макс, мои сосочки уже изнывают от желания, чтобы ты прикоснулся к ним своими губами и языком..."
             "{i}ласкать её грудь и киску{/i}":
@@ -1904,7 +1914,7 @@ label kira_night_tv:
             Kira_09 "Ох, Макс... Я обожаю этот момент! Д-а-а... Вот так... Вводи его не спеша... хочу немного привыкнуть к его размерам... Ммм..."
             "{i}трахать её{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
                 pass
-        if RandomChance(_ch_sex4.ch):
+        if RandomChance(_ch_sex4.ch) or _in_replay:
             # (Удалось сдержаться!)
             $ r1 = renpy.random.randint(1, 3)
             if r1 < 2:
@@ -1944,13 +1954,13 @@ label kira_night_tv:
                     Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
                     jump .end_sex
 
-                "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
-                    if RandomChance(_ch_sex4.ch):
+                "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}"  if not _in_replay or (_in_replay and renpy.seen_label('kira_night_tv.cum_in_mouth')):
+                    if RandomChance(_ch_sex4.ch) or _in_replay:
                         # (Удалось сдержаться!)
                         jump .cum_in_mouth
 
-                "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
-                    if RandomChance(_ch_sex2.ch):
+                "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_night_tv.minet_after_sex')):  #(большой секс опыт)
+                    if RandomChance(_ch_sex2.ch) or _in_replay:
                         # (Удалось сдержаться!)
                         #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03
                         scene BG tv-sex03-01
@@ -1987,7 +1997,7 @@ label kira_night_tv:
             Kira_09 "Ох, Макс... Какой же это классный момент! Д-а-а... Вот так... Вводи его не спеша... чтобы я привыкла... Ммм..."
             "{i}трахать её{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
                 pass
-        if RandomChance(_ch_sex4.ch):
+        if RandomChance(_ch_sex4.ch) or _in_replay:
             # (Удалось сдержаться!)
             #tv-max&kira-sex03-01-f + tv-max&kira-sex03-02a или tv-mass-03 + tv-max&kira-sex03-02b
             if renpy.random.randint(1, 2) < 2:
@@ -2021,13 +2031,13 @@ label kira_night_tv:
                     Max_02 "Да, тётя Кира! Значит, до следующего раза?!"
                     jump .end_sex
 
-                "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
-                    if RandomChance(_ch_sex4.ch):
+                "{i}кончить ей в рот{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_night_tv.cum_in_mouth')):
+                    if RandomChance(_ch_sex4.ch) or _in_replay:
                         # (Удалось сдержаться!)
                         jump .cum_in_mouth
 
-                "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
-                    if RandomChance(_ch_sex2.ch):
+                "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_night_tv.minet_after_sex')):  #(большой секс опыт)
+                    if RandomChance(_ch_sex2.ch) or _in_replay:
                         # (Удалось сдержаться!)
                         #tv-mass-07 + tv-max&kira-sex03-03
                         scene BG tv-mass-07
@@ -2108,7 +2118,7 @@ label kira_night_tv:
         menu:
             Kira_09 "Просто наслаждайся..."
             "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
-                if RandomChance(_ch_sex2.ch):
+                if RandomChance(_ch_sex2.ch) or _in_replay:
                     # (Удалось сдержаться!)
                     if r1 < 2:
                         #tv-bj-01 + tv-bj-01-max-06a-kira-06a
@@ -2124,7 +2134,7 @@ label kira_night_tv:
                     menu:
                         Max_19 "Да, вот так тётя Кира, твои губки творят чудеса! Охх..."
                         "{i}получать удовольствие{/i} {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}":  #(большой секс опыт)
-                            if RandomChance(_ch_sex2.ch):
+                            if RandomChance(_ch_sex2.ch) or _in_replay:
                                 # (Удалось сдержаться!)
                                 if r1 < 2:
                                     #tv-bj-01 + tv-bj-01-max-08a-kira-08a
@@ -2175,6 +2185,7 @@ label kira_night_tv:
 
     label .failed:
         $ Skill('social', 0.05)
+        play sound failed
         Kira_14 "[failed!t]Приятно слышать, Макс, но тебе пора спать! Три часа ночи... Мне уже и самой пора ложиться спать."
         Max_08 "Вот так всегда..."
         if online_cources[0].current < 3 and not flags.hint_cources:
@@ -2238,6 +2249,7 @@ label kira_shower:
         $ r1 = renpy.random.choice(['01', '02', '03', '04'])
         $ renpy.show('Kira shower '+r1)
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         if r1 == '04':
             $ r1 = renpy.random.randint(7, 8)
             menu:
@@ -2473,6 +2485,7 @@ label kira_lisa_shower:
 
         scene Kira shower-Lisa 01
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         menu:
             Max_07 "Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!"
             "{i}продолжить смотреть{/i}":
@@ -2619,6 +2632,7 @@ label kira_alice_shower:
 
         scene Kira shower-Alice 01
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         menu:
             Max_07 "Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши..."
             "{i}продолжить смотреть{/i}":

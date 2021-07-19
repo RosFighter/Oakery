@@ -63,6 +63,8 @@ define mems = [
             Memories('massage_sunscreen', 'alice-massagesun-01', 'set_sunscreen', _("Давай я нанесу крем")),
             Memories('alice_talk_tv', 'alice-massagetv-01', 'set_talk_tv', _("Ножкам приятно")),
             Memories('alice_talk_tv.massage_next', 'alice-massagetv-02', 'set_advanced_massage1', _("Помассирую не только ножки"), var="'advanced_massage1' in persistent.mems_var"),
+            Memories('advanced_massage1', 'alice-massagetv-03', 'set_advanced_massage2', _("Могу не только руками"), var="renpy.seen_label('advanced_massage1.no_rush')"),
+            Memories('advanced_massage1.reciprocity', 'alice-massagetv-04', 'set_advanced_massage3', _("Ответная благодарность")),
             Memories('Lisa_HomeWork.first_foot_mass', 'lisa-massage-01', 'set_foot_mass', _("Первый массаж ног")),
             Memories('liza_hand_mass', 'lisa-massage-02', 'set_hand_mass', _("Внимание к пальчикам")),
             Memories('Lisa_HomeWork.shoulders', 'lisa-massage-03', 'set_shoulders_mass', _("Разомнём и плечики")),
@@ -76,9 +78,11 @@ define mems = [
             Memories('massage_sunscreen.spider', 'alice-spidermassage-02', 'set_spider_massage2', _("Держи и не отпускай"), var="'hide_behind' in persistent.mems_var"),
             Memories('alice_after_club.knock', 'alice-afterclub-01', 'set_after_club', _("После клуба")),
             Memories('alice_after_club.next1', 'alice-afterclub-02', 'set_after_club_next1', _("Я была плохой девочкой")),
+            Memories('alice_after_club.next2', 'alice-afterclub-03', 'set_after_club_next2', _("Как тебе такое?"), var="renpy.seen_label('alice_after_club.cunnilingus')"),
             Memories('alice_towel_after_club', 'alice-afterclubbath-01', 'set_alice_towel_after_club', _("Я принес тебе полотенце!"), var="'bath_fan' in persistent.mems_var"),
             Memories('alice_blog_lingerie', 'alice-dress&photoset-01', 'set_alice_body_photoset1', _("Первые снимки для блога Алисы"), var="'alice_photoset1' in persistent.mems_var"),  # добавить условие на состоявшуюся фотосессию
             Memories('alice_blog_lingerie', 'alice-dress&max-01', 'set_gift_lace_lingerie', _("Я обошёл Эрика с подарком для Алисы"), var="'lace_ling_max1' in persistent.mems_var"),  # gift_lace_lingerie
+            Memories('alice_private_punish_r.smoke_pun', 'alice-privatepun-01', 'set_private_punish1', _("Попка, которую я теперь могу отшлёпать")),
         ],
         [
             Memories('kira_night_tv.porn_view', 'kira-pornotv-01', 'set_porn_tv', _("Смотрим порно вместе с тётей")),
@@ -93,12 +97,16 @@ define mems = [
             Memories('return_from_club', 'kira-strip-01', 'set_kira_strip_01', _("Стриптиз после клуба"), var="'kira_tv_bj' in persistent.memories and persistent.memories['kira_tv_bj']>0"),
             Memories('kira_talk6', 'kira-photoset-01', 'set_kira_photoset_01', _("Порно-портфолио для Киры"), var="'kira_photoset1' in persistent.mems_var"),
             Memories('kira_about_photo2', 'kira-photoset-02', '', _("Немного БДСМ от Киры")),
+            Memories('kira_night_tv.teach_cuni', 'kira-tvsex-04', 'set_porn_tv3', _("Хватит мять сиськи"), var="renpy.seen_label('kira_night_tv.tv_sex1') or renpy.seen_label('kira_night_tv.tv_sex2')"),
+            Memories('kira_bath.cuni_bj', 'kira-bathsex-04', 'set_kira_batxsex1', _("И помылись, и порезвились"), var="renpy.seen_label('kira_bath.horsewoman') or renpy.seen_label('kira_bath.dogstyle')"),
         ],
         [
             Memories('lisa_advanced_kiss_lesson', 'lisa-kisslesson-01', 'set_lisa_advanced_kiss_lesson', _("Вкусные уроки с сестрёнкой")),
             Memories('liza_hand_mass', 'lisa-kissmassage-02', 'set_kiss_massage1', _("Кажется, мы что-то забыли"), var="'kissing_massage' in persistent.mems_var"),
             Memories('Lisa_HomeWork.new_self', 'lisa-massage-04', 'set_homework_mass_01', _("Больше, чем помощь с домашним заданием")),
             Memories('lisa_horor_movie_r', 'lisa-horror-01', 'set_horor_01', _("Ужастики в обнимку с Лизой")),
+            Memories('lisa_horor_movie_r', 'lisa-horror-02', 'set_horor_02', _("Без майки куда интереснее"), var="'horror_topples_kiss' in persistent.mems_var"),
+            Memories('olivia_second_night_visit', 'lisa-tv-01', 'set_olivia_second_night_visit', _("Долой смущение"), var="renpy.seen_label('olivia_second_night_out_with')"),
         ],
         [
             Memories('lessons_from_Eric.first_bj', 'ann&eric-bj01', 'set_lessons_Eric_01', _("Урок по минету от мамы и Эрика")),

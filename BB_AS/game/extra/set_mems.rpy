@@ -217,6 +217,48 @@ init python:
             }
         return my_scope
 
+
+    ### Используя не только пальцы
+    def set_advanced_massage2():
+
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        mg.sex = 11
+        al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
+        al.flags.hip_mass = renpy.random.randint(1, 2)
+        al.dcv.intrusion.stage = 7
+        dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
+        if 'kira' in persistent.mems_var:
+            dr_var.append('d')
+        al.dress = renpy.random.choice(dr_var)
+        my_scope = {
+                'alice'     : al,
+                'mgg'       : mg,
+                '_drink'    : 1,
+                '_pose'     : renpy.random.choice(['05', '06']),
+                '_dress'    : mg.dress + al.dress,
+            }
+        return my_scope
+
+    ### Ответная благодарность
+    def set_advanced_massage3():
+
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        mg.sex = 15
+        al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
+        al.flags.hip_mass = renpy.random.randint(1, 2)
+        dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
+        if 'kira' in persistent.mems_var:
+            dr_var.append('d')
+        al.dress = renpy.random.choice(dr_var)
+        my_scope = {
+                'alice'     : al,
+                'mgg'       : mg,
+            }
+        return my_scope
+
+
     # Первый массаж ног
     def set_foot_mass():
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
@@ -344,12 +386,12 @@ init python:
         mg.dress = get_max_dress()
         mg.social = 100
 
-        if 'alice_hug_in_shower' in persistent.mems_var:
+        if renpy.seen_label('alice_shower.hug'):
             # были обнимашки во время ивента
             al.gifts.append('sexbody1')
             al.flags.hugs = 5
 
-        if 'alice_danger_in_shower' in persistent.mems_var:
+        if renpy.seen_label('alice_shower.dangerous_hugs'):
             # были рискованные обнимашки
             al.flags.privpunish += 1
 
@@ -361,7 +403,7 @@ init python:
             }
         return my_scope
 
-    # Торчащая мощь
+    ## Торчащая мощь
     def set_spider_massage2():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = 'c'
@@ -399,6 +441,7 @@ init python:
 
     # Я была плохой девочкой
     def set_after_club_next1():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         sm = ['']
         if 'alice_nopants' in persistent.mems_var:
             sm.extend(['nopants', 'not_nopants'])
@@ -413,25 +456,61 @@ init python:
         tl.dcv.seduce.stage = 4 if 'kira_night_tv.second_lesson' in persistent.memories and persistent.memories['kira_night_tv.second_lesson'] else 3
 
         my_scope = {
-            'tm'        : '03:00',
-            'alice'     : al,
-            'lisa'      : tl,
-            'mgg'       : mgg,
-            'spent_time': 0,
+            'tm'            : '03:00',
+            'alice'         : al,
+            'lisa'          : tl,
+            'mgg'           : mg,
+            'spent_time'    : 0,
             }
         return my_scope
 
-    # Я принес тебе полотенце!
+
+    ### Покажу тебе, чтоя умею
+    def set_after_club_next2():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.sex = 12
+        sm = ['']
+        if 'alice_nopants' in persistent.mems_var:
+            sm.extend(['nopants', 'not_nopants'])
+        al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
+        al.req.result       = renpy.random.choice(sm)
+        # Макс ласкал киску Алисы перед ТВ
+        al.flags.hip_mass   = 5
+        al.dcv.intrusion.stage = 7
+        al.daily.drink = 2
+
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        # полностью пройден второй урок поцелуев у Киры
+        tl.dcv.seduce.stage = 4
+        if renpy.seen_label('alice_after_club.need_hurry'):
+            al.flags.touched = True
+
+        my_scope = {
+            'tm'            : '03:00',
+            'alice'         : al,
+            'lisa'          : tl,
+            'mgg'           : mg,
+            'spent_time'    : 0,
+            }
+        return my_scope
+
+
+    ### Я принес тебе полотенце!
     def set_alice_towel_after_club():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.sex = 12
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.gifts.append('sexbody1')
         al.dcv.intrusion.stage = 7 if 'bath_tongue' in persistent.mems_var else 0
         al.flags.nakedpunish = True
         al.daily.drink = 2
+        if renpy.seen_label('alice_towel_after_club.not_even_close'):
+            al.flags.hip_mass = 5
 
         my_scope = {
                 'tm'    : '03:15',
                 'alice' : al,
+                'mgg'   : mg,
             }
         return my_scope
 
@@ -482,6 +561,17 @@ init python:
                                 'sexbody1':Item("ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"),
                                 'sexbody2':Item("ЧЁРНОЕ КРУЖЕВНОЕ БОДИ", have=True)
                             },
+            }
+
+        return my_scope
+
+
+    ### Я накажу тебя лучше
+    def set_private_punish1():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        my_scope = {
+            'mgg'           : mg,
             }
 
         return my_scope
@@ -641,6 +731,40 @@ init python:
 
     # Немного БДСМ от Киры
 
+
+    ### А не заняться ли нам чем-нибудь ещё?
+    def set_porn_tv3():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.sex = 12
+
+        tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
+        tk.dcv.photo.stage = 2
+        tk.stat.handjob = 2
+        my_scope = {
+            'kira'  : tk,
+            'mgg'   : mg,
+            'naked' : False,
+            }
+        return my_scope
+
+    # Развлечения в ванной
+    def set_kira_batxsex1():
+        mg        = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.sex    = 11
+
+        tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
+        tk.dcv.photo.stage = 2
+
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dcv.seduce.stage = 2
+
+        my_scope = {
+            'mgg'   : mg,
+            'kira'  : tk,
+            'lisa'  : tl,
+            }
+        return my_scope
+
     ############################################################################
 
     # Вкусные уроки с сестрёнкой
@@ -703,12 +827,57 @@ init python:
 
         tf = Other_Flags_and_counters()
         tf.cur_series = renpy.random.randint(1, 2)
-        tf.cur_movies = [renpy.random.choice(['hes', 'f13', 'scr']), renpy.random.randint(0, 4), renpy.random.randint(0, 4), renpy.random.randint(0, 3)]
+        tf.cur_movies = [renpy.random.choice(['hes', 'f13', 'scr']), renpy.random.randint(1, 5), renpy.random.randint(1, 5), renpy.random.randint(1, 4)]
 
         my_scope = {
             'lisa'  : tl,
             'mgg'   : mg,
             'flags' : tf,
+            }
+        return my_scope
+
+
+    ### Тебе будет не так страшно
+    def set_horor_02():
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress  = 'b'
+        tl.flags.kiss_lesson = 12
+        tl.dcv.other.stage = 1
+
+        mg        = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.sex    = 14
+
+        tf = Other_Flags_and_counters()
+        tf.cur_series = renpy.random.randint(1, 2)
+        tf.cur_movies = [renpy.random.choice(['hes', 'f13', 'scr']), renpy.random.randint(1, 5), renpy.random.randint(1, 5), renpy.random.randint(1, 4)]
+
+        my_scope = {
+            'lisa'  : tl,
+            'mgg'   : mg,
+            'flags' : tf,
+            }
+        return my_scope
+
+    ### Ночная гостья
+    def set_olivia_second_night_visit():
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dcv.special.stage=4
+
+        to = Profile('olivia', "Оливия", "Оливии", "Оливии", "Оливию", "Оливией", "Оливии")
+        to.dcv.other.stage = 1
+
+        tf = Other_Flags_and_counters()
+        tf.film_punish = False
+
+        t_tv_order = ['0'+str(i) for i in range(1, 8)]
+        renpy.random.shuffle(t_tv_order)
+
+        my_scope = {
+            'lisa'          : tl,
+            'olivia'        : to,
+            'flags'         : tf,
+            'film'          : None,
+            'ol_tv_order'   : t_tv_order,
             }
         return my_scope
 

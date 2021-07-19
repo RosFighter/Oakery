@@ -80,6 +80,7 @@ label olivia_first_meeting:
     scene BG incoming-00
     show Olivia incoming 00
     with Fade(0.4, 0, 0.3)
+    play music olivia
     Lisa_01 "Вот и мой старший брат, знакомьтесь, это Оливия, моя одноклассница!"
     Max_04 "Привет, я Макс!"
     Olivia_01 "Приятно познакомиться, Макс!"
@@ -165,6 +166,7 @@ label olivia_first_night_visit:
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
     with Fade(0.4, 0, 0.3)
+    play music olivia
     Olivia_01 "Приветик! А вот и я... Спасибо, что встретил, Макс."
     Max_04 "Да без проблем. Проходи..."
     Olivia_02 "Значит, кроме нас и Лизы дома больше никого нет?"
@@ -230,6 +232,7 @@ label olivia_second_night_visit:
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
     with Fade(0.4, 0, 0.3)
+    play music olivia
     Olivia_01 "Привет, Макс. Вот я и снова к вам пришла... Как домашние? Никому не помешаю?"
     Max_04 "Нет, всё в порядке... Проходи, чувствуй себя как дома."
 
@@ -278,6 +281,7 @@ label olivia_night_visit_r:
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
     with Fade(0.4, 0, 0.3)
+    play music olivia
     Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
     Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
     #after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
@@ -289,6 +293,7 @@ label olivia_night_visit_r:
         Lisa_02 "Я тоже рада поваляться вместе с вами хоть один поздний вечерок."
         "Я с вами!":
             pass
+    $ lisa.get_plan()
     if lisa_will_be_topless()>0:
         #Лиза без майки
         $ lisa.flags.topless += 1
@@ -436,6 +441,7 @@ label olivia_first_night_out_with:
     #теперь Оливия будет загорать и плавать голышом
 
     $ spent_time = TimeDifference(tm, '02:00')
+    stop music
     jump Waiting
 
 
@@ -521,7 +527,9 @@ label olivia_second_night_out_with:
 
     $ renpy.end_replay()
     $ poss['Schoolmate'].open(12)
+    $ lisa.dcv.other.enabled = False
     $ spent_time = TimeDifference(tm, '02:00')
+    stop music
     jump Waiting
 
 
@@ -643,4 +651,5 @@ label olivia_repeatable_night_out_with:
     $ renpy.end_replay()
     $ poss['Schoolmate'].open(13)
     $ spent_time = TimeDifference(tm, '02:00')
+    stop music
     jump Waiting

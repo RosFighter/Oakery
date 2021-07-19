@@ -412,7 +412,7 @@ translate english kira_bath_mass_bath_66a1d6d3:
 translate english kira_bath_mass_bath_27bf21cd:
 
     # Max_03 "{i}( Ох... Определённо смогут! Не зря я так хорошо размял её пальчики, они начинают такое вытворять... Ого! Тётя так возбудилась, что раздвинула ножки и начала ласкать свою киску... ){/i}"
-    Max_03 "{i}( Oh... she definitely can! It's not for nothing that I flexed her fingers so well, they're starting to do this... Wow! My Aunt was so excited that she spread her legs and began to rub her pussy... ){/i}"
+    Max_03 "{i}( Oh... she definitely can! It's not for nothing that I rubbed her toes, now see look what they're doing... Wow! My Aunt is so excited that she's spreading her legs to rub her pussy... ){/i}"
 
 # game/events/kira.rpy:228
 translate english kira_bath_mass_bath_0bcadd58:
@@ -2898,7 +2898,7 @@ translate english return_from_club_4f524a35:
 translate english return_from_club_b5fd31fe:
 
     # Alice_02 "Ага, еле дотащила её. А ведь она сильная. Ещё и сопротивляется! Хотела в какой-то другой ночной клуб пойти, продолжить тусить... Еле отговорила!"
-    Alice_02 "I could hardly carry her! She's tougher than she looks. She thought it'd be a great idea to keeo partying and wanted to go to another club... I barely talked her out of it!"
+    Alice_02 "I could hardly carry her! She's tougher than she looks. She thought it'd be a great idea to keep partying and wanted to go to another club... I barely talked her out of it!"
 
 # game/events/kira.rpy:1957
 translate english return_from_club_8fb778db:

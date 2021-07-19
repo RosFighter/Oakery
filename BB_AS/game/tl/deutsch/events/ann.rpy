@@ -58,7 +58,7 @@ translate deutsch ann_sleep_c99b810c:
 translate deutsch ann_sleep_acd8f5fc:
 
     # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "Wow! Der Anblick dieser Beine macht mir Lust zu erkunden und zu sehen, wohin sie ´hinführen... Zu verlockend! Solange sie jetzt nicht aufwacht..." nointeract
+    Max_05 "Wow! Der Anblick dieser Beine macht mir Lust zu erkunden und zu sehen, wohin sie hinführen... Zu verlockend! Solange sie jetzt nicht aufwacht..." nointeract
 
 # game/events/ann.rpy:45
 translate deutsch ann_sleep_72364154:

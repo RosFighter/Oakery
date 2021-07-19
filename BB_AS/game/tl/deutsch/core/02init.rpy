@@ -176,15 +176,15 @@ translate deutsch strings:
 
     # game/core/02init.rpy:111
     old "Мам, дай денег, пожалуйста..."
-    new "Kannst du mir bitte etwas Geld geben, Mom?"
+    new "Mom, kannst du mir bitte etwas Geld geben..."
 
     # game/core/02init.rpy:111
     old "Я продукты заказал!"
-    new "Ich habe die Lebensmittel bestellt, Mom!"
+    new "Ich habe Lebensmittel bestellt!"
 
     # game/core/02init.rpy:111
     old "Мам, бассейн чист!"
-    new "Ich habe den Pool sauber gemacht, Mom!"
+    new "Mom, der Pool ist sauber!"
 
     # game/core/02init.rpy:111
     old "Что смотришь?"
@@ -200,11 +200,11 @@ translate deutsch strings:
 
     # game/core/02init.rpy:111
     old "Насчёт случая с Лизой..."
-    new "Etwa zu der Zeit mit Lisa..."
+    new "Wegen der Sache mit Lisa..."
 
     # game/core/02init.rpy:111
     old "Насчёт этого случая утром..."
-    new "Ungefähr um diese Zeit am Morgen..."
+    new "Wegen dem Vorfall von heute Morgen..."
 
     # game/core/02init.rpy:111
     old "Хотел поговорить о Большом Максе..."
@@ -212,7 +212,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:111
     old "А ты у нас шалунья, оказывается..."
-    new "Ich hätte nicht gedacht, dass du so ein ungezogenes Mädchen bist..."
+    new "Du bist ein freches Mädchen, nicht wahr..."
 
     # game/core/02init.rpy:111
     old "Насчёт успеваемости..."
@@ -220,7 +220,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:111
     old "Ну как, ты подумала о моих условиях?"
-    new "Also, hast du über meine Bedingungen nachgedacht?"
+    new "Hast du über meine Bedingungen nachgedacht?"
 
     # game/core/02init.rpy:111
     old "Помочь с уроками?"
@@ -240,7 +240,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:111
     old "У тебя странный вид..."
-    new "Du siehst irgendwie komisch aus..."
+    new "Warum guckst du so..."
 
     # game/core/02init.rpy:111
     old "Может всё-таки поделишься своими переживаниями по поводу Алисы?"
@@ -400,7 +400,7 @@ translate deutsch strings:
 
     # game/core/02init.rpy:186
     old "А у меня есть то, о чём ты мечтала..."
-    new "Ich habe etwas, das du wolltest..."
+    new "Ich habe das, was du dir gewünscht hast..."
 
     # game/core/02init.rpy:186
     old "У меня для тебя подарок {i}(Халат){/i}"

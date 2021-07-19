@@ -8460,7 +8460,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:830
     old "Ну вот видишь, не всё потеряно!"
-    new "Siehst du, du kannst das!"
+    new "Du siehst, es ist noch nichts verloren!"
 
     # game/dialogues/lisatalk.rpy:830
     old "Значит, у тебя есть шанс!"

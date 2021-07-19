@@ -334,7 +334,7 @@ translate deutsch alice_talk_tv_a38da904:
 translate deutsch alice_talk_tv_13b3ba4f:
 
     # Max_11 "{i}( По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой... ){/i}"
-    Max_11 "{i}(Heute gibt es nichts Interessantes im Fernsehen. Es wäre spannend, wenn es einige Filme für Erwachsene zur Auswahl gäbe. Könnte sogar Spaß machen, diese dann mit deiner Schwester anzuschauen...){/i}"
+    Max_11 "{i}(Heute gibt es nichts Interessantes im Fernsehen... Kein Porno, nicht einmal Erotik... Es würde Spaß machen, sowas mit meiner Schwester zu sehen...){/i}"
 
 # game/dialogues/alicetalk.rpy:315
 translate deutsch alice_talk_tv_55b37ec4:
@@ -6946,7 +6946,7 @@ translate deutsch gift_lace_lingerie_27120bb2:
 translate deutsch gift_lace_lingerie_fe88edb1:
 
     # Alice_05 "Ой, ну вторая мама появилась у меня! Просто разок свело ногу, подумаешь."
-    Alice_05 "Ja, danke, Mom! Ich habe also einmal einen Krampf im Bein, große Sache."
+    Alice_05 "Ja, danke, \"Mami\"! Ich habe also einmal einen Krampf im Bein, große Sache."
 
 # game/dialogues/alicetalk.rpy:3542
 translate deutsch gift_lace_lingerie_8aa39d7d:
@@ -8742,7 +8742,7 @@ translate deutsch massage_sunscreen_hide_behind_4afa2c53:
 translate deutsch massage_sunscreen_hide_behind_15ab4ca7:
 
     # Max_09 "А вдруг он на нас побежит, прямо к твоей попке!"
-    Max_09 "Was, wenn sie gleich auf die Krabbelt, direkt zu deinem Arsch!"
+    Max_09 "Was, wenn sie gleich zu hier her krabbelt, direkt zu deinem Arsch!"
 
 # game/dialogues/alicetalk.rpy:2294
 translate deutsch massage_sunscreen_hide_behind_9657c7e4:

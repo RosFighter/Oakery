@@ -119,6 +119,7 @@ label ann_shower:
         $ _ch2 = GetChance(mgg.stealth, 2, 900)
         scene image ('Ann shower 0'+str(__ran1))
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         menu:
             Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
             "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
@@ -140,6 +141,7 @@ label ann_shower:
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Ann shower-alt 0'+str(__ran1))
         show FG shower-water
+        play sound undetect
         if __ran1 % 2 > 0:
             Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
         else:
@@ -156,6 +158,7 @@ label ann_shower:
             scene BG shower-closer
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
+            play sound undetect
             if __ran1 % 2 > 0:
                 Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
             else:
@@ -173,6 +176,7 @@ label ann_shower:
             scene BG shower-closer
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
+            play sound suspicion
             Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
             jump .end_peeping
         else:
@@ -182,6 +186,8 @@ label ann_shower:
             scene BG shower-closer
             $ renpy.show('Ann shower-closer '+__ran1)
             show FG shower-closer
+            stop music
+            play sound noticed
             menu:
                 Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!"
                 "{i}Отвернуться{/i}":
@@ -199,11 +205,13 @@ label ann_shower:
             "Я не подглядывал. Это случайность! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}":
                 if RandomChance(_ch1.ch):
                     $ Skill('social', 0.2)
+                    play sound succes
                     Ann_12 "[succes!t]Случайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
                     Max_04 "Ага, хорошо, мам!"
                     $ punreason[2] = 0
                 else:
                     $ Skill('social', 0.1)
+                    play sound failed
                     Ann_16 "[failed!t]Случайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
                     Max_10 "Хорошо..."
             "Мам, извини...":
@@ -355,6 +363,7 @@ label ann_dressed_work:
                 if RandomChance(_ch1.ch):
                     $ spent_time += 10
                     $ Skill('social', 0.2)
+                    play sound succes
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-3a'+mgg.dress)
                     Max_06 "{i}( Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно... ){/i}"
@@ -512,6 +521,7 @@ label ann_dressed_shop:
                 if RandomChance(_ch1.ch):
                     $ spent_time += 10
                     $ Skill('social', 0.2)
+                    play sound succes
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-3b'+mgg.dress)
                     Max_06 "{i}( Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно... ){/i}"

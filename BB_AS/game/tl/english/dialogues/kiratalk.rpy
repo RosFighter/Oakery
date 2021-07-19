@@ -2540,7 +2540,7 @@ translate english story_from_childhood_ann_9069ca5d:
 translate english story_from_childhood_ann_14140d51:
 
     # Max_07 "Ясно. Ну, спасибо за историю. Теперь многое стало понятно!"
-    Max_07 "I see. Well, thanks for teling me. It makes a lot of sense now!"
+    Max_07 "I see. Well, thanks for telling me. It makes a lot of sense now!"
 
 # game/dialogues/kiratalk.rpy:1088
 translate english story_from_childhood_ann_326f8304:

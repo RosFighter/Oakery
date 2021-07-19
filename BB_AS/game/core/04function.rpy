@@ -4,7 +4,7 @@ init -100 python:
 
 init -100:
     $ config.say_menu_text_filter = original_str
-    
+
 init python:
     config.layers.insert(1, 'wm')
 
@@ -894,6 +894,18 @@ init python:
                 dress = 'b'
             else:
                 dress = 'a'
+
+            if name in ['sleep2', 'sleep', 'at_home']:
+                inf = '00'
+            elif name == 'in_shcool':
+                inf = '01'
+            elif name == 'sun':
+                inf = '00' if olivia.dcv.other.stage else '03'
+            elif name == 'swim':
+                if pose3_3=='01':
+                    inf = '00' if olivia.dcv.other.stage else '03'
+                else:
+                    inf = '00a' if olivia.dcv.other.stage else '03a'
 
         # print("%s %s clot - %s, dress - %s ( %s )"%(char, name, clot, dress, inf))
         return dress, inf, clot

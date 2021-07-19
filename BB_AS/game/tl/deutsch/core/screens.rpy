@@ -200,7 +200,7 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1476
     old "Навык убеждения"
-    new "Überzeugungskraft"
+    new "Überzeugung"
 
     # game/core/screens.rpy:1481
     old "Навык скрытности"
@@ -240,11 +240,11 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1550
     old "Задать одежду персонажа"
-    new "Kleidung der Figur einstellen"
+    new "Kleidung festlegen"
 
     # game/core/screens.rpy:1597
     old "ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА"
-    new "DIE KLEIDUNG DES CHARAKTERS FESTLEGEN"
+    new "KLEIDUNG FESTLEGEN"
 
     # game/core/screens.rpy:1650
     old "Автосмена каждые 2 дня"
@@ -280,11 +280,11 @@ translate deutsch strings:
 
     # game/core/screens.rpy:1476
     old "Запас сил:"
-    new "Kraftreserve:"
+    new "Ausdauer:"
 
     # game/core/screens.rpy:1481
     old "Тренированность:"
-    new "Übung:"
+    new "Fitness:"
 
     # game/core/screens.rpy:1486
     old "Чистота:"

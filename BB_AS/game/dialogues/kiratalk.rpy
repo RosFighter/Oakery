@@ -731,7 +731,8 @@ label kira_about_photo2:
         Kira_07 "А это сюрприз, Макс. Так что, наберись терпения..."
         Max_04 "Понял..."
         $ kira.dcv.feature.set_lost(1)
-        $ talks['kt.ft2'].req = "all([GetWeekday(day)==6, kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"
+        $ kira.dcv.photo.set_lost(6-GetWeekday(day))
+        # $ talks['kt.ft2'].req = "all([GetWeekday(day)==6, kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"
         $ spent_time += 10
         jump Waiting
 

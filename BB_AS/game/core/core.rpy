@@ -2,6 +2,7 @@
 label Waiting:
     # обработчик ожидания, запускает события по времени
     # "ждем [spent_time]"
+
     $ renpy.end_replay()
     $ renpy.block_rollback()
     $ renpy.dynamic('name_label')
@@ -1177,6 +1178,7 @@ label update_06_5_99:
                         items['sexbody1'].have = False
                         items['sexbody2'].block()
                         items['sexbody2'].have = False
+                        alice.dcv.intrusion.stage = 0
                     for st in range(7, len(poss['blog'].stages)):
                         poss['blog'].stages[st] = 0
                 elif not (poss['blog'].used(7) or poss['blog'].used(8)):
@@ -1185,6 +1187,7 @@ label update_06_5_99:
                         alice.gifts.remove('sexbody1')
                         items['sexbody2'].block()
                         items['sexbody2'].have = False
+                        alice.dcv.intrusion.stage = 0
                     for st in range(9, len(poss['blog'].stages)):
                         poss['blog'].stages[st] = 0
                 elif not (poss['blog'].used(9) or poss['blog'].used(10) or poss['blog'].used(11) or poss['blog'].used(12)):
@@ -1193,6 +1196,7 @@ label update_06_5_99:
                         alice.gifts.remove('sexbody2')
                     items['sexbody2'].block()
                     items['sexbody2'].have = False
+                    alice.dcv.intrusion.stage = 0
                     for st in range(13, len(poss['blog'].stages)):
                         poss['blog'].stages[st] = 0
                 elif not (poss['blog'].used(13) or poss['blog'].used(14) or poss['blog'].used(15) or poss['blog'].used(16)):
@@ -1200,6 +1204,7 @@ label update_06_5_99:
                         alice.gifts.remove('sexbody2')
                     items['sexbody2'].block()
                     items['sexbody2'].have = False
+                    alice.dcv.intrusion.stage = 0
                 for st in range(17, len(poss['blog'].stages)):
                     poss['blog'].stages[st] = 0
 
@@ -1406,5 +1411,9 @@ label update_06_5_99:
 
     if _version < "0.06.5.15":
         $ olivia_night_visits = olivia_nightvisits()
+
+    if _version < '0.06.5.18':
+        if lisa.flags.topless and lisa.dcv.other.enabled and not poss['SoC'].used(16):
+            $ lisa.dcv.other.enabled = False
 
     return

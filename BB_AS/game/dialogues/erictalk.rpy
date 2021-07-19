@@ -90,12 +90,15 @@ label lessons_from_Eric:
     $ _stockings = RandomChance(500) # шанс, что Аня будет в чулках, 50%
     if flags.voy_stage==4:
         $ poss['control'].open(4)
+        play music eric
         jump .first_bj
     elif flags.voy_stage==5:
         $ poss['control'].open(5)
+        play music eric
         jump .second_bj
     elif flags.voy_stage==6:
         $ poss['control'].open(6)
+        play music eric
         jump .third_bj
     else:
         # "{b}Продолжение в следующей версии...{/b}"
@@ -306,6 +309,7 @@ label lessons_from_Eric:
                 jump .end
 
     label .end:
+        stop music
         $ renpy.end_replay()
         $ flags.voy_stage+=1
         $ spent_time += max((60 - int(tm[-2:])), 30)

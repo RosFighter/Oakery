@@ -351,12 +351,14 @@ label breakfast_2:
             ## наказание Лизы
             scene BG punish-morning 02
             $ renpy.show("Ann punish-morning lisa-01"+ann.dress)
+            play sound [slap2, "<silence .5>", slap2, "<silence .5>", slap2, "<silence 1.5>"] loop
             $ __mood -= 50 # если Лизу наказывают, её настроение портится
             $ lisa.flags.pun += 1
             Lisa_10 "Ой... Мам! Больно!"
             $ renpy.show("Ann punish-morning lisa-02"+ann.dress)
             Ann_01 "Давай терпи. За двойки я всегда наказываю. В этот раз не сильно, чтобы ты понимала, что никакие отговорки или причины меня интересовать не будут. Получила двойку, получила по заднице у всех на глазах. Ясно?"
             Lisa_09 "Ой. Да. Ясно, мам. Я всё поняла!"
+            stop sound
             scene BG punish-morning 01
             show Lisa punish-morning 02
             $ renpy.show("Ann punish-morning 01"+ann.dress)
@@ -425,13 +427,13 @@ label breakfast_2:
 
     Ann_00 "Кто знает. Посмотрим, к чему это всё приведёт. В любом случае, я рада, что не придётся трястись в общественном транспорте и теперь точно успею. Ну всё, я побежала!"
     Max_00 "Давай, удачи..."
-    $ AddRelMood('lisa', 0, __mood)
+    $ AddRelMood('lisa', 30 if __mood>100 else 0 , __mood)
     jump after_breakfast
 
     label .ok:
         Ann_07 "Ну всё, ещё раз всем спасибо. А тебе, Лиза, удачи в школе. Не подведи меня!"
         Max_01 "Пока, мам..."
-        $ AddRelMood('lisa', 0, __mood)
+        $ AddRelMood('lisa', 30 if __mood>100 else 0 , __mood)
         jump after_breakfast
 
 

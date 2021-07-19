@@ -830,11 +830,11 @@ translate deutsch strings:
 
     # game/dialogues/anntalk.rpy:334
     old "Нет, никого не было..."
-    new "Nein"
+    new "Nein, es war niemand da..."
 
     # game/dialogues/anntalk.rpy:334
     old "Может быть, показалось?"
-    new "Vielleicht habe ich es mir eingebildet?"
+    new "Vielleicht ist es nur Einbildung?"
 
     # game/dialogues/anntalk.rpy:334
     old "Да это просто Алиса курила!"
@@ -846,7 +846,7 @@ translate deutsch strings:
 
     # game/dialogues/anntalk.rpy:344
     old "Вообще-то, Алиса курила..."
-    new "Okay, es war Alice. Sie hat geraucht..."
+    new "Eigentlich hat Alice geraucht..."
 
     # game/dialogues/anntalk.rpy:351
     old "Всегда пожалуйста, сестрёнка!"

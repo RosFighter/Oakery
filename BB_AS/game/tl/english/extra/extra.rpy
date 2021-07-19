@@ -220,3 +220,38 @@ translate english strings:
     # game/extra/extra.rpy:56
     old "Держи и не отпускай"
     new "Hold on and don't let go"
+# TODO: Translation updated at 2021-07-19 09:36
+
+translate english strings:
+
+    # game/extra/extra.rpy:56
+    old "Могу не только руками"
+    new "I can do more than just use my hands."
+
+    # game/extra/extra.rpy:56
+    old "Ответная благодарность"
+    new "Thanks in return"
+
+    # game/extra/extra.rpy:56
+    old "Как тебе такое?"
+    new "Well, how about that?"
+
+    # game/extra/extra.rpy:56
+    old "Попка, которую я теперь могу отшлёпать"
+    new "An ass I can now spank"
+
+    # game/extra/extra.rpy:56
+    old "Хватит мять сиськи"
+    new "Stop squeezing the boobs"
+
+    # game/extra/extra.rpy:56
+    old "И помылись, и порезвились"
+    new "Washed and frolicked."
+
+    # game/extra/extra.rpy:56
+    old "Без майки куда интереснее"
+    new "Better off shirtless"
+
+    # game/extra/extra.rpy:56
+    old "Долой смущение"
+    new "Down with embarrassment"

@@ -657,7 +657,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чем больше уроков по массажу рук удастся изучить, тем эффективнее я смогу его применить. Самое лучшее время для массажа рук - когда Лиза залипает в свой телефон..."
-    new "The more hand massage lessons I can learn, the more effectively I can apply them. The best time to massage my hands is when Lisa is on her phone..."
+    new "The more hand massage lessons I can learn, the more effectively I can apply them. The best time to massage her hands is when Lisa is on her phone..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь я могу массировать Лизе не только ножки, но и ручки. Немного практики и всё будет прекрасно. Может быть даже, если массаж пройдёт хорошо, она захочет, чтобы я помассировать ещё что-то кроме её ног? Например, плечи... Наверняка, они тоже напряжены."
@@ -665,7 +665,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Если я смогу успешно закончить массаж рук, а во время помощи с домашним заданием и ног, то стоит попробовать уговорить Лизу на массаж плеч..."
-    new "If I can successfully finish massaging my hands, and while helping with homework, my feet as well, I should try to talk Lisa into massaging her shoulders..."
+    new "If I can successfully finish massaging her hands, and while helping with homework, her feet as well, I should try to talk Lisa into massaging her shoulders..."
 
     # game/core/09_opportunities.rpy:4
     old "Не зря я занялся массажем рук Лизы! Правда, если ей не понравится массаж ног, то нет смысла лезть к ней дальше. Даже сделав и то, и то, как надо, её нужно уговаривать на массаж плеч. Надеюсь, со временем, её станет проще на это уговорить, а пока, практикуюсь дальше..."
@@ -701,7 +701,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Алиса должна как можно меньше меня стесняться. Для этого нужны успехи в возможности \"Забота о попках\"..."
-    new "Alice should be as embarrassed as possible about me. This requires progress in the \"Booty Care\" opportunity...."
+    new "Alice should be as embarrassed as possible about me. This requires progress in the \"Taking care of your ass\" opportunity...."
 
     # game/core/09_opportunities.rpy:4
     old "Хорошо бы нам с ней быть, как можно более раздетыми. Я в одних шортах, а Алиса без верха купальника..."
@@ -901,7 +901,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Если Лиза заметила, как я за ней подглядывал, то лучше в полночь вернуться в нашу с ней комнату, чтобы посмотреть фильм..."
-    new "If Lisa noticed me peeping on her, she better come back to our room at midnight to watch a movie..."
+    new "If Lisa noticed me peeping on her, I better come back to our room at midnight to watch a movie..."
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Наставник\"..."
@@ -921,7 +921,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Одноклассник\"..."
-    new "In order for Lisa and I to be more comfortable with each other, we will need progress in the \"Classmates\" possibility..."
+    new "In order for Lisa and I to be more comfortable with each other, we will need progress in the \"Schoolmate\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно чаще защищать Лизу от маминых наказаний. Это только на пользу нашим отношениям..."
@@ -1355,3 +1355,14 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Теперь Алиса считает своим долгом приласкать меня не только шаловливыми ногами за массаж, но и пустить в ход свой не менее шаловливый ротик! Пока что я не хочу рисковать и засаживать свой член как можно глубже ей в рот, но когда наши отношения станут ещё лучше, уххх... Держись, сестрёнка... Тебе будет нелегко!"
     new "Now Alice considers it her duty to caress me not only with her naughty legs for a massage, but also to use her equally naughty mouth! For now, I don't want to risk putting my dick as deep into her mouth as possible, but when our relationship gets even better, ughhhh... Hang in there, sis... This isn't going to be easy for you!"
+# TODO: Translation updated at 2021-07-15 02:28
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Остаётся ждать, пока Алисе снова что-нибудь не понадобится. И хотя бы временами интересоваться, как у неё идут дела с блогом. Заодно и на сестрёнку в нижнем белье поглазею..."
+    new "It remains to wait until Alice needs something again. And at least occasionally ask her how her blog is going. At the same time I get to look at my sister in her underwear."
+
+    # game/core/09_opportunities.rpy:682
+    old "Нужно и дальше защищать Алису от наказаний..."
+    new "We must continue to protect Alice from punishment..."

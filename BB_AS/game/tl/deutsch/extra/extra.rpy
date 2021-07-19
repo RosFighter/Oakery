@@ -214,3 +214,39 @@ translate deutsch strings:
     old "Держи и не отпускай"
     new "Festhalten und nicht loslassen"
 
+# TODO: Translation updated at 2021-07-19 09:37
+
+translate deutsch strings:
+
+    # game/extra/extra.rpy:56
+    old "Могу не только руками"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Ответная благодарность"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Как тебе такое?"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Попка, которую я теперь могу отшлёпать"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Хватит мять сиськи"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "И помылись, и порезвились"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Без майки куда интереснее"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Долой смущение"
+    new ""
+

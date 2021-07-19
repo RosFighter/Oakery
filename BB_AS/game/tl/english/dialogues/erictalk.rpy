@@ -304,7 +304,7 @@ translate english lessons_from_Eric_second_bj_8f4a23a2:
 translate english lessons_from_Eric_second_bj_c1aabe17:
 
     # Max_00 "Ясно. Вы продолжайте, а я посмотрю... как это..."
-    Max_00 "Clearly. You go on, I'll keeo watching..."
+    Max_00 "Clearly. You go on, I'll keep watching..."
 
 # game/dialogues/erictalk.rpy:202
 translate english lessons_from_Eric_second_bj_a6141667:

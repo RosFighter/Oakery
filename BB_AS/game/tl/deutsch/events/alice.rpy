@@ -1462,7 +1462,7 @@ translate deutsch alice_after_club_knock_26bb0ceb:
 translate deutsch alice_after_club_knock_72f86c2b:
 
     # Alice_05 "Какой ужас! Похоже, я нарушила наш уговор... или нет... Разве я не могу носить их ночью?"
-    Alice_05 "Wie furchtbar! Sieht aus, als hätte ich unsere Vereinbarung gebrochen... oder auch nicht... Darf ich sie nicht nachts tragen?"
+    Alice_05 "Wie furchtbar! Sieht aus, als hätte ich unsere Vereinbarung gebrochen... oder auch nicht... Darf ich mein Höschen nachts nicht tragen?"
 
 # game/events/alice.rpy:1349
 translate deutsch alice_after_club_knock_5120f774:

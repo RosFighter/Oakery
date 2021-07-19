@@ -1201,6 +1201,7 @@ init python:
         def open(self, stage): # открывает этап "возможности", если номер этапа больше текущего, устанавливает текущим новый этап
             if sum(self.stages) < 1:
                 notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"))
+                renpy.play('audio/opportunity.ogg', 'sound')
             self.stages[stage] = 1
 
         def used(self, stage):      # проверяет, задействован ли этап возможности

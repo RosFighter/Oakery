@@ -344,6 +344,7 @@ label alice_shower:
         $ _ch2 = GetChance(mgg.stealth, 2, 900)
         scene image ('Alice shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         menu:
             Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
             "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if alice.dcv.shower.stage<2:
@@ -447,6 +448,7 @@ label alice_shower:
                         pass
                 if RandomChance(_ch1.ch) or _in_replay:
                     $ Skill('social', 0.2)
+                    play sound succes
                     Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
                     Max_00 "Да это случайно вышло!"
                     Alice_05 "Ну да, конечно..."
@@ -454,6 +456,7 @@ label alice_shower:
                     $ infl[alice].add_m(4)
                 else:
                     $ Skill('social', 0.1)
+                    play sound failed
                     Alice_16 "[failed!t]Я тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
                     Max_10 "Так получилось! Я не хотел..."
                     Alice_17 "Да иди ты, Макс!"
@@ -462,8 +465,9 @@ label alice_shower:
         jump .end
 
     label .hug:
-        if RandomChance(_ch2.ch):
+        if RandomChance(_ch2.ch) or _in_replay:
             $ Skill('social', 0.2)
+            play sound succes
             Alice_05 "[succes!t]Это я, конечно, могу сделать... Но если вздумаешь с меня полотенце сорвать, то я тебя прибью нафиг!"
             Max_07 "Не буду я ничего такого делать! Что я, маленький что ли?"
             #spider-bathroom-01 + spider-shower-01-max-(01a/01b)-alice-01
@@ -491,6 +495,7 @@ label alice_shower:
         else:
             # (Убеждение не удалось!)
             $ Skill('social', 0.1)
+            play sound failed
             Alice_05 "[failed!t]Ага, знаю я, чего ты хочешь! Полуголую сестрёнку полапать за всякие запретные места... Нет уж, Макс, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
             Max_01 "Да. Не забуду..."
 
@@ -555,6 +560,7 @@ label alice_shower:
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Alice shower-alt 0'+str(r1))
         show FG shower-water
+        play sound undetect
         if r1 % 2 > 0:
             Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
         else:
@@ -572,6 +578,7 @@ label alice_shower:
             scene BG shower-closer
             $ renpy.show('Alice shower-closer 0'+str(r1))
             show FG shower-closer
+            play sound undetect
             if r1 % 2 > 0:
                 Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
             else:
@@ -592,6 +599,7 @@ label alice_shower:
             scene BG shower-closer
             $ renpy.show('Alice shower-closer 0'+str(r1))
             show FG shower-closer
+            play sound suspicion
             Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\nОх, чёрт! Нужно скорее уносить ноги, пока они ещё есть..."
             jump .end
         else:
@@ -609,6 +617,8 @@ label alice_shower:
         scene BG shower-closer
         $ renpy.show('Alice shower-closer '+r1)
         show FG shower-closer
+        stop music
+        play sound noticed
         if alice.flags.touched:
             Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
             Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
@@ -1219,6 +1229,7 @@ label spider_in_bed:
     label .fail:
         $ Skill('social', 0.1)
         $ renpy.show('Alice spider-night 03-05'+suf)
+        play sound failed
         Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
         $ mood -= 100
@@ -1227,6 +1238,7 @@ label spider_in_bed:
     label .money:
         $ renpy.show('Alice spider-night 03-06'+suf)
         $ Skill('social', 0.2)
+        play sound succes
         Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
         Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
         $ mood -= 20
@@ -1236,6 +1248,7 @@ label spider_in_bed:
     label .tits:
         show Max spider-night 03-03
         $ Skill('social', 0.2)
+        play sound succes
         if alice.GetMood()[0] < 3:
             $ mood -= 50
             $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08'])+suf)
@@ -1255,6 +1268,7 @@ label spider_in_bed:
         $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+suf)
         if alice.GetMood()[0] < 3:
             $ mood -= 50
+        play sound succes
         Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
         Max_05 "Отличные сиськи! Ладно, где этот твой паук..."
         jump .spider
@@ -1288,6 +1302,7 @@ label spider_in_bed:
                         show Max spider-night 04-02
                         if RandomChance(_ch1.ch) or _in_replay:
                             $ Skill('social', 0.2)
+                            play sound succes
                             Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
                             menu:
                                 Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!"
@@ -1303,6 +1318,7 @@ label spider_in_bed:
                         else:
                             $ Skill('social', 0.1)
                             $ mood -50
+                            play sound failed
                             Alice_16 "[failed!t]Нет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
                             Max_09 "Ладно, будет тебе! Раз ты такая кровожадная..."
                             jump .kill
@@ -1637,7 +1653,7 @@ label alice_after_club:
             "Хочу, чтобы ты отсосала..." if not _in_replay:
                 jump .suck
 
-            "На всё остальное ты не согласишься...":
+            "На всё остальное ты не согласишься..." if not _in_replay:
                 Alice_07 "Думаешь? Как знать... Но в любом случае уже поздно, а мне ещё ванну принимать, так что спокойной ночи, Макс."
                 Max_01 "Ага. Приятных снов, Алиса."
 
@@ -1679,7 +1695,7 @@ label alice_after_club:
                 menu:
                     Alice_06 "Д-а-а... То есть, я хотела сказать... неправильно! Но к чёрту, продолжай... Мне нравится, как ты это делаешь, ммм..."
                     "{i}проникнуть в её киску пальцами{/i} {color=[_ch_sex4.col]}(Сексуальный опыт. Шанс: [_ch_sex4.vis]){/color}":
-                        if RandomChance(_ch_sex4.ch):
+                        if RandomChance(_ch_sex4.ch) or _in_replay:
                             # (Ей нравится!)
                             $ Skill('sex', 0.2)
                             #after-club-06 + after-club-06-max&alice-02
@@ -1701,7 +1717,7 @@ label alice_after_club:
                         jump .cunnilingus
 
     label .fast_fingers:
-        if RandomChance(_ch_sex3.ch):
+        if RandomChance(_ch_sex3.ch) or _in_replay:
             $ Skill('sex', 0.2)
             # (Ей нравится!)
             Alice_11 "[like!t]Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс! А ты скоро кончишь?"
@@ -1746,7 +1762,7 @@ label alice_after_club:
         else:
             scene BG char Alice bath-after-club 07
             show Alice bath-after-club 07-01
-        if RandomChance(_ch_sex4.ch):
+        if RandomChance(_ch_sex4.ch) or _in_replay:
             #(Ей нравится!)
             $ Skill('sex', 0.2)
             #after-club-05 + after-club-05-max&alice-03 или after-club-07 + after-club-07-max&alice-01
@@ -1809,7 +1825,7 @@ label alice_after_club:
         menu:
             Max_21 "Ох, Алиса, это мне очень нравится! Так приятно... Д-а-а... Давай ещё... Как же сладко твои сочные губки это делают, д-а-а..."
             "{i}сдерживаться{/i} {color=[sex4.col]}(Сексуальный опыт. Шанс: [sex4.vis]){/color}":
-                if RandomChance(sex4.ch):
+                if RandomChance(sex4.ch) or _in_replay:
                     # (Удалось сдержаться!)
                     $ Skill('sex', 0.2)
                     #after-club-08 + after-club-08-max&alice-bj02
@@ -2682,7 +2698,7 @@ label alice_towel_after_club:
         menu:
             Max_21 "Ох, Алиса! Упасть здесь действительно есть от чего! Какие у тебя нежные губы... Д-а-а... У тебя хорошо получается, сестрёнка... Давай поактивнее... Как же приятно, д-а-а..."
             "{i}сдерживаться{/i} {color=[sex4.col]}(Сексуальный опыт. Шанс: [sex4.vis]){/color}":
-                if RandomChance(sex4.ch):
+                if RandomChance(sex4.ch) or _in_replay:
                     # (Удалось сдержаться!)
                     $ Skill('sex', 0.2)
                     show Alice after-club-bath bj-03a

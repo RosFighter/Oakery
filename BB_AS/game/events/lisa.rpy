@@ -109,6 +109,7 @@ label lisa_shower:
         $ renpy.scene()
         $ renpy.show('Lisa shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
             "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if lisa.dcv.shower.stage<2:
@@ -134,6 +135,7 @@ label lisa_shower:
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(r1))
         show FG shower-water
+        play sound undetect
         if 1 < r1 < 5:
             Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
         else:
@@ -150,6 +152,7 @@ label lisa_shower:
             scene BG shower-closer
             $ renpy.show('Lisa shower-closer 0'+str(r1))
             show FG shower-closer
+            play sound undetect
             if 1 < r1 < 5:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
@@ -169,6 +172,7 @@ label lisa_shower:
             scene BG shower-closer
             $ renpy.show('Lisa shower-closer '+r1)
             show FG shower-closer
+            play sound suspicion
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
         else:
             jump .pinded
@@ -190,6 +194,8 @@ label lisa_shower:
         scene BG shower-closer
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
+        stop music
+        play sound noticed
         if lisa_was_topless() and lisa.dcv.other.stage:
             if lisa.weekly.shower>2:
                 Lisa_11 "[spotted!t]Ой, Макс! Опять ты подглядываешь... Это уже маньячество какое-то!"
@@ -1301,6 +1307,7 @@ label lisa_horor_movie_r:
                     $ renpy.show('Lisa horror-myroom 02-'+r1+lisa.dress)
                     if lisa.dress>'b':
                         Max_05 "{i}( Нежный поцелуй с сестрёнкой перед сном точно отвлечёт её от всяких страхов. Целуя её, вообще забываешь о том, что там было перед этим... Лишь её сочные губки и нежная грудь, которой она касается меня... ){/i}"
+                        $ added_mem_var('horror_topples_kiss')
                         if lisa.dcv.special.stage < 7:
                             $ lisa.dcv.special.stage = 7
                     else:
@@ -1330,7 +1337,7 @@ label lisa_horor_movie_r:
                     Max_01 "Ага. Спокойной ночи."
                     jump .end
 
-        "{i}да пофиг!{/i}":
+        "{i}да пофиг!{/i}" if not (_in_replay and lisa.dcv.other.stage):
             Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
             jump .not_restrain
 
@@ -1357,8 +1364,8 @@ label lisa_horor_movie_r:
 
     label .end:
         $ renpy.end_replay()
-        if lisa.dcv.other.stage>1 and lisa.dcv.other.done:
-            $ lisa.dress = 'b'
+        # if lisa.dcv.other.stage>1 and lisa.dcv.other.done:
+        #     $ lisa.dress = 'b'
         $ spent_time += 60
         $ infl[lisa].add_m(12)
         $ lisa.dcv.special.disable()

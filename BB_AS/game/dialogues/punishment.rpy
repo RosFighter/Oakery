@@ -50,6 +50,10 @@ label StartPunishment:
                 ]):
                     $ punlisa[0][1] = 2
                     $ pun_list.append("lisa")
+            elif all([newpunishment==2, flags.add_training, lisa.dcv.punpause.done,
+                GetWeekday(day) in [1,2], RandomChance(800), lisa.flags.topless, not lisa.dcv.other.enabled]):
+                    $ punlisa[0][1] = 2
+                    $ pun_list.append("lisa")
 
     if all([tm > "18:00", alice.dcv.special.enabled, alice.dcv.special.stage > 1, (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)]):
         # Алиса получает наказание вечером (в будни, если были приватные наказания), если открыт ивент с сигаретами
@@ -79,8 +83,12 @@ label StartPunishment:
         Ann_16 "Прежде, чем мы начнём, кое-кто заслуживает наказания и сейчас все на это посмотрят..."
         jump punishment
     elif tm > "14:00":
+        stop music
+        $ music_starter()
         jump dinner_after_punishment
     else:
+        stop music
+        $ music_starter()
         jump breakfast_after_punishment
 
 
@@ -122,8 +130,12 @@ label punishment:
 
     stop music fadeout 1.0
     if tm > "14:00":
+        stop music
+        $ music_starter()
         jump dinner_after_punishment
     else:
+        stop music
+        $ music_starter()
         jump breakfast_after_punishment
 
 
@@ -240,6 +252,7 @@ label punishment_max:
                 pass
         if RandomChance(_ch1.ch):
             $ Skill('social', 0.2)
+            play sound succes
             Ann_14 "[succes!t]Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
             Max_08 "Спасибо, мам!"
             python:
@@ -252,6 +265,7 @@ label punishment_max:
                 $ _text = _("штаны")
             else:
                 $ _text = _("шорты")
+            play sound failed
             menu:
                 Ann_19 "[failed!t]Вот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!t] и ложись на мои колени. Надеюсь, ты сегодня в трусах..."
                 "{i}снять штаны{/i}":
@@ -271,6 +285,8 @@ label punishment_max:
             $ renpy.show("Ann punish-evening max-01"+ann.dress+mgg.dress)
 
         # Макс без штанов у Анны на коленях
+        play sound [slap1, "<silence .5>", slap1, "<silence .5>", slap1, "<silence 1.5>"] loop
+
         if punreason.count(1) > 1:  # несколько причин для наказания, общая фраза
             Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
         else:  # конкретная причина для наказания
@@ -288,6 +304,7 @@ label punishment_max:
             $ renpy.show("Ann punish-morning max-02"+ann.dress+mgg.dress)
         else:
             $ renpy.show("Ann punish-evening max-02"+ann.dress+mgg.dress)
+
         Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
 
         call max_consequences from _call_max_consequences
@@ -296,6 +313,8 @@ label punishment_max:
             $ poss['risk'].open(5)
         if punreason[0] and lisa.dcv.shower.stage>1:
             $ poss['SoC'].open(5)
+
+        stop sound
 
         if tm < "14:00":
             scene BG punish-morning 01
@@ -337,6 +356,8 @@ label punishment_max:
             scene BG punish-evening 02
             $ renpy.show("Ann punish-evening max-01"+ann.dress+('c' if newpunishment == 1 else 'ca'))
         # Макс без штанов у Анны на коленях
+        play sound [slap1, "<silence .5>", slap1, "<silence .5>", slap1, "<silence 1.5>"] loop
+
         if punreason.count(1) > 1:  # несколько причин для наказания, общая фраза
             Ann_16 "У Макса несколько провинностей... Он их прекрасно знает и перечислять я их не стану. Сейчас он получит за все сразу!"
         else:  # конкретная причина для наказания
@@ -362,6 +383,8 @@ label punishment_max:
             $ poss['risk'].open(5)
         if punreason[0] and lisa.dcv.shower.stage>1:
             $ poss['SoC'].open(5)
+
+        stop sound
 
         if tm < "14:00":
             scene BG punish-morning 01
@@ -437,6 +460,7 @@ label punishment_lisa:
                         Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
                     elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
                         $ Skill('social', 0.2)
+                        play sound succes
                         Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
                         Lisa_02 "Спасибо тебе, Макс!"
                         $ lisa.flags.defend += 1
@@ -445,6 +469,7 @@ label punishment_lisa:
                         return
                     else:
                         $ Skill('social', 0.1)
+                        play sound failed
                         Ann_12 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
                         $ punlisa[0][2] = 1
                 "{i}далее{/i}":
@@ -489,6 +514,7 @@ label punishment_lisa:
                     Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
                 elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
                     $ Skill('social', 0.2)
+                    play sound succes
                     Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, можешь одеваться. Скажи спасибо Максу, что сегодня осталась безнаказанной. Но не думай, что я всегда буду такой доброй..."
                     Lisa_02 "Спасибо тебе, Макс!"
                     if newpunishment==2:
@@ -505,6 +531,7 @@ label punishment_lisa:
                     return
                 else:
                     $ Skill('social', 0.1)
+                    play sound failed
                     Ann_12 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
                     $ punlisa[0][2] = 1
             "{i}далее{/i}":
@@ -513,6 +540,8 @@ label punishment_lisa:
     # сцена наказания Лизы
     scene BG punish-evening 02
     $ renpy.show("Ann punish-evening lisa-01"+ann.dress+_lisa_dress)
+
+    play sound [slap1, "<silence .5>", slap1, "<silence .5>", slap1, "<silence 1.5>"] loop
 
     $ mood -= 100 # если Лизу наказывают, её настроение портится
     $ lisa.flags.pun += 1
@@ -550,6 +579,7 @@ label punishment_lisa:
     if punlisa[0][0] == 1:  # Макс умышленно сделал ошибку и Лизу наказали
         $ punlisa[0][4] = renpy.random.randint(50, 300)  # подозрительность Лизы растет случайно от 5 до 30%
 
+    stop sound
     # сцена с наказанной Лизой
     scene BG punish-evening 01
     $ renpy.show("Lisa punish-evening 03"+_lisa_dress)
@@ -605,6 +635,7 @@ label punishment_alice:
                         Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
                     elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
                         $ Skill('social', 0.2)
+                        play sound succes
                         Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, и не приглашай больше сюда таких подружек, хорошему они не научат..."
                         Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
                         $ punalice[0][2] = 2
@@ -612,6 +643,7 @@ label punishment_alice:
                         return
                     else:
                         $ Skill('social', 0.1)
+                        play sound failed
                         Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
                         $ punalice[0][2] = 1
                 "{i}далее{/i}":
@@ -680,6 +712,7 @@ label punishment_alice:
                         Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
                     elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
                         $ Skill('social', 0.2)
+                        play sound succes
                         Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
                         Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
 
@@ -695,6 +728,7 @@ label punishment_alice:
                         return
                     else:
                         $ Skill('social', 0.1)
+                        play sound failed
                         Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
                         $ punalice[0][2] = 1
             "{i}далее{/i}":
@@ -716,6 +750,7 @@ label punishment_alice:
             $ SetCamsGrow(house[5], 220)
             $ suf = alice.dress
         $ renpy.show('Ann punish-evening alice-03'+ann.dress+suf)
+    play sound [slap1, "<silence .5>", slap1, "<silence .5>", slap1, "<silence 1.5>"] loop
 
     $ mood -= 50 # если Алису наказывают, её настроение портится
     $ alice.flags.pun += 1
@@ -740,6 +775,7 @@ label punishment_alice:
     if  punalice[0][0] > 0 and punalice[0][1] == 1:  # Макс шантажировал Алису и подставил её в этот же день
         $ punalice[0][4] = renpy.random.randint(50, 300)  # подозрительность Алисы растет случайно от 5 до 30%
 
+    stop sound
     # сцена с наказанной Алисой
     scene BG punish-evening 01
     $ renpy.show("Ann punish-evening 01"+ann.dress)

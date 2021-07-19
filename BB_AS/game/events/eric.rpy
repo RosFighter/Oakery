@@ -552,6 +552,7 @@ label eric_ann_fucking:
             jump AfterWaiting
 
     label .voyeur:  # точка входа после заглушки
+        play music spying
         $ spent_time += 10
 
     $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
@@ -576,6 +577,8 @@ label eric_ann_fucking:
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
         if flags.voy_stage in [0, 1]:
+            stop music
+            play sound noticed
             Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
             $ punreason[3] = 1
 
@@ -611,6 +614,7 @@ label eric_ann_fucking:
                     pass
 
         $ current_room = house[0]
+        stop music
         jump Waiting
 
     if RandomChance(_ch1.ch) or flags.voy_stage > 6:
@@ -618,6 +622,7 @@ label eric_ann_fucking:
             $ Skill('hide', 0.1)
         $ ann.dress_inf = '00'
         $ eric.daily.sex = 3
+        play sound undetect
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
         elif fuck_scene == 2:
@@ -637,6 +642,8 @@ label eric_ann_fucking:
             $ renpy.show('FG ann&eric-voyeur-02')
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
+        stop music
+        play sound noticed
         Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
         $ Skill('hide', 0.05)
         $ punreason[3] = 1
@@ -648,6 +655,7 @@ label eric_ann_fucking:
     $ rez = renpy.display_menu([(_("{i}продолжить смотреть{/i}"), 0), (_("{i}уйти{/i}"), 1)])
     if rez > 0:
         $ current_room = house[0]
+        stop music
         jump Waiting
 
     if fuck_scene == 6:
@@ -673,6 +681,7 @@ label eric_ann_fucking:
     if flags.voy_stage<6:
         $ Skill('hide', 0.1)
     $ current_room = house[0]
+    stop music
     jump Waiting
 
 
@@ -873,6 +882,7 @@ label eric_ann_shower:
         $ renpy.scene()
         $ renpy.show('Eric shower '+ __r1)
         $ renpy.show('FG shower 00'+mgg.dress)
+        play music spying
         menu:
             Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..."
             "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}":
@@ -880,6 +890,7 @@ label eric_ann_shower:
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}":
                 jump .alt_peepeng
             "{i}уйти{/i}":
+                stop music
                 jump Waiting
     label .alt_peepeng:
         $ spent_time += 10
@@ -897,6 +908,7 @@ label eric_ann_shower:
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Eric shower-alt '+str(__r2))
         show FG shower-water
+        play sound undetect
         if __r2 == '01':   # минет 1
             Max_10 "[undetect!t]Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..." nointeract
         elif __r2 == '02':   # минет 2
@@ -910,6 +922,7 @@ label eric_ann_shower:
         $ rez = renpy.display_menu([(_("{i}смотреть до конца{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
         if rez == 'exit':
             $ current_room = house[6]
+            stop music
             jump Waiting
 
         $ spent_time += 10
@@ -924,6 +937,7 @@ label eric_ann_shower:
             Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
         $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
         $ current_room = house[6]
+        stop music
         jump Waiting
 
     label .closer_peepeng:
@@ -942,6 +956,7 @@ label eric_ann_shower:
         scene BG shower-closer
         $ renpy.show('Eric shower-closer '+__r2)
         show FG shower-closer
+        play sound undetect
         if __r1 == '01':
             Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
         elif __r1 == '02':
@@ -951,6 +966,7 @@ label eric_ann_shower:
         $ rez = renpy.display_menu([(_("{i}смотреть до конца{/i}"), 'sneak'), (_("{i}уйти{/i}"), 'exit')])
         if rez == 'exit':
             $ current_room = house[6]
+            stop music
             jump Waiting
 
         $ spent_time += 10
@@ -963,6 +979,7 @@ label eric_ann_shower:
             Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
         $ rez = renpy.display_menu([(_("{i}уйти{/i}"), 'exit')])
         $ current_room = house[6]
+        stop music
         jump Waiting
 
     label .not_luck:
@@ -973,6 +990,8 @@ label eric_ann_shower:
             show Eric shower-closer seen02
         show FG shower-closer
         $ Skill('hide', 0.01)
+        stop music
+        play sound noticed
         Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
         $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
         $ current_room = house[6]
@@ -1011,6 +1030,7 @@ label sexed_lisa:
     else:
         if GetRelMax('eric')[0]>0:
             # дружба или нейтралитет с Эриком
+            play music eric
             menu:
                 Max_07 "{i}( Эрик сказал, что всё устроит так, чтобы меня не заметили, когда я буду подглядывать. Сейчас посмотрим... ){/i}"
                 "{i}заглянуть в окно{/i}":
@@ -1291,6 +1311,7 @@ label sexed_lisa:
         jump .end
 
     label .end:
+        stop music
         $ renpy.end_replay()
         $ current_room = house[0]
         $ spent_time = 30

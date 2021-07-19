@@ -10,10 +10,12 @@ label OliviaTalkStart:
     if len(dial) > 0:
         $ dial.append((_("Хотя, нет... У меня вообще-то дела есть..."), "exit"))
     else:
+        stop music
         jump Waiting
 
     $ renpy.block_rollback()
     if olivia.plan_name == 'sun':
+        play music olivia
         Max_01 "Вы не против, если я тоже позагораю?"
         Olivia_01 "Конечно, Макс... Мы не против! Такая классная погода стоит..." nointeract
     else:
@@ -92,6 +94,7 @@ label olivia_talk1:
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ AttitudeChange('olivia', 1)   # Неплохие
     $ spent_time += 30
+    stop music
     jump Waiting
 
 
@@ -135,6 +138,7 @@ label olivia_talk2:
     $ olivia.dcv.feature.stage = 2
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30
+    stop music
     jump Waiting
 
 
@@ -166,6 +170,7 @@ label olivia_talk3:
     $ olivia.dcv.feature.stage = 4
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30
+    stop music
     jump Waiting
 
 
@@ -235,6 +240,7 @@ label olivia_talk4:
     $ olivia.dcv.feature.stage = 5
     $ olivia.dcv.feature.set_lost(1)    # нельзя начать следующий разговор в тот же день
     $ spent_time += 30
+    stop music
     jump Waiting
 
 
@@ -283,6 +289,7 @@ label olivia_about_film_punish:
         $ lisa.dcv.special.lost += 1        # перенесем "наказание" на следующую ночь
         $ spent_time = 20
         $ current_room = house[0]
+        stop music
         jump Waiting
 
     label .nice_view:
@@ -292,4 +299,5 @@ label olivia_about_film_punish:
         $ lisa.dcv.special.disable()        # отменяем наказание
         $ spent_time = 20
         $ current_room = house[0]
+        stop music
         jump Waiting

@@ -706,7 +706,7 @@ translate english punishment_alice_9e2ea44b:
 translate english punishment_alice_be504ff7:
 
     # Alice_15 "Ай! Ма-ам! Больно же! Мам, я больше не буду!!!"
-    Alice_15 "Ah! MO-om! It hurts! Mom, I won't do it again!!!"
+    Alice_15 "Ah! Mo-om! It hurts! Mom, I won't do it again!!!"
 
 # game/dialogues/punishment.rpy:605
 translate english punishment_alice_02510b3b:
@@ -961,4 +961,3 @@ translate english punishment_lisa_dd201a37:
 
     # Max_07 "{i}( На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти... ){/i}"
     Max_07 "{i}( You can't get far with just a \"thank you\"... We have to come up with something good for ourselves, too. I think I can get Lisa to watch a horror movie without her top on. It's definitely better than getting spanked by Mom in front of everyone! And I better talk to her while my kindness is still fresh in her mind... ){/i}"
-

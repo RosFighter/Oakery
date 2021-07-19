@@ -7578,7 +7578,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:1110
     old "Как хочешь. Но мама тебя накажет!"
-    new "As you wish. But Mom with punish you!"
+    new "As you wish. But Mom will punish you!"
 
     # game/dialogues/lisatalk.rpy:1151
     old "Да, Лиза, ты права..."
@@ -8712,7 +8712,7 @@ translate english Lisa_HomeWork_new_shoulders_052f029d:
 translate english Lisa_HomeWork_new_shoulders_84c585c6:
 
     # Max_05 "[lisa_good_mass!t]{i} (Похоже, Лиза уже так возбудилась, что с ней можно делать всё, что только захочется! У неё такая упругая и нежная грудь... Вот бы добраться и до неё губами! ){/i}"
-    Max_05 "[lisa_good_mass!t]{i} (Lisa seems to be so turned on by now that you can do anything you want with her! Her breasts are so soft... I wish I could reach them with my lips! ){/i}"
+    Max_05 "[lisa_good_mass!t]{i} (Lisa seems to be so turned on by now that I can do anything I want with her! Her breasts are so soft... I wish I could reach them with my lips! ){/i}"
 
 # game/dialogues/lisatalk.rpy:1565
 translate english Lisa_HomeWork_new_shoulders_52b18094:
