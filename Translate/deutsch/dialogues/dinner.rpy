@@ -382,7 +382,7 @@ translate deutsch dinner_2_help_b7725454:
 translate deutsch dinner_2_next_c6a3dc98:
 
     # Ann_01 "Ох, детишки. Не понимаю я ничего в этих ваших блогах и не уверена, что на это надо тратить своё время, но разберётесь. Я хотела спросить, ни к кому в комнату никакие насекомые не заползали?"
-    Ann_01 "Ach, Kinder. Ich verstehe nichts von euren Blogs, und ich bin mir nicht sicher, ob ihr eure Zeit damit verschwenden solltet, aber ich hoffe, ihr werdet es verstehen. Ich wollte euch etwas fragen: Sind in eure Zimmer keine Insekten eingedrungen?"
+    Ann_01 "Ach Mensch Leute. Ich verstehe nichts von euren Blogs, und ich bin mir nicht sicher, ob ihr eure Zeit damit verschwenden solltet, aber ich hoffe, ihr werdet es verstehen. Ich wollte euch etwas fragen, ob ihr Insekten in euren Zimmern gefunden habt?"
 
 # game/dialogues/dinner.rpy:264
 translate deutsch dinner_2_next_e59e27d3:
