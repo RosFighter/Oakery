@@ -1442,6 +1442,7 @@ label jerk_photohant1:
             "{i}уйти{/i}":
                 $ poss['discrediting'].open(1)
                 $ flags.eric_photo1 = 1
+                $ items['ericphoto1'].have = True
     else:
         # (не успел)
         #все уже по своим местам и спят
@@ -1476,6 +1477,8 @@ label jerk_photohant2:
             "{i}уйти{/i}":
                 $ flags.eric_photo2 = 1
                 $ poss['discrediting'].open(3)
+                $ items['ericphoto1'].have = False
+                $ items['ericphoto2'].have = True
     else:
         # (не успел)
         #все уже по своим местам и спят

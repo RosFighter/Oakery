@@ -734,6 +734,7 @@ label after_load:
         $ poss_update()
 
         call update_06_5_99 from _call_update_06_5_99   # фиксы после релиза
+        call update_06_6_99
 
         $ _version = config.version
 
@@ -1300,12 +1301,6 @@ label update_06_5_99:
             if lisa.flags.m_breast:
                 poss['sg'].open(11)
 
-            # добавим в инвентарь фото-компромат на Эрика
-            if flags.eric_photo2:
-                items['ericphoto2'].have = True
-            elif flags.eric_photo1:
-                items['ericphoto1'].have = True
-
             # вставим новые этапы "Любимая тётя"
             if 'kira' in chars:
                 poss['aunt'].stages.insert(2, (1 if kira.flags.porno or lisa.dcv.seduce.stage else 0))
@@ -1443,5 +1438,16 @@ label update_06_5_99:
     if _version < '0.06.5.18':
         if lisa.flags.topless and lisa.dcv.other.enabled and not poss['SoC'].used(16):
             $ lisa.dcv.other.enabled = False
+
+    return
+
+label update_06_6_99:
+
+    if _version < '0.06.6.01':
+        # добавим в инвентарь фото-компромат на Эрика
+        if flags.eric_photo2:
+            $ items['ericphoto2'].have = True
+        elif flags.eric_photo1:
+            $ items['ericphoto1'].have = True
 
     return

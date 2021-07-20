@@ -178,7 +178,7 @@ translate deutsch dinner_first_yeah_555ab37a:
 translate deutsch dinner_first_yeah_1cfd61ef:
 
     # Lisa_00 "Ой, да обычная подружка..."
-    Lisa_00 "Oh, er ist nur ein Freund..."
+    Lisa_00 "Ach, die übliche Freundin..."
 
 # game/dialogues/dinner.rpy:142
 translate deutsch dinner_first_yeah_fbe7c8e0:
@@ -382,7 +382,7 @@ translate deutsch dinner_2_help_b7725454:
 translate deutsch dinner_2_next_c6a3dc98:
 
     # Ann_01 "Ох, детишки. Не понимаю я ничего в этих ваших блогах и не уверена, что на это надо тратить своё время, но разберётесь. Я хотела спросить, ни к кому в комнату никакие насекомые не заползали?"
-    Ann_01 "Ach, Kinder. Ich verstehe nichts von euren Blogs, und ich bin mir nicht sicher, ob ihr eure Zeit damit verschwenden solltet, aber ich hoffe, ihr werdet es verstehen. Ich wollte euch etwas fragen: Sind in eure Zimmer keine Insekten eingedrungen?"
+    Ann_01 "Ach Mensch Leute. Ich verstehe nichts von euren Blogs, und ich bin mir nicht sicher, ob ihr eure Zeit damit verschwenden solltet, aber ich hoffe, ihr werdet es verstehen. Ich wollte euch etwas fragen, ob ihr Insekten in euren Zimmern gefunden habt?"
 
 # game/dialogues/dinner.rpy:264
 translate deutsch dinner_2_next_e59e27d3:
@@ -1932,7 +1932,7 @@ translate deutsch strings:
 
     # game/dialogues/dinner.rpy:124
     old "Что за подружка? {i}(подмигнуть){/i}"
-    new "Was für eine Art Freundin ist sie? {i}(zwinker){/i}"
+    new "Welche Art Freundin? {i}(zwinker){/i}"
 
     # game/dialogues/dinner.rpy:128
     old "Ой, извини. Я думал, у нас нет секретов..."

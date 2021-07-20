@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.6.00"
+define config.version = "0.06.6.01"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -229,10 +229,10 @@ init python:
     build.classify('game/extra/**.rpyc', 'extra')
     # build.classify('game/tl/**/extra/**.rpyc', 'extra')
 
-    # build.archive("img_fix", "all")
-    # build.classify('game/images/interface/poss/partygirl/ep08.webp', 'img_fix')
-    # build.classify('game/images/interface/poss/naughty/ep07.webp', 'img_fix')
-    # build.classify('game/images/Olivia/cams/night-tv/*.webp', 'img_fix')
+    build.archive("img_fix", "all")
+    build.classify('game/images/interface/poss/partygirl/ep08.webp', 'img_fix')
+    build.classify('game/images/interface/poss/naughty/ep07.webp', 'img_fix')
+    build.classify('game/images/Olivia/cams/night-tv/*.webp', 'img_fix')
 
     build.archive("images", "all")
 
