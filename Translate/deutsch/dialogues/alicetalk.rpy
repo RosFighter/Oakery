@@ -754,7 +754,7 @@ translate deutsch alice_talk_tv_massage_next_116b5205:
 translate deutsch alice_talk_tv_massage_next_89249cd5:
 
     # Alice_03 "Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
-    Alice_03 "Uh, das ist super... Max, du bist heute großartig! Ich habe nicht erwartet, dass so viel Sinnlichkeit und Stärke gleichzeitig... Nun, danke."
+    Alice_03 "Wow, das fühlt sich gut an... Max, das hast du heute toll gemacht! So viel Sinnlichkeit und gleichzeitig Stärke hatte ich nicht erwartet... Nun, danke, geh..."
 
 # game/dialogues/alicetalk.rpy:600
 translate deutsch alice_talk_tv_massage_next_e263d7d3:
@@ -9758,7 +9758,7 @@ translate deutsch alice_talk_tv_massage_next_db75bb50:
 translate deutsch alice_talk_tv_massage_next_e52ff194:
 
     # Alice_03 "[alice_good_mass!t]Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
-    Alice_03 "[alice_good_mass!t]Uh, das ist super... Max, du bist heute großartig! Ich habe nicht erwartet, dass so viel Sinnlichkeit und Stärke gleichzeitig... Nun, danke."
+    Alice_03 "[alice_good_mass!t]Wow, das fühlt sich gut an... Max, das hast du heute toll gemacht! So viel Sinnlichkeit und gleichzeitig Stärke hatte ich nicht erwartet... Nun, danke, geh..."
 
 # TODO: Translation updated at 2021-07-09 15:31
 

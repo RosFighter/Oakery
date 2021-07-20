@@ -688,7 +688,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Пауков лучше искать в дворе после завтрака, пока там нет Алисы..."
-    new "Ich solltest nach dem Frühstück im Garten nach Spinnen suchen, wenn Alice nicht da ist..."
+    new "Ich sollte nach dem Frühstück im Garten nach Spinnen suchen, wenn Alice nicht da ist..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно подсмотреть, как Алиса принимает душ. Если обстановка будет располагать, то можно будет подбросить ей паука..."

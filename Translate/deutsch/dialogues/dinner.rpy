@@ -526,13 +526,13 @@ translate deutsch dinner_3_f3630b15:
 translate deutsch dinner_3_099d7225:
 
     # Lisa_12 "Макс! Завязывай. Давайте сменим тему. Значит, завтра шоппинг... Мам! Я вспомнила. Мне нужен купальник. В этом просто невозможно загорать, а других у меня нет!"
-    Lisa_12 "Hör auf, Max! Lass uns das Thema wechseln. Morgen gehen wir einkaufen... fällt mir gerade ein! Ich brauche einen Bikini. Ich habe nur den einen, und darin kann ich mich nicht richtig sonnen!"
+    Lisa_12 "Max! Hör auf damit. Lass uns das Thema wechseln. Also, morgen einkaufen... Mom! Ich brauche einen Bikini. Ich habe nur den Badeanzug, und darin kann ich mich nicht richtig sonnen!"
 
 # game/dialogues/dinner.rpy:316
 translate deutsch dinner_3_c1829598:
 
     # Lisa_02 "Спасибо, Макс. Давайте сменим тему. Значит, завтра шоппинг... Мам! Я вспомнила. Мне нужен купальник. В этом просто невозможно загорать, а других у меня нет!"
-    Lisa_02 "Danke, Max. Lass uns das Thema wechseln. Morgen gehen wir einkaufen... fällt mir gerade ein! Ich brauche einen Bikini. Ich habe nur den einen, und darin kann ich mich nicht richtig sonnen!"
+    Lisa_02 "Danke, Max. Lass uns das Thema wechseln. Also, morgen einkaufen... Mom! Ich brauche einen Bikini. Ich habe nur den Badeanzug, und darin kann ich mich nicht richtig sonnen!"
 
 # game/dialogues/dinner.rpy:317
 translate deutsch dinner_3_9f799f74:

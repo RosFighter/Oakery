@@ -4,13 +4,13 @@
 translate deutsch typical_breakfast_32286f7d:
 
     # Ann_00 "Всех ещё раз с добрым утром, всем приятного аппетита! Давайте сегодня покушаем в тишине, если вы не возражаете..." nointeract
-    Ann_00 "Nochmals guten Morgen und guten Appetit an alle! Lass uns heute in Ruhe essen, wenn es euch nichts ausmacht..." nointeract
+    Ann_00 "Guten Morgen und guten Appetit an alle! Lasst uns heute in aller Stille essen, wenn es euch nichts ausmacht..." nointeract
 
 # game/dialogues/breakfast.rpy:15
 translate deutsch typical_breakfast_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Danke für dein Verständnis, Max. Lass uns anfangen..."
+    Ann_05 "Danke für dein Verständnis, Max! Also, los geht's..."
 
 # game/dialogues/breakfast.rpy:16
 translate deutsch typical_breakfast_4a7da202:
@@ -970,7 +970,7 @@ translate deutsch breakfast_5_def57d9e:
 translate deutsch breakfast_5_97033bef:
 
     # Alice_04 "Да всё мы понимаем, мам. Не переживай. Просто, ты так долго была одна и тут такой... Эрик... Мы очень рады, что у тебя налаживается твоя личная жизнь. И мы не будем тебе мешать, да, Макс?" nointeract
-    Alice_04 "Wir verstehen das, Mom, mach dir keine Sorgen. Du warst so lange allein, und jetzt hast du endlich jemand Unglaubliches kennen gelernt. Wir freuen uns sehr für dich und werden dir nicht im Weg stehen. Nicht wahr, Max?" nointeract
+    Alice_04 "Wir haben es verstanden, Mom. Mach dir keine Gedanken darüber. Es ist nur, du warst so lange allein, und dann ist da... Eric... Wir sind wirklich froh, dass Du Dein Liebesleben in den Griff bekommst. Und wir werden dir nicht in die Quere kommen, oder, Max?" nointeract
 
 # game/dialogues/breakfast.rpy:624
 translate deutsch breakfast_5_fb058679:
@@ -1006,7 +1006,7 @@ translate deutsch breakfast_5_2e9a76d0:
 translate deutsch breakfast_5_d75ec0ba:
 
     # Ann_12 "Ещё рано об этом говорить, но... может быть... будем с ним встречаться через день-два, то у него, то у нас... Может быть..." nointeract
-    Ann_12 "Es ist zu früh, um das zu sagen, aber... Vielleicht... wir treffen uns alle ein oder zwei Tage bei ihm, dann bei ihm, dann bei uns... Vielleicht..." nointeract
+    Ann_12 "Es ist zu früh, um das zu sagen, aber... Vielleicht... ich werde vielleicht alle ein oder zwei Tage bei ihm sein, und dann ist er bei uns... Vielleicht..." nointeract
 
 # game/dialogues/breakfast.rpy:637
 translate deutsch breakfast_5_6aaaaa8a:
