@@ -178,7 +178,7 @@ translate deutsch dinner_first_yeah_555ab37a:
 translate deutsch dinner_first_yeah_1cfd61ef:
 
     # Lisa_00 "Ой, да обычная подружка..."
-    Lisa_00 "Oh, er ist nur ein Freund..."
+    Lisa_00 "Ach, die übliche Freundin..."
 
 # game/dialogues/dinner.rpy:142
 translate deutsch dinner_first_yeah_fbe7c8e0:
@@ -1932,7 +1932,7 @@ translate deutsch strings:
 
     # game/dialogues/dinner.rpy:124
     old "Что за подружка? {i}(подмигнуть){/i}"
-    new "Was für eine Art Freundin ist sie? {i}(zwinker){/i}"
+    new "Welche Art Freundin? {i}(zwinker){/i}"
 
     # game/dialogues/dinner.rpy:128
     old "Ой, извини. Я думал, у нас нет секретов..."
