@@ -34,7 +34,7 @@ translate deutsch typical_breakfast_63f629c8:
 translate deutsch breakfast_first_4fdf0844:
 
     # Ann_07 "Ну, дети, как вам живётся на новом месте? Как спалось в первую ночь?"
-    Ann_07 "Also, Kinder, was haltet ihr von unserem neuen Zuhause? Wie war eure erste Nacht?"
+    Ann_07 "Also, was haltet ihr von unserem neuen Zuhause? Wie war eure erste Nacht?"
 
 # game/dialogues/breakfast.rpy:26
 translate deutsch breakfast_first_6ac209bf:
