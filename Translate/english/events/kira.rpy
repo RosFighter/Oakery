@@ -634,7 +634,7 @@ translate english kira_bath_cuni_bj_6f308174:
 translate english kira_bath_cuni_bj_94418467:
 
     # Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
-    Kira_01 "Let's leave quietly, just in case anyone us cumming."
+    Kira_01 "Let's leave quietly, just in case anyone heard us cum."
 
 # game/events/kira.rpy:375
 translate english kira_bath_cuni_bj_23817ff1:
