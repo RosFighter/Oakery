@@ -4,13 +4,13 @@
 translate deutsch typical_dinner_ba465243:
 
     # Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract
-    Ann_00 "Genießt das Essen alle. Ich bin heute müde, lasst uns leise essen..." nointeract
+    Ann_00 "Guten Appetit, allerseits. Ich bin heute irgendwie müde. Also, lasst uns in Ruhe zu Abend essen..." nointeract
 
 # game/dialogues/dinner.rpy:53
 translate deutsch typical_dinner_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Danke für dein Verständnis, Max. Lass uns anfangen..."
+    Ann_05 "Danke für das Verständnis, Max! Also, los geht's..."
 
 # game/dialogues/dinner.rpy:54
 translate deutsch typical_dinner_4a7da202:

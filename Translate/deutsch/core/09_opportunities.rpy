@@ -532,7 +532,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно приглядывать за тем, чему они там Лизу обучают. Вдруг получится узнать что-то важное..."
-    new "Ich muss ein Auge darauf haben, was sie Lisa beibringen. Vielleicht gibt es etwas Wichtiges, das ich dabei lernen könnte..."
+    new "Ich sollte ein Auge darauf haben, was sie Lisa beibringen. Vielleicht gibt es etwas Wichtiges, das ich dabei lernen könnte..."
 
     # game/core/09_opportunities.rpy:4
     old "Очевидно, Лиза по уши влюблена в какого-то своего одноклассника по имени Алекс. Как она рассказала, у него есть подруга Оливия, самая красивая девочка в школе. Лиза ждёт от меня помощи в виде совета - как ей быть дальше.\n\nИ это хороший вопрос! С одной стороны хочется ей помочь дельным советом, а с другой, не хочется отдавать младшую сестрёнку в руки какому-то там Алексу. Нужно не торопиться и какое-то время хорошенько подумать над всем этим."

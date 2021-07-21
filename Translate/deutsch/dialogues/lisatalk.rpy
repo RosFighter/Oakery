@@ -6172,19 +6172,19 @@ translate deutsch liza_secret_alisa_ff8b5804:
 translate deutsch lisa_gift_sweets_18a348cf:
 
     # Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
-    Lisa_02 "Wirklich? Komm schon, zeig mir, dass du dieses Mal wirklich alles hällst!" nointeract
+    Lisa_02 "Wirklich? Komm schon, zeig mir, dass du dieses Mal wirklich alles hälst!" nointeract
 
 # game/dialogues/lisatalk.rpy:3056
 translate deutsch lisa_gift_sweets_ac3f0acd:
 
     # Lisa_03 "Ого! Ты купил мои любимые шоколадки! Как мило... Спасибо тебе большое!"
-    Lisa_03 "Wow! Meine Lieblingsschokoladen? Ich danke dir so sehr!"
+    Lisa_03 "Wow! Du hast meine Lieblingsschokolade gekauft! Wie süß... Herzlichen Dank!"
 
 # game/dialogues/lisatalk.rpy:3057
 translate deutsch lisa_gift_sweets_ae854677:
 
     # Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
-    Max_04 "Du brauchst mir nicht zu danken... Ich liebe es einfach, meine kleine Schwester lächeln zu sehen!"
+    Max_04 "Es ist nichts... Ich liebe es, meiner kleinen Schwester eine Freude zu machen!"
 
 # game/dialogues/lisatalk.rpy:3069
 translate deutsch lisa_gift_sweets_4b7ec1a8:
