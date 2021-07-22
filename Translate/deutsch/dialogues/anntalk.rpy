@@ -334,19 +334,19 @@ translate deutsch Ann_MorningWood_bb881ec2:
 translate deutsch Ann_MorningWood_ab75b971:
 
     # Max_04 "Я рад, что ты понимаешь"
-    Max_04 "Ich bin froh, dass du das verstehst."
+    Max_04 "Ich bin froh, dass du das verstehst"
 
 # game/dialogues/anntalk.rpy:296
 translate deutsch Ann_MorningWood_75ea92a8:
 
     # Ann_14 "Но Макс. Лиза ещё маленькая и постарайся, чтобы она не видела твой... тебя. В общем, ты меня понял, да?" nointeract
-    Ann_14 "Aber trotzdem, Max, versuche, dich Lisa nicht so zu zeigen." nointeract
+    Ann_14 "Aber Max. Lisa ist noch jung, und du solltest versuchen, sie nicht sehen zu lassen, dass du... Du. Wie auch immer, du weißt, was ich meine, oder?" nointeract
 
 # game/dialogues/anntalk.rpy:299
 translate deutsch Ann_MorningWood_4d3a269f:
 
     # Ann_04 "Что такого? Да то, что девочка не должна видеть здоровенный член своего брата, когда просыпается утром!" nointeract
-    Ann_04 "Weil sie nicht jeden Morgen den riesigen Schwanz ihres Bruders sehen soll!" nointeract
+    Ann_04 "Was ist das Problem? Es ist so, dass ein Mädchen nicht als erstes den großen Schniedel ihres Bruders sehen sollte, wenn sie morgens aufwacht!" nointeract
 
 # game/dialogues/anntalk.rpy:302
 translate deutsch Ann_MorningWood_31985b42:
