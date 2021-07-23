@@ -233,6 +233,7 @@ init python:
     build.classify('game/images/interface/poss/partygirl/ep08.webp', 'img_fix')
     build.classify('game/images/interface/poss/naughty/ep07.webp', 'img_fix')
     build.classify('game/images/Olivia/cams/night-tv/*.webp', 'img_fix')
+    build.classify('game/images/Eric/jerk_off/fg-*.webp', 'img_fix')
 
     build.archive("images", "all")
 

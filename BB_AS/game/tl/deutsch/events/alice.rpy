@@ -448,7 +448,7 @@ translate deutsch alice_shower_spider_09c9d753:
 translate deutsch alice_shower_spider_7e56af7c:
 
     # Max_01 "Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного..."
-    Max_01 "Sieht so aus, als hätte ich das Badezimmer ausräumen können, bevor Alice es bemerkt hat... Das ist gut so. Sie ist kurz davor, eine Spinne zu entdecken! Ich muss nur noch ein bisschen länger warten..."
+    Max_01 "Es sieht so aus, als hätte ich es geschafft, am Badezimmer vorbei um die Hausecke zu kommen, bevor Alice loskreischt... Das ist gut, also hat Alice die Spinne gleich entdeckt! Jetzt noch..."
 
 # game/events/alice.rpy:372
 translate deutsch alice_shower_spider_3f8fc33f:
@@ -460,7 +460,7 @@ translate deutsch alice_shower_spider_3f8fc33f:
 translate deutsch alice_shower_spider_08cd39c6:
 
     # Max_02 "...подождать."
-    Max_02 "...jetzt warten wir einen Moment"
+    Max_02 "...einen kleinen Moment abwarten."
 
 # game/events/alice.rpy:378
 translate deutsch alice_shower_spider_ae2ec1f2:

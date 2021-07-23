@@ -4,13 +4,13 @@
 translate deutsch typical_dinner_ba465243:
 
     # Ann_00 "Всем приятного аппетита. Сегодня что-то устала. Так что, давайте поужинаем в тишине..." nointeract
-    Ann_00 "Genießt das Essen alle. Ich bin heute müde, lasst uns leise essen..." nointeract
+    Ann_00 "Guten Appetit, allerseits. Ich bin heute irgendwie müde. Also, lasst uns in Ruhe zu Abend essen..." nointeract
 
 # game/dialogues/dinner.rpy:53
 translate deutsch typical_dinner_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Danke für dein Verständnis, Max. Lass uns anfangen..."
+    Ann_05 "Danke für das Verständnis, Max! Also, los geht's..."
 
 # game/dialogues/dinner.rpy:54
 translate deutsch typical_dinner_4a7da202:
@@ -526,13 +526,13 @@ translate deutsch dinner_3_f3630b15:
 translate deutsch dinner_3_099d7225:
 
     # Lisa_12 "Макс! Завязывай. Давайте сменим тему. Значит, завтра шоппинг... Мам! Я вспомнила. Мне нужен купальник. В этом просто невозможно загорать, а других у меня нет!"
-    Lisa_12 "Hör auf, Max! Lass uns das Thema wechseln. Morgen gehen wir einkaufen... fällt mir gerade ein! Ich brauche einen Bikini. Ich habe nur den einen, und darin kann ich mich nicht richtig sonnen!"
+    Lisa_12 "Max! Hör auf damit. Lass uns das Thema wechseln. Also, morgen einkaufen... Mom! Ich brauche einen Bikini. Ich habe nur den Badeanzug, und darin kann ich mich nicht richtig sonnen!"
 
 # game/dialogues/dinner.rpy:316
 translate deutsch dinner_3_c1829598:
 
     # Lisa_02 "Спасибо, Макс. Давайте сменим тему. Значит, завтра шоппинг... Мам! Я вспомнила. Мне нужен купальник. В этом просто невозможно загорать, а других у меня нет!"
-    Lisa_02 "Danke, Max. Lass uns das Thema wechseln. Morgen gehen wir einkaufen... fällt mir gerade ein! Ich brauche einen Bikini. Ich habe nur den einen, und darin kann ich mich nicht richtig sonnen!"
+    Lisa_02 "Danke, Max. Lass uns das Thema wechseln. Also, morgen einkaufen... Mom! Ich brauche einen Bikini. Ich habe nur den Badeanzug, und darin kann ich mich nicht richtig sonnen!"
 
 # game/dialogues/dinner.rpy:317
 translate deutsch dinner_3_9f799f74:

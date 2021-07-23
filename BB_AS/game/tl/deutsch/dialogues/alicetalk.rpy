@@ -754,7 +754,7 @@ translate deutsch alice_talk_tv_massage_next_116b5205:
 translate deutsch alice_talk_tv_massage_next_89249cd5:
 
     # Alice_03 "Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
-    Alice_03 "Uh, das ist super... Max, du bist heute großartig! Ich habe nicht erwartet, dass so viel Sinnlichkeit und Stärke gleichzeitig... Nun, danke."
+    Alice_03 "Wow, das fühlt sich gut an... Max, das hast du heute toll gemacht! So viel Sinnlichkeit und gleichzeitig Stärke hatte ich nicht erwartet... Nun, danke, geh..."
 
 # game/dialogues/alicetalk.rpy:600
 translate deutsch alice_talk_tv_massage_next_e263d7d3:
@@ -3394,7 +3394,7 @@ translate deutsch massage_sunscreen_spider_6b77c813:
 translate deutsch massage_sunscreen_spider_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 "Was hast du denn erwartet?! Du bist auf mich draufgesprungen und hast mir deine nackten Brüste ins Gesicht gedrückt... Übrigens, ich kann nicht umhin zu bemerken, wie weich sie sind!"
+    Max_07 "Was hast du denn erwartet?! Du bist auf mich draufgesprungen und hast mir deine nackten Brüste ins Gesicht gedrückt... Übrigens, ich kahm nicht umhin zu bemerken, wie weich sie sind!"
 
 # game/dialogues/alicetalk.rpy:2219
 translate deutsch massage_sunscreen_spider_e0dd7b8f:
@@ -8652,7 +8652,7 @@ translate deutsch massage_sunscreen_sit_and_wait_9da1a297_1:
 translate deutsch massage_sunscreen_sit_and_wait_975489a5:
 
     # Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
-    Alice_05 "Oh, äh... Es tut mir leid, wenn ich mich dir gegenüber ein wenig wie ein Mißtstück verhalten habe, aber... Das wollte ich nicht."
+    Alice_05 "Oh, äh... Es tut mir leid, wenn ich mich dir gegenüber ein wenig wie ein Miststück verhalten habe, aber... Das wollte ich nicht."
 
 # game/dialogues/alicetalk.rpy:2267
 translate deutsch massage_sunscreen_sit_and_wait_6bb8e8fa:
@@ -8718,7 +8718,7 @@ translate deutsch massage_sunscreen_sit_and_wait_6b77c813:
 translate deutsch massage_sunscreen_sit_and_wait_5c995a4f:
 
     # Max_07 "А чего ты ожидала?! Сама же на меня запрыгнула и сиськами своими голыми мне в лицо упёрлась... Кстати, не могу не отметить, они у тебя красивые и упругие!"
-    Max_07 "Was hast du denn erwartet?! Du bist förmlich auf mich draufgesprungen und hast mir deine nackten Brüste ins Gesicht gedrückt... Übrigens, ich kann nicht umhin zu bemerken, wie schön und fest deine Brüste sind."
+    Max_07 "Was hast du denn erwartet?! Du bist förmlich auf mich draufgesprungen und hast mir deine nackten Brüste ins Gesicht gedrückt... Übrigens, ich kahm nicht umhin zu bemerken, wie schön und fest deine Brüste sind!"
 
 # game/dialogues/alicetalk.rpy:2281
 translate deutsch massage_sunscreen_sit_and_wait_e0dd7b8f:
@@ -8778,7 +8778,7 @@ translate deutsch massage_sunscreen_hide_behind_2ead0b6d:
 translate deutsch massage_sunscreen_hide_behind_955fd37c:
 
     # Max_02 "Да ладно, схватилась и схватилась. Уж это точно не страшно!"
-    Max_02 "Komm schon, du hast ihns angefasst. Das ist definitiv nicht unheimlich!"
+    Max_02 "Komm schon, du hast ihn angefasst. Das ist definitiv nicht unheimlich!"
 
 # game/dialogues/alicetalk.rpy:2305
 translate deutsch massage_sunscreen_hide_behind_b7b059d0:
@@ -8808,7 +8808,7 @@ translate deutsch massage_sunscreen_hide_behind_7976c130:
 translate deutsch massage_sunscreen_hide_behind_975489a5:
 
     # Alice_05 "Ой... Ты извини, что я тебя тут, посовращала немного... Я же не специально."
-    Alice_05 "Oh, äh... Es tut mir leid, wenn ich mich dir gegenüber ein wenig wie ein Mißtstück verhalten habe, aber... Das wollte ich nicht."
+    Alice_05 "Oh, äh... Es tut mir leid, wenn ich mich dir gegenüber ein wenig wie ein Miststück verhalten habe, aber... Das wollte ich nicht."
 
 # game/dialogues/alicetalk.rpy:2313
 translate deutsch massage_sunscreen_hide_behind_6bb8e8fa:
@@ -9758,7 +9758,7 @@ translate deutsch alice_talk_tv_massage_next_db75bb50:
 translate deutsch alice_talk_tv_massage_next_e52ff194:
 
     # Alice_03 "[alice_good_mass!t]Ух, как хорошо... Макс, а ты молодец сегодня! Не ожидала такой чувственности и в то же время силы... Ну всё спасибо, иди..."
-    Alice_03 "[alice_good_mass!t]Uh, das ist super... Max, du bist heute großartig! Ich habe nicht erwartet, dass so viel Sinnlichkeit und Stärke gleichzeitig... Nun, danke."
+    Alice_03 "[alice_good_mass!t]Wow, das fühlt sich gut an... Max, das hast du heute toll gemacht! So viel Sinnlichkeit und gleichzeitig Stärke hatte ich nicht erwartet... Nun, danke, geh..."
 
 # TODO: Translation updated at 2021-07-09 15:31
 

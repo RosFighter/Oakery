@@ -1457,7 +1457,7 @@ label jerk_photohant1:
             "{i}уйти{/i}":
                 $ flags.eric_jerk = False
 
-    $ spent_time += 20
+    $ spent_time += 30
     jump Waiting
 
 
@@ -1491,5 +1491,5 @@ label jerk_photohant2:
             "{i}уйти{/i}":
                 $ flags.eric_jerk = False
 
-    $ spent_time += 20
+    $ spent_time += 30
     jump Waiting

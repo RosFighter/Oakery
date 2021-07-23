@@ -724,7 +724,7 @@ translate deutsch punishment_alice_67c8b436_1:
 translate deutsch punishment_alice_cb34e360_1:
 
     # Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
-    Max_08 "Mom, du musst Alice nicht bestrafen. Das sind nicht ihre Zigaretten, eine Freundin hat sie heute besucht, das muss sie vergessen haben."
+    Max_08 "Mom, es gibt keinen Grund, Alice zu bestrafen. Es sind nicht ihre Zigaretten, sie hatte heute eine Freundin zu Besuch, sie muss es vergessen haben."
 
 # game/dialogues/punishment.rpy:626
 translate deutsch punishment_alice_e5b82d3f_1:

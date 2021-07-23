@@ -951,6 +951,8 @@ init python:
 
 
     def GetRelMax(char): # возвращает кортеж с номером и описанием диапазона отношений персонажа с Максом
+        if char not in chars:
+            return ( 0, _("Прохладные"))
         rel = chars[char].relmax
         return {
                    rel <= -300 : (-3, _("Война")),
