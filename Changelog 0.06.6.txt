@@ -61,4 +61,9 @@ Fix 0.06.5.01-0.06.6.00
  - now, if you are friends with Eric, you can get a postponement for Alice and Lisa in one week, and not in two (теперь при дружбе с Эриком можно получить отсрочку по Алисе и Лизе в одну неделю, а не в две);
  - added the ability to set an alarm after a night of entertainment with Kira, if Max is not too tired (добавлена возможность установить будильник после ночных развлечений с Кирой, если Макс не слишком устал);
  - updated the game engine (обновлён игровой движок);
- - fixed all the found errors of the game (исправлены все найденнные ошибки игры).
+ - fixed all the found errors of the game (исправлены все найденные ошибки игры).
+
+0.06.6.01
+ - Исправлена ошибка при которой компромат на Эрика не отображался в инвентаре
+ - Исправлена ошибка, возникавшая при наказании Макса до знакомства с Эриком
+ - Добавлены изображения Эрика на балконе АВлисы при взгляде со двора
