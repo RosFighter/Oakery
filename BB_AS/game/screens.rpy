@@ -409,10 +409,22 @@ screen main_menu():
             $ __short_ver = config.version[0:4]
             text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
+    # imagebutton:
+    #     idle "interface patreon logo"
+    #     action OpenURL("https://www.patreon.com/aleksey90artimages")
+    #     align (0.98, 0.63)
+    #     at main_logo
+
     imagebutton:
-        idle "interface patreon logo"
+        idle "interface patreon logo 2"
         action OpenURL("https://www.patreon.com/aleksey90artimages")
-        align (0.98, 0.63)
+        align (0.98, 0.9)
+        at main_logo
+
+    imagebutton:
+        idle "interface patreon music"
+        action OpenURL("https://www.patreon.com/maffinmusicman")
+        align (0.01, 0.63)
         at main_logo
 
     ## Эта пустая рамка затеняет главное меню.

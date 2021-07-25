@@ -490,13 +490,14 @@ label AfterWaiting:
 
     $ music_starter()
 
-    if all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', not flags.eric_noticed, not prenoted]):
-        if not eric.stat.mast:
-            jump first_jerk_yard
-        else:
-            jump jerk_yard
-    elif all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', flags.eric_noticed, eric.stat.mast]):
-        $ renpy.show('Eric jerk off fg-'+current_room.cur_bg[-1:])
+    if 'eric' in chars:
+        if all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', not flags.eric_noticed, not prenoted]):
+            if not eric.stat.mast:
+                jump first_jerk_yard
+            else:
+                jump jerk_yard
+        elif all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', flags.eric_noticed, eric.stat.mast]):
+            $ renpy.show('Eric jerk off fg-'+current_room.cur_bg[-1:])
 
     window hide
     $ renpy.block_rollback()
