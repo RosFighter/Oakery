@@ -2294,7 +2294,7 @@ translate english alice_body_photoset1_26ab28a4:
 translate english alice_body_photoset1_976b418f:
 
     # Alice_07 "Классное боди ты купил! Спасибо тебе, Макс! Ты же скоро обработаешь снимки?"
-    Alice_07 "It's a great outfit! Thanks, Max! You'll ge the pictures processed soon, right?"
+    Alice_07 "It's a great outfit! Thanks, Max! You'll get the pictures processed soon, right?"
 
 # game/events/alice.rpy:1708
 translate english alice_body_photoset1_5e4db7be:
@@ -4188,4 +4188,3 @@ translate english strings:
     # game/events/alice.rpy:2610
     old "Нет, я даже не близко..."
     new "No, I'm not even close..."
-

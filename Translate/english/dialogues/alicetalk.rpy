@@ -8423,7 +8423,7 @@ translate english smoke_fear_1dfe2435:
 translate english smoke_fear_e7fe59d8:
 
     # Alice_05 "Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
-    Alice_05 "I don't know why you'd feel good abou the idea, pervert, but I'd rather settle for this... Before you ask for something else."
+    Alice_05 "I don't know why you'd feel good about the idea, pervert, but I'd rather settle for this... Before you ask for something else."
 
 # game/dialogues/alicetalk.rpy:1043
 translate english smoke_fear_201d6989:
