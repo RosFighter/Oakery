@@ -1288,37 +1288,37 @@ translate deutsch smoke_nofear_042d05e4:
 translate deutsch smoke_nofear_fdcf7e97:
 
     # Alice_13 "Сначала скажи, что у тебя на уме..." nointeract
-    Alice_13 "Erst sagst du mir, was du willst." nointeract
+    Alice_13 "Zuerst sagst du mir, was du vorhast..." nointeract
 
 # game/dialogues/alicetalk.rpy:960
 translate deutsch smoke_nofear_68ee7cea:
 
     # Alice_16 "А больше ты ничего не хочешь? Свали отсюда, пока не наваляла!!"
-    Alice_16 "Gibt es nichts mehr, was du willst? Dann hau ab!!"
+    Alice_16 "Ist das alles, was du willst? Verschwinde, bevor du dich verletzt!!"
 
 # game/dialogues/alicetalk.rpy:966
 translate deutsch smoke_nofear_no_a95196c6:
 
     # Alice_03 "Ну вот и пугать не надо. Не узнает. А если ты проболтаешься, я тебя во сне придушу, понял? Теперь иди, не мешай мне..." nointeract
-    Alice_03 "Dann habe ich keinen Grund, Angst zu haben. Und wenn du es jemandem erzählst, erwürge ich dich im Schlaf. Und jetzt lass mich in Ruhe." nointeract
+    Alice_03 "Du brauchst keine Angst zu haben. Das merkt keiner. Und wenn du redest, erwürge ich dich im Schlaf, verstanden? Und jetzt verschwinde, geh mir aus dem Weg..." nointeract
 
 # game/dialogues/alicetalk.rpy:975
 translate deutsch smoke_fear_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 "Max, bist du hierher gekommen, um zu glotzen?"
+    Alice_00 "Max, bist du hier, um zu glotzen?"
 
 # game/dialogues/alicetalk.rpy:976
 translate deutsch smoke_fear_876b91d4:
 
     # Max_09 "Не боишься, что мама накажет если узнает?"
-    Max_09 "Hast du keine Angst, bestraft zu werden, wenn Mom es herausfindet?"
+    Max_09 "Hast du keine Angst, dass Mom dich bestraft, wenn sie es herausfindet?"
 
 # game/dialogues/alicetalk.rpy:977
 translate deutsch smoke_fear_a6cf7c4a:
 
     # Alice_12 "Ты же ей не скажешь? Она так больно меня отшлёпала в прошлый раз, что до сих пор сидеть неприятно..."
-    Alice_12 "Du wirst es doch nicht verraten, oder? Das letzte Mal hat sie mich so hart geschlagen, dass ich immer noch nicht richtig sitzen kann."
+    Alice_12 "Du wirst es ihr doch nicht sagen, oder? Sie hat mich das letzte Mal so hart geschlagen, dass es immer noch schwierig ist, sich hinzusetzen..."
 
 # game/dialogues/alicetalk.rpy:978
 translate deutsch smoke_fear_af2c2b24:

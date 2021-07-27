@@ -2108,35 +2108,35 @@ translate deutsch strings:
 
     # game/dialogues/dinner.rpy:460
     old "Ну, кто рад, а кто..."
-    new "Nun, einige von uns..."
+    new "Nun, wer ist zufrieden..."
 
     # game/dialogues/dinner.rpy:464
     old "Да всё нормально..."
-    new "Nein, du bist gut."
+    new "Ist schon gut..."
 
     # game/dialogues/dinner.rpy:464
     old "Вы слишком торопитесь."
-    new "Du bist zu schnell."
+    new "Du hast es zu eilig."
 
     # game/dialogues/dinner.rpy:464
     old "Просто не нравишься!"
-    new "Ja, ich mag dich nicht."
+    new "Ich kann dich nicht ausstehen!"
 
     # game/dialogues/dinner.rpy:476
     old "Тебе показалось..."
-    new "Nein, es ist alles in Ordnung."
+    new "Du hast dir vorgestellt..."
 
     # game/dialogues/dinner.rpy:537
     old "Может быть, я такой..."
-    new "Vielleicht bin ich einer von ihnen."
+    new "Vielleicht bin ich so..."
 
     # game/dialogues/dinner.rpy:543
     old "Сдалось оно мне..."
-    new "Ich brauche es nicht."
+    new "Ich brauche das nicht..."
 
     # game/dialogues/dinner.rpy:543
     old "Я подумаю..."
-    new "Ich werde darüber nachdenken."
+    new "Ich denke drüber nach..."
 
     # game/dialogues/dinner.rpy:569
     old "Ты беременна?"
@@ -2148,7 +2148,7 @@ translate deutsch strings:
 
     # game/dialogues/dinner.rpy:569
     old "Не знаю даже..."
-    new "Ich weiß nicht mal"
+    new "Ich weiß nicht..."
 
     # game/dialogues/dinner.rpy:580
     old "Я так и знал!"
@@ -2172,7 +2172,7 @@ translate deutsch strings:
 
     # game/dialogues/dinner.rpy:598
     old "В каком виде?!"
-    new "Nackt?"
+    new "In wie fern?!"
 
     # game/dialogues/dinner.rpy:598
     old "Её арестовывали?"
