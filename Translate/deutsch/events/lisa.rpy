@@ -370,7 +370,7 @@ translate deutsch get_laptop_6bc8db4b:
 translate deutsch lisa_dressed_repetitor_6d6b727b:
 
     # Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..." nointeract
-    Max_09 "Lisa scheint irgendwo hinzugehen, aber die Tür ist geschlossen..." nointeract
+    Max_09 "Lisa scheint irgendwo hinzugehen, denn die Tür ist geschlossen..." nointeract
 
 # game/events/lisa.rpy:561
 translate deutsch lisa_bath_96660cea:

@@ -1060,31 +1060,31 @@ translate deutsch dinner_6_898c60c2:
 translate deutsch dinner_6_3819b060:
 
     # Eric_05 "О да. Ну, посмотрим. Я ещё всё выясню про этот лагерь, когда у них ближайший набор, а в твоих силах пока есть время, доказать поступками, что ты уже мужик и не нуждаешься в этом лагере. Всё в твоих руках..."
-    Eric_05 "Ja, klar. Wir werden sehen. Ich werde noch alles über dieses Lager herausfinden, wann sie die nächste Einschreibung haben, und solange hast du noch Zei, durch dein Verhalten zu beweisen, dass du schon ein Mann bist und dieses Lager nicht brauchst. Es liegt an also ganz an Dir..."
+    Eric_05 "Ja, klar. Wir werden sehen. Ich werde noch alles über dieses Lager herausfinden, wann sie die nächste Einschreibung haben, und solange hast du noch Zeit, durch dein Verhalten zu beweisen, dass du schon ein Mann bist und dieses Lager nicht brauchst. Es liegt an also ganz an Dir..."
 
 # game/dialogues/dinner.rpy:502
 translate deutsch dinner_6_58a8fd66:
 
     # Max_09 "И кто будет решать - в лагерь меня или пока не надо?"
-    Max_09 "Und wer wird entscheiden - soll ich ins Lager gehen oder nicht?"
+    Max_09 "Und wer wird entscheiden - ob ich ins Lager gehe oder noch nicht?"
 
 # game/dialogues/dinner.rpy:503
 translate deutsch dinner_6_a53df9b6:
 
     # Ann_01 "Решать буду я. Не могу сказать, что у меня есть серьёзные претензии к твоему поведению в данный момент, но иногда ты перегибаешь палку. Так что, я дам тебе время себя проявить. Если не будешь испытывать моего терпения, то повременим с этим лагерем. Ну а если я пойму, что пора, то уж извини..."
-    Ann_01 "Ich werde entscheiden. Ich kann nicht sagen, dass ich ernsthafte Probleme mit deinem Verhalten habe, aber manchmal gehst du zu weit. Also gebe ich dir Zeit, dich zu beweisen. Wenn du meine Geduld nicht strapazierst, werden wir mit diesem Lager etwas warten. Und wenn ich entscheide, dass es Zeit ist, dann bist du selbst schuld."
+    Ann_01 "Ich werde entscheiden. Ich kann nicht sagen, dass ich ernsthafte Probleme mit deinem Verhalten habe, aber manchmal gehst du zu weit. Also gebe ich dir die Gelegenheit, dich zu beweisen. Wenn du meine Geduld nicht strapazierst, werden wir mit diesem Lager etwas warten. Und wenn ich entscheide, dass es Zeit ist, dann bist du selbst schuld."
 
 # game/dialogues/dinner.rpy:504
 translate deutsch dinner_6_1259f657:
 
     # Max_14 "Я понял. Буду вести тебя хорошо..."
-    Max_14 "Ich verstehe. Ich werde mich benehmen."
+    Max_14 "Verstanden. Ich werde mich benehmen..."
 
 # game/dialogues/dinner.rpy:505
 translate deutsch dinner_6_be309633:
 
     # Ann_04 "Вот и молодец, Макс. А тебе, Эрик, спасибо за этот совет. Теперь хотя бы будет какой-то способ воздействовать. А то порка не даёт того эффекта, на который я привыкла рассчитывать..." nointeract
-    Ann_04 "Gut. Und danke für den Rat, Eric. Jetzt wird es zumindest eine Möglichkeit geben, auf Max Einfluss zu nehmen. Ich glaube nicht, dass Verhauen gut genug funktioniert." nointeract
+    Ann_04 "Sehr gut, Max. Und danke, Eric, für diesen Rat. Wenigstens gibt es jetzt eine Möglichkeit, etwas zu bewirken. Ich glaube nicht, dass Bestrafung die Wirkung haben, die ich erwartet habe..." nointeract
 
 # game/dialogues/dinner.rpy:509
 translate deutsch dinner_6_d8863d05:

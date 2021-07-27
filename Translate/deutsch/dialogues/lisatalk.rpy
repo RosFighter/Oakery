@@ -1570,7 +1570,7 @@ translate deutsch Lisa_MorningWood_626efed0:
 translate deutsch Lisa_MorningWoodCont_7c8db7ba:
 
     # Lisa_00 "О ком?!"
-    Lisa_00 "Eine Abmachung mit wem?!"
+    Lisa_00 "Was?!"
 
 # game/dialogues/lisatalk.rpy:895
 translate deutsch Lisa_MorningWoodCont_98701acf:
@@ -1594,7 +1594,7 @@ translate deutsch Lisa_MorningWoodCont_93c24ad5:
 translate deutsch Lisa_MorningWoodCont_746dce08:
 
     # Lisa_01 "Как ни называй, а у вас, мальчиков, там очень странная штука."
-    Lisa_01 "Wie auch immer du es nennst, ihr Jungs habt da ein sehr seltsames Ding da drin."
+    Lisa_01 "Wie auch immer du es nennst, ihr Jungs habt da ein sehr seltsames Ding da unten."
 
 # game/dialogues/lisatalk.rpy:899
 translate deutsch Lisa_MorningWoodCont_e06656d9:
@@ -1612,19 +1612,19 @@ translate deutsch Lisa_MorningWoodCont_5b6f1cdb:
 translate deutsch Lisa_MorningWoodCont_2931ed71:
 
     # Max_05 "А что, по-моему очень честно, если бы ты спала только в трусиках, без верха!"
-    Max_05 "Danke, dass du ehrlich bist. Aber das wüssten wir nicht, wenn du nicht nur in deinem Höschen schlafen würdest!"
+    Max_05 "Ich denke, es wäre sehr fair, wenn du nur in deinem Höschen schlafen würdest, ohne Oberteil!"
 
 # game/dialogues/lisatalk.rpy:902
 translate deutsch Lisa_MorningWoodCont_c83ed0ea:
 
     # Lisa_11 "В смысле, честно?!"
-    Lisa_11 "Ernsthaft?!"
+    Lisa_11 "Also mal ehrlich?!"
 
 # game/dialogues/lisatalk.rpy:903
 translate deutsch Lisa_MorningWoodCont_955ee47f:
 
     # Max_07 "В том смысле, что я сплю в трусах и ты теперь иногда видишь моего \"Большого Макса\", а вот я вижу тебя слишком одетой... Это не честно!"
-    Max_07 "Ich meine, ich schlafe in meiner Unterwäsche und lasse dich manchmal \"Big Max\" sehen, aber du bist immer angezogen... Das ist nicht fair!"
+    Max_07 "Ich meine, ich schlafe in meiner Unterwäsche und lasse dich manchmal \"Big Max\" sehen, aber du bist immer komplett angezogen... Das ist nicht fair!"
 
 # game/dialogues/lisatalk.rpy:904
 translate deutsch Lisa_MorningWoodCont_81db866f:
@@ -9907,13 +9907,13 @@ translate deutsch conversation_after_dinner_37e07b02:
 translate deutsch conversation_after_dinner_81d11bdc:
 
     # Lisa_09 "Ты о чём, Макс? Над какими условиями?"
-    Lisa_09 "Wovon redest du, Max? Zu welchen Bedingungen?"
+    Lisa_09 "Wovon redest du, Max? Welche Bedingungen?"
 
 # game/dialogues/lisatalk.rpy:2178
 translate deutsch conversation_after_dinner_34ff4f41:
 
     # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Может, сегодня я тебя спас от мамы, но за следующую двойку тебе точно влетит..."
-    Max_01 "Worüber? Darüber, wie ich dir bei deinem Unterricht helfen werde. Du hilfst mir, ich helfe dir. Ich habe dich heute vielleicht vor Mom gerettet, aber wenn du das nächste Mal eine Sechs bekommst..."
+    Max_01 "Wovon? Darüber, wie ich dir bei deinem Unterricht helfen werde. Du hilfst mir, ich helfe dir. Ich habe dich heute vielleicht vor Mom gerettet, aber wenn du das nächste Mal eine Sechs bekommst..."
 
 # game/dialogues/lisatalk.rpy:2179
 translate deutsch conversation_after_dinner_9b2bb001:
