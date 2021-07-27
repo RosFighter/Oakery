@@ -40,11 +40,11 @@ translate deutsch strings:
 
     # game/core/screens.rpy:440
     old "ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"
-    new "AUSZAHLEN"
+    new "KREDIT KOMPLETT ABLÖSEN"
 
     # game/core/screens.rpy:444
     old "ПОГАСИТЬ ЧАСТЬ ДОЛГА"
-    new "RATE BEZAHLEN"
+    new "EINE RATE BEZAHLEN"
 
     # game/core/screens.rpy:452
     old "ВЗЯТЬ КРЕДИТ"

@@ -3538,7 +3538,7 @@ translate deutsch gift_swimsuit_swimsuit_show_b784dabf:
 translate deutsch gift_swimsuit_swimsuit_show_8541ecba:
 
     # Max_04 "Да, пустяки..."
-    Max_04 "Vergiss es..."
+    Max_04 "Ja, das ist gar nichts..."
 
 # game/dialogues/lisatalk.rpy:1940
 translate deutsch gift_swimsuit_swimsuit_show_e163e982:
@@ -3556,7 +3556,7 @@ translate deutsch gift_swimsuit_swimsuit_show_d6eb93d6:
 translate deutsch gift_swimsuit_swimsuit_show_62e397b6:
 
     # Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
-    Lisa_05 "Es ist nicht so, dass ich es wollte... Ehrlich gesagt, ich dachte nicht, dass du es kaufen kannst, aber... Aber ich denke, du verdienst es..."
+    Lisa_05 "Nicht, dass ich das vorhatte... Ehrlich gesagt, dachte ich nicht, dass du es kaufen könntest, aber... Aber ich denke, du verdienst es..."
 
 # game/dialogues/lisatalk.rpy:1945
 translate deutsch gift_swimsuit_swimsuit_show_2b6e74c9:
@@ -8660,11 +8660,11 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:1890
     old "Я тебе его подарю, если разрешишь посмотреть, как ты его примеряешь..."
-    new "Ich gebe es dir, wenn du mir zeigst, wie du es versuchst..."
+    new "Ich gebe ihn dir, wenn du mich zusehen lässt, wie du ihn anprobierst..."
 
     # game/dialogues/lisatalk.rpy:1890
     old "Я передумал. Ничего не хочу!"
-    new "Ich habe es mir anders überlegt, du kannst es haben!"
+    new "Ich habe es mir anders überlegt, du kannst ihn haben!"
 
     # game/dialogues/lisatalk.rpy:1916
     old "Угу, уже... {i}(Демонстративно отвернуться){/i}"

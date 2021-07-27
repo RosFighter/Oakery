@@ -948,7 +948,7 @@ translate deutsch strings:
 
     # game/core/03variables.rpy:402
     old "Да, я сделал это! Мне удалось не только накопить на платье, но и подарить его до того, как нечто подобное сделал Эрик. А он собирался. С его то деньгами это не сложно... Теперь Алиса ко мне относится намного лучше. Ещё бы! Теперь она может ходить по ночным клубам..."
-    new "Ja, ich hab's geschafft! Es ist mir nicht nur gelungen, nicht nur das Kleid für sie zu kaufen, sondern ich habe es ihr auch geschenkt, bevor Eric es konte. Und das hatte er auch vor. Es ist nicht schwer mit seinem Geld... Alice behandelt mich jetzt viel besser. Absolut! Jetzt kann sie in Nachtclubs gehen..."
+    new "Ja, ich hab's geschafft! Es ist mir nicht nur gelungen, das Kleid für Alice zu kaufen, sondern ich habe es ihr auch geschenkt, bevor Eric es konnte. Und das hatte er auch vor. Es ist nicht schwer mit seinem Geld... Alice behandelt mich jetzt viel besser. Absolut! Jetzt kann sie in Nachtclubs gehen..."
 
     # game/core/03variables.rpy:402
     old "Лиза рассказала мне по секрету кое-что интересное. Оказывается, Алиса не умеет пить. А точнее, капля алкоголя её меняет!"
