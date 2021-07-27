@@ -76,7 +76,7 @@ translate deutsch first_new_punishment_8bbfe5b5:
 translate deutsch first_new_punishment_de217f08:
 
     # Ann_16 "Я знаю, Макс, но уговаривать и пытаться вас убедить другим способом у меня нет ни сил ни времени. Чем более унизительно наказание, тем у вас будет меньше желания нарушить правила."
-    Ann_16 "Ich weiß, Max, aber ich habe weder Zeit nochLust, um zu versuchen, dich auf andere Weise zu überzeugen. Je demütigender die Strafe, desto unwahrscheinlicher ist es, dass du die Regeln brechen wirst."
+    Ann_16 "Ich weiß, Max, aber ich habe weder Zeit noch Lust, um zu versuchen, dich auf andere Weise zu überzeugen. Je demütigender die Strafe, desto unwahrscheinlicher ist es, dass du die Regeln brechen wirst."
 
 # game/dialogues/punishment.rpy:119
 translate deutsch first_new_punishment_916b3b51:
