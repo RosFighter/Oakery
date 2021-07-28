@@ -8676,7 +8676,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:2083
     old "Возможно... А что?"
-    new "Ist es möglich... Wieso?"
+    new "Vielleicht... Warum?"
 
     # game/dialogues/lisatalk.rpy:2106
     old "Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!"
@@ -8732,11 +8732,11 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:3151
     old "Э... Что? Какие условия?"
-    new "Äh... Was? Was sind die Bedingungen?"
+    new "Äh... Was? Welche Bedingungen?"
 
     # game/dialogues/lisatalk.rpy:3151
     old "Спектакль? Это не спектакль! Но я тебя слушаю..."
-    new "Okay, Ich höre..."
+    new "Ein Scherz? Das ist doch kein Witz! Okay, ich höre dir zu..."
 
     # game/dialogues/lisatalk.rpy:3161
     old "Понял!"
