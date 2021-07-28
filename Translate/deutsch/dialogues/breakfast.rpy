@@ -4,31 +4,31 @@
 translate deutsch typical_breakfast_32286f7d:
 
     # Ann_00 "Всех ещё раз с добрым утром, всем приятного аппетита! Давайте сегодня покушаем в тишине, если вы не возражаете..." nointeract
-    Ann_00 "Guten Morgen und guten Appetit an alle! Lasst uns heute in aller Stille essen, wenn es euch nichts ausmacht..." nointeract
+    Ann_00 "Guten Morgen und guten Appetit an alle! Lasst uns heute in aller Ruhe essen, wenn es euch nichts ausmacht..." nointeract
 
 # game/dialogues/breakfast.rpy:15
 translate deutsch typical_breakfast_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Danke für dein Verständnis, Max! Also, los geht's..."
+    Ann_05 "Danke für dein Verständnis, Max! Also, los..."
 
 # game/dialogues/breakfast.rpy:16
 translate deutsch typical_breakfast_4a7da202:
 
     # Max_00 "Приятного аппетита!"
-    Max_00 "Also gut...!"
+    Max_00 "Guten Appetit!"
 
 # game/dialogues/breakfast.rpy:18
 translate deutsch typical_breakfast_19bf574f:
 
     # Ann_05 "Нет, просто ещё не проснулась, нужно собраться с мыслями..."
-    Ann_05 "Nein, ich bin nur noch nicht richtig aufgewacht..."
+    Ann_05 "Nein, ich bin nur noch nicht richtg wach, ich muss meine Gedanken erst sammeln..."
 
 # game/dialogues/breakfast.rpy:19
 translate deutsch typical_breakfast_63f629c8:
 
     # Max_00 "Понятно. Приятного аппетита!"
-    Max_00 "Oh, Okay."
+    Max_00 "Ich verstehe. Guten Appetit!"
 
 # game/dialogues/breakfast.rpy:25
 translate deutsch breakfast_first_4fdf0844:

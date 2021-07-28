@@ -1720,19 +1720,19 @@ translate deutsch smoke_nopants_b38d8562:
 translate deutsch smoke_nopants_d219c498:
 
     # Alice_01 "Ты совсем идиот, Макс? Я в купальнике. Это не трусы. А трусы я и так не ношу под джинсами. Можешь себе фантазировать теперь сколько хочешь... Всё, уйди с глаз моих долой!"
-    Alice_01 "Bist du behindert, Max? Ich trage einen Bikini, das zählt nicht als Höschen. Ich trage kein Höschen unter meiner Jeans, und du kannst darüber phantasieren, so viel du willst. Und jetzt hau ab!"
+    Alice_01 "Bist du völlig bescheuert, Max? Ich trage einen Bikini. Das ist keine Unterwäsche. Und ich trage sowieso keinen Slip unter meiner Jeans. Du kannst jetzt fantasieren, so viel du willst... Geh mir aus den Augen!"
 
 # game/dialogues/alicetalk.rpy:1266
 translate deutsch smoke_nopants_2485171a:
 
     # Max_01 "Ухожу, ухожу..."
-    Max_01 "Gut, ich gehe."
+    Max_01 "Gut, ich gehe..."
 
 # game/dialogues/alicetalk.rpy:1268
 translate deutsch smoke_nopants_6e4f674f:
 
     # Alice_02 "Ты наверное думаешь, что у тебя забавные шутки, да? Так вот нет. Абсолютно несмешные, дебильные шутки, как и ты сам. Всё, свалил отсюда. Я занята..."
-    Alice_02 "Denkst Du, dass Du einen guten Sinn für Humor hast, Max? Denn den hast du nicht. Überhaupt keinen. Deine Witze sind völlig humorlos und langweilig, genau wie du. Und jetzt hau ab, ich bin beschäftigt."
+    Alice_02 "Du denkst wahrscheinlich, dass deine Witze lustig sind, nicht wahr? Nun, das sind sie nicht. Völlig unlustige, schwachsinnige Witze, genau wie du. In Ordnung, verschwinde von hier. Ich bin beschäftigt..."
 
 # game/dialogues/alicetalk.rpy:1269
 translate deutsch smoke_nopants_696b9e70:
@@ -1750,7 +1750,7 @@ translate deutsch smoke_nopants_48649dbe:
 translate deutsch smoke_not_nopants_8c8fad13:
 
     # Alice_02 "Ты чего-то хотел, Макс?"
-    Alice_02 "Was willst du?"
+    Alice_02 "Wolltest du was, Max?"
 
 # game/dialogues/alicetalk.rpy:1287
 translate deutsch smoke_not_nopants_462a034b:

@@ -274,13 +274,13 @@ translate deutsch MorningWoodCont_1f6eac9a:
 translate deutsch MorningWoodCont_4a409afb:
 
     # Max_02 "Ну да, это рукой, видимо?"
-    Max_02 "Ja, das ist eine Hand, schätze ich?"
+    Max_02 "Ja klar, mit deiner Hand, oder?"
 
 # game/dialogues/lisatalk.rpy:196
 translate deutsch MorningWoodCont_f5cbe6f0:
 
     # Lisa_11 "Э-э-э... Ой, всё! Я... вообще в ванную шла..."
-    Lisa_11 "Äh, äh... Oh, das ist es!... Ich war gerade auf dem Weg zum Badezimmer..."
+    Lisa_11 "Ä-ä-äh, äh... Oh, das!... Ich wollte gerade ins Bad..."
 
 # game/dialogues/lisatalk.rpy:197
 translate deutsch MorningWoodCont_e65dd32b:
@@ -292,13 +292,13 @@ translate deutsch MorningWoodCont_e65dd32b:
 translate deutsch MorningWoodCont_60559c82:
 
     # Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"
-    Lisa_01 "Hey, Max.... ist jedes Jungen-Ding so groß?"
+    Lisa_01 "Hey, Max, ist das Ding bei allen Jungs so groß?"
 
 # game/dialogues/lisatalk.rpy:204
 translate deutsch MorningWoodCont_8a88a159:
 
     # Max_19 "Я сплю, Лиза... Какая штука?"
-    Max_19 "Ich schlafe, Lisa... Welche Dinge?"
+    Max_19 "Ich schlafe, Lisa... Welches Ding?"
 
 # game/dialogues/lisatalk.rpy:205
 translate deutsch MorningWoodCont_23c96df8:
