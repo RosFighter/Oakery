@@ -214,7 +214,7 @@ translate deutsch kira_talk2_9ec6735a:
 translate deutsch kira_talk2_93b5a4b6:
 
     # Kira_04 "Я рада. Обычно я не слежу за языком и он меня в такие места заводит... Но с детьми надо быть... Хотя, ты уже совсем не ребёнок."
-    Kira_04 "Ich bin froh darüber. Normalerweise achte ich nicht auf meinen Mund, und das bringt mich in manche klebrige Situation... Aber bei jungen Leuten muss man vorsichtig sein... Auch wenn du offensichtlich kein Kind mehr bist."
+    Kira_04 "Das freut mich. Normalerweise achte ich nicht auf meine Zunge und das bringt mich in Schwierigkeiten Aber für Kinder muss man sich... Obwohl du längst kein Kind mehr bist."
 
 # game/dialogues/kiratalk.rpy:125
 translate deutsch kira_talk2_e915aeea:
@@ -298,13 +298,13 @@ translate deutsch kira_talk2_36826af7:
 translate deutsch kira_talk3_744eb86a:
 
     # Kira_05 "Сегодня уже привык к моему купальнику? Или опять только одно на уме?" nointeract
-    Kira_05 "Hast du dich daran gewöhnt, mich heute nur in meiner Bikinihose zu sehen? Oder hast du wieder etwas Schmutziges im Kopf?" nointeract
+    Kira_05 "Gewöhnst du dich schon an meinen Bikini? Oder hast du wieder nur eine Sache im Kopf?" nointeract
 
 # game/dialogues/kiratalk.rpy:172
 translate deutsch kira_talk3_e1f63d41:
 
     # Kira_07 "Понимаю, Макс. Ну, тут надо либо смириться, либо избегать. Как я вижу, избегать меня ты не планируешь и я очень рада этому. Но давай сменим тему, вдруг поможет..."
-    Kira_07 "Ich verstehe, Max. Nun, man muss es entweder akzeptieren oder vermeiden. So wie ich das sehe, hast du nicht vor, mich zu meiden, und darüber bin ich sehr froh. Aber lass uns das Thema wechseln, mal sehen, ob es hilft..."
+    Kira_07 "Ich verstehe, Max. Nun, entweder akzeptieren oder vermeiden. Wie ich sehe, hast du nicht vor, mir aus dem Weg zu gehen, und darüber bin ich sehr froh. Aber wechseln wir das Thema, mal sehen, ob es hilft..."
 
 # game/dialogues/kiratalk.rpy:173
 translate deutsch kira_talk3_6a4c87c3:
@@ -388,7 +388,7 @@ translate deutsch kira_talk3_a4e29c8c:
 translate deutsch kira_talk3_b133b86a:
 
     # Kira_03 "Думаю, мне нужно услышать другую сторону. Пообщаться или с Эриком или с твоей мамой, чтобы выяснить всё ли так. Может быть, ты немного... приукрасил..."
-    Kira_03 "Ich denke, ich muss die ganze Geschichte hören. Rede entweder mit Eric oder mit deiner Mutter, um herauszufinden, ob das der Fall ist. Vielleicht übertreibst Du ein wenig... ein bisschen..."
+    Kira_03 "Ich denke, ich muss die ganze Geschichte hören. Ich rede entweder mit Eric oder mit deiner Mutter, um herauszufinden, ob es so ist. Vielleicht übertreibst Du vielleicht... ein bisschen..."
 
 # game/dialogues/kiratalk.rpy:200
 translate deutsch kira_talk3_754341a2:
@@ -1818,15 +1818,15 @@ translate deutsch strings:
 
     # game/dialogues/kiratalk.rpy:99
     old "Ты права, нет девушки..."
-    new "Du hast Recht, es gibt kein Mädchen..."
+    new "Stimmt, da ist kein Mädchen..."
 
     # game/dialogues/kiratalk.rpy:118
     old "Что ты, всё хорошо!"
-    new "Nein, es ist alles in Ordnung!"
+    new "Nein, es ist in Ordnung!"
 
     # game/dialogues/kiratalk.rpy:118
     old "Меня всё устраивает..."
-    new "Ich bin mit allem zufrieden..."
+    new "Ich habe kein Problem damit..."
 
     # game/dialogues/kiratalk.rpy:130
     old "Верно..."
@@ -1874,15 +1874,15 @@ translate deutsch strings:
 
     # game/dialogues/kiratalk.rpy:192
     old "Чем ты пользовалась?"
-    new "Was hast du benutzt?"
+    new "Was hast du gedacht?"
 
     # game/dialogues/kiratalk.rpy:192
     old "Я говорю правду!"
-    new "Ich sage die Wahrheit!"
+    new "Das ist die Wahrheit!"
 
     # game/dialogues/kiratalk.rpy:216
     old "А можно что-то ещё?"
-    new "Gibt es noch etwas anderes?"
+    new "Kannst du sonst noch etwas tun?"
 
     # game/dialogues/kiratalk.rpy:216
     old "Для начала только целоваться!"
