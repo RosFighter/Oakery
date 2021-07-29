@@ -588,7 +588,7 @@ label alice_shower:
             jump .not_luck
 
     label .not_luck:
-        if alice.flags.touched:
+        if alice.flags.touched and len(alice.sorry.give)>3:
             jump .pinded
         if RandomChance(_ch1.ch) or len(alice.sorry.give)>3:
             $ renpy.dynamic('r1')
@@ -609,7 +609,7 @@ label alice_shower:
         $ renpy.dynamic('r1')
         $ alice.daily.shower = 3
         $ Skill('hide', 0.05)
-        if alice.flags.touched:
+        if alice.flags.touched and len(alice.sorry.give)>3:
             $ r1 = renpy.random.choice(['07', '08'])
         else:
             $ punreason[1] = 1
@@ -619,7 +619,7 @@ label alice_shower:
         show FG shower-closer
         stop music
         play sound noticed
-        if alice.flags.touched:
+        if alice.flags.touched and len(alice.sorry.give)>3:
             Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
             Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
             Alice_13 "Я рада такое слышать, но с тебя конфеты. Сам знаешь какие... А то ни стыда, ни совести. Уходи давай!"

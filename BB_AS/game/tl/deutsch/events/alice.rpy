@@ -574,13 +574,13 @@ translate deutsch alice_shower_spider_79d6a848:
 translate deutsch alice_shower_spider_23328126:
 
     # Alice_03 "Ну всё, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
-    Alice_03 "Okay, ich bin weg... Vergiss nur nicht, die Spinne aus dem Bad zu werfen, okay?"
+    Alice_03 "Okay, ich bin weg... Vergiss nur nicht, die Spinne aus dem Bad zu werfen, okay?!"
 
 # game/events/alice.rpy:416
 translate deutsch alice_shower_spider_428606a5:
 
     # Max_01 "Да. Не забуду..."
-    Max_01 "Jaja. Ich werde es nicht vergessen..."
+    Max_01 "Jaja. Ich denke daran..."
 
 # game/events/alice.rpy:424
 translate deutsch alice_shower_spider_666dd0d3:
@@ -598,13 +598,13 @@ translate deutsch alice_shower_spider_35513e76:
 translate deutsch alice_shower_spider_1136dd42:
 
     # Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!" nointeract
-    Alice_17 "Was zum Teufel, Max?! Soll das ein schlechter Scherz sein? Oder bist du behindert? Gib's zu, das hast du mit Absicht gemacht!" nointeract
+    Alice_17 "Was zum Teufel, Max?! Das ist doch ein Witz! Oder bist du dumm? Hast du das mit Absicht gemacht?!" nointeract
 
 # game/events/alice.rpy:435
 translate deutsch alice_shower_spider_f8205929:
 
     # Alice_12 "[succes!t]Ну ты и криворукий, Макс! Даже такую простую вещь не можешь сделать, не накосячив... Всё, я пошла! И паука вышвырни из ванной, если конечно и он у тебя из рук не выскочит!"
-    Alice_12 "[succes!t] Du bist so gemein, Max! Du kannst nicht mal so eine einfache Sache erledigen... Okay, ich bin raus hier! Und wirf die Spinne aus dem Bad!"
+    Alice_12 "[succes!t]Du bist so ein Idiot, Max! Du kannst nicht mal so eine einfache Sache machen, ohne es zu vermasseln... Ich haue ab! Und schmeiß die Spinne aus dem Bad, wenn du sie zu fassen bekommst!"
 
 # game/events/alice.rpy:436
 translate deutsch alice_shower_spider_c67ec167:
@@ -622,7 +622,7 @@ translate deutsch alice_shower_spider_8ce7828a:
 translate deutsch alice_shower_spider_3c76bf47:
 
     # Alice_16 "[failed!t]Я тебе не верю! Наверняка ты это сделал специально, чтобы поглазеть на меня! Твоё счастье, что я не могу знать этого точно... А так бы врезала тебе между ног!"
-    Alice_16 "[failed!t] Das glaube ich dir nicht! Ich wette, du hast es absichtlich gemacht, um mich anzuschauen! Du hast Glück, dass ich das nicht sicher wissen kann... Ich würde dir zwischen die Beine treten!"
+    Alice_16 "[failed!t]Das glaube ich dir nicht! Ich wette, du hast es absichtlich gemacht, um mich anzuschauen! Du hast Glück, dass ich das nicht sicher wissen kann... Ich würde dir zwischen die Beine treten!"
 
 # game/events/alice.rpy:443
 translate deutsch alice_shower_spider_86ecd118:
@@ -640,25 +640,25 @@ translate deutsch alice_shower_spider_f635b9a8:
 translate deutsch alice_shower_alt_peepeng_c8b2c2b6:
 
     # Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
-    Max_01 "[undetect!t] Schön! Meine große Schwester sieht so sexy aus mit ihren Haaren unten... Uhh, ich wünschte, ich könnte sicherstellen, dass ihre Brüste gut gereinigt werden..."
+    Max_01 "[undetect!t]Schön! Meine große Schwester sieht so sexy aus mit ihren Haaren unten... Uhh, ich wünschte, ich könnte sicherstellen, dass ihre Brüste gut gereinigt werden..."
 
 # game/events/alice.rpy:464
 translate deutsch alice_shower_alt_peepeng_09abbe09:
 
     # Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-    Max_01 "[undetect!t] Oh, ja... Es ist schwer, der feuchten Alice zu widerstehen! Vor allem, wenn sie ihren Arsch so verführerisch bewegt..."
+    Max_01 "[undetect!t]Oh, ja... Es ist schwer, der feuchten Alice zu widerstehen! Vor allem, wenn sie ihren Arsch so verführerisch bewegt..."
 
 # game/events/alice.rpy:478
 translate deutsch alice_shower_closer_peepeng_c8b2c2b6:
 
     # Max_01 "[undetect!t]Супер! С распущенными волосами моя старшая сестрёнка становится очень сексуальной... Ухх, помылить бы эти сисечки, как следует..."
-    Max_01 "[undetect!t] Schön! Mit nassen Haaren ist sie noch sexier. Uhh... Ich hoffe sie wäscht diese Brüste gründlich...."
+    Max_01 "[undetect!t]Schön! Mit nassen Haaren ist sie noch sexier. Uhh... Ich hoffe sie wäscht diese Brüste gründlich...."
 
 # game/events/alice.rpy:480
 translate deutsch alice_shower_closer_peepeng_09abbe09:
 
     # Max_01 "[undetect!t]О, да... Перед мокренькой Алисой сложно устоять! Особенно, когда она так соблазнительно крутит своей попкой..."
-    Max_01 "[undetect!t] Oh ja... Es ist schwer, einer nassen Alice zu widerstehen, vor allem, wenn sie ihren Arsch so verlockend schwingt..."
+    Max_01 "[undetect!t]Oh ja... Es ist schwer, einer nassen Alice zu widerstehen, vor allem, wenn sie ihren Arsch so verlockend schwingt..."
 
 # game/events/alice.rpy:494
 translate deutsch alice_shower_not_luck_051a23bb:
@@ -670,7 +670,7 @@ translate deutsch alice_shower_not_luck_051a23bb:
 translate deutsch alice_shower_pinded_e19147dd:
 
     # Alice_12 "[spotted!t]Макс!!! Ты за мной подглядываешь?! Ты труп! Твоё счастье, что я сейчас голая... Но ничего, я маме всё расскажу, она тебя накажет!" nointeract
-    Alice_12 "[spotted!t] Max!!! Spionierst du?! Du bist so was von tot! Du hast Glück, dass ich jetzt nackt bin... Aber ich werde Mom alles erzählen, sie wird Dich bestrafen!" nointeract
+    Alice_12 "[spotted!t]Max!!! Spionierst du?! Du bist so was von tot! Du hast Glück, dass ich jetzt nackt bin... Aber ich werde Mom alles erzählen, sie wird Dich bestrafen!" nointeract
 
 # game/events/alice.rpy:515
 translate deutsch alice_shower_ladder_2b325faf:
@@ -1216,7 +1216,7 @@ translate deutsch spider_in_bed_help_35d72be5:
 translate deutsch spider_in_bed_fail_afe9b556:
 
     # Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
-    Alice_17 "[failed!t] Was?! Ich werde dich selbst erwürgen! Ich habe keine Angst vor dir! Töten Sie schnell! Entweder er oder du. Einer von euch wird jetztQ sterben!"
+    Alice_17 "[failed!t]Was?! Ich werde dich selbst erwürgen! Ich habe keine Angst vor dir! Töten Sie schnell! Entweder er oder du. Einer von euch wird jetztQ sterben!"
 
 # game/events/alice.rpy:1086
 translate deutsch spider_in_bed_fail_11231cfc:
@@ -1228,7 +1228,7 @@ translate deutsch spider_in_bed_fail_11231cfc:
 translate deutsch spider_in_bed_money_e7afa5bd:
 
     # Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
-    Alice_16 "[succes!t] Wie konntest du nur... Gut, hier sind 10$, töte sie einfach endlich!!!"
+    Alice_16 "[succes!t]Wie konntest du nur... Gut, hier sind 10$, töte sie einfach endlich!!!"
 
 # game/events/alice.rpy:1094
 translate deutsch spider_in_bed_money_5f8bef51:
@@ -1240,13 +1240,13 @@ translate deutsch spider_in_bed_money_5f8bef51:
 translate deutsch spider_in_bed_tits_556ab3f7:
 
     # Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
-    Alice_14 "[succes!t] Du kleiner Scheißer... Gut, schau. Jetzt geh und töte die Spinne schon!"
+    Alice_14 "[succes!t]Du kleiner Scheißer... Gut, schau. Jetzt geh und töte die Spinne schon!"
 
 # game/events/alice.rpy:1108
 translate deutsch spider_in_bed_tits_455bb217:
 
     # Alice_09 "[succes!t]Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
-    Alice_09 "[succes!t] Ah! Du bist so ein Schwein... Gut, schau, ich bin heute großzügig. Jetzt geh und töte sie endlich!"
+    Alice_09 "[succes!t]Ah! Du bist so ein Schwein... Gut, schau, ich bin heute großzügig. Jetzt geh und töte sie endlich!"
 
 # game/events/alice.rpy:1109
 translate deutsch spider_in_bed_tits_eccbb760:
@@ -1258,7 +1258,7 @@ translate deutsch spider_in_bed_tits_eccbb760:
 translate deutsch spider_in_bed_toples_199ed983:
 
     # Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
-    Alice_15 "[succes!t] Du kleiner Scheißer... Na schön... Bist du jetzt zufrieden, du Perversling? Jetzt geh und töte die Spinne endlich!"
+    Alice_15 "[succes!t]Du kleiner Scheißer... Na schön... Bist du jetzt zufrieden, du Perversling? Jetzt geh und töte die Spinne endlich!"
 
 # game/events/alice.rpy:1122
 translate deutsch spider_in_bed_toples_19d75d09:
@@ -1288,7 +1288,7 @@ translate deutsch spider_in_bed_spider_be1cbc22:
 translate deutsch spider_in_bed_spider_d47987f1:
 
     # Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
-    Alice_12 "[succes!t] In Ordnung, Max, du hast mich überzeugt. Stell nur sicher, dass sie nicht in der Nähe des Hauses ist..."
+    Alice_12 "[succes!t]In Ordnung, Max, du hast mich überzeugt. Stell nur sicher, dass sie nicht in der Nähe des Hauses ist..."
 
 # game/events/alice.rpy:1155
 translate deutsch spider_in_bed_spider_9db27ecc:
@@ -1300,7 +1300,7 @@ translate deutsch spider_in_bed_spider_9db27ecc:
 translate deutsch spider_in_bed_spider_3533aec8:
 
     # Alice_16 "[failed!t]Нет уж, Макс! Ты его убиваешь прямо здесь и сейчас или я сильно на тебя обижусь! Выбирай..."
-    Alice_16 "[failed!t] Nein, Max! Du bringst sie hier und jetzt um, oder ich verzeihe dir nicht! Wähle..."
+    Alice_16 "[failed!t]Nein, Max! Du bringst sie hier und jetzt um, oder ich verzeihe dir nicht! Wähle..."
 
 # game/events/alice.rpy:1170
 translate deutsch spider_in_bed_spider_d5b490ac:
@@ -1762,7 +1762,7 @@ translate deutsch alice_after_club_next2_3b10b531:
 translate deutsch alice_after_club_next2_a9d15c00:
 
     # Alice_10 "[like!t]Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
-    Alice_10 "[like!t] Ah! Oh, Scheiße, Max! Ja... Das ist so gut... Schneller... Ich bin so angetörnt von deinem riesigen Schwanz!"
+    Alice_10 "[like!t]Ah! Oh, Scheiße, Max! Ja... Das ist so gut... Schneller... Ich bin so angetörnt von deinem riesigen Schwanz!"
 
 # game/events/alice.rpy:1531
 translate deutsch alice_after_club_next2_09f682d1:
@@ -1774,7 +1774,7 @@ translate deutsch alice_after_club_next2_09f682d1:
 translate deutsch alice_after_club_fast_fingers_4c3bcf59:
 
     # Alice_11 "[like!t]Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс! А ты скоро кончишь?"
-    Alice_11 "[like!t] Ja, Max, ja! Ich komm ja schon... Schieb deine fiesen Finger tiefer... Ja... Oh... Oh, das ist toll. Kommst du bald?"
+    Alice_11 "[like!t]Ja, Max, ja! Ich komm ja schon... Schieb deine fiesen Finger tiefer... Ja... Oh... Oh, das ist toll. Kommst du bald?"
 
 # game/events/alice.rpy:1550
 translate deutsch alice_after_club_fast_fingers_0a46f6d0:
@@ -1804,7 +1804,7 @@ translate deutsch alice_after_club_fast_fingers_633a64f3:
 translate deutsch alice_after_club_cunnilingus_22cc9964:
 
     # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..." nointeract
-    Alice_09 "[like!t] Ja, Max, ja! Ich bin so nah dran... Hör nicht auf. Du hast eine so schnelle und flinke Zunge, Max... Mmm..." nointeract
+    Alice_09 "[like!t]Ja, Max, ja! Ich bin so nah dran... Hör nicht auf. Du hast eine so schnelle und flinke Zunge, Max... Mmm..." nointeract
 
 # game/events/alice.rpy:1601
 translate deutsch alice_after_club_cunnilingus_7b561508:
@@ -3420,11 +3420,11 @@ translate deutsch strings:
 
     # game/events/alice.rpy:408
     old "{i}отдать Алисе полотенце{/i}"
-    new "{i}Handtuch für Alice fallen lassen{/i}"
+    new "{i}gib Alice das Handtuch{/i}"
 
     # game/events/alice.rpy:408
     old "{i}отдать Алисе полотенце (выронив его из одной руки){/i}"
-    new "{i}Gib Alice das Handtuch (fallen lassen){/i}"
+    new "{i}Alice das Handtuch geben (fallen lassen){/i}"
 
     # game/events/alice.rpy:429
     old "Конечно нет! Оно случайно выскочило из руки! {color=[_ch1.col]}(Убеждение. Шанс: [_ch1.vis]){/color}"
@@ -3762,7 +3762,7 @@ translate deutsch alice_shower_spider_22e4abcd:
 translate deutsch alice_shower_hug_58bf4c9b:
 
     # Alice_05 "[succes!t]Это я, конечно, могу сделать... Но если вздумаешь с меня полотенце сорвать, то я тебя прибью нафиг!"
-    Alice_05 "[succes!t] Das geht schon... Aber wenn du versuchst, mir das Handtuch wegzureißen, bringe ich dich um!"
+    Alice_05 "[succes!t]Das geht schon... Aber wenn du versuchst, mir das Handtuch wegzureißen, bringe ich dich um!"
 
 # game/events/alice.rpy:464
 translate deutsch alice_shower_hug_ad2935a8:
@@ -3798,7 +3798,7 @@ translate deutsch alice_shower_hug_428606a5:
 translate deutsch alice_shower_hug_f3a79944:
 
     # Alice_05 "[failed!t]Ага, знаю я, чего ты хочешь! Полуголую сестрёнку полапать за всякие запретные места... Нет уж, Макс, я пошла... Только не забудь паука вышвырнуть из ванной, хорошо?!"
-    Alice_05 "[failed!t] Ja, ich verstehe, was du willst! Eine halbnackte Schwester an allen möglichen verbotenen Stellen anfassen... Nein, Max, ich bin weg. Vergiss nicht, die Spinne aus dem Bad zu werfen, okay?!"
+    Alice_05 "[failed!t]Ja, ich verstehe, was du willst! Eine halbnackte Schwester an allen möglichen verbotenen Stellen anfassen... Nein, Max, ich bin weg. Vergiss nicht, die Spinne aus dem Bad zu werfen, okay?!"
 
 # game/events/alice.rpy:490
 translate deutsch alice_shower_hug_428606a5_1:
@@ -3934,7 +3934,7 @@ translate deutsch alice_shower_ladder_f790b709:
 translate deutsch alice_shower_pinded_ca60b39d:
 
     # Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
-    Alice_06 "[spotted!t] Komm schon, Max! Hast du nichts Besseres zu tun, als mir nachzuspionieren?"
+    Alice_06 "[spotted!t]Komm schon, Max! Hast du nichts Besseres zu tun, als mir nachzuspionieren?"
 
 # game/events/alice.rpy:614
 translate deutsch alice_shower_pinded_5f021073:
@@ -3958,7 +3958,7 @@ translate deutsch alice_shower_pinded_f19a9058:
 translate deutsch alice_shower_pinded_e826d0b4:
 
     # Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
-    Alice_15 "[spotted!t] Max!!! Du spionierst mir schon wieder hinterher! Wie oft denn noch?! Hast du jeglichen Respekt verloren?"
+    Alice_15 "[spotted!t]Max!!! Du spionierst mir schon wieder hinterher! Wie oft denn noch?! Hast du jeglichen Respekt verloren?"
 
 # game/events/alice.rpy:622
 translate deutsch alice_shower_pinded_15d601e2:
@@ -3996,13 +3996,13 @@ translate deutsch alice_after_club_need_hurry_93923f62:
 translate deutsch alice_after_club_need_hurry_bfd3e0e2:
 
     # Max_22 "[restrain!t]Да, продолжай вот так! Давай быстрее, сестрёнка... Вижу, что с ним не просто справиться, но у тебя классно получается! Ещё немного... Я сейчас кончу..." nointeract
-    Max_22 "[restrain!t] Ja, mach weiter so! Beeil dich, Schwesterherz... Ich kann sehen, dass es nicht einfach ist, damit klar zu kommen, aber du machst das toll! Nur ein wenig mehr... Ich komme gleich..." nointeract
+    Max_22 "[restrain!t]Ja, mach weiter so! Beeil dich, Schwesterherz... Ich kann sehen, dass es nicht einfach ist, damit klar zu kommen, aber du machst das toll! Nur ein wenig mehr... Ich komme gleich..." nointeract
 
 # game/events/alice.rpy:1860
 translate deutsch alice_after_club_no_restrain_2de4d2ed:
 
     # Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
-    Alice_06 "[norestrain!t] Max! Das ist Mist! Du bist über mein ganzes Gesicht gekommen."
+    Alice_06 "[norestrain!t]Max! Das ist Mist! Du bist über mein ganzes Gesicht gekommen."
 
 # game/events/alice.rpy:1861
 translate deutsch alice_after_club_no_restrain_d5b2b244:
@@ -4056,13 +4056,13 @@ translate deutsch alice_towel_after_club_not_even_close_05fe5279:
 translate deutsch alice_towel_after_club_not_even_close_73619acf:
 
     # Max_22 "[restrain!t]Вот чёрт, Алиса! Ты делаешь это просто потрясающе! Да, продолжай вот так... Ещё быстрее... Вот умница! Я держусь из последних сил... Вот-вот кончу..." nointeract
-    Max_22 "[restrain!t] Oh, Scheiße, Alice! Du machst das toll! Ja, mach weiter so... Schneller... Gutes Mädchen! Ich tue mein Bestes... Ich werde gleich kommen..." nointeract
+    Max_22 "[restrain!t]Oh, Scheiße, Alice! Du machst das toll! Ja, mach weiter so... Schneller... Gutes Mädchen! Ich tue mein Bestes... Ich werde gleich kommen..." nointeract
 
 # game/events/alice.rpy:2700
 translate deutsch alice_towel_after_club_no_restrain_2de4d2ed:
 
     # Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
-    Alice_06 "[norestrain!t] Max! Das ist Mist! Du bist über mein ganzes Gesicht gekommen!"
+    Alice_06 "[norestrain!t]Max! Das ist Mist! Du bist über mein ganzes Gesicht gekommen!"
 
 # game/events/alice.rpy:2701
 translate deutsch alice_towel_after_club_no_restrain_d5b2b244:

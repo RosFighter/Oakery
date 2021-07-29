@@ -274,13 +274,13 @@ translate deutsch MorningWoodCont_1f6eac9a:
 translate deutsch MorningWoodCont_4a409afb:
 
     # Max_02 "Ну да, это рукой, видимо?"
-    Max_02 "Ja, das ist eine Hand, schätze ich?"
+    Max_02 "Ja klar, mit deiner Hand, oder?"
 
 # game/dialogues/lisatalk.rpy:196
 translate deutsch MorningWoodCont_f5cbe6f0:
 
     # Lisa_11 "Э-э-э... Ой, всё! Я... вообще в ванную шла..."
-    Lisa_11 "Äh, äh... Oh, das ist es!... Ich war gerade auf dem Weg zum Badezimmer..."
+    Lisa_11 "Ä-ä-äh, äh... Oh, das!... Ich wollte gerade ins Bad..."
 
 # game/dialogues/lisatalk.rpy:197
 translate deutsch MorningWoodCont_e65dd32b:
@@ -292,13 +292,13 @@ translate deutsch MorningWoodCont_e65dd32b:
 translate deutsch MorningWoodCont_60559c82:
 
     # Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"
-    Lisa_01 "Hey, Max.... ist jedes Jungen-Ding so groß?"
+    Lisa_01 "Hey, Max, ist das Ding bei allen Jungs so groß?"
 
 # game/dialogues/lisatalk.rpy:204
 translate deutsch MorningWoodCont_8a88a159:
 
     # Max_19 "Я сплю, Лиза... Какая штука?"
-    Max_19 "Ich schlafe, Lisa... Welche Dinge?"
+    Max_19 "Ich schlafe, Lisa... Welches Ding?"
 
 # game/dialogues/lisatalk.rpy:205
 translate deutsch MorningWoodCont_23c96df8:
@@ -1570,7 +1570,7 @@ translate deutsch Lisa_MorningWood_626efed0:
 translate deutsch Lisa_MorningWoodCont_7c8db7ba:
 
     # Lisa_00 "О ком?!"
-    Lisa_00 "Eine Abmachung mit wem?!"
+    Lisa_00 "Was?!"
 
 # game/dialogues/lisatalk.rpy:895
 translate deutsch Lisa_MorningWoodCont_98701acf:
@@ -1594,7 +1594,7 @@ translate deutsch Lisa_MorningWoodCont_93c24ad5:
 translate deutsch Lisa_MorningWoodCont_746dce08:
 
     # Lisa_01 "Как ни называй, а у вас, мальчиков, там очень странная штука."
-    Lisa_01 "Wie auch immer du es nennst, ihr Jungs habt da ein sehr seltsames Ding da drin."
+    Lisa_01 "Wie auch immer du es nennst, ihr Jungs habt da ein sehr seltsames Ding da unten."
 
 # game/dialogues/lisatalk.rpy:899
 translate deutsch Lisa_MorningWoodCont_e06656d9:
@@ -1612,19 +1612,19 @@ translate deutsch Lisa_MorningWoodCont_5b6f1cdb:
 translate deutsch Lisa_MorningWoodCont_2931ed71:
 
     # Max_05 "А что, по-моему очень честно, если бы ты спала только в трусиках, без верха!"
-    Max_05 "Danke, dass du ehrlich bist. Aber das wüssten wir nicht, wenn du nicht nur in deinem Höschen schlafen würdest!"
+    Max_05 "Ich denke, es wäre sehr fair, wenn du nur in deinem Höschen schlafen würdest, ohne Oberteil!"
 
 # game/dialogues/lisatalk.rpy:902
 translate deutsch Lisa_MorningWoodCont_c83ed0ea:
 
     # Lisa_11 "В смысле, честно?!"
-    Lisa_11 "Ernsthaft?!"
+    Lisa_11 "Also mal ehrlich?!"
 
 # game/dialogues/lisatalk.rpy:903
 translate deutsch Lisa_MorningWoodCont_955ee47f:
 
     # Max_07 "В том смысле, что я сплю в трусах и ты теперь иногда видишь моего \"Большого Макса\", а вот я вижу тебя слишком одетой... Это не честно!"
-    Max_07 "Ich meine, ich schlafe in meiner Unterwäsche und lasse dich manchmal \"Big Max\" sehen, aber du bist immer angezogen... Das ist nicht fair!"
+    Max_07 "Ich meine, ich schlafe in meiner Unterwäsche und lasse dich manchmal \"Big Max\" sehen, aber du bist immer komplett angezogen... Das ist nicht fair!"
 
 # game/dialogues/lisatalk.rpy:904
 translate deutsch Lisa_MorningWoodCont_81db866f:
@@ -3538,7 +3538,7 @@ translate deutsch gift_swimsuit_swimsuit_show_b784dabf:
 translate deutsch gift_swimsuit_swimsuit_show_8541ecba:
 
     # Max_04 "Да, пустяки..."
-    Max_04 "Vergiss es..."
+    Max_04 "Ja, das ist gar nichts..."
 
 # game/dialogues/lisatalk.rpy:1940
 translate deutsch gift_swimsuit_swimsuit_show_e163e982:
@@ -3556,7 +3556,7 @@ translate deutsch gift_swimsuit_swimsuit_show_d6eb93d6:
 translate deutsch gift_swimsuit_swimsuit_show_62e397b6:
 
     # Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
-    Lisa_05 "Es ist nicht so, dass ich es wollte... Ehrlich gesagt, ich dachte nicht, dass du es kaufen kannst, aber... Aber ich denke, du verdienst es..."
+    Lisa_05 "Nicht, dass ich das vorhatte... Ehrlich gesagt, dachte ich nicht, dass du es kaufen könntest, aber... Aber ich denke, du verdienst es..."
 
 # game/dialogues/lisatalk.rpy:1945
 translate deutsch gift_swimsuit_swimsuit_show_2b6e74c9:
@@ -8660,11 +8660,11 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:1890
     old "Я тебе его подарю, если разрешишь посмотреть, как ты его примеряешь..."
-    new "Ich gebe es dir, wenn du mir zeigst, wie du es versuchst..."
+    new "Ich gebe ihn dir, wenn du mich zusehen lässt, wie du ihn anprobierst..."
 
     # game/dialogues/lisatalk.rpy:1890
     old "Я передумал. Ничего не хочу!"
-    new "Ich habe es mir anders überlegt, du kannst es haben!"
+    new "Ich habe es mir anders überlegt, du kannst ihn haben!"
 
     # game/dialogues/lisatalk.rpy:1916
     old "Угу, уже... {i}(Демонстративно отвернуться){/i}"
@@ -8676,7 +8676,7 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:2083
     old "Возможно... А что?"
-    new "Ist es möglich... Wieso?"
+    new "Vielleicht... Warum?"
 
     # game/dialogues/lisatalk.rpy:2106
     old "Ага, видела я уже несколько раз, насколько тебе хорошо спится... Аж в трусах не умещается! Но ты прав, мне жарко... и я не хочу, чтобы меня наказывали. Ладно, если это придаст тебе интерес помогать мне, то это запросто!"
@@ -8732,11 +8732,11 @@ translate deutsch strings:
 
     # game/dialogues/lisatalk.rpy:3151
     old "Э... Что? Какие условия?"
-    new "Äh... Was? Was sind die Bedingungen?"
+    new "Äh... Was? Welche Bedingungen?"
 
     # game/dialogues/lisatalk.rpy:3151
     old "Спектакль? Это не спектакль! Но я тебя слушаю..."
-    new "Okay, Ich höre..."
+    new "Ein Scherz? Das ist doch kein Witz! Okay, ich höre dir zu..."
 
     # game/dialogues/lisatalk.rpy:3161
     old "Понял!"
@@ -9907,13 +9907,13 @@ translate deutsch conversation_after_dinner_37e07b02:
 translate deutsch conversation_after_dinner_81d11bdc:
 
     # Lisa_09 "Ты о чём, Макс? Над какими условиями?"
-    Lisa_09 "Wovon redest du, Max? Zu welchen Bedingungen?"
+    Lisa_09 "Wovon redest du, Max? Welche Bedingungen?"
 
 # game/dialogues/lisatalk.rpy:2178
 translate deutsch conversation_after_dinner_34ff4f41:
 
     # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Может, сегодня я тебя спас от мамы, но за следующую двойку тебе точно влетит..."
-    Max_01 "Worüber? Darüber, wie ich dir bei deinem Unterricht helfen werde. Du hilfst mir, ich helfe dir. Ich habe dich heute vielleicht vor Mom gerettet, aber wenn du das nächste Mal eine Sechs bekommst..."
+    Max_01 "Wovon? Darüber, wie ich dir bei deinem Unterricht helfen werde. Du hilfst mir, ich helfe dir. Ich habe dich heute vielleicht vor Mom gerettet, aber wenn du das nächste Mal eine Sechs bekommst..."
 
 # game/dialogues/lisatalk.rpy:2179
 translate deutsch conversation_after_dinner_9b2bb001:

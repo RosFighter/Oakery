@@ -130,60 +130,6 @@ init python:
                 AvailableActions['readbook'].active = True
 
 
-    # находит самое раннее всплывающее событие в указанный промежуток времени и возвращает его ключ
-    # def GetCutEvents(tm1, tm2, sleep):
-    #
-    #     # получим список событий, "всплывающих" в указанный период
-    #     eventslist = []
-    #     timelist = []
-    #     for cut in EventsByTime:
-    #         if (EventsByTime[cut].enabled and
-    #                 ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= tm2)
-    #                 or
-    #                   ((tm1 < tm2 and tm1 < EventsByTime[cut].tm <= '08:00')
-    #                     and EventsByTime[cut].extend and EventsByTime[cut].sleep)
-    #                 or
-    #                   (tm1 > tm2 and (tm1 < EventsByTime[cut].tm <= '23:59'
-    #                                   or '00:00' <= EventsByTime[cut].tm <= tm2)))
-    #             and (((day+2) % 7) in EventsByTime[cut].lod) and
-    #                     (sleep == EventsByTime[cut].sleep or (sleep
-    #                         and EventsByTime[cut].cut
-    #                         and not EventsByTime[cut].sleep))):
-    #
-    #                 try:
-    #                     rez = eval(EventsByTime[cut].variable)
-    #                 except KeyError:
-    #                     # print('KeyError in: '+EventsByTime[cut].variable)
-    #                     rez = False
-    #                 except Exception:
-    #                     # print('Some other error in: '+EventsByTime[cut].variable)
-    #                     rez = False
-    #
-    #                 if rez:
-    #                     eventslist.append(cut)
-    #                     timelist.append(EventsByTime[cut].tm)
-    #
-    #     # получаем самое раннее время на случай если кат-событий несколько
-    #     if len(eventslist) > 0:
-    #         mintime = min(timelist)
-    #
-    #     # удалим из списка ключи с другим временем
-    #     i = 0
-    #     while i <= len(eventslist)-1:
-    #         if EventsByTime[eventslist[i]].tm == mintime:
-    #             i += 1
-    #         else:
-    #             eventslist.pop(i)
-    #
-    #     # если в это время стартует несколько событий - выбираем одно рандомно
-    #     if len(eventslist) > 1:
-    #         return eventslist[renpy.random.randint(0, len(eventslist)-1)]
-    #     elif len(eventslist) == 1:
-    #         return eventslist[0]
-    #     else:
-    #         return ''
-
-
     # ищет все доступные темы для разговора с персонажем в текущей комнате
     # если персонажей несколько, то диалог должен быть для всех
     # возвращает ключи словаря с вариантами фраз
@@ -567,8 +513,9 @@ init python:
             AvailableActions['searchcam'].active = True
 
         # актувируем установку камеры, если она есть в сумке, в локации никого и есть место для установки
-        if (len(current_room.cams) < current_room.max_cam and items['hide_cam'].have
-                                                          and len(current_room.cur_char) == 0):
+        if all([len(current_room.cams) < current_room.max_cam,
+                                items['hide_cam'].have, 'eric' in chars,
+                                            not len(current_room.cur_char)]):
             AvailableActions['install'].active = True
             AvailableActions['install'].enabled = True
 

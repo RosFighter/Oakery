@@ -1888,3 +1888,11 @@ translate english lisa_shower_pinded_e472503c:
 
     # Max_10 "Вот же попал!"
     Max_10 "I'm so screwed!"
+# TODO: Translation updated at 2021-07-29 12:15
+
+# game/events/lisa.rpy:501
+translate english lisa_dressed_school_open_door2_c7d16562:
+
+    # Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..." nointeract
+    Lisa_02 "" nointeract
+

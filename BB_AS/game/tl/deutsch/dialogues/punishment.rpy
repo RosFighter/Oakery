@@ -76,7 +76,7 @@ translate deutsch first_new_punishment_8bbfe5b5:
 translate deutsch first_new_punishment_de217f08:
 
     # Ann_16 "Я знаю, Макс, но уговаривать и пытаться вас убедить другим способом у меня нет ни сил ни времени. Чем более унизительно наказание, тем у вас будет меньше желания нарушить правила."
-    Ann_16 "Ich weiß, Max, aber ich habe weder Zeit nochLust, um zu versuchen, dich auf andere Weise zu überzeugen. Je demütigender die Strafe, desto unwahrscheinlicher ist es, dass du die Regeln brechen wirst."
+    Ann_16 "Ich weiß, Max, aber ich habe weder Zeit noch Lust, um zu versuchen, dich auf andere Weise zu überzeugen. Je demütigender die Strafe, desto unwahrscheinlicher ist es, dass du die Regeln brechen wirst."
 
 # game/dialogues/punishment.rpy:119
 translate deutsch first_new_punishment_916b3b51:
@@ -574,13 +574,13 @@ translate deutsch punishment_lisa_3250d4ff:
 translate deutsch punishment_alice_d88fc265:
 
     # Ann_16 "Подходи, подходи, Алиса, чего ты там мнешься. Штаны снимай, есть разговор!"
-    Ann_16 " Komm her, Alice, was machst du da? Zieh deine Hose aus, wir unterhalten uns!"
+    Ann_16 "Komm her, Alice, was machst du da? Zieh deine Hosen aus, du wirst bestraft!"
 
 # game/dialogues/punishment.rpy:545
 translate deutsch punishment_alice_d608324e:
 
     # Ann_16 "Подходи, подходи, Алиса, чего ты там мнешься. Снимай шорты, есть разговор!"
-    Ann_16 "Komm her, Alice, was machst du da? Zieh deine Hose aus, wir unterhalten uns!"
+    Ann_16 "Komm her, Alice, was machst du da? Zieh deine Hosen aus, du wirst bestraft!"
 
 # game/dialogues/punishment.rpy:546
 translate deutsch punishment_alice_8e33c890:
@@ -610,7 +610,7 @@ translate deutsch punishment_alice_cb34e360:
 translate deutsch punishment_alice_e5b82d3f:
 
     # Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
-    Ann_12 "Nein, Max, versuche gar nicht erst, es zu rechtfertigen. Alice, beweg dich..."
+    Ann_12 "Nein, Max, versuch gar nicht erst, es zu rechtfertigen. Du hast es selbst vermasselt... Alice, beeil dich..."
 
 # game/dialogues/punishment.rpy:563
 translate deutsch punishment_alice_48884e9e:
@@ -628,7 +628,7 @@ translate deutsch punishment_alice_2a128a29:
 translate deutsch punishment_alice_c8f8e3ea:
 
     # Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "[failed!t]Nein, Max, deine Verteidigung wird ihr nicht helfen. Sie wird sowieso im Namen ihrer Freunde bestraft werden. Solche Leute zu Besuch zu haben, wird ihr nicht gut tun."
+    Ann_16 "[failed!t]Nein, Max, deine Überredungskünste werden ihr nicht helfen. Sie wird sowieso bestraft, wenn nicht für sich selbst, dann für ihre Freundin. Sie wird damit nicht durchkommen, es wird ihr nichts nützen..."
 
 # game/dialogues/punishment.rpy:574
 translate deutsch punishment_alice_055a6121:
@@ -876,7 +876,7 @@ translate deutsch strings:
 
     # game/dialogues/punishment.rpy:393
     old "Ближе подходи, Лиза. И да, снимай штаны, ты заслужила!"
-    new "Komm näher, Lisa. Und ja, zieh deine Hose aus, du hast es verdient!"
+    new "Komm näher, Lisa. Und ja, zieh deine Hosen aus, du hast es verdient!"
 
     # game/dialogues/punishment.rpy:395
     old "Ближе подходи, Лиза. И да, снимай свой халат, ты заслужила!"

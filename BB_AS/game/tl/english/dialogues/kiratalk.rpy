@@ -2342,7 +2342,7 @@ translate english story_from_childhood_ann_4e458508:
 translate english story_from_childhood_ann_2a672bb2:
 
     # Kira_03 "Конечно, я была жутко напугана и хотела помочь маме, но этот человек начал меня искать и я побежала. Думала, что позову кого-то на помощь, потому-что мне самой с ним не справиться..."
-    Kira_03 "Of course, I was terribly frightened and wanted to help my mother, but the man started looking for me and I ran. I thought I was going to get help, because I couldn't deal with him by myself..."
+    Kira_03 "Of course, I was terribly frightened and wanted to help your Mom, but the man started looking for me and I ran. I thought I was going to get help, because I couldn't deal with him by myself..."
 
 # game/dialogues/kiratalk.rpy:1054
 translate english story_from_childhood_ann_592f32a1:

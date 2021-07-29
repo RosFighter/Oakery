@@ -1288,37 +1288,37 @@ translate deutsch smoke_nofear_042d05e4:
 translate deutsch smoke_nofear_fdcf7e97:
 
     # Alice_13 "Сначала скажи, что у тебя на уме..." nointeract
-    Alice_13 "Erst sagst du mir, was du willst." nointeract
+    Alice_13 "Zuerst sagst du mir, was du vorhast..." nointeract
 
 # game/dialogues/alicetalk.rpy:960
 translate deutsch smoke_nofear_68ee7cea:
 
     # Alice_16 "А больше ты ничего не хочешь? Свали отсюда, пока не наваляла!!"
-    Alice_16 "Gibt es nichts mehr, was du willst? Dann hau ab!!"
+    Alice_16 "Ist das alles, was du willst? Verschwinde, bevor du dich verletzt!!"
 
 # game/dialogues/alicetalk.rpy:966
 translate deutsch smoke_nofear_no_a95196c6:
 
     # Alice_03 "Ну вот и пугать не надо. Не узнает. А если ты проболтаешься, я тебя во сне придушу, понял? Теперь иди, не мешай мне..." nointeract
-    Alice_03 "Dann habe ich keinen Grund, Angst zu haben. Und wenn du es jemandem erzählst, erwürge ich dich im Schlaf. Und jetzt lass mich in Ruhe." nointeract
+    Alice_03 "Du brauchst keine Angst zu haben. Das merkt keiner. Und wenn du redest, erwürge ich dich im Schlaf, verstanden? Und jetzt verschwinde, geh mir aus dem Weg..." nointeract
 
 # game/dialogues/alicetalk.rpy:975
 translate deutsch smoke_fear_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 "Max, bist du hierher gekommen, um zu glotzen?"
+    Alice_00 "Max, bist du hier, um zu glotzen?"
 
 # game/dialogues/alicetalk.rpy:976
 translate deutsch smoke_fear_876b91d4:
 
     # Max_09 "Не боишься, что мама накажет если узнает?"
-    Max_09 "Hast du keine Angst, bestraft zu werden, wenn Mom es herausfindet?"
+    Max_09 "Hast du keine Angst, dass Mom dich bestraft, wenn sie es herausfindet?"
 
 # game/dialogues/alicetalk.rpy:977
 translate deutsch smoke_fear_a6cf7c4a:
 
     # Alice_12 "Ты же ей не скажешь? Она так больно меня отшлёпала в прошлый раз, что до сих пор сидеть неприятно..."
-    Alice_12 "Du wirst es doch nicht verraten, oder? Das letzte Mal hat sie mich so hart geschlagen, dass ich immer noch nicht richtig sitzen kann."
+    Alice_12 "Du wirst es ihr doch nicht sagen, oder? Sie hat mich das letzte Mal so hart geschlagen, dass es immer noch schwierig ist, sich hinzusetzen..."
 
 # game/dialogues/alicetalk.rpy:978
 translate deutsch smoke_fear_af2c2b24:
@@ -1720,19 +1720,19 @@ translate deutsch smoke_nopants_b38d8562:
 translate deutsch smoke_nopants_d219c498:
 
     # Alice_01 "Ты совсем идиот, Макс? Я в купальнике. Это не трусы. А трусы я и так не ношу под джинсами. Можешь себе фантазировать теперь сколько хочешь... Всё, уйди с глаз моих долой!"
-    Alice_01 "Bist du behindert, Max? Ich trage einen Bikini, das zählt nicht als Höschen. Ich trage kein Höschen unter meiner Jeans, und du kannst darüber phantasieren, so viel du willst. Und jetzt hau ab!"
+    Alice_01 "Bist du völlig bescheuert, Max? Ich trage einen Bikini. Das ist keine Unterwäsche. Und ich trage sowieso keinen Slip unter meiner Jeans. Du kannst jetzt fantasieren, so viel du willst... Geh mir aus den Augen!"
 
 # game/dialogues/alicetalk.rpy:1266
 translate deutsch smoke_nopants_2485171a:
 
     # Max_01 "Ухожу, ухожу..."
-    Max_01 "Gut, ich gehe."
+    Max_01 "Gut, ich gehe..."
 
 # game/dialogues/alicetalk.rpy:1268
 translate deutsch smoke_nopants_6e4f674f:
 
     # Alice_02 "Ты наверное думаешь, что у тебя забавные шутки, да? Так вот нет. Абсолютно несмешные, дебильные шутки, как и ты сам. Всё, свалил отсюда. Я занята..."
-    Alice_02 "Denkst Du, dass Du einen guten Sinn für Humor hast, Max? Denn den hast du nicht. Überhaupt keinen. Deine Witze sind völlig humorlos und langweilig, genau wie du. Und jetzt hau ab, ich bin beschäftigt."
+    Alice_02 "Du denkst wahrscheinlich, dass deine Witze lustig sind, nicht wahr? Nun, das sind sie nicht. Völlig unlustige, schwachsinnige Witze, genau wie du. In Ordnung, verschwinde von hier. Ich bin beschäftigt..."
 
 # game/dialogues/alicetalk.rpy:1269
 translate deutsch smoke_nopants_696b9e70:
@@ -1750,7 +1750,7 @@ translate deutsch smoke_nopants_48649dbe:
 translate deutsch smoke_not_nopants_8c8fad13:
 
     # Alice_02 "Ты чего-то хотел, Макс?"
-    Alice_02 "Was willst du?"
+    Alice_02 "Wolltest du was, Max?"
 
 # game/dialogues/alicetalk.rpy:1287
 translate deutsch smoke_not_nopants_462a034b:

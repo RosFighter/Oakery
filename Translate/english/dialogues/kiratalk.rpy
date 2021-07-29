@@ -6,7 +6,7 @@ translate english KiraTalkStart_14a49468:
     # Max_01 "Не против компании?"
     Max_01 "Do you mind if I join you?"
 
-# game/dialogues/kiratalk.rpy:19te
+# game/dialogues/kiratalk.rpy:19
 translate english KiraTalkStart_c5aab882:
 
     # Kira_01 "Конечно, Макс. Ложись рядом. Погода сегодня отличная!" nointeract

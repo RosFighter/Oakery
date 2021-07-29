@@ -4,31 +4,31 @@
 translate deutsch typical_breakfast_32286f7d:
 
     # Ann_00 "Всех ещё раз с добрым утром, всем приятного аппетита! Давайте сегодня покушаем в тишине, если вы не возражаете..." nointeract
-    Ann_00 "Guten Morgen und guten Appetit an alle! Lasst uns heute in aller Stille essen, wenn es euch nichts ausmacht..." nointeract
+    Ann_00 "Guten Morgen und guten Appetit an alle! Lasst uns heute in aller Ruhe essen, wenn es euch nichts ausmacht..." nointeract
 
 # game/dialogues/breakfast.rpy:15
 translate deutsch typical_breakfast_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Danke für dein Verständnis, Max! Also, los geht's..."
+    Ann_05 "Danke für dein Verständnis, Max! Also, los..."
 
 # game/dialogues/breakfast.rpy:16
 translate deutsch typical_breakfast_4a7da202:
 
     # Max_00 "Приятного аппетита!"
-    Max_00 "Also gut...!"
+    Max_00 "Guten Appetit!"
 
 # game/dialogues/breakfast.rpy:18
 translate deutsch typical_breakfast_19bf574f:
 
     # Ann_05 "Нет, просто ещё не проснулась, нужно собраться с мыслями..."
-    Ann_05 "Nein, ich bin nur noch nicht richtig aufgewacht..."
+    Ann_05 "Nein, ich bin nur noch nicht richtg wach, ich muss meine Gedanken erst sammeln..."
 
 # game/dialogues/breakfast.rpy:19
 translate deutsch typical_breakfast_63f629c8:
 
     # Max_00 "Понятно. Приятного аппетита!"
-    Max_00 "Oh, Okay."
+    Max_00 "Ich verstehe. Guten Appetit!"
 
 # game/dialogues/breakfast.rpy:25
 translate deutsch breakfast_first_4fdf0844:
@@ -2000,23 +2000,23 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:164
     old "Да уж, делом. Деловая..."
-    new "Dann solltest du dich mehr anstrengen"
+    new "Ja, geschäftlich. Business..."
 
     # game/dialogues/breakfast.rpy:164
     old "Не перетрудись!"
-    new "Überanstrenge dich nicht"
+    new "Übertreibe es nicht!"
 
     # game/dialogues/breakfast.rpy:164
     old "Я хотя бы реалист!"
-    new "Ich versuche nur, realistisch zu sein."
+    new "Zumindest bin ich realistisch!"
 
     # game/dialogues/breakfast.rpy:173
     old "Бьюти-блогеров как грязи. Чем ты лучше их?"
-    new "Es gibt eine Menge Schönheits-Blogger da draußen. Was macht dich zu etwas Besonderem?"
+    new "Beauty-Blogger sind so schäbig. Wieso bist du besser als sie?"
 
     # game/dialogues/breakfast.rpy:173
     old "Думаешь, кому-то нужна твоя реклама?"
-    new "Glaubst du, dass jemand deine Werbefläche haben möchte?"
+    new "Glaubst du, dass irgendjemand dich braucht?"
 
     # game/dialogues/breakfast.rpy:173
     old "Всё фантазируешь..."
@@ -2028,11 +2028,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:182
     old "Я тоже что-то придумаю"
-    new "Ich lasse mir etwas einfallen."
+    new "Ich lasse mir was einfallen"
 
     # game/dialogues/breakfast.rpy:182
     old "Ага, десять миллионов..."
-    new "Natürlich wirst du das"
+    new "Klar, Millionen..."
 
     # game/dialogues/breakfast.rpy:193
     old "Ты им звонила, мам, узнала где наши вещи?"
@@ -2048,15 +2048,15 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:196
     old "Ну и обойдёмся без неё"
-    new "Wir werden auch ohne sie zurechtkommen."
+    new "Wir werden auch so zurechtkommen."
 
     # game/dialogues/breakfast.rpy:196
     old "Вот заработаю и куплю всё, что потеряли..."
-    new "Ich werde Geld verdienen und alles neu kaufen, was wir verloren habe...n"
+    new "Ich werde etwas Geld verdienen und alles ersetzen, was verloren ist..."
 
     # game/dialogues/breakfast.rpy:200
     old "Может и рад. Мне стесняться нечего!"
-    new "Vielleicht schon. Ich habe nichts, wofür ich mich schämen müsste!"
+    new "Vielleicht. Es ist nichts, wofür ich mich schämen müsste!"
 
     # game/dialogues/breakfast.rpy:200
     old "Да всем плевать, в чём ты там что ведёшь"
@@ -2068,23 +2068,23 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:203
     old "Что, богатый жизненный опыт?"
-    new "Ich denke, du wärst überrascht, was du sehen wirst"
+    new "Eine Fülle an Lebenserfahrungen?"
 
     # game/dialogues/breakfast.rpy:203
     old "Да я хоть сейчас покажу!"
-    new "Wenn du es so sehr sehen willst, kann ich dir zeigen"
+    new "Ich zeige es dir gleich!"
 
     # game/dialogues/breakfast.rpy:203
     old "На слабо берёшь?"
-    new "Ist dies eine Herausforderung?"
+    new "Traust du dich?"
 
     # game/dialogues/breakfast.rpy:212
     old "Да на тебя вещей не напасёшься!"
-    new "Das klingt ein bisschen übertrieben."
+    new "Du hast einfach zu viel Zeug!"
 
     # game/dialogues/breakfast.rpy:212
     old "У тебя репа не треснет с такими запросами?"
-    new "Das kann unmöglich profitabel sein"
+    new "Wird deine Rübe bei derartigen Wünschen nicht platzen?"
 
     # game/dialogues/breakfast.rpy:219
     old "И что ты там раскручиваешь?"
@@ -2104,7 +2104,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:230
     old "Ну что, копим на кондиционеры?"
-    new "Sollten wir also anfangen, auf eine Klimaanlagen zu sparen?"
+    new "Sparen wir also auf eine Klimaanlage?"
 
     # game/dialogues/breakfast.rpy:237
     old "Ну а если что, всегда можно снять лишнее"
@@ -2116,11 +2116,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:240
     old "Я не против!"
-    new "Ich habe nichts dagegen."
+    new "Das stört mich nicht!"
 
     # game/dialogues/breakfast.rpy:240
     old "Начинай, я уже в предвкушении..."
-    new "Ich würde mich freuen."
+    new "Nur zu, ich freue mich schon darauf..."
 
     # game/dialogues/breakfast.rpy:240
     old "Ну и ходи в своих джинсах дома"
@@ -2140,7 +2140,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:261
     old "Кто о чём, а Алиса о шоппинге..."
-    new "Das ist deine Lösung für jedes Problem"
+    new "Für Alice geht es immer nur ums Einkaufen..."
 
     # game/dialogues/breakfast.rpy:261
     old "Сначала заработай"
@@ -2156,15 +2156,15 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:268
     old "А это тут причём?"
-    new "Na und?"
+    new "Was hat das damit zu tun?"
 
     # game/dialogues/breakfast.rpy:278
     old "Да моей купилке любой позавидует!"
-    new "Nein, aber wenn ich einen finden würde, würde ich ihn definitiv nicht mit dir teilen."
+    new "Ich beneide jeden, der einen hat!"
 
     # game/dialogues/breakfast.rpy:278
     old "А у самой то денег куры не клюют, да?"
-    new "Und du bist ja so-o-o reich, oder?"
+    new "Und du bist knapp bei Kasse, nicht wahr?"
 
     # game/dialogues/breakfast.rpy:278
     old "Ну вот возьму и заработаю"
@@ -2176,7 +2176,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:288
     old "Не всё то шоколад, что коричневого цвета!"
-    new "Ich wäre nicht so optimistisch."
+    new "Es ist nicht alles Gold, was glänzt!"
 
     # game/dialogues/breakfast.rpy:298
     old "Не сомневаюсь"
@@ -2196,11 +2196,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:311
     old "Понял. Посмотрю..."
-    new "Okay, ich werde es mir mal ansehen."
+    new "Verstanden. Na, mal sehen..."
 
     # game/dialogues/breakfast.rpy:336
     old "Я не балбес! Я всё знаю!"
-    new "Ich bin kein Idiot!"
+    new "Ich bin kein Idiot! Ich wusste alles!"
 
     # game/dialogues/breakfast.rpy:336
     old "Меня не за знания выгнали!"
@@ -2212,7 +2212,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:347
     old "Мама! Лиза права. Дай ей шанс подготовиться. Я ей помогу!"
-    new "Lisa hat Recht, Mom! Gib ihr eine Chance. Ich werde ihr helfen!"
+    new "Mom! Lisa hat recht. Gib ihr eine Chance, sich vorzubereiten. Ich werde ihr helfen!"
 
     # game/dialogues/breakfast.rpy:366
     old "Ясно..."
@@ -2220,7 +2220,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:366
     old "Я тут вообще ни при чём"
-    new "Das hatte nichts mit mir zu tun."
+    new "Ich hatte nichts damit zu tun"
 
     # game/dialogues/breakfast.rpy:366
     old "{i}молчать{/i}"
@@ -2228,7 +2228,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:384
     old "Конечно, Лиза!"
-    new "Natürlich, Lisa"
+    new "Natürlich, Lisa!"
 
     # game/dialogues/breakfast.rpy:392
     old "Какие картины?"
@@ -2244,15 +2244,15 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:395
     old "Ну и что. Хорошие картины..."
-    new "Was soll's. Ich mag die Bilder, sie sind schön."
+    new "Und wenn schon. Tolle Bilder..."
 
     # game/dialogues/breakfast.rpy:407
     old "Что, от Эрика?"
-    new "Hat Eric ihn geschickt?"
+    new "Was, von Eric?"
 
     # game/dialogues/breakfast.rpy:407
     old "Что, сам Эрик приедет?"
-    new "Eric wird dich also zur Arbeit fahren?"
+    new "Was, kommt Eric etwa selbst?"
 
     # game/dialogues/breakfast.rpy:407
     old "Тогда поспеши!"
@@ -2264,23 +2264,23 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:410
     old "Может быть. Тогда, поспеши!"
-    new "Ich denke schon. Dann solltest du dich beeilen!"
+    new "Vielleicht. Dann beeil dich!"
 
     # game/dialogues/breakfast.rpy:446
     old "Мама всё правильно говорит!"
-    new "Ja, Mom hat Recht!"
+    new "Mom hat Recht!"
 
     # game/dialogues/breakfast.rpy:453
     old "Может быть, помочь?"
-    new "Vielleicht kann ich dir helfen?"
+    new "Kann ich helfen?"
 
     # game/dialogues/breakfast.rpy:463
     old "Э... Почему кроме меня?"
-    new "Warum alle außer mir?"
+    new "Ähm... Warum außer mir?"
 
     # game/dialogues/breakfast.rpy:463
     old "Не очень то и хотелось..."
-    new "Toll, ich will keine Zeit mit Einkaufen verschwenden"
+    new "Ich wollte nicht wirklich..."
 
     # game/dialogues/breakfast.rpy:466
     old "Так у вас же денег нет?"
@@ -2292,11 +2292,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:483
     old "Так ты знакомишь Эрика с семьёй? Без меня?"
-    new "Du stellst Eric also bereits der Familie vor? Und ich werde nicht einmal dabei sein?"
+    new "Du stellst Eric also der Familie vor? Ohne mich?"
 
     # game/dialogues/breakfast.rpy:483
     old "Надеюсь, я то его увижу, когда вернётесь?"
-    new "Ich hoffe, ich sehe ihn bei Eurer Rückkehr noch..."
+    new "Ich hoffe, ich kann ihn sehen, wenn ihr zurückkommt?"
 
     # game/dialogues/breakfast.rpy:492
     old "Ага! Почти?"
@@ -2320,11 +2320,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:507
     old "А я рад. Правда."
-    new "Das bin ich. Ehrlich"
+    new "Das freut mich. Wirklich."
 
     # game/dialogues/breakfast.rpy:507
     old "Мне просто любопытно!"
-    new "Ich bin nur neugierig."
+    new "Ich bin einfach neugierig!"
 
     # game/dialogues/breakfast.rpy:541
     old "{i}закончить завтрак{/i}"
@@ -2336,7 +2336,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:557
     old "А вдруг он не тот, за кого себя выдаёт"
-    new "Was, wenn er nicht der ist, der er zu sein scheint?"
+    new "Was, wenn er nicht der ist, der er vorgibt zu sein?"
 
     # game/dialogues/breakfast.rpy:557
     old "Я переживаю о маме"
@@ -2344,11 +2344,11 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:564
     old "Ну не знаю. Может, он маньяк..."
-    new "Was, wenn er eine Art Psychopath ist?"
+    new "Ich weiß nicht. Vielleicht ist er ein Spinner..."
 
     # game/dialogues/breakfast.rpy:564
     old "Дело не в этом, я не знаю его мотивов..."
-    new "Ich kenne seine Motive nicht."
+    new "Das ist nicht der Punkt, ich kenne seine Motive nicht..."
 
     # game/dialogues/breakfast.rpy:564
     old "Может он очередной придурок!"
@@ -2360,19 +2360,19 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:576
     old "Да я рад..."
-    new "Ja, ich bin glücklich..."
+    new "Das freut mich..."
 
     # game/dialogues/breakfast.rpy:607
     old "Как о чём? Про ночь с Эриком!"
-    new "Ich spreche von deiner Nacht mit Eric!"
+    new "Worüber? Über die Nacht mit Eric!"
 
     # game/dialogues/breakfast.rpy:607
     old "Я про визит к Эрику..."
-    new "Wie war dein Abend?"
+    new "Ich meine den Besuch bei Eric..."
 
     # game/dialogues/breakfast.rpy:618
     old "А что сразу я? Но да, я согласен с Алисой..."
-    new "Warum fragst du mich? Aber ja, ich stimme Alice zu."
+    new "Warum ich? Aber ja, ich stimme Alice zu..."
 
     # game/dialogues/breakfast.rpy:628
     old "Да, вот интересно, как часто он будет нарушать это пространство..."
@@ -2416,7 +2416,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:705
     old "Извини, мам..."
-    new "Es tut mir leid, Mom."
+    new "Es tut mir leid, Mom..."
 
     # game/dialogues/breakfast.rpy:751
     old "Горничной Эрика!"
@@ -2444,7 +2444,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:776
     old "Нормальный мужик"
-    new "Normaler Typ."
+    new "Der Mann ist ganz okay"
 
     # game/dialogues/breakfast.rpy:779
     old "Извини, мам, я пошутил..."
@@ -2460,7 +2460,7 @@ translate deutsch strings:
 
     # game/dialogues/breakfast.rpy:786
     old "Вас тоже пороли?"
-    new "Wurdet euch auch der Hintern versohlt?"
+    new "Wurdet ihr auch geschlagen?"
 
     # game/dialogues/breakfast.rpy:795
     old "А ещё он маме предложение сделал..."

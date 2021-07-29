@@ -370,7 +370,7 @@ translate deutsch get_laptop_6bc8db4b:
 translate deutsch lisa_dressed_repetitor_6d6b727b:
 
     # Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..." nointeract
-    Max_09 "Lisa scheint irgendwo hinzugehen, aber die Tür ist geschlossen..." nointeract
+    Max_09 "Lisa scheint irgendwo hinzugehen, denn die Tür ist geschlossen..." nointeract
 
 # game/events/lisa.rpy:561
 translate deutsch lisa_bath_96660cea:
@@ -1867,4 +1867,12 @@ translate deutsch lisa_shower_pinded_e472503c:
 
     # Max_10 "Вот же попал!"
     Max_10 "So ein Mist!"
+
+# TODO: Translation updated at 2021-07-29 12:16
+
+# game/events/lisa.rpy:501
+translate deutsch lisa_dressed_school_open_door2_c7d16562:
+
+    # Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..." nointeract
+    Lisa_02 "" nointeract
 

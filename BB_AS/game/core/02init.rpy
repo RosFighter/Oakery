@@ -132,7 +132,7 @@ define talks = {
     'alice_dw'   : TalkTheme('alice', _("Насчёт посуды..."), 'wash_dishes_alice', "not alice.daily.dishes and alice.plan_name == 'dishes'", -2),
     'alice_tv'   : TalkTheme('alice', _("Не возражаешь против компании?"), 'alice_talk_tv', "not alice.daily.tvwatch and alice.plan_name == 'tv'"),
     'aboutbooks' : TalkTheme('alice', _("Что читаешь?"), 'alice_aboutbooks', "alice.plan_name == 'read' and not poss['secretbook'].used(0)"),
-    'alice_peep' : TalkTheme('alice', _("Хотел извиниться за утренний инцидент..."), 'Alice_sorry', "all([alice.daily.shower==3, alice.dcv.shower.done, not alice.flags.touched])"),
+    'alice_peep' : TalkTheme('alice', _("Хотел извиниться за утренний инцидент..."), 'Alice_sorry', "all([alice.daily.shower==3, alice.dcv.shower.done, not (alice.flags.touched and len(alice.sorry.give)>3)])"),
     'alice_sol'  : TalkTheme('alice', _("Загораешь?"), 'Alice_solar', "all([not alice.hourly.sun_cream, any([not alice.daily.oiled, alice.daily.oiled==3]), alice.plan_name == 'sun'])"),
     'alice_gift' : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_sorry_gifts', "all([len(alice.sorry.give)<3, alice.sorry.owe, alice.sorry.there_in_stock(), alice.plan_name in ['sun', 'read', 'resting', 'blog'], alice.daily.oiled != 2])"),
     'alice_gift2': TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_gift_sweets', "all([len(alice.sorry.give)>2, alice.sorry.owe, alice.sorry.there_in_stock(), alice.plan_name in ['sun', 'read', 'resting', 'blog'], (alice.daily.oiled!=2 or alice.flags.touched)])"),

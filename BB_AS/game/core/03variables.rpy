@@ -222,6 +222,8 @@ label AddEric:
     call set_eric_schedule from _call_set_eric_schedule_1
     call ann_after_appearance_eric from _call_ann_after_appearance_eric_1
     $ infl[ann].freeze = False
+
+    $ items['hide_cam'].unblock()
     return
 
 
