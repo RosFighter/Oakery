@@ -1380,5 +1380,5 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Главное поймать её снова с сигаретой. Тогда и убедить будет куда проще..."
-    new ""
+    new "Die Hauptsache ist, dass ich sie wieder mit einer Zigarette erwische. Dann wird es viel leichter sein, sie zu überzeugen..."
 
