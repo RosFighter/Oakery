@@ -279,4 +279,3 @@ translate english strings:
     # game/script.rpy:122
     old "{i}повторить{/i}"
     new "{i}repeat{/i}"
-

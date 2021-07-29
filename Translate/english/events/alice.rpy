@@ -4188,3 +4188,4 @@ translate english strings:
     # game/events/alice.rpy:2610
     old "Нет, я даже не близко..."
     new "No, I'm not even close..."
+

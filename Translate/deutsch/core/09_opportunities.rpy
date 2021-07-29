@@ -1374,3 +1374,11 @@ translate deutsch strings:
     old "Нужно и дальше защищать Алису от наказаний..."
     new "Ich glaube, ich sollte Alice weiterhin vor einer Bestrafung schützen..."
 
+# TODO: Translation updated at 2021-07-29 12:16
+
+translate deutsch strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Главное поймать её снова с сигаретой. Тогда и убедить будет куда проще..."
+    new ""
+

@@ -1366,3 +1366,11 @@ translate english strings:
     # game/core/09_opportunities.rpy:682
     old "Нужно и дальше защищать Алису от наказаний..."
     new "We must continue to protect Alice from punishment..."
+# TODO: Translation updated at 2021-07-29 12:15
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Главное поймать её снова с сигаретой. Тогда и убедить будет куда проще..."
+    new ""
+
