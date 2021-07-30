@@ -1372,5 +1372,5 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Главное поймать её снова с сигаретой. Тогда и убедить будет куда проще..."
-    new ""
+    new "I need to catch her smoking again. Then it will be much easier to convince her..."
 

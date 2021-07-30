@@ -1894,5 +1894,5 @@ translate english lisa_shower_pinded_e472503c:
 translate english lisa_dressed_school_open_door2_c7d16562:
 
     # Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Not yet! Consider yourself lucky, but please let me change..." nointeract
 
