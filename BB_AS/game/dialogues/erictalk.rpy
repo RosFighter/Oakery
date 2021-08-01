@@ -111,7 +111,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 01-bj01a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
-        #annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
+        # annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
 
         Max_07 "К вам ведь можно?"
         Eric_03 "Да, Макс, проходи..."
@@ -122,7 +122,7 @@ label lessons_from_Eric:
             show other Eric watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
         with Fade(0.4, 0, 0.3)
-        #annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
+        # annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Ann_14 "Эрик! Ты правда хочешь, чтобы он смотрел, как мы с тобой... здесь..."
         Eric_09 "Ань, расслабься! Детям нужно об этом от кого-то узнать. Или ты хочешь, чтобы они выросли неприспособленными к нормальной социальной жизни!?"
@@ -135,7 +135,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 01-bj01a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
-        #annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
+        # annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
 
         Eric_01 "Именно, Ань! И лишь в такие интимные моменты ты можешь показать ему, как ты о нём заботишься и как он для тебя важен."
         Ann_14 "Прости, Макс... Я была такой никудышной матерью по отношению к тебе..."
@@ -146,7 +146,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
-        #annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
+        # annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Eric_02 "А теперь Ань, ты должна вести себя так, как вела бы, если бы мы были только вдвоём! Давай, продолжай то, на чём мы остановились..."
         Ann_12 "Да, ты прав, я должна сделать это, ради Макса..."
@@ -160,7 +160,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 03-bj01a
         $ renpy.show('Max annroom-watch 03-bj01'+mgg.dress)
-        #annroom-watch-03-bj01 + annroom-watch-03-bj01-ann&eric-(01-01a) + annroom-watch-03-bj01-max-(01-01b)
+        # annroom-watch-03-bj01 + annroom-watch-03-bj01-ann&eric-(01-01a) + annroom-watch-03-bj01-max-(01-01b)
 
         Max_08 "{i}( Вау! Мама продолжила отсасывать Эрику! При мне... Хотя, видно что делает она это не так чувственно, как раньше. ){/i}"
         Eric_05 "Смотри Макс, как хороша твоя мама! А ты Ань, не стесняйся, делай это уверенно... Покажи Максу, каким удовольствием делятся любящие друг друга люди."
@@ -175,7 +175,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 04-bj01a
         $ renpy.show('Max annroom-watch 04-bj01'+mgg.dress)
-        #annroom-watch-04-bj01 + annroom-watch-04-bj01-ann&eric-(01-01a) + annroom-watch-04-bj01-max-(01-01b)
+        # annroom-watch-04-bj01 + annroom-watch-04-bj01-ann&eric-(01-01a) + annroom-watch-04-bj01-max-(01-01b)
 
         Max_10 "{i}( Какая же она обалденная! Такую женщину я бы с удовольствием ласкал часами... Она это заслуживает! ){/i}"
         Eric_01 "Твоя мама ещё довольно скована, так что для первого раза думаю достаточно. Нет ничего такого в том, чтобы делиться близостью, но ей нужно время, чтобы привыкнуть."
@@ -191,7 +191,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 01-bj02a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
-        #annroom-watch-01 + annroom-watch-01-ann&eric-bj(02-02a) + annroom-watch-01-max-(01-01b)
+        # annroom-watch-01 + annroom-watch-01-ann&eric-bj(02-02a) + annroom-watch-01-max-(01-01b)
 
         Max_07 "К вам ведь можно?"
         Eric_03 "Да, Макс, проходи... Твоей маме как раз есть о чём тебе рассказать!"
@@ -202,7 +202,7 @@ label lessons_from_Eric:
             show other Eric watch 02-bj02a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
         with Fade(0.4, 0, 0.3)
-        #annroom-watch-02-bj02 + annroom-watch-02-bj02-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
+        # annroom-watch-02-bj02 + annroom-watch-02-bj02-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Ann_13 "А вам не кажется, что это уже слишком!?"
         Max_01 "{i}( Похоже, я застал маму в очень... открытом положении. Она уже не так враждебна, как в первый раз, но очень смущена! ){/i}"
@@ -221,7 +221,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 03-bj02a
         $ renpy.show('Max annroom-watch 03-bj02'+mgg.dress)
-        #annroom-watch-03-bj02 + annroom-watch-03-bj02-ann&eric-(01-01a) + annroom-watch-03-bj02-max-(01-01b)
+        # annroom-watch-03-bj02 + annroom-watch-03-bj02-ann&eric-(01-01a) + annroom-watch-03-bj02-max-(01-01b)
 
         Max_07 "{i}( Так близко к голой маминой попке я ещё не был! А она ведь ещё при этом Эрику отсасывает... Да уж, это что-то нереальное! ){/i}"
         Eric_04 "Ого, Ань! Мне кажется или ты стала ещё более мокренькой, чем всегда?"
@@ -236,7 +236,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 04-bj02a
         $ renpy.show('Max annroom-watch 04-bj02'+mgg.dress)
-        #annroom-watch-04-bj02 + annroom-watch-04-bj02-ann&eric-(01-01a) + annroom-watch-04-bj02-max-(01-01b)
+        # annroom-watch-04-bj02 + annroom-watch-04-bj02-ann&eric-(01-01a) + annroom-watch-04-bj02-max-(01-01b)
 
         Max_04 "{i}( Не могу перестать представлять себя на месте Эрика! Я бы намертво вцепился в её шикарную попку, пока она не кончила бы... ){/i}"
         Eric_01 "Я думаю, на сегодня ты увидел достаточно, Макс. Твою маму ещё немного смущает, что ты смотришь."
@@ -252,7 +252,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 01-bj03a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
-        #annroom-watch-01 + annroom-watch-01-ann&eric-bj(03-03a) + annroom-watch-01-max-(01-01b)
+        # annroom-watch-01 + annroom-watch-01-ann&eric-bj(03-03a) + annroom-watch-01-max-(01-01b)
 
         Max_07 "К вам ведь можно?"
         Eric_03 "Да, Макс, как раз вовремя... Мы кое-что тебе покажем, да Ань!?"
@@ -263,7 +263,7 @@ label lessons_from_Eric:
             show other Eric watch 02-bj03a
         $ renpy.show('Max annroom-watch 02-bj03'+mgg.dress)
         with Fade(0.4, 0, 0.3)
-        #annroom-watch-02-bj03 + annroom-watch-02-bj03-ann&eric-(01-01a) + annroom-watch-02-bj03-max-(01-01b)
+        # annroom-watch-02-bj03 + annroom-watch-02-bj03-ann&eric-(01-01a) + annroom-watch-02-bj03-max-(01-01b)
 
         Ann_12 "Ты правда думаешь, что ему нужно такое показывать?"
         Eric_05 "Просто расслабься, детка... И делай, что нужно! Такое Максу тоже не лишним будет знать."
@@ -278,7 +278,7 @@ label lessons_from_Eric:
         show Eric watch 03-bj03
         if _stockings:
             show other Eric watch 03-bj03a
-        #annroom-watch-03-bj03 + annroom-watch-03-bj03-ann&eric-(01-01a) + annroom-watch-03-bj03-max-(01-01b)
+        # annroom-watch-03-bj03 + annroom-watch-03-bj03-ann&eric-(01-01a) + annroom-watch-03-bj03-max-(01-01b)
 
         Max_08 "{i}( Ого! Мама уже так спокойно стала сосать его член при мне, вот это да... Реально поражаюсь тому, как Эрик манипулирует и обрабатывает людей! ){/i}"
         Eric_06 "Да-а-а, детка, вот так... Скоро, Макс, ты уже будешь знать об этом всё, что только можно!"
@@ -295,7 +295,7 @@ label lessons_from_Eric:
         if _stockings:
             show other Eric watch 04-bj03a
         $ renpy.show('Max annroom-watch 04-bj03'+mgg.dress)
-        #annroom-watch-04-bj03 + annroom-watch-04-bj03-ann&eric-(01-01a) + annroom-watch-04-bj03-max-(01-01b)
+        # annroom-watch-04-bj03 + annroom-watch-04-bj03-ann&eric-(01-01a) + annroom-watch-04-bj03-max-(01-01b)
 
         Max_04 "{i}( Как только этот Эрик не крутит мамой! Хотя, такую фигуристую красотку я бы тоже покрутил на своём члене... ){/i}"
         Eric_04 "Главное, Макс, это двигаться уверенно, чтобы и она чувствовала, чего ты хочешь. Если она захочет сильнее, глубже или быстрее, то сама направит тебя своими прикосновениями..."
@@ -325,7 +325,7 @@ label Eric_talk_about_Lisa_0:
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
     with Fade(0.4, 0, 0.3)
 
-    # #max&eric-terrace-00 + max + eric
+    # # max&eric-terrace-00 + max + eric
     Eric_00 "Макс, нам нужно поговорить наедине."
     Max_07 "Я слушаю..."
     Eric_01 "Как там твоя младшая сестрёнка, проявляет сексуальный интерес к кому-нибудь?"
@@ -457,7 +457,7 @@ label Eric_talk_about_Lisa_1:
 
 label Eric_talk_about_Alice_0:
 
-    #max&eric-terrace-00 + max + eric
+    # max&eric-terrace-00 + max + eric
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)

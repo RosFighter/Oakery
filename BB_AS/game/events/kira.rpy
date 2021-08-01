@@ -461,7 +461,7 @@ label kira_bath:
         jump .end_sleep
 
     label .caught:
-        #catch-bath-00 + (catch-bath-00-max&kira-cun или catch-bath-00-max&kira-hj) + catch-bath-00-eric-01
+        # catch-bath-00 + (catch-bath-00-max&kira-cun или catch-bath-00-max&kira-hj) + catch-bath-00-eric-01
         scene BG char Eric catch-bath-00
         $ renpy.show('Kira catch bath '+catch)
         show Eric catch bath 00
@@ -471,7 +471,7 @@ label kira_bath:
         Eric_06 "Неужели вы тут на самом деле на лыжах катаетесь?! А так сразу и не скажешь!"
         Max_14 "Нет, просто так получилось..."
 
-        #catch-bath-01 + catch-bath-01-max-kira-eric-01
+        # catch-bath-01 + catch-bath-01-max-kira-eric-01
         scene BG char Eric catch-bath-01
         show Eric catch bath 01
 
@@ -480,7 +480,7 @@ label kira_bath:
         Eric_05 "Это как посмотреть. Думаю, всем здесь понятно, что держать этот секрет в тайне от всех остальных я за просто так не стану..."
         Kira_13 "И что ты хочешь?"
 
-        #bath-bj-01 + catch-bath-01-max-kira-eric-02
+        # bath-bj-01 + catch-bath-01-max-kira-eric-02
         scene BG char Kira bath-bj-01
         show Eric catch bath 02
         Eric_03 "Сомневаюсь, что это Макс тебя совратил, а значит отдуваться тебе, Кира! Мне должно быть {b}приятно{/b} хранить этот секрет! Если понимаешь, о чём я..."
@@ -489,7 +489,7 @@ label kira_bath:
         Kira_14 "Мы тут слишком застигнуты врасплох. Нужно время, чтобы подумать."
         Eric_02 "Только не тяните с этим, а то я заскучаю... Ещё увидимся, если вы примете верное решение."
 
-        #bath-mass-02 + catch-bath-01-max-kira-eric-03
+        # bath-mass-02 + catch-bath-01-max-kira-eric-03
         scene BG char Kira bath-mass-02
         show Eric catch bath 03
         if GetRelMax('eric')[0]>0 and kira.dcv.battle.stage == 1:
@@ -522,7 +522,7 @@ label kira_bath:
         $ ch3 = GetChance(mgg.sex+10, 2, 900)
         $ ch2 = GetChance(mgg.sex, 33, 900)
 
-        #bath-sex-03 + bath-max&kira-sex01-01
+        # bath-sex-03 + bath-max&kira-sex01-01
         scene BG char Kira bath-sex-03
         show Kira bath-sex 01-01
         menu:
@@ -533,7 +533,7 @@ label kira_bath:
             #(Удалось сдержаться!)
             $ Skill('sex', 0.2)
             $ kira.stat.sex += 1
-            #bath-sex-04 + bath-max&kira-sex01-02a или bath-sex-05 + bath-max&kira-sex01-02b
+            # bath-sex-04 + bath-max&kira-sex01-02a или bath-sex-05 + bath-max&kira-sex01-02b
             if renpy.random.randint(0, 1):
                 scene BG char Kira bath-sex-04
                 show Kira bath-sex 01-02a
@@ -545,7 +545,7 @@ label kira_bath:
             menu:
                 Kira_12 "О да! Я больше не могу, Макс... Ммм... Ох, как хорошо! Да, я кончаю... Ахх..."
                 "{i}кончить в неё{/i}":
-                    #bath-sex-03 + bath-max&kira-sex01-01 + bath-max&kira-sex01-cum01
+                    # bath-sex-03 + bath-max&kira-sex01-01 + bath-max&kira-sex01-cum01
                     scene BG char Kira bath-sex-03
                     show Kira bath-sex 01-01
                     show FG Kira bath-sex 01-cum01
@@ -554,7 +554,7 @@ label kira_bath:
                     jump .end_sex
 
                 "{i}кончить ей на ноги{/i}":
-                    #bath-fj-03 + bath-fj-03-max-01-kira-01
+                    # bath-fj-03 + bath-fj-03-max-01-kira-01
                     scene BG char Kira bath-fj-03
                     show Kira bath-mass fj3-01
                     Kira_08 "Фух, Макс, ну мы и выдали с тобой..."
@@ -566,7 +566,7 @@ label kira_bath:
 
         else:
             # (Не удалось сдержаться!)
-            #bath-sex-03 + bath-max&kira-sex01-01 + bath-max&kira-sex01-cum01
+            # bath-sex-03 + bath-max&kira-sex01-01 + bath-max&kira-sex01-cum01
             scene BG char Kira bath-sex-03
             show Kira bath-sex 01-01
             show FG Kira bath-sex 01-cum01
@@ -584,7 +584,7 @@ label kira_bath:
         $ ch3 = GetChance(mgg.sex+10, 2, 900)
         $ ch2 = GetChance(mgg.sex, 33, 900)
 
-        #bath-sex-01 + bath-max&kira-sex02-01
+        # bath-sex-01 + bath-max&kira-sex02-01
         scene BG char Kira bath-sex-01
         show Kira bath-sex 02-01
         menu:
@@ -593,7 +593,7 @@ label kira_bath:
                 pass
         if RandomChance(ch3.ch) or _in_replay:
             # (Удалось сдержаться!)
-            #bath-cun-02 + bath-max&kira-sex02-02a или bath-sex-02 + bath-max&kira-sex02-02b
+            # bath-cun-02 + bath-max&kira-sex02-02a или bath-sex-02 + bath-max&kira-sex02-02b
             if renpy.random.randint(0, 1):
                 scene BG bath-cun-02
                 show Kira bath-sex 02-02a
@@ -607,7 +607,7 @@ label kira_bath:
             menu:
                 Kira_12 "О да! Трахай меня ещё быстрее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, вот так... Ммм... Да, я кончаю... Ахх..."
                 "{i}кончить в неё{/i}":
-                    #bath-sex-01 + bath-max&kira-sex02-01 + bath-max&kira-sex02-cum01
+                    # bath-sex-01 + bath-max&kira-sex02-01 + bath-max&kira-sex02-cum01
                     scene BG char Kira bath-sex-01
                     show Kira bath-sex 02-01
                     show FG Kira bath-sex 02-cum01
@@ -616,7 +616,7 @@ label kira_bath:
                     jump .end_sex
 
                 "{i}кончить ей на попку{/i}":
-                    #bath-cun-01 + bath-max&kira-sex02-03 + bath-max&kira-sex02-(cum02a/cum02b)
+                    # bath-cun-01 + bath-max&kira-sex02-03 + bath-max&kira-sex02-(cum02a/cum02b)
                     scene BG bath-cun-01
                     show Kira bath-sex 02-03
                     if renpy.random.randint(0, 1):
@@ -631,7 +631,7 @@ label kira_bath:
                     jump .cum_in_her_mouth
         else:
             # (Не удалось сдержаться!)
-            #bath-sex-01 + bath-max&kira-sex02-01 + bath-max&kira-sex02-cum01
+            # bath-sex-01 + bath-max&kira-sex02-01 + bath-max&kira-sex02-cum01
             scene BG char Kira bath-sex-01
             show Kira bath-sex 02-01
             show FG Kira bath-sex 02-cum01
@@ -647,7 +647,7 @@ label kira_bath:
     label .cum_in_her_mouth:
         if RandomChance(ch2.ch) or _in_replay:
             # (Удалось сдержаться!)
-            #bath-cun-01 + bath-bj-02-max-01-kira-01 или bath-bj-02 + bath-bj-02-max-02-kira-02
+            # bath-cun-01 + bath-bj-02-max-01-kira-01 или bath-bj-02 + bath-bj-02-max-02-kira-02
             if renpy.random.randint(0, 1):
                 scene BG bath-cun-01
                 show Kira bath-mass bj-03
@@ -658,11 +658,11 @@ label kira_bath:
                 Max_21 "[restrain!t]Ухх... Какие же горячие и ненасытные у тебя губки... Ты просто бесподобно сосёшь, тётя Кира! Да..."
                 "{i}кончить{/i}":
                     pass
-            #bath-bj-02 + bath-bj-03-max-02-kira-02
+            # bath-bj-02 + bath-bj-03-max-02-kira-02
             scene BG char Kira bath-bj-02
             show Kira bath-mass bj-05
             Max_06 "{i}( Да... Она принимает всю мою сперму не вынимая член изо рта! О боже... Кажется, я её люблю! Хотя, что я болтаю... Но как же это приятно! ){/i}"
-            #bath-cum-01 + bath-cum-02-max-01-kira-01
+            # bath-cum-01 + bath-cum-02-max-01-kira-01
             scene BG bath-cun-01
             show Kira bath-mass cum-02
             Kira_08 "Вот и твоё напряжение мы сняли! Какие мы сегодня молодцы... Мне очень это всё понравилось!"
@@ -671,12 +671,12 @@ label kira_bath:
             jump .end_sex
         else:
             # (Не удалось сдержаться!)
-            #bath-cun-02 + bath-hj-01-max-02-kira-02
+            # bath-cun-02 + bath-hj-01-max-02-kira-02
             scene BG bath-cun-02
             show Kira bath-mass hj-02
             Kira_08 "[norestrain!t]Ого! Кто-то у нас тут слишком перевозбудился... Я даже не успела ничего сделать..."
             Max_20 "Фух... Я уже просто не мог... Принимать с тобой ванну - очень горячо, тётя Кира."
-            #bath-cum-01 + bath-cum-01-max-01-kira-01
+            # bath-cum-01 + bath-cum-01-max-01-kira-01
             scene BG char Kira bath-cum-01
             show Kira bath-mass cum-01
             Kira_05 "Да, Макс, такая вот у тебя тётя! Но мне всё равно очень понравилось!"
@@ -836,7 +836,7 @@ label kira_night_swim:
                             $ Skill('sex', 0.2)
                             Kira_07 "[restrain!t]Похоже, против таких приёмов, ты просто так сдаваться не собираешься... Как думаешь, долго ли ты продержишься, если твой дружок окажется у меня во рту?"
                             Max_02 "Давай проверим..."
-                            #pool-night-05-m&k-02
+                            # pool-night-05-m&k-02
                             scene Kira pool-night 11
                             Max_20 "{i}( Д-а-а... Она сосёт просто потрясающе! Так смачно и жадно... Как же приятно, когда мой член проскальзывает сквозь её нежные губки прямо в рот! ){/i}"
                             menu:
@@ -846,11 +846,11 @@ label kira_night_swim:
                                         # (Удалось сдержаться!)
                                         $ Skill('sex', 0.2)
                                         $ added_mem_var('bj_in_pool')
-                                        #pool-night-06-m&k-02
+                                        # pool-night-06-m&k-02
                                         scene Kira pool-night 12
                                         Max_21 "[restrain!t]{i}( Вот чёрт! Я двигаюсь ей навстречу, а она всё глубже берёт его в рот! И всё больше и больше ускоряется... Такое я долго не выдержу! Я уже на грани... ){/i}"
                                         Max_22 "Тётя Кира, да... Я сейчас кончу... Давай ещё глубже! А-а-а..."
-                                        #pool-night-05-m&k-01 + pool-night-05-m&k-01cum или pool-night-06-m&k-01 + pool-night-06-m&k-01cum
+                                        # pool-night-05-m&k-01 + pool-night-05-m&k-01cum или pool-night-06-m&k-01 + pool-night-06-m&k-01cum
                                         $ r1 = renpy.random.choice(['08', '09'])
                                         $ renpy.scene()
                                         $ renpy.show('Kira pool-night '+r1)
@@ -1692,7 +1692,7 @@ label kira_night_tv:
                     "{i}продолжить пальцами и языком{/i}":
                         show Kira tv-game cun-03ba
 
-                if kira.dcv.photo.stage>1:  #kira.dcv.feature.stage>7:
+                if kira.dcv.photo.stage>1:  # kira.dcv.feature.stage>7:
                     # была 2-ая фотосессия, секс
                     # тут в шортах
                     jump .tv_sex1
@@ -1746,7 +1746,7 @@ label kira_night_tv:
             scene BG char Alice tv-mass-11
             show Kira tv-game cun-06-3
 
-        if kira.dcv.photo.stage>1:  #kira.dcv.feature.stage>7:
+        if kira.dcv.photo.stage>1:  # kira.dcv.feature.stage>7:
             # была 2-ая фотосессия, секс
             Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
             jump .tv_sex2
@@ -1859,7 +1859,7 @@ label kira_night_tv:
                     "{i}продолжить пальцами и языком{/i}":
                         show Kira tv-game cun-03bb
 
-                if kira.dcv.photo.stage>1:  #kira.dcv.feature.stage>7:
+                if kira.dcv.photo.stage>1:  # kira.dcv.feature.stage>7:
                     # была 2-ая фотосессия, секс
                     $ naked = True
                     jump .tv_sex1
@@ -1881,7 +1881,7 @@ label kira_night_tv:
         jump .bj
 
     label .tv_sex1:
-        #tv-cun-01 + tv-cun-01-max-03a-kira-03a
+        # tv-cun-01 + tv-cun-01-max-03a-kira-03a
         scene BG tv-cun-01
         if naked:
             show Kira tv-game cun-03bb
@@ -1907,7 +1907,7 @@ label kira_night_tv:
             Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
             "{i}трахнуть тётю Киру (догги-стайл){/i}":
                 pass
-        #tv-max&kira-sex02-01-f + tv-max&kira-sex02-01
+        # tv-max&kira-sex02-01-f + tv-max&kira-sex02-01
         scene BG tv-sex02-01
         show Kira tv-sex 02-01
         menu:
@@ -1918,15 +1918,15 @@ label kira_night_tv:
             # (Удалось сдержаться!)
             $ r1 = renpy.random.randint(1, 3)
             if r1 < 2:
-                #tv-max&kira-sex02-01-f + tv-max&kira-sex02-02a
+                # tv-max&kira-sex02-01-f + tv-max&kira-sex02-02a
                 scene BG tv-sex02-01
                 show Kira tv-sex 02-02a
             elif r1 < 3:
-                #tv-mass-03 + tv-max&kira-sex02-02b
+                # tv-mass-03 + tv-max&kira-sex02-02b
                 scene BG tv-mass-03
                 show Kira tv-sex 02-02b
             else:
-                #after-club-s09a-f + tv-max&kira-sex02-02c
+                # after-club-s09a-f + tv-max&kira-sex02-02c
                 scene BG char Kira after-club-s09a-f
                 show Kira tv-sex 02-02c
 
@@ -1937,7 +1937,7 @@ label kira_night_tv:
             menu:
                 Kira_12 "О да! Ещё... ещё, Макс... Да, вот так... Ммм... Трахай меня ещё быстрее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..."
                 "{i}кончить в неё{/i}":
-                    #tv-max&kira-sex02-01-f + tv-max&kira-sex02-01 + tv-max&kira-sex02-cum01
+                    # tv-max&kira-sex02-01-f + tv-max&kira-sex02-01 + tv-max&kira-sex02-cum01
                     scene BG tv-sex02-01
                     show Kira tv-sex 02-01
                     show FG Kira tv-sex 02-cum01
@@ -1946,7 +1946,7 @@ label kira_night_tv:
                     jump .end_sex
 
                 "{i}кончить ей на попку{/i}":
-                    #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
+                    # tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
                     scene BG tv-sex03-01
                     show Kira tv-sex 02-03
                     $ renpy.show('FG Kira tv-sex 02-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
@@ -1962,13 +1962,13 @@ label kira_night_tv:
                 "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_night_tv.minet_after_sex')):  #(большой секс опыт)
                     if RandomChance(_ch_sex2.ch) or _in_replay:
                         # (Удалось сдержаться!)
-                        #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03
+                        # tv-max&kira-sex03-01-f + tv-max&kira-sex02-03
                         scene BG tv-sex03-01
                         show Kira tv-sex 02-03
                         jump .minet_after_sex
 
             # (Не удалось сдержаться!)
-            #tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
+            # tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
             scene BG tv-sex03-01
             show Kira tv-sex 02-03
             $ renpy.show('FG Kira tv-sex 02-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
@@ -1978,7 +1978,7 @@ label kira_night_tv:
             jump .end_sex
 
         # (Не удалось сдержаться!)
-        #tv-max&kira-sex02-01-f + tv-max&kira-sex02-01 + tv-max&kira-sex02-cum01
+        # tv-max&kira-sex02-01-f + tv-max&kira-sex02-01 + tv-max&kira-sex02-cum01
         scene BG tv-sex02-01
         show Kira tv-sex 02-01
         show FG Kira tv-sex 02-cum01
@@ -1990,7 +1990,7 @@ label kira_night_tv:
     label .missionary:
         $ _ch_sex2 = GetChance(mgg.sex+5, 2, 900)
         $ _ch_sex4 = GetChance(mgg.sex+10, 4, 900)
-        #tv-max&kira-sex03-01-f + tv-max&kira-sex03-01
+        # tv-max&kira-sex03-01-f + tv-max&kira-sex03-01
         scene BG tv-sex03-01
         show Kira tv-sex 03-01
         menu:
@@ -1999,7 +1999,7 @@ label kira_night_tv:
                 pass
         if RandomChance(_ch_sex4.ch) or _in_replay:
             # (Удалось сдержаться!)
-            #tv-max&kira-sex03-01-f + tv-max&kira-sex03-02a или tv-mass-03 + tv-max&kira-sex03-02b
+            # tv-max&kira-sex03-01-f + tv-max&kira-sex03-02a или tv-mass-03 + tv-max&kira-sex03-02b
             if renpy.random.randint(1, 2) < 2:
                 scene BG tv-sex03-01
                 show Kira tv-sex 03-02a
@@ -2014,7 +2014,7 @@ label kira_night_tv:
             menu:
                 Kira_12 "О да! Ещё... ещё, Макс... Да, вот так... Ммм... Трахай меня ещё сильнее! Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..."
                 "{i}кончить в неё{/i}":
-                    #tv-max&kira-sex03-01-f + tv-max&kira-sex03-01 + tv-max&kira-sex03-cum01
+                    # tv-max&kira-sex03-01-f + tv-max&kira-sex03-01 + tv-max&kira-sex03-cum01
                     scene BG tv-sex03-01
                     show Kira tv-sex 03-01
                     show FG Kira tv-sex 03-cum01
@@ -2023,7 +2023,7 @@ label kira_night_tv:
                     jump .end_sex
 
                 "{i}кончить ей на живот{/i}":
-                    #tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
+                    # tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
                     scene BG tv-mass-07
                     show Kira tv-sex 03-03
                     $ renpy.show('FG Kira tv-sex 03-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
@@ -2039,13 +2039,13 @@ label kira_night_tv:
                 "Порадуешь меня минетом, тётя Кира? {color=[_ch_sex2.col]}(Сексуальный опыт. Шанс: [_ch_sex2.vis]){/color}" if not _in_replay or (_in_replay and renpy.seen_label('kira_night_tv.minet_after_sex')):  #(большой секс опыт)
                     if RandomChance(_ch_sex2.ch) or _in_replay:
                         # (Удалось сдержаться!)
-                        #tv-mass-07 + tv-max&kira-sex03-03
+                        # tv-mass-07 + tv-max&kira-sex03-03
                         scene BG tv-mass-07
                         show Kira tv-sex 03-03
                         jump .minet_after_sex
 
             # не удалось сдержаться при попытке минета
-            #tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
+            # tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
             scene BG tv-mass-07
             show Kira tv-sex 03-03
             $ renpy.show('FG Kira tv-sex 03-cum02'+('a' if renpy.random.randint(1, 2)<2 else 'b'))
@@ -2055,7 +2055,7 @@ label kira_night_tv:
             jump .end_sex
 
         # (Не удалось сдержаться!)
-        #tv-max&kira-sex03-01-f + tv-max&kira-sex03-01 + tv-max&kira-sex03-cum01
+        # tv-max&kira-sex03-01-f + tv-max&kira-sex03-01 + tv-max&kira-sex03-cum01
         scene BG tv-sex03-01
         show Kira tv-sex 03-01
         show FG Kira tv-sex 03-cum01
@@ -2068,28 +2068,28 @@ label kira_night_tv:
         # (Удалось сдержаться!)
         $ r1 = renpy.random.randint(1, 3)
         if r1 < 2:
-            #lounge-tv-01 + tv-bj-02-max&kira-01a
+            # lounge-tv-01 + tv-bj-02-max&kira-01a
             scene BG lounge-tv-01
             show Kira tv-game bj-02-01a
         elif r1 < 3:
-            #after-club-s08a-f + tv-bj-02-max&kira-01b
+            # after-club-s08a-f + tv-bj-02-max&kira-01b
             scene BG char Kira after-club-s08a-f
             show Kira tv-game bj-02-01b
         else:
-            #after-club-s04-f + tv-bj-02-max&kira-01c
+            # after-club-s04-f + tv-bj-02-max&kira-01c
             scene BG after-club-s04-f
             show Kira tv-game bj-02-01c
 
         Max_20 "[restrain!t]{i}Ухх, как же смачно она посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот, но она справляется! А я кончаю... Д-а-а...{/i}"
         $ Skill('sex', 0.2)
-        #tv-mass-07 + tv-bj-02-max&kira-02 + tv-bj-02-max&kira-02-cum03
+        # tv-mass-07 + tv-bj-02-max&kira-02 + tv-bj-02-max&kira-02-cum03
         scene BG tv-mass-07
         show Kira tv-game bj-02-02
         show FG Kira tv-sex 02-cum03
         Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
         Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
         Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
-        #tv-mass-03 + tv-cun-00-max-01a-kira-01a
+        # tv-mass-03 + tv-cun-00-max-01a-kira-01a
         scene BG tv-mass-03
         show Kira tv-game cun-00bb
         jump .end_sex
@@ -2121,11 +2121,11 @@ label kira_night_tv:
                 if RandomChance(_ch_sex2.ch) or _in_replay:
                     # (Удалось сдержаться!)
                     if r1 < 2:
-                        #tv-bj-01 + tv-bj-01-max-06a-kira-06a
+                        # tv-bj-01 + tv-bj-01-max-06a-kira-06a
                         scene BG char Kira tv-bj-01
                         show Kira tv-game bj-06bb
                     else:
-                        #tv-mass-07 + tv-bj-01-max-05a-kira-05a
+                        # tv-mass-07 + tv-bj-01-max-05a-kira-05a
                         scene BG tv-mass-07
                         show Kira tv-game bj-05bb
 
@@ -2137,36 +2137,36 @@ label kira_night_tv:
                             if RandomChance(_ch_sex2.ch) or _in_replay:
                                 # (Удалось сдержаться!)
                                 if r1 < 2:
-                                    #tv-bj-01 + tv-bj-01-max-08a-kira-08a
+                                    # tv-bj-01 + tv-bj-01-max-08a-kira-08a
                                     scene BG char Kira tv-bj-01
                                     show Kira tv-game bj-08bb
                                 else:
-                                    #lounge-tv-01 + tv-bj-01-max-07a-kira-07a
+                                    # lounge-tv-01 + tv-bj-01-max-07a-kira-07a
                                     scene BG lounge-tv-01
                                     show Kira tv-game bj-07bb
                                 Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}"
                                 $ Skill('sex', 0.2)
                                 Max_22 "Тётя Кира, ещё быстрее... Да... Я сейчас кончу... А-а-а..."
                                 Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
-                                #tv-bj-01 + tv-bj-01-max-02a-kira-02b
+                                # tv-bj-01 + tv-bj-01-max-02a-kira-02b
                                 scene BG char Kira tv-bj-01
                                 show Kira tv-game bj-02a
 
                                 Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
                                 Max_05 "Ты потрясающая, тётя Кира! До следующего раза?!"
-                                #tv-mass-01 + tv-bj-01-max-09a-kira-09a
+                                # tv-mass-01 + tv-bj-01-max-09a-kira-09a
                                 scene BG tv-mass-01
                                 show Kira tv-game bj-09bb
                                 jump .end_sex
 
         # (Не удалось сдержаться!)
-        #tv-bj-01 + tv-bj-01-max-04a-kira-04b
+        # tv-bj-01 + tv-bj-01-max-04a-kira-04b
         scene BG char Kira tv-bj-01
         show Kira tv-game bj-04a
         Kira_08 "[norestrain!t]Ого! Ты уже всё! Похоже, тебе ещё привыкать и привыкать к тому, что может вытворять мой ротик, потому что это было только начало..."
         $ Skill('sex', 0.1)
         Max_02 "Значит, до следующего раза?!"
-        #tv-mass-01 + tv-bj-01-max-09a-kira-09a
+        # tv-mass-01 + tv-bj-01-max-09a-kira-09a
         scene BG tv-mass-01
         show Kira tv-game bj-09bb
         jump .end_sex
@@ -2674,7 +2674,7 @@ label kira_alice_shower:
 
 label return_from_club:
 
-    #after-club-alice&kira-00-f + after-club-alice&kira-00
+    # after-club-alice&kira-00-f + after-club-alice&kira-00
     scene BG char Kira after-club-pull
     show Kira after-club 00
     with Fade(0.4, 0, 0.3)
@@ -2708,7 +2708,7 @@ label return_from_club:
                     "{i}отвести тётю в гостиную{/i}":
                         pass
 
-                #after-club-s01-f + after-club-s01-max&kira-01
+                # after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
                 with Fade(0.4, 0, 0.3)
@@ -2718,7 +2718,7 @@ label return_from_club:
                 Kira_05 "Да, я его обожаю... Оно так классно облегает мои формы! Никто не остаётся равнодушным... к моей попке... за которую ты меня так мило придерживаешь."
                 Max_04 "Так удобнее всего тебя направлять... А может расскажешь сейчас, что там ты за стриптиз устроила?"
 
-                #after-club-s02-f + after-club-s02-max&kira-01
+                # after-club-s02-f + after-club-s02-max&kira-01
                 scene BG char Kira after-club-s02-f
                 show Kira after-club s02
 
@@ -2733,7 +2733,7 @@ label return_from_club:
         Kira_05 "И правильно! Такая ночь, как тут спать... Мы вот с Алисой отлично провели время. Оказывается, твоя старшая сестрёнка умеет зажигать!"
         Max_03 "Ого. Рассказывайте, что было?"
 
-        #after-club-alice&kira-00-f + after-club-alice&kira-00a
+        # after-club-alice&kira-00-f + after-club-alice&kira-00a
         show Kira after-club 00a
         with Fade(0.4, 0, 0.3)
 
@@ -2751,7 +2751,7 @@ label return_from_club:
                 Max_01 "Вот, держи конфетку, чтобы не скучать, пока я с тётей..."
                 Alice_02 "Ой, спасибо, это я люблю, Макс. На ночь лучше, конечно, сладости не есть, но разок можно. Ничего плохого не случится. Всё, жду полотенце..."
 
-                #after-club-s01-f + after-club-s01-max&kira-01
+                # after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
                 with Fade(0.4, 0, 0.3)
@@ -2761,7 +2761,7 @@ label return_from_club:
                 Kira_05 "Да, я его обожаю... Оно так классно облегает мои формы! Никто не остаётся равнодушным... к моей попке... за которую ты меня так мило придерживаешь."
                 Max_04 "Так удобнее всего тебя направлять... А может расскажешь сейчас, что там ты за стриптиз устроила?"
 
-                #after-club-s02-f + after-club-s02-max&kira-01
+                # after-club-s02-f + after-club-s02-max&kira-01
                 scene BG char Kira after-club-s02-f
                 show Kira after-club s02
 
@@ -2774,7 +2774,7 @@ label return_from_club:
                         jump alice_after_club.knock
 
             "{i}Отвести тётю в гостиную{/i}":
-                #after-club-s01-f + after-club-s01-max&kira-01
+                # after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
                 with Fade(0.4, 0, 0.3)
@@ -2784,7 +2784,7 @@ label return_from_club:
                 Kira_05 "Да, я его обожаю... Оно так классно облегает мои формы! Никто не остаётся равнодушным... к моей попке... за которую ты меня так мило придерживаешь."
                 Max_04 "Так удобнее всего тебя направлять... А может расскажешь сейчас, что там ты за стриптиз устроила?"
 
-                #after-club-s02-f + after-club-s02-max&kira-01
+                # after-club-s02-f + after-club-s02-max&kira-01
                 scene BG char Kira after-club-s02-f
                 show Kira after-club s02
 
@@ -2798,7 +2798,7 @@ label return_from_club:
 
     label .striptease:
 
-        #after-club-s03-f + after-club-s03-max-01 + after-club-s03-kira-(01/02/03)
+        # after-club-s03-f + after-club-s03-max-01 + after-club-s03-kira-(01/02/03)
         scene BG char Kira after-club-s03-f
         show Max after-club s03
         $ renpy.show("Kira after-club s03-"+renpy.random.choice(['01', '02', '03']))
@@ -2806,7 +2806,7 @@ label return_from_club:
         Kira_02 "А вот твой дружок уже отреагировал на то, как я приспустила платье... Я постараюсь, чтобы ты наслаждался каждой секундой этого стриптиза."
         Max_06 "Я просто нереально рад, что у меня такая потрясающая тётя!"
 
-        #after-club-s04-f + after-club-s04-max-01 + after-club-s04-kira-(01/02/03)
+        # after-club-s04-f + after-club-s04-max-01 + after-club-s04-kira-(01/02/03)
         scene BG after-club-s04-f
         show Max after-club s04
         $ renpy.show("Kira after-club s04-"+renpy.random.choice(['01', '02', '03']))
@@ -2814,7 +2814,7 @@ label return_from_club:
         Kira_04 "Ох! Кажется, я забыла надеть трусики, когда отправилась в клуб... И как же такое могло со мной произойти?!"
         Max_02 "Всё, что не делается - делается к лучшему! Забыла и забыла, я совсем не против..."
 
-        #after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(01/02/03)
+        # after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(01/02/03)
         scene BG char Kira after-club-s05-f
         show Max after-club s05
         $ renpy.show("Kira after-club s05-"+renpy.random.choice(['01', '02', '03']))
@@ -2824,13 +2824,13 @@ label return_from_club:
 
         if kira.dcv.feature.stage < 6:
             #если ещё не было 1-ой фотосессии с Кирой
-            #after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
+            # after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
             $ renpy.show("Kira after-club s05-"+renpy.random.choice(['04', '05']))
 
             Kira_10 "О да, звучит очень заманчиво, Макс! Но у меня так сильно начала кружиться голова! Похоже, я сегодня немного перебрала с алкоголем... Мне лучше прилечь."
             Max_07 "Конечно, тётя Кира, ложись... Значит, никакого продолжения не будет?"
 
-            #tv-mass-03 + tv-cun-00-max-01a-kira-01a
+            # tv-mass-03 + tv-cun-00-max-01a-kira-01a
             scene BG tv-mass-03
             show Kira tv-game cun-00bb
 
@@ -2850,7 +2850,7 @@ label return_from_club:
         $ kira.sleepnaked = True  # Кира будет спать голой
         $ added_mem_var('strip.show')
 
-        #after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
+        # after-club-s05-f + after-club-s05-max-01 + after-club-s05-kira-(04/05)
         scene BG char Kira after-club-s05-f
         show Max after-club s05
         $ renpy.show("Kira after-club s05-"+renpy.random.choice(['04', '05']))
@@ -2858,7 +2858,7 @@ label return_from_club:
         Kira_05 "О да, звучит очень заманчиво, Макс! Но этой ночью я хочу дать тебе выбор... как закончится мой стриптиз... И это будет сложный выбор! Ты же не против, если мы снимем твои шорты?"
         Max_04 "Конечно! Мне уже нравится, к чему всё идёт..."
 
-        #after-club-s06-f + after-club-s06-max&kira-01
+        # after-club-s06-f + after-club-s06-max&kira-01
         scene BG char Kira after-club-s06-f
         show Kira after-club s06
 
@@ -2866,7 +2866,7 @@ label return_from_club:
             Kira_07 "Выбирай с умом, Макс, потому что ты получишь лишь что-то одно! Я могу обласкать твой член либо грудью, либо попкой. Как ты хочешь, чтобы я это сделала?"
             "Хочу грудью!":
 
-                #after-club-s07b-f + after-club-s07b-max&kira-01
+                # after-club-s07b-f + after-club-s07b-max&kira-01
                 scene BG char Kira after-club-s07b-f
                 show Kira after-club s07b
 
@@ -2874,21 +2874,21 @@ label return_from_club:
                 menu:
                     Max_07 "Ухх, чёрт! Тётя Кира, когда ты так красиво это делаешь, выбор и правда становится очень сложным!"
                     "Но я всё равно хочу твою грудь!":
-                        #after-club-s07a-f + after-club-s07a-max&kira-01
+                        # after-club-s07a-f + after-club-s07a-max&kira-01
                         scene BG char Kira after-club-s07a-f
                         show Kira after-club s07a
 
                         Kira_05 "Значит, всё-таки хочешь эти сисечки, да, большой мальчик? И я не могу тебя за это винить! Я знаю, какой это был непростой для тебя выбор. Надеюсь, тебе понравится..."
                         Max_05 "Мне с самого начала это нравится всё больше и больше!"
 
-                        #after-club-s08a-f + after-club-s08a-max&kira-01
+                        # after-club-s08a-f + after-club-s08a-max&kira-01
                         scene BG char Kira after-club-s08a-f
                         show Kira after-club s08a
 
                         jump .boobs
 
                     "Я не могу устоять перед твоей попкой. Хочу её!":
-                        #after-club-s07a-f + after-club-s08b-max&kira-01  ???
+                        # after-club-s07a-f + after-club-s08b-max&kira-01  ???
                         scene BG char Kira after-club-s07a-f
                         show Kira after-club s08b
                         Kira_05 "Значит, всё-таки хочешь эту попку, да, большой мальчик? И я не могу тебя за это винить! Я знаю, какой это был непростой для тебя выбор. Надеюсь, тебе понравится..."
@@ -2897,7 +2897,7 @@ label return_from_club:
 
             "Хочу попкой!":
 
-                #after-club-s07a-f + after-club-s07a-max&kira-01
+                # after-club-s07a-f + after-club-s07a-max&kira-01
                 scene BG char Kira after-club-s07a-f
                 show Kira after-club s07a
 
@@ -2906,21 +2906,21 @@ label return_from_club:
                     Max_07 "Ухх, чёрт! Тётя Кира, когда ты так красиво это делаешь, выбор и правда становится очень сложным!"
                     "Но я всё равно хочу твою попку!":
 
-                        #after-club-s07b-f + after-club-s07b-max&kira-01
+                        # after-club-s07b-f + after-club-s07b-max&kira-01
                         scene BG char Kira after-club-s07b-f
                         show Kira after-club s07b
 
                         Kira_05 "Значит, всё-таки хочешь эту попку, да, большой мальчик? И я не могу тебя за это винить! Я знаю, какой это был непростой для тебя выбор. Надеюсь, тебе понравится..."
                         Max_05 "Мне не переставало это нравится самого начала. И чем дальше, тем больше!"
 
-                        #after-club-s07a-f + after-club-s08b-max&kira-01  ???
+                        # after-club-s07a-f + after-club-s08b-max&kira-01  ???
                         scene BG char Kira after-club-s07a-f
                         show Kira after-club s08b
 
                         jump .ass
 
                     "Я не могу устоять перед твоей грудью. Хочу её!":
-                        #after-club-s08a-f + after-club-s08a-max&kira-01
+                        # after-club-s08a-f + after-club-s08a-max&kira-01
                         scene BG char Kira after-club-s08a-f
                         show Kira after-club s08a
                         Kira_05 "Значит, всё-таки хочешь эти сисечки, да, большой мальчик? И я не могу тебя за это винить! Я знаю, какой это был непростой для тебя выбор. Надеюсь, тебе понравится..."
@@ -2931,21 +2931,21 @@ label return_from_club:
         Kira_06 "Ого! Похоже, наши с тобой размеры идеально совпали! Ну как, тебе нравятся ощущения, Макс? Нравится, как я это делаю? Или хочешь быстрее?"
         Max_06 "Да-а-а, у тебя такая большая и нежная грудь! Обалденные ощущения! Главное, не останавливайся и продолжай..."
 
-        #after-club-s09a-f + after-club-s09a-max&kira-01
+        # after-club-s09a-f + after-club-s09a-max&kira-01
         scene BG char Kira after-club-s09a-f
         show Kira after-club s09a
 
         Kira_09 "Ох, я чувствую, что твоему дружку очень приятно находится в такой тесной компании моих девочек! Он пульсирует всё горячее..."
         Max_20 "{i}( Я без ума от этих сисек! Такие мягкие и большие... Она двигается всё быстрее и мне хочется начать хорошенько трахать её между них... Но что-то не так... ){/i}"
 
-        #after-club-s08a-f + after-club-s10a-max&kira-01
+        # after-club-s08a-f + after-club-s10a-max&kira-01
         scene BG char Kira after-club-s08a-f
         show Kira after-club s10a
 
         Kira_10 "Ой, Макс, у меня так сильно начала кружиться голова! Похоже, я сегодня немного перебрала с алкоголем... Мне нужно немного передохнуть и мы продолжим, хорошо?"
         Max_08 "Ну ладно. А ты уверена, что сможешь? Эээ... Тётя Кира? Заснула... И похоже, что крепко. Ну какой же это облом! Нужно уложить её на диван, пусть отдыхает."
 
-        #lounge-night-02 + kira-sleep-night-(04b/05b/06b)
+        # lounge-night-02 + kira-sleep-night-(04b/05b/06b)
         $ kira.dress = 'b'
         scene BG char Kira lounge-night-02
         $ renpy.show('Kira sleep-closer night '+pose3_4+kira.dress)
@@ -2964,21 +2964,21 @@ label return_from_club:
         Kira_06 "О да! Твой член так плотно там поместился! Ну как, тебе нравятся ощущения, Макс? Нравится, как я это делаю? Или хочешь быстрее?"
         Max_06 "Да-а-а, у тебя такая шикарная и упругая попка! Непередаваемые ощущения! Главное, не останавливайся и продолжай..."
 
-        #after-club-s09b-f + after-club-s09b-max&kira-01
+        # after-club-s09b-f + after-club-s09b-max&kira-01
         scene BG char Kira after-club-s09b-f
         show Kira after-club s09b
 
         Kira_09 "Ох, я чувствую, что твоему дружку очень приятно находится в такой тесной компании моих ягодиц! Он пульсирует всё горячее..."
         Max_20 "{i}( Эта попка просто чумовая! Как же приятно она трётся... двигается всё быстрее! Мне хочется взять и хорошенько оттрахать её сзади... Но что-то не так... ){/i}"
 
-        #after-club-s04-f + after-club-s10b-max&kira-01
+        # after-club-s04-f + after-club-s10b-max&kira-01
         scene BG after-club-s04-f
         show Kira after-club s10b
 
         Kira_10 "Ой, Макс, у меня так сильно начала кружиться голова! Похоже, я сегодня немного перебрала с алкоголем... Мне нужно немного передохнуть и мы продолжим, хорошо?"
         Max_08 "Ну ладно. А ты уверена, что сможешь? Эээ... Тётя Кира? Заснула... И похоже, что крепко. Ну какой же это облом! Нужно уложить её на диван, пусть отдыхает."
 
-        #lounge-night-02 + kira-sleep-night-(04b/05b/06b)
+        # lounge-night-02 + kira-sleep-night-(04b/05b/06b)
         $ kira.dress = 'b'
         scene BG char Kira lounge-night-02
         $ renpy.show('Kira sleep-closer night '+pose3_4+kira.dress)
@@ -3004,7 +3004,7 @@ label kira_bath_with_eric:
         Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!"
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             scene BG bath-00
-            #bath-eric&kira-hj01 или bath-eric&kira-lick01
+            # bath-eric&kira-hj01 или bath-eric&kira-lick01
             if renpy.random.randint(1, 2):
                 show Eric bath-kira hj01
             else:
@@ -3019,7 +3019,7 @@ label kira_bath_with_eric:
             # уйти
             $ spent_time += 10
 
-            #bath-eric&kira-bj01 или bath-eric&kira-bj02
+            # bath-eric&kira-bj01 или bath-eric&kira-bj02
             if renpy.random.randint(1, 2):
                 show Eric bath-kira bj01
             else:
@@ -3032,7 +3032,7 @@ label kira_bath_with_eric:
             # уйти
             $ spent_time += 10
 
-            #bath-eric&kira-cum01
+            # bath-eric&kira-cum01
             show Eric bath-kira cum01
             if kira.dcv.battle.stage > 2:
                 menu:

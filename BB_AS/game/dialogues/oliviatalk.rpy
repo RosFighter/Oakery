@@ -32,10 +32,10 @@ label OliviaTalkStart:
 
 
 label olivia_talk1:
-    #1-ый разговор Макса и Оливии, возможен, начиная с дня знакомства (среда)
+    # 1-ый разговор Макса и Оливии, возможен, начиная с дня знакомства (среда)
 
     # "Учтите, я испытываю... некоторый подъём!"
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01a
@@ -58,7 +58,7 @@ label olivia_talk1:
     Lisa_13 "Ну всё! А Макс тут за всеми нами подглядывает, когда мы голые! За мной, за моей старшей сестрой, даже за мамой..."
     Max_09 "И прошу заметить, это всё происходит в доме, где окна размерами со стену! Здесь просто не реально куда-то пойти, чтобы не застать кого-нибудь за интересными делами..."
 
-    #2sun-00 + 2sun-max-01 + 2sun-olivia-04
+    # 2sun-00 + 2sun-max-01 + 2sun-olivia-04
     scene BG 2sun-00
     show Max sun-talk 04
     show Olivia sun-talk 04a
@@ -72,7 +72,7 @@ label olivia_talk1:
     Max_02 "То, что у меня нет девушки не значит, что потенциал пропадает! Активен и ещё как..."
     Olivia_05 "Ой, Макс, это здорово! Я за тебя рада! Молодец."
 
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01a
@@ -101,7 +101,7 @@ label olivia_talk1:
 label olivia_talk2:
     #после 1-ого разговора, возможен, начиная со 2-ого прихода Оливии на виллу (среда)
     # "Пошепчемся немного о моей сестрёнке?"
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01a
@@ -111,7 +111,7 @@ label olivia_talk2:
     Max_05 "Правда?"
     Olivia_01 "Лиза ещё не опытна в плане своей сексуальности, но мне кажется с ней будет очень интересно..."
     Max_02 "Ну, ты же как её подружка, поможешь ей так сказать, раскрепоститься?"
-    #2sun-00 + 2sun-max-01 + 2sun-olivia-04
+    # 2sun-00 + 2sun-max-01 + 2sun-olivia-04
     scene BG 2sun-00
     show Max sun-talk 04
     show Olivia sun-talk 04a
@@ -121,7 +121,7 @@ label olivia_talk2:
     Max_07 "Ага. Ты даже не представляешь, как сложно построить тёплые и доверительные отношения со всеми ними. Лиза так до сих пор настораживается, когда я в \"приподнятом настроении\", как сейчас..."
     Olivia_06 "Здесь я не многим могу помочь... Одно дело, если она будет чувствовать себя комфортно рядом с мной, и совсем другое - с тобой."
     Max_09 "Может тогда что-нибудь посоветуешь?"
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01a
@@ -145,7 +145,7 @@ label olivia_talk2:
 label olivia_talk3:
     #после 2-ого разговора, возможен, начиная с 3-его прихода Оливии на виллу (вторник)
     # "Что новенького, Оливия?"
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01a
@@ -178,7 +178,7 @@ label olivia_talk4:
     #после 1-ого визита Оливии ночью
     # "Рад тебя видеть, Оливия!"
 
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01a
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01a
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01b
@@ -187,7 +187,7 @@ label olivia_talk4:
     Olivia_03 "Это очень хорошо, Макс. Честно признаюсь, в первую нашу встречу ты ничем не отличался от других парней, ну... кроме как своим выдающимся... ну ты понял, а сейчас я вижу в тебе интересного человека. Это приятно..."
     Max_02 "Рассказала своему парню, как у нас ночь провела?"
 
-    #2sun-00 + 2sun-max-01 + 2sun-olivia-04a
+    # 2sun-00 + 2sun-max-01 + 2sun-olivia-04a
     scene BG 2sun-00
     show Max sun-talk 04
     show Olivia sun-talk 04b
@@ -205,7 +205,7 @@ label olivia_talk4:
     Max_00 "Хорошо, что теперь выяснилось, как твой парень падок на всякое красивое и дорогое."
     Olivia_03 "Как бы уже не бывший парень... Но нужно посмотреть, что он дальше думает делать."
 
-    #sun2-01 + sun2-01-max-03 + sun2-01-olivia-01a
+    # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01a
     scene BG sun-talk-01
     show Max sun-talk 03
     show Olivia sun-talk 01b

@@ -751,7 +751,7 @@ label ann_bath:
 
 label ann_tv:
     scene BG lounge-tv-00
-    $ renpy.show('Ann tv '+pose3_3+'a')
+    $ renpy.show('Ann tv '+pose3_3)
     $ persone_button1 = 'Ann tv '+pose3_3+'ab'
     return
 

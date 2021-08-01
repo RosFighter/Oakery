@@ -674,7 +674,7 @@ screen file_slots(title):
 
                     key_events True
                     xalign .5
-                    action NullAction() #page_name_value.Toggle()
+                    action NullAction() # page_name_value.Toggle()
 
                     input:
                         style "page_label_text"

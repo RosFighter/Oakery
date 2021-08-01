@@ -568,7 +568,7 @@ init python:
             if '06:00' <= tm <= '18:00' and mgg.cleanness < 80:
                 AvailableActions['shower'].active = True
             if ('20:00' <= tm <= '23:59' or '00:00' <= tm <= '04:00') and mgg.cleanness < 80:
-                AvailableActions['bath'].active = True #True - временно
+                AvailableActions['bath'].active = True
             AvailableActions['shower'].enabled = len(current_room.cur_char) == 0
             AvailableActions['bath'].enabled = len(current_room.cur_char) == 0
 

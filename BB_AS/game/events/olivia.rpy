@@ -21,7 +21,7 @@ label olivia_lisa_tv:
             $ ol_tv_order = ['0'+str(i) for i in range(1, 8)]
             $ renpy.random.shuffle(ol_tv_order)
 
-    #tv-watch-01 + сериал(один из семи, с окончанием 02) + tv-watch-01-lisa&olivia-(01/01a)
+    # tv-watch-01 + сериал(один из семи, с окончанием 02) + tv-watch-01-lisa&olivia-(01/01a)
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-02', at_list=[tv_screen,])
     $ renpy.show('Olivia night-tv 01-01'+lisa.dress)
@@ -41,7 +41,7 @@ label olivia_lisa_tv:
                     "{i}уйти{/i}":
                         jump .leave
             else:
-                #tv-mass-05 + tv-watch-02-max-(01a/01b) + (tv-watch-02-lisa&olivia-(01/01a) или tv-watch-02-lisa&olivia-(02/02a) или tv-watch-02-lisa&olivia-(03/03a))
+                # tv-mass-05 + tv-watch-02-max-(01a/01b) + (tv-watch-02-lisa&olivia-(01/01a) или tv-watch-02-lisa&olivia-(02/02a) или tv-watch-02-lisa&olivia-(03/03a))
                 scene BG tv-mass-05
                 $ renpy.show('Max tv 02'+mgg.dress)
                 $ renpy.show('Olivia night-tv 02-0'+str(renpy.random.randint(1, 3))+lisa.dress)
@@ -76,7 +76,7 @@ label olivia_lisa_sleep:
 label olivia_first_meeting:
 
     #кат-сцена во дворе (среда, 17:00)
-    #lisa-incoming-00 + lisa&olivia-incoming-01
+    # lisa-incoming-00 + lisa&olivia-incoming-01
     scene BG incoming-00
     show Olivia incoming 00
     with Fade(0.4, 0, 0.3)
@@ -94,11 +94,11 @@ label olivia_first_meeting:
         Lisa_01 "Да, мы скоро вернёмся..."
         "{i}дождаться девчонок{/i}":
             pass
-    #lisa-incoming-00
+    # lisa-incoming-00
     scene BG incoming-00
     Max_07 "{i}( А Оливия симпатичная девчонка! Надеюсь, она с этим Алексом только из-за его внешности и на деле, ничего особенного он из себя не представляет... Так или иначе, Лиза всё равно поделится со мной этой информацией, когда всё узнает... ){/i}"
 
-    #punish-sun-01 + punish-sun-01-max-(01a/01b) + sun-incoming-01-lisa&olivia-01
+    # punish-sun-01 + punish-sun-01-max-(01a/01b) + sun-incoming-01-lisa&olivia-01
     scene BG punish-sun 01
     $ renpy.show('Max punish-sun 01-01'+mgg.dress)
     show Olivia incoming 01
@@ -109,7 +109,7 @@ label olivia_first_meeting:
     Max_02 "Знаешь, Оливия, если тебе намного комфортнее вообще без купальника, то можешь снять! Никто против не будет..."
     Lisa_03 "Ну ещё бы... Макс уже кажется отреагировал на это в своём стиле..."
 
-    #punish-sun-02 + sun-incoming-02-lisa&olivia-01
+    # punish-sun-02 + sun-incoming-02-lisa&olivia-01
     scene BG punish-sun 02
     show Olivia incoming 02
     Olivia_05 "Да это нормально! У папы такая же реакция была, когда мы вместе с ним купались или загорали... Так что, я привыкла!"
@@ -119,7 +119,7 @@ label olivia_first_meeting:
     Olivia_04 "Здорово! Пойдём с нами купаться, Макс! Или загорать... Я вам так завидую... У вас есть чистый бассейн и пальмы почти ничего не закрывают... Тут как будто рай!"
     Max_07 "Я бы с радостью, да только вот кое-что будет вас смущать..."
 
-    #hugging-sun-01 + sun-incoming-03-lisa&olivia-01 + sun-incoming-03-max-(01a/01b)
+    # hugging-sun-01 + sun-incoming-03-lisa&olivia-01 + sun-incoming-03-max-(01a/01b)
     scene BG char Alice hugging sun-01
     show Olivia incoming 03
     $ renpy.show('Max incoming 01'+mgg.dress)
@@ -162,7 +162,7 @@ label olivia_night_visit:
 
 label olivia_first_night_visit:
 
-    #villa-door-night-01 + villa-olivia-(01/01a)
+    # villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
     with Fade(0.4, 0, 0.3)
@@ -172,7 +172,7 @@ label olivia_first_night_visit:
     Olivia_02 "Значит, кроме нас и Лизы дома больше никого нет?"
     Max_03 "Да... Мама ушла к Эрику, а Алиса с тётей Кирой как всегда в это время тусят где-то. Вернутся поздно, так что у нас полно времени!"
 
-    #after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
+    # after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
     scene BG char Kira after-club-pull
     show Lisa night-visit 02
     $ renpy.show('Olivia night-visit 02'+olivia.dress)
@@ -183,7 +183,7 @@ label olivia_first_night_visit:
     Olivia_05 "Только учтите, дресс-код на наше мероприятие - только нижнее бельё или пижамы! Кому в чём комфортнее..."
     Lisa_02 "А ты в чём будешь?"
     Olivia_03 "Конечно голышом! Думаю, вы уже достаточно ко мне привыкли, чтобы не смущаться меня и моего образа жизни."
-    #after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
+    # after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
     scene BG char Kira after-club-pull
     show Lisa night-visit 03b
     $ renpy.show('Olivia night-visit 03'+olivia.dress)
@@ -228,7 +228,7 @@ label olivia_first_night_visit:
 
 
 label olivia_second_night_visit:
-    #villa-door-night-01 + villa-olivia-(01/01a)
+    # villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
     with Fade(0.4, 0, 0.3)
@@ -236,7 +236,7 @@ label olivia_second_night_visit:
     Olivia_01 "Привет, Макс. Вот я и снова к вам пришла... Как домашние? Никому не помешаю?"
     Max_04 "Нет, всё в порядке... Проходи, чувствуй себя как дома."
 
-    #after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
+    # after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
     scene BG char Kira after-club-pull
     show Lisa night-visit 02
     $ renpy.show('Olivia night-visit 02'+olivia.dress)
@@ -250,7 +250,7 @@ label olivia_second_night_visit:
     if lisa.dcv.special.stage < 4: # не было просмотров ужастиков с Лизой
         Max_07 "Ты настолько меня стесняешься?"
         Lisa_13 "Ну, да. Как любая девочка любого мальчика... Разве это неправильно?"
-        #after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
+        # after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
         show Lisa night-visit 03b
         $ renpy.show('Olivia night-visit 03'+olivia.dress)
         Olivia_05 "Стесняшка ты наша. Макс сказал, чтобы я чувствовала себя как дома... Так что я раздеваюсь."
@@ -261,7 +261,7 @@ label olivia_second_night_visit:
         Lisa_10 "Если я разденусь, он же всё время будет глазеть на меня, а не на экран. И как тут не стесняться?!"
         Max_07 "А как ты будешь со своим будущим парнем себя вести? Тоже будешь стесняться?"
         Lisa_13 "Не знаю... Может быть. Мне кажется, не очень правильно возбуждать тебя своим обнажённым видом."
-        #after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
+        # after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
         show Lisa night-visit 03b
         $ renpy.show('Olivia night-visit 03'+olivia.dress)
         Olivia_03 "Знаешь, Лиза, хоть вы брат и сестра, но вместе с тем - ты ещё и девочка. А природой заложено так, что девочки возбуждают мальчиков и наоборот. И это классно... чувствовать себя желанной!"
@@ -277,14 +277,14 @@ label olivia_second_night_visit:
 
 
 label olivia_night_visit_r:
-    #villa-door-night-01 + villa-olivia-(01/01a)
+    # villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
     with Fade(0.4, 0, 0.3)
     play music olivia
     Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
     Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
-    #after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
+    # after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
     scene BG char Kira after-club-pull
     show Lisa night-visit 02
     $ renpy.show('Olivia night-visit 02'+olivia.dress)
@@ -298,7 +298,7 @@ label olivia_night_visit_r:
         #Лиза без майки
         $ lisa.flags.topless += 1
         $ lisa.dress = 'c'
-        #after-club-alice&kira-00-f + villa-lisa-03a + villa-olivia-(03/03a)
+        # after-club-alice&kira-00-f + villa-lisa-03a + villa-olivia-(03/03a)
         show Lisa night-visit 03c
         $ renpy.show('Olivia night-visit 03'+olivia.dress)
         Max_05 "Ого! Лиза у нас сегодня тоже почти голенькая будет! Рад, что не стесняешься..."
@@ -307,7 +307,7 @@ label olivia_night_visit_r:
         Lisa_01 "Только не засматривайся на меня так сильно! Я ведь и одеться могу."
     else:
         #Лиза в майке
-        #after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
+        # after-club-alice&kira-00-f + villa-lisa-03 + villa-olivia-(03/03a)
         show Lisa night-visit 03b
         $ renpy.show('Olivia night-visit 03'+olivia.dress)
         if lisa_will_be_topless()==-4:
@@ -368,7 +368,7 @@ label night_tv_with_olivia:
 
 label olivia_first_night_out_with:
 
-    #lounge-tv-01 + tv-watch-03-lisa&olivia-01 + tv-max-(00a/00b)
+    # lounge-tv-01 + tv-watch-03-lisa&olivia-01 + tv-max-(00a/00b)
     scene BG lounge-tv-01
     show Olivia night-tv 03-01b
     $ renpy.show('Max tv 00'+mgg.dress)
@@ -381,7 +381,7 @@ label olivia_first_night_out_with:
         Lisa_10 "Так, стоять! Это уже слишком! Я не уверена, что хочу сидеть рядом со своим голым братом. Хоть трусы оставь..."
         "{i}раздеться и сесть рядом{/i}":
             pass
-    #lounge-tv-01 + tv-watch-03-lisa&olivia-02 + tv-watch-03-max-01
+    # lounge-tv-01 + tv-watch-03-lisa&olivia-02 + tv-watch-03-max-01
     show Olivia night-tv 03-02b
     show Max night-tv 03-01
     Olivia_04 "Ого, Макс! Это смело! И внушительно..."
@@ -390,33 +390,33 @@ label olivia_first_night_out_with:
     Olivia_03 "Макс, кстати, прав... Тебе пора бы уже привыкать. Держаться с мальчиками за ручку и гулять - это здорово, но вы же не только этим будете заниматься."
     Lisa_10 "Поскромнее хоть сядьте оба, а то устроили тут нудистский диван."
     Max_04 "Давайте смотреть, что где показывают интересного..."
-    #tv-watch-01 + сериал(один из семи, с окончанием 01) + tv-watch-01-lisa,olivia,max-01
+    # tv-watch-01 + сериал(один из семи, с окончанием 01) + tv-watch-01-lisa,olivia,max-01
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-01', at_list=[tv_screen,])
     show Olivia night-tv 01-02b
     Olivia_01 "Вот, можем этот сериал посмотреть... Вроде, что-то интересное происходит у них там. Надо вникать..."
     Max_02 "{i}( Мне куда интереснее то, что происходит на диване... А здесь рядом со мной сидят две обалденные девчонки и одна из них - совершенно голая, как и я! ){/i}"
-    #tv-mass-01 + tv-watch-04-lisa,olivia,max-01
+    # tv-mass-01 + tv-watch-04-lisa,olivia,max-01
     scene BG tv-mass-01
     show Olivia night-tv 04-01b
     Max_03 "{i}( Лиза пока ещё стесняется моего вида... Слегка отвернулась, но поглядывает в мою сторону иногда. А вот Оливия очень комфортно себя чувствует. Такая расслабленная и красивая... ){/i}"
     Olivia_02 "Ты как там, Макс? Всё ещё возбуждён моим видом? Ага, вижу, что да..."
     Lisa_09 "И долго он таким может быть?"
     Olivia_03 "Похоже, что долго... Но вы к этому привыкните, если будете со мной больше времени проводить."
-    #tv-mass-03 + tv-watch-05-lisa,olivia,max-01
+    # tv-mass-03 + tv-watch-05-lisa,olivia,max-01
     scene BG tv-mass-03
     show Olivia night-tv 05-01b
     Max_05 "По мне, так отличная причина тебе приходить к нам чаще!"
     Olivia_04 "Я бы с радостью, Макс. Было бы у меня больше свободного времени... Здесь и компания приятная, и вода в бассейне такая тёплая... Обожаю воду! Ну, вы уже в курсе."
     Lisa_01 "А Макс успокаивается наконец..."
-    #tv-kiss-03 + tv-watch-06-lisa&olivia-(01/02) + tv-watch-06-max-01
+    # tv-kiss-03 + tv-watch-06-lisa&olivia-(01/02) + tv-watch-06-max-01
     scene BG tv-kiss-03
     $ renpy.show('Olivia night-tv 06-0'+str(renpy.random.randint(1, 2))+'b')
     show Max night-tv 06-01
     Max_04 "Самую малость."
     Olivia_03 "Это я просто немного поскромнее уселась, чтобы у Макса косоглазие не развилось. Мальчики - они такие, он даже если будет стараться смотреть на экран, глаза всё равно потянутся в сторону голых девичьих прелестей."
     Lisa_02 "А у меня вот запросто получается смотреть сериал и никуда не отвлекаться."
-    #tv-watch-01 + сериал(котороый выпал до этого, с окончанием 03) + tv-watch-01-lisa,olivia,max-01
+    # tv-watch-01 + сериал(котороый выпал до этого, с окончанием 03) + tv-watch-01-lisa,olivia,max-01
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-03', at_list=[tv_screen,])
     show Olivia night-tv 01-02b
@@ -426,7 +426,7 @@ label olivia_first_night_out_with:
     Max_03 "Да, оставайся на ночь здесь!"
     Olivia_01 "Ой, я вообще-то не планировала, но вы правы, лучше остаться у вас до утра."
     Lisa_01 "Пойдёмте тогда в комнату..."
-    #myroom-night-talk-01 + myroom-night-talk-01-lisa-02a + myroom-night-talk-01-olivia-01
+    # myroom-night-talk-01 + myroom-night-talk-01-lisa-02a + myroom-night-talk-01-olivia-01
     scene BG myroom-night-talk-01
     show Lisa myroom-night-talk 02b
     show Olivia myroom-night-talk 01
@@ -447,7 +447,7 @@ label olivia_first_night_out_with:
 
 label olivia_second_night_out_with:
 
-    #lounge-tv-01 + tv-watch-03-lisa&olivia-02 + tv-watch-03-max-01
+    # lounge-tv-01 + tv-watch-03-lisa&olivia-02 + tv-watch-03-max-01
     scene BG lounge-tv-01
     show Olivia night-tv 03-02b
     show Max night-tv 03-01
@@ -456,7 +456,7 @@ label olivia_second_night_out_with:
     Max_03 "Ничего не взорвётся, не переживай."
     Olivia_03 "Лучше радуйся за брата, Лиза. Далеко не каждому мальчику настолько везёт с размерами... Не каждый день такое можно увидеть в живую. Вернее... ты-то как раз и можешь видеть!"
     Lisa_03 "Вот только ради этого и живу... Чтобы хоть разок за день увидеть стояк Макса!"
-    #tv-watch-01 + сериал(один из семи, с окончанием 01) + tv-watch-01-lisa,olivia,max-01
+    # tv-watch-01 + сериал(один из семи, с окончанием 01) + tv-watch-01-lisa,olivia,max-01
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-01', at_list=[tv_screen,])
     show Olivia night-tv 01-02b
@@ -464,7 +464,7 @@ label olivia_second_night_out_with:
     Lisa_13 "Нет, конечно! Скажешь тоже..."
     Max_02 "{i}( Интересно, как бы Оливия отреагировала, если бы Лиза рассказала, как я учу её целоваться и где мои руки при этом оказываются?! Святую тут из себя строит. Ну да ладно... ){/i}"
     Olivia_03 "Так я тебе и поверила, проказница... Ну а ты, Макс?"
-    #tv-mass-01 + tv-watch-04-lisa,olivia,max-01
+    # tv-mass-01 + tv-watch-04-lisa,olivia,max-01
     scene BG tv-mass-01
     show Olivia night-tv 04-01b
     Max_04 "Конечно, да! Но я тут бессилен, это же непроизвольно."
@@ -472,14 +472,14 @@ label olivia_second_night_out_with:
     Max_07 "А что с ним?"
     Olivia_00 "Ах, да... Ты же, наверно, не в курсе. Алекс в наглую, не порвав со мной, пытался клеить Лизу! Скотина такая!"
     Max_09 "Вот как! Погодите... Но раз вы обе здесь, значит у вас всё хорошо?"
-    #tv-mass-03 + tv-watch-05-lisa,olivia,max-01
+    # tv-mass-03 + tv-watch-05-lisa,olivia,max-01
     scene BG tv-mass-03
     show Olivia night-tv 05-01b
     Lisa_02 "У нас - да! У Алекса не очень. Он двух потрясающих девчонок упустил! Хотя, теперь зная, какой он козёл, не исключаю, что он уже кого-то ещё клеит..."
     Olivia_06 "Если уже не склеил! Нет, даже думать об этом не хочу... Фу!"
     Max_00 "Получается, Оливия с парнем рассталась?"
     Lisa_01 "Именно так."
-    #tv-watch-01 + сериал(котороый выпал до этого, с окончанием 02) + tv-watch-01-lisa,olivia,max-01
+    # tv-watch-01 + сериал(котороый выпал до этого, с окончанием 02) + tv-watch-01-lisa,olivia,max-01
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-02', at_list=[tv_screen,])
     show Olivia night-tv 01-02b
@@ -487,7 +487,7 @@ label olivia_second_night_out_with:
     Max_07 "Вот почему я предпочитаю секс без отношений! Трахаешься, когда хочешь и с кем хочешь... И никакой \"Санта-Барбары\"!"
     Lisa_11 "Что-о-о-о!"
     Max_02 "Это я вас таким образом от темы с Алексом решил отвлечь."
-    #tv-kiss-03 + tv-watch-06-lisa&olivia-(01/02) + tv-watch-06-max-01
+    # tv-kiss-03 + tv-watch-06-lisa&olivia-(01/02) + tv-watch-06-max-01
     scene BG tv-kiss-03
     $ renpy.show('Olivia night-tv 06-0'+str(renpy.random.randint(1, 2))+'b')
     show Max night-tv 06-01
@@ -496,7 +496,7 @@ label olivia_second_night_out_with:
     Max_04 "Ага, хорошо сидим!"
     Lisa_02 "Знаете, я в таком хорошем настроении сейчас, от того, что для нас с Оливией всё так хорошо закончилось, что готова даже снять майку..."
     Max_06 "Вот это ничего себе!"
-    #tv-mass-01 + tv-watch-04-lisa,olivia,max-01a
+    # tv-mass-01 + tv-watch-04-lisa,olivia,max-01a
     scene BG tv-mass-01
     show Olivia night-tv 04-01c
     Olivia_03 "Да ладно! Макс же тут... Ты вроде не хотела при нём..."
@@ -504,14 +504,14 @@ label olivia_second_night_out_with:
     Max_05 "{i}( Во сестрёнка даёт! Естественно, я хочу на это смотреть... Не то, чтобы в наглую, но всё-таки такого количества голых сисек на этом диване ещё не было! ){/i}"
     Olivia_02 "А Макс притих. Наверно, весь в раздумьях, куда лучше смотреть! Хоть бы на экран поглядел для приличия."
     Max_03 "Голова никак не поворачивается."
-    #tv-watch-01 + сериал(котороый выпал до этого, с окончанием 03) + tv-watch-01-lisa,olivia,max-01a
+    # tv-watch-01 + сериал(котороый выпал до этого, с окончанием 03) + tv-watch-01-lisa,olivia,max-01a
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-03', at_list=[tv_screen,])
     show Olivia night-tv 01-02c
     Lisa_01 "Ничего, ты сама говорила - привыкнет... Я же немного привыкла, что вы тут голые сидите."
     Olivia_01 "А я бы уже спать пошла. Уже поздно... Я вся иззевалась. Вы ещё не хотите?"
     Lisa_02 "Можно. Пойдёмте, пока все тут не заснули. Вот бы тётя Кира удивилась..."
-    #myroom-night-talk-01 + myroom-night-talk-01-lisa-02b + myroom-night-talk-01-olivia-01
+    # myroom-night-talk-01 + myroom-night-talk-01-lisa-02b + myroom-night-talk-01-olivia-01
     scene BG myroom-night-talk-01
     show Lisa myroom-night-talk 02c
     show Olivia myroom-night-talk 01
@@ -540,20 +540,20 @@ label olivia_repeatable_night_out_with:
     with Fade(0.4, 0, 0.3)
     if lisa_will_be_topless()>0:
         #Лиза без майки
-        #lounge-tv-01 + tv-watch-03-lisa&olivia-01a + tv-max-(00a/00b)
+        # lounge-tv-01 + tv-watch-03-lisa&olivia-01a + tv-max-(00a/00b)
         Lisa_02 "Ты чего завис, Макс? Давай садись быстрее..."
         Max_02 "Знаешь, бывают моменты, когда засмотришься на что-то и потом никак оторваться не можешь..."
         Lisa_01 "Может, мне тогда стоит одеться, чтобы ты над душой не стоял?"
         Max_04 "Нет, нет, нет... Я уже раздеваюсь!"
     else:
         #Лиза в майке
-        #lounge-tv-01 + tv-watch-03-lisa&olivia-01 + tv-max-(00a/00b)
+        # lounge-tv-01 + tv-watch-03-lisa&olivia-01 + tv-max-(00a/00b)
         Lisa_02 "Ты чего завис, Макс? Давай садись быстрее..."
         Max_02 "Да я вот задумался, как мне тебя уговорить маечку снять... Только, по-моему, без шансов, да?"
         Lisa_01 "Именно! Ты или тогда не стой над душой, или раздевайся и присоединяйся... пока я добрая."
         Max_04 "От такой симпатичной компании, как вы, я не откажусь!"
 
-    #lounge-tv-01 + tv-watch-03-lisa&olivia-(02/02a) + tv-watch-03-max-01
+    # lounge-tv-01 + tv-watch-03-lisa&olivia-(02/02a) + tv-watch-03-max-01
     $ renpy.show('Olivia night-tv 03-02'+lisa.dress)
     show Max night-tv 03-01
 
@@ -570,7 +570,7 @@ label olivia_repeatable_night_out_with:
         Olivia_05 "Я таких беззастенчивых парней, как Макс, ещё не встречала. Хотя, оно и понятно, почему... Есть чем гордиться!"
         Max_05 "Спасибо! Я, конечно, не против этого внимания, прикованного к моему члену, но вы и на экран поглядывайте тоже."
 
-    #tv-watch-01 + сериал(один из семи, с окончанием 01) + tv-watch-01-lisa,olivia,max-(01/01a)
+    # tv-watch-01 + сериал(один из семи, с окончанием 01) + tv-watch-01-lisa,olivia,max-(01/01a)
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-01', at_list=[tv_screen,])
     $ renpy.show('Olivia night-tv 01-02'+lisa.dress)
@@ -586,7 +586,7 @@ label olivia_repeatable_night_out_with:
         Lisa_01 "Тогда смотрим... Может, по ходу просмотра во всём разберёмся."
         Max_04 "{i}( А вот мне куда интереснее то, что происходит на диване... Здесь, рядом со мной, сидят две обалденные девчонки, которые не против моей компании! ){/i}"
 
-    #tv-mass-01 + tv-watch-04-lisa,olivia,max-(01/01a)
+    # tv-mass-01 + tv-watch-04-lisa,olivia,max-(01/01a)
     scene BG tv-mass-01
     $ renpy.show('Olivia night-tv 04-01'+lisa.dress)
 
@@ -600,7 +600,7 @@ label olivia_repeatable_night_out_with:
         Lisa_03 "Мне и самой хочется... Особенно здорово будет Максу, он ведь наверняка о таком и мечтает сейчас!"
     Max_02 "Не только о таком. Но и то, что сейчас - тоже круто!"
 
-    #tv-mass-03 + tv-watch-05-lisa,olivia,max-(01/01a)
+    # tv-mass-03 + tv-watch-05-lisa,olivia,max-(01/01a)
     scene BG tv-mass-03
     $ renpy.show('Olivia night-tv 05-01'+lisa.dress)
 
@@ -608,7 +608,7 @@ label olivia_repeatable_night_out_with:
     Lisa_02 "Макс очень внимательный, когда хочет за кем-нибудь подсмотреть!"
     Max_01 "Я внимательный всегда."
 
-    #tv-watch-01 + сериал(котороый выпал до этого, с окончанием 02) + tv-watch-01-lisa,olivia,max-(01/01a)
+    # tv-watch-01 + сериал(котороый выпал до этого, с окончанием 02) + tv-watch-01-lisa,olivia,max-(01/01a)
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-02', at_list=[tv_screen,])
     $ renpy.show('Olivia night-tv 01-02'+lisa.dress)
@@ -616,7 +616,7 @@ label olivia_repeatable_night_out_with:
     Max_03 "Так или иначе - да. Ведь впереди ещё много сезонов..."
     Lisa_09 "Эй, ты испортил всю интригу! Как мы теперь дальше будем смотреть, зная, что у них всё получится?"
 
-    #tv-kiss-03 + tv-watch-06-lisa&olivia-(01(a)/02(a)) + tv-watch-06-max-01
+    # tv-kiss-03 + tv-watch-06-lisa&olivia-(01(a)/02(a)) + tv-watch-06-max-01
     scene BG tv-kiss-03
     $ renpy.show('Olivia night-tv 06-0'+str(renpy.random.randint(1, 2))+lisa.dress)
     show Max night-tv 06-01
@@ -624,7 +624,7 @@ label olivia_repeatable_night_out_with:
     Olivia_04 "Твоя правда. Ладно, тихо... Мы смотреть будем или обсуждать?"
     Lisa_01 "Конечно, смотреть! Обсудить и потом можно... Если Макс опять о чём-нибудь не проболтается."
 
-    #tv-watch-01 + сериал(котороый выпал до этого, с окончанием 03) + tv-watch-01-lisa,olivia,max-(01/01a)
+    # tv-watch-01 + сериал(котороый выпал до этого, с окончанием 03) + tv-watch-01-lisa,olivia,max-(01/01a)
     scene tv-watch-01
     $ renpy.show('tv serial '+film+'-03', at_list=[tv_screen,])
     $ renpy.show('Olivia night-tv 01-02'+lisa.dress)
@@ -633,7 +633,7 @@ label olivia_repeatable_night_out_with:
         Lisa_05 "Ага, давайте пойдём по кроваткам, пока здесь не заснули."
         "{i}идти в свою комнату{/i}":
             pass
-    #myroom-night-talk-01 + myroom-night-talk-01-lisa-(02a/02b) + myroom-night-talk-01-olivia-01
+    # myroom-night-talk-01 + myroom-night-talk-01-lisa-(02a/02b) + myroom-night-talk-01-olivia-01
     scene BG myroom-night-talk-01
     $ renpy.show('Lisa myroom-night-talk 02'+lisa.dress)
     show Olivia myroom-night-talk 01

@@ -575,7 +575,7 @@ label lisa_dressed_shop:
     $ rel = 0
     $ warned = False
     $ lisa.hourly.dressed = 1
-    $ spent_time = 10 #60 - int(tm[-2:])
+    $ spent_time = 10 # 60 - int(tm[-2:])
     menu .lisa_dressed:
         Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
         "{i}постучаться{/i}":
@@ -1289,7 +1289,7 @@ label lisa_horor_movie_r:
             stop music fadeout 1.0
             Max_04 "Ага, я тоже. Было страшно, но я рад, что ты была рядом. Это приятно."
 
-            #horror-myroom-01a + horror-myroom-01a-max&lisa-02
+            # horror-myroom-01a + horror-myroom-01a-max&lisa-02
             scene BG char Lisa horror-myroom 01a
             $ renpy.show('Lisa horror-myroom 01a-02'+lisa.dress)
             Lisa_10 "Мне только страшно до своей кровати идти теперь..."
@@ -1298,7 +1298,7 @@ label lisa_horor_movie_r:
                 Lisa_05 "Чтобы со мной рядом кое-что шевелилось? Так я точно не усну. Мне нужно как-то храбрости набраться..."
                 "{i}поцеловать Лизу{/i}" if lisa.flags.kiss_lesson > 6:   #если открыты поцелуи с прикосновениями
                     $ added_mem_var('horror_kiss')
-                    #horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
+                    # horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
                     $ r1 = '0'+str(renpy.random.randint(2, 3))
                     if r1=='02':
                         scene BG char Lisa horror-myroom 02

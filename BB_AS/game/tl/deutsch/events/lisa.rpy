@@ -1874,5 +1874,5 @@ translate deutsch lisa_shower_pinded_e472503c:
 translate deutsch lisa_dressed_school_open_door2_c7d16562:
 
     # Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Noch nicht! Du kannst dich glücklich schätzen, aber bitte lass mich erst fertig umziehen..." nointeract
 

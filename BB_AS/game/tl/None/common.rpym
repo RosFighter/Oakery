@@ -1243,4 +1243,3 @@ translate None strings:
     # renpy/common/_errorhandling.rpym:599
     old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
     new "Пытается вернуться назад, позволяя вам сохраниться или принять другой выбор."
-

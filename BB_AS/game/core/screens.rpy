@@ -550,7 +550,7 @@ screen OnlineShop():
                             textbutton ShopCat[i] action SetScreenVariable('CurCat', i) selected CurCat == i
 
             frame xsize 1175 yfill True background None:
-                xpadding 10 ypadding 15 #xmargin 0 ymargin 15
+                xpadding 10 ypadding 15 # xmargin 0 ymargin 15
                 ## список товаров категории
                 style_prefix 'goods'
                 $ items_in_cat = 0
@@ -660,7 +660,7 @@ screen OnlineCources():
                                 textbutton i.name action SetVariable('CurCource', i) selected CurCource == i
 
                 frame xsize 1075 yfill True background None:
-                    xpadding 10 ypadding 0 #xmargin 0 ymargin 15
+                    xpadding 10 ypadding 0 # xmargin 0 ymargin 15
                     vbox spacing 10:
                         if CurCource.current == len(CurCource.cources): # CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total:
                             frame xfill True background None:
@@ -961,7 +961,7 @@ screen room_navigation():
             xpos 76
         else:
             xalign 0.01
-        #ysize 200
+        # ysize 200
         spacing 2
         for room in current_location:
             $ i += 1
@@ -1306,7 +1306,7 @@ screen menu_opportunity():
                                         viewport mousewheel 'change' draggable True id 'vp2':
                                             vbox spacing 20:
                                                 text _("Подсказка:") size 24 color gui.accent_color
-                                                text renpy.config.say_menu_text_filter(renpy.translate_string(zero_hints[CurPoss])) size 24 #color orange
+                                                text renpy.config.say_menu_text_filter(renpy.translate_string(zero_hints[CurPoss])) size 24 # color orange
                                         vbar value YScrollValue('vp2') style 'poss_vscroll'
                             else:
                                 frame area (0, 0, 1190, 400) background None:
@@ -1698,7 +1698,7 @@ screen menu_userinfo():
             if CurChar == 'max':
                 action [SetVariable('cloth', mgg.clothes), Hide('menu_userinfo'), Show('ClothesSelect')]
                 sensitive mgg.clothes.Opens()
-            elif chars[CurChar].clothes.GetList():      #chars[CurChar] in clothes:
+            elif chars[CurChar].clothes.GetList():      # chars[CurChar] in clothes:
                 action [SetVariable('cloth', chars[CurChar].clothes), Hide('menu_userinfo'), Show('ClothesSelect')]
                 sensitive chars[CurChar].clothes.Opens()
             else:
@@ -1843,12 +1843,12 @@ screen cam_show():
 
     hbox pos(350, 800):
         xalign 0.0
-        text tm font 'bedel.otf' size 30  #drop_shadow[(2, 2)]
+        text tm font 'bedel.otf' size 30  # drop_shadow[(2, 2)]
 
     hbox pos(1560, 800):
         xalign 1.0
         spacing 10
-        text _("[view_cam[1].public]") font 'bedel.otf' size 30  #drop_shadow[(2, 2)]
+        text _("[view_cam[1].public]") font 'bedel.otf' size 30  # drop_shadow[(2, 2)]
         add 'interface laptop cam audience' ypos 5
 
     if len(cam_list) > 1:
@@ -1918,7 +1918,7 @@ screen countdown():
         action If(ctd.time_left > 0, true=SetVariable('ctd.time_left', ctd.time_left - .1), false=[Hide('countdown'), Jump(ctd.timer_jump)])
     bar value ctd.time_left*10 range ctd.timer_range*10:
         if renpy.variant("small"):
-            ypos 1000  #905, 1000
+            ypos 1000  # 905, 1000
             xalign 0.5
         else:
             pos 645, 1020

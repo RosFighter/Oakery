@@ -16,37 +16,37 @@ label after_dinner:
             # "плохой" путь
             if punlisa[0][2]>1:
                 # Макс успешно заступился за Лизу
-                call conversation_after_dinner(1)
+                call conversation_after_dinner(1) from _call_conversation_after_dinner
             elif punlisa[0][2]>0:
                 # Макс пытался заступиться за Лизу, но не получилось
-                call conversation_after_dinner(2)
+                call conversation_after_dinner(2) from _call_conversation_after_dinner_1
             else:
                 # Макс даже не пытался защитить Лизу
-                call conversation_after_dinner(3)
+                call conversation_after_dinner(3) from _call_conversation_after_dinner_2
         elif poss['sg'].st() == 4 and punlisa[0][3]:
             # "хороший" путь, Лиза получила наказание
             if punlisa[1][0]<1:
                 # Макс не помогал
-                call conversation_after_dinner(4)
+                call conversation_after_dinner(4) from _call_conversation_after_dinner_3
             elif punlisa[1][0]<2:
                 # Макс специально сделал ошибку
-                call conversation_after_dinner(5)
+                call conversation_after_dinner(5) from _call_conversation_after_dinner_4
         elif poss['sg'].st() == 2 and lisa.flags.truehelp < 6:
             # Претензии на "хорошем" пути
             if not lisa.flags.help:
                 # Макс ещё не набрал 6 домашек и вообще не помогал
-                call conversation_after_dinner(6)
+                call conversation_after_dinner(6) from _call_conversation_after_dinner_5
             elif punlisa[1][0]<2:
                 # Макс так себе помогал
-                call conversation_after_dinner(7)
+                call conversation_after_dinner(7) from _call_conversation_after_dinner_6
         elif (poss['sg'].used(3) or poss['sg'].used(5)) and punlisa[1][0]<2:
             # заключен договор "ты мне - я тебе", Макс сделал двойку специально или не помогал
             if punlisa[1][0]<1:
                 # Макс не помогал
-                call conversation_after_dinner(8)
+                call conversation_after_dinner(8) from _call_conversation_after_dinner_7
             else:
                 # Макс специально сделал ошибку
-                call conversation_after_dinner(7)
+                call conversation_after_dinner(7) from _call_conversation_after_dinner_8
 
         # Лизу наказали
         # if all([punlisa[0][0] == 1, len(punlisa) >= 7, ColumnSum(punlisa, 1, 7) == 2,

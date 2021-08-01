@@ -19,7 +19,7 @@ label christina_first_talk(dress):
     Christine_04 "Макс, ты выглядишь лет на десять!"
     Max_07 "Не правда! Два раза по десять!"
 
-    #villa-delivery-01 + villa-delivery-christine-(03-03a)
+    # villa-delivery-01 + villa-delivery-christine-(03-03a)
     $ renpy.show('Christine delivery 03'+dress)
 
     menu:

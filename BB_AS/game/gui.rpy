@@ -256,7 +256,7 @@ define gui.navigation_xpos = 150
 define gui.skip_ypos = 15
 
 ## Вертикальная позиция экрана уведомлений.
-define gui.notify_ypos = 120 #68
+define gui.notify_ypos = 120 # 68
 
 ## Интервал между выборами в меню.
 define gui.choice_spacing = 0
@@ -407,7 +407,7 @@ define gui.nvl_button_xalign = 0.0
 
 ## Эта настройка контролирует доступ к разрыву линий. Стандартная настройка
 ## подходит для большинства языков. Список доступных значений можно найти на
-## https://www.renpy.org/doc/html/style_properties.html#style-property-language
+## https://www.renpy.org/doc/html/style_properties.html# style-property-language
 
 define gui.language = "unicode"
 

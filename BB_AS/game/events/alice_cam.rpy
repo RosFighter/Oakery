@@ -728,27 +728,27 @@ label cam0_blog_with_Eric:
     if alice.dcv.intrusion.stage == 8:
         #если Эрик купил Алисе чёрное кружевное боди вперёд Макса
 
-        #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(02a/02b/02c или 03a/03b/03c)
+        # cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(02a/02b/02c или 03a/03b/03c)
         $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
         $ renpy.show('Alice cams blog dresses 0'+str(renpy.random.randint(2, 3))+alice.dress, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
 
         Max_09 "{i}( Эрик о чём-то разговаривает с Алисой. И развалился так, как будто это его комната... ){/i}"
 
-        #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(04a/04b/04c или 05a/05b/05c)
+        # cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(04a/04b/04c или 05a/05b/05c)
         $ renpy.show('Alice cams blog dresses 0'+str(renpy.random.randint(4, 5))+alice.dress, at_list=[laptop_screen])
         Max_08 "{i}( Ого! Да она при нём, похоже, переодеваться вздумала! Что сказать, Эрик умеет добиваться своего... ){/i}"
 
-        #cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(07a/07b)
+        # cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(07a/07b)
         $ renpy.show('Eric cams blog 04'+eric.dress, at_list=[laptop_screen])
         $ renpy.show('Alice cams blog dresses 07'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
         Max_01 "{i}( Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! ){/i}"
 
-        #cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(08a/08b)
+        # cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(08a/08b)
         $ renpy.show('Alice cams blog dresses 08'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
         Max_07 "{i}( Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня... ){/i}"
 
-        #cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(09a/09b)
+        # cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(09a/09b)
         $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
         $ renpy.show('Alice cams blog dresses 09'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
         Max_09 "{i}( Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь... ){/i}"
@@ -765,7 +765,7 @@ label cam0_blog_with_Eric:
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
     else:
-        #cam-blog-desk-alice-(01d/01e/01f/01g - после дарения) + cam-blog-desk-eric-(01(a) или 02(a))
+        # cam-blog-desk-alice-(01d/01e/01f/01g - после дарения) + cam-blog-desk-eric-(01(a) или 02(a))
         if alice.dcv.intrusion.stage>4:
             # кружевное боди подарено
             $ __r = renpy.random.randint(1, 2)

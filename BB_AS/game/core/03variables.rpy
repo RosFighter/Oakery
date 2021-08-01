@@ -24,13 +24,13 @@ default ctd = Countdown(5, '')  #{'time_left':4.9, 'timer_range':4.9, 'timer_jum
 label InitHouse: # стартовая инициация виллы
     python:
         house = [
-            Room('my_room', _("МОЯ\nКОМНАТА"), _("МОЯ КОМНАТА"), 'location house myroom icon', 1), #0
-            Room('alice_room', _("КОМНАТА\nАЛИСЫ"), _("КОМНАТА АЛИСЫ"), 'location house aliceroom icon', 1), #1
-            Room('ann_room', _("КОМНАТА\nАННЫ"), _("КОМНАТА АННЫ"), 'location house annroom icon', 1), #2
-            Room('bathroom', _("ВАННАЯ\nКОМНАТА"), _("ВАННАЯ КОМНАТА"), 'location house bathroom icon', 1), #3
-            Room('lounge', _("ГОСТИНАЯ"), _("ГОСТИНАЯ"), 'location house lounge icon', 1), #4
-            Room('terrace', _("ВЕРАНДА"), _("ВЕРАНДА"), 'location house terrace icon', 1), #5
-            Room('courtyard', _("ДВОР"), _("ДВОР"), 'location house courtyard icon', 2), #6
+            Room('my_room', _("МОЯ\nКОМНАТА"), _("МОЯ КОМНАТА"), 'location house myroom icon', 1), # 0
+            Room('alice_room', _("КОМНАТА\nАЛИСЫ"), _("КОМНАТА АЛИСЫ"), 'location house aliceroom icon', 1), # 1
+            Room('ann_room', _("КОМНАТА\nАННЫ"), _("КОМНАТА АННЫ"), 'location house annroom icon', 1), # 2
+            Room('bathroom', _("ВАННАЯ\nКОМНАТА"), _("ВАННАЯ КОМНАТА"), 'location house bathroom icon', 1), # 3
+            Room('lounge', _("ГОСТИНАЯ"), _("ГОСТИНАЯ"), 'location house lounge icon', 1), # 4
+            Room('terrace', _("ВЕРАНДА"), _("ВЕРАНДА"), 'location house terrace icon', 1), # 5
+            Room('courtyard', _("ДВОР"), _("ДВОР"), 'location house courtyard icon', 2), # 6
             ]
 
         locations = {'house': house}

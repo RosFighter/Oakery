@@ -433,7 +433,7 @@ label cam1_return_from_club:
             jump Sleep
 
 label cam0_kira_bath_with_eric:
-    #cam-bath-eric&kira-hj01 или cam-bath-eric&kira-lick01
+    # cam-bath-eric&kira-hj01 или cam-bath-eric&kira-lick01
     if renpy.random.randint(1, 2):
         show Eric cams bath-kira hj01 at laptop_screen
     else:
@@ -444,7 +444,7 @@ label cam0_kira_bath_with_eric:
     else:
         Max_01 "Повезло Эрику... Тётя Кира умеет ублажать мужчин и ещё как!"   #если Макс сдал Киру
 
-    #cam-bath-eric&kira-bj01 или cam-bath-eric&kira-bj02
+    # cam-bath-eric&kira-bj01 или cam-bath-eric&kira-bj02
     if renpy.random.randint(1, 2):
         show Eric cams bath-kira bj01 at laptop_screen
     else:
@@ -454,7 +454,7 @@ label cam0_kira_bath_with_eric:
     else:
         Max_07 "Со стороны кажется, что для Киры это самое обыденное дело! Она так легко управляется с членом Эрика, хотя это и не сложно, после моего-то..."   #если Макс сдал Киру
 
-    #cam-bath-eric&kira-cum01 или cam-bath-eric&kira-cum02
+    # cam-bath-eric&kira-cum01 или cam-bath-eric&kira-cum02
     if renpy.random.randint(1, 2):
         show Eric cams bath-kira cum01 at laptop_screen
     else:

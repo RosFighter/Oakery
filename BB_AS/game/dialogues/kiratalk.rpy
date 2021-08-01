@@ -748,7 +748,7 @@ label kira_about_photo2:
     Kira_02 "А вот и узнаешь. Пойдём быстрее, нужно всё успеть сделать, пока наши не вернулись с шопинга..."
     Max_01 "Ага..."
 
-    #annroom-morning-01 + dresses-kira-04a
+    # annroom-morning-01 + dresses-kira-04a
     scene BG annroom-morning-01
     show Kira dresses 04a
     with Fade(0.4, 0, 0.3)
@@ -764,31 +764,31 @@ label kira_about_photo2:
     menu:
         Max_04 "{i}( Верёвки и кожа - это интересно! А ещё интереснее то, насколько далеко мне удастся зайти с тётей Кирой во время этой фотосессии... ){/i}"
         "{i}ждать{/i}":
-            #annroom-morning-01 + dresses-kira-04
+            # annroom-morning-01 + dresses-kira-04
             scene BG annroom-morning-01
             show Kira dresses 2-04
             Kira_06 "Ну, как тебе мой наряд? Уже не жалеешь, что столько ждал у двери?"
             Max_05 "Что ты, тётя Кира... Выглядишь шикарно!"
 
         "{i}подсмотреть за Кирой{/i}":
-            #dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-01
+            # dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-01
             scene BG char Ann voyeur-01
             show Kira dresses 2-01
             show FG voyeur-morning-01c
             Max_03 "{i}( Ого! Вот это не дурно тётя Кира принаряжается! Надеюсь, она меня не заметит, а то... Хотя, о чём это я?! Это же Кира! Её это даже заводит... ){/i}"
 
-            #dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-02
+            # dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-02
             show Kira dresses 2-02
             Max_07 "{i}( Ну прямо всё самое интересное закрывает этим кожаным костюмом... Хотя, мне же интереснее будет её раздевать! Мне кажется или она как-то слишком эротично одевается? ){/i}"
 
-            #dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-03
+            # dresses-annroom-01 + dresses-max-(01a/01b) + dresses-kira-03
             show Kira dresses 2-03
             Kira_06 "Думаешь, я не заметила, как ты подглядываешь? Именно этого я и ожидала от тебя. Ну, как тебе мой наряд?"
             Max_04 "Выглядишь шикарно!"
 
     $ expected_photo = []
 
-    #photoshot-02-kira-01 + photocamera
+    # photoshot-02-kira-01 + photocamera
     scene photoshot 02-Kira 01
     Kira_04 "Вот и отлично. Тогда, начнём. Нужно сделать несколько кадров на фоне комнаты и кровати. Кстати, не говори маме, что я в сапогах тут топталась..."
     show FG photocamera
@@ -798,7 +798,7 @@ label kira_about_photo2:
     extend "Готово! Теперь приляг на кровать как-нибудь интересно..."   #открывает снимок 01
     $ expected_photo.append('01')
 
-    #photoshot-02-kira-02 + photocamera
+    # photoshot-02-kira-02 + photocamera
     scene photoshot 02-Kira 02
     Kira_05 "Так будет достаточно интересно? Или слишком скромно для первых кадров?"
     show FG photocamera
@@ -808,7 +808,7 @@ label kira_about_photo2:
     extend "Ага, есть! А дальше мы щёлкнем твою попку ещё раз, ложись как будто устала и отдыхаешь..."   #открывает снимок 02
     $ expected_photo.append('02')
 
-    #photoshot-02-kira-03 + photocamera
+    # photoshot-02-kira-03 + photocamera
     scene photoshot 02-Kira 03
     Kira_09 "После всех этих шнурков и застёжек мне не составит труда изобразить усталость... Но сил на всё, что будет дальше, у меня хватит."
     show FG photocamera
@@ -818,7 +818,7 @@ label kira_about_photo2:
     extend "С радостью бы её расстегнул, но давай начнём с верху. Наверно, во всей этой коже очень жарко..."   #открывает снимок 03
     $ expected_photo.append('03')
 
-    #photoshot-02-kira-04 + photocamera
+    # photoshot-02-kira-04 + photocamera
     scene photoshot 02-Kira 04
     Kira_07 "Очень, Макс! Да и преступление, скрывать моих прелестных девочек от глаз. Не так ли?"
     show FG photocamera
@@ -831,7 +831,7 @@ label kira_about_photo2:
     menu:
         Kira_04 "Да, я думаю самое время привязать меня к кровати! Только так, чтобы выглядело натурально, хорошо?"
         "{i}крепко привязать Киру{/i}":   #открывает снимок 05
-            #photoshot-02-kira-05 + photocamera
+            # photoshot-02-kira-05 + photocamera
             scene photoshot 02-Kira 05
             show FG photocamera
             play sound "<from 1>audio/PhotoshootSound.ogg"
@@ -839,7 +839,7 @@ label kira_about_photo2:
             menu:
                 Kira_05 "Отлично, Макс. Теперь нам нужно сделать несколько снимков, на которых я должна выглядеть очень развратно! Я знаю, что тебе уже неймётся..."
                 "{i}раздеться и поиграть с её грудью{/i}":   #открывает снимок 06
-                    #photoshot-02-kira-06 + photocamera
+                    # photoshot-02-kira-06 + photocamera
                     $ expected_photo.append('06')
                     scene photoshot 02-Kira 06
                     Kira_13 "Какой же ты непослушный мальчишка! Такое со своей тётей вытворяешь... Быстро развяжи меня, а не то твоя мама всё узнает! Это я так, для придания соответствующего настроения..."
@@ -856,13 +856,13 @@ label kira_about_photo2:
                     pass
 
     $ expected_photo.append('07')
-    #annroom-shot-02-max&kira-01-f + annroom-shot-02-max&kira-01
+    # annroom-shot-02-max&kira-01-f + annroom-shot-02-max&kira-01
     scene BG char Kira annroom-shot 01
     show Kira annroom-shot 01
     play sound "<from 1>audio/PhotoshootSound.ogg"
     Max_02 "Да... Вот так... Эта фотосессия мне нравится гораздо больше... Я могу делать с тобой всё, что только придёт в голову! Хотя, сперва я бы сделал ещё один снимок..."   #открывает снимок 08
 
-    #photoshot-02-kira-08 + photocamera
+    # photoshot-02-kira-08 + photocamera
     $ expected_photo.append('08')
     scene photoshot 02-Kira 08
     show FG photocamera
@@ -872,32 +872,32 @@ label kira_about_photo2:
     menu:
         Max_07 "Я бы с этим не торопился. А ещё, я бы лучше снял с тебя эти кожаные трусы. Так что отчасти твоё желание по развязыванию я осуществлю... Чтобы было удобнее..."
         "{i}ласкать её киску языком{/i}":
-            #annroom-shot-02-max&kira-03-f + annroom-shot-02-max&kira-03
+            # annroom-shot-02-max&kira-03-f + annroom-shot-02-max&kira-03
             scene BG char Kira annroom-shot 03
             show Kira annroom-shot 03
             menu:
                 Kira_06 "Оу... Теперь понятно, что будет удобнее... ахх... делать... там. Да... Ты стал очень хорош в этом деле. Ох, обожаю, когда ты так делаешь!"
                 "{i}активнее работать языком и губами{/i}":
                     pass
-            #annroom-shot-02-max&kira-02-f + annroom-shot-02-max&kira-02
+            # annroom-shot-02-max&kira-02-f + annroom-shot-02-max&kira-02
             scene BG char Kira annroom-shot 02
             show Kira annroom-shot 02
             menu:
                 Kira_08 "Да... Так приятно... Ммм... Может, самое время, пустить в дело кое-что ещё..."
                 "{i}проникнуть в её киску пальцами{/i}":
-                    #annroom-shot-02-max&kira-03-f + annroom-shot-02-max&kira-03a
+                    # annroom-shot-02-max&kira-03-f + annroom-shot-02-max&kira-03a
                     scene BG char Kira annroom-shot 03
                     show Kira annroom-shot 03a
                     menu:
                         Kira_09 "Макс... Если ты продолжишь так и дальше, я не смогу сдержаться... У тебя такие ловкие пальчики... Да..."
                         "{i}трахать её пальцами{/i}":
-                            #annroom-shot-02-max&kira-02-f + annroom-shot-02-max&kira-02a
+                            # annroom-shot-02-max&kira-02-f + annroom-shot-02-max&kira-02a
                             scene BG char Kira annroom-shot 02
                             show Kira annroom-shot 02a
                             menu:
                                 Kira_10 "Да... Ещё чуть-чуть и я кончу... Может быть, ты воспользуешься чем-то потолще пальчиков и язычка? Только не торопись..."
                                 "{i}тереться членом о её киску{/i}":
-                                    #annroom-shot-02-max&kira-04-f + annroom-shot-02-max&kira-04
+                                    # annroom-shot-02-max&kira-04-f + annroom-shot-02-max&kira-04
                                     scene BG char Kira annroom-shot 04
                                     show Kira annroom-shot 04
                                     Kira_07 "Ох, Макс... Должно быть тебе уже неймётся засадить мне! А уж как сильно я этого хочу..."   #уход на "медленно проникнуть в неё членом"
@@ -905,25 +905,25 @@ label kira_about_photo2:
                                     pass
 
                 "{i}тереться членом о её киску{/i}":
-                    #annroom-shot-02-max&kira-04-f + annroom-shot-02-max&kira-04
+                    # annroom-shot-02-max&kira-04-f + annroom-shot-02-max&kira-04
                     scene BG char Kira annroom-shot 04
                     show Kira annroom-shot 04
                     Kira_07 "Ох, Макс... Должно быть тебе уже неймётся засадить мне! А уж как сильно я этого хочу..."   #уход на "медленно проникнуть в неё членом"
 
         "{i}проникнуть в её киску пальцами{/i}":
-            #annroom-shot-02-max&kira-03-f + annroom-shot-02-max&kira-03a
+            # annroom-shot-02-max&kira-03-f + annroom-shot-02-max&kira-03a
             scene BG char Kira annroom-shot 03
             show Kira annroom-shot 03a
             menu:
                 Kira_06 "Оу... Теперь понятно, что будет удобнее... ахх... делать... там. Да... Ты стал очень хорош в этом деле. Ох, обожаю, когда ты так делаешь!"
                 "{i}трахать её пальцами{/i}":
-                    #annroom-shot-02-max&kira-02-f + annroom-shot-02-max&kira-02a
+                    # annroom-shot-02-max&kira-02-f + annroom-shot-02-max&kira-02a
                     scene BG char Kira annroom-shot 02
                     show Kira annroom-shot 02a
                     menu:
                         Kira_08 "Да... Так приятно... Ммм... Может, самое время, пустить в дело кое-что ещё..."
                         "{i}тереться членом о её киску{/i}":
-                            #annroom-shot-02-max&kira-04-f + annroom-shot-02-max&kira-04
+                            # annroom-shot-02-max&kira-04-f + annroom-shot-02-max&kira-04
                             scene BG char Kira annroom-shot 04
                             show Kira annroom-shot 04
                             Kira_07 "Ох, Макс... Должно быть тебе уже неймётся засадить мне! А уж как сильно я этого хочу..."   #уход на "медленно проникнуть в неё членом"
@@ -931,14 +931,14 @@ label kira_about_photo2:
                             pass
 
     # медленно проникнуть в неё членом
-    #annroom-shot-02-max&kira-04a
+    # annroom-shot-02-max&kira-04a
     scene Kira annroom-shot 04a
     menu:
         Kira_09 "Ухх, давно во мне не было такого большого... Д-а-а... Вот так, Макс... Не спеши, дай мне привыкнуть к нему... А вот теперь, трахни свою тётю!"
         "{i}трахать тётю Киру{/i}":
             pass
 
-    #annroom-shot-02-max&kira-05-f + annroom-shot-02-max&kira-05
+    # annroom-shot-02-max&kira-05-f + annroom-shot-02-max&kira-05
     scene BG char Kira annroom-shot 05
     show Kira annroom-shot 05
     $ expected_photo.append('09')
@@ -947,18 +947,18 @@ label kira_about_photo2:
         "{i}ускориться{/i}":
             pass
 
-    #annroom-shot-02-max&kira-05a
+    # annroom-shot-02-max&kira-05a
     scene Kira annroom-shot 05a
     menu:
         Kira_12 "Да, так... Глубже, быстрее! К чёрту нежности, оттрахай меня так, как тебе хочется! Да, вот так... Ох, я кончаю... Д-а-а..."
         "{i}кончить Кире на живот{/i}":
             pass
 
-    #annroom-shot-02-max&kira-06
+    # annroom-shot-02-max&kira-06
     scene Kira annroom-shot 06
     Kira_07 "Ну что, полегчало, Макс? Как тебе первый раз? Понравилось так, что трахал бы меня весь день?"
 
-    #annroom-shot-02-max&kira-05-f + annroom-shot-02-max&kira-06a
+    # annroom-shot-02-max&kira-05-f + annroom-shot-02-max&kira-06a
     scene BG char Kira annroom-shot 05
     show Kira annroom-shot 06a
     Max_05 "Фух, было обалденно! Но я бы и ночью не перестал это делать!"
@@ -967,7 +967,7 @@ label kira_about_photo2:
         "{i}развязать Киру{/i}":
             pass
 
-    #annroom-watch-01 + annroom-watch-01-max-01d + annroom-watch-01-kira-01
+    # annroom-watch-01 + annroom-watch-01-max-01d + annroom-watch-01-kira-01
     scene BG annroom-watch-01
     show Kira annroom-watch 01
     show Max annroom-watch 01d

@@ -601,7 +601,7 @@ label eric_ann_fucking:
                             scene BG annroom-watch-01
                             show Eric watch 00
                             $ renpy.show('Max annroom-watch 01'+mgg.dress)
-                            #annroom-watch-01 + annroom-watch-01-ann&eric-00 + annroom-watch-01-max-(01-01b)
+                            # annroom-watch-01 + annroom-watch-01-ann&eric-00 + annroom-watch-01-max-(01-01b)
                             Ann_14 "Эрик, но... он мой сын. Это неправильно, ты же понимаешь..."
                             Eric_03 "Я думаю, что мы должны разрешить ему смотреть, если не будет мешать. Может быть, чему-то научится. Где-то ему же нужно учиться, пусть это будет таким образом... И Ань, не спорь со мной!"
                             Ann_12 "Как скажешь, Эрик..."
@@ -1072,7 +1072,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 01-01'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-01-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-01-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         Max_01 "{i}( Отлично! Мне как раз всё видно в зеркале. Посмотрим, чему мою сестрёнку будут учить эти извращенцы... ){/i}"
         Eric_01 "... Рано или поздно у тебя появится парень и тебе нужно знать, как доставить ему удовольствие руками. Но это если вы с ним настроены на серьёзные отношения!"
         Ann_12 "Да, Лиза, вы должны естественно к этому прийти, не нужно с этим торопиться и уж тем более, чтобы тебя к этому принуждали."
@@ -1080,7 +1080,7 @@ label sexed_lisa:
         scene BG char Eric sexed-talk
         $ renpy.show('Eric sexed talk-01'+eric.dress)
         $ renpy.show('Lisa sexed talk-01'+lisa.dress)
-        #sexed-talk + sexed-talk-ann-01-eric-(01-01a) + sexed-talk-lisa-(01-01a)
+        # sexed-talk + sexed-talk-ann-01-eric-(01-01a) + sexed-talk-lisa-(01-01a)
         Lisa_01 "Конечно, мам, на какие же ещё отношения я могу быть настроена... Итак, что и как надо делать руками?"
         Eric_02 "Давай я встану, Ань, чтобы Лизе было всё хорошо видно..."
 
@@ -1088,7 +1088,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 02-01'+eric.dress)
         $ renpy.show('Lisa sexed 02'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
         Ann_02 "Конечно, дорогой. Вот, Лиза, смотри... Нужно взять член крепко, но нежно и делать вот так... Если почувствуешь, что не хватает смазки, можешь использовать слюну или масло..."
         Lisa_02 "Мам, а как понять, что всё происходит как надо?"
         Ann_05 "Ты поймёшь, дорогая. Сразу поймёшь... А может быть твой избранник даже будет подсказывать тебе, как ему больше нравится."
@@ -1097,7 +1097,7 @@ label sexed_lisa:
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-01'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
-        #sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
         Lisa_03 "Со стороны всё выглядит довольно просто или это не так?"
         Ann_07 "Ну, Лиза, я уже делала это много раз, поэтому и выглядит это очень просто, но здесь нужно чувствовать своего партнёра. У тебя ещё это всё впереди, когда придёт время..."
         Lisa_09 "Надеюсь, я при этом ничего не испорчу..."
@@ -1109,7 +1109,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 01-02'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         Ann_04 "Ты у меня умница, дочка. Ладно, ступай, на сегодня я думаю достаточно. Через неделю продолжим..."
         Lisa_02 "Мам, а что будет в следующий раз?"
         Ann_01 "Ну, нам с Эриком есть, что тебе ещё показать и рассказать. Но это в следующий раз..."
@@ -1123,7 +1123,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 01-02'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
         Ann_02 "... Как правильно стимулировать мужской член рукой я тебе показала. Теперь покажу тебе довольно безобидный и эффективный способ ещё больше возбудить мужчину..."
         Lisa_01 "Это будет какая-то хитрая техника?"
@@ -1131,7 +1131,7 @@ label sexed_lisa:
         scene BG char Eric sexed-talk
         $ renpy.show('Eric sexed talk-02'+eric.dress)
         $ renpy.show('Lisa sexed talk-01'+lisa.dress)
-        #sexed-talk + sexed-talk-ann-02-eric-(02-02a) + sexed-talk-lisa-(01-01a)
+        # sexed-talk + sexed-talk-ann-02-eric-(02-02a) + sexed-talk-lisa-(01-01a)
         Ann_04 "Ну, на технику это не тянет, скорее... очень приятное дополнение к ласкам."
         Eric_02 "Давай я встану, Ань, чтобы Лизе было всё хорошо видно... Да и мне тоже."
 
@@ -1139,14 +1139,14 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 02-01'+eric.dress)
         $ renpy.show('Lisa sexed 02'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
         Ann_05 "Мужчин очень заводит, когда женщина раздевается, так что в дополнение к ласкам можно обнажить грудь, это точно понравится твоему избраннику."
         Max_03 "{i}( О да, мам! Мне бы очень понравилось, если бы ты подрочила мне обнажив свою сочную и упругую грудь... ){/i}"
 
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-01'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
-        #sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
         Lisa_02 "А, ну это я делать умею..."
         Ann_15 "В каком это смысле умеешь?! Ты что, уже кому-то показывала свою грудь? Признавайся!"
         Lisa_10 "Ой, нет, я имела ввиду, что одеваться-раздеваться я умею, каждый день это делаю."
@@ -1155,7 +1155,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 02-02'+eric.dress)
         $ renpy.show('Lisa sexed 02'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
         Ann_08 "Смотри мне, Лиза! Вот... Такая мелочь, дочка, а мужчине приятно..."
         Lisa_09 "Мам, твоя грудь - уж точно не мелочь! У меня поменьше будет..."
         Ann_02 "Не переживай из-за этого, тебе ещё расти и расти."
@@ -1164,7 +1164,7 @@ label sexed_lisa:
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-02'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
-        #sexed-hj + sexed-hj-ann-02-eric-(02-02a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-02-eric-(02-02a) + sexed-hj-lisa-(01-01a)
         Lisa_02 "Значит, достаточно просто обнажить грудь и всё?"
         Ann_05 "Ну... можно ещё немного подразнить своего партнёра и поводить его членом по своей груди. Он уж точно от этого не откажется..."
         Eric_05 "А если размеры груди позволяют, то некоторые могут стимулировать член и без рук, верно Ань?"
@@ -1174,7 +1174,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 02-01'+eric.dress)
         $ renpy.show('Lisa sexed 02'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
         Lisa_01 "Конечно, мам. С интересом буду ждать следующего урока..."
         Max_07 "{i}( С интересом... Да уж, а ещё меня называют в этом доме извращенцем! Хотя, если бы не Эрик... ){/i}"
 
@@ -1186,7 +1186,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 01-02'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         Max_01 "{i}( Посмотрим, чему мою сестрёнку будут сегодня учить... ){/i}"
         Ann_02 "... В дополнение к тому, что ты уже видела, не стоит забывать и ещё кое о чём. Дорогой, встань. Так Лизе будет лучше видно..."
         Eric_01 "Конечно, Ань, сейчас."
@@ -1195,7 +1195,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 02-02'+eric.dress)
         $ renpy.show('Lisa sexed 02'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
         Ann_04 "Так вот, Лиза, во время стимуляции члена можно ещё ласкать яички. Делать это нужно нежно и аккуратно."
         Lisa_10 "Как много всяких нюансов..."
         Ann_05 "Как и в любом процессе. Если знаешь как и к чему прикасаться, то принесёшь массу удовольствия мужчине. Вот, посмотри..."
@@ -1204,7 +1204,7 @@ label sexed_lisa:
         $ renpy.show('Eric sexed 02-03'+eric.dress)
         $ renpy.show('Lisa sexed 02'+lisa.dress)
         show Max Lisa-sexed 01
-        #sexed-annroom-01 + sexed-annroom-02-ann-03-eric-(03-03a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-03-eric-(03-03a) + sexed-annroom-02-lisa-(01-01a) + sexed-annroom-01-max-01
         Lisa_02 "Значит, всё делать так же как и с членом?"
         Ann_07 "Да, разве что член нужно держать крепко, а вот яичкам достаточно лёгких прикосновений, чтобы мужчине стало невероятно хорошо. Так ведь, дорогой?"
         Eric_07 "О да! Невероятно хорошо - это твоя мама верно сказала... Кажется, она всего лишь легонько водит по ним своими пальчиками, но ощущения... непередаваемые..."
@@ -1212,7 +1212,7 @@ label sexed_lisa:
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-03'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
-        #sexed-hj + sexed-hj-ann-03-eric-(03-03a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-03-eric-(03-03a) + sexed-hj-lisa-(01-01a)
         Max_10 "{i}( Эй! Я тоже хочу, чтобы мне яички ласкали! Судя по млеющей физиономии Эрика - это как минимум очень блаженно. ){/i}"
         Lisa_03 "Круто! А как долго это всё надо делать?"
         Ann_08 "А об этом мы поговорим уже на следующем уроке, дочка. Заодно и пробежимся ещё раз по всем моментам, которые я тебе показывала. Не хочется, чтобы я тут напрасно распиналась."
@@ -1224,7 +1224,7 @@ label sexed_lisa:
 
     label .lesson_3:
 
-        #sexed-annroom-01 + sexed-annroom-01-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-01-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         scene BG char Eric sexed-annroom-01
         $ renpy.show('Eric sexed 01-01'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
@@ -1233,27 +1233,27 @@ label sexed_lisa:
         Ann_02 "... Посмотрим, всё ли ты усвоила из наших уроков. Что и как мне нужно сделать, чтобы доставить мужчине удовольствие?"
         Lisa_10 "Ой, мам, сейчас... Так... Нужно взять его член крепко, но нежно и ласкать, да?"
 
-        #sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-01-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         $ renpy.show('Eric sexed 01-02'+eric.dress)
         Ann_04 "Верно, дорогая. Я снова покажу всё ещё раз, чтобы мы этот этап стимулирования мужского члена руками закончили и могли двигаться дальше."
         Lisa_11 "А будет что-то ещё?! Ещё уроки?"
         Ann_05 "Да, дочка. Это не единственный способ доставить мужчине удовольствие."
         Lisa_02 "А как ещё?"
 
-        #sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-01-eric-(01-01a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         $ renpy.show('Eric sexed 02-01'+eric.dress)
         Max_08 "{i}( Мама что, и отсасывать собирается Эрику при Лизе?! Да нет... Хотя, уже можно не удивляться чему-то такому... ){/i}"
         Ann_12 "Лиза, не сегодня. Сегодня у нас что?"
         Lisa_09 "Да, я поняла, закрепление пройденного материала."
 
-        #sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-01-eric-(01-01a) + sexed-hj-lisa-(01-01a)
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-01'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
         Ann_07 "Вот и славно. Как я могу ещё больше возбудить мужчину во время стимуляции руками?"
         Lisa_01 "Можно обнажить грудь! Я это помню..."
 
-        #sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-02-eric-(02-02a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         scene BG char Eric sexed-annroom-01
         $ renpy.show('Eric sexed 02-02'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
@@ -1261,14 +1261,14 @@ label sexed_lisa:
         Ann_08 "Верно. Поводить его членом по своей груди тоже будет не лишним."
         Lisa_10 "Ой, забыла. Точно, ты говорила о том, чтобы немного подразнить этим мужчину."
 
-        #sexed-hj + sexed-hj-ann-02-eric-(02-02a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-02-eric-(02-02a) + sexed-hj-lisa-(01-01a)
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-02'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
         Ann_02 "Что ещё мы можем делать?"
         Lisa_02 "Сейчас... Ах да, ласкать яички!"
 
-        #sexed-annroom-01 + sexed-annroom-02-ann-03-eric-(03-03a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
+        # sexed-annroom-01 + sexed-annroom-02-ann-03-eric-(03-03a) + sexed-annroom-01-lisa-(01-01a) + sexed-annroom-01-max-01
         scene BG char Eric sexed-annroom-01
         $ renpy.show('Eric sexed 02-03'+eric.dress)
         $ renpy.show('Lisa sexed 01'+lisa.dress)
@@ -1276,7 +1276,7 @@ label sexed_lisa:
         Ann_04 "И как надо это делать?"
         Lisa_10 "Эээ... Нежно и аккуратно. Легонько массировать... Верно, мам?"
 
-        #sexed-hj + sexed-hj-ann-03-eric-(03-03a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-03-eric-(03-03a) + sexed-hj-lisa-(01-01a)
         scene BG char Eric sexed-hj
         $ renpy.show('Eric sexed hj-03'+eric.dress)
         $ renpy.show('Lisa sexed hj-01'+lisa.dress)
@@ -1285,7 +1285,7 @@ label sexed_lisa:
         Ann_07 "Уже скоро увидишь. Довести мужчину до оргазма не сложно, не то что нас, женщин. Эрик, сегодня нужно показать Лизе как мужчины кончают, так что не сдерживайся..."
         Eric_04 "Да, я уже близок к этому... Давай, детка, поработай немного быстрее и жёстче. О да... То, что надо..."
 
-        #sexed-hj + sexed-hj-ann-04-eric-(04-04a) + sexed-hj-lisa-(01-01a)
+        # sexed-hj + sexed-hj-ann-04-eric-(04-04a) + sexed-hj-lisa-(01-01a)
         $ renpy.show('Eric sexed hj-04'+eric.dress)
         Max_10 "{i}( Эй, вы там на мою сестрёнку только не попадите! Ладно вы люди взрослые, но при Лизе то поаккуратнее будьте... ){/i}"
         Ann_06 "Вот так, Лиза, мужчины и кончают... Лучше при себе иметь влажные салфетки, чтобы привести всё в порядок после этого."
@@ -1293,7 +1293,7 @@ label sexed_lisa:
         Ann_14 "Ну, куда бы мужчина не кончил, всё равно придётся прибраться за собой. Можно ещё конечно... Может ей ещё рано знать о таком, дорогой?"
         Eric_06 "О том, что можно принять всю сперму в рот и проглотить? Что ты, я думаю это самый подходящий момент!"
 
-        #sexed-talk + sexed-talk-ann-01-eric-(01-01a) + sexed-talk-lisa-(01-01a)
+        # sexed-talk + sexed-talk-ann-01-eric-(01-01a) + sexed-talk-lisa-(01-01a)
         scene BG char Eric sexed-talk
         $ renpy.show('Eric sexed talk-01'+eric.dress)
         $ renpy.show('Lisa sexed talk-01'+lisa.dress)
@@ -1333,14 +1333,14 @@ label first_jerk_balkon:
 
 
 label first_jerk_yard:
-    #eric-voyeur-yard-01
+    # eric-voyeur-yard-01
     scene Eric jerk off 00
     with Fade(0.4, 0, 0.3)
     menu:
         Max_07 "Опа, Эрик! Что это он делает среди ночи у окна Алисы?!"
         "{i}Осторожно подсмотреть за ним с балкона{/i}":
             pass
-    #eric-voyeur-alice-01
+    # eric-voyeur-alice-01
     scene Eric jerk off 01
     Max_09 "Вот и он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
     menu:
@@ -1355,7 +1355,7 @@ label first_jerk_yard:
 
 label jerk_balkon:
     #если решил подглядеть за Анной или Алисой через окно (Эрик около окна Алисы)
-    #eric-voyeur-alice-01
+    # eric-voyeur-alice-01
     $ _ch1 = Chance(500)
     if not eric.stat.mast:
         jump first_jerk_balkon
@@ -1403,7 +1403,7 @@ label jerk_balkon:
 
 
 label jerk_yard:
-    #eric-voyeur-yard-01
+    # eric-voyeur-yard-01
     if not eric.stat.mast:
         jump first_jerk_yard
 
@@ -1425,14 +1425,14 @@ label jerk_photohant1:
 
     if RandomChance(500):
         # (успел)
-        #eric-voyeur-alice-01
+        # eric-voyeur-alice-01
         scene Eric jerk off 01
         with Fade(0.4, 0, 0.3)
         menu:
             Max_09 "Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!"
             "{i}сфотографировать его{/i}":
                 pass
-        #eric-voyeur-alice-01 + photocamera
+        # eric-voyeur-alice-01 + photocamera
         show FG photocamera
         play sound "<from 1>audio/PhotoshootSound.ogg"
         Max_02 "О да! Такой отвратительный снимок явно может стать полезным для меня. Конечно, если правильно его использовать..."

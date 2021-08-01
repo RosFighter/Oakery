@@ -153,25 +153,25 @@ label MorningWoodCont:  # последующие утренние стояки
         scene BG char Lisa morning-oops 01
         $ renpy.show('Lisa morning-oops 07'+lisa.dress)
         with Fade(0.4, 0, 0.3)
-        Lisa_12 "Ну и как тебе это, Макс? Не стыдно, вот так валяться передо мной?"   #oops-01 + 07
+        Lisa_12 "Ну и как тебе это, Макс? Не стыдно, вот так валяться передо мной?"   # oops-01 + 07
         Max_07 "Что случилось опять?"
         scene BG char Lisa morning-oops 02
         $ renpy.show('Lisa morning-oops 08'+lisa.dress)
-        Lisa_09 "Не знаю, может у кого-то кое-что не помещается в трусах!"   #oops-02 + 08
+        Lisa_09 "Не знаю, может у кого-то кое-что не помещается в трусах!"   # oops-02 + 08
         Max_09 "Вот ты про что... Странно, что ты ещё маму не позвала..."
         scene BG char Lisa morning-oops 09
         show Max morning-oops 09
         $ renpy.show('Lisa morning-oops 09'+lisa.dress)
-        Lisa_00 "Сомневаюсь, что она знает, что тебе такое снится... от чего эта твоя штука, становится такой большой."   #oops-09 + 09a + 09b
+        Lisa_00 "Сомневаюсь, что она знает, что тебе такое снится... от чего эта твоя штука, становится такой большой."   # oops-09 + 09a + 09b
         Max_00 "Да ничего мне такого не снится! Это от моих снов вообще не зависит..."
         Lisa_01 "Ага, рассказывай! Может он у тебя своей собственной жизнью живёт?"
         Max_02 "Знаешь, если бы тебе это всё не нравилось, ты бы так на него не глазела!"
         Lisa_11 "Что?! Думаешь, мне нравится на него смотреть?!"
         Max_03 "Конечно! Иначе, ты бы просто закрыла глаза или отвернулась..."
         $ renpy.show('Lisa morning-oops 10'+lisa.dress)
-        Lisa_12 "Вот и отвернусь!"   #oops-09 + 10b
+        Lisa_12 "Вот и отвернусь!"   # oops-09 + 10b
         show Max morning-oops 10
-        Max_04 "Да я не против, можешь смотреть..."   #oops-09 + 10a
+        Max_04 "Да я не против, можешь смотреть..."   # oops-09 + 10a
         Lisa_09 "Да ну тебя, Макс!"
         $ poss['seduction'].open(2)
 
@@ -180,19 +180,19 @@ label MorningWoodCont:  # последующие утренние стояки
         $ renpy.show('Lisa morning-oops 11'+lisa.dress)
         with Fade(0.4, 0, 0.3)
         menu:
-            Max "Это что?! Лиза хочет прикоснуться к моему члену?! Да нет, это я, наверно, всё ещё сплю... Или нет?"   #oops-01 + 11
+            Max "Это что?! Лиза хочет прикоснуться к моему члену?! Да нет, это я, наверно, всё ещё сплю... Или нет?"   # oops-01 + 11
             "{i}подождать{/i}":
                 pass
             "Да трогай уже, он не кусается!":
                 pass
         $ renpy.show('Lisa morning-oops 01'+lisa.dress)
-        Lisa_11 "Ой, Макс, ты не спишь! Это... не то, что ты подумал..."   #oops-01 + 01a
+        Lisa_11 "Ой, Макс, ты не спишь! Это... не то, что ты подумал..."   # oops-01 + 01a
         Max_07 "А похоже именно на то, что я подумал!"
         Lisa_13 "Вот ещё! Это не так!"
         scene BG char Lisa morning-oops 12
         show Max morning-oops 12
         $ renpy.show('Lisa morning-oops 12'+lisa.dress)
-        Max_04 "Если всё ещё хочешь, то можешь потрогать его..."   #oops-12 + 12a + 12b
+        Max_04 "Если всё ещё хочешь, то можешь потрогать его..."   # oops-12 + 12a + 12b
         Lisa_10 "Не собиралась я его трогать! Я просто... хотела его прикрыть... Вот!"
         Max_02 "Ну да, это рукой, видимо?"
         Lisa_11 "Э-э-э... Ой, всё! Я... вообще в ванную шла..."
@@ -203,12 +203,12 @@ label MorningWoodCont:  # последующие утренние стояки
         scene BG char Lisa morning-oops 13
         $ renpy.show('Lisa morning-oops 13'+lisa.dress)
         with Fade(0.4, 0, 0.3)
-        Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"   #oops-13 + max-01 lisa-01
+        Lisa_01 "Эй, Макс, а у всех мальчиков эта штука такая большая?"   # oops-13 + max-01 lisa-01
         Max_19 "Я сплю, Лиза... Какая штука?"
         Lisa_05 "Ну эта ваша штука..."
         $ renpy.show('Lisa morning-oops 14'+lisa.dress)
         Max_07 "Член! Не штука, а член."
-        Lisa_02 "Ладно... у всех мальчиков... член... такой большой?"   #oops-13 + max-02 lisa-02
+        Lisa_02 "Ладно... у всех мальчиков... член... такой большой?"   # oops-13 + max-02 lisa-02
         Max_01 "Судя по тому, что даже мама была удивлена его размерами, то не у всех."
         Lisa_01 "А это хорошо или плохо, что он большой?"
         Max_04 "Ну... это от тебя зависит... Он тебе нравится?"
@@ -1496,6 +1496,11 @@ label Lisa_HomeWork:
         Max_02 "Уверена?"
         Lisa_06 "Да-а-а... От этого массажа мне становится слишком горячо... А здесь и так жарко!"
         if not _in_replay:
+            if poss['mom-tv'].st() == 6:
+                Max_03 "{i}( Кстати! А это отличная возможность скрыть мой стояк от мамы, когда мы смотрим вместе ТВ! Массажем я уже овладел весьма неплохо... Так почему бы не предложить его маме? И если она согласится, то я смогу оказаться прямо за ней и она ничего не увидит. Так и надо будет сделать! ){/i}"
+                if lisa.flags.m_shoulder < 5:   #если Макс ещё не набрал минимум 5 успешных массажей шеи и плеч Лизы
+                    Max_09 "{i}( Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось... ){/i}"
+                $ poss['mom-tv'].open(7)
             $ persistent.memories['Lisa_HomeWork.shoulders'] = 1
             $ add_lim('lisa.ri', 0.1, 3)
         jump .end_shoulders2
@@ -1511,7 +1516,7 @@ label Lisa_HomeWork:
         jump .random_answer
 
     label .random_answer:
-        ###3 рандомных ответа###
+        ### 3 рандомных ответа###
         $ _r1 = renpy.random.randint(0, 3)
         if _r1 == 1:
             Max_05 "Всё правильно, Лиза. Сегодня ошибок нет. Ты умница!"
@@ -1635,8 +1640,14 @@ label Lisa_HomeWork:
             #если у Макса меньше 35% влияния на Лизу
             Max_02 "Уверена?"
             Lisa_06 "Да-а-а... От этого массажа мне становится слишком горячо... А здесь и так жарко!"
+            if not _in_replay:
+                if poss['mom-tv'].st() == 6:
+                    Max_03 "{i}( Кстати! А это отличная возможность скрыть мой стояк от мамы, когда мы смотрим вместе ТВ! Массажем я уже овладел весьма неплохо... Так почему бы не предложить его маме? И если она согласится, то я смогу оказаться прямо за ней и она ничего не увидит. Так и надо будет сделать! ){/i}"
+                    if lisa.flags.m_shoulder < 5:   #если Макс ещё не набрал минимум 5 успешных массажей шеи и плеч Лизы
+                        Max_09 "{i}( Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось... ){/i}"
+                    $ poss['mom-tv'].open(7)
             Max_04 "Тогда это всё. Всё у меня там правильно?"
-            #lessons-mass-05 + lessons-mass-05-max-lisa + lessons-mass-05-(02/03/04)
+            # lessons-mass-05 + lessons-mass-05-max-lisa + lessons-mass-05-(02/03/04)
             $ renpy.show("Lisa lessons-mass 05"+lisa.dress+mgg.dress)
 
             Lisa_01 "Да, Макс. Ещё раз спасибо! И за уроки, и за мои ножки... и плечи..."
@@ -1644,6 +1655,12 @@ label Lisa_HomeWork:
         else:
             #если у Макса 35% или больше влияния на Лизу
             Max_02 "Ну... Пожалуй, я немного отклонился от курса, чтобы тебе было ещё приятнее... Или нет?"
+            if not _in_replay:
+                if poss['mom-tv'].st() == 6:
+                    Max_03 "{i}( Кстати! А это отличная возможность скрыть мой стояк от мамы, когда мы смотрим вместе ТВ! Массажем я уже овладел весьма неплохо... Так почему бы не предложить его маме? И если она согласится, то я смогу оказаться прямо за ней и она ничего не увидит. Так и надо будет сделать! ){/i}"
+                    if lisa.flags.m_shoulder < 5:   #если Макс ещё не набрал минимум 5 успешных массажей шеи и плеч Лизы
+                        Max_09 "{i}( Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось... ){/i}"
+                    $ poss['mom-tv'].open(7)
             menu:
                 Lisa_05 "Мне надо сказать \"нет\", но я не хочу, чтобы ты останавливался..."
                 "{i}массировать её грудь \n{color=[_ch4.col]}(Массаж. Шанс: [_ch4.vis]){/color}{/i}":
@@ -2194,7 +2211,7 @@ label conversation_after_dinner(var=0):
         return
 
 
-    #max&eric-terrace-00 + max&eric-(01/01a/01d) + max&lisa-(03/03a/03b)
+    # max&eric-terrace-00 + max&eric-(01/01a/01d) + max&lisa-(03/03a/03b)
     scene BG talk-terrace-00
     $ renpy.show("Lisa talk-terrace 01"+lisa.dress)
     $ renpy.show("Max talk-terrace 01"+mgg.dress)
@@ -2218,7 +2235,7 @@ label conversation_after_dinner(var=0):
             Lisa_09 "Ты правда поможешь мне с уроками или ты просто так это ляпнул, чтобы от мамы меня защитить?"
             Max_07 "Ну... Я, конечно, мог бы, но зачем мне просто так тратить своё время. Мне нужен какой-то интерес в этом... Не стоит ли нам задуматься над теми моими условиями?"
 
-        #max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
+        # max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
         $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
 
@@ -2238,7 +2255,7 @@ label conversation_after_dinner(var=0):
             "Нет, не говорила...":
                 Lisa_12 "Ну так вот, скажу. Ты - извращенец. Я твоя сестра и требовать от меня такого... стыдно должно быть!"
                 Max_07 "Допустим, мне стыдно. Так ты согласна?"
-        #max&eric-terrace-00 + max&lisa-(01/01a/01b) + max&lisa-(05/05a/05b)
+        # max&eric-terrace-00 + max&lisa-(01/01a/01b) + max&lisa-(05/05a/05b)
         $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         $ renpy.show("Max talk-terrace 01"+mgg.dress)
         Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
@@ -2272,7 +2289,7 @@ label conversation_after_dinner(var=0):
             Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получила двойку..."
             Max_08 "Наверно, я просто был невнимателен... Нужно, чтобы у меня был какой-нибудь стимул для этого! Поможешь?"
 
-        #max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
+        # max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
         $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
         $ renpy.show("Max talk-terrace 03"+mgg.dress)
 
@@ -2280,7 +2297,7 @@ label conversation_after_dinner(var=0):
         Max_04 "Я бы так не сказал, Лиза. Если бы ты спала, например, без своих штанов, в трусиках, то мне было бы приятно это видеть... Как мне кажется – это хорошая награда за хорошие оценки."
         Lisa_09 "В смысле? Я же твоя сестра, Макс. Это как-то неправильно..."
         Max_07 "Разве тебе не жарко спать в штанах? Я вот сплю в трусах и мне хорошо."
-        #max&eric-terrace-00 + max&lisa-(01/01a/01b) + max&lisa-(05/05a/05b)
+        # max&eric-terrace-00 + max&lisa-(01/01a/01b) + max&lisa-(05/05a/05b)
         $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
         $ renpy.show("Max talk-terrace 01"+mgg.dress)
         if dcv.mw.stage > 2:
@@ -2310,7 +2327,7 @@ label conversation_after_dinner(var=0):
             if var < 7:
                 Lisa_09 "Помнишь, ты говорил, что будешь помогать мне делать уроки?"
                 Max_09 "Возможно... А что?"
-                #max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
+                # max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
                 $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
                 $ renpy.show("Max talk-terrace 03"+mgg.dress)
                 Lisa_10 "Тогда почему ты не помогал?"
@@ -2319,14 +2336,14 @@ label conversation_after_dinner(var=0):
                 Max_07 "Ладно, я помогу тебе. Не переживай."
                 $ lisa.claims.append('dont_help')
             else:
-                #max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
+                # max&eric-terrace-00 + max&lisa-(02/02a/02b) + max&lisa-(04/04a/04b)
                 $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
                 $ renpy.show("Max talk-terrace 03"+mgg.dress)
                 Lisa_09 "Мне вот начинает казаться, что толку от твоей помощи с уроками никакой! Может, уже будешь больше стараний прикладывать? Я ведь и обидеться могу сильно!"
                 Max_07 "Ладно, я постараюсь. Не переживай."
                 $ lisa.claims.append('good_way')
 
-            #max&eric-terrace-00 + max&lisa-(01/01a/01b) + max&lisa-(05/05a/05b)
+            # max&eric-terrace-00 + max&lisa-(01/01a/01b) + max&lisa-(05/05a/05b)
             $ renpy.show("Lisa talk-terrace 03"+lisa.dress)
             $ renpy.show("Max talk-terrace 01"+mgg.dress)
             Lisa_01 "Я перестану переживать, когда мои оценки надолго станут в порядке!"
@@ -4216,7 +4233,7 @@ label about_alex1:
 
     # был диалог с Оливией во дворе "Рад тебя видеть, Оливия!"
     # после ужина в среду (за 2 дня до ближайшего визита Оливии ночью)
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(03a/03b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(03a/03b)
     scene BG talk-terrace-00
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
@@ -4225,7 +4242,7 @@ label about_alex1:
     Max_00 "Да, Лиза, что такое?"
     Lisa_10 "Мне нужен совет по мальчикам..."
     Max_01 "Какой именно?"
-    #max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
+    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 02'+lisa.dress)
     Lisa_01 "Со мной Алекс начал неожиданно общаться... И это не просто милые беседы. Он ещё и флиртует со мной! Как это понимать?"
@@ -4233,7 +4250,7 @@ label about_alex1:
     Lisa_11 "Но он же с Оливией встречается! Может, у них всё плохо в отношениях и потому он так делает?"
     Max_09 "Не обязательно. Поинтересуйся у Оливии, как у них дела. Если всё нормально, то значит ему мало одной девчонки."
     Lisa_00 "Точно, узнаю у неё. Но я не заметила, чтобы она была расстроенной в последнее время. Не думала, что Алекс такой..."
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(05a/05b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(05a/05b)
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 03'+lisa.dress)
     Max_04 "Ты же помнишь, что мы всю эту дружбу с Оливией затевали именно для того, чтобы это выяснить."
@@ -4251,7 +4268,7 @@ label about_alex1:
 label about_alex2:
 
     #после ужина в пятницу (в день, когда должен был состояться ночной визит Оливии, но он отменяется, если Эрик уже влез в дела Лизы)
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(03a/03b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(03a/03b)
     scene BG talk-terrace-00
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
@@ -4260,7 +4277,7 @@ label about_alex2:
     Max_00 "Да, Лиза, я слушаю..."
     Lisa_09 "Оливия сегодня не придёт. Они с Алексом куда-то пошли вдвоём."
     Max_07 "Жалко. Но раз они куда-то вместе пошли, а Алекс перед этим с тобой флиртовал, то выходит он не прочь сразу с двумя девчонками мутить."
-    #max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
+    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 02'+lisa.dress)
     Lisa_01 "Может, он просто так со мной флиртовал? Мальчики флиртуют просто так?"
@@ -4271,7 +4288,7 @@ label about_alex2:
     Max_07 "Кстати, когда мы лежали и загорали в последний раз, Оливия сказала мне, что Алекс как-то иначе стал к ней относиться, после того, как узнал, что у них финансовые проблемы в семье."
     Lisa_09 "Иначе - это как?"
     Max_09 "Вот это уже сама у неё выясни. А когда она ему рассказала про то, какой у нас шикарный дом, он сразу же тобой заинтересовался. Совпадением это не назовёшь!"
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(05a/05b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(05a/05b)
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 03'+lisa.dress)
     Lisa_13 "Как же это всё мерзко... И чем дальше, тем всё больше и больше! Что мне теперь делать?"
@@ -4294,7 +4311,7 @@ label about_alex2:
 label about_alex3:
 
     #после ужина в понедельник (за 4 дня до 2-ого визита Оливии ночью)
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(03a/03b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(03a/03b)
     scene BG talk-terrace-00
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
@@ -4303,7 +4320,7 @@ label about_alex3:
     Max_00 "Я весь во внимании."
     Lisa_09 "У меня такая ситуация непростая случилась... И я хотела с тобой посоветоваться."
     Max_07 "Так давай рассказывай!"
-    #max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
+    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 02'+lisa.dress)
     Lisa_10 "Мне Алекс предложил встречаться... И я не знаю, что делать..."
@@ -4314,7 +4331,7 @@ label about_alex3:
     Max_07 "Да, Оливия прикольная девчонка. Здесь не поспоришь. А вот этот ваш Алекс..."
     Lisa_09 "Вот я и задумалась... Я сейчас потеряю Оливию, а потом меня таким же образом Алекс променяет на кого-нибудь. И в итоге я вообще всех потеряю..."
     Max_03 "Меня ты точно не потеряешь! Я всегда буду с тобой, сестрёнка."
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(05a/05b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(05a/05b)
     $ renpy.show('Max talk-terrace 03'+mgg.dress)
     $ renpy.show('Lisa talk-terrace 03'+lisa.dress)
     Lisa_01 "Спасибо, Макс. Но вот с Алексом-то что делать?"
@@ -4372,7 +4389,7 @@ label about_horror_toples:
 
 
 label Lisa_wear_Tshirt:
-    #max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
+    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
     scene BG talk-terrace-00
     $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
     $ renpy.show("Max talk-terrace 03"+mgg.dress)
