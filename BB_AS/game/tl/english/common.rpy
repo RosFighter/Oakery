@@ -1230,3 +1230,15 @@ translate english strings:
     old "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
     new "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
 
+# TODO: Translation updated at 2021-08-03 17:38
+
+translate english strings:
+
+    # renpy/common/00preferences.rpy:480
+    old "renderer menu"
+    new ""
+
+    # renpy/common/00preferences.rpy:483
+    old "accessibility menu"
+    new ""
+

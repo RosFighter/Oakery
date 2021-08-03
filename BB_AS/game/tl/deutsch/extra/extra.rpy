@@ -250,3 +250,15 @@ translate deutsch strings:
     old "Долой смущение"
     new "Peinlich berührt"
 
+# TODO: Translation updated at 2021-08-03 17:41
+
+translate deutsch strings:
+
+    # game/extra/extra.rpy:56
+    old "Это точно триллер-детектив?"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Полотенце снова сползает..."
+    new ""
+

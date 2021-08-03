@@ -1454,7 +1454,7 @@ init python:
                     else:
                         i += 1
                 if len(lst) > 1:
-                    return renpy.random.choice(lst)
+                    return renpy.random.choice(lst)# lst[renpy.random.randint(0, len(lst)-1)]
                 else:
                     return lst[0]
             else:

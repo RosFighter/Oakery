@@ -738,6 +738,7 @@ label after_load:
 
         call update_06_5_99 from _call_update_06_5_99   # фиксы после релиза
         call update_06_6_99 from _call_update_06_6_99
+        call update_07_0_99 from _call_update_07_0_99
 
         $ _version = config.version
 
@@ -1454,3 +1455,17 @@ label update_06_6_99:
             $ items['ericphoto1'].have = True
 
     return
+
+label update_07_0_99:
+
+    if _version < '0.06.8.01':
+        if ann.flags.erofilms:
+            $ poss['mom-tv'].open(0)
+        if ann.flags.erofilms>1:
+            $ poss['mom-tv'].open(2)
+            $ poss['mom-tv'].open(6)
+            $ poss['mom-tv'].open(7)
+            $ poss['mom-tv'].open(8)
+            $ poss['mom-tv'].open(9)
+        if ann.flags.erofilms>2:
+            $ poss['mom-tv'].open(10)

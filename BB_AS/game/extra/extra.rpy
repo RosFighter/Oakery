@@ -109,6 +109,11 @@ define mems = [
             Memories('olivia_second_night_visit', 'lisa-tv-01', 'set_olivia_second_night_visit', _("Долой смущение"), var="renpy.seen_label('olivia_second_night_out_with')"),
         ],
         [
+            Memories('ann_talk_tv.first_movie', 'ann-erotv-01', 'set_ann_ero1', _("Я уже взрослый!")),
+            Memories('erofilm2_1', 'ann-erotv-02', 'set_ann_ero2', _("Это точно триллер-детектив?")),
+            Memories('erofilm2_2', 'ann-erotv-03', 'set_ann_ero2', _("Полотенце снова сползает...")),
+        ],
+        [
             Memories('lessons_from_Eric.first_bj', 'ann&eric-bj01', 'set_lessons_Eric_01', _("Урок по минету от мамы и Эрика")),
             Memories('lessons_from_Eric.second_bj', 'ann&eric-bj02', 'set_lessons_Eric_01', _("Так близко к маминой попке")),
             Memories('lessons_from_Eric.third_bj', 'ann&eric-bj03', 'set_lessons_Eric_01', _("Глубокий минет в мамином исполнении")),
@@ -128,8 +133,8 @@ define photo_album = [
         ("01-Alice", _("Первые снимки для блога Алисы")),
     ]
 
-define cur_starts = [0, 0, 0, 0, 0, 0, 0]
-define displayed_group = [1, 1, 1, 1, 1, 0, 0]
+define cur_starts = [0, 0, 0, 0, 0, 0, 0, 0]
+define displayed_group = [1, 1, 1, 1, 1, 1, 0, 0]
 default st_gallery =  'mem'
 
 define next_sh = False

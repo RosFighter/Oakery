@@ -586,3 +586,15 @@ translate deutsch strings:
     old "{color=#E59400}{i}Не получилось!{/i}{/color}\n"
     new "{color=#E59400}{i}Es hat nicht funktioniert!{/i}{/color}\n"
 
+# TODO: Translation updated at 2021-08-03 17:41
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:45
+    old "{color=#00FF00}{i}Повезло!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:46
+    old "{color=#E59400}{i}Не повезло!{/i}{/color}\n"
+    new ""
+

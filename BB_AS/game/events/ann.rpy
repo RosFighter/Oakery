@@ -758,6 +758,6 @@ label ann_tv:
 
 label ann_tv_closer:
     scene BG lounge-tv-01
-    $ renpy.show('Ann tv-closer '+pose3_3+'a')
+    $ renpy.show('Ann tv-closer '+pose3_3)
     $ renpy.show('Max tv 00'+mgg.dress)
     return

@@ -151,7 +151,7 @@ define talks = {
     'a.privpunr' : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_r', "all([alice.plan_name == 'sun', alice.dcv.private.stage==5, not alice.dcv.private.done, not alice.spanked])"),
 
     'ask_money'  : TalkTheme('ann', _("Мам, дай денег, пожалуйста..."), 'ann_ask_money', "all([ann.daily.ask_money==0, not flags.about_earn])"),
-    'aboutfood'  : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv.buyfood.stage==2 and not dcv.buyfood.done"),
+    'aboutfood'  : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv.buyfood.stage==2 and not dcv.buyfood.done"), # dcv.buyfood.lost==2"),
     'aboutpool'  : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv.clearpool.stage==2 and dcv.clearpool.lost>3"),
     'ann_tv'     : TalkTheme('ann', _("Что смотришь?"), 'ann_talk_tv', "not ann.daily.tvwatch and ann.plan_name == 'tv'"),
     'ann_mw'     : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "dcv.mw.stage == 1"),
