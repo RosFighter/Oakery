@@ -1166,3 +1166,15 @@ translate deutsch strings:
     old "Copies the errors.txt file to the clipboard as Markdown for Discord."
     new "Copies the errors.txt file to the clipboard as Markdown for Discord."
 
+# TODO: Translation updated at 2021-08-03 17:41
+
+translate deutsch strings:
+
+    # renpy/common/00preferences.rpy:480
+    old "renderer menu"
+    new ""
+
+    # renpy/common/00preferences.rpy:483
+    old "accessibility menu"
+    new ""
+

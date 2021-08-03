@@ -255,3 +255,15 @@ translate english strings:
     # game/extra/extra.rpy:56
     old "Долой смущение"
     new "Down with embarrassment"
+# TODO: Translation updated at 2021-08-03 17:38
+
+translate english strings:
+
+    # game/extra/extra.rpy:56
+    old "Это точно триллер-детектив?"
+    new ""
+
+    # game/extra/extra.rpy:56
+    old "Полотенце снова сползает..."
+    new ""
+
