@@ -10061,35 +10061,35 @@ translate deutsch lisa_gift_sweets_9a51061a:
 translate deutsch Lisa_HomeWork_shoulders_1ec332e2:
 
     # Max_03 "{i}( Кстати! А это отличная возможность скрыть мой стояк от мамы, когда мы смотрим вместе ТВ! Массажем я уже овладел весьма неплохо... Так почему бы не предложить его маме? И если она согласится, то я смогу оказаться прямо за ней и она ничего не увидит. Так и надо будет сделать! ){/i}"
-    Max_03 ""
+    Max_03 "{i}(Übrigens, so kann ich meinen Ständer vor Mom verstecken, wenn wir zusammen fernsehen! Ich bin schon ziemlich gut im Massieren... Warum sollte ich es also nicht meiner Mutter anbieten? Und wenn sie ja sagt, dann kann ich direkt hinter ihr sein und sie wird nichts sehen. Das ist es, was wir tun sollten!){/i}"
 
 # game/dialogues/lisatalk.rpy:1502
 translate deutsch Lisa_HomeWork_shoulders_22db76b9:
 
     # Max_09 "{i}( Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось... ){/i}"
-    Max_09 ""
+    Max_09 "{i}(Ich muss nur erst meine Massagefähigkeiten an Lisa verbessern. Ich möchte mich nicht vor meiner Mutter blamieren, weil ich kein guter Masseur bin. Sie muss es mögen...){/i}"
 
 # game/dialogues/lisatalk.rpy:1645
 translate deutsch Lisa_HomeWork_new_shoulders_1ec332e2:
 
     # Max_03 "{i}( Кстати! А это отличная возможность скрыть мой стояк от мамы, когда мы смотрим вместе ТВ! Массажем я уже овладел весьма неплохо... Так почему бы не предложить его маме? И если она согласится, то я смогу оказаться прямо за ней и она ничего не увидит. Так и надо будет сделать! ){/i}"
-    Max_03 ""
+    Max_03 "{i}(Übrigens, so kann ich meinen Ständer vor Mom verstecken, wenn wir zusammen fernsehen! Ich bin schon ziemlich gut im Massieren... Warum sollte ich es also nicht meiner Mutter anbieten? Und wenn sie ja sagt, dann kann ich direkt hinter ihr sein und sie wird nichts sehen. Das ist es, was wir tun sollten!){/i}"
 
 # game/dialogues/lisatalk.rpy:1647
 translate deutsch Lisa_HomeWork_new_shoulders_22db76b9:
 
     # Max_09 "{i}( Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось... ){/i}"
-    Max_09 ""
+    Max_09 "{i}(Ich muss nur erst meine Massagefähigkeiten an Lisa verbessern. Ich möchte mich nicht vor meiner Mutter blamieren, weil ich kein guter Masseur bin. Sie muss es mögen...){/i}"
 
 # game/dialogues/lisatalk.rpy:1660
 translate deutsch Lisa_HomeWork_new_shoulders_1ec332e2_1:
 
     # Max_03 "{i}( Кстати! А это отличная возможность скрыть мой стояк от мамы, когда мы смотрим вместе ТВ! Массажем я уже овладел весьма неплохо... Так почему бы не предложить его маме? И если она согласится, то я смогу оказаться прямо за ней и она ничего не увидит. Так и надо будет сделать! ){/i}"
-    Max_03 ""
+    Max_03 "{i}(Übrigens, so kann ich meinen Ständer vor Mom verstecken, wenn wir zusammen fernsehen! Ich bin schon ziemlich gut im Massieren... Warum sollte ich es also nicht meiner Mutter anbieten? Und wenn sie ja sagt, dann kann ich direkt hinter ihr sein und sie wird nichts sehen. Das ist es, was wir tun sollten!){/i}"
 
 # game/dialogues/lisatalk.rpy:1662
 translate deutsch Lisa_HomeWork_new_shoulders_22db76b9_1:
 
     # Max_09 "{i}( Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось... ){/i}"
-    Max_09 ""
+    Max_09 "{i}(Ich muss nur erst meine Massagefähigkeiten an Lisa verbessern. Ich möchte mich nicht vor meiner Mutter blamieren, weil ich kein guter Masseur bin. Sie muss es mögen...){/i}"
 

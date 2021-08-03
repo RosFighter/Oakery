@@ -1806,13 +1806,13 @@ translate deutsch erofilm2_2_6748e4f4:
 translate deutsch erofilm2_2_b210320a:
 
     # Max_04 "С удовольствием, мам!"
-    Max_04 "Gerne, Mom!"
+    Max_04 "Mit Vergnügen, Mom!"
 
 # game/dialogues/anntalk.rpy:885
 translate deutsch erofilm2_2_46d4b822:
 
     # Ann_05 "Ой, Макс! Как же чудесно... Как хорошо, что ты у меня есть... Твои руки просто нереально расслабляют!"
-    Ann_05 "Oh, Max! Wie wunderbar... Es ist so schön, dich zu haben. Deine Hände sind so entspannend."
+    Ann_05 "Oh, Max! Wie wunderbar... Es ist so schön, dass du da bist... Deine Hände sind unglaublich entspannend."
 
 # game/dialogues/anntalk.rpy:886
 translate deutsch erofilm2_2_f4b189c3:
@@ -2100,471 +2100,471 @@ translate deutsch strings:
 translate deutsch ann_talk_tv_39730cd3:
 
     # Ann_05 "Да вот, по кабельному какой-то фильм сейчас начнётся... Да и сериалов полно..."
-    Ann_05 ""
+    Ann_05 "Ja, es kommt ein Film im Fernsehen... Und es gibt eine Menge Shows..."
 
 # game/dialogues/anntalk.rpy:278
 translate deutsch ann_tv_casual_0_eed796b8:
 
     # Max_02 "{i}( Мама так близко... В одном полотенце... Даже не знаю о чём сериал, о нём я думать точно не могу... ){/i}"
-    Max_02 ""
+    Max_02 "{i}(Mom ist so dicht... In einem Handtuch... Ich weiß nicht einmal, worum es in der Sendung geht, ich kann jedenfalls nicht darüber nachdenken...){/i}"
 
 # game/dialogues/anntalk.rpy:286
 translate deutsch ann_tv_casual_0_994386be:
 
     # Max_08 "{i}( Вот чёрт! Зря я представлял, что там у мамы под полотенцем... В джинсах стало прям очень тесно, член стоит как памятник! Хорошо, что мама из-за моей одежды это не увидит... ){/i}"
-    Max_08 ""
+    Max_08 "{i}(Oh, Scheiße! Ich hätte mir nicht vorstellen sollen, was unter dem Handtuch meiner Mutter war... Meine Jeans waren wirklich eng, mein Schwanz war wie ein Monster! Gut, dass meine Mutter es nicht durch meine Klamotten sehen kann...){/i}"
 
 # game/dialogues/anntalk.rpy:298
 translate deutsch ann_tv_casual_0_e3663ac0:
 
     # Max_08 "{i}( Вот чёрт! Зря я представлял, что там у мамы под полотенцем... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хотя, на мне майка... Может она и не заметит, но не факт. ){/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Oh, Scheiße! Ich hätte mir nicht vorstellen sollen, was unter dem Handtuch meiner Mutter war... Wenn meine Mutter meinen Ständer sieht, bin ich definitiv fertig mit dem Zuschauen. Obwohl, ich trage ein T-Shirt... Vielleicht merkt sie es nicht, aber ich weiß es nicht.){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:311
 translate deutsch ann_tv_casual_0_058e265f:
 
     # Ann_15 "[unlucky!t]Макс! Это мне кажется или у тебя... Я не поняла! Ты почему такой возбуждённый? Я конечно всё понимаю, ты подросток и такое бывает, но сейчас-то в честь чего?"
-    Ann_15 ""
+    Ann_15 "[unlucky!t] Max! Geht es nur mir so oder bist du... Ich verstehe das nicht! Warum bist du so aufgeregt? Ich meine, ich verstehe es, du bist ein Teenager und es passiert, aber was ist jetzt so schlimm daran?"
 
 # game/dialogues/anntalk.rpy:312
 translate deutsch ann_tv_casual_0_11b175c9:
 
     # Max_10 "Я не знаю! Оно само, как-то..."
-    Max_10 ""
+    Max_10 "Ich weiß es nicht! Es ist nur so, dass..."
 
 # game/dialogues/anntalk.rpy:313
 translate deutsch ann_tv_casual_0_d75f04c7:
 
     # Ann_18 "Как же, само... Давай прикрывайся, бессовестный, и беги к себе в комнату, пока не наказала. И Лизу не вздумай напугать своей возбуждённостью!"
-    Ann_18 ""
+    Ann_18 "Wie das?... Geh weg, du schamloser Bastard, und verschwinde in dein Zimmer, bevor ich dich bestrafe. Und versuche nicht, Lisa mit deiner Erregung zu erschrecken!"
 
 # game/dialogues/anntalk.rpy:314
 translate deutsch ann_tv_casual_0_56c17c37:
 
     # Max_14 "Хорощо, мам. Извини за это." nointeract
-    Max_14 "" nointeract
+    Max_14 "In Ordnung, Mom. Das tut mir leid." nointeract
 
 # game/dialogues/anntalk.rpy:334
 translate deutsch ann_tv_casual_0_ff4e16ee:
 
     # Max_08 "{i}( Вот чёрт! Зря я представлял, что там у мамы под полотенцем... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли. ){/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Oh, Scheiße! Ich hätte mir nicht vorstellen sollen, was unter dem Handtuchvom Mom ist... Wenn Mom meinen Ständer sieht, bin ich definitiv fertig mit dem Zuschauen. Ich kann meinen Schwanz in diesen Shorts gerade nicht verstecken! Vielleicht würde sie es nicht bemerken, aber ich glaube nicht.){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:353
 translate deutsch ann_tv_casual_0_1e50258d:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Я не поняла! Ты почему такой возбуждённый? Я конечно всё понимаю, ты подросток и такое бывает, но сейчас-то в честь чего?"
-    Ann_15 ""
+    Ann_15 "[unlucky!t] Max! Was ist das?! Ich verstehe das nicht! Warum bist du so aufgeregt? Ich verstehe es, du bist ein Teenager und es passiert, aber was ist schon dabei?"
 
 # game/dialogues/anntalk.rpy:354
 translate deutsch ann_tv_casual_0_11b175c9_1:
 
     # Max_10 "Я не знаю! Оно само, как-то..."
-    Max_10 ""
+    Max_10 "Ich weiß es nicht! Es ist nur so, dass..."
 
 # game/dialogues/anntalk.rpy:355
 translate deutsch ann_tv_casual_0_d75f04c7_1:
 
     # Ann_18 "Как же, само... Давай прикрывайся, бессовестный, и беги к себе в комнату, пока не наказала. И Лизу не вздумай напугать своей возбуждённостью!"
-    Ann_18 ""
+    Ann_18 "Wie das?... Geh weg, du schamloser Bastard, und verschwinde in dein Zimmer, bevor ich dich bestrafe. Und versuche nicht, Lisa mit deiner Erregung zu erschrecken!"
 
 # game/dialogues/anntalk.rpy:356
 translate deutsch ann_tv_casual_0_56c17c37_1:
 
     # Max_14 "Хорощо, мам. Извини за это." nointeract
-    Max_14 "" nointeract
+    Max_14 "In Ordnung, Mom. Das tut mir leid." nointeract
 
 # game/dialogues/anntalk.rpy:366
 translate deutsch ann_tv_casual_0_9417a581:
 
     # Ann_05 "Ну что, отличный сериал, как мне кажется! А тебе понравилось, Макс?" nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Nun, ich denke, es ist eine großartige Show! Hat es dir gefallen, Max?" nointeract
 
 # game/dialogues/anntalk.rpy:368
 translate deutsch ann_tv_casual_0_11e91c71:
 
     # Ann_05 "[lucky!t]Ну что, отличный сериал, как мне кажется! А тебе понравилось, Макс?" nointeract
-    Ann_05 "" nointeract
+    Ann_05 "[lucky!t] Nun, ich denke, es ist eine großartige Show! Hat es dir gefallen, Max?" nointeract
 
 # game/dialogues/anntalk.rpy:373
 translate deutsch ann_tv_casual_0_88212c06:
 
     # Ann_07 "Ну я рада. Ладно, спасибо что посидел со мной. Пойду в свою комнату, хватит глаза портить на сегодня..."
-    Ann_07 ""
+    Ann_07 "Nun, das freut mich. Gut, danke, dass du mir Gesellschaft geleistet hast. Ich werde in mein Zimmer gehen, um mir nicht den Tag zu verderben..."
 
 # game/dialogues/anntalk.rpy:374
 translate deutsch ann_tv_casual_0_5939730b:
 
     # Max_04 "Ага, давай..."
-    Max_04 ""
+    Max_04 "Ja, komm schon..."
 
 # game/dialogues/anntalk.rpy:377
 translate deutsch ann_tv_casual_0_63971551:
 
     # Ann_12 "Что, прости? Не поняла..."
-    Ann_12 ""
+    Ann_12 "Wie bitte? Ich verstehe das nicht..."
 
 # game/dialogues/anntalk.rpy:378
 translate deutsch ann_tv_casual_0_466bcb0e:
 
     # Max_00 "Не бери в голову, это я так, пошутил неудачно..."
-    Max_00 ""
+    Max_00 "Macht nichts, es war nur ein schlechter Scherz..."
 
 # game/dialogues/anntalk.rpy:379
 translate deutsch ann_tv_casual_0_8dcfcf19:
 
     # Ann_05 "Ясно. Ну, спасибо за компанию. Пойду в свою комнату, хватит глаза портить на сегодня..."
-    Ann_05 ""
+    Ann_05 "Richtig. Nun, danke für die Gesellschaft. Ich werde in mein Zimmer gehen, um mir nicht den Tag zu verderben..."
 
 # game/dialogues/anntalk.rpy:380
 translate deutsch ann_tv_casual_0_980cb3ea:
 
     # Max_03 "Ага, хорошо посидели..."
-    Max_03 ""
+    Max_03 "Ja, wir hatten eine gute Zeit..."
 
 # game/dialogues/anntalk.rpy:396
 translate deutsch ann_tv_casual_1_7ce7876d:
 
     # Max_02 "{i}( Мама так близко... В одном полотенце... Какая разница, что там на экране происходит, когда рядом ТАКАЯ женщина! Не могу перестать представлять то, что скрыто под её полотенцем... ){/i}"
-    Max_02 ""
+    Max_02 "{i}(Mom ist so nah... In einem Handtuch... Wen interessiert schon, was auf dem Bildschirm passiert, wenn DIESE Frau dabei ist! Ich kann nicht aufhören, mir vorzustellen, was unter ihrem Handtuch ist...){/i}"
 
 # game/dialogues/anntalk.rpy:405
 translate deutsch ann_tv_casual_1_021c77f0:
 
     # Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хотя, на мне майка... Может она и не заметит, но не факт. ){/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Ich hätte es mir nicht einbilden sollen... Wenn Mom meinen Ständer sieht, ist die Show für mich definitiv vorbei. Obwohl ich ein T-Shirt trage... Vielleicht merkt sie es nicht, aber ich weiß es nicht.){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:408
 translate deutsch ann_tv_casual_1_a50df984:
 
     # Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли. {/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Ich hätte es mir nicht einbilden sollen... Wenn Mom meinen Ständer sieht, ist die Show für mich definitiv vorbei. Ich verstecke meinen Schwanz definitiv nicht in diesen Shorts! Vielleicht würde sie es nicht bemerken, aber ich glaube nicht.){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:412
 translate deutsch ann_tv_casual_1_458824c0:
 
     # Max_07 "Мам, а зачем без дела, сидеть и смотреть в экран... Хочешь, я тебе массаж сделаю?"
-    Max_07 ""
+    Max_07 "Mom, warum rumsitzen und auf den Bildschirm starren... Soll ich dir eine Massage geben?"
 
 # game/dialogues/anntalk.rpy:413
 translate deutsch ann_tv_casual_1_12e1af95:
 
     # Ann_02 "Я слышала от твоих сестёр, что ты начал этим увлекаться и делаешь успехи... Неужели этому можно научиться на интернет-курсах?"
-    Ann_02 ""
+    Ann_02 "Ich habe von deinen Schwestern gehört, dass du angefangen hast, dich damit zu beschäftigen und Fortschritte zu machen... Ist das wirklich etwas, was man in einem Internetkurs lernen kann?"
 
 # game/dialogues/anntalk.rpy:420
 translate deutsch ann_tv_casual_1_5e34b005:
 
     # Max_04 "Если руки не кривые, то можно! И это ведь не лечебный массаж, а скорее лёгкий и поверхностный. Но расслабляет хорошо. Тебе такое точно не помешало бы..."
-    Max_04 ""
+    Max_04 "Wenn deine Hände nicht verkrampft sind, kannst man es tun! Und es handelt sich nicht um eine therapeutische Massage, sondern eher um eine leichte und oberflächliche. Aber es ist entspannend. Du könntest definitiv einen gebrauchen..."
 
 # game/dialogues/anntalk.rpy:427
 translate deutsch ann_tv_casual_1_8e3248cf:
 
     # Ann_04 "Верно, Алиса говорила, что у тебя талант... Ладно, давай посмотрим, на что ты способен... Помассируешь мне плечи?"
-    Ann_04 ""
+    Ann_04 "Stimmt, Alice sagte, du hättest Talent... Nun, mal sehen, was du kannst... Willst du meine Schultern massieren?"
 
 # game/dialogues/anntalk.rpy:428
 translate deutsch ann_tv_casual_1_acd22c78:
 
     # Max_01 "Конечно, мам!"
-    Max_01 ""
+    Max_01 "Natürlich, Mom!"
 
 # game/dialogues/anntalk.rpy:433
 translate deutsch ann_tv_casual_1_284457e7:
 
     # Ann_05 "Ого, Макс... Алиса была права. Ты делаешь это и правда очень хорошо..."
-    Ann_05 ""
+    Ann_05 "Wow, Max... Alice hatte Recht. Du machst das wirklich gut..."
 
 # game/dialogues/anntalk.rpy:434
 translate deutsch ann_tv_casual_1_8b1570e1:
 
     # Max_03 "Спасибо!"
-    Max_03 ""
+    Max_03 "Vielen Dank!"
 
 # game/dialogues/anntalk.rpy:441
 translate deutsch ann_tv_casual_1_681882f0:
 
     # Ann_06 "Это здорово, Макс! Я очень рада, что ты умеешь кое-что, что в жизни может пригодится. Конечно, работа массажистом это не то, о чём я думаю, ты мечтаешь, но..."
-    Ann_06 ""
+    Ann_06 "Das ist großartig, Max! Ich bin wirklich froh, dass du einige Fähigkeiten hast, die dir im Leben nützlich sein werden. Natürlich ist die Arbeit als Masseur nicht das, wovon man träumt, aber..."
 
 # game/dialogues/anntalk.rpy:442
 translate deutsch ann_tv_casual_1_02233271:
 
     # Max_04 "Это просто хобби... И для своих, мне в радость этим заниматься."
-    Max_04 ""
+    Max_04 "Es ist nur ein Hobby... Und für mich selbst mache ich es gerne."
 
 # game/dialogues/anntalk.rpy:449
 translate deutsch ann_tv_casual_1_32d30172:
 
     # Ann_08 "Ну, бывает так, что хобби становится работой... Кажется, я и правда хорошо расслабилась, как будто поспала несколько часов... Я буду рада, если ты будешь делать мне такой массаж иногда..."
-    Ann_08 ""
+    Ann_08 "Nun, es gibt Zeiten, in denen ein Hobby zum Beruf wird... Ich scheine mich gut erholt zu haben, als hätte ich ein paar Stunden geschlafen... Ich würde mich freuen, wenn du mir ab und zu eine solche Massage geben würdest..."
 
 # game/dialogues/anntalk.rpy:450
 translate deutsch ann_tv_casual_1_b5254835:
 
     # Max_01 "С удовольствием, мам!"
-    Max_01 ""
+    Max_01 "Mit Vergnügen, Mom!"
 
 # game/dialogues/anntalk.rpy:468
 translate deutsch ann_tv_casual_r_7ce7876d:
 
     # Max_02 "{i}( Мама так близко... В одном полотенце... Какая разница, что там на экране происходит, когда рядом ТАКАЯ женщина! Не могу перестать представлять то, что скрыто под её полотенцем... ){/i}"
-    Max_02 ""
+    Max_02 "{i}(Mom ist so nah... In einem Handtuch... Wen interessiert schon, was auf dem Bildschirm passiert, wenn DIESE Frau dabei ist! Ich kann nicht aufhören, mir vorzustellen, was unter ihrem Handtuch ist...){/i}"
 
 # game/dialogues/anntalk.rpy:475
 translate deutsch ann_tv_casual_r_f94aa535:
 
     # Max_08 "{i}( Зря я это представил... Надеюсь, она не заметит, что у меня стоит... Но не факт, может стоит подстраховаться и предложить ей массаж? ){/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Ich hätte es mir nicht einbilden sollen... Ich hoffe, sie merkt nicht, dass ich einen Ständer habe... Aber ich bin mir nicht sicher, vielleicht sollte ich Vorsichtsmaßnahmen treffen und ihr eine Massage anbieten.){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:484
 translate deutsch ann_tv_casual_r_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 ""
+    Ann_04 "Oh, ich dachte, du würdest kein Angebot machen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
 
 # game/dialogues/anntalk.rpy:485
 translate deutsch ann_tv_casual_r_b210320a:
 
     # Max_04 "С удовольствием, мам!"
-    Max_04 ""
+    Max_04 "Mit Vergnügen, Mom!"
 
 # game/dialogues/anntalk.rpy:492
 translate deutsch ann_tv_casual_r_37c5e269:
 
     # Ann_02 "Ой, я думала, ты и не предложишь. Надеюсь, сегодня ты отнесёшься к массажу с большим вниманием, чем в прошлый раз?"
-    Ann_02 ""
+    Ann_02 "Oh, ich dachte, du würdest mir kein Angebot machen. Ich hoffe, du wirst heute aufmerksamer als beim letzten Mal bei der Massage sein?"
 
 # game/dialogues/anntalk.rpy:493
 translate deutsch ann_tv_casual_r_38413f74:
 
     # Max_01 "Да, мам, я постараюсь..."
-    Max_01 ""
+    Max_01 "Ja, Mom, ich werde es versuchen..."
 
 # game/dialogues/anntalk.rpy:498
 translate deutsch ann_tv_casual_r_46d4b822:
 
     # Ann_05 "Ой, Макс! Как же чудесно... Как хорошо, что ты у меня есть... Твои руки просто нереально расслабляют!"
-    Ann_05 ""
+    Ann_05 "Oh, Max! Wie wunderbar... Es ist so schön, dass du da bist... Deine Hände sind unglaublich entspannend!"
 
 # game/dialogues/anntalk.rpy:499
 translate deutsch ann_tv_casual_r_f4b189c3:
 
     # Max_03 "Спасибо! Я рад, что тебе нравится."
-    Max_03 ""
+    Max_03 "Ich danke dir! Freut mich, dass es dir gefällt."
 
 # game/dialogues/anntalk.rpy:505
 translate deutsch ann_tv_casual_r_eefcf53a:
 
     # Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты можешь много достичь в этом деле!"
-    Ann_08 ""
+    Ann_08 "Du bist sehr gut darin... Eine solche Leichtigkeit kommt über dich. Mit einem solchen Talent kann man in diesem Geschäft viel erreichen!"
 
 # game/dialogues/anntalk.rpy:507
 translate deutsch ann_tv_casual_r_34583ab7:
 
     # Max_02 "Очень надеюсь, что так и будет." nointeract
-    Max_02 "" nointeract
+    Max_02 "Das hoffe ich wirklich." nointeract
 
 # game/dialogues/anntalk.rpy:516
 translate deutsch ann_tv_casual_r_dbab837b:
 
     # Max_06 "[ann_good_mass!t]{i}( Неплохой у меня вид открывается! Под полотенцем слегка виднеются её аппетитные сосочки... Это возбуждает ещё сильнее. Вот бы её полотенце начало сползать... Возможно, она бы даже не сразу это поняла, особенно, если ей очень понравился массаж. ){/i}"
-    Max_06 ""
+    Max_06 "[ann_good_mass!t] {i}(Das ist keine schlechte Aussicht! Unter dem Handtuch kann man leicht ihre üppigen Brustwarzen sehen... Es ist sogar noch aufregender. Ich wünschte, ihr Handtuch würde anfangen zu rutschen... Vielleicht merkt sie es nicht einmal sofort, vor allem, wenn sie die Massage wirklich genossen hat.){/i}"
 
 # game/dialogues/anntalk.rpy:523
 translate deutsch ann_tv_casual_r_4ccbb069:
 
     # Ann_07 "Ой, Макс! Это чудесно... Такая лёгкость. Ты знаешь как сделать приятно. Мне очень понравилось... Обязательно буду ждать следующего раза!"
-    Ann_07 ""
+    Ann_07 "Oh, Max! Es ist wunderbar... Eine solche Leichtigkeit. Du weißt, wie man es gut macht. Ich habe es wirklich genossen... Ich freue mich auf jeden Fall auf das nächste Mal!"
 
 # game/dialogues/anntalk.rpy:524
 translate deutsch ann_tv_casual_r_ea1ff6fc:
 
     # Max_00 "Класс! Я тоже буду ждать, мам. Отдыхай."
-    Max_00 ""
+    Max_00 "Großartig! Ich warte auch auf dich, Mom. Ruh dich aus."
 
 # game/dialogues/anntalk.rpy:535
 translate deutsch ann_tv_casual_r_4969c11a:
 
     # Ann_14 "[ann_bad_mass!t]Ой, Макс... Нет, теперь уже не так хорошо... Что-то даже мышцам немного больно стало. Давай в другой раз продолжим... Но всё равно, спасибо!"
-    Ann_14 ""
+    Ann_14 "[ann_bad_mass!t] Oh, Max... Nein, jetzt nicht mehr so gut... Die Muskeln tun mir sogar ein bisschen weh. Lassen wir es auf ein andermal ankommen... Aber trotzdem danke!"
 
 # game/dialogues/anntalk.rpy:536
 translate deutsch ann_tv_casual_r_a30f1880:
 
     # Max_00 "Извини. Наверно, на сериал засмотрелся... Я пойду."
-    Max_00 ""
+    Max_00 "Es tut mir leid. Ich muss wohl eine Seifenoper gesehen haben... Ich werde gehen."
 
 # game/dialogues/anntalk.rpy:958
 translate deutsch erofilm2_1_f8919f9d:
 
     # Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хорошо, что есть проверенный и приятный способ его скрыть... ){/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Ich hätte es mir nicht einbilden sollen... Wenn meine Mutter meinen Ständer sieht, ist die Show für mich definitiv vorbei. Gut, dass es eine bewährte und angenehme Methode gibt, es zu verstecken...){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:967
 translate deutsch erofilm2_1_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 ""
+    Ann_04 "Oh, ich dachte, du würdest kein Angebot machen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
 
 # game/dialogues/anntalk.rpy:968
 translate deutsch erofilm2_1_b210320a:
 
     # Max_04 "С удовольствием, мам!"
-    Max_04 ""
+    Max_04 "Mit Vergnügen, Mom!"
 
 # game/dialogues/anntalk.rpy:975
 translate deutsch erofilm2_1_37c5e269:
 
     # Ann_02 "Ой, я думала, ты и не предложишь. Надеюсь, сегодня ты отнесёшься к массажу с большим вниманием, чем в прошлый раз?"
-    Ann_02 ""
+    Ann_02 "Oh, ich dachte, du würdest mir kein Angebot machen. Ich hoffe, du wirst heute aufmerksamer als beim letzten Mal bei der Massage sein?"
 
 # game/dialogues/anntalk.rpy:976
 translate deutsch erofilm2_1_38413f74:
 
     # Max_01 "Да, мам, я постараюсь..."
-    Max_01 ""
+    Max_01 "Ja, Mom, ich werde es versuchen..."
 
 # game/dialogues/anntalk.rpy:981
 translate deutsch erofilm2_1_46d4b822:
 
     # Ann_05 "Ой, Макс! Как же чудесно... Как хорошо, что ты у меня есть... Твои руки просто нереально расслабляют!"
-    Ann_05 ""
+    Ann_05 "Oh, Max! Wie wunderbar... Es ist so schön, dass du da bist... Deine Hände sind unglaublich entspannend!"
 
 # game/dialogues/anntalk.rpy:982
 translate deutsch erofilm2_1_f4b189c3:
 
     # Max_03 "Спасибо! Я рад, что тебе нравится."
-    Max_03 ""
+    Max_03 "Ich danke dir! Freut mich, dass es dir gefällt."
 
 # game/dialogues/anntalk.rpy:988
 translate deutsch erofilm2_1_107f36d5:
 
     # Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты у нас дома будешь нарасхват! Да и вне его..."
-    Ann_08 ""
+    Ann_08 "Du bist sehr gut darin... Eine solche Leichtigkeit kommt über dich. Mit einem solchen Talent bist du zu Hause sehr gefragt. Und außerhalb erst..."
 
 # game/dialogues/anntalk.rpy:989
 translate deutsch erofilm2_1_0aa128fe:
 
     # Max_02 "Очень надеюсь, что так и будет."
-    Max_02 ""
+    Max_02 "Das hoffe ich wirklich."
 
 # game/dialogues/anntalk.rpy:995
 translate deutsch erofilm2_1_f3a38303:
 
     # Max_05 "{i}( Уххх... А у мамы ведь полотенце сползло... И она это ещё не заметила! Должно быть, мой массаж действительно её хорошо расслабил! Надо продолжать... Может оно тогда ещё больше спадёт... ){/i}" nointeract
-    Max_05 "" nointeract
+    Max_05 "{i}(Uhhhh... Moms Handtuch ist verrutscht... Und sie hatte es noch nicht einmal bemerkt! Meine Massage muss sie wirklich gut entspannt haben! Ich sollte weitermachen... Vielleicht rutscht es dann noch mehr...){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:1003
 translate deutsch erofilm2_1_cb1040e4:
 
     # Max_06 "[ann_good_mass!t]{i}( О да! Полотенце сползает всё больше и больше... Какие у неё милые и тёмные сосочки! Интересно, что будет, если я потяну руки ниже, как с Лизой? Вряд ли что-то хорошее... ){/i}"
-    Max_06 ""
+    Max_06 "[ann_good_mass!t] {i}(Oh ja, das Handtuch rutscht mehr und mehr herunter... Was für schöne, dunkle Brustwarzen sie hat! Ich frage mich, was passieren würde, wenn ich meine Hände tiefer führen würde, wie ich es bei Lisa getan habe? Kaum etwas Gutes...){/i}"
 
 # game/dialogues/anntalk.rpy:1008
 translate deutsch erofilm2_1_2138fb99:
 
     # Ann_15 "Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
-    Ann_15 ""
+    Ann_15 "Oh! Wow! Max, warum hast du mir nicht gesagt, dass mein Handtuch verrutscht ist?! Ich war fast nackt!"
 
 # game/dialogues/anntalk.rpy:1019
 translate deutsch erofilm2_1_8bcbba1e:
 
     # Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
-    Ann_15 ""
+    Ann_15 "[ann_bad_mass!t] Oh! Wow! Max, warum hast du mir nicht gesagt, dass mein Handtuch verrutscht ist?! Ich war fast nackt!"
 
 # game/dialogues/anntalk.rpy:1024
 translate deutsch erofilm2_1_fc50443e:
 
     # Max_02 "Так я не видел! Фильм же смотрю..."
-    Max_02 ""
+    Max_02 "Ich habe es nicht gesehen! Ich schaue einen Film..."
 
 # game/dialogues/anntalk.rpy:1104
 translate deutsch erofilm2_2_44307dfb:
 
     # Max_08 "{i}( Эх, мам... Уже поздно. И о таком зрелище я точно в ближайшее время не смогу забыть! Надеюсь, она не заметит, что у меня стоит... ){/i}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{i}(Äh, Mom... Es ist längst zu spät. Das ist ein Anblick, den ich so schnell nicht vergessen werde! Ich hoffe, sie merkt nicht, dass ich hier stehe...){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:1113
 translate deutsch erofilm2_2_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 ""
+    Ann_04 "Oh, ich dachte, du würdest kein Angebot machen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
 
 # game/dialogues/anntalk.rpy:1121
 translate deutsch erofilm2_2_37c5e269:
 
     # Ann_02 "Ой, я думала, ты и не предложишь. Надеюсь, сегодня ты отнесёшься к массажу с большим вниманием, чем в прошлый раз?"
-    Ann_02 ""
+    Ann_02 "Oh, ich dachte, du würdest mir kein Angebot machen. Ich hoffe, du wirst heute aufmerksamer als beim letzten Mal bei der Massage sein?"
 
 # game/dialogues/anntalk.rpy:1122
 translate deutsch erofilm2_2_38413f74:
 
     # Max_01 "Да, мам, я постараюсь..."
-    Max_01 ""
+    Max_01 "Ja, Mom, ich werde es versuchen..."
 
 # game/dialogues/anntalk.rpy:1134
 translate deutsch erofilm2_2_a59077b6:
 
     # Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты у нас дома будешь нарасхват! Довольны будут все..."
-    Ann_08 ""
+    Ann_08 "Du bist sehr gut darin... Eine solche Leichtigkeit kommt über mich. Mit so einem Talent wirst du zu Hause ein Hit sein! Alle werden glücklich sein..."
 
 # game/dialogues/anntalk.rpy:1150
 translate deutsch erofilm2_2_fb89d2ea:
 
     # Max_05 "{i}( У мамы снова полотенце сползает, а она не чувствует... Надо продолжать, раз ей так нравится массаж... Или лучше сказать? ){/i}" nointeract
-    Max_05 "" nointeract
+    Max_05 "{i}(Moms Handtuch verrutscht wieder und sie spürt es nicht... Ich sollte weitermachen, weil sie die Massage so sehr mag... Oder sollte ich es ihr sagen?){/i}" nointeract
 
 # game/dialogues/anntalk.rpy:1157
 translate deutsch erofilm2_2_faffd6fd:
 
     # Ann_13 "Ой, Макс! Хорошо, что предупредил... Чуть голой не осталась! И давно я сижу вся такая довольная без полотенца?"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Gut, dass du mich gewarnt hast... Fast nackt! Wie lange sitze ich hier schon ohne Handtuch?"
 
 # game/dialogues/anntalk.rpy:1158
 translate deutsch erofilm2_2_c0dbd91d:
 
     # Max_01 "Не знаю. Я как заметил, так сразу и сказал."
-    Max_01 ""
+    Max_01 "Ich weiß es nicht. Ich habe es bemerkt und dir sofort gesagt."
 
 # game/dialogues/anntalk.rpy:1167
 translate deutsch erofilm2_2_12a5d91b:
 
     # Max_06 "[ann_good_mass!t]{i}( Ммм... Полотенце сползает всё больше и больше... Вот бы однажды помассировать эти сочные дыньки! Ох, как же сложно удержаться и не запустить туда вниз свои руки... ){/i}"
-    Max_06 ""
+    Max_06 "[ann_good_mass!t] {i}(Hmmm... Das Handtuch rutscht mehr und mehr herunter... Ich wünschte, ich könnte eines Tages diese saftigen Melonen massieren! Oh, es ist schwer, meine Hände nicht da runter zu bewegen...){/i}"
 
 # game/dialogues/anntalk.rpy:1194
 translate deutsch erofilm2_2_end_film_b5f39d2e:
 
     # Ann_04 "Помимо всего прочего, в фильме музыка очень хороша. Мне прямо нравится!"
-    Ann_04 ""
+    Ann_04 "Abgesehen von allem anderen ist die Musik im Film sehr gut. Ich liebe es absolut!"
 
 # game/dialogues/anntalk.rpy:1195
 translate deutsch erofilm2_2_end_film_8d1bb789:
 
     # Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
-    Max_05 ""
+    Max_05 "{i}(Ich frage mich, ob Mom etwas hatte... mit Frauen... Oh ja, so etwas würde ich gerne mal sehen! Obwohl es mir nichts ausmachen würde, mitzumachen...){/i}"
 
 # game/dialogues/anntalk.rpy:1208
 translate deutsch erofilm2_2_end_film_9b687b90:
 
     # Max_03 "[lucky!t]А где ты тут детей видишь?"
-    Max_03 ""
+    Max_03 "[lucky!t] Wo siehst du hier Kinder?"
 
 # game/dialogues/anntalk.rpy:1214
 translate deutsch erofilm2_2_end_film_9d0711b1:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? В фильме же откровенные сцены давно были..."
-    Ann_15 ""
+    Ann_15 "[unlucky!t] Max! Was ist das?! Warum bist du so aufgeregt? Es gab vor langem explizite Szenen in dem Film..."
 
 translate deutsch strings:
 
     # game/dialogues/anntalk.rpy:298
     old "сидеть и надеяться на лучшее"
-    new ""
+    new "zurücklehnen und hoffen"
 
     # game/dialogues/anntalk.rpy:1204
     old "{i}попытаться скрыть стояк{/i}"
-    new ""
+    new "{i}versuchen, den Ständer zu verbergen{/i}"
 

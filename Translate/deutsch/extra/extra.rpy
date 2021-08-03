@@ -256,9 +256,9 @@ translate deutsch strings:
 
     # game/extra/extra.rpy:56
     old "Это точно триллер-детектив?"
-    new ""
+    new "Ist das kein Krimi?"
 
     # game/extra/extra.rpy:56
     old "Полотенце снова сползает..."
-    new ""
+    new "Das Handtuch rutscht wieder..."
 
