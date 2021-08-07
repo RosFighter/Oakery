@@ -1499,7 +1499,7 @@ translate english strings:
     # game/dialogues/anntalk.rpy:700
     old "Конечно, мам! Не скучай..."
     new "Of course, Mom! Don't get bored..."
-
+    
 # TODO: Translation updated at 2021-05-15 16:54
 
 # game/dialogues/anntalk.rpy:742
@@ -2566,3 +2566,288 @@ translate english strings:
     # game/dialogues/anntalk.rpy:1204
     old "{i}попытаться скрыть стояк{/i}"
     new "{i}Try to cover up the boner{/i}"
+
+# TODO: Translation updated at 2021-08-07 19:08
+
+# game/dialogues/anntalk.rpy:408
+translate english ann_tv_casual_1_de678a92:
+
+    # Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли. ){/i}" nointeract
+    Max_08 "{i}( I shouldn't have imagined it... If my mother saw my boner, the viewing would definitely be over for me. I wouldn't be able to hide my dick in these shorts right now! Maybe she wouldn't notice, but I don't think so. ){/i}" nointeract
+
+# game/dialogues/anntalk.rpy:1014
+translate english erofilm2_1_3219b2c2:
+
+    # Ann_04 "А ты молодец, если умудряешься и фильм одновременно смотреть и массаж так хорошо делать!"
+    Ann_04 ""
+
+# game/dialogues/anntalk.rpy:1015
+translate english erofilm2_1_e21f2499:
+
+    # Max_01 "Ты же сама сказала - талант."
+    Max_01 ""
+
+# game/dialogues/anntalk.rpy:1040
+translate english erofilm2_1_7cd6006b:
+
+    # Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься." nointeract
+    Ann_15 "" nointeract
+
+# game/dialogues/anntalk.rpy:1055
+translate english erofilm2_1_0cbf3006:
+
+    # Ann_14 "[lucky!t]Так, как-то здесь всё слишком откровенно начало развиваться... Прямо очень откровенно! Ты специально такой фильм купил?"
+    Ann_14 "[lucky!t]So, somehow things started to develop too frankly here... It's very revealing! Did you buy this movie on purpose?"
+
+# game/dialogues/anntalk.rpy:1056
+translate english erofilm2_1_db9e8a82_1:
+
+    # Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
+    Max_07 "No. The beginning of the movie description interested me. Maybe I should have read to the end..."
+
+# game/dialogues/anntalk.rpy:1071
+translate english erofilm2_1_7cb8cd3e:
+
+    # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
+    Ann_15 ""
+
+# game/dialogues/anntalk.rpy:1072
+translate english erofilm2_1_3b3108de:
+
+    # Max_08 "Похоже на то. Там ведь очень откровенные сцены пошли..."
+    Max_08 ""
+
+# game/dialogues/anntalk.rpy:1079
+translate english erofilm2_1_89504722:
+
+    # Ann_14 "Ты специально такой фильм купил?"
+    Ann_14 "Did you buy this movie on purpose?"
+
+# game/dialogues/anntalk.rpy:1080
+translate english erofilm2_1_db9e8a82_2:
+
+    # Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
+    Max_07 "No. The beginning of the movie description interested me. Maybe I should have read to the end..."
+
+# game/dialogues/anntalk.rpy:1250
+translate english erofilm2_2_300645c2:
+
+    # Ann_04 "Давай-ка на сегодня прервёмся с массажем... и досмотрим фильм. Это не значит, что мне не понравилось! Ты молодец!" nointeract
+    Ann_04 "" nointeract
+
+# game/dialogues/anntalk.rpy:1272
+translate english erofilm2_2_3219b2c2:
+
+    # Ann_04 "А ты молодец, если умудряешься и фильм одновременно смотреть и массаж так хорошо делать!"
+    Ann_04 ""
+
+# game/dialogues/anntalk.rpy:1273
+translate english erofilm2_2_e21f2499:
+
+    # Max_01 "Ты же сама сказала - талант."
+    Max_01 ""
+
+# game/dialogues/anntalk.rpy:1285
+translate english erofilm2_2_8d1bb789:
+
+    # Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
+    Max_05 "{i}( I wonder if my mother had anything... with women... Oh, yeah. I'd love to see a picture like that. Although, I wouldn't mind being a part of it... ){/i}"
+
+# game/dialogues/anntalk.rpy:1291
+translate english erofilm2_2_3dccf94a:
+
+    # Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
+    Ann_05 "Judging by the time, things are coming to a denouement. It's funny to watch them all... How they only now understand what the viewer understood long ago."
+
+# game/dialogues/anntalk.rpy:1296
+translate english erofilm2_2_82e6080c:
+
+    # Max_04 "Да, намёки для зрителей были местами очень жирные."
+    Max_04 "Yes, the hints for the audience were very bold in places."
+
+# game/dialogues/anntalk.rpy:1302
+translate english erofilm2_2_2d7bb75d:
+
+    # Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
+    Ann_06 "So we finished watching it. Interesting detective story... I liked it. But this movie isn't even close to being made for children..."
+
+# game/dialogues/anntalk.rpy:1303
+translate english erofilm2_2_e0c6e9b1:
+
+    # Max_03 "А где ты тут детей видишь?" nointeract
+    Max_03 "Where do you see children here?" nointeract
+
+# game/dialogues/anntalk.rpy:1319
+translate english erofilm2_2_e77ee6ca:
+
+    # Ann_04 "[lucky!t]Да, знаю... знаю... Ты уже взрослый. Почти..."
+    Ann_04 "[lucky!t]Yes, I know... I know... You're an adult. Almost..."
+
+# game/dialogues/anntalk.rpy:1328
+translate english erofilm2_2_9d0711b1:
+
+    # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? В фильме же откровенные сцены давно были..."
+    Ann_15 "[unlucky!t]Max! What is this?! Why are you so excited? There were explicit scenes in the movie a long time ago..."
+
+# game/dialogues/anntalk.rpy:1329
+translate english erofilm2_2_2e2a702d:
+
+    # Max_08 "Я не знаю! Видимо, мысли об этих сценах ещё не выветрились из головы."
+    Max_08 "I don't know! Apparently, thoughts of those scenes are still in my head."
+
+# game/dialogues/anntalk.rpy:1330
+translate english erofilm2_2_4fdbb2af:
+
+    # Ann_17 "Вот я так и знала! Зря мы этот фильм смотрели!"
+    Ann_17 "I knew it! We shouldn't have seen that movie!"
+
+# game/dialogues/anntalk.rpy:1331
+translate english erofilm2_2_58ab27de:
+
+    # Max_09 "Подумаешь, возбудился... Значит фильм оправдал свою эротическую составляющую."
+    Max_09 "What's the big deal, I got aroused... So the film justified its erotic component."
+
+# game/dialogues/anntalk.rpy:1332
+translate english erofilm2_2_e3cfd08d:
+
+    # Ann_13 "Макс, мама не должна видеть своего сына таким..."
+    Ann_13 "Max, a mother should not see her son like this..."
+
+# game/dialogues/anntalk.rpy:1333
+translate english erofilm2_2_89123af5:
+
+    # Max_07 "А ты просто возьми и не смотри! Я же не маленький ребёнок, а..."
+    Max_07 "And you just go ahead and don't look! I'm not a little kid, but..."
+
+# game/dialogues/anntalk.rpy:1339
+translate english erofilm2_2_684e55df:
+
+    # Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+    Ann_04 "Yes, I know... I know... You're an adult. Almost..."
+
+# game/dialogues/anntalk.rpy:1347
+translate english erofilm2_2_7cd6006b:
+
+    # Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься." nointeract
+    Ann_15 "" nointeract
+
+# game/dialogues/anntalk.rpy:1366
+translate english erofilm2_2_lucky_aaa808d8:
+
+    # Ann_04 "[lucky!t]Помимо всего прочего, в фильме музыка очень хороша. Мне прямо нравится!"
+    Ann_04 "[lucky!t]Among other things, the music in the movie is very good. I like it straight up!"
+
+# game/dialogues/anntalk.rpy:1372
+translate english erofilm2_2_lucky_8d1bb789:
+
+    # Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
+    Max_05 "{i}( I wonder if my mother had anything... with women... Oh, yeah. I'd love to see a picture like that. Although, I wouldn't mind being a part of it... ){/i}"
+
+# game/dialogues/anntalk.rpy:1379
+translate english erofilm2_2_lucky_3dccf94a:
+
+    # Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
+    Ann_05 "Judging by the time, things are coming to a denouement. It's funny to watch them all... How they only now understand what the viewer understood long ago."
+
+# game/dialogues/anntalk.rpy:1385
+translate english erofilm2_2_lucky_82e6080c:
+
+    # Max_04 "Да, намёки для зрителей были местами очень жирные."
+    Max_04 "Yes, the hints for the audience were very bold in places."
+
+# game/dialogues/anntalk.rpy:1392
+translate english erofilm2_2_lucky_2d7bb75d:
+
+    # Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
+    Ann_06 "So we finished watching it. Interesting detective story... I liked it. But this movie isn't even close to being made for children..."
+
+# game/dialogues/anntalk.rpy:1393
+translate english erofilm2_2_lucky_2e5facee:
+
+    # Max_03 "А где ты тут детей видишь?"
+    Max_03 "Where do you see children here?"
+
+# game/dialogues/anntalk.rpy:1399
+translate english erofilm2_2_lucky_684e55df:
+
+    # Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+    Ann_04 "Yes, I know... I know... You're an adult. Almost..."
+
+# game/dialogues/anntalk.rpy:1408
+translate english erofilm2_2_unlucky_7cb8cd3e:
+
+    # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
+    Ann_15 ""
+
+# game/dialogues/anntalk.rpy:1409
+translate english erofilm2_2_unlucky_54519691:
+
+    # Max_08 "Похоже на то. Там ведь очень откровенные сцены были, а теперь эти дамочки что-то интересное затевают..."
+    Max_08 ""
+
+# game/dialogues/anntalk.rpy:1416
+translate english erofilm2_2_unlucky_36717c12:
+
+    # Ann_17 "Рановато тебе ещё такое смотреть! Хотя, по сравнению с тем, что ты уже увидел до этого..."
+    Ann_17 ""
+
+# game/dialogues/anntalk.rpy:1417
+translate english erofilm2_2_unlucky_8d1bb789:
+
+    # Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
+    Max_05 "{i}( I wonder if my mother had anything... with women... Oh, yeah. I'd love to see a picture like that. Although, I wouldn't mind being a part of it... ){/i}"
+
+# game/dialogues/anntalk.rpy:1421
+translate english erofilm2_2_unlucky_3dccf94a:
+
+    # Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
+    Ann_05 "Judging by the time, things are coming to a denouement. It's funny to watch them all... How they only now understand what the viewer understood long ago."
+
+# game/dialogues/anntalk.rpy:1422
+translate english erofilm2_2_unlucky_82e6080c:
+
+    # Max_04 "Да, намёки для зрителей были местами очень жирные."
+    Max_04 "Yes, the hints for the audience were very bold in places."
+
+# game/dialogues/anntalk.rpy:1426
+translate english erofilm2_2_unlucky_2d7bb75d:
+
+    # Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
+    Ann_06 "So we finished watching it. Interesting detective story... I liked it. But this movie isn't even close to being made for children..."
+
+# game/dialogues/anntalk.rpy:1427
+translate english erofilm2_2_unlucky_2e5facee:
+
+    # Max_03 "А где ты тут детей видишь?"
+    Max_03 "Where do you see children here?"
+
+# game/dialogues/anntalk.rpy:1433
+translate english erofilm2_2_unlucky_684e55df:
+
+    # Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+    Ann_04 "Yes, I know... I know... You're an adult. Almost..."
+
+# game/dialogues/anntalk.rpy:1439
+translate english erofilm2_2_end_e67edc91:
+
+    # Max_02 "В следующий раз посмотрим что-нибудь ещё подобное?"
+    Max_02 "Next time we'll see something else like that?"
+
+# game/dialogues/anntalk.rpy:1440
+translate english erofilm2_2_end_7e4ad93b:
+
+    # Ann_02 "Только будь поскромнее. Этот фильм оказался очень волнующим..."
+    Ann_02 "Just be humble. This movie turned out to be very exciting..."
+
+# game/dialogues/anntalk.rpy:1441
+translate english erofilm2_2_end_acd22c78:
+
+    # Max_01 "Конечно, мам!"
+    Max_01 "Of course, Mom!"
+
+translate english strings:
+
+    # game/dialogues/anntalk.rpy:1040
+    old "{i}закончить массаж и попытаться скрыть стояк{/i}"
+    new ""
+
