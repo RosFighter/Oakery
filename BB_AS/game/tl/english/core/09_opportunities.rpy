@@ -1380,113 +1380,112 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Что посмотрим, мам?"
-    new ""
+    new "What should we watch, Mom?"
 
     # game/core/09_opportunities.rpy:4
     old "Я подошёл к маме узнать, что она смотрит, а ей как раз на днях подруга посоветовала посмотреть один фильм... Должно быть, она думала, что мама будет смотреть его одна и поэтому не сказала, что этот фильм... с эротическим содержанием... И чем дальше мы его смотрели, тем больше мама пыталась меня выпроводить. Но фильм хороший! Я бы с огромным удовольствием посмотрел вместе с мамой ещё что-нибудь такое... А пока и просто составить ей компанию за сериалом будет неплохо."
-    new ""
+    new "I went to see what Mom was watching - a film her friend suggested... She must have thought Mom would watch it alone, so she didn't mention there was... erotic content... And the more we watched it, the more Mom tried to get me out. But it's a good movie! I would have loved to watch something else like that with Mom... In the meantime, just keeping her company for the show would be nice, too."
 
     # game/core/09_opportunities.rpy:4
     old "Неплохо бы почаще составлять маме компанию за просмотром ТВ..."
-    new ""
+    new "It would be nice to keep Mom company while watching TV more often..."
 
     # game/core/09_opportunities.rpy:4
     old "Да уж. Мама всегда смотрит ТВ после того, как примет ванну. Сидит вся такая сексуальная и мокренькая в одном полотенце... У меня даже волей-неволей от этого встаёт! А уж что происходит, когда я начинаю думать о том, что скрывается под этим полотенцем... Джинсы могут порваться... Но хорошо, что они отлично скрывают то, из-за чего мама бы переполошилась. Пока я в этой одежде можно не волноваться на этот счёт."
-    new ""
+    new "Yeah. Mom always watches TV after taking a bath. She's all sexy and wet in a towel... I can't help but get a hard-on! And what happens when I start thinking about what's under that towel... My pants might rip. But the good thing is that they cover up perfectly what Mom would freak out about. As long as I'm wearing these clothes, I don't have to worry about that."
 
     # game/core/09_opportunities.rpy:4
     old "Мне стоит и дальше смотреть вместе с мамой ТВ. Это нас только больше сблизит..."
-    new ""
+    new "I should keep watching TV with Mom. It will only bring us closer together..."
 
     # game/core/09_opportunities.rpy:4
     old "Прикольно смотреть ТВ рядом с такой женщиной, как моя мама. Вроде она и в полотенце, а мысли от этого просто сходят с ума! Надеюсь мои майка с шортами смогут скрыть то возбуждение, которое я испытываю."
-    new ""
+    new "It's fun to watch TV next to a woman like my mom. It's like she's in a towel, but it just makes my mind go crazy! I hope my tank top and shorts can hide the excitement I'm feeling."
 
     # game/core/09_opportunities.rpy:4
     old "Если мама заметит мой стояк, то просмотр ТВ с ней точно закончится. С другой стороны, неплохо бы выяснить, а заметит ли она..."
-    new ""
+    new "If my mom notices my boner, watching TV with her is definitely over. On the other hand, it's a good idea to find out if she'll notice..."
 
     # game/core/09_opportunities.rpy:4
     old "Мама в таких позах отдыхает на этом диване, что вот-вот что-нибудь пикантное да и засветит, но увы... От одних только мыслей что-нибудь такое увидеть, я не в состоянии сдержать свой член в этих шортах. Надо же было додуматься надеть только их! И близко не лучшая идея..."
-    new ""
+    new "Mom is in such positions on this couch that she's about to see something juicy, but alas... Just the thought of seeing something like that makes me unable to keep my dick in these shorts. I should have thought of just wearing them. Not even close to a good idea..."
 
     # game/core/09_opportunities.rpy:4
     old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно не заметить. Но я сам виноват... Что мешало мне натянуть майку и не париться на этот счёт. Там правда тоже гарантий нет, но попробовать можно..."
-    new ""
+    new "Oops... So my mom noticed my boner. What can I say, it's really hard not to notice. But it's my own fault... What was stopping me from putting on a T-shirt and not worrying about it. There's no guarantee there either, but you can try..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно узнать, заметит ли мама мой стояк, если я буду смотреть с ней ТВ в майке и шортах..."
-    new ""
+    new "I need to know if my mom will notice my boner if I watch TV with her in a tank top and shorts..."
 
     # game/core/09_opportunities.rpy:4
     old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно незаметить. Но я сам виноват... Понадеялся на лучшее, а у самого даже майки нет. Стоило бы, кстати, её купить и уже тогда спокойно смотреть с мамой ТВ. Там правда тоже гарантий нет, но попробовать можно..."
-    new ""
+    new "Oops... So my mom noticed my boner. What can I say, it's really hard not to notice. But it's my own fault... I got my hopes up, and I don't even have a shirt. It would be worth, by the way, to buy it and then quietly watch TV with mom. There really is no guarantee there either, but you can try..."
 
     # game/core/09_opportunities.rpy:4
     old "Главное, собрать нужную сумму на эту майку. А после покупки нужно узнать, заметит ли мама мой стояк, если я буду смотреть с ней ТВ в майке и шортах..."
-    new ""
+    new "The main thing is to raise the right amount of money for this T-shirt. And after I buy it, I need to know if my mom will notice my boner if I watch TV with her in a tank top and shorts..."
 
     # game/core/09_opportunities.rpy:4
     old "Эхх... Мама заметила моё приподнятое настроение. Если уж я не смог его скрыть даже под майкой, то это проблема и этими просмотрами ТВ с мамой я буду только портить наши отношения. Что же делать? Не представляю... Но придумать что-то нужно."
-    new ""
+    new "Ehhh... Mom noticed my high spirits. If I couldn't hide it even under a T-shirt, that's a problem, and watching TV with my mom would only spoil our relationship. What am I supposed to do? I have no idea... I have to think of something."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Талантливый массажист\"..."
-    new ""
+    new "Perhaps a solution to this problem will come of its own accord if I progress the \"Talented Masseur\" opportunity... "
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new ""
+    new "Perhaps a solution to this problem will come of its own accord if I progress the \"Naughty Feet\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Школьница\"..."
-    new ""
+    new "Perhaps a solution to this problem will come of its own accord if I progress the \"Schoolgirl\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Пока я делал Лизе массаж шеи и плеч, у меня возникла отличная идея! Почему бы не решить мою проблему со стояком, когда мы с мамой смотрим вместе ТВ, предложив ей массаж? Стоит попробовать... И ей будет приятно, и мне меньше проблем. Главное, чтобы маме понравился массаж!"
-    new ""
+    new "While I was massaging Lisa's neck and shoulders, I had a great idea! Why not solve my boner problem when my mom and I watch TV together by offering her a massage? It's worth a try... It would make her feel good, and it would be less of a problem for me. The most important thing is that my mom likes the massage!"
 
     # game/core/09_opportunities.rpy:4
     old "Только сперва нужно отточить свои навыки массажа на Лизе, чтобы маме всё понравилось. Лизе очень понравился массаж шеи и плеч: [lisa.flags.m_shoulder] из 5"
-    new ""
+    new "Only first you need to hone your massage skills on Lisa, so that mom likes everything. Lisa really liked the neck and shoulder massage: [lisa.flags.m_shoulder] out of 5"
 
     # game/core/09_opportunities.rpy:4
     old "Теперь не важно, что на мне будет одето, когда мы с мамой будем смотреть ТВ. Главное предложить ей массаж..."
-    new ""
+    new "Now it doesn't matter what I'm wearing when my mother and I watch TV. The main thing is to offer her a massage..."
 
     # game/core/09_opportunities.rpy:4
     old "Это была отличная идея! Теперь и мама знает, на что способны мои руки. Массажем она осталась довольна и даже хочет, чтобы я делал его и дальше. Я более чем не против помассировать мамины плечи время от времени и это отличная возможность скрыть моё возбуждение от её глаз. Только не стоит слишком к ней прижиматься, иначе она почувствует, как кое-что твёрдое упирается ей в спину."
-    new ""
+    new "It was a great idea! Now she knows what my hands can do. She was pleased with the massage and even wants me to keep doing it. I'm more than okay with massaging my mom's shoulders now and then, and it's a great way to hide my arousal from her eyes. Just don't get too close to her, or she'll feel something hard resting against her back."
 
     # game/core/09_opportunities.rpy:4
     old "Ещё было бы классно делать маме массаж и смотреть при этом какой-нибудь эротический фильм. Но лучше сперва довести этот массаж до автоматизма, потому что фильм будет отвлекать. Потребуются успехи в возможности \"Любимая тётя\"..."
-    new ""
+    new "It would also be cool to give Mom a massage while watching an erotic movie. But it's better to get her comfortable first, because the movie will be distracting. I'll need to make progress in the \"Favorite Aunt\" opportunity...."
 
     # game/core/09_opportunities.rpy:4
     old "Прежде чем купить какой-нибудь эротический фильм и уговорить маму его посмотреть, нужно больше с ней сблизиться. Её утренние занятия йогой отлично подойдут для этого..."
-    new ""
+    new "Before you buy some erotic movie and talk your mother into watching it, you need to get closer to her. Her morning yoga class would be great for that..."
 
     # game/core/09_opportunities.rpy:4
     old "Самое время прикупить какой-нибудь эротический фильм и предложить маме его посмотреть..."
-    new ""
+    new "It's a good time to buy an erotic movie and ask if Mom wants to see it..."
 
     # game/core/09_opportunities.rpy:4
     old "Надо предложить маме посмотреть вместе фильм, который я купил. Интересно, что будет, когда она поймёт, что мы снова смотрим эротику..."
-    new ""
+    new "I have to suggest that Mom and I watch the movie I bought. I wonder what will happen when she realizes we're watching erotica again..."
 
     # game/core/09_opportunities.rpy:4
     old "Вообще улётно! Я посмотрел с мамой ещё один эротический фильм! Правда, не весь, но почти час... Она так прибалдела от этого фильма и массажа, что даже не почувствовала, что у неё сползло полотенце. А позиция у меня в этот момент была самая наилучшая для того, чтобы насладиться этим небольшим и случайным стриптизом от мамы. Может, в следующий раз она снова не уследит за своим полотенцем? Если она, конечно, станет досматривать этот фильм со мной..."
-    new ""
+    new "It's totally awesome! I watched another erotic movie with my mom! Not the whole thing, though, but almost an hour... I was so freaked out by the movie and the massage that she didn't even feel that her towel had slipped off. And I was in the best position at this point to enjoy this little and random striptease from my mom. Maybe next time she wouldn't watch her towel again. If she, of course, will finish this movie with me..."
 
     # game/core/09_opportunities.rpy:4
     old "Остаётся дождаться, когда мама будет смотреть ТВ одна и напомнить ей, что мы кое-что не досмотрели..."
-    new ""
+    new "We just have to wait until Mom watches TV alone and remind her that we didn't finish watching something..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь!"
-    new ""
+    new "So my mom and I finished watching \"The Color of Night\". I admired her naked breasts again, and in general, things were going well for us. She's slowly beginning to understand that I'm an adult now, and she doesn't mind watching movies like this with me anymore. For the sake of decency, of course my mother told me not to buy such explicit erotica anymore, but as if I would listen!"
 
     # game/core/09_opportunities.rpy:723
     old "А не посмотреть ли вместе с мамой какой-нибудь фильм? Может и стоит..."
-    new ""
-
+    new "Shouldn't we watch a movie together with Mom? Maybe we should..."

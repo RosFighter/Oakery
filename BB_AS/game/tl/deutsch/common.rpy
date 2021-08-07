@@ -1172,9 +1172,9 @@ translate deutsch strings:
 
     # renpy/common/00preferences.rpy:480
     old "renderer menu"
-    new ""
+    new "renderer menu"
 
     # renpy/common/00preferences.rpy:483
     old "accessibility menu"
-    new ""
+    new "accessibility menu"
 

@@ -405,7 +405,7 @@ label ann_tv_casual_1:
         Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хотя, на мне майка... Может она и не заметит, но не факт. ){/i}" nointeract
     else:
         # Макс только в шортах
-        Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли. {/i}" nointeract
+        Max_08 "{i}( Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли. ){/i}" nointeract
 
     menu:
         "{i}перестраховаться (массаж){/i}":
@@ -915,13 +915,14 @@ label ann_gift_fit1:
     jump Waiting
 
 
+# 1-ая половина фильма
 label erofilm2_1:
-    # 1-ая половина фильма
+    # "А я прикупил фильм на вечер. Посмотрим?"
+
     # lounge-tv-01 + tv-ann-(01/02/03) + tv-max-(00a/00b)
     scene BG lounge-tv-01
     $ renpy.show('Ann tv-closer '+pose3_3)
-    $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
-    # "А я прикупил фильм на вечер. Посмотрим?"
+    $ renpy.show("Max tv 00"+mgg.dress)
     Ann_02 "Я не против. По кабельному всё равно ничего интересного я не нашла. А что за фильм?"
 
     # lounge-tv-01 + tv-ann-(01/02/03) + tv-max-(04a/04b)
@@ -991,65 +992,155 @@ label erofilm2_1:
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01
     scene BG char Kira after-club-s08a-f
     $ renpy.show('Max tv-ero 03-01'+mgg.dress)
+    $ renpy.dynamic('ch', 'pose')
     $ ch = GetChance(mgg.massage)
     menu:
         Max_05 "{i}( Уххх... А у мамы ведь полотенце сползло... И она это ещё не заметила! Должно быть, мой массаж действительно её хорошо расслабил! Надо продолжать... Может оно тогда ещё больше спадёт... ){/i}"
         "{i}продолжать массаж{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}":
-            if RandomChance(ch.ch) or _in_replay:
-                # (Маме понравился массаж!)
-                # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
-                scene BG char Ann tv-ero-04
-                $ renpy.show('Max tv-ero 04-01'+mgg.dress)
-                Max_06 "[ann_good_mass!t]{i}( О да! Полотенце сползает всё больше и больше... Какие у неё милые и тёмные сосочки! Интересно, что будет, если я потяну руки ниже, как с Лизой? Вряд ли что-то хорошее... ){/i}"
+            pass
+    if RandomChance(ch.ch) or _in_replay:
+        # (Маме понравился массаж!)
+        # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
+        scene BG char Ann tv-ero-04
+        $ renpy.show('Max tv-ero 04-01'+mgg.dress)
+        Max_06 "[ann_good_mass!t]{i}( О да! Полотенце сползает всё больше и больше... Какие у неё милые и тёмные сосочки! Интересно, что будет, если я потяну руки ниже, как с Лизой? Вряд ли что-то хорошее... ){/i}"
 
-                # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
-                scene BG after-club-s04-f
-                $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
-                Ann_15 "Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
+        # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
+        scene BG after-club-s04-f
+        $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
+        Ann_15 "Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
+        Max_02 "Так я не видел! Фильм же смотрю..."
 
-                $ ann.flags.m_shoulder += 1
-                $ ann.flags.handmass = True
-                $ AddRelMood('ann', 5, 30)
-                $ Skill('massage', 0.1)
-            else:
-                # (Маме не понравился массаж!)
-                # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
-                scene BG after-club-s04-f
-                $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
-                Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
+        Ann_04 "А ты молодец, если умудряешься и фильм одновременно смотреть и массаж так хорошо делать!"
+        Max_01 "Ты же сама сказала - талант."
 
+        # tv-watch-01 + ero_mov_02_05 + tv-watch-01-max&ann-(01a/01b)
+        scene BG tv-watch-01
+        show tv ero2 05 at tv_screen
+        $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+        Ann_14 "Так, как-то здесь всё слишком откровенно начало развиваться... Прямо очень откровенно! Ты специально такой фильм купил?"
+        Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
+
+        # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
+        scene BG char Kira after-club-s08a-f
+        $ renpy.show('Max tv-ero 03-01'+mgg.dress)
+        show Ann tv-ero 03-01
+
+        $ pose = 'good'
+
+        $ ann.flags.m_shoulder += 1
+        $ ann.flags.handmass = True
+        $ AddRelMood('ann', 5, 30)
+        $ Skill('massage', 0.1)
+    else:
+        # (Маме не понравился массаж!)
+        # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
+        scene BG after-club-s04-f
+        $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
+        menu:
+            Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься."
+            "{i}закончить массаж и попытаться скрыть стояк{/i}":
+                #(может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
                 $ ann.flags.handmass = False
                 $ Skill('massage', 0.05)
+                $ ch = GetChance(40 if mgg.dress == 'b' else 60)
 
-    Max_02 "Так я не видел! Фильм же смотрю..."
+        if RandomChance(ch.ch):
+            # (Повезло!)
+            # tv-watch-01 + ero_mov_02_05 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+            scene BG tv-watch-01
+            show tv ero2 05 at tv_screen
+            show Ann tv-watch 01
+            $ renpy.show('Max tv-watch 01'+mgg.dress)
+            Ann_14 "[lucky!t]Так, как-то здесь всё слишком откровенно начало развиваться... Прямо очень откровенно! Ты специально такой фильм купил?"
+            Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
 
-    # tv-watch-01 + ero_mov_02_05 + tv-watch-01-max&ann-(01a/01b)
-    scene BG tv-watch-01
-    show tv ero2 05 at tv_screen
-    $ renpy.show('Max tv-watch ann-01'+mgg.dress)
-    Ann_14 "Так, как-то здесь всё слишком откровенно начало развиваться... Прямо очень откровенно! Ты специально такой фильм купил?"
-    Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
+            # tv-mass-07 + tv-ero-01-max-(03a/03b) + tv-ero-01-ann-(07/08/09)
+            scene BG tv-mass-07
+            $ renpy.show('Max tv-ero 03'+mgg.dress)
+            $ renpy.show('Ann tv-ero 01-0'+str(6+int(pose3_3)))
+
+            $ pose = 'lucky'
+
+        else:
+            # (Не повезло!)
+            # tv-kiss-03 + tv-ero-00-max-(01a/01b) + tv-ero-00-ann-01
+            scene BG tv-kiss-03
+            $ renpy.show('Max tv-ero 00'+mgg.dress)
+            show Ann tv-ero 00
+            Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
+            Max_08 "Похоже на то. Там ведь очень откровенные сцены пошли..."
+
+            # tv-watch-01 + ero_mov_02_05 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+            scene BG tv-watch-01
+            show tv ero2 05 at tv_screen
+            show Ann tv-watch 01
+            $ renpy.show('Max tv-watch 01'+mgg.dress)
+            Ann_14 "Ты специально такой фильм купил?"
+            Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
+
+            $ pose = 'unlucky'
+
     Ann_15 "Всё, Макс! Такое мы дальше смотреть не будем. По крайней мере {b}ТЫ{/b} не будешь смотреть!"
     Max_09 "Я же всё равно досмотрю этот фильм. Только без тебя это не так интересно..."
 
-    # tv-watch-01 + ero_mov_02_06 + tv-watch-01-max&ann-(01a/01b)
+    scene BG tv-watch-01
     show tv ero2 06 at tv_screen
-    Ann_13 "Сынок, смотреть такую откровенную эротику со своей мамой не очень-то правильно."
+    if pose == 'good':
+        # tv-watch-01 + ero_mov_02_06 + tv-watch-01-max&ann-(01a/01b)
+        $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+    else:
+        # tv-watch-01 + ero_mov_02_06 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        show Ann tv-watch 01
+        $ renpy.show('Max tv-watch 01'+mgg.dress)
 
+    Ann_13 "Сынок, смотреть такую откровенную эротику со своей мамой не очень-то правильно."
     if flags.voy_stage>3 and GetRelMax('eric')[0]>0:
-        #если у Макса были уроки у Анны и Эрика
+        # у Макса были уроки у Анны и Эрика
         Max_07 "А на то, что вы с Эриком делаете смотреть значит можно? И просмотр эротического фильма точно не дотягивает до вас!"
     else:
-        #если Анна и Эрик ловили Макса за подглядыванием
+        # Анна и Эрик ловили Макса за подглядыванием
         Max_07 "Я ведь уже не раз видел, как вы с Эриком такое делаете! И просмотр эротического фильма точно не дотягивает до вас!"
+
+    if pose == 'good':
+        # tv-mass-05 + tv-ero-02-max-(01a/01b)-ann-01
+        scene BG tv-mass-05
+        $ renpy.show('Ann tv-ero 02-01'+mgg.dress)
+    elif pose == 'lucky':
+        # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
+        scene BG tv-mass-03
+        $ renpy.show('Max tv-ero 01'+mgg.dress)
+        $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+    else:
+        pass
 
     Ann_14 "Мне всё кажется, что ты ещё недостаточно взрослый, для таких вещей."
     Max_09 "Мам, а если у меня девушка появится, ты что, думаешь мы только за ручку будем гулять и розового единорога почёсывать?"
 
-    # tv-watch-01 + ero_mov_02_07 + tv-watch-01-max&ann-(01a/01b)
+    scene BG tv-watch-01
     show tv ero2 07 at tv_screen
+    if pose == 'good':
+        # tv-watch-01 + ero_mov_02_07 + tv-watch-01-max&ann-(01a/01b)
+        $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+    else:
+        # tv-watch-01 + ero_mov_02_07 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        show Ann tv-watch 01
+        $ renpy.show('Max tv-watch 01'+mgg.dress)
+
     Ann_12 "Да, ты прав. Но пока у тебя эта самая девушка не появилась..."
     Max_00 "А пока я буду смотреть эротику с тобой! Под твоим контролем."
+
+    if pose == 'good':
+        # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01 + tv-ero-04-ann-01a
+        scene BG char Ann tv-ero-04
+        $ renpy.show('Max tv-ero 04-01'+mgg.dress)
+        show Ann tv-ero 04-01
+    else:
+        # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
+        scene BG tv-mass-05
+        $ renpy.show('Max tv-ero 02'+mgg.dress)
+        $ renpy.show('Ann tv-ero 01-0'+str(3+int(pose3_3)))
+
     Ann_14 "Ну не знаю, Макс. Я уже поняла, что смотреть такое со мной, тебя абсолютно не смущает. А вот меня ещё как!"
     Max_07 "Это уже хорошая возможность побольше рассказать мне о взрослой жизни."
     Ann_15 "Хорошо, сынок, я подумаю... Ого! А я и не знала, что это кино идёт больше двух часов! Давай досмотрим в следующее воскресенье? Если, конечно, я не передумаю..."
@@ -1067,7 +1158,7 @@ label erofilm2_2:
     # lounge-tv-01 + tv-ann-(01/02/03) + tv-max-(00a/00b)
     scene BG lounge-tv-01
     $ renpy.show('Ann tv-closer '+pose3_3)
-    $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
+    $ renpy.show("Max tv 00"+mgg.dress)
     # "Мы не досмотрели один фильм. Помнишь?"
     $ ann.flags.erofilms = 3
     Ann_01 "Ох, Макс... Как же такое не помнить. Глупо было надеяться, что ты забудешь..."
@@ -1156,60 +1247,83 @@ label erofilm2_2:
             $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
             Ann_13 "Ой, Макс! Хорошо, что предупредил... Чуть голой не осталась! И давно я сижу вся такая довольная без полотенца?"
             Max_01 "Не знаю. Я как заметил, так сразу и сказал."
-            jump .end_film
+            menu:
+                Ann_04 "Давай-ка на сегодня прервёмся с массажем... и досмотрим фильм. Это не значит, что мне не понравилось! Ты молодец!"
+                "{i}закончить массаж и попытаться скрыть стояк{/i}":
+                    $ ch = GetChance(40 if mgg.dress == 'b' else 60)
+                    if RandomChance(ch.ch) or _in_replay:
+                        jump .lucky
+                    else:
+                        jump .unlucky
 
         "{i}продолжать массаж{/i} \n{color=[ch.col]}(Массаж. Шанс: [ch.vis]){/color}":
-            if RandomChance(ch.ch):
+            if RandomChance(ch.ch) or _in_replay:
                 # (Маме понравился массаж!)
                 # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
                 scene BG char Ann tv-ero-04
                 $ renpy.show('Max tv-ero 04-01'+mgg.dress)
                 Max_06 "[ann_good_mass!t]{i}( Ммм... Полотенце сползает всё больше и больше... Вот бы однажды помассировать эти сочные дыньки! Ох, как же сложно удержаться и не запустить туда вниз свои руки... ){/i}"
+
                 # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
                 scene BG after-club-s04-f
                 $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
                 Ann_15 "Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
-                $ ann.flags.m_shoulder += 1
-                $ ann.flags.handmass = True
-                $ AddRelMood('ann', 5, 30)
-                $ Skill('massage', 0.1)
-            else:
-                # (Маме не понравился массаж!)
-                #after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
-                scene BG after-club-s04-f
-                $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
-                Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась!"
-                $ ann.flags.handmass = True
-                $ Skill('massage', 0.05)
-            Max_02 "Так я не видел! Фильм же смотрю..."
-            jump .end_film
+                Max_02 "Так я не видел! Фильм же смотрю..."
+                Ann_04 "А ты молодец, если умудряешься и фильм одновременно смотреть и массаж так хорошо делать!"
+                Max_01 "Ты же сама сказала - талант."
 
-    label .end_film:
+                # tv-watch-01 + ero_mov_02_11 + tv-watch-01-max&ann-(01a/01b)
+                scene BG tv-watch-01
+                show tv ero2 11 at tv_screen
+                $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+                Ann_04 "Помимо всего прочего, в фильме музыка очень хороша. Мне прямо нравится!"
 
-        # tv-watch-01 + ero_mov_02_11 + tv-watch-01-max&ann-(01a/01b)
-        scene BG tv-watch-01
-        show tv ero2 11 at tv_screen
-        $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+                # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
+                scene BG char Kira after-club-s08a-f
+                $ renpy.show('Max tv-ero 03-01'+mgg.dress)
+                show Ann tv-ero 03-01
+                Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
 
-        Ann_04 "Помимо всего прочего, в фильме музыка очень хороша. Мне прямо нравится!"
-        Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
+                # tv-watch-01 + ero_mov_02_12 + tv-watch-01-max&ann-(01a/01b)
+                scene BG tv-watch-01
+                show tv ero2 12 at tv_screen
+                $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+                Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
 
-        # tv-watch-01 + ero_mov_02_12 + tv-watch-01-max&ann-(01a/01b)
-        show tv ero2 12 at tv_screen
-        Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
+                # tv-mass-05 + tv-ero-02-max-(01a/01b)-ann-01
+                scene BG tv-mass-05
+                $ renpy.show('Ann tv-ero 02-01'+mgg.dress)
+                Max_04 "Да, намёки для зрителей были местами очень жирные."
 
-        # tv-watch-01 + ero_mov_02_13 + tv-watch-01-max&ann-(01a/01b)
-        show tv ero2 13 at tv_screen
-        $ ch = GetChance(40 if mgg.dress == 'b' else 60)
-        menu:
-            Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
-            "{i}попытаться скрыть стояк{/i}":
-                if RandomChance(ch.ch):
-                    Max_03 "[lucky!t]А где ты тут детей видишь?"
+                # tv-watch-01 + ero_mov_02_13 + tv-watch-01-max&ann-(01a/01b)
+                scene BG tv-watch-01
+                show tv ero2 13 at tv_screen
+                $ renpy.show('Max tv-watch ann-01'+mgg.dress)
+                Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
+                menu:
+                    Max_03 "А где ты тут детей видишь?"
+                    "{i}закончить массаж и попытаться скрыть стояк{/i}":
+                        # (может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
+                        $ ch = GetChance(40 if mgg.dress == 'b' else 60)
+                        $ ann.flags.m_shoulder += 1
+                        $ ann.flags.handmass = True
+                        $ AddRelMood('ann', 5, 30)
+                        $ Skill('massage', 0.1)
+
+                if RandomChance(ch.ch) or _in_replay:
+                    # (Повезло!)
+                    # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
+                    scene BG tv-mass-05
+                    $ renpy.show('Max tv-ero 02'+mgg.dress)
+                    $ renpy.show('Ann tv-ero 01-0'+str(3+int(pose3_3)))
+                    Ann_04 "[lucky!t]Да, знаю... знаю... Ты уже взрослый. Почти..."
+                    jump .end
+
                 else:
-                    # tv-kiss-03 + tv-ero-00-max-01b-ann-01
+                    # (Не повезло!)
+                    # tv-kiss-03 + tv-ero-00-max-(01a/01b) + tv-ero-00-ann-01
                     scene BG tv-kiss-03
-                    show Max tv-ero 00b
+                    $ renpy.show('Max tv-ero 00'+mgg.dress)
                     show Ann tv-ero 00
                     Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? В фильме же откровенные сцены давно были..."
                     Max_08 "Я не знаю! Видимо, мысли об этих сценах ещё не выветрились из головы."
@@ -1218,13 +1332,112 @@ label erofilm2_2:
                     Ann_13 "Макс, мама не должна видеть своего сына таким..."
                     Max_07 "А ты просто возьми и не смотри! Я же не маленький ребёнок, а..."
 
-    # lounge-tv-01 + tv-ann-(01/02/03) + tv-max-(00a/00b)
-    scene BG lounge-tv-01
-    $ renpy.show('Ann tv-closer '+pose3_3)
-    $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
-    Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+                    # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
+                    scene BG tv-mass-05
+                    $ renpy.show('Max tv-ero 02'+mgg.dress)
+                    $ renpy.show('Ann tv-ero 01-0'+str(3+int(pose3_3)))
+                    Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+                    jump .end
+
+            else:
+                # (Маме не понравился массаж!)
+                # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
+                scene BG after-club-s04-f
+                $ renpy.show('Ann tv-ero 05-01'+mgg.dress)
+                menu:
+                    Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься."
+                    "{i}закончить массаж и попытаться скрыть стояк{/i}":
+                        # (может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
+                        $ ch = GetChance(40 if mgg.dress == 'b' else 60)
+                $ ann.flags.handmass = True
+                $ Skill('massage', 0.05)
+                if RandomChance(ch.ch):
+                    jump .lucky
+                else:
+                    jump .unlucky
+
+    label .lucky:
+        # (Повезло!)
+        # tv-watch-01 + ero_mov_02_11 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        scene BG tv-watch-01
+        show tv ero2 11 at tv_screen
+        show Ann tv-watch 01
+        $ renpy.show('Max tv-watch 01'+mgg.dress)
+        Ann_04 "[lucky!t]Помимо всего прочего, в фильме музыка очень хороша. Мне прямо нравится!"
+
+        # tv-mass-07 + tv-ero-01-max-(03a/03b) + tv-ero-01-ann-(07/08/09)
+        scene BG tv-mass-07
+        $ renpy.show('Max tv-ero 03'+mgg.dress)
+        $ renpy.show('Ann tv-ero 01-0'+str(6+int(pose3_3)))
+        Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
+
+        # tv-watch-01 + ero_mov_02_12 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        scene BG tv-watch-01
+        show tv ero2 12 at tv_screen
+        show Ann tv-watch 01
+        $ renpy.show('Max tv-watch 01'+mgg.dress)
+        Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
+
+        # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
+        scene BG tv-mass-03
+        $ renpy.show('Max tv-ero 01'+mgg.dress)
+        $ renpy.show('Ann tv-ero 01-'+pose3_3)
+        Max_04 "Да, намёки для зрителей были местами очень жирные."
+
+        # tv-watch-01 + ero_mov_02_13 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        scene BG tv-watch-01
+        show tv ero2 13 at tv_screen
+        show Ann tv-watch 01
+        $ renpy.show('Max tv-watch 01'+mgg.dress)
+        Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
+        Max_03 "А где ты тут детей видишь?"
+
+        # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
+        scene BG tv-mass-05
+        $ renpy.show('Max tv-ero 02'+mgg.dress)
+        $ renpy.show('Ann tv-ero 01-0'+str(3+int(pose3_3)))
+        Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+        jump .end
+
+    label .unlucky:
+        # (Не повезло!)
+        # tv-kiss-03 + tv-ero-00-max-(01a/01b) + tv-ero-00-ann-01
+        scene BG tv-kiss-03
+        $ renpy.show('Max tv-ero 00'+mgg.dress)
+        show Ann tv-ero 00
+        Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
+        Max_08 "Похоже на то. Там ведь очень откровенные сцены были, а теперь эти дамочки что-то интересное затевают..."
+
+        # tv-watch-01 + ero_mov_02_11 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        scene BG tv-watch-01
+        show tv ero2 11 at tv_screen
+        show Ann tv-watch 01
+        $ renpy.show('Max tv-watch 01'+mgg.dress)
+        Ann_17 "Рановато тебе ещё такое смотреть! Хотя, по сравнению с тем, что ты уже увидел до этого..."
+        Max_05 "{i}( Интересно, а у мамы было что-нибудь... с женщинами... О да! За такой картиной я бы с удовольствиям подсмотрел! Хотя, не отказался бы и поучаствовать... ){/i}"
+
+        #tv-watch-01 + ero_mov_02_12 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        show tv ero2 12 at tv_screen
+        Ann_05 "Судя по времени, дела идут к развязке. Забавно за ними всеми наблюдать... Как они только сейчас понимают то, что зритель понял уже давно."
+        Max_04 "Да, намёки для зрителей были местами очень жирные."
+
+        #tv-watch-01 + ero_mov_02_13 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
+        show tv ero2 13 at tv_screen
+        Ann_06 "Вот и досмотрели. Интересный детектив... Мне понравился. Но этот фильм и близко не для детей снят..."
+        Max_03 "А где ты тут детей видишь?"
+
+        # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
+        scene BG tv-mass-05
+        $ renpy.show('Max tv-ero 02'+mgg.dress)
+        $ renpy.show('Ann tv-ero 01-0'+str(3+int(pose3_3)))
+        Ann_04 "Да, знаю... знаю... Ты уже взрослый. Почти..."
+        jump .end
+
+    label .end:
+        pass
+
     Max_02 "В следующий раз посмотрим что-нибудь ещё подобное?"
-    Ann_13 "Только будь поскромнее. Этот фильм оказался очень волнующим..."
+    Ann_02 "Только будь поскромнее. Этот фильм оказался очень волнующим..."
     Max_01 "Конечно, мам!"
 
     $ renpy.end_replay()

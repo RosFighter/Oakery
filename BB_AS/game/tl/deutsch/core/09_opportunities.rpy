@@ -1388,113 +1388,113 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Что посмотрим, мам?"
-    new ""
+    new "Was siehst du, Mom?"
 
     # game/core/09_opportunities.rpy:4
     old "Я подошёл к маме узнать, что она смотрит, а ей как раз на днях подруга посоветовала посмотреть один фильм... Должно быть, она думала, что мама будет смотреть его одна и поэтому не сказала, что этот фильм... с эротическим содержанием... И чем дальше мы его смотрели, тем больше мама пыталась меня выпроводить. Но фильм хороший! Я бы с огромным удовольствием посмотрел вместе с мамой ещё что-нибудь такое... А пока и просто составить ей компанию за сериалом будет неплохо."
-    new ""
+    new "Ich ging zu meiner Mutter, um zu sehen, was sie sich gerade ansieht, denn eine Freundin hatte ihr geraten, sich einen bestimmten Film anzusehen... Sie dachte wohl, Mom würde es sich alleine ansehen, also hat sie mir nicht gesagt, dass es... mit erotischem Inhalt... ist. Und je öfter wir ihn uns ansahen, desto mehr versuchte meine Mutter, mich da raus zu nehmen. Aber es ist ein guter Film! So etwas würde ich auch gerne mal mit meiner Mutter sehen... In der Zwischenzeit wäre es schön, wenn sie während der Sendung einfach nur Gesellschaft hätte."
 
     # game/core/09_opportunities.rpy:4
     old "Неплохо бы почаще составлять маме компанию за просмотром ТВ..."
-    new ""
+    new "Es ist eine gute Idee, Mom beim Fernsehen öfter Gesellschaft zu leisten..."
 
     # game/core/09_opportunities.rpy:4
     old "Да уж. Мама всегда смотрит ТВ после того, как примет ванну. Сидит вся такая сексуальная и мокренькая в одном полотенце... У меня даже волей-неволей от этого встаёт! А уж что происходит, когда я начинаю думать о том, что скрывается под этим полотенцем... Джинсы могут порваться... Но хорошо, что они отлично скрывают то, из-за чего мама бы переполошилась. Пока я в этой одежде можно не волноваться на этот счёт."
-    new ""
+    new "Ja, ja. Mom sieht immer fern, wenn sie ein Bad genommen hat. So sexy und nass in einem Handtuch zu sitzen... Ich kann nicht anders, als einen Steifen zu bekommen! Und was passiert, wenn ich darüber nachdenke, was unter dem Handtuch ist... Die Jeans könnte reißen... Aber es ist gut, dass sie perfekt verbergen, weshalb meine Mutter ausflippen würde. Solange ich diese Klamotten trage, muss ich mir darüber keine Gedanken machen."
 
     # game/core/09_opportunities.rpy:4
     old "Мне стоит и дальше смотреть вместе с мамой ТВ. Это нас только больше сблизит..."
-    new ""
+    new "Ich sollte weiter mit meiner Mutter fernsehen. Es wird uns nur näher zusammenbringen..."
 
     # game/core/09_opportunities.rpy:4
     old "Прикольно смотреть ТВ рядом с такой женщиной, как моя мама. Вроде она и в полотенце, а мысли от этого просто сходят с ума! Надеюсь мои майка с шортами смогут скрыть то возбуждение, которое я испытываю."
-    new ""
+    new "Es macht Spaß, neben einer Frau wie meiner Mutter fernzusehen. Sie sieht aus, als ob sie im Handtuch steckt, aber das macht mich einfach verrückt! Ich hoffe, dass mein T-Shirt und meine Shorts die Aufregung verbergen können, die ich empfinde."
 
     # game/core/09_opportunities.rpy:4
     old "Если мама заметит мой стояк, то просмотр ТВ с ней точно закончится. С другой стороны, неплохо бы выяснить, а заметит ли она..."
-    new ""
+    new "Wenn meine Mutter meinen Ständer bemerkt, ist es mit dem Fernsehen mit ihr definitiv vorbei. Andererseits ist es eine gute Idee, zu sehen, ob sie es bemerkt..."
 
     # game/core/09_opportunities.rpy:4
     old "Мама в таких позах отдыхает на этом диване, что вот-вот что-нибудь пикантное да и засветит, но увы... От одних только мыслей что-нибудь такое увидеть, я не в состоянии сдержать свой член в этих шортах. Надо же было додуматься надеть только их! И близко не лучшая идея..."
-    new ""
+    new "Mom ist in einer Stellung, in der sie sich auf dem Sofa ausruht, als würde sie gleich etwas Saftiges aufblitzen lassen, aber ach... Allein bei dem Gedanken, so etwas zu sehen, kann ich meinen Schwanz nicht in diesen Shorts halten. Ich hätte daran denken sollen, bevor ich sie tragen! Das ist nicht einmal annähernd eine gute Idee..."
 
     # game/core/09_opportunities.rpy:4
     old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно не заметить. Но я сам виноват... Что мешало мне натянуть майку и не париться на этот счёт. Там правда тоже гарантий нет, но попробовать можно..."
-    new ""
+    new "Hoppla... Meine Mutter hat also meinen Ständer bemerkt. Was soll ich sagen, es ist wirklich schwer, das nicht zu bemerken. Aber es war meine Schuld... Was hat mich davon abgehalten, ein T-Shirt anzuziehen ohne mir Gedanken darüber zu machen? Eine Garantie gibt es auch hier nicht, aber einen Versuch ist es wert..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно узнать, заметит ли мама мой стояк, если я буду смотреть с ней ТВ в майке и шортах..."
-    new ""
+    new "Ich muss sehen, ob meine Mutter meinen Ständer bemerkt, wenn ich in T-Shirt und Shorts mit ihr fernsehe..."
 
     # game/core/09_opportunities.rpy:4
     old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно незаметить. Но я сам виноват... Понадеялся на лучшее, а у самого даже майки нет. Стоило бы, кстати, её купить и уже тогда спокойно смотреть с мамой ТВ. Там правда тоже гарантий нет, но попробовать можно..."
-    new ""
+    new "Hoppla... Meine Mutter hat also meinen Ständer bemerkt. Was soll ich sagen, es ist wirklich schwer, das nicht zu bemerken. Aber das ist meine eigene Schuld... Ich habe mir Hoffnungen gemacht, und ich habe nicht einmal ein Hemd an. Ich glaube, ich sollte mir eines kaufen und dann in Ruhe mit meiner Mutter fernsehen. Eine Garantie gibt es auch hier nicht, aber man kann es versuchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Главное, собрать нужную сумму на эту майку. А после покупки нужно узнать, заметит ли мама мой стояк, если я буду смотреть с ней ТВ в майке и шортах..."
-    new ""
+    new "Das Wichtigste ist, dass ich genug Geld für dieses T-Shirt aufbringe. Und nachdem ich es gekauft habe, muss ich sehen, ob meine Mutter meinen Ständer bemerkt, wenn ich in T-Shirt und Shorts mit ihr fernsehe..."
 
     # game/core/09_opportunities.rpy:4
     old "Эхх... Мама заметила моё приподнятое настроение. Если уж я не смог его скрыть даже под майкой, то это проблема и этими просмотрами ТВ с мамой я буду только портить наши отношения. Что же делать? Не представляю... Но придумать что-то нужно."
-    new ""
+    new "Ehhh... Meine Mutter bemerkte meine gute Laune. Wenn ich es nicht einmal unter einem T-Shirt verstecken kann, ist das ein Problem, und mit meiner Mutter fernzusehen würde nur unsere Beziehung beeinträchtigen. Was soll ich nun tun? Ich habe keine Ahnung... Aber ich muss mir etwas einfallen lassen."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Талантливый массажист\"..."
-    new ""
+    new "Vielleicht ergibt sich die Lösung dieses Problems von selbst. Es wird Fortschritte bei der Möglichkeit \"talentierter Masseur\" benötigt..."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new ""
+    new "Vielleicht ergibt sich die Lösung dieses Problems von selbst. Es wird Fortschritte \"freche Schenkel\" benötigt..."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Школьница\"..."
-    new ""
+    new "Vielleicht ergibt sich eine Lösung für dieses Problem von selbst. Es wird Fortschritte bei der Gelegenheit \"Schulmädchen\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Пока я делал Лизе массаж шеи и плеч, у меня возникла отличная идея! Почему бы не решить мою проблему со стояком, когда мы с мамой смотрим вместе ТВ, предложив ей массаж? Стоит попробовать... И ей будет приятно, и мне меньше проблем. Главное, чтобы маме понравился массаж!"
-    new ""
+    new "Während ich Lisas Nacken und Schultern massiere, habe ich eine tolle Idee! Warum sollte ich mein Ständerproblem nicht lösen, wenn Mom und ich zusammen fernsehen, indem ich ihr eine Massage anbiete? Es ist einen Versuch wert... Sie wird sich dann gut fühlen und ich habe weniger Probleme. Die Hauptsache ist, dass meine Mutter die Massage mag!"
 
     # game/core/09_opportunities.rpy:4
     old "Только сперва нужно отточить свои навыки массажа на Лизе, чтобы маме всё понравилось. Лизе очень понравился массаж шеи и плеч: [lisa.flags.m_shoulder] из 5"
-    new ""
+    new "Aber zuerst musst ich meine Massagekünste an Lisa verfeinern, damit Mom das alles auch gefällt. Lisa hat die Nacken- und Schultermassage sehr gut gefallen: [lisa.flags.m_shoulder] von 5"
 
     # game/core/09_opportunities.rpy:4
     old "Теперь не важно, что на мне будет одето, когда мы с мамой будем смотреть ТВ. Главное предложить ей массаж..."
-    new ""
+    new "Jetzt ist es egal, was ich anhabe, wenn meine Mutter und ich fernsehen. Die Hauptsache ist, ihr eine Massage anzubieten..."
 
     # game/core/09_opportunities.rpy:4
     old "Это была отличная идея! Теперь и мама знает, на что способны мои руки. Массажем она осталась довольна и даже хочет, чтобы я делал его и дальше. Я более чем не против помассировать мамины плечи время от времени и это отличная возможность скрыть моё возбуждение от её глаз. Только не стоит слишком к ней прижиматься, иначе она почувствует, как кое-что твёрдое упирается ей в спину."
-    new ""
+    new "Das war eine großartige Idee! Jetzt weiß auch meine Mutter, wozu meine Hände fähig sind. Sie war sehr zufrieden mit der Massage und möchte sogar, dass ich sie weiterhin mache. Ich massiere meiner Mutter gerne ab und zu die Schultern, und es ist eine gute Möglichkeit, meine Erregung vor ihren Augen zu verbergen. Ich darf ihr nur nicht zu nahe kommen, sonst spürt sie etwas Hartes auf ihrem Rücken."
 
     # game/core/09_opportunities.rpy:4
     old "Ещё было бы классно делать маме массаж и смотреть при этом какой-нибудь эротический фильм. Но лучше сперва довести этот массаж до автоматизма, потому что фильм будет отвлекать. Потребуются успехи в возможности \"Любимая тётя\"..."
-    new ""
+    new "Es wäre auch schön, meiner Mutter eine Massage zu geben, während sie einen erotischen Film ansieht. Aber es ist am besten, diese Massage erst einmal zu perfektionieren, denn der Film wird Sie ablenken. Du musst Fortschritte bei der Möglichkeit der \"Geliebten Tante\" machen..."
 
     # game/core/09_opportunities.rpy:4
     old "Прежде чем купить какой-нибудь эротический фильм и уговорить маму его посмотреть, нужно больше с ней сблизиться. Её утренние занятия йогой отлично подойдут для этого..."
-    new ""
+    new "Bevor Ich einen erotischen Film kaufe und Mom überrede, ihn sich anzusehen, muss ich mich ihr nähern. Ihr morgendlicher Yogakurs wäre dafür hervorragend geeignet..."
 
     # game/core/09_opportunities.rpy:4
     old "Самое время прикупить какой-нибудь эротический фильм и предложить маме его посмотреть..."
-    new ""
+    new "Es ist ein guter Zeitpunkt, einen erotischen Film zu kaufen und Mom zu bitten, ihn sich anzusehen..."
 
     # game/core/09_opportunities.rpy:4
     old "Надо предложить маме посмотреть вместе фильм, который я купил. Интересно, что будет, когда она поймёт, что мы снова смотрим эротику..."
-    new ""
+    new "Ich denke, ich sollte Mom vorschlagen, dass sie sich den Film, den ich gekauft habe, mit mir gemeinsam ansieht. Ich frage mich, was passiert, wenn sie merkt, dass wir wieder Erotikfilme ansehen..."
 
     # game/core/09_opportunities.rpy:4
     old "Вообще улётно! Я посмотрел с мамой ещё один эротический фильм! Правда, не весь, но почти час... Она так прибалдела от этого фильма и массажа, что даже не почувствовала, что у неё сползло полотенце. А позиция у меня в этот момент была самая наилучшая для того, чтобы насладиться этим небольшим и случайным стриптизом от мамы. Может, в следующий раз она снова не уследит за своим полотенцем? Если она, конечно, станет досматривать этот фильм со мной..."
-    new ""
+    new "Das ist total genial! Ich habe einen weiteren erotischen Film mit Mom gesehen! Allerdings nicht den ganzen Film, sondern knapp eine Stunde... Sie war durch den Film und die Massage so erregt, dass sie nicht einmal merkte, wie ihr Handtuch herunterrutschte. Und ich war zu diesem Zeitpunkt in der besten Position, um diesen kleinen und lockeren Striptease meiner Mom zu genießen. Vielleicht wird sie beim nächsten Mal nicht mehr auf ihr Handtuch achten. Natürlich nur, wenn sie den Film mit mir zu Ende sieht..."
 
     # game/core/09_opportunities.rpy:4
     old "Остаётся дождаться, когда мама будет смотреть ТВ одна и напомнить ей, что мы кое-что не досмотрели..."
-    new ""
+    new "Ich muss nur warten, bis Mom wieder alleine fernsieht und sie daran erinnern, dass wir noch nicht fertig sind..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь!"
-    new ""
+    new "Also haben meine Mutter und ich \"The Colour of Night\" zu Ende gesehen. Ich bewunderte wieder ihre nackten Brüste und im Allgemeinen lief es gut für uns. Sie fängt langsam an zu begreifen, dass ich erwachsen bin, und es macht ihr nichts mehr aus, solche Filme mit mir zu sehen. Aus Gründen des Anstands hat mir meine Mutter natürlich gesagt, ich solle keine solch expliziten Erotika mehr kaufen, aber als ob ich auf sie hören würde!"
 
     # game/core/09_opportunities.rpy:723
     old "А не посмотреть ли вместе с мамой какой-нибудь фильм? Может и стоит..."
-    new ""
+    new "Willst du nicht einen Film mit deiner Mutter sehen? Vielleicht ..."
 

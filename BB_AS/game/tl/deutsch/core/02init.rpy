@@ -592,9 +592,9 @@ translate deutsch strings:
 
     # game/core/02init.rpy:45
     old "{color=#00FF00}{i}Повезло!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Glücklich!{/i}{/color}\n"
 
     # game/core/02init.rpy:46
     old "{color=#E59400}{i}Не повезло!{/i}{/color}\n"
-    new ""
+    new "{color=#E59400}{i}Pech!{/i}{/color}\n"
 
