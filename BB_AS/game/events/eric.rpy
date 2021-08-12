@@ -867,8 +867,9 @@ label eric_ann_shower:
 
     label .end:
         Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-        if eric.flags.ladder > 1 and house[3].cams and house[3].max_cam<2:
+        if eric.flags.ladder > 1 and looked_ladder():
             $ house[3].max_cam = 2
+            $ items['hide_cam'].unblock()
             Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
 
         $ current_room = house[6]

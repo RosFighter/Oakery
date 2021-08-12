@@ -2566,7 +2566,7 @@ translate deutsch strings:
 
     # game/dialogues/anntalk.rpy:1204
     old "{i}попытаться скрыть стояк{/i}"
-    new "{i}versuchen, den Ständer zu verbergen{/i}"
+    new "{i}versuchen, deinen Ständer zu verbergen{/i}"
 
 # TODO: Translation updated at 2021-08-07 19:07
 
@@ -2580,19 +2580,19 @@ translate deutsch ann_tv_casual_1_de678a92:
 translate deutsch erofilm2_1_3219b2c2:
 
     # Ann_04 "А ты молодец, если умудряешься и фильм одновременно смотреть и массаж так хорошо делать!"
-    Ann_04 ""
+    Ann_04 "Schön, wenn du es schaffst, einen Film zu sehen und gleichzeitig eine Massage zu geben!"
 
 # game/dialogues/anntalk.rpy:1015
 translate deutsch erofilm2_1_e21f2499:
 
     # Max_01 "Ты же сама сказала - талант."
-    Max_01 ""
+    Max_01 "Du hast es selbst gesagt - Talent."
 
 # game/dialogues/anntalk.rpy:1040
 translate deutsch erofilm2_1_7cd6006b:
 
     # Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься." nointeract
-    Ann_15 "" nointeract
+    Ann_15 "ann_bad_mass!t] Ah! Toll! Max, warum hast du mir nicht gesagt, dass mein Handtuch verrutscht ist?! Ich war fast nackt! Machen wir eine Pause von der Massage... und schauen uns den Rest des Films an. Du lässt dich zu sehr ablenken." nointeract
 
 # game/dialogues/anntalk.rpy:1055
 translate deutsch erofilm2_1_0cbf3006:
@@ -2610,13 +2610,13 @@ translate deutsch erofilm2_1_db9e8a82_1:
 translate deutsch erofilm2_1_7cb8cd3e:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
-    Ann_15 ""
+    Ann_15 "[unlucky!t] Max! Was soll das?! Warum bist du so aufgeregt? Wegen des Films? Oh, richtig, klar wieso frage ich auch..."
 
 # game/dialogues/anntalk.rpy:1072
 translate deutsch erofilm2_1_3b3108de:
 
     # Max_08 "Похоже на то. Там ведь очень откровенные сцены пошли..."
-    Max_08 ""
+    Max_08 "Es sieht so aus. Es gab einige sehr explizite Szenen..."
 
 # game/dialogues/anntalk.rpy:1079
 translate deutsch erofilm2_1_89504722:
@@ -2634,19 +2634,19 @@ translate deutsch erofilm2_1_db9e8a82_2:
 translate deutsch erofilm2_2_300645c2:
 
     # Ann_04 "Давай-ка на сегодня прервёмся с массажем... и досмотрим фильм. Это не значит, что мне не понравилось! Ты молодец!" nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Machen wir für heute mal eine Pause von der Massage... und sehen uns den Rest des Films an. Das heißt aber nicht, dass es mir nicht gefallen hat! Du warst großartig!" nointeract
 
 # game/dialogues/anntalk.rpy:1272
 translate deutsch erofilm2_2_3219b2c2:
 
     # Ann_04 "А ты молодец, если умудряешься и фильм одновременно смотреть и массаж так хорошо делать!"
-    Ann_04 ""
+    Ann_04 "Schön, wenn du es schaffst, einen Film zu sehen und gleichzeitig eine Massage zu geben!"
 
 # game/dialogues/anntalk.rpy:1273
 translate deutsch erofilm2_2_e21f2499:
 
     # Max_01 "Ты же сама сказала - талант."
-    Max_01 ""
+    Max_01 "Du hast es selbst gesagt - Talent."
 
 # game/dialogues/anntalk.rpy:1285
 translate deutsch erofilm2_2_8d1bb789:
@@ -2730,7 +2730,7 @@ translate deutsch erofilm2_2_684e55df:
 translate deutsch erofilm2_2_7cd6006b:
 
     # Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься." nointeract
-    Ann_15 "" nointeract
+    Ann_15 "[ann_bad_mass!t] Ah! Toll! Max, warum hast du mir nicht gesagt, dass mein Handtuch verrutscht ist?! Ich war fast nackt! Machen wir eine Pause von der Massage... und schauen uns den Rest des Films an. Du lässt dich zu sehr ablenken." nointeract
 
 # game/dialogues/anntalk.rpy:1366
 translate deutsch erofilm2_2_lucky_aaa808d8:
@@ -2778,19 +2778,19 @@ translate deutsch erofilm2_2_lucky_684e55df:
 translate deutsch erofilm2_2_unlucky_7cb8cd3e:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
-    Ann_15 ""
+    Ann_15 "[unlucky!t] Max! Was soll das?! Warum bist du so aufgeregt? Wegen des Films? Oh, richtig, klar wieso frage ich auch..."
 
 # game/dialogues/anntalk.rpy:1409
 translate deutsch erofilm2_2_unlucky_54519691:
 
     # Max_08 "Похоже на то. Там ведь очень откровенные сцены были, а теперь эти дамочки что-то интересное затевают..."
-    Max_08 ""
+    Max_08 "Scheint so zu sein. Es gibt einige sehr explizite Szenen, und jetzt haben diese Damen etwas Interessantes vor..."
 
 # game/dialogues/anntalk.rpy:1416
 translate deutsch erofilm2_2_unlucky_36717c12:
 
     # Ann_17 "Рановато тебе ещё такое смотреть! Хотя, по сравнению с тем, что ты уже увидел до этого..."
-    Ann_17 ""
+    Ann_17 "Es ist ein bisschen zu früh für dich, das zu verstehen! Obwohl, verglichen mit dem, was du bisher gesehen hast..."
 
 # game/dialogues/anntalk.rpy:1417
 translate deutsch erofilm2_2_unlucky_8d1bb789:
@@ -2850,5 +2850,5 @@ translate deutsch strings:
 
     # game/dialogues/anntalk.rpy:1040
     old "{i}закончить массаж и попытаться скрыть стояк{/i}"
-    new ""
+    new "{i}Massage beenden und versuchen, deine Erektion zu verstecken{/i}"
 

@@ -808,6 +808,8 @@ label InstallCam:
     $ spent_time = 30
     if GetKolCams(house)>7:
         $ poss['cams'].open(5)
+        if house[3].max_cam < 2:
+            $ items['hide_cam'].block()
 
     if GetKolCams(house)==9:
         $ poss['cams'].open(6)

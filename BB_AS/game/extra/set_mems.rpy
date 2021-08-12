@@ -200,22 +200,26 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
+        mg.massage = 8
+
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.flags.hip_mass = renpy.random.randint(1, 2)
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
         if 'kira' in persistent.mems_var:
             dr_var.append('d')
         al.dress = renpy.random.choice(dr_var)
+        al.daily.drink = 2
+
         my_scope = {
                 'tm'        : '22:00',
                 'alice'     : al,
                 'mgg'       : mg,
-                '_drink'    : 2,
-                '_ch20'     : Chance(700),
-                '_ch25'     : Chance(875),
+                # '_drink'    : 2,
+                # 'ch20'     : Chance(700),
+                # 'ch25'     : Chance(875),
                 '_pose'     : renpy.random.choice(['03', '04']),
-                '_dress'    : mg.dress + al.dress,
-                'chars'     : ['alice', 'kira'],
+                # '_dress'    : mg.dress + al.dress,
+                'chars'     : ['kira'],
             }
         return my_scope
 

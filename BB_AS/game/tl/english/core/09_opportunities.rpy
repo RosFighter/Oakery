@@ -549,7 +549,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как бы там у Лизы всё не сложилось с Алексом, но это хорошая возможность сблизиться со своей младшей сестрёнкой, помогая ей узнать побольше о взрослой жизни. Потребуются успехи в возможности \"Наставник\"..."
-    new "No matter how things work out with Alex, it's a good opportunity for Lisa to bond with her little sister by helping her learn more about adult life. It's going to take some success in the Mentor opportunity..."
+    new "No matter how things work out with Alex, it's a good opportunity for Max to bond with his little sister by helping her learn more about adult life. It's going to take some progress in the Mentor opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Благодаря моему наставничеству Лиза хорошо осведомлена о том, ЧЕМ думают мальчики и чего хотят. Надеюсь, эти знания защитят её от Алекса. Теперь лишь нужно немного подождать и узнать, позвала ли Лиза Оливию к нам в гости..."

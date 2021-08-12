@@ -234,7 +234,7 @@ label AddKira:
     call set_kira_schedule from _call_set_kira_schedule_1
 
     # обновляем расписание Лизы и Алисы
-    call alice_after_arrival_kira from _call_alice_after_arrival_kira_1
+    # call alice_after_arrival_kira from _call_alice_after_arrival_kira_1
 
     # добавляем новую одежду Максу и девчонкам
     $ setting_clothes_by_conditions()
