@@ -261,9 +261,8 @@ translate english strings:
 
     # game/extra/extra.rpy:56
     old "Это точно триллер-детектив?"
-    new ""
+    new "Is it really a thriller-detective?"
 
     # game/extra/extra.rpy:56
     old "Полотенце снова сползает..."
-    new ""
-
+    new "The towel's slipping again..."
