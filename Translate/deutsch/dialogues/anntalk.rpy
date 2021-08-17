@@ -2592,7 +2592,7 @@ translate deutsch erofilm2_1_e21f2499:
 translate deutsch erofilm2_1_7cd6006b:
 
     # Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься." nointeract
-    Ann_15 "ann_bad_mass!t] Ah! Toll! Max, warum hast du mir nicht gesagt, dass mein Handtuch verrutscht ist?! Ich war fast nackt! Machen wir eine Pause von der Massage... und schauen uns den Rest des Films an. Du lässt dich zu sehr ablenken." nointeract
+    Ann_15 "[ann_bad_mass!t] Ah! Toll! Max, warum hast du mir nicht gesagt, dass mein Handtuch verrutscht ist?! Ich war fast nackt! Machen wir eine Pause von der Massage... und schauen uns den Rest des Films an. Du lässt dich zu sehr ablenken." nointeract
 
 # game/dialogues/anntalk.rpy:1055
 translate deutsch erofilm2_1_0cbf3006:
