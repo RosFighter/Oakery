@@ -37,3 +37,24 @@ translate english strings:
     # game/core/06_items.rpy:2
     old "Снимки того, как Эрик по ночам сперва дрочил на Алису у окна её комнаты, а затем и в самой комнате."
     new "Pictures of Eric jerking off to Alice outside her room window at night, and then in the room itself."
+
+# TODO: Translation updated at 2021-08-23 18:53
+
+translate english strings:
+
+    # game/core/06_items.rpy:2
+    old "ЧЁРНЫЙ КОЖАНЫЙ КОСТЮМ ДЛЯ РОЛЕВЫХ ИГР"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Женский сексуальный комплект из натуральной кожи чёрного цвета. Топ с воротничком и коротенькие шортики, которые застёгиваются на стильные заклёпки."
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "ЧЁРНЫЙ КОЖАНЫЙ СТЕК"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Стек освежит и разнообразит ваши отношения. Шлепок на конце девайса воспитает дерзкого и непослушного партнера. Секс-игрушка откроет просторы истинного БДСМ."
+    new ""
+
