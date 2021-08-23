@@ -20,6 +20,9 @@ label StartPunishment:
             $ poss['risk'].open(1)
             $ alice.dcv.shower.stage = 1
             $ alice.dcv.shower.set_lost(3)
+        elif all([flags.mistres_pun, alice.dcv.mistress.enabled, alice.dcv.mistress.done]):
+            $ punreason[1] = 1
+
     # Макс теоретически может получить наказание как утром, так и вечером
     if punreason[2] or punreason[3] and tm < "18:00":
         # утром наказание за подглядывание за Анной или Анной с Эриком
@@ -415,6 +418,8 @@ label max_consequences:
         for cr in current_room.cur_char:
             if chars[cr].infmax is not None:
                 chars[cr].infmax = clip(chars[cr].infmax - 5.0, 0.0, 100.0)
+            if infl[char].m[0]:
+                infl[char].sub_m(5)
 
         # обнуление провинностей
         for d in range(len(punreason)):
@@ -521,7 +526,7 @@ label punishment_lisa:
                         $ lisa.flags.defend += 1
 
                         if lisa.flags.defend >= 5:
-                            if lisa.flags.topless and not lisa.dcv.other.enabled:
+                            if all([lisa.flags.topless, not lisa.dcv.other.enabled, not lisa.dcv.other.stage]):
                                 Max_07 "{i}( На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти... ){/i}"
                                 $ poss['SoC'].open(16)
                             $ lisa.dcv.other.set_lost(1)

@@ -1150,7 +1150,7 @@ label lisa_horor_movie_r:
     if all([lisa.dcv.other.stage==1, lisa.dcv.other.done, lisa.dcv.shower.done]):
         Max_01 "Да, смотрим. Сейчас всё подготовлю... Не стесняйся, снимай маечку."
         Lisa_02 "Сейчас сниму, только свет сначала выключу. Тебе уже страшно?"
-        $ lisa.dcv.other.stage=2
+        $ lisa.dcv.other.stage = 2
         $ lisa.dress = 'c'
 
     else:

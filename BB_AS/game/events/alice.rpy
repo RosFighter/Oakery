@@ -345,16 +345,23 @@ label alice_shower:
         scene image ('Alice shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
         play music spying
+
+        if not get_alice_shower_peeping_stage():
+            Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте." nointeract
+        elif get_alice_shower_peeping_stage() == 1:
+            Max_07 "Ого... Голая Алиса всего в паре метров от меня! Но мне стоит подглядывать очень осторожно... Помогая Алисе с блогом у меня могут возникнуть незапланированные траты, а если она меня сейчас заметит - траты только увеличатся." nointeract
+        else:   # get_alice_shower_peeping_stage() == 2
+            Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... И даже если она меня заметит - не страшно! Выкручусь как-нибудь." nointeract
+
         menu:
-            Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... Главное, чтобы она меня не заметила, а то ведь убьёт на месте."
             "{i}продолжить смотреть\n{color=[_ch1.col]}(Скрытность. Шанс: [_ch1.vis]){/color}{/i}" if alice.dcv.shower.stage<2:
                 jump .closer_peepeng
             "{i}взглянуть со стороны\n{color=[_ch2.col]}(Скрытность. Шанс: [_ch2.vis]){/color}{/i}" if alice.dcv.shower.stage<2:
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if (0<len(alice.sorry.give)<4 or (not poss['risk'].used(0) and _ch1.ch>600)) and alice.dcv.shower.stage<2:
+            "{i}немного пошуметь{/i}" if get_alice_shower_peeping_stage() < 1 and alice.dcv.shower.stage<2:
                 jump .pinded
-            # "{i}немного пошуметь{/i}" if len(alice.sorry.give)>3 and alice.flags.touched:
-            #     jump .pinded
+            "{i}немного пошуметь{/i}" if get_alice_shower_peeping_stage() > 1:
+                jump .pinded
             "{i}запустить паука к Алисе{/i}" if items['spider'].have:
                 jump .spider
             "{i}уйти{/i}":
@@ -588,9 +595,10 @@ label alice_shower:
             jump .not_luck
 
     label .not_luck:
-        if alice.flags.touched and len(alice.sorry.give)>3:
-            jump .pinded
-        if RandomChance(_ch1.ch) or len(alice.sorry.give)>3:
+        # if alice.flags.touched and len(alice.sorry.give)>3:
+        #     jump .pinded
+
+        if RandomChance(_ch1.ch) or get_alice_shower_peeping_stage() == 1:
             $ renpy.dynamic('r1')
             $ alice.daily.shower = 2
             $ Skill('hide', 0.1)
@@ -607,33 +615,51 @@ label alice_shower:
 
     label .pinded:
         $ renpy.dynamic('r1')
-        $ alice.daily.shower = 3
         $ Skill('hide', 0.05)
-        if alice.flags.touched and len(alice.sorry.give)>3:
-            $ r1 = renpy.random.choice(['07', '08'])
+
+        # if alice.flags.touched and len(alice.sorry.give)>3:
+        #     $ r1 = renpy.random.choice(['07', '08'])
+        # else:
+        if flags.mistres_pun:
+            $ alice.dcv.mistress.set_lost(1)
         else:
             $ punreason[1] = 1
-            $ r1 = renpy.random.choice(['09', '10'])
+            $ alice.daily.shower = 3
+        $ r1 = renpy.random.choice(['09', '10'])
+
         scene BG shower-closer
         $ renpy.show('Alice shower-closer '+r1)
         show FG shower-closer
         stop music
         play sound noticed
-        if alice.flags.touched and len(alice.sorry.give)>3:
-            Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
-            Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
-            Alice_13 "Я рада такое слышать, но с тебя конфеты. Сам знаешь какие... А то ни стыда, ни совести. Уходи давай!"
-            Max_01 "Ладно, ухожу..."
-            $ alice.sorry.start()
-            jump .end
+        # if alice.flags.touched and len(alice.sorry.give)>3:
+        #     Alice_06 "[spotted!t]Ну, Макс! Тебе заняться больше нечем, кроме как за мной подглядывать?"
+        #     Max_05 "Просто мимо проходил и заметил... А взгляд, как оказалось, оторвать уже не выходит!"
+        #     Alice_13 "Я рада такое слышать, но с тебя конфеты. Сам знаешь какие... А то ни стыда, ни совести. Уходи давай!"
+        #     Max_01 "Ладно, ухожу..."
+        #     $ alice.sorry.start()
+        #     jump .end
 
-        elif alice.dcv.shower.stage:
+        # elif alice.dcv.shower.stage:
+        if alice.dcv.shower.stage and get_alice_shower_peeping_stage() < 2:
             Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
             Max_13 "Нет! Я просто... Так получилось. Чистое совпадение!"
             Alice_18 "А ну пошёл отсюда, извращенец такой! Считай мама уже всё знает! И даже не пытайся извиняться! Брысь!!!"
             Max_10 "Вот чёрт!"
             $ alice.dcv.shower.stage = 2
             $ alice.dcv.shower.set_lost(4)
+            jump .end
+        elif 18 > poss['risk'].st() > 14:
+            Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
+            Max_13 "Нет! Я просто... Так получилось. Чистое совпадение!"
+            Alice_18 "Ух, я тобой займусь вечером, если осмелишься подойти... А сейчас брысь отсюда!!!"
+            Max_10 "Вот чёрт!"
+            jump .end
+        elif poss['risk'].st() > 17:
+            Alice_15 "[spotted!t]Макс!!! Опять ты здесь! Сколько можно-то?! Тебе по заднице нравится получать что ли?"
+            Max_13 "Нет! Я просто..."
+            Alice_18 "Ух, я тобой займусь вечером, если осмелишься подойти... А сейчас брысь отсюда!!!"
+            Max_10 "Вот чёрт!"
             jump .end
 
         menu:

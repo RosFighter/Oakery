@@ -598,3 +598,39 @@ translate deutsch strings:
     old "{color=#E59400}{i}Не повезло!{/i}{/color}\n"
     new "{color=#E59400}{i}Pech!{/i}{/color}\n"
 
+# TODO: Translation updated at 2021-08-23 18:55
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:131
+    old "Извини, но я случайно увидел, как ты принимаешь душ..."
+    new ""
+
+    # game/core/02init.rpy:131
+    old "Хочу извиниться. Я бессовестно подглядывал за тобой утром..."
+    new ""
+
+    # game/core/02init.rpy:131
+    old "Я пришёл извиниться за то, что было утром. Я больше не буду."
+    new ""
+
+    # game/core/02init.rpy:131
+    old "Я снова подглядывал. Извини."
+    new ""
+
+    # game/core/02init.rpy:131
+    old "Ну давай, можешь меня наказывать..."
+    new ""
+
+    # game/core/02init.rpy:131
+    old "Я выбираю наказание от тебя..."
+    new ""
+
+    # game/core/02init.rpy:243
+    old "У меня для тебя подарок {i}(Кожаный костюм){/i}"
+    new ""
+
+    # game/core/02init.rpy:243
+    old "У меня для тебя подарок {i}(Плётка){/i}"
+    new ""
+

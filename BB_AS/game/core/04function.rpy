@@ -1370,3 +1370,13 @@ init python:
                     elif cur_album is None:
                         cur_album = id_alb
                         break
+
+
+    def are_hints(ps, st):
+
+        for ht in poss_dict[ps][1][st].hints:
+            if ht.met():
+                return True
+
+        return False
+        

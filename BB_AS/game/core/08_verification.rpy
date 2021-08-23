@@ -168,3 +168,17 @@ init python:
             return rez
         else:
             return False
+
+
+    def get_alice_shower_peeping_stage():
+
+        if 0 < len(alice.sorry.give) < 4 or (not poss['risk'].used(0) and mgg.stealth > 20):
+            return 0
+
+        if len(alice.sorry.give) == 4 and 'sexbody2' not in alice.gifts:
+            return 1
+
+        if 'sexbody2' in alice.gifts:
+            return 2
+
+        return 0

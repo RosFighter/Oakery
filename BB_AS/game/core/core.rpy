@@ -7,6 +7,9 @@ label Waiting:
     $ renpy.block_rollback()
     $ renpy.dynamic('name_label')
 
+    # очистим стек возвратов
+    $ renpy.set_return_stack([])
+
     $ prevday = day
     $ prevtime = tm
 
@@ -369,8 +372,13 @@ label Noon:
 
 
 label NewWeek:
+    # в полночь с субботы на воскресение начинается новая неделя
     if 'kira' in chars:
         $ kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
+
+    if 'kira' in chars and not shower_schedule:
+        call update_shower_schedule from _call_update_shower_schedule
+
 
     if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0]):
         # отношения с Эриком по сёстрам определены
@@ -723,12 +731,16 @@ label after_load:
 
         call update_06_5 from _call_update_06_5         # фиксы до релиза
 
+        python:
+            for char in chars:
+                chars[char].reinit()
+
         # обновление расписаний
         call set_alice_schedule from _call_set_alice_schedule
-        call set_ann_schedule from _call_set_ann_schedule
-        call set_eric_schedule from _call_set_eric_schedule
-        call set_kira_schedule from _call_set_kira_schedule
-        call set_lisa_schedule from _call_set_lisa_schedule
+        call set_ann_schedule   from _call_set_ann_schedule
+        call set_eric_schedule  from _call_set_eric_schedule
+        call set_kira_schedule  from _call_set_kira_schedule
+        call set_lisa_schedule  from _call_set_lisa_schedule
         call set_olivia_shedule from _call_set_olivia_shedule_1
 
         # обновление списка предметов, одежды, возможностей

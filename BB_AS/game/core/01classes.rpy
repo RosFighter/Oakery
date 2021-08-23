@@ -314,6 +314,11 @@ init python:
         result  = None      # результат
         noted   = False     # нарушение требования замечено Максом
 
+        def __init__(self):
+            self.req    = None
+            self.result = None
+            self.noted  = False
+
         def reset(self):
             self.req    = None
             self.result = None
@@ -363,6 +368,7 @@ init python:
         smoke       = 0     # диалог во время курения
         ask_money   = 0     # просил денег
         sweets      = 0     # вручение сладости
+        mistress    = 0     # диалог о доминировании
 
         # состояния
         oiled    = 0    # намазана солнцезащитным кремом
@@ -491,6 +497,7 @@ init python:
         gifts       = None      # особые подарки
         private     = None      # доступно приватное наказание
         shower      = None      # откат по подглядыванию в душе. Стадии: 0-без ограничений, 1-мягкое ограничение, 2-спалился, жёсткое ограничение
+        mistress    = None      # доминирование
 
         def __init__(self):
             self.punpause   = Daily()
@@ -507,6 +514,7 @@ init python:
             self.gifts      = Daily()
             self.private    = Daily()
             self.shower     = Daily()
+            self.mistress   = Daily()
 
         def countdown(self, exceptions=[], only=[]):
             for attr in self.__dict__:
@@ -526,6 +534,8 @@ init python:
         def reinit(self):
             if self.shower is None:
                 self.shower = Daily()
+            if self.mistress is None:
+                self.mistress = Daily()
 
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
@@ -1040,6 +1050,7 @@ init python:
         noclub          = False     # в эту пятницу Алиса не идёт в клуб (ведёт блог в нижнем белье)
         cur_series      = 0         # 1/2 часть фильма, просматриваемого с Лизой
         cur_movies      = []        # список (выбранный фильм, фильм Кошмаров, фильм Пятницы)
+        mistres_pun     = False     # в качестве наказания за подглядывания теперь доминирует Алиса
 
         # счетчики
         breakfast       = 0         # завтраков
@@ -1054,13 +1065,25 @@ init python:
             self.eric_photo2        = 0
             self.eric_fee           = 0
             self.voy_stage          = -1
+            self.ladder             = 0
+            self.credit             = 0
             self.bonus_from_eric    = []
+            self.lisa_fd            = 0
             self.how_to_kiss        = []
             self.lisa_sexed         = -1
             self.l_ab_sexed         = False
-            self.ladder             = 0
-            self.credit             = 0
             self.warning            = False
+            self.back_shop          = 0
+
+            self.stopkiss           = 0
+            self.add_training       = False
+            self.about_earn         = False
+            self.hint_cources       = False
+            self.film_punish        = False
+            self.noclub             = False
+            self.cur_series         = 0
+            self.cur_movies         = []
+            self.mistres_pun        = False
 
             self.breakfast          = 0
             self.dinner             = 0
@@ -1368,8 +1391,8 @@ init python:
         Kira_arrival    = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([GetWeekday(day)==6, day>=18, flags.breakfast==12, flags.dinner==17])", cut=True)
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
-        MorningWood1    = CutEvent('06:30', label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].st()<4])", sleep=True, cut=True)
-        MorningWood2    = CutEvent('06:30', label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
+        MorningWood1    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].st()<4])", sleep=True, cut=True)
+        MorningWood2    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
         Eric_af_dinner  = CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day<12 or flags.dinner==11')

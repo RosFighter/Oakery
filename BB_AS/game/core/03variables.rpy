@@ -15,6 +15,9 @@ default persone_button1 = None
 default persone_button2 = None
 default persone_button3 = None
 default olivia_night_visits = False
+default shower_schedule = 0
+
+default start_version = config.version
 
 default ctd = Countdown(5, '')  #{'time_left':4.9, 'timer_range':4.9, 'timer_jump':''}
 

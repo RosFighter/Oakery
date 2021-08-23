@@ -41,6 +41,7 @@ label Sleep:
         "{i}спать до утра{/i}":
             $ alarm_time = '08:00'
     $ renpy.show('Max sleep-night '+pose3_3)
+    $ renpy.show('FG Max sleep-night '+pose3_3)
     Max_19 "Как же в этом доме хорошо..."
 
     $ number_autosave += 1
@@ -55,6 +56,7 @@ label Wearied:
     # прождали все доступное время - спим до восьми
     scene BG char Max bed-night-01
     $ renpy.show('Max sleep-night '+pose3_1)
+    $ renpy.show('FG Max sleep-night '+pose3_1)
     menu:
         Max_10 "{i}( Моя голова уже совсем не соображает, нужно ложиться спать... ){/i}"
         "{i}спать до утра{/i}":
@@ -81,6 +83,7 @@ label LittleEnergy:
                 $ renpy.show('Max nap '+pose3_1+mgg.dress)
             else:
                 $ renpy.show('Max sleep-night '+pose3_1)
+                $ renpy.show('FG Max sleep-night '+pose3_1)
             Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
             # $ NewSaveName()
@@ -135,6 +138,7 @@ label Alarm:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
     $ renpy.show('Max sleep-night '+pose3_2)
+    $ renpy.show('FG Max sleep-night '+pose3_2)
     Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
     $ renpy.loadsave.force_autosave(True, True)

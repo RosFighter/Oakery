@@ -8,15 +8,13 @@ label set_alice_schedule:
         Schedule((1, 2, 3, 4, 5, 6, 0), '0:0', '0:59', 'bath', "принимает ванну", 'house', 3, 'alice_bath', enabletalk=False, glow=120),
         Schedule((1, 2, 3, 4, 5, 6, 0), '1:0', '5:59', 'sleep', "спит (ночь)", 'house', 1, 'alice_sleep_night', enabletalk=False, glow=105),
         Schedule((2, 3, 5, 6, 0), '6:0', '7:59', 'sleep', "спит (утро)", 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
-        Schedule((1, 4), '6:0', '6:59', 'sleep', "спит (утро)", 'house', 1, 'alice_sleep_morning', variable="not 'kira' in chars", enabletalk=False, glow=110),
-        Schedule((1, 4), '6:0', '6:59', 'sleep', _("спит (утро)"), 'house', 1, 'alice_sleep_morning', variable="'kira' in chars", enabletalk=False, glow=110),
-        Schedule((1, 4), '7:0', '7:59', 'sleep', "спит (утро)", 'house', 1, 'alice_sleep_morning', variable="not 'kira' in chars", enabletalk=False, glow=110),
+        Schedule((1, 4), '6:0', '6:59', 'sleep', "спит (утро)", 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
+        Schedule((1, 4), '7:0', '7:59', 'sleep', "спит (утро)", 'house', 1, 'alice_sleep_morning', variable="'kira' not in chars", enabletalk=False, glow=110),
         Schedule((1, 4), '7:0', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'alice_lisa_shower', variable="'kira' in chars", enabletalk=False, glow=135),
-        Schedule((1, 4), '8:0', '8:59', 'shower', "принимает душ", 'house', 3, 'alice_shower', variable="not 'kira' in chars", enabletalk=False, glow=120),
+        Schedule((1, 4), '8:0', '8:59', 'shower', "принимает душ", 'house', 3, 'alice_shower', variable="'kira' not in chars", enabletalk=False, glow=120),
         Schedule((1, 4), '8:0', '8:59', 'resting', _("в своей комнате"), 'house', 1, 'alice_rest_morning', variable="'kira' in chars", talklabel='alice_morning_closer', glow=110),
-        # одна в душе
         Schedule((2, 5), '8:0', '8:59', 'shower', "принимает душ", 'house', 3, 'alice_shower', enabletalk=False, glow=120),
-        Schedule((3, 6, 0), '8:0', '8:59', 'shower', "принимает душ", 'house', 3, 'alice_shower', variable="not 'kira' in chars", enabletalk=False, glow=120),
+        Schedule((3, 6, 0), '8:0', '8:59', 'shower', "принимает душ", 'house', 3, 'alice_shower', variable="'kira' not in chars", enabletalk=False, glow=120),
         Schedule((3, 6, 0), '8:0', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_alice_shower', variable="'kira' in chars", enabletalk=False, glow=140),
         Schedule((0, 1, 2, 3, 4, 5, 6), '9:0', '9:59', 'breakfast', "семейный завтрак", 'house', 5, 'breakfast', enabletalk=False, glow=105),
         Schedule((1, 2, 3, 4, 5), '10:0', '10:59', 'resting', "в своей комнате", 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
@@ -26,7 +24,7 @@ label set_alice_schedule:
         Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'dishes', "моет посуду", 'house', 4, 'alice_dishes', variable='not dishes_washed', talklabel='alice_dishes_closer'),
         Schedule((1, 2, 3, 4, 5), '11:0', '11:59', 'read', "читает на веранде", 'house', 5, 'alice_read', talklabel='alice_read_closer', variable='dishes_washed', glow=110),
         Schedule((0,), '11:0', '11:59', 'dressed', "одевается к подруге", 'house', 1, 'alice_dressed_friend', enabletalk=False, glow=110),
-        Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'sun', "загорает", 'house', 6, 'alice_sun', variable="not 'kira' in chars", glow=110),
+        Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'sun', "загорает", 'house', 6, 'alice_sun', variable="'kira' not in chars", glow=110),
         Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', variable="'kira' in chars", talklabel='alice_read_closer', glow=110),
         Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "smoke", _("курит"), "house", 6, "alice_smoke", glow=105, variable="day>1 and alice.dcv.special.done"),
         Schedule((1, 2, 3, 4, 5), "13:0", "13:29", "swim", _("в бассейне"), "house", 6, "alice_swim", glow=105, variable="not (day>1 and alice.dcv.special.done)"),
@@ -49,10 +47,6 @@ label set_alice_schedule:
     if flags.dinner >= 11:
         # после второй субботы Алиса может посещать ночной клуб
         call alice_init_nightclub from _call_alice_init_nightclub_2
-
-    # if 'kira' in chars:
-    #     # Приехала Кира
-    #     call alice_after_arrival_kira from _call_alice_after_arrival_kira
 
     if 'black_linderie' in alice.gifts:
         # Макс подарил Алисе черное нижнее бельё
@@ -78,17 +72,6 @@ label alice_init_nightclub:
         Schedule((6,), '3:0', '3:59', 'return', 'возвращение из ночного клуба (с Кирой)', 'house', 6, 'return_from_club', variable="not flags.noclub and 'kira' in chars", enabletalk=False, glow=130),
         )
     return
-
-# после приезда Киры у Алисы меняется расписание душа и чтения
-# label alice_after_arrival_kira:
-#     $ alice.add_schedule(
-#         Schedule((1, 4), '6:0', '6:59', 'sleep', _("спит (утро)"), 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
-#         Schedule((1, 4), '7:00', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'alice_lisa_shower', enabletalk=False, glow=135),
-#         Schedule((1, 4), '8:0', '8:59', 'resting', _("в своей комнате"), 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
-#         Schedule((3, 6, 0), '8:00', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
-#         Schedule((1, 2, 3, 4, 5), '12:0', '12:59', 'read', _("читает на веранде"), 'house', 5, 'alice_read', talklabel='alice_read_closer', glow=110),
-#         )
-#     return
 
 # теперь Алиса начинает вести блог в нижнем белье
 label alice_can_blog_in_underwear:
@@ -213,6 +196,8 @@ label set_kira_schedule:
     $ kira.add_schedule(
         Schedule((0, 1, 3, 4), '0:00', '2:59', 'studio', 'в студии'),
         Schedule((2, 5), '0:00', '1:59', 'studio', 'в студии'),
+        Schedule((6,), '0:00', '2:59', 'None', variable="flags.noclub"),
+        Schedule((6,), '0:00', '2:59', 'nightclub', 'в ночном клубе с Алисой', variable="not flags.noclub"),
         # Эрик пользует Киру
         Schedule((2, 5), '2:00', '2:29', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', variable="not wcv.catch_Kira.stage", enabletalk=False, glow=125),
         Schedule((2, 5), '2:00', '2:29', 'bath',  'Кира делает Эрику минет', 'house', 3, 'kira_bath_with_eric', variable="wcv.catch_Kira.stage and not flags.eric_jerk", enabletalk=False, glow=140),
@@ -220,14 +205,12 @@ label set_kira_schedule:
         # конец блока
         Schedule((2, 5), '2:30', '2:59', 'bath',  'принимает ванну', 'house', 3, 'kira_bath', enabletalk=False, glow=125),
         Schedule((1, 4), '3:00', '3:59', 'night_swim', 'ночное купание', 'house', 6, 'kira_night_swim', enabletalk=False, glow=125),
-        Schedule((2, 5), '3:00', '5:59', 'sleep', 'спит в гостиной (ночь)', 'house', 4, 'kira_sleep_night', enabletalk=False, glow=110),
-        Schedule((2, 5), '6:00', '6:59', 'sleep', 'спит в гостиной (утро)', 'house', 4, 'kira_sleep_morning', enabletalk=False, glow=115),
-        Schedule((6,), '0:00', '2:59', 'None', variable="flags.noclub"),
-        Schedule((6,), '0:00', '2:59', 'nightclub', 'в ночном клубе с Алисой', variable="not flags.noclub"),
+        Schedule((0, 3), '3:00', '3:59', 'night_tv', 'ночной просмотр порно', 'house', 4, 'kira_night_tv', enabletalk=False, glow=110),
         Schedule((6,), '3:00', '3:59', 'None', variable="flags.noclub"),
         Schedule((6,), '3:00', '3:59', 'return', 'возвращение из ночного клуба', 'house', 6, 'return_from_club', variable="not flags.noclub", enabletalk=False, glow=130),
-        Schedule((0, 3), '3:00', '3:59', 'night_tv', 'ночной просмотр порно', 'house', 4, 'kira_night_tv', enabletalk=False, glow=110),
+        Schedule((2, 5), '3:00', '5:59', 'sleep', 'спит в гостиной (ночь)', 'house', 4, 'kira_sleep_night', enabletalk=False, glow=110),
         Schedule((0, 1, 3, 4, 6), '4:00', '5:59', 'sleep', 'спит в гостиной (ночь)', 'house', 4, 'kira_sleep_night', enabletalk=False, glow=110),
+        Schedule((2, 5), '6:00', '6:59', 'sleep', 'спит в гостиной (утро)', 'house', 4, 'kira_sleep_morning', enabletalk=False, glow=115),
         Schedule((0, 1, 3, 4, 6), '6:00', '7:59', 'sleep', 'спит в гостиной (утро)', 'house', 4, 'kira_sleep_morning', enabletalk=False, glow=115),
         Schedule((1, 4), '8:00', '8:59', 'shower', 'одна в душе', 'house', 3, 'kira_shower', enabletalk=False, glow=120),
         Schedule((2, 5), '7:00', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'kira_lisa_shower', enabletalk=False, glow=135),
@@ -334,5 +317,38 @@ label set_olivia_shedule:
         Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=130),
         Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
         )
+
+    return
+
+################################################################################
+################################################################################
+
+label update_shower_schedule:
+
+    $ alice.add_schedule(
+        Schedule((2, 5, 6), '6:0', '7:59', 'sleep', 'спит (утро)', 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
+        Schedule((1, 3, 4, 0), '6:0', '6:59', 'sleep', 'спит (утро)', 'house', 1, 'alice_sleep_morning', enabletalk=False, glow=110),
+        Schedule((1, 4), '7:0', '7:59', 'shower', 'в душе с Лизой', 'house', 3, 'alice_lisa_shower', enabletalk=False, glow=135),
+        Schedule((3, 0), '7:0', '7:59', 'shower', 'одна в душе', 'house', 3, 'alice_shower', enabletalk=False, glow=120),
+        Schedule((1, 3, 4, 0), '8:0', '8:59', 'resting', 'в своей комнате', 'house', 1, 'alice_rest_morning', talklabel='alice_morning_closer', glow=110),
+        Schedule((2, 5, 6), '8:0', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
+        )
+
+    $ lisa.add_schedule(
+        Schedule((2, 5, 6), '7:00', '7:59', 'shower', 'одна в душе', 'house', 3, 'lisa_shower', enabletalk=False, glow=120),
+        Schedule((1, 4), '7:00', '7:59', 'shower', 'в душе с Алисой', 'house', 3, 'alice_lisa_shower', enabletalk=False, glow=135),
+        Schedule((0, 3), '7:0', '7:59', 'read', 'читает', 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
+        Schedule((3, 0), '8:00', '8:59', 'shower', 'в душе с Кирой', 'house', 3, 'kira_lisa_shower', enabletalk=False, glow=135),
+        Schedule((1, 2, 4, 5, 6), '8:0', '8:59', 'read', 'читает', 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
+        )
+
+    $ kira.add_schedule(
+        Schedule((0, 1, 2, 3, 4, 5, 6), '6:00', '7:59', 'sleep', 'спит в гостиной (утро)', 'house', 4, 'kira_sleep_morning', enabletalk=False, glow=115),
+        Schedule((1, 4), '8:00', '8:59', 'shower', 'одна в душе', 'house', 3, 'kira_shower', enabletalk=False, glow=120),
+        Schedule((2, 5, 6), '8:00', '8:59', 'shower', 'в душе с Алисой', 'house', 3, 'kira_alice_shower', enabletalk=False, glow=140),
+        Schedule((3, 0), '8:00', '8:59', 'shower', 'в душе с Лизой', 'house', 3, 'kira_lisa_shower', enabletalk=False, glow=135),
+        )
+
+    $ shower_schedule = 1
 
     return

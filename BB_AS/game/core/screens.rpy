@@ -1287,11 +1287,13 @@ screen menu_opportunity():
                                         elif view_stage in poss_dict[CurPoss][4]:   # плохая концовка
                                             text _("{i}{b}Провал.{/b} К сожалению, Ваш выбор привел к неудачному финалу, блокирующему дальнейшее развитие \"возможности\"{/i}") size 24 color red
                                         elif view_stage==max([i for i, st in enumerate(poss[CurPoss].stages) if st]):
-                                            if ShowHint:
+                                            if ShowHint and are_hints(CurPoss, view_stage):
                                                 text _("Подсказка:") size 24 color gui.accent_color
                                                 for ht in poss_dict[CurPoss][1][view_stage].hints:
                                                     if ht.met():
                                                         text renpy.config.say_menu_text_filter(renpy.translate_string(ht.hint)) size 20
+                                            elif not are_hints(CurPoss, view_stage):
+                                                $ ShowBtnHint = False
                                             else:
                                                 $ ShowBtnHint = True
                                         else:
