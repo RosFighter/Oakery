@@ -1504,15 +1504,15 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лучше придержать деньги на развитие блога Алисы, а значит потребуются успехи в возможности \"Блог\"..."
-    new ""
+    new "Es ist besser, das Geld zu behalten, um Alices Blog weiter auszubauen, was wiederum Erfolge für einen \"Blog\" bedeuten kann..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно снова попасться Алисе на глаза, когда она принимает душ..."
-    new ""
+    new "Ich muss Alice noch einmal beobachten, wenn sie duschen geht..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса в очередной раз поймала меня на подглядывании за ней, а когда я пришёл извиняться, попросила купить ей кожаный костюм для ролевых игр. Во-первых, это удовольствие будет подороже остальных моих покупок! А во-вторых, с кем это она собирается играть? Она намекнула, что есть с кем. Если это будет происходить у нас дома, то я хочу оказаться в первых рядах на подглядывание за этим. Но сперва этот самый кожаный костюм надо купить и желательно быстрее, чем за четыре дня."
-    new ""
+    new "Alice hat mich wieder einmal dabei erwischt, wie ich sie beobachtet habe, und als ich mich entschuldigen wollte, bat sie mich, ihr ein Lederkostüm für Rollenspiele zu kaufen. Erstens wäre es teurer als meine anderen Einkäufe! Und zweitens: Mit wem soll sie spielen? Sie hat angedeutet, dass es jemanden gibt. Wenn es bei uns zu Hause stattfindet, möchte ich in der ersten Reihe sitzen und alles hautnah miterleben. Aber zuerst muss diese Lederkombi gekauft werden, und zwar möglichst in weniger als vier Tagen."
 
     # game/core/09_opportunities.rpy:4
     old "По-моему Алиса начинает наглеть. Не то что примерять при мне этот костюмчик не хочет, а даже просто показаться в нём. Интересно, сколько ещё всего она попросит ей купить, прежде чем поймёт, что подглядывать за ней я не перестану. Или она просто будет просить вещи всё дороже и дороже? Посмотрим..."

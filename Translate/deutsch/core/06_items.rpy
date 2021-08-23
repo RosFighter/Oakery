@@ -52,17 +52,17 @@ translate deutsch strings:
 
     # game/core/06_items.rpy:2
     old "ЧЁРНЫЙ КОЖАНЫЙ КОСТЮМ ДЛЯ РОЛЕВЫХ ИГР"
-    new ""
+    new "SCHWARZES LEDER-KOSTÜM FÜR ROLLENSPIELE"
 
     # game/core/06_items.rpy:2
     old "Женский сексуальный комплект из натуральной кожи чёрного цвета. Топ с воротничком и коротенькие шортики, которые застёгиваются на стильные заклёпки."
-    new ""
+    new "Sexy schwarzes Lederset für Frauen. Das Oberteil mit Kragen und kurzen Shorts, die mit stilvollen Nieten besetzt sind."
 
     # game/core/06_items.rpy:2
     old "ЧЁРНЫЙ КОЖАНЫЙ СТЕК"
-    new ""
+    new "SCHWARZE LEDERPEITSCHE"
 
     # game/core/06_items.rpy:2
     old "Стек освежит и разнообразит ваши отношения. Шлепок на конце девайса воспитает дерзкого и непослушного партнера. Секс-игрушка откроет просторы истинного БДСМ."
-    new ""
+    new "Die Peitsche wird Ihre Beziehung auffrischen und abwechslungsreich gestalten. Der Einsatz des Geräts sorgt dafür, dass ein trotziger und frecher Partner den Hintern versohlt bekommt. Ein Sexspielzeug, das das Reich des echten BDSM eröffnet."
 
