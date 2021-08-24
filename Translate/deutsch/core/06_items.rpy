@@ -60,9 +60,9 @@ translate deutsch strings:
 
     # game/core/06_items.rpy:2
     old "ЧЁРНЫЙ КОЖАНЫЙ СТЕК"
-    new "SCHWARZE LEDERPEITSCHE"
+    new "SCHWARZE REITGERTE"
 
     # game/core/06_items.rpy:2
     old "Стек освежит и разнообразит ваши отношения. Шлепок на конце девайса воспитает дерзкого и непослушного партнера. Секс-игрушка откроет просторы истинного БДСМ."
-    new "Die Peitsche wird Ihre Beziehung auffrischen und abwechslungsreich gestalten. Der Einsatz des Geräts sorgt dafür, dass ein trotziger und frecher Partner den Hintern versohlt bekommt. Ein Sexspielzeug, das das Reich des echten BDSM eröffnet."
+    new "Die Reitgerte wird Ihre Beziehung auffrischen und abwechslungsreich gestalten. Der Einsatz des Geräts sorgt dafür, dass ein trotziger und frecher Partner den Hintern versohlt bekommt. Ein Sexspielzeug, das das Reich des echten BDSM eröffnet."
 

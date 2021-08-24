@@ -10222,41 +10222,41 @@ translate deutsch strings:
 translate deutsch alice_nopants_massage_66d83013:
 
     # Alice_05 "Ты только там сильно не заглядывайся, куда не нужно! Я только сейчас поняла, что ты меня подловил со своим уговором не носить трусики. Лучше скорее продолжай массаж, пока я не расхотела..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Sieh nur nicht zu sehr dorthin, wo du nicht hinsehen sollst! Ich habe gerade erst gemerkt, dass du mich mit deinem Vorwand, kein Höschen zu tragen, erwischt hast. Fang lieber mit der Massage an, bevor ich keine Lust mehr habe..." nointeract
 
 # game/dialogues/alicetalk.rpy:1541
 translate deutsch alice_nopants_massage_ce8910af:
 
     # Max_04 "{i}( Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко и ничем на этот раз не прикрыта... ){/i}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{i}( Alice scheint es wirklich zu gefallen! Sie wichst mich ständig mit ihrem Fuß... Warum streichle ich nicht ihre Muschi, sie ist so nah und diesmal völlig ungeschützt... ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1555
 translate deutsch alice_nopants_massage_a12d135b:
 
     # Max_02 "{i}( Ухх... Алиса начала сама тереться об мои пальцы! Теперь, она уже не хочет останавливаться... ){/i}"
-    Max_02 ""
+    Max_02 "{i}( Hmm... Alice hat angefangen, sich an meinen Fingern zu reiben! Jetzt will sie nicht mehr aufhören... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1565
 translate deutsch alice_nopants_massage_a11e518f:
 
     # Max_05 "{i}( Алиса так жарко и классно трётся об мои пальцы своей киской! Её киска такая мокренькая от возбуждения, что никакого масла для массажа не надо... ){/i}"
-    Max_05 ""
+    Max_05 "{i}( Alice reibt ihre Muschi so heiß und geil an meinen Fingern! Ihre Muschi ist so naß vor Erregung, daß man gar kein Massageöl braucht... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1601
 translate deutsch alice_nopants_massage_ed79bd1c:
 
     # Max_02 "Ты правда хочешь, чтобы это было быстро?"
-    Max_02 ""
+    Max_02 "Willst du wirklich, dass es schnell geht?"
 
 translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:1465
     old "{i}стянуть джинсы до конца{/i}"
-    new ""
+    new "{i}die Jeans komplett herunterziehen{/i}"
 
     # game/dialogues/alicetalk.rpy:1491
     old "{i}продолжить массаж{/i}"
-    new ""
+    new "{i}Massage fortsetzen{/i}"
 
 # TODO: Translation updated at 2021-08-23 18:55
 
@@ -10264,235 +10264,235 @@ translate deutsch strings:
 translate deutsch AliceTalkStart_1b0d0df7:
 
     # Max_07 "{i}( Алиса сейчас как раз должна отходить от конфеты с ликёром, так что лучше оставить её на сегодня в покое... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Alice ist gerade dabei, sich von dem Likörbonbon zu erholen, also ist es am besten, sie für heute in Ruhe zu lassen... ){/i}"
 
 # game/dialogues/alicetalk.rpy:16
 translate deutsch AliceTalkStart_ad6170a7:
 
     # Max_09 "{i}( Впечатлений от времяпрепровождения с Алисой мне и в её комнате хватило. Сегодня к ней лучше больше не лезть... ){/i}"
-    Max_09 ""
+    Max_09 "{i}( Ich hatte genug davon, Zeit mit Alice in ihrem Zimmer zu verbringen. Ich gehe heute besser nicht mehr in ihre Nähe... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1115
 translate deutsch alice_talk_tv_2cedd5bd:
 
     # Alice_12 "Вот так вот просто? Как будто утром было всё так, как должно быть! Где извинения, Макс?!"
-    Alice_12 ""
+    Alice_12 "Einfach so? Heute Morgen war alles so, wie es sein sollte! Wo bleibt die Entschuldigung, Max?!"
 
 # game/dialogues/alicetalk.rpy:1116
 translate deutsch alice_talk_tv_4bea1b3e:
 
     # Max_07 "Извини, я больше так не буду."
-    Max_07 ""
+    Max_07 "Tut mir leid, ich werde es nicht wieder tun."
 
 # game/dialogues/alicetalk.rpy:3052
 translate deutsch Alice_sorry_18b50308:
 
     # Alice_05 "Это, конечно, очень здорово, Макс. Дай угадаю... Сейчас ты пообещаешь купить мне сладостей, чтобы мама не узнала, какой ты извращенец, верно?"
-    Alice_05 ""
+    Alice_05 "Das ist wirklich sehr cool, Max. Laß mich raten... Jetzt versprichst du mir, dass du mir Süßigkeiten kaufst, damit Mom nicht herausfindet, was für ein Perverser du bist, richtig?"
 
 # game/dialogues/alicetalk.rpy:3053
 translate deutsch Alice_sorry_d47fbc3e:
 
     # Max_01 "Верно. Но ты, видимо, хочешь чего-то другого?"
-    Max_01 ""
+    Max_01 "Das ist richtig. Aber du willst wahrscheinlich etwas anderes, nicht wahr?"
 
 # game/dialogues/alicetalk.rpy:3054
 translate deutsch Alice_sorry_5d6b678a:
 
     # Alice_01 "О да, Макс! У меня есть кое-какие мыслишки, как отучить тебя от этих \"случайных\" подглядываний за мной."
-    Alice_01 ""
+    Alice_01 "Oh, ja, Max! Ich habe ein paar Ideen, wie ich dir diese \"zufälligen\" Ausblicke auf mich abgewöhnen kann"
 
 # game/dialogues/alicetalk.rpy:3055
 translate deutsch Alice_sorry_ad1df19d:
 
     # Max_04 "А может я лучше сам себя отучу..."
-    Max_04 ""
+    Max_04 "Oder vielleicht sollte ich mir das lieber abgewöhnen..."
 
 # game/dialogues/alicetalk.rpy:3056
 translate deutsch Alice_sorry_6ce5aa94:
 
     # Alice_02 "Ну уж нет! Макс, ты что?! У нас здесь очень тяжёлый случай - хронический вуайеризм! Но не переживай, уж я возьмусь за твоё лечение... Но это позже... Сейчас, мне нужно кое-что другое."
-    Alice_02 ""
+    Alice_02 "Unmöglich! Max, was soll das?! Wir haben hier einen sehr schweren Fall von chronischem Voyeurismus. Aber keine Sorge, ich kümmere mich um dich... später... Im Moment brauche ich etwas anderes."
 
 # game/dialogues/alicetalk.rpy:3057
 translate deutsch Alice_sorry_28d4bb71:
 
     # Max_07 "Другое? И что же?"
-    Max_07 ""
+    Max_07 "Später? Was meinst du damit?"
 
 # game/dialogues/alicetalk.rpy:3058
 translate deutsch Alice_sorry_2f0085b5:
 
     # Alice_05 "Я тут подумала, что в этот раз стильный кожаный костюмчик вполне мог бы спасти твою задницу от маминого наказания. Их ещё используют в ролевых играх..."
-    Alice_05 ""
+    Alice_05 "Ich habe mir gedacht, dass dieses Mal ein schicker Lederanzug deinen Arsch vor der Strafe von Mom retten könnte. So einen, der auch in Rollenspielen verwendet wird..."
 
 # game/dialogues/alicetalk.rpy:3059
 translate deutsch Alice_sorry_a3de421e:
 
     # Max_08 "Ничего себе запросики! И зачем тебе такой? Перед кем ты собираешься его демонстрировать?"
-    Max_08 ""
+    Max_08 "Wie lautet deine Forderung? Wozu brauchst du so ein Ding? Vor wem willst du damit angeben?"
 
 # game/dialogues/alicetalk.rpy:3060
 translate deutsch Alice_sorry_e0e237f3:
 
     # Alice_03 "А вот есть перед кем... Но это не твоё дело, Макс, кому я его продемонстрирую."
-    Alice_03 ""
+    Alice_03 "Es steht doch jemand vor mir... Aber es geht dich nichts an, Max, mit wem ich es mache."
 
 # game/dialogues/alicetalk.rpy:3061
 translate deutsch Alice_sorry_785271a6:
 
     # Max_02 "Ну, интересно же..."
-    Max_02 ""
+    Max_02 "Nun, das ist interessant..."
 
 # game/dialogues/alicetalk.rpy:3062
 translate deutsch Alice_sorry_be8e64f4:
 
     # Alice_07 "Не сомневаюсь! Наверняка уже во всю представляешь, как я его при тебе буду примерять, но не угадал."
-    Alice_07 ""
+    Alice_07 "Ich bin sicher, dass du das wirst! Du stellst dir sicher schon vor, wie ich es vor dir anprobiere, aber das passiert natürlich nicht."
 
 # game/dialogues/alicetalk.rpy:3063
 translate deutsch Alice_sorry_6943c4c1:
 
     # Max_09 "Эй, но так же не интересно!"
-    Max_09 ""
+    Max_09 "Hey, das macht aber keinen Spaß!"
 
 # game/dialogues/alicetalk.rpy:3064
 translate deutsch Alice_sorry_af83a90f:
 
     # Alice_16 "Это что вообще за недовольства?! Наверное, я погорячилась со свои заказом и тебя нужно просто отправить маме, которая отучит тебя подглядывать."
-    Alice_16 ""
+    Alice_16 "Was ist das für ein Verhalten?! Vielleicht habe ich zu viel verlangt und du musst einfach zu Mom geschickt werden, die dir beibringt, nicht zu spionieren."
 
 # game/dialogues/alicetalk.rpy:3065
 translate deutsch Alice_sorry_1951a195:
 
     # Max_08 "Э-э-э... Да ладно тебе! Чего ты сразу? Я же просто так... без задней мысли ляпнул..."
-    Max_08 ""
+    Max_08 "Äh... Ach, komm schon! Was ist denn so schlimm daran? Ich wollte nur... Ich habe nicht nachgedacht..."
 
 # game/dialogues/alicetalk.rpy:3066
 translate deutsch Alice_sorry_db18883b:
 
     # Alice_12 "Ну конечно, без задней, у тебя все мысли только \"передние\"... Думать надо, что говоришь, особенно когда находишься в таком шатком положении. Ну так что, принимаешь моё предложение?"
-    Alice_12 ""
+    Alice_12 "Natürlich kann man ohne \"Hintergedanken\" nur an das eine denken... Du solltest vorsichtig sein mit dem, was du sagst, vor allem, wenn du dich in einer so prekären Lage befindest. Nimmst du mein Angebot an?"
 
 # game/dialogues/alicetalk.rpy:3067
 translate deutsch Alice_sorry_8e8113ab:
 
     # Max_09 "Так-то да, принимаю, но..."
-    Max_09 ""
+    Max_09 "Ja, ich weiß, aber..."
 
 # game/dialogues/alicetalk.rpy:3068
 translate deutsch Alice_sorry_c6b0a949:
 
     # Alice_17 "Что, но?"
-    Alice_17 ""
+    Alice_17 "Was, aber?"
 
 # game/dialogues/alicetalk.rpy:3069
 translate deutsch Alice_sorry_fcfcdff9:
 
     # Max_10 "Но ведь это, наверняка, стоит очень дорого."
-    Max_10 ""
+    Max_10 "Es muss aber sehr teuer sein."
 
 # game/dialogues/alicetalk.rpy:3070
 translate deutsch Alice_sorry_11f015fc:
 
     # Alice_05 "Ну конечно, ведь всё имеет свою цену. Это только подглядывать за собственной сестрой и дрочить на неё в тихушку ничего не стоит!"
-    Alice_05 ""
+    Alice_05 "Natürlich hat alles seinen Preis. Es kostet dich nicht viel, wenn du deine eigene Schwester ausspionierst und dir heimlich auf sie einen runterholst!"
 
 # game/dialogues/alicetalk.rpy:3071
 translate deutsch Alice_sorry_00fd6771:
 
     # Max_08 "Эй... Я не дрочил!"
-    Max_08 ""
+    Max_08 "Hey... Ich habe mir keinen runtergeholt!"
 
 # game/dialogues/alicetalk.rpy:3072
 translate deutsch Alice_sorry_ed67e6da:
 
     # Alice_03 "Ага, давай рассказывай... Короче, это твои проблемы, где ты возьмёшь деньги. И не тормози, если не хочешь получить по заднице от мамы."
-    Alice_03 ""
+    Alice_03 "Ja, erzähl das mal wem anderes... Wie auch immer, es ist dein Problem, woher du das Geld bekommst. Und mach nicht zu langsam, wenn du nicht willst, dass Mom dich verprügelt."
 
 # game/dialogues/alicetalk.rpy:3073
 translate deutsch Alice_sorry_131a11d8:
 
     # Max_09 "Ладно... Я постараюсь."
-    Max_09 ""
+    Max_09 "Na ja... Ich werde es versuchen."
 
 # game/dialogues/alicetalk.rpy:3074
 translate deutsch Alice_sorry_b9be9b86:
 
     # Alice_01 "Да уж, постарайся. И не затягивай, я не буду ждать вечно. Если уложишься в четыре дня, то мама, так уж и быть, ничего не узнает."
-    Alice_01 ""
+    Alice_01 "Ja, gib dir mehr Mühe. Und lass dir nicht zu viel Zeit, ich werde nicht ewig warten. Wenn du es in vier Tagen schaffst, muss Mom nichts davon erfahren."
 
 # game/dialogues/alicetalk.rpy:3075
 translate deutsch Alice_sorry_d7920a5c:
 
     # Max_00 "Я понял..."
-    Max_00 ""
+    Max_00 "Ich verstehe..."
 
 # game/dialogues/alicetalk.rpy:3081
 translate deutsch Alice_sorry_0b2bc12c:
 
     # Alice_05 "Да неужели?! И что, хочешь снова, как всегда, откупиться?"
-    Alice_05 ""
+    Alice_05 "Ach, wirklich?! Und jetzt, willst du mich wieder bestechen, wie du es immer tust?"
 
 # game/dialogues/alicetalk.rpy:3082
 translate deutsch Alice_sorry_5668ec1c:
 
     # Max_01 "Ну-у... да... Мне как, бежать за сладостями или, как в тот раз, тебе нужно что-то другое?"
-    Max_01 ""
+    Max_01 "Na ja... Ja... Willst du, dass ich dir Süßigkeiten besorge, oder willst du, wie beim letzten Mal, etwas anderes?"
 
 # game/dialogues/alicetalk.rpy:3083
 translate deutsch Alice_sorry_de7928c4:
 
     # Alice_02 "Ты проницателен как никогда, Макс, именно другое..."
-    Alice_02 ""
+    Alice_02 "Du bist so scharfsinnig, Max, das ist genau die richtige Antwort..."
 
 # game/dialogues/alicetalk.rpy:3084
 translate deutsch Alice_sorry_00884ff2:
 
     # Max_04 "И что же это?"
-    Max_04 ""
+    Max_04 "Und was soll es sein?"
 
 # game/dialogues/alicetalk.rpy:3085
 translate deutsch Alice_sorry_6f11d57e:
 
     # Alice_01 "Плётка!"
-    Alice_01 ""
+    Alice_01 "Eine Reitgerte!"
 
 # game/dialogues/alicetalk.rpy:3086
 translate deutsch Alice_sorry_34a7cc2b:
 
     # Max_08 "Что? Плётка?! Я не ослышался?"
-    Max_08 ""
+    Max_08 "Was? Eine Reitgerte?! Habe ich richtig gehört?"
 
 # game/dialogues/alicetalk.rpy:3087
 translate deutsch Alice_sorry_161ef843:
 
     # Alice_03 "Нет-нет, всё верно - мне нужна плётка. Она вроде стеком называется. Ну знаешь, которой лошадок подгоняют."
-    Alice_03 ""
+    Alice_03 "Ja-ja, das ist schon richtig - ich will eine Reitgerte. Ich glaube, man nennt so etwas einen Stack. Du weißt schon, das Ding, mit dem man Pferde antreibt."
 
 # game/dialogues/alicetalk.rpy:3088
 translate deutsch Alice_sorry_e33f5b76:
 
     # Max_09 "Я стесняюсь спросить, а кого ты собираешься ей подгонять?"
-    Max_09 ""
+    Max_09 "Es ist mir peinlich zu fragen: Wer wird sie eigentlich bekommen?"
 
 # game/dialogues/alicetalk.rpy:3089
 translate deutsch Alice_sorry_a9ff7b55:
 
     # Alice_05 "Тебя, Макс, кого же ещё!"
-    Alice_05 ""
+    Alice_05 "Du, Max, wer sonst!"
 
 # game/dialogues/alicetalk.rpy:3090
 translate deutsch Alice_sorry_859ed5bf:
 
     # Max_10 "Э-э-э... А серьёзно?"
-    Max_10 ""
+    Max_10 "Ähm ... Ernsthaft?"
 
 # game/dialogues/alicetalk.rpy:3091
 translate deutsch Alice_sorry_a1382b76:
 
     # Alice_12 "А я как раз серьёзно. Меня уже достали твои подглядывания! Может быть теперь ты подумаешь о последствиях, прежде чем засунешь свой длинный нос ко мне в ванную комнату."
-    Alice_12 ""
+    Alice_12 "Ich meine es ernst. Ich habe die Nase voll von deinem Geschnüffel! Vielleicht denkst du jetzt über die Konsequenzen nach, bevor du deine lange Nase in mein Badezimmer steckst."
 
 # game/dialogues/alicetalk.rpy:3092
 translate deutsch Alice_sorry_3407ba3a:
@@ -10828,7 +10828,7 @@ translate deutsch alice_mistress_0_878ce08d:
 translate deutsch alice_mistress_0_61935734:
 
     # Max_09 "{i}( Хм... Меня начинают терзать смутные сомнения, насчёт того, к чему она там готовится. Уж как-то подозрительно она улыбалась, когда я извинялся. ){/i}"
-    Max_09 ""
+    Max_09 "{i}(  ){/i}"
 
 # game/dialogues/alicetalk.rpy:5913
 translate deutsch alice_mistress_0_1bc7b6f4:
@@ -10840,7 +10840,7 @@ translate deutsch alice_mistress_0_1bc7b6f4:
 translate deutsch alice_mistress_0_2ebf3afc:
 
     # Max_05 "{i}( Ох, ничего себе, вот это вид! Она такая секси в этом костюмчике. А говорила, что не покажется мне в нём! ){/i}"
-    Max_05 ""
+    Max_05 "{i}(  ){/i}"
 
 # game/dialogues/alicetalk.rpy:5923
 translate deutsch alice_mistress_0_fc3717f4:
@@ -11062,13 +11062,13 @@ translate deutsch alice_mistress_0_ba9278ff:
 translate deutsch alice_mistress_0_bc563b4c:
 
     # Max_09 "{i}( Странный вечерок получился! С одной стороны, Алиса хотела мне пригрозить и напугать... Но с другой, а зачем так сексуально наряжаться передо мной было для этого? Может, проверяет меня?! ){/i}"
-    Max_09 ""
+    Max_09 "{i}(  ){/i}"
 
 # game/dialogues/alicetalk.rpy:5989
 translate deutsch alice_mistress_0_26e6c8cd:
 
     # Max_07 "{i}( Хорошо, что есть способ проверить, что у неё действительно на уме. Нужно продолжить за ней подглядывать, а когда она снова меня заметит, как-то умудриться уговорить её на конфету с ликёром перед этим... наказанием... ){/i}"
-    Max_07 ""
+    Max_07 "{i}(  ){/i}"
 
 # game/dialogues/alicetalk.rpy:6005
 translate deutsch alice_mistress_1_36b8bd42:
@@ -11104,7 +11104,7 @@ translate deutsch alice_mistress_1_1a71d79c:
 translate deutsch alice_mistress_1_4b63fc0c:
 
     # Max_09 "{i}( Надеюсь, всё обойдётся привязыванием и угрозами, как в прошлый раз. И зачем я ей этот стек купил?! ){/i}"
-    Max_09 ""
+    Max_09 "{i}(  ){/i}"
 
 # game/dialogues/alicetalk.rpy:6017
 translate deutsch alice_mistress_1_8b443cf9:

@@ -632,5 +632,5 @@ translate deutsch strings:
 
     # game/core/02init.rpy:243
     old "У меня для тебя подарок {i}(Плётка){/i}"
-    new "Ich habe ein Geschenk für dich {i}(Peitsche){/i}"
+    new "Ich habe ein Geschenk für dich {i}(Reitgerte){/i}"
 

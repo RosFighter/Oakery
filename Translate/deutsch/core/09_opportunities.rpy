@@ -1524,7 +1524,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Всё, в довесок к кожаному костюму пошли аксессуары... Алисе теперь нужна какая-то плётка, которой лошадей по заднице шлёпают, чтобы они резвее скакали. С радостью бы такой плёткой Алисину попку отшлёпал... Хотя, как знать, может однажды и удастся это сделать. Как же она сказала эта плётка называется? Стек, кажется... Нужно посмотреть, есть ли что-то такое в интернет магазине..."
-    new "Jetzt wurde der Lederanzug mit Accessoires ergänzt... Alice brauchte jetzt eine Art Peitsche, mit der man den Pferden auf den Hintern schlagen kann, damit sie schneller laufen. Damit würde ich Alice gerne den Hintern versohlen... Aber wer weiß, vielleicht schaffe ich das ja eines Tages auch noch. Wie nannte sie die Peitsche? Stack, glaube ich... Ich muss mal sehen, ob es so etwas online gibt..."
+    new "Jetzt wurde der Lederanzug mit Accessoires ergänzt... Alice brauchte jetzt eine Art Peitsche, mit der man den Pferden auf den Hintern schlagen kann, damit sie schneller laufen. Damit würde ich Alice gerne den Hintern versohlen... Aber wer weiß, vielleicht schaffe ich das ja eines Tages auch noch. Wie nannte sie die Peitsche? Reitgerte, glaube ich... Ich muss mal sehen, ob es so etwas online gibt..."
 
     # game/core/09_opportunities.rpy:4
     old "Фух, повезло не испытать на себе этот самый стек, который я подарил Алисе. Что же за БДСМ-игры она собирается затевать? И ещё более интересно, с кем?! Сейчас же я пока что могу лишь узнать, что ещё она попросит в дополнение к своему костюму... Ошейник... Зажимы на соски... Я уже ничему не удивлюсь."
@@ -1540,7 +1540,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот и все кожаные атрибуты, которые я покупал Алисе, в деле! Смотрится она возбуждающе... Правда, это немного омрачается тем, что она меня привязала к стулу и пыталась запугать. Признаюсь, неизвестность от того, что она вздумает сделать своей плёткой немного настораживала, но в целом это было забавно. Только вот не понятно, зачем нужно было так сексуально наряжаться, чтобы меня запугать?! Думаю, стоит проверить, что она будет делать, если я всё равно продолжу за ней подглядывать..."
-    new "So viel zu all den Lederutensilien, die ich Alice gekauft habe! Das sieht spannend aus... Zugegeben, es wird ein wenig von der Tatsache überschattet, dass sie mich an einen Stuhl gefesselt hat und versucht, mich einzuschüchtern. Ich gebe zu, dass es etwas beunruhigend war, nicht zu wissen, was sie mit ihrer Peitsche vorhatte, aber es hat insgesamt Spaß gemacht. Ich weiß nur nicht, warum sie sich so sexy anziehen musste, um mich einzuschüchtern! Ich denke, es ist es wert, herauszufinden, was sie tun wird, wenn ich sie weiter ausspioniere..."
+    new "So viel zu all den Lederutensilien, die ich Alice gekauft habe! Das sieht spannend aus... Zugegeben, es wird ein wenig von der Tatsache überschattet, dass sie mich an einen Stuhl gefesselt hat und versucht, mich einzuschüchtern. Ich gebe zu, dass es etwas beunruhigend war, nicht zu wissen, was sie mit ihrer Reitgerte vorhatte, aber es hat insgesamt Spaß gemacht. Ich weiß nur nicht, warum sie sich so sexy anziehen musste, um mich einzuschüchtern! Ich denke, es ist es wert, herauszufinden, was sie tun wird, wenn ich sie weiter ausspioniere..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно снова попасться Алисе на глаза, когда она принимает душ. Главное не забыть подойти к ней в этот же день, когда она смотрит ТВ..."
