@@ -1516,7 +1516,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "По-моему Алиса начинает наглеть. Не то что примерять при мне этот костюмчик не хочет, а даже просто показаться в нём. Интересно, сколько ещё всего она попросит ей купить, прежде чем поймёт, что подглядывать за ней я не перестану. Или она просто будет просить вещи всё дороже и дороже? Посмотрим..."
-    new ""
+    new "Ich glaube, Alice wird übermütig. Es ist nicht so, dass sie den Anzug nicht vor mir anprobieren will, sie will sich nicht einmal darin präsentieren. Ich frage mich, wie viele Dinge sie sich noch von mir nocht kaufen lassen wird, bevor sie merkt, dass ich nicht aufhöre, sie anzustarren. Oder wird sie einfach immer mehr und teurere Dinge verlangen? Wir werden sehen..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно узнать, будет ли Алиса всё больше наглеть с запросами..."
