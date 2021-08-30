@@ -625,35 +625,35 @@ translate english strings:
 
     # game/core/02init.rpy:131
     old "Извини, но я случайно увидел, как ты принимаешь душ..."
-    new ""
+    new "I'm sorry, but I happened to see you taking a shower..."
 
     # game/core/02init.rpy:131
     old "Хочу извиниться. Я бессовестно подглядывал за тобой утром..."
-    new ""
+    new "I want to apologize. I was shamelessly peeping at you this morning..."
 
     # game/core/02init.rpy:131
     old "Я пришёл извиниться за то, что было утром. Я больше не буду."
-    new ""
+    new "I came to apologize for this morning. I won't do it again."
 
     # game/core/02init.rpy:131
     old "Я снова подглядывал. Извини."
-    new ""
+    new "I was peeking again. Sorry."
 
     # game/core/02init.rpy:131
     old "Ну давай, можешь меня наказывать..."
-    new ""
+    new "Go ahead, you can punish me..."
 
     # game/core/02init.rpy:131
     old "Я выбираю наказание от тебя..."
-    new ""
+    new "I choose punishment from you..."
 
     # game/core/02init.rpy:243
     old "У меня для тебя подарок {i}(Кожаный костюм){/i}"
-    new ""
+    new "I have a present for you {i}(Leather suit){/i}"
 
     # game/core/02init.rpy:243
     old "У меня для тебя подарок {i}(Плётка){/i}"
-    new ""
+    new "I have a present for you {i}(Whip){/i}"
 
 # TODO: Translation updated at 2021-08-30 10:26
 
@@ -661,5 +661,4 @@ translate english strings:
 
     # game/core/02init.rpy:131
     old "Когда будет новая фотосессия, тётя Кира?"
-    new ""
-
+    new "When will there be a new photo shoot, Aunt Kira?"
