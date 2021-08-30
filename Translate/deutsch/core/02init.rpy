@@ -640,5 +640,5 @@ translate deutsch strings:
 
     # game/core/02init.rpy:131
     old "Когда будет новая фотосессия, тётя Кира?"
-    new ""
+    new "Wann wird es ein neues Fotoshooting geben, Tante Kira?"
 

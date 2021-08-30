@@ -1568,25 +1568,25 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Через несколько дней нужно будет поинтересоваться у Киры, когда будет новая фотосессия..."
-    new ""
+    new "Du musst Kira in ein paar Tagen fragen, wann es ein neues Fotoshooting geben wird..."
 
     # game/core/09_opportunities.rpy:4
     old "Интересно, что такое тётя Кира придумала, если ей важно, чтобы мы достаточно много развлекались по ночам, чтобы я выдержал эту новую фотосессию? И договориться ей с кем-то там нужно... О чём и с кем - неизвестно. Одни вопросы. И видимо, ответы я получу только на самой фотосессии..."
-    new ""
+    new "Ich frage mich, was sich Tante Kira dabei gedacht hat, wenn es für sie wichtig ist, dass wir nachts genug Spaß haben, um mich durch dieses neue Fotoshooting zu bringen? Und sie muss einen Deal mit jemandem machen... Worüber und mit wem, das weiß ich nicht. Nur Fragen. Und anscheinend werde ich die Antworten nicht vor dem Fotoshooting selbst bekommen..."
 
     # game/core/09_opportunities.rpy:4
     old "Кира сказала, что сама со мной поговорит, когда для фотосессии всё будет готово. Остаётся ждать..."
-    new ""
+    new "Kira sagte, sie würde selbst mit mir reden, wenn alles für das Fotoshooting bereit sei. Jetzt heißt es abwarten..."
 
     # game/core/09_opportunities.rpy:4
     old "Интересно, что такое тётя Кира придумала, если ей важно, чтобы мы достаточно много развлекались по ночам, чтобы я выдержал эту новую фотосессию? Но что известно точно, так это то, что пока она не посчитает, что я продержусь до конца фотосессии, её и не будет. Если тётя Кира хочет поработать над моей выдержкой, то надо не кончать как можно дольше во время наших с ней утех!"
-    new ""
+    new "Ich frage mich, was Tante Kira davon hält, ob es ihr wichtig ist, dass wir nachts so viel Spaß haben, dass ich dieses neue Fotoshooting durchstehe? Aber solange sie nicht glaubt, dass ich es bis zum Ende des Fotoshootings schaffe, wird es keins geben. Wenn Tante Kira an meiner Ausdauer arbeiten will, darf ich während unseres Zeitvertreibs mit ihr so lange wie möglich nicht abspritzen!"
 
     # game/core/09_opportunities.rpy:4
     old "Максимально долго не кончал при минете от Киры после секса: [kira.flags.held_out] из 3"
-    new ""
+    new "Maximale Anzahl von Nicht-Abspritzen bei einem Blowjob von Kira nach dem Sex: [kira.flags.held_out] von 3"
 
     # game/core/09_opportunities.rpy:4
     old "Фотосессия получилась даже лучше, чем я мог представить! Особенно самый конец... Эта подруга-фотограф Киры очень загадочная личность. Сперва отсняла, как мы с Кирой трахаемся, а потом и вовсе к нам присоединилась! Это прямо мечта - делать всё, что только удумается сразу с двумя женщинами. Правда, в этот раз инициатива была полностью на них, но я бы не прочь развлечься с ними ещё! И почему Кира так скрывает её личность? Ну да ладно, Кира сказала, что я её ещё увижу, а пока мне больше интересно то, что моя тётя собирается заняться собственными порно-проектами и ожидает, что я ей в этом посодействую. Нужно будет поговорить с ней об этом через некоторое время..."
-    new ""
+    new "Das Fotoshooting ist sogar noch besser geworden, als ich es mir vorstellen konnte! Besonders das Ende... Dieser befreundete Fotografin von Kira ist eine sehr geheimnisvolle Person. Zuerst hat sie mich und Kira beim Ficken gefilmt, und dann kam sie dazu! Es ist einfach ein Traum, alles mit zwei Frauen auf einmal zu machen. Dieses Mal lag die Initiative allerdings ganz bei ihnen, aber ich hätte nichts dagegen, mehr Spaß mit ihnen zu haben! Und warum ist Kira so geheimnisvoll, was ihre Identität angeht? Jedenfalls hat Kira gesagt, dass ich sie wiedersehen werde, aber im Moment interessiert mich mehr die Tatsache, dass meine Tante ihre eigenen Pornoprojekte machen wird und erwartet, dass ich ihr dabei helfe. Darüber muss ich noch mit ihr reden..."
 
