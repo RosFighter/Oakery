@@ -451,6 +451,7 @@ init python:
         truehelp    = 0         # помощь Макса с полной самоотдачей
         ladder      = 0         # счетчик подсматриваний со стремянки
         topless     = 0         # снимала верх при Максе
+        held_out    = 0         # Макс продержался до конца
 
         def __init__(self, id):
             self.id         = id
@@ -478,6 +479,7 @@ init python:
             self.erofilms       = 0
             self.help           = 0
             self.truehelp       = 0
+            self.held_out       = 0
 
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__ if attr!='id'})[1:-1]
@@ -1410,6 +1412,8 @@ init python:
         Lisa_ab_Alex3   = CutEvent('20:00', (1, ), 'about_alex3', "3-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==14, lisa.dcv.feature.done])")
 
         Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
+
+        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="'kira' in chars and all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2])")
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

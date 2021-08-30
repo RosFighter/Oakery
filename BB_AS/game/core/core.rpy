@@ -1481,3 +1481,6 @@ label update_07_0_99:
             $ poss['mom-tv'].open(9)
         if ann.flags.erofilms>2:
             $ poss['mom-tv'].open(10)
+
+    if _version < '0.06.8.04':
+        $ kira.flags.held_out = 1 if mgg.sex >= 35.0 else 0

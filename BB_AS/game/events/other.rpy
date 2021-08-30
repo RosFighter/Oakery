@@ -12,6 +12,11 @@ label shoping:
         "Удачи":
             pass
     # $ spent_time = 10
+
+    # авто-запуск третьей фотосессии:
+    if 'kira' in chars and all([kira.dcv.photo.done, kira.dcv.feature.stage==10, kira.dcv.photo.stage==2]):
+        jump kira_photoset3
+
     jump Waiting
 
 

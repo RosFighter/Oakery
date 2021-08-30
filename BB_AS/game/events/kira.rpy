@@ -520,7 +520,7 @@ label kira_bath:
     label .horsewoman:
         $ renpy.dynamic('ch3', 'ch2')
         $ ch3 = GetChance(mgg.sex+10, 2, 900)
-        $ ch2 = GetChance(mgg.sex, 33, 900)
+        $ ch2 = GetChance(mgg.sex+3, 2, 900)
 
         # bath-sex-03 + bath-max&kira-sex01-01
         scene BG char Kira bath-sex-03
@@ -582,7 +582,7 @@ label kira_bath:
     label .dogstyle:
         $ renpy.dynamic('ch3', 'ch2')
         $ ch3 = GetChance(mgg.sex+10, 2, 900)
-        $ ch2 = GetChance(mgg.sex, 33, 900)
+        $ ch2 = GetChance(mgg.sex+3, 2, 900)
 
         # bath-sex-01 + bath-max&kira-sex02-01
         scene BG char Kira bath-sex-01
@@ -645,6 +645,21 @@ label kira_bath:
                     jump .end_sleep
 
     label .cum_in_her_mouth:
+        # рассчитываем шанс на спаливание Киры и Макса Эриком:
+        if _in_replay or not wcv.catch_Kira.enabled:
+            $ ch_catch = 0
+        elif flags.eric_jerk:  # Эрик дрочит на Алису
+            $ ch_catch = 0
+        elif all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1]):
+            $ ch_catch = 1000 - 250 * wcv.catch_Kira.lost
+        else:
+            $ ch_catch = 1000
+
+        # переход на спаливание (минет)
+        if RandomChance(ch_catch):
+            $ catch = 'hj'
+            jump .caught
+
         if RandomChance(ch2.ch) or _in_replay:
             # (Удалось сдержаться!)
             # bath-cun-01 + bath-bj-02-max-01-kira-01 или bath-bj-02 + bath-bj-02-max-02-kira-02
@@ -667,6 +682,8 @@ label kira_bath:
             show Kira bath-mass cum-02
             Kira_08 "Вот и твоё напряжение мы сняли! Какие мы сегодня молодцы... Мне очень это всё понравилось!"
             Max_05 "И мне тоже! Было очень классно!"
+
+            $ kira.flags.held_out += 1 # Максу удалось продержаться максимально долго
             $ Skill('sex', 0.2)
             jump .end_sex
         else:
@@ -1900,7 +1917,7 @@ label kira_night_tv:
                 pass
 
     label .tv_sex2:
-        $ _ch_sex2 = GetChance(mgg.sex+5, 2, 900)
+        $ _ch_sex2 = GetChance(mgg.sex+3, 2, 900)
         $ _ch_sex4 = GetChance(mgg.sex+10, 4, 900)
 
         menu:
@@ -1988,7 +2005,7 @@ label kira_night_tv:
         jump .end_sex
 
     label .missionary:
-        $ _ch_sex2 = GetChance(mgg.sex+5, 2, 900)
+        $ _ch_sex2 = GetChance(mgg.sex+3, 2, 900)
         $ _ch_sex4 = GetChance(mgg.sex+10, 4, 900)
         # tv-max&kira-sex03-01-f + tv-max&kira-sex03-01
         scene BG tv-sex03-01
@@ -2157,6 +2174,9 @@ label kira_night_tv:
                                 # tv-mass-01 + tv-bj-01-max-09a-kira-09a
                                 scene BG tv-mass-01
                                 show Kira tv-game bj-09bb
+
+                                $ kira.flags.held_out += 1 # Максу удалось продержаться максимально долго
+
                                 jump .end_sex
 
         # (Не удалось сдержаться!)

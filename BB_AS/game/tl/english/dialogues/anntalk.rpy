@@ -1499,7 +1499,7 @@ translate english strings:
     # game/dialogues/anntalk.rpy:700
     old "Конечно, мам! Не скучай..."
     new "Of course, Mom! Don't get bored..."
-    
+
 # TODO: Translation updated at 2021-05-15 16:54
 
 # game/dialogues/anntalk.rpy:742

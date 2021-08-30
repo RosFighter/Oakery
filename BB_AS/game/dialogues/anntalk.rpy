@@ -676,7 +676,7 @@ label ann_about_ann_secret1:    # Попытка разузнать у Анны 
     Ann_17 "Нет, Макс. Это тебя не касается и я не хочу возвращаться к этой теме!"
     Max_11 "Я понял..."
 
-    $ ann.dcv.feature.stage += 1    # 2
+    $ ann.dcv.feature.stage = 2
     $ poss['aunt'].open(14)
     $ spent_time += 10
     jump Waiting
@@ -690,7 +690,7 @@ label ann_yoga_with_max0:       # первая совместная йога
     if (punreason[3] or punreason[2]):
         jump yoga_after_peeping
 
-    $ ann.dcv.feature.stage += 1    # 5
+    $ ann.dcv.feature.stage = 5
     $ poss['yoga'].open(0)
 
     #если Макс не был замечен за подглядыванием в душе перед йогой или вовсе не подглядывал (или его заметили, но убеждение удалось)

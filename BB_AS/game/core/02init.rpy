@@ -187,6 +187,7 @@ define talks = {
     'ann.secr0'     : TalkTheme('kira', _("Тётя Кира, когда ты уже с мамой поговоришь?!"), 'kira_about_ann_secret0', "all([kira.plan_name=='sun', not ann.dcv.feature.stage, flags.lisa_sexed>=1, alice.dcv.intrusion.enabled, alice.dcv.intrusion.lost<3, kira.dcv.photo.stage>1])"),
     'ann.secr2'     : TalkTheme('kira', _("Я хотел спросить про тот случай из детства мамы..."), 'kira_about_ann_secret2', "all([kira.plan_name=='sun', ann.dcv.feature.stage==2, ann.dcv.feature.done])"),
     'ann.secr_r'    : TalkTheme('kira', _("Расскажи уже про тот случай из детства мамы..."), 'kira_about_ann_secret_r', "all([kira.plan_name=='sun', ann.dcv.feature.stage==3, ann.dcv.feature.done])"),
+    'kt_ft3_0'      : TalkTheme('kira', _("Когда будет новая фотосессия, тётя Кира?"), 'kira_about_photo3_0', "all([kira.dcv.feature.stage==8, ann.dcv.feature.stage>3, kira.dcv.feature.done])"),
 
     'lisa_fd'       : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and flags.lisa_fd==0 and lisa.flags.crush==0"),
     'lisa_swim'     : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].st()<0 and lisa.plan_name == 'sun'"),

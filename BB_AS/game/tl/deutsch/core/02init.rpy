@@ -604,33 +604,41 @@ translate deutsch strings:
 
     # game/core/02init.rpy:131
     old "Извини, но я случайно увидел, как ты принимаешь душ..."
-    new ""
+    new "Entschuldige, aber ich habe dich zufällig beim Duschen gesehen..."
 
     # game/core/02init.rpy:131
     old "Хочу извиниться. Я бессовестно подглядывал за тобой утром..."
-    new ""
+    new "Ich möchte mich entschuldigen. Ich habe dich heute Morgen schamlos angestarrt..."
 
     # game/core/02init.rpy:131
     old "Я пришёл извиниться за то, что было утром. Я больше не буду."
-    new ""
+    new "Ich bin gekommen, um mich für den Vorfall von heute Morgen zu entschuldigen. Ich werde es nicht wieder tun."
 
     # game/core/02init.rpy:131
     old "Я снова подглядывал. Извини."
-    new ""
+    new "Ich habe wieder geglotzt. Es tut mir leid."
 
     # game/core/02init.rpy:131
     old "Ну давай, можешь меня наказывать..."
-    new ""
+    new "Nur zu, du kannst mich bestrafen..."
 
     # game/core/02init.rpy:131
     old "Я выбираю наказание от тебя..."
-    new ""
+    new "Ich wähle die Bestrafung durch dich..."
 
     # game/core/02init.rpy:243
     old "У меня для тебя подарок {i}(Кожаный костюм){/i}"
-    new ""
+    new "Ich habe ein Geschenk für dich {i}(Lederanzug){/i}"
 
     # game/core/02init.rpy:243
     old "У меня для тебя подарок {i}(Плётка){/i}"
+    new "Ich habe ein Geschenk für dich {i}(Reitgerte){/i}"
+
+# TODO: Translation updated at 2021-08-30 10:25
+
+translate deutsch strings:
+
+    # game/core/02init.rpy:131
+    old "Когда будет новая фотосессия, тётя Кира?"
     new ""
 

@@ -154,6 +154,8 @@ image AnimAnnEric2:  # Анимация в душе (утром со стрем�
     0.033
     repeat
 
+image BG black = '#000'
+
 image porn_01 01_02:
     'tv porn-01 01'
     6.0

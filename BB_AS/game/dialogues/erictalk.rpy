@@ -170,7 +170,7 @@ label lessons_from_Eric:
             "{i}слегка подвинуться{/i}":
                 pass
 
-        scene BG char Eric annroom-watch-04-bj01
+        scene BG annroom-watch-04-bj01
         show Eric watch 04-bj01
         if _stockings:
             show other Eric watch 04-bj01a
@@ -196,7 +196,7 @@ label lessons_from_Eric:
         Max_07 "К вам ведь можно?"
         Eric_03 "Да, Макс, проходи... Твоей маме как раз есть о чём тебе рассказать!"
 
-        scene BG char Eric annroom-watch-02-bj02
+        scene BG annroom-watch-02-bj02
         show Eric watch 02-bj02
         if _stockings:
             show other Eric watch 02-bj02a
@@ -216,7 +216,7 @@ label lessons_from_Eric:
             "{i}сесть на кровать{/i}":
                 pass
 
-        scene BG char Eric annroom-watch-03-bj02
+        scene BG annroom-watch-03-bj02
         show Eric watch 03-bj02
         if _stockings:
             show other Eric watch 03-bj02a
@@ -231,7 +231,7 @@ label lessons_from_Eric:
             "{i}смотреть, как мама сосёт{/i}":
                 pass
 
-        scene BG char Eric annroom-watch-04-bj02
+        scene BG annroom-watch-04-bj02
         show Eric watch 04-bj02
         if _stockings:
             show other Eric watch 04-bj02a
@@ -257,7 +257,7 @@ label lessons_from_Eric:
         Max_07 "К вам ведь можно?"
         Eric_03 "Да, Макс, как раз вовремя... Мы кое-что тебе покажем, да Ань!?"
 
-        scene BG char Eric annroom-watch-02-bj03
+        scene BG annroom-watch-02-bj03
         show Eric watch 02-bj03
         if _stockings:
             show other Eric watch 02-bj03a

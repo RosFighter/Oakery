@@ -80,7 +80,7 @@ label kira_firsttalk:
             show Max shower 05
             Max_07 "Я же не сказал это вслух?"
             $ mgg.cleanness = 100
-    $ kira.dcv.feature.stage += 1   # 1
+    $ kira.dcv.feature.stage = 1   # 1
     $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].open(0)
     $ AttitudeChange('kira', 1)
@@ -153,7 +153,7 @@ label kira_talk2:
             show Max shower 05
             Max_07 "{i}( О да... Надеюсь, она не поняла, что я сейчас делал, глядя на неё. Хотя, всё она понимает. Да ещё и видела меня, мой... ){/i}"
             $ mgg.cleanness = 100
-    $ kira.dcv.feature.stage += 1   # 2
+    $ kira.dcv.feature.stage = 2
     $ kira.dcv.feature.set_lost(1)
     $ SetCamsGrow(house[6], 200)
     $ spent_time += 30
@@ -202,7 +202,7 @@ label kira_talk3:
     Max_01 "Ладно, не буду тебе мешать..."
 
     ## второй этап "Любимой тёти"
-    $ kira.dcv.feature.stage += 1   # 3
+    $ kira.dcv.feature.stage = 3
     $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].open(1)
     $ SetCamsGrow(house[6], 200)
@@ -322,7 +322,7 @@ label kira_talk4:
             show Max shower 05
             Max_07 "{i}( Ну, тётя Кира, ты доприкалываешься! Я ещё реализую свои фантазии с тобой... ){/i}"
             $ mgg.cleanness = 100
-    $ kira.dcv.feature.stage += 1   # 4
+    $ kira.dcv.feature.stage = 4
     $ kira.dcv.feature.set_lost(1)
     $ poss['aunt'].open(7)
     $ SetCamsGrow(house[6], 200)
@@ -382,7 +382,7 @@ label kira_talk5:
         "{i}закончить{/i}":
             show Max shower 05
             Max_09 "{i}( Эх, с тётей Кирой кончать поинтереснее... и намного! ){/i}"
-    $ kira.dcv.feature.stage += 1   # 5
+    $ kira.dcv.feature.stage = 5
     $ kira.dcv.feature.set_lost(1)
     if items['photocamera'].have or items['photocamera'].bought:
         $ poss['aunt'].open(8)
@@ -424,6 +424,9 @@ label kira_talk6:
 
 label first_photoset:
     $ expected_photo = []
+
+    play music photosession
+
     scene BG char Kira dresses
     show Kira dresses 01
     with Fade(0.4, 0, 0.3)
@@ -597,12 +600,13 @@ label first_photoset:
     Max_07 "{i}( Это было намного лучше, чем ничего! Может, в следующий раз, мне обломится куда больше... ){/i}"
 
     $ renpy.end_replay()
+    stop music
     $ added_mem_var('kira_photoset1')
     $ SetCamsGrow(house[4], 300)
     $ poss['aunt'].open(10)
     $ items['photocamera'].block()
     $ items['nightie2'].give()
-    $ kira.dcv.feature.stage += 1   # 6
+    $ kira.dcv.feature.stage = 6
     $ kira.dcv.feature.set_lost(1)
     if GetRelMax('kira')[0]<4:
         $ AttitudeChange('kira', 1) # Дружеские
@@ -681,7 +685,7 @@ label kira_about_photo1:
     $ mgg.cleanness = 100
     $ SetCamsGrow(house[3], 250)
     $ poss['aunt'].open(11)
-    $ kira.dcv.feature.stage += 1   # 7
+    $ kira.dcv.feature.stage = 7
     $ kira.dcv.feature.set_lost(1)
     $ kira.dcv.photo.stage = 1
     $ kira.dcv.photo.set_lost(10)
@@ -787,6 +791,8 @@ label kira_about_photo2:
             Max_04 "Выглядишь шикарно!"
 
     $ expected_photo = []
+
+    play music photosession
 
     # photoshot-02-kira-01 + photocamera
     scene photoshot 02-Kira 01
@@ -965,7 +971,7 @@ label kira_about_photo2:
     menu:
         Kira_04 "Ну всё, развязывай меня, а то если кто-то придёт, будет... неловко, правда?"
         "{i}развязать Киру{/i}":
-            pass
+            stop misic
 
     # annroom-watch-01 + annroom-watch-01-max-01d + annroom-watch-01-kira-01
     scene BG annroom-watch-01
@@ -980,7 +986,7 @@ label kira_about_photo2:
     $ SetCamsGrow(house[2], 300)
     $ poss['aunt'].open(12)
     $ kira.dcv.photo.stage = 2
-    $ kira.dcv.feature.stage += 1   # 8
+    $ kira.dcv.feature.stage = 8
     $ kira.dcv.feature.set_lost(1)
     $ append_photo('02-Kira', 9)
     if GetRelMax('kira')[0]<5:
@@ -1012,7 +1018,7 @@ label kira_about_ann_secret0:
     Kira_14 "Поговори с мамой, спроси про случай из детства. Если она разрешит, я расскажу. А может быть, она и сама всё объяснит..."
     Max_08 "Ладно, попробую."
 
-    $ ann.dcv.feature.stage += 1    # 1
+    $ ann.dcv.feature.stage = 1
     $ poss['aunt'].open(13)
     $ spent_time += 10
     jump Waiting
@@ -1020,7 +1026,6 @@ label kira_about_ann_secret0:
 
 label kira_about_ann_secret2:
     # стартова фраза:  "Я хотел спросить про тот случай из детства мамы..."
-    $ ann.dcv.feature.stage += 1    # 3
     $ renpy.dynamic('ch1')
     $ ch1 = GetChance(mgg.social, 1, 900)
     menu:
@@ -1038,6 +1043,7 @@ label kira_about_ann_secret2:
         $ ann.dcv.feature.set_lost(1)
 
     $ spent_time += 10
+    $ ann.dcv.feature.stage = 3
     jump Waiting
 
 
@@ -1055,9 +1061,6 @@ label kira_about_ann_secret_r:
 
 
 label story_from_childhood_ann:
-    $ Skill('social', 0.1)
-    $ ann.dcv.feature.stage += 1    # 4
-    $ poss['aunt'].open(15)
     Kira_03 "Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
     Max_07 "Конечно. Рассказывай!"
 
@@ -1119,5 +1122,365 @@ label story_from_childhood_ann:
     Max_01 "Да, спасибо за совет!"
     Max_09 "{i}( Если я буду проводить с мамой больше времени вместе, то может быть и от Эрика будет не так уж сложно избавиться?! Главное, не вести себя по идиотски с ней... И про сестёр нужно не забывать, хорошие и доверительные отношения с ними тоже могут мне помочь. По-моему, мама каждое утро занимается йогой. Пожалуй, стоит попробовать составить ей компанию... ){/i}"
 
+    $ Skill('social', 0.1)
+    $ ann.dcv.feature.stage = 4
+    $ kira.dcv.feature.set_lost(3)
+    $ poss['aunt'].open(15)
     $ spent_time += 40
+    jump Waiting
+
+
+label kira_about_photo3_0:
+
+    Kira_05 "Что, Макс, так не терпится увидеть свою тётю в непристойном виде?"
+    Max_02 "Ну почему сразу в непристойном? В крайне непристойном! И желательно поскорее..."
+    if kira.flags.held_out > 2:
+        # Макс уже набрал 3 максимальных минета после секса с Кирой
+        Kira_07 "Боже, какой же ты нетерпеливый, Макс! Терпение, мой мальчик... Думаю, мы с тобой по ночам уже достаточно порезвились, чтобы ты смог продержаться на этой фотосессии до самого конца."
+        Max_07 "Интересно, что ты за фотосессию такую придумала?"
+        Kira_01 "Всему своё время, Макс! Пока это секрет. Мне нужно сперва кое с кем кое о чём договориться и после этого я тебе сразу скажу, когда мы устроим фотосессию."
+        Max_01 "Конечно. Жду не дождусь!"
+
+        $ poss['aunt'].open(16) # 16 / 17
+    else:
+        # Макс ещё не набрал 3 максимальных минета после секса с Кирой
+        Kira_07 "Боже, какой же ты нетерпеливый, Макс! Терпение, мой мальчик... Дело в том, что я не совсем уверена, что ты с ней справишься..."
+        Max_09 "Это почему? Мы ведь уже устраивали две фотосессии и всё прошло нормально. Ты же сама говорила!"
+        Kira_03 "Да, но... в этот раз она будет такая... Я не уверена, что ты со своей юношеской гипервозбудимостью сможешь довести её до конца."
+        Max_07 "Что? Да я... Что ты за фотосессию такую придумала?"
+        Kira_01 "Всему своё время, Макс! Всему своё время... Пока это секрет. А чтобы я была уверена, что ты выдержишь эту фотосессию, ты приходи ко мне по ночам. Мы подтянем твою сексуальную выдержку!"
+        Max_10 "А что, я разве ещё не крут?"
+        Kira_04 "Н-у-у... Ещё нет. Как говорится, нет предела совершенству. И твоя любимая тётя всегда поможет..."
+        Max_05 "Круто! Я буду стараться..."
+        Kira_07 "Ммм... Я люблю, когда мужчины стараются... Ну а как только я пойму, что ты справишься с нашей будущей фотосессией, я тебе сразу скажу."
+        Max_01 "Хорошо..."
+        $ poss['aunt'].open(17)
+
+    $ kira.dcv.feature.stage = 9
+    $ kira.dcv.feature.set_lost(3)
+    $ spent_time += 20
+    jump Waiting
+
+
+label kira_about_photo3_1:
+
+    # after-breakfast + max&lisa-(02a/02b) + after-breakfast-kira-01
+    scene BG after-breakfast
+    $ renpy.show('Max talk-terrace 03'+mgg.dress)
+    show Kira talk-terrace 01
+
+    Kira_03 "Эй, Макс, у меня есть новости о нашей будущей фотосессии... Только тихо! Тссс..."
+    Max_05 "Наконец-то! Хорошие новости?"
+    Kira_07 "Тише-тише... Не так же громко! Похвально, что ты относишься к этому с таким энтузиазмом, но эти новости всем остальным слышать не стоит."
+    Max_04 "Ага... Я понимаю. Просто я так ждал..."
+    Kira_05 "Ну, конечно... Представляю, что ты себе нафантазировал, бесстыдник..."
+    Max_03 "Так когда? Скоро?"
+
+    # after-breakfast + max&lisa-(01a/01b) + after-breakfast-kira-02
+    $ renpy.show('Max talk-terrace 02'+mgg.dress)
+    show Kira talk-terrace 02
+
+    if GetWeekday(day) == 6:
+        #если сб
+        Kira_01 "В следующую субботу, когда все отправятся на шопинг."
+        $ kira.dcv.photo.set_lost(7)
+    else:
+        #если вс-пт
+        Kira_01 "Вот как все отправятся на шопинг, так сразу и мы за дело возьмёмся."
+        $ kira.dcv.photo.set_lost(6-GetWeekday(day))
+
+    Max_02 "Ох, я тебя и нащёлкаю! И так, и этак..."
+    Kira_04 "Мне придётся спустить тебя с небес на землю - фотографировать ты не будешь. И нам даже не понадобится в этот раз твой фотоаппарат."
+    Max_08 "Подожди... Я что, не буду участвовать в фотосессии?"
+    Kira_06 "Нет, не переживай. Ты будешь там очень нужен."
+    Max_09 "Хм... Тогда я ничего не понимаю..."
+    Kira_07 "Дождись субботы, Макс, и тогда ты всё поймёшь. Уверяю тебя, ты не разочаруешься. А пока это секрет."
+    Max_07 "Да? Ну ладно, буду ждать..."
+
+    $ kira.dcv.feature.stage = 10
+    $ kira.dcv.feature.set_lost(1)
+    $ spent_time += 10
+    jump Waiting
+
+
+label kira_photoset3:
+    #автозапуск в субботу, после того, как все уезжают на шопинг, если соблюдены все условия
+    $ renpy.dynamic('ch')
+
+    if not _in_replay:
+        scene BG black with Fade(0.4, 0, 0.3)
+
+    #фоновая картинка с загорающей Кирой
+    call kira_sun
+
+    Kira_05 "Что, Макс? Наверняка не терпится начать фотосессию?"
+    Max_01 "Ага! Я готов! А ты?"
+    Kira_04 "Я тоже готова. Вернее, почти готова. Только нужно переодеться. Пойдём наверх, в комнату твоей мамы..."
+    Max_07 "Снова там? А что будет-то?"
+    Kira_06 "Если в двух словах, то эта фотосессия, как и предыдущая, будет в лёгком БДСМ стиле... Верёвки, кожа и так далее..."
+    Max_09 "Ага. А отличаться она чем будет от прошлой фотосессии? Ты говорила, что фотографировать буду не я... А кто тогда?"
+    Kira_01 "Одна моя подруга."
+    Max_08 "И что, она фотографирует лучше меня?"
+    Kira_03 "Может быть... Но дело не в этом, а в том, что тебе будет не до фотографирования. Так, мы что-то разговорились тут, пойдём уже скорее наверх!"
+    Max_01 "Ага..."
+
+    # annroom-morning-01 + dresses-kira-04a
+    scene BG annroom-morning-01
+    show Kira dresses 04a
+    with Fade(0.4, 0, 0.3)
+    Kira_05 "Немного подожди за дверью. Я подготовлюсь. Только не подглядывай, Макс! Хорошо?"
+    Max_11 "Ладно, не буду."
+
+    # momroomdoor-01-morning
+    scene location house annroom door-morning
+    Max_09 "А когда твоя подруга придёт, тётя Кира?"
+    Kira "{b}Кира:{/b} Скоро, Макс... Не переживай."
+    Max_02 "{i}( Интересно, а эта подружка... она такая же распутница, как моя тётя? ){/i}"
+    Max_07 "Тётя Кира, а вы с ней просто подруги или... не только..."
+    Kira "{b}Кира:{/b} О, Макс, мы с ней любим пошалить... и ещё как!"
+    Max_03 "Супер! Я бы на это с удовольствием посмотрел..."
+
+    # annroom-morning-01 + dresses-kira-05
+    scene BG annroom-morning-01
+    show Kira dresses 3-05
+    Kira_07 "Да что ты... А то, что ты видишь сейчас разве не приносит тебе удовольствия?!"
+    Max_05 "Вау! Ты такая сексуальная в этом прикиде! Вся такая в сеточку... И блестишь!"
+    Kira_02 "Да, Макс, я такая! Не жалеешь, что не подглядывал и столько прождал у двери?"
+    Max_04 "Нисколько, тётя Кира... Ты просто обалденно выглядишь!"
+    menu:
+        Kira_05 "Заходи в комнату. Теперь нужно подготовить к фотосессии тебя..."
+        "{i}зайти в комнату{/i}":
+            pass
+
+    play music photosession
+
+    # annroom-watch-02-bj03 + annroom-watch-01-max-(02a/02b) + annroom-watch-01-kira-02
+    scene BG annroom-watch-02-bj03
+    $ renpy.show('Max annroom-watch 02'+mgg.dress)
+    show Kira annroom-watch 02
+    Kira_07 "Итак, Макс, поскольку фотографировать сегодня будешь не ты, твоё место именно здесь - быть привязанным на этой кровати."
+    Max_08 "Что? Я буду... А ты?"
+    Kira_04 "Не бойся, я тоже здесь буду. Раздевайся и ложись. Сегодня развлечёмся от души."
+    Max_07 "Ну ладно, если так, то я готов..."
+
+    # annroom-shot-02-max&kira-03-f + annroom-shot-03-kira&max-02
+    scene BG char Kira annroom-shot 03
+    show Kira annroom-shot 03 02
+    Kira_05 "Ну что, нигде не жмёт? Я надеюсь, ты не возражаешь, что я тебя привязала..."
+    Max_03 "Самое время спрашивать такое, тётя Кира, но с такой красоткой, как ты, я на всё согласен!"
+    Kira_06 "Запомни эту красотку как следует, потому что больше ты ничего не увидишь."
+    Max_10 "В смысле, не увижу?"
+
+    # annroom-watch-04-bj01 + annroom-shot-03-kira&max-04
+    scene BG annroom-watch-04-bj01
+    show Kira annroom-shot 03 04
+    Kira_02 "В том самом, мой мальчик! Вся фотосессия пройдёт для тебя в этой повязке. Это чтобы ты не застеснялся фотосъёмки..."
+    Max_09 "Нуу... С повязкой на глазах, конечно, хуже, но... я готов потерпеть."
+    Kira_07 "Потерпеть?! Неужели тебе не нравится, что твоя тётя села на тебя и чувствует, как в её попку упирается большой член?"
+    Max_02 "Нравится, и даже очень, просто видеть это было бы ещё лучше!"
+    Kira_05 "Уверяю тебя, Макс, ты ни о чём не пожалеешь, к тому же, подобная интрига только усиливает возбуждение. С завязанными глазами все чувства обостряются."
+    Max_04 "Это да..."
+
+    # annroom-shot-03-01 + annroom-shot-03-caprice-03 + annroom-shot-03-kira-03
+    scene BG char Kira annroom-shot 03 01
+    show Caprice annroom-shot 03 03
+    show Kira annroom-shot 03 03
+    Kira_01 "О... А вот и наш фотограф... Как раз вовремя. Проходи, чувствуй себя как дома..."
+    Max_01 "Привет! Я, Макс. А вы?"
+
+    # annroom-watch-04-bj01 + annroom-shot-03-kira&max-04 + annroom-shot-03-caprice-04
+    scene BG annroom-watch-04-bj01
+    show Kira annroom-shot 03 04
+    show Caprice annroom-shot 03 04
+    Kira_02 "Макс, ты не отвлекайся и представь, что здесь только мы с тобой вдвоём. А на то, что нас там кто-то снимает - не обращай внимания."
+    Max_07 "Ох... Ну ладно."
+    Kira_05 "Начнём... Нам предстоит сделать несколько снимков, на которых и ты, и я должны показать всю свою страсть!"
+    Max_09 "Я постараюсь, но... не знаю, как это сделать, будучи связанным."
+
+    # annroom-watch-03-bj02 + annroom-shot-03-kira&max-05 + annroom-shot-03-caprice-05
+    scene BG annroom-watch-03-bj02
+    show Kira annroom-shot 03 05
+    show Caprice annroom-shot 03 05
+    Kira_06 "Ну, да... Здесь нужна поправка. Это я должна показать всю свою страсть. А твоя задача - её выдержать и не кончить раньше времени."
+    Max_03 "Пока это проще простого. Я даже не особо возбудился..."
+
+    # photoshot-03-kira-01 + photocamera
+    scene photoshot 03-Kira 01
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 1
+    Kira_07 "Это потому что ты не видишь, как я прямо сейчас стою над тобой и медленно... и красиво...  {p=1.5}{nw}"
+    hide FG
+    extend "стягиваю с себя те блестящие трусики, которые ты видел..."
+    Max_02 "Хорошо, что я могу это хотя бы представить..."
+
+    # annroom-watch-02-bj03 + annroom-shot-03-kira&max-06 + annroom-shot-03-caprice-06
+    scene BG annroom-watch-02-bj03
+    show Kira annroom-shot 03 06
+    show Caprice annroom-shot 03 06
+    Kira_02 "Ну, а теперь, приступим к самому главному... Не помню, говорила я тебе или нет, но наша прошлая фотосессия произвела настоящий фурор..."
+    Max_07 "Даже так?"
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 2
+    Kira_04 "Да, Макс. Я ещё до неё хотела, чтобы ты меня трахнул, но подумала, что это должно произойти как-то... необычно... А теперь, я подумала, что было весьма неплохо снять её продолжение, где мы меняемся местами. Тем более, что это могло бы принести неплохие деньги."
+    Max_03 "Ничего себе... Так я в доле?"
+
+    # annroom-watch-04-bj02 + annroom-shot-03-caprice-07 + annroom-shot-03-kira&max-07
+    scene BG annroom-watch-04-bj02
+    show Kira annroom-shot 03 07
+    show Caprice annroom-shot 03 07
+    Kira_07 "А разве тебе не достаточно того, что ты вытворяешь со мной на этих фотосессиях?!"
+    Max_07 "Ну... Сейчас я как раз таки ничего и не вытворяю!"
+    Kira_06 "Ммм... Это ты верно подметил. Это я совсем потеряла голову, привязала своего племянника к кровати его матери и играюсь своим нежным язычком с его пульсирующим от возбуждения членом!"
+    Max_04 "Ох... А как приятно... Только вот..."
+
+    # photoshot-03-kira-03 + photocamera
+    scene photoshot 03-Kira 03
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 3
+    Kira_03 "Я делаю что-то не так, Макс? {p=1.5}{nw}"
+    hide FG
+    extend "Ты можешь сказать, как тебе больше нравится..."
+    Max_09 "Нет, всё так... Просто меня ещё немного смущает моё положение и то, что фотографирую не я..."
+    Kira_02 "Вот значит в чём дело... Видимо, я действую недостаточно отвлекающе, раз ты обращаешь внимание на подобные мелочи."
+    Max_01 "Вовсе нет..."
+
+    # annroom-shot-02-max&kira-03-f + annroom-shot-03-kira&max-08
+    scene BG char Kira annroom-shot 03
+    show Kira annroom-shot 03 08
+    Kira_05 "Я так думаю, чтобы отвлечь тебя от разных посторонних мыслей мне нужно несколько углубить процесс и... заняться твоим членом по-настоящему. Ты ведь не будешь против?"
+    Max_03 "О, нет... Такое только приветствуется!"
+    Kira_09 "Я так и подумала... Ммм... Он такой напряжённый... О да! Я чувствую, что тебе нравится то, как смачно и медленно я это делаю..."
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 4
+    Max_19 "Охх... Тётя Кира, твои губы... они... такие..."
+
+    # annroom-watch-02-bj03 + annroom-shot-03-kira&max-09
+    scene BG annroom-watch-02-bj03
+    show Kira annroom-shot 03 09
+    Kira_06 "Судя по тому, что читается в глазах моей подруги, ей тоже нравится, как мои губы обхаживают твой член... Ммм..."
+    Max_20 "О да... Только не торопись..."
+
+    # photoshot-03-kira-05 + photocamera
+    scene photoshot 03-Kira 05
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 5
+    Max_21 "О, Господи... Если фотографии получатся не такими же сочными, как твой минет, тётя Кира... {p=1.5}{nw}"
+    hide FG
+    extend "Ухх... Твою подругу придётся хорошенько отшлёпать!"
+
+    # annroom-shot-02-max&kira-03-f + annroom-shot-03-kira&max-10
+    scene BG char Kira annroom-shot 03
+    show Kira annroom-shot 03 10
+    Kira_08 "Не знаю, что заводит меня больше, твой упругий член, только что побывавший у меня во рту или фантазии о том, что мы тут втроём могли бы устроить..."
+    Max_05 "Ого! От такого я не откажусь..."
+    Kira_07 "Я в этом не сомневалась, но для начала я бы на месте моей подруги сделала снимок того, как классно мы смотримся, когда я трусь грудью о твой член. Или не стоит, как думаешь, Макс?"
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 6
+    Max_02 "Однозначно стоит!"
+
+    # annroom-watch-02-bj02 + annroom-shot-03-kira&max-11
+    scene BG annroom-watch-02-bj02
+    show Kira annroom-shot 03 11
+    Kira_05 "Дорогая, не поможешь мне? Я уже вся изнываю от желания потрахаться с Максом! Ну как тебе? Очень заводит, держать такой член в руке, не правда ли? Да... Вижу по твоей улыбке, что заводит..."
+    Max_04 "{i}( У тётиной подруги приятные руки! Она очень возбуждает своими прикосновениями... Она так уверенно водит моим членом по Кириной киске, что складывается впечатление, будто она не просто фотограф, а порноактриса! Хотя, может у неё просто большой опыт в таких фотосессиях... ){/i}"
+
+    # photoshot-03-kira-07 + photocamera
+    scene photoshot 03-Kira 07
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 7
+    Kira_02 "Чувствуешь, какая я мокренькая, Макс? {p=1.5}{nw}"
+    hide FG
+    extend "Ты как, готов трахнуть свою тётю или тебя ещё помучить..."
+    Max_10 "Не томи, тётя Кира! Опустись на него..."
+
+    # annroom-watch-04-bj01 + annroom-shot-03-kira&max-12
+    scene BG annroom-watch-04-bj01
+    show Kira annroom-shot 03 12
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 8
+    Kira_09 "Ну, конечно, мой мальчик... С превеликим удовольствием... Ахх... Боже мой, Макс... Ммм... Как же я хотела почувствовать его внутри... Д-а-а..."
+    Max_20 "Вот так, тётя Кира... Эта фотосессия мне нравится всё больше и больше!"
+    Kira_10 "Охх... Да... Вот так, Макс! Я просто схожу с ума от твоего члена... Он так глубоко проникает в мою маленькую беззащитную киску... Д-а-а... Ещё... Пожалуй, я развернусь и покажу себя во всей красе..."
+    Max_19 "Да! Делай всё, что нужно, чтобы снимки получились отпадными, прямо как ты!"
+
+    # annroom-shot-02-max&kira-04-f + annroom-shot-03-kira&max-13
+    scene BG char Kira annroom-shot 04
+    show Kira annroom-shot 03 13
+    Kira_12 "Ох, как хорошо! Хочу ещё! Вот так... Ммм... Я уже так близко! Больше не могу, Макс... Ммм... Да, я кончаю... Ахх... Это такое наслаждение!"
+    Max_21 "{i}( Ого! Вот это она разошлась! Скачет на мне так громко, что шлепки о её попку мне уши закладывают... И это обалденно! ){/i}"
+
+    # photoshot-03-kira-09 + photocamera
+    scene photoshot 03-Kira 09
+    show FG photocamera
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 9
+    Kira_11 "О Боже, Макс... Я так сладко кончила! {p=1.5}{nw}"
+    hide FG
+    extend "У меня до сих пор дрожь по телу..."
+    Max_05 "Я сам чуть не кончил под такой горячей наездницей, как ты! Еле сдержался."
+
+    # annroom-shot-03-02 + annroom-shot-03-kira&max-14
+    scene BG char Kira annroom-shot 03 02
+    show Kira annroom-shot 03 14
+    Kira_02 "Я бы, конечно, хотела, чтобы мы кончили вместе, но раз уж ты настроен на продолжение, то нам с подругой есть чем тебя впечатлить..."
+    Max_07 "С подругой? То есть прямо вместе с ней?!"
+    Kira_07 "Нуу... Ты же не будешь против, если мы с ней воспользуемся твоим безвыходным положением и немного пошалим?"
+    Max_08 "Смотря как! Но кто-то из вас уже во всю шалит с моими яичками... И это не ты, тётя Кира!"
+    Kira_05 "Не переживай, я тоже не оставлю тебя без внимания... Наслаждайся!"
+
+    $ ch = GetChance(mgg.sex+5, 1, 900)
+    # annroom-shot-03-03 + annroom-shot-03-kira&max-15
+    scene BG char Kira annroom-shot 03 03
+    show Kira annroom-shot 03 15
+    menu:
+        Max_19 "{i}( Вот чёрт! Ничего себе! Вот она, мечта всех мужчин - оказаться во власти двух опытных женщин, которые будто соревнуются друг с другом в мастерстве оральных ласк! Ухх... Я просто улетаю... ){/i}"
+        "{i}Наслаждаться{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}":
+            pass
+    if RandomChance(ch.ch) or _in_replay:
+        # (Удалось сдержаться!)
+        # annroom-shot-03-04 + annroom-shot-03-kira&max-16
+        scene BG char Kira annroom-shot 03 04
+        show Kira annroom-shot 03 16
+        Max_22 "Девчонки... То, что вы делаете... Охх... Это что-то невероятное! Д-а-а... Давайте ещё быстрее... Сейчас я взорвусь! Ахх... Да!!!"
+
+        # annroom-shot-03-03 + annroom-shot-03-kira&max-15 + annroom-shot-03-kira&max-15a
+        scene BG char Kira annroom-shot 03 03
+        show Kira annroom-shot 03 15
+        show FG Kira annroom-shot 03 15
+        Max_06 "{i}( Фух... Не знаю, в чей такой жаркий и влажный ротик я кончил, но было потрясающе! А девчонки всё не унимаются и продолжают полировать мой член... Просто сказка! ){/i}"
+
+        # annroom-shot-03-04 + annroom-shot-03-kira&max-17 + annroom-shot-03-kira&max-17a
+        scene BG char Kira annroom-shot 03 04
+        show Kira annroom-shot 03 17
+        show FG Kira annroom-shot 03 17
+        Kira_07 "Вау! Боже мой, Макс... Сколько спермы... Нашему мальчику явно очень понравилось! Давайте сделаем фото на память о нашей небольшой групповушке..."
+    else:
+        # (Не удалось сдержаться!)
+        # annroom-shot-03-04 + annroom-shot-03-kira&max-17 + annroom-shot-03-kira&max-17a
+        scene BG char Kira annroom-shot 03 04
+        show Kira annroom-shot 03 17
+        show FG Kira annroom-shot 03 17
+        Kira_07 "Вау! Боже мой, Макс... Сколько спермы... Не удивлена, что ты не мог больше сдерживаться! Давайте сделаем фото на память о нашей небольшой групповушке..."
+
+    play sound "<from 1>audio/PhotoshootSound.ogg"  # 10
+    Max_05 "Ты потрясающая, тётя Кира! Вернее, вы обе..."
+    Kira_05 "Да, мы такое слышали... Спасибо за комплимент! И тебе спасибо, что поучаствовал в этой фотосессии."
+    Max_03 "Очень рад был помочь! Вы почаще обращайтесь..."
+    menu:
+        Kira_04 "Мы обязательно придумаем что-нибудь ещё, а пока полежи немного, мы тут немного приведём себя в порядок и я тебя развяжу."
+        "{i}ждать{/i}":
+            stop music
+
+    # annroom-shot-02-max&kira-03-f + annroom-shot-03-kira&max-02a
+    scene BG char Kira annroom-shot 03
+    show Kira annroom-shot 03 02a
+    Kira_07 "Ну всё, отлично повеселились... А теперь иди, твоей утомлённой тётушке нужно отдохнуть. Да и наши уже вот-вот вернутся..."
+    Max_10 "О! А твоя подруга что, уже ушла?! А я так хотел её увидеть..."
+    Kira_06 "Ещё увидишь, Макс, за это можешь не переживать. Я тут уже серьёзно думаю своими собственными порно-проектами заниматься и она в стороне не останется. Мы ведь с ней очень близкие подруги!"
+    Max_07 "А для меня там местечко в проектах найдётся?"
+    Kira_02 "На тебя я как раз таки и рассчитывала больше всего!"
+    Max_04 "Шикарно!"
+
+    $ poss['aunt'].open(18)
+    $ kira.dcv.feature.stage = 11
+    $ kira.dcv.feature.set_lost(1)
+    $ kira.dcv.photo.set_lost(3)
+    $ spent_time = 150
+    $ current_room = house[2]
+    $ SetCamsGrow(house[2], 400)
     jump Waiting
