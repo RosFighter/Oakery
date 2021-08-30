@@ -655,3 +655,11 @@ translate english strings:
     old "У меня для тебя подарок {i}(Плётка){/i}"
     new ""
 
+# TODO: Translation updated at 2021-08-30 10:26
+
+translate english strings:
+
+    # game/core/02init.rpy:131
+    old "Когда будет новая фотосессия, тётя Кира?"
+    new ""
+
