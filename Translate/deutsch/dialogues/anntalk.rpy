@@ -2598,7 +2598,7 @@ translate deutsch erofilm2_1_7cd6006b:
 translate deutsch erofilm2_1_0cbf3006:
 
     # Ann_14 "[lucky!t]Так, как-то здесь всё слишком откровенно начало развиваться... Прямо очень откровенно! Ты специально такой фильм купил?"
-    Ann_14 "[lucky!t] Okay, es wird ein bisschen zu krass hier... Es ist sehr freizügig! Hast du diesen Film mit Absicht gekauft?"
+    Ann_14 "[lucky!t]Okay, es wird ein bisschen zu krass hier... Es ist sehr freizügig! Hast du diesen Film mit Absicht gekauft?"
 
 # game/dialogues/anntalk.rpy:1056
 translate deutsch erofilm2_1_db9e8a82_1:
@@ -2736,7 +2736,7 @@ translate deutsch erofilm2_2_7cd6006b:
 translate deutsch erofilm2_2_lucky_aaa808d8:
 
     # Ann_04 "[lucky!t]Помимо всего прочего, в фильме музыка очень хороша. Мне прямо нравится!"
-    Ann_04 "[lucky!t] Obendrein ist die Musik im Film wirklich gut. Ich liebe es absolut!"
+    Ann_04 "[lucky!t]Obendrein ist die Musik im Film wirklich gut. Ich liebe es absolut!"
 
 # game/dialogues/anntalk.rpy:1372
 translate deutsch erofilm2_2_lucky_8d1bb789:
