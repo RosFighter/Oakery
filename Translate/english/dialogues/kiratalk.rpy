@@ -2693,837 +2693,836 @@ translate english kira_talk5_34346893:
 translate english kira_about_photo3_0_c209e467:
 
     # Kira_05 "Что, Макс, так не терпится увидеть свою тётю в непристойном виде?"
-    Kira_05 ""
+    Kira_05 "What, Max, are you so anxious to see your aunt in an indecent state?"
 
 # game/dialogues/kiratalk.rpy:1136
 translate english kira_about_photo3_0_29045eed:
 
     # Max_02 "Ну почему сразу в непристойном? В крайне непристойном! И желательно поскорее..."
-    Max_02 ""
+    Max_02 "Why do you have to be indecent? Extremely indecent! And preferably as soon as possible..."
 
 # game/dialogues/kiratalk.rpy:1139
 translate english kira_about_photo3_0_3e60d3b8:
 
     # Kira_07 "Боже, какой же ты нетерпеливый, Макс! Терпение, мой мальчик... Думаю, мы с тобой по ночам уже достаточно порезвились, чтобы ты смог продержаться на этой фотосессии до самого конца."
-    Kira_07 ""
+    Kira_07 "God, how impatient you are, Max! Patience, my boy... I think you and I have had enough fun at night for you to last all the way to the end of this photo session."
 
 # game/dialogues/kiratalk.rpy:1140
 translate english kira_about_photo3_0_1df02ceb:
 
     # Max_07 "Интересно, что ты за фотосессию такую придумала?"
-    Max_07 ""
+    Max_07 "I wonder what kind of photoshoot you came up with?"
 
 # game/dialogues/kiratalk.rpy:1141
 translate english kira_about_photo3_0_e357eb68:
 
     # Kira_01 "Всему своё время, Макс! Пока это секрет. Мне нужно сперва кое с кем кое о чём договориться и после этого я тебе сразу скажу, когда мы устроим фотосессию."
-    Kira_01 ""
+    Kira_01 "All in good time, Max! It's a secret for now. I have to make some arrangements with someone first, and then I'll tell you right away when we're doing the photo shoot."
 
 # game/dialogues/kiratalk.rpy:1142
 translate english kira_about_photo3_0_606612f9:
 
     # Max_01 "Конечно. Жду не дождусь!"
-    Max_01 ""
+    Max_01 "Absolutely. I can't wait!"
 
 # game/dialogues/kiratalk.rpy:1147
 translate english kira_about_photo3_0_f1bdb763:
 
     # Kira_07 "Боже, какой же ты нетерпеливый, Макс! Терпение, мой мальчик... Дело в том, что я не совсем уверена, что ты с ней справишься..."
-    Kira_07 ""
+    Kira_07 "God, how impatient you are, Max! Patience, my boy... The thing is, I'm not quite sure you can handle her..."
 
 # game/dialogues/kiratalk.rpy:1148
 translate english kira_about_photo3_0_ba36793d:
 
     # Max_09 "Это почему? Мы ведь уже устраивали две фотосессии и всё прошло нормально. Ты же сама говорила!"
-    Max_09 ""
+    Max_09 "Why is that? We've already had two photo shoots and everything went fine. You said so yourself!"
 
 # game/dialogues/kiratalk.rpy:1149
 translate english kira_about_photo3_0_27727f1b:
 
     # Kira_03 "Да, но... в этот раз она будет такая... Я не уверена, что ты со своей юношеской гипервозбудимостью сможешь довести её до конца."
-    Kira_03 ""
+    Kira_03 "Yes, but... this time she'll be so... I'm not sure you, with your adolescent hyper-excitement, can follow through with it."
 
 # game/dialogues/kiratalk.rpy:1150
 translate english kira_about_photo3_0_25bdabcc:
 
     # Max_07 "Что? Да я... Что ты за фотосессию такую придумала?"
-    Max_07 ""
+    Max_07 "What? I... What kind of photo shoot is this?"
 
 # game/dialogues/kiratalk.rpy:1151
 translate english kira_about_photo3_0_a31bdfff:
 
     # Kira_01 "Всему своё время, Макс! Всему своё время... Пока это секрет. А чтобы я была уверена, что ты выдержишь эту фотосессию, ты приходи ко мне по ночам. Мы подтянем твою сексуальную выдержку!"
-    Kira_01 ""
+    Kira_01 "All in good time, Max! All in good time... It's a secret for now. And just to make sure you can handle this photo shoot, you come to my place at night. We're gonna get your sexy stamina up!"
 
 # game/dialogues/kiratalk.rpy:1152
 translate english kira_about_photo3_0_02e33725:
 
     # Max_10 "А что, я разве ещё не крут?"
-    Max_10 ""
+    Max_10 "Aren't I cool yet?"
 
 # game/dialogues/kiratalk.rpy:1153
 translate english kira_about_photo3_0_76304aa2:
 
     # Kira_04 "Н-у-у... Ещё нет. Как говорится, нет предела совершенству. И твоя любимая тётя всегда поможет..."
-    Kira_04 ""
+    Kira_04 "N-o-o... Not yet. As they say, there's no limit to perfection. And your favorite aunt will always help..."
 
 # game/dialogues/kiratalk.rpy:1154
 translate english kira_about_photo3_0_dedcb993:
 
     # Max_05 "Круто! Я буду стараться..."
-    Max_05 ""
+    Max_05 "Cool! I'll try my best..."
 
 # game/dialogues/kiratalk.rpy:1155
 translate english kira_about_photo3_0_b7c68762:
 
     # Kira_07 "Ммм... Я люблю, когда мужчины стараются... Ну а как только я пойму, что ты справишься с нашей будущей фотосессией, я тебе сразу скажу."
-    Kira_07 ""
+    Kira_07 "Mmm... I love it when men try... Well, as soon as I know you can handle our future photo shoot, I'll tell you right away."
 
 # game/dialogues/kiratalk.rpy:1156
 translate english kira_about_photo3_0_82324783:
 
     # Max_01 "Хорошо..."
-    Max_01 ""
+    Max_01 "Okay..."
 
 # game/dialogues/kiratalk.rpy:1172
 translate english kira_about_photo3_1_42291d98:
 
     # Kira_03 "Эй, Макс, у меня есть новости о нашей будущей фотосессии... Только тихо! Тссс..."
-    Kira_03 ""
+    Kira_03 "Hey, Max, I've got news about our future photo shoot... Just between you and me! Shh, shh..."
 
 # game/dialogues/kiratalk.rpy:1173
 translate english kira_about_photo3_1_f2b1d88f:
 
     # Max_05 "Наконец-то! Хорошие новости?"
-    Max_05 ""
+    Max_05 "Finally! Good news?"
 
 # game/dialogues/kiratalk.rpy:1174
 translate english kira_about_photo3_1_5778913c:
 
     # Kira_07 "Тише-тише... Не так же громко! Похвально, что ты относишься к этому с таким энтузиазмом, но эти новости всем остальным слышать не стоит."
-    Kira_07 ""
+    Kira_07 "Hush, hush... Not so loud! It's commendable that you're so enthusiastic about it, but it's news everyone else shouldn't hear."
 
 # game/dialogues/kiratalk.rpy:1175
 translate english kira_about_photo3_1_55963275:
 
     # Max_04 "Ага... Я понимаю. Просто я так ждал..."
-    Max_04 ""
+    Max_04 "Yeah... I understand. It's just that I've been waiting..."
 
 # game/dialogues/kiratalk.rpy:1176
 translate english kira_about_photo3_1_ee03c25a:
 
     # Kira_05 "Ну, конечно... Представляю, что ты себе нафантазировал, бесстыдник..."
-    Kira_05 ""
+    Kira_05 "Well, of course... I can imagine what you fantasized about, you shameless..."
 
 # game/dialogues/kiratalk.rpy:1177
 translate english kira_about_photo3_1_7384376f:
 
     # Max_03 "Так когда? Скоро?"
-    Max_03 ""
+    Max_03 "So when? Soon?"
 
 # game/dialogues/kiratalk.rpy:1185
 translate english kira_about_photo3_1_d1a42f1a:
 
     # Kira_01 "В следующую субботу, когда все отправятся на шопинг."
-    Kira_01 ""
+    Kira_01 "Next Saturday, when everyone goes shopping."
 
 # game/dialogues/kiratalk.rpy:1189
 translate english kira_about_photo3_1_7cf63c9c:
 
     # Kira_01 "Вот как все отправятся на шопинг, так сразу и мы за дело возьмёмся."
-    Kira_01 ""
+    Kira_01 "As soon as everyone goes shopping, we'll get down to business."
 
 # game/dialogues/kiratalk.rpy:1192
 translate english kira_about_photo3_1_8ea50be1:
 
     # Max_02 "Ох, я тебя и нащёлкаю! И так, и этак..."
-    Max_02 ""
+    Max_02 "Oh, I'm going to take a picture of you! This way and that way..."
 
 # game/dialogues/kiratalk.rpy:1193
 translate english kira_about_photo3_1_ed4ef318:
 
     # Kira_04 "Мне придётся спустить тебя с небес на землю - фотографировать ты не будешь. И нам даже не понадобится в этот раз твой фотоаппарат."
-    Kira_04 ""
+    Kira_04 "I'm going to have to bring you down to earth--you're not going to take any pictures. And we won't even need your camera this time."
 
 # game/dialogues/kiratalk.rpy:1194
 translate english kira_about_photo3_1_b0c1b8f0:
 
     # Max_08 "Подожди... Я что, не буду участвовать в фотосессии?"
-    Max_08 ""
+    Max_08 "Wait... Am I not going to participate in the photo shoot?"
 
 # game/dialogues/kiratalk.rpy:1195
 translate english kira_about_photo3_1_227c7e13:
 
     # Kira_06 "Нет, не переживай. Ты будешь там очень нужен."
-    Kira_06 ""
+    Kira_06 "No, don't worry. You're going to be very much needed there."
 
 # game/dialogues/kiratalk.rpy:1196
 translate english kira_about_photo3_1_51a4b3ac:
 
     # Max_09 "Хм... Тогда я ничего не понимаю..."
-    Max_09 ""
+    Max_09 "Hmm... Then I don't understand anything..."
 
 # game/dialogues/kiratalk.rpy:1197
 translate english kira_about_photo3_1_f6ebcbde:
 
     # Kira_07 "Дождись субботы, Макс, и тогда ты всё поймёшь. Уверяю тебя, ты не разочаруешься. А пока это секрет."
-    Kira_07 ""
+    Kira_07 "Wait until Saturday, Max, and then you'll understand. I assure you, you won't be disappointed. In the meantime, it's a secret."
 
 # game/dialogues/kiratalk.rpy:1198
 translate english kira_about_photo3_1_cab7837e:
 
     # Max_07 "Да? Ну ладно, буду ждать..."
-    Max_07 ""
+    Max_07 "Yes? All right, I'll wait..."
 
 # game/dialogues/kiratalk.rpy:1216
 translate english kira_photoset3_8c3bbca5:
 
     # Kira_05 "Что, Макс? Наверняка не терпится начать фотосессию?"
-    Kira_05 ""
+    Kira_05 "What, Max? Surely you can't wait to start the photo shoot?"
 
 # game/dialogues/kiratalk.rpy:1217
 translate english kira_photoset3_3e9c6954:
 
     # Max_01 "Ага! Я готов! А ты?"
-    Max_01 ""
+    Max_01 "Aha! I'm ready! How about you?"
 
 # game/dialogues/kiratalk.rpy:1218
 translate english kira_photoset3_34b7393d:
 
     # Kira_04 "Я тоже готова. Вернее, почти готова. Только нужно переодеться. Пойдём наверх, в комнату твоей мамы..."
-    Kira_04 ""
+    Kira_04 "I'm ready, too. Or rather, almost ready. I just need to change. Let's go upstairs to your mother's room..."
 
 # game/dialogues/kiratalk.rpy:1219
 translate english kira_photoset3_a4c3b777:
 
     # Max_07 "Снова там? А что будет-то?"
-    Max_07 ""
+    Max_07 "There again? What's going to happen?"
 
 # game/dialogues/kiratalk.rpy:1220
 translate english kira_photoset3_88e76f87:
 
     # Kira_06 "Если в двух словах, то эта фотосессия, как и предыдущая, будет в лёгком БДСМ стиле... Верёвки, кожа и так далее..."
-    Kira_06 ""
+    Kira_06 "In a nutshell, this photoshoot, like the previous one, will be in a light BDSM style... Rope, leather and so on..."
 
 # game/dialogues/kiratalk.rpy:1221
 translate english kira_photoset3_1191b3c9:
 
     # Max_09 "Ага. А отличаться она чем будет от прошлой фотосессии? Ты говорила, что фотографировать буду не я... А кто тогда?"
-    Max_09 ""
+    Max_09 "Yeah. How will it be different from the last photo shoot? You said it wasn't going to be me... Then who will?"
 
 # game/dialogues/kiratalk.rpy:1222
 translate english kira_photoset3_a26b4dbe:
 
     # Kira_01 "Одна моя подруга."
-    Kira_01 ""
+    Kira_01 "A friend of mine."
 
 # game/dialogues/kiratalk.rpy:1223
 translate english kira_photoset3_048a9138:
 
     # Max_08 "И что, она фотографирует лучше меня?"
-    Max_08 ""
+    Max_08 "And what, she takes better pictures than me?"
 
 # game/dialogues/kiratalk.rpy:1224
 translate english kira_photoset3_a1e89904:
 
     # Kira_03 "Может быть... Но дело не в этом, а в том, что тебе будет не до фотографирования. Так, мы что-то разговорились тут, пойдём уже скорее наверх!"
-    Kira_03 ""
+    Kira_03 "Maybe... But that's not the point, it's just that you won't have time to take pictures. Okay, we're talking here, let's go upstairs now!"
 
 # game/dialogues/kiratalk.rpy:1225
 translate english kira_photoset3_6374794e:
 
     # Max_01 "Ага..."
-    Max_01 ""
+    Max_01 "Yeah..."
 
 # game/dialogues/kiratalk.rpy:1231
 translate english kira_photoset3_89b75530:
 
     # Kira_05 "Немного подожди за дверью. Я подготовлюсь. Только не подглядывай, Макс! Хорошо?"
-    Kira_05 ""
+    Kira_05 "Wait outside the door for a while. I'll get ready. Just don't peek, Max! Okay?"
 
 # game/dialogues/kiratalk.rpy:1232
 translate english kira_photoset3_c9e15d6b:
 
     # Max_11 "Ладно, не буду."
-    Max_11 ""
+    Max_11 "Okay, I won't."
 
 # game/dialogues/kiratalk.rpy:1236
 translate english kira_photoset3_cbdc6fac:
 
     # Max_09 "А когда твоя подруга придёт, тётя Кира?"
-    Max_09 ""
+    Max_09 "And when is your friend coming, Aunt Kira?"
 
 # game/dialogues/kiratalk.rpy:1237
 translate english kira_photoset3_18b48d26:
 
     # Kira "{b}Кира:{/b} Скоро, Макс... Не переживай."
-    Kira ""
+    Kira "{Kira:{/b} Soon, Max... Don't worry."
 
 # game/dialogues/kiratalk.rpy:1238
 translate english kira_photoset3_d7a1616c:
 
     # Max_02 "{i}( Интересно, а эта подружка... она такая же распутница, как моя тётя? ){/i}"
-    Max_02 ""
+    Max_02 "{i}( I wonder if this girlfriend... is she as slutty as my aunt? ){/i}"
 
 # game/dialogues/kiratalk.rpy:1239
 translate english kira_photoset3_c5eba79b:
 
     # Max_07 "Тётя Кира, а вы с ней просто подруги или... не только..."
-    Max_07 ""
+    Max_07 "Aunt Kira, are you two just friends or... not just..."
 
 # game/dialogues/kiratalk.rpy:1240
 translate english kira_photoset3_45937bea:
 
     # Kira "{b}Кира:{/b} О, Макс, мы с ней любим пошалить... и ещё как!"
-    Kira ""
+    Kira "{b}Kira:{/b} Oh, Max, she and I like to fool around... And we do!"
 
 # game/dialogues/kiratalk.rpy:1241
 translate english kira_photoset3_20a21b5d:
 
     # Max_03 "Супер! Я бы на это с удовольствием посмотрел..."
-    Max_03 ""
+    Max_03 "Great! I'd love to see that..."
 
 # game/dialogues/kiratalk.rpy:1246
 translate english kira_photoset3_c6ee8d78:
 
     # Kira_07 "Да что ты... А то, что ты видишь сейчас разве не приносит тебе удовольствия?!"
-    Kira_07 ""
+    Kira_07 "Oh, really... Doesn't what you see now give you pleasure?!"
 
 # game/dialogues/kiratalk.rpy:1247
 translate english kira_photoset3_a1418fac:
 
     # Max_05 "Вау! Ты такая сексуальная в этом прикиде! Вся такая в сеточку... И блестишь!"
-    Max_05 ""
+    Max_05 "Wow! You look so sexy in that outfit! It's all fishnets... And shiny!"
 
 # game/dialogues/kiratalk.rpy:1248
 translate english kira_photoset3_b926307b:
 
     # Kira_02 "Да, Макс, я такая! Не жалеешь, что не подглядывал и столько прождал у двери?"
-    Kira_02 ""
+    Kira_02 "Yes, Max, I am! Don't you regret not peeking and waiting at the door so long?"
 
 # game/dialogues/kiratalk.rpy:1249
 translate english kira_photoset3_79e4dfc7:
 
     # Max_04 "Нисколько, тётя Кира... Ты просто обалденно выглядишь!"
-    Max_04 ""
+    Max_04 "Not at all, Aunt Kira... You look great!"
 
 # game/dialogues/kiratalk.rpy:1250
 translate english kira_photoset3_3db22fb1:
 
     # Kira_05 "Заходи в комнату. Теперь нужно подготовить к фотосессии тебя..." nointeract
-    Kira_05 "" nointeract
+    Kira_05 "Come into the room. Now we have to get you ready for the photo shoot..." nointeract
 
 # game/dialogues/kiratalk.rpy:1261
 translate english kira_photoset3_993c772c:
 
     # Kira_07 "Итак, Макс, поскольку фотографировать сегодня будешь не ты, твоё место именно здесь - быть привязанным на этой кровати."
-    Kira_07 ""
+    Kira_07 "So, Max, since you're not the one taking the pictures today, this is where you belong - tied up on this bed."
 
 # game/dialogues/kiratalk.rpy:1262
 translate english kira_photoset3_76e773e0:
 
     # Max_08 "Что? Я буду... А ты?"
-    Max_08 ""
+    Max_08 "What? I'll be... What about you?"
 
 # game/dialogues/kiratalk.rpy:1263
 translate english kira_photoset3_996ceb9d:
 
     # Kira_04 "Не бойся, я тоже здесь буду. Раздевайся и ложись. Сегодня развлечёмся от души."
-    Kira_04 ""
+    Kira_04 "Don't worry, I'll be here too. Get undressed and lie down. Tonight we're going to have a lot of fun."
 
 # game/dialogues/kiratalk.rpy:1264
 translate english kira_photoset3_e122c94d:
 
     # Max_07 "Ну ладно, если так, то я готов..."
-    Max_07 ""
+    Max_07 "All right, if that's the case, I'm ready..."
 
 # game/dialogues/kiratalk.rpy:1269
 translate english kira_photoset3_951bde54:
 
     # Kira_05 "Ну что, нигде не жмёт? Я надеюсь, ты не возражаешь, что я тебя привязала..."
-    Kira_05 ""
+    Kira_05 "Doesn't it pinch anywhere? I hope you don't mind that I tied you up..."
 
 # game/dialogues/kiratalk.rpy:1270
 translate english kira_photoset3_7366b9f7:
 
     # Max_03 "Самое время спрашивать такое, тётя Кира, но с такой красоткой, как ты, я на всё согласен!"
-    Max_03 ""
+    Max_03 "It's a good time to ask this, Aunt Kira, but with a pretty girl like you, I'll do anything!"
 
 # game/dialogues/kiratalk.rpy:1271
 translate english kira_photoset3_786ac9ba:
 
     # Kira_06 "Запомни эту красотку как следует, потому что больше ты ничего не увидишь."
-    Kira_06 ""
+    Kira_06 "Remember this hottie well, because you won't see anything else."
 
 # game/dialogues/kiratalk.rpy:1272
 translate english kira_photoset3_a63c2d23:
 
     # Max_10 "В смысле, не увижу?"
-    Max_10 ""
+    Max_10 "What do you mean, I won't see it?"
 
 # game/dialogues/kiratalk.rpy:1277
 translate english kira_photoset3_89c8924f:
 
     # Kira_02 "В том самом, мой мальчик! Вся фотосессия пройдёт для тебя в этой повязке. Это чтобы ты не застеснялся фотосъёмки..."
-    Kira_02 ""
+    Kira_02 "That's the one, my boy! The whole photo shoot will be in this blindfold for you. It's so you won't be embarrassed about the photo shoot..."
 
 # game/dialogues/kiratalk.rpy:1278
 translate english kira_photoset3_dac3cef7:
 
     # Max_09 "Нуу... С повязкой на глазах, конечно, хуже, но... я готов потерпеть."
-    Max_09 ""
+    Max_09 "Well... It's worse with a blindfold, of course, but... I'm willing to put up with it."
 
 # game/dialogues/kiratalk.rpy:1279
 translate english kira_photoset3_68ecebb7:
 
     # Kira_07 "Потерпеть?! Неужели тебе не нравится, что твоя тётя села на тебя и чувствует, как в её попку упирается большой член?"
-    Kira_07 ""
+    Kira_07 "Be patient?! Don't you just love it when your aunt sits on top of you and feels that big cock resting in her ass?"
 
 # game/dialogues/kiratalk.rpy:1280
 translate english kira_photoset3_fe45addd:
 
     # Max_02 "Нравится, и даже очень, просто видеть это было бы ещё лучше!"
-    Max_02 ""
+    Max_02 "I like it, and even a lot, just seeing it would have been even better!"
 
 # game/dialogues/kiratalk.rpy:1281
 translate english kira_photoset3_b20a3097:
 
     # Kira_05 "Уверяю тебя, Макс, ты ни о чём не пожалеешь, к тому же, подобная интрига только усиливает возбуждение. С завязанными глазами все чувства обостряются."
-    Kira_05 ""
+    Kira_05 "I assure you, Max, you won't regret a thing, and besides, this kind of intrigue only increases the excitement. All senses are heightened when you're blindfolded."
 
 # game/dialogues/kiratalk.rpy:1282
 translate english kira_photoset3_b287dbfe:
 
     # Max_04 "Это да..."
-    Max_04 ""
+    Max_04 "That's right..."
 
 # game/dialogues/kiratalk.rpy:1288
 translate english kira_photoset3_178c3eb8:
 
     # Kira_01 "О... А вот и наш фотограф... Как раз вовремя. Проходи, чувствуй себя как дома..."
-    Kira_01 ""
+    Kira_01 "О... There's our photographer... Just in time. Come on in, make yourself at home..."
 
 # game/dialogues/kiratalk.rpy:1289
 translate english kira_photoset3_5a80b1a2:
 
     # Max_01 "Привет! Я, Макс. А вы?"
-    Max_01 ""
+    Max_01 "Hi! I'm Max. And you are?"
 
 # game/dialogues/kiratalk.rpy:1295
 translate english kira_photoset3_6e6c2203:
 
     # Kira_02 "Макс, ты не отвлекайся и представь, что здесь только мы с тобой вдвоём. А на то, что нас там кто-то снимает - не обращай внимания."
-    Kira_02 ""
+    Kira_02 "Max, don't get distracted and pretend it's just the two of us. And don't pay attention to anyone filming us there."
 
 # game/dialogues/kiratalk.rpy:1296
 translate english kira_photoset3_df2acbeb:
 
     # Max_07 "Ох... Ну ладно."
-    Max_07 ""
+    Max_07 "Oh... Okay."
 
 # game/dialogues/kiratalk.rpy:1297
 translate english kira_photoset3_6a59296c:
 
     # Kira_05 "Начнём... Нам предстоит сделать несколько снимков, на которых и ты, и я должны показать всю свою страсть!"
-    Kira_05 ""
+    Kira_05 "Let's begin... We're going to take some pictures in which both you and I have to show all our passion!"
 
 # game/dialogues/kiratalk.rpy:1298
 translate english kira_photoset3_38334523:
 
     # Max_09 "Я постараюсь, но... не знаю, как это сделать, будучи связанным."
-    Max_09 ""
+    Max_09 "I'll try, but... I don't know how to do it, being tied up."
 
 # game/dialogues/kiratalk.rpy:1304
 translate english kira_photoset3_ea3ab740:
 
     # Kira_06 "Ну, да... Здесь нужна поправка. Это я должна показать всю свою страсть. А твоя задача - её выдержать и не кончить раньше времени."
-    Kira_06 ""
+    Kira_06 "Well, yes... A correction is needed here. I'm the one who has to show all my passion. And your job is to endure it and not cum before it's time."
 
 # game/dialogues/kiratalk.rpy:1305
 translate english kira_photoset3_1c75271f:
 
     # Max_03 "Пока это проще простого. Я даже не особо возбудился..."
-    Max_03 ""
+    Max_03 "As long as it's the easiest thing to do. I'm not even particularly excited..."
 
 # game/dialogues/kiratalk.rpy:1311
 translate english kira_photoset3_65d2418d:
 
     # Kira_07 "Это потому что ты не видишь, как я прямо сейчас стою над тобой и медленно... и красиво... {p=1.5}{nw}"
-    Kira_07 ""
+    Kira_07 "That's because you can't see me standing over you right now and slowly... and beautiful... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1313
 translate english kira_photoset3_b3251128:
 
     # extend "стягиваю с себя те блестящие трусики, которые ты видел..."
-    extend ""
+    extend "pulling down those shiny panties you saw..."
 
 # game/dialogues/kiratalk.rpy:1314
 translate english kira_photoset3_4b50b734:
 
     # Max_02 "Хорошо, что я могу это хотя бы представить..."
-    Max_02 ""
+    Max_02 "It's good that I can at least imagine it..."
 
 # game/dialogues/kiratalk.rpy:1320
 translate english kira_photoset3_1d01b95a:
 
     # Kira_02 "Ну, а теперь, приступим к самому главному... Не помню, говорила я тебе или нет, но наша прошлая фотосессия произвела настоящий фурор..."
-    Kira_02 ""
+    Kira_02 "Well, now, let's get to the most important part... I don't know if I told you, but our last photo shoot was a real sensation..."
 
 # game/dialogues/kiratalk.rpy:1321
 translate english kira_photoset3_e8358619:
 
     # Max_07 "Даже так?"
-    Max_07 ""
+    Max_07 "Even so?"
 
 # game/dialogues/kiratalk.rpy:1323
 translate english kira_photoset3_6992bca7:
 
     # Kira_04 "Да, Макс. Я ещё до неё хотела, чтобы ты меня трахнул, но подумала, что это должно произойти как-то... необычно... А теперь, я подумала, что было весьма неплохо снять её продолжение, где мы меняемся местами. Тем более, что это могло бы принести неплохие деньги."
-    Kira_04 ""
+    Kira_04 "Yes, Max. I wanted you to fuck me before that, but I thought it had to be somehow... unusual... Now, I thought it would be a good idea to do a sequel where we switch places. Especially since it could bring in some good money."
 
 # game/dialogues/kiratalk.rpy:1324
 translate english kira_photoset3_88946752:
 
     # Max_03 "Ничего себе... Так я в доле?"
-    Max_03 ""
+    Max_03 "Wow... So I'm in on it?"
 
 # game/dialogues/kiratalk.rpy:1330
 translate english kira_photoset3_723ef05a:
 
     # Kira_07 "А разве тебе не достаточно того, что ты вытворяешь со мной на этих фотосессиях?!"
-    Kira_07 ""
+    Kira_07 "Haven't you had enough of what you're doing to me in these photo shoots?!"
 
 # game/dialogues/kiratalk.rpy:1331
 translate english kira_photoset3_9bcf82e6:
 
     # Max_07 "Ну... Сейчас я как раз таки ничего и не вытворяю!"
-    Max_07 ""
+    Max_07 "Well... I'm not doing anything right now!"
 
 # game/dialogues/kiratalk.rpy:1332
 translate english kira_photoset3_9fa6c5f4:
 
     # Kira_06 "Ммм... Это ты верно подметил. Это я совсем потеряла голову, привязала своего племянника к кровати его матери и играюсь своим нежным язычком с его пульсирующим от возбуждения членом!"
-    Kira_06 ""
+    Kira_06 "Mmm... That's a good point. I'm the one who lost my head, tied my nephew to his mother's bed and playing with my tender tongue on his throbbing, aroused cock!"
 
 # game/dialogues/kiratalk.rpy:1333
 translate english kira_photoset3_01f1527f:
 
     # Max_04 "Ох... А как приятно... Только вот..."
-    Max_04 ""
+    Max_04 "Oh... How nice... Except that..."
 
 # game/dialogues/kiratalk.rpy:1339
 translate english kira_photoset3_b53667ec:
 
     # Kira_03 "Я делаю что-то не так, Макс? {p=1.5}{nw}"
-    Kira_03 ""
+    Kira_03 "Am I doing something wrong, Max? {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1341
 translate english kira_photoset3_f26895a9:
 
     # extend "Ты можешь сказать, как тебе больше нравится..."
-    extend ""
+    extend "You can say how you like it better..."
 
 # game/dialogues/kiratalk.rpy:1342
 translate english kira_photoset3_fd10fafc:
 
     # Max_09 "Нет, всё так... Просто меня ещё немного смущает моё положение и то, что фотографирую не я..."
-    Max_09 ""
+    Max_09 "No, that's right... It's just that I'm a little embarrassed by my position and the fact that I'm not the one taking the picture..."
 
 # game/dialogues/kiratalk.rpy:1343
 translate english kira_photoset3_020b2ea4:
 
     # Kira_02 "Вот значит в чём дело... Видимо, я действую недостаточно отвлекающе, раз ты обращаешь внимание на подобные мелочи."
-    Kira_02 ""
+    Kira_02 "So here's the thing... Apparently, I'm not distracting enough for you to pay attention to little things like that."
 
 # game/dialogues/kiratalk.rpy:1344
 translate english kira_photoset3_a8ed8e48:
 
     # Max_01 "Вовсе нет..."
-    Max_01 ""
+    Max_01 "Not at all..."
 
 # game/dialogues/kiratalk.rpy:1349
 translate english kira_photoset3_8560116e:
 
     # Kira_05 "Я так думаю, чтобы отвлечь тебя от разных посторонних мыслей мне нужно несколько углубить процесс и... заняться твоим членом по-настоящему. Ты ведь не будешь против?"
-    Kira_05 ""
+    Kira_05 "I think to take your mind off things, I need to go a little deeper and... get my hands on your dick for real. You don't mind, do you?"
 
 # game/dialogues/kiratalk.rpy:1350
 translate english kira_photoset3_d0ec3c2d:
 
     # Max_03 "О, нет... Такое только приветствуется!"
-    Max_03 ""
+    Max_03 "Oh, no... This is welcome!"
 
 # game/dialogues/kiratalk.rpy:1351
 translate english kira_photoset3_14aeb79a:
 
     # Kira_09 "Я так и подумала... Ммм... Он такой напряжённый... О да! Я чувствую, что тебе нравится то, как смачно и медленно я это делаю..."
-    Kira_09 ""
+    Kira_09 "That's what I thought... Mmm... It's so intense... Oh yeah! I can feel you like the way I do it nice and slow..."
 
 # game/dialogues/kiratalk.rpy:1353
 translate english kira_photoset3_3cc83653:
 
     # Max_19 "Охх... Тётя Кира, твои губы... они... такие..."
-    Max_19 ""
+    Max_19 "Ohhh... Aunt Kira, your lips... they're... so..."
 
 # game/dialogues/kiratalk.rpy:1358
 translate english kira_photoset3_b837cd37:
 
     # Kira_06 "Судя по тому, что читается в глазах моей подруги, ей тоже нравится, как мои губы обхаживают твой член... Ммм..."
-    Kira_06 ""
+    Kira_06 "Judging by the look in my friend's eyes, she likes the way my lips are grooming your cock, too... Mmm..."
 
 # game/dialogues/kiratalk.rpy:1359
 translate english kira_photoset3_3356e093:
 
     # Max_20 "О да... Только не торопись..."
-    Max_20 ""
+    Max_20 "Oh yes... Just take your time..."
 
 # game/dialogues/kiratalk.rpy:1365
 translate english kira_photoset3_7f0a1c51:
 
     # Max_21 "О, Господи... Если фотографии получатся не такими же сочными, как твой минет, тётя Кира... {p=1.5}{nw}"
-    Max_21 ""
+    Max_21 "Oh, my God... If the pictures don't come out as juicy as your blow job, Aunt Kira... {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1367
 translate english kira_photoset3_34802b52:
 
     # extend "Ухх... Твою подругу придётся хорошенько отшлёпать!"
-    extend ""
+    extend "Ugh... Your friend is going to need a good spanking!"
 
 # game/dialogues/kiratalk.rpy:1372
 translate english kira_photoset3_2e774034:
 
     # Kira_08 "Не знаю, что заводит меня больше, твой упругий член, только что побывавший у меня во рту или фантазии о том, что мы тут втроём могли бы устроить..."
-    Kira_08 ""
+    Kira_08 "I don't know what turns me on more, your hard cock that's just been in my mouth, or the fantasy of what the three of us could do here..."
 
 # game/dialogues/kiratalk.rpy:1373
 translate english kira_photoset3_da5fc595:
 
     # Max_05 "Ого! От такого я не откажусь..."
-    Max_05 ""
+    Max_05 "Wow! I wouldn't say no to that..."
 
 # game/dialogues/kiratalk.rpy:1374
 translate english kira_photoset3_967cfe2e:
 
     # Kira_07 "Я в этом не сомневалась, но для начала я бы на месте моей подруги сделала снимок того, как классно мы смотримся, когда я трусь грудью о твой член. Или не стоит, как думаешь, Макс?"
-    Kira_07 ""
+    Kira_07 "I didn't doubt that, but if I were my friend, I'd take a picture of how great we look when I rub my breasts against your cock. Or should I not, don't you think, Max?"
 
 # game/dialogues/kiratalk.rpy:1376
 translate english kira_photoset3_1509b96a:
 
     # Max_02 "Однозначно стоит!"
-    Max_02 ""
+    Max_02 "Definitely worth it!"
 
 # game/dialogues/kiratalk.rpy:1381
 translate english kira_photoset3_227d9c5c:
 
     # Kira_05 "Дорогая, не поможешь мне? Я уже вся изнываю от желания потрахаться с Максом! Ну как тебе? Очень заводит, держать такой член в руке, не правда ли? Да... Вижу по твоей улыбке, что заводит..."
-    Kira_05 ""
+    Kira_05 "Honey, will you help me? I'm all hungry to fuck Max! What do you think? It's very exciting to have that cock in your hand, isn't it? Yes... I can tell by your smile that it's hot..."
 
 # game/dialogues/kiratalk.rpy:1382
 translate english kira_photoset3_ba9d0021:
 
     # Max_04 "{i}( У тётиной подруги приятные руки! Она очень возбуждает своими прикосновениями... Она так уверенно водит моим членом по Кириной киске, что складывается впечатление, будто она не просто фотограф, а порноактриса! Хотя, может у неё просто большой опыт в таких фотосессиях... ){/i}"
-    Max_04 ""
+    Max_04 "{i}( My aunt's friend has nice hands! She's very arousing with her touch... She's so confident in guiding my cock around Kirina's pussy, it's as if she's not just a photographer, but a porn actress! Although, maybe she just has a lot of experience in such photo shoots... ){/i}"
 
 # game/dialogues/kiratalk.rpy:1388
 translate english kira_photoset3_4e3a97cd:
 
     # Kira_02 "Чувствуешь, какая я мокренькая, Макс? {p=1.5}{nw}"
-    Kira_02 ""
+    Kira_02 "Do you feel how wet I am, Max? {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1390
 translate english kira_photoset3_35211b2c:
 
     # extend "Ты как, готов трахнуть свою тётю или тебя ещё помучить..."
-    extend ""
+    extend "Are you ready to fuck your aunt or do you want to be tortured..."
 
 # game/dialogues/kiratalk.rpy:1391
 translate english kira_photoset3_bc109d9b:
 
     # Max_10 "Не томи, тётя Кира! Опустись на него..."
-    Max_10 ""
+    Max_10 "Don't be stingy, Aunt Kira! Get down on it..."
 
 # game/dialogues/kiratalk.rpy:1397
 translate english kira_photoset3_294a1faf:
 
     # Kira_09 "Ну, конечно, мой мальчик... С превеликим удовольствием... Ахх... Боже мой, Макс... Ммм... Как же я хотела почувствовать его внутри... Д-а-а..."
-    Kira_09 ""
+    Kira_09 "Well, of course, my boy... With the greatest pleasure... Ahh... My God, Max. Mmm... How I wanted to feel him inside me. Y-a-a..."
 
 # game/dialogues/kiratalk.rpy:1398
 translate english kira_photoset3_b5cbeb17:
 
     # Max_20 "Вот так, тётя Кира... Эта фотосессия мне нравится всё больше и больше!"
-    Max_20 ""
+    Max_20 "That's it, Aunt Kira... I'm liking this photo shoot more and more!"
 
 # game/dialogues/kiratalk.rpy:1399
 translate english kira_photoset3_8d918d94:
 
     # Kira_10 "Охх... Да... Вот так, Макс! Я просто схожу с ума от твоего члена... Он так глубоко проникает в мою маленькую беззащитную киску... Д-а-а... Ещё... Пожалуй, я развернусь и покажу себя во всей красе..."
-    Kira_10 ""
+    Kira_10 "Ohhh... Yes... That's it, Max! I'm just crazy about your cock... It goes so deep into my little defenseless pussy... Yeah... More... I think I'll turn around and show myself in all my glory."
 
 # game/dialogues/kiratalk.rpy:1400
 translate english kira_photoset3_c5243774:
 
     # Max_19 "Да! Делай всё, что нужно, чтобы снимки получились отпадными, прямо как ты!"
-    Max_19 ""
+    Max_19 "Yes! Do whatever it takes to make the pictures look awesome, just like you!"
 
 # game/dialogues/kiratalk.rpy:1405
 translate english kira_photoset3_a90610b4:
 
     # Kira_12 "Ох, как хорошо! Хочу ещё! Вот так... Ммм... Я уже так близко! Больше не могу, Макс... Ммм... Да, я кончаю... Ахх... Это такое наслаждение!"
-    Kira_12 ""
+    Kira_12 "Oh, it's so good! I want more! Like this... Mmm... I'm so close! I can't take it anymore, Max... Mmm... Yes, I'm coming... Ahhh... It's such a pleasure."
 
 # game/dialogues/kiratalk.rpy:1406
 translate english kira_photoset3_37967e78:
 
     # Max_21 "{i}( Ого! Вот это она разошлась! Скачет на мне так громко, что шлепки о её попку мне уши закладывают... И это обалденно! ){/i}"
-    Max_21 ""
+    Max_21 "{i}( Wow, she's really going wild! She's riding me so loud that the slapping of her ass is making my ears pop... And it's awesome! ){/i}"
 
 # game/dialogues/kiratalk.rpy:1412
 translate english kira_photoset3_66f2bbc9:
 
     # Kira_11 "О Боже, Макс... Я так сладко кончила! {p=1.5}{nw}"
-    Kira_11 ""
+    Kira_11 "Oh my God, Max... I came so sweet! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1414
 translate english kira_photoset3_8c30c98f:
 
     # extend "У меня до сих пор дрожь по телу..."
-    extend ""
+    extend "I still get shivers in my body..."
 
 # game/dialogues/kiratalk.rpy:1415
 translate english kira_photoset3_d4f0958c:
 
     # Max_05 "Я сам чуть не кончил под такой горячей наездницей, как ты! Еле сдержался."
-    Max_05 ""
+    Max_05 "I almost cum myself under a hot rider like you! I could hardly contain myself."
 
 # game/dialogues/kiratalk.rpy:1420
 translate english kira_photoset3_20208222:
 
     # Kira_02 "Я бы, конечно, хотела, чтобы мы кончили вместе, но раз уж ты настроен на продолжение, то нам с подругой есть чем тебя впечатлить..."
-    Kira_02 ""
+    Kira_02 "Of course, I'd like us to cum together, but since you're in the mood to go on, my friend and I have something to impress you with..."
 
 # game/dialogues/kiratalk.rpy:1421
 translate english kira_photoset3_30482127:
 
     # Max_07 "С подругой? То есть прямо вместе с ней?!"
-    Max_07 ""
+    Max_07 "With a friend? You mean right along with her?!"
 
 # game/dialogues/kiratalk.rpy:1422
 translate english kira_photoset3_63d15de1:
 
     # Kira_07 "Нуу... Ты же не будешь против, если мы с ней воспользуемся твоим безвыходным положением и немного пошалим?"
-    Kira_07 ""
+    Kira_07 "Well... You wouldn't mind if she and I took advantage of your desperate situation to have a little fun, would you?"
 
 # game/dialogues/kiratalk.rpy:1423
 translate english kira_photoset3_05822ce8:
 
     # Max_08 "Смотря как! Но кто-то из вас уже во всю шалит с моими яичками... И это не ты, тётя Кира!"
-    Max_08 ""
+    Max_08 "That depends! But one of you is already messing with my testicles... And it ain't you, Aunt Kira!"
 
 # game/dialogues/kiratalk.rpy:1424
 translate english kira_photoset3_105cf0a1:
 
     # Kira_05 "Не переживай, я тоже не оставлю тебя без внимания... Наслаждайся!"
-    Kira_05 ""
+    Kira_05 "Don't worry, I won't leave you out either... Enjoy!"
 
 # game/dialogues/kiratalk.rpy:1430
 translate english kira_photoset3_74e000f2:
 
     # Max_19 "{i}( Вот чёрт! Ничего себе! Вот она, мечта всех мужчин - оказаться во власти двух опытных женщин, которые будто соревнуются друг с другом в мастерстве оральных ласк! Ухх... Я просто улетаю... ){/i}" nointeract
-    Max_19 "" nointeract
+    Max_19 "{i}( Oh, shit! Wow! Here it is, the dream of all men - to be in the power of two experienced women, as if competing with each other in the skill of oral caresses! Ugh... I'm flying... ){/i}" nointeract
 
 # game/dialogues/kiratalk.rpy:1439
 translate english kira_photoset3_5fba5ab5:
 
     # Max_22 "Девчонки... То, что вы делаете... Охх... Это что-то невероятное! Д-а-а... Давайте ещё быстрее... Сейчас я взорвусь! Ахх... Да!!!"
-    Max_22 ""
+    Max_22 "Girls... What you're doing... Ohhh... This is something incredible! Yeah... Let's go faster... I'm going to explode! Ahhh... Yes!!!"
 
 # game/dialogues/kiratalk.rpy:1445
 translate english kira_photoset3_352c2af4:
 
     # Max_06 "{i}( Фух... Не знаю, в чей такой жаркий и влажный ротик я кончил, но было потрясающе! А девчонки всё не унимаются и продолжают полировать мой член... Просто сказка! ){/i}"
-    Max_06 ""
+    Max_06 "{i}( Whew... I don't know whose hot and wet mouth I cum in, but it was amazing! And the girls wouldn't let up and kept polishing my dick... It was like a fairy tale! ){/i}"
 
 # game/dialogues/kiratalk.rpy:1451
 translate english kira_photoset3_4b7c8eab:
 
     # Kira_07 "Вау! Боже мой, Макс... Сколько спермы... Нашему мальчику явно очень понравилось! Давайте сделаем фото на память о нашей небольшой групповушке..."
-    Kira_07 ""
+    Kira_07 "Wow! My God, Max... That's a lot of sperm. Our boy obviously loved it! Let's take a picture of our little threesome..."
 
 # game/dialogues/kiratalk.rpy:1458
 translate english kira_photoset3_90a04c35:
 
     # Kira_07 "Вау! Боже мой, Макс... Сколько спермы... Не удивлена, что ты не мог больше сдерживаться! Давайте сделаем фото на память о нашей небольшой групповушке..."
-    Kira_07 ""
+    Kira_07 "Wow! My God, Max... That's a lot of sperm... I'm not surprised you couldn't hold back any longer! Let's take a picture of our little threesome..."
 
 # game/dialogues/kiratalk.rpy:1461
 translate english kira_photoset3_bd6e3776:
 
     # Max_05 "Ты потрясающая, тётя Кира! Вернее, вы обе..."
-    Max_05 ""
+    Max_05 "You're amazing, Aunt Kira! Or rather, both of you..."
 
 # game/dialogues/kiratalk.rpy:1462
 translate english kira_photoset3_bff4b790:
 
     # Kira_05 "Да, мы такое слышали... Спасибо за комплимент! И тебе спасибо, что поучаствовал в этой фотосессии."
-    Kira_05 ""
+    Kira_05 "Yes, we've heard that... Thanks for the compliment! And thank you for participating in this photo shoot."
 
 # game/dialogues/kiratalk.rpy:1463
 translate english kira_photoset3_02014015:
 
     # Max_03 "Очень рад был помочь! Вы почаще обращайтесь..."
-    Max_03 ""
+    Max_03 "Very happy to be of help! You should come more often..."
 
 # game/dialogues/kiratalk.rpy:1464
 translate english kira_photoset3_cbf2cef8:
 
     # Kira_04 "Мы обязательно придумаем что-нибудь ещё, а пока полежи немного, мы тут немного приведём себя в порядок и я тебя развяжу." nointeract
-    Kira_04 "" nointeract
+    Kira_04 "We'll think of something else, but in the meantime, lie down for a while and we'll clean up a bit and I'll untie you." nointeract
 
 # game/dialogues/kiratalk.rpy:1472
 translate english kira_photoset3_d4c901c6:
 
     # Kira_07 "Ну всё, отлично повеселились... А теперь иди, твоей утомлённой тётушке нужно отдохнуть. Да и наши уже вот-вот вернутся..."
-    Kira_07 ""
+    Kira_07 "That's it, we had a great time... Now go, your weary aunt needs to rest. And ours will be back any minute now..."
 
 # game/dialogues/kiratalk.rpy:1473
 translate english kira_photoset3_efcf1970:
 
     # Max_10 "О! А твоя подруга что, уже ушла?! А я так хотел её увидеть..."
-    Max_10 ""
+    Max_10 "О! Did your friend leave already?! I was looking forward to seeing her..."
 
 # game/dialogues/kiratalk.rpy:1474
 translate english kira_photoset3_cfdbd3a5:
 
     # Kira_06 "Ещё увидишь, Макс, за это можешь не переживать. Я тут уже серьёзно думаю своими собственными порно-проектами заниматься и она в стороне не останется. Мы ведь с ней очень близкие подруги!"
-    Kira_06 ""
+    Kira_06 "You'll see, Max, you don't have to worry about that. I'm already seriously thinking about doing my own porno projects, and she's not going to be left out. She and I are very close friends!"
 
 # game/dialogues/kiratalk.rpy:1475
 translate english kira_photoset3_5da918b8:
 
     # Max_07 "А для меня там местечко в проектах найдётся?"
-    Max_07 ""
+    Max_07 "Is there a place for me in the projects?"
 
 # game/dialogues/kiratalk.rpy:1476
 translate english kira_photoset3_4fd9eeec:
 
     # Kira_02 "На тебя я как раз таки и рассчитывала больше всего!"
-    Kira_02 ""
+    Kira_02 "I was counting on you the most!"
 
 # game/dialogues/kiratalk.rpy:1477
 translate english kira_photoset3_e5c7363f:
 
     # Max_04 "Шикарно!"
-    Max_04 ""
+    Max_04 "Awesome!"
 
 translate english strings:
 
     # game/dialogues/kiratalk.rpy:1250
     old "{i}зайти в комнату{/i}"
-    new ""
+    new "{i}Step inside{/i}"
 
     # game/dialogues/kiratalk.rpy:1430
     old "{i}Наслаждаться{/i} {color=[ch.col]}(Сексуальный опыт. Шанс: [ch.vis]){/color}"
-    new ""
-
+    new "{i}Enjoy{/i} {color=[ch.col]}(Sexual Experience. Chance: [ch.vis]){/color}"
