@@ -1496,63 +1496,63 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лучше придержать деньги на развитие блога Алисы, а значит потребуются успехи в возможности \"Блог\"..."
-    new ""
+    new "It is better to hold on to the money to help develop Alice's blog, which means it will need progression in the \"blog\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно снова попасться Алисе на глаза, когда она принимает душ..."
-    new ""
+    new "We need to catch Alice's attention again when she takes a shower..."
 
     # game/core/09_opportunities.rpy:4
     old "Алиса в очередной раз поймала меня на подглядывании за ней, а когда я пришёл извиняться, попросила купить ей кожаный костюм для ролевых игр. Во-первых, это удовольствие будет подороже остальных моих покупок! А во-вторых, с кем это она собирается играть? Она намекнула, что есть с кем. Если это будет происходить у нас дома, то я хочу оказаться в первых рядах на подглядывание за этим. Но сперва этот самый кожаный костюм надо купить и желательно быстрее, чем за четыре дня."
-    new ""
+    new "Alice once again caught me peeping at her, and when I came to apologize, she asked me to buy her a leather costume for role-playing. First of all, it would be more expensive than the rest of my purchases! And second of all, who is she going to play with? She hinted that there was someone. If it's going to take place at our house, I want to be in the front row for a sneak peek at it. But first, that very leather suit has to be bought, and preferably in less than four days."
 
     # game/core/09_opportunities.rpy:4
     old "По-моему Алиса начинает наглеть. Не то что примерять при мне этот костюмчик не хочет, а даже просто показаться в нём. Интересно, сколько ещё всего она попросит ей купить, прежде чем поймёт, что подглядывать за ней я не перестану. Или она просто будет просить вещи всё дороже и дороже? Посмотрим..."
-    new ""
+    new "I think Alice is getting cocky. Not only does she not want to try on the costume in front of me, she doesn't even want to show her face in it. I wonder how many more things she'll ask me to buy her before she realizes that I won't stop peeking at her. Or will she just keep asking for more and more expensive things? We'll see..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно узнать, будет ли Алиса всё больше наглеть с запросами..."
-    new ""
+    new "We'll have to see if Alice gets more and more insolent with her requests..."
 
     # game/core/09_opportunities.rpy:4
     old "Всё, в довесок к кожаному костюму пошли аксессуары... Алисе теперь нужна какая-то плётка, которой лошадей по заднице шлёпают, чтобы они резвее скакали. С радостью бы такой плёткой Алисину попку отшлёпал... Хотя, как знать, может однажды и удастся это сделать. Как же она сказала эта плётка называется? Стек, кажется... Нужно посмотреть, есть ли что-то такое в интернет магазине..."
-    new ""
+    new "Now, the leather suit was complemented by accessories... I was in a hurry to get a whip that I could use on the horses' asses to make them gallop faster. I'd love to spank Alice's ass with that whip... Though who knows, maybe one day I'll get to do it. What did she say the whip was called? Stack, I think... I'll have to see if they have something like that in the online store..."
 
     # game/core/09_opportunities.rpy:4
     old "Фух, повезло не испытать на себе этот самый стек, который я подарил Алисе. Что же за БДСМ-игры она собирается затевать? И ещё более интересно, с кем?! Сейчас же я пока что могу лишь узнать, что ещё она попросит в дополнение к своему костюму... Ошейник... Зажимы на соски... Я уже ничему не удивлюсь."
-    new ""
+    new "Phew, I was lucky not to experience the very stack I had given Alice. What kind of BDSM game is she going to play? And even more interesting, with whom?! For now, I can only find out what else she will ask for in addition to her costume... A collar... Nipple clamps... I wouldn't be surprised at anything."
 
     # game/core/09_opportunities.rpy:4
     old "В очередной раз, извиняясь перед Алисой, что-то пошло не так... Она не стала ничего просить, лишь сказала, что наказание, которое она для меня придумала, переносится на вечер. Но я обязательно должен подойти к ней, когда она будет смотреть ТВ ближе к ночи. Можно, конечно, и не ходить, но тогда на следующий день Алиса всё расскажет маме о моих подглядываниях и меня всё равно накажут перед всеми. Так что хорошо было бы узнать, что там Алиса придумала для меня. Хотя бы для сравнения..."
-    new ""
+    new "Once again, while apologizing to Alice, something went wrong... She didn't ask for anything, just said that the punishment she had in mind for me was postponed until the evening. But I should definitely go up to her while she's watching TV closer to nighttime. I could, of course, not go, but then the next day Alice would tell Mom all about my peeping and I would still be punished in front of everyone. So it would be good to know what Alice had in mind for me. At least for comparison..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь, если мне есть за что извиняться перед Алисой, нужно подходить к ней, когда она смотрит ТВ..."
-    new ""
+    new "Now, if I have something to apologize to Alice for, I have to go up to her when she's watching TV..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот и все кожаные атрибуты, которые я покупал Алисе, в деле! Смотрится она возбуждающе... Правда, это немного омрачается тем, что она меня привязала к стулу и пыталась запугать. Признаюсь, неизвестность от того, что она вздумает сделать своей плёткой немного настораживала, но в целом это было забавно. Только вот не понятно, зачем нужно было так сексуально наряжаться, чтобы меня запугать?! Думаю, стоит проверить, что она будет делать, если я всё равно продолжу за ней подглядывать..."
-    new ""
+    new "So much for all the leather paraphernalia I bought Alice, in action! It looks exciting... It's a little overshadowed, though, by the fact that she tied me to a chair and tried to intimidate me. I have to admit, the uncertainty of what she was going to do with her whip was a little alarming, but overall it was fun. Except I don't know why she had to dress up so sexy to intimidate me! I think it's worth checking out what she'll do if I keep peeking at her anyway..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно снова попасться Алисе на глаза, когда она принимает душ. Главное не забыть подойти к ней в этот же день, когда она смотрит ТВ..."
-    new ""
+    new "You need to catch Alice's eye again when she's taking a shower. The main thing is not to forget to approach her on the same day she is watching TV..."
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, что терпению Алисы пришёл конец! Она реально обещает отхлестать меня своим стеком, если я продолжу подглядывать за ней. И я ей верю, настроена она решительно. Вопрос лишь в том, что лучше: получить по заднице от мамы у всех на глазах или унижаться только перед Алисой? К тому же, ещё не известно, будет ли она бить меня сильнее мамы..."
-    new ""
+    new "It seems that Alice's patience has come to an end! She really promises to whip me with her stack if I keep peeking at her. And I believe her, she's determined. The only question is, what's better: to get my ass kicked by my mom in front of everyone, or to humiliate myself only in front of Alice? Besides, I don't know if she'll hit me harder than my mom..."
 
     # game/core/09_opportunities.rpy:4
     old "Как бы странно это не звучало, но нужно выяснить, как меня станет наказывать Алиса за подглядывания. А там уже будет из чего выбирать..."
-    new ""
+    new "As strange as it sounds, I have to figure out how Alice will punish me for peeping. And then there would be plenty to choose from..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот же Алиса обнаглевшая! Раздевайся она говорит... Видите ли, чтобы всё по честному было, раз я на неё голую смотрел, то и наказывать она меня будет голого! С другой стороны, я бы так же поступил, на её месте... Но наказала она меня жёстко! Этот стек... Жалею теперь очень сильно, что подарил его ей. Единственный, пожалуй, плюс - это то, что позорюсь я только перед Алисой, а не перед всеми. Может быть, если я не буду выпендриваться и подчинюсь ей во время наказания, то и влияния на неё я не сильно потеряю? И возможно, я всё-таки смогу сгладить наказание, если уговорю её на конфетку с ликёром..."
-    new ""
+    new "Alice has got nerve! Take off your clothes, she says... You see, to be fair, since I was looking at her naked, she would punish me naked! On the other hand, I would have done the same, if I were her... But she punished me hard! This stack... I regret very much now that I gave it to her. The only good thing, I think, is that I'm embarrassed only in front of Alice, and not in front of everyone. Maybe if I didn't show off and obey her during the punishment, I wouldn't lose much influence over her. And maybe I could still smooth out the punishment if I talked her into a liquor bar..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попытаться задобрить Алису конфетой с ликёром перед тем, как мы отправимся в её комнату, где она меня накажет..."
-    new ""
+    new "It's worth trying to placate Alice with liquor and candy before we go to her room, where she'll punish me..."
 
 # TODO: Translation updated at 2021-08-30 10:26
 
@@ -1560,25 +1560,24 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Через несколько дней нужно будет поинтересоваться у Киры, когда будет новая фотосессия..."
-    new ""
+    new "In a few days we'll have to ask Kira when there will be a new photo shoot..."
 
     # game/core/09_opportunities.rpy:4
     old "Интересно, что такое тётя Кира придумала, если ей важно, чтобы мы достаточно много развлекались по ночам, чтобы я выдержал эту новую фотосессию? И договориться ей с кем-то там нужно... О чём и с кем - неизвестно. Одни вопросы. И видимо, ответы я получу только на самой фотосессии..."
-    new ""
+    new "I wonder what Aunt Kira came up with, if it's important to her that we have enough fun at night for me to make it through this new photo shoot? And she needs to make a deal with someone... About what and with whom, I don't know. Just questions. And apparently I'll only get the answers at the photo shoot itself..."
 
     # game/core/09_opportunities.rpy:4
     old "Кира сказала, что сама со мной поговорит, когда для фотосессии всё будет готово. Остаётся ждать..."
-    new ""
+    new "Kira said she would talk to me herself when everything was ready for the photo shoot. We'll just have to wait..."
 
     # game/core/09_opportunities.rpy:4
     old "Интересно, что такое тётя Кира придумала, если ей важно, чтобы мы достаточно много развлекались по ночам, чтобы я выдержал эту новую фотосессию? Но что известно точно, так это то, что пока она не посчитает, что я продержусь до конца фотосессии, её и не будет. Если тётя Кира хочет поработать над моей выдержкой, то надо не кончать как можно дольше во время наших с ней утех!"
-    new ""
+    new "I wonder what Aunt Kira's idea is, if it's important to her that we have enough fun at night for me to make it through this new photo shoot? But what is known for sure is that until she thinks I'll make it to the end of the photo shoot, there won't be one. If Aunt Kira wants to work on my stamina, she'll have to keep from cumming for as long as possible during our fun!"
 
     # game/core/09_opportunities.rpy:4
     old "Максимально долго не кончал при минете от Киры после секса: [kira.flags.held_out] из 3"
-    new ""
+    new "I didn't cum for the longest time during a blowjob from Kira after sex: [kira.flags.held_out] out of 3"
 
     # game/core/09_opportunities.rpy:4
     old "Фотосессия получилась даже лучше, чем я мог представить! Особенно самый конец... Эта подруга-фотограф Киры очень загадочная личность. Сперва отсняла, как мы с Кирой трахаемся, а потом и вовсе к нам присоединилась! Это прямо мечта - делать всё, что только удумается сразу с двумя женщинами. Правда, в этот раз инициатива была полностью на них, но я бы не прочь развлечься с ними ещё! И почему Кира так скрывает её личность? Ну да ладно, Кира сказала, что я её ещё увижу, а пока мне больше интересно то, что моя тётя собирается заняться собственными порно-проектами и ожидает, что я ей в этом посодействую. Нужно будет поговорить с ней об этом через некоторое время..."
-    new ""
-
+    new "The photo shoot turned out even better than I could have imagined! Especially the very end... This photographer friend of Kira's is a very mysterious person. First she filmed me and Kira fucking, and then she joined us! It's just a dream to do everything with two women at once. This time it was totally on them, but I wouldn't mind having a little more fun with them! And why is Kira so secretive about her identity? Anyway, Kira said I would see her again, but for now I'm more interested in the fact that my aunt is going to do her own porno projects and expects me to help her with that. I'll have to talk to her about that in a little while..."
