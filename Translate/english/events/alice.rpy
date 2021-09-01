@@ -4195,59 +4195,59 @@ translate english strings:
 translate english alice_shower_start_peeping_0ff40eee:
 
     # Max_07 "Ого... Голая Алиса всего в паре метров от меня! Но мне стоит подглядывать очень осторожно... Помогая Алисе с блогом у меня могут возникнуть незапланированные траты, а если она меня сейчас заметит - траты только увеличатся." nointeract
-    Max_07 "" nointeract
+    Max_07 "Wow... Naked Alice is only a few meters away from me! But I should peek very carefully... Helping Alice with the blog might cause me unplanned expenses, and if she notices me now, the expenses will only increase." nointeract
 
 # game/events/alice.rpy:354
 translate english alice_shower_start_peeping_fa1611e6:
 
     # Max_07 "Ого... Голая Алиса всего в паре метров от меня! Как же она хороша... И даже если она меня заметит - не страшно! Выкручусь как-нибудь." nointeract
-    Max_07 "" nointeract
+    Max_07 "Wow... Naked Alice is only a few meters away from me! How good she is... And even if she notices me, that's okay. I'll manage somehow." nointeract
 
 # game/events/alice.rpy:653
 translate english alice_shower_pinded_e826d0b4_1:
 
     # Alice_15 "[spotted!t]Макс!!! Опять ты за мной подглядываешь! Сколько можно-то?! Совсем что ли весь страх потерял?"
-    Alice_15 ""
+    Alice_15 "[spotted!t]Max!!! You're peeping at me again! How many times?! Have you lost all fear?"
 
 # game/events/alice.rpy:654
 translate english alice_shower_pinded_15d601e2_1:
 
     # Max_13 "Нет! Я просто... Так получилось. Чистое совпадение!"
-    Max_13 ""
+    Max_13 "No! I just... It just happened. Pure coincidence!"
 
 # game/events/alice.rpy:655
 translate english alice_shower_pinded_bde1f441:
 
     # Alice_18 "Ух, я тобой займусь вечером, если осмелишься подойти... А сейчас брысь отсюда!!!"
-    Alice_18 ""
+    Alice_18 "Uh, I'll deal with you tonight, if you dare to come over... Now get out of here!!!"
 
 # game/events/alice.rpy:656
 translate english alice_shower_pinded_2df0e482_1:
 
     # Max_10 "Вот чёрт!"
-    Max_10 ""
+    Max_10 "Oh, crap!"
 
 # game/events/alice.rpy:659
 translate english alice_shower_pinded_7dfc0649:
 
     # Alice_15 "[spotted!t]Макс!!! Опять ты здесь! Сколько можно-то?! Тебе по заднице нравится получать что ли?"
-    Alice_15 ""
+    Alice_15 "[spotted!t]Max!!! You're here again! How many times?! Do you like getting your ass kicked?"
 
 # game/events/alice.rpy:660
 translate english alice_shower_pinded_06b9763e:
 
     # Max_13 "Нет! Я просто..."
-    Max_13 ""
+    Max_13 "No! I just..."
 
 # game/events/alice.rpy:661
 translate english alice_shower_pinded_bde1f441_1:
 
     # Alice_18 "Ух, я тобой займусь вечером, если осмелишься подойти... А сейчас брысь отсюда!!!"
-    Alice_18 ""
+    Alice_18 "Uh, I'll deal with you tonight, if you dare to come over... Now get out of here!!!"
 
 # game/events/alice.rpy:662
 translate english alice_shower_pinded_2df0e482_2:
 
     # Max_10 "Вот чёрт!"
-    Max_10 ""
+    Max_10 "Oh, crap!"
 

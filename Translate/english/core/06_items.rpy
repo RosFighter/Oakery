@@ -44,17 +44,17 @@ translate english strings:
 
     # game/core/06_items.rpy:2
     old "ЧЁРНЫЙ КОЖАНЫЙ КОСТЮМ ДЛЯ РОЛЕВЫХ ИГР"
-    new ""
+    new "BLACK LEATHER COSTUME FOR ROLE-PLAYING GAMES"
 
     # game/core/06_items.rpy:2
     old "Женский сексуальный комплект из натуральной кожи чёрного цвета. Топ с воротничком и коротенькие шортики, которые застёгиваются на стильные заклёпки."
-    new ""
+    new "Women's sexy set made of genuine leather in black. Top with collar and short shorts that fasten with stylish rivets."
 
     # game/core/06_items.rpy:2
     old "ЧЁРНЫЙ КОЖАНЫЙ СТЕК"
-    new ""
+    new "BLACK LEATHER STACK"
 
     # game/core/06_items.rpy:2
     old "Стек освежит и разнообразит ваши отношения. Шлепок на конце девайса воспитает дерзкого и непослушного партнера. Секс-игрушка откроет просторы истинного БДСМ."
-    new ""
+    new "The stack will refresh and diversify your relationship. The spanking on the end of the device will bring up a defiant and naughty partner. The sex toy will open up the expanse of true BDSM."
 

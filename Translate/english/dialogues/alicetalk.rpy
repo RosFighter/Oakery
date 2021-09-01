@@ -10778,41 +10778,41 @@ translate english strings:
 translate english alice_nopants_massage_66d83013:
 
     # Alice_05 "Ты только там сильно не заглядывайся, куда не нужно! Я только сейчас поняла, что ты меня подловил со своим уговором не носить трусики. Лучше скорее продолжай массаж, пока я не расхотела..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Just don't look too much where you're not supposed to! I just now realized that you caught me with your entreaty not to wear panties. You'd better get on with the massage before I don't want to..." nointeract
 
 # game/dialogues/alicetalk.rpy:1541
 translate english alice_nopants_massage_ce8910af:
 
     # Max_04 "{i}( Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко и ничем на этот раз не прикрыта... ){/i}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{i}( Alice seems to be really into it! She keeps jerking me off with her legs... Why don't I fondle her pussy too, it's so close and uncovered this time... ){/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1555
 translate english alice_nopants_massage_a12d135b:
 
     # Max_02 "{i}( Ухх... Алиса начала сама тереться об мои пальцы! Теперь, она уже не хочет останавливаться... ){/i}"
-    Max_02 ""
+    Max_02 "{i}( Ugh... Alice began to rub herself against my fingers! Now, she doesn't want to stop... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1565
 translate english alice_nopants_massage_a11e518f:
 
     # Max_05 "{i}( Алиса так жарко и классно трётся об мои пальцы своей киской! Её киска такая мокренькая от возбуждения, что никакого масла для массажа не надо... ){/i}"
-    Max_05 ""
+    Max_05 "{i}( Alice rubs her pussy so hot and cool against my fingers! Her pussy is so wet with excitement, you don't need any massage oil... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1601
 translate english alice_nopants_massage_ed79bd1c:
 
     # Max_02 "Ты правда хочешь, чтобы это было быстро?"
-    Max_02 ""
+    Max_02 "Do you really want it to be quick?"
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:1465
     old "{i}стянуть джинсы до конца{/i}"
-    new ""
+    new "{i}pull the jeans all the way down{/i}"
 
     # game/dialogues/alicetalk.rpy:1491
     old "{i}продолжить массаж{/i}"
-    new ""
+    new "{i}continue massage{/i}"
 
 # TODO: Translation updated at 2021-08-23 18:53
 
@@ -10820,1477 +10820,1477 @@ translate english strings:
 translate english AliceTalkStart_1b0d0df7:
 
     # Max_07 "{i}( Алиса сейчас как раз должна отходить от конфеты с ликёром, так что лучше оставить её на сегодня в покое... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Alice should be coming off the liqueur candy right now, so it's better to leave her alone for today... ){/i}"
 
 # game/dialogues/alicetalk.rpy:16
 translate english AliceTalkStart_ad6170a7:
 
     # Max_09 "{i}( Впечатлений от времяпрепровождения с Алисой мне и в её комнате хватило. Сегодня к ней лучше больше не лезть... ){/i}"
-    Max_09 ""
+    Max_09 "{i}( I had had enough excitement from my time with Alice in her room. It was better to stay away from her today... ){/i}"
 
 # game/dialogues/alicetalk.rpy:1115
 translate english alice_talk_tv_2cedd5bd:
 
     # Alice_12 "Вот так вот просто? Как будто утром было всё так, как должно быть! Где извинения, Макс?!"
-    Alice_12 ""
+    Alice_12 "Just like that? It's like this morning everything was as it should be! Where's the apology, Max?!"
 
 # game/dialogues/alicetalk.rpy:1116
 translate english alice_talk_tv_4bea1b3e:
 
     # Max_07 "Извини, я больше так не буду."
-    Max_07 ""
+    Max_07 "I'm sorry, I won't do it again."
 
 # game/dialogues/alicetalk.rpy:3052
 translate english Alice_sorry_18b50308:
 
     # Alice_05 "Это, конечно, очень здорово, Макс. Дай угадаю... Сейчас ты пообещаешь купить мне сладостей, чтобы мама не узнала, какой ты извращенец, верно?"
-    Alice_05 ""
+    Alice_05 "That's certainly very cool, Max. Let me guess... Now you're going to promise to buy me candy so Mom doesn't find out what a pervert you are, right?"
 
 # game/dialogues/alicetalk.rpy:3053
 translate english Alice_sorry_d47fbc3e:
 
     # Max_01 "Верно. Но ты, видимо, хочешь чего-то другого?"
-    Max_01 ""
+    Max_01 "That's right. But you probably want something else, don't you?"
 
 # game/dialogues/alicetalk.rpy:3054
 translate english Alice_sorry_5d6b678a:
 
     # Alice_01 "О да, Макс! У меня есть кое-какие мыслишки, как отучить тебя от этих \"случайных\" подглядываний за мной."
-    Alice_01 ""
+    Alice_01 "Oh yes, Max! I have some ideas on how to wean you off these \"accidental\" peeks at me."
 
 # game/dialogues/alicetalk.rpy:3055
 translate english Alice_sorry_ad1df19d:
 
     # Max_04 "А может я лучше сам себя отучу..."
-    Max_04 ""
+    Max_04 "Or maybe I'd better wean myself..."
 
 # game/dialogues/alicetalk.rpy:3056
 translate english Alice_sorry_6ce5aa94:
 
     # Alice_02 "Ну уж нет! Макс, ты что?! У нас здесь очень тяжёлый случай - хронический вуайеризм! Но не переживай, уж я возьмусь за твоё лечение... Но это позже... Сейчас, мне нужно кое-что другое."
-    Alice_02 ""
+    Alice_02 "No way! Max, what are you doing? We have a very severe case of chronic voyeurism here. But don't worry, I'll take care of you... But that's for later. Right now, I need something else."
 
 # game/dialogues/alicetalk.rpy:3057
 translate english Alice_sorry_28d4bb71:
 
     # Max_07 "Другое? И что же?"
-    Max_07 ""
+    Max_07 "Other? And what is it?"
 
 # game/dialogues/alicetalk.rpy:3058
 translate english Alice_sorry_2f0085b5:
 
     # Alice_05 "Я тут подумала, что в этот раз стильный кожаный костюмчик вполне мог бы спасти твою задницу от маминого наказания. Их ещё используют в ролевых играх..."
-    Alice_05 ""
+    Alice_05 "I was thinking that this time a stylish leather suit might very well save your ass from your mother's punishment. They're also used in role-playing games..."
 
 # game/dialogues/alicetalk.rpy:3059
 translate english Alice_sorry_a3de421e:
 
     # Max_08 "Ничего себе запросики! И зачем тебе такой? Перед кем ты собираешься его демонстрировать?"
-    Max_08 ""
+    Max_08 "Wow, you're asking a lot! What do you need one of these for? Who are you going to show it to?"
 
 # game/dialogues/alicetalk.rpy:3060
 translate english Alice_sorry_e0e237f3:
 
     # Alice_03 "А вот есть перед кем... Но это не твоё дело, Макс, кому я его продемонстрирую."
-    Alice_03 ""
+    Alice_03 "But there's someone in front of... But it's none of your business, Max, who I show it to."
 
 # game/dialogues/alicetalk.rpy:3061
 translate english Alice_sorry_785271a6:
 
     # Max_02 "Ну, интересно же..."
-    Max_02 ""
+    Max_02 "Well, it's interesting..."
 
 # game/dialogues/alicetalk.rpy:3062
 translate english Alice_sorry_be8e64f4:
 
     # Alice_07 "Не сомневаюсь! Наверняка уже во всю представляешь, как я его при тебе буду примерять, но не угадал."
-    Alice_07 ""
+    Alice_07 "No doubt about it! I'm sure you're already imagining me trying it on in front of you, but you didn't guess."
 
 # game/dialogues/alicetalk.rpy:3063
 translate english Alice_sorry_6943c4c1:
 
     # Max_09 "Эй, но так же не интересно!"
-    Max_09 ""
+    Max_09 "Hey, that's not interesting!"
 
 # game/dialogues/alicetalk.rpy:3064
 translate english Alice_sorry_af83a90f:
 
     # Alice_16 "Это что вообще за недовольства?! Наверное, я погорячилась со свои заказом и тебя нужно просто отправить маме, которая отучит тебя подглядывать."
-    Alice_16 ""
+    Alice_16 "What kind of a grudge is that?! Maybe I overdid it with my order and you just need to be sent to your mother, who will teach you not to peep."
 
 # game/dialogues/alicetalk.rpy:3065
 translate english Alice_sorry_1951a195:
 
     # Max_08 "Э-э-э... Да ладно тебе! Чего ты сразу? Я же просто так... без задней мысли ляпнул..."
-    Max_08 ""
+    Max_08 "Uh... Oh, come on! What's the big deal? I was just... I wasn't thinking..."
 
 # game/dialogues/alicetalk.rpy:3066
 translate english Alice_sorry_db18883b:
 
     # Alice_12 "Ну конечно, без задней, у тебя все мысли только \"передние\"... Думать надо, что говоришь, особенно когда находишься в таком шатком положении. Ну так что, принимаешь моё предложение?"
-    Alice_12 ""
+    Alice_12 "Of course, without a backhand, all you can think of is \"fronthand\"... You should be careful what you say, especially when you're in such a precarious position. So, do you accept my offer?"
 
 # game/dialogues/alicetalk.rpy:3067
 translate english Alice_sorry_8e8113ab:
 
     # Max_09 "Так-то да, принимаю, но..."
-    Max_09 ""
+    Max_09 "So, yes, I do, but..."
 
 # game/dialogues/alicetalk.rpy:3068
 translate english Alice_sorry_c6b0a949:
 
     # Alice_17 "Что, но?"
-    Alice_17 ""
+    Alice_17 "What, but?"
 
 # game/dialogues/alicetalk.rpy:3069
 translate english Alice_sorry_fcfcdff9:
 
     # Max_10 "Но ведь это, наверняка, стоит очень дорого."
-    Max_10 ""
+    Max_10 "But it must be very expensive."
 
 # game/dialogues/alicetalk.rpy:3070
 translate english Alice_sorry_11f015fc:
 
     # Alice_05 "Ну конечно, ведь всё имеет свою цену. Это только подглядывать за собственной сестрой и дрочить на неё в тихушку ничего не стоит!"
-    Alice_05 ""
+    Alice_05 "Of course, everything has a price. It doesn't cost anything to spy on your own sister and masturbate on her in secret!"
 
 # game/dialogues/alicetalk.rpy:3071
 translate english Alice_sorry_00fd6771:
 
     # Max_08 "Эй... Я не дрочил!"
-    Max_08 ""
+    Max_08 "Hey... I wasn't jerking off!"
 
 # game/dialogues/alicetalk.rpy:3072
 translate english Alice_sorry_ed67e6da:
 
     # Alice_03 "Ага, давай рассказывай... Короче, это твои проблемы, где ты возьмёшь деньги. И не тормози, если не хочешь получить по заднице от мамы."
-    Alice_03 ""
+    Alice_03 "Yeah, tell me about it... Anyway, it's your problem where you get the money. And don't slow down if you don't want to get your ass kicked by your mom."
 
 # game/dialogues/alicetalk.rpy:3073
 translate english Alice_sorry_131a11d8:
 
     # Max_09 "Ладно... Я постараюсь."
-    Max_09 ""
+    Max_09 "Well... I'll try."
 
 # game/dialogues/alicetalk.rpy:3074
 translate english Alice_sorry_b9be9b86:
 
     # Alice_01 "Да уж, постарайся. И не затягивай, я не буду ждать вечно. Если уложишься в четыре дня, то мама, так уж и быть, ничего не узнает."
-    Alice_01 ""
+    Alice_01 "Yeah, try your best. And don't wait too long, I won't wait forever. If you can do it in four days, Mom won't find out."
 
 # game/dialogues/alicetalk.rpy:3075
 translate english Alice_sorry_d7920a5c:
 
     # Max_00 "Я понял..."
-    Max_00 ""
+    Max_00 "I get it..."
 
 # game/dialogues/alicetalk.rpy:3081
 translate english Alice_sorry_0b2bc12c:
 
     # Alice_05 "Да неужели?! И что, хочешь снова, как всегда, откупиться?"
-    Alice_05 ""
+    Alice_05 "Oh, really?! And what, you want to pay me off again, like you always do?"
 
 # game/dialogues/alicetalk.rpy:3082
 translate english Alice_sorry_5668ec1c:
 
     # Max_01 "Ну-у... да... Мне как, бежать за сладостями или, как в тот раз, тебе нужно что-то другое?"
-    Max_01 ""
+    Max_01 "Well... Yeah, um... Do you want me to run out and get candy or, like that time, do you want something else?"
 
 # game/dialogues/alicetalk.rpy:3083
 translate english Alice_sorry_de7928c4:
 
     # Alice_02 "Ты проницателен как никогда, Макс, именно другое..."
-    Alice_02 ""
+    Alice_02 "You're more perceptive than ever, Max, that's another thing..."
 
 # game/dialogues/alicetalk.rpy:3084
 translate english Alice_sorry_00884ff2:
 
     # Max_04 "И что же это?"
-    Max_04 ""
+    Max_04 "And what is that?"
 
 # game/dialogues/alicetalk.rpy:3085
 translate english Alice_sorry_6f11d57e:
 
     # Alice_01 "Плётка!"
-    Alice_01 ""
+    Alice_01 "The whip!"
 
 # game/dialogues/alicetalk.rpy:3086
 translate english Alice_sorry_34a7cc2b:
 
     # Max_08 "Что? Плётка?! Я не ослышался?"
-    Max_08 ""
+    Max_08 "What? The whip?! Did I hear right?"
 
 # game/dialogues/alicetalk.rpy:3087
 translate english Alice_sorry_161ef843:
 
     # Alice_03 "Нет-нет, всё верно - мне нужна плётка. Она вроде стеком называется. Ну знаешь, которой лошадок подгоняют."
-    Alice_03 ""
+    Alice_03 "No, no, that's right - I need a whip. I think it's called a stack. You know, the one you use to push horses."
 
 # game/dialogues/alicetalk.rpy:3088
 translate english Alice_sorry_e33f5b76:
 
     # Max_09 "Я стесняюсь спросить, а кого ты собираешься ей подгонять?"
-    Max_09 ""
+    Max_09 "I'm embarrassed to ask, who are you going to drive her?"
 
 # game/dialogues/alicetalk.rpy:3089
 translate english Alice_sorry_a9ff7b55:
 
     # Alice_05 "Тебя, Макс, кого же ещё!"
-    Alice_05 ""
+    Alice_05 "You, Max, who else!"
 
 # game/dialogues/alicetalk.rpy:3090
 translate english Alice_sorry_859ed5bf:
 
     # Max_10 "Э-э-э... А серьёзно?"
-    Max_10 ""
+    Max_10 "Uh... Seriously?"
 
 # game/dialogues/alicetalk.rpy:3091
 translate english Alice_sorry_a1382b76:
 
     # Alice_12 "А я как раз серьёзно. Меня уже достали твои подглядывания! Может быть теперь ты подумаешь о последствиях, прежде чем засунешь свой длинный нос ко мне в ванную комнату."
-    Alice_12 ""
+    Alice_12 "I mean it. I'm sick of your peeping! Maybe now you'll think about the consequences before you stick your long nose in my bathroom."
 
 # game/dialogues/alicetalk.rpy:3092
 translate english Alice_sorry_3407ba3a:
 
     # Max_08 "Так я же случайно..."
-    Max_08 ""
+    Max_08 "So I just happened to..."
 
 # game/dialogues/alicetalk.rpy:3093
 translate english Alice_sorry_26badf4e:
 
     # Alice_07 "Ха-ха... Ладно, я шучу! Видел бы ты сейчас своё лицо!"
-    Alice_07 ""
+    Alice_07 "Ha ha... Okay, I'm kidding! You should see your face right now!"
 
 # game/dialogues/alicetalk.rpy:3094
 translate english Alice_sorry_0c0d9cc5:
 
     # Max_07 "Фух... Отстойные у тебя шутки, Алиса!"
-    Max_07 ""
+    Max_07 "Whew... Your jokes suck, Alice!"
 
 # game/dialogues/alicetalk.rpy:3095
 translate english Alice_sorry_612915b1:
 
     # Alice_05 "Сам ты отстойный! Короче, мне нужна плётка, чтобы дополнить тот кожаный костюм. В противном случае, будешь объясняться с мамой о своём фетише."
-    Alice_05 ""
+    Alice_05 "You suck! Anyway, I need a whip to complete that leather suit. Otherwise, you'll have to explain to your mother about your fetish."
 
 # game/dialogues/alicetalk.rpy:3096
 translate english Alice_sorry_c7b21e38:
 
     # Max_09 "Ладно, я понял..."
-    Max_09 ""
+    Max_09 "Okay, I get it..."
 
 # game/dialogues/alicetalk.rpy:3097
 translate english Alice_sorry_72e2b7bf:
 
     # Alice_03 "Вот и хорошо. Я готова подождать три дня, а там пеняй на себя."
-    Alice_03 ""
+    Alice_03 "That's good. I'm willing to wait three days, and then blame yourself."
 
 # game/dialogues/alicetalk.rpy:3098
 translate english Alice_sorry_7852d704:
 
     # Max_00 "Ага..."
-    Max_00 ""
+    Max_00 "Yeah..."
 
 # game/dialogues/alicetalk.rpy:3104
 translate english Alice_sorry_0cb5d3d9:
 
     # Alice_05 "Ух ты! Неужели у тебя, мелкого извращенца, проснулась совесть и ты решил сразу замолить свои грехи?"
-    Alice_05 ""
+    Alice_05 "Wow, did you little pervert wake up your conscience and decide to make amends right away?"
 
 # game/dialogues/alicetalk.rpy:3105
 translate english Alice_sorry_b89844da:
 
     # Max_07 "Чего сразу грехи-то? Просто небольшая слабость..."
-    Max_07 ""
+    Max_07 "What's the big deal? Just a little weakness..."
 
 # game/dialogues/alicetalk.rpy:3106
 translate english Alice_sorry_a6094fa7:
 
     # Alice_12 "А то, что подглядывать за голой сестрой это грех! Или ты этого не знал? В общем собирайся и пошли к маме... Очень хочется посмотреть, что она с тобой сделает, когда об этом узнает..."
-    Alice_12 ""
+    Alice_12 "And the fact that peeping at your sister's nakedness is a sin! Or didn't you know that? So pack up and go to your mother... I'd like to see what she'll do to you when she finds out about this..."
 
 # game/dialogues/alicetalk.rpy:3107
 translate english Alice_sorry_b695a1ae:
 
     # Max_01 "Так может мы договоримся, как раньше? Может быть тебе что-то надо?"
-    Max_01 ""
+    Max_01 "So can we make a deal, like we used to? Maybe you need something?"
 
 # game/dialogues/alicetalk.rpy:3108
 translate english Alice_sorry_f1a7cc2c:
 
     # Alice_13 "Ай-ай-ай... Пытаешься меня подкупить?"
-    Alice_13 ""
+    Alice_13 "Aye-aye... Are you trying to bribe me?"
 
 # game/dialogues/alicetalk.rpy:3109
 translate english Alice_sorry_2090c37f:
 
     # Max_08 "Почему сразу подкупить?"
-    Max_08 ""
+    Max_08 "Why bribe me immediately?"
 
 # game/dialogues/alicetalk.rpy:3110
 translate english Alice_sorry_644eb3d1:
 
     # Alice_05 "А как ещё это можно назвать? Взятка? Кстати, за неё тоже предусмотрено наказание."
-    Alice_05 ""
+    Alice_05 "What else would you call it? A bribe? By the way, it is also punishable."
 
 # game/dialogues/alicetalk.rpy:3111
 translate english Alice_sorry_f725e921:
 
     # Max_10 "Так я ведь хотел..."
-    Max_10 ""
+    Max_10 "That's what I wanted..."
 
 # game/dialogues/alicetalk.rpy:3112
 translate english Alice_sorry_fba75b67:
 
     # Alice_07 "Откупиться и избежать наказания... Ха-ха-ха... Ладно, Макс, не парься, я пошутила. Я сегодня добрая и потому наказывать тебя не буду... пока что."
-    Alice_07 ""
+    Alice_07 "Pay off and get away with it... Ha-ha-ha... Okay, Max, don't worry, I was just kidding. I'm being nice today, so I'm not gonna punish you... for now."
 
 # game/dialogues/alicetalk.rpy:3113
 translate english Alice_sorry_f642316c:
 
     # Max_09 "В каком смысле, пока что?!"
-    Max_09 ""
+    Max_09 "What do you mean, so far?!"
 
 # game/dialogues/alicetalk.rpy:3114
 translate english Alice_sorry_6e6863df:
 
     # Alice_03 "Ну... Я решила отложить твоё наказание. С этого момента, если есть за что извиниться, можешь подходить ко мне вечером, когда я смотрю ТВ. И уже тогда я скажу, что с тобой будет..."
-    Alice_03 ""
+    Alice_03 "Well... I've decided to postpone your punishment. From now on, if you have something to apologize for, you can come up to me in the evening when I'm watching TV. And then I'll tell you what's gonna happen to you..."
 
 # game/dialogues/alicetalk.rpy:3115
 translate english Alice_sorry_1981e35e:
 
     # Max_07 "И что будет этим вечером?"
-    Max_07 ""
+    Max_07 "What's going to happen tonight?"
 
 # game/dialogues/alicetalk.rpy:3116
 translate english Alice_sorry_2728f6ac:
 
     # Alice_05 "Сказала же, вечером узнаешь. Если, конечно, не решишь, что лучше позориться перед всеми нами у мамы на коленях. А сейчас можешь идти."
-    Alice_05 ""
+    Alice_05 "I told you, you'll find out tonight. Unless, of course, you decide you'd rather embarrass yourself in front of us all on your mother's lap. You can go now."
 
 # game/dialogues/alicetalk.rpy:3117
 translate english Alice_sorry_6e7aee99:
 
     # Max_00 "Хорошо..."
-    Max_00 ""
+    Max_00 "Okay..."
 
 # game/dialogues/alicetalk.rpy:5831
 translate english alice_gift_mistress1_cc0d1a6f:
 
     # Alice_14 "Подожди! Ты серьёзно достал деньги на кожаный костюм?! Неужели ты действительно его купил?!"
-    Alice_14 ""
+    Alice_14 "Wait! Did you really get money for a leather suit?! Did you really buy it?!"
 
 # game/dialogues/alicetalk.rpy:5832
 translate english alice_gift_mistress1_7de5e751:
 
     # Max_01 "Разумеется! Твой кожаный костюм, как ты и хотела. Вот, держи..."
-    Max_01 ""
+    Max_01 "Of course! Your leather suit, just like you wanted. Here you go..."
 
 # game/dialogues/alicetalk.rpy:5835
 translate english alice_gift_mistress1_033b8db9:
 
     # Alice_02 "О да! Моя мечта сбылась! Ты такой молодец, Макс! Правда, со сроками ты опоздал, но спасибо тебе большое, что всё-таки подарил..."
-    Alice_02 ""
+    Alice_02 "Oh yes! My dream came true! You're so good, Max! True, you were late with the deadline, but thank you so much for giving it to me..."
 
 # game/dialogues/alicetalk.rpy:5836
 translate english alice_gift_mistress1_55c0f2ae:
 
     # Max_07 "Ну так, зря я что ли деньги на этот костюм собирал? Может хоть примеришь его при мне?"
-    Max_07 ""
+    Max_07 "Well, did I raise the money for this suit for nothing? Can't you at least try it on in front of me?"
 
 # game/dialogues/alicetalk.rpy:5838
 translate english alice_gift_mistress1_7c290682:
 
     # Alice_07 "О да! Моя мечта сбылась! Ты такой молодец, Макс! Спасибо тебе большое..."
-    Alice_07 ""
+    Alice_07 "Oh yes! My dream came true! You're so good, Max! Thank you so much..."
 
 # game/dialogues/alicetalk.rpy:5839
 translate english alice_gift_mistress1_3236daef:
 
     # Max_02 "Ну что, примеришь его при мне?"
-    Max_02 ""
+    Max_02 "Well, will you try it on in front of me?"
 
 # game/dialogues/alicetalk.rpy:5841
 translate english alice_gift_mistress1_5bcb46c0:
 
     # Alice_13 "Примерю при тебе? Разве мы с тобой об этом договаривались?"
-    Alice_13 ""
+    Alice_13 "Try it on in front of you? Did we have an agreement about this?"
 
 # game/dialogues/alicetalk.rpy:5842
 translate english alice_gift_mistress1_e63acb48:
 
     # Max_08 "Нет, но... просто я подумал... Почему бы и не примерить?"
-    Max_08 ""
+    Max_08 "No, but... I just thought... Why not try it on?"
 
 # game/dialogues/alicetalk.rpy:5843
 translate english alice_gift_mistress1_62932bde:
 
     # Alice_12 "Что? Раз ты мне его купил, то я обязательно тебе в нём должна показаться? Так ты считаешь, да? Костюмчик ведь для ролевых игр, а мы с тобой вообще-то брат и сестра!"
-    Alice_12 ""
+    Alice_12 "What? Since you bought it for me, do I have to show my face in it? That's what you think, isn't it? The costume is for role-playing, and you and I are actually brother and sister!"
 
 # game/dialogues/alicetalk.rpy:5844
 translate english alice_gift_mistress1_7c4b01e3:
 
     # Max_05 "Видишь, даже играть не нужно!"
-    Max_05 ""
+    Max_05 "See, you don't even have to play!"
 
 # game/dialogues/alicetalk.rpy:5845
 translate english alice_gift_mistress1_a22a7ce6:
 
     # Alice_16 "Ну, Макс! Если продолжишь прикалываться в таком же духе дальше, то я сыграю нашу маму, только вот бить буду ногами и со всего размаху! Давай гуляй иди... Или тебе помочь?"
-    Alice_16 ""
+    Alice_16 "Well, Max! If you keep on making jokes like that, I'll play our mother, but I'll kick you with my feet and with all my might! Go on, get out of here... Or can I help you?"
 
 # game/dialogues/alicetalk.rpy:5846
 translate english alice_gift_mistress1_11cf806c:
 
     # Max_10 "Нет, я сам."
-    Max_10 ""
+    Max_10 "No, I'll do it myself."
 
 # game/dialogues/alicetalk.rpy:5862
 translate english alice_gift_whip_630eb3f2:
 
     # Alice_15 "Да где ты деньги-то на всё это берешь?! Надеюсь, она именно такая, как я просила..."
-    Alice_15 ""
+    Alice_15 "Where do you get the money for all this? I hope it's exactly what I asked for..."
 
 # game/dialogues/alicetalk.rpy:5863
 translate english alice_gift_whip_5c54da21:
 
     # Max_02 "О да! Твоя плётка для садо-мазо, как ты и хотела. Вот, держи..."
-    Max_02 ""
+    Max_02 "Oh yes! Your S&M whip, just like you wanted. Here you go..."
 
 # game/dialogues/alicetalk.rpy:5864
 translate english alice_gift_whip_548fb0a4:
 
     # Alice_13 "Какое сада-мазо, Макс, что ты несёшь?"
-    Alice_13 ""
+    Alice_13 "What sada-maso, Max, what are you talking about?"
 
 # game/dialogues/alicetalk.rpy:5865
 translate english alice_gift_whip_34569bf8:
 
     # Max_01 "Ну так, а для чего же она ещё?"
-    Max_01 ""
+    Max_01 "Well, what else is it for?"
 
 # game/dialogues/alicetalk.rpy:5866
 translate english alice_gift_whip_c58cb444:
 
     # Alice_05 "Может быть тебе показать? С удовольствием продемонстрирую... прямо на твоей заднице!"
-    Alice_05 ""
+    Alice_05 "Maybe I can show you? I'd love to show you... right on your ass!"
 
 # game/dialogues/alicetalk.rpy:5869
 translate english alice_gift_whip_bf59dae4:
 
     # Max_10 "Нет-нет... Спасибо, но посягательств от мамы более чем хватило! Так что не надо."
-    Max_10 ""
+    Max_10 "No, no... Thank you, but there's been more than enough abuse from my mother! So don't."
 
 # game/dialogues/alicetalk.rpy:5871
 translate english alice_gift_whip_4da3856f:
 
     # Max_08 "Нет-нет... не надо!"
-    Max_08 ""
+    Max_08 "No, no... don't!"
 
 # game/dialogues/alicetalk.rpy:5873
 translate english alice_gift_whip_713a7aab:
 
     # Alice_01 "Точно не надо? А то я могу!"
-    Alice_01 ""
+    Alice_01 "Are you sure you don't? I can!"
 
 # game/dialogues/alicetalk.rpy:5874
 translate english alice_gift_whip_7653d151:
 
     # Max_07 "Точно! Я как-нибудь обойдусь..."
-    Max_07 ""
+    Max_07 "Exactly! I'll manage somehow..."
 
 # game/dialogues/alicetalk.rpy:5875
 translate english alice_gift_whip_5bbb8668:
 
     # Alice_02 "Вот то-то же! А, вообще, ты молодец, Макс! Спасибо тебе..."
-    Alice_02 ""
+    Alice_02 "That's just it! And, in general, you're good, Max! Thank you..."
 
 # game/dialogues/alicetalk.rpy:5876
 translate english alice_gift_whip_be8a1373:
 
     # Max_01 "Да на здоровье..."
-    Max_01 ""
+    Max_01 "You're welcome..."
 
 # game/dialogues/alicetalk.rpy:5894
 translate english alice_mistress_0_d88405d8:
 
     # Alice_16 "Господи, ну что за детский сад?! Что ты не будешь?"
-    Alice_16 ""
+    Alice_16 "Jesus, what kind of kindergarten is this?! What aren't you going to do?"
 
 # game/dialogues/alicetalk.rpy:5896
 translate english alice_mistress_0_914e64fb:
 
     # Max_10 "Подглядывать..."
-    Max_10 ""
+    Max_10 "Peeking..."
 
 # game/dialogues/alicetalk.rpy:5897
 translate english alice_mistress_0_9ad307ff:
 
     # Alice_17 "Нет, Макс, так не пойдёт! Я не услышала искренности в твоих словах!"
-    Alice_17 ""
+    Alice_17 "No, Max, that won't do! I didn't hear the sincerity in your words!"
 
 # game/dialogues/alicetalk.rpy:5898
 translate english alice_mistress_0_91c370e9:
 
     # Max_09 "И что мне теперь, в театральный поступать?"
-    Max_09 ""
+    Max_09 "What am I supposed to do now, go to drama school?"
 
 # game/dialogues/alicetalk.rpy:5899
 translate english alice_mistress_0_61bfbeea:
 
     # Alice_05 "Нет, мы поступим проще... Тебе придётся пойти со мной!"
-    Alice_05 ""
+    Alice_05 "No, we'll make it easier... You have to come with me!"
 
 # game/dialogues/alicetalk.rpy:5900
 translate english alice_mistress_0_75671c9d:
 
     # Max_08 "Куда это? Зачем?"
-    Max_08 ""
+    Max_08 "Where is it going? What for?"
 
 # game/dialogues/alicetalk.rpy:5901
 translate english alice_mistress_0_bbce7676:
 
     # Alice_01 "Сейчас узнаешь... Пошли в мою комнату..." nointeract
-    Alice_01 "" nointeract
+    Alice_01 "You'll find out... Let's go to my room..." nointeract
 
 # game/dialogues/alicetalk.rpy:5908
 translate english alice_mistress_0_c6ee6ebe:
 
     # Alice "Жди за дверью, Макс! Я сейчас подготовлюсь и позову тебя."
-    Alice ""
+    Alice "Wait outside the door, Max! I'll get ready and call you."
 
 # game/dialogues/alicetalk.rpy:5909
 translate english alice_mistress_0_ac44d106:
 
     # Max_09 "К чему подготовишься?"
-    Max_09 ""
+    Max_09 "What will you prepare for?"
 
 # game/dialogues/alicetalk.rpy:5910
 translate english alice_mistress_0_ec64f261:
 
     # Alice "Немного терпения и ты всё узнаешь!"
-    Alice ""
+    Alice "A little patience and you'll find out!"
 
 # game/dialogues/alicetalk.rpy:5911
 translate english alice_mistress_0_878ce08d:
 
     # Max_14 "Ладно. Жду..."
-    Max_14 ""
+    Max_14 "Okay. Waiting..."
 
 # game/dialogues/alicetalk.rpy:5912
 translate english alice_mistress_0_61935734:
 
     # Max_09 "{i}( Хм... Меня начинают терзать смутные сомнения, насчёт того, к чему она там готовится. Уж как-то подозрительно она улыбалась, когда я извинялся. ){/i}"
-    Max_09 ""
+    Max_09 "{i}( Hmm... I'm beginning to have doubts about what she's getting ready for. She smiled suspiciously when I apologized. ){/i}"
 
 # game/dialogues/alicetalk.rpy:5913
 translate english alice_mistress_0_1bc7b6f4:
 
     # Alice "Можешь входить, если ты ещё не сбежал..." nointeract
-    Alice "" nointeract
+    Alice "You can go in, if you haven't escaped already..." nointeract
 
 # game/dialogues/alicetalk.rpy:5922
 translate english alice_mistress_0_2ebf3afc:
 
     # Max_05 "{i}( Ох, ничего себе, вот это вид! Она такая секси в этом костюмчике. А говорила, что не покажется мне в нём! ){/i}"
-    Max_05 ""
+    Max_05 "{i}( Oh, wow, what a view! She's so sexy in that outfit. And she said she wouldn't show her face in it! ){/i}"
 
 # game/dialogues/alicetalk.rpy:5923
 translate english alice_mistress_0_fc3717f4:
 
     # Alice_02 "Ну же, Макс, чего ты застыл в дверях, проходи!"
-    Alice_02 ""
+    Alice_02 "Come on, Max, why are you standing in the doorway?"
 
 # game/dialogues/alicetalk.rpy:5924
 translate english alice_mistress_0_3c66c427:
 
     # Max_03 "Я это... опешил от твоего вида!"
-    Max_03 ""
+    Max_03 "I was... I was taken aback by the sight of you!"
 
 # game/dialogues/alicetalk.rpy:5925
 translate english alice_mistress_0_d4858c12:
 
     # Alice_05 "Что, так страшно?"
-    Alice_05 ""
+    Alice_05 "Is it that scary?"
 
 # game/dialogues/alicetalk.rpy:5926
 translate english alice_mistress_0_b131d55f:
 
     # Max_02 "Нет, что ты! Ты очень классно выглядишь - такая сексуальная!"
-    Max_02 ""
+    Max_02 "No, you don't! You look so cool - so sexy!"
 
 # game/dialogues/alicetalk.rpy:5927
 translate english alice_mistress_0_7b86761e:
 
     # Alice_07 "Вообще-то, ты с сестрой разговариваешь, если что... Но мне приятно такое слышать."
-    Alice_07 ""
+    Alice_07 "Actually, you're talking to your sister, if anything. But I'm glad to hear that."
 
 # game/dialogues/alicetalk.rpy:5928
 translate english alice_mistress_0_68e80c99:
 
     # Max_04 "И сидит он на тебе отпадно!"
-    Max_04 ""
+    Max_04 "And it fits you like a glove!"
 
 # game/dialogues/alicetalk.rpy:5931
 translate english alice_mistress_0_81107382:
 
     # Alice_03 "Ну конечно... всё только благодаря тебе. Проходи... Снимай майку, она будет только мешаться... Присаживайся на стул, у меня для тебя есть кое-что интересное."
-    Alice_03 ""
+    Alice_03 "Of course... it's all thanks to you. Come in... Take off your shirt, it'll just get in the way... Have a seat in the chair, I have something interesting for you."
 
 # game/dialogues/alicetalk.rpy:5933
 translate english alice_mistress_0_f527dad3:
 
     # Alice_03 "Ну конечно... всё только благодаря тебе. Проходи... Присаживайся на стул, у меня для тебя есть кое-что интересное."
-    Alice_03 ""
+    Alice_03 "Of course... it's all thanks to you. Come in... Have a seat in the chair, I have something interesting for you."
 
 # game/dialogues/alicetalk.rpy:5934
 translate english alice_mistress_0_53485488:
 
     # Max_05 "Серьёзно?! Ну хорошо..."
-    Max_05 ""
+    Max_05 "Seriously?! All right..."
 
 # game/dialogues/alicetalk.rpy:5939
 translate english alice_mistress_0_0a9a067b:
 
     # Alice_05 "А чтобы это стало ещё более интересным для тебя, я привяжу тебя к стулу..."
-    Alice_05 ""
+    Alice_05 "And to make it even more interesting for you, I'm going to tie you to a chair..."
 
 # game/dialogues/alicetalk.rpy:5940
 translate english alice_mistress_0_aeaa0a2e:
 
     # Max_07 "Э-э-э... Но только, если так мне действительно будет ещё интереснее."
-    Max_07 ""
+    Max_07 "Um... But only if it really makes me more interested."
 
 # game/dialogues/alicetalk.rpy:5941
 translate english alice_mistress_0_fb41b4c5:
 
     # Alice_02 "Ну как, не туго?"
-    Alice_02 ""
+    Alice_02 "Isn't that a little tight?"
 
 # game/dialogues/alicetalk.rpy:5942
 translate english alice_mistress_0_0b992451:
 
     # Max_01 "Нет, всё нормально. Продолжай..."
-    Max_01 ""
+    Max_01 "No, it's okay. Go on..."
 
 # game/dialogues/alicetalk.rpy:5943
 translate english alice_mistress_0_3bdfb7ee:
 
     # Alice_06 "Макс, я же вижу, что ты пялишься на мой зад... Оу! Я так же вижу, что твой восторг уже не умещается в шортах... Тебе как, не стыдно вообще?"
-    Alice_06 ""
+    Alice_06 "Max, I can see that you're staring at my ass... Oh! I can also see that your delight is no longer in your shorts... Aren't you ashamed of yourself?"
 
 # game/dialogues/alicetalk.rpy:5944
 translate english alice_mistress_0_e46bf788:
 
     # Max_02 "Немного... Но по большей части, твоя блестящая попка вызывает во мне много пошлых фантазий!"
-    Max_02 ""
+    Max_02 "A little bit... But for the most part, your shiny ass gives me a lot of naughty fantasies!"
 
 # game/dialogues/alicetalk.rpy:5945
 translate english alice_mistress_0_8aa9b539:
 
     # Alice_14 "Ты совершенно испорченный мальчишка и я вынуждена познакомить тебя с ещё одним предметом моего гардероба!"
-    Alice_14 ""
+    Alice_14 "You're a totally spoiled brat and I have to introduce you to another piece of my closet!"
 
 # game/dialogues/alicetalk.rpy:5946
 translate english alice_mistress_0_ebf41a2c:
 
     # Max_03 "О да! Интересно, с каким же..."
-    Max_03 ""
+    Max_03 "Oh yes! I wonder what kind of..."
 
 # game/dialogues/alicetalk.rpy:5951
 translate english alice_mistress_0_384f6e34:
 
     # Alice_05 "Да вот с этим, Макс... Ну что, узнаёшь его?"
-    Alice_05 ""
+    Alice_05 "Yes, with this one, Max... So, do you recognize him?"
 
 # game/dialogues/alicetalk.rpy:5952
 translate english alice_mistress_0_b07b0cf8:
 
     # Max_08 "Эй... Потише, это тебе не игрушки!"
-    Max_08 ""
+    Max_08 "Hey... Keep your voice down, it's not a toy!"
 
 # game/dialogues/alicetalk.rpy:5953
 translate english alice_mistress_0_53b888cf:
 
     # Alice_03 "Хм... А ты думал, что тебя здесь будут ожидать игрушки?! После того, как ты всё так же, как и раньше, продолжаешь подглядывать за мной?"
-    Alice_03 ""
+    Alice_03 "Hmm... Did you think there would be toys waiting for you here?! After the way you keep peeking at me like you did before?"
 
 # game/dialogues/alicetalk.rpy:5954
 translate english alice_mistress_0_5f771666:
 
     # Max_10 "Эй... Ты чего? Я могу ещё раз извиниться..."
-    Max_10 ""
+    Max_10 "Hey... What's the matter with you? I can apologize again..."
 
 # game/dialogues/alicetalk.rpy:5959
 translate english alice_mistress_0_4204b561:
 
     # Alice_05 "А с чего ты взял, что это поможет? Нет, благодаря этому ты конечно не сразу оказываешься у мамы на коленях, но... мне этого мало, Макс... Я хочу, чтобы оказавшись у ванной комнаты, ты начал задумываться, а стоит ли оно того!"
-    Alice_05 ""
+    Alice_05 "What makes you think it would help? No, it doesn't put you on your mother's lap right away, but... that's not good enough for me, Max... I want you to think about whether or not it's worth it when you're in the bathroom."
 
 # game/dialogues/alicetalk.rpy:5960
 translate english alice_mistress_0_8a98b0ec:
 
     # Max_07 "Знаешь, очень сложно удержаться и не..."
-    Max_07 ""
+    Max_07 "You know, it's very hard to resist and not..."
 
 # game/dialogues/alicetalk.rpy:5961
 translate english alice_mistress_0_4b04c487:
 
     # Alice_12 "Это не важно, Макс! Раз за разом, ты говоришь, что это случайность или больше не будешь подглядывать за мной, и... это снова повторяется!"
-    Alice_12 ""
+    Alice_12 "It doesn't matter, Max! Time after time, you say it's an accident or you won't peep on me anymore, and... it happens again!"
 
 # game/dialogues/alicetalk.rpy:5962
 translate english alice_mistress_0_b5d05fa8:
 
     # Max_10 "Я просто..."
-    Max_10 ""
+    Max_10 "I just..."
 
 # game/dialogues/alicetalk.rpy:5967
 translate english alice_mistress_0_bb08674b:
 
     # Alice_16 "Не перебивай меня, Макс! Я ведь могу использовать этот стек по его назначению... Хочешь?"
-    Alice_16 ""
+    Alice_16 "Don't interrupt me, Max! I can use this stack for its intended purpose... Do you want to?"
 
 # game/dialogues/alicetalk.rpy:5968
 translate english alice_mistress_0_febc43c1:
 
     # Max_13 "Нет-нет... Извини."
-    Max_13 ""
+    Max_13 "No, no... I'm sorry."
 
 # game/dialogues/alicetalk.rpy:5969
 translate english alice_mistress_0_ded9dfc8:
 
     # Alice_12 "Так вот, если ты действительно мужчина, а твоя торчащая штуковина говорит именно об этом, будь добр, перестань говорить, что ты случайно увидел, как я принимаю душ и не подглядывай за мной! Ты меня понял?"
-    Alice_12 ""
+    Alice_12 "Now, if you really are a man, and that's what your sticking out thing says, would you please stop saying that you accidentally saw me showering and don't peep on me! Do you understand me?"
 
 # game/dialogues/alicetalk.rpy:5970
 translate english alice_mistress_0_d39294b0:
 
     # Max_14 "Д-да... Я понял..."
-    Max_14 ""
+    Max_14 "Y-yeah... I got it..."
 
 # game/dialogues/alicetalk.rpy:5971
 translate english alice_mistress_0_a0188ae2:
 
     # Alice_05 "Хороший мальчик. Но если продолжишь, то вы с этим стеком станете очень близки. Особенно близки вы станете в районе твоей голой задницы, по которой я буду хлестать так, что ты будешь молить меня отпустить тебя к маме!"
-    Alice_05 ""
+    Alice_05 "Good boy. But if you go on, you and that stack will become very close. You'll be especially close around your naked ass, which I'll whip so hard you'll beg me to let you go to your mother!"
 
 # game/dialogues/alicetalk.rpy:5972
 translate english alice_mistress_0_05076bc1:
 
     # Max_10 "Понял."
-    Max_10 ""
+    Max_10 "Got it."
 
 # game/dialogues/alicetalk.rpy:5977
 translate english alice_mistress_0_6621baa0:
 
     # Alice_02 "Умница... Теперь можешь идти. Сейчас развяжу..."
-    Alice_02 ""
+    Alice_02 "Good boy... You can go now. I'll untie you..."
 
 # game/dialogues/alicetalk.rpy:5978
 translate english alice_mistress_0_daea34df:
 
     # Max_08 "Ага..."
-    Max_08 ""
+    Max_08 "Yeah..."
 
 # game/dialogues/alicetalk.rpy:5979
 translate english alice_mistress_0_74782507:
 
     # Alice_15 "Ты что, бессмертным себя считаешь что ли?! Снова пялишься?"
-    Alice_15 ""
+    Alice_15 "Do you think you're immortal or what?! Are you staring again?"
 
 # game/dialogues/alicetalk.rpy:5980
 translate english alice_mistress_0_e994b0c0:
 
     # Max_10 "Нет. Просто задумался."
-    Max_10 ""
+    Max_10 "No. I was just thinking."
 
 # game/dialogues/alicetalk.rpy:5981
 translate english alice_mistress_0_ba9278ff:
 
     # Alice_01 "Вот и правильно!" nointeract
-    Alice_01 "" nointeract
+    Alice_01 "That's right!" nointeract
 
 # game/dialogues/alicetalk.rpy:5988
 translate english alice_mistress_0_bc563b4c:
 
     # Max_09 "{i}( Странный вечерок получился! С одной стороны, Алиса хотела мне пригрозить и напугать... Но с другой, а зачем так сексуально наряжаться передо мной было для этого? Может, проверяет меня?! ){/i}"
-    Max_09 ""
+    Max_09 "{i}( It was a strange evening! On the one hand, Alice wanted to threaten and frighten me... But on the other hand, and why so sexily dressed up in front of me was for this? Maybe it's testing me?! ){/i}"
 
 # game/dialogues/alicetalk.rpy:5989
 translate english alice_mistress_0_26e6c8cd:
 
     # Max_07 "{i}( Хорошо, что есть способ проверить, что у неё действительно на уме. Нужно продолжить за ней подглядывать, а когда она снова меня заметит, как-то умудриться уговорить её на конфету с ликёром перед этим... наказанием... ){/i}"
-    Max_07 ""
+    Max_07 "{i}( Good thing there's a way to see what's really on her mind. I have to keep peeking at her, and when she sees me again, somehow manage to talk her into some liquor and candy before this... punishment... ){/i}"
 
 # game/dialogues/alicetalk.rpy:6005
 translate english alice_mistress_1_36b8bd42:
 
     # Alice_12 "Ты что, Макс, забыл, что одних \"извини\" мне мало? Думаю, нам стоит подняться ко мне в комнату и побеседовать там в... особой обстановке..."
-    Alice_12 ""
+    Alice_12 "Max, have you forgotten that "sorry" isn't enough for me? I think we should go up to my room and talk in a... special environment..."
 
 # game/dialogues/alicetalk.rpy:6006
 translate english alice_mistress_1_b133d546:
 
     # Max_08 "Это точно необходимо?"
-    Max_08 ""
+    Max_08 "Is this really necessary?"
 
 # game/dialogues/alicetalk.rpy:6007
 translate english alice_mistress_1_89b05aec:
 
     # Alice_05 "Ты что, боишься?! Ха-ха..."
-    Alice_05 ""
+    Alice_05 "Are you scared?! Ha-ha..."
 
 # game/dialogues/alicetalk.rpy:6008
 translate english alice_mistress_1_88c2fc63:
 
     # Max_07 "Нет, просто я думал, что мы сможем решить это как-то без всего, что было в прошлый раз..."
-    Max_07 ""
+    Max_07 "No, I just thought we could work it out somehow without everything that happened last time..."
 
 # game/dialogues/alicetalk.rpy:6009
 translate english alice_mistress_1_1a71d79c:
 
     # Alice_16 "Тебе сейчас не думать нужно, а просто делать то, что я хочу. Пошли ко мне в комнату..." nointeract
-    Alice_16 "" nointeract
+    Alice_16 "You don't need to think right now, you just need to do what I want you to do. Let's go to my room..." nointeract
 
 # game/dialogues/alicetalk.rpy:6016
 translate english alice_mistress_1_4b63fc0c:
 
     # Max_09 "{i}( Надеюсь, всё обойдётся привязыванием и угрозами, как в прошлый раз. И зачем я ей этот стек купил?! ){/i}"
-    Max_09 ""
+    Max_09 "{i}( I hope she doesn't get tied up and threatened like last time. Why did I buy her that stack?! ){/i}"
 
 # game/dialogues/alicetalk.rpy:6017
 translate english alice_mistress_1_8b443cf9:
 
     # Alice "Макс, заходи!" nointeract
-    Alice "" nointeract
+    Alice "Max, come on in!" nointeract
 
 # game/dialogues/alicetalk.rpy:6026
 translate english alice_mistress_1_6c9fc7dd:
 
     # Alice_02 "Ну же, Макс, не тормози, проходи! Или снова наслаждаешься видом!"
-    Alice_02 ""
+    Alice_02 "Come on, Max, don't slow down, come on! Or are you enjoying the view again!"
 
 # game/dialogues/alicetalk.rpy:6027
 translate english alice_mistress_1_28ac6dd3:
 
     # Max_03 "Ага... Ты очень красивая!"
-    Max_03 ""
+    Max_03 "Yeah... You're very beautiful!"
 
 # game/dialogues/alicetalk.rpy:6030
 translate english alice_mistress_1_bb754d35:
 
     # Alice_05 "Спасибо! Но комплименты не спасут тебя от того, что я хочу сделать. Снимай майку и присаживайся на стул." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Thank you! But compliments won't save you from what I want to do. Take off your shirt and have a seat in the chair." nointeract
 
 # game/dialogues/alicetalk.rpy:6032
 translate english alice_mistress_1_92e1d765:
 
     # Alice_05 "Спасибо! Но комплименты не спасут тебя от того, что я хочу сделать. Присаживайся на стул." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Thank you! But compliments won't save you from what I want to do. Have a seat in the chair." nointeract
 
 # game/dialogues/alicetalk.rpy:6036
 translate english alice_mistress_1_38316ab5:
 
     # Alice_16 "На стул, Макс. Живо!"
-    Alice_16 ""
+    Alice_16 "In the chair, Max. Now!"
 
 # game/dialogues/alicetalk.rpy:6037
 translate english alice_mistress_1_6d11b7e8:
 
     # Max_14 "Понял, сажусь..."
-    Max_14 ""
+    Max_14 "Got it, I sit down..."
 
 # game/dialogues/alicetalk.rpy:6042
 translate english alice_mistress_1_38e3be30:
 
     # Alice_03 "Ну как, не туго я тебя привязала?"
-    Alice_03 ""
+    Alice_03 "Did I tie you up tight?"
 
 # game/dialogues/alicetalk.rpy:6043
 translate english alice_mistress_1_706c0535:
 
     # Max_09 "Вообще-то, немного жмёт."
-    Max_09 ""
+    Max_09 "Actually, it's a little tight."
 
 # game/dialogues/alicetalk.rpy:6044
 translate english alice_mistress_1_4dca2d04:
 
     # Alice_05 "Это ничего, тем более, что ты, как я вижу, снова блещешь своими причиндалами. Тебе что, так нравится, когда тебя связывают, фетишист мелкий?"
-    Alice_05 ""
+    Alice_05 "That's all right, especially since I see you're showing off your junk again. Do you like being tied up so much, you little fetishist?"
 
 # game/dialogues/alicetalk.rpy:6045
 translate english alice_mistress_1_6293c4ed:
 
     # Max_02 "Просто наряд твой очень нравится..."
-    Max_02 ""
+    Max_02 "I just really like your outfit..."
 
 # game/dialogues/alicetalk.rpy:6050
 translate english alice_mistress_1_4203d633:
 
     # Alice_12 "Ах... Ты, видимо, считаешь, что всё это шутки. Тебе было так же весело стоять за углом и глазеть, как я моюсь? Это очень по-мужски! Подглядывать за собственной сестрой! Хм... Может быть, тебе всё-таки всыпать?!"
-    Alice_12 ""
+    Alice_12 "Ah... You must think this is all a joke. Was it as much fun for you to stand around the corner and watch me wash? That's very manly! Peeping on your own sister! Hmm... Maybe you should take a punch."
 
 # game/dialogues/alicetalk.rpy:6051
 translate english alice_mistress_1_881104af:
 
     # Max_08 "Эй, потише с этой штукой! Ты чего?"
-    Max_08 ""
+    Max_08 "Hey, be quiet with that thing! What are you doing?"
 
 # game/dialogues/alicetalk.rpy:6052
 translate english alice_mistress_1_d1417488:
 
     # Alice_16 "А ничего! Наверняка ты стоял, смотрел на меня и представлял, как зайдёшь в душ и жёстко оттрахаешь меня?!"
-    Alice_16 ""
+    Alice_16 "That's all right! I bet you stood there looking at me and imagined going into the shower and fucking me hard!"
 
 # game/dialogues/alicetalk.rpy:6053
 translate english alice_mistress_1_ccc44999:
 
     # Max_10 "Ну... Оно само так получается думать..."
-    Max_10 ""
+    Max_10 "Well... It just happens to think that way..."
 
 # game/dialogues/alicetalk.rpy:6058
 translate english alice_mistress_1_cb59d800:
 
     # Alice_15 "Ах вот так! Само получается?! У меня начинает складываться впечатление, что моя \"запугивающая терапия\" не даст результатов с таким извращугой, как ты."
-    Alice_15 ""
+    Alice_15 "Oh, that's it! It's working itself out?! I'm starting to get the impression that my \"bullying therapy\" isn't going to work with a pervert like you."
 
 # game/dialogues/alicetalk.rpy:6059
 translate english alice_mistress_1_c15dd01e:
 
     # Max_15 "Тогда прекращай размахивать этой плёткой... Давай, развяжи меня!"
-    Max_15 ""
+    Max_15 "Then stop swinging that whip... Come on, untie me!"
 
 # game/dialogues/alicetalk.rpy:6064
 translate english alice_mistress_1_b30b33cf:
 
     # Alice_17 "Что, не нравится? Мне тоже не нравится, что ты постоянно за мной подглядываешь! Знаешь, Макс... Я могла бы, например, дать тебе этим стеком по яйцам. Ну так... чтобы до тебя лучше дошло! Но я поступлю иначе..."
-    Alice_17 ""
+    Alice_17 "What, you don't like it? I don't like you watching me all the time either! You know, Max... I could, for instance, kick you in the balls with this stack. Just so... so you'd get a better idea! But that's not what I'm going to do..."
 
 # game/dialogues/alicetalk.rpy:6065
 translate english alice_mistress_1_0cf493c2:
 
     # Max_09 "Да?! И как же, интересно?"
-    Max_09 ""
+    Max_09 "Yes?! And how, I wonder?"
 
 # game/dialogues/alicetalk.rpy:6070
 translate english alice_mistress_1_c07c8399:
 
     # Alice_05 "А очень просто! Я буду высекать эту твою мерзкую привычку подглядывать за мной. Прямо этим стеком и прямо по твоей заднице. И сила, с которой я это буду делать, будет зависеть от того, насколько покладисто ты этому подчинишься."
-    Alice_05 ""
+    Alice_05 "It's very simple! I'll carve that nasty habit of yours of peeking at me. Right with this stack and right up your ass. And the force with which I will do it will depend on how obediently you submit to it."
 
 # game/dialogues/alicetalk.rpy:6071
 translate english alice_mistress_1_089afa86:
 
     # Max_15 "Эй! Может мне ещё и самому себя отхлестать, прямо на твоих глазах?!"
-    Max_15 ""
+    Max_15 "Hey! Why don't I whip myself, right in front of you?!"
 
 # game/dialogues/alicetalk.rpy:6076
 translate english alice_mistress_1_9206dbf7:
 
     # Alice_07 "Ох, я бы с удовольствием на это посмотрела, но стек я тебе не доверю. Всё будет в моей власти. Но ты всегда можешь выбрать наказание от мамы перед всеми нами."
-    Alice_07 ""
+    Alice_07 "Oh, I'd love to see it, but I won't trust you. Everything would be in my power. But you can always choose to be punished by your mother in front of all of us."
 
 # game/dialogues/alicetalk.rpy:6077
 translate english alice_mistress_1_f123fc47:
 
     # Max_14 "Какие классные у меня варианты! Один лучше другого."
-    Max_14 ""
+    Max_14 "What great choices I have! One is better than the other."
 
 # game/dialogues/alicetalk.rpy:6078
 translate english alice_mistress_1_d54a583d:
 
     # Alice_16 "В общем, я предупредила тебя в последний раз. Дальше всё зависит от тебя. Увижу, что подглядываешь - накажу или сама, или это будет мама! Понял меня?!"
-    Alice_16 ""
+    Alice_16 "Anyway, I warned you for the last time. The rest is up to you. If I see you peeping, I'll punish you, or it'll be your mother! Do you understand me?!"
 
 # game/dialogues/alicetalk.rpy:6079
 translate english alice_mistress_1_b6efeed9:
 
     # Max_11 "Понял-понял..."
-    Max_11 ""
+    Max_11 "Got it, got it..."
 
 # game/dialogues/alicetalk.rpy:6084
 translate english alice_mistress_1_832d4481:
 
     # Alice_12 "Это не шутка, Макс - я тебя предупредила! Всё, вали отсюда." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "This is no joke, Max - I warned you! That's it, get out of here." nointeract
 
 # game/dialogues/alicetalk.rpy:6103
 translate english alice_mistress_2_2420c156:
 
     # Alice_02 "Ой, Макс, спасибо, что разрешил... А как ты хочешь, чтобы я это сделала? Понежнее?"
-    Alice_02 ""
+    Alice_02 "Oh, Max, thank you for letting me do that. How do you want me to do it? Gentle?"
 
 # game/dialogues/alicetalk.rpy:6104
 translate english alice_mistress_2_79b6aa34:
 
     # Max_07 "Желательно, да!"
-    Max_07 ""
+    Max_07 "Preferably, yes!"
 
 # game/dialogues/alicetalk.rpy:6105
 translate english alice_mistress_2_c7e32ed5:
 
     # Alice_05 "Ха-ха... Размечтался! Сперва глазел на меня голую, а теперь пришёл и ещё указываешь, как тебя наказать?! Совсем больной что ли? Идём быстро в мою комнату..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Ha ha... You wish! First you stare at me naked, and now you tell me how to punish me?! Are you sick or something? Come quickly to my room..." nointeract
 
 # game/dialogues/alicetalk.rpy:6112
 translate english alice_mistress_2_e1ff271f:
 
     # Alice "И даже не думай сбегать, потому что я уже почти оделась!"
-    Alice ""
+    Alice "And don't even think about running away, because I'm almost dressed!"
 
 # game/dialogues/alicetalk.rpy:6113
 translate english alice_mistress_2_47ba9f6f:
 
     # Max_09 "Да, конечно. Жду."
-    Max_09 ""
+    Max_09 "Yes, of course. Waiting."
 
 # game/dialogues/alicetalk.rpy:6114
 translate english alice_mistress_2_ebb5417f:
 
     # Alice "Давай, заходи." nointeract
-    Alice "" nointeract
+    Alice "Come on, get in." nointeract
 
 # game/dialogues/alicetalk.rpy:6123
 translate english alice_mistress_2_b898a43b:
 
     # Alice_02 "Ну же, Макс, не тормози, проходи!"
-    Alice_02 ""
+    Alice_02 "Come on, Max, don't slow down, come on!"
 
 # game/dialogues/alicetalk.rpy:6124
 translate english alice_mistress_2_329baf0e:
 
     # Max_11 "Опять привязывать будешь?"
-    Max_11 ""
+    Max_11 "Are you going to tie it again?"
 
 # game/dialogues/alicetalk.rpy:6125
 translate english alice_mistress_2_a79d3f53:
 
     # Alice_03 "А вот и не угадал! Раздевайся!"
-    Alice_03 ""
+    Alice_03 "No, you didn't! Take your clothes off!"
 
 # game/dialogues/alicetalk.rpy:6126
 translate english alice_mistress_2_1f573daa:
 
     # Max_08 "В смысле?"
-    Max_08 ""
+    Max_08 "What do you mean?"
 
 # game/dialogues/alicetalk.rpy:6127
 translate english alice_mistress_2_4ed0c16d:
 
     # Alice_07 "В прямом. Ты же смотрел на меня голую, теперь я на тебя посмотрю!"
-    Alice_07 ""
+    Alice_07 "Literally. You looked at me naked, now I'll look at you!"
 
 # game/dialogues/alicetalk.rpy:6128
 translate english alice_mistress_2_cb28e33b:
 
     # Max_09 "Это ещё зачем?"
-    Max_09 ""
+    Max_09 "What's that for?"
 
 # game/dialogues/alicetalk.rpy:6129
 translate english alice_mistress_2_9b5aa4e3:
 
     # Alice_05 "Чтобы побольше неудобства тебе принести... Это такая часть наказания."
-    Alice_05 ""
+    Alice_05 "To make you more uncomfortable... This is such a part of the punishment."
 
 # game/dialogues/alicetalk.rpy:6130
 translate english alice_mistress_2_212243b5:
 
     # Max_10 "Ну-у... ладно..."
-    Max_10 ""
+    Max_10 "Well... okay..."
 
 # game/dialogues/alicetalk.rpy:6136
 translate english alice_mistress_2_2abd2c6e:
 
     # Alice_03 "Ну вот, теперь ты в том же положении, что и я в ванной комнате. Нравится обстановка?"
-    Alice_03 ""
+    Alice_03 "Well, now you're in the same position as I am in the bathroom. Do you like the ambiance?"
 
 # game/dialogues/alicetalk.rpy:6137
 translate english alice_mistress_2_f0a64feb:
 
     # Max_09 "Вообще-то не очень..."
-    Max_09 ""
+    Max_09 "Actually, not so much..."
 
 # game/dialogues/alicetalk.rpy:6138
 translate english alice_mistress_2_951fb089:
 
     # Alice_05 "Вот именно так я чувствую себя, когда ты за мной смотришь! А теперь живо поворачивайся к столу и подставляй задницу!"
-    Alice_05 ""
+    Alice_05 "That's how I feel when you're watching me! Now turn over to the table and get your ass up here!"
 
 # game/dialogues/alicetalk.rpy:6139
 translate english alice_mistress_2_50fbe9c8:
 
     # Max_13 "Ты что, меня серьёзно накажешь? Прямо плёткой?!"
-    Max_13 ""
+    Max_13 "Are you seriously going to punish me? You're going to whip me?!"
 
 # game/dialogues/alicetalk.rpy:6145
 translate english alice_mistress_2_e9b9dd05:
 
     # Alice_12 "Да, Макс, серьёзно! И если помнишь, я говорила в прошлый раз от чего будет зависеть сила, с которой я буду это делать... Так как? Есть желание меня злить или ты будешь послушным мальчиком?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Yes, Max, seriously! And if you remember, I told you last time what the strength with which I'm going to do it will depend on... How about this? Do you want to piss me off or will you be an obedient boy?" nointeract
 
 # game/dialogues/alicetalk.rpy:6152
 translate english alice_mistress_2_4880142c:
 
     # Max_12 "Ай!!! Бо-о-ольно... С ума сошла что ли так бить?!"
-    Max_12 ""
+    Max_12 "Ow!!! It hurts... Are you crazy to hit like that?!"
 
 # game/dialogues/alicetalk.rpy:6153
 translate english alice_mistress_2_2615d068:
 
     # Alice_16 "Запомни, глупый мальчишка, мы здесь не для того, чтобы побыстрее со всем разобраться, а чтобы ты прочувствовал, что подглядывать не хорошо! Живо руки на стол!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "Remember, silly boy, we're not here to get things straightened out, but to make you feel that it's not okay to peep! Put your hands on the table now!" nointeract
 
 # game/dialogues/alicetalk.rpy:6164
 translate english alice_mistress_2_4880142c_1:
 
     # Max_12 "Ай!!! Бо-о-ольно... С ума сошла что ли так бить?!"
-    Max_12 ""
+    Max_12 "Ow!!! It hurts... Are you crazy to hit like that?!"
 
 # game/dialogues/alicetalk.rpy:6165
 translate english alice_mistress_2_b2668f11:
 
     # Alice_16 "Ну как? Ты прочувствовал, что мне лучше не угрожать и не подглядывать за мной?! Живо руки на стол!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "How's that? Did you get the feeling it's better not to threaten me or peek at me?! Put your hands on the table now!" nointeract
 
 # game/dialogues/alicetalk.rpy:6177
 translate english alice_mistress_2_submit_18617f58:
 
     # Max_14 "Ай! Ай... Всё, я всё понял..."
-    Max_14 ""
+    Max_14 "Ow! Ow... Okay, I got it..."
 
 # game/dialogues/alicetalk.rpy:6178
 translate english alice_mistress_2_submit_afd9742b:
 
     # Alice_05 "Точно? Может добавки?"
-    Alice_05 ""
+    Alice_05 "Are you sure? How about supplements?"
 
 # game/dialogues/alicetalk.rpy:6179
 translate english alice_mistress_2_submit_71218d7c:
 
     # Max_10 "Не надо! Я всё прочувствовал..."
-    Max_10 ""
+    Max_10 "Don't! I felt it all..."
 
 # game/dialogues/alicetalk.rpy:6184
 translate english alice_mistress_2_submit_e6c91767:
 
     # Alice_07 "Ну, раз так, можешь идти. Да, и спасибо ещё раз за то, что подарил мне этот стек. Надеюсь, ты его оценил."
-    Alice_07 ""
+    Alice_07 "Well, if that's the case, you can go. Oh, and thanks again for giving me that stack. I hope you appreciated it."
 
 # game/dialogues/alicetalk.rpy:6185
 translate english alice_mistress_2_submit_91bec0a7:
 
     # Max_11 "Ага... Оценил..." nointeract
-    Max_11 "" nointeract
+    Max_11 "Yeah... Appreciate..." nointeract
 
 # game/dialogues/alicetalk.rpy:6195
 translate english alice_mistress_2_fuck_you_28518983:
 
     # Alice_15 "Что?! Ничего себе, как ты заговорил! Ну держись..."
-    Alice_15 ""
+    Alice_15 "What?! Wow, you're talking! Hang in there..."
 
 # game/dialogues/alicetalk.rpy:6199
 translate english alice_mistress_2_fuck_you_8a940fe6:
 
     # Max_13 "Чёрт!!! Алиса, бо-о-ольно... Я всё понял!"
-    Max_13 ""
+    Max_13 "Shit!!! Alice, boo-hoo-hoo... I got it!"
 
 # game/dialogues/alicetalk.rpy:6204
 translate english alice_mistress_2_fuck_you_afd9742b:
 
     # Alice_05 "Точно? Может добавки?"
-    Alice_05 ""
+    Alice_05 "Are you sure? How about supplements?"
 
 # game/dialogues/alicetalk.rpy:6205
 translate english alice_mistress_2_fuck_you_237323fc:
 
     # Max_10 "Нет-нет, я всё прочувствовал! Достаточно!"
-    Max_10 ""
+    Max_10 "No, no, I felt it all! That's enough!"
 
 # game/dialogues/alicetalk.rpy:6206
 translate english alice_mistress_2_fuck_you_8b2fa365:
 
     # Alice_07 "Ну ладно, сделаю вид, что я поверила. Вали отсюда. Да, и спасибо ещё раз за твой великолепный подарок. Надеюсь, он тебе понравился?"
-    Alice_07 ""
+    Alice_07 "All right, I'll pretend to believe it. Get out of here. Oh, and thank you again for your wonderful gift. I hope you liked it."
 
 # game/dialogues/alicetalk.rpy:6207
 translate english alice_mistress_2_fuck_you_30a1fd57:
 
     # Max_11 "Ага... Очень..." nointeract
-    Max_11 "" nointeract
+    Max_11 "Yeah... Very..." nointeract
 
 # game/dialogues/alicetalk.rpy:6229
 translate english alice_mistress_3_78b6d46d:
 
     # Alice_02 "Я рада, что ты сделал такой выбор. Это справедливо, когда жертве вопиющего вуайеризма даётся возможность расквитаться с обидчиком!" nointeract
-    Alice_02 "" nointeract
+    Alice_02 "I'm glad you made that choice. It's only fair that the victim of blatant voyeurism be given the opportunity to get even with his abuser!" nointeract
 
 # game/dialogues/alicetalk.rpy:6233
 translate english alice_mistress_3_b3a8e3d6:
 
     # Alice_05 "[succes!t]Звучит вроде искренне... Хорошо, твоё признание я принимаю. Но учти, наказание от этого добрее не станет!"
-    Alice_05 ""
+    Alice_05 "[succes!t]Sounds kind of sincere... Okay, I accept your confession. But you should know that it doesn't make me feel any better about my punishment!"
 
 # game/dialogues/alicetalk.rpy:6234
 translate english alice_mistress_3_9a9eff04:
 
     # Max_01 "Конечно..."
-    Max_01 ""
+    Max_01 "Of course..."
 
 # game/dialogues/alicetalk.rpy:6238
 translate english alice_mistress_3_f131083f:
 
     # Alice_08 "Ммм... Люблю эти конфетки! Пошли за мной!" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Mmm... I love this candy! Follow me!" nointeract
 
 # game/dialogues/alicetalk.rpy:6244
 translate english alice_mistress_3_dc08410d:
 
     # Alice_06 "[failed!t]А мне вот чувствуется, что это просто способ меня задобрить... Так что нет. Спасибо, но я обойдусь."
-    Alice_06 ""
+    Alice_06 "[failed!t]But I feel like it's just a way to placate me... So, no. Thanks, but I'm good."
 
 # game/dialogues/alicetalk.rpy:6245
 translate english alice_mistress_3_3f92400e:
 
     # Max_07 "Ну и зря, я хотел, как лучше."
-    Max_07 ""
+    Max_07 "Well for nothing, I wanted what was best."
 
 # game/dialogues/alicetalk.rpy:6249
 translate english alice_mistress_3_0c4117fa:
 
     # Alice_05 "За каждым преступлением должно следовать наказание! Так что не будем медлить. Пойдём ко мне в комнату..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Every crime must be punished! So let's not hesitate. Let's go to my room..." nointeract
 
 # game/dialogues/alicetalk.rpy:6252
 translate english alice_mistress_3_61898918:
 
     # Alice_03 "Да? Вот обидно... Ну ладно, это твой выбор... В любом случае, когда тебя будут наказывать, на моём лице будет очень довольная улыбка."
-    Alice_03 ""
+    Alice_03 "Yes? That's a shame... All right, it's your choice... Anyway, when you get punished, I'll have a very satisfied smile on my face."
 
 # game/dialogues/alicetalk.rpy:6253
 translate english alice_mistress_3_e413dc04:
 
     # Max_09 "Да мне всё-равно..." nointeract
-    Max_09 "" nointeract
+    Max_09 "I don't care..." nointeract
 
 # game/dialogues/alicetalk.rpy:6267
 translate english alice_mistress_3_follow_e1ff271f:
 
     # Alice "И даже не думай сбегать, потому что я уже почти оделась!"
-    Alice ""
+    Alice "And don't even think about running away, because I'm almost dressed!"
 
 # game/dialogues/alicetalk.rpy:6268
 translate english alice_mistress_3_follow_47ba9f6f:
 
     # Max_09 "Да, конечно. Жду."
-    Max_09 ""
+    Max_09 "Yes, of course. Waiting."
 
 # game/dialogues/alicetalk.rpy:6269
 translate english alice_mistress_3_follow_ebb5417f:
 
     # Alice "Давай, заходи." nointeract
-    Alice "" nointeract
+    Alice "Come on, get in." nointeract
 
 # game/dialogues/alicetalk.rpy:6283
 translate english alice_mistress_3_follow_1598145f:
 
     # Alice_02 "Ну же, Макс, не тормози. Хватит на меня так пялиться и проходи! Раздевайся давай..." nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Come on, Max, don't slow down. Stop staring at me like that and come in! Take your clothes off..." nointeract
 
 # game/dialogues/alicetalk.rpy:6292
 translate english alice_mistress_3_follow_90d53df6:
 
     # Alice_05 "Ну и чего стоишь? Ты же знаешь, что делать! Не заставляй меня ждать... Хуже ведь будет тебе!" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "What are you standing there for? You know what to do! Don't make me wait... It'll be worse for you, won't it?" nointeract
 
 # game/dialogues/alicetalk.rpy:6299
 translate english alice_mistress_3_follow_21840dd9:
 
     # Alice_03 "Хороший мальчик. Что теперь нужно сказать?" nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Good boy. What do you have to say now?" nointeract
 
 # game/dialogues/alicetalk.rpy:6306
 translate english alice_mistress_3_follow_e6a1536b:
 
     # Alice_04 "Ох, как же моим ушам приятно слышать такое... Это ведь искреннее твоё желание?" nointeract
-    Alice_04 "" nointeract
+    Alice_04 "Oh, how my ears are glad to hear such a thing... This is your sincere wish, isn't it?" nointeract
 
 # game/dialogues/alicetalk.rpy:6313
 translate english alice_mistress_3_follow_25fbab07:
 
     # Alice_05 "Ой, когда меня так об этом просят, я не могу отказать... Может, ещё разок для закрепления, чтобы лучше прочувствовать, что подглядывать не хорошо?"
-    Alice_05 ""
+    Alice_05 "Oh, when people ask me to do that, I can't say no... Maybe one more time to reinforce, to get a better sense that peeking is not okay?"
 
 # game/dialogues/alicetalk.rpy:6314
 translate english alice_mistress_3_follow_71218d7c:
 
     # Max_10 "Не надо! Я всё прочувствовал..."
-    Max_10 ""
+    Max_10 "Don't! I felt it all..."
 
 # game/dialogues/alicetalk.rpy:6319
 translate english alice_mistress_3_follow_a33029f8:
 
     # Alice_07 "Ну, раз так, можешь идти. Я на самом деле сильно сомневаюсь, что до тебя дошло. Но всё же понадеюсь..." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Well, if that's the case, you can go. I really doubt that you get it. But I still hope..." nointeract
 
 # game/dialogues/alicetalk.rpy:6337
 translate english alice_mistress_3_follow_4880142c:
 
     # Max_12 "Ай!!! Бо-о-ольно... С ума сошла что ли так бить?!"
-    Max_12 ""
+    Max_12 "Ow!!! It hurts... Are you crazy to hit like that?!"
 
 # game/dialogues/alicetalk.rpy:6338
 translate english alice_mistress_3_follow_56a049d6:
 
     # Alice_16 "Вот так ты значит хочешь? Дерзить мне будешь... Ну, смотри... Если не поставишь руки на стол и не отклячишь свою задницу, добавки будет столько, что ноги откажут!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "Is that how you want it? You're going to sass me... Well, look... If you don't put your hands on the table and get your ass down, I'll give you so much extra that your legs won't work!" nointeract
 
 # game/dialogues/alicetalk.rpy:6345
 translate english alice_mistress_3_follow_a578cf2b:
 
     # Alice_04 "Хороший мальчик. Сейчас ты у меня прочувствуешь, что подглядывать не хорошо! Как тебе?"
-    Alice_04 ""
+    Alice_04 "Good boy. I'm going to make you feel that peeping is not good! What do you think?"
 
 # game/dialogues/alicetalk.rpy:6346
 translate english alice_mistress_3_follow_3a79efc9:
 
     # Max_14 "Больно... Может уже хватит?"
-    Max_14 ""
+    Max_14 "It hurts... Would you stop it already?"
 
 # game/dialogues/alicetalk.rpy:6347
 translate english alice_mistress_3_follow_829e8023:
 
     # Alice_05 "Правда? Хмм... Что-то как-то быстро до тебя дошло... Давай ещё раз, для закрепления..."
-    Alice_05 ""
+    Alice_05 "Really? Hmm... You're a little quick on the uptake, aren't you? Let's go over it again, just to be sure..."
 
 # game/dialogues/alicetalk.rpy:6353
 translate english alice_mistress_3_follow_7c6d427c:
 
     # Max_13 "Ай! Я всё прочувствовал... Прекращай!"
-    Max_13 ""
+    Max_13 "Ouch! I felt it all... Stop it!"
 
 # game/dialogues/alicetalk.rpy:6354
 translate english alice_mistress_3_follow_8bfd7bd1:
 
     # Alice_03 "Ну как, понравилось? Я надеюсь, сейчас ты всё понял?"
-    Alice_03 ""
+    Alice_03 "Did you like it? I hope you get it now?"
 
 # game/dialogues/alicetalk.rpy:6359
 translate english alice_mistress_3_follow_1755dd23:
 
     # Max_10 "Да, я понял, что подглядывать не хорошо..."
-    Max_10 ""
+    Max_10 "Yes, I realized that peeping is not good..."
 
 # game/dialogues/alicetalk.rpy:6360
 translate english alice_mistress_3_follow_a03004fb:
 
     # Alice_07 "Ну, а раз понял, можешь идти. Я на самом деле сильно сомневаюсь, что до тебя дошло. Но всё же понадеюсь..." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Well, now that you understand, you can go. I really doubt that you get it. But I still hope..." nointeract
 
 # game/dialogues/alicetalk.rpy:6372
 translate english alice_mistress_3_follow_28518983:
 
     # Alice_15 "Что?! Ничего себе, как ты заговорил! Ну держись..."
-    Alice_15 ""
+    Alice_15 "What?! Wow, you're talking! Hang in there..."
 
 # game/dialogues/alicetalk.rpy:6376
 translate english alice_mistress_3_follow_c87be605:
 
     # Max_13 "Чёрт!!! Алиса, бо-о-ольно... Хватит!"
-    Max_13 ""
+    Max_13 "Shit!!! Alice, boo-hoo-hoo... Stop it!"
 
 # game/dialogues/alicetalk.rpy:6382
 translate english alice_mistress_3_follow_1adc516a:
 
     # Alice_05 "Точно? Может добавки? Хотя вижу, что и правда хватит, а то вот-вот чувствую - заплачешь. Или всё-таки..."
-    Alice_05 ""
+    Alice_05 "Are you sure? How about a refill? Although I can see that it's really enough, or else I feel like I'm about to cry. Or maybe..."
 
 # game/dialogues/alicetalk.rpy:6383
 translate english alice_mistress_3_follow_6a20833b:
 
     # Max_10 "Нет-нет, я усвоил, что подглядывать не хорошо! Достаточно!"
-    Max_10 ""
+    Max_10 "No, no, I've learned that peeking is not good! That's enough!"
 
 # game/dialogues/alicetalk.rpy:6384
 translate english alice_mistress_3_follow_07b7d700:
 
     # Alice_07 "Ну ладно, сделаю вид, что я поверила. Вали отсюда. Надеюсь, ты и правда что-то усвоил." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "All right, I'll pretend to believe it. Get out of here. I hope you really did learn something." nointeract
 
 # game/dialogues/alicetalk.rpy:6401
 translate english alice_domine_drink_2879aca1:
 
     # Alice_02 "Ну же, Макс, не тормози. Хватит на меня так пялиться и проходи! Раздевайся давай..."
-    Alice_02 ""
+    Alice_02 "Come on, Max, don't slow down. Stop staring at me like that and come in! Take your clothes off..."
 
 # game/dialogues/alicetalk.rpy:6402
 translate english alice_domine_drink_93e83273:
 
     # Max_00 "А может без этого? Может, лучше привяжешь меня к стулу и уже там как-нибудь накажешь?"
-    Max_00 ""
+    Max_00 "How about without it? Why don't you just tie me to a chair and punish me there?"
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:5901
     old "{i}идти за Алисой{/i}"
-    new ""
+    new "{i}following Alice{/i}"
 
     # game/dialogues/alicetalk.rpy:6033
     old "Конфетка, я полагаю, тоже не спасёт. Но я всё равно предложу..."
-    new ""
+    new "Candy, I suppose, will not save either. But I'll suggest it anyway..."
 
     # game/dialogues/alicetalk.rpy:6145
     old "Давай уже быстрее с этим покончим..."
-    new ""
+    new "Let's get it over with already..."
 
     # game/dialogues/alicetalk.rpy:6145
     old "Ты же понимаешь, что я могу всыпать по твоей заднице в ответ?"
-    new ""
+    new "You do realize I could kick your ass back, right?"
 
     # game/dialogues/alicetalk.rpy:6153
     old "{i}подчиниться{/i}"
-    new ""
+    new "{i}submit to{/i}"
 
     # game/dialogues/alicetalk.rpy:6185
     old "{i}одеться и уйти{/i}"
-    new ""
+    new "{i}Get dressed and go{/i}"
 
     # game/dialogues/alicetalk.rpy:6229
     old "Конфетку? Она ни к чему не обязывает. Просто признание моей испорченности... {color=[ch.col]}(Убеждение. Шанс: [ch.vis]){/color}"
-    new ""
+    new "Candy? It doesn't commit to anything. Just an acknowledgement of my depravity... {color=[ch.col]}(Persuasion. Chance: [ch.vis]){/color}"
 
     # game/dialogues/alicetalk.rpy:6229
     old "То же мне, преступника нашла..."
-    new ""
+    new "Same here, found the perp..."
 
     # game/dialogues/alicetalk.rpy:6249
     old "Хотя, знаешь... Я передумал. Лучше уж от мамы получить..."
-    new ""
+    new "Although, you know... I've changed my mind. I'd rather get it from my mom..."
 
     # game/dialogues/alicetalk.rpy:6283
     old "{i}снять одежду{/i}"
-    new ""
+    new "{i}take off your clothes{/i}"
 
     # game/dialogues/alicetalk.rpy:6292
     old "Ничего. Подождёшь, не развалишься..."
-    new ""
+    new "That's okay. You can wait, you won't fall apart..."
 
     # game/dialogues/alicetalk.rpy:6299
     old "Накажи меня! Я это заслужил..."
-    new ""
+    new "Punish me! I deserve it..."
 
     # game/dialogues/alicetalk.rpy:6299
     old "Давай уже быстрее, тебя ждём..."
-    new ""
+    new "Hurry up, we're waiting for you..."
 
     # game/dialogues/alicetalk.rpy:6306
     old "Да, я виноват и меня нужно наказать!"
-    new ""
+    new "Yes, I am guilty and I need to be punished!"
 
     # game/dialogues/alicetalk.rpy:6338
     old "Вертел я тебя знаешь на чём?!"
-    new ""
+    new "You know what I spun you on?!"
 
