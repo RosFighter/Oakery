@@ -2496,7 +2496,7 @@ translate deutsch erofilm2_2_a4da47d1:
 translate deutsch erofilm2_2_37c5e269:
 
     # Ann_02 "Ой, я думала, ты и не предложишь. Надеюсь, сегодня ты отнесёшься к массажу с большим вниманием, чем в прошлый раз?"
-    Ann_02 "Oh, ich dachte, du würdest mir kein Angebot machen. Ich hoffe, du wirst heute aufmerksamer als beim letzten Mal bei der Massage sein?"
+    Ann_02 "Oh, ich dachte schon, du würdest mich heute nicht fragen. Ich hoffe, du wirst heute aufmerksamer als beim letzten Mal bei der Massage sein?"
 
 # game/dialogues/anntalk.rpy:1122
 translate deutsch erofilm2_2_38413f74:

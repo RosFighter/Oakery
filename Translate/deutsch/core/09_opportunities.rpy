@@ -1528,7 +1528,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Фух, повезло не испытать на себе этот самый стек, который я подарил Алисе. Что же за БДСМ-игры она собирается затевать? И ещё более интересно, с кем?! Сейчас же я пока что могу лишь узнать, что ещё она попросит в дополнение к своему костюму... Ошейник... Зажимы на соски... Я уже ничему не удивлюсь."
-    new "Puh, ein Glück, dass ich nicht genau den Stack bekommen habe, den ich Alice bekommen wollte. Welche Art von BDSM-Spiel wird sie spielen? Und was noch interessanter ist, mit wem?! Im Moment kann ich mich nur fragen, was sie sich zusätzlich zu ihrem Kostüm noch wünschen wird... Ein Halsband... Nippelklemmen... Das würde mich nicht überraschen."
+    new "Puh, ein Glück, dass ich nicht genau die Lederpeitsche bekommen habe, den ich Alice bekommen wollte. Welche Art von BDSM-Spiel wird sie spielen? Und was noch interessanter ist, mit wem?! Im Moment kann ich mich nur fragen, was sie sich zusätzlich zu ihrem Kostüm noch wünschen wird... Ein Halsband... Nippelklemmen... Das würde mich nicht überraschen."
 
     # game/core/09_opportunities.rpy:4
     old "В очередной раз, извиняясь перед Алисой, что-то пошло не так... Она не стала ничего просить, лишь сказала, что наказание, которое она для меня придумала, переносится на вечер. Но я обязательно должен подойти к ней, когда она будет смотреть ТВ ближе к ночи. Можно, конечно, и не ходить, но тогда на следующий день Алиса всё расскажет маме о моих подглядываниях и меня всё равно накажут перед всеми. Так что хорошо было бы узнать, что там Алиса придумала для меня. Хотя бы для сравнения..."
@@ -1548,7 +1548,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, что терпению Алисы пришёл конец! Она реально обещает отхлестать меня своим стеком, если я продолжу подглядывать за ней. И я ей верю, настроена она решительно. Вопрос лишь в том, что лучше: получить по заднице от мамы у всех на глазах или унижаться только перед Алисой? К тому же, ещё не известно, будет ли она бить меня сильнее мамы..."
-    new "Es sieht so aus, als wäre die Geduld von Alice zu Ende! Sie verspricht mir wirklich, mich mit ihrem Stack zu verprügeln, wenn ich sie weiter ausspioniere. Und ich glaube ihr, sie ist entschlossen. Die Frage ist nur, ob es besser ist, von Mom vor allen Leuten den Arsch versohlt zu bekommen, oder mich nur von Alice erniedrigen zu lassen. Außerdem weiß ich nicht, ob sie mich härter schlagen wird als Mom..."
+    new "Es sieht so aus, als wäre die Geduld von Alice zu Ende! Sie verspricht mir wirklich, mich mit ihrer Lederpeitsche zu verprügeln, wenn ich sie weiter ausspioniere. Und ich glaube ihr, sie ist entschlossen. Die Frage ist nur, ob es besser ist, von Mom vor allen Leuten den Arsch versohlt zu bekommen, oder mich nur von Alice erniedrigen zu lassen. Außerdem weiß ich nicht, ob sie mich härter schlagen wird als Mom..."
 
     # game/core/09_opportunities.rpy:4
     old "Как бы странно это не звучало, но нужно выяснить, как меня станет наказывать Алиса за подглядывания. А там уже будет из чего выбирать..."
@@ -1556,7 +1556,7 @@ translate deutsch strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот же Алиса обнаглевшая! Раздевайся она говорит... Видите ли, чтобы всё по честному было, раз я на неё голую смотрел, то и наказывать она меня будет голого! С другой стороны, я бы так же поступил, на её месте... Но наказала она меня жёстко! Этот стек... Жалею теперь очень сильно, что подарил его ей. Единственный, пожалуй, плюс - это то, что позорюсь я только перед Алисой, а не перед всеми. Может быть, если я не буду выпендриваться и подчинюсь ей во время наказания, то и влияния на неё я не сильно потеряю? И возможно, я всё-таки смогу сгладить наказание, если уговорю её на конфетку с ликёром..."
-    new "Was für eine freche Alice! Zieh dich aus, sagt sie... Um fair zu sein, da ich sie nackt gesehen habe, wird sie mich nackt bestrafen! Ich an ihrer Stelle hätte dasselbe getan... Aber sie hat mich hart bestraft! Dieser Stack... Ich bereue jetzt sehr, dass ich ihn ihr gegeben habe. Das einzig Gute ist wohl, dass ich mich nur vor Alice blamiere, nicht vor allen. Vielleicht würde ich nicht viel Einfluss bei ihr verlieren, wenn ich mich nicht so aufspielen und ihr während der Bestrafung gehorchen würde. Und vielleicht könnte ich die Strafe abmildern, indem ich sie zu Alkohol und Süßigkeiten überrede..."
+    new "Was für eine freche Alice! Zieh dich aus, sagt sie... Um fair zu sein, da ich sie nackt gesehen habe, wird sie mich nackt bestrafen! Ich an ihrer Stelle hätte dasselbe getan... Aber sie hat mich hart bestraft! Diese Lederpeitsche... Ich bereue jetzt sehr, dass ich ihn ihr gegeben habe. Das einzig Gute ist wohl, dass ich mich nur vor Alice blamiere, nicht vor allen. Vielleicht würde ich nicht viel Einfluss bei ihr verlieren, wenn ich mich nicht so aufspielen und ihr während der Bestrafung gehorchen würde. Und vielleicht könnte ich die Strafe abmildern, indem ich sie zu Alkohol und Süßigkeiten überrede..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попытаться задобрить Алису конфетой с ликёром перед тем, как мы отправимся в её комнату, где она меня накажет..."

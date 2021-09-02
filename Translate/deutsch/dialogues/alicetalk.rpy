@@ -10468,7 +10468,7 @@ translate deutsch Alice_sorry_34a7cc2b:
 translate deutsch Alice_sorry_161ef843:
 
     # Alice_03 "Нет-нет, всё верно - мне нужна плётка. Она вроде стеком называется. Ну знаешь, которой лошадок подгоняют."
-    Alice_03 "Ja-ja, das ist schon richtig - ich will eine Reitgerte. Ich glaube, man nennt so etwas einen Stack. Du weißt schon, das Ding, mit dem man Pferde antreibt."
+    Alice_03 "Ja-ja, das ist schon richtig - ich will eine Reitgerte. Ich glaube, man nennt so etwas eine Lederpeitsche. Du weißt schon, so ein Ding, mit dem man Pferde antreibt."
 
 # game/dialogues/alicetalk.rpy:3088
 translate deutsch Alice_sorry_e33f5b76:
@@ -10996,7 +10996,7 @@ translate deutsch alice_mistress_0_b5d05fa8:
 translate deutsch alice_mistress_0_bb08674b:
 
     # Alice_16 "Не перебивай меня, Макс! Я ведь могу использовать этот стек по его назначению... Хочешь?"
-    Alice_16 "Unterbrich mich nicht, Max! Immerhin kann ich diesen Stack für den vorgesehenen Zweck verwenden... Willst du das?"
+    Alice_16 "Unterbrich mich nicht, Max! Immerhin kann ich diese Lederpeitsche für den vorgesehenen Zweck verwenden... Willst du das?"
 
 # game/dialogues/alicetalk.rpy:5968
 translate deutsch alice_mistress_0_febc43c1:
@@ -11020,7 +11020,7 @@ translate deutsch alice_mistress_0_d39294b0:
 translate deutsch alice_mistress_0_a0188ae2:
 
     # Alice_05 "Хороший мальчик. Но если продолжишь, то вы с этим стеком станете очень близки. Особенно близки вы станете в районе твоей голой задницы, по которой я буду хлестать так, что ты будешь молить меня отпустить тебя к маме!"
-    Alice_05 "Braver Junge. Aber wenn du so weitermachst, wirst du und dieser Stack sich sehr nahe kommen. Besonders nah wird dein nackter Arsch sein, den ich so hart bearbeiten werde, dass du mich anflehen wirst, dich zu Mom gehen zu lassen!"
+    Alice_05 "Braver Junge. Aber wenn du so weitermachst, werden du und diese Lederpeitsche sich sehr nahe kommen. Besonders nah wird dein nackter Arsch sein, den ich so hart bearbeiten werde, dass du mich anflehen wirst, dich zu Mom gehen zu lassen!"
 
 # game/dialogues/alicetalk.rpy:5972
 translate deutsch alice_mistress_0_05076bc1:
@@ -11104,7 +11104,7 @@ translate deutsch alice_mistress_1_1a71d79c:
 translate deutsch alice_mistress_1_4b63fc0c:
 
     # Max_09 "{i}( Надеюсь, всё обойдётся привязыванием и угрозами, как в прошлый раз. И зачем я ей этот стек купил?! ){/i}"
-    Max_09 "{i}( Ich hoffe, dass Sie mich nicht wieder fesselt und bedroht, wie beim letzten Mal. Warum habe ich ihr diesen Stack nur gekauft?! ){/i}"
+    Max_09 "{i}( Ich hoffe, dass Sie mich nicht wieder fesselt und bedroht, wie beim letzten Mal. Warum habe ich ihr diese Lederpeitsche nur gekauft?! ){/i}"
 
 # game/dialogues/alicetalk.rpy:6017
 translate deutsch alice_mistress_1_8b443cf9:
@@ -11212,7 +11212,7 @@ translate deutsch alice_mistress_1_c15dd01e:
 translate deutsch alice_mistress_1_b30b33cf:
 
     # Alice_17 "Что, не нравится? Мне тоже не нравится, что ты постоянно за мной подглядываешь! Знаешь, Макс... Я могла бы, например, дать тебе этим стеком по яйцам. Ну так... чтобы до тебя лучше дошло! Но я поступлю иначе..."
-    Alice_17 "Was, du magst es nicht? Ich mag es auch nicht, wenn du mir ständig hinterher spionierst! Weißt du, Max... Ich könnte dir mit diesem Stack direkt auf die Eier schlagen. Nur so... damit du es besser verstehst! Aber das ist nicht das, was ich tun werde..."
+    Alice_17 "Was, du magst es nicht? Ich mag es auch nicht, wenn du mir ständig hinterher spionierst! Weißt du, Max... Ich könnte dir mit dieser Lederpeitsche direkt auf die Eier schlagen. Einfach so... damit du es besser verstehst! Aber das ist nicht das, was ich tun werde..."
 
 # game/dialogues/alicetalk.rpy:6065
 translate deutsch alice_mistress_1_0cf493c2:
@@ -11224,7 +11224,7 @@ translate deutsch alice_mistress_1_0cf493c2:
 translate deutsch alice_mistress_1_c07c8399:
 
     # Alice_05 "А очень просто! Я буду высекать эту твою мерзкую привычку подглядывать за мной. Прямо этим стеком и прямо по твоей заднице. И сила, с которой я это буду делать, будет зависеть от того, насколько покладисто ты этому подчинишься."
-    Alice_05 "Es ist ganz einfach! Ich werde dir deine unangenehme Angewohnheit, mich anzustarren, austreiben. Genau mit diesem Stack und genau auf deinem Arsch. Und die Kraft, mit der ich das tun werde, hängt davon ab, wie gefügig du dich unterwirfst."
+    Alice_05 "Es ist ganz einfach! Ich werde dir deine unangenehme Angewohnheit, mich anzustarren, austreiben. Mit genau dieser Lederpeitsche und genau auf deinen Arsch. Und die Kraft, mit der ich das tun werde, hängt davon ab, wie gefügig du dich unterwirfst."
 
 # game/dialogues/alicetalk.rpy:6071
 translate deutsch alice_mistress_1_089afa86:
@@ -11236,7 +11236,7 @@ translate deutsch alice_mistress_1_089afa86:
 translate deutsch alice_mistress_1_9206dbf7:
 
     # Alice_07 "Ох, я бы с удовольствием на это посмотрела, но стек я тебе не доверю. Всё будет в моей власти. Но ты всегда можешь выбрать наказание от мамы перед всеми нами."
-    Alice_07 "Oh, das würde ich gerne sehen, aber ich würde dir den Stack nicht anvertrauen. Alles liegt in meiner Hand. Aber du kannst dich jederzeit dafür entscheiden, von Mom vor uns allen bestraft zu werden."
+    Alice_07 "Oh, das würde ich gerne sehen, aber ich würde dir meine Lederpeitsche nicht anvertrauen. Alles liegt in meiner Hand. Aber du kannst dich jederzeit dafür entscheiden, von Mom vor uns allen bestraft zu werden."
 
 # game/dialogues/alicetalk.rpy:6077
 translate deutsch alice_mistress_1_f123fc47:
@@ -11422,7 +11422,7 @@ translate deutsch alice_mistress_2_submit_71218d7c:
 translate deutsch alice_mistress_2_submit_e6c91767:
 
     # Alice_07 "Ну, раз так, можешь идти. Да, и спасибо ещё раз за то, что подарил мне этот стек. Надеюсь, ты его оценил."
-    Alice_07 "Nun, wenn das der Fall ist, kannst du gehen. Oh, und nochmals vielen Dank, dass du mir diesen Stack geschenkt hast. Ich hoffe, du weißt es zu schätzen."
+    Alice_07 "Nun, wenn das der Fall ist, kannst du gehen. Oh, und nochmals vielen Dank, dass du mir diese Lederpeitsche geschenkt hast. Ich hoffe, du weißt es zu schätzen."
 
 # game/dialogues/alicetalk.rpy:6185
 translate deutsch alice_mistress_2_submit_91bec0a7:

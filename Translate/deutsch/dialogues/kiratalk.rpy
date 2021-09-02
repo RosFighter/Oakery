@@ -3248,7 +3248,7 @@ translate deutsch kira_photoset3_ba9d0021:
 translate deutsch kira_photoset3_4e3a97cd:
 
     # Kira_02 "Чувствуешь, какая я мокренькая, Макс? {p=1.5}{nw}"
-    Kira_02 "Kannst du fühlen, wie nass ich bin, Max? {p=1.5}{nw}"
+    Kira_02 "Fühlst du es mit deinem harten Schwanz, wie ich vor Geilheit tropfe? {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1390
 translate deutsch kira_photoset3_35211b2c:
