@@ -1246,7 +1246,7 @@ translate german olivia_repeatable_night_out_with_0b752bfe:
 translate german olivia_repeatable_night_out_with_1e38110f:
 
     # Max_04 "Если вдруг вам надоест спать вместе, я всегда рад приютить любую из вас на своей кровати."
-    Max_04 "Falls ihr mal keine Lust mehr habt, zusammen zu schlafen, bin ich immer gerne bereit, mit einem von euch in meinem Bett zu kuscheln."
+    Max_04 "Falls ihr mal keine Lust mehr habt, zusammen zu schlafen, bin ich immer gerne bereit, mit einer von euch in meinem Bett zu kuscheln."
 
 # game/events/olivia.rpy:644
 translate german olivia_repeatable_night_out_with_e56be7a5:
