@@ -11696,11 +11696,11 @@ translate deutsch strings:
 
     # game/dialogues/alicetalk.rpy:6153
     old "{i}подчиниться{/i}"
-    new "{i}{/i}"
+    new "{i}unterwerfen{/i}"
 
     # game/dialogues/alicetalk.rpy:6185
     old "{i}одеться и уйти{/i}"
-    new "{i}{/i}"
+    new "{i}anziehen und gehen{/i}"
 
     # game/dialogues/alicetalk.rpy:6229
     old "Конфетку? Она ни к чему не обязывает. Просто признание моей испорченности... {color=[ch.col]}(Убеждение. Шанс: [ch.vis]){/color}"
