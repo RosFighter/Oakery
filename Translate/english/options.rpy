@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2020-10-14 09:08
+﻿# TODO: Translation updated at 2021-09-01 18:42
 
 translate english strings:
 
