@@ -2842,7 +2842,7 @@ translate english kira_photoset3_227d9c5c:
 translate english kira_photoset3_a0e55a1b:
 
     # Max_04 "{m}У тётиной подруги приятные руки! Она очень возбуждает своими прикосновениями... Она так уверенно водит моим членом по Кириной киске, что складывается впечатление, будто она не просто фотограф, а порноактриса! Хотя, может у неё просто большой опыт в таких фотосессиях...{/m}"
-    Max_04 "{m}My aunt's friend has nice hands! She's very arousing with her touch... She's so confident in guiding my cock around Kirina's pussy, it's as if she's not just a photographer, but a porn actress! Although, maybe she just has a lot of experience in such photo shoots...{/m}"
+    Max_04 "{m}My aunt's friend has nice hands! She's very arousing with her touch... She's so confident in guiding my cock around Kira's pussy, it's as if she's not just a photographer, but a porn actress! Although, maybe she just has a lot of experience in such photo shoots...{/m}"
 
 # game/dialogues/kiratalk.rpy:1394
 translate english kira_photoset3_4e3a97cd:

@@ -715,127 +715,127 @@ translate english alice_nopants_massage_66d83013:
     Alice_05 "Just don't look too much where you're not supposed to! I just now realized that you caught me with your entreaty not to wear panties. You'd better get on with the massage before I don't want to..." nointeract
 
 # game/dialogues/alicetalk.rpy:716
-translate english alice_nopants_massage_9a2648a0:
+translate english alice_nopants_massage_not_nopants_9a2648a0:
 
     # Alice_07 "Макс... Обожаю то, какие чудеса творят твои руки... Но будь осторожен, высовывая свой член... Мне не должно быть слишком щекотно..."
     Alice_07 "Max... I love the miracles your hands can do... But be careful how you stick your dick out. I shouldn't be too ticklish."
 
 # game/dialogues/alicetalk.rpy:717
-translate english alice_nopants_massage_1aaeec10:
+translate english alice_nopants_massage_not_nopants_1aaeec10:
 
     # Max_02 "Не будет."
     Max_02 "It will be fine."
 
 # game/dialogues/alicetalk.rpy:727
-translate english alice_nopants_massage_43ffc4e7:
+translate english alice_nopants_massage_not_nopants_43ffc4e7:
 
     # Alice_08 "Ты так в себе уверен, Макс... Ну посмотрим... Просто продолжай массировать мои ножки. Они у меня любят твой твёрдый... настрой." nointeract
     Alice_08 "You're so sure of yourself, Max... Let's see... Just keep massaging my feet. I love your hard... attitude." nointeract
 
 # game/dialogues/alicetalk.rpy:740
-translate english alice_nopants_massage_e8f2dc82:
+translate english alice_nopants_massage_not_nopants_e8f2dc82:
 
     # Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... И они очень тебе благодарны. Чувствуешь, насколько?"
     Alice_07 "Yes, my feet feel so light when you touch them... And they're so grateful. Can you feel it?"
 
 # game/dialogues/alicetalk.rpy:741
-translate english alice_nopants_massage_b6f56f02:
+translate english alice_nopants_massage_not_nopants_b6f56f02:
 
     # Max_03 "А как же... Они у тебя шаловливые..."
     Max_03 "Yes... They are naughty..."
 
 # game/dialogues/alicetalk.rpy:742
-translate english alice_nopants_massage_73f29683:
+translate english alice_nopants_massage_not_nopants_73f29683:
 
     # Alice_04 "Они у меня такие... Любят помассировать кое-что большое и твёрдое..." nointeract
     Alice_04 "They're like that... They like to massage something big and hard..." nointeract
 
 # game/dialogues/alicetalk.rpy:754
-translate english alice_nopants_massage_6a2a08bc:
+translate english alice_nopants_massage_not_nopants_6a2a08bc:
 
     # Max_04 "{m}Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко и ничем на этот раз не прикрыта...{/m}" nointeract
     Max_04 "{m}Alice seems to be really into it! She keeps jerking me off with her legs... Why don't I fondle her pussy too, it's so close and uncovered this time...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:767
-translate english alice_nopants_massage_f09cc31b:
+translate english alice_nopants_massage_not_nopants_f09cc31b:
 
     # Alice_09 "Ммм, Макс... Да... Какой же у меня похотливый брат! Как приятно!"
     Alice_09 "Hmmm, Max... I've got such a horny little brother! Aren't you brave..."
 
 # game/dialogues/alicetalk.rpy:768
-translate english alice_nopants_massage_e7556b2b:
+translate english alice_nopants_massage_not_nopants_e7556b2b:
 
     # Max_02 "{m}Ухх... Алиса начала сама тереться об мои пальцы! Теперь, она уже не хочет останавливаться...{/m}"
     Max_02 "{m}Ugh... Alice began to rub herself against my fingers! Now, she doesn't want to stop...{/m}"
 
 # game/dialogues/alicetalk.rpy:769
-translate english alice_nopants_massage_9ecfa650:
+translate english alice_nopants_massage_not_nopants_9ecfa650:
 
     # Alice_11 "Мне так тепло... там внизу... Кажется, я уже близко... Как хорошо... Да..." nointeract
     Alice_11 "I feel so warm... I think I'm getting close... that's it... Uh..." nointeract
 
 # game/dialogues/alicetalk.rpy:778
-translate english alice_nopants_massage_21863491:
+translate english alice_nopants_massage_not_nopants_21863491:
 
     # Max_05 "{m}Алиса так жарко и классно трётся об мои пальцы своей киской! Её киска такая мокренькая от возбуждения, что никакого масла для массажа не надо...{/m}"
     Max_05 "{m}Alice rubs her pussy so hot and cool against my fingers! Her pussy is so wet with excitement, you don't need any massage oil...{/m}"
 
 # game/dialogues/alicetalk.rpy:779
-translate english alice_nopants_massage_48efcab8:
+translate english alice_nopants_massage_not_nopants_48efcab8:
 
     # Alice_10 "Ох, чёрт... Макс... Я больше не могу! Только не убирай свою руку оттуда... Я уже кончаю... Ахх!"
     Alice_10 "Oh, shit... Max... I can't take it anymore! Don't take your hand out of there... I'm coming... Ahh!"
 
 # game/dialogues/alicetalk.rpy:780
-translate english alice_nopants_massage_d3da814d:
+translate english alice_nopants_massage_not_nopants_d3da814d:
 
     # Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
     Max_06 "{m}Big sis has completely give in... Her legs are trembling from how hard she came!{/m}"
 
 # game/dialogues/alicetalk.rpy:790
-translate english alice_nopants_massage_91ea12d6:
+translate english alice_nopants_massage_not_nopants_91ea12d6:
 
     # Alice_07 "Да... Такой массаж мне нравится... Вот бы всё время так!"
     Alice_07 "Ahh... I wish I could get this kind of massage all the time!"
 
 # game/dialogues/alicetalk.rpy:791
-translate english alice_nopants_massage_890368bd:
+translate english alice_nopants_massage_not_nopants_890368bd:
 
     # Max_01 "Это запросто, Алиса! Наверно, хочешь теперь побыть одна и отдохнуть?"
     Max_01 "All you need to do is ask! But... I guess you probably want some time to recover?"
 
 # game/dialogues/alicetalk.rpy:792
-translate english alice_nopants_massage_9a3b862d:
+translate english alice_nopants_massage_not_nopants_9a3b862d:
 
     # Alice_05 "Ага. Давай, засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж классный, Макс... Спасибо!"
     Alice_05 "Yeah. Now put your dick away before you get my legs dirty. And... The massage was great, good job!"
 
 # game/dialogues/alicetalk.rpy:793
-translate english alice_nopants_massage_ef15cedf:
+translate english alice_nopants_massage_not_nopants_ef15cedf:
 
     # Max_03 "Тебе спасибо..."
     Max_03 "Sure thing..."
 
 # game/dialogues/alicetalk.rpy:811
-translate english alice_nopants_massage_2a840d78:
+translate english alice_nopants_massage_not_nopants_2a840d78:
 
     # Alice_06 "Макс, ты почему замедлился? Я хочу ещё, не останавливайся!"
     Alice_06 "Max, why are you slowing down? I want more, don't stop!"
 
 # game/dialogues/alicetalk.rpy:812
-translate english alice_nopants_massage_9141846d:
+translate english alice_nopants_massage_not_nopants_9141846d:
 
     # Max_03 "Хочешь узнать, что я умею делать языком?"
     Max_03 "Do you want to know what I can do with my tongue?"
 
 # game/dialogues/alicetalk.rpy:813
-translate english alice_nopants_massage_6fb4c924:
+translate english alice_nopants_massage_not_nopants_6fb4c924:
 
     # Alice_08 "Ммм... Макс... Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка... Но я могу это представить, ненадолго... Так что успевай."
     Alice_08 "Mmm... Max, um... I'm your sister, and you... treating me... like I'm your girlfriend... But I can imagine that for a little while... So make time."
 
 # game/dialogues/alicetalk.rpy:814
-translate english alice_nopants_massage_ed79bd1c:
+translate english alice_nopants_massage_not_nopants_ed79bd1c:
 
     # Max_02 "Ты правда хочешь, чтобы это было быстро?"
     Max_02 "Do you really want it to be quick?"
@@ -2476,7 +2476,7 @@ translate english smoke_not_nopants_f96e47b5:
 translate english smoke_not_nopants_9f8071f9:
 
     # Alice_00 "Ладно, ладно, признаю, я их снова ношу, потому что без них мне все натирает. Да и мама, если видит, что я без трусов во время наказания, шлепает гораздо сильней."
-    Alice_00 "Okay, okay, I'll admit, I'm wearing them again because without them, I'm...rubbing everything.... And if Mom she sees me without my underwear during punishment, she slaps me a lot harder."
+    Alice_00 "Okay, okay, I'll admit, I'm wearing them again because without them, I'm...rubbing everything.... And if Mom sees me without my underwear during punishment, she slaps me a lot harder."
 
 # game/dialogues/alicetalk.rpy:2117
 translate english smoke_not_nopants_f83a939d:
@@ -9340,7 +9340,7 @@ translate english alice_mistress_0_ba9278ff:
 translate english alice_mistress_0_6d9d3f32:
 
     # Max_09 "{m}Странный вечерок получился! С одной стороны, Алиса хотела мне пригрозить и напугать... Но с другой, а зачем так сексуально наряжаться передо мной было для этого? Может, проверяет меня?!{/m}"
-    Max_09 "{m}It was a strange evening! On the one hand, Alice wanted to threaten and frighten me... But on the other hand, and why so sexily dressed up in front of me was for this? Maybe it's testing me?!{/m}"
+    Max_09 "{m}It was a strange evening! On the one hand, Alice wanted to threaten and frighten me... But on the other hand, why is she so sexily dressed up in front of me for this? Maybe she´s testing me?!{/m}"
 
 # game/dialogues/alicetalk.rpy:5195
 translate english alice_mistress_0_5f6933b1:
@@ -9460,7 +9460,7 @@ translate english alice_mistress_1_4203d633:
 translate english alice_mistress_1_881104af:
 
     # Max_08 "Эй, потише с этой штукой! Ты чего?"
-    Max_08 "Hey, be quiet with that thing! What are you doing?"
+    Max_08 "Hey, be careful with that thing! What are you doing?"
 
 # game/dialogues/alicetalk.rpy:5258
 translate english alice_mistress_1_d1417488:
@@ -9496,7 +9496,7 @@ translate english alice_mistress_1_b30b33cf:
 translate english alice_mistress_1_0cf493c2:
 
     # Max_09 "Да?! И как же, интересно?"
-    Max_09 "Yes?! And how, I wonder?"
+    Max_09 "Yes?! So I´m wondering what you´re gonna do?"
 
 # game/dialogues/alicetalk.rpy:5276
 translate english alice_mistress_1_c07c8399:
@@ -9556,7 +9556,7 @@ translate english alice_mistress_2_79b6aa34:
 translate english alice_mistress_2_c7e32ed5:
 
     # Alice_05 "Ха-ха... Размечтался! Сперва глазел на меня голую, а теперь пришёл и ещё указываешь, как тебя наказать?! Совсем больной что ли? Идём быстро в мою комнату..." nointeract
-    Alice_05 "Ha ha... You wish! First you stare at me naked, and now you tell me how to punish me?! Are you sick or something? Come quickly to my room..." nointeract
+    Alice_05 "Ha ha... You wish! First you stare at me naked, and now you want to tell me how to punish me?! Are you sick or something? Come quickly to my room..." nointeract
 
 # game/dialogues/alicetalk.rpy:5318
 translate english alice_mistress_2_de2fccb5:
@@ -9586,13 +9586,13 @@ translate english alice_mistress_2_b898a43b:
 translate english alice_mistress_2_329baf0e:
 
     # Max_11 "Опять привязывать будешь?"
-    Max_11 "Are you going to tie it again?"
+    Max_11 "Are you going to tie me again?"
 
 # game/dialogues/alicetalk.rpy:5331
 translate english alice_mistress_2_a79d3f53:
 
     # Alice_03 "А вот и не угадал! Раздевайся!"
-    Alice_03 "No, you didn't! Take your clothes off!"
+    Alice_03 "No, I won´t! Take your clothes off!"
 
 # game/dialogues/alicetalk.rpy:5332
 translate english alice_mistress_2_1f573daa:
@@ -11015,3 +11015,23 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:5544
     old "Вертел я тебя знаешь на чём?!"
     new "You know what I spun you on?!"
+
+# TODO: Translation updated at 2021-09-02 19:02
+
+# game/dialogues/alicetalk.rpy:861
+translate english alice_talk_tv_jeans_not_jeans_8d0aac73:
+
+    # Alice_06 "Макс! Какой же ты... Ладно, только снимай их с меня сам. И когда продолжишь массаж, не пялься на меня!"
+    Alice_06 "Max! What kind of a... All right, just take them off yourself. And when you continue the massage, don't stare at me!"
+
+# game/dialogues/alicetalk.rpy:862
+translate english alice_talk_tv_jeans_not_jeans_9d77976c:
+
+    # Max_03 "Да, да, конечно." nointeract
+    Max_03 "Yes, yes, fine." nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:862
+    old "{i}стянуть с неё трусики и продолжить массаж{/i}"
+    new "{i}take off her panties and continue the massage{/i}"

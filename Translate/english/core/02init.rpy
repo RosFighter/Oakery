@@ -268,7 +268,7 @@ translate english strings:
 
     # game/core/02init.rpy:133
     old "Я выбираю наказание от тебя..."
-    new "I choose punishment from you..."
+    new "I´m choosing punishment from you..."
 
     # game/core/02init.rpy:133
     old "Мам, дай денег, пожалуйста..."

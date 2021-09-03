@@ -514,7 +514,7 @@ translate english lisa_dressed_school_open_door2_37b11a6a:
 translate english lisa_dressed_school_open_door2_ff3ad2ef:
 
     # Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку! А теперь выйди, дай переодеться..." nointeract
-    Lisa_02 "Thank you! But you see her too often as it is... You don't want to have too much of a good thing. Now get out and let me change..." nointeract
+    Lisa_02 "Thank you! But you see them too often as it is... You don't want to have too much of a good thing. Now get out and let me change..." nointeract
 
 # game/events/lisa.rpy:477
 translate english lisa_dressed_school_open_door2_b6730509:
