@@ -10,7 +10,7 @@ translate german AfterWaiting_c2510a45:
 translate german night_of_fun_cae91685:
 
     # Max_19 "Теперь можно спокойно спать и ничего больше..."
-    Max_19 "Jetzt kannst du in Ruhe schlafen..."
+    Max_19 "Jetzt kann ich in Ruhe schlafen und sonst nichts..."
 
 # game/core/core.rpy:578
 translate german cam_after_waiting_6058d5d4:
@@ -28,7 +28,7 @@ translate german cam_after_waiting_c283f316:
 translate german cam_after_waiting_38f46f18:
 
     # Max_09 "Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила..." nointeract
-    Max_09 "Überprüfe besser nicht die Kameras, wenn Lisa direkt hier ist!" nointeract
+    Max_09 "Besser, ich schaue woanders nach den Kameras! Ich will nicht, dass Lisa etwas bemerkt..." nointeract
 
 # game/core/core.rpy:602
 translate german cam_after_waiting_d4f49617:

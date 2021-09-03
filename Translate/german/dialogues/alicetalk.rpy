@@ -880,7 +880,7 @@ translate german alice_talk_tv_jeans_not_jeans_6c18c11f:
 translate german alice_talk_tv_jeans_not_jeans_9418e786:
 
     # Max_07 "Тогда, если хочешь продолжения массажа, то снимай их!"
-    Max_07 "Wenn du dann die Massage fortsetzen willst, zieh sie aus!"
+    Max_07 "Wenn du dann die Massage fortsetzen willst, zieh ihn aus!"
 
 # game/dialogues/alicetalk.rpy:853
 translate german alice_talk_tv_jeans_not_jeans_adb6b9f6:
@@ -9251,7 +9251,7 @@ translate german alice_mistress_0_5f771666:
 translate german alice_mistress_0_4204b561:
 
     # Alice_05 "А с чего ты взял, что это поможет? Нет, благодаря этому ты конечно не сразу оказываешься у мамы на коленях, но... мне этого мало, Макс... Я хочу, чтобы оказавшись у ванной комнаты, ты начал задумываться, а стоит ли оно того!"
-    Alice_05 "Wie kommst du darauf, dass das helfen wird? Nein, es bringt dich nicht direkt auf den Schoß von Mom, aber... Das ist nicht gut genug für mich, Max... Ich will, dass du darüber nachdenkst, ob es sich lohnt oder nicht, wenn du im Bad bist!"
+    Alice_05 "Wie kommst du darauf, dass das helfen wird? Nein, es bringt dich nicht direkt auf den Schoß von Mom, aber... Das ist nicht gut genug für mich, Max... Ich will, dass du darüber nachdenkst, ob es sich lohnt, wenn ich im Bad bin, oder nicht!"
 
 # game/dialogues/alicetalk.rpy:5166
 translate german alice_mistress_0_8a98b0ec:
