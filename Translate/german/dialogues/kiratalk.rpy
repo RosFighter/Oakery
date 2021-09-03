@@ -2842,7 +2842,7 @@ translate german kira_photoset3_227d9c5c:
 translate german kira_photoset3_a0e55a1b:
 
     # Max_04 "{m}У тётиной подруги приятные руки! Она очень возбуждает своими прикосновениями... Она так уверенно водит моим членом по Кириной киске, что складывается впечатление, будто она не просто фотограф, а порноактриса! Хотя, может у неё просто большой опыт в таких фотосессиях...{/m}"
-    Max_04 "{m}Die Freundin meiner Tante hat tolle Hände! Sie ist sehr erregend mit ihrer Berührung... Sie führt meinen Schwanz so souverän an Kirinas Pussy vorbei, als wäre sie nicht nur eine Fotografin, sondern eine Pornodarstellerin! Vielleicht hat sie aber auch nur Erfahrung mit solchen Fotoshootings...{/m}"
+    Max_04 "{m}Die Freundin meiner Tante hat tolle Hände! Sie ist sehr erregend mit ihrer Berührung... Sie führt meinen Schwanz so souverän an Kiras Pussy vorbei, als wäre sie nicht nur eine Fotografin, sondern eine Pornodarstellerin! Vielleicht hat sie aber auch nur Erfahrung mit solchen Fotoshootings...{/m}"
 
 # game/dialogues/kiratalk.rpy:1394
 translate german kira_photoset3_4e3a97cd:

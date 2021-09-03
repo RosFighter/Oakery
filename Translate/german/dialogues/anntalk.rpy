@@ -479,7 +479,7 @@ translate german ann_tv_casual_r_2828cae2:
 translate german ann_tv_casual_r_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 "Oh, ich dachte, du würdest kein Angebot machen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
+    Ann_04 "Oh, ich dachte schon, du würdest mich heute nicht fragen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
 
 # game/dialogues/anntalk.rpy:485
 translate german ann_tv_casual_r_b210320a:
@@ -1421,7 +1421,7 @@ translate german erofilm2_1_fd88d64b:
 translate german erofilm2_1_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 "Oh, ich dachte, du würdest kein Angebot machen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
+    Ann_04 "Oh, ich dachte schon, du würdest mich heute nicht fragen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
 
 # game/dialogues/anntalk.rpy:969
 translate german erofilm2_1_b210320a:
@@ -1709,7 +1709,7 @@ translate german erofilm2_2_6b9eb318:
 translate german erofilm2_2_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 "Oh, ich dachte, du würdest kein Angebot machen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
+    Ann_04 "Oh, ich dachte schon, du würdest mich heute nicht fragen. Letztes Mal hast du meine Schultern und meinen Nacken so gut massiert, dass ich sehr froh wäre, wenn du das noch einmal machen würdest..."
 
 # game/dialogues/anntalk.rpy:1205
 translate german erofilm2_2_b210320a:
