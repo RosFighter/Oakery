@@ -10,7 +10,7 @@ translate english AliceTalkStart_123d1aca:
 translate english AliceTalkStart_40123f86:
 
     # Max_09 "{m}Впечатлений от времяпрепровождения с Алисой мне и в её комнате хватило. Сегодня к ней лучше больше не лезть...{/m}"
-    Max_09 "{m}I had had enough excitement from my time with Alice in her room. It was better to stay away from her today...{/m}"
+    Max_09 "{m}I've spent enough time with Alice today. I should give her some space...{/m}"
 
 # game/dialogues/alicetalk.rpy:30
 translate english AliceTalkStart_50ef2ada:
@@ -10794,7 +10794,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:2710
     old "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}"
-    new "{i}Damn, the cream is almost gone... Let's do it another time then ...{/i}"
+    new "{i}Damn, I'm out of cream... Let's do it another time then ...{/i}"
 
     # game/dialogues/alicetalk.rpy:2724
     old "{i}наносить крем молча{/i}"
@@ -10946,7 +10946,7 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:4965
     old "Могу сильнее, раз ты заскучала!"
-    new "I can do more, if you're bored!"
+    new "I could do something else if this is boring you!"
 
     # game/dialogues/alicetalk.rpy:5107
     old "{i}идти за Алисой{/i}"
@@ -10958,15 +10958,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:5239
     old "Конфетка, я полагаю, тоже не спасёт. Но я всё равно предложу..."
-    new "Candy, I suppose, will not save either. But I'll suggest it anyway..."
+    new "I suppose candy won't make a difference, but I'll suggest it anyway..."
 
     # game/dialogues/alicetalk.rpy:5351
     old "Давай уже быстрее с этим покончим..."
-    new "Let's get it over with already..."
+    new "Let's just get it over with..."
 
     # game/dialogues/alicetalk.rpy:5351
     old "Ты же понимаешь, что я могу всыпать по твоей заднице в ответ?"
-    new "You do realize I could kick your ass, right?"
+    new "You know I could kick your ass, right?"
 
     # game/dialogues/alicetalk.rpy:5359
     old "{i}подчиниться{/i}"
@@ -10982,15 +10982,15 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:5435
     old "Конфетку? Она ни к чему не обязывает. Просто признание моей испорченности..."
-    new "Candy? It doesn't commit to anything. Just an acknowledgement of my depravity..."
+    new "Candy? That doesn't prove anything anything. Just an acknowledgement of my depravity..."
 
     # game/dialogues/alicetalk.rpy:5435
     old "То же мне, преступника нашла..."
-    new "Same here, found the perp..."
+    new "Seems like I found the perp..."
 
     # game/dialogues/alicetalk.rpy:5455
     old "Хотя, знаешь... Я передумал. Лучше уж от мамы получить..."
-    new "Although, you know... I've changed my mind. I'd rather get it from my mom..."
+    new "Well, you know... I've changed my mind. I'd rather get it from Mom..."
 
     # game/dialogues/alicetalk.rpy:5489
     old "{i}снять одежду{/i}"
@@ -11034,4 +11034,4 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:862
     old "{i}стянуть с неё трусики и продолжить массаж{/i}"
-    new "{i}take off her panties and continue the massage{/i}"
+    new "{i}Take off her panties and continue the massage{/i}"
