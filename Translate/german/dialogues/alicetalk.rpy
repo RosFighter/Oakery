@@ -850,7 +850,7 @@ translate german alice_talk_tv_jeans_not_jeans_769ebcfd:
 translate german alice_talk_tv_jeans_not_jeans_6d488f64:
 
     # Alice_07 "А с чего бы мне быть без них!"
-    Alice_07 "Warum sollte ich sie nicht anhaben?!"
+    Alice_07 "Warum sollte ich ihn nicht anhaben?!"
 
 # game/dialogues/alicetalk.rpy:844
 translate german alice_talk_tv_jeans_not_jeans_78fcfcfe:
@@ -11023,7 +11023,7 @@ translate german strings:
 translate german alice_talk_tv_jeans_not_jeans_8d0aac73:
 
     # Alice_06 "Макс! Какой же ты... Ладно, только снимай их с меня сам. И когда продолжишь массаж, не пялься на меня!"
-    Alice_06 "Max! Was machst du da... Also gut, dann zieh sie einfach selber aus. Und wenn du die Massage weiter machst, darfst du mich nicht anstarren!"
+    Alice_06 "Max! Was machst du da... Also gut, dann zieh ihn einfach selber aus. Und wenn du die Massage weiter machst, darfst du mich nicht anstarren!"
 
 # game/dialogues/alicetalk.rpy:862
 translate german alice_talk_tv_jeans_not_jeans_9d77976c:
