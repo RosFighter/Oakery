@@ -1438,7 +1438,7 @@ translate german advanced_massage1_cuni_d0cd8b5f:
 translate german advanced_massage1_cuni_51e45fcc:
 
     # Max_05 "Просто сделал всё так, как хотел бы, чтобы сделали мне..."
-    Max_05 "Ich habe nur das getan, was ich gewollt habe, dass ich sie mit dir mache..."
+    Max_05 "Ich habe genau das getan, was ich mir von dir gewünscht hätte..."
 
 # game/dialogues/alicetalk.rpy:1351
 translate german advanced_massage1_cuni_63ca8df7:

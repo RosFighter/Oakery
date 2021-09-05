@@ -448,13 +448,13 @@ translate german eric_ann_tv_closer1_224a6ad6:
 translate german eric_ann_tv_closer1_bdf10685:
 
     # Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_11 "Sie bläst ihm einen! Genau hier... Sie sind so sehr miteinander beschäftigt, dass sie nichts um sich herum bemerken! Nun, außer dem, was auf im Fernseher passiert..." nointeract
+    Max_11 "Sie bläst ihm einen! Genau hier... Sie sind so sehr miteinander beschäftigt, dass sie nichts um sich herum bemerken! Nun, außer dem, was im Fernseher passiert..." nointeract
 
 # game/events/eric.rpy:478
 translate german eric_ann_tv_closer1_224a6ad6_1:
 
     # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was auf im Fernseher passiert..." nointeract
+    Max_07 "Oh... Mom ist nackt und nass... Sie hat so einen geilen Körper, und was für einen Arsch! Mmm... Es ist gut, dass sie so sehr miteinander beschäftigt sind, dass sie nichts um sich herum bemerken! Naja, bis auf das, was im Fernseher passiert..." nointeract
 
 # game/events/eric.rpy:480
 translate german eric_ann_tv_closer1_dd256959:
