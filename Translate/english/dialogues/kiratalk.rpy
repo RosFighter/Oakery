@@ -22,7 +22,7 @@ translate english KiraTalkStart_7e1cb4f7:
 translate english kira_firsttalk_19e17a9f:
 
     # Kira_04 "Ну, рассказывай, Макс, как ты тут живёшь, как твои дела, что нового?"
-    Kira_04 "So tell me, how are you adjusting to your new home? What's it like living here?"
+    Kira_04 "So tell me, how are you finding your new home? What's it like living here?"
 
 # game/dialogues/kiratalk.rpy:36
 translate english kira_firsttalk_349bd8c8:
@@ -40,13 +40,13 @@ translate english kira_firsttalk_043877d2:
 translate english kira_firsttalk_58c6b494:
 
     # Kira_07 "Ну да, не сомневаюсь. Только что же с тобой будет? Макс, ты можешь смотреть мне в глаза или мы тебя потеряли?" nointeract
-    Kira_07 "Yeah, I'm sure. But will you be okay? Will you be able to took me in the eyes or have I completely lost you?" nointeract
+    Kira_07 "Yeah, I'm sure. But will you be okay? Will you be able to took me in the eyes? Or have I completely lost you?" nointeract
 
 # game/dialogues/kiratalk.rpy:47
 translate english kira_firsttalk_00e14e8d:
 
     # Kira_07 "Зато знаю я. Макс, постарайся не пялиться на мою грудь. Глаза чуть выше. Ау. Ты здесь, Макс?" nointeract
-    Kira_07 "But I know. Max, try not to stare at my breasts. Eyes a little higher. Hello? Anyone home?" nointeract
+    Kira_07 "But I know. Max, try not to stare at my breasts. Eyes up here. Hello? Anyone home?" nointeract
 
 # game/dialogues/kiratalk.rpy:53
 translate english kira_firsttalk_8ab98c15:
@@ -76,7 +76,7 @@ translate english kira_firsttalk_562bf199:
 translate english kira_firsttalk_c61d1e38:
 
     # Kira_03 "Ой, я конечно про твою... скромность. Да, речь о ней. И, вообще, давай сменим тему!"
-    Kira_03 "Oh, I mean your... modesty. Yeah, Anyway, let's change the subject!"
+    Kira_03 "Oh, I'm talking about your... modesty. Yeah, Anyway, let's change the subject!"
 
 # game/dialogues/kiratalk.rpy:69
 translate english kira_firsttalk_3bdfc955:
@@ -148,13 +148,13 @@ translate english kira_talk2_4aed4595:
 translate english kira_talk2_839cdd26:
 
     # Kira_01 "Хорошо... Тогда последний вопрос. Ты её видишь прямо сейчас, она где-то здесь?"
-    Kira_01 "Well... Then one last question. Do you see her right now, is she here somewhere?"
+    Kira_01 "Well... Then one last question. Can you see her right now, is she here somewhere?"
 
 # game/dialogues/kiratalk.rpy:105
 translate english kira_talk2_b8a10094:
 
     # Max_08 "Да я её не выдумал! Она не вымышленная девушка!"
-    Max_08 "I'm not making it up! She's not some imaginary friend!"
+    Max_08 "I'm not making it up! She's not imaginary!"
 
 # game/dialogues/kiratalk.rpy:106
 translate english kira_talk2_b0ac0801:
@@ -172,7 +172,7 @@ translate english kira_talk2_0104ee16:
 translate english kira_talk2_b57a97d8:
 
     # Kira_02 "Я так и думала. Ладно, Макс, не стоит переживать по этому поводу. Ты же только приехал в новый город, из дома не выходишь. Ну скажи честно, нет же у тебя никакой девушки?"
-    Kira_02 "I thought so. Don't worry Max, I'm not here to judge. You just arrived in a new city and you don't leave your house. Tell me honestly, you don't have a girlfriend, do you?"
+    Kira_02 "I thought so. Don't worry Max, I'm not here to judge. You just got here, and you don't leave the house. Tell me honestly, you don't have a girlfriend, do you?"
 
 # game/dialogues/kiratalk.rpy:109
 translate english kira_talk2_c9ad559a:
@@ -2938,13 +2938,13 @@ translate english kira_photoset3_63d15de1:
 translate english kira_photoset3_05822ce8:
 
     # Max_08 "Смотря как! Но кто-то из вас уже во всю шалит с моими яичками... И это не ты, тётя Кира!"
-    Max_08 "That depends! But one of you is already messing with my testicles... And it ain't you, Aunt Kira!"
+    Max_08 "That depends! But one of you are already plaing with my balls... And it ain't you, Aunt Kira!"
 
 # game/dialogues/kiratalk.rpy:1430
 translate english kira_photoset3_105cf0a1:
 
     # Kira_05 "Не переживай, я тоже не оставлю тебя без внимания... Наслаждайся!"
-    Kira_05 "Don't worry, I won't leave you out either... Enjoy!"
+    Kira_05 "Don't worry, I won't forget about you!"
 
 # game/dialogues/kiratalk.rpy:1436
 translate english kira_photoset3_92d02d64:
@@ -2962,13 +2962,13 @@ translate english kira_photoset3_5fba5ab5:
 translate english kira_photoset3_c88399ca:
 
     # Max_06 "{m}Фух... Не знаю, в чей такой жаркий и влажный ротик я кончил, но было потрясающе! А девчонки всё не унимаются и продолжают полировать мой член... Просто сказка!{/m}"
-    Max_06 "{m}Whew... I don't know whose hot and wet mouth I cum in, but it was amazing! And the girls wouldn't let up and kept polishing my dick... It was like a fairy tale!{/m}"
+    Max_06 "{m}Whew... I don't know whose hot and wet mouth I came in, but it was amazing! And the girls wouldn't let up and kept polishing my dick... It was like a fairy tale!{/m}"
 
 # game/dialogues/kiratalk.rpy:1457
 translate english kira_photoset3_4b7c8eab:
 
     # Kira_07 "Вау! Боже мой, Макс... Сколько спермы... Нашему мальчику явно очень понравилось! Давайте сделаем фото на память о нашей небольшой групповушке..."
-    Kira_07 "Wow! My God, Max... That's a lot of sperm. Our boy obviously loved it! Let's take a picture of our little threesome..."
+    Kira_07 "Wow! My God, Max... That's a lot of sperm. You obviously loved it! Let's take a picture of our little threesome..."
 
 # game/dialogues/kiratalk.rpy:1464
 translate english kira_photoset3_90a04c35:
@@ -2980,13 +2980,13 @@ translate english kira_photoset3_90a04c35:
 translate english kira_photoset3_bd6e3776:
 
     # Max_05 "Ты потрясающая, тётя Кира! Вернее, вы обе..."
-    Max_05 "You're amazing, Aunt Kira! Or rather, both of you..."
+    Max_05 "You're amazing, Aunt Kira! Both of you..."
 
 # game/dialogues/kiratalk.rpy:1468
 translate english kira_photoset3_bff4b790:
 
     # Kira_05 "Да, мы такое слышали... Спасибо за комплимент! И тебе спасибо, что поучаствовал в этой фотосессии."
-    Kira_05 "Yes, we've heard that... Thanks for the compliment! And thank you for participating in this photo shoot."
+    Kira_05 "So we've been told... Thanks for the compliment! And for helping with the shoot."
 
 # game/dialogues/kiratalk.rpy:1469
 translate english kira_photoset3_02014015:
@@ -2998,25 +2998,25 @@ translate english kira_photoset3_02014015:
 translate english kira_photoset3_cbf2cef8:
 
     # Kira_04 "Мы обязательно придумаем что-нибудь ещё, а пока полежи немного, мы тут немного приведём себя в порядок и я тебя развяжу." nointeract
-    Kira_04 "We'll think of something else, but in the meantime, lie down for a while and we'll clean up a bit and I'll untie you." nointeract
+    Kira_04 "We'll think of something else. But in the meantime, lie down and relax while we get you cleaned up." nointeract
 
 # game/dialogues/kiratalk.rpy:1478
 translate english kira_photoset3_d4c901c6:
 
     # Kira_07 "Ну всё, отлично повеселились... А теперь иди, твоей утомлённой тётушке нужно отдохнуть. Да и наши уже вот-вот вернутся..."
-    Kira_07 "That's it, we had a great time... Now go, your weary aunt needs to rest. And ours will be back any minute now..."
+    Kira_07 "That was good, we had a great time... Now go, your tired aunt needs to rest. The others might be back any minute now..."
 
 # game/dialogues/kiratalk.rpy:1479
 translate english kira_photoset3_efcf1970:
 
     # Max_10 "О! А твоя подруга что, уже ушла?! А я так хотел её увидеть..."
-    Max_10 "О! Did your friend leave already?! I was looking forward to seeing her..."
+    Max_10 "Оh! Did your friend leave already?! I was looking forward to seeing her..."
 
 # game/dialogues/kiratalk.rpy:1480
 translate english kira_photoset3_cfdbd3a5:
 
     # Kira_06 "Ещё увидишь, Макс, за это можешь не переживать. Я тут уже серьёзно думаю своими собственными порно-проектами заниматься и она в стороне не останется. Мы ведь с ней очень близкие подруги!"
-    Kira_06 "You'll see, Max, you don't have to worry about that. I'm already seriously thinking about doing my own porno projects, and she's not going to be left out. She and I are very close friends!"
+    Kira_06 "You'll see, Max, you don't have to worry about that. I'm already seriously thinking about doing my own porno projects, and she won't be left out. We're very close friends!"
 
 # game/dialogues/kiratalk.rpy:1481
 translate english kira_photoset3_5da918b8:
