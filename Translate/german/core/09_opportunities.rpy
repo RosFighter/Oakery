@@ -1857,3 +1857,11 @@ translate german strings:
     # game/core/09_opportunities.rpy:768
     old "Нужно больше времени проводить с мамой. Её утренние занятия йогой помогут нам сблизиться..."
     new "Ich muss mehr Zeit mit meiner Mom verbringen. Ihr morgendlicher Yoga-Kurs wird dazu beitragen, dass wir uns näher kommen..."
+# TODO: Translation updated at 2021-09-06 21:38
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:768
+    old "Нет смысла что-либо затевать в отношении Алисиной попки, пока её хотя бы раз не накажут голой..."
+    new "Es hat keinen Sinn, etwas gegen Alices Arsch zu unternehmen, bevor sie nicht wenigstens einmal nackt bestraft wurde..."
+
