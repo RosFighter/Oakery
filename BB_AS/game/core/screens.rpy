@@ -744,7 +744,7 @@ screen Withdraw():
             text _("ДОХОД ОТ ПРОСМОТРОВ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
             text _("Каждое посещение страниц вашего сайта приносит небольшой доход. Увеличивайте аудиторию и зарабатывайте на рекламе!\n\nМинимальная сумма единоразового снятия: $100.") color gui.accent_color
             text _("На вашем счете $[paid]") color '#FFFFFF'
-            if paid >= 100:
+            if int(mgg.account) >= 100:
                 textbutton _("Забрать $[paid]"):
                     idle_background Frame('interface button green', 12, 12)
                     hover_background Frame('interface button green', 12, 12)

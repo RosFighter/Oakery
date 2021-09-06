@@ -1017,8 +1017,9 @@ init python:
             self.__account += earn  # прибыль с сайта
 
         def withdraw(self): # выплата с сайта
-            self.__tange += int(self.__account)
-            self.__account -= int(self.__account)
+            paid = int(self.__account)
+            self.__tange += paid
+            self.__account -= paid
 
         def credit_repay(self):
             if self.__tange >= self.credit.debt:
@@ -1441,7 +1442,7 @@ init python:
 
         Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
 
-        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])") # 'kira' in chars and 
+        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])") # 'kira' in chars and
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

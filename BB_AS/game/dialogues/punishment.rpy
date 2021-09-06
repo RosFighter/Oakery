@@ -195,18 +195,15 @@ label punishment_max:
             "Ну, я случайно оказался рядом с душем, когда там была Лиза..." if punreason[0]:
                 Lisa_12 "Он видел меня голой, мам! Накажи его! Почему он отделывается только предупреждением? Пусть получит, что заслужил!"
                 $ punreason[0] = 0
-                $ lisa.daily.shower = 0
                 Max_11 "Да ничего я не заслужил!"
 
             "Ну, я оказался случайно рядом с душем, где мылась Алиса..." if punreason[1]:
                 Alice_16 "Случайно? Врёт он всё, мам! Он стоял и пялился на меня!"
                 $ punreason[1] = 0
-                $ alice.daily.shower = 0
                 Max_11 "Да, я мимо проходил!"
 
             "Ну, я подглядывал за тобой, мам..." if punreason[2]:
                 Ann_14 "Очень хочу надеяться, что это было случайно. Тем не менее, ты пойман и как я уже сказала, получаешь предупреждение."
-                $ ann.daily.shower = 0
                 $ punreason[2] = 0
                 Max_10 "Больше это не повторится!"
 
@@ -222,7 +219,6 @@ label punishment_max:
 
             "Ну, я оказался случайно рядом с душем, где мылась Алиса..." if punreason[5]:
                 Alice_16 "Случайно? Мам! Он всё врёт! Он подглядывал и, может быть, даже паука подбросил! А ты знаешь, как я боюсь пауков..."
-                $ alice.daily.shower = 0
                 $ punreason[5] = 0
                 Max_09 "Трусиха!"
 
@@ -303,9 +299,9 @@ label punishment_max:
 
         call max_consequences from _call_max_consequences
 
-        if punreason[1] and alice.dcv.shower.stage>1:
+        if punreason[1] and alice.dcv.shower.stage > 1:
             $ poss['risk'].open(5)
-        if punreason[0] and lisa.dcv.shower.stage>1:
+        if punreason[0] and lisa.dcv.shower.stage > 1:
             $ poss['SoC'].open(5)
 
         stop sound
@@ -396,6 +392,8 @@ label punishment_max:
     if newpunishment==2:
         $ mgg.flags.nakedpunish = True
 
+    $ alice.daily.shower = 0
+    $ lisa.daily.shower = 0
     return
 
 
@@ -522,7 +520,9 @@ label punishment_lisa:
                             if all([lisa.flags.topless, not lisa.dcv.other.enabled, not lisa.dcv.other.stage]):
                                 Max_07 "{m}На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти...{/m}"
                                 $ poss['SoC'].open(16)
-                            $ lisa.dcv.other.set_lost(1)
+                                $ lisa.dcv.other.set_lost(1)
+                            elif lisa.dcv.other.enabled:
+                                $ lisa.dcv.other.set_lost(1)
 
                     $ lisa.weekly.protected += 1
                     $ punlisa[0][2] = 2

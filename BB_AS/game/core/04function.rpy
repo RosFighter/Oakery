@@ -213,7 +213,7 @@ init python:
 
 
     def RandomChance(chance): # прошло или нет применение навыка с указанным шансом
-        return renpy.random.randint(0, 1000) < chance
+        return renpy.random.randint(0, 999) < chance
 
 
     def Skill(skill, rise, limit=1000):

@@ -1732,7 +1732,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Обязательно нужно поговорить с Алисой в тот же день, в который мне удалось её защитить..."
-    new "ch muss mit Alice am selben Tag sprechen, an dem ich sie beschützen konnte..."
+    new "Ich muss mit Alice am selben Tag sprechen, an dem ich sie beschützen konnte..."
 
     # game/core/09_opportunities.rpy:4
     old "Ну вот и договорились. Теперь, если я защитил Алису от наказания, то на следующий день могу отшлёпать её во дворе, пока она загорает. Ну, а если это приватное наказание выпадает на выходные дни, то перенесём на понедельник, я не против. Правда есть небольшой нюанс, благодаря которому Алиса и согласилась на это... Я пообещал, что отшлёпаю её нежно. Да уж, будет не просто устоять и не влепить по её попке за то, как стервозно она себя вела..."
@@ -1857,3 +1857,11 @@ translate german strings:
     # game/core/09_opportunities.rpy:768
     old "Нужно больше времени проводить с мамой. Её утренние занятия йогой помогут нам сблизиться..."
     new "Ich muss mehr Zeit mit meiner Mom verbringen. Ihr morgendlicher Yoga-Kurs wird dazu beitragen, dass wir uns näher kommen..."
+# TODO: Translation updated at 2021-09-06 21:38
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:768
+    old "Нет смысла что-либо затевать в отношении Алисиной попки, пока её хотя бы раз не накажут голой..."
+    new "Es hat keinen Sinn, etwas gegen Alices Arsch zu unternehmen, bevor sie nicht wenigstens einmal nackt bestraft wurde..."
+

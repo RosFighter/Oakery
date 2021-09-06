@@ -1303,3 +1303,4 @@ translate german strings:
     # game/events/olivia.rpy:634
     old "{i}идти в свою комнату{/i}"
     new "{i}aufs Zimmer gehen{/i}"
+

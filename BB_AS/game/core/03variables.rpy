@@ -81,6 +81,8 @@ label InitVariable: # стартовая инициация переменных
         ol_tv_order = ['0'+str(i) for i in range(1, 8)]     # последовательнгость сериалов для Лизы и Оливии
         cam_poses = {}
 
+        shower_schedule = 0
+
     return
 
 

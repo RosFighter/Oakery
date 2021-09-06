@@ -1485,3 +1485,13 @@ label update_07_0_99:
 
     if _version < '0.06.8.04':
         $ kira.flags.held_out = 1 if mgg.sex >= 35.0 else 0
+
+    if _version < '0.06.8.09':
+        $ shower_schedule = 0
+
+        if all([lisa.flags.topless, lisa.dcv.other.enabled, not poss['SoC'].used(16)]):
+            $ lisa.dcv.other.disable()
+
+    if _version < '0.06.8.10':
+        if poss['naughty'].st() == 6 and not alice.flags.touched:
+            $ poss['naughty'].stages[6] == 0

@@ -520,19 +520,19 @@ translate german about_school_way_5a062af3_1:
 translate german about_school_way_77764986:
 
     # Lisa_02 "Ну спасибо и на том. Если что, то ты тоже ничего..."
-    Lisa_02 "Danke. Du bist auch in Ordnung."
+    Lisa_02 "Vielen Dank dafür. Wenn überhaupt, bist du auch in Ordnung..."
 
 # game/dialogues/lisatalk.rpy:315
 translate german about_school_way_5a062af3_2:
 
     # Max_04 "Так что там в школе?"
-    Max_04 "Jedenfalls, wie läuft es in der Schule?"
+    Max_04 "Was gibt es in der Schule?"
 
 # game/dialogues/lisatalk.rpy:318
 translate german about_school_way_d18c9530:
 
     # Lisa_02 "Я так и поняла! Вообще, шутки у тебя... как всегда!"
-    Lisa_02 "Wie immer hat mich dein Sinn für Humor im Sturm erobert."
+    Lisa_02 "Ich wusste es! In der Tat, deine Witze sind... wie immer!"
 
 # game/dialogues/lisatalk.rpy:319
 translate german about_school_way_5a062af3_3:
@@ -544,13 +544,13 @@ translate german about_school_way_5a062af3_3:
 translate german about_school_school_6743c63b:
 
     # Lisa_00 "Ты знаешь, школа отличная! Меня хорошо приняли, все такие доброжелательные... А некоторые особенно..."
-    Lisa_00 "Ja, die Schule ist großartig! Alle sind wirklich nett... Besonders einige Leute..."
+    Lisa_00 "Weißt du, die Schule ist großartig! Ich bin gut aufgenommen worden, alle sind so freundlich... Und jemand besonders..."
 
 # game/dialogues/lisatalk.rpy:326
 translate german about_school_school_7e9a16d1:
 
     # Max_05 "Некоторые? Ты о ком?"
-    Max_05 "Sieht aus, als redest du über jemanden Bestimmtes..."
+    Max_05 "Irgendjemand? Von wem redest du?"
 
 # game/dialogues/lisatalk.rpy:327
 translate german about_school_school_e8a8e757:

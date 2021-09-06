@@ -529,7 +529,7 @@ label olivia_second_night_out_with:
 
     $ renpy.end_replay()
     $ poss['Schoolmate'].open(12)
-    $ lisa.dcv.other.enabled = False
+    $ lisa.dcv.other.disable()
     $ spent_time = TimeDifference(tm, '02:00')
     stop music
     jump Waiting

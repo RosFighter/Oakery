@@ -1273,8 +1273,6 @@ label advanced_massage1_faster:
 
 # подготовка Алисы к куни
 label advanced_massage1_no_rush:
-    if not _in_replay:
-        $ poss['naughty'].open(6)
 
     # _pose - 13/14
     $ _pose = {'13':'17', '14':'18'}[_pose]
@@ -1371,6 +1369,8 @@ label advanced_massage1_cuni:
             Max_03 "Тебе спасибо..."
             if alice.flags.hip_mass < 3 and alice.flags.touched:      #подсказка, если не было развития по трезвому пути
                 Max_09 "{m}С Алисой нужно как-то сближаться без конфет. Только как?! Она стала более адекватно воспринимать мои стояки, после случая с пауком во дворе... Так может, и при массаже ног у ТВ без конфет у меня что-то выгорит?{/m}"
+                if not _in_replay:
+                    $ poss['naughty'].open(6)
 
     else:
         # (Ей не нравится!)

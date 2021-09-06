@@ -178,7 +178,7 @@ translate german intro_afbd2795:
 translate german intro_5fc10bfc:
 
     # Max_08 "В кабинете мебели почти не оказалось, и мне пришла в голову отличная идея разместить здесь наши с Лизой кровати из старой квартиры."
-    Max_08 "Das Büro hatte keine Möbel, also kam ich auf die Idee, es in meinem und Lisas Möbeln einzurichten."
+    Max_08 "Im Arbeitszimmer gab es kaum Möbel, und ich hatte die großartige Idee, meine und Lisas Betten aus der alten Wohnung hier aufzustellen."
 
 # game/script.rpy:95
 translate german intro_c174fdf7:

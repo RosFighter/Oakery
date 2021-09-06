@@ -1858,3 +1858,11 @@ translate english strings:
     old "Нужно больше времени проводить с мамой. Её утренние занятия йогой помогут нам сблизиться..."
     new "We need to spend more time with Mom during her morning yoga class."
 
+# TODO: Translation updated at 2021-09-06 21:38
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:768
+    old "Нет смысла что-либо затевать в отношении Алисиной попки, пока её хотя бы раз не накажут голой..."
+    new ""
+

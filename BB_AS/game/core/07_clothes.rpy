@@ -194,6 +194,9 @@ init python:
         if 'poss' in globals() and poss['sg'].st() not in [0, 1, 2, 4]:
             lisa.clothes.sleep.enable(1)
             lisa.clothes.sleep.disable(0)
+        else:
+            lisa.clothes.sleep.enable(0)
+            lisa.clothes.sleep.disable(1)            
 
         # Макс
         if items['max-a'].have:             # куплены шорты с майкой
