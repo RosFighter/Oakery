@@ -181,4 +181,4 @@ init python:
         if 'sexbody2' in alice.gifts:
             return 2
 
-        return 0
+        return -1

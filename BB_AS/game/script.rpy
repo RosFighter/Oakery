@@ -18,6 +18,9 @@ label language_chooser:
 label start:
     show screen watermark
     show screen notify_check
+
+    $ rl = create_random_list()
+
     call InitHouse from _call_InitHouse
     call InitVariable from _call_InitVariable
     call InitCharacters from _call_InitCharacters

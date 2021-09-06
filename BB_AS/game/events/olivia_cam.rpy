@@ -28,7 +28,7 @@ label cam1_olivia_lisa_swim:
     show FG cam-shum-act at laptop_screen
     if 'lisa_swim1' not in cam_flag:
         $ cam_flag.append('lisa_swim1')
-        Max_01 "Приятно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..." id cam1_olivia_lisa_swim_c66f3478
+        Max_01 "Приятно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..."
     return
 
 

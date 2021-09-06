@@ -12,6 +12,34 @@ init python:
         return str(inputStr[0]) + '_' + inputStr[1]
 
 
+    def create_random_list(l=20):
+        lst = range(l)
+        renpy.random.shuffle(lst)
+        return lst
+
+
+    def shuffle_lst(items):
+        lst = []
+        for i in rl:
+            if i < len(items):
+                lst.append(items[i])
+
+        return lst
+
+
+    def mind_tag(tag, argument, contents):
+        return [
+            (renpy.TEXT_TAG, u"i"),
+            (renpy.TEXT_TEXT, u"( "),
+            (renpy.TEXT_TAG, u"color=#b6e1fc"), #88ddff
+        ] + contents + [
+            (renpy.TEXT_TAG, u"/color"),
+            (renpy.TEXT_TEXT, u" )"),
+            (renpy.TEXT_TAG, u"/i"),
+        ]
+
+    config.custom_text_tags["m"] = mind_tag
+
     ############################################################################
 
     class Garb():
@@ -1413,7 +1441,7 @@ init python:
 
         Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
 
-        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="'kira' in chars and all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2])")
+        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])") # 'kira' in chars and 
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

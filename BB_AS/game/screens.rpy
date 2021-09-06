@@ -209,7 +209,7 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
-screen choice(items):
+screen choice(items, rand=None):
 
     style_prefix "choice"
     if not _in_replay:
@@ -222,6 +222,14 @@ screen choice(items):
         key "l" action Language(None)
         key "д" action Language(None)
 
+    if rand == 'last':
+        $ lst = shuffle_lst(items[:-1])
+        $ lst.append(items[-1:][0])
+    elif rand == 'all':
+        $ lst = shuffle_lst(items)
+    else:
+        $ lst = items
+
     frame background None area(1380, 815, 525, 245):
 
         hbox spacing 5:
@@ -229,12 +237,51 @@ screen choice(items):
 
                 vbox xfill True spacing -3:
                     $yy = 0
-                    for i in items:
+                    for i in lst:
                         $yy+=1
-                        button action i.action background None:
-                            xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                            textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)) action i.action yalign .0 xpos 30
-                            foreground "interface marker"
+
+                        if len(i.args)>1:
+                            $ skill = {
+                                'mass'  : _("массаж"),
+                                'soc'   : _("убеждение"),
+                                'sex'   : _("сексуальный опыт"),
+                                'kiss'  : _("поцелуи"),
+                                'lucky' : _("удача"),
+                                'hide'  : _("скрытность"),
+                                }[i.args[0]]
+                            $ ch = {i.args[1] < 0 : 0, i.args[1] > 1000 : 1000, 0 <= i.args[1] <= 1000: i.args[1]}[True]
+                            $ col = {ch < 333 : "#f00", ch > 666 : "#0f0", 333 <= ch <= 666 : "#ffbe00"}[True]
+                            $ vis = str(int(ch//10))
+                            $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+                            $ sz = -5
+
+                            # if ch == 1000:
+                            #     button action i.action background None:
+                            #         xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                            #         textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)):
+                            #             action i.action
+                            #             yalign .0
+                            #             xpos 30
+                            #             sensitive not i.kwargs.get("disabled", False)
+                            #         foreground "interface marker"
+                            # else:
+                            button action i.action background None:
+                                xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                                textbutton _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}"):
+                                    action i.action
+                                    yalign .0
+                                    xpos 30
+                                    sensitive not i.kwargs.get("disabled", False)
+                                foreground "interface marker"
+                        else:
+                            button action i.action background None:
+                                xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                                textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)):
+                                    action i.action
+                                    yalign .0
+                                    xpos 30
+                                    sensitive not i.kwargs.get("disabled", False)
+                                foreground "interface marker"
 
                         key str(yy) action i.action
             vbar value YScrollValue("vp_choice") style "choice_vscroll"
@@ -911,7 +958,7 @@ screen preferences():
                         label _("Язык")#| Language")
                         textbutton _("Русский") action Language(None)
                         textbutton _("English") action Language("english")
-                        textbutton _("Deutsch") action Language("deutsch")
+                        textbutton _("Deutsch") action Language("german")
 
                 vbox:
                     spacing 20
@@ -1642,11 +1689,19 @@ init python:
 screen choice_clutch(items):
     timer .01 action Function(ScrlAuto,items)
 
-screen choice(items):
+screen choice(items, rand=None):
     variant "small"
 
     use choice_clutch(items)
     style_prefix "choice"
+
+    if rand == 'last':
+        $ lst = shuffle_lst(items[:-1])
+        $ lst.append(items[-1:][0])
+    elif rand == 'all':
+        $ lst = shuffle_lst(items)
+    else:
+        $ lst = items
 
     frame xalign 0.98 xsize gui.choice_button_width+50:
         ypos 750 yanchor 1.0 ysize 400
@@ -1664,13 +1719,45 @@ screen choice(items):
             yminimum 50
             vbox xfill True spacing 5:
                 $ yy = 0
-                for i in items:
+                for i in lst:
                     $ yy += 1
-                    button action i.action:
-                        text i.caption style "choice_button_text"
-                        left_padding 50 right_padding 35
-                        foreground "interface marker"
-                        id 'vbb'+str(yy)
+                    if len(i.args)>1:
+                        $ skill = {
+                            'mass'  : _("массаж"),
+                            'soc'   : _("убеждение"),
+                            'sex'   : _("сексуальный опыт"),
+                            'kiss'  : _("поцелуи"),
+                            'lucky' : _("удача"),
+                            'hide'  : _("скрытность"),
+                            }[i.args[0]]
+                        $ ch = {i.args[1] < 0 : 0, i.args[1] > 1000 : 1000, 0 <= i.args[1] <= 1000: i.args[1]}[True]
+                        $ col = {ch < 333 : "#f00", ch > 666 : "#0f0", 333 <= ch <= 666 : "#ffbe00"}[True]
+                        $ vis = str(int(ch//10))
+                        $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+                        $ sz = -3
+
+                        # if ch == 1000:
+                        #     button action i.action:
+                        #         text i.caption style "choice_button_text"
+                        #         left_padding 50 right_padding 35
+                        #         sensitive not i.kwargs.get("disabled", False)
+                        #         foreground "interface marker"
+                        #         id 'vbb'+str(yy)
+                        # else:
+                        button action i.action:
+                            text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
+                            left_padding 50 right_padding 35
+                            sensitive not i.kwargs.get("disabled", False)
+                            foreground "interface marker"
+                            id 'vbb'+str(yy)
+
+                    else:
+                        button action i.action:
+                            text i.caption style "choice_button_text"
+                            left_padding 50 right_padding 35
+                            sensitive not i.kwargs.get("disabled", False)
+                            foreground "interface marker"
+                            id 'vbb'+str(yy)
 
 style vp_choice:
     variant 'small'

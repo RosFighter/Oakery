@@ -61,6 +61,8 @@ default number_quicksave = 0
 default number_save = 0
 default last_save_name = "(None)"
 
+define rl = create_random_list()
+
 # (для экрана сохранений андроид)
 default day = 1
 default tm  = '08:50'

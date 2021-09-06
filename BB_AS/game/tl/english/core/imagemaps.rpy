@@ -1,40 +1,40 @@
-﻿# TODO: Translation updated at 2020-10-14 09:08
+﻿# TODO: Translation updated at 2021-09-01 18:42
 
 translate english strings:
 
-    # game/core/imagemaps.rpy:32
+    # game/core/imagemaps.rpy:31
     old "{i}искать под кроватью{/i}"
     new "{i}Look under the bed{/i}"
 
-    # game/core/imagemaps.rpy:36
+    # game/core/imagemaps.rpy:34
     old "{i}искать в тумбочке{/i}"
     new "{i}Look in the nightstand{/i}"
 
-    # game/core/imagemaps.rpy:40
+    # game/core/imagemaps.rpy:37
     old "{i}искать в столе{/i}"
     new "{i}Look in the table{/i}"
 
-    # game/core/imagemaps.rpy:60
+    # game/core/imagemaps.rpy:56
     old "{i}массировать ступни{/i}"
     new "{i}Massage her feet{/i}"
 
-    # game/core/imagemaps.rpy:70
+    # game/core/imagemaps.rpy:64
     old "{i}массировать голени{/i}"
     new "{i}Massage her lower legs{/i}"
 
-    # game/core/imagemaps.rpy:82
+    # game/core/imagemaps.rpy:74
     old "{i}массировать бёдра{/i}"
     new "{i}Massage her thighs{/i}"
 
-    # game/core/imagemaps.rpy:87
+    # game/core/imagemaps.rpy:78
     old "{i}массировать плечи{/i}"
     new "{i}Massage her shoulders{/i}"
 
-    # game/core/imagemaps.rpy:92
+    # game/core/imagemaps.rpy:82
     old "{i}массировать спину{/i}"
     new "{i}Massage her back{/i}"
 
-    # game/core/imagemaps.rpy:98
+    # game/core/imagemaps.rpy:87
     old "{i}массировать попку{/i}"
     new "{i}Massage her ass{/i}"
 

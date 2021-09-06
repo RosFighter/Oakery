@@ -175,7 +175,7 @@ screen choice_lang():
     style_prefix 'lang'
     imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 425 idle 'interface/ENG.webp' action [Language('english'), Function(renpy.full_restart)] focus_mask True at lang
     imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 645 idle 'interface/RUS.webp' action [Language(None), Function(renpy.full_restart)] focus_mask True at lang
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 865 idle 'interface/GER.webp' action [Language('deutsch'), Function(renpy.full_restart)] focus_mask True at lang
+    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 865 idle 'interface/GER.webp' action [Language('german'), Function(renpy.full_restart)] focus_mask True at lang
 
 ################################################################################
 

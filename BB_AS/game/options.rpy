@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.06.8.04"
+define config.version = "0.06.8.07"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -218,7 +218,7 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('**/*save*/*.*', None)
-
+    build.classify('lovetime.*', None)
 
     ## Чтобы архивировать файлы, классифицируйте их, например, как 'archive'.
 

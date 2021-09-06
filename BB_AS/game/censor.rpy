@@ -159,7 +159,7 @@ init python:
             replace_dict = replace_dict_ru
         elif _preferences.language=='english':
             replace_dict = replace_dict_en
-        elif _preferences.language=='deutsch':
+        elif _preferences.language=='german':
             replace_dict = replace_dict_de
         else:
             return st0

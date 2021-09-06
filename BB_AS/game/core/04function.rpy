@@ -334,7 +334,7 @@ init python:
         StrDev = __("Так... В накладной написано следующее:")
         # elif _preferences.language == "english":
         #     StrDev = "So... In the consignment note says the following:"
-        # elif _preferences.language == "deutsch":
+        # elif _preferences.language == "german":
         #     StrDev = "Also... Auf dem Lieferschein steht folgendes:"
         # else:
         #     StrDev = "..."
@@ -1379,4 +1379,3 @@ init python:
                 return True
 
         return False
-        

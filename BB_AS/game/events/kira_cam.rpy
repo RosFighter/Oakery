@@ -423,7 +423,7 @@ label cam1_return_from_club:
     show Kira cams after-club 01 at laptop_screen
     show FG cam-shum-noact at laptop_screen
     menu:
-        Max_01 "{i}( Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их... ){/i}"
+        Max_01 "{m}Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их...{/m}"
         "{i}встретить их{/i}":
             $ at_comp = False
             jump return_from_club

@@ -346,3 +346,15 @@ translate english strings:
     old "[view_cam[1].public]"
     new "[view_cam[1].public]"
 
+# TODO: Translation updated at 2021-09-05 15:15
+
+translate english strings:
+
+    # game/core/screens.rpy:746
+    old "На вашем счете ${paid}"
+    new "You have ${paid} in your account."
+
+    # game/core/screens.rpy:748
+    old "Забрать ${paid}"
+    new "Pick up ${paid}"
+

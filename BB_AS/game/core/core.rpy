@@ -544,6 +544,7 @@ label night_of_fun:
     $ spent_time = clip_time(int(round((100. - mgg.energy)/10, 0)) * 60, '06:00', '08:00')
     scene BG char Max bed-night-01
     $ renpy.show('Max sleep-night '+pose3_3)
+    $ renpy.show('FG Max sleep-night '+pose3_3)
     Max_19 "Теперь можно спокойно спать и ничего больше..."
     jump Waiting
 
@@ -702,8 +703,8 @@ label after_buying:
         $ buying_item = purchased_items.pop()
 
         if buying_item==items['photocamera'] and poss['aunt'].used(9):
-            Max_01 "{i}( Так, фотокамеру я заказал, осталось дождаться доставки... ){/i}"
-            Max_07 "{i}( Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс... ){/i}"
+            Max_01 "{m}Так, фотокамеру я заказал, осталось дождаться доставки...{/m}"
+            Max_07 "{m}Интересно, а в чём тётя Кира будет фотографироваться из одежды? Ей это нужно для порно-портфолио... Так может мне стоит прикупить что-нибудь сексуальное для неё?! Например, более откровенную ночнушку! Это пойдёт мне только в плюс...{/m}"
             # $ poss['aunt'].stages[3].ps = _("А ещё, будет не лишним, купить для этой фотосессии сексуальную сорочку для моей любимой тёти!")
             $ items['nightie2'].unblock()
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
@@ -714,7 +715,6 @@ label after_buying:
 label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
-
     if renpy.loadable('extra/extra.webp'):
         $ set_extra_album()
 
@@ -734,6 +734,7 @@ label after_load:
         python:
             for char in chars:
                 chars[char].reinit()
+                chars[char].dcv.reinit()
 
         # обновление расписаний
         call set_alice_schedule from _call_set_alice_schedule

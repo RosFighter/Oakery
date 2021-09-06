@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2020-10-14 09:08
+﻿# TODO: Translation updated at 2021-09-01 18:42
 
 # game/events/kira_cam.rpy:7
 translate english cam0_kira_sleep_night_e86a44fa:
@@ -264,8 +264,6 @@ translate english cam1_kira_night_swim_5f08638b:
     # Max_05 "Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!"
     Max_05 "Aunt Kira, skinny dipping? Something tells me she's done this before!"
 
-# TODO: Translation updated at 2021-01-23 16:42
-
 # game/events/kira_cam.rpy:417
 translate english cam0_return_from_club_39c0bef3:
 
@@ -278,25 +276,17 @@ translate english cam0_return_from_club_1ecc7ee3:
     # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы бассейн..."
     Max_09 "I can't see anything. I should install a camera that covers the pool..."
 
-# game/events/kira_cam.rpy:423
-translate english cam1_return_from_club_4f374152:
+# game/events/kira_cam.rpy:425
+translate english cam1_return_from_club_53f60e0c:
 
-    # Max_01 "{i}( Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их... ){/i}" nointeract
-    Max_01 "{i}( The girls are back from the club! I better go meet them now if I want a chance at a little fun before bed... ){/i}" nointeract
+    # Max_01 "{m}Вот и девчонки вернулись из клуба! Если перед сном хочется поискать приключений, то нужно быстро бежать и встречать их...{/m}" nointeract
+    Max_01 "{m}The girls are back from the club! I better go meet them now if I want a chance at a little fun before bed...{/m}" nointeract
 
-# game/events/kira_cam.rpy:430
+# game/events/kira_cam.rpy:432
 translate english cam1_return_from_club_984a3aa6:
 
     # Max_00 "Поздно уже, пойду лучше спать..."
     Max_00 "It's getting late, I'd better go to bed..."
-
-translate english strings:
-
-    # game/events/kira_cam.rpy:423
-    old "{i}встретить их{/i}"
-    new "{i}Go meet them{/i}"
-
-# TODO: Translation updated at 2021-02-09 23:50
 
 # game/events/kira_cam.rpy:443
 translate english cam0_kira_bath_with_eric_6d360ec2:
@@ -339,3 +329,10 @@ translate english cam1_kira_bath_with_eric_77deb168:
 
     # Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
     Max_09 "I can't see anyone through this camera... Should I look through the other one?"
+
+translate english strings:
+
+    # game/events/kira_cam.rpy:425
+    old "{i}встретить их{/i}"
+    new "{i}Go meet them{/i}"
+
