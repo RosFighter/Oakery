@@ -1864,5 +1864,5 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:768
     old "Нет смысла что-либо затевать в отношении Алисиной попки, пока её хотя бы раз не накажут голой..."
-    new ""
+    new "There's no point doing anything about Alice's ass until she's been punished naked at least once"
 
