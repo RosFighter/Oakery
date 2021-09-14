@@ -210,3 +210,11 @@ translate english cam0_ann_tv_b8dd0b35:
     # Max_01 "Мама, как всегда, отдыхает за просмотром сериала или фильма."
     Max_01 "Mom's relaxing while watching TV."
 
+# TODO: Translation updated at 2021-09-14 23:26
+
+# game/events/ann_cam.rpy:344
+translate english cam0_ann_tv_8b464610:
+
+    # Max_01 "{m}Как приятно видеть маму без Эрика. Может составить ей компанию, чтобы она не скучала?{/m}"
+    Max_01 ""
+
