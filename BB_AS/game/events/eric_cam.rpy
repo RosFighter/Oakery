@@ -3,7 +3,7 @@ label cam0_eric_ann_sleep:
     if flags.eric_jerk and '02:00'<=tm<'02:30':
         $ renpy.show('Ann cams sleep '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     else:
-        $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
+        $ renpy.show('Eric cams sleep2 '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if all([flags.eric_jerk, '02:00'<=tm<'02:30', not prenoted, not flags.eric_noticed]):
@@ -132,7 +132,10 @@ label cam0_eric_resting:
     show FG cam-shum-act at laptop_screen
     if 'eric_resting' not in cam_flag:
         $ cam_flag.append('eric_resting')
-        Max_01 "О, \"В мире животных\" показывают! То ли шимпанзе на стероидах, то ли горилла..."
+        if eric.daily.sweets and GetWeekday(day) in [1, 3]:
+            Max_01 "{m}Кажется, подмешанное Эрику в еду средство испортило ему всё настроение и он не рискует идти к моей сестрёнке... Именно на это я и рассчитывал!{/m}"
+        else:
+            Max_01 "О, \"В мире животных\" показывают! То ли шимпанзе на стероидах, то ли горилла..."
     return
 
 label cam0_eric_ann_tv:
@@ -336,4 +339,65 @@ label cam0_sexed_lisa:
                 $ cam_flag.append('ann_eric_lisa_sexed2')
                 Max_08 "{m}О, Эрик не выдержал и кончил... Хотя, вряд ли. Скорее всего, они решили показать Лизе для чего это всё было нужно.{/m}"
 
+    return
+
+
+label cam0_eric_shat:
+    show FG cam-shum-act at laptop_screen
+    if 'eric_bath0' not in cam_flag:
+        $ cam_flag.append('eric_bath0')
+        if len(house[3].cams)>1:
+            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+        else:
+            Max_09 "Ничего толком не видно..."
+    return
+
+
+label cam1_eric_shat:
+    if tm < '22:00':
+        $ renpy.show('Eric cams shat 01'+eric.dress)
+    else:
+        $ renpy.show('Eric cams shat 02'+eric.dress)
+
+    show FG cam-shum-act at laptop_screen
+    if 'eric_bath0' not in cam_flag:
+        $ cam_flag.append('eric_bath0')
+        if tm < '22:00':
+            Max_02 "Эрик во всю оценивает эффективность слабительного, которое я ему подмешал... Надеюсь, эта обезьяна знает, как пользоваться туалетной бумагой, потому что банановых листьев у нас тут нет!"
+        else:
+            Max_02 "Ты что, Эрик, съел что-то не то, что ли?! Бедняга. Ну, держись там..."
+    return
+
+
+label cam0_eric_ann_resting:
+    $ renpy.show('Eric cams relax2 '+cam_poses_manager(eric, ['01', '02', '03'])+eric.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'eric_resting2' not in cam_flag:
+        $ cam_flag.append('eric_resting2')
+        Max_02 "{m}Похоже, потрахушек сегодня не намечается... Интересно, с чего бы это?!{/m}"
+    return
+
+
+label cam0_eric_sleep:
+    $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02']+eric.dress), at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+
+    if 'eric_sleep' not in cam_flag:
+        $ cam_flag.append('eric_sleep')
+        Max_07 "{m}Остаётся надеяться, что я подмешал ему не слишком много успокоительного... Главное, что он сейчас ни к кому не пристаёт.{/m}"
+
+    return
+
+##
+label cam0_eric_ann_try_fucking:
+    $ renpy.show('Eric cams nosex '+cam_poses_manager(eric, ['01', '02'])+eric.dress, at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'eric_nosex' not in cam_flag:
+        $ cam_flag.append('eric_nosex')
+        Max_01 "{m}Не стоит? Ну ничего, бывает... Но всё равно приятно осознавать, что это происходит из-за моих действий.{/m}"
+    return
+
+##
+label cam0_lisa_eric_sex_ed_practice:
+    show FG cam-shum-act at laptop_screen
     return

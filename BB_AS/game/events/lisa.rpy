@@ -102,22 +102,20 @@ label lisa_shower:
 
     label .start_peeping:
         $ lisa.daily.shower = 1
-        $ Skill('hide', 0.03)
+        $ Skill('hide', 0.03, 60)
         $ r1 = renpy.random.randint(1, 4)
 
-        $ _ch1 = GetChance(mgg.stealth, 3, 900)
-        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         $ renpy.scene()
         $ renpy.show('Lisa shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
         play music spying
         menu:
             Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
-            "{i}продолжить смотреть{/i}" ('hide', _ch1.ch) if lisa.dcv.shower.stage<2:
+            "{i}продолжить смотреть{/i}" ('hide', mgg.stealth * 3, 90, 2) if lisa.dcv.shower.stage<2:
                 jump .closer_peepeng
-            "{i}взглянуть со стороны{/i}" ('hide', _ch2.ch) if lisa.dcv.shower.stage<2:
+            "{i}взглянуть со стороны{/i}" ('hide', mgg.stealth * 2, 90, 2) if lisa.dcv.shower.stage<2:
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (0<len(lisa.sorry.give)<4 or (not poss['SoC'].used(0) and _ch1.ch>600)):
+            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (0<len(lisa.sorry.give)<4 or (not poss['SoC'].used(0) and mgg.stealth * 3 > 60)):
                 jump .pinded
             "{i}немного пошуметь{/i}" if len(lisa.sorry.give)>3 and lisa.dcv.shower.stage<2:
                 jump .pinded
@@ -125,18 +123,16 @@ label lisa_shower:
                 jump .end_peeping
 
     label .alt_peepeng:
-        if not RandomChance(_ch2.ch):
+        if rand_result < 2:
             jump .not_luck
         $ spent_time += 10
         $ lisa.daily.shower = 1
-        $ Skill('hide', 0.2)
         $ lisa.dress_inf = '00a'
         $ r1 = renpy.random.randint(1, 6)
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(r1))
         show FG shower-water
-        play sound undetect
         if 1 < r1 < 5:
             Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
         else:
@@ -145,15 +141,13 @@ label lisa_shower:
 
     label .closer_peepeng:
         $ spent_time += 10
-        if RandomChance(_ch1.ch):
+        if rand_result > 1:
             $ lisa.daily.shower = 1
-            $ Skill('hide', 0.2)
             $ lisa.dress_inf = '00a'
             $ r1 = renpy.random.randint(1, 6)
             scene BG shower-closer
             $ renpy.show('Lisa shower-closer 0'+str(r1))
             show FG shower-closer
-            play sound undetect
             if 1 < r1 < 5:
                 Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
             else:
@@ -165,15 +159,13 @@ label lisa_shower:
     label .not_luck:
         if lisa_was_topless():
             jump .pinded
-        if RandomChance(_ch1.ch) or len(lisa.sorry.give) > 3:
+        if rand_result or len(lisa.sorry.give) > 3:
             $ lisa.daily.shower = 2
-            $ Skill('hide', 0.1)
             $ lisa.dress_inf = '00a'
             $ r1 = renpy.random.choice(['07', '08'])
             scene BG shower-closer
             $ renpy.show('Lisa shower-closer '+r1)
             show FG shower-closer
-            play sound suspicion
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
         else:
             jump .pinded
@@ -190,13 +182,10 @@ label lisa_shower:
             # после второго ТВ с Оливией
             $ r1 = renpy.random.choice(['07', '08'])
         else:
-            $ Skill('hide', 0.05)
             $ r1 = renpy.random.choice(['09', '10'])
         scene BG shower-closer
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
-        stop music
-        play sound noticed
         if lisa_was_topless() and lisa.dcv.other.stage:
             if lisa.weekly.shower>2:
                 Lisa_11 "[spotted!t]Ой, Макс! Опять ты подглядываешь... Это уже маньячество какое-то!"
@@ -239,15 +228,23 @@ label lisa_shower:
 
 
 label lisa_read:
-    scene BG char Lisa reading
-    $ renpy.show('Lisa reading '+pose3_1+lisa.dress)
-    $ persone_button1 = 'Lisa reading '+pose3_1+lisa.dress+'b'
+    # scene BG char Lisa reading
+    # $ renpy.show('Lisa reading '+pose3_1+lisa.dress)
+    # $ persone_button1 = 'Lisa reading '+pose3_1+lisa.dress+'b'
+    scene BG char Lisa bed-mde-01
+    $ renpy.show('Lisa reading ' + pose3_1)
+    $ renpy.show('FG Lisa reading ' + pose3_1 + lisa.dress)
+    # $ persone_button1 = ['Lisa reading ' + pose3_1, 'FG Lisa reading ' + pose3_1 + lisa.dress]
+
     return
 
 
 label lisa_read_closer:
-    scene BG char Lisa reading
-    $ renpy.show('Lisa reading-closer 01'+lisa.dress)
+    # scene BG char Lisa reading
+    # $ renpy.show('Lisa reading-closer 01'+lisa.dress)
+    scene BG char Lisa bed-mde-01
+    show Lisa reading 00
+    $ renpy.show('FG Lisa reading 00' + lisa.dress)
     return
 
 
@@ -1265,26 +1262,23 @@ label lisa_horor_movie_r:
     $ renpy.show('FG horror-myroom '+flags.cur_movies[0]+' 0'+str(flags.cur_movies[h_film])+"-0"+str(flags.cur_series))
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."
 
-    $ _ch3 = GetChance(mgg.sex+5, 3, 900)
     if lisa.dress>'b':
         Max_10 "{m}Только бы у меня не встал! У меня тут полный эффект погружения... Ладно в ужастике сиськи голые периодически мелькают, а вот голая грудь моей сестрёнки, которой она слегка трётся о меня, вот это проблема... Как тут сдерживаться?{/m}" nointeract
     else:
         Max_10 "{m}Только бы у меня не встал! Ещё периодически сиськи голые в ужастике мелькают... Как тут сдерживаться?{/m}" nointeract
     menu:
-        "{i}сдерживаться{/i}" ('sex', _ch3.ch):
-            if (not _in_replay and not RandomChance(_ch3.ch)) or (_in_replay and lisa.flags.kiss_lesson<12):
+        "{i}сдерживаться{/i}" ('sex', (mgg.sex + 5) * 3, 900):
+            if not rand_result or (_in_replay and lisa.flags.kiss_lesson<12):
                 # (не получилось сдержаться)
-                $ Skill('sex', 0.1)
                 Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
                 jump .not_restrain
 
             # (получилось сдержаться)
-            $ Skill('sex', 0.2)
             if flags.cur_series < 2:
-                # если начали новый фильм
+                # начали новый фильм
                 Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
             else:
-                 #если продолжили смотреть
+                # продолжили смотреть
                 Lisa_09 "[restrain!t]Наконец-то фильм заканчивается, а то я набоялась уже сполна..."
             #  выключается музыка
             stop music fadeout 1.0
@@ -1365,8 +1359,6 @@ label lisa_horor_movie_r:
 
     label .end:
         $ renpy.end_replay()
-        # if lisa.dcv.other.stage>1 and lisa.dcv.other.done:
-        #     $ lisa.dress = 'b'
         $ spent_time += 60
         $ infl[lisa].add_m(12)
         $ lisa.dcv.special.disable()

@@ -793,7 +793,7 @@ define zero_hints = {
                        PossHint(_("Эрик явно проявляет к Алисе особый интерес. Нужно приглядывать за этой парочкой, когда они вместе. Но что-то непристойное может происходить и ночью, если вдруг не все будут спать..."), "'sexbody2' in alice.gifts")],
     'ass'           : [PossHint(_("Всему своё время..."), "newpunishment<2"),
                        PossHint(_("Нет смысла что-либо затевать в отношении Алисиной попки, пока её хотя бы раз не накажут голой..."), "newpunishment > 1 and not alice.flags.nakedpunish"),
-                       PossHint(_("Я слишком мало защищал Алису от наказаний мамы..."), "newpunishment > 1 and alice.flags.defend < 5"),
+                       PossHint(_("Я слишком мало защищал Алису от наказаний мамы..."), "newpunishment>1 and alice.flags.defend<5"),
                        PossHint(_("Нужно опередить Эрика во всём, что он будет делать для Алисы. Особенно в дарении одежды..."), "newpunishment > 1 and alice.dcv.intrusion.stage < 5"),
                        PossHint(_("Нужно и дальше защищать Алису от наказаний..."), "alice.flags.nakedpunish and alice.dcv.intrusion.stage in [5, 7]"),
                        PossHint(_("Эрик подарил Алисе кружевное боди раньше меня, а значит я упустил возможность ещё больше с ней сблизиться. По крайней мере, пока не избавлюсь от него (но не в этой версии игры)..."), "alice.dcv.intrusion.stage>7")],

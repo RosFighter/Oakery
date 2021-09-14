@@ -223,10 +223,10 @@ screen choice(items, rand=None):
         key "д" action Language(None)
 
     if rand == 'last':
-        $ lst = shuffle_lst(items[:-1])
+        $ lst = shuffle_menu_list(items[:-1])
         $ lst.append(items[-1:][0])
     elif rand == 'all':
-        $ lst = shuffle_lst(items)
+        $ lst = shuffle_menu_list(items)
     else:
         $ lst = items
 
@@ -249,30 +249,33 @@ screen choice(items, rand=None):
                                 'lucky' : _("удача"),
                                 'hide'  : _("скрытность"),
                                 }[i.args[0]]
-                            $ ch = {i.args[1] < 0 : 0, i.args[1] > 1000 : 1000, 0 <= i.args[1] <= 1000: i.args[1]}[True]
-                            $ col = {ch < 333 : "#f00", ch > 666 : "#0f0", 333 <= ch <= 666 : "#ffbe00"}[True]
-                            $ vis = str(int(ch//10))
-                            $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+
                             $ sz = -5
 
-                            # if ch == 1000:
-                            #     button action i.action background None:
-                            #         xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                            #         textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)):
-                            #             action i.action
-                            #             yalign .0
-                            #             xpos 30
-                            #             sensitive not i.kwargs.get("disabled", False)
-                            #         foreground "interface marker"
-                            # else:
-                            button action i.action background None:
-                                xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                                textbutton _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}"):
-                                    action i.action
-                                    yalign .0
-                                    xpos 30
-                                    sensitive not i.kwargs.get("disabled", False)
-                                foreground "interface marker"
+                            $ lim = i.args[2] if len(i.args) > 2 else 100
+                            $ vis = get_skill_chance(i.args[1], lim)
+                            $ col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
+                            $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+                            $ step = i.args[3] if len(i.args) > 3 else 1
+
+                            if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
+                                button action i.action background None:
+                                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                                    textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)):
+                                        action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]#[SetVariable('rand_result', 5), i.action]
+                                        yalign .0
+                                        xpos 30
+                                        sensitive not i.kwargs.get("disabled", False)
+                                    foreground "interface marker"
+                            else:
+                                button action i.action background None:
+                                    xpadding 0 ypadding 0 xmargin 0 ymargin 0
+                                    textbutton _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}"):
+                                        action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]
+                                        yalign .0
+                                        xpos 30
+                                        sensitive not i.kwargs.get("disabled", False)
+                                    foreground "interface marker"
                         else:
                             button action i.action background None:
                                 xpadding 0 ypadding 0 xmargin 0 ymargin 0
@@ -1696,10 +1699,10 @@ screen choice(items, rand=None):
     style_prefix "choice"
 
     if rand == 'last':
-        $ lst = shuffle_lst(items[:-1])
+        $ lst = shuffle_menu_list(items[:-1])
         $ lst.append(items[-1:][0])
     elif rand == 'all':
-        $ lst = shuffle_lst(items)
+        $ lst = shuffle_menu_list(items)
     else:
         $ lst = items
 
@@ -1730,26 +1733,29 @@ screen choice(items, rand=None):
                             'lucky' : _("удача"),
                             'hide'  : _("скрытность"),
                             }[i.args[0]]
-                        $ ch = {i.args[1] < 0 : 0, i.args[1] > 1000 : 1000, 0 <= i.args[1] <= 1000: i.args[1]}[True]
-                        $ col = {ch < 333 : "#f00", ch > 666 : "#0f0", 333 <= ch <= 666 : "#ffbe00"}[True]
-                        $ vis = str(int(ch//10))
-                        $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+
                         $ sz = -3
 
-                        # if ch == 1000:
-                        #     button action i.action:
-                        #         text i.caption style "choice_button_text"
-                        #         left_padding 50 right_padding 35
-                        #         sensitive not i.kwargs.get("disabled", False)
-                        #         foreground "interface marker"
-                        #         id 'vbb'+str(yy)
-                        # else:
-                        button action i.action:
-                            text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
-                            left_padding 50 right_padding 35
-                            sensitive not i.kwargs.get("disabled", False)
-                            foreground "interface marker"
-                            id 'vbb'+str(yy)
+                        $ lim = i.args[2] if len(i.args) > 2 else 100
+                        $ vis = get_skill_chance(i.args[1], lim)
+                        $ col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
+                        $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+                        $ step = i.args[3] if len(i.args) > 3 else 1
+
+                        if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
+                            button action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]: #[SetVariable('rand_result', 5), i.action]:
+                                text i.caption style "choice_button_text"
+                                left_padding 50 right_padding 35
+                                sensitive not i.kwargs.get("disabled", False)
+                                foreground "interface marker"
+                                id 'vbb'+str(yy)
+                        else:
+                            button action [Skill_Outsome(i.args[0], vis, lim, step), i.action]:
+                                text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
+                                left_padding 50 right_padding 35
+                                sensitive not i.kwargs.get("disabled", False)
+                                foreground "interface marker"
+                                id 'vbb'+str(yy)
 
                     else:
                         button action i.action:

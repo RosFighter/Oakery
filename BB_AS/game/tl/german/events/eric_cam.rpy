@@ -282,3 +282,53 @@ translate german cam0_sexed_lisa_6918e27b:
     # Max_08 "{m}О, Эрик не выдержал и кончил... Хотя, вряд ли. Скорее всего, они решили показать Лизе для чего это всё было нужно.{/m}"
     Max_08 "{m}Oh, Eric konnte es nicht mehr aushalten und kam... Wahrscheinlich wollten sie Lisa zeigen, worum es geht.{/m}"
 
+# TODO: Translation updated at 2021-09-14 23:25
+
+# game/events/eric_cam.rpy:136
+translate german cam0_eric_resting_b4d3f901:
+
+    # Max_01 "{m}Кажется, подмешанное Эрику в еду средство испортило ему всё настроение и он не рискует идти к моей сестрёнке... Именно на это я и рассчитывал!{/m}"
+    Max_01 ""
+
+# game/events/eric_cam.rpy:350
+translate german cam0_eric_shat_39c0bef3:
+
+    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+    Max_09 ""
+
+# game/events/eric_cam.rpy:352
+translate german cam0_eric_shat_e517fcdc:
+
+    # Max_09 "Ничего толком не видно..."
+    Max_09 ""
+
+# game/events/eric_cam.rpy:366
+translate german cam1_eric_shat_93a7571e:
+
+    # Max_02 "Эрик во всю оценивает эффективность слабительного, которое я ему подмешал... Надеюсь, эта обезьяна знает, как пользоваться туалетной бумагой, потому что банановых листьев у нас тут нет!"
+    Max_02 ""
+
+# game/events/eric_cam.rpy:368
+translate german cam1_eric_shat_689dedb9:
+
+    # Max_02 "Ты что, Эрик, съел что-то не то, что ли?! Бедняга. Ну, держись там..."
+    Max_02 ""
+
+# game/events/eric_cam.rpy:377
+translate german cam0_eric_ann_resting_cb75645d:
+
+    # Max_02 "{m}Похоже, потрахушек сегодня не намечается... Интересно, с чего бы это?!{/m}"
+    Max_02 ""
+
+# game/events/eric_cam.rpy:387
+translate german cam0_eric_sleep_bce0a0b5:
+
+    # Max_07 "{m}Остаётся надеяться, что я подмешал ему не слишком много успокоительного... Главное, что он сейчас ни к кому не пристаёт.{/m}"
+    Max_07 ""
+
+# game/events/eric_cam.rpy:397
+translate german cam0_eric_ann_try_fucking_5da5d134:
+
+    # Max_01 "{m}Не стоит? Ну ничего, бывает... Но всё равно приятно осознавать, что это происходит из-за моих действий.{/m}"
+    Max_01 ""
+

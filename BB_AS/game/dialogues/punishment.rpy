@@ -39,8 +39,7 @@ label StartPunishment:
 
     if tm > "18:00" and 0 < GetWeekday(day) < 6:
         # Лиза получает наказание только вечером по будним дням
-        $ chance = GetLisaPunChance()  # шанс получения Лизой двойки
-        if RandomChance(chance):  # получит ли Лиза двойку
+        if random_outcome(GetLisaPunChance()):  # получит ли Лиза двойку
             $ punlisa[0][1] = 1
             $ pun_list.append("lisa")
         else:
@@ -48,20 +47,34 @@ label StartPunishment:
             # наказания Лизы за плохое поведение в школе.
             # шанс всегда 50%, если прошел откат
             if all([
-                    any([newpunishment==2, newpunishment==1 and (day >= 50 or (dcv.new_pun.stage==2 and dcv.new_pun.done))]),
-                    flags.add_training, lisa.dcv.punpause.done, RandomChance(500)
+                    any([newpunishment==2,
+                         newpunishment==1 and (day >= 50 or (dcv.new_pun.stage==2 and dcv.new_pun.done))]),
+                    flags.add_training,
+                    lisa.dcv.punpause.done,
+                    random_outcome(50)
                 ]):
                     $ punlisa[0][1] = 2
                     $ pun_list.append("lisa")
-            elif all([newpunishment==2, flags.add_training, lisa.dcv.punpause.done,
-                GetWeekday(day) in [1,2], RandomChance(800), lisa.flags.topless, not lisa.dcv.other.enabled]):
+            elif all([
+                      newpunishment==2,
+                      flags.add_training,
+                      lisa.dcv.punpause.done,
+                      GetWeekday(day) in [1,2],
+                      random_outcome(80),
+                      lisa.flags.topless,
+                      not lisa.dcv.other.enabled
+                    ]):
                     $ punlisa[0][1] = 2
                     $ pun_list.append("lisa")
 
-    if all([tm > "18:00", alice.dcv.special.enabled, alice.dcv.special.stage > 1, (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)]):
+    if all([
+            tm > "18:00",
+            alice.dcv.special.enabled,
+            alice.dcv.special.stage > 1,
+            (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)
+            ]):
         # Алиса получает наказание вечером (в будни, если были приватные наказания), если открыт ивент с сигаретами
-        $ chance = GetAlicePunChance()  # шанс нахождения Анной сигарет Алисы
-        if RandomChance(chance):  # найдет ли Анна сигареты Алисы
+        if random_outcome(GetAlicePunChance()):  # найдет ли Анна сигареты Алисы
             $ pun_list.append("alice")
 
     $ renpy.random.shuffle(pun_list) # перемешаем список последовательности наказания
@@ -235,14 +248,11 @@ label punishment_max:
         Max_14 "Да, мам..."
         Ann_12 "В общем, на этот раз вопрос уладили. Все сделали выводы, а кое-кто и серьёзно задумается. Да, Макс? Можешь не отвечать."
     elif newpunishment == 0:  # стандартное наказание без штанов, но в трусах и майке
-        $ _ch1 = GetChance(mgg.social, 2, 900)
         menu:
             Ann_16 "Макс! Сейчас ты будешь наказан, сам знаешь за что!"
-            "Я же не виноват!" ('soc', _ch1.ch):
+            "Я же не виноват!" ('soc', mgg.social * 2, 90):
                 pass
-        if RandomChance(_ch1.ch):
-            $ Skill('social', 0.2)
-            play sound succes
+        if rend_result:
             Ann_14 "[succes!t]Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
             Max_08 "Спасибо, мам!"
             python:
@@ -250,12 +260,10 @@ label punishment_max:
                     punreason[d] = 0
             return
         else:
-            $ Skill('social', 0.1)
             if mgg.dress == "a":
                 $ _text = _("штаны")
             else:
                 $ _text = _("шорты")
-            play sound failed
             menu:
                 Ann_19 "[failed!t]Вот так просто? \"Я не виноват\" и всё забудем? Нет, Макс, со мной эти шуточки не прокатят. Давай, снимай [_text!t] и ложись на мои колени. Надеюсь, ты сегодня в трусах..."
                 "{i}снять штаны{/i}":
@@ -299,9 +307,9 @@ label punishment_max:
 
         call max_consequences from _call_max_consequences
 
-        if punreason[1] and alice.dcv.shower.stage > 1:
+        if punreason[1] and alice.dcv.shower.stage>1:
             $ poss['risk'].open(5)
-        if punreason[0] and lisa.dcv.shower.stage > 1:
+        if punreason[0] and lisa.dcv.shower.stage>1:
             $ poss['SoC'].open(5)
 
         stop sound
@@ -446,17 +454,14 @@ label punishment_lisa:
         if defend or poss['sg'].st() == 4:  # Макс уже не может заступиться или нужно наказание для продвижения на "хорошем" пути Школьницы
             Ann_16 "[_text!t]"
         else:
-            $ _ch1 = GetChance(mgg.social, 2, 900)
             menu:
                 Ann_16 "[_text!t]"
-                "{i}Заступиться за Лизу{/i}" ('soc', _ch1.ch):
+                "{i}Заступиться за Лизу{/i}" ('soc', mgg.social * 2, 90):
                     $ defend = True
                     Max_08 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
                     if "mgg" in pun_list:
                         Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
-                    elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
-                        $ Skill('social', 0.2)
-                        play sound succes
+                    elif rand_result:  # Удалось уговорить Анну
                         Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, благодари брата, да учись давай, а то в следующий раз не помилую..."
                         Lisa_02 "Спасибо тебе, Макс!"
                         $ lisa.flags.defend += 1
@@ -464,8 +469,6 @@ label punishment_lisa:
                         $ punlisa[0][2] = 2
                         return
                     else:
-                        $ Skill('social', 0.1)
-                        play sound failed
                         Ann_12 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
                         $ punlisa[0][2] = 1
                 "{i}далее{/i}":
@@ -500,7 +503,7 @@ label punishment_lisa:
     else:
         menu:  # У Макса есть шанс заступиться за Лизу
             Ann_18 "[_text!t]"
-            "{i}Заступиться за Лизу{/i}" ('soc', _ch1.ch):
+            "{i}Заступиться за Лизу{/i}" ('soc', mgg.social * 2, 90):
                 $ defend = True
                 if punlisa[0][1] == 2:
                     Max_08 "Мам, не нужно наказывать Лизу. Обещаю, что бы там ни было, я поработаю с ней над поведением, честно. Вот увидишь, проблем больше не будет!"
@@ -508,9 +511,7 @@ label punishment_lisa:
                     Max_08 "Мам, не нужно наказывать Лизу. Она правда старалась, я сам видел. Ну и я помогу ей подтянуть оценки."
                 if "mgg" in pun_list:
                     Ann_12 "Нет, Макс, и даже не пытайся меня уговорить. Ты и сам накосячил... А ты, Лиза, не стой столбом, шевелись давай..."
-                elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
-                    $ Skill('social', 0.2)
-                    play sound succes
+                elif rand_result:  # Удалось уговорить Анну
                     Ann_00 "[succes!t]Хорошо, Макс, в этот раз я не стану её наказывать. Надеюсь, я не пожалею о своём решении... А ты, Лиза, можешь одеваться. Скажи спасибо Максу, что сегодня осталась безнаказанной. Но не думай, что я всегда буду такой доброй..."
                     Lisa_02 "Спасибо тебе, Макс!"
                     if newpunishment==2:
@@ -528,8 +529,6 @@ label punishment_lisa:
                     $ punlisa[0][2] = 2
                     return
                 else:
-                    $ Skill('social', 0.1)
-                    play sound failed
                     Ann_12 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит то, что заслужила. А ты, Лиза, не стой столбом, шевелись давай..."
                     $ punlisa[0][2] = 1
             "{i}далее{/i}":
@@ -608,7 +607,6 @@ label punishment_alice:
 
     $ alice.nopants = (alice.dress=="a" and alice.req.result=='nopants') or alice.dress=='b'
     $ alice.weekly.punished += 1
-    $ _ch1 = GetChance(mgg.social, 2, 900)
     if newpunishment==0:
         # Алиса стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
         if alice.dress == "a":  # Алиса в обычной одежде
@@ -625,23 +623,19 @@ label punishment_alice:
         else:
             menu:
                 Ann_18 "[_text!t]"
-                "{i}Заступиться за Алису{/i}" ('soc', _ch1.ch):
+                "{i}Заступиться за Алису{/i}" ('soc', mgg.social * 2, 90):
                     $ defend = True
                     $ alice.flags.defend += 1
                     Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
                     if "mgg" in pun_list:
                         Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
-                    elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
-                        $ Skill('social', 0.2)
-                        play sound succes
+                    elif rand_result:  # Удалось уговорить Анну
                         Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Скажи брату спасибо, Алиса, что заступился, и не приглашай больше сюда таких подружек, хорошему они не научат..."
                         Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
                         $ punalice[0][2] = 2
                         $ alice.weekly.protected += 1
                         return
                     else:
-                        $ Skill('social', 0.1)
-                        play sound failed
                         Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
                         $ punalice[0][2] = 1
                 "{i}далее{/i}":
@@ -696,21 +690,19 @@ label punishment_alice:
             Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
             $ alice.dcv.private.stage = 2
             $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
-        elif alice.dcv.private.stage:
+        elif alice.dcv.private.stage < 4:
             $ alice.dcv.private.set_lost(2)
         Ann_18 "[_text!t]"
     else:
         menu:  # У Макса есть шанс заступиться за Алису
             Ann_18 "[_text!t]"
-            "{i}Заступиться за Алису{/i}" ('soc', _ch1.ch):
+            "{i}Заступиться за Алису{/i}" ('soc', mgg.social * 2, 90):
                     $ defend = True
                     $ alice.flags.defend += 1
                     Max_08 "Мам, не нужно наказывать Алису. Это не её сигареты, к ней сегодня подружка приходила, наверное, она забыла."
                     if "mgg" in pun_list:
                         Ann_12 "Нет, Макс, даже не пытайся её оправдывать. Ты и сам накосячил... Алиса, пошевеливайся..."
-                    elif RandomChance(_ch1.ch):  # Удалось уговорить Анну
-                        $ Skill('social', 0.2)
-                        play sound succes
+                    elif rand_result:  # Удалось уговорить Анну
                         Ann_14 "[succes!t]Хорошо, Макс, сегодня я не стану её наказывать. Надеюсь, я не пожалею об этом... Можешь одеваться, Алиса, да скажи брату спасибо, что заступился. И не приглашай сюда больше таких подружек, хорошему они не научат..."
                         Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
 
@@ -725,8 +717,6 @@ label punishment_alice:
                         $ alice.weekly.protected += 1
                         return
                     else:
-                        $ Skill('social', 0.1)
-                        play sound failed
                         Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
                         $ punalice[0][2] = 1
             "{i}далее{/i}":

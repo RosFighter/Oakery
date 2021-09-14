@@ -42,6 +42,9 @@ label Sleep:
             $ alarm_time = '08:00'
     $ renpy.show('Max sleep-night '+pose3_3)
     $ renpy.show('FG Max sleep-night '+pose3_3)
+
+    call bedtime_thoughts
+
     Max_19 "Как же в этом доме хорошо..."
 
     $ number_autosave += 1
@@ -61,13 +64,14 @@ label Wearied:
         Max_10 "{m}Моя голова уже совсем не соображает, нужно ложиться спать...{/m}"
         "{i}спать до утра{/i}":
             Max_19 "Как же в этом доме хорошо..."
-            $ number_autosave += 1
-            # $ NewSaveName()
-            $ renpy.loadsave.force_autosave(True, True)
-            $ current_room = house[0]
-            $ status_sleep = True
             $ alarm_time = '08:00'
-            jump Waiting
+
+    $ spent_time = 360
+    $ number_autosave += 1
+    $ renpy.loadsave.force_autosave(True, True)
+    $ current_room = house[0]
+    $ status_sleep = True
+    jump Waiting
 
 
 label LittleEnergy:
@@ -84,6 +88,8 @@ label LittleEnergy:
             else:
                 $ renpy.show('Max sleep-night '+pose3_1)
                 $ renpy.show('FG Max sleep-night '+pose3_1)
+                call bedtime_thoughts
+
             Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
             # $ NewSaveName()
@@ -139,6 +145,9 @@ label Alarm:
             jump AfterWaiting
     $ renpy.show('Max sleep-night '+pose3_2)
     $ renpy.show('FG Max sleep-night '+pose3_2)
+
+    call bedtime_thoughts
+
     Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
     $ renpy.loadsave.force_autosave(True, True)
@@ -824,11 +833,22 @@ label InstallCam:
 label SearchSpider:
     scene BG char Max spider-search-00
     $ renpy.show('Max spider search-00'+mgg.dress)
-    $ _ch1 = Chance({0 : 1000, 1 : {0 : 400, 1 : 500, 2 : 700}[SpiderKill], 2 : {0 : 0, 1 : 150, 2 : 400}[SpiderKill], 3 : 50}[SpiderResp])
+    $ renpy.dynamic('ch')
+    $ ch = {
+        0 : 100,
+        1 : {
+            0 : 40,
+            1 : 50,
+            2 : 70}[SpiderKill],
+        2 : {
+            0 : 0,
+            1 : 15,
+            2 : 40}[SpiderKill],
+        3 : 5}[SpiderResp]
     menu:
         Max_00 "Так, нужно хорошенько рассмотреть траву..."
-        "{i}искать...{/i}" ('lucky', _ch1.ch):
-            if RandomChance(_ch1.ch):
+        "{i}искать...{/i}" ('lucky', ch):
+            if rand_result:
                 $ renpy.scene()
                 $ renpy.show('BG char Max spider-search-01'+mgg.dress)
                 Max_04 "Ага! Попался! Отлично..."
@@ -846,19 +866,20 @@ label SearchSpider:
 
 label HideSpider:
 
+    $ renpy.dynamic('ch')
     if '00:40' < tm < '01:00':
         Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
         jump Waiting
 
-    $ _ch1 = Chance({'00:00' <= tm <= '00:40' : 800, '23:00' <= tm <= '23:59' : 700, '20:00' <= tm <= '22:59' : 500, '01:00' <= tm <= '19:59' : 0,}[True])
+    $ ch = {'00:00' <= tm <= '00:40' : 80, '23:00' <= tm <= '23:59' : 70, '20:00' <= tm <= '22:59' : 50, '01:00' <= tm <= '19:59' : 0,}[True]
     menu:
         Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..."
-        "{i}Подложить сейчас{/i}" ('lucky', _ch1.ch):
+        "{i}Подложить сейчас{/i}" ('lucky', ch):
             scene BG char Alice spider
             Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
             $ SpiderKill = 0
             $ SpiderResp = 1
-            if RandomChance(_ch1.ch) and 'spider' not in NightOfFun:
+            if rand_result and 'spider' not in NightOfFun:
                 $ NightOfFun.append('spider')
             $ items['spider'].use()
             $ spent_time = 10
@@ -1060,3 +1081,16 @@ label return_part_loan:
         "{i}не сейчас{/i}":
             pass
     call screen Bank
+
+
+label bedtime_thoughts:
+    # Мысли Макса перед сном
+
+    if flags.lisa_sexed == 6:
+        # о том, как напакостить Эрику
+        Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
+        $ flags.lisa_sexed = 7
+        $ items['laxative'].unblock()
+        $ items['sedative'].unblock()
+
+    return

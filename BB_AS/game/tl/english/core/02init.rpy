@@ -594,3 +594,11 @@ translate english strings:
     old "Мам, я купил тебе одежду полегче!"
     new "Mom, I bought you some better clothes!"
 
+# TODO: Translation updated at 2021-09-14 23:26
+
+translate english strings:
+
+    # game/core/02init.rpy:127
+    old "Тебе помочь накрыть на стол?"
+    new ""
+

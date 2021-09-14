@@ -1,7 +1,7 @@
 
 label cam0_alice_sleep_night:
     if 'sleep_fun' not in cam_flag and 'sleep_no_fun' not in cam_flag:
-        $ cam_flag.append('sleep_fun' if all([alice.daily.massage==3, RandomChance(750), not alice.hourly.sleep, 'kira' in chars]) else 'sleep_no_fun')
+        $ cam_flag.append('sleep_fun' if all([alice.daily.massage==3, random_outcome(75), not alice.hourly.sleep, 'kira' in chars]) else 'sleep_no_fun')
 
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
     if not alice.sleepnaked:
@@ -63,7 +63,6 @@ label cam0_alice_sleep_night:
         # Эрик повторно дрочит на Алису
         $ cam_flag.append('eric_jerk')
         $ flags.eric_noticed = True
-        $ _ch1 = Chance(500)
         if alice.sleepnaked:
             # Алиса спит голой, Эрик в комнате
 
@@ -72,7 +71,7 @@ label cam0_alice_sleep_night:
             else:
                 menu:
                     Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
-                    "{i}Взять фотоаппарат и пойти к окну Алисы{/i}" ('lucky', _ch1.ch):
+                    "{i}Взять фотоаппарат и пойти к окну Алисы{/i}" ('lucky', 50):
                         jump jerk_photohant2
                     "{i}Да и хрен с ним, пусть дрочит{/i}":
                         pass
@@ -83,7 +82,7 @@ label cam0_alice_sleep_night:
             else:
                 menu:
                     Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
-                    "{i}Взять фотоаппарат и пойти на балкон{/i}" ('lucky', _ch1.ch):
+                    "{i}Взять фотоаппарат и пойти на балкон{/i}" ('lucky', 50):
                         jump jerk_photohant1
                     "{i}Да и хрен с ним, пусть дрочит{/i}":
                         pass
@@ -575,7 +574,7 @@ label cam0_alice_rest_evening:
 
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
         if GetWeekday(day) in [0, 2]:
-            $ cam_flag.append('blog_fun' if all([RandomChance(500), poss['blog'].st()>1, 'kira' in chars]) else 'blog_no_fun')
+            $ cam_flag.append('blog_fun' if all([random_outcome(50), poss['blog'].st()>1, 'kira' in chars]) else 'blog_no_fun')
         elif all([GetWeekday(day) == 6, poss['blog'].st()>1, 'kira' in chars]):
             $ cam_flag.append('blog_fun')
         else:

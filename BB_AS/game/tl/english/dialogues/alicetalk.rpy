@@ -11035,3 +11035,92 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:862
     old "{i}стянуть с неё трусики и продолжить массаж{/i}"
     new "{i}Take off her panties and continue the massage{/i}"
+
+# TODO: Translation updated at 2021-09-14 23:26
+
+# game/dialogues/alicetalk.rpy:5450
+translate english alice_help_carry_plates_170dcbe9:
+
+    # Alice_07 "На это я, на самом деле, и надеялась. Пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5452
+translate english alice_help_carry_plates_78889183:
+
+    # Alice_07 "Помочь?! Чего это ты, Макс, такой добрый? Хотя, пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
+    Alice_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5459
+translate english alice_help_carry_plates_9489751c:
+
+    # Max_09 "{m}Вот зачем таскать эти тарелки на второй этаж, когда у нас есть прямо здесь, в гостиной, прекрасный большой стол?!{/m}" nointeract
+    Max_09 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5469
+translate english alice_help_carry_plates_f1599bc0:
+
+    # Max_07 "{m}Блин! Теперь я хочу съесть не только своё, но и макароны Лизы. Уж слишком аппетитно они выглядят и пахнут...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5471
+translate english alice_help_carry_plates_c0d8ea5b:
+
+    # Max_07 "{m}Ну вот! Алиса себе самые большие котлеты положила... Надо будет хотя бы одной, да поменяться.{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5473
+translate english alice_help_carry_plates_3d1a9524:
+
+    # Max_07 "{m}А вот это не хорошо! У мамы в тарелке слишком много углеводов. Нужно приглядывать за её фигурой, поэтому отложу немного себе...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5480
+translate english alice_help_carry_plates_d89e30f0:
+
+    # Max_02 "{m}Ну что, Эрик... Удачно тебе посидеть на унитазе. Думаю, тебе будет не скучно...{/m}" nointeract
+    Max_02 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5488
+translate english alice_help_carry_plates_ddbe426e:
+
+    # Max_03 "{m}Надеюсь, сегодня Эрику никакие потрахушки не светят, благодаря этому средству. Если он сгорит со стыда, я только порадуюсь...{/m}" nointeract
+    Max_03 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5500
+translate english alice_help_carry_plates_008120f8:
+
+    # Alice_16 "Вот ты козлина, Макс!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:5501
+translate english alice_help_carry_plates_2edc33ad:
+
+    # Max_01 "Заодно и попку разомнёшь, а то за своим ноутбуком слишком много сидишь."
+    Max_01 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:5454
+    old "Ага, не вопрос. Сделаю."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:5454
+    old "Нет, лучше давай сама..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:5459
+    old "{i}отнести тарелки на веранду{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:5474
+    old "{i}приступить к ужину{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:5474
+    old "{i}подмешать Эрику в тарелку слабительное{/i}"
+    new ""
+
+    # game/dialogues/alicetalk.rpy:5474
+    old "{i}подмешать Эрику в тарелку средство от потенции{/i}"
+    new ""
+

@@ -1015,8 +1015,6 @@ label Lisa_HomeWork:
     $ lisa.daily.homework = 1
     $ punlisa.insert(0, [0, 0, 0, 0, 0])
     $ del punlisa[10:]
-    $ _ch3 = GetChance(mgg.social, 3, 900)
-    $ _ch2 = GetChance(mgg.social, 2, 900)
 
     # "Помочь с уроками?"
 
@@ -1037,11 +1035,9 @@ label Lisa_HomeWork:
         # на развилке с Эриком по Лизе выбрана война (у Лизы доп.курсы после уроков)
         menu:
             Lisa_01 "Нет, Макс, спасибо. Я теперь посещаю дополнительные курсы в школе, так что справлюсь сама."
-            "Лучше отдохни сегодня, а я всё сделаю за тебя?!" ('soc', _ch3.ch):
-                if not RandomChance(_ch3.ch):
+            "Лучше отдохни сегодня, а я всё сделаю за тебя?!" ('soc', mgg.social * 3, 90):
+                if not rand_result:
                     # убеждение провалилось
-                    $ Skill('social', 0.1)
-                    play sound failed
                     Lisa_00 "[failed!t]Нет, я должна сама сделать уроки. Да и к тому же я не слишком и устала. Но всё равно спасибо!"
                     Max_10 "Эх, ну как знаешь."
                     $ lisa.flags.help -= 1
@@ -1050,8 +1046,6 @@ label Lisa_HomeWork:
                     jump Waiting
 
                 # убеждение успешно
-                $ Skill('social', 0.2)
-                play sound succes
                 Lisa_02 "[succes!t]Знаешь... А ладно, делай. Я так устала на этих курсах, что не откажусь от того, чтобы ты сделал уроки за меня. Но смотри, я всё проверю..."
                 Max_01 "Да без проблем!"
                 jump .new_self
@@ -1091,10 +1085,9 @@ label Lisa_HomeWork:
         "Давай я всё сделаю сам! {i}(без ошибок){/i}" if poss['sg'].st() > 2:
             jump .self
         "Я всё сделаю сам на пятёрку, если ты сделаешь кое-что для меня..." if all([poss['sg'].st() not in [2, 4], lisa.dress > 'a', lisa.flags.pun > 0, lisa.flags.m_foot<4]):
-            $ _ch1 = GetChanceConvince(punlisa, 2)
             menu:
                 Lisa_09 "Чего ты хочешь, Макс?"
-                "Покажи грудь!" ('soc', _ch1.ch) if lisa.flags.m_foot<4:
+                "Покажи грудь!" ('soc', get_chance_intimidate(punlisa, 2)) if lisa.flags.m_foot<4:
                     jump .show_breast
         "А ножки тебе помассировать?" if all([lisa.flags.m_foot>3, lisa.stat.sh_breast>=5]):
             # если началась борьба за Лизу с Эриком, то переходим к новой схеме
@@ -1127,9 +1120,8 @@ label Lisa_HomeWork:
 
     label .show_breast:
         $ renpy.show("Max lessons-breast 01"+mgg.dress)
-        if RandomChance(_ch1.ch):  # убеждение успешно
+        if rand_result:  # убеждение успешно
             $ punlisa[0][0] = 4
-            $ Skill('social', 0.2)
             menu:
                 Lisa_10 "Ну Макс. Ты же мой брат..."
                 "Тебе напомнить как мама больно наказывает?":
@@ -1139,7 +1131,6 @@ label Lisa_HomeWork:
             $ lisa.stat.sh_breast += 1
             if not _in_replay:
                 $ poss['sg'].open(6)
-            play sound succes
             if lisa.GetMood()[0] < 3:
                 $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
                 Lisa_09 "[succes!t]Ладно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
@@ -1164,8 +1155,6 @@ label Lisa_HomeWork:
             $ spent_time = max((60 - int(tm[-2:])), 30)
             jump Waiting
         else:  # убеждение не удалось
-            $ Skill('social', 0.1)
-            play sound failed
             Lisa_12 "[failed!t]Знаешь что, Макс? Отвали! Я сама всё сделаю. Пусть и на двойку, но зато без тебя с твоими... извращёнными мыслями!"
             Max_07 "Как скажешь..."
             $ punlisa[0][0] = 2
@@ -1176,24 +1165,19 @@ label Lisa_HomeWork:
             jump Waiting
 
     label .make_bag:
-        $ _ch1 = GetChance(mgg.social, 4, 900)
         menu:
             Lisa_13 "Макс, мне кажется, что здесь должен быть другой ответ. Это же не так решается..."
             "Да, Лиза, ты права...":
                 Lisa_03 "Ну, вот видишь! Эх, какой же ты невнимательный, Макс. Но всё равно, спасибо, что помог. Сама я бы долго возилась..."
                 Max_01 "Не за что!"
                 $ AddRelMood('lisa', 5, 100, 3)
-            "Лиза, я знаю о чём говорю!" ('soc', _ch1.ch):
-                if RandomChance(_ch1.ch):
-                    $ Skill('social', 0.2)
-                    play sound succes
+            "Лиза, я знаю о чём говорю!" ('soc', mgg.social * 4, 90):
+                if rand_result:
                     Lisa_02 "[succes!t]Да? Ну ладно. Тебе виднее... Не буду проверять даже. Спасибо за помощь, Макс!"
                     $ punlisa[0][0] = 1
                     Max_01 "Не за что!"
                     $ AddRelMood('lisa', 5, 100, 3)
                 else:
-                    $ Skill('social', 0.1)
-                    play sound failed
                     Lisa_13 "[failed!t]Нет, Макс, ты не прав. Тут надо всё совсем не так решать. Спасибо за помощь, но я уже разобралась..."
                     Max_07 "Как знаешь..."
                     $ punlisa[0][0] = 3
@@ -1228,7 +1212,7 @@ label Lisa_HomeWork:
         jump Waiting
 
     label .first_foot_mass:
-        $ renpy.dynamic("foot", "ch")
+        $ renpy.dynamic("foot")
         if not _in_replay:
             $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = 1
         else:
@@ -1253,34 +1237,25 @@ label Lisa_HomeWork:
         scene BG char Lisa lessons-mass-03
         $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-03-"+pose3_1)
-        $ ch = GetChance(mgg.massage, 7)
         menu:
             Max_04 "{m}Какие у Лизы красивые ножки. А как классно к ним прикасаться...{/m}"   #спрайт где не видно трусиков (или левая, или правая нога)
-            "{i}продолжить{/i}" ('mass', ch.ch) if not _in_replay:
+            "{i}продолжить{/i}" ('mass', mgg.massage * 7):
                 pass
-            "{i}продолжить{/i}" if _in_replay:
-                pass
-        if RandomChance(ch.ch) or _in_replay:
+        if rand_result:
             # (Ей нравится!)
-            $ Skill('massage', 0.1)
             menu:
                 Lisa_02 "[lisa_good_mass!t]У тебя хорошо получается. Мне приятно..."
-                "{i}продолжить{/i}" ('mass', ch.ch) if not _in_replay:
-                    pass
-                "{i}продолжить{/i}" if _in_replay:
+                "{i}продолжить{/i}" ('mass', mgg.massage * 6):
                     pass
         else:
             # (Ей не нравится!)
-            $ Skill('massage', 0.05)
             menu:
                 Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..."
-                "{i}продолжить{/i}" ('mass', ch.ch) if not _in_replay:
+                "{i}продолжить{/i}" ('mass', mgg.massage * 6):
                     pass
-                "{i}продолжить{/i}" if _in_replay:
-                    pass
-        if RandomChance(ch.ch) or _in_replay:
+
+        if rand_result:
             # (Ей нравится!)
-            $ Skill('massage', 0.1)
             $ foot = {'03':'02', '04':'01'}[foot]
             scene BG char Lisa lessons-mass-01
             $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
@@ -1301,7 +1276,6 @@ label Lisa_HomeWork:
             Lisa_02 "Можно. И проверь, пожалуйста, всё ли я сделала правильно..."
         else:
             # (Ей не нравится!)
-            $ Skill('massage', 0.05)
             Lisa_09 "[lisa_bad_mass!t]Ай, всё... Прекращай, Макс! Щекотно же... Я не могу на домашнем задании сосредоточиться... Не так уж ты и хорош в этом деле."   #спрайты lessons-talk
             scene BG char Lisa lessons-help-00
             $ renpy.show("FG lessons-help-"+pose3_1)
@@ -1315,14 +1289,13 @@ label Lisa_HomeWork:
         Lisa_03 "Классно! Спасибо, что помогаешь."
         Max_01 "Да не за что."
         $ renpy.end_replay()
-        $ Skill('massage', 0.05)
         $ poss['sg'].open(7)
         $ lisa.flags.m_foot = 1
         $ spent_time = max((60 - int(tm[-2:])), 30)
         jump Waiting
 
     label .next_foot_mass:
-        $ renpy.dynamic("foot", "ch")
+        $ renpy.dynamic("foot")
         if lisa.flags.m_foot<4 or lisa.stat.sh_breast<5:
             Lisa_01 "Вот, ты увидел, что хотел, теперь я попробую сама сделать уроки, а ты поможешь мне расслабиться..."
             $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
@@ -1336,29 +1309,25 @@ label Lisa_HomeWork:
         scene BG char Lisa lessons-mass-03
         $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-03-"+pose3_1)
-        $ ch = GetChance(mgg.massage, 7)
         menu:
             Max_04 "{m}А Лизе нравится то, что я делаю. Она не особо признаётся в этом, но по ней видно. Мне нравятся эти стройные ножки...{/m}"   #спрайт где не видно трусиков (или левая, или правая нога)
-            "{i}продолжить{/i}" ('mass', ch.ch):
+            "{i}продолжить{/i}" ('mass', mgg.massage * 7):
                 pass
-        if RandomChance(ch.ch) or _in_replay:
+        if rand_result:
             # (Ей нравится!)
-            $ Skill('massage', 0.1)
             menu:
                 Lisa_05 "[lisa_good_mass!t]Твой массаж так хорошо расслабляет, даже уроки нескучно делать. Очень приятно..."
-                "{i}продолжить{/i}" ('mass', ch.ch):
+                "{i}продолжить{/i}" ('mass', mgg.massage * 6):
                     pass
         else:
             # (Ей не нравится!)
-            $ Skill('massage', 0.05)
             menu:
                 Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..."
-                "{i}продолжить{/i}" ('mass', ch.ch):
+                "{i}продолжить{/i}" ('mass', mgg.massage * 6):
                     pass
 
-        if RandomChance(ch.ch) or _in_replay:
+        if rand_result:
             # (Ей нравится!)
-            $ Skill('massage', 0.1)
             $ foot = {'03':'02', '04':'01'}[foot]
             scene BG char Lisa lessons-mass-01
             $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
@@ -1371,19 +1340,16 @@ label Lisa_HomeWork:
                 Max_02 "Так я же многозадачный!"
                 "{i}закончить массаж{/i}":
                     pass
-                "Я и плечи помассировать могу, если хочешь?" ('soc', _ch3.ch) if learned_hand_massage() and lisa.daily.massage>1:
+                "Я и плечи помассировать могу, если хочешь?" ('soc', mgg.social * 3, 90) if learned_hand_massage() and lisa.daily.massage>1:
                     if ((lisa.dcv.battle.stage in [1, 4, 5] and flags.lisa_sexed >= 0)
                             or (lisa.dcv.battle.stage == 2 and lisa.dcv.intrusion.lost < 6)):
-                        if not _in_replay and not RandomChance(_ch3.ch):
+                        if not rand_result:
                             # убеждение не удалось
-                            $ Skill('social', 0.1)
-                            play sound failed
                             Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну... Ещё раз спасибо, Макс! И за уроки, и за мои ножки."
                             Max_01 "Да не за что."
                             jump .end_new_mass
                         else:
                             # убеждение удалось
-                            $ Skill('social', 0.2)
                             jump .new_shoulders
                     else:
                         jump .shoulders
@@ -1394,7 +1360,6 @@ label Lisa_HomeWork:
             Lisa_01 "Давай, многозадачный, проверяй мои уроки... А массаж классный! Мне понравилось. Спасибо, Макс!"
         else:
             # (Ей не нравится!)
-            $ Skill('massage', 0.05)
             Lisa_09 "[lisa_bad_mass!t]Ай, Макс, прекращай! Щекотно же... Я не могу на домашнем задании сосредоточиться... Неужели нельзя нормально сделать массаж?"   #спрайты lessons-talk
             scene BG char Lisa lessons-help-00
             $ renpy.show("FG lessons-help-"+pose3_1)
@@ -1406,45 +1371,33 @@ label Lisa_HomeWork:
 
     label .shoulders:
         $ renpy.dynamic("foot")
-        if not _in_replay:
-            $ _ch10 = GetChance(mgg.massage, 10)
-            $ _ch7 = GetChance(mgg.massage, 7)
-        else:
+        if _in_replay:
             $ foot = renpy.random.choice(['02', '01'])
             scene BG char Lisa lessons-mass-01
             $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
             $ renpy.show("FG lessons-mass-01-"+pose3_1)
-            $ _ch3 = Chance(1000)
-            $ _ch10 = Chance(1000)
-            $ _ch7 = Chance(1000)
 
-        if not RandomChance(_ch3.ch):
+        if not rand_result:
             # убеждение не удалось
-            $ Skill('social', 0.1)
-            play sound failed
             Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну..."
             Max_04 "Тогда давай доделывай уроки. Тебе ещё много?"
             jump .end_shoulders1
         # убеждение удалось
-        $ Skill('social', 0.2)
-        play sound succes
         menu:
             Lisa_02 "[succes!t]Ну, можно. Мне бы это тоже не помешало."
-            "{i}начать массаж{/i}" ('mass', _ch10.ch):
+            "{i}начать массаж{/i}" ('mass', mgg.massage * 10):
                 pass
         #спрайт с массажем шеи и плеч
         scene BG char Lisa lessons-mass-05
         $ renpy.show("Lisa lessons-mass 05"+lisa.dress+mgg.dress)
         $ renpy.show("FG lessons-mass-05-"+pose3_1)
-        if not RandomChance(_ch10.ch):
+        if not rand_result:
             # Лизе не понравился массаж!
-            $ Skill('massage', 0.05)
             Lisa_09 "[lisa_bad_mass!t]Нет, Макс... Это больно. Давай не будем продолжать!"
             Max_08 "Извини. Видимо устал уже."
             jump .end_shoulders2
         # Лизе понравился массаж!
         if not _in_replay:
-            $ Skill('massage', 0.1)
             $ poss['sg'].open(10)
         Lisa_05 "[lisa_good_mass!t]Да... То, что мне и нужно! Как хорошо..."
         Max_03 "Сейчас я помассирую тебе шею... Теперь плечи... Чувствую, они уже так не напряжены."
@@ -1458,18 +1411,16 @@ label Lisa_HomeWork:
                 $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
                 Lisa_03 "Это было так приятно... Спасибо, Макс! И проверь, пожалуйста, всё ли я сделала правильно."
                 jump .random_answer
-            "{i}продолжить ниже{/i}" ('mass', _ch7.ch):
+            "{i}продолжить ниже{/i}" ('mass', mgg.massage * 7):
                 pass
         $ renpy.show("Lisa lessons-mass 06"+lisa.dress+mgg.dress)
-        if not RandomChance(_ch7.ch):
+        if not rand_result:
             # Лизе не понравился массаж!
-            $ Skill('massage', 0.05)
             Lisa_10 "[lisa_bad_mass!t]Ой, Макс! Это уже как-то... грубовато. Ты, видимо, уже устал. Давай на этом закончим."   #всё ещё спрайт с массажем шеи и плеч
             Max_10 "Хорошо. Пожалуй, ты права."
             jump .end_shoulders2
         # Лизе понравился массаж!
         if not _in_replay:
-            $ Skill('massage', 0.1)
             $ lisa.flags.m_shoulder += 1
         Lisa_04 "[lisa_good_mass!t]Ммм... Макс... Не очень хочется это говорить, но по-моему это уже не плечи..."   #спрайт с массажем ниже
         Max_02 "Уверена?"
@@ -1507,7 +1458,6 @@ label Lisa_HomeWork:
         Max_01 "Да не за что."
         $ renpy.end_replay()
 
-        $ Skill('massage', 0.05)
         if lisa.flags.m_foot>3 and not lisa.flags.handmass:
             Lisa_09 "Макс, а массаж рук ты сможешь сделать?"
             if learned_hand_massage():  # изучен хотя бы один урок по массажу рук
@@ -1546,7 +1496,6 @@ label Lisa_HomeWork:
 
     label .new_massage:
         $ renpy.dynamic("foot")
-        $ _ch2 = GetChance(mgg.social, 2, 900)
         menu:
             Lisa_02 "Дай-ка подумать... Да, давай! Я люблю, когда ты это делаешь!"
             "{i}начать массаж{/i}":
@@ -1579,23 +1528,18 @@ label Lisa_HomeWork:
                 Max_01 "Да не за что."
                 jump .end_new_mass
 
-            "Я и плечи помассировать могу, если хочешь?" ('soc', _ch2.ch):
-                if not _in_replay and not RandomChance(_ch2.ch):
+            "Я и плечи помассировать могу, если хочешь?" ('soc', mgg.social * 2, 90):
+                if not rand_result:
                     # убеждение не удалось
-                    $ Skill('social', 0.1)
-                    play sound failed
                     Lisa_01 "[failed!t]Нет, Макс. Думаю хватит. Мне и так уже очень тепло и хорошо! Ещё усну... Ещё раз спасибо, Макс! И за уроки, и за мои ножки."
                     Max_01 "Да не за что."
                     jump .end_new_mass
 
                 else:
                     # убеждение удалось
-                    $ Skill('social', 0.2)
                     jump .new_shoulders
 
     label .new_shoulders:
-        $ _ch4 = GetChance(mgg.massage, 3)
-        play sound succes
         menu:
             Lisa_02 "[succes!t]Ну, можно. Мне бы это тоже не помешало."
             "{i}начать массаж{/i}":
@@ -1642,12 +1586,10 @@ label Lisa_HomeWork:
                     $ poss['mom-tv'].open(7)
             menu:
                 Lisa_05 "Мне надо сказать \"нет\", но я не хочу, чтобы ты останавливался..."
-                "{i}массировать её грудь{/i}" ('mass', _ch4.ch):
+                "{i}массировать её грудь{/i}" ('mass', mgg.massage * 3):
                     pass
-            if not _in_replay and not RandomChance(_ch4.ch):
+            if not rand_result:
                 # Лизе не понравился массаж!
-                $ Skill('massage', 0.05)
-
                 $ renpy.show("Lisa lessons-kiss 03"+lisa.dress+mgg.dress)
 
                 Lisa_10 "[lisa_bad_mass!t]Ой, Макс! Это уже как-то... грубовато. Ты, видимо, уже устал. Давай на этом закончим."
@@ -1657,7 +1599,6 @@ label Lisa_HomeWork:
             #Лизе понравился массаж!
             if not _in_replay:
                 $ poss['sg'].open(11)
-            $ Skill('massage', 0.1)
 
             $ renpy.show("Lisa lessons-kiss 01"+lisa.dress+mgg.dress)
             $ lisa.flags.m_breast += 1
@@ -1698,29 +1639,24 @@ label liza_hand_mass:
         $ lisa.daily.massage = 1
         $ lisa.weekly.mass1 += 1
         $ spent_time += 10
-        $ _ch10 = GetChance(mgg.massage, 10)
         $ __mood = 50
         $ __rel = 0
     else:
         call lisa_phone_closer from _call_lisa_phone_closer
-        $ _ch10 = Chance(1000)
     Lisa_01 "Да. Спасибо, что не забыл..."
     menu:
         Max_01 "Тогда давай устраиваемся поудобнее и начинаем."
-        "{i}начать массаж{/i}" ('mass', _ch10.ch):
+        "{i}начать массаж{/i}" ('mass', mgg.massage * 10):
             pass
     #спрайт с правой рукой
     scene BG char Lisa phone-mass-01
     $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
     with Fade(0.4, 0, 0.3)
-    if RandomChance(_ch10.ch) or _in_replay:
+    if rand_result:
         # Лизе понравился массаж!
-        if not _in_replay:
-            $ Skill('massage', 0.1)
         Lisa_02 "[lisa_good_mass!t]Ммм, хорошо... Это мне нравится. Ты классный массажист."
     else:
         # Лизе не понравился массаж!
-        $ Skill('massage', 0.05)
         Lisa_09 "[lisa_bad_mass!t]Ой, Макс, нет! Как-то это неприятно... Давай лучше не будем. Может быть в другой раз?"
         Max_08 "Ладно, извини..."
         jump Waiting
@@ -1729,14 +1665,13 @@ label liza_hand_mass:
         $ spent_time += 10
     menu:
         Max_04 "Сейчас разомнём все пальчики и тебе будет легче писать."
-        "{i}продолжить{/i}" ('mass', _ch10.ch):
+        "{i}продолжить{/i}" ('mass', mgg.massage * 8):
             pass
     scene BG char Lisa phone-mass-01
     $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
     #спрайт с левой рукой
-    if RandomChance(_ch10.ch) or _in_replay:
+    if rand_result:
         # Лизе понравился массаж!
-        $ Skill('massage', 0.1)
         if not _in_replay and all(['kira' in chars, not lisa.dcv.seduce.stage, dcv.mw.stage>=7, dcv.mw.done, kira.dcv.feature.stage>2]):
             Lisa_01 "[lisa_good_mass!t]Макс, я тебя спросить хотела, а чему ты меня учить-то собирался? К чему такому взрослому ты меня будешь подготавливать, целоваться что ли?"
             Max_02 "Отличная идея! Давай с этого и начнём!"
@@ -1752,7 +1687,6 @@ label liza_hand_mass:
             Lisa_05 "[lisa_good_mass!t]Макс, ты так здорово это делаешь. Даже не хочется, чтобы это закончилось..."
     else:
         # Лизе не понравился массаж!
-        $ Skill('massage', 0.05)
         Lisa_10 "[lisa_bad_mass!t]Ой, а вот это уже не очень. Ты так хорошо начал, но дальше лучше не продолжать. Как-то больновато."
         Max_10 "Извини. В следующий раз я сделаю лучше."
         jump Waiting
@@ -1781,11 +1715,10 @@ label liza_hand_mass:
         Max_03 "Отлично!"
         scene BG char Lisa massage-kisses-02
         $ renpy.show('Lisa kisses massage 02'+lisa.dress+mgg.dress)
-        $ _kiss = GetChance(mgg.kissing, 15, 900)
         menu:
             Max_04 "{m}Это очень приятное окончание массажа... Такие сочные губки у моей сестрёнки! А язычок какой игривый...{/m}"
-            "{i}увлечь её поцелуем{/i}" ('kiss', _kiss.ch):
-                if RandomChance(_kiss.ch) or _in_replay:
+            "{i}увлечь её поцелуем{/i}" ('kiss', mgg.kissing * 15, 90):
+                if rand_result:
                     # удалось увлечь её
                     scene BG char Lisa massage-kisses-03
                     $ renpy.show('Lisa kisses massage 03'+lisa.dress+mgg.dress)
@@ -1798,7 +1731,6 @@ label liza_hand_mass:
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
                             $ renpy.end_replay()
                             $ lisa.stat.kiss += 1
-                            $ Skill('kissing', 0.2, 4.5)
                             $ __rel = 5
                             $ __mood += 100
                             $ add_lim('lisa.free', 0.1, 7)
@@ -1808,7 +1740,6 @@ label liza_hand_mass:
                     $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
                     Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
                     Max_10 "Ладно, в другой раз будет лучше..."
-                    $ Skill('kissing', 0.1, 4.0)
                     $ __mood -= 30
 
         $ lisa.flags.kiss_lesson += 1
@@ -1833,11 +1764,10 @@ label liza_hand_mass:
         Max_03 "Отлично!"
         scene BG char Lisa massage-kisses-02
         $ renpy.show('Lisa kisses massage 02'+lisa.dress+mgg.dress)
-        $ _kiss = GetChance(mgg.kissing, 15, 900)
         menu:
             Max_04 "{m}Целовать такие сочные губки моей младшей сестрёнки - это очень приятное окончание массажа! Её игривый язычок может свести с ума...{/m}"
-            "{i}увлечь её поцелуем{/i}" ('kiss', _kiss.ch):
-                if RandomChance(_kiss.ch):
+            "{i}увлечь её поцелуем{/i}" ('kiss', mgg.kissing * 12, 90):
+                if rand_result:
                     # удалось увлечь её
                     scene BG char Lisa massage-kisses-03
                     $ renpy.show('Lisa kisses massage 03'+lisa.dress+mgg.dress)
@@ -1851,7 +1781,6 @@ label liza_hand_mass:
                             $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
-                            $ Skill('kissing', 0.2, 5.0)
                             $ __rel = 5
                             $ __mood += 100
                             $ lisa.flags.kiss_lesson += 1
@@ -1862,7 +1791,6 @@ label liza_hand_mass:
                     $ renpy.show('Lisa kisses massage 01'+lisa.dress+mgg.dress)
                     Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
                     Max_10 "Ладно, в другой раз будет лучше..."
-                    $ Skill('kissing', 0.1, 4.0)
                     $ __mood -= 30
         $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     else:
@@ -2355,7 +2283,6 @@ label lisa_sorry_gifts:
         Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
         return
 
-    $ _ch1 = GetChance(mgg.social, 3, 900)
     $ lisa.sorry.owe = False
     $ txt = {
         0 : _("Правда? Ты всё-таки достал её для меня?! А какую?"),
@@ -2416,8 +2343,6 @@ label lisa_sorry_gifts:
         return
 
     label .persuasion_failed:
-        $ Skill('social', 0.1)
-        play sound failed
         Lisa_01 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
         Max_11 "Ну вот..."
         Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю."
@@ -2530,12 +2455,10 @@ label lisa_sorry_gifts:
             Max_01 "Однозначно случайно!"
             menu:
                 Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                "Однозначно надо обнять!" ('soc', _ch1.ch):
-                    if RandomChance(_ch1.ch):
-                        $ Skill('social', 0.2)
-                        play sound succes
+                "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                    if rand_result:
                         call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces
-                        Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
+                        Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   # спрайт с обнимашками
                         Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
                         call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby
                         Lisa_02 "Да, и на будущее, Макс, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю, то так легко ты уже не отделаешься! Ясно?!"   #спрайт вместе
@@ -2544,8 +2467,6 @@ label lisa_sorry_gifts:
                         Max_01 "Ну, хоть так. Это лучше, чем ничего."
                         $ AddRelMood('lisa', 0, 50)
                     else:
-                        $ Skill('social', 0.1)
-                        play sound failed
                         Lisa_09 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
                         Max_11 "Ну вот..."
                         Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю."
@@ -2579,11 +2500,9 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_1
-                            play sound succes
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
                             call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_1
@@ -2591,8 +2510,6 @@ label lisa_sorry_gifts:
                             Max_07 "Ясно... Я обязательно это учту!"
                             $ AddRelMood('lisa', 0, 50)
                         else:
-                            $ Skill('social', 0.1)
-                            play sound failed
                             Lisa_09 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
                             Max_11 "Ну вот..."
                             Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю. И спасти тебя сможет только моя любимая сладость!"
@@ -2604,18 +2521,14 @@ label lisa_sorry_gifts:
                 Max_07 "Значит - это засчитывается?"
                 menu:
                     Lisa_09 "Даже не знаю, Макс... Не очень-то ты и пытался порадовать меня. Подглядывал ещё за мной..."
-                    "Это было случайно... Просто так получается всё время!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Это было случайно... Просто так получается всё время!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             Lisa_10 "[succes!t]Ладно, считай ты прощён, мама ничего не узнает... Но лишь потому, что у меня нет никакого настроения с этим разбираться."
                             Max_00 "Спасибо, Лиза..."
                             Lisa_09 "Всё, Макс, я хочу побыть одна."
                             Max_10 "Понял."
                             $ lisa.flags.hugs_type = 2
                         else:
-                            $ Skill('social', 0.1)
-                            play sound failed
                             Lisa_12 "[failed!t]Знаешь, а вот не пройдёт это, Макс! Так что жди наказания от мамы..."
                             Max_08 "Но, Лиза, я же..."
                             Lisa_13 "Всё, Макс, я не хочу тебя слушать!"
@@ -2634,10 +2547,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_2
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
@@ -2664,10 +2575,8 @@ label lisa_sorry_gifts:
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 menu:
                     Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..."
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_3
                             Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
@@ -2689,10 +2598,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_4
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
@@ -2715,10 +2622,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_5
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
@@ -2741,10 +2646,8 @@ label lisa_sorry_gifts:
                 Max_01 "Однозначно случайно!"
                 menu:
                     Lisa_01 "Я вот думаю, если это так однозначно, то может мне стоит тебя даже обнять?"
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_6
                             Lisa_05 "[succes!t]Думаю, этому можно верить. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
@@ -2808,10 +2711,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_9
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -2835,10 +2736,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_11
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_1
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -2858,7 +2757,6 @@ label lisa_sorry_gifts:
                 if __give[-1:] == 'm':
                     Lisa_01 "Верится с трудом, конечно, что ты случайно увидел меня в душе! Но так и быть, маме я ничего не скажу..."   #если сладость маленькая
                 else:
-                    $ _ch1 = GetChance(mgg.social, 6, 900)
                     Lisa_02 "И раз это даже куда больше того, на что я надеялась, то и у душа никого подсматривающего за мной я не видела!"   #если сладость большая
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 Lisa_12 "А вот и нет! Не разобрались!"
@@ -2869,10 +2767,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_13
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 4, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_2
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -2888,8 +2784,6 @@ label lisa_sorry_gifts:
                                 Max_02 "Вот и правильно."
                                 $ AddRelMood('lisa', 10, 200, 3)
                         else:
-                            $ Skill('social', 0.1)
-                            play sound failed
                             Lisa_01 "[failed!t]Знаешь, а я передумала! А то вдруг ты и правда за мной подглядывал..."
                             Max_11 "Ну вот..."
                             Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз, если ты снова СЛУЧАЙНО окажешься около душа, когда я его принимаю."
@@ -2911,10 +2805,8 @@ label lisa_sorry_gifts:
                 Max_02 "Вот и отлично! Я рад, что мы с этим разобрались..."
                 menu:
                     Lisa_01 "А вот и нет! Не разобрались! Я вот думаю, может мне стоит тебя даже обнять? Но не уверена..."
-                    "Однозначно надо обнять!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Однозначно надо обнять!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.embraces from _call_lisa_sorry_gifts_embraces_12
                             Lisa_05 "[succes!t]Ладно, пожалуй, ты это заслужил. Иди сюда - дай я тебя обниму!"   #спрайт с обнимашками
                             Max_05 "{m}Класс! Лиза хочет обниматься... Кто бы мог подумать, что подглядывания за ней в душе обернутся ещё чем-то хорошим?{/m}"
@@ -2957,10 +2849,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_17
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_3
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -3003,10 +2893,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_20
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_4
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -3033,10 +2921,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_22
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_5
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -3063,10 +2949,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_24
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_6
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -3093,10 +2977,8 @@ label lisa_sorry_gifts:
                 call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_26
                 menu:
                     Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #спрайт вместе
-                    "Конечно стоит!" ('soc', _ch1.ch):
-                        if RandomChance(_ch1.ch):
-                            $ Skill('social', 0.2)
-                            play sound succes
+                    "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                        if rand_result:
                             call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_7
                             Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                             Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -3127,10 +3009,8 @@ label lisa_sorry_gifts:
                     call lisa_sorry_gifts.nearby from _call_lisa_sorry_gifts_nearby_28
                     menu:
                         Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"   #если сладость маленькая   #спрайт вместе
-                        "Конечно стоит!" ('soc', _ch1.ch):
-                            if RandomChance(_ch1.ch):
-                                $ Skill('social', 0.2)
-                                play sound succes
+                        "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                            if rand_result:
                                 call lisa_sorry_gifts.kiss from _call_lisa_sorry_gifts_kiss_8
                                 Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"   #спрайт с поцелуем
                                 Max_05 "{m}Вау! Мало того, что я решил вопрос с подглядыванием, так ещё и заработал нежный поцелуй от сестрёнки! Блаженно...{/m}"
@@ -3175,19 +3055,15 @@ label liza_secret_alisa:
         Lisa_00 "Ну, у неё теперь есть платье для ночных клубов. Думаю, что может во что-то вляпаться, если ты меня понимаешь..."
         Max_09 "Не совсем... Ты просто переживаешь или имеешь в виду что-то конкретное?"
 
-    $ _ch1 = GetChance(mgg.social, 1, 900)
-    $ _ch4 = GetChance(mgg.social, 4, 900)
     menu:
         Lisa_10 "Алиса просила меня об этом не рассказывать... Так что..."
-        "Лиза, мне можно рассказать!" ('soc', _ch1.ch) if GetRelMax('lisa')[0]<3:
+        "Лиза, мне можно рассказать!" ('soc', mgg.social,  90) if GetRelMax('lisa')[0]<3:
             pass
-        "Лиза, мне можно рассказать!" ('soc', _ch4.ch) if GetRelMax('lisa')[0]>2:
+        "Лиза, мне можно рассказать!" ('soc', mgg.social * 4, 90) if GetRelMax('lisa')[0]>2:
             pass
 
-    if not any([GetRelMax('lisa')[0]>3 and RandomChance(_ch4.ch), GetRelMax('lisa')[0]<4 and RandomChance(_ch1.ch)]):
+    if not rand_result:
         ## Лиза не поддалась на уговоры
-        $ Skill('social', 0.1)
-        play sound failed
         Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
         Max_00 "Верно..."
         $ alice.dcv.feature.set_lost(1)
@@ -3196,8 +3072,6 @@ label liza_secret_alisa:
         return
 
     ## Удалось убедить Лизу
-    $ Skill('social', 0.2)
-    play sound succes
     Lisa_00 "[succes!t]Ну ладно, расскажу... В общем, год назад Алиса тоже как-то пошла в ночной клуб..."
     Max_01 "Ого, любопытно..."
     Lisa_01 "Видимо, там она первый раз и попробовала алкоголь. Как рассказывала её лучшая подружка, Алиса выпила буквально один глоток шампанского, но её как подменили!"
@@ -3231,7 +3105,6 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
     Max_04 "Да пустяки... Мне нравится радовать свою младшую сестрёнку!"
     if __give=='ritter-m':
         #если сладость маленькая
-        $ _ch1 = GetChance(mgg.social, 3, 900)
 
         #спрайт с обнимашками
         if current_room == house[0]:
@@ -3249,10 +3122,8 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
             $ renpy.show("Lisa hugging sun 02"+lisa.dress+mgg.dress)
         menu:
             Lisa_02 "Мне нравится, что ты так мило балуешь меня сладостями... Может даже тебя стоит чмокнуть за это в щёчку?!"
-            "Конечно стоит!" ('soc', _ch1.ch):
-                if RandomChance(_ch1.ch):
-                    $ Skill('social', 0.2)
-                    play sound succes
+            "Конечно стоит!" ('soc', mgg.social * 3, 90):
+                if rand_result:
                     Lisa_05 "[succes!t]Так и быть, этот поцелуй ты заработал заслуженно!"
                     #спрайт с поцелуем
                     if current_room == house[0]:
@@ -3270,15 +3141,13 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
                     $ lisa.flags.hugs += 1
                     $ infl[lisa].add_m(12)
                 else:
-                    $ Skill('social', 0.1)
-                    play sound failed
                     Lisa_01 "[failed!t]Знаешь, а я передумала! Вот купил бы большую шоколадку, тогда бы и чмокнула..."
                     Max_11 "Ну вот..."
                     Lisa_02 "Не расстраивайся, Макс, может повезёт в следующий раз."
                     Max_01 "Ага."
         $ AddRelMood('lisa', 10, 100, 3)
     else:   #если сладость большая
-        #спрайт с суперобнимашками
+        # спрайт с суперобнимашками
         if current_room == house[0]:
             scene BG char Lisa hugging myroom-00
             $ renpy.show('Lisa hugging myroom '+('06' if lisa.flags.kiss_lesson >=9 else '04')+lisa.dress+mgg.dress)
@@ -3291,7 +3160,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
         else:
             Max_05 "{m}Вау! Вот это Лиза вскочила на меня! От такой приятной неожиданности и встать может... Особенно, когда она так крепко ко мне прижимается.{/m}"
         Lisa_05 "Мне нравится, что ты так мило балуешь меня сладостями... Я тебя в щёчку ещё чмокну! Ммм..."
-        #спрайт с поцелуем
+        # спрайт с поцелуем
         if current_room == house[0]:
             $ renpy.show('Lisa hugging myroom '+('05' if lisa.flags.kiss_lesson >=9 else '03')+lisa.dress+mgg.dress)
         elif current_room == house[6]:
@@ -3301,7 +3170,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
         else:
             Max_05 "{m}Ох... Поцелуи от моей младшей сестрёнки - это сказка! А уж как приятно, когда она прижимается ко мне...{/m}"
         Lisa_02 "Ну всё, хорошего понемногу..."
-        #спрайт вместе
+        # спрайт вместе
         if current_room == house[0]:
             $ renpy.show("Lisa hugging myroom 02"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
@@ -3319,7 +3188,6 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
 
 
 label lisa_ment_kiss1:
-    $ _ch2 = GetChance(mgg.social, 2, 900)
     # стартовая фраза "Ну что, Лиза, готова?"
     Lisa_01 "Готова к чему?"
     Max_01 "Как к чему? К уроку поцелуев!"
@@ -3363,23 +3231,19 @@ label lisa_ment_kiss1:
     else:
         menu:
             Lisa_09 "Может, в другой раз? Что-то я не в настроении сейчас..."
-            "Ну кто ещё тебя научит? А сейчас я готов тебе помочь!" ('soc', _ch2.ch):
-                if RandomChance(_ch2.ch):
-                    $ Skill('social', 0.2)
-                    play sound succes
+            "Ну кто ещё тебя научит? А сейчас я готов тебе помочь!" ('soc', mgg.social * 2, 90):
+                if rand_result:
                     Lisa_01 "[succes!t]Только не приставать. Только поцелуи. Договорились?"
                     Max_01 "Конечно!"
-                    $ _kiss = GetChance(mgg.kissing, 15, 900)
                     $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
                     menu:
                         Max_05 "{m}Это же надо, я целуюсь со своей младшей сестрёнкой! Кажется, мне бы любой сейчас позавидовал... К тому же, такая девочка!{/m}"
-                        "{i}Продемонстрировать своё мастерство{/i}" ('kiss', _kiss.ch):
-                            if RandomChance(_kiss.ch):
+                        "{i}Продемонстрировать своё мастерство{/i}" ('kiss', mgg.kissing * 15, 90):
+                            if rand_result:
                                 # удалось показать класс
                                 $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                                 Lisa_03 "[lisa_good_kiss!t]Ну всё, Макс, хорошего помаленьку. Было приятно, даже очень... Будем считать, что я чему-то даже научилась..."
                                 Max_03 "Рад, что помог... И мне тоже было приятно..."
-                                $ Skill('kissing', 0.2)
                                 $ AddRelMood('lisa', 5, 100, 4)
                                 $ lisa.flags.kiss_lesson += 1
                             else:
@@ -3387,13 +3251,10 @@ label lisa_ment_kiss1:
                                 $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                                 Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
                                 Max_10 "Ладно, в другой раз получится лучше..."
-                                $ Skill('kissing', 0.1)
                                 $ AddRelMood('lisa', 0, -30)
                 else:
-                    play sound failed
                     Lisa_00 "[failed!t]Не сейчас, Макс. Давай в другой раз..."
                     Max_07 "Хорошо..."
-                    $ Skill('social', 0.1)
     # включение отката
     $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     $ spent_time += 10
@@ -3401,7 +3262,6 @@ label lisa_ment_kiss1:
 
 
 label lisa_ment_kiss:
-    $ _ch2 = GetChance(mgg.social, 2, 900)
     # стартовая фоаза "Ну что, готова?"
     Lisa_01 "Не поняла... К чему я должна быть готова?"
     scene BG char Lisa kisses-01
@@ -3413,36 +3273,33 @@ label lisa_ment_kiss:
     elif lisa.flags.kiss_lesson < 3:
         menu:
             Lisa_09 "Опять ты со своими дурацкими идеями... Тебе заняться нечем?"
-            "Ну кто ещё тебя научит? А сейчас я готов тебе помочь!" ('soc', _ch2.ch):
-                if RandomChance(_ch2.ch):
-                    play sound succes
+            "Ну кто ещё тебя научит? А сейчас я готов тебе помочь!" ('soc', mgg.social * 2, 90):
+                if rand_result:
                     Lisa_01 "[succes!t]Только не приставать. Только поцелуи. Договорились?"
                     Max_01 "Конечно!"
-                    $ Skill('social', 0.2)
                     jump lisa_kiss_lesson
                 else:
-                    play sound failed
                     Lisa_00 "[failed!t]Не сейчас, Макс. Давай в другой раз..."
                     Max_07 "Хорошо..."
-                    $ Skill('social', 0.1)
                     # включение отката
                     $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
                     $ spent_time += 10
                     jump Waiting
+
     elif lisa.flags.kiss_lesson < 6:
         Lisa_02 "Ну давай. Почему бы и нет..."
         Max_03 "Отлично!"
         jump lisa_kiss_lesson
+
     elif lisa.flags.kiss_lesson >= 6 and not poss['seduction'].used(11):
         Lisa_00 "Слушай, Макс, а это всё, чему ты решил меня научить? Может быть, в твоём учебном плане есть ещё что-то? Ну там, скажем, немного теории или что-то ещё в плане практики?"
         Max_02 "Конечно! Сейчас будет \"расширенный\" урок поцелуев..."
         $ poss['seduction'].open(11)
-        $ _kiss = GetChance(mgg.kissing, 15, 900)
         $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
         menu:
             Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}"
-            "{i}нежно прикасаться к ней{/i}" ('kiss', _kiss.ch):
-                if RandomChance(_kiss.ch):
+            "{i}нежно прикасаться к ней{/i}" ('kiss', mgg.kissing * 12, 90):
+                if rand_result:
                     # удалось увлечь её
                     scene BG char Lisa kisses-02
                     $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
@@ -3455,7 +3312,6 @@ label lisa_ment_kiss:
                             Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
                             Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
                             Max_10 "Ладно, в другой раз будет лучше..."
-                            $ Skill('kissing', 0.1)
                             $ AddRelMood('lisa', 0, -30)
 
                         "{i}закончить урок{/i}":
@@ -3463,7 +3319,7 @@ label lisa_ment_kiss:
                             $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
-                            $ Skill('kissing', 0.2)
+                            $ Skill('kissing', 0.1)
                             $ AddRelMood('lisa', 5, 100, 4)
 
                 else:
@@ -3473,7 +3329,6 @@ label lisa_ment_kiss:
                     Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
                     Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
                     Max_10 "Ладно, в другой раз будет лучше..."
-                    $ Skill('kissing', 0.1)
                     $ AddRelMood('lisa', 0, -30)
 
 
@@ -3493,17 +3348,15 @@ label lisa_ment_kiss:
 
 
 label lisa_kiss_lesson:
-    $ _kiss = GetChance(mgg.kissing, 15, 900)
     $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
     menu:
         Max_05 "{m}Эти нежные губки такие сладкие... С огромным удовольствием целовал бы Лизу весь день!{/m}"
-        "{i}Продемонстрировать своё мастерство{/i}" ('kiss', _kiss.ch):
-            if RandomChance(_kiss.ch):
+        "{i}Продемонстрировать своё мастерство{/i}" ('kiss', mgg.kissing * 12, 90):
+            if rand_result:
                 # удалось показать класс
                 $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                 Lisa_03 "[lisa_good_kiss!t]Ну всё, Макс, хорошего помаленьку. Было приятно, даже очень... Будем считать, что я чему-то даже научилась..."
                 Max_03 "Рад, что помог... И мне тоже было приятно..."
-                $ Skill('kissing', 0.2, 5.5)
                 $ AddRelMood('lisa', 5, 100, 4)
                 $ lisa.flags.kiss_lesson += 1
                 $ add_lim('lisa.free', 0.1, 7)
@@ -3514,7 +3367,6 @@ label lisa_kiss_lesson:
                 $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                 Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
                 Max_10 "Ладно, в другой раз получится лучше..."
-                $ Skill('kissing', 0.1, 5.0)
                 $ AddRelMood('lisa', 0, -30)
     $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     $ spent_time += 10
@@ -3524,21 +3376,19 @@ label lisa_kiss_lesson:
 label lisa_advanced_kiss_lesson:
     if _in_replay:
         scene BG char Lisa kisses-01
-    $ _kiss = GetChance(mgg.kissing, 15, 900)
     $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
     menu:
         Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}"
-        "{i}нежно прикасаться к ней{/i}" ('kiss', _kiss.ch):
-            if RandomChance(_kiss.ch) or _in_replay:
+        "{i}нежно прикасаться к ней{/i}" ('kiss', mgg.kissing * 10, 90):
+            if rand_result:
                 # удалось увлечь её
                 $ spent_time += 10
                 scene BG char Lisa kisses-02
                 $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
-                $ _kiss = GetChance(mgg.kissing, 10, 900)
                 menu:
                     Max_05 "[lisa_good_kiss!t]{m}Классно... Её ножки такие гладкие, а попка очень упругая! И она явно не против того, чтобы я к ней так прикасался...{/m}"
-                    "{i}нежно прикасаться к её груди{/i}" ('kiss', _kiss.ch):
-                        if RandomChance(_kiss.ch) or _in_replay:
+                    "{i}нежно прикасаться к её груди{/i}" ('kiss', mgg.kissing * 8, 90):
+                        if rand_result:
                             $ spent_time += 10
                             $ renpy.show('Lisa kisses morning 02-02'+lisa.dress+mgg.dress)
                             menu:
@@ -3563,7 +3413,6 @@ label lisa_advanced_kiss_lesson:
                                 $ poss['seduction'].open(12)
                                 $ items['sex.ed'].unblock()
 
-                            $ Skill('kissing', 0.2, 6.5)
                             $ AddRelMood('lisa', 5, 100, 4)
                             jump .end
                         else:
@@ -3575,7 +3424,6 @@ label lisa_advanced_kiss_lesson:
                         Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                         Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
                         $ renpy.end_replay()
-                        $ Skill('kissing', 0.2, 6.0)
                         $ add_lim('lisa.free', 0.1, 7)
                         $ AddRelMood('lisa', 5, 100, 4)
                         jump .end
@@ -3589,7 +3437,6 @@ label lisa_advanced_kiss_lesson:
         Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
         Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
         Max_10 "Ладно, в другой раз будет лучше..."
-        $ Skill('kissing', 0.1, 6.0)
         $ AddRelMood('lisa', 0, -30)
 
     label .end:
@@ -4256,38 +4103,192 @@ label Lisa_wear_Tshirt:
     jump Waiting
 
 
-# label lisa_ask_book:
-    # # стартовая фраза "Ну, как тебе та книжка?"
-    # Lisa_02 "Ты про ту с забавными картинками? Интересная. Я и правда многое узнала. Думаю, что теперь и сама могу учить кого угодно..."
-    # Max_00 "Эй, книжка учителя не заменит!"
-    # Lisa_03 "Что, испугался, учитель?"
-    # Max_00 "Ну я столько в тебя вложил и какая-то книжка это всё отберёт?"
-    # Lisa_10 "А для чего ты это всё, как ты говоришь, вложил? С какой целью? Хочешь залезть ко мне под юбку?"
-    # Max_00 "Я хочу тебе помочь..."
-    # menu:
-    #     Lisa_03 "Ну да, ну да... Ладно, Макс. Спасибо ещё раз за книжку, было приятно поболтать. Но если честно, то я бы хотела почитать что-то другое, если ты меня понимаешь..."
-    #     "Детектив?":
-    #         pass
-    #     "Дамский роман?":
-    #         pass
-    #     "Фантастику?":
-    #         pass
-    # Lisa_02 "Макс, не тупи. Может быть, какие-то журналы... Я знаю, что такие существуют, но сама не представляю где их искать, да и как на меня посмотрят..."
-    # Max_00 "Ну, я могу в интернете заказать..."
-    # Lisa_01 "Супер! Вот и договорились... И Макс... Этого разговора не было. Ты меня понял?"
+label lisa_about_ae_sexed5:
+    # Диалог с Лизой о практике у Эрика
+    # в ближайший четверг, после окончания 4-х уроков Лизы у АиЭ по дрочке, когда решилась ходовка с кружевным боди
 
+    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(03a/03b)
+    scene BG talk-terrace-00
+    $ renpy.show('Max talk-terrace 02'+mgg.dress)
+    $ renpy.show('Lisa talk-terrace 01'+lisa.dress)
+    with Fade(0.4, 0, 0.3)
+    Lisa_00 "Макс, ты можешь ненадолго задержаться? Надо поговорить..."
+    Max_00 "Конечно, могу. О чём?"
+    Lisa_09 "Ну... О тех уроках сексуального воспитания, которые для меня устроили мама с Эриком..."
+    Max_07 "Что-то не так?"
 
-# label lisa_gift_porn_mag:
-    # # стартовая фраза "Я достал то, на что ты намекала..."
-    # Lisa_02 "И на что я намекала? Я что-то не помню уже..."
-    # Max_00 "Я говорю о порножурнале!"
-    # Lisa_00 "Ну так говори тише! Давай, что там за журнал у тебя?"
-    # Max_00 "Держи..."
-    # Lisa_10 "Макс, ты это серьёзно? Плейбой? Ты считаешь это порножурналом? Да тут же все одеты и толком ничего интересного... К тому же, девушки одни..."
-    # Max_00 "Блин, ну какой нашёл..."
-    # Lisa_09 "Эх, ладно... Забудь... Вот если бы только работал интернет как положено, я бы нагуглила себе всё, что захотела бы..."
-    # Max_00 "А если я обойду блокировку?"
-    # Lisa_03 "Тогда я буду тебе очень благодарна. Честно говоря, с тех пор как ты начал меня... учить, так сказать, я постоянно только об этом всём и думаю. Скажи, я озабоченная?"
-    # Max_00 "Ну, не знаю... Не больше, чем я..."
-    # Lisa_02 "У... Значит, очень! Ладно, спасибо за этот почти детский журнал, но если разберёшься с интернетом, хотя бы на моём телефоне, я буду рада."
-    # Max_00 "Посмотрю, что можно сделать..."
+    if infl[lisa].balance()[2] != 'm':
+        # влияние Эрика на Лизу больше или равно, чем у Макса
+
+        Lisa_01 "В общем, я хотела бы, чтобы по понедельникам, после ужина, ты теперь где-нибудь \"погулял\"... минимум полчасика."
+        Max_09 "Это ещё зачем?"
+
+        # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
+        $ renpy.show('Max talk-terrace 02'+mgg.dress)
+        $ renpy.show('Lisa talk-terrace 02'+lisa.dress)
+        Lisa_00 "А затем, что эти уроки продолжатся в нашей комнате с Эриком."
+        Max_08 "И что? Почему я должен из-за этого покидать свою комнату?"
+        Lisa_02 "Потому что ты там будешь лишним! Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
+        Max_07 "Помою, не вопрос... А почему эти уроки с Эриком будут проходить у нас в комнате, а не как раньше в маминой?"
+        Lisa_10 "Потому что мама не хочет учить меня большему, а я хочу..."
+        Max_09 "И Эрик, видимо, вызвался тебе помочь с этим, да?"
+
+        # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
+        $ renpy.show("Max talk-terrace 03"+mgg.dress)
+        $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
+        Lisa_09 "Ну да, он предложил и я согласилась. Я не хочу облажаться с мальчиками, когда придёт время..."
+        Max_11 "Так, а ко мне не думала с этим обратиться?"
+        if GetRelMax('eric')[0]>0:
+            # у Макса с Эриком дружба
+            menu:
+                Lisa_13 "Ну, Макс... Эрик ведь старше и знает, как и что во взрослом мире происходит..."
+                "Это да... Тогда, на здоровье, сестрёнка. Мешать не буду." if lisa.dcv.battle.stage in [1, 4]:      # (чистая дружба)
+                    Lisa_01 "Спасибо, Макс! Я рада, что ты меня понял..."
+                    Max_00 "Не за что."
+
+                    # max&eric-terrace-00 + ad-max-(00a/00b)
+                    hide Lisa
+                    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                    Max_09 "{m}Так, а вот это мне нужно обсудить с Эриком! Потому что я хочу видеть, чему он там её будет \"учить\"...{/m}"
+                "Ясно. А тебе не кажется, что это как минимум неправильно?" if lisa.dcv.battle.stage in [2, 5]:     # (хитрая дружба)
+                    Lisa_11 "Неправильно готовиться к взрослой жизни?"
+                    Max_15 "Нет, неправильно узнавать такое от Эрика! Неспроста же мама не хочет продолжать эти уроки. И я скажу тебе почему. Потому что это в конец перебор!"
+
+                    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(05a/05b)
+                    $ renpy.show('Max talk-terrace 02'+mgg.dress)
+                    $ renpy.show('Lisa talk-terrace 0'+lisa.dress)
+                    Lisa_12 "Ничего это не перебор! Мне это интересно и я хочу знать всё о взрослой жизни. А если будешь противиться, то Эрик сказал, чтобы я отправляла тебя к нему."
+                    Max_09 "{m}Вот же Эрик сволочь! Я прикидываюсь, что дружу с ним, чтобы у меня не было никаких проблем и вместе с тем можно было спокойно придумать, как от него избавиться... Но теперь, всё это под угрозой. Лучше прикидываться дальше и быстрее думать, что делать...{/m}"
+                    Lisa_00 "Макс, ты чего завис?"
+                    Max_10 "Занимайтесь, мешать не буду."
+                    Lisa_01 "Спасибо, Макс! Я рада, что ты меня понял..."
+                    Max_00 "Не за что."
+
+                    # max&eric-terrace-00 + ad-max-(00a/00b)
+                    hide Lisa
+                    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                    Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
+        else:
+            # у Макса с Эриком вражда
+            Lisa_13 "Ну, Макс... Эрик ведь старше и знает, как и что во взрослом мире происходит..."
+            Max_10 "Хм... И чему же такому он тебя собирается учить, да ещё и без маминого и моего присмотра?"
+            Lisa_10 "Нуу... Я думаю, мне нужно набраться опыта в том, что мне показывала мама. В школе ведь так же делают, теоретические знания закрепляют на практических занятиях."
+            Max_12 "Что?! Какие ещё, к чёрту, практические занятия?"
+
+            # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(05a/05b)
+            $ renpy.show('Max talk-terrace 02'+mgg.dress)
+            $ renpy.show('Lisa talk-terrace 0'+lisa.dress)
+            Lisa_13 "Обыкновенные, Макс! Если бы ты нормально учился в школе, то прекрасно бы это знал."
+            Max_09 "Да это я знаю прекрасно, но школа это одно, а то, что вы с Эриком удумали..."
+            Lisa_12 "Так, Макс... Эрик сказал, что если ты будешь противиться, то с ним и будешь разговаривать..."
+            Max_16 "Ладно, мы ещё с ним посмотрим, кто кого..."
+
+            # max&eric-terrace-00 + ad-max-(00a/00b)
+            hide Lisa
+            $ renpy.show("Max talk-terrace 00"+mgg.dress)
+            Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
+
+    else:
+        # влияние Эрика на Лизу меньше, чем у Макса
+
+        Lisa_10 "Да, я нахожусь в некоторых сомнениях и хотела с тобой посоветоваться..."
+        Max_01 "Конечно, Лиза. Я весь во внимании."
+
+        # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
+        $ renpy.show('Max talk-terrace 02'+mgg.dress)
+        $ renpy.show('Lisa talk-terrace 02'+lisa.dress)
+        Lisa_09 "Видишь ли... Даже не знаю, как тебе это лучше сказать... Эрик уговаривает меня проводить с ним занятия в нашей комнате... Ну... по тому, что они мне показывали..."
+        Max_08 "В смысле как? Почему в нашей комнате, а не у себя, как было до этого?"
+        if GetRelMax('eric')[0]>0:
+            # у Макса с Эриком дружба
+            menu:
+                Lisa_13 "Потому что мама не хочет учить меня большему, а Эрик предложил это делать без неё. И сказал, что будет лучше, если нам никто не будет мешать при этом."
+                "Это да... Тогда, на здоровье, сестрёнка. Занимайтесь." if lisa.dcv.battle.stage in [1, 4]:         # (чистая дружба)
+                    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
+                    $ renpy.show("Max talk-terrace 03"+mgg.dress)
+                    $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
+                    Lisa_00 "Думаешь, мне правда стоит согласиться?"
+                    Max_07 "Ну да, если тебе это интересно, то почему нет?"
+                    Lisa_09 "Конечно интересно. К тому же, кто ещё меня научит, если не взрослый опытный мужчина? Просто не знаю, насколько это правильно..."
+                    Max_01 "Ну, теоретические знания нужно закреплять на практике, потому что увидеть что-то или прочесть одно, а вот самому это сделать - уже другое."
+
+                    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(05a/05b)
+                    $ renpy.show('Max talk-terrace 02'+mgg.dress)
+                    $ renpy.show('Lisa talk-terrace 0'+lisa.dress)
+                    Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
+                    Max_04 "Хорошо, я найду чем заняться."
+                    Lisa_02 "Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
+                    Max_01 "Помою, не вопрос."
+                    Lisa_01 "Спасибо, Макс! Я рада, что решила посоветоваться с тобой..."
+                    Max_00 "Не за что."
+
+                    # max&eric-terrace-00 + ad-max-(00a/00b)
+                    hide Lisa
+                    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                    Max_09 "{m}Так, а вот это мне нужно обсудить с Эриком! Потому что я хочу видеть, чему он там её будет \"учить\"...{/m}"
+                "Ясно. И что, ты хочешь на это согласиться?" if lisa.dcv.battle.stage in [2, 5]:                    # (хитрая дружба)
+                    # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
+                    $ renpy.show("Max talk-terrace 03"+mgg.dress)
+                    $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
+                    Lisa_09 "Я вот не знаю. Поэтому и решила с тобой посоветоваться. Наверно, соглашусь... Мне это интересно. К тому же, кто ещё меня научит, если не взрослый опытный мужчина? Просто не знаю, насколько это правильно..."
+                    Max_09 "{m}Вот же Эрик сволочь! Я прикидываюсь, что дружу с ним, чтобы у меня не было никаких проблем и вместе с тем можно было спокойно придумать, как от него избавиться... Но теперь, всё это под угрозой. Лучше прикидываться дальше и быстрее думать, что делать...{/m}"
+                    Lisa_00 "Макс, ты чего завис?"
+                    Max_10 "Конечно это не правильно! Нет чтобы ко мне с этим обратиться... Я тоже могу многому научить!"
+                    Lisa_03 "О великий учитель... Сам-то с кем практикуешься, с собственной рукой перед компьютером?"
+                    Max_09 "Что за вздор! Я многое знаю и пробовал..."
+
+                    # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(05a/05b)
+                    $ renpy.show('Max talk-terrace 02'+mgg.dress)
+                    $ renpy.show('Lisa talk-terrace 0'+lisa.dress)
+                    Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
+                    Max_04 "Хорошо, я найду чем заняться."
+                    Lisa_02 "Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
+                    Max_01 "Помою, не вопрос."
+                    Lisa_01 "Спасибо, Макс! Я рада, что решила посоветоваться с тобой..."
+                    Max_00 "Не за что."
+        else:
+            # у Макса с Эриком вражда
+            Lisa_13 "Потому что мама не хочет учить меня большему, а Эрик предложил это делать без неё. И сказал, что будет лучше, если нам никто не будет мешать при этом."
+            Max_12 "Да вот ещё! Какие ещё, к чёрту, занятия наедине с Эриком?! И ты ещё сомневаешься?"
+            Lisa_10 "Я... Я не знаю, Макс... Мне всё это интересно, но... без мамы..."
+
+            # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
+            $ renpy.show("Max talk-terrace 03"+mgg.dress)
+            $ renpy.show("Lisa talk-terrace 02"+lisa.dress)
+            Max_16 "Да это даже с мамой полным бредом будет! Хрен ему, а не моя младшая сестрёнка. Никаких уроков с Эриком не будет! То, что он затевает - в конец гадко!"
+            Lisa_11 "Серьёзно? Ты правда так думаешь?"
+            Max_15 "Ну конечно серьёзно, в противном случае, он не стал бы делать это у мамы за спиной, а предложил бы это сделать в её присутствии."
+            Lisa_09 "Хм... Возможно ты прав..."
+
+            # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(05a/05b)
+            $ renpy.show('Max talk-terrace 02'+mgg.dress)
+            $ renpy.show('Lisa talk-terrace 0'+lisa.dress)
+            Max_09 "Конечно прав! Даже не думай соглашаться!"
+            Lisa_01 "Я так и сделаю... я не стану соглашаться на его предложение."
+            Max_05 "Правильное решение, Лиза! Молодец!"
+            Lisa_02 "Спасибо за совет, Макс! Ты настоящий старший брат!"
+            Max_07 "Всегда пожалуйста, сестрёнка! А с Эриком я разберусь..."
+
+            # max&eric-terrace-00 + ad-max-(00a/00b)
+            hide Lisa
+            $ renpy.show("Max talk-terrace 00"+mgg.dress)
+            Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
+
+    if flags.eric_photo2:
+        # компромат на Эрика собран (есть 2 снимка)
+        Max_07 "{m}Идти к маме с компроматом на Эрика рискованно. Она в слишком большой его власти. Поэтому нужно позаботиться о том, чтобы мои сёстры были со мной на одной стороне и поддержали меня перед мамой. А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
+    elif flags.eric_photo1:
+        # компромат на Эрика ещё в процессе сборки (есть 1 снимок)
+        Max_07 "{m}Мне нужно заснять Эрика в более компрометирующей обстановке, чем у меня сейчас есть. А так как мама находится в огромной власти Эрика, мне нужно позаботиться о том, чтобы мои сёстры были со мной на одной стороне и поддержали меня перед мамой. А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
+    else:
+        #если компромат на Эрика вообще не собирался (0 снимков)
+        Max_07 "{m}На Эрика срочно нужно достать компромат! Если он и делает что-то такое, то явно по ночам, когда никто не видит. Нужно последить за ним... А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
+
+    if infl[lisa].balance()[2] == 'm' and GetRelMax('eric')[0] < 0:
+        $ lisa.dcv.intrusion.stage = 4
+    else:
+        $ lisa.dcv.intrusion.stage = 3
+    $ lisa.dcv.intrusion.set_lost(7)
+    $ flags.lisa_sexed = 6
+    $ spent_time = 20
+    jump Waiting

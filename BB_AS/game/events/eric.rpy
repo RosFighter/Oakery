@@ -531,10 +531,9 @@ label eric_ann_fucking:
 
     $ eric.daily.sex = 1
 
-    $ _ch1 = GetChance(mgg.stealth, 3, 900)
     menu:
         Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит..."
-        "{i}заглянуть в окно{/i}" ('hide', _ch1.ch) if flags.voy_stage<0 or GetRelMax('eric')[0]<0:
+        "{i}заглянуть в окно{/i}" ('hide', mgg.stealth * 3, 90) if flags.voy_stage<0 or GetRelMax('eric')[0]<0:
             pass
         "{i}заглянуть в окно{/i}" if 0<=flags.voy_stage<4 and GetRelMax('eric')[0]>3:
             pass
@@ -572,8 +571,6 @@ label eric_ann_fucking:
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
         if flags.voy_stage in [0, 1]:
-            stop music
-            play sound noticed
             Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
             $ punreason[3] = 1
 
@@ -612,12 +609,9 @@ label eric_ann_fucking:
         stop music
         jump Waiting
 
-    if RandomChance(_ch1.ch) or flags.voy_stage > 6:
-        if flags.voy_stage<6:
-            $ Skill('hide', 0.1)
+    if rand_result or flags.voy_stage > 6:
         $ ann.dress_inf = '00'
         $ eric.daily.sex = 3
-        play sound undetect
         if fuck_scene == 1:
             Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
         elif fuck_scene == 2:
@@ -637,15 +631,10 @@ label eric_ann_fucking:
             $ renpy.show('FG ann&eric-voyeur-02')
         else:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
-        stop music
-        play sound noticed
         Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
-        $ Skill('hide', 0.05)
         $ punreason[3] = 1
         $ current_room = house[0]
         jump Waiting
-
-    $ Skill('hide', 0.1)
 
     menu:
         "{i}продолжить смотреть{/i}":
@@ -675,8 +664,6 @@ label eric_ann_fucking:
     $ eric.daily.sex = 4
 
     $ spent_time += 20
-    if flags.voy_stage<6:
-        $ Skill('hide', 0.1)
     $ current_room = house[0]
     stop music
     jump Waiting
@@ -876,21 +863,20 @@ label eric_ann_shower:
     label .start_peeping:
         $ Skill('hide', 0.03)
         $ __r1 = renpy.random.choice(['01', '02', '03'])
-        $ _ch1 = GetChance(mgg.stealth, 3, 900)
-        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         $ renpy.scene()
         $ renpy.show('Eric shower '+ __r1)
         $ renpy.show('FG shower 00'+mgg.dress)
         play music spying
         menu:
             Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..."
-            "{i}продолжить смотреть{/i}" ('hide', _ch1.ch):
+            "{i}продолжить смотреть{/i}" ('hide', mgg.stealth * 3, 90, 2):
                 jump .closer_peepeng
-            "{i}взглянуть со стороны{/i}" ('hide', _ch2.ch):
+            "{i}взглянуть со стороны{/i}" ('hide', mgg.stealth * 2, 90, 2):
                 jump .alt_peepeng
             "{i}уйти{/i}":
                 stop music
                 jump Waiting
+
     label .alt_peepeng:
         $ spent_time += 10
         if __r1 == '01':
@@ -899,15 +885,13 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['05', '06'])
         else:
             $ __r2 = renpy.random.choice(['04', '07'])
-        if not RandomChance(_ch2.ch) and flags.voy_stage<1:
+        if not rand_result and flags.voy_stage<1:
             jump .not_luck
-        $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Eric shower-alt '+str(__r2))
         show FG shower-water
-        play sound undetect
         if __r2 == '01':   # минет 1
             Max_10 "[undetect!t]Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..." nointeract
         elif __r2 == '02':   # минет 2
@@ -951,15 +935,13 @@ label eric_ann_shower:
             $ __r2 = renpy.random.choice(['04', '05'])
         else:
             $ __r2 = renpy.random.choice(['06', '07'])
-        if not RandomChance(_ch1.ch) and flags.voy_stage<1:
+        if not rand_result and flags.voy_stage<1:
             jump .not_luck
 
-        $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
         scene BG shower-closer
         $ renpy.show('Eric shower-closer '+__r2)
         show FG shower-closer
-        play sound undetect
         if __r1 == '01':
             Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
         elif __r1 == '02':
@@ -996,9 +978,6 @@ label eric_ann_shower:
         else:
             show Eric shower-closer seen02
         show FG shower-closer
-        $ Skill('hide', 0.01)
-        stop music
-        play sound noticed
         Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
         $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
         $ current_room = house[6]
@@ -1363,7 +1342,6 @@ label first_jerk_yard:
 label jerk_balkon:
     #если решил подглядеть за Анной или Алисой через окно (Эрик около окна Алисы)
     # eric-voyeur-alice-01
-    $ _ch1 = Chance(500)
     if not eric.stat.mast:
         jump first_jerk_balkon
 
@@ -1374,7 +1352,7 @@ label jerk_balkon:
         with Fade(0.4, 0, 0.3)
         menu:
             Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
-            "{i}сбегать за фотоаппаратом и пойти на балкон{/i}" ('lucky', _ch1.ch) if flags.eric_photo1 < 1:  #если снимка у окна нет
+            "{i}сбегать за фотоаппаратом и пойти на балкон{/i}" ('lucky', 50) if flags.eric_photo1 < 1:  #если снимка у окна нет
                 jump jerk_photohant1
             "{i}уйти{/i}":
                 jump Waiting
@@ -1387,7 +1365,7 @@ label jerk_balkon:
         with Fade(0.4, 0, 0.3)
         menu:
             Max_03 "Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!"
-            "{i}сбегать за фотоаппаратом и вернуться{/i}" ('lucky', _ch1.ch) if flags.eric_photo2 < 1:  #если снимка у окна нет
+            "{i}сбегать за фотоаппаратом и вернуться{/i}" ('lucky', 50) if flags.eric_photo2 < 1:  #если снимка у окна нет
                 jump jerk_photohant2
             "{i}уйти{/i}":
                 jump Waiting
@@ -1416,12 +1394,11 @@ label jerk_yard:
 
     scene Eric jerk off 00
     with Fade(0.4, 0, 0.3)
-    $ _ch1 = Chance(500)
     $ flags.eric_noticed = True
     $ eric.stat.mast += 1
     menu:
         Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!"
-        "{i}сбегать за фотоаппаратом и пойти на балкон{/i}" ('lucky', _ch1.ch) if flags.eric_photo1 < 1:  #если снимка у окна нет
+        "{i}сбегать за фотоаппаратом и пойти на балкон{/i}" ('lucky', 50) if flags.eric_photo1 < 1:  #если снимка у окна нет
             jump jerk_photohant1
 
         "{i}уйти{/i}":
@@ -1430,7 +1407,7 @@ label jerk_yard:
 
 label jerk_photohant1:
 
-    if RandomChance(500):
+    if rand_result:
         # (успел)
         # eric-voyeur-alice-01
         scene Eric jerk off 01
@@ -1470,7 +1447,7 @@ label jerk_photohant1:
 
 label jerk_photohant2:
     # (шанс/если заходил к голой Анне в комнату, то шанс успеть нулевой)
-    if RandomChance(500) and prenoted < 2:
+    if rand_result and prenoted < 2:
         # (успел)
         # Дальний план + eric-voyeur-alice-02 (без спрайта подглядывающего Макса) + photocamera
         scene BG char Alice bed-night-01
@@ -1499,4 +1476,87 @@ label jerk_photohant2:
                 $ flags.eric_jerk = False
 
     $ spent_time += 30
+    jump Waiting
+
+
+label eric_shat:
+    scene location house bathroom door-evening
+    if eric.daily.bath != 0:
+        return
+
+    $ eric.daily.bath = 1
+    Max_07 "{m}Должно быть не так Эрик хотел провести этот вечер... Только бы он наши белые стены не испачкал своими выбросами!{/m}"
+    return
+
+
+label eric_ann_resting:
+    scene location house annroom door-night
+    if eric.daily.blog > 0:
+        return
+
+    $ eric.daily.blog = 1   # используем, как индикатор подглядывания
+    menu:
+        Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}"
+        "{i}заглянуть в окно{/i}":
+            scene BG char Eric bed-01
+            $ renpy.show('Eric relax2 0'+str(renpy.random.randint(1, 2))+eric.dress)
+            menu:
+                Max_01 "{m}Что, Эрик, сегодня ты не такой активный, как обычно? С тобой рядом такая женщина, а у тебя голова чем-то другим забита...{/m}"
+                "{i}уйти{/i}":
+                    $ current_room = house[0]
+                    jump AfterWaiting
+
+        "{i}уйти{/i}":
+            $ current_room = house[0]
+            jump AfterWaiting
+    return
+
+
+
+label eric_sleep:
+    scene BG char Ann relax-evening-01
+    $ renpy.show('Eric sleep '+pose2_1+eric.dress)
+    if eric.hourly.sleep != 0:
+        return
+
+    $ eric.hourly.sleep = 1
+    Max_02 "{m}Думаю, мама по достоинству оценит то, что ты пришёл к нам в гости и завалился дрыхнуть. Ну что за люди невоспитанные пошли...{/m}"
+    return
+
+
+label eric_ann_try_fucking:
+    scene location house annroom door-night
+    if eric.daily.sex > 0:
+        return
+
+    $ eric.daily.sex = 1
+    menu:
+        Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}"
+        "{i}заглянуть в окно{/i}":
+            scene BG char Eric bed-01
+            Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}"
+            $ renpy.show('Eric nosex 0'+str(renpy.random.randint(1, 2)))
+            menu:
+
+                "{i}уйти{/i}":
+                    $ current_room = house[0]
+                    jump AfterWaiting
+
+        "{i}уйти{/i}":
+            $ current_room = house[0]
+            jump AfterWaiting
+
+    return
+
+##
+label lisa_eric_sex_ed_practice:
+    # "практика" с Эриком
+    if eric.daily.sweets:   # == 2
+        # Эрик под антистояком
+        pass
+    else:                   # == 0
+        # Эрик в "боевой готовности"
+        pass
+
+    $ spent_time = 30
     jump Waiting

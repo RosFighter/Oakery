@@ -920,7 +920,7 @@ init python:
 
         my_scope = {
                 'mgg'       : mg,
-                '_stockings' : RandomChance(500),
+                '_stockings' : random_outcome(50),
             }
         return my_scope
 

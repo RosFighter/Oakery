@@ -15,35 +15,28 @@ define gray   = "#808080"
 # define config.gl2 = True
 define dop = namedtuple('dop', 'day tm ctm ll ul ddop')
 
-define failed = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
-define succes = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
+default succes          = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
+default undetect        = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
+default succes_hide     = _("{color=#00FF00}{i}Получилось!{/i}{/color}\n")
+default restrain        = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
+default like            = _("{color=#00FF00}{i}Ей нравится!{/i}{/color}\n")
+default lucky           = _("{color=#00FF00}{i}Повезло!{/i}{/color}\n")
+default alice_good_mass = _("{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n")
+default lisa_good_mass  = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
+default lisa_good_kiss  = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
+default ann_good_mass   = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
 
-define undetect = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
-define spotted  = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
-define risky    = _("{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n")
-
-define alice_good_mass = _("{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n")
-define alice_bad_mass  = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
-
-define lisa_good_mass = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
-define lisa_bad_mass  = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
-
-define ann_good_mass = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
-define ann_bad_mass  = _("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")
-define succes_hide = _("{color=#00FF00}{i}Получилось!{/i}{/color}\n")
-define failed_hide  = _("{color=#E59400}{i}Не получилось!{/i}{/color}\n")
-
-define restrain = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
-define norestrain = _("{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n")
-
-define lisa_good_kiss = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
-define lisa_bad_kiss  = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
-
-define like = _("{color=#00FF00}{i}Ей нравится!{/i}{/color}\n")
-define dont_like = _("{color=#E59400}{i}Ей не нравится!{/i}{/color}\n")
-
-define lucky = _("{color=#00FF00}{i}Повезло!{/i}{/color}\n")
-define unlucky = _("{color=#E59400}{i}Не повезло!{/i}{/color}\n")
+define failed           = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
+define spotted          = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
+define risky            = _("{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n")
+define failed_hide      = _("{color=#E59400}{i}Не получилось!{/i}{/color}\n")
+define norestrain       = _("{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n")
+define dont_like        = _("{color=#E59400}{i}Ей не нравится!{/i}{/color}\n")
+define unlucky          = _("{color=#E59400}{i}Не повезло!{/i}{/color}\n")
+define alice_bad_mass   = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
+define lisa_bad_mass    = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
+define ann_bad_mass     = _("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")
+define lisa_bad_kiss    = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
 
 define config.has_autosave = False
 define config.has_quicksave = False
@@ -62,6 +55,7 @@ default number_save = 0
 default last_save_name = "(None)"
 
 define rl = create_random_list()
+default rand_result = 0
 
 # (для экрана сохранений андроид)
 default day = 1
@@ -154,6 +148,7 @@ define talks = {
     'a.privpunt'    : TalkTheme('alice', _("Отшлёпать тебя сейчас или..."), 'alice_about_private_punish', "all([not alice.flags.private, alice.dcv.private.stage==4, alice.dcv.private.lost>1])"),
     'a.privpun'     : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_0', "all([alice.plan_name in ['sun', 'smoke'], alice.flags.private, alice.dcv.private.stage==4, not alice.dcv.private.done, not alice.spanked])"),
     'a.privpunr'    : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_r', "all([alice.plan_name == 'sun', alice.dcv.private.stage==5, not alice.dcv.private.done, not alice.spanked])"),
+    'a.carry'       : TalkTheme('alice', _("Тебе помочь накрыть на стол?"), 'alice_help_carry_plates', "all([alice.plan_name == 'cooking', alice.dcv.battle.stage])"),
 
     'a.domine0'     : TalkTheme('alice', _("Я пришёл извиниться за то, что было утром. Я больше не буду."), 'alice_mistress_0', "all([not alice.dcv.mistress.stage, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),
     'a.domine1'     : TalkTheme('alice', _("Я снова подглядывал. Извини."), 'alice_mistress_1', "all([alice.dcv.mistress.stage == 1, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),

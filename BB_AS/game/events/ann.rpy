@@ -120,33 +120,29 @@ label ann_shower:
         $ Skill('hide', 0.03)
         $ __ran1 = renpy.random.randint(1, 4)
 
-        $ _ch1 = GetChance(mgg.stealth, 3, 900)
-        $ _ch2 = GetChance(mgg.stealth, 2, 900)
         scene image ('Ann shower 0'+str(__ran1))
         $ renpy.show('FG shower 00'+mgg.dress)
         play music spying
         menu:
             Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама...  Надеюсь, она меня не заметит..."
-            "{i}продолжить смотреть{/i}" ('hide', _ch1.ch):
+            "{i}продолжить смотреть{/i}" ('hide', mgg.stealth * 3, 90, 2):
                 jump .closer_peepeng
-            "{i}взглянуть со стороны{/i}" ('hide', _ch2.ch):
+            "{i}взглянуть со стороны{/i}" ('hide', mgg.stealth * 2, 90, 2):
                 jump .alt_peepeng
             "{i}уйти{/i}":
                 jump .end_peeping
 
     label .alt_peepeng:
-        if not RandomChance(_ch2.ch):
+        if rand_result < 2:
             jump .not_luck
         $ spent_time += 10
         $ ann.daily.shower = 1
-        $ Skill('hide', 0.2)
         $ ann.dress_inf = '00a'
         $ __ran1 = renpy.random.randint(1, 6)
         scene BG shower-alt
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Ann shower-alt 0'+str(__ran1))
         show FG shower-water
-        play sound undetect
         if __ran1 % 2 > 0:
             Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
         else:
@@ -155,15 +151,13 @@ label ann_shower:
 
     label .closer_peepeng:
         $ spent_time += 10
-        if RandomChance(_ch1.ch):
+        if rand_result > 1:
             $ ann.daily.shower = 1
-            $ Skill('hide', 0.2)
             $ ann.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(1, 6)
             scene BG shower-closer
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
-            play sound undetect
             if __ran1 % 2 > 0:
                 Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
             else:
@@ -173,26 +167,21 @@ label ann_shower:
             jump .not_luck
 
     label .not_luck:
-        if RandomChance(_ch1.ch):
+        if rand_result:
             $ ann.daily.shower = 2
-            $ Skill('hide', 0.1)
             $ ann.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(7, 8)
             scene BG shower-closer
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
-            play sound suspicion
             Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
             jump .end_peeping
         else:
             $ ann.daily.shower = 3
-            $ Skill('hide', 0.05)
             $ __ran1 = renpy.random.choice(['09', '10'])
             scene BG shower-closer
             $ renpy.show('Ann shower-closer '+__ran1)
             show FG shower-closer
-            stop music
-            play sound noticed
             menu:
                 Ann_15 "[spotted!t]Макс!!! Что ты здесь делаешь? А ну быстро отвернись!!!"
                 "{i}Отвернуться{/i}":
@@ -200,23 +189,18 @@ label ann_shower:
 
     label .serious_talk:
         $ spent_time += 10
-        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ punreason[2] = 1
         scene BG char Alice spider-bathroom-00
         $ renpy.show('Max spider-bathroom 03'+mgg.dress)
         show Ann shower 05
         menu:
             Ann_19 "Ты что, подглядываешь за мной? Тебе должно быть стыдно! Нас ждёт серьёзный разговор..."
-            "Я не подглядывал. Это случайность!" ('soc', _ch1.ch):
-                if RandomChance(_ch1.ch):
-                    $ Skill('social', 0.2)
-                    play sound succes
+            "Я не подглядывал. Это случайность!" ('soc', mgg.social * 3, 90):
+                if rand_result:
                     Ann_12 "[succes!t]Случайность, говоришь? Ну ладно, поверю. А теперь бегом отсюда!"
                     Max_04 "Ага, хорошо, мам!"
                     $ punreason[2] = 0
                 else:
-                    $ Skill('social', 0.1)
-                    play sound failed
                     Ann_16 "[failed!t]Случайно пробрался сюда, спрятался и глазеешь тут? Случайно?! А ну-ка марш отсюда! Перед завтраком поговорим!"
                     Max_10 "Хорошо..."
             "Мам, извини...":
@@ -360,15 +344,12 @@ label ann_dressed_work:
         $ renpy.show('Ann hugging morning-annroom '+__r1+'-1a'+mgg.dress)
         Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
         $ renpy.show('Ann hugging morning-annroom '+__r1+'-2a'+mgg.dress)
-        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ spent_time += 10
         menu:
             Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..."
-            "Ну мам! Этого было так мало, давай ещё..." ('soc', _ch1.ch) if not __open:
-                if RandomChance(_ch1.ch):
+            "Ну мам! Этого было так мало, давай ещё..." ('soc', mgg.social * 3, 90) if not __open:
+                if rand_result:
                     $ spent_time += 10
-                    $ Skill('social', 0.2)
-                    play sound succes
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-3a'+mgg.dress)
                     Max_06 "{m}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/m}"
@@ -382,7 +363,6 @@ label ann_dressed_work:
                         "Конечно, мам! Хорошего тебе дня...":
                             jump .goodday
                 else:
-                    $ Skill('social', 0.1)
                     $ AddRelMood('ann', 0, 170)
                     $ AttitudeChange('ann', 0.8)
                     jump .fail
@@ -518,15 +498,12 @@ label ann_dressed_shop:
         $ renpy.show('Ann hugging morning-annroom '+__r1+'-1b'+mgg.dress)
         Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
         $ renpy.show('Ann hugging morning-annroom '+__r1+'-2b'+mgg.dress)
-        $ _ch1 = GetChance(mgg.social, 3, 900)
         $ spent_time += 10
         menu:
             Ann_04 "Ну всё, мой дорогой, нам с девочками ещё нужно успеть пробежаться по магазинам сегодня..."
-            "Ну мам! Этого было так мало, давай ещё..." ('soc', _ch1.ch) if not __open:
-                if RandomChance(_ch1.ch):
+            "Ну мам! Этого было так мало, давай ещё..." ('soc', mgg.social * 3, 90) if not __open:
+                if rand_result:
                     $ spent_time += 10
-                    $ Skill('social', 0.2)
-                    play sound succes
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-3b'+mgg.dress)
                     Max_06 "{m}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/m}"
@@ -540,7 +517,6 @@ label ann_dressed_shop:
                         "Конечно, мам! Хорошего тебе дня...":
                             jump .goodday
                 else:
-                    $ Skill('social', 0.1)
                     $ AddRelMood('ann', 0, 170)
                     $ AttitudeChange('ann', 0.8)
                     jump .fail
@@ -716,14 +692,14 @@ label ann_bath:
         scene BG bath-00
         $ renpy.show('Ann bath-window 0'+str(__r1))
         show FG bath-00
-        $ Skill('hide', 0.03)
+        $ Skill('hide', 0.025)
         if __r1 == 1:
             menu:
                 Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..."
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show('Ann bath-window '+renpy.random.choice(['02', '03', '04']))
-                    $ Skill('hide', 0.03)
+                    $ Skill('hide', 0.025)
                     menu:
                         Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
                         "{i}уйти{/i}":
@@ -738,7 +714,7 @@ label ann_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Ann bath-window 05
-                    $ Skill('hide', 0.03)
+                    $ Skill('hide', 0.025)
                     menu:
                         Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
                         "{i}уйти{/i}":

@@ -13,7 +13,13 @@ label EricTalkStart:
         jump Waiting
 
     $ renpy.block_rollback()
-    Eric_01 "Чего хотел, Макс?" nointeract
+    if not eric.daily.sweets:
+        Eric_01 "Чего хотел, Макс?" nointeract
+    else:
+        Eric_13 "Макс, будь добр, отвали пока нафиг! Не до тебя сейчас..."
+        Max_02 "Ну, как скажешь."
+        jump AfterWaiting
+
     $ rez =  renpy.display_menu(dial)
 
     if rez != "exit":
@@ -87,7 +93,7 @@ label eric_voy_wtf:
 
 
 label lessons_from_Eric:
-    $ _stockings = RandomChance(500) # шанс, что Аня будет в чулках, 50%
+    $ _stockings = random_outcome(50) # шанс, что Аня будет в чулках, 50%
     if flags.voy_stage==4:
         $ poss['control'].open(4)
         play music eric

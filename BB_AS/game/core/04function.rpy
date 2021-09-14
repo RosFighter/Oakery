@@ -216,7 +216,7 @@ init python:
         return renpy.random.randint(0, 999) < chance
 
 
-    def Skill(skill, rise, limit=1000):
+    def Skill(skill, rise, limit=100):
         global mgg, notify_list
         if _in_replay:
             return
@@ -600,8 +600,8 @@ init python:
 
         for char in chars:
             prev_shed = chars[char].get_plan(prevday, prevtime)
-            cur_shed  = chars[char].get_plan()
-            if (prev_shed is None and cur_shed is not None) or (cur_shed is not None and prev_shed.name!=cur_shed.name): # начато новое действие, значит меняем одежду
+            # cur_shed  = chars[char].get_plan()
+            if (prev_shed is None and chars[char].plan_name) or (chars[char].plan_name is not None and prev_shed.name!=chars[char].plan_name): # начато новое действие, значит меняем одежду
 
                 # удалим флаг подсматривания за персонажем через камеры при смене текущего действия
                 for cur_act in cam_flag:
@@ -622,7 +622,7 @@ init python:
 
                 if char in ['ann', 'eric'] and 'ann_eric_scene' in globals():
                     ann_eric_scene = '' # обнулим сцену для камер, если она есть
-                dress, inf, clot = GetDressNps(char, cur_shed.name)
+                dress, inf, clot = GetDressNps(char, chars[char].plan_name)
                 if dress != '':
                     chars[char].dress = dress
                 if inf != '':
@@ -807,11 +807,11 @@ init python:
                 clot  = 'else'
 
         elif char=='eric':
-            if name in ['dinner', 'rest', 'tv2']:
+            if name in ['dinner', 'rest', 'tv2', 'shat', 'sleep', 'practice', 'sexed_lisa']:
                 dress = 'b' if day % 2 else 'a'
                 inf = '01a' if dress == 'a' else '01b'
                 clot = 'повседневка'
-            elif name in ['fuck', 'sleep']:
+            elif name in ['fuck', 'sleep2']:
                 inf = '00a'
             elif name == 'shower2':
                 inf = '00b'
@@ -1022,7 +1022,7 @@ init python:
             return 0  # Макс помогал правильно
 
         elif punlisa[1][0] == 1:
-            return 1000  # Макс сделал ошибку
+            return 100  # Макс сделал ошибку
 
         elif not lisa.dcv.punpause.done:
             return 0 # не прошёл откат рандомных наказаний
@@ -1036,26 +1036,26 @@ init python:
                     s += 1
 
             if s > 5:
-                return 1000
+                return 100
             else:
-                return 300
+                return 30
 
         else:  # Макс не помогал с домашкой накануне
             help_count = 0
-            grow = 50
-            mind = 250
+            grow = 5
+            mind = 25
 
             # если Макс просил об услуге неудачно, базовый шанс двойки 30% (сердитая Лиза менее внимательна, чем обычно)
-            pun_chance = 300.0 if punlisa[1][0] == 2 else 50.0
+            pun_chance = 30.0 if punlisa[1][0] == 2 else 5.0
 
             for d in range(1, len(punlisa)):
                 if punlisa[d][3]:
                     pun_chance -= mind
-                    mind = 250 # сбрасываем здравомыслие на исходную
+                    mind = 25 # сбрасываем здравомыслие на исходную
 
                 if punlisa[d][0] > 2:
-                    pun_chance -= 150  # Макс помог Лизе, шанс наказания уменьшается на 15%
-                    grow = 50
+                    pun_chance -= 15  # Макс помог Лизе, шанс наказания уменьшается на 15%
+                    grow = 5
                     if d < 7:
                         help_count += 1
                         if help_count > 1:  # если за неделю Макс помог дважды, шанс наказания мизерный
@@ -1067,7 +1067,7 @@ init python:
                 grow = grow * 1.15  # чем больше дней прошло со дня помощи Макса, тем выше шанс наказания
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше усердие Лизы
 
-        return clip(pun_chance, 0, 900)
+        return clip(pun_chance, 0, 90)
 
 
     def GetAlicePunChance():  # вероятность наказания Алисы
@@ -1075,7 +1075,7 @@ init python:
             return 0
 
         elif punalice[0][1]:   # Макс подставил Алису
-            return 1000
+            return 100
 
         elif not alice.dcv.punpause.done:
             return 0 # не прошёл откат рандомных наказаний
@@ -1083,11 +1083,11 @@ init python:
         else:
             finded = 0
             help_count = 0
-            grow = 50
-            mind = 250
+            grow = 5
+            mind = 25
 
             # если Макс просил об услуге неудачно, базовый шанс плохо спрятать сигареты 30% (сердитая Алиса менее внимательна, чем обычно)
-            pun_chance = 150.0 if punalice[0][0] == 2 else 50.0
+            pun_chance = 15.0 if punalice[0][0] == 2 else 5.0
 
             for d in range(1, len(punalice)):
                 if d < 6 and (punalice[d][3] or punalice[d][2]): # если Алису наказывали за последние 5 дней, шанс нахождения сигарет нулевой
@@ -1096,16 +1096,16 @@ init python:
                 if punalice[d][3]:   # Ализа понесла наказание
                     finded += 1
                     pun_chance -= mind  # шанс наказания снижается на уровень здравомыслия
-                    mind = 250          # сбрасываем здравомыслие на исходную
+                    mind = 25          # сбрасываем здравомыслие на исходную
 
                 elif punalice[d][2]:  # Макс пытался заступиться за Алису перед наказанием
                     finded += 1
                     pun_chance += grow // 3       # шанс невнимательности меньше
-                    mind = clip(mind+100, 0, 250) # плюс прирост здравомыслия
+                    mind = clip(mind+10, 0, 25) # плюс прирост здравомыслия
 
                 elif punalice[d][0] in [4,5,6,7,8, 10]: # Алиса выполнила требование Макса, шанс наказания уменьшается на 15%
-                    pun_chance -= 150
-                    grow = 50
+                    pun_chance -= 15
+                    grow = 5
                     if d < 7:
                         help_count += 1
                         if help_count > 1:  # если за неделю Макс дважды успешно шантажировал, шанс наказания мизерный
@@ -1119,7 +1119,7 @@ init python:
                 mind = mind * 0.85  # чем больше дней прошло с момента последнего наказания, тем меньше внимательна Алиса
         if finded:
             pun_chance /= finded*2
-        return clip(pun_chance, 0, 900)
+        return clip(pun_chance, 0, 90)
 
 
     def GetDisobedience():  # вероятность ослушания Алисы
@@ -1136,7 +1136,7 @@ init python:
                 chance += rise
                 rise *= 1.1
 
-        return clip(chance, 0, 1000)
+        return clip(chance, 0, 100)
 
 
     def ColumnSum(punchar, i, limit=50):  # сумму i-тых элементов списка списков
@@ -1186,11 +1186,11 @@ init python:
                     globals()[var] = limit
 
 
-    def exist_btn_image():      # проверяет есть ли хобращения для кнопки-персонажа
-        if persone_button1:
+    def exist_btn_image(persone_button):      # проверяет есть ли обращения для кнопки-персонажа
+        if persone_button:
             return any([
-                renpy.loadable(persone_button1.replace(' ', '/')+'.webp'),
-                renpy.loadable(persone_button1.replace(' ', '/')+'.png'),
+                renpy.loadable(persone_button.replace(' ', '/')+'.webp'),
+                renpy.loadable(persone_button.replace(' ', '/')+'.png'),
                 ])
         else:
             return False
@@ -1379,3 +1379,137 @@ init python:
                 return True
 
         return False
+
+
+    def random_outcome(value):
+        if _in_replay:
+            return True
+        random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+        return random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < value
+
+    def skill_outcome(skill, value, lim=100, d=1):
+        # результат применения навыка в меню выбора:
+        #    5 - 100% результат, повышение навка не требуется
+        #    1 - навык сработал успешно, прирост 0.1
+        #    0 - неудача в применении навыка, прирост 0.05
+        #    d - количество ступеней, если больше 1 плюсуется до первой неудачи (не больше 3 ступеней)
+        global mgg, notify_list, rand_result
+        if _in_replay:
+            rand_result = 3
+            return
+
+        if skill in ['mass', 'soc', 'hide', 'kiss', 'ero', 'train']:
+            skil_name = {'hide':'stealth', 'soc':'social', 'mass':'massage', 'ero':'ero_massage', 'kiss':'kissing', 'train':'training'}[skill]
+        else:
+            skil_name = skill
+
+        if lim < 100 and value > lim * 1.2:
+            rand_result = 5
+            hide_success_message()
+            return
+        elif lim < 100:
+            ch = {value <= 0 : 0, value >= lim : lim, 0 < value < lim: value}[True]
+        else:
+            ch = {value <= 0 : 0, value >= 100 : 100, 0 < value < 100: value}[True]
+
+        if ch == 100 and lim == 100:
+            hide_success_message()
+            rand_result = 5
+            return
+        else:
+            show_success_message()
+            random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+            rand_result = 1 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 0
+            if d > 1 and rand_result:
+                rand_result = 2 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 1
+            if d > 2 and rand_result > 1:
+                rand_result = 3 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 2
+
+        increase = rand_result * 0.1 if rand_result else 0.05
+        if skill in ['sex', 'kiss']:
+            increase * 2
+
+        if skill in ['stealth', 'hide']:
+            mgg.stealth += increase
+            notify_list.append(_("+ к навыку скрытности"))
+            if not rand_result:
+                renpy.music.stop()
+            if d > 1:
+                renpy.play('audio/' + ('undetect' if rand_result > 1 else 'suspicion' if rand_result else 'noticed')+ '.ogg')
+            else:
+                renpy.play('audio/' + ('undetect' if rand_result else 'noticed')+ '.ogg')
+        elif skill in ['social', 'soc']:
+            mgg.social += increase
+            notify_list.append(_("+ к навыку убеждения"))
+            renpy.play('audio/' + ('succes' if rand_result else 'failed')+ '.ogg')
+        elif skill in ['massage', 'mass']:
+            mgg.massage += increase
+            notify_list.append(_("+ к навыку массажа"))
+        elif skill in ['kissing', 'kiss']:
+            mgg.kissing += increase
+            notify_list.append(_("+ к навыку поцелуев"))
+        elif skill in ['ero_massage', 'ero']:
+            mgg.ero_massage += increase
+            notify_list.append(_("+ к навыку эротического массажа"))
+        elif skill in ['training', 'train']:
+            mgg.training += increase
+            notify_list.append(_("+ к тренированности"))
+        elif skill == 'cuni':
+            mgg.cuni += increase
+            notify_list.append(_("+ к навыку кунилингуса"))
+        elif skill == 'sex':
+            mgg.sex += increase
+            notify_list.append(_("+ к сексуальному опыту"))
+        elif skill == 'anal':
+            mgg.anal += mgg.anal
+            notify_list.append(_("+ к опыту анального секса"))
+
+    Skill_Outsome = renpy.curry(skill_outcome)  # преобразуем функцию в экшен
+
+    def get_skill_chance(value, limit=100):
+        x = int(round(value))
+        return 0 if x < 0 else (limit if x > limit else x)
+
+    def get_chance_intimidate(punlist, d=1):
+        ch = mgg.social * d
+        mind = 20
+        for d in punchar:
+            if d[3]:  # если сестра была наказана, убедить её проще
+                ch += mind
+            mind = mind * 0.70 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка
+        return clip(int(round(ch)), 0, 90)
+
+
+    def hide_success_message():
+        global succes, undetect, succes_hide, restrain, like, lucky
+        global alice_good_mass, lisa_good_mass, lisa_good_kiss, ann_good_mass
+
+        succes          = ''
+        undetect        = ''
+        succes_hide     = ''
+        restrain        = ''
+        like            = ''
+        lucky           = ''
+        alice_good_mass = ''
+        lisa_good_mass  = ''
+        lisa_good_kiss  = ''
+        ann_good_mass   = ''
+
+        return
+
+    def show_success_message():
+        global succes, undetect, succes_hide, restrain, like, lucky
+        global alice_good_mass, lisa_good_mass, lisa_good_kiss, ann_good_mass
+
+        succes          = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
+        undetect        = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
+        succes_hide     = _("{color=#00FF00}{i}Получилось!{/i}{/color}\n")
+        restrain        = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
+        like            = _("{color=#00FF00}{i}Ей нравится!{/i}{/color}\n")
+        lucky           = _("{color=#00FF00}{i}Повезло!{/i}{/color}\n")
+        alice_good_mass = _("{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n")
+        lisa_good_mass  = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
+        lisa_good_kiss  = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
+        ann_good_mass   = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
+
+        return

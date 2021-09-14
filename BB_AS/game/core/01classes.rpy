@@ -12,13 +12,13 @@ init python:
         return str(inputStr[0]) + '_' + inputStr[1]
 
 
-    def create_random_list(l=20):
+    def create_random_list(l=5):
         lst = range(l)
         renpy.random.shuffle(lst)
         return lst
 
 
-    def shuffle_lst(items):
+    def shuffle_menu_list(items):
         lst = []
         for i in rl:
             if i < len(items):
@@ -737,10 +737,14 @@ init python:
             if len(rez) > 1:
                 print("ошибочка-с...", rez)
             elif len(rez) == 0:
+                self.plan_name = None
                 return None
             else:
                 if d=='' and t=='':
-                    self.plan_name = rez[0].name
+                    if rez[0].name:
+                        self.plan_name = rez[0].name
+                    else:
+                        self.plan_name = None
                 return rez[0]
 
         # Возвращает список записей с текущим действием персонажа
@@ -1082,6 +1086,7 @@ init python:
         cur_series      = 0         # 1/2 часть фильма, просматриваемого с Лизой
         cur_movies      = []        # список (выбранный фильм, фильм Кошмаров, фильм Пятницы)
         mistres_pun     = False     # в качестве наказания за подглядывания теперь доминирует Алиса
+        trick           = False     # пакость Эрику использована в текущую неделю
 
         # счетчики
         breakfast       = 0         # завтраков
@@ -1115,6 +1120,7 @@ init python:
             self.cur_series         = 0
             self.cur_movies         = []
             self.mistres_pun        = False
+            self.trick              = False
 
             self.breakfast          = 0
             self.dinner             = 0
@@ -1443,6 +1449,8 @@ init python:
         Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
 
         Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])") # 'kira' in chars and
+
+        Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")    # в ближайший четверг, если закончились все уроки Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки

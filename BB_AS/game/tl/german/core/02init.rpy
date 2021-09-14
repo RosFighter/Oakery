@@ -594,3 +594,11 @@ translate german strings:
     old "Мам, я купил тебе одежду полегче!"
     new "Mom, ich habe dir ein paar dünnere Klamotten gekauft!"
 
+# TODO: Translation updated at 2021-09-14 23:25
+
+translate german strings:
+
+    # game/core/02init.rpy:127
+    old "Тебе помочь накрыть на стол?"
+    new ""
+

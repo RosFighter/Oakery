@@ -30,12 +30,10 @@ label olivia_lisa_tv:
         return
 
     $ olivia.daily.tv_sex = 1
-    $ renpy.dynamic('ch1')
-    $ ch1 = GetChance(mgg.stealth, 2, 900)
     menu:
         Max_07 "{m}Девчонки смотрят какой-то сериал, а я бы лучше на них посмотрел... Вот только обещал не мешать...{/m}"
-        "{i}подсмотреть{/i}" ('hide', ch1.ch):
-            if not RandomChance(ch1.ch):
+        "{i}подсмотреть{/i}" ('hide', mgg.stealth * 2, 90):
+            if not rand_result:
                 menu:
                     Max_10 "[risky!t]{m}Нет, слишком опасно подглядывать за ними! Они в любой момент могут меня заметить... И хуже от этого будет только мне!{/m}"
                     "{i}уйти{/i}":
@@ -59,7 +57,6 @@ label olivia_lisa_tv:
                 menu:
                     "{i}уйти{/i}":
                         pass
-                $ Skill('hide', 0.1)
                 jump .leave
 
         "{i}уйти{/i}":

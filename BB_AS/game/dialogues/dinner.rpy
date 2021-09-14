@@ -771,13 +771,13 @@ label dinner_ab_earn:
         Ann_04 "Вот придёшь и узнаешь... Давайте больше ешьте, а не разговаривайте."
         $ lisa.dcv.battle.stage = 5
         $ lisa.dcv.intrusion.enabled = True
-        $ lisa.dcv.intrusion.stage = 1
         $ poss['seduction'].open(22)
     else:
         # отсрочки уроков Лизы не было
         Ann_04 "Я была бы тебе сынок очень признательна, если бы так и было. А теперь, давайте больше ешьте, а не разговаривайте."
     Max_01 "Да, давайте."
 
+    $ lisa.dcv.intrusion.stage = 2
     jump after_dinner
 
 
@@ -834,7 +834,7 @@ label dinner_after_punishment:
     elif all([GetWeekday(day)==1, lisa.dcv.battle.stage in [1, 2, 3], not flags.add_training]):
         jump dinner_ab_lisa_ed
     elif all([GetWeekday(day)==0, lisa.dcv.intrusion.done, not flags.about_earn,
-            (lisa.dcv.battle.stage in [4, 6] and lisa.dcv.intrusion.stage==1 and flags.l_ab_sexed==1)
+            (lisa.dcv.battle.stage in [4, 6] and lisa.dcv.intrusion.stage==1 and flags.lisa_sexed==1)
                 or (lisa.dcv.battle.stage==2 and not lisa.dcv.intrusion.stage)]):
         jump dinner_ab_earn
     elif all([GetWeekday(day)==5, items['sexbody2'].have, alice.dcv.intrusion.stage<5, alice.dcv.intrusion.enabled]):

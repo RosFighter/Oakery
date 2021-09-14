@@ -268,7 +268,7 @@ label ann_talk_tv:
     jump Waiting
 
 label ann_tv_casual_0:
-    $ renpy.dynamic('mood')
+    $ renpy.dynamic('mood', 'ch')
 
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
     scene BG tv-watch-01
@@ -289,16 +289,16 @@ label ann_tv_casual_0:
     elif mgg.dress == 'b':
         if poss['mom-tv'].st() < 6:
             #(может спалиться 25%) с каждым последующим просмотром ТВ с Анной % будет увеличиваться на 25
-            $ ch = GetChance(25 + 25*ann.flags.incident)
+            $ ch = 25 + 25 * ann.flags.incident
             $ ann.flags.incident += 1
         else:
             # после того, как Анна заметит стояк - будет стабильно 40%
-            $ ch = GetChance(40)
+            $ ch = 40
 
         menu:
             Max_08 "{m}Вот чёрт! Зря я представлял, что там у мамы под полотенцем... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хотя, на мне майка... Может она и не заметит, но не факт.{/m}"
             "сидеть и надеяться на лучшее":
-                if RandomChance(ch.ch):
+                if random_outcome(ch):
                     if poss['mom-tv'].st() < 2:
                         $ poss['mom-tv'].open(2)
                 else:
@@ -320,11 +320,11 @@ label ann_tv_casual_0:
         #если Макс только в шортах
         if poss['mom-tv'].st() < 4:
             #(может спалиться 50%), с каждым последующим просмотром ТВ с Анной % будет увеличиваться на 25
-            $ ch = GetChance(50 + 25*ann.flags.incident)
+            $ ch = 50 + 25 * ann.flags.incident
             $ ann.flags.incident += 1
         else:
             # после того, как Анна заметит стояк - будет стабильно 70%
-            $ ch = GetChance(70)
+            $ ch = 70
 
         # tv-mass-05 + tv-ero-01-max-02b + tv-ero-01-ann-(04/05/06)
         scene BG tv-mass-05
@@ -334,7 +334,7 @@ label ann_tv_casual_0:
         menu:
             Max_08 "{m}Вот чёрт! Зря я представлял, что там у мамы под полотенцем... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли.{/m}"
             "сидеть и надеяться на лучшее":
-                if RandomChance(ch.ch):
+                if random_outcome(ch):
                     if poss['mom-tv'].st() < 2:
                         $ poss['mom-tv'].open(3)
                 else:
@@ -457,7 +457,7 @@ label ann_tv_casual_1:
     jump Waiting
 
 label ann_tv_casual_r:
-    $ renpy.dynamic('film', 'ch')
+    $ renpy.dynamic('film')
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
     scene BG tv-watch-01
     $ film = '0' + str(renpy.random.randint(1, 7))
@@ -503,11 +503,10 @@ label ann_tv_casual_r:
     $ renpy.show('tv serial '+film+'-02', at_list=[tv_screen,]) # tv_screen
     $ renpy.show('Max tv-watch ann-01'+mgg.dress)
     Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты можешь много достичь в этом деле!"
-    $ ch = GetChance(mgg.massage)
     menu:
         Max_02 "Очень надеюсь, что так и будет."
-        "{i}продолжать массаж{/i}" ('mass', ch.ch):
-            if RandomChance(ch.ch):
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage):
+            if rand_result:
                 # (Маме понравился массаж!)
                 # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
                 scene BG char Kira after-club-s08a-f
@@ -525,7 +524,6 @@ label ann_tv_casual_r:
                 $ ann.flags.m_shoulder += 1
                 $ ann.flags.handmass = True
                 $ AddRelMood('ann', 5, 30)
-                $ Skill('massage', 0.1)
             else:
                 #(Маме не понравился массаж!)
                 # tv-watch-01 + serial_(01/02/03/04/05/06/07)_03 + tv-watch-01-max&ann-(01a/01b)
@@ -535,7 +533,6 @@ label ann_tv_casual_r:
                 Ann_14 "[ann_bad_mass!t]Ой, Макс... Нет, теперь уже не так хорошо... Что-то даже мышцам немного больно стало. Давай в другой раз продолжим... Но всё равно, спасибо!"
                 Max_00 "Извини. Наверно, на сериал засмотрелся... Я пойду."
                 $ ann.flags.handmass = False
-                $ Skill('massage', 0.05)
 
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ cur_ratio = 0.5
@@ -992,13 +989,12 @@ label erofilm2_1:
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01
     scene BG char Kira after-club-s08a-f
     $ renpy.show('Max tv-ero 03-01'+mgg.dress)
-    $ renpy.dynamic('ch', 'pose')
-    $ ch = GetChance(mgg.massage)
+    $ renpy.dynamic('pose')
     menu:
         Max_05 "{m}Уххх... А у мамы ведь полотенце сползло... И она это ещё не заметила! Должно быть, мой массаж действительно её хорошо расслабил! Надо продолжать... Может оно тогда ещё больше спадёт...{/m}"
-        "{i}продолжать массаж{/i}" ('mass', ch.ch):
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage):
             pass
-    if RandomChance(ch.ch) or _in_replay:
+    if rand_result:
         # (Маме понравился массаж!)
         # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
         scene BG char Ann tv-ero-04
@@ -1031,7 +1027,6 @@ label erofilm2_1:
         $ ann.flags.m_shoulder += 1
         $ ann.flags.handmass = True
         $ AddRelMood('ann', 5, 30)
-        $ Skill('massage', 0.1)
     else:
         # (Маме не понравился массаж!)
         # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
@@ -1042,10 +1037,8 @@ label erofilm2_1:
             "{i}закончить массаж и попытаться скрыть стояк{/i}":
                 #(может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
                 $ ann.flags.handmass = False
-                $ Skill('massage', 0.05)
-                $ ch = GetChance(40 if mgg.dress == 'b' else 60)
 
-        if RandomChance(ch.ch):
+        if random_outcome(40 if mgg.dress == 'b' else 60):
             # (Повезло!)
             # tv-watch-01 + ero_mov_02_05 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
             scene BG tv-watch-01
@@ -1190,7 +1183,6 @@ label erofilm2_2:
     scene BG tv-mass-03
     $ renpy.show('Max tv-ero 01'+mgg.dress)
     $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
-    $ renpy.dynamic('ch')
     Ann_17 "Так, Макс... В этот раз представим, что я ничего не слышала, но за подобные мысли я и наказать могу. И даже представлять меня не вздумай в одном лишь фартуке!"
     menu:
         Max_08 "{m}Эх, мам... Уже поздно. И о таком зрелище я точно в ближайшее время не смогу забыть! Надеюсь, она не заметит, что у меня стоит...{/m}"
@@ -1237,7 +1229,6 @@ label erofilm2_2:
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01
     scene BG char Kira after-club-s08a-f
     $ renpy.show('Max tv-ero 03-01'+mgg.dress)
-    $ ch = GetChance(mgg.massage)
     menu:
         Max_05 "{m}У мамы снова полотенце сползает, а она не чувствует... Надо продолжать, раз ей так нравится массаж... Или лучше сказать?{/m}"
         "Мам, у тебя полотенце сползает...":
@@ -1250,14 +1241,13 @@ label erofilm2_2:
             menu:
                 Ann_04 "Давай-ка на сегодня прервёмся с массажем... и досмотрим фильм. Это не значит, что мне не понравилось! Ты молодец!"
                 "{i}закончить массаж и попытаться скрыть стояк{/i}":
-                    $ ch = GetChance(40 if mgg.dress == 'b' else 60)
-                    if RandomChance(ch.ch) or _in_replay:
+                    if random_outcome(40 if mgg.dress == 'b' else 60) or _in_replay:
                         jump .lucky
                     else:
                         jump .unlucky
 
-        "{i}продолжать массаж{/i}" ('mass', ch.ch):
-            if RandomChance(ch.ch) or _in_replay:
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage):
+            if rand_result:
                 # (Маме понравился массаж!)
                 # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
                 scene BG char Ann tv-ero-04
@@ -1304,13 +1294,11 @@ label erofilm2_2:
                     Max_03 "А где ты тут детей видишь?"
                     "{i}закончить массаж и попытаться скрыть стояк{/i}":
                         # (может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
-                        $ ch = GetChance(40 if mgg.dress == 'b' else 60)
                         $ ann.flags.m_shoulder += 1
                         $ ann.flags.handmass = True
                         $ AddRelMood('ann', 5, 30)
-                        $ Skill('massage', 0.1)
 
-                if RandomChance(ch.ch) or _in_replay:
+                if random_outcome(40 if mgg.dress == 'b' else 60) or _in_replay:
                     # (Повезло!)
                     # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
                     scene BG tv-mass-05
@@ -1347,11 +1335,9 @@ label erofilm2_2:
                 menu:
                     Ann_15 "[ann_bad_mass!t]Ой! Ничего себе! Макс, ты почему не сказал, что у меня полотенце сползло?! Чуть голой не осталась! Давай-ка прервёмся с массажем... и досмотрим фильм. А то ты уж слишком много отвлекаешься."
                     "{i}закончить массаж и попытаться скрыть стояк{/i}":
-                        # (может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
-                        $ ch = GetChance(40 if mgg.dress == 'b' else 60)
-                $ ann.flags.handmass = True
-                $ Skill('massage', 0.05)
-                if RandomChance(ch.ch):
+                        $ ann.flags.handmass = True
+                # (может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
+                if random_outcome(40 if mgg.dress == 'b' else 60):
                     jump .lucky
                 else:
                     jump .unlucky

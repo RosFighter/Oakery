@@ -1032,18 +1032,15 @@ label kira_about_ann_secret0:
 
 label kira_about_ann_secret2:
     # стартова фраза:  "Я хотел спросить про тот случай из детства мамы..."
-    $ renpy.dynamic('ch1')
-    $ ch = GetChance(mgg.social, 1, 900)
     menu:
         Kira_14 "Я так понимаю, мама тебе ничего не рассказала? Значит, не хочет, чтобы кто-то об этом что-то знал. А значит, я ничем не могу тебе помочь..."
-        "Но это моя семья!" ('soc', ch.ch):
-            if RandomChance(ch.ch):
+        "Но это моя семья!" ('soc', mgg.social, 90):
+            if rand_result:
                 jump story_from_childhood_ann
             else:
                 jump .failed
 
     label .failed:
-        $ Skill('social', 0.05)
         Kira_13 "Я это понимаю, Макс. Но это также и частная жизнь и история твоей мамы... Я не могу в обход её запрета раскрыть эту тайну."
         Max_11 "Ясно..."
         $ ann.dcv.feature.set_lost(1)
@@ -1055,12 +1052,10 @@ label kira_about_ann_secret2:
 
 label kira_about_ann_secret_r:
     # стартова фраза:  "Расскажи уже про тот случай из детства мамы..."
-    $ renpy.dynamic('ch1')
-    $ ch = GetChance(mgg.social, 1, 900)
     menu:
         Kira_14 "Макс, твоя мама не хочет, чтобы кто-то об этом что-то знал. На это есть причины и я не хочу подорвать её, и без того довольно шаткое, доверие ко мне..."
-        "Я же не из корыстных целей это спрашиваю! Я хочу ей помочь..." ('soc', ch.ch):
-            if RandomChance(ch.ch):
+        "Я же не из корыстных целей это спрашиваю! Я хочу ей помочь..." ('soc', mgg.social, 90):
+            if rand_result:
                 jump story_from_childhood_ann
             else:
                 jump kira_about_ann_secret2.failed
@@ -1128,7 +1123,6 @@ label story_from_childhood_ann:
     Max_01 "Да, спасибо за совет!"
     Max_09 "{m}Если я буду проводить с мамой больше времени вместе, то может быть и от Эрика будет не так уж сложно избавиться?! Главное, не вести себя по идиотски с ней... И про сестёр нужно не забывать, хорошие и доверительные отношения с ними тоже могут мне помочь. По-моему, мама каждое утро занимается йогой. Пожалуй, стоит попробовать составить ей компанию...{/m}"
 
-    $ Skill('social', 0.1)
     $ ann.dcv.feature.stage = 4
     $ kira.dcv.feature.set_lost(3)
     $ poss['aunt'].open(15)
@@ -1429,15 +1423,14 @@ label kira_photoset3:
     Max_08 "Смотря как! Но кто-то из вас уже во всю шалит с моими яичками... И это не ты, тётя Кира!"
     Kira_05 "Не переживай, я тоже не оставлю тебя без внимания... Наслаждайся!"
 
-    $ ch = GetChance(mgg.sex+5, 1, 900)
     # annroom-shot-03-03 + annroom-shot-03-kira&max-15
     scene BG char Kira annroom-shot 03 03
     show Kira annroom-shot 03 15
     menu:
         Max_19 "{m}Вот чёрт! Ничего себе! Вот она, мечта всех мужчин - оказаться во власти двух опытных женщин, которые будто соревнуются друг с другом в мастерстве оральных ласк! Ухх... Я просто улетаю...{/m}"
-        "{i}Наслаждаться{/i}" ('sex', ch.ch):
+        "{i}Наслаждаться{/i}" ('sex', mgg.sex+5, 90):
             pass
-    if RandomChance(ch.ch) or _in_replay:
+    if rand_result:
         # (Удалось сдержаться!)
         # annroom-shot-03-04 + annroom-shot-03-kira&max-16
         scene BG char Kira annroom-shot 03 04

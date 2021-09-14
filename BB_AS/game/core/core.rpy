@@ -5,7 +5,7 @@ label Waiting:
 
     $ renpy.end_replay()
     $ renpy.block_rollback()
-    $ renpy.dynamic('name_label')
+    $ renpy.dynamic('name_label', 'd2')
 
     # очистим стек возвратов
     $ renpy.set_return_stack([])
@@ -16,6 +16,8 @@ label Waiting:
     if alarm_time != '':
         $ d2 = TimeDifference(prevtime, alarm_time)
         if spent_time == 0 or d2 < spent_time:
+            $ spent_time = d2
+        if alarm_time < '08:00':
             $ spent_time = d2
 
     $ Wait(spent_time)
@@ -31,10 +33,13 @@ label Waiting:
 
     $ spent_time = TimeDifference(prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
-    # проверка одежды?
-    # $ checking_clothes()
+    python:
+        for char in chars:
+            chars[char].get_plan()
+
     # если прошло какое-то время, проверим необходимость смены одежды
     $ ChoiceClothes()
+    $ show_success_message()
 
     if prevtime[:2] != tm[:2]:
         # почасовой сброс
@@ -153,20 +158,22 @@ label eric_time_settings:
                 $ infl[alice].add_e(20)
 
     if prevtime < '22:30' <= tm:
-        if all([GetWeekday(day)==1, lisa.dcv.intrusion.stage, flags.lisa_sexed<4]):
+        if all([GetWeekday(day)==1, lisa.dcv.intrusion.stage, flags.lisa_sexed<5]):
             # если начаты секс.уроки Лизы у АиЭ
             $ infl[lisa].add_e(40)
 
             # отмечаем урок пройденным
             $ flags.lisa_sexed += 1
+            # 5 - не урок, а остающийся "за кадром" разговор Лизы с Эриком о апрактике
 
             # сбрасываем флаг диалога с Лизой
             $ flags.l_ab_sexed = False
 
     if prevtime < '01:55' <= tm:
         if 'sexbody2' in alice.gifts and check_is_home('eric'):
-            if ((GetWeekday(day)==4 and RandomChance(700))
-                or (GetWeekday(day)==5 and RandomChance(350))):
+            if not eric.daily.sweets and (
+                (GetWeekday(day)==4 and random_outcome(70))
+                or (GetWeekday(day)==5 and random_outcome(35))):
                 # Эрик дрочит на спящую Алису
                 $ flags.eric_jerk = True
             else:
@@ -204,8 +211,7 @@ label Midnight:
             pass
         elif alice.req.req and (not alice.req.result or alice.req.result[:3] != 'not'):
             # Если требование Макса было и это не деньги
-            $ chance = GetDisobedience()  # шанс, что Алиса не будет соблюдать договоренность
-            if RandomChance(chance):
+            if random_outcome(GetDisobedience()):   # шанс, что Алиса не будет соблюдать договоренность
                 $ alice.req.result = 'not_' + alice.req.req
                 $ alice.req.noted = False  # нарушение ещё не замечено Максом
             else:
@@ -377,7 +383,7 @@ label NewWeek:
         $ kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
 
     if 'kira' in chars and not shower_schedule:
-        call update_shower_schedule from _call_update_shower_schedule
+        $ shower_schedule = 1       # активируем новое расписаниеa
 
 
     if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0]):
@@ -391,6 +397,7 @@ label NewWeek:
             $ olivia.dcv.feature.stage = 3
 
     $ flags.noclub = False
+    $ flags.trick = False
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -418,7 +425,12 @@ label AfterWaiting:
 
     if any([prevday!=day, prevtime!=tm]):
         # если прошло какое-то время, проверим необходимость смены одежды
+        python:
+            for char in chars:
+                chars[char].get_plan()
+
         $ ChoiceClothes()
+        $ show_success_message()
 
         # если сменилось время суток - нужно остановить текущую музыку
         if any([prevtime < '06:00' <= tm,
@@ -560,6 +572,10 @@ label cam_after_waiting:
 
     if any([prevday!=day, prevtime!=tm]):
         # если прошло какое-то время, проверим необходимость смены одежды
+        python:
+            for char in chars:
+                chars[char].get_plan()
+
         $ ChoiceClothes()
 
     $ spent_time = 0
@@ -710,6 +726,38 @@ label after_buying:
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 
     return
+
+
+label hide_success_message:
+
+    $ succes          = ''
+    $ undetect        = ''
+    $ succes_hide     = ''
+    $ restrain        = ''
+    $ like            = ''
+    $ lucky           = ''
+    $ alice_good_mass = ''
+    $ lisa_good_mass  = ''
+    $ lisa_good_kiss  = ''
+    $ ann_good_mass   = ''
+
+    return
+
+label show_success_message:
+
+    $ succes          = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
+    $ undetect        = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
+    $ succes_hide     = _("{color=#00FF00}{i}Получилось!{/i}{/color}\n")
+    $ restrain        = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
+    $ like            = _("{color=#00FF00}{i}Ей нравится!{/i}{/color}\n")
+    $ lucky           = _("{color=#00FF00}{i}Повезло!{/i}{/color}\n")
+    $ alice_good_mass = _("{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n")
+    $ lisa_good_mass  = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
+    $ lisa_good_kiss  = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
+    $ ann_good_mass   = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
+
+    return
+
 
 
 label after_load:

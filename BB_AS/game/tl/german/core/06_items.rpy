@@ -282,3 +282,23 @@ translate german strings:
     old "Стек освежит и разнообразит ваши отношения. Шлепок на конце девайса воспитает дерзкого и непослушного партнера. Секс-игрушка откроет просторы истинного БДСМ."
     new "Die Reitgerte wird Ihre Beziehung auffrischen und abwechslungsreich gestalten. Der Einsatz des Geräts sorgt dafür, dass ein trotziger und frecher Partner den Hintern versohlt bekommt. Ein Sexspielzeug, das das Reich des echten BDSM eröffnet."
 
+# TODO: Translation updated at 2021-09-14 23:25
+
+translate german strings:
+
+    # game/core/06_items.rpy:2
+    old "БЫСТРОДЕЙСТВУЮЩЕЕ СЛАБИТЕЛЬНОЕ"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Эффективное слабительное средство. Эффект не заставит себя ждать. Деликатное решение деликатной проблемы."
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "УСПОКОИТЕЛЬНОЕ СРЕДСТВО"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Отлично подойдёт тем, кто не хочет перевозбуждаться. Только спокойствие и безмятежность. Перед применением следует обязательно проконсультироваться с врачом для определения нужной дозировки."
+    new ""
+

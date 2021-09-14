@@ -944,14 +944,26 @@ screen room_navigation():
         $ public += cam.public
     $ public = int(public)
 
-    if persone_button1 and exist_btn_image():
-        imagebutton idle persone_button1:
-            focus_mask True
-            if have_dialog():
-                mouse 'talk'
-                action Jump('StartDialog')
-            else:
-                action NullAction()
+    if type(persone_button1) == list:
+        if persone_button1[0] and exist_btn_image(persone_button1[0]):
+            imagebutton idle persone_button1[0]:
+                if persone_button1[1] and exist_btn_image(persone_button1[1]):
+                    foreground persone_button1[1]
+                focus_mask True
+                if have_dialog():
+                    mouse 'talk'
+                    action Jump('StartDialog')
+                else:
+                    action NullAction()
+    else:
+        if persone_button1 and exist_btn_image(persone_button1):
+            imagebutton idle persone_button1:
+                focus_mask True
+                if have_dialog():
+                    mouse 'talk'
+                    action Jump('StartDialog')
+                else:
+                    action NullAction()
 
     $ wait = 60 - int(tm[-2:])
     key 'K_SPACE' action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')]

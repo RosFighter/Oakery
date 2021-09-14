@@ -345,4 +345,4 @@ translate english strings:
     # game/core/screens.rpy:1853
     old "[view_cam[1].public]"
     new "[view_cam[1].public]"
-
+    

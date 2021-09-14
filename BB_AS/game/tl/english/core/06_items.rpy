@@ -282,3 +282,23 @@ translate english strings:
     old "Стек освежит и разнообразит ваши отношения. Шлепок на конце девайса воспитает дерзкого и непослушного партнера. Секс-игрушка откроет просторы истинного БДСМ."
     new "The stack will refresh and diversify your relationship. The spanking on the end of the device will bring up a defiant and naughty partner. The sex toy will open up the expanse of true BDSM."
 
+# TODO: Translation updated at 2021-09-14 23:26
+
+translate english strings:
+
+    # game/core/06_items.rpy:2
+    old "БЫСТРОДЕЙСТВУЮЩЕЕ СЛАБИТЕЛЬНОЕ"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Эффективное слабительное средство. Эффект не заставит себя ждать. Деликатное решение деликатной проблемы."
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "УСПОКОИТЕЛЬНОЕ СРЕДСТВО"
+    new ""
+
+    # game/core/06_items.rpy:2
+    old "Отлично подойдёт тем, кто не хочет перевозбуждаться. Только спокойствие и безмятежность. Перед применением следует обязательно проконсультироваться с врачом для определения нужной дозировки."
+    new ""
+

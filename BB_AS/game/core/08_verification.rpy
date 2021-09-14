@@ -170,6 +170,7 @@ init python:
             return False
 
 
+    # возвращает стадии подглядывания в душе за Алисой
     def get_alice_shower_peeping_stage():
 
         if 0 < len(alice.sorry.give) < 4 or (not poss['risk'].used(0) and mgg.stealth > 20):
@@ -182,3 +183,32 @@ init python:
             return 2
 
         return -1
+
+
+    # можно ли подмешивать слабительное Эрику
+    def can_use_laxative():
+
+        if 'eric' not in chars:
+            return False
+
+        return all([
+            flags.lisa_sexed > 6,
+            lisa.dcv.intrusion.stage > 2,
+            eric.get_plan(day, '19:00').name == 'dinner',
+            items['laxative'].have,
+            not flags.trick,
+            ])
+
+
+    # можно ли подмешивать Эрику антистояк
+    def can_use_sedative():
+        if 'eric' not in chars:
+            return False
+
+            return all([
+            flags.lisa_sexed > 6,
+            lisa.dcv.intrusion.stage > 2,
+            eric.get_plan(day, '19:00').name == 'dinner',
+            items['sedative'].have,
+            not flags.trick,
+            ])
