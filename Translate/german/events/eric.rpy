@@ -1951,3 +1951,42 @@ translate german strings:
     # game/events/eric.rpy:1438
     old "{i}сфотографировать его{/i}"
     new "{i}fotografiere ihn{/i}"
+
+# TODO: Translation updated at 2021-09-14 23:25
+
+# game/events/eric.rpy:1488
+translate german eric_shat_684d01d0:
+
+    # Max_07 "{m}Должно быть не так Эрик хотел провести этот вечер... Только бы он наши белые стены не испачкал своими выбросами!{/m}"
+    Max_07 ""
+
+# game/events/eric.rpy:1498
+translate german eric_ann_resting_ad8c84cf:
+
+    # Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:1503
+translate german eric_ann_resting_d879c878:
+
+    # Max_01 "{m}Что, Эрик, сегодня ты не такой активный, как обычно? С тобой рядом такая женщина, а у тебя голова чем-то другим забита...{/m}" nointeract
+    Max_01 "" nointeract
+
+# game/events/eric.rpy:1523
+translate german eric_sleep_9fec01f6:
+
+    # Max_02 "{m}Думаю, мама по достоинству оценит то, что ты пришёл к нам в гости и завалился дрыхнуть. Ну что за люди невоспитанные пошли...{/m}"
+    Max_02 ""
+
+# game/events/eric.rpy:1533
+translate german eric_ann_try_fucking_ad8c84cf:
+
+    # Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:1537
+translate german eric_ann_try_fucking_122a2fc3:
+
+    # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}"
+    Max_02 ""
+

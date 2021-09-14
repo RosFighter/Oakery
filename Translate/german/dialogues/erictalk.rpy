@@ -1426,3 +1426,17 @@ translate german strings:
     old "Вот у неё и спрашивай! (продолжение вражды)"
     new "Also frag sie! (Krieg fortsetzen)"
 
+# TODO: Translation updated at 2021-09-14 23:25
+
+# game/dialogues/erictalk.rpy:19
+translate german EricTalkStart_4e1c2d3f:
+
+    # Eric_13 "Макс, будь добр, отвали пока нафиг! Не до тебя сейчас..."
+    Eric_13 ""
+
+# game/dialogues/erictalk.rpy:20
+translate german EricTalkStart_3310c6d6:
+
+    # Max_02 "Ну, как скажешь."
+    Max_02 ""
+
