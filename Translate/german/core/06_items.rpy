@@ -288,17 +288,17 @@ translate german strings:
 
     # game/core/06_items.rpy:2
     old "БЫСТРОДЕЙСТВУЮЩЕЕ СЛАБИТЕЛЬНОЕ"
-    new ""
+    new "INSTANT-ABFÜHRMITTEL"
 
     # game/core/06_items.rpy:2
     old "Эффективное слабительное средство. Эффект не заставит себя ждать. Деликатное решение деликатной проблемы."
-    new ""
+    new "Ein wirksames Abführmittel. Die Wirkung wird nicht lange auf sich warten lassen. Eine heikle Lösung für ein heikles Problem."
 
     # game/core/06_items.rpy:2
     old "УСПОКОИТЕЛЬНОЕ СРЕДСТВО"
-    new ""
+    new "SEDATIVUM"
 
     # game/core/06_items.rpy:2
     old "Отлично подойдёт тем, кто не хочет перевозбуждаться. Только спокойствие и безмятежность. Перед применением следует обязательно проконсультироваться с врачом для определения нужной дозировки."
-    new ""
+    new "Großartig für diejenigen, die nicht überreizt werden wollen. Einfach ruhig und gelassen. Konsultieren Sie vor der Anwendung immer einen Arzt, um die richtige Dosierung zu bestimmen."
 

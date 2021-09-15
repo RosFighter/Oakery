@@ -1432,11 +1432,11 @@ translate german strings:
 translate german EricTalkStart_4e1c2d3f:
 
     # Eric_13 "Макс, будь добр, отвали пока нафиг! Не до тебя сейчас..."
-    Eric_13 ""
+    Eric_13 "Max, verpiss dich endlich! Ich kann mich jetzt nicht mit dir befassen..."
 
 # game/dialogues/erictalk.rpy:20
 translate german EricTalkStart_3310c6d6:
 
     # Max_02 "Ну, как скажешь."
-    Max_02 ""
+    Max_02 "Nun, wie du meinst."
 

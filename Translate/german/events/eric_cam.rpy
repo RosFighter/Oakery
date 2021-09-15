@@ -288,47 +288,47 @@ translate german cam0_sexed_lisa_6918e27b:
 translate german cam0_eric_resting_b4d3f901:
 
     # Max_01 "{m}Кажется, подмешанное Эрику в еду средство испортило ему всё настроение и он не рискует идти к моей сестрёнке... Именно на это я и рассчитывал!{/m}"
-    Max_01 ""
+    Max_01 "{m}Es scheint, dass Erics Abendmahl ihn in Schwirigkeiten versetzt hat und er es nicht riskieren will, zu meiner Schwester zu gehen... Das ist genau das, womit ich gerechnet habe!{/m}"
 
 # game/events/eric_cam.rpy:350
 translate german cam0_eric_shat_39c0bef3:
 
     # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 ""
+    Max_09 "Man kann nicht wirklich etwas sehen... Es lohnt sich, einen Blick in die andere Kamera zu werfen..."
 
 # game/events/eric_cam.rpy:352
 translate german cam0_eric_shat_e517fcdc:
 
     # Max_09 "Ничего толком не видно..."
-    Max_09 ""
+    Max_09 "Man kann nicht wirklich etwas sehen..."
 
 # game/events/eric_cam.rpy:366
 translate german cam1_eric_shat_93a7571e:
 
     # Max_02 "Эрик во всю оценивает эффективность слабительного, которое я ему подмешал... Надеюсь, эта обезьяна знает, как пользоваться туалетной бумагой, потому что банановых листьев у нас тут нет!"
-    Max_02 ""
+    Max_02 "Erik versucht immer noch, die Wirksamkeit des Abführmittels zu testen, das ich ihm gegeben habe... Ich hoffe, dieser Affe weiß, wie man Toilettenpapier benutzt, denn wir haben hier keine Bananenblätter!"
 
 # game/events/eric_cam.rpy:368
 translate german cam1_eric_shat_689dedb9:
 
     # Max_02 "Ты что, Эрик, съел что-то не то, что ли?! Бедняга. Ну, держись там..."
-    Max_02 ""
+    Max_02 "Hast du etwas Falsches gegessen, Eric?! Armer Kerl. Nun, halte durch..."
 
 # game/events/eric_cam.rpy:377
 translate german cam0_eric_ann_resting_cb75645d:
 
     # Max_02 "{m}Похоже, потрахушек сегодня не намечается... Интересно, с чего бы это?!{/m}"
-    Max_02 ""
+    Max_02 "{m}Sieht so aus, als gäbe es heute Abend kein Ficken... Ich frage mich, warum das so ist.{/m}"
 
 # game/events/eric_cam.rpy:387
 translate german cam0_eric_sleep_bce0a0b5:
 
     # Max_07 "{m}Остаётся надеяться, что я подмешал ему не слишком много успокоительного... Главное, что он сейчас ни к кому не пристаёт.{/m}"
-    Max_07 ""
+    Max_07 "{m}Ich hoffe nur, ich habe ihn nicht zu sehr betäubt... Das Wichtigste ist, dass er im Moment niemanden stört.{/m}"
 
 # game/events/eric_cam.rpy:397
 translate german cam0_eric_ann_try_fucking_5da5d134:
 
     # Max_01 "{m}Не стоит? Ну ничего, бывает... Но всё равно приятно осознавать, что это происходит из-за моих действий.{/m}"
-    Max_01 ""
+    Max_01 "{m}Lohnt sich das nicht? Das ist okay, das kommt vor... Aber es ist trotzdem schön zu wissen, dass es an meinem Handeln liegt.{/m}"
 
