@@ -1432,11 +1432,10 @@ translate english strings:
 translate english EricTalkStart_4e1c2d3f:
 
     # Eric_13 "Макс, будь добр, отвали пока нафиг! Не до тебя сейчас..."
-    Eric_13 ""
+    Eric_13 "Max, back the hell off for now! I don't have time for you right now..."
 
 # game/dialogues/erictalk.rpy:20
 translate english EricTalkStart_3310c6d6:
 
     # Max_02 "Ну, как скажешь."
-    Max_02 ""
-
+    Max_02 "Sure, whatever you want..."
