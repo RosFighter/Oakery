@@ -3794,7 +3794,7 @@ translate german strings:
 
     # game/events/alice.rpy:968
     old "Ты знаешь, я забыл..."
-    new "Weißt du, ich vergaß..."
+    new "Ähm, ich habs vergessen..."
 
     # game/events/alice.rpy:979
     old "{i}дать одну конфету{/i}"
@@ -3818,7 +3818,7 @@ translate german strings:
 
     # game/events/alice.rpy:1093
     old "Паук? Ерунда какая. Сама разбирайся с ним..."
-    new "Was? Du hast mich geweckt, nur weil da eine Spinne in deinem Zimmer ist? Kümmere dich selbst darum..."
+    new "Eine Spinne? Was für ein Blödsinn. Kümmere dich selber drum..."
 
     # game/events/alice.rpy:1103
     old "{i}спать до утра{/i}"
@@ -3834,7 +3834,7 @@ translate german strings:
 
     # game/events/alice.rpy:1122
     old "Паука-то я поймаю, только вот кое-кто нарушает уговор! Или может я не прав?!"
-    new "Ich werde eine Spinne fangen, nur dass jemand den Deal nicht einhält! Oder liege ich vielleicht falsch?!"
+    new "Ich würde die Spinne fangen, aber jemand macht den Deal kaputt! Oder liege ich falsch?!"
 
     # game/events/alice.rpy:1127
     old "Давай $10!"

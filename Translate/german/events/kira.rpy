@@ -1486,7 +1486,7 @@ translate german kira_sleep_morning_e88b00c2:
 translate german kira_night_tv_234d0568:
 
     # Max_01 "Тётя Кира ещё не легла спать... смотрит сериалы. Может, стоит задержаться?" nointeract
-    Max_01 "Tante Kira ist noch nicht ins Bett gegangen... und schaut Seifenopern. Vielleicht sollten wir aufbleiben." nointeract
+    Max_01 "Tante Kira ist noch nicht ins Bett gegangen... schaut Filme. Vielleicht sollte ich länger aufbleiben?" nointeract
 
 # game/events/kira.rpy:1002
 translate german kira_night_tv_e247cac6:
