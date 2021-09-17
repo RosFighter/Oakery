@@ -1006,5 +1006,4 @@ translate english strings:
 translate english bedtime_thoughts_a9917f30:
 
     # Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
-    Max_07 ""
-
+    Max_07 "{m}How do I get Eric to stop messing with my sisters, at least for a while... and Kira... and Mom too... Hmm... There's a chance I could slip something into his food before dinner if I helped Alice set the table! I should check the online store for something I could use...{/m}"
