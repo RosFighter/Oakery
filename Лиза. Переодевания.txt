@@ -104,6 +104,59 @@
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07c
 		 #myroom-wardrobe-mde-01-lisa-dresses-07c1
+21:00 Лиза может переодеться после мытья посуды в другую повседневную одежду, если игрок её поменял в меню, но попасть на это можно, только если не мыть за Лизу посуду
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-03b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-06h
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-03b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-06h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+23:00 Лиза переодевается после ванны в базовую одежду / халат / розовую, далее делает уроки, но только если не остаётся в полотенце
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-03b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-06h
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-03b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-06h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #02 (Стеснительная)
 =====================================================================================================
@@ -210,6 +263,57 @@
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07c
 		 #myroom-wardrobe-mde-01-lisa-dresses-07c1
+21:00 Лиза может переодеться после мытья посуды в другую повседневную одежду, если игрок её поменял в меню, но попасть на это можно, только если не мыть за Лизу посуду
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+23:00 Лиза переодевается после ванны в базовую одежду / халат / розовую, далее делает уроки, но только если не остаётся в полотенце
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #03 (Любопытная)
 =====================================================================================================
@@ -355,6 +459,79 @@
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07c
 		 #myroom-wardrobe-mde-01-lisa-dresses-07c1
+21:00 Лиза может переодеться после мытья посуды в другую повседневную одежду, если игрок её поменял в меню, но попасть на это можно, только если не мыть за Лизу посуду
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b  => #myroom-wardrobe-mde-01-lisa-dresses-03b
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d  => #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d  => #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-03b
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+23:00 Лиза переодевается после ванны в базовую одежду / халат / розовую, далее делает уроки, но только если не остаётся в полотенце
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b  => #myroom-wardrobe-mde-01-lisa-dresses-03b
+		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d  => #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d  => #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-03b
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-03d
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-06d
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 ===================================================================================================================
 УР#01
 
@@ -416,7 +593,6 @@
    #на фоне двери с пн-пт
    Max_09 (мысли) "Сейчас Лиза должна собираться в школу..."
       войти в комнату
-	     #только нулевой и второй момент
 	  постучаться
 	     "Лиза: Кто там? Я переодеваюсь!"
 		    войти в комнату
@@ -491,7 +667,6 @@
    #на фоне двери с пн-пт
    Max_09 (мысли) "Сейчас Лиза должна собираться в школу..."
       войти в комнату
-	     #только нулевой и второй момент
 	  постучаться
 	     "Лиза: Кто там? Я переодеваюсь!"
 		    войти в комнату
@@ -586,7 +761,6 @@
    #на фоне двери с пн-пт
    Max_09 (мысли) "Сейчас Лиза должна собираться в школу..."
       войти в комнату
-	     #только нулевой и второй момент
 	  постучаться
 	     "Лиза: Кто там? Я переодеваюсь!"
 		    войти в комнату
@@ -631,7 +805,3 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-07d
    (Макс стучится в дверь)
 10:00 [вс] ???
-
-21:00 Лиза может переодеться после мытья посуды в другую повседневную одежду, если игрок её поменял в меню, но попасть на это можно, только если не мыть за Лизу посуду (Макс просто входит в комнату)
-
-23:00 Лиза переодевается после ванны в базовую одежду / халат / розовую, далее делает уроки, но только если не остаётся в полотенце (Макс просто входит в комнату)
