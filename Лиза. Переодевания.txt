@@ -153,9 +153,6 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
 		 #myroom-wardrobe-mde-01-lisa-dresses-06h
 	  Рано (нулевой момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #02 (Стеснительная)
@@ -310,9 +307,6 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
 		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 	  Рано (нулевой момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #03 (Любопытная)
@@ -528,9 +522,6 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
 		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 	  Рано (нулевой момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 ===================================================================================================================
 УР#01
