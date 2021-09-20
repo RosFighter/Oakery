@@ -54,14 +54,14 @@ label alice_bath:
         scene BG bath-00
         $ renpy.show('Alice bath-window 0'+str(r1))
         show FG bath-00
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         if r1 == 1:
             menu:
                 Max_03 "Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался..."
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show('Alice bath-window '+renpy.random.choice(['02', '03', '04']))
-                    $ Skill('hide', 0.025)
+                    $ Skill('hide', 0.025, 10)
                     menu:
                         Max_05 "Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна..."
                         "{i}уйти{/i}":
@@ -76,7 +76,7 @@ label alice_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Alice bath-window 05
-                    $ Skill('hide', 0.025)
+                    $ Skill('hide', 0.025, 10)
                     menu:
                         Max_07 "Эх! Самое интересное продолжалось недолго... Единственное, что напоследок остаётся сделать, это насладится её бесподобной попкой!"
                         "{i}уйти{/i}":
@@ -337,7 +337,7 @@ label alice_shower:
             "{i}заглянуть со двора{/i}":
                 if alice.sorry.owe:
                     Max_10 "С радостью бы подсмотрел за голенькой сестрёнкой, но это слишком опасно! Сперва нужно подарить то, что обещал..."
-                    $ current_room, prev_room = prev_room, current_room
+                    $ current_room = house[6]
                     jump AfterWaiting
                 jump .start_peeping
             "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
@@ -347,7 +347,7 @@ label alice_shower:
 
     label .start_peeping:
         $ renpy.dynamic('r1')
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         $ r1 = renpy.random.randint(1, 4)
 
         scene image ('Alice shower 0'+str(r1))
@@ -687,7 +687,7 @@ label alice_shower:
 
     label .end:
         $ renpy.end_replay()
-        $ current_room, prev_room = prev_room, current_room
+        $ current_room = house[6]
         $ spent_time += 10
         jump Waiting
 
@@ -752,7 +752,7 @@ label alice_dressed_shop:
                     $ renpy.show('Alice voyeur '+r1+suf)
                     $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
-                $ Skill('hide', 0.025)
+                $ Skill('hide', 0.025, 10)
                 if alice.req.result == 'not_nopants' and r1 not in ['01', '05']:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
                     Max_01 "Ага! Алиса одевается на шопинг. И похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала! Но не сейчас... Сейчас мне лучше уходить, пока никто не заметил."
@@ -844,7 +844,7 @@ label alice_dressed_friend:
                     $ renpy.show('Alice voyeur '+r1+suf)
                     $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
-                $ Skill('hide', 0.025)
+                $ Skill('hide', 0.025, 10)
                 if alice.req.result == 'not_nopants' and r1 not in ['01', '05']:
                     # Макс видит, что на Алисе трусики, когда их быть не должно
                     $ added_mem_var('alice_not_nopants')
@@ -861,7 +861,7 @@ label alice_dressed_friend:
 
             "{i}уйти{/i}":
                 pass
-        # $ current_room, prev_room = prev_room, current_room
+        # $ current_room = house[6]
         $ spent_time = 10
         jump Waiting
     return
@@ -897,7 +897,7 @@ label alice_dressed_club:
                 scene BG char Alice voyeur-00
                 $ renpy.show('Alice voyeur 04'+suf)
                 $ renpy.show('FG voyeur-evening-00'+mgg.dress)
-            $ Skill('hide', 0.025)
+            $ Skill('hide', 0.025, 10)
 
             ## у нас 3 варианта:
             if alice.req.result == 'not_nopants':
@@ -1906,7 +1906,7 @@ label alice_lisa_shower:
 
     label .ladder:
         $ renpy.dynamic('r0', 'r1', 'vr')
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
@@ -1986,7 +1986,7 @@ label alice_lisa_shower:
 
     label .start_peeping:
         $ renpy.dynamic('r1', 'r2')
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
 
         scene Alice shower-Lisa 01
         $ renpy.show('FG shower 00'+mgg.dress)
@@ -2025,7 +2025,7 @@ label alice_lisa_shower:
         jump .end
 
     label .end:
-        $ current_room, prev_room = prev_room, current_room
+        $ current_room = house[6]
         $ spent_time += 10
         jump Waiting
 

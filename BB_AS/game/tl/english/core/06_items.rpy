@@ -288,17 +288,17 @@ translate english strings:
 
     # game/core/06_items.rpy:2
     old "БЫСТРОДЕЙСТВУЮЩЕЕ СЛАБИТЕЛЬНОЕ"
-    new ""
+    new "RAPID LAXATIVE"
 
     # game/core/06_items.rpy:2
     old "Эффективное слабительное средство. Эффект не заставит себя ждать. Деликатное решение деликатной проблемы."
-    new ""
+    new "Effective laxative. Fast results. A delicate solution to a delicate problem."
 
     # game/core/06_items.rpy:2
     old "УСПОКОИТЕЛЬНОЕ СРЕДСТВО"
-    new ""
+    new "SEDATIVE"
 
     # game/core/06_items.rpy:2
     old "Отлично подойдёт тем, кто не хочет перевозбуждаться. Только спокойствие и безмятежность. Перед применением следует обязательно проконсультироваться с врачом для определения нужной дозировки."
-    new ""
+    new "Perfect for those who wish to sleep in tranquility and serenity. Before using, be sure to consult a doctor to determine the proper dosage."
 

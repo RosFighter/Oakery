@@ -600,7 +600,6 @@ init python:
 
         for char in chars:
             prev_shed = chars[char].get_plan(prevday, prevtime)
-            # cur_shed  = chars[char].get_plan()
             if (prev_shed is None and chars[char].plan_name) or (chars[char].plan_name is not None and prev_shed.name!=chars[char].plan_name): # начато новое действие, значит меняем одежду
 
                 # удалим флаг подсматривания за персонажем через камеры при смене текущего действия
@@ -609,10 +608,9 @@ init python:
                         cam_flag.remove(cur_act)
 
                 # удалим признак просмотра неактивной камеры
-                if cur_shed.loc:
-                    room = eval(cur_shed.loc+'['+str(cur_shed.room)+']')
+                if chars[char].loc:
                     i = 0
-                    for cam in room.cams:
+                    for cam in chars[char].loc.cams:
                         if room.id+'-'+str(i) in cam_flag:
                             cam_flag.remove(room.id+'-'+str(i))
                         i += 1
@@ -622,6 +620,7 @@ init python:
 
                 if char in ['ann', 'eric'] and 'ann_eric_scene' in globals():
                     ann_eric_scene = '' # обнулим сцену для камер, если она есть
+
                 dress, inf, clot = GetDressNps(char, chars[char].plan_name)
                 if dress != '':
                     chars[char].dress = dress
@@ -710,13 +709,6 @@ init python:
                     clot = 'lingerie'
                     dress = alice.clothes.lingerie.GetCur().suf
                     inf   = alice.clothes.lingerie.GetCur().info
-                    # global cur_blog_lingerie
-                    # if alice.clothes.lingerie.Opens() and not alice.clothes.lingerie.blocked:
-                    # else:
-                    #     if not cur_blog_lingerie:
-                    #         cur_blog_lingerie = blog_lingerie_create()
-                    #     dress = cur_blog_lingerie
-                    #     inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[cur_blog_lingerie]
                 else:
                     # блог в обычной одежде
                     clot = 'casual'
@@ -1513,3 +1505,15 @@ init python:
         ann_good_mass   = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
 
         return
+
+
+    # переходим в другую комнату
+    def transition_to_room(room):
+        global current_room, prev_room
+
+        if current_room != room:
+            prev_room    = current_room
+            current_room = room
+            renpy.jump('AfterWaiting')
+
+    Transition_to_room = renpy.curry(transition_to_room)    # преобразуем функцию в экшен

@@ -1958,35 +1958,35 @@ translate german strings:
 translate german eric_shat_684d01d0:
 
     # Max_07 "{m}Должно быть не так Эрик хотел провести этот вечер... Только бы он наши белые стены не испачкал своими выбросами!{/m}"
-    Max_07 ""
+    Max_07 "{m}So wollte Eric den Abend sicher nicht verbringen... Allein schon, damit er unsere weißen Wände nicht mit seinen Exkrementen befleckt!{/m}"
 
 # game/events/eric.rpy:1498
 translate german eric_ann_resting_ad8c84cf:
 
     # Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Aus Moms Zimmer ist kaum ein Geräusch zu hören. Eric scheint überhaupt keinen Spaß zu haben...{/m}" nointeract
 
 # game/events/eric.rpy:1503
 translate german eric_ann_resting_d879c878:
 
     # Max_01 "{m}Что, Эрик, сегодня ты не такой активный, как обычно? С тобой рядом такая женщина, а у тебя голова чем-то другим забита...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}Was, Eric, bist du heute nicht so aktiv wie sonst? Du hast so eine Frau bei dir und du hast andere Dinge im Kopf...{/m}" nointeract
 
 # game/events/eric.rpy:1523
 translate german eric_sleep_9fec01f6:
 
     # Max_02 "{m}Думаю, мама по достоинству оценит то, что ты пришёл к нам в гости и завалился дрыхнуть. Ну что за люди невоспитанные пошли...{/m}"
-    Max_02 ""
+    Max_02 "{m}Ich glaube, Mom würde sich freuen, wenn du uns besuchen kämst und dabei einschlafen würdest. Was für ungehobelte Menschen sind das heutzutage...{/m}"
 
 # game/events/eric.rpy:1533
 translate german eric_ann_try_fucking_ad8c84cf:
 
     # Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Aus Moms Zimmer ist kaum ein Geräusch zu hören. Eric scheint überhaupt keinen Spaß zu haben...{/m}" nointeract
 
 # game/events/eric.rpy:1537
 translate german eric_ann_try_fucking_122a2fc3:
 
     # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}"
-    Max_02 ""
+    Max_02 "{m}Wie kann eine so schöne Frau nicht würdig sein?! Ich verstehe das nicht...{/m}"
 

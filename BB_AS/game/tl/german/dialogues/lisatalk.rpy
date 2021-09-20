@@ -2254,7 +2254,7 @@ translate german Lisa_HomeWork_first_foot_mass_2dddc65d:
 translate german Lisa_HomeWork_first_foot_mass_02025e2e:
 
     # Max_01 "Да не за что."
-    Max_01 "Gern geschehen."
+    Max_01 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:1348
 translate german Lisa_HomeWork_next_foot_mass_20a3b67b:
@@ -2326,7 +2326,7 @@ translate german Lisa_HomeWork_next_foot_mass_9f553937:
 translate german Lisa_HomeWork_next_foot_mass_02025e2e:
 
     # Max_01 "Да не за что."
-    Max_01 "Gern geschehen."
+    Max_01 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:1415
 translate german Lisa_HomeWork_next_foot_mass_f9f4ba7f:
@@ -2494,7 +2494,7 @@ translate german Lisa_HomeWork_random_answer_2dddc65d:
 translate german Lisa_HomeWork_random_answer_02025e2e:
 
     # Max_01 "Да не за что."
-    Max_01 "Gern geschehen."
+    Max_01 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:1533
 translate german Lisa_HomeWork_random_answer_ff9c96d3:
@@ -9749,7 +9749,7 @@ translate german strings:
 
     # game/dialogues/lisatalk.rpy:3999
     old "Да легко! Ты показываешь грудь, я член!"
-    new "Das ist ganz einfach! Du zeigst mir deine Brüste, ich zeige dir meinen Schwanz!"
+    new "Ganz einfach! Du zeigst mir deine Brüste, ich zeige dir meinen Schwanz!"
 
 # TODO: Translation updated at 2021-09-14 23:25
 
@@ -9757,497 +9757,497 @@ translate german strings:
 translate german lisa_about_ae_sexed5_2c0f5a0f:
 
     # Lisa_00 "Макс, ты можешь ненадолго задержаться? Надо поговорить..."
-    Lisa_00 ""
+    Lisa_00 "Max, kannst du noch ein bisschen bleiben? Wir müssen reden..."
 
 # game/dialogues/lisatalk.rpy:4116
 translate german lisa_about_ae_sexed5_57a76181:
 
     # Max_00 "Конечно, могу. О чём?"
-    Max_00 ""
+    Max_00 "Natürlich kann ich das. Worüber?"
 
 # game/dialogues/lisatalk.rpy:4117
 translate german lisa_about_ae_sexed5_ed64e67d:
 
     # Lisa_09 "Ну... О тех уроках сексуального воспитания, которые для меня устроили мама с Эриком..."
-    Lisa_09 ""
+    Lisa_09 "Na ja... Über den Sexualkundeunterricht, den Mom und Eric mir erteilt haben..."
 
 # game/dialogues/lisatalk.rpy:4118
 translate german lisa_about_ae_sexed5_4c53f0f6:
 
     # Max_07 "Что-то не так?"
-    Max_07 ""
+    Max_07 "Stimmt etwas nicht?"
 
 # game/dialogues/lisatalk.rpy:4123
 translate german lisa_about_ae_sexed5_e04657de:
 
     # Lisa_01 "В общем, я хотела бы, чтобы по понедельникам, после ужина, ты теперь где-нибудь \"погулял\"... минимум полчасика."
-    Lisa_01 ""
+    Lisa_01 "Wie auch immer, ich will, dass du Montags nach dem Essen \"verschwindest\"... mindestens eine halbe Stunde lang."
 
 # game/dialogues/lisatalk.rpy:4124
 translate german lisa_about_ae_sexed5_cb28e33b:
 
     # Max_09 "Это ещё зачем?"
-    Max_09 ""
+    Max_09 "Warum sollte ich das tun?"
 
 # game/dialogues/lisatalk.rpy:4129
 translate german lisa_about_ae_sexed5_c2d9034d:
 
     # Lisa_00 "А затем, что эти уроки продолжатся в нашей комнате с Эриком."
-    Lisa_00 ""
+    Lisa_00 "Der Unterricht wird dann in unserem Zimmer mit Eric weitergehen."
 
 # game/dialogues/lisatalk.rpy:4130
 translate german lisa_about_ae_sexed5_ca534ea4:
 
     # Max_08 "И что? Почему я должен из-за этого покидать свою комнату?"
-    Max_08 ""
+    Max_08 "Na und? Warum muss ich deswegen das Haus verlassen?"
 
 # game/dialogues/lisatalk.rpy:4131
 translate german lisa_about_ae_sexed5_4de98efd:
 
     # Lisa_02 "Потому что ты там будешь лишним! Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
-    Lisa_02 ""
+    Lisa_02 "Weil du überflüssig sein wirst! Es wäre schön, wenn du in der Zwischenzeit den Abwasch für mich erledigen könntest. Ich wäre dir sehr dankbar dafür."
 
 # game/dialogues/lisatalk.rpy:4132
 translate german lisa_about_ae_sexed5_f38fb4b4:
 
     # Max_07 "Помою, не вопрос... А почему эти уроки с Эриком будут проходить у нас в комнате, а не как раньше в маминой?"
-    Max_07 ""
+    Max_07 "Das werde ich, kein Problem... Warum findet der Unterricht mit Eric in unserem Zimmer statt und nicht wie bisher in Moms Zimmer?"
 
 # game/dialogues/lisatalk.rpy:4133
 translate german lisa_about_ae_sexed5_daa04159:
 
     # Lisa_10 "Потому что мама не хочет учить меня большему, а я хочу..."
-    Lisa_10 ""
+    Lisa_10 "Weil Mom mir nicht mehr beibringen will, und ich will aber..."
 
 # game/dialogues/lisatalk.rpy:4134
 translate german lisa_about_ae_sexed5_40774e99:
 
     # Max_09 "И Эрик, видимо, вызвался тебе помочь с этим, да?"
-    Max_09 ""
+    Max_09 "Und Eric hat sich anscheinend freiwillig gemeldet, um dir dabei zu helfen, nicht wahr?"
 
 # game/dialogues/lisatalk.rpy:4139
 translate german lisa_about_ae_sexed5_b44fac3b:
 
     # Lisa_09 "Ну да, он предложил и я согласилась. Я не хочу облажаться с мальчиками, когда придёт время..."
-    Lisa_09 ""
+    Lisa_09 "Nun ja, er bot es an und ich habe zugestimmt. Ich will es mir nicht mit den Jungs versauen, wenn es so weit ist..."
 
 # game/dialogues/lisatalk.rpy:4140
 translate german lisa_about_ae_sexed5_8de6d12c:
 
     # Max_11 "Так, а ко мне не думала с этим обратиться?"
-    Max_11 ""
+    Max_11 "Hast du darüber nachgedacht, damit zu mir zu kommen?"
 
 # game/dialogues/lisatalk.rpy:4143
 translate german lisa_about_ae_sexed5_1f1a6b2e:
 
     # Lisa_13 "Ну, Макс... Эрик ведь старше и знает, как и что во взрослом мире происходит..." nointeract
-    Lisa_13 "" nointeract
+    Lisa_13 "Nun, Max... Eric ist älter und weiß, wie und was in der Welt der Erwachsenen passiert..." nointeract
 
 # game/dialogues/lisatalk.rpy:4146
 translate german lisa_about_ae_sexed5_8d68420c:
 
     # Lisa_01 "Спасибо, Макс! Я рада, что ты меня понял..."
-    Lisa_01 ""
+    Lisa_01 "Vielen Dank, Max! Ich bin froh, dass du mich verstehst..."
 
 # game/dialogues/lisatalk.rpy:4147
 translate german lisa_about_ae_sexed5_94ee0985:
 
     # Max_00 "Не за что."
-    Max_00 ""
+    Max_00 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:4152
 translate german lisa_about_ae_sexed5_c9c40629:
 
     # Max_09 "{m}Так, а вот это мне нужно обсудить с Эриком! Потому что я хочу видеть, чему он там её будет \"учить\"...{/m}"
-    Max_09 ""
+    Max_09 "{m}Okay, das ist etwas, was ich mit Eric besprechen muss! Weil ich sehen will, was er ihr \"beibringen\" will...{/m}"
 
 # game/dialogues/lisatalk.rpy:4154
 translate german lisa_about_ae_sexed5_7e0d4074:
 
     # Lisa_11 "Неправильно готовиться к взрослой жизни?"
-    Lisa_11 ""
+    Lisa_11 "Ist es falsch, sich auf das Erwachsensein vorzubereiten?"
 
 # game/dialogues/lisatalk.rpy:4155
 translate german lisa_about_ae_sexed5_2830c033:
 
     # Max_15 "Нет, неправильно узнавать такое от Эрика! Неспроста же мама не хочет продолжать эти уроки. И я скажу тебе почему. Потому что это в конец перебор!"
-    Max_15 ""
+    Max_15 "Nein, es ist nicht angebracht, das von Eric zu erfahren! Es gibt einen Grund, warum Mom diesen Unterricht nicht fortsetzen will. Und ich werde dir sagen, warum. Weil es total unangemessen ist!"
 
 # game/dialogues/lisatalk.rpy:4160
 translate german lisa_about_ae_sexed5_d86ce708:
 
     # Lisa_12 "Ничего это не перебор! Мне это интересно и я хочу знать всё о взрослой жизни. А если будешь противиться, то Эрик сказал, чтобы я отправляла тебя к нему."
-    Lisa_12 ""
+    Lisa_12 "Nichts ist unangemessen! Ich will alles über das Erwachsensein wissen und bin daran interessiert. Und wenn du dich weigerst, hat Eric mir gesagt, ich soll dich zu ihm schicken."
 
 # game/dialogues/lisatalk.rpy:4161
 translate german lisa_about_ae_sexed5_317c7258:
 
     # Max_09 "{m}Вот же Эрик сволочь! Я прикидываюсь, что дружу с ним, чтобы у меня не было никаких проблем и вместе с тем можно было спокойно придумать, как от него избавиться... Но теперь, всё это под угрозой. Лучше прикидываться дальше и быстрее думать, что делать...{/m}"
-    Max_09 ""
+    Max_09 "{m}Eric ist ein Mistkerl! Ich gebe vor, mit ihm befreundet zu sein, damit ich keine Probleme habe und gleichzeitig sicher herausfinden kann, wie ich ihn loswerde... Aber jetzt ist das alles in Gefahr. Es ist besser, sich weiter zu verstellen und schnell zu überlegen, was zu tun ist...{/m}"
 
 # game/dialogues/lisatalk.rpy:4162
 translate german lisa_about_ae_sexed5_722951fb:
 
     # Lisa_00 "Макс, ты чего завис?"
-    Lisa_00 ""
+    Lisa_00 "Max, wieso bist du noch da?"
 
 # game/dialogues/lisatalk.rpy:4163
 translate german lisa_about_ae_sexed5_e1133d63:
 
     # Max_10 "Занимайтесь, мешать не буду."
-    Max_10 ""
+    Max_10 "Nur zu, ich werde mich nicht einmischen."
 
 # game/dialogues/lisatalk.rpy:4164
 translate german lisa_about_ae_sexed5_8d68420c_1:
 
     # Lisa_01 "Спасибо, Макс! Я рада, что ты меня понял..."
-    Lisa_01 ""
+    Lisa_01 "Vielen Dank, Max! Ich bin froh, dass du mich verstanden hast..."
 
 # game/dialogues/lisatalk.rpy:4165
 translate german lisa_about_ae_sexed5_94ee0985_1:
 
     # Max_00 "Не за что."
-    Max_00 ""
+    Max_00 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:4170
 translate german lisa_about_ae_sexed5_a8cf08b3:
 
     # Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
-    Max_09 ""
+    Max_09 "{m}Eric scheint Lisas Naivität auszunutzen und versucht heimlich hinter dem Rücken von Mom, meine kleine Schwester zu manipulieren! Das muss sofort aufhören!{/m}"
 
 # game/dialogues/lisatalk.rpy:4173
 translate german lisa_about_ae_sexed5_42e30c89:
 
     # Lisa_13 "Ну, Макс... Эрик ведь старше и знает, как и что во взрослом мире происходит..."
-    Lisa_13 ""
+    Lisa_13 "Nun, Max... Eric ist älter und weiß, wie und was in der Welt der Erwachsenen passiert..."
 
 # game/dialogues/lisatalk.rpy:4174
 translate german lisa_about_ae_sexed5_9047957d:
 
     # Max_10 "Хм... И чему же такому он тебя собирается учить, да ещё и без маминого и моего присмотра?"
-    Max_10 ""
+    Max_10 "Hm... Was in aller Welt will er dir schon beibringen, und das ohne die Aufsicht von Mom oder von mir?"
 
 # game/dialogues/lisatalk.rpy:4175
 translate german lisa_about_ae_sexed5_30772956:
 
     # Lisa_10 "Нуу... Я думаю, мне нужно набраться опыта в том, что мне показывала мама. В школе ведь так же делают, теоретические знания закрепляют на практических занятиях."
-    Lisa_10 ""
+    Lisa_10 "Na ja... Ich glaube, ich muss Erfahrungen sammeln mit dem, was Mom mir gezeigt hat. In der Schule zum Beispiel wird das theoretische Wissen durch praktischen Unterricht vertieft."
 
 # game/dialogues/lisatalk.rpy:4176
 translate german lisa_about_ae_sexed5_770a6219:
 
     # Max_12 "Что?! Какие ещё, к чёрту, практические занятия?"
-    Max_12 ""
+    Max_12 "Was? Was für eine praktische Ausbildung soll das denn sein?"
 
 # game/dialogues/lisatalk.rpy:4181
 translate german lisa_about_ae_sexed5_5ecce7e1:
 
     # Lisa_13 "Обыкновенные, Макс! Если бы ты нормально учился в школе, то прекрасно бы это знал."
-    Lisa_13 ""
+    Lisa_13 "Das Übliche, Max! Wenn du eine normale Schulbildung gehabt hättest, wüsstest du das sehr genau."
 
 # game/dialogues/lisatalk.rpy:4182
 translate german lisa_about_ae_sexed5_980d60e3:
 
     # Max_09 "Да это я знаю прекрасно, но школа это одно, а то, что вы с Эриком удумали..."
-    Max_09 ""
+    Max_09 "Das weiß ich sehr genau, aber die Schule ist eine Sache,  was du und Eric vorhabt..."
 
 # game/dialogues/lisatalk.rpy:4183
 translate german lisa_about_ae_sexed5_31085ae0:
 
     # Lisa_12 "Так, Макс... Эрик сказал, что если ты будешь противиться, то с ним и будешь разговаривать..."
-    Lisa_12 ""
+    Lisa_12 "Tja, Max... Eric sagte, wenn du dich widersetzt, wirst du mit ihm reden..."
 
 # game/dialogues/lisatalk.rpy:4184
 translate german lisa_about_ae_sexed5_717ed01f:
 
     # Max_16 "Ладно, мы ещё с ним посмотрим, кто кого..."
-    Max_16 ""
+    Max_16 "Also gut, wir werden sehen, wer hier wen darstellt..."
 
 # game/dialogues/lisatalk.rpy:4189
 translate german lisa_about_ae_sexed5_a8cf08b3_1:
 
     # Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
-    Max_09 ""
+    Max_09 "{m}Eric scheint Lisas Naivität auszunutzen und versucht heimlich hinter dem Rücken von Mom, meine kleine Schwester zu manipulieren! Das muss sofort aufhören!{/m}"
 
 # game/dialogues/lisatalk.rpy:4194
 translate german lisa_about_ae_sexed5_e4aaaab8:
 
     # Lisa_10 "Да, я нахожусь в некоторых сомнениях и хотела с тобой посоветоваться..."
-    Lisa_10 ""
+    Lisa_10 "Ja, ich habe gewisse Zweifel und wollte dich um Rat fragen..."
 
 # game/dialogues/lisatalk.rpy:4195
 translate german lisa_about_ae_sexed5_6e83a4f8:
 
     # Max_01 "Конечно, Лиза. Я весь во внимании."
-    Max_01 ""
+    Max_01 "Natürlich, Lisa. Ich bin ganz Ohr."
 
 # game/dialogues/lisatalk.rpy:4200
 translate german lisa_about_ae_sexed5_f0643012:
 
     # Lisa_09 "Видишь ли... Даже не знаю, как тебе это лучше сказать... Эрик уговаривает меня проводить с ним занятия в нашей комнате... Ну... по тому, что они мне показывали..."
-    Lisa_09 ""
+    Lisa_09 "Weißt du... Ich weiß gar nicht, wie ich es dir sagen soll... Eric überredet mich, mit ihm Unterricht in unserem Zimmer zu nehmen... Na ja... nach dem, was die beiden mir gezeigt haben..."
 
 # game/dialogues/lisatalk.rpy:4201
 translate german lisa_about_ae_sexed5_b1cec096:
 
     # Max_08 "В смысле как? Почему в нашей комнате, а не у себя, как было до этого?"
-    Max_08 ""
+    Max_08 "Was meinst du mit \"was\"? Warum in unserem Zimmer und nicht wie früher in ihrem Zimmer?"
 
 # game/dialogues/lisatalk.rpy:4204
 translate german lisa_about_ae_sexed5_80061a82:
 
     # Lisa_13 "Потому что мама не хочет учить меня большему, а Эрик предложил это делать без неё. И сказал, что будет лучше, если нам никто не будет мешать при этом." nointeract
-    Lisa_13 "" nointeract
+    Lisa_13 "Weil Mom mir nichts weiter zeigen will und Eric vorgeschlagen hat, dass wir es ohne sie machen. Und er sagte, es wäre besser, wenn uns dabei niemand stören würde." nointeract
 
 # game/dialogues/lisatalk.rpy:4210
 translate german lisa_about_ae_sexed5_9b07ee18:
 
     # Lisa_00 "Думаешь, мне правда стоит согласиться?"
-    Lisa_00 ""
+    Lisa_00 "Meinst du, ich sollte es wirklich versuchen?"
 
 # game/dialogues/lisatalk.rpy:4211
 translate german lisa_about_ae_sexed5_78d28d5c:
 
     # Max_07 "Ну да, если тебе это интересно, то почему нет?"
-    Max_07 ""
+    Max_07 "Tja, wenn du wirklich interessiert bist, warum nicht?"
 
 # game/dialogues/lisatalk.rpy:4212
 translate german lisa_about_ae_sexed5_9cc53521:
 
     # Lisa_09 "Конечно интересно. К тому же, кто ещё меня научит, если не взрослый опытный мужчина? Просто не знаю, насколько это правильно..."
-    Lisa_09 ""
+    Lisa_09 "Natürlich ist das interessant. Außerdem, wer sonst soll mich unterrichten, wenn nicht ein erwachsener, erfahrener Mann? Ich weiß nur nicht, ob es das Richtige ist, das zu tun..."
 
 # game/dialogues/lisatalk.rpy:4213
 translate german lisa_about_ae_sexed5_a3d4d2b6:
 
     # Max_01 "Ну, теоретические знания нужно закреплять на практике, потому что увидеть что-то или прочесть одно, а вот самому это сделать - уже другое."
-    Max_01 ""
+    Max_01 "Nun, man muss die Theorie in die Praxis umsetzen, denn etwas zu sehen oder darüber zu lesen ist eine Sache, es selbst zu tun eine andere."
 
 # game/dialogues/lisatalk.rpy:4218
 translate german lisa_about_ae_sexed5_108a6b51:
 
     # Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
-    Lisa_01 ""
+    Lisa_01 "Dann stimme ich zu, den Unterricht mit Eric weiter zu führen. Du musst nur Montags nach dem Essen \"verschwinden\"... Mindestens eine halbe Stunde lang."
 
 # game/dialogues/lisatalk.rpy:4219
 translate german lisa_about_ae_sexed5_73916dd2:
 
     # Max_04 "Хорошо, я найду чем заняться."
-    Max_04 ""
+    Max_04 "OK, ich werde etwas zu tun finden."
 
 # game/dialogues/lisatalk.rpy:4220
 translate german lisa_about_ae_sexed5_37dc3d8a:
 
     # Lisa_02 "Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
-    Lisa_02 ""
+    Lisa_02 "Es wäre schön, wenn du in der Zwischenzeit den Abwasch für mich erledigen könntest. Ich würde dir dafür dankbar sein."
 
 # game/dialogues/lisatalk.rpy:4221
 translate german lisa_about_ae_sexed5_4efd45fa:
 
     # Max_01 "Помою, не вопрос."
-    Max_01 ""
+    Max_01 "Ja, kein Problem."
 
 # game/dialogues/lisatalk.rpy:4222
 translate german lisa_about_ae_sexed5_8284a7b6:
 
     # Lisa_01 "Спасибо, Макс! Я рада, что решила посоветоваться с тобой..."
-    Lisa_01 ""
+    Lisa_01 "Vielen Dank, Max! Ich bin froh, dass ich mich an dich gewendet habe..."
 
 # game/dialogues/lisatalk.rpy:4223
 translate german lisa_about_ae_sexed5_94ee0985_2:
 
     # Max_00 "Не за что."
-    Max_00 ""
+    Max_00 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:4228
 translate german lisa_about_ae_sexed5_c9c40629_1:
 
     # Max_09 "{m}Так, а вот это мне нужно обсудить с Эриком! Потому что я хочу видеть, чему он там её будет \"учить\"...{/m}"
-    Max_09 ""
+    Max_09 "{m}Okay, das ist etwas, was ich mit Eric besprechen muss! Weil ich sehen will, was er ihr \"beibringen\" wird...{/m}"
 
 # game/dialogues/lisatalk.rpy:4233
 translate german lisa_about_ae_sexed5_ce7b5515:
 
     # Lisa_09 "Я вот не знаю. Поэтому и решила с тобой посоветоваться. Наверно, соглашусь... Мне это интересно. К тому же, кто ещё меня научит, если не взрослый опытный мужчина? Просто не знаю, насколько это правильно..."
-    Lisa_09 ""
+    Lisa_09 "Ich weiß es nicht. Deshalb dachte ich, ich frage dich. Ich denke, ich muss zustimmen... Ich bin interessiert. Außerdem, wer sonst soll mich unterrichten, wenn nicht ein erwachsener, erfahrener Mann? Ich weiß nur nicht, ob es das Richtige ist..."
 
 # game/dialogues/lisatalk.rpy:4234
 translate german lisa_about_ae_sexed5_317c7258_1:
 
     # Max_09 "{m}Вот же Эрик сволочь! Я прикидываюсь, что дружу с ним, чтобы у меня не было никаких проблем и вместе с тем можно было спокойно придумать, как от него избавиться... Но теперь, всё это под угрозой. Лучше прикидываться дальше и быстрее думать, что делать...{/m}"
-    Max_09 ""
+    Max_09 "{m}Eric ist ein Mistkerl! Ich gebe vor, mit ihm befreundet zu sein, damit ich keine Probleme habe und gleichzeitig sicher herausfinden kann, wie ich ihn loswerde... Aber jetzt ist das alles in Gefahr. Es ist besser, sich weiter zu verstellen und schneller zu überlegen, was zu tun ist...{/m}"
 
 # game/dialogues/lisatalk.rpy:4235
 translate german lisa_about_ae_sexed5_722951fb_1:
 
     # Lisa_00 "Макс, ты чего завис?"
-    Lisa_00 ""
+    Lisa_00 "Max, wieso bist du noch da?"
 
 # game/dialogues/lisatalk.rpy:4236
 translate german lisa_about_ae_sexed5_b48b9e12:
 
     # Max_10 "Конечно это не правильно! Нет чтобы ко мне с этим обратиться... Я тоже могу многому научить!"
-    Max_10 ""
+    Max_10 "Natürlich ist das nicht richtig! Du kannst damit zu mir kommen... Ich kann dir auch viel beibringen!"
 
 # game/dialogues/lisatalk.rpy:4237
 translate german lisa_about_ae_sexed5_c8097947:
 
     # Lisa_03 "О великий учитель... Сам-то с кем практикуешься, с собственной рукой перед компьютером?"
-    Lisa_03 ""
+    Lisa_03 "O großer Lehrer... Mit wem übst du, mit deiner eigenen Hand oder vor dem Computer?"
 
 # game/dialogues/lisatalk.rpy:4238
 translate german lisa_about_ae_sexed5_0616845d:
 
     # Max_09 "Что за вздор! Я многое знаю и пробовал..."
-    Max_09 ""
+    Max_09 "Was für ein Blödsinn! Ich weiß Bescheid und habe viele Dinge ausprobiert..."
 
 # game/dialogues/lisatalk.rpy:4243
 translate german lisa_about_ae_sexed5_166344de:
 
     # Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
-    Lisa_01 ""
+    Lisa_01 "Ja, klar, mach dich nicht lächerlich. Also, was meinst du, Max? Nur wenn ich ja sage, musst du Montags nach dem Essen \"verschwindenẞ\"... mindestens eine halbe Stunde lang."
 
 # game/dialogues/lisatalk.rpy:4244
 translate german lisa_about_ae_sexed5_73916dd2_1:
 
     # Max_04 "Хорошо, я найду чем заняться."
-    Max_04 ""
+    Max_04 "OK, ich werde etwas zu tun finden."
 
 # game/dialogues/lisatalk.rpy:4245
 translate german lisa_about_ae_sexed5_37dc3d8a_1:
 
     # Lisa_02 "Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
-    Lisa_02 ""
+    Lisa_02 "Es wäre schön, wenn du in der Zwischenzeit den Abwasch für mich erledigen könntest. Ich würde dir dankbar dafür sein."
 
 # game/dialogues/lisatalk.rpy:4246
 translate german lisa_about_ae_sexed5_4efd45fa_1:
 
     # Max_01 "Помою, не вопрос."
-    Max_01 ""
+    Max_01 "Ja, kein Problem."
 
 # game/dialogues/lisatalk.rpy:4247
 translate german lisa_about_ae_sexed5_8284a7b6_1:
 
     # Lisa_01 "Спасибо, Макс! Я рада, что решила посоветоваться с тобой..."
-    Lisa_01 ""
+    Lisa_01 "Vielen Dank, Max! Ich bin froh, dass ich mich an dich gewendet habe..."
 
 # game/dialogues/lisatalk.rpy:4248
 translate german lisa_about_ae_sexed5_94ee0985_3:
 
     # Max_00 "Не за что."
-    Max_00 ""
+    Max_00 "Keine Ursache."
 
 # game/dialogues/lisatalk.rpy:4251
 translate german lisa_about_ae_sexed5_c6aab9d9:
 
     # Lisa_13 "Потому что мама не хочет учить меня большему, а Эрик предложил это делать без неё. И сказал, что будет лучше, если нам никто не будет мешать при этом."
-    Lisa_13 ""
+    Lisa_13 "Weil Mom mir nichts weiter zeigen will und Eric vorgeschlagen hat, dass wir es ohne sie machen. Und er sagte, es wäre besser, wenn uns dabei niemand stören würde."
 
 # game/dialogues/lisatalk.rpy:4252
 translate german lisa_about_ae_sexed5_9b991e15:
 
     # Max_12 "Да вот ещё! Какие ещё, к чёрту, занятия наедине с Эриком?! И ты ещё сомневаешься?"
-    Max_12 ""
+    Max_12 "Das ist noch nicht alles! Was zum Teufel willst du denn sonst mit Eric alleine machen? Und du hast immer noch Zweifel?"
 
 # game/dialogues/lisatalk.rpy:4253
 translate german lisa_about_ae_sexed5_dc8c4c15:
 
     # Lisa_10 "Я... Я не знаю, Макс... Мне всё это интересно, но... без мамы..."
-    Lisa_10 ""
+    Lisa_10 "Я... Ich weiß nicht, Max... Ich bin neugierig auf all das, aber... ohne Mom..."
 
 # game/dialogues/lisatalk.rpy:4258
 translate german lisa_about_ae_sexed5_3f9aadb5:
 
     # Max_16 "Да это даже с мамой полным бредом будет! Хрен ему, а не моя младшая сестрёнка. Никаких уроков с Эриком не будет! То, что он затевает - в конец гадко!"
-    Max_16 ""
+    Max_16 "Selbst mit Mom wäre das völliger Mist! Scheiß auf ihn, nicht mit meiner kleinen Schwester. Es wird keinen Unterricht mit Eric geben! Das, was er vorhat, ist absolut widerwärtig!"
 
 # game/dialogues/lisatalk.rpy:4259
 translate german lisa_about_ae_sexed5_1083feb5:
 
     # Lisa_11 "Серьёзно? Ты правда так думаешь?"
-    Lisa_11 ""
+    Lisa_11 "Wirklich? Glaubst du das wirklich?"
 
 # game/dialogues/lisatalk.rpy:4260
 translate german lisa_about_ae_sexed5_f648f696:
 
     # Max_15 "Ну конечно серьёзно, в противном случае, он не стал бы делать это у мамы за спиной, а предложил бы это сделать в её присутствии."
-    Max_15 ""
+    Max_15 "Natürlich im Ernst, sonst hätte er es nicht hinter Moms Rücken versucht, sondern in ihrem Beisein."
 
 # game/dialogues/lisatalk.rpy:4261
 translate german lisa_about_ae_sexed5_d92e136c:
 
     # Lisa_09 "Хм... Возможно ты прав..."
-    Lisa_09 ""
+    Lisa_09 "Hmmm... Du könntest Recht haben..."
 
 # game/dialogues/lisatalk.rpy:4266
 translate german lisa_about_ae_sexed5_a183020d:
 
     # Max_09 "Конечно прав! Даже не думай соглашаться!"
-    Max_09 ""
+    Max_09 "Natürlich habe ich Recht! Denk nicht einmal daran, zuzustimmen!"
 
 # game/dialogues/lisatalk.rpy:4267
 translate german lisa_about_ae_sexed5_ef445d0f:
 
     # Lisa_01 "Я так и сделаю... я не стану соглашаться на его предложение."
-    Lisa_01 ""
+    Lisa_01 "Ich habe... Ich werde nicht auf sein Angebot eingehen."
 
 # game/dialogues/lisatalk.rpy:4268
 translate german lisa_about_ae_sexed5_64be1252:
 
     # Max_05 "Правильное решение, Лиза! Молодец!"
-    Max_05 ""
+    Max_05 "Gute Entscheidung, Lisa! Gut gemacht!"
 
 # game/dialogues/lisatalk.rpy:4269
 translate german lisa_about_ae_sexed5_e151ce34:
 
     # Lisa_02 "Спасибо за совет, Макс! Ты настоящий старший брат!"
-    Lisa_02 ""
+    Lisa_02 "Danke für den Rat, Max! Du bist ein echter großer Bruder!"
 
 # game/dialogues/lisatalk.rpy:4270
 translate german lisa_about_ae_sexed5_ce8f6f25:
 
     # Max_07 "Всегда пожалуйста, сестрёнка! А с Эриком я разберусь..."
-    Max_07 ""
+    Max_07 "Gern geschehen, Schwesterherz! Und ich kümmere mich um Eric..."
 
 # game/dialogues/lisatalk.rpy:4275
 translate german lisa_about_ae_sexed5_a8cf08b3_2:
 
     # Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
-    Max_09 ""
+    Max_09 "{m}Eric scheint Lisas Naivität auszunutzen und versucht heimlich hinter dem Rücken von Mom, meine kleine Schwester zu manipulieren! Das muss sofort aufhören!{/m}"
 
 # game/dialogues/lisatalk.rpy:4279
 translate german lisa_about_ae_sexed5_6e4f777a:
 
     # Max_07 "{m}Идти к маме с компроматом на Эрика рискованно. Она в слишком большой его власти. Поэтому нужно позаботиться о том, чтобы мои сёстры были со мной на одной стороне и поддержали меня перед мамой. А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
-    Max_07 ""
+    Max_07 "{m}Es ist riskant, mit belastenden Informationen über Eric zu Mom zu gehen. Sie steht zu sehr unter seinem Einfluss. Ich muss also sicherstellen, dass meine Schwestern auf meiner Seite sind und mich gegenüber Mom unterstützen. Und um Erics Angriffe auf die Mädchen zu unterbinden, bedarf es eines Tricks, den man anwenden kann!{/m}"
 
 # game/dialogues/lisatalk.rpy:4282
 translate german lisa_about_ae_sexed5_d336737a:
 
     # Max_07 "{m}Мне нужно заснять Эрика в более компрометирующей обстановке, чем у меня сейчас есть. А так как мама находится в огромной власти Эрика, мне нужно позаботиться о том, чтобы мои сёстры были со мной на одной стороне и поддержали меня перед мамой. А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
-    Max_07 ""
+    Max_07 "{m}Ich muss Eric in einer kompromittierenden Umgebung filmen, als ich es bis jetzt getan habe. Und da Mom unter Erics großem Einfluss steht, muss ich sicherstellen, dass meine Schwestern auf meiner Seite sind und mich bei Mom unterstützen. Und um Erics Angriffe auf die Mädchen zu stoppen, muss ich eine Art Trick anwenden!{/m}"
 
 # game/dialogues/lisatalk.rpy:4285
 translate german lisa_about_ae_sexed5_a052c712:
 
     # Max_07 "{m}На Эрика срочно нужно достать компромат! Если он и делает что-то такое, то явно по ночам, когда никто не видит. Нужно последить за ним... А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
-    Max_07 ""
+    Max_07 "{m}Jetzt muss ich mehr über Eric herausfinden! Wenn er so etwas tut, dann offensichtlich nachts, wenn niemand zusieht. Ich muss ihn im Auge behalten... Und um Erics Angriffe auf die Mädchen zu stoppen, sollte ich ihn irgendwie austricksen!{/m}"
 
 translate german strings:
 
     # game/dialogues/lisatalk.rpy:4143
     old "Это да... Тогда, на здоровье, сестрёнка. Мешать не буду."
-    new ""
+    new "Das ist richtig... Gern geschehen, Schwesterherz. Ich will nicht stören."
 
     # game/dialogues/lisatalk.rpy:4143
     old "Ясно. А тебе не кажется, что это как минимум неправильно?"
-    new ""
+    new "Verstehe. Hältst du das nicht zumindest für falsch?"
 
     # game/dialogues/lisatalk.rpy:4204
     old "Это да... Тогда, на здоровье, сестрёнка. Занимайтесь."
-    new ""
+    new "Das ist richtig... Gern geschehen, Schwesterherz. Weitermachen."
 
     # game/dialogues/lisatalk.rpy:4204
     old "Ясно. И что, ты хочешь на это согласиться?"
-    new ""
+    new "Verstehe. Und, du willst mitmachen?"
 

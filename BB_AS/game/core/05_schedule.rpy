@@ -306,7 +306,7 @@ label set_lisa_schedule:
         Schedule((1, ), '22:0', '22:29', 'bath', "принимает ванну", 'house', 3, 'lisa_bath', variable="flags.lisa_sexed>=4", enabletalk=False, glow=120),
         Schedule((1, ), '22:30', '22:59', 'bath', "принимает ванну", 'house', 3, 'lisa_bath', enabletalk=False, glow=120),
         Schedule((0, 2, 3, 4, 5, 6), '22:0', '22:59', 'bath', "принимает ванну", 'house', 3, 'lisa_bath', enabletalk=False, glow=120),
-        Schedule((1, 2, 3, 4, 5), '23:0', '23:59', 'homework', "учит уроки", 'house', 0, 'lisa_homework', glow=105),
+        Schedule((1, 2, 3, 4, 5), '23:0', '23:59', 'homework', "учит уроки", 'house', 0, 'lisa_homework', talklabel='lisa_homework_closer', glow=105),
         Schedule((0, 6), '23:0', '23:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', glow=105),
         )
 

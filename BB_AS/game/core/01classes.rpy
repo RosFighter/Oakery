@@ -387,6 +387,7 @@ init python:
         sex_ed  = 0     # урок секс.образования
         blog    = 0     # блог
         blog_we = 0     # блог с Эриком
+        dressed = 0     # переодевания не по расписанию
 
         # диалоги
         dishes      = 0     # диалог о помывке посуды
@@ -410,6 +411,7 @@ init python:
             self.sex_ed     = 0
             self.blog       = 0
             self.blog_we    = 0
+            self.dressed    = 0
 
             self.dishes     = 0
             self.tvwatch    = 0
@@ -433,6 +435,7 @@ init python:
         # подсматривания
         sleep   = 0
         dressed = 0
+
         # диалоги
         sun_cream = 0
 
@@ -593,6 +596,10 @@ init python:
         attention   = 0         # день, когда последний раз было уделено внимание персонажу
 
         plan_name   = None      # наименование текущего действия для ускорения сранений. Обновляется при каждом запросе расписания с текущей датой/временем
+        loc         = None      # локация, местонахождение персонажа. Обновляется при каждом запросе расписания с текущей датой/временем
+
+        prev_plan   = None      # предыдущий наименование действия
+        prev_dress  = None      # одежда предыдущего действия
 
         gifts       = None      # полученные подарки
         sorry       = None      # "извинительные" подарки
@@ -615,6 +622,9 @@ init python:
             self.mood       = mood              # текущее настроение
             self.relmax     = relmax            # уровень отношений с ГГ
             self.plan       = [Schedule((0, 1, 2, 3, 4, 5, 6), '0:00', '23:59', 'None')]    # расписание персонажа
+            self.loc        = None
+            self.prev_plan  = None
+            self.prev_dress = None
 
             self.gifts      = []                # полученные подарки
             self.sorry      = SorryGift()       # "извинительные" подарки
@@ -737,14 +747,21 @@ init python:
             if len(rez) > 1:
                 print("ошибочка-с...", rez)
             elif len(rez) == 0:
-                self.plan_name = None
+                self.plan_name  = None
+                self.loc        = None
                 return None
             else:
                 if d=='' and t=='':
                     if rez[0].name:
-                        self.plan_name = rez[0].name
+                        if self.plan_name != rez[0].name:
+                            self.prev_plan  = self.plan_name
+                            self.prev_dress = self.dress_inf
+                            self.plan_name  = rez[0].name
+                            self.loc        = eval(rez[0].loc+'['+str(rez[0].room)+']')
                     else:
+                        self.prev_plan = self.plan_name
                         self.plan_name = None
+                        self.loc       = None
                 return rez[0]
 
         # Возвращает список записей с текущим действием персонажа

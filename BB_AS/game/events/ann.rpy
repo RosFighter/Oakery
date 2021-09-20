@@ -117,7 +117,7 @@ label ann_shower:
         jump .end_peeping
 
     label .start_peeping:
-        $ Skill('hide', 0.03)
+        $ Skill('hide', 0.03, 10)
         $ __ran1 = renpy.random.randint(1, 4)
 
         scene image ('Ann shower 0'+str(__ran1))
@@ -212,7 +212,7 @@ label ann_shower:
         jump .end_peeping
 
     label .end_peeping:
-        $ current_room, prev_room = prev_room, current_room
+        $ current_room = house[6]
         $ spent_time += 10
         jump Waiting
 
@@ -313,7 +313,7 @@ label ann_dressed_work:
                 $ renpy.show('Ann voyeur '+__ran1)
                 $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
-            $ Skill('hide', 0.03)
+            $ Skill('hide', 0.03, 10)
             Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
             jump .end
         "{i}уйти{/i}":
@@ -467,7 +467,7 @@ label ann_dressed_shop:
                 $ renpy.show('Ann voyeur '+__ran1)
                 $ renpy.show('FG voyeur-morning-00'+mgg.dress)
 
-            $ Skill('hide', 0.03)
+            $ Skill('hide', 0.03, 10)
             Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
             jump .end
         "{i}уйти{/i}":
@@ -692,14 +692,14 @@ label ann_bath:
         scene BG bath-00
         $ renpy.show('Ann bath-window 0'+str(__r1))
         show FG bath-00
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         if __r1 == 1:
             menu:
                 Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..."
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show('Ann bath-window '+renpy.random.choice(['02', '03', '04']))
-                    $ Skill('hide', 0.025)
+                    $ Skill('hide', 0.025, 10)
                     menu:
                         Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..."
                         "{i}уйти{/i}":
@@ -714,7 +714,7 @@ label ann_bath:
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Ann bath-window 05
-                    $ Skill('hide', 0.025)
+                    $ Skill('hide', 0.025, 10)
                     menu:
                         Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..."
                         "{i}уйти{/i}":

@@ -983,12 +983,12 @@ screen room_navigation():
             if len(char) !=0:
                 $ char = ' ('+char[:-2]+')'
 
-            button xysize (126, 190) action [Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]:
+            button xysize (126, 190) action Transition_to_room(room):#[Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]:
                 vbox xsize 126 spacing 0:
                     frame xysize (126, 140) background None:
                         imagebutton align (0.5, 0.0) idle room.icon selected_idle room.icon + ' a' selected_hover room.icon + ' a':
                                     selected room == current_room focus_mask True at middle_zoom
-                                    action [Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
+                                    action Transition_to_room(room)#[Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
                         if room != current_room:
                             # вывод миниатюр персонажей внизу миниатюры локации
                             if len(room.cur_char) > 0:
@@ -996,10 +996,10 @@ screen room_navigation():
                                     for char in room.cur_char:
                                         if char == 'alice' and (tm < '09:00' or tm >= '20:00'):
                                             imagebutton idle chars[char].pref+' icon a' focus_mask True at small_face:
-                                                action [Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
+                                                action Transition_to_room(room)#[Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
                                         else:
                                             imagebutton idle chars[char].pref+' icon' focus_mask True at small_face:
-                                                action [Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
+                                                action Transition_to_room(room)#[Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
                         else:
                             # если же это текущая локация - вывод над миниатюрой
                             # более крупных значков персонажей. положение зависит от количества
@@ -1061,7 +1061,7 @@ screen room_navigation():
                             elif len(current_room.cur_char) == 4:
                                 pass
                     text room.name font 'trebucbd.ttf' size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
-            key str(i) action [Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
+            key str(i) action Transition_to_room(room)#[Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
 
     hbox:
         align(.99, .99)  # правый нижний угол

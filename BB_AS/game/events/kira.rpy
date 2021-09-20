@@ -72,7 +72,7 @@ label kira_bath:
         scene BG bath-00
         show Kira bath-window 01
         show FG bath-00
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
 
         Max_02 "Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой..."
         if _in_replay or all([kira.flags.porno, lisa.flags.m_foot>1, poss['massage'].used(4)]):
@@ -2173,7 +2173,7 @@ label kira_shower:
             return
 
     label .ladder:
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
@@ -2197,7 +2197,7 @@ label kira_shower:
         jump .end
 
     label .start_peeping:
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
 
         $ renpy.scene()
         $ kira.daily.shower = 2
@@ -2325,7 +2325,7 @@ label kira_shower:
         jump .end
 
     label .end:
-        $ current_room, prev_room = prev_room, current_room
+        $ current_room = house[6]
         $ spent_time += 10
         jump Waiting
 
@@ -2350,7 +2350,7 @@ label kira_lisa_shower:
             return
 
     label .ladder:
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
@@ -2437,7 +2437,7 @@ label kira_lisa_shower:
         jump .end
 
     label .start_peeping:
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
 
         scene Kira shower-Lisa 01
         $ renpy.show('FG shower 00'+mgg.dress)
@@ -2476,7 +2476,7 @@ label kira_lisa_shower:
         jump .end
 
     label .end:
-        $ current_room, prev_room = prev_room, current_room
+        $ current_room = house[6]
         $ spent_time += 10
         jump Waiting
 
@@ -2500,7 +2500,7 @@ label kira_alice_shower:
             return
 
     label .ladder:
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "Посмотрим, что у нас тут..."
@@ -2585,7 +2585,7 @@ label kira_alice_shower:
         jump .end
 
     label .start_peeping:
-        $ Skill('hide', 0.025)
+        $ Skill('hide', 0.025, 10)
 
         scene Kira shower-Alice 01
         $ renpy.show('FG shower 00'+mgg.dress)
@@ -2624,7 +2624,7 @@ label kira_alice_shower:
         jump .end
 
     label .end:
-        $ current_room, prev_room = prev_room, current_room
+        $ current_room = house[6]
         $ spent_time += 10
         jump Waiting
 

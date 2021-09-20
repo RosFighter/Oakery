@@ -485,8 +485,9 @@ label alice_talk_tv_choice_mass:
     $ renpy.dynamic('can_double_choko', 'rez', 'dial')
 
     # вторая конфета нужна, если Макс видел развлечение Алисы через камеру
-    # если пройден трезвый путь, достаточно одной конфеты, за исключением джинсов на Алисе
-    $ can_double_choko = alice.daily.drink and kol_choco>0 and (5 > alice.flags.hip_mass > 0 or alice.dress=='a')
+    # если пройден трезвый путь, достаточно одной конфеты, за исключением джинсов на Алисе // уже не актуально
+    # $ can_double_choko = alice.daily.drink and kol_choco>0 and (5 > alice.flags.hip_mass > 0 or alice.dress=='a')
+    $ can_double_choko = alice.daily.drink and kol_choco>0 and alice.flags.hip_mass > 0
 
     menu .create_menu:
         # заполнение пунктов меню
@@ -2790,7 +2791,8 @@ label massage_sunscreen:
             if len(_massaged)>0 and _massaged[0]=='foot':
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
 
-            if skill_outcome('massage', mgg.massage * _multipler, 95):
+            $ skill_outcome('massage', mgg.massage * _multipler, 95)
+            if rand_result:
                 # Алисе понравилось
                 Alice_07 "Ух, как приятно... Ты молодец, Макс! Моим ножкам это понравилось... Не останавливайся, продолжай..."
                 $ infl[alice].add_m(4)
@@ -2824,7 +2826,8 @@ label massage_sunscreen:
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
 
             $ _massaged.append('shoulders')
-            if skill_outcome('massage', mgg.massage * _multipler, 95):
+            $ skill_outcome('massage', mgg.massage * _multipler, 95)
+            if rand_result:
                 # Алисе понравилось
                 $ infl[alice].add_m(4)
                 menu:
@@ -2865,7 +2868,8 @@ label massage_sunscreen:
                 $ _multipler *= 2 # множитель навыка удваивается, если ступни были первыми
 
             $ _massaged.append('spine')
-            if skill_outcome('massage', mgg.massage * _multipler, 95):
+            $ skill_outcome('massage', mgg.massage * _multipler, 95)
+            if rand_result:
                 # Алисе понравилось
                 $ infl[alice].add_m(4)
                 menu:
@@ -2929,7 +2933,8 @@ label massage_sunscreen:
             jump .double
         else:
             $ _multipler = 10 - len(_massaged) if len(_massaged) else 20  # множитель навыка. Если ступни первые, шанс удваивается
-            if skill_outcome('massage', mgg.massage * _multipler, 95):
+            $ skill_outcome('massage', mgg.massage * _multipler, 95)
+            if rand_result:
                 # Алисе понравилось
                 $ infl[alice].add_m(4)
                 Alice_07 "Ух, как же моим пяточкам приятно... Не останавливайся, продолжай..."

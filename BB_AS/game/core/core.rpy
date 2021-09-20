@@ -12,6 +12,7 @@ label Waiting:
 
     $ prevday = day
     $ prevtime = tm
+    $ prev_room = current_room
 
     if alarm_time != '':
         $ d2 = TimeDifference(prevtime, alarm_time)
@@ -116,7 +117,6 @@ label Waiting:
         $ cur_ratio = 1
         if status_sleep:
             $ status_sleep = False
-            # with Fade(0.4, 0, 0.3)
         $ alarm_time = ''
         jump expression name_label
 
@@ -488,6 +488,9 @@ label AfterWaiting:
             $ cam_flag.remove('notebook_on_terrace')
     $ SetAvailableActions()
 
+    ## случайное попадание на переодевания
+    call random_dressed from _call_random_dressed
+
     if name_label != '' and renpy.has_label(name_label):
         # управляющий блок найден и существует
         call expression name_label from _call_expression
@@ -519,9 +522,83 @@ label AfterWaiting:
         elif all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', flags.eric_noticed, eric.stat.mast]):
             $ renpy.show('Eric jerk off fg-'+current_room.cur_bg[-1:])
 
+
+    ## если в комнате есть персонаж, отмечаем, что видели его
+    python:
+        for char in current_room.cur_char:
+            chars[char].hourly.dressed = 1
+
     window hide
     $ renpy.block_rollback()
     call screen room_navigation
+
+
+label random_dressed:
+
+    if not lisa.hourly.dressed:
+        #  Лиза ещё не переодевалась
+        if any([
+                # после душа в обычную
+                all([lisa.prev_plan == 'shower', lisa.plan_name == 'read']),
+
+                # после отдыха во дворе в обычную одежду, далее читает
+                all([lisa.prev_plan in ['sun', 'swim'], lisa.plan_name == 'read']),
+
+                # после мытья посуды в другую повседневную одежду, если игрок её поменял
+                all([lisa.prev_plan == 'dishes', lisa.plan_name == 'phone', lisa.daily.dishes < 2, lisa.prev_dress != lisa.dress_inf]),
+
+                # после ванны в обычную, если не остаётся в полотенце
+                all([lisa.prev_plan == 'bath', lisa.plan_name in ['phone', 'homework'], lisa.dress_inf not in ['04a', '04b']]),
+            ]):
+            if all([current_room == prev_room, current_room == house[0]]):
+                # Макс оставался в комнате в своей комнате
+                call lisa_sudden_dressing(-1) from _call_lisa_sudden_dressing_4
+            elif all([current_room != prev_room, current_room == house[0]]):
+                # Макс входит в свою комнату
+                if not lisa.daily.dressed:
+                    # сегодня ещё не попадали на переодевание
+                    if random_outcome(40):
+                        call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_5    # "нулевой"
+                    elif random_outcome(35):
+                        call lisa_sudden_dressing(1) from _call_lisa_sudden_dressing_6    # неповезло
+                    elif random_outcome(25):
+                        call lisa_sudden_dressing(2) from _call_lisa_sudden_dressing_7    # повезло
+                elif random_outcome(30):
+                    # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
+                    call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_8    # "нулевой"
+
+        elif any([
+                # после школы в купальник (без Оливии)
+                all([lisa.prev_plan in ['in_shcool', 'on_courses'], lisa.plan_name in ['sun', 'swim'], not olivia_visits()]),
+
+                # после чтения в купальник (без Оливии)
+                all([lisa.prev_plan == 'read', lisa.plan_name in ['sun', 'swim'], not olivia_visits()]),
+            ]):
+            if all([current_room == prev_room, current_room == house[0]]):
+                # Макс оставался в комнате в своей комнате
+                call lisa_sudden_dressing(-1) from _call_lisa_sudden_dressing_9
+            elif all([current_room != prev_room, current_room == house[0]]):
+                # Макс входит в свою комнату
+                if not lisa.daily.dressed:
+                    # сегодня ещё не попадали на переодевание
+                    if 'bikini' in lisa.gifts:
+                        # красное бикини есть, доступны все варианты
+                        if random_outcome(40):
+                            call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_10    # "нулевой"
+                        elif random_outcome(35):
+                            call lisa_sudden_dressing(1) from _call_lisa_sudden_dressing_11    # неповезло
+                        elif random_outcome(25):
+                            call lisa_sudden_dressing(2) from _call_lisa_sudden_dressing_12    # повезло
+                    elif random_outcome(40):
+                        # красного бикини ещё нет, то может быть только нулевой момент
+                        call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_13    # "нулевой"
+                elif random_outcome(30):
+                    # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
+                    call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_14    # "нулевой"
+
+
+
+    return
 
 
 label night_of_fun:
@@ -726,38 +803,6 @@ label after_buying:
             $ notify_list.append(_("В интернет-магазине доступен новый товар."))
 
     return
-
-
-label hide_success_message:
-
-    $ succes          = ''
-    $ undetect        = ''
-    $ succes_hide     = ''
-    $ restrain        = ''
-    $ like            = ''
-    $ lucky           = ''
-    $ alice_good_mass = ''
-    $ lisa_good_mass  = ''
-    $ lisa_good_kiss  = ''
-    $ ann_good_mass   = ''
-
-    return
-
-label show_success_message:
-
-    $ succes          = _("{color=#00FF00}{i}Убеждение удалось!{/i}{/color}\n")
-    $ undetect        = _("{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n")
-    $ succes_hide     = _("{color=#00FF00}{i}Получилось!{/i}{/color}\n")
-    $ restrain        = _("{color=#00FF00}{i}Удалось сдержаться{/i}{/color}\n")
-    $ like            = _("{color=#00FF00}{i}Ей нравится!{/i}{/color}\n")
-    $ lucky           = _("{color=#00FF00}{i}Повезло!{/i}{/color}\n")
-    $ alice_good_mass = _("{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n")
-    $ lisa_good_mass  = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
-    $ lisa_good_kiss  = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
-    $ ann_good_mass   = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
-
-    return
-
 
 
 label after_load:
@@ -1543,3 +1588,8 @@ label update_07_0_99:
     if _version < '0.06.8.10':
         if poss['naughty'].st() == 6 and not alice.flags.touched:
             $ poss['naughty'].stages[6] == 0
+
+    if _version < '0.06.8.12':
+        python:
+            for char in chars:
+                chars[char].daily.dressed = 0

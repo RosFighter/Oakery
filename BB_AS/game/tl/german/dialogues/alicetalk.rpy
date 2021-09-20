@@ -11043,85 +11043,85 @@ translate german strings:
 translate german alice_help_carry_plates_170dcbe9:
 
     # Alice_07 "На это я, на самом деле, и надеялась. Пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Das hatte ich mir wirklich erhofft. Ich könnte wirklich ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf die Veranda bringen." nointeract
 
 # game/dialogues/alicetalk.rpy:5452
 translate german alice_help_carry_plates_78889183:
 
     # Alice_07 "Помочь?! Чего это ты, Макс, такой добрый? Хотя, пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Hilfe?! Warum bist du so nett, Max? Ich könnte allerdings ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf die Veranda bringen." nointeract
 
 # game/dialogues/alicetalk.rpy:5459
 translate german alice_help_carry_plates_9489751c:
 
     # Max_09 "{m}Вот зачем таскать эти тарелки на второй этаж, когда у нас есть прямо здесь, в гостиной, прекрасный большой стол?!{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Warum sollte man die Teller in den ersten Stock bringen, wenn wir hier im Wohnzimmer einen schönen großen Tisch haben?!{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5469
 translate german alice_help_carry_plates_f1599bc0:
 
     # Max_07 "{m}Блин! Теперь я хочу съесть не только своё, но и макароны Лизы. Уж слишком аппетитно они выглядят и пахнут...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Scheiße, jetzt will ich nicht nur meine, sondern auch Lisas Nudeln essen. Es riecht fantastisch und sieht viel zu lecker aus...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5471
 translate german alice_help_carry_plates_c0d8ea5b:
 
     # Max_07 "{m}Ну вот! Алиса себе самые большие котлеты положила... Надо будет хотя бы одной, да поменяться.{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Na toll! Alice behält das größte Schnitzel für sich... Mindestens eins von ihnen muss ausgetauscht werden.{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5473
 translate german alice_help_carry_plates_3d1a9524:
 
     # Max_07 "{m}А вот это не хорошо! У мамы в тарелке слишком много углеводов. Нужно приглядывать за её фигурой, поэтому отложу немного себе...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Das ist nicht gut! Mom's Teller hat zu viele Kohlenhydrate. Ich muss auf ihre Figur achten, also werde ich mir etwas davon für mich nehmen...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5480
 translate german alice_help_carry_plates_d89e30f0:
 
     # Max_02 "{m}Ну что, Эрик... Удачно тебе посидеть на унитазе. Думаю, тебе будет не скучно...{/m}" nointeract
-    Max_02 "" nointeract
+    Max_02 "{m}So, Eric... Ich wünsche dir viel Spaß auf der Toilette. Ich glaube nicht, dass du dich dort langweilen wirst...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5488
 translate german alice_help_carry_plates_ddbe426e:
 
     # Max_03 "{m}Надеюсь, сегодня Эрику никакие потрахушки не светят, благодаря этому средству. Если он сгорит со стыда, я только порадуюсь...{/m}" nointeract
-    Max_03 "" nointeract
+    Max_03 "{m}Ich hoffe, dass Eric dank dieses Medikaments heute Abend keinen Sex haben wird. Ich werde zufrieden sein, wenn er vor Scham versinkt...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5500
 translate german alice_help_carry_plates_008120f8:
 
     # Alice_16 "Вот ты козлина, Макс!"
-    Alice_16 ""
+    Alice_16 "Du bist ein Arschloch, Max!"
 
 # game/dialogues/alicetalk.rpy:5501
 translate german alice_help_carry_plates_2edc33ad:
 
     # Max_01 "Заодно и попку разомнёшь, а то за своим ноутбуком слишком много сидишь."
-    Max_01 ""
+    Max_01 "Das wird dir helfen, deinen Arsch zu bewegen, weil du zu viel am Laptop gesessen hast."
 
 translate german strings:
 
     # game/dialogues/alicetalk.rpy:5454
     old "Ага, не вопрос. Сделаю."
-    new ""
+    new "Kein Problem. Wird gemacht."
 
     # game/dialogues/alicetalk.rpy:5454
     old "Нет, лучше давай сама..."
-    new ""
+    new "Mach das lieber selbst..."
 
     # game/dialogues/alicetalk.rpy:5459
     old "{i}отнести тарелки на веранду{/i}"
-    new ""
+    new "{i}Teller auf die Terasse bringen{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}приступить к ужину{/i}"
-    new ""
+    new "{i}weiter mit dem Abendessen{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку слабительное{/i}"
-    new ""
+    new "{i}Abführmittel auf Erics Teller schütten{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку средство от потенции{/i}"
-    new ""
+    new "{i}Potenzmittel auf Erics Teller verteilen{/i}"
 

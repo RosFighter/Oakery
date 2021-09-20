@@ -861,7 +861,7 @@ label eric_ann_shower:
         jump Waiting
 
     label .start_peeping:
-        $ Skill('hide', 0.03)
+        $ Skill('hide', 0.03, 10)
         $ __r1 = renpy.random.choice(['01', '02', '03'])
         $ renpy.scene()
         $ renpy.show('Eric shower '+ __r1)

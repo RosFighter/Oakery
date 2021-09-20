@@ -762,6 +762,7 @@ label wash_dishes_lisa:
                     $ AddRelMood('lisa', 5, 60, 2)
                     $ dishes_washed = True
                     $ lisa.weekly.dishes += 1
+                    $ lisa.daily.dishes = 2
                     $ spent_time = max((60 - int(tm[-2:])), 30)
                     $ cur_ratio = 2
                     Max_00 "И чего я этим занимаюсь? Делать нечего, что ли..."
@@ -1935,44 +1936,50 @@ label gift_swimsuit:
     label .swimsuit_show:
         if not _in_replay:
             $ persistent.memories['gift_swimsuit.swimsuit_show'] = 1
-        scene BG char Lisa newsuit
-        $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
-        $ renpy.show("Lisa newsuit 01"+__suf)
+
+        # scene BG char Lisa newsuit
+        # $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
+        # $ renpy.show("Lisa newsuit 01"+__suf)
+        scene BG char Lisa dressing-mde-01
+        $ renpy.show('Lisa dressing 07' + ('c' if lisa.plan_name in ['swim', 'sun'] else 'a'))
         with Fade(0.4, 0, 0.3)
+
         Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
         Max_02 "Ладно, ладно... Раздевайся уже!"
-        $ renpy.show("Lisa newsuit 02"+__suf)
+        # $ renpy.show("Lisa newsuit 02"+__suf)
+        scene BG char Lisa dressing-mde-02
+        $ renpy.show('Lisa newsuit 01' + ('a' if lisa.plan_name in ['swim', 'sun'] else ''))
         menu:
             Lisa_02 "Макс! Ты подглядываешь. Ты же обещал... Отвернись, быстро!"
             "Угу, уже... {i}(Демонстративно отвернуться){/i}":
                 pass
-        show Lisa newsuit 03
+        show Lisa newsuit 02
         Max_04 "{m}Да, закрою глаза, когда тут такое... как же!\nУх! А, сестрёнка хороша... Местами даже очень...{/m}"
-        show Lisa newsuit 04
+        show Lisa newsuit 03
         Max_08 "{m}Вот это вид, я понимаю! Главное, чтобы штаны меня не выдали...{/m}"
-        show Lisa newsuit 05
+        show Lisa newsuit 04
         Lisa_03 "Ну, как тебе? Макс, чего молчишь? Скажи, тебе нравится?"
         Max_07 "О... Очень!"
-        show Lisa newsuit 06
+        show Lisa newsuit 05
         Lisa_02 "Ты чего, заикаешься? Правда всё хорошо?"
         Max_03 "Всё просто отлично! А повернись-ка..."
-        show Lisa newsuit 07
+        show Lisa newsuit 06
         Lisa_03 "Сзади тоже всё хорошо?"
         Max_05 "Сзади всё особенно... хорошо..."
-        show Lisa newsuit 08
+        show Lisa dressing 07c1
         Lisa_02 "Я рада, Макс. А теперь тебя ждут обнимашки! Иди ко мне..."
         Max_07 "Оу... Это мне нравится!"
-        $ renpy.show('Lisa newsuit 09'+mgg.dress)
+        $ renpy.show('Lisa hugging myroom 01s'+mgg.dress)
         Lisa_05 "Спасибо тебе большое! Как ты только нашёл этот купальник? Я именно о таком и мечтала!"
         Max_04 "Да, пустяки..."
-        $ renpy.show('Lisa newsuit 10'+mgg.dress)
+        $ renpy.show('Lisa hugging myroom 02s'+mgg.dress)
         Lisa_01 "Даже не представляю, где ты взял на него деньги! Он ведь дорогой..."
         if lisa.flags.promise:
             Max_05 "Мне дороже улыбка моей любимой младшей сестрёнки! И кстати, ты помнишь, что хотела поцеловать меня в щёчку, если я достану для тебя этот купальник?"
             Lisa_05 "Не то чтобы хотела... Честно говоря, я не думала, что ты сможешь его купить, но... Но, думаю, ты это заслужил..."
-            $ renpy.show('Lisa newsuit 11'+mgg.dress)
+            $ renpy.show('Lisa hugging myroom 03s'+mgg.dress)
             Max_06 "{m}Просто супер! Полуголая сестрёнка целует меня в щёку! Она слегка прижалась ко мне своей грудью и даже через одежду я чувствую, какая она у неё упругая...{/m}"
-            $ renpy.show('Lisa newsuit 10'+mgg.dress)
+            $ renpy.show('Lisa hugging myroom 02s'+mgg.dress)
             Lisa_03 "Ну вот, теперь всем хорошо! А мне уже не терпится поплавать и позагорать в своём новом купальнике..."
         else:
             Lisa_03 "Это очень мило, Макс! Мне уже не терпится поплавать и позагорать в нём..."

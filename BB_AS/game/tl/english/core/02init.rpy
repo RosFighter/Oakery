@@ -600,5 +600,5 @@ translate english strings:
 
     # game/core/02init.rpy:127
     old "Тебе помочь накрыть на стол?"
-    new ""
+    new "Do you need help setting the table?"
 

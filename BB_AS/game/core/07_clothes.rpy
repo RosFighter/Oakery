@@ -21,7 +21,7 @@ define clothes_dict = {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('d', '01c', 'Розовые топик и юбочка')],
         'sleep'     : [('a', '02', 'Маечка и штаны'), ('b', '02a', 'Маечка и трусики'), ('c', '02c', 'Трусики')],
         'swimsuit'  : [('a', '03', 'Закрытый купальник'), ('b', '03b', 'Красное бикини')],
-        'learn'     : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('c', '04b', 'Полотенце'), ('d', '01c', 'Розовые топик и юбочка')],
+        'learn'     : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('c', '04b', 'Полотенце'), ('d', '01c', 'Розовые топик и юбочка'), ('e', '01b', 'Школьная форма')],
         },
     'mgg'   : {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '01b', 'Майка и шорты'), ('c', '01c', 'Шорты')],
@@ -180,23 +180,35 @@ init python:
 
         # Лиза
         lisa.clothes.learn.enable(2)        # полотенце доступно всегда
+        lisa.clothes.learn.disable(4)       # школьная форма никогда недоступна (только событием)
         if 'bikini' in lisa.gifts:          # подарен купальник
             lisa.clothes.swimsuit.enable(1)
             lisa.clothes.swimsuit.disable(0)
+        else:
+            lisa.clothes.swimsuit.enable(0)
+            lisa.clothes.swimsuit.disable(1)
         if 'bathrobe' in lisa.gifts:        # подарен халатик
             lisa.clothes.casual.enable(1)
             lisa.clothes.learn.enable(1)
+        else:
+            lisa.clothes.casual.disable(1)
+            lisa.clothes.learn.disable(1)
         if 'kira' in chars:                 # приехала Кира
             lisa.clothes.casual.enable(2)
             lisa.clothes.casual.disable(0)
             lisa.clothes.learn.enable(3)
             lisa.clothes.learn.disable(0)
+        else:
+            lisa.clothes.casual.enable(0)
+            lisa.clothes.casual.disable(2)
+            lisa.clothes.learn.enable(0)
+            lisa.clothes.learn.disable(3)
         if 'poss' in globals() and poss['sg'].st() not in [0, 1, 2, 4]:
             lisa.clothes.sleep.enable(1)
             lisa.clothes.sleep.disable(0)
         else:
             lisa.clothes.sleep.enable(0)
-            lisa.clothes.sleep.disable(1)            
+            lisa.clothes.sleep.disable(1)
 
         # Макс
         if items['max-a'].have:             # куплены шорты с майкой
@@ -206,3 +218,4 @@ init python:
             mgg.clothes.casual.disable(0)
         else:
             mgg.clothes.casual.enable(0)
+            mgg.clothes.casual.disable(2)

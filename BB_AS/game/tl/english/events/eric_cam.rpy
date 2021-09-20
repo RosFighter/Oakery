@@ -288,47 +288,47 @@ translate english cam0_sexed_lisa_6918e27b:
 translate english cam0_eric_resting_b4d3f901:
 
     # Max_01 "{m}Кажется, подмешанное Эрику в еду средство испортило ему всё настроение и он не рискует идти к моей сестрёнке... Именно на это я и рассчитывал!{/m}"
-    Max_01 ""
+    Max_01 "{m}It seems that the drug I spiked Eric's food with has taken effect, and he won't risk going to my sister's... That's exactly what I was counting on!{/m}"
 
 # game/events/eric_cam.rpy:350
 translate english cam0_eric_shat_39c0bef3:
 
     # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 ""
+    Max_09 "I can't really see anything... It's worth looking through the other camera..."
 
 # game/events/eric_cam.rpy:352
 translate english cam0_eric_shat_e517fcdc:
 
     # Max_09 "Ничего толком не видно..."
-    Max_09 ""
+    Max_09 "I can't really see anything..."
 
 # game/events/eric_cam.rpy:366
 translate english cam1_eric_shat_93a7571e:
 
     # Max_02 "Эрик во всю оценивает эффективность слабительного, которое я ему подмешал... Надеюсь, эта обезьяна знает, как пользоваться туалетной бумагой, потому что банановых листьев у нас тут нет!"
-    Max_02 ""
+    Max_02 "Eric is still under the effect of the laxative I gave him... I hope this monkey knows how to use toilet paper, because we don't have banana leaves here!"
 
 # game/events/eric_cam.rpy:368
 translate english cam1_eric_shat_689dedb9:
 
     # Max_02 "Ты что, Эрик, съел что-то не то, что ли?! Бедняга. Ну, держись там..."
-    Max_02 ""
+    Max_02 "Did something upset your stomach, Eric?! Poor guy. Well, hang in there..."
 
 # game/events/eric_cam.rpy:377
 translate english cam0_eric_ann_resting_cb75645d:
 
     # Max_02 "{m}Похоже, потрахушек сегодня не намечается... Интересно, с чего бы это?!{/m}"
-    Max_02 ""
+    Max_02 "{m}Looks like there's no fucking going on tonight... I wonder why that would be.{/m}"
 
 # game/events/eric_cam.rpy:387
 translate english cam0_eric_sleep_bce0a0b5:
 
     # Max_07 "{m}Остаётся надеяться, что я подмешал ему не слишком много успокоительного... Главное, что он сейчас ни к кому не пристаёт.{/m}"
-    Max_07 ""
+    Max_07 "{m}I just hope I didn't slip him too many sedatives... At least he's not bothering anyone right now.{/m}"
 
 # game/events/eric_cam.rpy:397
 translate english cam0_eric_ann_try_fucking_5da5d134:
 
     # Max_01 "{m}Не стоит? Ну ничего, бывает... Но всё равно приятно осознавать, что это происходит из-за моих действий.{/m}"
-    Max_01 ""
+    Max_01 "{m}It's not working? That's okay, it happens... But it's still nice to know that I caused it.{/m}"
 

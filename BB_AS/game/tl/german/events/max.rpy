@@ -1006,5 +1006,5 @@ translate german strings:
 translate german bedtime_thoughts_a9917f30:
 
     # Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
-    Max_07 ""
+    Max_07 "{m}Wie bringe ich Eric dazu, sich eine Weile nicht mehr an meinen Schwestern zu vergreifen... und an Kira... und meine Mom ebenso... Hmm ... Wenn ich Alice beim Eindecken des Tisches helfe, habe ich eine gute Gelegenheit, ihm etwas ins Essen zu mischen! Es lohnt sich, online zu schauen, ob ich so etwas bekommen kann...{/m}"
 

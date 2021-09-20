@@ -537,7 +537,7 @@ translate english lisa_dressed_school_open_door2_f8c0fd52:
 # game/events/lisa.rpy:487
 translate english lisa_dressed_school_open_door2_43bf6961:
 
-    # Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны!" nointeract
+    # Lisa_12 "Макс! Я не одета! Быстро закрой дверь с той стороны!" nointeract
     Lisa_12 "Max! I'm not dressed! Quickly close the door on the other side!" nointeract
 
 # game/events/lisa.rpy:495
@@ -597,7 +597,7 @@ translate english lisa_dressed_school_open_door_733f2342:
 # game/events/lisa.rpy:538
 translate english lisa_dressed_school_open_door_ea1d5c57:
 
-    # Lisa_12 "Макс! Я не одета! Быстрой закрой дверь с той стороны! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
+    # Lisa_12 "Макс! Я не одета! Быстро закрой дверь с той стороны! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}" nointeract
     Lisa_12 "Max! I'm not dressed! Close the door right now! \n\n{color=[orange]}{i}{b}Hint:{/b} Button [[ h ] or [[ ` ] hide/show the interface.{/i}{/color}" nointeract
 
 # game/events/lisa.rpy:542
@@ -645,7 +645,7 @@ translate english lisa_dressed_shop_knock_056fd501:
 # game/events/lisa.rpy:627
 translate english lisa_dressed_shop_open_door_92474c24:
 
-    # Lisa_12 "Макс! [phrase!t]Быстрой закрой дверь с той стороны!" nointeract
+    # Lisa_12 "Макс! [phrase!t]Быстро закрой дверь с той стороны!" nointeract
     Lisa_12 "Max! [phrase!t]Close the door right now!" nointeract
 
 # game/events/lisa.rpy:633
@@ -1821,4 +1821,3 @@ translate english strings:
     # game/events/lisa.rpy:1298
     old "Просто иди и всё..."
     new "Just go, that's all..."
-

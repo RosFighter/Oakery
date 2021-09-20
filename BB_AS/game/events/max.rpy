@@ -43,7 +43,7 @@ label Sleep:
     $ renpy.show('Max sleep-night '+pose3_3)
     $ renpy.show('FG Max sleep-night '+pose3_3)
 
-    call bedtime_thoughts
+    call bedtime_thoughts from _call_bedtime_thoughts
 
     Max_19 "Как же в этом доме хорошо..."
 
@@ -88,7 +88,7 @@ label LittleEnergy:
             else:
                 $ renpy.show('Max sleep-night '+pose3_1)
                 $ renpy.show('FG Max sleep-night '+pose3_1)
-                call bedtime_thoughts
+                call bedtime_thoughts from _call_bedtime_thoughts_1
 
             Max_19 "Как же в этом доме хорошо..."
             $ number_autosave += 1
@@ -146,7 +146,7 @@ label Alarm:
     $ renpy.show('Max sleep-night '+pose3_2)
     $ renpy.show('FG Max sleep-night '+pose3_2)
 
-    call bedtime_thoughts
+    call bedtime_thoughts from _call_bedtime_thoughts_2
 
     Max_19 "Как же в этом доме хорошо..."
     $ number_autosave += 1
@@ -1086,7 +1086,7 @@ label return_part_loan:
 label bedtime_thoughts:
     # Мысли Макса перед сном
 
-    if flags.lisa_sexed == 6:
+    if flags.lisa_sexed == 6 and lisa.dcv.battle.stage not in [1, 4]:
         # о том, как напакостить Эрику
         Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
         $ flags.lisa_sexed = 7

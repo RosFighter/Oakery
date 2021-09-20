@@ -11042,85 +11042,85 @@ translate english strings:
 translate english alice_help_carry_plates_170dcbe9:
 
     # Alice_07 "На это я, на самом деле, и надеялась. Пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "That's actually what I was hoping for. I sure could use an extra pair of hands. You can take the food outside while I finish up here." nointeract
 
 # game/dialogues/alicetalk.rpy:5452
 translate english alice_help_carry_plates_78889183:
 
     # Alice_07 "Помочь?! Чего это ты, Макс, такой добрый? Хотя, пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "You want to help?! Why are you being so kind all of a sudden? I sure could use an extra pair of hands. You can take the food outside while I finish up here." nointeract
 
 # game/dialogues/alicetalk.rpy:5459
 translate english alice_help_carry_plates_9489751c:
 
     # Max_09 "{m}Вот зачем таскать эти тарелки на второй этаж, когда у нас есть прямо здесь, в гостиной, прекрасный большой стол?!{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Why carry those plates up to the second floor when we have a nice big table right here in the living room?!{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5469
 translate english alice_help_carry_plates_f1599bc0:
 
     # Max_07 "{m}Блин! Теперь я хочу съесть не только своё, но и макароны Лизы. Уж слишком аппетитно они выглядят и пахнут...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Crap! Now I want to eat not only mine, but Lisa's pasta as well. They look and smell too appetizing...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5471
 translate english alice_help_carry_plates_c0d8ea5b:
 
     # Max_07 "{m}Ну вот! Алиса себе самые большие котлеты положила... Надо будет хотя бы одной, да поменяться.{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}There you go! Alice kept the biggest cutlets for herself... We'll have to swap at least one of them.{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5473
 translate english alice_help_carry_plates_3d1a9524:
 
     # Max_07 "{m}А вот это не хорошо! У мамы в тарелке слишком много углеводов. Нужно приглядывать за её фигурой, поэтому отложу немного себе...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Now that's not good! My mom has too many carbs on her plate. I have to keep an eye on her figure, so I'll save take some for myself...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5480
 translate english alice_help_carry_plates_d89e30f0:
 
     # Max_02 "{m}Ну что, Эрик... Удачно тебе посидеть на унитазе. Думаю, тебе будет не скучно...{/m}" nointeract
-    Max_02 "" nointeract
+    Max_02 "{m}Have a good time on the toilet, Eric. I don't think you'll be bored...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5488
 translate english alice_help_carry_plates_ddbe426e:
 
     # Max_03 "{m}Надеюсь, сегодня Эрику никакие потрахушки не светят, благодаря этому средству. Если он сгорит со стыда, я только порадуюсь...{/m}" nointeract
-    Max_03 "" nointeract
+    Max_03 "{m}I hope Eric doesn't get laid tonight, thanks to this remedy. If he burns with shame, I'll be glad...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5500
 translate english alice_help_carry_plates_008120f8:
 
     # Alice_16 "Вот ты козлина, Макс!"
-    Alice_16 ""
+    Alice_16 "You're an asshole, Max!"
 
 # game/dialogues/alicetalk.rpy:5501
 translate english alice_help_carry_plates_2edc33ad:
 
     # Max_01 "Заодно и попку разомнёшь, а то за своим ноутбуком слишком много сидишь."
-    Max_01 ""
+    Max_01 "It'll help you stretch your butt, because you've been sitting at your laptop too much."
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:5454
     old "Ага, не вопрос. Сделаю."
-    new ""
+    new "Yeah, no problem. I'll do it."
 
     # game/dialogues/alicetalk.rpy:5454
     old "Нет, лучше давай сама..."
-    new ""
+    new "No, you'd better do it..."
 
     # game/dialogues/alicetalk.rpy:5459
     old "{i}отнести тарелки на веранду{/i}"
-    new ""
+    new "{i}Take the plates{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}приступить к ужину{/i}"
-    new ""
+    new "Proceed with dinner"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку слабительное{/i}"
-    new ""
+    new "Slip a laxative into Eric's plate"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку средство от потенции{/i}"
-    new ""
+    new "{i}Slip a sedative into Eric's plate{/i}"
 

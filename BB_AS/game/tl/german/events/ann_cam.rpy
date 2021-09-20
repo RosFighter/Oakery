@@ -216,5 +216,5 @@ translate german cam0_ann_tv_b8dd0b35:
 translate german cam0_ann_tv_8b464610:
 
     # Max_01 "{m}Как приятно видеть маму без Эрика. Может составить ей компанию, чтобы она не скучала?{/m}"
-    Max_01 ""
+    Max_01 "{m}Wie schön, Mum ohne Eric zu sehen. Soll ich ihr Gesellschaft leisten, damit ihr nicht langweilig wird?{/m}"
 

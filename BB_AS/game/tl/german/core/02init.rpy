@@ -600,5 +600,5 @@ translate german strings:
 
     # game/core/02init.rpy:127
     old "Тебе помочь накрыть на стол?"
-    new ""
+    new "Brauchst du Hilfe beim Tischdecken?"
 
