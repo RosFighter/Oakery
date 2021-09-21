@@ -10,7 +10,6 @@
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #01 (Совсем стеснительная)
 =====================================================================================================
-07:00 [ср/вс] Лиза не переодевается после сна и читает !!!Пока не реализуется и читает в базовой одежде / халате / розовой!!!
 08:00 [пн/вт/чт/пт/сб] Лиза переодевается после душа в базовую одежду / халат / розовую, далее читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -18,21 +17,21 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-03b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g1 => #myroom-wardrobe-mde-01-lisa-dresses-03g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-06h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g1 => #myroom-wardrobe-mde-01-lisa-dresses-06g1
 	  Не повезло (второй момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-03b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-03g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-06h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
 10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки
@@ -137,27 +136,26 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-03b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g1 => #myroom-wardrobe-mde-01-lisa-dresses-03g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-06h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g1  => #myroom-wardrobe-mde-01-lisa-dresses-06g1
 	  Не повезло (второй момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-03b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-03g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-06h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06g1
 	  Рано (нулевой момент):
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #02 (Стеснительная)
 =====================================================================================================
-07:00 [ср/вс] Лиза не переодевается после сна и читает !!!Пока не реализуется и читает в базовой одежде / халате / розовой!!!
 08:00 [пн/вт/чт/пт/сб] Лиза переодевается после душа в базовую одежду / халат / розовую, далее читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -165,21 +163,21 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g1 => #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g1 => #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Не повезло (второй момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
 10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки
@@ -291,59 +289,58 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g1 => #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g1 => #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Не повезло (второй момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #03 (Любопытная)
 =====================================================================================================
-07:00 [ср/вс] Лиза не переодевается после сна и читает !!!Пока не реализуется и читает в базовой одежде / халате / розовой!!!
 08:00 [пн/вт/чт/пт/сб] Лиза переодевается после душа в базовую одежду / халат / розовую, далее читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
-	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
 		 #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b  => #myroom-wardrobe-mde-01-lisa-dresses-03b
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d  => #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
-		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g  => #myroom-wardrobe-mde-01-lisa-dresses-03g
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g1 => #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d  => #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g  => #myroom-wardrobe-mde-01-lisa-dresses-06g
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g1 => #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Не повезло (второй момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-03
 		 #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-03b
 		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-02h
-		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-03g
+		 #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06g
+		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
 10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки
@@ -492,35 +489,35 @@
 23:00 Лиза переодевается после ванны в базовую одежду / халат / розовую, далее делает уроки, но только если не остаётся в полотенце
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
-	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
 		 #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b  => #myroom-wardrobe-mde-01-lisa-dresses-03b
 		 #myroom-wardrobe-mde-01-lisa-dresses-01b1 => #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d  => #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d1 => #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-01d2 => #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
-		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g  => #myroom-wardrobe-mde-01-lisa-dresses-03g
+		 #myroom-wardrobe-mde-01-lisa-dresses-01g1 => #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d  => #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d1 => #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-04d2 => #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g  => #myroom-wardrobe-mde-01-lisa-dresses-06g
+		 #myroom-wardrobe-mde-01-lisa-dresses-04g1 => #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Не повезло (второй момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-03
 		 #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-03b
 		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
 		 #myroom-wardrobe-mde-01-lisa-dresses-03d
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-02h
-		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-03g
+		 #myroom-wardrobe-mde-01-lisa-dresses-02g1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05a
 		 #myroom-wardrobe-mde-01-lisa-dresses-06d
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05d2
-		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06g
+		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
 ===================================================================================================================
