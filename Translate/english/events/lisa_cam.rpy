@@ -174,5 +174,4 @@ translate english cam0_lisa_homework_8bf186e7:
 translate english cam0_lisa_repeats_homework_f0fb26d2:
 
     # Max_01 "Лиза готовится к сегодняшним урокам в школе. Какая умничка..."
-    Max_01 ""
-
+    Max_01 "Lisa is getting ready for school today. What a good girl..."
