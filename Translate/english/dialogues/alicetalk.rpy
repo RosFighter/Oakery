@@ -11122,4 +11122,5 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку средство от потенции{/i}"
-    new "Slip a sedative into Eric's plate"
+    new "{i}Slip a sedative into Eric's plate{/i}"
+
