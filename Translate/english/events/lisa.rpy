@@ -2151,3 +2151,12 @@ translate english strings:
     # game/events/lisa.rpy:1583
     old "уйти"
     new "Go"
+
+# TODO: Translation updated at 2021-09-25 23:46
+
+translate english strings:
+
+    # game/events/lisa.rpy:1580
+    old "{i}подождать за дверью, пока Лиза переоденется{/i}"
+    new ""
+
