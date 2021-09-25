@@ -2158,5 +2158,4 @@ translate english strings:
 
     # game/events/lisa.rpy:1580
     old "{i}подождать за дверью, пока Лиза переоденется{/i}"
-    new ""
-
+    new "{i}Wait outside the door while Lisa gets dressed.{/i}"
