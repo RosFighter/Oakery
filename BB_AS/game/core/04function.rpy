@@ -41,6 +41,64 @@ init python:
         tm = ('0'+str(h))[-2:] + ':' + ('0'+str(m))[-2:]
 
 
+    def alt_wait():
+        global day, tm, spent_time, prevday, prevtime
+
+        pday    = day
+        ptm     = tm
+
+        if alarm_time != '':
+            d2 = TimeDifference(prevtime, alarm_time)
+            if spent_time == 0 or d2 < spent_time:
+                spent_time = d2
+            if alarm_time < '08:00':
+                spent_time = d2
+
+        Wait(spent_time)
+
+        c_ev = events_by_tm.upcoming()
+        if c_ev is not None:
+            tm = cut_event.tm
+            if ptm > tm and prevtime < c_ev.tm < '23:59':
+                day = pday
+
+        for char in chars:
+            chars[char].get_plan()
+        ChoiceClothes()
+
+        delt = TimeDifference(ptm, tm)
+        changes_main(delt)
+        spent_time = 0
+        prevday = day
+        prevtime = tm
+
+
+
+    def changes_main(delt):
+        if status_sleep:
+            # если это сон, тогда энергия восстанавливается
+
+            if delt >= 360:
+                mgg.energy = 100 # за 6 часов сна Макс полностью восстанавливает свои силы
+            elif delt >= 300:
+                mgg.energy += delt * 0.25 # (15% в час)
+            elif delt >= 240:
+                mgg.energy += delt * 0.2 # (12% в час)
+            else:
+                mgg.energy += delt * 1 / 6 # (10% в час)
+            mgg.cleanness -= delt * 0.5 * cur_ratio / 60.0
+
+        else: # в противном случае - расходуется
+            mgg.energy -= delt * 3.5 * cur_ratio / 60.0
+            mgg.cleanness -= delt * 2.5 * cur_ratio / 60.0
+
+        mgg.energy = clip(mgg.energy, 0.0, 100.0)
+        mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
+        mgg.massage = clip(mgg.massage, 0.0, 100.0)
+        mgg.social = clip(mgg.social, 0.0, 100.0)
+        mgg.stealth = clip(mgg.stealth, 0.0, 100.0)
+
+
     def cam_wait(delta=10):
         global cam_day, cam_tm
         h, m = cam_tm.split(':')
@@ -534,7 +592,7 @@ init python:
         # комната Макса и Лизы
         if current_room == house[0]:
 
-            if all([lisa.plan_name != 'dressed', '08:00' <= tm < '21:30']):
+            if all([not len(current_room.cur_char), '08:00' <= tm < '21:30']):
                 AvailableActions['unbox'].active = True
 
             if '00:00' <= tm <= '04:00':
@@ -611,8 +669,8 @@ init python:
                 if chars[char].loc:
                     i = 0
                     for cam in chars[char].loc.cams:
-                        if room.id+'-'+str(i) in cam_flag:
-                            cam_flag.remove(room.id+'-'+str(i))
+                        if chars[char].loc.id+'-'+str(i) in cam_flag:
+                            cam_flag.remove(chars[char].loc.id+'-'+str(i))
                         i += 1
 
                 if char == 'alice' and alice.daily.oiled in [1, 2]:  # Если Алису уже намазали кремом, повторное намазываение невозможно
@@ -621,11 +679,11 @@ init python:
                 if char in ['ann', 'eric'] and 'ann_eric_scene' in globals():
                     ann_eric_scene = '' # обнулим сцену для камер, если она есть
 
-                dress, inf, clot = GetDressNps(char, chars[char].plan_name)
-                if dress != '':
-                    chars[char].dress = dress
-                if inf != '':
-                    chars[char].dress_inf = inf
+            dress, inf, clot = GetDressNps(char, chars[char].plan_name)
+            if dress != '':
+                chars[char].dress = dress
+            if inf != '':
+                chars[char].dress_inf = inf
 
 
     def GetDressNps(char, name):
@@ -644,12 +702,28 @@ init python:
             elif name == 'tv2':
                 dress = 'c' if lisa_will_be_topless() > 0 else 'b'
                 inf = '02c' if lisa_will_be_topless() > 0 else '02a'
-            elif name in ['read', 'breakfast', 'dinner', 'dishes', 'phone']:
+            elif name in ['breakfast', 'dinner', 'dishes', 'phone']:
                 dress = lisa.clothes.casual.GetCur().suf
                 inf   = lisa.clothes.casual.GetCur().info
                 clot  = 'casual'
+            elif name == 'read':
+                if tm < '08:00':
+                    dress   = {'a':'p', 'b':'p1', 'c':'p2'}[lisa.clothes.sleep.GetCur().suf]
+                    inf     = lisa.clothes.sleep.GetCur().info
+                    clot    = 'sleep'
+                elif 'bikini' in lisa.gifts and '19:00' > tm >= '13:00':
+                    dress   = 's'
+                    inf     = lisa.clothes.swimsuit.GetCur().info
+                    clot    = 'swimsuit'
+                else:
+                    dress = lisa.clothes.casual.GetCur().suf
+                    inf   = lisa.clothes.casual.GetCur().info
+                    clot  = 'casual'
             elif name in ['shower', 'bath']:
                 inf = '04a'
+            elif name == 'repeats':
+                dress = 'h' #lisa.clothes.learn[4].suf
+                inf = '01ba' #lisa.clothes.learn[4].info
             elif name == 'in_shcool':
                 inf = '01b'
             elif name in ['sun', 'swim']:
@@ -1465,7 +1539,7 @@ init python:
     def get_chance_intimidate(punlist, d=1):
         ch = mgg.social * d
         mind = 20
-        for d in punchar:
+        for d in punlist:
             if d[3]:  # если сестра была наказана, убедить её проще
                 ch += mind
             mind = mind * 0.70 # чем больше дней прошло с момента последнего наказания, тем меньше прибавка

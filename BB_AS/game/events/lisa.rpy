@@ -238,8 +238,6 @@ label lisa_read:
 
 
 label lisa_read_closer:
-    # scene BG char Lisa reading
-    # $ renpy.show('Lisa reading-closer 01'+lisa.dress)
     scene BG char Lisa bed-mde-01
     show Lisa reading 00
     $ renpy.show('FG Lisa reading 00' + lisa.dress)
@@ -258,7 +256,7 @@ label lisa_dressed_school:
     menu:
         Max_09 "{m}Сейчас Лиза должна собираться в школу...{/m}"        #Max_09 "{m}Похоже, Лиза собирается в школу...{/m}"
         "{i}войти в комнату{/i}":
-            if random_outcome(40):
+            if random_outcome(40) and tm[-2:]=='00':
                 call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing    # "нулевой"
             elif random_outcome(45):
                 call lisa_sudden_dressing(1) from _call_lisa_sudden_dressing_1    # неповезло
@@ -274,8 +272,13 @@ label lisa_dressed_school:
                     menu:
                         Lisa "{b}Лиза:{/b} Макс, дай одеться спокойно! Потом свой ноутбук заберёшь..."
                         "{i}забрать ноутбук{/i}":
-                            $ renpy.dynamic('', '', '')
                             $ lvl = get_lisa_emancipation()
+                            $ mood = {
+                                1 : -50,
+                                2 : -30,
+                                3 : 0,
+                                }[lvl]
+                            scene BG char Lisa dressing-02
                             call lisa_dress_first_second(renpy.random.choice(['h', 'h', 'p']),
                                                          lvl,
                                                          0,
@@ -292,6 +295,7 @@ label lisa_dressed_school:
                                     $ at_comp = True
                                     $ current_room = house[5]
                                     $ cam_flag.append('notebook_on_terrace')
+                                    $ AddRelMood('lisa', 0, mood)
                                     jump Laptop
                         "Хорошо, я подожду...":
                             pass
@@ -304,27 +308,6 @@ label lisa_dressed_school:
         "{i}уйти{/i}":
             $ spent_time = 10
             jump .end
-        # "{i}постучаться{/i}":
-        #     menu:
-        #         "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
-        #         "Это я, Макс. Можно войти?":
-        #             jump .come_in
-        #         "Можно войти на секунду? Я только ноутбук возьму..." if flags.warning:
-        #             jump get_laptop
-        #         "Хорошо, я подожду...":
-        #             $ spent_time = 10
-        #             jump .rel_mood
-        #
-        # "{i}открыть дверь{/i}":
-        #     if lisa_was_topless():
-        #         jump .open_door2
-        #     else:
-        #         jump .open_door
-        # "{i}заглянуть в окно{/i}":
-        #     jump .look_window
-        # "{i}уйти{/i}":
-        #     $ spent_time = 10
-        #     jump .rel_mood
 
     label .look_window:
         $ spent_time = 10
@@ -344,7 +327,11 @@ label lisa_dressed_school:
         menu:
             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
             "{i}уйти{/i}":
-                jump .end
+                $ renpy.block_rollback()
+                $ alt_wait()
+                scene location house myroom door-morning
+                call screen room_navigation
+                # jump .end
 
     # label .come_in:
     #     scene BG char Lisa morning
@@ -1421,22 +1408,22 @@ label lisa_sudden_dressing(var=0):
     # Макс случайно попадает в момент, когда Лиза переодевается
     # Лизу можно поймать за переодеванием только в самом начале часа. Только 1 раз в сутки.
 
-    $ renpy.dynamic('lvl', 'lst','dr', 'fb', 'bt', 'np')
+    $ renpy.dynamic('lvl', 'lst','dr', 'fb', 'bt', 'np', 'mood')
     $ lisa.hourly.dressed = 1
-    if all([lisa.plan_name != 'dressed', current_room != prev_room, var > 0]):
-        # Макс входит в комнату и это не одевание "на выход"
-        $ lisa.daily.dressed = 1
 
     $ lvl = get_lisa_emancipation()
+    $ mood = 0
 
     if var < 0:
-        scene BG char Lisa dressing-mde-02
+        scene BG char Lisa dressing-02
     else:
-        scene BG char Lisa dressing-mde-01
+        scene BG char Lisa dressing-01
 
-    if var:
+    if var > 0:
         $ lst = []
         if lisa.plan_name in ['sun', 'swim']:
+            $ lst.append('s')   # купальник
+        elif lisa.plan_name == 'read' and '19:00' > tm >= '13:00':
             $ lst.append('s')   # купальник
         else:
             if lisa.plan_name == 'dressed':
@@ -1453,12 +1440,16 @@ label lisa_sudden_dressing(var=0):
                 $ lst.append(lisa.clothes.casual.GetCur().suf)  # повседневка
                 $ lst.append(lisa.clothes.casual.GetCur().suf)
 
-            $ lst.append('p')   # трусики
+            if lisa.prev_plan in ['shower', 'bath']:
+                $ lst.append('g')   # трусики с полотенцем на голове
+            else:
+                $ lst.append('p')   # трусики
 
         $ dr = renpy.random.choice(lst)                         # трусики или вариант одежды
-        $ fb = 0 if dr == 'b' else renpy.random.randint(0, 1)   # передом или задом
         $ bt = renpy.random.randint(0, 1)                       # низ или верх
+        $ fb = 0 if dr == 'b' or (dr == 'h' and not bt) else renpy.random.randint(0, 1)   # передом или задом
         $ np = 0 if lvl < 3 else renpy.random.randint(0, 1)     # в трусиках или без
+        # $ print(dr, bt, fb, np)
     else:
         call lisa_dress_zero_moment from _call_lisa_dress_zero_moment
 
@@ -1510,10 +1501,11 @@ label lisa_sudden_dressing(var=0):
                         "Не буду. Честное слово!":
                             Lisa_09 "Ага! Так я тебе и поверила. Пожалуйста, дай спокойно переодеться. Я же недолго, Макс!" nointeract
                             jump .wait_or_leave
-                "Хорошо, только ноутбук заберу..." if lisa.plan_name == 'dressed':   # Лиза одевается в школу или в город
+                "Хорошо, только ноутбук заберу..." if all([lisa.plan_name == 'dressed', flags.warning]):   # Лиза одевается в школу или в город
                     Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
                     jump .get_laptop
                 "Да легко! Не буду мешать...":
+                    $ mood = 10
                     Lisa_01 "Спасибо, Макс. Я быстренько!" nointeract
                     jump .wait_or_leave
 
@@ -1522,10 +1514,11 @@ label lisa_sudden_dressing(var=0):
                 "Да чего я там не видел...":
                     Lisa_09 "Откуда я знаю, что ты видел, а что ещё нет? Как бы там ни было, я стесняюсь и хочу переодеться без свидетелей." nointeract
                     jump .wait_or_leave
-                "Хорошо, только ноутбук заберу..." if lisa.plan_name == 'dressed':   # Лиза одевается в школу или в город
+                "Хорошо, только ноутбук заберу..." if all([lisa.plan_name == 'dressed', flags.warning]):   # Лиза одевается в школу или в город
                     Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
                     jump .get_laptop
                 "Да легко! Не буду мешать...":
+                    $ mood = 10
                     Lisa_01 "Спасибо, Макс. Я быстренько!" nointeract
                     jump .wait_or_leave
 
@@ -1534,18 +1527,21 @@ label lisa_sudden_dressing(var=0):
                 "А при мне ты этого сделать не можешь?":
                     Lisa_02 "Вот представь, ну никак не могу! Стесняюсь. А переодеться надо. Так что, можно я спокойно это сделаю? И без свидетелей..." nointeract
                     jump .wait_or_leave
-                "Хорошо, только ноутбук заберу..." if lisa.plan_name == 'dressed':   # Лиза одевается в школу или в город
+                "Хорошо, только ноутбук заберу..." if all([lisa.plan_name == 'dressed', flags.warning]):   # Лиза одевается в школу или в город
                     Lisa_01 "Ну забирай, если он тебе так нужен. А так, я недолго буду одеваться, можешь подождать..." nointeract
                     jump .get_laptop
                 "Да легко! Не буду мешать...":
+                    $ mood = 10
                     Lisa_01 "Спасибо, Макс. Я быстренько!" nointeract
                     jump .wait_or_leave
 
     menu .lvl_1:
         "А у тебя сиськи подросли!" if not fb:  # Лиза стоит передом к Максу
+            $ mood = -20
             Lisa_12 "Что?! Если не уйдёшь, то я всё маме расскажу!" nointeract
             jump .wait_or_leave
         "Отличный зад, я тебе скажу!" if fb:    # Лиза стоит задом к Максу
+            $ mood = -20
             Lisa_12 "Что?! Если не уйдёшь, то я всё маме расскажу!" nointeract
             jump .wait_or_leave
         "Извини, я не знал... Красиво смотришься!":
@@ -1556,35 +1552,41 @@ label lisa_sudden_dressing(var=0):
         "У тебя красивая грудь, Лиза. Не стесняйся..." if not fb:   # Лиза стоит передом к Максу
             Lisa_10 "Не надо меня тут комплиментами одаривать, чтобы подольше поглазеть! Или хочешь, чтобы я маме об этом рассказала?" nointeract
             jump .wait_or_leave
-        "Какая соблазнительная попка у тебя..."if fb:               # Лиза стоит задом к Максу
+        "Какая соблазнительная попка у тебя..." if fb:               # Лиза стоит задом к Максу
             Lisa_10 "А вот не надо на неё так глазеть! Я ведь и маме всё могу рассказать, если не уйдёшь." nointeract
             jump .wait_or_leave
         "Извини, я не знал... Красиво смотришься!":
+            if Lisa.plan_name != 'dressed':
+                $ mood = 10
             Lisa_09 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди. Я недолго..." nointeract
             jump .wait_or_leave
 
     menu .lvl_3:
         "У тебя красивая грудь, Лиза. Не прячь её..." if not fb:    # Лиза стоит передом к Максу
+            $ mood = 20
             Lisa_01 "Ты, видимо, только об этом и мечтаешь...  Но нечего глазеть, как я одеваюсь! Лучше займи себя чем-нибудь полезным..."
             Max_02 "Как раз это и делаю..."
             Lisa_09 "Ну, Макс!" nointeract
             jump .wait_or_leave
         "Какая соблазнительная попка у тебя..." if fb:              # Лиза стоит задом к Максу
+            $ mood = 20
             Lisa_01 "Думаешь, она у меня такая, чтобы тебя постоянно радовать? А вот и нет! Дай одеться спокойно..."
             Max_02 "Ага, сейчас. Только ещё немного полюбуюсь..."
             Lisa_09 "Ну, Макс!" nointeract
             jump .wait_or_leave
-        "Кто-то у нас тут трусики не успел надеть..." if np:        # Лиза без трусиков
+        "Кто-то у нас тут трусики не успел надеть..." if all([np, var > 1, dr not in ['p', 'g']]):        # Лиза без трусиков
             Lisa_13 "Ты! Ничего! Не видел! Понял? И хватит на меня глазеть с таким довольным лицом... Выйди и подожди за дверью!" nointeract
             jump .wait_or_leave
         "Извини, я не знал... Ты такая очаровательная!":
+            if Lisa.plan_name != 'dressed':
+                $ mood = 10
             Lisa_01 "Спасибо. Но давай ты не будешь пялиться и подождёшь за дверью, я недолго... Хорошо?"
             Max_04 "А может повторим? Мне понравилось..."
             Lisa_02 "Макс, займись чем-нибудь путным." nointeract
             jump .wait_or_leave
 
     menu .get_laptop:
-        "уйти с ноутбуком на веранду":
+        "{i}уйти с ноутбуком на веранду{/i}":
             $ spent_time += 10
             $ at_comp = True
             $ current_room = house[5]
@@ -1593,56 +1595,69 @@ label lisa_sudden_dressing(var=0):
 
     label .wait_or_leave:
         menu:
-            "подождать и войти в комнату" if not lisa.plan_name == 'dressed':
+            "{i}подождать за дверью, пока Лиза переоденется{/i}":
                 # показывваем дверь, "ожидание", затем входим в комнату
                 $ renpy.scene()
                 $ renpy.show('location house myroom door-'+get_time_of_day())
                 pause(2)
 
                 $ ClothingNps('lisa', lisa.plan_name)
+                $ AddRelMood('lisa', 0, mood)
 
                 $ renpy.block_rollback()
                 scene BG black with dissolve
-                jump AfterWaiting
+                if lisa.plan_name == 'dressed':
+                    $ spent_time = 20 - int(tm[-2:])
+                    jump Waiting
+                else:
+                    jump AfterWaiting
 
-            "уйти":
+            "{i}уйти{/i}":
                 # показываем дверь, для продолжения нужно перейти в другую локацию
                 $ renpy.scene()
                 $ renpy.show('location house myroom door-'+get_time_of_day())
+                $ AvailableActions['talk'].active = False
 
                 $ ClothingNps('lisa', lisa.plan_name)
+                $ AddRelMood('lisa', 0, mood)
 
                 $ renpy.block_rollback()
                 call screen room_navigation
 
+
+# "нулевой" момент переодеваний Лизы (рано)
 label lisa_dress_zero_moment:
-    # "нулевой" момент переодеваний Лизы (рано)
 
     if lisa.prev_plan in ['shower', 'bath']:                # после душа или после ванной
         # myroom-wardrobe-mde-01-lisa-dresses-07g
-        show Lisa dressing 07g
+        show Lisa dressing 00g
+
+    elif lisa.prev_plan in ['in_shop', 'at_tutor']:
+        show Lisa dressing 00o
+
+    elif lisa.prev_plan in ['in_shcool', 'on_courses']:     # после школы
+        # myroom-wardrobe-mde-01-lisa-dresses-07e
+        show Lisa dressing 00h
+
+    elif lisa.prev_plan in ['sun', 'swim']:                 # после отдыха во дворе
+        if lisa.clothes.swimsuit.GetCur().suf == 'a':
+            show Lisa dressing 00s0
+        else: #if lisa.clothes.swimsuit.GetCur().suf == 'b':
+            show Lisa dressing 00s1
 
     elif lisa.plan_name in ['dressed', 'read', 'dishes']:   # после чтения, мытья посуды или одевается "на выход" (в школу, магазин или к репетитору)
         # myroom-wardrobe-mde-01-lisa-dresses-07a
         # myroom-wardrobe-mde-01-lisa-dresses-07b
         # myroom-wardrobe-mde-01-lisa-dresses-07d
-        $ renpy.show('Lisa dressing 07'+lisa.clothes.casual.GetCur().suf)
+        $ renpy.show('Lisa dressing 00'+lisa.clothes.casual.GetCur().suf)
 
-    elif lisa.prev_plan in ['in_shcool', 'on_courses']:     # после школы
-        # myroom-wardrobe-mde-01-lisa-dresses-07e
-        show Lisa dressing 07e
-
-    elif lisa.prev_plan in ['sun', 'swim']:                 # после отдыха во дворе
-        if lisa.clothes.swimsuit.GetCur().suf == 'a':
-            show Lisa dressing 07c
-        else: #if lisa.clothes.swimsuit.GetCur().suf == 'b':
-            show Lisa dressing 07c1
     return
 
 ### показывает этап одевания Лизы
 # dr    - одежда назначения:
 #           's' - купальник
 #           'p' - трусики
+#           'g' - с полотенцем на голове
 #           'h' - школьная
 #           'o' - одежда для выхода
 #           'a' - базовая
@@ -1706,6 +1721,35 @@ label lisa_dress_first_second(dr, lvl, stage, fb, bt, np):
                         show Lisa dressing 03h
                     else:       # не прикрывает низ
                         show Lisa dressing 02h
+    elif dr == 'g':     # трусики с полотенцем на голове
+        if np:  # голая с полотенцем на голове
+            if fb:  # Лиза стоит задом
+                if stage:   # первый момент
+                    show Lisa dressing 04g
+                else:       # второй момент
+                    show Lisa dressing 06g
+            else:   # Лиза стоит передом
+                if stage:   # первый момент
+                    show Lisa dressing 01g
+                else:       # второй момент
+                    show Lisa dressing 03g
+        else:   # в трусиках с полотенцем на голове
+            if fb:  # Лиза стоит задом
+                if stage:   # первый момент
+                    show Lisa dressing 04g1
+                else:       # второй момент
+                    if lvl < 2: # прикрывает низ
+                        show Lisa dressing 06g1
+                    else:       # не прикрывает низ
+                        show Lisa dressing 05g1
+            else:   # Лиза стоит передом
+                if stage:   # первый момент
+                    show Lisa dressing 01g1
+                else:       # второй момент
+                    if lvl < 2: # прикрывает низ
+                        show Lisa dressing 03g1
+                    else:       # не прикрывает низ
+                        show Lisa dressing 02g1
     elif dr == 'h':     # школьная форма
         if np:  # без трусиков
             if fb:  # Лиза стоит задом
@@ -1854,4 +1898,17 @@ label lisa_dress_first_second(dr, lvl, stage, fb, bt, np):
                         show Lisa dressing 01d2
                     else:       # второй момент
                         show Lisa dressing 02d2
+    return
+
+
+label lisa_repeats_homework:
+    scene BG char Lisa lessons
+    $ renpy.show('Lisa lessons '+pose3_1+lisa.dress)
+    $ persone_button1 = 'Lisa lessons '+pose3_1+lisa.dress
+    return
+
+
+label lisa_repeats_homework_closer:
+    scene BG char Lisa lessons
+    $ renpy.show('Lisa lessons 00'+lisa.dress)
     return

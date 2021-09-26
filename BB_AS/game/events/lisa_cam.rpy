@@ -67,6 +67,14 @@ label cam0_lisa_read:
         Max_07 "Люблю смотреть, как Лиза читает. Вернее, люблю позы, в которых она читает..."
     return
 
+label cam0_lisa_repeats_homework:
+    $ renpy.show('Lisa cams lessons '+cam_poses_manager(lisa, ['01', '02'])+'e', at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'lisa_repeats' not in cam_flag:
+        $ cam_flag.append('lisa_repeats')
+        Max_01 "Лиза готовится к сегодняшним урокам в школе. Какая умничка..."
+    return
+
 label lisa_cam_dress_inf(r1):
     $ lisa.dress_inf = {
             '00':'02a',
@@ -99,38 +107,37 @@ label cam0_lisa_dressed_school:
         return
 
     $ cam_flag.append('lisa_dressed')
-    $ Wait(10)
+    # $ Wait(10)
 
-    $ __r1 = renpy.random.choice(['00', '01', '02'])
-    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
-    $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-    menu:
-        Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..."
-        "{i}продолжать смотреть{/i}":
-            pass
-        "{i}достаточно{/i}":
-            jump open_site
+    # $ __r1 = renpy.random.choice(['00', '01', '02'])
+    # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
+    # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+    # show FG cam-shum-act at laptop_screen
+    # menu:
+    #     Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..."
+    #     "{i}продолжать смотреть{/i}":
+    #         pass
+    #     "{i}достаточно{/i}":
+    #         jump open_site
+    #
+    # $ __r1 = renpy.random.choice(['03','04','05','06'])
+    # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_1
+    # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+    # show FG cam-shum-act at laptop_screen
+    # menu:
+    #     Max_02 "Ухх! Сейчас она такая голенькая и милая..."
+    #     "{i}продолжать смотреть{/i}":
+    #         pass
+    #     "{i}достаточно{/i}":
+    #         jump open_site
 
-    $ __r1 = renpy.random.choice(['03','04','05','06'])
-    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_1
-    $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-    menu:
-        Max_02 "Ухх! Сейчас она такая голенькая и милая..."
-        "{i}продолжать смотреть{/i}":
-            pass
-        "{i}достаточно{/i}":
-            jump open_site
-
-    # $ spent_time += 10
-    $ Wait(10)
     $ __r1 = renpy.random.choice(['07','08','09'])
     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_2
     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
+    # jump open_site
     return
 
 label cam0_lisa_dressed_shop:

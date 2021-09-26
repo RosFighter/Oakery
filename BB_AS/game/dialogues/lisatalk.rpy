@@ -1940,14 +1940,14 @@ label gift_swimsuit:
         # scene BG char Lisa newsuit
         # $ __suf = 'a' if lisa.plan_name in ['swim', 'sun'] else ''
         # $ renpy.show("Lisa newsuit 01"+__suf)
-        scene BG char Lisa dressing-mde-01
+        scene BG char Lisa dressing-01
         $ renpy.show('Lisa dressing 07' + ('c' if lisa.plan_name in ['swim', 'sun'] else 'a'))
         with Fade(0.4, 0, 0.3)
 
         Lisa_12 "Я сейчас разденусь, а ты не смотри! Если замечу, что подглядываешь, всё маме расскажу!"
         Max_02 "Ладно, ладно... Раздевайся уже!"
         # $ renpy.show("Lisa newsuit 02"+__suf)
-        scene BG char Lisa dressing-mde-02
+        scene BG char Lisa dressing-02
         $ renpy.show('Lisa newsuit 01' + ('a' if lisa.plan_name in ['swim', 'sun'] else ''))
         menu:
             Lisa_02 "Макс! Ты подглядываешь. Ты же обещал... Отвернись, быстро!"
@@ -2015,8 +2015,14 @@ label gift_bathrobe:
         Lisa_03 "Я теперь после душа его надевать буду... перед уроками. Или вообще буду жить в нём, если настроение будет такое же классное, как и сам халатик!"
     elif lisa.flags.hugs_type > 3:  ## За третий извинительный подарок Макс получил поцелуй
         if current_room == house[0]:
-            scene BG char Lisa hugging myroom-00
+            if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                scene BG char Lisa hugging myroom-00
+            elif lisa.dress == 'h':             # во время повторения домашки
+                scene BG char Lisa dressing-02
+            else:                               # нижнее белье или купальник
+                scene BG char Lisa hugging-02a
             $ renpy.show("Lisa hugging myroom 04"+lisa.dress+mgg.dress)
+
         elif current_room == house[6]:
             scene BG char Lisa hugging sun-00
             $ renpy.show("Lisa hugging sun 04"+lisa.dress+mgg.dress)
@@ -2035,7 +2041,12 @@ label gift_bathrobe:
         Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"   #спрайт вместе
     elif lisa.flags.hugs_type > 2:  ## За третий извинительный подарок Макс получил объятья
         if current_room == house[0]:
-            scene BG char Lisa hugging myroom-00
+            if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                scene BG char Lisa hugging myroom-00
+            elif lisa.dress == 'h':             # во время повторения домашки
+                scene BG char Lisa dressing-02
+            else:                               # нижнее белье или купальник
+                scene BG char Lisa hugging-02a
             $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging sun-00
@@ -2057,7 +2068,12 @@ label gift_bathrobe:
         Lisa_01 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
     elif lisa.flags.hugs_type > 1:  ## За третий извинительный подарок Макс получил только прощение
         if current_room == house[0]:
-            scene BG char Lisa hugging myroom-00
+            if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                scene BG char Lisa hugging myroom-00
+            elif lisa.dress == 'h':             # во время повторения домашки
+                scene BG char Lisa dressing-02
+            else:                               # нижнее белье или купальник
+                scene BG char Lisa hugging-02a
             $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging sun-00
@@ -2361,7 +2377,12 @@ label lisa_sorry_gifts:
     label .embraces:
         $ poss['SoC'].open(6)
         if current_room == house[0]:
-            scene BG char Lisa hugging myroom-00
+            if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                scene BG char Lisa hugging myroom-00
+            elif lisa.dress == 'h':             # во время повторения домашки
+                scene BG char Lisa dressing-02
+            else:                               # нижнее белье или купальник
+                scene BG char Lisa hugging-02a
             $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging sun-00
@@ -3115,7 +3136,12 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
 
         #спрайт с обнимашками
         if current_room == house[0]:
-            scene BG char Lisa hugging myroom-00
+            if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                scene BG char Lisa hugging myroom-00
+            elif lisa.dress == 'h':             # во время повторения домашки
+                scene BG char Lisa dressing-02
+            else:                               # нижнее белье или купальник
+                scene BG char Lisa hugging-02a
             $ renpy.show("Lisa hugging myroom 01"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging sun-00
@@ -3156,8 +3182,22 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
     else:   #если сладость большая
         # спрайт с суперобнимашками
         if current_room == house[0]:
-            scene BG char Lisa hugging myroom-00
-            $ renpy.show('Lisa hugging myroom '+('06' if lisa.flags.kiss_lesson >=9 else '04')+lisa.dress+mgg.dress)
+            if lisa.flags.kiss_lesson >=9:
+                if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                    scene BG char Lisa hugging myroom-00
+                elif lisa.dress == 'h':             # во время повторения домашки
+                    scene BG char Lisa hugging-03
+                else:                               # нижнее белье или купальник
+                    scene BG char Lisa hugging-03a
+                $ renpy.show('Lisa hugging myroom 06'+lisa.dress+mgg.dress)
+            else:
+                if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                    scene BG char Lisa hugging myroom-00
+                elif lisa.dress == 'h':             # во время повторения домашки
+                    scene BG char Lisa dressing-02
+                else:                               # нижнее белье или купальник
+                    scene BG char Lisa hugging-02a
+                $ renpy.show('Lisa hugging myroom 04'+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             scene BG char Lisa hugging sun-00
             $ renpy.show('Lisa hugging sun '+('06' if lisa.flags.kiss_lesson >=9 else '04')+lisa.dress+mgg.dress)
@@ -3169,7 +3209,22 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
         Lisa_05 "Мне нравится, что ты так мило балуешь меня сладостями... Я тебя в щёчку ещё чмокну! Ммм..."
         # спрайт с поцелуем
         if current_room == house[0]:
-            $ renpy.show('Lisa hugging myroom '+('05' if lisa.flags.kiss_lesson >=9 else '03')+lisa.dress+mgg.dress)
+            if lisa.flags.kiss_lesson >= 9:
+                if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                    scene BG char Lisa hugging myroom-00
+                elif lisa.dress == 'h':             # во время повторения домашки
+                    scene BG char Lisa hugging-03
+                else:                               # нижнее белье или купальник
+                    scene BG char Lisa hugging-03a
+                $ renpy.show('Lisa hugging myroom 05'+lisa.dress+mgg.dress)
+            else:
+                if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                    scene BG char Lisa hugging myroom-00
+                elif lisa.dress == 'h':             # во время повторения домашки
+                    scene BG char Lisa dressing-02
+                else:                               # нижнее белье или купальник
+                    scene BG char Lisa hugging-02a
+                $ renpy.show('Lisa hugging myroom 03'+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             $ renpy.show('Lisa hugging sun '+('05' if lisa.flags.kiss_lesson >=9 else '03')+lisa.dress+mgg.dress)
         if lisa.flags.kiss_lesson >=9:
@@ -3179,6 +3234,12 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
         Lisa_02 "Ну всё, хорошего понемногу..."
         # спрайт вместе
         if current_room == house[0]:
+            if lisa.dress in ['a', 'b', 'd']:   # Повседневная
+                scene BG char Lisa hugging myroom-00
+            elif lisa.dress == 'h':             # во время повторения домашки
+                scene BG char Lisa dressing-02
+            else:                               # нижнее белье или купальник
+                scene BG char Lisa hugging-02a
             $ renpy.show("Lisa hugging myroom 02"+lisa.dress+mgg.dress)
         elif current_room == house[6]:
             $ renpy.show("Lisa hugging sun 02"+lisa.dress+mgg.dress)
@@ -3229,8 +3290,9 @@ label lisa_ment_kiss1:
     $ flags.how_to_kiss.append('lisa')
     $ poss['seduction'].open(9)
 
-    scene BG char Lisa kisses-01
-    $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+    scene BG char Lisa bed-mde-02
+    $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+    $ renpy.show('Max kisses morning 01'+mgg.dress)
     Max_01 "Как чему? Поцелуям. Я кое-что умею и хочу тебя научить..."
     if lisa.GetMood()[0]<2:
         Lisa_09 "Может, в другой раз? Что-то я не в настроении сейчас..."
@@ -3242,20 +3304,21 @@ label lisa_ment_kiss1:
                 if rand_result:
                     Lisa_01 "[succes!t]Только не приставать. Только поцелуи. Договорились?"
                     Max_01 "Конечно!"
-                    $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+                    $ renpy.show('Lisa kisses morning 02'+lisa.dress)
+                    $ renpy.show('Max kisses morning '+renpy.random.choice(['02', '03'])+mgg.dress)
                     menu:
                         Max_05 "{m}Это же надо, я целуюсь со своей младшей сестрёнкой! Кажется, мне бы любой сейчас позавидовал... К тому же, такая девочка!{/m}"
                         "{i}Продемонстрировать своё мастерство{/i}" ('kiss', mgg.kissing * 15, 90):
+                            $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+                            $ renpy.show('Max kisses morning 01'+mgg.dress)
                             if rand_result:
                                 # удалось показать класс
-                                $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                                 Lisa_03 "[lisa_good_kiss!t]Ну всё, Макс, хорошего помаленьку. Было приятно, даже очень... Будем считать, что я чему-то даже научилась..."
                                 Max_03 "Рад, что помог... И мне тоже было приятно..."
                                 $ AddRelMood('lisa', 5, 100, 4)
                                 $ lisa.flags.kiss_lesson += 1
                             else:
                                 # Навык поцелуев слабоват
-                                $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                                 Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
                                 Max_10 "Ладно, в другой раз получится лучше..."
                                 $ AddRelMood('lisa', 0, -30)
@@ -3271,8 +3334,11 @@ label lisa_ment_kiss1:
 label lisa_ment_kiss:
     # стартовая фоаза "Ну что, готова?"
     Lisa_01 "Не поняла... К чему я должна быть готова?"
-    scene BG char Lisa kisses-01
-    $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+    # scene BG char Lisa kisses-01
+    # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+    scene BG char Lisa bed-mde-02
+    $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+    $ renpy.show('Max kisses morning 01'+mgg.dress)
     Max_01 "К поцелуям, конечно!"
     if lisa.GetMood()[0]<2:
         Lisa_09 "Опять ты со своими дурацкими идеями... Я сейчас не в настроении для этого! Давай, в другой раз..."
@@ -3302,19 +3368,27 @@ label lisa_ment_kiss:
         Lisa_00 "Слушай, Макс, а это всё, чему ты решил меня научить? Может быть, в твоём учебном плане есть ещё что-то? Ну там, скажем, немного теории или что-то ещё в плане практики?"
         Max_02 "Конечно! Сейчас будет \"расширенный\" урок поцелуев..."
         $ poss['seduction'].open(11)
-        $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+        # $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+        $ renpy.show('Lisa kisses morning 02'+lisa.dress)
+        $ renpy.show('Max kisses morning '+renpy.random.choice(['02', '03'])+mgg.dress)
         menu:
             Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}"
             "{i}нежно прикасаться к ней{/i}" ('kiss', mgg.kissing * 12, 90):
                 if rand_result:
                     # удалось увлечь её
-                    scene BG char Lisa kisses-02
-                    $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
+                    # scene BG char Lisa kisses-02
+                    # $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
+                    scene BG char Lisa bed-mde-03
+                    $ renpy.show('Lisa kisses morning 04'+lisa.dress)
+                    $ renpy.show('Max kisses morning 04'+mgg.dress)
                     menu:
                         Max_05 "[lisa_good_kiss!t]{i}Ухх... Какие гладкие у неё ножки и упругая попка! И она, похоже, не против того, как и где я к ней прикасаюсь...{/i}"
                         "{i}нежно прикасаться к её груди{/i}":
-                            scene BG char Lisa kisses-01
-                            $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                            # scene BG char Lisa kisses-01
+                            # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                            scene BG char Lisa bed-mde-02
+                            $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+                            $ renpy.show('Max kisses morning 01'+mgg.dress)
                             Lisa_09 "Эй, Макс! Мы же договорились, помнишь?! Никаких лишних движений... Хотел меня облапать и думал, я не почувствую?"
                             Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
                             Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
@@ -3322,8 +3396,11 @@ label lisa_ment_kiss:
                             $ AddRelMood('lisa', 0, -30)
 
                         "{i}закончить урок{/i}":
-                            scene BG char Lisa kisses-01
-                            $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                            # scene BG char Lisa kisses-01
+                            # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                            scene BG char Lisa bed-mde-02
+                            $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+                            $ renpy.show('Max kisses morning 01'+mgg.dress)
                             Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
                             $ Skill('kissing', 0.1)
@@ -3331,7 +3408,9 @@ label lisa_ment_kiss:
 
                 else:
                     # Навык поцелуев слабоват
-                    $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                    # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                    $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+                    $ renpy.show('Max kisses morning 01'+mgg.dress)
                     Lisa_09 "[lisa_bad_kiss!t]Эй, Макс! Мы же договорились, помнишь?! Никаких лишних движений... Хотел меня облапать и думал, я не почувствую?"
                     Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
                     Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
@@ -3355,13 +3434,18 @@ label lisa_ment_kiss:
 
 
 label lisa_kiss_lesson:
-    $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+    # $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+    scene BG char Lisa bed-mde-02
+    $ renpy.show('Lisa kisses morning 02'+lisa.dress)
+    $ renpy.show('Max kisses morning '+renpy.random.choice(['02', '03'])+mgg.dress)
     menu:
         Max_05 "{m}Эти нежные губки такие сладкие... С огромным удовольствием целовал бы Лизу весь день!{/m}"
         "{i}Продемонстрировать своё мастерство{/i}" ('kiss', mgg.kissing * 12, 90):
+            $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+            $ renpy.show('Max kisses morning 01'+mgg.dress)
             if rand_result:
                 # удалось показать класс
-                $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                 Lisa_03 "[lisa_good_kiss!t]Ну всё, Макс, хорошего помаленьку. Было приятно, даже очень... Будем считать, что я чему-то даже научилась..."
                 Max_03 "Рад, что помог... И мне тоже было приятно..."
                 $ AddRelMood('lisa', 5, 100, 4)
@@ -3371,7 +3455,7 @@ label lisa_kiss_lesson:
                     $ poss['seduction'].open(10)
             else:
                 # Навык поцелуев слабоват
-                $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
                 Lisa_09 "[lisa_bad_kiss!t]Что-то не очень, Макс... Тебе бы ещё потренироваться. Конечно, я не очень разбираюсь в том как надо, но сейчас мне не нравится..."
                 Max_10 "Ладно, в другой раз получится лучше..."
                 $ AddRelMood('lisa', 0, -30)
@@ -3381,28 +3465,38 @@ label lisa_kiss_lesson:
 
 
 label lisa_advanced_kiss_lesson:
-    if _in_replay:
-        scene BG char Lisa kisses-01
-    $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+    # scene BG char Lisa kisses-01
+    # $ renpy.show('Lisa kisses morning 01-'+renpy.random.choice(['02', '03'])+lisa.dress+mgg.dress)
+    scene BG char Lisa bed-mde-02
+    $ renpy.show('Lisa kisses morning 02'+lisa.dress)
+    $ renpy.show('Max kisses morning '+renpy.random.choice(['02', '03'])+mgg.dress)
     menu:
         Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}"
         "{i}нежно прикасаться к ней{/i}" ('kiss', mgg.kissing * 10, 90):
             if rand_result:
                 # удалось увлечь её
                 $ spent_time += 10
-                scene BG char Lisa kisses-02
-                $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
+                # scene BG char Lisa kisses-02
+                # $ renpy.show('Lisa kisses morning 02-01'+lisa.dress+mgg.dress)
+                scene BG char Lisa bed-mde-03
+                $ renpy.show('Lisa kisses morning 04'+lisa.dress)
+                $ renpy.show('Max kisses morning 04'+mgg.dress)
                 menu:
                     Max_05 "[lisa_good_kiss!t]{m}Классно... Её ножки такие гладкие, а попка очень упругая! И она явно не против того, чтобы я к ней так прикасался...{/m}"
                     "{i}нежно прикасаться к её груди{/i}" ('kiss', mgg.kissing * 8, 90):
                         if rand_result:
                             $ spent_time += 10
-                            $ renpy.show('Lisa kisses morning 02-02'+lisa.dress+mgg.dress)
+                            # $ renpy.show('Lisa kisses morning 02-02'+lisa.dress+mgg.dress)
+                            $ renpy.show('Lisa kisses morning 05'+lisa.dress)
+                            $ renpy.show('Max kisses morning 05'+mgg.dress)
                             menu:
                                 Max_06 "[lisa_good_kiss!t]{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}"
                                 "{i}закончить урок{/i}":
-                                    scene BG char Lisa kisses-01
-                                    $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                                    # scene BG char Lisa kisses-01
+                                    # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                                    scene BG char Lisa bed-mde-02
+                                    $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+                                    $ renpy.show('Max kisses morning 01'+mgg.dress)
                                     Lisa_02 "А не далековато ли ты своими шаловливыми ручонками забрался, Макс?!"
                                     Max_07 "Так ты, вроде, не против была!"
                                     Lisa_05 "Нууу... Ты меня так увлек своими поцелуями... А от прикосновений было только лучше! Мне нравятся эти уроки... Но, хорошего помаленьку."
@@ -3426,8 +3520,11 @@ label lisa_advanced_kiss_lesson:
                             jump .fail
 
                     "{i}закончить урок{/i}":
-                        scene BG char Lisa kisses-01
-                        $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                        # scene BG char Lisa kisses-01
+                        # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+                        scene BG char Lisa bed-mde-02
+                        $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+                        $ renpy.show('Max kisses morning 01'+mgg.dress)
                         Lisa_03 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось..."
                         Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..."
                         $ renpy.end_replay()
@@ -3438,8 +3535,11 @@ label lisa_advanced_kiss_lesson:
                 jump .fail
     label .fail:
         # Навык поцелуев слабоват
-        scene BG char Lisa kisses-01
-        $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+        # scene BG char Lisa kisses-01
+        # $ renpy.show('Lisa kisses morning 01-01'+lisa.dress+mgg.dress)
+        scene BG char Lisa bed-mde-02
+        $ renpy.show('Lisa kisses morning 01'+lisa.dress)
+        $ renpy.show('Max kisses morning 01'+mgg.dress)
         Lisa_09 "[lisa_bad_kiss!t]Эй, Макс! Мы же договорились, помнишь?! Никаких лишних движений... Хотел меня облапать и думал, я не почувствую?"
         Max_07 "Вообще, ты должна была увлечься поцелуем настолько, что забыла бы про наши уговоры..."
         Lisa_01 "Может быть, тогда ТЫ недостаточно меня увлёк своим поцелуем? Тебе бы ещё потренироваться, Макс..."
@@ -4298,4 +4398,113 @@ label lisa_about_ae_sexed5:
     $ lisa.dcv.intrusion.set_lost(7)
     $ flags.lisa_sexed = 6
     $ spent_time = 20
+    jump Waiting
+
+
+label take_to_school:
+    # "Ну как, всё повторила? {i}(проводить Лизу в школу){/i}"
+
+    if punlisa[0][0] not in [0, 2]:
+        # Макс помогал Лизе с домашним заданием (накануне)
+        Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! И всё благодаря тебе."
+        Max_04 "Не за что. Я рад помочь любимой младшей сестрёнке."
+
+        if poss['SoC'].used(6):
+            # открыты обнимашки от Лизы в сладостях
+            # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(02a/02b/02c)-lisa-02e-hug
+            scene BG char Lisa dressing-02
+            $ renpy.show('Lisa hugging myroom 02h'+mgg.dress)
+            Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, но сперва немного обнимашек..."
+            Max_03 "На дорожку самое то!"
+            # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(01a/01b/01c)-lisa-01e-hug
+            $ renpy.show('Lisa hugging myroom 01h'+mgg.dress)
+            Max_04 "{m}Класс! Лиза хочет обниматься... Так классно чувствовать, как она прижимается ко мне. Моя миленькая сестрёнка-школьница...{/m}"
+            # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(02a/02b/02c)-lisa-02e-hug
+            $ renpy.show('Lisa hugging myroom 02h'+mgg.dress)
+
+            if not any([poss['SoC'].used(7), lisa.flags.hugs, lisa.flags.kiss_lesson]):
+                Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?"
+                Max_01 "Конечно, можешь! За такие-то объятия... Успехов тебе!"
+                #Лиза уходит в школу
+
+            else:
+                $ renpy.dynamic('ch')
+                if punlisa[1][0] not in [0, 2] and punlisa[2][0] not in [0, 2]:
+                    $ ch = 100
+                elif punlisa[1][0] not in [0, 2] or punlisa[2][0] not in [0, 2]:
+                    $ ch = 80
+                else:
+                    $ ch = 50
+                menu:
+                    Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?"
+                    "Если поцелуешь, то вполне можешь!" ('null', ch) if any([poss['SoC'].used(7), lisa.flags.hugs]):    # открыты поцелуи в щёку от Лизы в сладостях
+                        if rand_result:
+                            #(Убеждение удалось!)
+                            Lisa_05 "[succes!t]Это я могу. Но только немножко и в щёчку! Пожалуй, ты это заслужил..."
+                            # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(01a/01b/01c)-lisa-01e-kiss
+                            $ renpy.show('Lisa hugging myroom 03h'+mgg.dress)
+                            menu:
+                                Max_05 "{m}О да! Этот нежный поцелуй от сестрёнки я и надеялся получить! Блаженно...{/m}"
+                                "{i}прикоснуться к попке Лизы{/i}" if lisa.flags.kiss_touch:    # было успешное прикосновение к груди Лизы во время уроков поцелуев
+                                    # myroom-wardrobe-mde-03 + myroom-wardrobe-mde-03-max-(01b/01c)-lisa-01e-kiss
+                                    scene BG char Lisa hugging-03
+                                    $ renpy.show('Lisa hugging myroom 05h'+mgg.dress)
+                                    Lisa_13 "Я сказала, что ты заслужил поцелуй, а не лапать меня за зад, Макс!"
+                                    Max_03 "Разве это лапать? Так... легонько прикоснулся, чтобы настроение поднять."
+                                    # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(02a/02b/02c)-lisa-02e-hug
+                                    scene BG char Lisa dressing-02
+                                    $ renpy.show('Lisa hugging myroom 02h'+mgg.dress)
+                                    Lisa_01 "Моё или своё?"
+                                    Max_02 "Ну... Если тебя это заводит..."
+
+                                "{i}отпустить Лизу в школу{/i}":
+                                    # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(02a/02b/02c)-lisa-02e-hug
+                                    $ renpy.show('Lisa hugging myroom 02h'+mgg.dress)
+                            Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
+
+                        else:
+                            # (Убеждение не удалось!)
+                            Lisa_01 "[failed!t]Ну... Я бы чмокнула... Если бы ты почаще помогал с уроками. Так что старайся, а я побежала. Не скучай!"
+
+                        Max_01 "А я буду. Успехов тебе!"
+                        #Лиза уходит в школу
+
+                    "Только если дашь поцеловать!" ('null', ch) if lisa.flags.kiss_lesson:                              # был успешный урок поцелуев с Лизой
+                        if rand_result:
+                            # (Убеждение удалось!)
+                            Lisa_05 "[succes!t]Ты в последнее время хорошо мне помогал, так что можно... Но не в губы! Просто в щёчку и всё..."
+                            #myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(02b/02c)-lisa-02e-kiss
+                            $ renpy.show('Lisa hugging myroom 03ha'+mgg.dress)
+                            menu:
+                                Max_07 "{m}Это пока что в щёчку... Но твои сладенькие губки рано или поздно не устоят и захотят встретиться с моими!{/m}"
+                                "{i}отпустить Лизу в школу{/i}":
+                                    # myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-max-(02a/02b/02c)-lisa-02e-hug
+                                    $ renpy.show('Lisa hugging myroom 02h'+mgg.dress)
+                            Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
+                        else:
+                            # (Убеждение не удалось!)
+                            Lisa_01 "[failed!t]Эй... Вот разбежался! Если бы ты почаще помогал с уроками, то я бы разрешила, а так... больше старайся. Я побежала в школу, не скучай!"
+
+                        Max_01 "А я буду. Успехов тебе!"
+                        #Лиза уходит в школу
+        else:
+            Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, так что не скучай..."
+            Max_01 "А я буду. Успехов тебе!"
+            #Лиза уходит в школу
+
+    elif all([punlisa[0][0] in [0, 2], not lisa.dcv.battle.stage]):
+        # Макс не помогал Лизе с домашним заданием, Эрик ещё не взялся за Лизу
+        Lisa_09 "Вроде да... Но не знаю, я как-то не уверена. Сейчас побегу в школу, может вместе с одноклассниками разберусь в некоторых моментах."
+        Max_01 "Давай. Удачи тебе там..."
+        #Лиза уходит в школу
+
+    else:
+        #если Макс не помогал Лизе с домашним заданием, потому что с ней занимается репетитор или у неё дополнительные занятия в школе
+        Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! Со мной ведь занимаются, Макс."
+        Max_07 "А я просто уточнил. Но если что, я всегда помогу."
+        Lisa_01 "Ага. Я побегу в школу, так что не скучай..."
+        Max_01 "А я буду. Успехов тебе!"
+        #Лиза уходит в школу
+
+    $ spent_time = 40 - int(tm[-2:])
     jump Waiting

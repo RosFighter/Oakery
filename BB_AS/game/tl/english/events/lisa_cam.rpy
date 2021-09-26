@@ -168,3 +168,11 @@ translate english cam0_lisa_homework_8bf186e7:
     # Max_01 "Лиза учит уроки. Может, стоило ей помочь?!"
     Max_01 "Lisa's doing her homeowork. I might have missed a chance to help her."
 
+# TODO: Translation updated at 2021-09-25 00:32
+
+# game/events/lisa_cam.rpy:75
+translate english cam0_lisa_repeats_homework_f0fb26d2:
+
+    # Max_01 "Лиза готовится к сегодняшним урокам в школе. Какая умничка..."
+    Max_01 "Lisa is getting ready for school today. What a good girl..."
+
