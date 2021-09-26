@@ -148,7 +148,7 @@ translate german dinner_first_boss_name_e218c717:
 translate german dinner_first_yeah_e7a2f4ac:
 
     # Ann_12 "Я уже сказала, что он симпатичный молодой парень и это нормально... Или не сказала? Не важно. Хватит меня допрашивать, всё остывает!"
-    Ann_12 "Ich habe nur gesagt, dass er ein gut aussehender Mann ist, der so freundlich war, mir an meinem ersten Tag auszuhelfen. Oder habe ich das gesagt? Wie auch immer, es spielt keine Rolle. Hört jetzt auf, mich zu verhören."
+    Ann_12 "Ich habe bereits gesagt, dass er ein gut aussehender Typ ist, und das reicht... Oder habe ich das nicht? Es spielt keine Rolle. Hör auf, mich auszufragen, es reicht!"
 
 # game/dialogues/dinner.rpy:163
 translate german dinner_first_yeah_775e169f:
@@ -160,7 +160,7 @@ translate german dinner_first_yeah_775e169f:
 translate german dinner_first_yeah_c3619227:
 
     # Lisa_01 "Ну, школа находится тут совсем рядом, почти за углом. Уроки короткие, занятий мало. Но преподают интересно, гораздо лучше, чем в старой школе. Думаю, здесь даже Максу понравилось бы учиться!"
-    Lisa_01 "Nun, sie ist supereinfach zu erreichen, sie liegt nur um die Ecke. Die Schulstunden sind kurz, aber die Lehrer sind interessant, viel besser als meine alte Schule. Ich glaube sogar, dass es Max gefallen hätte!"
+    Lisa_01 "Nun, die Schule ist gleich um die Ecke. Die Unterrichtsstunden sind kurz, es gibt nicht viele Klassen. Aber der Unterricht ist interessant, viel besser als an der alten Schule. Ich glaube, sogar Max würde es hier gefallen!"
 
 # game/dialogues/dinner.rpy:165
 translate german dinner_first_yeah_09a444ef:

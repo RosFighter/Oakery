@@ -2062,7 +2062,7 @@ translate german lisa_sudden_dressing_lvl_3_01edfdc0_1:
 translate german lisa_sudden_dressing_lvl_3_1e3411b7:
 
     # Lisa_13 "Ты! Ничего! Не видел! Понял? И хватит на меня глазеть с таким довольным лицом... Выйди и подожди за дверью!" nointeract
-    Lisa_13 "Du! Fehlanzeige! Das hast du nicht! Hast du es? Und hör auf, mich mit diesem selbstgefälligen Gesicht anzustarren... Raus und warte vor der Tür!" nointeract
+    Lisa_13 "Du! Kein Wort! Das stimmt nicht! Verstanden? Und hör auf, mich mit diesem selbstzufriedenen Blick anzustarren... Raus und warte vor der Tür!" nointeract
 
 # game/events/lisa.rpy:1569
 translate german lisa_sudden_dressing_lvl_3_fd7a8374:

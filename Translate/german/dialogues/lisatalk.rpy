@@ -1060,7 +1060,7 @@ translate german talk_swim_want_65dd3e6a:
 translate german talk_swim_findout_700200df:
 
     # Lisa_00 "Например? У тебя же нет денег, ты нигде не работаешь и я что-то сомневаюсь, что ты умеешь шить купальники..."
-    Lisa_00 "Was meinst du damit? Du arbeitest nirgendwo und ich bezweifle, dass du selbst eine nähen kannst..."
+    Lisa_00 "Und wie? Du hast kein Geld, du arbeitest nirgendwo und ich bezweifle, dass du weißt, wie man Bademode herstellt..."
 
 # game/dialogues/lisatalk.rpy:670
 translate german talk_swim_findout_959de729:
@@ -1726,7 +1726,7 @@ translate german Lisa_sg1_eb6c0fa7:
 translate german Lisa_sg1_29fca26f:
 
     # Lisa_02 "Ну, я рада, если так. У меня не очень хороши дела с математикой и анатомией. У нас её просто не было. Должна была быть, но учитель всё время болел и я так толком и не разобралась в теме..." nointeract
-    Lisa_02 "Nun, ich bin froh, wenn du es bist. Ich kämpfe wirklich mit Mathe und Anatomie. In meiner alten Schule habe ich einfach nicht richtig aufgepasst, und mein Lehrer war andauernd krank!" nointeract
+    Lisa_02 "Nun, ich bin froh, wenn du das tust. Ich bin nicht sehr gut in Mathe und Anatomie. Es fehlte schlichtweg früher. Wir sollten es lernen, aber der Lehrer war die ganze Zeit krank und ich habe es nie richtig verstanden..." nointeract
 
 # game/dialogues/lisatalk.rpy:943
 translate german Lisa_sg1_a685c7da:
@@ -1738,7 +1738,7 @@ translate german Lisa_sg1_a685c7da:
 translate german Lisa_sg1_help_44f0ef71:
 
     # Lisa_02 "Это же здорово! Точно... Ты уже неоднократно говорил, что тебя выгнали не за знания. Значит, ты мне поможешь, правда?" nointeract
-    Lisa_02 "Das ist ja toll! Oh, ja... Du hast vorher gesagt, dass du nicht wegen schlechter Noten rausgeschmissen wurdest. Also wirst du helfen, richtig?" nointeract
+    Lisa_02 "Das ist großartig! Genau... Du hast bereits mehrfach gesagt, dass du nicht wegen deiner Noten rausgeschmissen wurdest. Also wirst du mir helfen?" nointeract
 
 # game/dialogues/lisatalk.rpy:953
 translate german Lisa_sg1_help_e816701b:
