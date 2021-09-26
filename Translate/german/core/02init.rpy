@@ -608,5 +608,5 @@ translate german strings:
 
     # game/core/02init.rpy:127
     old "Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"
-    new ""
+    new "Und, hast du alles noch einmal probiert?\n{i}(Lisa zur Schule verabschieden){/i}"
 
