@@ -3,32 +3,32 @@
 translate german strings:
 
     # game/screens.rpy:244
-    old "массаж"
-    new "massage"
+    old "массаж, "
+    new "massage, "
 
     # game/screens.rpy:244
-    old "убеждение"
-    new "überzeugung"
+    old "убеждение, "
+    new "überzeugung, "
 
     # game/screens.rpy:244
-    old "сексуальный опыт"
-    new "sexuelle erfahrung"
+    old "сексуальный опыт, "
+    new "sexuelle erfahrung, "
 
     # game/screens.rpy:244
-    old "поцелуи"
-    new "küssen"
+    old "поцелуи, "
+    new "küssen, "
 
     # game/screens.rpy:244
-    old "удача"
-    new "glück"
+    old "удача, "
+    new "glück, "
 
     # game/screens.rpy:244
-    old "скрытность"
-    new "schleichen"
+    old "скрытность, "
+    new "schleichen, "
 
     # game/screens.rpy:270
-    old "[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}"
-    new "[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], chance: [vis]%){/color}{/size}{/i}"
+    old "[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}"
+    new "[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]chance: [vis]%){/color}{/size}{/i}"
 
     # game/screens.rpy:328
     old "История"

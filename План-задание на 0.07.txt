@@ -30,13 +30,18 @@
 
 Что сделано по v0.07:
 
- - добавлена возможность "Что посмотрим, мам?", для которой были немного изменены эвенты с Анной у ТВ;
- - теперь Анне можно сделать массаж во время простого совместного просмотра ТВ;
- - теперь массаж для Алисы у ТВ не будет заканчиваться, если она в джинсах и без трусиков, но для этого нужно дать ей две конфеты с ликёром и добиться "трезвого" фут-джоба;
- - теперь вторую камеру в ванную комнату можно купить только после того, как Макс убедится, что она будет не лишней;
- - продолжение возможности "Кто не рискует...", Алиса пытается доминировать над Максом, пока без возможности уговорить её на конфету с ликёром;
- - третья фотосессия с Кирой + появление нового персонажа на этой же фотосессии;
- - Макс теперь может помочь Алисе накрыть на стол;
- - пакости от Макса при вражде с Эриком и их последствия;
- - Эрик попытается уговорить Лизу на продолжение уроков сексуального воспитания без участия Анны;
+ - added opportunity "What should we watch, Mom?", for which the events with Ann at TV were slightly changed (добавлена возможность "Что посмотрим, мам?", для которой были немного изменены эвенты с Анной у ТВ);
+ - now Ann can get a massage during a simple joint TV viewing (теперь Анне можно сделать массаж во время простого совместного просмотра ТВ);
+ - now the massage for Alice will not end at the TV if she is in jeans and without panties, but for this you need to give her two candies with liquor and achieve a "sober" fj (теперь массаж для Алисы у ТВ не будет заканчиваться, если она в джинсах и без трусиков, но для этого нужно дать ей две конфеты с ликёром и добиться "трезвого" фут-джоба);
+ - now you can buy a second camera in the bathroom only after Max makes sure that it will not be superfluous (теперь вторую камеру в ванную комнату можно купить только после того, как Макс убедится, что она будет не лишней);
+ - the continuation of opportunity "Who doesn't take risks...", Alice tries to dominate Max, while there is no way to persuade her to a candy with liquor (продолжение возможности "Кто не рискует...", Алиса пытается доминировать над Максом, пока без возможности уговорить её на конфету с ликёром);
+ - the third photo shoot with Kira + the appearance of a new character at the same photoshoot (третья фотосессия с Кирой + появление нового персонажа на этой же фотосессии);
+ - Max can now help Alice set the table (Макс теперь может помочь Алисе накрыть на стол);
+ - dirty tricks from Max during the feud with Eric and their consequences (пакости от Макса при вражде с Эриком и их последствия);
+ - Eric will try to persuade Lisa to continue sex education lessons without Ann's participation (Эрик попытается уговорить Лизу на продолжение уроков сексуального воспитания без участия Анны);
+ - added the ability to change Ann's clothes for yoga (добавлена возможность менять одежду Анны для йоги);
+ - a new global system of Lisa's changing clothes has been introduced (внедрена новая глобальная система переодеваний Лизы);
+ - now Lisa can be dressed in underwear and a bikini during kissing lessons (теперь Лиза может быть одета в нижнее бельё и бикини во время уроков поцелуев);
+ - now Lisa can be dressed in underwear, a school uniform and a bikini during the gift of sweets (теперь Лиза может быть одета в нижнее бельё, школьную форму и бикини во время дарения сладостей);
+ - now you can contact Lisa before she goes to school (теперь с Лизой можно контактировать перед тем, как она уходит в школу);
  - больше секса с Кирой в гостиной;

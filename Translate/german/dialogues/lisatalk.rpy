@@ -10251,3 +10251,203 @@ translate german strings:
     old "Ясно. И что, ты хочешь на это согласиться?"
     new "Verstehe. Und, du willst mitmachen?"
 
+# TODO: Translation updated at 2021-09-25 23:46
+
+# game/dialogues/lisatalk.rpy:4409
+translate german take_to_school_e8cf2552:
+
+    # Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! И всё благодаря тебе."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4410
+translate german take_to_school_093ccce0:
+
+    # Max_04 "Не за что. Я рад помочь любимой младшей сестрёнке."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4417
+translate german take_to_school_626862b4:
+
+    # Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, но сперва немного обнимашек..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4418
+translate german take_to_school_470d0a5e:
+
+    # Max_03 "На дорожку самое то!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4421
+translate german take_to_school_c9d35dcf:
+
+    # Max_04 "{m}Класс! Лиза хочет обниматься... Так классно чувствовать, как она прижимается ко мне. Моя миленькая сестрёнка-школьница...{/m}"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4426
+translate german take_to_school_cc3367df:
+
+    # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4427
+translate german take_to_school_46de9a7a:
+
+    # Max_01 "Конечно, можешь! За такие-то объятия... Успехов тебе!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4438
+translate german take_to_school_66f9eb7c:
+
+    # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4443
+translate german take_to_school_63df00be:
+
+    # Lisa_05 "[succes!t]Это я могу. Но только немножко и в щёчку! Пожалуй, ты это заслужил..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:4446
+translate german take_to_school_79292d02:
+
+    # Max_05 "{m}О да! Этот нежный поцелуй от сестрёнки я и надеялся получить! Блаженно...{/m}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4452
+translate german take_to_school_954367ef:
+
+    # Lisa_13 "Я сказала, что ты заслужил поцелуй, а не лапать меня за зад, Макс!"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4453
+translate german take_to_school_ab03ea9e:
+
+    # Max_03 "Разве это лапать? Так... легонько прикоснулся, чтобы настроение поднять."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4457
+translate german take_to_school_7ac18b10:
+
+    # Lisa_01 "Моё или своё?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4458
+translate german take_to_school_9d1cdba9:
+
+    # Max_02 "Ну... Если тебя это заводит..."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4463
+translate german take_to_school_c2d552ae:
+
+    # Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4467
+translate german take_to_school_93e24500:
+
+    # Lisa_01 "[failed!t]Ну... Я бы чмокнула... Если бы ты почаще помогал с уроками. Так что старайся, а я побежала. Не скучай!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4469
+translate german take_to_school_bb885618:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4475
+translate german take_to_school_2946fe9e:
+
+    # Lisa_05 "[succes!t]Ты в последнее время хорошо мне помогал, так что можно... Но не в губы! Просто в щёчку и всё..."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:4478
+translate german take_to_school_50a3f276:
+
+    # Max_07 "{m}Это пока что в щёчку... Но твои сладенькие губки рано или поздно не устоят и захотят встретиться с моими!{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4483
+translate german take_to_school_c2d552ae_1:
+
+    # Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4486
+translate german take_to_school_fb1c6e25:
+
+    # Lisa_01 "[failed!t]Эй... Вот разбежался! Если бы ты почаще помогал с уроками, то я бы разрешила, а так... больше старайся. Я побежала в школу, не скучай!"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4488
+translate german take_to_school_bb885618_1:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4491
+translate german take_to_school_598d67c3:
+
+    # Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, так что не скучай..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4492
+translate german take_to_school_bb885618_2:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4497
+translate german take_to_school_af56c02f:
+
+    # Lisa_09 "Вроде да... Но не знаю, я как-то не уверена. Сейчас побегу в школу, может вместе с одноклассниками разберусь в некоторых моментах."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4498
+translate german take_to_school_29693a9f:
+
+    # Max_01 "Давай. Удачи тебе там..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4503
+translate german take_to_school_a6bd3f00:
+
+    # Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! Со мной ведь занимаются, Макс."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4504
+translate german take_to_school_b56ae6aa:
+
+    # Max_07 "А я просто уточнил. Но если что, я всегда помогу."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4505
+translate german take_to_school_f7d87922:
+
+    # Lisa_01 "Ага. Я побегу в школу, так что не скучай..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4506
+translate german take_to_school_bb885618_3:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 ""
+
+translate german strings:
+
+    # game/dialogues/lisatalk.rpy:4438
+    old "Если поцелуешь, то вполне можешь!"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4438
+    old "Только если дашь поцеловать!"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4446
+    old "{i}прикоснуться к попке Лизы{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4446
+    old "{i}отпустить Лизу в школу{/i}"
+    new ""
+

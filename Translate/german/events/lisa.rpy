@@ -2152,3 +2152,11 @@ translate german strings:
     old "уйти"
     new "gehen"
 
+# TODO: Translation updated at 2021-09-25 23:46
+
+translate german strings:
+
+    # game/events/lisa.rpy:1580
+    old "{i}подождать за дверью, пока Лиза переоденется{/i}"
+    new ""
+

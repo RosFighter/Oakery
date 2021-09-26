@@ -10249,3 +10249,203 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:4204
     old "Ясно. И что, ты хочешь на это согласиться?"
     new "I see. And what, you want to go along with it?"
+
+# TODO: Translation updated at 2021-09-25 23:46
+
+# game/dialogues/lisatalk.rpy:4409
+translate english take_to_school_e8cf2552:
+
+    # Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! И всё благодаря тебе."
+    Lisa_02 "Yes! I'm ready to go to school and get straight A's! And it's all thanks to you."
+
+# game/dialogues/lisatalk.rpy:4410
+translate english take_to_school_093ccce0:
+
+    # Max_04 "Не за что. Я рад помочь любимой младшей сестрёнке."
+    Max_04 "You're welcome. Anything for my favorite little sister."
+
+# game/dialogues/lisatalk.rpy:4417
+translate english take_to_school_626862b4:
+
+    # Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, но сперва немного обнимашек..."
+    Lisa_01 "Again, thank you, Max. I'm going to run to school, but first, I think someone deserves a hug..."
+
+# game/dialogues/lisatalk.rpy:4418
+translate english take_to_school_470d0a5e:
+
+    # Max_03 "На дорожку самое то!"
+    Max_03 "Perfect!"
+
+# game/dialogues/lisatalk.rpy:4421
+translate english take_to_school_c9d35dcf:
+
+    # Max_04 "{m}Класс! Лиза хочет обниматься... Так классно чувствовать, как она прижимается ко мне. Моя миленькая сестрёнка-школьница...{/m}"
+    Max_04 "{m}Great! Lisa wants to cuddle... It's so cool to feel her snuggling up to me. My sweet little schoolgirl sister...{/m}"
+
+# game/dialogues/lisatalk.rpy:4426
+translate english take_to_school_cc3367df:
+
+    # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?"
+    Lisa_02 "That's it, I have to go now... I can still count on you to help me study, can't I?"
+
+# game/dialogues/lisatalk.rpy:4427
+translate english take_to_school_46de9a7a:
+
+    # Max_01 "Конечно, можешь! За такие-то объятия... Успехов тебе!"
+    Max_01 "Of course you can! For a hug like that... Good luck today!"
+
+# game/dialogues/lisatalk.rpy:4438
+translate english take_to_school_66f9eb7c:
+
+    # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?" nointeract
+    Lisa_02 "That's it, I have to go now... I can still count on you to help me study, can't I?" nointeract
+
+# game/dialogues/lisatalk.rpy:4443
+translate english take_to_school_63df00be:
+
+    # Lisa_05 "[succes!t]Это я могу. Но только немножко и в щёчку! Пожалуй, ты это заслужил..."
+    Lisa_05 "[succes!t]I can do that. But just a little on the cheek! I guess you deserve it..."
+
+# game/dialogues/lisatalk.rpy:4446
+translate english take_to_school_79292d02:
+
+    # Max_05 "{m}О да! Этот нежный поцелуй от сестрёнки я и надеялся получить! Блаженно...{/m}" nointeract
+    Max_05 "{m}Oh, yes! That's the tender kiss I was hoping to get from my sister! Amazing...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4452
+translate english take_to_school_954367ef:
+
+    # Lisa_13 "Я сказала, что ты заслужил поцелуй, а не лапать меня за зад, Макс!"
+    Lisa_13 "I said you deserved a kiss, not touching my butt, Max!"
+
+# game/dialogues/lisatalk.rpy:4453
+translate english take_to_school_ab03ea9e:
+
+    # Max_03 "Разве это лапать? Так... легонько прикоснулся, чтобы настроение поднять."
+    Max_03 "Is that groping? Just... A little touch to lighten the mood."
+
+# game/dialogues/lisatalk.rpy:4457
+translate english take_to_school_7ac18b10:
+
+    # Lisa_01 "Моё или своё?"
+    Lisa_01 "Mine or yours?"
+
+# game/dialogues/lisatalk.rpy:4458
+translate english take_to_school_9d1cdba9:
+
+    # Max_02 "Ну... Если тебя это заводит..."
+    Max_02 "Well... If it turns you on..."
+
+# game/dialogues/lisatalk.rpy:4463
+translate english take_to_school_c2d552ae:
+
+    # Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
+    Lisa_02 "I think that's enough for now. I need to go..."
+
+# game/dialogues/lisatalk.rpy:4467
+translate english take_to_school_93e24500:
+
+    # Lisa_01 "[failed!t]Ну... Я бы чмокнула... Если бы ты почаще помогал с уроками. Так что старайся, а я побежала. Не скучай!"
+    Lisa_01 "[failed!t]Well... I would... If you helped me with my homework more often. So do your best, and I'll be off. Have fun!"
+
+# game/dialogues/lisatalk.rpy:4469
+translate english take_to_school_bb885618:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 "And I will. Good luck!"
+
+# game/dialogues/lisatalk.rpy:4475
+translate english take_to_school_2946fe9e:
+
+    # Lisa_05 "[succes!t]Ты в последнее время хорошо мне помогал, так что можно... Но не в губы! Просто в щёчку и всё..."
+    Lisa_05 "[succes!t]You've been good to me lately, so it's okay... But not on the lips! Just on the cheek, that's all..."
+
+# game/dialogues/lisatalk.rpy:4478
+translate english take_to_school_50a3f276:
+
+    # Max_07 "{m}Это пока что в щёчку... Но твои сладенькие губки рано или поздно не устоят и захотят встретиться с моими!{/m}" nointeract
+    Max_07 "{m}That's on the cheek for now... But your sweet little lips won't resist and want to meet mine sooner or later!{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4483
+translate english take_to_school_c2d552ae_1:
+
+    # Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
+    Lisa_02 "I think that's enough for now. I need to go..."
+
+# game/dialogues/lisatalk.rpy:4486
+translate english take_to_school_fb1c6e25:
+
+    # Lisa_01 "[failed!t]Эй... Вот разбежался! Если бы ты почаще помогал с уроками, то я бы разрешила, а так... больше старайся. Я побежала в школу, не скучай!"
+    Lisa_01 "[failed!t]Hey... What a scatterbrain! If you helped me with my lessons more often, I'd let you, but... Try harder. I'm off to school!"
+
+# game/dialogues/lisatalk.rpy:4488
+translate english take_to_school_bb885618_1:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 "Okay... Good luck!"
+
+# game/dialogues/lisatalk.rpy:4491
+translate english take_to_school_598d67c3:
+
+    # Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, так что не скучай..."
+    Lisa_01 "Again, thank you, Max. I'm going to run to school, so don't miss me too much..."
+
+# game/dialogues/lisatalk.rpy:4492
+translate english take_to_school_bb885618_2:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 "Okay... Good luck!"
+
+# game/dialogues/lisatalk.rpy:4497
+translate english take_to_school_af56c02f:
+
+    # Lisa_09 "Вроде да... Но не знаю, я как-то не уверена. Сейчас побегу в школу, может вместе с одноклассниками разберусь в некоторых моментах."
+    Lisa_09 "I think so... But I don't know, I'm not sure. Now I'm going to run to school, maybe together with my classmates I'll figure something out."
+
+# game/dialogues/lisatalk.rpy:4498
+translate english take_to_school_29693a9f:
+
+    # Max_01 "Давай. Удачи тебе там..."
+    Max_01 "Go ahead. Good luck out there..."
+
+# game/dialogues/lisatalk.rpy:4503
+translate english take_to_school_a6bd3f00:
+
+    # Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! Со мной ведь занимаются, Макс."
+    Lisa_02 "Yes! I'm ready to go to school and get straight A's! I'm working on it, Max."
+
+# game/dialogues/lisatalk.rpy:4504
+translate english take_to_school_b56ae6aa:
+
+    # Max_07 "А я просто уточнил. Но если что, я всегда помогу."
+    Max_07 "I was just clarifying. But if anything, I will always help."
+
+# game/dialogues/lisatalk.rpy:4505
+translate english take_to_school_f7d87922:
+
+    # Lisa_01 "Ага. Я побегу в школу, так что не скучай..."
+    Lisa_01 "Yeah. I'm gonna run to school, so don't get bored without me..."
+
+# game/dialogues/lisatalk.rpy:4506
+translate english take_to_school_bb885618_3:
+
+    # Max_01 "А я буду. Успехов тебе!"
+    Max_01 "Okay... Good luck!"
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:4438
+    old "Если поцелуешь, то вполне можешь!"
+    new "If you kiss it, you might as well!"
+
+    # game/dialogues/lisatalk.rpy:4438
+    old "Только если дашь поцеловать!"
+    new "Only if you give me a kiss!"
+
+    # game/dialogues/lisatalk.rpy:4446
+    old "{i}прикоснуться к попке Лизы{/i}"
+    new "{i}Touch Lisa's ass{/i}"
+
+    # game/dialogues/lisatalk.rpy:4446
+    old "{i}отпустить Лизу в школу{/i}"
+    new "{i}Let Lisa go to school{/i}"
