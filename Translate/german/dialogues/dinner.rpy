@@ -562,7 +562,7 @@ translate german dinner_3_9f799f74:
 translate german dinner_3_d9390707:
 
     # Alice_13 "Ага, Лизе купальник посмотрим, а мне платье для клуба, значит, нет? Я бы сегодня уже пошла, а так придётся ждать следующей пятницы... И то если купим..."
-    Alice_13 "Also, wir werden uns um Lisas Bikini kümmern, aber nicht um ein Kleid für mich? Ich könnte heute in den Club gehen, aber jetzt muss ich bis nächsten Freitag warten, aber nur, wir auch ein Kleid kaufen..."
+    Alice_13 "Ja, Lisa bekommt einen Bikini, und ich darf kein Kleid für den Club bekommen? Ich würde heute Abend gern ausgehen, aber ich muss bis nächsten Freitag warten... Und das nur, wenn wir es kaufen..."
 
 # game/dialogues/dinner.rpy:359
 translate german dinner_3_80ab1f2a:

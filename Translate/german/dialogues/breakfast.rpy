@@ -910,7 +910,7 @@ translate german breakfast_4_2afa1e0c:
 translate german breakfast_4_fabe9f19:
 
     # Ann_00 "Не знаю о чём речь, но думаю, вы и правда между собой всё выясните. А сейчас пора собираться на шоппинг. Всем спасибо за завтрак!"
-    Ann_00 "Ich weiß nicht, wovon du sprichst, aber das kannst du später herausfinden, wir gehen bald einkaufen, also mach dich fertig. Vielen Dank für das Frühstück, allerseits!"
+    Ann_00 "Ich weiß nicht, wovon du sprichst, aber das kannst du später herausfinden, wir gehen bald einkaufen, also macht euch fertig. Vielen Dank für das Frühstück, allerseits!"
 
 # game/dialogues/breakfast.rpy:600
 translate german breakfast_4_81d2ad52:

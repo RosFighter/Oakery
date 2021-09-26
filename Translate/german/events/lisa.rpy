@@ -1870,7 +1870,7 @@ translate german lisa_dressed_school_0677ddc2:
 translate german lisa_dressed_shop_open_door_59a9d138:
 
     # Lisa_12 "Макс! [phrase!t]Быстро закрой дверь с той стороны!" nointeract
-    Lisa_12 "Max! [phrase!t]Mach sofort die Türvon draußen zu!" nointeract
+    Lisa_12 "Max! [phrase!t]Mach sofort die Tür von draußen zu!" nointeract
 
 # game/events/lisa.rpy:1457
 translate german lisa_sudden_dressing_8183fb49:
