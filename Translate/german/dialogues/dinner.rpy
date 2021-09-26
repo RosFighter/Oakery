@@ -424,7 +424,7 @@ translate german dinner_2_next_fea6ae5e:
 translate german dinner_2_next_a3736476:
 
     # Lisa_02 "Макс, ты что, забыл? В прошлом году маленький паучок летом на Алису заполз, так она орала два часа! Бегала и кричала..."
-    Lisa_02 "Hast du das vergessen? Letztes Jahr kroch eine kleine Spinne auf Alice und sie schrie etwa zwei Stunden lang! Wie konntest du all das Gerenne und Geschrei vergessen?"
+    Lisa_02 "Max, hast du das vergessen? Letztes Jahr ist eine kleine Spinne im Sommer auf Alice herumgekrabbelt und sie hat zwei Stunden lang geschrien! Schreiend und fliehend..."
 
 # game/dialogues/dinner.rpy:313
 translate german dinner_2_next_fb43d7a4:
@@ -436,7 +436,7 @@ translate german dinner_2_next_fb43d7a4:
 translate german dinner_2_next_269e5145:
 
     # Alice_02 "Ага, маленький... Да он был с тебя размером! Ненавижу пауков. Кто их, вообще, выдумал. Хоть на северный полюс уезжай. Надеюсь, хоть там их нет..."
-    Alice_02 "Klein? Es war so riesig! Ich hasse Spinnen. Warum konnten wir nicht ohne Spinnen irgendwohin ziehen..."
+    Alice_02 "Ja, klein... Sie war so groß wie du! Ich hasse Spinnen. Wer hat sie eigentlich erfunden? Du könntest genauso gut zur Hölle fahren. Ich hoffe, dass sie dort nicht..."
 
 # game/dialogues/dinner.rpy:316
 translate german dinner_2_next_4f7263d2:
@@ -448,7 +448,7 @@ translate german dinner_2_next_4f7263d2:
 translate german dinner_2_next_d40b4857:
 
     # Alice_01 "А вот знаешь что, Макс, не дождёшься! Я не видела ещё ни одного паука и, может быть, это маме только показалось. Буду думать так. Так спокойнее..."
-    Alice_01 "Ich habe noch keine einzige Spinne gesehen, vielleicht hat sich Mom also geirrt. Ja, das ist es, was ich von nun an tun werde. Es ist besser so..."
+    Alice_01 "Aber weißt du was, Max, das kannst du nicht! Ich habe noch keine Spinne gesehen, und vielleicht ist das nur der Fantasie von Mom geschuldet. Wahrscheinlich ja. Es ist sehr viel schöner..."
 
 # game/dialogues/dinner.rpy:318
 translate german dinner_2_next_7b1f3728:
