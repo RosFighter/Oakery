@@ -242,12 +242,13 @@ screen choice(items, rand=None):
 
                         if len(i.args)>1:
                             $ skill = {
-                                'mass'  : _("массаж"),
-                                'soc'   : _("убеждение"),
-                                'sex'   : _("сексуальный опыт"),
-                                'kiss'  : _("поцелуи"),
-                                'lucky' : _("удача"),
-                                'hide'  : _("скрытность"),
+                                'mass'  : _("массаж, "),
+                                'soc'   : _("убеждение, "),
+                                'sex'   : _("сексуальный опыт, "),
+                                'kiss'  : _("поцелуи, "),
+                                'lucky' : _("удача, "),
+                                'hide'  : _("скрытность, "),
+                                'null' : "",
                                 }[i.args[0]]
 
                             $ sz = -5
@@ -270,7 +271,7 @@ screen choice(items, rand=None):
                             else:
                                 button action i.action background None:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
-                                    textbutton _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}"):
+                                    textbutton _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}"):
                                         action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]
                                         yalign .0
                                         xpos 30
@@ -1726,12 +1727,13 @@ screen choice(items, rand=None):
                     $ yy += 1
                     if len(i.args)>1:
                         $ skill = {
-                            'mass'  : _("массаж"),
-                            'soc'   : _("убеждение"),
-                            'sex'   : _("сексуальный опыт"),
-                            'kiss'  : _("поцелуи"),
-                            'lucky' : _("удача"),
-                            'hide'  : _("скрытность"),
+                            'mass'  : _("массаж, "),
+                            'soc'   : _("убеждение, "),
+                            'sex'   : _("сексуальный опыт, "),
+                            'kiss'  : _("поцелуи, "),
+                            'lucky' : _("удача, "),
+                            'hide'  : _("скрытность, "),
+                            'null' : "",
                             }[i.args[0]]
 
                         $ sz = -3
@@ -1751,7 +1753,7 @@ screen choice(items, rand=None):
                                 id 'vbb'+str(yy)
                         else:
                             button action [Skill_Outsome(i.args[0], vis, lim, step), i.action]:
-                                text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t], шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
+                                text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
                                 left_padding 50 right_padding 35
                                 sensitive not i.kwargs.get("disabled", False)
                                 foreground "interface marker"

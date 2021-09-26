@@ -223,6 +223,7 @@ define talks = {
     'ol.l.t2'       : TalkTheme(['lisa', 'olivia'], _("Пошепчемся немного о моей сестрёнке?"), 'olivia_talk2', "all([olivia.plan_name=='sun', olivia.dcv.feature.stage==1, olivia.dcv.feature.done])"),
     'ol.l.t3'       : TalkTheme(['lisa', 'olivia'], _("Что новенького, Оливия?"), 'olivia_talk3', "all([olivia.plan_name=='sun', GetWeekday(day)==2, olivia.dcv.feature.stage==3, olivia.dcv.feature.done])"),
     'ol.l.t4'       : TalkTheme(['lisa', 'olivia'], _("Рад тебя видеть, Оливия!"), 'olivia_talk4', "all([olivia.plan_name=='sun', GetWeekday(day)in[2, 5], olivia.dcv.feature.stage==4, olivia.dcv.feature.done, olivia.dcv.special.stage])"),
+    'l.take_school' : TalkTheme('lisa', _("Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"), 'take_to_school', "all([lisa.flags.help, lisa.plan_name == 'repeats'])", 1),
     }
 
 
@@ -242,7 +243,7 @@ define gifts = {
     'lisa'  : [
         Gift('bikini', _("А у меня есть то, о чём ты мечтала..."), 'gift_swimsuit'),
         Gift('bathrobe', _("У меня для тебя подарок {i}(Халат){/i}"), 'gift_bathrobe', -1, "lisa.plan_name in ['sun', 'read', 'phone']"),
-        Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone'], not lisa.daily.sweets])"),
+        Gift(['ritter-m', 'ritter-b'], _("У меня для тебя вкусняшка!"), 'lisa_gift_sweets', -1, "all(['bathrobe' in lisa.gifts, lisa.plan_name in ['sun', 'read', 'phone', 'repeats'], not lisa.daily.sweets])"),
         ],
     'alice' : [
         Gift('cigarettes', _("У меня есть кое-что запрещённое..."), 'gift_cigarettes', -1, "alice.plan_name in ['sun', 'read', 'resting', 'blog']"),

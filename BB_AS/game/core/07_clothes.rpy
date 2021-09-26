@@ -7,7 +7,7 @@ define clothes_dict = {
         },
     'ann'   : {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '01b', 'Футболка'), ('d', '01e', 'Топ и шорты')],
-        'sports'    : [('a', '05a', 'Спортивная форма'), ('c', '05с', 'Спортивные лиф и мини-шорты')],
+        'sports'    : [('a', '05a', 'Спортивная форма'), ('c', '05c', 'Спортивные лиф и мини-шорты')],
         'cook_morn' : [('a', '05b', 'Спортивная форма + фартук'), ('b', '01c', 'Футболка + фартук'), ('c', '05d', 'Спортивные лиф и мини-шорты + фартук'), ('d', '01f', 'Топ и шорты + фартук')],
         'cook_eve'  : [('b', '01c', 'Футболка + фартук'), ('d', '01f', 'Топ и шорты + фартук')],
         'rest_morn' : [('a', '01b', 'Футболка'), ('d', '01e', 'Топ и шорты')],
@@ -21,7 +21,7 @@ define clothes_dict = {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('d', '01c', 'Розовые топик и юбочка')],
         'sleep'     : [('a', '02', 'Маечка и штаны'), ('b', '02a', 'Маечка и трусики'), ('c', '02c', 'Трусики')],
         'swimsuit'  : [('a', '03', 'Закрытый купальник'), ('b', '03b', 'Красное бикини')],
-        'learn'     : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('c', '04b', 'Полотенце'), ('d', '01c', 'Розовые топик и юбочка'), ('e', '01b', 'Школьная форма')],
+        'learn'     : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('c', '04b', 'Полотенце'), ('d', '01c', 'Розовые топик и юбочка'), ('h', '01ba', 'Школьная форма')],
         },
     'mgg'   : {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '01b', 'Майка и шорты'), ('c', '01c', 'Шорты')],
@@ -112,7 +112,7 @@ init python:
         def_list = {
                 'casual'    : (False, (0, 1) if char_id in ['ann', 'eric'] else 0),
                 'sleep'     : (True,  0),
-                'sports'    : (False, 0),
+                'sports'    : (True, 0),
                 'lingerie'  : (True,  0),
                 'cook_morn' : (False, (0, 1)),
                 'cook_eve'  : (False, (0, 1)),
@@ -166,7 +166,7 @@ init python:
         ann.clothes.cook_eve.rand_enable(0)
         ann.clothes.rest_morn.rand_enable(0)
         ann.clothes.rest_eve.rand_enable((0, 1))
-        ann.clothes.sports.rand_enable(0)
+        ann.clothes.sports.enable(0)
         if 'kira' in chars:
             ann.clothes.casual.rand_enable(2)
             ann.clothes.cook_morn.rand_enable(3)
@@ -176,7 +176,7 @@ init python:
         if 'nightie' in ann.gifts:          # подарена ночнушка
             ann.clothes.sleep.enable(1)
         if 'fit1' in ann.gifts:             # подарены Спортивные лиф и мини-шорты
-            ann.clothes.sports.rand_enable(1)
+            ann.clothes.sports.enable(1)
 
         # Лиза
         lisa.clothes.learn.enable(2)        # полотенце доступно всегда

@@ -78,28 +78,7 @@ label Waiting:
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
-    if status_sleep:
-        # если это сон, тогда энергия восстанавливается
-
-        if delt >= 360:
-            $ mgg.energy = 100 # за 6 часов сна Макс полностью восстанавливает свои силы
-        elif delt >= 300:
-            $ mgg.energy += delt * 0.25 # (15% в час)
-        elif delt >= 240:
-            $ mgg.energy += delt * 0.2 # (12% в час)
-        else:
-            $ mgg.energy += delt * 1 / 6 # (10% в час)
-        $ mgg.cleanness -= delt * 0.5 * cur_ratio / 60.0
-
-    else: # в противном случае - расходуется
-        $ mgg.energy -= delt * 3.5 * cur_ratio / 60.0
-        $ mgg.cleanness -= delt * 2.5 * cur_ratio / 60.0
-
-    $ mgg.energy = clip(mgg.energy, 0.0, 100.0)
-    $ mgg.cleanness = clip(mgg.cleanness, 0.0, 100.0)
-    $ mgg.massage = clip(mgg.massage, 0.0, 100.0)
-    $ mgg.social = clip(mgg.social, 0.0, 100.0)
-    $ mgg.stealth = clip(mgg.stealth, 0.0, 100.0)
+    $ changes_main(delt)
 
     if not at_comp:
         call after_buying from _call_after_buying
@@ -271,31 +250,6 @@ label Midnight:
 
 label NewDay:
     # "Новый день"
-    # $ ann.daily.ask_money = 0 # просили денег у Анны
-
-    python:
-        if olivia_nightvisits():
-            # установим откат для ночных визитов Оливии.
-            olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
-
-        for ch in chars:
-            char = chars[ch]
-            # сбросим подглядывания, диалоги и состояния
-            char.daily.reset()
-            char.spanked = False
-
-            # срок извинительных подарков
-            if char.sorry.owe and char.sorry.left > 0:
-                char.sorry.left -= 1
-
-            # для каждого типа одежды каждого персонажа запустим рандомную смену
-            lst = char.clothes.GetList()
-            for cl_t in lst:
-                if eval('char.clothes.'+cl_t+'.rand'):
-                    eval('char.clothes.'+cl_t+'.SetRand()')
-
-        # сброс фильма-наказания
-        lisa.dcv.countdown(only=['special'])
 
     if 'spider' in NightOfFun:
         $ NightOfFun.remove('spider') # если ночная забава не состоялась, паука из списка забав удаляем - он сбежал
@@ -340,6 +294,30 @@ label NewDay:
     $ ann_eric_scene = ''
 
     $ cam_poses.clear()  # обнулим список поз для камер
+
+    python:
+        if olivia_nightvisits():
+            # установим откат для ночных визитов Оливии.
+            olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
+
+        for ch in chars:
+            char = chars[ch]
+            # сбросим подглядывания, диалоги и состояния
+            char.daily.reset()
+            char.spanked = False
+
+            # срок извинительных подарков
+            if char.sorry.owe and char.sorry.left > 0:
+                char.sorry.left -= 1
+
+            # для каждого типа одежды каждого персонажа запустим рандомную смену
+            lst = char.clothes.GetList()
+            for cl_t in lst:
+                if eval('char.clothes.'+cl_t+'.rand'):
+                    eval('char.clothes.'+cl_t+'.SetRand()')
+
+        # сброс фильма-наказания
+        lisa.dcv.countdown(only=['special'])
 
     return
 
@@ -423,14 +401,14 @@ label AfterWaiting:
 
     $ MoodNeutralize()
 
-    if any([prevday!=day, prevtime!=tm]):
-        # если прошло какое-то время, проверим необходимость смены одежды
-        python:
-            for char in chars:
-                chars[char].get_plan()
+    python:
+        for char in chars:
+            chars[char].get_plan()
 
-        $ ChoiceClothes()
-        $ show_success_message()
+    $ ChoiceClothes()
+    $ show_success_message()
+
+    if any([prevday!=day, prevtime!=tm]):
 
         # если сменилось время суток - нужно остановить текущую музыку
         if any([prevtime < '06:00' <= tm,
@@ -535,14 +513,11 @@ label AfterWaiting:
 
 label random_dressed:
 
-    if not lisa.hourly.dressed:
+    if not lisa.hourly.dressed and tm[-2:] == '00':
         #  Лиза ещё не переодевалась
         if any([
                 # после душа в обычную
                 all([lisa.prev_plan == 'shower', lisa.plan_name == 'read']),
-
-                # после отдыха во дворе в обычную одежду, далее читает
-                all([lisa.prev_plan in ['sun', 'swim'], lisa.plan_name == 'read']),
 
                 # после мытья посуды в другую повседневную одежду, если игрок её поменял
                 all([lisa.prev_plan == 'dishes', lisa.plan_name == 'phone', lisa.daily.dishes < 2, lisa.prev_dress != lisa.dress_inf]),
@@ -550,56 +525,76 @@ label random_dressed:
                 # после ванны в обычную, если не остаётся в полотенце
                 all([lisa.prev_plan == 'bath', lisa.plan_name in ['phone', 'homework'], lisa.dress_inf not in ['04a', '04b']]),
             ]):
+
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
-                call lisa_sudden_dressing(-1) from _call_lisa_sudden_dressing_4
+                call lisa_sudden_dressing(-1)
+
             elif all([current_room != prev_room, current_room == house[0]]):
                 # Макс входит в свою комнату
-                if not lisa.daily.dressed:
-                    # сегодня ещё не попадали на переодевание
-                    if random_outcome(40):
-                        call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_5    # "нулевой"
-                    elif random_outcome(35):
-                        call lisa_sudden_dressing(1) from _call_lisa_sudden_dressing_6    # неповезло
-                    elif random_outcome(25):
-                        call lisa_sudden_dressing(2) from _call_lisa_sudden_dressing_7    # повезло
-                elif random_outcome(30):
-                    # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
-                    call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_8    # "нулевой"
+
+                call chance_dressing_roll
 
         elif any([
                 # после школы в купальник (без Оливии)
                 all([lisa.prev_plan in ['in_shcool', 'on_courses'], lisa.plan_name in ['sun', 'swim'], not olivia_visits()]),
 
-                # после чтения в купальник (без Оливии)
-                all([lisa.prev_plan == 'read', lisa.plan_name in ['sun', 'swim'], not olivia_visits()]),
+                # похода по магазинам в бикини
+                all([lisa.prev_plan == 'in_shop', lisa.plan_name == 'read']),
+
+                # после репетитора в бикини
+                all([lisa.prev_plan == 'at_tutor', lisa.plan_name in ['sun', 'swim']]),
             ]):
+
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
-                call lisa_sudden_dressing(-1) from _call_lisa_sudden_dressing_9
+                call lisa_sudden_dressing(-1)
+
             elif all([current_room != prev_room, current_room == house[0]]):
+
                 # Макс входит в свою комнату
-                if not lisa.daily.dressed:
-                    # сегодня ещё не попадали на переодевание
-                    if 'bikini' in lisa.gifts:
-                        # красное бикини есть, доступны все варианты
-                        if random_outcome(40):
-                            call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_10    # "нулевой"
-                        elif random_outcome(35):
-                            call lisa_sudden_dressing(1) from _call_lisa_sudden_dressing_11    # неповезло
-                        elif random_outcome(25):
-                            call lisa_sudden_dressing(2) from _call_lisa_sudden_dressing_12    # повезло
-                    elif random_outcome(40):
-                        # красного бикини ещё нет, то может быть только нулевой момент
-                        call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_13    # "нулевой"
-                elif random_outcome(30):
-                    # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
-                    call lisa_sudden_dressing(0) from _call_lisa_sudden_dressing_14    # "нулевой"
+                # сегодня ещё не попадали на переодевание
+                if 'bikini' in lisa.gifts:
+                    # красное бикини есть, доступны все варианты
+                    call chance_dressing_roll
 
-
+                elif lisa.daily.dressed in [0, 2] and random_outcome(40):
+                    # красного бикини ещё нет, то может быть только нулевой момент
+                    $ lisa.daily.dressed += 1
+                    call lisa_sudden_dressing(0)    # "нулевой"
 
     return
 
+label chance_dressing_roll:
+    if lisa.daily.dressed in [0, 1]:
+
+        if random_outcome(40):
+            $ lisa.daily.dressed += 1
+            call lisa_sudden_dressing(0)    # "нулевой"
+        elif random_outcome(35):
+            $ lisa.daily.dressed += 2
+            call lisa_sudden_dressing(1)    # неповезло
+        elif random_outcome(25):
+            $ lisa.daily.dressed += 2
+            call lisa_sudden_dressing(2)    # повезло
+        # $ renpy.dynamic('rnd')
+        # $ rnd = renpy.random.randint(1, 20)
+        # if not rnd % 5:
+        #     $ lisa.daily.dressed += 2
+        #     call lisa_sudden_dressing(2)    # повезло
+        # elif not rnd % 4:
+        #     $ lisa.daily.dressed += 2
+        #     call lisa_sudden_dressing(1)    # неповезло
+        # elif not rnd % 3:
+        #     $ lisa.daily.dressed += 1
+        #     call lisa_sudden_dressing(0)    # "нулевой"
+
+    elif lisa.daily.dressed in [0, 2] and random_outcome(25):
+        # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
+        $ lisa.daily.dressed += 1
+        call lisa_sudden_dressing(0)    # "нулевой"
+
+    return
 
 label night_of_fun:
 
@@ -647,13 +642,13 @@ label cam_after_waiting:
 
     $ MoodNeutralize()
 
-    if any([prevday!=day, prevtime!=tm]):
+    # if any([prevday!=day, prevtime!=tm]):
         # если прошло какое-то время, проверим необходимость смены одежды
-        python:
-            for char in chars:
-                chars[char].get_plan()
+    python:
+        for char in chars:
+            chars[char].get_plan()
 
-        $ ChoiceClothes()
+    $ ChoiceClothes()
 
     $ spent_time = 0
     $ prevday = day
@@ -1593,3 +1588,6 @@ label update_07_0_99:
         python:
             for char in chars:
                 chars[char].daily.dressed = 0
+
+        $ ann.clothes.sports.sel[1].suf = 'c'
+        $ ann.clothes.sports.sel[1].info = '05c'

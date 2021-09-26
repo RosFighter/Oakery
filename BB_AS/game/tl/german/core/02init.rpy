@@ -602,3 +602,11 @@ translate german strings:
     old "Тебе помочь накрыть на стол?"
     new "Brauchst du Hilfe beim Tischdecken?"
 
+# TODO: Translation updated at 2021-09-25 23:46
+
+translate german strings:
+
+    # game/core/02init.rpy:127
+    old "Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"
+    new "Und, hast du alles noch einmal probiert?\n{i}(Lisa zur Schule verabschieden){/i}"
+

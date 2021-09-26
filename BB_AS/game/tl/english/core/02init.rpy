@@ -602,3 +602,11 @@ translate english strings:
     old "Тебе помочь накрыть на стол?"
     new "Do you need help setting the table?"
 
+# TODO: Translation updated at 2021-09-25 23:46
+
+translate english strings:
+
+    # game/core/02init.rpy:127
+    old "Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"
+    new "So, did you do it all again? \n{i}(Walking Lisa to school{/i}"
+
