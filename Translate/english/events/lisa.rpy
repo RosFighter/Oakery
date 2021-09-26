@@ -2102,7 +2102,7 @@ translate english strings:
 
     # game/events/lisa.rpy:1491
     old "Да легко! Не буду мешать..."
-    new "That's easy! I won't interrupt..."
+    new "No problem! I won't interrupt..."
 
     # game/events/lisa.rpy:1493
     old "Не буду. Честное слово!"
