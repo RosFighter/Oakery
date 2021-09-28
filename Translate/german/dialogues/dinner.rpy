@@ -640,7 +640,7 @@ translate german dinner_4_f390e9d0:
 translate german dinner_4_ba2cf0bd:
 
     # Ann_13 "Что такое, Макс? Что-то не свежее попалось?"
-    Ann_13 "Was? Schmeckt das Essen nicht?"
+    Ann_13 "Was ist los, Max? Schmeckt das Essen nicht?"
 
 # game/dialogues/dinner.rpy:390
 translate german dinner_4_af37ddf8:
@@ -652,19 +652,19 @@ translate german dinner_4_af37ddf8:
 translate german dinner_4_2572e6bf:
 
     # Lisa_09 "Тем не менее, купальник мне всё ещё нужен. В закрытом я не могу загорать, а очень хочется..." nointeract
-    Lisa_09 "Wie auch immer, ich brauche immer noch einen Bikini. Mit dem, den ich jetzt habe, kann ich mich nicht sonnen." nointeract
+    Lisa_09 "Trotzdem brauche ich noch immer einen Bikini. Ich kann mich in meinem Badeanzug überhaupt nicht richtig sonnen, aber ich möchte das so gern..." nointeract
 
 # game/dialogues/dinner.rpy:396
 translate german dinner_4_d0a6b048:
 
     # Lisa_13 "Очень смешно, Макс. Загорай сам как хочешь, а мне нужен купальник!"
-    Lisa_13 "Sehr witzig, Max. Du kannst dich so bräunen, wie du willst, aber ich brauche einen Bikini!"
+    Lisa_13 "Sehr witzig, Max. Du kannst dich sonnen, wie du willst, aber ich brauche einen Bikini!"
 
 # game/dialogues/dinner.rpy:397
 translate german dinner_4_ff02b2d1:
 
     # Max_09 "Ну, как хочешь. Моё дело предложить решение..."
-    Max_09 "Ich habe nur versucht zu helfen..."
+    Max_09 "Nun, wie du willst. Ich habe einen Vorschlag zur Lösung des Problems gemacht..."
 
 # game/dialogues/dinner.rpy:398
 translate german dinner_4_f6e8b059:
@@ -688,7 +688,7 @@ translate german dinner_4_c6597fba:
 translate german dinner_4_dab367c7:
 
     # Eric_00 "Точно, Алиса. Ты хотела какое-то платье, вроде бы... Верно?"
-    Eric_00 "Ach ja, du wolltest auch etwas haben, richtig?"
+    Eric_00 "Richtig, Alice. Du wolltest so eine Art Kleid, also... Richtig?"
 
 # game/dialogues/dinner.rpy:411
 translate german dinner_4_4ac6b15c:
