@@ -34,7 +34,7 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-06g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
-10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки
+10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки и уходит в школу
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01e1 => #myroom-wardrobe-mde-01-lisa-dresses-03e
@@ -53,10 +53,52 @@
 	     #myroom-wardrobe-mde-01-lisa-dresses-07a
 		 #myroom-wardrobe-mde-01-lisa-dresses-07b
 		 #myroom-wardrobe-mde-01-lisa-dresses-07d
-10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее висит в телефоне !!!Пока пропускается!!!
-10:00 [вс] Лиза переодевается после завтрака в платье, далее висит в телефоне !!!Пока пропускается!!!
-14:00 [сб] Лиза переодевается после похода по магазинам в бикини, далее читает !!!Пока не реализуется и читает в базовой одежде / халате / розовой!!!
-15:00 [сб/вс] Лиза переодевается после чтения и репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе !!!После реализации 14:00 останется только вс!!!
+10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее зависает в телефоне
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01f1 => #myroom-wardrobe-mde-01-lisa-dresses-08f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04f1 => #myroom-wardrobe-mde-01-lisa-dresses-08f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-06h
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-08f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-06h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+10:00 [вс] Лиза переодевается после завтрака в платье, далее уходит с виллы
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01i  => #myroom-wardrobe-mde-01-lisa-dresses-02i
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-06h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04i  => #myroom-wardrobe-mde-01-lisa-dresses-06i
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03h
+		 #myroom-wardrobe-mde-01-lisa-dresses-02i
+		 #myroom-wardrobe-mde-01-lisa-dresses-06h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06i
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+14:00 [сб] Лиза переодевается после похода по магазинам в бикини, далее читает
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01c1 => #myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04c1 => #myroom-wardrobe-mde-01-lisa-dresses-05c1
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07f
+15:00 [вс] Лиза переодевается после репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 		 #myroom-wardrobe-mde-01-lisa-dresses-01c1 => #myroom-wardrobe-mde-01-lisa-dresses-02c1
@@ -65,9 +107,8 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-02c1
 		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
 	  Рано (нулевой момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+	     #myroom-wardrobe-mde-01-lisa-dresses-07i
+		 #myroom-wardrobe-mde-01-lisa-dresses-07i1
 16:00 [пн-пт] Лиза переодевается после школы в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -180,7 +221,7 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
-10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки
+10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки и уходит в школу
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01e1 => #myroom-wardrobe-mde-01-lisa-dresses-02e1
@@ -200,10 +241,43 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-07b
 		 #myroom-wardrobe-mde-01-lisa-dresses-07d
 		 #myroom-wardrobe-mde-01-lisa-dresses-07e3
-10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее висит в телефоне !!!Пока пропускается!!!
-10:00 [вс] Лиза переодевается после завтрака в платье, далее висит в телефоне !!!Пока пропускается!!!
-14:00 [сб] Лиза переодевается после похода по магазинам в бикини, далее читает !!!Пока не реализуется и читает в базовой одежде / халате / розовой!!!
-15:00 [сб/вс] Лиза переодевается после чтения и репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе !!!После реализации 14:00 останется только вс!!!
+10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее зависает в телефоне
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01f1 => #myroom-wardrobe-mde-01-lisa-dresses-07f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04f1 => #myroom-wardrobe-mde-01-lisa-dresses-07f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+10:00 [вс] Лиза переодевается после завтрака в платье, далее уходит с виллы
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01i  => #myroom-wardrobe-mde-01-lisa-dresses-02i
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04i  => #myroom-wardrobe-mde-01-lisa-dresses-06i
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-02i
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06i
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+14:00 [сб] Лиза переодевается после похода по магазинам в бикини, далее читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-lisa-dresses-03c
@@ -216,9 +290,23 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-06c
 		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
 	  Рано (нулевой момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+	     #myroom-wardrobe-mde-01-lisa-dresses-07f
+		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+15:00 [вс] Лиза переодевается после репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-lisa-dresses-01c1 => #myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04c  => #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-04c1 => #myroom-wardrobe-mde-01-lisa-dresses-05c1
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07i
+		 #myroom-wardrobe-mde-01-lisa-dresses-07i1
 16:00 [пн-пт] Лиза переодевается после школы в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -343,7 +431,7 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
-10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки
+10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки и уходит в школу
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
@@ -374,10 +462,54 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-07b
 		 #myroom-wardrobe-mde-01-lisa-dresses-07d
 		 #myroom-wardrobe-mde-01-lisa-dresses-07e3
-10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее висит в телефоне !!!Пока пропускается!!!
-10:00 [вс] Лиза переодевается после завтрака в платье, далее висит в телефоне !!!Пока пропускается!!!
-14:00 [сб] Лиза переодевается после похода по магазинам в бикини, далее читает !!!Пока не реализуется и читает в базовой одежде / халате / розовой!!!
-15:00 [сб/вс] Лиза переодевается после чтения и репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе !!!После реализации 14:00 останется только вс!!!
+10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее зависает в телефоне
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-01f  => #myroom-wardrobe-mde-01-lisa-dresses-08f
+		 #myroom-wardrobe-mde-01-lisa-dresses-01f1 => #myroom-wardrobe-mde-01-lisa-dresses-07f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-04f  => #myroom-wardrobe-mde-01-lisa-dresses-08f
+		 #myroom-wardrobe-mde-01-lisa-dresses-04f1 => #myroom-wardrobe-mde-01-lisa-dresses-07f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-02a
+		 #myroom-wardrobe-mde-01-lisa-dresses-08f
+		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+10:00 [вс] Лиза переодевается после завтрака в платье, далее уходит с виллы
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-01h  => #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-01i  => #myroom-wardrobe-mde-01-lisa-dresses-02i
+		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-04h  => #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-04i  => #myroom-wardrobe-mde-01-lisa-dresses-06i
+	  Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+		 #myroom-wardrobe-mde-01-lisa-dresses-02i
+		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-06i
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07a
+		 #myroom-wardrobe-mde-01-lisa-dresses-07b
+		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+14:00 [сб] Лиза переодевается после похода по магазинам в бикини, далее читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
@@ -394,9 +526,27 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-06c
 		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
 	  Рано (нулевой момент):
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+	     #myroom-wardrobe-mde-01-lisa-dresses-07f
+		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+15:00 [вс] Лиза переодевается после репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-lisa-dresses-01c1 => #myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-04c  => #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-04c1 => #myroom-wardrobe-mde-01-lisa-dresses-05c1
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-lisa-dresses-07i
+		 #myroom-wardrobe-mde-01-lisa-dresses-07i1
 16:00 [пн-пт] Лиза переодевается после школы в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -773,23 +923,3 @@
    #на фоне двери в сб
    #на фоне двери в вс
 
-
-------------------------------------------------------------------------------------------------------------
-
-10:00 [сб] Лиза переодевается после завтрака в выходную одежду, далее уходит на шопинг
-   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
-      Повезло:
-	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
-		 #myroom-wardrobe-mde-01-lisa-dresses-01f1 => #myroom-wardrobe-mde-01-lisa-dresses-08f1
-		 #myroom-wardrobe-mde-01-lisa-dresses-04a  => #myroom-wardrobe-mde-01-lisa-dresses-05a
-		 #myroom-wardrobe-mde-01-lisa-dresses-04f1 => #myroom-wardrobe-mde-01-lisa-dresses-08f1
-      Не повезло:
-	     #myroom-wardrobe-mde-01-lisa-dresses-02a
-		 #myroom-wardrobe-mde-01-lisa-dresses-05a
-		 #myroom-wardrobe-mde-01-lisa-dresses-08f1
-	  Рано:
-	     #myroom-wardrobe-mde-01-lisa-dresses-07a
-		 #myroom-wardrobe-mde-01-lisa-dresses-07b
-		 #myroom-wardrobe-mde-01-lisa-dresses-07d
-   (Макс стучится в дверь)
-10:00 [вс] ???
