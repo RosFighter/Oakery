@@ -1246,7 +1246,7 @@ translate german dinner_11_e2de9231:
 translate german dinner_11_d501685a:
 
     # Ann_01 "Да, Эрик полностью прав. А ты, Макс, даже школу бросил. Прежде, чем думать о высшем образовании, неплохо было бы закончить среднее. Как считаешь?" nointeract
-    Ann_01 "Ja, Eric hat Recht. Keiner von euch hat das Gymnasium abgeschlossen. Sollte man das nicht erst in Ordnung bringen?" nointeract
+    Ann_01 "Ja, Eric hat völlig recht. Und du, Max, bist sogar von der Highschool geflogen. Bevor du über ein Studium nachdenkst, solltest du die High School abschließen. Findest du nicht auch?" nointeract
 
 # game/dialogues/dinner.rpy:586
 translate german dinner_11_559e8fa1:

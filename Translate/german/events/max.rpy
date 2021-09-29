@@ -520,13 +520,13 @@ translate german InstallCam_b5c9650c:
 translate german InstallCam_44699dcc:
 
     # Max_04 "{m}В этой комнате столько всего может происходить... Думаю, зрителям понравится! Главное - спрятать все провода, чтобы Лиза не заметила новую микро-камеру...{/m}" nointeract
-    Max_04 "{m}In diesem Raum könnte eine Menge passieren... Ich denke, den Zuschauern wird es gefallen! Ich muss die ganzen Kabel verstecken, ich kann nicht zulassen, dass Lisa die neue Kamera findet.{/m}" nointeract
+    Max_04 "{m}In diesem Raum kann so viel passieren... Ich denke, das Publikum wird es lieben! Die Hauptsache ist, alle Kabel zu verstecken, damit Lisa die neue Mikrokamera nicht bemerkt...{/m}" nointeract
 
 # game/events/max.rpy:765
 translate german InstallCam_b9324e31:
 
     # Max_04 "{m}Пусть зрители посмотрят, чем Алиса занимается в своей комнате, когда её не видят... Я бы и сам был бы рад посмотреть, но пока такой функции у меня нет...{/m}" nointeract
-    Max_04 "{m}Jetzt können die Zuschauer sehen, was Alice in ihrem Zimmer macht, wenn niemand da ist. Ich würde das gerne selbst sehen, schade, dass ich die Funktionalität noch nicht habe.{/m}" nointeract
+    Max_04 "{m}Zeigt den Zuschauern, was Alice in ihrem Zimmer macht, wenn sie unbeobachtet ist... Ich würde es gerne selbst sehen, aber ich habe diese Möglichkeit noch nicht...{/m}" nointeract
 
 # game/events/max.rpy:771
 translate german InstallCam_9d11ed16:
