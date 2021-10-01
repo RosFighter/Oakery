@@ -175,3 +175,54 @@ translate english cam0_lisa_repeats_homework_f0fb26d2:
 
     # Max_01 "Лиза готовится к сегодняшним урокам в школе. Какая умничка..."
     Max_01 "Lisa is getting ready for school today. What a good girl..."
+
+# TODO: Translation updated at 2021-10-02 01:46
+
+# game/events/lisa_cam.rpy:198
+translate english cam0_lisa_dressed_f7db1942:
+
+    # Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
+    Max_09 "Nothing interesting here. Lisa is completely dressed."
+
+# game/events/lisa_cam.rpy:201
+translate english cam0_lisa_dressed_e79b2255:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..." nointeract
+    Max_07 "Perfect! Lisa's getting ready to go to school..." nointeract
+
+# game/events/lisa_cam.rpy:202
+translate english cam0_lisa_dressed_2978876d:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться на шопинг..." nointeract
+    Max_07 "Lisa's getting ready to go shopping..." nointeract
+
+# game/events/lisa_cam.rpy:205
+translate english cam0_lisa_dressed_e61ca9e9:
+
+    # Max_02 "Ухх! Сейчас она такая голенькая и милая..." nointeract
+    Max_02 "Yes! Her cute body makes for a great show..." nointeract
+
+# game/events/lisa_cam.rpy:206
+translate english cam0_lisa_dressed_e16161a7:
+
+    # Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
+    Max_04 "My little sister is such a naughty girl beneath that uniform. I hope the audience likes it!"
+
+# game/events/lisa_cam.rpy:207
+translate english cam0_lisa_dressed_639be09f:
+
+    # Max_04 "Повезло мне с сестрёнкой! Обворожительна в любой одежде и ещё больше - без неё..."
+    Max_04 "She's so tempting regardless of what she's wearing! None of the boys would be able to stop themselves if they saw what she was hiding..."
+
+# game/events/lisa_cam.rpy:203
+translate english cam0_lisa_dressed_413010f3:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться на прогулку..." nointeract
+    Max_07 "" nointeract
+
+# game/events/lisa_cam.rpy:204
+translate english cam0_lisa_dressed_80e887bc:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться к репетитору..." nointeract
+    Max_07 "" nointeract
+

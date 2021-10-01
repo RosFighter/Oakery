@@ -46,3 +46,11 @@ translate english strings:
     old "Влияние Макса недостаточно"
     new "Max's influence isn't high enough"
 
+# TODO: Translation updated at 2021-10-02 01:46
+
+translate english strings:
+
+    # game/core/07_clothes.rpy:87
+    old "Для прогулок"
+    new ""
+

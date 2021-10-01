@@ -608,4 +608,5 @@ translate english strings:
 
     # game/core/02init.rpy:127
     old "Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"
-    new "So, did you do it all again? {\n{i}(Walking Lisa to school{/i}"
+    new "So, did you do it all again? \n{i}(Walking Lisa to school{/i}"
+
