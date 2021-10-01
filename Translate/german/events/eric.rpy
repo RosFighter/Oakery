@@ -1984,9 +1984,9 @@ translate german eric_ann_try_fucking_ad8c84cf:
     # Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}" nointeract
     Max_07 "{m}Aus Moms Zimmer ist kaum ein Geräusch zu hören. Eric scheint überhaupt keinen Spaß zu haben...{/m}" nointeract
 
-# game/events/eric.rpy:1537
-translate german eric_ann_try_fucking_122a2fc3:
+# game/events/eric.rpy:1538
+translate german eric_ann_try_fucking_e010ae0b:
 
-    # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}"
-    Max_02 "{m}Wie kann eine so schöne Frau nicht würdig sein?! Ich verstehe das nicht...{/m}"
+    # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}" nointeract
+    Max_02 "{m}Wie kann eine so schöne Frau nicht würdig sein?! Ich verstehe das nicht...{/m}" nointeract
 
