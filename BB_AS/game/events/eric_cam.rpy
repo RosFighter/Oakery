@@ -132,7 +132,7 @@ label cam0_eric_resting:
     show FG cam-shum-act at laptop_screen
     if 'eric_resting' not in cam_flag:
         $ cam_flag.append('eric_resting')
-        if eric.daily.sweets and GetWeekday(day) in [1, 3]:
+        if eric.daily.sweets and weekday in [1, 3]:
             Max_01 "{m}Кажется, подмешанное Эрику в еду средство испортило ему всё настроение и он не рискует идти к моей сестрёнке... Именно на это я и рассчитывал!{/m}"
         else:
             Max_01 "О, \"В мире животных\" показывают! То ли шимпанзе на стероидах, то ли горилла..."
@@ -355,9 +355,9 @@ label cam0_eric_shat:
 
 label cam1_eric_shat:
     if tm < '22:00':
-        $ renpy.show('Eric cams shat 01'+eric.dress)
+        $ renpy.show('Eric cams shat 01'+eric.dress, at_list=[laptop_screen])
     else:
-        $ renpy.show('Eric cams shat 02'+eric.dress)
+        $ renpy.show('Eric cams shat 02'+eric.dress, at_list=[laptop_screen])
 
     show FG cam-shum-act at laptop_screen
     if 'eric_bath0' not in cam_flag:
@@ -379,7 +379,7 @@ label cam0_eric_ann_resting:
 
 
 label cam0_eric_sleep:
-    $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02']+eric.dress), at_list=[laptop_screen])
+    $ renpy.show('Eric cams sleep '+cam_poses_manager(eric, ['01', '02'])+eric.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
 
     if 'eric_sleep' not in cam_flag:

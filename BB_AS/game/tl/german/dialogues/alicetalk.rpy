@@ -11122,6 +11122,5 @@ translate german strings:
     new "{i}Abführmittel auf Erics Teller schütten{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
-    old "{i}подмешать Эрику в тарелку средство от потенции{/i}"
-    new "{i}Potenzmittel auf Erics Teller verteilen{/i}"
-
+    old "{i}подмешать Эрику в тарелку успокоительное{/i}"
+    new "{i}Sedativum auf Erics Teller verteilen{/i}"

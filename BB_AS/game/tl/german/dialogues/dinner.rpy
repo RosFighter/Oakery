@@ -148,7 +148,7 @@ translate german dinner_first_boss_name_e218c717:
 translate german dinner_first_yeah_e7a2f4ac:
 
     # Ann_12 "Я уже сказала, что он симпатичный молодой парень и это нормально... Или не сказала? Не важно. Хватит меня допрашивать, всё остывает!"
-    Ann_12 "Ich habe nur gesagt, dass er ein gut aussehender Mann ist, der so freundlich war, mir an meinem ersten Tag auszuhelfen. Oder habe ich das gesagt? Wie auch immer, es spielt keine Rolle. Hört jetzt auf, mich zu verhören."
+    Ann_12 "Ich habe bereits gesagt, dass er ein gut aussehender Typ ist, und das reicht... Oder habe ich das nicht? Es spielt keine Rolle. Hör auf, mich auszufragen, es reicht!"
 
 # game/dialogues/dinner.rpy:163
 translate german dinner_first_yeah_775e169f:
@@ -160,7 +160,7 @@ translate german dinner_first_yeah_775e169f:
 translate german dinner_first_yeah_c3619227:
 
     # Lisa_01 "Ну, школа находится тут совсем рядом, почти за углом. Уроки короткие, занятий мало. Но преподают интересно, гораздо лучше, чем в старой школе. Думаю, здесь даже Максу понравилось бы учиться!"
-    Lisa_01 "Nun, sie ist supereinfach zu erreichen, sie liegt nur um die Ecke. Die Schulstunden sind kurz, aber die Lehrer sind interessant, viel besser als meine alte Schule. Ich glaube sogar, dass es Max gefallen hätte!"
+    Lisa_01 "Nun, die Schule ist gleich um die Ecke. Die Unterrichtsstunden sind kurz, es gibt nicht viele Klassen. Aber der Unterricht ist interessant, viel besser als an der alten Schule. Ich glaube, sogar Max würde es hier gefallen!"
 
 # game/dialogues/dinner.rpy:165
 translate german dinner_first_yeah_09a444ef:
@@ -424,7 +424,7 @@ translate german dinner_2_next_fea6ae5e:
 translate german dinner_2_next_a3736476:
 
     # Lisa_02 "Макс, ты что, забыл? В прошлом году маленький паучок летом на Алису заполз, так она орала два часа! Бегала и кричала..."
-    Lisa_02 "Hast du das vergessen? Letztes Jahr kroch eine kleine Spinne auf Alice und sie schrie etwa zwei Stunden lang! Wie konntest du all das Gerenne und Geschrei vergessen?"
+    Lisa_02 "Max, hast du das vergessen? Letztes Jahr ist eine kleine Spinne im Sommer auf Alice herumgekrabbelt und sie hat zwei Stunden lang geschrien! Schreiend und fliehend..."
 
 # game/dialogues/dinner.rpy:313
 translate german dinner_2_next_fb43d7a4:
@@ -436,7 +436,7 @@ translate german dinner_2_next_fb43d7a4:
 translate german dinner_2_next_269e5145:
 
     # Alice_02 "Ага, маленький... Да он был с тебя размером! Ненавижу пауков. Кто их, вообще, выдумал. Хоть на северный полюс уезжай. Надеюсь, хоть там их нет..."
-    Alice_02 "Klein? Es war so riesig! Ich hasse Spinnen. Warum konnten wir nicht ohne Spinnen irgendwohin ziehen..."
+    Alice_02 "Ja, klein... Sie war so groß wie du! Ich hasse Spinnen. Wer hat sie eigentlich erfunden? Du könntest genauso gut zur Hölle fahren. Ich hoffe, dass sie dort nicht..."
 
 # game/dialogues/dinner.rpy:316
 translate german dinner_2_next_4f7263d2:
@@ -448,7 +448,7 @@ translate german dinner_2_next_4f7263d2:
 translate german dinner_2_next_d40b4857:
 
     # Alice_01 "А вот знаешь что, Макс, не дождёшься! Я не видела ещё ни одного паука и, может быть, это маме только показалось. Буду думать так. Так спокойнее..."
-    Alice_01 "Ich habe noch keine einzige Spinne gesehen, vielleicht hat sich Mom also geirrt. Ja, das ist es, was ich von nun an tun werde. Es ist besser so..."
+    Alice_01 "Aber weißt du was, Max, das kannst du nicht! Ich habe noch keine Spinne gesehen, und vielleicht ist das nur der Fantasie von Mom geschuldet. Wahrscheinlich ja. Es ist sehr viel schöner..."
 
 # game/dialogues/dinner.rpy:318
 translate german dinner_2_next_7b1f3728:
@@ -562,7 +562,7 @@ translate german dinner_3_9f799f74:
 translate german dinner_3_d9390707:
 
     # Alice_13 "Ага, Лизе купальник посмотрим, а мне платье для клуба, значит, нет? Я бы сегодня уже пошла, а так придётся ждать следующей пятницы... И то если купим..."
-    Alice_13 "Also, wir werden uns um Lisas Bikini kümmern, aber nicht um ein Kleid für mich? Ich könnte heute in den Club gehen, aber jetzt muss ich bis nächsten Freitag warten, aber nur, wir auch ein Kleid kaufen..."
+    Alice_13 "Ja, Lisa bekommt einen Bikini, und ich darf kein Kleid für den Club bekommen? Ich würde heute Abend gern ausgehen, aber ich muss bis nächsten Freitag warten... Und das nur, wenn wir es kaufen..."
 
 # game/dialogues/dinner.rpy:359
 translate german dinner_3_80ab1f2a:
@@ -640,7 +640,7 @@ translate german dinner_4_f390e9d0:
 translate german dinner_4_ba2cf0bd:
 
     # Ann_13 "Что такое, Макс? Что-то не свежее попалось?"
-    Ann_13 "Was? Schmeckt das Essen nicht?"
+    Ann_13 "Was ist los, Max? Schmeckt das Essen nicht?"
 
 # game/dialogues/dinner.rpy:390
 translate german dinner_4_af37ddf8:
@@ -652,19 +652,19 @@ translate german dinner_4_af37ddf8:
 translate german dinner_4_2572e6bf:
 
     # Lisa_09 "Тем не менее, купальник мне всё ещё нужен. В закрытом я не могу загорать, а очень хочется..." nointeract
-    Lisa_09 "Wie auch immer, ich brauche immer noch einen Bikini. Mit dem, den ich jetzt habe, kann ich mich nicht sonnen." nointeract
+    Lisa_09 "Trotzdem brauche ich noch immer einen Bikini. Ich kann mich in meinem Badeanzug überhaupt nicht richtig sonnen, aber ich möchte das so gern..." nointeract
 
 # game/dialogues/dinner.rpy:396
 translate german dinner_4_d0a6b048:
 
     # Lisa_13 "Очень смешно, Макс. Загорай сам как хочешь, а мне нужен купальник!"
-    Lisa_13 "Sehr witzig, Max. Du kannst dich so bräunen, wie du willst, aber ich brauche einen Bikini!"
+    Lisa_13 "Sehr witzig, Max. Du kannst dich sonnen, wie du willst, aber ich brauche einen Bikini!"
 
 # game/dialogues/dinner.rpy:397
 translate german dinner_4_ff02b2d1:
 
     # Max_09 "Ну, как хочешь. Моё дело предложить решение..."
-    Max_09 "Ich habe nur versucht zu helfen..."
+    Max_09 "Nun, wie du willst. Ich habe einen Vorschlag zur Lösung des Problems gemacht..."
 
 # game/dialogues/dinner.rpy:398
 translate german dinner_4_f6e8b059:
@@ -688,7 +688,7 @@ translate german dinner_4_c6597fba:
 translate german dinner_4_dab367c7:
 
     # Eric_00 "Точно, Алиса. Ты хотела какое-то платье, вроде бы... Верно?"
-    Eric_00 "Ach ja, du wolltest auch etwas haben, richtig?"
+    Eric_00 "Richtig, Alice. Du wolltest so eine Art Kleid, also... Richtig?"
 
 # game/dialogues/dinner.rpy:411
 translate german dinner_4_4ac6b15c:
@@ -1246,7 +1246,7 @@ translate german dinner_11_e2de9231:
 translate german dinner_11_d501685a:
 
     # Ann_01 "Да, Эрик полностью прав. А ты, Макс, даже школу бросил. Прежде, чем думать о высшем образовании, неплохо было бы закончить среднее. Как считаешь?" nointeract
-    Ann_01 "Ja, Eric hat Recht. Keiner von euch hat das Gymnasium abgeschlossen. Sollte man das nicht erst in Ordnung bringen?" nointeract
+    Ann_01 "Ja, Eric hat völlig recht. Und du, Max, bist sogar von der Highschool geflogen. Bevor du über ein Studium nachdenkst, solltest du die High School abschließen. Findest du nicht auch?" nointeract
 
 # game/dialogues/dinner.rpy:586
 translate german dinner_11_559e8fa1:

@@ -46,22 +46,22 @@ init python:
         if any([day==4, day==11]):
             # первая и вторая субботы
             rez = True
-        elif all([GetWeekday(day)==6, day>=11, flags.dinner==6]):
+        elif all([weekday==6, day>=11, flags.dinner==6]):
             # вторая суббота с Эриком (фикс пропущенных)
             rez = True
-        elif all([GetWeekday(day)==6, poss['seduction'].st() in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)]):
+        elif all([weekday==6, poss['seduction'].st() in [14, 15], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)]):
             # начинается битва за Лизу, битва за Алису еще не началась или уже результат определился
             rez = True
-        elif all([GetWeekday(day)==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done]):
+        elif all([weekday==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done]):
             # продолжение разговора о Лизе в случае отсрочки
             rez = True
-        elif all([GetWeekday(day)==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)]):
+        elif all([weekday==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)]):
             # начинается битва за Алису, битва за Лизу еще не началась или уже результат определился
             rez = True
-        elif all([GetWeekday(day)==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done]):
+        elif all([weekday==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done]):
             # продолжение разговора об Алисе в случае отсрочки
             rez = True
-        elif all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7]):
+        elif all([weekday==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7]):
             # Макс опередил Эрика с кружевным бельём Алисы
             rez = True
 
@@ -85,19 +85,19 @@ init python:
 
         rez = False
 
-        if all([GetWeekday(day)==3, olivia.dcv.feature.stage < 2]):
+        if all([weekday==3, olivia.dcv.feature.stage < 2]):
             # среда, первые две беседы с Оливией
             rez = True
-        elif all([lisa.flags.crush>11, GetWeekday(day)==2, olivia.dcv.feature.stage>1]):
+        elif all([lisa.flags.crush>11, weekday==2, olivia.dcv.feature.stage>1]):
             # каждый вторник, больше двух бесед с Оливией
             rez = True
-        elif  all([GetWeekday(day)==5, 1<olivia.dcv.feature.stage<4]):
+        elif  all([weekday==5, 1<olivia.dcv.feature.stage<4]):
             # пятница, беседа о ночных посиделках ещё не состоялась
             rez = True
-        elif  all([GetWeekday(day)==5, olivia.dcv.feature.stage>3, not olivia.dcv.special.done]):
+        elif  all([weekday==5, olivia.dcv.feature.stage>3, not olivia.dcv.special.done]):
             # пятница, состоялась беседа о ночных посиделках, не прошел откат ночных посиделок
             rez = True
-        elif all([GetWeekday(day)==5, olivia.dcv.special.stage==1, olivia.dcv.feature.stage<5]):
+        elif all([weekday==5, olivia.dcv.special.stage==1, olivia.dcv.feature.stage<5]):
             # пятница, после первых ночных посиделок, разговора с Оливией после ночного визита ещё не было
             rez = True
 
@@ -111,10 +111,10 @@ init python:
 
         rez = False
 
-        if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, not olivia.dcv.special.stage]):
+        if  all([weekday==6, olivia.dcv.feature.stage>3, not olivia.dcv.special.stage]):
             # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, ночных посиделок ещё не было
             rez = True
-        elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):
+        elif all([weekday==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):
             # ночь с пятницы на субботу, состоялась беседа после первых ночных посиделках, прошел откат ночных посиделок
             rez = True
 
@@ -205,7 +205,7 @@ init python:
         if 'eric' not in chars:
             return False
 
-            return all([
+        return all([
             flags.lisa_sexed > 6,
             lisa.dcv.intrusion.stage > 2,
             eric.get_plan(day, '19:00').name == 'dinner',

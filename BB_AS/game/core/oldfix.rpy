@@ -240,7 +240,7 @@ label after_load_03_9:
     if current_ver < "0.03.9.009":
         $ current_ver = "0.03.9.009"
 
-        # $ EventsByTime['Kira arrival'] = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([day>=18, GetWeekday(day)==6, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True)
+        # $ EventsByTime['Kira arrival'] = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([day>=18, weekday==6, talk_var['breakfast']==12, talk_var['dinner']==17])", cut=True)
 
     if current_ver < "0.03.9.010":
         $ current_ver = "0.03.9.010"
@@ -711,11 +711,11 @@ label after_load_06_0:
             })
 
         # $ EventsByTime.update({
-        #         'Eric_talkLisa0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
-        #         'Eric_talkLisa1'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([GetWeekday(day)==6, talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done])", cut=True),
-        #         'Eric_talkAlice0' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([GetWeekday(day)==6, talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)])", cut=True),
-        #         'Eric_talkAlice1' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([GetWeekday(day)==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done])", cut=True),
-        #         'Eric_ab_laceling': CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7])", cut=True),
+        #         'Eric_talkLisa0'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([weekday==6, poss['seduction'].stn in [14, 15], talk_var['fight_for_Lisa']==0, dcv['lizamentor'].lost<7, ('sexbody1' not in alice.gifts or talk_var['fight_for_Alice']>3)])", cut=True),
+        #         'Eric_talkLisa1'  : CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([weekday==6, talk_var['fight_for_Lisa']==2, dcv['ae_ed_lisa'].enabled, dcv['ae_ed_lisa'].done])", cut=True),
+        #         'Eric_talkAlice0' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([weekday==6, talk_var['fight_for_Alice']==0, 'sexbody1' in alice.gifts, (talk_var['fight_for_Lisa']==0 or talk_var['fight_for_Lisa']>3)])", cut=True),
+        #         'Eric_talkAlice1' : CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([weekday==6, talk_var['fight_for_Alice']==2, dcv['eric_alice'].enabled, dcv['eric_alice'].done])", cut=True),
+        #         'Eric_ab_laceling': CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([weekday==6, 'sexbody2' in alice.gifts, 4<dcv['eric.lingerie'].stage<7])", cut=True),
         #     })
 
         # $ peeping['ael_sexed'] = 0  # подсматривание за сек.уроками Лизы

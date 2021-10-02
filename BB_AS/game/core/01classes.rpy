@@ -207,6 +207,7 @@ init python:
         sports      = None  # спортивная форма
         work        = None  # школьная форма или рабочая одежда
         club        = None  # одежда для клуба
+        weekend     = None  # одежда выходного дня
         out         = None  # одежда для прогулок
         cook_morn   = None  # для утренней готовки
         cook_eve    = None  # для вечерней готовки
@@ -223,6 +224,7 @@ init python:
             self.sports     = None  # спортивная форма
             self.work       = None  # школьная форма или рабочая одежда
             self.club       = None  # одежда для клуба
+            self.weekend    = None  # одежда выходного дня
             self.out        = None  # одежда для прогулок
             self.cook_morn  = None  # для утренней готовки
             self.cook_eve   = None  # для вечерней готовки
@@ -1037,8 +1039,10 @@ init python:
         def income(self, earn):
             self.__account += earn  # прибыль с сайта
 
-        def withdraw(self): # выплата с сайта
-            paid = int(self.__account)
+        def withdraw(self, paid = None): # выплата с сайта
+            if paid is None:
+                paid = int(self.__account)
+            print 'withdraw $', paid
             self.__tange += paid
             self.__account -= paid
 
@@ -1205,7 +1209,7 @@ init python:
         def buy(self):          # выполняет покупку предмета из интернет-магазина
             mgg.pay(self.price)
             self.bought     = True
-            self.delivery   = 1 if GetWeekday(day) != 6 else 2
+            self.delivery   = 1 if weekday != 6 else 2
             purchased_items.append(self)
 
         def block(self):        # блокирует доступ к приобретению
@@ -1442,7 +1446,7 @@ init python:
 
         AfterSchool     = CutEvent('16:00', label='AfterSchoolFD', variable='day == 1', desc='Лиза первый раз приходит из школы', cut=True)
         need_money      = CutEvent('12:00', label='need_money', desc='срочно нужны деньги', variable='day==9', cut=True)
-        Kira_arrival    = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([GetWeekday(day)==6, day>=18, flags.breakfast==12, flags.dinner==17])", cut=True)
+        Kira_arrival    = CutEvent('08:40', label='Kira_arrival', desc='приезд Киры', variable="all([weekday==6, day>=18, flags.breakfast==12, flags.dinner==17])", cut=True)
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
         MorningWood1    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].st()<4])", sleep=True, cut=True)
@@ -1450,14 +1454,14 @@ init python:
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
         Eric_af_dinner  = CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day<12 or flags.dinner==11')
-        Eric_Lisa0      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([GetWeekday(day)==6, poss['seduction'].st() in [15, 16], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)])")
-        Eric_Lisa1      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([GetWeekday(day)==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done])")
-        Eric_Alice0     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([GetWeekday(day)==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)])")
-        Eric_Alice1     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([GetWeekday(day)==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done])")
-        Eric_laceling   = CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([GetWeekday(day)==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7])")
+        Eric_Lisa0      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_0', "разговор с Эриком о Лизе", "all([weekday==6, poss['seduction'].st() in [15, 16], not lisa.dcv.battle.stage, lisa.dcv.battle.lost<7, ('sexbody1' not in alice.gifts or alice.dcv.battle.stage>3)])")
+        Eric_Lisa1      = CutEvent('20:00', (6, ), 'Eric_talk_about_Lisa_1', "разговор с Эриком о Лизе в случае 'отсрочки'", "all([weekday==6, lisa.dcv.battle.stage==2, lisa.dcv.intrusion.done])")
+        Eric_Alice0     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_0', "разговор с Эриком о Алисе", "all([weekday==6, not alice.dcv.battle.stage, 'sexbody1' in alice.gifts, (not lisa.dcv.battle.stage or lisa.dcv.battle.stage>3)])")
+        Eric_Alice1     = CutEvent('20:00', (6, ), 'Eric_talk_about_Alice_1', "разговор с Эриком о Алисе в случае 'отсрочки'", "all([weekday==6, alice.dcv.battle.stage==2, alice.dcv.battle.enabled, alice.dcv.battle.done])")
+        Eric_laceling   = CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([weekday==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7])")
 
-        MeetingOlivia   = CutEvent('16:00', (3, ), 'olivia_first_meeting', "Оливия приходит на виллу в первый раз", "all([GetWeekday(day)==3, lisa.flags.crush==11, lisa.dcv.feature.done])", cut=True)
-        Night_Olivia    = CutEvent('00:00', (6, ), 'olivia_night_visit', "Оливия приходит на ночные посиделки", "all([GetWeekday(day)==6, olivia_nightvisits()])", cut=True)
+        MeetingOlivia   = CutEvent('16:00', (3, ), 'olivia_first_meeting', "Оливия приходит на виллу в первый раз", "all([weekday==3, lisa.flags.crush==11, lisa.dcv.feature.done])", cut=True)
+        Night_Olivia    = CutEvent('00:00', (6, ), 'olivia_night_visit', "Оливия приходит на ночные посиделки", "all([weekday==6, olivia_nightvisits()])", cut=True)
 
         Lisa_ab_Alex1   = CutEvent('20:00', (3, ), 'about_alex1', "1-й разговор с Лизой о подкате Алекса", "all([olivia.dcv.feature.stage==5, lisa.flags.crush==12])")
         Lisa_ab_Alex2   = CutEvent('20:00', (5, ), 'about_alex2', "2-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==13, lisa.dcv.feature.done])")

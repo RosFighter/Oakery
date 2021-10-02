@@ -883,15 +883,15 @@ label breakfast_after_punishment:
         jump breakfast_3
     elif day == 4:  # первый шопинг
         jump breakfast_4
-    elif all([day>=5, GetWeekday(day)==0, flags.breakfast==4]):
+    elif all([day>=5, weekday==0, flags.breakfast==4]):
         jump breakfast_5    # после ночёвки у Эрика
-    elif all([day>=7, GetWeekday(day)==2, flags.breakfast==5, flags.dinner==6]):
+    elif all([day>=7, weekday==2, flags.breakfast==5, flags.dinner==6]):
         jump breakfast_7    # вторник после ночевки Эрика
-    elif all([day>=12, GetWeekday(day)==0, flags.breakfast==7, flags.dinner==11]):
+    elif all([day>=12, weekday==0, flags.breakfast==7, flags.dinner==11]):
         jump breakfast_12   # Аня рассказывает о вероятной свадьбе
-    elif all([day>=18, GetWeekday(day)==6, flags.breakfast==12, flags.dinner==17]):
+    elif all([day>=18, weekday==6, flags.breakfast==12, flags.dinner==17]):
         jump breakfast_18   # первый завтрак с Кирой
-    elif 'kira' in chars and all([GetWeekday(day)==2, kira.dcv.feature.stage in [6, 7], flags.breakfast==18, flags.dinner==17]):
+    elif 'kira' in chars and all([weekday==2, kira.dcv.feature.stage in [6, 7], flags.breakfast==18, flags.dinner==17]):
         jump breakfast_35   # первое упоминание Александры (через несколько дней после первой фотосессии с Кирой)
     else:
         jump typical_breakfast

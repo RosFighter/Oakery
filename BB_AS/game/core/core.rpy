@@ -8,10 +8,10 @@ label Waiting:
     $ renpy.dynamic('name_label', 'd2')
 
     # очистим стек возвратов
-    $ renpy.set_return_stack([])
+    $ renpy.set_return_stack(renpy.get_return_stack()[-5:])
 
-    $ prevday = day
-    $ prevtime = tm
+    # $ prevday = day
+    # $ prevtime = tm
     $ prev_room = current_room
 
     if alarm_time != '':
@@ -69,11 +69,12 @@ label Waiting:
         call Noon from _call_Noon
     if day != prevday:
         call Midnight from _call_Midnight
-        if GetWeekday(day) == 0:
+        $ weekday = GetWeekday(day)
+        if weekday == 0:
             # с субботы на воскресение начинается новая неделя
             # в том числе для еженедельного понижения влияния и/или отношения
             call NewWeek from _call_NewWeek
-    if prevtime < "04:30" < tm:
+    if prevtime < "04:30" < tm or ("04:30" < tm and day > prevday):
         call NewDay from _call_NewDay
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
@@ -109,7 +110,7 @@ label Waiting:
 label eric_time_settings:
 
     if prevtime < '14:00' <= tm:
-        if all([GetWeekday(day)==6, 'sexbody2' not in alice.gifts, alice.dcv.intrusion.enabled, alice.dcv.intrusion.done, alice.dcv.intrusion.stage<7]):
+        if all([weekday==6, 'sexbody2' not in alice.gifts, alice.dcv.intrusion.enabled, alice.dcv.intrusion.done, alice.dcv.intrusion.stage<7]):
             # Макс не успел вовремя подарить Алисе кружевное бельё
             $ alice.dcv.intrusion.stage = 8
             $ items['sexbody2'].block()
@@ -117,12 +118,12 @@ label eric_time_settings:
             $ poss['blog'].open(15)
 
     if prevtime < '15:00' <= tm:
-        if all([GetWeekday(day)==0, flags.add_training, lisa.dcv.battle.stage in [2, 4, 5]]):
+        if all([weekday==0, flags.add_training, lisa.dcv.battle.stage in [2, 4, 5]]):
                 # если у Лизы репетитор
                 $ infl[lisa].add_e(60)
 
     if prevtime < '17:00' <= tm:
-        if GetWeekday(day) in [1, 2, 3, 4, 5]:
+        if weekday in [1, 2, 3, 4, 5]:
             $ infl[ann].add_e(12)  # Ане начисляем каждый день, когда она на работе
 
             if lisa.dcv.battle.stage == 6:
@@ -131,13 +132,13 @@ label eric_time_settings:
 
     if prevtime < '22:00' <= tm:
         if alice.dcv.battle.stage and alice.dcv.battle.stage!=2:
-            if GetWeekday(day)==3:
+            if weekday==3:
                 $ infl[alice].add_e(50)
-            elif GetWeekday(day)!=5:
+            elif weekday!=5:
                 $ infl[alice].add_e(20)
 
     if prevtime < '22:30' <= tm:
-        if all([GetWeekday(day)==1, lisa.dcv.intrusion.stage, flags.lisa_sexed<5]):
+        if all([weekday==1, lisa.dcv.intrusion.stage, flags.lisa_sexed<5]):
             # если начаты секс.уроки Лизы у АиЭ
             $ infl[lisa].add_e(40)
 
@@ -151,8 +152,8 @@ label eric_time_settings:
     if prevtime < '01:55' <= tm:
         if 'sexbody2' in alice.gifts and check_is_home('eric'):
             if not eric.daily.sweets and (
-                (GetWeekday(day)==4 and random_outcome(70))
-                or (GetWeekday(day)==5 and random_outcome(35))):
+                (weekday==4 and random_outcome(70))
+                or (weekday==5 and random_outcome(35))):
                 # Эрик дрочит на спящую Алису
                 $ flags.eric_jerk = True
             else:
@@ -332,7 +333,7 @@ label Noon:
         not items['erobook_'+str(alice.dcv.gifts.stage)].InShop): # прошел откат после дарения книги, можно купить следующую
         $ items['erobook_'+str(alice.dcv.gifts.stage)].unblock()
         $ new_items = True
-    if (GetWeekday(day)==1 and # понедельник
+    if (weekday==1 and # понедельник
             (('kira' in chars and kira.dcv.feature.stage>6) or alice.dcv.photo.done)    # состоялась первая фотосессия с Кирой или прошло 8 дней с момента вручения тёмного белья Алисе
             and not ('sexbody1' in alice.gifts or items['sexbody1'].have or items['sexbody1'].InShop)   # sexbody1 ещё не продавалось
             and 'black_linderie' in alice.gifts):   # тёмный комплект белья подарен Алисе
@@ -445,7 +446,7 @@ label AfterWaiting:
                     $ name_label = cur_plan.label
 
             if name_label == 'alice_dishes':
-                if (GetWeekday(day) == 0 and tm >= '11:00') or tm >= '12:00':
+                if (weekday == 0 and tm >= '11:00') or tm >= '12:00':
                     $ dishes_washed = True
 
     $ name_label = ''
@@ -528,12 +529,12 @@ label random_dressed:
 
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
-                call lisa_sudden_dressing(-1)
+                call lisa_dressed.moment0(-1) from _call_lisa_dressed_moment0_1
 
             elif all([current_room != prev_room, current_room == house[0]]):
                 # Макс входит в свою комнату
 
-                call chance_dressing_roll
+                call chance_dressing_roll from _call_chance_dressing_roll
 
         elif any([
                 # после школы в купальник (без Оливии)
@@ -548,7 +549,7 @@ label random_dressed:
 
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
-                call lisa_sudden_dressing(-1)
+                call lisa_dressed.moment0(-1) from _call_lisa_dressed_moment0_2
 
             elif all([current_room != prev_room, current_room == house[0]]):
 
@@ -556,12 +557,12 @@ label random_dressed:
                 # сегодня ещё не попадали на переодевание
                 if 'bikini' in lisa.gifts:
                     # красное бикини есть, доступны все варианты
-                    call chance_dressing_roll
+                    call chance_dressing_roll from _call_chance_dressing_roll_1
 
                 elif lisa.daily.dressed in [0, 2] and random_outcome(40):
                     # красного бикини ещё нет, то может быть только нулевой момент
                     $ lisa.daily.dressed += 1
-                    call lisa_sudden_dressing(0)    # "нулевой"
+                    call lisa_dressed.moment0 from _call_lisa_dressed_moment0_3    # "нулевой"
 
     return
 
@@ -570,29 +571,18 @@ label chance_dressing_roll:
 
         if random_outcome(40):
             $ lisa.daily.dressed += 1
-            call lisa_sudden_dressing(0)    # "нулевой"
+            call lisa_dressed.moment0 from _call_lisa_dressed_moment0_4    # "нулевой"
         elif random_outcome(35):
             $ lisa.daily.dressed += 2
-            call lisa_sudden_dressing(1)    # неповезло
+            call lisa_dressed.moment1 from _call_lisa_dressed_moment1_2    # неповезло
         elif random_outcome(25):
             $ lisa.daily.dressed += 2
-            call lisa_sudden_dressing(2)    # повезло
-        # $ renpy.dynamic('rnd')
-        # $ rnd = renpy.random.randint(1, 20)
-        # if not rnd % 5:
-        #     $ lisa.daily.dressed += 2
-        #     call lisa_sudden_dressing(2)    # повезло
-        # elif not rnd % 4:
-        #     $ lisa.daily.dressed += 2
-        #     call lisa_sudden_dressing(1)    # неповезло
-        # elif not rnd % 3:
-        #     $ lisa.daily.dressed += 1
-        #     call lisa_sudden_dressing(0)    # "нулевой"
+            call lisa_dressed.moment2 from _call_lisa_dressed_moment2_1    # повезло
 
     elif lisa.daily.dressed in [0, 2] and random_outcome(25):
         # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
         $ lisa.daily.dressed += 1
-        call lisa_sudden_dressing(0)    # "нулевой"
+        call lisa_dressed.moment0 from _call_lisa_dressed_moment0_5    # "нулевой"
 
     return
 
@@ -622,7 +612,7 @@ label night_of_fun:
     $ Wait(spent_time)
 
     ## теперь отправим Макса досыпать
-    $ prevtime = tm
+    # $ prevtime = tm
     $ status_sleep = True
     $ cur_ratio = 1
     $ spent_time = clip_time(int(round((100. - mgg.energy)/10, 0)) * 60, '06:00', '08:00')
@@ -643,7 +633,7 @@ label cam_after_waiting:
     $ MoodNeutralize()
 
     # if any([prevday!=day, prevtime!=tm]):
-        # если прошло какое-то время, проверим необходимость смены одежды
+    #     если прошло какое-то время, проверим необходимость смены одежды
     python:
         for char in chars:
             chars[char].get_plan()
@@ -727,8 +717,6 @@ label cam_after_waiting:
         else:
             call cam_background from _call_cam_background_1
 
-        # show FG cam-shum-act at laptop_screen
-
         call screen cam_show
     elif current_room == view_cam[0]:
         ## камера текущей локации. Макс сидит за компом
@@ -751,8 +739,7 @@ label cam_after_waiting:
     else:
         call cam_background from _call_cam_background_3
         show FG cam-shum-noact at laptop_screen
-        ## сообщаем об отсутствии интересного и возвращаемся к выбору камеры
-        # "[view_cam[0].id] [view_cam[2]]"
+
         if view_cam[0].id+'-'+str(view_cam[2]) not in cam_flag:
             $ cam_flag.append(view_cam[0].id+'-'+str(view_cam[2]))
             ## случайная фраза
@@ -871,6 +858,7 @@ label after_load:
     if 'massage_sunscreen.spider' not in persistent.memories:
         $ persistent.memories['massage_sunscreen.spider'] = 0
 
+    $ weekday = GetWeekday(day)
     return
 
 label update_06_5:

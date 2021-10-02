@@ -37,7 +37,7 @@ label StartPunishment:
     elif max(punreason) and tm > "18:00":
         $ pun_list.append("mgg")
 
-    if tm > "18:00" and 0 < GetWeekday(day) < 6:
+    if tm > "18:00" and 0 < weekday < 6:
         # Лиза получает наказание только вечером по будним дням
         if random_outcome(GetLisaPunChance()):  # получит ли Лиза двойку
             $ punlisa[0][1] = 1
@@ -59,7 +59,7 @@ label StartPunishment:
                       newpunishment==2,
                       flags.add_training,
                       lisa.dcv.punpause.done,
-                      GetWeekday(day) in [1,2],
+                      weekday in [1,2],
                       random_outcome(80),
                       lisa.flags.topless,
                       not lisa.dcv.other.enabled
@@ -71,7 +71,7 @@ label StartPunishment:
             tm > "18:00",
             alice.dcv.special.enabled,
             alice.dcv.special.stage > 1,
-            (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)
+            (not alice.flags.privpunish or 0 < weekday < 6)
             ]):
         # Алиса получает наказание вечером (в будни, если были приватные наказания), если открыт ивент с сигаретами
         if random_outcome(GetAlicePunChance()):  # найдет ли Анна сигареты Алисы
@@ -252,12 +252,14 @@ label punishment_max:
             Ann_16 "Макс! Сейчас ты будешь наказан, сам знаешь за что!"
             "Я же не виноват!" ('soc', mgg.social * 2, 90):
                 pass
-        if rend_result:
+        if rand_result:
             Ann_14 "[succes!t]Ты знаешь, Макс, всё говорит о том, что ты виноват и должен быть наказан. Но поверю тебе на слово, что это была какая-то ошибка. Надеюсь, я не пожалею о своём решении..."
             Max_08 "Спасибо, мам!"
             python:
                 for d in range(len(punreason)):
                     punreason[d] = 0
+            $ alice.daily.shower = 0
+            $ lisa.daily.shower = 0
             return
         else:
             if mgg.dress == "a":
@@ -415,8 +417,8 @@ label max_consequences:
         for cr in current_room.cur_char:
             if chars[cr] not in infl:
                 continue
-            if chars[cr].infmax is not None:
-                chars[cr].infmax = clip(chars[cr].infmax - 5.0, 0.0, 100.0)
+            # if chars[cr].infmax is not None:
+            #     chars[cr].infmax = clip(chars[cr].infmax - 5.0, 0.0, 100.0)
             if infl[chars[cr]].m[0]:
                 infl[chars[cr]].sub_m(5)
 
@@ -684,13 +686,13 @@ label punishment_alice:
         $ SetCamsGrow(house[5], 150 if newpunishment==1 else 250)
         $ _text = _("Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!")
 
-    if defend or 0<alice.dcv.private.stage<4:  # Макс уже заступался
+    if defend or 0 < alice.dcv.private.stage < 4:  # Макс уже заступался
         if alice.dcv.private.stage==1:
             # первый раз поговорили с Алисой о приватном наказании
             Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
             $ alice.dcv.private.stage = 2
-            $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 3))
-        elif alice.dcv.private.stage < 4:
+            $ alice.dcv.private.set_lost((2 if weekday!=5 else 3))
+        elif 1 < alice.dcv.private.stage < 4:
             $ alice.dcv.private.set_lost(2)
         Ann_18 "[_text!t]"
     else:
@@ -711,7 +713,8 @@ label punishment_alice:
                             if not alice.dcv.private.enabled:
                                 Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
                                 $ poss['ass'].open(0)
-                            $ alice.dcv.private.set_lost((2 if GetWeekday(day)!=5 else 4))
+                            else:
+                                $ alice.dcv.private.set_lost((2 if weekday!=5 else 4))
 
                         $ punalice[0][2] = 2
                         $ alice.weekly.protected += 1

@@ -46,3 +46,11 @@ translate german strings:
     old "Влияние Макса недостаточно"
     new "Max' Einfluss reicht nicht aus"
 
+# TODO: Translation updated at 2021-10-02 01:47
+
+translate german strings:
+
+    # game/core/07_clothes.rpy:87
+    old "Для прогулок"
+    new "Für Spaziergänge"
+

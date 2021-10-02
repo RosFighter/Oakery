@@ -910,7 +910,7 @@ translate german breakfast_4_2afa1e0c:
 translate german breakfast_4_fabe9f19:
 
     # Ann_00 "Не знаю о чём речь, но думаю, вы и правда между собой всё выясните. А сейчас пора собираться на шоппинг. Всем спасибо за завтрак!"
-    Ann_00 "Ich weiß nicht, wovon du sprichst, aber das kannst du später herausfinden, wir gehen bald einkaufen, also mach dich fertig. Vielen Dank für das Frühstück, allerseits!"
+    Ann_00 "Ich weiß nicht, wovon du sprichst, aber das kannst du später herausfinden, wir gehen bald einkaufen, also macht euch fertig. Vielen Dank für das Frühstück, allerseits!"
 
 # game/dialogues/breakfast.rpy:600
 translate german breakfast_4_81d2ad52:
@@ -1198,7 +1198,7 @@ translate german breakfast_7_9d10ae8c:
 translate german breakfast_7_29ce6767:
 
     # Ann_00 "Что, Макс? Я не поняла, о чём ты? Хотя, это не важно. В любом случае, до следующей недели это вам не грозит. У Лизы будет время подтянуть уроки, чтобы не получать больше двоек, ну а вы старайтесь не косячить и не будете наказаны... К тому же, если уже от этих разговоров вы станете лучше себя вести, то и раздеваться вам не придётся в дальнейшем."
-    Ann_00 "Ich weiß nicht, wovon du sprichst, Max. Jedenfalls hast du bis nächste Woche Zeit, darüber nachzudenken. Lisa wird etwas Zeit haben, um zu lernen und ihre Noten zu verbessern, und ihr beide versucht, euch zu benehmen, werdet nicht bestraft."
+    Ann_00 "Wie bitte, Max? Ich weiß nicht, was du meinst? Das ist aber völlig unwichtig. Auf jeden Fall hast du bis nächste Woche Zeit. Lisa hat genug Zeit, ihre Hausaufgaben zu machen, damit sie nicht noch mehr schlechte Noten bekommt, und du solltest keinen Mist bauen um nicht bestraft zu werden... Außerdem, wenn diese Gespräche dich schon dazu veranlassen, dich besser zu benehmen, wirst du dich in Zukunft nicht ausziehen müssen."
 
 # game/dialogues/breakfast.rpy:688
 translate german breakfast_7_b66fc958:
@@ -1228,7 +1228,7 @@ translate german breakfast_7_f574e6e4:
 translate german breakfast_7_315443a7:
 
     # Max_00 "Ага, спасибо за завтрак..."
-    Max_00 "Ja, danke für das Frühstück"
+    Max_00 "Ja, danke fürs Frühstück..."
 
 # game/dialogues/breakfast.rpy:702
 translate german breakfast_12_9aa18fca:

@@ -251,7 +251,7 @@ translate german ann_talk_tv_start_594c1ae6:
 translate german ann_talk_tv_start_1ea84186:
 
     # Ann_05 "Жаль, что мы редко с тобой вместе вот так сидим, что-то смотрим. Ну, надеюсь, начало традиции положено. И пусть в следующий раз будет нечто менее... волнующее..."
-    Ann_05 "Schade, dass wir das nicht sehr oft machen. Nun, hoffentlich haben wir gerade eine neue Tradition begonnen. Hoffen wir, dass der nächste Film nicht so... aufregend sein wird."
+    Ann_05 "Es ist schade, dass wir nicht zusammensitzen und uns solche Dinge ansehen können. Nun, ich hoffe, dass eine Tradition angefangen hat. Und das nächste Mal darf es ruhig etwas weniger... spannend..."
 
 # game/dialogues/anntalk.rpy:262
 translate german ann_talk_tv_start_acd22c78:
@@ -269,7 +269,7 @@ translate german ann_tv_casual_0_de055873:
 translate german ann_tv_casual_0_cc5c55e4:
 
     # Max_08 "{m}Вот чёрт! Зря я представлял, что там у мамы под полотенцем... В джинсах стало прям очень тесно, член стоит как памятник! Хорошо, что мама из-за моей одежды это не увидит...{/m}"
-    Max_08 "{m}Oh, Scheiße! Ich hätte mir nicht vorstellen sollen, was unter dem Handtuch meiner Mutter war... Meine Jeans waren wirklich eng, mein Schwanz war wie ein Monster! Gut, dass meine Mutter es nicht durch meine Klamotten sehen kann...{/m}"
+    Max_08 "{m}Oh, Scheiße! Ich hätte mir nicht vorstellen sollen, was unter dem Handtuch meiner Mutter ist... Meine Jeans sind wirklich eng, mein Schwanz ist ein Monster! Gut, dass meine Mutter es nicht durch meine Klamotten sehen kann...{/m}"
 
 # game/dialogues/anntalk.rpy:298
 translate german ann_tv_casual_0_a12834eb:

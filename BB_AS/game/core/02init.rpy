@@ -1,7 +1,7 @@
 init 9999 python:
     renpy.config.rollback_enabled = True
-    renpy.config.hard_rollback_limit = 16
-    renpy.config.rollback_length = 16
+    renpy.config.hard_rollback_limit = 50
+    renpy.config.rollback_length = 50
 
 init python:
     config.statement_callbacks.remove(_window_auto_callback)
@@ -201,7 +201,7 @@ define talks = {
     'lisa_gift'     : TalkTheme('lisa', _("У меня для тебя обещанная вкусняшка!"), 'lisa_sorry_gifts', "all([lisa.sorry.owe, lisa.sorry.there_in_stock(), lisa.plan_name in ['sun', 'read', 'phone']])"),
     'l.ab.sec1'     : TalkTheme('lisa', _("У тебя странный вид..."), 'liza_secret_alisa', "all([poss['nightclub'].st() < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, alice.dcv.feature.stage<1, alice.dcv.feature.done])"),
     'l.ab.sec2'     : TalkTheme('lisa', _("Может всё-таки поделишься своими переживаниями по поводу Алисы?"), 'liza_secret_alisa', "all([poss['nightclub'].st() < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, alice.dcv.feature.stage>0, alice.dcv.feature.done])"),
-    'lisa.hand'     : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "GetWeekday(day) in [2, 5] and all([learned_hand_massage(), lisa.flags.handmass, not lisa.daily.massage, lisa.plan_name == 'phone'])"),
+    'lisa.hand'     : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "weekday in [2, 5] and all([learned_hand_massage(), lisa.flags.handmass, not lisa.daily.massage, lisa.plan_name == 'phone'])"),
     'l.firstkiss'   : TalkTheme('lisa', _("Ну что, Лиза, готова?"), 'lisa_ment_kiss1', "all([GetRelMax('lisa')[0]>1, lisa.plan_name=='read', lisa.dcv.seduce.stage>3, 'lisa' not in flags.how_to_kiss])"),
     'l.nextkiss'    : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].st()>8, flags.stopkiss<1])"),
     'l.sex-ed1'     : TalkTheme('lisa', _("Лиза, ты же любишь читать?"), 'lisa_sexbook1', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].st()<13])"),
@@ -213,16 +213,16 @@ define talks = {
     'l.ab_aeed4'    : TalkTheme('lisa', _("Что нового узнала на уроке у мамы и Эрика?"), 'lisa_about_ae_sexed4', "not flags.l_ab_sexed and flags.lisa_sexed==4"),
     'l.stopkiss'    : TalkTheme('lisa', _("{i}урок поцелуев{/i}"), 'lisa_stop_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].st()>7, flags.stopkiss==1])"),
     'lisas_boy3'    : TalkTheme('lisa', _("Насчёт Алекса..."), 'about_boy3', "all([GetRelMax('lisa')[0]>1, lisa.flags.crush==6, day>=10, lisa.dcv.feature.done])", 1),
-    'l.olivia_1'    : TalkTheme('lisa', _("Есть успехи с Оливией?"), 'about_olivia_1', "all([lisa.flags.crush==7, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
-    'l.olivia_2'    : TalkTheme('lisa', _("Что-нибудь узнала про Оливию?"), 'about_olivia_2', "all([lisa.flags.crush==8, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
-    'l.olivia_3'    : TalkTheme('lisa', _("Ну так, что там с трусиками Оливии?"), 'about_olivia_3', "all([lisa.flags.crush==9, lisa.dcv.feature.done, GetWeekday(day)!=0])", 1),
-    'l.olivia_4'    : TalkTheme('lisa', _("Ты позвала Оливию к нам?"), 'about_olivia_4', "all([lisa.flags.kiss_lesson, lisa.flags.crush==10, lisa.dcv.feature.done, GetWeekday(day)!=3])", 1),
-    'l_ab_alex4'    : TalkTheme('lisa', _("Ну как, получилось рассказать всё Оливии?"), 'about_alex4', "all([lisa.flags.crush==15, GetWeekday(day) in [3, 4] or (GetWeekday(day)=2 and tm>'19:00')])"),
+    'l.olivia_1'    : TalkTheme('lisa', _("Есть успехи с Оливией?"), 'about_olivia_1', "all([lisa.flags.crush==7, lisa.dcv.feature.done, weekday!=0])", 1),
+    'l.olivia_2'    : TalkTheme('lisa', _("Что-нибудь узнала про Оливию?"), 'about_olivia_2', "all([lisa.flags.crush==8, lisa.dcv.feature.done, weekday!=0])", 1),
+    'l.olivia_3'    : TalkTheme('lisa', _("Ну так, что там с трусиками Оливии?"), 'about_olivia_3', "all([lisa.flags.crush==9, lisa.dcv.feature.done, weekday!=0])", 1),
+    'l.olivia_4'    : TalkTheme('lisa', _("Ты позвала Оливию к нам?"), 'about_olivia_4', "all([lisa.flags.kiss_lesson, lisa.flags.crush==10, lisa.dcv.feature.done, weekday!=3])", 1),
+    'l_ab_alex4'    : TalkTheme('lisa', _("Ну как, получилось рассказать всё Оливии?"), 'about_alex4', "all([lisa.flags.crush==15, weekday in [3, 4] or (weekday==2 and tm>'19:00')])"),
     'l.toples_0'    : TalkTheme('lisa', _("Нравится, что я спасаю твою попку от наказания?"), 'about_horror_toples', "all([tm<'23:00', lisa.flags.topless, lisa.flags.defend>4, not lisa.dcv.other.stage, lisa.dcv.other.lost])"),
     'ol.l.t1'       : TalkTheme(['lisa', 'olivia'], _("Учтите, я испытываю... некоторый подъём!"), 'olivia_talk1', "all([olivia.plan_name=='sun', not olivia.dcv.feature.stage, olivia.dcv.feature.done])"),
     'ol.l.t2'       : TalkTheme(['lisa', 'olivia'], _("Пошепчемся немного о моей сестрёнке?"), 'olivia_talk2', "all([olivia.plan_name=='sun', olivia.dcv.feature.stage==1, olivia.dcv.feature.done])"),
-    'ol.l.t3'       : TalkTheme(['lisa', 'olivia'], _("Что новенького, Оливия?"), 'olivia_talk3', "all([olivia.plan_name=='sun', GetWeekday(day)==2, olivia.dcv.feature.stage==3, olivia.dcv.feature.done])"),
-    'ol.l.t4'       : TalkTheme(['lisa', 'olivia'], _("Рад тебя видеть, Оливия!"), 'olivia_talk4', "all([olivia.plan_name=='sun', GetWeekday(day)in[2, 5], olivia.dcv.feature.stage==4, olivia.dcv.feature.done, olivia.dcv.special.stage])"),
+    'ol.l.t3'       : TalkTheme(['lisa', 'olivia'], _("Что новенького, Оливия?"), 'olivia_talk3', "all([olivia.plan_name=='sun', weekday==2, olivia.dcv.feature.stage==3, olivia.dcv.feature.done])"),
+    'ol.l.t4'       : TalkTheme(['lisa', 'olivia'], _("Рад тебя видеть, Оливия!"), 'olivia_talk4', "all([olivia.plan_name=='sun', weekday in[2, 5], olivia.dcv.feature.stage==4, olivia.dcv.feature.done, olivia.dcv.special.stage])"),
     'l.take_school' : TalkTheme('lisa', _("Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"), 'take_to_school', "all([lisa.flags.help, lisa.plan_name == 'repeats'])", 1),
     }
 

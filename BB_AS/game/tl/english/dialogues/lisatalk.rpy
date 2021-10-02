@@ -10286,7 +10286,7 @@ translate english take_to_school_c9d35dcf:
 translate english take_to_school_cc3367df:
 
     # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?"
-    Lisa_02 "That's it, I have to go now... I can still count on you to help me study, can't I?"
+    Lisa_02 "That's it, I have to go now... I can still count on you to help me study, right?"
 
 # game/dialogues/lisatalk.rpy:4427
 translate english take_to_school_46de9a7a:
@@ -10298,7 +10298,7 @@ translate english take_to_school_46de9a7a:
 translate english take_to_school_66f9eb7c:
 
     # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?" nointeract
-    Lisa_02 "That's it, I have to go now... I can still count on you to help me study, can't I?" nointeract
+    Lisa_02 "That's it, I have to go now... I can still count on you to help me study, right?" nointeract
 
 # game/dialogues/lisatalk.rpy:4443
 translate english take_to_school_63df00be:
@@ -10436,7 +10436,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:4438
     old "Если поцелуешь, то вполне можешь!"
-    new "If you kiss it, you might as well!"
+    new "If you kiss me, you might as well!"
 
     # game/dialogues/lisatalk.rpy:4438
     old "Только если дашь поцеловать!"

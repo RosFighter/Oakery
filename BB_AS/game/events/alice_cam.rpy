@@ -573,9 +573,9 @@ label cam0_alice_cooking_dinner:
 label cam0_alice_rest_evening:
 
     if 'blog_fun' not in cam_flag and 'blog_no_fun' not in cam_flag:
-        if GetWeekday(day) in [0, 2]:
+        if weekday in [0, 2]:
             $ cam_flag.append('blog_fun' if all([random_outcome(50), poss['blog'].st()>1, 'kira' in chars]) else 'blog_no_fun')
-        elif all([GetWeekday(day) == 6, poss['blog'].st()>1, 'kira' in chars]):
+        elif all([weekday == 6, poss['blog'].st()>1, 'kira' in chars]):
             $ cam_flag.append('blog_fun')
         else:
             $ cam_flag.append('blog_no_fun')

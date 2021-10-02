@@ -17,6 +17,8 @@ label kira_bath:
     scene location house bathroom door-evening
     if kira.daily.bath != 0:
         return
+    if all([wcv.catch_Kira.stage, not flags.eric_jerk, not eric.daily.sweets]):
+        return
 
     $ renpy.dynamic('ch_catch', 'catch', 'r1')
     $ kira.daily.bath = 1

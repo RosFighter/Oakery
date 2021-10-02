@@ -8,6 +8,11 @@ init -100:
 init python:
     config.layers.insert(1, 'wm')
 
+    def withdraw(paid):
+        mgg.withdraw(paid)
+
+    Withdraw = renpy.curry(withdraw)
+
     def GetWeekday(day):  # возвращает номер дня недели
         return (day+2) % 7
 
@@ -44,6 +49,7 @@ init python:
     def alt_wait():
         global day, tm, spent_time, prevday, prevtime
 
+        print 'alt_wait', day, tm, spent_time, prevday, prevtime
         pday    = day
         ptm     = tm
 
@@ -71,7 +77,6 @@ init python:
         spent_time = 0
         prevday = day
         prevtime = tm
-
 
 
     def changes_main(delt):
@@ -657,7 +662,9 @@ init python:
             ann.clothes.casual.GetCur().suf = 'a'
 
         for char in chars:
+
             prev_shed = chars[char].get_plan(prevday, prevtime)
+            # print 'ChoiceClothes', char, prev_shed.name, chars[char].plan_name, tm, prevtime
             if (prev_shed is None and chars[char].plan_name) or (chars[char].plan_name is not None and prev_shed.name!=chars[char].plan_name): # начато новое действие, значит меняем одежду
 
                 # удалим флаг подсматривания за персонажем через камеры при смене текущего действия
@@ -679,11 +686,11 @@ init python:
                 if char in ['ann', 'eric'] and 'ann_eric_scene' in globals():
                     ann_eric_scene = '' # обнулим сцену для камер, если она есть
 
-            dress, inf, clot = GetDressNps(char, chars[char].plan_name)
-            if dress != '':
-                chars[char].dress = dress
-            if inf != '':
-                chars[char].dress_inf = inf
+                dress, inf, clot = GetDressNps(char, chars[char].plan_name)
+                if dress != '':
+                    chars[char].dress = dress
+                if inf != '':
+                    chars[char].dress_inf = inf
 
 
     def GetDressNps(char, name):
@@ -702,10 +709,18 @@ init python:
             elif name == 'tv2':
                 dress = 'c' if lisa_will_be_topless() > 0 else 'b'
                 inf = '02c' if lisa_will_be_topless() > 0 else '02a'
-            elif name in ['breakfast', 'dinner', 'dishes', 'phone']:
+            elif name in ['breakfast', 'dinner', 'dishes']:
                 dress = lisa.clothes.casual.GetCur().suf
                 inf   = lisa.clothes.casual.GetCur().info
                 clot  = 'casual'
+            elif name == 'phone':
+                if '11:00' > tm > '10:00':
+                    dress = 'o'
+                    inf = '01aa'
+                else:
+                    dress = lisa.clothes.casual.GetCur().suf
+                    inf   = lisa.clothes.casual.GetCur().info
+                    clot  = 'casual'
             elif name == 'read':
                 if tm < '08:00':
                     dress   = {'a':'p', 'b':'p1', 'c':'p2'}[lisa.clothes.sleep.GetCur().suf]
@@ -724,6 +739,9 @@ init python:
             elif name == 'repeats':
                 dress = 'h' #lisa.clothes.learn[4].suf
                 inf = '01ba' #lisa.clothes.learn[4].info
+            elif name == 'at_tutor':
+                dress = lisa.clothes.weekend.GetCur().suf
+                inf   = lisa.clothes.weekend.GetCur().info
             elif name == 'in_shcool':
                 inf = '01b'
             elif name in ['sun', 'swim']:
@@ -1493,7 +1511,7 @@ init python:
 
         increase = rand_result * 0.1 if rand_result else 0.05
         if skill in ['sex', 'kiss']:
-            increase * 2
+            increase * 3
 
         if skill in ['stealth', 'hide']:
             mgg.stealth += increase
@@ -1591,3 +1609,160 @@ init python:
             renpy.jump('AfterWaiting')
 
     Transition_to_room = renpy.curry(transition_to_room)    # преобразуем функцию в экшен
+
+
+    def get_lisa_dress_pose(vr, pose=''):
+        var = {'boobs': False, 'ass':False, 'np':False, 'fin':False}
+        lvl = get_lisa_emancipation()
+        if vr == 0:
+            # нулевой момент
+            if lisa.prev_plan in ['shower', 'bath']:                # после душа/ванной
+                pose = '00g'                                    # полотенце
+                lisa.dress_inf = '04b'
+            elif lisa.prev_plan == 'in_shop':                       # после шопинга
+                pose = '00o'                                    # для шопинга
+                lisa.dress_inf = '01aa'
+            elif lisa.prev_plan == 'at_tutor':                      # после прогулки/репетитора
+                pose = '00' +lisa.clothes.weekend.GetCur().suf  # платье
+                lisa.dress_inf = lisa.clothes.weekend.GetCur().info
+            elif lisa.prev_plan in ['in_shcool', 'on_courses']:     # после школы
+                pose = '00h'                                    # школьная форма
+                lisa.dress_inf = '01ba'
+            elif lisa.prev_plan in ['sun', 'swim']:                 # после отдыха во дворе, если нет бикини
+                pose = '00s0' if lisa.clothes.swimsuit.GetCur().suf == 'a' else '00s1'
+                lisa.dress_inf = lisa.clothes.swimsuit.GetCur().info
+            elif lisa.plan_name in ['dressed', 'read', 'dishes']:   # после чтения, мытья посуды или одевается "на выход" (в школу, магазин или к репетитору)
+                pose = '00'+lisa.clothes.casual.GetCur().suf    # повседневка
+                lisa.dress_inf = lisa.clothes.casual.GetCur().info
+            return pose, var
+
+        if not pose:
+            # сгенерируем позу для "повезло"
+            lst = []
+            if lvl > 2:                                 # голая
+                lst.extend(['01', '04'])
+
+            if lisa.plan_name in ['sun', 'swim']:       # бикини
+                lst.extend(['01c1', '04c1'])
+                if lvl > 1:
+                    lst.extend(['01c', '04c'])
+            elif lisa.prev_plan in ['shower', 'bath']:  # полотенце
+                lst.extend(['01g1', '04g1'])
+                if lvl > 2:
+                    lst.extend(['01g', '04g'])
+            else:                                       # нижнее бельё
+                lst.extend(['01h', '04h'])              # трусики
+                if lvl < 2:
+                    lst.extend(['01h2', '04h2'])        # маечка с трусиками
+                elif lvl > 2:
+                    lst.extend(['01h1', '04h1'])        # маечка без трусиков
+
+
+            if lisa.plan_name == 'dressed':
+                if not GetWeekday(day):
+                    # воскресенье, прогулка/репетитор
+                    lst.extend(['01w', '04w'])
+                elif GetWeekday(day) == 6:
+                    # суббота, шопинг
+                    lst.extend(['01a', '01f1', '04a', '04f1'])
+                    if lvl > 2:
+                        lst.extend(['01f', '04f'])
+                else:
+                    # будни, в школу
+                    lst.extend(['01e1', '01e3', '04e1', '04e3'])
+                    if lvl > 2:
+                        lst.extend(['01e', '01e2', '04e', '04e2'])
+            elif lisa.plan_name in ['read', 'phone', 'homework']:
+                if lisa.clothes.casual.GetCur().suf == 'a':
+                    lst.extend(['01a', '04a'])
+                elif lisa.clothes.casual.GetCur().suf == 'b':
+                    lst.append('01b1')
+                    if lvl > 2:
+                        lst.append('01b')
+                else:   # lisa.clothes.casual.GetCur().suf == 'd'
+                    lst.extend(['01d1', '01d2', '04d1', '04d2'])
+                    if lvl > 2:
+                        lst.extend(['01d', '04d'])
+
+            print 'список:', lst
+            pose = renpy.random.choice(lst)
+            print 'выбрана:', pose
+
+        if vr < 2:
+            if lvl == 1 and pose in ['01b1', '01d1', '01h', '01g1',
+                        '04d1', '04h', '04g1', '01e1', '01e3',
+                        '04e1', '04e3', '01f1']:
+                pose = {
+                    '01h':'03h', '04h':'06h',       # трусики
+                    '01g1':'03g1', '04g1':'06g1',   # трусики с полотенцем
+                    '01b1':'03b1',                  # халат
+                    '01d1':'03d', '04d1':'06d',     # розовый
+                    '01e1':'03e', '01e3':'08e3',    # школьная лицом
+                    '04e1':'06e', '04e3':'08e3',    # школьная спиной
+                    '01f1':'08f1', '04f1':'08f1'    # для шопинга
+                    }[pose]
+            else:
+                pose = {
+                    '01':'03', '04':'06',           # голая
+                    '01c1':'02c1', '04c1':'05c1', '01c':'03c', '04c':'06c',     # бикини
+                    '01w':'02w', '04w':'06w',       # платье
+                    '01h':'02h', '04h':'05h',       # трусики
+                    '01h1':'08h1', '04h1':'08h1',   # маечка
+                    '01h2':'08h2', '04h2':'08h2',   # маечка и трусики
+                    '01f':'08f', '01f1':'07f1',  '04f':'08f', '04f1':'08f1',    # для шопинга
+                    '01a':'02a', '04a':'05a',       # базовая повседневка
+                    '01e':'03e', '01e1':'02e1', '01e2':'08e2', '01e3':'07e3',   # школьная лицом
+                    '04e':'06e', '04e1':'05e1', '04e2':'08e2', '04e3':'07e3',   # школьная спиной
+                    '01b':'02b', '01b1':'02b1',     # халат
+                    '01d':'03d', '01d1':'02d1', '01d2':'02d2',                  # розовый лицом
+                    '04d':'06d', '04d1':'05d1', '04d2':'05d2',                  # розовый спиной
+                    '01g':'03g', '01g1':'02g1', '04g':'06g', '04g1':'05g1',     # с полотенцем
+                    }[pose]
+
+        var['np']       = pose in ['08e2', '08f', '06g', '04w', '04g', '04f',
+                                   '04e2', '04e', '04d', '04', '01f', '01e2',
+                                   '01e', '01d', '01b', '01', '01h1', '08h1',
+                                   '04h1']
+
+        var['ass']      = pose in ['06h', '06g1', '06c', '06', '05h', '05g1',
+                                   '04w', '04h', '04g1', '04g', '04f1', '04f',
+                                   '04e3', '04e2', '04e1', '04e', '04d1', '04d',
+                                   '04c1', '04c', '04', '04h1', '04h2']
+
+        var['boobs']    = pose in ['06w', '06h', '06g1', '06e', '06d', '06c',
+                                   '06', '05h', '05g1', '05e1', '05d2', '05d1',
+                                   '05c1', '05a', '04w', '04h', '04g1', '04g',
+                                   '04e1', '04e', '04d2', '04d1', '04d', '04c1',
+                                   '04c', '04a', '04', '03h', '03g1', '03g',
+                                   '03e', '03d', '03c', '03b1', '03b', '03',
+                                   '02w', '02h', '02g1', '02e1', '02d2', '02d1',
+                                   '02c1', '02b1', '02a', '01w', '01h', '01g1',
+                                   '01g', '01e1', '01e', '01d2', '01d1', '01d',
+                                   '01c1', '01c', '01b1', '01a', '01']
+
+        var['fin']      = pose in ['07e3', '07f1', '08e3', '08f1', '01f1', '01e3']
+
+        if pose in ['01', '03', '04', '06']:
+            lisa.dress_inf = '00'   # голая
+        elif pose in ['01h', '02h', '03h', '04h', '05h', '06h']:
+            lisa.dress_inf = '02c'  # трусики
+        elif pose in ['01h1', '04h1', '08h1']:
+            lisa.dress_inf = '02b'  # маечка
+        elif pose in ['01h2', '04h2', '08h2']:
+            lisa.dress_inf = '02a'  # маечка и трусики
+        elif pose in ['01a', '02a', '04a', '05a']:
+            lisa.dress_inf = '02g'  # штаны
+        elif pose in ['01e', '01e1', '02e1', '03e', '04e', '04e1', '05e1', '06e']:
+            lisa.dress_inf = '02e'  # школьная юбка
+        elif pose in ['01e2', '04e2', '08e2']:
+            lisa.dress_inf = '02d'  # школьная рубашка
+        elif pose in ['01e3', '04e3', '07e3', '08e3']:
+            lisa.dress_inf = '02h'  # школьная рубашка и трусики
+        elif pose in ['01f', '04f', '08f']:
+            lisa.dress_inf = '02f'  # выходной верх
+        elif pose in ['01f1', '04f1', '07f1', '08f1']:
+            lisa.dress_inf = '02i'  # выходной верх + трусики
+        elif pose in ['01w', '02w', '04w', '06w']:
+            lisa.dress_inf = '01ea' # платье
+
+        return pose, var

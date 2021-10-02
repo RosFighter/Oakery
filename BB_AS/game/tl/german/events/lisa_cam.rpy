@@ -176,3 +176,53 @@ translate german cam0_lisa_repeats_homework_f0fb26d2:
     # Max_01 "Лиза готовится к сегодняшним урокам в школе. Какая умничка..."
     Max_01 "Lisa macht sich gerade für die Schule fertig. Was für ein hübsches Mädchen..."
 
+# TODO: Translation updated at 2021-10-02 01:47
+
+# game/events/lisa_cam.rpy:198
+translate german cam0_lisa_dressed_f7db1942:
+
+    # Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
+    Max_09 "Hier gibt es nichts Interessantes. Lisa ist vollständig angezogen."
+
+# game/events/lisa_cam.rpy:201
+translate german cam0_lisa_dressed_e79b2255:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..." nointeract
+    Max_07 "Perfekt! Lisa macht sich fertig, um zur Schule zu gehen..." nointeract
+
+# game/events/lisa_cam.rpy:202
+translate german cam0_lisa_dressed_2978876d:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться на шопинг..." nointeract
+    Max_07 "Lisa macht sich zum Einkaufen fertig..." nointeract
+
+# game/events/lisa_cam.rpy:205
+translate german cam0_lisa_dressed_e61ca9e9:
+
+    # Max_02 "Ухх! Сейчас она такая голенькая и милая..." nointeract
+    Max_02 "Ja! Ihr süßer Körper ist eine tolle Show..." nointeract
+
+# game/events/lisa_cam.rpy:206
+translate german cam0_lisa_dressed_e16161a7:
+
+    # Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
+    Max_04 "Meine kleine Schwester ist ein so ungezogenes Mädchen unter dieser Uniform. Ich hoffe, es gefällt dem Publikum!"
+
+# game/events/lisa_cam.rpy:207
+translate german cam0_lisa_dressed_639be09f:
+
+    # Max_04 "Повезло мне с сестрёнкой! Обворожительна в любой одежде и ещё больше - без неё..."
+    Max_04 "Sie ist so verlockend, egal, was sie trägt! Keiner der Jungs könnte sich zurückhalten, wenn er wüsste, was sie zu verbergen hat..."
+
+# game/events/lisa_cam.rpy:203
+translate german cam0_lisa_dressed_413010f3:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться на прогулку..." nointeract
+    Max_07 "Großartig! Lisa macht sich schick, um auszugehen..." nointeract
+
+# game/events/lisa_cam.rpy:204
+translate german cam0_lisa_dressed_80e887bc:
+
+    # Max_07 "Отлично! Лиза наряжается, чтобы отправиться к репетитору..." nointeract
+    Max_07 "Großartig! Lisa macht sich schick, um zu ihrem Nachhilfelehrer zu gehen..." nointeract
+

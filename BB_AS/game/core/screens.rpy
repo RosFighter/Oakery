@@ -744,7 +744,7 @@ screen Withdraw():
             text _("ДОХОД ОТ ПРОСМОТРОВ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
             text _("Каждое посещение страниц вашего сайта приносит небольшой доход. Увеличивайте аудиторию и зарабатывайте на рекламе!\n\nМинимальная сумма единоразового снятия: $100.") color gui.accent_color
             text _("На вашем счете $[paid]") color '#FFFFFF'
-            if int(mgg.account) >= 100:
+            if paid >= 100:
                 textbutton _("Забрать $[paid]"):
                     idle_background Frame('interface button green', 12, 12)
                     hover_background Frame('interface button green', 12, 12)
@@ -756,7 +756,7 @@ screen Withdraw():
                     text_idle_color '#000000'
                     text_hover_color '#FFFFFF'
 
-                    action Function(mgg.withdraw)
+                    action [Withdraw(paid), Hide('Withdraw'), Jump('open_site')] #Function(mgg.withdraw)
             else:
                 textbutton _("НЕДОСТАТОЧНАЯ СУММА ДЛЯ СНЯТИЯ"):
                     idle_background Frame('interface button red', 12, 12)
@@ -1616,12 +1616,12 @@ screen menu_userinfo():
                                                 text GetRelMax(CurChar)[1] size 24
 
                                         # free
-                                        if not chars[CurChar].free is None:
-                                            hbox xfill True:
-                                                frame xsize 350 background None:
-                                                    text _("Раскрепощенность:") size 24 color gui.accent_color
-                                                frame xfill True background None:
-                                                    text str(chars[CurChar].free) size 24
+                                        # if not chars[CurChar].free is None:
+                                        #     hbox xfill True:
+                                        #         frame xsize 350 background None:
+                                        #             text _("Раскрепощенность:") size 24 color gui.accent_color
+                                        #         frame xfill True background None:
+                                        #             text str(chars[CurChar].free) size 24
                                         # if not chars[CurChar].releric is None:
                                         #     # releric
                                         #     hbox xfill True:
@@ -1636,6 +1636,27 @@ screen menu_userinfo():
                                         #             text _("Влияние Эрика") size 24 color gui.accent_color
                                         #         frame xfill True background None:
                                         #             text str(chars[CurChar].free)+"%" size 24
+                                        if chars[CurChar] in infl:
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Влияние Макса:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(infl[chars[CurChar]].balance[0])+"%" size 24
+                                            hbox xfill True:
+                                                frame xsize 350 background None:
+                                                    text _("Влияние Эрика:") size 24 color gui.accent_color
+                                                frame xfill True background None:
+                                                    text str(infl[chars[CurChar]].balance[1])+"%" size 24
+                                            # hbox xfill True:
+                                            #     frame xsize 350 background None:
+                                            #         text _("Лидирует по влиянию") size 24 color gui.accent_color
+                                            #     frame xfill True background None:
+                                            #         if infl[chars[CurChar]].balance[2] == 'n':
+                                            #             text _("------") size 24
+                                            #         elif infl[chars[CurChar]].balance[2] == 'm':
+                                            #             text _("Макс") size 24
+                                            #         else:
+                                            #             text _("Эрик") size 24
 
                             frame xfill True background None:
                                 vbox spacing 5:

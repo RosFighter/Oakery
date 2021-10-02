@@ -1984,9 +1984,11 @@ translate english eric_ann_try_fucking_ad8c84cf:
     # Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}" nointeract
     Max_07 "{m}There is hardly any sound coming from Mom's room. Seem's that Eric isn't having any fun at all...{/m}" nointeract
 
-# game/events/eric.rpy:1537
-translate english eric_ann_try_fucking_122a2fc3:
+# TODO: Translation updated at 2021-10-02 01:46
 
-    # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}"
-    Max_02 "{m}How can such a gorgeous woman not be worthy?! I don't understand...{/m}"
+# game/events/eric.rpy:1538
+translate english eric_ann_try_fucking_e010ae0b:
+
+    # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}" nointeract
+    Max_02 "{m}How can such a gorgeous woman not be worthy?! I don't understand...{/m}" nointeract
 

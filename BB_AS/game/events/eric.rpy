@@ -542,7 +542,7 @@ label eric_ann_fucking:
         "{i}уйти{/i}":
             # Max "" nointeract
             window hide
-            $ current_room = house[0]
+            # $ current_room = house[0]
             jump AfterWaiting
 
     label .voyeur:  # точка входа после заглушки
@@ -605,7 +605,7 @@ label eric_ann_fucking:
                 "Я уже ухожу, мам... Извини...":
                     pass
 
-        $ current_room = house[0]
+        # $ current_room = house[0]
         stop music
         jump Waiting
 
@@ -633,14 +633,14 @@ label eric_ann_fucking:
             $ renpy.show('Eric fuck 0'+str(fuck_scene)+'b')
         Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
         $ punreason[3] = 1
-        $ current_room = house[0]
+        # $ current_room = house[0]
         jump Waiting
 
     menu:
         "{i}продолжить смотреть{/i}":
             pass
         "{i}уйти{/i}":
-            $ current_room = house[0]
+            # $ current_room = house[0]
             stop music
             jump Waiting
 
@@ -664,7 +664,7 @@ label eric_ann_fucking:
     $ eric.daily.sex = 4
 
     $ spent_time += 20
-    $ current_room = house[0]
+    # $ current_room = house[0]
     stop music
     jump Waiting
 
@@ -1503,11 +1503,11 @@ label eric_ann_resting:
             menu:
                 Max_01 "{m}Что, Эрик, сегодня ты не такой активный, как обычно? С тобой рядом такая женщина, а у тебя голова чем-то другим забита...{/m}"
                 "{i}уйти{/i}":
-                    $ current_room = house[0]
+                    # $ current_room = house[0]
                     jump AfterWaiting
 
         "{i}уйти{/i}":
-            $ current_room = house[0]
+            # $ current_room = house[0]
             jump AfterWaiting
     return
 
@@ -1534,23 +1534,19 @@ label eric_ann_try_fucking:
         Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}"
         "{i}заглянуть в окно{/i}":
             scene BG char Eric bed-01
-            Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}"
             $ renpy.show('Eric nosex 0'+str(renpy.random.randint(1, 2)))
+            Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}" nointeract
             menu:
-
                 "{i}уйти{/i}":
-                    $ current_room = house[0]
                     jump AfterWaiting
 
         "{i}уйти{/i}":
-            $ current_room = house[0]
             jump AfterWaiting
-
-    return
 
 ##
 label lisa_eric_sex_ed_practice:
     # "практика" с Эриком
+    "30 minute"
     if eric.daily.sweets:   # == 2
         # Эрик под антистояком
         pass

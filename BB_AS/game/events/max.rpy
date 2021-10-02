@@ -102,6 +102,7 @@ label LittleEnergy:
                 $ alarm_time = '06:00'
             $ spent_time = 600
             $ status_sleep = True
+
             jump Waiting
 
 
@@ -554,8 +555,8 @@ label DishesWashed:
         Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?"
         "{i}закончить{/i}":
             pass
-    if GetWeekday(day) != 6:
-        if GetWeekday(day) == 0:
+    if weekday != 6:
+        if weekday == 0:
             $ __name_label = alice.get_plan(day, '10:30').label
         else:
             $ __name_label = alice.get_plan(day, '11:30').label
@@ -625,7 +626,7 @@ label delivery2:
         call christina_first_talk(__dress) from _call_christina_first_talk
     if 'sexbody2' in delivery_list[1]:
         # поступило первое бельё для опережения Эрика
-        if alice.dcv.intrusion.stage<5 and GetWeekday(day) in [4, 5]:
+        if alice.dcv.intrusion.stage<5 and weekday in [4, 5]:
             # Макс успевает
             Max_02 "{m}Боди у меня! Теперь, нужно подарить его Алисе и больше всего мне может повезти, когда она занимается своим блогом. Она и так в это время в нижнем белье, а с учётом того, что она получит боди раньше времени, то вполне может переодеться и при мне...{/m}"
         else:

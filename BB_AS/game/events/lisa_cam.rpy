@@ -91,100 +91,180 @@ label lisa_cam_dress_inf(r1):
             '11':'02f',
             '12':'02g',
             '13':'01b',
-            '14':'01',
+            '14':'01aa',
+            '15':'01ea',
+            '16':'01ea',
+            '17':'01e',
+            '18':'01e',
         }[r1]
     return
 
-label cam0_lisa_dressed_school:
+# label cam0_lisa_dressed_school:
+#
+#     if 'lisa_dressed' in cam_flag:
+#         $ renpy.show('Lisa cams dressed 13', at_list=[laptop_screen])
+#         show FG cam-shum-act at laptop_screen
+#         $ lisa.dress_inf = '01d'
+#         if 'lisa_dressed_txt' not in cam_flag:
+#             $ cam_flag.append('lisa_dressed_txt')
+#             Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
+#         return
+#
+#     $ cam_flag.append('lisa_dressed')
+#     # $ Wait(10)
+#
+#     # $ __r1 = renpy.random.choice(['00', '01', '02'])
+#     # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
+#     # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+#     # show FG cam-shum-act at laptop_screen
+#     # menu:
+#     #     Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..."
+#     #     "{i}продолжать смотреть{/i}":
+#     #         pass
+#     #     "{i}достаточно{/i}":
+#     #         jump open_site
+#     #
+#     # $ __r1 = renpy.random.choice(['03','04','05','06'])
+#     # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_1
+#     # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+#     # show FG cam-shum-act at laptop_screen
+#     # menu:
+#     #     Max_02 "Ухх! Сейчас она такая голенькая и милая..."
+#     #     "{i}продолжать смотреть{/i}":
+#     #         pass
+#     #     "{i}достаточно{/i}":
+#     #         jump open_site
+#
+#     $ __r1 = renpy.random.choice(['07','08','09'])
+#     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_2
+#     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+#     show FG cam-shum-act at laptop_screen
+#
+#     Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
+#     # jump open_site
+#     return
 
+# label cam0_lisa_dressed_shop:
+#
+#     if 'lisa_dressed' in cam_flag:
+#         $ renpy.show('Lisa cams dressed 14', at_list=[laptop_screen])
+#         show FG cam-shum-act at laptop_screen
+#         $ lisa.dress_inf = '01'
+#         if 'lisa_dressed_txt' not in cam_flag:
+#             $ cam_flag.append('lisa_dressed_txt')
+#             Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
+#         return
+#
+#     $ cam_flag.append('lisa_dressed')
+#     # $ spent_time += 10
+#     $ Wait(10)
+#
+#     $ __r1 = renpy.random.choice(['00', '01', '02'])
+#     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_3
+#     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+#     show FG cam-shum-act at laptop_screen
+#     menu:
+#         Max_07 "Отлично! Лиза наряжается, чтобы отправиться на шопинг..."
+#         "{i}продолжать смотреть{/i}":
+#             pass
+#         "{i}достаточно{/i}":
+#             jump open_site
+#
+#     $ __r1 = renpy.random.choice(['03','04','05','06'])
+#     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_4
+#     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+#     show FG cam-shum-act at laptop_screen
+#     menu:
+#         Max_02 "Ухх! Сейчас она такая голенькая и милая..."
+#         "{i}продолжать смотреть{/i}":
+#             pass
+#         "{i}достаточно{/i}":
+#             jump open_site
+#
+#     # $ spent_time += 10
+#     $ Wait(10)
+#     $ __r1 = renpy.random.choice(['10','11','12'])
+#     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_5
+#     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+#     show FG cam-shum-act at laptop_screen
+#
+#     Max_04 "Повезло мне с сестрёнкой! Обворожительна в любой одежде и ещё больше - без неё..."
+#     return
+
+
+label cam0_lisa_dressed:
+    $ renpy.dynamic('r1', 'st')
     if 'lisa_dressed' in cam_flag:
-        $ renpy.show('Lisa cams dressed 13', at_list=[laptop_screen])
+        if not weekday:
+            $ r1 = '15' if lisa.clothes.weekend.GetCur().suf == 'w' else '17'
+            $ lisa.dress_inf = lisa.clothes.weekend.GetCur().info
+        elif weekday == 6:
+            $ r1 = '14'
+            $ lisa.dress_inf = '01aa'
+        else:
+            $ r1 = '13'
+            $ lisa.dress_inf = '01d'
+        $ renpy.show('Lisa cams dressed ' + r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
-        $ lisa.dress_inf = '01d'
+        call lisa_cam_dress_inf(r1) from _call_lisa_cam_dress_inf
         if 'lisa_dressed_txt' not in cam_flag:
             $ cam_flag.append('lisa_dressed_txt')
             Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
         return
 
     $ cam_flag.append('lisa_dressed')
-    # $ Wait(10)
 
-    # $ __r1 = renpy.random.choice(['00', '01', '02'])
-    # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
-    # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    # show FG cam-shum-act at laptop_screen
-    # menu:
-    #     Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..."
-    #     "{i}продолжать смотреть{/i}":
-    #         pass
-    #     "{i}достаточно{/i}":
-    #         jump open_site
-    #
-    # $ __r1 = renpy.random.choice(['03','04','05','06'])
-    # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_1
-    # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    # show FG cam-shum-act at laptop_screen
-    # menu:
-    #     Max_02 "Ухх! Сейчас она такая голенькая и милая..."
-    #     "{i}продолжать смотреть{/i}":
-    #         pass
-    #     "{i}достаточно{/i}":
-    #         jump open_site
+    if 'lisa_dr0' in cam_flag:
+        # Макс взял ноутбук до переодеваний, может быть любая одежда
+        $ r1 = renpy.random.choice(['00', '01', '02'])
+        $ st = 0
+    else:
+        $ r1 = {'02a':'00', '02b':'01', '02c':'02', '00':'03', '02h':'07',
+                '02d':'08', '02e':'09', '02i':'10', '02f':'11', '02g':'12',
+                '01ea':'16'}[lisa.dress_inf]
+        $ st = 0 if r1 in ['00', '01', '02'] else 1 if r1 in ['03','04','05','06'] else 2
 
-    $ __r1 = renpy.random.choice(['07','08','09'])
-    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_2
-    $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-
-    Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
-    # jump open_site
-    return
-
-label cam0_lisa_dressed_shop:
-
-    if 'lisa_dressed' in cam_flag:
-        $ renpy.show('Lisa cams dressed 14', at_list=[laptop_screen])
+    if st < 1:
+        $ renpy.show('Lisa cams dressed '+ r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
-        $ lisa.dress_inf = '01'
-        if 'lisa_dressed_txt' not in cam_flag:
-            $ cam_flag.append('lisa_dressed_txt')
-            Max_09 "Ничего интересного я здесь уже не увижу, Лиза полностью оделась."
-        return
+        call lisa_cam_dress_inf(r1) from _call_lisa_cam_dress_inf_1
+        if 6 > weekday > 0:
+            Max_07 "Отлично! Лиза наряжается, чтобы отправиться в школу..." nointeract
+        elif weekday == 6:
+            Max_07 "Отлично! Лиза наряжается, чтобы отправиться на шопинг..." nointeract
+        elif lisa.dcv.battle.stage in [2, 4, 5]:
+            Max_07 "Отлично! Лиза наряжается, чтобы отправиться к репетитору..." nointeract
+        else:
+            Max_07 "Отлично! Лиза наряжается, чтобы отправиться на прогулку..." nointeract
+        menu:
+            "{i}продолжать смотреть{/i}":
+                $ r1 = renpy.random.choice(['03','04','05','06'])
+            "{i}достаточно{/i}":
+                jump open_site
 
-    $ cam_flag.append('lisa_dressed')
-    # $ spent_time += 10
-    $ Wait(10)
+    if st < 2:
+        $ renpy.show('Lisa cams dressed '+ r1, at_list=[laptop_screen])
+        show FG cam-shum-act at laptop_screen
+        call lisa_cam_dress_inf(r1) from _call_lisa_cam_dress_inf_2
+        menu:
+            Max_02 "Ухх! Сейчас она такая голенькая и милая..."
+            "{i}продолжать смотреть{/i}":
+                if not weekday:
+                    $ r1 = renpy.random.choice(['15', '16'])
+                elif weekday == 6:
+                    $ r1 = renpy.random.choice(['10','11','12'])
+                else:
+                    $ r1 = renpy.random.choice(['07','08','09'])
+            "{i}достаточно{/i}":
+                jump open_site
 
-    $ __r1 = renpy.random.choice(['00', '01', '02'])
-    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_3
-    $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
+    $ renpy.show('Lisa cams dressed '+ r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    menu:
-        Max_07 "Отлично! Лиза наряжается, чтобы отправиться на шопинг..."
-        "{i}продолжать смотреть{/i}":
-            pass
-        "{i}достаточно{/i}":
-            jump open_site
-
-    $ __r1 = renpy.random.choice(['03','04','05','06'])
-    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_4
-    $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-    menu:
-        Max_02 "Ухх! Сейчас она такая голенькая и милая..."
-        "{i}продолжать смотреть{/i}":
-            pass
-        "{i}достаточно{/i}":
-            jump open_site
-
-    # $ spent_time += 10
-    $ Wait(10)
-    $ __r1 = renpy.random.choice(['10','11','12'])
-    call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_5
-    $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
-    show FG cam-shum-act at laptop_screen
-
-    Max_04 "Повезло мне с сестрёнкой! Обворожительна в любой одежде и ещё больше - без неё..."
+    call lisa_cam_dress_inf(r1) from _call_lisa_cam_dress_inf_3
+    if 6 > weekday > 0:
+        Max_04 "Как классно, что моя сестрёнка - такая соблазнительная школьница. Уверен, зрителям это нравится!"
+    else:
+        Max_04 "Повезло мне с сестрёнкой! Обворожительна в любой одежде и ещё больше - без неё..."
     return
 
 label cam0_lisa_sun:

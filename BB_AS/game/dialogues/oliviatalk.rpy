@@ -219,11 +219,11 @@ label olivia_talk4:
 
     if olivia.dcv.battle.stage > 1:
         # Эрик ещё не вмешался в жизнь Лизы на момент знакомства с Оливией
-        if GetWeekday(day)==2 and not olivia.dcv.special.done:
+        if weekday==2 and not olivia.dcv.special.done:
             # (диалог состоялся во вторник, неделя без ТВ)
             Olivia_01 "Хорошо поболтали, Макс. В эту пятницу я успею к вам только днём забежать на пару часов, так что устроим ночные посиделки в следующую пятницу, ладно?"
             Max_01 "Не вопрос. Будем только рады..."
-        elif GetWeekday(day)==5 and not olivia.dcv.special.done:
+        elif weekday==5 and not olivia.dcv.special.done:
             # (диалог состоялся в пятницу, неделя без ТВ)
             Olivia_01 "Хорошо поболтали, Макс. Мы же устроим ночные посиделки в следующую пятницу, да?"
             Max_01 "Конечно. Будем только рады..."

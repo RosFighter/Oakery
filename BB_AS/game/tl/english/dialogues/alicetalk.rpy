@@ -11121,6 +11121,5 @@ translate english strings:
     new "Slip a laxative into Eric's plate"
 
     # game/dialogues/alicetalk.rpy:5474
-    old "{i}подмешать Эрику в тарелку средство от потенции{/i}"
+    old "{i}подмешать Эрику в тарелку успокоительное{/i}"
     new "{i}Slip a sedative into Eric's plate{/i}"
-

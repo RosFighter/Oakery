@@ -22,6 +22,7 @@ define clothes_dict = {
         'sleep'     : [('a', '02', 'Маечка и штаны'), ('b', '02a', 'Маечка и трусики'), ('c', '02c', 'Трусики')],
         'swimsuit'  : [('a', '03', 'Закрытый купальник'), ('b', '03b', 'Красное бикини')],
         'learn'     : [('a', '01a', 'Обычная одежда'), ('b', '04', 'Халатик'), ('c', '04b', 'Полотенце'), ('d', '01c', 'Розовые топик и юбочка'), ('h', '01ba', 'Школьная форма')],
+        'weekend'   : [('w', '01e', 'Платье с пиджаком'), ('w1', '01ea', 'Платье')],
         },
     'mgg'   : {
         'casual'    : [('a', '01a', 'Обычная одежда'), ('b', '01b', 'Майка и шорты'), ('c', '01c', 'Шорты')],
@@ -94,6 +95,7 @@ init python:
                 'rest_eve'  : _("Вечерний отдых"),
                 'swimsuit'  : _("Купальник"),
                 'learn'     : _("За уроками"),
+                'weekend'   : _("Для прогулок"),
             }[clot_type]
 
         clot_list = []
@@ -120,6 +122,7 @@ init python:
                 'rest_eve'  : (False, (0, 1)),
                 'swimsuit'  : (False, 0),
                 'learn'     : (False, (0, 2)),
+                'weekend'   : (False, (0, 1))
             }[clot_type]
 
         if def_list[0]:
@@ -181,6 +184,8 @@ init python:
         # Лиза
         lisa.clothes.learn.enable(2)        # полотенце доступно всегда
         lisa.clothes.learn.disable(4)       # школьная форма никогда недоступна (только событием)
+        lisa.clothes.weekend.rand_enable((0, 1))
+
         if 'bikini' in lisa.gifts:          # подарен купальник
             lisa.clothes.swimsuit.enable(1)
             lisa.clothes.swimsuit.disable(0)

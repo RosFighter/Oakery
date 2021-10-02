@@ -409,11 +409,11 @@ label kira_talk6:
                 Kira_02 "Понятно. Ну, как найдёшь, дай знать. Я почти всегда готова фотографироваться, но нужно, чтобы ещё и дома никого не было... А то нас не поймут..."
                 "Всё понял...":
                     $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have])"
-        "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, GetWeekday(day)!=6]):
+        "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, weekday!=6]):
             Kira_04 "Очень хорошо. Теперь нужно выбрать подходящий момент, когда дома никого не будет..."
             Max_01 "Точно!"
-            $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have, GetWeekday(day)==6])"
-        "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, GetWeekday(day)==6]):
+            $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have, weekday==6])"
+        "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, weekday==6]):
             Kira_07 "Макс, ты просто чудо! Я всегда бодра, красива и свежа, чтобы фотографироваться. Нужно только решить где это будет..."
             Max_04 "Может быть, в гостиной?"
             jump first_photoset
@@ -713,7 +713,7 @@ label kira_about_cuni:
             pass
     Kira_07 "Должно быть, это было что-то важное, раз ты решил не приходить к своей любимой, совершенно голой тёте в душ!"
     Max_09 "Сестрёнкам надо помогать! А твоё приглашение всё ещё в силе?"
-    if GetWeekday(day)!=5:
+    if weekday!=5:
         Kira_04 "Если только ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
         $ kira.dcv.sweets.set_lost(1)
     else:
@@ -735,14 +735,14 @@ label kira_about_photo2:
     Max_01 "Ага! Я готов! А ты?"
 
     # #если не суббота или поздно по времени
-    if not _in_replay and (GetWeekday(day)!=6 or not check_only_home('kira')):
+    if not _in_replay and (weekday!=6 or not check_only_home('kira')):
         Kira_04 "У меня тоже всё готово, но как ты знаешь, сейчас мы дома не одни. Представь, что подумают, если увидят такое..."
         Max_07 "Э... Какое?"
         Kira_07 "А это сюрприз, Макс. Так что, наберись терпения..."
         Max_04 "Понял..."
         $ kira.dcv.feature.set_lost(1)
-        $ kira.dcv.photo.set_lost(6-GetWeekday(day))
-        # $ talks['kt.ft2'].req = "all([GetWeekday(day)==6, kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"
+        $ kira.dcv.photo.set_lost(6-weekday)
+        # $ talks['kt.ft2'].req = "all([weekday==6, kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"
         $ spent_time += 10
         jump Waiting
 
@@ -1180,14 +1180,14 @@ label kira_about_photo3_1:
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
     show Kira talk-terrace 02
 
-    if GetWeekday(day) == 6:
+    if weekday == 6:
         #если сб
         Kira_01 "В следующую субботу, когда все отправятся на шопинг."
         $ kira.dcv.photo.set_lost(7)
     else:
         #если вс-пт
         Kira_01 "Вот как все отправятся на шопинг, так сразу и мы за дело возьмёмся."
-        $ kira.dcv.photo.set_lost(6-GetWeekday(day))
+        $ kira.dcv.photo.set_lost(6-weekday)
 
     Max_02 "Ох, я тебя и нащёлкаю! И так, и этак..."
     Kira_04 "Мне придётся спустить тебя с небес на землю - фотографировать ты не будешь. И нам даже не понадобится в этот раз твой фотоаппарат."
