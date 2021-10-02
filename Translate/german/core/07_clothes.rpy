@@ -52,5 +52,5 @@ translate german strings:
 
     # game/core/07_clothes.rpy:87
     old "Для прогулок"
-    new ""
+    new "Für Spaziergänge"
 
