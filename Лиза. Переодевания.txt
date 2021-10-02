@@ -304,6 +304,17 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07g
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01a
+	     #myroom-wardrobe-mde-02-lisa-dresses-01b1
+	     #myroom-wardrobe-mde-02-lisa-dresses-01d
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+	     #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 10:00 [пн-пт] Лиза переодевается после завтрака в школьную одежду, далее повторяет уроки и уходит в школу
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -375,6 +386,15 @@
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07f
 		 #myroom-wardrobe-mde-01-lisa-dresses-07f1
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01a
+	     #myroom-wardrobe-mde-02-lisa-dresses-01c
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+	     #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 15:00 [вс] Лиза переодевается после репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -390,6 +410,13 @@
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07i
 		 #myroom-wardrobe-mde-01-lisa-dresses-07i1
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01c
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+		 #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 16:00 [пн-пт] Лиза переодевается после школы в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -404,6 +431,15 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05c1
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07e
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01c
+		 #myroom-wardrobe-mde-02-lisa-dresses-01e
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+		 #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-05e1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 17:00 [сб/вс] Лиза переодевается после отдыха во дворе в базовую одежду / халат / розовую, далее несколько часов читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -429,6 +465,19 @@
 	  Рано (нулевой момент):
 	     #myroom-wardrobe-mde-01-lisa-dresses-07c
 		 #myroom-wardrobe-mde-01-lisa-dresses-07c1
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01a
+	     #myroom-wardrobe-mde-02-lisa-dresses-01b1
+		 #myroom-wardrobe-mde-02-lisa-dresses-01c
+	     #myroom-wardrobe-mde-02-lisa-dresses-01d
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+	     #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 21:00 Лиза может переодеться после мытья посуды в другую повседневную одежду, если игрок её поменял в меню, но попасть на это можно, только если не мыть за Лизу посуду
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
 	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
@@ -454,6 +503,17 @@
 	     #myroom-wardrobe-mde-01-lisa-dresses-07a
 		 #myroom-wardrobe-mde-01-lisa-dresses-07b
 		 #myroom-wardrobe-mde-01-lisa-dresses-07d
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01a
+	     #myroom-wardrobe-mde-02-lisa-dresses-01b1
+	     #myroom-wardrobe-mde-02-lisa-dresses-01d
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+	     #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
 23:00 Лиза переодевается после ванны в базовую одежду / халат / розовую, далее делает уроки, но только если не остаётся в полотенце
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
 	     #myroom-wardrobe-mde-01-lisa-dresses-01a  => #myroom-wardrobe-mde-01-lisa-dresses-02a
@@ -477,6 +537,31 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-05g1
 	  Рано (нулевой момент):
 		 #myroom-wardrobe-mde-01-lisa-dresses-07g
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01a
+	     #myroom-wardrobe-mde-02-lisa-dresses-01b1
+	     #myroom-wardrobe-mde-02-lisa-dresses-01d
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+      Не повезло:
+	     #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+00:00 Лиза преодевается после уроков в майку и штаны / майку и трусики, только если Макс изначально был в комнате
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+      Повезло:
+	     #myroom-wardrobe-mde-02-lisa-dresses-01a
+	     #myroom-wardrobe-mde-02-lisa-dresses-01b1
+	     #myroom-wardrobe-mde-02-lisa-dresses-01d
+	     #myroom-wardrobe-mde-02-lisa-dresses-01h
+		 #myroom-wardrobe-mde-02-lisa-dresses-01h3
+      Не повезло:
+	     #myroom-wardrobe-mde-01-lisa-dresses-05a
+		 #myroom-wardrobe-mde-01-lisa-dresses-02b1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05d1
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h
+		 #myroom-wardrobe-mde-01-lisa-dresses-05h3
 =====================================================================================================
 УРОВЕНЬ РАСКРЕПОЩЕНИЯ #03 (Любопытная)
 =====================================================================================================
@@ -939,6 +1024,33 @@
 		    Lisa_01 "Спасибо, Макс. Я быстренько!"
 			   подождать за дверью, пока Лиза переоденется
 			   уйти
+
+(Лиза просит Макса не подглядывать)
+   #myroom-wardrobe-mde-02 + Лиза
+   Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..."
+      отвернуться
+	     #myroom-bedmax-morning,day,evening-01
+		 "Лиза: И не вздумай подглядывать! Это не займёт много времени..."
+		    не подглядывать за Лизой
+			   #Лиза занимается своими делами
+			попробовать подглядеть за Лизой (скрытность)   #только 1 раз за день
+			   (успешно)
+			   #myroom-wardrobe-mde-02 + myroom-wardrobe-mde-02-lisa-dresses
+			   Max_05 (мысли) "Класс! Кажется, она не видит, что я подглядываю... Очень сложно оторвать взгляд от этих соблазнительных изгибов её фигуры, но надо..."
+			      #Лиза занимается своими делами
+			   (не успешно)
+			   #myroom-wardrobe-mde-02 + myroom-wardrobe-mde-01-lisa-dresses
+			   Lisa_11 "Ну, Макс! Прекращай подглядывать! Если не отвернёшься или ещё раз такое выкинешь, я на тебя маме нажалуюсь... Тебе ясно?!"
+				  "Да ладно тебе, можешь меня не стесняться!"
+				     Lisa_10 "А я вот стесняюсь! И перестань на меня так глазеть! А то я Алису попрошу, чтобы она тебя отпинала..."
+					 Max_08 "Всё, я отвернулся!"
+					 #Лиза занимается своими делами
+                  "Извини, не удержался... Хорошо выглядишь!"
+				     Lisa_09 "Ну и долго ты ещё пялиться на меня будешь?! Отвернись. Я недолго..."
+					 отвернуться
+					 #Лиза занимается своими делами
+	  подождать за дверью, пока Лиза переоденется
+	  уйти
 
 (Выбор Макса после завтрака)
    #на фоне двери с пн-пт
