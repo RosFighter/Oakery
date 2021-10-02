@@ -218,11 +218,10 @@ translate english cam0_lisa_dressed_639be09f:
 translate english cam0_lisa_dressed_413010f3:
 
     # Max_07 "Отлично! Лиза наряжается, чтобы отправиться на прогулку..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Great! Lisa's getting dressed up to go for a walk..." nointeract
 
 # game/events/lisa_cam.rpy:204
 translate english cam0_lisa_dressed_80e887bc:
 
     # Max_07 "Отлично! Лиза наряжается, чтобы отправиться к репетитору..." nointeract
-    Max_07 "" nointeract
-
+    Max_07 "Great! Lisa's getting dressed to go to her tutor..." nointeract

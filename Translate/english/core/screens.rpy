@@ -345,16 +345,15 @@ translate english strings:
     # game/core/screens.rpy:1853
     old "[view_cam[1].public]"
     new "[view_cam[1].public]"
-    
+
 # TODO: Translation updated at 2021-10-02 01:46
 
 translate english strings:
 
     # game/core/screens.rpy:1642
     old "Влияние Макса:"
-    new ""
+    new "Max's Influence:"
 
     # game/core/screens.rpy:1647
     old "Влияние Эрика:"
-    new ""
-
+    new "Eric's influence:"

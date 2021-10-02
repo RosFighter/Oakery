@@ -2436,161 +2436,160 @@ translate english lisa_dressed_3c9093ff:
 translate english lisa_dressed_get_notebook1_657f8291:
 
     # Lisa "{b}Лиза:{/b} Ладно, так уж и быть, забирай быстрее..." nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} All right, all right, take it quickly..." nointeract
 
 # game/events/lisa.rpy:734
 translate english lisa_dressed_dad74527:
 
     # Max_09 "{m}Сейчас Лиза должна переодеваться, чтобы отправиться вместе со всеми по магазинам...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Lisa's changing her clothes to go shopping with the others...{/m}" nointeract
 
 # game/events/lisa.rpy:737
 translate english lisa_dressed_aaeb2a78:
 
     # Max_09 "{m}Сейчас Лиза обычно переодевается, чтобы отправиться на занятие к репетитору...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Lisa's getting ready to go to her tutor's class...{/m}" nointeract
 
 # game/events/lisa.rpy:740
 translate english lisa_dressed_c83f0902:
 
     # Max_09 "{m}Сейчас Лиза обычно переодевается, чтобы пойти погулять. Ну, или что она там ещё делает...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Lisa's getting ready to go for a walk. Well, or whatever else she does...{/m}" nointeract
 
 # game/events/lisa.rpy:812
 translate english lisa_dressed_get_notebook0_d66e147c:
 
     # Lisa_09 "Деловой, куда деваться! Сказал бы хоть, что заходишь..."
-    Lisa_09 ""
+    Lisa_09 "Businessman, what a way to go! You should at least tell me that you're coming in..."
 
 # game/events/lisa.rpy:813
 translate english lisa_dressed_get_notebook0_2d30e546:
 
     # Lisa_10 "Ты не глазей, а ноутбук быстрее забирай и уходи. Дай мне уже переодеться..." nointeract
-    Lisa_10 "" nointeract
+    Lisa_10 "Don't stare, but take your laptop and go. Let me get changed already..." nointeract
 
 # game/events/lisa.rpy:819
 translate english lisa_dressed_get_notebook0_d66e147c_1:
 
     # Lisa_09 "Деловой, куда деваться! Сказал бы хоть, что заходишь..."
-    Lisa_09 ""
+    Lisa_09 "Businessman, what a way to go! You should at least tell me that you're coming in..."
 
 # game/events/lisa.rpy:820
 translate english lisa_dressed_get_notebook0_2d30e546_1:
 
     # Lisa_10 "Ты не глазей, а ноутбук быстрее забирай и уходи. Дай мне уже переодеться..." nointeract
-    Lisa_10 "" nointeract
+    Lisa_10 "Don't stare, but take your laptop and go. Let me get changed already..." nointeract
 
 # game/events/lisa.rpy:823
 translate english lisa_dressed_get_notebook0_eb706326:
 
     # Lisa_09 "Не раньше тебе и не позже! Бери и уходи. Я хочу спокойно переодеться..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "No sooner or later for you! Take it and go. I want to change in peace..." nointeract
 
 # game/events/lisa.rpy:837
 translate english lisa_dressed_get_notebook1_77805a20:
 
     # Lisa_01 "Ты что, без ноутбука и часа прожить не можешь? Подождать никак не мог?"
-    Lisa_01 ""
+    Lisa_01 "Can't you go an hour without your laptop? Couldn't you wait?"
 
 # game/events/lisa.rpy:838
 translate english lisa_dressed_get_notebook1_968d6553:
 
     # Max_07 "Нет, он мне очень срочно нужен для дела!"
-    Max_07 ""
+    Max_07 "No, I need it very urgently for a case!"
 
 # game/events/lisa.rpy:839
 translate english lisa_dressed_get_notebook1_6388868d:
 
     # Lisa_02 "Сомневаюсь, что у тебя там могут быть какие-то сверхважные дела..."
-    Lisa_02 ""
+    Lisa_02 "I doubt that you can have any super important things to do there..."
 
 # game/events/lisa.rpy:840
 translate english lisa_dressed_get_notebook1_8649258d:
 
     # Lisa_00 "Ладно, неважно... Дай мне уже переодеться!" nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Okay, never mind... Let me get changed already!" nointeract
 
 # game/events/lisa.rpy:842
 translate english lisa_dressed_get_notebook1_a85f1f9c:
 
     # Lisa_01 "Вот именно сейчас он тебе обязательно понадобился, да? Подождать никак не мог?"
-    Lisa_01 ""
+    Lisa_01 "You had to have it now, didn't you? You couldn't wait?"
 
 # game/events/lisa.rpy:843
 translate english lisa_dressed_get_notebook1_968d6553_1:
 
     # Max_07 "Нет, он мне очень срочно нужен для дела!"
-    Max_07 ""
+    Max_07 "No, I need it very urgently for a case!"
 
 # game/events/lisa.rpy:844
 translate english lisa_dressed_get_notebook1_07b6f868:
 
     # Lisa_02 "Макс, если под \"делами\" ты подразумеваешь какие-нибудь детские передачи, то пора бы уже из этого вырасти..."
-    Lisa_02 ""
+    Lisa_02 "Max, if by \"business\" you mean kids shows, it might be time to grow out of that..."
 
 # game/events/lisa.rpy:845
 translate english lisa_dressed_get_notebook1_8649258d_1:
 
     # Lisa_00 "Ладно, неважно... Дай мне уже переодеться!" nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Okay, never mind... Let me get changed already!" nointeract
 
 # game/events/lisa.rpy:847
 translate english lisa_dressed_get_notebook1_9ec77846:
 
     # Lisa_01 "Повезло тебе, что я ещё не начала раздеваться. Или ноутбук - это просто предлог и ты надеялся, что я тут полуголая буду?"
-    Lisa_01 ""
+    Lisa_01 "You're lucky I haven't started undressing yet. Or was the laptop just an excuse to catch me half-naked?"
 
 # game/events/lisa.rpy:848
 translate english lisa_dressed_get_notebook1_32f69930:
 
     # Max_02 "Не без этого, но он мне действительно очень нужен для дела!"
-    Max_02 ""
+    Max_02 "Not entirely, but I really need it for the case!"
 
 # game/events/lisa.rpy:849
 translate english lisa_dressed_get_notebook1_6be31d8d:
 
     # Lisa_02 "Ага, так я тебе и поверила. Забирай его уже быстрее, деловой..." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Yeah, dure. Take it away already, businessman..." nointeract
 
 # game/events/lisa.rpy:937
 translate english lisa_dressed_lvl_1_10a5c581:
 
     # Lisa_12 "Макс! Я ведь маме на тебя нажалуюсь, если не уйдёшь!" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Max! I'm going to tell Mom if you don't leave!" nointeract
 
 # game/events/lisa.rpy:952
 translate english lisa_dressed_lvl_2_0d3512aa:
 
     # Lisa_10 "Ну, Макс! Дай переодеться спокойно... Пожалуйста! Или мне маме пожаловаться?" nointeract
-    Lisa_10 "" nointeract
+    Lisa_10 "Come on, Max! Let me change in peace... Please! Or do I need to tell Mom?" nointeract
 
 # game/events/lisa.rpy:975
 translate english lisa_dressed_lvl_3_aa58b1e2:
 
     # Lisa_01 "Ну ничего, Макс, ничего... Я скоро уйду и ты сможешь вдоволь поплакать. Сильно расстроился?"
-    Lisa_01 ""
+    Lisa_01 "It's all right, Max, it's all right... I'll be gone soon, and you can cry your eyes out. How upset are you?"
 
 # game/events/lisa.rpy:976
 translate english lisa_dressed_lvl_3_8cdcdb2c:
 
     # Max_02 "Нет. Как представляю, что я тут пропустил - сразу приятно становится."
-    Max_02 ""
+    Max_02 "No. When I imagine what I've missed here, it immediately feels good."
 
 translate english strings:
 
     # game/events/lisa.rpy:759
     old "{i}всё равно забрать ноутбук{/i}"
-    new ""
+    new "{i}Take the laptop anyway{/i}"
 
     # game/events/lisa.rpy:927
     old "А если я хочу на это посмотреть?"
-    new ""
+    new "And what if I want to watch?"
 
     # game/events/lisa.rpy:944
     old "А где же волшебное слово?"
-    new ""
+    new "What's the magic word?"
 
     # game/events/lisa.rpy:961
     old "Эх, не повезло! Я надеялся, что ты будешь раздета..."
-    new ""
-
+    new "Oh, bad luck! I was hoping you'd be naked..."
