@@ -352,9 +352,9 @@ translate german strings:
 
     # game/core/screens.rpy:1642
     old "Влияние Макса:"
-    new ""
+    new "Einfluss von Max:"
 
     # game/core/screens.rpy:1647
     old "Влияние Эрика:"
-    new ""
+    new "Einfluss von Eric:"
 

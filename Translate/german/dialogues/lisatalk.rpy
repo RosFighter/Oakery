@@ -10329,7 +10329,7 @@ translate german take_to_school_ab03ea9e:
 translate german take_to_school_7ac18b10:
 
     # Lisa_01 "Моё или своё?"
-    Lisa_01 "Meine oder deine?"
+    Lisa_01 "Meiner oder deiner?"
 
 # game/dialogues/lisatalk.rpy:4458
 translate german take_to_school_9d1cdba9:
