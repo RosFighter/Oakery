@@ -51,6 +51,7 @@ label InitVariable: # стартовая инициация переменных
         tm = '08:50'
         prevday = 1
         prevtime = '08:50'
+        weekday = 3
 
         flags = Other_Flags_and_counters()
 

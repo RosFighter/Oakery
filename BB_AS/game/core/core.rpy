@@ -434,9 +434,9 @@ label AfterWaiting:
     if not dishes_washed:
         if tm > '20:00':
             $ dishes_washed = True
-        elif (day+2) % 7 != 6:
+        elif weekday != 6:
             $ name_label = ''
-            if (day+2) % 7 == 0:
+            if not weekday:
                 $ cur_plan = alice.get_plan(day, '10:00')
                 if cur_plan is not None:
                     $ name_label = cur_plan.label

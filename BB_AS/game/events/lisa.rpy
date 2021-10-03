@@ -1086,18 +1086,13 @@ label lisa_phone:
     $ renpy.show('Lisa phone-evening ' + pose3_1)
     $ renpy.show('FG Lisa phone-evening ' + pose3_1 + lisa.dress)
     $ persone_button1 = ['Lisa phone-evening ' + pose3_1, 'FG Lisa phone-evening ' + pose3_1 + lisa.dress]
-    # scene BG char Lisa bed-evening
-    # $ renpy.show('Lisa phone-evening '+pose3_1+lisa.dress)
-    # $ persone_button1 = 'Lisa phone-evening '+pose3_1+lisa.dress+'b'
     return
 
 
 label lisa_phone_closer:
-    # scene BG char Lisa bed-evening
-    # $ renpy.show('Lisa phone-closer 01'+lisa.dress)
     scene BG char Lisa bed-mde-01
-    show Lisa reading 00
-    $ renpy.show('FG Lisa phone-closer 00' + lisa.dress)
+    show Lisa phone-evening 00
+    $ renpy.show('FG Lisa phone-evening 00' + lisa.dress)
     return
 
 

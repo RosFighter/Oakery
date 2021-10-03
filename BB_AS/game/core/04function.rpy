@@ -16,7 +16,6 @@ init python:
     def GetWeekday(day):  # возвращает номер дня недели
         return (day+2) % 7
 
-
     # Увеличивает время, заданное в формате 'hh:mm' на delta минут
     def add_time(ts, delta=1):
         h, m = ts.split(':')

@@ -1087,7 +1087,7 @@ screen room_navigation():
     vbox:  # Время и день недели
         align(0.5, 0.01)
         text tm xalign(0.5) font 'hermes.ttf' size 60 drop_shadow[(2, 2)]
-        text weekdays[(day+2) % 7][1] xalign(0.5) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
+        text weekdays[weekday][1] xalign(0.5) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
 
     vbox: # деньги и зрители
         align(0.99, 0.01)

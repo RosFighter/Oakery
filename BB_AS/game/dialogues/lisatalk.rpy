@@ -2192,7 +2192,9 @@ label conversation_after_dinner(var=0):
         Max_05 "Как скажешь..."
 
         # открывается помощь за услуги
-        $ lisa.clothes.sleep.cur = 1
+        # $ lisa.clothes.sleep.cur = 1
+        $ lisa.clothes.sleep.enable(1)
+        $ lisa.clothes.sleep.disable(0)
         $ poss['sg'].open(3)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         if var>2:   # Макс даже не пытался защитить Лизу
@@ -2241,7 +2243,9 @@ label conversation_after_dinner(var=0):
         Max_01 "Договорились."
 
         # открывается помощь за услуги
-        $ lisa.clothes.sleep.cur = 1
+        # $ lisa.clothes.sleep.cur = 1
+        $ lisa.clothes.sleep.enable(1)
+        $ lisa.clothes.sleep.disable(0)
         $ poss['sg'].open(5)
         $ notify_list.append(_("Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."))
         if var < 5:
