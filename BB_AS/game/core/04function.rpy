@@ -7,6 +7,7 @@ init -100:
 
 init python:
     config.layers.insert(1, 'wm')
+    random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
 
     def withdraw(paid):
         mgg.withdraw(paid)
@@ -48,7 +49,7 @@ init python:
     def alt_wait():
         global day, tm, spent_time, prevday, prevtime
 
-        print 'alt_wait', day, tm, spent_time, prevday, prevtime
+        # print 'alt_wait', day, tm, spent_time, prevday, prevtime
         pday    = day
         ptm     = tm
 
@@ -1464,10 +1465,18 @@ init python:
         return False
 
 
+    def get_lim_col_step(i):
+        lim = i.args[2] if len(i.args) > 2 else 100
+        vis = get_skill_chance(i.args[1], lim)
+        col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
+        txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+        step = i.args[3] if len(i.args) > 3 else 1
+        return lim, vis, col, txt, step
+
     def random_outcome(value):
         if _in_replay:
             return True
-        random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+        # random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
         return random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < value
 
     def skill_outcome(skill, value, lim=100, d=1):
@@ -1501,7 +1510,6 @@ init python:
             return
         else:
             show_success_message()
-            random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
             rand_result = 1 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 0
             if d > 1 and rand_result:
                 rand_result = 2 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 1
@@ -1609,7 +1617,7 @@ init python:
 
     Transition_to_room = renpy.curry(transition_to_room)    # преобразуем функцию в экшен
 
-
+    # возвращает вариант одежды Лизы для переодеваний
     def get_lisa_dress_pose(vr, pose=''):
         var = {'boobs': False, 'ass':False, 'np':False, 'fin':False}
         lvl = get_lisa_emancipation()
@@ -1631,8 +1639,17 @@ init python:
                 pose = '00s0' if lisa.clothes.swimsuit.GetCur().suf == 'a' else '00s1'
                 lisa.dress_inf = lisa.clothes.swimsuit.GetCur().info
             elif lisa.plan_name in ['dressed', 'read', 'dishes']:   # после чтения, мытья посуды или одевается "на выход" (в школу, магазин или к репетитору)
-                pose = '00'+lisa.clothes.casual.GetCur().suf    # повседневка
-                lisa.dress_inf = lisa.clothes.casual.GetCur().info
+                if lvl > 1 and '11:00' > tm > '10:00':
+                    pose = '07f1' if weekday == 6 else '07e3'
+                    lisa.dress_inf = '02i' if weekday == 6 else '02h'
+                    var['fin'] = True
+                else:
+                    pose = '00'+lisa.clothes.casual.GetCur().suf    # повседневка
+                    lisa.dress_inf = lisa.clothes.casual.GetCur().info
+            elif lisa.prev_plan == 'homework':                      # перед сном
+                pose = '00'+('g' if lisa.prev_dress == 'c' else lisa.prev_dress)
+            elif lisa.prev_plan == 'phone':
+                pose = '00' + lisa.prev_dress
             return pose, var
 
         if not pose:
@@ -1651,10 +1668,10 @@ init python:
                     lst.extend(['01g', '04g'])
             else:                                       # нижнее бельё
                 lst.extend(['01h', '04h'])              # трусики
-                if lvl < 2:
-                    lst.extend(['01h2', '04h2'])        # маечка с трусиками
-                elif lvl > 2:
-                    lst.extend(['01h1', '04h1'])        # маечка без трусиков
+                # if lvl < 2:
+                #     lst.extend(['01h2', '04h2'])        # маечка с трусиками
+                # elif lvl > 2:
+                #     lst.extend(['01h1', '04h1'])        # маечка без трусиков
 
 
             if lisa.plan_name == 'dressed':
@@ -1683,9 +1700,9 @@ init python:
                     if lvl > 2:
                         lst.extend(['01d', '04d'])
 
-            print 'список:', lst
+            # print 'список:', lst
             pose = renpy.random.choice(lst)
-            print 'выбрана:', pose
+            # print 'выбрана:', pose
 
         if vr < 2:
             if lvl == 1 and pose in ['01b1', '01d1', '01h', '01g1',
@@ -1765,3 +1782,64 @@ init python:
             lisa.dress_inf = '01ea' # платье
 
         return pose, var
+
+    def get_lisa_dress_inroom(vr):
+        lvl = get_lisa_emancipation()
+
+        lst = []
+        lst.append('01h')       # трусики для всех вариантов действий
+        if lvl == 1 and lisa.plan_name == 'sleep':
+            lst.append('01h3')  # пижама для первого уровня
+
+        if lisa.prev_plan == 'in_shcool':
+            lst.append('01e')   # школьная юбка после школы
+
+        if lisa.plan_name in ['swim', 'sun'] or lisa.prev_plan in ['swim', 'sun']:
+            lst.append('01c')   # трусики от бикини перед или после отдыха во дворе
+
+        if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor']:
+            lst.append({'a':'01a', 'b':'01b1', 'd':'01d'}[lisa.clothes.casual.GetCur().suf])
+            if lisa.clothes.casual.GetCur().suf == 'b' and lvl > 2:
+                lst.append('01b')
+        elif lisa.prev_plan == 'in_shop':
+            lst.append('01a')
+
+        if all([lvl > 2, lisa.plan_name != 'sleep', lisa.prev_plan != 'dishes']):
+            lst.append('01')
+
+        pose = renpy.random.choice(lst)
+        print pose, lst
+
+        if not vr:  # подсмотреть не удалось
+            if lvl == 1:
+                pose = {
+                    '01a':'05a',
+                    '01b1':'03b1',
+                    '01c':'06c',
+                    '01d':'05d1',
+                    '01e':'05e1',
+                    '01h':'06h',
+                    '01h3':renpy.random.choice(['02h3', '05h3']),
+                    }[pose]
+            elif lvl == 2:
+                pose = {
+                    '01a':renpy.random.choice(['02a', '05a']),
+                    '01b1':'02b1',
+                    '01c':'03c',
+                    '01d':'02d1',
+                    '01e':'02e1',
+                    '01h':'02h',
+                    }[pose]
+            else:   #lvl == 3
+                pose = {
+                    '01':renpy.random.choice(['03', '06']),
+                    '01a':renpy.random.choice(['02a', '05a']),
+                    '01b':'03b',
+                    '01b1':'02b1',
+                    '01c':renpy.random.choice(['03c', '06c']),
+                    '01d':renpy.random.choice(['02d1', '05d1']),
+                    '01e':renpy.random.choice(['02e1', '05e1']),
+                    '01h':renpy.random.choice(['02h', '05h']),
+                    }[pose]
+        print pose
+        return pose

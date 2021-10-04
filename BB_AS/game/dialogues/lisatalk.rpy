@@ -1066,7 +1066,7 @@ label Lisa_HomeWork:
     $ renpy.show("FG lessons-help-"+pose3_1)
     $ renpy.show("Lisa lessons-help "+pose3_1+lisa.dress)
     $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    # with Fade(0.4, 0, 0.3)
 
     menu:
         Lisa_02 "Отлично. В общем, мне нужно сделать вот это, это и вот то. Поможешь?"
@@ -1795,8 +1795,9 @@ label liza_hand_mass:
                     $ __mood -= 30
         $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     else:
-        scene BG char Lisa bed-evening
-        $ renpy.show('Lisa phone-closer 01'+lisa.dress)
+        call lisa_phone_closer from _call_lisa_phone_closer_1
+        # scene BG char Lisa bed-evening
+        # $ renpy.show('Lisa phone-closer 01'+lisa.dress)
         Lisa_03 "Ну вот... С уроками сегодня должно быть полегче. Спасибо, что помассировал мои ручки. Я довольна!"
         Max_01 "Мне только в радость, сестрёнка. Обращайся."
 
@@ -4237,7 +4238,7 @@ label lisa_about_ae_sexed5:
         # max&eric-terrace-00 + max&lisa-(01a/01b) + max&lisa-(04a/04b)
         $ renpy.show('Max talk-terrace 02'+mgg.dress)
         $ renpy.show('Lisa talk-terrace 02'+lisa.dress)
-        Lisa_00 "А затем, что эти уроки продолжатся в нашей комнате с Эриком."
+        Lisa_00 "А затем, что эти уроки продолжатся в нашей с тобой комнате, Макс."
         Max_08 "И что? Почему я должен из-за этого покидать свою комнату?"
         Lisa_02 "Потому что ты там будешь лишним! Было бы неплохо, если бы ты в это время помыл за меня посуду. Я тебе за это только спасибо скажу."
         Max_07 "Помою, не вопрос... А почему эти уроки с Эриком будут проходить у нас в комнате, а не как раньше в маминой?"

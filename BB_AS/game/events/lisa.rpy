@@ -720,7 +720,7 @@ label lisa_dressed:
     $ lisa.hourly.dressed = 1
     $ renpy.dynamic('mood', 'warned', 'r1', 'pose', 'var', 'np')
     $ warned = False
-    $ r1 = random_outcome(50)   # начала ли Лиза переодеваться
+    $ r1 = random_outcome(50)   # Лиза начала переодеваться и ещё не закончила
     $ mood = 0
     $ lvl = get_lisa_emancipation()
     $ np = False
@@ -755,7 +755,7 @@ label lisa_dressed:
                 "{i}войти в комнату{/i}":
                     call .moment1 from _call_lisa_dressed_moment1_1
                 "Можно войти на секунду? Я только ноутбук возьму...":
-                    if r1 or tm > '10:00':
+                    if r1 or (tm > '10:00' and lvl < 2):
                         menu:
                             Lisa "{b}Лиза:{/b} Макс, дай одеться спокойно! Потом свой ноутбук заберёшь..."
                             "{i}всё равно забрать ноутбук{/i}":
@@ -844,7 +844,10 @@ label lisa_dressed:
                     Lisa_02 "Макс, если под \"делами\" ты подразумеваешь какие-нибудь детские передачи, то пора бы уже из этого вырасти..."
                     Lisa_00 "Ладно, неважно... Дай мне уже переодеться!" nointeract
                 else:   # lvl == 3
-                    Lisa_01 "Повезло тебе, что я ещё не начала раздеваться. Или ноутбук - это просто предлог и ты надеялся, что я тут полуголая буду?"
+                    if tm > '10:00':
+                        Lisa_01 "Хорошо, что я уже почти оделась. Или ноутбук - это просто предлог и ты надеялся, что я тут полуголая буду?"
+                    else:
+                        Lisa_01 "Повезло тебе, что я ещё не начала раздеваться. Или ноутбук - это просто предлог и ты надеялся, что я тут полуголая буду?"
                     Max_02 "Не без этого, но он мне действительно очень нужен для дела!"
                     Lisa_02 "Ага, так я тебе и поверила. Забирай его уже быстрее, деловой..." nointeract
         menu:
@@ -852,12 +855,9 @@ label lisa_dressed:
                 $ cam_flag.append('lisa_dr0')
                 jump .get_laptop
 
-    label .moment0(vr = 0):     # рано (или уже поздно)
+    label .moment0:     # рано (или уже поздно)
         $ lisa.hourly.dressed = 1
-        if vr < 0:
-            scene BG char Lisa dressing-02
-        else:
-            scene BG char Lisa dressing-01
+        scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(0)
         $ renpy.show('Lisa dressing '+pose)
         menu:
@@ -888,6 +888,36 @@ label lisa_dressed:
                 $ mood += 20
                 Lisa_01 "Спасибо, Макс. Я быстренько!" nointeract
                 jump .wait_or_leave
+
+    label .stay_in_room:    # Макс оставался в комнате
+        $ renpy.dynamic('mood')
+        $ mood = 0
+        $ lvl = get_lisa_emancipation()
+        $ pose, var = get_lisa_dress_pose(0)
+        scene BG char Lisa dressing-02
+        $ renpy.show('Lisa dressing '+pose)
+        with dissolve
+        menu:
+            Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..."
+            "{i}отвернуться{/i}":
+                # myroom-bedmax-morning,day,evening-01
+                scene BG char Max bed-day-01
+                if lvl == 1:
+                    Lisa "{b}Лиза:{/b} Я быстро... Главное, не подглядывай! Надеюсь, тебе это по силам..." nointeract
+                elif lvl == 2:
+                    Lisa "{b}Лиза:{/b} И не вздумай подглядывать! Это не займёт много времени..." nointeract
+                else:   # lvl == 3
+                    Lisa "{b}Лиза:{/b} И я бы хотела, чтобы ты постарался не подглядывать... Знаю, сложно, но пожалуйста!" nointeract
+                menu:
+                    "{i}не подглядывать за Лизой{/i}":
+                        $ mpood += 20
+                        jump .wait_in_room
+                    "{i}попробовать подглядеть за Лизой{/i}" ('hide', mgg.stealth*2, 80, lisa.daily.in_room+1) if lisa.daily.in_room < 2 and not lisa.daily.gotcha:
+                        call .try_to_peek from _call_lisa_dressed_try_to_peek
+            "{i}подождать за дверью, пока Лиза переоденется{/i}":
+                jump .wait_outside
+            "{i}уйти{/i}":
+                jump .leave
 
     label .moment2:     # повезло
 
@@ -992,39 +1022,108 @@ label lisa_dressed:
                 Lisa_02 "Макс, займись чем-нибудь путным." nointeract
                 call .wait_or_leave from _call_lisa_dressed_wait_or_leave_12
 
+    label .try_to_peek:
+        $ lisa.daily.in_room += 1
+        if rand_result >= lisa.daily.in_room:
+            scene BG char Lisa dressing-02
+            $ pose = get_lisa_dress_inroom(1)
+            $ renpy.show('Lisa dressing inroom '+pose)
+            if lvl == 1:
+                Max_05 "[lucky!t]{m}Повезло! Лиза не видит, что я подглядываю... Ещё совсем юная, но уже такая сексуальная! Обожаю её...{/m}"
+            elif lvl == 2:
+                Max_05 "[lucky!t]{m}Класс! Кажется, она не видит, что я подглядываю... Очень сложно оторвать взгляд от этих соблазнительных изгибов её фигуры, но надо...{/m}"
+            else:   # lvl == 3
+                Max_05 "[lucky!t]{m}Моя сестрёнка такая сладенькая! Как же мне повезло жить с такой классной девочкой в одной комнате и каждый день наслаждаться её голыми прелестями...{/m}"
+        else:
+            $ lisa.daily.gotcha = 1
+            scene BG char Lisa dressing-02
+            $ pose = get_lisa_dress_inroom(0)
+            $ renpy.show('Lisa dressing '+pose, at_list=[stay_in_room,])  # добавить увеличение и положение
+            if lvl == 1:
+                $ mood -= 50
+                Lisa_11 "[spotted!t]Макс! Я же просила не подглядывать! Ну-ка быстро отвернись... Ещё раз так сделаешь и я всё маме расскажу! Понял?!" nointeract
+            elif lvl == 2:
+                $ mood -= 20
+                Lisa_11 "[spotted!t]Ну, Макс! Прекращай подглядывать! Если не отвернёшься или ещё раз такое выкинешь, я на тебя маме нажалуюсь... Тебе ясно?!" nointeract
+            else:   # lvl == 3
+                Lisa_11 "[spotted!t]Опять ты подглядываешь! И не стыдно тебе?! Делать тебе больше нечего, только глазеть, как я переодеваюсь... Прекращай!" nointeract
+            menu:
+                "Подумаешь, сестрёнку полуголую увидел..." if lvl == 1:
+                    Lisa_12 "Подумаешь, я сильно на тебя обижусь и больше разговаривать не буду..."
+                    Max_08 "Всё, я отвернулся!"
+                "Да ладно тебе, можешь меня не стесняться!" if lvl == 2:
+                    Lisa_10 "А я вот стесняюсь! И перестань на меня так глазеть! А то я Алису попрошу, чтобы она тебя отпинала..."
+                    Max_08 "Всё, я отвернулся!"
+                "Извини, не удержался... Хорошо выглядишь!" if lvl < 3:
+                    $ mood += 20
+                    if lvl == 1:
+                        Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Отвернись!" nointeract
+                    else:
+                        Lisa_09 "Ну и долго ты ещё пялиться на меня будешь?! Отвернись. Я недолго..." nointeract
+                    menu:
+                        "{i}отвернуться{/i}":
+                            pass
+                "А ты представь, что меня тут на самом деле нет!" if lvl > 2:
+                    Lisa_02 "Вот представь, ну никак не могу! Стесняюсь. Можно я уже спокойно переоденусь? Без этого твоего сверлящего и озабоченного взгляда..."
+                    Max_02 "Можно. Только постой так ещё немного, я быстренько сфотографирую..."
+                    Lisa_09 "Ну, Макс!"
+                    Max_03 "Да шучу я... Всё, отвернулся!"
+                "Извини, не удержался... Ты очень красивая!" if lvl > 2:
+                    Lisa_01 "Спасибо. Но давай ты не будешь пялиться и отвернёшься... Хорошо?"
+                    Max_04 "Мне понравилось, как ты двигалась... Не повторишь?"
+                    menu:
+                        Lisa_02 "Макс, ты меня совсем сейчас засмущаешь! Отвернись, пожалуйста..."
+                        "{i}отвернуться{/i}":
+                            pass
+        jump .wait_in_room
+
     label .wait_or_leave:
         menu:
             "{i}подождать за дверью, пока Лиза переоденется{/i}":
-                # показывваем дверь, "ожидание", затем входим в комнату
-                $ renpy.scene()
-                $ renpy.show('location house myroom door-'+get_time_of_day())
-                pause(2)
-
-                $ ClothingNps('lisa', lisa.plan_name)
-                $ AddRelMood('lisa', 0, mood)
-
-                $ renpy.block_rollback()
-                scene BG black with dissolve
-                if lisa.plan_name == 'dressed':
-                    if weekday in [0, 6]:
-                        $ spent_time = 40 - int(tm[-2:])
-                    else:
-                        $ spent_time = 20 - int(tm[-2:])
-                    jump Waiting
-                else:
-                    jump AfterWaiting
-
+                jump .wait_outside
             "{i}уйти{/i}":
-                # показываем дверь, для продолжения нужно перейти в другую локацию
-                $ renpy.scene()
-                $ renpy.show('location house myroom door-'+get_time_of_day())
-                $ AvailableActions['talk'].active = False
+                jump .leave
 
-                $ ClothingNps('lisa', lisa.plan_name)
-                $ AddRelMood('lisa', 0, mood)
+    label .wait_in_room:
+        scene BG char Max bed-day-01 with dissolve
+        pause(1)
+        $ ClothingNps('lisa', lisa.plan_name)
+        $ AddRelMood('lisa', 0, mood)
+        $ renpy.block_rollback()
+        scene BG black with dissolve
+        jump AfterWaiting
 
-                $ renpy.block_rollback()
-                call screen room_navigation
+    label .wait_outside:
+        # показывваем дверь, "ожидание", затем входим в комнату
+        $ renpy.scene()
+        $ renpy.show('location house myroom door-'+get_time_of_day())
+        pause(2)
+
+        $ ClothingNps('lisa', lisa.plan_name)
+        $ AddRelMood('lisa', 0, mood)
+
+        $ renpy.block_rollback()
+        scene BG black with dissolve
+        if lisa.plan_name == 'dressed':
+            if weekday in [0, 6]:
+                $ spent_time = 40 - int(tm[-2:])
+            else:
+                $ spent_time = 20 - int(tm[-2:])
+            jump Waiting
+        else:
+            jump AfterWaiting
+
+    label .leave:
+        # показываем дверь, для продолжения нужно перейти в другую локацию
+        $ renpy.scene()
+        $ renpy.show('location house myroom door-'+get_time_of_day())
+        $ AvailableActions['talk'].active = False
+
+        $ ClothingNps('lisa', lisa.plan_name)
+        $ AddRelMood('lisa', 0, mood)
+
+        $ renpy.block_rollback()
+        call screen room_navigation
 
     label .get_laptop:
         $ spent_time += 10
@@ -1039,20 +1138,20 @@ label lisa_dressed:
 
 
 
-label lisa_dressed_repetitor:
-    scene location house myroom door-morning
-
-    if lisa.hourly.dressed:
-        return
-
-    # добавить возможность подглядываать после начала секс.обучения Лизы у АиЭ
-    menu:
-        Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
-        "{i}уйти{/i}":
-            $ lisa.hourly.dressed = 1
-
-    label .end:
-        jump Waiting
+# label lisa_dressed_repetitor:
+#     scene location house myroom door-morning
+#
+#     if lisa.hourly.dressed:
+#         return
+#
+#     # добавить возможность подглядываать после начала секс.обучения Лизы у АиЭ
+#     menu:
+#         Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
+#         "{i}уйти{/i}":
+#             $ lisa.hourly.dressed = 1
+#
+#     label .end:
+#         jump Waiting
 
 
 label lisa_swim:

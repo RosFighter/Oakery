@@ -10451,3 +10451,11 @@ translate german strings:
     old "{i}отпустить Лизу в школу{/i}"
     new "{i}Lisa zur Schule gehen lassen{/i}"
 
+# TODO: Translation updated at 2021-10-04 18:39
+
+# game/dialogues/lisatalk.rpy:4241
+translate german lisa_about_ae_sexed5_da98adae:
+
+    # Lisa_00 "А затем, что эти уроки продолжатся в нашей с тобой комнате, Макс."
+    Lisa_00 ""
+

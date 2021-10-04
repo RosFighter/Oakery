@@ -390,7 +390,7 @@ label cam0_eric_sleep:
 
 ##
 label cam0_eric_ann_try_fucking:
-    $ renpy.show('Eric cams nosex '+cam_poses_manager(eric, ['01', '02'])+eric.dress, at_list=[laptop_screen])
+    $ renpy.show('Eric cams nosex '+cam_poses_manager(eric, ['01', '02']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'eric_nosex' not in cam_flag:
         $ cam_flag.append('eric_nosex')

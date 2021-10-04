@@ -253,21 +253,24 @@ screen choice(items, rand=None):
 
                             $ sz = -5
 
-                            $ lim = i.args[2] if len(i.args) > 2 else 100
-                            $ vis = get_skill_chance(i.args[1], lim)
-                            $ col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
-                            $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
-                            $ step = i.args[3] if len(i.args) > 3 else 1
+                            $ lim, vis, col, txt, step = get_lim_col_step(i)
+                            # $ lim = i.args[2] if len(i.args) > 2 else 100
+                            # $ vis = get_skill_chance(i.args[1], lim)
+                            # $ col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
+                            # $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+                            # $ step = i.args[3] if len(i.args) > 3 else 1
+                            # $ print(lim, vis, step)
 
                             if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
                                 button action i.action background None:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
                                     textbutton renpy.config.say_menu_text_filter(renpy.translate_string(i.caption)):
-                                        action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]#[SetVariable('rand_result', 5), i.action]
+                                        action i.action
                                         yalign .0
                                         xpos 30
                                         sensitive not i.kwargs.get("disabled", False)
                                     foreground "interface marker"
+                                key str(yy) action i.action
                             else:
                                 button action i.action background None:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
@@ -277,6 +280,7 @@ screen choice(items, rand=None):
                                         xpos 30
                                         sensitive not i.kwargs.get("disabled", False)
                                     foreground "interface marker"
+                                key str(yy) action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]
                         else:
                             button action i.action background None:
                                 xpadding 0 ypadding 0 xmargin 0 ymargin 0
@@ -286,11 +290,14 @@ screen choice(items, rand=None):
                                     xpos 30
                                     sensitive not i.kwargs.get("disabled", False)
                                 foreground "interface marker"
-
-                        key str(yy) action i.action
+                            key str(yy) action i.action
             vbar value YScrollValue("vp_choice") style "choice_vscroll"
     if len(items) == 1:
-        key "K_SPACE" action items[0].action
+        if len(items[0].args)>1:
+            $ lim, vis, col, txt, step = get_lim_col_step(items[0])
+            key "K_SPACE" action [Skill_Outsome(items[0].args[0], items[0].args[1], lim, step), items[0].action]
+        else:
+            key "K_SPACE" action items[0].action
 
 ## Когда этот параметр True, заголовки меню будут проговариваться рассказчиком.
 ## Когда False, заголовки меню будут показаны как пустые кнопки.
@@ -977,6 +984,7 @@ screen preferences():
                         textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
                         textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
                         textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")
+                        textbutton _("Переодевания Лизы пропускаются, если Макс в комнате") action ToggleVariable("persistent.skip_lisa_dressed")
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.
@@ -1738,14 +1746,15 @@ screen choice(items, rand=None):
 
                         $ sz = -3
 
-                        $ lim = i.args[2] if len(i.args) > 2 else 100
-                        $ vis = get_skill_chance(i.args[1], lim)
-                        $ col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
-                        $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
-                        $ step = i.args[3] if len(i.args) > 3 else 1
+                        $ lim, vis, col, txt, step = get_lim_col_step(i)
+                        # $ lim = i.args[2] if len(i.args) > 2 else 100
+                        # $ vis = get_skill_chance(i.args[1], lim)
+                        # $ col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
+                        # $ txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
+                        # $ step = i.args[3] if len(i.args) > 3 else 1
 
                         if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
-                            button action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]: #[SetVariable('rand_result', 5), i.action]:
+                            button action i.action:
                                 text i.caption style "choice_button_text"
                                 left_padding 50 right_padding 35
                                 sensitive not i.kwargs.get("disabled", False)

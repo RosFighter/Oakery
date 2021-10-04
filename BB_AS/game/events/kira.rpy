@@ -2465,7 +2465,7 @@ label kira_lisa_shower:
 
     label .alt_peepeng:
         $ spent_time += 10
-        $ lisa.dress_inf = '00aa'
+        $ lisa.dress_inf = '00a'
         $ kira.dress_inf = '00a'
         $ r1 = renpy.random.randint(1, 6)
         $ __r2 = renpy.random.randint(1, 6)

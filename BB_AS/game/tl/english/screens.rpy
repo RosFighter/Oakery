@@ -433,3 +433,12 @@ translate english strings:
     # game/screens.rpy:1669
     old "Меню"
     new "Menu"
+
+# TODO: Translation updated at 2021-10-04 18:40
+
+translate english strings:
+
+    # game/screens.rpy:987
+    old "Переодевания Лизы пропускаются, если Макс в комнате"
+    new ""
+

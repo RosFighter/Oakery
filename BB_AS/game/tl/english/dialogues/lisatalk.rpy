@@ -10450,3 +10450,11 @@ translate english strings:
     old "{i}отпустить Лизу в школу{/i}"
     new "{i}Let Lisa go to school{/i}"
 
+# TODO: Translation updated at 2021-10-04 18:40
+
+# game/dialogues/lisatalk.rpy:4241
+translate english lisa_about_ae_sexed5_da98adae:
+
+    # Lisa_00 "А затем, что эти уроки продолжатся в нашей с тобой комнате, Макс."
+    Lisa_00 ""
+

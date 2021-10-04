@@ -49,6 +49,7 @@ default persistent.orint = False
 default persistent.request_savename = True
 default persistent.transparent_textbox = False
 default persistent.all_opportunities = False
+default persistent.skip_lisa_dressed = False
 default number_autosave = 0
 default number_quicksave = 0
 default number_save = 0

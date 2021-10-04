@@ -390,6 +390,8 @@ init python:
         blog    = 0     # блог
         blog_we = 0     # блог с Эриком
         dressed = 0     # переодевания не по расписанию
+        in_room = 0     # переодевания в комнате
+        gotcha  = 0     # попался на подглядывании
 
         # диалоги
         dishes      = 0     # диалог о помывке посуды
@@ -414,6 +416,8 @@ init python:
             self.blog       = 0
             self.blog_we    = 0
             self.dressed    = 0
+            self.in_room    = 0
+            self.gotcha     = 0
 
             self.dishes     = 0
             self.tvwatch    = 0
@@ -757,7 +761,7 @@ init python:
                     if rez[0].name:
                         if self.plan_name != rez[0].name:
                             self.prev_plan  = self.plan_name
-                            self.prev_dress = self.dress_inf
+                            self.prev_dress = self.dress
                             self.plan_name  = rez[0].name
                             self.loc        = eval(rez[0].loc+'['+str(rez[0].room)+']')
                     else:

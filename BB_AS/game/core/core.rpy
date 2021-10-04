@@ -297,6 +297,8 @@ label NewDay:
     $ cam_poses.clear()  # обнулим список поз для камер
 
     python:
+        random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+
         if olivia_nightvisits():
             # установим откат для ночных визитов Оливии.
             olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
@@ -529,7 +531,9 @@ label random_dressed:
 
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
-                call lisa_dressed.moment0(-1) from _call_lisa_dressed_moment0_1
+                if not persistent.skip_lisa_dressed:
+                    $ lisa.hourly.dressed = 1
+                    call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_1
 
             elif all([current_room != prev_room, current_room == house[0]]):
                 # Макс входит в свою комнату
@@ -549,7 +553,9 @@ label random_dressed:
 
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
-                call lisa_dressed.moment0(-1) from _call_lisa_dressed_moment0_2
+                if not persistent.skip_lisa_dressed:
+                    $ lisa.hourly.dressed = 1
+                    call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_2
 
             elif all([current_room != prev_room, current_room == house[0]]):
 
@@ -563,7 +569,9 @@ label random_dressed:
                     # красного бикини ещё нет, то может быть только нулевой момент
                     $ lisa.daily.dressed += 1
                     call lisa_dressed.moment0 from _call_lisa_dressed_moment0_3    # "нулевой"
-
+        elif all([tm=='00:00', lisa.plan_name == 'sleep', current_room == prev_room, current_room == house[0], not persistent.skip_lisa_dressed]):
+            $ lisa.hourly.dressed = 1
+            call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room
     return
 
 label chance_dressing_roll:
@@ -859,6 +867,7 @@ label after_load:
         $ persistent.memories['massage_sunscreen.spider'] = 0
 
     $ weekday = GetWeekday(day)
+    $ checking_clothes()
     return
 
 label update_06_5:
@@ -1579,3 +1588,9 @@ label update_07_0_99:
 
         $ ann.clothes.sports.sel[1].suf = 'c'
         $ ann.clothes.sports.sel[1].info = '05c'
+
+    if _version < '0.06.8.19':
+        python:
+            for char in chars:
+                chars[char].daily.in_room = 0
+                chars[char].daily.gotcha  = 0

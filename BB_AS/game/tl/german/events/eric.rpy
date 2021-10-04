@@ -1989,3 +1989,4 @@ translate german eric_ann_try_fucking_e010ae0b:
 
     # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}" nointeract
     Max_02 "{m}Wie kann eine so schöne Frau nicht würdig sein?! Ich verstehe das nicht...{/m}" nointeract
+

@@ -208,7 +208,7 @@ init python:
             lisa.clothes.casual.disable(2)
             lisa.clothes.learn.enable(0)
             lisa.clothes.learn.disable(3)
-        if 'poss' in globals() and poss['sg'].st() not in [0, 1, 2, 4]:
+        if 'poss' in globals() and poss['sg'].st() not in [-1, 0, 1, 2, 4]:
             lisa.clothes.sleep.enable(1)
             lisa.clothes.sleep.disable(0)
         else:
