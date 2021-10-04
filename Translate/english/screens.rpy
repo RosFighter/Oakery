@@ -440,5 +440,4 @@ translate english strings:
 
     # game/screens.rpy:987
     old "Переодевания Лизы пропускаются, если Макс в комнате"
-    new ""
-
+    new "Lisa skips getting dressed if Max is in the room"
