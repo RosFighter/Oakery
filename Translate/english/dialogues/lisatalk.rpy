@@ -10440,7 +10440,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:4438
     old "Только если дашь поцеловать!"
-    new "Only if you give me a kiss!"
+    new "Only if I can give you a kiss!"
 
     # game/dialogues/lisatalk.rpy:4446
     old "{i}прикоснуться к попке Лизы{/i}"
