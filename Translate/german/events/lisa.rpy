@@ -2774,3 +2774,15 @@ translate german strings:
     old "Извини, не удержался... Ты очень красивая!"
     new "Sorry, ich konnte nicht widerstehen... Du bist wunderschön!"
 
+# TODO: Translation updated at 2021-10-07 01:05
+
+translate german strings:
+
+    # game/events/lisa.rpy:911
+    old "{i}не подглядывать{/i}"
+    new ""
+
+    # game/events/lisa.rpy:911
+    old "{i}попробовать подглядеть{/i}"
+    new ""
+
