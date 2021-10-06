@@ -1992,3 +1992,577 @@ translate english eric_ann_try_fucking_e010ae0b:
     # Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}" nointeract
     Max_02 "{m}How can such a gorgeous woman not be worthy?! I don't understand...{/m}" nointeract
 
+# TODO: Translation updated at 2021-10-07 01:03
+
+# game/events/eric.rpy:1569
+translate english lisa_eric_sex_ed_practice_practice_1_3065454e:
+
+    # Max_07 "{m}Вот так! Мне всё отлично видно и если Эрик начнёт делать что-то совсем похабное с Лизой, я смогу вовремя вмешаться...{/m}"
+    Max_07 ""
+
+# game/events/eric.rpy:1570
+translate english lisa_eric_sex_ed_practice_practice_1_1b5c9b5b:
+
+    # Lisa_09 "...ну я не знаю..."
+    Lisa_09 ""
+
+# game/events/eric.rpy:1571
+translate english lisa_eric_sex_ed_practice_practice_1_6e713c0c:
+
+    # Eric_02 "Да не переживай ты так, Лиза. Я же подскажу тебе, что и как лучше делать. Всё у тебя получится, вот увидишь!"
+    Eric_02 ""
+
+# game/events/eric.rpy:1572
+translate english lisa_eric_sex_ed_practice_practice_1_97b8fe39:
+
+    # Lisa_10 "Просто мама всё так легко и уверенно делала на тех уроках, а я..."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1573
+translate english lisa_eric_sex_ed_practice_practice_1_48f67dbf:
+
+    # Eric_01 "Ну, Лиза... Когда-то и твоя мама была такой же неопытной, как ты... Никто же с первой попытки не играет например, в волейбол или баскетбол, как настоящий профессионал! Для этого нужна практика, время, опыт... Ну и талант было бы к этому делу неплохо иметь."
+    Eric_01 ""
+
+# game/events/eric.rpy:1574
+translate english lisa_eric_sex_ed_practice_practice_1_1c5bd0b4:
+
+    # Lisa_11 "А вдруг никакого таланта у меня нет?!"
+    Lisa_11 ""
+
+# game/events/eric.rpy:1575
+translate english lisa_eric_sex_ed_practice_practice_1_f6227f68:
+
+    # Eric_04 "О, Лиза, поверь... Мужчине можно доставить огромное удовольствие даже не имея талантов! Для этого я и предложил тебе практиковаться."
+    Eric_04 ""
+
+# game/events/eric.rpy:1578
+translate english lisa_eric_sex_ed_practice_practice_1_4a6c0e46:
+
+    # Max_09 "{m}Он что, действительно собирается добиться от Лизы дрочки?! Но она же не совсем глупышка, чтобы делать это? Или Эрик уже и Лизе совершенно мозги запудрил, как и маме...{/m}"
+    Max_09 ""
+
+# game/events/eric.rpy:1583
+translate english lisa_eric_sex_ed_practice_practice_1_ea93a773:
+
+    # Lisa_09 "Хорошо, Эрик. Ты меня немного успокоил. Но я всё равно волнуюсь..."
+    Lisa_09 ""
+
+# game/events/eric.rpy:1584
+translate english lisa_eric_sex_ed_practice_practice_1_ff72c174:
+
+    # Eric_03 "Это нормально. Если бы у тебя появился парень, ты бы также тряслась. Но под моим чутким руководством, ты научишься вести себя уверенно и уже этот самый парень будет трястись и стараться тебя впечатлить! Когда придёт время, конечно..."
+    Eric_03 ""
+
+# game/events/eric.rpy:1585
+translate english lisa_eric_sex_ed_practice_practice_1_ef0175b7:
+
+    # Lisa_13 "Тогда сейчас стараться нужно мне... С чего лучше начать?"
+    Lisa_13 ""
+
+# game/events/eric.rpy:1586
+translate english lisa_eric_sex_ed_practice_practice_1_3d5f41d3:
+
+    # Eric_01 "Мы будем это делать не спеша, шаг за шагом. Сперва высвободи мой член из под одежды. Ты уже его видела, так что не стесняйся..."
+    Eric_01 ""
+
+# game/events/eric.rpy:1589
+translate english lisa_eric_sex_ed_practice_practice_1_dd7bf2d0:
+
+    # Max_15 "{m}Вот же что сволочь делает! Пользуется моей маленькой и наивной сестрёнкой в своих самых непристойных целях.{/m}"
+    Max_15 ""
+
+# game/events/eric.rpy:1593
+translate english lisa_eric_sex_ed_practice_practice_1_ec143ed3:
+
+    # Lisa_11 "Ой! Вот и он... Значит, если мужчина испытывает возбуждение, то его член становится больше, правильно?"
+    Lisa_11 ""
+
+# game/events/eric.rpy:1594
+translate english lisa_eric_sex_ed_practice_practice_1_b8f977fc:
+
+    # Eric_02 "Именно! Мама тебе об этом говорила. Если мужчина возбуждается по тем или иным причинам, то к его члену приливает кровь и он твердеет, становится больше..."
+    Eric_02 ""
+
+# game/events/eric.rpy:1595
+translate english lisa_eric_sex_ed_practice_practice_1_96ab81e1:
+
+    # Lisa_10 "Я помню, в маминых руках он был куда больше..."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1596
+translate english lisa_eric_sex_ed_practice_practice_1_aa78a0a8:
+
+    # Eric_04 "Вот тебе и первое задание... Возбудить меня своими прикосновениями к нему!"
+    Eric_04 ""
+
+# game/events/eric.rpy:1599
+translate english lisa_eric_sex_ed_practice_practice_1_3b74cda5:
+
+    # Max_13 "{m}Лиза, не вздумай! Если она не остановится, то мне некуда деваться. Придётся вмешаться!{/m}"
+    Max_13 ""
+
+# game/events/eric.rpy:1607
+translate english lisa_eric_sex_ed_practice_practice_1_122391ed:
+
+    # Max_13 "{m}Что!? Он уже член ей свой подсовывает! Если она не остановится и решит ему подрочить, то мне некуда деваться. Придётся вмешаться!{/m}"
+    Max_13 ""
+
+# game/events/eric.rpy:1609
+translate english lisa_eric_sex_ed_practice_practice_1_762c7d07:
+
+    # Lisa_11 "Ой! Прямо вот так сразу?!"
+    Lisa_11 ""
+
+# game/events/eric.rpy:1610
+translate english lisa_eric_sex_ed_practice_practice_1_1f94bdea:
+
+    # Eric_00 "А мы разве не для этого устроили этот урок? Разглядывать что-либо будешь в музее или на теоретических уроках. А у нас закрепление теории на практике!"
+    Eric_00 ""
+
+# game/events/eric.rpy:1611
+translate english lisa_eric_sex_ed_practice_practice_1_9645ed89:
+
+    # Lisa_10 "Э-э-э... Я как-то не уверена..."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1612
+translate english lisa_eric_sex_ed_practice_practice_1_3849c169:
+
+    # Eric_03 "Не бойся, Лиза, это совсем не страшно. Глаза боятся - руки делают. Главное начать..."
+    Eric_03 ""
+
+# game/events/eric.rpy:1614
+translate english lisa_eric_sex_ed_practice_practice_1_cc24ef7a:
+
+    # Lisa_09 "Ну ладно. Я сейчас попробую..." nointeract
+    Lisa_09 "" nointeract
+
+# game/events/eric.rpy:1621
+translate english lisa_eric_sex_ed_practice_practice_1_b1511ce1:
+
+    # Eric_11 "Макс!!! Ах ты мелкий... Тебя же по человечески просили не мешать! Убирайся отсюда немедленно!"
+    Eric_11 ""
+
+# game/events/eric.rpy:1622
+translate english lisa_eric_sex_ed_practice_practice_1_aa882648:
+
+    # Lisa_10 "Ой! Всё! Я больше ничего не буду делать... Мне так стыдно!"
+    Lisa_10 ""
+
+# game/events/eric.rpy:1623
+translate english lisa_eric_sex_ed_practice_practice_1_793484cf:
+
+    # Max_09 "Я у себя дома, вообще-то! Куда хочу - туда и хожу..."
+    Max_09 ""
+
+# game/events/eric.rpy:1625
+translate english lisa_eric_sex_ed_practice_practice_1_f36d522c:
+
+    # Eric_00 "Пойдём-ка выйдем, Макс, и я доходчиво объясню тебе, как не стоит делать!"
+    Eric_00 ""
+
+# game/events/eric.rpy:1626
+translate english lisa_eric_sex_ed_practice_practice_1_b112636c:
+
+    # Max_00 "Давай, попробуй..."
+    Max_00 ""
+
+# game/events/eric.rpy:1628
+translate english lisa_eric_sex_ed_practice_practice_1_254985a9:
+
+    # Eric_13 "Я вижу, что ты точно не уймёшься и будешь мне только мешать. До меня дошли некоторые слухи, Макс... О твоей «хозяйственности»... И я сделаю так, что это выйдет тебе боком."
+    Eric_13 ""
+
+# game/events/eric.rpy:1629
+translate english lisa_eric_sex_ed_practice_practice_1_3d8756c9:
+
+    # Max_15 "Надоели уже твои угрозы. Может отвалишь?"
+    Max_15 ""
+
+# game/events/eric.rpy:1630
+translate english lisa_eric_sex_ed_practice_practice_1_f5566d3d:
+
+    # Eric_09 "Ну, я угрожал, потому что считал, что ты ещё ребёнок... Но вижу, что уже нет. Так что теперь я опозорю тебя перед всей семьёй и они отправят тебя в военный лагерь."
+    Eric_09 ""
+
+# game/events/eric.rpy:1631
+translate english lisa_eric_sex_ed_practice_practice_1_c7db9fbd:
+
+    # Max_07 "Да, я уже что-то такое слышал. Не пугает. Что-то ещё или тебя уже можно послать в задницу?"
+    Max_07 ""
+
+# game/events/eric.rpy:1632
+translate english lisa_eric_sex_ed_practice_practice_1_deab2e43:
+
+    # Eric_14 "Посмотрим, как ты будешь выёживаться дальше..."
+    Eric_14 ""
+
+# game/events/eric.rpy:1642
+translate english lisa_eric_sex_ed_practice_practice_1_137e23cb:
+
+    # Lisa_11 "Охх... Я... Я сделала это! Боже мой... Это и правда не так страшно, как мне казалось..."
+    Lisa_11 ""
+
+# game/events/eric.rpy:1643
+translate english lisa_eric_sex_ed_practice_practice_1_940f7c80:
+
+    # Eric_02 "Ну и как он тебе? Что чувствуешь?"
+    Eric_02 ""
+
+# game/events/eric.rpy:1644
+translate english lisa_eric_sex_ed_practice_practice_1_03f0a1cc:
+
+    # Lisa_00 "Он... Ну... Я не знаю... Он такой тёплый и нежный... Эрик, а что дальше нужно делать?"
+    Lisa_00 ""
+
+# game/events/eric.rpy:1645
+translate english lisa_eric_sex_ed_practice_practice_1_38fa3271:
+
+    # Eric_05 "Дальше его нужно массировать. У тебя ручки нежнее, чем у твоей мамы. Возьми его поглубже в ладонь и води вверх-вниз... Нежно и ласково, не спеша..."
+    Eric_05 ""
+
+# game/events/eric.rpy:1648
+translate english lisa_eric_sex_ed_practice_practice_1_0f5e38dd:
+
+    # Lisa_10 "Я не... Эрик, давай не сегодня! Я что-то слишком переволновалась... Мне нужно успокоиться и прийти в себя..."
+    Lisa_10 ""
+
+# game/events/eric.rpy:1649
+translate english lisa_eric_sex_ed_practice_practice_1_a7a2a190:
+
+    # Eric_01 "Ну конечно, Лиза, я не собираюсь давить на тебя. Не сегодня, так не сегодня. Ты и так многое сегодня сделала, переборов свой собственный страх и смущение. Мы продолжим в следующий понедельник..."
+    Eric_01 ""
+
+# game/events/eric.rpy:1658
+translate english lisa_eric_sex_ed_practice_practice_2_3d71476f:
+
+    # Eric_00 "... уже ведь не так страшно, как в первый раз, да, Лиза?"
+    Eric_00 ""
+
+# game/events/eric.rpy:1659
+translate english lisa_eric_sex_ed_practice_practice_2_08633c88:
+
+    # Lisa_00 "Да. Но я всё равно немного волнуюсь..."
+    Lisa_00 ""
+
+# game/events/eric.rpy:1660
+translate english lisa_eric_sex_ed_practice_practice_2_261685a1:
+
+    # Eric_00 "Всё в порядке. Главное, что мы это начали и свой страх ты преодолела. Ты умница!"
+    Eric_00 ""
+
+# game/events/eric.rpy:1661
+translate english lisa_eric_sex_ed_practice_practice_2_ab0c706a:
+
+    # Lisa_00 "Честно говоря, я ещё и немного стесняюсь это делать..."
+    Lisa_00 ""
+
+# game/events/eric.rpy:1667
+translate english lisa_eric_sex_ed_practice_practice_2_4fbe525d:
+
+    # Eric_00 "Я тебя понимаю, Лиза. Вначале это всегда кажется чем-то шокирующим, но потом, когда ты к этому привыкнешь, то для тебя откроются новые горизонты."
+    Eric_00 ""
+
+# game/events/eric.rpy:1668
+translate english lisa_eric_sex_ed_practice_practice_2_14c631b6:
+
+    # Lisa_00 "Серьёзно? И я смогу, также как мама, делать это легко и просто?"
+    Lisa_00 ""
+
+# game/events/eric.rpy:1669
+translate english lisa_eric_sex_ed_practice_practice_2_f1c22a44:
+
+    # Eric_00 "Конечно! А может быть даже и лучше, чем она!"
+    Eric_00 ""
+
+# game/events/eric.rpy:1670
+translate english lisa_eric_sex_ed_practice_practice_2_8766e176:
+
+    # Lisa_00 "Правда?! А такое возможно?"
+    Lisa_00 ""
+
+# game/events/eric.rpy:1671
+translate english lisa_eric_sex_ed_practice_practice_2_3b029549:
+
+    # Eric_00 "Нет предела совершенству, Лиза! Но, пора бы уже не просто обо всём этом говорить, но и делать..."
+    Eric_00 ""
+
+# game/events/eric.rpy:1676
+translate english lisa_eric_sex_ed_practice_practice_2_3052b2cd:
+
+    # Lisa_00 "Да, Эрик. Думаю, я готова продолжить... Так значит, я просто беру его и начинаю водить вверх-вниз?"
+    Lisa_00 ""
+
+# game/events/eric.rpy:1677
+translate english lisa_eric_sex_ed_practice_practice_2_b0b304ca:
+
+    # Eric_00 "Да, моя девочка. Тебе нужно уверенно взять его в свою нежную ручку и так же нежно ею водить по нему."
+    Eric_00 ""
+
+# game/events/eric.rpy:1682
+translate english lisa_eric_sex_ed_practice_practice_2_6f50e283:
+
+    # Lisa_00 "Ладно, я сейчас попробую... Только не смейся, если я что-то буду делать не так! Хорошо?"
+    Lisa_00 ""
+
+# game/events/eric.rpy:1683
+translate english lisa_eric_sex_ed_practice_practice_2_c4af202c:
+
+    # Eric_00 "Лиза, я и не думал смеяться! Всё у тебя получится, а даже если нет, я всегда тебе подскажу. Начинай..."
+    Eric_00 ""
+
+# game/events/eric.rpy:1694
+translate english eric_about_practice_war_cd954bd0:
+
+    # Eric_13 "Ну-ка стой, Макс. Ты совсем страх потерял?"
+    Eric_13 ""
+
+# game/events/eric.rpy:1695
+translate english eric_about_practice_war_f825e035:
+
+    # Max_09 "Я тебя и не боялся!"
+    Max_09 ""
+
+# game/events/eric.rpy:1696
+translate english eric_about_practice_war_9e1dccbf:
+
+    # Eric_09 "Признаюсь, я даже похлопать могу тому, что ты смог убедить Лизу отказаться от практических занятий, которые я хотел провернуть."
+    Eric_09 ""
+
+# game/events/eric.rpy:1697
+translate english eric_about_practice_war_02ffd2cd:
+
+    # Max_07 "Ну хоть цветы не стал дарить, уже хорошо."
+    Max_07 ""
+
+# game/events/eric.rpy:1700
+translate english eric_about_practice_war_30fc7577:
+
+    # Eric_03 "Я, как это от неё услышал, сразу понял, что ты точно не уймёшься и будешь мне только мешать. Но до меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
+    Eric_03 ""
+
+# game/events/eric.rpy:1701
+translate english eric_about_practice_war_3d8756c9:
+
+    # Max_15 "Надоели уже твои угрозы. Может отвалишь?"
+    Max_15 ""
+
+# game/events/eric.rpy:1702
+translate english eric_about_practice_war_df653e82:
+
+    # Eric_04 "Ну, я угрожал, потому что считал, что ты ещё ребёнок... Но вижу, что уже нет. Так что теперь я опозорю тебя перед всей семьёй и они отправят тебя в военный лагерь."
+    Eric_04 ""
+
+# game/events/eric.rpy:1703
+translate english eric_about_practice_war_c7db9fbd:
+
+    # Max_07 "Да, я уже что-то такое слышал. Не пугает. Что-то ещё или тебя уже можно послать в задницу?"
+    Max_07 ""
+
+# game/events/eric.rpy:1704
+translate english eric_about_practice_war_b9cfdec8:
+
+    # Eric_06 "Посмотрим, как ты будешь выёживаться дальше..." nointeract
+    Eric_06 "" nointeract
+
+# game/events/eric.rpy:1710
+translate english eric_about_practice_war_6acf127b:
+
+    # Eric_03 "Я, как это от неё услышал, первым делом хотел сделать так, чтобы тебя отсюда с позором в военный лагерь отправили или даже вовсе на улицу выпнули... Это я запросто могу сделать. Но вдруг ты не настолько уж и безнадёжен!"
+    Eric_03 ""
+
+# game/events/eric.rpy:1711
+translate english eric_about_practice_war_3d8756c9_1:
+
+    # Max_15 "Надоели уже твои угрозы. Может отвалишь?"
+    Max_15 ""
+
+# game/events/eric.rpy:1712
+translate english eric_about_practice_war_aff378d9:
+
+    # Eric_04 "Ну, я угрожал, потому что считал, что ты ещё ребёнок... Но вижу, что уже нет. И если хочешь не опозориться и продолжать здесь жить, то придётся выплачивать мне \"компенсацию\". Так сказать, за моральный вред."
+    Eric_04 ""
+
+# game/events/eric.rpy:1713
+translate english eric_about_practice_war_d5748155:
+
+    # Max_08 "Вот ещё! То, что я перестал быть в твоих глазах ребёнком, не значит что я могу зарабатывать как взрослый человек!"
+    Max_08 ""
+
+# game/events/eric.rpy:1714
+translate english eric_about_practice_war_78a0c784:
+
+    # Eric_06 "А вот до меня дошли слухи от твоей же семьи, что у тебя есть свой доход... в интернете... Теперь понятно, откуда у тебя деньги на всю ту одежду, которую ты покупал."
+    Eric_06 ""
+
+# game/events/eric.rpy:1715
+translate english eric_about_practice_war_6ef6aff2:
+
+    # Max_09 "Только на неё мне и хватало денег!"
+    Max_09 ""
+
+# game/events/eric.rpy:1719
+translate english eric_about_practice_war_c0338be6:
+
+    # Eric_01 "Не знаю, как там на самом деле, Макс, но я намерен получать с тебя по 1000$ каждую неделю."
+    Eric_01 ""
+
+# game/events/eric.rpy:1722
+translate english eric_about_practice_war_dc2b96a5:
+
+    # Eric_01 "Не знаю, как там на самом деле, Макс, но я намерен получать с тебя по 500$ каждую неделю."
+    Eric_01 ""
+
+# game/events/eric.rpy:1724
+translate english eric_about_practice_war_5f1874f1:
+
+    # Max_12 "Ни хрена ты губищу раскатал!"
+    Max_12 ""
+
+# game/events/eric.rpy:1725
+translate english eric_about_practice_war_32688ff1:
+
+    # Eric_02 "За эти деньги, я пожалуй могу мириться с твоими выкрутасами. Но смотри... Этот ценник запросто вырастет, если ты решишь портить мне настроение. И платить придётся прямо сейчас!" nointeract
+    Eric_02 "" nointeract
+
+# game/events/eric.rpy:1728
+translate english eric_about_practice_war_65dfed3f:
+
+    # Eric_05 "К Лизе я больше не полезу. По крайней мере в ближайшую неделю, за которую ты мне и заплатишь. Но и ты не станешь мешать мне в моих планах на остальных дамочек в этом доме." nointeract
+    Eric_05 "" nointeract
+
+# game/events/eric.rpy:1731
+translate english eric_about_practice_war_2784de49:
+
+    # Eric_06 "Вот это деловой разговор двух мужчин! Буду ждать в комнате твоей мамы..."
+    Eric_06 ""
+
+# game/events/eric.rpy:1733
+translate english eric_about_practice_war_76a0e74b:
+
+    # Max_09 "{m}Если он и правда не полезет к Лизе, если я буду платить каждую неделю, то это уже хорошо. Но как же мне уберечь от него всех остальных? Надеюсь, я найду способ...{/m}" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:1738
+translate english eric_about_practice_war_2ff7cd4a:
+
+    # Eric_03 "Ну вот, хоть какую-то пользу от тебя можно заиметь. Для меня это конечно гроши, но учитывая, сколько на Лизу придётся потратить времени - это хорошая компенсация."
+    Eric_03 ""
+
+# game/events/eric.rpy:1739
+translate english eric_about_practice_war_ce89f953:
+
+    # Max_15 "Но смотри... Если всё равно будешь лезть к Лизе..."
+    Max_15 ""
+
+# game/events/eric.rpy:1740
+translate english eric_about_practice_war_6795eebc:
+
+    # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. Так что не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
+    Eric_04 "" nointeract
+
+# game/events/eric.rpy:1745
+translate english eric_about_practice_war_7fade9dd:
+
+    # Eric_14 "Ну так не стой и беги зарабатывай! Ты будешь платить за неделю вперёд, так что через неделю я жду от тебя удвоенную сумму. Или ты думал, что обломать мои планы на Лизу никак тебе не аукнутся?"
+    Eric_14 ""
+
+# game/events/eric.rpy:1746
+translate english eric_about_practice_war_1cacd8b8:
+
+    # Max_15 "Я постараюсь достать деньги. Но смотри... Если всё равно будешь лезть к Лизе..."
+    Max_15 ""
+
+# game/events/eric.rpy:1747
+translate english eric_about_practice_war_14f657ad:
+
+    # Eric_01 "Ты лучше беги зарабатывай, а не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
+    Eric_01 "" nointeract
+
+# game/events/eric.rpy:1753
+translate english eric_about_practice_war_7fade9dd_1:
+
+    # Eric_14 "Ну так не стой и беги зарабатывай! Ты будешь платить за неделю вперёд, так что через неделю я жду от тебя удвоенную сумму. Или ты думал, что обломать мои планы на Лизу никак тебе не аукнутся?"
+    Eric_14 ""
+
+# game/events/eric.rpy:1754
+translate english eric_about_practice_war_315c5c07:
+
+    # Max_09 "Значит, если я достану деньги, то ты больше не полезешь к Лизе?"
+    Max_09 ""
+
+# game/events/eric.rpy:1755
+translate english eric_about_practice_war_51da6fda:
+
+    # Eric_05 "По крайней мере в ближайшие две недели, за которые ты мне и заплатишь. Но и ты не станешь мешать мне в моих планах на остальных дамочек в этом доме."
+    Eric_05 ""
+
+# game/events/eric.rpy:1756
+translate english eric_about_practice_war_1cacd8b8_1:
+
+    # Max_15 "Я постараюсь достать деньги. Но смотри... Если всё равно будешь лезть к Лизе..."
+    Max_15 ""
+
+# game/events/eric.rpy:1757
+translate english eric_about_practice_war_14f657ad_1:
+
+    # Eric_01 "Ты лучше беги зарабатывай, а не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
+    Eric_01 "" nointeract
+
+# game/events/eric.rpy:1767
+translate english lisa_eric_zero_practice_war_2dcab8b5:
+
+    # Max_09 "{m}У Лизы сейчас должен состояться практический урок сексуального воспитания. Я должен проследить, чтобы моя младшая и наивная сестрёнка не перешла все границы! Она просила не мешать, а ещё лучше помыть за неё посуду...{/m}" nointeract
+    Max_09 "" nointeract
+
+# game/events/eric.rpy:1772
+translate english lisa_eric_zero_practice_war_86a0b856:
+
+    # Max_10 "{m}Нужно как можно быстрее вымыть всю посуду и бежать к своей комнате, а то Эрик может запустить свои грязные руки... А скорее всего даже не руки! Ну вот и закончил...{/m}" nointeract
+    Max_10 "" nointeract
+
+# game/events/eric.rpy:1781
+translate english lisa_eric_zero_practice_war_36c2b900:
+
+    # Max_11 "{m}Посуду лучше всё-таки помыть, а то Лиза вообще со мной ещё не скоро начнёт разговаривать...{/m}"
+    Max_11 ""
+
+translate english strings:
+
+    # game/events/eric.rpy:1614
+    old "{i}прервать Лизу и Эрика{/i}"
+    new ""
+
+    # game/events/eric.rpy:1725
+    old "И что будет, если я заплачу?"
+    new ""
+
+    # game/events/eric.rpy:1725
+    old "Да я в жизни такие деньги в руках не держал!"
+    new ""
+
+    # game/events/eric.rpy:1728
+    old "Договорились. Сейчас принесу деньги..."
+    new ""
+
+    # game/events/eric.rpy:1728
+    old "А если у меня нет таких денег?"
+    new ""
+
+    # game/events/eric.rpy:1733
+    old "{i}принести Эрику деньги{/i}"
+    new ""
+
+    # game/events/eric.rpy:1767
+    old "{i}сперва помыть посуду, а затем проследить{/i}"
+    new ""
+
+    # game/events/eric.rpy:1767
+    old "{i}проследить сразу{/i}"
+    new ""
+
+    # game/events/eric.rpy:1772
+    old "{i}быстрее смотреть, что делают Лиза и Эрик{/i}"
+    new ""
+

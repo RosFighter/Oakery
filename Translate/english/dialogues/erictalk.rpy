@@ -1439,3 +1439,72 @@ translate english EricTalkStart_3310c6d6:
 
     # Max_02 "Ну, как скажешь."
     Max_02 "Sure, whatever you want..."
+
+# TODO: Translation updated at 2021-10-07 01:03
+
+# game/dialogues/erictalk.rpy:751
+translate english Eric_tribute_936f5724:
+
+    # Eric_03 "Ну вот, хоть какую-то пользу от тебя можно заиметь."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:752
+translate english Eric_tribute_ce89f953:
+
+    # Max_15 "Но смотри... Если всё равно будешь лезть к Лизе..."
+    Max_15 ""
+
+# game/dialogues/erictalk.rpy:756
+translate english Eric_tribute_d3d293c3:
+
+    # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. И кстати, я решил поднять компенсацию за Лизу до 1000$ со следующего раза. Думаю, эта цена справедливее..."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:757
+translate english Eric_tribute_c3a2a809:
+
+    # Max_16 "Эрик, да какого чёрта?! Откуда мне знать, что ты не будешь просить каждый раз всё больше и больше?"
+    Max_16 ""
+
+# game/dialogues/erictalk.rpy:758
+translate english Eric_tribute_22a2c20e:
+
+    # Eric_06 "Нет, Макс. Уверяю, это моё последнее требование, которое касается Лизы. Жду через неделю с моими денежками." nointeract
+    Eric_06 "" nointeract
+
+# game/dialogues/erictalk.rpy:763
+translate english Eric_tribute_6795eebc:
+
+    # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. Так что не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
+    Eric_04 "" nointeract
+
+# game/dialogues/erictalk.rpy:772
+translate english Eric_tribute_no_money_2613eeb8:
+
+    # Eric_09 "Эх, Макс... Ну вот ни черта с тебя толку нет. Только подумал, что ты можешь принести хоть какую-то пользу... Свали с глах моих!"
+    Eric_09 ""
+
+# game/dialogues/erictalk.rpy:773
+translate english Eric_tribute_no_money_70d7eeaa:
+
+    # Max_10 "А что теперь с Лизой?"
+    Max_10 ""
+
+# game/dialogues/erictalk.rpy:774
+translate english Eric_tribute_no_money_0cb81108:
+
+    # Eric_01 "Лиза теперь будет меньшей из твоих проблем..."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:775
+translate english Eric_tribute_no_money_16b03463:
+
+    # Max_09 "Это ещё что значит?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:776
+translate english Eric_tribute_no_money_dd72ca96:
+
+    # Eric_13 "Скоро узнаешь. А теперь проваливай!" nointeract
+    Eric_13 "" nointeract
+

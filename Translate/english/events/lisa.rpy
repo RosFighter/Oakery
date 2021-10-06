@@ -2773,3 +2773,16 @@ translate english strings:
     # game/events/lisa.rpy:1050
     old "Извини, не удержался... Ты очень красивая!"
     new "Sorry, I couldn't resist... You're beautiful!"
+
+# TODO: Translation updated at 2021-10-07 01:03
+
+translate english strings:
+
+    # game/events/lisa.rpy:911
+    old "{i}не подглядывать{/i}"
+    new ""
+
+    # game/events/lisa.rpy:911
+    old "{i}попробовать подглядеть{/i}"
+    new ""
+
