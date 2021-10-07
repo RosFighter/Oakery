@@ -2565,3 +2565,12 @@ translate english strings:
     # game/events/eric.rpy:1772
     old "{i}быстрее смотреть, что делают Лиза и Эрик{/i}"
     new "{i}Take a closer look at what Lisa and Eric are doing{/i}"
+
+# TODO: Translation updated at 2021-10-08 00:56
+
+# game/events/eric.rpy:1623
+translate english lisa_eric_sex_ed_practice_practice_1_3ad9a6c7:
+
+    # Eric_13 "Я вижу, что ты точно не уймёшься и будешь мне только мешать. До меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
+    Eric_13 "I can see that you're certainly not going to give in and you're only going to get in my way. I've heard some rumors, Max... About your thriftiness... And I'm going to make it very difficult for you."
+

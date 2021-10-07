@@ -4274,3 +4274,123 @@ translate english strings:
     old "Я не могу устоять перед твоей грудью. Хочу её!"
     new "I can't resist your tits. I want them!"
 
+# TODO: Translation updated at 2021-10-08 00:56
+
+# game/events/kira.rpy:1940
+translate english kira_night_tv_tv_sex2_9ee6709e:
+
+    # Kira_07 "Фух, удивляюсь, как ты ещё не кончил, Макс! Ты становишься всё выносливее... Скоро я перестану за тобой поспевать!"
+    Kira_07 ""
+
+# game/events/kira.rpy:1941
+translate english kira_night_tv_tv_sex2_ec39df3a:
+
+    # Max_04 "Брось, тётя Кира! Секс с тобой - сплошное наслаждение..."
+    Max_04 ""
+
+# game/events/kira.rpy:1944
+translate english kira_night_tv_tv_sex2_5cd76013:
+
+    # Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил прямо в меня! Ничего, что тебе придётся снова любоваться моей попкой?"
+    Kira_02 ""
+
+# game/events/kira.rpy:1945
+translate english kira_night_tv_tv_sex2_4e28d11a:
+
+    # Max_03 "Вот чёрт, это заставит меня кончить куда быстрее!"
+    Max_03 ""
+
+# game/events/kira.rpy:1948
+translate english kira_night_tv_tv_sex2_dcce85b2:
+
+    # Kira_11 "Охх... Да... Тогда я буду опускаться на твой член очень медленно! Чтобы ты прочувствовал всю нежность моей мокрой киски... Ухх, как это обалденно! Ммм... Хочешь быстрее?"
+    Kira_11 ""
+
+# game/events/kira.rpy:1949
+translate english kira_night_tv_tv_sex2_7c90ec0a:
+
+    # Max_20 "Д-а-а... У тебя невероятная попка, тётя Кира! Давай ещё быстрее... Кажется, я уже близко..."
+    Max_20 ""
+
+# game/events/kira.rpy:1952
+translate english kira_night_tv_tv_sex2_9385ec1b:
+
+    # Kira_12 "О да! Макс, не сдерживай себя. Можешь кончать прямо в меня! Ох, как хорошо! Ахх..." nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:1957
+translate english kira_night_tv_tv_sex2_88fc2651:
+
+    # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+    Kira_07 ""
+
+# game/events/kira.rpy:1958
+translate english kira_night_tv_tv_sex2_25fcd1cd:
+
+    # Max_05 "И мне тоже! Значит, до следующего раза?!"
+    Max_05 ""
+
+# game/events/kira.rpy:2035
+translate english kira_night_tv_missionary_9ee6709e:
+
+    # Kira_07 "Фух, удивляюсь, как ты ещё не кончил, Макс! Ты становишься всё выносливее... Скоро я перестану за тобой поспевать!"
+    Kira_07 ""
+
+# game/events/kira.rpy:2036
+translate english kira_night_tv_missionary_ec39df3a:
+
+    # Max_04 "Брось, тётя Кира! Секс с тобой - сплошное наслаждение..."
+    Max_04 ""
+
+# game/events/kira.rpy:2039
+translate english kira_night_tv_missionary_5cf6f999:
+
+    # Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил прямо в меня! Ты же не против, если я буду сверху?"
+    Kira_02 ""
+
+# game/events/kira.rpy:2040
+translate english kira_night_tv_missionary_d4453f2e:
+
+    # Max_03 "О да, прямо то, что надо!"
+    Max_03 ""
+
+# game/events/kira.rpy:2043
+translate english kira_night_tv_missionary_0c9eb40f:
+
+    # Kira_11 "Охх... Да... Гарантирую - долго ты не продержишься! Ведь я оттрахаю тебя без всяких нежностей... Жёстко и страстно! Ммм... Хочешь ещё сильнее?"
+    Kira_11 ""
+
+# game/events/kira.rpy:2044
+translate english kira_night_tv_missionary_e712cf57:
+
+    # Max_20 "Ты обалденная, тётя Кира! Давай ещё быстрее... Кажется, я уже близко..."
+    Max_20 ""
+
+# game/events/kira.rpy:2047
+translate english kira_night_tv_missionary_9385ec1b:
+
+    # Kira_12 "О да! Макс, не сдерживай себя. Можешь кончать прямо в меня! Ох, как хорошо! Ахх..." nointeract
+    Kira_12 "" nointeract
+
+# game/events/kira.rpy:2052
+translate english kira_night_tv_missionary_88fc2651:
+
+    # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+    Kira_07 ""
+
+# game/events/kira.rpy:2053
+translate english kira_night_tv_missionary_25fcd1cd:
+
+    # Max_05 "И мне тоже! Значит, до следующего раза?!"
+    Max_05 ""
+
+translate english strings:
+
+    # game/events/kira.rpy:1905
+    old "Давай сменим позу, тётя Кира..."
+    new ""
+
+    # game/events/kira.rpy:1952
+    old "{i}кончить в Киру{/i}"
+    new ""
+
