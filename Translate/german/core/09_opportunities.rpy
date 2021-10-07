@@ -1873,3 +1873,15 @@ translate german strings:
     old "У меня наконец-то получилось уговорить Алису на конфету с ликёром прямо перед тем, как мы пошли к её комнате! Правда, всё прошло не так хорошо, как могло бы. По крайней мере, мне так кажется... Но с учётом, что меня ожидало без этой волшебной конфеты - её торчащие из под костюма сиськи, которыми она меня дразнила, приятно порадовали мои глаза! Даже интересно, что будет, если я стану вести себя с ней поувереннее, когда она спросит, что я мечтал с ней вытворять в душе? И это обязательно нужно будет проверить, главное снова уговорить её съесть конфетку!"
     new "Ich habe es schließlich geschafft, Alice zu einem Likör-Bonbon zu verführen, kurz bevor wir auf ihr Zimmer gegangen sind! Es ist nicht so gut gelaufen, wie es hätte sein können. Zumindest glaube ich nicht, dass es so war... Aber wenn ich bedenke, was mich ohne dieses magische Bonbon erwartete - ihre Brüste, die unter ihrem Kostüm hervorlugten und mit denen sie mich reizte, gefielen mir! Ich fragte mich sogar, was passieren würde, wenn ich anfangen würde, ihr gegenüber selbstbewusster aufzutreten, wenn sie mich fragte, wovon ich träumte, wenn ich mit ihr duschen würde. Und das muss auf jeden Fall getestet werden, Hauptsache, sie isst die Süßigkeiten wieder!"
 
+# TODO: Translation updated at 2021-10-08 00:56
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как я умудрился добиться от Алисы фут-джоба в гостиной, не давая ей ни одной конфеты с ликёром, дела с приватными наказаниями за подглядывания в душе пошли в гору. Не без помощи конфеты, но Алиса теперь не обходит мой член стороной и даже не прочь присесть на него... А вот дальше, чем больше у меня получается ей угождать, тем больше она теряет голову!"
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Следует уделять больше внимания ночным развлечениям с тётей Кирой, как в плане поцелуев, так и секса..."
+    new ""
+

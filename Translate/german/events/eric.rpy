@@ -2564,3 +2564,11 @@ translate german strings:
     old "{i}быстрее смотреть, что делают Лиза и Эрик{/i}"
     new "{i}schnell beobachten, was Lisa und Eric tun{/i}"
 
+# TODO: Translation updated at 2021-10-08 00:56
+
+# game/events/eric.rpy:1623
+translate german lisa_eric_sex_ed_practice_practice_1_3ad9a6c7:
+
+    # Eric_13 "Я вижу, что ты точно не уймёшься и будешь мне только мешать. До меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
+    Eric_13 "Ich kann sehen, dass du definitiv nicht verschwinden wirst und mir nur im Weg stehst. Ich habe ein paar Gerüchte gehört, Max... Über deine \"Sparsamkeit\"... ich werde es dir sehr schwer machen."
+
