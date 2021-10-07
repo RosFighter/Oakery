@@ -2780,9 +2780,9 @@ translate german strings:
 
     # game/events/lisa.rpy:911
     old "{i}не подглядывать{/i}"
-    new ""
+    new "{i}kein Ausspähen{/i}"
 
     # game/events/lisa.rpy:911
     old "{i}попробовать подглядеть{/i}"
-    new ""
+    new "{i}einen kurzen Blick riskieren{/i}"
 

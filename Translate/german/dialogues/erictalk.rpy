@@ -1446,65 +1446,65 @@ translate german EricTalkStart_3310c6d6:
 translate german Eric_tribute_936f5724:
 
     # Eric_03 "Ну вот, хоть какую-то пользу от тебя можно заиметь."
-    Eric_03 ""
+    Eric_03 "Wenigstens kann ich etwas aus dir herausholen."
 
 # game/dialogues/erictalk.rpy:752
 translate german Eric_tribute_ce89f953:
 
     # Max_15 "Но смотри... Если всё равно будешь лезть к Лизе..."
-    Max_15 ""
+    Max_15 "Aber sieh mal... Wenn du dich sowieso mit Lisa einläßt..."
 
 # game/dialogues/erictalk.rpy:756
 translate german Eric_tribute_d3d293c3:
 
     # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. И кстати, я решил поднять компенсацию за Лизу до 1000$ со следующего раза. Думаю, эта цена справедливее..."
-    Eric_04 ""
+    Eric_04 "Solange du zahlst, Max, und mir nicht auf die Nerven gehst, ist mir Lisa egal. Übrigens habe ich beschlossen, Lisas Prämie beim nächsten Mal auf 1.000$ zu erhöhen. Ich denke, das ist ein fairer Preis..."
 
 # game/dialogues/erictalk.rpy:757
 translate german Eric_tribute_c3a2a809:
 
     # Max_16 "Эрик, да какого чёрта?! Откуда мне знать, что ты не будешь просить каждый раз всё больше и больше?"
-    Max_16 ""
+    Max_16 "Eric, was zum Teufel?! Woher weiß ich, dass du nicht jedes Mal mehr und mehr verlangen wirst?"
 
 # game/dialogues/erictalk.rpy:758
 translate german Eric_tribute_22a2c20e:
 
     # Eric_06 "Нет, Макс. Уверяю, это моё последнее требование, которое касается Лизы. Жду через неделю с моими денежками." nointeract
-    Eric_06 "" nointeract
+    Eric_06 "Nein, Max. Ich versichere dir, dass dies meine letzte Forderung ist, was Lisa betrifft. Wir sehen uns in einer Woche mit meinem Geld." nointeract
 
 # game/dialogues/erictalk.rpy:763
 translate german Eric_tribute_6795eebc:
 
     # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. Так что не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
-    Eric_04 "" nointeract
+    Eric_04 "Solange du zahlst, Max, und mir nicht auf die Nerven gehst, ist mir Lisa egal. Mach Dir also nicht ins Hemd, sonst gibts noch ein paar Hundert dazu! Verschwinde. Wir sehen uns in einer Woche." nointeract
 
 # game/dialogues/erictalk.rpy:772
 translate german Eric_tribute_no_money_2613eeb8:
 
     # Eric_09 "Эх, Макс... Ну вот ни черта с тебя толку нет. Только подумал, что ты можешь принести хоть какую-то пользу... Свали с глах моих!"
-    Eric_09 ""
+    Eric_09 "Oh, Max... Du hast keinen Nutzen für mich. Gerade als ich dachte, du könntest mir etwas Gutes tun... Geh mir aus den Augen!"
 
 # game/dialogues/erictalk.rpy:773
 translate german Eric_tribute_no_money_70d7eeaa:
 
     # Max_10 "А что теперь с Лизой?"
-    Max_10 ""
+    Max_10 "Was ist jetzt mit Lisa?"
 
 # game/dialogues/erictalk.rpy:774
 translate german Eric_tribute_no_money_0cb81108:
 
     # Eric_01 "Лиза теперь будет меньшей из твоих проблем..."
-    Eric_01 ""
+    Eric_01 "Lisa wird jetzt dein geringstes Problem sein..."
 
 # game/dialogues/erictalk.rpy:775
 translate german Eric_tribute_no_money_16b03463:
 
     # Max_09 "Это ещё что значит?"
-    Max_09 ""
+    Max_09 "Was soll das bedeuten?"
 
 # game/dialogues/erictalk.rpy:776
 translate german Eric_tribute_no_money_dd72ca96:
 
     # Eric_13 "Скоро узнаешь. А теперь проваливай!" nointeract
-    Eric_13 "" nointeract
+    Eric_13 "Das wirst du noch früh genug herausfinden. Und jetzt raus!" nointeract
 
