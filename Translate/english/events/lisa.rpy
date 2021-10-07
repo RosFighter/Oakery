@@ -2780,9 +2780,8 @@ translate english strings:
 
     # game/events/lisa.rpy:911
     old "{i}не подглядывать{/i}"
-    new ""
+    new "{i}Don't peek{/i}"
 
     # game/events/lisa.rpy:911
     old "{i}попробовать подглядеть{/i}"
-    new ""
-
+    new "{i}Peek{/i}"

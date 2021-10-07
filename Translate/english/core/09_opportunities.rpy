@@ -1872,5 +1872,4 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "У меня наконец-то получилось уговорить Алису на конфету с ликёром прямо перед тем, как мы пошли к её комнате! Правда, всё прошло не так хорошо, как могло бы. По крайней мере, мне так кажется... Но с учётом, что меня ожидало без этой волшебной конфеты - её торчащие из под костюма сиськи, которыми она меня дразнила, приятно порадовали мои глаза! Даже интересно, что будет, если я стану вести себя с ней поувереннее, когда она спросит, что я мечтал с ней вытворять в душе? И это обязательно нужно будет проверить, главное снова уговорить её съесть конфетку!"
-    new ""
-
+    new "I finally managed to talk Alice into some liquor and candy right before we went to her room! It didn't go as well as it could have. At least, I don't think it did... But considering what awaited me without that magic candy - her tits sticking out from under her costume, which she teased me with, pleased my eyes! I even wondered what would happen if I started acting more confident with her when she asked me what I dreamed of doing in the shower with her? And that will definitely have to be tested, I need to to get her some candy again!"

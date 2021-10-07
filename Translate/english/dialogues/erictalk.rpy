@@ -1446,65 +1446,64 @@ translate english EricTalkStart_3310c6d6:
 translate english Eric_tribute_936f5724:
 
     # Eric_03 "Ну вот, хоть какую-то пользу от тебя можно заиметь."
-    Eric_03 ""
+    Eric_03 "Well, at least I can get some use out of you."
 
 # game/dialogues/erictalk.rpy:752
 translate english Eric_tribute_ce89f953:
 
     # Max_15 "Но смотри... Если всё равно будешь лезть к Лизе..."
-    Max_15 ""
+    Max_15 "But look... If you're going to mess with Lisa anyway..."
 
 # game/dialogues/erictalk.rpy:756
 translate english Eric_tribute_d3d293c3:
 
     # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. И кстати, я решил поднять компенсацию за Лизу до 1000$ со следующего раза. Думаю, эта цена справедливее..."
-    Eric_04 ""
+    Eric_04 "As long as you pay and and don't piss me off, I don't care about Lisa. And by the way, I've decided to up the bill to $1,000 next time. I think that's a fairer price..."
 
 # game/dialogues/erictalk.rpy:757
 translate english Eric_tribute_c3a2a809:
 
     # Max_16 "Эрик, да какого чёрта?! Откуда мне знать, что ты не будешь просить каждый раз всё больше и больше?"
-    Max_16 ""
+    Max_16 "Eric, what the hell?! How do I know you won't ask for more and more every time?"
 
 # game/dialogues/erictalk.rpy:758
 translate english Eric_tribute_22a2c20e:
 
     # Eric_06 "Нет, Макс. Уверяю, это моё последнее требование, которое касается Лизы. Жду через неделю с моими денежками." nointeract
-    Eric_06 "" nointeract
+    Eric_06 "Don't worry, I gaurantee that will be my last demand concerning Lisa. I'll see you in a week with my money." nointeract
 
 # game/dialogues/erictalk.rpy:763
 translate english Eric_tribute_6795eebc:
 
     # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. Так что не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
-    Eric_04 "" nointeract
+    Eric_04 "As long as you pay and and don't piss me off, I don't care about Lisa. So don't get your panties in a twist, or I'll throw in a couple hundred! Get out of here. I'll see you in a week." nointeract
 
 # game/dialogues/erictalk.rpy:772
 translate english Eric_tribute_no_money_2613eeb8:
 
     # Eric_09 "Эх, Макс... Ну вот ни черта с тебя толку нет. Только подумал, что ты можешь принести хоть какую-то пользу... Свали с глах моих!"
-    Eric_09 ""
+    Eric_09 "Oh, Max... You're useless as hell. Just when I thought you could do me some good... Get out of my face!"
 
 # game/dialogues/erictalk.rpy:773
 translate english Eric_tribute_no_money_70d7eeaa:
 
     # Max_10 "А что теперь с Лизой?"
-    Max_10 ""
+    Max_10 "And what about Lisa?"
 
 # game/dialogues/erictalk.rpy:774
 translate english Eric_tribute_no_money_0cb81108:
 
     # Eric_01 "Лиза теперь будет меньшей из твоих проблем..."
-    Eric_01 ""
+    Eric_01 "Lisa will be the least of your problems..."
 
 # game/dialogues/erictalk.rpy:775
 translate english Eric_tribute_no_money_16b03463:
 
     # Max_09 "Это ещё что значит?"
-    Max_09 ""
+    Max_09 "What the hell does that mean?"
 
 # game/dialogues/erictalk.rpy:776
 translate english Eric_tribute_no_money_dd72ca96:
 
     # Eric_13 "Скоро узнаешь. А теперь проваливай!" nointeract
-    Eric_13 "" nointeract
-
+    Eric_13 "You'll find out soon enough. Now get out!" nointeract

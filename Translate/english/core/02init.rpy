@@ -616,9 +616,8 @@ translate english strings:
 
     # game/core/02init.rpy:128
     old "Вот деньги, чтобы ты не лез к Лизе..."
-    new ""
+    new "Here's the money to keep you away from Lisa..."
 
     # game/core/02init.rpy:128
     old "У меня нет денег, чтобы ты не лез к Лизе."
-    new ""
-
+    new "I don't have the money to keep you away from Lisa."
