@@ -1891,17 +1891,17 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! Эрик хорошо запудрил мозги Лизе, я даже не смог её отговорить от этого. Остаётся разве что помешать им... Если бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что практические занятия с Лизой - это последнее, о чём он будет думать. Главное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт. Ну, а уже если не получится, то я вмешаюсь в их практику лично. Проблем из-за этого мне точно не избежать, но что поделать..."
-    new ""
+    new "Lisa hatte mich gewarnt, dass Eric ihr nun, da der theoretische Unterricht vorbei war, ohne Mom Sexualkundeunterricht erteilen würde. Und so wie ich das verstanden habe, sollte der theoretische Teil durch praktischen Unterricht ergänzt werden! Eric hat Lisa ziemlich gut im Griff, ich konnte es ihr nicht einmal ausreden. Das Einzige, was noch zu tun ist, ist, sie aufzuhalten... Wenn ich Eric so etwas wie ein Abführ- oder Beruhigungsmittel ins Essen mischen könnte, dann wäre es gut möglich, dass er gar nicht mehr an die Übungsstunden mit Lisa denkt. Das Wichtigste ist, es nicht mehr als einmal pro Woche zu tun, sonst findet er es heraus. Und wenn das nicht gelingt, werde ich mich persönlich in ihren Unterricht einmischen. Ich kann es nicht vermeiden, dafür Ärger zu bekommen, aber was sollte ich auch sonst machen..."
 
     # game/core/09_opportunities.rpy:4
     old "Эрик собирается проводить практические занятия с Лизой по понедельникам. Чтобы их сорвать, нужно прикупить слабительное или успокоительное, а затем помочь Алисе накрыть на стол, заодно подсыпав одно из этих средств..."
-    new ""
+    new "Eric wird montags Übungsstunden mit Lisa abhalten. Um sie zu stören, muss ich ein Abführ- oder Beruhigungsmittel kaufen und dann Alice helfen, den Tisch zu decken, damit ich das Mittel einsetzen kann..."
 
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы. Благо, Лиза прислушивается ко мне и у меня получилось убедить её, что на это лучше не соглашаться. Но вряд ли Эрик этому обрадуется. Меня наверняка ждут проблемы из-за этого, но что поделать... Было бы неплохо хоть немного снизить его активную деятельность в нашем доме! Если бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что лезть к моим сёстрам - это последнее, о чём он будет думать. Главное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт."
-    new ""
+    new "Lisa kam zu mir, um sich beraten zu lassen, denn es stellte sich heraus, dass Eric nach dem theoretischen Unterricht vorgeschlagen hatte, all dies im praktischen Unterricht ohne die Anwesenheit von Mom zu vertiefen. Zum Glück hörte Lisa auf mich, und ich konnte sie davon überzeugen, dass es besser ist, dem nicht zuzustimmen. Aber ich glaube nicht, dass Eric darüber glücklich sein wird. Ich werde dafür wahrscheinlich Ärger bekommen, aber was soll ich machen... Es wäre schön, wenn seine Aktivitäten in unserem Haus ein wenig zurückgehen würden! Wenn ich Eric etwas wie ein Abführ- oder Beruhigungsmittel ins Essen mischen könnte, wäre vielleicht das Letzte, woran er denken würde, sich mit meinen Schwestern zu befassen. Das Wichtigste ist, es nicht öfter als einmal pro Woche tun, sonst findet er es heraus."
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы Эрик меньше лез к моим сёстрам, нужно прикупить слабительное или успокоительное, а затем помочь Алисе накрыть на стол, заодно подсыпав одно из этих средств..."
-    new ""
+    new "Damit Eric meinen Schwestern nicht länger zu nahe kommt, muss ich ein Abführ- oder Beruhigungsmittel kaufen und dann Alice helfen, den Tisch zu decken, damit ich das Mittel einsetzen kann..."
 
