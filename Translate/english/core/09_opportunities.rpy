@@ -1880,9 +1880,8 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "После того, как я умудрился добиться от Алисы фут-джоба в гостиной, не давая ей ни одной конфеты с ликёром, дела с приватными наказаниями за подглядывания в душе пошли в гору. Не без помощи конфеты, но Алиса теперь не обходит мой член стороной и даже не прочь присесть на него... А вот дальше, чем больше у меня получается ей угождать, тем больше она теряет голову!"
-    new ""
+    new "After I managed to get Alice to do a footjob in the living room without giving her a single candy and liquor, things with private punishments for peeking in the shower went uphill. Not without the help of candy, but Alice now doesn't go around my cock and doesn't even mind squatting on it... But further on, the more I manage to please her, the more she loses her head!"
 
     # game/core/09_opportunities.rpy:4
     old "Следует уделять больше внимания ночным развлечениям с тётей Кирой, как в плане поцелуев, так и секса..."
-    new ""
-
+    new "More attention should be paid to the nightly entertainment with Aunt Kira, both in terms of kissing and sex..."
