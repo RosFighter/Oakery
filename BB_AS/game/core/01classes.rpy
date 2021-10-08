@@ -1112,6 +1112,7 @@ init python:
         cur_movies      = []        # список (выбранный фильм, фильм Кошмаров, фильм Пятницы)
         mistres_pun     = False     # в качестве наказания за подглядывания теперь доминирует Алиса
         trick           = False     # пакость Эрику использована в текущую неделю
+        eric_wallet     = 0         # стадия события с кошельком Эрика
 
         # счетчики
         breakfast       = 0         # завтраков
@@ -1146,6 +1147,7 @@ init python:
             self.cur_movies         = []
             self.mistres_pun        = False
             self.trick              = False
+            self.eric_wallet        = 0
 
             self.breakfast          = 0
             self.dinner             = 0
@@ -1465,7 +1467,7 @@ init python:
         Eric_laceling   = CutEvent('20:00', (6, ), 'Eric_talk_about_lace_lingerie', "разговор с Эриком, если Макс подарил бельё Алисе", "all([weekday==6, 'sexbody2' in alice.gifts, 4<alice.dcv.intrusion.stage<7])")
 
         MeetingOlivia   = CutEvent('16:00', (3, ), 'olivia_first_meeting', "Оливия приходит на виллу в первый раз", "all([weekday==3, lisa.flags.crush==11, lisa.dcv.feature.done])", cut=True)
-        Night_Olivia    = CutEvent('00:00', (6, ), 'olivia_night_visit', "Оливия приходит на ночные посиделки", "all([weekday==6, olivia_nightvisits()])", cut=True)
+        Night_Olivia    = CutEvent('00:00', (6, ), 'olivia_night_visit', "Оливия приходит на ночные посиделки", "olivia_nightvisits()", cut=True)
 
         Lisa_ab_Alex1   = CutEvent('20:00', (3, ), 'about_alex1', "1-й разговор с Лизой о подкате Алекса", "all([olivia.dcv.feature.stage==5, lisa.flags.crush==12])")
         Lisa_ab_Alex2   = CutEvent('20:00', (5, ), 'about_alex2', "2-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==13, lisa.dcv.feature.done])")
@@ -1473,9 +1475,14 @@ init python:
 
         Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
 
-        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])") # 'kira' in chars and
+        Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])")
 
-        Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")    # в ближайший четверг, если закончились все уроки Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
+        # в ближайший четверг, если закончились все уроки Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
+        Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")
+        # состоялся разговор с Лизой о практике, война с Эриком, таблетки не подсыпаны, влияние Эрика было выше
+        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])"),
+        # состоялся разговор с Лизой о практике, война с Эриком,, влияние Эрика было ниже
+        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4])"),
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки
@@ -1728,6 +1735,32 @@ init python:
             self.time_left   = timer_range - .1
             self.timer_range = timer_range - .1
             self.timer_jump  = timer_jump
+
+    class Obligation():
+        volume  = 0
+        debt    = 0
+        paid    = False
+
+        def __init__(self, volume=0, debt=0):
+            self.volume = volume
+            self.debt = debt
+            self.paid = False
+
+        def get_debt(self):
+            return 0 if self.paid else self.volume + self.debt
+
+        def pay(self):
+            if self.volume + self.debt <= mgg.money:
+                mgg.pay(self.volume + self.debt)
+                self.debt = 0
+                self.paid = True
+                return True
+            else:
+                return False
+
+        def reset(self):
+            self.paid = False
+
 
     # class Chip():
     #     def __init__(self, nm, pr, cv, lv, dv, mv, dd=None):

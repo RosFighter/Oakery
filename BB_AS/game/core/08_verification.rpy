@@ -111,10 +111,10 @@ init python:
 
         rez = False
 
-        if  all([weekday==6, olivia.dcv.feature.stage>3, not olivia.dcv.special.stage]):
+        if  all([olivia.dcv.feature.stage>3, not olivia.dcv.special.stage]):    # weekday==6,
             # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, ночных посиделок ещё не было
             rez = True
-        elif all([weekday==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):
+        elif all([olivia.dcv.feature.stage>4, olivia.dcv.special.done]):        # weekday==6,
             # ночь с пятницы на субботу, состоялась беседа после первых ночных посиделках, прошел откат ночных посиделок
             rez = True
 

@@ -63,7 +63,7 @@ define mems = [
             Memories('massage_sunscreen', 'alice-massagesun-01', 'set_sunscreen', _("Давай я нанесу крем")),
             Memories('alice_talk_tv', 'alice-massagetv-01', 'set_talk_tv', _("Ножкам приятно")),
             Memories('alice_talk_tv_massage_next', 'alice-massagetv-02', 'set_advanced_massage1', _("Помассирую не только ножки"), var="'advanced_massage1' in persistent.mems_var"),
-            Memories('advanced_massage1', 'alice-massagetv-03', 'set_advanced_massage2', _("Могу не только руками"), var="renpy.seen_label('advanced_massage1.no_rush')"),
+            Memories('advanced_massage1', 'alice-massagetv-03', 'set_advanced_massage2', _("Могу не только руками"), var="renpy.seen_label('advanced_massage1_no_rush')"),
             Memories('advanced_massage1_reciprocity', 'alice-massagetv-04', 'set_advanced_massage3', _("Ответная благодарность")),
             Memories('Lisa_HomeWork.first_foot_mass', 'lisa-massage-01', 'set_foot_mass', _("Первый массаж ног")),
             Memories('liza_hand_mass', 'lisa-massage-02', 'set_hand_mass', _("Внимание к пальчикам")),
@@ -130,6 +130,7 @@ define mems = [
 define photo_album = [
         ("01-Kira", _("Порно-портфолио для Киры")),
         ("02-Kira", _("Немного БДСМ от Киры")),
+        # ("03-Kira", _("Тройничок")),
         ("01-Alice", _("Первые снимки для блога Алисы")),
     ]
 

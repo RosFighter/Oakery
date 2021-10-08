@@ -23,6 +23,14 @@ default ctd = Countdown(5, '')  #{'time_left':4.9, 'timer_range':4.9, 'timer_jum
 
 ################################################################################
 
+label ClearVariables:
+    # удалить имеющиеся переменные
+
+    python:
+        for k in ['chars', 'items', 'poss', 'mgg', 'flags', 'infl', 'house']:
+            if k in globals():
+                del globals()[k]
+
 ##  блоки установки начальных значений переменных
 label InitHouse: # стартовая инициация виллы
     python:
@@ -230,6 +238,7 @@ label AddEric:
     $ infl[ann].freeze = False
 
     $ items['hide_cam'].unblock()
+    $ eric_obligation = Obligation()
     return
 
 

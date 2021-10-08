@@ -1866,3 +1866,43 @@ translate english strings:
     old "Нет смысла что-либо затевать в отношении Алисиной попки, пока её хотя бы раз не накажут голой..."
     new "There's no point doing anything about Alice's ass until she's been punished naked at least once"
 
+# TODO: Translation updated at 2021-10-07 01:03
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "У меня наконец-то получилось уговорить Алису на конфету с ликёром прямо перед тем, как мы пошли к её комнате! Правда, всё прошло не так хорошо, как могло бы. По крайней мере, мне так кажется... Но с учётом, что меня ожидало без этой волшебной конфеты - её торчащие из под костюма сиськи, которыми она меня дразнила, приятно порадовали мои глаза! Даже интересно, что будет, если я стану вести себя с ней поувереннее, когда она спросит, что я мечтал с ней вытворять в душе? И это обязательно нужно будет проверить, главное снова уговорить её съесть конфетку!"
+    new "I finally managed to talk Alice into some liquor and candy right before we went to her room! It didn't go as well as it could have. At least, I don't think it did... But considering what awaited me without that magic candy - her tits sticking out from under her costume, which she teased me with, pleased my eyes! I even wondered what would happen if I started acting more confident with her when she asked me what I dreamed of doing in the shower with her? And that will definitely have to be tested, I need to to get her some candy again!"
+
+# TODO: Translation updated at 2021-10-08 00:56
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как я умудрился добиться от Алисы фут-джоба в гостиной, не давая ей ни одной конфеты с ликёром, дела с приватными наказаниями за подглядывания в душе пошли в гору. Не без помощи конфеты, но Алиса теперь не обходит мой член стороной и даже не прочь присесть на него... А вот дальше, чем больше у меня получается ей угождать, тем больше она теряет голову!"
+    new "After I managed to get Alice to do a footjob in the living room without giving her a single candy and liquor, things with private punishments for peeking in the shower went uphill. Not without the help of candy, but Alice now doesn't go around my cock and doesn't even mind squatting on it... But further on, the more I manage to please her, the more she loses her head!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Следует уделять больше внимания ночным развлечениям с тётей Кирой, как в плане поцелуев, так и секса..."
+    new "More attention should be paid to the nightly entertainment with Aunt Kira, both in terms of kissing and sex..."
+
+# TODO: Translation updated at 2021-10-08 10:11
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! Эрик хорошо запудрил мозги Лизе, я даже не смог её отговорить от этого. Остаётся разве что помешать им... Если бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что практические занятия с Лизой - это последнее, о чём он будет думать. Главное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт. Ну, а уже если не получится, то я вмешаюсь в их практику лично. Проблем из-за этого мне точно не избежать, но что поделать..."
+    new "Lisa warned me that now that their theoretical classes were over, Eric would be giving her sex education lessons without my mother's involvement. And, as I understood it, they were going to reinforce the theoretical part with practical lessons! Eric has done a good job of messing with Lisa's mind, I haven't even been able to talk her out of it. The only thing left to do is to stop them... If I could slip something like a laxative or a sedative into Eric's food, then it is possible that the practical lessons with Lisa are the last thing he will think about. The main thing is to arrange such nastiness no more than once a week, otherwise he will understand everything. Well, and if it does not work, then I will interfere in their practice personally. I can't avoid problems because of that, but what can I do..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эрик собирается проводить практические занятия с Лизой по понедельникам. Чтобы их сорвать, нужно прикупить слабительное или успокоительное, а затем помочь Алисе накрыть на стол, заодно подсыпав одно из этих средств..."
+    new "Eric is going to have practice sessions with Lisa on Mondays. To disrupt them, you have to buy a laxative or sedative, and then help Alice set the table by slipping one of these remedies..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы. Благо, Лиза прислушивается ко мне и у меня получилось убедить её, что на это лучше не соглашаться. Но вряд ли Эрик этому обрадуется. Меня наверняка ждут проблемы из-за этого, но что поделать... Было бы неплохо хоть немного снизить его активную деятельность в нашем доме! Если бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что лезть к моим сёстрам - это последнее, о чём он будет думать. Главное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт."
+    new "Lisa came to me for advice, because, as it turned out, after finishing their theoretical lessons, Eric suggested that she consolidate all this in practical lessons without my mother's participation. Fortunately, Lisa listens to me, and I was able to convince her that it was better not to agree to this. But I don't think Eric will be happy about it. I'll probably get in trouble for this, but what can I do... It would be nice to reduce his activity in our house a little bit! If I could slip something like a laxative or a sedative into Eric's food, it might be the last thing he'd think about, messing with my sisters. The main thing is not to do this more than once a week, or he'll figure it out."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чтобы Эрик меньше лез к моим сёстрам, нужно прикупить слабительное или успокоительное, а затем помочь Алисе накрыть на стол, заодно подсыпав одно из этих средств..."
+    new "To make Eric less of a nuisance to my sisters, I need to buy a laxative or a sedative, and then help Alice set the table by slipping one of these remedies..."
+

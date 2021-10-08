@@ -1,6 +1,7 @@
 
 label after_dinner:
     $ dishes_washed = False  # посуда грязная, кто-то должен её помыть
+    $ lisa.daily.dishes = 0
     $ spent_time = 60
 
     # проверим, не пора ли начинать блог с Эриком
@@ -47,26 +48,6 @@ label after_dinner:
             else:
                 # Макс специально сделал ошибку
                 call conversation_after_dinner(7) from _call_conversation_after_dinner_8
-
-        # Лизу наказали
-        # if all([punlisa[0][0] == 1, len(punlisa) >= 7, ColumnSum(punlisa, 1, 7) == 2,
-        #             poss['sg'].st() == 2, lisa.flags.truehelp>5]):
-        #     # Макс подставил Лизу, за последние 7 дней это вторая двойка, Макс на "хорошей" ветке и успел 6 раз сделать задания за Лизу
-        #     call conversation_after_dinner(5) from _call_conversation_after_dinner_4
-        # elif all([punlisa[0][0] == 1, ColumnSum(punlisa, 4, 7) >= 1000, poss['sg'].st() > 2]):
-        #     # если Макс подставил Лизу и её подозрение достигло 100% (1000)
-        #     call conversation_after_dinner(4) from _call_conversation_after_dinner
-        # elif all([len(punlisa) >= 7, not ColumnSum(punlisa, 0, 6), lisa.dcv.other.done, not lisa.dcv.other.stage]):
-        #     # если Макс не помогал Лизе 5 раз и разговора после ужина не было больше недели
-        #     if lisa.flags.help == 0 and poss['sg'].st() <= 2:
-        #         # совсем не помогал
-        #         call conversation_after_dinner(1) from _call_conversation_after_dinner_1
-        #     elif poss['sg'].st() == 2:
-        #         # безвозмездно помогал, но перестал
-        #         call conversation_after_dinner(2) from _call_conversation_after_dinner_2
-        #     elif poss['sg'].st() > 2 and poss['seduction'].st() < 20:
-        #         # обещал помогать за услуги, но не стал или перестал
-        #         call conversation_after_dinner(3) from _call_conversation_after_dinner_3
 
     jump Waiting
 

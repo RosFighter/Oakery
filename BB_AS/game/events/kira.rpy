@@ -88,7 +88,8 @@ label kira_bath:
                 Max_08 "Что? Она зовёт меня к себе?! Да ладно! Как-то мне это не очень нравится..."
                 "{i}идти к Кире{/i}":
                     $ kira.flags.m_foot = 1
-                    $ poss['massage'].open(5)
+                    if not _in_replay:
+                        $ poss['massage'].open(5)
                     jump .kira_mass_bath_first
 
         else:
@@ -1934,6 +1935,45 @@ label kira_night_tv:
                         show Kira tv-sex 02-03
                         jump .minet_after_sex
 
+                "Давай сменим позу, тётя Кира..." if kira.dcv.photo.stage > 2:
+                    # tv-max&kira-sex03-01-f + tv-max&kira-sex02-03
+                    scene BG tv-sex03-01
+                    show Kira tv-sex 02-03
+                    Kira_07 "Фух, удивляюсь, как ты ещё не кончил, Макс! Ты становишься всё выносливее... Скоро я перестану за тобой поспевать!"
+                    Max_04 "Брось, тётя Кира! Секс с тобой - сплошное наслаждение..."
+
+                    # tv-mass-07 + tv-bj-01-max-01a-kira-01a
+                    scene BG tv-mass-07
+                    show Kira tv-game bj-01bb
+                    Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил прямо в меня! Ничего, что тебе придётся снова любоваться моей попкой?"
+                    Max_03 "Вот чёрт, это заставит меня кончить куда быстрее!"
+
+                    # tv-max&kira-sex04-01-f + tv-max&kira-sex04-01
+                    scene BG char Kira tv-sex04-01-f
+                    show Kira tv-sex 04-01
+                    Kira_11 "Охх... Да... Тогда я буду опускаться на твой член очень медленно! Чтобы ты прочувствовал всю нежность моей мокрой киски... Ухх, как это обалденно! Ммм... Хочешь быстрее?"
+                    Max_20 "Д-а-а... У тебя невероятная попка, тётя Кира! Давай ещё быстрее... Кажется, я уже близко..."
+
+                    if random_outcome(50):
+                        # tv-cun-01 + tv-max&kira-sex04-02
+                        scene BG tv-cun-01
+                        show Kira tv-sex 04-02
+                    else:
+                        # after-club-s06-f + tv-max&kira-sex04-02a
+                        scene BG char Kira after-club-s06-f
+                        show Kira tv-sex 04-02a
+                    menu:
+                        Kira_12 "О да! Макс, не сдерживай себя. Можешь кончать прямо в меня! Ох, как хорошо! Ахх..."
+                        "{i}кончить в Киру{/i}":
+                            pass
+                    # tv-max&kira-sex04-01-f + tv-max&kira-sex04-01 + tv-max&kira-sex04-cum01
+                    scene BG char Kira tv-sex04-01-f
+                    show Kira tv-sex 04-01
+                    show FG Kira tv-sex 04-cum01
+                    Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+                    Max_05 "И мне тоже! Значит, до следующего раза?!"
+                    jump .end_sex
+
             # (Не удалось сдержаться!)
             # tv-max&kira-sex03-01-f + tv-max&kira-sex02-03 + tv-max&kira-sex02-(cum02a/cum02b)
             scene BG tv-sex03-01
@@ -2005,6 +2045,44 @@ label kira_night_tv:
                         scene BG tv-mass-07
                         show Kira tv-sex 03-03
                         jump .minet_after_sex
+
+                "Давай сменим позу, тётя Кира..." if kira.dcv.photo.stage > 2:
+                    # tv-mass-07 + tv-max&kira-sex03-03
+                    scene BG tv-mass-07
+                    show Kira tv-sex 03-03
+                    Kira_07 "Фух, удивляюсь, как ты ещё не кончил, Макс! Ты становишься всё выносливее... Скоро я перестану за тобой поспевать!"
+                    Max_04 "Брось, тётя Кира! Секс с тобой - сплошное наслаждение..."
+
+                    # tv-mass-07 + tv-bj-01-max-01a-kira-01a
+                    show Kira tv-game bj-01bb
+                    Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил прямо в меня! Ты же не против, если я буду сверху?"
+                    Max_03 "О да, прямо то, что надо!"
+
+                    # after-club-s08a-f + tv-max&kira-sex01-02b
+                    scene BG char Kira after-club-s08a-f
+                    show Kira tv-sex 01-02b
+                    Kira_11 "Охх... Да... Гарантирую - долго ты не продержишься! Ведь я оттрахаю тебя без всяких нежностей... Жёстко и страстно! Ммм... Хочешь ещё сильнее?"
+                    Max_20 "Ты обалденная, тётя Кира! Давай ещё быстрее... Кажется, я уже близко..."
+
+                    if random_outcome(50):
+                        # tv-ero-04 + tv-max&kira-sex01-02
+                        scene BG tv-ero-04
+                        show Kira tv-sex 01-02
+                    else:
+                        # after-club-s04-f + tv-max&kira-sex01-02a
+                        scene BG after-club-s04-f
+                        show Kira tv-sex 01-02a
+                    menu:
+                        Kira_12 "О да! Макс, не сдерживай себя. Можешь кончать прямо в меня! Ох, как хорошо! Ахх..."
+                        "{i}кончить в Киру{/i}":
+                            pass
+                    # tv-max&kira-sex01-01-f + tv-max&kira-sex01-01 + tv-max&kira-sex01-cum01
+                    scene BG char Kira tv-sex01-01-f
+                    show Kira tv-sex 01-01
+                    show FG Kira tv-sex 01-cum01
+                    Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
+                    Max_05 "И мне тоже! Значит, до следующего раза?!"
+                    jump .end_sex
 
             # не удалось сдержаться при попытке минета
             # tv-mass-07 + tv-max&kira-sex03-03 + tv-max&kira-sex03-(cum02a/cum02b)
@@ -2218,6 +2296,7 @@ label kira_shower:
                 "{i}взглянуть со стороны{/i}":
                     jump .alt_peepeng
                 "{i}уйти{/i}":
+                    stop music
                     jump .end
         else:
             $ r1 = renpy.random.randint(1, 6)
@@ -2230,6 +2309,7 @@ label kira_shower:
                 "{i}взглянуть со стороны{/i}":
                     jump .alt_peepeng
                 "{i}уйти{/i}":
+                    stop music
                     jump .end
 
         $ spent_time += 10
@@ -2246,12 +2326,14 @@ label kira_shower:
                 "К тебе можно, тётя Кира?":
                     jump .promise_cuni
                 "{i}уйти{/i}":
+                    stop music
                     jump .end
         else:
             if r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
             else:
                 Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
+        stop music
         jump .end
 
     label .alt_peepeng:
@@ -2269,15 +2351,18 @@ label kira_shower:
                 "К тебе можно, тётя Кира?":
                     jump .promise_cuni
                 "{i}уйти{/i}":
+                    stop music
                     jump .end
         else:
             if r1 < 7:
                 Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
             else:
                 Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
+        stop music
         jump .end
 
     label .promise_cuni:
+        stop music
         if not _in_replay:
             $ SetCamsGrow(house[3], 200)
             $ mgg.cleanness = 100
@@ -2451,6 +2536,7 @@ label kira_lisa_shower:
             "{i}взглянуть со стороны{/i}":
                 jump .alt_peepeng
             "{i}уйти{/i}":
+                stop music
                 jump .end
 
         $ spent_time += 10
@@ -2461,6 +2547,7 @@ label kira_lisa_shower:
         $ renpy.show('Lisa shower-closer 0'+str(r1), at_list=[right_shift,])
         show FG shower-closer
         Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
+        stop music
         jump .end
 
     label .alt_peepeng:
@@ -2475,6 +2562,7 @@ label kira_lisa_shower:
         $ renpy.show('Kira shower-alt 0'+str(r1), at_list=[alt_right_shift,])
         show FG shower-water
         Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
+        stop music
         jump .end
 
     label .end:
@@ -2609,6 +2697,7 @@ label kira_alice_shower:
         $ renpy.show('Alice shower-closer 0'+str(r1), at_list=[right_shift,])
         show FG shower-closer
         Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
+        stop music
         jump .end
 
     label .alt_peepeng:
@@ -2623,6 +2712,7 @@ label kira_alice_shower:
         $ renpy.show('Kira shower-alt 0'+str(r1), at_list=[alt_right_shift,])
         show FG shower-water
         Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
+        stop music
         jump .end
 
     label .end:

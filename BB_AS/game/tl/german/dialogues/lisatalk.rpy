@@ -10457,5 +10457,5 @@ translate german strings:
 translate german lisa_about_ae_sexed5_da98adae:
 
     # Lisa_00 "А затем, что эти уроки продолжатся в нашей с тобой комнате, Макс."
-    Lisa_00 ""
+    Lisa_00 "Und dann werden diese Lektionen in unserem Zimmer weitergehen, Max."
 

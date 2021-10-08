@@ -21,6 +21,8 @@ label start:
 
     $ rl = create_random_list()
 
+    call ClearVariables from _call_ClearVariables
+
     call InitHouse from _call_InitHouse
     call InitVariable from _call_InitVariable
     call InitCharacters from _call_InitCharacters

@@ -177,7 +177,8 @@ label set_eric_schedule:
         Schedule((6,), '19:00', '19:59', 'None', variable="not Eric_at_dinner()"),
         # прикатика с Лизой
         Schedule((1, ), '20:00', '20:29', 'rest', 'в Аниной комнате', 'house', 2, 'eric_resting', variable="flags.lisa_sexed < 7"),
-        Schedule((1, ), '20:00', '20:29', 'practice', 'практика с Лизой', 'house', 0, 'lisa_eric_sex_ed_practice', variable="all([flags.lisa_sexed > 6, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])", enabletalk=False, glow=150),
+        # Schedule((1, ), '20:00', '20:29', 'practice', 'практика с Лизой', 'house', 0, 'lisa_eric_sex_ed_practice', variable="all([flags.lisa_sexed > 6, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])", enabletalk=False, glow=150),
+        Schedule((1, ), '20:00', '20:29', 'rest', 'в Аниной комнате', 'house', 2, 'eric_resting', variable="all([all([flags.lisa_sexed > 6, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])])"),
         Schedule((1, ), '20:00', '20:29', 'rest', 'в Аниной комнате', 'house', 2, 'eric_resting', variable="all([flags.lisa_sexed > 6, eric.daily.sweets or lisa.dcv.intrusion.stage > 3])"),
         # =================
         Schedule((1, ), '20:30', '20:59', 'rest', 'в Аниной комнате', 'house', 2, 'eric_resting'),
@@ -297,8 +298,11 @@ label set_lisa_schedule:
         Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', "семейный ужин", 'house', 5, 'dinner', enabletalk=False, glow=105),
         Schedule((0, 2, 3, 4, 5, 6), '20:0', '20:59', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="flags.lisa_sexed < 7", talklabel='lisa_dishes_closer'),
-        Schedule((1, ), '20:00', '20:29', 'practice', 'практика с Эриком', 'house', 0, 'lisa_eric_sex_ed_practice', variable="all([flags.lisa_sexed > 6, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])", enabletalk=False, glow=150),
+
+        # Schedule((1, ), '20:00', '20:29', 'practice', 'практика с Эриком', 'house', 0, 'lisa_eric_sex_ed_practice', variable="all([flags.lisa_sexed > 6, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])", enabletalk=False, glow=150),
+        Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="all([flags.lisa_sexed > 6, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])", talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="all([flags.lisa_sexed > 6, eric.daily.sweets  or lisa.dcv.intrusion.stage > 3])", talklabel='lisa_dishes_closer'),
+
         Schedule((1, ), '20:30', '20:59', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable='not dishes_washed', talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:30', '20:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', variable='dishes_washed', talklabel='lisa_phone_closer', glow=105),
         Schedule((0, 1, 2, 3, 4, 5, 6), '21:0', '21:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', talklabel='lisa_phone_closer', glow=105),

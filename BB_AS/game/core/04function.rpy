@@ -709,7 +709,7 @@ init python:
             elif name == 'tv2':
                 dress = 'c' if lisa_will_be_topless() > 0 else 'b'
                 inf = '02c' if lisa_will_be_topless() > 0 else '02a'
-            elif name in ['breakfast', 'dinner', 'dishes']:
+            elif name in ['breakfast', 'dinner', 'dishes', 'practice']:
                 dress = lisa.clothes.casual.GetCur().suf
                 inf   = lisa.clothes.casual.GetCur().info
                 clot  = 'casual'
@@ -1797,10 +1797,15 @@ init python:
         if lisa.plan_name in ['swim', 'sun'] or lisa.prev_plan in ['swim', 'sun']:
             lst.append('01c')   # трусики от бикини перед или после отдыха во дворе
 
-        if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor']:
+        if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor', 'homework']:
             lst.append({'a':'01a', 'b':'01b1', 'd':'01d'}[lisa.clothes.casual.GetCur().suf])
             if lisa.clothes.casual.GetCur().suf == 'b' and lvl > 2:
                 lst.append('01b')
+        elif all([lisa.prev_plan == 'homework', lisa.clothes.learn.GetCur().suf != 'c']):
+            lst.append({'a':'01a', 'b':'01b1', 'd':'01d'}[lisa.clothes.learn.GetCur().suf])
+            if lisa.clothes.learn.GetCur().suf == 'b' and lvl > 2:
+                lst.append('01b')
+
         elif lisa.prev_plan == 'in_shop':
             lst.append('01a')
 

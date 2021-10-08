@@ -10440,7 +10440,7 @@ translate english strings:
 
     # game/dialogues/lisatalk.rpy:4438
     old "Только если дашь поцеловать!"
-    new "Only if you give me a kiss!"
+    new "Only if I can give you a kiss!"
 
     # game/dialogues/lisatalk.rpy:4446
     old "{i}прикоснуться к попке Лизы{/i}"
@@ -10456,5 +10456,5 @@ translate english strings:
 translate english lisa_about_ae_sexed5_da98adae:
 
     # Lisa_00 "А затем, что эти уроки продолжатся в нашей с тобой комнате, Макс."
-    Lisa_00 ""
+    Lisa_00 "And then that these lessons will continue in our room with you, Max."
 
