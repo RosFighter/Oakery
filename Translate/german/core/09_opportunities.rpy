@@ -1879,9 +1879,9 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "После того, как я умудрился добиться от Алисы фут-джоба в гостиной, не давая ей ни одной конфеты с ликёром, дела с приватными наказаниями за подглядывания в душе пошли в гору. Не без помощи конфеты, но Алиса теперь не обходит мой член стороной и даже не прочь присесть на него... А вот дальше, чем больше у меня получается ей угождать, тем больше она теряет голову!"
-    new ""
+    new "Nachdem es mir gelungen war, Alice dazu zu bringen, mir im Wohnzimmer einen Fußjob zu geben, ohne ihr ein einziges Lakritzbonbon zu geben, ging es mit den privaten Bestrafungen für das Spionieren in der Dusche noch einen Schritt weiter. Nicht ohne die Hilfe von Süßigkeiten, aber Alice meidet meinen Schwanz nicht mehr und es macht ihr auch nichts aus, sich darauf zu setzen... Aber je mehr ich es schaffe, ihr zu gefallen, desto mehr verliert sie den Kopf!"
 
     # game/core/09_opportunities.rpy:4
     old "Следует уделять больше внимания ночным развлечениям с тётей Кирой, как в плане поцелуев, так и секса..."
-    new ""
+    new "Der nächtlichen Unterhaltung mit Tante Kira sollte mehr Aufmerksamkeit gewidmet werden, sowohl was das Küssen als auch was den Sex betrifft..."
 

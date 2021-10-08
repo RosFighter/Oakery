@@ -898,7 +898,7 @@ translate german kira_bath_horsewoman_bd9f2b57:
 translate german kira_bath_horsewoman_88fc2651:
 
     # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
-    Kira_07 "Also... Du kommst gerne in deiner Tante, nicht wahr, Max? Ich liebe es!"
+    Kira_07 "Endlich... Du magst es, in deiner Tante abzuspritzen, nicht wahr, Max? Das gefällt mir!"
 
 # game/events/kira.rpy:552
 translate german kira_bath_horsewoman_6f308174:
@@ -970,7 +970,7 @@ translate german kira_bath_dogstyle_e8270cba:
 translate german kira_bath_dogstyle_88fc2651:
 
     # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
-    Kira_07 "Also... Du kommst gerne in deiner Tante, nicht wahr, Max? Ich liebe es!"
+    Kira_07 "Endlich... Du magst es, in deiner Tante abzuspritzen, nicht wahr, Max? Das gefällt mir!"
 
 # game/events/kira.rpy:614
 translate german kira_bath_dogstyle_6f308174:
@@ -4280,117 +4280,117 @@ translate german strings:
 translate german kira_night_tv_tv_sex2_9ee6709e:
 
     # Kira_07 "Фух, удивляюсь, как ты ещё не кончил, Макс! Ты становишься всё выносливее... Скоро я перестану за тобой поспевать!"
-    Kira_07 ""
+    Kira_07 "Puh, ich bin überrascht, dass du noch nicht abgespritzt hast, Max! Du wirst immer mutiger und zäher... Bald werde ich nicht mehr mit dir mithalten können!"
 
 # game/events/kira.rpy:1941
 translate german kira_night_tv_tv_sex2_ec39df3a:
 
     # Max_04 "Брось, тётя Кира! Секс с тобой - сплошное наслаждение..."
-    Max_04 ""
+    Max_04 "Komm schon, Tante Kira! Sex mit dir ist ein Vergnügen..."
 
 # game/events/kira.rpy:1944
 translate german kira_night_tv_tv_sex2_5cd76013:
 
     # Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил прямо в меня! Ничего, что тебе придётся снова любоваться моей попкой?"
-    Kira_02 ""
+    Kira_02 "Mach es dir bequem... Und ich werde dafür sorgen, dass du in mir abspritzst! Ist es in Ordnung, wenn du meinen Arsch noch einmal bestaunen darfst?"
 
 # game/events/kira.rpy:1945
 translate german kira_night_tv_tv_sex2_4e28d11a:
 
     # Max_03 "Вот чёрт, это заставит меня кончить куда быстрее!"
-    Max_03 ""
+    Max_03 "Oh, Scheiße, da komme ich ja viel schneller!"
 
 # game/events/kira.rpy:1948
 translate german kira_night_tv_tv_sex2_dcce85b2:
 
     # Kira_11 "Охх... Да... Тогда я буду опускаться на твой член очень медленно! Чтобы ты прочувствовал всю нежность моей мокрой киски... Ухх, как это обалденно! Ммм... Хочешь быстрее?"
-    Kira_11 ""
+    Kira_11 "Ohhh... Ja... Dann werde ich mich ganz langsam an deinem Schwanz bedienen! So kannst du die Zärtlichkeit meiner feuchten Pussy spüren... Oh, das ist so gut! Hmmm... Wollen Sie schneller werden?"
 
 # game/events/kira.rpy:1949
 translate german kira_night_tv_tv_sex2_7c90ec0a:
 
     # Max_20 "Д-а-а... У тебя невероятная попка, тётя Кира! Давай ещё быстрее... Кажется, я уже близко..."
-    Max_20 ""
+    Max_20 "Ja-a-a... Du hast einen unglaublichen Arsch, Tante Kira! Komm schon, mach schneller... Ich glaube, ich komme bald..."
 
 # game/events/kira.rpy:1952
 translate german kira_night_tv_tv_sex2_9385ec1b:
 
     # Kira_12 "О да! Макс, не сдерживай себя. Можешь кончать прямо в меня! Ох, как хорошо! Ахх..." nointeract
-    Kira_12 "" nointeract
+    Kira_12 "Oh ja! Max, halte dich nicht zurück. Du kannst in mir abspritzen! Oh, das tut gut! Ahhh..." nointeract
 
 # game/events/kira.rpy:1957
 translate german kira_night_tv_tv_sex2_88fc2651:
 
     # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
-    Kira_07 ""
+    Kira_07 "Endlich... Du magst es, in deiner Tante abzuspritzen, nicht wahr, Max? Das gefällt mir!"
 
 # game/events/kira.rpy:1958
 translate german kira_night_tv_tv_sex2_25fcd1cd:
 
     # Max_05 "И мне тоже! Значит, до следующего раза?!"
-    Max_05 ""
+    Max_05 "Mir auch! Bis zum nächsten Mal also?!"
 
 # game/events/kira.rpy:2035
 translate german kira_night_tv_missionary_9ee6709e:
 
     # Kira_07 "Фух, удивляюсь, как ты ещё не кончил, Макс! Ты становишься всё выносливее... Скоро я перестану за тобой поспевать!"
-    Kira_07 ""
+    Kira_07 "Puh, ich bin überrascht, dass du noch nicht abgespritzt hast, Max! Du wirst immer mutiger und zäher... Bald werde ich nicht mehr mit dir mithalten können!"
 
 # game/events/kira.rpy:2036
 translate german kira_night_tv_missionary_ec39df3a:
 
     # Max_04 "Брось, тётя Кира! Секс с тобой - сплошное наслаждение..."
-    Max_04 ""
+    Max_04 "Komm schon, Tante Kira! Sex mit dir ist ein Vergnügen..."
 
 # game/events/kira.rpy:2039
 translate german kira_night_tv_missionary_5cf6f999:
 
     # Kira_02 "Устраивайся поудобнее... А я позабочусь о том, чтобы ты сладко-сладко кончил прямо в меня! Ты же не против, если я буду сверху?"
-    Kira_02 ""
+    Kira_02 "Mach es dir bequem... Und ich werde dafür sorgen, dass du in mir abspritzst! Es macht dir doch nichts aus, wenn ich oben sitze, oder?"
 
 # game/events/kira.rpy:2040
 translate german kira_night_tv_missionary_d4453f2e:
 
     # Max_03 "О да, прямо то, что надо!"
-    Max_03 ""
+    Max_03 "Oh ja, genau das Richtige!"
 
 # game/events/kira.rpy:2043
 translate german kira_night_tv_missionary_0c9eb40f:
 
     # Kira_11 "Охх... Да... Гарантирую - долго ты не продержишься! Ведь я оттрахаю тебя без всяких нежностей... Жёстко и страстно! Ммм... Хочешь ещё сильнее?"
-    Kira_11 ""
+    Kira_11 "Ohhh... Ja... Ich garantiere dir, dass du nicht lange durchhältst. Denn ich werde dich ohne jede Zurückhaltung ficken... Hart und leidenschaftlich! Hmmm... Willst du mehr?"
 
 # game/events/kira.rpy:2044
 translate german kira_night_tv_missionary_e712cf57:
 
     # Max_20 "Ты обалденная, тётя Кира! Давай ещё быстрее... Кажется, я уже близко..."
-    Max_20 ""
+    Max_20 "Du bist fantastisch, Tante Kira! Mach schon, schneller... Ich glaube, ich komme gleich..."
 
 # game/events/kira.rpy:2047
 translate german kira_night_tv_missionary_9385ec1b:
 
     # Kira_12 "О да! Макс, не сдерживай себя. Можешь кончать прямо в меня! Ох, как хорошо! Ахх..." nointeract
-    Kira_12 "" nointeract
+    Kira_12 "Oh ja! Max, halte dich nicht zurück. Du kannst in mir abspritzen! Oh, das tut gut! Ahhh..." nointeract
 
 # game/events/kira.rpy:2052
 translate german kira_night_tv_missionary_88fc2651:
 
     # Kira_07 "Вот так... Нравится кончать в свою тётю, а Макс? Мне вот понравилось!"
-    Kira_07 ""
+    Kira_07 "Endlich... Du magst es, in deiner Tante abzuspritzen, nicht wahr, Max? Das gefällt mir!"
 
 # game/events/kira.rpy:2053
 translate german kira_night_tv_missionary_25fcd1cd:
 
     # Max_05 "И мне тоже! Значит, до следующего раза?!"
-    Max_05 ""
+    Max_05 "Mir auch! Bis zum nächsten Mal also?!"
 
 translate german strings:
 
     # game/events/kira.rpy:1905
     old "Давай сменим позу, тётя Кира..."
-    new ""
+    new "Lass uns die Positionen tauschen, Tante Kira..."
 
     # game/events/kira.rpy:1952
     old "{i}кончить в Киру{/i}"
-    new ""
+    new "{i}in Kira abspritzen{/i}"
 
