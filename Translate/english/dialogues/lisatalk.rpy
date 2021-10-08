@@ -10352,7 +10352,7 @@ translate english take_to_school_93e24500:
 translate english take_to_school_bb885618:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "And I will. Good luck!"
+    Max_01 "And I will be. Good luck!"
 
 # game/dialogues/lisatalk.rpy:4475
 translate english take_to_school_2946fe9e:
