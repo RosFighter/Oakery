@@ -171,6 +171,9 @@ define talks = {
     'eric.kira0'    : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1, GetRelMax('eric')[0]>0])"),
     'eric.kira1'    : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "all([wcv.catch_Kira.stage==1, kira.dcv.battle.stage>0])"),
 
+    'eric.tribute'  : TalkTheme('eric', _("Вот деньги, чтобы ты не лез к Лизе..."), 'Eric_tribute', "all([eric_obligation.volume, not eric_obligation.paid, mgg.money >= eric_obligation.get_debt(), not flags.eric_wallet])"),
+    'eric.nomoney'  : TalkTheme('eric', _("У меня нет денег, чтобы ты не лез к Лизе."), 'Eric_tribute_no_money', "all([eric_obligation.volume, not eric_obligation.paid, mgg.money < eric_obligation.get_debt(), not flags.eric_wallet])"),
+
     'kt1'           : TalkTheme('kira', _("Да тут всегда хорошая погода..."), 'kira_firsttalk', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==0])"),
     'kt2'           : TalkTheme('kira', _("Ага, как всегда..."), 'kira_talk2', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==1])"),
     'kt3'           : TalkTheme('kira', _("Да, шикарная!"), 'kira_talk3', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==2])"),

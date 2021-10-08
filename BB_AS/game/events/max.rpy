@@ -1090,6 +1090,11 @@ label bedtime_thoughts:
     if flags.lisa_sexed == 6 and lisa.dcv.battle.stage not in [1, 4]:
         # о том, как напакостить Эрику
         Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
+        if lisa.dcv.intrusion.stage == 4:
+            $ poss['seduction'].open(25)
+        elif GetRelMax('eric')[0] < 0:
+            $ poss['seduction'].open(24)
+
         $ flags.lisa_sexed = 7
         $ items['laxative'].unblock()
         $ items['sedative'].unblock()

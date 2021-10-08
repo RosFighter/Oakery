@@ -440,5 +440,5 @@ translate german strings:
 
     # game/screens.rpy:987
     old "Переодевания Лизы пропускаются, если Макс в комнате"
-    new ""
+    new "Lisas Umziehen wird übersprungen, wenn Max im Zimmer ist"
 

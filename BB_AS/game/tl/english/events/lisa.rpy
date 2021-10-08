@@ -2600,177 +2600,189 @@ translate english strings:
 translate english lisa_dressed_get_notebook1_a6bb39c7:
 
     # Lisa_01 "Хорошо, что я уже почти оделась. Или ноутбук - это просто предлог и ты надеялся, что я тут полуголая буду?"
-    Lisa_01 ""
+    Lisa_01 "It's a good thing I'm almost dressed. Or was the laptop just an excuse and you were hoping to catch me half-naked?"
 
 # game/events/lisa.rpy:900
 translate english lisa_dressed_stay_in_room_9edd3eac:
 
     # Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..." nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Max, I need to change. Would you be so kind as to take a little walk or turn around..." nointeract
 
 # game/events/lisa.rpy:906
 translate english lisa_dressed_stay_in_room_769644c1:
 
     # Lisa "{b}Лиза:{/b} Я быстро... Главное, не подглядывай! Надеюсь, тебе это по силам..." nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} I won't be long... Just don't peek! I hope you can manage that much..." nointeract
 
 # game/events/lisa.rpy:908
 translate english lisa_dressed_stay_in_room_08276951:
 
     # Lisa "{b}Лиза:{/b} И не вздумай подглядывать! Это не займёт много времени..." nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} And don't even think about peeking! I won't take long..." nointeract
 
 # game/events/lisa.rpy:910
 translate english lisa_dressed_stay_in_room_cdba7705:
 
     # Lisa "{b}Лиза:{/b} И я бы хотела, чтобы ты постарался не подглядывать... Знаю, сложно, но пожалуйста!" nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} And I'd like you to try not to peek... I know it's hard, but please!" nointeract
 
 # game/events/lisa.rpy:1032
 translate english lisa_dressed_try_to_peek_b3342fcc:
 
     # Max_05 "[lucky!t]{m}Повезло! Лиза не видит, что я подглядываю... Ещё совсем юная, но уже такая сексуальная! Обожаю её...{/m}"
-    Max_05 ""
+    Max_05 "[lucky!t]{m}Lucky! Lisa can't see that I'm peeping... She's still very young, but she's already so sexy. I love her.{/m}"
 
 # game/events/lisa.rpy:1034
 translate english lisa_dressed_try_to_peek_274e1029:
 
     # Max_05 "[lucky!t]{m}Класс! Кажется, она не видит, что я подглядываю... Очень сложно оторвать взгляд от этих соблазнительных изгибов её фигуры, но надо...{/m}"
-    Max_05 ""
+    Max_05 "[lucky!t]{m}Yes! She doesn't know I'm peeping... It's very hard to take my eyes off those seductive curves of her figure, but I have to...{/m}"
 
 # game/events/lisa.rpy:1036
 translate english lisa_dressed_try_to_peek_6614903d:
 
     # Max_05 "[lucky!t]{m}Моя сестрёнка такая сладенькая! Как же мне повезло жить с такой классной девочкой в одной комнате и каждый день наслаждаться её голыми прелестями...{/m}"
-    Max_05 ""
+    Max_05 "[lucky!t]{m}My little sister is so sexy! I'm so lucky to be living with her in the same room...{/m}"
 
 # game/events/lisa.rpy:1044
 translate english lisa_dressed_try_to_peek_1ae137e9:
 
     # Lisa_11 "[spotted!t]Макс! Я же просила не подглядывать! Ну-ка быстро отвернись... Ещё раз так сделаешь и я всё маме расскажу! Понял?!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "[spotted!t]Max! I told you not to peek! Turn around and look away... You do that again and I'll tell Mom! Do you understand?!" nointeract
 
 # game/events/lisa.rpy:1047
 translate english lisa_dressed_try_to_peek_b99743fe:
 
     # Lisa_11 "[spotted!t]Ну, Макс! Прекращай подглядывать! Если не отвернёшься или ещё раз такое выкинешь, я на тебя маме нажалуюсь... Тебе ясно?!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "[spotted!t]Come on, Max! Stop peeping! If you don't turn your back or do that again, I'll have to tell Mom... Do you understand?!" nointeract
 
 # game/events/lisa.rpy:1049
 translate english lisa_dressed_try_to_peek_2ba94453:
 
     # Lisa_11 "[spotted!t]Опять ты подглядываешь! И не стыдно тебе?! Делать тебе больше нечего, только глазеть, как я переодеваюсь... Прекращай!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "[spotted!t]You're peeping again! Are you for real?! You've got nothing better to do than watch me change... Cut it out!" nointeract
 
 # game/events/lisa.rpy:1052
 translate english lisa_dressed_try_to_peek_d37ef64c:
 
     # Lisa_12 "Подумаешь, я сильно на тебя обижусь и больше разговаривать не буду..."
-    Lisa_12 ""
+    Lisa_12 "So what if I'm really offended and don't talk to you anymore..."
 
 # game/events/lisa.rpy:1053
 translate english lisa_dressed_try_to_peek_ff32bf71:
 
     # Max_08 "Всё, я отвернулся!"
-    Max_08 ""
+    Max_08 "That's it, I'm turning around!"
 
 # game/events/lisa.rpy:1055
 translate english lisa_dressed_try_to_peek_e97eac0d:
 
     # Lisa_10 "А я вот стесняюсь! И перестань на меня так глазеть! А то я Алису попрошу, чтобы она тебя отпинала..."
-    Lisa_10 ""
+    Lisa_10 "I'm embarrassed! And stop staring at me like that! Or I'll ask Alice to kick you..."
 
 # game/events/lisa.rpy:1056
 translate english lisa_dressed_try_to_peek_ff32bf71_1:
 
     # Max_08 "Всё, я отвернулся!"
-    Max_08 ""
+    Max_08 "That's it, I'm turning around!"
 
 # game/events/lisa.rpy:1060
 translate english lisa_dressed_try_to_peek_470a2396:
 
     # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Отвернись!" nointeract
-    Lisa_13 "" nointeract
+    Lisa_13 "How long are you going to keep staring at me?! Turn around!" nointeract
 
 # game/events/lisa.rpy:1062
 translate english lisa_dressed_try_to_peek_f94f03ae:
 
     # Lisa_09 "Ну и долго ты ещё пялиться на меня будешь?! Отвернись. Я недолго..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "How long are you going to keep staring at me? Turn around. I won't be long..." nointeract
 
 # game/events/lisa.rpy:1067
 translate english lisa_dressed_try_to_peek_66f1c3a5:
 
     # Lisa_02 "Вот представь, ну никак не могу! Стесняюсь. Можно я уже спокойно переоденусь? Без этого твоего сверлящего и озабоченного взгляда..."
-    Lisa_02 ""
+    Lisa_02 "Just imagine, I can't do it! I'm embarrassed. Can I change in peace now? Without you staring at me with that crazy look..."
 
 # game/events/lisa.rpy:1068
 translate english lisa_dressed_try_to_peek_1a1c2375:
 
     # Max_02 "Можно. Только постой так ещё немного, я быстренько сфотографирую..."
-    Max_02 ""
+    Max_02 "You can. Just stay like this a little longer, I'll take a quick picture..."
 
 # game/events/lisa.rpy:1069
 translate english lisa_dressed_try_to_peek_ab614b1d:
 
     # Lisa_09 "Ну, Макс!"
-    Lisa_09 ""
+    Lisa_09 "Come on, Max!"
 
 # game/events/lisa.rpy:1070
 translate english lisa_dressed_try_to_peek_2c3cf9b7:
 
     # Max_03 "Да шучу я... Всё, отвернулся!"
-    Max_03 ""
+    Max_03 "I'm just kidding... That's it, I turned away!"
 
 # game/events/lisa.rpy:1072
 translate english lisa_dressed_try_to_peek_e11ee97e:
 
     # Lisa_01 "Спасибо. Но давай ты не будешь пялиться и отвернёшься... Хорошо?"
-    Lisa_01 ""
+    Lisa_01 "Thank you. But how about you don't stare and look away... Okay?"
 
 # game/events/lisa.rpy:1073
 translate english lisa_dressed_try_to_peek_e22e7d62:
 
     # Max_04 "Мне понравилось, как ты двигалась... Не повторишь?"
-    Max_04 ""
+    Max_04 "I liked the way you moved... Would you do it again?"
 
 # game/events/lisa.rpy:1074
 translate english lisa_dressed_try_to_peek_01a9904e:
 
     # Lisa_02 "Макс, ты меня совсем сейчас засмущаешь! Отвернись, пожалуйста..." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Max, you're embarrassing me right now! Turn around, please..." nointeract
 
 translate english strings:
 
     # game/events/lisa.rpy:900
     old "{i}отвернуться{/i}"
-    new ""
+    new "{i}Turn around{/i}"
 
     # game/events/lisa.rpy:911
     old "{i}не подглядывать за Лизой{/i}"
-    new ""
+    new "{i}Don't peek at Lisa{/i}"
 
     # game/events/lisa.rpy:911
     old "{i}попробовать подглядеть за Лизой{/i}"
-    new ""
+    new "{i}Try and Peek{/i}"
 
     # game/events/lisa.rpy:1050
     old "Подумаешь, сестрёнку полуголую увидел..."
-    new ""
+    new "So I saw my sister half-naked, what's the big deal?"
 
     # game/events/lisa.rpy:1050
     old "Да ладно тебе, можешь меня не стесняться!"
-    new ""
+    new "Come on, don't be embarrassed by me!"
 
     # game/events/lisa.rpy:1050
     old "Извини, не удержался... Хорошо выглядишь!"
-    new ""
+    new "Sorry, I couldn't resist... You look good!"
 
     # game/events/lisa.rpy:1050
     old "А ты представь, что меня тут на самом деле нет!"
-    new ""
+    new "Just pretend I'm not even here!"
 
     # game/events/lisa.rpy:1050
     old "Извини, не удержался... Ты очень красивая!"
-    new ""
+    new "Sorry, I couldn't resist... You're beautiful!"
+
+# TODO: Translation updated at 2021-10-07 01:03
+
+translate english strings:
+
+    # game/events/lisa.rpy:911
+    old "{i}не подглядывать{/i}"
+    new "{i}Don't peek{/i}"
+
+    # game/events/lisa.rpy:911
+    old "{i}попробовать подглядеть{/i}"
+    new "{i}Peek{/i}"
 

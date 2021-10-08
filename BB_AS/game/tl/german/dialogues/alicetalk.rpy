@@ -9929,7 +9929,7 @@ translate german alice_mistress_3_follow_c87be605:
 translate german alice_mistress_3_follow_1adc516a:
 
     # Alice_05 "Точно? Может добавки? Хотя вижу, что и правда хватит, а то вот-вот чувствую - заплачешь. Или всё-таки..."
-    Alice_05 "Bist du dir sicher? Wie wäre es mit einem Nachschlag? Obwohl ich sehe, dass es wirklich genug ist, spüre ich, dass du weinen wirst. Aber vielleicht..."
+    Alice_05 "Bist du dir sicher? Wie wäre es mit einem Nachschlag? Obwohl ich sehe, dass es wirklich genug ist, spüre ich, dass du gleich heulen wirst. Aber vielleicht..."
 
 # game/dialogues/alicetalk.rpy:5589
 translate german alice_mistress_3_follow_6a20833b:
@@ -11124,3 +11124,657 @@ translate german strings:
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку успокоительное{/i}"
     new "{i}Sedativum auf Erics Teller verteilen{/i}"
+# TODO: Translation updated at 2021-10-07 01:05
+
+# game/dialogues/alicetalk.rpy:5330
+translate german alice_mistress_3_domine_no_drink_90d53df6:
+
+    # Alice_05 "Ну и чего стоишь? Ты же знаешь, что делать! Не заставляй меня ждать... Хуже ведь будет тебе!" nointeract
+    Alice_05 "Was stehst du da? Du weißt, was zu tun ist! Lass mich nicht warten... Du wirst sonst doch verletzt werden, klar?" nointeract
+
+# game/dialogues/alicetalk.rpy:5337
+translate german alice_mistress_3_domine_no_drink_21840dd9:
+
+    # Alice_03 "Хороший мальчик. Что теперь нужно сказать?" nointeract
+    Alice_03 "Braver Junge. Was hast du jetzt zu sagen?" nointeract
+
+# game/dialogues/alicetalk.rpy:5344
+translate german alice_mistress_3_domine_no_drink_e6a1536b:
+
+    # Alice_04 "Ох, как же моим ушам приятно слышать такое... Это ведь искреннее твоё желание?" nointeract
+    Alice_04 "Oh, das freut mich zu hören... Das ist doch dein aufrichtiger Wunsch, oder?" nointeract
+
+# game/dialogues/alicetalk.rpy:5351
+translate german alice_mistress_3_domine_no_drink_25fbab07:
+
+    # Alice_05 "Ой, когда меня так об этом просят, я не могу отказать... Может, ещё разок для закрепления, чтобы лучше прочувствовать, что подглядывать не хорошо?"
+    Alice_05 "Wenn man mich darum bittet, kann ich nicht nein sagen... Vielleicht ein weiteres Mal, um zu verdeutlichen, dass Gaffen nicht gesund ist?"
+
+# game/dialogues/alicetalk.rpy:5352
+translate german alice_mistress_3_domine_no_drink_71218d7c:
+
+    # Max_10 "Не надо! Я всё прочувствовал..."
+    Max_10 "Nein, nicht! Ich merke mir alles..."
+
+# game/dialogues/alicetalk.rpy:5357
+translate german alice_mistress_3_domine_no_drink_a33029f8:
+
+    # Alice_07 "Ну, раз так, можешь идти. Я на самом деле сильно сомневаюсь, что до тебя дошло. Но всё же понадеюсь..." nointeract
+    Alice_07 "Nun, wenn das der Fall ist, kannst du gehen. Ich bezweifle zwar, dass du die Botschaft verstehst. Aber ich hoffe immer noch..." nointeract
+
+# game/dialogues/alicetalk.rpy:5375
+translate german alice_mistress_3_domine_no_drink_4880142c:
+
+    # Max_12 "Ай!!! Бо-о-ольно... С ума сошла что ли так бить?!"
+    Max_12 "Aua!!! Boo-hoo-hoo... Bist du verrückt, so zuzuschlagen?!"
+
+# game/dialogues/alicetalk.rpy:5376
+translate german alice_mistress_3_domine_no_drink_56a049d6:
+
+    # Alice_16 "Вот так ты значит хочешь? Дерзить мне будешь... Ну, смотри... Если не поставишь руки на стол и не отклячишь свою задницу, добавки будет столько, что ноги откажут!" nointeract
+    Alice_16 "Willst du das? Du wirst frech zu mir... Nun, sieh mal... Wenn du deine Hände nicht auf den Tisch legst und deinen Arsch bewegst, gebe ich dir so viel Extra, dass deine Beine nicht mehr funktionieren!" nointeract
+
+# game/dialogues/alicetalk.rpy:5383
+translate german alice_mistress_3_domine_no_drink_a578cf2b:
+
+    # Alice_04 "Хороший мальчик. Сейчас ты у меня прочувствуешь, что подглядывать не хорошо! Как тебе?"
+    Alice_04 "Braver Junge. Ich werde dir beibringen, dass Gaffen nicht gesund ist! Was denkst du?"
+
+# game/dialogues/alicetalk.rpy:5384
+translate german alice_mistress_3_domine_no_drink_3a79efc9:
+
+    # Max_14 "Больно... Может уже хватит?"
+    Max_14 "Es tut weh... Hörst du endlich auf damit?"
+
+# game/dialogues/alicetalk.rpy:5385
+translate german alice_mistress_3_domine_no_drink_829e8023:
+
+    # Alice_05 "Правда? Хмм... Что-то как-то быстро до тебя дошло... Давай ещё раз, для закрепления..."
+    Alice_05 "Wirklich? Hmm ... Du verstehst langsam, wie das geht... Gehen wir es noch einmal durch, nur um sicherzugehen..."
+
+# game/dialogues/alicetalk.rpy:5391
+translate german alice_mistress_3_domine_no_drink_7c6d427c:
+
+    # Max_13 "Ай! Я всё прочувствовал... Прекращай!"
+    Max_13 "Au! Ich habe alles verstanden... Schluss damit!"
+
+# game/dialogues/alicetalk.rpy:5392
+translate german alice_mistress_3_domine_no_drink_8bfd7bd1:
+
+    # Alice_03 "Ну как, понравилось? Я надеюсь, сейчас ты всё понял?"
+    Alice_03 "Hat es dir gefallen? Ich hoffe, du hast es jetzt verstanden?"
+
+# game/dialogues/alicetalk.rpy:5397
+translate german alice_mistress_3_domine_no_drink_1755dd23:
+
+    # Max_10 "Да, я понял, что подглядывать не хорошо..."
+    Max_10 "Ja, ich habe verstanden, dass Spannen nicht gesund ist..."
+
+# game/dialogues/alicetalk.rpy:5398
+translate german alice_mistress_3_domine_no_drink_a03004fb:
+
+    # Alice_07 "Ну, а раз понял, можешь идти. Я на самом деле сильно сомневаюсь, что до тебя дошло. Но всё же понадеюсь..." nointeract
+    Alice_07 "Nun, da du es begriffen hast, kannst du gehen. Ich bezweifle jedoch wirklich, dass du es verstehst. Aber ich hoffe immer noch..." nointeract
+
+# game/dialogues/alicetalk.rpy:5409
+translate german alice_mistress_3_domine_no_drink_28518983:
+
+    # Alice_15 "Что?! Ничего себе, как ты заговорил! Ну держись..."
+    Alice_15 "Was?! Wow, du kannst ja sprechen! Halte durch..."
+
+# game/dialogues/alicetalk.rpy:5413
+translate german alice_mistress_3_domine_no_drink_c87be605:
+
+    # Max_13 "Чёрт!!! Алиса, бо-о-ольно... Хватит!"
+    Max_13 "Verdammt!!! Alice, boo-hoo-hoo... Schluss damit!"
+
+# game/dialogues/alicetalk.rpy:5419
+translate german alice_mistress_3_domine_no_drink_1adc516a:
+
+    # Alice_05 "Точно? Может добавки? Хотя вижу, что и правда хватит, а то вот-вот чувствую - заплачешь. Или всё-таки..."
+    Alice_05 "Bist du dir sicher? Wie wäre es mit einem Nachschlag? Obwohl ich sehe, dass es wirklich genug ist, spüre ich, dass du gleich heulen wirst. Aber vielleicht..."
+
+# game/dialogues/alicetalk.rpy:5420
+translate german alice_mistress_3_domine_no_drink_6a20833b:
+
+    # Max_10 "Нет-нет, я усвоил, что подглядывать не хорошо! Достаточно!"
+    Max_10 "Nein, nein, ich habe verstanden, dass Spionieren nicht gut ist! Jetzt reicht es aber!"
+
+# game/dialogues/alicetalk.rpy:5421
+translate german alice_mistress_3_domine_no_drink_07b7d700:
+
+    # Alice_07 "Ну ладно, сделаю вид, что я поверила. Вали отсюда. Надеюсь, ты и правда что-то усвоил." nointeract
+    Alice_07 "Na gut, ich tue so, als würde ich dir glauben. Verschwinde. Ich hoffe, du hast wirklich etwas gelernt." nointeract
+
+# game/dialogues/alicetalk.rpy:5439
+translate german alice_domine_drink_dd706ac2:
+
+    # Max_07 "А может без этого? Может, лучше привяжешь меня к стулу и уже там как-нибудь накажешь?"
+    Max_07 "Wie wäre es ohne das? Warum fesselst du mich nicht einfach an einen Stuhl und bestrafst mich dort?"
+
+# game/dialogues/alicetalk.rpy:5440
+translate german alice_domine_drink_39940f2d:
+
+    # Alice_05 "Неужели такому мелкому извращенцу, как ты, стало страшно поворачиваться ко мне задом? Это хорошо... Но раздеться тебе придётся всё равно! Или есть возражения?!" nointeract
+    Alice_05 "Ist es für einen kleinen Perversen wie dich mittlerweile gefährlich, mir den Rücken zuzudrehen? Das ist gut... Aber du musst dich trotzdem ausziehen! Oder hast du ein Problem damit?!" nointeract
+
+# game/dialogues/alicetalk.rpy:5445
+translate german alice_domine_drink_8c0a3d49:
+
+    # Alice_12 "Хм... А я смотрю, Макс, тебе нравится то, что я делаю. Задницу подставлять боишься, а вот демонстрировать, насколько ты «большой» извращенец и близко не стесняешься!"
+    Alice_12 "Hmm ... Ich sehe, dir gefällt, was ich tue, Max. Du hast Angst, dass ich dir den Arsch aufreiße, aber du bist nicht zu zimperlich, um mir zu zeigen, was für ein \"großer\" Perverser du bist!"
+
+# game/dialogues/alicetalk.rpy:5446
+translate german alice_domine_drink_809834fe:
+
+    # Max_04 "А чего стесняться? Это естественно, что у парня стоит на такую сексуальную девушку... Да ещё и в таком костюмчике..."
+    Max_04 "Was gibt es da zu schämen?Es ist ganz natürlich, dass ein Kerl einen Steifen bei einem so geilen Mädchen bekommt... Und in diesem Aufzug..."
+
+# game/dialogues/alicetalk.rpy:5447
+translate german alice_domine_drink_df544769:
+
+    # Alice_16 "Ах, вот так, да?! Вообще-то, тебя должен настораживать мой внешний вид!"
+    Alice_16 "Oh, das ist es also! Eigentlich solltest du über mein Aussehen erschrocken sein!"
+
+# game/dialogues/alicetalk.rpy:5448
+translate german alice_domine_drink_0ed5c76a:
+
+    # Max_03 "А меня заводит! С огромной радостью бы залез руками под этот костюмчик, да вот только они связаны..."
+    Max_03 "Mich törnt das an! Ich würde gerne unter das Kostüm schlüpfen, aber die Hände sind gefesselt..."
+
+# game/dialogues/alicetalk.rpy:5450
+translate german alice_domine_drink_36743246:
+
+    # Alice_17 "Вот ты наглец, Макс! Думаешь, это шуточки такие и я тебя связала ради развлечений?"
+    Alice_17 "Du hast vielleicht Nerven, Max! Glaubst du, das ist ein Scherz und ich habe dich zum Spaß gefesselt?"
+
+# game/dialogues/alicetalk.rpy:5451
+translate german alice_domine_drink_b2cf343b:
+
+    # Max_07 "Нет... Просто у меня не получается по другому реагировать на тебя!"
+    Max_07 "Nein... Ich habe einfach keine andere Möglichkeit, auf dich zu reagieren!"
+
+# game/dialogues/alicetalk.rpy:5452
+translate german alice_domine_drink_05e0ace7:
+
+    # Alice_05 "Ох... Это так мило... У моего младшего брата-извращенца на меня стоит. Должно быть это так мучительно, просто смотреть и мечтать обо мне!"
+    Alice_05 "Oh... Das ist so süß... Mein perverser kleiner Bruder hat einen Steifen für mich. Es muss so unerträglich sein, mich nur zu sehen und von mir zu träumen!"
+
+# game/dialogues/alicetalk.rpy:5453
+translate german alice_domine_drink_ba4b2a5d:
+
+    # Max_10 "А то! Очень мучительно..."
+    Max_10 "Ja, das ist es! Es ist sehr schmerzhaft..."
+
+# game/dialogues/alicetalk.rpy:5454
+translate german alice_domine_drink_be80be0c:
+
+    # Alice_03 "Ха! В таком случае, теперь я знаю, как тебя нужно наказывать... Как тебе это!"
+    Alice_03 "Ha! Wenn das so ist, weiß ich jetzt, wie du bestraft werden solltest... Wie gefällt dir das?"
+
+# game/dialogues/alicetalk.rpy:5456
+translate german alice_domine_drink_f8bdc8dd:
+
+    # Max_05 "Ого! Эти офигенные сисечки всегда радуют мои глаза!"
+    Max_05 "Wow, diese geilen Brüste lassen mir die Augen überlaufen!"
+
+# game/dialogues/alicetalk.rpy:5457
+translate german alice_domine_drink_d2c401b7:
+
+    # Alice_06 "Ну ещё бы! Ты же наверняка их уже наизусть запомнил, пока подглядывал за мной в душе... Ведь я ловила тебя на этом так много раз, что даже страшно предстваить, сколько раз ты подглядывал за мной, пока я не видела!"
+    Alice_06 "Natürlich! Du musst sie auswendig gelernt haben, während du mich unter der Dusche beobachtet hast... Schließlich habe ich dich schon so oft dabei erwischt, dass ich mir gar nicht vorstellen kann, wie oft du mich angeguckt hast, wenn ich nicht hingesehen habe!"
+
+# game/dialogues/alicetalk.rpy:5458
+translate german alice_domine_drink_d3d28512:
+
+    # Max_02 "Я бы сказал, соотношение примерно 50 на 50. Около того..."
+    Max_02 "Ich würde sagen, das Verhältnis ist etwa 50/50. Was das angeht..."
+
+# game/dialogues/alicetalk.rpy:5459
+translate german alice_domine_drink_47a27bae:
+
+    # Alice_13 "Ну и что ты там, подглядывая в душе, мечтал со мной сделать, а Макс?! Признавайся!" nointeract
+    Alice_13 "Wovon hast du geträumt, Max, mich in der Dusche zu beobachten?! Raus mit der Sprache!" nointeract
+
+# game/dialogues/alicetalk.rpy:5463
+translate german alice_domine_drink_b8f1c5c0:
+
+    # Alice_05 "И правильно! Твои похотливые мысли и фантазии обо мне должны таковыми и оставаться. Но это полбеды! В добавок к этому, что ты ещё должен?"
+    Alice_05 "Und das zu Recht! Deine lüsternen Gedanken und Fantasien über mich sollten so bleiben. Aber das ist nur die halbe Miete! Was schuldest du darüber hinaus noch?"
+
+# game/dialogues/alicetalk.rpy:5464
+translate german alice_domine_drink_910c3a69:
+
+    # Max_10 "Ай! Моё ухо! Наверно... не подглядывать за тобой..."
+    Max_10 "Au! Mein Ohr! Ich denke... Ich beobachte dich nicht mehr..."
+
+# game/dialogues/alicetalk.rpy:5466
+translate german alice_domine_drink_51dc47bd:
+
+    # Alice_03 "А твоя штуковина, похоже, всё ещё считает иначе, как и ты! Или всё из-за того, что я глажу по нему своей плёткой? Учти, я могу сделать то, для чего она предназначена!"
+    Alice_03 "Aber dein Ding scheint immer noch anders zu denken, genau wie du! Oder liegt es daran, dass ich ihn mit meiner Gerte streichle? Aber ich kann tun, wofür es gedacht ist!"
+
+# game/dialogues/alicetalk.rpy:5467
+translate german alice_domine_drink_3ff39e85:
+
+    # Max_08 "Э-э-э... Может, не надо этого?"
+    Max_08 "Ähm ... Vielleicht sollten wir das nicht tun?"
+
+# game/dialogues/alicetalk.rpy:5468
+translate german alice_domine_drink_aef33c3d:
+
+    # Alice_07 "А может, наоборот, надо? Как думаешь, если я шлёпну по нему, то твоё возбуждение в миг исчезнет?"
+    Alice_07 "Oder sollte ich das Gegenteil tun? Meinst du, wenn ich ihm eine knalle, wäre deine Aufregung im Nu verflogen?"
+
+# game/dialogues/alicetalk.rpy:5469
+translate german alice_domine_drink_9dab96f3:
+
+    # Max_14 "Уверен, всё дело именно в том, что ты гладишь его!"
+    Max_14 "Ich bin sicher, es geht nur darum, dass du ihn streichelst!"
+
+# game/dialogues/alicetalk.rpy:5471
+translate german alice_domine_drink_f51d7b9d:
+
+    # Alice_05 "Тогда я, пожалуй, это прекращу и в следующий раз, если таковой будет, уже не буду такой... деликатной... Или ты хочешь уже сейчас пожёстче?!"
+    Alice_05 "Dann höre ich damit auf, und das nächste Mal, wenn es soweit ist, werde ich nicht so... zart... Oder willst du jetzt hart werden?!"
+
+# game/dialogues/alicetalk.rpy:5472
+translate german alice_domine_drink_d572dd23:
+
+    # Max_13 "Нет-нет, не надо! Я этого не хочу!"
+    Max_13 "Nein, nein, nicht! Ich will es nicht!"
+
+# game/dialogues/alicetalk.rpy:5473
+translate german alice_domine_drink_b47c30be:
+
+    # Alice_03 "Ха-ха... Боишься? Это хорошо... Так и должно быть, ты должен меня бояться!"
+    Alice_03 "Ha-ha... Angst? Das ist gut... So sollte es sein, du solltest Angst vor mir haben!"
+
+# game/dialogues/alicetalk.rpy:5474
+translate german alice_domine_drink_992e79da:
+
+    # Alice_05 "В общем, я предупредила тебя в последний раз. Дальше всё зависит от тебя. Увижу, что подглядываешь - накажу или сама, или это будет мама! Понял меня?!"
+    Alice_05 "Wie auch immer, ich habe dich eine letztes Mal gewarnt. Von nun an liegt die Entscheidung bei dir. Wenn ich sehe, dass du spionierst, werde ich dich bestrafen, oder es wird Mom sein! Hast du mich verstanden?!"
+
+# game/dialogues/alicetalk.rpy:5475
+translate german alice_domine_drink_b6efeed9:
+
+    # Max_11 "Понял-понял..."
+    Max_11 "Ich hab's, kappiert..."
+
+# game/dialogues/alicetalk.rpy:5477
+translate german alice_domine_drink_832d4481:
+
+    # Alice_12 "Это не шутка, Макс - я тебя предупредила! Всё, вали отсюда." nointeract
+    Alice_12 "Das ist kein Scherz, Max - ich habe dich gewarnt! Das war's. Raus hier." nointeract
+
+# game/dialogues/alicetalk.rpy:5483
+translate german alice_domine_drink_a46cd81a:
+
+    # Alice_05 "Поближе, значит... Настолько ближе? Или ты хотел бы быть ещё ближе к моей груди?!"
+    Alice_05 "Also näher ran... So nah? Oder möchtest du noch näher an meine Brüste herankommen?!"
+
+# game/dialogues/alicetalk.rpy:5484
+translate german alice_domine_drink_5d0d17a3:
+
+    # Max_05 "О да! Я бы хотел ещё ближе!"
+    Max_05 "Oh ja, ich hätte es gerne noch näher!"
+
+# game/dialogues/alicetalk.rpy:5485
+translate german alice_domine_drink_b60fd174:
+
+    # Alice_07 "Какая жалость! Похоже, кто-то привязан к стулу и не может быть так близко ко мне, как ему хотелось... Должно быть, обидно?" nointeract
+    Alice_07 "Wie schade! Sieht aus, als ob jemand an einen Stuhl gefesselt ist und mir nicht so nahe sein kann, wie er es gerne hätte... Das muss eine Schande sein, nicht wahr?" nointeract
+
+# game/dialogues/alicetalk.rpy:5489
+translate german alice_domine_drink_a3418458:
+
+    # Alice_16 "Вот ещё! Такое мог попросить только очень плохой мальчик, который совершенно не понимает, как себя надо вести со своей госпожой!"
+    Alice_16 "Niemals! Nur ein sehr böser Junge, der nicht weiß, wie man sich seiner Herrin gegenüber verhält, würde so etwas verlangen!"
+
+# game/dialogues/alicetalk.rpy:5490
+translate german alice_domine_drink_cb32de16:
+
+    # Max_08 "А как надо?"
+    Max_08 "Wie soll es sein?"
+
+# game/dialogues/alicetalk.rpy:5492
+translate german alice_domine_drink_1001ec6a:
+
+    # Alice_12 "Услужливо! Если ты ещё до сих пор это не усвоил, то я просто обязана тебя наказать... Как ты того и заслужил!"
+    Alice_12 "Höflich! Wenn du das noch nicht gelernt hast, muss ich dich bestrafen... Du hast es verdient!"
+
+# game/dialogues/alicetalk.rpy:5493
+translate german alice_domine_drink_b1b05964:
+
+    # Max_10 "Эй! В смысле плёткой что ли?!"
+    Max_10 "He! Was meinst du, eine Gerte oder so?!"
+
+translate german strings:
+
+    # game/dialogues/alicetalk.rpy:5459
+    old "Как-то мне страшно это озвучивать..."
+    new "Irgendwie habe ich Angst, es auszusprechen..."
+
+    # game/dialogues/alicetalk.rpy:5459
+    old "Для начала, я бы полюбовался твоими прелестями поближе!"
+    new "Erst will ich mir deine Reize genauer ansehen!"
+
+    # game/dialogues/alicetalk.rpy:5485
+    old "А ты меня развяжи и мы это исправим..."
+    new "Du bindest mich los und wir bringen es in Ordnung..."
+
+    # game/dialogues/alicetalk.rpy:5485
+    old "Раз я привязан, то на меня можно очень удобно присесть..."
+    new "Da ich gefesselt bin, kannst du dich ganz bequem auf mich setzen..."
+
+# TODO: Translation updated at 2021-10-08 00:56
+
+# game/dialogues/alicetalk.rpy:5444
+translate german alice_domine_drink_c8a300e9:
+
+    # Alice_12 "Хм... А я смотрю, Макс, тебе нравится то, что я делаю. Задницу подставлять боишься, а вот демонстрировать, насколько ты \"большой\" извращенец и близко не стесняешься!"
+    Alice_12 "Hmm ... Ich sehe, dir gefällt, was ich tue, Max. Du hast Angst, dir den Arsch aufreißen zu lassen, aber du bist nicht zu schüchtern, mir zu zeigen, was für ein \"Perverser\" du bist!"
+
+# game/dialogues/alicetalk.rpy:5458
+translate german alice_domine_drink_796711e9:
+
+    # Alice_06 "Ну ещё бы! Ты же наверняка их уже наизусть запомнил, пока подглядывал за мной в душе... Ведь я ловила тебя на этом так много раз, что даже страшно представить, сколько раз ты подглядывал за мной, пока я не видела!"
+    Alice_06 "Natürlich! Du musst sie schon auswendig kennen, während du mich unter der Dusche beobachtet hast... Schließlich habe ich dich schon so oft dabei erwischt, dass ich mir gar nicht vorstellen kann, wie oft du mich angestarrt hast, während ich nicht hingesehen habe!"
+
+# game/dialogues/alicetalk.rpy:5487
+translate german alice_domine_drink_d6c3bcdd:
+
+    # Alice_04 "Ох, я ценю такую услужливость, но твои похотливые мысли и фантазии обо мне должны таковыми и оставаться. В добавок к этому, что ты ещё должен?"
+    Alice_04 "Oh, ich weiß dein Entgegenkommen zu schätzen, aber deine lüsternen Gedanken und Fantasien über mich müssen so bleiben. Was schuldest du darüber hinaus noch?"
+
+# game/dialogues/alicetalk.rpy:5488
+translate german alice_domine_drink_64ff5657:
+
+    # Max_07 "Наверно... не подглядывать за тобой..."
+    Max_07 "Au! Mein Ohr! Ich denke... Ich beobachte dich nicht mehr..."
+
+# game/dialogues/alicetalk.rpy:5493
+translate german alice_domine_drink_7fe3c6f4:
+
+    # Alice_03 "И правда! Ах, как приятно порой бывает сесть и расслабиться... Приятно, что ты не просто извращенец, а галантный извращенец!"
+    Alice_03 "In der Tat! Ach, wie schön ist es manchmal, sich hinzusetzen und zu entspannen... Es ist schön, nicht nur ein Perverser zu sein, sondern ein eleganter Perverser!"
+
+# game/dialogues/alicetalk.rpy:5494
+translate german alice_domine_drink_916f938b:
+
+    # Max_04 "Таким стройным и красивым ножкам надо давать отдых."
+    Max_04 "Solch schlanken und schönen Schenkeln sollte man eine Pause gönnen."
+
+# game/dialogues/alicetalk.rpy:5495
+translate german alice_domine_drink_7c75c335:
+
+    # Alice_08 "Ну а моя грудь... Не поверю, что ты хотел только любоваться!"
+    Alice_08 "Und meine Brüste... Ich kann nicht glauben, dass du nur bewundern willst!"
+
+# game/dialogues/alicetalk.rpy:5496
+translate german alice_domine_drink_ce1b1967:
+
+    # Max_02 "Не только! Я и без рук могу дарить приятные ощущения..."
+    Max_02 "Nicht nur das! Ich kann angenehme Empfindungen ohne meine Hände erzeugen..."
+
+# game/dialogues/alicetalk.rpy:5499
+translate german alice_domine_drink_63f01203:
+
+    # Alice_07 "Смотри, Макс! Я не хочу разочаровываться... Ах-х! Это хорошо... Но если мне хоть что-то не понравится, то я..." nointeract
+    Alice_07 "Schau, Max! Ich möchte nicht enttäuscht werden... Ahh! Das ist gut... Aber wenn mir etwas nicht gefällt, dann..." nointeract
+
+# game/dialogues/alicetalk.rpy:5508
+translate german alice_domine_drink_afraid_to_say_51dc47bd:
+
+    # Alice_03 "А твоя штуковина, похоже, всё ещё считает иначе, как и ты! Или всё из-за того, что я глажу по нему своей плёткой? Учти, я могу сделать то, для чего она предназначена!"
+    Alice_03 "Und dein Ding scheint immer noch anders zu denken, genau wie du! Oder liegt es daran, dass ich ihn mit meiner Gerte streichle? Aber ich kann tun, wofür es gedacht ist!"
+
+# game/dialogues/alicetalk.rpy:5509
+translate german alice_domine_drink_afraid_to_say_3ff39e85:
+
+    # Max_08 "Э-э-э... Может, не надо этого?"
+    Max_08 "Ähm ... Vielleicht sollten wir das nicht tun?"
+
+# game/dialogues/alicetalk.rpy:5510
+translate german alice_domine_drink_afraid_to_say_aef33c3d:
+
+    # Alice_07 "А может, наоборот, надо? Как думаешь, если я шлёпну по нему, то твоё возбуждение в миг исчезнет?"
+    Alice_07 "Oder sollte ich das Gegenteil tun? Meinst du, wenn ich ihm eine knalle, wäre deine Aufregung im Nu verflogen?"
+
+# game/dialogues/alicetalk.rpy:5511
+translate german alice_domine_drink_afraid_to_say_9dab96f3:
+
+    # Max_14 "Уверен, всё дело именно в том, что ты гладишь его!"
+    Max_14 "Ich bin sicher, es geht nur darum, dass du ihn streichelst!"
+
+# game/dialogues/alicetalk.rpy:5514
+translate german alice_domine_drink_afraid_to_say_f51d7b9d:
+
+    # Alice_05 "Тогда я, пожалуй, это прекращу и в следующий раз, если таковой будет, уже не буду такой... деликатной... Или ты хочешь уже сейчас пожёстче?!"
+    Alice_05 "Dann höre ich damit auf, und das nächste Mal, wenn es soweit ist, werde ich nicht so... zart... Oder willst du jetzt hart werden?!"
+
+# game/dialogues/alicetalk.rpy:5515
+translate german alice_domine_drink_afraid_to_say_d572dd23:
+
+    # Max_13 "Нет-нет, не надо! Я этого не хочу!"
+    Max_13 "Nein, nein, nicht! Ich will es nicht!"
+
+# game/dialogues/alicetalk.rpy:5516
+translate german alice_domine_drink_afraid_to_say_b47c30be:
+
+    # Alice_03 "Ха-ха... Боишься? Это хорошо... Так и должно быть, ты должен меня бояться!"
+    Alice_03 "Ha-ha... Angst? Das ist gut... So sollte es sein, du solltest Angst vor mir haben!"
+
+# game/dialogues/alicetalk.rpy:5517
+translate german alice_domine_drink_afraid_to_say_992e79da:
+
+    # Alice_05 "В общем, я предупредила тебя в последний раз. Дальше всё зависит от тебя. Увижу, что подглядываешь - накажу или сама, или это будет мама! Понял меня?!"
+    Alice_05 "Wie auch immer, ich habe dir eine letzte Warnung ausgesprochen. Von nun an liegt die Entscheidung bei dir. Wenn ich sehe, dass du spionierst, werde ich dich bestrafen, oder es wird Mom sein! Hast du mich verstanden?!"
+
+# game/dialogues/alicetalk.rpy:5518
+translate german alice_domine_drink_afraid_to_say_b6efeed9:
+
+    # Max_11 "Понял-понял..."
+    Max_11 "Ich habe es verstanden..."
+
+# game/dialogues/alicetalk.rpy:5521
+translate german alice_domine_drink_afraid_to_say_832d4481:
+
+    # Alice_12 "Это не шутка, Макс - я тебя предупредила! Всё, вали отсюда." nointeract
+    Alice_12 "Das ist kein Scherz, Max - ich habe dich gewarnt! Das war's. Raus hier." nointeract
+
+# game/dialogues/alicetalk.rpy:5531
+translate german alice_domine_drink_caressing_tongue_2daa297f:
+
+    # Alice_09 "[like!t]Ахх, Макс! Ты так приятно и нежно ласкаешь языком мои сосочки... Ммм... Я чувствую, твой дружок стал твёрже! Меня это очень возбуждает! Д-а-а..." nointeract
+    Alice_09 "[like!t]Ahh, Max! Du berührst meine Nippel so schön und sanft mit deiner Zunge... Hmmm... Ich spüre, wie dein Freund härter wird! Das macht mich wirklich an! Ja-a-a..." nointeract
+
+# game/dialogues/alicetalk.rpy:5537
+translate german alice_domine_drink_caressing_tongue_281fa531:
+
+    # Alice_08 "Охх... Да, Макс, ещё! Ммм... Хорошо... Не знаю где ты научился это делать, но получается у тебя... Ах-х-х... Превосходно! Ты, наверно, и целуешься так же хорошо?" nointeract
+    Alice_08 "Ohhh... Ja, Max, mehr! Hmmm... Okay, äh... Ich weiß nicht, wo du das gelernt hast, aber du bist gut darin... Ahhhh... Das ist perfekt. Wahrscheinlich kannst du auch gut küssen?" nointeract
+
+# game/dialogues/alicetalk.rpy:5544
+translate german alice_domine_drink_caressing_tongue_4a53814e:
+
+    # Alice_16 "[dont_like!t]Ай! Ты слишком грубо это делаешь! Я люблю грубость, но не до такой же степени... Такое мог сделать только очень плохой мальчик, который совершенно не знает, как надо ублажать свою госпожу!"
+    Alice_16 "[dont_like!t]Autsch! Du machst es zu grob! Ich mag es schon etwas gröber, das ist zu viel... Nur ein sehr böser Junge, der nicht weiß, wie er seiner Herrin gefallen kann, würde so etwas tun!"
+
+# game/dialogues/alicetalk.rpy:5551
+translate german alice_domine_drink_caressing_lips_2e84dff8:
+
+    # Alice_09 "[like!t]Ахх, Макс! Ты так приятно и нежно посасываешь мои сосочки... Ммм... Я чувствую, твой дружок стал твёрже! Меня это очень возбуждает! Д-а-а..." nointeract
+    Alice_09 "[like!t]Ahh, Max! Du berührst meine Nippel so schön und sanft mit deiner Zunge... Hmmm... Ich spüre, wie dein Freund härter wird! Das macht mich wirklich an! Ja-a-a..." nointeract
+
+# game/dialogues/alicetalk.rpy:5557
+translate german alice_domine_drink_caressing_lips_281fa531:
+
+    # Alice_08 "Охх... Да, Макс, ещё! Ммм... Хорошо... Не знаю где ты научился это делать, но получается у тебя... Ах-х-х... Превосходно! Ты, наверно, и целуешься так же хорошо?" nointeract
+    Alice_08 "Ohhh... Ja, Max, mehr! Hmmm... Okay, äh... Ich weiß nicht, wo du das gelernt hast, aber du bist gut darin... Ahhhh... Das ist perfekt. Wahrscheinlich kannst du auch gut küssen?" nointeract
+
+# game/dialogues/alicetalk.rpy:5564
+translate german alice_domine_drink_caressing_lips_4a53814e:
+
+    # Alice_16 "[dont_like!t]Ай! Ты слишком грубо это делаешь! Я люблю грубость, но не до такой же степени... Такое мог сделать только очень плохой мальчик, который совершенно не знает, как надо ублажать свою госпожу!"
+    Alice_16 "[dont_like!t]Autsch! Du machst es zu grob! Ich mag es schon etwas gröber, das ist zu viel... Nur ein sehr böser Junge, der nicht weiß, wie er seiner Herrin gefallen kann, würde so etwas tun!"
+
+# game/dialogues/alicetalk.rpy:5569
+translate german alice_domine_drink_kiss_9d6bbf0d:
+
+    # Max_20 "{m}Надеюсь, моего опыта поцелуев хватит, чтобы Алиса приятно удивилась... Она так страстно целуется и трётся о мой член, что вполне могла бы в порыве страсти взять и отсосать мне! Это было бы круто!{/m}" nointeract
+    Max_20 "{m}Ich hoffe, meine Kusserfahrung reicht aus, um Alice eine angenehme Überraschung zu bereiten... Sie küsst und reibt meinen Schwanz so leidenschaftlich, dass sie mir in einem Anfall von Leidenschaft auch den Schwanz blasen könnte! Das wäre großartig!{/m}" nointeract
+
+# game/dialogues/alicetalk.rpy:5577
+translate german alice_domine_drink_kiss_1d65d60e:
+
+    # Max_19 "[like!t]{m}Эх, если бы мои руки не были привязаны к стулу, мне бы не пришлось так стараться и мои прикосновения завели её ещё сильнее. Но судя по тому, как сладко наши язычки играют с друг другом, у меня всё получается и так!{/m}"
+    Max_19 "[like!t]{m}Eh, wenn meine Hände nicht an den Stuhl gefesselt wären, müsste ich mich nicht so anstrengen und meine Berührung würde sie noch mehr anheizen. Aber danach zu urteilen, wie zärtlich unsere Zungen miteinander spielten, gelingt es mir so schon ganz gut!{/m}"
+
+# game/dialogues/alicetalk.rpy:5580
+translate german alice_domine_drink_kiss_f5f2f359:
+
+    # Alice_06 "Всё, Макс, я больше не могу! Эти шортики не должны мешать тому, что я хочу от тебя получить..."
+    Alice_06 "Das war's, Max, ich kann nicht mehr! Diese Shorts sollten nicht mit dem kollidieren, was ich von dir will..."
+
+# game/dialogues/alicetalk.rpy:5581
+translate german alice_domine_drink_kiss_b091f74a:
+
+    # Max_03 "Оу... И что же это?"
+    Max_03 "Oh... Und was ist das?"
+
+# game/dialogues/alicetalk.rpy:5582
+translate german alice_domine_drink_kiss_bcca434a:
+
+    # Alice_08 "Ни слова, Макс! Это должно остаться нашей тайной, ведь брат с сестрой не должны таким заниматься... Но я {b}ХОЧУ{/b}!"
+    Alice_08 "Kein Wort, Max! Es sollte unser Geheimnis bleiben, denn ein Bruder und eine Schwester sollten so etwas nicht tun... Aber ich {b}WILL{/b} es!"
+
+# game/dialogues/alicetalk.rpy:5585
+translate german alice_domine_drink_kiss_15083d57:
+
+    # Alice_09 "Ахх... Так намного лучше... Ммм... Он такой твёрдый и горячий! Я совсем сошла с ума, раз делаю такое... Ох, как же хорошо!"
+    Alice_09 "Ahhh... Das ist viel besser... Hmmm... Es ist so hart und heiß! Ich bin total verrückt, weil ich das mache... Oh, das tut so gut!"
+
+# game/dialogues/alicetalk.rpy:5586
+translate german alice_domine_drink_kiss_f0c0b220:
+
+    # Max_20 "Ухх... Это точно! Но почему бы не посходить с ума, если об этом никто не узнает?"
+    Max_20 "Ahh... Das ist eindeutig! Aber warum nicht einmal so richtig ausflippen, wenn niemand davon erfährt?"
+
+# game/dialogues/alicetalk.rpy:5587
+translate german alice_domine_drink_kiss_9d5fdb90:
+
+    # Alice_11 "Вот именно! Д-а-а... Я хочу скользить киской по твоему мощному члену до тех пор, пока не кончу! Как приятно... Держись, Макс, ведь я буду это делать это всё быстрее и быстрее... Ах-х-х..."
+    Alice_11 "Ganz genau! Ja... Ich will meine Pussy auf deinen mächtigen Schwanz gleiten lassen, bis ich komme! Das fühlt sich gut an... Halte durch, Max, denn ich werde es immer schneller machen... Ahhhh..."
+
+# game/dialogues/alicetalk.rpy:5590
+translate german alice_domine_drink_kiss_cdcd1179:
+
+    # Max_19 "{m}Да я этому только рад, сестрёнка! Как бы мне не кончить от её стонов и жарких поцелуев... Так можно ей всё удовольствие обломать, а после схлопотать вдогонку по заднице её стеком! Мне лучше и правда держаться, но как же это непросто...{/m}" nointeract
+    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen undden heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
+
+# game/dialogues/alicetalk.rpy:5594
+translate german alice_domine_drink_kiss_9e72ee84:
+
+    # Alice_10 "Ох, Божечки! Макс! Я сейчас кончу... Д-а-а... Ммм... Ещё немножко и... Ах! Да-а-а... Как же это было классно! Ох..."
+    Alice_10 "Oh, mein Gott! Max! Ich komme gleich... Ja, ja, ja... Hmmm... Ein bisschen mehr und... Ah! Ja... Das war so gut. Oh..."
+
+# game/dialogues/alicetalk.rpy:5595
+translate german alice_domine_drink_kiss_09ec5b74:
+
+    # Max_05 "Вау, Алиса! Хорошо порезвилась?"
+    Max_05 "Wow, Alice! Hattest du eine gute Zeit?"
+
+# game/dialogues/alicetalk.rpy:5596
+translate german alice_domine_drink_kiss_e903bfdb:
+
+    # Alice_06 "Фух... Это было нечто... Макс... Я не совсем ЭТО планировала! Но..."
+    Alice_06 "Puh... Das war geil... Max... Das war nicht gerade das, was ich geplant hatte! Aber..."
+
+# game/dialogues/alicetalk.rpy:5597
+translate german alice_domine_drink_kiss_216d308b:
+
+    # Max_02 "Но, может ты поможешь мне с кое-чем?"
+    Max_02 "Aber vielleicht kannst du mir bei etwas helfen?"
+
+# game/dialogues/alicetalk.rpy:5600
+translate german alice_domine_drink_kiss_4f93df2a:
+
+    # Alice_05 "Ладно я, но вот ты точно не должен забывать, Макс, что мы тут делаем! Наказываем тебя!"
+    Alice_05 "Von mir aus, aber du solltest auf keinen Fall vergessen, was wir hier tun, Max! Dich zu bestrafen!"
+
+# game/dialogues/alicetalk.rpy:5601
+translate german alice_domine_drink_kiss_032fa13d:
+
+    # Max_10 "Ну Алиса! Так нельзя..."
+    Max_10 "Komm schon, Alice! Das kannst du nicht tun..."
+
+# game/dialogues/alicetalk.rpy:5602
+translate german alice_domine_drink_kiss_cce00283:
+
+    # Alice_13 "Что нельзя, так это подглядывать за мной! Но знаешь, кое-чем я тебе всё же помогу..."
+    Alice_13 "Was du nicht darfst, ist mir nachspionieren! Aber weißt du was, ich kann dir bei etwas helfen..."
+
+# game/dialogues/alicetalk.rpy:5603
+translate german alice_domine_drink_kiss_b757c018:
+
+    # Max_07 "Правда?!"
+    Max_07 "Wirklich?!"
+
+# game/dialogues/alicetalk.rpy:5606
+translate german alice_domine_drink_kiss_d00a5927:
+
+    # Alice_05 "Отвяжу тебя от стула и ты сможешь уйти без какого-либо вреда для здоровья. А в остальном помоги себе сам! Всё, вали отсюда." nointeract
+    Alice_05 "Ich werde dich vom Stuhl losbinden und du kannst gehen, ohne dass deine Gesundheit Schaden nimmt. Ansonsten hilf dir selbst! Das war's. Raus hier." nointeract
+
+# game/dialogues/alicetalk.rpy:5613
+translate german alice_domine_drink_kiss_9299017f:
+
+    # Alice_16 "[dont_like!t]Макс! С чего ты взял, что мне понравится, если ты так грубо будешь напирать своим языком?! Такое мог сделать только очень плохой мальчик, который совершенно не знает, как надо себя вести со своей госпожой!"
+    Alice_16 "[dont_like!t]Max! Wie kommst du darauf, dass ich es mag, wenn du deine Zunge so ungehobelt benutzt?! Nur ein sehr böser Junge, der nicht weiß, wie er sich seiner Herrin gegenüber verhalten soll, würde so etwas tun!"
+
+# game/dialogues/alicetalk.rpy:5617
+translate german alice_domine_drink_how_should_cb32de16:
+
+    # Max_08 "А как надо?"
+    Max_08 "Wie sollte es sein?"
+
+# game/dialogues/alicetalk.rpy:5620
+translate german alice_domine_drink_how_should_2bdfa3d2:
+
+    # Alice_12 "Приятно и нежно! Если ты так не умеешь, то я просто обязана тебя наказать... Как ты того и заслужил!"
+    Alice_12 "Schön und sanft! Wenn du das nicht schaffst, muss ich dich bestrafen... Du hast es verdient!"
+
+# game/dialogues/alicetalk.rpy:5621
+translate german alice_domine_drink_how_should_b1b05964:
+
+    # Max_10 "Эй! В смысле плёткой что ли?!"
+    Max_10 "He! Was meinst du, eine Peitsche oder so?!"
+
+translate german strings:
+
+    # game/dialogues/alicetalk.rpy:5499
+    old "{i}ласкать её грудь языком{/i}"
+    new "{i}ihre Brüste mit der Zunge liebkosen{/i}"
+
+    # game/dialogues/alicetalk.rpy:5499
+    old "{i}ласкать её грудь губами{/i}"
+    new "{i}ihre Brüste mit den Lippen liebkosen{/i}"
+
+    # game/dialogues/alicetalk.rpy:5531
+    old "{i}продолжить ласкать{/i}"
+    new "{i}Weiter liebkosen{/i}"
+
+    # game/dialogues/alicetalk.rpy:5537
+    old "{i}целоваться с Алисой{/i}"
+    new "{i}mit Alice rummachen{/i}"
+
+    # game/dialogues/alicetalk.rpy:5569
+    old "{i}пытаться впечатлить{/i}"
+    new "{i}versuche zu beeindrucken{/i}"
+
+    # game/dialogues/alicetalk.rpy:5590
+    old "{i}дать Алисе кончить{/i}"
+    new "{i}lass Alice kommen{/i}"
+

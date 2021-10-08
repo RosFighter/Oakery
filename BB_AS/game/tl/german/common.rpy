@@ -1174,3 +1174,15 @@ translate german strings:
     old "Copies the errors.txt file to the clipboard as Markdown for Discord."
     new "Copies the errors.txt file to the clipboard as Markdown for Discord."
 
+# TODO: Translation updated at 2021-10-08 10:12
+
+translate german strings:
+
+    # renpy/common/00accessibility.rpy:180
+    old "High Contrast Text"
+    new "hoher Text-Kontrast"
+
+    # renpy/common/00preferences.rpy:493
+    old "high contrast text"
+    new "hoher Text-Kontrast"
+

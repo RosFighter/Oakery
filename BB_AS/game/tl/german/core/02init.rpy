@@ -610,3 +610,15 @@ translate german strings:
     old "Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"
     new "Und, hast du alles noch einmal probiert?\n{i}(Lisa zur Schule verabschieden){/i}"
 
+# TODO: Translation updated at 2021-10-07 01:05
+
+translate german strings:
+
+    # game/core/02init.rpy:128
+    old "Вот деньги, чтобы ты не лез к Лизе..."
+    new "Hier ist Geld, damit du Lisa nicht auf die Nerven gehst..."
+
+    # game/core/02init.rpy:128
+    old "У меня нет денег, чтобы ты не лез к Лизе."
+    new "Ich habe kein Geld, also halte dich von Lisa fern."
+

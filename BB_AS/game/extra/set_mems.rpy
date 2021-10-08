@@ -133,7 +133,8 @@ init python:
     def set_sunscreen():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = 'c' if 'kira' in persistent.mems_var else 'b'
-        mg.social = 100
+        mg.social = renpy.random.randint(143, 197) / 10
+        mg.massage = renpy.random.randint(134, 174) / 10
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         if renpy.seen_label('massage_sunscreen.hips'):
             al.dcv.intrusion.stage = 7
@@ -155,8 +156,8 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress()
-        mg.social = 100
-        mg.massage = 100
+        mg.social = renpy.random.randint(258, 197) / 10 #27
+        mg.massage = renpy.random.randint(58, 78) / 10 #6.8
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         dr_var = [0,]
@@ -171,7 +172,6 @@ init python:
         if 'kira' in persistent.mems_var:
             dr_var.append(5)
         var = renpy.random.choice(dr_var)
-        # print dr_var, var
         al.dress, al.req.result = {
                 0 : ('a', ''),
                 1 : ('a', 'nopants'),
@@ -200,7 +200,6 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
-        mg.massage = 8
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.flags.hip_mass = renpy.random.randint(1, 2)
@@ -211,15 +210,12 @@ init python:
         al.daily.drink = 2
 
         my_scope = {
-                'tm'        : '22:00',
-                'alice'     : al,
-                'mgg'       : mg,
-                # '_drink'    : 2,
-                # 'ch20'     : Chance(700),
-                # 'ch25'     : Chance(875),
-                '_pose'     : renpy.random.choice(['03', '04']),
-                # '_dress'    : mg.dress + al.dress,
-                'chars'     : ['kira'],
+                'tm'            : '22:00',
+                'alice'         : al,
+                'mgg'           : mg,
+                '_pose'         : renpy.random.choice(['03', '04']),
+                'chars'         : ['kira'],
+                'rand_result'   : True,
             }
         return my_scope
 
@@ -228,7 +224,7 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
-        mg.sex = 11
+        mg.sex = renpy.random.randint(123, 167) / 10 #14.2
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.flags.hip_mass = renpy.random.randint(1, 2)
         al.dcv.intrusion.stage = 7
@@ -250,7 +246,7 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
-        mg.sex = 15
+        mg.sex = renpy.random.randint(168, 197) / 10 #18
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.flags.hip_mass = renpy.random.randint(1, 2)
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
@@ -270,6 +266,7 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress() if tl.dress == 'd' else get_max_dress('a')
+        mg.massage = renpy.random.randint(70, 90) / 10#8.7
 
         my_scope = {
                 'pose3_1' : renpy.random.choice(['01', '02', '03']),
@@ -284,6 +281,7 @@ init python:
         tl.dress = get_lisa_dress()
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
+        mg.massage = renpy.random.randint(65, 80) / 10#7.6
         my_scope = {
                 'kissmas'   : False,
                 'lisa'      : tl,
@@ -297,9 +295,11 @@ init python:
         tl.dress = get_lisa_dress(tp='learn')
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress()
+        mg.massage = renpy.random.randint(67, 92) / 10#8.1
         my_scope = {
                 'lisa' : tl,
                 'mgg'  : mg,
+                'rand_result' : True,
             }
         return my_scope
 
@@ -316,8 +316,8 @@ init python:
     # Совсем другой массаж
     def set_kira_bathfj():
         mg        = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.social = 100
-        mg.sex    = 7
+        mg.social = renpy.random.randint(720, 870) / 10
+        mg.sex    = renpy.random.randint(60, 80) / 10
 
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
         tk.flags.m_breast = 1
@@ -340,10 +340,9 @@ init python:
     # Ночные страхи
     def set_spider_in_bed():
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.social = renpy.random.randint(221, 379) / 10.0
+        mg.social = renpy.random.randint(221, 279) / 10.0
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.mood = 250
-        # вписать бельё
         al.dress = renpy.random.choice(['a', 'b']) if 'black_linderie' in persistent.mems_var else 'a'
 
         sm = [None, None]
@@ -352,7 +351,6 @@ init python:
         if 'alice_sleepnaked' in persistent.mems_var:
             sm.extend(['naked', 'not_naked'])
         al.req.result = renpy.random.choice(sm)
-        # print sm
         al.req.req = {None: None, 'sleep':'sleep', 'not_sleep':'sleep', 'naked':'naked', 'not_naked':'naked'}[al.req.result]
         my_scope = {
             'tm'       : '02:30',
@@ -388,7 +386,7 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress()
-        mg.social = 100
+        mg.social = renpy.random.randint(650, 850) / 10
 
         if renpy.seen_label('alice_shower.hug'):
             # были обнимашки во время ивента

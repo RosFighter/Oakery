@@ -1,6 +1,7 @@
 
 label after_breakfast:
     $ dishes_washed = False  # посуда грязная, кто-то должен её помыть
+    $ alice.daily.dishes = 0
     $ spent_time += 60
     $ current_room = house[5]
     $ AvailableActions['dishes'].enabled = True

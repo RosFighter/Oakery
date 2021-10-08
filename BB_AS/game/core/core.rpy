@@ -34,13 +34,13 @@ label Waiting:
 
     $ spent_time = TimeDifference(prevtime, tm) ## реально прошедшее время (до будильника или кат-события)
 
-    python:
-        for char in chars:
-            chars[char].get_plan()
-
-    # если прошло какое-то время, проверим необходимость смены одежды
-    $ ChoiceClothes()
-    $ show_success_message()
+    if any([prevday != day, prevtime != tm]):
+        # если прошло какое-то время, проверим необходимость смены одежды
+        python:
+            for char in chars:
+                chars[char].get_plan()
+        $ ChoiceClothes()
+        $ show_success_message()
 
     if prevtime[:2] != tm[:2]:
         # почасовой сброс
@@ -150,16 +150,13 @@ label eric_time_settings:
             $ flags.l_ab_sexed = False
 
     if prevtime < '01:55' <= tm:
-        if 'sexbody2' in alice.gifts and check_is_home('eric'):
-            if not eric.daily.sweets and (
-                (weekday==4 and random_outcome(70))
-                or (weekday==5 and random_outcome(35))):
+        $ flags.eric_jerk = False
+        if all([check_is_home('eric'), not eric.daily.sweets,
+               'sexbody2' in alice.gifts or flags.lisa_sexed >= 3]):
+            if any([weekday==4 and random_outcome(70),
+                    weekday==5 and random_outcome(35)]):
                 # Эрик дрочит на спящую Алису
                 $ flags.eric_jerk = True
-            else:
-                $ flags.eric_jerk = False
-        else:
-            $ flags.eric_jerk = False
 
     if day != prevday:
         # полночь
@@ -392,6 +389,9 @@ label NewWeek:
             infl[char].sub_m(30)
             infl[char].sub_e(30)
 
+        if 'eric' in chars:
+            eric_obligation.reset()
+
     return
 
 
@@ -404,14 +404,12 @@ label AfterWaiting:
 
     $ MoodNeutralize()
 
-    python:
-        for char in chars:
-            chars[char].get_plan()
-
-    $ ChoiceClothes()
-    $ show_success_message()
-
-    if any([prevday!=day, prevtime!=tm]):
+    if any([prevday != day, prevtime != tm]):
+        python:
+            for char in chars:
+                chars[char].get_plan()
+        $ ChoiceClothes()
+        $ show_success_message()
 
         # если сменилось время суток - нужно остановить текущую музыку
         if any([prevtime < '06:00' <= tm,
@@ -523,7 +521,7 @@ label random_dressed:
                 all([lisa.prev_plan == 'shower', lisa.plan_name == 'read']),
 
                 # после мытья посуды в другую повседневную одежду, если игрок её поменял
-                all([lisa.prev_plan == 'dishes', lisa.plan_name == 'phone', lisa.daily.dishes < 2, lisa.prev_dress != lisa.dress_inf]),
+                all([lisa.prev_plan == 'dishes', lisa.plan_name == 'phone', lisa.daily.dishes < 2, lisa.prev_dress != lisa.dress]),
 
                 # после ванны в обычную, если не остаётся в полотенце
                 all([lisa.prev_plan == 'bath', lisa.plan_name in ['phone', 'homework'], lisa.dress_inf not in ['04a', '04b']]),
@@ -640,13 +638,14 @@ label cam_after_waiting:
 
     $ MoodNeutralize()
 
-    # if any([prevday!=day, prevtime!=tm]):
-    #     если прошло какое-то время, проверим необходимость смены одежды
-    python:
-        for char in chars:
-            chars[char].get_plan()
+    if any([prevday != day, prevtime != tm]):
+        # если прошло какое-то время, проверим необходимость смены одежды
+        python:
+            for char in chars:
+                chars[char].get_plan()
 
-    $ ChoiceClothes()
+        $ ChoiceClothes()
+        $ show_success_message()
 
     $ spent_time = 0
     $ prevday = day
@@ -1594,3 +1593,10 @@ label update_07_0_99:
             for char in chars:
                 chars[char].daily.in_room = 0
                 chars[char].daily.gotcha  = 0
+
+    if _version < '0.06.9.00':
+        if 'eric' in chars:
+            $ eric_obligation = Obligation()
+
+        if kira.dcv.feature.stage >= 11 and kira.dcv.photo.stage < 3:
+            $ kira.dcv.photo.stage = 3

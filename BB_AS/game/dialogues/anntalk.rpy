@@ -515,7 +515,7 @@ label ann_tv_casual_r:
                 Max_06 "[ann_good_mass!t]{m}Неплохой у меня вид открывается! Под полотенцем слегка виднеются её аппетитные сосочки... Это возбуждает ещё сильнее. Вот бы её полотенце начало сползать... Возможно, она бы даже не сразу это поняла, особенно, если ей очень понравился массаж.{/m}"
 
                 # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01 + tv-ero-04-ann-01a
-                scene BG char Ann tv-ero-04
+                scene BG tv-ero-04
                 $ renpy.show('Max tv-ero 04-01'+mgg.dress)
                 show Ann tv-ero 04-01
 
@@ -748,7 +748,7 @@ label ann_yoga_with_max0:       # первая совместная йога
     menu:
         Max_01 "Хорошо, мам. Это я с радостью!"
         "{i}уйти{/i}":
-            pass
+            $ AddRelMood('ann', 0, 50)
     $ spent_time = max((60 - int(tm[-2:])), 30)
     jump Waiting
 
@@ -846,7 +846,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
     menu:
         Max_01 "С радостью, мам! Обязательно..."
         "{i}уйти{/i}":
-            pass
+            $ AddRelMood('ann', 0, 50)
 
     $ ann.flags.help += 1
     $ spent_time = max((60 - int(tm[-2:])), 30)
@@ -909,6 +909,7 @@ label ann_gift_fit1:
     $ ann.gifts.append('fit1')
     $ setting_clothes_by_conditions()
     $ spent_time = 30
+    $ AddRelMood('ann', 50, 150)
     jump Waiting
 
 
@@ -997,7 +998,7 @@ label erofilm2_1:
     if rand_result:
         # (Маме понравился массаж!)
         # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
-        scene BG char Ann tv-ero-04
+        scene BG tv-ero-04
         $ renpy.show('Max tv-ero 04-01'+mgg.dress)
         Max_06 "[ann_good_mass!t]{m}О да! Полотенце сползает всё больше и больше... Какие у неё милые и тёмные сосочки! Интересно, что будет, если я потяну руки ниже, как с Лизой? Вряд ли что-то хорошее...{/m}"
 
@@ -1125,7 +1126,7 @@ label erofilm2_1:
 
     if pose == 'good':
         # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01 + tv-ero-04-ann-01a
-        scene BG char Ann tv-ero-04
+        scene BG tv-ero-04
         $ renpy.show('Max tv-ero 04-01'+mgg.dress)
         show Ann tv-ero 04-01
     else:
@@ -1250,7 +1251,7 @@ label erofilm2_2:
             if rand_result:
                 # (Маме понравился массаж!)
                 # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01
-                scene BG char Ann tv-ero-04
+                scene BG tv-ero-04
                 $ renpy.show('Max tv-ero 04-01'+mgg.dress)
                 Max_06 "[ann_good_mass!t]{m}Ммм... Полотенце сползает всё больше и больше... Вот бы однажды помассировать эти сочные дыньки! Ох, как же сложно удержаться и не запустить туда вниз свои руки...{/m}"
 
