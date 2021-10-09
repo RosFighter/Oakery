@@ -250,3 +250,14 @@ translate english strings:
     old "Следующий снимок"
     new "Next picture"
 
+# TODO: Translation updated at 2021-10-08 23:51
+
+translate english strings:
+
+    # game/extra/extra.rpy:56
+    old "Меня нужно наказать именно так!"
+    new "I need to be punished this way!"
+
+    # game/extra/extra.rpy:56
+    old "Кто нас фотографирует?"
+    new "Who's taking our picture?"

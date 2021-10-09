@@ -1668,8 +1668,8 @@ label liza_hand_mass:
         Max_04 "Сейчас разомнём все пальчики и тебе будет легче писать."
         "{i}продолжить{/i}" ('mass', mgg.massage * 8):
             pass
-    scene BG char Lisa phone-mass-01
-    $ renpy.show("Lisa phone-mass 01"+lisa.dress+mgg.dress)
+    scene BG char Lisa phone-mass-02
+    $ renpy.show("Lisa phone-mass 02"+lisa.dress+mgg.dress)
     #спрайт с левой рукой
     if rand_result:
         # Лизе понравился массаж!

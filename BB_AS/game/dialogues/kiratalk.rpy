@@ -1485,13 +1485,14 @@ label kira_photoset3:
     Kira_02 "На тебя я как раз таки и рассчитывала больше всего!"
     Max_04 "Шикарно!"
 
+    $ renpy.end_replay()
     $ poss['aunt'].open(18)
     $ kira.dcv.feature.stage = 11
     $ kira.dcv.feature.set_lost(1)
     $ kira.dcv.photo.stage = 3
     $ kira.dcv.photo.set_lost(3)
 
-    $ append_photo('03-Kira', 10)
+    # $ append_photo('03-Kira', 10)
 
     $ spent_time = 150
     $ current_room = house[2]

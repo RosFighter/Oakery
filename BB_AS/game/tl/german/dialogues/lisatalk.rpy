@@ -10441,7 +10441,7 @@ translate german strings:
 
     # game/dialogues/lisatalk.rpy:4438
     old "Только если дашь поцеловать!"
-    new "Nur wenn du mir einen Kuss gibst!"
+    new "Nur wenn ich Dir einen Kuss geben darf!"
 
     # game/dialogues/lisatalk.rpy:4446
     old "{i}прикоснуться к попке Лизы{/i}"

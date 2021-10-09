@@ -4766,7 +4766,7 @@ label alice_private_punish_r:
         jump .pun
 
     label .pun:
-        pass
+        Max_01 "А ты куда-то торопишься разве?"
 
     # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
     scene BG punish-sun 02
@@ -5279,7 +5279,7 @@ label alice_mistress_3:
             else:
                 Alice_06 "[failed!t]А мне вот чувствуется, что это просто способ меня задобрить... Так что нет. Спасибо, но я обойдусь."
                 Max_07 "Ну и зря, я хотел, как лучше."
-        "То же мне, преступника нашла...":
+        "То же мне, преступника нашла..." if not _in_replay:
             pass
 
     menu:
@@ -5464,7 +5464,7 @@ label alice_domine_drink:
     Max_02 "Я бы сказал, соотношение примерно 50 на 50. Около того..."
     menu:
         Alice_13 "Ну и что ты там, подглядывая в душе, мечтал со мной сделать, а Макс?! Признавайся!"
-        "Как-то мне страшно это озвучивать...":
+        "Как-то мне страшно это озвучивать..." if not _in_replay:
             #domin-02 + domin-02-max-02c-alice-02
             scene BG char Alice domin 02
             show Alice domin 02-02d
@@ -5472,7 +5472,7 @@ label alice_domine_drink:
             Max_10 "Ай! Моё ухо! Наверно... не подглядывать за тобой..."
             jump .afraid_to_say
 
-        "Для начала, я бы полюбовался твоими прелестями поближе!" if poss['risk'].used(19):
+        "Для начала, я бы полюбовался твоими прелестями поближе!" if _in_replay or poss['risk'].used(19):
             # domin-07 + domin-07-max-01c-alice-01
             scene BG char Alice domin 07
             show Alice domin 07-01d
@@ -5480,7 +5480,7 @@ label alice_domine_drink:
             Max_05 "О да! Я бы хотел ещё ближе!"
             menu:
                 Alice_07 "Какая жалость! Похоже, кто-то привязан к стулу и не может быть так близко ко мне, как ему хотелось... Должно быть, обидно?"
-                "А ты меня развяжи и мы это исправим...":
+                "А ты меня развяжи и мы это исправим..." if not _in_replay:
                     # domin-04 + domin-04-max-02c-alice-02
                     scene BG char Alice domin 04
                     show Alice domin 04-02d
@@ -5544,7 +5544,8 @@ label alice_domine_drink:
         menu:
             Alice_12 "Это не шутка, Макс - я тебя предупредила! Всё, вали отсюда."
             "{i}уйти{/i}":
-                $ poss['risk'].open(19)
+                if not _in_replay:
+                    $ poss['risk'].open(19)
                 jump .end
 
     label .caressing_tongue:
@@ -5606,7 +5607,8 @@ label alice_domine_drink:
         menu:
             Max_20 "{m}Надеюсь, моего опыта поцелуев хватит, чтобы Алиса приятно удивилась... Она так страстно целуется и трётся о мой член, что вполне могла бы в порыве страсти взять и отсосать мне! Это было бы круто!{/m}"
             "{i}пытаться впечатлить{/i}" ('kiss', mgg.kissing * 5, 90): #(навык поцелуев)
-                $ poss['risk'].open(20)
+                if not _in_replay:
+                    $ poss['risk'].open(20)
 
         if rand_result:
             # (Ей нравится!)

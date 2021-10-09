@@ -1475,7 +1475,7 @@ init python:
 
     def random_outcome(value):
         if _in_replay:
-            return True
+            return True if value else False
         # random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
         return random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < value
 
@@ -1729,7 +1729,7 @@ init python:
                     '01a':'02a', '04a':'05a',       # базовая повседневка
                     '01e':'03e', '01e1':'02e1', '01e2':'08e2', '01e3':'07e3',   # школьная лицом
                     '04e':'06e', '04e1':'05e1', '04e2':'08e2', '04e3':'07e3',   # школьная спиной
-                    '01b':'02b', '01b1':'02b1',     # халат
+                    '01b':'03b', '01b1':'02b1',     # халат
                     '01d':'03d', '01d1':'02d1', '01d2':'02d2',                  # розовый лицом
                     '04d':'06d', '04d1':'05d1', '04d2':'05d2',                  # розовый спиной
                     '01g':'03g', '01g1':'02g1', '04g':'06g', '04g1':'05g1',     # с полотенцем
@@ -1781,7 +1781,11 @@ init python:
         elif pose in ['01w', '02w', '04w', '06w']:
             lisa.dress_inf = '01ea' # платье
 
-        return pose, var
+        if pose:
+            return pose, var
+        else:
+            print 'bag:', pose, lst, lvl, tm, weekday, lisa.prev_plan, lisa.plan_name
+            return '02h', var
 
     def get_lisa_dress_inroom(vr):
         lvl = get_lisa_emancipation()
@@ -1813,7 +1817,7 @@ init python:
             lst.append('01')
 
         pose = renpy.random.choice(lst)
-        print pose, lst
+        # print pose, lst
 
         if not vr:  # подсмотреть не удалось
             if lvl == 1:
@@ -1846,5 +1850,5 @@ init python:
                     '01e':renpy.random.choice(['02e1', '05e1']),
                     '01h':renpy.random.choice(['02h', '05h']),
                     }[pose]
-        print pose
+        # print pose
         return pose

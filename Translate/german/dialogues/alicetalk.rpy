@@ -11778,3 +11778,11 @@ translate german strings:
     old "{i}дать Алисе кончить{/i}"
     new "{i}lass Alice kommen{/i}"
 
+# TODO: Translation updated at 2021-10-08 23:52
+
+# game/dialogues/alicetalk.rpy:4769
+translate german alice_private_punish_r_pun_e4f55396:
+
+    # Max_01 "А ты куда-то торопишься разве?"
+    Max_01 "Hast du es eilig, woanders hinzugehen?"
+

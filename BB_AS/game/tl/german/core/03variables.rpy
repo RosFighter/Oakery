@@ -92,7 +92,7 @@ translate german strings:
 
     # game/core/03variables.rpy:89
     old "Лиза, младшая сестрёнка. Милая и весёлая. Она ещё учится в школе. С Лизой мы общаемся на одной волне, хотя изредка ссоримся. Но если что-то случается, защиты ищет именно у меня."
-    new "Lisa, kleine Schwester. Sie ist süß und lustig. Sie ist noch in der Schule. Lisa und ich sind auf der gleichen Wellenlänge, obwohl wir uns von Zeit zu Zeit streiten. Aber wenn etwas passiert, bin ich derjenige, der sie beschützt."
+    new "Lisa, meine kleine Schwester. Süß und fröhlich. Sie ist noch in der Schule. Lisa und ich sind auf der gleichen Wellenlänge, auch wenn wir uns gelegentlich streiten. Aber wenn etwas passiert, bin ich derjenige, bei dem Sie Schutz sucht."
 
     # game/core/03variables.rpy:89
     old "Анна"

@@ -250,3 +250,14 @@ translate german strings:
     old "Следующий снимок"
     new "nächster Schnappschuss"
 
+# TODO: Translation updated at 2021-10-08 23:52
+
+translate german strings:
+
+    # game/extra/extra.rpy:56
+    old "Меня нужно наказать именно так!"
+    new "Ich will genauso bestraft werden!"
+
+    # game/extra/extra.rpy:56
+    old "Кто нас фотографирует?"
+    new "Wer macht unser Foto?"

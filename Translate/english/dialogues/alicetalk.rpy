@@ -11777,3 +11777,11 @@ translate english strings:
     # game/dialogues/alicetalk.rpy:5590
     old "{i}дать Алисе кончить{/i}"
     new "{i}Let Alice cum{/i}"
+
+# TODO: Translation updated at 2021-10-08 23:51
+
+# game/dialogues/alicetalk.rpy:4769
+translate english alice_private_punish_r_pun_e4f55396:
+
+    # Max_01 "А ты куда-то торопишься разве?"
+    Max_01 "Are you in a hurry?"

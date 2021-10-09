@@ -1046,7 +1046,7 @@ init python:
         def withdraw(self, paid = None): # выплата с сайта
             if paid is None:
                 paid = int(self.__account)
-            print 'withdraw $', paid
+            # print 'withdraw $', paid
             self.__tange += paid
             self.__account -= paid
 
@@ -1480,9 +1480,9 @@ init python:
         # в ближайший четверг, если закончились все уроки Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
         Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")
         # состоялся разговор с Лизой о практике, война с Эриком, таблетки не подсыпаны, влияние Эрика было выше
-        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])"),
+        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])")
         # состоялся разговор с Лизой о практике, война с Эриком,, влияние Эрика было ниже
-        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4])"),
+        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4])")
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки
@@ -1528,6 +1528,7 @@ init python:
             return lst
 
         def upcoming(self):
+            # print tm, prevtime, day, prevday
             if tm < prevtime and day>prevday:
                 lst = self.get_list_events(prevtime, '23:59', prevday)
                 if not lst:
@@ -1535,6 +1536,7 @@ init python:
             else:
                 lst = self.get_list_events(prevtime, tm, day)
 
+            # print lst
             if not lst:
                 return None
             elif len(lst) > 1:
@@ -1724,10 +1726,10 @@ init python:
 
         def sub_e(self, d, b = False):
             if b or not self.freeze:
-                if self.__m is not None:
-                    self.__m -= d
-                    if self.__m < 0:
-                        self.__m = 0
+                if self.__e is not None:
+                    self.__e -= d
+                    if self.__e < 0:
+                        self.__e = 0
 
     class Countdown():
 

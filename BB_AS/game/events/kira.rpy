@@ -1935,7 +1935,7 @@ label kira_night_tv:
                         show Kira tv-sex 02-03
                         jump .minet_after_sex
 
-                "Давай сменим позу, тётя Кира..." if kira.dcv.photo.stage > 2:
+                "Давай сменим позу, тётя Кира..." if kira.dcv.photo.stage > 2 and any([not _in_replay, _in_replay and renpy.seen_label('kira_night_tv.minet_after_sex')]):
                     # tv-max&kira-sex03-01-f + tv-max&kira-sex02-03
                     scene BG tv-sex03-01
                     show Kira tv-sex 02-03
@@ -2046,7 +2046,7 @@ label kira_night_tv:
                         show Kira tv-sex 03-03
                         jump .minet_after_sex
 
-                "Давай сменим позу, тётя Кира..." if kira.dcv.photo.stage > 2:
+                "Давай сменим позу, тётя Кира..." if kira.dcv.photo.stage > 2 and any([not _in_replay, _in_replay and renpy.seen_label('kira_night_tv.minet_after_sex')]):
                     # tv-mass-07 + tv-max&kira-sex03-03
                     scene BG tv-mass-07
                     show Kira tv-sex 03-03

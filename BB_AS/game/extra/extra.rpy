@@ -83,6 +83,7 @@ define mems = [
             Memories('alice_blog_lingerie', 'alice-dress&photoset-01', 'set_alice_body_photoset1', _("Первые снимки для блога Алисы"), var="'alice_photoset1' in persistent.mems_var"),  # добавить условие на состоявшуюся фотосессию
             Memories('alice_blog_lingerie', 'alice-dress&max-01', 'set_gift_lace_lingerie', _("Я обошёл Эрика с подарком для Алисы"), var="'lace_ling_max1' in persistent.mems_var"),  # gift_lace_lingerie
             Memories('alice_private_punish_r.smoke_pun', 'alice-privatepun-01', 'set_private_punish1', _("Попка, которую я теперь могу отшлёпать")),
+            Memories('alice_mistress_3', 'alice-dominance-01', 'set_alice_domine_drink', _("Меня нужно наказать именно так!"), var = "renpy.seen_label('alice_domine_drink.kiss')"),
         ],
         [
             Memories('kira_night_tv.porn_view', 'kira-pornotv-01', 'set_porn_tv', _("Смотрим порно вместе с тётей")),
@@ -99,6 +100,7 @@ define mems = [
             Memories('kira_about_photo2', 'kira-photoset-02', '', _("Немного БДСМ от Киры")),
             Memories('kira_night_tv.teach_cuni', 'kira-tvsex-04', 'set_porn_tv3', _("Хватит мять сиськи"), var="renpy.seen_label('kira_night_tv.tv_sex1') or renpy.seen_label('kira_night_tv.tv_sex2')"),
             Memories('kira_bath.cuni_bj', 'kira-bathsex-04', 'set_kira_batxsex1', _("И помылись, и порезвились"), var="renpy.seen_label('kira_bath.horsewoman') or renpy.seen_label('kira_bath.dogstyle')"),
+            Memories('kira_photoset3', 'kira-photoset-03', 'set_kira_photoset3', _("Кто нас фотографирует?")),
         ],
         [
             Memories('lisa_advanced_kiss_lesson', 'lisa-kisslesson-01', 'set_lisa_advanced_kiss_lesson', _("Вкусные уроки с сестрёнкой")),
