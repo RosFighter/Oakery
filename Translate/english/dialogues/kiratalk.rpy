@@ -3140,7 +3140,7 @@ translate english strings:
 
     # game/dialogues/kiratalk.rpy:192
     old "Чем ты пользовалась?"
-    new "What did you use?"
+    new "What do you mean?"
 
     # game/dialogues/kiratalk.rpy:192
     old "Я говорю правду!"
