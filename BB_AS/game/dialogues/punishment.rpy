@@ -430,6 +430,8 @@ label max_consequences:
             # Макса наказали, поэтому фильм с Лизой смотреть уже не нужно
             lisa.dcv.special.enabled = False
 
+        alice.dcv.mistress.disable()
+
         mgg.flags.pun +=1
 
     return
@@ -713,8 +715,7 @@ label punishment_alice:
                             if not alice.dcv.private.enabled:
                                 Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
                                 $ poss['ass'].open(0)
-                            else:
-                                $ alice.dcv.private.set_lost((2 if weekday!=5 else 4))
+                            $ alice.dcv.private.set_lost((2 if weekday!=5 else 4))
 
                         $ punalice[0][2] = 2
                         $ alice.weekly.protected += 1

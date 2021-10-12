@@ -81,25 +81,25 @@ init python:
     # Оличия приходит в гости днём
     def olivia_visits():
         if 'olivia' not in chars:
-            return False
+            return 0
 
-        rez = False
+        rez = 0
 
         if all([weekday==3, olivia.dcv.feature.stage < 2]):
             # среда, первые две беседы с Оливией
-            rez = True
+            rez = 1
         elif all([lisa.flags.crush>11, weekday==2, olivia.dcv.feature.stage>1]):
             # каждый вторник, больше двух бесед с Оливией
-            rez = True
+            rez = 2
         elif  all([weekday==5, 1<olivia.dcv.feature.stage<4]):
             # пятница, беседа о ночных посиделках ещё не состоялась
-            rez = True
+            rez = 3
         elif  all([weekday==5, olivia.dcv.feature.stage>3, not olivia.dcv.special.done]):
             # пятница, состоялась беседа о ночных посиделках, не прошел откат ночных посиделок
-            rez = True
+            rez = 4
         elif all([weekday==5, olivia.dcv.special.stage==1, olivia.dcv.feature.stage<5]):
             # пятница, после первых ночных посиделок, разговора с Оливией после ночного визита ещё не было
-            rez = True
+            rez = 5
 
         return rez
 
@@ -107,16 +107,16 @@ init python:
     # Оливия приходит на ночные посиделки
     def olivia_nightvisits():
         if 'olivia' not in chars:
-            return False
+            return 0
 
-        rez = False
+        rez = 0
 
-        if  all([olivia.dcv.feature.stage>3, not olivia.dcv.special.stage]):    # weekday==6,
+        if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, olivia.dcv.special.done, not olivia.dcv.special.stage]):
             # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, ночных посиделок ещё не было
-            rez = True
-        elif all([olivia.dcv.feature.stage>4, olivia.dcv.special.done]):        # weekday==6,
+            rez = 1
+        elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):
             # ночь с пятницы на субботу, состоялась беседа после первых ночных посиделках, прошел откат ночных посиделок
-            rez = True
+            rez = 2
 
         return rez
 

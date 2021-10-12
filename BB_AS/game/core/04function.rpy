@@ -1650,6 +1650,7 @@ init python:
                 pose = '00'+('g' if lisa.prev_dress == 'c' else lisa.prev_dress)
             elif lisa.prev_plan == 'phone':
                 pose = '00' + lisa.prev_dress
+            print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
             return pose, var
 
         if not pose:
@@ -1658,7 +1659,7 @@ init python:
             if lvl > 2:                                 # голая
                 lst.extend(['01', '04'])
 
-            if lisa.plan_name in ['sun', 'swim']:       # бикини
+            if lisa.plan_name in ['sun', 'swim'] and 'bikini' in lisa.gifts:       # бикини
                 lst.extend(['01c1', '04c1'])
                 if lvl > 1:
                     lst.extend(['01c', '04c'])
@@ -1702,6 +1703,7 @@ init python:
 
             # print 'список:', lst
             pose = renpy.random.choice(lst)
+            print vr, lvl, lisa.prev_dress, lisa.plan_name, pose, lst
             # print 'выбрана:', pose
 
         if vr < 2:
@@ -1782,6 +1784,7 @@ init python:
             lisa.dress_inf = '01ea' # платье
 
         if pose:
+            print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
             return pose, var
         else:
             print 'bag:', pose, lst, lvl, tm, weekday, lisa.prev_plan, lisa.plan_name

@@ -214,6 +214,9 @@ label Midnight:
     $ film = ''
     $ olivia_night_visits = olivia_nightvisits()
 
+    if poss['nightclub'].stn >= 5 and kol_choco == 0:
+        $ items['choco'].unblock()
+
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
         for ch in chars:
@@ -298,7 +301,10 @@ label NewDay:
 
         if olivia_nightvisits():
             # установим откат для ночных визитов Оливии.
-            olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
+            if not olivia.dcv.special.stage:
+                olivia.dcv.special.set_lost(5)
+            else:
+                olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
 
         for ch in chars:
             char = chars[ch]
@@ -432,7 +438,7 @@ label AfterWaiting:
 
     # отключение возможности помыть посуду, если её вымыли Лиза или Алиса
     if not dishes_washed:
-        if tm > '20:00':
+        if tm > '21:00':
             $ dishes_washed = True
         elif weekday != 6:
             $ name_label = ''
@@ -531,6 +537,7 @@ label random_dressed:
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
+                    $ print('#1')
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_1
 
             elif all([current_room != prev_room, current_room == house[0]]):
@@ -553,6 +560,7 @@ label random_dressed:
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
+                    $ print('#2')
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_2
 
             elif all([current_room != prev_room, current_room == house[0]]):
@@ -569,6 +577,7 @@ label random_dressed:
                     call lisa_dressed.moment0 from _call_lisa_dressed_moment0_3    # "нулевой"
         elif all([tm=='00:00', lisa.plan_name == 'sleep', current_room == prev_room, current_room == house[0], not persistent.skip_lisa_dressed]):
             $ lisa.hourly.dressed = 1
+            $ print('#3')
             call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room
     return
 
@@ -1567,7 +1576,7 @@ label update_07_0_99:
         if ann.flags.erofilms>2:
             $ poss['mom-tv'].open(10)
 
-    if _version < '0.06.8.04':
+    if _version < '0.06.8.04' and 'kira' in chars:
         $ kira.flags.held_out = 1 if mgg.sex >= 35.0 else 0
 
     if _version < '0.06.8.09':
@@ -1598,5 +1607,14 @@ label update_07_0_99:
         if 'eric' in chars:
             $ eric_obligation = Obligation()
 
-        if kira.dcv.feature.stage >= 11 and kira.dcv.photo.stage < 3:
-            $ kira.dcv.photo.stage = 3
+        if 'kira' in chars:
+            if kira.dcv.feature.stage >= 11 and kira.dcv.photo.stage < 3:
+                $ kira.dcv.photo.stage = 3
+
+label update_07_p1_99:
+
+    if _version < '0.07.p1.01':
+        if 'olivia' in chars:
+            if not olivia.dcv.special.stage and olivia.dcv.special.lost > 5:
+                $ olivia.dcv.special.lost -= 5
+        $ olivia_night_visits = olivia_nightvisits()

@@ -3116,6 +3116,7 @@ label liza_secret_alisa:
     $ poss['nightclub'].open(5)
     $ spent_time += 10
     $ items['choco'].unblock()
+    $ alice.dcv.feature.stage = 2
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     return
 

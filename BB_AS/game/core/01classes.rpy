@@ -1516,11 +1516,16 @@ init python:
 
                 # проверим  условия и удалим лишние
                 try:
+                    # print eval(cut.variable), cut.variable
                     resp = eval(cut.variable)
+                    # print attr, resp
+                    # print cut.variable
                 except KeyError:
                     continue
                 except Exception:
                     continue
+
+
 
                 if resp:
                     lst.append(cut)

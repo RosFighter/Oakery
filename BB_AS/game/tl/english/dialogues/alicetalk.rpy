@@ -2878,7 +2878,7 @@ translate english Alice_sorry_28d4bb71:
 translate english Alice_sorry_2f0085b5:
 
     # Alice_05 "Я тут подумала, что в этот раз стильный кожаный костюмчик вполне мог бы спасти твою задницу от маминого наказания. Их ещё используют в ролевых играх..."
-    Alice_05 "I was thinking that this time a stylish leather suit might very well save your ass from your mother's punishment. They're also used in role-playing games..."
+    Alice_05 "I was thinking that this time a stylish leather suit might very well save your ass from your Mom's punishment. They're also used in role-playing games..."
 
 # game/dialogues/alicetalk.rpy:2254
 translate english Alice_sorry_a3de421e:
@@ -2914,7 +2914,7 @@ translate english Alice_sorry_6943c4c1:
 translate english Alice_sorry_af83a90f:
 
     # Alice_16 "Это что вообще за недовольства?! Наверное, я погорячилась со свои заказом и тебя нужно просто отправить маме, которая отучит тебя подглядывать."
-    Alice_16 "What kind of a grudge is that?! Maybe I overdid it with my order and you just need to be sent to your mother, who will teach you not to peep."
+    Alice_16 "What kind of a grudge is that?! Maybe I overdid it with my order and you just need to be sent to Mom, who will teach you not to peep."
 
 # game/dialogues/alicetalk.rpy:2260
 translate english Alice_sorry_1951a195:
@@ -3070,7 +3070,7 @@ translate english Alice_sorry_0c0d9cc5:
 translate english Alice_sorry_612915b1:
 
     # Alice_05 "Сам ты отстойный! Короче, мне нужна плётка, чтобы дополнить тот кожаный костюм. В противном случае, будешь объясняться с мамой о своём фетише."
-    Alice_05 "You suck! Anyway, I need a whip to complete that leather suit. Otherwise, you'll have to explain to your mother about your fetish."
+    Alice_05 "You suck! Anyway, I need a whip to complete that leather suit. Otherwise, you'll have to explain to Mom about your fetish."
 
 # game/dialogues/alicetalk.rpy:2291
 translate english Alice_sorry_c7b21e38:
@@ -9004,7 +9004,7 @@ translate english alice_gift_whip_c58cb444:
 translate english alice_gift_whip_bf59dae4:
 
     # Max_10 "Нет-нет... Спасибо, но посягательств от мамы более чем хватило! Так что не надо."
-    Max_10 "No, no... Thank you, but there's been more than enough abuse from my mother! So don't."
+    Max_10 "No, no... Thank you, but there's been more than enough abuse from Mom! So don't."
 
 # game/dialogues/alicetalk.rpy:5077
 translate english alice_gift_whip_4da3856f:
@@ -9250,7 +9250,7 @@ translate english alice_mistress_0_5f771666:
 translate english alice_mistress_0_4204b561:
 
     # Alice_05 "А с чего ты взял, что это поможет? Нет, благодаря этому ты конечно не сразу оказываешься у мамы на коленях, но... мне этого мало, Макс... Я хочу, чтобы оказавшись у ванной комнаты, ты начал задумываться, а стоит ли оно того!"
-    Alice_05 "What makes you think it would help? No, it doesn't put you on your mother's lap right away, but... that's not good enough for me, Max... I want you to think about whether or not it's worth it when you're in the bathroom."
+    Alice_05 "What makes you think it would help? No, it doesn't put you on Mom's lap right away, but... that's not good enough for me, Max... I want you to think about whether or not it's worth it when you're in the bathroom."
 
 # game/dialogues/alicetalk.rpy:5166
 translate english alice_mistress_0_8a98b0ec:
@@ -9298,7 +9298,7 @@ translate english alice_mistress_0_d39294b0:
 translate english alice_mistress_0_a0188ae2:
 
     # Alice_05 "Хороший мальчик. Но если продолжишь, то вы с этим стеком станете очень близки. Особенно близки вы станете в районе твоей голой задницы, по которой я буду хлестать так, что ты будешь молить меня отпустить тебя к маме!"
-    Alice_05 "Good boy. But if you go on, you and that stack will become very close. You'll be especially close around your naked ass, which I'll whip so hard you'll beg me to let you go to your mother!"
+    Alice_05 "Good boy. But if you go on, you and that stack will become very close. You'll be especially close around your naked ass, which I'll whip so hard you'll beg me to let you go to Mom!"
 
 # game/dialogues/alicetalk.rpy:5178
 translate english alice_mistress_0_05076bc1:
@@ -9514,7 +9514,7 @@ translate english alice_mistress_1_089afa86:
 translate english alice_mistress_1_9206dbf7:
 
     # Alice_07 "Ох, я бы с удовольствием на это посмотрела, но стек я тебе не доверю. Всё будет в моей власти. Но ты всегда можешь выбрать наказание от мамы перед всеми нами."
-    Alice_07 "Oh, I'd love to see it, but I won't trust you. Everything would be in my power. But you can always choose to be punished by your mother in front of all of us."
+    Alice_07 "Oh, I'd love to see it, but I won't trust you. Everything would be in my power. But you can always choose to be punished by Mom in front of all of us."
 
 # game/dialogues/alicetalk.rpy:5283
 translate english alice_mistress_1_f123fc47:
@@ -9526,7 +9526,7 @@ translate english alice_mistress_1_f123fc47:
 translate english alice_mistress_1_d54a583d:
 
     # Alice_16 "В общем, я предупредила тебя в последний раз. Дальше всё зависит от тебя. Увижу, что подглядываешь - накажу или сама, или это будет мама! Понял меня?!"
-    Alice_16 "Anyway, I warned you for the last time. The rest is up to you. If I see you peeping, I'll punish you, or it'll be your mother! Do you understand me?!"
+    Alice_16 "Anyway, I warned you for the last time. The rest is up to you. If I see you peeping, I'll punish you, or it'll be Mom! Do you understand me?!"
 
 # game/dialogues/alicetalk.rpy:5285
 translate english alice_mistress_1_b6efeed9:
@@ -11570,7 +11570,7 @@ translate english alice_domine_drink_afraid_to_say_b47c30be:
 translate english alice_domine_drink_afraid_to_say_992e79da:
 
     # Alice_05 "В общем, я предупредила тебя в последний раз. Дальше всё зависит от тебя. Увижу, что подглядываешь - накажу или сама, или это будет мама! Понял меня?!"
-    Alice_05 "Anyway, I warned you for the last time. The rest is up to you. If I see you peeping, I'll punish you, or it'll be your mother! Do you understand me?!"
+    Alice_05 "Anyway, I warned you for the last time. The rest is up to you. If I see you peeping, I'll punish you, or it'll be Mom! Do you understand me?!"
 
 # game/dialogues/alicetalk.rpy:5518
 translate english alice_domine_drink_afraid_to_say_b6efeed9:

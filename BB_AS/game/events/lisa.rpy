@@ -857,6 +857,7 @@ label lisa_dressed:
 
     label .moment0:     # рано (или уже поздно)
         $ lisa.hourly.dressed = 1
+        $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(0)
         $ renpy.show('Lisa dressing '+pose)
@@ -893,6 +894,7 @@ label lisa_dressed:
         $ renpy.dynamic('mood')
         $ mood = 0
         $ lvl = get_lisa_emancipation()
+        $ print(lvl, lisa.dress, lisa.prev_dress, lisa.prev_plan, lisa.plan_name)
         $ pose, var = get_lisa_dress_pose(0)
         scene BG char Lisa dressing-02
         $ renpy.show('Lisa dressing '+pose)
@@ -925,6 +927,7 @@ label lisa_dressed:
     label .moment2:     # повезло
 
         $ lisa.hourly.dressed = 1
+        $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(2)
         $ np = var['np']
@@ -947,6 +950,7 @@ label lisa_dressed:
 
     label .moment1:     # неповезло
         $ lisa.hourly.dressed = 1
+        $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(1)
         $ np = var['np']
@@ -1088,6 +1092,7 @@ label lisa_dressed:
                 jump .leave
 
     label .wait_in_room:
+        hide window
         scene BG char Max bed-day-01 with dissolve
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
@@ -1098,6 +1103,7 @@ label lisa_dressed:
 
     label .wait_outside:
         # показывваем дверь, "ожидание", затем входим в комнату
+        hide window
         $ renpy.scene()
         $ renpy.show('location house myroom door-'+get_time_of_day())
         pause(2)
@@ -1118,6 +1124,7 @@ label lisa_dressed:
 
     label .leave:
         # показываем дверь, для продолжения нужно перейти в другую локацию
+        hide window
         $ renpy.scene()
         $ renpy.show('location house myroom door-'+get_time_of_day())
         $ AvailableActions['talk'].active = False
@@ -1129,6 +1136,7 @@ label lisa_dressed:
         call screen room_navigation
 
     label .get_laptop:
+        hide window
         $ spent_time += 10
         $ at_comp = True
         $ current_room = house[5]
@@ -1136,6 +1144,7 @@ label lisa_dressed:
         jump Laptop
 
     label .end:
+        hide window
         $ AddRelMood('lisa', 0, mood)
         jump Waiting
 
