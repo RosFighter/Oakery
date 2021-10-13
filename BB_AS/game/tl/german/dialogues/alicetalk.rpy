@@ -11672,7 +11672,7 @@ translate german alice_domine_drink_kiss_9d5fdb90:
 translate german alice_domine_drink_kiss_cdcd1179:
 
     # Max_19 "{m}Да я этому только рад, сестрёнка! Как бы мне не кончить от её стонов и жарких поцелуев... Так можно ей всё удовольствие обломать, а после схлопотать вдогонку по заднице её стеком! Мне лучше и правда держаться, но как же это непросто...{/m}" nointeract
-    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen undden heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
+    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen und den heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5594
 translate german alice_domine_drink_kiss_9e72ee84:

@@ -3700,7 +3700,7 @@ translate english return_from_club_striptease_49cfce3b:
 translate english return_from_club_striptease_c050609d:
 
     # Max_03 "Так может стоит в самом деле немного попрыгать перед сном?"
-    Max_03 "I little bouncing around before bed might be a good idea."
+    Max_03 "A little bouncing around before bed might be a good idea."
 
 # game/events/kira.rpy:2852
 translate english return_from_club_striptease_1c4be560:

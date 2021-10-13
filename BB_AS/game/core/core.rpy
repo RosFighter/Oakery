@@ -81,6 +81,9 @@ label Waiting:
 
     $ changes_main(delt)
 
+    window hide
+    $ hide_say()
+
     if not at_comp:
         call after_buying from _call_after_buying
 
@@ -514,6 +517,7 @@ label AfterWaiting:
             chars[char].hourly.dressed = 1
 
     window hide
+    $ hide_say()
     $ renpy.block_rollback()
     call screen room_navigation
 
@@ -537,7 +541,7 @@ label random_dressed:
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
-                    $ print('#1')
+                    # $ print('#1')
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_1
 
             elif all([current_room != prev_room, current_room == house[0]]):
@@ -560,7 +564,7 @@ label random_dressed:
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
-                    $ print('#2')
+                    # $ print('#2')
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_2
 
             elif all([current_room != prev_room, current_room == house[0]]):
@@ -577,7 +581,7 @@ label random_dressed:
                     call lisa_dressed.moment0 from _call_lisa_dressed_moment0_3    # "нулевой"
         elif all([tm=='00:00', lisa.plan_name == 'sleep', current_room == prev_room, current_room == house[0], not persistent.skip_lisa_dressed]):
             $ lisa.hourly.dressed = 1
-            $ print('#3')
+            # $ print('#3')
             call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room
     return
 
@@ -1618,3 +1622,15 @@ label update_07_p1_99:
             if not olivia.dcv.special.stage and olivia.dcv.special.lost > 5:
                 $ olivia.dcv.special.lost -= 5
         $ olivia_night_visits = olivia_nightvisits()
+
+    if _version < '0.07.p1.02':
+        if flags.lisa_sexed == 6 and lisa.dcv.battle.stage in [1, 4]:
+            # временные этапы при дружбе с Эриком
+            if infl[lisa].balance[2] == 'm':
+                $ poss['seduction'].open(27)
+            else:
+                $ poss['seduction'].open(26)
+            ########
+
+        if kira.dcv.feature.stage == 11 and len(expected_photo) == 10:
+            $ expected_photo.clear()

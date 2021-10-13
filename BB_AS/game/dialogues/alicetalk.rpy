@@ -2120,6 +2120,7 @@ label smoke_nojeans:
 
 label Alice_sorry:
     $ renpy.dynamic('waiting_days')
+    $ waiting_days = 1
     if len(alice.sorry.give) == 0:      # Первый диалог
         Alice_15 "Ух ты, у тебя, извращенца мелкого, совесть проснулась?! Неожиданно..."
         Max_10 "Нет, я думаю, ты вряд ли правильно поняла то, что случилось. Я за тобой не подглядывал..."
@@ -2257,9 +2258,9 @@ label Alice_sorry:
         $ flags.mistres_pun = True
         $ waiting_days = 0
 
-    default waiting_days = 1
     $ punreason[1] = 0
     $ alice.daily.shower = 0
+    # $ print(waiting_days)
     if waiting_days:
         $ alice.sorry.start(waiting_days)
     $ spent_time += 10

@@ -9,6 +9,10 @@ init python:
     config.layers.insert(1, 'wm')
     random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
 
+    def hide_say():
+        if renpy.get_screen('say'):
+            renpy.hide_screen('say')
+
     def withdraw(paid):
         mgg.withdraw(paid)
 
@@ -1650,7 +1654,7 @@ init python:
                 pose = '00'+('g' if lisa.prev_dress == 'c' else lisa.prev_dress)
             elif lisa.prev_plan == 'phone':
                 pose = '00' + lisa.prev_dress
-            print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
+            # print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
             return pose, var
 
         if not pose:
@@ -1703,7 +1707,7 @@ init python:
 
             # print 'список:', lst
             pose = renpy.random.choice(lst)
-            print vr, lvl, lisa.prev_dress, lisa.plan_name, pose, lst
+            # print vr, lvl, lisa.prev_dress, lisa.plan_name, pose, lst
             # print 'выбрана:', pose
 
         if vr < 2:
@@ -1784,10 +1788,10 @@ init python:
             lisa.dress_inf = '01ea' # платье
 
         if pose:
-            print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
+            # print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
             return pose, var
         else:
-            print 'bag:', pose, lst, lvl, tm, weekday, lisa.prev_plan, lisa.plan_name
+            # print 'bag:', pose, lst, lvl, tm, weekday, lisa.prev_plan, lisa.plan_name
             return '02h', var
 
     def get_lisa_dress_inroom(vr):

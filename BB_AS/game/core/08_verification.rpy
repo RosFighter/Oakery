@@ -165,6 +165,7 @@ init python:
             rez = all([alice.flags.ladder, ann.flags.ladder, lisa.flags.ladder])
             if 'kira' in chars:
                 rez = all([rez, kira.flags.ladder])
+            rez = any([rez, eric.flags.ladder > 1])
             return rez
         else:
             return False

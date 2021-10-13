@@ -1307,7 +1307,7 @@ label kira_photoset3:
     # photoshot-03-kira-01 + photocamera
     scene photoshot 03-Kira 01
     show FG photocamera
-    $ expected_photo.append('01')
+    # $ expected_photo.append('01')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 1
     Kira_07 "Это потому что ты не видишь, как я прямо сейчас стою над тобой и медленно... и красиво...  {p=1.5}{nw}"
     hide FG
@@ -1318,7 +1318,7 @@ label kira_photoset3:
     scene BG annroom-watch-02-bj03
     show Kira annroom-shot 03 06
     show Caprice annroom-shot 03 06
-    $ expected_photo.append('02')
+    # $ expected_photo.append('02')
     Kira_02 "Ну, а теперь, приступим к самому главному... Не помню, говорила я тебе или нет, но наша прошлая фотосессия произвела настоящий фурор..."
     Max_07 "Даже так?"
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 2
@@ -1337,7 +1337,7 @@ label kira_photoset3:
     # photoshot-03-kira-03 + photocamera
     scene photoshot 03-Kira 03
     show FG photocamera
-    $ expected_photo.append('03')
+    # $ expected_photo.append('03')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 3
     Kira_03 "Я делаю что-то не так, Макс? {p=1.5}{nw}"
     hide FG
@@ -1349,7 +1349,7 @@ label kira_photoset3:
     # annroom-shot-02-max&kira-03-f + annroom-shot-03-kira&max-08
     scene BG char Kira annroom-shot 03
     show Kira annroom-shot 03 08
-    $ expected_photo.append('04')
+    # $ expected_photo.append('04')
     Kira_05 "Я так думаю, чтобы отвлечь тебя от разных посторонних мыслей мне нужно несколько углубить процесс и... заняться твоим членом по-настоящему. Ты ведь не будешь против?"
     Max_03 "О, нет... Такое только приветствуется!"
     Kira_09 "Я так и подумала... Ммм... Он такой напряжённый... О да! Я чувствую, что тебе нравится то, как смачно и медленно я это делаю..."
@@ -1365,7 +1365,7 @@ label kira_photoset3:
     # photoshot-03-kira-05 + photocamera
     scene photoshot 03-Kira 05
     show FG photocamera
-    $ expected_photo.append('05')
+    # $ expected_photo.append('05')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 5
     Max_21 "О, Господи... Если фотографии получатся не такими же сочными, как твой минет, тётя Кира... {p=1.5}{nw}"
     hide FG
@@ -1374,7 +1374,7 @@ label kira_photoset3:
     # annroom-shot-02-max&kira-03-f + annroom-shot-03-kira&max-10
     scene BG char Kira annroom-shot 03
     show Kira annroom-shot 03 10
-    $ expected_photo.append('06')
+    # $ expected_photo.append('06')
     Kira_08 "Не знаю, что заводит меня больше, твой упругий член, только что побывавший у меня во рту или фантазии о том, что мы тут втроём могли бы устроить..."
     Max_05 "Ого! От такого я не откажусь..."
     Kira_07 "Я в этом не сомневалась, но для начала я бы на месте моей подруги сделала снимок того, как классно мы смотримся, когда я трусь грудью о твой член. Или не стоит, как думаешь, Макс?"
@@ -1390,7 +1390,7 @@ label kira_photoset3:
     # photoshot-03-kira-07 + photocamera
     scene photoshot 03-Kira 07
     show FG photocamera
-    $ expected_photo.append('07')
+    # $ expected_photo.append('07')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 7
     Kira_02 "Чувствуешь, какая я мокренькая, Макс? {p=1.5}{nw}"
     hide FG
@@ -1400,7 +1400,7 @@ label kira_photoset3:
     # annroom-watch-04-bj01 + annroom-shot-03-kira&max-12
     scene BG annroom-watch-04-bj01
     show Kira annroom-shot 03 12
-    $ expected_photo.append('08')
+    # $ expected_photo.append('08')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 8
     Kira_09 "Ну, конечно, мой мальчик... С превеликим удовольствием... Ахх... Боже мой, Макс... Ммм... Как же я хотела почувствовать его внутри... Д-а-а..."
     Max_20 "Вот так, тётя Кира... Эта фотосессия мне нравится всё больше и больше!"
@@ -1416,7 +1416,7 @@ label kira_photoset3:
     # photoshot-03-kira-09 + photocamera
     scene photoshot 03-Kira 09
     show FG photocamera
-    $ expected_photo.append('09')
+    # $ expected_photo.append('09')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 9
     Kira_11 "О Боже, Макс... Я так сладко кончила! {p=1.5}{nw}"
     hide FG
@@ -1465,7 +1465,7 @@ label kira_photoset3:
         show FG Kira annroom-shot 03 17
         Kira_07 "Вау! Боже мой, Макс... Сколько спермы... Не удивлена, что ты не мог больше сдерживаться! Давайте сделаем фото на память о нашей небольшой групповушке..."
 
-    $ expected_photo.append('10')
+    # $ expected_photo.append('10')
     play sound "<from 1>audio/PhotoshootSound.ogg"  # 10
     Max_05 "Ты потрясающая, тётя Кира! Вернее, вы обе..."
     Kira_05 "Да, мы такое слышали... Спасибо за комплимент! И тебе спасибо, что поучаствовал в этой фотосессии."

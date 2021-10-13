@@ -778,7 +778,7 @@ translate german punishment_alice_6bf98fd4:
 translate german punishment_alice_1f7fc295:
 
     # Max_04 "{m}Вот в такие моменты я не жалею, что нас наказывают практически голыми на глазах друг у друга! Даже порно не надо, когда такое шоу в паре метров от меня!{/m}"
-    Max_04 "{m}Es sind Momente wie dieser, in denen ich es nicht bereue, dass wir praktisch nackt voreinander bestraft werden! Ich brauche nicht einmal einen Porno, wenn eine solche Show nur wenige Meter vor mir abläuft!{/m}"
+    Max_04 "{m}In solchen Momenten bereue ich es nicht, dass wir nackt voreinander bestraft werden! Ich brauche keine Pornos, wenn eine solche Show nur ein paar Meter entfernt ist!{/m}"
 
 # game/dialogues/punishment.rpy:761
 translate german punishment_alice_43f002e8:
