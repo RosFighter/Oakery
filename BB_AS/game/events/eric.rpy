@@ -540,9 +540,6 @@ label eric_ann_fucking:
         "{i}зайти в спальню{/i}" if 3<flags.voy_stage<8 and GetRelMax('eric')[0]>3:
             jump lessons_from_Eric
         "{i}уйти{/i}":
-            # Max "" nointeract
-            window hide
-            # $ current_room = house[0]
             jump AfterWaiting
 
     label .voyeur:  # точка входа после заглушки
@@ -852,7 +849,7 @@ label eric_ann_shower:
 
     label .end:
         Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-        if eric.flags.ladder > 1 and looked_ladder():
+        if looked_ladder():
             $ house[3].max_cam = 2
             $ items['hide_cam'].unblock()
             Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
@@ -1742,7 +1739,7 @@ label eric_about_practice_war:
                             "{i}принести Эрику деньги{/i}":
                                 pass
                         #на фоне отдыхающего в комнате Анны Эрика
-                        call eric_resting
+                        call eric_resting from _call_eric_resting
                         Eric_03 "Ну вот, хоть какую-то пользу от тебя можно заиметь. Для меня это конечно гроши, но учитывая, сколько на Лизу придётся потратить времени - это хорошая компенсация."
                         Max_15 "Но смотри... Если всё равно будешь лезть к Лизе..."
                         menu:

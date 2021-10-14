@@ -3116,6 +3116,7 @@ label liza_secret_alisa:
     $ poss['nightclub'].open(5)
     $ spent_time += 10
     $ items['choco'].unblock()
+    $ alice.dcv.feature.stage = 2
     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
     return
 
@@ -4401,6 +4402,15 @@ label lisa_about_ae_sexed5:
         $ lisa.dcv.intrusion.stage = 4
     else:
         $ lisa.dcv.intrusion.stage = 3
+        
+    # временные этапы при дружбе с Эриком
+    if lisa.dcv.battle.stage in [1, 4]:
+        if infl[lisa].balance[2] == 'm':
+            $ poss['seduction'].open(27)
+        else:
+            $ poss['seduction'].open(26)
+    ########
+
     $ lisa.dcv.intrusion.set_lost(2)
     $ flags.lisa_sexed = 6
     $ spent_time = 20

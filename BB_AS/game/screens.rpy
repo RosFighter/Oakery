@@ -1684,7 +1684,7 @@ init python:
         for i in items:
             yy+=1
             widget = renpy.get_widget('choice','vbb'+str(yy))
-            output+= widget.window_size[1]
+            output += widget.window_size[1]
         return output
 
     def ScrlAuto(items):
@@ -1698,7 +1698,7 @@ screen choice_clutch(items):
 screen choice(items, rand=None):
     variant "small"
 
-    use choice_clutch(items)
+    # use choice_clutch(items)
     style_prefix "choice"
 
     if rand == 'last':
@@ -1710,63 +1710,68 @@ screen choice(items, rand=None):
         $ lst = items
 
     frame xalign 0.98 xsize gui.choice_button_width+50:
-        ypos 750 yanchor 1.0 ysize 400
-        background None
-        viewport:
-            spacing 0
-            draggable True
-            mousewheel True
-            scrollbars AutoScroll
-            id "vp_ch"
-            style "vp_choice"
+        ypos 800 yanchor 1.0 ysize 350 background None
+        hbox spacing 5:
+            viewport spacing 0 draggable True mousewheel True id "vp_ch" style 'vp_ch':
+            # viewport:
+            #     spacing 0
+            #     draggable True
+            #     mousewheel True
+            #     scrollbars AutoScroll
+            #     id "vp_ch"
+            #     style "vp_choice"
 
-            ymaximum 400
-            yalign 1.0
-            yminimum 50
-            vbox xfill True spacing 5:
-                $ yy = 0
-                for i in lst:
-                    $ yy += 1
-                    if len(i.args)>1:
-                        $ skill = {
-                            'mass'  : _("массаж, "),
-                            'soc'   : _("убеждение, "),
-                            'sex'   : _("сексуальный опыт, "),
-                            'kiss'  : _("поцелуи, "),
-                            'lucky' : _("удача, "),
-                            'hide'  : _("скрытность, "),
-                            'null' : "",
-                            }[i.args[0]]
+                # ymaximum 450
+                yalign 1.0
+                # yminimum 50
+                vbox xfill True spacing 5:
+                    $ yy = 0
+                    for i in lst:
+                        $ yy += 1
+                        if len(i.args)>1:
+                            $ skill = {
+                                'mass'  : _("массаж, "),
+                                'soc'   : _("убеждение, "),
+                                'sex'   : _("сексуальный опыт, "),
+                                'kiss'  : _("поцелуи, "),
+                                'lucky' : _("удача, "),
+                                'hide'  : _("скрытность, "),
+                                'null' : "",
+                                }[i.args[0]]
 
-                        $ sz = -3
+                            $ sz = -3
 
-                        $ lim, vis, col, txt, step = get_lim_col_step(i)
+                            $ lim, vis, col, txt, step = get_lim_col_step(i)
 
-                        if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
-                            button action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]:
+                            if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
+                                button action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]:
+                                    text i.caption style "choice_button_text"
+                                    left_padding 50 right_padding 35
+                                    sensitive not i.kwargs.get("disabled", False)
+                                    foreground "interface marker"
+                                    # id 'vbb'+str(yy)
+                            else:
+                                button action [Skill_Outsome(i.args[0], vis, lim, step), i.action]:
+                                    text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
+                                    left_padding 50 right_padding 35
+                                    sensitive not i.kwargs.get("disabled", False)
+                                    foreground "interface marker"
+                                    # id 'vbb'+str(yy)
+
+                        else:
+                            button action i.action:
                                 text i.caption style "choice_button_text"
                                 left_padding 50 right_padding 35
                                 sensitive not i.kwargs.get("disabled", False)
                                 foreground "interface marker"
                                 # id 'vbb'+str(yy)
-                        else:
-                            button action [Skill_Outsome(i.args[0], vis, lim, step), i.action]:
-                                text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
-                                left_padding 50 right_padding 35
-                                sensitive not i.kwargs.get("disabled", False)
-                                foreground "interface marker"
-                                # id 'vbb'+str(yy)
+            vbar value YScrollValue("vp_ch") style "ch_vscroll"
 
-                    else:
-                        button action i.action:
-                            text i.caption style "choice_button_text"
-                            left_padding 50 right_padding 35
-                            sensitive not i.kwargs.get("disabled", False)
-                            foreground "interface marker"
-                            # id 'vbb'+str(yy)
-
-style vp_choice:
+style vp_ch:
     variant 'small'
+    unscrollable "hide"
+
+style ch_vscroll is vscrollbar:
     unscrollable "hide"
 
 style window:

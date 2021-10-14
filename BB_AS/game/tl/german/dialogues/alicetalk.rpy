@@ -2320,13 +2320,13 @@ translate german smoke_toples_1bf07d5b:
 translate german smoke_not_toples_8c8fad13:
 
     # Alice_02 "Ты чего-то хотел, Макс?"
-    Alice_02 "Was willst du?"
+    Alice_02 "Willst du etwas, Max?"
 
 # game/dialogues/alicetalk.rpy:2057
 translate german smoke_not_toples_37c0a1b9:
 
     # Max_07 "Да, хотел... Мы ведь договорились, что ты будешь курить без верха купальника!"
-    Max_07 "Ja, das habe ich... Wir waren uns einig, dass du ohne das Oberteil deines Bikinis rauchen würdest!"
+    Max_07 "Ja, will ich... Wir waren uns einig, dass du ohne das Oberteil deines Bikinis rauchen würdest!"
 
 # game/dialogues/alicetalk.rpy:2058
 translate german smoke_not_toples_d811599c:
@@ -2338,7 +2338,7 @@ translate german smoke_not_toples_d811599c:
 translate german smoke_not_toples_815a473e:
 
     # Max_09 "Ну хорошо, Алиса, как скажешь, можешь курить одетой. Только вот, если ты решила нарушить условия нашей договорённости, то почему бы тогда и мне не поступить так же?"
-    Max_09 "In Ordnung, Alice, was immer du sagst, du kannst angezogen rauchen. Es sei denn, du verstößt gegen unsere Vereinbarung, dann mache ich dasselbe."
+    Max_09 "In Ordnung, Alice, was immer du willst, du kannst mit deinen Klamotten rauchen. Aber wenn du dich entschieden hast, unsere Vereinbarung zu brechen, warum tue ich dann nicht dasselbe?"
 
 # game/dialogues/alicetalk.rpy:2060
 translate german smoke_not_toples_3e8c9a19:
@@ -2362,7 +2362,7 @@ translate german smoke_not_toples_66332c89:
 translate german smoke_not_toples_d4cfa9a6:
 
     # Max_03 "Очень заманчивое предложение... Но просто показать - я считаю справедливо! Сама накосячила..."
-    Max_03 "Es ist ein sehr verlockendes Angebot... Aber nur ein Blick - ich denke, es ist fair!"
+    Max_03 "Ein sehr verlockendes Angebot... Aber um es dir zu zeigen - ich denke, es ist fair! Ich habe selbst einen Fehler gemacht..."
 
 # game/dialogues/alicetalk.rpy:2067
 translate german smoke_not_toples_fe9993a5:
@@ -2392,19 +2392,19 @@ translate german smoke_nopants_7be74dfc:
 translate german smoke_nopants_c40ddcc1:
 
     # Alice_13 "Налюбовался? А вот теперь постой в сторонке, пока я покурю! Давай, вали уже..."
-    Alice_13 "Hast du gesehen was du wolltest? Geh jetzt woanders hin und lass mich in Ruhe."
+    Alice_13 "Amüsierst du dich? Jetzt geht weg, während ich eine rauche! Los, verschwinde von hier..."
 
 # game/dialogues/alicetalk.rpy:2086
 translate german smoke_nopants_d8b756b2:
 
     # Max_01 "Хорошо, хорошо..."
-    Max_01 "Gut, gut"
+    Max_01 "Gut, gut..."
 
 # game/dialogues/alicetalk.rpy:2088
 translate german smoke_nopants_b38d8562:
 
     # Alice_12 "В каком смысле?!" nointeract
-    Alice_12 "Was meinst du damit?" nointeract
+    Alice_12 "Was meinst du damit?!" nointeract
 
 # game/dialogues/alicetalk.rpy:2091
 translate german smoke_nopants_d219c498:
@@ -11672,7 +11672,7 @@ translate german alice_domine_drink_kiss_9d5fdb90:
 translate german alice_domine_drink_kiss_cdcd1179:
 
     # Max_19 "{m}Да я этому только рад, сестрёнка! Как бы мне не кончить от её стонов и жарких поцелуев... Так можно ей всё удовольствие обломать, а после схлопотать вдогонку по заднице её стеком! Мне лучше и правда держаться, но как же это непросто...{/m}" nointeract
-    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen undden heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
+    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen und den heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5594
 translate german alice_domine_drink_kiss_9e72ee84:

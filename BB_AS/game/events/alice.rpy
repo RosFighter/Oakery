@@ -1428,12 +1428,11 @@ label alice_after_club:
                         Alice "{b}Алиса:{/b} Макс, ты глухой? Я же сказала, буду в ванне плескаться. Жди как минимум час!"
                         Max_10 "Ладно, ладно..."
                     "{i}уйти{/i}":
-                        jump .end
+                        pass
         "{i}заглянуть со двора{/i}" if flags.ladder < 2:
             scene Alice bath 01
             $ renpy.show('FG voyeur-bath-00'+mgg.dress)
             Max_00 "Эх! Не повезло... Алиса уже плюхнулась принимать ванну. Отсюда я уже ничего увидеть не смогу..."
-            jump .end
         "{i}установить стремянку{/i}" if items['ladder'].have:
             scene BG char Max bathroom-window-evening-00
             $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
@@ -1444,7 +1443,8 @@ label alice_after_club:
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump alice_bath.ladder
         "{i}уйти{/i}":
-            jump .end
+            pass
+    jump .end
 
     label .knock:
         $ renpy.dynamic('suf', 'r1')

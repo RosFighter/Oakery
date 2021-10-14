@@ -10353,7 +10353,7 @@ translate german take_to_school_93e24500:
 translate german take_to_school_bb885618:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "Und das werde ich auch. Viel Glück!"
+    Max_01 "Das werde ich nicht. Viel Glück!"
 
 # game/dialogues/lisatalk.rpy:4475
 translate german take_to_school_2946fe9e:
@@ -10383,7 +10383,7 @@ translate german take_to_school_fb1c6e25:
 translate german take_to_school_bb885618_1:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "Und das werde ich auch. Viel Glück!"
+    Max_01 "Das werde ich nicht. Viel Glück!"
 
 # game/dialogues/lisatalk.rpy:4491
 translate german take_to_school_598d67c3:
@@ -10431,7 +10431,7 @@ translate german take_to_school_f7d87922:
 translate german take_to_school_bb885618_3:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "Und das werde ich auch. Viel Glück!"
+    Max_01 "Das werde ich nicht. Viel Glück!"
 
 translate german strings:
 

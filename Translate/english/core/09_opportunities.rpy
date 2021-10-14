@@ -1905,3 +1905,20 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Чтобы Эрик меньше лез к моим сёстрам, нужно прикупить слабительное или успокоительное, а затем помочь Алисе накрыть на стол, заодно подсыпав одно из этих средств..."
     new "To make Eric less of a nuisance to my sisters, I need to buy a laxative or a sedative, and then help Alice set the table by slipping one of these remedies..."
+
+# TODO: Translation updated at 2021-10-13 12:05
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями!"
+    new "Lisa warned me that now that their theoretical classes were over, Eric would be giving her sex education lessons without my mother's involvement. And, as I understood it, they were going to reinforce the theoretical part with practical lessons!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Ивент находится в разработке"
+    new "The event is under development"
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы."
+    new "Lisa came to me for advice, because, as it turned out, after finishing their theoretical lessons, Eric suggested that she consolidate all this in practical lessons without my mother's participation."
+
