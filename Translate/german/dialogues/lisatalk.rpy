@@ -10401,7 +10401,7 @@ translate german take_to_school_bb885618_2:
 translate german take_to_school_af56c02f:
 
     # Lisa_09 "Вроде да... Но не знаю, я как-то не уверена. Сейчас побегу в школу, может вместе с одноклассниками разберусь в некоторых моментах."
-    Lisa_09 "Ich glaube ja... Aber ich weiß es nicht, ich bin mir nicht sicher. Ich werde jetzt zur Schule laufen, vielleicht rede ich zusammen mit meinen Mitschülern etwas."
+    Lisa_09 "Ich glaube ja... Aber ich weiß es nicht, ich bin mir nicht sicher. Ich werde jetzt zur Schule gehen, vielleicht unterhalte ich mich noch mit meinen Mitschülern etwas."
 
 # game/dialogues/lisatalk.rpy:4498
 translate german take_to_school_29693a9f:

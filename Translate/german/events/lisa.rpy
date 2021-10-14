@@ -2606,7 +2606,7 @@ translate german lisa_dressed_get_notebook1_a6bb39c7:
 translate german lisa_dressed_stay_in_room_9edd3eac:
 
     # Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..." nointeract
-    Lisa_00 "Max, ich muss mich umziehen. Würdest du so freundlich sein und einen verschwinden oder dich wenigstens umdrehen..." nointeract
+    Lisa_00 "Max, ich muss mich umziehen. Würdest du so freundlich sein zu verschwinden oder dich wenigstens umdrehen..." nointeract
 
 # game/events/lisa.rpy:906
 translate german lisa_dressed_stay_in_room_769644c1:
