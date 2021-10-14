@@ -2044,7 +2044,7 @@ translate german lisa_sudden_dressing_lvl_3_01edfdc0:
 translate german lisa_sudden_dressing_lvl_3_53bb992b:
 
     # Lisa_01 "Думаешь, она у меня такая, чтобы тебя постоянно радовать? А вот и нет! Дай одеться спокойно..."
-    Lisa_01 "Glaubst du, ich müsste einen die dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
+    Lisa_01 "Glaubst du, ich müsste dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
 
 # game/events/lisa.rpy:1562
 translate german lisa_sudden_dressing_lvl_3_f331a21c:
@@ -2376,7 +2376,7 @@ translate german lisa_dressed_lvl_3_01edfdc0:
 translate german lisa_dressed_lvl_3_53bb992b:
 
     # Lisa_01 "Думаешь, она у меня такая, чтобы тебя постоянно радовать? А вот и нет! Дай одеться спокойно..."
-    Lisa_01 "Glaubst du, ich müsste einen die dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
+    Lisa_01 "Glaubst du, ich müsste dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
 
 # game/events/lisa.rpy:971
 translate german lisa_dressed_lvl_3_f331a21c:
