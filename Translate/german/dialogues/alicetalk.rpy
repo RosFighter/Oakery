@@ -10687,7 +10687,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:2069
     old "Ага..."
-    new "Ja, also..."
+    new "Ja, ja..."
 
     # game/dialogues/alicetalk.rpy:2082
     old "Ничего, просто любуюсь..."

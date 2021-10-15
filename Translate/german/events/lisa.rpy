@@ -2102,7 +2102,7 @@ translate german strings:
 
     # game/events/lisa.rpy:1491
     old "Да легко! Не буду мешать..."
-    new "Ganz einfach! Ich will dich nicht stören..."
+    new "Alles klar! Ich will dich nicht stören..."
 
     # game/events/lisa.rpy:1493
     old "Не буду. Честное слово!"
