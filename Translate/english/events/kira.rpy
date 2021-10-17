@@ -1240,7 +1240,7 @@ translate english kira_night_swim_171022d2:
 translate english kira_night_swim_06dbdfc5:
 
     # Kira_06 "Ухх, впечатлил! Спускайся, тебе нужно немного охладиться. И как знать, может даже ты встретишь приключение на свой член!" nointeract
-    Kira_06 "Well, impressive! Come on down, you need to cool off a bit. And who knows, you're dick might even go on an adventure!" nointeract
+    Kira_06 "Well, impressive! Come on down, you need to cool off a bit. And who knows, your dick might even go on an adventure!" nointeract
 
 # game/events/kira.rpy:804
 translate english kira_night_swim_62d66d9a:
