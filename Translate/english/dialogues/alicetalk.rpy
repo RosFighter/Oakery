@@ -520,7 +520,7 @@ translate english alice_talk_tv_massage_67ad610f:
 translate english alice_talk_tv_choice_mass_create_menu_264b44e4:
 
     # Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
-    Alice_02 "[succes!t]Max, what are you... Oh, okay, let's have one more... But this is the last one, don't offer any more, or I'll kick you know where! And this candy seems to taste even better than the last one! I feel really warm..."
+    Alice_02 "[succes!t]Max, what are you... Oh, okay, let's have one more... But this is the last one, don't offer any more, or I'll kick you, you know where! And this candy seems to taste even better than the last one! I feel really warm..."
 
 # game/dialogues/alicetalk.rpy:579
 translate english alice_talk_tv_choice_mass_create_menu_6b3e8ab2:
