@@ -124,7 +124,7 @@ translate english intro_8b0c7301:
 translate english intro_ce5a5dae:
 
     # Maya_01 "Это двухэтажный дом на юге страны, который построила его компания. А насчёт того, что это на него не похоже... В последние пару лет он очень изменился. Не уверена, что эти изменения пошли на пользу бизнесу."
-    Maya_01 "It's a two story house built by his company. And I'm sure it's strange, bur in recent years, he's become quite the philanthropist..."
+    Maya_01 "It's a two story house built by his company. And I'm sure it's strange, but in recent years, he's become quite the philanthropist..."
 
 # game/script.rpy:79
 translate english intro_43a9e56e:
@@ -279,4 +279,3 @@ translate english strings:
     # game/script.rpy:123
     old "{i}повторить{/i}"
     new "{i}repeat{/i}"
-
