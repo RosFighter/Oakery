@@ -2914,7 +2914,7 @@ translate german Alice_sorry_6943c4c1:
 translate german Alice_sorry_af83a90f:
 
     # Alice_16 "Это что вообще за недовольства?! Наверное, я погорячилась со свои заказом и тебя нужно просто отправить маме, которая отучит тебя подглядывать."
-    Alice_16 "Was ist das für ein Verhalten?! Vielleicht habe ich zu viel verlangt und du musst einfach zu Mom geschickt werden, die dir beibringt, nicht zu spionieren."
+    Alice_16 "Was soll der Groll?! Vielleicht habe ich zu viel verlangt und du musst einfach zu unserer Mom geschickt werden, die dir beibringt, nicht zu spionieren."
 
 # game/dialogues/alicetalk.rpy:2260
 translate german Alice_sorry_1951a195:
@@ -2944,13 +2944,13 @@ translate german Alice_sorry_c6b0a949:
 translate german Alice_sorry_fcfcdff9:
 
     # Max_10 "Но ведь это, наверняка, стоит очень дорого."
-    Max_10 "Es muss aber sehr teuer sein."
+    Max_10 "Es sollte aber nicht zu teuer sein."
 
 # game/dialogues/alicetalk.rpy:2265
 translate german Alice_sorry_11f015fc:
 
     # Alice_05 "Ну конечно, ведь всё имеет свою цену. Это только подглядывать за собственной сестрой и дрочить на неё в тихушку ничего не стоит!"
-    Alice_05 "Natürlich hat alles seinen Preis. Es kostet dich nicht viel, wenn du deine eigene Schwester ausspionierst und dir heimlich auf sie einen runterholst!"
+    Alice_05 "Natürlich hat alles seinen Preis. Es kostet dich auch nicht viel, wenn du deine eigene Schwester ausspionierst und dir heimlich auf sie einen runterholst!"
 
 # game/dialogues/alicetalk.rpy:2266
 translate german Alice_sorry_00fd6771:
@@ -8891,7 +8891,7 @@ translate german alice_private_punish_r_pun_08cf69a4:
 translate german alice_private_punish_r_pun_1e46a369:
 
     # Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
-    Max_02 "kay, bis zum nächsten Mal. Das ist ein schöner Arsch, den du da hast."
+    Max_02 "Okay, bis zum nächsten Mal. Das ist ein schöner Arsch, den du da hast."
 
 # game/dialogues/alicetalk.rpy:5021
 translate german alice_private_punish_r_pun_e5a94fd2:
@@ -8951,7 +8951,7 @@ translate german alice_gift_mistress1_e63acb48:
 translate german alice_gift_mistress1_62932bde:
 
     # Alice_12 "Что? Раз ты мне его купил, то я обязательно тебе в нём должна показаться? Так ты считаешь, да? Костюмчик ведь для ролевых игр, а мы с тобой вообще-то брат и сестра!"
-    Alice_12 "Weil? Nur, weil du es für mich gekauft hast, muss ich mich dir darin zeigen? Das denkst du doch, oder? Das Kostüm ist für Rollenspiele, und wir sind eigentlich Bruder und Schwester!"
+    Alice_12 "Wieso? Nur weil Du es mir gekauft hast, muss ich es dir auch vorführen? Das denkst Du doch, oder? Das Kostüm ist für Rollenspiele, und wir sind eigentlich Bruder und Schwester!"
 
 # game/dialogues/alicetalk.rpy:5050
 translate german alice_gift_mistress1_7c4b01e3:
@@ -9275,7 +9275,7 @@ translate german alice_mistress_0_b5d05fa8:
 translate german alice_mistress_0_bb08674b:
 
     # Alice_16 "Не перебивай меня, Макс! Я ведь могу использовать этот стек по его назначению... Хочешь?"
-    Alice_16 "Unterbrich mich nicht, Max! Immerhin kann ich diesen Stack für den vorgesehenen Zweck verwenden... Willst du das?"
+    Alice_16 "Unterbrich mich nicht, Max! Immerhin kann ich diese Reitgerte für den vorgesehenen Zweck verwenden... Willst du das?"
 
 # game/dialogues/alicetalk.rpy:5174
 translate german alice_mistress_0_febc43c1:
@@ -11672,7 +11672,7 @@ translate german alice_domine_drink_kiss_9d5fdb90:
 translate german alice_domine_drink_kiss_cdcd1179:
 
     # Max_19 "{m}Да я этому только рад, сестрёнка! Как бы мне не кончить от её стонов и жарких поцелуев... Так можно ей всё удовольствие обломать, а после схлопотать вдогонку по заднице её стеком! Мне лучше и правда держаться, но как же это непросто...{/m}" nointeract
-    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen und den heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
+    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen und den heißen Küssen kommen... Das würde dir den Spaß verderben und dann werde ich mit dieser Reitgerte verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5594
 translate german alice_domine_drink_kiss_9e72ee84:

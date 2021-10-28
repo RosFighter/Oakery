@@ -1600,7 +1600,7 @@ translate german jerk_photohant1_9fa70f41:
 translate german jerk_photohant1_5893f935:
 
     # Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..." nointeract
-    Max_10 "Als ich ankahm, war Eric schon weg... Nun, ich werde ihn das nächste Mal erwischen..." nointeract
+    Max_10 "Als ich ankam, war Eric schon weg... Nun, ich werde ihn das nächste Mal erwischen..." nointeract
 
 # game/events/eric.rpy:1482
 translate german jerk_photohant2_52df7afd:
@@ -1612,7 +1612,7 @@ translate german jerk_photohant2_52df7afd:
 translate german jerk_photohant2_5893f935:
 
     # Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..." nointeract
-    Max_10 "Als ich ankahm, war Eric schon weg... Nun, ich werde ihn das nächste Mal erwischen..." nointeract
+    Max_10 "Als ich ankam, war Eric schon weg... Nun, ich werde ihn das nächste Mal erwischen..." nointeract
 
 translate german strings:
 

@@ -1186,7 +1186,7 @@ translate german breakfast_7_161dce96:
 translate german breakfast_7_a34321c8:
 
     # Ann_01 "Нет, Лиза, дело не в этом. Эрик считает, что если вас наказывать без одежды, то вам будет жутко стыдно друг перед другом и вы не захотите повторения наказания. К счастью или нет, вы разных полов и это обычно очень действует..."
-    Ann_01 "Nein, Lisa, davon spreche ich nicht. Eric denkt, wenn ihr ohne Klamotten bestraft wird, dann werdet ihr euch voreinander sehr schämen, und ihr werdet euch sehr bemühen, nicht noch einmal bestraft zu werden. Glücklicherweise oder auch nicht, ihr habt verschiedene Geschlechter, also sollte dies sehr effektiv sein..."
+    Ann_01 "Nein, Lisa, davon spreche ich nicht. Eric denkt, wenn ihr ohne Klamotten bestraft werdet, dann werdet ihr euch voreinander sehr schämen, und ihr werdet euch sehr bemühen, nicht noch einmal bestraft zu werden. Glücklicherweise oder auch nicht, ihr habt verschiedene Geschlechter, also sollte dies sehr effektiv sein..."
 
 # game/dialogues/breakfast.rpy:686
 translate german breakfast_7_9d10ae8c:
@@ -1432,7 +1432,7 @@ translate german breakfast_18_3bbc12a6:
 translate german breakfast_18_112c970e:
 
     # Ann_02 "Да ладно, Кир, можешь рассказать. Я видела в твоих вещах форму горничной. Наверняка, решила устроиться в какой-то богатый дом, чтобы платили много, а тебе только пыль сдувать. Угадала?"
-    Ann_02 "Komm schon, Kira, du kannst offen darüber reden. Ich habe die Hausmädchensachen in deiner Tasche gesehen. Du hast wahrscheinlich einen Job in einem reichen Haus, der gut bezahlt wird, und alles, was du tun musst, ist, etwas Staub wegzupusten. Nicht wahr?"
+    Ann_02 "Komm schon, Kira, du kannst offen darüber reden. Ich habe die Hausmädchensachen in deiner Tasche gesehen. Du hast wahrscheinlich einen Job in einem reichen Haus, der gut bezahlt wird, und alles, was du tun musst, ist etwas Staub wegzupusten. Nicht wahr?"
 
 # game/dialogues/breakfast.rpy:752
 translate german breakfast_18_81016e2b:

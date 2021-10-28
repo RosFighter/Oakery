@@ -94,7 +94,7 @@ translate german kira_firsttalk_e43fd195:
 translate german kira_firsttalk_1efd517d:
 
     # Kira_04 "А что тётя Кира? Проехали. Кое-кому, так вообще нужно принять душ и расслабиться. Может быть, и мне тоже, но вдвоём не стоит это делать. Так что, иди ты в душ. И включи холодную воду. Очень холодную!"
-    Kira_04 "Was ist mit deiner Tante? Vergiss sie. Jemand muss duschen und sich entspannen. Ich vielleicht auch, aber wir zwei sollten nicht zusammen gehen. Also geh duschen. Und mach das kalte Wasser an. Stellt sicher, dass es wirklich kalt ist!"
+    Kira_04 "Was ist mit deiner Tante? Vergiss sie. Jemand muss duschen und sich entspannen. Ich vielleicht auch, aber wir zwei sollten nicht zusammen gehen. Also geh duschen. Und mach das kalte Wasser an. Stell sicher, dass es wirklich kalt ist!"
 
 # game/dialogues/kiratalk.rpy:72
 translate german kira_firsttalk_6e7aee99:
@@ -214,7 +214,7 @@ translate german kira_talk2_9ec6735a:
 translate german kira_talk2_93b5a4b6:
 
     # Kira_04 "Я рада. Обычно я не слежу за языком и он меня в такие места заводит... Но с детьми надо быть... Хотя, ты уже совсем не ребёнок."
-    Kira_04 "Das freut mich. Normalerweise achte ich nicht auf meine Zunge und das bringt mich in Schwierigkeiten Aber für Kinder muss man sich... Obwohl du längst kein Kind mehr bist."
+    Kira_04 "Das freut mich. Normalerweise achte ich nicht auf das, was ich sage und das bringt mich in Schwierigkeiten. Aber für Kinder muss man sich... Obwohl du längst kein Kind mehr bist."
 
 # game/dialogues/kiratalk.rpy:125
 translate german kira_talk2_e915aeea:
@@ -340,7 +340,7 @@ translate german kira_talk3_764e2abb:
 translate german kira_talk3_0000db15:
 
     # Kira_04 "Тогда, Макс, я тебе ещё больше сочувствую и теперь лучше тебя понимаю... Может быть, сменим тему?"
-    Kira_04 "Wow, tut mir leid, das zu hören. Ich habe das Gefühl, dass ich jetzt deine Sitruation viel besser verstehe. Sollen wir das Thema wechseln?"
+    Kira_04 "Wow, tut mir leid, das zu hören. Ich habe das Gefühl, dass ich jetzt deine Situation viel besser verstehe. Sollen wir das Thema wechseln?"
 
 # game/dialogues/kiratalk.rpy:179
 translate german kira_talk3_82324783:

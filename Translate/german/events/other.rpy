@@ -514,7 +514,7 @@ translate german Kira_arrival_2171ddd4:
 translate german Kira_arrival_3a81a6f4:
 
     # Kira_03 "Да, я прошу прощения, что не предупредила, но не могла завалиться к вам, чтобы тут же убежать. Но я со всем разобралась, всё в порядке, теперь я тут!"
-    Kira_03 "Ja, es tut mir leid, dass ich dich nicht gewarnt habe, aber ich konnte nicht einfach vorbeischauen und glleich wieder gehen. Aber ich habe alles geregelt, es ist alles in Ordnung, jetzt bin ich hier!"
+    Kira_03 "Ja, es tut mir leid, dass ich dich nicht gewarnt habe, aber ich konnte nicht einfach vorbeischauen und gleich wieder gehen. Aber ich habe alles geregelt, es ist alles in Ordnung, jetzt bin ich hier!"
 
 # game/events/other.rpy:282
 translate german Kira_arrival_end_yard_5810a3fd:

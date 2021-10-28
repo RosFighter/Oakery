@@ -1240,13 +1240,13 @@ translate german lisa_romantic_movie_r_6a31b0c6:
 translate german lisa_romantic_movie_r_53814219:
 
     # Lisa_13 "Ага, развалился тут со своим членом на всю кровать и довольный! А это вообще-то наказание!"
-    Lisa_13 "Ja, er liegt fröhlich da mit seinem Schwanz draußen! Und das ist eigentlich eine Bestrafung!"
+    Lisa_13 "Ja, du liegst fröhlich hier mit deinem Schwanz draußen! Und das ist eigentlich eine Bestrafung!"
 
 # game/events/lisa.rpy:1046
 translate german lisa_romantic_movie_r_24f4c2ff:
 
     # Max_07 "Ну а что я сделаю, если они там решили поразвлечься?!"
-    Max_07 "Nun, was soll ich tun, wenn er draußen sind und Spaß habt?!"
+    Max_07 "Nun, was soll ich tun, wenn er draußen ist und wir uns amysieren?!"
 
 # game/events/lisa.rpy:1047
 translate german lisa_romantic_movie_r_754adc77:
@@ -1942,7 +1942,7 @@ translate german lisa_sudden_dressing_3e816722:
 translate german lisa_sudden_dressing_a9de2a0b:
 
     # Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
-    Lisa_01 "Und du brauchst ihn jetzt gerade nicht? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
+    Lisa_01 "Und du brauchst ihn jetzt gerade, nicht wahr? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
 
 # game/events/lisa.rpy:1505
 translate german lisa_sudden_dressing_4671244c:
@@ -1960,7 +1960,7 @@ translate german lisa_sudden_dressing_89f1263a:
 translate german lisa_sudden_dressing_a9de2a0b_1:
 
     # Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
-    Lisa_01 "Und du brauchst ihn jetzt gerade nicht? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
+    Lisa_01 "Und du brauchst ihn jetzt gerade, nicht wahr? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
 
 # game/events/lisa.rpy:1517
 translate german lisa_sudden_dressing_4671244c_1:
@@ -2262,7 +2262,7 @@ translate german lisa_dressed_moment0_930f8d87:
 translate german lisa_dressed_moment0_a9de2a0b:
 
     # Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
-    Lisa_01 "Und du brauchst ihn jetzt gerade nicht? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
+    Lisa_01 "Und du brauchst ihn jetzt gerade, nicht wahr? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
 
 # game/events/lisa.rpy:882
 translate german lisa_dressed_moment0_ce7b5650:

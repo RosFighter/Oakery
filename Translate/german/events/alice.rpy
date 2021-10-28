@@ -1024,7 +1024,7 @@ translate german alice_dressed_friend_4670d0d6:
 translate german alice_dressed_friend_474499f6:
 
     # Max_04 "Алиса переодевается... Трусики хорошо смотрятся на её попке. Но без них было бы лучше... Так. Пора бы сваливать. Вдруг, кто-то заметит!"
-    Max_04 "Alice zieht sich um... Dieses Höschen sieht gut aus auf ihrem Arsch aus. Aber er würde ohne noch viel besser aussehen... Okay, es ist Zeit, von hier zu verschwinden. Jemand könnte es bemerken!"
+    Max_04 "Alice zieht sich um... Dieses Höschen sieht gut auf ihrem Arsch aus. Aber er würde ohne noch viel besser aussehen... Okay, es ist Zeit, von hier zu verschwinden. Jemand könnte es bemerken!"
 
 # game/events/alice.rpy:896
 translate german alice_dressed_friend_3b812933:
@@ -2788,7 +2788,7 @@ translate german alice_body_photoset1_f6ff2886:
 translate german alice_body_photoset1_ad551119:
 
     # Alice_05 "Да вижу я по твоим шортам, что ты там уже не на обложку напредставлял, а на разворот."
-    Alice_05 "Ja, und so wie du aussiehst, bin ich die Art von Cover-Girl, die du lieber \"nakt\" sehen würdest, richtig?"
+    Alice_05 "Ja, und so wie du aussiehst, bin ich die Art von Cover-Girl, die du lieber \"nackt\" sehen würdest, richtig?"
 
 # game/events/alice.rpy:2339
 translate german alice_body_photoset1_da413f09:
@@ -2836,7 +2836,7 @@ translate german alice_body_photoset1_650b9ebb_1:
 translate german alice_body_photoset1_72495e04:
 
     # Alice_02 "На кровати, так на кровати. А теперь давай признавайся, Макс, когда успел фотоаппарат научиться держать? Не на своих же любимых онлайн-курсах?"
-    Alice_02 "Auf dem Bett also. Na los, verrätst du, wann du gelernt hast, wie man eine Kamera bedient? War es in einem Ihrer Online-Kurse?"
+    Alice_02 "Auf dem Bett, also. Jetzt sag mir, Max, wann hast du gelernt, wie man eine Kamera bedient? Nicht etwa in deinem Lieblings-Online-Kurs?"
 
 # game/events/alice.rpy:2359
 translate german alice_body_photoset1_37c1d751:

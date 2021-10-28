@@ -1042,7 +1042,7 @@ translate german dinner_6_457b166b:
 translate german dinner_6_0603d673:
 
     # Eric_02 "А зря. Хотя ваша мама и воспитала вас очень хорошо, ну некоторых точно. Но она воспитывала одна, а для того, чтобы мальчик стал настоящим мужчиной, нужно строгое, мужское воспитание. Вот в этом лагере его можно получить."
-    Eric_02 "Das solltest du aber tun. Obwohl deine Mutter dich sehr gut erzogen hat, zumindest einige von euch, hat sie dich allein erzogen, und um einen Jungen zu einem richtigen Mann zu erziehen, sollte es strenge, männliche Hilfe geben. Die bekommst du im dem Lager."
+    Eric_02 "Das solltest du aber tun. Obwohl deine Mutter dich sehr gut erzogen hat, zumindest einige von euch, hat sie dich allein erzogen, und um einen Jungen zu einem richtigen Mann zu erziehen, sollte es Strenge, männliche Hilfe geben. Die bekommst du im dem Lager."
 
 # game/dialogues/dinner.rpy:536
 translate german dinner_6_2f9d222e:

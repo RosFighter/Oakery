@@ -3352,7 +3352,7 @@ translate german kira_alice_shower_ladder_e400863b:
 translate german kira_alice_shower_ladder_40f09602:
 
     # Max_06 "О да, сегодня тётя Кира и Алиса зажигают своими голыми попками перед зеркалом! Это можно прировнять к новому чуду света..."
-    Max_06 "Tante Kira und Alice sind endlich beide zusammen nackt! Das ist ein Moment, den ich in meinem Gedächtnis verankert haben werde..."
+    Max_06 "Oh ja, heute präsentieren sich Tante Kira und Alice mit nacktem Hintern vor dem Spiegel! Dies könnte man mit einem neuen Weltwunder gleichsetzen..."
 
 # game/events/kira.rpy:2648
 translate german kira_alice_shower_ladder_f790b709:
@@ -4304,7 +4304,7 @@ translate german kira_night_tv_tv_sex2_4e28d11a:
 translate german kira_night_tv_tv_sex2_dcce85b2:
 
     # Kira_11 "Охх... Да... Тогда я буду опускаться на твой член очень медленно! Чтобы ты прочувствовал всю нежность моей мокрой киски... Ухх, как это обалденно! Ммм... Хочешь быстрее?"
-    Kira_11 "Ohhh... Ja... Dann werde ich mich ganz langsam an deinem Schwanz bedienen! So kannst du die Zärtlichkeit meiner feuchten Pussy spüren... Oh, das ist so gut! Hmmm... Wollen Sie schneller werden?"
+    Kira_11 "Ohhh... Ja... Dann werde ich mich ganz langsam an deinem Schwanz bedienen! So kannst du die Zärtlichkeit meiner feuchten Pussy spüren... Oh, das ist so gut! Hmmm... Willst du schneller machen?"
 
 # game/events/kira.rpy:1949
 translate german kira_night_tv_tv_sex2_7c90ec0a:
