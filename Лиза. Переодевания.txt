@@ -395,7 +395,7 @@
 	     #myroom-wardrobe-mde-01-lisa-dresses-02a
 		 #myroom-wardrobe-mde-01-lisa-dresses-03c
 		 #myroom-wardrobe-mde-01-lisa-dresses-02h
-15:00 [вс] Лиза переодевается после репетитора в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
+15:00 [вс] Лиза переодевается после репетитора в бикини, далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-lisa-dresses-03c
@@ -417,7 +417,7 @@
       Не повезло:
 		 #myroom-wardrobe-mde-01-lisa-dresses-03c
 		 #myroom-wardrobe-mde-01-lisa-dresses-02h
-16:00 [пн-пт] Лиза переодевается после школы в бикини (если красного бикини ещё нет, то может быть только нулевой момент), далее отдыхает во дворе
+16:00 [пн-пт] Лиза переодевается после школы в бикини, далее отдыхает во дворе
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
 	     #myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-lisa-dresses-03c
@@ -440,6 +440,22 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-03c
 		 #myroom-wardrobe-mde-01-lisa-dresses-02e1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02h
+16:00 [вт/ср/пт] Лиза и Оливия переодеваются после школы в бикини (если Оливия начала отдыхать голая, то варианты одежды "01c/04c/07c" убираются), далее отдыхают во дворе
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-olivia-dresses-(01c/01e/01e2) + myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(01c/01e/01e2) + myroom-wardrobe-mde-01-lisa-dresses-01c1 => #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-olivia-dresses-(04c/04e/04e2) + myroom-wardrobe-mde-01-lisa-dresses-04c  => #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(04c/04e/04e2) + myroom-wardrobe-mde-01-lisa-dresses-04c1 => #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-05c1
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07c/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-05c1
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-olivia-dresses-09e + myroom-wardrobe-mde-01-lisa-dresses-07e
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+
 17:00 [сб/вс] Лиза переодевается после отдыха во дворе в базовую одежду / халат / розовую, далее несколько часов читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -779,6 +795,26 @@
 		 #myroom-wardrobe-mde-01-lisa-dresses-03c или myroom-wardrobe-mde-01-lisa-dresses-06c
 		 #myroom-wardrobe-mde-01-lisa-dresses-02e1 или myroom-wardrobe-mde-01-lisa-dresses-05e1
 		 #myroom-wardrobe-mde-01-lisa-dresses-02h или myroom-wardrobe-mde-01-lisa-dresses-05h
+16:00 [вт/ср/пт] Лиза и Оливия переодеваются после школы в бикини, далее отдыхают во дворе
+   (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+	     #myroom-wardrobe-mde-01-olivia-dresses-(01/01e/01e2) + myroom-wardrobe-mde-01-lisa-dresses-01   => #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-olivia-dresses-(01/01e/01e2) + myroom-wardrobe-mde-01-lisa-dresses-01c  => #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(01/01e/01e2) + myroom-wardrobe-mde-01-lisa-dresses-01c1 => #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-olivia-dresses-(04/04e/04e2) + myroom-wardrobe-mde-01-lisa-dresses-04   => #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-olivia-dresses-(04/04e/04e2) + myroom-wardrobe-mde-01-lisa-dresses-04c  => #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(04/04e/04e2) + myroom-wardrobe-mde-01-lisa-dresses-04c1 => #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-05c1
+      Не повезло (второй момент):
+	     #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-03
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-03c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-02c1
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-06
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-06c
+		 #myroom-wardrobe-mde-01-olivia-dresses-(07/07e/07e2) + myroom-wardrobe-mde-01-lisa-dresses-05c1
+	  Рано (нулевой момент):
+	     #myroom-wardrobe-mde-01-olivia-dresses-09e + myroom-wardrobe-mde-01-lisa-dresses-07e
+   (Лиза просит Макса не подглядывать)   #myroom-wardrobe-mde-02
+
 17:00 [сб/вс] Лиза переодевается после отдыха во дворе в базовую одежду / халат / розовую, далее несколько часов читает
    (Макс просто входит в комнату)   #myroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
@@ -1081,7 +1117,7 @@
 
 УР#02
 
-(Макс просто входит в комнату)
+(Макс просто входит в комнату)   #Лиза одна
    Повезло:
       #первый момент
       Lisa_11 "Макс! Я не одета!!!"
@@ -1135,6 +1171,60 @@
 		 "Да легко! Не буду мешать..."
 		    Lisa_01 "Спасибо, Макс. Я быстренько!"
 			   подождать за дверью, пока Лиза переоденется
+			   уйти
+
+(Макс просто входит в комнату)   #Лиза с Оливией
+   Повезло:
+      #первый момент
+      Lisa_11 "Макс! Мы же переодеваемся!!!"
+	  #второй момент
+	  Lisa_13 "Выйди и закрой за собой дверь!"
+	  Olivia_03 "Да, Макс! Тебе должно быть очень стыдно за такие выходки."
+	     "Аж глаза разбегаются, на кого смотреть..."   #если Лиза стоит передом к Максу
+		    Olivia_02 "Ох, нам бы твои проблемы..."
+			Lisa_10 "Ты не глазей, а жди за дверью! Или хочешь, чтобы я маме об этом рассказала?"
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+         "У меня встал!"   #если Лиза стоит задом к Максу
+		    Olivia_02 "Оу, похоже Макс хочет сказать, что мы с тобой очень соблазнительно выглядим!"
+			Lisa_10 "Ну, Макс! Я ведь и маме всё могу рассказать, если не уйдёшь."
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+		 "Извините... Мне стыдно, но смотритесь вы красиво!"
+		    Olivia_02 "Спасибо. Ты тоже ничего... Только из шорт от радости не выпрыгни."
+		    Lisa_09 "Ну и долго ты ещё пялиться будешь?! Выйди и подожди. Мы недолго..."
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+   Не повезло:
+      #второй момент
+      Lisa_11 "Макс! Мы же переодеваемся!!! Выйди и закрой за собой дверь!"
+	     "Аж глаза разбегаются, на кого смотреть..."   #если Лиза стоит передом к Максу
+		    Olivia_02 "Ох, нам бы твои проблемы..."
+			Lisa_10 "Ты не глазей, а жди за дверью! Или хочешь, чтобы я маме об этом рассказала?"
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+         "У меня встал!"   #если Лиза стоит задом к Максу
+		    Olivia_02 "Оу, похоже Макс хочет сказать, что мы с тобой очень соблазнительно выглядим!"
+			Lisa_10 "Ну, Макс! Я ведь и маме всё могу рассказать, если не уйдёшь."
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+		 "Извините... Мне стыдно, но смотритесь вы красиво!"
+		    Olivia_02 "Спасибо. Ты тоже ничего... Только из шорт от радости не выпрыгни."
+		    Lisa_09 "Ну и долго ты ещё пялиться будешь?! Выйди и подожди. Мы недолго..."
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+   Рано:
+      #нулевой момент
+      Lisa_00 "Ой, Макс! А ты можешь немного погулять? Мы собирались переодеться..."
+	     "Да чего я там не видел..."
+		    Lisa_09 "Откуда я знаю, что ты видел, а что ещё нет? Как бы там ни было, я стесняюсь и хочу переодеться без свидетелей."
+			Olivia_01 "Что сказать, Макс... Ты в пролёте!"
+			   подождать за дверью, пока девочки переоденутся
+			   уйти
+		 "Да легко! Не буду мешать..."
+		    Lisa_01 "Спасибо, Макс. Мы быстренько!"
+			Olivia_01 "Лично мне Макс нисколько не мешает..."
+			   подождать за дверью, пока девочки переоденутся
 			   уйти
 
 (Лиза просит Макса не подглядывать)
