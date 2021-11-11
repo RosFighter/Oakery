@@ -125,3 +125,4 @@ translate english strings:
     # game/core/04function.rpy:1207
     old "Конфеты закончились"
     new "We're out of candy"
+

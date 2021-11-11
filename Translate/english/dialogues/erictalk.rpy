@@ -1507,3 +1507,4 @@ translate english Eric_tribute_no_money_dd72ca96:
 
     # Eric_13 "Скоро узнаешь. А теперь проваливай!" nointeract
     Eric_13 "You'll find out soon enough. Now get out!" nointeract
+

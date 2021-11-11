@@ -301,3 +301,4 @@ translate english strings:
     # game/core/06_items.rpy:2
     old "Отлично подойдёт тем, кто не хочет перевозбуждаться. Только спокойствие и безмятежность. Перед применением следует обязательно проконсультироваться с врачом для определения нужной дозировки."
     new "Perfect for those who wish to sleep in tranquility and serenity. Before using, be sure to consult a doctor to determine the proper dosage."
+

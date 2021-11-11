@@ -53,3 +53,4 @@ translate english strings:
     # game/core/07_clothes.rpy:87
     old "Для прогулок"
     new "For walking"
+

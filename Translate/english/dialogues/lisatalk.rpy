@@ -1158,17 +1158,17 @@ translate english wash_dishes_lisa_9a2b70d3:
     # Lisa_01 "А вот знаешь... хочу! Да, спасибо, Макс!" nointeract
     Lisa_01 "You know what... I do! Yes, thanks, Max!" nointeract
 
-# game/dialogues/lisatalk.rpy:767
-translate english wash_dishes_lisa_acbb7452:
+# game/dialogues/lisatalk.rpy:779
+translate english wash_dishes_lisa_d6fa3950:
 
-    # Max_00 "И чего я этим занимаюсь? Делать нечего, что ли..."
-    Max_00 "Why am I wasting my time...?"
+    # Max_00 "{m}И чего я этим занимаюсь? Делать нечего, что ли...{/m}"
+    Max_00 "{m}Why am I wasting my time...?{/m}"
 
-# game/dialogues/lisatalk.rpy:768
-translate english wash_dishes_lisa_5c3452e3:
+# game/dialogues/lisatalk.rpy:781
+translate english wash_dishes_lisa_e7cbef78:
 
-    # Max_00 "А с другой строны - неплохой способ улучшить отношения с Лизой..." nointeract
-    Max_00 "But on the other hand, its a good way to improve my relationship with Lisa..." nointeract
+    # Max_00 "{m}А с другой стороны - неплохой способ улучшить отношения с Лизой...{/m}" nointeract
+    Max_00 "{m}But on the other hand, its a good way to improve my relationship with Lisa...{/m}" nointeract
 
 # game/dialogues/lisatalk.rpy:773
 translate english wash_dishes_lisa_1bfb44d5:
@@ -2226,10 +2226,10 @@ translate english Lisa_HomeWork_first_foot_mass_d2d86c45:
     # Lisa_09 "[lisa_bad_mass!t]Ай, всё... Прекращай, Макс! Щекотно же... Я не могу на домашнем задании сосредоточиться... Не так уж ты и хорош в этом деле."
     Lisa_09 "[lisa_bad_mass!t]Uh, that's it... Stop it, Max! It tickles... I can't concentrate on my homework. You're not that good at it."
 
-# game/dialogues/lisatalk.rpy:1331
-translate english Lisa_HomeWork_first_foot_mass_d6b64053:
+# game/dialogues/lisatalk.rpy:1296
+translate english Lisa_HomeWork_first_foot_mass_235a9d11:
 
-    # Max_07 "К тебе, просто, другой подход нужен. Не как с Алисой. В следующий раз у меня получится лучше..."
+    # Max_07 "К тебе просто другой подход нужен. Не как с Алисой. В следующий раз у меня получится лучше..."
     Max_07 "You just need a different approach. Not like with Alice. I can do better next time..."
 
 # game/dialogues/lisatalk.rpy:1332
@@ -6630,11 +6630,11 @@ translate english lisa_ment_kiss_bebd495a:
     # Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}" nointeract
     Max_04 "{m}Her soft lips are so sweet... And her hot tongue playing more actively with mine!{/m}" nointeract
 
-# game/dialogues/lisatalk.rpy:3605
-translate english lisa_ment_kiss_3e75c8e2:
+# game/dialogues/lisatalk.rpy:3406
+translate english lisa_ment_kiss_273a78e0:
 
-    # Max_05 "[lisa_good_kiss!t]{i}Ухх... Какие гладкие у неё ножки и упругая попка! И она, похоже, не против того, как и где я к ней прикасаюсь...{/i}" nointeract
-    Max_05 "[lisa_good_kiss!t]{i}Her slender legs are so smooth, and I can easily feel the shape of her firm ass! She doesn't seem to mind how and where I touch her...{/i}" nointeract
+    # Max_05 "[lisa_good_kiss!t]{m}Ухх... Какие гладкие у неё ножки и упругая попка! И она, похоже, не против того, как и где я к ней прикасаюсь...{/m}" nointeract
+    Max_05 "[lisa_good_kiss!t]{m}Her slender legs are so smooth, and I can easily feel the shape of her firm ass! She doesn't seem to mind how and where I touch her...{/m}" nointeract
 
 # game/dialogues/lisatalk.rpy:3610
 translate english lisa_ment_kiss_58e6b8e0:
@@ -10457,3 +10457,89 @@ translate english lisa_about_ae_sexed5_da98adae:
 
     # Lisa_00 "А затем, что эти уроки продолжатся в нашей с тобой комнате, Макс."
     Lisa_00 "And then that these lessons will continue in our room with you, Max."
+
+# TODO: Translation updated at 2021-11-11 13:38
+
+# game/dialogues/lisatalk.rpy:21
+translate english LisaTalkStart_e91aa3e9:
+
+    # Lisa_13 "Макс, я же просила отстать! Не хочу с тобой разговаривать." nointeract
+    Lisa_13 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4545
+translate english lisa_about_wallet_53c90b6e:
+
+    # Lisa_12 "Что ты хотел, Макс?"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:4546
+translate english lisa_about_wallet_fb1cb05d:
+
+    # Max_10 "Надеюсь, ты не поверила Эрику?"
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:4547
+translate english lisa_about_wallet_cc33c7d1:
+
+    # Lisa_13 "А зачем ему врать про такое?"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4548
+translate english lisa_about_wallet_1fe8c5d2:
+
+    # Max_07 "Чтобы я побыстрее отправился в военный лагерь, а он мог без проблем к вам всем приставать."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4549
+translate english lisa_about_wallet_7863dfe7:
+
+    # Lisa_09 "Что это ещё значит, \"приставать\"?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4550
+translate english lisa_about_wallet_c596c0c7:
+
+    # Max_15 "Это значит, самым грязным и непристойным образом с вами всеми развлекаться."
+    Max_15 ""
+
+# game/dialogues/lisatalk.rpy:4551
+translate english lisa_about_wallet_525e0eed:
+
+    # Lisa_10 "Ой, Макс, ну что за ересь! Эрик - прекрасный и честный мужчина, в отличие от тебя. И вообще, я не хочу с тобой разговаривать. Отстань."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4552
+translate english lisa_about_wallet_6226d61a:
+
+    # Max_09 "А если бы у меня были доказательства, подтверждающие, что он не такой классный, как ты думаешь?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4553
+translate english lisa_about_wallet_2ebe63dc:
+
+    # Lisa_12 "Думаю, если бы и были, то ты бы уже всё всем доказал. Так что повторю ещё раз... Отстань!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:4557
+translate english lisa_about_wallet_8c152f15:
+
+    # Max_07 "{m}Ясно. Доказательства у меня есть, вот только девчонки сейчас в таком состоянии, что запросто могут обвинить меня в том, что я эти фотографии нарисовал в каком-нибудь графическом редакторе.{/m}"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4558
+translate english lisa_about_wallet_0b4cc1e7:
+
+    # Max_01 "{m}Кажется, я знаю, как подкрепить эти снимки фактами... И поможет мне в этом Алиса, ведь именно на неё Эрик так усердно дрочит. Остаётся его грамотно подставить...{/m}"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4559
+translate english lisa_about_wallet_3d4efb1f:
+
+    # Max_09 "{m}Нужно будет проследить за его ночными делишками в комнате Алисы, а сразу после действовать! Главное, чтобы Алиса спала голой...{/m}"
+    Max_09 ""
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:4561
+    old "{b}Оповещение:{/b} Лиза больше не хочет взаимодействовать с Максом"
+    new ""
