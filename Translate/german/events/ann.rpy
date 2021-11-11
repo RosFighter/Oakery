@@ -1,190 +1,190 @@
 ﻿# TODO: Translation updated at 2021-09-01 17:03
 
-# game/events/ann.rpy:10
-translate german ann_sleep_240f8eab:
+# game/events/ann.rpy:11
+translate german ann_sleep_6173ff68:
 
-    # Max_00 "В это время мама обычно спит.\nМне кажется, не стоит её будить..." nointeract
-    Max_00 " Mom schläft um diese Zeit normalerweise. \n es ist wohl besser, wenn ich sie nicht aufwecken..." nointeract
+    # Max_00 "{m}В это время мама обычно спит.\nМне кажется, не стоит её будить...{/m}" nointeract
+    Max_00 "{m} Mom schläft um diese Zeit normalerweise. \n es ist wohl besser, wenn ich sie nicht aufwecken...{/m}" nointeract
 
 # game/events/ann.rpy:18
-translate german ann_sleep_261d0248:
+translate german ann_sleep_2e3b88bc:
 
-    # Max_01 "Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
-    Max_01 "Ja! Mom schläft... Ich kann nicht glauben, dass dieser heiße Arsch drei Kinder bekommen hat... Ich würde es im Leben nicht glauben!" nointeract
+    # Max_01 "{m}Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!{/m}" nointeract
+    Max_01 "{m}Ja! Mom schläft... Ich kann nicht glauben, dass dieser heiße Arsch drei Kinder bekommen hat... Ich würde es im Leben nicht glauben!{/m}" nointeract
 
 # game/events/ann.rpy:20
-translate german ann_sleep_3060fb81:
+translate german ann_sleep_e9347a52:
 
-    # Max_04 "О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
-    Max_04 "Oh ja! Was für ein Arsch! Es ist gut, dass es hier drin so heiß ist und jeder ohne Decke schläft." nointeract
+    # Max_04 "{m}О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!{/m}" nointeract
+    Max_04 "{m}Oh ja! Was für ein Arsch! Es ist gut, dass es hier drin so heiß ist und jeder ohne Decke schläft.{/m}" nointeract
 
 # game/events/ann.rpy:22
-translate german ann_sleep_dfc27cd6:
+translate german ann_sleep_f158a828:
 
-    # Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
-    Max_07 "Fantastisch! Ich bin so glücklich, so eine heiße Mutter zu haben... Ich will meine Augen nicht von ihr lassen!" nointeract
+    # Max_07 "{m}Обалденно! Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!{/m}" nointeract
+    Max_07 "{m}Fantastisch! Ich bin so glücklich, so eine heiße Mutter zu haben... Ich will meine Augen nicht von ihr lassen!{/m}" nointeract
 
 # game/events/ann.rpy:25
-translate german ann_sleep_697ba3b2:
+translate german ann_sleep_78b3f9d0:
 
-    # Max_01 "Класс! Мама спит в ночнушке... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
-    Max_01 "Schön! Mom schläft in ihrem Nachthemd... Ich kann nicht glauben, dass sie drei Kinder bekommen hat... Ihr Körper ist perfekt!" nointeract
+    # Max_01 "{m}Класс! Мама спит в ночнушке... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!{/m}" nointeract
+    Max_01 "{m}Schön! Mom schläft in ihrem Nachthemd... Ich kann nicht glauben, dass sie drei Kinder bekommen hat... Ihr Körper ist perfekt!{/m}" nointeract
 
 # game/events/ann.rpy:27
-translate german ann_sleep_21484aea:
+translate german ann_sleep_19a34828:
 
-    # Max_04 "О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Её попку даже немного видно через ночнушку!" nointeract
-    Max_04 "Oh, ja! Was für einen Arsch Mom hat! Gut, dass es hier drin so heiß ist und alle ohne Decke schlafen... Man kann ihren Hintern sogar ein bisschen durch ihr Nachthemd sehen!" nointeract
+    # Max_04 "{m}О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Её попку даже немного видно через ночнушку!{/m}" nointeract
+    Max_04 "{m}Oh, ja! Was für einen Arsch Mom hat! Gut, dass es hier drin so heiß ist und alle ohne Decke schlafen... Man kann ihren Hintern sogar ein bisschen durch ihr Nachthemd sehen!{/m}" nointeract
 
 # game/events/ann.rpy:29
-translate german ann_sleep_8a07d51f:
+translate german ann_sleep_1cc5b28f:
 
-    # Max_07 "Обалденно! Как же повезло, что у меня такая горячая мама... В этой ночнушке она выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
-    Max_07 "Fantastisch! Ich habe so ein Glück, dass ich so eine heiße Mom habe... Sie sieht fantastisch aus in diesem Nachthemd, und ich will meine Augen nicht von ihr nehmen!" nointeract
+    # Max_07 "{m}Обалденно! Как же повезло, что у меня такая горячая мама... В этой ночнушке она выглядит потрясающе, аж глаза отрывать не хочется!{/m}" nointeract
+    Max_07 "{m}Fantastisch! Ich habe so ein Glück, dass ich so eine heiße Mom habe... Sie sieht fantastisch aus in diesem Nachthemd, und ich will meine Augen nicht von ihr nehmen!{/m}" nointeract
 
 # game/events/ann.rpy:38
-translate german ann_sleep_d5c35f70:
+translate german ann_sleep_d64da859:
 
-    # Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась." nointeract
-    Max_03 "Verdammt, ich habe die verführerischste Mutter der Welt! Ich wünschte, ich könnte ihr die ganze Unterwäsche ausziehen und ... Aber es ist besser, leise zu gehen, bevor sie aufwacht." nointeract
+    # Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
+    Max_03 "{m}Verdammt, ich habe die verführerischste Mutter der Welt! Ich wünschte, ich könnte ihr die ganze Unterwäsche ausziehen und ... Aber es ist besser, leise zu gehen, bevor sie aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:40
-translate german ann_sleep_c99b810c:
+translate german ann_sleep_eedcea80:
 
-    # Max_02 "Ухх! Так и хочется прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
-    Max_02 "Uhh! Ich will einfach nur an diesem Arsch hängen und die ganze Nacht bleiben... Aber es ist Zeit zu gehen, bevor sie aufwacht." nointeract
+    # Max_02 "{m}Ухх! Так и хочется прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться.{/m}" nointeract
+    Max_02 "{m}Uhh! Ich will einfach nur an diesem Arsch hängen und die ganze Nacht bleiben... Aber es ist Zeit zu gehen, bevor sie aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:42
-translate german ann_sleep_acd8f5fc:
+translate german ann_sleep_abe8ecd4:
 
-    # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "Wow! Der Anblick dieser Beine macht mir Lust zu erkunden und zu sehen, wohin sie hinführen... Zu verlockend! Solange sie jetzt nicht aufwacht..." nointeract
+    # Max_05 "{m}Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительно! Только бы она сейчас не проснулась...{/m}" nointeract
+    Max_05 "{m}Wow! Der Anblick dieser Beine macht mir Lust zu erkunden und zu sehen, wohin sie hinführen... Zu verlockend! Solange sie jetzt nicht aufwacht...{/m}" nointeract
 
 # game/events/ann.rpy:45
-translate german ann_sleep_72364154:
+translate german ann_sleep_249e8b49:
 
-    # Max_03 "Чёрт, у меня самая аппетитная мама на свете! Вот бы пристроиться сзади и запустить руки под эту сорочку... Но лучше потихоньку уходить, пока она не проснулась." nointeract
-    Max_03 "Verdammt, ich habe die appetitlichste Mutter der Welt! Ich wünschte, ich könnte hinten sitzen und meine Hände unter dieses Hemd stecken... Aber wir gehen besser leise, bevor sie aufwacht." nointeract
+    # Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Вот бы пристроиться сзади и запустить руки под эту сорочку... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
+    Max_03 "{m}Verdammt, ich habe die appetitlichste Mutter der Welt! Ich wünschte, ich könnte hinten sitzen und meine Hände unter dieses Hemd stecken... Aber wir gehen besser leise, bevor sie aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:47
-translate german ann_sleep_fd1a61fb:
+translate german ann_sleep_3eaf0f95:
 
-    # Max_02 "Ухх! Так и хочется задрать её сорочку, прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
-    Max_02 "Uhh! Ich will ihr nur das Nachthemd ausziehen, mich an diesen bezaubernden Arsch kuscheln und die Nacht so verbringen... Aber es ist Zeit zu gehen, bevor sie noch aufwacht." nointeract
+    # Max_02 "{m}Ухх! Так и хочется задрать её сорочку, прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться.{/m}" nointeract
+    Max_02 "{m}Uhh! Ich will ihr nur das Nachthemd ausziehen, mich an diesen bezaubernden Arsch kuscheln und die Nacht so verbringen... Aber es ist Zeit zu gehen, bevor sie noch aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:49
-translate german ann_sleep_0107c89f:
+translate german ann_sleep_80d64f9d:
 
-    # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком уж соблазнительно она выглядит в этой сорочке! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "Wow! Der Anblick dieser schlanken Beine... Sie schauen zu verlockend aus in diesem Hemd! Solange sie jetzt nicht aufwacht..." nointeract
+    # Max_05 "{m}Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком уж соблазнительно она выглядит в этой сорочке! Только бы она сейчас не проснулась...{/m}" nointeract
+    Max_05 "{m}Wow! Der Anblick dieser schlanken Beine... Sie schauen zu verlockend aus in diesem Hemd! Solange sie jetzt nicht aufwacht...{/m}" nointeract
 
 # game/events/ann.rpy:64
-translate german ann_shower_05e06b33:
+translate german ann_shower_71ff78e8:
 
-    # Max_00 "Я уже попался сегодня на подглядывании за мамой. Не стоит злить её ещё больше."
-    Max_00 "Ich wurde heute schon dabei erwischt, wie ich meine Mutter angeguckt habe. Das sollte sie nicht noch wütender machen."
+    # Max_00 "{m}Я уже попался сегодня на подглядывании за мамой. Не стоит злить её ещё больше.{/m}"
+    Max_00 "{m}Ich wurde heute schon dabei erwischt, wie ich meine Mutter angeguckt habe. Das sollte sie nicht noch wütender machen.{/m}"
 
 # game/events/ann.rpy:67
-translate german ann_shower_cc932b06:
+translate german ann_shower_f74760e1:
 
-    # Max_00 "Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто."
-    Max_00 "Ich habe mir heute schon Mom angesehen. Man sollte das Schicksal nicht zu oft herausfordern."
+    # Max_00 "{m}Я уже подсматривал сегодня за мамой. Не стоит искушать судьбу слишком часто.{/m}"
+    Max_00 "{m}Ich habe mir heute schon Mom angesehen. Man sollte das Schicksal nicht zu oft herausfordern.{/m}"
 
 # game/events/ann.rpy:70
-translate german ann_shower_71ff657f:
+translate german ann_shower_8b54d4a6:
 
-    # Max_00 "Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто."
-    Max_00 "Mom hat mich heute fast erwischt. Man sollte das Schicksal nicht zu oft herausfordern."
+    # Max_00 "{m}Сегодня мама и так сегодня едва не поймала меня. Не стоит искушать судьбу слишком часто.{/m}"
+    Max_00 "{m}Mom hat mich heute fast erwischt. Man sollte das Schicksal nicht zu oft herausfordern.{/m}"
 
-# game/events/ann.rpy:73
-translate german ann_shower_9c2211b3:
+# game/events/ann.rpy:74
+translate german ann_shower_686b9c2d:
 
-    # Max_00 "Мама сейчас принимает душ..." nointeract
-    Max_00 "Mom duscht gerade..." nointeract
+    # Max_00 "{m}Мама сейчас принимает душ...{/m}" nointeract
+    Max_00 "{m}Mom duscht gerade...{/m}" nointeract
 
-# game/events/ann.rpy:79
-translate german ann_shower_39468bae:
+# game/events/ann.rpy:80
+translate german ann_shower_ecc96d65:
 
-    # Max_00 "Похоже, мама принимает душ..." nointeract
-    Max_00 "Sieht aus, als würde Mom eine Dusche nehmen..." nointeract
+    # Max_00 "{m}Похоже, мама принимает душ...{/m}" nointeract
+    Max_00 "{m}Sieht aus, als würde Mom eine Dusche nehmen...{/m}" nointeract
 
 # game/events/ann.rpy:91
-translate german ann_shower_ladder_2b325faf:
+translate german ann_shower_ladder_76e8b72b:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Mal sehen, was wir hier haben..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Mal sehen, was wir hier haben...{/m}"
 
 # game/events/ann.rpy:104
-translate german ann_shower_ladder_e3f2416f:
+translate german ann_shower_ladder_22ab693f:
 
-    # Max_07 "Да-а... Распахнутый халатик на маме - это просто изумительное шоу! Такие соблазнительные сосочки... да ещё и так близко... Ммм..."
-    Max_07 "Ja, äh... Der offene Bademantel an Mom ist einfach eine tolle Show! So verführerische Nippel... und auch so nah... "
+    # Max_07 "{m}Да-а... Распахнутый халатик на маме - это просто изумительное шоу! Такие соблазнительные сосочки... да ещё и так близко... Ммм...{/m}"
+    Max_07 "{m}Ja, äh... Der offene Bademantel an Mom ist einfach eine tolle Show! So verführerische Nippel... und auch so nah... {/m}"
 
 # game/events/ann.rpy:106
-translate german ann_shower_ladder_5a8c4673:
+translate german ann_shower_ladder_31453ab1:
 
-    # Max_05 "О, да! Мама решила не надевать трусики и правильно сделала, потому что увидеть эту киску с утра пораньше - просто сказка!"
-    Max_05 "Oh, ja! Mom verzichtet auf ein Höschen und hat das Richtige getan, denn diese Muschi am frühen Morgen zu sehen, ist ein Märchen!"
+    # Max_05 "{m}О, да! Мама решила не надевать трусики и правильно сделала, потому что увидеть эту киску с утра пораньше - просто сказка!{/m}"
+    Max_05 "{m}Oh, ja! Mom verzichtet auf ein Höschen und hat das Richtige getan, denn diese Muschi am frühen Morgen zu sehen, ist ein Märchen!{/m}"
 
 # game/events/ann.rpy:108
-translate german ann_shower_ladder_96a69e90:
+translate german ann_shower_ladder_e12e58b5:
 
-    # Max_03 "Вот это повезло... Мама в одних лишь трусиках, а её упругая грудь предстаёт передо мной во всей своей красе! Так бы любовался и любовался ей..."
-    Max_03 "Nun, das ist ein Glück... Mom trägt nur ein Höschen, und ihre weichen Brüste erscheinen mir in ihrer ganzen Pracht! Deshalb bewundere ich sie..."
+    # Max_03 "{m}Вот это повезло... Мама в одних лишь трусиках, а её упругая грудь предстаёт передо мной во всей своей красе! Так бы любовался и любовался ей...{/m}"
+    Max_03 "{m}Nun, das ist ein Glück... Mom trägt nur ein Höschen, und ihre weichen Brüste erscheinen mir in ihrer ganzen Pracht! Deshalb bewundere ich sie...{/m}"
 
 # game/events/ann.rpy:110
-translate german ann_shower_ladder_0c9341b6:
+translate german ann_shower_ladder_1cf5ec43:
 
-    # Max_06 "Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все её округлости!"
-    Max_06 "Wow! Man sieht es nicht oft, sie ist völlig nackt! Solange ich nicht so von der Leiter falle... Es wäre so cool, ihren prallen Körper zu streicheln!"
+    # Max_06 "{m}Ничего себе! Такое зрелище не каждый раз увидишь - она же совершенно голая! Только бы со стремянки не упасть от такого вида... Как было бы круто потискать все её округлости!{/m}"
+    Max_06 "{m}Wow! Man sieht es nicht oft, sie ist völlig nackt! Solange ich nicht so von der Leiter falle... Es wäre so cool, ihren prallen Körper zu streicheln!{/m}"
 
 # game/events/ann.rpy:115
-translate german ann_shower_ladder_f790b709:
+translate german ann_shower_ladder_1409147d:
 
-    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
+    # Max_07 "{m}Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру...{/m}"
+    Max_07 "{m}Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren...{/m}"
 
 # game/events/ann.rpy:116
-translate german ann_shower_ladder_8e5f0b17:
+translate german ann_shower_ladder_46e55bf6:
 
-    # Max_00 "Лучше бы мне уже уйти, пока никто не увидел..."
-    Max_00 "Ich verschwinde lieber, bevor mich jemand sieht... "
+    # Max_00 "{m}Лучше бы мне уже уйти, пока никто не увидел...{/m}"
+    Max_00 "{m}Ich verschwinde lieber, bevor mich jemand sieht... {/m}"
 
-# game/events/ann.rpy:128
-translate german ann_shower_start_peeping_f0132630:
+# game/events/ann.rpy:135
+translate german ann_shower_start_peeping_d307b6b4:
 
-    # Max_07 "Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама... Надеюсь, она меня не заметит..." nointeract
-    Max_07 "Wow! Ich habe Glück, so eine heiße Mutter zu haben... Ich hoffe, sie bemerkt mich nicht..." nointeract
+    # Max_07 "{m}Ух, аж завораживает! Повезло же, что у меня такая сексуальная мама... Надеюсь, она меня не заметит...{/m}" nointeract
+    Max_07 "{m}Wow! Ich habe Glück, so eine heiße Mutter zu haben... Ich hoffe, sie bemerkt mich nicht...{/m}" nointeract
 
-# game/events/ann.rpy:151
-translate german ann_shower_alt_peepeng_e486fb14:
+# game/events/ann.rpy:155
+translate german ann_shower_alt_peepeng_9519b19b:
 
-    # Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-    Max_03 "[undetect!t]Das ist der Wahnsinn! Nicht jeden Tag, dass man eine Chance bekommt, diese Schönheit zu bewundern! Ihre großen festen Brüste und schlanke Figur sind einfach ein Anblick zu sehen..."
+    # Max_03 "[undetect!t]{m}Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье...{/m}"
+    Max_03 "[undetect!t]{m}Das ist der Wahnsinn! Nicht jeden Tag, dass man eine Chance bekommt, diese Schönheit zu bewundern! Ihre großen festen Brüste und schlanke Figur sind einfach ein Anblick zu sehen...{/m}"
 
-# game/events/ann.rpy:153
-translate german ann_shower_alt_peepeng_3c3328bd:
+# game/events/ann.rpy:157
+translate german ann_shower_alt_peepeng_bb7b0422:
 
-    # Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
-    Max_05 "[undetect!t]Oh, ja! Der Anblick ist einfach unglaublich... So ein saftiger Arsch kann den Neid jeder Frau erregen! Wie feucht..."
-
-# game/events/ann.rpy:168
-translate german ann_shower_closer_peepeng_e486fb14:
-
-    # Max_03 "[undetect!t]Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье..."
-    Max_03 "[undetect!t]Erstaunlich! Es kommt nicht jeden Tag vor, dass man die Chance hat, diese Schönheit zu bewundern! Ihre großen, weichen Brüste und ihre schlanke Figur sind nur ein Blick..."
+    # Max_05 "[undetect!t]{m}О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая...{/m}"
+    Max_05 "[undetect!t]{m}Oh, ja! Der Anblick ist einfach unglaublich... So ein saftiger Arsch kann den Neid jeder Frau erregen! Wie feucht...{/m}"
 
 # game/events/ann.rpy:170
-translate german ann_shower_closer_peepeng_3c3328bd:
+translate german ann_shower_closer_peepeng_9519b19b:
 
-    # Max_05 "[undetect!t]О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая..."
-    Max_05 "[undetect!t]Was für eine Show! So ein praller Arsch, den jeder bewundern kann..."
+    # Max_03 "[undetect!t]{m}Обалдеть можно! Не каждый день выпадает такое счастье, любоваться этой красотой! Её большая упругая грудь и стройная фигурка просто загляденье...{/m}"
+    Max_03 "[undetect!t]{m}Erstaunlich! Es kommt nicht jeden Tag vor, dass man die Chance hat, diese Schönheit zu bewundern! Ihre großen, weichen Brüste und ihre schlanke Figur sind nur ein Blick...{/m}"
+
+# game/events/ann.rpy:172
+translate german ann_shower_closer_peepeng_bb7b0422:
+
+    # Max_05 "[undetect!t]{m}О, да! Зрелище просто потрясающее... Такой сочной попке может позавидовать любая женщина! Какая мокренькая...{/m}"
+    Max_05 "[undetect!t]{m}Was für eine Show! So ein praller Arsch, den jeder bewundern kann...{/m}"
 
 # game/events/ann.rpy:185
-translate german ann_shower_not_luck_4a76a42b:
+translate german ann_shower_not_luck_6222d56c:
 
-    # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\nУпс... надо бежать, пока она меня не увидела!"
-    Max_12 "{color=[orange]}{i}Ich glaube, Mom ist misstrauisch!{/i}{/color}\nUps ... ich sollte abhauen, bevor sie mich sieht!"
+    # Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\n{m}Упс... надо бежать, пока она меня не увидела!{/m}"
+    Max_12 "{color=[orange]}{i}Ich glaube, Mom ist misstrauisch!{/i}{/color}\n{m}Ups ... ich sollte abhauen, bevor sie mich sieht!{/m}"
 
 # game/events/ann.rpy:196
 translate german ann_shower_not_luck_9b36810d:
@@ -246,11 +246,11 @@ translate german ann_shower_serious_talk_471df3d0:
     # Max_14 "Хорошо..."
     Max_14 "Klar..."
 
-# game/events/ann.rpy:269
-translate german ann_dressed_work_7b31f3ed:
+# game/events/ann.rpy:262
+translate german ann_dressed_work_269233ce:
 
-    # Max_09 "Сейчас 10 часов, а значит, мама собирается на работу..." nointeract
-    Max_09 "Es ist 10:00 Uhr, was bedeutet, dass Mom zur Arbeit geht..." nointeract
+    # Max_09 "{m}Сейчас 10 часов, а значит, мама собирается на работу...{/m}" nointeract
+    Max_09 "{m}Es ist 10:00 Uhr, was bedeutet, dass Mom zur Arbeit geht...{/m}" nointeract
 
 # game/events/ann.rpy:272
 translate german ann_dressed_work_b21abe2e:
@@ -312,11 +312,11 @@ translate german ann_dressed_work_c8682e5b_1:
     # Max_00 "Конечно, мам!"
     Max_00 "Alles klar, Mom."
 
-# game/events/ann.rpy:304
-translate german ann_dressed_work_acf27c66:
+# game/events/ann.rpy:296
+translate german ann_dressed_work_a94cbdaa:
 
-    # Max_00 "Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит."
-    Max_00 "Ich hätte wahrscheinlich nicht so bei Mom reinplatzen sollen... Ich hoffe, das Geschenk wird die Wogen glätten."
+    # Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
+    Max_00 "{m}Ich hätte wahrscheinlich nicht so bei Mom reinplatzen sollen... Ich hoffe, das Geschenk wird die Wogen glätten.{/m}"
 
 # game/events/ann.rpy:308
 translate german ann_dressed_work_6bbecd5d:
@@ -342,11 +342,11 @@ translate german ann_dressed_work_d66e2468:
     # Max_00 "Хорошо, мам..."
     Max_00 "Okay, Mom..."
 
-# game/events/ann.rpy:333
-translate german ann_dressed_work_a4d8ba92:
+# game/events/ann.rpy:325
+translate german ann_dressed_work_a3f1e45d:
 
-    # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
-    Max_01 "Wow, was für ein Anblick! Ich habe einen günstigen Moment erwischt... Aber ich sollte verschwinden, bevor sie mich im Spiegel sieht"
+    # Max_01 "{m}Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!{/m}"
+    Max_01 "{m}Wow, was für ein Anblick! Ich habe einen günstigen Moment erwischt... Aber ich sollte verschwinden, bevor sie mich im Spiegel sieht{/m}"
 
 # game/events/ann.rpy:341
 translate german ann_dressed_work_gift_a14e771b:
@@ -486,11 +486,11 @@ translate german ann_dressed_work_goodday_1a01074c:
     # Ann_02 "Спасибо, сынок! И тебе тоже..."
     Ann_02 "Vielen Dank, mein Sohn! Und dir auch..."
 
-# game/events/ann.rpy:432
-translate german ann_dressed_shop_d4cf236b:
+# game/events/ann.rpy:421
+translate german ann_dressed_shop_734f1c10:
 
-    # Max_09 "Сегодня суббота, день шоппинга. Видимо, мама собирается..." nointeract
-    Max_09 "Sieht aus, als würde sich Mom für einen Einkaufstag fertig machen" nointeract
+    # Max_09 "{m}Сегодня суббота, день шоппинга. Видимо, мама собирается...{/m}" nointeract
+    Max_09 "{m}Sieht aus, als würde sich Mom für einen Einkaufstag fertig machen{/m}" nointeract
 
 # game/events/ann.rpy:435
 translate german ann_dressed_shop_b21abe2e:
@@ -552,11 +552,11 @@ translate german ann_dressed_shop_c8682e5b_1:
     # Max_00 "Конечно, мам!"
     Max_00 "Natürlich, Mom!"
 
-# game/events/ann.rpy:467
-translate german ann_dressed_shop_acf27c66:
+# game/events/ann.rpy:455
+translate german ann_dressed_shop_a94cbdaa:
 
-    # Max_00 "Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит."
-    Max_00 "Ich hätte wahrscheinlich nicht so bei Mom reinplatzen sollen... Ich hoffe, das Geschenk wird die Wogen glätten."
+    # Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
+    Max_00 "{m}Ich hätte wahrscheinlich nicht so bei Mom reinplatzen sollen... Ich hoffe, das Geschenk wird die Wogen glätten.{/m}"
 
 # game/events/ann.rpy:470
 translate german ann_dressed_shop_9f399a69:
@@ -570,11 +570,11 @@ translate german ann_dressed_shop_d66e2468:
     # Max_00 "Хорошо, мам..."
     Max_00 "Okay, Mom..."
 
-# game/events/ann.rpy:491
-translate german ann_dressed_shop_a4d8ba92:
+# game/events/ann.rpy:479
+translate german ann_dressed_shop_a3f1e45d:
 
-    # Max_01 "Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!"
-    Max_01 "Wow, was für ein Anblick! Ich habe meinen Moment gut gewählt... Aber es ist Zeit zu gehen, sonst sieht sie mich vielleicht im Spiegel."
+    # Max_01 "{m}Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!{/m}"
+    Max_01 "{m}Wow, was für ein Anblick! Ich habe meinen Moment gut gewählt... Aber es ist Zeit zu gehen, sonst sieht sie mich vielleicht im Spiegel.{/m}"
 
 # game/events/ann.rpy:499
 translate german ann_dressed_shop_gift_a14e771b:
@@ -714,11 +714,11 @@ translate german ann_dressed_shop_goodday_1a01074c:
     # Ann_02 "Спасибо, сынок! И тебе тоже..."
     Ann_02 "Vielen Dank, mein Sohn! Und dir auch..."
 
-# game/events/ann.rpy:647
-translate german ann_bath_9132bdea:
+# game/events/ann.rpy:632
+translate german ann_bath_fc2b25dc:
 
-    # Max_00 "Видимо, мама принимает ванну..." nointeract
-    Max_00 "Sieht aus, als würde die Mom ein Bad nehmen" nointeract
+    # Max_00 "{m}Видимо, мама принимает ванну...{/m}" nointeract
+    Max_00 "{m}Sieht aus, als würde die Mom ein Bad nehmen{/m}" nointeract
 
 # game/events/ann.rpy:650
 translate german ann_bath_cddc6bee:
@@ -750,53 +750,53 @@ translate german ann_bath_7852d704:
     # Max_00 "Ага..."
     Max_00 "Okay..."
 
-# game/events/ann.rpy:689
-translate german ann_bath_8d2fe639:
+# game/events/ann.rpy:673
+translate german ann_bath_9d03c202:
 
-    # Max_00 "Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить..."
-    Max_00 "Schade, dass das Glas undurchsichtig ist, ich kann die besten Bereiche nicht sehen! Und noch näher heranzukommen ist zu riskant..."
+    # Max_00 "{m}Эх... жаль, что стекло частично матовое. Так ничего не разглядеть! А если подобраться ближе, то мама может заметить...{/m}"
+    Max_00 "{m}Schade, dass das Glas undurchsichtig ist, ich kann die besten Bereiche nicht sehen! Und noch näher heranzukommen ist zu riskant...{/m}"
 
-# game/events/ann.rpy:690
-translate german ann_bath_617c9a2e:
+# game/events/ann.rpy:675
+translate german ann_bath_7fffd1ec:
 
-    # Max_09 "Нужно что-нибудь придумать..." nointeract
-    Max_09 "Ich muss mir etwas einfallen lassen..." nointeract
+    # Max_09 "{m}Нужно что-нибудь придумать...{/m}" nointeract
+    Max_09 "{m}Ich muss mir etwas einfallen lassen...{/m}" nointeract
 
-# game/events/ann.rpy:698
-translate german ann_bath_6a58c36d:
+# game/events/ann.rpy:682
+translate german ann_bath_4a929722:
 
-    # Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-    Max_01 "Ich hoffe, niemand stellt in Frage, warum hier eine Trittleiter steht... sie dient nur zu Ermittlungszwecken... mal sehen, womit wir es zu tun haben."
+    # Max_01 "{m}Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное...{/m}"
+    Max_01 "{m}Ich hoffe, niemand stellt in Frage, warum hier eine Trittleiter steht... sie dient nur zu Ermittlungszwecken... mal sehen, womit wir es zu tun haben.{/m}"
+
+# game/events/ann.rpy:696
+translate german ann_bath_ladder_76e8b72b:
+
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Mal sehen, was wir hier haben...{/m}"
+
+# game/events/ann.rpy:706
+translate german ann_bath_ladder_3a5db899:
+
+    # Max_03 "{m}Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит...{/m}" nointeract
+    Max_03 "{m}Oh, wie heiß! Und ich meine nicht das Wasser. Uhh... Mom sieht unglaublich aus...{/m}" nointeract
 
 # game/events/ann.rpy:712
-translate german ann_bath_ladder_2b325faf:
+translate german ann_bath_ladder_b37e9fe1:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Mal sehen, was wir hier haben..."
+    # Max_05 "{m}Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно...{/m}" nointeract
+    Max_05 "{m}Wow, unglaublich! Ihre festen Brüste und diese langen, schlanken Beine werden jeden verrückt machen...{/m}" nointeract
 
 # game/events/ann.rpy:721
-translate german ann_bath_ladder_55a4f81a:
+translate german ann_bath_ladder_b37e9fe1_1:
 
-    # Max_03 "Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит..." nointeract
-    Max_03 "Oh, wie heiß! Und ich meine nicht das Wasser. Uhh... Mom sieht unglaublich aus..." nointeract
+    # Max_05 "{m}Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно...{/m}" nointeract
+    Max_05 "{m}Wow, unglaublich! Ihre festen Brüste und diese langen, schlanken Beine werden jeden verrückt machen...{/m}" nointeract
 
 # game/events/ann.rpy:727
-translate german ann_bath_ladder_e2ffea21:
+translate german ann_bath_ladder_87fd27ff:
 
-    # Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..." nointeract
-    Max_05 "Wow, unglaublich! Ihre festen Brüste und diese langen, schlanken Beine werden jeden verrückt machen..." nointeract
-
-# game/events/ann.rpy:736
-translate german ann_bath_ladder_e2ffea21_1:
-
-    # Max_05 "Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно..." nointeract
-    Max_05 "Wow, unglaublich! Ihre festen Brüste und diese langen, schlanken Beine werden jeden verrückt machen..." nointeract
-
-# game/events/ann.rpy:742
-translate german ann_bath_ladder_36138fd2:
-
-    # Max_07 "Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка..." nointeract
-    Max_07 "Eh! Sieht aus, als wäre der spaßige Teil vorbei... Obwohl, Mom dabei zuzusehen, wie sie ihren nassen und verführerischen Körper abtrocknet, ist genau so unterhaltsam! Oh, was für einen Arsch sie hat..." nointeract
+    # Max_07 "{m}Эх! Похоже, самое интересное закончилось... Хотя, смотреть как мама вытирает своё мокрое и соблазнительное тело не менее приятно! Ох, какая же у неё попка...{/m}" nointeract
+    Max_07 "{m}Eh! Sieht aus, als wäre der spaßige Teil vorbei... Obwohl, Mom dabei zuzusehen, wie sie ihren nassen und verführerischen Körper abtrocknet, ist genau so unterhaltsam! Oh, was für einen Arsch sie hat...{/m}" nointeract
 
 translate german strings:
 
@@ -868,3 +868,16 @@ translate german strings:
     old "Ой, нет, я передумал"
     new "Oh, sorry, ich habe meine Meinung geändert"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+# game/events/ann.rpy:126
+translate german ann_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 ""
+
+# game/events/ann.rpy:128
+translate german ann_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "" nointeract

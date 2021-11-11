@@ -715,11 +715,11 @@ translate german strings:
     new "Es gibt noch ein wenig Hoffnung bei Tante Kira. Sie ist eine interessante und aufgeschlossene Frau. Vielleicht hat sie ein paar gute Ratschläge..."
 
     # game/core/09_opportunities.rpy:4
-    old "Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телек."
+    old "Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телик."
     new "Ich glaube, ich habe jemanden gefunden, der mir beibringen kann, wie man küsst. Meine Tante! Das ist so seltsam... Nun, sie weiß sicherlich genug über das Thema. Ich wäre mit jedem Lehrer glücklich, aber das ist besser als das, was ich erwartet habe! Tante Kira meinte, es wäre besser, in einem intimeren Rahmen darüber zu sprechen. Zum Beispiel, wenn sie abends fernsieht."
 
     # game/core/09_opportunities.rpy:4
-    old "Телек тётя Кира смотрит после возвращения с работы поздней ночью, в среду и воскресенье. Нужно постараться успеть, прежде чем она ляжет спать..."
+    old "Телик тётя Кира смотрит после возвращения с работы поздней ночью, в среду и воскресенье. Нужно постараться успеть, прежде чем она ляжет спать..."
     new "Tante Kira sieht fern, wenn sie spätabends von der Arbeit nach Hause kommt, am Mittwoch und am Sonntag. Ich muss es schaffen, bevor sie ins Bett geht..."
 
     # game/core/09_opportunities.rpy:4
@@ -1857,6 +1857,7 @@ translate german strings:
     # game/core/09_opportunities.rpy:768
     old "Нужно больше времени проводить с мамой. Её утренние занятия йогой помогут нам сблизиться..."
     new "Ich muss mehr Zeit mit meiner Mom verbringen. Ihr morgendlicher Yoga-Kurs wird dazu beitragen, dass wir uns näher kommen..."
+
 # TODO: Translation updated at 2021-09-06 21:38
 
 translate german strings:
@@ -1920,4 +1921,3 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы."
     new "Lisa kam zu mir, um sich beraten zu lassen, denn es stellte sich heraus, dass Eric nach dem theoretischen Unterricht vorgeschlagen hatte, all dies im praktischen Unterricht ohne die Anwesenheit von Mom zu vertiefen."
-

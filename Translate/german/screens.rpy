@@ -107,8 +107,8 @@ translate german strings:
     new "ENDE"
 
     # game/screens.rpy:527
-    old "ГЛАВНОЕ МЕНЮ"
-    new "HAUPTMENUE"
+    old "МЕНЮ"
+    new "MENUE"
 
     # game/screens.rpy:661
     old "Введите описание файла сохранения:"
@@ -442,3 +442,10 @@ translate german strings:
     old "Переодевания Лизы пропускаются, если Макс в комнате"
     new "Lisas Umziehen wird übersprungen, wenn Max im Zimmer ist"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+translate german strings:
+
+    # game/screens.rpy:400
+    old "Главное меню"
+    new "Hauptmenue"

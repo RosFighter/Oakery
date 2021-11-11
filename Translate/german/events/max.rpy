@@ -1,10 +1,10 @@
 ﻿# TODO: Translation updated at 2021-09-01 17:03
 
 # game/events/max.rpy:4
-translate german StartDialog_069fda26:
+translate german StartDialog_e88dfdc8:
 
-    # Max_10 "Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил..."
-    Max_10 "Ich bin zu müde, um mich zu konzentrieren. Es wäre schön, zuerst ein Nickerchen zu machen..."
+    # Max_10 "{m}Я чувствую себя слишком уставшим для этого. Было бы неплохо сначала вздремнуть и набраться сил...{/m}"
+    Max_10 "{m}Ich bin zu müde, um mich zu konzentrieren. Es wäre schön, zuerst ein Nickerchen zu machen...{/m}"
 
 # game/events/max.rpy:31
 translate german Sleep_52abcf74:
@@ -18,11 +18,11 @@ translate german Sleep_9878a7fd:
     # Max_00 "{m}В каком часу мне будет лучше проснуться?{/m}" nointeract
     Max_00 "{m}Wann wäre der beste Zeitpunkt für mich, um aufzuwachen?{/m}" nointeract
 
-# game/events/max.rpy:45
-translate german Sleep_dca71115:
+# game/events/max.rpy:48
+translate german Sleep_06b9714c:
 
-    # Max_19 "Как же в этом доме хорошо..."
-    Max_19 "Es ist so schön in diesem Haus..."
+    # Max_19 "{m}Как же в этом доме хорошо...{/m}"
+    Max_19 "{m}Es ist so schön in diesem Haus...{/m}"
 
 # game/events/max.rpy:60
 translate german Wearied_d8557c8f:
@@ -30,11 +30,11 @@ translate german Wearied_d8557c8f:
     # Max_10 "{m}Моя голова уже совсем не соображает, нужно ложиться спать...{/m}" nointeract
     Max_10 "{m}Mein Kopf kann nicht mehr klar denken, ich muss ins Bett...{/m}" nointeract
 
-# game/events/max.rpy:63
-translate german Wearied_dca71115:
+# game/events/max.rpy:67
+translate german Wearied_06b9714c:
 
-    # Max_19 "Как же в этом доме хорошо..."
-    Max_19 "Es ist so schön in diesem Haus..."
+    # Max_19 "{m}Как же в этом доме хорошо...{/m}"
+    Max_19 "{m}Es ist so schön in diesem Haus...{/m}"
 
 # game/events/max.rpy:79
 translate german LittleEnergy_d97dcb62:
@@ -42,11 +42,11 @@ translate german LittleEnergy_d97dcb62:
     # Max_10 "{m}Я слишком вымотался, нужно хоть немного вздремнуть...{/m}" nointeract
     Max_10 "{m}Ich muss wirklich ein Nickerchen machen...{/m}" nointeract
 
-# game/events/max.rpy:87
-translate german LittleEnergy_dca71115:
+# game/events/max.rpy:94
+translate german LittleEnergy_06b9714c:
 
-    # Max_19 "Как же в этом доме хорошо..."
-    Max_19 "Es ist so schön in diesem Haus..."
+    # Max_19 "{m}Как же в этом доме хорошо...{/m}"
+    Max_19 "{m}Es ist so schön in diesem Haus...{/m}"
 
 # game/events/max.rpy:110
 translate german Nap_89de1ee6:
@@ -54,11 +54,11 @@ translate german Nap_89de1ee6:
     # Max_00 "[txt!t]" nointeract
     Max_00 "[txt!t]" nointeract
 
-# game/events/max.rpy:124
-translate german Nap_dca71115:
+# game/events/max.rpy:133
+translate german Nap_06b9714c:
 
-    # Max_19 "Как же в этом доме хорошо..."
-    Max_19 "Es ist so schön in diesem Haus..."
+    # Max_19 "{m}Как же в этом доме хорошо...{/m}"
+    Max_19 "{m}Es ist so schön in diesem Haus...{/m}"
 
 # game/events/max.rpy:132
 translate german Alarm_9878a7fd:
@@ -66,305 +66,305 @@ translate german Alarm_9878a7fd:
     # Max_00 "{m}В каком часу мне будет лучше проснуться?{/m}" nointeract
     Max_00 "{m}Um wie viel Uhr soll ich aufwachen?{/m}" nointeract
 
-# game/events/max.rpy:142
-translate german Alarm_dca71115:
+# game/events/max.rpy:154
+translate german Alarm_06b9714c:
 
-    # Max_19 "Как же в этом доме хорошо..."
-    Max_19 "Es ist so schön in diesem Haus..."
+    # Max_19 "{m}Как же в этом доме хорошо...{/m}"
+    Max_19 "{m}Es ist so schön in diesem Haus...{/m}"
 
-# game/events/max.rpy:156
-translate german Shower_2c708671:
+# game/events/max.rpy:169
+translate german Shower_691d4581:
 
-    # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
-    Max_19 "Es ist besser, sauber zu sein." nointeract
+    # Max_19 "{m}Всё-таки чистым быть намного лучше. Хотя не всегда хочется...{/m}" nointeract
+    Max_19 "{m}Es ist besser, sauber zu sein.{/m}" nointeract
 
-# game/events/max.rpy:163
-translate german Shower_58b0fd27:
+# game/events/max.rpy:175
+translate german Shower_8b383cf3:
 
-    # Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
-    Max_03 "Aha! Ich habe gerade bemerkt, dass es noch ein hinteres Fenster gibt! Und ich denke, dass man dadurch einen fantastischen Blick auf die Wanne hat... Natürlich geht es nicht um die Wanne selbst, sondern darum, wer darin sein wird."
+    # Max_03 "{m}Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать.{/m}"
+    Max_03 "{m}Aha! Ich habe gerade bemerkt, dass es noch ein hinteres Fenster gibt! Und ich denke, dass man dadurch einen fantastischen Blick auf die Wanne hat... Natürlich geht es nicht um die Wanne selbst, sondern darum, wer darin sein wird.{/m}"
 
-# game/events/max.rpy:164
-translate german Shower_b6233ffc:
+# game/events/max.rpy:176
+translate german Shower_d716938a:
 
-    # Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
-    Max_09 "Nur der Einbauort ist ein bisschen hoch... Ich muss etwas finden, das hoch genug ist, um damit zu arbeiten und das keinen Verdacht erregt..."
+    # Max_09 "{m}Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений...{/m}"
+    Max_09 "{m}Nur der Einbauort ist ein bisschen hoch... Ich muss etwas finden, das hoch genug ist, um damit zu arbeiten und das keinen Verdacht erregt...{/m}"
 
-# game/events/max.rpy:165
-translate german Shower_b3c37b42:
+# game/events/max.rpy:177
+translate german Shower_38c5acb7:
 
-    # Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
-    Max_01 "Vielleicht reicht eine Leiter, oder noch besser, eine Trittleiter. Oh, ja, ich denke, das wird es sein!"
+    # Max_01 "{m}Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!{/m}"
+    Max_01 "{m}Vielleicht reicht eine Leiter, oder noch besser, eine Trittleiter. Oh, ja, ich denke, das wird es sein!{/m}"
 
-# game/events/max.rpy:179
-translate german Bath_2c708671:
+# game/events/max.rpy:192
+translate german Bath_691d4581:
 
-    # Max_19 "Всё-таки чистым быть намного лучше. Хотя не всегда хочется..." nointeract
-    Max_19 "Es ist aber viel besser, sauber zu sein. Auch wenn ich nicht immer..." nointeract
+    # Max_19 "{m}Всё-таки чистым быть намного лучше. Хотя не всегда хочется...{/m}" nointeract
+    Max_19 "{m}Es ist aber viel besser, sauber zu sein. Auch wenn ich nicht immer...{/m}" nointeract
 
-# game/events/max.rpy:186
-translate german Bath_58b0fd27:
+# game/events/max.rpy:198
+translate german Bath_8b383cf3:
 
-    # Max_03 "Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать."
-    Max_03 "Aha! Ich habe gerade bemerkt, dass es noch ein hinteres Fenster gibt! Und ich denke, dass man dadurch einen fantastischen Blick auf die Wanne hat... Natürlich geht es nicht um die Wanne selbst, sondern darum, wer darin sein wird."
+    # Max_03 "{m}Ага! Я только сейчас обратил внимание на то, что здесь есть ещё заднее окно! И, как мне кажется, через него на ванну откроется просто шикарный вид... Конечно же дело не в самой ванне, а в том, кто будет её принимать.{/m}"
+    Max_03 "{m}Aha! Ich habe gerade bemerkt, dass es noch ein hinteres Fenster gibt! Und ich denke, dass man dadurch einen fantastischen Blick auf die Wanne hat... Natürlich geht es nicht um die Wanne selbst, sondern darum, wer darin sein wird.{/m}"
 
-# game/events/max.rpy:187
-translate german Bath_b6233ffc:
+# game/events/max.rpy:199
+translate german Bath_d716938a:
 
-    # Max_09 "Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений..."
-    Max_09 "Nur der Einbauort ist ein bisschen hoch... Ich muss etwas finden, das hoch genug ist, um damit zu arbeiten und das keinen Verdacht erregt..."
+    # Max_09 "{m}Только вот расположено оно высоковато... Нужно достать что-то, с чего будет удобно подглядывать и что не вызовет, в случае чего, подозрений...{/m}"
+    Max_09 "{m}Nur der Einbauort ist ein bisschen hoch... Ich muss etwas finden, das hoch genug ist, um damit zu arbeiten und das keinen Verdacht erregt...{/m}"
 
-# game/events/max.rpy:188
-translate german Bath_b3c37b42:
+# game/events/max.rpy:200
+translate german Bath_38c5acb7:
 
-    # Max_01 "Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!"
-    Max_01 "Vielleicht reicht eine Leiter, oder noch besser, eine Trittleiter. Oh, ja, ich denke, das wird es sein!"
+    # Max_01 "{m}Возможно подойдёт лестница, а ещё лучше стремянка. О да, пожалуй, это будет то, что нужно!{/m}"
+    Max_01 "{m}Vielleicht reicht eine Leiter, oder noch besser, eine Trittleiter. Oh, ja, ich denke, das wird es sein!{/m}"
 
-# game/events/max.rpy:201
-translate german Box_2b7f754d:
+# game/events/max.rpy:213
+translate german Box_97aab2e1:
 
-    # Max_08 "Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас..."
-    Max_08 "Also, Mom hat mich gebeten, diese Kisten zu sortieren. Mal sehen, was wir hier haben..."
+    # Max_08 "{m}Так, мама попросила разобрать коробки. Сейчас глянем, что тут у нас...{/m}"
+    Max_08 "{m}Also, Mom hat mich gebeten, diese Kisten zu sortieren. Mal sehen, was wir hier haben...{/m}"
 
-# game/events/max.rpy:203
-translate german Box_7d70e813:
+# game/events/max.rpy:215
+translate german Box_53491d2a:
 
-    # Max_09 "Жаль, но все коробки пустые... Но что это такое? Какая-то камера?"
-    Max_09 "Schade, dass sie leer sind... aber was ist das? Eine Art von Kamera?"
+    # Max_09 "{m}Жаль, но все коробки пустые... Но что это такое? Какая-то камера?{/m}"
+    Max_09 "{m}Schade, dass sie leer sind... aber was ist das? Eine Art von Kamera?{/m}"
 
-# game/events/max.rpy:205
-translate german Box_05229898:
+# game/events/max.rpy:217
+translate german Box_333c951b:
 
-    # Max_01 "Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?"
-    Max_01 "Da ist eine Art Handbuch drin, eine Beschreibung... Es ist eine versteckte Kamera! Ich frage mich, warum mein Vater sowas macht?"
+    # Max_01 "{m}Тут внутри какая-то инструкция, описание... Да это скрытая камера! Любопытно, зачем она понадобилась отцу?{/m}"
+    Max_01 "{m}Da ist eine Art Handbuch drin, eine Beschreibung... Es ist eine versteckte Kamera! Ich frage mich, warum mein Vater sowas macht?{/m}"
 
-# game/events/max.rpy:208
-translate german Box_b28a0ea4:
+# game/events/max.rpy:221
+translate german Box_911e2e27:
 
-    # Max_10 "Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом..." nointeract
-    Max_10 "Vielleicht ist es schon irgendwo im Haus installiert! Ich sollte die Räume überprüfen..." nointeract
+    # Max_10 "{m}Может быть, она установлена где-то в доме и за нами кто-то наблюдает?! Нужно будет осмотреть дом...{/m}" nointeract
+    Max_10 "{m}Vielleicht ist es schon irgendwo im Haus installiert! Ich sollte die Räume überprüfen...{/m}" nointeract
 
-# game/events/max.rpy:235
-translate german Notebook_2dd57a79:
+# game/events/max.rpy:247
+translate german Notebook_299609c3:
 
-    # Max_00 "Итак, чем интересным я займусь?"
-    Max_00 "Also, was soll ich tun?"
+    # Max_00 "{m}Итак, чем интересным я займусь?{/m}"
+    Max_00 "{m}Also, was soll ich tun?{/m}"
 
-# game/events/max.rpy:296
-translate german nothing_search_8ac67f83:
+# game/events/max.rpy:308
+translate german nothing_search_841c64c4:
 
-    # Max_00 "Сейчас мне нечего искать..."
-    Max_00 "Nichts zu finden..."
+    # Max_00 "{m}Сейчас мне нечего искать...{/m}"
+    Max_00 "{m}Nichts zu finden...{/m}"
 
-# game/events/max.rpy:304
-translate german buyfood_0de2cd95:
+# game/events/max.rpy:316
+translate german buyfood_14a9f290:
 
-    # Max_04 "Так... Посмотрим список продуктов... Ага. Сейчас всё закажем..."
-    Max_04 "Also... Mal sehen, die Liste der Produkte... Ja... Dann bestelle ich mal alles..."
+    # Max_04 "{m}Так... Посмотрим список продуктов... Ага. Сейчас всё закажем...{/m}"
+    Max_04 "{m}Also... Mal sehen, die Liste der Produkte... Ja... Dann bestelle ich mal alles...{/m}"
 
-# game/events/max.rpy:306
-translate german buyfood_e01f4c0c:
+# game/events/max.rpy:318
+translate german buyfood_da7a3eda:
 
-    # Max_04 "Готово. Да это же самая лёгкая задача!"
-    Max_04 "Erledigt. Dies ist die einfachste Aufgabe!"
+    # Max_04 "{m}Готово. Да это же самая лёгкая задача!{/m}"
+    Max_04 "{m}Erledigt. Dies ist die einfachste Aufgabe!{/m}"
 
-# game/events/max.rpy:309
-translate german buyfood_96f7e58d:
+# game/events/max.rpy:321
+translate german buyfood_31efbd83:
 
-    # Max_01 "Готово. То, что я делаю это без маминой финансовой помощи точно пойдёт мне только в плюс."
-    Max_01 "Erledigt. Die Tatsache, dass ich das ohne die finanzielle Hilfe von Mom mache, wird mir definitiv nur zugute kommen."
+    # Max_01 "{m}Готово. То, что я делаю это без маминой финансовой помощи точно пойдёт мне только в плюс.{/m}"
+    Max_01 "{m}Erledigt. Die Tatsache, dass ich das ohne die finanzielle Hilfe von Mom mache, wird mir definitiv nur zugute kommen.{/m}"
 
-# game/events/max.rpy:342
-translate german create_site_3744c5ee:
+# game/events/max.rpy:355
+translate german create_site_c3e958a9:
 
-    # Max_00 "Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100" nointeract
-    Max_00 "Es ist also an der Zeit, die Website zu erstellen. Zuerst muss ich eine Domain kaufen, Hosting, ein Design erstellen und für Streaming-Dienste bezahlen. Das kostet 100 Dollar." nointeract
+    # Max_00 "{m}Итак, пришло время заняться своим сайтом. Для начала нужно купить домен, хостинг, шаблон дизайна и оплатить услуги стримингового сервиса. На всё в сумме нужно $100{/m}" nointeract
+    Max_00 "{m}Es ist also an der Zeit, die Website zu erstellen. Zuerst muss ich eine Domain kaufen, Hosting, ein Design erstellen und für Streaming-Dienste bezahlen. Das kostet 100 Dollar.{/m}" nointeract
 
-# game/events/max.rpy:349
-translate german create_site_e36c401d:
+# game/events/max.rpy:362
+translate german create_site_4c292724:
 
-    # Max_04 "Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом..." nointeract
-    Max_04 "Ausgezeichnet! Jetzt habe ich meine eigene Website und Domain! Ich muss nur noch den Datenfluss von der Kamera mit dem Streaming-Dienst verbinden..." nointeract
+    # Max_04 "{m}Отлично! Теперь у меня есть свой сайт и домен! Осталось только соединить поток данных от камеры со стриминговым сервисом...{/m}" nointeract
+    Max_04 "{m}Ausgezeichnet! Jetzt habe ich meine eigene Website und Domain! Ich muss nur noch den Datenfluss von der Kamera mit dem Streaming-Dienst verbinden...{/m}" nointeract
 
-# game/events/max.rpy:354
-translate german create_site_4e1c08b2:
+# game/events/max.rpy:366
+translate german create_site_2b30be60:
 
-    # Max_04 "Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать..."
-    Max_04 "Ja! Alles funktioniert! Jetzt können die Leute auf meine Website gehen und die Show sehen. Natürlich, wenn sie die Seite irgendwie finden... Nun, ich werde darüber nachdenken, was ich als nächstes tun kann..."
+    # Max_04 "{m}Да! Всё работает! Теперь люди смогут заходить на мой сайт и смотреть шоу. Конечно, если они каким-то образом узнают про мой сайт... Ладно, подумаю ещё что можно сделать...{/m}"
+    Max_04 "{m}Ja! Alles funktioniert! Jetzt können die Leute auf meine Website gehen und die Show sehen. Natürlich, wenn sie die Seite irgendwie finden... Nun, ich werde darüber nachdenken, was ich als nächstes tun kann...{/m}"
 
-# game/events/max.rpy:389
-translate german about_cam_c0885969:
+# game/events/max.rpy:401
+translate german about_cam_42f3e467:
 
-    # Max_09 "Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!"
-    Max_09 "So neugierig... Diese Kameras können so konfiguriert werden, dass sie ins Internet übertragen!"
+    # Max_09 "{m}Так, любопытно... Эти камеры можно настроить так, чтобы они транслировали изображение в интернет!{/m}"
+    Max_09 "{m}So neugierig... Diese Kameras können so konfiguriert werden, dass sie ins Internet übertragen!{/m}"
 
-# game/events/max.rpy:390
-translate german about_cam_3d3bce54:
+# game/events/max.rpy:402
+translate german about_cam_c6823e2f:
 
-    # Max_07 "Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам..."
-    Max_07 "Aber was noch interessanter ist, einige Leute sind bereit, für den Zugang zu diesen Kameras zu bezahlen..."
-
-# game/events/max.rpy:391
-translate german about_cam_3fd48063:
-
-    # Max_09 "Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком..."
-    Max_09 "Vielleicht sollte ich eine Website erstellen und mich von den Leuten für Live-Streaming bezahlen lassen? Aber ich bin mir nicht sicher, wie man das macht..."
+    # Max_07 "{m}Но что ещё интереснее, некоторые люди готовы платить за доступ к таким камерам...{/m}"
+    Max_07 "{m}Aber was noch interessanter ist, einige Leute sind bereit, für den Zugang zu diesen Kameras zu bezahlen...{/m}"
 
 # game/events/max.rpy:403
-translate german about_blog_d88e779b:
+translate german about_cam_8ca532b0:
 
-    # Max_00 "Итак, попробуем что-то найти о блогах. С чего начать?" nointeract
-    Max_00 "Versuche also, etwas über Blogs zu finden. Wie und Wo soll man anfangen?" nointeract
+    # Max_09 "{m}Может быть, мне сделать свой сайт и пусть люди мне платят за просмотр видео? Но я не умею ничего толком...{/m}"
+    Max_09 "{m}Vielleicht sollte ich eine Website erstellen und mich von den Leuten für Live-Streaming bezahlen lassen? Aber ich bin mir nicht sicher, wie man das macht...{/m}"
 
-# game/events/max.rpy:406
-translate german about_blog_3a839884:
+# game/events/max.rpy:416
+translate german about_blog_ea375606:
 
-    # Max_10 "Ох... Сколько цифр. Неужели, во всём этом можно разобраться?" nointeract
-    Max_10 "Oh... Wie viele Zahlen. Muss man das wirklich erst Aussortieren?" nointeract
+    # Max_00 "{m}Итак, попробуем что-то найти о блогах. С чего начать?{/m}" nointeract
+    Max_00 "{m}Versuche also, etwas über Blogs zu finden. Wie und Wo soll man anfangen?{/m}" nointeract
 
-# game/events/max.rpy:415
-translate german about_blog_814aee55:
+# game/events/max.rpy:419
+translate german about_blog_c3072649:
 
-    # Max_04 "Прикольно... Ага. Котики. Не, устарели. Киски. Ну, смотря какие..." nointeract
-    Max_04 "Es ist lustig... Hm-hm. Katzen. Nee, nicht mehr aktuell. Pussy. Nun, das kommt darauf an..." nointeract
+    # Max_10 "{m}Ох... Сколько цифр. Неужели, во всём этом можно разобраться?{/m}" nointeract
+    Max_10 "{m}Oh... Wie viele Zahlen. Muss man das wirklich erst Aussortieren?{/m}" nointeract
 
-# game/events/max.rpy:424
-translate german about_blog_bb8942c7:
+# game/events/max.rpy:428
+translate german about_blog_eaab3fbf:
 
-    # Max_14 "Ух. Сколько гадости в комментах... Ладно, попробуем найти в этом крупицу смысла..." nointeract
-    Max_14 "Wow! Wie viele schlechte Dinge in den Kommentaren... Okay, lasst uns versuchen, ein Körnchen Sinn darin zu finden..." nointeract
-
-# game/events/max.rpy:433
-translate german about_blog_5af97f32:
-
-    # Max_09 "[_text!t]" nointeract
-    Max_09 "[_text!t]" nointeract
-
-# game/events/max.rpy:436
-translate german about_blog_c1ce2606:
-
-    # Max_01 "Это что же получается. Неужели, всё так просто? Главное - сиськи! Не важно о чём блог, важно что на экране. И если там сиськи, всё в порядке с популярностью! Но я и так об этом догадывался..."
-    Max_01 "Nun, so funktioniert es. Ist es wirklich so einfach? Es geht nur um Titten! Es spielt keine Rolle, worum es in dem Blog geht, es zählt, was auf dem Bildschirm ist. Und wenn es Titten sind, ist es populär! Aber das wusste ich ja schon..."
+    # Max_04 "{m}Прикольно... Ага. Котики. Не, устарели. Киски. Ну, смотря какие...{/m}" nointeract
+    Max_04 "{m}Es ist lustig... Hm-hm. Katzen. Nee, nicht mehr aktuell. Pussy. Nun, das kommt darauf an...{/m}" nointeract
 
 # game/events/max.rpy:437
-translate german about_blog_4571eb7f:
+translate german about_blog_f7287104:
 
-    # Max_00 "И зачем я только что-то изучал..."
-    Max_00 "Warum ich das alles überprüft habe..."
+    # Max_14 "{m}Ух. Сколько гадости в комментах... Ладно, попробуем найти в этом крупицу смысла...{/m}" nointeract
+    Max_14 "{m}Wow! Wie viele schlechte Dinge in den Kommentaren... Okay, lasst uns versuchen, ein Körnchen Sinn darin zu finden...{/m}" nointeract
+
+# game/events/max.rpy:446
+translate german about_blog_2d9761c1:
+
+    # Max_09 "{m}[_text!t]{/m}" nointeract
+    Max_09 "{m}[_text!t]{/m}" nointeract
+
+# game/events/max.rpy:448
+translate german about_blog_116ee643:
+
+    # Max_01 "{m}Это что же получается. Неужели, всё так просто? Главное - сиськи! Не важно о чём блог, важно что на экране. И если там сиськи, всё в порядке с популярностью! Но я и так об этом догадывался...{/m}"
+    Max_01 "{m}Nun, so funktioniert es. Ist es wirklich so einfach? Es geht nur um Titten! Es spielt keine Rolle, worum es in dem Blog geht, es zählt, was auf dem Bildschirm ist. Und wenn es Titten sind, ist es populär! Aber das wusste ich ja schon...{/m}"
 
 # game/events/max.rpy:449
-translate german about_secretbook_605b0407:
+translate german about_blog_b55fbee5:
 
-    # Max_00 "Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?" nointeract
-    Max_00 "Also... Jetzt lass mal googeln. Wie heißt es? \"Sugar Daddies\"?... Eine Liebesgeschichte? Und was mag sie enthalten?" nointeract
+    # Max_00 "{m}И зачем я только что-то изучал...{/m}"
+    Max_00 "{m}Warum ich das alles überprüft habe...{/m}"
 
-# game/events/max.rpy:452
-translate german about_secretbook_279d4103:
+# game/events/max.rpy:462
+translate german about_secretbook_d428da7a:
 
-    # Max_06 "Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает..."
-    Max_06 "Wow, es ist keine einfache Liebesgeschichte. Es ist Erotik! Jetzt ist klar, warum Alice nicht zeigen wollte, was sie gelesen hat..."
+    # Max_00 "{m}Так... Сейчас погуглим. Как там она называлась? \"Sugar Daddies\"?... Любовный роман? И что в нём такого может быть?{/m}" nointeract
+    Max_00 "{m}Also... Jetzt lass mal googeln. Wie heißt es? \"Sugar Daddies\"?... Eine Liebesgeschichte? Und was mag sie enthalten?{/m}" nointeract
 
-# game/events/max.rpy:465
-translate german about_spider_45c2646e:
+# game/events/max.rpy:464
+translate german about_secretbook_331cf11d:
 
-    # Max_00 "Так... Пауки. Ох, сколько видов... Какие же тут водятся..." nointeract
-    Max_00 "Also... Spinnen. Oh, wie viele Arten... Was haben wir denn hier..." nointeract
+    # Max_06 "{m}Ого! Да это не простой любовный роман... Это же эротика. Да ещё какая! Теперь понятно, почему Алиса не хотела рассказывать, что читает...{/m}"
+    Max_06 "{m}Wow, es ist keine einfache Liebesgeschichte. Es ist Erotik! Jetzt ist klar, warum Alice nicht zeigen wollte, was sie gelesen hat...{/m}"
 
-# game/events/max.rpy:468
-translate german about_spider_624fb07e:
+# game/events/max.rpy:478
+translate german about_spider_c9502343:
 
-    # Max_00 "Ага, отлично. Выбираем наш регион, сортируем по видам пауков..."
-    Max_00 "Ja, nun... Unsere Region auswählen, nach Spinnenarten sortieren..."
+    # Max_00 "{m}Так... Пауки. Ох, сколько видов... Какие же тут водятся...{/m}" nointeract
+    Max_00 "{m}Also... Spinnen. Oh, wie viele Arten... Was haben wir denn hier...{/m}" nointeract
 
-# game/events/max.rpy:470
-translate german about_spider_3be5aefa:
+# game/events/max.rpy:480
+translate german about_spider_1c3432cf:
 
-    # Max_00 "Так, пауки. Смотрим какие водятся в этом климате..."
-    Max_00 "Also, Spinnen. Schauen wir mal, was in diesem Klima zu finden ist..."
-
-# game/events/max.rpy:471
-translate german about_spider_e3aa40bf:
-
-    # Max_00 "Так, и что у нас получается?"
-    Max_00 "Na, was haben wir denn hier?"
-
-# game/events/max.rpy:472
-translate german about_spider_49e33bd9:
-
-    # Max_01 "Ну вот, подходит. Самый популярный паук в наших краях. Ага! Теперь узнаем как его поймать..." nointeract
-    Max_01 "Okay, los geht's. Das ist die häufigste Spinne in unserer Gegend. Aha! Jetzt wollen wir herausfinden, wie man sie fängt..." nointeract
-
-# game/events/max.rpy:475
-translate german about_spider_5170efbe:
-
-    # Max_09 "Так, питается комарами и мошками. Как это обычно... нет, это ничего не даёт..." nointeract
-    Max_09 "Also, sie frisst Moskitos und Mücken. Wie gewöhnlich... nein, es gibt nichts..." nointeract
-
-# game/events/max.rpy:481
-translate german about_spider_883f72be:
-
-    # Max_04 "Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?"
-    Max_04 "Na, toll! Nachts sind sie perfekt getarnt, aber sobald die Sonne zu scheinen beginnt, kriechen sie aus dem Gras, um ihre Beute zu jagen. Und das um 10-11 Uhr morgens?"
+    # Max_00 "{m}Ага, отлично. Выбираем наш регион, сортируем по видам пауков...{/m}"
+    Max_00 "{m}Ja, nun... Unsere Region auswählen, nach Spinnenarten sortieren...{/m}"
 
 # game/events/max.rpy:482
-translate german about_spider_0e3e8b40:
+translate german about_spider_d718f75f:
 
-    # Max_01 "Будем искать!"
-    Max_01 "Schauen wir mal!"
+    # Max_00 "{m}Так, пауки. Смотрим какие водятся в этом климате...{/m}"
+    Max_00 "{m}Also, Spinnen. Schauen wir mal, was in diesem Klima zu finden ist...{/m}"
 
-# game/events/max.rpy:498
-translate german SearchCam_67b6130b:
+# game/events/max.rpy:483
+translate german about_spider_06795649:
 
-    # Max_04 "Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь..."
-    Max_04 "Wow! Da ist es! Jemand hat es so gut in der Wand versteckt, dass man es nur finden kann, wenn man genau weiß, wonach man sucht..."
+    # Max_00 "{m}Так, и что у нас получается?{/m}"
+    Max_00 "{m}Na, was haben wir denn hier?{/m}"
 
-# game/events/max.rpy:499
-translate german SearchCam_140db024:
+# game/events/max.rpy:485
+translate german about_spider_825e59bc:
 
-    # Max_09 "Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем..."
-    Max_09 "Okay, äh... Aber sie ist im Moment nicht angeschlossen. Anscheinend hatte Dad früher ein Auge auf den Bau und die Renovierung geworfen, und jetzt gibt es niemanden mehr, auf den man ein Auge werfen kann und nichts anderes mehr..."
+    # Max_01 "{m}Ну вот, подходит. Самый популярный паук в наших краях. Ага! Теперь узнаем как его поймать...{/m}" nointeract
+    Max_01 "{m}Okay, los geht's. Das ist die häufigste Spinne in unserer Gegend. Aha! Jetzt wollen wir herausfinden, wie man sie fängt...{/m}" nointeract
 
-# game/events/max.rpy:500
-translate german SearchCam_9487a2c0:
+# game/events/max.rpy:488
+translate german about_spider_43ff8442:
 
-    # Max_04 "Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!"
-    Max_04 "Wenn ich mich mit dieser Cam verbinden kann, denke ich, dass ich in der Lage sein werde, diesen Raum im Auge zu behalten. Jetzt muss ich nur noch herausfinden, wie ich sie verbinden kann!"
+    # Max_09 "{m}Так, питается комарами и мошками. Как это обычно... нет, это ничего не даёт...{/m}" nointeract
+    Max_09 "{m}Also, sie frisst Moskitos und Mücken. Wie gewöhnlich... nein, es gibt nichts...{/m}" nointeract
 
-# game/events/max.rpy:508
-translate german SearchCam_529c107e:
+# game/events/max.rpy:493
+translate german about_spider_313f4e4c:
 
-    # Max_14 "Кажется, здесь нет никаких камер... Нужно поискать в самом доме!"
-    Max_14 "Es scheint hier keine Kameras zu geben... Am besten, ich durchsuche das ganze Haus danach!"
+    # Max_04 "{m}Вот, отлично! Ночью отлично маскируются, значит, не подходит, а вот как только солнце начинает прогревать землю, выползают из травы проверить добычу. А это у нас часов 10-11?{/m}"
+    Max_04 "{m}Na, toll! Nachts sind sie perfekt getarnt, aber sobald die Sonne zu scheinen beginnt, kriechen sie aus dem Gras, um ihre Beute zu jagen. Und das um 10-11 Uhr morgens?{/m}"
+
+# game/events/max.rpy:494
+translate german about_spider_1b3b8906:
+
+    # Max_01 "{m}Будем искать!{/m}"
+    Max_01 "{m}Schauen wir mal!{/m}"
 
 # game/events/max.rpy:510
-translate german SearchCam_c5169ba0:
+translate german SearchCam_29b2ce2f:
 
-    # Max_14 "Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?"
-    Max_14 "Es scheint hier keine Kameras zu geben... Vielleicht sollte ich in dem anderen Raum suchen?"
+    # Max_04 "{m}Ого! Вот же она! Кто-то её так хорошо запрятал в стену, что найти камеру можно только точно зная, что ищешь...{/m}"
+    Max_04 "{m}Wow! Da ist es! Jemand hat es so gut in der Wand versteckt, dass man es nur finden kann, wenn man genau weiß, wonach man sucht...{/m}"
+
+# game/events/max.rpy:511
+translate german SearchCam_6eab0c74:
+
+    # Max_09 "{m}Так... Но она ни к чему не подключена сейчас. Видимо, отец так следил за ходом строительства и ремонта, а сейчас уже некому следить и не за чем...{/m}"
+    Max_09 "{m}Okay, äh... Aber sie ist im Moment nicht angeschlossen. Anscheinend hatte Dad früher ein Auge auf den Bau und die Renovierung geworfen, und jetzt gibt es niemanden mehr, auf den man ein Auge werfen kann und nichts anderes mehr...{/m}"
+
+# game/events/max.rpy:512
+translate german SearchCam_7c5a1bd7:
+
+    # Max_04 "{m}Но если её подключить, то можно подглядывать и за кое-чем другим. Вот только нужно во всём как следует разобраться!{/m}"
+    Max_04 "{m}Wenn ich mich mit dieser Cam verbinden kann, denke ich, dass ich in der Lage sein werde, diesen Raum im Auge zu behalten. Jetzt muss ich nur noch herausfinden, wie ich sie verbinden kann!{/m}"
+
+# game/events/max.rpy:520
+translate german SearchCam_73e63b9a:
+
+    # Max_14 "{m}Кажется, здесь нет никаких камер... Нужно поискать в самом доме!{/m}"
+    Max_14 "{m}Es scheint hier keine Kameras zu geben... Am besten, ich durchsuche das ganze Haus danach!{/m}"
 
 # game/events/max.rpy:522
-translate german ClearPool_f0dc1508:
+translate german SearchCam_74aa4ac8:
 
-    # Max_11 "Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила..."
-    Max_11 "Eh... Es ist kein leichter Job, aber ich muss das Geld abarbeiten, das meine Mom schon bezahlt hat..."
+    # Max_14 "{m}Кажется, здесь нет никаких камер... Может быть, стоит поискать в другой комнате?{/m}"
+    Max_14 "{m}Es scheint hier keine Kameras zu geben... Vielleicht sollte ich in dem anderen Raum suchen?{/m}"
 
-# game/events/max.rpy:525
-translate german ClearPool_62cb38c0:
+# game/events/max.rpy:534
+translate german ClearPool_f95b5748:
 
-    # Max_01 "Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам."
-    Max_01 "Eh... Es ist eine mühsame Arbeit, aber es ist wichtig, dass meine Mädchen in sauberem Wasser planschen. Und dafür sorge ich selbst."
+    # Max_11 "{m}Эх... Не лёгкая это работа, но нужно отработать те деньги, что мама уже заплатила...{/m}"
+    Max_11 "{m}Eh... Es ist kein leichter Job, aber ich muss das Geld abarbeiten, das meine Mom schon bezahlt hat...{/m}"
 
-# game/events/max.rpy:544
-translate german DishesWashed_cedc9161:
+# game/events/max.rpy:537
+translate german ClearPool_26cb581b:
 
-    # Max_00 "Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?" nointeract
-    Max_00 "Sieh dir diesen Berg von schmutzigem Geschirr an! Warum haben wir keinen Geschirrspüler?" nointeract
+    # Max_01 "{m}Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам.{/m}"
+    Max_01 "{m}Eh... Es ist eine mühsame Arbeit, aber es ist wichtig, dass meine Mädchen in sauberem Wasser planschen. Und dafür sorge ich selbst.{/m}"
 
-# game/events/max.rpy:571
-translate german delivery1_919500cd:
+# game/events/max.rpy:557
+translate german DishesWashed_62001d7c:
 
-    # Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
-    Max_07 "Die Klingel! Sieht aus, als wäre jemand gekommen, um uns zu besuchen..."
+    # Max_00 "{m}Эх... столько посуды. И почему в этом огромном доме нет маленькой посудомоечной машины?{/m}" nointeract
+    Max_00 "{m}Sieh dir diesen Berg von schmutzigem Geschirr an! Warum haben wir keinen Geschirrspüler?{/m}" nointeract
+
+# game/events/max.rpy:583
+translate german delivery1_f0fc4226:
+
+    # Max_07 "{m}Звонок в ворота! Похоже, к нам кто-то приехал...{/m}"
+    Max_07 "{m}Die Klingel! Sieht aus, als wäre jemand gekommen, um uns zu besuchen...{/m}"
 
 # game/events/max.rpy:574
 translate german delivery1_80685efe:
@@ -384,11 +384,11 @@ translate german delivery1_0ba1be34:
     # Max_00 "Да, то что нужно. Спасибо!"
     Max_00 "Ja, das ist, was ich bestellt habe. Danke!"
 
-# game/events/max.rpy:604
-translate german delivery2_919500cd:
+# game/events/max.rpy:616
+translate german delivery2_f0fc4226:
 
-    # Max_07 "Звонок в ворота! Похоже, к нам кто-то приехал..."
-    Max_07 "Die Klingel! Sieht aus, als wäre jemand gekommen, um uns zu besuchen..."
+    # Max_07 "{m}Звонок в ворота! Похоже, к нам кто-то приехал...{/m}"
+    Max_07 "{m}Die Klingel! Sieht aus, als wäre jemand gekommen, um uns zu besuchen...{/m}"
 
 # game/events/max.rpy:608
 translate german delivery2_60d5c126:
@@ -480,41 +480,41 @@ translate german BookRead_sex_ed_58528ae0:
     # Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
     Max_04 "Ich bin bei den letzten Kapiteln angelangt. Sanftes Berühren ist sehr wichtig! Ich schätze, das weiß ich inzwischen schon... Trotzdem hätte ich dieses Buch früher kaufen sollen! Ich denke, ich habe gelernt, was ich kann. Ich sollte dieses Buch Lisa schenken."
 
-# game/events/max.rpy:682
-translate german SearchSecretBook_390d326c:
+# game/events/max.rpy:695
+translate german SearchSecretBook_4d6b282e:
 
-    # Max_10 "Так... И с чего начать поиск? И нужно поспешить: если Алиса меня поймает, то сначала убьёт, а только потом поздоровается..." nointeract
-    Max_10 "Wo soll ich anfangen...? Ich muss mich beeilen, wenn Alice mich erwischt, bringt sie mich erst um und stellt dann Fragen..." nointeract
-
-# game/events/max.rpy:697
-translate german SearchSecretBook_pillow_fdc18f7e:
-
-    # Max_14 "Нет, здесь её нет... Ну где же эта чёртова книга? Шаги? Нет, показалось..." nointeract
-    Max_14 "Nein, es ist nicht hier... Wo zum Teufel ist das Buch? Schritte? Nein, ich bilde mir das nur ein..." nointeract
+    # Max_10 "{m}Так... И с чего начать поиск? И нужно поспешить: если Алиса меня поймает, то сначала убьёт, а только потом поздоровается...{/m}" nointeract
+    Max_10 "{m}Wo soll ich anfangen...? Ich muss mich beeilen, wenn Alice mich erwischt, bringt sie mich erst um und stellt dann Fragen...{/m}" nointeract
 
 # game/events/max.rpy:710
-translate german SearchSecretBook_bed_893f346c:
+translate german SearchSecretBook_pillow_9214580d:
 
-    # Max_14 "Нет, тут её точно нет. Ну где же она? Кажется, я слышу шум..." nointeract
-    Max_14 "Auf jeden Fall nicht hier. Wo ist es? Ich glaube, ich habe etwas gehört..." nointeract
+    # Max_14 "{m}Нет, здесь её нет... Ну где же эта чёртова книга? Шаги? Нет, показалось...{/m}" nointeract
+    Max_14 "{m}Nein, es ist nicht hier... Wo zum Teufel ist das Buch? Schritte? Nein, ich bilde mir das nur ein...{/m}" nointeract
 
-# game/events/max.rpy:724
-translate german SearchSecretBook_table_f75e7ca0:
+# game/events/max.rpy:723
+translate german SearchSecretBook_bed_fdbef300:
 
-    # Max_14 "Может быть, её здесь нет? Или попытаться ещё поискать, на свой страх и риск?" nointeract
-    Max_14 "Vielleicht ist es nicht hier? Soll ich trotz der Gefahr weiter suchen?" nointeract
+    # Max_14 "{m}Нет, тут её точно нет. Ну где же она? Кажется, я слышу шум...{/m}" nointeract
+    Max_14 "{m}Auf jeden Fall nicht hier. Wo ist es? Ich glaube, ich habe etwas gehört...{/m}" nointeract
 
-# game/events/max.rpy:741
-translate german SearchSecretBook_wardrobe_ef3ccc0f:
+# game/events/max.rpy:737
+translate german SearchSecretBook_table_1c89acaf:
 
-    # Max_04 "Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить..."
-    Max_04 "Da ist sie! Warum es so verstecken? Interessante Tarnung. Ich werde mir den Namen merken. Ich frage mich, was es damit auf sich hat. Vielleicht sollte ich das mal googeln. In Ordnung, ich muss los..."
+    # Max_14 "{m}Может быть, её здесь нет? Или попытаться ещё поискать, на свой страх и риск?{/m}" nointeract
+    Max_14 "{m}Vielleicht ist es nicht hier? Soll ich trotz der Gefahr weiter suchen?{/m}" nointeract
 
-# game/events/max.rpy:752
-translate german InstallCam_b5c9650c:
+# game/events/max.rpy:753
+translate german SearchSecretBook_wardrobe_b73b38d5:
 
-    # Max_00 "Здесь уже есть камера. Пожалуй, стоит установить её в другом месте."
-    Max_00 "Hier gibt es bereits eine Kamera. Vielleicht sollte ich woanders eine installieren."
+    # Max_04 "{m}Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить...{/m}"
+    Max_04 "{m}Da ist sie! Warum es so verstecken? Interessante Tarnung. Ich werde mir den Namen merken. Ich frage mich, was es damit auf sich hat. Vielleicht sollte ich das mal googeln. In Ordnung, ich muss los...{/m}"
+
+# game/events/max.rpy:764
+translate german InstallCam_90e45062:
+
+    # Max_00 "{m}Здесь уже есть камера. Пожалуй, стоит установить её в другом месте.{/m}"
+    Max_00 "{m}Hier gibt es bereits eine Kamera. Vielleicht sollte ich woanders eine installieren.{/m}"
 
 # game/events/max.rpy:759
 translate german InstallCam_44699dcc:
@@ -570,11 +570,11 @@ translate german InstallCam_7711d18e:
     # Max_09 "{m}Пожалуй, из-за большой площади мне стоило бы установить здесь несколько камер, чтобы зрители смогли лучше разглядеть каждую попку, которая тут бывает...{/m}"
     Max_09 "{m}Ich denke, wegen der großen Fläche sollte ich ein paar Kameras installieren, damit die Zuschauer jeden Arsch sehen können, der hier reinkommt...{/m}"
 
-# game/events/max.rpy:828
-translate german SearchSpider_19279e48:
+# game/events/max.rpy:852
+translate german SearchSpider_d37d0a80:
 
-    # Max_00 "Так, нужно хорошенько рассмотреть траву..." nointeract
-    Max_00 "Okay, jetzt sollte ich das Gras genau untersuchen..." nointeract
+    # Max_00 "{m}Так, нужно хорошенько рассмотреть траву...{/m}" nointeract
+    Max_00 "{m}Okay, jetzt sollte ich das Gras genau untersuchen...{/m}" nointeract
 
 # game/events/max.rpy:834
 translate german SearchSpider_1b27d19f:
@@ -582,29 +582,29 @@ translate german SearchSpider_1b27d19f:
     # Max_04 "Ага! Попался! Отлично..."
     Max_04 "Erwischt! Ausgezeichnet..."
 
-# game/events/max.rpy:838
-translate german SearchSpider_88937e9a:
+# game/events/max.rpy:861
+translate german SearchSpider_f2d13038:
 
-    # Max_00 "Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?"
-    Max_00 "Nein, es gibt nichts, was wie eine große, gruselige Spinne aussieht... Vielleicht habe ich sie alle gefangen und ich sollte ein oder zwei Tage warten?"
+    # Max_00 "{m}Нет, ничего похожего на большого страшного паука тут нет... Может быть, я всех переловил и стоит подождать денёк-другой?{/m}"
+    Max_00 "{m}Nein, es gibt nichts, was wie eine große, gruselige Spinne aussieht... Vielleicht habe ich sie alle gefangen und ich sollte ein oder zwei Tage warten?{/m}"
 
-# game/events/max.rpy:850
-translate german HideSpider_59b81ead:
+# game/events/max.rpy:874
+translate german HideSpider_a2694b69:
 
-    # Max_00 "Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной."
-    Max_00 "Ich habe vielleicht keine Zeit, die Spinne richtig zu verstecken, bevor Alice aus dem Bad zurückkommt."
+    # Max_00 "{m}Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной.{/m}"
+    Max_00 "{m}Ich habe vielleicht keine Zeit, die Spinne richtig zu verstecken, bevor Alice aus dem Bad zurückkommt.{/m}"
 
-# game/events/max.rpy:854
-translate german HideSpider_14a01e28:
+# game/events/max.rpy:879
+translate german HideSpider_ebac98bc:
 
-    # Max_00 "Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех..." nointeract
-    Max_00 "Was wird wohl passieren, wenn Alice nachts eine Spinne sieht? Wird sie um Hilfe rennen? Außer, dass dieses Monster wegkriechen könnte... Je später ich es also verstecke, desto größer sind die Chancen auf Erfolg..." nointeract
+    # Max_00 "{m}Интересно, что будет, если Алиса заметит паука ночью? Она прибежит за помощью? Вот только этот монстр может сбежать... Так что, чем позже я его спрячу, тем больше шансов на успех...{/m}" nointeract
+    Max_00 "{m}Was wird wohl passieren, wenn Alice nachts eine Spinne sieht? Wird sie um Hilfe rennen? Außer, dass dieses Monster wegkriechen könnte... Je später ich es also verstecke, desto größer sind die Chancen auf Erfolg...{/m}" nointeract
 
-# game/events/max.rpy:858
-translate german HideSpider_dbcd96db:
+# game/events/max.rpy:882
+translate german HideSpider_9502351b:
 
-    # Max_00 "Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать..."
-    Max_00 "Nun, hoffen wir, dass die Spinne nicht entkommt, bevor Alice ins Bett geht..."
+    # Max_00 "{m}Что ж, будем надеяться, что паук не сбежит до того, как Алиса ляжет спать...{/m}"
+    Max_00 "{m}Nun, hoffen wir, dass die Spinne nicht entkommt, bevor Alice ins Bett geht...{/m}"
 
 # game/events/max.rpy:901
 translate german ViewLesson_f9eae862:
@@ -612,71 +612,71 @@ translate german ViewLesson_f9eae862:
     # Max_00 "{m}Хорошая штука эти онлайн-курсы - можно научиться всему, не входя из дома! Вот только и стоит это немало...{/m}"
     Max_00 "{m}Das Gute an diesen Online-Kursen ist, dass man alles bequem von zu Hause aus lernen kann! Die einzige Sache ist, dass es eine Menge kostet...{/m}"
 
-# game/events/max.rpy:908
-translate german SearchCigarettes_b89e2d47:
+# game/events/max.rpy:932
+translate german SearchCigarettes_7d1de5a5:
 
-    # Max_09 "Так... Где же Алиса спрятала сигареты сегодня?"
-    Max_09 "Also... Wo hat Alice heute ihre Zigaretten versteckt?"
+    # Max_09 "{m}Так... Где же Алиса спрятала сигареты сегодня?{/m}"
+    Max_09 "{m}Also... Wo hat Alice heute ihre Zigaretten versteckt?{/m}"
 
-# game/events/max.rpy:926
-translate german SearchCigarettes_no_34602f75:
+# game/events/max.rpy:951
+translate german SearchCigarettes_no_025a648e:
 
-    # Max_10 "Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня..." nointeract
-    Max_10 "Sieht aus, als wären sie nicht hier... Es ist Zeit zu gehen, sie könnte mich erwischen..." nointeract
-
-# game/events/max.rpy:934
-translate german SearchCigarettes_yes_b172b515:
-
-    # Max_04 "Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату..." nointeract
-    Max_04 "Ja, ich habe es gefunden! Okay, ähm... Jetzt ich sie sie so platzieren, dass Mom sie auch bemerkt, wenn sie ins Zimmer schaut..." nointeract
-
-# game/events/max.rpy:953
-translate german need_money_abb42405:
-
-    # Max_10 "Сегодня уже четверг. Последний день когда я могу заказать подарки девчонкам, чтобы опередить Эрика."
-    Max_10 "Es ist bereits Donnerstag. Der letzte Tag, an dem ich Geschenke für die Mädchen bestellen kann, um Eric zuvorzukommen."
+    # Max_10 "{m}Кажется, здесь их нет... Пора уходить, а то если кто-то заметит меня...{/m}" nointeract
+    Max_10 "{m}Sieht aus, als wären sie nicht hier... Es ist Zeit zu gehen, sie könnte mich erwischen...{/m}" nointeract
 
 # game/events/max.rpy:959
-translate german need_money_ac403840:
+translate german SearchCigarettes_yes_f44440e9:
 
-    # Max_11 "Нужно скорее купить платье Алисе и купальник для Лизы, а денег у меня хватает лишь на что-то одно..."
-    Max_11 "Ich würde lieber das Kleid von Alice und den Bikini für Lisa kaufen, aber ich habe nur genug Geld für eine Sache..."
-
-# game/events/max.rpy:961
-translate german need_money_3eda5efb:
-
-    # Max_11 "Нужно скорее купить платье Алисе и купальник для Лизы, а денег мне не хватит даже на что-то одно..."
-    Max_11 "Ich muss das Kleid von Alice und den Bikini von Lisa kaufen, aber ich habe nicht genug Geld für beides..."
-
-# game/events/max.rpy:966
-translate german need_money_d141bd06:
-
-    # Max_11 "Я уже купил платье Алисе, но на купальник для Лизы мне не хватит денег..."
-    Max_11 "Ich habe schon Alices Kleid gekauft, aber ich habe nicht genug Geld für Lisas Bikini..."
-
-# game/events/max.rpy:971
-translate german need_money_82767ab2:
-
-    # Max_11 "Я уже купил купальник для Лизы, но на платье Алисе мне не хватит денег..."
-    Max_11 "Ich habe schon einen Bikini für Lisa gekauft, aber es ist nicht genug Geld für Alices Kleid da..."
-
-# game/events/max.rpy:975
-translate german need_money_e2c6bbaf:
-
-    # Max_08 "Сайт у меня есть и уже приносит какую-то прибыль, но нужно время, чтобы раскрутить его."
-    Max_08 "Ich habe die Seite und sie macht bereits etwas Gewinn, aber es braucht Zeit, sie zu bewerben."
+    # Max_04 "{m}Ага, нашёл! Так... Теперь их нужно положить таким образом, чтобы мама их заметила, если заглянет в комнату...{/m}" nointeract
+    Max_04 "{m}Ja, ich habe es gefunden! Okay, ähm... Jetzt ich sie sie so platzieren, dass Mom sie auch bemerkt, wenn sie ins Zimmer schaut...{/m}" nointeract
 
 # game/events/max.rpy:977
-translate german need_money_4caca393:
+translate german need_money_7d60b08e:
 
-    # Max_08 "К сожалению, у меня нет источника доходов, все мои деньги я получаю только от мамы. Ну и от Алисы ещё могу..."
-    Max_08 "Leider habe ich keine andere Geldquelle, mein ganzes Geld kommt nur von Mom. Und dann ist da noch Alice..."
+    # Max_10 "{m}Сегодня уже четверг. Последний день когда я могу заказать подарки девчонкам, чтобы опередить Эрика.{/m}"
+    Max_10 "{m}Es ist bereits Donnerstag. Der letzte Tag, an dem ich Geschenke für die Mädchen bestellen kann, um Eric zuvorzukommen.{/m}"
 
-# game/events/max.rpy:978
-translate german need_money_e2987b4e:
+# game/events/max.rpy:983
+translate german need_money_d5c0c6aa:
 
-    # Max_09 "Нужно поискать какую-нибудь информацию в интернете, может есть возможность получить кредит."
-    Max_09 "Ich muss im Internet nach Informationen suchen, vielleicht kann man so etwas wie einen Kredit bekommen."
+    # Max_11 "{m}Нужно скорее купить платье Алисе и купальник для Лизы, а денег у меня хватает лишь на что-то одно...{/m}"
+    Max_11 "{m}Ich würde lieber das Kleid von Alice und den Bikini für Lisa kaufen, aber ich habe nur genug Geld für eine Sache...{/m}"
+
+# game/events/max.rpy:985
+translate german need_money_b39c15a3:
+
+    # Max_11 "{m}Нужно скорее купить платье Алисе и купальник для Лизы, а денег мне не хватит даже на что-то одно...{/m}"
+    Max_11 "{m}Ich muss das Kleid von Alice und den Bikini von Lisa kaufen, aber ich habe nicht genug Geld für beides...{/m}"
+
+# game/events/max.rpy:990
+translate german need_money_adfa0cdd:
+
+    # Max_11 "{m}Я уже купил платье Алисе, но на купальник для Лизы мне не хватит денег...{/m}"
+    Max_11 "{m}Ich habe schon Alices Kleid gekauft, aber ich habe nicht genug Geld für Lisas Bikini...{/m}"
+
+# game/events/max.rpy:995
+translate german need_money_ae118bc4:
+
+    # Max_11 "{m}Я уже купил купальник для Лизы, но на платье Алисе мне не хватит денег...{/m}"
+    Max_11 "{m}Ich habe schon einen Bikini für Lisa gekauft, aber es ist nicht genug Geld für Alices Kleid da...{/m}"
+
+# game/events/max.rpy:999
+translate german need_money_aa38a4e7:
+
+    # Max_08 "{m}Сайт у меня есть и уже приносит какую-то прибыль, но нужно время, чтобы раскрутить его.{/m}"
+    Max_08 "{m}Ich habe die Seite und sie macht bereits etwas Gewinn, aber es braucht Zeit, sie zu bewerben.{/m}"
+
+# game/events/max.rpy:1001
+translate german need_money_6eaa0c79:
+
+    # Max_08 "{m}К сожалению, у меня нет источника доходов, все мои деньги я получаю только от мамы. Ну и от Алисы ещё могу...{/m}"
+    Max_08 "{m}Leider habe ich keine andere Geldquelle, mein ganzes Geld kommt nur von Mom. Und dann ist da noch Alice...{/m}"
+
+# game/events/max.rpy:1002
+translate german need_money_14f2a995:
+
+    # Max_09 "{m}Нужно поискать какую-нибудь информацию в интернете, может есть возможность получить кредит.{/m}"
+    Max_09 "{m}Ich muss im Internet nach Informationen suchen, vielleicht kann man so etwas wie einen Kredit bekommen.{/m}"
 
 # game/events/max.rpy:998
 translate german cheat_money_46383d7e:
@@ -690,65 +690,65 @@ translate german cheat_money_strateg_16b9bde6:
     # "Вы либо аккуратный взломщик, либо хороший стратег. В любом случае вы не нуждаетесь в дополнительных методах получения денег. Учтите, взлом игры может привести к непредсказуемым последствиям, в частности, к потере некоторых возможностей и функционала игры, а так же к возникновению критических ошибок, которые не позволят вам продолжить игру."
     "Sie sind entweder ein sanfter Hacker oder ein guter Stratege. So oder so, Sie brauchen keine zusätzlichen Methoden, um Geld zu verdienen. Bitte beachten Sie, dass das Hacken des Spiels zu unvorhersehbaren Konsequenzen führen kann, insbesondere zum Verlust einiger Features und Funktionen des Spiels sowie zu kritischen Fehlern, die Sie am Weiterspielen hindern."
 
-# game/events/max.rpy:1010
-translate german about_credit_235ff689:
+# game/events/max.rpy:1034
+translate german about_credit_3ac552dc:
 
-    # Max_00 "И так, поищем, где можно простому парню разжиться деньгами..."
+    # Max_00 "{m}Итак, поищем, где можно простому парню разжиться деньгами...{/m}"
     Max_00 "Also, ich muss einen Ort finden, an dem ein einfacher Kerl etwas Geld verdienen kann..."
 
-# game/events/max.rpy:1011
-translate german about_credit_3db8ce1c:
+# game/events/max.rpy:1035
+translate german about_credit_aa91eb63:
 
-    # Max_09 "Это не подходит... Здесь нужно иметь официальное трудоустройство на работе..."
-    Max_09 "Das passt doch nicht... Du musst hier einen offiziellen Job haben..."
+    # Max_09 "{m}Это не подходит... Здесь нужно иметь официальное трудоустройство на работе...{/m}"
+    Max_09 "{m}Das passt doch nicht... Du musst hier einen offiziellen Job haben...{/m}"
 
-# game/events/max.rpy:1012
-translate german about_credit_ed51b8a7:
+# game/events/max.rpy:1036
+translate german about_credit_2eacd86e:
 
-    # Max_07 "Ага, а вот это может и подойти - краткосрочные займы начинающим интернет-предпринимателям. О, да, это про меня..."
-    Max_07 "Ja, das könnte funktionieren - kurzfristige Kredite an neue Internet-Unternehmer. Oh, ja, das bin ich..."
+    # Max_07 "{m}Ага, а вот это может и подойти - краткосрочные займы начинающим интернет-предпринимателям. О, да, это про меня...{/m}"
+    Max_07 "{m}Ja, das könnte funktionieren - kurzfristige Kredite an neue Internet-Unternehmer. Oh, ja, das bin ich...{/m}"
 
-# game/events/max.rpy:1013
-translate german about_credit_189e301b:
+# game/events/max.rpy:1037
+translate german about_credit_90bb447c:
 
-    # Max_01 "Бла, бла, бла... ...если у Вас есть работающий проект в интернете, мы предоставляем займы на раскрутку Вашего бизнеса..."
-    Max_01 "Bla, bla, bla... ...wenn Sie ein funktionierendes Projekt im Internet haben, bieten wir Kredite an, um Ihr Geschäft zu fördern..."
+    # Max_01 "Бла, бла, бла... ... если у Вас есть работающий проект в интернете, мы предоставляем займы на раскрутку Вашего бизнеса..."
+    Max_01 "Bla, bla, bla... ... wenn Sie ein funktionierendes Projekt im Internet haben, bieten wir Kredite an, um Ihr Geschäft zu fördern..."
 
-# game/events/max.rpy:1015
-translate german about_credit_0f0e102c:
+# game/events/max.rpy:1039
+translate german about_credit_73692d65:
 
-    # Max_04 "Подытожим условия: \n{i}В течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится...{/i} \n\nЛучше, конечно же, до такого не доводить."
-    Max_04 "Lassen Sie uns die Bedingungen zusammenfassen: \n{i}Innerhalb eines Monats müssen Sie den gesamten Darlehensbetrag + 10%% zurückzahlen.\nWenn nicht rechtzeitig zurückgezahlt wird, verdreifacht sich die Höhe der Schuld alle 30 Tage, und meine Seite wird täglich die Hälfte der Gewinne abziehen. Und Sie werden nicht in der Lage sein, erneut einen Kredit aufzunehmen...{/i} \n\nNatürlich, bringen Sie es nicht so weit."
+    # Max_04 "{m}Подытожим условия: \n{b}В течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится...{/b} \n\nЛучше, конечно же, до такого не доводить.{/m}"
+    Max_04 "{m}Lassen Sie uns die Bedingungen zusammenfassen: \n{b}Innerhalb eines Monats müssen Sie den gesamten Darlehensbetrag + 10%% zurückzahlen.\nWenn nicht rechtzeitig zurückgezahlt wird, verdreifacht sich die Höhe der Schuld alle 30 Tage, und meine Seite wird täglich die Hälfte der Gewinne abziehen. Und Sie werden nicht in der Lage sein, erneut einen Kredit aufzunehmen...{/b} \n\nNatürlich, bringen Sie es nicht so weit.{/m}"
 
-# game/events/max.rpy:1016
-translate german about_credit_6a66dabb:
+# game/events/max.rpy:1040
+translate german about_credit_5011fb20:
 
-    # Max_05 "Регистрируюсь... Указываю свои реквизиты... Свой сайт в качестве источника дохода... Готово!"
-    Max_05 "Anmelden... Ich gebe meine Daten an... Meine Website als Einnahmequelle... Los geht's!"
+    # Max_05 "{m}Регистрируюсь... Указываю свои реквизиты... Свой сайт в качестве источника дохода... Готово!{/m}"
+    Max_05 "{m}Anmelden... Ich gebe meine Daten an... Meine Website als Einnahmequelle... Los geht's!{/m}"
 
-# game/events/max.rpy:1017
-translate german about_credit_aae7fcb4:
+# game/events/max.rpy:1041
+translate german about_credit_ec914392:
 
-    # Max_02 "Теперь я могу взять кредит, если срочно понадобятся деньги. Главное вовремя его погасить, чтобы проблем не было..."
-    Max_02 "Jetzt kann ich einen Kredit aufnehmen, wenn ich das Geld dringend brauche. Hauptsache, ich zahle ihn rechtzeitig ab, damit es keine Probleme gibt..."
+    # Max_02 "{m}Теперь я могу взять кредит, если срочно понадобятся деньги. Главное вовремя его погасить, чтобы проблем не было...{/m}"
+    Max_02 "{m}Jetzt kann ich einen Kredit aufnehmen, wenn ich das Geld dringend brauche. Hauptsache, ich zahle ihn rechtzeitig ab, damit es keine Probleme gibt...{/m}"
 
-# game/events/max.rpy:1020
-translate german about_credit_a7187d9d:
+# game/events/max.rpy:1044
+translate german about_credit_dc6f567b:
 
-    # Max_16 "Вот чёрт, а у меня нет никакого проекта! Получается, что денег мне никто не даст."
-    Max_16 "Oh, Scheiße, ich habe keine Projekte! Es hat sich herausgestellt, dass mir niemand Geld geben wird."
+    # Max_16 "{m}Вот чёрт, а у меня нет никакого проекта! Получается, что денег мне никто не даст.{/m}"
+    Max_16 "{m}Oh, Scheiße, ich habe keine Projekte! Es hat sich herausgestellt, dass mir niemand Geld geben wird.{/m}"
 
-# game/events/max.rpy:1029
-translate german getting_load_f9d89f7f:
+# game/events/max.rpy:1054
+translate german getting_load_f43833f1:
 
-    # Max_00 "Сколько мне сейчас нужно занять?" nointeract
-    Max_00 "Wie viel muss ich mir jetzt leihen?" nointeract
+    # Max_00 "{m}Сколько мне сейчас нужно занять?{/m}" nointeract
+    Max_00 "{m}Wie viel muss ich mir jetzt leihen?{/m}" nointeract
 
-# game/events/max.rpy:1046
-translate german return_part_loan_4564f05f:
+# game/events/max.rpy:1071
+translate german return_part_loan_67582e30:
 
-    # Max_00 "Сколько я верну сейчас?" nointeract
-    Max_00 "Wie viel werde ich jetzt zurückbekommen?" nointeract
+    # Max_00 "{m}Сколько я верну сейчас?{/m}" nointeract
+    Max_00 "{m}Wie viel werde ich jetzt zurückbekommen?{/m}" nointeract
 
 translate german strings:
 
@@ -768,13 +768,13 @@ translate german strings:
     old "{i}вздремнуть{/i}"
     new "{i}ein Nickerchen machen{/i}"
 
-    # game/events/max.rpy:106
-    old "{i}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/i}"
-    new "{i}Ich bin im Moment nicht wirklich müde, aber ich werde ein Nickerchen machen, um meine Energie zu behalten...{/i}"
+    # game/events/max.rpy:114
+    old "{m}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/m}"
+    new "{m}Ich bin im Moment nicht wirklich müde, aber ich werde ein Nickerchen machen, um meine Energie zu behalten...{/m}"
 
-    # game/events/max.rpy:108
-    old "{i}Ох и вымотался же я сегодня, надо немного вздремнуть...{/i}"
-    new "{i}Ich bin heute erschöpft, ich brauche ein kleines Nickerchen...{/i}"
+    # game/events/max.rpy:116
+    old "{m}Ох и вымотался же я сегодня, надо немного вздремнуть...{/m}"
+    new "{m}Ich bin heute erschöpft, ich brauche ein kleines Nickerchen...{/m}"
 
     # game/events/max.rpy:110
     old "{i}подремать пару часов{/i}"
@@ -1007,4 +1007,3 @@ translate german bedtime_thoughts_a9917f30:
 
     # Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
     Max_07 "{m}Wie bringe ich Eric dazu, sich eine Weile nicht mehr an meinen Schwestern zu vergreifen... und an Kira... und meine Mom ebenso... Hmm ... Wenn ich Alice beim Eindecken des Tisches helfe, habe ich eine gute Gelegenheit, ihm etwas ins Essen zu mischen! Es lohnt sich, online zu schauen, ob ich so etwas bekommen kann...{/m}"
-

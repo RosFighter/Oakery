@@ -358,3 +358,30 @@ translate german strings:
     old "Влияние Эрика:"
     new "Einfluss von Eric:"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+translate german strings:
+
+    # game/core/screens.rpy:1983
+    old "ОДЕЖДА ПЕРСОНАЖЕЙ В ГЛАВНОМ МЕНЮ"
+    new ""
+
+    # game/core/screens.rpy:2056
+    old "Одеть всё"
+    new ""
+
+    # game/core/screens.rpy:2061
+    old "Верх и трусики"
+    new ""
+
+    # game/core/screens.rpy:2066
+    old "Только верх"
+    new ""
+
+    # game/core/screens.rpy:2071
+    old "Только низ"
+    new ""
+
+    # game/core/screens.rpy:2076
+    old "Только трусики"
+    new ""

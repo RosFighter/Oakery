@@ -48,7 +48,6 @@ translate german ann_ask_money_cf2d6379:
     # "При нормальном развитии событий эта строка не должна была появится. Сообщите разработчику."
     "Unter normalen Umständen hätte diese Linie nicht erscheinen dürfen. Bitte benachrichtigen Sie den Entwickler."
 
-
 # game/dialogues/anntalk.rpy:86
 translate german ann_ask_money_59ac536a:
 
@@ -2252,3 +2251,41 @@ translate german strings:
     # game/dialogues/anntalk.rpy:1241
     old "Мам, у тебя полотенце сползает..."
     new "Mom, dein Handtuch ist verrutscht..."
+
+# TODO: Translation updated at 2021-11-11 14:52
+
+# game/dialogues/anntalk.rpy:22
+translate german AnnTalkStart_11c2aa45:
+
+    # Ann_17 "Уйди, Макс. Нам не о чем говорить, пока ты не вернёшь Эрику деньги и не извинишься перед ним и всеми нами!" nointeract
+    Ann_17 "" nointeract
+
+# game/dialogues/anntalk.rpy:1450
+translate german ann_about_wallet_90e1fc67:
+
+    # Ann_16 "Ты вернул Эрику бумажник и деньги?"
+    Ann_16 ""
+
+# game/dialogues/anntalk.rpy:1451
+translate german ann_about_wallet_0b099756:
+
+    # Max_09 "Да не крал я у него ничего! Он всех обманывает!"
+    Max_09 ""
+
+# game/dialogues/anntalk.rpy:1452
+translate german ann_about_wallet_33bee417:
+
+    # Ann_18 "Пока не вернёшь, даже не подходи ко мне, Макс! Всё настроение от тебя только портится. А уж как мне перед Эриком стыдно..."
+    Ann_18 ""
+
+# game/dialogues/anntalk.rpy:1453
+translate german ann_about_wallet_a7053e1b:
+
+    # Max_11 "Как скажешь, мам."
+    Max_11 ""
+
+translate german strings:
+
+    # game/dialogues/anntalk.rpy:1455
+    old "{b}Оповещение:{/b} Анна больше не хочет взаимодействовать с Максом"
+    new ""

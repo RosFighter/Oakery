@@ -336,12 +336,6 @@ translate german punishment_max_pun_reson_678436cc:
     # Ann_16 "[_text!t]"
     Ann_16 "[_text!t]"
 
-# game/dialogues/punishment.rpy:302
-translate german punishment_max_pun_reson_219ecbe7:
-
-    # Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Mom bestraft mich vor allen anderen... Das ist so demütigend...{/i}\n\n{color=[orange]}{b}Warnung:{/b} Dein Einfluss in deiner Familie hat abgenommen.{/color}"
-
 # game/dialogues/punishment.rpy:322
 translate german punishment_max_pun_reson_700a2ea3:
 
@@ -383,12 +377,6 @@ translate german punishment_max_pun_reson_678436cc_1:
 
     # Ann_16 "[_text!t]"
     Ann_16 "[_text!t]"
-
-# game/dialogues/punishment.rpy:372
-translate german punishment_max_pun_reson_c632e1a6:
-
-    # Max_14 "{i}Блин... Все с таким интересом смотрят, как меня наказывают... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Verdammt ... Ich kann die Augen aller auf mir spüren ... Das ist so demütigend ...{/i}\n\n{color=[orange]}{b}Achtung:{/b} Ihr Einfluss auf die Familie hat abgenommen!{/color}"
 
 # game/dialogues/punishment.rpy:394
 translate german punishment_max_pun_reson_faf292df:
@@ -715,10 +703,10 @@ translate german punishment_alice_dd1264f2:
     Ann_12 "In Ordnung, Alice, zieh dich aus. Ich hoffe, ich muss dir nicht sagen, warum ich dich bestrafen werde, verstehst du..."
 
 # game/dialogues/punishment.rpy:694
-translate german punishment_alice_ce43f374:
+translate german punishment_alice_23976523:
 
-    # Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
-    Max_07 "{i}Mal sehen, ob Alice kooperativer wird, wenn ich mich nicht mehr einmische... Die Hauptsache ist, dass Ich Zeit haben, mit ihr zu reden, solange sie noch Schmerzen beim Aufstehen hat!{/i}"
+    # Max_07 "{m}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/m}"
+    Max_07 "{m}Mal sehen, ob Alice kooperativer wird, wenn ich mich nicht mehr einmische... Die Hauptsache ist, dass Ich Zeit haben, mit ihr zu reden, solange sie noch Schmerzen beim Aufstehen hat!{/m}"
 
 # game/dialogues/punishment.rpy:699
 translate german punishment_alice_a4b257c5_1:
@@ -757,10 +745,10 @@ translate german punishment_alice_2a128a29_1:
     Alice_13 "Okay, Mom. Danke, Max, das werde ich nicht vergessen."
 
 # game/dialogues/punishment.rpy:718
-translate german punishment_alice_9e76b62f:
+translate german punishment_alice_f34a7f97:
 
-    # Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
-    Max_09 "{i}Ja, nun, sie wird es nicht vergessen... Hmm... Vielleicht sollte ich etwas von ihr verlangen, damit sie nicht denkt, dass meine Freundlichkeit unentgeltlich ist. Und ich sollte es heute tun, während sie es noch genau spührt...{/i}"
+    # Max_09 "{m}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/m}"
+    Max_09 "{m}Ja, nun, sie wird es nicht vergessen... Hmm... Vielleicht sollte ich etwas von ihr verlangen, damit sie nicht denkt, dass meine Freundlichkeit unentgeltlich ist. Und ich sollte es heute tun, während sie es noch genau spührt...{/m}"
 
 # game/dialogues/punishment.rpy:728
 translate german punishment_alice_c8f8e3ea_1:
@@ -948,3 +936,28 @@ translate german strings:
     old "Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!"
     new "Nun, Alice, schämst du dich? Schweigst du? Denk darüber nach, was du getan hast, während ich dich vor allen bestrafe... Komm auf meinen Schoß!"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+# game/dialogues/punishment.rpy:308
+translate german punishment_max_pun_reson_e027e673:
+
+    # Max_14 "[impact_reduced!t]{m}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/m}"
+    Max_14 "[impact_reduced!t]{m}Mom bestraft mich vor allen anderen... Das ist so demütigend...{/m}"
+
+# game/dialogues/punishment.rpy:378
+translate german punishment_max_pun_reson_a77a4336:
+
+    # Max_14 "[impact_reduced!t]{m}Блин... Все с таким интересом смотрят, как меня наказывают... Это так унизительно...{/m}"
+    Max_14 "[impact_reduced!t]{m}Verdammt... Ich kann die Augen aller auf mir spüren... Das ist so demütigend...{/m}"
+
+# game/dialogues/punishment.rpy:519
+translate german punishment_lisa_5e582e44:
+
+    # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... А ты, Лиза, не стой столбом, шевелись давай..."
+    Ann_12 ""
+
+# game/dialogues/punishment.rpy:712
+translate german punishment_alice_3eaef6e3:
+
+    # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... Алиса, пошевеливайся..."
+    Ann_12 ""

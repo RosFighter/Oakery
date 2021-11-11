@@ -622,3 +622,10 @@ translate german strings:
     old "У меня нет денег, чтобы ты не лез к Лизе."
     new "Ich habe kein Geld, also halte dich von Lisa fern."
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+translate german strings:
+
+    # game/core/02init.rpy:40
+    old "{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
+    new "{color=[orange]}{b}Warnung:{/b} Dein Einfluss in deiner Familie hat abgenommen.{/color}\n"
